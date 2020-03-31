@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="12.0sp" android:textColor="@color/notification_section_header_label_color" android:gravity="start" android:id="@id/header_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/op_notification_section_header_gentle" android:layout_weight="1.0" android:fontFamily="@android:string/config_headlineFontFamilyMedium" android:textAlignment="gravity" android:layout_marginStart="@dimen/notification_section_header_padding_left" />
+    <ImageView android:id="@id/btn_clear_all" android:layout_width="@dimen/notification_section_header_height" android:layout_height="@dimen/notification_section_header_height" android:src="@drawable/status_bar_notification_section_header_clear_btn" android:scaleType="center" android:contentDescription="@string/accessibility_notification_section_header_gentle_clear_all" android:layout_marginEnd="4.0dip" />
+</merge>

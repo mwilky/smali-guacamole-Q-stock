@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:oneshot="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="6" android:drawable="@drawable/fod03_07" />
+    <item android:duration="6" android:drawable="@drawable/fod03_08" />
+    <item android:duration="6" android:drawable="@drawable/fod03_09" />
+    <item android:duration="6" android:drawable="@drawable/fod03_11" />
+    <item android:duration="6" android:drawable="@drawable/fod03_12" />
+    <item android:duration="6" android:drawable="@drawable/fod03_13" />
+    <item android:duration="6" android:drawable="@drawable/fod03_14" />
+    <item android:duration="6" android:drawable="@drawable/fod03_15" />
+    <item android:duration="6" android:drawable="@drawable/fod03_16" />
+    <item android:duration="6" android:drawable="@drawable/fod03_17" />
+    <item android:duration="6" android:drawable="@drawable/fod03_18" />
+    <item android:duration="6" android:drawable="@drawable/fod03_19" />
+    <item android:duration="6" android:drawable="@drawable/fod03_20" />
+    <item android:duration="6" android:drawable="@drawable/fod03_21" />
+    <item android:duration="6" android:drawable="@drawable/fod03_22" />
+    <item android:duration="6" android:drawable="@drawable/fod03_23" />
+    <item android:duration="6" android:drawable="@drawable/fod03_24" />
+    <item android:duration="6" android:drawable="@drawable/fod03_25" />
+    <item android:duration="6" android:drawable="@drawable/fod03_26" />
+    <item android:duration="6" android:drawable="@drawable/fod03_27" />
+    <item android:duration="6" android:drawable="@drawable/fod03_28" />
+    <item android:duration="6" android:drawable="@drawable/fod03_29" />
+    <item android:duration="6" android:drawable="@drawable/fod03_30" />
+    <item android:duration="6" android:drawable="@drawable/fod03_31" />
+    <item android:duration="6" android:drawable="@drawable/fod03_32" />
+    <item android:duration="6" android:drawable="@drawable/fod03_33" />
+    <item android:duration="6" android:drawable="@drawable/fod03_34" />
+    <item android:duration="6" android:drawable="@drawable/fod03_35" />
+    <item android:duration="6" android:drawable="@drawable/fod03_36" />
+    <item android:duration="6" android:drawable="@drawable/fod03_37" />
+    <item android:duration="6" android:drawable="@drawable/fod03_38" />
+    <item android:duration="6" android:drawable="@drawable/fod03_39" />
+    <item android:duration="6" android:drawable="@drawable/fod03_40" />
+    <item android:duration="6" android:drawable="@drawable/fod03_41" />
+    <item android:duration="6" android:drawable="@drawable/fod03_42" />
+    <item android:duration="6" android:drawable="@drawable/fod03_43" />
+    <item android:duration="6" android:drawable="@drawable/fod03_44" />
+    <item android:duration="6" android:drawable="@drawable/fod03_45" />
+</animation-list>

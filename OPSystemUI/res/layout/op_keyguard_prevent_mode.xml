@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.oneplus.plugin.OpPreventModeView android:id="@id/prevent_mode_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/pevent_mode_background" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <View android:id="@id/scrim_view" android:background="#99000000" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/prevent_mode_inner_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/prevent_view_inner_view_margin_top">
+        <TextView android:gravity="center_horizontal" android:id="@id/prevent_view_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/prevent_view_title_margin_horizontal" android:layout_marginRight="@dimen/prevent_view_title_margin_horizontal" android:text="@string/prevent_view_title" style="@style/prevent_view_title" />
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/prevent_view_img_margin_top">
+            <ImageView android:id="@id/prevent_mode_phone" android:layout_width="@dimen/prevent_view_img_width" android:layout_height="@dimen/prevent_view_img_height" android:src="@drawable/prevent_mode_img" />
+        </LinearLayout>
+        <TextView android:gravity="bottom" android:id="@id/prevent_view_title_cancel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/prevent_view_cancel_margin_horizontal" android:layout_marginTop="@dimen/prevent_view_title_cancel_margin_top" android:layout_marginRight="@dimen/prevent_view_cancel_margin_horizontal" android:text="@string/prevent_view_title_cancel" style="@style/prevent_view_title_cancel" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/prevent_view_top_tag_view1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/prevent_view_cancel_margin_horizontal" android:layout_marginTop="@dimen/prevent_view_top_tag_view1_margin_top" android:layout_marginRight="@dimen/prevent_view_cancel_margin_horizontal">
+            <TextView android:id="@id/prevent_view_top_tag_number1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/prevent_view_top_tag_numbuer1" style="@style/prevent_view_top_tag" />
+            <TextView android:id="@id/prevent_view_top_tag_cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/prevent_view_top_tag_cancel" style="@style/prevent_view_top_tag" />
+        </LinearLayout>
+        <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:id="@id/prevent_view_top_tag_view2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/prevent_view_cancel_margin_horizontal" android:layout_marginTop="@dimen/prevent_view_top_tag_view2_margin_top" android:layout_marginRight="@dimen/prevent_view_cancel_margin_horizontal">
+            <TextView android:id="@id/prevent_view_top_tag_number2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/prevent_view_top_tag_numbuer2" style="@style/prevent_view_top_tag" />
+            <TextView android:id="@id/prevent_view_top_tag_cancel2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/prevent_view_top_tag_cancel2" style="@style/prevent_view_top_tag" />
+        </LinearLayout>
+    </LinearLayout>
+    <com.oneplus.plugin.OpRippleView android:id="@id/rippleview_first" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</com.oneplus.plugin.OpPreventModeView>

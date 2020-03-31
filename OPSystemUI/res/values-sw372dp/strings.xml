@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="config_navBarLayout">left[.25W],back[.5WC];home;recent[.5WC],right[.25W]</string>
+    <string name="config_navBarLayout_RTL">left[.25W],recent[.5WC];home;back[.5WC],right[.25W]</string>
+</resources>

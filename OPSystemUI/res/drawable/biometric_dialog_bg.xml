@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="?android:colorBackgroundFloating" />
+    <corners android:topLeftRadius="@dimen/biometric_dialog_corner_size" android:topRightRadius="@dimen/biometric_dialog_corner_size" android:bottomLeftRadius="@dimen/biometric_dialog_corner_size" android:bottomRightRadius="@dimen/biometric_dialog_corner_size" />
+</shape>

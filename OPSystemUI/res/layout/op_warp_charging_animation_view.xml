@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.oneplus.battery.OpWarpChargingView android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="vertical" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/wallpaper_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <View android:id="@id/scrim_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/info_view" android:layout_width="@dimen/op_warp_charging_anim_info_view_size" android:layout_height="@dimen/op_warp_charging_anim_info_view_size" android:layout_marginTop="@dimen/op_warp_charging_anim_info_view_margin_top">
+        <TextView android:textSize="@dimen/op_warp_charging_anim_info_battery_level_text_size" android:textStyle="bold" android:textColor="?wallpaperTextColor" android:gravity="center_horizontal" android:id="@id/battery_level" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/op_warp_charging_anim_info_battery_level_margin_top" android:fontFamily="oneplus_font" />
+        <ImageView android:gravity="center_horizontal" android:id="@id/wrap_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/op_warp_charging_anim_info_wrap_view_margin_top" android:src="@drawable/warp_charge" />
+    </LinearLayout>
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/background_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</com.oneplus.battery.OpWarpChargingView>

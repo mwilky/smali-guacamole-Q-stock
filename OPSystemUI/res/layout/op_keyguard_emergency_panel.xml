@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.oneplus.keyguard.OpEmergencyPanel android:id="@id/emergency_panel" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/op_emergency_panel_area_margin_top"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/op_keyguard_emergency_panel_indicator" />
+    <FrameLayout android:layout_gravity="center_horizontal" android:id="@id/bubble_panel" android:layout_width="@dimen/op_emergency_bubble_area_width" android:layout_height="@dimen/op_emergency_bubble_area_height">
+        <include layout="@layout/op_keyguard_emergency_bubble" />
+    </FrameLayout>
+</com.oneplus.keyguard.OpEmergencyPanel>

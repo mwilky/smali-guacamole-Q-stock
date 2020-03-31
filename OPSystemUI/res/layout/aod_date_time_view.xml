@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.oneplus.aod.OpDateTimeView android:orientation="vertical" android:id="@id/date_time_view" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/keyguard_clock_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.oneplus.aod.OpTextClock android:id="@id/clock_view" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:format12Hour="@string/keyguard_widget_12_hours_format" android:format24Hour="@string/keyguard_widget_24_hours_format" />
+        <include layout="@layout/aod_analog_clock_view" />
+        <include layout="@layout/aod_minimalism_clock_view" />
+        <include layout="@layout/aod_keyguard_status_area" />
+    </LinearLayout>
+</com.oneplus.aod.OpDateTimeView>

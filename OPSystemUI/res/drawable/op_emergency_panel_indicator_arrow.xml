@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="@dimen/op_emergency_panel_indicator_arrow_height" android:width="@dimen/op_emergency_panel_indicator_arrow_height" android:viewportWidth="24.0" android:viewportHeight="24.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:name="Rectangle-3" android:pivotX="10.0" android:pivotY="10.0" android:rotation="-135.0" android:translateX="2.0" android:translateY="-2.0">
+        <path android:fillColor="?wallpaperTextColor" android:pathData="M11.8690524,3 L11.8690524,4.5 L3.5,4.5 L3.5,12.6780976 L2,12.6780976 L2,3.75 C2,3.33578644 2.33578644,3 2.75,3 L11.8690524,3 Z" android:strokeWidth="1.0" />
+    </group>
+</vector>

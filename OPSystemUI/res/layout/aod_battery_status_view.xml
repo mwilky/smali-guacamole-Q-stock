@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.oneplus.aod.OpAodBatteryStatusView android:gravity="center" android:orientation="horizontal" android:id="@id/battery_container" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/battery_percentage" android:id="@id/percentage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="2.0px" android:layout_marginEnd="11.0px" />
+    <com.oneplus.aod.OpAodBatteryMeterView android:id="@id/battery" android:layout_width="@dimen/battery_icon_width" android:layout_height="@dimen/battery_icon_height" />
+    <com.oneplus.aod.OpAodBatteryDashChargeView android:layout_gravity="center" android:id="@id/battery_dash_charge" android:visibility="gone" android:layout_width="@dimen/battery_dash_icon_width" android:layout_height="@dimen/battery_dash_icon_height" android:src="@drawable/ic_sys_dash_charging_state_0" android:scaleType="centerCrop" />
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/battery_charge" android:visibility="gone" android:layout_width="@dimen/battery_charging_icon_width" android:layout_height="@dimen/battery_charging_icon_height" />
+</com.oneplus.aod.OpAodBatteryStatusView>

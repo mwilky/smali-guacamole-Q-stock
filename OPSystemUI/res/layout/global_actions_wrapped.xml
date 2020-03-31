@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.systemui.HardwareUiLayout android:theme="@style/qs_theme" android:layout_gravity="center|right|top" android:orientation="vertical" android:id="@id/global_actions_view" android:paddingTop="@dimen/global_actions_top_padding" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="0.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:layout_gravity="center|right|top" android:orientation="vertical" android:id="@android:id/list" android:padding="@dimen/global_actions_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:translationZ="@dimen/global_actions_translate" />
+    <FrameLayout android:gravity="center" android:layout_gravity="center|right|top" android:orientation="vertical" android:id="@id/separated_button" android:padding="@dimen/global_actions_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:translationZ="@dimen/global_actions_translate" />
+</com.android.systemui.HardwareUiLayout>

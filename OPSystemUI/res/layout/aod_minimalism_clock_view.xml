@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.oneplus.aod.OpMinimalismClock android:id="@id/minimalism_clock_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:androidprv="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/minimalism_min" android:layout_width="@dimen/clock_minimalism_size" android:layout_height="@dimen/clock_minimalism_size" android:src="@drawable/minimalism_min" android:layout_centerInParent="true" />
+    <ImageView android:id="@id/minimalism_hour" android:layout_width="@dimen/clock_minimalism_size" android:layout_height="@dimen/clock_minimalism_size" android:src="@drawable/minimalism_hour" android:layout_centerInParent="true" />
+    <ImageView android:id="@id/minimalism_background" android:layout_width="@dimen/clock_minimalism_size" android:layout_height="@dimen/clock_minimalism_size" android:src="@drawable/minimalism_background" android:layout_centerInParent="true" />
+</com.oneplus.aod.OpMinimalismClock>
