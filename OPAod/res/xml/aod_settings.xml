@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.oneplus.lib.preference.PreferenceScreen android:title="@string/oneplus_aod_settings" android:key="main_screen"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:layout="@layout/op_preference_category_material" android:title="@string/oneplus_aod_settings_when_to_show" android:key="when_to_show" />
+    <com.oneplus.settings.AodSwitchPreference android:icon="@drawable/empty" android:persistent="false" android:title="@string/oneplus_aod_mode_lift_up" android:key="aod_display_mode_switch" android:singleLineTitle="false" />
+    <com.oneplus.settings.AodSwitchPreference android:icon="@drawable/empty" android:persistent="false" android:title="@string/oneplus_aod_mode_shake_up" android:key="aod_shake_up_switch" android:singleLineTitle="false" />
+    <com.oneplus.settings.AodSwitchPreference android:icon="@drawable/empty" android:persistent="false" android:title="@string/oneplus_aod_mode_single_tap" android:key="aod_single_tap_switch" android:singleLineTitle="false" />
+    <com.oneplus.lib.widget.preference.OPListPreference android:icon="@drawable/empty" android:persistent="true" android:title="@string/oneplus_aod_display_mode_title" android:key="aod_display_mode" />
+    <com.oneplus.lib.widget.preference.OPPreference android:icon="@drawable/empty" android:persistent="true" android:title="@string/oneplus_aod_display_period_title" android:key="aod_display_period" />
+    <com.oneplus.lib.widget.preference.OPPreference android:layout="@layout/preference_divider" android:title="divider" android:selectable="false" />
+    <PreferenceCategory android:layout="@layout/op_preference_category_material" android:title="@string/oneplus_aod_settings_what_to_show" android:key="when_to_show" />
+    <com.oneplus.settings.OpTwoTargetMasterSwitchPreference android:icon="@drawable/empty" android:persistent="false" android:title="@string/oneplus_aod_smart_display_title" android:key="aod_smart_display_switch" android:summary="@string/oneplus_aod_smart_display_summary" android:fragment="com.oneplus.settings.OpSmartDisplaySettings" />
+    <com.oneplus.lib.widget.preference.OPPreference android:icon="@drawable/empty" android:persistent="true" android:title="@string/oneplus_aod_display_text_title" android:key="aod_display_text" android:summary="@string/owner_info_settings_summary" />
+    <com.oneplus.settings.AodSwitchPreference android:icon="@drawable/empty" android:persistent="true" android:title="@string/oneplus_aod_auto_wake_screen_title" android:key="aod_auto_wake_screen" android:summary="@string/oneplus_aod_auto_wake_screen_summary" android:singleLineTitle="false" />
+    <com.oneplus.lib.widget.preference.OPPreference android:icon="@drawable/empty" android:persistent="true" android:title="@string/oneplus_aod_horizon_light" android:key="customize_horizon_light" />
+</com.oneplus.lib.preference.PreferenceScreen>

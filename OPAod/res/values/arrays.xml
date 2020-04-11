@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="oneplus_aod_mode_entries">
+        <item>@string/oneplus_aod_mode_lift_up</item>
+        <item>@string/oneplus_aod_mode_always_on</item>
+    </string-array>
+    <string-array name="oneplus_aod_mode_entries_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+</resources>

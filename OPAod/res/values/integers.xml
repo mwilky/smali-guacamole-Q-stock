@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="abc_config_activityDefaultDur">220</integer>
+    <integer name="abc_config_activityShortDur">150</integer>
+    <item type="integer" name="app_bar_elevation_anim_duration">@integer/oneplus_contorl_time_part5</item>
+    <integer name="bottom_sheet_slide_duration">150</integer>
+    <integer name="button_pressed_animation_delay">100</integer>
+    <integer name="button_pressed_animation_duration">100</integer>
+    <integer name="config_activityDefaultDur">220</integer>
+    <integer name="config_activityShortDur">150</integer>
+    <integer name="config_owner_infor_max_length">50</integer>
+    <integer name="config_toastDefaultGravity">0x00000051</integer>
+    <integer name="date_picker_header_max_lines_material">2</integer>
+    <integer name="date_picker_mode">1</integer>
+    <integer name="date_picker_mode_material">2</integer>
+    <integer name="oneplus_contorl_time_part1">30</integer>
+    <integer name="oneplus_contorl_time_part2">45</integer>
+    <integer name="oneplus_contorl_time_part3">75</integer>
+    <integer name="oneplus_contorl_time_part4">150</integer>
+    <integer name="oneplus_contorl_time_part5">225</integer>
+    <integer name="oneplus_contorl_time_part6">300</integer>
+    <integer name="oneplus_contorl_time_part7">375</integer>
+    <integer name="oneplus_selector_button_frame_druation">18</integer>
+    <integer name="op_config_tooltipAnimTime">150</integer>
+    <integer name="op_date_picker_mode">2</integer>
+    <integer name="op_design_snackbar_text_max_lines">2</integer>
+    <integer name="op_hide_password_duration">320</integer>
+    <item type="integer" name="op_pageIndicator_alpha_material">@integer/op_pageIndicator_alpha_material_light</item>
+    <integer name="op_pageIndicator_alpha_material_dark">30</integer>
+    <integer name="op_pageIndicator_alpha_material_light">20</integer>
+    <integer name="op_show_password_duration">200</integer>
+    <integer name="preference_fragment_scrollbarStyle">0x02000000</integer>
+    <integer name="preference_screen_header_scrollbarStyle">0x02000000</integer>
+    <integer name="preferences_left_pane_weight">4</integer>
+    <integer name="preferences_right_pane_weight">6</integer>
+    <integer name="time_picker_mode">1</integer>
+    <integer name="time_picker_mode_material">2</integer>
+</resources>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="aod_clock_analog">Analog</string>
+    <string name="aod_clock_default">Default</string>
+    <string name="aod_clock_minimalism">Minimalism</string>
+    <string name="aod_clock_none">None</string>
+    <string name="aod_clock_preview_action_bar_title">Preview</string>
+    <string name="aod_clock_select_action_bar_title">Clock style</string>
+    <string name="aod_clock_select_style_text">Select the clock style</string>
+    <string name="aod_clock_selected">SELECTED</string>
+    <string name="aod_settings">Always on display</string>
+    <string name="app_name">Ambient Display</string>
+    <string name="appbar_scrolling_view_behavior">com.oneplus.lib.design.widget.AppBarLayout$ScrollingViewBehavior</string>
+    <string name="back_button_label">Back</string>
+    <string name="cancel">Cancel</string>
+    <string name="capital_off">OFF</string>
+    <string name="capital_on">ON</string>
+    <string name="date_picker_day_of_week_typeface">sans-serif-medium</string>
+    <string name="date_picker_day_typeface">sans-serif-medium</string>
+    <string name="date_picker_month_typeface">sans-serif-medium</string>
+    <string name="deleted_key">%1$s deleted</string>
+    <string name="font_family_body_1_material">sans-serif</string>
+    <string name="font_family_body_2_material">sans-serif-medium</string>
+    <string name="font_family_button_material">sans-serif-medium</string>
+    <string name="font_family_caption_material">sans-serif</string>
+    <string name="font_family_title_material">sans-serif-medium</string>
+    <string name="hide_bottom_view_on_scroll_behavior">com.oneplus.lib.design.widget.HideBottomViewOnScrollBehavior</string>
+    <string name="next_button_label">Next</string>
+    <string name="oneplus_aod_auto_wake_screen_summary">Show notifications on the ambient display</string>
+    <string name="oneplus_aod_auto_wake_screen_title">New notifications</string>
+    <string name="oneplus_aod_auto_wake_screen_with_horizon_light_summary">Show notifications on the ambient display, along with Horizon Light</string>
+    <string name="oneplus_aod_clock_style_title">Clock style</string>
+    <string name="oneplus_aod_display_mode_title">When to show</string>
+    <string name="oneplus_aod_display_period_title">Display period</string>
+    <string name="oneplus_aod_display_text_title">Display message</string>
+    <string name="oneplus_aod_horizon_light">Horizon Light</string>
+    <string name="oneplus_aod_mode_always_on">Always on</string>
+    <string name="oneplus_aod_mode_lift_up">Lift up display</string>
+    <string name="oneplus_aod_mode_shake_up">Pick up your phone to show</string>
+    <string name="oneplus_aod_mode_single_tap">Tap the screen to show</string>
+    <string name="oneplus_aod_settings">Ambient display</string>
+    <string name="oneplus_aod_settings_fod">@string/oneplus_aod_settings</string>
+    <string name="oneplus_aod_settings_what_to_show">what to show</string>
+    <string name="oneplus_aod_settings_when_to_show">when to show</string>
+    <string name="oneplus_aod_smart_display_summary">Show music info and upcoming event</string>
+    <string name="oneplus_aod_smart_display_title">Contextual info</string>
+    <string name="oneplus_aod_title">Show clock</string>
+    <string name="oneplus_contorl_font_family_body1">sans-serif-book</string>
+    <string name="oneplus_contorl_font_family_body2">sans-serif-medium</string>
+    <string name="oneplus_contorl_font_family_button">sans-serif-medium</string>
+    <string name="oneplus_contorl_font_family_descriptions">sans-serif-book</string>
+    <string name="oneplus_contorl_font_family_display1">sans-serif-medium</string>
+    <string name="oneplus_contorl_font_family_display2">sans-serif-book</string>
+    <string name="oneplus_contorl_font_family_display3">sans-serif-light</string>
+    <string name="oneplus_contorl_font_family_display4">sans-serif-regular</string>
+    <string name="oneplus_contorl_font_family_headline">sans-serif-regular</string>
+    <string name="oneplus_contorl_font_family_highlight">sans-serif-book</string>
+    <string name="oneplus_contorl_font_family_subheading">sans-serif-book</string>
+    <string name="oneplus_contorl_font_family_subtitle">sans-serif-medium</string>
+    <string name="oneplus_contorl_font_family_title">sans-serif-medium</string>
+    <string name="oneplus_contorl_font_family_title_extended">sans-serif-medium</string>
+    <string name="oneplus_display_time_end">To</string>
+    <string name="oneplus_display_time_from">From</string>
+    <string name="oneplus_display_time_start">From</string>
+    <string name="oneplus_display_time_to">to</string>
+    <string name="oneplus_security_settings_fingerprint_toggle_two_toast_1">" is enabled and"</string>
+    <string name="oneplus_security_settings_fingerprint_toggle_two_toast_2">" will be disabled"</string>
+    <string name="op_accessibility_quick_settings_page">Page %1$d of %2$d</string>
+    <string name="op_appbar_scrolling_view_behavior">com.oneplus.lib.design.widget.AppBarLayout$ScrollingViewBehavior</string>
+    <string name="op_character_counter_pattern">%1$d / %2$d</string>
+    <string name="op_password_toggle_content_description">Toggle password visibility</string>
+    <string name="op_path_password_eye">M12,4.5C7,4.5 2.73,7.61 1,12c1.73,4.39 6,7.5 11,7.5s9.27,-3.11 11,-7.5c-1.73,-4.39 -6,-7.5 -11,-7.5zM12,17c-2.76,0 -5,-2.24 -5,-5s2.24,-5 5,-5 5,2.24 5,5 -2.24,5 -5,5zM12,9c-1.66,0 -3,1.34 -3,3s1.34,3 3,3 3,-1.34 3,-3 -1.34,-3 -3,-3z</string>
+    <string name="op_path_password_eye_mask_strike_through">M2,4.27 L19.73,22 L22.27,19.46 L4.54,1.73 L4.54,1 L23,1 L23,23 L1,23 L1,4.27 Z</string>
+    <string name="op_path_password_eye_mask_visible">M2,4.27 L2,4.27 L4.54,1.73 L4.54,1.73 L4.54,1 L23,1 L23,23 L1,23 L1,4.27 Z</string>
+    <string name="op_path_password_strike_through">M3.27,4.27 L19.74,20.74</string>
+    <string name="owner_info_settings_edit_text_hint">E.g., Joe’s Android.</string>
+    <string name="owner_info_settings_summary">None</string>
+    <string name="save">SAVE</string>
+    <string name="searchview_description_clear">Clear query</string>
+    <string name="searchview_description_search">Search</string>
+    <string name="searchview_description_submit">Submit query</string>
+    <string name="searchview_description_voice">Voice search</string>
+    <string name="select_day">Select month and day</string>
+    <string name="select_hours">Select hours</string>
+    <string name="select_minutes">Select minutes</string>
+    <string name="select_year">Select year</string>
+    <string name="skip_button_label">Skip</string>
+    <string name="time_format_12_mode">h:mm a</string>
+    <string name="time_picker_header_text">Set time</string>
+    <string name="time_picker_hour_label">hour</string>
+    <string name="time_picker_input_error">Enter a valid time</string>
+    <string name="time_picker_minute_label">minute</string>
+    <string name="time_picker_prompt_label">Type in time</string>
+    <string name="time_placeholder">--</string>
+    <item type="string" name="timepicker_ampm_circle_radius_multiplier">0.19</item>
+    <item type="string" name="timepicker_circle_radius_multiplier">0.82</item>
+    <item type="string" name="timepicker_circle_radius_multiplier_24HourMode">0.85</item>
+    <item type="string" name="timepicker_numbers_radius_multiplier_inner">0.6</item>
+    <item type="string" name="timepicker_numbers_radius_multiplier_normal">0.81</item>
+    <item type="string" name="timepicker_numbers_radius_multiplier_outer">0.83</item>
+    <item type="string" name="timepicker_selection_radius_multiplier">0.16</item>
+    <item type="string" name="timepicker_text_size_multiplier_inner">0.14</item>
+    <item type="string" name="timepicker_text_size_multiplier_normal">0.17</item>
+    <item type="string" name="timepicker_text_size_multiplier_outer">0.11</item>
+    <item type="string" name="timepicker_transition_end_radius_multiplier">1.3</item>
+    <item type="string" name="timepicker_transition_mid_radius_multiplier">0.95</item>
+    <string name="touchscreen_double_tap_to_wake_gesture_title">Double tap to wake</string>
+    <item type="string" name="APKTOOL_DUMMY_2">false</item>
+</resources>
