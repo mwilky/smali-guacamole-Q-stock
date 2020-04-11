@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="got_it">Got it</string>
+    <string name="longshot_guide_not_support">Expanded screenshot is not supported on this page.</string>
+    <string name="longshot_guide_support">Tap here to try Expanded Screenshot.</string>
+    <string name="not_support_longshot">Expanded screenshot is not supported on this page.</string>
+    <string name="notification_channel_screenshot">Screenshots</string>
+    <string name="screen_orientation_changed">Screen orientation cannot be changed while capturing expanded screenshots.</string>
+    <string name="screenshot_failed_text">"Can't take screenshot due to limited storage space, or it isn't allowed by the app or your organisation."</string>
+    <string name="screenshot_failed_title">"Couldn't capture screenshot."</string>
+    <string name="screenshot_failed_to_capture_text">"Taking screenshots isn't allowed by the app or your organisation"</string>
+    <string name="screenshot_failed_to_save_text">"Can't save screenshot due to limited storage space."</string>
+    <string name="screenshot_failed_to_save_unknown_text">Problem encountered while saving screenshot.</string>
+    <string name="screenshot_saved_text">Touch to view your screenshot.</string>
+    <string name="screenshot_saved_title">Screenshot captured.</string>
+    <string name="screenshot_saving_text">Screenshot is being saved.</string>
+    <string name="screenshot_saving_ticker">Saving screenshot…</string>
+    <string name="screenshot_saving_title">Saving screenshot…</string>
+    <string name="screenshot_stoped_text">The expanded screenshot has stopped</string>
+    <string name="scrolling">The screen will scroll automatically while capturing expanded screenshots.</string>
+    <string name="select_day">Select month and day</string>
+    <string name="select_hours">Select hours</string>
+    <string name="select_minutes">Select minutes</string>
+    <string name="select_year">Select year</string>
+    <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="stop_and_save">Tap this screen to stop scrolling and an expanded screenshot will be captured.</string>
+    <string name="summary">After taking a screenshot, tap expanded screenshot to capture the scrollable contents below.</string>
+    <string name="time_picker_header_text">Set time</string>
+    <string name="time_picker_hour_label">hour</string>
+    <string name="time_picker_input_error">Enter a valid time</string>
+    <string name="time_picker_minute_label">minute</string>
+    <string name="time_picker_prompt_label">Enter time</string>
+    <string name="title">Expanded Screenshot</string>
+    <string name="top_activity_changed">App switching is not supported while capturing expanded screenshots.</string>
+</resources>

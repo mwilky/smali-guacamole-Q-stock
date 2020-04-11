@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="got_it">అర్థమైంది</string>
+    <string name="longshot_guide_not_support">ఈ పేజీ విస్తరించబడ్డ స్క్రీన్‌షాట్ మద్దతు ఇవ్వదు.</string>
+    <string name="longshot_guide_support">విస్తరించబడ్డ స్క్రీన్‌షాట్ ప్రయత్నించడం కొరకు ఇక్కడ తట్టండి.</string>
+    <string name="not_support_longshot">ఈ పేజీ విస్తరించబడ్డ స్క్రీన్‌షాట్ మద్దతు ఇవ్వదు.</string>
+    <string name="screen_orientation_changed">విస్తరించబడ్డ స్క్రీన్‌షాట్‌లను తీసుకునేటప్పుడు స్క్రీన్ ఒరియెంటేషన్‌ని మార్చలేం.</string>
+    <string name="screenshot_stoped_text">విస్తరించిన స్క్రీన్‌షాట్ ఆగిపోయింది</string>
+    <string name="scrolling">విస్తరించబడ్డ స్క్రీన్‌షాట్‌లను క్యాప్చర్ చేసేటప్పుడు స్క్రీన్ ఆటోమేటిక్‌గా స్క్రోల్ అవుతుంది.</string>
+    <string name="select_day">నెల మరియు రోజును ఎంచుకోండి</string>
+    <string name="select_hours">గంటలు ఎంచుకోండి</string>
+    <string name="select_minutes">నిమిషాలను ఎంచుకోండి</string>
+    <string name="select_year">సంవత్సరాన్ని ఎంచుకోండి</string>
+    <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="stop_and_save">స్క్రోలింగ్ ఆపివేయడానికి ఈ స్క్రీన్ నొక్కండి, విస్తరించబడ్డ స్క్రీన్‌షాట్ క్యాప్చర్ చేయబడుతుంది.</string>
+    <string name="summary">స్క్రీన్‌షాట్ తీసుకున్న తరువాత, దిగువన స్క్రోల్ చేయదగ్గకంటెంట్‌ని క్యాప్చర్ చేయడం కొరకు విస్తరించబడ్డ స్క్రీన్‌షాట్‌ని తట్టండి.</string>
+    <string name="time_picker_header_text">సమయాన్ని సెట్ చేయండి</string>
+    <string name="time_picker_hour_label">గంట</string>
+    <string name="time_picker_input_error">చెల్లే సమయాన్ని నమోదు చేయండి</string>
+    <string name="time_picker_minute_label">నిమిషం</string>
+    <string name="time_picker_prompt_label">సమయాన్ని పేర్కొనండి</string>
+    <string name="title">విస్తరించబడ్డ స్క్రీన్‌‌షాట్</string>
+    <string name="top_activity_changed">విస్తరించబడ్డ స్క్రీన్‌షాట్‌లను క్యాప్చర్ చేసేటప్పుడు యాప్ మారడం మద్దతు ఇవ్వదు.</string>
+</resources>

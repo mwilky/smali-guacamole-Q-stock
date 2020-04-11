@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="dimen" name="max_expandable_button_size">@dimen/oneplus_contorl_text_size_body1</item>
+    <dimen name="oneplus_contorl_text_size_body1">14.0sp</dimen>
+</resources>

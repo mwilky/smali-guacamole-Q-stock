@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="got_it">Supratau</string>
+    <string name="longshot_guide_not_support">Šiame puslapyje išplėsto ekrano kopijavimas nepalaikomas.</string>
+    <string name="longshot_guide_support">Bakstelėkite čia ir išbandykite išplėsto ekrano kopijavimo funkciją.</string>
+    <string name="not_support_longshot">Šiame puslapyje išplėsto ekrano kopijavimas nepalaikomas.</string>
+    <string name="screen_orientation_changed">Fiksuojant išplėsto ekrano kopijas, ekrano krypties keisti negalima.</string>
+    <string name="screenshot_stoped_text">Išplėsto ekrano kopijavimas sustabdytas</string>
+    <string name="scrolling">Fiksuojant išplėsto ekrano kopijas, ekranas automatiškai pasislinks.</string>
+    <string name="select_day">Pasirinkti mėnesį ir dieną</string>
+    <string name="select_hours">Pasirinkti valandas</string>
+    <string name="select_minutes">Pasirinkti minutes</string>
+    <string name="select_year">Pasirinkti metus</string>
+    <string name="stop_and_save">Bakstelėkite ekrane, kad sustabdytumėte slinkimą ir būtų užfiksuota išplėsto ekrano kopija.</string>
+    <string name="summary">Užfiksavę ekrano kopiją, ją bakstelėkite, kad užfiksuotumėte žemiau esantį slenkamą turinį.</string>
+    <string name="time_picker_header_text">Nustatyti laiką</string>
+    <string name="time_picker_hour_label">valanda</string>
+    <string name="time_picker_input_error">Įvesti tinkamą laiką</string>
+    <string name="time_picker_minute_label">minutė</string>
+    <string name="time_picker_prompt_label">Įvesti laiką</string>
+    <string name="title">Išplėsto ekrano kopija</string>
+    <string name="top_activity_changed">Programėlės perjungti negalima, kol fiksuojamos išplėsto ekrano kopijos.</string>
+</resources>

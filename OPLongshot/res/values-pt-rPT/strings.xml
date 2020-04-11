@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="notification_channel_screenshot">Capturas de ecrã</string>
+    <string name="screenshot_failed_text">Imp. tirar capt. ecrã devido ao espaço de armaz. limit. ou isso não é permitido pela aplic. da sua ent.</string>
+    <string name="screenshot_failed_title">Não foi possível obter captura de ecrã.</string>
+    <string name="screenshot_failed_to_capture_text">A aplicação ou a sua entidade não permitem tirar capturas de ecrã</string>
+    <string name="screenshot_failed_to_save_text">Não é possível guardar a captura de ecrã devido a espaço de armazenamento limitado.</string>
+    <string name="screenshot_failed_to_save_unknown_text">Problema encontrado ao guardar a captura de ecrã.</string>
+    <string name="screenshot_saved_text">Toque para ver a captura de ecrã</string>
+    <string name="screenshot_saved_title">Captura de ecrã efetuada</string>
+    <string name="screenshot_saving_text">A guardar captura de ecrã.</string>
+    <string name="screenshot_saving_ticker">A guardar captura de ecrã...</string>
+    <string name="screenshot_saving_title">A guardar captura de ecrã...</string>
+    <string name="status_bar_notification_info_overflow">999+</string>
+</resources>

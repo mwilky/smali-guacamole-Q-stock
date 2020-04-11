@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Syot layar</string>
+    <string name="got_it">Dapat</string>
+    <string name="longshot_guide_not_support">Syot layar berkembang tidak disokong di laman ini.</string>
+    <string name="longshot_guide_support">Ketik di sini untuk mencuba Syot Layar Berkembang.</string>
+    <string name="not_support_longshot">Syot layar berkembang tidak disokong di laman ini.</string>
+    <string name="notification_channel_screenshot">Tangkapan skrin</string>
+    <string name="oneplus_delete">Padam</string>
+    <string name="oneplus_share">Hantar</string>
+    <string name="screen_orientation_changed">Orientasi skrin tidak boleh ditukar semasa menangkap syot layar berkembang.</string>
+    <string name="screenshot_failed_text">Tdk dpt mngmbil tgkapn skrin krn ruang storan trhad atau tdk dibenarkn olh apl atau organisasi anda.</string>
+    <string name="screenshot_failed_title">Tidak dapat menangkap tangkapan skrin.</string>
+    <string name="screenshot_failed_to_capture_text">Pengambilan tangkapan skrin tidak dibenarkan oleh apl atau organisasi anda</string>
+    <string name="screenshot_failed_to_save_text">Tidak dapat menyimpan tangkapan skrin kerana ruang storan terhad.</string>
+    <string name="screenshot_failed_to_save_unknown_text">Berlaku masalah semasa menyimpan tangkapan skrin.</string>
+    <string name="screenshot_saved_text">Sentuh untuk melihat tangkapan skrin anda.</string>
+    <string name="screenshot_saved_title">Tangkapan skrin ditangkap.</string>
+    <string name="screenshot_saving_text">Tangkapan skrin sedang disimpan.</string>
+    <string name="screenshot_saving_ticker">Menyimpan tangkapan skrin...</string>
+    <string name="screenshot_saving_title">Menyimpan tangkapan skrin...</string>
+    <string name="screenshot_stoped_text">Syot layar yang diperluaskan telah terhenti</string>
+    <string name="scrolling">Skrin akan tatal secara automatik semasa menangkap syot layar berkembang.</string>
+    <string name="select_day">Pilih bulan dan hari</string>
+    <string name="select_hours">Pilih jam</string>
+    <string name="select_minutes">Pilih minit</string>
+    <string name="select_year">Pilih tahun</string>
+    <string name="stop_and_save">Ketik skrin ini untuk berhenti menatal dan syot layar dikembangkan akan ditangkap.</string>
+    <string name="summary">Selepas mengambil syot layar, ketik syot layar yang diperluaskan untuk menangkap kandungan boleh tatal di bawah.</string>
+    <string name="time_picker_header_text">Tetapkan masa</string>
+    <string name="time_picker_hour_label">jam</string>
+    <string name="time_picker_input_error">Masukkan masa yang sah</string>
+    <string name="time_picker_minute_label">minit</string>
+    <string name="time_picker_prompt_label">Taipkan masa</string>
+    <string name="title">Syot Layar Diperluaskan</string>
+    <string name="top_activity_changed">Menukar aplikasi tidak disokong semasa menangkap syot layar berkembang.</string>
+</resources>

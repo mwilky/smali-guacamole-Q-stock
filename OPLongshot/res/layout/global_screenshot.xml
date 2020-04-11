@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.oneplus.screenshot.longshot.app.GlobalScreenShotFrameLayout android:id="@id/global_screenshot_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/global_screenshot_background" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@android:color/black" />
+    <com.oneplus.screenshot.ScreenshotSelectorView android:id="@id/global_screenshot_selector" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:pointerIcon="crosshair" />
+    <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/global_screenshot_footer" android:background="@android:color/black" android:visibility="gone" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="82.0dip">
+        <ImageButton android:layout_gravity="center" android:id="@id/global_screenshot_ic_share" android:background="@drawable/editpage_btn_ripple_drawable" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@drawable/screenshot_footer_ic_share" android:layout_weight="1.0" />
+        <ImageButton android:layout_gravity="center" android:id="@id/global_screenshot_ic_edit" android:background="@drawable/editpage_btn_ripple_drawable" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@drawable/screenshot_footer_ic_edit" android:layout_weight="1.0" />
+        <ImageButton android:layout_gravity="center" android:id="@id/global_screenshot_ic_delete" android:background="@drawable/editpage_btn_ripple_drawable" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@drawable/screenshot_footer_ic_delete" android:layout_weight="1.0" />
+    </LinearLayout>
+    <RelativeLayout android:layout_gravity="top" android:orientation="horizontal" android:id="@id/global_screenshot_header" android:background="@android:color/black" android:visibility="gone" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="82.0dip">
+        <ImageButton android:id="@id/global_screenshot_ic_back" android:background="@drawable/editpage_btn_ripple_drawable" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_marginLeft="@dimen/oneplus_contorl_layout_margin_left6" android:layout_marginBottom="@dimen/oneplus_contorl_layout_margin_bottom5" android:src="@drawable/screenshot_footer_ic_back" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <ImageView android:layout_gravity="center" android:id="@id/global_screenshot" android:background="@drawable/screenshot_panel" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" android:adjustViewBounds="true" />
+    <ImageView android:id="@id/global_screenshot_flash" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@android:color/white" />
+    <include layout="@layout/longshot_guider" />
+</com.oneplus.screenshot.longshot.app.GlobalScreenShotFrameLayout>

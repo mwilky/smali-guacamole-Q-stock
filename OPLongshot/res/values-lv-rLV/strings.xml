@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="got_it">Sapratu</string>
+    <string name="longshot_guide_not_support">Šī lapa neatbalsta paplašinātos ekrānuzņēmumus.</string>
+    <string name="longshot_guide_support">Pieskarieties šeit, lai izmēģinātu paplašinātā ekrānuzņēmuma funkciju.</string>
+    <string name="not_support_longshot">Šī lapa neatbalsta paplašinātos ekrānuzņēmumus.</string>
+    <string name="screen_orientation_changed">Uzņemot paplašinātos ekrānuzņēmumus, nav iespējams mainīt ekrāna orientāciju.</string>
+    <string name="screenshot_stoped_text">Paplašinātais ekrānuzņēmums ir apturēts</string>
+    <string name="scrolling">Uzņemot paplašinātos ekrānuzņēmumus, ekrāns automātiski ritināsies.</string>
+    <string name="select_day">Atlasīt mēnesi un dienu</string>
+    <string name="select_hours">Atlasīt stundas</string>
+    <string name="select_minutes">Atlasīt minūtes</string>
+    <string name="select_year">Atlasīt gadu</string>
+    <string name="stop_and_save">Pieskarieties šim ekrānam, lai apturētu ritināšanu un uzņemtu paplašināto ekrānuzņēmumu.</string>
+    <string name="summary">Kad ir uzņemts ekrānuzņēmums, pieskarieties pie paplašinātā ekrānuzņēmuma funkcijas, lai uzņemtu tālāk pieejamo ritināmo saturu.</string>
+    <string name="time_picker_header_text">Iestatīt laiku</string>
+    <string name="time_picker_hour_label">stunda</string>
+    <string name="time_picker_input_error">Ievadīt derīgu laiku</string>
+    <string name="time_picker_minute_label">minūte</string>
+    <string name="time_picker_prompt_label">Ievadiet laiku</string>
+    <string name="title">Paplašinātais ekrānuzņēmums</string>
+    <string name="top_activity_changed">Uzņemot paplašinātos ekrānuzņēmumus, netiek nodrošināta pārslēgšanās starp lietotnēm.</string>
+</resources>

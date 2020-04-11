@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="got_it">Sain aru</string>
+    <string name="longshot_guide_not_support">Laiendatud kuvatõmmis pole sellel leheküljel toetatud.</string>
+    <string name="longshot_guide_support">Laiendatud kuvatõmmise proovimiseks puudutage siin.</string>
+    <string name="not_support_longshot">Laiendatud kuvatõmmis pole sellel leheküljel toetatud.</string>
+    <string name="notification_channel_screenshot">Ekraanipildid</string>
+    <string name="screen_orientation_changed">Ekraani paigutust ei saa muuta laiendatud kuvatõmmiste tegemisel.</string>
+    <string name="screenshot_failed_text">Ekraanipilti ei saa jäädvustada piiratud talletusruumi tõttu või ei luba seda rakendus/organisatsioon.</string>
+    <string name="screenshot_failed_title">Kuvatõmmist ei saanud jäädvustada.</string>
+    <string name="screenshot_failed_to_capture_text">Rakendus või teie organisatsioon ei luba ekraanipilte jäädvustada</string>
+    <string name="screenshot_failed_to_save_text">Piiratud salvestusruumi tõttu ei saa ekraanipilti salvestada.</string>
+    <string name="screenshot_failed_to_save_unknown_text">Ekraanipildi salvestamisel ilmnes probleem.</string>
+    <string name="screenshot_saved_text">Puudutage kuvatõmmise vaatamiseks.</string>
+    <string name="screenshot_saved_title">Ekraanipilt on jäädvustatud.</string>
+    <string name="screenshot_saving_text">Kuvatõmmist salvestatakse.</string>
+    <string name="screenshot_saving_ticker">Kuvatõmmise salvestamine ...</string>
+    <string name="screenshot_saving_title">Kuvatõmmise salvestamine ...</string>
+    <string name="screenshot_stoped_text">Laiendatud kuvatõmmis peatati</string>
+    <string name="scrolling">Laiendatud kuvatõmmiste tegemisel keritakse ekraani automaatselt.</string>
+    <string name="select_day">Valige kuu ja päev</string>
+    <string name="select_hours">Valige tunnid</string>
+    <string name="select_minutes">Valige minutid</string>
+    <string name="select_year">Valige aasta</string>
+    <string name="stop_and_save">Kerimise lõpetamiseks puudutage ekraani ning luuakse laiendatud kuvatõmmis.</string>
+    <string name="summary">Allpool oleva keritava sisu jäädvustamiseks puudutage kuvatõmmise tegemise järel laiendatud kuvatõmmist.</string>
+    <string name="time_picker_header_text">Määrake kellaaeg</string>
+    <string name="time_picker_hour_label">tund</string>
+    <string name="time_picker_input_error">Sisestage sobiv kellaaeg</string>
+    <string name="time_picker_minute_label">minut</string>
+    <string name="time_picker_prompt_label">Sisestage kellaaeg</string>
+    <string name="title">Laiendatud kuvatõmmis</string>
+    <string name="top_activity_changed">Rakenduste lülitamine pole laiendatud kuvatõmmiste tegemisel toetatud.</string>
+</resources>

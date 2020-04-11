@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="29" android:compileSdkVersionCodename="10" android:sharedUserId="android.uid.system" coreApp="true" package="com.oneplus.screenshot" platformBuildVersionCode="29" platformBuildVersionName="10">
+    <uses-permission android:name="android.permission.INJECT_EVENTS"/>
+    <uses-permission android:name="android.permission.READ_FRAME_BUFFER"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <application android:appComponentFactory="android.support.v4.app.CoreComponentFactory" android:defaultToDeviceProtectedStorage="true" android:directBootAware="true" android:extractNativeLibs="false" android:label="@string/app_name" android:name="com.oneplus.screenshot.ScreenshotApplication" android:theme="@style/AppTheme" android:usesNonSdkApi="true">
+        <service android:exported="true" android:name="com.oneplus.screenshot.LongshotService"/>
+        <service android:exported="true" android:name="com.oneplus.screenshot.service.GlobalService"/>
+        <service android:exported="true" android:name="com.oneplus.screenshot.TakeScreenshotService"/>
+        <receiver android:exported="true" android:name="com.oneplus.screenshot.GlobalScreenshot$TargetChosenReceiver"/>
+        <receiver android:exported="true" android:name="com.oneplus.screenshot.GlobalScreenshot$DeleteScreenshotReceiver"/>
+    </application>
+</manifest>

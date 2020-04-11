@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Skærmbillede</string>
+    <string name="got_it">Forstået</string>
+    <string name="longshot_guide_not_support">Udvidet screenshot understøttes ikke på denne side.</string>
+    <string name="longshot_guide_support">Tryk her for at prøve Udvidet Screenshot.</string>
+    <string name="not_support_longshot">Udvidet screenshot understøttes ikke på denne side.</string>
+    <string name="notification_channel_screenshot">Screenshots</string>
+    <string name="oneplus_delete">Slet</string>
+    <string name="oneplus_share">Send</string>
+    <string name="screen_orientation_changed">Skærmretningen kan ikke ændres, mens der optages udvidede screenshots.</string>
+    <string name="screenshot_failed_text">Skærmbilledet kan ikke tages pga. begrænset lagerplads, eller det tillades ikke af appen eller din organisation.</string>
+    <string name="screenshot_failed_title">Skærmbilledet kunne ikke tages.</string>
+    <string name="screenshot_failed_to_capture_text">Appen eller din organisation tillader ikke, at du tager screenshots</string>
+    <string name="screenshot_failed_to_save_text">Screenshottet kan ikke gemmes pga. begrænset lagerplads.</string>
+    <string name="screenshot_failed_to_save_unknown_text">Der opstod et problem ved lagringen af screenshottet.</string>
+    <string name="screenshot_saved_text">Tryk for at se dit skærmbillede.</string>
+    <string name="screenshot_saved_title">Skærmbilledet er gemt.</string>
+    <string name="screenshot_saving_text">Skærmbilledet gemmes.</string>
+    <string name="screenshot_saving_ticker">Gemmer skærmbillede...</string>
+    <string name="screenshot_saving_title">Gemmer skærmbillede...</string>
+    <string name="screenshot_stoped_text">Det udvidede skærmbillede er stoppet</string>
+    <string name="scrolling">Skærmen ruller automatisk mens der optages udvidede screenshots.</string>
+    <string name="select_day">Vælg måned og dag</string>
+    <string name="select_hours">Vælg time</string>
+    <string name="select_minutes">Vælg minutter</string>
+    <string name="select_year">Vælg år</string>
+    <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="stop_and_save">Tryk på denne skærm for at stoppe rulning og optage et udvidet skærmbillede.</string>
+    <string name="summary">Efter at der er taget et screenshot, skal du trykke på udvidet screenshot for at medtage det indhold nedenfor, som man kan rulle gennem.</string>
+    <string name="time_picker_header_text">Indstil tid</string>
+    <string name="time_picker_hour_label">time</string>
+    <string name="time_picker_input_error">Indtast en gyldig tid</string>
+    <string name="time_picker_minute_label">minut</string>
+    <string name="time_picker_prompt_label">Indtast tid</string>
+    <string name="title">Udvidet screenshot</string>
+    <string name="top_activity_changed">Skifte mellem apps understøttes ikke mens der optages udvidede screenshots.</string>
+</resources>

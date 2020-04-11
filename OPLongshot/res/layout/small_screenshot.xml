@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.oneplus.screenshot.longshot.smallscreen.SmallScreenShotFrameLayout android:id="@id/small_screen" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="bottom|center|right" android:id="@id/screenshotcontainer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="7.7599792dip"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <FrameLayout android:id="@id/screenshot_layout" android:background="@drawable/shadow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitCenter" android:layout_centerHorizontal="true">
+            <ImageView android:layout_gravity="center" android:id="@id/screenshot" android:background="@drawable/smallscreen_bg" android:padding="3.0dip" android:visibility="visible" android:layout_width="@dimen/small_longshot_layout_width" android:layout_height="@dimen/small_longshot_layout_height" android:scaleType="fitXY" />
+        </FrameLayout>
+        <Button android:textColor="@color/oneplus_contorl_text_color_primary_dark" android:id="@id/screenshot_ic_longshot" android:background="@drawable/longshot_btn_bg_ripple" android:padding="10.0dip" android:visibility="invisible" android:layout_width="@dimen/longshot_icon_width" android:layout_height="wrap_content" android:layout_marginTop="-13.0dip" android:scaleType="fitCenter" android:minHeight="@dimen/longshot_icon_height" android:text="@string/title" android:maxLines="2" android:layout_below="@id/screenshot_layout" android:layout_centerHorizontal="true" android:autoSizeTextType="uniform" android:autoSizeStepGranularity="1.0sp" android:autoSizeMinTextSize="5.0sp" android:autoSizeMaxTextSize="@dimen/max_expandable_button_size" style="@style/oneplus_contorl_text_style_descriptions" />
+    </RelativeLayout>
+</com.oneplus.screenshot.longshot.smallscreen.SmallScreenShotFrameLayout>

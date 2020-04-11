@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="192.0dip">
+        <com.oneplus.lib.widget.NumberPicker android:id="@id/numberPicker" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_centerInParent="true" />
+        <TextView android:textAppearance="?textAppearanceOPNumberPickerUnit" android:id="@id/min" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/oneplus_contorl_margin_left2" android:layout_centerVertical="true" android:layout_marginStart="@dimen/oneplus_contorl_margin_left2" android:layout_toEndOf="@id/numberPicker" />
+    </RelativeLayout>
+</LinearLayout>

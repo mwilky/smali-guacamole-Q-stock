@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="abc_action_bar_embed_tabs">true</bool>
+    <bool name="allow_stacked_button_bar">true</bool>
+    <bool name="config_closeDialogWhenTouchOutside">true</bool>
+    <bool name="op_abc_action_bar_embed_tabs">true</bool>
+    <bool name="op_abc_config_showMenuShortcutsWhenKeyboardPresent">false</bool>
+    <bool name="preferences_prefer_dual_pane">false</bool>
+</resources>

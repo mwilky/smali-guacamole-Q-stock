@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.oneplus.screenshot.longshot.preview.PreviewWindow android:id="@id/preview_window" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/preview_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ScrollView android:id="@id/preview_scroll_container" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentTop="true">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@id/preview" android:layout_width="fill_parent" android:layout_height="20000.0px" />
+            </RelativeLayout>
+        </ScrollView>
+        <ImageView android:id="@id/statusbar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" />
+        <View android:id="@id/statusbar_space" android:background="#cc208de3" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@android:dimen/status_bar_height" android:layout_alignParentTop="true" />
+        <RelativeLayout android:orientation="vertical" android:id="@id/notify_hint" android:background="#cc208de3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="64.0dip" android:layout_below="@id/statusbar_space">
+            <TextView android:textColor="@color/oneplus_contorl_text_color_primary_dark" android:gravity="center" android:id="@id/hint_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/oneplus_contorl_layout_margin_top2" android:layout_marginBottom="@dimen/oneplus_contorl_layout_margin_top2" android:text="@string/stop_and_save" android:layout_centerInParent="true" android:fontFamily="sans-serif-medium" android:paddingStart="@dimen/oneplus_contorl_layout_margin_left2" android:paddingEnd="@dimen/oneplus_contorl_layout_margin_right2" style="@style/oneplus_contorl_text_style_subheading" />
+        </RelativeLayout>
+        <ImageView android:id="@id/navibar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/loading_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/cacheview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="matrix" />
+        <include android:visibility="invisible" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" layout="@layout/small_screenshot" />
+        <ImageView android:id="@id/transitionview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="matrix" />
+        <ProgressBar android:id="@id/progress" android:visibility="gone" android:layout_width="36.0dip" android:layout_height="36.0dip" android:layout_centerInParent="true" style="?android:progressBarStyleLarge" />
+    </RelativeLayout>
+</com.oneplus.screenshot.longshot.preview.PreviewWindow>
