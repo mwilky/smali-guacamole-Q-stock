@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/adaptive_sleep_title" android:key="adaptive_sleep_detail"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:settings="http://schemas.android.com/apk/res-auto">
+    <com.android.settings.widget.VideoPreference android:title="@string/summary_placeholder" android:key="adaptive_sleep_video" settings:animation="@raw/adaptive_sleep" settings:controller="com.android.settings.widget.VideoPreferenceController" settings:preview="@drawable/adaptive_sleep" />
+    <com.oneplus.settings.ui.OPRestrictedSwitchPreference android:title="@string/adaptive_sleep_title" android:key="adaptive_sleep" android:summary="@string/adaptive_sleep_description" settings:allowDividerAbove="true" settings:controller="com.android.settings.display.AdaptiveSleepDetailPreferenceController" settings:keywords="@string/keywords_display_adaptive_sleep" settings:useAdminDisabledSummary="true" />
+</PreferenceScreen>

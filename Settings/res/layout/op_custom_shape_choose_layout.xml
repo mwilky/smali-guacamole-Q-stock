@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_horizontal" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.android.internal.widget.ViewPager android:id="@id/preview_viewpager" android:background="@color/oneplus_theme_custom_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/page_point_group" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/page_point_group" android:background="@color/oneplus_theme_custom_background" android:layout_width="fill_parent" android:layout_height="64.0dip" android:layout_above="@id/choose_title">
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <View android:id="@id/page0" android:background="@drawable/shape_oval_select_light" android:layout_width="7.0dip" android:layout_height="7.0dip" />
+            <View android:id="@id/page1" android:background="@drawable/shape_oval_unselect_light" android:layout_width="7.0dip" android:layout_height="7.0dip" android:layout_marginStart="5.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:textAppearance="@android:style/TextAppearance.Material.Body2" android:textColor="@color/settings_accent_color" android:gravity="start|center" android:id="@id/choose_title" android:background="@color/oneplus_contorl_bg_color_default" android:layout_width="fill_parent" android:layout_height="@dimen/oneplus_contorl_list_item_height_one_line1" android:text="@string/oneplus_theme_shape_effect_title" android:layout_above="@id/custom_style_container" android:textAllCaps="true" android:importantForAccessibility="no" android:paddingStart="@dimen/oneplus_contorl_layout_margin_left2" android:paddingEnd="@dimen/oneplus_contorl_layout_margin_left2" style="@style/oneplus_contorl_text_style_subtitle" />
+    <LinearLayout android:orientation="vertical" android:id="@id/custom_style_container" android:layout_width="fill_parent" android:layout_height="200.0dip" android:layout_alignParentBottom="true">
+        <com.oneplus.lib.widget.recyclerview.OPRecyclerView android:id="@id/custom_style_recyclerview" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>

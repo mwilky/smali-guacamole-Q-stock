@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="oneplus_applock_wrong_pattern_warning">
+        <item quantity="other">Jums ir vēl %1$d mēģinājumi</item>
+        <item quantity="one">Jums ir vēl %1$d mēģinājums</item>
+    </plurals>
+    <plurals name="oneplus_lockpattern_too_many_failed_confirmation_attempts_footer">
+        <item quantity="other">Mēģiniet atkal pēc %d sekundēm.</item>
+        <item quantity="one">Mēģiniet atkal pēc %d sekundes.</item>
+    </plurals>
+</resources>

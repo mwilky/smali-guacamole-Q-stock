@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RadioGroup android:id="@id/private_dns_radio_group" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/oneplus_contorl_margin_bottom2" android:layout_marginStart="@dimen/oneplus_contorl_margin_left3" android:layout_marginEnd="@dimen/oneplus_contorl_margin_right3">
+            <RadioButton android:id="@id/private_dns_mode_off" android:paddingLeft="@dimen/oneplus_contorl_margin_left2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="48.0dip" android:text="@string/private_dns_mode_off" />
+            <RadioButton android:id="@id/private_dns_mode_opportunistic" android:paddingLeft="@dimen/oneplus_contorl_margin_left2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="48.0dip" android:text="@string/private_dns_mode_opportunistic" />
+            <RadioButton android:id="@id/private_dns_mode_provider" android:paddingLeft="@dimen/oneplus_contorl_margin_left2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="48.0dip" android:text="@string/private_dns_mode_provider" />
+            <EditText android:id="@id/private_dns_mode_provider_hostname" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="48.0dip" android:hint="@string/private_dns_mode_provider_hostname_hint" android:inputType="textFilter|textMultiLine" android:imeOptions="actionDone" style="@style/oneplus_contorl_text_style_subheading" />
+        </RadioGroup>
+        <TextView android:textAppearance="?android:textAppearanceSmall" android:id="@id/private_dns_help_info" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:minHeight="48.0dip" android:paddingStart="16.0dip" />
+    </LinearLayout>
+</ScrollView>

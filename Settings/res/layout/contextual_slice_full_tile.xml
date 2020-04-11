@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/ContextualCardStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/dismissal_swipe_background" />
+        <androidx.slice.widget.SliceView android:layout_gravity="center_vertical" android:id="@id/slice_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:importantForAccessibility="no" style="@style/ContextualCardSliceViewStyle" />
+        <include layout="@layout/contextual_card_dismissal_view" />
+    </FrameLayout>
+</com.google.android.material.card.MaterialCardView>

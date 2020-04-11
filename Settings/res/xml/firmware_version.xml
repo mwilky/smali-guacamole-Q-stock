@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/firmware_version" android:key="firmware_version_screen" settings:keywords="@string/keywords_android_version"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:settings="http://schemas.android.com/apk/res-auto">
+    <Preference android:title="@string/firmware_version" android:key="os_firmware_version" android:summary="@string/summary_placeholder" settings:controller="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionDetailPreferenceController" settings:enableCopying="true" />
+    <Preference android:title="@string/security_patch" android:key="security_key" settings:controller="com.android.settings.deviceinfo.firmwareversion.SecurityPatchLevelPreferenceController" settings:enableCopying="true" />
+    <Preference android:title="@string/google_system_update" android:key="version_code">
+        <intent android:action="android.settings.SYSTEM_UPDATE_SETTINGS" />
+    </Preference>
+    <Preference android:title="@string/module_version" android:key="module_version" android:summary="@string/summary_placeholder" settings:controller="com.android.settings.deviceinfo.firmwareversion.MainlineModuleVersionPreferenceController" settings:enableCopying="true" />
+    <Preference android:title="@string/baseband_version" android:key="base_band" android:summary="@string/summary_placeholder" settings:controller="com.android.settings.deviceinfo.firmwareversion.BasebandVersionPreferenceController" settings:enableCopying="true" />
+    <Preference android:title="@string/kernel_version" android:key="kernel_version" android:summary="@string/summary_placeholder" settings:controller="com.android.settings.deviceinfo.firmwareversion.KernelVersionPreferenceController" settings:enableCopying="true" />
+    <Preference android:title="@string/build_number" android:key="os_build_number" android:summary="@string/summary_placeholder" settings:controller="com.android.settings.deviceinfo.firmwareversion.SimpleBuildNumberPreferenceController" settings:enableCopying="true" />
+</PreferenceScreen>

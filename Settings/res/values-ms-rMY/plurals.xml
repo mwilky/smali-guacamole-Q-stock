@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="oneplus_applock_wrong_pattern_warning">
+        <item quantity="other">Anda masih mempunyai %1$d peluang</item>
+        <item quantity="one">You still have %1$d chance</item>
+    </plurals>
+    <plurals name="oneplus_lockpattern_too_many_failed_confirmation_attempts_footer">
+        <item quantity="other">Cuba lagi dalam %d saat.</item>
+        <item quantity="one">Try again in %d second.</item>
+    </plurals>
+</resources>

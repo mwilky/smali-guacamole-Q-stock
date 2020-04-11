@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/layout_container" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/quickly_settings_group" android:background="@drawable/op_theme_shape_preview_round" android:layout_width="297.0dip" android:layout_height="wrap_content">
+        <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24.0dip">
+            <FrameLayout android:id="@id/adaptive_wifi" android:background="@drawable/ic_op_shape_squircle_enable" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_marginStart="21.0dip">
+                <ImageView android:layout_gravity="center" android:layout_width="21.0dip" android:layout_height="21.0dip" android:src="@drawable/ic_op_shape_wifi_for_adaptive" />
+            </FrameLayout>
+            <FrameLayout android:id="@id/adaptive_flashlight" android:background="@drawable/ic_op_shape_squircle_disable" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_marginStart="21.0dip">
+                <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_op_shape_flashlight" />
+            </FrameLayout>
+            <FrameLayout android:id="@id/adaptive_nfc" android:background="@drawable/ic_op_shape_squircle_enable" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_marginStart="21.0dip">
+                <ImageView android:layout_gravity="center" android:layout_width="21.0dip" android:layout_height="21.0dip" android:src="@drawable/ic_op_shape_nfc" />
+            </FrameLayout>
+            <FrameLayout android:id="@id/adaptive_airplane" android:background="@drawable/ic_op_shape_squircle_disable" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_marginStart="21.0dip" android:layout_marginEnd="21.0dip">
+                <ImageView android:layout_gravity="center" android:layout_width="21.0dip" android:layout_height="21.0dip" android:src="@drawable/ic_op_shape_airplane" />
+            </FrameLayout>
+        </LinearLayout>
+        <androidx.cardview.widget.CardView android:layout_gravity="center_horizontal" android:layout_width="27.0dip" android:layout_height="wrap_content" android:layout_marginTop="19.0dip" android:layout_marginBottom="8.0dip" app:cardBackgroundColor="@color/oneplus_theme_shape_notification_bar_color" app:cardCornerRadius="2.0dip" app:cardElevation="0.0dip" app:cardUseCompatPadding="false" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/notification_group" android:background="@drawable/op_theme_shape_preview_round" android:layout_width="297.0dip" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+        <ImageView android:layout_width="fill_parent" android:layout_height="72.0dip" android:layout_marginTop="18.0dip" android:layout_marginBottom="18.0dip" android:src="@drawable/ic_op_theme_shape_notification" android:scaleType="fitXY" android:layout_marginStart="21.0dip" android:layout_marginEnd="21.0dip" />
+        <ImageView android:background="@color/oneplus_contorl_divider_color_default" android:layout_width="fill_parent" android:layout_height="@dimen/oneplus_contorl_divider_height_standard" />
+        <ImageView android:layout_width="fill_parent" android:layout_height="72.0dip" android:layout_marginTop="18.0dip" android:layout_marginBottom="18.0dip" android:src="@drawable/ic_op_theme_shape_notification" android:scaleType="fitXY" android:layout_marginStart="21.0dip" android:layout_marginEnd="21.0dip" />
+    </LinearLayout>
+</LinearLayout>

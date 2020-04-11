@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:paddingStart="16.0dip" android:paddingEnd="16.0dip" style="@style/EntityHeader"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@android:id/icon" android:layout_width="@dimen/wifi_dpp_fragment_icon_width_height" android:layout_height="@dimen/wifi_dpp_fragment_icon_width_height" android:scaleType="fitCenter" />
+    <ImageView android:id="@id/devices_check_circle_green_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_devices_check_circle_green" android:scaleType="fitCenter" />
+    <LinearLayout android:orientation="vertical" android:id="@id/title_summary_container" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:gravity="center_horizontal" android:id="@android:id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:textAlignment="center" android:paddingStart="32.0dip" android:paddingEnd="32.0dip" style="@style/TextAppearance.EntityHeaderTitle" />
+        <TextView android:gravity="center_horizontal" android:id="@android:id/summary" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:singleLine="false" android:textAlignment="center" android:paddingStart="32.0dip" android:paddingEnd="32.0dip" style="@style/TextAppearance.EntityHeaderSummary" />
+    </LinearLayout>
+</LinearLayout>

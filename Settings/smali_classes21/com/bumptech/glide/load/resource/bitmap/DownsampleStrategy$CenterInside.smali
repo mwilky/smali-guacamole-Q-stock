@@ -1,0 +1,72 @@
+.class Lcom/bumptech/glide/load/resource/bitmap/DownsampleStrategy$CenterInside;
+.super Lcom/bumptech/glide/load/resource/bitmap/DownsampleStrategy;
+.source "DownsampleStrategy.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/bumptech/glide/load/resource/bitmap/DownsampleStrategy;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0xa
+    name = "CenterInside"
+.end annotation
+
+
+# direct methods
+.method constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Lcom/bumptech/glide/load/resource/bitmap/DownsampleStrategy;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public getSampleSizeRounding(IIII)Lcom/bumptech/glide/load/resource/bitmap/DownsampleStrategy$SampleSizeRounding;
+    .locals 2
+
+    invoke-virtual {p0, p1, p2, p3, p4}, Lcom/bumptech/glide/load/resource/bitmap/DownsampleStrategy$CenterInside;->getScaleFactor(IIII)F
+
+    move-result v0
+
+    const/high16 v1, 0x3f800000    # 1.0f
+
+    cmpl-float v0, v0, v1
+
+    if-nez v0, :cond_0
+
+    sget-object v0, Lcom/bumptech/glide/load/resource/bitmap/DownsampleStrategy$SampleSizeRounding;->QUALITY:Lcom/bumptech/glide/load/resource/bitmap/DownsampleStrategy$SampleSizeRounding;
+
+    goto :goto_0
+
+    :cond_0
+    sget-object v0, Lcom/bumptech/glide/load/resource/bitmap/DownsampleStrategy$CenterInside;->FIT_CENTER:Lcom/bumptech/glide/load/resource/bitmap/DownsampleStrategy;
+
+    invoke-virtual {v0, p1, p2, p3, p4}, Lcom/bumptech/glide/load/resource/bitmap/DownsampleStrategy;->getSampleSizeRounding(IIII)Lcom/bumptech/glide/load/resource/bitmap/DownsampleStrategy$SampleSizeRounding;
+
+    move-result-object v0
+
+    :goto_0
+    return-object v0
+.end method
+
+.method public getScaleFactor(IIII)F
+    .locals 2
+
+    sget-object v0, Lcom/bumptech/glide/load/resource/bitmap/DownsampleStrategy$CenterInside;->FIT_CENTER:Lcom/bumptech/glide/load/resource/bitmap/DownsampleStrategy;
+
+    invoke-virtual {v0, p1, p2, p3, p4}, Lcom/bumptech/glide/load/resource/bitmap/DownsampleStrategy;->getScaleFactor(IIII)F
+
+    move-result v0
+
+    const/high16 v1, 0x3f800000    # 1.0f
+
+    invoke-static {v1, v0}, Ljava/lang/Math;->min(FF)F
+
+    move-result v0
+
+    return v0
+.end method

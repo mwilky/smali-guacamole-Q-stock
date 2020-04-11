@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/game_driver_dashboard_title" android:key="game_driver_settings"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:settings="http://schemas.android.com/apk/res-auto">
+    <ListPreference android:entries="@array/game_driver_all_apps_preference_values" android:title="@string/game_driver_all_apps_preference_title" android:key="game_driver_all_apps_preference" android:dialogTitle="@string/game_driver_all_apps_preference_title" android:entryValues="@array/game_driver_all_apps_preference_values" settings:controller="com.android.settings.development.gamedriver.GameDriverEnableForAllAppsPreferenceController" />
+    <PreferenceCategory android:title="@string/game_driver_app_preference_title" android:key="game_driver_category" settings:controller="com.android.settings.development.gamedriver.GameDriverAppPreferenceController" />
+    <com.oneplus.settings.widget.OPFooterPreference android:title="@string/game_driver_footer_text" android:selectable="false" android:key="footer_preference" settings:controller="com.android.settings.development.gamedriver.GameDriverFooterPreferenceController" />
+</PreferenceScreen>

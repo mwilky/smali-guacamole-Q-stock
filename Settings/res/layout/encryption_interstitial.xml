@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.setupdesign.GlifLayout android:icon="@drawable/ic_lock" android:layout_width="fill_parent" android:layout_height="fill_parent" settings:sudGlifIconStyle="@style/OnePlusSuwGlifIcon"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:settings="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/SudContentFrame">
+        <TextView android:id="@id/sud_layout_description" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/SudDescription.Glif" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="bottom|center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/OnePlusSuwGlifButtonBar">
+        <com.oneplus.lib.widget.button.OPButton android:id="@id/encryption_no_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="95.0dip" android:text="@string/encryption_interstitial_no" style="@style/OnePlus.DeviceDefault.Widget.Material.Button.Borderless.Mini" />
+        <Space android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <com.oneplus.lib.widget.button.OPButton android:id="@id/encryption_yes_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="95.0dip" android:text="@string/encryption_interstitial_yes" style="@style/OnePlus.DeviceDefault.Widget.Material.Button.Mini" />
+    </LinearLayout>
+</com.google.android.setupdesign.GlifLayout>

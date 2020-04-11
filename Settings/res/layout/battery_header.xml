@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@id/battery_entity_header" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="200.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_top2" android:layout_marginBottom="@dimen/margin_top2" android:layout_marginStart="55.0dip">
+        <TextView android:textAppearance="@style/oneplus_contorl_text_style_display1" android:textColor="@color/oneplus_contorl_text_color_primary_default" android:gravity="center_vertical" android:id="@id/battery_percent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/oneplus_contorl_margin_left1" />
+        <TextView android:textAppearance="@style/oneplus_contorl_text_style_body1" android:textColor="@color/oneplus_contorl_text_color_secondary_default" android:gravity="center_vertical" android:id="@id/summary1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_marginStart="@dimen/oneplus_contorl_margin_left1" />
+        <Button android:id="@id/btn_show_stats" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/oneplus_battery_menu_stats_total" style="@style/OnePlus.DeviceDefault.Widget.Material.Button.Mini" />
+    </LinearLayout>
+    <com.android.settings.fuelgauge.BatteryMeterView android:layout_gravity="center" android:id="@id/battery_header_icon" android:layout_width="fill_parent" android:layout_height="@dimen/battery_meter_height" android:minWidth="@dimen/battery_meter_width" />
+</LinearLayout>

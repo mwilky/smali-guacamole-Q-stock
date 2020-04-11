@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/confirm_lock_background_base" />
+    <com.android.internal.widget.LinearLayoutWithDefaultTouchRecepient android:orientation="horizontal" android:id="@id/topLayout" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textColor="?android:colorAccent" android:id="@id/headerText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="32.0dip" android:layout_marginEnd="32.0dip" style="@style/OnePlusSuwGlifHeaderTitle" />
+            <TextView android:textColor="@color/oneplus_settings_text_color_primary" android:id="@id/sud_layout_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginStart="32.0dip" android:layout_marginEnd="32.0dip" style="@style/OnePlusSuwGlifHeaderBodyStyle" />
+            <Button android:id="@id/cancelButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="@string/cancel" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" style="@style/OnePlus.DeviceDefault.Widget.Material.Button.Borderless.Mini" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:clipChildren="false" android:clipToPadding="false" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <View android:id="@id/leftSpacer" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="0.4" />
+            <FrameLayout android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                <com.android.internal.widget.LockPatternView android:layout_gravity="center" android:id="@id/lockPattern" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                <TextView android:layout_gravity="bottom|center" android:id="@id/errorText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="24.0dip" android:accessibilityLiveRegion="polite" style="@style/TextAppearance.ErrorText" />
+            </FrameLayout>
+            <View android:id="@id/rightSpacer" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        </LinearLayout>
+    </com.android.internal.widget.LinearLayoutWithDefaultTouchRecepient>
+</FrameLayout>

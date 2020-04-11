@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="oneplus_applock_wrong_pattern_warning">
+        <item quantity="other">Dar turite %1$d bandymus (-ų)</item>
+        <item quantity="one">Dar turite %1$d bandymą</item>
+    </plurals>
+    <plurals name="oneplus_lockpattern_too_many_failed_confirmation_attempts_footer">
+        <item quantity="other">Bandykite dar kartą po %d sek.</item>
+        <item quantity="one">Bandykite dar kartą po %d sek.</item>
+    </plurals>
+</resources>

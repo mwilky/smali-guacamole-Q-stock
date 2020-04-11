@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/oneplus_contorl_layout_margin_top2"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:oneplus="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="@dimen/oneplus_contorl_list_item_height_one_line1">
+        <TextView android:textAppearance="@style/oneplus_contorl_text_style_subtitle" android:textColor="@color/oneplus_accent_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/oneplus_contorl_layout_margin_top2" android:text="@string/oneplus_theme_system_customization" android:layout_alignParentBottom="true" android:layout_marginStart="@dimen/oneplus_contorl_layout_margin_left2" android:layout_alignParentStart="true" />
+    </RelativeLayout>
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/oneplus_contorl_layout_margin_left2" android:layout_marginRight="@dimen/oneplus_contorl_layout_margin_left2">
+                <com.oneplus.settings.ui.OPTouchLinearLayout android:id="@id/theme_accent_color" android:background="@drawable/shape_round_corner" android:layout_width="fill_parent" android:layout_height="wrap_content" android:foreground="@drawable/button_ripple_radius" android:layout_weight="1.0">
+                    <FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="126.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/oneplus_contorl_layout_margin_top1">
+                                <com.oneplus.lib.widget.button.OPCheckBox android:id="@id/theme_accentcolor_checkbox" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:layout_marginEnd="19.0dip" />
+                                <com.oneplus.lib.widget.button.OPRadioButton android:id="@id/theme_accentcolor_radiobutton" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:layout_marginEnd="18.0dip" />
+                                <com.oneplus.lib.widget.button.OPSwitch android:id="@id/theme_accentcolor_switch" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" />
+                            </LinearLayout>
+                            <com.oneplus.lib.widget.OPSeekBar android:layout_gravity="center" android:id="@id/theme_accentcolor_seekbar" android:clickable="false" android:layout_width="126.0dip" android:layout_height="fill_parent" android:layout_marginTop="24.0dip" android:progress="70" android:paddingStart="0.0dip" android:paddingEnd="0.0dip" />
+                            <com.oneplus.lib.widget.button.OPButton android:layout_gravity="center" android:id="@id/theme_accentcolor_button" android:background="@drawable/op_btn_shape_for_theme_main" android:clickable="false" android:layout_width="144.0dip" android:layout_height="46.0dip" android:layout_marginTop="24.0dip" android:text="BUTTON" />
+                        </LinearLayout>
+                    </FrameLayout>
+                </com.oneplus.settings.ui.OPTouchLinearLayout>
+                <View android:layout_width="@dimen/oneplus_contorl_layout_margin_left1" android:layout_height="10.0dip" />
+                <com.oneplus.settings.ui.RadiusImageView android:layout_gravity="center" android:id="@id/theme_theme" android:layout_width="fill_parent" android:layout_height="fill_parent" android:foreground="@drawable/button_ripple_radius" android:scaleType="centerCrop" android:layout_weight="1.0" oneplus:round_radius="8.0dip" oneplus:shape_mode="round_rect" oneplus:stroke_color="@color/oneplus_contorl_divider_color_default" oneplus:stroke_width="1.0dip" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/oneplus_contorl_layout_margin_left2" android:layout_marginTop="@dimen/oneplus_contorl_layout_margin_top1" android:layout_marginRight="@dimen/oneplus_contorl_layout_margin_left2" android:layout_marginBottom="@dimen/oneplus_contorl_layout_margin_top3">
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:textColor="@color/oneplus_contorl_text_color_primary_default" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/oneplus_theme_accent_color" style="@style/oneplus_contorl_text_style_body2" />
+                </LinearLayout>
+                <View android:layout_width="@dimen/oneplus_contorl_layout_margin_left1" android:layout_height="10.0dip" />
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:textColor="@color/oneplus_contorl_text_color_primary_default" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/oneplus_theme_tone" style="@style/oneplus_contorl_text_style_body2" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/oneplus_contorl_layout_margin_left2" android:layout_marginRight="@dimen/oneplus_contorl_layout_margin_left2">
+                <com.oneplus.settings.ui.OPSquarelLinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/theme_shape" android:background="@drawable/shape_round_corner" android:layout_width="fill_parent" android:layout_height="wrap_content" android:foreground="@drawable/button_ripple_radius" android:layout_weight="1.0">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <ImageView android:id="@id/theme_shape_1" android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@drawable/ic_op_shape_adaptive_wifi_for_main" android:layout_marginEnd="25.0dip" />
+                        <ImageView android:id="@id/theme_shape_2" android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@drawable/ic_op_shape_adaptive_location_for_main" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25.0dip">
+                        <ImageView android:id="@id/theme_shape_3" android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@drawable/ic_op_shape_adaptive_nfc_for_main" android:layout_marginEnd="25.0dip" />
+                        <ImageView android:id="@id/theme_shape_4" android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@drawable/ic_op_shape_adaptive_night_for_main" />
+                    </LinearLayout>
+                </com.oneplus.settings.ui.OPSquarelLinearLayout>
+                <View android:layout_width="@dimen/oneplus_contorl_layout_margin_left1" android:layout_height="10.0dip" />
+                <com.oneplus.settings.ui.OPSquarelLinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/theme_iconpack" android:background="@drawable/shape_round_corner" android:layout_width="fill_parent" android:layout_height="wrap_content" android:foreground="@drawable/button_ripple_radius" android:layout_weight="1.0">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <ImageView android:id="@id/theme_icon_1" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginEnd="25.0dip" />
+                        <ImageView android:id="@id/theme_icon_2" android:layout_width="50.0dip" android:layout_height="50.0dip" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25.0dip">
+                        <ImageView android:id="@id/theme_icon_3" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginEnd="25.0dip" />
+                        <ImageView android:id="@id/theme_icon_4" android:layout_width="50.0dip" android:layout_height="50.0dip" />
+                    </LinearLayout>
+                </com.oneplus.settings.ui.OPSquarelLinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/oneplus_contorl_layout_margin_left2" android:layout_marginTop="@dimen/oneplus_contorl_layout_margin_top1" android:layout_marginRight="@dimen/oneplus_contorl_layout_margin_left2" android:layout_marginBottom="@dimen/oneplus_contorl_layout_margin_top3">
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:textColor="@color/oneplus_contorl_text_color_primary_default" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/oneplus_theme_shape" style="@style/oneplus_contorl_text_style_body2" />
+                </LinearLayout>
+                <View android:layout_width="@dimen/oneplus_contorl_layout_margin_left1" android:layout_height="10.0dip" />
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:textColor="@color/oneplus_contorl_text_color_primary_default" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/oneplus_theme_icon_pack" style="@style/oneplus_contorl_text_style_body2" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/theme_font_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/oneplus_contorl_layout_margin_left2" android:layout_marginEnd="@dimen/oneplus_contorl_layout_margin_left2">
+                <com.oneplus.settings.ui.OPSquarelLinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/theme_font_style" android:background="@drawable/shape_round_corner" android:layout_width="fill_parent" android:layout_height="wrap_content" android:foreground="@drawable/button_ripple_radius" android:layout_weight="1.0" android:paddingStart="@dimen/oneplus_contorl_layout_margin_left3" android:paddingEnd="@dimen/oneplus_contorl_layout_margin_left3">
+                    <TextView android:textSize="58.0px" android:textColor="@color/oneplus_contorl_text_color_primary" android:gravity="center_horizontal" android:id="@id/theme_font_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/oneplus_theme_font_title" style="@style/oneplus_contorl_text_style_title" />
+                    <TextView android:textSize="36.0px" android:textColor="@color/oneplus_contorl_text_color_secondary" android:gravity="center_horizontal" android:id="@id/theme_font_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:text="@string/oneplus_theme_font_content" style="@style/oneplus_contorl_text_style_body2" />
+                </com.oneplus.settings.ui.OPSquarelLinearLayout>
+                <View android:layout_width="@dimen/oneplus_contorl_layout_margin_left1" android:layout_height="10.0dip" />
+                <com.oneplus.settings.ui.OPSquarelLinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/theme_font_text_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/oneplus_contorl_layout_margin_left2" android:layout_marginTop="@dimen/oneplus_contorl_layout_margin_top1" android:layout_marginRight="@dimen/oneplus_contorl_layout_margin_left2" android:layout_marginBottom="@dimen/oneplus_contorl_layout_margin_top3">
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:textColor="@color/oneplus_contorl_text_color_primary_default" android:id="@id/font_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/oneplus_theme_font" style="@style/oneplus_contorl_text_style_body2" />
+                </LinearLayout>
+                <View android:layout_width="@dimen/oneplus_contorl_layout_margin_left1" android:layout_height="10.0dip" />
+                <TextView android:textColor="@color/oneplus_contorl_text_color_primary_default" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/oneplus_contorl_text_style_body2" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/ContextualCardStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/content" android:background="?android:selectableItemBackground" android:paddingTop="@dimen/contextual_condition_full_card_padding_top" android:paddingBottom="@dimen/contextual_condition_full_card_padding_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/oneplus_contorl_margin_left1" android:paddingEnd="@dimen/oneplus_contorl_margin_left1">
+            <ImageView android:id="@android:id/icon" android:layout_width="@dimen/oneplus_contextual_card_icon_size" android:layout_height="@dimen/oneplus_contextual_card_icon_size" android:tint="?android:colorAccent" />
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:paddingStart="@dimen/oneplus_contextual_condition_full_card_padding_start" android:paddingEnd="@dimen/contextual_condition_full_card_padding_end">
+                <TextView android:textColor="@color/oneplus_contorl_text_color_primary_default" android:id="@android:id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/contextual_condition_card_title_margin_bottom" style="@style/oneplus_contorl_text_style_body1" />
+                <TextView android:textColor="@color/oneplus_contorl_text_color_secondary_default" android:id="@android:id/summary" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/oneplus_contorl_text_style_body1" />
+            </LinearLayout>
+        </LinearLayout>
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="12.0dip" android:layout_marginEnd="12.0dip">
+            <include layout="@layout/horizontal_divider" />
+        </FrameLayout>
+        <Button android:id="@id/first_action" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/ConditionFullCardBorderlessButton" />
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

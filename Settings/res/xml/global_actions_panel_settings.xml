@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/global_actions_panel_title" android:key="gesture_global_actions_panel"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.android.settings.widget.VideoPreference android:key="global_actions_panel_video" app:animation="@raw/gesture_global_actions_panel" />
+    <SwitchPreference android:title="@string/global_actions_panel_title" android:key="gesture_global_actions_panel_switch" android:summary="@string/global_actions_panel_summary" app:allowDividerAbove="true" app:controller="com.android.settings.gestures.GlobalActionsPanelPreferenceController" app:keywords="@string/keywords_global_actions_panel" />
+</PreferenceScreen>

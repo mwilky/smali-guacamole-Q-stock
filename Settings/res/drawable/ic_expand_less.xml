@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:tint="@color/oneplus_contorl_icon_color_active_default" android:height="24.0dip" android:width="24.0dip" android:viewportWidth="24.0" android:viewportHeight="24.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:translateX="5.0" android:translateY="8.0">
+        <path android:fillColor="#ff000000" android:pathData="M13.8454874,6.90656153 L12.7848272,7.9672217 L6.86701349,2.04940797 L1.08422522,7.83219625 L0.0235650434,6.77153608 L6.33668341,0.458417715 C6.62957662,0.165524497 7.10445036,0.165524497 7.39734358,0.458417715 L13.8454874,6.90656153 Z" android:strokeWidth="1.0" />
+    </group>
+</vector>

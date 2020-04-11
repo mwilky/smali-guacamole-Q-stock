@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/oneplus_connected_devices_dashboard_title" android:key="connected_devices_advanced_screen"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:settings="http://schemas.android.com/apk/res-auto">
+    <com.oneplus.settings.ui.OPPreferenceHeaderMargin android:key="preference_divider_line" android:order="-20" />
+    <com.android.settings.widget.MasterSwitchPreference android:icon="@drawable/ic_settings_bluetooth" android:persistent="false" android:title="@string/bluetooth_settings_title" android:key="bluetooth_settings" android:order="-9" android:fragment="com.android.settings.connecteddevice.BluetoothDashboardFragment" settings:searchable="false" />
+    <SwitchPreference android:icon="@drawable/ic_nfc" android:title="@string/nfc_quick_toggle_title" android:key="toggle_nfc" android:summary="@string/nfc_quick_toggle_summary" android:order="-7" settings:controller="com.android.settings.nfc.NfcPreferenceController" />
+    <com.android.settingslib.RestrictedPreference android:icon="@drawable/ic_android" android:title="@string/android_beam_settings_title" android:key="android_beam_settings" android:order="-6" android:fragment="com.android.settings.nfc.AndroidBeam" settings:controller="com.android.settings.nfc.AndroidBeamPreferenceController" />
+    <SwitchPreference android:icon="@drawable/ic_nfc" android:title="@string/nfc_secure_settings_title" android:key="nfc_secure_settings" android:summary="@string/nfc_secure_toggle_summary" android:order="-7" settings:controller="com.android.settings.nfc.SecureNfcPreferenceController" />
+    <Preference android:icon="@drawable/op_ic_settings_default_payment_app" android:title="@string/nfc_payment_settings_title" android:key="default_payment_app" android:order="-4" android:fragment="com.android.settings.nfc.PaymentSettings" settings:controller="com.android.settings.applications.specialaccess.DefaultPaymentSettingsPreferenceController" settings:keywords="@string/keywords_default_payment_app" settings:searchable="false" />
+    <com.android.settingslib.RestrictedPreference android:icon="@drawable/ic_settings_print" android:title="@string/print_settings" android:key="connected_device_printing" android:summary="@string/summary_placeholder" android:order="-3" android:fragment="com.android.settings.print.PrintSettingsFragment" settings:searchable="false" />
+    <PreferenceCategory android:key="dashboard_tile_placeholder" android:order="-8" />
+    <PreferenceCategory android:key="usb_connected_device_list" android:order="200" settings:controller="com.android.settings.connecteddevice.OPUSBConnectedDeviceGroupController" />
+</PreferenceScreen>

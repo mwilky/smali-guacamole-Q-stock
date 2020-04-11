@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@id/preivew_container" android:background="@color/oneplus_theme_custom_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <view android:id="@id/frame" android:layout_width="fill_parent" android:layout_height="wrap_content" class="com.android.settings.TouchBlockingFrameLayout">
+        <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/oneplus_contorl_layout_margin_top2" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="@dimen/oneplus_contorl_layout_margin_left2" android:paddingEnd="@dimen/oneplus_contorl_layout_margin_left2">
+            <TextView android:textAppearance="@android:style/TextAppearance.Material.Headline" android:textColor="@color/oneplus_contorl_text_color_primary" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/font_size_preview_text_headline" style="@style/oneplus_contorl_text_style_display1" />
+            <TextView android:textAppearance="@android:style/TextAppearance.Material.Title" android:textColor="@color/oneplus_contorl_text_color_secondary" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/oneplus_contorl_layout_margin_top1" android:text="@string/font_size_preview_text_title" style="@style/oneplus_contorl_text_style_title" />
+            <TextView android:textAppearance="@android:style/TextAppearance.Material.Subhead" android:textColor="@color/oneplus_contorl_text_color_secondary" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/oneplus_contorl_layout_margin_top1" android:text="@string/font_size_preview_text_subtitle" android:breakStrategy="simple" style="@style/oneplus_contorl_text_style_title" />
+            <TextView android:textAppearance="@android:style/TextAppearance.Material.Body1" android:textColor="@color/oneplus_contorl_text_color_secondary" android:paddingBottom="@dimen/oneplus_contorl_layout_margin_top2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/oneplus_contorl_layout_margin_top2" android:text="@string/font_size_preview_text_body" style="@style/oneplus_contorl_text_style_body1" />
+        </LinearLayout>
+    </view>
+</ScrollView>

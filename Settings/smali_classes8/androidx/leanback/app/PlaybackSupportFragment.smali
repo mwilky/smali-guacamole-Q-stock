@@ -1,0 +1,2199 @@
+.class public Landroidx/leanback/app/PlaybackSupportFragment;
+.super Landroidx/fragment/app/Fragment;
+.source "PlaybackSupportFragment.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Landroidx/leanback/app/PlaybackSupportFragment$OnFadeCompleteListener;,
+        Landroidx/leanback/app/PlaybackSupportFragment$SetSelectionRunnable;
+    }
+.end annotation
+
+
+# static fields
+.field private static final ANIMATING:I = 0x1
+
+.field private static final ANIMATION_MULTIPLIER:I = 0x1
+
+.field public static final BG_DARK:I = 0x1
+
+.field public static final BG_LIGHT:I = 0x2
+
+.field public static final BG_NONE:I = 0x0
+
+.field static final BUNDLE_CONTROL_VISIBLE_ON_CREATEVIEW:Ljava/lang/String; = "controlvisible_oncreateview"
+
+.field private static final DEBUG:Z = false
+
+.field private static final IDLE:I = 0x0
+
+.field private static final START_FADE_OUT:I = 0x1
+
+.field private static final TAG:Ljava/lang/String; = "PlaybackSupportFragment"
+
+
+# instance fields
+.field mAdapter:Landroidx/leanback/widget/ObjectAdapter;
+
+.field private final mAdapterListener:Landroidx/leanback/widget/ItemBridgeAdapter$AdapterListener;
+
+.field mAnimationTranslateY:I
+
+.field mAutohideTimerAfterPlayingInMs:I
+
+.field mAutohideTimerAfterTickleInMs:I
+
+.field mBackgroundType:I
+
+.field mBackgroundView:Landroid/view/View;
+
+.field mBgAlpha:I
+
+.field mBgDarkColor:I
+
+.field mBgFadeInAnimator:Landroid/animation/ValueAnimator;
+
+.field mBgFadeOutAnimator:Landroid/animation/ValueAnimator;
+
+.field mBgLightColor:I
+
+.field final mChainedClient:Landroidx/leanback/widget/PlaybackSeekUi$Client;
+
+.field mControlRowFadeInAnimator:Landroid/animation/ValueAnimator;
+
+.field mControlRowFadeOutAnimator:Landroid/animation/ValueAnimator;
+
+.field mControlVisible:Z
+
+.field mControlVisibleBeforeOnCreateView:Z
+
+.field mExternalItemClickedListener:Landroidx/leanback/widget/BaseOnItemViewClickedListener;
+
+.field mExternalItemSelectedListener:Landroidx/leanback/widget/BaseOnItemViewSelectedListener;
+
+.field mFadeCompleteListener:Landroidx/leanback/app/PlaybackSupportFragment$OnFadeCompleteListener;
+
+.field private final mFadeListener:Landroid/animation/Animator$AnimatorListener;
+
+.field mFadingEnabled:Z
+
+.field private final mHandler:Landroid/os/Handler;
+
+.field mHostCallback:Landroidx/leanback/media/PlaybackGlueHost$HostCallback;
+
+.field mInSeek:Z
+
+.field mInputEventHandler:Landroid/view/View$OnKeyListener;
+
+.field private mLogAccelerateInterpolator:Landroid/animation/TimeInterpolator;
+
+.field private mLogDecelerateInterpolator:Landroid/animation/TimeInterpolator;
+
+.field mMajorFadeTranslateY:I
+
+.field mMinorFadeTranslateY:I
+
+.field private final mOnItemViewClickedListener:Landroidx/leanback/widget/BaseOnItemViewClickedListener;
+
+.field private final mOnItemViewSelectedListener:Landroidx/leanback/widget/BaseOnItemViewSelectedListener;
+
+.field private final mOnKeyInterceptListener:Landroidx/leanback/widget/BaseGridView$OnKeyInterceptListener;
+
+.field private final mOnTouchInterceptListener:Landroidx/leanback/widget/BaseGridView$OnTouchInterceptListener;
+
+.field mOtherRowFadeInAnimator:Landroid/animation/ValueAnimator;
+
+.field mOtherRowFadeOutAnimator:Landroid/animation/ValueAnimator;
+
+.field mOtherRowsCenterToBottom:I
+
+.field mPaddingBottom:I
+
+.field mPlaybackItemClickedListener:Landroidx/leanback/widget/BaseOnItemViewClickedListener;
+
+.field mPresenter:Landroidx/leanback/widget/PlaybackRowPresenter;
+
+.field mProgressBarManager:Landroidx/leanback/app/ProgressBarManager;
+
+.field mRootView:Landroid/view/View;
+
+.field mRow:Landroidx/leanback/widget/Row;
+
+.field mRowsSupportFragment:Landroidx/leanback/app/RowsSupportFragment;
+
+.field mSeekUiClient:Landroidx/leanback/widget/PlaybackSeekUi$Client;
+
+.field private final mSetSelectionRunnable:Landroidx/leanback/app/PlaybackSupportFragment$SetSelectionRunnable;
+
+.field mShowOrHideControlsOverlayOnUserInteraction:Z
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 3
+
+    invoke-direct {p0}, Landroidx/fragment/app/Fragment;-><init>()V
+
+    new-instance v0, Landroidx/leanback/app/ProgressBarManager;
+
+    invoke-direct {v0}, Landroidx/leanback/app/ProgressBarManager;-><init>()V
+
+    iput-object v0, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mProgressBarManager:Landroidx/leanback/app/ProgressBarManager;
+
+    new-instance v0, Landroidx/leanback/app/PlaybackSupportFragment$1;
+
+    invoke-direct {v0, p0}, Landroidx/leanback/app/PlaybackSupportFragment$1;-><init>(Landroidx/leanback/app/PlaybackSupportFragment;)V
+
+    iput-object v0, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mOnItemViewClickedListener:Landroidx/leanback/widget/BaseOnItemViewClickedListener;
+
+    new-instance v0, Landroidx/leanback/app/PlaybackSupportFragment$2;
+
+    invoke-direct {v0, p0}, Landroidx/leanback/app/PlaybackSupportFragment$2;-><init>(Landroidx/leanback/app/PlaybackSupportFragment;)V
+
+    iput-object v0, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mOnItemViewSelectedListener:Landroidx/leanback/widget/BaseOnItemViewSelectedListener;
+
+    new-instance v0, Landroidx/leanback/app/PlaybackSupportFragment$SetSelectionRunnable;
+
+    invoke-direct {v0, p0}, Landroidx/leanback/app/PlaybackSupportFragment$SetSelectionRunnable;-><init>(Landroidx/leanback/app/PlaybackSupportFragment;)V
+
+    iput-object v0, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mSetSelectionRunnable:Landroidx/leanback/app/PlaybackSupportFragment$SetSelectionRunnable;
+
+    const/4 v0, 0x1
+
+    iput v0, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mBackgroundType:I
+
+    iput-boolean v0, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mFadingEnabled:Z
+
+    iput-boolean v0, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mControlVisibleBeforeOnCreateView:Z
+
+    iput-boolean v0, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mControlVisible:Z
+
+    iput-boolean v0, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mShowOrHideControlsOverlayOnUserInteraction:Z
+
+    new-instance v0, Landroidx/leanback/app/PlaybackSupportFragment$3;
+
+    invoke-direct {v0, p0}, Landroidx/leanback/app/PlaybackSupportFragment$3;-><init>(Landroidx/leanback/app/PlaybackSupportFragment;)V
+
+    iput-object v0, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mFadeListener:Landroid/animation/Animator$AnimatorListener;
+
+    new-instance v0, Landroidx/leanback/app/PlaybackSupportFragment$4;
+
+    invoke-direct {v0, p0}, Landroidx/leanback/app/PlaybackSupportFragment$4;-><init>(Landroidx/leanback/app/PlaybackSupportFragment;)V
+
+    iput-object v0, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mHandler:Landroid/os/Handler;
+
+    new-instance v0, Landroidx/leanback/app/PlaybackSupportFragment$5;
+
+    invoke-direct {v0, p0}, Landroidx/leanback/app/PlaybackSupportFragment$5;-><init>(Landroidx/leanback/app/PlaybackSupportFragment;)V
+
+    iput-object v0, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mOnTouchInterceptListener:Landroidx/leanback/widget/BaseGridView$OnTouchInterceptListener;
+
+    new-instance v0, Landroidx/leanback/app/PlaybackSupportFragment$6;
+
+    invoke-direct {v0, p0}, Landroidx/leanback/app/PlaybackSupportFragment$6;-><init>(Landroidx/leanback/app/PlaybackSupportFragment;)V
+
+    iput-object v0, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mOnKeyInterceptListener:Landroidx/leanback/widget/BaseGridView$OnKeyInterceptListener;
+
+    new-instance v0, Landroidx/leanback/animation/LogDecelerateInterpolator;
+
+    const/4 v1, 0x0
+
+    const/16 v2, 0x64
+
+    invoke-direct {v0, v2, v1}, Landroidx/leanback/animation/LogDecelerateInterpolator;-><init>(II)V
+
+    iput-object v0, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mLogDecelerateInterpolator:Landroid/animation/TimeInterpolator;
+
+    new-instance v0, Landroidx/leanback/animation/LogAccelerateInterpolator;
+
+    invoke-direct {v0, v2, v1}, Landroidx/leanback/animation/LogAccelerateInterpolator;-><init>(II)V
+
+    iput-object v0, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mLogAccelerateInterpolator:Landroid/animation/TimeInterpolator;
+
+    new-instance v0, Landroidx/leanback/app/PlaybackSupportFragment$10;
+
+    invoke-direct {v0, p0}, Landroidx/leanback/app/PlaybackSupportFragment$10;-><init>(Landroidx/leanback/app/PlaybackSupportFragment;)V
+
+    iput-object v0, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mAdapterListener:Landroidx/leanback/widget/ItemBridgeAdapter$AdapterListener;
+
+    new-instance v0, Landroidx/leanback/app/PlaybackSupportFragment$11;
+
+    invoke-direct {v0, p0}, Landroidx/leanback/app/PlaybackSupportFragment$11;-><init>(Landroidx/leanback/app/PlaybackSupportFragment;)V
+
+    iput-object v0, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mChainedClient:Landroidx/leanback/widget/PlaybackSeekUi$Client;
+
+    iget-object v0, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mProgressBarManager:Landroidx/leanback/app/ProgressBarManager;
+
+    const-wide/16 v1, 0x1f4
+
+    invoke-virtual {v0, v1, v2}, Landroidx/leanback/app/ProgressBarManager;->setInitialDelay(J)V
+
+    return-void
+.end method
+
+.method static endAll(Landroid/animation/ValueAnimator;Landroid/animation/ValueAnimator;)V
+    .locals 1
+
+    invoke-virtual {p0}, Landroid/animation/ValueAnimator;->isStarted()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    invoke-virtual {p0}, Landroid/animation/ValueAnimator;->end()V
+
+    goto :goto_0
+
+    :cond_0
+    invoke-virtual {p1}, Landroid/animation/ValueAnimator;->isStarted()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    invoke-virtual {p1}, Landroid/animation/ValueAnimator;->end()V
+
+    :cond_1
+    :goto_0
+    return-void
+.end method
+
+.method private static loadAnimator(Landroid/content/Context;I)Landroid/animation/ValueAnimator;
+    .locals 5
+
+    invoke-static {p0, p1}, Landroid/animation/AnimatorInflater;->loadAnimator(Landroid/content/Context;I)Landroid/animation/Animator;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/animation/ValueAnimator;
+
+    invoke-virtual {v0}, Landroid/animation/ValueAnimator;->getDuration()J
+
+    move-result-wide v1
+
+    const-wide/16 v3, 0x1
+
+    mul-long/2addr v1, v3
+
+    invoke-virtual {v0, v1, v2}, Landroid/animation/ValueAnimator;->setDuration(J)Landroid/animation/ValueAnimator;
+
+    return-object v0
+.end method
+
+.method private loadBgAnimator()V
+    .locals 4
+
+    new-instance v0, Landroidx/leanback/app/PlaybackSupportFragment$7;
+
+    invoke-direct {v0, p0}, Landroidx/leanback/app/PlaybackSupportFragment$7;-><init>(Landroidx/leanback/app/PlaybackSupportFragment;)V
+
+    invoke-virtual {p0}, Landroidx/leanback/app/PlaybackSupportFragment;->getContext()Landroid/content/Context;
+
+    move-result-object v1
+
+    sget v2, Landroidx/leanback/R$animator;->lb_playback_bg_fade_in:I
+
+    invoke-static {v1, v2}, Landroidx/leanback/app/PlaybackSupportFragment;->loadAnimator(Landroid/content/Context;I)Landroid/animation/ValueAnimator;
+
+    move-result-object v2
+
+    iput-object v2, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mBgFadeInAnimator:Landroid/animation/ValueAnimator;
+
+    iget-object v2, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mBgFadeInAnimator:Landroid/animation/ValueAnimator;
+
+    invoke-virtual {v2, v0}, Landroid/animation/ValueAnimator;->addUpdateListener(Landroid/animation/ValueAnimator$AnimatorUpdateListener;)V
+
+    iget-object v2, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mBgFadeInAnimator:Landroid/animation/ValueAnimator;
+
+    iget-object v3, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mFadeListener:Landroid/animation/Animator$AnimatorListener;
+
+    invoke-virtual {v2, v3}, Landroid/animation/ValueAnimator;->addListener(Landroid/animation/Animator$AnimatorListener;)V
+
+    sget v2, Landroidx/leanback/R$animator;->lb_playback_bg_fade_out:I
+
+    invoke-static {v1, v2}, Landroidx/leanback/app/PlaybackSupportFragment;->loadAnimator(Landroid/content/Context;I)Landroid/animation/ValueAnimator;
+
+    move-result-object v2
+
+    iput-object v2, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mBgFadeOutAnimator:Landroid/animation/ValueAnimator;
+
+    iget-object v2, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mBgFadeOutAnimator:Landroid/animation/ValueAnimator;
+
+    invoke-virtual {v2, v0}, Landroid/animation/ValueAnimator;->addUpdateListener(Landroid/animation/ValueAnimator$AnimatorUpdateListener;)V
+
+    iget-object v2, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mBgFadeOutAnimator:Landroid/animation/ValueAnimator;
+
+    iget-object v3, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mFadeListener:Landroid/animation/Animator$AnimatorListener;
+
+    invoke-virtual {v2, v3}, Landroid/animation/ValueAnimator;->addListener(Landroid/animation/Animator$AnimatorListener;)V
+
+    return-void
+.end method
+
+.method private loadControlRowAnimator()V
+    .locals 4
+
+    new-instance v0, Landroidx/leanback/app/PlaybackSupportFragment$8;
+
+    invoke-direct {v0, p0}, Landroidx/leanback/app/PlaybackSupportFragment$8;-><init>(Landroidx/leanback/app/PlaybackSupportFragment;)V
+
+    invoke-virtual {p0}, Landroidx/leanback/app/PlaybackSupportFragment;->getContext()Landroid/content/Context;
+
+    move-result-object v1
+
+    sget v2, Landroidx/leanback/R$animator;->lb_playback_controls_fade_in:I
+
+    invoke-static {v1, v2}, Landroidx/leanback/app/PlaybackSupportFragment;->loadAnimator(Landroid/content/Context;I)Landroid/animation/ValueAnimator;
+
+    move-result-object v2
+
+    iput-object v2, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mControlRowFadeInAnimator:Landroid/animation/ValueAnimator;
+
+    iget-object v2, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mControlRowFadeInAnimator:Landroid/animation/ValueAnimator;
+
+    invoke-virtual {v2, v0}, Landroid/animation/ValueAnimator;->addUpdateListener(Landroid/animation/ValueAnimator$AnimatorUpdateListener;)V
+
+    iget-object v2, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mControlRowFadeInAnimator:Landroid/animation/ValueAnimator;
+
+    iget-object v3, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mLogDecelerateInterpolator:Landroid/animation/TimeInterpolator;
+
+    invoke-virtual {v2, v3}, Landroid/animation/ValueAnimator;->setInterpolator(Landroid/animation/TimeInterpolator;)V
+
+    sget v2, Landroidx/leanback/R$animator;->lb_playback_controls_fade_out:I
+
+    invoke-static {v1, v2}, Landroidx/leanback/app/PlaybackSupportFragment;->loadAnimator(Landroid/content/Context;I)Landroid/animation/ValueAnimator;
+
+    move-result-object v2
+
+    iput-object v2, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mControlRowFadeOutAnimator:Landroid/animation/ValueAnimator;
+
+    iget-object v2, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mControlRowFadeOutAnimator:Landroid/animation/ValueAnimator;
+
+    invoke-virtual {v2, v0}, Landroid/animation/ValueAnimator;->addUpdateListener(Landroid/animation/ValueAnimator$AnimatorUpdateListener;)V
+
+    iget-object v2, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mControlRowFadeOutAnimator:Landroid/animation/ValueAnimator;
+
+    iget-object v3, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mLogAccelerateInterpolator:Landroid/animation/TimeInterpolator;
+
+    invoke-virtual {v2, v3}, Landroid/animation/ValueAnimator;->setInterpolator(Landroid/animation/TimeInterpolator;)V
+
+    return-void
+.end method
+
+.method private loadOtherRowAnimator()V
+    .locals 4
+
+    new-instance v0, Landroidx/leanback/app/PlaybackSupportFragment$9;
+
+    invoke-direct {v0, p0}, Landroidx/leanback/app/PlaybackSupportFragment$9;-><init>(Landroidx/leanback/app/PlaybackSupportFragment;)V
+
+    invoke-virtual {p0}, Landroidx/leanback/app/PlaybackSupportFragment;->getContext()Landroid/content/Context;
+
+    move-result-object v1
+
+    sget v2, Landroidx/leanback/R$animator;->lb_playback_controls_fade_in:I
+
+    invoke-static {v1, v2}, Landroidx/leanback/app/PlaybackSupportFragment;->loadAnimator(Landroid/content/Context;I)Landroid/animation/ValueAnimator;
+
+    move-result-object v2
+
+    iput-object v2, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mOtherRowFadeInAnimator:Landroid/animation/ValueAnimator;
+
+    iget-object v2, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mOtherRowFadeInAnimator:Landroid/animation/ValueAnimator;
+
+    invoke-virtual {v2, v0}, Landroid/animation/ValueAnimator;->addUpdateListener(Landroid/animation/ValueAnimator$AnimatorUpdateListener;)V
+
+    iget-object v2, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mOtherRowFadeInAnimator:Landroid/animation/ValueAnimator;
+
+    iget-object v3, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mLogDecelerateInterpolator:Landroid/animation/TimeInterpolator;
+
+    invoke-virtual {v2, v3}, Landroid/animation/ValueAnimator;->setInterpolator(Landroid/animation/TimeInterpolator;)V
+
+    sget v2, Landroidx/leanback/R$animator;->lb_playback_controls_fade_out:I
+
+    invoke-static {v1, v2}, Landroidx/leanback/app/PlaybackSupportFragment;->loadAnimator(Landroid/content/Context;I)Landroid/animation/ValueAnimator;
+
+    move-result-object v2
+
+    iput-object v2, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mOtherRowFadeOutAnimator:Landroid/animation/ValueAnimator;
+
+    iget-object v2, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mOtherRowFadeOutAnimator:Landroid/animation/ValueAnimator;
+
+    invoke-virtual {v2, v0}, Landroid/animation/ValueAnimator;->addUpdateListener(Landroid/animation/ValueAnimator$AnimatorUpdateListener;)V
+
+    iget-object v2, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mOtherRowFadeOutAnimator:Landroid/animation/ValueAnimator;
+
+    new-instance v3, Landroid/view/animation/AccelerateInterpolator;
+
+    invoke-direct {v3}, Landroid/view/animation/AccelerateInterpolator;-><init>()V
+
+    invoke-virtual {v2, v3}, Landroid/animation/ValueAnimator;->setInterpolator(Landroid/animation/TimeInterpolator;)V
+
+    return-void
+.end method
+
+.method static reverseFirstOrStartSecond(Landroid/animation/ValueAnimator;Landroid/animation/ValueAnimator;Z)V
+    .locals 1
+
+    invoke-virtual {p0}, Landroid/animation/ValueAnimator;->isStarted()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    invoke-virtual {p0}, Landroid/animation/ValueAnimator;->reverse()V
+
+    if-nez p2, :cond_1
+
+    invoke-virtual {p0}, Landroid/animation/ValueAnimator;->end()V
+
+    goto :goto_0
+
+    :cond_0
+    invoke-virtual {p1}, Landroid/animation/ValueAnimator;->start()V
+
+    if-nez p2, :cond_1
+
+    invoke-virtual {p1}, Landroid/animation/ValueAnimator;->end()V
+
+    :cond_1
+    :goto_0
+    return-void
+.end method
+
+.method private setupChildFragmentLayout()V
+    .locals 1
+
+    iget-object v0, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mRowsSupportFragment:Landroidx/leanback/app/RowsSupportFragment;
+
+    invoke-virtual {v0}, Landroidx/leanback/app/RowsSupportFragment;->getVerticalGridView()Landroidx/leanback/widget/VerticalGridView;
+
+    move-result-object v0
+
+    invoke-virtual {p0, v0}, Landroidx/leanback/app/PlaybackSupportFragment;->setVerticalGridViewLayout(Landroidx/leanback/widget/VerticalGridView;)V
+
+    return-void
+.end method
+
+.method private setupPresenter()V
+    .locals 4
+
+    iget-object v0, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mAdapter:Landroidx/leanback/widget/ObjectAdapter;
+
+    if-eqz v0, :cond_1
+
+    iget-object v1, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mRow:Landroidx/leanback/widget/Row;
+
+    if-eqz v1, :cond_1
+
+    iget-object v1, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mPresenter:Landroidx/leanback/widget/PlaybackRowPresenter;
+
+    if-eqz v1, :cond_1
+
+    invoke-virtual {v0}, Landroidx/leanback/widget/ObjectAdapter;->getPresenterSelector()Landroidx/leanback/widget/PresenterSelector;
+
+    move-result-object v0
+
+    if-nez v0, :cond_0
+
+    new-instance v1, Landroidx/leanback/widget/ClassPresenterSelector;
+
+    invoke-direct {v1}, Landroidx/leanback/widget/ClassPresenterSelector;-><init>()V
+
+    move-object v0, v1
+
+    move-object v1, v0
+
+    check-cast v1, Landroidx/leanback/widget/ClassPresenterSelector;
+
+    iget-object v2, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mRow:Landroidx/leanback/widget/Row;
+
+    invoke-virtual {v2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    move-result-object v2
+
+    iget-object v3, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mPresenter:Landroidx/leanback/widget/PlaybackRowPresenter;
+
+    invoke-virtual {v1, v2, v3}, Landroidx/leanback/widget/ClassPresenterSelector;->addClassPresenter(Ljava/lang/Class;Landroidx/leanback/widget/Presenter;)Landroidx/leanback/widget/ClassPresenterSelector;
+
+    iget-object v1, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mAdapter:Landroidx/leanback/widget/ObjectAdapter;
+
+    invoke-virtual {v1, v0}, Landroidx/leanback/widget/ObjectAdapter;->setPresenterSelector(Landroidx/leanback/widget/PresenterSelector;)V
+
+    goto :goto_0
+
+    :cond_0
+    instance-of v1, v0, Landroidx/leanback/widget/ClassPresenterSelector;
+
+    if-eqz v1, :cond_1
+
+    move-object v1, v0
+
+    check-cast v1, Landroidx/leanback/widget/ClassPresenterSelector;
+
+    iget-object v2, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mRow:Landroidx/leanback/widget/Row;
+
+    invoke-virtual {v2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    move-result-object v2
+
+    iget-object v3, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mPresenter:Landroidx/leanback/widget/PlaybackRowPresenter;
+
+    invoke-virtual {v1, v2, v3}, Landroidx/leanback/widget/ClassPresenterSelector;->addClassPresenter(Ljava/lang/Class;Landroidx/leanback/widget/Presenter;)Landroidx/leanback/widget/ClassPresenterSelector;
+
+    :cond_1
+    :goto_0
+    return-void
+.end method
+
+.method private setupRow()V
+    .locals 3
+
+    iget-object v0, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mAdapter:Landroidx/leanback/widget/ObjectAdapter;
+
+    instance-of v1, v0, Landroidx/leanback/widget/ArrayObjectAdapter;
+
+    const/4 v2, 0x0
+
+    if-eqz v1, :cond_1
+
+    iget-object v1, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mRow:Landroidx/leanback/widget/Row;
+
+    if-eqz v1, :cond_1
+
+    check-cast v0, Landroidx/leanback/widget/ArrayObjectAdapter;
+
+    invoke-virtual {v0}, Landroidx/leanback/widget/ArrayObjectAdapter;->size()I
+
+    move-result v1
+
+    if-nez v1, :cond_0
+
+    iget-object v1, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mRow:Landroidx/leanback/widget/Row;
+
+    invoke-virtual {v0, v1}, Landroidx/leanback/widget/ArrayObjectAdapter;->add(Ljava/lang/Object;)V
+
+    goto :goto_0
+
+    :cond_0
+    iget-object v1, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mRow:Landroidx/leanback/widget/Row;
+
+    invoke-virtual {v0, v2, v1}, Landroidx/leanback/widget/ArrayObjectAdapter;->replace(ILjava/lang/Object;)V
+
+    goto :goto_0
+
+    :cond_1
+    iget-object v0, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mAdapter:Landroidx/leanback/widget/ObjectAdapter;
+
+    instance-of v1, v0, Landroidx/leanback/widget/SparseArrayObjectAdapter;
+
+    if-eqz v1, :cond_2
+
+    iget-object v1, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mRow:Landroidx/leanback/widget/Row;
+
+    if-eqz v1, :cond_2
+
+    check-cast v0, Landroidx/leanback/widget/SparseArrayObjectAdapter;
+
+    invoke-virtual {v0, v2, v1}, Landroidx/leanback/widget/SparseArrayObjectAdapter;->set(ILjava/lang/Object;)V
+
+    goto :goto_1
+
+    :cond_2
+    :goto_0
+    nop
+
+    :goto_1
+    return-void
+.end method
+
+.method private startFadeTimer(I)V
+    .locals 4
+
+    iget-object v0, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mHandler:Landroid/os/Handler;
+
+    if-eqz v0, :cond_0
+
+    const/4 v1, 0x1
+
+    invoke-virtual {v0, v1}, Landroid/os/Handler;->removeMessages(I)V
+
+    iget-object v0, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mHandler:Landroid/os/Handler;
+
+    int-to-long v2, p1
+
+    invoke-virtual {v0, v1, v2, v3}, Landroid/os/Handler;->sendEmptyMessageDelayed(IJ)Z
+
+    :cond_0
+    return-void
+.end method
+
+.method private stopFadeTimer()V
+    .locals 2
+
+    iget-object v0, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mHandler:Landroid/os/Handler;
+
+    if-eqz v0, :cond_0
+
+    const/4 v1, 0x1
+
+    invoke-virtual {v0, v1}, Landroid/os/Handler;->removeMessages(I)V
+
+    :cond_0
+    return-void
+.end method
+
+.method private updateBackground()V
+    .locals 3
+
+    iget-object v0, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mBackgroundView:Landroid/view/View;
+
+    if-eqz v0, :cond_3
+
+    iget v0, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mBgDarkColor:I
+
+    iget v1, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mBackgroundType:I
+
+    if-eqz v1, :cond_2
+
+    const/4 v2, 0x1
+
+    if-eq v1, v2, :cond_1
+
+    const/4 v2, 0x2
+
+    if-eq v1, v2, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    iget v0, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mBgLightColor:I
+
+    goto :goto_0
+
+    :cond_1
+    goto :goto_0
+
+    :cond_2
+    const/4 v0, 0x0
+
+    :goto_0
+    iget-object v1, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mBackgroundView:Landroid/view/View;
+
+    new-instance v2, Landroid/graphics/drawable/ColorDrawable;
+
+    invoke-direct {v2, v0}, Landroid/graphics/drawable/ColorDrawable;-><init>(I)V
+
+    invoke-virtual {v1, v2}, Landroid/view/View;->setBackground(Landroid/graphics/drawable/Drawable;)V
+
+    iget v1, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mBgAlpha:I
+
+    invoke-virtual {p0, v1}, Landroidx/leanback/app/PlaybackSupportFragment;->setBgAlpha(I)V
+
+    :cond_3
+    return-void
+.end method
+
+
+# virtual methods
+.method enableVerticalGridAnimations(Z)V
+    .locals 1
+
+    invoke-virtual {p0}, Landroidx/leanback/app/PlaybackSupportFragment;->getVerticalGridView()Landroidx/leanback/widget/VerticalGridView;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_0
+
+    invoke-virtual {p0}, Landroidx/leanback/app/PlaybackSupportFragment;->getVerticalGridView()Landroidx/leanback/widget/VerticalGridView;
+
+    move-result-object v0
+
+    invoke-virtual {v0, p1}, Landroidx/leanback/widget/VerticalGridView;->setAnimateChildLayout(Z)V
+
+    :cond_0
+    return-void
+.end method
+
+.method public fadeOut()V
+    .locals 1
+    .annotation runtime Ljava/lang/Deprecated;
+    .end annotation
+
+    const/4 v0, 0x0
+
+    invoke-virtual {p0, v0, v0}, Landroidx/leanback/app/PlaybackSupportFragment;->showControlsOverlay(ZZ)V
+
+    return-void
+.end method
+
+.method public getAdapter()Landroidx/leanback/widget/ObjectAdapter;
+    .locals 1
+
+    iget-object v0, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mAdapter:Landroidx/leanback/widget/ObjectAdapter;
+
+    return-object v0
+.end method
+
+.method public getBackgroundType()I
+    .locals 1
+
+    iget v0, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mBackgroundType:I
+
+    return v0
+.end method
+
+.method public getFadeCompleteListener()Landroidx/leanback/app/PlaybackSupportFragment$OnFadeCompleteListener;
+    .locals 1
+    .annotation build Landroidx/annotation/RestrictTo;
+        value = {
+            .enum Landroidx/annotation/RestrictTo$Scope;->LIBRARY:Landroidx/annotation/RestrictTo$Scope;
+        }
+    .end annotation
+
+    iget-object v0, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mFadeCompleteListener:Landroidx/leanback/app/PlaybackSupportFragment$OnFadeCompleteListener;
+
+    return-object v0
+.end method
+
+.method public getProgressBarManager()Landroidx/leanback/app/ProgressBarManager;
+    .locals 1
+
+    iget-object v0, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mProgressBarManager:Landroidx/leanback/app/ProgressBarManager;
+
+    return-object v0
+.end method
+
+.method getVerticalGridView()Landroidx/leanback/widget/VerticalGridView;
+    .locals 1
+
+    iget-object v0, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mRowsSupportFragment:Landroidx/leanback/app/RowsSupportFragment;
+
+    if-nez v0, :cond_0
+
+    const/4 v0, 0x0
+
+    return-object v0
+
+    :cond_0
+    invoke-virtual {v0}, Landroidx/leanback/app/RowsSupportFragment;->getVerticalGridView()Landroidx/leanback/widget/VerticalGridView;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public hideControlsOverlay(Z)V
+    .locals 1
+
+    const/4 v0, 0x0
+
+    invoke-virtual {p0, v0, p1}, Landroidx/leanback/app/PlaybackSupportFragment;->showControlsOverlay(ZZ)V
+
+    return-void
+.end method
+
+.method public isControlsOverlayAutoHideEnabled()Z
+    .locals 1
+
+    iget-boolean v0, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mFadingEnabled:Z
+
+    return v0
+.end method
+
+.method public isControlsOverlayVisible()Z
+    .locals 1
+
+    iget-boolean v0, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mControlVisible:Z
+
+    return v0
+.end method
+
+.method public isFadingEnabled()Z
+    .locals 1
+    .annotation runtime Ljava/lang/Deprecated;
+    .end annotation
+
+    invoke-virtual {p0}, Landroidx/leanback/app/PlaybackSupportFragment;->isControlsOverlayAutoHideEnabled()Z
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public isShowOrHideControlsOverlayOnUserInteraction()Z
+    .locals 1
+
+    iget-boolean v0, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mShowOrHideControlsOverlayOnUserInteraction:Z
+
+    return v0
+.end method
+
+.method public notifyPlaybackRowChanged()V
+    .locals 3
+
+    iget-object v0, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mAdapter:Landroidx/leanback/widget/ObjectAdapter;
+
+    if-nez v0, :cond_0
+
+    return-void
+
+    :cond_0
+    const/4 v1, 0x0
+
+    const/4 v2, 0x1
+
+    invoke-virtual {v0, v1, v2}, Landroidx/leanback/widget/ObjectAdapter;->notifyItemRangeChanged(II)V
+
+    return-void
+.end method
+
+.method protected onBufferingStateChanged(Z)V
+    .locals 1
+
+    invoke-virtual {p0}, Landroidx/leanback/app/PlaybackSupportFragment;->getProgressBarManager()Landroidx/leanback/app/ProgressBarManager;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_1
+
+    if-eqz p1, :cond_0
+
+    invoke-virtual {v0}, Landroidx/leanback/app/ProgressBarManager;->show()V
+
+    goto :goto_0
+
+    :cond_0
+    invoke-virtual {v0}, Landroidx/leanback/app/ProgressBarManager;->hide()V
+
+    :cond_1
+    :goto_0
+    return-void
+.end method
+
+.method public onCreate(Landroid/os/Bundle;)V
+    .locals 4
+
+    invoke-super {p0, p1}, Landroidx/fragment/app/Fragment;->onCreate(Landroid/os/Bundle;)V
+
+    invoke-virtual {p0}, Landroidx/leanback/app/PlaybackSupportFragment;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v0
+
+    sget v1, Landroidx/leanback/R$dimen;->lb_playback_other_rows_center_to_bottom:I
+
+    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+
+    move-result v0
+
+    iput v0, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mOtherRowsCenterToBottom:I
+
+    nop
+
+    invoke-virtual {p0}, Landroidx/leanback/app/PlaybackSupportFragment;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v0
+
+    sget v1, Landroidx/leanback/R$dimen;->lb_playback_controls_padding_bottom:I
+
+    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+
+    move-result v0
+
+    iput v0, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mPaddingBottom:I
+
+    nop
+
+    invoke-virtual {p0}, Landroidx/leanback/app/PlaybackSupportFragment;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v0
+
+    sget v1, Landroidx/leanback/R$color;->lb_playback_controls_background_dark:I
+
+    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getColor(I)I
+
+    move-result v0
+
+    iput v0, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mBgDarkColor:I
+
+    nop
+
+    invoke-virtual {p0}, Landroidx/leanback/app/PlaybackSupportFragment;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v0
+
+    sget v1, Landroidx/leanback/R$color;->lb_playback_controls_background_light:I
+
+    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getColor(I)I
+
+    move-result v0
+
+    iput v0, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mBgLightColor:I
+
+    new-instance v0, Landroid/util/TypedValue;
+
+    invoke-direct {v0}, Landroid/util/TypedValue;-><init>()V
+
+    invoke-virtual {p0}, Landroidx/leanback/app/PlaybackSupportFragment;->getContext()Landroid/content/Context;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Landroid/content/Context;->getTheme()Landroid/content/res/Resources$Theme;
+
+    move-result-object v1
+
+    sget v2, Landroidx/leanback/R$attr;->playbackControlsAutoHideTimeout:I
+
+    const/4 v3, 0x1
+
+    invoke-virtual {v1, v2, v0, v3}, Landroid/content/res/Resources$Theme;->resolveAttribute(ILandroid/util/TypedValue;Z)Z
+
+    iget v1, v0, Landroid/util/TypedValue;->data:I
+
+    iput v1, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mAutohideTimerAfterPlayingInMs:I
+
+    invoke-virtual {p0}, Landroidx/leanback/app/PlaybackSupportFragment;->getContext()Landroid/content/Context;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Landroid/content/Context;->getTheme()Landroid/content/res/Resources$Theme;
+
+    move-result-object v1
+
+    sget v2, Landroidx/leanback/R$attr;->playbackControlsAutoHideTickleTimeout:I
+
+    invoke-virtual {v1, v2, v0, v3}, Landroid/content/res/Resources$Theme;->resolveAttribute(ILandroid/util/TypedValue;Z)Z
+
+    iget v1, v0, Landroid/util/TypedValue;->data:I
+
+    iput v1, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mAutohideTimerAfterTickleInMs:I
+
+    nop
+
+    invoke-virtual {p0}, Landroidx/leanback/app/PlaybackSupportFragment;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v1
+
+    sget v2, Landroidx/leanback/R$dimen;->lb_playback_major_fade_translate_y:I
+
+    invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+
+    move-result v1
+
+    iput v1, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mMajorFadeTranslateY:I
+
+    nop
+
+    invoke-virtual {p0}, Landroidx/leanback/app/PlaybackSupportFragment;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v1
+
+    sget v2, Landroidx/leanback/R$dimen;->lb_playback_minor_fade_translate_y:I
+
+    invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+
+    move-result v1
+
+    iput v1, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mMinorFadeTranslateY:I
+
+    invoke-direct {p0}, Landroidx/leanback/app/PlaybackSupportFragment;->loadBgAnimator()V
+
+    invoke-direct {p0}, Landroidx/leanback/app/PlaybackSupportFragment;->loadControlRowAnimator()V
+
+    invoke-direct {p0}, Landroidx/leanback/app/PlaybackSupportFragment;->loadOtherRowAnimator()V
+
+    return-void
+.end method
+
+.method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
+    .locals 3
+
+    sget v0, Landroidx/leanback/R$layout;->lb_playback_fragment:I
+
+    const/4 v1, 0x0
+
+    invoke-virtual {p1, v0, p2, v1}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
+
+    move-result-object v0
+
+    iput-object v0, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mRootView:Landroid/view/View;
+
+    iget-object v0, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mRootView:Landroid/view/View;
+
+    sget v1, Landroidx/leanback/R$id;->playback_fragment_background:I
+
+    invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    move-result-object v0
+
+    iput-object v0, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mBackgroundView:Landroid/view/View;
+
+    invoke-virtual {p0}, Landroidx/leanback/app/PlaybackSupportFragment;->getChildFragmentManager()Landroidx/fragment/app/FragmentManager;
+
+    move-result-object v0
+
+    sget v1, Landroidx/leanback/R$id;->playback_controls_dock:I
+
+    invoke-virtual {v0, v1}, Landroidx/fragment/app/FragmentManager;->findFragmentById(I)Landroidx/fragment/app/Fragment;
+
+    move-result-object v0
+
+    check-cast v0, Landroidx/leanback/app/RowsSupportFragment;
+
+    iput-object v0, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mRowsSupportFragment:Landroidx/leanback/app/RowsSupportFragment;
+
+    iget-object v0, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mRowsSupportFragment:Landroidx/leanback/app/RowsSupportFragment;
+
+    if-nez v0, :cond_0
+
+    new-instance v0, Landroidx/leanback/app/RowsSupportFragment;
+
+    invoke-direct {v0}, Landroidx/leanback/app/RowsSupportFragment;-><init>()V
+
+    iput-object v0, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mRowsSupportFragment:Landroidx/leanback/app/RowsSupportFragment;
+
+    invoke-virtual {p0}, Landroidx/leanback/app/PlaybackSupportFragment;->getChildFragmentManager()Landroidx/fragment/app/FragmentManager;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Landroidx/fragment/app/FragmentManager;->beginTransaction()Landroidx/fragment/app/FragmentTransaction;
+
+    move-result-object v0
+
+    sget v1, Landroidx/leanback/R$id;->playback_controls_dock:I
+
+    iget-object v2, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mRowsSupportFragment:Landroidx/leanback/app/RowsSupportFragment;
+
+    invoke-virtual {v0, v1, v2}, Landroidx/fragment/app/FragmentTransaction;->replace(ILandroidx/fragment/app/Fragment;)Landroidx/fragment/app/FragmentTransaction;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Landroidx/fragment/app/FragmentTransaction;->commit()I
+
+    :cond_0
+    iget-object v0, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mAdapter:Landroidx/leanback/widget/ObjectAdapter;
+
+    if-nez v0, :cond_1
+
+    new-instance v0, Landroidx/leanback/widget/ArrayObjectAdapter;
+
+    new-instance v1, Landroidx/leanback/widget/ClassPresenterSelector;
+
+    invoke-direct {v1}, Landroidx/leanback/widget/ClassPresenterSelector;-><init>()V
+
+    invoke-direct {v0, v1}, Landroidx/leanback/widget/ArrayObjectAdapter;-><init>(Landroidx/leanback/widget/PresenterSelector;)V
+
+    invoke-virtual {p0, v0}, Landroidx/leanback/app/PlaybackSupportFragment;->setAdapter(Landroidx/leanback/widget/ObjectAdapter;)V
+
+    goto :goto_0
+
+    :cond_1
+    iget-object v1, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mRowsSupportFragment:Landroidx/leanback/app/RowsSupportFragment;
+
+    invoke-virtual {v1, v0}, Landroidx/leanback/app/RowsSupportFragment;->setAdapter(Landroidx/leanback/widget/ObjectAdapter;)V
+
+    :goto_0
+    iget-object v0, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mRowsSupportFragment:Landroidx/leanback/app/RowsSupportFragment;
+
+    iget-object v1, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mOnItemViewSelectedListener:Landroidx/leanback/widget/BaseOnItemViewSelectedListener;
+
+    invoke-virtual {v0, v1}, Landroidx/leanback/app/RowsSupportFragment;->setOnItemViewSelectedListener(Landroidx/leanback/widget/BaseOnItemViewSelectedListener;)V
+
+    iget-object v0, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mRowsSupportFragment:Landroidx/leanback/app/RowsSupportFragment;
+
+    iget-object v1, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mOnItemViewClickedListener:Landroidx/leanback/widget/BaseOnItemViewClickedListener;
+
+    invoke-virtual {v0, v1}, Landroidx/leanback/app/RowsSupportFragment;->setOnItemViewClickedListener(Landroidx/leanback/widget/BaseOnItemViewClickedListener;)V
+
+    const/16 v0, 0xff
+
+    iput v0, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mBgAlpha:I
+
+    invoke-direct {p0}, Landroidx/leanback/app/PlaybackSupportFragment;->updateBackground()V
+
+    iget-object v0, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mRowsSupportFragment:Landroidx/leanback/app/RowsSupportFragment;
+
+    iget-object v1, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mAdapterListener:Landroidx/leanback/widget/ItemBridgeAdapter$AdapterListener;
+
+    invoke-virtual {v0, v1}, Landroidx/leanback/app/RowsSupportFragment;->setExternalAdapterListener(Landroidx/leanback/widget/ItemBridgeAdapter$AdapterListener;)V
+
+    invoke-virtual {p0}, Landroidx/leanback/app/PlaybackSupportFragment;->getProgressBarManager()Landroidx/leanback/app/ProgressBarManager;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_2
+
+    iget-object v1, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mRootView:Landroid/view/View;
+
+    check-cast v1, Landroid/view/ViewGroup;
+
+    invoke-virtual {v0, v1}, Landroidx/leanback/app/ProgressBarManager;->setRootView(Landroid/view/ViewGroup;)V
+
+    :cond_2
+    iget-object v1, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mRootView:Landroid/view/View;
+
+    return-object v1
+.end method
+
+.method public onDestroy()V
+    .locals 1
+
+    iget-object v0, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mHostCallback:Landroidx/leanback/media/PlaybackGlueHost$HostCallback;
+
+    if-eqz v0, :cond_0
+
+    invoke-virtual {v0}, Landroidx/leanback/media/PlaybackGlueHost$HostCallback;->onHostDestroy()V
+
+    :cond_0
+    invoke-super {p0}, Landroidx/fragment/app/Fragment;->onDestroy()V
+
+    return-void
+.end method
+
+.method public onDestroyView()V
+    .locals 1
+
+    const/4 v0, 0x0
+
+    iput-object v0, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mRootView:Landroid/view/View;
+
+    iput-object v0, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mBackgroundView:Landroid/view/View;
+
+    invoke-super {p0}, Landroidx/fragment/app/Fragment;->onDestroyView()V
+
+    return-void
+.end method
+
+.method protected onError(ILjava/lang/CharSequence;)V
+    .locals 0
+
+    return-void
+.end method
+
+.method onInterceptInputEvent(Landroid/view/InputEvent;)Z
+    .locals 8
+
+    iget-boolean v0, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mControlVisible:Z
+
+    const/4 v1, 0x1
+
+    xor-int/2addr v0, v1
+
+    const/4 v2, 0x0
+
+    const/4 v3, 0x0
+
+    const/4 v4, 0x0
+
+    instance-of v5, p1, Landroid/view/KeyEvent;
+
+    if-eqz v5, :cond_0
+
+    move-object v5, p1
+
+    check-cast v5, Landroid/view/KeyEvent;
+
+    invoke-virtual {v5}, Landroid/view/KeyEvent;->getKeyCode()I
+
+    move-result v3
+
+    move-object v5, p1
+
+    check-cast v5, Landroid/view/KeyEvent;
+
+    invoke-virtual {v5}, Landroid/view/KeyEvent;->getAction()I
+
+    move-result v4
+
+    iget-object v5, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mInputEventHandler:Landroid/view/View$OnKeyListener;
+
+    if-eqz v5, :cond_0
+
+    invoke-virtual {p0}, Landroidx/leanback/app/PlaybackSupportFragment;->getView()Landroid/view/View;
+
+    move-result-object v6
+
+    move-object v7, p1
+
+    check-cast v7, Landroid/view/KeyEvent;
+
+    invoke-interface {v5, v6, v3, v7}, Landroid/view/View$OnKeyListener;->onKey(Landroid/view/View;ILandroid/view/KeyEvent;)Z
+
+    move-result v2
+
+    :cond_0
+    const/4 v5, 0x4
+
+    if-eq v3, v5, :cond_2
+
+    const/16 v5, 0x6f
+
+    if-eq v3, v5, :cond_2
+
+    packed-switch v3, :pswitch_data_0
+
+    iget-boolean v1, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mShowOrHideControlsOverlayOnUserInteraction:Z
+
+    if-eqz v1, :cond_4
+
+    if-eqz v2, :cond_4
+
+    if-nez v4, :cond_4
+
+    invoke-virtual {p0}, Landroidx/leanback/app/PlaybackSupportFragment;->tickle()V
+
+    goto :goto_0
+
+    :pswitch_0
+    if-eqz v0, :cond_1
+
+    const/4 v2, 0x1
+
+    :cond_1
+    iget-boolean v1, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mShowOrHideControlsOverlayOnUserInteraction:Z
+
+    if-eqz v1, :cond_4
+
+    if-nez v4, :cond_4
+
+    invoke-virtual {p0}, Landroidx/leanback/app/PlaybackSupportFragment;->tickle()V
+
+    goto :goto_0
+
+    :cond_2
+    iget-boolean v5, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mInSeek:Z
+
+    if-eqz v5, :cond_3
+
+    const/4 v1, 0x0
+
+    return v1
+
+    :cond_3
+    iget-boolean v5, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mShowOrHideControlsOverlayOnUserInteraction:Z
+
+    if-eqz v5, :cond_4
+
+    if-nez v0, :cond_4
+
+    const/4 v2, 0x1
+
+    move-object v5, p1
+
+    check-cast v5, Landroid/view/KeyEvent;
+
+    invoke-virtual {v5}, Landroid/view/KeyEvent;->getAction()I
+
+    move-result v5
+
+    if-ne v5, v1, :cond_4
+
+    invoke-virtual {p0, v1}, Landroidx/leanback/app/PlaybackSupportFragment;->hideControlsOverlay(Z)V
+
+    :cond_4
+    :goto_0
+    return v2
+
+    nop
+
+    :pswitch_data_0
+    .packed-switch 0x13
+        :pswitch_0
+        :pswitch_0
+        :pswitch_0
+        :pswitch_0
+        :pswitch_0
+    .end packed-switch
+.end method
+
+.method public onPause()V
+    .locals 2
+
+    iget-object v0, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mHostCallback:Landroidx/leanback/media/PlaybackGlueHost$HostCallback;
+
+    if-eqz v0, :cond_0
+
+    invoke-virtual {v0}, Landroidx/leanback/media/PlaybackGlueHost$HostCallback;->onHostPause()V
+
+    :cond_0
+    iget-object v0, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mHandler:Landroid/os/Handler;
+
+    const/4 v1, 0x1
+
+    invoke-virtual {v0, v1}, Landroid/os/Handler;->hasMessages(I)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    iget-object v0, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mHandler:Landroid/os/Handler;
+
+    invoke-virtual {v0, v1}, Landroid/os/Handler;->removeMessages(I)V
+
+    :cond_1
+    invoke-super {p0}, Landroidx/fragment/app/Fragment;->onPause()V
+
+    return-void
+.end method
+
+.method public onResume()V
+    .locals 2
+
+    invoke-super {p0}, Landroidx/fragment/app/Fragment;->onResume()V
+
+    iget-boolean v0, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mControlVisible:Z
+
+    if-eqz v0, :cond_0
+
+    iget-boolean v0, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mFadingEnabled:Z
+
+    if-eqz v0, :cond_0
+
+    iget v0, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mAutohideTimerAfterPlayingInMs:I
+
+    invoke-direct {p0, v0}, Landroidx/leanback/app/PlaybackSupportFragment;->startFadeTimer(I)V
+
+    :cond_0
+    invoke-virtual {p0}, Landroidx/leanback/app/PlaybackSupportFragment;->getVerticalGridView()Landroidx/leanback/widget/VerticalGridView;
+
+    move-result-object v0
+
+    iget-object v1, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mOnTouchInterceptListener:Landroidx/leanback/widget/BaseGridView$OnTouchInterceptListener;
+
+    invoke-virtual {v0, v1}, Landroidx/leanback/widget/VerticalGridView;->setOnTouchInterceptListener(Landroidx/leanback/widget/BaseGridView$OnTouchInterceptListener;)V
+
+    invoke-virtual {p0}, Landroidx/leanback/app/PlaybackSupportFragment;->getVerticalGridView()Landroidx/leanback/widget/VerticalGridView;
+
+    move-result-object v0
+
+    iget-object v1, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mOnKeyInterceptListener:Landroidx/leanback/widget/BaseGridView$OnKeyInterceptListener;
+
+    invoke-virtual {v0, v1}, Landroidx/leanback/widget/VerticalGridView;->setOnKeyInterceptListener(Landroidx/leanback/widget/BaseGridView$OnKeyInterceptListener;)V
+
+    iget-object v0, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mHostCallback:Landroidx/leanback/media/PlaybackGlueHost$HostCallback;
+
+    if-eqz v0, :cond_1
+
+    invoke-virtual {v0}, Landroidx/leanback/media/PlaybackGlueHost$HostCallback;->onHostResume()V
+
+    :cond_1
+    return-void
+.end method
+
+.method public onStart()V
+    .locals 2
+
+    invoke-super {p0}, Landroidx/fragment/app/Fragment;->onStart()V
+
+    invoke-direct {p0}, Landroidx/leanback/app/PlaybackSupportFragment;->setupChildFragmentLayout()V
+
+    iget-object v0, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mRowsSupportFragment:Landroidx/leanback/app/RowsSupportFragment;
+
+    iget-object v1, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mAdapter:Landroidx/leanback/widget/ObjectAdapter;
+
+    invoke-virtual {v0, v1}, Landroidx/leanback/app/RowsSupportFragment;->setAdapter(Landroidx/leanback/widget/ObjectAdapter;)V
+
+    iget-object v0, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mHostCallback:Landroidx/leanback/media/PlaybackGlueHost$HostCallback;
+
+    if-eqz v0, :cond_0
+
+    invoke-virtual {v0}, Landroidx/leanback/media/PlaybackGlueHost$HostCallback;->onHostStart()V
+
+    :cond_0
+    return-void
+.end method
+
+.method public onStop()V
+    .locals 1
+
+    iget-object v0, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mHostCallback:Landroidx/leanback/media/PlaybackGlueHost$HostCallback;
+
+    if-eqz v0, :cond_0
+
+    invoke-virtual {v0}, Landroidx/leanback/media/PlaybackGlueHost$HostCallback;->onHostStop()V
+
+    :cond_0
+    invoke-super {p0}, Landroidx/fragment/app/Fragment;->onStop()V
+
+    return-void
+.end method
+
+.method protected onVideoSizeChanged(II)V
+    .locals 0
+
+    return-void
+.end method
+
+.method public onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
+    .locals 2
+    .param p1    # Landroid/view/View;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p2    # Landroid/os/Bundle;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+
+    invoke-super {p0, p1, p2}, Landroidx/fragment/app/Fragment;->onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
+
+    const/4 v0, 0x1
+
+    iput-boolean v0, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mControlVisible:Z
+
+    iget-boolean v1, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mControlVisibleBeforeOnCreateView:Z
+
+    if-nez v1, :cond_0
+
+    const/4 v1, 0x0
+
+    invoke-virtual {p0, v1, v1}, Landroidx/leanback/app/PlaybackSupportFragment;->showControlsOverlay(ZZ)V
+
+    iput-boolean v0, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mControlVisibleBeforeOnCreateView:Z
+
+    :cond_0
+    return-void
+.end method
+
+.method public resetFocus()V
+    .locals 3
+    .annotation build Landroidx/annotation/RestrictTo;
+        value = {
+            .enum Landroidx/annotation/RestrictTo$Scope;->LIBRARY:Landroidx/annotation/RestrictTo$Scope;
+        }
+    .end annotation
+
+    invoke-virtual {p0}, Landroidx/leanback/app/PlaybackSupportFragment;->getVerticalGridView()Landroidx/leanback/widget/VerticalGridView;
+
+    move-result-object v0
+
+    const/4 v1, 0x0
+
+    invoke-virtual {v0, v1}, Landroidx/leanback/widget/VerticalGridView;->findViewHolderForAdapterPosition(I)Landroidx/recyclerview/widget/RecyclerView$ViewHolder;
+
+    move-result-object v0
+
+    check-cast v0, Landroidx/leanback/widget/ItemBridgeAdapter$ViewHolder;
+
+    if-eqz v0, :cond_0
+
+    invoke-virtual {v0}, Landroidx/leanback/widget/ItemBridgeAdapter$ViewHolder;->getPresenter()Landroidx/leanback/widget/Presenter;
+
+    move-result-object v1
+
+    instance-of v1, v1, Landroidx/leanback/widget/PlaybackRowPresenter;
+
+    if-eqz v1, :cond_0
+
+    invoke-virtual {v0}, Landroidx/leanback/widget/ItemBridgeAdapter$ViewHolder;->getPresenter()Landroidx/leanback/widget/Presenter;
+
+    move-result-object v1
+
+    check-cast v1, Landroidx/leanback/widget/PlaybackRowPresenter;
+
+    invoke-virtual {v0}, Landroidx/leanback/widget/ItemBridgeAdapter$ViewHolder;->getViewHolder()Landroidx/leanback/widget/Presenter$ViewHolder;
+
+    move-result-object v2
+
+    check-cast v2, Landroidx/leanback/widget/RowPresenter$ViewHolder;
+
+    invoke-virtual {v1, v2}, Landroidx/leanback/widget/PlaybackRowPresenter;->onReappear(Landroidx/leanback/widget/RowPresenter$ViewHolder;)V
+
+    :cond_0
+    return-void
+.end method
+
+.method public setAdapter(Landroidx/leanback/widget/ObjectAdapter;)V
+    .locals 1
+
+    iput-object p1, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mAdapter:Landroidx/leanback/widget/ObjectAdapter;
+
+    invoke-direct {p0}, Landroidx/leanback/app/PlaybackSupportFragment;->setupRow()V
+
+    invoke-direct {p0}, Landroidx/leanback/app/PlaybackSupportFragment;->setupPresenter()V
+
+    invoke-virtual {p0}, Landroidx/leanback/app/PlaybackSupportFragment;->setPlaybackRowPresenterAlignment()V
+
+    iget-object v0, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mRowsSupportFragment:Landroidx/leanback/app/RowsSupportFragment;
+
+    if-eqz v0, :cond_0
+
+    invoke-virtual {v0, p1}, Landroidx/leanback/app/RowsSupportFragment;->setAdapter(Landroidx/leanback/widget/ObjectAdapter;)V
+
+    :cond_0
+    return-void
+.end method
+
+.method public setBackgroundType(I)V
+    .locals 2
+
+    if-eqz p1, :cond_1
+
+    const/4 v0, 0x1
+
+    if-eq p1, v0, :cond_1
+
+    const/4 v0, 0x2
+
+    if-ne p1, v0, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    new-instance v0, Ljava/lang/IllegalArgumentException;
+
+    const-string v1, "Invalid background type"
+
+    invoke-direct {v0, v1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
+    throw v0
+
+    :cond_1
+    :goto_0
+    iget v0, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mBackgroundType:I
+
+    if-eq p1, v0, :cond_2
+
+    iput p1, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mBackgroundType:I
+
+    invoke-direct {p0}, Landroidx/leanback/app/PlaybackSupportFragment;->updateBackground()V
+
+    :cond_2
+    return-void
+.end method
+
+.method setBgAlpha(I)V
+    .locals 1
+
+    iput p1, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mBgAlpha:I
+
+    iget-object v0, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mBackgroundView:Landroid/view/View;
+
+    if-eqz v0, :cond_0
+
+    invoke-virtual {v0}, Landroid/view/View;->getBackground()Landroid/graphics/drawable/Drawable;
+
+    move-result-object v0
+
+    invoke-virtual {v0, p1}, Landroid/graphics/drawable/Drawable;->setAlpha(I)V
+
+    :cond_0
+    return-void
+.end method
+
+.method public setControlsOverlayAutoHideEnabled(Z)V
+    .locals 1
+
+    iget-boolean v0, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mFadingEnabled:Z
+
+    if-eq p1, v0, :cond_1
+
+    iput-boolean p1, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mFadingEnabled:Z
+
+    invoke-virtual {p0}, Landroidx/leanback/app/PlaybackSupportFragment;->isResumed()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    invoke-virtual {p0}, Landroidx/leanback/app/PlaybackSupportFragment;->getView()Landroid/view/View;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Landroid/view/View;->hasFocus()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    const/4 v0, 0x1
+
+    invoke-virtual {p0, v0}, Landroidx/leanback/app/PlaybackSupportFragment;->showControlsOverlay(Z)V
+
+    if-eqz p1, :cond_0
+
+    iget v0, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mAutohideTimerAfterPlayingInMs:I
+
+    invoke-direct {p0, v0}, Landroidx/leanback/app/PlaybackSupportFragment;->startFadeTimer(I)V
+
+    goto :goto_0
+
+    :cond_0
+    invoke-direct {p0}, Landroidx/leanback/app/PlaybackSupportFragment;->stopFadeTimer()V
+
+    :cond_1
+    :goto_0
+    return-void
+.end method
+
+.method public setFadeCompleteListener(Landroidx/leanback/app/PlaybackSupportFragment$OnFadeCompleteListener;)V
+    .locals 0
+    .annotation build Landroidx/annotation/RestrictTo;
+        value = {
+            .enum Landroidx/annotation/RestrictTo$Scope;->LIBRARY:Landroidx/annotation/RestrictTo$Scope;
+        }
+    .end annotation
+
+    iput-object p1, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mFadeCompleteListener:Landroidx/leanback/app/PlaybackSupportFragment$OnFadeCompleteListener;
+
+    return-void
+.end method
+
+.method public setFadingEnabled(Z)V
+    .locals 0
+    .annotation runtime Ljava/lang/Deprecated;
+    .end annotation
+
+    invoke-virtual {p0, p1}, Landroidx/leanback/app/PlaybackSupportFragment;->setControlsOverlayAutoHideEnabled(Z)V
+
+    return-void
+.end method
+
+.method public setHostCallback(Landroidx/leanback/media/PlaybackGlueHost$HostCallback;)V
+    .locals 0
+
+    iput-object p1, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mHostCallback:Landroidx/leanback/media/PlaybackGlueHost$HostCallback;
+
+    return-void
+.end method
+
+.method public setOnItemViewClickedListener(Landroidx/leanback/widget/BaseOnItemViewClickedListener;)V
+    .locals 0
+
+    iput-object p1, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mExternalItemClickedListener:Landroidx/leanback/widget/BaseOnItemViewClickedListener;
+
+    return-void
+.end method
+
+.method public setOnItemViewSelectedListener(Landroidx/leanback/widget/BaseOnItemViewSelectedListener;)V
+    .locals 0
+
+    iput-object p1, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mExternalItemSelectedListener:Landroidx/leanback/widget/BaseOnItemViewSelectedListener;
+
+    return-void
+.end method
+
+.method public final setOnKeyInterceptListener(Landroid/view/View$OnKeyListener;)V
+    .locals 0
+
+    iput-object p1, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mInputEventHandler:Landroid/view/View$OnKeyListener;
+
+    return-void
+.end method
+
+.method public setOnPlaybackItemViewClickedListener(Landroidx/leanback/widget/BaseOnItemViewClickedListener;)V
+    .locals 0
+
+    iput-object p1, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mPlaybackItemClickedListener:Landroidx/leanback/widget/BaseOnItemViewClickedListener;
+
+    return-void
+.end method
+
+.method public setPlaybackRow(Landroidx/leanback/widget/Row;)V
+    .locals 0
+
+    iput-object p1, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mRow:Landroidx/leanback/widget/Row;
+
+    invoke-direct {p0}, Landroidx/leanback/app/PlaybackSupportFragment;->setupRow()V
+
+    invoke-direct {p0}, Landroidx/leanback/app/PlaybackSupportFragment;->setupPresenter()V
+
+    return-void
+.end method
+
+.method public setPlaybackRowPresenter(Landroidx/leanback/widget/PlaybackRowPresenter;)V
+    .locals 0
+
+    iput-object p1, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mPresenter:Landroidx/leanback/widget/PlaybackRowPresenter;
+
+    invoke-direct {p0}, Landroidx/leanback/app/PlaybackSupportFragment;->setupPresenter()V
+
+    invoke-virtual {p0}, Landroidx/leanback/app/PlaybackSupportFragment;->setPlaybackRowPresenterAlignment()V
+
+    return-void
+.end method
+
+.method setPlaybackRowPresenterAlignment()V
+    .locals 6
+
+    iget-object v0, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mAdapter:Landroidx/leanback/widget/ObjectAdapter;
+
+    if-eqz v0, :cond_1
+
+    invoke-virtual {v0}, Landroidx/leanback/widget/ObjectAdapter;->getPresenterSelector()Landroidx/leanback/widget/PresenterSelector;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_1
+
+    iget-object v0, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mAdapter:Landroidx/leanback/widget/ObjectAdapter;
+
+    invoke-virtual {v0}, Landroidx/leanback/widget/ObjectAdapter;->getPresenterSelector()Landroidx/leanback/widget/PresenterSelector;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Landroidx/leanback/widget/PresenterSelector;->getPresenters()[Landroidx/leanback/widget/Presenter;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_1
+
+    const/4 v1, 0x0
+
+    :goto_0
+    array-length v2, v0
+
+    if-ge v1, v2, :cond_1
+
+    aget-object v2, v0, v1
+
+    instance-of v2, v2, Landroidx/leanback/widget/PlaybackRowPresenter;
+
+    if-eqz v2, :cond_0
+
+    aget-object v2, v0, v1
+
+    const-class v3, Landroidx/leanback/widget/ItemAlignmentFacet;
+
+    invoke-virtual {v2, v3}, Landroidx/leanback/widget/Presenter;->getFacet(Ljava/lang/Class;)Ljava/lang/Object;
+
+    move-result-object v2
+
+    if-nez v2, :cond_0
+
+    new-instance v2, Landroidx/leanback/widget/ItemAlignmentFacet;
+
+    invoke-direct {v2}, Landroidx/leanback/widget/ItemAlignmentFacet;-><init>()V
+
+    new-instance v3, Landroidx/leanback/widget/ItemAlignmentFacet$ItemAlignmentDef;
+
+    invoke-direct {v3}, Landroidx/leanback/widget/ItemAlignmentFacet$ItemAlignmentDef;-><init>()V
+
+    const/4 v4, 0x0
+
+    invoke-virtual {v3, v4}, Landroidx/leanback/widget/ItemAlignmentFacet$ItemAlignmentDef;->setItemAlignmentOffset(I)V
+
+    const/high16 v5, 0x42c80000    # 100.0f
+
+    invoke-virtual {v3, v5}, Landroidx/leanback/widget/ItemAlignmentFacet$ItemAlignmentDef;->setItemAlignmentOffsetPercent(F)V
+
+    const/4 v5, 0x1
+
+    new-array v5, v5, [Landroidx/leanback/widget/ItemAlignmentFacet$ItemAlignmentDef;
+
+    aput-object v3, v5, v4
+
+    invoke-virtual {v2, v5}, Landroidx/leanback/widget/ItemAlignmentFacet;->setAlignmentDefs([Landroidx/leanback/widget/ItemAlignmentFacet$ItemAlignmentDef;)V
+
+    aget-object v4, v0, v1
+
+    const-class v5, Landroidx/leanback/widget/ItemAlignmentFacet;
+
+    invoke-virtual {v4, v5, v2}, Landroidx/leanback/widget/Presenter;->setFacet(Ljava/lang/Class;Ljava/lang/Object;)V
+
+    :cond_0
+    add-int/lit8 v1, v1, 0x1
+
+    goto :goto_0
+
+    :cond_1
+    return-void
+.end method
+
+.method public setPlaybackSeekUiClient(Landroidx/leanback/widget/PlaybackSeekUi$Client;)V
+    .locals 0
+
+    iput-object p1, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mSeekUiClient:Landroidx/leanback/widget/PlaybackSeekUi$Client;
+
+    return-void
+.end method
+
+.method setSeekMode(Z)V
+    .locals 5
+
+    iget-boolean v0, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mInSeek:Z
+
+    if-ne v0, p1, :cond_0
+
+    return-void
+
+    :cond_0
+    iput-boolean p1, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mInSeek:Z
+
+    invoke-virtual {p0}, Landroidx/leanback/app/PlaybackSupportFragment;->getVerticalGridView()Landroidx/leanback/widget/VerticalGridView;
+
+    move-result-object v0
+
+    const/4 v1, 0x0
+
+    invoke-virtual {v0, v1}, Landroidx/leanback/widget/VerticalGridView;->setSelectedPosition(I)V
+
+    iget-boolean v0, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mInSeek:Z
+
+    if-eqz v0, :cond_1
+
+    invoke-direct {p0}, Landroidx/leanback/app/PlaybackSupportFragment;->stopFadeTimer()V
+
+    :cond_1
+    const/4 v0, 0x1
+
+    invoke-virtual {p0, v0}, Landroidx/leanback/app/PlaybackSupportFragment;->showControlsOverlay(Z)V
+
+    invoke-virtual {p0}, Landroidx/leanback/app/PlaybackSupportFragment;->getVerticalGridView()Landroidx/leanback/widget/VerticalGridView;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Landroidx/leanback/widget/VerticalGridView;->getChildCount()I
+
+    move-result v0
+
+    const/4 v2, 0x0
+
+    :goto_0
+    if-ge v2, v0, :cond_4
+
+    invoke-virtual {p0}, Landroidx/leanback/app/PlaybackSupportFragment;->getVerticalGridView()Landroidx/leanback/widget/VerticalGridView;
+
+    move-result-object v3
+
+    invoke-virtual {v3, v2}, Landroidx/leanback/widget/VerticalGridView;->getChildAt(I)Landroid/view/View;
+
+    move-result-object v3
+
+    invoke-virtual {p0}, Landroidx/leanback/app/PlaybackSupportFragment;->getVerticalGridView()Landroidx/leanback/widget/VerticalGridView;
+
+    move-result-object v4
+
+    invoke-virtual {v4, v3}, Landroidx/leanback/widget/VerticalGridView;->getChildAdapterPosition(Landroid/view/View;)I
+
+    move-result v4
+
+    if-lez v4, :cond_3
+
+    iget-boolean v4, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mInSeek:Z
+
+    if-eqz v4, :cond_2
+
+    const/4 v4, 0x4
+
+    goto :goto_1
+
+    :cond_2
+    move v4, v1
+
+    :goto_1
+    invoke-virtual {v3, v4}, Landroid/view/View;->setVisibility(I)V
+
+    :cond_3
+    add-int/lit8 v2, v2, 0x1
+
+    goto :goto_0
+
+    :cond_4
+    return-void
+.end method
+
+.method public setSelectedPosition(I)V
+    .locals 1
+
+    const/4 v0, 0x1
+
+    invoke-virtual {p0, p1, v0}, Landroidx/leanback/app/PlaybackSupportFragment;->setSelectedPosition(IZ)V
+
+    return-void
+.end method
+
+.method public setSelectedPosition(IZ)V
+    .locals 2
+
+    iget-object v0, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mSetSelectionRunnable:Landroidx/leanback/app/PlaybackSupportFragment$SetSelectionRunnable;
+
+    iput p1, v0, Landroidx/leanback/app/PlaybackSupportFragment$SetSelectionRunnable;->mPosition:I
+
+    iput-boolean p2, v0, Landroidx/leanback/app/PlaybackSupportFragment$SetSelectionRunnable;->mSmooth:Z
+
+    invoke-virtual {p0}, Landroidx/leanback/app/PlaybackSupportFragment;->getView()Landroid/view/View;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_0
+
+    invoke-virtual {p0}, Landroidx/leanback/app/PlaybackSupportFragment;->getView()Landroid/view/View;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Landroid/view/View;->getHandler()Landroid/os/Handler;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_0
+
+    invoke-virtual {p0}, Landroidx/leanback/app/PlaybackSupportFragment;->getView()Landroid/view/View;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Landroid/view/View;->getHandler()Landroid/os/Handler;
+
+    move-result-object v0
+
+    iget-object v1, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mSetSelectionRunnable:Landroidx/leanback/app/PlaybackSupportFragment$SetSelectionRunnable;
+
+    invoke-virtual {v0, v1}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
+
+    :cond_0
+    return-void
+.end method
+
+.method public setShowOrHideControlsOverlayOnUserInteraction(Z)V
+    .locals 0
+
+    iput-boolean p1, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mShowOrHideControlsOverlayOnUserInteraction:Z
+
+    return-void
+.end method
+
+.method setVerticalGridViewLayout(Landroidx/leanback/widget/VerticalGridView;)V
+    .locals 4
+
+    if-nez p1, :cond_0
+
+    return-void
+
+    :cond_0
+    iget v0, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mPaddingBottom:I
+
+    neg-int v0, v0
+
+    invoke-virtual {p1, v0}, Landroidx/leanback/widget/VerticalGridView;->setWindowAlignmentOffset(I)V
+
+    const/high16 v0, -0x40800000    # -1.0f
+
+    invoke-virtual {p1, v0}, Landroidx/leanback/widget/VerticalGridView;->setWindowAlignmentOffsetPercent(F)V
+
+    iget v0, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mOtherRowsCenterToBottom:I
+
+    iget v1, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mPaddingBottom:I
+
+    sub-int/2addr v0, v1
+
+    invoke-virtual {p1, v0}, Landroidx/leanback/widget/VerticalGridView;->setItemAlignmentOffset(I)V
+
+    const/high16 v0, 0x42480000    # 50.0f
+
+    invoke-virtual {p1, v0}, Landroidx/leanback/widget/VerticalGridView;->setItemAlignmentOffsetPercent(F)V
+
+    invoke-virtual {p1}, Landroidx/leanback/widget/VerticalGridView;->getPaddingLeft()I
+
+    move-result v0
+
+    invoke-virtual {p1}, Landroidx/leanback/widget/VerticalGridView;->getPaddingTop()I
+
+    move-result v1
+
+    invoke-virtual {p1}, Landroidx/leanback/widget/VerticalGridView;->getPaddingRight()I
+
+    move-result v2
+
+    iget v3, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mPaddingBottom:I
+
+    invoke-virtual {p1, v0, v1, v2, v3}, Landroidx/leanback/widget/VerticalGridView;->setPadding(IIII)V
+
+    const/4 v0, 0x2
+
+    invoke-virtual {p1, v0}, Landroidx/leanback/widget/VerticalGridView;->setWindowAlignment(I)V
+
+    return-void
+.end method
+
+.method public showControlsOverlay(Z)V
+    .locals 1
+
+    const/4 v0, 0x1
+
+    invoke-virtual {p0, v0, p1}, Landroidx/leanback/app/PlaybackSupportFragment;->showControlsOverlay(ZZ)V
+
+    return-void
+.end method
+
+.method showControlsOverlay(ZZ)V
+    .locals 2
+
+    invoke-virtual {p0}, Landroidx/leanback/app/PlaybackSupportFragment;->getView()Landroid/view/View;
+
+    move-result-object v0
+
+    if-nez v0, :cond_0
+
+    iput-boolean p1, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mControlVisibleBeforeOnCreateView:Z
+
+    return-void
+
+    :cond_0
+    invoke-virtual {p0}, Landroidx/leanback/app/PlaybackSupportFragment;->isResumed()Z
+
+    move-result v0
+
+    if-nez v0, :cond_1
+
+    const/4 p2, 0x0
+
+    :cond_1
+    iget-boolean v0, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mControlVisible:Z
+
+    if-ne p1, v0, :cond_3
+
+    if-nez p2, :cond_2
+
+    iget-object v0, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mBgFadeInAnimator:Landroid/animation/ValueAnimator;
+
+    iget-object v1, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mBgFadeOutAnimator:Landroid/animation/ValueAnimator;
+
+    invoke-static {v0, v1}, Landroidx/leanback/app/PlaybackSupportFragment;->endAll(Landroid/animation/ValueAnimator;Landroid/animation/ValueAnimator;)V
+
+    iget-object v0, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mControlRowFadeInAnimator:Landroid/animation/ValueAnimator;
+
+    iget-object v1, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mControlRowFadeOutAnimator:Landroid/animation/ValueAnimator;
+
+    invoke-static {v0, v1}, Landroidx/leanback/app/PlaybackSupportFragment;->endAll(Landroid/animation/ValueAnimator;Landroid/animation/ValueAnimator;)V
+
+    iget-object v0, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mOtherRowFadeInAnimator:Landroid/animation/ValueAnimator;
+
+    iget-object v1, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mOtherRowFadeOutAnimator:Landroid/animation/ValueAnimator;
+
+    invoke-static {v0, v1}, Landroidx/leanback/app/PlaybackSupportFragment;->endAll(Landroid/animation/ValueAnimator;Landroid/animation/ValueAnimator;)V
+
+    :cond_2
+    return-void
+
+    :cond_3
+    iput-boolean p1, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mControlVisible:Z
+
+    iget-boolean v0, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mControlVisible:Z
+
+    if-nez v0, :cond_4
+
+    invoke-direct {p0}, Landroidx/leanback/app/PlaybackSupportFragment;->stopFadeTimer()V
+
+    :cond_4
+    invoke-virtual {p0}, Landroidx/leanback/app/PlaybackSupportFragment;->getVerticalGridView()Landroidx/leanback/widget/VerticalGridView;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_6
+
+    invoke-virtual {p0}, Landroidx/leanback/app/PlaybackSupportFragment;->getVerticalGridView()Landroidx/leanback/widget/VerticalGridView;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Landroidx/leanback/widget/VerticalGridView;->getSelectedPosition()I
+
+    move-result v0
+
+    if-nez v0, :cond_5
+
+    goto :goto_0
+
+    :cond_5
+    iget v0, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mMinorFadeTranslateY:I
+
+    goto :goto_1
+
+    :cond_6
+    :goto_0
+    iget v0, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mMajorFadeTranslateY:I
+
+    :goto_1
+    iput v0, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mAnimationTranslateY:I
+
+    if-eqz p1, :cond_7
+
+    iget-object v0, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mBgFadeOutAnimator:Landroid/animation/ValueAnimator;
+
+    iget-object v1, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mBgFadeInAnimator:Landroid/animation/ValueAnimator;
+
+    invoke-static {v0, v1, p2}, Landroidx/leanback/app/PlaybackSupportFragment;->reverseFirstOrStartSecond(Landroid/animation/ValueAnimator;Landroid/animation/ValueAnimator;Z)V
+
+    iget-object v0, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mControlRowFadeOutAnimator:Landroid/animation/ValueAnimator;
+
+    iget-object v1, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mControlRowFadeInAnimator:Landroid/animation/ValueAnimator;
+
+    invoke-static {v0, v1, p2}, Landroidx/leanback/app/PlaybackSupportFragment;->reverseFirstOrStartSecond(Landroid/animation/ValueAnimator;Landroid/animation/ValueAnimator;Z)V
+
+    iget-object v0, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mOtherRowFadeOutAnimator:Landroid/animation/ValueAnimator;
+
+    iget-object v1, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mOtherRowFadeInAnimator:Landroid/animation/ValueAnimator;
+
+    invoke-static {v0, v1, p2}, Landroidx/leanback/app/PlaybackSupportFragment;->reverseFirstOrStartSecond(Landroid/animation/ValueAnimator;Landroid/animation/ValueAnimator;Z)V
+
+    goto :goto_2
+
+    :cond_7
+    iget-object v0, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mBgFadeInAnimator:Landroid/animation/ValueAnimator;
+
+    iget-object v1, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mBgFadeOutAnimator:Landroid/animation/ValueAnimator;
+
+    invoke-static {v0, v1, p2}, Landroidx/leanback/app/PlaybackSupportFragment;->reverseFirstOrStartSecond(Landroid/animation/ValueAnimator;Landroid/animation/ValueAnimator;Z)V
+
+    iget-object v0, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mControlRowFadeInAnimator:Landroid/animation/ValueAnimator;
+
+    iget-object v1, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mControlRowFadeOutAnimator:Landroid/animation/ValueAnimator;
+
+    invoke-static {v0, v1, p2}, Landroidx/leanback/app/PlaybackSupportFragment;->reverseFirstOrStartSecond(Landroid/animation/ValueAnimator;Landroid/animation/ValueAnimator;Z)V
+
+    iget-object v0, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mOtherRowFadeInAnimator:Landroid/animation/ValueAnimator;
+
+    iget-object v1, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mOtherRowFadeOutAnimator:Landroid/animation/ValueAnimator;
+
+    invoke-static {v0, v1, p2}, Landroidx/leanback/app/PlaybackSupportFragment;->reverseFirstOrStartSecond(Landroid/animation/ValueAnimator;Landroid/animation/ValueAnimator;Z)V
+
+    :goto_2
+    if-eqz p2, :cond_9
+
+    invoke-virtual {p0}, Landroidx/leanback/app/PlaybackSupportFragment;->getView()Landroid/view/View;
+
+    move-result-object v0
+
+    if-eqz p1, :cond_8
+
+    sget v1, Landroidx/leanback/R$string;->lb_playback_controls_shown:I
+
+    goto :goto_3
+
+    :cond_8
+    sget v1, Landroidx/leanback/R$string;->lb_playback_controls_hidden:I
+
+    :goto_3
+    invoke-virtual {p0, v1}, Landroidx/leanback/app/PlaybackSupportFragment;->getString(I)Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Landroid/view/View;->announceForAccessibility(Ljava/lang/CharSequence;)V
+
+    :cond_9
+    return-void
+.end method
+
+.method public tickle()V
+    .locals 2
+
+    invoke-direct {p0}, Landroidx/leanback/app/PlaybackSupportFragment;->stopFadeTimer()V
+
+    const/4 v0, 0x1
+
+    invoke-virtual {p0, v0}, Landroidx/leanback/app/PlaybackSupportFragment;->showControlsOverlay(Z)V
+
+    iget v0, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mAutohideTimerAfterTickleInMs:I
+
+    if-lez v0, :cond_0
+
+    iget-boolean v1, p0, Landroidx/leanback/app/PlaybackSupportFragment;->mFadingEnabled:Z
+
+    if-eqz v1, :cond_0
+
+    invoke-direct {p0, v0}, Landroidx/leanback/app/PlaybackSupportFragment;->startFadeTimer(I)V
+
+    :cond_0
+    return-void
+.end method

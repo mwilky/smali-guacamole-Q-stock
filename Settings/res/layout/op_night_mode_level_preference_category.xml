@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/oneplus_contorl_margin_right2"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TableLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:stretchColumns="0">
+        <TableRow android:layout_span="2">
+            <TextView android:textAppearance="?android:textAppearanceListItem" android:textColor="@color/oneplus_contorl_text_color_primary_default" android:ellipsize="marquee" android:gravity="center_vertical" android:id="@id/tv_title_color_temperature" android:layout_width="wrap_content" android:layout_height="@dimen/oneplus_contorl_list_item_height_one_line1" android:text="@string/oneplus_night_mode_color_temperature" android:singleLine="true" android:layout_marginStart="@dimen/oneplus_contorl_margin_left4" style="@style/oneplus_contorl_text_style_subheading" />
+        </TableRow>
+        <TableRow android:gravity="center_vertical" android:id="@id/tr_color_temperature" android:clickable="true" android:descendantFocusability="afterDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.oneplus.settings.widget.OPSeekBar2 android:id="@id/seekbar_color_temperature" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_centerVertical="true" android:layout_marginStart="50.0dip" android:layout_marginEnd="@dimen/oneplus_contorl_layout_margin_left1" />
+            <TextView android:textAppearance="@style/oneplus_contorl_text_style_body1" android:textColor="@color/oneplus_contorl_text_color_secondary_default" android:id="@id/tv_color_temperature_strong" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/oneplus_night_mode_strong" android:layout_centerVertical="true" android:textDirection="locale" android:layoutDirection="locale" />
+        </TableRow>
+        <TableRow android:id="@id/tr_brightness_title" android:layout_marginTop="@dimen/oneplus_contorl_margin_top1" android:layout_span="2">
+            <TextView android:textAppearance="?android:textAppearanceListItem" android:textColor="@color/oneplus_contorl_text_color_primary_default" android:ellipsize="marquee" android:gravity="center_vertical" android:id="@id/tv_title_brightness" android:layout_width="wrap_content" android:layout_height="@dimen/oneplus_contorl_list_item_height_one_line1" android:text="@string/oneplus_night_mode_brightness" android:singleLine="true" android:layout_marginStart="@dimen/oneplus_contorl_margin_left4" style="@style/oneplus_contorl_text_style_subheading" />
+        </TableRow>
+        <TableRow android:gravity="center_vertical" android:id="@id/tr_brightness" android:clickable="true" android:descendantFocusability="afterDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/oneplus_contorl_margin_top1">
+            <com.oneplus.settings.widget.OPSeekBar2 android:id="@id/seekbar_brightness" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_centerVertical="true" android:layout_marginStart="50.0dip" android:layout_marginEnd="@dimen/oneplus_contorl_layout_margin_left1" />
+            <TextView android:textAppearance="@style/oneplus_contorl_text_style_body1" android:textColor="@color/oneplus_contorl_text_color_secondary_default" android:id="@id/tv_brightness_strong" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/oneplus_night_mode_brightness_strong" android:layout_centerVertical="true" android:textDirection="locale" android:layoutDirection="locale" />
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

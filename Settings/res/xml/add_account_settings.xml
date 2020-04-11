@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/header_add_an_account" android:key="add_account_screen" settings:controller="com.android.settings.accounts.ChooseAccountPreferenceController" settings:keywords="@string/keywords_add_an_account"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:settings="http://schemas.android.com/apk/res-auto" />

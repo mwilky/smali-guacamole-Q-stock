@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.setupdesign.GlifLayout android:icon="@drawable/op_ic_lock" android:id="@id/setup_wizard_layout" android:layout="@layout/sud_glif_blank_template" android:layout_width="fill_parent" android:layout_height="fill_parent" settings:sucHeaderText="@string/lockpassword_choose_your_screen_lock_header" settings:sudGlifIconStyle="@style/OnePlusSuwGlifIcon"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:settings="http://schemas.android.com/apk/res-auto">
+    <com.android.internal.widget.LinearLayoutWithDefaultTouchRecepient android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/topLayout" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/SudGlifHeaderContainer">
+            <ImageView android:id="@id/sud_layout_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/op_ic_lock" style="@style/OnePlusSuwGlifIcon" />
+            <TextView android:id="@id/suc_layout_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:accessibilityLiveRegion="polite" style="@style/OnePlusSuwGlifHeaderTitle" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:paddingLeft="0.0dip" android:paddingRight="0.0dip" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" style="@style/SudContentFrame">
+            <TextView android:textColor="@color/oneplus_settings_text_color_primary" android:id="@id/sud_layout_description" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/OnePlusSuwGlifHeaderBodyStyle" />
+            <com.oneplus.lib.widget.button.OPButton android:layout_gravity="center_horizontal" android:id="@id/screen_lock_options" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/oneplus_contorl_layout_margin_top2" android:text="@string/setup_lock_settings_options_button_label" style="@style/OnePlus.DeviceDefault.Widget.Material.Button.Borderless.Mini" />
+            <RelativeLayout android:id="@id/layout_lockPattern" android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_marginTop="54.0dip" android:layout_weight="1.0" style="@style/LockPatternContainerStyle">
+                <com.android.internal.widget.LockPatternView android:layout_gravity="center" android:id="@id/lockPattern" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" />
+                <TextView android:id="@id/headerText" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="-18.0dip" android:layout_alignTop="@id/lockPattern" android:lineSpacingExtra="-5.0dip" style="@style/OnePlusSuwGlifHeaderBodyStyle" />
+            </RelativeLayout>
+        </LinearLayout>
+        <TextView android:textSize="14.0sp" android:layout_gravity="center_horizontal" android:id="@id/footerText" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="50.0dip" />
+    </com.android.internal.widget.LinearLayoutWithDefaultTouchRecepient>
+    <LinearLayout android:layout_gravity="bottom|center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/OnePlusSuwGlifButtonBar">
+        <com.oneplus.lib.widget.button.OPButton android:id="@id/choose_lock_clear_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="95.0dip" android:text="@string/lockpattern_tutorial_cancel_label" style="@style/OnePlus.DeviceDefault.Widget.Material.Button.Borderless.Mini" />
+        <Space android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <com.oneplus.lib.widget.button.OPButton android:id="@id/choose_lock_next_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="95.0dip" android:text="@string/lockpattern_tutorial_continue_label" style="@style/OnePlus.DeviceDefault.Widget.Material.Button.Mini" />
+    </LinearLayout>
+</com.google.android.setupdesign.GlifLayout>

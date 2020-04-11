@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/ContextualCardStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="left" android:orientation="vertical" android:id="@id/content" android:paddingTop="@dimen/contextual_deferred_setup_card_padding_top" android:paddingBottom="@dimen/contextual_deferred_setup_card_padding_bottom" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingEnd="@dimen/contextual_card_padding_end">
+        <ImageView android:id="@android:id/icon" android:layout_width="@dimen/contextual_card_icon_size" android:layout_height="@dimen/contextual_card_icon_size" android:layout_marginStart="@dimen/contextual_card_icon_padding_start" />
+        <TextView android:textAppearance="@style/TextAppearance.DeferredSetupCardTitle" android:ellipsize="end" android:id="@android:id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/contextual_deferred_setup_card_title_margin_top" android:maxLines="2" android:minLines="1" android:layout_marginStart="@dimen/contextual_card_text_padding_start" />
+        <TextView android:textAppearance="@style/TextAppearance.DeferredSetupCardSummary" android:ellipsize="end" android:id="@android:id/summary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/contextual_deferred_setup_card_summary_margin_top" android:maxLines="2" android:minLines="1" android:layout_marginStart="@dimen/contextual_card_text_padding_start" />
+        <Button android:id="@id/finish_setup" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/contextual_deferred_setup_card_button_margin_top" android:text="@string/suggestion_button_text" android:layout_marginStart="@dimen/contextual_card_text_padding_start" style="@style/DeferredSetupCardButton" />
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

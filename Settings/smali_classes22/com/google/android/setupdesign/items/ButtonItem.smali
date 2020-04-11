@@ -1,0 +1,306 @@
+.class public Lcom/google/android/setupdesign/items/ButtonItem;
+.super Lcom/google/android/setupdesign/items/AbstractItem;
+.source "ButtonItem.java"
+
+# interfaces
+.implements Landroid/view/View$OnClickListener;
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lcom/google/android/setupdesign/items/ButtonItem$OnClickListener;
+    }
+.end annotation
+
+
+# instance fields
+.field private button:Landroid/widget/Button;
+
+.field private enabled:Z
+
+.field private listener:Lcom/google/android/setupdesign/items/ButtonItem$OnClickListener;
+
+.field private text:Ljava/lang/CharSequence;
+
+.field private theme:I
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 1
+
+    invoke-direct {p0}, Lcom/google/android/setupdesign/items/AbstractItem;-><init>()V
+
+    const/4 v0, 0x1
+
+    iput-boolean v0, p0, Lcom/google/android/setupdesign/items/ButtonItem;->enabled:Z
+
+    sget v0, Lcom/google/android/setupdesign/R$style;->SudButtonItem:I
+
+    iput v0, p0, Lcom/google/android/setupdesign/items/ButtonItem;->theme:I
+
+    return-void
+.end method
+
+.method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+    .locals 3
+
+    invoke-direct {p0, p1, p2}, Lcom/google/android/setupdesign/items/AbstractItem;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+
+    const/4 v0, 0x1
+
+    iput-boolean v0, p0, Lcom/google/android/setupdesign/items/ButtonItem;->enabled:Z
+
+    sget v1, Lcom/google/android/setupdesign/R$style;->SudButtonItem:I
+
+    iput v1, p0, Lcom/google/android/setupdesign/items/ButtonItem;->theme:I
+
+    sget-object v1, Lcom/google/android/setupdesign/R$styleable;->SudButtonItem:[I
+
+    invoke-virtual {p1, p2, v1}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[I)Landroid/content/res/TypedArray;
+
+    move-result-object v1
+
+    sget v2, Lcom/google/android/setupdesign/R$styleable;->SudButtonItem_android_enabled:I
+
+    invoke-virtual {v1, v2, v0}, Landroid/content/res/TypedArray;->getBoolean(IZ)Z
+
+    move-result v0
+
+    iput-boolean v0, p0, Lcom/google/android/setupdesign/items/ButtonItem;->enabled:Z
+
+    sget v0, Lcom/google/android/setupdesign/R$styleable;->SudButtonItem_android_text:I
+
+    invoke-virtual {v1, v0}, Landroid/content/res/TypedArray;->getText(I)Ljava/lang/CharSequence;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lcom/google/android/setupdesign/items/ButtonItem;->text:Ljava/lang/CharSequence;
+
+    sget v0, Lcom/google/android/setupdesign/R$styleable;->SudButtonItem_android_theme:I
+
+    sget v2, Lcom/google/android/setupdesign/R$style;->SudButtonItem:I
+
+    invoke-virtual {v1, v0, v2}, Landroid/content/res/TypedArray;->getResourceId(II)I
+
+    move-result v0
+
+    iput v0, p0, Lcom/google/android/setupdesign/items/ButtonItem;->theme:I
+
+    invoke-virtual {v1}, Landroid/content/res/TypedArray;->recycle()V
+
+    return-void
+.end method
+
+.method private createButton(Landroid/content/Context;)Landroid/widget/Button;
+    .locals 4
+    .annotation build Landroid/annotation/SuppressLint;
+        value = {
+            "InflateParams"
+        }
+    .end annotation
+
+    invoke-static {p1}, Landroid/view/LayoutInflater;->from(Landroid/content/Context;)Landroid/view/LayoutInflater;
+
+    move-result-object v0
+
+    sget v1, Lcom/google/android/setupdesign/R$layout;->sud_button:I
+
+    const/4 v2, 0x0
+
+    const/4 v3, 0x0
+
+    invoke-virtual {v0, v1, v2, v3}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/widget/Button;
+
+    return-object v0
+.end method
+
+
+# virtual methods
+.method protected createButton(Landroid/view/ViewGroup;)Landroid/widget/Button;
+    .locals 3
+
+    iget-object v0, p0, Lcom/google/android/setupdesign/items/ButtonItem;->button:Landroid/widget/Button;
+
+    if-nez v0, :cond_1
+
+    invoke-virtual {p1}, Landroid/view/ViewGroup;->getContext()Landroid/content/Context;
+
+    move-result-object v0
+
+    iget v1, p0, Lcom/google/android/setupdesign/items/ButtonItem;->theme:I
+
+    if-eqz v1, :cond_0
+
+    new-instance v2, Landroid/view/ContextThemeWrapper;
+
+    invoke-direct {v2, v0, v1}, Landroid/view/ContextThemeWrapper;-><init>(Landroid/content/Context;I)V
+
+    move-object v0, v2
+
+    :cond_0
+    invoke-direct {p0, v0}, Lcom/google/android/setupdesign/items/ButtonItem;->createButton(Landroid/content/Context;)Landroid/widget/Button;
+
+    move-result-object v1
+
+    iput-object v1, p0, Lcom/google/android/setupdesign/items/ButtonItem;->button:Landroid/widget/Button;
+
+    iget-object v1, p0, Lcom/google/android/setupdesign/items/ButtonItem;->button:Landroid/widget/Button;
+
+    invoke-virtual {v1, p0}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+
+    goto :goto_0
+
+    :cond_1
+    invoke-virtual {v0}, Landroid/widget/Button;->getParent()Landroid/view/ViewParent;
+
+    move-result-object v0
+
+    instance-of v0, v0, Landroid/view/ViewGroup;
+
+    if-eqz v0, :cond_2
+
+    iget-object v0, p0, Lcom/google/android/setupdesign/items/ButtonItem;->button:Landroid/widget/Button;
+
+    invoke-virtual {v0}, Landroid/widget/Button;->getParent()Landroid/view/ViewParent;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/view/ViewGroup;
+
+    iget-object v1, p0, Lcom/google/android/setupdesign/items/ButtonItem;->button:Landroid/widget/Button;
+
+    invoke-virtual {v0, v1}, Landroid/view/ViewGroup;->removeView(Landroid/view/View;)V
+
+    :cond_2
+    :goto_0
+    iget-object v0, p0, Lcom/google/android/setupdesign/items/ButtonItem;->button:Landroid/widget/Button;
+
+    iget-boolean v1, p0, Lcom/google/android/setupdesign/items/ButtonItem;->enabled:Z
+
+    invoke-virtual {v0, v1}, Landroid/widget/Button;->setEnabled(Z)V
+
+    iget-object v0, p0, Lcom/google/android/setupdesign/items/ButtonItem;->button:Landroid/widget/Button;
+
+    iget-object v1, p0, Lcom/google/android/setupdesign/items/ButtonItem;->text:Ljava/lang/CharSequence;
+
+    invoke-virtual {v0, v1}, Landroid/widget/Button;->setText(Ljava/lang/CharSequence;)V
+
+    iget-object v0, p0, Lcom/google/android/setupdesign/items/ButtonItem;->button:Landroid/widget/Button;
+
+    invoke-virtual {p0}, Lcom/google/android/setupdesign/items/ButtonItem;->getViewId()I
+
+    move-result v1
+
+    invoke-virtual {v0, v1}, Landroid/widget/Button;->setId(I)V
+
+    iget-object v0, p0, Lcom/google/android/setupdesign/items/ButtonItem;->button:Landroid/widget/Button;
+
+    return-object v0
+.end method
+
+.method public getCount()I
+    .locals 1
+
+    const/4 v0, 0x0
+
+    return v0
+.end method
+
+.method public getLayoutResource()I
+    .locals 1
+
+    const/4 v0, 0x0
+
+    return v0
+.end method
+
+.method public getText()Ljava/lang/CharSequence;
+    .locals 1
+
+    iget-object v0, p0, Lcom/google/android/setupdesign/items/ButtonItem;->text:Ljava/lang/CharSequence;
+
+    return-object v0
+.end method
+
+.method public getTheme()I
+    .locals 1
+
+    iget v0, p0, Lcom/google/android/setupdesign/items/ButtonItem;->theme:I
+
+    return v0
+.end method
+
+.method public isEnabled()Z
+    .locals 1
+
+    iget-boolean v0, p0, Lcom/google/android/setupdesign/items/ButtonItem;->enabled:Z
+
+    return v0
+.end method
+
+.method public final onBindView(Landroid/view/View;)V
+    .locals 2
+
+    new-instance v0, Ljava/lang/UnsupportedOperationException;
+
+    const-string v1, "Cannot bind to ButtonItem\'s view"
+
+    invoke-direct {v0, v1}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
+
+    throw v0
+.end method
+
+.method public onClick(Landroid/view/View;)V
+    .locals 1
+
+    iget-object v0, p0, Lcom/google/android/setupdesign/items/ButtonItem;->listener:Lcom/google/android/setupdesign/items/ButtonItem$OnClickListener;
+
+    if-eqz v0, :cond_0
+
+    invoke-interface {v0, p0}, Lcom/google/android/setupdesign/items/ButtonItem$OnClickListener;->onClick(Lcom/google/android/setupdesign/items/ButtonItem;)V
+
+    :cond_0
+    return-void
+.end method
+
+.method public setEnabled(Z)V
+    .locals 0
+
+    iput-boolean p1, p0, Lcom/google/android/setupdesign/items/ButtonItem;->enabled:Z
+
+    return-void
+.end method
+
+.method public setOnClickListener(Lcom/google/android/setupdesign/items/ButtonItem$OnClickListener;)V
+    .locals 0
+
+    iput-object p1, p0, Lcom/google/android/setupdesign/items/ButtonItem;->listener:Lcom/google/android/setupdesign/items/ButtonItem$OnClickListener;
+
+    return-void
+.end method
+
+.method public setText(Ljava/lang/CharSequence;)V
+    .locals 0
+
+    iput-object p1, p0, Lcom/google/android/setupdesign/items/ButtonItem;->text:Ljava/lang/CharSequence;
+
+    return-void
+.end method
+
+.method public setTheme(I)V
+    .locals 1
+
+    iput p1, p0, Lcom/google/android/setupdesign/items/ButtonItem;->theme:I
+
+    const/4 v0, 0x0
+
+    iput-object v0, p0, Lcom/google/android/setupdesign/items/ButtonItem;->button:Landroid/widget/Button;
+
+    return-void
+.end method

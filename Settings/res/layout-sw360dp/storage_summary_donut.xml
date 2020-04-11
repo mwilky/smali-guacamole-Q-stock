@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="199.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_top2" android:layout_marginBottom="@dimen/margin_top2" android:layout_marginStart="55.0dip" android:layout_marginEnd="@dimen/margin_left2">
+        <TextView android:textColor="@color/oneplus_contorl_text_color_primary_default" android:ellipsize="marquee" android:id="@android:id/title" android:fadingEdge="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/oneplus_contorl_margin_left1" android:singleLine="true" android:textAlignment="viewStart" style="@style/oneplus_contorl_text_style_display1" />
+        <TextView android:textColor="@color/oneplus_contorl_text_color_secondary_default" android:gravity="center_vertical" android:id="@android:id/summary" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/oneplus_contorl_margin_left1" android:layout_marginTop="2.0dip" android:maxLines="10" style="@style/oneplus_contorl_text_style_body1" />
+        <Button android:id="@id/deletion_helper_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/storage_menu_free" style="@style/OnePlus.DeviceDefault.Widget.Material.Button.Mini" />
+    </LinearLayout>
+    <com.android.settings.widget.DonutView android:layout_gravity="center" android:id="@id/donut" android:layout_width="112.0dip" android:layout_height="112.0dip" android:minWidth="58.0dip" android:paddingStart="?android:listPreferredItemPaddingStart" android:paddingEnd="?android:listPreferredItemPaddingEnd" />
+</LinearLayout>

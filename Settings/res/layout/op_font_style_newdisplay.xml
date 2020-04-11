@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:paddingBottom="@dimen/oneplus_contorl_layout_margin_top2" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/bottom_preview_panel" layout="@layout/op_font_style_preview" />
+    <LinearLayout android:orientation="vertical" android:id="@id/bottom_preview_panel" android:background="@color/oneplus_contorl_bg_color_default" android:layout_width="fill_parent" android:layout_height="307.0dip" android:layout_alignParentBottom="true">
+        <TextView android:textColor="?android:colorAccent" android:gravity="center_vertical" android:id="@id/preview_title" android:layout_width="fill_parent" android:layout_height="@dimen/oneplus_contorl_list_item_height_one_line1" android:text="@string/oneplus_font_switch" android:textAllCaps="true" android:paddingStart="@dimen/oneplus_contorl_layout_margin_left2" style="@style/oneplus_contorl_text_style_subtitle" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/font_switch" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/oneplus_contorl_layout_margin_left2" android:layout_marginRight="@dimen/oneplus_contorl_layout_margin_left2">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <com.oneplus.settings.ui.OPSquarelLinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/notofont" android:background="@drawable/shape_round_corner_select" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="58.0px" android:textColor="@color/oneplus_contorl_text_color_primary" android:gravity="center_horizontal" android:id="@id/notofont_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/oneplus_theme_font_title" style="@style/oneplus_contorl_text_style_title" />
+                    <TextView android:textSize="36.0px" android:textColor="@color/oneplus_contorl_text_color_secondary" android:gravity="center_horizontal" android:id="@id/notofont_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/oneplus_contorl_layout_margin_top1" android:text="@string/oneplus_theme_font_content" style="@style/oneplus_contorl_text_style_body1" />
+                </com.oneplus.settings.ui.OPSquarelLinearLayout>
+                <TextView android:textColor="@color/oneplus_contorl_text_color_primary" android:gravity="center_horizontal" android:id="@id/notofont_flag" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/oneplus_contorl_layout_margin_top1" android:text="@string/oneplus_system_font" style="@style/oneplus_contorl_text_style_body1" />
+            </LinearLayout>
+            <View android:layout_width="@dimen/oneplus_contorl_layout_margin_left1" android:layout_height="10.0dip" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <com.oneplus.settings.ui.OPSquarelLinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/oneplusfont" android:background="@drawable/shape_round_corner" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="58.0px" android:textColor="@color/oneplus_contorl_text_color_primary" android:gravity="center_horizontal" android:id="@id/oneplusfont_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/oneplus_theme_font_title" style="@style/oneplus_contorl_text_style_title" />
+                    <TextView android:textSize="36.0px" android:textColor="@color/oneplus_contorl_text_color_secondary" android:gravity="center_horizontal" android:id="@id/oneplusfont_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/oneplus_contorl_layout_margin_top1" android:text="@string/oneplus_theme_font_content" style="@style/oneplus_contorl_text_style_body1" />
+                </com.oneplus.settings.ui.OPSquarelLinearLayout>
+                <TextView android:textColor="@color/oneplus_contorl_text_color_primary" android:gravity="center_horizontal" android:id="@id/oneplusfont_flag" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/oneplus_contorl_layout_margin_top1" android:text="@string/oneplus_slate_font" style="@style/oneplus_contorl_text_style_body1" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
