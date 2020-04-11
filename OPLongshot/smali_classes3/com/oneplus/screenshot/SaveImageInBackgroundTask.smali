@@ -1084,7 +1084,7 @@
 
     move-object/from16 v20, v0
 
-    const v0, 0x104067e
+    const v0, 0x104067f
 
     invoke-virtual {v9, v0}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -1134,7 +1134,7 @@
 
     new-instance v3, Landroid/app/Notification$Action$Builder;
 
-    const v15, 0x10401f9
+    const v15, 0x10401fa
 
     invoke-virtual {v9, v15}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 

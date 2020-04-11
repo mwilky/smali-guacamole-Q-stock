@@ -770,7 +770,7 @@
 
     new-instance v2, Landroid/app/NotificationChannel;
 
-    const v3, 0x1040472
+    const v3, 0x1040473
 
     invoke-virtual {v1, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
