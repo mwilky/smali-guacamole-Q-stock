@@ -8,6 +8,10 @@
 
 .field private static final EXTRA_LONGSHOT:Ljava/lang/String; = "longshot"
 
+.field private static final EXTRA_VOICE_LONGSHOT:Ljava/lang/String; = "voiceLongshot"
+
+.field public static final SCREENSHOT_TYPE_LONGSHOT:I = 0x64
+
 .field private static final TAG:Ljava/lang/String; = "DisplayPolicyInjector"
 
 
@@ -193,70 +197,85 @@
 
     move-object v0, p1
 
-    const/4 v1, 0x0
+    move/from16 v1, p9
+
+    const/4 v2, 0x0
 
     if-eqz p0, :cond_0
 
     invoke-virtual {p0}, Lcom/android/server/wm/WindowState;->inMultiWindowMode()Z
 
-    move-result v2
+    move-result v3
 
     goto :goto_0
 
     :cond_0
-    const/4 v2, 0x0
+    const/4 v3, 0x0
 
     :goto_0
-    move/from16 v3, p2
+    move/from16 v4, p2
 
-    const/4 v4, 0x2
+    const/4 v5, 0x2
 
-    move/from16 v12, p9
-
-    if-eq v12, v4, :cond_3
+    if-eq v1, v5, :cond_3
 
     if-eqz p4, :cond_3
 
     invoke-static {p1}, Lcom/android/server/wm/OpDisplayPolicyInjector;->isDeviceProvisioned(Landroid/content/Context;)Z
 
-    move-result v4
+    move-result v5
+
+    if-eqz v5, :cond_3
+
+    if-eqz v3, :cond_1
 
     if-eqz v4, :cond_3
-
-    if-eqz v2, :cond_1
-
-    if-eqz v3, :cond_3
 
     :cond_1
     if-nez p5, :cond_3
 
     invoke-static {}, Lcom/oneplus/android/server/zenmode/ZenModeInjector;->isZenModeOn()Z
 
-    move-result v4
+    move-result v5
 
-    if-eqz v4, :cond_2
+    if-eqz v5, :cond_2
 
     goto :goto_1
 
     :cond_2
-    const/4 v1, 0x1
+    const/4 v2, 0x1
 
     goto :goto_2
 
     :cond_3
     :goto_1
-    const/4 v1, 0x0
+    const/4 v2, 0x0
 
     :goto_2
-    new-instance v4, Landroid/os/Bundle;
+    new-instance v5, Landroid/os/Bundle;
 
-    invoke-direct {v4}, Landroid/os/Bundle;-><init>()V
+    invoke-direct {v5}, Landroid/os/Bundle;-><init>()V
 
+    move-object v12, v5
+
+    const/16 v5, 0x64
+
+    if-ne v5, v1, :cond_4
+
+    const/4 v5, 0x1
+
+    const-string v6, "voiceLongshot"
+
+    invoke-virtual {v12, v6, v5}, Landroid/os/Bundle;->putBoolean(Ljava/lang/String;Z)V
+
+    const/4 v1, 0x1
+
+    :cond_4
     const-string v5, "longshot"
 
-    invoke-virtual {v4, v5, v1}, Landroid/os/Bundle;->putBoolean(Ljava/lang/String;Z)V
+    invoke-virtual {v12, v5, v2}, Landroid/os/Bundle;->putBoolean(Ljava/lang/String;Z)V
 
-    if-eqz p0, :cond_4
+    if-eqz p0, :cond_5
 
     invoke-virtual {p0}, Lcom/android/server/wm/WindowState;->getAttrs()Landroid/view/WindowManager$LayoutParams;
 
@@ -266,18 +285,18 @@
 
     const-string v6, "focusWindow"
 
-    invoke-virtual {v4, v6, v5}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v12, v6, v5}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
-    :cond_4
+    :cond_5
     invoke-virtual/range {p3 .. p3}, Lcom/android/internal/util/ScreenshotHelper;->getScreenshotHelperInjector()Lcom/android/internal/util/ScreenshotHelperInjector;
 
     move-result-object v13
 
-    if-eqz v13, :cond_5
+    if-eqz v13, :cond_6
 
     move-object v5, v13
 
-    move/from16 v6, p9
+    move v6, v1
 
     move/from16 v7, p6
 
@@ -285,13 +304,13 @@
 
     move-object/from16 v9, p8
 
-    move v10, v1
+    move v10, v2
 
-    move-object v11, v4
+    move-object v11, v12
 
     invoke-virtual/range {v5 .. v11}, Lcom/android/internal/util/ScreenshotHelperInjector;->takeScreenshot(IZZLandroid/os/Handler;ZLandroid/os/Bundle;)V
 
-    :cond_5
+    :cond_6
     const-string v5, "vibrator"
 
     invoke-virtual {p1, v5}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;

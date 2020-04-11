@@ -2134,7 +2134,7 @@
 
     move-result-object v1
 
-    const v6, 0x1040153
+    const v6, 0x1040154
 
     invoke-virtual {v1, v6}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -4695,7 +4695,7 @@
 
     iget-object v1, v13, Lcom/android/server/pm/PackageManagerService;->mContext:Landroid/content/Context;
 
-    const v2, 0x104016e
+    const v2, 0x104016f
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -28439,7 +28439,7 @@
 
     move-result-object v2
 
-    const v4, 0x104019d
+    const v4, 0x104019e
 
     invoke-virtual {v2, v4}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -29020,7 +29020,7 @@
 
     new-array v0, v6, [I
 
-    const/16 v3, 0xf5
+    const/16 v3, 0xf7
 
     aput v3, v0, v5
 
@@ -29942,7 +29942,7 @@
 
     move-result-object v2
 
-    const v4, 0x104019d
+    const v4, 0x104019e
 
     invoke-virtual {v2, v4}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -43041,6 +43041,8 @@
 
     move-result v6
 
+    const/16 v7, -0x13
+
     if-eqz v6, :cond_11
 
     invoke-static {v10}, Lcom/android/server/pm/PackageManagerService;->renameStaticSharedLibraryPackage(Landroid/content/pm/PackageParser$Package;)V
@@ -43058,11 +43060,9 @@
 
     new-instance v5, Lcom/android/server/pm/PackageManagerService$PrepareFailure;
 
-    const/16 v6, -0x13
+    const-string v6, "Packages declaring static-shared libs cannot be updated"
 
-    const-string v7, "Packages declaring static-shared libs cannot be updated"
-
-    invoke-direct {v5, v6, v7}, Lcom/android/server/pm/PackageManagerService$PrepareFailure;-><init>(ILjava/lang/String;)V
+    invoke-direct {v5, v7, v6}, Lcom/android/server/pm/PackageManagerService$PrepareFailure;-><init>(ILjava/lang/String;)V
 
     throw v5
 
@@ -43085,14 +43085,14 @@
 
     move-result v7
 
-    const/16 v19, 0x0
+    const/16 v20, 0x0
 
-    move/from16 v5, v19
+    move/from16 v5, v20
 
     :goto_8
     if-ge v5, v7, :cond_15
 
-    move/from16 v19, v7
+    move/from16 v20, v7
 
     iget-object v7, v10, Landroid/content/pm/PackageParser$Package;->childPackages:Ljava/util/ArrayList;
 
@@ -43102,19 +43102,19 @@
 
     check-cast v7, Landroid/content/pm/PackageParser$Package;
 
-    new-instance v21, Lcom/android/server/pm/PackageManagerService$PackageInstalledInfo;
+    new-instance v22, Lcom/android/server/pm/PackageManagerService$PackageInstalledInfo;
 
-    invoke-direct/range {v21 .. v21}, Lcom/android/server/pm/PackageManagerService$PackageInstalledInfo;-><init>()V
+    invoke-direct/range {v22 .. v22}, Lcom/android/server/pm/PackageManagerService$PackageInstalledInfo;-><init>()V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_2
 
-    move-object/from16 v22, v21
+    move-object/from16 v26, v22
 
-    move-object/from16 v21, v9
+    move-object/from16 v22, v9
+
+    move-object/from16 v9, v26
 
     move-object/from16 v26, v13
-
-    move-object/from16 v9, v22
 
     const/4 v13, 0x1
 
@@ -43217,9 +43217,9 @@
 
     add-int/lit8 v5, v5, 0x1
 
-    move/from16 v7, v19
+    move/from16 v7, v20
 
-    move-object/from16 v9, v21
+    move-object/from16 v9, v22
 
     move-object/from16 v13, v26
 
@@ -43250,9 +43250,9 @@
     goto :goto_a
 
     :cond_15
-    move/from16 v19, v7
+    move/from16 v20, v7
 
-    move-object/from16 v21, v9
+    move-object/from16 v22, v9
 
     move/from16 v27, v11
 
@@ -43267,7 +43267,7 @@
     :catchall_2
     move-exception v0
 
-    move-object/from16 v21, v9
+    move-object/from16 v22, v9
 
     move/from16 v27, v11
 
@@ -43292,7 +43292,7 @@
     goto :goto_a
 
     :cond_16
-    move-object/from16 v21, v9
+    move-object/from16 v22, v9
 
     move/from16 v27, v11
 
@@ -43370,11 +43370,11 @@
 
     move-object v2, v0
 
-    move/from16 v33, v4
+    move/from16 v34, v4
 
-    move-object/from16 v43, v10
+    move-object/from16 v47, v10
 
-    move/from16 v42, v12
+    move/from16 v44, v12
 
     move-object/from16 v35, v15
 
@@ -43503,7 +43503,7 @@
     :try_end_8
     .catchall {:try_start_8 .. :try_end_8} :catchall_8
 
-    move/from16 v21, v6
+    move/from16 v22, v6
 
     :try_start_9
     const-string v6, "Replacing existing renamed package: oldName="
@@ -43527,22 +43527,22 @@
     goto :goto_10
 
     :cond_1d
-    move/from16 v21, v6
+    move/from16 v22, v6
 
     goto :goto_10
 
     :cond_1e
-    move/from16 v21, v6
+    move/from16 v22, v6
 
     goto :goto_f
 
     :cond_1f
-    move/from16 v21, v6
+    move/from16 v22, v6
 
     goto :goto_f
 
     :cond_20
-    move/from16 v21, v6
+    move/from16 v22, v6
 
     :goto_f
     iget-object v6, v1, Lcom/android/server/pm/PackageManagerService;->mPackages:Landroid/util/ArrayMap;
@@ -43613,7 +43613,7 @@
     :try_end_a
     .catchall {:try_start_a .. :try_end_a} :catchall_6
 
-    move-object/from16 v22, v5
+    move-object/from16 v30, v5
 
     const/16 v5, 0x16
 
@@ -43623,9 +43623,9 @@
 
     if-le v13, v5, :cond_23
 
-    move/from16 v30, v7
+    move/from16 v31, v7
 
-    move-object/from16 v31, v11
+    move-object/from16 v32, v11
 
     goto :goto_11
 
@@ -43635,14 +43635,14 @@
     :try_end_b
     .catchall {:try_start_b .. :try_end_b} :catchall_4
 
-    move/from16 v30, v7
+    move/from16 v31, v7
 
     :try_start_c
     new-instance v7, Ljava/lang/StringBuilder;
 
     invoke-direct {v7}, Ljava/lang/StringBuilder;-><init>()V
 
-    move-object/from16 v31, v11
+    move-object/from16 v32, v11
 
     const-string v11, "Package "
 
@@ -43681,28 +43681,28 @@
     :catchall_4
     move-exception v0
 
-    move/from16 v30, v7
+    move/from16 v31, v7
 
     move-object v2, v0
 
-    move/from16 v33, v4
+    move/from16 v34, v4
 
-    move/from16 v42, v12
+    move/from16 v44, v12
 
-    move-object/from16 v43, v14
+    move-object/from16 v47, v14
 
     move-object/from16 v35, v15
 
-    move/from16 v6, v21
+    move/from16 v6, v22
 
-    move-object/from16 v5, v22
+    move-object/from16 v5, v30
 
     goto/16 :goto_49
 
     :cond_24
-    move/from16 v30, v7
+    move/from16 v31, v7
 
-    move-object/from16 v31, v11
+    move-object/from16 v32, v11
 
     :goto_11
     iget-object v5, v6, Landroid/content/pm/PackageParser$Package;->applicationInfo:Landroid/content/pm/ApplicationInfo;
@@ -43749,7 +43749,7 @@
 
     invoke-direct {v11}, Ljava/lang/StringBuilder;-><init>()V
 
-    move-object/from16 v32, v5
+    move-object/from16 v33, v5
 
     const-string v5, "Allow app upgrader to update persistent app "
 
@@ -43768,12 +43768,12 @@
     goto :goto_13
 
     :cond_25
-    move-object/from16 v32, v5
+    move-object/from16 v33, v5
 
     goto :goto_12
 
     :cond_26
-    move-object/from16 v32, v5
+    move-object/from16 v33, v5
 
     :goto_12
     new-instance v5, Lcom/android/server/pm/PackageManagerService$PrepareFailure;
@@ -43850,25 +43850,25 @@
     throw v5
 
     :cond_29
-    move-object/from16 v22, v5
+    move-object/from16 v30, v5
 
-    move/from16 v30, v7
+    move/from16 v31, v7
 
-    move-object/from16 v31, v11
+    move-object/from16 v32, v11
 
     :goto_14
-    move-object/from16 v13, v22
+    move-object/from16 v13, v30
 
-    move/from16 v7, v30
+    move/from16 v7, v31
 
     goto/16 :goto_15
 
     :cond_2a
-    move-object/from16 v22, v5
+    move-object/from16 v30, v5
 
-    move/from16 v30, v7
+    move/from16 v31, v7
 
-    move-object/from16 v31, v11
+    move-object/from16 v32, v11
 
     new-instance v5, Lcom/android/server/pm/PackageManagerService$PrepareFailure;
 
@@ -43915,40 +43915,40 @@
 
     move-object v2, v0
 
-    move/from16 v33, v4
+    move/from16 v34, v4
 
-    move/from16 v42, v12
+    move/from16 v44, v12
 
-    move-object/from16 v43, v14
+    move-object/from16 v47, v14
 
     move-object/from16 v35, v15
 
-    move/from16 v6, v21
+    move/from16 v6, v22
 
-    move-object/from16 v5, v22
+    move-object/from16 v5, v30
 
-    move/from16 v7, v30
+    move/from16 v7, v31
 
     goto/16 :goto_49
 
     :catchall_6
     move-exception v0
 
-    move-object/from16 v22, v5
+    move-object/from16 v30, v5
 
-    move/from16 v30, v7
+    move/from16 v31, v7
 
     move-object v2, v0
 
-    move/from16 v33, v4
+    move/from16 v34, v4
 
-    move/from16 v42, v12
+    move/from16 v44, v12
 
-    move-object/from16 v43, v14
+    move-object/from16 v47, v14
 
     move-object/from16 v35, v15
 
-    move/from16 v6, v21
+    move/from16 v6, v22
 
     goto/16 :goto_49
 
@@ -43957,37 +43957,37 @@
 
     move-object v2, v0
 
-    move/from16 v33, v4
+    move/from16 v34, v4
 
-    move/from16 v42, v12
+    move/from16 v44, v12
 
-    move-object/from16 v43, v14
+    move-object/from16 v47, v14
 
     move-object/from16 v35, v15
 
-    move/from16 v6, v21
+    move/from16 v6, v22
 
     goto/16 :goto_49
 
     :catchall_8
     move-exception v0
 
-    move/from16 v21, v6
+    move/from16 v22, v6
 
     move-object v2, v0
 
-    move/from16 v33, v4
+    move/from16 v34, v4
 
-    move/from16 v42, v12
+    move/from16 v44, v12
 
-    move-object/from16 v43, v14
+    move-object/from16 v47, v14
 
     move-object/from16 v35, v15
 
     goto/16 :goto_49
 
     :cond_2b
-    move/from16 v21, v6
+    move/from16 v22, v6
 
     move-object v13, v5
 
@@ -44042,17 +44042,17 @@
 
     move-object v2, v0
 
-    move/from16 v33, v4
+    move/from16 v34, v4
 
-    move/from16 v42, v12
+    move/from16 v44, v12
 
     move-object v5, v13
 
-    move-object/from16 v43, v14
+    move-object/from16 v47, v14
 
     move-object/from16 v35, v15
 
-    move/from16 v6, v21
+    move/from16 v6, v22
 
     goto/16 :goto_49
 
@@ -44130,7 +44130,7 @@
 
     move/from16 v32, v7
 
-    move/from16 v33, v12
+    move/from16 v34, v12
 
     goto/16 :goto_1a
 
@@ -44180,17 +44180,17 @@
 
     move-object v2, v0
 
-    move/from16 v42, v12
+    move/from16 v44, v12
 
     move-object v5, v13
 
-    move-object/from16 v43, v14
+    move-object/from16 v47, v14
 
     move-object/from16 v35, v15
 
-    move/from16 v6, v21
+    move/from16 v6, v22
 
-    move/from16 v33, v31
+    move/from16 v34, v31
 
     move/from16 v7, v32
 
@@ -44203,17 +44203,17 @@
 
     move-object v2, v0
 
-    move/from16 v42, v12
+    move/from16 v44, v12
 
     move-object v5, v13
 
-    move-object/from16 v43, v14
+    move-object/from16 v47, v14
 
     move-object/from16 v35, v15
 
-    move/from16 v6, v21
+    move/from16 v6, v22
 
-    move/from16 v33, v31
+    move/from16 v34, v31
 
     goto/16 :goto_49
 
@@ -44224,17 +44224,17 @@
 
     move-object v2, v0
 
-    move/from16 v33, v4
+    move/from16 v34, v4
 
-    move/from16 v42, v12
+    move/from16 v44, v12
 
     move-object v5, v13
 
-    move-object/from16 v43, v14
+    move-object/from16 v47, v14
 
     move-object/from16 v35, v15
 
-    move/from16 v6, v21
+    move/from16 v6, v22
 
     goto/16 :goto_49
 
@@ -44257,7 +44257,7 @@
     .catch Lcom/android/server/pm/PackageManagerException; {:try_start_16 .. :try_end_16} :catch_3
     .catchall {:try_start_16 .. :try_end_16} :catchall_e
 
-    move/from16 v33, v12
+    move/from16 v34, v12
 
     const/4 v12, 0x0
 
@@ -44275,7 +44275,7 @@
     .catch Lcom/android/server/pm/PackageManagerException; {:try_start_17 .. :try_end_17} :catch_2
     .catchall {:try_start_17 .. :try_end_17} :catchall_f
 
-    move/from16 v34, v4
+    move/from16 v33, v4
 
     :try_start_18
     iget-object v4, v14, Landroid/content/pm/PackageParser$Package;->packageName:Ljava/lang/String;
@@ -44302,7 +44302,7 @@
     .catchall {:try_start_19 .. :try_end_19} :catchall_f
 
     :cond_31
-    move/from16 v34, v4
+    move/from16 v33, v4
 
     :goto_19
     nop
@@ -44360,7 +44360,7 @@
     goto :goto_1c
 
     :cond_33
-    move/from16 v4, v21
+    move/from16 v4, v22
 
     :goto_1c
     :try_start_1c
@@ -44380,8 +44380,6 @@
     :try_end_1c
     .catchall {:try_start_1c .. :try_end_1c} :catchall_11
 
-    const/4 v12, 0x0
-
     goto/16 :goto_1e
 
     :catch_1
@@ -44390,19 +44388,17 @@
     move-object v4, v0
 
     :try_start_1d
-    iget v7, v4, Lcom/android/server/pm/PackageManagerException;->error:I
+    new-instance v7, Lcom/android/server/pm/PackageManagerService$PrepareFailure;
+
+    iget v11, v4, Lcom/android/server/pm/PackageManagerException;->error:I
 
     invoke-virtual {v4}, Lcom/android/server/pm/PackageManagerException;->getMessage()Ljava/lang/String;
 
-    move-result-object v11
+    move-result-object v12
 
-    invoke-virtual {v3, v7, v11}, Lcom/android/server/pm/PackageManagerService$PackageInstalledInfo;->setError(ILjava/lang/String;)V
+    invoke-direct {v7, v11, v12}, Lcom/android/server/pm/PackageManagerService$PrepareFailure;-><init>(ILjava/lang/String;)V
 
-    monitor-exit v9
-
-    const/4 v12, 0x0
-
-    return-object v12
+    throw v7
 
     :catch_2
     move-exception v0
@@ -44416,17 +44412,17 @@
 
     move-object v2, v0
 
-    move/from16 v42, v12
+    move/from16 v44, v12
 
     move-object v5, v13
 
-    move-object/from16 v43, v14
+    move-object/from16 v47, v14
 
     move-object/from16 v35, v15
 
-    move/from16 v6, v21
+    move/from16 v6, v22
 
-    move/from16 v33, v31
+    move/from16 v34, v31
 
     move/from16 v7, v32
 
@@ -44435,7 +44431,7 @@
     :catch_3
     move-exception v0
 
-    move/from16 v33, v12
+    move/from16 v34, v12
 
     move-object v4, v0
 
@@ -44461,17 +44457,17 @@
 
     move-object v5, v13
 
-    move-object/from16 v43, v14
+    move-object/from16 v47, v14
 
     move-object/from16 v35, v15
 
-    move/from16 v6, v21
+    move/from16 v6, v22
 
     move/from16 v7, v32
 
-    move/from16 v42, v33
+    move/from16 v44, v34
 
-    move/from16 v33, v31
+    move/from16 v34, v31
 
     goto/16 :goto_49
 
@@ -44482,17 +44478,17 @@
 
     move-object v2, v0
 
-    move/from16 v33, v4
+    move/from16 v34, v4
 
-    move/from16 v42, v12
+    move/from16 v44, v12
 
     move-object v5, v13
 
-    move-object/from16 v43, v14
+    move-object/from16 v47, v14
 
     move-object/from16 v35, v15
 
-    move/from16 v6, v21
+    move/from16 v6, v22
 
     goto/16 :goto_49
 
@@ -44501,11 +44497,9 @@
 
     move/from16 v32, v7
 
-    move/from16 v33, v12
+    move/from16 v34, v12
 
-    const/4 v12, 0x0
-
-    move/from16 v4, v21
+    move/from16 v4, v22
 
     :goto_1e
     :try_start_1e
@@ -44556,13 +44550,13 @@
     :try_start_20
     const-string v12, "PackageManager"
 
-    move-object/from16 v34, v5
+    move-object/from16 v33, v5
 
     new-instance v5, Ljava/lang/StringBuilder;
 
     invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
 
-    move/from16 v21, v6
+    move/from16 v22, v6
 
     const-string v6, "Non-System package "
 
@@ -44613,22 +44607,22 @@
 
     move-object v5, v13
 
-    move-object/from16 v43, v14
+    move-object/from16 v47, v14
 
     move-object/from16 v35, v15
 
     move/from16 v7, v32
 
-    move/from16 v42, v33
+    move/from16 v44, v34
 
-    move/from16 v33, v31
+    move/from16 v34, v31
 
     goto/16 :goto_49
 
     :cond_35
-    move-object/from16 v34, v5
+    move-object/from16 v33, v5
 
-    move/from16 v21, v6
+    move/from16 v22, v6
 
     :goto_20
     if-eqz v11, :cond_3b
@@ -44908,13 +44902,13 @@
 
     move-object v5, v13
 
-    move-object/from16 v43, v14
+    move-object/from16 v47, v14
 
     move/from16 v7, v32
 
-    move/from16 v42, v33
+    move/from16 v44, v34
 
-    move/from16 v33, v31
+    move/from16 v34, v31
 
     goto/16 :goto_49
 
@@ -44927,13 +44921,11 @@
 
     move-object/from16 v3, p2
 
-    move/from16 v6, v21
+    move/from16 v6, v22
 
-    move-object/from16 v5, v34
+    move-object/from16 v5, v33
 
     move-object/from16 v15, v35
-
-    const/4 v12, 0x0
 
     goto/16 :goto_1f
 
@@ -44946,22 +44938,22 @@
 
     move-object v5, v13
 
-    move-object/from16 v43, v14
+    move-object/from16 v47, v14
 
     move-object/from16 v35, v15
 
     move/from16 v7, v32
 
-    move/from16 v42, v33
+    move/from16 v44, v34
 
-    move/from16 v33, v31
+    move/from16 v34, v31
 
     goto/16 :goto_49
 
     :cond_3d
-    move-object/from16 v34, v5
+    move-object/from16 v33, v5
 
-    move/from16 v21, v6
+    move/from16 v22, v6
 
     move-object/from16 v35, v15
 
@@ -44972,7 +44964,7 @@
 
     if-eqz v4, :cond_40
 
-    if-nez v33, :cond_3f
+    if-nez v34, :cond_3f
 
     if-nez v23, :cond_3e
 
@@ -44992,11 +44984,11 @@
     :cond_3f
     new-instance v3, Lcom/android/server/pm/PackageManagerService$PrepareFailure;
 
-    const/16 v5, -0x13
+    const-string v5, "Cannot install updates to system apps on sdcard"
 
-    const-string v6, "Cannot install updates to system apps on sdcard"
+    const/16 v6, -0x13
 
-    invoke-direct {v3, v5, v6}, Lcom/android/server/pm/PackageManagerService$PrepareFailure;-><init>(ILjava/lang/String;)V
+    invoke-direct {v3, v6, v5}, Lcom/android/server/pm/PackageManagerService$PrepareFailure;-><init>(ILjava/lang/String;)V
 
     throw v3
 
@@ -45123,17 +45115,17 @@
 
     move-object v2, v0
 
-    move/from16 v34, v4
-
     move-object/from16 v30, v13
 
-    move-object/from16 v43, v14
+    move-object/from16 v47, v14
 
-    move/from16 v39, v32
+    move/from16 v38, v32
 
-    move/from16 v42, v33
+    move/from16 v44, v34
 
-    move/from16 v33, v31
+    move/from16 v32, v4
+
+    move/from16 v34, v31
 
     goto/16 :goto_48
 
@@ -45242,7 +45234,7 @@
 
     move v11, v3
 
-    move/from16 v21, v27
+    move/from16 v19, v27
 
     if-eqz v7, :cond_70
 
@@ -45264,7 +45256,7 @@
     :try_end_2b
     .catchall {:try_start_2b .. :try_end_2b} :catchall_18
 
-    move/from16 v34, v4
+    move/from16 v32, v4
 
     :try_start_2c
     iget-object v4, v14, Landroid/content/pm/PackageParser$Package;->packageName:Ljava/lang/String;
@@ -45289,20 +45281,20 @@
 
     if-nez v10, :cond_47
 
-    move/from16 v37, v5
+    move/from16 v36, v5
 
     goto :goto_2a
 
     :cond_47
     new-instance v10, Lcom/android/server/pm/PackageManagerService$PrepareFailure;
 
-    move-object/from16 v36, v4
+    move-object/from16 v33, v4
 
     const-string v4, "Packages declaring static-shared libs cannot be updated"
     :try_end_2c
     .catchall {:try_start_2c .. :try_end_2c} :catchall_17
 
-    move/from16 v37, v5
+    move/from16 v36, v5
 
     const/4 v5, -0x5
 
@@ -45318,75 +45310,75 @@
 
     move-object v2, v0
 
-    move/from16 v47, v3
+    move/from16 v46, v3
 
-    move/from16 v39, v7
+    move/from16 v38, v7
 
     move-object/from16 v30, v13
 
-    move-object/from16 v43, v14
+    move-object/from16 v47, v14
 
-    move/from16 v42, v33
+    move/from16 v44, v34
 
-    move/from16 v33, v12
+    move/from16 v34, v12
 
     goto/16 :goto_47
 
     :cond_48
-    move-object/from16 v36, v4
+    move-object/from16 v33, v4
 
-    move/from16 v37, v5
+    move/from16 v36, v5
 
     goto :goto_2a
 
     :catchall_17
     move-exception v0
 
-    move/from16 v37, v5
+    move/from16 v36, v5
 
     move-object v2, v0
 
-    move/from16 v47, v3
+    move/from16 v46, v3
 
-    move/from16 v39, v7
+    move/from16 v38, v7
 
     move-object/from16 v30, v13
 
-    move-object/from16 v43, v14
+    move-object/from16 v47, v14
 
-    move/from16 v42, v33
+    move/from16 v44, v34
 
-    move/from16 v33, v12
+    move/from16 v34, v12
 
     goto/16 :goto_47
 
     :catchall_18
     move-exception v0
 
-    move/from16 v34, v4
+    move/from16 v32, v4
 
-    move/from16 v37, v5
+    move/from16 v36, v5
 
     move-object v2, v0
 
-    move/from16 v47, v3
+    move/from16 v46, v3
 
-    move/from16 v39, v7
+    move/from16 v38, v7
 
     move-object/from16 v30, v13
 
-    move-object/from16 v43, v14
+    move-object/from16 v47, v14
 
-    move/from16 v42, v33
+    move/from16 v44, v34
 
-    move/from16 v33, v12
+    move/from16 v34, v12
 
     goto/16 :goto_47
 
     :cond_49
-    move/from16 v34, v4
+    move/from16 v32, v4
 
-    move/from16 v37, v5
+    move/from16 v36, v5
 
     :goto_2a
     and-int/lit16 v4, v3, 0x4000
@@ -45410,7 +45402,7 @@
     :try_end_2e
     .catchall {:try_start_2e .. :try_end_2e} :catchall_2d
 
-    move-object/from16 v36, v6
+    move-object/from16 v33, v6
 
     :try_start_2f
     iget-object v6, v1, Lcom/android/server/pm/PackageManagerService;->mPackages:Landroid/util/ArrayMap;
@@ -45421,22 +45413,22 @@
 
     check-cast v6, Landroid/content/pm/PackageParser$Package;
 
-    move-object/from16 v38, v6
+    move-object/from16 v37, v6
 
-    sget-boolean v39, Lcom/android/server/pm/PackageManagerService;->DEBUG_INSTALL:Z
+    sget-boolean v38, Lcom/android/server/pm/PackageManagerService;->DEBUG_INSTALL:Z
     :try_end_2f
     .catchall {:try_start_2f .. :try_end_2f} :catchall_2a
 
-    if-eqz v39, :cond_4b
+    if-eqz v38, :cond_4b
 
-    move/from16 v39, v7
+    move/from16 v38, v7
 
     :try_start_30
     const-string v7, "PackageManager"
     :try_end_30
     .catchall {:try_start_30 .. :try_end_30} :catchall_1b
 
-    move/from16 v40, v8
+    move/from16 v39, v8
 
     :try_start_31
     new-instance v8, Ljava/lang/StringBuilder;
@@ -45445,7 +45437,7 @@
     :try_end_31
     .catchall {:try_start_31 .. :try_end_31} :catchall_1a
 
-    move-object/from16 v41, v9
+    move-object/from16 v40, v9
 
     :try_start_32
     const-string/jumbo v9, "replacePackageLI: new="
@@ -45475,13 +45467,13 @@
 
     move-object v2, v0
 
-    move/from16 v47, v3
+    move/from16 v46, v3
 
-    move/from16 v19, v4
+    move/from16 v20, v4
 
-    move-object/from16 v45, v5
+    move-object/from16 v44, v5
 
-    move/from16 v44, v11
+    move/from16 v43, v11
 
     move/from16 v16, v12
 
@@ -45492,17 +45484,17 @@
     :catchall_1a
     move-exception v0
 
-    move-object/from16 v41, v9
+    move-object/from16 v40, v9
 
     move-object v2, v0
 
-    move/from16 v47, v3
+    move/from16 v46, v3
 
-    move/from16 v19, v4
+    move/from16 v20, v4
 
-    move-object/from16 v45, v5
+    move-object/from16 v44, v5
 
-    move/from16 v44, v11
+    move/from16 v43, v11
 
     move/from16 v16, v12
 
@@ -45513,19 +45505,19 @@
     :catchall_1b
     move-exception v0
 
-    move/from16 v40, v8
+    move/from16 v39, v8
 
-    move-object/from16 v41, v9
+    move-object/from16 v40, v9
 
     move-object v2, v0
 
-    move/from16 v47, v3
+    move/from16 v46, v3
 
-    move/from16 v19, v4
+    move/from16 v20, v4
 
-    move-object/from16 v45, v5
+    move-object/from16 v44, v5
 
-    move/from16 v44, v11
+    move/from16 v43, v11
 
     move/from16 v16, v12
 
@@ -45534,11 +45526,11 @@
     goto/16 :goto_43
 
     :cond_4b
-    move/from16 v39, v7
+    move/from16 v38, v7
 
-    move/from16 v40, v8
+    move/from16 v39, v8
 
-    move-object/from16 v41, v9
+    move-object/from16 v40, v9
 
     :goto_2c
     :try_start_33
@@ -45564,11 +45556,11 @@
 
     invoke-virtual {v9, v7, v3}, Lcom/android/server/pm/KeySetManagerService;->shouldCheckUpgradeKeySetLocked(Lcom/android/server/pm/PackageSettingBase;I)Z
 
-    move-result v42
+    move-result v41
     :try_end_33
     .catchall {:try_start_33 .. :try_end_33} :catchall_29
 
-    if-eqz v42, :cond_4d
+    if-eqz v41, :cond_4d
 
     :try_start_34
     invoke-virtual {v9, v7, v14}, Lcom/android/server/pm/KeySetManagerService;->checkUpgradeKeySetLocked(Lcom/android/server/pm/PackageSettingBase;Landroid/content/pm/PackageParser$Package;)Z
@@ -45577,20 +45569,20 @@
 
     if-eqz v16, :cond_4c
 
-    move-object/from16 v42, v8
+    move-object/from16 v41, v8
 
-    move-object/from16 v43, v9
+    move-object/from16 v42, v9
 
-    move/from16 v44, v11
+    move/from16 v43, v11
 
     goto/16 :goto_2d
 
     :cond_4c
-    move-object/from16 v42, v8
+    move-object/from16 v41, v8
 
     new-instance v8, Lcom/android/server/pm/PackageManagerService$PrepareFailure;
 
-    move-object/from16 v43, v9
+    move-object/from16 v42, v9
 
     new-instance v9, Ljava/lang/StringBuilder;
 
@@ -45598,7 +45590,7 @@
     :try_end_34
     .catchall {:try_start_34 .. :try_end_34} :catchall_1c
 
-    move/from16 v44, v11
+    move/from16 v43, v11
 
     :try_start_35
     const-string v11, "New package not signed by keys specified by upgrade-keysets: "
@@ -45622,15 +45614,15 @@
     :catchall_1c
     move-exception v0
 
-    move/from16 v44, v11
+    move/from16 v43, v11
 
     move-object v2, v0
 
-    move/from16 v47, v3
+    move/from16 v46, v3
 
-    move/from16 v19, v4
+    move/from16 v20, v4
 
-    move-object/from16 v45, v5
+    move-object/from16 v44, v5
 
     move/from16 v16, v12
 
@@ -45639,11 +45631,11 @@
     goto/16 :goto_43
 
     :cond_4d
-    move-object/from16 v42, v8
+    move-object/from16 v41, v8
 
-    move-object/from16 v43, v9
+    move-object/from16 v42, v9
 
-    move/from16 v44, v11
+    move/from16 v43, v11
 
     :try_start_36
     iget-object v8, v14, Landroid/content/pm/PackageParser$Package;->mSigningDetails:Landroid/content/pm/PackageParser$SigningDetails;
@@ -45705,11 +45697,11 @@
 
     move-object v2, v0
 
-    move/from16 v47, v3
+    move/from16 v46, v3
 
-    move/from16 v19, v4
+    move/from16 v20, v4
 
-    move-object/from16 v45, v5
+    move-object/from16 v44, v5
 
     move/from16 v16, v12
 
@@ -45776,15 +45768,15 @@
     :try_start_3b
     aget-object v30, v9, v12
 
-    move-object/from16 v45, v30
+    move-object/from16 v44, v30
 
     move-object/from16 v30, v9
 
     new-instance v9, Ljava/io/File;
 
-    move/from16 v46, v11
+    move/from16 v45, v11
 
-    move-object/from16 v11, v45
+    move-object/from16 v11, v44
 
     invoke-direct {v9, v11}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
@@ -45794,7 +45786,7 @@
 
     move-object/from16 v9, v30
 
-    move/from16 v11, v46
+    move/from16 v11, v45
 
     goto :goto_2e
 
@@ -45896,11 +45888,11 @@
 
     move-object v2, v0
 
-    move/from16 v47, v3
+    move/from16 v46, v3
 
-    move/from16 v19, v4
+    move/from16 v20, v4
 
-    move-object/from16 v45, v5
+    move-object/from16 v44, v5
 
     move-object/from16 v30, v13
 
@@ -45913,11 +45905,11 @@
 
     move-object v2, v0
 
-    move/from16 v47, v3
+    move/from16 v46, v3
 
-    move/from16 v19, v4
+    move/from16 v20, v4
 
-    move-object/from16 v45, v5
+    move-object/from16 v44, v5
 
     move-object/from16 v30, v13
 
@@ -45967,7 +45959,7 @@
     :try_end_3e
     .catchall {:try_start_3e .. :try_end_3e} :catchall_22
 
-    move/from16 v19, v4
+    move/from16 v20, v4
 
     const/4 v4, -0x1
 
@@ -46046,14 +46038,14 @@
 
     move-object v2, v0
 
-    move/from16 v47, v3
+    move/from16 v46, v3
 
-    move-object/from16 v45, v5
+    move-object/from16 v44, v5
 
     goto/16 :goto_43
 
     :cond_56
-    move/from16 v19, v4
+    move/from16 v20, v4
 
     move-object/from16 v30, v13
 
@@ -46069,9 +46061,9 @@
 
     invoke-virtual {v7, v13}, Lcom/android/server/pm/PackageSetting;->getInstantApp(I)Z
 
-    move-result v32
+    move-result v22
 
-    if-eqz v32, :cond_57
+    if-eqz v22, :cond_57
 
     add-int/lit8 v12, v12, 0x1
 
@@ -46117,29 +46109,29 @@
 
     move-object v2, v0
 
-    move/from16 v47, v3
+    move/from16 v46, v3
 
-    move-object/from16 v45, v5
+    move-object/from16 v44, v5
 
     goto/16 :goto_43
 
     :catchall_22
     move-exception v0
 
-    move/from16 v19, v4
+    move/from16 v20, v4
 
     move-object/from16 v30, v13
 
     move-object v2, v0
 
-    move/from16 v47, v3
+    move/from16 v46, v3
 
-    move-object/from16 v45, v5
+    move-object/from16 v44, v5
 
     goto/16 :goto_43
 
     :cond_58
-    move/from16 v19, v4
+    move/from16 v20, v4
 
     move-object/from16 v30, v13
 
@@ -46252,13 +46244,13 @@
 
     move-object v2, v0
 
-    move/from16 v47, v3
+    move/from16 v46, v3
 
-    move-object/from16 v43, v14
+    move-object/from16 v47, v14
 
-    move/from16 v42, v33
+    move/from16 v44, v34
 
-    move/from16 v33, v16
+    move/from16 v34, v16
 
     goto/16 :goto_47
 
@@ -46288,7 +46280,9 @@
 
     if-nez v12, :cond_5c
 
-    const/4 v10, 0x0
+    const/16 v18, 0x0
+
+    move-object/from16 v10, v18
 
     goto :goto_37
 
@@ -46296,7 +46290,7 @@
     iget-object v10, v12, Lcom/android/server/pm/PackageSetting;->pkg:Landroid/content/pm/PackageParser$Package;
 
     :goto_37
-    move-object/from16 v20, v2
+    move-object/from16 v21, v2
 
     iget-object v2, v15, Lcom/android/server/pm/PackageManagerService$PackageInstalledInfo;->addedChildPackages:Landroid/util/ArrayMap;
 
@@ -46304,7 +46298,7 @@
 
     iget-object v2, v15, Lcom/android/server/pm/PackageManagerService$PackageInstalledInfo;->addedChildPackages:Landroid/util/ArrayMap;
 
-    move/from16 v32, v4
+    move/from16 v22, v4
 
     iget-object v4, v10, Landroid/content/pm/PackageParser$Package;->packageName:Ljava/lang/String;
 
@@ -46318,7 +46312,7 @@
 
     iget-object v4, v2, Lcom/android/server/pm/PackageManagerService$PackageInstalledInfo;->removedInfo:Lcom/android/server/pm/PackageManagerService$PackageRemovedInfo;
 
-    move-object/from16 v45, v5
+    move-object/from16 v44, v5
 
     iget-object v5, v10, Landroid/content/pm/PackageParser$Package;->applicationInfo:Landroid/content/pm/ApplicationInfo;
 
@@ -46360,14 +46354,14 @@
     goto :goto_38
 
     :cond_5e
-    move-object/from16 v45, v5
+    move-object/from16 v44, v5
 
     goto :goto_38
 
     :cond_5f
-    move/from16 v32, v4
+    move/from16 v22, v4
 
-    move-object/from16 v45, v5
+    move-object/from16 v44, v5
 
     :goto_38
     if-nez v13, :cond_63
@@ -46403,7 +46397,7 @@
 
     if-eqz v12, :cond_61
 
-    move-object/from16 v46, v7
+    move-object/from16 v45, v7
 
     const/4 v4, 0x1
 
@@ -46417,7 +46411,7 @@
     goto :goto_39
 
     :cond_61
-    move-object/from16 v46, v7
+    move-object/from16 v45, v7
 
     :goto_39
     monitor-exit v5
@@ -46468,36 +46462,36 @@
     .catchall {:try_start_49 .. :try_end_49} :catchall_23
 
     :cond_63
-    move-object/from16 v46, v7
+    move-object/from16 v45, v7
 
     :goto_3a
     add-int/lit8 v8, v8, 0x1
 
-    move-object/from16 v2, v20
+    move-object/from16 v2, v21
 
-    move/from16 v4, v32
+    move/from16 v4, v22
 
-    move-object/from16 v5, v45
+    move-object/from16 v5, v44
 
-    move-object/from16 v7, v46
+    move-object/from16 v7, v45
 
     goto/16 :goto_36
 
     :cond_64
-    move-object/from16 v20, v2
+    move-object/from16 v21, v2
 
-    move-object/from16 v45, v5
+    move-object/from16 v44, v5
 
-    move-object/from16 v46, v7
+    move-object/from16 v45, v7
 
     goto :goto_3b
 
     :cond_65
-    move-object/from16 v20, v2
+    move-object/from16 v21, v2
 
-    move-object/from16 v45, v5
+    move-object/from16 v44, v5
 
-    move-object/from16 v46, v7
+    move-object/from16 v45, v7
 
     :goto_3b
     :try_start_4a
@@ -46603,7 +46597,7 @@
     :try_end_4a
     .catchall {:try_start_4a .. :try_end_4a} :catchall_25
 
-    move/from16 v47, v3
+    move/from16 v46, v3
 
     :try_start_4b
     new-instance v3, Ljava/lang/StringBuilder;
@@ -46635,7 +46629,7 @@
     :cond_6b
     move/from16 v18, v2
 
-    move/from16 v47, v3
+    move/from16 v46, v3
 
     move/from16 v22, v4
 
@@ -46656,18 +46650,16 @@
     :try_end_4b
     .catchall {:try_start_4b .. :try_end_4b} :catchall_2b
 
-    move/from16 v21, v12
+    move/from16 v19, v12
 
     move v2, v13
-
-    move/from16 v7, v39
 
     goto :goto_42
 
     :cond_6c
     move/from16 v18, v2
 
-    move/from16 v47, v3
+    move/from16 v46, v3
 
     const/4 v7, 0x1
 
@@ -46726,57 +46718,55 @@
     .catchall {:try_start_4c .. :try_end_4c} :catchall_2f
 
     :cond_6e
-    move/from16 v2, v44
+    move/from16 v38, v7
+
+    move/from16 v2, v43
 
     :goto_42
-    move/from16 v44, v2
+    move/from16 v39, v18
 
-    move v2, v7
+    move/from16 v3, v19
 
-    move/from16 v40, v18
+    move-object/from16 v4, v41
 
-    move-object/from16 v32, v20
-
-    move/from16 v3, v21
-
-    move-object/from16 v4, v42
+    move-object/from16 v41, v21
 
     goto/16 :goto_45
 
     :catchall_25
     move-exception v0
 
-    move/from16 v47, v3
+    move/from16 v46, v3
 
     move-object v2, v0
 
-    move-object/from16 v43, v14
+    move-object/from16 v47, v14
 
-    move/from16 v42, v33
+    move/from16 v44, v34
 
-    move/from16 v33, v16
+    move/from16 v34, v16
 
     goto/16 :goto_47
 
     :catchall_26
     move-exception v0
 
-    move/from16 v47, v3
+    move/from16 v46, v3
 
-    move-object/from16 v45, v5
+    move-object/from16 v44, v5
 
     move-object v2, v0
 
     goto/16 :goto_43
 
     :cond_6f
-    move/from16 v47, v3
+    move/from16 v46, v3
 
-    move/from16 v19, v4
+    move/from16 v20, v4
 
-    move-object/from16 v45, v5
+    move-object/from16 v44, v5
 
-    move-object/from16 v46, v7
+    move-object/from16 v45, v7
 
     move-object/from16 v30, v13
 
@@ -46814,11 +46804,11 @@
     :catchall_27
     move-exception v0
 
-    move/from16 v47, v3
+    move/from16 v46, v3
 
-    move/from16 v19, v4
+    move/from16 v20, v4
 
-    move-object/from16 v45, v5
+    move-object/from16 v44, v5
 
     move-object/from16 v30, v13
 
@@ -46829,11 +46819,11 @@
     :catchall_28
     move-exception v0
 
-    move/from16 v47, v3
+    move/from16 v46, v3
 
-    move/from16 v19, v4
+    move/from16 v20, v4
 
-    move-object/from16 v45, v5
+    move-object/from16 v44, v5
 
     move/from16 v16, v12
 
@@ -46846,13 +46836,13 @@
     :catchall_29
     move-exception v0
 
-    move/from16 v47, v3
+    move/from16 v46, v3
 
-    move/from16 v19, v4
+    move/from16 v20, v4
 
-    move-object/from16 v45, v5
+    move-object/from16 v44, v5
 
-    move/from16 v44, v11
+    move/from16 v43, v11
 
     move/from16 v16, v12
 
@@ -46865,19 +46855,19 @@
     :catchall_2a
     move-exception v0
 
-    move/from16 v47, v3
+    move/from16 v46, v3
 
-    move/from16 v19, v4
+    move/from16 v20, v4
 
-    move-object/from16 v45, v5
+    move-object/from16 v44, v5
 
-    move/from16 v39, v7
+    move/from16 v38, v7
 
-    move/from16 v40, v8
+    move/from16 v39, v8
 
-    move-object/from16 v41, v9
+    move-object/from16 v40, v9
 
-    move/from16 v44, v11
+    move/from16 v43, v11
 
     move/from16 v16, v12
 
@@ -46900,11 +46890,11 @@
 
     move-object v2, v0
 
-    move-object/from16 v43, v14
+    move-object/from16 v47, v14
 
-    move/from16 v42, v33
+    move/from16 v44, v34
 
-    move/from16 v33, v16
+    move/from16 v34, v16
 
     goto/16 :goto_47
 
@@ -46918,59 +46908,59 @@
     :catchall_2d
     move-exception v0
 
-    move/from16 v47, v3
+    move/from16 v46, v3
 
-    move/from16 v39, v7
+    move/from16 v38, v7
 
     move-object v2, v0
 
     move-object/from16 v30, v13
 
-    move-object/from16 v43, v14
+    move-object/from16 v47, v14
 
-    move/from16 v42, v33
+    move/from16 v44, v34
 
-    move/from16 v33, v12
+    move/from16 v34, v12
 
     goto/16 :goto_47
 
     :catchall_2e
     move-exception v0
 
-    move/from16 v47, v3
+    move/from16 v46, v3
 
-    move/from16 v34, v4
+    move/from16 v32, v4
 
-    move/from16 v37, v5
+    move/from16 v36, v5
 
-    move/from16 v39, v7
+    move/from16 v38, v7
 
     move-object v2, v0
 
     move-object/from16 v30, v13
 
-    move-object/from16 v43, v14
+    move-object/from16 v47, v14
 
-    move/from16 v42, v33
+    move/from16 v44, v34
 
-    move/from16 v33, v12
+    move/from16 v34, v12
 
     goto/16 :goto_47
 
     :cond_70
-    move/from16 v47, v3
+    move/from16 v46, v3
 
-    move/from16 v34, v4
+    move/from16 v32, v4
 
-    move/from16 v37, v5
+    move/from16 v36, v5
 
-    move-object/from16 v36, v6
+    move-object/from16 v33, v6
 
-    move/from16 v39, v7
+    move/from16 v38, v7
 
-    move/from16 v40, v8
+    move/from16 v39, v8
 
-    move/from16 v44, v11
+    move/from16 v43, v11
 
     move/from16 v16, v12
 
@@ -47030,13 +47020,13 @@
 
     move-object v2, v0
 
-    move/from16 v39, v7
+    move/from16 v38, v7
 
-    move-object/from16 v43, v14
+    move-object/from16 v47, v14
 
-    move/from16 v42, v33
+    move/from16 v44, v34
 
-    move/from16 v33, v16
+    move/from16 v34, v16
 
     goto/16 :goto_47
 
@@ -47075,25 +47065,27 @@
     :try_end_54
     .catchall {:try_start_54 .. :try_end_54} :catchall_32
 
-    move-object/from16 v46, v2
+    move-object/from16 v45, v2
 
-    move-object/from16 v32, v3
+    move-object/from16 v41, v3
 
-    move-object/from16 v38, v5
+    move-object/from16 v37, v5
 
-    move v2, v7
+    move/from16 v38, v7
 
-    move-object/from16 v41, v9
+    move-object/from16 v40, v9
 
-    move-object/from16 v36, v10
+    move-object/from16 v33, v10
 
-    move/from16 v3, v21
+    move/from16 v3, v19
+
+    move/from16 v2, v43
 
     :goto_45
-    const/16 v37, 0x0
+    const/16 v36, 0x0
 
     :try_start_55
-    new-instance v39, Lcom/android/server/pm/PackageManagerService$PrepareResult;
+    new-instance v42, Lcom/android/server/pm/PackageManagerService$PrepareResult;
 
     move-object/from16 v13, p1
 
@@ -47105,56 +47097,54 @@
 
     const/16 v22, 0x0
 
-    move-object/from16 v5, v39
+    move-object/from16 v5, v42
 
-    move-object/from16 v7, v41
+    move-object/from16 v7, v40
 
     move-object/from16 v8, v35
 
-    move v10, v2
+    move/from16 v10, v38
 
-    move/from16 v11, v44
+    move v11, v2
 
-    move/from16 v42, v33
+    move/from16 v44, v34
 
-    move/from16 v33, v16
+    move/from16 v34, v16
 
     move v12, v3
 
-    move-object/from16 v13, v38
+    move-object/from16 v13, v37
 
-    move-object/from16 v43, v14
+    move-object/from16 v47, v14
 
-    move v15, v2
+    move/from16 v15, v38
 
-    move/from16 v16, v40
+    move/from16 v16, v39
 
-    move-object/from16 v17, v36
+    move-object/from16 v17, v33
 
     move-object/from16 v18, v31
 
-    move-object/from16 v19, v46
+    move-object/from16 v19, v45
 
     move-object/from16 v20, v4
 
-    move-object/from16 v21, v32
+    move-object/from16 v21, v41
 
     :try_start_56
     invoke-direct/range {v5 .. v22}, Lcom/android/server/pm/PackageManagerService$PrepareResult;-><init>(ILjava/lang/String;Ljava/lang/String;Landroid/os/UserHandle;ZIILandroid/content/pm/PackageParser$Package;Landroid/content/pm/PackageParser$Package;ZZLjava/lang/String;Lcom/android/server/pm/PackageManagerService$PackageFreezer;Lcom/android/server/pm/PackageSetting;Lcom/android/server/pm/PackageSetting;[Lcom/android/server/pm/PackageSetting;Lcom/android/server/pm/PackageManagerService$1;)V
     :try_end_56
     .catchall {:try_start_56 .. :try_end_56} :catchall_30
 
-    if-eqz v37, :cond_72
+    if-eqz v36, :cond_72
 
     invoke-virtual/range {v31 .. v31}, Lcom/android/server/pm/PackageManagerService$PackageFreezer;->close()V
 
     :cond_72
-    return-object v39
+    return-object v42
 
     :catchall_30
     move-exception v0
-
-    move/from16 v39, v2
 
     move-object v2, v0
 
@@ -47163,24 +47153,22 @@
     :catchall_31
     move-exception v0
 
-    move-object/from16 v43, v14
+    move-object/from16 v47, v14
 
-    move/from16 v42, v33
+    move/from16 v44, v34
 
-    move/from16 v33, v16
-
-    move/from16 v39, v2
+    move/from16 v34, v16
 
     move-object v2, v0
 
     goto/16 :goto_47
 
     :cond_73
-    move-object/from16 v43, v14
+    move-object/from16 v47, v14
 
-    move/from16 v42, v33
+    move/from16 v44, v34
 
-    move/from16 v33, v16
+    move/from16 v34, v16
 
     :try_start_57
     new-instance v11, Lcom/android/server/pm/PackageManagerService$PrepareFailure;
@@ -47212,24 +47200,24 @@
     :catchall_32
     move-exception v0
 
-    move-object/from16 v43, v14
+    move-object/from16 v47, v14
 
-    move/from16 v42, v33
+    move/from16 v44, v34
 
-    move/from16 v33, v16
+    move/from16 v34, v16
 
-    move-object/from16 v36, v10
+    move-object/from16 v33, v10
 
     move-object v10, v0
 
     goto :goto_46
 
     :cond_74
-    move-object/from16 v43, v14
+    move-object/from16 v47, v14
 
-    move/from16 v42, v33
+    move/from16 v44, v34
 
-    move/from16 v33, v16
+    move/from16 v34, v16
 
     new-instance v11, Lcom/android/server/pm/PackageManagerService$PrepareFailure;
 
@@ -47264,7 +47252,7 @@
     :catchall_33
     move-exception v0
 
-    move-object/from16 v36, v10
+    move-object/from16 v33, v10
 
     move-object v10, v0
 
@@ -47273,11 +47261,11 @@
     :catchall_34
     move-exception v0
 
-    move-object/from16 v43, v14
+    move-object/from16 v47, v14
 
-    move/from16 v42, v33
+    move/from16 v44, v34
 
-    move/from16 v33, v16
+    move/from16 v34, v16
 
     move-object v10, v0
 
@@ -47297,7 +47285,7 @@
 
     move-object v2, v0
 
-    move/from16 v39, v7
+    move/from16 v38, v7
 
     goto :goto_47
 
@@ -47311,18 +47299,18 @@
     :catchall_37
     move-exception v0
 
-    move-object/from16 v43, v14
+    move-object/from16 v47, v14
 
-    move/from16 v42, v33
+    move/from16 v44, v34
 
-    move/from16 v33, v16
+    move/from16 v34, v16
 
     move-object v2, v0
 
-    move/from16 v39, v7
+    move/from16 v38, v7
 
     :goto_47
-    if-eqz v37, :cond_75
+    if-eqz v36, :cond_75
 
     invoke-virtual/range {v31 .. v31}, Lcom/android/server/pm/PackageManagerService$PackageFreezer;->close()V
 
@@ -47332,19 +47320,19 @@
     :catch_8
     move-exception v0
 
-    move/from16 v47, v3
-
-    move/from16 v34, v4
+    move/from16 v46, v3
 
     move-object/from16 v30, v13
 
-    move-object/from16 v43, v14
+    move-object/from16 v47, v14
 
-    move/from16 v39, v32
+    move/from16 v38, v32
 
-    move/from16 v42, v33
+    move/from16 v44, v34
 
-    move/from16 v33, v31
+    move/from16 v32, v4
+
+    move/from16 v34, v31
 
     move-object v2, v0
 
@@ -47369,9 +47357,11 @@
     throw v3
 
     :cond_76
-    move/from16 v47, v3
+    move/from16 v46, v3
 
-    move/from16 v34, v4
+    move/from16 v38, v32
+
+    move/from16 v32, v4
 
     new-instance v2, Lcom/android/server/pm/PackageManagerService$PrepareFailure;
 
@@ -47386,17 +47376,17 @@
     :catch_9
     move-exception v0
 
-    move/from16 v34, v4
-
     move-object/from16 v30, v13
 
-    move-object/from16 v43, v14
+    move-object/from16 v47, v14
 
-    move/from16 v39, v32
+    move/from16 v38, v32
 
-    move/from16 v42, v33
+    move/from16 v44, v34
 
-    move/from16 v33, v31
+    move/from16 v32, v4
+
+    move/from16 v34, v31
 
     move-object v2, v0
 
@@ -47418,73 +47408,73 @@
     :catchall_38
     move-exception v0
 
-    move/from16 v34, v4
-
     move-object/from16 v30, v13
 
-    move-object/from16 v43, v14
+    move-object/from16 v47, v14
 
-    move/from16 v39, v32
+    move/from16 v38, v32
 
-    move/from16 v42, v33
+    move/from16 v44, v34
 
-    move/from16 v33, v31
+    move/from16 v32, v4
+
+    move/from16 v34, v31
 
     move-object v2, v0
 
     move-object/from16 v5, v30
 
-    move/from16 v6, v34
+    move/from16 v6, v32
 
-    move/from16 v7, v39
+    move/from16 v7, v38
 
     goto :goto_49
 
     :catchall_39
     move-exception v0
 
-    move/from16 v34, v4
-
     move-object/from16 v30, v13
 
-    move-object/from16 v43, v14
+    move-object/from16 v47, v14
 
     move-object/from16 v35, v15
 
-    move/from16 v39, v32
+    move/from16 v38, v32
 
-    move/from16 v42, v33
+    move/from16 v44, v34
 
-    move/from16 v33, v31
+    move/from16 v32, v4
+
+    move/from16 v34, v31
 
     move-object v2, v0
 
     move-object/from16 v5, v30
 
-    move/from16 v6, v34
+    move/from16 v6, v32
 
-    move/from16 v7, v39
+    move/from16 v7, v38
 
     goto :goto_49
 
     :catchall_3a
     move-exception v0
 
-    move/from16 v33, v4
+    move/from16 v34, v4
 
-    move/from16 v39, v7
+    move/from16 v38, v7
 
-    move/from16 v42, v12
+    move/from16 v44, v12
 
     move-object/from16 v30, v13
 
-    move-object/from16 v43, v14
+    move-object/from16 v47, v14
 
     move-object/from16 v35, v15
 
     move-object v2, v0
 
-    move/from16 v6, v21
+    move/from16 v6, v22
 
     move-object/from16 v5, v30
 
@@ -47506,11 +47496,11 @@
     :catch_a
     move-exception v0
 
-    move/from16 v33, v4
+    move/from16 v34, v4
 
-    move-object/from16 v43, v10
+    move-object/from16 v47, v10
 
-    move/from16 v42, v12
+    move/from16 v44, v12
 
     move-object/from16 v35, v15
 
@@ -47528,13 +47518,13 @@
     :catchall_3c
     move-exception v0
 
-    move/from16 v33, v4
+    move/from16 v34, v4
 
-    move-object/from16 v21, v9
+    move-object/from16 v22, v9
 
     move/from16 v27, v11
 
-    move/from16 v42, v12
+    move/from16 v44, v12
 
     move-object/from16 v26, v13
 
@@ -47549,13 +47539,13 @@
     :catch_b
     move-exception v0
 
-    move/from16 v33, v4
+    move/from16 v34, v4
 
-    move-object/from16 v21, v9
+    move-object/from16 v22, v9
 
     move/from16 v27, v11
 
-    move/from16 v42, v12
+    move/from16 v44, v12
 
     move-object/from16 v26, v13
 
@@ -77299,7 +77289,7 @@
 
     iget-object v0, p0, Lcom/android/server/pm/PackageManagerService;->mContext:Landroid/content/Context;
 
-    const v1, 0x1040159
+    const v1, 0x104015a
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -77559,7 +77549,7 @@
 
     iget-object v0, p0, Lcom/android/server/pm/PackageManagerService;->mContext:Landroid/content/Context;
 
-    const v1, 0x104015c
+    const v1, 0x104015d
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -78722,7 +78712,7 @@
 
     iget-object v0, p0, Lcom/android/server/pm/PackageManagerService;->mContext:Landroid/content/Context;
 
-    const v1, 0x104018a
+    const v1, 0x104018b
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -83269,7 +83259,7 @@
 
     iget-object v0, p0, Lcom/android/server/pm/PackageManagerService;->mContext:Landroid/content/Context;
 
-    const v1, 0x1040169
+    const v1, 0x104016a
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -83474,7 +83464,7 @@
 
     iget-object v0, p0, Lcom/android/server/pm/PackageManagerService;->mContext:Landroid/content/Context;
 
-    const v1, 0x104016a
+    const v1, 0x104016b
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -83852,7 +83842,7 @@
 
     iget-object v0, p0, Lcom/android/server/pm/PackageManagerService;->mContext:Landroid/content/Context;
 
-    const v1, 0x104016c
+    const v1, 0x104016d
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

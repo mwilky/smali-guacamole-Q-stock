@@ -37,6 +37,8 @@
 
 .field public static final enum oneplus_alertslider_manager:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
+.field public static final enum oneplus_antiburn_manager:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
+
 .field public static final enum oneplus_appbootmanager:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
 .field public static final enum oneplus_apperror_dialog:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
@@ -954,7 +956,17 @@
 
     sput-object v0, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_op_instant_app:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
-    const/16 v0, 0x4d
+    new-instance v0, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
+
+    const-string v14, "oneplus_antiburn_manager"
+
+    const/16 v15, 0x4d
+
+    invoke-direct {v0, v14, v15}, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_antiburn_manager:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
+
+    const/16 v0, 0x4e
 
     new-array v0, v0, [Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
@@ -1391,6 +1403,12 @@
     sget-object v1, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_op_instant_app:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
     const/16 v2, 0x4c
+
+    aput-object v1, v0, v2
+
+    sget-object v1, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_antiburn_manager:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
+
+    const/16 v2, 0x4d
 
     aput-object v1, v0, v2
 

@@ -152,7 +152,7 @@
 
     const/4 v6, 0x1
 
-    const v7, 0x10406b3
+    const v7, 0x10406b4
 
     const/4 v12, 0x0
 
@@ -240,7 +240,7 @@
     goto :goto_0
 
     :cond_1
-    const v5, 0x10406b2
+    const v5, 0x10406b3
 
     invoke-virtual {v11, v5}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 

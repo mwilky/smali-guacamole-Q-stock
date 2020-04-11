@@ -3942,7 +3942,7 @@
 
     move-result-object v1
 
-    const v2, 0x1040167
+    const v2, 0x1040168
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -6260,7 +6260,7 @@
 
     move-result-object v0
 
-    const v1, 0x1040190
+    const v1, 0x1040191
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -15100,7 +15100,7 @@
 
     iget-object v7, p0, Lcom/android/server/devicepolicy/DevicePolicyManagerService;->mContext:Landroid/content/Context;
 
-    const v8, 0x1040459
+    const v8, 0x104045a
 
     invoke-virtual {v7, v8}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -15112,7 +15112,7 @@
 
     iget-object v7, p0, Lcom/android/server/devicepolicy/DevicePolicyManagerService;->mContext:Landroid/content/Context;
 
-    const v9, 0x1040458
+    const v9, 0x1040459
 
     invoke-virtual {v7, v9}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -15273,7 +15273,7 @@
 
     iget-object v1, p0, Lcom/android/server/devicepolicy/DevicePolicyManagerService;->mContext:Landroid/content/Context;
 
-    const v2, 0x10407b8
+    const v2, 0x10407b9
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -36106,7 +36106,7 @@
     :try_start_3
     iget-object v0, v7, Lcom/android/server/devicepolicy/DevicePolicyManagerService;->mContext:Landroid/content/Context;
 
-    const v1, 0x10407bb
+    const v1, 0x10407bc
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

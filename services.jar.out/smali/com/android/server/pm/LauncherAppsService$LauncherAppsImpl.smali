@@ -233,7 +233,7 @@
     return-void
 .end method
 
-.method static synthetic access$100(Lcom/android/server/pm/LauncherAppsService$LauncherAppsImpl;)Lcom/android/server/pm/LauncherAppsService$LauncherAppsImpl$PackageCallbackList;
+.method static synthetic access$200(Lcom/android/server/pm/LauncherAppsService$LauncherAppsImpl;)Lcom/android/server/pm/LauncherAppsService$LauncherAppsImpl$PackageCallbackList;
     .locals 1
 
     iget-object v0, p0, Lcom/android/server/pm/LauncherAppsService$LauncherAppsImpl;->mListeners:Lcom/android/server/pm/LauncherAppsService$LauncherAppsImpl$PackageCallbackList;
@@ -241,7 +241,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$200(Lcom/android/server/pm/LauncherAppsService$LauncherAppsImpl;Landroid/os/UserHandle;Landroid/os/UserHandle;Ljava/lang/String;)Z
+.method static synthetic access$300(Lcom/android/server/pm/LauncherAppsService$LauncherAppsImpl;Landroid/os/UserHandle;Landroid/os/UserHandle;Ljava/lang/String;)Z
     .locals 1
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/server/pm/LauncherAppsService$LauncherAppsImpl;->isEnabledProfileOf(Landroid/os/UserHandle;Landroid/os/UserHandle;Ljava/lang/String;)Z
@@ -251,7 +251,7 @@
     return v0
 .end method
 
-.method static synthetic access$300(Lcom/android/server/pm/LauncherAppsService$LauncherAppsImpl;)Landroid/content/pm/ShortcutServiceInternal;
+.method static synthetic access$400(Lcom/android/server/pm/LauncherAppsService$LauncherAppsImpl;)Landroid/content/pm/ShortcutServiceInternal;
     .locals 1
 
     iget-object v0, p0, Lcom/android/server/pm/LauncherAppsService$LauncherAppsImpl;->mShortcutServiceInternal:Landroid/content/pm/ShortcutServiceInternal;
@@ -640,7 +640,7 @@
 
     move-result v4
 
-    if-eqz v4, :cond_3
+    if-eqz v4, :cond_4
 
     iget-object v4, v1, Landroid/content/pm/PackageParser$Package;->codePath:Ljava/lang/String;
 
@@ -648,14 +648,17 @@
 
     move-result v4
 
-    if-eqz v4, :cond_3
+    if-nez v4, :cond_3
 
-    return v2
+    invoke-static {p1}, Lcom/android/server/pm/OpReserveAppInjector;->checkAppHasDeleted(Ljava/lang/String;)Z
 
-    :cond_3
-    iget-object v4, p0, Lcom/android/server/pm/LauncherAppsService$LauncherAppsImpl;->mLauncherIconWhiteList:Ljava/util/List;
+    move-result v4
 
-    if-eqz v4, :cond_4
+    if-nez v4, :cond_3
+
+    invoke-static {}, Lcom/android/server/pm/LauncherAppsService;->access$100()Ljava/util/List;
+
+    move-result-object v4
 
     invoke-interface {v4, p1}, Ljava/util/List;->contains(Ljava/lang/Object;)Z
 
@@ -663,9 +666,23 @@
 
     if-eqz v4, :cond_4
 
+    :cond_3
     return v2
 
     :cond_4
+    iget-object v4, p0, Lcom/android/server/pm/LauncherAppsService$LauncherAppsImpl;->mLauncherIconWhiteList:Ljava/util/List;
+
+    if-eqz v4, :cond_5
+
+    invoke-interface {v4, p1}, Ljava/util/List;->contains(Ljava/lang/Object;)Z
+
+    move-result v4
+
+    if-eqz v4, :cond_5
+
+    return v2
+
+    :cond_5
     return v3
 .end method
 

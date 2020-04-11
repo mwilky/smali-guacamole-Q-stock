@@ -1518,7 +1518,7 @@
     :cond_3
     iput v8, v0, Lcom/android/server/usb/UsbPortManager;->mIsPortContaminatedNotificationId:I
 
-    const v5, 0x104071e
+    const v5, 0x104071f
 
     invoke-virtual {v2, v5}, Landroid/content/res/Resources;->getText(I)Ljava/lang/CharSequence;
 
@@ -1526,7 +1526,7 @@
 
     sget-object v8, Lcom/android/internal/notification/SystemNotificationChannels;->ALERTS:Ljava/lang/String;
 
-    const v10, 0x104071d
+    const v10, 0x104071e
 
     invoke-virtual {v2, v10}, Landroid/content/res/Resources;->getText(I)Ljava/lang/CharSequence;
 
@@ -1667,7 +1667,7 @@
 
     iput v5, v0, Lcom/android/server/usb/UsbPortManager;->mIsPortContaminatedNotificationId:I
 
-    const v5, 0x1040720
+    const v5, 0x1040721
 
     invoke-virtual {v2, v5}, Landroid/content/res/Resources;->getText(I)Ljava/lang/CharSequence;
 
@@ -1675,7 +1675,7 @@
 
     sget-object v8, Lcom/android/internal/notification/SystemNotificationChannels;->ALERTS:Ljava/lang/String;
 
-    const v10, 0x104071f
+    const v10, 0x1040720
 
     invoke-virtual {v2, v10}, Landroid/content/res/Resources;->getText(I)Ljava/lang/CharSequence;
 

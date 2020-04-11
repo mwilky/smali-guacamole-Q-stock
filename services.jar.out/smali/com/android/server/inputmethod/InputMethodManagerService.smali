@@ -576,7 +576,7 @@
 
     iget-object v1, p0, Lcom/android/server/inputmethod/InputMethodManagerService;->mContext:Landroid/content/Context;
 
-    const v3, 0x10406c3
+    const v3, 0x10406c4
 
     invoke-virtual {v1, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -7144,7 +7144,7 @@
 
     iget-object v7, p0, Lcom/android/server/inputmethod/InputMethodManagerService;->mRes:Landroid/content/res/Resources;
 
-    const v8, 0x1040664
+    const v8, 0x1040665
 
     invoke-virtual {v7, v8}, Landroid/content/res/Resources;->getText(I)Ljava/lang/CharSequence;
 
@@ -13439,7 +13439,7 @@
 
     iget-object v0, v1, Lcom/android/server/inputmethod/InputMethodManagerService;->mCurIntent:Landroid/content/Intent;
 
-    const v11, 0x1040315
+    const v11, 0x1040316
 
     const-string v12, "android.intent.extra.client_label"
 

@@ -393,7 +393,7 @@
 
     iget-object v9, p0, Lcom/android/server/print/UserState;->mContext:Landroid/content/Context;
 
-    const v10, 0x104060b
+    const v10, 0x104060c
 
     invoke-virtual {v9, v10}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -2456,7 +2456,7 @@
 
     iget-object v4, p0, Lcom/android/server/print/UserState;->mContext:Landroid/content/Context;
 
-    const v5, 0x104060b
+    const v5, 0x104060c
 
     invoke-virtual {v4, v5}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

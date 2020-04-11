@@ -212,7 +212,7 @@
 
     move-result-object v0
 
-    const v1, 0x1040306
+    const v1, 0x1040307
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -979,7 +979,7 @@
 
     const-string v12, "android.intent.extra.client_label"
 
-    const v13, 0x1040757
+    const v13, 0x1040758
 
     invoke-virtual {v9, v12, v13}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 

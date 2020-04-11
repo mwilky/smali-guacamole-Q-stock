@@ -810,7 +810,7 @@
 
     invoke-virtual {v14, v3}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
 
-    const v3, 0x10403b7
+    const v3, 0x10403b8
 
     invoke-virtual {v9, v3}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
@@ -822,7 +822,7 @@
 
     move-result v3
 
-    const v4, 0x10403b5
+    const v4, 0x10403b6
 
     if-eqz v3, :cond_1
 
@@ -835,7 +835,7 @@
     goto :goto_0
 
     :cond_0
-    const v4, 0x10403b6
+    const v4, 0x10403b7
 
     :goto_0
     invoke-virtual {v9, v4}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
@@ -1488,7 +1488,7 @@
 
     new-instance v4, Landroid/app/NotificationChannel;
 
-    const v5, 0x1040202
+    const v5, 0x1040203
 
     invoke-virtual {v0, v5}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

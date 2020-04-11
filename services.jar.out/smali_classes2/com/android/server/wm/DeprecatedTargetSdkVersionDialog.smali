@@ -35,7 +35,7 @@
 
     move-result-object v1
 
-    const v2, 0x1040200
+    const v2, 0x1040201
 
     invoke-virtual {p2, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -71,7 +71,7 @@
 
     if-eqz v4, :cond_0
 
-    const v5, 0x10401ff
+    const v5, 0x1040200
 
     new-instance v6, Lcom/android/server/wm/-$$Lambda$DeprecatedTargetSdkVersionDialog$ZkWArfvd086vsF78_zwSd67uSUs;
 

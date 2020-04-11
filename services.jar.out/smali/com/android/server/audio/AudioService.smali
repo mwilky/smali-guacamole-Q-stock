@@ -21963,7 +21963,7 @@
 
     const/4 v1, 0x0
 
-    const v2, 0x104073f
+    const v2, 0x1040740
 
     goto :goto_0
 
@@ -21976,7 +21976,7 @@
 
     const/4 v1, 0x1
 
-    const v2, 0x1040740
+    const v2, 0x1040741
 
     :goto_0
     invoke-direct {p0, v0, p1}, Lcom/android/server/audio/AudioService;->maybeVibrate(Landroid/os/VibrationEffect;Ljava/lang/String;)Z

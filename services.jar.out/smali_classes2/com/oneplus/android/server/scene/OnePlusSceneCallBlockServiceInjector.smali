@@ -39,8 +39,8 @@
     return-void
 .end method
 
-.method public static isCallBlockedWithUid(Ljava/lang/String;ILandroid/content/Intent;Landroid/content/pm/ResolveInfo;I)Z
-    .locals 6
+.method public static isCallBlockedWithUid(Ljava/lang/String;ILandroid/content/Intent;Landroid/content/pm/ResolveInfo;IZ)Z
+    .locals 7
 
     invoke-static {}, Lcom/oneplus/android/server/scene/OnePlusSceneCallBlockServiceInjector;->init()V
 
@@ -56,7 +56,9 @@
 
     move v5, p4
 
-    invoke-interface/range {v0 .. v5}, Lcom/oneplus/android/server/scene/IOnePlusSceneCallBlockService;->isCallBlockedWithUid(Ljava/lang/String;ILandroid/content/Intent;Landroid/content/pm/ResolveInfo;I)Z
+    move v6, p5
+
+    invoke-interface/range {v0 .. v6}, Lcom/oneplus/android/server/scene/IOnePlusSceneCallBlockService;->isCallBlockedWithUid(Ljava/lang/String;ILandroid/content/Intent;Landroid/content/pm/ResolveInfo;IZ)Z
 
     move-result v0
 

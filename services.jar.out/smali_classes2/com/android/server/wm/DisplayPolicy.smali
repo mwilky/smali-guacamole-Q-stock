@@ -5691,23 +5691,23 @@
 
     const/16 v3, 0x7d0
 
-    if-eq v2, v3, :cond_9
+    if-eq v2, v3, :cond_a
 
     const/16 v4, 0x7dd
 
-    if-eq v2, v4, :cond_8
+    if-eq v2, v4, :cond_9
 
     const/16 v4, 0x7df
 
-    if-eq v2, v4, :cond_7
+    if-eq v2, v4, :cond_8
 
     const/16 v4, 0x7e7
 
-    if-eq v2, v4, :cond_8
+    if-eq v2, v4, :cond_9
 
     const/16 v1, 0x7f4
 
-    if-eq v2, v1, :cond_6
+    if-eq v2, v1, :cond_7
 
     const/16 v1, 0x7d5
 
@@ -5715,7 +5715,7 @@
 
     const/16 v1, 0x7d6
 
-    if-eq v2, v1, :cond_7
+    if-eq v2, v1, :cond_8
 
     goto :goto_2
 
@@ -5764,7 +5764,7 @@
 
     move-result v1
 
-    if-eqz v1, :cond_a
+    if-eqz v1, :cond_6
 
     iget v1, p2, Landroid/view/WindowManager$LayoutParams;->flags:I
 
@@ -5774,9 +5774,16 @@
 
     iput v1, p2, Landroid/view/WindowManager$LayoutParams;->flags:I
 
+    :cond_6
+    iget v1, p2, Landroid/view/WindowManager$LayoutParams;->flags:I
+
+    or-int/lit8 v1, v1, 0x10
+
+    iput v1, p2, Landroid/view/WindowManager$LayoutParams;->flags:I
+
     goto :goto_2
 
-    :cond_6
+    :cond_7
     iget v1, p2, Landroid/view/WindowManager$LayoutParams;->flags:I
 
     or-int/lit8 v1, v1, 0x8
@@ -5785,7 +5792,7 @@
 
     goto :goto_2
 
-    :cond_7
+    :cond_8
     iget v1, p2, Landroid/view/WindowManager$LayoutParams;->flags:I
 
     or-int/lit8 v1, v1, 0x18
@@ -5802,12 +5809,12 @@
 
     goto :goto_2
 
-    :cond_8
+    :cond_9
     iput v1, p2, Landroid/view/WindowManager$LayoutParams;->layoutInDisplayCutoutMode:I
 
     goto :goto_2
 
-    :cond_9
+    :cond_a
     iget-object v1, p0, Lcom/android/server/wm/DisplayPolicy;->mService:Lcom/android/server/wm/WindowManagerService;
 
     iget-object v1, v1, Lcom/android/server/wm/WindowManagerService;->mPolicy:Lcom/android/server/policy/WindowManagerPolicy;
@@ -5816,7 +5823,7 @@
 
     move-result v1
 
-    if-eqz v1, :cond_a
+    if-eqz v1, :cond_b
 
     iget v1, p2, Landroid/view/WindowManager$LayoutParams;->flags:I
 
@@ -5832,11 +5839,11 @@
 
     iput v1, p2, Landroid/view/WindowManager$LayoutParams;->privateFlags:I
 
-    :cond_a
+    :cond_b
     :goto_2
     iget v1, p2, Landroid/view/WindowManager$LayoutParams;->type:I
 
-    if-eq v1, v3, :cond_b
+    if-eq v1, v3, :cond_c
 
     iget v1, p2, Landroid/view/WindowManager$LayoutParams;->privateFlags:I
 
@@ -5844,7 +5851,7 @@
 
     iput v1, p2, Landroid/view/WindowManager$LayoutParams;->privateFlags:I
 
-    :cond_b
+    :cond_c
     return-void
 .end method
 

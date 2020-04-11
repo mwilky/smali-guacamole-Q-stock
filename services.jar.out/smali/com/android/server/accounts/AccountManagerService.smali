@@ -2406,7 +2406,7 @@
 
     aput-object v4, v3, v5
 
-    const v4, 0x104054e
+    const v4, 0x104054f
 
     invoke-virtual {v2, v4, v3}, Landroid/content/Context;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -2639,7 +2639,7 @@
 
     invoke-virtual {v10, v4}, Landroid/content/Intent;->addCategory(Ljava/lang/String;)Landroid/content/Intent;
 
-    const v4, 0x1040494
+    const v4, 0x1040495
 
     invoke-virtual {v0, v4}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 

@@ -1212,7 +1212,7 @@
 
     const/4 v7, 0x3
 
-    const v8, 0x1040209
+    const v8, 0x104020a
 
     if-eqz v6, :cond_6
 
@@ -1446,7 +1446,7 @@
 
     move-result-object v8
 
-    const v9, 0x104020a
+    const v9, 0x104020b
 
     invoke-virtual {v8, v9}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 

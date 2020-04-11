@@ -29,6 +29,16 @@
 
 
 # static fields
+.field private static final ALLOW_ADD_SYSTEM_WINDOW_LIST:Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/List<",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+.end field
+
 .field private static final DEFAULT_DIM_AMOUNT_DEAD_WINDOW:F = 0.5f
 
 .field static final LEGACY_POLICY_VISIBILITY:I = 0x1
@@ -314,7 +324,21 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 1
+    .locals 2
+
+    const-string v0, "com.heytap.speechassist"
+
+    const-string v1, "com.android.dialer"
+
+    filled-new-array {v0, v1}, [Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {v0}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
+
+    move-result-object v0
+
+    sput-object v0, Lcom/android/server/wm/WindowState;->ALLOW_ADD_SYSTEM_WINDOW_LIST:Ljava/util/List;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -580,10 +604,30 @@
 
     iput v10, v1, Lcom/android/server/wm/WindowState;->mOwnerUid:I
 
+    if-eqz v5, :cond_0
+
+    sget-object v11, Lcom/android/server/wm/WindowState;->ALLOW_ADD_SYSTEM_WINDOW_LIST:Ljava/util/List;
+
+    iget-object v12, v5, Landroid/view/WindowManager$LayoutParams;->packageName:Ljava/lang/String;
+
+    invoke-interface {v11, v12}, Ljava/util/List;->contains(Ljava/lang/Object;)Z
+
+    move-result v11
+
+    if-eqz v11, :cond_0
+
+    iput-boolean v0, v1, Lcom/android/server/wm/WindowState;->mOwnerCanAddInternalSystemWindow:Z
+
+    move/from16 v11, p11
+
+    goto :goto_0
+
+    :cond_0
     move/from16 v11, p11
 
     iput-boolean v11, v1, Lcom/android/server/wm/WindowState;->mOwnerCanAddInternalSystemWindow:Z
 
+    :goto_0
     new-instance v12, Lcom/android/server/wm/WindowState$WindowId;
 
     invoke-direct {v12, v1, v6}, Lcom/android/server/wm/WindowState$WindowId;-><init>(Lcom/android/server/wm/WindowState;Lcom/android/server/wm/WindowState$1;)V
@@ -638,7 +682,7 @@
 
     const-string v0, "WindowManager"
 
-    if-eqz v6, :cond_0
+    if-eqz v6, :cond_1
 
     new-instance v6, Ljava/lang/StringBuilder;
 
@@ -688,7 +732,7 @@
 
     invoke-static {v0, v6}, Landroid/util/Slog;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    :cond_0
+    :cond_1
     :try_start_0
     invoke-interface/range {p3 .. p3}, Landroid/view/IWindow;->asBinder()Landroid/os/IBinder;
 
@@ -710,7 +754,7 @@
 
     const/16 v7, 0x3e8
 
-    if-lt v6, v7, :cond_6
+    if-lt v6, v7, :cond_7
 
     iget-object v6, v1, Lcom/android/server/wm/WindowState;->mAttrs:Landroid/view/WindowManager$LayoutParams;
 
@@ -718,7 +762,7 @@
 
     const/16 v7, 0x7cf
 
-    if-gt v6, v7, :cond_6
+    if-gt v6, v7, :cond_7
 
     iget-object v6, v1, Lcom/android/server/wm/WindowState;->mPolicy:Lcom/android/server/policy/WindowManagerPolicy;
 
@@ -750,7 +794,7 @@
 
     sget-boolean v7, Lcom/android/server/wm/WindowManagerDebugConfig;->DEBUG_ADD_REMOVE:Z
 
-    if-eqz v7, :cond_1
+    if-eqz v7, :cond_2
 
     new-instance v7, Ljava/lang/StringBuilder;
 
@@ -774,7 +818,7 @@
 
     invoke-static {v0, v6}, Landroid/util/Slog;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    :cond_1
+    :cond_2
     sget-object v0, Lcom/android/server/wm/WindowState;->sWindowSubLayerComparator:Ljava/util/Comparator;
 
     invoke-virtual {v4, v1, v0}, Lcom/android/server/wm/WindowState;->addChild(Lcom/android/server/wm/WindowContainer;Ljava/util/Comparator;)V
@@ -785,16 +829,16 @@
 
     const/16 v6, 0x3eb
 
-    if-eq v0, v6, :cond_2
+    if-eq v0, v6, :cond_3
 
     const/4 v0, 0x1
 
-    goto :goto_0
+    goto :goto_1
 
-    :cond_2
+    :cond_3
     const/4 v0, 0x0
 
-    :goto_0
+    :goto_1
     iput-boolean v0, v1, Lcom/android/server/wm/WindowState;->mLayoutAttached:Z
 
     iget-object v0, v4, Lcom/android/server/wm/WindowState;->mAttrs:Landroid/view/WindowManager$LayoutParams;
@@ -803,7 +847,7 @@
 
     const/16 v6, 0x7db
 
-    if-eq v0, v6, :cond_4
+    if-eq v0, v6, :cond_5
 
     iget-object v0, v4, Lcom/android/server/wm/WindowState;->mAttrs:Landroid/view/WindowManager$LayoutParams;
 
@@ -811,20 +855,20 @@
 
     const/16 v6, 0x7dc
 
-    if-ne v0, v6, :cond_3
-
-    goto :goto_1
-
-    :cond_3
-    const/4 v0, 0x0
+    if-ne v0, v6, :cond_4
 
     goto :goto_2
 
     :cond_4
-    :goto_1
+    const/4 v0, 0x0
+
+    goto :goto_3
+
+    :cond_5
+    :goto_2
     const/4 v0, 0x1
 
-    :goto_2
+    :goto_3
     iput-boolean v0, v1, Lcom/android/server/wm/WindowState;->mIsImWindow:Z
 
     iget-object v0, v4, Lcom/android/server/wm/WindowState;->mAttrs:Landroid/view/WindowManager$LayoutParams;
@@ -833,21 +877,21 @@
 
     const/16 v6, 0x7dd
 
-    if-ne v0, v6, :cond_5
+    if-ne v0, v6, :cond_6
 
     const/4 v0, 0x1
 
-    goto :goto_3
-
-    :cond_5
-    const/4 v0, 0x0
-
-    :goto_3
-    iput-boolean v0, v1, Lcom/android/server/wm/WindowState;->mIsWallpaper:Z
-
-    goto :goto_7
+    goto :goto_4
 
     :cond_6
+    const/4 v0, 0x0
+
+    :goto_4
+    iput-boolean v0, v1, Lcom/android/server/wm/WindowState;->mIsWallpaper:Z
+
+    goto :goto_8
+
+    :cond_7
     iget-object v0, v1, Lcom/android/server/wm/WindowState;->mPolicy:Lcom/android/server/policy/WindowManagerPolicy;
 
     invoke-interface {v0, v1}, Lcom/android/server/policy/WindowManagerPolicy;->getWindowLayerLw(Lcom/android/server/policy/WindowManagerPolicy$WindowState;)I
@@ -876,7 +920,7 @@
 
     const/16 v6, 0x7db
 
-    if-eq v0, v6, :cond_8
+    if-eq v0, v6, :cond_9
 
     iget-object v0, v1, Lcom/android/server/wm/WindowState;->mAttrs:Landroid/view/WindowManager$LayoutParams;
 
@@ -884,20 +928,20 @@
 
     const/16 v6, 0x7dc
 
-    if-ne v0, v6, :cond_7
-
-    goto :goto_4
-
-    :cond_7
-    const/4 v0, 0x0
+    if-ne v0, v6, :cond_8
 
     goto :goto_5
 
     :cond_8
-    :goto_4
+    const/4 v0, 0x0
+
+    goto :goto_6
+
+    :cond_9
+    :goto_5
     const/4 v0, 0x1
 
-    :goto_5
+    :goto_6
     iput-boolean v0, v1, Lcom/android/server/wm/WindowState;->mIsImWindow:Z
 
     iget-object v0, v1, Lcom/android/server/wm/WindowState;->mAttrs:Landroid/view/WindowManager$LayoutParams;
@@ -906,46 +950,46 @@
 
     const/16 v6, 0x7dd
 
-    if-ne v0, v6, :cond_9
+    if-ne v0, v6, :cond_a
 
     const/4 v0, 0x1
 
-    goto :goto_6
-
-    :cond_9
-    const/4 v0, 0x0
-
-    :goto_6
-    iput-boolean v0, v1, Lcom/android/server/wm/WindowState;->mIsWallpaper:Z
-
-    :goto_7
-    iget-boolean v0, v1, Lcom/android/server/wm/WindowState;->mIsImWindow:Z
-
-    if-nez v0, :cond_b
-
-    iget-boolean v0, v1, Lcom/android/server/wm/WindowState;->mIsWallpaper:Z
-
-    if-eqz v0, :cond_a
-
-    goto :goto_8
+    goto :goto_7
 
     :cond_a
     const/4 v0, 0x0
 
+    :goto_7
+    iput-boolean v0, v1, Lcom/android/server/wm/WindowState;->mIsWallpaper:Z
+
+    :goto_8
+    iget-boolean v0, v1, Lcom/android/server/wm/WindowState;->mIsImWindow:Z
+
+    if-nez v0, :cond_c
+
+    iget-boolean v0, v1, Lcom/android/server/wm/WindowState;->mIsWallpaper:Z
+
+    if-eqz v0, :cond_b
+
     goto :goto_9
 
     :cond_b
-    :goto_8
+    const/4 v0, 0x0
+
+    goto :goto_a
+
+    :cond_c
+    :goto_9
     const/4 v0, 0x1
 
-    :goto_9
+    :goto_a
     iput-boolean v0, v1, Lcom/android/server/wm/WindowState;->mIsFloatingLayer:Z
 
     invoke-static {}, Lcom/android/server/wm/OpQuickReplyInjector;->isQuickReplyRunning()Z
 
     move-result v0
 
-    if-eqz v0, :cond_c
+    if-eqz v0, :cond_d
 
     invoke-virtual/range {p0 .. p0}, Lcom/android/server/wm/WindowState;->getOwningPackage()Ljava/lang/String;
 
@@ -955,33 +999,33 @@
 
     move-result v0
 
-    if-nez v0, :cond_d
+    if-nez v0, :cond_e
 
-    :cond_c
+    :cond_d
     invoke-static/range {p0 .. p0}, Lcom/android/server/wm/OpQuickReplyInjector;->isQuickReplyIMEWin(Lcom/android/server/wm/WindowState;)Z
 
     move-result v0
 
-    if-eqz v0, :cond_e
-
-    :cond_d
-    const/4 v0, 0x1
-
-    goto :goto_a
+    if-eqz v0, :cond_f
 
     :cond_e
+    const/4 v0, 0x1
+
+    goto :goto_b
+
+    :cond_f
     const/4 v0, 0x0
 
-    :goto_a
+    :goto_b
     iput-boolean v0, v1, Lcom/android/server/wm/WindowState;->mIsQuickReplyImeWindow:Z
 
     iget-object v0, v1, Lcom/android/server/wm/WindowState;->mAppToken:Lcom/android/server/wm/AppWindowToken;
 
-    if-eqz v0, :cond_f
+    if-eqz v0, :cond_10
 
     iget-boolean v0, v0, Lcom/android/server/wm/AppWindowToken;->mShowForAllUsers:Z
 
-    if-eqz v0, :cond_f
+    if-eqz v0, :cond_10
 
     iget-object v0, v1, Lcom/android/server/wm/WindowState;->mAttrs:Landroid/view/WindowManager$LayoutParams;
 
@@ -993,7 +1037,7 @@
 
     iput v6, v0, Landroid/view/WindowManager$LayoutParams;->flags:I
 
-    :cond_f
+    :cond_10
     new-instance v0, Lcom/android/server/wm/WindowStateAnimator;
 
     invoke-direct {v0, v1}, Lcom/android/server/wm/WindowStateAnimator;-><init>(Lcom/android/server/wm/WindowState;)V
@@ -1022,16 +1066,16 @@
 
     iget-object v6, v1, Lcom/android/server/wm/WindowState;->mAppToken:Lcom/android/server/wm/AppWindowToken;
 
-    if-eqz v6, :cond_10
+    if-eqz v6, :cond_11
 
     iget-object v6, v6, Lcom/android/server/wm/AppWindowToken;->mInputApplicationHandle:Landroid/view/InputApplicationHandle;
 
-    goto :goto_b
+    goto :goto_c
 
-    :cond_10
+    :cond_11
     const/4 v6, 0x0
 
-    :goto_b
+    :goto_c
     invoke-virtual/range {p0 .. p0}, Lcom/android/server/wm/WindowState;->getDisplayId()I
 
     move-result v7

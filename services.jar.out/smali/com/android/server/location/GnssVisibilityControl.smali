@@ -215,13 +215,13 @@
 .method private static createEmergencyLocationUserNotification(Landroid/content/Context;)Landroid/app/Notification;
     .locals 6
 
-    const v0, 0x10402d3
+    const v0, 0x10402d4
 
     invoke-virtual {p0, v0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
-    const v1, 0x10402c1
+    const v1, 0x10402c2
 
     invoke-virtual {p0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

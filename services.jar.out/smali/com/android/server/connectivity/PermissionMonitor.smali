@@ -284,134 +284,6 @@
     return-object v1
 .end method
 
-.method private hasNetworkPermission(Landroid/content/pm/PackageInfo;)Z
-    .locals 1
-
-    const-string v0, "android.permission.CHANGE_NETWORK_STATE"
-
-    invoke-virtual {p0, p1, v0}, Lcom/android/server/connectivity/PermissionMonitor;->hasPermission(Landroid/content/pm/PackageInfo;Ljava/lang/String;)Z
-
-    move-result v0
-
-    return v0
-.end method
-
-.method private hasRestrictedNetworkPermission(Landroid/content/pm/PackageInfo;)Z
-    .locals 4
-
-    iget-object v0, p1, Landroid/content/pm/PackageInfo;->applicationInfo:Landroid/content/pm/ApplicationInfo;
-
-    const/4 v1, 0x1
-
-    if-eqz v0, :cond_1
-
-    iget-object v0, p1, Landroid/content/pm/PackageInfo;->applicationInfo:Landroid/content/pm/ApplicationInfo;
-
-    iget v0, v0, Landroid/content/pm/ApplicationInfo;->uid:I
-
-    const/16 v2, 0x3e8
-
-    const/16 v3, 0x1d
-
-    if-ne v0, v2, :cond_0
-
-    invoke-virtual {p0}, Lcom/android/server/connectivity/PermissionMonitor;->getDeviceFirstSdkInt()I
-
-    move-result v0
-
-    if-ge v0, v3, :cond_0
-
-    return v1
-
-    :cond_0
-    iget-object v0, p1, Landroid/content/pm/PackageInfo;->applicationInfo:Landroid/content/pm/ApplicationInfo;
-
-    iget v0, v0, Landroid/content/pm/ApplicationInfo;->targetSdkVersion:I
-
-    if-ge v0, v3, :cond_1
-
-    iget-object v0, p1, Landroid/content/pm/PackageInfo;->applicationInfo:Landroid/content/pm/ApplicationInfo;
-
-    invoke-static {v0}, Lcom/android/server/connectivity/PermissionMonitor;->isVendorApp(Landroid/content/pm/ApplicationInfo;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_1
-
-    return v1
-
-    :cond_1
-    const-string v0, "android.permission.CONNECTIVITY_INTERNAL"
-
-    invoke-virtual {p0, p1, v0}, Lcom/android/server/connectivity/PermissionMonitor;->hasPermission(Landroid/content/pm/PackageInfo;Ljava/lang/String;)Z
-
-    move-result v0
-
-    if-nez v0, :cond_3
-
-    const-string v0, "android.permission.CONNECTIVITY_USE_RESTRICTED_NETWORKS"
-
-    invoke-virtual {p0, p1, v0}, Lcom/android/server/connectivity/PermissionMonitor;->hasPermission(Landroid/content/pm/PackageInfo;Ljava/lang/String;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_2
-
-    goto :goto_0
-
-    :cond_2
-    const/4 v1, 0x0
-
-    goto :goto_1
-
-    :cond_3
-    :goto_0
-    nop
-
-    :goto_1
-    return v1
-.end method
-
-.method private hasUseBackgroundNetworksPermission(Landroid/content/pm/PackageInfo;)Z
-    .locals 1
-
-    const-string v0, "android.permission.CHANGE_NETWORK_STATE"
-
-    invoke-virtual {p0, p1, v0}, Lcom/android/server/connectivity/PermissionMonitor;->hasPermission(Landroid/content/pm/PackageInfo;Ljava/lang/String;)Z
-
-    move-result v0
-
-    if-nez v0, :cond_1
-
-    const-string v0, "android.permission.NETWORK_STACK"
-
-    invoke-virtual {p0, p1, v0}, Lcom/android/server/connectivity/PermissionMonitor;->hasPermission(Landroid/content/pm/PackageInfo;Ljava/lang/String;)Z
-
-    move-result v0
-
-    if-nez v0, :cond_1
-
-    invoke-direct {p0, p1}, Lcom/android/server/connectivity/PermissionMonitor;->hasRestrictedNetworkPermission(Landroid/content/pm/PackageInfo;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    goto :goto_0
-
-    :cond_0
-    const/4 v0, 0x0
-
-    goto :goto_1
-
-    :cond_1
-    :goto_0
-    const/4 v0, 0x1
-
-    :goto_1
-    return v0
-.end method
-
 .method private intersectUids(Ljava/util/Set;Ljava/util/Set;)Ljava/util/Set;
     .locals 8
     .annotation system Ldalvik/annotation/Signature;
@@ -1045,8 +917,22 @@
     return-object v0
 .end method
 
+.method hasNetworkPermission(Landroid/content/pm/PackageInfo;)Z
+    .locals 1
+    .annotation build Lcom/android/internal/annotations/VisibleForTesting;
+    .end annotation
+
+    const-string v0, "android.permission.CHANGE_NETWORK_STATE"
+
+    invoke-virtual {p0, p1, v0}, Lcom/android/server/connectivity/PermissionMonitor;->hasPermission(Landroid/content/pm/PackageInfo;Ljava/lang/String;)Z
+
+    move-result v0
+
+    return v0
+.end method
+
 .method hasPermission(Landroid/content/pm/PackageInfo;Ljava/lang/String;)Z
-    .locals 6
+    .locals 3
     .annotation build Lcom/android/internal/annotations/VisibleForTesting;
     .end annotation
 
@@ -1054,107 +940,168 @@
 
     const/4 v1, 0x0
 
-    if-eqz v0, :cond_1
+    if-eqz v0, :cond_4
 
-    iget-object v0, p1, Landroid/content/pm/PackageInfo;->requestedPermissions:[Ljava/lang/String;
+    iget-object v0, p1, Landroid/content/pm/PackageInfo;->requestedPermissionsFlags:[I
 
-    array-length v2, v0
+    if-nez v0, :cond_0
 
-    move v3, v1
-
-    :goto_0
-    if-ge v3, v2, :cond_1
-
-    aget-object v4, v0, v3
-
-    invoke-virtual {p2, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v5
-
-    if-eqz v5, :cond_0
-
-    const/4 v0, 0x1
-
-    return v0
+    goto :goto_1
 
     :cond_0
-    add-int/lit8 v3, v3, 0x1
+    iget-object v0, p1, Landroid/content/pm/PackageInfo;->requestedPermissions:[Ljava/lang/String;
+
+    invoke-static {v0, p2}, Lcom/android/internal/util/ArrayUtils;->indexOf([Ljava/lang/Object;Ljava/lang/Object;)I
+
+    move-result v0
+
+    if-ltz v0, :cond_3
+
+    iget-object v2, p1, Landroid/content/pm/PackageInfo;->requestedPermissionsFlags:[I
+
+    array-length v2, v2
+
+    if-lt v0, v2, :cond_1
 
     goto :goto_0
 
     :cond_1
+    iget-object v2, p1, Landroid/content/pm/PackageInfo;->requestedPermissionsFlags:[I
+
+    aget v2, v2, v0
+
+    and-int/lit8 v2, v2, 0x2
+
+    if-eqz v2, :cond_2
+
+    const/4 v1, 0x1
+
+    :cond_2
+    return v1
+
+    :cond_3
+    :goto_0
+    return v1
+
+    :cond_4
+    :goto_1
     return v1
 .end method
 
-.method public hasUseBackgroundNetworksPermission(I)Z
-    .locals 6
+.method hasRestrictedNetworkPermission(Landroid/content/pm/PackageInfo;)Z
+    .locals 4
+    .annotation build Lcom/android/internal/annotations/VisibleForTesting;
+    .end annotation
 
-    iget-object v0, p0, Lcom/android/server/connectivity/PermissionMonitor;->mPackageManager:Landroid/content/pm/PackageManager;
+    iget-object v0, p1, Landroid/content/pm/PackageInfo;->applicationInfo:Landroid/content/pm/ApplicationInfo;
 
-    invoke-virtual {v0, p1}, Landroid/content/pm/PackageManager;->getPackagesForUid(I)[Ljava/lang/String;
-
-    move-result-object v0
-
-    const/4 v1, 0x0
+    const/4 v1, 0x1
 
     if-eqz v0, :cond_1
 
-    array-length v2, v0
+    iget-object v0, p1, Landroid/content/pm/PackageInfo;->applicationInfo:Landroid/content/pm/ApplicationInfo;
 
-    if-nez v2, :cond_0
+    iget v0, v0, Landroid/content/pm/ApplicationInfo;->uid:I
 
-    goto :goto_0
+    const/16 v2, 0x3e8
 
-    :cond_0
-    :try_start_0
-    invoke-static {p1}, Landroid/os/UserHandle;->getUserId(I)I
+    const/16 v3, 0x1d
 
-    move-result v2
+    if-ne v0, v2, :cond_0
 
-    iget-object v3, p0, Lcom/android/server/connectivity/PermissionMonitor;->mPackageManager:Landroid/content/pm/PackageManager;
+    invoke-virtual {p0}, Lcom/android/server/connectivity/PermissionMonitor;->getDeviceFirstSdkInt()I
 
-    aget-object v4, v0, v1
+    move-result v0
 
-    const/16 v5, 0x1000
-
-    invoke-virtual {v3, v4, v5, v2}, Landroid/content/pm/PackageManager;->getPackageInfoAsUser(Ljava/lang/String;II)Landroid/content/pm/PackageInfo;
-
-    move-result-object v3
-
-    invoke-direct {p0, v3}, Lcom/android/server/connectivity/PermissionMonitor;->hasUseBackgroundNetworksPermission(Landroid/content/pm/PackageInfo;)Z
-
-    move-result v1
-    :try_end_0
-    .catch Landroid/content/pm/PackageManager$NameNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
+    if-ge v0, v3, :cond_0
 
     return v1
 
-    :catch_0
-    move-exception v2
+    :cond_0
+    iget-object v0, p1, Landroid/content/pm/PackageInfo;->applicationInfo:Landroid/content/pm/ApplicationInfo;
 
-    new-instance v3, Ljava/lang/StringBuilder;
+    iget v0, v0, Landroid/content/pm/ApplicationInfo;->targetSdkVersion:I
 
-    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
+    if-ge v0, v3, :cond_1
 
-    const-string v4, "NameNotFoundException "
+    iget-object v0, p1, Landroid/content/pm/PackageInfo;->applicationInfo:Landroid/content/pm/ApplicationInfo;
 
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v0}, Lcom/android/server/connectivity/PermissionMonitor;->isVendorApp(Landroid/content/pm/ApplicationInfo;)Z
 
-    aget-object v4, v0, v1
+    move-result v0
 
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v3
-
-    invoke-static {v3, v2}, Lcom/android/server/connectivity/PermissionMonitor;->loge(Ljava/lang/String;Ljava/lang/Throwable;)V
+    if-eqz v0, :cond_1
 
     return v1
 
     :cond_1
+    const-string v0, "android.permission.CONNECTIVITY_INTERNAL"
+
+    invoke-virtual {p0, p1, v0}, Lcom/android/server/connectivity/PermissionMonitor;->hasPermission(Landroid/content/pm/PackageInfo;Ljava/lang/String;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_3
+
+    const-string v0, "android.permission.NETWORK_STACK"
+
+    invoke-virtual {p0, p1, v0}, Lcom/android/server/connectivity/PermissionMonitor;->hasPermission(Landroid/content/pm/PackageInfo;Ljava/lang/String;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_3
+
+    const-string v0, "android.permission.CONNECTIVITY_USE_RESTRICTED_NETWORKS"
+
+    invoke-virtual {p0, p1, v0}, Lcom/android/server/connectivity/PermissionMonitor;->hasPermission(Landroid/content/pm/PackageInfo;Ljava/lang/String;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_2
+
+    goto :goto_0
+
+    :cond_2
+    const/4 v1, 0x0
+
+    goto :goto_1
+
+    :cond_3
     :goto_0
+    nop
+
+    :goto_1
     return v1
+.end method
+
+.method public declared-synchronized hasUseBackgroundNetworksPermission(I)Z
+    .locals 2
+
+    monitor-enter p0
+
+    :try_start_0
+    iget-object v0, p0, Lcom/android/server/connectivity/PermissionMonitor;->mApps:Ljava/util/Map;
+
+    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    invoke-interface {v0, v1}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+
+    move-result v0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    monitor-exit p0
+
+    return v0
+
+    :catchall_0
+    move-exception p1
+
+    monitor-exit p0
+
+    throw p1
 .end method
 
 .method protected highestPermissionForUid(Ljava/lang/Boolean;Ljava/lang/String;)Ljava/lang/Boolean;
@@ -1178,11 +1125,11 @@
 
     move-result-object v0
 
-    invoke-direct {p0, v0}, Lcom/android/server/connectivity/PermissionMonitor;->hasNetworkPermission(Landroid/content/pm/PackageInfo;)Z
+    invoke-virtual {p0, v0}, Lcom/android/server/connectivity/PermissionMonitor;->hasNetworkPermission(Landroid/content/pm/PackageInfo;)Z
 
     move-result v1
 
-    invoke-direct {p0, v0}, Lcom/android/server/connectivity/PermissionMonitor;->hasRestrictedNetworkPermission(Landroid/content/pm/PackageInfo;)Z
+    invoke-virtual {p0, v0}, Lcom/android/server/connectivity/PermissionMonitor;->hasRestrictedNetworkPermission(Landroid/content/pm/PackageInfo;)Z
 
     move-result v2
 
@@ -2395,11 +2342,11 @@
 
     invoke-interface {v6, v7}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
 
-    invoke-direct {p0, v4}, Lcom/android/server/connectivity/PermissionMonitor;->hasNetworkPermission(Landroid/content/pm/PackageInfo;)Z
+    invoke-virtual {p0, v4}, Lcom/android/server/connectivity/PermissionMonitor;->hasNetworkPermission(Landroid/content/pm/PackageInfo;)Z
 
     move-result v6
 
-    invoke-direct {p0, v4}, Lcom/android/server/connectivity/PermissionMonitor;->hasRestrictedNetworkPermission(Landroid/content/pm/PackageInfo;)Z
+    invoke-virtual {p0, v4}, Lcom/android/server/connectivity/PermissionMonitor;->hasRestrictedNetworkPermission(Landroid/content/pm/PackageInfo;)Z
 
     move-result v7
 

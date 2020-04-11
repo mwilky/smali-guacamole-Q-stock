@@ -256,7 +256,7 @@
 
     move-result-object v2
 
-    const v3, 0x104015d
+    const v3, 0x104015e
 
     invoke-direct {v1, v2, v3}, Lcom/android/server/infra/FrameworkResourcesServiceNameResolver;-><init>(Landroid/content/Context;I)V
 

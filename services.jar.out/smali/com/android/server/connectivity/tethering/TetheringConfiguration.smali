@@ -501,7 +501,7 @@
 .method private static getProvisioningAppNoUi(Landroid/content/res/Resources;)Ljava/lang/String;
     .locals 2
 
-    const v0, 0x1040196
+    const v0, 0x1040197
 
     :try_start_0
     invoke-virtual {p0, v0}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;

@@ -4,6 +4,9 @@
 
 
 # virtual methods
+.method public abstract checkIfNeedReport(I)V
+.end method
+
 .method public abstract checkIfNeedReport(Lcom/android/server/am/ProcessRecord;)V
 .end method
 

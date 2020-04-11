@@ -114,7 +114,7 @@
 
     new-instance v0, Lcom/android/server/infra/FrameworkResourcesServiceNameResolver;
 
-    const v1, 0x104015f
+    const v1, 0x1040160
 
     invoke-direct {v0, p1, v1}, Lcom/android/server/infra/FrameworkResourcesServiceNameResolver;-><init>(Landroid/content/Context;I)V
 

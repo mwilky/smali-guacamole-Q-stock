@@ -4,11 +4,11 @@
 
 
 # static fields
-.field private static DEBUG:Z = false
-
 .field private static final ENABLED:Z
 
 .field public static final TAG:Ljava/lang/String; = "OpMemoryTrackerInjector"
+
+.field private static sDebug:Z
 
 .field private static sOpMemoryTracker:Lcom/android/server/am/IOpMemoryTracker;
 
@@ -19,7 +19,7 @@
 
     sget-boolean v0, Landroid/os/Build;->DEBUG_ONEPLUS:Z
 
-    sput-boolean v0, Lcom/android/server/am/OpMemoryTrackerInjector;->DEBUG:Z
+    sput-boolean v0, Lcom/android/server/am/OpMemoryTrackerInjector;->sDebug:Z
 
     const/4 v0, 0x1
 
@@ -45,6 +45,28 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    return-void
+.end method
+
+.method public static checkIfNeedReport(I)V
+    .locals 1
+
+    sget-boolean v0, Lcom/android/server/am/OpMemoryTrackerInjector;->ENABLED:Z
+
+    if-nez v0, :cond_0
+
+    return-void
+
+    :cond_0
+    invoke-static {}, Lcom/android/server/am/OpMemoryTrackerInjector;->initialization()V
+
+    sget-object v0, Lcom/android/server/am/OpMemoryTrackerInjector;->sOpMemoryTracker:Lcom/android/server/am/IOpMemoryTracker;
+
+    if-eqz v0, :cond_1
+
+    invoke-interface {v0, p0}, Lcom/android/server/am/IOpMemoryTracker;->checkIfNeedReport(I)V
+
+    :cond_1
     return-void
 .end method
 

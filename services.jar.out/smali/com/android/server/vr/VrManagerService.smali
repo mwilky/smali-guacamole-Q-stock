@@ -808,7 +808,7 @@
 
     iget-object v1, p0, Lcom/android/server/vr/VrManagerService;->mContext:Landroid/content/Context;
 
-    const v4, 0x1040755
+    const v4, 0x1040756
 
     sget-object v6, Lcom/android/server/vr/VrManagerService;->sBinderChecker:Lcom/android/server/utils/ManagedApplicationService$BinderChecker;
 

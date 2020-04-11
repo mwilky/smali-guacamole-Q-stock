@@ -1716,7 +1716,7 @@
     :goto_0
     if-nez v0, :cond_2
 
-    const v3, 0x104015f
+    const v3, 0x1040160
 
     invoke-virtual {p1, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -4417,7 +4417,7 @@
 
     move-result-object v0
 
-    const v6, 0x1040170
+    const v6, 0x1040171
 
     invoke-virtual {v0, v6}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -6440,7 +6440,7 @@
 .method private startSystemCaptionsManagerService(Landroid/content/Context;)V
     .locals 3
 
-    const v0, 0x1040168
+    const v0, 0x1040169
 
     invoke-virtual {p1, v0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

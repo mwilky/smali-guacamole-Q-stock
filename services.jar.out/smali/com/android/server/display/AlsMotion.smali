@@ -166,6 +166,10 @@
 .method public start(Landroid/content/Context;Lcom/android/server/display/AlsMotion$Listener;)V
     .locals 3
 
+    iget-object v0, p0, Lcom/android/server/display/AlsMotion;->mListener:Lcom/android/server/display/AlsMotion$Listener;
+
+    if-nez v0, :cond_0
+
     iput-object p2, p0, Lcom/android/server/display/AlsMotion;->mListener:Lcom/android/server/display/AlsMotion$Listener;
 
     const-string/jumbo v0, "sensor"
@@ -184,11 +188,16 @@
 
     invoke-virtual {v0, p0, v1, v2}, Landroid/hardware/SensorManager;->registerListener(Landroid/hardware/SensorEventListener;Landroid/hardware/Sensor;I)Z
 
+    :cond_0
     return-void
 .end method
 
 .method public stop(Landroid/content/Context;)V
     .locals 2
+
+    iget-object v0, p0, Lcom/android/server/display/AlsMotion;->mListener:Lcom/android/server/display/AlsMotion$Listener;
+
+    if-eqz v0, :cond_0
 
     const-string/jumbo v0, "sensor"
 
@@ -204,5 +213,6 @@
 
     iput-object v1, p0, Lcom/android/server/display/AlsMotion;->mListener:Lcom/android/server/display/AlsMotion$Listener;
 
+    :cond_0
     return-void
 .end method

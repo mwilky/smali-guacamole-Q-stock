@@ -3358,7 +3358,7 @@
 
     iget-object v1, v1, Lcom/android/server/wm/ActivityTaskManagerService;->mUiContext:Landroid/content/Context;
 
-    const v2, 0x10406f2
+    const v2, 0x10406f3
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
@@ -3443,7 +3443,7 @@
 
     iget-object v1, v1, Lcom/android/server/wm/ActivityTaskManagerService;->mUiContext:Landroid/content/Context;
 
-    const v2, 0x10406f1
+    const v2, 0x10406f2
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
@@ -6788,7 +6788,7 @@
 
     move-result-object v2
 
-    const v6, 0x104028a
+    const v6, 0x104028b
 
     invoke-virtual {v2, v6}, Landroid/content/res/Resources;->getText(I)Ljava/lang/CharSequence;
 
@@ -6806,7 +6806,7 @@
 
     move-result-object v2
 
-    const v4, 0x1040289
+    const v4, 0x104028a
 
     invoke-virtual {v2, v4}, Landroid/content/res/Resources;->getText(I)Ljava/lang/CharSequence;
 

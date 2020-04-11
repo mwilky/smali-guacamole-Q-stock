@@ -4,7 +4,7 @@
 
 
 # virtual methods
-.method public abstract isCallBlockedWithUid(Ljava/lang/String;ILandroid/content/Intent;Landroid/content/pm/ResolveInfo;I)Z
+.method public abstract isCallBlockedWithUid(Ljava/lang/String;ILandroid/content/Intent;Landroid/content/pm/ResolveInfo;IZ)Z
 .end method
 
 .method public abstract isMutedByCallBlocker(Ljava/lang/String;Landroid/media/AudioAttributes;)Z

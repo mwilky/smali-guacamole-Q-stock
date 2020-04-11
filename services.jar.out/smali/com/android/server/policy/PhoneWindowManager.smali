@@ -60,6 +60,8 @@
 
 .field static final ENABLE_VR_HEADSET_HOME_CAPTURE:Z = true
 
+.field static HEY_TAP_PACKAGE_NAME:Ljava/lang/String; = null
+
 .field private static final KEYGUARD_FINGERPRINT_AUTHENTICATE_TIMEOUT_DURATION:I = 0x3e8
 
 .field private static final KEYGUARD_SCREENSHOT_CHORD_DELAY_MULTIPLIER:F = 2.5f
@@ -730,6 +732,10 @@
     const-string/jumbo v2, "power_long_press_with_google_assistant_hint"
 
     sput-object v2, Lcom/android/server/policy/PhoneWindowManager;->POWER_LONG_PRESS_WITH_GOOGLE_ASSISTANT_HINT:Ljava/lang/String;
+
+    const-string v2, "com.heytap.speechassist"
+
+    sput-object v2, Lcom/android/server/policy/PhoneWindowManager;->HEY_TAP_PACKAGE_NAME:Ljava/lang/String;
 
     new-array v2, v1, [I
 
@@ -15340,6 +15346,14 @@
     if-nez v2, :cond_5
 
     sget-object v2, Lcom/android/server/policy/PhoneWindowManager;->POWER_LONG_PRESS_WITH_ASSISTANT_HINT:Ljava/lang/String;
+
+    invoke-virtual {v2, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v2
+
+    if-nez v2, :cond_5
+
+    sget-object v2, Lcom/android/server/policy/PhoneWindowManager;->HEY_TAP_PACKAGE_NAME:Ljava/lang/String;
 
     invoke-virtual {v2, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
