@@ -71,7 +71,7 @@
     return-void
 .end method
 
-.method public static Va(Ljava/lang/String;)[B
+.method public static Wa(Ljava/lang/String;)[B
     .locals 0
 
     invoke-virtual {p0}, Ljava/lang/String;->toCharArray()[C
@@ -83,18 +83,6 @@
     move-result-object p0
 
     return-object p0
-.end method
-
-.method public static Zk()Lorg/bouncycastle/util/qbh;
-    .locals 2
-
-    new-instance v0, Lorg/bouncycastle/util/Strings$StringListImpl;
-
-    const/4 v1, 0x0
-
-    invoke-direct {v0, v1}, Lorg/bouncycastle/util/Strings$StringListImpl;-><init>(Lorg/bouncycastle/util/oif;)V
-
-    return-object v0
 .end method
 
 .method public static cjf([B)[C
@@ -124,6 +112,18 @@
     goto :goto_0
 
     :cond_0
+    return-object v0
+.end method
+
+.method public static cl()Lorg/bouncycastle/util/qbh;
+    .locals 2
+
+    new-instance v0, Lorg/bouncycastle/util/Strings$StringListImpl;
+
+    const/4 v1, 0x0
+
+    invoke-direct {v0, v1}, Lorg/bouncycastle/util/Strings$StringListImpl;-><init>(Lorg/bouncycastle/util/oif;)V
+
     return-object v0
 .end method
 

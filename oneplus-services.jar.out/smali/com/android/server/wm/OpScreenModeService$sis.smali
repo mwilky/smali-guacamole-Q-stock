@@ -17,13 +17,13 @@
 # static fields
 .field private static final MSG_GET_ONLINECONFIG:I = 0x1
 
-.field private static final na:I = 0x2
+.field private static final ra:I = 0x2
 
-.field private static final oa:I = 0x3
+.field private static final ta:I = 0x3
 
-.field private static final pa:I = 0x4
+.field private static final ua:I = 0x4
 
-.field private static final qa:I = 0x5
+.field private static final va:I = 0x5
 
 
 # instance fields

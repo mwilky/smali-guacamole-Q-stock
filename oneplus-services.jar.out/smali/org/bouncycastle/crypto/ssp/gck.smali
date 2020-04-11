@@ -18,7 +18,7 @@
     return-void
 .end method
 
-.method private et()[B
+.method private ot()[B
     .locals 5
 
     iget-object v0, p0, Lorg/bouncycastle/crypto/ssp/gck;->digest:Lorg/bouncycastle/crypto/qbh;
@@ -78,7 +78,7 @@
 
 
 # virtual methods
-.method public da(I)Lorg/bouncycastle/crypto/kth;
+.method public ga(I)Lorg/bouncycastle/crypto/kth;
     .locals 0
 
     invoke-virtual {p0, p1}, Lorg/bouncycastle/crypto/ssp/gck;->generateDerivedParameters(I)Lorg/bouncycastle/crypto/kth;
@@ -101,7 +101,7 @@
 
     if-gt p1, v0, :cond_0
 
-    invoke-direct {p0}, Lorg/bouncycastle/crypto/ssp/gck;->et()[B
+    invoke-direct {p0}, Lorg/bouncycastle/crypto/ssp/gck;->ot()[B
 
     move-result-object p0
 
@@ -156,7 +156,7 @@
 
     if-gt v0, v1, :cond_0
 
-    invoke-direct {p0}, Lorg/bouncycastle/crypto/ssp/gck;->et()[B
+    invoke-direct {p0}, Lorg/bouncycastle/crypto/ssp/gck;->ot()[B
 
     move-result-object p0
 

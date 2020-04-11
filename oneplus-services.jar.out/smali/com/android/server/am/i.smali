@@ -62,7 +62,7 @@
 
     if-eqz p2, :cond_0
 
-    sput-boolean v0, Lcom/android/server/am/OnePlusMemoryTracker;->IN_USING:Z
+    sput-boolean v0, Lcom/android/server/am/OnePlusMemoryTracker;->sInUsing:Z
 
     goto/16 :goto_1
 
@@ -77,7 +77,7 @@
 
     if-eqz p2, :cond_1
 
-    sput-boolean v1, Lcom/android/server/am/OnePlusMemoryTracker;->IN_USING:Z
+    sput-boolean v1, Lcom/android/server/am/OnePlusMemoryTracker;->sInUsing:Z
 
     goto/16 :goto_1
 
@@ -90,7 +90,7 @@
 
     if-eqz p2, :cond_2
 
-    invoke-static {v0}, Lcom/android/server/am/OnePlusMemoryTracker;->access$802(Z)Z
+    invoke-static {v0}, Lcom/android/server/am/OnePlusMemoryTracker;->access$602(Z)Z
 
     goto/16 :goto_1
 
@@ -103,7 +103,7 @@
 
     if-eqz p2, :cond_3
 
-    invoke-static {v1}, Lcom/android/server/am/OnePlusMemoryTracker;->access$802(Z)Z
+    invoke-static {v1}, Lcom/android/server/am/OnePlusMemoryTracker;->access$602(Z)Z
 
     goto/16 :goto_1
 
@@ -126,7 +126,7 @@
 
     invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sget-boolean p2, Lcom/android/server/am/OnePlusMemoryTracker;->IN_USING:Z
+    sget-boolean p2, Lcom/android/server/am/OnePlusMemoryTracker;->sInUsing:Z
 
     invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -144,7 +144,7 @@
 
     invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-static {}, Lcom/android/server/am/OnePlusMemoryTracker;->access$1600()Z
+    invoke-static {}, Lcom/android/server/am/OnePlusMemoryTracker;->access$900()Z
 
     move-result p2
 
@@ -164,7 +164,7 @@
 
     invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-static {}, Lcom/android/server/am/OnePlusMemoryTracker;->access$1800()Z
+    invoke-static {}, Lcom/android/server/am/OnePlusMemoryTracker;->access$1100()Z
 
     move-result p2
 
@@ -184,9 +184,7 @@
 
     invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object p2, p0, Lcom/android/server/am/i;->this$0:Lcom/android/server/am/OnePlusMemoryTracker;
-
-    invoke-static {p2}, Lcom/android/server/am/OnePlusMemoryTracker;->access$1000(Lcom/android/server/am/OnePlusMemoryTracker;)J
+    invoke-static {}, Lcom/android/server/am/OnePlusMemoryTracker;->access$200()J
 
     move-result-wide v2
 
@@ -206,9 +204,7 @@
 
     invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object p2, p0, Lcom/android/server/am/i;->this$0:Lcom/android/server/am/OnePlusMemoryTracker;
-
-    invoke-static {p2}, Lcom/android/server/am/OnePlusMemoryTracker;->access$2100(Lcom/android/server/am/OnePlusMemoryTracker;)J
+    invoke-static {}, Lcom/android/server/am/OnePlusMemoryTracker;->access$1400()J
 
     move-result-wide v2
 
@@ -228,7 +224,7 @@
 
     invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-static {}, Lcom/android/server/am/OnePlusMemoryTracker;->access$500()I
+    invoke-static {}, Lcom/android/server/am/OnePlusMemoryTracker;->access$1600()I
 
     move-result p2
 
@@ -248,7 +244,7 @@
 
     invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-static {}, Lcom/android/server/am/OnePlusMemoryTracker;->access$600()I
+    invoke-static {}, Lcom/android/server/am/OnePlusMemoryTracker;->access$1800()I
 
     move-result p2
 
@@ -272,7 +268,7 @@
 
     const/16 p2, 0x400
 
-    invoke-static {p0, p2}, Lcom/android/server/am/OnePlusMemoryTracker;->access$700(Lcom/android/server/am/OnePlusMemoryTracker;I)Ljava/util/ArrayList;
+    invoke-static {p0, p2}, Lcom/android/server/am/OnePlusMemoryTracker;->access$2200(Lcom/android/server/am/OnePlusMemoryTracker;I)Ljava/util/ArrayList;
 
     move-result-object p0
 
@@ -304,9 +300,13 @@
 
     move-result-wide p1
 
+    iget-object v2, p0, Lcom/android/server/am/i;->this$0:Lcom/android/server/am/OnePlusMemoryTracker;
+
+    invoke-static {v2}, Lcom/android/server/am/OnePlusMemoryTracker;->access$2300(Lcom/android/server/am/OnePlusMemoryTracker;)V
+
     iget-object p0, p0, Lcom/android/server/am/i;->this$0:Lcom/android/server/am/OnePlusMemoryTracker;
 
-    invoke-static {p0, v0}, Lcom/android/server/am/OnePlusMemoryTracker;->access$400(Lcom/android/server/am/OnePlusMemoryTracker;Z)Ljava/lang/String;
+    invoke-static {p0, v0}, Lcom/android/server/am/OnePlusMemoryTracker;->access$2400(Lcom/android/server/am/OnePlusMemoryTracker;Z)Ljava/lang/String;
 
     const-string p0, "============================="
 
@@ -355,15 +355,13 @@
 
     invoke-virtual {p1, v0}, Ljava/lang/String;->substring(I)Ljava/lang/String;
 
-    move-result-object p1
+    move-result-object p0
 
-    iget-object p0, p0, Lcom/android/server/am/i;->this$0:Lcom/android/server/am/OnePlusMemoryTracker;
+    invoke-static {p0}, Ljava/lang/Long;->parseLong(Ljava/lang/String;)J
 
-    invoke-static {p1}, Ljava/lang/Long;->parseLong(Ljava/lang/String;)J
+    move-result-wide p0
 
-    move-result-wide p1
-
-    invoke-static {p0, p1, p2}, Lcom/android/server/am/OnePlusMemoryTracker;->access$1002(Lcom/android/server/am/OnePlusMemoryTracker;J)J
+    invoke-static {p0, p1}, Lcom/android/server/am/OnePlusMemoryTracker;->access$202(J)J
 
     goto :goto_1
 
@@ -376,19 +374,17 @@
 
     if-eqz p2, :cond_7
 
-    const/16 p2, 0xa
+    const/16 p0, 0xa
 
-    invoke-virtual {p1, p2}, Ljava/lang/String;->substring(I)Ljava/lang/String;
+    invoke-virtual {p1, p0}, Ljava/lang/String;->substring(I)Ljava/lang/String;
 
-    move-result-object p1
+    move-result-object p0
 
-    iget-object p0, p0, Lcom/android/server/am/i;->this$0:Lcom/android/server/am/OnePlusMemoryTracker;
+    invoke-static {p0}, Ljava/lang/Long;->parseLong(Ljava/lang/String;)J
 
-    invoke-static {p1}, Ljava/lang/Long;->parseLong(Ljava/lang/String;)J
+    move-result-wide p0
 
-    move-result-wide p1
-
-    invoke-static {p0, p1, p2}, Lcom/android/server/am/OnePlusMemoryTracker;->access$2102(Lcom/android/server/am/OnePlusMemoryTracker;J)J
+    invoke-static {p0, p1}, Lcom/android/server/am/OnePlusMemoryTracker;->access$1402(J)J
 
     goto :goto_1
 
@@ -411,7 +407,7 @@
 
     move-result p1
 
-    invoke-static {p0, p1}, Lcom/android/server/am/OnePlusMemoryTracker;->access$2502(Lcom/android/server/am/OnePlusMemoryTracker;I)I
+    invoke-static {p0, p1}, Lcom/android/server/am/OnePlusMemoryTracker;->access$2002(Lcom/android/server/am/OnePlusMemoryTracker;I)I
 
     :cond_8
     :goto_1

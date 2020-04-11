@@ -28,7 +28,7 @@
 
     if-eqz p2, :cond_1
 
-    invoke-static {p1}, Lorg/bouncycastle/asn1/F;->za(Ljava/lang/String;)Z
+    invoke-static {p1}, Lorg/bouncycastle/asn1/F;->Aa(Ljava/lang/String;)Z
 
     move-result p2
 
@@ -66,99 +66,7 @@
     return-void
 .end method
 
-.method public static getInstance(Ljava/lang/Object;)Lorg/bouncycastle/asn1/F;
-    .locals 3
-
-    if-eqz p0, :cond_2
-
-    instance-of v0, p0, Lorg/bouncycastle/asn1/F;
-
-    if-eqz v0, :cond_0
-
-    goto :goto_0
-
-    :cond_0
-    instance-of v0, p0, [B
-
-    if-eqz v0, :cond_1
-
-    :try_start_0
-    check-cast p0, [B
-
-    invoke-static {p0}, Lorg/bouncycastle/asn1/vdb;->fromByteArray([B)Lorg/bouncycastle/asn1/vdb;
-
-    move-result-object p0
-
-    check-cast p0, Lorg/bouncycastle/asn1/F;
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
-
-    return-object p0
-
-    :catch_0
-    move-exception p0
-
-    new-instance v0, Ljava/lang/IllegalArgumentException;
-
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v2, "encoding error in getInstance: "
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
-
-    move-result-object p0
-
-    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p0
-
-    invoke-direct {v0, p0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_1
-    new-instance v0, Ljava/lang/IllegalArgumentException;
-
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v2, "illegal object in getInstance: "
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    move-result-object p0
-
-    invoke-virtual {p0}, Ljava/lang/Class;->getName()Ljava/lang/String;
-
-    move-result-object p0
-
-    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p0
-
-    invoke-direct {v0, p0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_2
-    :goto_0
-    check-cast p0, Lorg/bouncycastle/asn1/F;
-
-    return-object p0
-.end method
-
-.method public static za(Ljava/lang/String;)Z
+.method public static Aa(Ljava/lang/String;)Z
     .locals 5
 
     invoke-virtual {p0}, Ljava/lang/String;->length()I
@@ -267,6 +175,98 @@
     .end packed-switch
 .end method
 
+.method public static getInstance(Ljava/lang/Object;)Lorg/bouncycastle/asn1/F;
+    .locals 3
+
+    if-eqz p0, :cond_2
+
+    instance-of v0, p0, Lorg/bouncycastle/asn1/F;
+
+    if-eqz v0, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    instance-of v0, p0, [B
+
+    if-eqz v0, :cond_1
+
+    :try_start_0
+    check-cast p0, [B
+
+    invoke-static {p0}, Lorg/bouncycastle/asn1/vdb;->fromByteArray([B)Lorg/bouncycastle/asn1/vdb;
+
+    move-result-object p0
+
+    check-cast p0, Lorg/bouncycastle/asn1/F;
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    return-object p0
+
+    :catch_0
+    move-exception p0
+
+    new-instance v0, Ljava/lang/IllegalArgumentException;
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v2, "encoding error in getInstance: "
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+
+    move-result-object p0
+
+    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p0
+
+    invoke-direct {v0, p0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
+    throw v0
+
+    :cond_1
+    new-instance v0, Ljava/lang/IllegalArgumentException;
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v2, "illegal object in getInstance: "
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    move-result-object p0
+
+    invoke-virtual {p0}, Ljava/lang/Class;->getName()Ljava/lang/String;
+
+    move-result-object p0
+
+    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p0
+
+    invoke-direct {v0, p0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
+    throw v0
+
+    :cond_2
+    :goto_0
+    check-cast p0, Lorg/bouncycastle/asn1/F;
+
+    return-object p0
+.end method
+
 .method public static zta(Lorg/bouncycastle/asn1/lqr;Z)Lorg/bouncycastle/asn1/F;
     .locals 0
 
@@ -352,14 +352,24 @@
     return p0
 .end method
 
-.method qg()I
+.method public toString()Ljava/lang/String;
+    .locals 0
+
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/F;->getString()Ljava/lang/String;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method ug()I
     .locals 1
 
     iget-object v0, p0, Lorg/bouncycastle/asn1/F;->string:[B
 
     array-length v0, v0
 
-    invoke-static {v0}, Lorg/bouncycastle/asn1/ia;->ba(I)I
+    invoke-static {v0}, Lorg/bouncycastle/asn1/ia;->ea(I)I
 
     move-result v0
 
@@ -372,16 +382,6 @@
     add-int/2addr v0, p0
 
     return v0
-.end method
-
-.method public toString()Ljava/lang/String;
-    .locals 0
-
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/F;->getString()Ljava/lang/String;
-
-    move-result-object p0
-
-    return-object p0
 .end method
 
 .method zta(Lorg/bouncycastle/asn1/ugm;)V

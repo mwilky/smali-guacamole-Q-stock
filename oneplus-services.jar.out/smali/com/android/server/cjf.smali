@@ -18,13 +18,15 @@
 # static fields
 .field private static final DEBUG_ONEPLUS:Z
 
-.field private static final Nd:Z = false
+.field private static final Qd:Z = false
 
-.field private static Od:Z = false
+.field private static Rd:Z = false
 
-.field private static final Pd:Ljava/lang/String; = "ProcessManagement"
+.field private static final Sd:Ljava/lang/String; = "ProcessManagement"
 
-.field private static Qd:Landroid/util/ArrayMap; = null
+.field static final TAG:Ljava/lang/String; = "OpAlarmAlignment"
+
+.field private static Td:Landroid/util/ArrayMap;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Landroid/util/ArrayMap<",
@@ -35,7 +37,7 @@
     .end annotation
 .end field
 
-.field private static Rd:Landroid/util/ArrayMap; = null
+.field private static Ud:Landroid/util/ArrayMap;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Landroid/util/ArrayMap<",
@@ -46,7 +48,7 @@
     .end annotation
 .end field
 
-.field private static Sd:Ljava/util/List; = null
+.field private static Vd:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
@@ -56,17 +58,15 @@
     .end annotation
 .end field
 
-.field static final TAG:Ljava/lang/String; = "OpAlarmAlignment"
-
-.field private static Td:Ljava/lang/Object;
+.field private static Wd:Ljava/lang/Object;
 
 
 # instance fields
-.field private Gd:Lcom/android/server/AlarmManagerService$AmsInner;
+.field private Jd:Lcom/android/server/AlarmManagerService$AmsInner;
 
-.field private Hd:J
+.field private Kd:J
 
-.field private Id:Landroid/util/ArrayMap;
+.field private Ld:Landroid/util/ArrayMap;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Landroid/util/ArrayMap<",
@@ -77,7 +77,7 @@
     .end annotation
 .end field
 
-.field private Jd:Ljava/util/ArrayList;
+.field private Md:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/ArrayList<",
@@ -87,7 +87,7 @@
     .end annotation
 .end field
 
-.field private Kd:Landroid/util/ArrayMap;
+.field private Nd:Landroid/util/ArrayMap;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Landroid/util/ArrayMap<",
@@ -98,7 +98,7 @@
     .end annotation
 .end field
 
-.field private Ld:Landroid/util/ArrayMap;
+.field private Od:Landroid/util/ArrayMap;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Landroid/util/ArrayMap<",
@@ -110,7 +110,7 @@
     .end annotation
 .end field
 
-.field private final Md:Ljava/lang/Object;
+.field private final Pd:Ljava/lang/Object;
 
 .field private mAlignment:Lcom/android/server/cjf$zta;
 
@@ -129,31 +129,31 @@
 
     const/4 v0, 0x0
 
-    sput-boolean v0, Lcom/android/server/cjf;->Od:Z
+    sput-boolean v0, Lcom/android/server/cjf;->Rd:Z
 
     new-instance v0, Landroid/util/ArrayMap;
 
     invoke-direct {v0}, Landroid/util/ArrayMap;-><init>()V
 
-    sput-object v0, Lcom/android/server/cjf;->Qd:Landroid/util/ArrayMap;
+    sput-object v0, Lcom/android/server/cjf;->Td:Landroid/util/ArrayMap;
 
     new-instance v0, Landroid/util/ArrayMap;
 
     invoke-direct {v0}, Landroid/util/ArrayMap;-><init>()V
 
-    sput-object v0, Lcom/android/server/cjf;->Rd:Landroid/util/ArrayMap;
+    sput-object v0, Lcom/android/server/cjf;->Ud:Landroid/util/ArrayMap;
 
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    sput-object v0, Lcom/android/server/cjf;->Sd:Ljava/util/List;
+    sput-object v0, Lcom/android/server/cjf;->Vd:Ljava/util/List;
 
     new-instance v0, Ljava/lang/Object;
 
     invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
-    sput-object v0, Lcom/android/server/cjf;->Td:Ljava/lang/Object;
+    sput-object v0, Lcom/android/server/cjf;->Wd:Ljava/lang/Object;
 
     return-void
 .end method
@@ -185,31 +185,31 @@
 
     invoke-direct {v0}, Landroid/util/ArrayMap;-><init>()V
 
-    iput-object v0, p0, Lcom/android/server/cjf;->Id:Landroid/util/ArrayMap;
+    iput-object v0, p0, Lcom/android/server/cjf;->Ld:Landroid/util/ArrayMap;
 
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/android/server/cjf;->Jd:Ljava/util/ArrayList;
+    iput-object v0, p0, Lcom/android/server/cjf;->Md:Ljava/util/ArrayList;
 
     new-instance v0, Landroid/util/ArrayMap;
 
     invoke-direct {v0}, Landroid/util/ArrayMap;-><init>()V
 
-    iput-object v0, p0, Lcom/android/server/cjf;->Kd:Landroid/util/ArrayMap;
+    iput-object v0, p0, Lcom/android/server/cjf;->Nd:Landroid/util/ArrayMap;
 
     new-instance v0, Landroid/util/ArrayMap;
 
     invoke-direct {v0}, Landroid/util/ArrayMap;-><init>()V
 
-    iput-object v0, p0, Lcom/android/server/cjf;->Ld:Landroid/util/ArrayMap;
+    iput-object v0, p0, Lcom/android/server/cjf;->Od:Landroid/util/ArrayMap;
 
     new-instance v0, Ljava/lang/Object;
 
     invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
-    iput-object v0, p0, Lcom/android/server/cjf;->Md:Ljava/lang/Object;
+    iput-object v0, p0, Lcom/android/server/cjf;->Pd:Ljava/lang/Object;
 
     return-void
 .end method
@@ -217,7 +217,7 @@
 .method static synthetic access$300()Z
     .locals 1
 
-    sget-boolean v0, Lcom/android/server/cjf;->Od:Z
+    sget-boolean v0, Lcom/android/server/cjf;->Rd:Z
 
     return v0
 .end method
@@ -241,7 +241,7 @@
 .method static synthetic sis(Lcom/android/server/cjf;)Lcom/android/server/AlarmManagerService$AmsInner;
     .locals 0
 
-    iget-object p0, p0, Lcom/android/server/cjf;->Gd:Lcom/android/server/AlarmManagerService$AmsInner;
+    iget-object p0, p0, Lcom/android/server/cjf;->Jd:Lcom/android/server/AlarmManagerService$AmsInner;
 
     return-object p0
 .end method
@@ -263,16 +263,16 @@
 
     if-eqz p2, :cond_0
 
-    sget-object p2, Lcom/android/server/cjf;->Td:Ljava/lang/Object;
+    sget-object p2, Lcom/android/server/cjf;->Wd:Ljava/lang/Object;
 
     monitor-enter p2
 
     :try_start_0
-    sget-object p0, Lcom/android/server/cjf;->Qd:Landroid/util/ArrayMap;
+    sget-object p0, Lcom/android/server/cjf;->Td:Landroid/util/ArrayMap;
 
     invoke-virtual {p0, p1}, Landroid/util/ArrayMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
-    sget-object p0, Lcom/android/server/cjf;->Qd:Landroid/util/ArrayMap;
+    sget-object p0, Lcom/android/server/cjf;->Td:Landroid/util/ArrayMap;
 
     invoke-static {p3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -280,11 +280,11 @@
 
     invoke-virtual {p0, p1, p3}, Landroid/util/ArrayMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    sget-object p0, Lcom/android/server/cjf;->Rd:Landroid/util/ArrayMap;
+    sget-object p0, Lcom/android/server/cjf;->Ud:Landroid/util/ArrayMap;
 
     invoke-virtual {p0, p1}, Landroid/util/ArrayMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
-    sget-object p0, Lcom/android/server/cjf;->Rd:Landroid/util/ArrayMap;
+    sget-object p0, Lcom/android/server/cjf;->Ud:Landroid/util/ArrayMap;
 
     invoke-static {v0, v1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
@@ -310,7 +310,7 @@
 
     move-result-object p2
 
-    iget-object p3, p0, Lcom/android/server/cjf;->Gd:Lcom/android/server/AlarmManagerService$AmsInner;
+    iget-object p3, p0, Lcom/android/server/cjf;->Jd:Lcom/android/server/AlarmManagerService$AmsInner;
 
     invoke-virtual {p3}, Lcom/android/server/AlarmManagerService$AmsInner;->getAlarmHandler()Lcom/android/server/AlarmManagerService$AlarmHandler;
 
@@ -320,7 +320,7 @@
 
     iput-object p1, p2, Landroid/os/Message;->obj:Ljava/lang/Object;
 
-    iget-object p0, p0, Lcom/android/server/cjf;->Gd:Lcom/android/server/AlarmManagerService$AmsInner;
+    iget-object p0, p0, Lcom/android/server/cjf;->Jd:Lcom/android/server/AlarmManagerService$AmsInner;
 
     invoke-virtual {p0}, Lcom/android/server/AlarmManagerService$AmsInner;->getAlarmHandler()Lcom/android/server/AlarmManagerService$AlarmHandler;
 
@@ -328,16 +328,16 @@
 
     invoke-virtual {p0, p2}, Lcom/android/server/AlarmManagerService$AlarmHandler;->sendMessage(Landroid/os/Message;)Z
 
-    sget-object p0, Lcom/android/server/cjf;->Td:Ljava/lang/Object;
+    sget-object p0, Lcom/android/server/cjf;->Wd:Ljava/lang/Object;
 
     monitor-enter p0
 
     :try_start_1
-    sget-object p2, Lcom/android/server/cjf;->Qd:Landroid/util/ArrayMap;
+    sget-object p2, Lcom/android/server/cjf;->Td:Landroid/util/ArrayMap;
 
     invoke-virtual {p2, p1}, Landroid/util/ArrayMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
-    sget-object p2, Lcom/android/server/cjf;->Rd:Landroid/util/ArrayMap;
+    sget-object p2, Lcom/android/server/cjf;->Ud:Landroid/util/ArrayMap;
 
     invoke-virtual {p2, p1}, Landroid/util/ArrayMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -375,12 +375,12 @@
 
     iget-object p4, p1, Lcom/android/server/AlarmManagerService$Alarm;->packageName:Ljava/lang/String;
 
-    sget-object v0, Lcom/android/server/cjf;->Td:Ljava/lang/Object;
+    sget-object v0, Lcom/android/server/cjf;->Wd:Ljava/lang/Object;
 
     monitor-enter v0
 
     :try_start_0
-    sget-object v1, Lcom/android/server/cjf;->Qd:Landroid/util/ArrayMap;
+    sget-object v1, Lcom/android/server/cjf;->Td:Landroid/util/ArrayMap;
 
     invoke-virtual {v1, p4}, Landroid/util/ArrayMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -414,7 +414,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/server/cjf;->Jd:Ljava/util/ArrayList;
+    iget-object v1, p0, Lcom/android/server/cjf;->Md:Ljava/util/ArrayList;
 
     invoke-virtual {v1, v0}, Ljava/util/ArrayList;->contains(Ljava/lang/Object;)Z
 
@@ -476,7 +476,7 @@
 
     iput-wide p2, p1, Lcom/android/server/AlarmManagerService$Alarm;->expectedWhenElapsed:J
 
-    iget-object p2, p0, Lcom/android/server/cjf;->Gd:Lcom/android/server/AlarmManagerService$AmsInner;
+    iget-object p2, p0, Lcom/android/server/cjf;->Jd:Lcom/android/server/AlarmManagerService$AmsInner;
 
     iget-object p3, p1, Lcom/android/server/AlarmManagerService$Alarm;->operation:Landroid/app/PendingIntent;
 
@@ -484,7 +484,7 @@
 
     invoke-virtual {p2, p3, v1}, Lcom/android/server/AlarmManagerService$AmsInner;->removeLockedInner(Landroid/app/PendingIntent;Landroid/app/IAlarmListener;)V
 
-    iget-object p2, p0, Lcom/android/server/cjf;->Gd:Lcom/android/server/AlarmManagerService$AmsInner;
+    iget-object p2, p0, Lcom/android/server/cjf;->Jd:Lcom/android/server/AlarmManagerService$AmsInner;
 
     invoke-virtual {p2, p1, p5, v2}, Lcom/android/server/AlarmManagerService$AmsInner;->setImplLockedInner(Lcom/android/server/AlarmManagerService$Alarm;ZZ)V
 
@@ -513,24 +513,24 @@
     invoke-static {p3, p2}, Landroid/util/Slog;->v(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_3
-    iget-object p2, p0, Lcom/android/server/cjf;->Jd:Ljava/util/ArrayList;
+    iget-object p2, p0, Lcom/android/server/cjf;->Md:Ljava/util/ArrayList;
 
     invoke-virtual {p2, v0}, Ljava/util/ArrayList;->remove(Ljava/lang/Object;)Z
 
-    iget-object p2, p0, Lcom/android/server/cjf;->Jd:Ljava/util/ArrayList;
+    iget-object p2, p0, Lcom/android/server/cjf;->Md:Ljava/util/ArrayList;
 
     invoke-virtual {p2, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    iget-object p2, p0, Lcom/android/server/cjf;->Md:Ljava/lang/Object;
+    iget-object p2, p0, Lcom/android/server/cjf;->Pd:Ljava/lang/Object;
 
     monitor-enter p2
 
     :try_start_1
-    iget-object p3, p0, Lcom/android/server/cjf;->Id:Landroid/util/ArrayMap;
+    iget-object p3, p0, Lcom/android/server/cjf;->Ld:Landroid/util/ArrayMap;
 
     invoke-virtual {p3, p1}, Landroid/util/ArrayMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
-    iget-object p3, p0, Lcom/android/server/cjf;->Id:Landroid/util/ArrayMap;
+    iget-object p3, p0, Lcom/android/server/cjf;->Ld:Landroid/util/ArrayMap;
 
     invoke-virtual {p3, p1, p4}, Landroid/util/ArrayMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -538,7 +538,7 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    iget-object p1, p0, Lcom/android/server/cjf;->Ld:Landroid/util/ArrayMap;
+    iget-object p1, p0, Lcom/android/server/cjf;->Od:Landroid/util/ArrayMap;
 
     invoke-virtual {p1, p4}, Landroid/util/ArrayMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -552,7 +552,7 @@
 
     invoke-direct {p1}, Ljava/util/ArrayList;-><init>()V
 
-    iget-object p0, p0, Lcom/android/server/cjf;->Ld:Landroid/util/ArrayMap;
+    iget-object p0, p0, Lcom/android/server/cjf;->Od:Landroid/util/ArrayMap;
 
     invoke-virtual {p0, p4, p1}, Landroid/util/ArrayMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -574,7 +574,7 @@
     throw p0
 
     :cond_5
-    iget-object p2, p0, Lcom/android/server/cjf;->Ld:Landroid/util/ArrayMap;
+    iget-object p2, p0, Lcom/android/server/cjf;->Od:Landroid/util/ArrayMap;
 
     invoke-virtual {p2, p4}, Landroid/util/ArrayMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -587,12 +587,12 @@
     invoke-virtual {p2, v0}, Ljava/util/ArrayList;->remove(Ljava/lang/Object;)Z
 
     :cond_6
-    iget-object p2, p0, Lcom/android/server/cjf;->Md:Ljava/lang/Object;
+    iget-object p2, p0, Lcom/android/server/cjf;->Pd:Ljava/lang/Object;
 
     monitor-enter p2
 
     :try_start_3
-    iget-object p3, p0, Lcom/android/server/cjf;->Id:Landroid/util/ArrayMap;
+    iget-object p3, p0, Lcom/android/server/cjf;->Ld:Landroid/util/ArrayMap;
 
     invoke-virtual {p3, p1}, Landroid/util/ArrayMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -600,7 +600,7 @@
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_1
 
-    iget-object p0, p0, Lcom/android/server/cjf;->Jd:Ljava/util/ArrayList;
+    iget-object p0, p0, Lcom/android/server/cjf;->Md:Ljava/util/ArrayList;
 
     invoke-virtual {p0, v0}, Ljava/util/ArrayList;->remove(Ljava/lang/Object;)Z
 
@@ -651,7 +651,7 @@
 
     invoke-direct {v2}, Ljava/util/ArrayList;-><init>()V
 
-    iget-object v3, p0, Lcom/android/server/cjf;->Md:Ljava/lang/Object;
+    iget-object v3, p0, Lcom/android/server/cjf;->Pd:Ljava/lang/Object;
 
     monitor-enter v3
 
@@ -661,7 +661,7 @@
 
     :goto_0
     :try_start_0
-    iget-object v6, p0, Lcom/android/server/cjf;->Id:Landroid/util/ArrayMap;
+    iget-object v6, p0, Lcom/android/server/cjf;->Ld:Landroid/util/ArrayMap;
 
     invoke-virtual {v6}, Landroid/util/ArrayMap;->size()I
 
@@ -669,7 +669,7 @@
 
     if-ge v5, v6, :cond_1
 
-    iget-object v6, p0, Lcom/android/server/cjf;->Id:Landroid/util/ArrayMap;
+    iget-object v6, p0, Lcom/android/server/cjf;->Ld:Landroid/util/ArrayMap;
 
     invoke-virtual {v6, v5}, Landroid/util/ArrayMap;->valueAt(I)Ljava/lang/Object;
 
@@ -685,7 +685,7 @@
 
     if-eqz v6, :cond_0
 
-    iget-object v6, p0, Lcom/android/server/cjf;->Id:Landroid/util/ArrayMap;
+    iget-object v6, p0, Lcom/android/server/cjf;->Ld:Landroid/util/ArrayMap;
 
     invoke-virtual {v6, v5}, Landroid/util/ArrayMap;->keyAt(I)Ljava/lang/Object;
 
@@ -725,11 +725,11 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
-    iget-object v3, p0, Lcom/android/server/cjf;->Gd:Lcom/android/server/AlarmManagerService$AmsInner;
+    iget-object v3, p0, Lcom/android/server/cjf;->Jd:Lcom/android/server/AlarmManagerService$AmsInner;
 
     invoke-virtual {v3, v2, v0, v1}, Lcom/android/server/AlarmManagerService$AmsInner;->deliverAlarmsLockedInner(Ljava/util/ArrayList;J)V
 
-    iget-object v0, p0, Lcom/android/server/cjf;->Md:Ljava/lang/Object;
+    iget-object v0, p0, Lcom/android/server/cjf;->Pd:Ljava/lang/Object;
 
     monitor-enter v0
 
@@ -743,7 +743,7 @@
 
     if-ge v1, v3, :cond_2
 
-    iget-object v3, p0, Lcom/android/server/cjf;->Id:Landroid/util/ArrayMap;
+    iget-object v3, p0, Lcom/android/server/cjf;->Ld:Landroid/util/ArrayMap;
 
     invoke-virtual {v2, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -763,7 +763,7 @@
     move v0, v4
 
     :goto_2
-    iget-object v1, p0, Lcom/android/server/cjf;->Ld:Landroid/util/ArrayMap;
+    iget-object v1, p0, Lcom/android/server/cjf;->Od:Landroid/util/ArrayMap;
 
     invoke-virtual {v1}, Landroid/util/ArrayMap;->size()I
 
@@ -771,7 +771,7 @@
 
     if-ge v0, v1, :cond_4
 
-    iget-object v1, p0, Lcom/android/server/cjf;->Ld:Landroid/util/ArrayMap;
+    iget-object v1, p0, Lcom/android/server/cjf;->Od:Landroid/util/ArrayMap;
 
     invoke-virtual {v1, v0}, Landroid/util/ArrayMap;->keyAt(I)Ljava/lang/Object;
 
@@ -787,7 +787,7 @@
 
     if-eqz v1, :cond_3
 
-    iget-object v1, p0, Lcom/android/server/cjf;->Ld:Landroid/util/ArrayMap;
+    iget-object v1, p0, Lcom/android/server/cjf;->Od:Landroid/util/ArrayMap;
 
     invoke-virtual {v1, v0}, Landroid/util/ArrayMap;->valueAt(I)Ljava/lang/Object;
 
@@ -810,11 +810,11 @@
 
     check-cast v3, Ljava/lang/String;
 
-    iget-object v5, p0, Lcom/android/server/cjf;->Jd:Ljava/util/ArrayList;
+    iget-object v5, p0, Lcom/android/server/cjf;->Md:Ljava/util/ArrayList;
 
     invoke-virtual {v5, v3}, Ljava/util/ArrayList;->remove(Ljava/lang/Object;)Z
 
-    iget-object v5, p0, Lcom/android/server/cjf;->Kd:Landroid/util/ArrayMap;
+    iget-object v5, p0, Lcom/android/server/cjf;->Nd:Landroid/util/ArrayMap;
 
     invoke-virtual {v5, v3}, Landroid/util/ArrayMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -854,9 +854,9 @@
 .method public dma(Z)Z
     .locals 0
 
-    sget-boolean p0, Lcom/android/server/cjf;->Od:Z
+    sget-boolean p0, Lcom/android/server/cjf;->Rd:Z
 
-    sput-boolean p1, Lcom/android/server/cjf;->Od:Z
+    sput-boolean p1, Lcom/android/server/cjf;->Rd:Z
 
     return p0
 .end method
@@ -1058,7 +1058,7 @@
 .method public initInstance(Lcom/android/server/AlarmManagerService$AmsInner;Landroid/content/Context;)V
     .locals 2
 
-    iput-object p1, p0, Lcom/android/server/cjf;->Gd:Lcom/android/server/AlarmManagerService$AmsInner;
+    iput-object p1, p0, Lcom/android/server/cjf;->Jd:Lcom/android/server/AlarmManagerService$AmsInner;
 
     iput-object p2, p0, Lcom/android/server/cjf;->mContext:Landroid/content/Context;
 
@@ -1082,7 +1082,7 @@
 
     iget-object p2, p0, Lcom/android/server/cjf;->mContext:Landroid/content/Context;
 
-    iget-object v0, p0, Lcom/android/server/cjf;->Gd:Lcom/android/server/AlarmManagerService$AmsInner;
+    iget-object v0, p0, Lcom/android/server/cjf;->Jd:Lcom/android/server/AlarmManagerService$AmsInner;
 
     invoke-virtual {v0}, Lcom/android/server/AlarmManagerService$AmsInner;->getAlarmHandler()Lcom/android/server/AlarmManagerService$AlarmHandler;
 
@@ -1101,7 +1101,7 @@
 .method rtg(J)J
     .locals 4
 
-    iget-wide v0, p0, Lcom/android/server/cjf;->Hd:J
+    iget-wide v0, p0, Lcom/android/server/cjf;->Kd:J
 
     sub-long/2addr p1, v0
 
@@ -1120,7 +1120,7 @@
     move p1, p2
 
     :cond_0
-    iget-wide v0, p0, Lcom/android/server/cjf;->Hd:J
+    iget-wide v0, p0, Lcom/android/server/cjf;->Kd:J
 
     mul-int/lit8 p1, p1, 0xa
 
@@ -1163,7 +1163,7 @@
 
     if-eqz v2, :cond_a
 
-    sget-object v2, Lcom/android/server/oxb;->qd:[I
+    sget-object v2, Lcom/android/server/oxb;->td:[I
 
     invoke-virtual {p2}, Lcom/android/server/AlarmManagerService$AlarmAlignmentReason;->ordinal()I
 
@@ -1207,7 +1207,7 @@
 
     if-eqz p2, :cond_b
 
-    iget-object p2, p0, Lcom/android/server/cjf;->Jd:Ljava/util/ArrayList;
+    iget-object p2, p0, Lcom/android/server/cjf;->Md:Ljava/util/ArrayList;
 
     new-instance p3, Ljava/lang/StringBuilder;
 
@@ -1321,7 +1321,7 @@
 
     move-result-wide v2
 
-    iget-object p2, p0, Lcom/android/server/cjf;->Gd:Lcom/android/server/AlarmManagerService$AmsInner;
+    iget-object p2, p0, Lcom/android/server/cjf;->Jd:Lcom/android/server/AlarmManagerService$AmsInner;
 
     iget-wide p3, p1, Lcom/android/server/AlarmManagerService$Alarm;->when:J
 
@@ -1348,7 +1348,7 @@
     goto :goto_1
 
     :cond_8
-    iget-object v1, p0, Lcom/android/server/cjf;->Gd:Lcom/android/server/AlarmManagerService$AmsInner;
+    iget-object v1, p0, Lcom/android/server/cjf;->Jd:Lcom/android/server/AlarmManagerService$AmsInner;
 
     iget-wide v4, p1, Lcom/android/server/AlarmManagerService$Alarm;->whenElapsed:J
 
@@ -1402,11 +1402,11 @@
         }
     .end annotation
 
-    sget-object p0, Lcom/android/server/cjf;->Sd:Ljava/util/List;
+    sget-object p0, Lcom/android/server/cjf;->Vd:Ljava/util/List;
 
     invoke-interface {p0}, Ljava/util/List;->clear()V
 
-    sget-object p0, Lcom/android/server/cjf;->Sd:Ljava/util/List;
+    sget-object p0, Lcom/android/server/cjf;->Vd:Ljava/util/List;
 
     invoke-interface {p0, p1}, Ljava/util/List;->addAll(Ljava/util/Collection;)Z
 
@@ -1418,7 +1418,7 @@
 
     invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sget-object p1, Lcom/android/server/cjf;->Sd:Ljava/util/List;
+    sget-object p1, Lcom/android/server/cjf;->Vd:Ljava/util/List;
 
     invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -1630,7 +1630,7 @@
 .method ugm(Ljava/lang/String;)Z
     .locals 1
 
-    sget-object p0, Lcom/android/server/cjf;->Sd:Ljava/util/List;
+    sget-object p0, Lcom/android/server/cjf;->Vd:Ljava/util/List;
 
     invoke-interface {p0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -1668,7 +1668,7 @@
 .method public updateInteractiveStartTime(J)V
     .locals 0
 
-    iput-wide p1, p0, Lcom/android/server/cjf;->Hd:J
+    iput-wide p1, p0, Lcom/android/server/cjf;->Kd:J
 
     return-void
 .end method

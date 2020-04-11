@@ -4,7 +4,7 @@
 
 
 # static fields
-.field private static Una:Ljava/util/Map;
+.field private static Toa:Ljava/util/Map;
 
 
 # direct methods
@@ -15,9 +15,9 @@
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    sput-object v0, Lorg/bouncycastle/jcajce/provider/util/rtg;->Una:Ljava/util/Map;
+    sput-object v0, Lorg/bouncycastle/jcajce/provider/util/rtg;->Toa:Ljava/util/Map;
 
-    sget-object v0, Lorg/bouncycastle/jcajce/provider/util/rtg;->Una:Ljava/util/Map;
+    sget-object v0, Lorg/bouncycastle/jcajce/provider/util/rtg;->Toa:Ljava/util/Map;
 
     sget-object v1, Lorg/bouncycastle/asn1/dma/gwm;->des_EDE3_CBC:Lorg/bouncycastle/asn1/bvj;
 
@@ -33,9 +33,9 @@
 
     invoke-interface {v0, v1, v3}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    sget-object v0, Lorg/bouncycastle/jcajce/provider/util/rtg;->Una:Ljava/util/Map;
+    sget-object v0, Lorg/bouncycastle/jcajce/provider/util/rtg;->Toa:Ljava/util/Map;
 
-    sget-object v1, Lorg/bouncycastle/asn1/bio/you;->gLa:Lorg/bouncycastle/asn1/bvj;
+    sget-object v1, Lorg/bouncycastle/asn1/bio/you;->eMa:Lorg/bouncycastle/asn1/bvj;
 
     const/16 v3, 0x80
 
@@ -45,9 +45,9 @@
 
     invoke-interface {v0, v1, v4}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    sget-object v0, Lorg/bouncycastle/jcajce/provider/util/rtg;->Una:Ljava/util/Map;
+    sget-object v0, Lorg/bouncycastle/jcajce/provider/util/rtg;->Toa:Ljava/util/Map;
 
-    sget-object v1, Lorg/bouncycastle/asn1/bio/you;->oLa:Lorg/bouncycastle/asn1/bvj;
+    sget-object v1, Lorg/bouncycastle/asn1/bio/you;->mMa:Lorg/bouncycastle/asn1/bvj;
 
     invoke-static {v2}, Lorg/bouncycastle/util/cno;->valueOf(I)Ljava/lang/Integer;
 
@@ -55,9 +55,9 @@
 
     invoke-interface {v0, v1, v4}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    sget-object v0, Lorg/bouncycastle/jcajce/provider/util/rtg;->Una:Ljava/util/Map;
+    sget-object v0, Lorg/bouncycastle/jcajce/provider/util/rtg;->Toa:Ljava/util/Map;
 
-    sget-object v1, Lorg/bouncycastle/asn1/bio/you;->wLa:Lorg/bouncycastle/asn1/bvj;
+    sget-object v1, Lorg/bouncycastle/asn1/bio/you;->uMa:Lorg/bouncycastle/asn1/bvj;
 
     const/16 v4, 0x100
 
@@ -67,9 +67,9 @@
 
     invoke-interface {v0, v1, v5}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    sget-object v0, Lorg/bouncycastle/jcajce/provider/util/rtg;->Una:Ljava/util/Map;
+    sget-object v0, Lorg/bouncycastle/jcajce/provider/util/rtg;->Toa:Ljava/util/Map;
 
-    sget-object v1, Lorg/bouncycastle/asn1/wtn/zta;->HMa:Lorg/bouncycastle/asn1/bvj;
+    sget-object v1, Lorg/bouncycastle/asn1/wtn/zta;->FNa:Lorg/bouncycastle/asn1/bvj;
 
     invoke-static {v3}, Lorg/bouncycastle/util/cno;->valueOf(I)Ljava/lang/Integer;
 
@@ -77,9 +77,9 @@
 
     invoke-interface {v0, v1, v3}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    sget-object v0, Lorg/bouncycastle/jcajce/provider/util/rtg;->Una:Ljava/util/Map;
+    sget-object v0, Lorg/bouncycastle/jcajce/provider/util/rtg;->Toa:Ljava/util/Map;
 
-    sget-object v1, Lorg/bouncycastle/asn1/wtn/zta;->IMa:Lorg/bouncycastle/asn1/bvj;
+    sget-object v1, Lorg/bouncycastle/asn1/wtn/zta;->GNa:Lorg/bouncycastle/asn1/bvj;
 
     invoke-static {v2}, Lorg/bouncycastle/util/cno;->valueOf(I)Ljava/lang/Integer;
 
@@ -87,9 +87,9 @@
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    sget-object v0, Lorg/bouncycastle/jcajce/provider/util/rtg;->Una:Ljava/util/Map;
+    sget-object v0, Lorg/bouncycastle/jcajce/provider/util/rtg;->Toa:Ljava/util/Map;
 
-    sget-object v1, Lorg/bouncycastle/asn1/wtn/zta;->JMa:Lorg/bouncycastle/asn1/bvj;
+    sget-object v1, Lorg/bouncycastle/asn1/wtn/zta;->HNa:Lorg/bouncycastle/asn1/bvj;
 
     invoke-static {v4}, Lorg/bouncycastle/util/cno;->valueOf(I)Ljava/lang/Integer;
 
@@ -111,7 +111,7 @@
 .method public static ibl(Lorg/bouncycastle/asn1/bvj;)I
     .locals 1
 
-    sget-object v0, Lorg/bouncycastle/jcajce/provider/util/rtg;->Una:Ljava/util/Map;
+    sget-object v0, Lorg/bouncycastle/jcajce/provider/util/rtg;->Toa:Ljava/util/Map;
 
     invoke-interface {v0, p0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 

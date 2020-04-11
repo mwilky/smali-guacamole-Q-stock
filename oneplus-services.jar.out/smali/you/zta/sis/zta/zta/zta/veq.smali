@@ -18,9 +18,9 @@
 
 
 # instance fields
-.field final synthetic YCa:I
+.field final synthetic WDa:I
 
-.field final synthetic _Ca:[I
+.field final synthetic YDa:[I
 
 .field final synthetic this$0:Lyou/zta/sis/zta/zta/zta/cgv;
 
@@ -31,9 +31,9 @@
 
     iput-object p1, p0, Lyou/zta/sis/zta/zta/zta/veq;->this$0:Lyou/zta/sis/zta/zta/zta/cgv;
 
-    iput p2, p0, Lyou/zta/sis/zta/zta/zta/veq;->YCa:I
+    iput p2, p0, Lyou/zta/sis/zta/zta/zta/veq;->WDa:I
 
-    iput-object p3, p0, Lyou/zta/sis/zta/zta/zta/veq;->_Ca:[I
+    iput-object p3, p0, Lyou/zta/sis/zta/zta/zta/veq;->YDa:[I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -45,7 +45,7 @@
 .method public getSize()I
     .locals 0
 
-    iget p0, p0, Lyou/zta/sis/zta/zta/zta/veq;->YCa:I
+    iget p0, p0, Lyou/zta/sis/zta/zta/zta/veq;->WDa:I
 
     return p0
 .end method
@@ -70,7 +70,7 @@
     move v5, v4
 
     :goto_0
-    iget v6, p0, Lyou/zta/sis/zta/zta/zta/veq;->YCa:I
+    iget v6, p0, Lyou/zta/sis/zta/zta/zta/veq;->WDa:I
 
     if-ge v4, v6, :cond_1
 
@@ -87,7 +87,7 @@
 
     aget v8, v1, v7
 
-    iget-object v9, p0, Lyou/zta/sis/zta/zta/zta/veq;->_Ca:[I
+    iget-object v9, p0, Lyou/zta/sis/zta/zta/zta/veq;->YDa:[I
 
     add-int v10, v5, v7
 

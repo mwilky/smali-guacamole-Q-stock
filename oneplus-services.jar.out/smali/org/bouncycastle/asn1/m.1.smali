@@ -246,7 +246,17 @@
     return p0
 .end method
 
-.method qg()I
+.method public toString()Ljava/lang/String;
+    .locals 0
+
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/m;->getString()Ljava/lang/String;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method ug()I
     .locals 1
 
     iget-object v0, p0, Lorg/bouncycastle/asn1/m;->string:[C
@@ -255,7 +265,7 @@
 
     mul-int/lit8 v0, v0, 0x2
 
-    invoke-static {v0}, Lorg/bouncycastle/asn1/ia;->ba(I)I
+    invoke-static {v0}, Lorg/bouncycastle/asn1/ia;->ea(I)I
 
     move-result v0
 
@@ -270,16 +280,6 @@
     add-int/2addr v0, p0
 
     return v0
-.end method
-
-.method public toString()Ljava/lang/String;
-    .locals 0
-
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/m;->getString()Ljava/lang/String;
-
-    move-result-object p0
-
-    return-object p0
 .end method
 
 .method zta(Lorg/bouncycastle/asn1/ugm;)V
@@ -300,7 +300,7 @@
 
     mul-int/lit8 v0, v0, 0x2
 
-    invoke-virtual {p1, v0}, Lorg/bouncycastle/asn1/ugm;->Z(I)V
+    invoke-virtual {p1, v0}, Lorg/bouncycastle/asn1/ugm;->ca(I)V
 
     const/4 v0, 0x0
 

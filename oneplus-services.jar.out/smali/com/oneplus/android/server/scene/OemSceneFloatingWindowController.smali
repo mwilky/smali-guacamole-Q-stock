@@ -16,7 +16,7 @@
 
 .field public static final TAG:Ljava/lang/String; = "OemSceneFloatingWindowController"
 
-.field private static eea:Ljava/util/HashSet;
+.field private static dfa:Ljava/util/HashSet;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/HashSet<",
@@ -30,7 +30,7 @@
 
 
 # instance fields
-.field private dea:Lcom/oneplus/android/server/scene/OemSceneFloatingWindowController$FloatingWindowController;
+.field private cfa:Lcom/oneplus/android/server/scene/OemSceneFloatingWindowController$FloatingWindowController;
 
 .field private mBlock:Z
 
@@ -51,7 +51,7 @@
 
     invoke-direct {v0}, Ljava/util/HashSet;-><init>()V
 
-    sput-object v0, Lcom/oneplus/android/server/scene/OemSceneFloatingWindowController;->eea:Ljava/util/HashSet;
+    sput-object v0, Lcom/oneplus/android/server/scene/OemSceneFloatingWindowController;->dfa:Ljava/util/HashSet;
 
     return-void
 .end method
@@ -76,7 +76,7 @@
     return-void
 .end method
 
-.method private Ua(Z)V
+.method private Va(Z)V
     .locals 3
 
     iget-object v0, p0, Lcom/oneplus/android/server/scene/OemSceneFloatingWindowController;->mLock:Ljava/lang/Object;
@@ -181,7 +181,7 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget v2, v0, Lcom/android/server/OnePlusUtil$you$zta;->Zc:I
+    iget v2, v0, Lcom/android/server/OnePlusUtil$you$zta;->cd:I
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -208,7 +208,7 @@
     goto :goto_0
 
     :cond_2
-    sget-object p1, Lcom/oneplus/android/server/scene/OemSceneFloatingWindowController;->eea:Ljava/util/HashSet;
+    sget-object p1, Lcom/oneplus/android/server/scene/OemSceneFloatingWindowController;->dfa:Ljava/util/HashSet;
 
     invoke-virtual {p1}, Ljava/util/HashSet;->iterator()Ljava/util/Iterator;
 
@@ -258,7 +258,7 @@
     goto :goto_1
 
     :cond_3
-    sget-object p0, Lcom/oneplus/android/server/scene/OemSceneFloatingWindowController;->eea:Ljava/util/HashSet;
+    sget-object p0, Lcom/oneplus/android/server/scene/OemSceneFloatingWindowController;->dfa:Ljava/util/HashSet;
 
     invoke-virtual {p0}, Ljava/util/HashSet;->clear()V
 
@@ -302,7 +302,7 @@
     :cond_0
     sget-object v0, Lcom/oneplus/android/server/scene/OemSceneFloatingWindowController;->sInstance:Lcom/oneplus/android/server/scene/OemSceneFloatingWindowController;
 
-    invoke-direct {v0, p0, p1}, Lcom/oneplus/android/server/scene/OemSceneFloatingWindowController;->cjf(Ljava/lang/String;I)Z
+    invoke-direct {v0, p0, p1}, Lcom/oneplus/android/server/scene/OemSceneFloatingWindowController;->ear(Ljava/lang/String;I)Z
 
     move-result p0
 
@@ -322,7 +322,7 @@
 
     if-nez p0, :cond_0
 
-    sget-object p1, Lcom/oneplus/android/server/scene/OemSceneFloatingWindowController;->eea:Ljava/util/HashSet;
+    sget-object p1, Lcom/oneplus/android/server/scene/OemSceneFloatingWindowController;->dfa:Ljava/util/HashSet;
 
     invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -360,7 +360,7 @@
     :cond_0
     sget-object v0, Lcom/oneplus/android/server/scene/OemSceneFloatingWindowController;->sInstance:Lcom/oneplus/android/server/scene/OemSceneFloatingWindowController;
 
-    invoke-direct {v0, p0, p1}, Lcom/oneplus/android/server/scene/OemSceneFloatingWindowController;->ear(Ljava/lang/String;I)Z
+    invoke-direct {v0, p0, p1}, Lcom/oneplus/android/server/scene/OemSceneFloatingWindowController;->ire(Ljava/lang/String;I)Z
 
     move-result p0
 
@@ -369,40 +369,6 @@
     :cond_1
     :goto_0
     return v1
-.end method
-
-.method private cjf(Ljava/lang/String;I)Z
-    .locals 0
-
-    iget-object p1, p0, Lcom/oneplus/android/server/scene/OemSceneFloatingWindowController;->mLock:Ljava/lang/Object;
-
-    monitor-enter p1
-
-    :try_start_0
-    iget-boolean p0, p0, Lcom/oneplus/android/server/scene/OemSceneFloatingWindowController;->mBlock:Z
-
-    if-nez p0, :cond_0
-
-    const/4 p0, 0x1
-
-    goto :goto_0
-
-    :cond_0
-    const/4 p0, 0x0
-
-    :goto_0
-    monitor-exit p1
-
-    return p0
-
-    :catchall_0
-    move-exception p0
-
-    monitor-exit p1
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    throw p0
 .end method
 
 .method private ear(Ljava/lang/String;I)Z
@@ -458,6 +424,40 @@
     return-object p0
 .end method
 
+.method private ire(Ljava/lang/String;I)Z
+    .locals 0
+
+    iget-object p1, p0, Lcom/oneplus/android/server/scene/OemSceneFloatingWindowController;->mLock:Ljava/lang/Object;
+
+    monitor-enter p1
+
+    :try_start_0
+    iget-boolean p0, p0, Lcom/oneplus/android/server/scene/OemSceneFloatingWindowController;->mBlock:Z
+
+    if-nez p0, :cond_0
+
+    const/4 p0, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 p0, 0x0
+
+    :goto_0
+    monitor-exit p1
+
+    return p0
+
+    :catchall_0
+    move-exception p0
+
+    monitor-exit p1
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    throw p0
+.end method
+
 .method private killProcess(I)I
     .locals 1
 
@@ -504,17 +504,17 @@
 .method static synthetic zta(Lcom/oneplus/android/server/scene/OemSceneFloatingWindowController;Z)V
     .locals 0
 
-    invoke-direct {p0, p1}, Lcom/oneplus/android/server/scene/OemSceneFloatingWindowController;->Ua(Z)V
+    invoke-direct {p0, p1}, Lcom/oneplus/android/server/scene/OemSceneFloatingWindowController;->Va(Z)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public bf()Lcom/oneplus/android/server/scene/OemSceneFloatingWindowController$FloatingWindowController;
+.method public ff()Lcom/oneplus/android/server/scene/OemSceneFloatingWindowController$FloatingWindowController;
     .locals 1
 
-    iget-object v0, p0, Lcom/oneplus/android/server/scene/OemSceneFloatingWindowController;->dea:Lcom/oneplus/android/server/scene/OemSceneFloatingWindowController$FloatingWindowController;
+    iget-object v0, p0, Lcom/oneplus/android/server/scene/OemSceneFloatingWindowController;->cfa:Lcom/oneplus/android/server/scene/OemSceneFloatingWindowController$FloatingWindowController;
 
     if-nez v0, :cond_0
 
@@ -522,10 +522,10 @@
 
     invoke-direct {v0, p0}, Lcom/oneplus/android/server/scene/OemSceneFloatingWindowController$FloatingWindowController;-><init>(Lcom/oneplus/android/server/scene/OemSceneFloatingWindowController;)V
 
-    iput-object v0, p0, Lcom/oneplus/android/server/scene/OemSceneFloatingWindowController;->dea:Lcom/oneplus/android/server/scene/OemSceneFloatingWindowController$FloatingWindowController;
+    iput-object v0, p0, Lcom/oneplus/android/server/scene/OemSceneFloatingWindowController;->cfa:Lcom/oneplus/android/server/scene/OemSceneFloatingWindowController$FloatingWindowController;
 
     :cond_0
-    iget-object p0, p0, Lcom/oneplus/android/server/scene/OemSceneFloatingWindowController;->dea:Lcom/oneplus/android/server/scene/OemSceneFloatingWindowController$FloatingWindowController;
+    iget-object p0, p0, Lcom/oneplus/android/server/scene/OemSceneFloatingWindowController;->cfa:Lcom/oneplus/android/server/scene/OemSceneFloatingWindowController$FloatingWindowController;
 
     return-object p0
 .end method

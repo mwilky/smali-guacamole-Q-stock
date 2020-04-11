@@ -8,13 +8,13 @@
 
 .field private static final HDR_MODE:I = 0x2
 
-.field private static final Sa:I = 0x0
-
 .field private static final TAG:Ljava/lang/String; = "OpColorDisplayShellCommand"
 
-.field private static final Ta:I = 0x1
+.field private static final Wa:I = 0x0
 
-.field private static final Ua:I = 0x3
+.field private static final Xa:I = 0x1
+
+.field private static final Ya:I = 0x3
 
 
 # instance fields

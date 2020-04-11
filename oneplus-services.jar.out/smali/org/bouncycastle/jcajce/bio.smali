@@ -15,9 +15,9 @@
 
 
 # instance fields
-.field private final Wma:I
+.field private final Una:I
 
-.field private final Xma:Ljava/util/Set;
+.field private final Vna:Ljava/util/Set;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Set<",
@@ -27,7 +27,7 @@
     .end annotation
 .end field
 
-.field private final dBa:Lorg/bouncycastle/jcajce/wtn;
+.field private final bCa:Lorg/bouncycastle/jcajce/wtn;
 
 
 # direct methods
@@ -40,7 +40,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lorg/bouncycastle/jcajce/bio;->dBa:Lorg/bouncycastle/jcajce/wtn;
+    iput-object v0, p0, Lorg/bouncycastle/jcajce/bio;->bCa:Lorg/bouncycastle/jcajce/wtn;
 
     invoke-static {p1}, Lorg/bouncycastle/jcajce/bio$zta;->you(Lorg/bouncycastle/jcajce/bio$zta;)Ljava/util/Set;
 
@@ -50,13 +50,13 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lorg/bouncycastle/jcajce/bio;->Xma:Ljava/util/Set;
+    iput-object v0, p0, Lorg/bouncycastle/jcajce/bio;->Vna:Ljava/util/Set;
 
     invoke-static {p1}, Lorg/bouncycastle/jcajce/bio$zta;->sis(Lorg/bouncycastle/jcajce/bio$zta;)I
 
     move-result p1
 
-    iput p1, p0, Lorg/bouncycastle/jcajce/bio;->Wma:I
+    iput p1, p0, Lorg/bouncycastle/jcajce/bio;->Una:I
 
     return-void
 .end method
@@ -71,16 +71,16 @@
 
 
 # virtual methods
-.method public _f()Ljava/util/Set;
+.method public clone()Ljava/lang/Object;
     .locals 0
-
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/bio;->Xma:Ljava/util/Set;
 
     return-object p0
 .end method
 
-.method public clone()Ljava/lang/Object;
+.method public dg()Ljava/util/Set;
     .locals 0
+
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/bio;->Vna:Ljava/util/Set;
 
     return-object p0
 .end method
@@ -88,15 +88,15 @@
 .method public getMaxPathLength()I
     .locals 0
 
-    iget p0, p0, Lorg/bouncycastle/jcajce/bio;->Wma:I
+    iget p0, p0, Lorg/bouncycastle/jcajce/bio;->Una:I
 
     return p0
 .end method
 
-.method public oj()Lorg/bouncycastle/jcajce/wtn;
+.method public sj()Lorg/bouncycastle/jcajce/wtn;
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/bio;->dBa:Lorg/bouncycastle/jcajce/wtn;
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/bio;->bCa:Lorg/bouncycastle/jcajce/wtn;
 
     return-object p0
 .end method

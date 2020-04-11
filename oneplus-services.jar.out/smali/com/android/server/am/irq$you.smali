@@ -29,15 +29,15 @@
 # instance fields
 .field createTime:Ljava/lang/String;
 
-.field jn:J
-
-.field kn:J
-
-.field ln:I
-
-.field mn:Ljava/lang/String;
+.field nn:J
 
 .field pkgName:Ljava/lang/String;
+
+.field pn:J
+
+.field qn:I
+
+.field rn:Ljava/lang/String;
 
 .field final synthetic this$0:Lcom/android/server/am/irq;
 
@@ -66,17 +66,17 @@
 
     const-wide/16 v0, 0x0
 
-    iput-wide v0, p0, Lcom/android/server/am/irq$you;->jn:J
+    iput-wide v0, p0, Lcom/android/server/am/irq$you;->nn:J
 
-    iput-wide v0, p0, Lcom/android/server/am/irq$you;->kn:J
+    iput-wide v0, p0, Lcom/android/server/am/irq$you;->pn:J
 
     const/4 v0, 0x0
 
-    iput v0, p0, Lcom/android/server/am/irq$you;->ln:I
+    iput v0, p0, Lcom/android/server/am/irq$you;->qn:I
 
     const-string v0, ""
 
-    iput-object v0, p0, Lcom/android/server/am/irq$you;->mn:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/server/am/irq$you;->rn:Ljava/lang/String;
 
     monitor-enter p0
 
@@ -89,9 +89,9 @@
 
     iput-object v0, p0, Lcom/android/server/am/irq$you;->pkgName:Ljava/lang/String;
 
-    iget-object p2, p2, Lcom/android/server/am/irq$bio;->En:Ljava/lang/String;
+    iget-object p2, p2, Lcom/android/server/am/irq$bio;->In:Ljava/lang/String;
 
-    iput-object p2, p0, Lcom/android/server/am/irq$you;->mn:Ljava/lang/String;
+    iput-object p2, p0, Lcom/android/server/am/irq$you;->rn:Ljava/lang/String;
 
     invoke-static {p1}, Lcom/android/server/am/irq;->rtg(Lcom/android/server/am/irq;)Ljava/text/SimpleDateFormat;
 
@@ -115,7 +115,7 @@
 
     move-result-wide p1
 
-    iput-wide p1, p0, Lcom/android/server/am/irq$you;->jn:J
+    iput-wide p1, p0, Lcom/android/server/am/irq$you;->nn:J
 
     monitor-exit p0
 
@@ -160,17 +160,17 @@
 
     const-wide/16 v0, 0x0
 
-    iput-wide v0, p0, Lcom/android/server/am/irq$you;->jn:J
+    iput-wide v0, p0, Lcom/android/server/am/irq$you;->nn:J
 
-    iput-wide v0, p0, Lcom/android/server/am/irq$you;->kn:J
+    iput-wide v0, p0, Lcom/android/server/am/irq$you;->pn:J
 
     const/4 p1, 0x0
 
-    iput p1, p0, Lcom/android/server/am/irq$you;->ln:I
+    iput p1, p0, Lcom/android/server/am/irq$you;->qn:I
 
     const-string p1, ""
 
-    iput-object p1, p0, Lcom/android/server/am/irq$you;->mn:Ljava/lang/String;
+    iput-object p1, p0, Lcom/android/server/am/irq$you;->rn:Ljava/lang/String;
 
     monitor-enter p2
 
@@ -187,21 +187,21 @@
 
     iput-object p1, p0, Lcom/android/server/am/irq$you;->createTime:Ljava/lang/String;
 
-    iget-wide v0, p2, Lcom/android/server/am/irq$you;->jn:J
+    iget-wide v0, p2, Lcom/android/server/am/irq$you;->nn:J
 
-    iput-wide v0, p0, Lcom/android/server/am/irq$you;->jn:J
+    iput-wide v0, p0, Lcom/android/server/am/irq$you;->nn:J
 
-    iget-wide v0, p2, Lcom/android/server/am/irq$you;->kn:J
+    iget-wide v0, p2, Lcom/android/server/am/irq$you;->pn:J
 
-    iput-wide v0, p0, Lcom/android/server/am/irq$you;->kn:J
+    iput-wide v0, p0, Lcom/android/server/am/irq$you;->pn:J
 
-    iget p1, p2, Lcom/android/server/am/irq$you;->ln:I
+    iget p1, p2, Lcom/android/server/am/irq$you;->qn:I
 
-    iput p1, p0, Lcom/android/server/am/irq$you;->ln:I
+    iput p1, p0, Lcom/android/server/am/irq$you;->qn:I
 
-    iget-object p1, p2, Lcom/android/server/am/irq$you;->mn:Ljava/lang/String;
+    iget-object p1, p2, Lcom/android/server/am/irq$you;->rn:Ljava/lang/String;
 
-    iput-object p1, p0, Lcom/android/server/am/irq$you;->mn:Ljava/lang/String;
+    iput-object p1, p0, Lcom/android/server/am/irq$you;->rn:Ljava/lang/String;
 
     monitor-exit p2
 
@@ -225,15 +225,15 @@
     return-void
 .end method
 
-.method private Ra(I)V
+.method private Ua(I)V
     .locals 0
 
     monitor-enter p0
 
     :try_start_0
-    invoke-direct {p0}, Lcom/android/server/am/irq$you;->tm()V
+    invoke-direct {p0}, Lcom/android/server/am/irq$you;->xm()V
 
-    iput p1, p0, Lcom/android/server/am/irq$you;->ln:I
+    iput p1, p0, Lcom/android/server/am/irq$you;->qn:I
 
     monitor-exit p0
 
@@ -259,9 +259,9 @@
     return v0
 
     :cond_0
-    iget-wide v1, p0, Lcom/android/server/am/irq$you;->jn:J
+    iget-wide v1, p0, Lcom/android/server/am/irq$you;->nn:J
 
-    iget-wide v3, p1, Lcom/android/server/am/irq$you;->jn:J
+    iget-wide v3, p1, Lcom/android/server/am/irq$you;->nn:J
 
     cmp-long v1, v1, v3
 
@@ -281,42 +281,7 @@
     return v0
 .end method
 
-.method private tm()V
-    .locals 4
-
-    monitor-enter p0
-
-    :try_start_0
-    iget v0, p0, Lcom/android/server/am/irq$you;->ln:I
-
-    if-nez v0, :cond_0
-
-    invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
-
-    move-result-wide v0
-
-    iget-wide v2, p0, Lcom/android/server/am/irq$you;->jn:J
-
-    sub-long/2addr v0, v2
-
-    iput-wide v0, p0, Lcom/android/server/am/irq$you;->kn:J
-
-    :cond_0
-    monitor-exit p0
-
-    return-void
-
-    :catchall_0
-    move-exception v0
-
-    monitor-exit p0
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    throw v0
-.end method
-
-.method private yb(Ljava/lang/String;)V
+.method private t(Ljava/lang/String;)V
     .locals 0
 
     monitor-enter p0
@@ -338,10 +303,45 @@
     throw p1
 .end method
 
+.method private xm()V
+    .locals 4
+
+    monitor-enter p0
+
+    :try_start_0
+    iget v0, p0, Lcom/android/server/am/irq$you;->qn:I
+
+    if-nez v0, :cond_0
+
+    invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
+
+    move-result-wide v0
+
+    iget-wide v2, p0, Lcom/android/server/am/irq$you;->nn:J
+
+    sub-long/2addr v0, v2
+
+    iput-wide v0, p0, Lcom/android/server/am/irq$you;->pn:J
+
+    :cond_0
+    monitor-exit p0
+
+    return-void
+
+    :catchall_0
+    move-exception v0
+
+    monitor-exit p0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    throw v0
+.end method
+
 .method static synthetic zta(Lcom/android/server/am/irq$you;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/am/irq$you;->tm()V
+    invoke-direct {p0}, Lcom/android/server/am/irq$you;->xm()V
 
     return-void
 .end method
@@ -349,7 +349,7 @@
 .method static synthetic zta(Lcom/android/server/am/irq$you;I)V
     .locals 0
 
-    invoke-direct {p0, p1}, Lcom/android/server/am/irq$you;->Ra(I)V
+    invoke-direct {p0, p1}, Lcom/android/server/am/irq$you;->Ua(I)V
 
     return-void
 .end method
@@ -357,7 +357,7 @@
 .method static synthetic zta(Lcom/android/server/am/irq$you;Ljava/lang/String;)V
     .locals 0
 
-    invoke-direct {p0, p1}, Lcom/android/server/am/irq$you;->yb(Ljava/lang/String;)V
+    invoke-direct {p0, p1}, Lcom/android/server/am/irq$you;->t(Ljava/lang/String;)V
 
     return-void
 .end method
@@ -392,23 +392,23 @@
     monitor-enter p0
 
     :try_start_0
-    iget v0, p0, Lcom/android/server/am/irq$you;->ln:I
+    iget v0, p0, Lcom/android/server/am/irq$you;->qn:I
 
     if-nez v0, :cond_0
 
-    invoke-direct {p0}, Lcom/android/server/am/irq$you;->tm()V
+    invoke-direct {p0}, Lcom/android/server/am/irq$you;->xm()V
 
     :cond_0
-    iget v0, p1, Lcom/android/server/am/irq$you;->ln:I
+    iget v0, p1, Lcom/android/server/am/irq$you;->qn:I
 
     if-nez v0, :cond_1
 
-    invoke-direct {p1}, Lcom/android/server/am/irq$you;->tm()V
+    invoke-direct {p1}, Lcom/android/server/am/irq$you;->xm()V
 
     :cond_1
-    iget-wide v0, p0, Lcom/android/server/am/irq$you;->kn:J
+    iget-wide v0, p0, Lcom/android/server/am/irq$you;->pn:J
 
-    iget-wide v2, p1, Lcom/android/server/am/irq$you;->kn:J
+    iget-wide v2, p1, Lcom/android/server/am/irq$you;->pn:J
 
     cmp-long v0, v0, v2
 
@@ -421,9 +421,9 @@
     return p1
 
     :cond_2
-    iget-wide v0, p0, Lcom/android/server/am/irq$you;->kn:J
+    iget-wide v0, p0, Lcom/android/server/am/irq$you;->pn:J
 
-    iget-wide v2, p1, Lcom/android/server/am/irq$you;->kn:J
+    iget-wide v2, p1, Lcom/android/server/am/irq$you;->pn:J
 
     cmp-long p1, v0, v2
 

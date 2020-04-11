@@ -15,7 +15,9 @@
 
 
 # static fields
-.field static Bc:Ljava/util/ArrayList; = null
+.field private static final DEBUG:Z
+
+.field static Fc:Ljava/util/ArrayList; = null
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/ArrayList<",
@@ -25,7 +27,7 @@
     .end annotation
 .end field
 
-.field static Cc:Landroid/util/ArrayMap; = null
+.field static Gc:Landroid/util/ArrayMap; = null
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Landroid/util/ArrayMap<",
@@ -35,33 +37,31 @@
         }
     .end annotation
 .end field
-
-.field private static final DEBUG:Z
-
-.field static Dc:Landroid/util/ArrayMap; = null
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Landroid/util/ArrayMap<",
-            "Ljava/lang/Integer;",
-            "Ljava/lang/String;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private static final Ec:I = 0xdac0
-
-.field private static final Fc:J = 0x1f4L
-
-.field private static final Gc:J = 0x320L
 
 .field private static final HIGH_POWER_INTERVAL_MS:J = 0x493e0L
+
+.field static Hc:Landroid/util/ArrayMap; = null
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Landroid/util/ArrayMap<",
+            "Ljava/lang/Integer;",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private static final Ic:I = 0xdac0
+
+.field private static final Jc:J = 0x1f4L
+
+.field private static final Kc:J = 0x320L
 
 .field private static final MESSAGE_CANCEL:I = 0xdac1
 
 .field private static final TAG:Ljava/lang/String;
 
-.field static rc:Ljava/util/ArrayList;
+.field static vc:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/ArrayList<",
@@ -73,7 +73,23 @@
 
 
 # instance fields
-.field Ac:Landroid/content/Intent;
+.field public Ac:Ljava/util/ArrayList;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/ArrayList<",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private volatile Bc:J
+
+.field private volatile Cc:Z
+
+.field Dc:I
+
+.field Ec:Landroid/content/Intent;
 
 .field private mAction:Ljava/lang/String;
 
@@ -99,7 +115,7 @@
 
 .field private mUserManager:Landroid/os/UserManager;
 
-.field public vc:Ljava/util/ArrayList;
+.field public zc:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/ArrayList<",
@@ -108,22 +124,6 @@
         }
     .end annotation
 .end field
-
-.field public wc:Ljava/util/ArrayList;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/ArrayList<",
-            "Ljava/lang/String;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private volatile xc:J
-
-.field private volatile yc:Z
-
-.field zc:I
 
 
 # direct methods
@@ -134,19 +134,19 @@
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    sput-object v0, Lcom/android/server/qbh;->Bc:Ljava/util/ArrayList;
+    sput-object v0, Lcom/android/server/qbh;->Fc:Ljava/util/ArrayList;
 
     new-instance v0, Landroid/util/ArrayMap;
 
     invoke-direct {v0}, Landroid/util/ArrayMap;-><init>()V
 
-    sput-object v0, Lcom/android/server/qbh;->Cc:Landroid/util/ArrayMap;
+    sput-object v0, Lcom/android/server/qbh;->Gc:Landroid/util/ArrayMap;
 
     new-instance v0, Landroid/util/ArrayMap;
 
     invoke-direct {v0}, Landroid/util/ArrayMap;-><init>()V
 
-    sput-object v0, Lcom/android/server/qbh;->Dc:Landroid/util/ArrayMap;
+    sput-object v0, Lcom/android/server/qbh;->Hc:Landroid/util/ArrayMap;
 
     const-class v0, Lcom/android/server/qbh;
 
@@ -164,7 +164,7 @@
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    sput-object v0, Lcom/android/server/qbh;->rc:Ljava/util/ArrayList;
+    sput-object v0, Lcom/android/server/qbh;->vc:Ljava/util/ArrayList;
 
     return-void
 .end method
@@ -178,23 +178,23 @@
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/android/server/qbh;->vc:Ljava/util/ArrayList;
+    iput-object v0, p0, Lcom/android/server/qbh;->zc:Ljava/util/ArrayList;
 
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/android/server/qbh;->wc:Ljava/util/ArrayList;
+    iput-object v0, p0, Lcom/android/server/qbh;->Ac:Ljava/util/ArrayList;
 
     const-wide/16 v0, -0x1
 
-    iput-wide v0, p0, Lcom/android/server/qbh;->xc:J
+    iput-wide v0, p0, Lcom/android/server/qbh;->Bc:J
 
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/android/server/qbh;->yc:Z
+    iput-boolean v0, p0, Lcom/android/server/qbh;->Cc:Z
 
-    iput v0, p0, Lcom/android/server/qbh;->zc:I
+    iput v0, p0, Lcom/android/server/qbh;->Dc:I
 
     const-string v0, "android.intent.oneplus.gpsforcestop"
 
@@ -208,7 +208,7 @@
 
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/android/server/qbh;->Ac:Landroid/content/Intent;
+    iput-object v0, p0, Lcom/android/server/qbh;->Ec:Landroid/content/Intent;
 
     iput-object v0, p0, Lcom/android/server/qbh;->mPendingIntent:Landroid/app/PendingIntent;
 
@@ -239,7 +239,7 @@
     return-object v0
 .end method
 
-.method private jl()Z
+.method private nl()Z
     .locals 2
 
     iget-object v0, p0, Lcom/android/server/qbh;->mLocationManager:Landroid/location/LocationManager;
@@ -301,7 +301,7 @@
 .method static synthetic zta(Lcom/android/server/qbh;J)J
     .locals 0
 
-    iput-wide p1, p0, Lcom/android/server/qbh;->xc:J
+    iput-wide p1, p0, Lcom/android/server/qbh;->Bc:J
 
     return-wide p1
 .end method
@@ -317,7 +317,7 @@
 .method static synthetic zta(Lcom/android/server/qbh;Z)Z
     .locals 0
 
-    iput-boolean p1, p0, Lcom/android/server/qbh;->yc:Z
+    iput-boolean p1, p0, Lcom/android/server/qbh;->Cc:Z
 
     return p1
 .end method
@@ -567,7 +567,7 @@
 
     if-nez v2, :cond_5
 
-    sget-object v2, Lcom/android/server/qbh;->rc:Ljava/util/ArrayList;
+    sget-object v2, Lcom/android/server/qbh;->vc:Ljava/util/ArrayList;
 
     iget-object v3, v1, Lcom/android/server/LocationManagerService$UpdateRecord;->mReceiver:Lcom/android/server/LocationManagerService$Receiver;
 
@@ -778,7 +778,7 @@
 
     if-nez v2, :cond_3
 
-    sget-object v2, Lcom/android/server/qbh;->rc:Ljava/util/ArrayList;
+    sget-object v2, Lcom/android/server/qbh;->vc:Ljava/util/ArrayList;
 
     iget-object v3, v1, Lcom/android/server/LocationManagerService$UpdateRecord;->mReceiver:Lcom/android/server/LocationManagerService$Receiver;
 
@@ -915,15 +915,15 @@
 
     invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    iput-object v0, p0, Lcom/android/server/qbh;->Ac:Landroid/content/Intent;
+    iput-object v0, p0, Lcom/android/server/qbh;->Ec:Landroid/content/Intent;
 
-    iget-object v0, p0, Lcom/android/server/qbh;->Ac:Landroid/content/Intent;
+    iget-object v0, p0, Lcom/android/server/qbh;->Ec:Landroid/content/Intent;
 
     const/high16 v1, 0x4000000
 
     invoke-virtual {v0, v1}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
 
-    iget-object p0, p0, Lcom/android/server/qbh;->Ac:Landroid/content/Intent;
+    iget-object p0, p0, Lcom/android/server/qbh;->Ec:Landroid/content/Intent;
 
     const/high16 v0, 0x20000000
 
@@ -935,22 +935,22 @@
 .method public u()V
     .locals 13
 
-    iget-object v0, p0, Lcom/android/server/qbh;->vc:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/server/qbh;->zc:Ljava/util/ArrayList;
 
     monitor-enter v0
 
     :try_start_0
-    iget-object v1, p0, Lcom/android/server/qbh;->wc:Ljava/util/ArrayList;
+    iget-object v1, p0, Lcom/android/server/qbh;->Ac:Ljava/util/ArrayList;
 
     invoke-virtual {v1}, Ljava/util/ArrayList;->clear()V
 
-    iget-object v1, p0, Lcom/android/server/qbh;->wc:Ljava/util/ArrayList;
+    iget-object v1, p0, Lcom/android/server/qbh;->Ac:Ljava/util/ArrayList;
 
-    iget-object v2, p0, Lcom/android/server/qbh;->vc:Ljava/util/ArrayList;
+    iget-object v2, p0, Lcom/android/server/qbh;->zc:Ljava/util/ArrayList;
 
     invoke-virtual {v1, v2}, Ljava/util/ArrayList;->addAll(Ljava/util/Collection;)Z
 
-    iget-object v1, p0, Lcom/android/server/qbh;->vc:Ljava/util/ArrayList;
+    iget-object v1, p0, Lcom/android/server/qbh;->zc:Ljava/util/ArrayList;
 
     invoke-virtual {v1}, Ljava/util/ArrayList;->size()I
 
@@ -963,7 +963,7 @@
     return-void
 
     :cond_0
-    iget-object v1, p0, Lcom/android/server/qbh;->vc:Ljava/util/ArrayList;
+    iget-object v1, p0, Lcom/android/server/qbh;->zc:Ljava/util/ArrayList;
 
     invoke-virtual {v1}, Ljava/util/ArrayList;->size()I
 
@@ -983,7 +983,7 @@
     move v1, v3
 
     :goto_0
-    iget-object v4, p0, Lcom/android/server/qbh;->vc:Ljava/util/ArrayList;
+    iget-object v4, p0, Lcom/android/server/qbh;->zc:Ljava/util/ArrayList;
 
     invoke-virtual {v4}, Ljava/util/ArrayList;->size()I
 
@@ -1001,7 +1001,7 @@
     if-ltz v4, :cond_4
 
     :try_start_1
-    iget-object v7, p0, Lcom/android/server/qbh;->vc:Ljava/util/ArrayList;
+    iget-object v7, p0, Lcom/android/server/qbh;->zc:Ljava/util/ArrayList;
 
     invoke-virtual {v7, v4}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -1125,7 +1125,7 @@
 
     if-eqz v0, :cond_5
 
-    iget-object v0, p0, Lcom/android/server/qbh;->vc:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/server/qbh;->zc:Ljava/util/ArrayList;
 
     monitor-enter v0
 
@@ -1140,7 +1140,7 @@
 
     invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v8, p0, Lcom/android/server/qbh;->vc:Ljava/util/ArrayList;
+    iget-object v8, p0, Lcom/android/server/qbh;->zc:Ljava/util/ArrayList;
 
     invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -1171,13 +1171,13 @@
 
     :cond_5
     :goto_5
-    const v0, 0x50d0040
+    const v0, 0x50d0041
 
     if-eqz v1, :cond_6
 
     iget-object v1, p0, Lcom/android/server/qbh;->mContext:Landroid/content/Context;
 
-    const v4, 0x50d0041
+    const v4, 0x50d0042
 
     invoke-virtual {v1, v4}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
@@ -1201,7 +1201,7 @@
 
     const/4 v8, 0x0
 
-    iget-object v9, p0, Lcom/android/server/qbh;->Ac:Landroid/content/Intent;
+    iget-object v9, p0, Lcom/android/server/qbh;->Ec:Landroid/content/Intent;
 
     const/high16 v10, 0x8000000
 

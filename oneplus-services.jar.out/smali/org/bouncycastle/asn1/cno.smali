@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field private final roa:Ljava/util/Vector;
+.field private final qpa:Ljava/util/Vector;
 
 
 # direct methods
@@ -17,7 +17,7 @@
 
     invoke-direct {v0}, Ljava/util/Vector;-><init>()V
 
-    iput-object v0, p0, Lorg/bouncycastle/asn1/cno;->roa:Ljava/util/Vector;
+    iput-object v0, p0, Lorg/bouncycastle/asn1/cno;->qpa:Ljava/util/Vector;
 
     return-void
 .end method
@@ -27,7 +27,7 @@
 .method public get(I)Lorg/bouncycastle/asn1/ssp;
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/asn1/cno;->roa:Ljava/util/Vector;
+    iget-object p0, p0, Lorg/bouncycastle/asn1/cno;->qpa:Ljava/util/Vector;
 
     invoke-virtual {p0, p1}, Ljava/util/Vector;->elementAt(I)Ljava/lang/Object;
 
@@ -41,7 +41,7 @@
 .method public size()I
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/asn1/cno;->roa:Ljava/util/Vector;
+    iget-object p0, p0, Lorg/bouncycastle/asn1/cno;->qpa:Ljava/util/Vector;
 
     invoke-virtual {p0}, Ljava/util/Vector;->size()I
 
@@ -53,7 +53,7 @@
 .method public you(Lorg/bouncycastle/asn1/ssp;)V
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/asn1/cno;->roa:Ljava/util/Vector;
+    iget-object p0, p0, Lorg/bouncycastle/asn1/cno;->qpa:Ljava/util/Vector;
 
     invoke-virtual {p0, p1}, Ljava/util/Vector;->addElement(Ljava/lang/Object;)V
 
@@ -63,7 +63,7 @@
 .method public zta(Lorg/bouncycastle/asn1/cno;)V
     .locals 2
 
-    iget-object p1, p1, Lorg/bouncycastle/asn1/cno;->roa:Ljava/util/Vector;
+    iget-object p1, p1, Lorg/bouncycastle/asn1/cno;->qpa:Ljava/util/Vector;
 
     invoke-virtual {p1}, Ljava/util/Vector;->elements()Ljava/util/Enumeration;
 
@@ -76,7 +76,7 @@
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lorg/bouncycastle/asn1/cno;->roa:Ljava/util/Vector;
+    iget-object v0, p0, Lorg/bouncycastle/asn1/cno;->qpa:Ljava/util/Vector;
 
     invoke-interface {p1}, Ljava/util/Enumeration;->nextElement()Ljava/lang/Object;
 

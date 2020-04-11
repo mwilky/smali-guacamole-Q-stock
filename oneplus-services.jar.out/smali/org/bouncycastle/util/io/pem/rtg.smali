@@ -18,7 +18,7 @@
     return-void
 .end method
 
-.method private Mc(Ljava/lang/String;)Lorg/bouncycastle/util/io/pem/you;
+.method private Pc(Ljava/lang/String;)Lorg/bouncycastle/util/io/pem/you;
     .locals 6
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -203,7 +203,7 @@
 
     if-lez v1, :cond_1
 
-    invoke-direct {p0, v0}, Lorg/bouncycastle/util/io/pem/rtg;->Mc(Ljava/lang/String;)Lorg/bouncycastle/util/io/pem/you;
+    invoke-direct {p0, v0}, Lorg/bouncycastle/util/io/pem/rtg;->Pc(Ljava/lang/String;)Lorg/bouncycastle/util/io/pem/you;
 
     move-result-object p0
 

@@ -15,28 +15,36 @@
 
 
 # instance fields
-.field public final Yi:Ljava/lang/String;
+.field public final Mu:Z
+
+.field public final bj:Ljava/lang/String;
 
 .field public final mCurAdj:I
 
 .field public final mPid:I
 
+.field public final mThread:Landroid/app/IApplicationThread;
+
 .field public final mUid:I
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;III)V
+.method public constructor <init>(Ljava/lang/String;IIIZLandroid/app/IApplicationThread;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lcom/android/server/am/OnePlusMemoryTracker$zta;->Yi:Ljava/lang/String;
+    iput-object p1, p0, Lcom/android/server/am/OnePlusMemoryTracker$zta;->bj:Ljava/lang/String;
 
     iput p2, p0, Lcom/android/server/am/OnePlusMemoryTracker$zta;->mUid:I
 
     iput p3, p0, Lcom/android/server/am/OnePlusMemoryTracker$zta;->mPid:I
 
     iput p4, p0, Lcom/android/server/am/OnePlusMemoryTracker$zta;->mCurAdj:I
+
+    iput-boolean p5, p0, Lcom/android/server/am/OnePlusMemoryTracker$zta;->Mu:Z
+
+    iput-object p6, p0, Lcom/android/server/am/OnePlusMemoryTracker$zta;->mThread:Landroid/app/IApplicationThread;
 
     return-void
 .end method
@@ -82,7 +90,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object p0, p0, Lcom/android/server/am/OnePlusMemoryTracker$zta;->Yi:Ljava/lang/String;
+    iget-object p0, p0, Lcom/android/server/am/OnePlusMemoryTracker$zta;->bj:Ljava/lang/String;
 
     invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 

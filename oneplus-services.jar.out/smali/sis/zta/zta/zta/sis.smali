@@ -6,17 +6,17 @@
 # static fields
 .field public static final CUSTOM:I = 0x1
 
+.field public static final KGa:I = 0x2
+
+.field public static final LGa:I = 0x3
+
 .field public static final MAX:I = 0x8
 
-.field public static final MFa:I = 0x2
+.field public static final MGa:I = 0x4
 
-.field public static final NFa:I = 0x3
+.field public static final NGa:I = 0x5
 
-.field public static final OFa:I = 0x4
-
-.field public static final PFa:I = 0x5
-
-.field public static final QFa:I = 0x6
+.field public static final OGa:I = 0x6
 
 .field public static final SRGB:I = 0x7
 

@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field private awa:Lorg/bouncycastle/crypto/wtn/you;
+.field private Zwa:Lorg/bouncycastle/crypto/wtn/you;
 
-.field private bwa:Lorg/bouncycastle/crypto/wtn/you;
+.field private _wa:Lorg/bouncycastle/crypto/wtn/you;
 
 
 # direct methods
@@ -17,11 +17,11 @@
 
     check-cast p1, Lorg/bouncycastle/crypto/wtn/you;
 
-    iput-object p1, p0, Lorg/bouncycastle/crypto/you;->awa:Lorg/bouncycastle/crypto/wtn/you;
+    iput-object p1, p0, Lorg/bouncycastle/crypto/you;->Zwa:Lorg/bouncycastle/crypto/wtn/you;
 
     check-cast p2, Lorg/bouncycastle/crypto/wtn/you;
 
-    iput-object p2, p0, Lorg/bouncycastle/crypto/you;->bwa:Lorg/bouncycastle/crypto/wtn/you;
+    iput-object p2, p0, Lorg/bouncycastle/crypto/you;->_wa:Lorg/bouncycastle/crypto/wtn/you;
 
     return-void
 .end method
@@ -31,9 +31,9 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lorg/bouncycastle/crypto/you;->awa:Lorg/bouncycastle/crypto/wtn/you;
+    iput-object p1, p0, Lorg/bouncycastle/crypto/you;->Zwa:Lorg/bouncycastle/crypto/wtn/you;
 
-    iput-object p2, p0, Lorg/bouncycastle/crypto/you;->bwa:Lorg/bouncycastle/crypto/wtn/you;
+    iput-object p2, p0, Lorg/bouncycastle/crypto/you;->_wa:Lorg/bouncycastle/crypto/wtn/you;
 
     return-void
 .end method
@@ -43,7 +43,7 @@
 .method public getPrivate()Lorg/bouncycastle/crypto/wtn/you;
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/crypto/you;->bwa:Lorg/bouncycastle/crypto/wtn/you;
+    iget-object p0, p0, Lorg/bouncycastle/crypto/you;->_wa:Lorg/bouncycastle/crypto/wtn/you;
 
     return-object p0
 .end method
@@ -51,7 +51,7 @@
 .method public getPublic()Lorg/bouncycastle/crypto/wtn/you;
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/crypto/you;->awa:Lorg/bouncycastle/crypto/wtn/you;
+    iget-object p0, p0, Lorg/bouncycastle/crypto/you;->Zwa:Lorg/bouncycastle/crypto/wtn/you;
 
     return-object p0
 .end method

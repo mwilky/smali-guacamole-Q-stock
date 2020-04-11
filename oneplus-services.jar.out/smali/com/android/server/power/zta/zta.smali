@@ -8,9 +8,9 @@
 
 
 # instance fields
-.field private QJ:Ljava/lang/Integer;
+.field private QK:Ljava/lang/Integer;
 
-.field private RJ:Ljava/lang/Integer;
+.field private RK:Ljava/lang/Integer;
 
 .field private id:Ljava/lang/Integer;
 
@@ -35,9 +35,9 @@
 
     iput-object p2, p0, Lcom/android/server/power/zta/zta;->pkg:Ljava/lang/String;
 
-    iput-object p3, p0, Lcom/android/server/power/zta/zta;->QJ:Ljava/lang/Integer;
+    iput-object p3, p0, Lcom/android/server/power/zta/zta;->QK:Ljava/lang/Integer;
 
-    iput-object p4, p0, Lcom/android/server/power/zta/zta;->RJ:Ljava/lang/Integer;
+    iput-object p4, p0, Lcom/android/server/power/zta/zta;->RK:Ljava/lang/Integer;
 
     return-void
 .end method
@@ -49,9 +49,9 @@
 
     iput-object p1, p0, Lcom/android/server/power/zta/zta;->pkg:Ljava/lang/String;
 
-    iput-object p2, p0, Lcom/android/server/power/zta/zta;->QJ:Ljava/lang/Integer;
+    iput-object p2, p0, Lcom/android/server/power/zta/zta;->QK:Ljava/lang/Integer;
 
-    iput-object p3, p0, Lcom/android/server/power/zta/zta;->RJ:Ljava/lang/Integer;
+    iput-object p3, p0, Lcom/android/server/power/zta/zta;->RK:Ljava/lang/Integer;
 
     return-void
 .end method
@@ -78,7 +78,7 @@
 
 
 # virtual methods
-.method public S(Ljava/lang/String;)Ljava/lang/String;
+.method public T(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
 
     new-instance v0, Ljava/lang/StringBuilder;
@@ -107,7 +107,7 @@
 
     invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object p1, p0, Lcom/android/server/power/zta/zta;->QJ:Ljava/lang/Integer;
+    iget-object p1, p0, Lcom/android/server/power/zta/zta;->QK:Ljava/lang/Integer;
 
     invoke-direct {p0, p1}, Lcom/android/server/power/zta/zta;->tsu(Ljava/lang/Integer;)Ljava/lang/String;
 
@@ -119,7 +119,7 @@
 
     invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object p1, p0, Lcom/android/server/power/zta/zta;->RJ:Ljava/lang/Integer;
+    iget-object p1, p0, Lcom/android/server/power/zta/zta;->RK:Ljava/lang/Integer;
 
     invoke-direct {p0, p1}, Lcom/android/server/power/zta/zta;->tsu(Ljava/lang/Integer;)Ljava/lang/String;
 
@@ -138,7 +138,7 @@
     return-object p0
 .end method
 
-.method public T(Ljava/lang/String;)V
+.method public U(Ljava/lang/String;)V
     .locals 0
 
     iput-object p1, p0, Lcom/android/server/power/zta/zta;->pkg:Ljava/lang/String;
@@ -157,7 +157,7 @@
 .method public getMobile()Ljava/lang/Integer;
     .locals 0
 
-    iget-object p0, p0, Lcom/android/server/power/zta/zta;->RJ:Ljava/lang/Integer;
+    iget-object p0, p0, Lcom/android/server/power/zta/zta;->RK:Ljava/lang/Integer;
 
     return-object p0
 .end method
@@ -170,10 +170,10 @@
     return-object p0
 .end method
 
-.method public od()Ljava/lang/Integer;
+.method public sd()Ljava/lang/Integer;
     .locals 0
 
-    iget-object p0, p0, Lcom/android/server/power/zta/zta;->QJ:Ljava/lang/Integer;
+    iget-object p0, p0, Lcom/android/server/power/zta/zta;->QK:Ljava/lang/Integer;
 
     return-object p0
 .end method
@@ -181,7 +181,7 @@
 .method public sis(Ljava/lang/Integer;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/android/server/power/zta/zta;->QJ:Ljava/lang/Integer;
+    iput-object p1, p0, Lcom/android/server/power/zta/zta;->QK:Ljava/lang/Integer;
 
     return-void
 .end method
@@ -189,7 +189,7 @@
 .method public you(Ljava/lang/Integer;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/android/server/power/zta/zta;->RJ:Ljava/lang/Integer;
+    iput-object p1, p0, Lcom/android/server/power/zta/zta;->RK:Ljava/lang/Integer;
 
     return-void
 .end method

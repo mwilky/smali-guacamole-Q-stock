@@ -15,7 +15,7 @@
 
 
 # static fields
-.field static final synthetic qd:[I
+.field static final synthetic td:[I
 
 
 # direct methods
@@ -30,10 +30,10 @@
 
     new-array v0, v0, [I
 
-    sput-object v0, Lcom/android/server/oxb;->qd:[I
+    sput-object v0, Lcom/android/server/oxb;->td:[I
 
     :try_start_0
-    sget-object v0, Lcom/android/server/oxb;->qd:[I
+    sget-object v0, Lcom/android/server/oxb;->td:[I
 
     sget-object v1, Lcom/android/server/AlarmManagerService$AlarmAlignmentReason;->DOZE_READDALARMLOCKED:Lcom/android/server/AlarmManagerService$AlarmAlignmentReason;
 
@@ -49,7 +49,7 @@
 
     :catch_0
     :try_start_1
-    sget-object v0, Lcom/android/server/oxb;->qd:[I
+    sget-object v0, Lcom/android/server/oxb;->td:[I
 
     sget-object v1, Lcom/android/server/AlarmManagerService$AlarmAlignmentReason;->DOZE_SETALARM:Lcom/android/server/AlarmManagerService$AlarmAlignmentReason;
 
@@ -65,7 +65,7 @@
 
     :catch_1
     :try_start_2
-    sget-object v0, Lcom/android/server/oxb;->qd:[I
+    sget-object v0, Lcom/android/server/oxb;->td:[I
 
     sget-object v1, Lcom/android/server/AlarmManagerService$AlarmAlignmentReason;->FROZEN_SETALARM:Lcom/android/server/AlarmManagerService$AlarmAlignmentReason;
 
@@ -81,7 +81,7 @@
 
     :catch_2
     :try_start_3
-    sget-object v0, Lcom/android/server/oxb;->qd:[I
+    sget-object v0, Lcom/android/server/oxb;->td:[I
 
     sget-object v1, Lcom/android/server/AlarmManagerService$AlarmAlignmentReason;->FROZEN_TRIGGERALARM:Lcom/android/server/AlarmManagerService$AlarmAlignmentReason;
 

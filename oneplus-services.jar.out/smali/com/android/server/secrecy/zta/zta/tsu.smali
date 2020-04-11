@@ -6,15 +6,15 @@
 # static fields
 .field private static final TAG:Ljava/lang/String; = "SecrecyService.Utils"
 
-.field private static sL:Ljava/lang/String; = "/sys/devices/download_info/upgrade_download_time1"
+.field private static qM:Ljava/lang/String; = "/sys/devices/download_info/upgrade_download_time1"
 
-.field private static tL:Ljava/lang/String; = "/sys/devices/download_info/intranet"
+.field private static rM:Ljava/lang/String; = "/sys/devices/download_info/intranet"
 
-.field private static uL:Ljava/lang/String; = "[1-9][0-9]{3}/[0-9]{2}/[0-9]{2}"
+.field private static sM:Ljava/lang/String; = "[1-9][0-9]{3}/[0-9]{2}/[0-9]{2}"
 
-.field private static vL:Ljava/lang/String; = "[0-9]{2}:[0-9]{2}:[0-9]{2}"
+.field private static tM:Ljava/lang/String; = "[0-9]{2}:[0-9]{2}:[0-9]{2}"
 
-.field private static final wL:I = 0x1
+.field private static final uM:I = 0x1
 
 
 # direct methods
@@ -32,30 +32,61 @@
     return-void
 .end method
 
-.method public static Gd()Z
+.method private static Co()Ljava/lang/String;
     .locals 1
 
-    invoke-static {}, Lcom/android/server/secrecy/zta/zta/sis;->Gd()Z
+    const-string v0, "none"
+
+    return-object v0
+.end method
+
+.method private static Do()Z
+    .locals 2
+
+    sget-object v0, Landroid/os/Build;->HARDWARE:Ljava/lang/String;
+
+    const-string v1, "qcom"
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    const/4 v0, 0x1
+
+    return v0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    return v0
+.end method
+
+.method public static Kd()Z
+    .locals 1
+
+    invoke-static {}, Lcom/android/server/secrecy/zta/zta/sis;->Kd()Z
 
     move-result v0
 
     return v0
 .end method
 
-.method public static Hd()Ljava/lang/String;
+.method public static Ld()Ljava/lang/String;
     .locals 1
 
-    invoke-static {}, Lcom/android/server/secrecy/zta/zta/sis;->Fd()Ljava/lang/String;
+    invoke-static {}, Lcom/android/server/secrecy/zta/zta/sis;->Jd()Ljava/lang/String;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public static ba(Ljava/lang/String;)Ljava/lang/String;
+.method public static ca(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
 
-    sget-object v0, Lcom/android/server/secrecy/zta/zta/tsu;->uL:Ljava/lang/String;
+    sget-object v0, Lcom/android/server/secrecy/zta/zta/tsu;->sM:Ljava/lang/String;
 
     invoke-static {v0}, Ljava/util/regex/Pattern;->compile(Ljava/lang/String;)Ljava/util/regex/Pattern;
 
@@ -102,10 +133,10 @@
     return-object v0
 .end method
 
-.method public static ca(Ljava/lang/String;)Ljava/lang/String;
+.method public static da(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
 
-    sget-object v0, Lcom/android/server/secrecy/zta/zta/tsu;->vL:Ljava/lang/String;
+    sget-object v0, Lcom/android/server/secrecy/zta/zta/tsu;->tM:Ljava/lang/String;
 
     invoke-static {v0}, Ljava/util/regex/Pattern;->compile(Ljava/lang/String;)Ljava/util/regex/Pattern;
 
@@ -152,7 +183,82 @@
     return-object v0
 .end method
 
-.method public static da(Ljava/lang/String;)Ljava/lang/String;
+.method public static dma(Ljava/lang/String;Ljava/lang/String;)J
+    .locals 3
+
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string p0, " "
+
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p0
+
+    new-instance p1, Ljava/text/SimpleDateFormat;
+
+    const-string v0, "yyyy/MM/dd HH:mm:ss"
+
+    invoke-direct {p1, v0}, Ljava/text/SimpleDateFormat;-><init>(Ljava/lang/String;)V
+
+    const-wide/16 v0, 0x0
+
+    :try_start_0
+    const-string v2, "Asia/Shanghai"
+
+    invoke-static {v2}, Ljava/util/TimeZone;->getTimeZone(Ljava/lang/String;)Ljava/util/TimeZone;
+
+    move-result-object v2
+
+    invoke-virtual {p1, v2}, Ljava/text/SimpleDateFormat;->setTimeZone(Ljava/util/TimeZone;)V
+
+    invoke-virtual {p1, p0}, Ljava/text/SimpleDateFormat;->parse(Ljava/lang/String;)Ljava/util/Date;
+
+    move-result-object p0
+
+    invoke-virtual {p0}, Ljava/util/Date;->getTime()J
+
+    move-result-wide v0
+
+    const-string p0, "SecrecyService.Utils"
+
+    new-instance p1, Ljava/lang/StringBuilder;
+
+    invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v2, "downloadTime = "
+
+    invoke-virtual {p1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p1, v0, v1}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-static {p0, p1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    :try_end_0
+    .catch Ljava/text/ParseException; {:try_start_0 .. :try_end_0} :catch_0
+
+    goto :goto_0
+
+    :catch_0
+    move-exception p0
+
+    invoke-virtual {p0}, Ljava/text/ParseException;->printStackTrace()V
+
+    :goto_0
+    return-wide v0
+.end method
+
+.method public static ea(Ljava/lang/String;)Ljava/lang/String;
     .locals 6
 
     const-string v0, "readStringFromFile io close exception :"
@@ -354,110 +460,4 @@
     :cond_1
     :goto_4
     throw p0
-.end method
-
-.method public static dma(Ljava/lang/String;Ljava/lang/String;)J
-    .locals 3
-
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string p0, " "
-
-    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p0
-
-    new-instance p1, Ljava/text/SimpleDateFormat;
-
-    const-string v0, "yyyy/MM/dd HH:mm:ss"
-
-    invoke-direct {p1, v0}, Ljava/text/SimpleDateFormat;-><init>(Ljava/lang/String;)V
-
-    const-wide/16 v0, 0x0
-
-    :try_start_0
-    const-string v2, "Asia/Shanghai"
-
-    invoke-static {v2}, Ljava/util/TimeZone;->getTimeZone(Ljava/lang/String;)Ljava/util/TimeZone;
-
-    move-result-object v2
-
-    invoke-virtual {p1, v2}, Ljava/text/SimpleDateFormat;->setTimeZone(Ljava/util/TimeZone;)V
-
-    invoke-virtual {p1, p0}, Ljava/text/SimpleDateFormat;->parse(Ljava/lang/String;)Ljava/util/Date;
-
-    move-result-object p0
-
-    invoke-virtual {p0}, Ljava/util/Date;->getTime()J
-
-    move-result-wide v0
-
-    const-string p0, "SecrecyService.Utils"
-
-    new-instance p1, Ljava/lang/StringBuilder;
-
-    invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v2, "downloadTime = "
-
-    invoke-virtual {p1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p1, v0, v1}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p1
-
-    invoke-static {p0, p1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    :try_end_0
-    .catch Ljava/text/ParseException; {:try_start_0 .. :try_end_0} :catch_0
-
-    goto :goto_0
-
-    :catch_0
-    move-exception p0
-
-    invoke-virtual {p0}, Ljava/text/ParseException;->printStackTrace()V
-
-    :goto_0
-    return-wide v0
-.end method
-
-.method private static ro()Ljava/lang/String;
-    .locals 1
-
-    const-string v0, "none"
-
-    return-object v0
-.end method
-
-.method private static so()Z
-    .locals 2
-
-    sget-object v0, Landroid/os/Build;->HARDWARE:Ljava/lang/String;
-
-    const-string v1, "qcom"
-
-    invoke-virtual {v0, v1}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    const/4 v0, 0x1
-
-    return v0
-
-    :cond_0
-    const/4 v0, 0x0
-
-    return v0
 .end method

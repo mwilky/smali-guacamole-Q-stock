@@ -11,11 +11,11 @@
 
 
 # instance fields
-.field private Dya:Lorg/bouncycastle/crypto/rtg/gck;
+.field private Bza:Lorg/bouncycastle/crypto/rtg/gck;
 
 .field private key:Lorg/bouncycastle/crypto/wtn/veq;
 
-.field private yla:Ljava/security/SecureRandom;
+.field private xma:Ljava/security/SecureRandom;
 
 
 # direct methods
@@ -42,7 +42,7 @@
 
     invoke-direct {v0}, Lorg/bouncycastle/crypto/rtg/gck;-><init>()V
 
-    iput-object v0, p0, Lorg/bouncycastle/crypto/rtg/wtn;->Dya:Lorg/bouncycastle/crypto/rtg/gck;
+    iput-object v0, p0, Lorg/bouncycastle/crypto/rtg/wtn;->Bza:Lorg/bouncycastle/crypto/rtg/gck;
 
     return-void
 .end method
@@ -52,7 +52,7 @@
 .method public d()I
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/crypto/rtg/wtn;->Dya:Lorg/bouncycastle/crypto/rtg/gck;
+    iget-object p0, p0, Lorg/bouncycastle/crypto/rtg/wtn;->Bza:Lorg/bouncycastle/crypto/rtg/gck;
 
     invoke-virtual {p0}, Lorg/bouncycastle/crypto/rtg/gck;->d()I
 
@@ -64,7 +64,7 @@
 .method public ivd()I
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/crypto/rtg/wtn;->Dya:Lorg/bouncycastle/crypto/rtg/gck;
+    iget-object p0, p0, Lorg/bouncycastle/crypto/rtg/wtn;->Bza:Lorg/bouncycastle/crypto/rtg/gck;
 
     invoke-virtual {p0}, Lorg/bouncycastle/crypto/rtg/gck;->ivd()I
 
@@ -80,7 +80,7 @@
 
     if-eqz v0, :cond_2
 
-    iget-object v0, p0, Lorg/bouncycastle/crypto/rtg/wtn;->Dya:Lorg/bouncycastle/crypto/rtg/gck;
+    iget-object v0, p0, Lorg/bouncycastle/crypto/rtg/wtn;->Bza:Lorg/bouncycastle/crypto/rtg/gck;
 
     invoke-virtual {v0, p1, p2, p3}, Lorg/bouncycastle/crypto/rtg/gck;->cno([BII)Ljava/math/BigInteger;
 
@@ -110,7 +110,7 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lorg/bouncycastle/crypto/rtg/wtn;->yla:Ljava/security/SecureRandom;
+    iget-object v2, p0, Lorg/bouncycastle/crypto/rtg/wtn;->xma:Ljava/security/SecureRandom;
 
     invoke-static {v0, v1, v2}, Lorg/bouncycastle/util/you;->you(Ljava/math/BigInteger;Ljava/math/BigInteger;Ljava/security/SecureRandom;)Ljava/math/BigInteger;
 
@@ -128,7 +128,7 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lorg/bouncycastle/crypto/rtg/wtn;->Dya:Lorg/bouncycastle/crypto/rtg/gck;
+    iget-object v2, p0, Lorg/bouncycastle/crypto/rtg/wtn;->Bza:Lorg/bouncycastle/crypto/rtg/gck;
 
     invoke-virtual {v2, v1}, Lorg/bouncycastle/crypto/rtg/gck;->ssp(Ljava/math/BigInteger;)Ljava/math/BigInteger;
 
@@ -168,14 +168,14 @@
     throw p0
 
     :cond_1
-    iget-object p2, p0, Lorg/bouncycastle/crypto/rtg/wtn;->Dya:Lorg/bouncycastle/crypto/rtg/gck;
+    iget-object p2, p0, Lorg/bouncycastle/crypto/rtg/wtn;->Bza:Lorg/bouncycastle/crypto/rtg/gck;
 
     invoke-virtual {p2, p1}, Lorg/bouncycastle/crypto/rtg/gck;->ssp(Ljava/math/BigInteger;)Ljava/math/BigInteger;
 
     move-result-object v0
 
     :goto_0
-    iget-object p0, p0, Lorg/bouncycastle/crypto/rtg/wtn;->Dya:Lorg/bouncycastle/crypto/rtg/gck;
+    iget-object p0, p0, Lorg/bouncycastle/crypto/rtg/wtn;->Bza:Lorg/bouncycastle/crypto/rtg/gck;
 
     invoke-virtual {p0, v0}, Lorg/bouncycastle/crypto/rtg/gck;->rtg(Ljava/math/BigInteger;)[B
 
@@ -196,7 +196,7 @@
 .method public zta(ZLorg/bouncycastle/crypto/kth;)V
     .locals 1
 
-    iget-object v0, p0, Lorg/bouncycastle/crypto/rtg/wtn;->Dya:Lorg/bouncycastle/crypto/rtg/gck;
+    iget-object v0, p0, Lorg/bouncycastle/crypto/rtg/wtn;->Bza:Lorg/bouncycastle/crypto/rtg/gck;
 
     invoke-virtual {v0, p1, p2}, Lorg/bouncycastle/crypto/rtg/gck;->zta(ZLorg/bouncycastle/crypto/kth;)V
 
@@ -214,7 +214,7 @@
 
     iput-object p1, p0, Lorg/bouncycastle/crypto/rtg/wtn;->key:Lorg/bouncycastle/crypto/wtn/veq;
 
-    invoke-virtual {p2}, Lorg/bouncycastle/crypto/wtn/hmo;->Vi()Ljava/security/SecureRandom;
+    invoke-virtual {p2}, Lorg/bouncycastle/crypto/wtn/hmo;->Zi()Ljava/security/SecureRandom;
 
     move-result-object p1
 
@@ -225,12 +225,12 @@
 
     iput-object p2, p0, Lorg/bouncycastle/crypto/rtg/wtn;->key:Lorg/bouncycastle/crypto/wtn/veq;
 
-    invoke-static {}, Lorg/bouncycastle/crypto/igw;->Ui()Ljava/security/SecureRandom;
+    invoke-static {}, Lorg/bouncycastle/crypto/igw;->Yi()Ljava/security/SecureRandom;
 
     move-result-object p1
 
     :goto_0
-    iput-object p1, p0, Lorg/bouncycastle/crypto/rtg/wtn;->yla:Ljava/security/SecureRandom;
+    iput-object p1, p0, Lorg/bouncycastle/crypto/rtg/wtn;->xma:Ljava/security/SecureRandom;
 
     return-void
 .end method

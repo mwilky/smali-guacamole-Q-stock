@@ -4,13 +4,13 @@
 
 
 # instance fields
-.field protected Hla:Lorg/bouncycastle/crypto/cno;
+.field protected Gma:Lorg/bouncycastle/crypto/cno;
 
-.field protected boa:Ljava/lang/String;
+.field protected apa:Ljava/lang/String;
 
-.field protected coa:I
+.field protected bpa:I
 
-.field protected doa:Z
+.field protected cpa:Z
 
 .field protected keySize:I
 
@@ -23,15 +23,15 @@
 
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/tsu;->doa:Z
+    iput-boolean v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/tsu;->cpa:Z
 
-    iput-object p1, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/tsu;->boa:Ljava/lang/String;
+    iput-object p1, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/tsu;->apa:Ljava/lang/String;
 
-    iput p2, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/tsu;->coa:I
+    iput p2, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/tsu;->bpa:I
 
     iput p2, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/tsu;->keySize:I
 
-    iput-object p3, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/tsu;->Hla:Lorg/bouncycastle/crypto/cno;
+    iput-object p3, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/tsu;->Gma:Lorg/bouncycastle/crypto/cno;
 
     return-void
 .end method
@@ -41,19 +41,19 @@
 .method protected engineGenerateKey()Ljavax/crypto/SecretKey;
     .locals 4
 
-    iget-boolean v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/tsu;->doa:Z
+    iget-boolean v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/tsu;->cpa:Z
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/tsu;->Hla:Lorg/bouncycastle/crypto/cno;
+    iget-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/tsu;->Gma:Lorg/bouncycastle/crypto/cno;
 
     new-instance v1, Lorg/bouncycastle/crypto/bvj;
 
-    invoke-static {}, Lorg/bouncycastle/crypto/igw;->Ui()Ljava/security/SecureRandom;
+    invoke-static {}, Lorg/bouncycastle/crypto/igw;->Yi()Ljava/security/SecureRandom;
 
     move-result-object v2
 
-    iget v3, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/tsu;->coa:I
+    iget v3, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/tsu;->bpa:I
 
     invoke-direct {v1, v2, v3}, Lorg/bouncycastle/crypto/bvj;-><init>(Ljava/security/SecureRandom;I)V
 
@@ -61,18 +61,18 @@
 
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/tsu;->doa:Z
+    iput-boolean v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/tsu;->cpa:Z
 
     :cond_0
     new-instance v0, Ljavax/crypto/spec/SecretKeySpec;
 
-    iget-object v1, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/tsu;->Hla:Lorg/bouncycastle/crypto/cno;
+    iget-object v1, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/tsu;->Gma:Lorg/bouncycastle/crypto/cno;
 
     invoke-virtual {v1}, Lorg/bouncycastle/crypto/cno;->generateKey()[B
 
     move-result-object v1
 
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/tsu;->boa:Ljava/lang/String;
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/tsu;->apa:Ljava/lang/String;
 
     invoke-direct {v0, v1, p0}, Ljavax/crypto/spec/SecretKeySpec;-><init>([BLjava/lang/String;)V
 
@@ -85,12 +85,12 @@
     if-nez p2, :cond_0
 
     :try_start_0
-    invoke-static {}, Lorg/bouncycastle/crypto/igw;->Ui()Ljava/security/SecureRandom;
+    invoke-static {}, Lorg/bouncycastle/crypto/igw;->Yi()Ljava/security/SecureRandom;
 
     move-result-object p2
 
     :cond_0
-    iget-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/tsu;->Hla:Lorg/bouncycastle/crypto/cno;
+    iget-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/tsu;->Gma:Lorg/bouncycastle/crypto/cno;
 
     new-instance v1, Lorg/bouncycastle/crypto/bvj;
 
@@ -100,7 +100,7 @@
 
     const/4 p1, 0x0
 
-    iput-boolean p1, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/tsu;->doa:Z
+    iput-boolean p1, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/tsu;->cpa:Z
     :try_end_0
     .catch Ljava/lang/IllegalArgumentException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -125,11 +125,11 @@
 
     if-eqz p1, :cond_0
 
-    iget-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/tsu;->Hla:Lorg/bouncycastle/crypto/cno;
+    iget-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/tsu;->Gma:Lorg/bouncycastle/crypto/cno;
 
     new-instance v1, Lorg/bouncycastle/crypto/bvj;
 
-    iget v2, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/tsu;->coa:I
+    iget v2, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/tsu;->bpa:I
 
     invoke-direct {v1, p1, v2}, Lorg/bouncycastle/crypto/bvj;-><init>(Ljava/security/SecureRandom;I)V
 
@@ -137,7 +137,7 @@
 
     const/4 p1, 0x0
 
-    iput-boolean p1, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/tsu;->doa:Z
+    iput-boolean p1, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/tsu;->cpa:Z
 
     :cond_0
     return-void

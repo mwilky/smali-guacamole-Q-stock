@@ -15,83 +15,83 @@
 
 
 # static fields
-.field private static final CB:Ljava/lang/String; = "compatibility_config_values"
+.field private static final AC:Ljava/lang/String; = "compatibility_config_values"
+
+.field private static final CC:Ljava/lang/String; = "/data/system/oneplus_cpt_list.xml"
+
+.field private static final DC:Ljava/lang/String; = "/system/etc/oneplus_cpt_list.xml"
 
 .field private static final DEBUG:Z
-
-.field private static final EB:Ljava/lang/String; = "/data/system/oneplus_cpt_list.xml"
-
-.field private static final FB:Ljava/lang/String; = "/system/etc/oneplus_cpt_list.xml"
 
 .field public static final GPU_OUT_OF_MEMORY:I = 0xa8
 
 .field private static final TAG:Ljava/lang/String; = "OpCompatibilityHelper"
 
-.field private static final WB:Ljava/lang/String; = "/data/system/install_warning_list.xml"
+.field private static final VC:Ljava/lang/String; = "/data/system/install_warning_list.xml"
 
-.field private static final XB:Ljava/lang/String; = "/system/etc/install_warning_list.xml"
+.field private static final WC:Ljava/lang/String; = "/system/etc/install_warning_list.xml"
 
-.field private static final YB:Ljava/lang/String; = "CompatConfigList"
+.field private static final XC:Ljava/lang/String; = "CompatConfigList"
 
-.field private static final ZB:Ljava/lang/String; = "disable.install.warning"
+.field private static final YC:Ljava/lang/String; = "disable.install.warning"
 
-.field public static final _B:I = 0x0
+.field public static final ZC:I = 0x0
 
-.field public static final aC:I = 0x1
+.field public static final _C:I = 0x1
 
-.field public static final bC:I = 0x14b
+.field public static final aD:I = 0x14b
 
-.field public static final cC:I = 0x6b
+.field public static final bD:I = 0x6b
 
-.field public static final dC:I = 0x5f
+.field public static final cD:I = 0x5f
 
-.field public static final eC:I = 0x1bb
+.field public static final dD:I = 0x1bb
 
-.field public static final fC:I = 0x1bc
+.field public static final eD:I = 0x1bc
 
-.field public static final gC:I = 0x1bd
+.field public static final fD:I = 0x1bd
 
-.field public static final hC:I = 0x6f
+.field public static final gD:I = 0x6f
 
-.field public static final iC:I = 0x55
+.field public static final hD:I = 0x55
 
-.field public static final jC:I = 0x68
+.field public static final iD:I = 0x68
 
-.field public static final kC:I = 0x4e
+.field public static final jD:I = 0x4e
 
-.field public static final lC:I = 0xd3
+.field public static final kD:I = 0xd3
 
-.field public static final mC:I = 0x47
+.field public static final lD:I = 0x47
 
 .field private static mContext:Landroid/content/Context; = null
 
+.field public static final mD:I = 0x46
+
 .field private static mTotalCount:I = 0x0
 
-.field public static final nC:I = 0x46
+.field public static final nD:I = 0xf
 
-.field public static final oC:I = 0xf
+.field public static final oD:I = 0x1e8
 
-.field public static final pC:I = 0x1e8
+.field public static final pD:I = 0xe6
 
-.field public static final qC:I = 0xe6
+.field public static final qD:I = 0x50
 
-.field public static final rC:I = 0x50
-
-.field public static final sC:I = 0x2
+.field public static final rD:I = 0x2
 
 .field private static sConfigLock:Ljava/lang/Object; = null
 
-.field public static final tC:I = 0x1d7
+.field public static final sD:I = 0x1d7
 
-.field public static final uC:I = 0x1e6
+.field public static final tD:I = 0x1e6
 
-.field public static final vC:I = 0x14c
+.field public static final uD:I = 0x14c
 
-.field public static final wC:I = 0x166
+.field public static final vD:I = 0x166
 
-.field public static final xC:I = 0x186
+.field public static final wD:I = 0x186
 
-.field private static final yC:Ljava/util/Map;
+.field private static final xD:Ljava/util/Map;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Map<",
@@ -102,7 +102,7 @@
     .end annotation
 .end field
 
-.field private static final zC:Ljava/util/Map;
+.field private static final yD:Ljava/util/Map;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Map<",
@@ -115,7 +115,7 @@
 
 
 # instance fields
-.field private TB:Landroid/util/SparseArray;
+.field private SC:Landroid/util/SparseArray;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Landroid/util/SparseArray<",
@@ -126,7 +126,7 @@
     .end annotation
 .end field
 
-.field private UB:Ljava/util/Map;
+.field private TC:Ljava/util/Map;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Map<",
@@ -137,7 +137,7 @@
     .end annotation
 .end field
 
-.field private VB:Lcom/oneplus/config/ConfigObserver;
+.field private UC:Lcom/oneplus/config/ConfigObserver;
 
 
 # direct methods
@@ -168,9 +168,9 @@
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    sput-object v0, Lcom/android/server/pm/sis;->yC:Ljava/util/Map;
+    sput-object v0, Lcom/android/server/pm/sis;->xD:Ljava/util/Map;
 
-    sget-object v0, Lcom/android/server/pm/sis;->yC:Ljava/util/Map;
+    sget-object v0, Lcom/android/server/pm/sis;->xD:Ljava/util/Map;
 
     const/4 v1, 0x2
 
@@ -182,7 +182,7 @@
 
     invoke-interface {v0, v3, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    sget-object v0, Lcom/android/server/pm/sis;->yC:Ljava/util/Map;
+    sget-object v0, Lcom/android/server/pm/sis;->xD:Ljava/util/Map;
 
     const/4 v4, 0x1
 
@@ -194,7 +194,7 @@
 
     invoke-interface {v0, v5, v4}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    sget-object v0, Lcom/android/server/pm/sis;->yC:Ljava/util/Map;
+    sget-object v0, Lcom/android/server/pm/sis;->xD:Ljava/util/Map;
 
     const-string v6, "arm64-v8a"
 
@@ -204,17 +204,17 @@
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    sput-object v0, Lcom/android/server/pm/sis;->zC:Ljava/util/Map;
+    sput-object v0, Lcom/android/server/pm/sis;->yD:Ljava/util/Map;
 
-    sget-object v0, Lcom/android/server/pm/sis;->zC:Ljava/util/Map;
+    sget-object v0, Lcom/android/server/pm/sis;->yD:Ljava/util/Map;
 
     invoke-interface {v0, v1, v3}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    sget-object v0, Lcom/android/server/pm/sis;->zC:Ljava/util/Map;
+    sget-object v0, Lcom/android/server/pm/sis;->yD:Ljava/util/Map;
 
     invoke-interface {v0, v4, v5}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    sget-object v0, Lcom/android/server/pm/sis;->zC:Ljava/util/Map;
+    sget-object v0, Lcom/android/server/pm/sis;->yD:Ljava/util/Map;
 
     invoke-interface {v0, v2, v6}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -230,18 +230,18 @@
 
     invoke-direct {v0}, Landroid/util/SparseArray;-><init>()V
 
-    iput-object v0, p0, Lcom/android/server/pm/sis;->TB:Landroid/util/SparseArray;
+    iput-object v0, p0, Lcom/android/server/pm/sis;->SC:Landroid/util/SparseArray;
 
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    iput-object v0, p0, Lcom/android/server/pm/sis;->UB:Ljava/util/Map;
+    iput-object v0, p0, Lcom/android/server/pm/sis;->TC:Ljava/util/Map;
 
     return-void
 .end method
 
-.method private En()V
+.method private On()V
     .locals 8
 
     new-instance v0, Ljava/io/File;
@@ -297,7 +297,7 @@
     const/4 v4, 0x0
 
     :try_start_0
-    iget-object v5, p0, Lcom/android/server/pm/sis;->TB:Landroid/util/SparseArray;
+    iget-object v5, p0, Lcom/android/server/pm/sis;->SC:Landroid/util/SparseArray;
 
     invoke-virtual {v5}, Landroid/util/SparseArray;->clear()V
     :try_end_0
@@ -362,7 +362,7 @@
     goto :goto_3
 
     :cond_5
-    iget-object v4, p0, Lcom/android/server/pm/sis;->TB:Landroid/util/SparseArray;
+    iget-object v4, p0, Lcom/android/server/pm/sis;->SC:Landroid/util/SparseArray;
 
     invoke-virtual {v4, v0}, Landroid/util/SparseArray;->get(I)Ljava/lang/Object;
 
@@ -382,7 +382,7 @@
 
     invoke-virtual {v4, v7}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    iget-object v7, p0, Lcom/android/server/pm/sis;->TB:Landroid/util/SparseArray;
+    iget-object v7, p0, Lcom/android/server/pm/sis;->SC:Landroid/util/SparseArray;
 
     invoke-virtual {v7, v0, v4}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
 
@@ -462,7 +462,7 @@
     :try_start_5
     const-string v1, "/data/system/oneplus_cpt_list.xml"
 
-    iget-object v2, p0, Lcom/android/server/pm/sis;->TB:Landroid/util/SparseArray;
+    iget-object v2, p0, Lcom/android/server/pm/sis;->SC:Landroid/util/SparseArray;
 
     invoke-direct {p0, v1, v2}, Lcom/android/server/pm/sis;->zta(Ljava/lang/String;Landroid/util/SparseArray;)V
 
@@ -626,10 +626,10 @@
     throw p0
 .end method
 
-.method private Fn()V
+.method private Pn()V
     .locals 2
 
-    iget-object v0, p0, Lcom/android/server/pm/sis;->UB:Ljava/util/Map;
+    iget-object v0, p0, Lcom/android/server/pm/sis;->TC:Ljava/util/Map;
 
     invoke-interface {v0}, Ljava/util/Map;->clear()V
 
@@ -643,7 +643,7 @@
 
     move-result-object v0
 
-    invoke-direct {p0, v0}, Lcom/android/server/pm/sis;->Tb(Ljava/lang/String;)V
+    invoke-direct {p0, v0}, Lcom/android/server/pm/sis;->Wb(Ljava/lang/String;)V
 
     new-instance v0, Ljava/io/File;
 
@@ -655,7 +655,7 @@
 
     move-result-object v0
 
-    invoke-direct {p0, v0}, Lcom/android/server/pm/sis;->Tb(Ljava/lang/String;)V
+    invoke-direct {p0, v0}, Lcom/android/server/pm/sis;->Wb(Ljava/lang/String;)V
 
     new-instance v0, Ljava/io/File;
 
@@ -667,13 +667,13 @@
 
     if-nez v0, :cond_0
 
-    invoke-direct {p0}, Lcom/android/server/pm/sis;->Gn()V
+    invoke-direct {p0}, Lcom/android/server/pm/sis;->Qn()V
 
     :cond_0
     return-void
 .end method
 
-.method private Gn()V
+.method private Qn()V
     .locals 8
 
     invoke-static {}, Landroid/util/Xml;->newSerializer()Lorg/xmlpull/v1/XmlSerializer;
@@ -729,7 +729,7 @@
 
     invoke-interface {v0, v3}, Lorg/xmlpull/v1/XmlSerializer;->text(Ljava/lang/String;)Lorg/xmlpull/v1/XmlSerializer;
 
-    iget-object v3, p0, Lcom/android/server/pm/sis;->UB:Ljava/util/Map;
+    iget-object v3, p0, Lcom/android/server/pm/sis;->TC:Ljava/util/Map;
 
     monitor-enter v3
     :try_end_0
@@ -737,7 +737,7 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_2
 
     :try_start_1
-    iget-object p0, p0, Lcom/android/server/pm/sis;->UB:Ljava/util/Map;
+    iget-object p0, p0, Lcom/android/server/pm/sis;->TC:Ljava/util/Map;
 
     invoke-interface {p0}, Ljava/util/Map;->entrySet()Ljava/util/Set;
 
@@ -1027,7 +1027,7 @@
     throw p0
 .end method
 
-.method private Sb(Ljava/lang/String;)Z
+.method private Vb(Ljava/lang/String;)Z
     .locals 8
 
     const/4 v0, 0x1
@@ -1062,7 +1062,7 @@
 
     if-eqz v3, :cond_3
 
-    iget-object p1, p0, Lcom/android/server/pm/sis;->UB:Ljava/util/Map;
+    iget-object p1, p0, Lcom/android/server/pm/sis;->TC:Ljava/util/Map;
 
     invoke-interface {p1, v1}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
 
@@ -1070,7 +1070,7 @@
 
     if-eqz p1, :cond_2
 
-    iget-object p0, p0, Lcom/android/server/pm/sis;->UB:Ljava/util/Map;
+    iget-object p0, p0, Lcom/android/server/pm/sis;->TC:Ljava/util/Map;
 
     invoke-interface {p0, v1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -1095,7 +1095,7 @@
     return v0
 
     :cond_3
-    iget-object v3, p0, Lcom/android/server/pm/sis;->UB:Ljava/util/Map;
+    iget-object v3, p0, Lcom/android/server/pm/sis;->TC:Ljava/util/Map;
 
     invoke-interface {v3, v1}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
 
@@ -1103,7 +1103,7 @@
 
     if-eqz v3, :cond_4
 
-    iget-object v3, p0, Lcom/android/server/pm/sis;->UB:Ljava/util/Map;
+    iget-object v3, p0, Lcom/android/server/pm/sis;->TC:Ljava/util/Map;
 
     invoke-interface {v3, v1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -1145,7 +1145,7 @@
 
     move-result-object v3
 
-    iget-object v4, p0, Lcom/android/server/pm/sis;->UB:Ljava/util/Map;
+    iget-object v4, p0, Lcom/android/server/pm/sis;->TC:Ljava/util/Map;
 
     invoke-interface {v4, v3}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
 
@@ -1166,7 +1166,7 @@
 
     move-result-wide v4
 
-    iget-object p0, p0, Lcom/android/server/pm/sis;->UB:Ljava/util/Map;
+    iget-object p0, p0, Lcom/android/server/pm/sis;->TC:Ljava/util/Map;
 
     invoke-interface {p0, v3}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -1195,7 +1195,7 @@
     return v2
 .end method
 
-.method private Tb(Ljava/lang/String;)V
+.method private Wb(Ljava/lang/String;)V
     .locals 11
 
     const-string v0, "Got execption parsing warning list. "
@@ -1317,7 +1317,7 @@
 
     if-lez v6, :cond_2
 
-    iget-object v6, p0, Lcom/android/server/pm/sis;->UB:Ljava/util/Map;
+    iget-object v6, p0, Lcom/android/server/pm/sis;->TC:Ljava/util/Map;
 
     invoke-static {v9, v10}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
@@ -1482,7 +1482,7 @@
     throw p0
 .end method
 
-.method private Ub(Ljava/lang/String;)Z
+.method private Xb(Ljava/lang/String;)Z
     .locals 6
 
     const/4 v0, 0x1
@@ -1530,7 +1530,7 @@
 
     move-result-object v3
 
-    iget-object v4, p0, Lcom/android/server/pm/sis;->UB:Ljava/util/Map;
+    iget-object v4, p0, Lcom/android/server/pm/sis;->TC:Ljava/util/Map;
 
     invoke-interface {v4, v3}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
 
@@ -1551,7 +1551,7 @@
 
     move-result-wide v4
 
-    iget-object p0, p0, Lcom/android/server/pm/sis;->UB:Ljava/util/Map;
+    iget-object p0, p0, Lcom/android/server/pm/sis;->TC:Ljava/util/Map;
 
     invoke-interface {p0, v3}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -1580,7 +1580,7 @@
     return v2
 .end method
 
-.method private Vb(Ljava/lang/String;)Z
+.method private Yb(Ljava/lang/String;)Z
     .locals 3
 
     const/4 v0, 0x0
@@ -1623,12 +1623,12 @@
 
     move-result-wide v1
 
-    iget-object p1, p0, Lcom/android/server/pm/sis;->UB:Ljava/util/Map;
+    iget-object p1, p0, Lcom/android/server/pm/sis;->TC:Ljava/util/Map;
 
     monitor-enter p1
 
     :try_start_0
-    iget-object p0, p0, Lcom/android/server/pm/sis;->UB:Ljava/util/Map;
+    iget-object p0, p0, Lcom/android/server/pm/sis;->TC:Ljava/util/Map;
 
     invoke-static {v1, v2}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
@@ -1680,38 +1680,298 @@
     return v0
 .end method
 
-.method private qb(I)Ljava/lang/String;
-    .locals 2
+.method private cno(Lorg/json/JSONArray;)V
+    .locals 13
 
-    const/4 p0, 0x2
+    if-nez p1, :cond_0
 
-    new-array p0, p0, [C
+    return-void
 
-    div-int/lit8 v0, p1, 0x1a
+    :cond_0
+    :try_start_0
+    new-instance v0, Landroid/util/SparseArray;
 
-    add-int/lit8 v0, v0, 0x61
-
-    int-to-char v0, v0
+    invoke-direct {v0}, Landroid/util/SparseArray;-><init>()V
 
     const/4 v1, 0x0
 
-    aput-char v0, p0, v1
+    move v2, v1
 
-    rem-int/lit8 p1, p1, 0x1a
+    move v3, v2
 
-    add-int/lit8 p1, p1, 0x61
+    move v4, v3
 
-    int-to-char p1, p1
+    move v5, v4
 
-    const/4 v0, 0x1
+    :goto_0
+    invoke-virtual {p1}, Lorg/json/JSONArray;->length()I
 
-    aput-char p1, p0, v0
+    move-result v6
 
-    invoke-static {p0}, Ljava/lang/String;->valueOf([C)Ljava/lang/String;
+    const/4 v7, 0x1
+
+    if-ge v2, v6, :cond_8
+
+    invoke-virtual {p1, v2}, Lorg/json/JSONArray;->getJSONObject(I)Lorg/json/JSONObject;
+
+    move-result-object v6
+
+    const-string v8, "name"
+
+    invoke-virtual {v6, v8}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v8
+
+    const-string v9, "compatibility_config_values"
+
+    invoke-virtual {v8, v9}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v8
+
+    if-eqz v8, :cond_7
+
+    const-string v8, "value"
+
+    invoke-virtual {v6, v8}, Lorg/json/JSONObject;->getJSONArray(Ljava/lang/String;)Lorg/json/JSONArray;
+
+    move-result-object v6
+
+    move v8, v5
+
+    move v5, v4
+
+    move v4, v3
+
+    move v3, v1
+
+    :goto_1
+    invoke-virtual {v6}, Lorg/json/JSONArray;->length()I
+
+    move-result v9
+
+    if-ge v3, v9, :cond_6
+
+    invoke-virtual {v6, v3}, Lorg/json/JSONArray;->getJSONObject(I)Lorg/json/JSONObject;
+
+    move-result-object v9
+
+    const-string v10, "type"
+
+    invoke-virtual {v9, v10}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v10
+
+    invoke-virtual {v10}, Ljava/lang/String;->length()I
+
+    move-result v11
+
+    const/4 v12, 0x2
+
+    if-eq v11, v12, :cond_1
+
+    goto :goto_3
+
+    :cond_1
+    invoke-virtual {v10}, Ljava/lang/String;->toCharArray()[C
+
+    move-result-object v10
+
+    invoke-direct {p0, v10}, Lcom/android/server/pm/sis;->cno([C)I
+
+    move-result v10
+
+    const-string v11, "pkg"
+
+    invoke-virtual {v9, v11}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v9
+
+    const/16 v11, 0xe6
+
+    if-ne v10, v11, :cond_2
+
+    invoke-direct {p0, v9}, Lcom/android/server/pm/sis;->Xb(Ljava/lang/String;)Z
+
+    move-result v10
+
+    if-eqz v10, :cond_5
+
+    invoke-direct {p0, v9}, Lcom/android/server/pm/sis;->Yb(Ljava/lang/String;)Z
+
+    move-result v9
+
+    if-eqz v9, :cond_5
+
+    move v8, v7
+
+    goto :goto_3
+
+    :cond_2
+    invoke-virtual {v0, v10}, Landroid/util/SparseArray;->get(I)Ljava/lang/Object;
+
+    move-result-object v11
+
+    check-cast v11, Ljava/util/ArrayList;
+
+    if-nez v11, :cond_3
+
+    new-instance v11, Ljava/util/ArrayList;
+
+    invoke-direct {v11}, Ljava/util/ArrayList;-><init>()V
+
+    invoke-virtual {v11, v9}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    invoke-virtual {v0, v10, v11}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
+
+    goto :goto_2
+
+    :cond_3
+    invoke-virtual {v11, v9}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    :goto_2
+    if-nez v4, :cond_4
+
+    invoke-virtual {p0, v10, v9}, Lcom/android/server/pm/sis;->isInConfigList(ILjava/lang/String;)Z
+
+    move-result v9
+
+    if-nez v9, :cond_4
+
+    move v4, v7
+
+    :cond_4
+    add-int/lit8 v5, v5, 0x1
+
+    :cond_5
+    :goto_3
+    add-int/lit8 v3, v3, 0x1
+
+    goto :goto_1
+
+    :cond_6
+    move v3, v4
+
+    move v4, v5
+
+    move v5, v8
+
+    :cond_7
+    add-int/lit8 v2, v2, 0x1
+
+    goto/16 :goto_0
+
+    :cond_8
+    sget p1, Lcom/android/server/pm/sis;->mTotalCount:I
+
+    if-eq p1, v4, :cond_9
+
+    move v1, v7
+
+    :cond_9
+    or-int p1, v3, v1
+
+    sget-boolean v1, Lcom/android/server/pm/sis;->DEBUG:Z
+
+    if-eqz v1, :cond_b
+
+    const-string v1, "OpCompatibilityHelper"
+
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v3, "compatibility online config "
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    if-eqz p1, :cond_a
+
+    const-string v3, "changed."
+
+    goto :goto_4
+
+    :cond_a
+    const-string v3, "not change"
+
+    :goto_4
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-static {v1, v2}, Landroid/util/Slog;->i(Ljava/lang/String;Ljava/lang/String;)I
+
+    :cond_b
+    if-eqz p1, :cond_c
+
+    const-string p1, "/data/system/oneplus_cpt_list.xml"
+
+    invoke-direct {p0, p1, v0}, Lcom/android/server/pm/sis;->zta(Ljava/lang/String;Landroid/util/SparseArray;)V
+
+    sget-object p1, Lcom/android/server/pm/sis;->sConfigLock:Ljava/lang/Object;
+
+    monitor-enter p1
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    :try_start_1
+    iput-object v0, p0, Lcom/android/server/pm/sis;->SC:Landroid/util/SparseArray;
+
+    sput v4, Lcom/android/server/pm/sis;->mTotalCount:I
+
+    monitor-exit p1
+
+    goto :goto_5
+
+    :catchall_0
+    move-exception p0
+
+    monitor-exit p1
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    :try_start_2
+    throw p0
+
+    :cond_c
+    :goto_5
+    if-eqz v5, :cond_d
+
+    invoke-direct {p0}, Lcom/android/server/pm/sis;->Qn()V
+    :try_end_2
+    .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_0
+
+    goto :goto_6
+
+    :catch_0
+    move-exception p0
+
+    new-instance p1, Ljava/lang/StringBuilder;
+
+    invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v0, "resolveCompatConfigFromJSON, error message:"
+
+    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p0}, Ljava/lang/Exception;->getMessage()Ljava/lang/String;
 
     move-result-object p0
 
-    return-object p0
+    invoke-virtual {p1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p0
+
+    const-string p1, "OpCompatibilityHelper"
+
+    invoke-static {p1, p0}, Landroid/util/Slog;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    :cond_d
+    :goto_6
+    return-void
 .end method
 
 .method private readFromFile(Ljava/io/File;)Ljava/lang/String;
@@ -1897,300 +2157,6 @@
     return-void
 .end method
 
-.method private rtg(Lorg/json/JSONArray;)V
-    .locals 13
-
-    if-nez p1, :cond_0
-
-    return-void
-
-    :cond_0
-    :try_start_0
-    new-instance v0, Landroid/util/SparseArray;
-
-    invoke-direct {v0}, Landroid/util/SparseArray;-><init>()V
-
-    const/4 v1, 0x0
-
-    move v2, v1
-
-    move v3, v2
-
-    move v4, v3
-
-    move v5, v4
-
-    :goto_0
-    invoke-virtual {p1}, Lorg/json/JSONArray;->length()I
-
-    move-result v6
-
-    const/4 v7, 0x1
-
-    if-ge v2, v6, :cond_8
-
-    invoke-virtual {p1, v2}, Lorg/json/JSONArray;->getJSONObject(I)Lorg/json/JSONObject;
-
-    move-result-object v6
-
-    const-string v8, "name"
-
-    invoke-virtual {v6, v8}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v8
-
-    const-string v9, "compatibility_config_values"
-
-    invoke-virtual {v8, v9}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v8
-
-    if-eqz v8, :cond_7
-
-    const-string v8, "value"
-
-    invoke-virtual {v6, v8}, Lorg/json/JSONObject;->getJSONArray(Ljava/lang/String;)Lorg/json/JSONArray;
-
-    move-result-object v6
-
-    move v8, v5
-
-    move v5, v4
-
-    move v4, v3
-
-    move v3, v1
-
-    :goto_1
-    invoke-virtual {v6}, Lorg/json/JSONArray;->length()I
-
-    move-result v9
-
-    if-ge v3, v9, :cond_6
-
-    invoke-virtual {v6, v3}, Lorg/json/JSONArray;->getJSONObject(I)Lorg/json/JSONObject;
-
-    move-result-object v9
-
-    const-string v10, "type"
-
-    invoke-virtual {v9, v10}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v10
-
-    invoke-virtual {v10}, Ljava/lang/String;->length()I
-
-    move-result v11
-
-    const/4 v12, 0x2
-
-    if-eq v11, v12, :cond_1
-
-    goto :goto_3
-
-    :cond_1
-    invoke-virtual {v10}, Ljava/lang/String;->toCharArray()[C
-
-    move-result-object v10
-
-    invoke-direct {p0, v10}, Lcom/android/server/pm/sis;->cno([C)I
-
-    move-result v10
-
-    const-string v11, "pkg"
-
-    invoke-virtual {v9, v11}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v9
-
-    const/16 v11, 0xe6
-
-    if-ne v10, v11, :cond_2
-
-    invoke-direct {p0, v9}, Lcom/android/server/pm/sis;->Ub(Ljava/lang/String;)Z
-
-    move-result v10
-
-    if-eqz v10, :cond_5
-
-    invoke-direct {p0, v9}, Lcom/android/server/pm/sis;->Vb(Ljava/lang/String;)Z
-
-    move-result v9
-
-    if-eqz v9, :cond_5
-
-    move v8, v7
-
-    goto :goto_3
-
-    :cond_2
-    invoke-virtual {v0, v10}, Landroid/util/SparseArray;->get(I)Ljava/lang/Object;
-
-    move-result-object v11
-
-    check-cast v11, Ljava/util/ArrayList;
-
-    if-nez v11, :cond_3
-
-    new-instance v11, Ljava/util/ArrayList;
-
-    invoke-direct {v11}, Ljava/util/ArrayList;-><init>()V
-
-    invoke-virtual {v11, v9}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    invoke-virtual {v0, v10, v11}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
-
-    goto :goto_2
-
-    :cond_3
-    invoke-virtual {v11, v9}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    :goto_2
-    if-nez v4, :cond_4
-
-    invoke-virtual {p0, v10, v9}, Lcom/android/server/pm/sis;->isInConfigList(ILjava/lang/String;)Z
-
-    move-result v9
-
-    if-nez v9, :cond_4
-
-    move v4, v7
-
-    :cond_4
-    add-int/lit8 v5, v5, 0x1
-
-    :cond_5
-    :goto_3
-    add-int/lit8 v3, v3, 0x1
-
-    goto :goto_1
-
-    :cond_6
-    move v3, v4
-
-    move v4, v5
-
-    move v5, v8
-
-    :cond_7
-    add-int/lit8 v2, v2, 0x1
-
-    goto/16 :goto_0
-
-    :cond_8
-    sget p1, Lcom/android/server/pm/sis;->mTotalCount:I
-
-    if-eq p1, v4, :cond_9
-
-    move v1, v7
-
-    :cond_9
-    or-int p1, v3, v1
-
-    sget-boolean v1, Lcom/android/server/pm/sis;->DEBUG:Z
-
-    if-eqz v1, :cond_b
-
-    const-string v1, "OpCompatibilityHelper"
-
-    new-instance v2, Ljava/lang/StringBuilder;
-
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v3, "compatibility online config "
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    if-eqz p1, :cond_a
-
-    const-string v3, "changed."
-
-    goto :goto_4
-
-    :cond_a
-    const-string v3, "not change"
-
-    :goto_4
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-static {v1, v2}, Landroid/util/Slog;->i(Ljava/lang/String;Ljava/lang/String;)I
-
-    :cond_b
-    if-eqz p1, :cond_c
-
-    const-string p1, "/data/system/oneplus_cpt_list.xml"
-
-    invoke-direct {p0, p1, v0}, Lcom/android/server/pm/sis;->zta(Ljava/lang/String;Landroid/util/SparseArray;)V
-
-    sget-object p1, Lcom/android/server/pm/sis;->sConfigLock:Ljava/lang/Object;
-
-    monitor-enter p1
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
-
-    :try_start_1
-    iput-object v0, p0, Lcom/android/server/pm/sis;->TB:Landroid/util/SparseArray;
-
-    sput v4, Lcom/android/server/pm/sis;->mTotalCount:I
-
-    monitor-exit p1
-
-    goto :goto_5
-
-    :catchall_0
-    move-exception p0
-
-    monitor-exit p1
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
-    :try_start_2
-    throw p0
-
-    :cond_c
-    :goto_5
-    if-eqz v5, :cond_d
-
-    invoke-direct {p0}, Lcom/android/server/pm/sis;->Gn()V
-    :try_end_2
-    .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_0
-
-    goto :goto_6
-
-    :catch_0
-    move-exception p0
-
-    new-instance p1, Ljava/lang/StringBuilder;
-
-    invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v0, "resolveCompatConfigFromJSON, error message:"
-
-    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p0}, Ljava/lang/Exception;->getMessage()Ljava/lang/String;
-
-    move-result-object p0
-
-    invoke-virtual {p1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p0
-
-    const-string p1, "OpCompatibilityHelper"
-
-    invoke-static {p1, p0}, Landroid/util/Slog;->e(Ljava/lang/String;Ljava/lang/String;)I
-
-    :cond_d
-    :goto_6
-    return-void
-.end method
-
 .method private sis(Landroid/content/pm/PackageParser$Package;)V
     .locals 2
 
@@ -2260,6 +2226,40 @@
     return-void
 .end method
 
+.method private ub(I)Ljava/lang/String;
+    .locals 2
+
+    const/4 p0, 0x2
+
+    new-array p0, p0, [C
+
+    div-int/lit8 v0, p1, 0x1a
+
+    add-int/lit8 v0, v0, 0x61
+
+    int-to-char v0, v0
+
+    const/4 v1, 0x0
+
+    aput-char v0, p0, v1
+
+    rem-int/lit8 p1, p1, 0x1a
+
+    add-int/lit8 p1, p1, 0x61
+
+    int-to-char p1, p1
+
+    const/4 v0, 0x1
+
+    aput-char p1, p0, v0
+
+    invoke-static {p0}, Ljava/lang/String;->valueOf([C)Ljava/lang/String;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
 .method private you(Landroid/content/pm/PackageParser$Package;)V
     .locals 2
 
@@ -2311,7 +2311,7 @@
 .method static synthetic zta(Lcom/android/server/pm/sis;Lorg/json/JSONArray;)V
     .locals 0
 
-    invoke-direct {p0, p1}, Lcom/android/server/pm/sis;->rtg(Lorg/json/JSONArray;)V
+    invoke-direct {p0, p1}, Lcom/android/server/pm/sis;->cno(Lorg/json/JSONArray;)V
 
     return-void
 .end method
@@ -2407,7 +2407,7 @@
 
     check-cast v10, Ljava/util/ArrayList;
 
-    invoke-direct {p0, v9}, Lcom/android/server/pm/sis;->qb(I)Ljava/lang/String;
+    invoke-direct {p0, v9}, Lcom/android/server/pm/sis;->ub(I)Ljava/lang/String;
 
     move-result-object v9
 
@@ -2776,10 +2776,10 @@
 
 
 # virtual methods
-.method public L(Ljava/lang/String;)I
+.method public M(Ljava/lang/String;)I
     .locals 0
 
-    sget-object p0, Lcom/android/server/pm/sis;->yC:Ljava/util/Map;
+    sget-object p0, Lcom/android/server/pm/sis;->xD:Ljava/util/Map;
 
     invoke-interface {p0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -2922,7 +2922,7 @@
 
     :goto_0
     :try_start_0
-    iget-object v4, p0, Lcom/android/server/pm/sis;->TB:Landroid/util/SparseArray;
+    iget-object v4, p0, Lcom/android/server/pm/sis;->SC:Landroid/util/SparseArray;
 
     invoke-virtual {v4}, Landroid/util/SparseArray;->size()I
 
@@ -2930,7 +2930,7 @@
 
     if-ge v3, v4, :cond_0
 
-    iget-object v4, p0, Lcom/android/server/pm/sis;->TB:Landroid/util/SparseArray;
+    iget-object v4, p0, Lcom/android/server/pm/sis;->SC:Landroid/util/SparseArray;
 
     invoke-virtual {v4, v3}, Landroid/util/SparseArray;->keyAt(I)I
 
@@ -2952,7 +2952,7 @@
 
     invoke-virtual {v0, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v5, p0, Lcom/android/server/pm/sis;->TB:Landroid/util/SparseArray;
+    iget-object v5, p0, Lcom/android/server/pm/sis;->SC:Landroid/util/SparseArray;
 
     invoke-virtual {v5, v4}, Landroid/util/SparseArray;->get(I)Ljava/lang/Object;
 
@@ -2989,12 +2989,12 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
-    iget-object v3, p0, Lcom/android/server/pm/sis;->UB:Ljava/util/Map;
+    iget-object v3, p0, Lcom/android/server/pm/sis;->TC:Ljava/util/Map;
 
     monitor-enter v3
 
     :try_start_1
-    iget-object v1, p0, Lcom/android/server/pm/sis;->UB:Ljava/util/Map;
+    iget-object v1, p0, Lcom/android/server/pm/sis;->TC:Ljava/util/Map;
 
     invoke-interface {v1}, Ljava/util/Map;->size()I
 
@@ -3006,7 +3006,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object p0, p0, Lcom/android/server/pm/sis;->UB:Ljava/util/Map;
+    iget-object p0, p0, Lcom/android/server/pm/sis;->TC:Ljava/util/Map;
 
     invoke-interface {p0}, Ljava/util/Map;->entrySet()Ljava/util/Set;
 
@@ -3161,7 +3161,7 @@
     monitor-enter v1
 
     :try_start_0
-    iget-object v2, p0, Lcom/android/server/pm/sis;->TB:Landroid/util/SparseArray;
+    iget-object v2, p0, Lcom/android/server/pm/sis;->SC:Landroid/util/SparseArray;
 
     invoke-virtual {v2, p1}, Landroid/util/SparseArray;->indexOfKey(I)I
 
@@ -3169,7 +3169,7 @@
 
     if-ltz v2, :cond_3
 
-    iget-object p0, p0, Lcom/android/server/pm/sis;->TB:Landroid/util/SparseArray;
+    iget-object p0, p0, Lcom/android/server/pm/sis;->SC:Landroid/util/SparseArray;
 
     invoke-virtual {p0, p1}, Landroid/util/SparseArray;->get(I)Ljava/lang/Object;
 
@@ -3249,9 +3249,9 @@
 
     invoke-direct {v0, v1, v3, v2, v4}, Lcom/oneplus/config/ConfigObserver;-><init>(Landroid/content/Context;Landroid/os/Handler;Lcom/oneplus/config/ConfigObserver$ConfigUpdater;Ljava/lang/String;)V
 
-    iput-object v0, p0, Lcom/android/server/pm/sis;->VB:Lcom/oneplus/config/ConfigObserver;
+    iput-object v0, p0, Lcom/android/server/pm/sis;->UC:Lcom/oneplus/config/ConfigObserver;
 
-    iget-object p0, p0, Lcom/android/server/pm/sis;->VB:Lcom/oneplus/config/ConfigObserver;
+    iget-object p0, p0, Lcom/android/server/pm/sis;->UC:Lcom/oneplus/config/ConfigObserver;
 
     invoke-virtual {p0}, Lcom/oneplus/config/ConfigObserver;->register()V
 
@@ -3263,7 +3263,7 @@
 
     sput-object p1, Lcom/android/server/pm/sis;->mContext:Landroid/content/Context;
 
-    invoke-direct {p0}, Lcom/android/server/pm/sis;->En()V
+    invoke-direct {p0}, Lcom/android/server/pm/sis;->On()V
 
     const/4 p1, 0x1
 
@@ -3279,7 +3279,7 @@
 
     if-eqz p1, :cond_0
 
-    invoke-direct {p0}, Lcom/android/server/pm/sis;->Fn()V
+    invoke-direct {p0}, Lcom/android/server/pm/sis;->Pn()V
 
     :cond_0
     sget-boolean p1, Lcom/android/server/pm/sis;->DEBUG:Z
@@ -3305,7 +3305,7 @@
 
     if-ne p1, v0, :cond_0
 
-    invoke-direct {p0, p2}, Lcom/android/server/pm/sis;->Sb(Ljava/lang/String;)Z
+    invoke-direct {p0, p2}, Lcom/android/server/pm/sis;->Vb(Ljava/lang/String;)Z
 
     move-result p0
 
@@ -3317,7 +3317,7 @@
     monitor-enter v0
 
     :try_start_0
-    iget-object v1, p0, Lcom/android/server/pm/sis;->TB:Landroid/util/SparseArray;
+    iget-object v1, p0, Lcom/android/server/pm/sis;->SC:Landroid/util/SparseArray;
 
     invoke-virtual {v1, p1}, Landroid/util/SparseArray;->indexOfKey(I)I
 
@@ -3325,7 +3325,7 @@
 
     if-ltz v1, :cond_1
 
-    iget-object p0, p0, Lcom/android/server/pm/sis;->TB:Landroid/util/SparseArray;
+    iget-object p0, p0, Lcom/android/server/pm/sis;->SC:Landroid/util/SparseArray;
 
     invoke-virtual {p0, p1}, Landroid/util/SparseArray;->get(I)Ljava/lang/Object;
 
@@ -3362,10 +3362,10 @@
     throw p0
 .end method
 
-.method public p(I)Ljava/lang/String;
+.method public s(I)Ljava/lang/String;
     .locals 0
 
-    sget-object p0, Lcom/android/server/pm/sis;->zC:Ljava/util/Map;
+    sget-object p0, Lcom/android/server/pm/sis;->yD:Ljava/util/Map;
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 

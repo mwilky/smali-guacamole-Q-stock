@@ -86,7 +86,7 @@
 
     invoke-interface {p1, v0, p0}, Lorg/bouncycastle/jcajce/provider/config/zta;->zta(Ljava/lang/String;Ljava/lang/String;)V
 
-    sget-object p0, Lorg/bouncycastle/asn1/kth/zta;->AKa:Lorg/bouncycastle/asn1/bvj;
+    sget-object p0, Lorg/bouncycastle/asn1/kth/zta;->yLa:Lorg/bouncycastle/asn1/bvj;
 
     const-string v0, "BLOWFISH"
 
@@ -114,7 +114,7 @@
 
     invoke-interface {p1, v1, p0}, Lorg/bouncycastle/jcajce/provider/config/zta;->zta(Ljava/lang/String;Ljava/lang/String;)V
 
-    sget-object p0, Lorg/bouncycastle/asn1/kth/zta;->AKa:Lorg/bouncycastle/asn1/bvj;
+    sget-object p0, Lorg/bouncycastle/asn1/kth/zta;->yLa:Lorg/bouncycastle/asn1/bvj;
 
     const-string v1, "Alg.Alias.AlgorithmParameters"
 

@@ -6,13 +6,13 @@
 # static fields
 .field private static final EMPTY_BYTES:[B
 
-.field public static final XCa:Ljava/lang/String; = "bc_wnaf"
+.field public static final VDa:Ljava/lang/String; = "bc_wnaf"
 
-.field private static final oEa:[I
+.field private static final mFa:[I
 
-.field private static final pEa:[I
+.field private static final nFa:[I
 
-.field private static final qEa:[Lyou/zta/sis/zta/wtn;
+.field private static final oFa:[Lyou/zta/sis/zta/wtn;
 
 
 # direct methods
@@ -25,7 +25,7 @@
 
     fill-array-data v0, :array_0
 
-    sput-object v0, Lyou/zta/sis/zta/fto;->oEa:[I
+    sput-object v0, Lyou/zta/sis/zta/fto;->mFa:[I
 
     const/4 v0, 0x0
 
@@ -35,11 +35,11 @@
 
     new-array v1, v0, [I
 
-    sput-object v1, Lyou/zta/sis/zta/fto;->pEa:[I
+    sput-object v1, Lyou/zta/sis/zta/fto;->nFa:[I
 
     new-array v0, v0, [Lyou/zta/sis/zta/wtn;
 
-    sput-object v0, Lyou/zta/sis/zta/fto;->qEa:[Lyou/zta/sis/zta/wtn;
+    sput-object v0, Lyou/zta/sis/zta/fto;->oFa:[Lyou/zta/sis/zta/wtn;
 
     return-void
 
@@ -65,15 +65,15 @@
 .method static synthetic access$000()[Lyou/zta/sis/zta/wtn;
     .locals 1
 
-    sget-object v0, Lyou/zta/sis/zta/fto;->qEa:[Lyou/zta/sis/zta/wtn;
+    sget-object v0, Lyou/zta/sis/zta/fto;->oFa:[Lyou/zta/sis/zta/wtn;
 
     return-object v0
 .end method
 
-.method public static ia(I)I
+.method public static la(I)I
     .locals 1
 
-    sget-object v0, Lyou/zta/sis/zta/fto;->oEa:[I
+    sget-object v0, Lyou/zta/sis/zta/fto;->mFa:[I
 
     invoke-static {p0, v0}, Lyou/zta/sis/zta/fto;->ssp(I[I)I
 
@@ -390,7 +390,7 @@
 
     if-nez v0, :cond_0
 
-    sget-object p0, Lyou/zta/sis/zta/fto;->pEa:[I
+    sget-object p0, Lyou/zta/sis/zta/fto;->nFa:[I
 
     return-object p0
 
@@ -720,7 +720,7 @@
 
     if-nez v1, :cond_1
 
-    sget-object p0, Lyou/zta/sis/zta/fto;->pEa:[I
+    sget-object p0, Lyou/zta/sis/zta/fto;->nFa:[I
 
     return-object p0
 

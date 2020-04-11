@@ -15,9 +15,9 @@
 
 
 # instance fields
-.field Df:Lcom/android/server/power/OnePlusStandbyAnalyzer$ywr;
+.field FG:Z
 
-.field GF:Z
+.field Gf:Lcom/android/server/power/OnePlusStandbyAnalyzer$ywr;
 
 .field mTime:J
 
@@ -40,7 +40,7 @@
 
     invoke-direct {p1, v0, v1}, Lcom/android/server/power/OnePlusStandbyAnalyzer$ywr;-><init>(Lcom/android/server/power/OnePlusStandbyAnalyzer;Lcom/android/server/power/bio;)V
 
-    iput-object p1, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$ssp;->Df:Lcom/android/server/power/OnePlusStandbyAnalyzer$ywr;
+    iput-object p1, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$ssp;->Gf:Lcom/android/server/power/OnePlusStandbyAnalyzer$ywr;
 
     return-void
 .end method
@@ -55,7 +55,7 @@
 
 
 # virtual methods
-.method public declared-synchronized Nc()V
+.method public declared-synchronized Rc()V
     .locals 3
 
     monitor-enter p0
@@ -69,7 +69,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean v1, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$ssp;->GF:Z
+    iget-boolean v1, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$ssp;->FG:Z
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -139,9 +139,9 @@
 
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$ssp;->GF:Z
+    iput-boolean v0, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$ssp;->FG:Z
 
-    iget-object v0, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$ssp;->Df:Lcom/android/server/power/OnePlusStandbyAnalyzer$ywr;
+    iget-object v0, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$ssp;->Gf:Lcom/android/server/power/OnePlusStandbyAnalyzer$ywr;
 
     invoke-virtual {v0}, Lcom/android/server/power/OnePlusStandbyAnalyzer$ywr;->reset()V
     :try_end_0
@@ -165,7 +165,7 @@
     monitor-enter p0
 
     :try_start_0
-    iget-boolean v0, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$ssp;->GF:Z
+    iget-boolean v0, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$ssp;->FG:Z
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -183,9 +183,9 @@
 
     invoke-static {v0}, Lcom/android/server/power/OnePlusStandbyAnalyzer;->myLog(Ljava/lang/String;)V
 
-    iput-boolean v1, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$ssp;->GF:Z
+    iput-boolean v1, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$ssp;->FG:Z
 
-    iget-object v0, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$ssp;->Df:Lcom/android/server/power/OnePlusStandbyAnalyzer$ywr;
+    iget-object v0, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$ssp;->Gf:Lcom/android/server/power/OnePlusStandbyAnalyzer$ywr;
 
     invoke-virtual {v0}, Lcom/android/server/power/OnePlusStandbyAnalyzer$ywr;->start()Lcom/android/server/power/OnePlusStandbyAnalyzer$ywr;
     :try_end_1
@@ -209,7 +209,7 @@
     monitor-enter p0
 
     :try_start_0
-    iget-boolean v0, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$ssp;->GF:Z
+    iget-boolean v0, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$ssp;->FG:Z
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -223,11 +223,11 @@
     const/4 v0, 0x0
 
     :try_start_1
-    iput-boolean v0, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$ssp;->GF:Z
+    iput-boolean v0, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$ssp;->FG:Z
 
     iget-wide v0, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$ssp;->mTime:J
 
-    iget-object v2, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$ssp;->Df:Lcom/android/server/power/OnePlusStandbyAnalyzer$ywr;
+    iget-object v2, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$ssp;->Gf:Lcom/android/server/power/OnePlusStandbyAnalyzer$ywr;
 
     invoke-virtual {v2}, Lcom/android/server/power/OnePlusStandbyAnalyzer$ywr;->stop()J
 
@@ -255,7 +255,7 @@
 
     invoke-static {v0}, Lcom/android/server/power/OnePlusStandbyAnalyzer;->myLog(Ljava/lang/String;)V
 
-    iget-object v0, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$ssp;->Df:Lcom/android/server/power/OnePlusStandbyAnalyzer$ywr;
+    iget-object v0, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$ssp;->Gf:Lcom/android/server/power/OnePlusStandbyAnalyzer$ywr;
 
     invoke-virtual {v0}, Lcom/android/server/power/OnePlusStandbyAnalyzer$ywr;->reset()V
     :try_end_1

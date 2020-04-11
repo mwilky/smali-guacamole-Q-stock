@@ -60,9 +60,9 @@
 .method public zta(Lcom/android/server/power/OnePlusStandbyAnalyzer$kth;Lcom/android/server/power/OnePlusStandbyAnalyzer$kth;)I
     .locals 2
 
-    iget-wide p0, p1, Lcom/android/server/power/OnePlusStandbyAnalyzer$kth;->MF:J
+    iget-wide p0, p1, Lcom/android/server/power/OnePlusStandbyAnalyzer$kth;->KG:J
 
-    iget-wide v0, p2, Lcom/android/server/power/OnePlusStandbyAnalyzer$kth;->MF:J
+    iget-wide v0, p2, Lcom/android/server/power/OnePlusStandbyAnalyzer$kth;->KG:J
 
     cmp-long p2, p0, v0
 

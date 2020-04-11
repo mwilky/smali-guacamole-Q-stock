@@ -15,53 +15,69 @@
 
 
 # static fields
-.field public static final Bi:I = -0x1
+.field public static final Fi:I = -0x1
 
-.field public static final Ci:I = 0x0
+.field public static final Gi:I = 0x0
 
-.field public static final Di:I = 0x1
+.field public static final Hi:I = 0x1
 
-.field public static final Ei:I = 0x2
+.field public static final Ii:I = 0x2
 
-.field public static final Fi:I = 0x1
+.field public static final Ji:I = 0x1
 
-.field public static final Gi:I = 0x2
+.field public static final Ki:I = 0x2
 
-.field public static final Hi:I = 0x4
+.field public static final Li:I = 0x4
 
-.field public static final Ii:I = 0x8
+.field public static final Mi:I = 0x8
 
-.field public static final Ji:I = 0x10
+.field public static final Ni:I = 0x10
 
-.field public static final Ki:I = 0x20
+.field public static final Oi:I = 0x20
 
-.field public static final Li:I = 0x40
+.field public static final Pi:I = 0x40
 
-.field public static final Mi:I = 0x80
+.field public static final Qi:I = 0x80
 
-.field public static final Ni:I = 0x100
+.field public static final Ri:I = 0x100
 
-.field public static final Oi:I = 0x200
+.field public static final Si:I = 0x200
 
-.field public static final Pi:I = 0x400
+.field public static final Ti:I = 0x400
 
-.field public static final Qi:I = 0x800
+.field public static final Ui:I = 0x800
 
-.field public static final Ri:I = 0x1000
+.field public static final Vi:I = 0x1000
 
-.field public static final Si:I = 0x2000
+.field public static final Wi:I = 0x2000
 
-.field public static final Ti:I = 0x4000
+.field public static final Xi:I = 0x4000
 
-.field public static final Ui:I = 0x8000
+.field public static final Yi:I = 0x8000
 
-.field public static final Vi:I = 0x0
+.field public static final Zi:I = 0x0
 
-.field public static final Wi:I = 0x1
+.field public static final _i:I = 0x1
 
 
 # instance fields
-.field private Ai:Ljava/util/HashSet;
+.field private Ai:Ljava/lang/String;
+
+.field private Bi:J
+
+.field private Ci:I
+
+.field private Di:Ljava/util/HashSet;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/HashSet<",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private Ei:Ljava/util/HashSet;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/HashSet<",
@@ -77,31 +93,15 @@
 
 .field private mUid:I
 
-.field qi:Landroid/content/pm/PackageParser$Package;
+.field vi:Landroid/content/pm/PackageParser$Package;
 
-.field private volatile ri:I
+.field private volatile wi:I
 
-.field private ti:I
+.field private xi:I
 
-.field private volatile ui:I
+.field private volatile yi:I
 
-.field private vi:Z
-
-.field private wi:Ljava/lang/String;
-
-.field private xi:J
-
-.field private yi:I
-
-.field private zi:Ljava/util/HashSet;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/HashSet<",
-            "Ljava/lang/String;",
-            ">;"
-        }
-    .end annotation
-.end field
+.field private zi:Z
 
 
 # direct methods
@@ -112,7 +112,7 @@
 
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/android/server/am/zgw$sis;->qi:Landroid/content/pm/PackageParser$Package;
+    iput-object v0, p0, Lcom/android/server/am/zgw$sis;->vi:Landroid/content/pm/PackageParser$Package;
 
     iput-object v0, p0, Lcom/android/server/am/zgw$sis;->mPkgName:Ljava/lang/String;
 
@@ -124,33 +124,33 @@
 
     const/4 v2, 0x1
 
-    iput v2, p0, Lcom/android/server/am/zgw$sis;->ri:I
+    iput v2, p0, Lcom/android/server/am/zgw$sis;->wi:I
 
-    iput v1, p0, Lcom/android/server/am/zgw$sis;->ti:I
-
-    iput v1, p0, Lcom/android/server/am/zgw$sis;->ui:I
-
-    iput-boolean v2, p0, Lcom/android/server/am/zgw$sis;->vi:Z
-
-    iput-object v0, p0, Lcom/android/server/am/zgw$sis;->wi:Ljava/lang/String;
-
-    const-wide/16 v3, 0x0
-
-    iput-wide v3, p0, Lcom/android/server/am/zgw$sis;->xi:J
+    iput v1, p0, Lcom/android/server/am/zgw$sis;->xi:I
 
     iput v1, p0, Lcom/android/server/am/zgw$sis;->yi:I
 
+    iput-boolean v2, p0, Lcom/android/server/am/zgw$sis;->zi:Z
+
+    iput-object v0, p0, Lcom/android/server/am/zgw$sis;->Ai:Ljava/lang/String;
+
+    const-wide/16 v3, 0x0
+
+    iput-wide v3, p0, Lcom/android/server/am/zgw$sis;->Bi:J
+
+    iput v1, p0, Lcom/android/server/am/zgw$sis;->Ci:I
+
     new-instance v0, Ljava/util/HashSet;
 
     invoke-direct {v0}, Ljava/util/HashSet;-><init>()V
 
-    iput-object v0, p0, Lcom/android/server/am/zgw$sis;->zi:Ljava/util/HashSet;
+    iput-object v0, p0, Lcom/android/server/am/zgw$sis;->Di:Ljava/util/HashSet;
 
     new-instance v0, Ljava/util/HashSet;
 
     invoke-direct {v0}, Ljava/util/HashSet;-><init>()V
 
-    iput-object v0, p0, Lcom/android/server/am/zgw$sis;->Ai:Ljava/util/HashSet;
+    iput-object v0, p0, Lcom/android/server/am/zgw$sis;->Ei:Ljava/util/HashSet;
 
     iput-object p1, p0, Lcom/android/server/am/zgw$sis;->mPkgName:Ljava/lang/String;
 
@@ -178,18 +178,18 @@
 
     iput v0, p0, Lcom/android/server/am/zgw$sis;->mAction:I
 
-    iget p1, p1, Lcom/android/server/am/zgw$rtg;->Gh:I
+    iget p1, p1, Lcom/android/server/am/zgw$rtg;->Kh:I
 
     and-int/lit16 p1, p1, 0x1000
 
     if-eqz p1, :cond_0
 
-    iput-boolean v2, p0, Lcom/android/server/am/zgw$sis;->vi:Z
+    iput-boolean v2, p0, Lcom/android/server/am/zgw$sis;->zi:Z
 
     goto :goto_0
 
     :cond_0
-    iput-boolean v1, p0, Lcom/android/server/am/zgw$sis;->vi:Z
+    iput-boolean v1, p0, Lcom/android/server/am/zgw$sis;->zi:Z
 
     :cond_1
     :goto_0
@@ -199,7 +199,7 @@
 .method static synthetic you(Lcom/android/server/am/zgw$sis;I)I
     .locals 0
 
-    iput p1, p0, Lcom/android/server/am/zgw$sis;->ui:I
+    iput p1, p0, Lcom/android/server/am/zgw$sis;->yi:I
 
     return p1
 .end method
@@ -215,7 +215,7 @@
 .method static synthetic zta(Lcom/android/server/am/zgw$sis;)I
     .locals 0
 
-    iget p0, p0, Lcom/android/server/am/zgw$sis;->ri:I
+    iget p0, p0, Lcom/android/server/am/zgw$sis;->wi:I
 
     return p0
 .end method
@@ -223,7 +223,7 @@
 .method static synthetic zta(Lcom/android/server/am/zgw$sis;I)I
     .locals 0
 
-    iput p1, p0, Lcom/android/server/am/zgw$sis;->ri:I
+    iput p1, p0, Lcom/android/server/am/zgw$sis;->wi:I
 
     return p1
 .end method
@@ -233,7 +233,7 @@
 .method public Qa()Z
     .locals 2
 
-    iget v0, p0, Lcom/android/server/am/zgw$sis;->ti:I
+    iget v0, p0, Lcom/android/server/am/zgw$sis;->xi:I
 
     const/4 v1, 0x0
 
@@ -242,13 +242,13 @@
     return v1
 
     :cond_0
-    iget v0, p0, Lcom/android/server/am/zgw$sis;->ri:I
+    iget v0, p0, Lcom/android/server/am/zgw$sis;->wi:I
 
     and-int/lit8 v0, v0, 0x2
 
     if-nez v0, :cond_2
 
-    iget p0, p0, Lcom/android/server/am/zgw$sis;->ri:I
+    iget p0, p0, Lcom/android/server/am/zgw$sis;->wi:I
 
     and-int/lit8 p0, p0, 0x20
 
@@ -269,7 +269,7 @@
 .method public Ra()Z
     .locals 0
 
-    iget-boolean p0, p0, Lcom/android/server/am/zgw$sis;->vi:Z
+    iget-boolean p0, p0, Lcom/android/server/am/zgw$sis;->zi:Z
 
     return p0
 .end method
@@ -277,7 +277,7 @@
 .method public Sa()I
     .locals 0
 
-    iget p0, p0, Lcom/android/server/am/zgw$sis;->ui:I
+    iget p0, p0, Lcom/android/server/am/zgw$sis;->yi:I
 
     return p0
 .end method
@@ -293,7 +293,7 @@
         }
     .end annotation
 
-    iget-object p0, p0, Lcom/android/server/am/zgw$sis;->Ai:Ljava/util/HashSet;
+    iget-object p0, p0, Lcom/android/server/am/zgw$sis;->Ei:Ljava/util/HashSet;
 
     return-object p0
 .end method
@@ -301,7 +301,7 @@
 .method public Ua()Ljava/lang/String;
     .locals 0
 
-    iget-object p0, p0, Lcom/android/server/am/zgw$sis;->Ai:Ljava/util/HashSet;
+    iget-object p0, p0, Lcom/android/server/am/zgw$sis;->Ei:Ljava/util/HashSet;
 
     invoke-virtual {p0}, Ljava/util/HashSet;->toString()Ljava/lang/String;
 
@@ -321,7 +321,7 @@
         }
     .end annotation
 
-    iget-object p0, p0, Lcom/android/server/am/zgw$sis;->zi:Ljava/util/HashSet;
+    iget-object p0, p0, Lcom/android/server/am/zgw$sis;->Di:Ljava/util/HashSet;
 
     return-object p0
 .end method
@@ -329,7 +329,7 @@
 .method public Wa()Ljava/lang/String;
     .locals 0
 
-    iget-object p0, p0, Lcom/android/server/am/zgw$sis;->zi:Ljava/util/HashSet;
+    iget-object p0, p0, Lcom/android/server/am/zgw$sis;->Di:Ljava/util/HashSet;
 
     invoke-virtual {p0}, Ljava/util/HashSet;->toString()Ljava/lang/String;
 
@@ -341,7 +341,7 @@
 .method public Xa()I
     .locals 0
 
-    iget p0, p0, Lcom/android/server/am/zgw$sis;->ri:I
+    iget p0, p0, Lcom/android/server/am/zgw$sis;->wi:I
 
     return p0
 .end method
@@ -357,7 +357,7 @@
 .method public Za()I
     .locals 0
 
-    iget p0, p0, Lcom/android/server/am/zgw$sis;->ti:I
+    iget p0, p0, Lcom/android/server/am/zgw$sis;->xi:I
 
     return p0
 .end method
@@ -365,17 +365,17 @@
 .method public _a()V
     .locals 1
 
-    iget v0, p0, Lcom/android/server/am/zgw$sis;->ri:I
+    iget v0, p0, Lcom/android/server/am/zgw$sis;->wi:I
 
     or-int/lit8 v0, v0, 0x40
 
     or-int/lit8 v0, v0, 0x20
 
-    iput v0, p0, Lcom/android/server/am/zgw$sis;->ri:I
+    iput v0, p0, Lcom/android/server/am/zgw$sis;->wi:I
 
     const/4 v0, 0x1
 
-    iput v0, p0, Lcom/android/server/am/zgw$sis;->ui:I
+    iput v0, p0, Lcom/android/server/am/zgw$sis;->yi:I
 
     return-void
 .end method
@@ -383,7 +383,7 @@
 .method public cgv(I)V
     .locals 0
 
-    iput p1, p0, Lcom/android/server/am/zgw$sis;->ti:I
+    iput p1, p0, Lcom/android/server/am/zgw$sis;->xi:I
 
     return-void
 .end method
@@ -478,7 +478,7 @@
 .method public ivd(Ljava/lang/String;)Z
     .locals 8
 
-    iget v0, p0, Lcom/android/server/am/zgw$sis;->ui:I
+    iget v0, p0, Lcom/android/server/am/zgw$sis;->yi:I
 
     const/4 v1, 0x1
 
@@ -491,7 +491,7 @@
 
     move-result-wide v2
 
-    iget-wide v4, p0, Lcom/android/server/am/zgw$sis;->xi:J
+    iget-wide v4, p0, Lcom/android/server/am/zgw$sis;->Bi:J
 
     sub-long v4, v2, v4
 
@@ -507,7 +507,7 @@
 
     if-gez v0, :cond_1
 
-    iget-object v0, p0, Lcom/android/server/am/zgw$sis;->wi:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/server/am/zgw$sis;->Ai:Ljava/lang/String;
 
     if-eqz v0, :cond_2
 
@@ -517,11 +517,11 @@
 
     if-eqz v0, :cond_2
 
-    iget v0, p0, Lcom/android/server/am/zgw$sis;->yi:I
+    iget v0, p0, Lcom/android/server/am/zgw$sis;->Ci:I
 
     add-int/2addr v0, v1
 
-    iput v0, p0, Lcom/android/server/am/zgw$sis;->yi:I
+    iput v0, p0, Lcom/android/server/am/zgw$sis;->Ci:I
 
     invoke-static {}, Lcom/android/server/am/zgw;->access$400()I
 
@@ -529,12 +529,12 @@
 
     if-lt v0, v5, :cond_2
 
-    iput v4, p0, Lcom/android/server/am/zgw$sis;->yi:I
+    iput v4, p0, Lcom/android/server/am/zgw$sis;->Ci:I
 
     goto :goto_0
 
     :cond_1
-    iput v4, p0, Lcom/android/server/am/zgw$sis;->yi:I
+    iput v4, p0, Lcom/android/server/am/zgw$sis;->Ci:I
 
     :cond_2
     move v1, v4
@@ -564,7 +564,7 @@
 
     invoke-virtual {v0, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget v4, p0, Lcom/android/server/am/zgw$sis;->yi:I
+    iget v4, p0, Lcom/android/server/am/zgw$sis;->Ci:I
 
     invoke-virtual {v0, v4}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -575,9 +575,9 @@
     invoke-static {v0}, Lcom/android/server/am/zgw;->myLog(Ljava/lang/String;)V
 
     :cond_3
-    iput-wide v2, p0, Lcom/android/server/am/zgw$sis;->xi:J
+    iput-wide v2, p0, Lcom/android/server/am/zgw$sis;->Bi:J
 
-    iput-object p1, p0, Lcom/android/server/am/zgw$sis;->wi:Ljava/lang/String;
+    iput-object p1, p0, Lcom/android/server/am/zgw$sis;->Ai:Ljava/lang/String;
 
     return v1
 .end method
@@ -585,7 +585,7 @@
 .method public lqr(I)V
     .locals 0
 
-    iput p1, p0, Lcom/android/server/am/zgw$sis;->ui:I
+    iput p1, p0, Lcom/android/server/am/zgw$sis;->yi:I
 
     return-void
 .end method
@@ -593,7 +593,7 @@
 .method public obl(Z)V
     .locals 0
 
-    iput-boolean p1, p0, Lcom/android/server/am/zgw$sis;->vi:Z
+    iput-boolean p1, p0, Lcom/android/server/am/zgw$sis;->zi:Z
 
     return-void
 .end method
@@ -611,7 +611,7 @@
 
     if-le v0, v1, :cond_0
 
-    iget-object p0, p0, Lcom/android/server/am/zgw$sis;->zi:Ljava/util/HashSet;
+    iget-object p0, p0, Lcom/android/server/am/zgw$sis;->Di:Ljava/util/HashSet;
 
     invoke-virtual {p0, p1}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
@@ -662,7 +662,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget v1, p0, Lcom/android/server/am/zgw$sis;->ri:I
+    iget v1, p0, Lcom/android/server/am/zgw$sis;->wi:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -670,7 +670,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget v1, p0, Lcom/android/server/am/zgw$sis;->ti:I
+    iget v1, p0, Lcom/android/server/am/zgw$sis;->xi:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -686,7 +686,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget v1, p0, Lcom/android/server/am/zgw$sis;->ui:I
+    iget v1, p0, Lcom/android/server/am/zgw$sis;->yi:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -694,7 +694,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean p0, p0, Lcom/android/server/am/zgw$sis;->vi:Z
+    iget-boolean p0, p0, Lcom/android/server/am/zgw$sis;->zi:Z
 
     invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -722,7 +722,7 @@
 
     if-le v0, v1, :cond_0
 
-    iget-object p0, p0, Lcom/android/server/am/zgw$sis;->Ai:Ljava/util/HashSet;
+    iget-object p0, p0, Lcom/android/server/am/zgw$sis;->Ei:Ljava/util/HashSet;
 
     invoke-virtual {p0, p1}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
@@ -733,7 +733,7 @@
 .method public veq(I)V
     .locals 0
 
-    iput p1, p0, Lcom/android/server/am/zgw$sis;->ri:I
+    iput p1, p0, Lcom/android/server/am/zgw$sis;->wi:I
 
     return-void
 .end method
@@ -741,7 +741,7 @@
 .method public zta(Landroid/content/pm/PackageParser$Package;)V
     .locals 10
 
-    iput-object p1, p0, Lcom/android/server/am/zgw$sis;->qi:Landroid/content/pm/PackageParser$Package;
+    iput-object p1, p0, Lcom/android/server/am/zgw$sis;->vi:Landroid/content/pm/PackageParser$Package;
 
     const/4 v0, 0x2
 
@@ -768,7 +768,7 @@
     goto/16 :goto_7
 
     :cond_0
-    iget-object v2, p0, Lcom/android/server/am/zgw$sis;->qi:Landroid/content/pm/PackageParser$Package;
+    iget-object v2, p0, Lcom/android/server/am/zgw$sis;->vi:Landroid/content/pm/PackageParser$Package;
 
     if-eqz v2, :cond_17
 
@@ -790,19 +790,19 @@
 
     if-eqz v2, :cond_1
 
-    iget v2, p0, Lcom/android/server/am/zgw$sis;->ri:I
+    iget v2, p0, Lcom/android/server/am/zgw$sis;->wi:I
 
     or-int/2addr v2, v0
 
-    iput v2, p0, Lcom/android/server/am/zgw$sis;->ri:I
+    iput v2, p0, Lcom/android/server/am/zgw$sis;->wi:I
 
-    iget v2, p0, Lcom/android/server/am/zgw$sis;->ri:I
+    iget v2, p0, Lcom/android/server/am/zgw$sis;->wi:I
 
     and-int/lit8 v2, v2, -0x5
 
-    iput v2, p0, Lcom/android/server/am/zgw$sis;->ri:I
+    iput v2, p0, Lcom/android/server/am/zgw$sis;->wi:I
 
-    iput v1, p0, Lcom/android/server/am/zgw$sis;->ui:I
+    iput v1, p0, Lcom/android/server/am/zgw$sis;->yi:I
 
     invoke-virtual {p0, v1}, Lcom/android/server/am/zgw$sis;->setAction(I)V
 
@@ -811,19 +811,19 @@
     goto :goto_0
 
     :cond_1
-    iget v2, p0, Lcom/android/server/am/zgw$sis;->ri:I
+    iget v2, p0, Lcom/android/server/am/zgw$sis;->wi:I
 
     and-int/lit8 v2, v2, -0x3
 
-    iput v2, p0, Lcom/android/server/am/zgw$sis;->ri:I
+    iput v2, p0, Lcom/android/server/am/zgw$sis;->wi:I
 
-    iget v2, p0, Lcom/android/server/am/zgw$sis;->ri:I
+    iget v2, p0, Lcom/android/server/am/zgw$sis;->wi:I
 
     or-int/lit8 v2, v2, 0x4
 
-    iput v2, p0, Lcom/android/server/am/zgw$sis;->ri:I
+    iput v2, p0, Lcom/android/server/am/zgw$sis;->wi:I
 
-    iput v4, p0, Lcom/android/server/am/zgw$sis;->ui:I
+    iput v4, p0, Lcom/android/server/am/zgw$sis;->yi:I
 
     move v2, v4
 
@@ -1315,19 +1315,19 @@
 
     :cond_19
     :goto_7
-    iget p1, p0, Lcom/android/server/am/zgw$sis;->ri:I
+    iget p1, p0, Lcom/android/server/am/zgw$sis;->wi:I
 
     or-int/2addr p1, v0
 
-    iput p1, p0, Lcom/android/server/am/zgw$sis;->ri:I
+    iput p1, p0, Lcom/android/server/am/zgw$sis;->wi:I
 
-    iget p1, p0, Lcom/android/server/am/zgw$sis;->ri:I
+    iget p1, p0, Lcom/android/server/am/zgw$sis;->wi:I
 
     and-int/lit8 p1, p1, -0x5
 
-    iput p1, p0, Lcom/android/server/am/zgw$sis;->ri:I
+    iput p1, p0, Lcom/android/server/am/zgw$sis;->wi:I
 
-    iput v1, p0, Lcom/android/server/am/zgw$sis;->ui:I
+    iput v1, p0, Lcom/android/server/am/zgw$sis;->yi:I
 
     new-instance p1, Ljava/lang/StringBuilder;
 

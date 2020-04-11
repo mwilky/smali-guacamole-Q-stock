@@ -101,7 +101,7 @@
     return-void
 .end method
 
-.method private Bb(I)Ljava/lang/String;
+.method private Fb(I)Ljava/lang/String;
     .locals 3
 
     new-instance v0, Ljava/lang/StringBuilder;
@@ -250,7 +250,7 @@
 .method static synthetic zta(Lcom/android/server/wm/OpPowerConsumpStats$ywr;I)Ljava/lang/String;
     .locals 0
 
-    invoke-direct {p0, p1}, Lcom/android/server/wm/OpPowerConsumpStats$ywr;->Bb(I)Ljava/lang/String;
+    invoke-direct {p0, p1}, Lcom/android/server/wm/OpPowerConsumpStats$ywr;->Fb(I)Ljava/lang/String;
 
     move-result-object p0
 

@@ -14,67 +14,67 @@
 
 
 # static fields
-.field private static final BD:Ljava/lang/String; = "OpenShelf"
+.field private static final AE:Ljava/lang/String; = "OpenApp"
 
-.field private static final CD:Ljava/lang/String; = "OpenApp"
-
-.field private static final DD:Ljava/lang/String; = "OpenShortcut"
+.field private static final DE:Ljava/lang/String; = "OpenShortcut"
 
 .field private static final DEBUG:Z
 
-.field private static final ED:Ljava/lang/String; = "/proc/touchpanel/gesture_enable"
+.field private static final EE:Ljava/lang/String; = "/proc/touchpanel/gesture_enable"
 
-.field private static final FD:Ljava/lang/String; = "/proc/touchpanel/coordinate"
+.field private static final GE:Ljava/lang/String; = "/proc/touchpanel/coordinate"
 
-.field private static final GD:Ljava/lang/String; = "/proc/touchpanel/gesture_switch"
+.field private static final JE:Ljava/lang/String; = "/proc/touchpanel/gesture_switch"
 
-.field private static final HD:J = 0x4bL
+.field private static final KE:J = 0x4bL
 
-.field private static final JD:J = 0x96L
+.field private static final LE:J = 0x96L
 
-.field private static final KD:Ljava/lang/String; = "0"
+.field private static final ME:Ljava/lang/String; = "0"
 
-.field private static final LD:F = 0.1f
+.field private static final NE:F = 0.1f
 
-.field private static final MD:I = 0x3e8
+.field private static final OE:I = 0x3e8
 
 .field private static final TAG:Ljava/lang/String; = "DeviceKeyHandler"
 
 .field private static final VIBRATION_ATTRIBUTES:Landroid/media/AudioAttributes;
 
-.field private static final lD:Ljava/lang/String; = "1"
+.field private static final kE:Ljava/lang/String; = "1"
 
-.field private static final mD:Ljava/lang/String; = "7"
+.field private static final lE:Ljava/lang/String; = "7"
 
-.field private static final nD:Ljava/lang/String; = "5"
+.field private static final mE:Ljava/lang/String; = "5"
 
-.field private static final oD:Ljava/lang/String; = "4"
+.field private static final nE:Ljava/lang/String; = "4"
 
-.field private static final pD:I = 0xbb8
+.field private static final oE:I = 0xbb8
 
-.field private static final qD:Ljava/lang/String; = "15"
+.field private static final pE:Ljava/lang/String; = "15"
 
-.field private static final rD:Ljava/lang/String; = "6"
+.field private static final qE:Ljava/lang/String; = "6"
 
-.field private static final sD:Ljava/lang/String; = "2"
+.field private static final rE:Ljava/lang/String; = "2"
 
-.field private static final tD:Ljava/lang/String; = "14"
+.field private static final sE:Ljava/lang/String; = "14"
 
-.field private static final uD:Ljava/lang/String; = "12"
+.field private static final tE:Ljava/lang/String; = "12"
 
-.field private static final vD:Ljava/lang/String; = "13"
+.field private static final uE:Ljava/lang/String; = "13"
 
-.field private static final wD:Ljava/lang/String; = "OpenCamera"
+.field private static final vE:Ljava/lang/String; = "OpenCamera"
 
-.field private static final xD:Ljava/lang/String; = "OpenTorch"
+.field private static final wE:Ljava/lang/String; = "OpenTorch"
 
-.field private static final yD:Ljava/lang/String; = "FrontCamera"
+.field private static final xE:Ljava/lang/String; = "FrontCamera"
 
-.field private static final zD:Ljava/lang/String; = "TakeVideo"
+.field private static final yE:Ljava/lang/String; = "TakeVideo"
+
+.field private static final zE:Ljava/lang/String; = "OpenShelf"
 
 
 # instance fields
-.field final KC:Ljava/util/HashMap;
+.field final KD:Ljava/util/HashMap;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/HashMap<",
@@ -85,57 +85,57 @@
     .end annotation
 .end field
 
-.field LC:Landroid/os/PowerManager$WakeLock;
+.field LD:Landroid/os/PowerManager$WakeLock;
 
-.field MC:Landroid/os/PowerManager$WakeLock;
+.field MD:Landroid/os/PowerManager$WakeLock;
 
-.field OC:Landroid/os/PowerManager$WakeLock;
+.field ND:Landroid/os/PowerManager$WakeLock;
 
-.field private PC:I
+.field private OD:I
 
-.field private QC:Z
+.field private PD:Z
 
-.field private RC:Z
+.field private QD:Z
 
-.field private SC:Z
+.field private RD:Z
 
-.field private TC:Z
+.field private SD:Z
 
-.field private UC:Z
+.field private TD:Z
 
-.field private VC:Z
+.field private UD:Z
 
-.field private WC:Z
+.field private VD:Z
 
-.field private XC:Z
+.field private WD:Z
 
-.field private YC:Z
+.field private XD:Z
 
-.field ZC:Landroid/content/pm/LauncherApps;
+.field YD:Landroid/content/pm/LauncherApps;
 
-.field private _C:Z
+.field private ZD:Z
 
-.field private aD:Landroid/hardware/camera2/CameraManager;
+.field private _D:Landroid/hardware/camera2/CameraManager;
 
-.field private bD:Z
+.field private aE:Z
 
-.field private cD:Z
+.field private bE:Z
 
-.field private dD:Lcom/android/server/policy/kth$zta;
+.field private cE:Lcom/android/server/policy/kth$zta;
 
-.field private eD:Z
+.field private dE:Z
 
-.field private fD:Z
+.field private eE:Z
 
-.field private gD:Z
+.field private fE:Z
 
-.field private hD:Z
+.field private gE:Z
 
-.field iD:Landroid/hardware/SensorEventListener;
+.field hE:Landroid/hardware/SensorEventListener;
 
-.field jD:Landroid/hardware/SensorEventListener;
+.field iE:Landroid/hardware/SensorEventListener;
 
-.field private final kD:Landroid/hardware/camera2/CameraManager$TorchCallback;
+.field private final jE:Landroid/hardware/camera2/CameraManager$TorchCallback;
 
 .field private mActivityManager:Landroid/app/ActivityManager;
 
@@ -222,31 +222,31 @@
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    iput-object v0, p0, Lcom/android/server/policy/kth;->KC:Ljava/util/HashMap;
+    iput-object v0, p0, Lcom/android/server/policy/kth;->KD:Ljava/util/HashMap;
 
     const/4 v0, 0x0
 
-    iput v0, p0, Lcom/android/server/policy/kth;->PC:I
+    iput v0, p0, Lcom/android/server/policy/kth;->OD:I
 
-    iput-boolean v0, p0, Lcom/android/server/policy/kth;->QC:Z
+    iput-boolean v0, p0, Lcom/android/server/policy/kth;->PD:Z
 
     const/4 v1, 0x1
 
-    iput-boolean v1, p0, Lcom/android/server/policy/kth;->RC:Z
+    iput-boolean v1, p0, Lcom/android/server/policy/kth;->QD:Z
 
-    iput-boolean v1, p0, Lcom/android/server/policy/kth;->SC:Z
+    iput-boolean v1, p0, Lcom/android/server/policy/kth;->RD:Z
 
-    iput-boolean v1, p0, Lcom/android/server/policy/kth;->TC:Z
+    iput-boolean v1, p0, Lcom/android/server/policy/kth;->SD:Z
 
-    iput-boolean v1, p0, Lcom/android/server/policy/kth;->UC:Z
+    iput-boolean v1, p0, Lcom/android/server/policy/kth;->TD:Z
 
-    iput-boolean v1, p0, Lcom/android/server/policy/kth;->VC:Z
+    iput-boolean v1, p0, Lcom/android/server/policy/kth;->UD:Z
 
-    iput-boolean v1, p0, Lcom/android/server/policy/kth;->WC:Z
+    iput-boolean v1, p0, Lcom/android/server/policy/kth;->VD:Z
 
-    iput-boolean v1, p0, Lcom/android/server/policy/kth;->XC:Z
+    iput-boolean v1, p0, Lcom/android/server/policy/kth;->WD:Z
 
-    iput-boolean v1, p0, Lcom/android/server/policy/kth;->YC:Z
+    iput-boolean v1, p0, Lcom/android/server/policy/kth;->XD:Z
 
     new-instance v2, Ljava/lang/Object;
 
@@ -256,37 +256,37 @@
 
     iput-boolean v0, p0, Lcom/android/server/policy/kth;->mProximitySensorEnabled:Z
 
-    iput-boolean v1, p0, Lcom/android/server/policy/kth;->bD:Z
+    iput-boolean v1, p0, Lcom/android/server/policy/kth;->aE:Z
 
-    iput-boolean v0, p0, Lcom/android/server/policy/kth;->cD:Z
+    iput-boolean v0, p0, Lcom/android/server/policy/kth;->bE:Z
 
     iput-boolean v0, p0, Lcom/android/server/policy/kth;->mSensorEnabled:Z
 
-    iput-boolean v0, p0, Lcom/android/server/policy/kth;->eD:Z
+    iput-boolean v0, p0, Lcom/android/server/policy/kth;->dE:Z
 
-    iput-boolean v1, p0, Lcom/android/server/policy/kth;->fD:Z
+    iput-boolean v1, p0, Lcom/android/server/policy/kth;->eE:Z
 
     iput-boolean v0, p0, Lcom/android/server/policy/kth;->mSleeping:Z
 
-    iput-boolean v0, p0, Lcom/android/server/policy/kth;->hD:Z
+    iput-boolean v0, p0, Lcom/android/server/policy/kth;->gE:Z
 
     new-instance v2, Lcom/android/server/policy/rtg;
 
     invoke-direct {v2, p0}, Lcom/android/server/policy/rtg;-><init>(Lcom/android/server/policy/kth;)V
 
-    iput-object v2, p0, Lcom/android/server/policy/kth;->iD:Landroid/hardware/SensorEventListener;
+    iput-object v2, p0, Lcom/android/server/policy/kth;->hE:Landroid/hardware/SensorEventListener;
 
     new-instance v2, Lcom/android/server/policy/ssp;
 
     invoke-direct {v2, p0}, Lcom/android/server/policy/ssp;-><init>(Lcom/android/server/policy/kth;)V
 
-    iput-object v2, p0, Lcom/android/server/policy/kth;->jD:Landroid/hardware/SensorEventListener;
+    iput-object v2, p0, Lcom/android/server/policy/kth;->iE:Landroid/hardware/SensorEventListener;
 
     new-instance v2, Lcom/android/server/policy/cno;
 
     invoke-direct {v2, p0}, Lcom/android/server/policy/cno;-><init>(Lcom/android/server/policy/kth;)V
 
-    iput-object v2, p0, Lcom/android/server/policy/kth;->kD:Landroid/hardware/camera2/CameraManager$TorchCallback;
+    iput-object v2, p0, Lcom/android/server/policy/kth;->jE:Landroid/hardware/camera2/CameraManager$TorchCallback;
 
     iput-object p1, p0, Lcom/android/server/policy/kth;->mContext:Landroid/content/Context;
 
@@ -342,7 +342,7 @@
 
     if-eqz v0, :cond_0
 
-    iput-boolean v1, p0, Lcom/android/server/policy/kth;->hD:Z
+    iput-boolean v1, p0, Lcom/android/server/policy/kth;->gE:Z
 
     :cond_0
     iget-object v0, p0, Lcom/android/server/policy/kth;->mSensorManager:Landroid/hardware/SensorManager;
@@ -389,7 +389,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/server/policy/kth;->LC:Landroid/os/PowerManager$WakeLock;
+    iput-object v0, p0, Lcom/android/server/policy/kth;->LD:Landroid/os/PowerManager$WakeLock;
 
     iget-object v0, p0, Lcom/android/server/policy/kth;->mPowerManager:Landroid/os/PowerManager;
 
@@ -399,7 +399,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/server/policy/kth;->MC:Landroid/os/PowerManager$WakeLock;
+    iput-object v0, p0, Lcom/android/server/policy/kth;->MD:Landroid/os/PowerManager$WakeLock;
 
     iget-object v0, p0, Lcom/android/server/policy/kth;->mPowerManager:Landroid/os/PowerManager;
 
@@ -411,7 +411,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/server/policy/kth;->OC:Landroid/os/PowerManager$WakeLock;
+    iput-object v0, p0, Lcom/android/server/policy/kth;->ND:Landroid/os/PowerManager$WakeLock;
 
     new-instance v0, Lcom/android/server/policy/kth$sis;
 
@@ -429,7 +429,7 @@
 
     check-cast p1, Landroid/hardware/camera2/CameraManager;
 
-    iput-object p1, p0, Lcom/android/server/policy/kth;->aD:Landroid/hardware/camera2/CameraManager;
+    iput-object p1, p0, Lcom/android/server/policy/kth;->_D:Landroid/hardware/camera2/CameraManager;
 
     new-instance p1, Landroid/os/HandlerThread;
 
@@ -457,7 +457,7 @@
 
     iput-object p1, p0, Lcom/android/server/policy/kth;->mHandler:Landroid/os/Handler;
 
-    invoke-virtual {p0}, Lcom/android/server/policy/kth;->Jc()V
+    invoke-virtual {p0}, Lcom/android/server/policy/kth;->Nc()V
 
     new-instance p1, Ljava/io/File;
 
@@ -469,7 +469,7 @@
 
     move-result p1
 
-    iput-boolean p1, p0, Lcom/android/server/policy/kth;->cD:Z
+    iput-boolean p1, p0, Lcom/android/server/policy/kth;->bE:Z
 
     iget-object p1, p0, Lcom/android/server/policy/kth;->mContext:Landroid/content/Context;
 
@@ -487,6 +487,27 @@
 .end method
 
 .method private Aa(Z)V
+    .locals 3
+
+    iget-object v0, p0, Lcom/android/server/policy/kth;->mContext:Landroid/content/Context;
+
+    iget-object v1, p0, Lcom/android/server/policy/kth;->mVibrator:Landroid/os/Vibrator;
+
+    const/16 v2, 0x1a
+
+    invoke-static {v0, v1, v2}, Lcom/oneplus/util/VibratorSceneUtils;->doVibrateWithSceneIfNeeded(Landroid/content/Context;Landroid/os/Vibrator;I)Z
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    invoke-direct {p0, p1}, Lcom/android/server/policy/kth;->Ba(Z)V
+
+    :cond_0
+    return-void
+.end method
+
+.method private Ba(Z)V
     .locals 2
 
     iget-object p0, p0, Lcom/android/server/policy/kth;->mVibrator:Landroid/os/Vibrator;
@@ -511,7 +532,7 @@
     return-void
 .end method
 
-.method private Ba(Z)Z
+.method private Ca(Z)Z
     .locals 3
 
     const/4 v0, 0x1
@@ -568,7 +589,7 @@
     return v0
 .end method
 
-.method private Jn()V
+.method private Tn()V
     .locals 4
 
     sget-boolean v0, Lcom/android/server/policy/kth;->DEBUG:Z
@@ -593,7 +614,7 @@
     :try_start_0
     iget-object v2, p0, Lcom/android/server/policy/kth;->mSensorManager:Landroid/hardware/SensorManager;
 
-    iget-object v3, p0, Lcom/android/server/policy/kth;->jD:Landroid/hardware/SensorEventListener;
+    iget-object v3, p0, Lcom/android/server/policy/kth;->iE:Landroid/hardware/SensorEventListener;
 
     invoke-virtual {v2, v3}, Landroid/hardware/SensorManager;->unregisterListener(Landroid/hardware/SensorEventListener;)V
 
@@ -619,7 +640,7 @@
     return-void
 .end method
 
-.method private Kn()V
+.method private Un()V
     .locals 6
 
     sget-boolean v0, Lcom/android/server/policy/kth;->DEBUG:Z
@@ -644,7 +665,7 @@
     :try_start_0
     iget-object v2, p0, Lcom/android/server/policy/kth;->mSensorManager:Landroid/hardware/SensorManager;
 
-    iget-object v3, p0, Lcom/android/server/policy/kth;->jD:Landroid/hardware/SensorEventListener;
+    iget-object v3, p0, Lcom/android/server/policy/kth;->iE:Landroid/hardware/SensorEventListener;
 
     iget-object v4, p0, Lcom/android/server/policy/kth;->mProximitySensor:Landroid/hardware/Sensor;
 
@@ -674,17 +695,7 @@
     return-void
 .end method
 
-.method private Ln()V
-    .locals 1
-
-    const/4 v0, 0x1
-
-    invoke-direct {p0, v0}, Lcom/android/server/policy/kth;->za(Z)V
-
-    return-void
-.end method
-
-.method private Mn()V
+.method private Vn()V
     .locals 1
 
     const/4 v0, 0x1
@@ -694,7 +705,17 @@
     return-void
 .end method
 
-.method private Nn()V
+.method private Wn()V
+    .locals 1
+
+    const/4 v0, 0x1
+
+    invoke-direct {p0, v0}, Lcom/android/server/policy/kth;->Ba(Z)V
+
+    return-void
+.end method
+
+.method private Xn()V
     .locals 12
 
     invoke-static {}, Lcom/oneplus/android/server/zenmode/ZenModeInjector;->isZenModeOn()Z
@@ -719,7 +740,7 @@
     :cond_1
     const-string v0, "/proc/touchpanel/coordinate"
 
-    invoke-static {v0}, Lcom/android/server/policy/bio;->O(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0}, Lcom/android/server/policy/bio;->P(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -904,7 +925,7 @@
 
     if-eqz v2, :cond_10
 
-    invoke-direct {p0, v0}, Lcom/android/server/policy/kth;->Yb(Ljava/lang/String;)V
+    invoke-direct {p0, v0}, Lcom/android/server/policy/kth;->ac(Ljava/lang/String;)V
 
     const-class v2, Landroid/service/dreams/DreamManagerInternal;
 
@@ -923,14 +944,14 @@
 
     if-nez v2, :cond_c
 
-    iget-boolean v2, p0, Lcom/android/server/policy/kth;->WC:Z
+    iget-boolean v2, p0, Lcom/android/server/policy/kth;->VD:Z
 
     if-eqz v2, :cond_10
 
     :cond_c
-    invoke-direct {p0, v0}, Lcom/android/server/policy/kth;->Yb(Ljava/lang/String;)V
+    invoke-direct {p0, v0}, Lcom/android/server/policy/kth;->ac(Ljava/lang/String;)V
 
-    invoke-direct {p0}, Lcom/android/server/policy/kth;->Ln()V
+    invoke-direct {p0}, Lcom/android/server/policy/kth;->Vn()V
 
     iget-object v2, p0, Lcom/android/server/policy/kth;->mPowerManager:Landroid/os/PowerManager;
 
@@ -945,36 +966,36 @@
     goto :goto_3
 
     :cond_d
-    invoke-direct {p0, v0}, Lcom/android/server/policy/kth;->Yb(Ljava/lang/String;)V
+    invoke-direct {p0, v0}, Lcom/android/server/policy/kth;->ac(Ljava/lang/String;)V
 
-    invoke-direct {p0}, Lcom/android/server/policy/kth;->Ln()V
+    invoke-direct {p0}, Lcom/android/server/policy/kth;->Vn()V
 
     const/16 v2, 0x57
 
     goto :goto_2
 
     :cond_e
-    invoke-direct {p0, v0}, Lcom/android/server/policy/kth;->Yb(Ljava/lang/String;)V
+    invoke-direct {p0, v0}, Lcom/android/server/policy/kth;->ac(Ljava/lang/String;)V
 
-    invoke-direct {p0}, Lcom/android/server/policy/kth;->Ln()V
+    invoke-direct {p0}, Lcom/android/server/policy/kth;->Vn()V
 
     const/16 v2, 0x58
 
     goto :goto_2
 
     :cond_f
-    invoke-direct {p0, v0}, Lcom/android/server/policy/kth;->Yb(Ljava/lang/String;)V
+    invoke-direct {p0, v0}, Lcom/android/server/policy/kth;->ac(Ljava/lang/String;)V
 
-    invoke-direct {p0}, Lcom/android/server/policy/kth;->Ln()V
+    invoke-direct {p0}, Lcom/android/server/policy/kth;->Vn()V
 
     const/16 v2, 0x55
 
     :goto_2
-    invoke-direct {p0, v2}, Lcom/android/server/policy/kth;->rb(I)V
+    invoke-direct {p0, v2}, Lcom/android/server/policy/kth;->vb(I)V
 
     :cond_10
     :goto_3
-    iget-object v2, p0, Lcom/android/server/policy/kth;->KC:Ljava/util/HashMap;
+    iget-object v2, p0, Lcom/android/server/policy/kth;->KD:Ljava/util/HashMap;
 
     invoke-virtual {v2, v0}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -1117,7 +1138,7 @@
     goto :goto_7
 
     :pswitch_0
-    invoke-direct {p0, v1}, Lcom/android/server/policy/kth;->Yb(Ljava/lang/String;)V
+    invoke-direct {p0, v1}, Lcom/android/server/policy/kth;->ac(Ljava/lang/String;)V
 
     iget-object v1, p0, Lcom/android/server/policy/kth;->mKeyguardDelegate:Lcom/android/server/policy/keyguard/KeyguardServiceDelegate;
 
@@ -1129,7 +1150,7 @@
 
     if-eqz v1, :cond_12
 
-    iget-boolean v1, p0, Lcom/android/server/policy/kth;->gD:Z
+    iget-boolean v1, p0, Lcom/android/server/policy/kth;->fE:Z
 
     if-nez v1, :cond_12
 
@@ -1139,7 +1160,7 @@
 
     if-eqz v1, :cond_13
 
-    iput-object v0, p0, Lcom/android/server/policy/kth;->dD:Lcom/android/server/policy/kth$zta;
+    iput-object v0, p0, Lcom/android/server/policy/kth;->cE:Lcom/android/server/policy/kth$zta;
 
     goto :goto_6
 
@@ -1152,7 +1173,7 @@
     :goto_6
     if-eqz v1, :cond_14
 
-    invoke-direct {p0}, Lcom/android/server/policy/kth;->Ln()V
+    invoke-direct {p0}, Lcom/android/server/policy/kth;->Vn()V
 
     iget-object v0, p0, Lcom/android/server/policy/kth;->mPowerManager:Landroid/os/PowerManager;
 
@@ -1177,9 +1198,9 @@
     goto :goto_7
 
     :pswitch_1
-    invoke-direct {p0, v1}, Lcom/android/server/policy/kth;->Yb(Ljava/lang/String;)V
+    invoke-direct {p0, v1}, Lcom/android/server/policy/kth;->ac(Ljava/lang/String;)V
 
-    invoke-direct {p0}, Lcom/android/server/policy/kth;->Ln()V
+    invoke-direct {p0}, Lcom/android/server/policy/kth;->Vn()V
 
     const-class v0, Lcom/android/server/statusbar/StatusBarManagerInternal;
 
@@ -1189,7 +1210,7 @@
 
     check-cast v0, Lcom/android/server/statusbar/StatusBarManagerInternal;
 
-    invoke-direct {p0, v1}, Lcom/android/server/policy/kth;->Zb(Ljava/lang/String;)I
+    invoke-direct {p0, v1}, Lcom/android/server/policy/kth;->bc(Ljava/lang/String;)I
 
     move-result p0
 
@@ -1198,9 +1219,9 @@
     goto :goto_7
 
     :pswitch_2
-    invoke-direct {p0, v1}, Lcom/android/server/policy/kth;->Yb(Ljava/lang/String;)V
+    invoke-direct {p0, v1}, Lcom/android/server/policy/kth;->ac(Ljava/lang/String;)V
 
-    iget-boolean v0, p0, Lcom/android/server/policy/kth;->_C:Z
+    iget-boolean v0, p0, Lcom/android/server/policy/kth;->ZD:Z
 
     xor-int/2addr v0, v9
 
@@ -1208,7 +1229,7 @@
 
     move-result v0
 
-    invoke-direct {p0, v0}, Lcom/android/server/policy/kth;->za(Z)V
+    invoke-direct {p0, v0}, Lcom/android/server/policy/kth;->Aa(Z)V
 
     :cond_14
     :goto_7
@@ -1237,10 +1258,10 @@
     .end packed-switch
 .end method
 
-.method private On()V
+.method private Yn()V
     .locals 5
 
-    iget-object v0, p0, Lcom/android/server/policy/kth;->LC:Landroid/os/PowerManager$WakeLock;
+    iget-object v0, p0, Lcom/android/server/policy/kth;->LD:Landroid/os/PowerManager$WakeLock;
 
     invoke-virtual {v0}, Landroid/os/PowerManager$WakeLock;->acquire()V
 
@@ -1249,7 +1270,7 @@
     monitor-enter v0
 
     :try_start_0
-    iget-boolean v1, p0, Lcom/android/server/policy/kth;->cD:Z
+    iget-boolean v1, p0, Lcom/android/server/policy/kth;->bE:Z
 
     const/4 v2, 0x1
 
@@ -1268,7 +1289,7 @@
     goto :goto_0
 
     :cond_0
-    invoke-direct {p0}, Lcom/android/server/policy/kth;->Kn()V
+    invoke-direct {p0}, Lcom/android/server/policy/kth;->Un()V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -1284,7 +1305,7 @@
 
     :catch_0
     :try_start_2
-    iget-boolean v1, p0, Lcom/android/server/policy/kth;->bD:Z
+    iget-boolean v1, p0, Lcom/android/server/policy/kth;->aE:Z
 
     if-nez v1, :cond_2
 
@@ -1310,14 +1331,14 @@
     invoke-virtual {v2, v1}, Landroid/os/Handler;->sendMessage(Landroid/os/Message;)Z
 
     :cond_2
-    invoke-direct {p0}, Lcom/android/server/policy/kth;->Jn()V
+    invoke-direct {p0}, Lcom/android/server/policy/kth;->Tn()V
 
     :goto_0
     monitor-exit v0
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
-    iget-object p0, p0, Lcom/android/server/policy/kth;->LC:Landroid/os/PowerManager$WakeLock;
+    iget-object p0, p0, Lcom/android/server/policy/kth;->LD:Landroid/os/PowerManager$WakeLock;
 
     invoke-virtual {p0}, Landroid/os/PowerManager$WakeLock;->release()V
 
@@ -1334,7 +1355,7 @@
     throw p0
 .end method
 
-.method private Pn()V
+.method private Zn()V
     .locals 7
 
     iget-object v0, p0, Lcom/android/server/policy/kth;->mContext:Landroid/content/Context;
@@ -1353,7 +1374,7 @@
 
     move-result v3
 
-    iput v3, p0, Lcom/android/server/policy/kth;->PC:I
+    iput v3, p0, Lcom/android/server/policy/kth;->OD:I
 
     sget-boolean v3, Lcom/android/server/policy/kth;->DEBUG:Z
 
@@ -1367,7 +1388,7 @@
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget v4, p0, Lcom/android/server/policy/kth;->PC:I
+    iget v4, p0, Lcom/android/server/policy/kth;->OD:I
 
     invoke-static {v4}, Ljava/lang/Integer;->toHexString(I)Ljava/lang/String;
 
@@ -1384,7 +1405,7 @@
     invoke-static {v4, v3}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_0
-    iget v3, p0, Lcom/android/server/policy/kth;->PC:I
+    iget v3, p0, Lcom/android/server/policy/kth;->OD:I
 
     const/4 v4, 0x7
 
@@ -1404,9 +1425,9 @@
     move v3, v2
 
     :goto_0
-    iput-boolean v3, p0, Lcom/android/server/policy/kth;->WC:Z
+    iput-boolean v3, p0, Lcom/android/server/policy/kth;->VD:Z
 
-    iget v3, p0, Lcom/android/server/policy/kth;->PC:I
+    iget v3, p0, Lcom/android/server/policy/kth;->OD:I
 
     const/4 v5, 0x5
 
@@ -1424,9 +1445,9 @@
     move v3, v2
 
     :goto_1
-    iput-boolean v3, p0, Lcom/android/server/policy/kth;->RC:Z
+    iput-boolean v3, p0, Lcom/android/server/policy/kth;->QD:Z
 
-    iget v3, p0, Lcom/android/server/policy/kth;->PC:I
+    iget v3, p0, Lcom/android/server/policy/kth;->OD:I
 
     const/4 v5, 0x4
 
@@ -1444,9 +1465,9 @@
     move v3, v2
 
     :goto_2
-    iput-boolean v3, p0, Lcom/android/server/policy/kth;->SC:Z
+    iput-boolean v3, p0, Lcom/android/server/policy/kth;->RD:Z
 
-    iget v3, p0, Lcom/android/server/policy/kth;->PC:I
+    iget v3, p0, Lcom/android/server/policy/kth;->OD:I
 
     const/4 v5, 0x3
 
@@ -1464,9 +1485,9 @@
     move v3, v2
 
     :goto_3
-    iput-boolean v3, p0, Lcom/android/server/policy/kth;->TC:Z
+    iput-boolean v3, p0, Lcom/android/server/policy/kth;->SD:Z
 
-    iget v3, p0, Lcom/android/server/policy/kth;->PC:I
+    iget v3, p0, Lcom/android/server/policy/kth;->OD:I
 
     const/4 v5, 0x2
 
@@ -1484,9 +1505,9 @@
     move v3, v2
 
     :goto_4
-    iput-boolean v3, p0, Lcom/android/server/policy/kth;->UC:Z
+    iput-boolean v3, p0, Lcom/android/server/policy/kth;->TD:Z
 
-    iget v3, p0, Lcom/android/server/policy/kth;->PC:I
+    iget v3, p0, Lcom/android/server/policy/kth;->OD:I
 
     invoke-static {v3, v4}, Lcom/android/server/policy/kth;->bvj(II)I
 
@@ -1502,9 +1523,9 @@
     move v3, v2
 
     :goto_5
-    iput-boolean v3, p0, Lcom/android/server/policy/kth;->VC:Z
+    iput-boolean v3, p0, Lcom/android/server/policy/kth;->UD:Z
 
-    iget v3, p0, Lcom/android/server/policy/kth;->PC:I
+    iget v3, p0, Lcom/android/server/policy/kth;->OD:I
 
     const/4 v6, 0x6
 
@@ -1522,9 +1543,9 @@
     move v3, v2
 
     :goto_6
-    iput-boolean v3, p0, Lcom/android/server/policy/kth;->XC:Z
+    iput-boolean v3, p0, Lcom/android/server/policy/kth;->WD:Z
 
-    iget v3, p0, Lcom/android/server/policy/kth;->PC:I
+    iget v3, p0, Lcom/android/server/policy/kth;->OD:I
 
     invoke-static {v3, v2}, Lcom/android/server/policy/kth;->bvj(II)I
 
@@ -1540,20 +1561,20 @@
     move v3, v2
 
     :goto_7
-    iput-boolean v3, p0, Lcom/android/server/policy/kth;->YC:Z
+    iput-boolean v3, p0, Lcom/android/server/policy/kth;->XD:Z
 
-    iget-boolean v3, p0, Lcom/android/server/policy/kth;->VC:Z
+    iget-boolean v3, p0, Lcom/android/server/policy/kth;->UD:Z
 
     if-ne v3, v4, :cond_9
 
-    iput-boolean v4, p0, Lcom/android/server/policy/kth;->UC:Z
+    iput-boolean v4, p0, Lcom/android/server/policy/kth;->TD:Z
 
     :cond_9
     invoke-virtual {p0, v0}, Lcom/android/server/policy/kth;->zta(Landroid/content/ContentResolver;)V
 
     new-array v3, v5, [B
 
-    iget v5, p0, Lcom/android/server/policy/kth;->PC:I
+    iget v5, p0, Lcom/android/server/policy/kth;->OD:I
 
     and-int/lit16 v6, v5, 0xff
 
@@ -1584,15 +1605,15 @@
     move v2, v4
 
     :cond_a
-    iput-boolean v2, p0, Lcom/android/server/policy/kth;->fD:Z
+    iput-boolean v2, p0, Lcom/android/server/policy/kth;->eE:Z
 
     return-void
 .end method
 
-.method private Yb(Ljava/lang/String;)V
+.method private ac(Ljava/lang/String;)V
     .locals 2
 
-    invoke-direct {p0, p1}, Lcom/android/server/policy/kth;->_b(Ljava/lang/String;)Z
+    invoke-direct {p0, p1}, Lcom/android/server/policy/kth;->cc(Ljava/lang/String;)Z
 
     move-result p1
 
@@ -1600,14 +1621,14 @@
 
     if-eqz p1, :cond_0
 
-    iget-object p0, p0, Lcom/android/server/policy/kth;->OC:Landroid/os/PowerManager$WakeLock;
+    iget-object p0, p0, Lcom/android/server/policy/kth;->ND:Landroid/os/PowerManager$WakeLock;
 
     if-eqz p0, :cond_1
 
     goto :goto_0
 
     :cond_0
-    iget-object p0, p0, Lcom/android/server/policy/kth;->MC:Landroid/os/PowerManager$WakeLock;
+    iget-object p0, p0, Lcom/android/server/policy/kth;->MD:Landroid/os/PowerManager$WakeLock;
 
     if-eqz p0, :cond_1
 
@@ -1618,7 +1639,15 @@
     return-void
 .end method
 
-.method private Zb(Ljava/lang/String;)I
+.method static synthetic access$700()Z
+    .locals 1
+
+    sget-boolean v0, Lcom/android/server/policy/kth;->DEBUG:Z
+
+    return v0
+.end method
+
+.method private bc(Ljava/lang/String;)I
     .locals 3
 
     invoke-virtual {p1}, Ljava/lang/String;->hashCode()I
@@ -1710,7 +1739,29 @@
     return p1
 .end method
 
-.method private _b(Ljava/lang/String;)Z
+.method static synthetic bio(Lcom/android/server/policy/kth;)Z
+    .locals 0
+
+    iget-boolean p0, p0, Lcom/android/server/policy/kth;->aE:Z
+
+    return p0
+.end method
+
+.method public static bvj(II)I
+    .locals 1
+
+    const/4 v0, 0x1
+
+    shl-int/2addr v0, p1
+
+    and-int/2addr p0, v0
+
+    shr-int/2addr p0, p1
+
+    return p0
+.end method
+
+.method private cc(Ljava/lang/String;)Z
     .locals 2
 
     invoke-virtual {p1}, Ljava/lang/String;->hashCode()I
@@ -1851,36 +1902,6 @@
     .end packed-switch
 .end method
 
-.method static synthetic access$700()Z
-    .locals 1
-
-    sget-boolean v0, Lcom/android/server/policy/kth;->DEBUG:Z
-
-    return v0
-.end method
-
-.method static synthetic bio(Lcom/android/server/policy/kth;)Z
-    .locals 0
-
-    iget-boolean p0, p0, Lcom/android/server/policy/kth;->bD:Z
-
-    return p0
-.end method
-
-.method public static bvj(II)I
-    .locals 1
-
-    const/4 v0, 0x1
-
-    shl-int/2addr v0, p1
-
-    and-int/2addr p0, v0
-
-    shr-int/2addr p0, p1
-
-    return p0
-.end method
-
 .method static synthetic cno(Lcom/android/server/policy/kth;)Landroid/os/Handler;
     .locals 0
 
@@ -1897,7 +1918,7 @@
         }
     .end annotation
 
-    iget-object v0, p0, Lcom/android/server/policy/kth;->aD:Landroid/hardware/camera2/CameraManager;
+    iget-object v0, p0, Lcom/android/server/policy/kth;->_D:Landroid/hardware/camera2/CameraManager;
 
     invoke-virtual {v0}, Landroid/hardware/camera2/CameraManager;->getCameraIdList()[Ljava/lang/String;
 
@@ -1915,7 +1936,7 @@
     aget-object v4, v0, v2
 
     :try_start_0
-    iget-object v5, p0, Lcom/android/server/policy/kth;->aD:Landroid/hardware/camera2/CameraManager;
+    iget-object v5, p0, Lcom/android/server/policy/kth;->_D:Landroid/hardware/camera2/CameraManager;
 
     invoke-virtual {v5, v4}, Landroid/hardware/camera2/CameraManager;->getCameraCharacteristics(Ljava/lang/String;)Landroid/hardware/camera2/CameraCharacteristics;
 
@@ -2059,73 +2080,10 @@
     return-object p0
 .end method
 
-.method private rb(I)V
-    .locals 9
-
-    iget-boolean v0, p0, Lcom/android/server/policy/kth;->mSystemReady:Z
-
-    if-eqz v0, :cond_1
-
-    iget-object p0, p0, Lcom/android/server/policy/kth;->mContext:Landroid/content/Context;
-
-    invoke-static {p0}, Landroid/media/session/MediaSessionLegacyHelper;->getHelper(Landroid/content/Context;)Landroid/media/session/MediaSessionLegacyHelper;
-
-    move-result-object p0
-
-    if-eqz p0, :cond_0
-
-    new-instance v8, Landroid/view/KeyEvent;
-
-    invoke-static {}, Landroid/os/SystemClock;->uptimeMillis()J
-
-    move-result-wide v1
-
-    invoke-static {}, Landroid/os/SystemClock;->uptimeMillis()J
-
-    move-result-wide v3
-
-    const/4 v5, 0x0
-
-    const/4 v7, 0x0
-
-    move-object v0, v8
-
-    move v6, p1
-
-    invoke-direct/range {v0 .. v7}, Landroid/view/KeyEvent;-><init>(JJIII)V
-
-    const/4 p1, 0x1
-
-    invoke-virtual {p0, v8, p1}, Landroid/media/session/MediaSessionLegacyHelper;->sendMediaButtonEvent(Landroid/view/KeyEvent;Z)V
-
-    invoke-static {v8, p1}, Landroid/view/KeyEvent;->changeAction(Landroid/view/KeyEvent;I)Landroid/view/KeyEvent;
-
-    move-result-object v0
-
-    invoke-virtual {p0, v0, p1}, Landroid/media/session/MediaSessionLegacyHelper;->sendMediaButtonEvent(Landroid/view/KeyEvent;Z)V
-
-    goto :goto_0
-
-    :cond_0
-    sget-boolean p0, Lcom/android/server/policy/kth;->DEBUG:Z
-
-    if-eqz p0, :cond_1
-
-    const-string p0, "DeviceKeyHandler"
-
-    const-string p1, "MediaSessionLegacyHelper instance is null."
-
-    invoke-static {p0, p1}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
-
-    :cond_1
-    :goto_0
-    return-void
-.end method
-
 .method static synthetic rtg(Lcom/android/server/policy/kth;)Lcom/android/server/policy/kth$zta;
     .locals 0
 
-    iget-object p0, p0, Lcom/android/server/policy/kth;->dD:Lcom/android/server/policy/kth$zta;
+    iget-object p0, p0, Lcom/android/server/policy/kth;->cE:Lcom/android/server/policy/kth$zta;
 
     return-object p0
 .end method
@@ -2133,7 +2091,7 @@
 .method static synthetic sis(Lcom/android/server/policy/kth;)Z
     .locals 0
 
-    iget-boolean p0, p0, Lcom/android/server/policy/kth;->_C:Z
+    iget-boolean p0, p0, Lcom/android/server/policy/kth;->ZD:Z
 
     return p0
 .end method
@@ -2224,15 +2182,78 @@
 .method static synthetic tsu(Lcom/android/server/policy/kth;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/policy/kth;->Pn()V
+    invoke-direct {p0}, Lcom/android/server/policy/kth;->Zn()V
 
+    return-void
+.end method
+
+.method private vb(I)V
+    .locals 9
+
+    iget-boolean v0, p0, Lcom/android/server/policy/kth;->mSystemReady:Z
+
+    if-eqz v0, :cond_1
+
+    iget-object p0, p0, Lcom/android/server/policy/kth;->mContext:Landroid/content/Context;
+
+    invoke-static {p0}, Landroid/media/session/MediaSessionLegacyHelper;->getHelper(Landroid/content/Context;)Landroid/media/session/MediaSessionLegacyHelper;
+
+    move-result-object p0
+
+    if-eqz p0, :cond_0
+
+    new-instance v8, Landroid/view/KeyEvent;
+
+    invoke-static {}, Landroid/os/SystemClock;->uptimeMillis()J
+
+    move-result-wide v1
+
+    invoke-static {}, Landroid/os/SystemClock;->uptimeMillis()J
+
+    move-result-wide v3
+
+    const/4 v5, 0x0
+
+    const/4 v7, 0x0
+
+    move-object v0, v8
+
+    move v6, p1
+
+    invoke-direct/range {v0 .. v7}, Landroid/view/KeyEvent;-><init>(JJIII)V
+
+    const/4 p1, 0x1
+
+    invoke-virtual {p0, v8, p1}, Landroid/media/session/MediaSessionLegacyHelper;->sendMediaButtonEvent(Landroid/view/KeyEvent;Z)V
+
+    invoke-static {v8, p1}, Landroid/view/KeyEvent;->changeAction(Landroid/view/KeyEvent;I)Landroid/view/KeyEvent;
+
+    move-result-object v0
+
+    invoke-virtual {p0, v0, p1}, Landroid/media/session/MediaSessionLegacyHelper;->sendMediaButtonEvent(Landroid/view/KeyEvent;Z)V
+
+    goto :goto_0
+
+    :cond_0
+    sget-boolean p0, Lcom/android/server/policy/kth;->DEBUG:Z
+
+    if-eqz p0, :cond_1
+
+    const-string p0, "DeviceKeyHandler"
+
+    const-string p1, "MediaSessionLegacyHelper instance is null."
+
+    invoke-static {p0, p1}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
+
+    :cond_1
+    :goto_0
     return-void
 .end method
 
 .method static synthetic you(Lcom/android/server/policy/kth;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/policy/kth;->Nn()V
+    invoke-direct {p0}, Lcom/android/server/policy/kth;->Xn()V
 
     return-void
 .end method
@@ -2240,30 +2261,9 @@
 .method static synthetic you(Lcom/android/server/policy/kth;Z)Z
     .locals 0
 
-    iput-boolean p1, p0, Lcom/android/server/policy/kth;->bD:Z
+    iput-boolean p1, p0, Lcom/android/server/policy/kth;->aE:Z
 
     return p1
-.end method
-
-.method private za(Z)V
-    .locals 3
-
-    iget-object v0, p0, Lcom/android/server/policy/kth;->mContext:Landroid/content/Context;
-
-    iget-object v1, p0, Lcom/android/server/policy/kth;->mVibrator:Landroid/os/Vibrator;
-
-    const/16 v2, 0x1a
-
-    invoke-static {v0, v1, v2}, Lcom/oneplus/util/VibratorSceneUtils;->doVibrateWithSceneIfNeeded(Landroid/content/Context;Landroid/os/Vibrator;I)Z
-
-    move-result v0
-
-    if-nez v0, :cond_0
-
-    invoke-direct {p0, p1}, Lcom/android/server/policy/kth;->Aa(Z)V
-
-    :cond_0
-    return-void
 .end method
 
 .method static synthetic zta(Lcom/android/server/policy/kth;)Landroid/content/Context;
@@ -2277,7 +2277,7 @@
 .method static synthetic zta(Lcom/android/server/policy/kth;Lcom/android/server/policy/kth$zta;)Lcom/android/server/policy/kth$zta;
     .locals 0
 
-    iput-object p1, p0, Lcom/android/server/policy/kth;->dD:Lcom/android/server/policy/kth$zta;
+    iput-object p1, p0, Lcom/android/server/policy/kth;->cE:Lcom/android/server/policy/kth$zta;
 
     return-object p1
 .end method
@@ -2285,7 +2285,7 @@
 .method static synthetic zta(Lcom/android/server/policy/kth;Z)Z
     .locals 0
 
-    iput-boolean p1, p0, Lcom/android/server/policy/kth;->_C:Z
+    iput-boolean p1, p0, Lcom/android/server/policy/kth;->ZD:Z
 
     return p1
 .end method
@@ -2303,9 +2303,9 @@
 
     check-cast v0, Landroid/content/pm/LauncherApps;
 
-    iput-object v0, p0, Lcom/android/server/policy/kth;->ZC:Landroid/content/pm/LauncherApps;
+    iput-object v0, p0, Lcom/android/server/policy/kth;->YD:Landroid/content/pm/LauncherApps;
 
-    iget-object v0, p0, Lcom/android/server/policy/kth;->ZC:Landroid/content/pm/LauncherApps;
+    iget-object v0, p0, Lcom/android/server/policy/kth;->YD:Landroid/content/pm/LauncherApps;
 
     const/4 v1, 0x0
 
@@ -2342,7 +2342,7 @@
     if-eqz p1, :cond_1
 
     :try_start_0
-    iget-object p0, p0, Lcom/android/server/policy/kth;->ZC:Landroid/content/pm/LauncherApps;
+    iget-object p0, p0, Lcom/android/server/policy/kth;->YD:Landroid/content/pm/LauncherApps;
 
     new-instance p1, Landroid/os/UserHandle;
 
@@ -2378,7 +2378,7 @@
 
     invoke-virtual {v7, v2, v0}, Landroid/os/Bundle;->putBoolean(Ljava/lang/String;Z)V
 
-    iget-object v3, p0, Lcom/android/server/policy/kth;->ZC:Landroid/content/pm/LauncherApps;
+    iget-object v3, p0, Lcom/android/server/policy/kth;->YD:Landroid/content/pm/LauncherApps;
 
     const/4 v6, 0x0
 
@@ -2413,7 +2413,7 @@
 
 
 # virtual methods
-.method Ic()V
+.method Mc()V
     .locals 2
 
     const/4 v0, 0x0
@@ -2424,7 +2424,7 @@
 
     if-eqz v1, :cond_0
 
-    iget-boolean v1, p0, Lcom/android/server/policy/kth;->hD:Z
+    iget-boolean v1, p0, Lcom/android/server/policy/kth;->gE:Z
 
     if-eqz v1, :cond_0
 
@@ -2432,7 +2432,7 @@
 
     iget-object v0, p0, Lcom/android/server/policy/kth;->mSensorManager:Landroid/hardware/SensorManager;
 
-    iget-object v1, p0, Lcom/android/server/policy/kth;->iD:Landroid/hardware/SensorEventListener;
+    iget-object v1, p0, Lcom/android/server/policy/kth;->hE:Landroid/hardware/SensorEventListener;
 
     invoke-virtual {v0, v1}, Landroid/hardware/SensorManager;->unregisterListener(Landroid/hardware/SensorEventListener;)V
 
@@ -2456,7 +2456,7 @@
     return-void
 .end method
 
-.method public Jc()V
+.method public Nc()V
     .locals 2
 
     sget-boolean v0, Lcom/android/server/policy/kth;->DEBUG:Z
@@ -2470,9 +2470,9 @@
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_0
-    iget-object v0, p0, Lcom/android/server/policy/kth;->aD:Landroid/hardware/camera2/CameraManager;
+    iget-object v0, p0, Lcom/android/server/policy/kth;->_D:Landroid/hardware/camera2/CameraManager;
 
-    iget-object v1, p0, Lcom/android/server/policy/kth;->kD:Landroid/hardware/camera2/CameraManager$TorchCallback;
+    iget-object v1, p0, Lcom/android/server/policy/kth;->jE:Landroid/hardware/camera2/CameraManager$TorchCallback;
 
     iget-object p0, p0, Lcom/android/server/policy/kth;->mHandler:Landroid/os/Handler;
 
@@ -2510,13 +2510,13 @@
     monitor-enter p0
 
     :try_start_0
-    iget-boolean v0, p0, Lcom/android/server/policy/kth;->_C:Z
+    iget-boolean v0, p0, Lcom/android/server/policy/kth;->ZD:Z
 
     const/4 v1, 0x0
 
     if-eq v0, p1, :cond_2
 
-    iput-boolean p1, p0, Lcom/android/server/policy/kth;->_C:Z
+    iput-boolean p1, p0, Lcom/android/server/policy/kth;->ZD:Z
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -2525,7 +2525,7 @@
 
     move-result-object v0
 
-    iget-object v2, p0, Lcom/android/server/policy/kth;->aD:Landroid/hardware/camera2/CameraManager;
+    iget-object v2, p0, Lcom/android/server/policy/kth;->_D:Landroid/hardware/camera2/CameraManager;
 
     if-eqz v0, :cond_1
 
@@ -2556,7 +2556,7 @@
 
     invoke-static {v0, v2, p1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
-    iput-boolean v1, p0, Lcom/android/server/policy/kth;->_C:Z
+    iput-boolean v1, p0, Lcom/android/server/policy/kth;->ZD:Z
 
     monitor-exit p0
 
@@ -2611,7 +2611,7 @@
 
     if-gez v1, :cond_1
 
-    invoke-virtual {v0, p2}, Lcom/android/server/policy/kth$zta;->M(Ljava/lang/String;)V
+    invoke-virtual {v0, p2}, Lcom/android/server/policy/kth$zta;->N(Ljava/lang/String;)V
 
     goto :goto_1
 
@@ -2650,7 +2650,7 @@
 
     aget-object p2, v2, v3
 
-    invoke-virtual {v0, p2}, Lcom/android/server/policy/kth$zta;->M(Ljava/lang/String;)V
+    invoke-virtual {v0, p2}, Lcom/android/server/policy/kth$zta;->N(Ljava/lang/String;)V
 
     aget-object p2, v2, v4
 
@@ -2671,7 +2671,7 @@
     aget-object p2, v2, v4
 
     :goto_0
-    invoke-virtual {v0, p2}, Lcom/android/server/policy/kth$zta;->N(Ljava/lang/String;)V
+    invoke-virtual {v0, p2}, Lcom/android/server/policy/kth$zta;->O(Ljava/lang/String;)V
 
     goto :goto_1
 
@@ -2696,7 +2696,7 @@
 
     :cond_3
     :goto_1
-    iget-object p0, p0, Lcom/android/server/policy/kth;->KC:Ljava/util/HashMap;
+    iget-object p0, p0, Lcom/android/server/policy/kth;->KD:Ljava/util/HashMap;
 
     invoke-virtual {p0, p1, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -2744,7 +2744,7 @@
 
     invoke-static {v1, v0}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
-    iput-boolean p1, p0, Lcom/android/server/policy/kth;->gD:Z
+    iput-boolean p1, p0, Lcom/android/server/policy/kth;->fE:Z
 
     return-void
 .end method
@@ -2752,13 +2752,13 @@
 .method onScreenTurnedOff()V
     .locals 5
 
-    iget-boolean v0, p0, Lcom/android/server/policy/kth;->cD:Z
+    iget-boolean v0, p0, Lcom/android/server/policy/kth;->bE:Z
 
     const/4 v1, 0x1
 
     if-eqz v0, :cond_1
 
-    iget v0, p0, Lcom/android/server/policy/kth;->PC:I
+    iget v0, p0, Lcom/android/server/policy/kth;->OD:I
 
     if-eqz v0, :cond_1
 
@@ -2766,11 +2766,11 @@
 
     if-nez v0, :cond_1
 
-    iget-boolean v0, p0, Lcom/android/server/policy/kth;->hD:Z
+    iget-boolean v0, p0, Lcom/android/server/policy/kth;->gE:Z
 
     if-nez v0, :cond_0
 
-    iget-boolean v0, p0, Lcom/android/server/policy/kth;->fD:Z
+    iget-boolean v0, p0, Lcom/android/server/policy/kth;->eE:Z
 
     if-eqz v0, :cond_1
 
@@ -2779,7 +2779,7 @@
 
     iget-object v0, p0, Lcom/android/server/policy/kth;->mSensorManager:Landroid/hardware/SensorManager;
 
-    iget-object v2, p0, Lcom/android/server/policy/kth;->iD:Landroid/hardware/SensorEventListener;
+    iget-object v2, p0, Lcom/android/server/policy/kth;->hE:Landroid/hardware/SensorEventListener;
 
     iget-object v3, p0, Lcom/android/server/policy/kth;->mProximitySensor:Landroid/hardware/Sensor;
 
@@ -2792,7 +2792,7 @@
 
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/android/server/policy/kth;->dD:Lcom/android/server/policy/kth$zta;
+    iput-object v0, p0, Lcom/android/server/policy/kth;->cE:Lcom/android/server/policy/kth$zta;
 
     return-void
 .end method
@@ -2804,7 +2804,7 @@
 
     if-eqz v0, :cond_0
 
-    iget-boolean v0, p0, Lcom/android/server/policy/kth;->hD:Z
+    iget-boolean v0, p0, Lcom/android/server/policy/kth;->gE:Z
 
     if-nez v0, :cond_0
 
@@ -2814,7 +2814,7 @@
 
     iget-object v0, p0, Lcom/android/server/policy/kth;->mSensorManager:Landroid/hardware/SensorManager;
 
-    iget-object p0, p0, Lcom/android/server/policy/kth;->iD:Landroid/hardware/SensorEventListener;
+    iget-object p0, p0, Lcom/android/server/policy/kth;->hE:Landroid/hardware/SensorEventListener;
 
     invoke-virtual {v0, p0}, Landroid/hardware/SensorManager;->unregisterListener(Landroid/hardware/SensorEventListener;)V
 
@@ -2922,7 +2922,7 @@
 
     if-nez v2, :cond_0
 
-    iget-boolean v0, p0, Lcom/android/server/policy/kth;->YC:Z
+    iget-boolean v0, p0, Lcom/android/server/policy/kth;->XD:Z
 
     if-eqz v0, :cond_0
 
@@ -2931,7 +2931,7 @@
     :cond_0
     if-nez v1, :cond_1
 
-    iget-boolean v0, p0, Lcom/android/server/policy/kth;->XC:Z
+    iget-boolean v0, p0, Lcom/android/server/policy/kth;->WD:Z
 
     if-eqz v0, :cond_1
 
@@ -3013,7 +3013,7 @@
 
     if-eqz v0, :cond_2
 
-    invoke-direct {p0}, Lcom/android/server/policy/kth;->On()V
+    invoke-direct {p0}, Lcom/android/server/policy/kth;->Yn()V
 
     goto :goto_1
 
@@ -3055,7 +3055,7 @@
 
     if-eqz v1, :cond_1
 
-    invoke-direct {p0, p2}, Lcom/android/server/policy/kth;->Ba(Z)Z
+    invoke-direct {p0, p2}, Lcom/android/server/policy/kth;->Ca(Z)Z
 
     move-result p0
 

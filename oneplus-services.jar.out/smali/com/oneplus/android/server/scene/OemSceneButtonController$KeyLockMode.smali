@@ -35,9 +35,9 @@
 
 .field public static final enum POWER:Lcom/oneplus/android/server/scene/OemSceneButtonController$KeyLockMode;
 
-.field public static final enum Vha:Lcom/oneplus/android/server/scene/OemSceneButtonController$KeyLockMode;
+.field public static final enum Uia:Lcom/oneplus/android/server/scene/OemSceneButtonController$KeyLockMode;
 
-.field public static final enum Wha:Lcom/oneplus/android/server/scene/OemSceneButtonController$KeyLockMode;
+.field public static final enum Via:Lcom/oneplus/android/server/scene/OemSceneButtonController$KeyLockMode;
 
 
 # direct methods
@@ -72,7 +72,7 @@
 
     invoke-direct {v0, v4, v3}, Lcom/oneplus/android/server/scene/OemSceneButtonController$KeyLockMode;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/oneplus/android/server/scene/OemSceneButtonController$KeyLockMode;->Vha:Lcom/oneplus/android/server/scene/OemSceneButtonController$KeyLockMode;
+    sput-object v0, Lcom/oneplus/android/server/scene/OemSceneButtonController$KeyLockMode;->Uia:Lcom/oneplus/android/server/scene/OemSceneButtonController$KeyLockMode;
 
     new-instance v0, Lcom/oneplus/android/server/scene/OemSceneButtonController$KeyLockMode;
 
@@ -102,7 +102,7 @@
 
     invoke-direct {v0, v7, v6}, Lcom/oneplus/android/server/scene/OemSceneButtonController$KeyLockMode;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/oneplus/android/server/scene/OemSceneButtonController$KeyLockMode;->Wha:Lcom/oneplus/android/server/scene/OemSceneButtonController$KeyLockMode;
+    sput-object v0, Lcom/oneplus/android/server/scene/OemSceneButtonController$KeyLockMode;->Via:Lcom/oneplus/android/server/scene/OemSceneButtonController$KeyLockMode;
 
     new-instance v0, Lcom/oneplus/android/server/scene/OemSceneButtonController$KeyLockMode;
 
@@ -126,7 +126,7 @@
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/oneplus/android/server/scene/OemSceneButtonController$KeyLockMode;->Vha:Lcom/oneplus/android/server/scene/OemSceneButtonController$KeyLockMode;
+    sget-object v1, Lcom/oneplus/android/server/scene/OemSceneButtonController$KeyLockMode;->Uia:Lcom/oneplus/android/server/scene/OemSceneButtonController$KeyLockMode;
 
     aput-object v1, v0, v3
 
@@ -138,7 +138,7 @@
 
     aput-object v1, v0, v5
 
-    sget-object v1, Lcom/oneplus/android/server/scene/OemSceneButtonController$KeyLockMode;->Wha:Lcom/oneplus/android/server/scene/OemSceneButtonController$KeyLockMode;
+    sget-object v1, Lcom/oneplus/android/server/scene/OemSceneButtonController$KeyLockMode;->Via:Lcom/oneplus/android/server/scene/OemSceneButtonController$KeyLockMode;
 
     aput-object v1, v0, v6
 

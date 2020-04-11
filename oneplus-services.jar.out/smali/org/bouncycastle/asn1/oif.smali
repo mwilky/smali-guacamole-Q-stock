@@ -176,7 +176,7 @@
     return p0
 .end method
 
-.method public pg()Lorg/bouncycastle/asn1/vdb;
+.method public tg()Lorg/bouncycastle/asn1/vdb;
     .locals 0
 
     invoke-virtual {p0}, Lorg/bouncycastle/asn1/oif;->toASN1Primitive()Lorg/bouncycastle/asn1/vdb;

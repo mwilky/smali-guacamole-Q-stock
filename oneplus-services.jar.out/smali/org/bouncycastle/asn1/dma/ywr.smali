@@ -8,7 +8,7 @@
 
 
 # instance fields
-.field Ppa:Lorg/bouncycastle/asn1/x509/qbh;
+.field Nqa:Lorg/bouncycastle/asn1/x509/qbh;
 
 .field iterationCount:Ljava/math/BigInteger;
 
@@ -45,7 +45,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lorg/bouncycastle/asn1/dma/ywr;->Ppa:Lorg/bouncycastle/asn1/x509/qbh;
+    iput-object v0, p0, Lorg/bouncycastle/asn1/dma/ywr;->Nqa:Lorg/bouncycastle/asn1/x509/qbh;
 
     const/4 v0, 0x1
 
@@ -105,7 +105,7 @@
 
     invoke-direct {p0}, Lorg/bouncycastle/asn1/oif;-><init>()V
 
-    iput-object p1, p0, Lorg/bouncycastle/asn1/dma/ywr;->Ppa:Lorg/bouncycastle/asn1/x509/qbh;
+    iput-object p1, p0, Lorg/bouncycastle/asn1/dma/ywr;->Nqa:Lorg/bouncycastle/asn1/x509/qbh;
 
     invoke-static {p2}, Lorg/bouncycastle/util/zta;->vdb([B)[B
 
@@ -167,7 +167,7 @@
 .method public getMac()Lorg/bouncycastle/asn1/x509/qbh;
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/asn1/dma/ywr;->Ppa:Lorg/bouncycastle/asn1/x509/qbh;
+    iget-object p0, p0, Lorg/bouncycastle/asn1/dma/ywr;->Nqa:Lorg/bouncycastle/asn1/x509/qbh;
 
     return-object p0
 .end method
@@ -191,7 +191,7 @@
 
     invoke-direct {v0}, Lorg/bouncycastle/asn1/cno;-><init>()V
 
-    iget-object v1, p0, Lorg/bouncycastle/asn1/dma/ywr;->Ppa:Lorg/bouncycastle/asn1/x509/qbh;
+    iget-object v1, p0, Lorg/bouncycastle/asn1/dma/ywr;->Nqa:Lorg/bouncycastle/asn1/x509/qbh;
 
     invoke-virtual {v0, v1}, Lorg/bouncycastle/asn1/cno;->you(Lorg/bouncycastle/asn1/ssp;)V
 

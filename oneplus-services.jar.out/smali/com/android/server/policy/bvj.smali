@@ -7,8 +7,8 @@
 
 
 # annotations
-.annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/server/policy/OpPhoneWindowManager;
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/android/server/policy/OpPhoneWindowManager;->notifyLidSwitchChanged(JZ)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,14 +18,18 @@
 
 
 # instance fields
+.field final synthetic SE:Z
+
 .field final synthetic this$0:Lcom/android/server/policy/OpPhoneWindowManager;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/server/policy/OpPhoneWindowManager;)V
+.method constructor <init>(Lcom/android/server/policy/OpPhoneWindowManager;Z)V
     .locals 0
 
     iput-object p1, p0, Lcom/android/server/policy/bvj;->this$0:Lcom/android/server/policy/OpPhoneWindowManager;
+
+    iput-boolean p2, p0, Lcom/android/server/policy/bvj;->SE:Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -37,47 +41,29 @@
 .method public run()V
     .locals 3
 
-    const-string p0, "OpPhoneWindowManager"
+    new-instance v0, Landroid/content/Intent;
 
-    :try_start_0
-    invoke-static {}, Landroid/app/ActivityTaskManager;->getService()Landroid/app/IActivityTaskManager;
+    const-string v1, "android.intent.action.LID_SWITCH"
 
-    move-result-object v0
+    invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    invoke-interface {v0}, Landroid/app/IActivityTaskManager;->stopSystemLockTaskMode()V
+    const/high16 v1, 0x1000000
 
-    sget-boolean v0, Lcom/android/server/policy/OpPhoneWindowManager;->sDebugInput:Z
+    invoke-virtual {v0, v1}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
 
-    if-eqz v0, :cond_0
+    iget-boolean v1, p0, Lcom/android/server/policy/bvj;->SE:Z
 
-    const-string v0, " ++++++++++ leave lock task mode."
+    const-string v2, "lidOpen"
 
-    invoke-static {p0, v0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
-    :try_end_0
-    .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
+    invoke-virtual {v0, v2, v1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
-    goto :goto_0
+    iget-object p0, p0, Lcom/android/server/policy/bvj;->this$0:Lcom/android/server/policy/OpPhoneWindowManager;
 
-    :catch_0
-    move-exception v0
+    iget-object p0, p0, Lcom/android/server/policy/PhoneWindowManager;->mContext:Landroid/content/Context;
 
-    new-instance v1, Ljava/lang/StringBuilder;
+    sget-object v1, Landroid/os/UserHandle;->ALL:Landroid/os/UserHandle;
 
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-virtual {p0, v0, v1}, Landroid/content/Context;->sendBroadcastAsUser(Landroid/content/Intent;Landroid/os/UserHandle;)V
 
-    const-string v2, "Failed to unpin the screen: "
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-static {p0, v0}, Landroid/util/Slog;->w(Ljava/lang/String;Ljava/lang/String;)I
-
-    :cond_0
-    :goto_0
     return-void
 .end method

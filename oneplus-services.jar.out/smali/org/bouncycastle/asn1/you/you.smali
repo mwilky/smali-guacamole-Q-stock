@@ -56,7 +56,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lorg/bouncycastle/asn1/you/zta;->Jg()Lorg/bouncycastle/asn1/bvj;
+    invoke-virtual {v1}, Lorg/bouncycastle/asn1/you/zta;->Ng()Lorg/bouncycastle/asn1/bvj;
 
     move-result-object v2
 
@@ -98,7 +98,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lorg/bouncycastle/asn1/you/zta;->Jg()Lorg/bouncycastle/asn1/bvj;
+    invoke-virtual {v1}, Lorg/bouncycastle/asn1/you/zta;->Ng()Lorg/bouncycastle/asn1/bvj;
 
     move-result-object v2
 
@@ -139,7 +139,7 @@
 
     iput-object v0, p0, Lorg/bouncycastle/asn1/you/you;->attributes:Ljava/util/Hashtable;
 
-    invoke-virtual {p1}, Lorg/bouncycastle/asn1/you/zta;->Jg()Lorg/bouncycastle/asn1/bvj;
+    invoke-virtual {p1}, Lorg/bouncycastle/asn1/you/zta;->Ng()Lorg/bouncycastle/asn1/bvj;
 
     move-result-object v0
 
@@ -230,7 +230,7 @@
 
 
 # virtual methods
-.method public Qi()Lorg/bouncycastle/asn1/cno;
+.method public Ui()Lorg/bouncycastle/asn1/cno;
     .locals 3
 
     new-instance v0, Lorg/bouncycastle/asn1/cno;
@@ -297,12 +297,12 @@
     return-object v0
 .end method
 
-.method public Ri()Lorg/bouncycastle/asn1/you/sis;
+.method public Vi()Lorg/bouncycastle/asn1/you/sis;
     .locals 1
 
     new-instance v0, Lorg/bouncycastle/asn1/you/sis;
 
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/you/you;->Qi()Lorg/bouncycastle/asn1/cno;
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/you/you;->Ui()Lorg/bouncycastle/asn1/cno;
 
     move-result-object p0
 
@@ -311,7 +311,7 @@
     return-object v0
 .end method
 
-.method public Si()Ljava/util/Hashtable;
+.method public Wi()Ljava/util/Hashtable;
     .locals 1
 
     iget-object v0, p0, Lorg/bouncycastle/asn1/you/you;->attributes:Ljava/util/Hashtable;

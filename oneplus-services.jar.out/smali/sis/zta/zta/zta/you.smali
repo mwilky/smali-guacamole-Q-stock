@@ -4,9 +4,9 @@
 
 
 # static fields
-.field public static final KFa:I = 0x1
+.field public static final IGa:I = 0x1
 
-.field public static final LFa:I = 0x2
+.field public static final JGa:I = 0x2
 
 .field public static final MAX:I = 0x3
 

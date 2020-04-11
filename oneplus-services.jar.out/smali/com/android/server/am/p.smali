@@ -3,48 +3,10 @@
 .source ""
 
 # interfaces
-.implements Lcom/android/server/am/IOpProcessAdjControl;
-
-
-# static fields
-.field private static final DEBUG_ONEPLUS:Z
-
-.field private static final TAG:Ljava/lang/String; = "OpProcessAdjControl"
-
-
-# instance fields
-.field private Qv:Ljava/util/HashSet;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/HashSet<",
-            "Ljava/lang/String;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private Rv:Ljava/util/HashSet;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/HashSet<",
-            "Ljava/lang/String;",
-            ">;"
-        }
-    .end annotation
-.end field
+.implements Lcom/android/server/am/IOpAppErrorDialog;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 1
-
-    sget-boolean v0, Landroid/os/Build;->DEBUG_ONEPLUS:Z
-
-    sput-boolean v0, Lcom/android/server/am/p;->DEBUG_ONEPLUS:Z
-
-    return-void
-.end method
-
 .method public constructor <init>()V
     .locals 0
 
@@ -53,206 +15,204 @@
     return-void
 .end method
 
+.method private static Rb(Ljava/lang/String;)Z
+    .locals 1
 
-# virtual methods
-.method public forForeground(Ljava/lang/String;I)I
-    .locals 0
+    const-string v0, "Cause: null pointer dereference"
 
-    iget-object p0, p0, Lcom/android/server/am/p;->Rv:Ljava/util/HashSet;
+    invoke-virtual {p0, v0}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
-    if-eqz p0, :cond_0
-
-    invoke-virtual {p0, p1}, Ljava/util/HashSet;->contains(Ljava/lang/Object;)Z
-
-    move-result p0
-
-    if-eqz p0, :cond_0
-
-    if-lez p2, :cond_0
-
-    const/4 p0, 0x0
-
-    return p0
-
-    :cond_0
-    return p2
-.end method
-
-.method public forImportant(Ljava/lang/String;I)I
-    .locals 0
-
-    iget-object p0, p0, Lcom/android/server/am/p;->Qv:Ljava/util/HashSet;
-
-    if-eqz p0, :cond_0
-
-    invoke-virtual {p0, p1}, Ljava/util/HashSet;->contains(Ljava/lang/Object;)Z
-
-    move-result p0
-
-    if-eqz p0, :cond_0
-
-    const/16 p0, 0x190
-
-    if-le p2, p0, :cond_0
-
-    return p0
-
-    :cond_0
-    return p2
-.end method
-
-.method public init(Landroid/content/Context;)V
-    .locals 5
-
-    sget-boolean v0, Lcom/android/server/am/p;->DEBUG_ONEPLUS:Z
-
-    const-string v1, "OpProcessAdjControl"
+    move-result v0
 
     if-eqz v0, :cond_0
 
-    const-string v0, "init"
+    const-string v0, "libDexHelper.so"
 
-    invoke-static {v1, v0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-virtual {p0, v0}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+
+    move-result p0
+
+    if-eqz p0, :cond_0
+
+    const/4 p0, 0x1
+
+    goto :goto_0
 
     :cond_0
-    new-instance v0, Ljava/util/HashSet;
-
-    invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
-
-    move-result-object v2
-
-    const v3, 0x5020019
-
-    invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getStringArray(I)[Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-static {v2}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
-
-    move-result-object v2
-
-    invoke-direct {v0, v2}, Ljava/util/HashSet;-><init>(Ljava/util/Collection;)V
-
-    iput-object v0, p0, Lcom/android/server/am/p;->Qv:Ljava/util/HashSet;
-
-    new-instance v0, Ljava/util/HashSet;
-
-    invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
-
-    move-result-object p1
-
-    const v2, 0x5020018
-
-    invoke-virtual {p1, v2}, Landroid/content/res/Resources;->getStringArray(I)[Ljava/lang/String;
-
-    move-result-object p1
-
-    invoke-static {p1}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
-
-    move-result-object p1
-
-    invoke-direct {v0, p1}, Ljava/util/HashSet;-><init>(Ljava/util/Collection;)V
-
-    iput-object v0, p0, Lcom/android/server/am/p;->Rv:Ljava/util/HashSet;
-
-    sget-boolean p1, Lcom/android/server/am/p;->DEBUG_ONEPLUS:Z
-
-    if-eqz p1, :cond_3
-
-    iget-object p1, p0, Lcom/android/server/am/p;->Qv:Ljava/util/HashSet;
-
-    invoke-virtual {p1}, Ljava/util/HashSet;->iterator()Ljava/util/Iterator;
-
-    move-result-object p1
-
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v2, "OEM important processes: "
+    const/4 p0, 0x0
 
     :goto_0
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    return p0
+.end method
 
-    invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
+.method private static Sb(Ljava/lang/String;)Z
+    .locals 1
 
-    move-result v2
+    const-string v0, "java.lang.UnsatisfiedLinkError: JNI_ERR returned from JNI_OnLoad in"
 
-    const-string v3, ", "
+    invoke-virtual {p0, v0}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
-    if-eqz v2, :cond_1
+    move-result v0
 
-    new-instance v2, Ljava/lang/StringBuilder;
+    if-eqz v0, :cond_1
 
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+    const-string v0, "libjiagu.so"
 
-    invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    invoke-virtual {p0, v0}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
-    move-result-object v4
+    move-result v0
 
-    invoke-virtual {v2, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    if-nez v0, :cond_0
 
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string v0, "libjiagu_64.so"
 
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {p0, v0}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
-    move-result-object v2
+    move-result p0
+
+    if-eqz p0, :cond_1
+
+    :cond_0
+    const/4 p0, 0x1
 
     goto :goto_0
 
     :cond_1
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    const/4 p0, 0x0
 
-    move-result-object p1
+    :goto_0
+    return p0
+.end method
 
-    invoke-static {v1, p1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+.method private static Tb(Ljava/lang/String;)Z
+    .locals 1
 
-    iget-object p0, p0, Lcom/android/server/am/p;->Rv:Ljava/util/HashSet;
+    const-string v0, "Abort message: \'JNI DETECTED ERROR IN APPLICATION: obj == null"
 
-    invoke-virtual {p0}, Ljava/util/HashSet;->iterator()Ljava/util/Iterator;
-
-    move-result-object p0
-
-    new-instance p1, Ljava/lang/StringBuilder;
-
-    invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v0, "OEM foreground processes: "
-
-    :goto_1
-    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
+    invoke-virtual {p0, v0}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
     move-result v0
 
-    if-eqz v0, :cond_2
+    if-eqz v0, :cond_0
 
-    new-instance v0, Ljava/lang/StringBuilder;
+    const-string v0, "in call to GetObjectField"
 
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-virtual {p0, v0}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
-    invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    move-result p0
 
-    move-result-object v2
+    if-eqz p0, :cond_0
 
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    const/4 p0, 0x1
 
-    invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    goto :goto_0
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    :cond_0
+    const/4 p0, 0x0
 
-    move-result-object v0
+    :goto_0
+    return p0
+.end method
+
+
+# virtual methods
+.method public getCrashDetail(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    .locals 4
+
+    if-nez p1, :cond_0
+
+    const-string p0, "null"
+
+    return-object p0
+
+    :cond_0
+    invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object p0
+
+    invoke-static {}, Landroid/text/BidiFormatter;->getInstance()Landroid/text/BidiFormatter;
+
+    move-result-object p1
+
+    const v0, 0x50d00b0
+
+    const/4 v1, 0x2
+
+    new-array v1, v1, [Ljava/lang/Object;
+
+    const/4 v2, 0x0
+
+    if-eqz p2, :cond_2
+
+    invoke-virtual {p2}, Ljava/lang/String;->isEmpty()Z
+
+    move-result v3
+
+    if-eqz v3, :cond_1
+
+    goto :goto_0
+
+    :cond_1
+    invoke-virtual {p1, p2}, Landroid/text/BidiFormatter;->unicodeWrap(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object p1
 
     goto :goto_1
 
     :cond_2
-    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    :goto_0
+    invoke-virtual {p1, p3}, Landroid/text/BidiFormatter;->unicodeWrap(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object p1
+
+    :goto_1
+    aput-object p1, v1, v2
+
+    const/4 p1, 0x1
+
+    sget-object p2, Landroid/os/Build$VERSION;->RELEASE:Ljava/lang/String;
+
+    aput-object p2, v1, p1
+
+    invoke-virtual {p0, v0, v1}, Landroid/content/res/Resources;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object p0
 
-    invoke-static {v1, p0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+    return-object p0
+.end method
 
-    :cond_3
-    return-void
+.method public showCrashDetail(Ljava/lang/String;)Z
+    .locals 0
+
+    invoke-static {p1}, Lcom/android/server/am/p;->Tb(Ljava/lang/String;)Z
+
+    move-result p0
+
+    if-nez p0, :cond_1
+
+    invoke-static {p1}, Lcom/android/server/am/p;->Rb(Ljava/lang/String;)Z
+
+    move-result p0
+
+    if-nez p0, :cond_1
+
+    invoke-static {p1}, Lcom/android/server/am/p;->Sb(Ljava/lang/String;)Z
+
+    move-result p0
+
+    if-eqz p0, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    const/4 p0, 0x0
+
+    goto :goto_1
+
+    :cond_1
+    :goto_0
+    const/4 p0, 0x1
+
+    :goto_1
+    return p0
 .end method

@@ -4,14 +4,14 @@
 
 
 # instance fields
-.field private rwa:Lorg/bouncycastle/crypto/wtn/ibl;
+.field private pxa:Lorg/bouncycastle/crypto/wtn/ibl;
 
 
 # direct methods
 .method public constructor <init>(Lorg/bouncycastle/crypto/wtn/ibl;Ljava/security/SecureRandom;)V
     .locals 1
 
-    invoke-virtual {p1}, Lorg/bouncycastle/crypto/wtn/ibl;->Ei()Ljava/math/BigInteger;
+    invoke-virtual {p1}, Lorg/bouncycastle/crypto/wtn/ibl;->Ii()Ljava/math/BigInteger;
 
     move-result-object v0
 
@@ -21,17 +21,17 @@
 
     invoke-direct {p0, p2, v0}, Lorg/bouncycastle/crypto/bvj;-><init>(Ljava/security/SecureRandom;I)V
 
-    iput-object p1, p0, Lorg/bouncycastle/crypto/wtn/gwm;->rwa:Lorg/bouncycastle/crypto/wtn/ibl;
+    iput-object p1, p0, Lorg/bouncycastle/crypto/wtn/gwm;->pxa:Lorg/bouncycastle/crypto/wtn/ibl;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public hg()Lorg/bouncycastle/crypto/wtn/ibl;
+.method public lg()Lorg/bouncycastle/crypto/wtn/ibl;
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/crypto/wtn/gwm;->rwa:Lorg/bouncycastle/crypto/wtn/ibl;
+    iget-object p0, p0, Lorg/bouncycastle/crypto/wtn/gwm;->pxa:Lorg/bouncycastle/crypto/wtn/ibl;
 
     return-object p0
 .end method

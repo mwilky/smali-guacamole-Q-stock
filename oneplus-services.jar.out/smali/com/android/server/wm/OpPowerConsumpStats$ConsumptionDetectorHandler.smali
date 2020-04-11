@@ -62,7 +62,7 @@
     :pswitch_1
     const-string v2, "------MSG_PKG_EVENT"
 
-    invoke-static {v2}, Lcom/android/server/wm/OpPowerConsumpStats;->ha(Ljava/lang/String;)V
+    invoke-static {v2}, Lcom/android/server/wm/OpPowerConsumpStats;->ia(Ljava/lang/String;)V
 
     iget-object v0, v0, Landroid/os/Message;->obj:Ljava/lang/Object;
 
@@ -166,7 +166,7 @@
     :pswitch_2
     const-string v0, "------MSG_RESET_LISTENER"
 
-    invoke-static {v0}, Lcom/android/server/wm/OpPowerConsumpStats;->ha(Ljava/lang/String;)V
+    invoke-static {v0}, Lcom/android/server/wm/OpPowerConsumpStats;->ia(Ljava/lang/String;)V
 
     iget-object v0, v1, Lcom/android/server/wm/OpPowerConsumpStats$ConsumptionDetectorHandler;->this$0:Lcom/android/server/wm/OpPowerConsumpStats;
 
@@ -183,7 +183,7 @@
     :pswitch_3
     const-string v0, "------MSG_TRACKDATA"
 
-    invoke-static {v0}, Lcom/android/server/wm/OpPowerConsumpStats;->ha(Ljava/lang/String;)V
+    invoke-static {v0}, Lcom/android/server/wm/OpPowerConsumpStats;->ia(Ljava/lang/String;)V
 
     iget-object v0, v1, Lcom/android/server/wm/OpPowerConsumpStats$ConsumptionDetectorHandler;->this$0:Lcom/android/server/wm/OpPowerConsumpStats;
 
@@ -209,7 +209,7 @@
     :pswitch_4
     const-string v0, "------MSG_TIME_SET"
 
-    invoke-static {v0}, Lcom/android/server/wm/OpPowerConsumpStats;->ha(Ljava/lang/String;)V
+    invoke-static {v0}, Lcom/android/server/wm/OpPowerConsumpStats;->ia(Ljava/lang/String;)V
 
     iget-object v0, v1, Lcom/android/server/wm/OpPowerConsumpStats$ConsumptionDetectorHandler;->this$0:Lcom/android/server/wm/OpPowerConsumpStats;
 
@@ -235,7 +235,7 @@
     :pswitch_5
     const-string v0, "------MSG_REPORT"
 
-    invoke-static {v0}, Lcom/android/server/wm/OpPowerConsumpStats;->ha(Ljava/lang/String;)V
+    invoke-static {v0}, Lcom/android/server/wm/OpPowerConsumpStats;->ia(Ljava/lang/String;)V
 
     iget-object v0, v1, Lcom/android/server/wm/OpPowerConsumpStats$ConsumptionDetectorHandler;->this$0:Lcom/android/server/wm/OpPowerConsumpStats;
 
@@ -252,7 +252,7 @@
     :pswitch_6
     const-string v2, "------MSG_PLUG_INIT_EVENT"
 
-    invoke-static {v2}, Lcom/android/server/wm/OpPowerConsumpStats;->ha(Ljava/lang/String;)V
+    invoke-static {v2}, Lcom/android/server/wm/OpPowerConsumpStats;->ia(Ljava/lang/String;)V
 
     iget-object v2, v0, Landroid/os/Message;->obj:Ljava/lang/Object;
 
@@ -294,7 +294,7 @@
 
     move-result-object v12
 
-    iput-object v12, v0, Lcom/android/server/wm/OpPowerConsumpStats$gck;->cQ:Ljava/lang/String;
+    iput-object v12, v0, Lcom/android/server/wm/OpPowerConsumpStats$gck;->_Q:Ljava/lang/String;
 
     iget-object v0, v1, Lcom/android/server/wm/OpPowerConsumpStats$ConsumptionDetectorHandler;->this$0:Lcom/android/server/wm/OpPowerConsumpStats;
 
@@ -306,7 +306,7 @@
 
     move-result-wide v12
 
-    iput-wide v12, v0, Lcom/android/server/wm/OpPowerConsumpStats$gck;->dQ:J
+    iput-wide v12, v0, Lcom/android/server/wm/OpPowerConsumpStats$gck;->aR:J
 
     iget-object v0, v1, Lcom/android/server/wm/OpPowerConsumpStats$ConsumptionDetectorHandler;->this$0:Lcom/android/server/wm/OpPowerConsumpStats;
 
@@ -565,7 +565,7 @@
     :pswitch_7
     const-string v0, "------MSG_PERSIST"
 
-    invoke-static {v0}, Lcom/android/server/wm/OpPowerConsumpStats;->ha(Ljava/lang/String;)V
+    invoke-static {v0}, Lcom/android/server/wm/OpPowerConsumpStats;->ia(Ljava/lang/String;)V
 
     iget-object v0, v1, Lcom/android/server/wm/OpPowerConsumpStats$ConsumptionDetectorHandler;->this$0:Lcom/android/server/wm/OpPowerConsumpStats;
 
@@ -628,7 +628,7 @@
     :pswitch_8
     const-string v2, "------MSG_DOZE_EVENT"
 
-    invoke-static {v2}, Lcom/android/server/wm/OpPowerConsumpStats;->ha(Ljava/lang/String;)V
+    invoke-static {v2}, Lcom/android/server/wm/OpPowerConsumpStats;->ia(Ljava/lang/String;)V
 
     iget v2, v0, Landroid/os/Message;->arg1:I
 
@@ -735,7 +735,7 @@
 
     move-result-object v2
 
-    invoke-static {v2}, Lcom/android/server/wm/OpPowerConsumpStats;->ha(Ljava/lang/String;)V
+    invoke-static {v2}, Lcom/android/server/wm/OpPowerConsumpStats;->ia(Ljava/lang/String;)V
 
     iget-object v2, v1, Lcom/android/server/wm/OpPowerConsumpStats$ConsumptionDetectorHandler;->this$0:Lcom/android/server/wm/OpPowerConsumpStats;
 
@@ -777,7 +777,7 @@
     :pswitch_a
     const-string v2, "------MSG_SCREEN_EVENT"
 
-    invoke-static {v2}, Lcom/android/server/wm/OpPowerConsumpStats;->ha(Ljava/lang/String;)V
+    invoke-static {v2}, Lcom/android/server/wm/OpPowerConsumpStats;->ia(Ljava/lang/String;)V
 
     iget v0, v0, Landroid/os/Message;->arg1:I
 
@@ -805,7 +805,7 @@
     :pswitch_b
     const-string v0, "------MSG_PLUGGED_FASTCHARGE_EVENT"
 
-    invoke-static {v0}, Lcom/android/server/wm/OpPowerConsumpStats;->ha(Ljava/lang/String;)V
+    invoke-static {v0}, Lcom/android/server/wm/OpPowerConsumpStats;->ia(Ljava/lang/String;)V
 
     iget-object v0, v1, Lcom/android/server/wm/OpPowerConsumpStats$ConsumptionDetectorHandler;->this$0:Lcom/android/server/wm/OpPowerConsumpStats;
 
@@ -831,7 +831,7 @@
     :pswitch_c
     const-string v2, "------MSG_PLUG_EVENT"
 
-    invoke-static {v2}, Lcom/android/server/wm/OpPowerConsumpStats;->ha(Ljava/lang/String;)V
+    invoke-static {v2}, Lcom/android/server/wm/OpPowerConsumpStats;->ia(Ljava/lang/String;)V
 
     iget v2, v0, Landroid/os/Message;->arg1:I
 
@@ -911,7 +911,7 @@
     :pswitch_d
     const-string v0, "------MSG_GET_ONLINECONFIG"
 
-    invoke-static {v0}, Lcom/android/server/wm/OpPowerConsumpStats;->ha(Ljava/lang/String;)V
+    invoke-static {v0}, Lcom/android/server/wm/OpPowerConsumpStats;->ia(Ljava/lang/String;)V
 
     new-instance v2, Lcom/oneplus/config/ConfigGrabber;
 
@@ -936,7 +936,7 @@
     invoke-static {v1}, Lcom/android/server/wm/OpPowerConsumpStats;->kth(Lcom/android/server/wm/OpPowerConsumpStats;)V
 
     :goto_5
-    invoke-static {v0}, Lcom/android/server/wm/OpPowerConsumpStats;->ha(Ljava/lang/String;)V
+    invoke-static {v0}, Lcom/android/server/wm/OpPowerConsumpStats;->ia(Ljava/lang/String;)V
 
     :goto_6
     return-void

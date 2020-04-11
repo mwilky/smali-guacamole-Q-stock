@@ -4,11 +4,11 @@
 
 
 # static fields
-.field public static final uAa:S = 0x0s
+.field public static final sBa:S = 0x0s
 
-.field public static final vAa:S = 0x1s
+.field public static final tBa:S = 0x1s
 
-.field public static final wAa:S = 0x2s
+.field public static final uBa:S = 0x2s
 
 
 # direct methods

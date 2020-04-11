@@ -18,9 +18,9 @@
 
 
 # instance fields
-.field final synthetic aea:I
+.field final synthetic Wea:I
 
-.field final synthetic bea:Ljava/lang/String;
+.field final synthetic Xea:Ljava/lang/String;
 
 .field final synthetic this$0:Lcom/oneplus/android/server/scene/OemSceneCallBlock;
 
@@ -41,11 +41,11 @@
 
     iput p3, p0, Lcom/oneplus/android/server/scene/bvj;->val$userId:I
 
-    iput-object p4, p0, Lcom/oneplus/android/server/scene/bvj;->bea:Ljava/lang/String;
+    iput-object p4, p0, Lcom/oneplus/android/server/scene/bvj;->Xea:Ljava/lang/String;
 
     iput-object p5, p0, Lcom/oneplus/android/server/scene/bvj;->val$pkgName:Ljava/lang/String;
 
-    iput p6, p0, Lcom/oneplus/android/server/scene/bvj;->aea:I
+    iput p6, p0, Lcom/oneplus/android/server/scene/bvj;->Wea:I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -78,7 +78,7 @@
 
     iget-object p1, p0, Lcom/oneplus/android/server/scene/bvj;->this$0:Lcom/oneplus/android/server/scene/OemSceneCallBlock;
 
-    invoke-static {p1}, Lcom/oneplus/android/server/scene/OemSceneCallBlock;->access$300(Lcom/oneplus/android/server/scene/OemSceneCallBlock;)Landroid/content/Context;
+    invoke-static {p1}, Lcom/oneplus/android/server/scene/OemSceneCallBlock;->access$200(Lcom/oneplus/android/server/scene/OemSceneCallBlock;)Landroid/content/Context;
 
     move-result-object p1
 
@@ -94,7 +94,7 @@
 
     iget-object p1, p0, Lcom/oneplus/android/server/scene/bvj;->this$0:Lcom/oneplus/android/server/scene/OemSceneCallBlock;
 
-    invoke-static {p1}, Lcom/oneplus/android/server/scene/OemSceneCallBlock;->access$400(Lcom/oneplus/android/server/scene/OemSceneCallBlock;)Landroid/os/Handler;
+    invoke-static {p1}, Lcom/oneplus/android/server/scene/OemSceneCallBlock;->access$500(Lcom/oneplus/android/server/scene/OemSceneCallBlock;)Landroid/os/Handler;
 
     move-result-object p1
 
@@ -102,13 +102,13 @@
 
     iget-object p1, p0, Lcom/oneplus/android/server/scene/bvj;->this$0:Lcom/oneplus/android/server/scene/OemSceneCallBlock;
 
-    iget-object v0, p0, Lcom/oneplus/android/server/scene/bvj;->bea:Ljava/lang/String;
+    iget-object v0, p0, Lcom/oneplus/android/server/scene/bvj;->Xea:Ljava/lang/String;
 
-    invoke-static {p1, v0}, Lcom/oneplus/android/server/scene/OemSceneCallBlock;->access$502(Lcom/oneplus/android/server/scene/OemSceneCallBlock;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p1, v0}, Lcom/oneplus/android/server/scene/OemSceneCallBlock;->access$602(Lcom/oneplus/android/server/scene/OemSceneCallBlock;Ljava/lang/String;)Ljava/lang/String;
 
     iget-object p1, p0, Lcom/oneplus/android/server/scene/bvj;->this$0:Lcom/oneplus/android/server/scene/OemSceneCallBlock;
 
-    invoke-static {p1}, Lcom/oneplus/android/server/scene/OemSceneCallBlock;->access$400(Lcom/oneplus/android/server/scene/OemSceneCallBlock;)Landroid/os/Handler;
+    invoke-static {p1}, Lcom/oneplus/android/server/scene/OemSceneCallBlock;->access$500(Lcom/oneplus/android/server/scene/OemSceneCallBlock;)Landroid/os/Handler;
 
     move-result-object p1
 
@@ -118,7 +118,7 @@
 
     iget-object p1, p0, Lcom/oneplus/android/server/scene/bvj;->this$0:Lcom/oneplus/android/server/scene/OemSceneCallBlock;
 
-    invoke-static {p1}, Lcom/oneplus/android/server/scene/OemSceneCallBlock;->access$400(Lcom/oneplus/android/server/scene/OemSceneCallBlock;)Landroid/os/Handler;
+    invoke-static {p1}, Lcom/oneplus/android/server/scene/OemSceneCallBlock;->access$500(Lcom/oneplus/android/server/scene/OemSceneCallBlock;)Landroid/os/Handler;
 
     move-result-object p1
 
@@ -142,7 +142,7 @@
 
     invoke-virtual {v0, v2, v1}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
-    iget-object v1, p0, Lcom/oneplus/android/server/scene/bvj;->bea:Ljava/lang/String;
+    iget-object v1, p0, Lcom/oneplus/android/server/scene/bvj;->Xea:Ljava/lang/String;
 
     const-string v2, "PKG"
 
@@ -152,7 +152,7 @@
 
     iget-object v0, p0, Lcom/oneplus/android/server/scene/bvj;->this$0:Lcom/oneplus/android/server/scene/OemSceneCallBlock;
 
-    invoke-static {v0}, Lcom/oneplus/android/server/scene/OemSceneCallBlock;->access$400(Lcom/oneplus/android/server/scene/OemSceneCallBlock;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/oneplus/android/server/scene/OemSceneCallBlock;->access$500(Lcom/oneplus/android/server/scene/OemSceneCallBlock;)Landroid/os/Handler;
 
     move-result-object v0
 
@@ -163,11 +163,11 @@
     :cond_1
     iget-object p1, p0, Lcom/oneplus/android/server/scene/bvj;->this$0:Lcom/oneplus/android/server/scene/OemSceneCallBlock;
 
-    iget v0, p0, Lcom/oneplus/android/server/scene/bvj;->aea:I
+    iget v0, p0, Lcom/oneplus/android/server/scene/bvj;->Wea:I
 
-    iget-object p0, p0, Lcom/oneplus/android/server/scene/bvj;->bea:Ljava/lang/String;
+    iget-object p0, p0, Lcom/oneplus/android/server/scene/bvj;->Xea:Ljava/lang/String;
 
-    invoke-static {p1, v0, p0}, Lcom/oneplus/android/server/scene/OemSceneCallBlock;->access$200(Lcom/oneplus/android/server/scene/OemSceneCallBlock;ILjava/lang/String;)V
+    invoke-static {p1, v0, p0}, Lcom/oneplus/android/server/scene/OemSceneCallBlock;->access$400(Lcom/oneplus/android/server/scene/OemSceneCallBlock;ILjava/lang/String;)V
 
     return-void
 .end method

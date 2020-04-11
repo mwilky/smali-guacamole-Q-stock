@@ -6,9 +6,9 @@
 # static fields
 .field public static final FALSE:Lorg/bouncycastle/asn1/tsu;
 
-.field private static final Qoa:[B
+.field private static final Opa:[B
 
-.field private static final Roa:[B
+.field private static final Ppa:[B
 
 .field public static final TRUE:Lorg/bouncycastle/asn1/tsu;
 
@@ -31,13 +31,13 @@
 
     aput-byte v3, v1, v2
 
-    sput-object v1, Lorg/bouncycastle/asn1/tsu;->Qoa:[B
+    sput-object v1, Lorg/bouncycastle/asn1/tsu;->Opa:[B
 
     new-array v1, v0, [B
 
     aput-byte v2, v1, v2
 
-    sput-object v1, Lorg/bouncycastle/asn1/tsu;->Roa:[B
+    sput-object v1, Lorg/bouncycastle/asn1/tsu;->Ppa:[B
 
     new-instance v1, Lorg/bouncycastle/asn1/tsu;
 
@@ -61,12 +61,12 @@
 
     if-eqz p1, :cond_0
 
-    sget-object p1, Lorg/bouncycastle/asn1/tsu;->Qoa:[B
+    sget-object p1, Lorg/bouncycastle/asn1/tsu;->Opa:[B
 
     goto :goto_0
 
     :cond_0
-    sget-object p1, Lorg/bouncycastle/asn1/tsu;->Roa:[B
+    sget-object p1, Lorg/bouncycastle/asn1/tsu;->Ppa:[B
 
     :goto_0
     iput-object p1, p0, Lorg/bouncycastle/asn1/tsu;->value:[B
@@ -91,7 +91,7 @@
 
     if-nez v1, :cond_0
 
-    sget-object p1, Lorg/bouncycastle/asn1/tsu;->Roa:[B
+    sget-object p1, Lorg/bouncycastle/asn1/tsu;->Ppa:[B
 
     :goto_0
     iput-object p1, p0, Lorg/bouncycastle/asn1/tsu;->value:[B
@@ -107,7 +107,7 @@
 
     if-ne v0, v1, :cond_1
 
-    sget-object p1, Lorg/bouncycastle/asn1/tsu;->Qoa:[B
+    sget-object p1, Lorg/bouncycastle/asn1/tsu;->Opa:[B
 
     goto :goto_0
 
@@ -383,14 +383,6 @@
     return p0
 .end method
 
-.method qg()I
-    .locals 0
-
-    const/4 p0, 0x3
-
-    return p0
-.end method
-
 .method public toString()Ljava/lang/String;
     .locals 1
 
@@ -413,7 +405,15 @@
     return-object p0
 .end method
 
-.method public vg()Z
+.method ug()I
+    .locals 0
+
+    const/4 p0, 0x3
+
+    return p0
+.end method
+
+.method public zg()Z
     .locals 1
 
     iget-object p0, p0, Lorg/bouncycastle/asn1/tsu;->value:[B

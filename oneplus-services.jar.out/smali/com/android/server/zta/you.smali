@@ -18,17 +18,17 @@
 
 .field private static final TAG:Ljava/lang/String; = "OnePlusEsportApisController"
 
-.field private static final cK:[I
+.field private static final dL:[I
 
 
 # instance fields
-.field private ZJ:Z
+.field private _K:Z
 
-.field private _J:Z
+.field private aL:Z
 
-.field private aK:Landroid/util/BoostFramework;
+.field private bL:Landroid/util/BoostFramework;
 
-.field private bK:Lcom/android/server/net/NetworkPolicyManagerService;
+.field private cL:Lcom/android/server/net/NetworkPolicyManagerService;
 
 
 # direct methods
@@ -45,7 +45,7 @@
 
     fill-array-data v0, :array_0
 
-    sput-object v0, Lcom/android/server/zta/you;->cK:[I
+    sput-object v0, Lcom/android/server/zta/you;->dL:[I
 
     new-instance v0, Lcom/android/server/zta/zta;
 
@@ -69,21 +69,21 @@
 
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/android/server/zta/you;->ZJ:Z
+    iput-boolean v0, p0, Lcom/android/server/zta/you;->_K:Z
 
-    iput-boolean v0, p0, Lcom/android/server/zta/you;->_J:Z
+    iput-boolean v0, p0, Lcom/android/server/zta/you;->aL:Z
 
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/android/server/zta/you;->aK:Landroid/util/BoostFramework;
+    iput-object v0, p0, Lcom/android/server/zta/you;->bL:Landroid/util/BoostFramework;
 
-    iput-object v0, p0, Lcom/android/server/zta/you;->bK:Lcom/android/server/net/NetworkPolicyManagerService;
+    iput-object v0, p0, Lcom/android/server/zta/you;->cL:Lcom/android/server/net/NetworkPolicyManagerService;
 
     new-instance v0, Landroid/util/BoostFramework;
 
     invoke-direct {v0}, Landroid/util/BoostFramework;-><init>()V
 
-    iput-object v0, p0, Lcom/android/server/zta/you;->aK:Landroid/util/BoostFramework;
+    iput-object v0, p0, Lcom/android/server/zta/you;->bL:Landroid/util/BoostFramework;
 
     return-void
 .end method
@@ -126,7 +126,7 @@
     return-void
 
     :cond_0
-    iput-object p1, p0, Lcom/android/server/zta/you;->bK:Lcom/android/server/net/NetworkPolicyManagerService;
+    iput-object p1, p0, Lcom/android/server/zta/you;->cL:Lcom/android/server/net/NetworkPolicyManagerService;
 
     return-void
 .end method
@@ -134,9 +134,9 @@
 .method public q(Z)V
     .locals 0
 
-    iput-boolean p1, p0, Lcom/android/server/zta/you;->ZJ:Z
+    iput-boolean p1, p0, Lcom/android/server/zta/you;->_K:Z
 
-    iget-object p0, p0, Lcom/android/server/zta/you;->bK:Lcom/android/server/net/NetworkPolicyManagerService;
+    iget-object p0, p0, Lcom/android/server/zta/you;->cL:Lcom/android/server/net/NetworkPolicyManagerService;
 
     if-eqz p0, :cond_0
 
@@ -149,7 +149,7 @@
 .method public setKeepAlive(Z)Z
     .locals 5
 
-    iget-boolean v0, p0, Lcom/android/server/zta/you;->_J:Z
+    iget-boolean v0, p0, Lcom/android/server/zta/you;->aL:Z
 
     const/4 v1, 0x1
 
@@ -163,9 +163,9 @@
 
     if-eqz p1, :cond_2
 
-    iget-object p1, p0, Lcom/android/server/zta/you;->aK:Landroid/util/BoostFramework;
+    iget-object p1, p0, Lcom/android/server/zta/you;->bL:Landroid/util/BoostFramework;
 
-    sget-object v4, Lcom/android/server/zta/you;->cK:[I
+    sget-object v4, Lcom/android/server/zta/you;->dL:[I
 
     invoke-virtual {p1, v2, v4}, Landroid/util/BoostFramework;->perfLockAcquire(I[I)I
 
@@ -182,7 +182,7 @@
     invoke-static {v3, p1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_0
-    iput-boolean v1, p0, Lcom/android/server/zta/you;->_J:Z
+    iput-boolean v1, p0, Lcom/android/server/zta/you;->aL:Z
 
     goto :goto_1
 
@@ -192,7 +192,7 @@
     goto :goto_0
 
     :cond_2
-    iget-object p1, p0, Lcom/android/server/zta/you;->aK:Landroid/util/BoostFramework;
+    iget-object p1, p0, Lcom/android/server/zta/you;->bL:Landroid/util/BoostFramework;
 
     invoke-virtual {p1}, Landroid/util/BoostFramework;->perfLockRelease()I
 
@@ -209,7 +209,7 @@
     invoke-static {v3, p1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_3
-    iput-boolean v2, p0, Lcom/android/server/zta/you;->_J:Z
+    iput-boolean v2, p0, Lcom/android/server/zta/you;->aL:Z
 
     goto :goto_1
 
@@ -250,7 +250,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean v1, p0, Lcom/android/server/zta/you;->ZJ:Z
+    iget-boolean v1, p0, Lcom/android/server/zta/you;->_K:Z
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -265,7 +265,7 @@
     :cond_0
     if-nez p1, :cond_1
 
-    iget-boolean v0, p0, Lcom/android/server/zta/you;->ZJ:Z
+    iget-boolean v0, p0, Lcom/android/server/zta/you;->_K:Z
 
     if-nez v0, :cond_1
 

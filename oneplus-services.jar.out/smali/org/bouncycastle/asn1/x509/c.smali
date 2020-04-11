@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field private Esa:Lorg/bouncycastle/asn1/n;
+.field private Dta:Lorg/bouncycastle/asn1/n;
 
-.field private uma:Lorg/bouncycastle/asn1/x509/zta;
+.field private sna:Lorg/bouncycastle/asn1/x509/zta;
 
 
 # direct methods
@@ -23,7 +23,7 @@
 
     if-ne v0, v1, :cond_0
 
-    invoke-virtual {p1}, Lorg/bouncycastle/asn1/obl;->Fg()Ljava/util/Enumeration;
+    invoke-virtual {p1}, Lorg/bouncycastle/asn1/obl;->Jg()Ljava/util/Enumeration;
 
     move-result-object p1
 
@@ -35,7 +35,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lorg/bouncycastle/asn1/x509/c;->uma:Lorg/bouncycastle/asn1/x509/zta;
+    iput-object v0, p0, Lorg/bouncycastle/asn1/x509/c;->sna:Lorg/bouncycastle/asn1/x509/zta;
 
     invoke-interface {p1}, Ljava/util/Enumeration;->nextElement()Ljava/lang/Object;
 
@@ -45,7 +45,7 @@
 
     move-result-object p1
 
-    iput-object p1, p0, Lorg/bouncycastle/asn1/x509/c;->Esa:Lorg/bouncycastle/asn1/n;
+    iput-object p1, p0, Lorg/bouncycastle/asn1/x509/c;->Dta:Lorg/bouncycastle/asn1/n;
 
     return-void
 
@@ -89,9 +89,9 @@
 
     invoke-direct {v0, p2}, Lorg/bouncycastle/asn1/n;-><init>(Lorg/bouncycastle/asn1/ssp;)V
 
-    iput-object v0, p0, Lorg/bouncycastle/asn1/x509/c;->Esa:Lorg/bouncycastle/asn1/n;
+    iput-object v0, p0, Lorg/bouncycastle/asn1/x509/c;->Dta:Lorg/bouncycastle/asn1/n;
 
-    iput-object p1, p0, Lorg/bouncycastle/asn1/x509/c;->uma:Lorg/bouncycastle/asn1/x509/zta;
+    iput-object p1, p0, Lorg/bouncycastle/asn1/x509/c;->sna:Lorg/bouncycastle/asn1/x509/zta;
 
     return-void
 .end method
@@ -105,9 +105,9 @@
 
     invoke-direct {v0, p2}, Lorg/bouncycastle/asn1/n;-><init>([B)V
 
-    iput-object v0, p0, Lorg/bouncycastle/asn1/x509/c;->Esa:Lorg/bouncycastle/asn1/n;
+    iput-object v0, p0, Lorg/bouncycastle/asn1/x509/c;->Dta:Lorg/bouncycastle/asn1/n;
 
-    iput-object p1, p0, Lorg/bouncycastle/asn1/x509/c;->uma:Lorg/bouncycastle/asn1/x509/zta;
+    iput-object p1, p0, Lorg/bouncycastle/asn1/x509/c;->sna:Lorg/bouncycastle/asn1/x509/zta;
 
     return-void
 .end method
@@ -158,10 +158,10 @@
 
 
 # virtual methods
-.method public Nh()Lorg/bouncycastle/asn1/x509/zta;
+.method public Rh()Lorg/bouncycastle/asn1/x509/zta;
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/asn1/x509/c;->uma:Lorg/bouncycastle/asn1/x509/zta;
+    iget-object p0, p0, Lorg/bouncycastle/asn1/x509/c;->sna:Lorg/bouncycastle/asn1/x509/zta;
 
     return-object p0
 .end method
@@ -169,7 +169,7 @@
 .method public getAlgorithm()Lorg/bouncycastle/asn1/x509/zta;
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/asn1/x509/c;->uma:Lorg/bouncycastle/asn1/x509/zta;
+    iget-object p0, p0, Lorg/bouncycastle/asn1/x509/c;->sna:Lorg/bouncycastle/asn1/x509/zta;
 
     return-object p0
 .end method
@@ -182,7 +182,7 @@
         }
     .end annotation
 
-    iget-object p0, p0, Lorg/bouncycastle/asn1/x509/c;->Esa:Lorg/bouncycastle/asn1/n;
+    iget-object p0, p0, Lorg/bouncycastle/asn1/x509/c;->Dta:Lorg/bouncycastle/asn1/n;
 
     invoke-virtual {p0}, Lorg/bouncycastle/asn1/sis;->getOctets()[B
 
@@ -195,15 +195,15 @@
     return-object p0
 .end method
 
-.method public ih()Lorg/bouncycastle/asn1/n;
+.method public mh()Lorg/bouncycastle/asn1/n;
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/asn1/x509/c;->Esa:Lorg/bouncycastle/asn1/n;
+    iget-object p0, p0, Lorg/bouncycastle/asn1/x509/c;->Dta:Lorg/bouncycastle/asn1/n;
 
     return-object p0
 .end method
 
-.method public kh()Lorg/bouncycastle/asn1/vdb;
+.method public oh()Lorg/bouncycastle/asn1/vdb;
     .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -211,7 +211,7 @@
         }
     .end annotation
 
-    iget-object p0, p0, Lorg/bouncycastle/asn1/x509/c;->Esa:Lorg/bouncycastle/asn1/n;
+    iget-object p0, p0, Lorg/bouncycastle/asn1/x509/c;->Dta:Lorg/bouncycastle/asn1/n;
 
     invoke-virtual {p0}, Lorg/bouncycastle/asn1/sis;->getOctets()[B
 
@@ -231,11 +231,11 @@
 
     invoke-direct {v0}, Lorg/bouncycastle/asn1/cno;-><init>()V
 
-    iget-object v1, p0, Lorg/bouncycastle/asn1/x509/c;->uma:Lorg/bouncycastle/asn1/x509/zta;
+    iget-object v1, p0, Lorg/bouncycastle/asn1/x509/c;->sna:Lorg/bouncycastle/asn1/x509/zta;
 
     invoke-virtual {v0, v1}, Lorg/bouncycastle/asn1/cno;->you(Lorg/bouncycastle/asn1/ssp;)V
 
-    iget-object p0, p0, Lorg/bouncycastle/asn1/x509/c;->Esa:Lorg/bouncycastle/asn1/n;
+    iget-object p0, p0, Lorg/bouncycastle/asn1/x509/c;->Dta:Lorg/bouncycastle/asn1/n;
 
     invoke-virtual {v0, p0}, Lorg/bouncycastle/asn1/cno;->you(Lorg/bouncycastle/asn1/ssp;)V
 

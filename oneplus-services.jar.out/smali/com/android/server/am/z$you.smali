@@ -1,11 +1,11 @@
-.class final Lcom/android/server/am/x$you;
+.class final Lcom/android/server/am/z$you;
 .super Ljava/lang/Object;
 .source ""
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/server/am/x;
+    value = Lcom/android/server/am/z;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -19,7 +19,7 @@
 
 .field pss:J
 
-.field xx:J
+.field uy:J
 
 
 # direct methods
@@ -30,13 +30,13 @@
 
     const-wide/16 v0, 0x0
 
-    iput-wide v0, p0, Lcom/android/server/am/x$you;->pss:J
+    iput-wide v0, p0, Lcom/android/server/am/z$you;->pss:J
 
-    iput-wide v0, p0, Lcom/android/server/am/x$you;->xx:J
+    iput-wide v0, p0, Lcom/android/server/am/z$you;->uy:J
 
     const/4 v0, 0x0
 
-    iput v0, p0, Lcom/android/server/am/x$you;->count:I
+    iput v0, p0, Lcom/android/server/am/z$you;->count:I
 
     return-void
 .end method
@@ -46,7 +46,7 @@
 .method zta(Landroid/os/Debug$MemoryInfo;)V
     .locals 4
 
-    iget-wide v0, p0, Lcom/android/server/am/x$you;->pss:J
+    iget-wide v0, p0, Lcom/android/server/am/z$you;->pss:J
 
     invoke-virtual {p1}, Landroid/os/Debug$MemoryInfo;->getTotalPss()I
 
@@ -56,9 +56,9 @@
 
     add-long/2addr v0, v2
 
-    iput-wide v0, p0, Lcom/android/server/am/x$you;->pss:J
+    iput-wide v0, p0, Lcom/android/server/am/z$you;->pss:J
 
-    iget-wide v0, p0, Lcom/android/server/am/x$you;->xx:J
+    iget-wide v0, p0, Lcom/android/server/am/z$you;->uy:J
 
     invoke-virtual {p1}, Landroid/os/Debug$MemoryInfo;->getTotalUss()I
 
@@ -68,13 +68,13 @@
 
     add-long/2addr v0, v2
 
-    iput-wide v0, p0, Lcom/android/server/am/x$you;->xx:J
+    iput-wide v0, p0, Lcom/android/server/am/z$you;->uy:J
 
-    iget p1, p0, Lcom/android/server/am/x$you;->count:I
+    iget p1, p0, Lcom/android/server/am/z$you;->count:I
 
     add-int/lit8 p1, p1, 0x1
 
-    iput p1, p0, Lcom/android/server/am/x$you;->count:I
+    iput p1, p0, Lcom/android/server/am/z$you;->count:I
 
     return-void
 .end method

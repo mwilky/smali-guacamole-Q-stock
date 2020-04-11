@@ -129,7 +129,7 @@
 
     move-result-object p0
 
-    invoke-virtual {p0, p1}, Lcom/android/server/secrecy/zta/sis;->q(I)Z
+    invoke-virtual {p0, p1}, Lcom/android/server/secrecy/zta/sis;->t(I)Z
 
     move-result p0
 

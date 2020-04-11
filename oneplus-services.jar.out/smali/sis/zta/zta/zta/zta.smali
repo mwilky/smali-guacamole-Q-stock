@@ -4,11 +4,11 @@
 
 
 # static fields
-.field public static final HFa:I = 0x1
+.field public static final FGa:I = 0x1
 
-.field public static final IFa:I = 0x2
+.field public static final GGa:I = 0x2
 
-.field public static final JFa:I = 0x4
+.field public static final HGa:I = 0x4
 
 .field public static final MAX:I = 0xff
 

@@ -19,9 +19,9 @@
 
 .field public pkgName:Ljava/lang/String;
 
-.field public final rr:I
-
 .field public final uid:I
+
+.field public final wr:I
 
 
 # direct methods
@@ -36,7 +36,7 @@
 
     iput-object p3, p0, Lcom/android/server/am/OnePlusHighPowerDetector$you;->pkgName:Ljava/lang/String;
 
-    iput p4, p0, Lcom/android/server/am/OnePlusHighPowerDetector$you;->rr:I
+    iput p4, p0, Lcom/android/server/am/OnePlusHighPowerDetector$you;->wr:I
 
     return-void
 .end method

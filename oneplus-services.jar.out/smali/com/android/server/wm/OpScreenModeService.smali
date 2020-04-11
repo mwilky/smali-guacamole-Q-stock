@@ -674,7 +674,7 @@
 
     iget-object v1, p0, Lcom/android/server/wm/OpScreenModeService;->mDefaultMode:Lcom/android/server/wm/OpScreenModeService$zta;
 
-    iget v1, v1, Lcom/android/server/wm/OpScreenModeService$zta;->SU:I
+    iget v1, v1, Lcom/android/server/wm/OpScreenModeService$zta;->RV:I
 
     const-string v2, "oneplus_screen_resolution_backup"
 
@@ -741,7 +741,7 @@
 
     move-result v0
 
-    iget-object p2, p2, Lcom/android/server/wm/OpScreenModeService$zta;->TU:[I
+    iget-object p2, p2, Lcom/android/server/wm/OpScreenModeService$zta;->SV:[I
 
     iget-object v2, p0, Lcom/android/server/wm/OpScreenModeService$zta;->mode:Landroid/view/Display$Mode;
 
@@ -749,7 +749,7 @@
 
     move-result v2
 
-    iget-object p0, p0, Lcom/android/server/wm/OpScreenModeService$zta;->TU:[I
+    iget-object p0, p0, Lcom/android/server/wm/OpScreenModeService$zta;->SV:[I
 
     array-length v3, p2
 
@@ -871,7 +871,7 @@
 
     iget-object p2, p0, Lcom/android/server/wm/OpScreenModeService;->mDefaultMode:Lcom/android/server/wm/OpScreenModeService$zta;
 
-    iget p2, p2, Lcom/android/server/wm/OpScreenModeService$zta;->SU:I
+    iget p2, p2, Lcom/android/server/wm/OpScreenModeService$zta;->RV:I
 
     :cond_1
     iget v1, p0, Lcom/android/server/wm/OpScreenModeService;->mScreenRateSettings:I
@@ -1218,11 +1218,11 @@
 
     aget-object v2, v0, p2
 
-    iget v2, v2, Lcom/android/server/wm/OpScreenModeService$zta;->RU:I
+    iget v2, v2, Lcom/android/server/wm/OpScreenModeService$zta;->QV:I
 
     aget-object v0, v0, p2
 
-    iget v0, v0, Lcom/android/server/wm/OpScreenModeService$zta;->SU:I
+    iget v0, v0, Lcom/android/server/wm/OpScreenModeService$zta;->RV:I
 
     iget-object v3, p0, Lcom/android/server/wm/OpScreenModeService;->mParamsMap:Ljava/util/HashMap;
 
@@ -1333,7 +1333,7 @@
 
     iget-object p2, p0, Lcom/android/server/wm/OpScreenModeService;->mDefaultMode:Lcom/android/server/wm/OpScreenModeService$zta;
 
-    iget p2, p2, Lcom/android/server/wm/OpScreenModeService$zta;->SU:I
+    iget p2, p2, Lcom/android/server/wm/OpScreenModeService$zta;->RV:I
 
     invoke-virtual {p0, p1, p2}, Lcom/android/server/wm/OpScreenModeService;->getModeRecord(II)Lcom/android/server/wm/OpScreenModeService$zta;
 
@@ -1779,7 +1779,7 @@
 
     check-cast p2, Lcom/android/server/wm/OpScreenModeService$zta;
 
-    iget p2, p2, Lcom/android/server/wm/OpScreenModeService$zta;->RU:I
+    iget p2, p2, Lcom/android/server/wm/OpScreenModeService$zta;->QV:I
 
     iput p2, p1, Lcom/android/server/wm/AppWindowToken;->mRefreshRate:I
 
@@ -1851,7 +1851,7 @@
 
     iget-object v2, p0, Lcom/android/server/wm/OpScreenModeService;->mDefaultMode:Lcom/android/server/wm/OpScreenModeService$zta;
 
-    iget v2, v2, Lcom/android/server/wm/OpScreenModeService$zta;->SU:I
+    iget v2, v2, Lcom/android/server/wm/OpScreenModeService$zta;->RV:I
 
     iput v2, p0, Lcom/android/server/wm/OpScreenModeService;->mResolotionSettings:I
 
@@ -1963,13 +1963,13 @@
 
     if-eqz v0, :cond_1
 
-    iget v1, v0, Lcom/android/server/wm/OpScreenModeService$zta;->SU:I
+    iget v1, v0, Lcom/android/server/wm/OpScreenModeService$zta;->RV:I
 
     iget v2, p0, Lcom/android/server/wm/OpScreenModeService;->mResolotionSettings:I
 
     if-eq v1, v2, :cond_1
 
-    iget p1, v0, Lcom/android/server/wm/OpScreenModeService$zta;->RU:I
+    iget p1, v0, Lcom/android/server/wm/OpScreenModeService$zta;->QV:I
 
     invoke-virtual {p0, p1, v2}, Lcom/android/server/wm/OpScreenModeService;->getModeRecord(II)Lcom/android/server/wm/OpScreenModeService$zta;
 

@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field private ff:J
+.field private if:J
 
 .field private mStartTimeMs:J
 
@@ -121,7 +121,7 @@
 .method public isStopped()Z
     .locals 4
 
-    iget-wide v0, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$ywr;->ff:J
+    iget-wide v0, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$ywr;->if:J
 
     const-wide/16 v2, 0x0
 
@@ -147,7 +147,7 @@
 
     iput-wide v0, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$ywr;->mStartTimeMs:J
 
-    iput-wide v0, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$ywr;->ff:J
+    iput-wide v0, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$ywr;->if:J
 
     return-void
 .end method
@@ -184,10 +184,10 @@
 
     move-result-wide v0
 
-    iput-wide v0, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$ywr;->ff:J
+    iput-wide v0, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$ywr;->if:J
 
     :cond_0
-    iget-wide v0, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$ywr;->ff:J
+    iget-wide v0, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$ywr;->if:J
 
     iget-wide v2, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$ywr;->mStartTimeMs:J
 

@@ -29,7 +29,7 @@
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/android/server/policy/OpPhoneWindowManager;Lcom/android/server/policy/gck;)V
+.method synthetic constructor <init>(Lcom/android/server/policy/OpPhoneWindowManager;Lcom/android/server/policy/dma;)V
     .locals 0
 
     invoke-direct {p0, p1}, Lcom/android/server/policy/OpPhoneWindowManager$sis;-><init>(Lcom/android/server/policy/OpPhoneWindowManager;)V

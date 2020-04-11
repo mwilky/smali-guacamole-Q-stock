@@ -29,7 +29,7 @@
 
 
 # instance fields
-.field private final WEa:[Ljava/lang/Object;
+.field private final UFa:[Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "[TT;"
@@ -55,7 +55,7 @@
 
     iput v0, p0, Lorg/bouncycastle/util/zta$zta;->position:I
 
-    iput-object p1, p0, Lorg/bouncycastle/util/zta$zta;->WEa:[Ljava/lang/Object;
+    iput-object p1, p0, Lorg/bouncycastle/util/zta$zta;->UFa:[Ljava/lang/Object;
 
     return-void
 .end method
@@ -67,7 +67,7 @@
 
     iget v0, p0, Lorg/bouncycastle/util/zta$zta;->position:I
 
-    iget-object p0, p0, Lorg/bouncycastle/util/zta$zta;->WEa:[Ljava/lang/Object;
+    iget-object p0, p0, Lorg/bouncycastle/util/zta$zta;->UFa:[Ljava/lang/Object;
 
     array-length p0, p0
 
@@ -94,7 +94,7 @@
 
     iget v0, p0, Lorg/bouncycastle/util/zta$zta;->position:I
 
-    iget-object v1, p0, Lorg/bouncycastle/util/zta$zta;->WEa:[Ljava/lang/Object;
+    iget-object v1, p0, Lorg/bouncycastle/util/zta$zta;->UFa:[Ljava/lang/Object;
 
     array-length v2, v1
 

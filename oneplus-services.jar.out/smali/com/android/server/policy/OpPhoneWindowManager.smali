@@ -19,6 +19,8 @@
 
 
 # static fields
+.field private static final ACTION_CAPTURE_SCREENSHOT:Ljava/lang/String; = "com.oneplus.voiceassist.TAKE_SCREENSHOT"
+
 .field private static final ACTION_DISABLE_LIDCONTROLSSLEEP:Ljava/lang/String; = "oem.intent.action.DISABLE_LIDCONTROLSSLEEP"
 
 .field private static final ACTION_ENABLE_LIDCONTROLSSLEEP:Ljava/lang/String; = "oem.intent.action.ENABLE_LIDCONTROLSSLEEP"
@@ -190,6 +192,8 @@
 
 .field final mBgHandler:Landroid/os/Handler;
 
+.field mBroadcastScreenshotReceiver:Landroid/content/BroadcastReceiver;
+
 .field private mDeviceKeyHandler:Lcom/android/server/policy/kth;
 
 .field private mDoubleTapOnAppSwitchBehavior:I
@@ -242,6 +246,8 @@
 
 .field private mLongPressOnMenuBehavior:I
 
+.field mLongshotWindow:Lcom/android/server/policy/WindowManagerPolicy$WindowState;
+
 .field private mMenuKeyConsumed:Z
 
 .field private mMenuKeyDoubleTapPending:Z
@@ -272,7 +278,7 @@
 
 .field private mThreePointerGestureRegisterd:Z
 
-.field private mThreePointersGestures:Lcom/android/server/policy/vju;
+.field private mThreePointersGestures:Lcom/android/server/policy/bud;
 
 .field private mTraceVolumeUpKeyTime:J
 
@@ -462,43 +468,45 @@
 
     iput-wide v2, p0, Lcom/android/server/policy/OpPhoneWindowManager;->longPressStartTime:J
 
-    iput-object v0, p0, Lcom/android/server/policy/OpPhoneWindowManager;->mThreePointersGestures:Lcom/android/server/policy/vju;
+    iput-object v0, p0, Lcom/android/server/policy/OpPhoneWindowManager;->mThreePointersGestures:Lcom/android/server/policy/bud;
 
     iput-boolean v1, p0, Lcom/android/server/policy/OpPhoneWindowManager;->mEnableThreePointersScreenShot:Z
 
     iput-boolean v1, p0, Lcom/android/server/policy/OpPhoneWindowManager;->mThreePointerGestureRegisterd:Z
 
-    const/4 v0, 0x1
+    const/4 v2, 0x1
 
-    iput v0, p0, Lcom/android/server/policy/OpPhoneWindowManager;->mVibrateOnTouchIntensity:I
+    iput v2, p0, Lcom/android/server/policy/OpPhoneWindowManager;->mVibrateOnTouchIntensity:I
 
     iput-boolean v1, p0, Lcom/android/server/policy/OpPhoneWindowManager;->mShuttingDown:Z
 
-    new-instance v0, Lcom/android/server/policy/gck;
+    new-instance v2, Lcom/android/server/policy/dma;
 
-    invoke-direct {v0, p0}, Lcom/android/server/policy/gck;-><init>(Lcom/android/server/policy/OpPhoneWindowManager;)V
+    invoke-direct {v2, p0}, Lcom/android/server/policy/dma;-><init>(Lcom/android/server/policy/OpPhoneWindowManager;)V
 
-    iput-object v0, p0, Lcom/android/server/policy/OpPhoneWindowManager;->mPowerOffReceiver:Landroid/content/BroadcastReceiver;
+    iput-object v2, p0, Lcom/android/server/policy/OpPhoneWindowManager;->mPowerOffReceiver:Landroid/content/BroadcastReceiver;
 
-    sget v0, Lcom/android/server/policy/OpPhoneWindowManager;->SIDE_GESTURE_EDGE_SCALE:F
+    sget v2, Lcom/android/server/policy/OpPhoneWindowManager;->SIDE_GESTURE_EDGE_SCALE:F
 
-    const/high16 v2, 0x44870000    # 1080.0f
+    const/high16 v3, 0x44870000    # 1080.0f
 
-    mul-float/2addr v0, v2
+    mul-float/2addr v2, v3
 
-    float-to-int v0, v0
+    float-to-int v2, v2
 
-    iput v0, p0, Lcom/android/server/policy/OpPhoneWindowManager;->mEdgeSwipeStartThreshold:I
+    iput v2, p0, Lcom/android/server/policy/OpPhoneWindowManager;->mEdgeSwipeStartThreshold:I
 
     iput v1, p0, Lcom/android/server/policy/OpPhoneWindowManager;->mNavigationMode:I
 
-    new-instance v0, Lcom/android/server/policy/dma;
+    iput-object v0, p0, Lcom/android/server/policy/OpPhoneWindowManager;->mLongshotWindow:Lcom/android/server/policy/WindowManagerPolicy$WindowState;
 
-    invoke-direct {v0, p0}, Lcom/android/server/policy/dma;-><init>(Lcom/android/server/policy/OpPhoneWindowManager;)V
+    new-instance v0, Lcom/android/server/policy/ywr;
+
+    invoke-direct {v0, p0}, Lcom/android/server/policy/ywr;-><init>(Lcom/android/server/policy/OpPhoneWindowManager;)V
 
     iput-object v0, p0, Lcom/android/server/policy/OpPhoneWindowManager;->mEngineerModeHandleReceiver:Landroid/content/BroadcastReceiver;
 
-    new-instance v0, Lcom/android/server/policy/qbh;
+    new-instance v0, Lcom/android/server/policy/oif;
 
     invoke-static {}, Lcom/android/internal/os/BackgroundThread;->getHandler()Landroid/os/Handler;
 
@@ -508,33 +516,39 @@
 
     move-result-object v1
 
-    invoke-direct {v0, p0, v1}, Lcom/android/server/policy/qbh;-><init>(Lcom/android/server/policy/OpPhoneWindowManager;Landroid/os/Looper;)V
+    invoke-direct {v0, p0, v1}, Lcom/android/server/policy/oif;-><init>(Lcom/android/server/policy/OpPhoneWindowManager;Landroid/os/Looper;)V
 
     iput-object v0, p0, Lcom/android/server/policy/OpPhoneWindowManager;->mBgHandler:Landroid/os/Handler;
-
-    new-instance v0, Lcom/android/server/policy/bvj;
-
-    invoke-direct {v0, p0}, Lcom/android/server/policy/bvj;-><init>(Lcom/android/server/policy/OpPhoneWindowManager;)V
-
-    iput-object v0, p0, Lcom/android/server/policy/OpPhoneWindowManager;->mUnpinRunnable:Ljava/lang/Runnable;
 
     new-instance v0, Lcom/android/server/policy/ibl;
 
     invoke-direct {v0, p0}, Lcom/android/server/policy/ibl;-><init>(Lcom/android/server/policy/OpPhoneWindowManager;)V
 
-    iput-object v0, p0, Lcom/android/server/policy/OpPhoneWindowManager;->mHomeDoubleTapTimeoutRunnable:Ljava/lang/Runnable;
+    iput-object v0, p0, Lcom/android/server/policy/OpPhoneWindowManager;->mUnpinRunnable:Ljava/lang/Runnable;
 
     new-instance v0, Lcom/android/server/policy/gwm;
 
     invoke-direct {v0, p0}, Lcom/android/server/policy/gwm;-><init>(Lcom/android/server/policy/OpPhoneWindowManager;)V
 
-    iput-object v0, p0, Lcom/android/server/policy/OpPhoneWindowManager;->mBackDoubleTapTimeoutRunnable:Ljava/lang/Runnable;
+    iput-object v0, p0, Lcom/android/server/policy/OpPhoneWindowManager;->mHomeDoubleTapTimeoutRunnable:Ljava/lang/Runnable;
 
     new-instance v0, Lcom/android/server/policy/ugm;
 
     invoke-direct {v0, p0}, Lcom/android/server/policy/ugm;-><init>(Lcom/android/server/policy/OpPhoneWindowManager;)V
 
+    iput-object v0, p0, Lcom/android/server/policy/OpPhoneWindowManager;->mBackDoubleTapTimeoutRunnable:Ljava/lang/Runnable;
+
+    new-instance v0, Lcom/android/server/policy/vdb;
+
+    invoke-direct {v0, p0}, Lcom/android/server/policy/vdb;-><init>(Lcom/android/server/policy/OpPhoneWindowManager;)V
+
     iput-object v0, p0, Lcom/android/server/policy/OpPhoneWindowManager;->mAppSwitchDoubleTapTimeoutRunnable:Ljava/lang/Runnable;
+
+    new-instance v0, Lcom/android/server/policy/wtn;
+
+    invoke-direct {v0, p0}, Lcom/android/server/policy/wtn;-><init>(Lcom/android/server/policy/OpPhoneWindowManager;)V
+
+    iput-object v0, p0, Lcom/android/server/policy/OpPhoneWindowManager;->mBroadcastScreenshotReceiver:Landroid/content/BroadcastReceiver;
 
     return-void
 .end method
@@ -643,10 +657,10 @@
     return-void
 .end method
 
-.method static synthetic access$2000(Lcom/android/server/policy/OpPhoneWindowManager;)Lcom/android/server/policy/vju;
+.method static synthetic access$2000(Lcom/android/server/policy/OpPhoneWindowManager;)Lcom/android/server/policy/bud;
     .locals 0
 
-    iget-object p0, p0, Lcom/android/server/policy/OpPhoneWindowManager;->mThreePointersGestures:Lcom/android/server/policy/vju;
+    iget-object p0, p0, Lcom/android/server/policy/OpPhoneWindowManager;->mThreePointersGestures:Lcom/android/server/policy/bud;
 
     return-object p0
 .end method
@@ -3272,7 +3286,7 @@
 .end method
 
 .method public init(Landroid/content/Context;Landroid/view/IWindowManager;Lcom/android/server/policy/WindowManagerPolicy$WindowManagerFuncs;)V
-    .locals 4
+    .locals 5
 
     invoke-super {p0, p1, p2, p3}, Lcom/android/server/policy/PhoneWindowManager;->init(Landroid/content/Context;Landroid/view/IWindowManager;Lcom/android/server/policy/WindowManagerPolicy$WindowManagerFuncs;)V
 
@@ -3280,7 +3294,7 @@
 
     const/4 p3, 0x0
 
-    invoke-direct {p2, p0, p3}, Lcom/android/server/policy/OpPhoneWindowManager$sis;-><init>(Lcom/android/server/policy/OpPhoneWindowManager;Lcom/android/server/policy/gck;)V
+    invoke-direct {p2, p0, p3}, Lcom/android/server/policy/OpPhoneWindowManager$sis;-><init>(Lcom/android/server/policy/OpPhoneWindowManager;Lcom/android/server/policy/dma;)V
 
     iput-object p2, p0, Lcom/android/server/policy/OpPhoneWindowManager;->mHandler:Lcom/android/server/policy/OpPhoneWindowManager$sis;
 
@@ -3345,212 +3359,224 @@
 
     new-instance v0, Lcom/android/server/policy/OpPhoneWindowManager$zta;
 
-    invoke-direct {v0, p0, p3}, Lcom/android/server/policy/OpPhoneWindowManager$zta;-><init>(Lcom/android/server/policy/OpPhoneWindowManager;Lcom/android/server/policy/gck;)V
+    invoke-direct {v0, p0, p3}, Lcom/android/server/policy/OpPhoneWindowManager$zta;-><init>(Lcom/android/server/policy/OpPhoneWindowManager;Lcom/android/server/policy/dma;)V
 
     iput-object v0, p0, Lcom/android/server/policy/OpPhoneWindowManager;->mKeyLockModeReceiver:Lcom/android/server/policy/OpPhoneWindowManager$zta;
 
-    new-instance p3, Landroid/content/IntentFilter;
+    new-instance v0, Landroid/content/IntentFilter;
 
-    invoke-direct {p3}, Landroid/content/IntentFilter;-><init>()V
+    invoke-direct {v0}, Landroid/content/IntentFilter;-><init>()V
 
-    const-string v0, "com.oem.intent.action.KEY_LOCK_MODE"
+    const-string v2, "com.oem.intent.action.KEY_LOCK_MODE"
 
-    invoke-virtual {p3, v0}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
+    invoke-virtual {v0, v2}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
-    iget-object v0, p0, Lcom/android/server/policy/OpPhoneWindowManager;->mKeyLockModeReceiver:Lcom/android/server/policy/OpPhoneWindowManager$zta;
+    iget-object v2, p0, Lcom/android/server/policy/OpPhoneWindowManager;->mKeyLockModeReceiver:Lcom/android/server/policy/OpPhoneWindowManager$zta;
 
-    invoke-virtual {p1, v0, p3}, Landroid/content/Context;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
+    invoke-virtual {p1, v2, v0}, Landroid/content/Context;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
 
     :cond_1
-    iget-object p1, p0, Lcom/android/server/policy/OpPhoneWindowManager;->mDeviceKeyHandler:Lcom/android/server/policy/kth;
+    iget-object v0, p0, Lcom/android/server/policy/OpPhoneWindowManager;->mDeviceKeyHandler:Lcom/android/server/policy/kth;
 
-    if-nez p1, :cond_2
+    if-nez v0, :cond_2
 
-    new-instance p1, Lcom/android/server/policy/kth;
+    new-instance v0, Lcom/android/server/policy/kth;
 
-    iget-object p3, p0, Lcom/android/server/policy/PhoneWindowManager;->mContext:Landroid/content/Context;
+    iget-object v2, p0, Lcom/android/server/policy/PhoneWindowManager;->mContext:Landroid/content/Context;
 
-    invoke-direct {p1, p3}, Lcom/android/server/policy/kth;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, v2}, Lcom/android/server/policy/kth;-><init>(Landroid/content/Context;)V
 
-    iput-object p1, p0, Lcom/android/server/policy/OpPhoneWindowManager;->mDeviceKeyHandler:Lcom/android/server/policy/kth;
+    iput-object v0, p0, Lcom/android/server/policy/OpPhoneWindowManager;->mDeviceKeyHandler:Lcom/android/server/policy/kth;
 
     :cond_2
-    new-array p1, p2, [I
+    new-array v0, p2, [I
 
-    const/16 p3, 0x10
+    const/16 v2, 0x10
 
-    aput p3, p1, v1
+    aput v2, v0, v1
 
-    invoke-static {p1}, Landroid/util/OpFeatures;->isSupport([I)Z
+    invoke-static {v0}, Landroid/util/OpFeatures;->isSupport([I)Z
 
-    move-result p1
+    move-result v0
 
-    if-eqz p1, :cond_3
+    if-eqz v0, :cond_3
 
-    new-instance p1, Landroid/os/HandlerThread;
+    new-instance v0, Landroid/os/HandlerThread;
 
-    const-string p3, "ThreePointersThread"
+    const-string v2, "ThreePointersThread"
 
-    invoke-direct {p1, p3}, Landroid/os/HandlerThread;-><init>(Ljava/lang/String;)V
+    invoke-direct {v0, v2}, Landroid/os/HandlerThread;-><init>(Ljava/lang/String;)V
 
-    invoke-virtual {p1}, Landroid/os/HandlerThread;->start()V
+    invoke-virtual {v0}, Landroid/os/HandlerThread;->start()V
 
-    new-instance p3, Lcom/android/server/policy/OpPhoneWindowManager$you;
+    new-instance v2, Lcom/android/server/policy/OpPhoneWindowManager$you;
 
-    invoke-virtual {p1}, Landroid/os/HandlerThread;->getLooper()Landroid/os/Looper;
+    invoke-virtual {v0}, Landroid/os/HandlerThread;->getLooper()Landroid/os/Looper;
 
-    move-result-object p1
+    move-result-object v0
 
-    invoke-direct {p3, p0, p1}, Lcom/android/server/policy/OpPhoneWindowManager$you;-><init>(Lcom/android/server/policy/OpPhoneWindowManager;Landroid/os/Looper;)V
+    invoke-direct {v2, p0, v0}, Lcom/android/server/policy/OpPhoneWindowManager$you;-><init>(Lcom/android/server/policy/OpPhoneWindowManager;Landroid/os/Looper;)V
 
-    iput-object p3, p0, Lcom/android/server/policy/OpPhoneWindowManager;->mOpGestureHandler:Lcom/android/server/policy/OpPhoneWindowManager$you;
+    iput-object v2, p0, Lcom/android/server/policy/OpPhoneWindowManager;->mOpGestureHandler:Lcom/android/server/policy/OpPhoneWindowManager$you;
 
-    new-instance p1, Lcom/android/server/policy/vju;
+    new-instance v0, Lcom/android/server/policy/bud;
 
-    iget-object p3, p0, Lcom/android/server/policy/PhoneWindowManager;->mContext:Landroid/content/Context;
+    iget-object v2, p0, Lcom/android/server/policy/PhoneWindowManager;->mContext:Landroid/content/Context;
 
-    iget-object v0, p0, Lcom/android/server/policy/OpPhoneWindowManager;->mOpGestureHandler:Lcom/android/server/policy/OpPhoneWindowManager$you;
+    iget-object v3, p0, Lcom/android/server/policy/OpPhoneWindowManager;->mOpGestureHandler:Lcom/android/server/policy/OpPhoneWindowManager$you;
 
-    invoke-direct {p1, p3, v0}, Lcom/android/server/policy/vju;-><init>(Landroid/content/Context;Landroid/os/Handler;)V
+    invoke-direct {v0, v2, v3}, Lcom/android/server/policy/bud;-><init>(Landroid/content/Context;Landroid/os/Handler;)V
 
-    iput-object p1, p0, Lcom/android/server/policy/OpPhoneWindowManager;->mThreePointersGestures:Lcom/android/server/policy/vju;
+    iput-object v0, p0, Lcom/android/server/policy/OpPhoneWindowManager;->mThreePointersGestures:Lcom/android/server/policy/bud;
 
-    iget-object p1, p0, Lcom/android/server/policy/PhoneWindowManager;->mWindowManagerFuncs:Lcom/android/server/policy/WindowManagerPolicy$WindowManagerFuncs;
+    iget-object v0, p0, Lcom/android/server/policy/PhoneWindowManager;->mWindowManagerFuncs:Lcom/android/server/policy/WindowManagerPolicy$WindowManagerFuncs;
 
-    iget-object p3, p0, Lcom/android/server/policy/OpPhoneWindowManager;->mThreePointersGestures:Lcom/android/server/policy/vju;
+    iget-object v2, p0, Lcom/android/server/policy/OpPhoneWindowManager;->mThreePointersGestures:Lcom/android/server/policy/bud;
 
-    invoke-interface {p1, p3, v1}, Lcom/android/server/policy/WindowManagerPolicy$WindowManagerFuncs;->registerPointerEventListener(Landroid/view/WindowManagerPolicyConstants$PointerEventListener;I)V
+    invoke-interface {v0, v2, v1}, Lcom/android/server/policy/WindowManagerPolicy$WindowManagerFuncs;->registerPointerEventListener(Landroid/view/WindowManagerPolicyConstants$PointerEventListener;I)V
 
     iput-boolean p2, p0, Lcom/android/server/policy/OpPhoneWindowManager;->mThreePointerGestureRegisterd:Z
 
     :cond_3
-    sget-boolean p1, Lcom/android/server/policy/OpScreenshotImprovementInjector;->IS_SCREENSHOT_IMPROVEMENT_ENABLED:Z
+    sget-boolean v0, Lcom/android/server/policy/OpScreenshotImprovementInjector;->IS_SCREENSHOT_IMPROVEMENT_ENABLED:Z
 
-    if-eqz p1, :cond_4
+    if-eqz v0, :cond_4
 
     invoke-static {}, Lcom/android/server/policy/OpScreenshotImprovementInjector;->init()V
 
     iput-boolean v1, p0, Lcom/android/server/policy/PhoneWindowManager;->mScreenshotChordEnabled:Z
 
     :cond_4
-    sget-boolean p1, Lcom/android/server/policy/OpQuickPayInjector;->IS_QUICK_PAY_ENABLED:Z
+    sget-boolean v0, Lcom/android/server/policy/OpQuickPayInjector;->IS_QUICK_PAY_ENABLED:Z
 
-    if-eqz p1, :cond_5
+    if-eqz v0, :cond_5
 
-    iget-object p1, p0, Lcom/android/server/policy/PhoneWindowManager;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/server/policy/PhoneWindowManager;->mContext:Landroid/content/Context;
 
-    iget-object p3, p0, Lcom/android/server/policy/OpPhoneWindowManager;->mHandler:Lcom/android/server/policy/OpPhoneWindowManager$sis;
+    iget-object v2, p0, Lcom/android/server/policy/OpPhoneWindowManager;->mHandler:Lcom/android/server/policy/OpPhoneWindowManager$sis;
 
-    iget v0, p0, Lcom/android/server/policy/PhoneWindowManager;->mCurrentUserId:I
+    iget v3, p0, Lcom/android/server/policy/PhoneWindowManager;->mCurrentUserId:I
 
-    invoke-static {p1, p3, v0}, Lcom/android/server/policy/OpQuickPayInjector;->initOpQuickPay(Landroid/content/Context;Landroid/os/Handler;I)V
+    invoke-static {v0, v2, v3}, Lcom/android/server/policy/OpQuickPayInjector;->initOpQuickPay(Landroid/content/Context;Landroid/os/Handler;I)V
 
     :cond_5
-    iget-object p1, p0, Lcom/android/server/policy/PhoneWindowManager;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/server/policy/PhoneWindowManager;->mContext:Landroid/content/Context;
 
-    iget-object p3, p0, Lcom/android/server/policy/OpPhoneWindowManager;->mHandler:Lcom/android/server/policy/OpPhoneWindowManager$sis;
+    iget-object v2, p0, Lcom/android/server/policy/OpPhoneWindowManager;->mHandler:Lcom/android/server/policy/OpPhoneWindowManager$sis;
 
-    invoke-static {p1, p3, p0}, Lcom/android/server/policy/OpPowerKeyLaunchInjector;->init(Landroid/content/Context;Landroid/os/Handler;Lcom/android/server/policy/PhoneWindowManager;)V
+    invoke-static {v0, v2, p0}, Lcom/android/server/policy/OpPowerKeyLaunchInjector;->init(Landroid/content/Context;Landroid/os/Handler;Lcom/android/server/policy/PhoneWindowManager;)V
 
-    new-instance p1, Lcom/android/internal/widget/LockPatternUtils;
+    new-instance v0, Lcom/android/internal/widget/LockPatternUtils;
 
-    iget-object p3, p0, Lcom/android/server/policy/PhoneWindowManager;->mContext:Landroid/content/Context;
+    iget-object v2, p0, Lcom/android/server/policy/PhoneWindowManager;->mContext:Landroid/content/Context;
 
-    invoke-direct {p1, p3}, Lcom/android/internal/widget/LockPatternUtils;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, v2}, Lcom/android/internal/widget/LockPatternUtils;-><init>(Landroid/content/Context;)V
 
-    iput-object p1, p0, Lcom/android/server/policy/OpPhoneWindowManager;->mLockPatternUtils:Lcom/android/internal/widget/LockPatternUtils;
+    iput-object v0, p0, Lcom/android/server/policy/OpPhoneWindowManager;->mLockPatternUtils:Lcom/android/internal/widget/LockPatternUtils;
 
-    iget-object p1, p0, Lcom/android/server/policy/PhoneWindowManager;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/server/policy/PhoneWindowManager;->mContext:Landroid/content/Context;
 
-    invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {v0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
-    move-result-object p1
+    move-result-object v0
 
-    const p3, 0x10700a0
+    const v2, 0x10700a0
 
-    invoke-static {p1, p3}, Lcom/android/server/policy/PhoneWindowManager;->getLongIntArray(Landroid/content/res/Resources;I)[J
+    invoke-static {v0, v2}, Lcom/android/server/policy/PhoneWindowManager;->getLongIntArray(Landroid/content/res/Resources;I)[J
 
-    move-result-object p1
+    move-result-object v0
 
-    iget-object p3, p0, Lcom/android/server/policy/PhoneWindowManager;->mContext:Landroid/content/Context;
+    iget-object v2, p0, Lcom/android/server/policy/PhoneWindowManager;->mContext:Landroid/content/Context;
 
-    invoke-virtual {p3}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {v2}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
-    move-result-object p3
+    move-result-object v2
 
-    const/4 v0, -0x2
+    const/4 v3, -0x2
 
-    const-string v2, "vibrate_on_touch_intensity"
+    const-string v4, "vibrate_on_touch_intensity"
 
-    invoke-static {p3, v2, p2, v0}, Landroid/provider/Settings$System;->getIntForUser(Landroid/content/ContentResolver;Ljava/lang/String;II)I
+    invoke-static {v2, v4, p2, v3}, Landroid/provider/Settings$System;->getIntForUser(Landroid/content/ContentResolver;Ljava/lang/String;II)I
 
-    move-result p3
+    move-result v2
 
-    iput p3, p0, Lcom/android/server/policy/OpPhoneWindowManager;->mVibrateOnTouchIntensity:I
+    iput v2, p0, Lcom/android/server/policy/OpPhoneWindowManager;->mVibrateOnTouchIntensity:I
 
-    array-length p3, p1
+    array-length v2, v0
 
-    add-int/2addr p3, p2
+    add-int/2addr v2, p2
 
-    new-array p3, p3, [J
+    new-array v2, v2, [J
 
-    iput-object p3, p0, Lcom/android/server/policy/OpPhoneWindowManager;->mLockPatternVibePattern:[J
+    iput-object v2, p0, Lcom/android/server/policy/OpPhoneWindowManager;->mLockPatternVibePattern:[J
 
-    iget-object p3, p0, Lcom/android/server/policy/OpPhoneWindowManager;->mLockPatternVibePattern:[J
+    iget-object v2, p0, Lcom/android/server/policy/OpPhoneWindowManager;->mLockPatternVibePattern:[J
 
-    iget v0, p0, Lcom/android/server/policy/OpPhoneWindowManager;->mVibrateOnTouchIntensity:I
+    iget v3, p0, Lcom/android/server/policy/OpPhoneWindowManager;->mVibrateOnTouchIntensity:I
 
-    add-int/2addr v0, p2
+    add-int/2addr v3, p2
 
-    mul-int/lit8 v0, v0, -0x1
+    mul-int/lit8 v3, v3, -0x1
 
-    int-to-long v2, v0
+    int-to-long v3, v3
 
-    aput-wide v2, p3, v1
+    aput-wide v3, v2, v1
 
-    array-length v0, p1
+    array-length v3, v0
 
-    invoke-static {p1, v1, p3, p2, v0}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+    invoke-static {v0, v1, v2, p2, v3}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    new-instance p1, Landroid/content/IntentFilter;
+    new-instance v0, Landroid/content/IntentFilter;
 
-    invoke-direct {p1}, Landroid/content/IntentFilter;-><init>()V
+    invoke-direct {v0}, Landroid/content/IntentFilter;-><init>()V
 
-    const-string p3, "oem.intent.action.DISABLE_LIDCONTROLSSLEEP"
+    const-string v2, "oem.intent.action.DISABLE_LIDCONTROLSSLEEP"
 
-    invoke-virtual {p1, p3}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
+    invoke-virtual {v0, v2}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
-    const-string p3, "oem.intent.action.ENABLE_LIDCONTROLSSLEEP"
+    const-string v2, "oem.intent.action.ENABLE_LIDCONTROLSSLEEP"
 
-    invoke-virtual {p1, p3}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
+    invoke-virtual {v0, v2}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
-    iget-object p3, p0, Lcom/android/server/policy/PhoneWindowManager;->mContext:Landroid/content/Context;
+    iget-object v2, p0, Lcom/android/server/policy/PhoneWindowManager;->mContext:Landroid/content/Context;
 
-    iget-object v0, p0, Lcom/android/server/policy/OpPhoneWindowManager;->mEngineerModeHandleReceiver:Landroid/content/BroadcastReceiver;
+    iget-object v3, p0, Lcom/android/server/policy/OpPhoneWindowManager;->mEngineerModeHandleReceiver:Landroid/content/BroadcastReceiver;
 
-    invoke-virtual {p3, v0, p1}, Landroid/content/Context;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
+    invoke-virtual {v2, v3, v0}, Landroid/content/Context;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
 
-    new-array p1, p2, [I
+    new-array p2, p2, [I
 
-    const/16 p2, 0xdd
+    const/16 v0, 0xdd
 
-    aput p2, p1, v1
+    aput v0, p2, v1
 
-    invoke-static {p1}, Landroid/util/OpFeatures;->isSupport([I)Z
+    invoke-static {p2}, Landroid/util/OpFeatures;->isSupport([I)Z
 
-    move-result p1
+    move-result p2
 
-    if-eqz p1, :cond_6
+    if-eqz p2, :cond_6
 
-    iget-object p1, p0, Lcom/android/server/policy/PhoneWindowManager;->mWindowManagerFuncs:Lcom/android/server/policy/WindowManagerPolicy$WindowManagerFuncs;
+    iget-object p2, p0, Lcom/android/server/policy/PhoneWindowManager;->mWindowManagerFuncs:Lcom/android/server/policy/WindowManagerPolicy$WindowManagerFuncs;
 
-    new-instance p2, Lcom/oneplus/core/gamevibrate/GameVibrateManager;
+    new-instance v0, Lcom/oneplus/core/gamevibrate/GameVibrateManager;
 
-    invoke-direct {p2}, Lcom/oneplus/core/gamevibrate/GameVibrateManager;-><init>()V
+    invoke-direct {v0}, Lcom/oneplus/core/gamevibrate/GameVibrateManager;-><init>()V
 
-    invoke-interface {p1, p2, v1}, Lcom/android/server/policy/WindowManagerPolicy$WindowManagerFuncs;->registerPointerEventListener(Landroid/view/WindowManagerPolicyConstants$PointerEventListener;I)V
+    invoke-interface {p2, v0, v1}, Lcom/android/server/policy/WindowManagerPolicy$WindowManagerFuncs;->registerPointerEventListener(Landroid/view/WindowManagerPolicyConstants$PointerEventListener;I)V
 
     :cond_6
+    new-instance p2, Landroid/content/IntentFilter;
+
+    const-string v0, "com.oneplus.voiceassist.TAKE_SCREENSHOT"
+
+    invoke-direct {p2, v0}, Landroid/content/IntentFilter;-><init>(Ljava/lang/String;)V
+
+    iget-object v0, p0, Lcom/android/server/policy/OpPhoneWindowManager;->mBroadcastScreenshotReceiver:Landroid/content/BroadcastReceiver;
+
+    const-string v1, "oneplus.permission.VOICE_SCREENSHOT"
+
+    invoke-virtual {p1, v0, p2, v1, p3}, Landroid/content/Context;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;Ljava/lang/String;Landroid/os/Handler;)Landroid/content/Intent;
+
     iget p1, p0, Lcom/android/server/policy/PhoneWindowManager;->mVeryLongPressTimeout:I
 
     div-int/lit8 p2, p1, 0x6
@@ -3823,7 +3849,7 @@
 
     if-eqz v3, :cond_11
 
-    sget-object v3, Lcom/android/server/policy/wtn;->OD:[I
+    sget-object v3, Lcom/android/server/policy/gck;->RE:[I
 
     sget-object v21, Lcom/android/server/policy/OpPhoneWindowManager;->mKeyLockMode:Lcom/android/server/policy/OpPhoneWindowManager$KeyLockMode;
 
@@ -5250,7 +5276,7 @@
 
     if-eqz v4, :cond_1d
 
-    sget-object v4, Lcom/android/server/policy/wtn;->OD:[I
+    sget-object v4, Lcom/android/server/policy/gck;->RE:[I
 
     sget-object v5, Lcom/android/server/policy/OpPhoneWindowManager;->mKeyLockMode:Lcom/android/server/policy/OpPhoneWindowManager$KeyLockMode;
 
@@ -6033,9 +6059,9 @@
 
     new-instance v0, Ljava/lang/Thread;
 
-    new-instance v1, Lcom/android/server/policy/oif;
+    new-instance v1, Lcom/android/server/policy/bvj;
 
-    invoke-direct {v1, p0, p3}, Lcom/android/server/policy/oif;-><init>(Lcom/android/server/policy/OpPhoneWindowManager;Z)V
+    invoke-direct {v1, p0, p3}, Lcom/android/server/policy/bvj;-><init>(Lcom/android/server/policy/OpPhoneWindowManager;Z)V
 
     invoke-direct {v0, v1}, Ljava/lang/Thread;-><init>(Ljava/lang/Runnable;)V
 
@@ -6192,9 +6218,9 @@
 
     move-result-object p0
 
-    check-cast p0, Lcom/android/server/policy/obl;
+    check-cast p0, Lcom/android/server/policy/oxb;
 
-    invoke-virtual {p0}, Lcom/android/server/policy/obl;->onKeyguardDone()V
+    invoke-virtual {p0}, Lcom/android/server/policy/oxb;->onKeyguardDone()V
 
     return-void
 .end method
@@ -6223,41 +6249,43 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    iget-object p0, p0, Lcom/android/server/policy/PhoneWindowManager;->mDefaultDisplayPolicy:Lcom/android/server/wm/DisplayPolicy;
+    iget-object v1, p0, Lcom/android/server/policy/PhoneWindowManager;->mDefaultDisplayPolicy:Lcom/android/server/wm/DisplayPolicy;
 
-    invoke-virtual {p0}, Lcom/android/server/wm/DisplayPolicy;->getFocusedWindowState()Lcom/android/server/wm/WindowState;
+    invoke-virtual {v1}, Lcom/android/server/wm/DisplayPolicy;->getFocusedWindowState()Lcom/android/server/wm/WindowState;
 
-    move-result-object p0
+    move-result-object v1
 
-    if-nez p0, :cond_0
+    if-nez v1, :cond_0
 
     return-void
 
     :cond_0
-    invoke-interface {p0}, Lcom/android/server/policy/WindowManagerPolicy$WindowState;->longshotStart()V
+    invoke-interface {v1}, Lcom/android/server/policy/WindowManagerPolicy$WindowState;->longshotStart()V
 
-    sget-object v1, Lcom/oneplus/android/context/IOneplusContext$EType;->ONEPLUS_LONGSCREENSHOT:Lcom/oneplus/android/context/IOneplusContext$EType;
+    iput-object v1, p0, Lcom/android/server/policy/OpPhoneWindowManager;->mLongshotWindow:Lcom/android/server/policy/WindowManagerPolicy$WindowState;
 
-    invoke-static {v1}, Lcom/oneplus/android/context/OneplusContext;->queryInterface(Lcom/oneplus/android/context/IOneplusContext$EType;)Ljava/lang/Object;
+    sget-object p0, Lcom/oneplus/android/context/IOneplusContext$EType;->ONEPLUS_LONGSCREENSHOT:Lcom/oneplus/android/context/IOneplusContext$EType;
 
-    move-result-object v1
-
-    check-cast v1, Lcom/oneplus/longshot/IOpLongScreenshotManager;
-
-    :try_start_0
-    invoke-interface {p0}, Lcom/android/server/policy/WindowManagerPolicy$WindowState;->getWindowToken()Landroid/os/IBinder;
+    invoke-static {p0}, Lcom/oneplus/android/context/OneplusContext;->queryInterface(Lcom/oneplus/android/context/IOneplusContext$EType;)Ljava/lang/Object;
 
     move-result-object p0
 
-    if-eqz v1, :cond_1
+    check-cast p0, Lcom/oneplus/longshot/IOpLongScreenshotManager;
 
-    invoke-interface {v1}, Lcom/oneplus/longshot/IOpLongScreenshotManager;->isLongshotMode()Z
+    :try_start_0
+    invoke-interface {v1}, Lcom/android/server/policy/WindowManagerPolicy$WindowState;->getWindowToken()Landroid/os/IBinder;
+
+    move-result-object v1
+
+    if-eqz p0, :cond_1
+
+    invoke-interface {p0}, Lcom/oneplus/longshot/IOpLongScreenshotManager;->isLongshotMode()Z
 
     move-result v2
 
     if-eqz v2, :cond_1
 
-    invoke-interface {v1, p0}, Lcom/oneplus/longshot/IOpLongScreenshotManager;->notifyWindowLayerChange(Landroid/os/IBinder;)V
+    invoke-interface {p0, v1}, Lcom/oneplus/longshot/IOpLongScreenshotManager;->notifyWindowLayerChange(Landroid/os/IBinder;)V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -6656,9 +6684,9 @@
 
     move-result-object p0
 
-    check-cast p0, Lcom/android/server/policy/obl;
+    check-cast p0, Lcom/android/server/policy/oxb;
 
-    invoke-virtual {p0}, Lcom/android/server/policy/obl;->screenTurnedOff()V
+    invoke-virtual {p0}, Lcom/android/server/policy/oxb;->screenTurnedOff()V
 
     return-void
 .end method
@@ -6672,7 +6700,7 @@
 
     if-eqz p0, :cond_0
 
-    invoke-virtual {p0}, Lcom/android/server/policy/kth;->Ic()V
+    invoke-virtual {p0}, Lcom/android/server/policy/kth;->Mc()V
 
     :cond_0
     return-void
@@ -6838,15 +6866,26 @@
 .end method
 
 .method public stopLongshotConnection()V
-    .locals 0
+    .locals 1
 
+    iget-object v0, p0, Lcom/android/server/policy/OpPhoneWindowManager;->mLongshotWindow:Lcom/android/server/policy/WindowManagerPolicy$WindowState;
+
+    if-eqz v0, :cond_0
+
+    invoke-interface {v0}, Lcom/android/server/policy/WindowManagerPolicy$WindowState;->longshotStop()V
+
+    const/4 v0, 0x0
+
+    iput-object v0, p0, Lcom/android/server/policy/OpPhoneWindowManager;->mLongshotWindow:Lcom/android/server/policy/WindowManagerPolicy$WindowState;
+
+    :cond_0
     iget-object p0, p0, Lcom/android/server/policy/PhoneWindowManager;->mDefaultDisplayPolicy:Lcom/android/server/wm/DisplayPolicy;
 
-    if-eqz p0, :cond_0
+    if-eqz p0, :cond_1
 
     invoke-virtual {p0}, Lcom/android/server/wm/DisplayPolicy;->stopLongshotConnection()V
 
-    :cond_0
+    :cond_1
     return-void
 .end method
 
@@ -6939,7 +6978,7 @@
 
     move-result-object v0
 
-    sget-object v1, Lcom/android/server/policy/OpPhoneWindowManager$KeyLockMode;->Wha:Lcom/android/server/policy/OpPhoneWindowManager$KeyLockMode;
+    sget-object v1, Lcom/android/server/policy/OpPhoneWindowManager$KeyLockMode;->Via:Lcom/android/server/policy/OpPhoneWindowManager$KeyLockMode;
 
     goto :goto_0
 
@@ -6954,11 +6993,37 @@
     :cond_3
     iget-object v0, p0, Lcom/android/server/policy/OpPhoneWindowManager;->mHandler:Lcom/android/server/policy/OpPhoneWindowManager$sis;
 
-    new-instance v1, Lcom/android/server/policy/ywr;
+    new-instance v1, Lcom/android/server/policy/qbh;
 
-    invoke-direct {v1, p0}, Lcom/android/server/policy/ywr;-><init>(Lcom/android/server/policy/OpPhoneWindowManager;)V
+    invoke-direct {v1, p0}, Lcom/android/server/policy/qbh;-><init>(Lcom/android/server/policy/OpPhoneWindowManager;)V
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
+
+    return-void
+.end method
+
+.method public takeOPLongshotVoice(Z)V
+    .locals 1
+
+    iget-object v0, p0, Lcom/android/server/policy/PhoneWindowManager;->mScreenshotRunnable:Lcom/android/server/policy/PhoneWindowManager$ScreenshotRunnable;
+
+    if-nez p1, :cond_0
+
+    const/4 p1, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/16 p1, 0x64
+
+    :goto_0
+    invoke-virtual {v0, p1}, Lcom/android/server/policy/PhoneWindowManager$ScreenshotRunnable;->setScreenshotType(I)V
+
+    iget-object p1, p0, Lcom/android/server/policy/OpPhoneWindowManager;->mHandler:Lcom/android/server/policy/OpPhoneWindowManager$sis;
+
+    iget-object p0, p0, Lcom/android/server/policy/PhoneWindowManager;->mScreenshotRunnable:Lcom/android/server/policy/PhoneWindowManager$ScreenshotRunnable;
+
+    invoke-virtual {p1, p0}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 
     return-void
 .end method

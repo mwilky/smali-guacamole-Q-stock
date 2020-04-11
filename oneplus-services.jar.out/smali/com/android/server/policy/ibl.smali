@@ -35,38 +35,49 @@
 
 # virtual methods
 .method public run()V
-    .locals 2
+    .locals 3
 
-    iget-object v0, p0, Lcom/android/server/policy/ibl;->this$0:Lcom/android/server/policy/OpPhoneWindowManager;
+    const-string p0, "OpPhoneWindowManager"
 
-    invoke-static {v0}, Lcom/android/server/policy/OpPhoneWindowManager;->access$2200(Lcom/android/server/policy/OpPhoneWindowManager;)Z
+    :try_start_0
+    invoke-static {}, Landroid/app/ActivityTaskManager;->getService()Landroid/app/IActivityTaskManager;
 
-    move-result v0
+    move-result-object v0
+
+    invoke-interface {v0}, Landroid/app/IActivityTaskManager;->stopSystemLockTaskMode()V
+
+    sget-boolean v0, Lcom/android/server/policy/OpPhoneWindowManager;->sDebugInput:Z
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/android/server/policy/ibl;->this$0:Lcom/android/server/policy/OpPhoneWindowManager;
+    const-string v0, " ++++++++++ leave lock task mode."
 
-    invoke-static {v0}, Lcom/android/server/policy/OpPhoneWindowManager;->access$1100(Lcom/android/server/policy/OpPhoneWindowManager;)Z
+    invoke-static {p0, v0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+    :try_end_0
+    .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
-    move-result v0
+    goto :goto_0
 
-    if-nez v0, :cond_0
+    :catch_0
+    move-exception v0
 
-    iget-object v0, p0, Lcom/android/server/policy/ibl;->this$0:Lcom/android/server/policy/OpPhoneWindowManager;
+    new-instance v1, Ljava/lang/StringBuilder;
 
-    const/4 v1, 0x0
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    invoke-static {v0, v1}, Lcom/android/server/policy/OpPhoneWindowManager;->access$2202(Lcom/android/server/policy/OpPhoneWindowManager;Z)Z
+    const-string v2, "Failed to unpin the screen: "
 
-    iget-object p0, p0, Lcom/android/server/policy/ibl;->this$0:Lcom/android/server/policy/OpPhoneWindowManager;
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const/16 v0, 0xc
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    const/4 v1, 0x0
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    invoke-virtual {p0, v0, v1}, Lcom/android/server/policy/OpPhoneWindowManager;->performKeyAction(ILandroid/view/KeyEvent;)V
+    move-result-object v0
+
+    invoke-static {p0, v0}, Landroid/util/Slog;->w(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_0
+    :goto_0
     return-void
 .end method

@@ -8,7 +8,7 @@
 
 .field protected strength:I
 
-.field protected yla:Ljava/security/SecureRandom;
+.field protected xma:Ljava/security/SecureRandom;
 
 
 # direct methods
@@ -51,20 +51,20 @@
     invoke-direct {v0, v2}, Lorg/bouncycastle/crypto/ssp/kth;-><init>(Lorg/bouncycastle/crypto/qbh;)V
 
     :goto_0
-    iget-object v2, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dsa/zta;->yla:Ljava/security/SecureRandom;
+    iget-object v2, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dsa/zta;->xma:Ljava/security/SecureRandom;
 
     if-nez v2, :cond_1
 
-    invoke-static {}, Lorg/bouncycastle/crypto/igw;->Ui()Ljava/security/SecureRandom;
+    invoke-static {}, Lorg/bouncycastle/crypto/igw;->Yi()Ljava/security/SecureRandom;
 
     move-result-object v2
 
-    iput-object v2, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dsa/zta;->yla:Ljava/security/SecureRandom;
+    iput-object v2, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dsa/zta;->xma:Ljava/security/SecureRandom;
 
     :cond_1
     iget v2, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dsa/zta;->strength:I
 
-    invoke-static {v2}, Lorg/bouncycastle/jcajce/provider/asymmetric/util/gck;->ga(I)I
+    invoke-static {v2}, Lorg/bouncycastle/jcajce/provider/asymmetric/util/gck;->ja(I)I
 
     move-result v2
 
@@ -76,7 +76,7 @@
 
     const/16 v4, 0xa0
 
-    iget-object v5, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dsa/zta;->yla:Ljava/security/SecureRandom;
+    iget-object v5, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dsa/zta;->xma:Ljava/security/SecureRandom;
 
     invoke-direct {v3, v1, v4, v2, v5}, Lorg/bouncycastle/crypto/wtn/dma;-><init>(IIILjava/security/SecureRandom;)V
 
@@ -96,7 +96,7 @@
 
     const/16 v4, 0x100
 
-    iget-object v5, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dsa/zta;->yla:Ljava/security/SecureRandom;
+    iget-object v5, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dsa/zta;->xma:Ljava/security/SecureRandom;
 
     invoke-direct {v1, v3, v4, v2, v5}, Lorg/bouncycastle/crypto/wtn/dma;-><init>(IIILjava/security/SecureRandom;)V
 
@@ -105,7 +105,7 @@
     goto :goto_1
 
     :cond_3
-    iget-object v1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dsa/zta;->yla:Ljava/security/SecureRandom;
+    iget-object v1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dsa/zta;->xma:Ljava/security/SecureRandom;
 
     invoke-virtual {v0, v3, v2, v1}, Lorg/bouncycastle/crypto/ssp/kth;->zta(IILjava/security/SecureRandom;)V
 
@@ -117,7 +117,7 @@
     :try_start_0
     const-string v1, "DSA"
 
-    invoke-virtual {p0, v1}, Lorg/bouncycastle/jcajce/provider/asymmetric/util/you;->ra(Ljava/lang/String;)Ljava/security/AlgorithmParameters;
+    invoke-virtual {p0, v1}, Lorg/bouncycastle/jcajce/provider/asymmetric/util/you;->sa(Ljava/lang/String;)Ljava/security/AlgorithmParameters;
 
     move-result-object p0
 
@@ -210,7 +210,7 @@
     :goto_1
     iput p1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dsa/zta;->strength:I
 
-    iput-object p2, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dsa/zta;->yla:Ljava/security/SecureRandom;
+    iput-object p2, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dsa/zta;->xma:Ljava/security/SecureRandom;
 
     return-void
 

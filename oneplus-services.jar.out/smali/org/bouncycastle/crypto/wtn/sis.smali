@@ -4,11 +4,11 @@
 
 
 # static fields
-.field public static final lAa:I = 0x8
+.field public static final jBa:I = 0x8
 
-.field private static final mAa:I = 0x10
+.field private static final kBa:I = 0x10
 
-.field private static nAa:[B
+.field private static lBa:[B
 
 
 # direct methods
@@ -21,7 +21,7 @@
 
     fill-array-data v0, :array_0
 
-    sput-object v0, Lorg/bouncycastle/crypto/wtn/sis;->nAa:[B
+    sput-object v0, Lorg/bouncycastle/crypto/wtn/sis;->lBa:[B
 
     return-void
 
@@ -270,7 +270,7 @@
 
     aget-byte v4, p0, v4
 
-    sget-object v5, Lorg/bouncycastle/crypto/wtn/sis;->nAa:[B
+    sget-object v5, Lorg/bouncycastle/crypto/wtn/sis;->lBa:[B
 
     mul-int/lit8 v6, v2, 0x8
 

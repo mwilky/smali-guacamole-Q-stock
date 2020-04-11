@@ -9,13 +9,13 @@
 # static fields
 .field private static final TAG:Ljava/lang/String; = "OpSlaManager"
 
-.field private static final jM:Ljava/lang/String; = "android.net.conn.CONNECTIVITY_CHANGE"
+.field private static final jN:Ljava/lang/String; = "android.net.conn.CONNECTIVITY_CHANGE"
 
-.field private static final kM:Ljava/lang/String; = "android.net.network.CONNECTION_CHANGE"
+.field private static final kN:Ljava/lang/String; = "android.net.network.CONNECTION_CHANGE"
 
 
 # instance fields
-.field private iM:Lcom/android/server/sis/vdb;
+.field private iN:Lcom/android/server/sis/vdb;
 
 .field private mBroadcastReceiver:Landroid/content/BroadcastReceiver;
 
@@ -35,7 +35,7 @@
     return-void
 .end method
 
-.method private Bo()V
+.method private Lo()V
     .locals 2
 
     iget-object v0, p0, Lcom/android/server/sis/sis;->mCm:Landroid/net/ConnectivityManager;
@@ -58,7 +58,7 @@
     return-void
 .end method
 
-.method private Co()V
+.method private Mo()V
     .locals 2
 
     new-instance v0, Landroid/content/IntentFilter;
@@ -91,7 +91,7 @@
 .method static synthetic sis(Lcom/android/server/sis/sis;)Lcom/android/server/sis/vdb;
     .locals 0
 
-    iget-object p0, p0, Lcom/android/server/sis/sis;->iM:Lcom/android/server/sis/vdb;
+    iget-object p0, p0, Lcom/android/server/sis/sis;->iN:Lcom/android/server/sis/vdb;
 
     return-object p0
 .end method
@@ -107,7 +107,7 @@
 .method static synthetic zta(Lcom/android/server/sis/sis;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/sis/sis;->Bo()V
+    invoke-direct {p0}, Lcom/android/server/sis/sis;->Lo()V
 
     return-void
 .end method
@@ -117,7 +117,7 @@
 .method public enableVerboseLogging(I)V
     .locals 0
 
-    iget-object p0, p0, Lcom/android/server/sis/sis;->iM:Lcom/android/server/sis/vdb;
+    iget-object p0, p0, Lcom/android/server/sis/sis;->iN:Lcom/android/server/sis/vdb;
 
     invoke-virtual {p0, p1}, Lcom/android/server/sis/vdb;->enableVerboseLogging(I)V
 
@@ -151,9 +151,9 @@
 
     invoke-direct {p1, v0, v1}, Lcom/android/server/sis/vdb;-><init>(Landroid/content/Context;Lcom/android/server/sis/vdb$sis;)V
 
-    iput-object p1, p0, Lcom/android/server/sis/sis;->iM:Lcom/android/server/sis/vdb;
+    iput-object p1, p0, Lcom/android/server/sis/sis;->iN:Lcom/android/server/sis/vdb;
 
-    invoke-direct {p0}, Lcom/android/server/sis/sis;->Co()V
+    invoke-direct {p0}, Lcom/android/server/sis/sis;->Mo()V
 
     return-void
 .end method
@@ -161,7 +161,7 @@
 .method public sendWifiScoreToKernel(I)V
     .locals 0
 
-    iget-object p0, p0, Lcom/android/server/sis/sis;->iM:Lcom/android/server/sis/vdb;
+    iget-object p0, p0, Lcom/android/server/sis/sis;->iN:Lcom/android/server/sis/vdb;
 
     invoke-virtual {p0, p1}, Lcom/android/server/sis/vdb;->sendWifiScoreToKernel(I)V
 

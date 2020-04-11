@@ -6,9 +6,9 @@
 # static fields
 .field private static ZERO:Ljava/lang/Long;
 
-.field private static final nua:Ljava/util/Map;
+.field private static final lva:Ljava/util/Map;
 
-.field static oua:Ljava/util/Locale;
+.field static mva:Ljava/util/Locale;
 
 
 # direct methods
@@ -27,13 +27,13 @@
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    sput-object v0, Lorg/bouncycastle/asn1/aa;->nua:Ljava/util/Map;
+    sput-object v0, Lorg/bouncycastle/asn1/aa;->lva:Ljava/util/Map;
 
-    invoke-static {}, Lorg/bouncycastle/asn1/aa;->dt()Ljava/util/Locale;
+    invoke-static {}, Lorg/bouncycastle/asn1/aa;->nt()Ljava/util/Locale;
 
     move-result-object v0
 
-    sput-object v0, Lorg/bouncycastle/asn1/aa;->oua:Ljava/util/Locale;
+    sput-object v0, Lorg/bouncycastle/asn1/aa;->mva:Ljava/util/Locale;
 
     return-void
 .end method
@@ -56,7 +56,7 @@
     return-object p0
 .end method
 
-.method private static dt()Ljava/util/Locale;
+.method private static nt()Ljava/util/Locale;
     .locals 4
 
     invoke-static {}, Ljava/util/Locale;->getDefault()Ljava/util/Locale;
@@ -139,12 +139,12 @@
     return-object p0
 
     :cond_0
-    sget-object v1, Lorg/bouncycastle/asn1/aa;->nua:Ljava/util/Map;
+    sget-object v1, Lorg/bouncycastle/asn1/aa;->lva:Ljava/util/Map;
 
     monitor-enter v1
 
     :try_start_0
-    sget-object v2, Lorg/bouncycastle/asn1/aa;->nua:Ljava/util/Map;
+    sget-object v2, Lorg/bouncycastle/asn1/aa;->lva:Ljava/util/Map;
 
     invoke-interface {v2, v0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -186,7 +186,7 @@
     move-result-object v2
 
     :goto_0
-    sget-object v3, Lorg/bouncycastle/asn1/aa;->nua:Ljava/util/Map;
+    sget-object v3, Lorg/bouncycastle/asn1/aa;->lva:Ljava/util/Map;
 
     invoke-interface {v3, v0, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 

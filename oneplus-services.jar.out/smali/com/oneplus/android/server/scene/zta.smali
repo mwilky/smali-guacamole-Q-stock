@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field private final synthetic HC:Lcom/oneplus/android/server/scene/vdb;
+.field private final synthetic GD:Lcom/oneplus/android/server/scene/vdb;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lcom/oneplus/android/server/scene/zta;->HC:Lcom/oneplus/android/server/scene/vdb;
+    iput-object p1, p0, Lcom/oneplus/android/server/scene/zta;->GD:Lcom/oneplus/android/server/scene/vdb;
 
     return-void
 .end method
@@ -26,7 +26,7 @@
 .method public final onClick(Landroid/view/View;)V
     .locals 0
 
-    iget-object p0, p0, Lcom/oneplus/android/server/scene/zta;->HC:Lcom/oneplus/android/server/scene/vdb;
+    iget-object p0, p0, Lcom/oneplus/android/server/scene/zta;->GD:Lcom/oneplus/android/server/scene/vdb;
 
     invoke-virtual {p0, p1}, Lcom/oneplus/android/server/scene/vdb;->zta(Landroid/view/View;)V
 

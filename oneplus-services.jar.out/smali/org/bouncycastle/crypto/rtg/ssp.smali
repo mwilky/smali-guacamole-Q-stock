@@ -8,13 +8,13 @@
 
 
 # instance fields
-.field private dwa:Z
+.field private bxa:Z
 
-.field private tya:[I
+.field private rza:[I
 
-.field private uya:[I
+.field private sza:[I
 
-.field private vya:[I
+.field private tza:[I
 
 
 # direct methods
@@ -25,11 +25,11 @@
 
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lorg/bouncycastle/crypto/rtg/ssp;->tya:[I
+    iput-object v0, p0, Lorg/bouncycastle/crypto/rtg/ssp;->rza:[I
 
-    iput-object v0, p0, Lorg/bouncycastle/crypto/rtg/ssp;->uya:[I
+    iput-object v0, p0, Lorg/bouncycastle/crypto/rtg/ssp;->sza:[I
 
-    iput-object v0, p0, Lorg/bouncycastle/crypto/rtg/ssp;->vya:[I
+    iput-object v0, p0, Lorg/bouncycastle/crypto/rtg/ssp;->tza:[I
 
     return-void
 .end method
@@ -61,7 +61,7 @@
 .method public zta([BI[BI)I
     .locals 8
 
-    iget-object v1, p0, Lorg/bouncycastle/crypto/rtg/ssp;->tya:[I
+    iget-object v1, p0, Lorg/bouncycastle/crypto/rtg/ssp;->rza:[I
 
     if-eqz v1, :cond_3
 
@@ -81,7 +81,7 @@
 
     new-array v7, v6, [B
 
-    iget-boolean v0, p0, Lorg/bouncycastle/crypto/rtg/ssp;->dwa:Z
+    iget-boolean v0, p0, Lorg/bouncycastle/crypto/rtg/ssp;->bxa:Z
 
     if-eqz v0, :cond_0
 
@@ -97,7 +97,7 @@
 
     invoke-virtual/range {v0 .. v5}, Lorg/bouncycastle/crypto/rtg/rtg;->zta([I[BI[BI)V
 
-    iget-object v1, p0, Lorg/bouncycastle/crypto/rtg/ssp;->uya:[I
+    iget-object v1, p0, Lorg/bouncycastle/crypto/rtg/ssp;->sza:[I
 
     const/4 v3, 0x0
 
@@ -105,12 +105,12 @@
 
     invoke-virtual/range {v0 .. v5}, Lorg/bouncycastle/crypto/rtg/rtg;->zta([I[BI[BI)V
 
-    iget-object v1, p0, Lorg/bouncycastle/crypto/rtg/ssp;->vya:[I
+    iget-object v1, p0, Lorg/bouncycastle/crypto/rtg/ssp;->tza:[I
 
     goto :goto_0
 
     :cond_0
-    iget-object v1, p0, Lorg/bouncycastle/crypto/rtg/ssp;->vya:[I
+    iget-object v1, p0, Lorg/bouncycastle/crypto/rtg/ssp;->tza:[I
 
     const/4 v5, 0x0
 
@@ -124,7 +124,7 @@
 
     invoke-virtual/range {v0 .. v5}, Lorg/bouncycastle/crypto/rtg/rtg;->zta([I[BI[BI)V
 
-    iget-object v1, p0, Lorg/bouncycastle/crypto/rtg/ssp;->uya:[I
+    iget-object v1, p0, Lorg/bouncycastle/crypto/rtg/ssp;->sza:[I
 
     const/4 v3, 0x0
 
@@ -132,7 +132,7 @@
 
     invoke-virtual/range {v0 .. v5}, Lorg/bouncycastle/crypto/rtg/rtg;->zta([I[BI[BI)V
 
-    iget-object v1, p0, Lorg/bouncycastle/crypto/rtg/ssp;->tya:[I
+    iget-object v1, p0, Lorg/bouncycastle/crypto/rtg/ssp;->rza:[I
 
     :goto_0
     move-object v4, p3
@@ -209,7 +209,7 @@
 
     :cond_1
     :goto_0
-    iput-boolean p1, p0, Lorg/bouncycastle/crypto/rtg/ssp;->dwa:Z
+    iput-boolean p1, p0, Lorg/bouncycastle/crypto/rtg/ssp;->bxa:Z
 
     const/16 v0, 0x8
 
@@ -225,7 +225,7 @@
 
     move-result-object v3
 
-    iput-object v3, p0, Lorg/bouncycastle/crypto/rtg/ssp;->tya:[I
+    iput-object v3, p0, Lorg/bouncycastle/crypto/rtg/ssp;->rza:[I
 
     new-array v3, v0, [B
 
@@ -239,7 +239,7 @@
 
     move-result-object v3
 
-    iput-object v3, p0, Lorg/bouncycastle/crypto/rtg/ssp;->uya:[I
+    iput-object v3, p0, Lorg/bouncycastle/crypto/rtg/ssp;->sza:[I
 
     array-length v3, p2
 
@@ -258,10 +258,10 @@
     goto :goto_1
 
     :cond_2
-    iget-object p1, p0, Lorg/bouncycastle/crypto/rtg/ssp;->tya:[I
+    iget-object p1, p0, Lorg/bouncycastle/crypto/rtg/ssp;->rza:[I
 
     :goto_1
-    iput-object p1, p0, Lorg/bouncycastle/crypto/rtg/ssp;->vya:[I
+    iput-object p1, p0, Lorg/bouncycastle/crypto/rtg/ssp;->tza:[I
 
     return-void
 

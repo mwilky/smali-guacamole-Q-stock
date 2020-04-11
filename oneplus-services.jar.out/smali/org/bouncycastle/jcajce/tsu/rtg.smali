@@ -28,7 +28,7 @@
     return-object p0
 
     :cond_0
-    sget-object v0, Lorg/bouncycastle/asn1/gck/zta;->VMa:Lorg/bouncycastle/asn1/bvj;
+    sget-object v0, Lorg/bouncycastle/asn1/gck/zta;->TNa:Lorg/bouncycastle/asn1/bvj;
 
     invoke-virtual {v0, p0}, Lorg/bouncycastle/asn1/vdb;->equals(Ljava/lang/Object;)Z
 
@@ -41,7 +41,7 @@
     return-object p0
 
     :cond_1
-    sget-object v0, Lorg/bouncycastle/asn1/bio/you;->SKa:Lorg/bouncycastle/asn1/bvj;
+    sget-object v0, Lorg/bouncycastle/asn1/bio/you;->QLa:Lorg/bouncycastle/asn1/bvj;
 
     invoke-virtual {v0, p0}, Lorg/bouncycastle/asn1/vdb;->equals(Ljava/lang/Object;)Z
 
@@ -54,7 +54,7 @@
     return-object p0
 
     :cond_2
-    sget-object v0, Lorg/bouncycastle/asn1/bio/you;->PKa:Lorg/bouncycastle/asn1/bvj;
+    sget-object v0, Lorg/bouncycastle/asn1/bio/you;->NLa:Lorg/bouncycastle/asn1/bvj;
 
     invoke-virtual {v0, p0}, Lorg/bouncycastle/asn1/vdb;->equals(Ljava/lang/Object;)Z
 
@@ -67,7 +67,7 @@
     return-object p0
 
     :cond_3
-    sget-object v0, Lorg/bouncycastle/asn1/bio/you;->QKa:Lorg/bouncycastle/asn1/bvj;
+    sget-object v0, Lorg/bouncycastle/asn1/bio/you;->OLa:Lorg/bouncycastle/asn1/bvj;
 
     invoke-virtual {v0, p0}, Lorg/bouncycastle/asn1/vdb;->equals(Ljava/lang/Object;)Z
 
@@ -80,7 +80,7 @@
     return-object p0
 
     :cond_4
-    sget-object v0, Lorg/bouncycastle/asn1/bio/you;->RKa:Lorg/bouncycastle/asn1/bvj;
+    sget-object v0, Lorg/bouncycastle/asn1/bio/you;->PLa:Lorg/bouncycastle/asn1/bvj;
 
     invoke-virtual {v0, p0}, Lorg/bouncycastle/asn1/vdb;->equals(Ljava/lang/Object;)Z
 

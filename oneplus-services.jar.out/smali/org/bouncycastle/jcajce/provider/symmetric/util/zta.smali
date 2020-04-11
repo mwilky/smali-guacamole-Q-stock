@@ -8,7 +8,7 @@
 
 .field protected strength:I
 
-.field protected yla:Ljava/security/SecureRandom;
+.field protected xma:Ljava/security/SecureRandom;
 
 
 # direct methods
@@ -37,12 +37,12 @@
 
     iput p1, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/zta;->strength:I
 
-    iput-object p2, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/zta;->yla:Ljava/security/SecureRandom;
+    iput-object p2, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/zta;->xma:Ljava/security/SecureRandom;
 
     return-void
 .end method
 
-.method protected final ra(Ljava/lang/String;)Ljava/security/AlgorithmParameters;
+.method protected final sa(Ljava/lang/String;)Ljava/security/AlgorithmParameters;
     .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {

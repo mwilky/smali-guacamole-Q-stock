@@ -29,17 +29,17 @@
 
 .field public static final enum CAMERA:Lcom/android/server/am/AppRecordManager$ListenerType;
 
-.field public static final enum Eha:Lcom/android/server/am/AppRecordManager$ListenerType;
+.field public static final enum Dia:Lcom/android/server/am/AppRecordManager$ListenerType;
+
+.field public static final enum Eia:Lcom/android/server/am/AppRecordManager$ListenerType;
 
 .field public static final enum FLASHLIGHT:Lcom/android/server/am/AppRecordManager$ListenerType;
 
-.field public static final enum Fha:Lcom/android/server/am/AppRecordManager$ListenerType;
+.field public static final enum Fia:Lcom/android/server/am/AppRecordManager$ListenerType;
 
 .field public static final enum GPS:Lcom/android/server/am/AppRecordManager$ListenerType;
 
-.field public static final enum Gha:Lcom/android/server/am/AppRecordManager$ListenerType;
-
-.field public static final enum Hha:Lcom/android/server/am/AppRecordManager$ListenerType;
+.field public static final enum Gia:Lcom/android/server/am/AppRecordManager$ListenerType;
 
 .field public static final enum SENSOR:Lcom/android/server/am/AppRecordManager$ListenerType;
 
@@ -66,7 +66,7 @@
 
     invoke-direct {v0, v2, v1, v1}, Lcom/android/server/am/AppRecordManager$ListenerType;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lcom/android/server/am/AppRecordManager$ListenerType;->Eha:Lcom/android/server/am/AppRecordManager$ListenerType;
+    sput-object v0, Lcom/android/server/am/AppRecordManager$ListenerType;->Dia:Lcom/android/server/am/AppRecordManager$ListenerType;
 
     new-instance v0, Lcom/android/server/am/AppRecordManager$ListenerType;
 
@@ -156,7 +156,7 @@
 
     invoke-direct {v0, v11, v10, v10}, Lcom/android/server/am/AppRecordManager$ListenerType;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lcom/android/server/am/AppRecordManager$ListenerType;->Fha:Lcom/android/server/am/AppRecordManager$ListenerType;
+    sput-object v0, Lcom/android/server/am/AppRecordManager$ListenerType;->Eia:Lcom/android/server/am/AppRecordManager$ListenerType;
 
     new-instance v0, Lcom/android/server/am/AppRecordManager$ListenerType;
 
@@ -166,7 +166,7 @@
 
     invoke-direct {v0, v12, v11, v11}, Lcom/android/server/am/AppRecordManager$ListenerType;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lcom/android/server/am/AppRecordManager$ListenerType;->Gha:Lcom/android/server/am/AppRecordManager$ListenerType;
+    sput-object v0, Lcom/android/server/am/AppRecordManager$ListenerType;->Fia:Lcom/android/server/am/AppRecordManager$ListenerType;
 
     new-instance v0, Lcom/android/server/am/AppRecordManager$ListenerType;
 
@@ -176,13 +176,13 @@
 
     invoke-direct {v0, v13, v12, v12}, Lcom/android/server/am/AppRecordManager$ListenerType;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lcom/android/server/am/AppRecordManager$ListenerType;->Hha:Lcom/android/server/am/AppRecordManager$ListenerType;
+    sput-object v0, Lcom/android/server/am/AppRecordManager$ListenerType;->Gia:Lcom/android/server/am/AppRecordManager$ListenerType;
 
     const/16 v0, 0xc
 
     new-array v0, v0, [Lcom/android/server/am/AppRecordManager$ListenerType;
 
-    sget-object v13, Lcom/android/server/am/AppRecordManager$ListenerType;->Eha:Lcom/android/server/am/AppRecordManager$ListenerType;
+    sget-object v13, Lcom/android/server/am/AppRecordManager$ListenerType;->Dia:Lcom/android/server/am/AppRecordManager$ListenerType;
 
     aput-object v13, v0, v1
 
@@ -218,15 +218,15 @@
 
     aput-object v1, v0, v9
 
-    sget-object v1, Lcom/android/server/am/AppRecordManager$ListenerType;->Fha:Lcom/android/server/am/AppRecordManager$ListenerType;
+    sget-object v1, Lcom/android/server/am/AppRecordManager$ListenerType;->Eia:Lcom/android/server/am/AppRecordManager$ListenerType;
 
     aput-object v1, v0, v10
 
-    sget-object v1, Lcom/android/server/am/AppRecordManager$ListenerType;->Gha:Lcom/android/server/am/AppRecordManager$ListenerType;
+    sget-object v1, Lcom/android/server/am/AppRecordManager$ListenerType;->Fia:Lcom/android/server/am/AppRecordManager$ListenerType;
 
     aput-object v1, v0, v11
 
-    sget-object v1, Lcom/android/server/am/AppRecordManager$ListenerType;->Hha:Lcom/android/server/am/AppRecordManager$ListenerType;
+    sget-object v1, Lcom/android/server/am/AppRecordManager$ListenerType;->Gia:Lcom/android/server/am/AppRecordManager$ListenerType;
 
     aput-object v1, v0, v12
 
@@ -255,17 +255,17 @@
 
     packed-switch p0, :pswitch_data_0
 
-    sget-object p0, Lcom/android/server/am/AppRecordManager$ListenerType;->Eha:Lcom/android/server/am/AppRecordManager$ListenerType;
+    sget-object p0, Lcom/android/server/am/AppRecordManager$ListenerType;->Dia:Lcom/android/server/am/AppRecordManager$ListenerType;
 
     return-object p0
 
     :pswitch_0
-    sget-object p0, Lcom/android/server/am/AppRecordManager$ListenerType;->Gha:Lcom/android/server/am/AppRecordManager$ListenerType;
+    sget-object p0, Lcom/android/server/am/AppRecordManager$ListenerType;->Fia:Lcom/android/server/am/AppRecordManager$ListenerType;
 
     return-object p0
 
     :pswitch_1
-    sget-object p0, Lcom/android/server/am/AppRecordManager$ListenerType;->Fha:Lcom/android/server/am/AppRecordManager$ListenerType;
+    sget-object p0, Lcom/android/server/am/AppRecordManager$ListenerType;->Eia:Lcom/android/server/am/AppRecordManager$ListenerType;
 
     return-object p0
 

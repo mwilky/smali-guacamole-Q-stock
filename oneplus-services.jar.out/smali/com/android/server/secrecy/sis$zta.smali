@@ -84,7 +84,7 @@
 
     move-result-object p0
 
-    invoke-virtual {p0}, Lcom/android/server/secrecy/zta/sis;->wd()V
+    invoke-virtual {p0}, Lcom/android/server/secrecy/zta/sis;->Ad()V
 
     :goto_0
     return-void

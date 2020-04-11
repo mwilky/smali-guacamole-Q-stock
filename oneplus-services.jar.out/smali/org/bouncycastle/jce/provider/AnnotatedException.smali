@@ -33,7 +33,7 @@
 
 
 # virtual methods
-.method Of()Ljava/lang/Throwable;
+.method Sf()Ljava/lang/Throwable;
     .locals 0
 
     iget-object p0, p0, Lorg/bouncycastle/jce/provider/AnnotatedException;->_underlyingException:Ljava/lang/Throwable;

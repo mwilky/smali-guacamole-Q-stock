@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/server/wm/veq;->Ib(I)V
+    value = Lcom/android/server/wm/veq;->Mb(I)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,11 +18,11 @@
 
 
 # instance fields
-.field private rE:I
-
-.field private tE:F
-
 .field final synthetic this$0:Lcom/android/server/wm/veq;
+
+.field private uF:I
+
+.field private wF:F
 
 
 # direct methods
@@ -74,13 +74,13 @@
     :cond_0
     iget-object p1, p0, Lcom/android/server/wm/fto;->this$0:Lcom/android/server/wm/veq;
 
-    iget v0, p0, Lcom/android/server/wm/fto;->rE:I
+    iget v0, p0, Lcom/android/server/wm/fto;->uF:I
 
     invoke-virtual {p2}, Landroid/view/MotionEvent;->getRawX()F
 
     move-result p2
 
-    iget v2, p0, Lcom/android/server/wm/fto;->tE:F
+    iget v2, p0, Lcom/android/server/wm/fto;->wF:F
 
     sub-float/2addr p2, v2
 
@@ -226,13 +226,13 @@
 
     invoke-static {p1, v0}, Lcom/android/server/wm/veq;->sis(Lcom/android/server/wm/veq;I)I
 
-    iput v0, p0, Lcom/android/server/wm/fto;->rE:I
+    iput v0, p0, Lcom/android/server/wm/fto;->uF:I
 
     invoke-virtual {p2}, Landroid/view/MotionEvent;->getRawX()F
 
     move-result p1
 
-    iput p1, p0, Lcom/android/server/wm/fto;->tE:F
+    iput p1, p0, Lcom/android/server/wm/fto;->wF:F
 
     return v1
 .end method

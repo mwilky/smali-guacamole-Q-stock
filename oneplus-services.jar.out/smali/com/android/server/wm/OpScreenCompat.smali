@@ -1621,7 +1621,7 @@
     :goto_2
     iget-object v3, p0, Lcom/android/server/wm/OpScreenCompat;->mOpScreenDecor:Lcom/android/server/wm/les;
 
-    iget-boolean v3, v3, Lcom/android/server/wm/les;->LU:Z
+    iget-boolean v3, v3, Lcom/android/server/wm/les;->IV:Z
 
     if-eq v3, v1, :cond_5
 
@@ -2144,7 +2144,7 @@
 
     if-eqz v0, :cond_2
 
-    iget-boolean v0, v0, Lcom/android/server/wm/les;->LU:Z
+    iget-boolean v0, v0, Lcom/android/server/wm/les;->IV:Z
 
     if-eqz v0, :cond_2
 
@@ -2182,7 +2182,7 @@
     :goto_0
     iget-object p0, p0, Lcom/android/server/wm/OpScreenCompat;->mOpScreenDecor:Lcom/android/server/wm/les;
 
-    iget p0, p0, Lcom/android/server/wm/les;->MU:I
+    iget p0, p0, Lcom/android/server/wm/les;->KV:I
 
     monitor-exit v0
 

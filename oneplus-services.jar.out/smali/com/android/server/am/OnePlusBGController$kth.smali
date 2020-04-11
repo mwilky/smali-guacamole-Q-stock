@@ -15,19 +15,19 @@
 
 
 # instance fields
-.field public Xl:Lcom/android/server/am/OnePlusBGController$AppBucketRanking;
+.field public am:Lcom/android/server/am/OnePlusBGController$AppBucketRanking;
 
-.field public Yl:Lcom/android/server/am/OnePlusBGController$MyDrainType;
-
-.field public Zl:Z
-
-.field public _l:D
-
-.field public am:Z
-
-.field public bm:Z
+.field public bm:Lcom/android/server/am/OnePlusBGController$MyDrainType;
 
 .field public cm:Z
+
+.field public dm:D
+
+.field public em:Z
+
+.field public fm:Z
+
+.field public gm:Z
 
 .field public mPkg:Ljava/lang/String;
 
@@ -38,19 +38,19 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p2, p0, Lcom/android/server/am/OnePlusBGController$kth;->Xl:Lcom/android/server/am/OnePlusBGController$AppBucketRanking;
+    iput-object p2, p0, Lcom/android/server/am/OnePlusBGController$kth;->am:Lcom/android/server/am/OnePlusBGController$AppBucketRanking;
 
-    iput-object p3, p0, Lcom/android/server/am/OnePlusBGController$kth;->Yl:Lcom/android/server/am/OnePlusBGController$MyDrainType;
+    iput-object p3, p0, Lcom/android/server/am/OnePlusBGController$kth;->bm:Lcom/android/server/am/OnePlusBGController$MyDrainType;
 
-    iput-boolean p4, p0, Lcom/android/server/am/OnePlusBGController$kth;->Zl:Z
+    iput-boolean p4, p0, Lcom/android/server/am/OnePlusBGController$kth;->cm:Z
 
-    iput-wide p5, p0, Lcom/android/server/am/OnePlusBGController$kth;->_l:D
+    iput-wide p5, p0, Lcom/android/server/am/OnePlusBGController$kth;->dm:D
 
-    iput-boolean p7, p0, Lcom/android/server/am/OnePlusBGController$kth;->am:Z
+    iput-boolean p7, p0, Lcom/android/server/am/OnePlusBGController$kth;->em:Z
 
-    iput-boolean p8, p0, Lcom/android/server/am/OnePlusBGController$kth;->bm:Z
+    iput-boolean p8, p0, Lcom/android/server/am/OnePlusBGController$kth;->fm:Z
 
-    iput-boolean p9, p0, Lcom/android/server/am/OnePlusBGController$kth;->cm:Z
+    iput-boolean p9, p0, Lcom/android/server/am/OnePlusBGController$kth;->gm:Z
 
     return-void
 .end method

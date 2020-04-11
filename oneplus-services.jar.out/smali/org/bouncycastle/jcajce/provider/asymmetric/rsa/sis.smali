@@ -19,9 +19,9 @@
 # instance fields
 .field private digest:Lorg/bouncycastle/crypto/qbh;
 
-.field private tma:Lorg/bouncycastle/crypto/zta;
+.field private rna:Lorg/bouncycastle/crypto/zta;
 
-.field private uma:Lorg/bouncycastle/asn1/x509/zta;
+.field private sna:Lorg/bouncycastle/asn1/x509/zta;
 
 
 # direct methods
@@ -32,7 +32,7 @@
 
     iput-object p2, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/sis;->digest:Lorg/bouncycastle/crypto/qbh;
 
-    iput-object p3, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/sis;->tma:Lorg/bouncycastle/crypto/zta;
+    iput-object p3, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/sis;->rna:Lorg/bouncycastle/crypto/zta;
 
     new-instance p2, Lorg/bouncycastle/asn1/x509/zta;
 
@@ -40,7 +40,7 @@
 
     invoke-direct {p2, p1, p3}, Lorg/bouncycastle/asn1/x509/zta;-><init>(Lorg/bouncycastle/asn1/bvj;Lorg/bouncycastle/asn1/ssp;)V
 
-    iput-object p2, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/sis;->uma:Lorg/bouncycastle/asn1/x509/zta;
+    iput-object p2, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/sis;->sna:Lorg/bouncycastle/asn1/x509/zta;
 
     return-void
 .end method
@@ -52,11 +52,11 @@
 
     iput-object p1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/sis;->digest:Lorg/bouncycastle/crypto/qbh;
 
-    iput-object p2, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/sis;->tma:Lorg/bouncycastle/crypto/zta;
+    iput-object p2, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/sis;->rna:Lorg/bouncycastle/crypto/zta;
 
     const/4 p1, 0x0
 
-    iput-object p1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/sis;->uma:Lorg/bouncycastle/asn1/x509/zta;
+    iput-object p1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/sis;->sna:Lorg/bouncycastle/asn1/x509/zta;
 
     return-void
 .end method
@@ -90,7 +90,7 @@
         }
     .end annotation
 
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/sis;->uma:Lorg/bouncycastle/asn1/x509/zta;
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/sis;->sna:Lorg/bouncycastle/asn1/x509/zta;
 
     if-nez p0, :cond_0
 
@@ -150,7 +150,7 @@
 
     invoke-interface {v0}, Lorg/bouncycastle/crypto/qbh;->reset()V
 
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/sis;->tma:Lorg/bouncycastle/crypto/zta;
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/sis;->rna:Lorg/bouncycastle/crypto/zta;
 
     const/4 v0, 0x1
 
@@ -210,7 +210,7 @@
 
     invoke-interface {v0}, Lorg/bouncycastle/crypto/qbh;->reset()V
 
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/sis;->tma:Lorg/bouncycastle/crypto/zta;
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/sis;->rna:Lorg/bouncycastle/crypto/zta;
 
     const/4 v0, 0x0
 
@@ -299,7 +299,7 @@
 
     move-result-object v0
 
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/sis;->tma:Lorg/bouncycastle/crypto/zta;
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/sis;->rna:Lorg/bouncycastle/crypto/zta;
 
     array-length v1, v0
 
@@ -388,7 +388,7 @@
     invoke-interface {v1, v0, v2}, Lorg/bouncycastle/crypto/qbh;->doFinal([BI)I
 
     :try_start_0
-    iget-object v1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/sis;->tma:Lorg/bouncycastle/crypto/zta;
+    iget-object v1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/sis;->rna:Lorg/bouncycastle/crypto/zta;
 
     array-length v3, p1
 

@@ -7,9 +7,9 @@
 
 
 # static fields
-.field public static final Mqa:I = 0x0
+.field public static final Kra:I = 0x0
 
-.field public static final Nqa:I = 0x1
+.field public static final Lra:I = 0x1
 
 
 # instance fields

@@ -125,7 +125,7 @@
     :cond_0
     iget-object p0, p0, Lcom/oneplus/android/server/scene/OemSceneActivityController$AllowWhiteActivity;->this$0:Lcom/oneplus/android/server/scene/OemSceneActivityController;
 
-    sget-object p1, Lcom/oneplus/android/server/scene/OemSceneActivityController$ActivityMode;->_ka:Lcom/oneplus/android/server/scene/OemSceneActivityController$ActivityMode;
+    sget-object p1, Lcom/oneplus/android/server/scene/OemSceneActivityController$ActivityMode;->_la:Lcom/oneplus/android/server/scene/OemSceneActivityController$ActivityMode;
 
     invoke-virtual {p1}, Ljava/lang/Enum;->ordinal()I
 
@@ -156,7 +156,7 @@
     :cond_0
     iget-object p0, p0, Lcom/oneplus/android/server/scene/OemSceneActivityController$AllowWhiteActivity;->this$0:Lcom/oneplus/android/server/scene/OemSceneActivityController;
 
-    sget-object p1, Lcom/oneplus/android/server/scene/OemSceneActivityController$ActivityMode;->_ka:Lcom/oneplus/android/server/scene/OemSceneActivityController$ActivityMode;
+    sget-object p1, Lcom/oneplus/android/server/scene/OemSceneActivityController$ActivityMode;->_la:Lcom/oneplus/android/server/scene/OemSceneActivityController$ActivityMode;
 
     invoke-virtual {p1}, Ljava/lang/Enum;->ordinal()I
 

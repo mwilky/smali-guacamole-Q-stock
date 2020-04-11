@@ -25,7 +25,7 @@
 
 
 # virtual methods
-.method protected Ti()Lorg/bouncycastle/asn1/ibl/vju;
+.method protected Xi()Lorg/bouncycastle/asn1/ibl/vju;
     .locals 13
 
     const-wide/16 v0, 0x1
@@ -36,7 +36,7 @@
 
     const-string p0, "02F40E7E2221F295DE297117B7F3D62F5C6A97FFCB8CEFF1CD6BA8CE4A9A18AD84FFABBD8EFA59332BE7AD6756A66E294AFD185A78FF12AA520E4DE739BACA0C7FFEFF7F2955727A"
 
-    invoke-static {p0}, Lorg/bouncycastle/asn1/ywr/irq;->Da(Ljava/lang/String;)Ljava/math/BigInteger;
+    invoke-static {p0}, Lorg/bouncycastle/asn1/ywr/irq;->Ea(Ljava/lang/String;)Ljava/math/BigInteger;
 
     move-result-object v8
 
@@ -48,7 +48,7 @@
 
     const-string v0, "03FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFE661CE18FF55987308059B186823851EC7DD9CA1161DE93D5174D66E8382E9BB2FE84E47"
 
-    invoke-static {v0}, Lorg/bouncycastle/asn1/ywr/irq;->Da(Ljava/lang/String;)Ljava/math/BigInteger;
+    invoke-static {v0}, Lorg/bouncycastle/asn1/ywr/irq;->Ea(Ljava/lang/String;)Ljava/math/BigInteger;
 
     move-result-object v11
 

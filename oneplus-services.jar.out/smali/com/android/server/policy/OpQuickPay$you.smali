@@ -15,13 +15,13 @@
 
 
 # static fields
-.field static final W:I = 0x1
+.field static final da:I = 0x1
 
-.field static final aa:I = 0x2
+.field static final ea:I = 0x2
 
-.field static final ba:I = 0x3
+.field static final fa:I = 0x3
 
-.field static final ca:I = 0x4
+.field static final ga:I = 0x4
 
 
 # instance fields

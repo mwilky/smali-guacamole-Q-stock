@@ -29,9 +29,9 @@
 
 .field public static final enum F:Lcom/android/server/am/OnePlusBGController$ProcType;
 
-.field public static final enum Pha:Lcom/android/server/am/OnePlusBGController$ProcType;
+.field public static final enum Oia:Lcom/android/server/am/OnePlusBGController$ProcType;
 
-.field public static final enum Qha:Lcom/android/server/am/OnePlusBGController$ProcType;
+.field public static final enum Pia:Lcom/android/server/am/OnePlusBGController$ProcType;
 
 
 # instance fields
@@ -70,7 +70,7 @@
 
     invoke-direct {v0, v4, v3, v3}, Lcom/android/server/am/OnePlusBGController$ProcType;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lcom/android/server/am/OnePlusBGController$ProcType;->Pha:Lcom/android/server/am/OnePlusBGController$ProcType;
+    sput-object v0, Lcom/android/server/am/OnePlusBGController$ProcType;->Oia:Lcom/android/server/am/OnePlusBGController$ProcType;
 
     new-instance v0, Lcom/android/server/am/OnePlusBGController$ProcType;
 
@@ -80,7 +80,7 @@
 
     invoke-direct {v0, v5, v4, v4}, Lcom/android/server/am/OnePlusBGController$ProcType;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lcom/android/server/am/OnePlusBGController$ProcType;->Qha:Lcom/android/server/am/OnePlusBGController$ProcType;
+    sput-object v0, Lcom/android/server/am/OnePlusBGController$ProcType;->Pia:Lcom/android/server/am/OnePlusBGController$ProcType;
 
     const/4 v0, 0x4
 
@@ -94,11 +94,11 @@
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/android/server/am/OnePlusBGController$ProcType;->Pha:Lcom/android/server/am/OnePlusBGController$ProcType;
+    sget-object v1, Lcom/android/server/am/OnePlusBGController$ProcType;->Oia:Lcom/android/server/am/OnePlusBGController$ProcType;
 
     aput-object v1, v0, v3
 
-    sget-object v1, Lcom/android/server/am/OnePlusBGController$ProcType;->Qha:Lcom/android/server/am/OnePlusBGController$ProcType;
+    sget-object v1, Lcom/android/server/am/OnePlusBGController$ProcType;->Pia:Lcom/android/server/am/OnePlusBGController$ProcType;
 
     aput-object v1, v0, v4
 

@@ -31,7 +31,7 @@
 
 
 # virtual methods
-.method public B(I)V
+.method public E(I)V
     .locals 1
 
     iget-object v0, p0, Lcom/oneplus/android/server/display/OpColorDisplayService$you;->this$0:Lcom/oneplus/android/server/display/OpColorDisplayService;
@@ -59,7 +59,7 @@
     return-void
 .end method
 
-.method public ve()V
+.method public ze()V
     .locals 1
 
     iget-object p0, p0, Lcom/oneplus/android/server/display/OpColorDisplayService$you;->this$0:Lcom/oneplus/android/server/display/OpColorDisplayService;

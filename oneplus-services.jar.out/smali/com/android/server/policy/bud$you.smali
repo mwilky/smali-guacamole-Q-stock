@@ -1,4 +1,4 @@
-.class Lcom/android/server/policy/vju$you;
+.class Lcom/android/server/policy/bud$you;
 .super Ljava/lang/Object;
 .source ""
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/server/policy/vju;
+    value = Lcom/android/server/policy/bud;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -27,14 +27,14 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/server/policy/vju;
+.field final synthetic this$0:Lcom/android/server/policy/bud;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/server/policy/vju;)V
+.method constructor <init>(Lcom/android/server/policy/bud;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/android/server/policy/vju$you;->this$0:Lcom/android/server/policy/vju;
+    iput-object p1, p0, Lcom/android/server/policy/bud$you;->this$0:Lcom/android/server/policy/bud;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -50,7 +50,7 @@
 
     check-cast p2, Landroid/graphics/Point;
 
-    invoke-virtual {p0, p1, p2}, Lcom/android/server/policy/vju$you;->zta(Landroid/graphics/Point;Landroid/graphics/Point;)I
+    invoke-virtual {p0, p1, p2}, Lcom/android/server/policy/bud$you;->zta(Landroid/graphics/Point;Landroid/graphics/Point;)I
 
     move-result p0
 

@@ -1,5 +1,5 @@
-.class Lcom/android/server/policy/gck;
-.super Landroid/content/BroadcastReceiver;
+.class synthetic Lcom/android/server/policy/gck;
+.super Ljava/lang/Object;
 .source ""
 
 
@@ -9,75 +9,124 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1008
     name = null
 .end annotation
 
 
-# instance fields
-.field final synthetic this$0:Lcom/android/server/policy/OpPhoneWindowManager;
+# static fields
+.field static final synthetic RE:[I
 
 
 # direct methods
-.method constructor <init>(Lcom/android/server/policy/OpPhoneWindowManager;)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 3
 
-    iput-object p1, p0, Lcom/android/server/policy/gck;->this$0:Lcom/android/server/policy/OpPhoneWindowManager;
+    invoke-static {}, Lcom/android/server/policy/OpPhoneWindowManager$KeyLockMode;->values()[Lcom/android/server/policy/OpPhoneWindowManager$KeyLockMode;
 
-    invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
+    move-result-object v0
 
-    return-void
-.end method
+    array-length v0, v0
 
+    new-array v0, v0, [I
 
-# virtual methods
-.method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
-    .locals 1
+    sput-object v0, Lcom/android/server/policy/gck;->RE:[I
 
-    invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
+    :try_start_0
+    sget-object v0, Lcom/android/server/policy/gck;->RE:[I
 
-    move-result-object p1
+    sget-object v1, Lcom/android/server/policy/OpPhoneWindowManager$KeyLockMode;->NORMAL:Lcom/android/server/policy/OpPhoneWindowManager$KeyLockMode;
 
-    const-string p2, "android.intent.action.ACTION_SHUTDOWN"
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
-    invoke-virtual {p2, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    move-result v1
 
-    move-result p1
+    const/4 v2, 0x1
 
-    if-eqz p1, :cond_0
+    aput v2, v0, v1
+    :try_end_0
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
 
-    iget-object p1, p0, Lcom/android/server/policy/gck;->this$0:Lcom/android/server/policy/OpPhoneWindowManager;
+    :catch_0
+    :try_start_1
+    sget-object v0, Lcom/android/server/policy/gck;->RE:[I
 
-    const/4 p2, 0x1
+    sget-object v1, Lcom/android/server/policy/OpPhoneWindowManager$KeyLockMode;->POWER:Lcom/android/server/policy/OpPhoneWindowManager$KeyLockMode;
 
-    iput-boolean p2, p1, Lcom/android/server/policy/OpPhoneWindowManager;->mShuttingDown:Z
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
-    new-instance p1, Ljava/lang/StringBuilder;
+    move-result v1
 
-    invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
+    const/4 v2, 0x2
 
-    const-string v0, "receive ACTION_SHUTDOWN mShuttingDown "
+    aput v2, v0, v1
+    :try_end_1
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_1
 
-    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    :catch_1
+    :try_start_2
+    sget-object v0, Lcom/android/server/policy/gck;->RE:[I
 
-    iget-object v0, p0, Lcom/android/server/policy/gck;->this$0:Lcom/android/server/policy/OpPhoneWindowManager;
+    sget-object v1, Lcom/android/server/policy/OpPhoneWindowManager$KeyLockMode;->Uia:Lcom/android/server/policy/OpPhoneWindowManager$KeyLockMode;
 
-    iget-boolean v0, v0, Lcom/android/server/policy/OpPhoneWindowManager;->mShuttingDown:Z
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
-    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+    move-result v1
 
-    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    const/4 v2, 0x3
 
-    move-result-object p1
+    aput v2, v0, v1
+    :try_end_2
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_2 .. :try_end_2} :catch_2
 
-    const-string v0, "OpPhoneWindowManager"
+    :catch_2
+    :try_start_3
+    sget-object v0, Lcom/android/server/policy/gck;->RE:[I
 
-    invoke-static {v0, p1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
+    sget-object v1, Lcom/android/server/policy/OpPhoneWindowManager$KeyLockMode;->HOME:Lcom/android/server/policy/OpPhoneWindowManager$KeyLockMode;
 
-    iget-object p0, p0, Lcom/android/server/policy/gck;->this$0:Lcom/android/server/policy/OpPhoneWindowManager;
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
-    invoke-virtual {p0, p2}, Lcom/android/server/policy/PhoneWindowManager;->updateRotation(Z)V
+    move-result v1
 
-    :cond_0
+    const/4 v2, 0x4
+
+    aput v2, v0, v1
+    :try_end_3
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_3 .. :try_end_3} :catch_3
+
+    :catch_3
+    :try_start_4
+    sget-object v0, Lcom/android/server/policy/gck;->RE:[I
+
+    sget-object v1, Lcom/android/server/policy/OpPhoneWindowManager$KeyLockMode;->FOOT:Lcom/android/server/policy/OpPhoneWindowManager$KeyLockMode;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    const/4 v2, 0x5
+
+    aput v2, v0, v1
+    :try_end_4
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_4 .. :try_end_4} :catch_4
+
+    :catch_4
+    :try_start_5
+    sget-object v0, Lcom/android/server/policy/gck;->RE:[I
+
+    sget-object v1, Lcom/android/server/policy/OpPhoneWindowManager$KeyLockMode;->Via:Lcom/android/server/policy/OpPhoneWindowManager$KeyLockMode;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    const/4 v2, 0x6
+
+    aput v2, v0, v1
+    :try_end_5
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_5 .. :try_end_5} :catch_5
+
+    :catch_5
     return-void
 .end method

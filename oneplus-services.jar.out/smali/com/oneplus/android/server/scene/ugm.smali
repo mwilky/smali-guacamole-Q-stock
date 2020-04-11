@@ -83,7 +83,7 @@
 
     const-string p1, "GameModeImComponents"
 
-    invoke-static {p0, p1}, Lcom/oneplus/android/server/scene/OemSceneCallBlock;->access$700(Lcom/oneplus/android/server/scene/OemSceneCallBlock;Ljava/lang/String;)V
+    invoke-static {p0, p1}, Lcom/oneplus/android/server/scene/OemSceneCallBlock;->access$800(Lcom/oneplus/android/server/scene/OemSceneCallBlock;Ljava/lang/String;)V
 
     goto :goto_1
 
@@ -92,20 +92,20 @@
 
     iget p1, p1, Landroid/os/Message;->arg1:I
 
-    invoke-static {p0, p1, v2}, Lcom/oneplus/android/server/scene/OemSceneCallBlock;->access$200(Lcom/oneplus/android/server/scene/OemSceneCallBlock;ILjava/lang/String;)V
+    invoke-static {p0, p1, v2}, Lcom/oneplus/android/server/scene/OemSceneCallBlock;->access$400(Lcom/oneplus/android/server/scene/OemSceneCallBlock;ILjava/lang/String;)V
 
     goto :goto_1
 
     :cond_3
     iget-object v3, p0, Lcom/oneplus/android/server/scene/ugm;->this$0:Lcom/oneplus/android/server/scene/OemSceneCallBlock;
 
-    invoke-static {v3, v1}, Lcom/oneplus/android/server/scene/OemSceneCallBlock;->access$502(Lcom/oneplus/android/server/scene/OemSceneCallBlock;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v3, v1}, Lcom/oneplus/android/server/scene/OemSceneCallBlock;->access$602(Lcom/oneplus/android/server/scene/OemSceneCallBlock;Ljava/lang/String;)Ljava/lang/String;
 
     iget-object p0, p0, Lcom/oneplus/android/server/scene/ugm;->this$0:Lcom/oneplus/android/server/scene/OemSceneCallBlock;
 
     iget p1, p1, Landroid/os/Message;->arg1:I
 
-    invoke-static {p0, v0, v2, p1}, Lcom/oneplus/android/server/scene/OemSceneCallBlock;->access$600(Lcom/oneplus/android/server/scene/OemSceneCallBlock;Ljava/lang/String;Ljava/lang/String;I)V
+    invoke-static {p0, v0, v2, p1}, Lcom/oneplus/android/server/scene/OemSceneCallBlock;->access$700(Lcom/oneplus/android/server/scene/OemSceneCallBlock;Ljava/lang/String;Ljava/lang/String;I)V
 
     :goto_1
     return-void

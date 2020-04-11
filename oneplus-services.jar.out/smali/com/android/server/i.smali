@@ -16,7 +16,13 @@
 
 
 # static fields
+.field public static final Af:I = 0x1
+
+.field public static final Bf:I = 0x2
+
 .field private static final CONFIG_FILE_NAME:Ljava/lang/String; = "smartcontrol.xml"
+
+.field public static final Cf:I = -0x1
 
 .field private static final DEBUG:Z
 
@@ -28,33 +34,27 @@
 
 .field private static mInstance:Lcom/android/server/i; = null
 
-.field private static of:Lcom/android/server/OpPowerControllerService; = null
+.field private static rf:Lcom/android/server/OpPowerControllerService; = null
 
-.field private static final pf:J = 0x1f4L
+.field private static final sf:J = 0x1f4L
 
-.field private static qf:J = 0x0L
-
-.field private static rf:Ljava/lang/String; = null
-
-.field private static sf:Ljava/lang/String; = null
-
-.field private static tf:Ljava/lang/String; = null
+.field private static tf:J = 0x0L
 
 .field private static uf:Ljava/lang/String; = null
 
-.field public static final vf:Ljava/lang/String; = "smart_power_control_changed"
+.field private static vf:Ljava/lang/String; = null
 
-.field public static final wf:I = 0x0
+.field private static wf:Ljava/lang/String; = null
 
-.field public static final xf:I = 0x1
+.field private static xf:Ljava/lang/String; = null
 
-.field public static final yf:I = 0x2
+.field public static final yf:Ljava/lang/String; = "smart_power_control_changed"
 
-.field public static final zf:I = -0x1
+.field public static final zf:I
 
 
 # instance fields
-.field private gf:Ljava/util/List;
+.field private jf:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
@@ -64,9 +64,9 @@
     .end annotation
 .end field
 
-.field private hf:Landroid/app/WallpaperManager;
+.field private kf:Landroid/app/WallpaperManager;
 
-.field private final if:Landroid/util/ArrayMap;
+.field private final lf:Landroid/util/ArrayMap;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Landroid/util/ArrayMap<",
@@ -76,21 +76,6 @@
         }
     .end annotation
 .end field
-
-.field private final jf:Landroid/util/ArrayMap;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Landroid/util/ArrayMap<",
-            "Ljava/lang/String;",
-            "Ljava/lang/Integer;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private kf:Landroid/util/SparseBooleanArray;
-
-.field private lf:Landroid/util/SparseBooleanArray;
 
 .field private mAm:Landroid/app/ActivityManager;
 
@@ -110,9 +95,24 @@
 
 .field private final mReceiver:Landroid/content/BroadcastReceiver;
 
-.field private mf:[I
+.field private final mf:Landroid/util/ArrayMap;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Landroid/util/ArrayMap<",
+            "Ljava/lang/String;",
+            "Ljava/lang/Integer;",
+            ">;"
+        }
+    .end annotation
+.end field
 
-.field private nf:[I
+.field private nf:Landroid/util/SparseBooleanArray;
+
+.field private of:Landroid/util/SparseBooleanArray;
+
+.field private pf:[I
+
+.field private qf:[I
 
 
 # direct methods
@@ -135,17 +135,17 @@
 
     const-wide/16 v0, 0x0
 
-    sput-wide v0, Lcom/android/server/i;->qf:J
+    sput-wide v0, Lcom/android/server/i;->tf:J
 
     const/4 v0, 0x0
 
-    sput-object v0, Lcom/android/server/i;->rf:Ljava/lang/String;
-
-    sput-object v0, Lcom/android/server/i;->sf:Ljava/lang/String;
-
-    sput-object v0, Lcom/android/server/i;->tf:Ljava/lang/String;
-
     sput-object v0, Lcom/android/server/i;->uf:Ljava/lang/String;
+
+    sput-object v0, Lcom/android/server/i;->vf:Ljava/lang/String;
+
+    sput-object v0, Lcom/android/server/i;->wf:Ljava/lang/String;
+
+    sput-object v0, Lcom/android/server/i;->xf:Ljava/lang/String;
 
     return-void
 .end method
@@ -159,35 +159,35 @@
 
     invoke-direct {v0}, Landroid/util/ArrayMap;-><init>()V
 
-    iput-object v0, p0, Lcom/android/server/i;->if:Landroid/util/ArrayMap;
+    iput-object v0, p0, Lcom/android/server/i;->lf:Landroid/util/ArrayMap;
 
     new-instance v0, Landroid/util/ArrayMap;
 
     invoke-direct {v0}, Landroid/util/ArrayMap;-><init>()V
 
-    iput-object v0, p0, Lcom/android/server/i;->jf:Landroid/util/ArrayMap;
+    iput-object v0, p0, Lcom/android/server/i;->mf:Landroid/util/ArrayMap;
 
     new-instance v0, Landroid/util/SparseBooleanArray;
 
     invoke-direct {v0}, Landroid/util/SparseBooleanArray;-><init>()V
 
-    iput-object v0, p0, Lcom/android/server/i;->kf:Landroid/util/SparseBooleanArray;
+    iput-object v0, p0, Lcom/android/server/i;->nf:Landroid/util/SparseBooleanArray;
 
     new-instance v0, Landroid/util/SparseBooleanArray;
 
     invoke-direct {v0}, Landroid/util/SparseBooleanArray;-><init>()V
 
-    iput-object v0, p0, Lcom/android/server/i;->lf:Landroid/util/SparseBooleanArray;
+    iput-object v0, p0, Lcom/android/server/i;->of:Landroid/util/SparseBooleanArray;
 
     const/4 v0, 0x0
 
     new-array v1, v0, [I
 
-    iput-object v1, p0, Lcom/android/server/i;->mf:[I
+    iput-object v1, p0, Lcom/android/server/i;->pf:[I
 
     new-array v0, v0, [I
 
-    iput-object v0, p0, Lcom/android/server/i;->nf:[I
+    iput-object v0, p0, Lcom/android/server/i;->qf:[I
 
     new-instance v0, Lcom/android/server/h;
 
@@ -230,7 +230,161 @@
     return-void
 .end method
 
-.method private Al()V
+.method private Bl()Ljava/lang/String;
+    .locals 3
+
+    iget-object p0, p0, Lcom/android/server/i;->mImm:Landroid/view/inputmethod/InputMethodManager;
+
+    if-eqz p0, :cond_1
+
+    invoke-virtual {p0}, Landroid/view/inputmethod/InputMethodManager;->getInputMethodList()Ljava/util/List;
+
+    move-result-object p0
+
+    invoke-interface {p0}, Ljava/util/List;->size()I
+
+    move-result v0
+
+    if-lez v0, :cond_1
+
+    invoke-static {}, Landroid/app/AppGlobals;->getInitialApplication()Landroid/app/Application;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Landroid/app/Application;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object v0
+
+    const-string v1, "default_input_method"
+
+    invoke-static {v0, v1}, Landroid/provider/Settings$Secure;->getString(Landroid/content/ContentResolver;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-interface {p0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+
+    move-result-object p0
+
+    :cond_0
+    invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_1
+
+    invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Landroid/view/inputmethod/InputMethodInfo;
+
+    invoke-virtual {v1}, Landroid/view/inputmethod/InputMethodInfo;->getId()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v2, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_0
+
+    invoke-virtual {v1}, Landroid/view/inputmethod/InputMethodInfo;->getPackageName()Ljava/lang/String;
+
+    move-result-object p0
+
+    return-object p0
+
+    :cond_1
+    const/4 p0, 0x0
+
+    return-object p0
+.end method
+
+.method private Cl()Ljava/lang/String;
+    .locals 2
+
+    new-instance v0, Landroid/content/Intent;
+
+    const-string v1, "android.intent.action.MAIN"
+
+    invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
+
+    const-string v1, "android.intent.category.HOME"
+
+    invoke-virtual {v0, v1}, Landroid/content/Intent;->addCategory(Ljava/lang/String;)Landroid/content/Intent;
+
+    iget-object p0, p0, Lcom/android/server/i;->mPackageManager:Landroid/content/pm/PackageManager;
+
+    const/high16 v1, 0x10000
+
+    invoke-virtual {p0, v0, v1}, Landroid/content/pm/PackageManager;->resolveActivity(Landroid/content/Intent;I)Landroid/content/pm/ResolveInfo;
+
+    move-result-object p0
+
+    iget-object p0, p0, Landroid/content/pm/ResolveInfo;->activityInfo:Landroid/content/pm/ActivityInfo;
+
+    iget-object p0, p0, Landroid/content/pm/ActivityInfo;->packageName:Ljava/lang/String;
+
+    return-object p0
+.end method
+
+.method private Dl()Ljava/lang/String;
+    .locals 3
+
+    const/4 v0, 0x0
+
+    :try_start_0
+    iget-object v1, p0, Lcom/android/server/i;->kf:Landroid/app/WallpaperManager;
+
+    invoke-virtual {v1}, Landroid/app/WallpaperManager;->getWallpaperInfo()Landroid/app/WallpaperInfo;
+
+    move-result-object v1
+
+    if-eqz v1, :cond_0
+
+    iget-object p0, p0, Lcom/android/server/i;->kf:Landroid/app/WallpaperManager;
+
+    invoke-virtual {p0}, Landroid/app/WallpaperManager;->getWallpaperInfo()Landroid/app/WallpaperInfo;
+
+    move-result-object p0
+
+    invoke-virtual {p0}, Landroid/app/WallpaperInfo;->getPackageName()Ljava/lang/String;
+
+    move-result-object p0
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    move-object v0, p0
+
+    goto :goto_0
+
+    :catch_0
+    move-exception p0
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v2, "Couldn\'t get wallpaper info package name."
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p0
+
+    const-string v1, "OpSmartPowerControl"
+
+    invoke-static {v1, p0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    :cond_0
+    :goto_0
+    return-object v0
+.end method
+
+.method private El()V
     .locals 1
 
     iget-object v0, p0, Lcom/android/server/i;->mAppWidgetManager:Landroid/appwidget/AppWidgetManager;
@@ -245,7 +399,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/server/i;->gf:Ljava/util/List;
+    iput-object v0, p0, Lcom/android/server/i;->jf:Ljava/util/List;
 
     const-string p0, "OpSmartPowerControl"
 
@@ -266,18 +420,18 @@
     return-void
 .end method
 
-.method private Bl()V
+.method private Fl()V
     .locals 5
 
     invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
 
     move-result-wide v0
 
-    sget-wide v2, Lcom/android/server/i;->qf:J
+    sget-wide v2, Lcom/android/server/i;->tf:J
 
     sub-long v2, v0, v2
 
-    sput-wide v0, Lcom/android/server/i;->qf:J
+    sput-wide v0, Lcom/android/server/i;->tf:J
 
     const-wide/16 v0, 0x1f4
 
@@ -318,11 +472,11 @@
     move-object v0, v1
 
     :goto_1
-    invoke-direct {p0}, Lcom/android/server/i;->xl()Ljava/lang/String;
+    invoke-direct {p0}, Lcom/android/server/i;->Bl()Ljava/lang/String;
 
     move-result-object v2
 
-    sput-object v2, Lcom/android/server/i;->rf:Ljava/lang/String;
+    sput-object v2, Lcom/android/server/i;->uf:Ljava/lang/String;
 
     if-eqz v0, :cond_3
 
@@ -331,11 +485,11 @@
     invoke-virtual {v0, v2}, Landroid/util/TimingLogger;->addSplit(Ljava/lang/String;)V
 
     :cond_3
-    invoke-direct {p0}, Lcom/android/server/i;->yl()Ljava/lang/String;
+    invoke-direct {p0}, Lcom/android/server/i;->Cl()Ljava/lang/String;
 
     move-result-object v2
 
-    sput-object v2, Lcom/android/server/i;->sf:Ljava/lang/String;
+    sput-object v2, Lcom/android/server/i;->vf:Ljava/lang/String;
 
     if-eqz v0, :cond_4
 
@@ -344,11 +498,11 @@
     invoke-virtual {v0, v2}, Landroid/util/TimingLogger;->addSplit(Ljava/lang/String;)V
 
     :cond_4
-    invoke-direct {p0}, Lcom/android/server/i;->zl()Ljava/lang/String;
+    invoke-direct {p0}, Lcom/android/server/i;->Dl()Ljava/lang/String;
 
     move-result-object v2
 
-    sput-object v2, Lcom/android/server/i;->tf:Ljava/lang/String;
+    sput-object v2, Lcom/android/server/i;->wf:Ljava/lang/String;
 
     if-eqz v0, :cond_5
 
@@ -357,7 +511,7 @@
     invoke-virtual {v0, v2}, Landroid/util/TimingLogger;->addSplit(Ljava/lang/String;)V
 
     :cond_5
-    sput-object v1, Lcom/android/server/i;->uf:Ljava/lang/String;
+    sput-object v1, Lcom/android/server/i;->xf:Ljava/lang/String;
 
     iget-object v1, p0, Lcom/android/server/i;->mAm:Landroid/app/ActivityManager;
 
@@ -404,7 +558,7 @@
 
     move-result-object v2
 
-    sput-object v2, Lcom/android/server/i;->uf:Ljava/lang/String;
+    sput-object v2, Lcom/android/server/i;->xf:Ljava/lang/String;
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -425,7 +579,7 @@
     invoke-virtual {v0, v1}, Landroid/util/TimingLogger;->addSplit(Ljava/lang/String;)V
 
     :cond_8
-    invoke-direct {p0}, Lcom/android/server/i;->Al()V
+    invoke-direct {p0}, Lcom/android/server/i;->El()V
 
     if-eqz v0, :cond_9
 
@@ -439,7 +593,7 @@
     return-void
 .end method
 
-.method private Cl()V
+.method private Gl()V
     .locals 2
 
     new-instance v0, Landroid/content/Intent;
@@ -464,12 +618,12 @@
     return-void
 .end method
 
-.method private Dl()V
+.method private Hl()V
     .locals 3
 
-    iget-object v0, p0, Lcom/android/server/i;->if:Landroid/util/ArrayMap;
+    iget-object v0, p0, Lcom/android/server/i;->lf:Landroid/util/ArrayMap;
 
-    iget-object v1, p0, Lcom/android/server/i;->kf:Landroid/util/SparseBooleanArray;
+    iget-object v1, p0, Lcom/android/server/i;->nf:Landroid/util/SparseBooleanArray;
 
     const/4 v2, 0x0
 
@@ -477,25 +631,33 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/server/i;->mf:[I
+    iput-object v0, p0, Lcom/android/server/i;->pf:[I
 
-    iget-object v0, p0, Lcom/android/server/i;->jf:Landroid/util/ArrayMap;
+    iget-object v0, p0, Lcom/android/server/i;->mf:Landroid/util/ArrayMap;
 
-    iget-object v1, p0, Lcom/android/server/i;->lf:Landroid/util/SparseBooleanArray;
+    iget-object v1, p0, Lcom/android/server/i;->of:Landroid/util/SparseBooleanArray;
 
     invoke-static {v2, v0, v1}, Lcom/android/server/i;->buildAppIdArray(Landroid/util/ArrayMap;Landroid/util/ArrayMap;Landroid/util/SparseBooleanArray;)[I
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/server/i;->nf:[I
+    iput-object v0, p0, Lcom/android/server/i;->qf:[I
 
     return-void
 .end method
 
-.method private ab(Ljava/lang/String;)V
+.method static synthetic access$000()Z
     .locals 1
 
-    sget-object p0, Lcom/android/server/i;->of:Lcom/android/server/OpPowerControllerService;
+    sget-boolean v0, Lcom/android/server/i;->DEBUG_ONEPLUS:Z
+
+    return v0
+.end method
+
+.method private bb(Ljava/lang/String;)V
+    .locals 1
+
+    sget-object p0, Lcom/android/server/i;->rf:Lcom/android/server/OpPowerControllerService;
 
     const-string v0, "OpSmartPowerControl"
 
@@ -541,174 +703,6 @@
     :cond_1
     :goto_0
     return-void
-.end method
-
-.method static synthetic access$000()Z
-    .locals 1
-
-    sget-boolean v0, Lcom/android/server/i;->DEBUG_ONEPLUS:Z
-
-    return v0
-.end method
-
-.method private bb(Ljava/lang/String;)Z
-    .locals 3
-
-    sget-object v0, Lcom/android/server/i;->rf:Ljava/lang/String;
-
-    if-nez v0, :cond_0
-
-    invoke-direct {p0}, Lcom/android/server/i;->xl()Ljava/lang/String;
-
-    move-result-object v0
-
-    sput-object v0, Lcom/android/server/i;->rf:Ljava/lang/String;
-
-    :cond_0
-    sget-object v0, Lcom/android/server/i;->sf:Ljava/lang/String;
-
-    if-nez v0, :cond_1
-
-    invoke-direct {p0}, Lcom/android/server/i;->yl()Ljava/lang/String;
-
-    move-result-object v0
-
-    sput-object v0, Lcom/android/server/i;->sf:Ljava/lang/String;
-
-    :cond_1
-    sget-object v0, Lcom/android/server/i;->tf:Ljava/lang/String;
-
-    if-nez v0, :cond_2
-
-    invoke-direct {p0}, Lcom/android/server/i;->zl()Ljava/lang/String;
-
-    move-result-object v0
-
-    sput-object v0, Lcom/android/server/i;->tf:Ljava/lang/String;
-
-    :cond_2
-    invoke-static {p1}, Lcom/android/server/zta;->isInWhiteList(Ljava/lang/String;)Z
-
-    move-result v0
-
-    const/4 v1, 0x0
-
-    if-eqz v0, :cond_3
-
-    return v1
-
-    :cond_3
-    sget-object v0, Lcom/android/server/i;->tf:Ljava/lang/String;
-
-    const-string v2, "OpSmartPowerControl"
-
-    if-eqz v0, :cond_4
-
-    invoke-virtual {v0, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_4
-
-    new-instance p0, Ljava/lang/StringBuilder;
-
-    invoke-direct {p0}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v0, "wallpaper: "
-
-    :goto_0
-    invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p0
-
-    invoke-static {v2, p0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    return v1
-
-    :cond_4
-    sget-object v0, Lcom/android/server/i;->rf:Ljava/lang/String;
-
-    if-eqz v0, :cond_5
-
-    invoke-virtual {v0, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_5
-
-    new-instance p0, Ljava/lang/StringBuilder;
-
-    invoke-direct {p0}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v0, "IME: "
-
-    goto :goto_0
-
-    :cond_5
-    sget-object v0, Lcom/android/server/i;->sf:Ljava/lang/String;
-
-    if-eqz v0, :cond_6
-
-    invoke-virtual {v0, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_6
-
-    new-instance p0, Ljava/lang/StringBuilder;
-
-    invoke-direct {p0}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v0, "launcher: "
-
-    goto :goto_0
-
-    :cond_6
-    sget-object v0, Lcom/android/server/i;->uf:Ljava/lang/String;
-
-    if-eqz v0, :cond_7
-
-    invoke-virtual {v0, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_7
-
-    new-instance p0, Ljava/lang/StringBuilder;
-
-    invoke-direct {p0}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v0, "docked: "
-
-    goto :goto_0
-
-    :cond_7
-    iget-object p0, p0, Lcom/android/server/i;->gf:Ljava/util/List;
-
-    if-eqz p0, :cond_8
-
-    invoke-interface {p0, p1}, Ljava/util/List;->contains(Ljava/lang/Object;)Z
-
-    move-result p0
-
-    if-eqz p0, :cond_8
-
-    new-instance p0, Ljava/lang/StringBuilder;
-
-    invoke-direct {p0}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v0, "widget: "
-
-    goto :goto_0
-
-    :cond_8
-    const/4 p0, 0x1
-
-    return p0
 .end method
 
 .method private static buildAppIdArray(Landroid/util/ArrayMap;Landroid/util/ArrayMap;Landroid/util/SparseBooleanArray;)[I
@@ -814,7 +808,167 @@
     return-object p1
 .end method
 
-.method private cb(Ljava/lang/String;)I
+.method private cb(Ljava/lang/String;)Z
+    .locals 3
+
+    sget-object v0, Lcom/android/server/i;->uf:Ljava/lang/String;
+
+    if-nez v0, :cond_0
+
+    invoke-direct {p0}, Lcom/android/server/i;->Bl()Ljava/lang/String;
+
+    move-result-object v0
+
+    sput-object v0, Lcom/android/server/i;->uf:Ljava/lang/String;
+
+    :cond_0
+    sget-object v0, Lcom/android/server/i;->vf:Ljava/lang/String;
+
+    if-nez v0, :cond_1
+
+    invoke-direct {p0}, Lcom/android/server/i;->Cl()Ljava/lang/String;
+
+    move-result-object v0
+
+    sput-object v0, Lcom/android/server/i;->vf:Ljava/lang/String;
+
+    :cond_1
+    sget-object v0, Lcom/android/server/i;->wf:Ljava/lang/String;
+
+    if-nez v0, :cond_2
+
+    invoke-direct {p0}, Lcom/android/server/i;->Dl()Ljava/lang/String;
+
+    move-result-object v0
+
+    sput-object v0, Lcom/android/server/i;->wf:Ljava/lang/String;
+
+    :cond_2
+    invoke-static {p1}, Lcom/android/server/zta;->isInWhiteList(Ljava/lang/String;)Z
+
+    move-result v0
+
+    const/4 v1, 0x0
+
+    if-eqz v0, :cond_3
+
+    return v1
+
+    :cond_3
+    sget-object v0, Lcom/android/server/i;->wf:Ljava/lang/String;
+
+    const-string v2, "OpSmartPowerControl"
+
+    if-eqz v0, :cond_4
+
+    invoke-virtual {v0, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_4
+
+    new-instance p0, Ljava/lang/StringBuilder;
+
+    invoke-direct {p0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v0, "wallpaper: "
+
+    :goto_0
+    invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p0
+
+    invoke-static {v2, p0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    return v1
+
+    :cond_4
+    sget-object v0, Lcom/android/server/i;->uf:Ljava/lang/String;
+
+    if-eqz v0, :cond_5
+
+    invoke-virtual {v0, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_5
+
+    new-instance p0, Ljava/lang/StringBuilder;
+
+    invoke-direct {p0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v0, "IME: "
+
+    goto :goto_0
+
+    :cond_5
+    sget-object v0, Lcom/android/server/i;->vf:Ljava/lang/String;
+
+    if-eqz v0, :cond_6
+
+    invoke-virtual {v0, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_6
+
+    new-instance p0, Ljava/lang/StringBuilder;
+
+    invoke-direct {p0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v0, "launcher: "
+
+    goto :goto_0
+
+    :cond_6
+    sget-object v0, Lcom/android/server/i;->xf:Ljava/lang/String;
+
+    if-eqz v0, :cond_7
+
+    invoke-virtual {v0, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_7
+
+    new-instance p0, Ljava/lang/StringBuilder;
+
+    invoke-direct {p0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v0, "docked: "
+
+    goto :goto_0
+
+    :cond_7
+    iget-object p0, p0, Lcom/android/server/i;->jf:Ljava/util/List;
+
+    if-eqz p0, :cond_8
+
+    invoke-interface {p0, p1}, Ljava/util/List;->contains(Ljava/lang/Object;)Z
+
+    move-result p0
+
+    if-eqz p0, :cond_8
+
+    new-instance p0, Ljava/lang/StringBuilder;
+
+    invoke-direct {p0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v0, "widget: "
+
+    goto :goto_0
+
+    :cond_8
+    const/4 p0, 0x1
+
+    return p0
+.end method
+
+.method private db(Ljava/lang/String;)I
     .locals 2
 
     const/4 v0, -0x1
@@ -840,7 +994,7 @@
     return v0
 .end method
 
-.method private db(Ljava/lang/String;)Z
+.method private eb(Ljava/lang/String;)Z
     .locals 3
 
     const/4 v0, 0x0
@@ -1211,164 +1365,10 @@
     return-void
 .end method
 
-.method private xl()Ljava/lang/String;
-    .locals 3
-
-    iget-object p0, p0, Lcom/android/server/i;->mImm:Landroid/view/inputmethod/InputMethodManager;
-
-    if-eqz p0, :cond_1
-
-    invoke-virtual {p0}, Landroid/view/inputmethod/InputMethodManager;->getInputMethodList()Ljava/util/List;
-
-    move-result-object p0
-
-    invoke-interface {p0}, Ljava/util/List;->size()I
-
-    move-result v0
-
-    if-lez v0, :cond_1
-
-    invoke-static {}, Landroid/app/AppGlobals;->getInitialApplication()Landroid/app/Application;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Landroid/app/Application;->getContentResolver()Landroid/content/ContentResolver;
-
-    move-result-object v0
-
-    const-string v1, "default_input_method"
-
-    invoke-static {v0, v1}, Landroid/provider/Settings$Secure;->getString(Landroid/content/ContentResolver;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-interface {p0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
-
-    move-result-object p0
-
-    :cond_0
-    invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v1
-
-    if-eqz v1, :cond_1
-
-    invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v1
-
-    check-cast v1, Landroid/view/inputmethod/InputMethodInfo;
-
-    invoke-virtual {v1}, Landroid/view/inputmethod/InputMethodInfo;->getId()Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-virtual {v2, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v2
-
-    if-eqz v2, :cond_0
-
-    invoke-virtual {v1}, Landroid/view/inputmethod/InputMethodInfo;->getPackageName()Ljava/lang/String;
-
-    move-result-object p0
-
-    return-object p0
-
-    :cond_1
-    const/4 p0, 0x0
-
-    return-object p0
-.end method
-
-.method private yl()Ljava/lang/String;
-    .locals 2
-
-    new-instance v0, Landroid/content/Intent;
-
-    const-string v1, "android.intent.action.MAIN"
-
-    invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
-
-    const-string v1, "android.intent.category.HOME"
-
-    invoke-virtual {v0, v1}, Landroid/content/Intent;->addCategory(Ljava/lang/String;)Landroid/content/Intent;
-
-    iget-object p0, p0, Lcom/android/server/i;->mPackageManager:Landroid/content/pm/PackageManager;
-
-    const/high16 v1, 0x10000
-
-    invoke-virtual {p0, v0, v1}, Landroid/content/pm/PackageManager;->resolveActivity(Landroid/content/Intent;I)Landroid/content/pm/ResolveInfo;
-
-    move-result-object p0
-
-    iget-object p0, p0, Landroid/content/pm/ResolveInfo;->activityInfo:Landroid/content/pm/ActivityInfo;
-
-    iget-object p0, p0, Landroid/content/pm/ActivityInfo;->packageName:Ljava/lang/String;
-
-    return-object p0
-.end method
-
-.method private zl()Ljava/lang/String;
-    .locals 3
-
-    const/4 v0, 0x0
-
-    :try_start_0
-    iget-object v1, p0, Lcom/android/server/i;->hf:Landroid/app/WallpaperManager;
-
-    invoke-virtual {v1}, Landroid/app/WallpaperManager;->getWallpaperInfo()Landroid/app/WallpaperInfo;
-
-    move-result-object v1
-
-    if-eqz v1, :cond_0
-
-    iget-object p0, p0, Lcom/android/server/i;->hf:Landroid/app/WallpaperManager;
-
-    invoke-virtual {p0}, Landroid/app/WallpaperManager;->getWallpaperInfo()Landroid/app/WallpaperInfo;
-
-    move-result-object p0
-
-    invoke-virtual {p0}, Landroid/app/WallpaperInfo;->getPackageName()Ljava/lang/String;
-
-    move-result-object p0
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
-
-    move-object v0, p0
-
-    goto :goto_0
-
-    :catch_0
-    move-exception p0
-
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v2, "Couldn\'t get wallpaper info package name."
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p0
-
-    const-string v1, "OpSmartPowerControl"
-
-    invoke-static {v1, p0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
-
-    :cond_0
-    :goto_0
-    return-object v0
-.end method
-
 .method private zta(ILjava/lang/String;I)V
     .locals 2
 
-    invoke-direct {p0, p2}, Lcom/android/server/i;->db(Ljava/lang/String;)Z
+    invoke-direct {p0, p2}, Lcom/android/server/i;->eb(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -1393,7 +1393,7 @@
 .method static synthetic zta(Lcom/android/server/i;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/i;->Dl()V
+    invoke-direct {p0}, Lcom/android/server/i;->Hl()V
 
     return-void
 .end method
@@ -1406,7 +1406,7 @@
     monitor-enter p0
 
     :try_start_0
-    iget-object v0, p0, Lcom/android/server/i;->mf:[I
+    iget-object v0, p0, Lcom/android/server/i;->pf:[I
 
     monitor-exit p0
 
@@ -1434,7 +1434,7 @@
         }
     .end annotation
 
-    iget-object p0, p0, Lcom/android/server/i;->jf:Landroid/util/ArrayMap;
+    iget-object p0, p0, Lcom/android/server/i;->mf:Landroid/util/ArrayMap;
 
     return-object p0
 .end method
@@ -1466,7 +1466,7 @@
 .method public cjf(Ljava/lang/String;)Z
     .locals 2
 
-    iget-object p0, p0, Lcom/android/server/i;->jf:Landroid/util/ArrayMap;
+    iget-object p0, p0, Lcom/android/server/i;->mf:Landroid/util/ArrayMap;
 
     invoke-virtual {p0, p1}, Landroid/util/ArrayMap;->containsKey(Ljava/lang/Object;)Z
 
@@ -1530,7 +1530,7 @@
     invoke-static {v1, v0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_0
-    iget-object v0, p0, Lcom/android/server/i;->if:Landroid/util/ArrayMap;
+    iget-object v0, p0, Lcom/android/server/i;->lf:Landroid/util/ArrayMap;
 
     invoke-virtual {v0, p1}, Landroid/util/ArrayMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -1593,7 +1593,7 @@
         }
     .end annotation
 
-    iget-object p0, p0, Lcom/android/server/i;->if:Landroid/util/ArrayMap;
+    iget-object p0, p0, Lcom/android/server/i;->lf:Landroid/util/ArrayMap;
 
     return-object p0
 .end method
@@ -1741,7 +1741,7 @@
     :cond_0
     const/4 v0, 0x0
 
-    iget-object p0, p0, Lcom/android/server/i;->jf:Landroid/util/ArrayMap;
+    iget-object p0, p0, Lcom/android/server/i;->mf:Landroid/util/ArrayMap;
 
     invoke-virtual {p0, p1}, Landroid/util/ArrayMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -1841,9 +1841,9 @@
 
     if-eqz v0, :cond_2
 
-    invoke-direct {p0}, Lcom/android/server/i;->Bl()V
+    invoke-direct {p0}, Lcom/android/server/i;->Fl()V
 
-    invoke-direct {p0, p1}, Lcom/android/server/i;->bb(Ljava/lang/String;)Z
+    invoke-direct {p0, p1}, Lcom/android/server/i;->cb(Ljava/lang/String;)Z
 
     move-result p0
 
@@ -1856,7 +1856,7 @@
 .method public isOptApp(Ljava/lang/String;)Z
     .locals 2
 
-    iget-object p0, p0, Lcom/android/server/i;->if:Landroid/util/ArrayMap;
+    iget-object p0, p0, Lcom/android/server/i;->lf:Landroid/util/ArrayMap;
 
     invoke-virtual {p0, p1}, Landroid/util/ArrayMap;->containsKey(Ljava/lang/Object;)Z
 
@@ -1897,13 +1897,13 @@
 .method public isSmartOptApp(Ljava/lang/String;)Z
     .locals 2
 
-    iget-object v0, p0, Lcom/android/server/i;->if:Landroid/util/ArrayMap;
+    iget-object v0, p0, Lcom/android/server/i;->lf:Landroid/util/ArrayMap;
 
     invoke-virtual {v0, p1}, Landroid/util/ArrayMap;->containsKey(Ljava/lang/Object;)Z
 
     move-result v0
 
-    iget-object p0, p0, Lcom/android/server/i;->jf:Landroid/util/ArrayMap;
+    iget-object p0, p0, Lcom/android/server/i;->mf:Landroid/util/ArrayMap;
 
     invoke-virtual {p0, p1}, Landroid/util/ArrayMap;->containsKey(Ljava/lang/Object;)Z
 
@@ -1959,7 +1959,7 @@
     monitor-enter p0
 
     :try_start_0
-    iget-object v0, p0, Lcom/android/server/i;->jf:Landroid/util/ArrayMap;
+    iget-object v0, p0, Lcom/android/server/i;->mf:Landroid/util/ArrayMap;
 
     invoke-virtual {v0, p1}, Landroid/util/ArrayMap;->containsKey(Ljava/lang/Object;)Z
 
@@ -2037,7 +2037,7 @@
 
     move-result v3
 
-    iget-object v4, p0, Lcom/android/server/i;->jf:Landroid/util/ArrayMap;
+    iget-object v4, p0, Lcom/android/server/i;->mf:Landroid/util/ArrayMap;
 
     invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -2221,12 +2221,12 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/server/i;->hf:Landroid/app/WallpaperManager;
+    iput-object v0, p0, Lcom/android/server/i;->kf:Landroid/app/WallpaperManager;
 
     :cond_0
     invoke-virtual {p0}, Lcom/android/server/i;->readConfigFileLocked()V
 
-    invoke-direct {p0}, Lcom/android/server/i;->Dl()V
+    invoke-direct {p0}, Lcom/android/server/i;->Hl()V
 
     iget-object v0, p0, Lcom/android/server/i;->mContext:Landroid/content/Context;
 
@@ -2259,7 +2259,7 @@
 
     check-cast v0, Lcom/android/server/OpPowerControllerService;
 
-    sput-object v0, Lcom/android/server/i;->of:Lcom/android/server/OpPowerControllerService;
+    sput-object v0, Lcom/android/server/i;->rf:Lcom/android/server/OpPowerControllerService;
 
     monitor-exit p0
 
@@ -2281,7 +2281,7 @@
     monitor-enter p0
 
     :try_start_0
-    iget-object v0, p0, Lcom/android/server/i;->if:Landroid/util/ArrayMap;
+    iget-object v0, p0, Lcom/android/server/i;->lf:Landroid/util/ArrayMap;
 
     invoke-virtual {v0, p1}, Landroid/util/ArrayMap;->containsKey(Ljava/lang/Object;)Z
 
@@ -2346,7 +2346,7 @@
     invoke-static {v2, v1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_0
-    iget-object v1, p0, Lcom/android/server/i;->if:Landroid/util/ArrayMap;
+    iget-object v1, p0, Lcom/android/server/i;->lf:Landroid/util/ArrayMap;
 
     invoke-virtual {v1}, Landroid/util/ArrayMap;->clear()V
 
@@ -2471,9 +2471,9 @@
     monitor-enter p0
 
     :try_start_0
-    iput-object p1, p0, Lcom/android/server/i;->nf:[I
+    iput-object p1, p0, Lcom/android/server/i;->qf:[I
 
-    invoke-direct {p0}, Lcom/android/server/i;->Dl()V
+    invoke-direct {p0}, Lcom/android/server/i;->Hl()V
 
     monitor-exit p0
 
@@ -2507,7 +2507,7 @@
 
     new-instance v3, Lcom/android/server/i$you;
 
-    iget-object v4, p0, Lcom/android/server/i;->if:Landroid/util/ArrayMap;
+    iget-object v4, p0, Lcom/android/server/i;->lf:Landroid/util/ArrayMap;
 
     invoke-direct {v3, p0, v4}, Lcom/android/server/i$you;-><init>(Lcom/android/server/i;Ljava/util/Map;)V
 
@@ -2529,7 +2529,7 @@
 
     new-instance v3, Lcom/android/server/i$you;
 
-    iget-object v4, p0, Lcom/android/server/i;->jf:Landroid/util/ArrayMap;
+    iget-object v4, p0, Lcom/android/server/i;->mf:Landroid/util/ArrayMap;
 
     invoke-direct {v3, p0, v4}, Lcom/android/server/i$you;-><init>(Lcom/android/server/i;Ljava/util/Map;)V
 
@@ -2560,7 +2560,7 @@
 .method public sis(Ljava/io/PrintWriter;)V
     .locals 3
 
-    invoke-direct {p0}, Lcom/android/server/i;->Bl()V
+    invoke-direct {p0}, Lcom/android/server/i;->Fl()V
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -2570,7 +2570,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sget-object v1, Lcom/android/server/i;->rf:Ljava/lang/String;
+    sget-object v1, Lcom/android/server/i;->uf:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -2588,7 +2588,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sget-object v1, Lcom/android/server/i;->sf:Ljava/lang/String;
+    sget-object v1, Lcom/android/server/i;->vf:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -2606,7 +2606,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sget-object v1, Lcom/android/server/i;->tf:Ljava/lang/String;
+    sget-object v1, Lcom/android/server/i;->wf:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -2624,7 +2624,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sget-object v1, Lcom/android/server/i;->uf:Ljava/lang/String;
+    sget-object v1, Lcom/android/server/i;->xf:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -2641,7 +2641,7 @@
     const/4 v0, 0x0
 
     :goto_0
-    iget-object v1, p0, Lcom/android/server/i;->gf:Ljava/util/List;
+    iget-object v1, p0, Lcom/android/server/i;->jf:Ljava/util/List;
 
     invoke-interface {v1}, Ljava/util/List;->size()I
 
@@ -2657,7 +2657,7 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v2, p0, Lcom/android/server/i;->gf:Ljava/util/List;
+    iget-object v2, p0, Lcom/android/server/i;->jf:Ljava/util/List;
 
     invoke-interface {v2, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -2728,7 +2728,7 @@
     move v3, v2
 
     :goto_0
-    iget-object v4, p0, Lcom/android/server/i;->if:Landroid/util/ArrayMap;
+    iget-object v4, p0, Lcom/android/server/i;->lf:Landroid/util/ArrayMap;
 
     invoke-virtual {v4}, Landroid/util/ArrayMap;->size()I
 
@@ -2742,7 +2742,7 @@
 
     invoke-interface {p1, v1, v4}, Lorg/xmlpull/v1/XmlSerializer;->startTag(Ljava/lang/String;Ljava/lang/String;)Lorg/xmlpull/v1/XmlSerializer;
 
-    iget-object v6, p0, Lcom/android/server/i;->if:Landroid/util/ArrayMap;
+    iget-object v6, p0, Lcom/android/server/i;->lf:Landroid/util/ArrayMap;
 
     invoke-virtual {v6, v3}, Landroid/util/ArrayMap;->keyAt(I)Ljava/lang/Object;
 
@@ -2760,7 +2760,7 @@
 
     :cond_0
     :goto_1
-    iget-object v3, p0, Lcom/android/server/i;->jf:Landroid/util/ArrayMap;
+    iget-object v3, p0, Lcom/android/server/i;->mf:Landroid/util/ArrayMap;
 
     invoke-virtual {v3}, Landroid/util/ArrayMap;->size()I
 
@@ -2772,7 +2772,7 @@
 
     invoke-interface {p1, v1, v3}, Lorg/xmlpull/v1/XmlSerializer;->startTag(Ljava/lang/String;Ljava/lang/String;)Lorg/xmlpull/v1/XmlSerializer;
 
-    iget-object v4, p0, Lcom/android/server/i;->jf:Landroid/util/ArrayMap;
+    iget-object v4, p0, Lcom/android/server/i;->mf:Landroid/util/ArrayMap;
 
     invoke-virtual {v4, v2}, Landroid/util/ArrayMap;->keyAt(I)Ljava/lang/Object;
 
@@ -2843,7 +2843,7 @@
 
     move-result v3
 
-    iget-object v4, p0, Lcom/android/server/i;->if:Landroid/util/ArrayMap;
+    iget-object v4, p0, Lcom/android/server/i;->lf:Landroid/util/ArrayMap;
 
     invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -2962,7 +2962,7 @@
 
     or-int/2addr p2, v0
 
-    invoke-direct {p0, p1}, Lcom/android/server/i;->ab(Ljava/lang/String;)V
+    invoke-direct {p0, p1}, Lcom/android/server/i;->bb(Ljava/lang/String;)V
 
     monitor-exit p0
 
@@ -3023,11 +3023,11 @@
     :goto_0
     if-eqz p2, :cond_3
 
-    invoke-direct {p0}, Lcom/android/server/i;->Dl()V
+    invoke-direct {p0}, Lcom/android/server/i;->Hl()V
 
     invoke-virtual {p0}, Lcom/android/server/i;->writeConfigFileLocked()V
 
-    invoke-direct {p0}, Lcom/android/server/i;->Cl()V
+    invoke-direct {p0}, Lcom/android/server/i;->Gl()V
 
     :cond_3
     sget-boolean p0, Lcom/android/server/i;->DEBUG_ONEPLUS:Z

@@ -104,6 +104,66 @@
 
 
 # virtual methods
+.method public Ah()[Lorg/bouncycastle/asn1/bvj/zta;
+    .locals 3
+
+    iget-object v0, p0, Lorg/bouncycastle/asn1/bvj/sis;->values:Lorg/bouncycastle/asn1/ear;
+
+    invoke-virtual {v0}, Lorg/bouncycastle/asn1/ear;->size()I
+
+    move-result v0
+
+    new-array v0, v0, [Lorg/bouncycastle/asn1/bvj/zta;
+
+    const/4 v1, 0x0
+
+    :goto_0
+    array-length v2, v0
+
+    if-eq v1, v2, :cond_0
+
+    iget-object v2, p0, Lorg/bouncycastle/asn1/bvj/sis;->values:Lorg/bouncycastle/asn1/ear;
+
+    invoke-virtual {v2, v1}, Lorg/bouncycastle/asn1/ear;->getObjectAt(I)Lorg/bouncycastle/asn1/ssp;
+
+    move-result-object v2
+
+    invoke-static {v2}, Lorg/bouncycastle/asn1/bvj/zta;->getInstance(Ljava/lang/Object;)Lorg/bouncycastle/asn1/bvj/zta;
+
+    move-result-object v2
+
+    aput-object v2, v0, v1
+
+    add-int/lit8 v1, v1, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    return-object v0
+.end method
+
+.method public Bh()Z
+    .locals 1
+
+    iget-object p0, p0, Lorg/bouncycastle/asn1/bvj/sis;->values:Lorg/bouncycastle/asn1/ear;
+
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/ear;->size()I
+
+    move-result p0
+
+    const/4 v0, 0x1
+
+    if-le p0, v0, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    :goto_0
+    return v0
+.end method
+
 .method public getFirst()Lorg/bouncycastle/asn1/bvj/zta;
     .locals 1
 
@@ -153,64 +213,4 @@
     iget-object p0, p0, Lorg/bouncycastle/asn1/bvj/sis;->values:Lorg/bouncycastle/asn1/ear;
 
     return-object p0
-.end method
-
-.method public wh()[Lorg/bouncycastle/asn1/bvj/zta;
-    .locals 3
-
-    iget-object v0, p0, Lorg/bouncycastle/asn1/bvj/sis;->values:Lorg/bouncycastle/asn1/ear;
-
-    invoke-virtual {v0}, Lorg/bouncycastle/asn1/ear;->size()I
-
-    move-result v0
-
-    new-array v0, v0, [Lorg/bouncycastle/asn1/bvj/zta;
-
-    const/4 v1, 0x0
-
-    :goto_0
-    array-length v2, v0
-
-    if-eq v1, v2, :cond_0
-
-    iget-object v2, p0, Lorg/bouncycastle/asn1/bvj/sis;->values:Lorg/bouncycastle/asn1/ear;
-
-    invoke-virtual {v2, v1}, Lorg/bouncycastle/asn1/ear;->getObjectAt(I)Lorg/bouncycastle/asn1/ssp;
-
-    move-result-object v2
-
-    invoke-static {v2}, Lorg/bouncycastle/asn1/bvj/zta;->getInstance(Ljava/lang/Object;)Lorg/bouncycastle/asn1/bvj/zta;
-
-    move-result-object v2
-
-    aput-object v2, v0, v1
-
-    add-int/lit8 v1, v1, 0x1
-
-    goto :goto_0
-
-    :cond_0
-    return-object v0
-.end method
-
-.method public xh()Z
-    .locals 1
-
-    iget-object p0, p0, Lorg/bouncycastle/asn1/bvj/sis;->values:Lorg/bouncycastle/asn1/ear;
-
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/ear;->size()I
-
-    move-result p0
-
-    const/4 v0, 0x1
-
-    if-le p0, v0, :cond_0
-
-    goto :goto_0
-
-    :cond_0
-    const/4 v0, 0x0
-
-    :goto_0
-    return v0
 .end method

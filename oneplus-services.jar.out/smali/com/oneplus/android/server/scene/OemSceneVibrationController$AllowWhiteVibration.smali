@@ -80,7 +80,7 @@
 
     iget-object p0, p0, Lcom/oneplus/android/server/scene/OemSceneVibrationController$AllowWhiteVibration;->this$0:Lcom/oneplus/android/server/scene/OemSceneVibrationController;
 
-    sget-object p1, Lcom/oneplus/android/server/scene/OemSceneVibrationController$VibrationMode;->_ka:Lcom/oneplus/android/server/scene/OemSceneVibrationController$VibrationMode;
+    sget-object p1, Lcom/oneplus/android/server/scene/OemSceneVibrationController$VibrationMode;->_la:Lcom/oneplus/android/server/scene/OemSceneVibrationController$VibrationMode;
 
     invoke-virtual {p1}, Ljava/lang/Enum;->ordinal()I
 
@@ -111,7 +111,7 @@
     :cond_0
     iget-object p0, p0, Lcom/oneplus/android/server/scene/OemSceneVibrationController$AllowWhiteVibration;->this$0:Lcom/oneplus/android/server/scene/OemSceneVibrationController;
 
-    sget-object p1, Lcom/oneplus/android/server/scene/OemSceneVibrationController$VibrationMode;->_ka:Lcom/oneplus/android/server/scene/OemSceneVibrationController$VibrationMode;
+    sget-object p1, Lcom/oneplus/android/server/scene/OemSceneVibrationController$VibrationMode;->_la:Lcom/oneplus/android/server/scene/OemSceneVibrationController$VibrationMode;
 
     invoke-virtual {p1}, Ljava/lang/Enum;->ordinal()I
 

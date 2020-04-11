@@ -96,7 +96,7 @@
 
     new-array v0, v0, [I
 
-    const/16 v1, 0xf8
+    const/16 v1, 0xfa
 
     aput v1, v0, v2
 
@@ -1763,7 +1763,7 @@
 
     if-eqz p0, :cond_3
 
-    sget-boolean p0, Lcom/android/server/am/ire;->Kl:Z
+    sget-boolean p0, Lcom/android/server/am/ire;->Ol:Z
 
     if-eqz p0, :cond_3
 

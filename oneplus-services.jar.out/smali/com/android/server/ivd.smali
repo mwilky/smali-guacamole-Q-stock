@@ -15,15 +15,15 @@
 
 
 # static fields
-.field private static final nla:I = 0x0
+.field private static final nma:I = 0x0
 
-.field private static final ola:I = 0x1
+.field private static final oma:I = 0x1
 
 
 # instance fields
-.field private final lla:I
+.field private final lma:I
 
-.field private mla:Z
+.field private mma:Z
 
 .field final synthetic this$0:Lcom/android/server/OpPowerControllerService;
 
@@ -47,19 +47,19 @@
 
     const/4 p1, 0x0
 
-    iput-boolean p1, p0, Lcom/android/server/ivd;->mla:Z
+    iput-boolean p1, p0, Lcom/android/server/ivd;->mma:Z
 
-    iput p2, p0, Lcom/android/server/ivd;->lla:I
+    iput p2, p0, Lcom/android/server/ivd;->lma:I
 
     return-void
 .end method
 
 
 # virtual methods
-.method public Mf()Z
+.method public Qf()Z
     .locals 0
 
-    iget-boolean p0, p0, Lcom/android/server/ivd;->mla:Z
+    iget-boolean p0, p0, Lcom/android/server/ivd;->mma:Z
 
     return p0
 .end method
@@ -67,7 +67,7 @@
 .method public run()V
     .locals 4
 
-    iget v0, p0, Lcom/android/server/ivd;->lla:I
+    iget v0, p0, Lcom/android/server/ivd;->lma:I
 
     if-nez v0, :cond_0
 
@@ -82,7 +82,7 @@
 
     move-result v0
 
-    iput-boolean v0, p0, Lcom/android/server/ivd;->mla:Z
+    iput-boolean v0, p0, Lcom/android/server/ivd;->mma:Z
 
     goto :goto_1
 
@@ -101,7 +101,7 @@
 
     :cond_1
     :goto_1
-    iget-boolean v0, p0, Lcom/android/server/ivd;->mla:Z
+    iget-boolean v0, p0, Lcom/android/server/ivd;->mma:Z
 
     if-eqz v0, :cond_2
 

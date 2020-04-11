@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field nn:Ljava/util/HashSet;
+.field sn:Ljava/util/HashSet;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/HashSet<",
@@ -46,7 +46,7 @@
 
     invoke-direct {p1}, Ljava/util/HashSet;-><init>()V
 
-    iput-object p1, p0, Lcom/android/server/am/irq$ssp;->nn:Ljava/util/HashSet;
+    iput-object p1, p0, Lcom/android/server/am/irq$ssp;->sn:Ljava/util/HashSet;
 
     monitor-enter p0
 
@@ -75,13 +75,13 @@
     return-void
 .end method
 
-.method private Sa(I)V
+.method private Va(I)V
     .locals 1
 
     monitor-enter p0
 
     :try_start_0
-    iget-object v0, p0, Lcom/android/server/am/irq$ssp;->nn:Ljava/util/HashSet;
+    iget-object v0, p0, Lcom/android/server/am/irq$ssp;->sn:Ljava/util/HashSet;
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -113,7 +113,7 @@
     if-ne p2, v0, :cond_2
 
     :try_start_0
-    iget-object p2, p0, Lcom/android/server/am/irq$ssp;->nn:Ljava/util/HashSet;
+    iget-object p2, p0, Lcom/android/server/am/irq$ssp;->sn:Ljava/util/HashSet;
 
     invoke-virtual {p2}, Ljava/util/HashSet;->iterator()Ljava/util/Iterator;
 
@@ -166,14 +166,14 @@
     goto :goto_0
 
     :cond_1
-    iget-object p1, p0, Lcom/android/server/am/irq$ssp;->nn:Ljava/util/HashSet;
+    iget-object p1, p0, Lcom/android/server/am/irq$ssp;->sn:Ljava/util/HashSet;
 
     invoke-virtual {p1}, Ljava/util/HashSet;->clear()V
 
     goto :goto_1
 
     :cond_2
-    iget-object v0, p0, Lcom/android/server/am/irq$ssp;->nn:Ljava/util/HashSet;
+    iget-object v0, p0, Lcom/android/server/am/irq$ssp;->sn:Ljava/util/HashSet;
 
     invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -185,7 +185,7 @@
 
     if-eqz v0, :cond_3
 
-    iget-object v0, p0, Lcom/android/server/am/irq$ssp;->nn:Ljava/util/HashSet;
+    iget-object v0, p0, Lcom/android/server/am/irq$ssp;->sn:Ljava/util/HashSet;
 
     invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 

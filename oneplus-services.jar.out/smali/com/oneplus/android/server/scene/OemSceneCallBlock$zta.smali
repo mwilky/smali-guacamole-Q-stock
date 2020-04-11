@@ -2,9 +2,6 @@
 .super Ljava/lang/Object;
 .source ""
 
-# interfaces
-.implements Lcom/oneplus/config/ConfigObserver$ConfigUpdater;
-
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
@@ -12,34 +9,54 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0xa
     name = "zta"
 .end annotation
 
 
-# instance fields
-.field final synthetic this$0:Lcom/oneplus/android/server/scene/OemSceneCallBlock;
+# static fields
+.field public static final Zea:I = 0x0
+
+.field public static final _ea:I = 0x1
+
+.field public static final afa:I = 0x2
+
+.field private static final bfa:Ljava/lang/String; = "driving_mode_state"
 
 
 # direct methods
-.method constructor <init>(Lcom/oneplus/android/server/scene/OemSceneCallBlock;)V
+.method private constructor <init>()V
     .locals 0
-
-    iput-object p1, p0, Lcom/oneplus/android/server/scene/OemSceneCallBlock$zta;->this$0:Lcom/oneplus/android/server/scene/OemSceneCallBlock;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
+.method public static tsu(Landroid/content/Context;)Z
+    .locals 2
 
-# virtual methods
-.method public updateConfig(Lorg/json/JSONArray;)V
-    .locals 0
+    const/4 v0, 0x0
 
-    iget-object p0, p0, Lcom/oneplus/android/server/scene/OemSceneCallBlock$zta;->this$0:Lcom/oneplus/android/server/scene/OemSceneCallBlock;
+    if-nez p0, :cond_0
 
-    invoke-static {p0, p1}, Lcom/oneplus/android/server/scene/OemSceneCallBlock;->access$000(Lcom/oneplus/android/server/scene/OemSceneCallBlock;Lorg/json/JSONArray;)V
+    return v0
 
-    return-void
+    :cond_0
+    invoke-virtual {p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object p0
+
+    const-string v1, "driving_mode_state"
+
+    invoke-static {p0, v1, v0}, Landroid/provider/Settings$Secure;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
+
+    move-result p0
+
+    if-lez p0, :cond_1
+
+    const/4 v0, 0x1
+
+    :cond_1
+    return v0
 .end method

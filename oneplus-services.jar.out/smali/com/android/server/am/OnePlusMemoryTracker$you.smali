@@ -15,17 +15,29 @@
 
 
 # instance fields
-.field final id:I
+.field final Nu:Z
 
-.field final isProc:Z
+.field final Ou:Ljava/lang/String;
 
-.field final label:Ljava/lang/String;
+.field final Pu:J
 
-.field final pss:J
+.field final Qu:Z
 
-.field final shortLabel:Ljava/lang/String;
+.field Ru:Ljava/util/ArrayList;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/ArrayList<",
+            "Lcom/android/server/am/OnePlusMemoryTracker$you;",
+            ">;"
+        }
+    .end annotation
+.end field
 
-.field final swapPss:J
+.field final mId:I
+
+.field final mLabel:Ljava/lang/String;
+
+.field final mPss:J
 
 
 # direct methods
@@ -36,17 +48,43 @@
 
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/android/server/am/OnePlusMemoryTracker$you;->isProc:Z
+    iput-boolean v0, p0, Lcom/android/server/am/OnePlusMemoryTracker$you;->Nu:Z
 
-    iput-object p1, p0, Lcom/android/server/am/OnePlusMemoryTracker$you;->label:Ljava/lang/String;
+    iput-object p1, p0, Lcom/android/server/am/OnePlusMemoryTracker$you;->mLabel:Ljava/lang/String;
 
-    iput-object p2, p0, Lcom/android/server/am/OnePlusMemoryTracker$you;->shortLabel:Ljava/lang/String;
+    iput-object p2, p0, Lcom/android/server/am/OnePlusMemoryTracker$you;->Ou:Ljava/lang/String;
 
-    iput-wide p3, p0, Lcom/android/server/am/OnePlusMemoryTracker$you;->pss:J
+    iput-wide p3, p0, Lcom/android/server/am/OnePlusMemoryTracker$you;->mPss:J
 
-    iput-wide p5, p0, Lcom/android/server/am/OnePlusMemoryTracker$you;->swapPss:J
+    iput-wide p5, p0, Lcom/android/server/am/OnePlusMemoryTracker$you;->Pu:J
 
-    iput p7, p0, Lcom/android/server/am/OnePlusMemoryTracker$you;->id:I
+    iput p7, p0, Lcom/android/server/am/OnePlusMemoryTracker$you;->mId:I
+
+    iput-boolean v0, p0, Lcom/android/server/am/OnePlusMemoryTracker$you;->Qu:Z
+
+    return-void
+.end method
+
+.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;JJIZ)V
+    .locals 1
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    const/4 v0, 0x1
+
+    iput-boolean v0, p0, Lcom/android/server/am/OnePlusMemoryTracker$you;->Nu:Z
+
+    iput-object p1, p0, Lcom/android/server/am/OnePlusMemoryTracker$you;->mLabel:Ljava/lang/String;
+
+    iput-object p2, p0, Lcom/android/server/am/OnePlusMemoryTracker$you;->Ou:Ljava/lang/String;
+
+    iput-wide p3, p0, Lcom/android/server/am/OnePlusMemoryTracker$you;->mPss:J
+
+    iput-wide p5, p0, Lcom/android/server/am/OnePlusMemoryTracker$you;->Pu:J
+
+    iput p7, p0, Lcom/android/server/am/OnePlusMemoryTracker$you;->mId:I
+
+    iput-boolean p8, p0, Lcom/android/server/am/OnePlusMemoryTracker$you;->Qu:Z
 
     return-void
 .end method
@@ -54,51 +92,57 @@
 
 # virtual methods
 .method public toString()Ljava/lang/String;
-    .locals 3
+    .locals 5
 
-    new-instance v0, Ljava/lang/StringBuilder;
+    iget-boolean v0, p0, Lcom/android/server/am/OnePlusMemoryTracker$you;->Nu:Z
 
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+    const/4 v1, 0x1
 
-    const-string v1, "    "
+    const/4 v2, 0x0
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const/4 v3, 0x2
 
-    iget-wide v1, p0, Lcom/android/server/am/OnePlusMemoryTracker$you;->pss:J
+    if-eqz v0, :cond_0
 
-    invoke-static {v1, v2}, Lcom/android/server/am/OnePlusMemoryTracker;->access$900(J)Ljava/lang/String;
+    new-array v0, v3, [Ljava/lang/Object;
 
-    move-result-object v1
+    iget-wide v3, p0, Lcom/android/server/am/OnePlusMemoryTracker$you;->mPss:J
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v3, v4}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
-    const-string v1, ":  "
+    move-result-object v3
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    aput-object v3, v0, v2
 
-    iget-object v1, p0, Lcom/android/server/am/OnePlusMemoryTracker$you;->label:Ljava/lang/String;
+    iget-object p0, p0, Lcom/android/server/am/OnePlusMemoryTracker$you;->mLabel:Ljava/lang/String;
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    aput-object p0, v0, v1
 
-    const-string v1, "\t"
+    const-string p0, "%16dk: %s\n"
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget-wide v1, p0, Lcom/android/server/am/OnePlusMemoryTracker$you;->swapPss:J
-
-    invoke-static {v1, v2}, Lcom/android/server/am/OnePlusMemoryTracker;->access$900(J)Ljava/lang/String;
-
-    move-result-object p0
-
-    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string p0, " in swap"
-
-    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    :goto_0
+    invoke-static {p0, v0}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object p0
 
     return-object p0
+
+    :cond_0
+    new-array v0, v3, [Ljava/lang/Object;
+
+    iget-wide v3, p0, Lcom/android/server/am/OnePlusMemoryTracker$you;->mPss:J
+
+    invoke-static {v3, v4}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+
+    move-result-object v3
+
+    aput-object v3, v0, v2
+
+    iget-object p0, p0, Lcom/android/server/am/OnePlusMemoryTracker$you;->mLabel:Ljava/lang/String;
+
+    aput-object p0, v0, v1
+
+    const-string p0, "%12dk: %s\n"
+
+    goto :goto_0
 .end method

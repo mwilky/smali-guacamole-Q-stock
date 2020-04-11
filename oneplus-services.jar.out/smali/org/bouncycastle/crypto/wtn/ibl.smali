@@ -7,15 +7,15 @@
 
 
 # instance fields
-.field private Yta:[B
+.field private Wua:[B
 
 .field private curve:Lyou/zta/sis/zta/rtg;
 
 .field private h:Ljava/math/BigInteger;
 
-.field private jAa:Lyou/zta/sis/zta/wtn;
+.field private hBa:Lyou/zta/sis/zta/wtn;
 
-.field private kAa:Ljava/math/BigInteger;
+.field private iBa:Ljava/math/BigInteger;
 
 .field private n:Ljava/math/BigInteger;
 
@@ -68,7 +68,7 @@
 
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lorg/bouncycastle/crypto/wtn/ibl;->kAa:Ljava/math/BigInteger;
+    iput-object v0, p0, Lorg/bouncycastle/crypto/wtn/ibl;->iBa:Ljava/math/BigInteger;
 
     if-eqz p1, :cond_1
 
@@ -80,7 +80,7 @@
 
     move-result-object p1
 
-    iput-object p1, p0, Lorg/bouncycastle/crypto/wtn/ibl;->jAa:Lyou/zta/sis/zta/wtn;
+    iput-object p1, p0, Lorg/bouncycastle/crypto/wtn/ibl;->hBa:Lyou/zta/sis/zta/wtn;
 
     iput-object p3, p0, Lorg/bouncycastle/crypto/wtn/ibl;->n:Ljava/math/BigInteger;
 
@@ -90,7 +90,7 @@
 
     move-result-object p1
 
-    iput-object p1, p0, Lorg/bouncycastle/crypto/wtn/ibl;->Yta:[B
+    iput-object p1, p0, Lorg/bouncycastle/crypto/wtn/ibl;->Wua:[B
 
     return-void
 
@@ -126,7 +126,7 @@
 
     move-result-object p0
 
-    invoke-virtual {p0}, Lyou/zta/sis/zta/wtn;->ok()Z
+    invoke-virtual {p0}, Lyou/zta/sis/zta/wtn;->sk()Z
 
     move-result p1
 
@@ -170,7 +170,7 @@
 
 
 # virtual methods
-.method public Di()Ljava/math/BigInteger;
+.method public Hi()Ljava/math/BigInteger;
     .locals 0
 
     iget-object p0, p0, Lorg/bouncycastle/crypto/wtn/ibl;->h:Ljava/math/BigInteger;
@@ -178,7 +178,7 @@
     return-object p0
 .end method
 
-.method public Ei()Ljava/math/BigInteger;
+.method public Ii()Ljava/math/BigInteger;
     .locals 0
 
     iget-object p0, p0, Lorg/bouncycastle/crypto/wtn/ibl;->n:Ljava/math/BigInteger;
@@ -214,9 +214,9 @@
 
     if-eqz v1, :cond_1
 
-    iget-object v1, p0, Lorg/bouncycastle/crypto/wtn/ibl;->jAa:Lyou/zta/sis/zta/wtn;
+    iget-object v1, p0, Lorg/bouncycastle/crypto/wtn/ibl;->hBa:Lyou/zta/sis/zta/wtn;
 
-    iget-object v3, p1, Lorg/bouncycastle/crypto/wtn/ibl;->jAa:Lyou/zta/sis/zta/wtn;
+    iget-object v3, p1, Lorg/bouncycastle/crypto/wtn/ibl;->hBa:Lyou/zta/sis/zta/wtn;
 
     invoke-virtual {v1, v3}, Lyou/zta/sis/zta/wtn;->bio(Lyou/zta/sis/zta/wtn;)Z
 
@@ -267,7 +267,7 @@
 .method public getG()Lyou/zta/sis/zta/wtn;
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/crypto/wtn/ibl;->jAa:Lyou/zta/sis/zta/wtn;
+    iget-object p0, p0, Lorg/bouncycastle/crypto/wtn/ibl;->hBa:Lyou/zta/sis/zta/wtn;
 
     return-object p0
 .end method
@@ -275,7 +275,7 @@
 .method public getSeed()[B
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/crypto/wtn/ibl;->Yta:[B
+    iget-object p0, p0, Lorg/bouncycastle/crypto/wtn/ibl;->Wua:[B
 
     invoke-static {p0}, Lorg/bouncycastle/util/zta;->vdb([B)[B
 
@@ -295,7 +295,7 @@
 
     mul-int/lit8 v0, v0, 0x25
 
-    iget-object v1, p0, Lorg/bouncycastle/crypto/wtn/ibl;->jAa:Lyou/zta/sis/zta/wtn;
+    iget-object v1, p0, Lorg/bouncycastle/crypto/wtn/ibl;->hBa:Lyou/zta/sis/zta/wtn;
 
     invoke-virtual {v1}, Lyou/zta/sis/zta/wtn;->hashCode()I
 
@@ -326,13 +326,13 @@
     return p0
 .end method
 
-.method public declared-synchronized lj()Ljava/math/BigInteger;
+.method public declared-synchronized pj()Ljava/math/BigInteger;
     .locals 2
 
     monitor-enter p0
 
     :try_start_0
-    iget-object v0, p0, Lorg/bouncycastle/crypto/wtn/ibl;->kAa:Ljava/math/BigInteger;
+    iget-object v0, p0, Lorg/bouncycastle/crypto/wtn/ibl;->iBa:Ljava/math/BigInteger;
 
     if-nez v0, :cond_0
 
@@ -344,10 +344,10 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lorg/bouncycastle/crypto/wtn/ibl;->kAa:Ljava/math/BigInteger;
+    iput-object v0, p0, Lorg/bouncycastle/crypto/wtn/ibl;->iBa:Ljava/math/BigInteger;
 
     :cond_0
-    iget-object v0, p0, Lorg/bouncycastle/crypto/wtn/ibl;->kAa:Ljava/math/BigInteger;
+    iget-object v0, p0, Lorg/bouncycastle/crypto/wtn/ibl;->iBa:Ljava/math/BigInteger;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 

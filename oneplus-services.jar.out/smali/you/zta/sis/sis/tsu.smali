@@ -16,7 +16,7 @@
     return-void
 .end method
 
-.method public static Xk()[I
+.method public static al()[I
     .locals 1
 
     const/16 v0, 0xe

@@ -8,7 +8,7 @@
 
 
 # instance fields
-.field private lha:Lorg/bouncycastle/asn1/hmo;
+.field private kia:Lorg/bouncycastle/asn1/hmo;
 
 
 # direct methods
@@ -17,7 +17,7 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lorg/bouncycastle/asn1/s;->lha:Lorg/bouncycastle/asn1/hmo;
+    iput-object p1, p0, Lorg/bouncycastle/asn1/s;->kia:Lorg/bouncycastle/asn1/hmo;
 
     return-void
 .end method
@@ -35,9 +35,9 @@
     :try_start_0
     new-instance v0, Lorg/bouncycastle/asn1/V;
 
-    iget-object p0, p0, Lorg/bouncycastle/asn1/s;->lha:Lorg/bouncycastle/asn1/hmo;
+    iget-object p0, p0, Lorg/bouncycastle/asn1/s;->kia:Lorg/bouncycastle/asn1/hmo;
 
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/hmo;->Pi()Lorg/bouncycastle/asn1/cno;
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/hmo;->Ti()Lorg/bouncycastle/asn1/cno;
 
     move-result-object p0
 
@@ -69,7 +69,7 @@
         }
     .end annotation
 
-    iget-object p0, p0, Lorg/bouncycastle/asn1/s;->lha:Lorg/bouncycastle/asn1/hmo;
+    iget-object p0, p0, Lorg/bouncycastle/asn1/s;->kia:Lorg/bouncycastle/asn1/hmo;
 
     invoke-virtual {p0}, Lorg/bouncycastle/asn1/hmo;->readObject()Lorg/bouncycastle/asn1/ssp;
 

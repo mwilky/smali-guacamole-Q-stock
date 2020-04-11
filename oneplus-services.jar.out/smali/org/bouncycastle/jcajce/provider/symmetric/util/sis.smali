@@ -17,39 +17,39 @@
 
 
 # static fields
-.field private static final Qna:Ljava/lang/Class;
+.field private static final Poa:Ljava/lang/Class;
 
 
 # instance fields
-.field private Fna:Lorg/bouncycastle/crypto/rtg;
+.field private Eoa:Lorg/bouncycastle/crypto/rtg;
 
-.field private Gna:Lorg/bouncycastle/jcajce/provider/symmetric/util/kth;
+.field private Foa:Lorg/bouncycastle/jcajce/provider/symmetric/util/kth;
 
-.field private Hna:Lorg/bouncycastle/crypto/wtn/ire;
+.field private Goa:Lorg/bouncycastle/crypto/wtn/ire;
 
-.field private Ina:Lorg/bouncycastle/crypto/wtn/zta;
+.field private Hoa:Lorg/bouncycastle/crypto/wtn/zta;
 
-.field private Jna:I
+.field private Ioa:I
 
-.field private Kna:I
+.field private Joa:I
 
-.field private Lna:Z
+.field private Koa:Z
 
-.field private Mna:Z
+.field private Loa:Z
 
-.field private Nna:Ljavax/crypto/spec/PBEParameterSpec;
+.field private Moa:Ljavax/crypto/spec/PBEParameterSpec;
 
-.field private Ona:Ljava/lang/String;
+.field private Noa:Ljava/lang/String;
 
-.field private Pna:Ljava/lang/String;
+.field private Ooa:Ljava/lang/String;
 
 .field private digest:I
 
+.field private qoa:[Ljava/lang/Class;
+
+.field private rna:Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$sis;
+
 .field private scheme:I
-
-.field private sna:[Ljava/lang/Class;
-
-.field private tma:Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$sis;
 
 
 # direct methods
@@ -64,7 +64,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Qna:Ljava/lang/Class;
+    sput-object v0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Poa:Ljava/lang/Class;
 
     return-void
 .end method
@@ -78,7 +78,7 @@
 
     new-array v0, v0, [Ljava/lang/Class;
 
-    sget-object v1, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Qna:Ljava/lang/Class;
+    sget-object v1, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Poa:Ljava/lang/Class;
 
     const/4 v2, 0x0
 
@@ -96,43 +96,43 @@
 
     aput-object v1, v0, v4
 
-    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->sna:[Ljava/lang/Class;
+    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->qoa:[Ljava/lang/Class;
 
     const/4 v0, -0x1
 
     iput v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->scheme:I
 
-    iput v2, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Kna:I
+    iput v2, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Joa:I
 
-    iput-boolean v3, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Mna:Z
+    iput-boolean v3, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Loa:Z
 
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Nna:Ljavax/crypto/spec/PBEParameterSpec;
+    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Moa:Ljavax/crypto/spec/PBEParameterSpec;
 
-    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Ona:Ljava/lang/String;
+    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Noa:Ljava/lang/String;
 
-    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Pna:Ljava/lang/String;
+    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Ooa:Ljava/lang/String;
 
     invoke-interface {p1}, Lorg/bouncycastle/crypto/bio/zta;->b()Lorg/bouncycastle/crypto/rtg;
 
     move-result-object v0
 
-    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Fna:Lorg/bouncycastle/crypto/rtg;
+    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Eoa:Lorg/bouncycastle/crypto/rtg;
 
-    iget-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Fna:Lorg/bouncycastle/crypto/rtg;
+    iget-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Eoa:Lorg/bouncycastle/crypto/rtg;
 
     invoke-interface {v0}, Lorg/bouncycastle/crypto/rtg;->getBlockSize()I
 
     move-result v0
 
-    iput v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Kna:I
+    iput v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Joa:I
 
     new-instance v0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$zta;
 
     invoke-direct {v0, p1}, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$zta;-><init>(Lorg/bouncycastle/crypto/bio/zta;)V
 
-    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->tma:Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$sis;
+    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->rna:Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$sis;
 
     return-void
 .end method
@@ -146,7 +146,7 @@
 
     new-array v0, v0, [Ljava/lang/Class;
 
-    sget-object v1, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Qna:Ljava/lang/Class;
+    sget-object v1, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Poa:Ljava/lang/Class;
 
     const/4 v2, 0x0
 
@@ -164,39 +164,39 @@
 
     aput-object v1, v0, v4
 
-    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->sna:[Ljava/lang/Class;
+    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->qoa:[Ljava/lang/Class;
 
     const/4 v0, -0x1
 
     iput v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->scheme:I
 
-    iput v2, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Kna:I
+    iput v2, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Joa:I
 
-    iput-boolean v3, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Mna:Z
+    iput-boolean v3, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Loa:Z
 
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Nna:Ljavax/crypto/spec/PBEParameterSpec;
+    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Moa:Ljavax/crypto/spec/PBEParameterSpec;
 
-    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Ona:Ljava/lang/String;
+    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Noa:Ljava/lang/String;
 
-    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Pna:Ljava/lang/String;
+    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Ooa:Ljava/lang/String;
 
     invoke-interface {p1}, Lorg/bouncycastle/crypto/bio/zta;->b()Lorg/bouncycastle/crypto/rtg;
 
     move-result-object v0
 
-    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Fna:Lorg/bouncycastle/crypto/rtg;
+    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Eoa:Lorg/bouncycastle/crypto/rtg;
 
-    iput-boolean p2, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Mna:Z
+    iput-boolean p2, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Loa:Z
 
-    iput p3, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Kna:I
+    iput p3, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Joa:I
 
     new-instance p2, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$zta;
 
     invoke-direct {p2, p1}, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$zta;-><init>(Lorg/bouncycastle/crypto/bio/zta;)V
 
-    iput-object p2, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->tma:Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$sis;
+    iput-object p2, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->rna:Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$sis;
 
     return-void
 .end method
@@ -210,7 +210,7 @@
 
     new-array v0, v0, [Ljava/lang/Class;
 
-    sget-object v1, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Qna:Ljava/lang/Class;
+    sget-object v1, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Poa:Ljava/lang/Class;
 
     const/4 v2, 0x0
 
@@ -228,31 +228,31 @@
 
     aput-object v1, v0, v4
 
-    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->sna:[Ljava/lang/Class;
+    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->qoa:[Ljava/lang/Class;
 
     const/4 v0, -0x1
 
     iput v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->scheme:I
 
-    iput v2, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Kna:I
+    iput v2, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Joa:I
 
-    iput-boolean v3, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Mna:Z
+    iput-boolean v3, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Loa:Z
 
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Nna:Ljavax/crypto/spec/PBEParameterSpec;
+    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Moa:Ljavax/crypto/spec/PBEParameterSpec;
 
-    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Ona:Ljava/lang/String;
+    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Noa:Ljava/lang/String;
 
-    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Pna:Ljava/lang/String;
+    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Ooa:Ljava/lang/String;
 
-    iput-object p1, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Fna:Lorg/bouncycastle/crypto/rtg;
+    iput-object p1, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Eoa:Lorg/bouncycastle/crypto/rtg;
 
     new-instance v0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$you;
 
     invoke-direct {v0, p1}, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$you;-><init>(Lorg/bouncycastle/crypto/rtg;)V
 
-    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->tma:Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$sis;
+    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->rna:Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$sis;
 
     return-void
 .end method
@@ -276,7 +276,7 @@
 
     new-array v0, v0, [Ljava/lang/Class;
 
-    sget-object v1, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Qna:Ljava/lang/Class;
+    sget-object v1, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Poa:Ljava/lang/Class;
 
     const/4 v2, 0x0
 
@@ -294,39 +294,39 @@
 
     aput-object v1, v0, v4
 
-    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->sna:[Ljava/lang/Class;
+    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->qoa:[Ljava/lang/Class;
 
     const/4 v0, -0x1
 
     iput v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->scheme:I
 
-    iput v2, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Kna:I
+    iput v2, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Joa:I
 
-    iput-boolean v3, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Mna:Z
+    iput-boolean v3, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Loa:Z
 
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Nna:Ljavax/crypto/spec/PBEParameterSpec;
+    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Moa:Ljavax/crypto/spec/PBEParameterSpec;
 
-    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Ona:Ljava/lang/String;
+    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Noa:Ljava/lang/String;
 
-    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Pna:Ljava/lang/String;
+    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Ooa:Ljava/lang/String;
 
-    iput-object p1, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Fna:Lorg/bouncycastle/crypto/rtg;
+    iput-object p1, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Eoa:Lorg/bouncycastle/crypto/rtg;
 
     iput p2, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->scheme:I
 
     iput p3, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->digest:I
 
-    iput p4, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Jna:I
+    iput p4, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Ioa:I
 
-    iput p5, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Kna:I
+    iput p5, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Joa:I
 
     new-instance p2, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$you;
 
     invoke-direct {p2, p1}, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$you;-><init>(Lorg/bouncycastle/crypto/rtg;)V
 
-    iput-object p2, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->tma:Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$sis;
+    iput-object p2, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->rna:Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$sis;
 
     return-void
 .end method
@@ -340,7 +340,7 @@
 
     new-array v0, v0, [Ljava/lang/Class;
 
-    sget-object v1, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Qna:Ljava/lang/Class;
+    sget-object v1, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Poa:Ljava/lang/Class;
 
     const/4 v2, 0x0
 
@@ -358,37 +358,37 @@
 
     aput-object v1, v0, v4
 
-    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->sna:[Ljava/lang/Class;
+    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->qoa:[Ljava/lang/Class;
 
     const/4 v0, -0x1
 
     iput v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->scheme:I
 
-    iput v2, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Kna:I
+    iput v2, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Joa:I
 
-    iput-boolean v3, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Mna:Z
+    iput-boolean v3, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Loa:Z
 
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Nna:Ljavax/crypto/spec/PBEParameterSpec;
+    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Moa:Ljavax/crypto/spec/PBEParameterSpec;
 
-    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Ona:Ljava/lang/String;
+    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Noa:Ljava/lang/String;
 
-    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Pna:Ljava/lang/String;
+    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Ooa:Ljava/lang/String;
 
-    iput-object p1, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Fna:Lorg/bouncycastle/crypto/rtg;
+    iput-object p1, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Eoa:Lorg/bouncycastle/crypto/rtg;
 
-    iput-boolean p2, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Mna:Z
+    iput-boolean p2, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Loa:Z
 
     new-instance p2, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$you;
 
     invoke-direct {p2, p1}, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$you;-><init>(Lorg/bouncycastle/crypto/rtg;)V
 
-    iput-object p2, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->tma:Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$sis;
+    iput-object p2, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->rna:Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$sis;
 
     div-int/lit8 p3, p3, 0x8
 
-    iput p3, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Kna:I
+    iput p3, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Joa:I
 
     return-void
 .end method
@@ -412,7 +412,7 @@
 
     new-array v0, v0, [Ljava/lang/Class;
 
-    sget-object v1, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Qna:Ljava/lang/Class;
+    sget-object v1, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Poa:Ljava/lang/Class;
 
     const/4 v2, 0x0
 
@@ -430,41 +430,41 @@
 
     aput-object v1, v0, v4
 
-    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->sna:[Ljava/lang/Class;
+    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->qoa:[Ljava/lang/Class;
 
     const/4 v0, -0x1
 
     iput v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->scheme:I
 
-    iput v2, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Kna:I
+    iput v2, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Joa:I
 
-    iput-boolean v3, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Mna:Z
+    iput-boolean v3, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Loa:Z
 
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Nna:Ljavax/crypto/spec/PBEParameterSpec;
+    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Moa:Ljavax/crypto/spec/PBEParameterSpec;
 
-    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Ona:Ljava/lang/String;
+    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Noa:Ljava/lang/String;
 
-    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Pna:Ljava/lang/String;
+    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Ooa:Ljava/lang/String;
 
     invoke-virtual {p1}, Lorg/bouncycastle/crypto/ssp;->b()Lorg/bouncycastle/crypto/rtg;
 
     move-result-object v0
 
-    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Fna:Lorg/bouncycastle/crypto/rtg;
+    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Eoa:Lorg/bouncycastle/crypto/rtg;
 
     new-instance v0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$you;
 
     invoke-direct {v0, p1}, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$you;-><init>(Lorg/bouncycastle/crypto/ssp;)V
 
-    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->tma:Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$sis;
+    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->rna:Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$sis;
 
-    iput-boolean p2, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Mna:Z
+    iput-boolean p2, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Loa:Z
 
     div-int/lit8 p3, p3, 0x8
 
-    iput p3, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Kna:I
+    iput p3, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Joa:I
 
     return-void
 .end method
@@ -478,7 +478,7 @@
 
     new-array v0, v0, [Ljava/lang/Class;
 
-    sget-object v1, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Qna:Ljava/lang/Class;
+    sget-object v1, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Poa:Ljava/lang/Class;
 
     const/4 v2, 0x0
 
@@ -496,31 +496,31 @@
 
     aput-object v1, v0, v4
 
-    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->sna:[Ljava/lang/Class;
+    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->qoa:[Ljava/lang/Class;
 
     const/4 v0, -0x1
 
     iput v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->scheme:I
 
-    iput v2, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Kna:I
+    iput v2, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Joa:I
 
-    iput-boolean v3, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Mna:Z
+    iput-boolean v3, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Loa:Z
 
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Nna:Ljavax/crypto/spec/PBEParameterSpec;
+    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Moa:Ljavax/crypto/spec/PBEParameterSpec;
 
-    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Ona:Ljava/lang/String;
+    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Noa:Ljava/lang/String;
 
-    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Pna:Ljava/lang/String;
+    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Ooa:Ljava/lang/String;
 
     invoke-interface {p1}, Lorg/bouncycastle/jcajce/provider/symmetric/util/kth;->get()Lorg/bouncycastle/crypto/rtg;
 
     move-result-object v0
 
-    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Fna:Lorg/bouncycastle/crypto/rtg;
+    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Eoa:Lorg/bouncycastle/crypto/rtg;
 
-    iput-object p1, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Gna:Lorg/bouncycastle/jcajce/provider/symmetric/util/kth;
+    iput-object p1, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Foa:Lorg/bouncycastle/jcajce/provider/symmetric/util/kth;
 
     new-instance v0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$you;
 
@@ -530,12 +530,12 @@
 
     invoke-direct {v0, p1}, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$you;-><init>(Lorg/bouncycastle/crypto/rtg;)V
 
-    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->tma:Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$sis;
+    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->rna:Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$sis;
 
     return-void
 .end method
 
-.method private Rc(Ljava/lang/String;)Z
+.method private Uc(Ljava/lang/String;)Z
     .locals 0
 
     const-string p0, "CCM"
@@ -598,7 +598,7 @@
 
     invoke-direct {p2, v0, p1}, Lorg/bouncycastle/crypto/wtn/ire;-><init>(Lorg/bouncycastle/crypto/kth;[B)V
 
-    iput-object p2, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Hna:Lorg/bouncycastle/crypto/wtn/ire;
+    iput-object p2, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Goa:Lorg/bouncycastle/crypto/wtn/ire;
 
     goto :goto_0
 
@@ -617,10 +617,10 @@
 
     invoke-direct {v0, p2, p1}, Lorg/bouncycastle/crypto/wtn/ire;-><init>(Lorg/bouncycastle/crypto/kth;[B)V
 
-    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Hna:Lorg/bouncycastle/crypto/wtn/ire;
+    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Goa:Lorg/bouncycastle/crypto/wtn/ire;
 
     :goto_0
-    iget-object p2, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Hna:Lorg/bouncycastle/crypto/wtn/ire;
+    iget-object p2, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Goa:Lorg/bouncycastle/crypto/wtn/ire;
 
     :cond_1
     return-object p2
@@ -635,7 +635,7 @@
 
     check-cast p1, Lorg/bouncycastle/jcajce/provider/symmetric/util/BCPBEKey;
 
-    invoke-virtual {p1}, Lorg/bouncycastle/jcajce/provider/symmetric/util/BCPBEKey;->Xd()Lorg/bouncycastle/crypto/kth;
+    invoke-virtual {p1}, Lorg/bouncycastle/jcajce/provider/symmetric/util/BCPBEKey;->ae()Lorg/bouncycastle/crypto/kth;
 
     move-result-object p0
 
@@ -679,7 +679,7 @@
     if-eqz p3, :cond_0
 
     :try_start_0
-    iget-object v2, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->tma:Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$sis;
+    iget-object v2, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->rna:Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$sis;
 
     move-object v3, p1
 
@@ -701,7 +701,7 @@
     const/4 p1, 0x0
 
     :goto_0
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->tma:Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$sis;
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->rna:Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$sis;
 
     add-int/2addr p5, p1
 
@@ -771,7 +771,7 @@
 
     if-eqz p3, :cond_0
 
-    iget-object v1, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->tma:Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$sis;
+    iget-object v1, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->rna:Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$sis;
 
     const/4 v6, 0x0
 
@@ -794,7 +794,7 @@
 
     :goto_0
     :try_start_0
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->tma:Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$sis;
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->rna:Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$sis;
 
     invoke-interface {p0, v0, p1}, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$sis;->doFinal([BI)I
 
@@ -834,7 +834,7 @@
 .method protected engineGetBlockSize()I
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Fna:Lorg/bouncycastle/crypto/rtg;
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Eoa:Lorg/bouncycastle/crypto/rtg;
 
     invoke-interface {p0}, Lorg/bouncycastle/crypto/rtg;->getBlockSize()I
 
@@ -846,7 +846,7 @@
 .method protected engineGetIV()[B
     .locals 1
 
-    iget-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Ina:Lorg/bouncycastle/crypto/wtn/zta;
+    iget-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Hoa:Lorg/bouncycastle/crypto/wtn/zta;
 
     if-eqz v0, :cond_0
 
@@ -857,7 +857,7 @@
     return-object p0
 
     :cond_0
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Hna:Lorg/bouncycastle/crypto/wtn/ire;
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Goa:Lorg/bouncycastle/crypto/wtn/ire;
 
     if-eqz p0, :cond_1
 
@@ -891,7 +891,7 @@
 .method protected engineGetOutputSize(I)I
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->tma:Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$sis;
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->rna:Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$sis;
 
     invoke-interface {p0, p1}, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$sis;->getOutputSize(I)I
 
@@ -903,26 +903,26 @@
 .method protected engineGetParameters()Ljava/security/AlgorithmParameters;
     .locals 4
 
-    iget-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/BaseWrapCipher;->tna:Ljava/security/AlgorithmParameters;
+    iget-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/BaseWrapCipher;->roa:Ljava/security/AlgorithmParameters;
 
     if-nez v0, :cond_3
 
-    iget-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Nna:Ljavax/crypto/spec/PBEParameterSpec;
+    iget-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Moa:Ljavax/crypto/spec/PBEParameterSpec;
 
     if-eqz v0, :cond_0
 
     :try_start_0
-    iget-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Ona:Ljava/lang/String;
+    iget-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Noa:Ljava/lang/String;
 
-    invoke-virtual {p0, v0}, Lorg/bouncycastle/jcajce/provider/symmetric/util/BaseWrapCipher;->ra(Ljava/lang/String;)Ljava/security/AlgorithmParameters;
+    invoke-virtual {p0, v0}, Lorg/bouncycastle/jcajce/provider/symmetric/util/BaseWrapCipher;->sa(Ljava/lang/String;)Ljava/security/AlgorithmParameters;
 
     move-result-object v0
 
-    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/BaseWrapCipher;->tna:Ljava/security/AlgorithmParameters;
+    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/BaseWrapCipher;->roa:Ljava/security/AlgorithmParameters;
 
-    iget-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/BaseWrapCipher;->tna:Ljava/security/AlgorithmParameters;
+    iget-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/BaseWrapCipher;->roa:Ljava/security/AlgorithmParameters;
 
-    iget-object v1, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Nna:Ljavax/crypto/spec/PBEParameterSpec;
+    iget-object v1, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Moa:Ljavax/crypto/spec/PBEParameterSpec;
 
     invoke-virtual {v0, v1}, Ljava/security/AlgorithmParameters;->init(Ljava/security/spec/AlgorithmParameterSpec;)V
     :try_end_0
@@ -936,30 +936,30 @@
     return-object p0
 
     :cond_0
-    iget-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Ina:Lorg/bouncycastle/crypto/wtn/zta;
+    iget-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Hoa:Lorg/bouncycastle/crypto/wtn/zta;
 
     if-eqz v0, :cond_1
 
     :try_start_1
     const-string v0, "GCM"
 
-    invoke-virtual {p0, v0}, Lorg/bouncycastle/jcajce/provider/symmetric/util/BaseWrapCipher;->ra(Ljava/lang/String;)Ljava/security/AlgorithmParameters;
+    invoke-virtual {p0, v0}, Lorg/bouncycastle/jcajce/provider/symmetric/util/BaseWrapCipher;->sa(Ljava/lang/String;)Ljava/security/AlgorithmParameters;
 
     move-result-object v0
 
-    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/BaseWrapCipher;->tna:Ljava/security/AlgorithmParameters;
+    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/BaseWrapCipher;->roa:Ljava/security/AlgorithmParameters;
 
-    iget-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/BaseWrapCipher;->tna:Ljava/security/AlgorithmParameters;
+    iget-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/BaseWrapCipher;->roa:Ljava/security/AlgorithmParameters;
 
     new-instance v1, Lorg/bouncycastle/asn1/you/kth;
 
-    iget-object v2, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Ina:Lorg/bouncycastle/crypto/wtn/zta;
+    iget-object v2, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Hoa:Lorg/bouncycastle/crypto/wtn/zta;
 
     invoke-virtual {v2}, Lorg/bouncycastle/crypto/wtn/zta;->getNonce()[B
 
     move-result-object v2
 
-    iget-object v3, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Ina:Lorg/bouncycastle/crypto/wtn/zta;
+    iget-object v3, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Hoa:Lorg/bouncycastle/crypto/wtn/zta;
 
     invoke-virtual {v3}, Lorg/bouncycastle/crypto/wtn/zta;->you()I
 
@@ -993,11 +993,11 @@
     throw v0
 
     :cond_1
-    iget-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Hna:Lorg/bouncycastle/crypto/wtn/ire;
+    iget-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Goa:Lorg/bouncycastle/crypto/wtn/ire;
 
     if-eqz v0, :cond_3
 
-    iget-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->tma:Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$sis;
+    iget-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->rna:Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$sis;
 
     invoke-interface {v0}, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$sis;->b()Lorg/bouncycastle/crypto/rtg;
 
@@ -1027,17 +1027,17 @@
 
     :cond_2
     :try_start_2
-    invoke-virtual {p0, v0}, Lorg/bouncycastle/jcajce/provider/symmetric/util/BaseWrapCipher;->ra(Ljava/lang/String;)Ljava/security/AlgorithmParameters;
+    invoke-virtual {p0, v0}, Lorg/bouncycastle/jcajce/provider/symmetric/util/BaseWrapCipher;->sa(Ljava/lang/String;)Ljava/security/AlgorithmParameters;
 
     move-result-object v0
 
-    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/BaseWrapCipher;->tna:Ljava/security/AlgorithmParameters;
+    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/BaseWrapCipher;->roa:Ljava/security/AlgorithmParameters;
 
-    iget-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/BaseWrapCipher;->tna:Ljava/security/AlgorithmParameters;
+    iget-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/BaseWrapCipher;->roa:Ljava/security/AlgorithmParameters;
 
     new-instance v1, Ljavax/crypto/spec/IvParameterSpec;
 
-    iget-object v2, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Hna:Lorg/bouncycastle/crypto/wtn/ire;
+    iget-object v2, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Goa:Lorg/bouncycastle/crypto/wtn/ire;
 
     invoke-virtual {v2}, Lorg/bouncycastle/crypto/wtn/ire;->getIV()[B
 
@@ -1066,7 +1066,7 @@
 
     :cond_3
     :goto_0
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/BaseWrapCipher;->tna:Ljava/security/AlgorithmParameters;
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/BaseWrapCipher;->roa:Ljava/security/AlgorithmParameters;
 
     return-object p0
 .end method
@@ -1087,7 +1087,7 @@
     const/4 v1, 0x0
 
     :goto_0
-    iget-object v2, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->sna:[Ljava/lang/Class;
+    iget-object v2, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->qoa:[Ljava/lang/Class;
 
     array-length v3, v2
 
@@ -1152,7 +1152,7 @@
     :goto_3
     invoke-virtual {p0, p1, p2, v0, p4}, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->engineInit(ILjava/security/Key;Ljava/security/spec/AlgorithmParameterSpec;Ljava/security/SecureRandom;)V
 
-    iput-object p3, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/BaseWrapCipher;->tna:Ljava/security/AlgorithmParameters;
+    iput-object p3, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/BaseWrapCipher;->roa:Ljava/security/AlgorithmParameters;
 
     return-void
 .end method
@@ -1209,13 +1209,13 @@
 
     const/4 v5, 0x0
 
-    iput-object v5, v0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Nna:Ljavax/crypto/spec/PBEParameterSpec;
+    iput-object v5, v0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Moa:Ljavax/crypto/spec/PBEParameterSpec;
 
-    iput-object v5, v0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Ona:Ljava/lang/String;
+    iput-object v5, v0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Noa:Ljava/lang/String;
 
-    iput-object v5, v0, Lorg/bouncycastle/jcajce/provider/symmetric/util/BaseWrapCipher;->tna:Ljava/security/AlgorithmParameters;
+    iput-object v5, v0, Lorg/bouncycastle/jcajce/provider/symmetric/util/BaseWrapCipher;->roa:Ljava/security/AlgorithmParameters;
 
-    iput-object v5, v0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Ina:Lorg/bouncycastle/crypto/wtn/zta;
+    iput-object v5, v0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Hoa:Lorg/bouncycastle/crypto/wtn/zta;
 
     instance-of v6, v2, Ljavax/crypto/SecretKey;
 
@@ -1255,7 +1255,7 @@
     :cond_1
     if-nez v3, :cond_3
 
-    iget-object v5, v0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Fna:Lorg/bouncycastle/crypto/rtg;
+    iget-object v5, v0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Eoa:Lorg/bouncycastle/crypto/rtg;
 
     invoke-interface {v5}, Lorg/bouncycastle/crypto/rtg;->vju()Ljava/lang/String;
 
@@ -1316,14 +1316,14 @@
 
     check-cast v10, Ljavax/crypto/spec/PBEParameterSpec;
 
-    iput-object v10, v0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Nna:Ljavax/crypto/spec/PBEParameterSpec;
+    iput-object v10, v0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Moa:Ljavax/crypto/spec/PBEParameterSpec;
 
     :cond_5
     instance-of v10, v5, Ljavax/crypto/interfaces/PBEKey;
 
     if-eqz v10, :cond_7
 
-    iget-object v11, v0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Nna:Ljavax/crypto/spec/PBEParameterSpec;
+    iget-object v11, v0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Moa:Ljavax/crypto/spec/PBEParameterSpec;
 
     if-nez v11, :cond_7
 
@@ -1349,7 +1349,7 @@
 
     invoke-direct {v12, v13, v11}, Ljavax/crypto/spec/PBEParameterSpec;-><init>([BI)V
 
-    iput-object v12, v0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Nna:Ljavax/crypto/spec/PBEParameterSpec;
+    iput-object v12, v0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Moa:Ljavax/crypto/spec/PBEParameterSpec;
 
     goto :goto_1
 
@@ -1364,7 +1364,7 @@
 
     :cond_7
     :goto_1
-    iget-object v11, v0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Nna:Ljavax/crypto/spec/PBEParameterSpec;
+    iget-object v11, v0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Moa:Ljavax/crypto/spec/PBEParameterSpec;
 
     if-nez v11, :cond_9
 
@@ -1389,7 +1389,7 @@
 
     check-cast v5, Lorg/bouncycastle/jcajce/provider/symmetric/util/BCPBEKey;
 
-    invoke-virtual {v5}, Lorg/bouncycastle/jcajce/provider/symmetric/util/BCPBEKey;->Xd()Lorg/bouncycastle/crypto/kth;
+    invoke-virtual {v5}, Lorg/bouncycastle/jcajce/provider/symmetric/util/BCPBEKey;->ae()Lorg/bouncycastle/crypto/kth;
 
     move-result-object v5
 
@@ -1428,15 +1428,15 @@
 
     iget v12, v0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->digest:I
 
-    iget v13, v0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Jna:I
+    iget v13, v0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Ioa:I
 
-    iget v5, v0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Kna:I
+    iget v5, v0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Joa:I
 
     mul-int/lit8 v14, v5, 0x8
 
-    iget-object v15, v0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Nna:Ljavax/crypto/spec/PBEParameterSpec;
+    iget-object v15, v0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Moa:Ljavax/crypto/spec/PBEParameterSpec;
 
-    iget-object v5, v0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->tma:Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$sis;
+    iget-object v5, v0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->rna:Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$sis;
 
     invoke-interface {v5}, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$sis;->vju()Ljava/lang/String;
 
@@ -1455,7 +1455,7 @@
 
     check-cast v7, Lorg/bouncycastle/crypto/wtn/ire;
 
-    iput-object v7, v0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Hna:Lorg/bouncycastle/crypto/wtn/ire;
+    iput-object v7, v0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Goa:Lorg/bouncycastle/crypto/wtn/ire;
 
     goto/16 :goto_7
 
@@ -1477,13 +1477,13 @@
 
     check-cast v5, Lorg/bouncycastle/jcajce/provider/symmetric/util/BCPBEKey;
 
-    invoke-virtual {v5}, Lorg/bouncycastle/jcajce/provider/symmetric/util/BCPBEKey;->Li()Lorg/bouncycastle/asn1/bvj;
+    invoke-virtual {v5}, Lorg/bouncycastle/jcajce/provider/symmetric/util/BCPBEKey;->Pi()Lorg/bouncycastle/asn1/bvj;
 
     move-result-object v7
 
     if-eqz v7, :cond_e
 
-    invoke-virtual {v5}, Lorg/bouncycastle/jcajce/provider/symmetric/util/BCPBEKey;->Li()Lorg/bouncycastle/asn1/bvj;
+    invoke-virtual {v5}, Lorg/bouncycastle/jcajce/provider/symmetric/util/BCPBEKey;->Pi()Lorg/bouncycastle/asn1/bvj;
 
     move-result-object v7
 
@@ -1499,15 +1499,15 @@
     move-result-object v7
 
     :goto_4
-    iput-object v7, v0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Ona:Ljava/lang/String;
+    iput-object v7, v0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Noa:Ljava/lang/String;
 
-    invoke-virtual {v5}, Lorg/bouncycastle/jcajce/provider/symmetric/util/BCPBEKey;->Xd()Lorg/bouncycastle/crypto/kth;
+    invoke-virtual {v5}, Lorg/bouncycastle/jcajce/provider/symmetric/util/BCPBEKey;->ae()Lorg/bouncycastle/crypto/kth;
 
     move-result-object v7
 
     if-eqz v7, :cond_f
 
-    invoke-virtual {v5}, Lorg/bouncycastle/jcajce/provider/symmetric/util/BCPBEKey;->Xd()Lorg/bouncycastle/crypto/kth;
+    invoke-virtual {v5}, Lorg/bouncycastle/jcajce/provider/symmetric/util/BCPBEKey;->ae()Lorg/bouncycastle/crypto/kth;
 
     move-result-object v5
 
@@ -1526,9 +1526,9 @@
 
     check-cast v7, Ljavax/crypto/spec/PBEParameterSpec;
 
-    iput-object v7, v0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Nna:Ljavax/crypto/spec/PBEParameterSpec;
+    iput-object v7, v0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Moa:Ljavax/crypto/spec/PBEParameterSpec;
 
-    iget-object v7, v0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Nna:Ljavax/crypto/spec/PBEParameterSpec;
+    iget-object v7, v0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Moa:Ljavax/crypto/spec/PBEParameterSpec;
 
     invoke-virtual {v7}, Ljavax/crypto/spec/PBEParameterSpec;->getSalt()[B
 
@@ -1538,7 +1538,7 @@
 
     if-eqz v7, :cond_10
 
-    iget-object v7, v0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Nna:Ljavax/crypto/spec/PBEParameterSpec;
+    iget-object v7, v0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Moa:Ljavax/crypto/spec/PBEParameterSpec;
 
     invoke-virtual {v7}, Ljavax/crypto/spec/PBEParameterSpec;->getIterationCount()I
 
@@ -1552,7 +1552,7 @@
 
     move-result-object v11
 
-    invoke-virtual {v5}, Lorg/bouncycastle/jcajce/provider/symmetric/util/BCPBEKey;->Li()Lorg/bouncycastle/asn1/bvj;
+    invoke-virtual {v5}, Lorg/bouncycastle/jcajce/provider/symmetric/util/BCPBEKey;->Pi()Lorg/bouncycastle/asn1/bvj;
 
     move-result-object v12
 
@@ -1560,7 +1560,7 @@
 
     move-result v13
 
-    invoke-virtual {v5}, Lorg/bouncycastle/jcajce/provider/symmetric/util/BCPBEKey;->Gf()I
+    invoke-virtual {v5}, Lorg/bouncycastle/jcajce/provider/symmetric/util/BCPBEKey;->Kf()I
 
     move-result v14
 
@@ -1568,7 +1568,7 @@
 
     move-result v15
 
-    invoke-virtual {v5}, Lorg/bouncycastle/jcajce/provider/symmetric/util/BCPBEKey;->wj()I
+    invoke-virtual {v5}, Lorg/bouncycastle/jcajce/provider/symmetric/util/BCPBEKey;->Aj()I
 
     move-result v16
 
@@ -1578,13 +1578,13 @@
 
     move-result-object v8
 
-    iget-object v9, v0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Nna:Ljavax/crypto/spec/PBEParameterSpec;
+    iget-object v9, v0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Moa:Ljavax/crypto/spec/PBEParameterSpec;
 
     invoke-virtual {v9}, Ljavax/crypto/spec/PBEParameterSpec;->getSalt()[B
 
     move-result-object v9
 
-    iget-object v6, v0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Nna:Ljavax/crypto/spec/PBEParameterSpec;
+    iget-object v6, v0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Moa:Ljavax/crypto/spec/PBEParameterSpec;
 
     invoke-virtual {v6}, Ljavax/crypto/spec/PBEParameterSpec;->getIterationCount()I
 
@@ -1609,7 +1609,7 @@
     move-object v5, v7
 
     :cond_10
-    iget-object v6, v0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->tma:Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$sis;
+    iget-object v6, v0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->rna:Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$sis;
 
     invoke-interface {v6}, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$sis;->b()Lorg/bouncycastle/crypto/rtg;
 
@@ -1633,7 +1633,7 @@
 
     check-cast v6, Lorg/bouncycastle/crypto/wtn/ire;
 
-    iput-object v6, v0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Hna:Lorg/bouncycastle/crypto/wtn/ire;
+    iput-object v6, v0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Goa:Lorg/bouncycastle/crypto/wtn/ire;
 
     goto :goto_7
 
@@ -1659,13 +1659,13 @@
 
     check-cast v6, Ljavax/crypto/spec/PBEParameterSpec;
 
-    iput-object v6, v0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Nna:Ljavax/crypto/spec/PBEParameterSpec;
+    iput-object v6, v0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Moa:Ljavax/crypto/spec/PBEParameterSpec;
 
     instance-of v6, v5, Lorg/bouncycastle/jcajce/PKCS12KeyWithParameters;
 
     if-eqz v6, :cond_13
 
-    iget-object v6, v0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Nna:Ljavax/crypto/spec/PBEParameterSpec;
+    iget-object v6, v0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Moa:Ljavax/crypto/spec/PBEParameterSpec;
 
     if-nez v6, :cond_13
 
@@ -1681,7 +1681,7 @@
 
     invoke-direct {v6, v7, v8}, Ljavax/crypto/spec/PBEParameterSpec;-><init>([BI)V
 
-    iput-object v6, v0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Nna:Ljavax/crypto/spec/PBEParameterSpec;
+    iput-object v6, v0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Moa:Ljavax/crypto/spec/PBEParameterSpec;
 
     :cond_13
     invoke-interface {v5}, Ljavax/crypto/interfaces/PBEKey;->getEncoded()[B
@@ -1692,15 +1692,15 @@
 
     iget v11, v0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->digest:I
 
-    iget v12, v0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Jna:I
+    iget v12, v0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Ioa:I
 
-    iget v5, v0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Kna:I
+    iget v5, v0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Joa:I
 
     mul-int/lit8 v13, v5, 0x8
 
-    iget-object v14, v0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Nna:Ljavax/crypto/spec/PBEParameterSpec;
+    iget-object v14, v0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Moa:Ljavax/crypto/spec/PBEParameterSpec;
 
-    iget-object v5, v0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->tma:Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$sis;
+    iget-object v5, v0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->rna:Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$sis;
 
     invoke-interface {v5}, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$sis;->vju()Ljava/lang/String;
 
@@ -1749,15 +1749,15 @@
 
     if-eqz v6, :cond_19
 
-    iget-object v6, v0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Pna:Ljava/lang/String;
+    iget-object v6, v0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Ooa:Ljava/lang/String;
 
-    invoke-direct {v0, v6}, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Rc(Ljava/lang/String;)Z
+    invoke-direct {v0, v6}, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Uc(Ljava/lang/String;)Z
 
     move-result v6
 
     if-nez v6, :cond_17
 
-    iget-object v6, v0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->tma:Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$sis;
+    iget-object v6, v0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->rna:Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$sis;
 
     instance-of v6, v6, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$zta;
 
@@ -1793,7 +1793,7 @@
 
     new-instance v6, Lorg/bouncycastle/crypto/wtn/zta;
 
-    invoke-virtual {v3}, Lorg/bouncycastle/jcajce/sis/zta;->kg()I
+    invoke-virtual {v3}, Lorg/bouncycastle/jcajce/sis/zta;->og()I
 
     move-result v8
 
@@ -1801,13 +1801,13 @@
 
     move-result-object v9
 
-    invoke-virtual {v3}, Lorg/bouncycastle/jcajce/sis/zta;->jg()[B
+    invoke-virtual {v3}, Lorg/bouncycastle/jcajce/sis/zta;->ng()[B
 
     move-result-object v3
 
     invoke-direct {v6, v5, v8, v9, v3}, Lorg/bouncycastle/crypto/wtn/zta;-><init>(Lorg/bouncycastle/crypto/wtn/cjf;I[B[B)V
 
-    iput-object v6, v0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Ina:Lorg/bouncycastle/crypto/wtn/zta;
+    iput-object v6, v0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Hoa:Lorg/bouncycastle/crypto/wtn/zta;
 
     move-object v5, v6
 
@@ -1818,7 +1818,7 @@
 
     if-eqz v6, :cond_1f
 
-    iget v6, v0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Kna:I
+    iget v6, v0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Joa:I
 
     if-eqz v6, :cond_1d
 
@@ -1830,17 +1830,17 @@
 
     array-length v6, v6
 
-    iget v8, v0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Kna:I
+    iget v8, v0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Joa:I
 
     if-eq v6, v8, :cond_1b
 
-    iget-object v6, v0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->tma:Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$sis;
+    iget-object v6, v0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->rna:Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$sis;
 
     instance-of v6, v6, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$zta;
 
     if-nez v6, :cond_1b
 
-    iget-boolean v6, v0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Mna:Z
+    iget-boolean v6, v0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Loa:Z
 
     if-nez v6, :cond_1a
 
@@ -1857,7 +1857,7 @@
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget v0, v0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Kna:I
+    iget v0, v0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Joa:I
 
     invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -1907,12 +1907,12 @@
     :goto_a
     move-object v5, v6
 
-    iput-object v5, v0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Hna:Lorg/bouncycastle/crypto/wtn/ire;
+    iput-object v5, v0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Goa:Lorg/bouncycastle/crypto/wtn/ire;
 
     goto/16 :goto_c
 
     :cond_1d
-    iget-object v3, v0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Pna:Ljava/lang/String;
+    iget-object v3, v0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Ooa:Ljava/lang/String;
 
     if-eqz v3, :cond_25
 
@@ -1936,7 +1936,7 @@
     throw v0
 
     :cond_1f
-    sget-object v6, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Qna:Ljava/lang/Class;
+    sget-object v6, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Poa:Ljava/lang/Class;
 
     if-eqz v6, :cond_23
 
@@ -1946,15 +1946,15 @@
 
     if-eqz v6, :cond_23
 
-    iget-object v6, v0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Pna:Ljava/lang/String;
+    iget-object v6, v0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Ooa:Ljava/lang/String;
 
-    invoke-direct {v0, v6}, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Rc(Ljava/lang/String;)Z
+    invoke-direct {v0, v6}, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Uc(Ljava/lang/String;)Z
 
     move-result v6
 
     if-nez v6, :cond_21
 
-    iget-object v6, v0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->tma:Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$sis;
+    iget-object v6, v0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->rna:Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$sis;
 
     instance-of v6, v6, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$zta;
 
@@ -1974,7 +1974,7 @@
     :cond_21
     :goto_b
     :try_start_1
-    sget-object v6, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Qna:Ljava/lang/Class;
+    sget-object v6, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Poa:Ljava/lang/Class;
 
     const-string v8, "getTLen"
 
@@ -1984,7 +1984,7 @@
 
     move-result-object v6
 
-    sget-object v8, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Qna:Ljava/lang/Class;
+    sget-object v8, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Poa:Ljava/lang/Class;
 
     const-string v9, "getIV"
 
@@ -2031,7 +2031,7 @@
 
     invoke-direct {v9, v5, v6, v3}, Lorg/bouncycastle/crypto/wtn/zta;-><init>(Lorg/bouncycastle/crypto/wtn/cjf;I[B)V
 
-    iput-object v9, v0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Ina:Lorg/bouncycastle/crypto/wtn/zta;
+    iput-object v9, v0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Hoa:Lorg/bouncycastle/crypto/wtn/zta;
     :try_end_1
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_1
 
@@ -2068,7 +2068,7 @@
 
     :cond_25
     :goto_c
-    iget v3, v0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Kna:I
+    iget v3, v0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Joa:I
 
     const/4 v6, 0x3
 
@@ -2084,7 +2084,7 @@
 
     if-nez v4, :cond_26
 
-    invoke-static {}, Lorg/bouncycastle/crypto/igw;->Ui()Ljava/security/SecureRandom;
+    invoke-static {}, Lorg/bouncycastle/crypto/igw;->Yi()Ljava/security/SecureRandom;
 
     move-result-object v3
 
@@ -2117,7 +2117,7 @@
     goto :goto_e
 
     :cond_27
-    iget-object v3, v0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->tma:Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$sis;
+    iget-object v3, v0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->rna:Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$sis;
 
     invoke-interface {v3}, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$sis;->b()Lorg/bouncycastle/crypto/rtg;
 
@@ -2175,7 +2175,7 @@
 
     new-instance v2, Lorg/bouncycastle/crypto/wtn/ire;
 
-    iget v3, v0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Kna:I
+    iget v3, v0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Joa:I
 
     new-array v3, v3, [B
 
@@ -2194,7 +2194,7 @@
 
     :cond_29
     :goto_e
-    iget v15, v0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Kna:I
+    iget v15, v0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Joa:I
 
     new-array v15, v15, [B
 
@@ -2247,7 +2247,7 @@
     invoke-direct {v2, v5, v15}, Lorg/bouncycastle/crypto/wtn/ire;-><init>(Lorg/bouncycastle/crypto/kth;[B)V
 
     :goto_10
-    iput-object v2, v0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Hna:Lorg/bouncycastle/crypto/wtn/ire;
+    iput-object v2, v0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Goa:Lorg/bouncycastle/crypto/wtn/ire;
 
     goto :goto_11
 
@@ -2257,7 +2257,7 @@
     :goto_11
     if-eqz v4, :cond_2c
 
-    iget-boolean v3, v0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Lna:Z
+    iget-boolean v3, v0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Koa:Z
 
     if-eqz v3, :cond_2c
 
@@ -2317,31 +2317,31 @@
 
     :cond_2e
     :goto_12
-    iget-object v1, v0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->tma:Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$sis;
+    iget-object v1, v0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->rna:Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$sis;
 
     invoke-interface {v1, v7, v2}, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$sis;->zta(ZLorg/bouncycastle/crypto/kth;)V
 
     goto :goto_13
 
     :cond_2f
-    iget-object v1, v0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->tma:Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$sis;
+    iget-object v1, v0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->rna:Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$sis;
 
     const/4 v3, 0x1
 
     invoke-interface {v1, v3, v2}, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$sis;->zta(ZLorg/bouncycastle/crypto/kth;)V
 
     :goto_13
-    iget-object v1, v0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->tma:Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$sis;
+    iget-object v1, v0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->rna:Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$sis;
 
     instance-of v1, v1, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$zta;
 
     if-eqz v1, :cond_30
 
-    iget-object v1, v0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Ina:Lorg/bouncycastle/crypto/wtn/zta;
+    iget-object v1, v0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Hoa:Lorg/bouncycastle/crypto/wtn/zta;
 
     if-nez v1, :cond_30
 
-    iget-object v1, v0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->tma:Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$sis;
+    iget-object v1, v0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->rna:Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$sis;
 
     check-cast v1, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$zta;
 
@@ -2351,7 +2351,7 @@
 
     new-instance v2, Lorg/bouncycastle/crypto/wtn/zta;
 
-    iget-object v3, v0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Hna:Lorg/bouncycastle/crypto/wtn/ire;
+    iget-object v3, v0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Goa:Lorg/bouncycastle/crypto/wtn/ire;
 
     invoke-virtual {v3}, Lorg/bouncycastle/crypto/wtn/ire;->getParameters()Lorg/bouncycastle/crypto/kth;
 
@@ -2367,7 +2367,7 @@
 
     mul-int/lit8 v1, v1, 0x8
 
-    iget-object v4, v0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Hna:Lorg/bouncycastle/crypto/wtn/ire;
+    iget-object v4, v0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Goa:Lorg/bouncycastle/crypto/wtn/ire;
 
     invoke-virtual {v4}, Lorg/bouncycastle/crypto/wtn/ire;->getIV()[B
 
@@ -2375,7 +2375,7 @@
 
     invoke-direct {v2, v3, v1, v4}, Lorg/bouncycastle/crypto/wtn/zta;-><init>(Lorg/bouncycastle/crypto/wtn/cjf;I[B)V
 
-    iput-object v2, v0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Ina:Lorg/bouncycastle/crypto/wtn/zta;
+    iput-object v2, v0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Hoa:Lorg/bouncycastle/crypto/wtn/zta;
     :try_end_2
     .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_2
 
@@ -2413,9 +2413,9 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Pna:Ljava/lang/String;
+    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Ooa:Ljava/lang/String;
 
-    iget-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Pna:Ljava/lang/String;
+    iget-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Ooa:Ljava/lang/String;
 
     const-string v1, "ECB"
 
@@ -2427,21 +2427,21 @@
 
     if-eqz v0, :cond_0
 
-    iput v1, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Kna:I
+    iput v1, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Joa:I
 
     new-instance p1, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$you;
 
-    iget-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Fna:Lorg/bouncycastle/crypto/rtg;
+    iget-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Eoa:Lorg/bouncycastle/crypto/rtg;
 
     invoke-direct {p1, v0}, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$you;-><init>(Lorg/bouncycastle/crypto/rtg;)V
 
     :goto_0
-    iput-object p1, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->tma:Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$sis;
+    iput-object p1, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->rna:Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$sis;
 
     goto/16 :goto_2
 
     :cond_0
-    iget-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Pna:Ljava/lang/String;
+    iget-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Ooa:Ljava/lang/String;
 
     const-string v2, "CBC"
 
@@ -2451,19 +2451,19 @@
 
     if-eqz v0, :cond_1
 
-    iget-object p1, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Fna:Lorg/bouncycastle/crypto/rtg;
+    iget-object p1, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Eoa:Lorg/bouncycastle/crypto/rtg;
 
     invoke-interface {p1}, Lorg/bouncycastle/crypto/rtg;->getBlockSize()I
 
     move-result p1
 
-    iput p1, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Kna:I
+    iput p1, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Joa:I
 
     new-instance p1, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$you;
 
     new-instance v0, Lorg/bouncycastle/crypto/bio/you;
 
-    iget-object v1, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Fna:Lorg/bouncycastle/crypto/rtg;
+    iget-object v1, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Eoa:Lorg/bouncycastle/crypto/rtg;
 
     invoke-direct {v0, v1}, Lorg/bouncycastle/crypto/bio/you;-><init>(Lorg/bouncycastle/crypto/rtg;)V
 
@@ -2472,7 +2472,7 @@
     goto :goto_0
 
     :cond_1
-    iget-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Pna:Ljava/lang/String;
+    iget-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Ooa:Ljava/lang/String;
 
     const-string v2, "OFB"
 
@@ -2484,15 +2484,15 @@
 
     if-eqz v0, :cond_3
 
-    iget-object p1, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Fna:Lorg/bouncycastle/crypto/rtg;
+    iget-object p1, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Eoa:Lorg/bouncycastle/crypto/rtg;
 
     invoke-interface {p1}, Lorg/bouncycastle/crypto/rtg;->getBlockSize()I
 
     move-result p1
 
-    iput p1, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Kna:I
+    iput p1, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Joa:I
 
-    iget-object p1, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Pna:Ljava/lang/String;
+    iget-object p1, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Ooa:Ljava/lang/String;
 
     invoke-virtual {p1}, Ljava/lang/String;->length()I
 
@@ -2500,7 +2500,7 @@
 
     if-eq p1, v2, :cond_2
 
-    iget-object p1, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Pna:Ljava/lang/String;
+    iget-object p1, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Ooa:Ljava/lang/String;
 
     invoke-virtual {p1, v2}, Ljava/lang/String;->substring(I)Ljava/lang/String;
 
@@ -2514,14 +2514,14 @@
 
     new-instance v1, Lorg/bouncycastle/crypto/bio/cno;
 
-    iget-object v2, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Fna:Lorg/bouncycastle/crypto/rtg;
+    iget-object v2, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Eoa:Lorg/bouncycastle/crypto/rtg;
 
     invoke-direct {v1, v2, p1}, Lorg/bouncycastle/crypto/bio/cno;-><init>(Lorg/bouncycastle/crypto/rtg;I)V
 
     invoke-direct {v0, v1}, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$you;-><init>(Lorg/bouncycastle/crypto/rtg;)V
 
     :goto_1
-    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->tma:Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$sis;
+    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->rna:Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$sis;
 
     goto/16 :goto_2
 
@@ -2530,7 +2530,7 @@
 
     new-instance v0, Lorg/bouncycastle/crypto/bio/cno;
 
-    iget-object v1, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Fna:Lorg/bouncycastle/crypto/rtg;
+    iget-object v1, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Eoa:Lorg/bouncycastle/crypto/rtg;
 
     invoke-interface {v1}, Lorg/bouncycastle/crypto/rtg;->getBlockSize()I
 
@@ -2545,7 +2545,7 @@
     goto :goto_0
 
     :cond_3
-    iget-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Pna:Ljava/lang/String;
+    iget-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Ooa:Ljava/lang/String;
 
     const-string v3, "CFB"
 
@@ -2555,15 +2555,15 @@
 
     if-eqz v0, :cond_5
 
-    iget-object p1, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Fna:Lorg/bouncycastle/crypto/rtg;
+    iget-object p1, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Eoa:Lorg/bouncycastle/crypto/rtg;
 
     invoke-interface {p1}, Lorg/bouncycastle/crypto/rtg;->getBlockSize()I
 
     move-result p1
 
-    iput p1, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Kna:I
+    iput p1, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Joa:I
 
-    iget-object p1, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Pna:Ljava/lang/String;
+    iget-object p1, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Ooa:Ljava/lang/String;
 
     invoke-virtual {p1}, Ljava/lang/String;->length()I
 
@@ -2571,7 +2571,7 @@
 
     if-eq p1, v2, :cond_4
 
-    iget-object p1, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Pna:Ljava/lang/String;
+    iget-object p1, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Ooa:Ljava/lang/String;
 
     invoke-virtual {p1, v2}, Ljava/lang/String;->substring(I)Ljava/lang/String;
 
@@ -2585,7 +2585,7 @@
 
     new-instance v1, Lorg/bouncycastle/crypto/bio/tsu;
 
-    iget-object v2, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Fna:Lorg/bouncycastle/crypto/rtg;
+    iget-object v2, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Eoa:Lorg/bouncycastle/crypto/rtg;
 
     invoke-direct {v1, v2, p1}, Lorg/bouncycastle/crypto/bio/tsu;-><init>(Lorg/bouncycastle/crypto/rtg;I)V
 
@@ -2598,7 +2598,7 @@
 
     new-instance v0, Lorg/bouncycastle/crypto/bio/tsu;
 
-    iget-object v1, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Fna:Lorg/bouncycastle/crypto/rtg;
+    iget-object v1, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Eoa:Lorg/bouncycastle/crypto/rtg;
 
     invoke-interface {v1}, Lorg/bouncycastle/crypto/rtg;->getBlockSize()I
 
@@ -2613,7 +2613,7 @@
     goto/16 :goto_0
 
     :cond_5
-    iget-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Pna:Ljava/lang/String;
+    iget-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Ooa:Ljava/lang/String;
 
     const-string v2, "CTR"
 
@@ -2623,15 +2623,15 @@
 
     if-eqz v0, :cond_6
 
-    iget-object p1, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Fna:Lorg/bouncycastle/crypto/rtg;
+    iget-object p1, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Eoa:Lorg/bouncycastle/crypto/rtg;
 
     invoke-interface {p1}, Lorg/bouncycastle/crypto/rtg;->getBlockSize()I
 
     move-result p1
 
-    iput p1, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Kna:I
+    iput p1, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Joa:I
 
-    iput-boolean v1, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Mna:Z
+    iput-boolean v1, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Loa:Z
 
     new-instance p1, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$you;
 
@@ -2639,7 +2639,7 @@
 
     new-instance v1, Lorg/bouncycastle/crypto/bio/kth;
 
-    iget-object v2, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Fna:Lorg/bouncycastle/crypto/rtg;
+    iget-object v2, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Eoa:Lorg/bouncycastle/crypto/rtg;
 
     invoke-direct {v1, v2}, Lorg/bouncycastle/crypto/bio/kth;-><init>(Lorg/bouncycastle/crypto/rtg;)V
 
@@ -2650,7 +2650,7 @@
     goto/16 :goto_0
 
     :cond_6
-    iget-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Pna:Ljava/lang/String;
+    iget-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Ooa:Ljava/lang/String;
 
     const-string v1, "CTS"
 
@@ -2660,13 +2660,13 @@
 
     if-eqz v0, :cond_7
 
-    iget-object p1, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Fna:Lorg/bouncycastle/crypto/rtg;
+    iget-object p1, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Eoa:Lorg/bouncycastle/crypto/rtg;
 
     invoke-interface {p1}, Lorg/bouncycastle/crypto/rtg;->getBlockSize()I
 
     move-result p1
 
-    iput p1, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Kna:I
+    iput p1, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Joa:I
 
     new-instance p1, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$you;
 
@@ -2674,7 +2674,7 @@
 
     new-instance v1, Lorg/bouncycastle/crypto/bio/you;
 
-    iget-object v2, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Fna:Lorg/bouncycastle/crypto/rtg;
+    iget-object v2, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Eoa:Lorg/bouncycastle/crypto/rtg;
 
     invoke-direct {v1, v2}, Lorg/bouncycastle/crypto/bio/you;-><init>(Lorg/bouncycastle/crypto/rtg;)V
 
@@ -2685,7 +2685,7 @@
     goto/16 :goto_0
 
     :cond_7
-    iget-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Pna:Ljava/lang/String;
+    iget-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Ooa:Ljava/lang/String;
 
     const-string v1, "CCM"
 
@@ -2697,13 +2697,13 @@
 
     const/16 p1, 0xc
 
-    iput p1, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Kna:I
+    iput p1, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Joa:I
 
     new-instance p1, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$zta;
 
     new-instance v0, Lorg/bouncycastle/crypto/bio/sis;
 
-    iget-object v1, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Fna:Lorg/bouncycastle/crypto/rtg;
+    iget-object v1, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Eoa:Lorg/bouncycastle/crypto/rtg;
 
     invoke-direct {v0, v1}, Lorg/bouncycastle/crypto/bio/sis;-><init>(Lorg/bouncycastle/crypto/rtg;)V
 
@@ -2712,7 +2712,7 @@
     goto/16 :goto_0
 
     :cond_8
-    iget-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Pna:Ljava/lang/String;
+    iget-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Ooa:Ljava/lang/String;
 
     const-string v1, "GCM"
 
@@ -2722,19 +2722,19 @@
 
     if-eqz v0, :cond_9
 
-    iget-object p1, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Fna:Lorg/bouncycastle/crypto/rtg;
+    iget-object p1, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Eoa:Lorg/bouncycastle/crypto/rtg;
 
     invoke-interface {p1}, Lorg/bouncycastle/crypto/rtg;->getBlockSize()I
 
     move-result p1
 
-    iput p1, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Kna:I
+    iput p1, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Joa:I
 
     new-instance p1, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$zta;
 
     new-instance v0, Lorg/bouncycastle/crypto/bio/ssp;
 
-    iget-object v1, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Fna:Lorg/bouncycastle/crypto/rtg;
+    iget-object v1, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Eoa:Lorg/bouncycastle/crypto/rtg;
 
     invoke-direct {v0, v1}, Lorg/bouncycastle/crypto/bio/ssp;-><init>(Lorg/bouncycastle/crypto/rtg;)V
 
@@ -2787,7 +2787,7 @@
 
     if-eqz v1, :cond_0
 
-    iget-object p1, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->tma:Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$sis;
+    iget-object p1, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->rna:Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$sis;
 
     invoke-interface {p1}, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$sis;->fto()Z
 
@@ -2799,7 +2799,7 @@
 
     new-instance v0, Lorg/bouncycastle/crypto/ssp;
 
-    iget-object v1, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->tma:Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$sis;
+    iget-object v1, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->rna:Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$sis;
 
     invoke-interface {v1}, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$sis;->b()Lorg/bouncycastle/crypto/rtg;
 
@@ -2841,11 +2841,11 @@
     :cond_1
     const/4 v1, 0x1
 
-    iput-boolean v1, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Lna:Z
+    iput-boolean v1, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Koa:Z
 
-    iget-object v1, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Pna:Ljava/lang/String;
+    iget-object v1, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Ooa:Ljava/lang/String;
 
-    invoke-direct {p0, v1}, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Rc(Ljava/lang/String;)Z
+    invoke-direct {p0, v1}, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->Uc(Ljava/lang/String;)Z
 
     move-result v1
 
@@ -2880,7 +2880,7 @@
 
     new-instance p1, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$you;
 
-    iget-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->tma:Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$sis;
+    iget-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->rna:Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$sis;
 
     invoke-interface {v0}, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$sis;->b()Lorg/bouncycastle/crypto/rtg;
 
@@ -2962,7 +2962,7 @@
 
     new-instance p1, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$you;
 
-    iget-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->tma:Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$sis;
+    iget-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->rna:Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$sis;
 
     invoke-interface {v0}, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$sis;->b()Lorg/bouncycastle/crypto/rtg;
 
@@ -3005,7 +3005,7 @@
     :goto_0
     new-instance p1, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$you;
 
-    iget-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->tma:Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$sis;
+    iget-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->rna:Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$sis;
 
     invoke-interface {v0}, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$sis;->b()Lorg/bouncycastle/crypto/rtg;
 
@@ -3023,7 +3023,7 @@
     :goto_1
     new-instance p1, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$you;
 
-    iget-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->tma:Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$sis;
+    iget-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->rna:Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$sis;
 
     invoke-interface {v0}, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$sis;->b()Lorg/bouncycastle/crypto/rtg;
 
@@ -3041,7 +3041,7 @@
     :goto_2
     new-instance p1, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$you;
 
-    iget-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->tma:Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$sis;
+    iget-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->rna:Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$sis;
 
     invoke-interface {v0}, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$sis;->b()Lorg/bouncycastle/crypto/rtg;
 
@@ -3059,7 +3059,7 @@
     :goto_3
     new-instance p1, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$you;
 
-    iget-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->tma:Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$sis;
+    iget-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->rna:Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$sis;
 
     invoke-interface {v0}, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$sis;->b()Lorg/bouncycastle/crypto/rtg;
 
@@ -3084,7 +3084,7 @@
 
     new-instance v0, Lorg/bouncycastle/crypto/bio/rtg;
 
-    iget-object v1, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->tma:Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$sis;
+    iget-object v1, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->rna:Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$sis;
 
     invoke-interface {v1}, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$sis;->b()Lorg/bouncycastle/crypto/rtg;
 
@@ -3095,7 +3095,7 @@
     invoke-direct {p1, v0}, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$you;-><init>(Lorg/bouncycastle/crypto/ssp;)V
 
     :goto_5
-    iput-object p1, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->tma:Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$sis;
+    iput-object p1, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->rna:Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$sis;
 
     :cond_e
     return-void
@@ -3109,7 +3109,7 @@
         }
     .end annotation
 
-    iget-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->tma:Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$sis;
+    iget-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->rna:Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$sis;
 
     invoke-interface {v0, p3}, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$sis;->you(I)I
 
@@ -3122,7 +3122,7 @@
     if-gt v0, v1, :cond_0
 
     :try_start_0
-    iget-object v2, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->tma:Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$sis;
+    iget-object v2, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->rna:Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$sis;
 
     move-object v3, p1
 
@@ -3168,7 +3168,7 @@
 .method protected engineUpdate([BII)[B
     .locals 8
 
-    iget-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->tma:Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$sis;
+    iget-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->rna:Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$sis;
 
     invoke-interface {v0, p3}, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$sis;->you(I)I
 
@@ -3180,7 +3180,7 @@
 
     new-array v0, v0, [B
 
-    iget-object v2, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->tma:Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$sis;
+    iget-object v2, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->rna:Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$sis;
 
     const/4 v7, 0x0
 
@@ -3217,7 +3217,7 @@
     return-object v0
 
     :cond_2
-    iget-object v2, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->tma:Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$sis;
+    iget-object v2, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->rna:Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$sis;
 
     const/4 v6, 0x0
 
@@ -3269,7 +3269,7 @@
 .method protected engineUpdateAAD([BII)V
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->tma:Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$sis;
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->rna:Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$sis;
 
     invoke-interface {p0, p1, p2, p3}, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$sis;->updateAAD([BII)V
 

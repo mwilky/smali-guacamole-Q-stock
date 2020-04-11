@@ -12,7 +12,37 @@
     return-void
 .end method
 
-.method private static Sc(I)I
+.method public static Ca(I)I
+    .locals 2
+
+    mul-int v0, p0, p0
+
+    rsub-int/lit8 v0, v0, 0x2
+
+    mul-int/2addr v0, p0
+
+    mul-int v1, p0, v0
+
+    rsub-int/lit8 v1, v1, 0x2
+
+    mul-int/2addr v0, v1
+
+    mul-int v1, p0, v0
+
+    rsub-int/lit8 v1, v1, 0x2
+
+    mul-int/2addr v0, v1
+
+    mul-int/2addr p0, v0
+
+    rsub-int/lit8 p0, p0, 0x2
+
+    mul-int/2addr v0, p0
+
+    return v0
+.end method
+
+.method private static Wc(I)I
     .locals 2
 
     const/4 v0, 0x0
@@ -275,36 +305,6 @@
     return-void
 .end method
 
-.method public static za(I)I
-    .locals 2
-
-    mul-int v0, p0, p0
-
-    rsub-int/lit8 v0, v0, 0x2
-
-    mul-int/2addr v0, p0
-
-    mul-int v1, p0, v0
-
-    rsub-int/lit8 v1, v1, 0x2
-
-    mul-int/2addr v0, v1
-
-    mul-int v1, p0, v0
-
-    rsub-int/lit8 v1, v1, 0x2
-
-    mul-int/2addr v0, v1
-
-    mul-int/2addr p0, v0
-
-    rsub-int/lit8 p0, p0, 0x2
-
-    mul-int/2addr v0, p0
-
-    return v0
-.end method
-
 .method private static zta([I[II[II)I
     .locals 4
 
@@ -328,7 +328,7 @@
     :cond_0
     aget v3, p1, v1
 
-    invoke-static {v3}, Lyou/zta/sis/sis/you;->Sc(I)I
+    invoke-static {v3}, Lyou/zta/sis/sis/you;->Wc(I)I
 
     move-result v3
 

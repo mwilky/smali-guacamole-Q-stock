@@ -344,7 +344,7 @@
 
     invoke-virtual {p1, p0, v0, p4}, Lorg/bouncycastle/crypto/gwm;->zta([B[BI)V
 
-    invoke-virtual {p1, p3}, Lorg/bouncycastle/crypto/gwm;->da(I)Lorg/bouncycastle/crypto/kth;
+    invoke-virtual {p1, p3}, Lorg/bouncycastle/crypto/gwm;->ga(I)Lorg/bouncycastle/crypto/kth;
 
     move-result-object p0
 
@@ -388,7 +388,7 @@
 
     invoke-virtual {p2, p1, v0, p0}, Lorg/bouncycastle/crypto/gwm;->zta([B[BI)V
 
-    invoke-virtual {p2, p3}, Lorg/bouncycastle/crypto/gwm;->da(I)Lorg/bouncycastle/crypto/kth;
+    invoke-virtual {p2, p3}, Lorg/bouncycastle/crypto/gwm;->ga(I)Lorg/bouncycastle/crypto/kth;
 
     move-result-object p0
 
@@ -480,7 +480,7 @@
 
     move-result v0
 
-    invoke-virtual {p0}, Lorg/bouncycastle/jcajce/provider/symmetric/util/BCPBEKey;->Gf()I
+    invoke-virtual {p0}, Lorg/bouncycastle/jcajce/provider/symmetric/util/BCPBEKey;->Kf()I
 
     move-result v1
 
@@ -506,7 +506,7 @@
 
     move-result p0
 
-    invoke-virtual {v0, p0}, Lorg/bouncycastle/crypto/gwm;->da(I)Lorg/bouncycastle/crypto/kth;
+    invoke-virtual {v0, p0}, Lorg/bouncycastle/crypto/gwm;->ga(I)Lorg/bouncycastle/crypto/kth;
 
     move-result-object p0
 
@@ -537,7 +537,7 @@
 
     move-result v0
 
-    invoke-virtual {p0}, Lorg/bouncycastle/jcajce/provider/symmetric/util/BCPBEKey;->Gf()I
+    invoke-virtual {p0}, Lorg/bouncycastle/jcajce/provider/symmetric/util/BCPBEKey;->Kf()I
 
     move-result v1
 
@@ -549,7 +549,7 @@
 
     move-result-object v1
 
-    invoke-virtual {p0}, Lorg/bouncycastle/jcajce/provider/symmetric/util/BCPBEKey;->xj()Z
+    invoke-virtual {p0}, Lorg/bouncycastle/jcajce/provider/symmetric/util/BCPBEKey;->Bj()Z
 
     move-result v2
 
@@ -570,7 +570,7 @@
 
     invoke-virtual {v0, v1, v2, v3}, Lorg/bouncycastle/crypto/gwm;->zta([B[BI)V
 
-    invoke-virtual {p0}, Lorg/bouncycastle/jcajce/provider/symmetric/util/BCPBEKey;->wj()I
+    invoke-virtual {p0}, Lorg/bouncycastle/jcajce/provider/symmetric/util/BCPBEKey;->Aj()I
 
     move-result v1
 
@@ -580,7 +580,7 @@
 
     move-result v1
 
-    invoke-virtual {p0}, Lorg/bouncycastle/jcajce/provider/symmetric/util/BCPBEKey;->wj()I
+    invoke-virtual {p0}, Lorg/bouncycastle/jcajce/provider/symmetric/util/BCPBEKey;->Aj()I
 
     move-result v2
 

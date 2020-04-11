@@ -1,4 +1,4 @@
-.class final Lcom/android/server/am/r$sis;
+.class final Lcom/android/server/am/t$sis;
 .super Ljava/lang/Object;
 .source ""
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/server/am/r;
+    value = Lcom/android/server/am/t;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -20,7 +20,7 @@
     value = {
         "Ljava/lang/Object;",
         "Ljava/util/Comparator<",
-        "Lcom/android/server/am/r$you;",
+        "Lcom/android/server/am/t$you;",
         ">;"
     }
 .end annotation
@@ -35,10 +35,10 @@
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/android/server/am/q;)V
+.method synthetic constructor <init>(Lcom/android/server/am/s;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/am/r$sis;-><init>()V
+    invoke-direct {p0}, Lcom/android/server/am/t$sis;-><init>()V
 
     return-void
 .end method
@@ -48,27 +48,27 @@
 .method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 0
 
-    check-cast p1, Lcom/android/server/am/r$you;
+    check-cast p1, Lcom/android/server/am/t$you;
 
-    check-cast p2, Lcom/android/server/am/r$you;
+    check-cast p2, Lcom/android/server/am/t$you;
 
-    invoke-virtual {p0, p1, p2}, Lcom/android/server/am/r$sis;->zta(Lcom/android/server/am/r$you;Lcom/android/server/am/r$you;)I
+    invoke-virtual {p0, p1, p2}, Lcom/android/server/am/t$sis;->zta(Lcom/android/server/am/t$you;Lcom/android/server/am/t$you;)I
 
     move-result p0
 
     return p0
 .end method
 
-.method public zta(Lcom/android/server/am/r$you;Lcom/android/server/am/r$you;)I
+.method public zta(Lcom/android/server/am/t$you;Lcom/android/server/am/t$you;)I
     .locals 0
 
-    iget-wide p0, p1, Lcom/android/server/am/r$you;->Vv:D
+    iget-wide p0, p1, Lcom/android/server/am/t$you;->Uw:D
 
     invoke-static {p0, p1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
 
     move-result-object p0
 
-    iget-wide p1, p2, Lcom/android/server/am/r$you;->Vv:D
+    iget-wide p1, p2, Lcom/android/server/am/t$you;->Uw:D
 
     invoke-static {p1, p2}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
 

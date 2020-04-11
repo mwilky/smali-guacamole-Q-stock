@@ -4,15 +4,15 @@
 
 
 # static fields
-.field private static final Zna:Ljava/math/BigInteger;
+.field private static final Yoa:Ljava/math/BigInteger;
 
 
 # instance fields
+.field private qxa:I
+
 .field private size:I
 
-.field private swa:I
-
-.field private yla:Ljava/security/SecureRandom;
+.field private xma:Ljava/security/SecureRandom;
 
 
 # direct methods
@@ -25,7 +25,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lorg/bouncycastle/crypto/ssp/rtg;->Zna:Ljava/math/BigInteger;
+    sput-object v0, Lorg/bouncycastle/crypto/ssp/rtg;->Yoa:Ljava/math/BigInteger;
 
     return-void
 .end method
@@ -45,9 +45,9 @@
 
     iget v0, p0, Lorg/bouncycastle/crypto/ssp/rtg;->size:I
 
-    iget v1, p0, Lorg/bouncycastle/crypto/ssp/rtg;->swa:I
+    iget v1, p0, Lorg/bouncycastle/crypto/ssp/rtg;->qxa:I
 
-    iget-object v2, p0, Lorg/bouncycastle/crypto/ssp/rtg;->yla:Ljava/security/SecureRandom;
+    iget-object v2, p0, Lorg/bouncycastle/crypto/ssp/rtg;->xma:Ljava/security/SecureRandom;
 
     invoke-static {v0, v1, v2}, Lorg/bouncycastle/crypto/ssp/ssp;->you(IILjava/security/SecureRandom;)[Ljava/math/BigInteger;
 
@@ -61,7 +61,7 @@
 
     aget-object v5, v0, v1
 
-    iget-object p0, p0, Lorg/bouncycastle/crypto/ssp/rtg;->yla:Ljava/security/SecureRandom;
+    iget-object p0, p0, Lorg/bouncycastle/crypto/ssp/rtg;->xma:Ljava/security/SecureRandom;
 
     invoke-static {v3, v5, p0}, Lorg/bouncycastle/crypto/ssp/ssp;->zta(Ljava/math/BigInteger;Ljava/math/BigInteger;Ljava/security/SecureRandom;)Ljava/math/BigInteger;
 
@@ -69,7 +69,7 @@
 
     new-instance p0, Lorg/bouncycastle/crypto/wtn/cno;
 
-    sget-object v6, Lorg/bouncycastle/crypto/ssp/rtg;->Zna:Ljava/math/BigInteger;
+    sget-object v6, Lorg/bouncycastle/crypto/ssp/rtg;->Yoa:Ljava/math/BigInteger;
 
     const/4 v7, 0x0
 
@@ -85,9 +85,9 @@
 
     iput p1, p0, Lorg/bouncycastle/crypto/ssp/rtg;->size:I
 
-    iput p2, p0, Lorg/bouncycastle/crypto/ssp/rtg;->swa:I
+    iput p2, p0, Lorg/bouncycastle/crypto/ssp/rtg;->qxa:I
 
-    iput-object p3, p0, Lorg/bouncycastle/crypto/ssp/rtg;->yla:Ljava/security/SecureRandom;
+    iput-object p3, p0, Lorg/bouncycastle/crypto/ssp/rtg;->xma:Ljava/security/SecureRandom;
 
     return-void
 .end method

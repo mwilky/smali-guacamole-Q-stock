@@ -8,7 +8,7 @@
 
 .field protected strength:I
 
-.field protected yla:Ljava/security/SecureRandom;
+.field protected xma:Ljava/security/SecureRandom;
 
 
 # direct methods
@@ -39,11 +39,11 @@
 
     iget v1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dh/zta;->strength:I
 
-    invoke-static {v1}, Lorg/bouncycastle/jcajce/provider/asymmetric/util/gck;->ga(I)I
+    invoke-static {v1}, Lorg/bouncycastle/jcajce/provider/asymmetric/util/gck;->ja(I)I
 
     move-result v1
 
-    iget-object v2, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dh/zta;->yla:Ljava/security/SecureRandom;
+    iget-object v2, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dh/zta;->xma:Ljava/security/SecureRandom;
 
     if-eqz v2, :cond_0
 
@@ -56,7 +56,7 @@
     :cond_0
     iget v2, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dh/zta;->strength:I
 
-    invoke-static {}, Lorg/bouncycastle/crypto/igw;->Ui()Ljava/security/SecureRandom;
+    invoke-static {}, Lorg/bouncycastle/crypto/igw;->Yi()Ljava/security/SecureRandom;
 
     move-result-object v3
 
@@ -70,7 +70,7 @@
     :try_start_0
     const-string v1, "DH"
 
-    invoke-virtual {p0, v1}, Lorg/bouncycastle/jcajce/provider/asymmetric/util/you;->ra(Ljava/lang/String;)Ljava/security/AlgorithmParameters;
+    invoke-virtual {p0, v1}, Lorg/bouncycastle/jcajce/provider/asymmetric/util/you;->sa(Ljava/lang/String;)Ljava/security/AlgorithmParameters;
 
     move-result-object v1
 
@@ -113,7 +113,7 @@
 
     iput p1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dh/zta;->strength:I
 
-    iput-object p2, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dh/zta;->yla:Ljava/security/SecureRandom;
+    iput-object p2, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dh/zta;->xma:Ljava/security/SecureRandom;
 
     return-void
 .end method
@@ -144,7 +144,7 @@
 
     iput p1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dh/zta;->l:I
 
-    iput-object p2, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dh/zta;->yla:Ljava/security/SecureRandom;
+    iput-object p2, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dh/zta;->xma:Ljava/security/SecureRandom;
 
     return-void
 

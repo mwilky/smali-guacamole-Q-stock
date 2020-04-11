@@ -1775,7 +1775,7 @@
 
     check-cast v7, Lcom/android/server/OpPowerControllerService$sis;
 
-    iput-boolean v5, v7, Lcom/android/server/OpPowerControllerService$sis;->Ue:Z
+    iput-boolean v5, v7, Lcom/android/server/OpPowerControllerService$sis;->Xe:Z
 
     iget-object v7, p0, Lcom/android/server/OpPowerControllerService;->mNetworkManagementService:Landroid/os/INetworkManagementService;
 
@@ -1900,7 +1900,7 @@
 
     check-cast v7, Lcom/android/server/OpPowerControllerService$sis;
 
-    iget-boolean v7, v7, Lcom/android/server/OpPowerControllerService$sis;->Ue:Z
+    iget-boolean v7, v7, Lcom/android/server/OpPowerControllerService$sis;->Xe:Z
 
     if-eqz v7, :cond_b
 
@@ -1912,7 +1912,7 @@
 
     check-cast v7, Lcom/android/server/OpPowerControllerService$sis;
 
-    iput-boolean v6, v7, Lcom/android/server/OpPowerControllerService$sis;->Ue:Z
+    iput-boolean v6, v7, Lcom/android/server/OpPowerControllerService$sis;->Xe:Z
 
     iget-object v7, p0, Lcom/android/server/OpPowerControllerService;->mContext:Landroid/content/Context;
 
@@ -2445,7 +2445,7 @@
 
     iget-object v1, p0, Lcom/android/server/OpPowerControllerService;->mContext:Landroid/content/Context;
 
-    const v2, 0x50d007e
+    const v2, 0x50d007f
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -2453,7 +2453,7 @@
 
     iget-object v2, p0, Lcom/android/server/OpPowerControllerService;->mContext:Landroid/content/Context;
 
-    const v3, 0x50d007d
+    const v3, 0x50d007e
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -2881,7 +2881,7 @@
 
     check-cast v1, Lcom/android/server/power/zta/zta;
 
-    invoke-virtual {v1, p2}, Lcom/android/server/power/zta/zta;->S(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v1, p2}, Lcom/android/server/power/zta/zta;->T(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -4396,7 +4396,7 @@
 
     invoke-static {v2}, Lcom/android/server/power/OpPowerManagerInjector;->disableExclusiveWakeLocks(Z)V
 
-    sget-boolean p1, Lcom/android/server/am/zgw;->Dj:Z
+    sget-boolean p1, Lcom/android/server/am/zgw;->sInUsing:Z
 
     if-eqz p1, :cond_3
 
@@ -4440,7 +4440,7 @@
 
     invoke-direct {p0, p1}, Lcom/android/server/OpPowerControllerService;->applyGMSFirewallLocked(Z)V
 
-    sget-boolean p2, Lcom/android/server/am/zgw;->Dj:Z
+    sget-boolean p2, Lcom/android/server/am/zgw;->sInUsing:Z
 
     if-eqz p2, :cond_5
 
@@ -5257,7 +5257,7 @@
     goto :goto_0
 
     :cond_3
-    sget-boolean p0, Lcom/android/server/am/zgw;->Dj:Z
+    sget-boolean p0, Lcom/android/server/am/zgw;->sInUsing:Z
 
     if-eqz p0, :cond_4
 
@@ -6439,7 +6439,7 @@
     :pswitch_0
     new-array v5, v8, [I
 
-    const/16 v6, 0xef
+    const/16 v6, 0xf1
 
     aput v6, v5, v2
 
@@ -6792,11 +6792,11 @@
     .catch Ljava/lang/InterruptedException; {:try_start_0 .. :try_end_0} :catch_1
     .catch Ljava/lang/ArrayIndexOutOfBoundsException; {:try_start_0 .. :try_end_0} :catch_0
 
-    invoke-virtual {v2}, Lcom/android/server/ivd;->Mf()Z
+    invoke-virtual {v2}, Lcom/android/server/ivd;->Qf()Z
 
     move-result p0
 
-    invoke-virtual {v4}, Lcom/android/server/ivd;->Mf()Z
+    invoke-virtual {v4}, Lcom/android/server/ivd;->Qf()Z
 
     move-result v1
 
@@ -7329,7 +7329,7 @@
 
     const/4 v2, 0x0
 
-    const/16 v3, 0xef
+    const/16 v3, 0xf1
 
     aput v3, v1, v2
 
@@ -8857,7 +8857,7 @@
 
     invoke-static {v0}, Lcom/android/server/power/OpPowerManagerInjector;->disableExclusiveWakeLocks(Z)V
 
-    sget-boolean p0, Lcom/android/server/am/zgw;->Dj:Z
+    sget-boolean p0, Lcom/android/server/am/zgw;->sInUsing:Z
 
     if-eqz p0, :cond_0
 
@@ -8890,7 +8890,7 @@
 
     invoke-static {p0}, Lcom/android/server/power/OpPowerManagerInjector;->enableExclusiveWakeLocks(Z)V
 
-    sget-boolean p0, Lcom/android/server/am/zgw;->Dj:Z
+    sget-boolean p0, Lcom/android/server/am/zgw;->sInUsing:Z
 
     if-eqz p0, :cond_0
 
@@ -10407,7 +10407,7 @@
 
     sput-boolean v3, Lcom/android/server/OpPowerControllerService;->mDebugOneplus:Z
 
-    sput-boolean v3, Lcom/android/server/you$zta;->Mb:Z
+    sput-boolean v3, Lcom/android/server/you$zta;->Qb:Z
 
     const-string p1, "log is on"
 
@@ -10427,7 +10427,7 @@
 
     sput-boolean v4, Lcom/android/server/OpPowerControllerService;->mDebugOneplus:Z
 
-    sput-boolean v4, Lcom/android/server/you$zta;->Mb:Z
+    sput-boolean v4, Lcom/android/server/you$zta;->Qb:Z
 
     const-string p1, "log is off"
 
@@ -13364,7 +13364,7 @@
     :cond_70
     new-array v1, v3, [I
 
-    const/16 v3, 0xef
+    const/16 v3, 0xf1
 
     aput v3, v1, v4
 

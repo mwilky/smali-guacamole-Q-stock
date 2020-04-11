@@ -131,7 +131,7 @@
 
 
 # virtual methods
-.method public abstract da(I)Lorg/bouncycastle/crypto/kth;
+.method public abstract ga(I)Lorg/bouncycastle/crypto/kth;
 .end method
 
 .method public abstract generateDerivedParameters(I)Lorg/bouncycastle/crypto/kth;

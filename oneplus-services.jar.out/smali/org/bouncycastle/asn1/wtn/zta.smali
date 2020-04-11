@@ -4,17 +4,17 @@
 
 
 # static fields
-.field public static final HMa:Lorg/bouncycastle/asn1/bvj;
+.field public static final FNa:Lorg/bouncycastle/asn1/bvj;
 
-.field public static final IMa:Lorg/bouncycastle/asn1/bvj;
+.field public static final GNa:Lorg/bouncycastle/asn1/bvj;
 
-.field public static final JMa:Lorg/bouncycastle/asn1/bvj;
+.field public static final HNa:Lorg/bouncycastle/asn1/bvj;
 
-.field public static final KMa:Lorg/bouncycastle/asn1/bvj;
+.field public static final INa:Lorg/bouncycastle/asn1/bvj;
 
-.field public static final LMa:Lorg/bouncycastle/asn1/bvj;
+.field public static final JNa:Lorg/bouncycastle/asn1/bvj;
 
-.field public static final MMa:Lorg/bouncycastle/asn1/bvj;
+.field public static final KNa:Lorg/bouncycastle/asn1/bvj;
 
 
 # direct methods
@@ -27,7 +27,7 @@
 
     invoke-direct {v0, v1}, Lorg/bouncycastle/asn1/bvj;-><init>(Ljava/lang/String;)V
 
-    sput-object v0, Lorg/bouncycastle/asn1/wtn/zta;->HMa:Lorg/bouncycastle/asn1/bvj;
+    sput-object v0, Lorg/bouncycastle/asn1/wtn/zta;->FNa:Lorg/bouncycastle/asn1/bvj;
 
     new-instance v0, Lorg/bouncycastle/asn1/bvj;
 
@@ -35,7 +35,7 @@
 
     invoke-direct {v0, v1}, Lorg/bouncycastle/asn1/bvj;-><init>(Ljava/lang/String;)V
 
-    sput-object v0, Lorg/bouncycastle/asn1/wtn/zta;->IMa:Lorg/bouncycastle/asn1/bvj;
+    sput-object v0, Lorg/bouncycastle/asn1/wtn/zta;->GNa:Lorg/bouncycastle/asn1/bvj;
 
     new-instance v0, Lorg/bouncycastle/asn1/bvj;
 
@@ -43,7 +43,7 @@
 
     invoke-direct {v0, v1}, Lorg/bouncycastle/asn1/bvj;-><init>(Ljava/lang/String;)V
 
-    sput-object v0, Lorg/bouncycastle/asn1/wtn/zta;->JMa:Lorg/bouncycastle/asn1/bvj;
+    sput-object v0, Lorg/bouncycastle/asn1/wtn/zta;->HNa:Lorg/bouncycastle/asn1/bvj;
 
     new-instance v0, Lorg/bouncycastle/asn1/bvj;
 
@@ -51,7 +51,7 @@
 
     invoke-direct {v0, v1}, Lorg/bouncycastle/asn1/bvj;-><init>(Ljava/lang/String;)V
 
-    sput-object v0, Lorg/bouncycastle/asn1/wtn/zta;->KMa:Lorg/bouncycastle/asn1/bvj;
+    sput-object v0, Lorg/bouncycastle/asn1/wtn/zta;->INa:Lorg/bouncycastle/asn1/bvj;
 
     new-instance v0, Lorg/bouncycastle/asn1/bvj;
 
@@ -59,7 +59,7 @@
 
     invoke-direct {v0, v1}, Lorg/bouncycastle/asn1/bvj;-><init>(Ljava/lang/String;)V
 
-    sput-object v0, Lorg/bouncycastle/asn1/wtn/zta;->LMa:Lorg/bouncycastle/asn1/bvj;
+    sput-object v0, Lorg/bouncycastle/asn1/wtn/zta;->JNa:Lorg/bouncycastle/asn1/bvj;
 
     new-instance v0, Lorg/bouncycastle/asn1/bvj;
 
@@ -67,7 +67,7 @@
 
     invoke-direct {v0, v1}, Lorg/bouncycastle/asn1/bvj;-><init>(Ljava/lang/String;)V
 
-    sput-object v0, Lorg/bouncycastle/asn1/wtn/zta;->MMa:Lorg/bouncycastle/asn1/bvj;
+    sput-object v0, Lorg/bouncycastle/asn1/wtn/zta;->KNa:Lorg/bouncycastle/asn1/bvj;
 
     return-void
 .end method

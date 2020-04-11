@@ -33,21 +33,21 @@
 
 .field private static final TAG:Ljava/lang/String; = "OpAggressiveDoze"
 
-.field private static final jd:Ljava/lang/String; = "stopGps"
+.field static mLock:Ljava/lang/Object; = null
 
-.field static kc:Lcom/android/server/LocationManagerService$LocationManagerServiceInner; = null
+.field private static final md:Ljava/lang/String; = "stopGps"
 
-.field private static final kd:Ljava/lang/String; = "aggressive"
+.field private static final nd:Ljava/lang/String; = "aggressive"
 
-.field private static final ld:Ljava/lang/String;
+.field static oc:Lcom/android/server/LocationManagerService$LocationManagerServiceInner;
 
-.field static mLock:Ljava/lang/Object;
+.field private static final od:Ljava/lang/String;
 
-.field private static final md:Ljava/lang/String;
+.field private static final pd:Ljava/lang/String;
 
-.field static nd:Lcom/android/server/DeviceIdleController$DeviceIdleControllerInner;
+.field static qd:Lcom/android/server/DeviceIdleController$DeviceIdleControllerInner;
 
-.field static od:Ljava/util/ArrayList;
+.field static rd:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/ArrayList<",
@@ -57,17 +57,15 @@
     .end annotation
 .end field
 
-.field static pd:Z
+.field static sd:Z
 
 
 # instance fields
-.field cd:Z
+.field hd:Z
 
-.field dd:Z
+.field jd:J
 
-.field ed:J
-
-.field gd:Ljava/util/ArrayList;
+.field kd:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/ArrayList<",
@@ -77,7 +75,7 @@
     .end annotation
 .end field
 
-.field private hd:Ljava/util/HashSet;
+.field private ld:Ljava/util/HashSet;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/HashSet<",
@@ -87,13 +85,13 @@
     .end annotation
 .end field
 
-.field lc:Ljava/lang/Object;
-
 .field mConstants:Lcom/android/server/DeviceIdleController$Constants;
 
 .field mContext:Landroid/content/Context;
 
 .field mDeviceIdleController:Lcom/android/server/DeviceIdleController;
+
+.field mFirstReport:Z
 
 .field mGpsLocationListener:Landroid/location/LocationListener;
 
@@ -117,6 +115,8 @@
 .end field
 
 .field mResolver:Landroid/content/ContentResolver;
+
+.field pc:Ljava/lang/Object;
 
 
 # direct methods
@@ -145,7 +145,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/android/server/obl;->ld:Ljava/lang/String;
+    sput-object v0, Lcom/android/server/obl;->od:Ljava/lang/String;
 
     const-string v2, "sensing_to=24000"
 
@@ -181,13 +181,13 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/android/server/obl;->md:Ljava/lang/String;
+    sput-object v0, Lcom/android/server/obl;->pd:Ljava/lang/String;
 
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    sput-object v0, Lcom/android/server/obl;->od:Ljava/util/ArrayList;
+    sput-object v0, Lcom/android/server/obl;->rd:Ljava/util/ArrayList;
 
     new-instance v0, Ljava/lang/Object;
 
@@ -197,7 +197,7 @@
 
     const/4 v0, 0x1
 
-    sput-boolean v0, Lcom/android/server/obl;->pd:Z
+    sput-boolean v0, Lcom/android/server/obl;->sd:Z
 
     return-void
 .end method
@@ -211,20 +211,20 @@
 
     iput v0, p0, Lcom/android/server/obl;->mPolicy:I
 
-    iput-boolean v0, p0, Lcom/android/server/obl;->cd:Z
+    iput-boolean v0, p0, Lcom/android/server/obl;->mFirstReport:Z
 
-    iput-boolean v0, p0, Lcom/android/server/obl;->dd:Z
+    iput-boolean v0, p0, Lcom/android/server/obl;->hd:Z
 
     new-instance v0, Ljava/util/HashSet;
 
     invoke-direct {v0}, Ljava/util/HashSet;-><init>()V
 
-    iput-object v0, p0, Lcom/android/server/obl;->hd:Ljava/util/HashSet;
+    iput-object v0, p0, Lcom/android/server/obl;->ld:Ljava/util/HashSet;
 
     return-void
 .end method
 
-.method private Ga(I)V
+.method private Ja(I)V
     .locals 2
 
     sget-boolean v0, Lcom/android/server/obl;->DEBUG_ONEPLUS:Z
@@ -250,12 +250,12 @@
     invoke-static {v1, v0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_0
-    iget-object v0, p0, Lcom/android/server/obl;->hd:Ljava/util/HashSet;
+    iget-object v0, p0, Lcom/android/server/obl;->ld:Ljava/util/HashSet;
 
     monitor-enter v0
 
     :try_start_0
-    iget-object p0, p0, Lcom/android/server/obl;->hd:Ljava/util/HashSet;
+    iget-object p0, p0, Lcom/android/server/obl;->ld:Ljava/util/HashSet;
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -277,7 +277,7 @@
     throw p0
 .end method
 
-.method private Ha(I)V
+.method private Ka(I)V
     .locals 2
 
     iget-object p0, p0, Lcom/android/server/obl;->mResolver:Landroid/content/ContentResolver;
@@ -295,12 +295,12 @@
     goto :goto_1
 
     :cond_0
-    sget-object p1, Lcom/android/server/obl;->md:Ljava/lang/String;
+    sget-object p1, Lcom/android/server/obl;->pd:Ljava/lang/String;
 
     goto :goto_0
 
     :cond_1
-    sget-object p1, Lcom/android/server/obl;->ld:Ljava/lang/String;
+    sget-object p1, Lcom/android/server/obl;->od:Ljava/lang/String;
 
     :goto_0
     invoke-static {p0, v0, p1}, Landroid/provider/Settings$Global;->putString(Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;)Z
@@ -310,7 +310,7 @@
     return-void
 .end method
 
-.method private Ia(I)V
+.method private La(I)V
     .locals 2
 
     sget-object p0, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_power_manager:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
@@ -403,7 +403,7 @@
     const/4 v4, 0x0
 
     :goto_0
-    iget-object v5, p0, Lcom/android/server/obl;->hd:Ljava/util/HashSet;
+    iget-object v5, p0, Lcom/android/server/obl;->ld:Ljava/util/HashSet;
 
     invoke-virtual {v5}, Ljava/util/HashSet;->clear()V
 
@@ -527,7 +527,7 @@
 
     move-result v11
 
-    invoke-direct {p0, v11}, Lcom/android/server/obl;->Ga(I)V
+    invoke-direct {p0, v11}, Lcom/android/server/obl;->Ja(I)V
     :try_end_1
     .catch Landroid/content/pm/PackageManager$NameNotFoundException; {:try_start_1 .. :try_end_1} :catch_0
     .catch Ljava/lang/NullPointerException; {:try_start_1 .. :try_end_1} :catch_0
@@ -576,7 +576,7 @@
         }
     .end annotation
 
-    iget-object v0, p0, Lcom/android/server/obl;->lc:Ljava/lang/Object;
+    iget-object v0, p0, Lcom/android/server/obl;->pc:Ljava/lang/Object;
 
     monitor-enter v0
 
@@ -648,7 +648,7 @@
 
     move-result-wide v5
 
-    sget-object v7, Lcom/android/server/obl;->kc:Lcom/android/server/LocationManagerService$LocationManagerServiceInner;
+    sget-object v7, Lcom/android/server/obl;->oc:Lcom/android/server/LocationManagerService$LocationManagerServiceInner;
 
     invoke-virtual {v7}, Lcom/android/server/LocationManagerService$LocationManagerServiceInner;->getHighPowerIntervalMs()J
 
@@ -670,7 +670,7 @@
 
     iget-object v4, v4, Lcom/android/server/LocationManagerService$UpdateRecord;->mProvider:Ljava/lang/String;
 
-    iget-object v6, p0, Lcom/android/server/obl;->gd:Ljava/util/ArrayList;
+    iget-object v6, p0, Lcom/android/server/obl;->kd:Ljava/util/ArrayList;
 
     invoke-virtual {v6, v5}, Ljava/util/ArrayList;->contains(Ljava/lang/Object;)Z
 
@@ -1029,12 +1029,12 @@
     invoke-static {v0, v1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_0
-    iget-object v0, p0, Lcom/android/server/obl;->hd:Ljava/util/HashSet;
+    iget-object v0, p0, Lcom/android/server/obl;->ld:Ljava/util/HashSet;
 
     monitor-enter v0
 
     :try_start_0
-    iget-object p0, p0, Lcom/android/server/obl;->hd:Ljava/util/HashSet;
+    iget-object p0, p0, Lcom/android/server/obl;->ld:Ljava/util/HashSet;
 
     invoke-virtual {p0}, Ljava/util/HashSet;->clear()V
 
@@ -1063,7 +1063,7 @@
 
     :goto_0
     :try_start_0
-    sget-object v2, Lcom/android/server/obl;->od:Ljava/util/ArrayList;
+    sget-object v2, Lcom/android/server/obl;->rd:Ljava/util/ArrayList;
 
     invoke-virtual {v2}, Ljava/util/ArrayList;->size()I
 
@@ -1071,7 +1071,7 @@
 
     if-ge v1, v2, :cond_0
 
-    sget-object v2, Lcom/android/server/obl;->od:Ljava/util/ArrayList;
+    sget-object v2, Lcom/android/server/obl;->rd:Ljava/util/ArrayList;
 
     invoke-virtual {v2, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -1088,7 +1088,7 @@
     goto :goto_0
 
     :cond_0
-    sget-object p0, Lcom/android/server/obl;->od:Ljava/util/ArrayList;
+    sget-object p0, Lcom/android/server/obl;->rd:Ljava/util/ArrayList;
 
     invoke-virtual {p0}, Ljava/util/ArrayList;->clear()V
 
@@ -1112,7 +1112,7 @@
 .method public getStopGpsState()Z
     .locals 0
 
-    sget-boolean p0, Lcom/android/server/obl;->pd:Z
+    sget-boolean p0, Lcom/android/server/obl;->sd:Z
 
     return p0
 .end method
@@ -1138,12 +1138,12 @@
 .method public isDozingGps(I)Z
     .locals 1
 
-    iget-object v0, p0, Lcom/android/server/obl;->hd:Ljava/util/HashSet;
+    iget-object v0, p0, Lcom/android/server/obl;->ld:Ljava/util/HashSet;
 
     monitor-enter v0
 
     :try_start_0
-    iget-object p0, p0, Lcom/android/server/obl;->hd:Ljava/util/HashSet;
+    iget-object p0, p0, Lcom/android/server/obl;->ld:Ljava/util/HashSet;
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1172,7 +1172,7 @@
 
     const/4 v0, 0x1
 
-    sput-boolean v0, Lcom/android/server/obl;->pd:Z
+    sput-boolean v0, Lcom/android/server/obl;->sd:Z
 
     invoke-virtual {p0}, Lcom/android/server/obl;->E()Z
 
@@ -1182,7 +1182,7 @@
 
     if-eqz v1, :cond_2
 
-    iget-boolean v1, p0, Lcom/android/server/obl;->dd:Z
+    iget-boolean v1, p0, Lcom/android/server/obl;->hd:Z
 
     if-eqz v1, :cond_2
 
@@ -1196,16 +1196,16 @@
 
     if-lez v1, :cond_0
 
-    iput-boolean v2, p0, Lcom/android/server/obl;->cd:Z
+    iput-boolean v2, p0, Lcom/android/server/obl;->mFirstReport:Z
 
     return v0
 
     :cond_0
-    iget-boolean v1, p0, Lcom/android/server/obl;->cd:Z
+    iget-boolean v1, p0, Lcom/android/server/obl;->mFirstReport:Z
 
     if-eqz v1, :cond_1
 
-    iput-boolean v2, p0, Lcom/android/server/obl;->cd:Z
+    iput-boolean v2, p0, Lcom/android/server/obl;->mFirstReport:Z
 
     return v0
 
@@ -1216,7 +1216,7 @@
 
     if-eqz v1, :cond_2
 
-    sput-boolean v2, Lcom/android/server/obl;->pd:Z
+    sput-boolean v2, Lcom/android/server/obl;->sd:Z
 
     :cond_2
     invoke-virtual {p0}, Lcom/android/server/obl;->E()Z
@@ -1225,11 +1225,11 @@
 
     if-eqz v1, :cond_3
 
-    iget-boolean v1, p0, Lcom/android/server/obl;->dd:Z
+    iget-boolean v1, p0, Lcom/android/server/obl;->hd:Z
 
     if-eqz v1, :cond_3
 
-    iget-boolean v1, p0, Lcom/android/server/obl;->cd:Z
+    iget-boolean v1, p0, Lcom/android/server/obl;->mFirstReport:Z
 
     if-eqz v1, :cond_4
 
@@ -1363,11 +1363,11 @@
     :cond_0
     iget p1, p0, Lcom/android/server/obl;->mPolicy:I
 
-    invoke-direct {p0, p1}, Lcom/android/server/obl;->Ha(I)V
+    invoke-direct {p0, p1}, Lcom/android/server/obl;->Ka(I)V
 
     iget p1, p0, Lcom/android/server/obl;->mPolicy:I
 
-    invoke-direct {p0, p1}, Lcom/android/server/obl;->Ia(I)V
+    invoke-direct {p0, p1}, Lcom/android/server/obl;->La(I)V
 
     :cond_1
     return-void
@@ -1378,7 +1378,7 @@
 
     if-eqz p1, :cond_1
 
-    sput-object p1, Lcom/android/server/obl;->nd:Lcom/android/server/DeviceIdleController$DeviceIdleControllerInner;
+    sput-object p1, Lcom/android/server/obl;->qd:Lcom/android/server/DeviceIdleController$DeviceIdleControllerInner;
 
     invoke-virtual {p1}, Lcom/android/server/DeviceIdleController$DeviceIdleControllerInner;->getContext()Landroid/content/Context;
 
@@ -1471,11 +1471,11 @@
     :cond_0
     iget p1, p0, Lcom/android/server/obl;->mPolicy:I
 
-    invoke-direct {p0, p1}, Lcom/android/server/obl;->Ha(I)V
+    invoke-direct {p0, p1}, Lcom/android/server/obl;->Ka(I)V
 
     iget p1, p0, Lcom/android/server/obl;->mPolicy:I
 
-    invoke-direct {p0, p1}, Lcom/android/server/obl;->Ia(I)V
+    invoke-direct {p0, p1}, Lcom/android/server/obl;->La(I)V
 
     :cond_1
     return-void
@@ -1486,7 +1486,7 @@
 
     if-eqz p1, :cond_0
 
-    sput-object p1, Lcom/android/server/obl;->kc:Lcom/android/server/LocationManagerService$LocationManagerServiceInner;
+    sput-object p1, Lcom/android/server/obl;->oc:Lcom/android/server/LocationManagerService$LocationManagerServiceInner;
 
     invoke-virtual {p1}, Lcom/android/server/LocationManagerService$LocationManagerServiceInner;->getService()Lcom/android/server/LocationManagerService;
 
@@ -1498,7 +1498,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/server/obl;->lc:Ljava/lang/Object;
+    iput-object v0, p0, Lcom/android/server/obl;->pc:Ljava/lang/Object;
 
     invoke-virtual {p1}, Lcom/android/server/LocationManagerService$LocationManagerServiceInner;->getReceivers()Ljava/util/HashMap;
 
@@ -1510,13 +1510,13 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/server/obl;->gd:Ljava/util/ArrayList;
+    iput-object v0, p0, Lcom/android/server/obl;->kd:Ljava/util/ArrayList;
 
     invoke-virtual {p1}, Lcom/android/server/LocationManagerService$LocationManagerServiceInner;->getHighPowerIntervalMs()J
 
     move-result-wide v0
 
-    iput-wide v0, p0, Lcom/android/server/obl;->ed:J
+    iput-wide v0, p0, Lcom/android/server/obl;->jd:J
 
     :cond_0
     return-void
@@ -1525,7 +1525,7 @@
 .method public requestLocationUpdatesOverride()Z
     .locals 9
 
-    sget-object v0, Lcom/android/server/obl;->nd:Lcom/android/server/DeviceIdleController$DeviceIdleControllerInner;
+    sget-object v0, Lcom/android/server/obl;->qd:Lcom/android/server/DeviceIdleController$DeviceIdleControllerInner;
 
     invoke-virtual {v0}, Lcom/android/server/DeviceIdleController$DeviceIdleControllerInner;->getLocationManager()Landroid/location/LocationManager;
 
@@ -1535,7 +1535,7 @@
 
     if-eqz v0, :cond_0
 
-    iget-boolean v0, p0, Lcom/android/server/obl;->dd:Z
+    iget-boolean v0, p0, Lcom/android/server/obl;->hd:Z
 
     if-eqz v0, :cond_0
 
@@ -1557,13 +1557,13 @@
 
     if-eqz v0, :cond_0
 
-    sget-object v0, Lcom/android/server/obl;->nd:Lcom/android/server/DeviceIdleController$DeviceIdleControllerInner;
+    sget-object v0, Lcom/android/server/obl;->qd:Lcom/android/server/DeviceIdleController$DeviceIdleControllerInner;
 
     const/4 v1, 0x1
 
     invoke-virtual {v0, v1}, Lcom/android/server/DeviceIdleController$DeviceIdleControllerInner;->setHasGps(Z)V
 
-    iput-boolean v1, p0, Lcom/android/server/obl;->cd:Z
+    iput-boolean v1, p0, Lcom/android/server/obl;->mFirstReport:Z
 
     iget-object v2, p0, Lcom/android/server/obl;->mLocationManager:Landroid/location/LocationManager;
 
@@ -1583,7 +1583,7 @@
 
     invoke-virtual/range {v2 .. v8}, Landroid/location/LocationManager;->requestLocationUpdates(Ljava/lang/String;JFLandroid/location/LocationListener;Landroid/os/Looper;)V
 
-    sget-object p0, Lcom/android/server/obl;->nd:Lcom/android/server/DeviceIdleController$DeviceIdleControllerInner;
+    sget-object p0, Lcom/android/server/obl;->qd:Lcom/android/server/DeviceIdleController$DeviceIdleControllerInner;
 
     invoke-virtual {p0, v1}, Lcom/android/server/DeviceIdleController$DeviceIdleControllerInner;->setLocating(Z)V
 
@@ -1610,7 +1610,7 @@
 
     move-result v0
 
-    iput-boolean v0, p0, Lcom/android/server/obl;->dd:Z
+    iput-boolean v0, p0, Lcom/android/server/obl;->hd:Z
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -1620,7 +1620,7 @@
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean v2, p0, Lcom/android/server/obl;->dd:Z
+    iget-boolean v2, p0, Lcom/android/server/obl;->hd:Z
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -1632,7 +1632,7 @@
 
     invoke-static {v2, v0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    iget-boolean v0, p0, Lcom/android/server/obl;->dd:Z
+    iget-boolean v0, p0, Lcom/android/server/obl;->hd:Z
 
     iget-object p0, p0, Lcom/android/server/obl;->mDeviceIdleController:Lcom/android/server/DeviceIdleController;
 
@@ -1735,11 +1735,11 @@
 
     iget p1, p0, Lcom/android/server/obl;->mPolicy:I
 
-    invoke-direct {p0, p1}, Lcom/android/server/obl;->Ha(I)V
+    invoke-direct {p0, p1}, Lcom/android/server/obl;->Ka(I)V
 
     iget p1, p0, Lcom/android/server/obl;->mPolicy:I
 
-    invoke-direct {p0, p1}, Lcom/android/server/obl;->Ia(I)V
+    invoke-direct {p0, p1}, Lcom/android/server/obl;->La(I)V
 
     new-instance p0, Ljava/lang/StringBuilder;
 
@@ -1831,7 +1831,7 @@
 
     if-ne v0, v1, :cond_1
 
-    iget-object v0, p0, Lcom/android/server/obl;->lc:Ljava/lang/Object;
+    iget-object v0, p0, Lcom/android/server/obl;->pc:Ljava/lang/Object;
 
     monitor-enter v0
 

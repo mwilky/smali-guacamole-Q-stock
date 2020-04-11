@@ -4,13 +4,13 @@
 
 
 # instance fields
-.field private cAa:Ljava/math/BigInteger;
+.field private aBa:Ljava/math/BigInteger;
 
-.field private dAa:Ljava/math/BigInteger;
+.field private bBa:Ljava/math/BigInteger;
+
+.field private cBa:Ljava/math/BigInteger;
 
 .field private e:Ljava/math/BigInteger;
-
-.field private eAa:Ljava/math/BigInteger;
 
 .field private p:Ljava/math/BigInteger;
 
@@ -31,25 +31,17 @@
 
     iput-object p5, p0, Lorg/bouncycastle/crypto/wtn/cgv;->q:Ljava/math/BigInteger;
 
-    iput-object p6, p0, Lorg/bouncycastle/crypto/wtn/cgv;->cAa:Ljava/math/BigInteger;
+    iput-object p6, p0, Lorg/bouncycastle/crypto/wtn/cgv;->aBa:Ljava/math/BigInteger;
 
-    iput-object p7, p0, Lorg/bouncycastle/crypto/wtn/cgv;->dAa:Ljava/math/BigInteger;
+    iput-object p7, p0, Lorg/bouncycastle/crypto/wtn/cgv;->bBa:Ljava/math/BigInteger;
 
-    iput-object p8, p0, Lorg/bouncycastle/crypto/wtn/cgv;->eAa:Ljava/math/BigInteger;
+    iput-object p8, p0, Lorg/bouncycastle/crypto/wtn/cgv;->cBa:Ljava/math/BigInteger;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public fj()Ljava/math/BigInteger;
-    .locals 0
-
-    iget-object p0, p0, Lorg/bouncycastle/crypto/wtn/cgv;->cAa:Ljava/math/BigInteger;
-
-    return-object p0
-.end method
-
 .method public getP()Ljava/math/BigInteger;
     .locals 0
 
@@ -74,18 +66,26 @@
     return-object p0
 .end method
 
-.method public gj()Ljava/math/BigInteger;
+.method public jj()Ljava/math/BigInteger;
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/crypto/wtn/cgv;->dAa:Ljava/math/BigInteger;
+    iget-object p0, p0, Lorg/bouncycastle/crypto/wtn/cgv;->aBa:Ljava/math/BigInteger;
 
     return-object p0
 .end method
 
-.method public hj()Ljava/math/BigInteger;
+.method public kj()Ljava/math/BigInteger;
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/crypto/wtn/cgv;->eAa:Ljava/math/BigInteger;
+    iget-object p0, p0, Lorg/bouncycastle/crypto/wtn/cgv;->bBa:Ljava/math/BigInteger;
+
+    return-object p0
+.end method
+
+.method public lj()Ljava/math/BigInteger;
+    .locals 0
+
+    iget-object p0, p0, Lorg/bouncycastle/crypto/wtn/cgv;->cBa:Ljava/math/BigInteger;
 
     return-object p0
 .end method

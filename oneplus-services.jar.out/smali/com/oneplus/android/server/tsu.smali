@@ -21,9 +21,9 @@
 
 .field private static final TAG:Ljava/lang/String; = "tsu"
 
-.field private static final tV:Ljava/lang/String; = "bt_of_off_package_name"
+.field private static final tW:Ljava/lang/String; = "bt_of_off_package_name"
 
-.field private static final uV:I = 0x1
+.field private static final uW:I = 0x1
 
 
 # instance fields

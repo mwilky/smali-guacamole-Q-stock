@@ -16,7 +16,7 @@
 
     invoke-direct {p0}, Lorg/bouncycastle/asn1/vdb;-><init>()V
 
-    invoke-static {p1}, Lorg/bouncycastle/util/Strings;->Va(Ljava/lang/String;)[B
+    invoke-static {p1}, Lorg/bouncycastle/util/Strings;->Wa(Ljava/lang/String;)[B
 
     move-result-object p1
 
@@ -200,7 +200,17 @@
     return p0
 .end method
 
-.method qg()I
+.method public toString()Ljava/lang/String;
+    .locals 0
+
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/O;->getString()Ljava/lang/String;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method ug()I
     .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -212,7 +222,7 @@
 
     array-length v0, v0
 
-    invoke-static {v0}, Lorg/bouncycastle/asn1/ia;->ba(I)I
+    invoke-static {v0}, Lorg/bouncycastle/asn1/ia;->ea(I)I
 
     move-result v0
 
@@ -225,16 +235,6 @@
     add-int/2addr v0, p0
 
     return v0
-.end method
-
-.method public toString()Ljava/lang/String;
-    .locals 0
-
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/O;->getString()Ljava/lang/String;
-
-    move-result-object p0
-
-    return-object p0
 .end method
 
 .method zta(Lorg/bouncycastle/asn1/ugm;)V

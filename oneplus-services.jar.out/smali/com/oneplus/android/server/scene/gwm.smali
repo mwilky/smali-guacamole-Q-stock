@@ -18,7 +18,7 @@
 
 
 # instance fields
-.field final synthetic cea:Ljava/lang/String;
+.field final synthetic Yea:Ljava/lang/String;
 
 .field final synthetic this$0:Lcom/oneplus/android/server/scene/OemSceneCallBlock;
 
@@ -29,7 +29,7 @@
 
     iput-object p1, p0, Lcom/oneplus/android/server/scene/gwm;->this$0:Lcom/oneplus/android/server/scene/OemSceneCallBlock;
 
-    iput-object p2, p0, Lcom/oneplus/android/server/scene/gwm;->cea:Ljava/lang/String;
+    iput-object p2, p0, Lcom/oneplus/android/server/scene/gwm;->Yea:Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -45,11 +45,11 @@
 
     iget-object v1, p0, Lcom/oneplus/android/server/scene/gwm;->this$0:Lcom/oneplus/android/server/scene/OemSceneCallBlock;
 
-    invoke-static {v1}, Lcom/oneplus/android/server/scene/OemSceneCallBlock;->access$300(Lcom/oneplus/android/server/scene/OemSceneCallBlock;)Landroid/content/Context;
+    invoke-static {v1}, Lcom/oneplus/android/server/scene/OemSceneCallBlock;->access$200(Lcom/oneplus/android/server/scene/OemSceneCallBlock;)Landroid/content/Context;
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/oneplus/android/server/scene/gwm;->cea:Ljava/lang/String;
+    iget-object v2, p0, Lcom/oneplus/android/server/scene/gwm;->Yea:Ljava/lang/String;
 
     invoke-direct {v0, v1, v2}, Lcom/oneplus/config/ConfigGrabber;-><init>(Landroid/content/Context;Ljava/lang/String;)V
 

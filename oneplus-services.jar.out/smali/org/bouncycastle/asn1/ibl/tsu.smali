@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field private final _ta:Lorg/bouncycastle/asn1/ibl/ssp;
+.field private final Yua:Lorg/bouncycastle/asn1/ibl/ssp;
 
 .field private final g:Lorg/bouncycastle/asn1/ywr;
 
-.field private final koa:Lorg/bouncycastle/asn1/ywr;
+.field private final jpa:Lorg/bouncycastle/asn1/ywr;
 
 .field private final p:Lorg/bouncycastle/asn1/ywr;
 
@@ -57,9 +57,9 @@
     const/4 p1, 0x0
 
     :goto_0
-    iput-object p1, p0, Lorg/bouncycastle/asn1/ibl/tsu;->koa:Lorg/bouncycastle/asn1/ywr;
+    iput-object p1, p0, Lorg/bouncycastle/asn1/ibl/tsu;->jpa:Lorg/bouncycastle/asn1/ywr;
 
-    iput-object p5, p0, Lorg/bouncycastle/asn1/ibl/tsu;->_ta:Lorg/bouncycastle/asn1/ibl/ssp;
+    iput-object p5, p0, Lorg/bouncycastle/asn1/ibl/tsu;->Yua:Lorg/bouncycastle/asn1/ibl/ssp;
 
     return-void
 
@@ -112,7 +112,7 @@
 
     if-gt v0, v1, :cond_2
 
-    invoke-virtual {p1}, Lorg/bouncycastle/asn1/obl;->Fg()Ljava/util/Enumeration;
+    invoke-virtual {p1}, Lorg/bouncycastle/asn1/obl;->Jg()Ljava/util/Enumeration;
 
     move-result-object p1
 
@@ -162,7 +162,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lorg/bouncycastle/asn1/ibl/tsu;->koa:Lorg/bouncycastle/asn1/ywr;
+    iput-object v0, p0, Lorg/bouncycastle/asn1/ibl/tsu;->jpa:Lorg/bouncycastle/asn1/ywr;
 
     invoke-static {p1}, Lorg/bouncycastle/asn1/ibl/tsu;->zta(Ljava/util/Enumeration;)Lorg/bouncycastle/asn1/ssp;
 
@@ -171,7 +171,7 @@
     goto :goto_0
 
     :cond_0
-    iput-object v1, p0, Lorg/bouncycastle/asn1/ibl/tsu;->koa:Lorg/bouncycastle/asn1/ywr;
+    iput-object v1, p0, Lorg/bouncycastle/asn1/ibl/tsu;->jpa:Lorg/bouncycastle/asn1/ywr;
 
     :goto_0
     if-eqz v0, :cond_1
@@ -184,12 +184,12 @@
 
     move-result-object p1
 
-    iput-object p1, p0, Lorg/bouncycastle/asn1/ibl/tsu;->_ta:Lorg/bouncycastle/asn1/ibl/ssp;
+    iput-object p1, p0, Lorg/bouncycastle/asn1/ibl/tsu;->Yua:Lorg/bouncycastle/asn1/ibl/ssp;
 
     goto :goto_1
 
     :cond_1
-    iput-object v1, p0, Lorg/bouncycastle/asn1/ibl/tsu;->_ta:Lorg/bouncycastle/asn1/ibl/ssp;
+    iput-object v1, p0, Lorg/bouncycastle/asn1/ibl/tsu;->Yua:Lorg/bouncycastle/asn1/ibl/ssp;
 
     :goto_1
     return-void
@@ -290,12 +290,20 @@
 
 
 # virtual methods
+.method public Bi()Lorg/bouncycastle/asn1/ibl/ssp;
+    .locals 0
+
+    iget-object p0, p0, Lorg/bouncycastle/asn1/ibl/tsu;->Yua:Lorg/bouncycastle/asn1/ibl/ssp;
+
+    return-object p0
+.end method
+
 .method public getG()Ljava/math/BigInteger;
     .locals 0
 
     iget-object p0, p0, Lorg/bouncycastle/asn1/ibl/tsu;->g:Lorg/bouncycastle/asn1/ywr;
 
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/ywr;->Eg()Ljava/math/BigInteger;
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/ywr;->Ig()Ljava/math/BigInteger;
 
     move-result-object p0
 
@@ -307,7 +315,7 @@
 
     iget-object p0, p0, Lorg/bouncycastle/asn1/ibl/tsu;->p:Lorg/bouncycastle/asn1/ywr;
 
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/ywr;->Eg()Ljava/math/BigInteger;
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/ywr;->Ig()Ljava/math/BigInteger;
 
     move-result-object p0
 
@@ -319,17 +327,17 @@
 
     iget-object p0, p0, Lorg/bouncycastle/asn1/ibl/tsu;->q:Lorg/bouncycastle/asn1/ywr;
 
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/ywr;->Eg()Ljava/math/BigInteger;
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/ywr;->Ig()Ljava/math/BigInteger;
 
     move-result-object p0
 
     return-object p0
 .end method
 
-.method public ig()Ljava/math/BigInteger;
+.method public mg()Ljava/math/BigInteger;
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/asn1/ibl/tsu;->koa:Lorg/bouncycastle/asn1/ywr;
+    iget-object p0, p0, Lorg/bouncycastle/asn1/ibl/tsu;->jpa:Lorg/bouncycastle/asn1/ywr;
 
     if-nez p0, :cond_0
 
@@ -338,7 +346,7 @@
     return-object p0
 
     :cond_0
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/ywr;->Eg()Ljava/math/BigInteger;
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/ywr;->Ig()Ljava/math/BigInteger;
 
     move-result-object p0
 
@@ -364,14 +372,14 @@
 
     invoke-virtual {v0, v1}, Lorg/bouncycastle/asn1/cno;->you(Lorg/bouncycastle/asn1/ssp;)V
 
-    iget-object v1, p0, Lorg/bouncycastle/asn1/ibl/tsu;->koa:Lorg/bouncycastle/asn1/ywr;
+    iget-object v1, p0, Lorg/bouncycastle/asn1/ibl/tsu;->jpa:Lorg/bouncycastle/asn1/ywr;
 
     if-eqz v1, :cond_0
 
     invoke-virtual {v0, v1}, Lorg/bouncycastle/asn1/cno;->you(Lorg/bouncycastle/asn1/ssp;)V
 
     :cond_0
-    iget-object p0, p0, Lorg/bouncycastle/asn1/ibl/tsu;->_ta:Lorg/bouncycastle/asn1/ibl/ssp;
+    iget-object p0, p0, Lorg/bouncycastle/asn1/ibl/tsu;->Yua:Lorg/bouncycastle/asn1/ibl/ssp;
 
     if-eqz p0, :cond_1
 
@@ -381,14 +389,6 @@
     new-instance p0, Lorg/bouncycastle/asn1/G;
 
     invoke-direct {p0, v0}, Lorg/bouncycastle/asn1/G;-><init>(Lorg/bouncycastle/asn1/cno;)V
-
-    return-object p0
-.end method
-
-.method public xi()Lorg/bouncycastle/asn1/ibl/ssp;
-    .locals 0
-
-    iget-object p0, p0, Lorg/bouncycastle/asn1/ibl/tsu;->_ta:Lorg/bouncycastle/asn1/ibl/ssp;
 
     return-object p0
 .end method

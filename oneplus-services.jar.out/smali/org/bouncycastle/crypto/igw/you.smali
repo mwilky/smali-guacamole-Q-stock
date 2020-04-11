@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field yla:Ljava/security/SecureRandom;
+.field xma:Ljava/security/SecureRandom;
 
 
 # direct methods
@@ -42,12 +42,12 @@
     goto :goto_0
 
     :cond_0
-    invoke-static {}, Lorg/bouncycastle/crypto/igw;->Ui()Ljava/security/SecureRandom;
+    invoke-static {}, Lorg/bouncycastle/crypto/igw;->Yi()Ljava/security/SecureRandom;
 
     move-result-object p1
 
     :goto_0
-    iput-object p1, p0, Lorg/bouncycastle/crypto/igw/you;->yla:Ljava/security/SecureRandom;
+    iput-object p1, p0, Lorg/bouncycastle/crypto/igw/you;->xma:Ljava/security/SecureRandom;
 
     return-void
 .end method
@@ -100,7 +100,7 @@
 
     if-ge p2, v1, :cond_0
 
-    iget-object v1, p0, Lorg/bouncycastle/crypto/igw/you;->yla:Ljava/security/SecureRandom;
+    iget-object v1, p0, Lorg/bouncycastle/crypto/igw/you;->xma:Ljava/security/SecureRandom;
 
     invoke-virtual {v1}, Ljava/security/SecureRandom;->nextInt()I
 

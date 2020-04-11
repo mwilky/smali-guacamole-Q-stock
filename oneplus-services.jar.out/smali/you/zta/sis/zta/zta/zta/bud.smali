@@ -89,7 +89,7 @@
 
 
 # virtual methods
-.method public Uj()Lyou/zta/sis/zta/cno;
+.method public Yj()Lyou/zta/sis/zta/cno;
     .locals 1
 
     const/16 v0, 0xc
@@ -109,7 +109,7 @@
     return-object p0
 .end method
 
-.method public Vj()Ljava/lang/String;
+.method public Zj()Ljava/lang/String;
     .locals 0
 
     const-string p0, "SecP384R1Field"
@@ -117,7 +117,7 @@
     return-object p0
 .end method
 
-.method public Wj()Z
+.method public _j()Z
     .locals 1
 
     iget-object p0, p0, Lyou/zta/sis/zta/zta/zta/bud;->x:[I
@@ -131,7 +131,7 @@
     return p0
 .end method
 
-.method public Xj()Lyou/zta/sis/zta/cno;
+.method public ak()Lyou/zta/sis/zta/cno;
     .locals 7
 
     iget-object v0, p0, Lyou/zta/sis/zta/zta/zta/bud;->x:[I
@@ -266,7 +266,7 @@
     return-object p0
 .end method
 
-.method public Yj()Z
+.method public bk()Z
     .locals 2
 
     iget-object p0, p0, Lyou/zta/sis/zta/zta/zta/bud;->x:[I

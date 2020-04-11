@@ -18,11 +18,11 @@
 
 .field private ivSize:I
 
-.field private sna:[Ljava/lang/Class;
+.field private qoa:[Ljava/lang/Class;
 
-.field protected tna:Ljava/security/AlgorithmParameters;
+.field protected roa:Ljava/security/AlgorithmParameters;
 
-.field protected una:Lorg/bouncycastle/crypto/ire;
+.field protected soa:Lorg/bouncycastle/crypto/ire;
 
 
 # direct methods
@@ -47,7 +47,7 @@
 
     aput-object v1, v0, v2
 
-    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/util/sis;->sna:[Ljava/lang/Class;
+    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/util/sis;->qoa:[Ljava/lang/Class;
 
     new-instance v0, Lorg/bouncycastle/jcajce/tsu/you;
 
@@ -57,9 +57,9 @@
 
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/util/sis;->tna:Ljava/security/AlgorithmParameters;
+    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/util/sis;->roa:Ljava/security/AlgorithmParameters;
 
-    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/util/sis;->una:Lorg/bouncycastle/crypto/ire;
+    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/util/sis;->soa:Lorg/bouncycastle/crypto/ire;
 
     return-void
 .end method
@@ -183,7 +183,7 @@
     const-string v0, "Unknown key type "
 
     :try_start_0
-    iget-object v1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/util/sis;->una:Lorg/bouncycastle/crypto/ire;
+    iget-object v1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/util/sis;->soa:Lorg/bouncycastle/crypto/ire;
 
     const/4 v2, 0x0
 
@@ -198,7 +198,7 @@
     goto :goto_0
 
     :cond_0
-    iget-object v1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/util/sis;->una:Lorg/bouncycastle/crypto/ire;
+    iget-object v1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/util/sis;->soa:Lorg/bouncycastle/crypto/ire;
 
     array-length v3, p1
 
@@ -478,7 +478,7 @@
     if-eqz p1, :cond_1
 
     :try_start_0
-    iget-object v0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/util/sis;->una:Lorg/bouncycastle/crypto/ire;
+    iget-object v0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/util/sis;->soa:Lorg/bouncycastle/crypto/ire;
 
     const/4 v1, 0x0
 
@@ -493,7 +493,7 @@
     return-object p0
 
     :cond_0
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/util/sis;->una:Lorg/bouncycastle/crypto/ire;
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/util/sis;->soa:Lorg/bouncycastle/crypto/ire;
 
     array-length v0, p1
 
@@ -528,7 +528,7 @@
     throw p0
 .end method
 
-.method protected final ra(Ljava/lang/String;)Ljava/security/AlgorithmParameters;
+.method protected final sa(Ljava/lang/String;)Ljava/security/AlgorithmParameters;
     .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {

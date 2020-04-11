@@ -12,7 +12,7 @@
     return-void
 .end method
 
-.method public static Ea(Ljava/lang/String;)Ljava/lang/String;
+.method public static Fa(Ljava/lang/String;)Ljava/lang/String;
     .locals 5
 
     new-instance v0, Ljava/lang/StringBuffer;
@@ -70,7 +70,7 @@
     return-object p0
 .end method
 
-.method private static Wc(Ljava/lang/String;)Lorg/bouncycastle/asn1/vdb;
+.method private static Zc(Ljava/lang/String;)Lorg/bouncycastle/asn1/vdb;
     .locals 3
 
     const/4 v0, 0x1
@@ -173,7 +173,7 @@
 
     if-ne v0, v2, :cond_0
 
-    invoke-static {p0}, Lorg/bouncycastle/asn1/bvj/zta/tsu;->Wc(Ljava/lang/String;)Lorg/bouncycastle/asn1/vdb;
+    invoke-static {p0}, Lorg/bouncycastle/asn1/bvj/zta/tsu;->Zc(Ljava/lang/String;)Lorg/bouncycastle/asn1/vdb;
 
     move-result-object v0
 
@@ -276,7 +276,7 @@
     move-result-object p0
 
     :cond_4
-    invoke-static {p0}, Lorg/bouncycastle/asn1/bvj/zta/tsu;->Ea(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p0}, Lorg/bouncycastle/asn1/bvj/zta/tsu;->Fa(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p0
 
@@ -959,7 +959,7 @@
 .method public static you(Lorg/bouncycastle/asn1/bvj/sis;Lorg/bouncycastle/asn1/bvj/sis;)Z
     .locals 4
 
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/bvj/sis;->xh()Z
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/bvj/sis;->Bh()Z
 
     move-result v0
 
@@ -967,17 +967,17 @@
 
     if-eqz v0, :cond_4
 
-    invoke-virtual {p1}, Lorg/bouncycastle/asn1/bvj/sis;->xh()Z
+    invoke-virtual {p1}, Lorg/bouncycastle/asn1/bvj/sis;->Bh()Z
 
     move-result v0
 
     if-eqz v0, :cond_3
 
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/bvj/sis;->wh()[Lorg/bouncycastle/asn1/bvj/zta;
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/bvj/sis;->Ah()[Lorg/bouncycastle/asn1/bvj/zta;
 
     move-result-object p0
 
-    invoke-virtual {p1}, Lorg/bouncycastle/asn1/bvj/sis;->wh()[Lorg/bouncycastle/asn1/bvj/zta;
+    invoke-virtual {p1}, Lorg/bouncycastle/asn1/bvj/sis;->Ah()[Lorg/bouncycastle/asn1/bvj/zta;
 
     move-result-object p1
 
@@ -1023,7 +1023,7 @@
     return v1
 
     :cond_4
-    invoke-virtual {p1}, Lorg/bouncycastle/asn1/bvj/sis;->xh()Z
+    invoke-virtual {p1}, Lorg/bouncycastle/asn1/bvj/sis;->Bh()Z
 
     move-result v0
 
@@ -1180,13 +1180,13 @@
 .method public static zta(Ljava/lang/StringBuffer;Lorg/bouncycastle/asn1/bvj/sis;Ljava/util/Hashtable;)V
     .locals 4
 
-    invoke-virtual {p1}, Lorg/bouncycastle/asn1/bvj/sis;->xh()Z
+    invoke-virtual {p1}, Lorg/bouncycastle/asn1/bvj/sis;->Bh()Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
-    invoke-virtual {p1}, Lorg/bouncycastle/asn1/bvj/sis;->wh()[Lorg/bouncycastle/asn1/bvj/zta;
+    invoke-virtual {p1}, Lorg/bouncycastle/asn1/bvj/sis;->Ah()[Lorg/bouncycastle/asn1/bvj/zta;
 
     move-result-object p1
 
@@ -1649,7 +1649,7 @@
 
     move-result-object p0
 
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/bvj/tsu;->Ah()[Lorg/bouncycastle/asn1/bvj/sis;
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/bvj/tsu;->Eh()[Lorg/bouncycastle/asn1/bvj/sis;
 
     move-result-object p0
 

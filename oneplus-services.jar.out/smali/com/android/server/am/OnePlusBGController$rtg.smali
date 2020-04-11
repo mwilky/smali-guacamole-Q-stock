@@ -350,7 +350,7 @@
     :sswitch_4
     iget-object p1, p0, Lcom/android/server/am/OnePlusBGController$rtg;->this$0:Lcom/android/server/am/OnePlusBGController;
 
-    invoke-virtual {p1}, Lcom/android/server/am/OnePlusBGController;->Gb()V
+    invoke-virtual {p1}, Lcom/android/server/am/OnePlusBGController;->Fb()V
 
     iget-object p1, p0, Lcom/android/server/am/OnePlusBGController$rtg;->this$0:Lcom/android/server/am/OnePlusBGController;
 

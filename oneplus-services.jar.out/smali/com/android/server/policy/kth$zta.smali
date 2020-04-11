@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field JC:Ljava/lang/String;
+.field JD:Ljava/lang/String;
 
 .field mPackageName:Ljava/lang/String;
 
@@ -47,15 +47,15 @@
 
 
 # virtual methods
-.method public M(Ljava/lang/String;)V
+.method public N(Ljava/lang/String;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/android/server/policy/kth$zta;->JC:Ljava/lang/String;
+    iput-object p1, p0, Lcom/android/server/policy/kth$zta;->JD:Ljava/lang/String;
 
     return-void
 .end method
 
-.method public N(Ljava/lang/String;)V
+.method public O(Ljava/lang/String;)V
     .locals 0
 
     :try_start_0
@@ -81,7 +81,7 @@
 .method public getAction()Ljava/lang/String;
     .locals 0
 
-    iget-object p0, p0, Lcom/android/server/policy/kth$zta;->JC:Ljava/lang/String;
+    iget-object p0, p0, Lcom/android/server/policy/kth$zta;->JD:Ljava/lang/String;
 
     return-object p0
 .end method
@@ -137,7 +137,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lcom/android/server/policy/kth$zta;->JC:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/server/policy/kth$zta;->JD:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 

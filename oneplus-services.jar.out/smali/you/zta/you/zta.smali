@@ -12,7 +12,7 @@
     return-void
 .end method
 
-.method public static Ka(Ljava/lang/String;)Lyou/zta/you/you/sis;
+.method public static La(Ljava/lang/String;)Lyou/zta/you/you/sis;
     .locals 8
 
     invoke-static {p0}, Lorg/bouncycastle/crypto/sis/bio;->getByName(Ljava/lang/String;)Lorg/bouncycastle/asn1/ibl/vju;
@@ -71,11 +71,11 @@
 
     move-result-object v3
 
-    invoke-virtual {v0}, Lorg/bouncycastle/asn1/ibl/vju;->Ei()Ljava/math/BigInteger;
+    invoke-virtual {v0}, Lorg/bouncycastle/asn1/ibl/vju;->Ii()Ljava/math/BigInteger;
 
     move-result-object v4
 
-    invoke-virtual {v0}, Lorg/bouncycastle/asn1/ibl/vju;->Di()Ljava/math/BigInteger;
+    invoke-virtual {v0}, Lorg/bouncycastle/asn1/ibl/vju;->Hi()Ljava/math/BigInteger;
 
     move-result-object v5
 

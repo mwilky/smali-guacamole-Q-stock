@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field Fsa:Lorg/bouncycastle/asn1/x509/ugm;
+.field Eta:Lorg/bouncycastle/asn1/x509/ugm;
 
 .field seq:Lorg/bouncycastle/asn1/obl;
 
@@ -107,7 +107,7 @@
 .method public getExtensions()Lorg/bouncycastle/asn1/x509/ugm;
     .locals 2
 
-    iget-object v0, p0, Lorg/bouncycastle/asn1/x509/e$zta;->Fsa:Lorg/bouncycastle/asn1/x509/ugm;
+    iget-object v0, p0, Lorg/bouncycastle/asn1/x509/e$zta;->Eta:Lorg/bouncycastle/asn1/x509/ugm;
 
     if-nez v0, :cond_0
 
@@ -133,10 +133,10 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lorg/bouncycastle/asn1/x509/e$zta;->Fsa:Lorg/bouncycastle/asn1/x509/ugm;
+    iput-object v0, p0, Lorg/bouncycastle/asn1/x509/e$zta;->Eta:Lorg/bouncycastle/asn1/x509/ugm;
 
     :cond_0
-    iget-object p0, p0, Lorg/bouncycastle/asn1/x509/e$zta;->Fsa:Lorg/bouncycastle/asn1/x509/ugm;
+    iget-object p0, p0, Lorg/bouncycastle/asn1/x509/e$zta;->Eta:Lorg/bouncycastle/asn1/x509/ugm;
 
     return-object p0
 .end method
@@ -183,7 +183,15 @@
     return p0
 .end method
 
-.method public ri()Lorg/bouncycastle/asn1/ywr;
+.method public toASN1Primitive()Lorg/bouncycastle/asn1/vdb;
+    .locals 0
+
+    iget-object p0, p0, Lorg/bouncycastle/asn1/x509/e$zta;->seq:Lorg/bouncycastle/asn1/obl;
+
+    return-object p0
+.end method
+
+.method public vi()Lorg/bouncycastle/asn1/ywr;
     .locals 1
 
     iget-object p0, p0, Lorg/bouncycastle/asn1/x509/e$zta;->seq:Lorg/bouncycastle/asn1/obl;
@@ -197,14 +205,6 @@
     invoke-static {p0}, Lorg/bouncycastle/asn1/ywr;->getInstance(Ljava/lang/Object;)Lorg/bouncycastle/asn1/ywr;
 
     move-result-object p0
-
-    return-object p0
-.end method
-
-.method public toASN1Primitive()Lorg/bouncycastle/asn1/vdb;
-    .locals 0
-
-    iget-object p0, p0, Lorg/bouncycastle/asn1/x509/e$zta;->seq:Lorg/bouncycastle/asn1/obl;
 
     return-object p0
 .end method

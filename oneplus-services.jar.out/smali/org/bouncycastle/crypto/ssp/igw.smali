@@ -22,7 +22,7 @@
     return-void
 .end method
 
-.method private jc(I)[B
+.method private nc(I)[B
     .locals 7
 
     iget-object v0, p0, Lorg/bouncycastle/crypto/ssp/igw;->digest:Lorg/bouncycastle/crypto/qbh;
@@ -98,7 +98,7 @@
 
 
 # virtual methods
-.method public da(I)Lorg/bouncycastle/crypto/kth;
+.method public ga(I)Lorg/bouncycastle/crypto/kth;
     .locals 0
 
     invoke-virtual {p0, p1}, Lorg/bouncycastle/crypto/ssp/igw;->generateDerivedParameters(I)Lorg/bouncycastle/crypto/kth;
@@ -113,7 +113,7 @@
 
     div-int/lit8 p1, p1, 0x8
 
-    invoke-direct {p0, p1}, Lorg/bouncycastle/crypto/ssp/igw;->jc(I)[B
+    invoke-direct {p0, p1}, Lorg/bouncycastle/crypto/ssp/igw;->nc(I)[B
 
     move-result-object p0
 
@@ -145,7 +145,7 @@
 
     add-int v0, p1, p2
 
-    invoke-direct {p0, v0}, Lorg/bouncycastle/crypto/ssp/igw;->jc(I)[B
+    invoke-direct {p0, v0}, Lorg/bouncycastle/crypto/ssp/igw;->nc(I)[B
 
     move-result-object p0
 

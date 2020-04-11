@@ -15,23 +15,23 @@
 
 
 # static fields
-.field static final synthetic mF:[I
+.field static final synthetic lG:[I
 
-.field static final synthetic nF:[I
+.field static final synthetic nG:[I
 
-.field static final synthetic oF:[I
+.field static final synthetic oG:[I
 
-.field static final synthetic pF:[I
+.field static final synthetic pG:[I
 
-.field static final synthetic qF:[I
+.field static final synthetic qG:[I
 
-.field static final synthetic rF:[I
+.field static final synthetic rG:[I
 
-.field static final synthetic sF:[I
+.field static final synthetic sG:[I
 
-.field static final synthetic tF:[I
+.field static final synthetic tG:[I
 
-.field static final synthetic uF:[I
+.field static final synthetic uG:[I
 
 
 # direct methods
@@ -46,12 +46,12 @@
 
     new-array v0, v0, [I
 
-    sput-object v0, Lcom/android/server/power/kth;->uF:[I
+    sput-object v0, Lcom/android/server/power/kth;->uG:[I
 
     const/4 v0, 0x1
 
     :try_start_0
-    sget-object v1, Lcom/android/server/power/kth;->uF:[I
+    sget-object v1, Lcom/android/server/power/kth;->uG:[I
 
     sget-object v2, Lcom/android/server/power/OnePlusStandbyAnalyzer$PACKET_TYPE;->NETWORK_MOBILE_RX_DATA:Lcom/android/server/power/OnePlusStandbyAnalyzer$PACKET_TYPE;
 
@@ -67,7 +67,7 @@
     const/4 v1, 0x2
 
     :try_start_1
-    sget-object v2, Lcom/android/server/power/kth;->uF:[I
+    sget-object v2, Lcom/android/server/power/kth;->uG:[I
 
     sget-object v3, Lcom/android/server/power/OnePlusStandbyAnalyzer$PACKET_TYPE;->NETWORK_MOBILE_TX_DATA:Lcom/android/server/power/OnePlusStandbyAnalyzer$PACKET_TYPE;
 
@@ -83,7 +83,7 @@
     const/4 v2, 0x3
 
     :try_start_2
-    sget-object v3, Lcom/android/server/power/kth;->uF:[I
+    sget-object v3, Lcom/android/server/power/kth;->uG:[I
 
     sget-object v4, Lcom/android/server/power/OnePlusStandbyAnalyzer$PACKET_TYPE;->NETWORK_WIFI_RX_DATA:Lcom/android/server/power/OnePlusStandbyAnalyzer$PACKET_TYPE;
 
@@ -99,7 +99,7 @@
     const/4 v3, 0x4
 
     :try_start_3
-    sget-object v4, Lcom/android/server/power/kth;->uF:[I
+    sget-object v4, Lcom/android/server/power/kth;->uG:[I
 
     sget-object v5, Lcom/android/server/power/OnePlusStandbyAnalyzer$PACKET_TYPE;->NETWORK_WIFI_TX_DATA:Lcom/android/server/power/OnePlusStandbyAnalyzer$PACKET_TYPE;
 
@@ -120,12 +120,12 @@
 
     new-array v4, v4, [I
 
-    sput-object v4, Lcom/android/server/power/kth;->tF:[I
+    sput-object v4, Lcom/android/server/power/kth;->tG:[I
 
     :try_start_4
-    sget-object v4, Lcom/android/server/power/kth;->tF:[I
+    sget-object v4, Lcom/android/server/power/kth;->tG:[I
 
-    sget-object v5, Lcom/android/server/power/OnePlusStandbyAnalyzer$KERNEL_WAKEUP_TYPE;->_ia:Lcom/android/server/power/OnePlusStandbyAnalyzer$KERNEL_WAKEUP_TYPE;
+    sget-object v5, Lcom/android/server/power/OnePlusStandbyAnalyzer$KERNEL_WAKEUP_TYPE;->Zja:Lcom/android/server/power/OnePlusStandbyAnalyzer$KERNEL_WAKEUP_TYPE;
 
     invoke-virtual {v5}, Ljava/lang/Enum;->ordinal()I
 
@@ -137,9 +137,9 @@
 
     :catch_4
     :try_start_5
-    sget-object v4, Lcom/android/server/power/kth;->tF:[I
+    sget-object v4, Lcom/android/server/power/kth;->tG:[I
 
-    sget-object v5, Lcom/android/server/power/OnePlusStandbyAnalyzer$KERNEL_WAKEUP_TYPE;->aja:Lcom/android/server/power/OnePlusStandbyAnalyzer$KERNEL_WAKEUP_TYPE;
+    sget-object v5, Lcom/android/server/power/OnePlusStandbyAnalyzer$KERNEL_WAKEUP_TYPE;->_ja:Lcom/android/server/power/OnePlusStandbyAnalyzer$KERNEL_WAKEUP_TYPE;
 
     invoke-virtual {v5}, Ljava/lang/Enum;->ordinal()I
 
@@ -151,7 +151,7 @@
 
     :catch_5
     :try_start_6
-    sget-object v4, Lcom/android/server/power/kth;->tF:[I
+    sget-object v4, Lcom/android/server/power/kth;->tG:[I
 
     sget-object v5, Lcom/android/server/power/OnePlusStandbyAnalyzer$KERNEL_WAKEUP_TYPE;->modem:Lcom/android/server/power/OnePlusStandbyAnalyzer$KERNEL_WAKEUP_TYPE;
 
@@ -172,12 +172,12 @@
 
     new-array v4, v4, [I
 
-    sput-object v4, Lcom/android/server/power/kth;->sF:[I
+    sput-object v4, Lcom/android/server/power/kth;->sG:[I
 
     :try_start_7
-    sget-object v4, Lcom/android/server/power/kth;->sF:[I
+    sget-object v4, Lcom/android/server/power/kth;->sG:[I
 
-    sget-object v5, Lcom/android/server/power/OnePlusStandbyAnalyzer$TRIGGER_QXDM_REASON;->dka:Lcom/android/server/power/OnePlusStandbyAnalyzer$TRIGGER_QXDM_REASON;
+    sget-object v5, Lcom/android/server/power/OnePlusStandbyAnalyzer$TRIGGER_QXDM_REASON;->dla:Lcom/android/server/power/OnePlusStandbyAnalyzer$TRIGGER_QXDM_REASON;
 
     invoke-virtual {v5}, Ljava/lang/Enum;->ordinal()I
 
@@ -189,9 +189,9 @@
 
     :catch_7
     :try_start_8
-    sget-object v4, Lcom/android/server/power/kth;->sF:[I
+    sget-object v4, Lcom/android/server/power/kth;->sG:[I
 
-    sget-object v5, Lcom/android/server/power/OnePlusStandbyAnalyzer$TRIGGER_QXDM_REASON;->eka:Lcom/android/server/power/OnePlusStandbyAnalyzer$TRIGGER_QXDM_REASON;
+    sget-object v5, Lcom/android/server/power/OnePlusStandbyAnalyzer$TRIGGER_QXDM_REASON;->ela:Lcom/android/server/power/OnePlusStandbyAnalyzer$TRIGGER_QXDM_REASON;
 
     invoke-virtual {v5}, Ljava/lang/Enum;->ordinal()I
 
@@ -210,12 +210,12 @@
 
     new-array v4, v4, [I
 
-    sput-object v4, Lcom/android/server/power/kth;->rF:[I
+    sput-object v4, Lcom/android/server/power/kth;->rG:[I
 
     :try_start_9
-    sget-object v4, Lcom/android/server/power/kth;->rF:[I
+    sget-object v4, Lcom/android/server/power/kth;->rG:[I
 
-    sget-object v5, Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_MODE_TYPE;->tka:Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_MODE_TYPE;
+    sget-object v5, Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_MODE_TYPE;->tla:Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_MODE_TYPE;
 
     invoke-virtual {v5}, Ljava/lang/Enum;->ordinal()I
 
@@ -227,9 +227,9 @@
 
     :catch_9
     :try_start_a
-    sget-object v4, Lcom/android/server/power/kth;->rF:[I
+    sget-object v4, Lcom/android/server/power/kth;->rG:[I
 
-    sget-object v5, Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_MODE_TYPE;->wka:Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_MODE_TYPE;
+    sget-object v5, Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_MODE_TYPE;->wla:Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_MODE_TYPE;
 
     invoke-virtual {v5}, Ljava/lang/Enum;->ordinal()I
 
@@ -241,9 +241,9 @@
 
     :catch_a
     :try_start_b
-    sget-object v4, Lcom/android/server/power/kth;->rF:[I
+    sget-object v4, Lcom/android/server/power/kth;->rG:[I
 
-    sget-object v5, Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_MODE_TYPE;->uka:Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_MODE_TYPE;
+    sget-object v5, Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_MODE_TYPE;->ula:Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_MODE_TYPE;
 
     invoke-virtual {v5}, Ljava/lang/Enum;->ordinal()I
 
@@ -255,9 +255,9 @@
 
     :catch_b
     :try_start_c
-    sget-object v4, Lcom/android/server/power/kth;->rF:[I
+    sget-object v4, Lcom/android/server/power/kth;->rG:[I
 
-    sget-object v5, Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_MODE_TYPE;->vka:Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_MODE_TYPE;
+    sget-object v5, Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_MODE_TYPE;->vla:Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_MODE_TYPE;
 
     invoke-virtual {v5}, Ljava/lang/Enum;->ordinal()I
 
@@ -276,12 +276,12 @@
 
     new-array v4, v4, [I
 
-    sput-object v4, Lcom/android/server/power/kth;->qF:[I
+    sput-object v4, Lcom/android/server/power/kth;->qG:[I
 
     :try_start_d
-    sget-object v4, Lcom/android/server/power/kth;->qF:[I
+    sget-object v4, Lcom/android/server/power/kth;->qG:[I
 
-    sget-object v5, Lcom/android/server/power/OnePlusStandbyAnalyzer$SIM_ID;->xka:Lcom/android/server/power/OnePlusStandbyAnalyzer$SIM_ID;
+    sget-object v5, Lcom/android/server/power/OnePlusStandbyAnalyzer$SIM_ID;->xla:Lcom/android/server/power/OnePlusStandbyAnalyzer$SIM_ID;
 
     invoke-virtual {v5}, Ljava/lang/Enum;->ordinal()I
 
@@ -293,9 +293,9 @@
 
     :catch_d
     :try_start_e
-    sget-object v4, Lcom/android/server/power/kth;->qF:[I
+    sget-object v4, Lcom/android/server/power/kth;->qG:[I
 
-    sget-object v5, Lcom/android/server/power/OnePlusStandbyAnalyzer$SIM_ID;->yka:Lcom/android/server/power/OnePlusStandbyAnalyzer$SIM_ID;
+    sget-object v5, Lcom/android/server/power/OnePlusStandbyAnalyzer$SIM_ID;->yla:Lcom/android/server/power/OnePlusStandbyAnalyzer$SIM_ID;
 
     invoke-virtual {v5}, Ljava/lang/Enum;->ordinal()I
 
@@ -314,10 +314,10 @@
 
     new-array v4, v4, [I
 
-    sput-object v4, Lcom/android/server/power/kth;->pF:[I
+    sput-object v4, Lcom/android/server/power/kth;->pG:[I
 
     :try_start_f
-    sget-object v4, Lcom/android/server/power/kth;->pF:[I
+    sget-object v4, Lcom/android/server/power/kth;->pG:[I
 
     sget-object v5, Lcom/android/server/power/OnePlusStandbyAnalyzer$SNAPSHOT_TYPE;->START:Lcom/android/server/power/OnePlusStandbyAnalyzer$SNAPSHOT_TYPE;
 
@@ -331,7 +331,7 @@
 
     :catch_f
     :try_start_10
-    sget-object v4, Lcom/android/server/power/kth;->pF:[I
+    sget-object v4, Lcom/android/server/power/kth;->pG:[I
 
     sget-object v5, Lcom/android/server/power/OnePlusStandbyAnalyzer$SNAPSHOT_TYPE;->END:Lcom/android/server/power/OnePlusStandbyAnalyzer$SNAPSHOT_TYPE;
 
@@ -345,9 +345,9 @@
 
     :catch_10
     :try_start_11
-    sget-object v4, Lcom/android/server/power/kth;->pF:[I
+    sget-object v4, Lcom/android/server/power/kth;->pG:[I
 
-    sget-object v5, Lcom/android/server/power/OnePlusStandbyAnalyzer$SNAPSHOT_TYPE;->Uha:Lcom/android/server/power/OnePlusStandbyAnalyzer$SNAPSHOT_TYPE;
+    sget-object v5, Lcom/android/server/power/OnePlusStandbyAnalyzer$SNAPSHOT_TYPE;->Tia:Lcom/android/server/power/OnePlusStandbyAnalyzer$SNAPSHOT_TYPE;
 
     invoke-virtual {v5}, Ljava/lang/Enum;->ordinal()I
 
@@ -366,12 +366,12 @@
 
     new-array v4, v4, [I
 
-    sput-object v4, Lcom/android/server/power/kth;->oF:[I
+    sput-object v4, Lcom/android/server/power/kth;->oG:[I
 
     :try_start_12
-    sget-object v4, Lcom/android/server/power/kth;->oF:[I
+    sget-object v4, Lcom/android/server/power/kth;->oG:[I
 
-    sget-object v5, Lcom/android/server/power/OnePlusStandbyAnalyzer$CRITERIA_TYPE;->_ha:Lcom/android/server/power/OnePlusStandbyAnalyzer$CRITERIA_TYPE;
+    sget-object v5, Lcom/android/server/power/OnePlusStandbyAnalyzer$CRITERIA_TYPE;->Zia:Lcom/android/server/power/OnePlusStandbyAnalyzer$CRITERIA_TYPE;
 
     invoke-virtual {v5}, Ljava/lang/Enum;->ordinal()I
 
@@ -383,9 +383,9 @@
 
     :catch_12
     :try_start_13
-    sget-object v4, Lcom/android/server/power/kth;->oF:[I
+    sget-object v4, Lcom/android/server/power/kth;->oG:[I
 
-    sget-object v5, Lcom/android/server/power/OnePlusStandbyAnalyzer$CRITERIA_TYPE;->Dia:Lcom/android/server/power/OnePlusStandbyAnalyzer$CRITERIA_TYPE;
+    sget-object v5, Lcom/android/server/power/OnePlusStandbyAnalyzer$CRITERIA_TYPE;->Cja:Lcom/android/server/power/OnePlusStandbyAnalyzer$CRITERIA_TYPE;
 
     invoke-virtual {v5}, Ljava/lang/Enum;->ordinal()I
 
@@ -397,9 +397,9 @@
 
     :catch_13
     :try_start_14
-    sget-object v4, Lcom/android/server/power/kth;->oF:[I
+    sget-object v4, Lcom/android/server/power/kth;->oG:[I
 
-    sget-object v5, Lcom/android/server/power/OnePlusStandbyAnalyzer$CRITERIA_TYPE;->aia:Lcom/android/server/power/OnePlusStandbyAnalyzer$CRITERIA_TYPE;
+    sget-object v5, Lcom/android/server/power/OnePlusStandbyAnalyzer$CRITERIA_TYPE;->_ia:Lcom/android/server/power/OnePlusStandbyAnalyzer$CRITERIA_TYPE;
 
     invoke-virtual {v5}, Ljava/lang/Enum;->ordinal()I
 
@@ -411,9 +411,9 @@
 
     :catch_14
     :try_start_15
-    sget-object v4, Lcom/android/server/power/kth;->oF:[I
+    sget-object v4, Lcom/android/server/power/kth;->oG:[I
 
-    sget-object v5, Lcom/android/server/power/OnePlusStandbyAnalyzer$CRITERIA_TYPE;->Eia:Lcom/android/server/power/OnePlusStandbyAnalyzer$CRITERIA_TYPE;
+    sget-object v5, Lcom/android/server/power/OnePlusStandbyAnalyzer$CRITERIA_TYPE;->Dja:Lcom/android/server/power/OnePlusStandbyAnalyzer$CRITERIA_TYPE;
 
     invoke-virtual {v5}, Ljava/lang/Enum;->ordinal()I
 
@@ -427,9 +427,9 @@
     const/4 v4, 0x5
 
     :try_start_16
-    sget-object v5, Lcom/android/server/power/kth;->oF:[I
+    sget-object v5, Lcom/android/server/power/kth;->oG:[I
 
-    sget-object v6, Lcom/android/server/power/OnePlusStandbyAnalyzer$CRITERIA_TYPE;->bia:Lcom/android/server/power/OnePlusStandbyAnalyzer$CRITERIA_TYPE;
+    sget-object v6, Lcom/android/server/power/OnePlusStandbyAnalyzer$CRITERIA_TYPE;->aja:Lcom/android/server/power/OnePlusStandbyAnalyzer$CRITERIA_TYPE;
 
     invoke-virtual {v6}, Ljava/lang/Enum;->ordinal()I
 
@@ -443,9 +443,9 @@
     const/4 v5, 0x6
 
     :try_start_17
-    sget-object v6, Lcom/android/server/power/kth;->oF:[I
+    sget-object v6, Lcom/android/server/power/kth;->oG:[I
 
-    sget-object v7, Lcom/android/server/power/OnePlusStandbyAnalyzer$CRITERIA_TYPE;->Fia:Lcom/android/server/power/OnePlusStandbyAnalyzer$CRITERIA_TYPE;
+    sget-object v7, Lcom/android/server/power/OnePlusStandbyAnalyzer$CRITERIA_TYPE;->Eja:Lcom/android/server/power/OnePlusStandbyAnalyzer$CRITERIA_TYPE;
 
     invoke-virtual {v7}, Ljava/lang/Enum;->ordinal()I
 
@@ -457,9 +457,9 @@
 
     :catch_17
     :try_start_18
-    sget-object v6, Lcom/android/server/power/kth;->oF:[I
+    sget-object v6, Lcom/android/server/power/kth;->oG:[I
 
-    sget-object v7, Lcom/android/server/power/OnePlusStandbyAnalyzer$CRITERIA_TYPE;->cia:Lcom/android/server/power/OnePlusStandbyAnalyzer$CRITERIA_TYPE;
+    sget-object v7, Lcom/android/server/power/OnePlusStandbyAnalyzer$CRITERIA_TYPE;->bja:Lcom/android/server/power/OnePlusStandbyAnalyzer$CRITERIA_TYPE;
 
     invoke-virtual {v7}, Ljava/lang/Enum;->ordinal()I
 
@@ -473,9 +473,9 @@
 
     :catch_18
     :try_start_19
-    sget-object v6, Lcom/android/server/power/kth;->oF:[I
+    sget-object v6, Lcom/android/server/power/kth;->oG:[I
 
-    sget-object v7, Lcom/android/server/power/OnePlusStandbyAnalyzer$CRITERIA_TYPE;->Gia:Lcom/android/server/power/OnePlusStandbyAnalyzer$CRITERIA_TYPE;
+    sget-object v7, Lcom/android/server/power/OnePlusStandbyAnalyzer$CRITERIA_TYPE;->Fja:Lcom/android/server/power/OnePlusStandbyAnalyzer$CRITERIA_TYPE;
 
     invoke-virtual {v7}, Ljava/lang/Enum;->ordinal()I
 
@@ -489,9 +489,9 @@
 
     :catch_19
     :try_start_1a
-    sget-object v6, Lcom/android/server/power/kth;->oF:[I
+    sget-object v6, Lcom/android/server/power/kth;->oG:[I
 
-    sget-object v7, Lcom/android/server/power/OnePlusStandbyAnalyzer$CRITERIA_TYPE;->Mia:Lcom/android/server/power/OnePlusStandbyAnalyzer$CRITERIA_TYPE;
+    sget-object v7, Lcom/android/server/power/OnePlusStandbyAnalyzer$CRITERIA_TYPE;->Lja:Lcom/android/server/power/OnePlusStandbyAnalyzer$CRITERIA_TYPE;
 
     invoke-virtual {v7}, Ljava/lang/Enum;->ordinal()I
 
@@ -505,9 +505,9 @@
 
     :catch_1a
     :try_start_1b
-    sget-object v6, Lcom/android/server/power/kth;->oF:[I
+    sget-object v6, Lcom/android/server/power/kth;->oG:[I
 
-    sget-object v7, Lcom/android/server/power/OnePlusStandbyAnalyzer$CRITERIA_TYPE;->Nia:Lcom/android/server/power/OnePlusStandbyAnalyzer$CRITERIA_TYPE;
+    sget-object v7, Lcom/android/server/power/OnePlusStandbyAnalyzer$CRITERIA_TYPE;->Mja:Lcom/android/server/power/OnePlusStandbyAnalyzer$CRITERIA_TYPE;
 
     invoke-virtual {v7}, Ljava/lang/Enum;->ordinal()I
 
@@ -521,9 +521,9 @@
 
     :catch_1b
     :try_start_1c
-    sget-object v6, Lcom/android/server/power/kth;->oF:[I
+    sget-object v6, Lcom/android/server/power/kth;->oG:[I
 
-    sget-object v7, Lcom/android/server/power/OnePlusStandbyAnalyzer$CRITERIA_TYPE;->dia:Lcom/android/server/power/OnePlusStandbyAnalyzer$CRITERIA_TYPE;
+    sget-object v7, Lcom/android/server/power/OnePlusStandbyAnalyzer$CRITERIA_TYPE;->cja:Lcom/android/server/power/OnePlusStandbyAnalyzer$CRITERIA_TYPE;
 
     invoke-virtual {v7}, Ljava/lang/Enum;->ordinal()I
 
@@ -537,9 +537,9 @@
 
     :catch_1c
     :try_start_1d
-    sget-object v6, Lcom/android/server/power/kth;->oF:[I
+    sget-object v6, Lcom/android/server/power/kth;->oG:[I
 
-    sget-object v7, Lcom/android/server/power/OnePlusStandbyAnalyzer$CRITERIA_TYPE;->Hia:Lcom/android/server/power/OnePlusStandbyAnalyzer$CRITERIA_TYPE;
+    sget-object v7, Lcom/android/server/power/OnePlusStandbyAnalyzer$CRITERIA_TYPE;->Gja:Lcom/android/server/power/OnePlusStandbyAnalyzer$CRITERIA_TYPE;
 
     invoke-virtual {v7}, Ljava/lang/Enum;->ordinal()I
 
@@ -553,9 +553,9 @@
 
     :catch_1d
     :try_start_1e
-    sget-object v6, Lcom/android/server/power/kth;->oF:[I
+    sget-object v6, Lcom/android/server/power/kth;->oG:[I
 
-    sget-object v7, Lcom/android/server/power/OnePlusStandbyAnalyzer$CRITERIA_TYPE;->Iia:Lcom/android/server/power/OnePlusStandbyAnalyzer$CRITERIA_TYPE;
+    sget-object v7, Lcom/android/server/power/OnePlusStandbyAnalyzer$CRITERIA_TYPE;->Hja:Lcom/android/server/power/OnePlusStandbyAnalyzer$CRITERIA_TYPE;
 
     invoke-virtual {v7}, Ljava/lang/Enum;->ordinal()I
 
@@ -569,9 +569,9 @@
 
     :catch_1e
     :try_start_1f
-    sget-object v6, Lcom/android/server/power/kth;->oF:[I
+    sget-object v6, Lcom/android/server/power/kth;->oG:[I
 
-    sget-object v7, Lcom/android/server/power/OnePlusStandbyAnalyzer$CRITERIA_TYPE;->Jia:Lcom/android/server/power/OnePlusStandbyAnalyzer$CRITERIA_TYPE;
+    sget-object v7, Lcom/android/server/power/OnePlusStandbyAnalyzer$CRITERIA_TYPE;->Ija:Lcom/android/server/power/OnePlusStandbyAnalyzer$CRITERIA_TYPE;
 
     invoke-virtual {v7}, Ljava/lang/Enum;->ordinal()I
 
@@ -585,9 +585,9 @@
 
     :catch_1f
     :try_start_20
-    sget-object v6, Lcom/android/server/power/kth;->oF:[I
+    sget-object v6, Lcom/android/server/power/kth;->oG:[I
 
-    sget-object v7, Lcom/android/server/power/OnePlusStandbyAnalyzer$CRITERIA_TYPE;->Kia:Lcom/android/server/power/OnePlusStandbyAnalyzer$CRITERIA_TYPE;
+    sget-object v7, Lcom/android/server/power/OnePlusStandbyAnalyzer$CRITERIA_TYPE;->Jja:Lcom/android/server/power/OnePlusStandbyAnalyzer$CRITERIA_TYPE;
 
     invoke-virtual {v7}, Ljava/lang/Enum;->ordinal()I
 
@@ -601,9 +601,9 @@
 
     :catch_20
     :try_start_21
-    sget-object v6, Lcom/android/server/power/kth;->oF:[I
+    sget-object v6, Lcom/android/server/power/kth;->oG:[I
 
-    sget-object v7, Lcom/android/server/power/OnePlusStandbyAnalyzer$CRITERIA_TYPE;->Lia:Lcom/android/server/power/OnePlusStandbyAnalyzer$CRITERIA_TYPE;
+    sget-object v7, Lcom/android/server/power/OnePlusStandbyAnalyzer$CRITERIA_TYPE;->Kja:Lcom/android/server/power/OnePlusStandbyAnalyzer$CRITERIA_TYPE;
 
     invoke-virtual {v7}, Ljava/lang/Enum;->ordinal()I
 
@@ -624,12 +624,12 @@
 
     new-array v6, v6, [I
 
-    sput-object v6, Lcom/android/server/power/kth;->nF:[I
+    sput-object v6, Lcom/android/server/power/kth;->nG:[I
 
     :try_start_22
-    sget-object v6, Lcom/android/server/power/kth;->nF:[I
+    sget-object v6, Lcom/android/server/power/kth;->nG:[I
 
-    sget-object v7, Lcom/android/server/power/OnePlusStandbyAnalyzer$QXDM_REASON;->dka:Lcom/android/server/power/OnePlusStandbyAnalyzer$QXDM_REASON;
+    sget-object v7, Lcom/android/server/power/OnePlusStandbyAnalyzer$QXDM_REASON;->dla:Lcom/android/server/power/OnePlusStandbyAnalyzer$QXDM_REASON;
 
     invoke-virtual {v7}, Ljava/lang/Enum;->ordinal()I
 
@@ -641,9 +641,9 @@
 
     :catch_22
     :try_start_23
-    sget-object v6, Lcom/android/server/power/kth;->nF:[I
+    sget-object v6, Lcom/android/server/power/kth;->nG:[I
 
-    sget-object v7, Lcom/android/server/power/OnePlusStandbyAnalyzer$QXDM_REASON;->eka:Lcom/android/server/power/OnePlusStandbyAnalyzer$QXDM_REASON;
+    sget-object v7, Lcom/android/server/power/OnePlusStandbyAnalyzer$QXDM_REASON;->ela:Lcom/android/server/power/OnePlusStandbyAnalyzer$QXDM_REASON;
 
     invoke-virtual {v7}, Ljava/lang/Enum;->ordinal()I
 
@@ -655,9 +655,9 @@
 
     :catch_23
     :try_start_24
-    sget-object v6, Lcom/android/server/power/kth;->nF:[I
+    sget-object v6, Lcom/android/server/power/kth;->nG:[I
 
-    sget-object v7, Lcom/android/server/power/OnePlusStandbyAnalyzer$QXDM_REASON;->fka:Lcom/android/server/power/OnePlusStandbyAnalyzer$QXDM_REASON;
+    sget-object v7, Lcom/android/server/power/OnePlusStandbyAnalyzer$QXDM_REASON;->fla:Lcom/android/server/power/OnePlusStandbyAnalyzer$QXDM_REASON;
 
     invoke-virtual {v7}, Ljava/lang/Enum;->ordinal()I
 
@@ -669,9 +669,9 @@
 
     :catch_24
     :try_start_25
-    sget-object v6, Lcom/android/server/power/kth;->nF:[I
+    sget-object v6, Lcom/android/server/power/kth;->nG:[I
 
-    sget-object v7, Lcom/android/server/power/OnePlusStandbyAnalyzer$QXDM_REASON;->gka:Lcom/android/server/power/OnePlusStandbyAnalyzer$QXDM_REASON;
+    sget-object v7, Lcom/android/server/power/OnePlusStandbyAnalyzer$QXDM_REASON;->gla:Lcom/android/server/power/OnePlusStandbyAnalyzer$QXDM_REASON;
 
     invoke-virtual {v7}, Ljava/lang/Enum;->ordinal()I
 
@@ -683,9 +683,9 @@
 
     :catch_25
     :try_start_26
-    sget-object v6, Lcom/android/server/power/kth;->nF:[I
+    sget-object v6, Lcom/android/server/power/kth;->nG:[I
 
-    sget-object v7, Lcom/android/server/power/OnePlusStandbyAnalyzer$QXDM_REASON;->hka:Lcom/android/server/power/OnePlusStandbyAnalyzer$QXDM_REASON;
+    sget-object v7, Lcom/android/server/power/OnePlusStandbyAnalyzer$QXDM_REASON;->hla:Lcom/android/server/power/OnePlusStandbyAnalyzer$QXDM_REASON;
 
     invoke-virtual {v7}, Ljava/lang/Enum;->ordinal()I
 
@@ -704,12 +704,12 @@
 
     new-array v6, v6, [I
 
-    sput-object v6, Lcom/android/server/power/kth;->mF:[I
+    sput-object v6, Lcom/android/server/power/kth;->lG:[I
 
     :try_start_27
-    sget-object v6, Lcom/android/server/power/kth;->mF:[I
+    sget-object v6, Lcom/android/server/power/kth;->lG:[I
 
-    sget-object v7, Lcom/android/server/power/OnePlusStandbyAnalyzer$TELEPHONY_TYPE;->Dka:Lcom/android/server/power/OnePlusStandbyAnalyzer$TELEPHONY_TYPE;
+    sget-object v7, Lcom/android/server/power/OnePlusStandbyAnalyzer$TELEPHONY_TYPE;->Dla:Lcom/android/server/power/OnePlusStandbyAnalyzer$TELEPHONY_TYPE;
 
     invoke-virtual {v7}, Ljava/lang/Enum;->ordinal()I
 
@@ -721,9 +721,9 @@
 
     :catch_27
     :try_start_28
-    sget-object v0, Lcom/android/server/power/kth;->mF:[I
+    sget-object v0, Lcom/android/server/power/kth;->lG:[I
 
-    sget-object v6, Lcom/android/server/power/OnePlusStandbyAnalyzer$TELEPHONY_TYPE;->Eka:Lcom/android/server/power/OnePlusStandbyAnalyzer$TELEPHONY_TYPE;
+    sget-object v6, Lcom/android/server/power/OnePlusStandbyAnalyzer$TELEPHONY_TYPE;->Ela:Lcom/android/server/power/OnePlusStandbyAnalyzer$TELEPHONY_TYPE;
 
     invoke-virtual {v6}, Ljava/lang/Enum;->ordinal()I
 
@@ -735,9 +735,9 @@
 
     :catch_28
     :try_start_29
-    sget-object v0, Lcom/android/server/power/kth;->mF:[I
+    sget-object v0, Lcom/android/server/power/kth;->lG:[I
 
-    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$TELEPHONY_TYPE;->Fka:Lcom/android/server/power/OnePlusStandbyAnalyzer$TELEPHONY_TYPE;
+    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$TELEPHONY_TYPE;->Fla:Lcom/android/server/power/OnePlusStandbyAnalyzer$TELEPHONY_TYPE;
 
     invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
@@ -749,9 +749,9 @@
 
     :catch_29
     :try_start_2a
-    sget-object v0, Lcom/android/server/power/kth;->mF:[I
+    sget-object v0, Lcom/android/server/power/kth;->lG:[I
 
-    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$TELEPHONY_TYPE;->Gka:Lcom/android/server/power/OnePlusStandbyAnalyzer$TELEPHONY_TYPE;
+    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$TELEPHONY_TYPE;->Gla:Lcom/android/server/power/OnePlusStandbyAnalyzer$TELEPHONY_TYPE;
 
     invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
@@ -763,9 +763,9 @@
 
     :catch_2a
     :try_start_2b
-    sget-object v0, Lcom/android/server/power/kth;->mF:[I
+    sget-object v0, Lcom/android/server/power/kth;->lG:[I
 
-    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$TELEPHONY_TYPE;->Hka:Lcom/android/server/power/OnePlusStandbyAnalyzer$TELEPHONY_TYPE;
+    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$TELEPHONY_TYPE;->Hla:Lcom/android/server/power/OnePlusStandbyAnalyzer$TELEPHONY_TYPE;
 
     invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
@@ -777,9 +777,9 @@
 
     :catch_2b
     :try_start_2c
-    sget-object v0, Lcom/android/server/power/kth;->mF:[I
+    sget-object v0, Lcom/android/server/power/kth;->lG:[I
 
-    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$TELEPHONY_TYPE;->Ika:Lcom/android/server/power/OnePlusStandbyAnalyzer$TELEPHONY_TYPE;
+    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$TELEPHONY_TYPE;->Ila:Lcom/android/server/power/OnePlusStandbyAnalyzer$TELEPHONY_TYPE;
 
     invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 

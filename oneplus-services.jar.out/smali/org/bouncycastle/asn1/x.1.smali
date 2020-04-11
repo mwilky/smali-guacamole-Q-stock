@@ -30,7 +30,7 @@
 
     if-eqz p2, :cond_1
 
-    invoke-static {p1}, Lorg/bouncycastle/asn1/x;->xa(Ljava/lang/String;)Z
+    invoke-static {p1}, Lorg/bouncycastle/asn1/x;->ya(Ljava/lang/String;)Z
 
     move-result p2
 
@@ -169,7 +169,7 @@
     return-object p0
 .end method
 
-.method public static xa(Ljava/lang/String;)Z
+.method public static ya(Ljava/lang/String;)Z
     .locals 4
 
     invoke-virtual {p0}, Ljava/lang/String;->length()I
@@ -287,14 +287,24 @@
     return p0
 .end method
 
-.method qg()I
+.method public toString()Ljava/lang/String;
+    .locals 0
+
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/x;->getString()Ljava/lang/String;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method ug()I
     .locals 1
 
     iget-object v0, p0, Lorg/bouncycastle/asn1/x;->string:[B
 
     array-length v0, v0
 
-    invoke-static {v0}, Lorg/bouncycastle/asn1/ia;->ba(I)I
+    invoke-static {v0}, Lorg/bouncycastle/asn1/ia;->ea(I)I
 
     move-result v0
 
@@ -307,16 +317,6 @@
     add-int/2addr v0, p0
 
     return v0
-.end method
-
-.method public toString()Ljava/lang/String;
-    .locals 0
-
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/x;->getString()Ljava/lang/String;
-
-    move-result-object p0
-
-    return-object p0
 .end method
 
 .method zta(Lorg/bouncycastle/asn1/ugm;)V

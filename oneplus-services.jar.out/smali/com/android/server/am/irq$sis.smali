@@ -376,7 +376,7 @@
     goto/16 :goto_1
 
     :pswitch_c
-    invoke-static {}, Lcom/android/server/am/irq;->Ib()Z
+    invoke-static {}, Lcom/android/server/am/irq;->Hb()Z
 
     move-result p1
 

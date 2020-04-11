@@ -23,9 +23,9 @@
 
 .field private encoding:Lorg/bouncycastle/crypto/gck/zta;
 
-.field private sma:Lorg/bouncycastle/crypto/gck;
+.field private qna:Lorg/bouncycastle/crypto/gck;
 
-.field private yla:Ljava/security/SecureRandom;
+.field private xma:Ljava/security/SecureRandom;
 
 
 # direct methods
@@ -40,7 +40,7 @@
 
     iput-object p1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dsa/sis;->digest:Lorg/bouncycastle/crypto/qbh;
 
-    iput-object p2, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dsa/sis;->sma:Lorg/bouncycastle/crypto/gck;
+    iput-object p2, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dsa/sis;->qna:Lorg/bouncycastle/crypto/gck;
 
     return-void
 .end method
@@ -81,7 +81,7 @@
 
     invoke-virtual {p0, v0}, Lorg/bouncycastle/jcajce/provider/asymmetric/dsa/sis;->zta(Lorg/bouncycastle/crypto/wtn/ywr;)V
 
-    iget-object v0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dsa/sis;->yla:Ljava/security/SecureRandom;
+    iget-object v0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dsa/sis;->xma:Ljava/security/SecureRandom;
 
     if-eqz v0, :cond_0
 
@@ -96,7 +96,7 @@
 
     invoke-interface {v0}, Lorg/bouncycastle/crypto/qbh;->reset()V
 
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dsa/sis;->sma:Lorg/bouncycastle/crypto/gck;
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dsa/sis;->qna:Lorg/bouncycastle/crypto/gck;
 
     const/4 v0, 0x1
 
@@ -113,7 +113,7 @@
         }
     .end annotation
 
-    iput-object p2, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dsa/sis;->yla:Ljava/security/SecureRandom;
+    iput-object p2, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dsa/sis;->xma:Ljava/security/SecureRandom;
 
     invoke-virtual {p0, p1}, Lorg/bouncycastle/jcajce/provider/asymmetric/dsa/sis;->engineInitSign(Ljava/security/PrivateKey;)V
 
@@ -136,7 +136,7 @@
 
     invoke-interface {v0}, Lorg/bouncycastle/crypto/qbh;->reset()V
 
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dsa/sis;->sma:Lorg/bouncycastle/crypto/gck;
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dsa/sis;->qna:Lorg/bouncycastle/crypto/gck;
 
     const/4 v0, 0x0
 
@@ -192,7 +192,7 @@
     invoke-interface {v1, v0, v2}, Lorg/bouncycastle/crypto/qbh;->doFinal([BI)I
 
     :try_start_0
-    iget-object v1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dsa/sis;->sma:Lorg/bouncycastle/crypto/gck;
+    iget-object v1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dsa/sis;->qna:Lorg/bouncycastle/crypto/gck;
 
     invoke-interface {v1, v0}, Lorg/bouncycastle/crypto/wtn;->you([B)[Ljava/math/BigInteger;
 
@@ -200,7 +200,7 @@
 
     iget-object v1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dsa/sis;->encoding:Lorg/bouncycastle/crypto/gck/zta;
 
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dsa/sis;->sma:Lorg/bouncycastle/crypto/gck;
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dsa/sis;->qna:Lorg/bouncycastle/crypto/gck;
 
     invoke-interface {p0}, Lorg/bouncycastle/crypto/gck;->getOrder()Ljava/math/BigInteger;
 
@@ -289,7 +289,7 @@
     :try_start_0
     iget-object v1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dsa/sis;->encoding:Lorg/bouncycastle/crypto/gck/zta;
 
-    iget-object v3, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dsa/sis;->sma:Lorg/bouncycastle/crypto/gck;
+    iget-object v3, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dsa/sis;->qna:Lorg/bouncycastle/crypto/gck;
 
     invoke-interface {v3}, Lorg/bouncycastle/crypto/gck;->getOrder()Ljava/math/BigInteger;
 
@@ -301,7 +301,7 @@
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dsa/sis;->sma:Lorg/bouncycastle/crypto/gck;
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dsa/sis;->qna:Lorg/bouncycastle/crypto/gck;
 
     aget-object v1, p1, v2
 

@@ -25,9 +25,9 @@
 # static fields
 .field private static final synthetic $VALUES:[Lcom/android/server/am/OnePlusBGController$NetType;
 
-.field public static final enum Nha:Lcom/android/server/am/OnePlusBGController$NetType;
+.field public static final enum Mia:Lcom/android/server/am/OnePlusBGController$NetType;
 
-.field public static final enum Oha:Lcom/android/server/am/OnePlusBGController$NetType;
+.field public static final enum Nia:Lcom/android/server/am/OnePlusBGController$NetType;
 
 .field public static final enum PUBLIC:Lcom/android/server/am/OnePlusBGController$NetType;
 
@@ -48,7 +48,7 @@
 
     invoke-direct {v0, v2, v1, v1}, Lcom/android/server/am/OnePlusBGController$NetType;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lcom/android/server/am/OnePlusBGController$NetType;->Nha:Lcom/android/server/am/OnePlusBGController$NetType;
+    sput-object v0, Lcom/android/server/am/OnePlusBGController$NetType;->Mia:Lcom/android/server/am/OnePlusBGController$NetType;
 
     new-instance v0, Lcom/android/server/am/OnePlusBGController$NetType;
 
@@ -58,7 +58,7 @@
 
     invoke-direct {v0, v3, v2, v2}, Lcom/android/server/am/OnePlusBGController$NetType;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lcom/android/server/am/OnePlusBGController$NetType;->Oha:Lcom/android/server/am/OnePlusBGController$NetType;
+    sput-object v0, Lcom/android/server/am/OnePlusBGController$NetType;->Nia:Lcom/android/server/am/OnePlusBGController$NetType;
 
     new-instance v0, Lcom/android/server/am/OnePlusBGController$NetType;
 
@@ -74,11 +74,11 @@
 
     new-array v0, v0, [Lcom/android/server/am/OnePlusBGController$NetType;
 
-    sget-object v4, Lcom/android/server/am/OnePlusBGController$NetType;->Nha:Lcom/android/server/am/OnePlusBGController$NetType;
+    sget-object v4, Lcom/android/server/am/OnePlusBGController$NetType;->Mia:Lcom/android/server/am/OnePlusBGController$NetType;
 
     aput-object v4, v0, v1
 
-    sget-object v1, Lcom/android/server/am/OnePlusBGController$NetType;->Oha:Lcom/android/server/am/OnePlusBGController$NetType;
+    sget-object v1, Lcom/android/server/am/OnePlusBGController$NetType;->Nia:Lcom/android/server/am/OnePlusBGController$NetType;
 
     aput-object v1, v0, v2
 

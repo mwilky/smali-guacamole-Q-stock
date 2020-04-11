@@ -4,7 +4,7 @@
 
 
 # static fields
-.field private static final qga:Ljava/lang/String; = "net.oneplus.wallpaperresources"
+.field private static final pha:Ljava/lang/String; = "net.oneplus.wallpaperresources"
 
 
 # direct methods
@@ -18,112 +18,7 @@
 
 
 # virtual methods
-.method protected getCustomization()Lcom/oneplus/custom/utils/OpCustomizeSettings$CUSTOM_TYPE;
-    .locals 2
-
-    sget-object p0, Lcom/oneplus/custom/utils/OpCustomizeSettings$CUSTOM_TYPE;->NONE:Lcom/oneplus/custom/utils/OpCustomizeSettings$CUSTOM_TYPE;
-
-    invoke-static {}, Lcom/oneplus/custom/utils/rtg;->getCustFlagVal()I
-
-    move-result v0
-
-    const/4 v1, 0x3
-
-    if-eq v0, v1, :cond_2
-
-    const/4 v1, 0x6
-
-    if-eq v0, v1, :cond_1
-
-    const/4 v1, 0x7
-
-    if-eq v0, v1, :cond_0
-
-    goto :goto_0
-
-    :cond_0
-    sget-object p0, Lcom/oneplus/custom/utils/OpCustomizeSettings$CUSTOM_TYPE;->ela:Lcom/oneplus/custom/utils/OpCustomizeSettings$CUSTOM_TYPE;
-
-    goto :goto_0
-
-    :cond_1
-    sget-object p0, Lcom/oneplus/custom/utils/OpCustomizeSettings$CUSTOM_TYPE;->MCL:Lcom/oneplus/custom/utils/OpCustomizeSettings$CUSTOM_TYPE;
-
-    goto :goto_0
-
-    :cond_2
-    sget-object p0, Lcom/oneplus/custom/utils/OpCustomizeSettings$CUSTOM_TYPE;->AVG:Lcom/oneplus/custom/utils/OpCustomizeSettings$CUSTOM_TYPE;
-
-    :goto_0
-    return-object p0
-.end method
-
-.method protected tsu(Landroid/content/Context;)[B
-    .locals 3
-
-    invoke-virtual {p1}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
-
-    move-result-object p0
-
-    const-string p1, "ro.remount.time"
-
-    invoke-static {p1}, Lcom/oneplus/custom/utils/ssp;->get(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object p1
-
-    const-string v0, "1"
-
-    invoke-virtual {v0, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result p1
-
-    const/4 v0, 0x0
-
-    const-string v1, "OpCustomizeSettings"
-
-    if-eqz p1, :cond_0
-
-    const-string p0, "device was remounted, exit"
-
-    :goto_0
-    invoke-static {v1, p0}, Lcom/oneplus/custom/utils/zta;->w(Ljava/lang/String;Ljava/lang/String;)V
-
-    return-object v0
-
-    :cond_0
-    const-string p1, "net.oneplus.wallpaperresources"
-
-    invoke-virtual {p1, p0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result p1
-
-    if-nez p1, :cond_1
-
-    new-instance p1, Ljava/lang/StringBuilder;
-
-    invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v2, "not ready for : "
-
-    invoke-virtual {p1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p0
-
-    goto :goto_0
-
-    :cond_1
-    invoke-static {}, Lcom/oneplus/custom/utils/rtg;->Bf()[B
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method protected wf()J
+.method protected Af()J
     .locals 4
 
     :try_start_0
@@ -162,7 +57,7 @@
     return-wide v0
 .end method
 
-.method protected xf()Lcom/oneplus/custom/utils/OpCustomizeSettings$CUSTOM_BACK_COVER_TYPE;
+.method protected Bf()Lcom/oneplus/custom/utils/OpCustomizeSettings$CUSTOM_BACK_COVER_TYPE;
     .locals 2
 
     sget-object p0, Lcom/oneplus/custom/utils/OpCustomizeSettings$CUSTOM_BACK_COVER_TYPE;->NONE:Lcom/oneplus/custom/utils/OpCustomizeSettings$CUSTOM_BACK_COVER_TYPE;
@@ -460,12 +355,12 @@
     .end packed-switch
 .end method
 
-.method protected zf()Lcom/oneplus/custom/utils/OpCustomizeSettings$SW_TYPE;
+.method protected Df()Lcom/oneplus/custom/utils/OpCustomizeSettings$SW_TYPE;
     .locals 2
 
     sget-object p0, Lcom/oneplus/custom/utils/OpCustomizeSettings$SW_TYPE;->DEFAULT:Lcom/oneplus/custom/utils/OpCustomizeSettings$SW_TYPE;
 
-    invoke-static {}, Lcom/oneplus/custom/utils/rtg;->Cf()I
+    invoke-static {}, Lcom/oneplus/custom/utils/rtg;->Gf()I
 
     move-result v0
 
@@ -492,27 +387,27 @@
     goto :goto_0
 
     :pswitch_0
-    sget-object p0, Lcom/oneplus/custom/utils/OpCustomizeSettings$SW_TYPE;->kla:Lcom/oneplus/custom/utils/OpCustomizeSettings$SW_TYPE;
+    sget-object p0, Lcom/oneplus/custom/utils/OpCustomizeSettings$SW_TYPE;->kma:Lcom/oneplus/custom/utils/OpCustomizeSettings$SW_TYPE;
 
     goto :goto_0
 
     :pswitch_1
-    sget-object p0, Lcom/oneplus/custom/utils/OpCustomizeSettings$SW_TYPE;->jla:Lcom/oneplus/custom/utils/OpCustomizeSettings$SW_TYPE;
+    sget-object p0, Lcom/oneplus/custom/utils/OpCustomizeSettings$SW_TYPE;->jma:Lcom/oneplus/custom/utils/OpCustomizeSettings$SW_TYPE;
 
     goto :goto_0
 
     :pswitch_2
-    sget-object p0, Lcom/oneplus/custom/utils/OpCustomizeSettings$SW_TYPE;->ila:Lcom/oneplus/custom/utils/OpCustomizeSettings$SW_TYPE;
+    sget-object p0, Lcom/oneplus/custom/utils/OpCustomizeSettings$SW_TYPE;->ima:Lcom/oneplus/custom/utils/OpCustomizeSettings$SW_TYPE;
 
     goto :goto_0
 
     :pswitch_3
-    sget-object p0, Lcom/oneplus/custom/utils/OpCustomizeSettings$SW_TYPE;->hla:Lcom/oneplus/custom/utils/OpCustomizeSettings$SW_TYPE;
+    sget-object p0, Lcom/oneplus/custom/utils/OpCustomizeSettings$SW_TYPE;->hma:Lcom/oneplus/custom/utils/OpCustomizeSettings$SW_TYPE;
 
     goto :goto_0
 
     :cond_0
-    sget-object p0, Lcom/oneplus/custom/utils/OpCustomizeSettings$SW_TYPE;->gla:Lcom/oneplus/custom/utils/OpCustomizeSettings$SW_TYPE;
+    sget-object p0, Lcom/oneplus/custom/utils/OpCustomizeSettings$SW_TYPE;->gma:Lcom/oneplus/custom/utils/OpCustomizeSettings$SW_TYPE;
 
     goto :goto_0
 
@@ -527,7 +422,7 @@
     goto :goto_0
 
     :cond_3
-    sget-object p0, Lcom/oneplus/custom/utils/OpCustomizeSettings$SW_TYPE;->fla:Lcom/oneplus/custom/utils/OpCustomizeSettings$SW_TYPE;
+    sget-object p0, Lcom/oneplus/custom/utils/OpCustomizeSettings$SW_TYPE;->fma:Lcom/oneplus/custom/utils/OpCustomizeSettings$SW_TYPE;
 
     goto :goto_0
 
@@ -546,4 +441,109 @@
         :pswitch_1
         :pswitch_0
     .end packed-switch
+.end method
+
+.method protected getCustomization()Lcom/oneplus/custom/utils/OpCustomizeSettings$CUSTOM_TYPE;
+    .locals 2
+
+    sget-object p0, Lcom/oneplus/custom/utils/OpCustomizeSettings$CUSTOM_TYPE;->NONE:Lcom/oneplus/custom/utils/OpCustomizeSettings$CUSTOM_TYPE;
+
+    invoke-static {}, Lcom/oneplus/custom/utils/rtg;->getCustFlagVal()I
+
+    move-result v0
+
+    const/4 v1, 0x3
+
+    if-eq v0, v1, :cond_2
+
+    const/4 v1, 0x6
+
+    if-eq v0, v1, :cond_1
+
+    const/4 v1, 0x7
+
+    if-eq v0, v1, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    sget-object p0, Lcom/oneplus/custom/utils/OpCustomizeSettings$CUSTOM_TYPE;->ema:Lcom/oneplus/custom/utils/OpCustomizeSettings$CUSTOM_TYPE;
+
+    goto :goto_0
+
+    :cond_1
+    sget-object p0, Lcom/oneplus/custom/utils/OpCustomizeSettings$CUSTOM_TYPE;->MCL:Lcom/oneplus/custom/utils/OpCustomizeSettings$CUSTOM_TYPE;
+
+    goto :goto_0
+
+    :cond_2
+    sget-object p0, Lcom/oneplus/custom/utils/OpCustomizeSettings$CUSTOM_TYPE;->AVG:Lcom/oneplus/custom/utils/OpCustomizeSettings$CUSTOM_TYPE;
+
+    :goto_0
+    return-object p0
+.end method
+
+.method protected rtg(Landroid/content/Context;)[B
+    .locals 3
+
+    invoke-virtual {p1}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
+
+    move-result-object p0
+
+    const-string p1, "ro.remount.time"
+
+    invoke-static {p1}, Lcom/oneplus/custom/utils/ssp;->get(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object p1
+
+    const-string v0, "1"
+
+    invoke-virtual {v0, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result p1
+
+    const/4 v0, 0x0
+
+    const-string v1, "OpCustomizeSettings"
+
+    if-eqz p1, :cond_0
+
+    const-string p0, "device was remounted, exit"
+
+    :goto_0
+    invoke-static {v1, p0}, Lcom/oneplus/custom/utils/zta;->w(Ljava/lang/String;Ljava/lang/String;)V
+
+    return-object v0
+
+    :cond_0
+    const-string p1, "net.oneplus.wallpaperresources"
+
+    invoke-virtual {p1, p0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result p1
+
+    if-nez p1, :cond_1
+
+    new-instance p1, Ljava/lang/StringBuilder;
+
+    invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v2, "not ready for : "
+
+    invoke-virtual {p1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p0
+
+    goto :goto_0
+
+    :cond_1
+    invoke-static {}, Lcom/oneplus/custom/utils/rtg;->Ff()[B
+
+    move-result-object p0
+
+    return-object p0
 .end method

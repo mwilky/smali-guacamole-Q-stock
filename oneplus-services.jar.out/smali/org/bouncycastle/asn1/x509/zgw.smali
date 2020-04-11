@@ -11,19 +11,19 @@
 
 .field public static final iPAddress:I = 0x7
 
+.field public static final nsa:I = 0x1
+
+.field public static final osa:I = 0x3
+
 .field public static final otherName:I = 0x0
 
-.field public static final pra:I = 0x1
+.field public static final psa:I = 0x4
 
-.field public static final qra:I = 0x3
+.field public static final qsa:I = 0x5
 
-.field public static final rra:I = 0x4
+.field public static final rsa:I = 0x6
 
-.field public static final sra:I = 0x5
-
-.field public static final tra:I = 0x6
-
-.field public static final ura:I = 0x8
+.field public static final ssa:I = 0x8
 
 
 # instance fields
@@ -81,7 +81,7 @@
 
     if-ne p1, v0, :cond_4
 
-    invoke-direct {p0, p2}, Lorg/bouncycastle/asn1/x509/zgw;->Vc(Ljava/lang/String;)[B
+    invoke-direct {p0, p2}, Lorg/bouncycastle/asn1/x509/zgw;->Yc(Ljava/lang/String;)[B
 
     move-result-object p1
 
@@ -182,7 +182,7 @@
     return-void
 .end method
 
-.method private Tc(Ljava/lang/String;)[I
+.method private Wc(Ljava/lang/String;)[I
     .locals 10
 
     new-instance p0, Ljava/util/StringTokenizer;
@@ -370,7 +370,7 @@
     return-object v3
 .end method
 
-.method private Uc(Ljava/lang/String;)[I
+.method private Xc(Ljava/lang/String;)[I
     .locals 5
 
     const/16 p0, 0x8
@@ -410,10 +410,10 @@
     return-object p0
 .end method
 
-.method private Vc(Ljava/lang/String;)[B
+.method private Yc(Ljava/lang/String;)[B
     .locals 5
 
-    invoke-static {p1}, Lorg/bouncycastle/util/ssp;->Pa(Ljava/lang/String;)Z
+    invoke-static {p1}, Lorg/bouncycastle/util/ssp;->Qa(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -423,7 +423,7 @@
 
     if-nez v0, :cond_5
 
-    invoke-static {p1}, Lorg/bouncycastle/util/ssp;->Oa(Ljava/lang/String;)Z
+    invoke-static {p1}, Lorg/bouncycastle/util/ssp;->Pa(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -432,13 +432,13 @@
     goto :goto_2
 
     :cond_0
-    invoke-static {p1}, Lorg/bouncycastle/util/ssp;->Na(Ljava/lang/String;)Z
+    invoke-static {p1}, Lorg/bouncycastle/util/ssp;->Oa(Ljava/lang/String;)Z
 
     move-result v0
 
     if-nez v0, :cond_2
 
-    invoke-static {p1}, Lorg/bouncycastle/util/ssp;->Ma(Ljava/lang/String;)Z
+    invoke-static {p1}, Lorg/bouncycastle/util/ssp;->Na(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -514,7 +514,7 @@
 
     new-array v0, v1, [B
 
-    invoke-direct {p0, p1}, Lorg/bouncycastle/asn1/x509/zgw;->Tc(Ljava/lang/String;)[I
+    invoke-direct {p0, p1}, Lorg/bouncycastle/asn1/x509/zgw;->Wc(Ljava/lang/String;)[I
 
     move-result-object p1
 
@@ -531,7 +531,7 @@
 
     move-result-object v4
 
-    invoke-direct {p0, v4}, Lorg/bouncycastle/asn1/x509/zgw;->Tc(Ljava/lang/String;)[I
+    invoke-direct {p0, v4}, Lorg/bouncycastle/asn1/x509/zgw;->Wc(Ljava/lang/String;)[I
 
     move-result-object v4
 
@@ -551,14 +551,14 @@
 
     if-lez v0, :cond_7
 
-    invoke-direct {p0, p1}, Lorg/bouncycastle/asn1/x509/zgw;->Tc(Ljava/lang/String;)[I
+    invoke-direct {p0, p1}, Lorg/bouncycastle/asn1/x509/zgw;->Wc(Ljava/lang/String;)[I
 
     move-result-object p1
 
     goto :goto_3
 
     :cond_7
-    invoke-direct {p0, p1}, Lorg/bouncycastle/asn1/x509/zgw;->Uc(Ljava/lang/String;)[I
+    invoke-direct {p0, p1}, Lorg/bouncycastle/asn1/x509/zgw;->Xc(Ljava/lang/String;)[I
 
     move-result-object p1
 

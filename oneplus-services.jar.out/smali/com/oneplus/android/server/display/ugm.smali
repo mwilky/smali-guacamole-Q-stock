@@ -20,7 +20,7 @@
     return-void
 .end method
 
-.method public static S(I)[F
+.method public static V(I)[F
     .locals 6
 
     const/16 v0, 0x10

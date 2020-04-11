@@ -39,7 +39,7 @@
 
     iget-object v0, p0, Lcom/android/server/policy/ugm;->this$0:Lcom/android/server/policy/OpPhoneWindowManager;
 
-    invoke-static {v0}, Lcom/android/server/policy/OpPhoneWindowManager;->access$2400(Lcom/android/server/policy/OpPhoneWindowManager;)Z
+    invoke-static {v0}, Lcom/android/server/policy/OpPhoneWindowManager;->access$2300(Lcom/android/server/policy/OpPhoneWindowManager;)Z
 
     move-result v0
 
@@ -47,7 +47,7 @@
 
     iget-object v0, p0, Lcom/android/server/policy/ugm;->this$0:Lcom/android/server/policy/OpPhoneWindowManager;
 
-    invoke-static {v0}, Lcom/android/server/policy/OpPhoneWindowManager;->access$2500(Lcom/android/server/policy/OpPhoneWindowManager;)Z
+    invoke-static {v0}, Lcom/android/server/policy/OpPhoneWindowManager;->access$1300(Lcom/android/server/policy/OpPhoneWindowManager;)Z
 
     move-result v0
 
@@ -57,11 +57,11 @@
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lcom/android/server/policy/OpPhoneWindowManager;->access$2402(Lcom/android/server/policy/OpPhoneWindowManager;Z)Z
+    invoke-static {v0, v1}, Lcom/android/server/policy/OpPhoneWindowManager;->access$2302(Lcom/android/server/policy/OpPhoneWindowManager;Z)Z
 
     iget-object p0, p0, Lcom/android/server/policy/ugm;->this$0:Lcom/android/server/policy/OpPhoneWindowManager;
 
-    const/4 v0, 0x2
+    const/16 v0, 0xd
 
     const/4 v1, 0x0
 

@@ -4,7 +4,7 @@
 
 
 # static fields
-.field private static final aFa:Lorg/bouncycastle/util/encoders/sis;
+.field private static final ZFa:Lorg/bouncycastle/util/encoders/sis;
 
 
 # direct methods
@@ -15,7 +15,7 @@
 
     invoke-direct {v0}, Lorg/bouncycastle/util/encoders/rtg;-><init>()V
 
-    sput-object v0, Lorg/bouncycastle/util/encoders/tsu;->aFa:Lorg/bouncycastle/util/encoders/sis;
+    sput-object v0, Lorg/bouncycastle/util/encoders/tsu;->ZFa:Lorg/bouncycastle/util/encoders/sis;
 
     return-void
 .end method
@@ -36,7 +36,7 @@
     invoke-direct {v0}, Ljava/io/ByteArrayOutputStream;-><init>()V
 
     :try_start_0
-    sget-object v1, Lorg/bouncycastle/util/encoders/tsu;->aFa:Lorg/bouncycastle/util/encoders/sis;
+    sget-object v1, Lorg/bouncycastle/util/encoders/tsu;->ZFa:Lorg/bouncycastle/util/encoders/sis;
 
     invoke-interface {v1, p0, v0}, Lorg/bouncycastle/util/encoders/sis;->zta(Ljava/lang/String;Ljava/io/OutputStream;)I
     :try_end_0
@@ -84,7 +84,7 @@
     invoke-direct {v0}, Ljava/io/ByteArrayOutputStream;-><init>()V
 
     :try_start_0
-    sget-object v1, Lorg/bouncycastle/util/encoders/tsu;->aFa:Lorg/bouncycastle/util/encoders/sis;
+    sget-object v1, Lorg/bouncycastle/util/encoders/tsu;->ZFa:Lorg/bouncycastle/util/encoders/sis;
 
     const/4 v2, 0x0
 
@@ -150,7 +150,7 @@
     invoke-direct {v0}, Ljava/io/ByteArrayOutputStream;-><init>()V
 
     :try_start_0
-    sget-object v1, Lorg/bouncycastle/util/encoders/tsu;->aFa:Lorg/bouncycastle/util/encoders/sis;
+    sget-object v1, Lorg/bouncycastle/util/encoders/tsu;->ZFa:Lorg/bouncycastle/util/encoders/sis;
 
     invoke-interface {v1, p0, p1, p2, v0}, Lorg/bouncycastle/util/encoders/sis;->zta([BIILjava/io/OutputStream;)I
     :try_end_0
@@ -226,7 +226,7 @@
         }
     .end annotation
 
-    sget-object v0, Lorg/bouncycastle/util/encoders/tsu;->aFa:Lorg/bouncycastle/util/encoders/sis;
+    sget-object v0, Lorg/bouncycastle/util/encoders/tsu;->ZFa:Lorg/bouncycastle/util/encoders/sis;
 
     invoke-interface {v0, p0, p1}, Lorg/bouncycastle/util/encoders/sis;->zta(Ljava/lang/String;Ljava/io/OutputStream;)I
 
@@ -243,7 +243,7 @@
         }
     .end annotation
 
-    sget-object v0, Lorg/bouncycastle/util/encoders/tsu;->aFa:Lorg/bouncycastle/util/encoders/sis;
+    sget-object v0, Lorg/bouncycastle/util/encoders/tsu;->ZFa:Lorg/bouncycastle/util/encoders/sis;
 
     invoke-interface {v0, p0, p1, p2, p3}, Lorg/bouncycastle/util/encoders/sis;->zta([BIILjava/io/OutputStream;)I
 
@@ -260,7 +260,7 @@
         }
     .end annotation
 
-    sget-object v0, Lorg/bouncycastle/util/encoders/tsu;->aFa:Lorg/bouncycastle/util/encoders/sis;
+    sget-object v0, Lorg/bouncycastle/util/encoders/tsu;->ZFa:Lorg/bouncycastle/util/encoders/sis;
 
     array-length v1, p0
 

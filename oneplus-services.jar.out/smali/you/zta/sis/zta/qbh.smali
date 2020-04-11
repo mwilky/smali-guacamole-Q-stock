@@ -18,7 +18,7 @@
 
 
 # instance fields
-.field final synthetic ODa:Lyou/zta/sis/zta/wtn;
+.field final synthetic MEa:Lyou/zta/sis/zta/wtn;
 
 .field final synthetic val$c:Lyou/zta/sis/zta/rtg;
 
@@ -29,7 +29,7 @@
 
     iput-object p1, p0, Lyou/zta/sis/zta/qbh;->val$c:Lyou/zta/sis/zta/rtg;
 
-    iput-object p2, p0, Lyou/zta/sis/zta/qbh;->ODa:Lyou/zta/sis/zta/wtn;
+    iput-object p2, p0, Lyou/zta/sis/zta/qbh;->MEa:Lyou/zta/sis/zta/wtn;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -63,7 +63,7 @@
 
     if-eqz p1, :cond_0
 
-    invoke-virtual {p1}, Lyou/zta/sis/zta/ywr;->xk()Lyou/zta/sis/zta/kth;
+    invoke-virtual {p1}, Lyou/zta/sis/zta/ywr;->Bk()Lyou/zta/sis/zta/kth;
 
     move-result-object p1
 
@@ -142,7 +142,7 @@
 
     new-array p1, p1, [Lyou/zta/sis/zta/wtn;
 
-    iget-object v4, p0, Lyou/zta/sis/zta/qbh;->ODa:Lyou/zta/sis/zta/wtn;
+    iget-object v4, p0, Lyou/zta/sis/zta/qbh;->MEa:Lyou/zta/sis/zta/wtn;
 
     const/4 v5, 0x0
 
@@ -157,7 +157,7 @@
 
     aget-object v6, p1, v6
 
-    invoke-virtual {v6, v0}, Lyou/zta/sis/zta/wtn;->na(I)Lyou/zta/sis/zta/wtn;
+    invoke-virtual {v6, v0}, Lyou/zta/sis/zta/wtn;->qa(I)Lyou/zta/sis/zta/wtn;
 
     move-result-object v6
 

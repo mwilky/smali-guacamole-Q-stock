@@ -1,11 +1,14 @@
 .class Lcom/android/server/policy/ear;
-.super Landroid/widget/ArrayAdapter;
+.super Ljava/lang/Object;
 .source ""
+
+# interfaces
+.implements Ljava/lang/Runnable;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/server/policy/lqr;->onTouch(Landroid/view/View;Landroid/view/MotionEvent;)Z
+    value = Lcom/android/server/policy/OpQuickPay;->focusChangedLw(Lcom/android/server/policy/WindowManagerPolicy$WindowState;Lcom/android/server/policy/WindowManagerPolicy$WindowState;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -13,85 +16,62 @@
     name = null
 .end annotation
 
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Landroid/widget/ArrayAdapter<",
-        "Ljava/lang/String;",
-        ">;"
-    }
-.end annotation
-
 
 # instance fields
-.field final synthetic Hb:I
+.field final synthetic this$0:Lcom/android/server/policy/OpQuickPay;
 
-.field final synthetic Ib:Ljava/util/ArrayList;
-
-.field final synthetic this$1:Lcom/android/server/policy/lqr;
+.field final synthetic val$intent:Landroid/content/Intent;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/server/policy/lqr;Landroid/content/Context;II[Ljava/lang/String;ILjava/util/ArrayList;)V
+.method constructor <init>(Lcom/android/server/policy/OpQuickPay;Landroid/content/Intent;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/android/server/policy/ear;->this$1:Lcom/android/server/policy/lqr;
+    iput-object p1, p0, Lcom/android/server/policy/ear;->this$0:Lcom/android/server/policy/OpQuickPay;
 
-    iput p6, p0, Lcom/android/server/policy/ear;->Hb:I
+    iput-object p2, p0, Lcom/android/server/policy/ear;->val$intent:Landroid/content/Intent;
 
-    iput-object p7, p0, Lcom/android/server/policy/ear;->Ib:Ljava/util/ArrayList;
-
-    invoke-direct {p0, p2, p3, p4, p5}, Landroid/widget/ArrayAdapter;-><init>(Landroid/content/Context;II[Ljava/lang/Object;)V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
-    .locals 1
+.method public run()V
+    .locals 3
 
-    invoke-super {p0, p1, p2, p3}, Landroid/widget/ArrayAdapter;->getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
+    invoke-static {}, Lcom/android/server/policy/OpQuickPay;->access$000()Ljava/lang/String;
 
-    move-result-object p2
+    move-result-object v0
 
-    iget p3, p0, Lcom/android/server/policy/ear;->Hb:I
+    new-instance v1, Ljava/lang/StringBuilder;
 
-    if-ne p1, p3, :cond_0
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    const p3, 0x507005e
+    const-string v2, "FocusWindow pid changed, restart: "
 
-    invoke-virtual {p2, p3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object p3
+    iget-object v2, p0, Lcom/android/server/policy/ear;->val$intent:Landroid/content/Intent;
 
-    check-cast p3, Landroid/widget/CheckedTextView;
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    const/4 v0, 0x1
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    invoke-virtual {p3, v0}, Landroid/widget/CheckedTextView;->setChecked(Z)V
+    move-result-object v1
 
-    :cond_0
-    const p3, 0x507005f
+    invoke-static {v0, v1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    invoke-virtual {p2, p3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+    iget-object v0, p0, Lcom/android/server/policy/ear;->this$0:Lcom/android/server/policy/OpQuickPay;
 
-    move-result-object p3
+    iget-object v0, v0, Lcom/android/server/policy/OpQuickPay;->mOpPhoneWindowManager:Lcom/android/server/policy/OpPhoneWindowManager;
 
-    check-cast p3, Landroid/widget/CheckedTextView;
+    iget-object p0, p0, Lcom/android/server/policy/ear;->val$intent:Landroid/content/Intent;
 
-    iget-object p0, p0, Lcom/android/server/policy/ear;->Ib:Ljava/util/ArrayList;
+    sget-object v1, Landroid/os/UserHandle;->CURRENT:Landroid/os/UserHandle;
 
-    invoke-virtual {p0, p1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+    invoke-virtual {v0, p0, v1}, Lcom/android/server/policy/PhoneWindowManager;->startActivityAsUser(Landroid/content/Intent;Landroid/os/UserHandle;)V
 
-    move-result-object p0
-
-    check-cast p0, Lcom/android/server/policy/OpQuickPay$zta;
-
-    iget-object p0, p0, Lcom/android/server/policy/OpQuickPay$zta;->appIcon:Landroid/graphics/drawable/Drawable;
-
-    const/4 p1, 0x0
-
-    invoke-virtual {p3, p0, p1, p1, p1}, Landroid/widget/CheckedTextView;->setCompoundDrawablesRelative(Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)V
-
-    return-object p2
+    return-void
 .end method

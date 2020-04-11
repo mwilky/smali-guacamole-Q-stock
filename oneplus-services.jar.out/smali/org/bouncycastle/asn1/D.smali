@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field private mua:Lorg/bouncycastle/asn1/ba;
+.field private kva:Lorg/bouncycastle/asn1/ba;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lorg/bouncycastle/asn1/D;->mua:Lorg/bouncycastle/asn1/ba;
+    iput-object p1, p0, Lorg/bouncycastle/asn1/D;->kva:Lorg/bouncycastle/asn1/ba;
 
     return-void
 .end method
@@ -33,7 +33,7 @@
 
     new-instance v0, Lorg/bouncycastle/asn1/C;
 
-    iget-object p0, p0, Lorg/bouncycastle/asn1/D;->mua:Lorg/bouncycastle/asn1/ba;
+    iget-object p0, p0, Lorg/bouncycastle/asn1/D;->kva:Lorg/bouncycastle/asn1/ba;
 
     invoke-virtual {p0}, Lorg/bouncycastle/asn1/ba;->toByteArray()[B
 
@@ -47,7 +47,7 @@
 .method public hmo()Ljava/io/InputStream;
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/asn1/D;->mua:Lorg/bouncycastle/asn1/ba;
+    iget-object p0, p0, Lorg/bouncycastle/asn1/D;->kva:Lorg/bouncycastle/asn1/ba;
 
     return-object p0
 .end method

@@ -4,9 +4,9 @@
 
 
 # static fields
-.field public static final hAa:I = 0x1
+.field public static final fBa:I = 0x1
 
-.field public static final iAa:I = 0x2
+.field public static final gBa:I = 0x2
 
 
 # instance fields
@@ -14,11 +14,11 @@
 
 .field private final n:I
 
-.field private final swa:I
+.field private final qxa:I
 
-.field private final tza:I
+.field private final rAa:I
 
-.field private final yla:Ljava/security/SecureRandom;
+.field private final xma:Ljava/security/SecureRandom;
 
 
 # direct methods
@@ -51,18 +51,18 @@
 
     iput p2, p0, Lorg/bouncycastle/crypto/wtn/dma;->n:I
 
-    iput p3, p0, Lorg/bouncycastle/crypto/wtn/dma;->swa:I
+    iput p3, p0, Lorg/bouncycastle/crypto/wtn/dma;->qxa:I
 
-    iput p5, p0, Lorg/bouncycastle/crypto/wtn/dma;->tza:I
+    iput p5, p0, Lorg/bouncycastle/crypto/wtn/dma;->rAa:I
 
-    iput-object p4, p0, Lorg/bouncycastle/crypto/wtn/dma;->yla:Ljava/security/SecureRandom;
+    iput-object p4, p0, Lorg/bouncycastle/crypto/wtn/dma;->xma:Ljava/security/SecureRandom;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public Ei()I
+.method public Ii()I
     .locals 0
 
     iget p0, p0, Lorg/bouncycastle/crypto/wtn/dma;->n:I
@@ -70,10 +70,10 @@
     return p0
 .end method
 
-.method public Vi()Ljava/security/SecureRandom;
+.method public Zi()Ljava/security/SecureRandom;
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/crypto/wtn/dma;->yla:Ljava/security/SecureRandom;
+    iget-object p0, p0, Lorg/bouncycastle/crypto/wtn/dma;->xma:Ljava/security/SecureRandom;
 
     return-object p0
 .end method
@@ -81,7 +81,7 @@
 .method public getCertainty()I
     .locals 0
 
-    iget p0, p0, Lorg/bouncycastle/crypto/wtn/dma;->swa:I
+    iget p0, p0, Lorg/bouncycastle/crypto/wtn/dma;->qxa:I
 
     return p0
 .end method
@@ -94,10 +94,10 @@
     return p0
 .end method
 
-.method public kj()I
+.method public oj()I
     .locals 0
 
-    iget p0, p0, Lorg/bouncycastle/crypto/wtn/dma;->tza:I
+    iget p0, p0, Lorg/bouncycastle/crypto/wtn/dma;->rAa:I
 
     return p0
 .end method

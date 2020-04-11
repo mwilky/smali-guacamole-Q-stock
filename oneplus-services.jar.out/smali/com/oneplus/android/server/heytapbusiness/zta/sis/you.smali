@@ -66,7 +66,7 @@
 
 
 # virtual methods
-.method public We()Ljava/lang/String;
+.method public _e()Ljava/lang/String;
     .locals 0
 
     const-string p0, "wechatpay"
@@ -164,7 +164,7 @@
     throw p0
 .end method
 
-.method public ka(Ljava/lang/String;)Landroid/content/ComponentName;
+.method public la(Ljava/lang/String;)Landroid/content/ComponentName;
     .locals 3
 
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
@@ -224,7 +224,7 @@
     throw p0
 .end method
 
-.method public la(Ljava/lang/String;)Z
+.method public ma(Ljava/lang/String;)Z
     .locals 1
 
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
@@ -268,7 +268,7 @@
 
     check-cast p1, Ljava/lang/String;
 
-    invoke-virtual {p0, p1}, Lcom/oneplus/android/server/heytapbusiness/zta/sis/you;->ka(Ljava/lang/String;)Landroid/content/ComponentName;
+    invoke-virtual {p0, p1}, Lcom/oneplus/android/server/heytapbusiness/zta/sis/you;->la(Ljava/lang/String;)Landroid/content/ComponentName;
 
     move-result-object p0
 
@@ -280,7 +280,7 @@
 
     check-cast p1, Ljava/lang/String;
 
-    invoke-virtual {p0, p1}, Lcom/oneplus/android/server/heytapbusiness/zta/sis/you;->la(Ljava/lang/String;)Z
+    invoke-virtual {p0, p1}, Lcom/oneplus/android/server/heytapbusiness/zta/sis/you;->ma(Ljava/lang/String;)Z
 
     move-result p0
 

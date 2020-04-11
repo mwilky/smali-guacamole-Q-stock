@@ -37,7 +37,7 @@
 .method public run()V
     .locals 6
 
-    invoke-static {}, Lcom/android/server/engineer/qbh;->Cc()Z
+    invoke-static {}, Lcom/android/server/engineer/qbh;->Gc()Z
 
     move-result p0
 
@@ -61,7 +61,7 @@
 
     const v0, 0xf4252
 
-    invoke-static {v0}, Lcom/android/server/engineer/rtg;->n(I)[B
+    invoke-static {v0}, Lcom/android/server/engineer/rtg;->q(I)[B
 
     move-result-object v0
 
@@ -134,7 +134,7 @@
     :cond_1
     const p0, 0xf425a
 
-    invoke-static {p0}, Lcom/android/server/engineer/rtg;->n(I)[B
+    invoke-static {p0}, Lcom/android/server/engineer/rtg;->q(I)[B
 
     move-result-object p0
 

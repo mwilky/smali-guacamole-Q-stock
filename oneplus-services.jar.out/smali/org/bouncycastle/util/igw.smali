@@ -60,20 +60,6 @@
     return-wide p0
 .end method
 
-.method public static ea(I)[B
-    .locals 2
-
-    const/4 v0, 0x4
-
-    new-array v0, v0, [B
-
-    const/4 v1, 0x0
-
-    invoke-static {p0, v0, v1}, Lorg/bouncycastle/util/igw;->you(I[BI)V
-
-    return-object v0
-.end method
-
 .method public static ear(J)[B
     .locals 2
 
@@ -84,20 +70,6 @@
     const/4 v1, 0x0
 
     invoke-static {p0, p1, v0, v1}, Lorg/bouncycastle/util/igw;->zta(J[BI)V
-
-    return-object v0
-.end method
-
-.method public static fa(I)[B
-    .locals 2
-
-    const/4 v0, 0x4
-
-    new-array v0, v0, [B
-
-    const/4 v1, 0x0
-
-    invoke-static {p0, v0, v1}, Lorg/bouncycastle/util/igw;->sis(I[BI)V
 
     return-object v0
 .end method
@@ -166,6 +138,34 @@
 
     :cond_0
     return-object p2
+.end method
+
+.method public static ha(I)[B
+    .locals 2
+
+    const/4 v0, 0x4
+
+    new-array v0, v0, [B
+
+    const/4 v1, 0x0
+
+    invoke-static {p0, v0, v1}, Lorg/bouncycastle/util/igw;->you(I[BI)V
+
+    return-object v0
+.end method
+
+.method public static ia(I)[B
+    .locals 2
+
+    const/4 v0, 0x4
+
+    new-array v0, v0, [B
+
+    const/4 v1, 0x0
+
+    invoke-static {p0, v0, v1}, Lorg/bouncycastle/util/igw;->sis(I[BI)V
+
+    return-object v0
 .end method
 
 .method public static igw([BI)I

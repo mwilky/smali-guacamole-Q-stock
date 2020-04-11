@@ -4,7 +4,7 @@
 
 
 # static fields
-.field public static final vBa:[Lorg/bouncycastle/asn1/bvj;
+.field public static final tCa:[Lorg/bouncycastle/asn1/bvj;
 
 
 # direct methods
@@ -21,7 +21,7 @@
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lorg/bouncycastle/asn1/x509/t;->_Na:Lorg/bouncycastle/asn1/bvj;
+    sget-object v1, Lorg/bouncycastle/asn1/x509/t;->YOa:Lorg/bouncycastle/asn1/bvj;
 
     const/4 v2, 0x1
 
@@ -39,7 +39,7 @@
 
     aput-object v1, v0, v2
 
-    sput-object v0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/ssp;->vBa:[Lorg/bouncycastle/asn1/bvj;
+    sput-object v0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/ssp;->tCa:[Lorg/bouncycastle/asn1/bvj;
 
     return-void
 .end method
@@ -98,7 +98,7 @@
     move v1, v0
 
     :goto_0
-    sget-object v2, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/ssp;->vBa:[Lorg/bouncycastle/asn1/bvj;
+    sget-object v2, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/ssp;->tCa:[Lorg/bouncycastle/asn1/bvj;
 
     array-length v3, v2
 

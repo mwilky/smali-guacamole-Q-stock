@@ -18,9 +18,9 @@
 
 
 # instance fields
-.field final synthetic nT:Ljava/lang/String;
+.field final synthetic nU:Ljava/lang/String;
 
-.field final synthetic oT:Ljava/lang/Integer;
+.field final synthetic oU:Ljava/lang/Integer;
 
 .field final synthetic this$0:Lcom/android/server/wm/veq;
 
@@ -31,9 +31,9 @@
 
     iput-object p1, p0, Lcom/android/server/wm/obl;->this$0:Lcom/android/server/wm/veq;
 
-    iput-object p2, p0, Lcom/android/server/wm/obl;->nT:Ljava/lang/String;
+    iput-object p2, p0, Lcom/android/server/wm/obl;->nU:Ljava/lang/String;
 
-    iput-object p3, p0, Lcom/android/server/wm/obl;->oT:Ljava/lang/Integer;
+    iput-object p3, p0, Lcom/android/server/wm/obl;->oU:Ljava/lang/Integer;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -57,7 +57,7 @@
 
     move-result-object v1
 
-    const v2, 0x50d00b2
+    const v2, 0x50d00b3
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -87,9 +87,9 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/server/wm/obl;->nT:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/server/wm/obl;->nU:Ljava/lang/String;
 
-    iget-object v3, p0, Lcom/android/server/wm/obl;->oT:Ljava/lang/Integer;
+    iget-object v3, p0, Lcom/android/server/wm/obl;->oU:Ljava/lang/Integer;
 
     const/4 v4, 0x1
 

@@ -27,9 +27,9 @@
 
 .field public static final enum BASE:Lcom/oneplus/android/server/scene/OemSceneVibrationController$VibrationMode;
 
-.field public static final enum Zka:Lcom/oneplus/android/server/scene/OemSceneVibrationController$VibrationMode;
+.field public static final enum Zla:Lcom/oneplus/android/server/scene/OemSceneVibrationController$VibrationMode;
 
-.field public static final enum _ka:Lcom/oneplus/android/server/scene/OemSceneVibrationController$VibrationMode;
+.field public static final enum _la:Lcom/oneplus/android/server/scene/OemSceneVibrationController$VibrationMode;
 
 
 # direct methods
@@ -44,7 +44,7 @@
 
     invoke-direct {v0, v2, v1}, Lcom/oneplus/android/server/scene/OemSceneVibrationController$VibrationMode;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/oneplus/android/server/scene/OemSceneVibrationController$VibrationMode;->Zka:Lcom/oneplus/android/server/scene/OemSceneVibrationController$VibrationMode;
+    sput-object v0, Lcom/oneplus/android/server/scene/OemSceneVibrationController$VibrationMode;->Zla:Lcom/oneplus/android/server/scene/OemSceneVibrationController$VibrationMode;
 
     new-instance v0, Lcom/oneplus/android/server/scene/OemSceneVibrationController$VibrationMode;
 
@@ -54,7 +54,7 @@
 
     invoke-direct {v0, v3, v2}, Lcom/oneplus/android/server/scene/OemSceneVibrationController$VibrationMode;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/oneplus/android/server/scene/OemSceneVibrationController$VibrationMode;->_ka:Lcom/oneplus/android/server/scene/OemSceneVibrationController$VibrationMode;
+    sput-object v0, Lcom/oneplus/android/server/scene/OemSceneVibrationController$VibrationMode;->_la:Lcom/oneplus/android/server/scene/OemSceneVibrationController$VibrationMode;
 
     new-instance v0, Lcom/oneplus/android/server/scene/OemSceneVibrationController$VibrationMode;
 
@@ -70,11 +70,11 @@
 
     new-array v0, v0, [Lcom/oneplus/android/server/scene/OemSceneVibrationController$VibrationMode;
 
-    sget-object v4, Lcom/oneplus/android/server/scene/OemSceneVibrationController$VibrationMode;->Zka:Lcom/oneplus/android/server/scene/OemSceneVibrationController$VibrationMode;
+    sget-object v4, Lcom/oneplus/android/server/scene/OemSceneVibrationController$VibrationMode;->Zla:Lcom/oneplus/android/server/scene/OemSceneVibrationController$VibrationMode;
 
     aput-object v4, v0, v1
 
-    sget-object v1, Lcom/oneplus/android/server/scene/OemSceneVibrationController$VibrationMode;->_ka:Lcom/oneplus/android/server/scene/OemSceneVibrationController$VibrationMode;
+    sget-object v1, Lcom/oneplus/android/server/scene/OemSceneVibrationController$VibrationMode;->_la:Lcom/oneplus/android/server/scene/OemSceneVibrationController$VibrationMode;
 
     aput-object v1, v0, v2
 

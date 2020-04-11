@@ -19,9 +19,9 @@
 
 
 # instance fields
-.field private final dc:Z
+.field private final hc:Z
 
-.field private ec:Ljava/util/Map;
+.field private ic:Ljava/util/Map;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Map<",
@@ -32,7 +32,7 @@
     .end annotation
 .end field
 
-.field private final fc:[Ljava/lang/String;
+.field private final jc:[Ljava/lang/String;
 
 .field final synthetic this$0:Lcom/android/server/OnePlusExService;
 
@@ -53,13 +53,13 @@
 
     move-result p1
 
-    iput-boolean p1, p0, Lcom/android/server/OnePlusExService$zta;->dc:Z
+    iput-boolean p1, p0, Lcom/android/server/OnePlusExService$zta;->hc:Z
 
     new-instance p1, Ljava/util/HashMap;
 
     invoke-direct {p1}, Ljava/util/HashMap;-><init>()V
 
-    iput-object p1, p0, Lcom/android/server/OnePlusExService$zta;->ec:Ljava/util/Map;
+    iput-object p1, p0, Lcom/android/server/OnePlusExService$zta;->ic:Ljava/util/Map;
 
     const-string v0, "_id"
 
@@ -79,7 +79,7 @@
 
     move-result-object p1
 
-    iput-object p1, p0, Lcom/android/server/OnePlusExService$zta;->fc:[Ljava/lang/String;
+    iput-object p1, p0, Lcom/android/server/OnePlusExService$zta;->jc:[Ljava/lang/String;
 
     return-void
 .end method
@@ -92,7 +92,190 @@
     return-void
 .end method
 
-.method private cno(Landroid/content/Context;)V
+.method private getVibratorSceneId(Landroid/content/Context;Landroid/net/Uri;)I
+    .locals 6
+
+    sget-boolean v0, Lcom/android/server/OnePlusExService;->debugOnePlus:Z
+
+    const-string v1, "OnePlusExServiceRingtone"
+
+    if-eqz v0, :cond_0
+
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v2, "getVibratorSceneId: "
+
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    const-string v2, " from "
+
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p1}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {v1, v0}, Landroid/util/Slog;->v(Ljava/lang/String;Ljava/lang/String;)I
+
+    :cond_0
+    const/4 v0, -0x1
+
+    :try_start_0
+    invoke-virtual {p2}, Landroid/net/Uri;->getLastPathSegment()Ljava/lang/String;
+
+    move-result-object v2
+
+    iget-object v3, p0, Lcom/android/server/OnePlusExService$zta;->ic:Ljava/util/Map;
+
+    invoke-interface {v3}, Ljava/util/Map;->size()I
+
+    move-result v3
+
+    if-eqz v3, :cond_1
+
+    iget-object v3, p0, Lcom/android/server/OnePlusExService$zta;->ic:Ljava/util/Map;
+
+    invoke-interface {v3, v2}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v3
+
+    if-eqz v3, :cond_1
+
+    iget-object v3, p0, Lcom/android/server/OnePlusExService$zta;->ic:Ljava/util/Map;
+
+    invoke-interface {v3, v2}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v3
+
+    check-cast v3, Ljava/lang/Integer;
+
+    invoke-virtual {v3}, Ljava/lang/Integer;->intValue()I
+
+    move-result v3
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_2
+
+    :try_start_1
+    iget-boolean v4, p0, Lcom/android/server/OnePlusExService$zta;->hc:Z
+
+    if-eqz v4, :cond_2
+
+    new-instance v4, Ljava/lang/StringBuilder;
+
+    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v5, "getVibratorSceneId: strId("
+
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v4, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v5, "), sceneId = "
+
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v4, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v4
+
+    invoke-static {v1, v4}, Landroid/util/Slog;->i(Ljava/lang/String;Ljava/lang/String;)I
+
+    goto :goto_0
+
+    :cond_1
+    move v3, v0
+
+    :cond_2
+    :goto_0
+    if-ne v3, v0, :cond_3
+
+    invoke-direct {p0, p1, p2}, Lcom/android/server/OnePlusExService$zta;->zta(Landroid/content/Context;Landroid/net/Uri;)I
+
+    move-result p1
+    :try_end_1
+    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_1
+
+    if-eq p1, v0, :cond_4
+
+    :try_start_2
+    iget-object p0, p0, Lcom/android/server/OnePlusExService$zta;->ic:Ljava/util/Map;
+
+    new-instance p2, Ljava/lang/Integer;
+
+    invoke-direct {p2, p1}, Ljava/lang/Integer;-><init>(I)V
+
+    invoke-interface {p0, v2, p2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    :try_end_2
+    .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_0
+
+    goto :goto_2
+
+    :catch_0
+    move-exception p0
+
+    goto :goto_1
+
+    :catch_1
+    move-exception p0
+
+    move p1, v3
+
+    goto :goto_1
+
+    :cond_3
+    move p1, v3
+
+    goto :goto_2
+
+    :catch_2
+    move-exception p0
+
+    move p1, v0
+
+    :goto_1
+    const-string p2, "getVibratorSceneId failed: "
+
+    invoke-static {v1, p2, p0}, Landroid/util/Slog;->w(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
+
+    :cond_4
+    :goto_2
+    sget-boolean p0, Lcom/android/server/OnePlusExService;->debugOnePlus:Z
+
+    if-eqz p0, :cond_5
+
+    new-instance p0, Ljava/lang/StringBuilder;
+
+    invoke-direct {p0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string p2, "getVibratorSceneId: sceneId = "
+
+    invoke-virtual {p0, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p0
+
+    invoke-static {v1, p0}, Landroid/util/Slog;->v(Ljava/lang/String;Ljava/lang/String;)I
+
+    :cond_5
+    return p1
+.end method
+
+.method private kth(Landroid/content/Context;)V
     .locals 12
 
     const-string v0, "OnePlusExServiceRingtone"
@@ -143,7 +326,7 @@
     :try_start_2
     sget-object v6, Landroid/provider/MediaStore$Audio$Media;->INTERNAL_CONTENT_URI:Landroid/net/Uri;
 
-    iget-object v7, p0, Lcom/android/server/OnePlusExService$zta;->fc:[Ljava/lang/String;
+    iget-object v7, p0, Lcom/android/server/OnePlusExService$zta;->jc:[Ljava/lang/String;
 
     const-string v8, "composer=?"
 
@@ -203,7 +386,7 @@
 
     move-result-object v6
 
-    iget-object v7, p0, Lcom/android/server/OnePlusExService$zta;->ec:Ljava/util/Map;
+    iget-object v7, p0, Lcom/android/server/OnePlusExService$zta;->ic:Ljava/util/Map;
 
     new-instance v8, Ljava/lang/Integer;
 
@@ -310,7 +493,7 @@
 
     invoke-virtual {p1, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object p0, p0, Lcom/android/server/OnePlusExService$zta;->ec:Ljava/util/Map;
+    iget-object p0, p0, Lcom/android/server/OnePlusExService$zta;->ic:Ljava/util/Map;
 
     invoke-interface {p0}, Ljava/util/Map;->size()I
 
@@ -348,189 +531,6 @@
     invoke-static {v1, v2}, Landroid/os/Binder;->restoreCallingIdentity(J)V
 
     throw p0
-.end method
-
-.method private getVibratorSceneId(Landroid/content/Context;Landroid/net/Uri;)I
-    .locals 6
-
-    sget-boolean v0, Lcom/android/server/OnePlusExService;->debugOnePlus:Z
-
-    const-string v1, "OnePlusExServiceRingtone"
-
-    if-eqz v0, :cond_0
-
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v2, "getVibratorSceneId: "
-
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    const-string v2, " from "
-
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p1}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-static {v1, v0}, Landroid/util/Slog;->v(Ljava/lang/String;Ljava/lang/String;)I
-
-    :cond_0
-    const/4 v0, -0x1
-
-    :try_start_0
-    invoke-virtual {p2}, Landroid/net/Uri;->getLastPathSegment()Ljava/lang/String;
-
-    move-result-object v2
-
-    iget-object v3, p0, Lcom/android/server/OnePlusExService$zta;->ec:Ljava/util/Map;
-
-    invoke-interface {v3}, Ljava/util/Map;->size()I
-
-    move-result v3
-
-    if-eqz v3, :cond_1
-
-    iget-object v3, p0, Lcom/android/server/OnePlusExService$zta;->ec:Ljava/util/Map;
-
-    invoke-interface {v3, v2}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v3
-
-    if-eqz v3, :cond_1
-
-    iget-object v3, p0, Lcom/android/server/OnePlusExService$zta;->ec:Ljava/util/Map;
-
-    invoke-interface {v3, v2}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v3
-
-    check-cast v3, Ljava/lang/Integer;
-
-    invoke-virtual {v3}, Ljava/lang/Integer;->intValue()I
-
-    move-result v3
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_2
-
-    :try_start_1
-    iget-boolean v4, p0, Lcom/android/server/OnePlusExService$zta;->dc:Z
-
-    if-eqz v4, :cond_2
-
-    new-instance v4, Ljava/lang/StringBuilder;
-
-    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v5, "getVibratorSceneId: strId("
-
-    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v4, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string v5, "), sceneId = "
-
-    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v4, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v4
-
-    invoke-static {v1, v4}, Landroid/util/Slog;->i(Ljava/lang/String;Ljava/lang/String;)I
-
-    goto :goto_0
-
-    :cond_1
-    move v3, v0
-
-    :cond_2
-    :goto_0
-    if-ne v3, v0, :cond_3
-
-    invoke-direct {p0, p1, p2}, Lcom/android/server/OnePlusExService$zta;->zta(Landroid/content/Context;Landroid/net/Uri;)I
-
-    move-result p1
-    :try_end_1
-    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_1
-
-    if-eq p1, v0, :cond_4
-
-    :try_start_2
-    iget-object p0, p0, Lcom/android/server/OnePlusExService$zta;->ec:Ljava/util/Map;
-
-    new-instance p2, Ljava/lang/Integer;
-
-    invoke-direct {p2, p1}, Ljava/lang/Integer;-><init>(I)V
-
-    invoke-interface {p0, v2, p2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-    :try_end_2
-    .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_0
-
-    goto :goto_2
-
-    :catch_0
-    move-exception p0
-
-    goto :goto_1
-
-    :catch_1
-    move-exception p0
-
-    move p1, v3
-
-    goto :goto_1
-
-    :cond_3
-    move p1, v3
-
-    goto :goto_2
-
-    :catch_2
-    move-exception p0
-
-    move p1, v0
-
-    :goto_1
-    const-string p2, "getVibratorSceneId failed: "
-
-    invoke-static {v1, p2, p0}, Landroid/util/Slog;->w(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
-
-    :cond_4
-    :goto_2
-    sget-boolean p0, Lcom/android/server/OnePlusExService;->debugOnePlus:Z
-
-    if-eqz p0, :cond_5
-
-    new-instance p0, Ljava/lang/StringBuilder;
-
-    invoke-direct {p0}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string p2, "getVibratorSceneId: sceneId = "
-
-    invoke-virtual {p0, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p0
-
-    invoke-static {v1, p0}, Landroid/util/Slog;->v(Ljava/lang/String;Ljava/lang/String;)I
-
-    :cond_5
-    return p1
 .end method
 
 .method private zta(Landroid/content/Context;Landroid/net/Uri;)I
@@ -605,7 +605,7 @@
 
     :cond_1
     :try_start_2
-    iget-object v8, p0, Lcom/android/server/OnePlusExService$zta;->fc:[Ljava/lang/String;
+    iget-object v8, p0, Lcom/android/server/OnePlusExService$zta;->jc:[Ljava/lang/String;
 
     const-string v9, "composer=?"
 
@@ -825,7 +825,7 @@
 
     move-result-object v5
 
-    iget-boolean v6, p0, Lcom/android/server/OnePlusExService$zta;->dc:Z
+    iget-boolean v6, p0, Lcom/android/server/OnePlusExService$zta;->hc:Z
 
     if-eqz v6, :cond_0
 
@@ -918,7 +918,7 @@
 
     move-result v1
 
-    iget-boolean p0, p0, Lcom/android/server/OnePlusExService$zta;->dc:Z
+    iget-boolean p0, p0, Lcom/android/server/OnePlusExService$zta;->hc:Z
 
     if-eqz p0, :cond_1
 
@@ -991,7 +991,7 @@
 .method static synthetic zta(Lcom/android/server/OnePlusExService$zta;Landroid/content/Context;)V
     .locals 0
 
-    invoke-direct {p0, p1}, Lcom/android/server/OnePlusExService$zta;->cno(Landroid/content/Context;)V
+    invoke-direct {p0, p1}, Lcom/android/server/OnePlusExService$zta;->kth(Landroid/content/Context;)V
 
     return-void
 .end method

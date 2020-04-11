@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field public Jb:I
+.field public Nb:I
 
 
 # direct methods
@@ -32,7 +32,7 @@
 
     const/4 v0, 0x0
 
-    iput v0, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$tsu;->Jb:I
+    iput v0, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$tsu;->Nb:I
 
     iget-object v0, p1, Lcom/android/internal/os/BatterySipper;->uidObj:Landroid/os/BatteryStats$Uid;
 

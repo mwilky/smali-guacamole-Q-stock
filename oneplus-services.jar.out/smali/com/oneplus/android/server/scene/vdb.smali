@@ -10,17 +10,17 @@
 
 .field private static final VALUE_ON:Ljava/lang/String; = "1"
 
-.field private static final ib:I = 0x3e8
+.field private static final mb:I = 0x3e8
 
-.field private static final jb:Ljava/lang/String; = "RBS8PPYT2W"
+.field private static final ob:Ljava/lang/String; = "RBS8PPYT2W"
 
 
 # instance fields
-.field private fb:Landroid/widget/ImageView;
+.field private jb:Landroid/widget/ImageView;
 
-.field private gb:Landroid/view/View;
+.field private kb:Landroid/view/View;
 
-.field private hb:Landroid/view/WindowManager$LayoutParams;
+.field private lb:Landroid/view/WindowManager$LayoutParams;
 
 .field private mHandler:Landroid/os/Handler;
 
@@ -79,7 +79,7 @@
 
     move-result v0
 
-    iget-object v1, p0, Lcom/oneplus/android/server/scene/vju;->Va:Landroid/widget/RelativeLayout;
+    iget-object v1, p0, Lcom/oneplus/android/server/scene/vju;->Za:Landroid/widget/RelativeLayout;
 
     const v2, 0x507001d
 
@@ -87,9 +87,9 @@
 
     move-result-object v1
 
-    iput-object v1, p0, Lcom/oneplus/android/server/scene/vdb;->gb:Landroid/view/View;
+    iput-object v1, p0, Lcom/oneplus/android/server/scene/vdb;->kb:Landroid/view/View;
 
-    iget-object v1, p0, Lcom/oneplus/android/server/scene/vdb;->gb:Landroid/view/View;
+    iget-object v1, p0, Lcom/oneplus/android/server/scene/vdb;->kb:Landroid/view/View;
 
     invoke-virtual {v1}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
@@ -109,11 +109,11 @@
 
     invoke-virtual {v1, v2, v3, v0, v4}, Landroid/widget/RelativeLayout$LayoutParams;->setMargins(IIII)V
 
-    iget-object v0, p0, Lcom/oneplus/android/server/scene/vdb;->gb:Landroid/view/View;
+    iget-object v0, p0, Lcom/oneplus/android/server/scene/vdb;->kb:Landroid/view/View;
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
-    iget-object v0, p0, Lcom/oneplus/android/server/scene/vju;->Va:Landroid/widget/RelativeLayout;
+    iget-object v0, p0, Lcom/oneplus/android/server/scene/vju;->Za:Landroid/widget/RelativeLayout;
 
     const v1, 0x507001b
 
@@ -125,7 +125,7 @@
 
     iput-object v0, p0, Lcom/oneplus/android/server/scene/vdb;->mIcon:Landroid/widget/ImageView;
 
-    iget-object v0, p0, Lcom/oneplus/android/server/scene/vju;->Va:Landroid/widget/RelativeLayout;
+    iget-object v0, p0, Lcom/oneplus/android/server/scene/vju;->Za:Landroid/widget/RelativeLayout;
 
     const v1, 0x507001c
 
@@ -137,7 +137,7 @@
 
     iput-object v0, p0, Lcom/oneplus/android/server/scene/vdb;->mTitle:Landroid/widget/TextView;
 
-    iget-object v0, p0, Lcom/oneplus/android/server/scene/vju;->Va:Landroid/widget/RelativeLayout;
+    iget-object v0, p0, Lcom/oneplus/android/server/scene/vju;->Za:Landroid/widget/RelativeLayout;
 
     const v1, 0x507001e
 
@@ -147,9 +147,9 @@
 
     check-cast v0, Landroid/widget/ImageView;
 
-    iput-object v0, p0, Lcom/oneplus/android/server/scene/vdb;->fb:Landroid/widget/ImageView;
+    iput-object v0, p0, Lcom/oneplus/android/server/scene/vdb;->jb:Landroid/widget/ImageView;
 
-    iget-object v0, p0, Lcom/oneplus/android/server/scene/vdb;->fb:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/oneplus/android/server/scene/vdb;->jb:Landroid/widget/ImageView;
 
     new-instance v1, Lcom/oneplus/android/server/scene/zta;
 
@@ -213,11 +213,11 @@
 
     iget-object v1, p0, Lcom/oneplus/android/server/scene/vdb;->mTitle:Landroid/widget/TextView;
 
-    const v2, 0x50d0052
+    const v2, 0x50d0053
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(I)V
 
-    iget-object p0, p0, Lcom/oneplus/android/server/scene/vdb;->gb:Landroid/view/View;
+    iget-object p0, p0, Lcom/oneplus/android/server/scene/vdb;->kb:Landroid/view/View;
 
     const v1, 0x5060094
 
@@ -238,11 +238,11 @@
 
     iget-object v1, p0, Lcom/oneplus/android/server/scene/vdb;->mTitle:Landroid/widget/TextView;
 
-    const v2, 0x50d0054
+    const v2, 0x50d0055
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(I)V
 
-    iget-object p0, p0, Lcom/oneplus/android/server/scene/vdb;->gb:Landroid/view/View;
+    iget-object p0, p0, Lcom/oneplus/android/server/scene/vdb;->kb:Landroid/view/View;
 
     const v1, 0x50600a0
 
@@ -259,7 +259,7 @@
 .method public synthetic zta(Landroid/view/View;)V
     .locals 3
 
-    iget-object p1, p0, Lcom/oneplus/android/server/scene/vju;->Ya:Lcom/oneplus/android/server/scene/cgv;
+    iget-object p1, p0, Lcom/oneplus/android/server/scene/vju;->bb:Lcom/oneplus/android/server/scene/cgv;
 
     invoke-virtual {p1}, Lcom/oneplus/android/server/scene/cgv;->hide()V
 

@@ -54,9 +54,9 @@
 .method public zta(Lcom/android/server/am/OnePlusMemoryTracker$you;Lcom/android/server/am/OnePlusMemoryTracker$you;)I
     .locals 2
 
-    iget-wide p0, p1, Lcom/android/server/am/OnePlusMemoryTracker$you;->pss:J
+    iget-wide p0, p1, Lcom/android/server/am/OnePlusMemoryTracker$you;->mPss:J
 
-    iget-wide v0, p2, Lcom/android/server/am/OnePlusMemoryTracker$you;->pss:J
+    iget-wide v0, p2, Lcom/android/server/am/OnePlusMemoryTracker$you;->mPss:J
 
     cmp-long p2, p0, v0
 

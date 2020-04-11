@@ -12,13 +12,13 @@
 
 
 # static fields
-.field private static final lwa:Ljava/security/Permission;
+.field private static final jxa:Ljava/security/Permission;
 
-.field private static final mwa:Ljava/security/Permission;
+.field private static final kxa:Ljava/security/Permission;
 
-.field private static final nwa:Ljava/security/Permission;
+.field private static final lxa:Ljava/security/Permission;
 
-.field private static final owa:Ljava/lang/ThreadLocal;
+.field private static final mxa:Ljava/lang/ThreadLocal;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/lang/ThreadLocal<",
@@ -31,7 +31,7 @@
     .end annotation
 .end field
 
-.field private static final pwa:Ljava/util/Map;
+.field private static final nxa:Ljava/util/Map;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Map<",
@@ -43,7 +43,7 @@
     .end annotation
 .end field
 
-.field private static volatile qwa:Ljava/security/SecureRandom;
+.field private static volatile oxa:Ljava/security/SecureRandom;
 
 
 # direct methods
@@ -56,7 +56,7 @@
 
     invoke-direct {v0, v1}, Lorg/bouncycastle/crypto/CryptoServicesPermission;-><init>(Ljava/lang/String;)V
 
-    sput-object v0, Lorg/bouncycastle/crypto/igw;->lwa:Ljava/security/Permission;
+    sput-object v0, Lorg/bouncycastle/crypto/igw;->jxa:Ljava/security/Permission;
 
     new-instance v0, Lorg/bouncycastle/crypto/CryptoServicesPermission;
 
@@ -64,7 +64,7 @@
 
     invoke-direct {v0, v1}, Lorg/bouncycastle/crypto/CryptoServicesPermission;-><init>(Ljava/lang/String;)V
 
-    sput-object v0, Lorg/bouncycastle/crypto/igw;->mwa:Ljava/security/Permission;
+    sput-object v0, Lorg/bouncycastle/crypto/igw;->kxa:Ljava/security/Permission;
 
     new-instance v0, Lorg/bouncycastle/crypto/CryptoServicesPermission;
 
@@ -72,13 +72,13 @@
 
     invoke-direct {v0, v1}, Lorg/bouncycastle/crypto/CryptoServicesPermission;-><init>(Ljava/lang/String;)V
 
-    sput-object v0, Lorg/bouncycastle/crypto/igw;->nwa:Ljava/security/Permission;
+    sput-object v0, Lorg/bouncycastle/crypto/igw;->lxa:Ljava/security/Permission;
 
     new-instance v0, Ljava/lang/ThreadLocal;
 
     invoke-direct {v0}, Ljava/lang/ThreadLocal;-><init>()V
 
-    sput-object v0, Lorg/bouncycastle/crypto/igw;->owa:Ljava/lang/ThreadLocal;
+    sput-object v0, Lorg/bouncycastle/crypto/igw;->mxa:Ljava/lang/ThreadLocal;
 
     new-instance v0, Ljava/util/HashMap;
 
@@ -88,7 +88,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lorg/bouncycastle/crypto/igw;->pwa:Ljava/util/Map;
+    sput-object v0, Lorg/bouncycastle/crypto/igw;->nxa:Ljava/util/Map;
 
     new-instance v0, Lorg/bouncycastle/crypto/wtn/ywr;
 
@@ -228,7 +228,7 @@
 
     invoke-direct {v4, v5, v6, v7, v2}, Lorg/bouncycastle/crypto/wtn/ywr;-><init>(Ljava/math/BigInteger;Ljava/math/BigInteger;Ljava/math/BigInteger;Lorg/bouncycastle/crypto/wtn/bvj;)V
 
-    sget-object v2, Lorg/bouncycastle/crypto/igw$zta;->kwa:Lorg/bouncycastle/crypto/igw$zta;
+    sget-object v2, Lorg/bouncycastle/crypto/igw$zta;->ixa:Lorg/bouncycastle/crypto/igw$zta;
 
     const/4 v5, 0x4
 
@@ -293,10 +293,10 @@
     return-void
 .end method
 
-.method public static Ui()Ljava/security/SecureRandom;
+.method public static Yi()Ljava/security/SecureRandom;
     .locals 1
 
-    sget-object v0, Lorg/bouncycastle/crypto/igw;->qwa:Ljava/security/SecureRandom;
+    sget-object v0, Lorg/bouncycastle/crypto/igw;->oxa:Ljava/security/SecureRandom;
 
     if-nez v0, :cond_0
 
@@ -307,7 +307,7 @@
     return-object v0
 
     :cond_0
-    sget-object v0, Lorg/bouncycastle/crypto/igw;->qwa:Ljava/security/SecureRandom;
+    sget-object v0, Lorg/bouncycastle/crypto/igw;->oxa:Ljava/security/SecureRandom;
 
     return-object v0
 .end method
@@ -334,7 +334,7 @@
 .method private static cno(Lorg/bouncycastle/crypto/igw$zta;)[Ljava/lang/Object;
     .locals 2
 
-    sget-object v0, Lorg/bouncycastle/crypto/igw;->owa:Ljava/lang/ThreadLocal;
+    sget-object v0, Lorg/bouncycastle/crypto/igw;->mxa:Ljava/lang/ThreadLocal;
 
     invoke-virtual {v0}, Ljava/lang/ThreadLocal;->get()Ljava/lang/Object;
 
@@ -348,7 +348,7 @@
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    sget-object v1, Lorg/bouncycastle/crypto/igw;->owa:Ljava/lang/ThreadLocal;
+    sget-object v1, Lorg/bouncycastle/crypto/igw;->mxa:Ljava/lang/ThreadLocal;
 
     invoke-virtual {v1, v0}, Ljava/lang/ThreadLocal;->set(Ljava/lang/Object;)V
 
@@ -366,7 +366,47 @@
     return-object p0
 .end method
 
-.method private static ic(I)I
+.method private static kth(Lorg/bouncycastle/crypto/igw$zta;)[Ljava/lang/Object;
+    .locals 2
+
+    sget-object v0, Lorg/bouncycastle/crypto/igw;->mxa:Ljava/lang/ThreadLocal;
+
+    invoke-virtual {v0}, Ljava/lang/ThreadLocal;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Ljava/util/Map;
+
+    if-eqz v0, :cond_0
+
+    invoke-static {p0}, Lorg/bouncycastle/crypto/igw$zta;->zta(Lorg/bouncycastle/crypto/igw$zta;)Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-interface {v0, v1}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_1
+
+    :cond_0
+    sget-object v0, Lorg/bouncycastle/crypto/igw;->nxa:Ljava/util/Map;
+
+    :cond_1
+    invoke-static {p0}, Lorg/bouncycastle/crypto/igw$zta;->zta(Lorg/bouncycastle/crypto/igw$zta;)Ljava/lang/String;
+
+    move-result-object p0
+
+    invoke-interface {v0, p0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p0
+
+    check-cast p0, [Ljava/lang/Object;
+
+    return-object p0
+.end method
+
+.method private static mc(I)I
     .locals 1
 
     const/16 v0, 0x400
@@ -409,46 +449,6 @@
 
     :goto_0
     return p0
-.end method
-
-.method private static kth(Lorg/bouncycastle/crypto/igw$zta;)[Ljava/lang/Object;
-    .locals 2
-
-    sget-object v0, Lorg/bouncycastle/crypto/igw;->owa:Ljava/lang/ThreadLocal;
-
-    invoke-virtual {v0}, Ljava/lang/ThreadLocal;->get()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Ljava/util/Map;
-
-    if-eqz v0, :cond_0
-
-    invoke-static {p0}, Lorg/bouncycastle/crypto/igw$zta;->zta(Lorg/bouncycastle/crypto/igw$zta;)Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-interface {v0, v1}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-nez v1, :cond_1
-
-    :cond_0
-    sget-object v0, Lorg/bouncycastle/crypto/igw;->pwa:Ljava/util/Map;
-
-    :cond_1
-    invoke-static {p0}, Lorg/bouncycastle/crypto/igw$zta;->zta(Lorg/bouncycastle/crypto/igw$zta;)Ljava/lang/String;
-
-    move-result-object p0
-
-    invoke-interface {v0, p0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object p0
-
-    check-cast p0, [Ljava/lang/Object;
-
-    return-object p0
 .end method
 
 .method public static rtg(Lorg/bouncycastle/crypto/igw$zta;)Ljava/lang/Object;
@@ -513,7 +513,7 @@
 
     invoke-static {p0, p1}, Lorg/bouncycastle/crypto/igw;->tsu(Lorg/bouncycastle/crypto/igw$zta;[Ljava/lang/Object;)V
 
-    sget-object v0, Lorg/bouncycastle/crypto/igw;->pwa:Ljava/util/Map;
+    sget-object v0, Lorg/bouncycastle/crypto/igw;->nxa:Ljava/util/Map;
 
     invoke-static {p0}, Lorg/bouncycastle/crypto/igw$zta;->zta(Lorg/bouncycastle/crypto/igw$zta;)Ljava/lang/String;
 
@@ -545,13 +545,13 @@
         }
     .end annotation
 
-    sget-object v0, Lorg/bouncycastle/crypto/igw;->lwa:Ljava/security/Permission;
+    sget-object v0, Lorg/bouncycastle/crypto/igw;->jxa:Ljava/security/Permission;
 
     invoke-static {v0}, Lorg/bouncycastle/crypto/igw;->checkPermission(Ljava/security/Permission;)V
 
     invoke-static {p0}, Lorg/bouncycastle/crypto/igw;->cno(Lorg/bouncycastle/crypto/igw$zta;)[Ljava/lang/Object;
 
-    sget-object v0, Lorg/bouncycastle/crypto/igw;->pwa:Ljava/util/Map;
+    sget-object v0, Lorg/bouncycastle/crypto/igw;->nxa:Ljava/util/Map;
 
     invoke-static {p0}, Lorg/bouncycastle/crypto/igw$zta;->zta(Lorg/bouncycastle/crypto/igw$zta;)Ljava/lang/String;
 
@@ -610,7 +610,7 @@
         }
     .end annotation
 
-    sget-object v0, Lorg/bouncycastle/crypto/igw;->owa:Ljava/lang/ThreadLocal;
+    sget-object v0, Lorg/bouncycastle/crypto/igw;->mxa:Ljava/lang/ThreadLocal;
 
     invoke-virtual {v0}, Ljava/lang/ThreadLocal;->get()Ljava/lang/Object;
 
@@ -624,7 +624,7 @@
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    sget-object v1, Lorg/bouncycastle/crypto/igw;->owa:Ljava/lang/ThreadLocal;
+    sget-object v1, Lorg/bouncycastle/crypto/igw;->mxa:Ljava/lang/ThreadLocal;
 
     invoke-virtual {v1, v0}, Ljava/lang/ThreadLocal;->set(Ljava/lang/Object;)V
 
@@ -650,7 +650,7 @@
         }
     .end annotation
 
-    sget-object v0, Lorg/bouncycastle/crypto/igw;->mwa:Ljava/security/Permission;
+    sget-object v0, Lorg/bouncycastle/crypto/igw;->kxa:Ljava/security/Permission;
 
     invoke-static {v0}, Lorg/bouncycastle/crypto/igw;->checkPermission(Ljava/security/Permission;)V
 
@@ -672,7 +672,7 @@
 
     move-result v0
 
-    invoke-static {v0}, Lorg/bouncycastle/crypto/igw;->ic(I)I
+    invoke-static {v0}, Lorg/bouncycastle/crypto/igw;->mc(I)I
 
     move-result v5
 
@@ -692,7 +692,7 @@
 
     new-instance v8, Lorg/bouncycastle/crypto/wtn/igw;
 
-    invoke-virtual {p0}, Lorg/bouncycastle/crypto/wtn/ywr;->ij()Lorg/bouncycastle/crypto/wtn/bvj;
+    invoke-virtual {p0}, Lorg/bouncycastle/crypto/wtn/ywr;->mj()Lorg/bouncycastle/crypto/wtn/bvj;
 
     move-result-object v1
 
@@ -700,11 +700,11 @@
 
     move-result-object v1
 
-    invoke-virtual {p0}, Lorg/bouncycastle/crypto/wtn/ywr;->ij()Lorg/bouncycastle/crypto/wtn/bvj;
+    invoke-virtual {p0}, Lorg/bouncycastle/crypto/wtn/ywr;->mj()Lorg/bouncycastle/crypto/wtn/bvj;
 
     move-result-object p0
 
-    invoke-virtual {p0}, Lorg/bouncycastle/crypto/wtn/bvj;->jj()I
+    invoke-virtual {p0}, Lorg/bouncycastle/crypto/wtn/bvj;->nj()I
 
     move-result p0
 
@@ -724,11 +724,11 @@
 .method public static you(Ljava/security/SecureRandom;)V
     .locals 1
 
-    sget-object v0, Lorg/bouncycastle/crypto/igw;->nwa:Ljava/security/Permission;
+    sget-object v0, Lorg/bouncycastle/crypto/igw;->lxa:Ljava/security/Permission;
 
     invoke-static {v0}, Lorg/bouncycastle/crypto/igw;->checkPermission(Ljava/security/Permission;)V
 
-    sput-object p0, Lorg/bouncycastle/crypto/igw;->qwa:Ljava/security/SecureRandom;
+    sput-object p0, Lorg/bouncycastle/crypto/igw;->oxa:Ljava/security/SecureRandom;
 
     return-void
 .end method
@@ -745,7 +745,7 @@
         }
     .end annotation
 
-    sget-object v0, Lorg/bouncycastle/crypto/igw;->mwa:Ljava/security/Permission;
+    sget-object v0, Lorg/bouncycastle/crypto/igw;->kxa:Ljava/security/Permission;
 
     invoke-static {v0}, Lorg/bouncycastle/crypto/igw;->checkPermission(Ljava/security/Permission;)V
 
@@ -905,7 +905,7 @@
         }
     .end annotation
 
-    sget-object v0, Lorg/bouncycastle/crypto/igw;->lwa:Ljava/security/Permission;
+    sget-object v0, Lorg/bouncycastle/crypto/igw;->jxa:Ljava/security/Permission;
 
     invoke-static {v0}, Lorg/bouncycastle/crypto/igw;->checkPermission(Ljava/security/Permission;)V
 

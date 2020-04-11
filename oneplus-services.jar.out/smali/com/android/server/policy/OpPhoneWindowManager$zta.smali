@@ -29,7 +29,7 @@
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/android/server/policy/OpPhoneWindowManager;Lcom/android/server/policy/gck;)V
+.method synthetic constructor <init>(Lcom/android/server/policy/OpPhoneWindowManager;Lcom/android/server/policy/dma;)V
     .locals 0
 
     invoke-direct {p0, p1}, Lcom/android/server/policy/OpPhoneWindowManager$zta;-><init>(Lcom/android/server/policy/OpPhoneWindowManager;)V
@@ -85,7 +85,7 @@
     invoke-static {p2, p1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_0
-    sget-object p1, Lcom/android/server/policy/wtn;->OD:[I
+    sget-object p1, Lcom/android/server/policy/gck;->RE:[I
 
     sget-object p2, Lcom/android/server/policy/OpPhoneWindowManager;->mKeyLockMode:Lcom/android/server/policy/OpPhoneWindowManager$KeyLockMode;
 

@@ -7,11 +7,11 @@
 
 
 # instance fields
-.field protected Bsa:Ljava/util/Set;
+.field protected Ata:Ljava/util/Set;
 
-.field protected LCa:Ljava/util/Set;
+.field protected JDa:Ljava/util/Set;
 
-.field protected MCa:Ljava/lang/String;
+.field protected KDa:Ljava/lang/String;
 
 .field protected children:Ljava/util/List;
 
@@ -32,13 +32,13 @@
 
     iput p2, p0, Lorg/bouncycastle/jce/provider/ywr;->depth:I
 
-    iput-object p3, p0, Lorg/bouncycastle/jce/provider/ywr;->LCa:Ljava/util/Set;
+    iput-object p3, p0, Lorg/bouncycastle/jce/provider/ywr;->JDa:Ljava/util/Set;
 
     iput-object p4, p0, Lorg/bouncycastle/jce/provider/ywr;->parent:Ljava/security/cert/PolicyNode;
 
-    iput-object p5, p0, Lorg/bouncycastle/jce/provider/ywr;->Bsa:Ljava/util/Set;
+    iput-object p5, p0, Lorg/bouncycastle/jce/provider/ywr;->Ata:Ljava/util/Set;
 
-    iput-object p6, p0, Lorg/bouncycastle/jce/provider/ywr;->MCa:Ljava/lang/String;
+    iput-object p6, p0, Lorg/bouncycastle/jce/provider/ywr;->KDa:Ljava/lang/String;
 
     iput-boolean p7, p0, Lorg/bouncycastle/jce/provider/ywr;->critical:Z
 
@@ -72,7 +72,7 @@
 
     invoke-direct {v3}, Ljava/util/HashSet;-><init>()V
 
-    iget-object v0, p0, Lorg/bouncycastle/jce/provider/ywr;->LCa:Ljava/util/Set;
+    iget-object v0, p0, Lorg/bouncycastle/jce/provider/ywr;->JDa:Ljava/util/Set;
 
     invoke-interface {v0}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
 
@@ -104,7 +104,7 @@
 
     invoke-direct {v5}, Ljava/util/HashSet;-><init>()V
 
-    iget-object v0, p0, Lorg/bouncycastle/jce/provider/ywr;->Bsa:Ljava/util/Set;
+    iget-object v0, p0, Lorg/bouncycastle/jce/provider/ywr;->Ata:Ljava/util/Set;
 
     invoke-interface {v0}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
 
@@ -144,7 +144,7 @@
 
     new-instance v6, Ljava/lang/String;
 
-    iget-object v0, p0, Lorg/bouncycastle/jce/provider/ywr;->MCa:Ljava/lang/String;
+    iget-object v0, p0, Lorg/bouncycastle/jce/provider/ywr;->KDa:Ljava/lang/String;
 
     invoke-direct {v6, v0}, Ljava/lang/String;-><init>(Ljava/lang/String;)V
 
@@ -210,7 +210,7 @@
 .method public getExpectedPolicies()Ljava/util/Set;
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/jce/provider/ywr;->LCa:Ljava/util/Set;
+    iget-object p0, p0, Lorg/bouncycastle/jce/provider/ywr;->JDa:Ljava/util/Set;
 
     return-object p0
 .end method
@@ -226,7 +226,7 @@
 .method public getPolicyQualifiers()Ljava/util/Set;
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/jce/provider/ywr;->Bsa:Ljava/util/Set;
+    iget-object p0, p0, Lorg/bouncycastle/jce/provider/ywr;->Ata:Ljava/util/Set;
 
     return-object p0
 .end method
@@ -234,7 +234,7 @@
 .method public getValidPolicy()Ljava/lang/String;
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/jce/provider/ywr;->MCa:Ljava/lang/String;
+    iget-object p0, p0, Lorg/bouncycastle/jce/provider/ywr;->KDa:Ljava/lang/String;
 
     return-object p0
 .end method
@@ -264,7 +264,7 @@
 .method public kth(Ljava/util/Set;)V
     .locals 0
 
-    iput-object p1, p0, Lorg/bouncycastle/jce/provider/ywr;->LCa:Ljava/util/Set;
+    iput-object p1, p0, Lorg/bouncycastle/jce/provider/ywr;->JDa:Ljava/util/Set;
 
     return-void
 .end method
@@ -298,7 +298,7 @@
 
     invoke-virtual {v0, p1}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
 
-    iget-object v1, p0, Lorg/bouncycastle/jce/provider/ywr;->MCa:Ljava/lang/String;
+    iget-object v1, p0, Lorg/bouncycastle/jce/provider/ywr;->KDa:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
 

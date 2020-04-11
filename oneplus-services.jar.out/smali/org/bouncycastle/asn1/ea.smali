@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field private pua:Lorg/bouncycastle/asn1/dma;
+.field private nva:Lorg/bouncycastle/asn1/dma;
 
-.field private qua:Ljava/lang/Object;
+.field private ova:Ljava/lang/Object;
 
 
 # direct methods
@@ -24,13 +24,13 @@
 
     invoke-direct {v0, p1, v1}, Lorg/bouncycastle/asn1/dma;-><init>([BZ)V
 
-    iput-object v0, p0, Lorg/bouncycastle/asn1/ea;->pua:Lorg/bouncycastle/asn1/dma;
+    iput-object v0, p0, Lorg/bouncycastle/asn1/ea;->nva:Lorg/bouncycastle/asn1/dma;
 
     invoke-direct {p0}, Lorg/bouncycastle/asn1/ea;->readObject()Ljava/lang/Object;
 
     move-result-object p1
 
-    iput-object p1, p0, Lorg/bouncycastle/asn1/ea;->qua:Ljava/lang/Object;
+    iput-object p1, p0, Lorg/bouncycastle/asn1/ea;->ova:Ljava/lang/Object;
 
     return-void
 .end method
@@ -39,7 +39,7 @@
     .locals 3
 
     :try_start_0
-    iget-object p0, p0, Lorg/bouncycastle/asn1/ea;->pua:Lorg/bouncycastle/asn1/dma;
+    iget-object p0, p0, Lorg/bouncycastle/asn1/ea;->nva:Lorg/bouncycastle/asn1/dma;
 
     invoke-virtual {p0}, Lorg/bouncycastle/asn1/dma;->readObject()Lorg/bouncycastle/asn1/vdb;
 
@@ -78,7 +78,7 @@
 .method public hasMoreElements()Z
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/asn1/ea;->qua:Ljava/lang/Object;
+    iget-object p0, p0, Lorg/bouncycastle/asn1/ea;->ova:Ljava/lang/Object;
 
     if-eqz p0, :cond_0
 
@@ -96,13 +96,13 @@
 .method public nextElement()Ljava/lang/Object;
     .locals 2
 
-    iget-object v0, p0, Lorg/bouncycastle/asn1/ea;->qua:Ljava/lang/Object;
+    iget-object v0, p0, Lorg/bouncycastle/asn1/ea;->ova:Ljava/lang/Object;
 
     invoke-direct {p0}, Lorg/bouncycastle/asn1/ea;->readObject()Ljava/lang/Object;
 
     move-result-object v1
 
-    iput-object v1, p0, Lorg/bouncycastle/asn1/ea;->qua:Ljava/lang/Object;
+    iput-object v1, p0, Lorg/bouncycastle/asn1/ea;->ova:Ljava/lang/Object;
 
     return-object v0
 .end method

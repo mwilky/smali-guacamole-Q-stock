@@ -422,7 +422,7 @@
 
     sget-object v2, Lcom/android/server/policy/OpPhoneWindowManager;->mKeyLockMode:Lcom/android/server/policy/OpPhoneWindowManager$KeyLockMode;
 
-    sget-object v3, Lcom/android/server/policy/OpPhoneWindowManager$KeyLockMode;->Wha:Lcom/android/server/policy/OpPhoneWindowManager$KeyLockMode;
+    sget-object v3, Lcom/android/server/policy/OpPhoneWindowManager$KeyLockMode;->Via:Lcom/android/server/policy/OpPhoneWindowManager$KeyLockMode;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
@@ -935,9 +935,9 @@
 
     move-result-object v3
 
-    new-instance v5, Lcom/android/server/policy/vdb;
+    new-instance v5, Lcom/android/server/policy/zgw;
 
-    invoke-direct {v5, p0, v2}, Lcom/android/server/policy/vdb;-><init>(Lcom/android/server/policy/OpPhoneWindowManager$tsu;Z)V
+    invoke-direct {v5, p0, v2}, Lcom/android/server/policy/zgw;-><init>(Lcom/android/server/policy/OpPhoneWindowManager$tsu;Z)V
 
     invoke-virtual {v3, v5}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 

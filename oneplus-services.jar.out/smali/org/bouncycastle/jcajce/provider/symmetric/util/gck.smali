@@ -22,24 +22,24 @@
 
 .field public static final SHA512:I = 0x9
 
-.field public static final iOa:I = 0x0
+.field public static final gPa:I = 0x0
 
-.field public static final jOa:I = 0xa
+.field public static final hPa:I = 0xa
 
-.field public static final kOa:I = 0xb
+.field public static final iPa:I = 0xb
 
-.field public static final lOa:I = 0xc
+.field public static final jPa:I = 0xc
 
-.field public static final mOa:I = 0xd
+.field public static final kPa:I = 0xd
 
-.field public static final nOa:I = 0x0
+.field public static final lPa:I = 0x0
 
-.field public static final oOa:I = 0x1
+.field public static final mPa:I = 0x1
 
-.field public static final pOa:I = 0x2
+.field public static final nPa:I = 0x2
 
-.field public static final qOa:I = 0x3
+.field public static final oPa:I = 0x3
 
-.field public static final rOa:I = 0x4
+.field public static final pPa:I = 0x4
 
-.field public static final sOa:I = 0x5
+.field public static final qPa:I = 0x5

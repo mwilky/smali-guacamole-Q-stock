@@ -37,8 +37,8 @@
 
 
 # virtual methods
-.method public isCallBlockedWithUid(Ljava/lang/String;ILandroid/content/Intent;Landroid/content/pm/ResolveInfo;I)Z
-    .locals 6
+.method public isCallBlockedWithUid(Ljava/lang/String;ILandroid/content/Intent;Landroid/content/pm/ResolveInfo;IZ)Z
+    .locals 7
 
     iget-object v0, p0, Lcom/oneplus/android/server/scene/OnePlusSceneCallBlockService;->mOemSceneCallBlock:Lcom/oneplus/android/server/scene/OemSceneCallBlock;
 
@@ -61,7 +61,9 @@
 
     move v5, p5
 
-    invoke-virtual/range {v0 .. v5}, Lcom/oneplus/android/server/scene/OemSceneCallBlock;->isCallBlockedWithUid(Ljava/lang/String;ILandroid/content/Intent;Landroid/content/pm/ResolveInfo;I)Z
+    move v6, p6
+
+    invoke-virtual/range {v0 .. v6}, Lcom/oneplus/android/server/scene/OemSceneCallBlock;->isCallBlockedWithUid(Ljava/lang/String;ILandroid/content/Intent;Landroid/content/pm/ResolveInfo;IZ)Z
 
     move-result p0
 

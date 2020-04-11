@@ -135,7 +135,7 @@
 
 
 # virtual methods
-.method public Sg()Z
+.method public Wg()Z
     .locals 0
 
     iget-object p0, p0, Lorg/bouncycastle/asn1/you/wtn;->id:Lorg/bouncycastle/asn1/ssp;

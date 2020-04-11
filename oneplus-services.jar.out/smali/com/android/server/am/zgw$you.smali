@@ -303,7 +303,7 @@
 
     invoke-virtual {p1, v0}, Lcom/android/server/am/zgw;->zta(Ljava/util/HashMap;)I
 
-    invoke-static {}, Lcom/android/server/am/zgw;->bb()Z
+    invoke-static {}, Lcom/android/server/am/zgw;->access$2100()Z
 
     move-result p1
 
@@ -315,7 +315,7 @@
 
     move-result-object p0
 
-    invoke-virtual {p0}, Lcom/android/server/am/oxb;->nb()V
+    invoke-virtual {p0}, Lcom/android/server/am/oxb;->mb()V
 
     :cond_5
     :goto_1

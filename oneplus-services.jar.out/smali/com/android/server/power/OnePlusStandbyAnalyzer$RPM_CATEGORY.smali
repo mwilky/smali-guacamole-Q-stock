@@ -27,13 +27,13 @@
 
 .field public static final enum UNACCOUNTED:Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_CATEGORY;
 
-.field public static final enum ika:Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_CATEGORY;
+.field public static final enum ila:Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_CATEGORY;
 
-.field public static final enum jka:Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_CATEGORY;
+.field public static final enum jla:Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_CATEGORY;
 
-.field public static final enum kka:Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_CATEGORY;
+.field public static final enum kla:Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_CATEGORY;
 
-.field public static final enum lka:Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_CATEGORY;
+.field public static final enum lla:Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_CATEGORY;
 
 
 # direct methods
@@ -48,7 +48,7 @@
 
     invoke-direct {v0, v2, v1}, Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_CATEGORY;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_CATEGORY;->ika:Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_CATEGORY;
+    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_CATEGORY;->ila:Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_CATEGORY;
 
     new-instance v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_CATEGORY;
 
@@ -58,7 +58,7 @@
 
     invoke-direct {v0, v3, v2}, Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_CATEGORY;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_CATEGORY;->jka:Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_CATEGORY;
+    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_CATEGORY;->jla:Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_CATEGORY;
 
     new-instance v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_CATEGORY;
 
@@ -68,7 +68,7 @@
 
     invoke-direct {v0, v4, v3}, Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_CATEGORY;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_CATEGORY;->kka:Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_CATEGORY;
+    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_CATEGORY;->kla:Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_CATEGORY;
 
     new-instance v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_CATEGORY;
 
@@ -78,7 +78,7 @@
 
     invoke-direct {v0, v5, v4}, Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_CATEGORY;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_CATEGORY;->lka:Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_CATEGORY;
+    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_CATEGORY;->lla:Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_CATEGORY;
 
     new-instance v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_CATEGORY;
 
@@ -94,19 +94,19 @@
 
     new-array v0, v0, [Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_CATEGORY;
 
-    sget-object v6, Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_CATEGORY;->ika:Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_CATEGORY;
+    sget-object v6, Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_CATEGORY;->ila:Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_CATEGORY;
 
     aput-object v6, v0, v1
 
-    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_CATEGORY;->jka:Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_CATEGORY;
+    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_CATEGORY;->jla:Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_CATEGORY;
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_CATEGORY;->kka:Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_CATEGORY;
+    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_CATEGORY;->kla:Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_CATEGORY;
 
     aput-object v1, v0, v3
 
-    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_CATEGORY;->lka:Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_CATEGORY;
+    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_CATEGORY;->lla:Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_CATEGORY;
 
     aput-object v1, v0, v4
 

@@ -65,7 +65,7 @@
 
     const-string v0, "org.bouncycastle.asn1.allow_unsafe_integer"
 
-    invoke-static {v0}, Lorg/bouncycastle/util/gck;->Ta(Ljava/lang/String;)Z
+    invoke-static {v0}, Lorg/bouncycastle/util/gck;->Ua(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -332,14 +332,14 @@
     return p0
 .end method
 
-.method qg()I
+.method ug()I
     .locals 1
 
     iget-object v0, p0, Lorg/bouncycastle/asn1/bio;->bytes:[B
 
     array-length v0, v0
 
-    invoke-static {v0}, Lorg/bouncycastle/asn1/ia;->ba(I)I
+    invoke-static {v0}, Lorg/bouncycastle/asn1/ia;->ea(I)I
 
     move-result v0
 

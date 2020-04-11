@@ -4,7 +4,7 @@
 
 
 # static fields
-.field private static final DEa:I = 0x1ff
+.field private static final BFa:I = 0x1ff
 
 .field static final P:[I
 

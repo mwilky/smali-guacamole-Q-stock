@@ -4,11 +4,11 @@
 
 
 # static fields
-.field static final Lla:Ljava/math/BigInteger;
+.field static final Kma:Ljava/math/BigInteger;
 
 
 # instance fields
-.field Hla:Lorg/bouncycastle/crypto/ssp/ywr;
+.field Gma:Lorg/bouncycastle/crypto/ssp/ywr;
 
 .field param:Lorg/bouncycastle/crypto/wtn/lqr;
 
@@ -23,7 +23,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/rtg;->Lla:Ljava/math/BigInteger;
+    sput-object v0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/rtg;->Kma:Ljava/math/BigInteger;
 
     return-void
 .end method
@@ -39,19 +39,19 @@
 
     invoke-direct {v0}, Lorg/bouncycastle/crypto/ssp/ywr;-><init>()V
 
-    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/rtg;->Hla:Lorg/bouncycastle/crypto/ssp/ywr;
+    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/rtg;->Gma:Lorg/bouncycastle/crypto/ssp/ywr;
 
     new-instance v0, Lorg/bouncycastle/crypto/wtn/lqr;
 
-    sget-object v1, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/rtg;->Lla:Ljava/math/BigInteger;
+    sget-object v1, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/rtg;->Kma:Ljava/math/BigInteger;
 
-    invoke-static {}, Lorg/bouncycastle/crypto/igw;->Ui()Ljava/security/SecureRandom;
+    invoke-static {}, Lorg/bouncycastle/crypto/igw;->Yi()Ljava/security/SecureRandom;
 
     move-result-object v2
 
     const/16 v3, 0x800
 
-    invoke-static {v3}, Lorg/bouncycastle/jcajce/provider/asymmetric/util/gck;->ga(I)I
+    invoke-static {v3}, Lorg/bouncycastle/jcajce/provider/asymmetric/util/gck;->ja(I)I
 
     move-result v4
 
@@ -59,7 +59,7 @@
 
     iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/rtg;->param:Lorg/bouncycastle/crypto/wtn/lqr;
 
-    iget-object v0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/rtg;->Hla:Lorg/bouncycastle/crypto/ssp/ywr;
+    iget-object v0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/rtg;->Gma:Lorg/bouncycastle/crypto/ssp/ywr;
 
     iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/rtg;->param:Lorg/bouncycastle/crypto/wtn/lqr;
 
@@ -81,7 +81,7 @@
 .method public generateKeyPair()Ljava/security/KeyPair;
     .locals 3
 
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/rtg;->Hla:Lorg/bouncycastle/crypto/ssp/ywr;
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/rtg;->Gma:Lorg/bouncycastle/crypto/ssp/ywr;
 
     invoke-virtual {p0}, Lorg/bouncycastle/crypto/ssp/ywr;->generateKeyPair()Lorg/bouncycastle/crypto/you;
 
@@ -119,7 +119,7 @@
 
     new-instance v0, Lorg/bouncycastle/crypto/wtn/lqr;
 
-    sget-object v1, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/rtg;->Lla:Ljava/math/BigInteger;
+    sget-object v1, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/rtg;->Kma:Ljava/math/BigInteger;
 
     if-eqz p2, :cond_0
 
@@ -131,7 +131,7 @@
     invoke-direct {p2}, Ljava/security/SecureRandom;-><init>()V
 
     :goto_0
-    invoke-static {p1}, Lorg/bouncycastle/jcajce/provider/asymmetric/util/gck;->ga(I)I
+    invoke-static {p1}, Lorg/bouncycastle/jcajce/provider/asymmetric/util/gck;->ja(I)I
 
     move-result v2
 
@@ -139,7 +139,7 @@
 
     iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/rtg;->param:Lorg/bouncycastle/crypto/wtn/lqr;
 
-    iget-object p1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/rtg;->Hla:Lorg/bouncycastle/crypto/ssp/ywr;
+    iget-object p1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/rtg;->Gma:Lorg/bouncycastle/crypto/ssp/ywr;
 
     iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/rtg;->param:Lorg/bouncycastle/crypto/wtn/lqr;
 
@@ -184,7 +184,7 @@
 
     const/16 v2, 0x800
 
-    invoke-static {v2}, Lorg/bouncycastle/jcajce/provider/asymmetric/util/gck;->ga(I)I
+    invoke-static {v2}, Lorg/bouncycastle/jcajce/provider/asymmetric/util/gck;->ja(I)I
 
     move-result v2
 
@@ -192,7 +192,7 @@
 
     iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/rtg;->param:Lorg/bouncycastle/crypto/wtn/lqr;
 
-    iget-object p1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/rtg;->Hla:Lorg/bouncycastle/crypto/ssp/ywr;
+    iget-object p1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/rtg;->Gma:Lorg/bouncycastle/crypto/ssp/ywr;
 
     iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/rtg;->param:Lorg/bouncycastle/crypto/wtn/lqr;
 

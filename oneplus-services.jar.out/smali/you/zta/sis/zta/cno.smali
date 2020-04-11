@@ -28,13 +28,13 @@
 
 
 # virtual methods
-.method public abstract Uj()Lyou/zta/sis/zta/cno;
+.method public abstract Yj()Lyou/zta/sis/zta/cno;
 .end method
 
-.method public abstract Vj()Ljava/lang/String;
+.method public abstract Zj()Ljava/lang/String;
 .end method
 
-.method public Wj()Z
+.method public _j()Z
     .locals 1
 
     invoke-virtual {p0}, Lyou/zta/sis/zta/cno;->bitLength()I
@@ -54,23 +54,7 @@
     return v0
 .end method
 
-.method public abstract Xj()Lyou/zta/sis/zta/cno;
-.end method
-
-.method public Yj()Z
-    .locals 1
-
-    invoke-virtual {p0}, Lyou/zta/sis/zta/cno;->toBigInteger()Ljava/math/BigInteger;
-
-    move-result-object p0
-
-    const/4 v0, 0x0
-
-    invoke-virtual {p0, v0}, Ljava/math/BigInteger;->testBit(I)Z
-
-    move-result p0
-
-    return p0
+.method public abstract ak()Lyou/zta/sis/zta/cno;
 .end method
 
 .method public bitLength()I
@@ -81,6 +65,22 @@
     move-result-object p0
 
     invoke-virtual {p0}, Ljava/math/BigInteger;->bitLength()I
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public bk()Z
+    .locals 1
+
+    invoke-virtual {p0}, Lyou/zta/sis/zta/cno;->toBigInteger()Ljava/math/BigInteger;
+
+    move-result-object p0
+
+    const/4 v0, 0x0
+
+    invoke-virtual {p0, v0}, Ljava/math/BigInteger;->testBit(I)Z
 
     move-result p0
 
@@ -139,7 +139,10 @@
     return p0
 .end method
 
-.method public la(I)Lyou/zta/sis/zta/cno;
+.method public abstract negate()Lyou/zta/sis/zta/cno;
+.end method
+
+.method public oa(I)Lyou/zta/sis/zta/cno;
     .locals 1
 
     const/4 v0, 0x0
@@ -157,9 +160,6 @@
 
     :cond_0
     return-object p0
-.end method
-
-.method public abstract negate()Lyou/zta/sis/zta/cno;
 .end method
 
 .method public abstract rtg(Lyou/zta/sis/zta/cno;)Lyou/zta/sis/zta/cno;

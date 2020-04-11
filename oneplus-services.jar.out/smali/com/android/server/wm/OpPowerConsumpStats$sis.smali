@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field MP:J
+.field LQ:J
 
 .field startTime:J
 
@@ -34,7 +34,7 @@
 
     iput-wide v0, p0, Lcom/android/server/wm/OpPowerConsumpStats$sis;->startTime:J
 
-    iput-wide v0, p0, Lcom/android/server/wm/OpPowerConsumpStats$sis;->MP:J
+    iput-wide v0, p0, Lcom/android/server/wm/OpPowerConsumpStats$sis;->LQ:J
 
     invoke-static {p1}, Lcom/android/server/wm/OpPowerConsumpStats;->veq(Lcom/android/server/wm/OpPowerConsumpStats;)Ljava/lang/Object;
 
@@ -45,7 +45,7 @@
     :try_start_0
     iput-wide p2, p0, Lcom/android/server/wm/OpPowerConsumpStats$sis;->startTime:J
 
-    iput-wide p4, p0, Lcom/android/server/wm/OpPowerConsumpStats$sis;->MP:J
+    iput-wide p4, p0, Lcom/android/server/wm/OpPowerConsumpStats$sis;->LQ:J
 
     new-instance p0, Ljava/lang/StringBuilder;
 
@@ -67,7 +67,7 @@
 
     move-result-object p0
 
-    invoke-static {p0}, Lcom/android/server/wm/OpPowerConsumpStats;->ha(Ljava/lang/String;)V
+    invoke-static {p0}, Lcom/android/server/wm/OpPowerConsumpStats;->ia(Ljava/lang/String;)V
 
     monitor-exit p1
 
@@ -83,7 +83,7 @@
     throw p0
 .end method
 
-.method private Wo()J
+.method private fp()J
     .locals 5
 
     iget-object v0, p0, Lcom/android/server/wm/OpPowerConsumpStats$sis;->this$0:Lcom/android/server/wm/OpPowerConsumpStats;
@@ -103,7 +103,7 @@
 
     sub-long/2addr v1, v3
 
-    iget-wide v3, p0, Lcom/android/server/wm/OpPowerConsumpStats$sis;->MP:J
+    iget-wide v3, p0, Lcom/android/server/wm/OpPowerConsumpStats$sis;->LQ:J
 
     add-long/2addr v1, v3
 
@@ -133,7 +133,7 @@
     monitor-enter v0
 
     :try_start_0
-    iget-wide v1, p0, Lcom/android/server/wm/OpPowerConsumpStats$sis;->MP:J
+    iget-wide v1, p0, Lcom/android/server/wm/OpPowerConsumpStats$sis;->LQ:J
 
     monitor-exit v0
 
@@ -152,7 +152,7 @@
 .method static synthetic zta(Lcom/android/server/wm/OpPowerConsumpStats$sis;)J
     .locals 2
 
-    invoke-direct {p0}, Lcom/android/server/wm/OpPowerConsumpStats$sis;->Wo()J
+    invoke-direct {p0}, Lcom/android/server/wm/OpPowerConsumpStats$sis;->fp()J
 
     move-result-wide v0
 

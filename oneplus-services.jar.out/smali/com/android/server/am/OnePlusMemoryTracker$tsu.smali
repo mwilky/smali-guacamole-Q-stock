@@ -47,15 +47,15 @@
     :cond_0
     iget-object p1, p0, Lcom/android/server/am/OnePlusMemoryTracker$tsu;->this$0:Lcom/android/server/am/OnePlusMemoryTracker;
 
-    invoke-static {p1}, Lcom/android/server/am/OnePlusMemoryTracker;->access$1100(Lcom/android/server/am/OnePlusMemoryTracker;)V
+    invoke-static {p1}, Lcom/android/server/am/OnePlusMemoryTracker;->access$300(Lcom/android/server/am/OnePlusMemoryTracker;)V
 
     iget-object p1, p0, Lcom/android/server/am/OnePlusMemoryTracker$tsu;->this$0:Lcom/android/server/am/OnePlusMemoryTracker;
 
-    invoke-static {p1}, Lcom/android/server/am/OnePlusMemoryTracker;->access$1200(Lcom/android/server/am/OnePlusMemoryTracker;)V
+    invoke-static {p1}, Lcom/android/server/am/OnePlusMemoryTracker;->access$400(Lcom/android/server/am/OnePlusMemoryTracker;)V
 
     iget-object p0, p0, Lcom/android/server/am/OnePlusMemoryTracker$tsu;->this$0:Lcom/android/server/am/OnePlusMemoryTracker;
 
-    invoke-static {p0}, Lcom/android/server/am/OnePlusMemoryTracker;->access$1300(Lcom/android/server/am/OnePlusMemoryTracker;)V
+    invoke-static {p0}, Lcom/android/server/am/OnePlusMemoryTracker;->access$500(Lcom/android/server/am/OnePlusMemoryTracker;)V
 
     :goto_0
     return-void

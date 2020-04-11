@@ -15,11 +15,11 @@
 # static fields
 .field private static final ONE:Ljava/math/BigInteger;
 
-.field public static final UCa:I = 0xd3
+.field public static final SDa:I = 0xd3
 
-.field private static final VCa:Ljava/math/BigInteger;
+.field private static final TDa:Ljava/math/BigInteger;
 
-.field private static final Zna:Ljava/math/BigInteger;
+.field private static final Yoa:Ljava/math/BigInteger;
 
 
 # direct methods
@@ -40,7 +40,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lyou/zta/sis/you;->Zna:Ljava/math/BigInteger;
+    sput-object v0, Lyou/zta/sis/you;->Yoa:Ljava/math/BigInteger;
 
     const-wide/16 v0, 0x3
 
@@ -48,7 +48,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lyou/zta/sis/you;->VCa:Ljava/math/BigInteger;
+    sput-object v0, Lyou/zta/sis/you;->TDa:Ljava/math/BigInteger;
 
     return-void
 .end method
@@ -874,11 +874,11 @@
 
     move-result-object v8
 
-    invoke-virtual {v2}, Lyou/zta/sis/you$you;->Hj()[B
+    invoke-virtual {v2}, Lyou/zta/sis/you$you;->Lj()[B
 
     move-result-object v9
 
-    invoke-virtual {v2}, Lyou/zta/sis/you$you;->Gj()I
+    invoke-virtual {v2}, Lyou/zta/sis/you$you;->Kj()I
 
     move-result v2
 
@@ -1004,7 +1004,7 @@
 
     move-result-object v6
 
-    sget-object v7, Lyou/zta/sis/you;->VCa:Ljava/math/BigInteger;
+    sget-object v7, Lyou/zta/sis/you;->TDa:Ljava/math/BigInteger;
 
     invoke-virtual {v13, v7}, Ljava/math/BigInteger;->subtract(Ljava/math/BigInteger;)Ljava/math/BigInteger;
 
@@ -1014,7 +1014,7 @@
 
     move-result-object v6
 
-    sget-object v7, Lyou/zta/sis/you;->Zna:Ljava/math/BigInteger;
+    sget-object v7, Lyou/zta/sis/you;->Yoa:Ljava/math/BigInteger;
 
     invoke-virtual {v6, v7}, Ljava/math/BigInteger;->add(Ljava/math/BigInteger;)Ljava/math/BigInteger;
 
@@ -1158,7 +1158,7 @@
 
     move-result-object v2
 
-    sget-object v3, Lyou/zta/sis/you;->Zna:Ljava/math/BigInteger;
+    sget-object v3, Lyou/zta/sis/you;->Yoa:Ljava/math/BigInteger;
 
     invoke-virtual {p0, v3}, Ljava/math/BigInteger;->subtract(Ljava/math/BigInteger;)Ljava/math/BigInteger;
 
@@ -1177,7 +1177,7 @@
     :goto_0
     if-ge v6, p2, :cond_3
 
-    sget-object v7, Lyou/zta/sis/you;->Zna:Ljava/math/BigInteger;
+    sget-object v7, Lyou/zta/sis/you;->Yoa:Ljava/math/BigInteger;
 
     invoke-static {v7, v3, p1}, Lorg/bouncycastle/util/you;->you(Ljava/math/BigInteger;Ljava/math/BigInteger;Ljava/security/SecureRandom;)Ljava/math/BigInteger;
 
@@ -1343,7 +1343,7 @@
 
     if-nez v2, :cond_1
 
-    sget-object p0, Lyou/zta/sis/you;->Zna:Ljava/math/BigInteger;
+    sget-object p0, Lyou/zta/sis/you;->Yoa:Ljava/math/BigInteger;
 
     invoke-static {p0}, Lyou/zta/sis/you$zta;->wtn(Ljava/math/BigInteger;)Lyou/zta/sis/you$zta;
 
@@ -1358,7 +1358,7 @@
 
     move-result-object v2
 
-    sget-object v3, Lyou/zta/sis/you;->Zna:Ljava/math/BigInteger;
+    sget-object v3, Lyou/zta/sis/you;->Yoa:Ljava/math/BigInteger;
 
     invoke-virtual {p0, v3}, Ljava/math/BigInteger;->subtract(Ljava/math/BigInteger;)Ljava/math/BigInteger;
 
@@ -1377,7 +1377,7 @@
     :goto_0
     if-ge v6, p2, :cond_b
 
-    sget-object v7, Lyou/zta/sis/you;->Zna:Ljava/math/BigInteger;
+    sget-object v7, Lyou/zta/sis/you;->Yoa:Ljava/math/BigInteger;
 
     invoke-static {v7, v3, p1}, Lorg/bouncycastle/util/you;->you(Ljava/math/BigInteger;Ljava/math/BigInteger;Ljava/security/SecureRandom;)Ljava/math/BigInteger;
 
@@ -1430,7 +1430,7 @@
     :goto_1
     if-ge v7, v4, :cond_6
 
-    sget-object v9, Lyou/zta/sis/you;->Zna:Ljava/math/BigInteger;
+    sget-object v9, Lyou/zta/sis/you;->Yoa:Ljava/math/BigInteger;
 
     invoke-virtual {v8, v9, p0}, Ljava/math/BigInteger;->modPow(Ljava/math/BigInteger;Ljava/math/BigInteger;)Ljava/math/BigInteger;
 
@@ -1482,7 +1482,7 @@
 
     if-nez p1, :cond_8
 
-    sget-object p1, Lyou/zta/sis/you;->Zna:Ljava/math/BigInteger;
+    sget-object p1, Lyou/zta/sis/you;->Yoa:Ljava/math/BigInteger;
 
     invoke-virtual {v9, p1, p0}, Ljava/math/BigInteger;->modPow(Ljava/math/BigInteger;Ljava/math/BigInteger;)Ljava/math/BigInteger;
 
@@ -1664,7 +1664,7 @@
 
     if-ge p2, p3, :cond_3
 
-    sget-object v2, Lyou/zta/sis/you;->Zna:Ljava/math/BigInteger;
+    sget-object v2, Lyou/zta/sis/you;->Yoa:Ljava/math/BigInteger;
 
     invoke-virtual {p4, v2, p0}, Ljava/math/BigInteger;->modPow(Ljava/math/BigInteger;Ljava/math/BigInteger;)Ljava/math/BigInteger;
 

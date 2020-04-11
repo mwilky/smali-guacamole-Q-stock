@@ -4,7 +4,7 @@
 
 
 # static fields
-.field public static final XCa:Ljava/lang/String; = "bc_fixed_point"
+.field public static final VDa:Ljava/lang/String; = "bc_fixed_point"
 
 
 # direct methods

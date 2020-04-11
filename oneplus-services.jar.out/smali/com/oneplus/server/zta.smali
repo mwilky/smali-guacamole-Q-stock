@@ -219,7 +219,7 @@
 
     invoke-static {v0, p0}, Lcom/oneplus/server/tsu;->you(Lcom/oneplus/core/oimc/IOIMCServiceManager;Landroid/content/Context;)V
 
-    invoke-static {p0}, Lcom/oneplus/server/tsu;->ssp(Landroid/content/Context;)V
+    invoke-static {p0}, Lcom/oneplus/server/tsu;->cno(Landroid/content/Context;)V
 
     return-void
 .end method

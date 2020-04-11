@@ -27,7 +27,7 @@
 
 
 # instance fields
-.field private final cBa:Ljava/security/cert/CertSelector;
+.field private final aCa:Ljava/security/cert/CertSelector;
 
 
 # direct methods
@@ -36,7 +36,7 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lorg/bouncycastle/jcajce/cno;->cBa:Ljava/security/cert/CertSelector;
+    iput-object p1, p0, Lorg/bouncycastle/jcajce/cno;->aCa:Ljava/security/cert/CertSelector;
 
     return-void
 .end method
@@ -52,7 +52,7 @@
 .method static synthetic zta(Lorg/bouncycastle/jcajce/cno;)Ljava/security/cert/CertSelector;
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/cno;->cBa:Ljava/security/cert/CertSelector;
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/cno;->aCa:Ljava/security/cert/CertSelector;
 
     return-object p0
 .end method
@@ -96,7 +96,7 @@
 
     new-instance v0, Lorg/bouncycastle/jcajce/cno;
 
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/cno;->cBa:Ljava/security/cert/CertSelector;
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/cno;->aCa:Ljava/security/cert/CertSelector;
 
     invoke-direct {v0, p0}, Lorg/bouncycastle/jcajce/cno;-><init>(Ljava/security/cert/CertSelector;)V
 
@@ -118,7 +118,7 @@
 .method public match(Ljava/security/cert/Certificate;)Z
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/cno;->cBa:Ljava/security/cert/CertSelector;
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/cno;->aCa:Ljava/security/cert/CertSelector;
 
     invoke-interface {p0, p1}, Ljava/security/cert/CertSelector;->match(Ljava/security/cert/Certificate;)Z
 

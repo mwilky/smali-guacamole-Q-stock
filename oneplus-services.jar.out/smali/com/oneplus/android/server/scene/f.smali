@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field private Oea:Lcom/oneplus/android/server/scene/ZenModeObserver;
+.field private Nfa:Lcom/oneplus/android/server/scene/ZenModeObserver;
 
 
 # direct methods
@@ -20,7 +20,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/oneplus/android/server/scene/f;->Oea:Lcom/oneplus/android/server/scene/ZenModeObserver;
+    iput-object v0, p0, Lcom/oneplus/android/server/scene/f;->Nfa:Lcom/oneplus/android/server/scene/ZenModeObserver;
 
     return-void
 .end method
@@ -30,7 +30,7 @@
 .method public addCallback(Lcom/oneplus/android/server/zenmode/ZenModeInjector$Callback;)V
     .locals 0
 
-    iget-object p0, p0, Lcom/oneplus/android/server/scene/f;->Oea:Lcom/oneplus/android/server/scene/ZenModeObserver;
+    iget-object p0, p0, Lcom/oneplus/android/server/scene/f;->Nfa:Lcom/oneplus/android/server/scene/ZenModeObserver;
 
     invoke-virtual {p0, p1}, Lcom/oneplus/android/server/scene/ZenModeObserver;->addCallback(Lcom/oneplus/android/server/zenmode/ZenModeInjector$Callback;)V
 
@@ -100,7 +100,7 @@
 .method public isZenModeOn()Z
     .locals 0
 
-    iget-object p0, p0, Lcom/oneplus/android/server/scene/f;->Oea:Lcom/oneplus/android/server/scene/ZenModeObserver;
+    iget-object p0, p0, Lcom/oneplus/android/server/scene/f;->Nfa:Lcom/oneplus/android/server/scene/ZenModeObserver;
 
     invoke-virtual {p0}, Lcom/oneplus/android/server/scene/ZenModeObserver;->isZenModeOn()Z
 
@@ -112,7 +112,7 @@
 .method public needBlockWakeUp(ILjava/lang/String;Ljava/lang/String;)Z
     .locals 0
 
-    iget-object p0, p0, Lcom/oneplus/android/server/scene/f;->Oea:Lcom/oneplus/android/server/scene/ZenModeObserver;
+    iget-object p0, p0, Lcom/oneplus/android/server/scene/f;->Nfa:Lcom/oneplus/android/server/scene/ZenModeObserver;
 
     invoke-virtual {p0, p1, p2, p3}, Lcom/oneplus/android/server/scene/ZenModeObserver;->needBlockWakeUp(ILjava/lang/String;Ljava/lang/String;)Z
 
@@ -124,7 +124,7 @@
 .method public shouldBlockNotifSound(Ljava/lang/String;)Z
     .locals 0
 
-    iget-object p0, p0, Lcom/oneplus/android/server/scene/f;->Oea:Lcom/oneplus/android/server/scene/ZenModeObserver;
+    iget-object p0, p0, Lcom/oneplus/android/server/scene/f;->Nfa:Lcom/oneplus/android/server/scene/ZenModeObserver;
 
     invoke-virtual {p0, p1}, Lcom/oneplus/android/server/scene/ZenModeObserver;->shouldBlockNotifSound(Ljava/lang/String;)Z
 

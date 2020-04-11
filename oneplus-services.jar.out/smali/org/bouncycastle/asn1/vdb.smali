@@ -101,7 +101,13 @@
 .method abstract isConstructed()Z
 .end method
 
-.method abstract qg()I
+.method public toASN1Primitive()Lorg/bouncycastle/asn1/vdb;
+    .locals 0
+
+    return-object p0
+.end method
+
+.method abstract ug()I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -109,19 +115,13 @@
     .end annotation
 .end method
 
-.method rg()Lorg/bouncycastle/asn1/vdb;
+.method vg()Lorg/bouncycastle/asn1/vdb;
     .locals 0
 
     return-object p0
 .end method
 
-.method sg()Lorg/bouncycastle/asn1/vdb;
-    .locals 0
-
-    return-object p0
-.end method
-
-.method public toASN1Primitive()Lorg/bouncycastle/asn1/vdb;
+.method wg()Lorg/bouncycastle/asn1/vdb;
     .locals 0
 
     return-object p0

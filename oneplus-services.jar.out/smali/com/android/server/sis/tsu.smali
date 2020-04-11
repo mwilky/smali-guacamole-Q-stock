@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/server/sis/vdb;->Lo()V
+    value = Lcom/android/server/sis/vdb;->Vo()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -165,7 +165,7 @@
 
     iget-object p1, p0, Lcom/android/server/sis/tsu;->this$0:Lcom/android/server/sis/vdb;
 
-    invoke-virtual {p1}, Lcom/android/server/sis/vdb;->Od()V
+    invoke-virtual {p1}, Lcom/android/server/sis/vdb;->Sd()V
 
     invoke-static {}, Lcom/android/server/sis/vdb;->access$700()Z
 

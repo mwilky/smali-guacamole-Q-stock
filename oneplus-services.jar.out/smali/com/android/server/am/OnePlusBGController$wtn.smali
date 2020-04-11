@@ -15,29 +15,29 @@
 
 
 # instance fields
-.field public Xl:Lcom/android/server/am/OnePlusBGController$AppBucketRanking;
+.field public am:Lcom/android/server/am/OnePlusBGController$AppBucketRanking;
 
-.field public Yl:Lcom/android/server/am/OnePlusBGController$MyDrainType;
-
-.field public Zl:Z
-
-.field public _l:D
-
-.field public am:Z
-
-.field public bm:Z
+.field public bm:Lcom/android/server/am/OnePlusBGController$MyDrainType;
 
 .field public cm:Z
 
-.field public hm:D
+.field public dm:D
 
-.field public im:D
+.field public em:Z
+
+.field public fm:Z
+
+.field public gm:Z
+
+.field public lm:D
 
 .field public mPkgName:Ljava/lang/String;
 
 .field public mUid:I
 
-.field public rm:D
+.field public mm:D
+
+.field public vm:D
 
 
 # direct methods
@@ -50,31 +50,31 @@
 
     iput p2, p0, Lcom/android/server/am/OnePlusBGController$wtn;->mUid:I
 
-    iput-wide p3, p0, Lcom/android/server/am/OnePlusBGController$wtn;->hm:D
+    iput-wide p3, p0, Lcom/android/server/am/OnePlusBGController$wtn;->lm:D
 
-    iput-wide p5, p0, Lcom/android/server/am/OnePlusBGController$wtn;->im:D
+    iput-wide p5, p0, Lcom/android/server/am/OnePlusBGController$wtn;->mm:D
 
-    iget-wide p1, p0, Lcom/android/server/am/OnePlusBGController$wtn;->hm:D
+    iget-wide p1, p0, Lcom/android/server/am/OnePlusBGController$wtn;->lm:D
 
-    iget-wide p3, p0, Lcom/android/server/am/OnePlusBGController$wtn;->im:D
+    iget-wide p3, p0, Lcom/android/server/am/OnePlusBGController$wtn;->mm:D
 
     add-double/2addr p1, p3
 
-    iput-wide p1, p0, Lcom/android/server/am/OnePlusBGController$wtn;->rm:D
+    iput-wide p1, p0, Lcom/android/server/am/OnePlusBGController$wtn;->vm:D
 
-    iput-wide p7, p0, Lcom/android/server/am/OnePlusBGController$wtn;->_l:D
+    iput-wide p7, p0, Lcom/android/server/am/OnePlusBGController$wtn;->dm:D
 
-    iput-object p9, p0, Lcom/android/server/am/OnePlusBGController$wtn;->Xl:Lcom/android/server/am/OnePlusBGController$AppBucketRanking;
+    iput-object p9, p0, Lcom/android/server/am/OnePlusBGController$wtn;->am:Lcom/android/server/am/OnePlusBGController$AppBucketRanking;
 
-    iput-object p10, p0, Lcom/android/server/am/OnePlusBGController$wtn;->Yl:Lcom/android/server/am/OnePlusBGController$MyDrainType;
+    iput-object p10, p0, Lcom/android/server/am/OnePlusBGController$wtn;->bm:Lcom/android/server/am/OnePlusBGController$MyDrainType;
 
-    iput-boolean p11, p0, Lcom/android/server/am/OnePlusBGController$wtn;->Zl:Z
+    iput-boolean p11, p0, Lcom/android/server/am/OnePlusBGController$wtn;->cm:Z
 
-    iput-boolean p12, p0, Lcom/android/server/am/OnePlusBGController$wtn;->am:Z
+    iput-boolean p12, p0, Lcom/android/server/am/OnePlusBGController$wtn;->em:Z
 
-    iput-boolean p13, p0, Lcom/android/server/am/OnePlusBGController$wtn;->bm:Z
+    iput-boolean p13, p0, Lcom/android/server/am/OnePlusBGController$wtn;->fm:Z
 
-    iput-boolean p14, p0, Lcom/android/server/am/OnePlusBGController$wtn;->cm:Z
+    iput-boolean p14, p0, Lcom/android/server/am/OnePlusBGController$wtn;->gm:Z
 
     return-void
 .end method
@@ -108,19 +108,19 @@
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-wide v2, p0, Lcom/android/server/am/OnePlusBGController$wtn;->hm:D
+    iget-wide v2, p0, Lcom/android/server/am/OnePlusBGController$wtn;->lm:D
 
     invoke-virtual {v0, v2, v3}, Ljava/lang/StringBuilder;->append(D)Ljava/lang/StringBuilder;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-wide v2, p0, Lcom/android/server/am/OnePlusBGController$wtn;->im:D
+    iget-wide v2, p0, Lcom/android/server/am/OnePlusBGController$wtn;->mm:D
 
     invoke-virtual {v0, v2, v3}, Ljava/lang/StringBuilder;->append(D)Ljava/lang/StringBuilder;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean v1, p0, Lcom/android/server/am/OnePlusBGController$wtn;->bm:Z
+    iget-boolean v1, p0, Lcom/android/server/am/OnePlusBGController$wtn;->fm:Z
 
     if-eqz v1, :cond_0
 
@@ -134,7 +134,7 @@
     :goto_0
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean v1, p0, Lcom/android/server/am/OnePlusBGController$wtn;->am:Z
+    iget-boolean v1, p0, Lcom/android/server/am/OnePlusBGController$wtn;->em:Z
 
     if-eqz v1, :cond_1
 
@@ -148,7 +148,7 @@
     :goto_1
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean p0, p0, Lcom/android/server/am/OnePlusBGController$wtn;->cm:Z
+    iget-boolean p0, p0, Lcom/android/server/am/OnePlusBGController$wtn;->gm:Z
 
     if-eqz p0, :cond_2
 

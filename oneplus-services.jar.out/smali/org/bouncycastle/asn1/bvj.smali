@@ -12,9 +12,9 @@
 
 
 # static fields
-.field private static final Xoa:J = 0xffffffffffff80L
+.field private static final Vpa:J = 0xffffffffffff80L
 
-.field private static final Yoa:Ljava/util/concurrent/ConcurrentMap;
+.field private static final Wpa:Ljava/util/concurrent/ConcurrentMap;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/concurrent/ConcurrentMap<",
@@ -40,7 +40,7 @@
 
     invoke-direct {v0}, Ljava/util/concurrent/ConcurrentHashMap;-><init>()V
 
-    sput-object v0, Lorg/bouncycastle/asn1/bvj;->Yoa:Ljava/util/concurrent/ConcurrentMap;
+    sput-object v0, Lorg/bouncycastle/asn1/bvj;->Wpa:Ljava/util/concurrent/ConcurrentMap;
 
     return-void
 .end method
@@ -52,7 +52,7 @@
 
     if-eqz p1, :cond_1
 
-    invoke-static {p1}, Lorg/bouncycastle/asn1/bvj;->Sc(Ljava/lang/String;)Z
+    invoke-static {p1}, Lorg/bouncycastle/asn1/bvj;->Vc(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -108,7 +108,7 @@
 
     const/4 v0, 0x0
 
-    invoke-static {p2, v0}, Lorg/bouncycastle/asn1/bvj;->ire(Ljava/lang/String;I)Z
+    invoke-static {p2, v0}, Lorg/bouncycastle/asn1/bvj;->hmo(Ljava/lang/String;I)Z
 
     move-result v0
 
@@ -352,7 +352,7 @@
     return-void
 .end method
 
-.method private static Sc(Ljava/lang/String;)Z
+.method private static Vc(Ljava/lang/String;)Z
     .locals 3
 
     invoke-virtual {p0}, Ljava/lang/String;->length()I
@@ -395,7 +395,7 @@
     :cond_1
     const/4 v0, 0x2
 
-    invoke-static {p0, v0}, Lorg/bouncycastle/asn1/bvj;->ire(Ljava/lang/String;I)Z
+    invoke-static {p0, v0}, Lorg/bouncycastle/asn1/bvj;->hmo(Ljava/lang/String;I)Z
 
     move-result p0
 
@@ -558,7 +558,7 @@
     return-object p0
 .end method
 
-.method private static ire(Ljava/lang/String;I)Z
+.method private static hmo(Ljava/lang/String;I)Z
     .locals 5
 
     invoke-virtual {p0}, Ljava/lang/String;->length()I
@@ -612,7 +612,7 @@
 
     invoke-direct {v0, p0}, Lorg/bouncycastle/asn1/bvj$zta;-><init>([B)V
 
-    sget-object v1, Lorg/bouncycastle/asn1/bvj;->Yoa:Ljava/util/concurrent/ConcurrentMap;
+    sget-object v1, Lorg/bouncycastle/asn1/bvj;->Wpa:Ljava/util/concurrent/ConcurrentMap;
 
     invoke-interface {v1, v0}, Ljava/util/concurrent/ConcurrentMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -920,7 +920,7 @@
 
     invoke-direct {v0, v1}, Lorg/bouncycastle/asn1/bvj$zta;-><init>([B)V
 
-    sget-object v1, Lorg/bouncycastle/asn1/bvj;->Yoa:Ljava/util/concurrent/ConcurrentMap;
+    sget-object v1, Lorg/bouncycastle/asn1/bvj;->Wpa:Ljava/util/concurrent/ConcurrentMap;
 
     invoke-interface {v1, v0}, Ljava/util/concurrent/ConcurrentMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -930,7 +930,7 @@
 
     if-nez v1, :cond_1
 
-    sget-object v1, Lorg/bouncycastle/asn1/bvj;->Yoa:Ljava/util/concurrent/ConcurrentMap;
+    sget-object v1, Lorg/bouncycastle/asn1/bvj;->Wpa:Ljava/util/concurrent/ConcurrentMap;
 
     invoke-interface {v1, v0, p0}, Ljava/util/concurrent/ConcurrentMap;->putIfAbsent(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -960,31 +960,6 @@
     const/4 p0, 0x0
 
     return p0
-.end method
-
-.method qg()I
-    .locals 1
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
-
-    invoke-direct {p0}, Lorg/bouncycastle/asn1/bvj;->getBody()[B
-
-    move-result-object p0
-
-    array-length p0, p0
-
-    invoke-static {p0}, Lorg/bouncycastle/asn1/ia;->ba(I)I
-
-    move-result v0
-
-    add-int/lit8 v0, v0, 0x1
-
-    add-int/2addr v0, p0
-
-    return v0
 .end method
 
 .method public toString()Ljava/lang/String;
@@ -1047,7 +1022,32 @@
     return p0
 .end method
 
-.method public wa(Ljava/lang/String;)Lorg/bouncycastle/asn1/bvj;
+.method ug()I
+    .locals 1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    invoke-direct {p0}, Lorg/bouncycastle/asn1/bvj;->getBody()[B
+
+    move-result-object p0
+
+    array-length p0, p0
+
+    invoke-static {p0}, Lorg/bouncycastle/asn1/ia;->ea(I)I
+
+    move-result v0
+
+    add-int/lit8 v0, v0, 0x1
+
+    add-int/2addr v0, p0
+
+    return v0
+.end method
+
+.method public xa(Ljava/lang/String;)Lorg/bouncycastle/asn1/bvj;
     .locals 1
 
     new-instance v0, Lorg/bouncycastle/asn1/bvj;
@@ -1075,7 +1075,7 @@
 
     array-length v0, p0
 
-    invoke-virtual {p1, v0}, Lorg/bouncycastle/asn1/ugm;->Z(I)V
+    invoke-virtual {p1, v0}, Lorg/bouncycastle/asn1/ugm;->ca(I)V
 
     invoke-virtual {p1, p0}, Lorg/bouncycastle/asn1/ugm;->write([B)V
 

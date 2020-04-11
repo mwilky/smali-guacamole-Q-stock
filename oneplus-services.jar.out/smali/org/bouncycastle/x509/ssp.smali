@@ -68,12 +68,12 @@
 
 
 # virtual methods
-.method public Li()Ljava/lang/String;
+.method public Pi()Ljava/lang/String;
     .locals 0
 
     iget-object p0, p0, Lorg/bouncycastle/x509/ssp;->attr:Lorg/bouncycastle/asn1/x509/tsu;
 
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/x509/tsu;->Jg()Lorg/bouncycastle/asn1/bvj;
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/x509/tsu;->Ng()Lorg/bouncycastle/asn1/bvj;
 
     move-result-object p0
 
@@ -89,7 +89,7 @@
 
     iget-object p0, p0, Lorg/bouncycastle/x509/ssp;->attr:Lorg/bouncycastle/asn1/x509/tsu;
 
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/x509/tsu;->Kg()Lorg/bouncycastle/asn1/ear;
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/x509/tsu;->Og()Lorg/bouncycastle/asn1/ear;
 
     move-result-object p0
 

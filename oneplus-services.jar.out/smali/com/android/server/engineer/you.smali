@@ -13,17 +13,17 @@
 
 
 # static fields
-.field private static final CB:Ljava/lang/String; = "sys_engineer_config_list"
+.field private static final AC:Ljava/lang/String; = "sys_engineer_config_list"
 
-.field private static final EB:Ljava/lang/String; = "/data/engineermode/sys_engineer_config_list.xml"
+.field private static final CC:Ljava/lang/String; = "/data/engineermode/sys_engineer_config_list.xml"
 
-.field private static final FB:Ljava/lang/String; = "/system/etc/sys_engineer_config_list.xml"
+.field private static final DC:Ljava/lang/String; = "/system/etc/sys_engineer_config_list.xml"
 
 .field private static final TAG:Ljava/lang/String; = "you"
 
 
 # instance fields
-.field private final XA:Lcom/android/server/engineer/you$zta;
+.field private final WB:Lcom/android/server/engineer/you$zta;
 
 
 # direct methods
@@ -54,7 +54,7 @@
 
     invoke-virtual {p0, p1, v0}, Lcom/android/server/engineer/bvj;->zta(Lcom/android/server/engineer/bvj$zta;Lcom/android/server/engineer/bvj$zta;)V
 
-    iput-object p2, p0, Lcom/android/server/engineer/you;->XA:Lcom/android/server/engineer/you$zta;
+    iput-object p2, p0, Lcom/android/server/engineer/you;->WB:Lcom/android/server/engineer/you$zta;
 
     :try_start_0
     invoke-virtual {p0}, Lcom/android/server/engineer/bvj;->init()V
@@ -82,7 +82,7 @@
 
 
 # virtual methods
-.method Ec()Z
+.method Ic()Z
     .locals 1
 
     const/4 v0, 0x1
@@ -93,46 +93,7 @@
 
     check-cast p0, Lcom/android/server/engineer/you$you;
 
-    invoke-virtual {p0}, Lcom/android/server/engineer/you$you;->Ec()Z
-
-    move-result p0
-
-    return p0
-.end method
-
-.method public Gc()V
-    .locals 1
-
-    invoke-super {p0}, Lcom/android/server/engineer/bvj;->Gc()V
-
-    iget-object p0, p0, Lcom/android/server/engineer/you;->XA:Lcom/android/server/engineer/you$zta;
-
-    if-eqz p0, :cond_0
-
-    invoke-interface {p0}, Lcom/android/server/engineer/you$zta;->i()V
-
-    :cond_0
-    sget-object p0, Lcom/android/server/engineer/you;->TAG:Ljava/lang/String;
-
-    const-string v0, "update SecrecySwitchHelper config"
-
-    invoke-static {p0, v0}, Landroid/util/Slog;->v(Ljava/lang/String;Ljava/lang/String;)I
-
-    return-void
-.end method
-
-.method J(Ljava/lang/String;)Z
-    .locals 1
-
-    const/4 v0, 0x1
-
-    invoke-virtual {p0, v0}, Lcom/android/server/engineer/bvj;->d(Z)Lcom/android/server/engineer/bvj$zta;
-
-    move-result-object p0
-
-    check-cast p0, Lcom/android/server/engineer/you$you;
-
-    invoke-virtual {p0, p1}, Lcom/android/server/engineer/you$you;->J(Ljava/lang/String;)Z
+    invoke-virtual {p0}, Lcom/android/server/engineer/you$you;->Ic()Z
 
     move-result p0
 
@@ -151,6 +112,45 @@
     check-cast p0, Lcom/android/server/engineer/you$you;
 
     invoke-virtual {p0, p1}, Lcom/android/server/engineer/you$you;->K(Ljava/lang/String;)Z
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public Kc()V
+    .locals 1
+
+    invoke-super {p0}, Lcom/android/server/engineer/bvj;->Kc()V
+
+    iget-object p0, p0, Lcom/android/server/engineer/you;->WB:Lcom/android/server/engineer/you$zta;
+
+    if-eqz p0, :cond_0
+
+    invoke-interface {p0}, Lcom/android/server/engineer/you$zta;->i()V
+
+    :cond_0
+    sget-object p0, Lcom/android/server/engineer/you;->TAG:Ljava/lang/String;
+
+    const-string v0, "update SecrecySwitchHelper config"
+
+    invoke-static {p0, v0}, Landroid/util/Slog;->v(Ljava/lang/String;Ljava/lang/String;)I
+
+    return-void
+.end method
+
+.method L(Ljava/lang/String;)Z
+    .locals 1
+
+    const/4 v0, 0x1
+
+    invoke-virtual {p0, v0}, Lcom/android/server/engineer/bvj;->d(Z)Lcom/android/server/engineer/bvj$zta;
+
+    move-result-object p0
+
+    check-cast p0, Lcom/android/server/engineer/you$you;
+
+    invoke-virtual {p0, p1}, Lcom/android/server/engineer/you$you;->L(Ljava/lang/String;)Z
 
     move-result p0
 

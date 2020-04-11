@@ -22,7 +22,7 @@
     return-void
 .end method
 
-.method private fd(Ljava/lang/String;)I
+.method private id(Ljava/lang/String;)I
     .locals 0
 
     if-nez p1, :cond_0
@@ -135,13 +135,13 @@
 
     iget-object v0, p0, Lorg/bouncycastle/util/io/pem/zta;->name:Ljava/lang/String;
 
-    invoke-direct {p0, v0}, Lorg/bouncycastle/util/io/pem/zta;->fd(Ljava/lang/String;)I
+    invoke-direct {p0, v0}, Lorg/bouncycastle/util/io/pem/zta;->id(Ljava/lang/String;)I
 
     move-result v0
 
     iget-object v1, p0, Lorg/bouncycastle/util/io/pem/zta;->value:Ljava/lang/String;
 
-    invoke-direct {p0, v1}, Lorg/bouncycastle/util/io/pem/zta;->fd(Ljava/lang/String;)I
+    invoke-direct {p0, v1}, Lorg/bouncycastle/util/io/pem/zta;->id(Ljava/lang/String;)I
 
     move-result p0
 

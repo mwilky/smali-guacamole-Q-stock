@@ -24,7 +24,46 @@
 
 
 # virtual methods
-.method public C(I)V
+.method public Be()I
+    .locals 0
+
+    iget p0, p0, Lcom/oneplus/android/server/display/igw;->mFrom:I
+
+    return p0
+.end method
+
+.method public Ce()I
+    .locals 0
+
+    iget p0, p0, Lcom/oneplus/android/server/display/igw;->mTo:I
+
+    return p0
+.end method
+
+.method public De()Z
+    .locals 0
+
+    iget-object p0, p0, Lcom/oneplus/android/server/display/igw;->mAnimator:Landroid/animation/ValueAnimator;
+
+    if-eqz p0, :cond_0
+
+    invoke-virtual {p0}, Landroid/animation/ValueAnimator;->isRunning()Z
+
+    move-result p0
+
+    if-eqz p0, :cond_0
+
+    const/4 p0, 0x1
+
+    return p0
+
+    :cond_0
+    const/4 p0, 0x0
+
+    return p0
+.end method
+
+.method public F(I)V
     .locals 0
 
     iput p1, p0, Lcom/oneplus/android/server/display/igw;->mFrom:I
@@ -32,7 +71,7 @@
     return-void
 .end method
 
-.method public D(I)V
+.method public G(I)V
     .locals 0
 
     iput p1, p0, Lcom/oneplus/android/server/display/igw;->mTo:I
@@ -149,45 +188,6 @@
 .end method
 
 .method public abstract setUp(Landroid/content/Context;Z)V
-.end method
-
-.method public xe()I
-    .locals 0
-
-    iget p0, p0, Lcom/oneplus/android/server/display/igw;->mFrom:I
-
-    return p0
-.end method
-
-.method public ye()I
-    .locals 0
-
-    iget p0, p0, Lcom/oneplus/android/server/display/igw;->mTo:I
-
-    return p0
-.end method
-
-.method public ze()Z
-    .locals 0
-
-    iget-object p0, p0, Lcom/oneplus/android/server/display/igw;->mAnimator:Landroid/animation/ValueAnimator;
-
-    if-eqz p0, :cond_0
-
-    invoke-virtual {p0}, Landroid/animation/ValueAnimator;->isRunning()Z
-
-    move-result p0
-
-    if-eqz p0, :cond_0
-
-    const/4 p0, 0x1
-
-    return p0
-
-    :cond_0
-    const/4 p0, 0x0
-
-    return p0
 .end method
 
 .method public abstract zta(Lcom/oneplus/android/server/display/bio;)V

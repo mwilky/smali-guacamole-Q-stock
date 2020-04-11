@@ -15,11 +15,11 @@
 
 
 # instance fields
-.field public XY:Ljava/lang/String;
+.field public SZ:Ljava/lang/String;
 
-.field public YY:Ljava/lang/String;
+.field public TZ:Ljava/lang/String;
 
-.field public ZY:Ljava/lang/String;
+.field public UZ:Ljava/lang/String;
 
 .field public packageName:Ljava/lang/String;
 

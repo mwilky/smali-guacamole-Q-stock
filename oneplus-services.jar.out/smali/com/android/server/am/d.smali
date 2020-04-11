@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/server/am/OnePlusHighPowerDetector;->gn()V
+    value = Lcom/android/server/am/OnePlusHighPowerDetector;->kn()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -81,21 +81,21 @@
     :cond_0
     iget-object p0, p0, Lcom/android/server/am/d;->this$0:Lcom/android/server/am/OnePlusHighPowerDetector;
 
-    iput-object p2, p0, Lcom/android/server/am/OnePlusHighPowerDetector;->js:Ljava/lang/String;
+    iput-object p2, p0, Lcom/android/server/am/OnePlusHighPowerDetector;->os:Ljava/lang/String;
 
     goto :goto_0
 
     :cond_1
     iget-object p0, p0, Lcom/android/server/am/d;->this$0:Lcom/android/server/am/OnePlusHighPowerDetector;
 
-    iput-object p2, p0, Lcom/android/server/am/OnePlusHighPowerDetector;->es:Ljava/lang/String;
+    iput-object p2, p0, Lcom/android/server/am/OnePlusHighPowerDetector;->is:Ljava/lang/String;
 
     goto :goto_0
 
     :cond_2
     iget-object p0, p0, Lcom/android/server/am/d;->this$0:Lcom/android/server/am/OnePlusHighPowerDetector;
 
-    iput-object p2, p0, Lcom/android/server/am/OnePlusHighPowerDetector;->gs:Ljava/lang/String;
+    iput-object p2, p0, Lcom/android/server/am/OnePlusHighPowerDetector;->ks:Ljava/lang/String;
 
     :goto_0
     return-void

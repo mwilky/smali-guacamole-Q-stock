@@ -9,13 +9,13 @@
 # static fields
 .field private static DEBUG_ONEPLUS:Z = false
 
-.field private static Ida:Lcom/android/server/power/OnePlusStandbyAnalyzer; = null
+.field private static Dea:Lcom/android/server/power/OnePlusStandbyAnalyzer; = null
 
 .field private static final TAG:Ljava/lang/String; = "StandbyDetect"
 
 
 # instance fields
-.field private BG:Z
+.field private zH:Z
 
 
 # direct methods
@@ -28,7 +28,7 @@
 
     const/4 v0, 0x0
 
-    sput-object v0, Lcom/oneplus/android/server/you/zta;->Ida:Lcom/android/server/power/OnePlusStandbyAnalyzer;
+    sput-object v0, Lcom/oneplus/android/server/you/zta;->Dea:Lcom/android/server/power/OnePlusStandbyAnalyzer;
 
     return-void
 .end method
@@ -40,7 +40,7 @@
 
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/oneplus/android/server/you/zta;->BG:Z
+    iput-boolean v0, p0, Lcom/oneplus/android/server/you/zta;->zH:Z
 
     return-void
 .end method
@@ -50,7 +50,7 @@
 .method public checkIfHitBatteryLowLocked(Landroid/content/Intent;)V
     .locals 0
 
-    sget-object p0, Lcom/oneplus/android/server/you/zta;->Ida:Lcom/android/server/power/OnePlusStandbyAnalyzer;
+    sget-object p0, Lcom/oneplus/android/server/you/zta;->Dea:Lcom/android/server/power/OnePlusStandbyAnalyzer;
 
     if-eqz p0, :cond_0
 
@@ -63,7 +63,7 @@
 .method public dumpStandbyStats(Ljava/io/PrintWriter;)V
     .locals 0
 
-    sget-object p0, Lcom/oneplus/android/server/you/zta;->Ida:Lcom/android/server/power/OnePlusStandbyAnalyzer;
+    sget-object p0, Lcom/oneplus/android/server/you/zta;->Dea:Lcom/android/server/power/OnePlusStandbyAnalyzer;
 
     if-eqz p0, :cond_0
 
@@ -76,7 +76,7 @@
 .method public enteringDeepIdleLocked()V
     .locals 0
 
-    sget-object p0, Lcom/oneplus/android/server/you/zta;->Ida:Lcom/android/server/power/OnePlusStandbyAnalyzer;
+    sget-object p0, Lcom/oneplus/android/server/you/zta;->Dea:Lcom/android/server/power/OnePlusStandbyAnalyzer;
 
     if-eqz p0, :cond_0
 
@@ -91,11 +91,11 @@
 
     new-instance v0, Lcom/android/server/power/OnePlusStandbyAnalyzer;
 
-    iget-boolean p0, p0, Lcom/oneplus/android/server/you/zta;->BG:Z
+    iget-boolean p0, p0, Lcom/oneplus/android/server/you/zta;->zH:Z
 
     invoke-direct {v0, p1, p0}, Lcom/android/server/power/OnePlusStandbyAnalyzer;-><init>(Lcom/android/server/DeviceIdleController;Z)V
 
-    sput-object v0, Lcom/oneplus/android/server/you/zta;->Ida:Lcom/android/server/power/OnePlusStandbyAnalyzer;
+    sput-object v0, Lcom/oneplus/android/server/you/zta;->Dea:Lcom/android/server/power/OnePlusStandbyAnalyzer;
 
     return-void
 .end method
@@ -103,7 +103,7 @@
 .method public leavingDeepIdleLocked(Z)V
     .locals 0
 
-    sget-object p0, Lcom/oneplus/android/server/you/zta;->Ida:Lcom/android/server/power/OnePlusStandbyAnalyzer;
+    sget-object p0, Lcom/oneplus/android/server/you/zta;->Dea:Lcom/android/server/power/OnePlusStandbyAnalyzer;
 
     if-eqz p0, :cond_0
 
@@ -116,7 +116,7 @@
 .method public notifyEnterDeepIdle()V
     .locals 0
 
-    sget-object p0, Lcom/oneplus/android/server/you/zta;->Ida:Lcom/android/server/power/OnePlusStandbyAnalyzer;
+    sget-object p0, Lcom/oneplus/android/server/you/zta;->Dea:Lcom/android/server/power/OnePlusStandbyAnalyzer;
 
     if-eqz p0, :cond_0
 
@@ -129,7 +129,7 @@
 .method public resetTimeofDeepIdleStart()V
     .locals 0
 
-    sget-object p0, Lcom/oneplus/android/server/you/zta;->Ida:Lcom/android/server/power/OnePlusStandbyAnalyzer;
+    sget-object p0, Lcom/oneplus/android/server/you/zta;->Dea:Lcom/android/server/power/OnePlusStandbyAnalyzer;
 
     if-eqz p0, :cond_0
 
@@ -142,7 +142,7 @@
 .method public setInBatteryStatsService(Lcom/android/server/am/BatteryStatsService;)V
     .locals 0
 
-    sget-object p0, Lcom/oneplus/android/server/you/zta;->Ida:Lcom/android/server/power/OnePlusStandbyAnalyzer;
+    sget-object p0, Lcom/oneplus/android/server/you/zta;->Dea:Lcom/android/server/power/OnePlusStandbyAnalyzer;
 
     invoke-virtual {p0, p1}, Lcom/android/server/power/OnePlusStandbyAnalyzer;->setInBatteryStatsService(Lcom/android/server/am/BatteryStatsService;)V
 
@@ -152,7 +152,7 @@
 .method public shellCommand(Ljava/lang/String;Ljava/io/PrintWriter;Landroid/os/ShellCommand;)Z
     .locals 0
 
-    sget-object p0, Lcom/oneplus/android/server/you/zta;->Ida:Lcom/android/server/power/OnePlusStandbyAnalyzer;
+    sget-object p0, Lcom/oneplus/android/server/you/zta;->Dea:Lcom/android/server/power/OnePlusStandbyAnalyzer;
 
     if-eqz p0, :cond_0
 
@@ -171,7 +171,7 @@
 .method public update1stLightIdleStatus(Z)V
     .locals 0
 
-    sget-object p0, Lcom/oneplus/android/server/you/zta;->Ida:Lcom/android/server/power/OnePlusStandbyAnalyzer;
+    sget-object p0, Lcom/oneplus/android/server/you/zta;->Dea:Lcom/android/server/power/OnePlusStandbyAnalyzer;
 
     if-eqz p0, :cond_0
 
@@ -184,7 +184,7 @@
 .method public updateScreenStatus(Z)V
     .locals 0
 
-    sget-object p0, Lcom/oneplus/android/server/you/zta;->Ida:Lcom/android/server/power/OnePlusStandbyAnalyzer;
+    sget-object p0, Lcom/oneplus/android/server/you/zta;->Dea:Lcom/android/server/power/OnePlusStandbyAnalyzer;
 
     if-eqz p0, :cond_0
 

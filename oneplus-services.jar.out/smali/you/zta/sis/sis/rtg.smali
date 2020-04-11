@@ -16,7 +16,7 @@
     return-void
 .end method
 
-.method public static Wk()[J
+.method public static _k()[J
     .locals 1
 
     const/4 v0, 0x4
@@ -26,7 +26,7 @@
     return-object v0
 .end method
 
-.method public static Xk()[I
+.method public static al()[I
     .locals 1
 
     const/16 v0, 0x10
@@ -36,7 +36,7 @@
     return-object v0
 .end method
 
-.method public static Yk()[J
+.method public static bl()[J
     .locals 1
 
     const/16 v0, 0x8
@@ -63,7 +63,7 @@
 
     if-gt v0, v1, :cond_1
 
-    invoke-static {}, Lyou/zta/sis/sis/rtg;->Wk()[J
+    invoke-static {}, Lyou/zta/sis/sis/rtg;->_k()[J
 
     move-result-object v0
 

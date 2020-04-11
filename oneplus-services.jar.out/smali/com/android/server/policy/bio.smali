@@ -4,7 +4,7 @@
 
 
 # static fields
-.field private static final ND:I = 0x200
+.field private static final QE:I = 0x200
 
 .field private static final TAG:Ljava/lang/String; = "FileUtils"
 
@@ -18,7 +18,7 @@
     return-void
 .end method
 
-.method public static O(Ljava/lang/String;)Ljava/lang/String;
+.method public static P(Ljava/lang/String;)Ljava/lang/String;
     .locals 6
 
     const/4 v0, 0x0

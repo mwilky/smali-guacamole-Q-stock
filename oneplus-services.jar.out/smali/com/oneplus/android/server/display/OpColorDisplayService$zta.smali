@@ -61,7 +61,7 @@
 
     move-result p0
 
-    invoke-virtual {p1, p0}, Lcom/oneplus/android/server/display/bvj;->B(I)V
+    invoke-virtual {p1, p0}, Lcom/oneplus/android/server/display/bvj;->E(I)V
 
     goto/16 :goto_2
 
@@ -72,7 +72,7 @@
 
     move-result-object p0
 
-    invoke-virtual {p0}, Lcom/oneplus/android/server/display/bvj;->ve()V
+    invoke-virtual {p0}, Lcom/oneplus/android/server/display/bvj;->ze()V
 
     goto/16 :goto_2
 
@@ -94,7 +94,7 @@
 
     move-result-object p0
 
-    invoke-virtual {p0}, Lcom/oneplus/android/server/display/bvj;->Je()V
+    invoke-virtual {p0}, Lcom/oneplus/android/server/display/bvj;->Ne()V
 
     goto/16 :goto_2
 
@@ -105,7 +105,7 @@
 
     move-result-object p0
 
-    invoke-virtual {p0}, Lcom/oneplus/android/server/display/bvj;->Ie()V
+    invoke-virtual {p0}, Lcom/oneplus/android/server/display/bvj;->Me()V
 
     goto/16 :goto_2
 
@@ -159,7 +159,7 @@
 
     move-result-object p1
 
-    invoke-virtual {p1, v2}, Lcom/oneplus/android/server/display/OpColorModeManager;->M(I)V
+    invoke-virtual {p1, v2}, Lcom/oneplus/android/server/display/OpColorModeManager;->P(I)V
 
     goto :goto_0
 
@@ -170,7 +170,7 @@
 
     move-result-object p1
 
-    invoke-virtual {p1, v1}, Lcom/oneplus/android/server/display/OpColorModeManager;->M(I)V
+    invoke-virtual {p1, v1}, Lcom/oneplus/android/server/display/OpColorModeManager;->P(I)V
 
     iget-object p1, p0, Lcom/oneplus/android/server/display/OpColorDisplayService$zta;->this$0:Lcom/oneplus/android/server/display/OpColorDisplayService;
 
@@ -200,7 +200,7 @@
 
     move-result-object p0
 
-    invoke-virtual {p0}, Lcom/oneplus/android/server/display/bvj;->Fe()V
+    invoke-virtual {p0}, Lcom/oneplus/android/server/display/bvj;->Je()V
 
     goto/16 :goto_2
 
@@ -211,7 +211,7 @@
 
     move-result-object p0
 
-    invoke-virtual {p0}, Lcom/oneplus/android/server/display/bvj;->Ce()V
+    invoke-virtual {p0}, Lcom/oneplus/android/server/display/bvj;->Ge()V
 
     goto/16 :goto_2
 
@@ -222,7 +222,7 @@
 
     move-result-object p1
 
-    invoke-virtual {p1, v2}, Lcom/oneplus/android/server/display/OpColorModeManager;->M(I)V
+    invoke-virtual {p1, v2}, Lcom/oneplus/android/server/display/OpColorModeManager;->P(I)V
 
     iget-object p0, p0, Lcom/oneplus/android/server/display/OpColorDisplayService$zta;->this$0:Lcom/oneplus/android/server/display/OpColorDisplayService;
 
@@ -230,7 +230,7 @@
 
     move-result-object p0
 
-    invoke-virtual {p0}, Lcom/oneplus/android/server/display/bvj;->De()V
+    invoke-virtual {p0}, Lcom/oneplus/android/server/display/bvj;->He()V
 
     goto/16 :goto_2
 
@@ -241,7 +241,7 @@
 
     move-result-object p1
 
-    invoke-virtual {p1, v1}, Lcom/oneplus/android/server/display/OpColorModeManager;->M(I)V
+    invoke-virtual {p1, v1}, Lcom/oneplus/android/server/display/OpColorModeManager;->P(I)V
 
     iget-object p1, p0, Lcom/oneplus/android/server/display/OpColorDisplayService$zta;->this$0:Lcom/oneplus/android/server/display/OpColorDisplayService;
 
@@ -253,7 +253,7 @@
 
     move-result-object p0
 
-    invoke-virtual {p0}, Lcom/oneplus/android/server/display/bvj;->Be()V
+    invoke-virtual {p0}, Lcom/oneplus/android/server/display/bvj;->Fe()V
 
     goto/16 :goto_2
 
@@ -339,7 +339,7 @@
 
     move-result-object p1
 
-    invoke-virtual {p1, v1}, Lcom/oneplus/android/server/display/OpColorModeManager;->M(I)V
+    invoke-virtual {p1, v1}, Lcom/oneplus/android/server/display/OpColorModeManager;->P(I)V
 
     iget-object p1, p0, Lcom/oneplus/android/server/display/OpColorDisplayService$zta;->this$0:Lcom/oneplus/android/server/display/OpColorDisplayService;
 
@@ -351,7 +351,7 @@
 
     move-result-object p0
 
-    invoke-virtual {p0}, Lcom/oneplus/android/server/display/bvj;->Ge()V
+    invoke-virtual {p0}, Lcom/oneplus/android/server/display/bvj;->Ke()V
 
     goto :goto_2
 
@@ -362,7 +362,7 @@
 
     move-result-object p1
 
-    invoke-virtual {p1, v2}, Lcom/oneplus/android/server/display/OpColorModeManager;->M(I)V
+    invoke-virtual {p1, v2}, Lcom/oneplus/android/server/display/OpColorModeManager;->P(I)V
 
     iget-object p0, p0, Lcom/oneplus/android/server/display/OpColorDisplayService$zta;->this$0:Lcom/oneplus/android/server/display/OpColorDisplayService;
 
@@ -370,7 +370,7 @@
 
     move-result-object p0
 
-    invoke-virtual {p0}, Lcom/oneplus/android/server/display/bvj;->Ee()V
+    invoke-virtual {p0}, Lcom/oneplus/android/server/display/bvj;->Ie()V
 
     goto :goto_2
 
@@ -389,7 +389,7 @@
 
     move-result-object p1
 
-    invoke-virtual {p1, v2}, Lcom/oneplus/android/server/display/OpColorModeManager;->M(I)V
+    invoke-virtual {p1, v2}, Lcom/oneplus/android/server/display/OpColorModeManager;->P(I)V
 
     goto :goto_1
 
@@ -400,7 +400,7 @@
 
     move-result-object p1
 
-    invoke-virtual {p1, v1}, Lcom/oneplus/android/server/display/OpColorModeManager;->M(I)V
+    invoke-virtual {p1, v1}, Lcom/oneplus/android/server/display/OpColorModeManager;->P(I)V
 
     iget-object p1, p0, Lcom/oneplus/android/server/display/OpColorDisplayService$zta;->this$0:Lcom/oneplus/android/server/display/OpColorDisplayService;
 

@@ -86,7 +86,7 @@
 
     move-result-object p0
 
-    invoke-virtual {p0, p1}, Lcom/oneplus/android/server/heytapbusiness/zta/zta/you;->ka(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p0, p1}, Lcom/oneplus/android/server/heytapbusiness/zta/zta/you;->la(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p0
 
@@ -100,7 +100,7 @@
 
     move-result-object p0
 
-    invoke-virtual {p0, p1}, Lcom/oneplus/android/server/heytapbusiness/zta/you/you;->ka(Ljava/lang/String;)Landroid/content/pm/PackageInfo;
+    invoke-virtual {p0, p1}, Lcom/oneplus/android/server/heytapbusiness/zta/you/you;->la(Ljava/lang/String;)Landroid/content/pm/PackageInfo;
 
     move-result-object p0
 
@@ -114,7 +114,7 @@
 
     move-result-object p0
 
-    invoke-virtual {p0, p1}, Lcom/oneplus/android/server/heytapbusiness/zta/sis/you;->ka(Ljava/lang/String;)Landroid/content/ComponentName;
+    invoke-virtual {p0, p1}, Lcom/oneplus/android/server/heytapbusiness/zta/sis/you;->la(Ljava/lang/String;)Landroid/content/ComponentName;
 
     move-result-object p0
 
@@ -128,7 +128,7 @@
 
     move-result-object p0
 
-    invoke-virtual {p0, p1}, Lcom/oneplus/android/server/heytapbusiness/zta/zta/you;->la(Ljava/lang/String;)Z
+    invoke-virtual {p0, p1}, Lcom/oneplus/android/server/heytapbusiness/zta/zta/you;->ma(Ljava/lang/String;)Z
 
     move-result p0
 
@@ -142,7 +142,7 @@
 
     move-result-object p0
 
-    invoke-virtual {p0, p1}, Lcom/oneplus/android/server/heytapbusiness/zta/you/you;->la(Ljava/lang/String;)Z
+    invoke-virtual {p0, p1}, Lcom/oneplus/android/server/heytapbusiness/zta/you/you;->ma(Ljava/lang/String;)Z
 
     move-result p0
 
@@ -156,7 +156,7 @@
 
     move-result-object p0
 
-    invoke-virtual {p0, p1}, Lcom/oneplus/android/server/heytapbusiness/zta/sis/you;->la(Ljava/lang/String;)Z
+    invoke-virtual {p0, p1}, Lcom/oneplus/android/server/heytapbusiness/zta/sis/you;->ma(Ljava/lang/String;)Z
 
     move-result p0
 

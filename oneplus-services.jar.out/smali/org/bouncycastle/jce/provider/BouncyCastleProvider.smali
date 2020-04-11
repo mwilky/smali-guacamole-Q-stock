@@ -11,31 +11,31 @@
 
 .field public static final PROVIDER_NAME:Ljava/lang/String; = "BC"
 
-.field private static final fna:Ljava/util/Map;
+.field private static final doa:Ljava/util/Map;
 
-.field private static final gna:Ljava/lang/String; = "org.bouncycastle.jcajce.provider.symmetric."
+.field private static final eoa:Ljava/lang/String; = "org.bouncycastle.jcajce.provider.symmetric."
 
-.field private static final hna:[Ljava/lang/String;
+.field private static final foa:[Ljava/lang/String;
 
-.field private static final ina:[Ljava/lang/String;
+.field private static final goa:[Ljava/lang/String;
+
+.field private static final hoa:[Ljava/lang/String;
 
 .field private static info:Ljava/lang/String; = "BouncyCastle Security Provider v1.61"
 
-.field private static final jna:[Ljava/lang/String;
+.field private static final ioa:Ljava/lang/String; = "org.bouncycastle.jcajce.provider.asymmetric."
 
-.field private static final kna:Ljava/lang/String; = "org.bouncycastle.jcajce.provider.asymmetric."
+.field private static final joa:[Ljava/lang/String;
 
-.field private static final lna:[Ljava/lang/String;
+.field private static final koa:[Ljava/lang/String;
 
-.field private static final mna:[Ljava/lang/String;
+.field private static final loa:Ljava/lang/String; = "org.bouncycastle.jcajce.provider.digest."
 
-.field private static final nna:Ljava/lang/String; = "org.bouncycastle.jcajce.provider.digest."
+.field private static final moa:[Ljava/lang/String;
 
-.field private static final ona:[Ljava/lang/String;
+.field private static final noa:Ljava/lang/String; = "org.bouncycastle.jcajce.provider.keystore."
 
-.field private static final pna:Ljava/lang/String; = "org.bouncycastle.jcajce.provider.keystore."
-
-.field private static final qna:[Ljava/lang/String;
+.field private static final ooa:[Ljava/lang/String;
 
 
 # direct methods
@@ -52,7 +52,7 @@
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    sput-object v0, Lorg/bouncycastle/jce/provider/BouncyCastleProvider;->fna:Ljava/util/Map;
+    sput-object v0, Lorg/bouncycastle/jce/provider/BouncyCastleProvider;->doa:Ljava/util/Map;
 
     const-string v0, "PBEPBKDF2"
 
@@ -64,13 +64,13 @@
 
     move-result-object v0
 
-    sput-object v0, Lorg/bouncycastle/jce/provider/BouncyCastleProvider;->hna:[Ljava/lang/String;
+    sput-object v0, Lorg/bouncycastle/jce/provider/BouncyCastleProvider;->foa:[Ljava/lang/String;
 
     const/4 v0, 0x0
 
     new-array v0, v0, [Ljava/lang/String;
 
-    sput-object v0, Lorg/bouncycastle/jce/provider/BouncyCastleProvider;->ina:[Ljava/lang/String;
+    sput-object v0, Lorg/bouncycastle/jce/provider/BouncyCastleProvider;->goa:[Ljava/lang/String;
 
     const-string v1, "AES"
 
@@ -90,7 +90,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lorg/bouncycastle/jce/provider/BouncyCastleProvider;->jna:[Ljava/lang/String;
+    sput-object v0, Lorg/bouncycastle/jce/provider/BouncyCastleProvider;->hoa:[Ljava/lang/String;
 
     const-string v0, "X509"
 
@@ -98,7 +98,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lorg/bouncycastle/jce/provider/BouncyCastleProvider;->lna:[Ljava/lang/String;
+    sput-object v0, Lorg/bouncycastle/jce/provider/BouncyCastleProvider;->joa:[Ljava/lang/String;
 
     const-string v0, "DSA"
 
@@ -112,7 +112,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lorg/bouncycastle/jce/provider/BouncyCastleProvider;->mna:[Ljava/lang/String;
+    sput-object v0, Lorg/bouncycastle/jce/provider/BouncyCastleProvider;->koa:[Ljava/lang/String;
 
     const-string v1, "MD5"
 
@@ -130,7 +130,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lorg/bouncycastle/jce/provider/BouncyCastleProvider;->ona:[Ljava/lang/String;
+    sput-object v0, Lorg/bouncycastle/jce/provider/BouncyCastleProvider;->moa:[Ljava/lang/String;
 
     const-string v0, "BC"
 
@@ -142,7 +142,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lorg/bouncycastle/jce/provider/BouncyCastleProvider;->qna:[Ljava/lang/String;
+    sput-object v0, Lorg/bouncycastle/jce/provider/BouncyCastleProvider;->ooa:[Ljava/lang/String;
 
     return-void
 .end method
@@ -170,37 +170,37 @@
 .method private setup()V
     .locals 2
 
-    sget-object v0, Lorg/bouncycastle/jce/provider/BouncyCastleProvider;->ona:[Ljava/lang/String;
+    sget-object v0, Lorg/bouncycastle/jce/provider/BouncyCastleProvider;->moa:[Ljava/lang/String;
 
     const-string v1, "org.bouncycastle.jcajce.provider.digest."
 
     invoke-direct {p0, v1, v0}, Lorg/bouncycastle/jce/provider/BouncyCastleProvider;->zta(Ljava/lang/String;[Ljava/lang/String;)V
 
-    sget-object v0, Lorg/bouncycastle/jce/provider/BouncyCastleProvider;->hna:[Ljava/lang/String;
+    sget-object v0, Lorg/bouncycastle/jce/provider/BouncyCastleProvider;->foa:[Ljava/lang/String;
 
     const-string v1, "org.bouncycastle.jcajce.provider.symmetric."
 
     invoke-direct {p0, v1, v0}, Lorg/bouncycastle/jce/provider/BouncyCastleProvider;->zta(Ljava/lang/String;[Ljava/lang/String;)V
 
-    sget-object v0, Lorg/bouncycastle/jce/provider/BouncyCastleProvider;->ina:[Ljava/lang/String;
+    sget-object v0, Lorg/bouncycastle/jce/provider/BouncyCastleProvider;->goa:[Ljava/lang/String;
 
     invoke-direct {p0, v1, v0}, Lorg/bouncycastle/jce/provider/BouncyCastleProvider;->zta(Ljava/lang/String;[Ljava/lang/String;)V
 
-    sget-object v0, Lorg/bouncycastle/jce/provider/BouncyCastleProvider;->jna:[Ljava/lang/String;
+    sget-object v0, Lorg/bouncycastle/jce/provider/BouncyCastleProvider;->hoa:[Ljava/lang/String;
 
     invoke-direct {p0, v1, v0}, Lorg/bouncycastle/jce/provider/BouncyCastleProvider;->zta(Ljava/lang/String;[Ljava/lang/String;)V
 
-    sget-object v0, Lorg/bouncycastle/jce/provider/BouncyCastleProvider;->lna:[Ljava/lang/String;
+    sget-object v0, Lorg/bouncycastle/jce/provider/BouncyCastleProvider;->joa:[Ljava/lang/String;
 
     const-string v1, "org.bouncycastle.jcajce.provider.asymmetric."
 
     invoke-direct {p0, v1, v0}, Lorg/bouncycastle/jce/provider/BouncyCastleProvider;->zta(Ljava/lang/String;[Ljava/lang/String;)V
 
-    sget-object v0, Lorg/bouncycastle/jce/provider/BouncyCastleProvider;->mna:[Ljava/lang/String;
+    sget-object v0, Lorg/bouncycastle/jce/provider/BouncyCastleProvider;->koa:[Ljava/lang/String;
 
     invoke-direct {p0, v1, v0}, Lorg/bouncycastle/jce/provider/BouncyCastleProvider;->zta(Ljava/lang/String;[Ljava/lang/String;)V
 
-    sget-object v0, Lorg/bouncycastle/jce/provider/BouncyCastleProvider;->qna:[Ljava/lang/String;
+    sget-object v0, Lorg/bouncycastle/jce/provider/BouncyCastleProvider;->ooa:[Ljava/lang/String;
 
     const-string v1, "org.bouncycastle.jcajce.provider.keystore."
 
@@ -230,12 +230,12 @@
 .method private static vdb(Lorg/bouncycastle/asn1/bvj;)Lorg/bouncycastle/jcajce/provider/util/sis;
     .locals 2
 
-    sget-object v0, Lorg/bouncycastle/jce/provider/BouncyCastleProvider;->fna:Ljava/util/Map;
+    sget-object v0, Lorg/bouncycastle/jce/provider/BouncyCastleProvider;->doa:Ljava/util/Map;
 
     monitor-enter v0
 
     :try_start_0
-    sget-object v1, Lorg/bouncycastle/jce/provider/BouncyCastleProvider;->fna:Ljava/util/Map;
+    sget-object v1, Lorg/bouncycastle/jce/provider/BouncyCastleProvider;->doa:Ljava/util/Map;
 
     invoke-interface {v1, p0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -696,12 +696,12 @@
 .method public zta(Lorg/bouncycastle/asn1/bvj;Lorg/bouncycastle/jcajce/provider/util/sis;)V
     .locals 1
 
-    sget-object p0, Lorg/bouncycastle/jce/provider/BouncyCastleProvider;->fna:Ljava/util/Map;
+    sget-object p0, Lorg/bouncycastle/jce/provider/BouncyCastleProvider;->doa:Ljava/util/Map;
 
     monitor-enter p0
 
     :try_start_0
-    sget-object v0, Lorg/bouncycastle/jce/provider/BouncyCastleProvider;->fna:Ljava/util/Map;
+    sget-object v0, Lorg/bouncycastle/jce/provider/BouncyCastleProvider;->doa:Ljava/util/Map;
 
     invoke-interface {v0, p1, p2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 

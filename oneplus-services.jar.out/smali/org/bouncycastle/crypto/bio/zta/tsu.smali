@@ -4,9 +4,9 @@
 
 
 # static fields
-.field private static final Zza:I = -0x1f000000
+.field private static final XAa:I = -0x1f000000
 
-.field private static final _za:J = -0x1f00000000000000L
+.field private static final YAa:J = -0x1f00000000000000L
 
 
 # direct methods
@@ -16,22 +16,6 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
-.end method
-
-.method public static aj()[B
-    .locals 3
-
-    const/16 v0, 0x10
-
-    new-array v0, v0, [B
-
-    const/4 v1, 0x0
-
-    const/16 v2, -0x80
-
-    aput-byte v2, v0, v1
-
-    return-object v0
 .end method
 
 .method public static bio([J[J)V
@@ -132,38 +116,6 @@
     return-void
 .end method
 
-.method public static bj()[I
-    .locals 3
-
-    const/4 v0, 0x4
-
-    new-array v0, v0, [I
-
-    const/4 v1, 0x0
-
-    const/high16 v2, -0x80000000
-
-    aput v2, v0, v1
-
-    return-object v0
-.end method
-
-.method public static cj()[J
-    .locals 4
-
-    const/4 v0, 0x2
-
-    new-array v0, v0, [J
-
-    const/4 v1, 0x0
-
-    const-wide/high16 v2, -0x8000000000000000L
-
-    aput-wide v2, v0, v1
-
-    return-object v0
-.end method
-
 .method public static cno([J[J)V
     .locals 13
 
@@ -212,7 +164,55 @@
     return-void
 .end method
 
-.method public static dj()[J
+.method public static ej()[B
+    .locals 3
+
+    const/16 v0, 0x10
+
+    new-array v0, v0, [B
+
+    const/4 v1, 0x0
+
+    const/16 v2, -0x80
+
+    aput-byte v2, v0, v1
+
+    return-object v0
+.end method
+
+.method public static fj()[I
+    .locals 3
+
+    const/4 v0, 0x4
+
+    new-array v0, v0, [I
+
+    const/4 v1, 0x0
+
+    const/high16 v2, -0x80000000
+
+    aput v2, v0, v1
+
+    return-object v0
+.end method
+
+.method public static gj()[J
+    .locals 4
+
+    const/4 v0, 0x2
+
+    new-array v0, v0, [J
+
+    const/4 v1, 0x0
+
+    const-wide/high16 v2, -0x8000000000000000L
+
+    aput-wide v2, v0, v1
+
+    return-object v0
+.end method
+
+.method public static hj()[J
     .locals 4
 
     const/4 v0, 0x2

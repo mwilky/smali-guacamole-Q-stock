@@ -436,7 +436,7 @@
 
     iget-object v0, p0, Lcom/oneplus/server/OnePlusService;->mOnePlusThemeController:Lcom/oneplus/server/zta/sis;
 
-    invoke-virtual {v0}, Lcom/oneplus/server/zta/sis;->Df()V
+    invoke-virtual {v0}, Lcom/oneplus/server/zta/sis;->Hf()V
 
     invoke-static {}, Lcom/android/server/fto;->getInstance()Lcom/android/server/fto;
 

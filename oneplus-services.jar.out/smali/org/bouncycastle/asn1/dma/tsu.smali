@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field private Fpa:Lorg/bouncycastle/asn1/bvj;
+.field private Dqa:Lorg/bouncycastle/asn1/bvj;
 
-.field private Gpa:Lorg/bouncycastle/asn1/ssp;
+.field private Eqa:Lorg/bouncycastle/asn1/ssp;
 
 
 # direct methods
@@ -15,9 +15,9 @@
 
     invoke-direct {p0}, Lorg/bouncycastle/asn1/oif;-><init>()V
 
-    iput-object p1, p0, Lorg/bouncycastle/asn1/dma/tsu;->Fpa:Lorg/bouncycastle/asn1/bvj;
+    iput-object p1, p0, Lorg/bouncycastle/asn1/dma/tsu;->Dqa:Lorg/bouncycastle/asn1/bvj;
 
-    iput-object p2, p0, Lorg/bouncycastle/asn1/dma/tsu;->Gpa:Lorg/bouncycastle/asn1/ssp;
+    iput-object p2, p0, Lorg/bouncycastle/asn1/dma/tsu;->Eqa:Lorg/bouncycastle/asn1/ssp;
 
     return-void
 .end method
@@ -35,7 +35,7 @@
 
     check-cast v0, Lorg/bouncycastle/asn1/bvj;
 
-    iput-object v0, p0, Lorg/bouncycastle/asn1/dma/tsu;->Fpa:Lorg/bouncycastle/asn1/bvj;
+    iput-object v0, p0, Lorg/bouncycastle/asn1/dma/tsu;->Dqa:Lorg/bouncycastle/asn1/bvj;
 
     const/4 v0, 0x1
 
@@ -49,7 +49,7 @@
 
     move-result-object p1
 
-    iput-object p1, p0, Lorg/bouncycastle/asn1/dma/tsu;->Gpa:Lorg/bouncycastle/asn1/ssp;
+    iput-object p1, p0, Lorg/bouncycastle/asn1/dma/tsu;->Eqa:Lorg/bouncycastle/asn1/ssp;
 
     return-void
 .end method
@@ -86,18 +86,18 @@
 
 
 # virtual methods
-.method public _g()Lorg/bouncycastle/asn1/bvj;
+.method public dh()Lorg/bouncycastle/asn1/bvj;
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/asn1/dma/tsu;->Fpa:Lorg/bouncycastle/asn1/bvj;
+    iget-object p0, p0, Lorg/bouncycastle/asn1/dma/tsu;->Dqa:Lorg/bouncycastle/asn1/bvj;
 
     return-object p0
 .end method
 
-.method public ah()Lorg/bouncycastle/asn1/ssp;
+.method public eh()Lorg/bouncycastle/asn1/ssp;
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/asn1/dma/tsu;->Gpa:Lorg/bouncycastle/asn1/ssp;
+    iget-object p0, p0, Lorg/bouncycastle/asn1/dma/tsu;->Eqa:Lorg/bouncycastle/asn1/ssp;
 
     return-object p0
 .end method
@@ -109,13 +109,13 @@
 
     invoke-direct {v0}, Lorg/bouncycastle/asn1/cno;-><init>()V
 
-    iget-object v1, p0, Lorg/bouncycastle/asn1/dma/tsu;->Fpa:Lorg/bouncycastle/asn1/bvj;
+    iget-object v1, p0, Lorg/bouncycastle/asn1/dma/tsu;->Dqa:Lorg/bouncycastle/asn1/bvj;
 
     invoke-virtual {v0, v1}, Lorg/bouncycastle/asn1/cno;->you(Lorg/bouncycastle/asn1/ssp;)V
 
     new-instance v1, Lorg/bouncycastle/asn1/L;
 
-    iget-object p0, p0, Lorg/bouncycastle/asn1/dma/tsu;->Gpa:Lorg/bouncycastle/asn1/ssp;
+    iget-object p0, p0, Lorg/bouncycastle/asn1/dma/tsu;->Eqa:Lorg/bouncycastle/asn1/ssp;
 
     const/4 v2, 0x0
 

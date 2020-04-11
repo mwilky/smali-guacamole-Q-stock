@@ -11,15 +11,15 @@
 
 
 # instance fields
-.field private EY:Lcom/oneplus/android/server/alertslider/AlertSliderHw;
+.field private AZ:Lcom/oneplus/android/server/alertslider/rtg;
 
-.field private FY:Lcom/oneplus/android/server/alertslider/rtg;
-
-.field private GY:Lcom/oneplus/android/server/alertslider/rtg;
+.field private BZ:Lcom/oneplus/android/server/alertslider/rtg;
 
 .field private mContext:Landroid/content/Context;
 
-.field private wY:Lcom/oneplus/android/server/alertslider/zta;
+.field private rZ:Lcom/oneplus/android/server/alertslider/zta;
+
+.field private zZ:Lcom/oneplus/android/server/alertslider/AlertSliderHw;
 
 
 # direct methods
@@ -36,7 +36,7 @@
 .method public getAlertSliderMode()I
     .locals 0
 
-    iget-object p0, p0, Lcom/oneplus/android/server/alertslider/tsu;->wY:Lcom/oneplus/android/server/alertslider/zta;
+    iget-object p0, p0, Lcom/oneplus/android/server/alertslider/tsu;->rZ:Lcom/oneplus/android/server/alertslider/zta;
 
     if-eqz p0, :cond_0
 
@@ -64,7 +64,7 @@
 
     invoke-direct {p1, v0, p2}, Lcom/oneplus/android/server/alertslider/you;-><init>(Landroid/content/Context;Lcom/android/server/audio/AudioService;)V
 
-    iput-object p1, p0, Lcom/oneplus/android/server/alertslider/tsu;->FY:Lcom/oneplus/android/server/alertslider/rtg;
+    iput-object p1, p0, Lcom/oneplus/android/server/alertslider/tsu;->AZ:Lcom/oneplus/android/server/alertslider/rtg;
 
     new-instance p1, Lcom/oneplus/android/server/alertslider/cno;
 
@@ -72,7 +72,7 @@
 
     invoke-direct {p1, v0, p2}, Lcom/oneplus/android/server/alertslider/cno;-><init>(Landroid/content/Context;Lcom/android/server/audio/AudioService;)V
 
-    iput-object p1, p0, Lcom/oneplus/android/server/alertslider/tsu;->GY:Lcom/oneplus/android/server/alertslider/rtg;
+    iput-object p1, p0, Lcom/oneplus/android/server/alertslider/tsu;->BZ:Lcom/oneplus/android/server/alertslider/rtg;
 
     new-instance p1, Lcom/oneplus/android/server/alertslider/zta;
 
@@ -80,17 +80,17 @@
 
     invoke-direct {p1, p2}, Lcom/oneplus/android/server/alertslider/zta;-><init>(Landroid/content/Context;)V
 
-    iput-object p1, p0, Lcom/oneplus/android/server/alertslider/tsu;->wY:Lcom/oneplus/android/server/alertslider/zta;
+    iput-object p1, p0, Lcom/oneplus/android/server/alertslider/tsu;->rZ:Lcom/oneplus/android/server/alertslider/zta;
 
-    iget-object p1, p0, Lcom/oneplus/android/server/alertslider/tsu;->wY:Lcom/oneplus/android/server/alertslider/zta;
+    iget-object p1, p0, Lcom/oneplus/android/server/alertslider/tsu;->rZ:Lcom/oneplus/android/server/alertslider/zta;
 
-    iget-object p2, p0, Lcom/oneplus/android/server/alertslider/tsu;->FY:Lcom/oneplus/android/server/alertslider/rtg;
+    iget-object p2, p0, Lcom/oneplus/android/server/alertslider/tsu;->AZ:Lcom/oneplus/android/server/alertslider/rtg;
 
     invoke-virtual {p1, p2}, Lcom/oneplus/android/server/alertslider/zta;->zta(Lcom/oneplus/android/server/alertslider/rtg;)V
 
-    iget-object p1, p0, Lcom/oneplus/android/server/alertslider/tsu;->wY:Lcom/oneplus/android/server/alertslider/zta;
+    iget-object p1, p0, Lcom/oneplus/android/server/alertslider/tsu;->rZ:Lcom/oneplus/android/server/alertslider/zta;
 
-    iget-object p2, p0, Lcom/oneplus/android/server/alertslider/tsu;->GY:Lcom/oneplus/android/server/alertslider/rtg;
+    iget-object p2, p0, Lcom/oneplus/android/server/alertslider/tsu;->BZ:Lcom/oneplus/android/server/alertslider/rtg;
 
     invoke-virtual {p1, p2}, Lcom/oneplus/android/server/alertslider/zta;->zta(Lcom/oneplus/android/server/alertslider/rtg;)V
 
@@ -98,13 +98,13 @@
 
     iget-object p2, p0, Lcom/oneplus/android/server/alertslider/tsu;->mContext:Landroid/content/Context;
 
-    iget-object v0, p0, Lcom/oneplus/android/server/alertslider/tsu;->wY:Lcom/oneplus/android/server/alertslider/zta;
+    iget-object v0, p0, Lcom/oneplus/android/server/alertslider/tsu;->rZ:Lcom/oneplus/android/server/alertslider/zta;
 
     invoke-direct {p1, p2, v0}, Lcom/oneplus/android/server/alertslider/AlertSliderHw;-><init>(Landroid/content/Context;Lcom/oneplus/android/server/alertslider/zta;)V
 
-    iput-object p1, p0, Lcom/oneplus/android/server/alertslider/tsu;->EY:Lcom/oneplus/android/server/alertslider/AlertSliderHw;
+    iput-object p1, p0, Lcom/oneplus/android/server/alertslider/tsu;->zZ:Lcom/oneplus/android/server/alertslider/AlertSliderHw;
 
-    iget-object p0, p0, Lcom/oneplus/android/server/alertslider/tsu;->EY:Lcom/oneplus/android/server/alertslider/AlertSliderHw;
+    iget-object p0, p0, Lcom/oneplus/android/server/alertslider/tsu;->zZ:Lcom/oneplus/android/server/alertslider/AlertSliderHw;
 
     invoke-virtual {p0}, Lcom/oneplus/android/server/alertslider/AlertSliderHw;->init()Z
 

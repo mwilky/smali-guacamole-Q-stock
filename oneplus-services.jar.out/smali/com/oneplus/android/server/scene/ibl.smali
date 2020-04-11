@@ -18,9 +18,9 @@
 
 
 # instance fields
-.field final synthetic aea:I
+.field final synthetic Wea:I
 
-.field final synthetic bea:Ljava/lang/String;
+.field final synthetic Xea:Ljava/lang/String;
 
 .field final synthetic this$0:Lcom/oneplus/android/server/scene/OemSceneCallBlock;
 
@@ -31,9 +31,9 @@
 
     iput-object p1, p0, Lcom/oneplus/android/server/scene/ibl;->this$0:Lcom/oneplus/android/server/scene/OemSceneCallBlock;
 
-    iput p2, p0, Lcom/oneplus/android/server/scene/ibl;->aea:I
+    iput p2, p0, Lcom/oneplus/android/server/scene/ibl;->Wea:I
 
-    iput-object p3, p0, Lcom/oneplus/android/server/scene/ibl;->bea:Ljava/lang/String;
+    iput-object p3, p0, Lcom/oneplus/android/server/scene/ibl;->Xea:Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -74,11 +74,11 @@
 
     iget-object p1, p0, Lcom/oneplus/android/server/scene/ibl;->this$0:Lcom/oneplus/android/server/scene/OemSceneCallBlock;
 
-    iget p2, p0, Lcom/oneplus/android/server/scene/ibl;->aea:I
+    iget p2, p0, Lcom/oneplus/android/server/scene/ibl;->Wea:I
 
-    iget-object p0, p0, Lcom/oneplus/android/server/scene/ibl;->bea:Ljava/lang/String;
+    iget-object p0, p0, Lcom/oneplus/android/server/scene/ibl;->Xea:Ljava/lang/String;
 
-    invoke-static {p1, p2, p0}, Lcom/oneplus/android/server/scene/OemSceneCallBlock;->access$200(Lcom/oneplus/android/server/scene/OemSceneCallBlock;ILjava/lang/String;)V
+    invoke-static {p1, p2, p0}, Lcom/oneplus/android/server/scene/OemSceneCallBlock;->access$400(Lcom/oneplus/android/server/scene/OemSceneCallBlock;ILjava/lang/String;)V
 
     :cond_1
     return-void

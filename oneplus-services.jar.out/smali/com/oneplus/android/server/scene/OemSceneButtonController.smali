@@ -517,7 +517,7 @@
 
     if-nez v0, :cond_4
 
-    sget-object v0, Lcom/oneplus/android/server/scene/OemSceneButtonController$Param;->bla:Lcom/oneplus/android/server/scene/OemSceneButtonController$Param;
+    sget-object v0, Lcom/oneplus/android/server/scene/OemSceneButtonController$Param;->bma:Lcom/oneplus/android/server/scene/OemSceneButtonController$Param;
 
     invoke-virtual {v0}, Ljava/lang/Enum;->name()Ljava/lang/String;
 
@@ -544,7 +544,7 @@
 
     if-nez p1, :cond_5
 
-    sget-object p1, Lcom/oneplus/android/server/scene/OemSceneButtonController$Param;->bla:Lcom/oneplus/android/server/scene/OemSceneButtonController$Param;
+    sget-object p1, Lcom/oneplus/android/server/scene/OemSceneButtonController$Param;->bma:Lcom/oneplus/android/server/scene/OemSceneButtonController$Param;
 
     invoke-virtual {p1}, Ljava/lang/Enum;->name()Ljava/lang/String;
 
@@ -571,7 +571,7 @@
 
     if-nez p1, :cond_6
 
-    sget-object p1, Lcom/oneplus/android/server/scene/OemSceneButtonController$Param;->bla:Lcom/oneplus/android/server/scene/OemSceneButtonController$Param;
+    sget-object p1, Lcom/oneplus/android/server/scene/OemSceneButtonController$Param;->bma:Lcom/oneplus/android/server/scene/OemSceneButtonController$Param;
 
     invoke-virtual {p1}, Ljava/lang/Enum;->name()Ljava/lang/String;
 
@@ -1158,7 +1158,7 @@
     :cond_1
     if-eqz p1, :cond_2
 
-    sget-object p1, Lcom/oneplus/android/server/scene/OemSceneButtonController$KeyLockMode;->Wha:Lcom/oneplus/android/server/scene/OemSceneButtonController$KeyLockMode;
+    sget-object p1, Lcom/oneplus/android/server/scene/OemSceneButtonController$KeyLockMode;->Via:Lcom/oneplus/android/server/scene/OemSceneButtonController$KeyLockMode;
 
     goto :goto_0
 

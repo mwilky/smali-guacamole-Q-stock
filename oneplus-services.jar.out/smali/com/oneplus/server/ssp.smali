@@ -8,11 +8,11 @@
 
 .field public static final IN_USING:Z = true
 
-.field private static final Jo:Ljava/lang/String; = "deviceidle"
+.field private static Jha:Landroid/app/PendingIntent; = null
 
-.field private static Kga:Landroid/app/PendingIntent; = null
+.field private static final Kha:Ljava/lang/String; = "com.oneplus.android.screenOffCheckProcessState"
 
-.field private static final Lga:Ljava/lang/String; = "com.oneplus.android.screenOffCheckProcessState"
+.field private static final No:Ljava/lang/String; = "deviceidle"
 
 .field public static final TAG:Ljava/lang/String; = "DozeManager"
 
@@ -26,13 +26,13 @@
 
 
 # instance fields
+.field Ad:Landroid/content/BroadcastReceiver;
+
 .field private mActivityManager:Lcom/android/server/am/ActivityManagerService;
 
 .field private mAudioManager:Landroid/media/AudioManager;
 
 .field private mDeviceIdleService:Landroid/os/IDeviceIdleController;
-
-.field xd:Landroid/content/BroadcastReceiver;
 
 
 # direct methods
@@ -63,7 +63,7 @@
 
     invoke-direct {v0, p0}, Lcom/oneplus/server/rtg;-><init>(Lcom/oneplus/server/ssp;)V
 
-    iput-object v0, p0, Lcom/oneplus/server/ssp;->xd:Landroid/content/BroadcastReceiver;
+    iput-object v0, p0, Lcom/oneplus/server/ssp;->Ad:Landroid/content/BroadcastReceiver;
 
     const-string v0, "deviceidle"
 
@@ -80,7 +80,7 @@
     return-void
 .end method
 
-.method private Ic(Ljava/lang/String;)[Ljava/lang/String;
+.method private Lc(Ljava/lang/String;)[Ljava/lang/String;
     .locals 2
 
     sget-boolean p0, Lcom/oneplus/server/ssp;->DEBUG:Z
@@ -139,7 +139,7 @@
     return-object p0
 .end method
 
-.method private Ks()[Ljava/lang/String;
+.method private Us()[Ljava/lang/String;
     .locals 2
 
     iget-object v0, p0, Lcom/oneplus/server/ssp;->mAudioManager:Landroid/media/AudioManager;
@@ -158,17 +158,17 @@
     const-string v0, ":0"
 
     :goto_0
-    invoke-direct {p0, v0}, Lcom/oneplus/server/ssp;->Ic(Ljava/lang/String;)[Ljava/lang/String;
+    invoke-direct {p0, v0}, Lcom/oneplus/server/ssp;->Lc(Ljava/lang/String;)[Ljava/lang/String;
 
     move-result-object p0
 
     return-object p0
 .end method
 
-.method private Ls()V
+.method private Vs()V
     .locals 4
 
-    invoke-direct {p0}, Lcom/oneplus/server/ssp;->Ks()[Ljava/lang/String;
+    invoke-direct {p0}, Lcom/oneplus/server/ssp;->Us()[Ljava/lang/String;
 
     move-result-object v0
 
@@ -261,7 +261,7 @@
 
     if-lt v2, v3, :cond_2
 
-    invoke-direct {p0, v2}, Lcom/oneplus/server/ssp;->dc(I)Z
+    invoke-direct {p0, v2}, Lcom/oneplus/server/ssp;->hc(I)Z
 
     move-result v3
 
@@ -273,7 +273,7 @@
 
     if-nez v3, :cond_2
 
-    invoke-direct {p0, v2}, Lcom/oneplus/server/ssp;->ec(I)V
+    invoke-direct {p0, v2}, Lcom/oneplus/server/ssp;->ic(I)V
 
     :cond_2
     :goto_1
@@ -296,7 +296,7 @@
 .method static synthetic access$100()Landroid/app/PendingIntent;
     .locals 1
 
-    sget-object v0, Lcom/oneplus/server/ssp;->Kga:Landroid/app/PendingIntent;
+    sget-object v0, Lcom/oneplus/server/ssp;->Jha:Landroid/app/PendingIntent;
 
     return-object v0
 .end method
@@ -309,7 +309,26 @@
     return-object v0
 .end method
 
-.method private dc(I)Z
+.method public static getInstance()Lcom/oneplus/server/ssp;
+    .locals 1
+
+    sget-object v0, Lcom/oneplus/server/ssp;->mInstance:Lcom/oneplus/server/ssp;
+
+    if-nez v0, :cond_0
+
+    new-instance v0, Lcom/oneplus/server/ssp;
+
+    invoke-direct {v0}, Lcom/oneplus/server/ssp;-><init>()V
+
+    sput-object v0, Lcom/oneplus/server/ssp;->mInstance:Lcom/oneplus/server/ssp;
+
+    :cond_0
+    sget-object v0, Lcom/oneplus/server/ssp;->mInstance:Lcom/oneplus/server/ssp;
+
+    return-object v0
+.end method
+
+.method private hc(I)Z
     .locals 4
 
     const-string v0, "DozeManager"
@@ -408,7 +427,7 @@
     return p0
 .end method
 
-.method private ec(I)V
+.method private ic(I)V
     .locals 5
 
     iget-object v0, p0, Lcom/oneplus/server/ssp;->mActivityManager:Lcom/android/server/am/ActivityManagerService;
@@ -471,7 +490,7 @@
     throw p0
 .end method
 
-.method private en()[Ljava/lang/String;
+.method private in()[Ljava/lang/String;
     .locals 2
 
     iget-object v0, p0, Lcom/oneplus/server/ssp;->mAudioManager:Landroid/media/AudioManager;
@@ -490,30 +509,11 @@
     const-string v0, ":0"
 
     :goto_0
-    invoke-direct {p0, v0}, Lcom/oneplus/server/ssp;->Ic(Ljava/lang/String;)[Ljava/lang/String;
+    invoke-direct {p0, v0}, Lcom/oneplus/server/ssp;->Lc(Ljava/lang/String;)[Ljava/lang/String;
 
     move-result-object p0
 
     return-object p0
-.end method
-
-.method public static getInstance()Lcom/oneplus/server/ssp;
-    .locals 1
-
-    sget-object v0, Lcom/oneplus/server/ssp;->mInstance:Lcom/oneplus/server/ssp;
-
-    if-nez v0, :cond_0
-
-    new-instance v0, Lcom/oneplus/server/ssp;
-
-    invoke-direct {v0}, Lcom/oneplus/server/ssp;-><init>()V
-
-    sput-object v0, Lcom/oneplus/server/ssp;->mInstance:Lcom/oneplus/server/ssp;
-
-    :cond_0
-    sget-object v0, Lcom/oneplus/server/ssp;->mInstance:Lcom/oneplus/server/ssp;
-
-    return-object v0
 .end method
 
 .method private isMusicPlaying()Z
@@ -640,11 +640,11 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/oneplus/server/ssp;->Kga:Landroid/app/PendingIntent;
+    sput-object v0, Lcom/oneplus/server/ssp;->Jha:Landroid/app/PendingIntent;
 
     invoke-virtual {p2, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
-    iget-object p0, p0, Lcom/oneplus/server/ssp;->xd:Landroid/content/BroadcastReceiver;
+    iget-object p0, p0, Lcom/oneplus/server/ssp;->Ad:Landroid/content/BroadcastReceiver;
 
     invoke-virtual {p1, p0, p2}, Landroid/content/Context;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
 
@@ -666,7 +666,7 @@
 .method static synthetic zta(Lcom/oneplus/server/ssp;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/oneplus/server/ssp;->Ls()V
+    invoke-direct {p0}, Lcom/oneplus/server/ssp;->Vs()V
 
     return-void
 .end method

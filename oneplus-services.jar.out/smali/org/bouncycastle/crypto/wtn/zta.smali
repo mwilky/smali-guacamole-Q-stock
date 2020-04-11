@@ -7,13 +7,13 @@
 
 
 # instance fields
-.field private Jza:[B
+.field private HAa:[B
 
 .field private key:Lorg/bouncycastle/crypto/wtn/cjf;
 
 .field private nonce:[B
 
-.field private uza:I
+.field private sAa:I
 
 
 # direct methods
@@ -40,31 +40,19 @@
 
     iput-object p1, p0, Lorg/bouncycastle/crypto/wtn/zta;->nonce:[B
 
-    iput p2, p0, Lorg/bouncycastle/crypto/wtn/zta;->uza:I
+    iput p2, p0, Lorg/bouncycastle/crypto/wtn/zta;->sAa:I
 
     invoke-static {p4}, Lorg/bouncycastle/util/zta;->vdb([B)[B
 
     move-result-object p1
 
-    iput-object p1, p0, Lorg/bouncycastle/crypto/wtn/zta;->Jza:[B
+    iput-object p1, p0, Lorg/bouncycastle/crypto/wtn/zta;->HAa:[B
 
     return-void
 .end method
 
 
 # virtual methods
-.method public ej()[B
-    .locals 0
-
-    iget-object p0, p0, Lorg/bouncycastle/crypto/wtn/zta;->Jza:[B
-
-    invoke-static {p0}, Lorg/bouncycastle/util/zta;->vdb([B)[B
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
 .method public getKey()Lorg/bouncycastle/crypto/wtn/cjf;
     .locals 0
 
@@ -85,10 +73,22 @@
     return-object p0
 .end method
 
+.method public ij()[B
+    .locals 0
+
+    iget-object p0, p0, Lorg/bouncycastle/crypto/wtn/zta;->HAa:[B
+
+    invoke-static {p0}, Lorg/bouncycastle/util/zta;->vdb([B)[B
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
 .method public you()I
     .locals 0
 
-    iget p0, p0, Lorg/bouncycastle/crypto/wtn/zta;->uza:I
+    iget p0, p0, Lorg/bouncycastle/crypto/wtn/zta;->sAa:I
 
     return p0
 .end method

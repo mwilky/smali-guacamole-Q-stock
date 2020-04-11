@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/oneplus/android/server/vdb;->ir()V
+    value = Lcom/oneplus/android/server/vdb;->tr()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;

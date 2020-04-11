@@ -33,11 +33,11 @@
 .method public zta(Lorg/bouncycastle/asn1/bvj/tsu;Lorg/bouncycastle/asn1/bvj/tsu;)Z
     .locals 4
 
-    invoke-virtual {p1}, Lorg/bouncycastle/asn1/bvj/tsu;->Ah()[Lorg/bouncycastle/asn1/bvj/sis;
+    invoke-virtual {p1}, Lorg/bouncycastle/asn1/bvj/tsu;->Eh()[Lorg/bouncycastle/asn1/bvj/sis;
 
     move-result-object p1
 
-    invoke-virtual {p2}, Lorg/bouncycastle/asn1/bvj/tsu;->Ah()[Lorg/bouncycastle/asn1/bvj/sis;
+    invoke-virtual {p2}, Lorg/bouncycastle/asn1/bvj/tsu;->Eh()[Lorg/bouncycastle/asn1/bvj/sis;
 
     move-result-object p2
 

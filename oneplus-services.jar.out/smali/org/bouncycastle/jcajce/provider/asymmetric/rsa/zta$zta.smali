@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field zla:Ljavax/crypto/spec/OAEPParameterSpec;
+.field yma:Ljavax/crypto/spec/OAEPParameterSpec;
 
 
 # direct methods
@@ -34,13 +34,13 @@
 
     new-instance v0, Lorg/bouncycastle/asn1/x509/zta;
 
-    iget-object v1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/zta$zta;->zla:Ljavax/crypto/spec/OAEPParameterSpec;
+    iget-object v1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/zta$zta;->yma:Ljavax/crypto/spec/OAEPParameterSpec;
 
     invoke-virtual {v1}, Ljavax/crypto/spec/OAEPParameterSpec;->getDigestAlgorithm()Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-static {v1}, Lorg/bouncycastle/jcajce/provider/util/tsu;->Ca(Ljava/lang/String;)Lorg/bouncycastle/asn1/bvj;
+    invoke-static {v1}, Lorg/bouncycastle/jcajce/provider/util/tsu;->Da(Ljava/lang/String;)Lorg/bouncycastle/asn1/bvj;
 
     move-result-object v1
 
@@ -48,7 +48,7 @@
 
     invoke-direct {v0, v1, v2}, Lorg/bouncycastle/asn1/x509/zta;-><init>(Lorg/bouncycastle/asn1/bvj;Lorg/bouncycastle/asn1/ssp;)V
 
-    iget-object v1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/zta$zta;->zla:Ljavax/crypto/spec/OAEPParameterSpec;
+    iget-object v1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/zta$zta;->yma:Ljavax/crypto/spec/OAEPParameterSpec;
 
     invoke-virtual {v1}, Ljavax/crypto/spec/OAEPParameterSpec;->getMGFParameters()Ljava/security/spec/AlgorithmParameterSpec;
 
@@ -66,7 +66,7 @@
 
     move-result-object v1
 
-    invoke-static {v1}, Lorg/bouncycastle/jcajce/provider/util/tsu;->Ca(Ljava/lang/String;)Lorg/bouncycastle/asn1/bvj;
+    invoke-static {v1}, Lorg/bouncycastle/jcajce/provider/util/tsu;->Da(Ljava/lang/String;)Lorg/bouncycastle/asn1/bvj;
 
     move-result-object v1
 
@@ -76,7 +76,7 @@
 
     invoke-direct {v2, v3, v4}, Lorg/bouncycastle/asn1/x509/zta;-><init>(Lorg/bouncycastle/asn1/bvj;Lorg/bouncycastle/asn1/ssp;)V
 
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/zta$zta;->zla:Ljavax/crypto/spec/OAEPParameterSpec;
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/zta$zta;->yma:Ljavax/crypto/spec/OAEPParameterSpec;
 
     invoke-virtual {p0}, Ljavax/crypto/spec/OAEPParameterSpec;->getPSource()Ljavax/crypto/spec/PSource;
 
@@ -126,7 +126,7 @@
 .method protected engineGetEncoded(Ljava/lang/String;)[B
     .locals 1
 
-    invoke-virtual {p0, p1}, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/zta;->sa(Ljava/lang/String;)Z
+    invoke-virtual {p0, p1}, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/zta;->ta(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -170,7 +170,7 @@
 
     check-cast p1, Ljavax/crypto/spec/OAEPParameterSpec;
 
-    iput-object p1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/zta$zta;->zla:Ljavax/crypto/spec/OAEPParameterSpec;
+    iput-object p1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/zta$zta;->yma:Ljavax/crypto/spec/OAEPParameterSpec;
 
     return-void
 
@@ -199,7 +199,7 @@
 
     move-result-object p1
 
-    invoke-virtual {p1}, Lorg/bouncycastle/asn1/dma/zgw;->mh()Lorg/bouncycastle/asn1/x509/zta;
+    invoke-virtual {p1}, Lorg/bouncycastle/asn1/dma/zgw;->qh()Lorg/bouncycastle/asn1/x509/zta;
 
     move-result-object v1
 
@@ -217,7 +217,7 @@
 
     new-instance v1, Ljavax/crypto/spec/OAEPParameterSpec;
 
-    invoke-virtual {p1}, Lorg/bouncycastle/asn1/dma/zgw;->lh()Lorg/bouncycastle/asn1/x509/zta;
+    invoke-virtual {p1}, Lorg/bouncycastle/asn1/dma/zgw;->ph()Lorg/bouncycastle/asn1/x509/zta;
 
     move-result-object v2
 
@@ -237,7 +237,7 @@
 
     new-instance v4, Ljava/security/spec/MGF1ParameterSpec;
 
-    invoke-virtual {p1}, Lorg/bouncycastle/asn1/dma/zgw;->mh()Lorg/bouncycastle/asn1/x509/zta;
+    invoke-virtual {p1}, Lorg/bouncycastle/asn1/dma/zgw;->qh()Lorg/bouncycastle/asn1/x509/zta;
 
     move-result-object v5
 
@@ -261,7 +261,7 @@
 
     new-instance v5, Ljavax/crypto/spec/PSource$PSpecified;
 
-    invoke-virtual {p1}, Lorg/bouncycastle/asn1/dma/zgw;->nh()Lorg/bouncycastle/asn1/x509/zta;
+    invoke-virtual {p1}, Lorg/bouncycastle/asn1/dma/zgw;->rh()Lorg/bouncycastle/asn1/x509/zta;
 
     move-result-object p1
 
@@ -281,7 +281,7 @@
 
     invoke-direct {v1, v2, v3, v4, v5}, Ljavax/crypto/spec/OAEPParameterSpec;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/security/spec/AlgorithmParameterSpec;Ljavax/crypto/spec/PSource;)V
 
-    iput-object v1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/zta$zta;->zla:Ljavax/crypto/spec/OAEPParameterSpec;
+    iput-object v1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/zta$zta;->yma:Ljavax/crypto/spec/OAEPParameterSpec;
 
     return-void
 
@@ -296,7 +296,7 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p1}, Lorg/bouncycastle/asn1/dma/zgw;->mh()Lorg/bouncycastle/asn1/x509/zta;
+    invoke-virtual {p1}, Lorg/bouncycastle/asn1/dma/zgw;->qh()Lorg/bouncycastle/asn1/x509/zta;
 
     move-result-object p1
 
@@ -423,7 +423,7 @@
 
     :cond_1
     :goto_0
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/zta$zta;->zla:Ljavax/crypto/spec/OAEPParameterSpec;
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/zta$zta;->yma:Ljavax/crypto/spec/OAEPParameterSpec;
 
     return-object p0
 .end method

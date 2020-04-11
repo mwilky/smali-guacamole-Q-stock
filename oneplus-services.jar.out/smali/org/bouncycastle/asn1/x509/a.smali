@@ -14,27 +14,27 @@
 
 .field public static final CESSATION_OF_OPERATION:I = 0x4
 
-.field public static final Hoa:I = 0x80
+.field public static final Fpa:I = 0x80
 
-.field public static final Ioa:I = 0x40
+.field public static final Gpa:I = 0x40
 
-.field public static final Joa:I = 0x20
+.field public static final Hpa:I = 0x20
+
+.field public static final Ipa:I = 0x10
+
+.field public static final Jpa:I = 0x8
 
 .field public static final KEY_COMPROMISE:I = 0x40
 
-.field public static final Koa:I = 0x10
+.field public static final Kpa:I = 0x4
 
-.field public static final Loa:I = 0x8
+.field public static final Lpa:I = 0x2
 
-.field public static final Moa:I = 0x4
+.field public static final Mpa:I = 0x1
 
-.field public static final Noa:I = 0x2
-
-.field public static final Ooa:I = 0x1
+.field public static final Npa:I = 0x8000
 
 .field public static final PRIVILEGE_WITHDRAWN:I = 0x1
-
-.field public static final Poa:I = 0x8000
 
 .field public static final SUPERSEDED:I = 0x8
 
@@ -49,7 +49,7 @@
 
     move-result-object v0
 
-    invoke-static {p1}, Lorg/bouncycastle/asn1/sis;->X(I)I
+    invoke-static {p1}, Lorg/bouncycastle/asn1/sis;->aa(I)I
 
     move-result p1
 
@@ -65,7 +65,7 @@
 
     move-result-object v0
 
-    invoke-virtual {p1}, Lorg/bouncycastle/asn1/sis;->ug()I
+    invoke-virtual {p1}, Lorg/bouncycastle/asn1/sis;->yg()I
 
     move-result p1
 

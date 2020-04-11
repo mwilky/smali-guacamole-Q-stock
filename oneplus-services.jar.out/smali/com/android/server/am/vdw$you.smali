@@ -64,14 +64,14 @@
 
     move-result-object v0
 
-    invoke-direct {v0, p0}, Lcom/android/server/am/vdw$you;->jb(I)Z
+    invoke-direct {v0, p0}, Lcom/android/server/am/vdw$you;->mb(I)Z
 
     move-result p0
 
     return p0
 .end method
 
-.method private jb(I)Z
+.method private mb(I)Z
     .locals 2
 
     invoke-static {p1}, Lcom/android/server/am/AppRecordManager;->hmo(I)Z

@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/server/policy/OpQuickPay;->focusChangedLw(Lcom/android/server/policy/WindowManagerPolicy$WindowState;Lcom/android/server/policy/WindowManagerPolicy$WindowState;)V
+    value = Lcom/android/server/policy/OpQuickPay;->notifyAppLaunchFailedLw(Ljava/lang/String;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -22,14 +22,18 @@
 
 .field final synthetic val$intent:Landroid/content/Intent;
 
+.field final synthetic val$pkg:Ljava/lang/String;
+
 
 # direct methods
-.method constructor <init>(Lcom/android/server/policy/OpQuickPay;Landroid/content/Intent;)V
+.method constructor <init>(Lcom/android/server/policy/OpQuickPay;Ljava/lang/String;Landroid/content/Intent;)V
     .locals 0
 
     iput-object p1, p0, Lcom/android/server/policy/cjf;->this$0:Lcom/android/server/policy/OpQuickPay;
 
-    iput-object p2, p0, Lcom/android/server/policy/cjf;->val$intent:Landroid/content/Intent;
+    iput-object p2, p0, Lcom/android/server/policy/cjf;->val$pkg:Ljava/lang/String;
+
+    iput-object p3, p0, Lcom/android/server/policy/cjf;->val$intent:Landroid/content/Intent;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -41,28 +45,20 @@
 .method public run()V
     .locals 3
 
-    invoke-static {}, Lcom/android/server/policy/OpQuickPay;->access$000()Ljava/lang/String;
+    :try_start_0
+    invoke-static {}, Landroid/app/ActivityManagerNative;->getDefault()Landroid/app/IActivityManager;
 
     move-result-object v0
 
-    new-instance v1, Ljava/lang/StringBuilder;
+    iget-object v1, p0, Lcom/android/server/policy/cjf;->val$pkg:Ljava/lang/String;
 
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+    const/4 v2, 0x0
 
-    const-string v2, "FocusWindow pid changed, restart: "
+    invoke-interface {v0, v1, v2}, Landroid/app/IActivityManager;->forceStopPackage(Ljava/lang/String;I)V
+    :try_end_0
+    .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget-object v2, p0, Lcom/android/server/policy/cjf;->val$intent:Landroid/content/Intent;
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-static {v0, v1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
-
+    :catch_0
     iget-object v0, p0, Lcom/android/server/policy/cjf;->this$0:Lcom/android/server/policy/OpQuickPay;
 
     iget-object v0, v0, Lcom/android/server/policy/OpQuickPay;->mOpPhoneWindowManager:Lcom/android/server/policy/OpPhoneWindowManager;

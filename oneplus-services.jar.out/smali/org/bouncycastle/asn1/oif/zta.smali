@@ -6,7 +6,7 @@
 # static fields
 .field private static final SAMPLE_SIZE:I = 0x20
 
-.field private static final _ua:Ljava/lang/String; = "    "
+.field private static final Yva:Ljava/lang/String; = "    "
 
 
 # direct methods
@@ -300,7 +300,7 @@
 
     invoke-virtual {v3, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p3}, Lorg/bouncycastle/asn1/zta;->tg()I
+    invoke-virtual {p3}, Lorg/bouncycastle/asn1/zta;->xg()I
 
     move-result p0
 
@@ -318,7 +318,7 @@
 
     invoke-virtual {v0, p0}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
 
-    invoke-virtual {v1}, Lorg/bouncycastle/asn1/obl;->Fg()Ljava/util/Enumeration;
+    invoke-virtual {v1}, Lorg/bouncycastle/asn1/obl;->Jg()Ljava/util/Enumeration;
 
     move-result-object p0
 
@@ -378,7 +378,7 @@
 
     invoke-virtual {p2, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p3}, Lorg/bouncycastle/asn1/zta;->tg()I
+    invoke-virtual {p3}, Lorg/bouncycastle/asn1/zta;->xg()I
 
     move-result p0
 
@@ -434,7 +434,7 @@
 
     check-cast v1, Lorg/bouncycastle/asn1/obl;
 
-    invoke-virtual {v1}, Lorg/bouncycastle/asn1/obl;->Fg()Ljava/util/Enumeration;
+    invoke-virtual {v1}, Lorg/bouncycastle/asn1/obl;->Jg()Ljava/util/Enumeration;
 
     move-result-object v1
 
@@ -581,7 +581,7 @@
 
     invoke-virtual {p3, p0}, Ljava/lang/StringBuffer;->append(C)Ljava/lang/StringBuffer;
 
-    invoke-virtual {p2}, Lorg/bouncycastle/asn1/lqr;->Gg()Z
+    invoke-virtual {p2}, Lorg/bouncycastle/asn1/lqr;->Kg()Z
 
     move-result p0
 
@@ -629,7 +629,7 @@
 
     check-cast v1, Lorg/bouncycastle/asn1/ear;
 
-    invoke-virtual {v1}, Lorg/bouncycastle/asn1/ear;->Fg()Ljava/util/Enumeration;
+    invoke-virtual {v1}, Lorg/bouncycastle/asn1/ear;->Jg()Ljava/util/Enumeration;
 
     move-result-object v1
 
@@ -846,7 +846,7 @@
 
     check-cast p2, Lorg/bouncycastle/asn1/tsu;
 
-    invoke-virtual {p2}, Lorg/bouncycastle/asn1/tsu;->vg()Z
+    invoke-virtual {p2}, Lorg/bouncycastle/asn1/tsu;->zg()Z
 
     move-result p0
 
@@ -909,7 +909,7 @@
 
     invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p2}, Lorg/bouncycastle/asn1/sis;->ug()I
+    invoke-virtual {p2}, Lorg/bouncycastle/asn1/sis;->yg()I
 
     move-result v3
 
@@ -1260,7 +1260,7 @@
 
     move-result-object p0
 
-    invoke-virtual {p2}, Lorg/bouncycastle/asn1/igw;->xg()Lorg/bouncycastle/asn1/bvj;
+    invoke-virtual {p2}, Lorg/bouncycastle/asn1/igw;->Bg()Lorg/bouncycastle/asn1/bvj;
 
     move-result-object v1
 
@@ -1276,7 +1276,7 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p2}, Lorg/bouncycastle/asn1/igw;->xg()Lorg/bouncycastle/asn1/bvj;
+    invoke-virtual {p2}, Lorg/bouncycastle/asn1/igw;->Bg()Lorg/bouncycastle/asn1/bvj;
 
     move-result-object v2
 
@@ -1295,7 +1295,7 @@
     invoke-virtual {p3, v1}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
 
     :cond_24
-    invoke-virtual {p2}, Lorg/bouncycastle/asn1/igw;->zg()Lorg/bouncycastle/asn1/ywr;
+    invoke-virtual {p2}, Lorg/bouncycastle/asn1/igw;->Dg()Lorg/bouncycastle/asn1/ywr;
 
     move-result-object v1
 
@@ -1311,7 +1311,7 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p2}, Lorg/bouncycastle/asn1/igw;->zg()Lorg/bouncycastle/asn1/ywr;
+    invoke-virtual {p2}, Lorg/bouncycastle/asn1/igw;->Dg()Lorg/bouncycastle/asn1/ywr;
 
     move-result-object v2
 
@@ -1330,13 +1330,13 @@
     invoke-virtual {p3, v1}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
 
     :cond_25
-    invoke-virtual {p2}, Lorg/bouncycastle/asn1/igw;->wg()Lorg/bouncycastle/asn1/vdb;
+    invoke-virtual {p2}, Lorg/bouncycastle/asn1/igw;->Ag()Lorg/bouncycastle/asn1/vdb;
 
     move-result-object v1
 
     if-eqz v1, :cond_26
 
-    invoke-virtual {p2}, Lorg/bouncycastle/asn1/igw;->wg()Lorg/bouncycastle/asn1/vdb;
+    invoke-virtual {p2}, Lorg/bouncycastle/asn1/igw;->Ag()Lorg/bouncycastle/asn1/vdb;
 
     move-result-object v1
 
@@ -1367,7 +1367,7 @@
 
     invoke-virtual {p3, v0}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
 
-    invoke-virtual {p2}, Lorg/bouncycastle/asn1/igw;->yg()Lorg/bouncycastle/asn1/vdb;
+    invoke-virtual {p2}, Lorg/bouncycastle/asn1/igw;->Cg()Lorg/bouncycastle/asn1/vdb;
 
     move-result-object p2
 

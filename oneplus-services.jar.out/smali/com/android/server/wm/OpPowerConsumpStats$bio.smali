@@ -27,7 +27,7 @@
 
 
 # instance fields
-.field aQ:Ljava/text/DecimalFormat;
+.field YQ:Ljava/text/DecimalFormat;
 
 .field public audioPowerMah:D
 
@@ -128,7 +128,7 @@
 
     invoke-direct {p1, v0}, Ljava/text/DecimalFormat;-><init>(Ljava/lang/String;)V
 
-    iput-object p1, p0, Lcom/android/server/wm/OpPowerConsumpStats$bio;->aQ:Ljava/text/DecimalFormat;
+    iput-object p1, p0, Lcom/android/server/wm/OpPowerConsumpStats$bio;->YQ:Ljava/text/DecimalFormat;
 
     return-void
 .end method
@@ -192,239 +192,13 @@
 
     invoke-direct {p1, v0}, Ljava/text/DecimalFormat;-><init>(Ljava/lang/String;)V
 
-    iput-object p1, p0, Lcom/android/server/wm/OpPowerConsumpStats$bio;->aQ:Ljava/text/DecimalFormat;
+    iput-object p1, p0, Lcom/android/server/wm/OpPowerConsumpStats$bio;->YQ:Ljava/text/DecimalFormat;
 
     iput-object p2, p0, Lcom/android/server/wm/OpPowerConsumpStats$bio;->uid:Ljava/lang/Integer;
 
-    invoke-direct {p0}, Lcom/android/server/wm/OpPowerConsumpStats$bio;->dp()V
+    invoke-direct {p0}, Lcom/android/server/wm/OpPowerConsumpStats$bio;->np()V
 
     return-void
-.end method
-
-.method private dp()V
-    .locals 2
-
-    iget-object v0, p0, Lcom/android/server/wm/OpPowerConsumpStats$bio;->uid:Ljava/lang/Integer;
-
-    invoke-virtual {v0}, Ljava/lang/Integer;->intValue()I
-
-    move-result v0
-
-    const/16 v1, -0x54
-
-    if-ge v0, v1, :cond_0
-
-    iget-object v0, p0, Lcom/android/server/wm/OpPowerConsumpStats$bio;->uid:Ljava/lang/Integer;
-
-    invoke-virtual {v0}, Ljava/lang/Integer;->intValue()I
-
-    move-result v0
-
-    const/16 v1, -0x64
-
-    if-le v0, v1, :cond_0
-
-    iget-object v0, p0, Lcom/android/server/wm/OpPowerConsumpStats$bio;->this$0:Lcom/android/server/wm/OpPowerConsumpStats;
-
-    iget-object v1, p0, Lcom/android/server/wm/OpPowerConsumpStats$bio;->uid:Ljava/lang/Integer;
-
-    invoke-virtual {v1}, Ljava/lang/Integer;->intValue()I
-
-    move-result v1
-
-    invoke-static {v0, v1}, Lcom/android/server/wm/OpPowerConsumpStats;->rtg(Lcom/android/server/wm/OpPowerConsumpStats;I)Ljava/lang/String;
-
-    move-result-object v0
-
-    iput-object v0, p0, Lcom/android/server/wm/OpPowerConsumpStats$bio;->drainType:Ljava/lang/String;
-
-    iget-object v0, p0, Lcom/android/server/wm/OpPowerConsumpStats$bio;->drainType:Ljava/lang/String;
-
-    iput-object v0, p0, Lcom/android/server/wm/OpPowerConsumpStats$bio;->pkgName:Ljava/lang/String;
-
-    :cond_0
-    return-void
-.end method
-
-.method private ep()Z
-    .locals 5
-
-    iget-object v0, p0, Lcom/android/server/wm/OpPowerConsumpStats$bio;->uid:Ljava/lang/Integer;
-
-    const/4 v1, 0x0
-
-    if-nez v0, :cond_0
-
-    return v1
-
-    :cond_0
-    invoke-virtual {v0}, Ljava/lang/Integer;->intValue()I
-
-    move-result v0
-
-    const/16 v2, -0x54
-
-    const/4 v3, 0x1
-
-    if-ge v0, v2, :cond_1
-
-    iget-object v0, p0, Lcom/android/server/wm/OpPowerConsumpStats$bio;->uid:Ljava/lang/Integer;
-
-    invoke-virtual {v0}, Ljava/lang/Integer;->intValue()I
-
-    move-result v0
-
-    const/16 v2, -0x64
-
-    if-le v0, v2, :cond_1
-
-    return v3
-
-    :cond_1
-    iget-object v0, p0, Lcom/android/server/wm/OpPowerConsumpStats$bio;->this$0:Lcom/android/server/wm/OpPowerConsumpStats;
-
-    invoke-static {v0}, Lcom/android/server/wm/OpPowerConsumpStats;->cno(Lcom/android/server/wm/OpPowerConsumpStats;)Landroid/content/Context;
-
-    move-result-object v0
-
-    if-nez v0, :cond_2
-
-    return v1
-
-    :cond_2
-    iget-object v0, p0, Lcom/android/server/wm/OpPowerConsumpStats$bio;->this$0:Lcom/android/server/wm/OpPowerConsumpStats;
-
-    invoke-static {v0}, Lcom/android/server/wm/OpPowerConsumpStats;->cno(Lcom/android/server/wm/OpPowerConsumpStats;)Landroid/content/Context;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
-
-    move-result-object v0
-
-    if-nez v0, :cond_3
-
-    return v1
-
-    :cond_3
-    iget-object v2, p0, Lcom/android/server/wm/OpPowerConsumpStats$bio;->uid:Ljava/lang/Integer;
-
-    invoke-virtual {v2}, Ljava/lang/Integer;->intValue()I
-
-    move-result v2
-
-    invoke-virtual {v0, v2}, Landroid/content/pm/PackageManager;->getNameForUid(I)Ljava/lang/String;
-
-    move-result-object v2
-
-    iput-object v2, p0, Lcom/android/server/wm/OpPowerConsumpStats$bio;->pkgName:Ljava/lang/String;
-
-    iget-object v2, p0, Lcom/android/server/wm/OpPowerConsumpStats$bio;->pkgName:Ljava/lang/String;
-
-    if-eqz v2, :cond_6
-
-    :try_start_0
-    invoke-virtual {v0, v2, v1}, Landroid/content/pm/PackageManager;->getPackageInfo(Ljava/lang/String;I)Landroid/content/pm/PackageInfo;
-
-    move-result-object v0
-
-    if-eqz v0, :cond_4
-
-    iget-object v2, v0, Landroid/content/pm/PackageInfo;->versionName:Ljava/lang/String;
-
-    iput-object v2, p0, Lcom/android/server/wm/OpPowerConsumpStats$bio;->versionName:Ljava/lang/String;
-
-    iget v0, v0, Landroid/content/pm/PackageInfo;->versionCode:I
-
-    iput v0, p0, Lcom/android/server/wm/OpPowerConsumpStats$bio;->versionCode:I
-    :try_end_0
-    .catch Landroid/content/pm/PackageManager$NameNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
-
-    goto :goto_0
-
-    :catch_0
-    move-exception v0
-
-    new-instance v2, Ljava/lang/StringBuilder;
-
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v4, "Cannot find package name:"
-
-    invoke-virtual {v2, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    const-string v2, "OPCS"
-
-    invoke-static {v2, v0}, Landroid/util/Slog;->e(Ljava/lang/String;Ljava/lang/String;)I
-
-    :cond_4
-    :goto_0
-    iget-object v0, p0, Lcom/android/server/wm/OpPowerConsumpStats$bio;->pkgName:Ljava/lang/String;
-
-    const-string v2, ":"
-
-    invoke-virtual {v0, v2}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
-
-    move-result-object v0
-
-    aget-object v0, v0, v1
-
-    iput-object v0, p0, Lcom/android/server/wm/OpPowerConsumpStats$bio;->pkgName:Ljava/lang/String;
-
-    const-string v0, "[a-zA-z]"
-
-    invoke-static {v0}, Ljava/util/regex/Pattern;->compile(Ljava/lang/String;)Ljava/util/regex/Pattern;
-
-    move-result-object v0
-
-    iget-object p0, p0, Lcom/android/server/wm/OpPowerConsumpStats$bio;->pkgName:Ljava/lang/String;
-
-    invoke-virtual {v0, p0}, Ljava/util/regex/Pattern;->matcher(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
-
-    move-result-object p0
-
-    invoke-virtual {p0}, Ljava/util/regex/Matcher;->find()Z
-
-    move-result p0
-
-    if-eqz p0, :cond_5
-
-    return v3
-
-    :cond_5
-    return v1
-
-    :cond_6
-    iget-object v0, p0, Lcom/android/server/wm/OpPowerConsumpStats$bio;->uid:Ljava/lang/Integer;
-
-    invoke-virtual {v0}, Ljava/lang/Integer;->intValue()I
-
-    move-result v0
-
-    if-nez v0, :cond_7
-
-    const-string v0, "kernel"
-
-    iput-object v0, p0, Lcom/android/server/wm/OpPowerConsumpStats$bio;->pkgName:Ljava/lang/String;
-
-    return v3
-
-    :cond_7
-    iget-object v0, p0, Lcom/android/server/wm/OpPowerConsumpStats$bio;->uid:Ljava/lang/Integer;
-
-    invoke-virtual {v0}, Ljava/lang/Integer;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    iput-object v0, p0, Lcom/android/server/wm/OpPowerConsumpStats$bio;->pkgName:Ljava/lang/String;
-
-    return v1
 .end method
 
 .method private les(IZ)Ljava/lang/String;
@@ -694,6 +468,232 @@
     move-result-object p0
 
     return-object p0
+.end method
+
+.method private np()V
+    .locals 2
+
+    iget-object v0, p0, Lcom/android/server/wm/OpPowerConsumpStats$bio;->uid:Ljava/lang/Integer;
+
+    invoke-virtual {v0}, Ljava/lang/Integer;->intValue()I
+
+    move-result v0
+
+    const/16 v1, -0x54
+
+    if-ge v0, v1, :cond_0
+
+    iget-object v0, p0, Lcom/android/server/wm/OpPowerConsumpStats$bio;->uid:Ljava/lang/Integer;
+
+    invoke-virtual {v0}, Ljava/lang/Integer;->intValue()I
+
+    move-result v0
+
+    const/16 v1, -0x64
+
+    if-le v0, v1, :cond_0
+
+    iget-object v0, p0, Lcom/android/server/wm/OpPowerConsumpStats$bio;->this$0:Lcom/android/server/wm/OpPowerConsumpStats;
+
+    iget-object v1, p0, Lcom/android/server/wm/OpPowerConsumpStats$bio;->uid:Ljava/lang/Integer;
+
+    invoke-virtual {v1}, Ljava/lang/Integer;->intValue()I
+
+    move-result v1
+
+    invoke-static {v0, v1}, Lcom/android/server/wm/OpPowerConsumpStats;->rtg(Lcom/android/server/wm/OpPowerConsumpStats;I)Ljava/lang/String;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lcom/android/server/wm/OpPowerConsumpStats$bio;->drainType:Ljava/lang/String;
+
+    iget-object v0, p0, Lcom/android/server/wm/OpPowerConsumpStats$bio;->drainType:Ljava/lang/String;
+
+    iput-object v0, p0, Lcom/android/server/wm/OpPowerConsumpStats$bio;->pkgName:Ljava/lang/String;
+
+    :cond_0
+    return-void
+.end method
+
+.method private op()Z
+    .locals 5
+
+    iget-object v0, p0, Lcom/android/server/wm/OpPowerConsumpStats$bio;->uid:Ljava/lang/Integer;
+
+    const/4 v1, 0x0
+
+    if-nez v0, :cond_0
+
+    return v1
+
+    :cond_0
+    invoke-virtual {v0}, Ljava/lang/Integer;->intValue()I
+
+    move-result v0
+
+    const/16 v2, -0x54
+
+    const/4 v3, 0x1
+
+    if-ge v0, v2, :cond_1
+
+    iget-object v0, p0, Lcom/android/server/wm/OpPowerConsumpStats$bio;->uid:Ljava/lang/Integer;
+
+    invoke-virtual {v0}, Ljava/lang/Integer;->intValue()I
+
+    move-result v0
+
+    const/16 v2, -0x64
+
+    if-le v0, v2, :cond_1
+
+    return v3
+
+    :cond_1
+    iget-object v0, p0, Lcom/android/server/wm/OpPowerConsumpStats$bio;->this$0:Lcom/android/server/wm/OpPowerConsumpStats;
+
+    invoke-static {v0}, Lcom/android/server/wm/OpPowerConsumpStats;->cno(Lcom/android/server/wm/OpPowerConsumpStats;)Landroid/content/Context;
+
+    move-result-object v0
+
+    if-nez v0, :cond_2
+
+    return v1
+
+    :cond_2
+    iget-object v0, p0, Lcom/android/server/wm/OpPowerConsumpStats$bio;->this$0:Lcom/android/server/wm/OpPowerConsumpStats;
+
+    invoke-static {v0}, Lcom/android/server/wm/OpPowerConsumpStats;->cno(Lcom/android/server/wm/OpPowerConsumpStats;)Landroid/content/Context;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
+
+    move-result-object v0
+
+    if-nez v0, :cond_3
+
+    return v1
+
+    :cond_3
+    iget-object v2, p0, Lcom/android/server/wm/OpPowerConsumpStats$bio;->uid:Ljava/lang/Integer;
+
+    invoke-virtual {v2}, Ljava/lang/Integer;->intValue()I
+
+    move-result v2
+
+    invoke-virtual {v0, v2}, Landroid/content/pm/PackageManager;->getNameForUid(I)Ljava/lang/String;
+
+    move-result-object v2
+
+    iput-object v2, p0, Lcom/android/server/wm/OpPowerConsumpStats$bio;->pkgName:Ljava/lang/String;
+
+    iget-object v2, p0, Lcom/android/server/wm/OpPowerConsumpStats$bio;->pkgName:Ljava/lang/String;
+
+    if-eqz v2, :cond_6
+
+    :try_start_0
+    invoke-virtual {v0, v2, v1}, Landroid/content/pm/PackageManager;->getPackageInfo(Ljava/lang/String;I)Landroid/content/pm/PackageInfo;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_4
+
+    iget-object v2, v0, Landroid/content/pm/PackageInfo;->versionName:Ljava/lang/String;
+
+    iput-object v2, p0, Lcom/android/server/wm/OpPowerConsumpStats$bio;->versionName:Ljava/lang/String;
+
+    iget v0, v0, Landroid/content/pm/PackageInfo;->versionCode:I
+
+    iput v0, p0, Lcom/android/server/wm/OpPowerConsumpStats$bio;->versionCode:I
+    :try_end_0
+    .catch Landroid/content/pm/PackageManager$NameNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
+
+    goto :goto_0
+
+    :catch_0
+    move-exception v0
+
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v4, "Cannot find package name:"
+
+    invoke-virtual {v2, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    const-string v2, "OPCS"
+
+    invoke-static {v2, v0}, Landroid/util/Slog;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    :cond_4
+    :goto_0
+    iget-object v0, p0, Lcom/android/server/wm/OpPowerConsumpStats$bio;->pkgName:Ljava/lang/String;
+
+    const-string v2, ":"
+
+    invoke-virtual {v0, v2}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
+
+    move-result-object v0
+
+    aget-object v0, v0, v1
+
+    iput-object v0, p0, Lcom/android/server/wm/OpPowerConsumpStats$bio;->pkgName:Ljava/lang/String;
+
+    const-string v0, "[a-zA-z]"
+
+    invoke-static {v0}, Ljava/util/regex/Pattern;->compile(Ljava/lang/String;)Ljava/util/regex/Pattern;
+
+    move-result-object v0
+
+    iget-object p0, p0, Lcom/android/server/wm/OpPowerConsumpStats$bio;->pkgName:Ljava/lang/String;
+
+    invoke-virtual {v0, p0}, Ljava/util/regex/Pattern;->matcher(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
+
+    move-result-object p0
+
+    invoke-virtual {p0}, Ljava/util/regex/Matcher;->find()Z
+
+    move-result p0
+
+    if-eqz p0, :cond_5
+
+    return v3
+
+    :cond_5
+    return v1
+
+    :cond_6
+    iget-object v0, p0, Lcom/android/server/wm/OpPowerConsumpStats$bio;->uid:Ljava/lang/Integer;
+
+    invoke-virtual {v0}, Ljava/lang/Integer;->intValue()I
+
+    move-result v0
+
+    if-nez v0, :cond_7
+
+    const-string v0, "kernel"
+
+    iput-object v0, p0, Lcom/android/server/wm/OpPowerConsumpStats$bio;->pkgName:Ljava/lang/String;
+
+    return v3
+
+    :cond_7
+    iget-object v0, p0, Lcom/android/server/wm/OpPowerConsumpStats$bio;->uid:Ljava/lang/Integer;
+
+    invoke-virtual {v0}, Ljava/lang/Integer;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lcom/android/server/wm/OpPowerConsumpStats$bio;->pkgName:Ljava/lang/String;
+
+    return v1
 .end method
 
 .method private sis(Lcom/android/server/wm/OpPowerConsumpStats$bio;)Z
@@ -1177,7 +1177,7 @@
 .method static synthetic zta(Lcom/android/server/wm/OpPowerConsumpStats$bio;)Z
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/wm/OpPowerConsumpStats$bio;->ep()Z
+    invoke-direct {p0}, Lcom/android/server/wm/OpPowerConsumpStats$bio;->op()Z
 
     move-result p0
 

@@ -15,9 +15,9 @@
 
 
 # instance fields
-.field public final Ud:J
+.field public final Xd:J
 
-.field public final Vd:Ljava/lang/String;
+.field public final Yd:Ljava/lang/String;
 
 .field public final packageName:Ljava/lang/String;
 
@@ -34,9 +34,9 @@
 
     move-result-wide p1
 
-    iput-wide p1, p0, Lcom/android/server/ear$you;->Ud:J
+    iput-wide p1, p0, Lcom/android/server/ear$you;->Xd:J
 
-    iput-object p3, p0, Lcom/android/server/ear$you;->Vd:Ljava/lang/String;
+    iput-object p3, p0, Lcom/android/server/ear$you;->Yd:Ljava/lang/String;
 
     return-void
 .end method
@@ -60,7 +60,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lcom/android/server/ear$you;->Vd:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/server/ear$you;->Yd:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -76,7 +76,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-wide v1, p0, Lcom/android/server/ear$you;->Ud:J
+    iget-wide v1, p0, Lcom/android/server/ear$you;->Xd:J
 
     invoke-virtual {v0, v1, v2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 

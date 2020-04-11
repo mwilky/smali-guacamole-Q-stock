@@ -22,39 +22,39 @@
 
 .field private static final KEY_CIPHER:Ljava/lang/String; = "PBEWithSHAAnd3-KeyTripleDES-CBC"
 
+.field private static final Mma:I = 0x2
+
 .field static final NULL:I = 0x0
 
-.field private static final Nla:I = 0x2
+.field private static final Nma:I = 0x14
 
-.field private static final Ola:I = 0x14
+.field private static final Oma:Ljava/lang/String; = "PBEWithSHAAndTwofish-CBC"
 
-.field private static final Pla:Ljava/lang/String; = "PBEWithSHAAndTwofish-CBC"
+.field private static final Pma:I = 0x14
 
-.field private static final Qla:I = 0x14
+.field private static final Qma:I = 0x400
 
-.field private static final Rla:I = 0x400
+.field static final Rma:I = 0x1
 
 .field static final SEALED:I = 0x4
 
 .field static final SECRET:I = 0x3
 
-.field static final Sla:I = 0x1
+.field static final Sma:I = 0x0
 
-.field static final Tla:I = 0x0
+.field static final Tma:I = 0x1
 
-.field static final Ula:I = 0x1
-
-.field static final Vla:I = 0x2
+.field static final Uma:I = 0x2
 
 
 # instance fields
-.field protected Mla:Ljava/util/Hashtable;
+.field protected Lma:Ljava/util/Hashtable;
 
 .field private final helper:Lorg/bouncycastle/jcajce/tsu/tsu;
 
 .field protected version:I
 
-.field protected yla:Ljava/security/SecureRandom;
+.field protected xma:Ljava/security/SecureRandom;
 
 
 # direct methods
@@ -67,13 +67,13 @@
 
     invoke-direct {v0}, Ljava/util/Hashtable;-><init>()V
 
-    iput-object v0, p0, Lorg/bouncycastle/jcajce/you/sis/zta/zta;->Mla:Ljava/util/Hashtable;
+    iput-object v0, p0, Lorg/bouncycastle/jcajce/you/sis/zta/zta;->Lma:Ljava/util/Hashtable;
 
-    invoke-static {}, Lorg/bouncycastle/crypto/igw;->Ui()Ljava/security/SecureRandom;
+    invoke-static {}, Lorg/bouncycastle/crypto/igw;->Yi()Ljava/security/SecureRandom;
 
     move-result-object v0
 
-    iput-object v0, p0, Lorg/bouncycastle/jcajce/you/sis/zta/zta;->yla:Ljava/security/SecureRandom;
+    iput-object v0, p0, Lorg/bouncycastle/jcajce/you/sis/zta/zta;->xma:Ljava/security/SecureRandom;
 
     new-instance v0, Lorg/bouncycastle/jcajce/tsu/sis;
 
@@ -509,7 +509,7 @@
 .method public engineAliases()Ljava/util/Enumeration;
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/you/sis/zta/zta;->Mla:Ljava/util/Hashtable;
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/you/sis/zta/zta;->Lma:Ljava/util/Hashtable;
 
     invoke-virtual {p0}, Ljava/util/Hashtable;->keys()Ljava/util/Enumeration;
 
@@ -521,7 +521,7 @@
 .method public engineContainsAlias(Ljava/lang/String;)Z
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/you/sis/zta/zta;->Mla:Ljava/util/Hashtable;
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/you/sis/zta/zta;->Lma:Ljava/util/Hashtable;
 
     invoke-virtual {p0, p1}, Ljava/util/Hashtable;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -548,7 +548,7 @@
         }
     .end annotation
 
-    iget-object v0, p0, Lorg/bouncycastle/jcajce/you/sis/zta/zta;->Mla:Ljava/util/Hashtable;
+    iget-object v0, p0, Lorg/bouncycastle/jcajce/you/sis/zta/zta;->Lma:Ljava/util/Hashtable;
 
     invoke-virtual {v0, p1}, Ljava/util/Hashtable;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -559,7 +559,7 @@
     return-void
 
     :cond_0
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/you/sis/zta/zta;->Mla:Ljava/util/Hashtable;
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/you/sis/zta/zta;->Lma:Ljava/util/Hashtable;
 
     invoke-virtual {p0, p1}, Ljava/util/Hashtable;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -569,7 +569,7 @@
 .method public engineGetCertificate(Ljava/lang/String;)Ljava/security/cert/Certificate;
     .locals 1
 
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/you/sis/zta/zta;->Mla:Ljava/util/Hashtable;
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/you/sis/zta/zta;->Lma:Ljava/util/Hashtable;
 
     invoke-virtual {p0, p1}, Ljava/util/Hashtable;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -617,7 +617,7 @@
 .method public engineGetCertificateAlias(Ljava/security/cert/Certificate;)Ljava/lang/String;
     .locals 3
 
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/you/sis/zta/zta;->Mla:Ljava/util/Hashtable;
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/you/sis/zta/zta;->Lma:Ljava/util/Hashtable;
 
     invoke-virtual {p0}, Ljava/util/Hashtable;->elements()Ljava/util/Enumeration;
 
@@ -694,7 +694,7 @@
 .method public engineGetCertificateChain(Ljava/lang/String;)[Ljava/security/cert/Certificate;
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/you/sis/zta/zta;->Mla:Ljava/util/Hashtable;
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/you/sis/zta/zta;->Lma:Ljava/util/Hashtable;
 
     invoke-virtual {p0, p1}, Ljava/util/Hashtable;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -719,7 +719,7 @@
 .method public engineGetCreationDate(Ljava/lang/String;)Ljava/util/Date;
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/you/sis/zta/zta;->Mla:Ljava/util/Hashtable;
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/you/sis/zta/zta;->Lma:Ljava/util/Hashtable;
 
     invoke-virtual {p0, p1}, Ljava/util/Hashtable;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -750,7 +750,7 @@
         }
     .end annotation
 
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/you/sis/zta/zta;->Mla:Ljava/util/Hashtable;
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/you/sis/zta/zta;->Lma:Ljava/util/Hashtable;
 
     invoke-virtual {p0, p1}, Ljava/util/Hashtable;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -789,7 +789,7 @@
 .method public engineIsCertificateEntry(Ljava/lang/String;)Z
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/you/sis/zta/zta;->Mla:Ljava/util/Hashtable;
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/you/sis/zta/zta;->Lma:Ljava/util/Hashtable;
 
     invoke-virtual {p0, p1}, Ljava/util/Hashtable;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -818,7 +818,7 @@
 .method public engineIsKeyEntry(Ljava/lang/String;)Z
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/you/sis/zta/zta;->Mla:Ljava/util/Hashtable;
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/you/sis/zta/zta;->Lma:Ljava/util/Hashtable;
 
     invoke-virtual {p0, p1}, Ljava/util/Hashtable;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -852,7 +852,7 @@
         }
     .end annotation
 
-    iget-object v0, p0, Lorg/bouncycastle/jcajce/you/sis/zta/zta;->Mla:Ljava/util/Hashtable;
+    iget-object v0, p0, Lorg/bouncycastle/jcajce/you/sis/zta/zta;->Lma:Ljava/util/Hashtable;
 
     invoke-virtual {v0}, Ljava/util/Hashtable;->clear()V
 
@@ -950,7 +950,7 @@
     mul-int/lit8 p1, p1, 0x8
 
     :goto_1
-    invoke-virtual {v5, p1}, Lorg/bouncycastle/crypto/ssp/wtn;->da(I)Lorg/bouncycastle/crypto/kth;
+    invoke-virtual {v5, p1}, Lorg/bouncycastle/crypto/ssp/wtn;->ga(I)Lorg/bouncycastle/crypto/kth;
 
     move-result-object p1
 
@@ -991,7 +991,7 @@
     goto :goto_2
 
     :cond_4
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/you/sis/zta/zta;->Mla:Ljava/util/Hashtable;
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/you/sis/zta/zta;->Lma:Ljava/util/Hashtable;
 
     invoke-virtual {p0}, Ljava/util/Hashtable;->clear()V
 
@@ -1035,7 +1035,7 @@
         }
     .end annotation
 
-    iget-object v0, p0, Lorg/bouncycastle/jcajce/you/sis/zta/zta;->Mla:Ljava/util/Hashtable;
+    iget-object v0, p0, Lorg/bouncycastle/jcajce/you/sis/zta/zta;->Lma:Ljava/util/Hashtable;
 
     invoke-virtual {v0, p1}, Ljava/util/Hashtable;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -1078,7 +1078,7 @@
 
     :cond_1
     :goto_0
-    iget-object v0, p0, Lorg/bouncycastle/jcajce/you/sis/zta/zta;->Mla:Ljava/util/Hashtable;
+    iget-object v0, p0, Lorg/bouncycastle/jcajce/you/sis/zta/zta;->Lma:Ljava/util/Hashtable;
 
     new-instance v1, Lorg/bouncycastle/jcajce/you/sis/zta/zta$sis;
 
@@ -1117,7 +1117,7 @@
     :cond_1
     :goto_0
     :try_start_0
-    iget-object v0, p0, Lorg/bouncycastle/jcajce/you/sis/zta/zta;->Mla:Ljava/util/Hashtable;
+    iget-object v0, p0, Lorg/bouncycastle/jcajce/you/sis/zta/zta;->Lma:Ljava/util/Hashtable;
 
     new-instance v7, Lorg/bouncycastle/jcajce/you/sis/zta/zta$sis;
 
@@ -1163,7 +1163,7 @@
         }
     .end annotation
 
-    iget-object v0, p0, Lorg/bouncycastle/jcajce/you/sis/zta/zta;->Mla:Ljava/util/Hashtable;
+    iget-object v0, p0, Lorg/bouncycastle/jcajce/you/sis/zta/zta;->Lma:Ljava/util/Hashtable;
 
     new-instance v1, Lorg/bouncycastle/jcajce/you/sis/zta/zta$sis;
 
@@ -1177,7 +1177,7 @@
 .method public engineSize()I
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/you/sis/zta/zta;->Mla:Ljava/util/Hashtable;
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/you/sis/zta/zta;->Lma:Ljava/util/Hashtable;
 
     invoke-virtual {p0}, Ljava/util/Hashtable;->size()I
 
@@ -1202,7 +1202,7 @@
 
     new-array p1, p1, [B
 
-    iget-object v1, p0, Lorg/bouncycastle/jcajce/you/sis/zta/zta;->yla:Ljava/security/SecureRandom;
+    iget-object v1, p0, Lorg/bouncycastle/jcajce/you/sis/zta/zta;->xma:Ljava/security/SecureRandom;
 
     invoke-virtual {v1}, Ljava/security/SecureRandom;->nextInt()I
 
@@ -1212,7 +1212,7 @@
 
     add-int/lit16 v1, v1, 0x400
 
-    iget-object v2, p0, Lorg/bouncycastle/jcajce/you/sis/zta/zta;->yla:Ljava/security/SecureRandom;
+    iget-object v2, p0, Lorg/bouncycastle/jcajce/you/sis/zta/zta;->xma:Ljava/security/SecureRandom;
 
     invoke-virtual {v2, p1}, Ljava/security/SecureRandom;->nextBytes([B)V
 
@@ -1274,7 +1274,7 @@
     mul-int/lit8 p1, p1, 0x8
 
     :goto_0
-    invoke-virtual {v4, p1}, Lorg/bouncycastle/crypto/ssp/wtn;->da(I)Lorg/bouncycastle/crypto/kth;
+    invoke-virtual {v4, p1}, Lorg/bouncycastle/crypto/ssp/wtn;->ga(I)Lorg/bouncycastle/crypto/kth;
 
     move-result-object p1
 
@@ -1478,7 +1478,7 @@
 
     invoke-virtual {v0, v6}, Ljava/io/DataInputStream;->readFully([B)V
 
-    iget-object v8, p0, Lorg/bouncycastle/jcajce/you/sis/zta/zta;->Mla:Ljava/util/Hashtable;
+    iget-object v8, p0, Lorg/bouncycastle/jcajce/you/sis/zta/zta;->Lma:Ljava/util/Hashtable;
 
     new-instance v10, Lorg/bouncycastle/jcajce/you/sis/zta/zta$sis;
 
@@ -1503,7 +1503,7 @@
 
     move-result-object v11
 
-    iget-object v1, p0, Lorg/bouncycastle/jcajce/you/sis/zta/zta;->Mla:Ljava/util/Hashtable;
+    iget-object v1, p0, Lorg/bouncycastle/jcajce/you/sis/zta/zta;->Lma:Ljava/util/Hashtable;
 
     new-instance v2, Lorg/bouncycastle/jcajce/you/sis/zta/zta$sis;
 
@@ -1524,7 +1524,7 @@
 
     move-result-object v11
 
-    iget-object v1, p0, Lorg/bouncycastle/jcajce/you/sis/zta/zta;->Mla:Ljava/util/Hashtable;
+    iget-object v1, p0, Lorg/bouncycastle/jcajce/you/sis/zta/zta;->Lma:Ljava/util/Hashtable;
 
     new-instance v2, Lorg/bouncycastle/jcajce/you/sis/zta/zta$sis;
 
@@ -1560,7 +1560,7 @@
         }
     .end annotation
 
-    iget-object v0, p0, Lorg/bouncycastle/jcajce/you/sis/zta/zta;->Mla:Ljava/util/Hashtable;
+    iget-object v0, p0, Lorg/bouncycastle/jcajce/you/sis/zta/zta;->Lma:Ljava/util/Hashtable;
 
     invoke-virtual {v0}, Ljava/util/Hashtable;->elements()Ljava/util/Enumeration;
 
@@ -1715,7 +1715,7 @@
 .method public zta(Ljava/security/SecureRandom;)V
     .locals 0
 
-    iput-object p1, p0, Lorg/bouncycastle/jcajce/you/sis/zta/zta;->yla:Ljava/security/SecureRandom;
+    iput-object p1, p0, Lorg/bouncycastle/jcajce/you/sis/zta/zta;->xma:Ljava/security/SecureRandom;
 
     return-void
 .end method

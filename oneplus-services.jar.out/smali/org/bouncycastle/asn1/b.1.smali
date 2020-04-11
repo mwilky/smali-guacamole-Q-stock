@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field private lha:Lorg/bouncycastle/asn1/hmo;
+.field private kia:Lorg/bouncycastle/asn1/hmo;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lorg/bouncycastle/asn1/b;->lha:Lorg/bouncycastle/asn1/hmo;
+    iput-object p1, p0, Lorg/bouncycastle/asn1/b;->kia:Lorg/bouncycastle/asn1/hmo;
 
     return-void
 .end method
@@ -51,7 +51,7 @@
 
     new-instance v0, Lorg/bouncycastle/asn1/k;
 
-    iget-object p0, p0, Lorg/bouncycastle/asn1/b;->lha:Lorg/bouncycastle/asn1/hmo;
+    iget-object p0, p0, Lorg/bouncycastle/asn1/b;->kia:Lorg/bouncycastle/asn1/hmo;
 
     invoke-direct {v0, p0}, Lorg/bouncycastle/asn1/k;-><init>(Lorg/bouncycastle/asn1/hmo;)V
 

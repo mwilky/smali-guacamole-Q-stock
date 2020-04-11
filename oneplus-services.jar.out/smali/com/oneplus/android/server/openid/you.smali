@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field private final synthetic HC:Lcom/oneplus/android/server/openid/cno;
+.field private final synthetic GD:Lcom/oneplus/android/server/openid/cno;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lcom/oneplus/android/server/openid/you;->HC:Lcom/oneplus/android/server/openid/cno;
+    iput-object p1, p0, Lcom/oneplus/android/server/openid/you;->GD:Lcom/oneplus/android/server/openid/cno;
 
     return-void
 .end method
@@ -26,9 +26,9 @@
 .method public final run()V
     .locals 0
 
-    iget-object p0, p0, Lcom/oneplus/android/server/openid/you;->HC:Lcom/oneplus/android/server/openid/cno;
+    iget-object p0, p0, Lcom/oneplus/android/server/openid/you;->GD:Lcom/oneplus/android/server/openid/cno;
 
-    invoke-virtual {p0}, Lcom/oneplus/android/server/openid/cno;->Xe()V
+    invoke-virtual {p0}, Lcom/oneplus/android/server/openid/cno;->af()V
 
     return-void
 .end method

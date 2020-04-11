@@ -1,4 +1,4 @@
-.class final Lcom/android/server/am/r$kth;
+.class final Lcom/android/server/am/t$kth;
 .super Ljava/lang/Object;
 .source ""
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/server/am/r;
+    value = Lcom/android/server/am/t;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -20,7 +20,7 @@
     value = {
         "Ljava/lang/Object;",
         "Ljava/util/Comparator<",
-        "Lcom/android/server/am/r$bio;",
+        "Lcom/android/server/am/t$bio;",
         ">;"
     }
 .end annotation
@@ -35,10 +35,10 @@
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/android/server/am/q;)V
+.method synthetic constructor <init>(Lcom/android/server/am/s;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/am/r$kth;-><init>()V
+    invoke-direct {p0}, Lcom/android/server/am/t$kth;-><init>()V
 
     return-void
 .end method
@@ -48,21 +48,21 @@
 .method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 0
 
-    check-cast p1, Lcom/android/server/am/r$bio;
+    check-cast p1, Lcom/android/server/am/t$bio;
 
-    check-cast p2, Lcom/android/server/am/r$bio;
+    check-cast p2, Lcom/android/server/am/t$bio;
 
-    invoke-virtual {p0, p1, p2}, Lcom/android/server/am/r$kth;->zta(Lcom/android/server/am/r$bio;Lcom/android/server/am/r$bio;)I
+    invoke-virtual {p0, p1, p2}, Lcom/android/server/am/t$kth;->zta(Lcom/android/server/am/t$bio;Lcom/android/server/am/t$bio;)I
 
     move-result p0
 
     return p0
 .end method
 
-.method public zta(Lcom/android/server/am/r$bio;Lcom/android/server/am/r$bio;)I
+.method public zta(Lcom/android/server/am/t$bio;Lcom/android/server/am/t$bio;)I
     .locals 7
 
-    new-instance p0, Lcom/android/server/am/r$zta;
+    new-instance p0, Lcom/android/server/am/t$zta;
 
     const-wide/16 v1, 0x0
 
@@ -72,9 +72,9 @@
 
     move-object v0, p0
 
-    invoke-direct/range {v0 .. v6}, Lcom/android/server/am/r$zta;-><init>(DDD)V
+    invoke-direct/range {v0 .. v6}, Lcom/android/server/am/t$zta;-><init>(DDD)V
 
-    invoke-static {p1, p0}, Lcom/android/server/am/r;->zta(Lcom/android/server/am/r$bio;Lcom/android/server/am/r$zta;)D
+    invoke-static {p1, p0}, Lcom/android/server/am/t;->zta(Lcom/android/server/am/t$bio;Lcom/android/server/am/t$zta;)D
 
     move-result-wide p0
 
@@ -82,13 +82,13 @@
 
     move-result-object p0
 
-    new-instance p1, Lcom/android/server/am/r$zta;
+    new-instance p1, Lcom/android/server/am/t$zta;
 
     move-object v0, p1
 
-    invoke-direct/range {v0 .. v6}, Lcom/android/server/am/r$zta;-><init>(DDD)V
+    invoke-direct/range {v0 .. v6}, Lcom/android/server/am/t$zta;-><init>(DDD)V
 
-    invoke-static {p2, p1}, Lcom/android/server/am/r;->zta(Lcom/android/server/am/r$bio;Lcom/android/server/am/r$zta;)D
+    invoke-static {p2, p1}, Lcom/android/server/am/t;->zta(Lcom/android/server/am/t$bio;Lcom/android/server/am/t$zta;)D
 
     move-result-wide p1
 

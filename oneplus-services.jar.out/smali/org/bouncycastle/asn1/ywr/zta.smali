@@ -194,12 +194,12 @@
     return-object p0
 .end method
 
-.method private hc(I)Lorg/bouncycastle/asn1/vdb;
+.method private lc(I)Lorg/bouncycastle/asn1/vdb;
     .locals 2
 
     iget-object p0, p0, Lorg/bouncycastle/asn1/ywr/zta;->seq:Lorg/bouncycastle/asn1/obl;
 
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/obl;->Fg()Ljava/util/Enumeration;
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/obl;->Jg()Ljava/util/Enumeration;
 
     move-result-object p0
 
@@ -275,7 +275,7 @@
 
     const/4 v0, 0x0
 
-    invoke-direct {p0, v0}, Lorg/bouncycastle/asn1/ywr/zta;->hc(I)Lorg/bouncycastle/asn1/vdb;
+    invoke-direct {p0, v0}, Lorg/bouncycastle/asn1/ywr/zta;->lc(I)Lorg/bouncycastle/asn1/vdb;
 
     move-result-object p0
 
@@ -287,7 +287,7 @@
 
     const/4 v0, 0x1
 
-    invoke-direct {p0, v0}, Lorg/bouncycastle/asn1/ywr/zta;->hc(I)Lorg/bouncycastle/asn1/vdb;
+    invoke-direct {p0, v0}, Lorg/bouncycastle/asn1/ywr/zta;->lc(I)Lorg/bouncycastle/asn1/vdb;
 
     move-result-object p0
 
