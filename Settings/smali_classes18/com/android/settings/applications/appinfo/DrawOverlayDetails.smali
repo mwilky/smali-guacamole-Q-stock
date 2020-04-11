@@ -8,6 +8,8 @@
 
 
 # static fields
+.field private static final BREENO_VOICE_PKG:Ljava/lang/String; = "com.heytap.speechassist"
+
 .field private static final KEY_APP_OPS_SETTINGS_SWITCH:Ljava/lang/String; = "app_ops_settings_switch"
 
 .field private static final LOG_TAG:Ljava/lang/String; = "DrawOverlayDetails"
@@ -371,7 +373,7 @@
 .end method
 
 .method protected refreshUi()Z
-    .locals 4
+    .locals 5
 
     iget-object v0, p0, Lcom/android/settings/applications/appinfo/DrawOverlayDetails;->mPackageInfo:Landroid/content/pm/PackageInfo;
 
@@ -408,29 +410,48 @@
 
     invoke-virtual {v2, v0}, Landroidx/preference/SwitchPreference;->setChecked(Z)V
 
+    iget-object v2, p0, Lcom/android/settings/applications/appinfo/DrawOverlayDetails;->mPackageName:Ljava/lang/String;
+
+    const/4 v3, 0x0
+
+    if-eqz v2, :cond_1
+
+    iget-object v2, p0, Lcom/android/settings/applications/appinfo/DrawOverlayDetails;->mPackageName:Ljava/lang/String;
+
+    const-string v4, "com.heytap.speechassist"
+
+    invoke-virtual {v4, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_1
+
     iget-object v2, p0, Lcom/android/settings/applications/appinfo/DrawOverlayDetails;->mSwitchPref:Landroidx/preference/SwitchPreference;
 
-    iget-object v3, p0, Lcom/android/settings/applications/appinfo/DrawOverlayDetails;->mOverlayState:Lcom/android/settings/applications/AppStateOverlayBridge$OverlayState;
-
-    iget-boolean v3, v3, Lcom/android/settings/applications/AppStateOverlayBridge$OverlayState;->permissionDeclared:Z
-
-    if-eqz v3, :cond_1
-
-    iget-object v3, p0, Lcom/android/settings/applications/appinfo/DrawOverlayDetails;->mOverlayState:Lcom/android/settings/applications/AppStateOverlayBridge$OverlayState;
-
-    iget-boolean v3, v3, Lcom/android/settings/applications/AppStateOverlayBridge$OverlayState;->controlEnabled:Z
-
-    if-eqz v3, :cond_1
-
-    move v3, v1
+    invoke-virtual {v2, v3}, Landroidx/preference/SwitchPreference;->setEnabled(Z)V
 
     goto :goto_0
 
     :cond_1
-    const/4 v3, 0x0
+    iget-object v2, p0, Lcom/android/settings/applications/appinfo/DrawOverlayDetails;->mSwitchPref:Landroidx/preference/SwitchPreference;
 
-    :goto_0
+    iget-object v4, p0, Lcom/android/settings/applications/appinfo/DrawOverlayDetails;->mOverlayState:Lcom/android/settings/applications/AppStateOverlayBridge$OverlayState;
+
+    iget-boolean v4, v4, Lcom/android/settings/applications/AppStateOverlayBridge$OverlayState;->permissionDeclared:Z
+
+    if-eqz v4, :cond_2
+
+    iget-object v4, p0, Lcom/android/settings/applications/appinfo/DrawOverlayDetails;->mOverlayState:Lcom/android/settings/applications/AppStateOverlayBridge$OverlayState;
+
+    iget-boolean v4, v4, Lcom/android/settings/applications/AppStateOverlayBridge$OverlayState;->controlEnabled:Z
+
+    if-eqz v4, :cond_2
+
+    move v3, v1
+
+    :cond_2
     invoke-virtual {v2, v3}, Landroidx/preference/SwitchPreference;->setEnabled(Z)V
 
+    :goto_0
     return v1
 .end method

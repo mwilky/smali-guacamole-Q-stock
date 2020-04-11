@@ -135,7 +135,7 @@
 
     iget-object v0, p0, Lcom/android/settings/wifi/tether/WifiTetherPreferenceController;->mContext:Landroid/content/Context;
 
-    const v1, 0x10407ac
+    const v1, 0x10407ad
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

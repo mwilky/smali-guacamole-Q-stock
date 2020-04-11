@@ -43,7 +43,7 @@
 
     iget-object v0, p0, Lcom/android/settings/applications/appinfo/AppPermissionPreferenceController$2;->this$0:Lcom/android/settings/applications/appinfo/AppPermissionPreferenceController;
 
-    invoke-static {v0}, Lcom/android/settings/applications/appinfo/AppPermissionPreferenceController;->access$100(Lcom/android/settings/applications/appinfo/AppPermissionPreferenceController;)Ljava/util/List;
+    invoke-static {v0}, Lcom/android/settings/applications/appinfo/AppPermissionPreferenceController;->access$200(Lcom/android/settings/applications/appinfo/AppPermissionPreferenceController;)Ljava/util/List;
 
     move-result-object v0
 
@@ -159,7 +159,7 @@
 
     iget-object v7, p0, Lcom/android/settings/applications/appinfo/AppPermissionPreferenceController$2;->this$0:Lcom/android/settings/applications/appinfo/AppPermissionPreferenceController;
 
-    invoke-static {v7}, Lcom/android/settings/applications/appinfo/AppPermissionPreferenceController;->access$100(Lcom/android/settings/applications/appinfo/AppPermissionPreferenceController;)Ljava/util/List;
+    invoke-static {v7}, Lcom/android/settings/applications/appinfo/AppPermissionPreferenceController;->access$200(Lcom/android/settings/applications/appinfo/AppPermissionPreferenceController;)Ljava/util/List;
 
     move-result-object v7
 
@@ -281,7 +281,7 @@
 
     iget-object v0, p0, Lcom/android/settings/applications/appinfo/AppPermissionPreferenceController$2;->this$0:Lcom/android/settings/applications/appinfo/AppPermissionPreferenceController;
 
-    invoke-static {v0}, Lcom/android/settings/applications/appinfo/AppPermissionPreferenceController;->access$300(Lcom/android/settings/applications/appinfo/AppPermissionPreferenceController;)Lcom/oneplus/settings/permission/PermissionManager;
+    invoke-static {v0}, Lcom/android/settings/applications/appinfo/AppPermissionPreferenceController;->access$400(Lcom/android/settings/applications/appinfo/AppPermissionPreferenceController;)Lcom/oneplus/settings/permission/PermissionManager;
 
     move-result-object v0
 

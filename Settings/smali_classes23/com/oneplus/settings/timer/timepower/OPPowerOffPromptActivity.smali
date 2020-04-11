@@ -521,7 +521,7 @@
 
     iget-object v1, p0, Lcom/oneplus/settings/timer/timepower/OPPowerOffPromptActivity;->mShutdownDialog:Landroid/app/ProgressDialog;
 
-    const v2, 0x104068e
+    const v2, 0x104068f
 
     invoke-virtual {p0, v2}, Lcom/oneplus/settings/timer/timepower/OPPowerOffPromptActivity;->getString(I)Ljava/lang/String;
 

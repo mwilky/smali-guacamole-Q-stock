@@ -8,8 +8,6 @@
 
 
 # static fields
-.field private static final DEFAULT_LONGPRESS_ON_HOME:I = 0x3
-
 .field public static final GSM_PACKAGE:Ljava/lang/String; = "com.google.android.googlequicksearchbox"
 
 .field private static final KEY_BACK_DOUBLE_TAP:Ljava/lang/String; = "hardware_keys_back_double_tap"
@@ -250,7 +248,7 @@
 .end method
 
 .method private initActionList(Ljava/lang/String;I)Landroidx/preference/ListPreference;
-    .locals 3
+    .locals 2
 
     invoke-virtual {p0}, Lcom/oneplus/settings/navigationbargestures/OPButtonCustomSettings;->getPreferenceScreen()Landroidx/preference/PreferenceScreen;
 
@@ -276,28 +274,11 @@
 
     invoke-virtual {v0, p0}, Landroidx/preference/ListPreference;->setOnPreferenceChangeListener(Landroidx/preference/Preference$OnPreferenceChangeListener;)V
 
-    const-string v1, "hardware_keys_home_long_press"
-
-    invoke-virtual {v1, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-eqz v1, :cond_0
-
-    invoke-virtual {p0}, Lcom/oneplus/settings/navigationbargestures/OPButtonCustomSettings;->getContentResolver()Landroid/content/ContentResolver;
-
-    move-result-object v1
-
-    const-string v2, "key_home_long_press_action"
-
-    invoke-static {v1, v2, p2}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
-
-    :cond_0
     return-object v0
 .end method
 
 .method private initListViewPrefs()V
-    .locals 17
+    .locals 16
 
     move-object/from16 v0, p0
 
@@ -321,289 +302,261 @@
 
     move-result v2
 
-    invoke-virtual/range {p0 .. p0}, Lcom/oneplus/settings/navigationbargestures/OPButtonCustomSettings;->getContext()Landroid/content/Context;
+    const-string v3, "key_home_long_press_action"
 
-    move-result-object v3
-
-    invoke-static {v3}, Lcom/oneplus/settings/navigationbargestures/OPButtonCustomSettings;->checkGMS(Landroid/content/Context;)Z
+    invoke-static {v1, v3, v2}, Landroid/provider/Settings$System;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
 
     move-result v3
 
-    if-eqz v3, :cond_0
+    const-string v4, "hardware_keys_home_long_press"
 
-    move v3, v2
+    invoke-direct {v0, v4, v3}, Lcom/oneplus/settings/navigationbargestures/OPButtonCustomSettings;->initActionList(Ljava/lang/String;I)Landroidx/preference/ListPreference;
+
+    move-result-object v4
+
+    iput-object v4, v0, Lcom/oneplus/settings/navigationbargestures/OPButtonCustomSettings;->mHomeLongPressAction:Landroidx/preference/ListPreference;
+
+    invoke-virtual/range {p0 .. p0}, Lcom/oneplus/settings/navigationbargestures/OPButtonCustomSettings;->getActivity()Landroidx/fragment/app/FragmentActivity;
+
+    move-result-object v4
+
+    invoke-virtual {v4}, Landroidx/fragment/app/FragmentActivity;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v4
+
+    const v5, 0x10e0051
+
+    invoke-virtual {v4, v5}, Landroid/content/res/Resources;->getInteger(I)I
+
+    move-result v4
+
+    const-string v5, "key_home_double_tap_action"
+
+    invoke-static {v1, v5, v4}, Landroid/provider/Settings$System;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
+
+    move-result v5
+
+    const-string v6, "hardware_keys_home_double_tap"
+
+    invoke-direct {v0, v6, v5}, Lcom/oneplus/settings/navigationbargestures/OPButtonCustomSettings;->initActionList(Ljava/lang/String;I)Landroidx/preference/ListPreference;
+
+    move-result-object v6
+
+    iput-object v6, v0, Lcom/oneplus/settings/navigationbargestures/OPButtonCustomSettings;->mHomeDoubleTapAction:Landroidx/preference/ListPreference;
+
+    invoke-virtual/range {p0 .. p0}, Lcom/oneplus/settings/navigationbargestures/OPButtonCustomSettings;->getActivity()Landroidx/fragment/app/FragmentActivity;
+
+    move-result-object v6
+
+    invoke-virtual {v6}, Landroidx/fragment/app/FragmentActivity;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v6
+
+    const v7, 0x5080007
+
+    invoke-virtual {v6, v7}, Landroid/content/res/Resources;->getInteger(I)I
+
+    move-result v6
+
+    const-string v7, "key_app_switch_long_press_action"
+
+    invoke-static {v1, v7, v6}, Landroid/provider/Settings$System;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
+
+    move-result v7
+
+    const-string v8, "hardware_keys_menu_long_press"
+
+    invoke-direct {v0, v8, v7}, Lcom/oneplus/settings/navigationbargestures/OPButtonCustomSettings;->initActionList(Ljava/lang/String;I)Landroidx/preference/ListPreference;
+
+    move-result-object v8
+
+    iput-object v8, v0, Lcom/oneplus/settings/navigationbargestures/OPButtonCustomSettings;->mMenuLongPressAction:Landroidx/preference/ListPreference;
+
+    invoke-virtual/range {p0 .. p0}, Lcom/oneplus/settings/navigationbargestures/OPButtonCustomSettings;->getActivity()Landroidx/fragment/app/FragmentActivity;
+
+    move-result-object v8
+
+    invoke-virtual {v8}, Landroidx/fragment/app/FragmentActivity;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v8
+
+    const v9, 0x5080003
+
+    invoke-virtual {v8, v9}, Landroid/content/res/Resources;->getInteger(I)I
+
+    move-result v8
+
+    const-string v9, "key_app_switch_double_tap_action"
+
+    invoke-static {v1, v9, v8}, Landroid/provider/Settings$System;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
+
+    move-result v9
+
+    const-string v10, "hardware_keys_menu_double_tap"
+
+    invoke-direct {v0, v10, v9}, Lcom/oneplus/settings/navigationbargestures/OPButtonCustomSettings;->initActionList(Ljava/lang/String;I)Landroidx/preference/ListPreference;
+
+    move-result-object v10
+
+    iput-object v10, v0, Lcom/oneplus/settings/navigationbargestures/OPButtonCustomSettings;->mMenuDoubleTapAction:Landroidx/preference/ListPreference;
+
+    invoke-virtual/range {p0 .. p0}, Lcom/oneplus/settings/navigationbargestures/OPButtonCustomSettings;->getActivity()Landroidx/fragment/app/FragmentActivity;
+
+    move-result-object v10
+
+    invoke-virtual {v10}, Landroidx/fragment/app/FragmentActivity;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v10
+
+    const v11, 0x5080008
+
+    invoke-virtual {v10, v11}, Landroid/content/res/Resources;->getInteger(I)I
+
+    move-result v10
+
+    const-string v11, "key_back_long_press_action"
+
+    invoke-static {v1, v11, v10}, Landroid/provider/Settings$System;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
+
+    move-result v11
+
+    const-string v12, "hardware_keys_back_long_press"
+
+    invoke-direct {v0, v12, v11}, Lcom/oneplus/settings/navigationbargestures/OPButtonCustomSettings;->initActionList(Ljava/lang/String;I)Landroidx/preference/ListPreference;
+
+    move-result-object v12
+
+    iput-object v12, v0, Lcom/oneplus/settings/navigationbargestures/OPButtonCustomSettings;->mBackLongPressAction:Landroidx/preference/ListPreference;
+
+    invoke-virtual/range {p0 .. p0}, Lcom/oneplus/settings/navigationbargestures/OPButtonCustomSettings;->getActivity()Landroidx/fragment/app/FragmentActivity;
+
+    move-result-object v12
+
+    invoke-virtual {v12}, Landroidx/fragment/app/FragmentActivity;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v12
+
+    const v13, 0x5080004
+
+    invoke-virtual {v12, v13}, Landroid/content/res/Resources;->getInteger(I)I
+
+    move-result v12
+
+    const-string v13, "key_back_double_tap_action"
+
+    invoke-static {v1, v13, v12}, Landroid/provider/Settings$System;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
+
+    move-result v13
+
+    const-string v14, "hardware_keys_back_double_tap"
+
+    invoke-direct {v0, v14, v13}, Lcom/oneplus/settings/navigationbargestures/OPButtonCustomSettings;->initActionList(Ljava/lang/String;I)Landroidx/preference/ListPreference;
+
+    move-result-object v14
+
+    iput-object v14, v0, Lcom/oneplus/settings/navigationbargestures/OPButtonCustomSettings;->mBackDoubleTapAction:Landroidx/preference/ListPreference;
+
+    invoke-static {}, Lcom/oneplus/settings/navigationbargestures/OPButtonCustomSettings;->isSupportHardwareKeys()Z
+
+    move-result v14
+
+    if-nez v14, :cond_5
+
+    iget-object v14, v0, Lcom/oneplus/settings/navigationbargestures/OPButtonCustomSettings;->mHomeLongPressAction:Landroidx/preference/ListPreference;
+
+    const v15, 0x7f03009a
+
+    if-eqz v14, :cond_0
+
+    invoke-virtual {v14, v15}, Landroidx/preference/ListPreference;->setEntries(I)V
+
+    iget-object v14, v0, Lcom/oneplus/settings/navigationbargestures/OPButtonCustomSettings;->mHomeLongPressAction:Landroidx/preference/ListPreference;
+
+    const v15, 0x7f03009e
+
+    invoke-virtual {v14, v15}, Landroidx/preference/ListPreference;->setEntryValues(I)V
 
     goto :goto_0
 
     :cond_0
-    const/4 v3, 0x3
+    const v15, 0x7f03009e
 
     :goto_0
-    nop
+    iget-object v14, v0, Lcom/oneplus/settings/navigationbargestures/OPButtonCustomSettings;->mHomeDoubleTapAction:Landroidx/preference/ListPreference;
 
-    const-string v4, "key_home_long_press_action"
+    if-eqz v14, :cond_1
 
-    invoke-static {v1, v4, v3}, Landroid/provider/Settings$System;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
+    const v15, 0x7f03009a
 
-    move-result v4
+    invoke-virtual {v14, v15}, Landroidx/preference/ListPreference;->setEntries(I)V
 
-    const-string v5, "hardware_keys_home_long_press"
-
-    invoke-direct {v0, v5, v4}, Lcom/oneplus/settings/navigationbargestures/OPButtonCustomSettings;->initActionList(Ljava/lang/String;I)Landroidx/preference/ListPreference;
-
-    move-result-object v5
-
-    iput-object v5, v0, Lcom/oneplus/settings/navigationbargestures/OPButtonCustomSettings;->mHomeLongPressAction:Landroidx/preference/ListPreference;
-
-    invoke-virtual/range {p0 .. p0}, Lcom/oneplus/settings/navigationbargestures/OPButtonCustomSettings;->getActivity()Landroidx/fragment/app/FragmentActivity;
-
-    move-result-object v5
-
-    invoke-virtual {v5}, Landroidx/fragment/app/FragmentActivity;->getResources()Landroid/content/res/Resources;
-
-    move-result-object v5
-
-    const v6, 0x10e0051
-
-    invoke-virtual {v5, v6}, Landroid/content/res/Resources;->getInteger(I)I
-
-    move-result v5
-
-    const-string v6, "key_home_double_tap_action"
-
-    invoke-static {v1, v6, v5}, Landroid/provider/Settings$System;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
-
-    move-result v6
-
-    const-string v7, "hardware_keys_home_double_tap"
-
-    invoke-direct {v0, v7, v6}, Lcom/oneplus/settings/navigationbargestures/OPButtonCustomSettings;->initActionList(Ljava/lang/String;I)Landroidx/preference/ListPreference;
-
-    move-result-object v7
-
-    iput-object v7, v0, Lcom/oneplus/settings/navigationbargestures/OPButtonCustomSettings;->mHomeDoubleTapAction:Landroidx/preference/ListPreference;
-
-    invoke-virtual/range {p0 .. p0}, Lcom/oneplus/settings/navigationbargestures/OPButtonCustomSettings;->getActivity()Landroidx/fragment/app/FragmentActivity;
-
-    move-result-object v7
-
-    invoke-virtual {v7}, Landroidx/fragment/app/FragmentActivity;->getResources()Landroid/content/res/Resources;
-
-    move-result-object v7
-
-    const v8, 0x5080007
-
-    invoke-virtual {v7, v8}, Landroid/content/res/Resources;->getInteger(I)I
-
-    move-result v7
-
-    const-string v8, "key_app_switch_long_press_action"
-
-    invoke-static {v1, v8, v7}, Landroid/provider/Settings$System;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
-
-    move-result v8
-
-    const-string v9, "hardware_keys_menu_long_press"
-
-    invoke-direct {v0, v9, v8}, Lcom/oneplus/settings/navigationbargestures/OPButtonCustomSettings;->initActionList(Ljava/lang/String;I)Landroidx/preference/ListPreference;
-
-    move-result-object v9
-
-    iput-object v9, v0, Lcom/oneplus/settings/navigationbargestures/OPButtonCustomSettings;->mMenuLongPressAction:Landroidx/preference/ListPreference;
-
-    invoke-virtual/range {p0 .. p0}, Lcom/oneplus/settings/navigationbargestures/OPButtonCustomSettings;->getActivity()Landroidx/fragment/app/FragmentActivity;
-
-    move-result-object v9
-
-    invoke-virtual {v9}, Landroidx/fragment/app/FragmentActivity;->getResources()Landroid/content/res/Resources;
-
-    move-result-object v9
-
-    const v10, 0x5080003
-
-    invoke-virtual {v9, v10}, Landroid/content/res/Resources;->getInteger(I)I
-
-    move-result v9
-
-    const-string v10, "key_app_switch_double_tap_action"
-
-    invoke-static {v1, v10, v9}, Landroid/provider/Settings$System;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
-
-    move-result v10
-
-    const-string v11, "hardware_keys_menu_double_tap"
-
-    invoke-direct {v0, v11, v10}, Lcom/oneplus/settings/navigationbargestures/OPButtonCustomSettings;->initActionList(Ljava/lang/String;I)Landroidx/preference/ListPreference;
-
-    move-result-object v11
-
-    iput-object v11, v0, Lcom/oneplus/settings/navigationbargestures/OPButtonCustomSettings;->mMenuDoubleTapAction:Landroidx/preference/ListPreference;
-
-    invoke-virtual/range {p0 .. p0}, Lcom/oneplus/settings/navigationbargestures/OPButtonCustomSettings;->getActivity()Landroidx/fragment/app/FragmentActivity;
-
-    move-result-object v11
-
-    invoke-virtual {v11}, Landroidx/fragment/app/FragmentActivity;->getResources()Landroid/content/res/Resources;
-
-    move-result-object v11
-
-    const v12, 0x5080008
-
-    invoke-virtual {v11, v12}, Landroid/content/res/Resources;->getInteger(I)I
-
-    move-result v11
-
-    const-string v12, "key_back_long_press_action"
-
-    invoke-static {v1, v12, v11}, Landroid/provider/Settings$System;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
-
-    move-result v12
-
-    const-string v13, "hardware_keys_back_long_press"
-
-    invoke-direct {v0, v13, v12}, Lcom/oneplus/settings/navigationbargestures/OPButtonCustomSettings;->initActionList(Ljava/lang/String;I)Landroidx/preference/ListPreference;
-
-    move-result-object v13
-
-    iput-object v13, v0, Lcom/oneplus/settings/navigationbargestures/OPButtonCustomSettings;->mBackLongPressAction:Landroidx/preference/ListPreference;
-
-    invoke-virtual/range {p0 .. p0}, Lcom/oneplus/settings/navigationbargestures/OPButtonCustomSettings;->getActivity()Landroidx/fragment/app/FragmentActivity;
-
-    move-result-object v13
-
-    invoke-virtual {v13}, Landroidx/fragment/app/FragmentActivity;->getResources()Landroid/content/res/Resources;
-
-    move-result-object v13
-
-    const v14, 0x5080004
-
-    invoke-virtual {v13, v14}, Landroid/content/res/Resources;->getInteger(I)I
-
-    move-result v13
-
-    const-string v14, "key_back_double_tap_action"
-
-    invoke-static {v1, v14, v13}, Landroid/provider/Settings$System;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
-
-    move-result v14
-
-    const-string v15, "hardware_keys_back_double_tap"
-
-    invoke-direct {v0, v15, v14}, Lcom/oneplus/settings/navigationbargestures/OPButtonCustomSettings;->initActionList(Ljava/lang/String;I)Landroidx/preference/ListPreference;
-
-    move-result-object v15
-
-    iput-object v15, v0, Lcom/oneplus/settings/navigationbargestures/OPButtonCustomSettings;->mBackDoubleTapAction:Landroidx/preference/ListPreference;
-
-    invoke-static {}, Lcom/oneplus/settings/navigationbargestures/OPButtonCustomSettings;->isSupportHardwareKeys()Z
-
-    move-result v15
-
-    if-nez v15, :cond_6
-
-    iget-object v15, v0, Lcom/oneplus/settings/navigationbargestures/OPButtonCustomSettings;->mHomeLongPressAction:Landroidx/preference/ListPreference;
-
-    move-object/from16 v16, v1
-
-    const v1, 0x7f03009a
-
-    if-eqz v15, :cond_1
-
-    invoke-virtual {v15, v1}, Landroidx/preference/ListPreference;->setEntries(I)V
-
-    iget-object v15, v0, Lcom/oneplus/settings/navigationbargestures/OPButtonCustomSettings;->mHomeLongPressAction:Landroidx/preference/ListPreference;
-
-    const v1, 0x7f03009e
-
-    invoke-virtual {v15, v1}, Landroidx/preference/ListPreference;->setEntryValues(I)V
-
-    goto :goto_1
-
-    :cond_1
-    const v1, 0x7f03009e
-
-    :goto_1
-    iget-object v15, v0, Lcom/oneplus/settings/navigationbargestures/OPButtonCustomSettings;->mHomeDoubleTapAction:Landroidx/preference/ListPreference;
-
-    if-eqz v15, :cond_2
-
-    const v1, 0x7f03009a
-
-    invoke-virtual {v15, v1}, Landroidx/preference/ListPreference;->setEntries(I)V
-
-    iget-object v15, v0, Lcom/oneplus/settings/navigationbargestures/OPButtonCustomSettings;->mHomeDoubleTapAction:Landroidx/preference/ListPreference;
-
-    const v1, 0x7f03009e
-
-    invoke-virtual {v15, v1}, Landroidx/preference/ListPreference;->setEntryValues(I)V
-
-    :cond_2
-    iget-object v15, v0, Lcom/oneplus/settings/navigationbargestures/OPButtonCustomSettings;->mMenuLongPressAction:Landroidx/preference/ListPreference;
-
-    if-eqz v15, :cond_3
-
-    const v1, 0x7f03009a
-
-    invoke-virtual {v15, v1}, Landroidx/preference/ListPreference;->setEntries(I)V
-
-    iget-object v15, v0, Lcom/oneplus/settings/navigationbargestures/OPButtonCustomSettings;->mMenuLongPressAction:Landroidx/preference/ListPreference;
-
-    const v1, 0x7f03009e
-
-    invoke-virtual {v15, v1}, Landroidx/preference/ListPreference;->setEntryValues(I)V
-
-    :cond_3
-    iget-object v15, v0, Lcom/oneplus/settings/navigationbargestures/OPButtonCustomSettings;->mMenuDoubleTapAction:Landroidx/preference/ListPreference;
-
-    if-eqz v15, :cond_4
-
-    const v1, 0x7f03009a
-
-    invoke-virtual {v15, v1}, Landroidx/preference/ListPreference;->setEntries(I)V
-
-    iget-object v15, v0, Lcom/oneplus/settings/navigationbargestures/OPButtonCustomSettings;->mMenuDoubleTapAction:Landroidx/preference/ListPreference;
-
-    const v1, 0x7f03009e
-
-    invoke-virtual {v15, v1}, Landroidx/preference/ListPreference;->setEntryValues(I)V
-
-    :cond_4
-    iget-object v15, v0, Lcom/oneplus/settings/navigationbargestures/OPButtonCustomSettings;->mBackLongPressAction:Landroidx/preference/ListPreference;
-
-    if-eqz v15, :cond_5
-
-    const v1, 0x7f03009a
-
-    invoke-virtual {v15, v1}, Landroidx/preference/ListPreference;->setEntries(I)V
-
-    iget-object v15, v0, Lcom/oneplus/settings/navigationbargestures/OPButtonCustomSettings;->mBackLongPressAction:Landroidx/preference/ListPreference;
-
-    const v1, 0x7f03009e
-
-    invoke-virtual {v15, v1}, Landroidx/preference/ListPreference;->setEntryValues(I)V
-
-    :cond_5
-    iget-object v15, v0, Lcom/oneplus/settings/navigationbargestures/OPButtonCustomSettings;->mBackDoubleTapAction:Landroidx/preference/ListPreference;
-
-    if-eqz v15, :cond_7
-
-    const v1, 0x7f03009a
-
-    invoke-virtual {v15, v1}, Landroidx/preference/ListPreference;->setEntries(I)V
-
-    iget-object v1, v0, Lcom/oneplus/settings/navigationbargestures/OPButtonCustomSettings;->mBackDoubleTapAction:Landroidx/preference/ListPreference;
+    iget-object v14, v0, Lcom/oneplus/settings/navigationbargestures/OPButtonCustomSettings;->mHomeDoubleTapAction:Landroidx/preference/ListPreference;
 
     const v15, 0x7f03009e
 
-    invoke-virtual {v1, v15}, Landroidx/preference/ListPreference;->setEntryValues(I)V
+    invoke-virtual {v14, v15}, Landroidx/preference/ListPreference;->setEntryValues(I)V
 
-    goto :goto_2
+    :cond_1
+    iget-object v14, v0, Lcom/oneplus/settings/navigationbargestures/OPButtonCustomSettings;->mMenuLongPressAction:Landroidx/preference/ListPreference;
 
-    :cond_6
-    move-object/from16 v16, v1
+    if-eqz v14, :cond_2
 
-    :cond_7
-    :goto_2
+    const v15, 0x7f03009a
+
+    invoke-virtual {v14, v15}, Landroidx/preference/ListPreference;->setEntries(I)V
+
+    iget-object v14, v0, Lcom/oneplus/settings/navigationbargestures/OPButtonCustomSettings;->mMenuLongPressAction:Landroidx/preference/ListPreference;
+
+    const v15, 0x7f03009e
+
+    invoke-virtual {v14, v15}, Landroidx/preference/ListPreference;->setEntryValues(I)V
+
+    :cond_2
+    iget-object v14, v0, Lcom/oneplus/settings/navigationbargestures/OPButtonCustomSettings;->mMenuDoubleTapAction:Landroidx/preference/ListPreference;
+
+    if-eqz v14, :cond_3
+
+    const v15, 0x7f03009a
+
+    invoke-virtual {v14, v15}, Landroidx/preference/ListPreference;->setEntries(I)V
+
+    iget-object v14, v0, Lcom/oneplus/settings/navigationbargestures/OPButtonCustomSettings;->mMenuDoubleTapAction:Landroidx/preference/ListPreference;
+
+    const v15, 0x7f03009e
+
+    invoke-virtual {v14, v15}, Landroidx/preference/ListPreference;->setEntryValues(I)V
+
+    :cond_3
+    iget-object v14, v0, Lcom/oneplus/settings/navigationbargestures/OPButtonCustomSettings;->mBackLongPressAction:Landroidx/preference/ListPreference;
+
+    if-eqz v14, :cond_4
+
+    const v15, 0x7f03009a
+
+    invoke-virtual {v14, v15}, Landroidx/preference/ListPreference;->setEntries(I)V
+
+    iget-object v14, v0, Lcom/oneplus/settings/navigationbargestures/OPButtonCustomSettings;->mBackLongPressAction:Landroidx/preference/ListPreference;
+
+    const v15, 0x7f03009e
+
+    invoke-virtual {v14, v15}, Landroidx/preference/ListPreference;->setEntryValues(I)V
+
+    :cond_4
+    iget-object v14, v0, Lcom/oneplus/settings/navigationbargestures/OPButtonCustomSettings;->mBackDoubleTapAction:Landroidx/preference/ListPreference;
+
+    if-eqz v14, :cond_5
+
+    const v15, 0x7f03009a
+
+    invoke-virtual {v14, v15}, Landroidx/preference/ListPreference;->setEntries(I)V
+
+    iget-object v14, v0, Lcom/oneplus/settings/navigationbargestures/OPButtonCustomSettings;->mBackDoubleTapAction:Landroidx/preference/ListPreference;
+
+    const v15, 0x7f03009e
+
+    invoke-virtual {v14, v15}, Landroidx/preference/ListPreference;->setEntryValues(I)V
+
+    :cond_5
     return-void
 .end method
 

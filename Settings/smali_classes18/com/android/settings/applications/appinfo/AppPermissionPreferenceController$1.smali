@@ -32,7 +32,7 @@
 
 # virtual methods
 .method public onPermissionSummaryResult(IIILjava/util/List;)V
-    .locals 8
+    .locals 9
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(III",
@@ -67,96 +67,130 @@
 
     const/4 v1, 0x0
 
-    const/4 v2, 0x0
+    iget-object v2, p0, Lcom/android/settings/applications/appinfo/AppPermissionPreferenceController$1;->this$0:Lcom/android/settings/applications/appinfo/AppPermissionPreferenceController;
 
-    if-nez p2, :cond_1
+    invoke-static {v2}, Lcom/android/settings/applications/appinfo/AppPermissionPreferenceController;->access$100(Lcom/android/settings/applications/appinfo/AppPermissionPreferenceController;)Ljava/lang/String;
 
-    const v3, 0x7f12126d
+    move-result-object v2
+
+    const/4 v3, 0x0
+
+    const/4 v4, 0x1
+
+    if-eqz v2, :cond_1
+
+    iget-object v2, p0, Lcom/android/settings/applications/appinfo/AppPermissionPreferenceController$1;->this$0:Lcom/android/settings/applications/appinfo/AppPermissionPreferenceController;
+
+    invoke-static {v2}, Lcom/android/settings/applications/appinfo/AppPermissionPreferenceController;->access$100(Lcom/android/settings/applications/appinfo/AppPermissionPreferenceController;)Ljava/lang/String;
+
+    move-result-object v2
+
+    const-string v5, "com.heytap.speechassist"
+
+    invoke-virtual {v5, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v2
+
+    if-nez v2, :cond_2
+
+    :cond_1
+    if-nez p2, :cond_3
+
+    :cond_2
+    move v2, v4
+
+    goto :goto_0
+
+    :cond_3
+    move v2, v3
+
+    :goto_0
+    if-eqz v2, :cond_4
+
+    const v4, 0x7f12126d
+
+    invoke-virtual {v0, v4}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    move-result-object v1
+
+    iget-object v4, p0, Lcom/android/settings/applications/appinfo/AppPermissionPreferenceController$1;->this$0:Lcom/android/settings/applications/appinfo/AppPermissionPreferenceController;
+
+    iget-object v4, v4, Lcom/android/settings/applications/appinfo/AppPermissionPreferenceController;->mPreference:Landroidx/preference/Preference;
+
+    invoke-virtual {v4, v3}, Landroidx/preference/Preference;->setEnabled(Z)V
+
+    goto :goto_2
+
+    :cond_4
+    new-instance v5, Ljava/util/ArrayList;
+
+    invoke-direct {v5, p4}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
+
+    iget-object v6, p0, Lcom/android/settings/applications/appinfo/AppPermissionPreferenceController$1;->this$0:Lcom/android/settings/applications/appinfo/AppPermissionPreferenceController;
+
+    invoke-static {v6}, Lcom/android/settings/applications/appinfo/AppPermissionPreferenceController;->access$200(Lcom/android/settings/applications/appinfo/AppPermissionPreferenceController;)Ljava/util/List;
+
+    move-result-object v6
+
+    invoke-static {v5, v6}, Lcom/android/settings/applications/appinfo/AppPermissionPreferenceController;->access$300(Ljava/util/List;Ljava/util/List;)Ljava/util/List;
+
+    move-result-object v5
+
+    if-lez p3, :cond_5
+
+    const v6, 0x7f10003f
+
+    new-array v7, v4, [Ljava/lang/Object;
+
+    invoke-static {p3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v8
+
+    aput-object v8, v7, v3
+
+    invoke-virtual {v0, v6, p3, v7}, Landroid/content/res/Resources;->getQuantityString(II[Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-interface {v5, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    :cond_5
+    invoke-interface {v5}, Ljava/util/List;->size()I
+
+    move-result v3
+
+    if-nez v3, :cond_6
+
+    const v3, 0x7f12126c
 
     invoke-virtual {v0, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
+    goto :goto_1
+
+    :cond_6
+    invoke-static {}, Landroid/icu/text/ListFormatter;->getInstance()Landroid/icu/text/ListFormatter;
+
+    move-result-object v3
+
+    invoke-virtual {v3, v5}, Landroid/icu/text/ListFormatter;->format(Ljava/util/Collection;)Ljava/lang/String;
+
+    move-result-object v1
+
+    :goto_1
     iget-object v3, p0, Lcom/android/settings/applications/appinfo/AppPermissionPreferenceController$1;->this$0:Lcom/android/settings/applications/appinfo/AppPermissionPreferenceController;
 
     iget-object v3, v3, Lcom/android/settings/applications/appinfo/AppPermissionPreferenceController;->mPreference:Landroidx/preference/Preference;
 
-    invoke-virtual {v3, v2}, Landroidx/preference/Preference;->setEnabled(Z)V
+    invoke-virtual {v3, v4}, Landroidx/preference/Preference;->setEnabled(Z)V
 
-    goto :goto_1
+    :goto_2
+    iget-object v3, p0, Lcom/android/settings/applications/appinfo/AppPermissionPreferenceController$1;->this$0:Lcom/android/settings/applications/appinfo/AppPermissionPreferenceController;
 
-    :cond_1
-    new-instance v3, Ljava/util/ArrayList;
+    iget-object v3, v3, Lcom/android/settings/applications/appinfo/AppPermissionPreferenceController;->mPreference:Landroidx/preference/Preference;
 
-    invoke-direct {v3, p4}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
-
-    iget-object v4, p0, Lcom/android/settings/applications/appinfo/AppPermissionPreferenceController$1;->this$0:Lcom/android/settings/applications/appinfo/AppPermissionPreferenceController;
-
-    invoke-static {v4}, Lcom/android/settings/applications/appinfo/AppPermissionPreferenceController;->access$100(Lcom/android/settings/applications/appinfo/AppPermissionPreferenceController;)Ljava/util/List;
-
-    move-result-object v4
-
-    invoke-static {v3, v4}, Lcom/android/settings/applications/appinfo/AppPermissionPreferenceController;->access$200(Ljava/util/List;Ljava/util/List;)Ljava/util/List;
-
-    move-result-object v3
-
-    const/4 v4, 0x1
-
-    if-lez p3, :cond_2
-
-    const v5, 0x7f10003f
-
-    new-array v6, v4, [Ljava/lang/Object;
-
-    invoke-static {p3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v7
-
-    aput-object v7, v6, v2
-
-    invoke-virtual {v0, v5, p3, v6}, Landroid/content/res/Resources;->getQuantityString(II[Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-interface {v3, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
-
-    :cond_2
-    invoke-interface {v3}, Ljava/util/List;->size()I
-
-    move-result v2
-
-    if-nez v2, :cond_3
-
-    const v2, 0x7f12126c
-
-    invoke-virtual {v0, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
-
-    move-result-object v1
-
-    goto :goto_0
-
-    :cond_3
-    invoke-static {}, Landroid/icu/text/ListFormatter;->getInstance()Landroid/icu/text/ListFormatter;
-
-    move-result-object v2
-
-    invoke-virtual {v2, v3}, Landroid/icu/text/ListFormatter;->format(Ljava/util/Collection;)Ljava/lang/String;
-
-    move-result-object v1
-
-    :goto_0
-    iget-object v2, p0, Lcom/android/settings/applications/appinfo/AppPermissionPreferenceController$1;->this$0:Lcom/android/settings/applications/appinfo/AppPermissionPreferenceController;
-
-    iget-object v2, v2, Lcom/android/settings/applications/appinfo/AppPermissionPreferenceController;->mPreference:Landroidx/preference/Preference;
-
-    invoke-virtual {v2, v4}, Landroidx/preference/Preference;->setEnabled(Z)V
-
-    :goto_1
-    iget-object v2, p0, Lcom/android/settings/applications/appinfo/AppPermissionPreferenceController$1;->this$0:Lcom/android/settings/applications/appinfo/AppPermissionPreferenceController;
-
-    iget-object v2, v2, Lcom/android/settings/applications/appinfo/AppPermissionPreferenceController;->mPreference:Landroidx/preference/Preference;
-
-    invoke-virtual {v2, v1}, Landroidx/preference/Preference;->setSummary(Ljava/lang/CharSequence;)V
+    invoke-virtual {v3, v1}, Landroidx/preference/Preference;->setSummary(Ljava/lang/CharSequence;)V
 
     return-void
 .end method

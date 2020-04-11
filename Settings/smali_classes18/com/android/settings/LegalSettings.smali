@@ -10,10 +10,6 @@
 
 .field private static final KEY_HEALTH_SAFETY_INFORMATION_TYPE:I = 0xc
 
-.field private static final KEY_LOCATION_INFORMATION:Ljava/lang/String; = "op_location_information"
-
-.field private static final KEY_LOCATION_INFORMATION_TYPE:I = 0x9
-
 .field private static final KEY_NOTICES_TYPE:Ljava/lang/String; = "op_legal_notices_type"
 
 .field private static final KEY_PERMISSION_AGREEMENT:Ljava/lang/String; = "op_permission_agreement"
@@ -83,7 +79,7 @@
 
 # virtual methods
 .method protected createPreferenceControllers(Landroid/content/Context;)Ljava/util/List;
-    .locals 8
+    .locals 7
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -101,43 +97,35 @@
 
     new-instance v1, Lcom/oneplus/settings/OPLegalSettingsControlPreferenceController;
 
-    const-string v2, "op_location_information"
+    const-string v2, "op_user_agreements"
 
-    const/16 v3, 0x9
+    const/4 v3, 0x2
 
     invoke-direct {v1, p1, v2, v3}, Lcom/oneplus/settings/OPLegalSettingsControlPreferenceController;-><init>(Landroid/content/Context;Ljava/lang/String;I)V
 
     new-instance v2, Lcom/oneplus/settings/OPLegalSettingsControlPreferenceController;
 
-    const-string v3, "op_user_agreements"
+    const-string v3, "op_privacy_policy"
 
-    const/4 v4, 0x2
+    const/4 v4, 0x3
 
     invoke-direct {v2, p1, v3, v4}, Lcom/oneplus/settings/OPLegalSettingsControlPreferenceController;-><init>(Landroid/content/Context;Ljava/lang/String;I)V
 
     new-instance v3, Lcom/oneplus/settings/OPLegalSettingsControlPreferenceController;
 
-    const-string v4, "op_privacy_policy"
+    const-string v4, "op_permission_agreement"
 
-    const/4 v5, 0x3
+    const/4 v5, 0x4
 
     invoke-direct {v3, p1, v4, v5}, Lcom/oneplus/settings/OPLegalSettingsControlPreferenceController;-><init>(Landroid/content/Context;Ljava/lang/String;I)V
 
     new-instance v4, Lcom/oneplus/settings/OPLegalSettingsControlPreferenceController;
 
-    const-string v5, "op_permission_agreement"
+    const-string v5, "health_safety_information"
 
-    const/4 v6, 0x4
+    const/16 v6, 0xc
 
     invoke-direct {v4, p1, v5, v6}, Lcom/oneplus/settings/OPLegalSettingsControlPreferenceController;-><init>(Landroid/content/Context;Ljava/lang/String;I)V
-
-    new-instance v5, Lcom/oneplus/settings/OPLegalSettingsControlPreferenceController;
-
-    const-string v6, "health_safety_information"
-
-    const/16 v7, 0xc
-
-    invoke-direct {v5, p1, v6, v7}, Lcom/oneplus/settings/OPLegalSettingsControlPreferenceController;-><init>(Landroid/content/Context;Ljava/lang/String;I)V
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
@@ -146,8 +134,6 @@
     invoke-interface {v0, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     invoke-interface {v0, v4}, Ljava/util/List;->add(Ljava/lang/Object;)Z
-
-    invoke-interface {v0, v5}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     return-object v0
 .end method

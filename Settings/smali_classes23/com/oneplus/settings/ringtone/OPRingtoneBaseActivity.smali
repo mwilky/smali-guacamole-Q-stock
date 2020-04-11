@@ -717,7 +717,7 @@
     goto :goto_0
 
     :cond_4
-    const v1, 0x1040638
+    const v1, 0x1040639
 
     invoke-virtual {p0, v1}, Lcom/oneplus/settings/ringtone/OPRingtoneBaseActivity;->getString(I)Ljava/lang/String;
 

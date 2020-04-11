@@ -1152,7 +1152,7 @@
 
     move-result v8
 
-    if-eqz v8, :cond_d
+    if-eqz v8, :cond_e
 
     invoke-interface/range {v16 .. v16}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
@@ -1193,16 +1193,50 @@
     goto :goto_0
 
     :cond_3
-    invoke-virtual {v0, v15}, Lcom/android/settings/dashboard/DashboardFragment;->displayTile(Lcom/android/settingslib/drawer/Tile;)Z
+    iget-object v8, v3, Lcom/android/settingslib/drawer/DashboardCategory;->key:Ljava/lang/String;
+
+    const-string v9, "com.android.settings.category.ia.sound"
+
+    invoke-static {v9, v8}, Landroid/text/TextUtils;->equals(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Z
 
     move-result v8
 
-    if-nez v8, :cond_4
+    if-eqz v8, :cond_4
+
+    if-eqz v15, :cond_4
+
+    invoke-virtual {v15}, Lcom/android/settingslib/drawer/Tile;->getPackageName()Ljava/lang/String;
+
+    move-result-object v8
+
+    const-string v9, "com.google.android.as"
+
+    invoke-static {v9, v8}, Landroid/text/TextUtils;->equals(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Z
+
+    move-result v8
+
+    if-eqz v8, :cond_4
+
+    new-instance v8, Ljava/lang/StringBuilder;
+
+    invoke-direct {v8}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v9, "Settings skip live caption: "
+
+    invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v8, v15}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v8}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v8
+
+    invoke-static {v1, v8}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     goto :goto_0
 
     :cond_4
-    invoke-virtual {v0, v15}, Lcom/android/settings/dashboard/DashboardFragment;->isTileValid(Lcom/android/settingslib/drawer/Tile;)Z
+    invoke-virtual {v0, v15}, Lcom/android/settings/dashboard/DashboardFragment;->displayTile(Lcom/android/settingslib/drawer/Tile;)Z
 
     move-result v8
 
@@ -1211,6 +1245,15 @@
     goto :goto_0
 
     :cond_5
+    invoke-virtual {v0, v15}, Lcom/android/settings/dashboard/DashboardFragment;->isTileValid(Lcom/android/settingslib/drawer/Tile;)Z
+
+    move-result v8
+
+    if-nez v8, :cond_6
+
+    goto :goto_0
+
+    :cond_6
     iget-object v8, v0, Lcom/android/settings/dashboard/DashboardFragment;->mDashboardTilePrefKeys:Ljava/util/Set;
 
     invoke-interface {v8, v14}, Ljava/util/Set;->contains(Ljava/lang/Object;)Z
@@ -1225,7 +1268,7 @@
 
     const-string v13, "dashboard_tile_pref_com.google.android.apps.wellbeing.home.AppsNotificationSettingsActivity"
 
-    if-eqz v8, :cond_9
+    if-eqz v8, :cond_a
 
     invoke-virtual {v2, v14}, Landroidx/preference/PreferenceScreen;->findPreference(Ljava/lang/CharSequence;)Landroidx/preference/Preference;
 
@@ -1239,13 +1282,13 @@
 
     move-result v10
 
-    if-eqz v10, :cond_6
+    if-eqz v10, :cond_7
 
     invoke-virtual {v8, v11}, Landroidx/preference/Preference;->setIcon(I)V
 
     goto :goto_1
 
-    :cond_6
+    :cond_7
     invoke-virtual {v8}, Landroidx/preference/Preference;->getKey()Ljava/lang/String;
 
     move-result-object v10
@@ -1254,19 +1297,19 @@
 
     move-result v10
 
-    if-eqz v10, :cond_7
+    if-eqz v10, :cond_8
 
     const v10, 0x7f08057e
 
     invoke-virtual {v8, v10}, Landroidx/preference/Preference;->setIcon(I)V
 
-    :cond_7
+    :cond_8
     :goto_1
     invoke-static {}, Lcom/oneplus/settings/utils/OPUtils;->isO2()Z
 
     move-result v10
 
-    if-nez v10, :cond_8
+    if-nez v10, :cond_9
 
     invoke-virtual {v8}, Landroidx/preference/Preference;->getContext()Landroid/content/Context;
 
@@ -1280,7 +1323,7 @@
 
     move-result v10
 
-    if-nez v10, :cond_8
+    if-nez v10, :cond_9
 
     invoke-virtual {v8}, Landroidx/preference/Preference;->getContext()Landroid/content/Context;
 
@@ -1298,11 +1341,11 @@
 
     move-result v9
 
-    if-eqz v9, :cond_8
+    if-eqz v9, :cond_9
 
     goto/16 :goto_0
 
-    :cond_8
+    :cond_9
     iget-object v9, v0, Lcom/android/settings/dashboard/DashboardFragment;->mDashboardFeatureProvider:Lcom/android/settings/dashboard/DashboardFeatureProvider;
 
     invoke-virtual/range {p0 .. p0}, Lcom/android/settings/dashboard/DashboardFragment;->getActivity()Landroidx/fragment/app/FragmentActivity;
@@ -1345,7 +1388,7 @@
 
     goto/16 :goto_3
 
-    :cond_9
+    :cond_a
     move-object/from16 v19, v14
 
     move-object v1, v15
@@ -1368,13 +1411,13 @@
 
     move-result v8
 
-    if-eqz v8, :cond_a
+    if-eqz v8, :cond_b
 
     invoke-virtual {v15, v11}, Landroidx/preference/Preference;->setIcon(I)V
 
     goto :goto_2
 
-    :cond_a
+    :cond_b
     invoke-virtual {v15}, Landroidx/preference/Preference;->getKey()Ljava/lang/String;
 
     move-result-object v8
@@ -1383,19 +1426,19 @@
 
     move-result v8
 
-    if-eqz v8, :cond_b
+    if-eqz v8, :cond_c
 
     const v8, 0x7f08057e
 
     invoke-virtual {v15, v8}, Landroidx/preference/Preference;->setIcon(I)V
 
-    :cond_b
+    :cond_c
     :goto_2
     invoke-static {}, Lcom/oneplus/settings/utils/OPUtils;->isO2()Z
 
     move-result v8
 
-    if-nez v8, :cond_c
+    if-nez v8, :cond_d
 
     invoke-virtual {v15}, Landroidx/preference/Preference;->getContext()Landroid/content/Context;
 
@@ -1409,7 +1452,7 @@
 
     move-result v8
 
-    if-nez v8, :cond_c
+    if-nez v8, :cond_d
 
     invoke-virtual {v15}, Landroidx/preference/Preference;->getContext()Landroid/content/Context;
 
@@ -1427,13 +1470,13 @@
 
     move-result v8
 
-    if-eqz v8, :cond_c
+    if-eqz v8, :cond_d
 
     move-object/from16 v1, p1
 
     goto/16 :goto_0
 
-    :cond_c
+    :cond_d
     iget-object v8, v0, Lcom/android/settings/dashboard/DashboardFragment;->mDashboardFeatureProvider:Lcom/android/settings/dashboard/DashboardFeatureProvider;
 
     invoke-virtual/range {p0 .. p0}, Lcom/android/settings/dashboard/DashboardFragment;->getActivity()Landroidx/fragment/app/FragmentActivity;
@@ -1481,7 +1524,7 @@
 
     goto/16 :goto_0
 
-    :cond_d
+    :cond_e
     invoke-interface {v5}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object v1
@@ -1491,7 +1534,7 @@
 
     move-result v8
 
-    if-eqz v8, :cond_f
+    if-eqz v8, :cond_10
 
     invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
@@ -1507,14 +1550,14 @@
 
     move-result-object v9
 
-    if-eqz v9, :cond_e
+    if-eqz v9, :cond_f
 
     invoke-virtual {v2, v9}, Landroidx/preference/PreferenceScreen;->removePreference(Landroidx/preference/Preference;)Z
 
-    :cond_e
+    :cond_f
     goto :goto_4
 
-    :cond_f
+    :cond_10
     iget-object v1, v0, Lcom/android/settings/dashboard/DashboardFragment;->mSummaryLoader:Lcom/android/settings/dashboard/SummaryLoader;
 
     const/4 v8, 0x1

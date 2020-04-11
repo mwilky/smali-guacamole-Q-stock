@@ -121,7 +121,7 @@
     return v1
 
     :cond_0
-    const v0, 0x10401a4
+    const v0, 0x10401a5
 
     invoke-virtual {p0, v0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -192,7 +192,7 @@
     return v1
 
     :cond_0
-    const v1, 0x10401a4
+    const v1, 0x10401a5
 
     invoke-virtual {p0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

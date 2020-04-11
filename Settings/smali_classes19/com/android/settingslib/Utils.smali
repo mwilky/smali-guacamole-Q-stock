@@ -1163,7 +1163,7 @@
 .method public static isDeviceProvisioningPackage(Landroid/content/res/Resources;Ljava/lang/String;)Z
     .locals 2
 
-    const v0, 0x104016f
+    const v0, 0x1040170
 
     invoke-virtual {p0, v0}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 

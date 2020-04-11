@@ -110,7 +110,7 @@
 
     iget-object v1, p0, Lcom/android/settings/homepage/contextualcards/conditional/HotspotConditionController;->mAppContext:Landroid/content/Context;
 
-    const v2, 0x10407ac
+    const v2, 0x10407ad
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 

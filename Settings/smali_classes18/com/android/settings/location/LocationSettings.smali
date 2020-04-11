@@ -4,6 +4,10 @@
 
 
 # static fields
+.field private static final KEY_LOCATION_INFORMATION:Ljava/lang/String; = "op_location_information"
+
+.field private static final KEY_LOCATION_INFORMATION_TYPE:I = 0x9
+
 .field static final LOCATION_DRAWABLE:[I
 
 .field public static final SEARCH_INDEX_DATA_PROVIDER:Lcom/android/settings/search/Indexable$SearchIndexProvider;
@@ -124,7 +128,7 @@
 .end method
 
 .method private static buildPreferenceControllers(Landroid/content/Context;Lcom/android/settings/location/LocationSettings;Lcom/android/settingslib/core/lifecycle/Lifecycle;)Ljava/util/List;
-    .locals 2
+    .locals 4
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -181,6 +185,16 @@
     new-instance v1, Lcom/android/settings/location/AgpsPreferenceController;
 
     invoke-direct {v1, p0}, Lcom/android/settings/location/AgpsPreferenceController;-><init>(Landroid/content/Context;)V
+
+    invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    new-instance v1, Lcom/oneplus/settings/OPLegalSettingsControlPreferenceController;
+
+    const-string v2, "op_location_information"
+
+    const/16 v3, 0x9
+
+    invoke-direct {v1, p0, v2, v3}, Lcom/oneplus/settings/OPLegalSettingsControlPreferenceController;-><init>(Landroid/content/Context;Ljava/lang/String;I)V
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 

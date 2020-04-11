@@ -4,6 +4,8 @@
 
 
 # static fields
+.field private static final BREENO_VOICE_PKG:Ljava/lang/String; = "com.heytap.speechassist"
+
 .field private static final EXTRA_HIDE_INFO_BUTTON:Ljava/lang/String; = "hideInfoButton"
 
 .field private static final TAG:Ljava/lang/String; = "PermissionPrefControl"
@@ -63,7 +65,15 @@
     return-object v0
 .end method
 
-.method static synthetic access$100(Lcom/android/settings/applications/appinfo/AppPermissionPreferenceController;)Ljava/util/List;
+.method static synthetic access$100(Lcom/android/settings/applications/appinfo/AppPermissionPreferenceController;)Ljava/lang/String;
+    .locals 1
+
+    iget-object v0, p0, Lcom/android/settings/applications/appinfo/AppPermissionPreferenceController;->mPackageName:Ljava/lang/String;
+
+    return-object v0
+.end method
+
+.method static synthetic access$200(Lcom/android/settings/applications/appinfo/AppPermissionPreferenceController;)Ljava/util/List;
     .locals 1
 
     iget-object v0, p0, Lcom/android/settings/applications/appinfo/AppPermissionPreferenceController;->mCustomPermissionNameList:Ljava/util/List;
@@ -71,7 +81,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$200(Ljava/util/List;Ljava/util/List;)Ljava/util/List;
+.method static synthetic access$300(Ljava/util/List;Ljava/util/List;)Ljava/util/List;
     .locals 1
 
     invoke-static {p0, p1}, Lcom/android/settings/applications/appinfo/AppPermissionPreferenceController;->mergeList(Ljava/util/List;Ljava/util/List;)Ljava/util/List;
@@ -81,7 +91,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$300(Lcom/android/settings/applications/appinfo/AppPermissionPreferenceController;)Lcom/oneplus/settings/permission/PermissionManager;
+.method static synthetic access$400(Lcom/android/settings/applications/appinfo/AppPermissionPreferenceController;)Lcom/oneplus/settings/permission/PermissionManager;
     .locals 1
 
     iget-object v0, p0, Lcom/android/settings/applications/appinfo/AppPermissionPreferenceController;->mPermissionManager:Lcom/oneplus/settings/permission/PermissionManager;

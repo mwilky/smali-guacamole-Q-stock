@@ -1455,7 +1455,7 @@
     return-void
 
     :cond_10
-    const v0, 0x1040167
+    const v0, 0x1040168
 
     invoke-virtual {v1, v0}, Lcom/android/settings/applications/specialaccess/deviceadmin/DeviceAdminAdd;->getString(I)Ljava/lang/String;
 

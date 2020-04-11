@@ -607,7 +607,7 @@
 
     const/4 v4, 0x0
 
-    const v5, 0x1040636
+    const v5, 0x1040637
 
     invoke-virtual {p0, v5}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -681,7 +681,7 @@
 
     if-eqz v4, :cond_2
 
-    const v6, 0x1040637
+    const v6, 0x1040638
 
     new-array v0, v0, [Ljava/lang/Object;
 
@@ -862,7 +862,7 @@
 
     move-result-object v2
 
-    const v3, 0x1040637
+    const v3, 0x1040638
 
     new-array v4, v9, [Ljava/lang/Object;
 
@@ -1027,7 +1027,7 @@
     goto :goto_7
 
     :cond_9
-    const v0, 0x104063b
+    const v0, 0x104063c
 
     invoke-virtual {p0, v0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1036,7 +1036,7 @@
     :goto_7
     if-nez v7, :cond_a
 
-    const v0, 0x104063c
+    const v0, 0x104063d
 
     invoke-virtual {p0, v0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

@@ -258,7 +258,7 @@
 
     if-nez v2, :cond_7
 
-    const v2, 0x10401a0
+    const v2, 0x10401a1
 
     move-object/from16 v8, p0
 

@@ -14,6 +14,7 @@
         <Preference android:icon="@drawable/op_location_scanning" android:title="@string/location_scanning_screen_title" android:key="location_scanning" android:fragment="com.android.settings.location.ScanningSettings" />
         <com.oneplus.settings.ui.OPRestrictedSwitchPreference android:enabled="false" android:title="@string/managed_profile_location_switch_title" android:selectable="true" android:key="managed_profile_location_switch" settings:useAdminDisabledSummary="true" />
         <PreferenceCategory android:layout="@layout/preference_category_no_label" android:key="location_services" />
+        <Preference android:title="@string/oneplus_location_information" android:key="op_location_information" />
         <PreferenceCategory android:title="@string/managed_profile_location_services" android:key="location_services_managed_profile" />
     </PreferenceCategory>
     <PreferenceCategory android:layout="@layout/preference_category_no_label" android:key="location_footer" settings:allowDividerAbove="false" />

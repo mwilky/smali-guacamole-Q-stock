@@ -6,7 +6,6 @@
     <Preference android:title="@string/terms_title" android:key="terms" settings:controller="com.android.settings.deviceinfo.legal.TermsPreferenceController" />
     <Preference android:title="@string/module_license_title" android:key="module_license" android:fragment="com.android.settings.deviceinfo.legal.ModuleLicensesDashboard" settings:controller="com.android.settings.deviceinfo.legal.ModuleLicensesListPreferenceController" />
     <Preference android:title="@string/webview_license_title" android:key="webview_license" settings:controller="com.android.settings.deviceinfo.legal.WebViewLicensePreferenceController" />
-    <Preference android:title="@string/oneplus_location_information" android:key="op_location_information" />
     <Preference android:title="@string/oneplus_user_agreement" android:key="op_user_agreements" />
     <Preference android:title="@string/oneplus_privacy_policy" android:key="op_privacy_policy" />
     <Preference android:title="@string/oneplus_permission_agreement" android:key="op_permission_agreement" />

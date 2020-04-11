@@ -96,6 +96,90 @@
     return-void
 .end method
 
+.method private isLockTaskModePinned()Z
+    .locals 3
+
+    nop
+
+    invoke-virtual {p0}, Lcom/android/settings/core/SettingsBaseActivity;->getApplicationContext()Landroid/content/Context;
+
+    move-result-object v0
+
+    const-class v1, Landroid/app/ActivityManager;
+
+    invoke-virtual {v0, v1}, Landroid/content/Context;->getSystemService(Ljava/lang/Class;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/app/ActivityManager;
+
+    invoke-virtual {v0}, Landroid/app/ActivityManager;->getLockTaskModeState()I
+
+    move-result v1
+
+    const/4 v2, 0x2
+
+    if-ne v1, v2, :cond_0
+
+    const/4 v1, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v1, 0x0
+
+    :goto_0
+    return v1
+.end method
+
+.method private isSettingsRunOnTop()Z
+    .locals 3
+
+    nop
+
+    invoke-virtual {p0}, Lcom/android/settings/core/SettingsBaseActivity;->getApplicationContext()Landroid/content/Context;
+
+    move-result-object v0
+
+    const-class v1, Landroid/app/ActivityManager;
+
+    invoke-virtual {v0, v1}, Landroid/content/Context;->getSystemService(Ljava/lang/Class;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/app/ActivityManager;
+
+    const/4 v1, 0x1
+
+    invoke-virtual {v0, v1}, Landroid/app/ActivityManager;->getRunningTasks(I)Ljava/util/List;
+
+    move-result-object v1
+
+    const/4 v2, 0x0
+
+    invoke-interface {v1, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Landroid/app/ActivityManager$RunningTaskInfo;
+
+    iget-object v1, v1, Landroid/app/ActivityManager$RunningTaskInfo;->baseActivity:Landroid/content/ComponentName;
+
+    invoke-virtual {v1}, Landroid/content/ComponentName;->getPackageName()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {p0}, Lcom/android/settings/core/SettingsBaseActivity;->getPackageName()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-static {v2, v1}, Landroid/text/TextUtils;->equals(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Z
+
+    move-result v2
+
+    return v2
+.end method
+
 .method private onCategoriesChanged()V
     .locals 3
 
@@ -145,6 +229,27 @@
 
     invoke-super {p0, p1}, Landroidx/fragment/app/FragmentActivity;->onCreate(Landroid/os/Bundle;)V
 
+    invoke-direct {p0}, Lcom/android/settings/core/SettingsBaseActivity;->isLockTaskModePinned()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    invoke-direct {p0}, Lcom/android/settings/core/SettingsBaseActivity;->isSettingsRunOnTop()Z
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    const-string v0, "SettingsBaseActivity"
+
+    const-string v1, "Devices lock task mode pinned."
+
+    invoke-static {v0, v1}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
+
+    invoke-virtual {p0}, Lcom/android/settings/core/SettingsBaseActivity;->finish()V
+
+    :cond_0
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v0
@@ -177,13 +282,13 @@
 
     move-result v5
 
-    if-nez v5, :cond_0
+    if-nez v5, :cond_1
 
     const/4 v5, 0x1
 
     invoke-virtual {p0, v5}, Lcom/android/settings/core/SettingsBaseActivity;->requestWindowFeature(I)Z
 
-    :cond_0
+    :cond_1
     invoke-virtual {p0}, Lcom/android/settings/core/SettingsBaseActivity;->getIntent()Landroid/content/Intent;
 
     move-result-object v5
@@ -192,17 +297,17 @@
 
     move-result v5
 
-    if-eqz v5, :cond_1
+    if-eqz v5, :cond_2
 
     instance-of v5, p0, Lcom/android/settings/SubSettings;
 
-    if-eqz v5, :cond_1
+    if-eqz v5, :cond_2
 
     const v5, 0x7f13012c
 
     invoke-virtual {p0, v5}, Lcom/android/settings/core/SettingsBaseActivity;->setTheme(I)V
 
-    :cond_1
+    :cond_2
     const v5, 0x7f0d02b2
 
     invoke-super {p0, v5}, Landroidx/fragment/app/FragmentActivity;->setContentView(I)V
@@ -221,17 +326,6 @@
 
     const/16 v4, 0x8
 
-    if-eqz v3, :cond_2
-
-    invoke-virtual {v5, v4}, Landroid/widget/Toolbar;->setVisibility(I)V
-
-    return-void
-
-    :cond_2
-    invoke-virtual {p0}, Lcom/android/settings/core/SettingsBaseActivity;->getActionBar()Landroid/app/ActionBar;
-
-    move-result-object v3
-
     if-eqz v3, :cond_3
 
     invoke-virtual {v5, v4}, Landroid/widget/Toolbar;->setVisibility(I)V
@@ -239,6 +333,17 @@
     return-void
 
     :cond_3
+    invoke-virtual {p0}, Lcom/android/settings/core/SettingsBaseActivity;->getActionBar()Landroid/app/ActionBar;
+
+    move-result-object v3
+
+    if-eqz v3, :cond_4
+
+    invoke-virtual {v5, v4}, Landroid/widget/Toolbar;->setVisibility(I)V
+
+    return-void
+
+    :cond_4
     invoke-virtual {p0, v5}, Lcom/android/settings/core/SettingsBaseActivity;->setActionBar(Landroid/widget/Toolbar;)V
 
     return-void

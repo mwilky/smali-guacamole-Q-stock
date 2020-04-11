@@ -249,7 +249,7 @@
 .method private getWfcModeSummary(I)I
     .locals 3
 
-    const v0, 0x1040792
+    const v0, 0x1040793
 
     iget-object v1, p0, Lcom/android/settings/wifi/calling/WifiCallingSettingsForSub;->mImsManager:Lcom/android/ims/ImsManager;
 
@@ -290,17 +290,17 @@
     goto :goto_0
 
     :cond_0
-    const v0, 0x104076c
+    const v0, 0x104076d
 
     goto :goto_0
 
     :cond_1
-    const v0, 0x104076a
+    const v0, 0x104076b
 
     goto :goto_0
 
     :cond_2
-    const v0, 0x104076b
+    const v0, 0x104076c
 
     :cond_3
     :goto_0
