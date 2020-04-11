@@ -4901,18 +4901,57 @@
 
     if-eqz p1, :cond_0
 
-    iget-object p0, p0, Lcom/android/systemui/statusbar/phone/NavigationBarView;->mTintController:Lcom/android/systemui/statusbar/phone/NavBarTintController;
+    iget-object p1, p0, Lcom/android/systemui/statusbar/phone/NavigationBarView;->mTintController:Lcom/android/systemui/statusbar/phone/NavBarTintController;
 
-    invoke-virtual {p0}, Lcom/android/systemui/statusbar/phone/NavBarTintController;->start()V
+    invoke-virtual {p1}, Lcom/android/systemui/statusbar/phone/NavBarTintController;->start()V
 
     goto :goto_0
 
     :cond_0
-    iget-object p0, p0, Lcom/android/systemui/statusbar/phone/NavigationBarView;->mTintController:Lcom/android/systemui/statusbar/phone/NavBarTintController;
+    iget-object p1, p0, Lcom/android/systemui/statusbar/phone/NavigationBarView;->mTintController:Lcom/android/systemui/statusbar/phone/NavBarTintController;
 
-    invoke-virtual {p0}, Lcom/android/systemui/statusbar/phone/NavBarTintController;->stop()V
+    invoke-virtual {p1}, Lcom/android/systemui/statusbar/phone/NavBarTintController;->stop()V
 
     :goto_0
+    invoke-static {}, Lcom/oneplus/util/OpNavBarUtils;->isSupportCustomNavBar()Z
+
+    move-result p1
+
+    if-eqz p1, :cond_2
+
+    iget p1, p0, Lcom/android/systemui/statusbar/phone/NavigationBarView;->mNavBarMode:I
+
+    invoke-static {p1}, Lcom/android/systemui/shared/system/QuickStepContract;->isGesturalMode(I)Z
+
+    move-result p1
+
+    if-nez p1, :cond_2
+
+    invoke-virtual {p0}, Lcom/android/systemui/statusbar/phone/NavigationBarView;->getLightTransitionsController()Lcom/android/systemui/statusbar/phone/LightBarTransitionsController;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Lcom/android/systemui/statusbar/phone/LightBarTransitionsController;->getCurrentDarkIntensity()F
+
+    move-result p1
+
+    const/high16 v0, 0x3f800000    # 1.0f
+
+    cmpl-float p1, p1, v0
+
+    if-nez p1, :cond_1
+
+    const/4 p1, 0x1
+
+    goto :goto_1
+
+    :cond_1
+    const/4 p1, 0x0
+
+    :goto_1
+    invoke-virtual {p0, p1}, Lcom/android/systemui/statusbar/phone/NavigationBarView;->setLightBar(Z)V
+
+    :cond_2
     return-void
 .end method
 

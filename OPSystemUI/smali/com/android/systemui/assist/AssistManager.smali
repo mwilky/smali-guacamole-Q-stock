@@ -556,6 +556,78 @@
     return-void
 .end method
 
+.method public launchHeyTapVoiceAssist()V
+    .locals 4
+
+    new-instance v0, Landroid/content/Intent;
+
+    invoke-direct {v0}, Landroid/content/Intent;-><init>()V
+
+    new-instance v1, Landroid/content/ComponentName;
+
+    const-string v2, "com.heytap.speechassist"
+
+    const-string v3, "com.heytap.speechassist.core.SpeechService"
+
+    invoke-direct {v1, v2, v3}, Landroid/content/ComponentName;-><init>(Ljava/lang/String;Ljava/lang/String;)V
+
+    invoke-virtual {v0, v1}, Landroid/content/Intent;->setComponent(Landroid/content/ComponentName;)Landroid/content/Intent;
+
+    iget-object v1, p0, Lcom/android/systemui/assist/AssistManager;->mContext:Landroid/content/Context;
+
+    invoke-virtual {v1}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
+
+    move-result-object v1
+
+    const-string v2, "caller_package"
+
+    invoke-virtual {v0, v2, v1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
+
+    const-string v1, "start_type"
+
+    const/16 v2, 0x400
+
+    invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
+
+    :try_start_0
+    sget v1, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    const/16 v2, 0x1a
+
+    if-lt v1, v2, :cond_0
+
+    iget-object p0, p0, Lcom/android/systemui/assist/AssistManager;->mContext:Landroid/content/Context;
+
+    invoke-virtual {p0}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
+
+    move-result-object p0
+
+    invoke-virtual {p0, v0}, Landroid/content/Context;->startForegroundService(Landroid/content/Intent;)Landroid/content/ComponentName;
+
+    goto :goto_0
+
+    :cond_0
+    iget-object p0, p0, Lcom/android/systemui/assist/AssistManager;->mContext:Landroid/content/Context;
+
+    invoke-virtual {p0}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
+
+    move-result-object p0
+
+    invoke-virtual {p0, v0}, Landroid/content/Context;->startService(Landroid/content/Intent;)Landroid/content/ComponentName;
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    goto :goto_0
+
+    :catch_0
+    move-exception p0
+
+    invoke-virtual {p0}, Ljava/lang/Exception;->printStackTrace()V
+
+    :goto_0
+    return-void
+.end method
+
 .method public launchVoiceAssistFromKeyguard()V
     .locals 0
 
@@ -848,7 +920,7 @@
 .end method
 
 .method public startAssist(Landroid/os/Bundle;)V
-    .locals 8
+    .locals 9
 
     invoke-direct {p0}, Lcom/android/systemui/assist/AssistManager;->getAssistInfo()Landroid/content/ComponentName;
 
@@ -952,57 +1024,71 @@
 
     invoke-virtual {p1, v3, v1}, Landroid/os/Bundle;->getInt(Ljava/lang/String;I)I
 
-    move-result v1
+    move-result v3
 
-    const/4 v3, 0x1
+    const/4 v4, 0x1
 
-    if-ne v1, v3, :cond_7
+    if-ne v3, v4, :cond_7
 
-    iget-object v4, p0, Lcom/android/systemui/assist/AssistManager;->mHandleController:Lcom/android/systemui/assist/AssistHandleBehaviorController;
+    iget-object v5, p0, Lcom/android/systemui/assist/AssistManager;->mHandleController:Lcom/android/systemui/assist/AssistHandleBehaviorController;
 
-    invoke-virtual {v4}, Lcom/android/systemui/assist/AssistHandleBehaviorController;->onAssistantGesturePerformed()V
+    invoke-virtual {v5}, Lcom/android/systemui/assist/AssistHandleBehaviorController;->onAssistantGesturePerformed()V
 
     :cond_7
-    iget-object v4, p0, Lcom/android/systemui/assist/AssistManager;->mPhoneStateMonitor:Lcom/android/systemui/assist/PhoneStateMonitor;
+    iget-object v5, p0, Lcom/android/systemui/assist/AssistManager;->mPhoneStateMonitor:Lcom/android/systemui/assist/PhoneStateMonitor;
 
-    invoke-virtual {v4}, Lcom/android/systemui/assist/PhoneStateMonitor;->getPhoneState()I
+    invoke-virtual {v5}, Lcom/android/systemui/assist/PhoneStateMonitor;->getPhoneState()I
 
-    move-result v4
+    move-result v5
 
-    const-string v5, "invocation_phone_state"
+    const-string v6, "invocation_phone_state"
 
-    invoke-virtual {p1, v5, v4}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
+    invoke-virtual {p1, v6, v5}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
 
     invoke-static {}, Landroid/os/SystemClock;->uptimeMillis()J
 
-    move-result-wide v5
+    move-result-wide v6
 
-    const-string v7, "invocation_time_ms"
+    const-string v8, "invocation_time_ms"
 
-    invoke-virtual {p1, v7, v5, v6}, Landroid/os/Bundle;->putLong(Ljava/lang/String;J)V
+    invoke-virtual {p1, v8, v6, v7}, Landroid/os/Bundle;->putLong(Ljava/lang/String;J)V
 
-    new-instance v5, Landroid/metrics/LogMaker;
+    new-instance v6, Landroid/metrics/LogMaker;
 
-    const/16 v6, 0x6b4
+    const/16 v7, 0x6b4
 
-    invoke-direct {v5, v6}, Landroid/metrics/LogMaker;-><init>(I)V
+    invoke-direct {v6, v7}, Landroid/metrics/LogMaker;-><init>(I)V
 
-    invoke-virtual {v5, v3}, Landroid/metrics/LogMaker;->setType(I)Landroid/metrics/LogMaker;
+    invoke-virtual {v6, v4}, Landroid/metrics/LogMaker;->setType(I)Landroid/metrics/LogMaker;
+
+    move-result-object v6
+
+    invoke-direct {p0, v3, v5}, Lcom/android/systemui/assist/AssistManager;->toLoggingSubType(II)I
+
+    move-result v3
+
+    invoke-virtual {v6, v3}, Landroid/metrics/LogMaker;->setSubtype(I)Landroid/metrics/LogMaker;
 
     move-result-object v3
 
-    invoke-direct {p0, v1, v4}, Lcom/android/systemui/assist/AssistManager;->toLoggingSubType(II)I
+    invoke-static {v3}, Lcom/android/internal/logging/MetricsLogger;->action(Landroid/metrics/LogMaker;)V
+
+    const-string v3, "com.heytap.speechassist"
+
+    invoke-virtual {p1, v3, v1}, Landroid/os/Bundle;->getBoolean(Ljava/lang/String;Z)Z
 
     move-result v1
 
-    invoke-virtual {v3, v1}, Landroid/metrics/LogMaker;->setSubtype(I)Landroid/metrics/LogMaker;
+    if-ne v1, v4, :cond_8
 
-    move-result-object v1
+    invoke-virtual {p0}, Lcom/android/systemui/assist/AssistManager;->launchHeyTapVoiceAssist()V
 
-    invoke-static {v1}, Lcom/android/internal/logging/MetricsLogger;->action(Landroid/metrics/LogMaker;)V
+    goto :goto_1
 
+    :cond_8
     invoke-direct {p0, p1, v0, v2}, Lcom/android/systemui/assist/AssistManager;->startAssistInternal(Landroid/os/Bundle;Landroid/content/ComponentName;Z)V
 
+    :goto_1
     return-void
 .end method
 

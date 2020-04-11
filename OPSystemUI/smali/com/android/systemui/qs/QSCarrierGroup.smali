@@ -356,7 +356,7 @@
     :cond_0
     iget-object v0, p0, Landroid/widget/LinearLayout;->mContext:Landroid/content/Context;
 
-    const v1, 0x1040366
+    const v1, 0x1040367
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

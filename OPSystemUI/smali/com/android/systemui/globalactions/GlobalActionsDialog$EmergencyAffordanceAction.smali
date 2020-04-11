@@ -26,7 +26,7 @@
 
     const v0, 0x10802b9
 
-    const v1, 0x10402c1
+    const v1, 0x10402c2
 
     invoke-direct {p0, p1, v0, v1}, Lcom/android/systemui/globalactions/GlobalActionsDialog$EmergencyAction;-><init>(Lcom/android/systemui/globalactions/GlobalActionsDialog;II)V
 

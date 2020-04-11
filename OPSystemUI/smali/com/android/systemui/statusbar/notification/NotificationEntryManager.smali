@@ -31,8 +31,6 @@
 
 .field protected final mContext:Landroid/content/Context;
 
-.field private mLatestRankingMap:Landroid/service/notification/NotificationListenerService$RankingMap;
-
 .field protected mNotificationData:Lcom/android/systemui/statusbar/notification/collection/NotificationData;
     .annotation build Lcom/android/internal/annotations/VisibleForTesting;
     .end annotation
@@ -762,8 +760,6 @@
 
     if-eqz v4, :cond_8
 
-    iput-object p2, p0, Lcom/android/systemui/statusbar/notification/NotificationEntryManager;->mLatestRankingMap:Landroid/service/notification/NotificationListenerService$RankingMap;
-
     invoke-direct {p0, p6, v3}, Lcom/android/systemui/statusbar/notification/NotificationEntryManager;->extendLifetime(Lcom/android/systemui/statusbar/notification/collection/NotificationEntry;Lcom/android/systemui/statusbar/NotificationLifetimeExtender;)V
 
     move v0, v1
@@ -1439,7 +1435,7 @@
 .method public synthetic lambda$addNotificationLifetimeExtender$0$NotificationEntryManager(Ljava/lang/String;)V
     .locals 2
 
-    iget-object v0, p0, Lcom/android/systemui/statusbar/notification/NotificationEntryManager;->mLatestRankingMap:Landroid/service/notification/NotificationListenerService$RankingMap;
+    const/4 v0, 0x0
 
     const/4 v1, 0x0
 

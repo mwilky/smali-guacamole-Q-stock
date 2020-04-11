@@ -978,7 +978,7 @@
 
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog;->setTitle(I)V
 
-    const v1, 0x10401bc
+    const v1, 0x10401bd
 
     new-instance v2, Lcom/android/systemui/power/-$$Lambda$PowerNotificationWarnings$i9YMNbne4kaewl8DwiUWlEIhHLU;
 

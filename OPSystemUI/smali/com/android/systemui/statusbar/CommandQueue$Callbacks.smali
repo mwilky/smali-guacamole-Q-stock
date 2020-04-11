@@ -195,6 +195,12 @@
     return-void
 .end method
 
+.method public passSystemUIEvent(I)V
+    .locals 0
+
+    return-void
+.end method
+
 .method public preloadRecentApps()V
     .locals 0
 

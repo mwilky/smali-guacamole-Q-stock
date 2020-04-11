@@ -346,7 +346,7 @@
 
     iput-object p2, p0, Lcom/oneplus/systemui/statusbar/phone/OpPhoneStatusBarPolicy;->mWlbSwitchController:Lcom/android/systemui/statusbar/phone/WLBSwitchController;
 
-    const p2, 0x10406d9
+    const p2, 0x10406da
 
     invoke-virtual {p1, p2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

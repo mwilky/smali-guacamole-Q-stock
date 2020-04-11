@@ -29,7 +29,7 @@
 
     sget p1, Lcom/android/systemui/R$drawable;->ic_global_action_screenshot:I
 
-    const v0, 0x10402c7
+    const v0, 0x10402c8
 
     invoke-direct {p0, p1, v0}, Lcom/android/systemui/globalactions/GlobalActionsDialog$SinglePressAction;-><init>(II)V
 

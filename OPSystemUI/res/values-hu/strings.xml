@@ -847,7 +847,7 @@ Próbálja újra %3$d másodperc múlva."</string>
     <string name="kg_sim_pin_instructions">Adja meg a SIM-kártya PIN-kódját.</string>
     <string name="kg_sim_pin_instructions_multi">Adja meg a(z) „%1$s” SIM-kártya PIN-kódját.</string>
     <string name="kg_sim_unlock_progress_dialog_message">SIM-kártya zárolásának feloldása…</string>
-    <string name="kg_slot_name">Bővítőhely: %d</string>
+    <string name="kg_slot_name">SIM kártya: %d</string>
     <string name="kg_too_many_failed_password_attempts_dialog_message">"%1$d alkalommal helytelenül adta meg a jelszót.
 
 Próbálja újra %2$d másodperc múlva."</string>

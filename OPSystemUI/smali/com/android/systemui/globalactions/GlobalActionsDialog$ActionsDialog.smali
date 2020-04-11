@@ -143,7 +143,7 @@
 
     invoke-virtual {p1, p2}, Landroid/view/Window;->setType(I)V
 
-    const p1, 0x10402cd
+    const p1, 0x10402ce
 
     invoke-virtual {p0, p1}, Landroid/app/Dialog;->setTitle(I)V
 

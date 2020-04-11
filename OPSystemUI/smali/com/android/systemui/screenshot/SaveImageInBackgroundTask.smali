@@ -646,7 +646,7 @@
 
     sget v12, Lcom/android/systemui/R$drawable;->ic_screenshot_share:I
 
-    const v13, 0x104067e
+    const v13, 0x104067f
 
     invoke-virtual {v4, v13}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -737,7 +737,7 @@
 
     sget v6, Lcom/android/systemui/R$drawable;->ic_screenshot_edit:I
 
-    const v7, 0x1040657
+    const v7, 0x1040658
 
     invoke-virtual {v4, v7}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -777,7 +777,7 @@
 
     sget v3, Lcom/android/systemui/R$drawable;->ic_screenshot_delete:I
 
-    const v6, 0x10401f9
+    const v6, 0x10401fa
 
     invoke-virtual {v4, v6}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 

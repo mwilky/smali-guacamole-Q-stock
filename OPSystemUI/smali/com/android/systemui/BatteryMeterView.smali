@@ -209,7 +209,7 @@
 
     invoke-direct {p0}, Lcom/android/systemui/BatteryMeterView;->setupLayoutTransition()V
 
-    const p2, 0x10406b8
+    const p2, 0x10406b9
 
     invoke-virtual {p1, p2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

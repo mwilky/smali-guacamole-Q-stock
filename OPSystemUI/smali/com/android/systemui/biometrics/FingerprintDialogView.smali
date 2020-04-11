@@ -79,7 +79,7 @@
 .method protected getAuthenticatedAccessibilityResourceId()I
     .locals 0
 
-    const p0, 0x104029b
+    const p0, 0x104029c
 
     return p0
 .end method

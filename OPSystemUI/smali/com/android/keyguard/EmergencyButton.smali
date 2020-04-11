@@ -679,12 +679,12 @@
 
     if-eqz v0, :cond_6
 
-    const v0, 0x10403a0
+    const v0, 0x10403a1
 
     goto :goto_3
 
     :cond_6
-    const v0, 0x1040385
+    const v0, 0x1040386
 
     :goto_3
     invoke-virtual {p0, v0}, Landroid/widget/Button;->setText(I)V
