@@ -324,7 +324,7 @@
     <string name="battery_saver_notification_title">"S'ha activat l'estalvi de bateria"</string>
     <string name="battery_saver_start_action">"Activa l'estalvi de bateria"</string>
     <string name="battery_usage_extanded">"L'Estalviador de bateria pot allargar l'ús durant alrededor de %s en funció del vostre ús"</string>
-    <string name="battery_usage_remaining">Hauria de durar sobre %s en funció del vostre ús. Redueix el rendiment i les dades en segon pla.</string>
+    <string name="battery_usage_remaining_time">%s restant</string>
     <string name="biometric_dialog_confirm">Confirma</string>
     <string name="biometric_dialog_empty_space_description">"Zona buida; toca per cancel·lar l'autenticació"</string>
     <string name="biometric_dialog_face_icon_description_authenticated">Cara autenticada</string>

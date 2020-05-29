@@ -241,7 +241,7 @@
 
     iput-object v2, p0, Lcom/oneplus/volume/OpOutputChooserDialog;->mWifiManager:Landroid/net/wifi/WifiManager;
 
-    const-string v2, "telecom"
+    const-string/jumbo v2, "telecom"
 
     invoke-virtual {p1, v2}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 

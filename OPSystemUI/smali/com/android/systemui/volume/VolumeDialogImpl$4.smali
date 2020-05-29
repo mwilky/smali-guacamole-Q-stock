@@ -68,7 +68,7 @@
 
     iget-object v1, p0, Lcom/android/systemui/volume/VolumeDialogImpl$4;->this$0:Lcom/android/systemui/volume/VolumeDialogImpl;
 
-    invoke-static {v1}, Lcom/android/systemui/volume/VolumeDialogImpl;->access$900(Lcom/android/systemui/volume/VolumeDialogImpl;)Landroid/animation/ValueAnimator;
+    invoke-static {v1}, Lcom/android/systemui/volume/VolumeDialogImpl;->access$1200(Lcom/android/systemui/volume/VolumeDialogImpl;)Landroid/animation/ValueAnimator;
 
     move-result-object v1
 
@@ -101,7 +101,7 @@
 
     iget-object p1, p0, Lcom/android/systemui/volume/VolumeDialogImpl$4;->this$0:Lcom/android/systemui/volume/VolumeDialogImpl;
 
-    invoke-static {p1}, Lcom/android/systemui/volume/VolumeDialogImpl;->access$1000(Lcom/android/systemui/volume/VolumeDialogImpl;)Z
+    invoke-static {p1}, Lcom/android/systemui/volume/VolumeDialogImpl;->access$1300(Lcom/android/systemui/volume/VolumeDialogImpl;)Z
 
     move-result p1
 
@@ -111,7 +111,7 @@
 
     const/4 v0, 0x0
 
-    invoke-static {p1, v0}, Lcom/android/systemui/volume/VolumeDialogImpl;->access$1100(Lcom/android/systemui/volume/VolumeDialogImpl;Z)V
+    invoke-static {p1, v0}, Lcom/android/systemui/volume/VolumeDialogImpl;->access$1400(Lcom/android/systemui/volume/VolumeDialogImpl;Z)V
 
     :cond_1
     iget-object p1, p0, Lcom/android/systemui/volume/VolumeDialogImpl$4;->this$0:Lcom/android/systemui/volume/VolumeDialogImpl;
@@ -126,22 +126,22 @@
 
     const/4 v0, -0x2
 
-    invoke-static {p1, v0}, Lcom/android/systemui/volume/VolumeDialogImpl;->access$1200(Lcom/android/systemui/volume/VolumeDialogImpl;I)V
+    invoke-static {p1, v0}, Lcom/android/systemui/volume/VolumeDialogImpl;->access$1500(Lcom/android/systemui/volume/VolumeDialogImpl;I)V
 
     :cond_2
     iget-object p1, p0, Lcom/android/systemui/volume/VolumeDialogImpl$4;->this$0:Lcom/android/systemui/volume/VolumeDialogImpl;
 
     const/4 v0, 0x1
 
-    invoke-static {p1, v0}, Lcom/android/systemui/volume/VolumeDialogImpl;->access$1302(Lcom/android/systemui/volume/VolumeDialogImpl;Z)Z
+    invoke-static {p1, v0}, Lcom/android/systemui/volume/VolumeDialogImpl;->access$1602(Lcom/android/systemui/volume/VolumeDialogImpl;Z)Z
 
     iget-object p1, p0, Lcom/android/systemui/volume/VolumeDialogImpl$4;->this$0:Lcom/android/systemui/volume/VolumeDialogImpl;
 
-    invoke-static {p1}, Lcom/android/systemui/volume/VolumeDialogImpl;->access$1400(Lcom/android/systemui/volume/VolumeDialogImpl;)Lcom/oneplus/volume/OpVolumeDialogImpl$VolumeRow;
+    invoke-static {p1}, Lcom/android/systemui/volume/VolumeDialogImpl;->access$1700(Lcom/android/systemui/volume/VolumeDialogImpl;)Lcom/oneplus/volume/OpVolumeDialogImpl$VolumeRow;
 
     move-result-object v0
 
-    invoke-static {p1, v0}, Lcom/android/systemui/volume/VolumeDialogImpl;->access$1500(Lcom/android/systemui/volume/VolumeDialogImpl;Lcom/oneplus/volume/OpVolumeDialogImpl$VolumeRow;)V
+    invoke-static {p1, v0}, Lcom/android/systemui/volume/VolumeDialogImpl;->access$1800(Lcom/android/systemui/volume/VolumeDialogImpl;Lcom/oneplus/volume/OpVolumeDialogImpl$VolumeRow;)V
 
     sget-boolean p1, Lcom/oneplus/util/OpUtils;->DEBUG_ONEPLUS:Z
 
@@ -161,7 +161,7 @@
 
     iget-object v1, p0, Lcom/android/systemui/volume/VolumeDialogImpl$4;->this$0:Lcom/android/systemui/volume/VolumeDialogImpl;
 
-    invoke-static {v1}, Lcom/android/systemui/volume/VolumeDialogImpl;->access$1600(Lcom/android/systemui/volume/VolumeDialogImpl;)Z
+    invoke-static {v1}, Lcom/android/systemui/volume/VolumeDialogImpl;->access$1900(Lcom/android/systemui/volume/VolumeDialogImpl;)Z
 
     move-result v1
 
@@ -173,7 +173,7 @@
 
     iget-object p0, p0, Lcom/android/systemui/volume/VolumeDialogImpl$4;->this$0:Lcom/android/systemui/volume/VolumeDialogImpl;
 
-    invoke-static {p0}, Lcom/android/systemui/volume/VolumeDialogImpl;->access$1700(Lcom/android/systemui/volume/VolumeDialogImpl;)Lcom/android/systemui/volume/VolumeDialogImpl$CustomDialog;
+    invoke-static {p0}, Lcom/android/systemui/volume/VolumeDialogImpl;->access$2000(Lcom/android/systemui/volume/VolumeDialogImpl;)Lcom/android/systemui/volume/VolumeDialogImpl$CustomDialog;
 
     move-result-object p0
 
@@ -219,7 +219,7 @@
 
     const/4 v0, 0x0
 
-    invoke-static {p1, v0}, Lcom/android/systemui/volume/VolumeDialogImpl;->access$602(Lcom/android/systemui/volume/VolumeDialogImpl;Z)Z
+    invoke-static {p1, v0}, Lcom/android/systemui/volume/VolumeDialogImpl;->access$902(Lcom/android/systemui/volume/VolumeDialogImpl;Z)Z
 
     iget-object p1, p0, Lcom/android/systemui/volume/VolumeDialogImpl$4;->val$lp:Landroid/view/ViewGroup$LayoutParams;
 
@@ -237,7 +237,7 @@
 
     iget-object p1, p0, Lcom/android/systemui/volume/VolumeDialogImpl$4;->this$0:Lcom/android/systemui/volume/VolumeDialogImpl;
 
-    invoke-static {p1}, Lcom/android/systemui/volume/VolumeDialogImpl;->access$700(Lcom/android/systemui/volume/VolumeDialogImpl;)Z
+    invoke-static {p1}, Lcom/android/systemui/volume/VolumeDialogImpl;->access$1000(Lcom/android/systemui/volume/VolumeDialogImpl;)Z
 
     move-result p1
 
@@ -245,7 +245,7 @@
 
     iget-object p0, p0, Lcom/android/systemui/volume/VolumeDialogImpl$4;->this$0:Lcom/android/systemui/volume/VolumeDialogImpl;
 
-    invoke-static {p0, v0}, Lcom/android/systemui/volume/VolumeDialogImpl;->access$800(Lcom/android/systemui/volume/VolumeDialogImpl;Z)V
+    invoke-static {p0, v0}, Lcom/android/systemui/volume/VolumeDialogImpl;->access$1100(Lcom/android/systemui/volume/VolumeDialogImpl;Z)V
 
     :cond_1
     return-void

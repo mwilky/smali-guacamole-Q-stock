@@ -47,13 +47,13 @@
 
     iget-object v0, p0, Lcom/android/systemui/biometrics/BiometricDialogImpl$Callback;->this$0:Lcom/android/systemui/biometrics/BiometricDialogImpl;
 
-    invoke-static {v0}, Lcom/android/systemui/biometrics/BiometricDialogImpl;->access$1000(Lcom/android/systemui/biometrics/BiometricDialogImpl;)Lcom/oneplus/systemui/biometrics/OpBiometricDialogImpl$OpHandler;
+    invoke-static {v0}, Lcom/android/systemui/biometrics/BiometricDialogImpl;->access$1000(Lcom/android/systemui/biometrics/BiometricDialogImpl;)Landroid/os/Handler;
 
     move-result-object v0
 
     iget-object p0, p0, Lcom/android/systemui/biometrics/BiometricDialogImpl$Callback;->this$0:Lcom/android/systemui/biometrics/BiometricDialogImpl;
 
-    invoke-static {p0}, Lcom/android/systemui/biometrics/BiometricDialogImpl;->access$1000(Lcom/android/systemui/biometrics/BiometricDialogImpl;)Lcom/oneplus/systemui/biometrics/OpBiometricDialogImpl$OpHandler;
+    invoke-static {p0}, Lcom/android/systemui/biometrics/BiometricDialogImpl;->access$1000(Lcom/android/systemui/biometrics/BiometricDialogImpl;)Landroid/os/Handler;
 
     move-result-object p0
 
@@ -81,7 +81,7 @@
 
     iget-object p0, p0, Lcom/android/systemui/biometrics/BiometricDialogImpl$Callback;->this$0:Lcom/android/systemui/biometrics/BiometricDialogImpl;
 
-    invoke-static {p0}, Lcom/android/systemui/biometrics/BiometricDialogImpl;->access$1000(Lcom/android/systemui/biometrics/BiometricDialogImpl;)Lcom/oneplus/systemui/biometrics/OpBiometricDialogImpl$OpHandler;
+    invoke-static {p0}, Lcom/android/systemui/biometrics/BiometricDialogImpl;->access$1000(Lcom/android/systemui/biometrics/BiometricDialogImpl;)Landroid/os/Handler;
 
     move-result-object p0
 
@@ -101,7 +101,7 @@
 
     iget-object p0, p0, Lcom/android/systemui/biometrics/BiometricDialogImpl$Callback;->this$0:Lcom/android/systemui/biometrics/BiometricDialogImpl;
 
-    invoke-static {p0}, Lcom/android/systemui/biometrics/BiometricDialogImpl;->access$1000(Lcom/android/systemui/biometrics/BiometricDialogImpl;)Lcom/oneplus/systemui/biometrics/OpBiometricDialogImpl$OpHandler;
+    invoke-static {p0}, Lcom/android/systemui/biometrics/BiometricDialogImpl;->access$1000(Lcom/android/systemui/biometrics/BiometricDialogImpl;)Landroid/os/Handler;
 
     move-result-object p0
 
@@ -121,7 +121,7 @@
 
     iget-object p0, p0, Lcom/android/systemui/biometrics/BiometricDialogImpl$Callback;->this$0:Lcom/android/systemui/biometrics/BiometricDialogImpl;
 
-    invoke-static {p0}, Lcom/android/systemui/biometrics/BiometricDialogImpl;->access$1000(Lcom/android/systemui/biometrics/BiometricDialogImpl;)Lcom/oneplus/systemui/biometrics/OpBiometricDialogImpl$OpHandler;
+    invoke-static {p0}, Lcom/android/systemui/biometrics/BiometricDialogImpl;->access$1000(Lcom/android/systemui/biometrics/BiometricDialogImpl;)Landroid/os/Handler;
 
     move-result-object p0
 
@@ -141,7 +141,7 @@
 
     iget-object p0, p0, Lcom/android/systemui/biometrics/BiometricDialogImpl$Callback;->this$0:Lcom/android/systemui/biometrics/BiometricDialogImpl;
 
-    invoke-static {p0}, Lcom/android/systemui/biometrics/BiometricDialogImpl;->access$1000(Lcom/android/systemui/biometrics/BiometricDialogImpl;)Lcom/oneplus/systemui/biometrics/OpBiometricDialogImpl$OpHandler;
+    invoke-static {p0}, Lcom/android/systemui/biometrics/BiometricDialogImpl;->access$1000(Lcom/android/systemui/biometrics/BiometricDialogImpl;)Landroid/os/Handler;
 
     move-result-object p0
 

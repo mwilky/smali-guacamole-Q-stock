@@ -35,29 +35,13 @@
 
 # virtual methods
 .method public onClick(Landroid/view/View;)V
-    .locals 1
-
-    iget-object p1, p0, Lcom/android/keyguard/KeyguardPasswordView$3;->this$0:Lcom/android/keyguard/KeyguardPasswordView;
-
-    iget-object p1, p1, Lcom/android/keyguard/KeyguardAbsKeyInputView;->mCallback:Lcom/android/keyguard/KeyguardSecurityCallback;
-
-    invoke-interface {p1}, Lcom/android/keyguard/KeyguardSecurityCallback;->userActivity()V
+    .locals 0
 
     iget-object p0, p0, Lcom/android/keyguard/KeyguardPasswordView$3;->this$0:Lcom/android/keyguard/KeyguardPasswordView;
 
-    iget-object p1, p0, Lcom/android/keyguard/KeyguardPasswordView;->mImm:Landroid/view/inputmethod/InputMethodManager;
+    iget-object p0, p0, Lcom/android/keyguard/KeyguardAbsKeyInputView;->mCallback:Lcom/android/keyguard/KeyguardSecurityCallback;
 
-    invoke-virtual {p0}, Landroid/widget/LinearLayout;->getContext()Landroid/content/Context;
-
-    move-result-object p0
-
-    invoke-virtual {p0}, Landroid/content/Context;->getDisplayId()I
-
-    move-result p0
-
-    const/4 v0, 0x0
-
-    invoke-virtual {p1, v0, p0}, Landroid/view/inputmethod/InputMethodManager;->showInputMethodPickerFromSystem(ZI)V
+    invoke-interface {p0}, Lcom/android/keyguard/KeyguardSecurityCallback;->userActivity()V
 
     return-void
 .end method

@@ -408,6 +408,14 @@
     .end array-data
 .end method
 
+.method public isDozing()Z
+    .locals 0
+
+    iget-boolean p0, p0, Lcom/oneplus/aod/OpAodWindowManager;->mDozing:Z
+
+    return p0
+.end method
+
 .method public isWakingAndUnlockByFP()Z
     .locals 1
 

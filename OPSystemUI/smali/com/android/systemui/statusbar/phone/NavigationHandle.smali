@@ -7,9 +7,11 @@
 
 
 # instance fields
-.field private final mBottom:I
+.field private mBottom:I
 
-.field private final mBottomLand:I
+.field private mBottomLand:I
+
+.field private mContext:Landroid/content/Context;
 
 .field private final mDarkColor:I
 
@@ -25,7 +27,7 @@
 
 .field private mPortraitWidth:I
 
-.field private final mRadius:I
+.field private mRadius:I
 
 
 # direct methods
@@ -57,6 +59,8 @@
     const/4 p2, 0x1
 
     iput-boolean p2, p0, Lcom/android/systemui/statusbar/phone/NavigationHandle;->mIsVertical:Z
+
+    iput-object p1, p0, Lcom/android/systemui/statusbar/phone/NavigationHandle;->mContext:Landroid/content/Context;
 
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -125,6 +129,82 @@
     const/4 p1, 0x0
 
     invoke-virtual {p0, p1}, Landroid/view/View;->setFocusable(Z)V
+
+    return-void
+.end method
+
+.method private updateDisplaySize()V
+    .locals 2
+
+    iget-object v0, p0, Lcom/android/systemui/statusbar/phone/NavigationHandle;->mContext:Landroid/content/Context;
+
+    invoke-virtual {v0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v0
+
+    sget v1, Lcom/android/systemui/R$dimen;->navigation_handle_radius:I
+
+    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+
+    move-result v0
+
+    iput v0, p0, Lcom/android/systemui/statusbar/phone/NavigationHandle;->mRadius:I
+
+    iget-object v0, p0, Lcom/android/systemui/statusbar/phone/NavigationHandle;->mContext:Landroid/content/Context;
+
+    invoke-virtual {v0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v0
+
+    const v1, 0x1050188
+
+    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+
+    move-result v0
+
+    iput v0, p0, Lcom/android/systemui/statusbar/phone/NavigationHandle;->mBottom:I
+
+    iget-object v0, p0, Lcom/android/systemui/statusbar/phone/NavigationHandle;->mContext:Landroid/content/Context;
+
+    invoke-virtual {v0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v0
+
+    sget v1, Lcom/android/systemui/R$dimen;->navigation_handle_bottom:I
+
+    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+
+    move-result v0
+
+    iput v0, p0, Lcom/android/systemui/statusbar/phone/NavigationHandle;->mBottomLand:I
+
+    iget-object v0, p0, Lcom/android/systemui/statusbar/phone/NavigationHandle;->mContext:Landroid/content/Context;
+
+    invoke-virtual {v0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v0
+
+    sget v1, Lcom/android/systemui/R$dimen;->navigation_home_handle_width:I
+
+    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+
+    move-result v0
+
+    iput v0, p0, Lcom/android/systemui/statusbar/phone/NavigationHandle;->mPortraitWidth:I
+
+    iget-object v0, p0, Lcom/android/systemui/statusbar/phone/NavigationHandle;->mContext:Landroid/content/Context;
+
+    invoke-virtual {v0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v0
+
+    sget v1, Lcom/android/systemui/R$dimen;->navigation_home_handle_width_land:I
+
+    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+
+    move-result v0
+
+    iput v0, p0, Lcom/android/systemui/statusbar/phone/NavigationHandle;->mLandscapeWidth:I
 
     return-void
 .end method
@@ -264,6 +344,8 @@
 
 .method public setVertical(Z)V
     .locals 1
+
+    invoke-direct {p0}, Lcom/android/systemui/statusbar/phone/NavigationHandle;->updateDisplaySize()V
 
     iput-boolean p1, p0, Lcom/android/systemui/statusbar/phone/NavigationHandle;->mIsVertical:Z
 

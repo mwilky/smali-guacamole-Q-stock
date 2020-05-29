@@ -324,7 +324,7 @@
     <string name="battery_saver_notification_title">Economisire baterie activată</string>
     <string name="battery_saver_start_action">Activați economisirea bateriei</string>
     <string name="battery_usage_extanded">Economizorul de baterie poate extinde utilizarea pentru aproximativ %s pe baza utilizării dvs.</string>
-    <string name="battery_usage_remaining">Ar trebui să dureze aproximativ %s pe baza utilizării dvs. Reduce performanța și datele de fundal.</string>
+    <string name="battery_usage_remaining_time">Timp rămas: %s</string>
     <string name="biometric_dialog_confirm">Confirmați</string>
     <string name="biometric_dialog_empty_space_description">Zonă goală, atingeți pentru a anula autentificarea</string>
     <string name="biometric_dialog_face_icon_description_authenticated">Chip autentificat</string>
@@ -1088,7 +1088,7 @@ De asemenea, sunteți conectat(ă) la o rețea VPN care vă poate monitoriza act
     <string name="oneplus_laboratory_added_toast">Felicitări! Laboratorul OnePlus a fost adăugat în Setări</string>
     <string name="oneplus_screen_features_not_available_toast">Când sunt activate, caracteristicile precum calibrarea ecranului nu vor fi disponibile</string>
     <string name="oneplus_threekey_navigation_disturb_changed">S-a schimbat „Nu deranjați”!</string>
-    <string name="oneplus_threekey_navigation_next">URMĂTOAREA</string>
+    <string name="oneplus_threekey_navigation_next">URMĂTORUL</string>
     <string name="oneplus_threekey_navigation_silence">Silențios total</string>
     <string name="oneplus_threekey_navigation_slider_has_changed">Alert slider s-a schimbat!</string>
     <string name="oneplus_threekey_navigation_sound">Toate sunetele permise</string>

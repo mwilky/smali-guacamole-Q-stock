@@ -404,7 +404,7 @@
 
     sget-object v0, Lcom/oneplus/systemui/util/OpMdmLogger;->sQsEvent:Ljava/util/HashMap;
 
-    const-string v2, "swipe_notif"
+    const-string/jumbo v2, "swipe_notif"
 
     invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -448,7 +448,7 @@
 .method public static log(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
 
-    const-string v0, "1000000005"
+    const-string v0, "X9HFK50WT7"
 
     invoke-static {p0, p1, p2, v0}, Lcom/oneplus/systemui/util/OpMdmLogger;->log(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 

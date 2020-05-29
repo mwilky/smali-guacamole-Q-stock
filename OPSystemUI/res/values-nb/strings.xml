@@ -324,7 +324,7 @@
     <string name="battery_saver_notification_title">Batterisparing er på</string>
     <string name="battery_saver_start_action">Slå på batterisparing</string>
     <string name="battery_usage_extanded">Batterisparing kan forlenge bruke med omtrent %s basert på bruken</string>
-    <string name="battery_usage_remaining">Skal vare omtrent %s basert på bruken. Reduserer ytelsen og bakgrunnsdata.</string>
+    <string name="battery_usage_remaining_time">%s gjenstår</string>
     <string name="biometric_dialog_confirm">Bekreft</string>
     <string name="biometric_dialog_empty_space_description">Tomt område – trykk for å avbryte autentisering</string>
     <string name="biometric_dialog_face_icon_description_authenticated">Ansiktet er autentisert</string>

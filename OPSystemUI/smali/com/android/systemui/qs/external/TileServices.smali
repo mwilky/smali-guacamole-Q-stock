@@ -98,7 +98,7 @@
 
     iput-object v0, p0, Lcom/android/systemui/qs/external/TileServices;->mTokenMap:Landroid/util/ArrayMap;
 
-    const/4 v0, 0x3
+    const/4 v0, 0x5
 
     iput v0, p0, Lcom/android/systemui/qs/external/TileServices;->mMaxBound:I
 

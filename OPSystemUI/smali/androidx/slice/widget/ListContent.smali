@@ -537,7 +537,7 @@
 
     const/4 v0, 0x0
 
-    const-string v2, "text"
+    const-string/jumbo v2, "text"
 
     invoke-static {p0, v2, v0, v0}, Landroidx/slice/core/SliceQuery;->find(Landroidx/slice/SliceItem;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Landroidx/slice/SliceItem;
 

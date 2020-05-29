@@ -324,7 +324,7 @@
     <string name="battery_saver_notification_title">ಬ್ಯಾಟರಿ ರಕ್ಷಕ ಆನ್ ಆಗಿದೆ</string>
     <string name="battery_saver_start_action">ಬ್ಯಾಟರಿ ಸೇವರ್‌ ಆನ್‌ ಮಾಡಿ</string>
     <string name="battery_usage_extanded">ಬ್ಯಾಟರಿ ಸೇವರ್ ಸಕ್ರಿಯಗೊಳಿಸಿದರೆ, ನಿಮ್ಮ ಬಳಕೆಯ ಆಧಾರದ ಮೇಲೆ ಸುಮಾರು %s ರಷ್ಟು ಬಳಕೆಯ ಸಮಯವನ್ನು ಹೆಚ್ಚಿಸಬಹುದು</string>
-    <string name="battery_usage_remaining">ನಿಮ್ಮ ಬಳಕೆಯ ಆಧಾರದ ಮೇಲೆ ಸುಮಾರು %s ಕಾಲ ಕಾರ್ಯನಿರ್ವಹಿಸಬೇಕು. ಕಾರ್ಯಕ್ಷಮತೆ ಹಾಗೂ ಹಿನ್ನೆಲೆಯ ಡೇಟಾವನ್ನು ಕಡಿಮೆ ಮಾಡುತ್ತದೆ.</string>
+    <string name="battery_usage_remaining_time">%s ಉಳಿದಿದೆ</string>
     <string name="biometric_dialog_confirm">ದೃಢೀಕರಿಸಿ</string>
     <string name="biometric_dialog_empty_space_description">ಖಾಲಿ ಪ್ರದೇಶ, ದೃಢೀಕರಣವನ್ನು ರದ್ದುಗೊಳಿಸಲು ಟ್ಯಾಪ್ ಮಾಡಿ</string>
     <string name="biometric_dialog_face_icon_description_authenticated">ಮುಖವನ್ನು ದೃಢೀಕರಿಸಲಾಗಿದೆ</string>

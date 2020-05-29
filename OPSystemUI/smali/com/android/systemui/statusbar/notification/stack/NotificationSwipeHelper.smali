@@ -479,7 +479,7 @@
 .method public dismissChild(Landroid/view/View;FZ)V
     .locals 1
 
-    const-string v0, "swipe_notif"
+    const-string/jumbo v0, "swipe_notif"
 
     invoke-static {v0}, Lcom/oneplus/systemui/util/OpMdmLogger;->logQsPanel(Ljava/lang/String;)V
 

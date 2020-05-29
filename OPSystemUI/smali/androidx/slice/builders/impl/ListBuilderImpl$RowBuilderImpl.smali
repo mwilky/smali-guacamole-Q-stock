@@ -191,7 +191,7 @@
 
     new-array v1, v1, [Ljava/lang/String;
 
-    const-string v2, "text"
+    const-string/jumbo v2, "text"
 
     const/4 v3, 0x0
 
@@ -222,7 +222,7 @@
 
     move-result-object v1
 
-    const-string v2, "text"
+    const-string/jumbo v2, "text"
 
     const/4 v3, 0x0
 

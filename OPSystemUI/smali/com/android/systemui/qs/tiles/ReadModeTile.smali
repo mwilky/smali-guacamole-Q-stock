@@ -39,7 +39,7 @@
 
     const/4 v1, 0x0
 
-    const/16 v2, 0xe5
+    const/16 v2, 0xe6
 
     aput v2, v0, v1
 
@@ -282,7 +282,7 @@
 
     iget-object v1, p0, Lcom/android/systemui/qs/tileimpl/QSTileImpl;->mContext:Landroid/content/Context;
 
-    const v2, 0x50d0061
+    const v2, 0x50d0062
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -294,7 +294,7 @@
 
     iget-object v1, p0, Lcom/android/systemui/qs/tileimpl/QSTileImpl;->mContext:Landroid/content/Context;
 
-    const v2, 0x50d0060
+    const v2, 0x50d0061
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -324,7 +324,7 @@
 
     invoke-direct {v3, v4, v1}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;I)V
 
-    const v1, 0x50d0062
+    const v1, 0x50d0063
 
     invoke-virtual {v3, v1}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
@@ -752,7 +752,7 @@
 
     iget-object p0, p0, Lcom/android/systemui/qs/tileimpl/QSTileImpl;->mContext:Landroid/content/Context;
 
-    const p2, 0x50d0061
+    const p2, 0x50d0062
 
     invoke-virtual {p0, p2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -771,7 +771,7 @@
 
     iget-object p0, p0, Lcom/android/systemui/qs/tileimpl/QSTileImpl;->mContext:Landroid/content/Context;
 
-    const p2, 0x50d0060
+    const p2, 0x50d0061
 
     invoke-virtual {p0, p2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

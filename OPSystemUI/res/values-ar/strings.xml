@@ -324,7 +324,7 @@
     <string name="battery_saver_notification_title">تم تفعيل ميزة توفير شحن البطارية</string>
     <string name="battery_saver_start_action">هل تريد تفعيل ميزة توفير شحن البطارية؟</string>
     <string name="battery_usage_extanded">قد يمد توفير طاقة البطارية فترة الاستخدام لحوالي %s بناءً على استخدامك</string>
-    <string name="battery_usage_remaining">يجب أن يستمر لمدة %s بناءً على استخدامك. يقلل من الأداء وبيانات الخلفية.</string>
+    <string name="battery_usage_remaining_time">%s متبقية</string>
     <string name="biometric_dialog_confirm">تأكيد</string>
     <string name="biometric_dialog_empty_space_description">منطقة خالية، يُرجى النقر لإلغاء المصادقة.</string>
     <string name="biometric_dialog_face_icon_description_authenticated">تمّت مصادقة الوجه.</string>
@@ -1030,7 +1030,7 @@
     <string name="music_controls_no_title">بلا عنوان</string>
     <string name="nav_bar">شريط التنقل</string>
     <string name="nav_bar_default">(تلقائي)</string>
-    <string name="nav_bar_guide_positive">حصلت عليه</string>
+    <string name="nav_bar_guide_positive">فهمت ذلك</string>
     <string name="nav_bar_guide_title">اسحب لأعلى من أسفل لإظهار شريط التنقل. لإيقاف إخفاء التنقل، يُرجى النقر هنا.</string>
     <string name="nav_bar_layout">التنسيق</string>
     <string name="no_application">لا شيء</string>
@@ -1090,7 +1090,7 @@
     <string name="oneplus_threekey_navigation_disturb_changed">تم تغيير \"وضع عدم الإزعاج\"!</string>
     <string name="oneplus_threekey_navigation_next">التالي</string>
     <string name="oneplus_threekey_navigation_silence">صمت تام</string>
-    <string name="oneplus_threekey_navigation_slider_has_changed">تم تغيير شريط تمرير التنبيهات!</string>
+    <string name="oneplus_threekey_navigation_slider_has_changed">تم تغيير Alert Slider!</string>
     <string name="oneplus_threekey_navigation_sound">جميع الأصوات مسموح بها</string>
     <string name="oneplus_threekey_navigation_turned_on_here">يمكن تشغيلها من خلال الزر بالأعلى</string>
     <string name="oneplus_threekey_navigation_vibration">اهتزاز فقط</string>
@@ -1102,7 +1102,7 @@
     <string name="op_earphone_connected_fail">فشل الاقتران. يمكنك التحقق من حالة سماعة الرأس والبلوتوث.</string>
     <string name="op_earphone_connected_success">مقترن. اضغط لتعيين المزيد.</string>
     <string name="op_earphone_device">اضغط للاقتران</string>
-    <string name="op_earphone_title">OnePlus Bullets اللاسلكية</string>
+    <string name="op_earphone_title">OnePlus Bullets Wireless</string>
     <string name="op_emergency_indicator_hint_text">مرر لأسفل للحصول على خدمات الطوارئ</string>
     <string name="op_keyguard_indication_face_unlocked">غير مقفل بإلغاء القفل بالوجه</string>
     <string name="op_keyguard_indication_trust_unlocked">غير مقفل بواسطة القفل الذكي</string>

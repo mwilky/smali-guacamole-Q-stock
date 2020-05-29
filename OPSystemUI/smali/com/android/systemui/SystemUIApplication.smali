@@ -95,6 +95,56 @@
     return-object p0
 .end method
 
+.method private needOverrideServicesByOp([Ljava/lang/String;)[Ljava/lang/String;
+    .locals 1
+
+    new-instance p0, Ljava/util/ArrayList;
+
+    invoke-direct {p0}, Ljava/util/ArrayList;-><init>()V
+
+    if-eqz p1, :cond_0
+
+    array-length v0, p1
+
+    if-lez v0, :cond_0
+
+    invoke-static {p1}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
+
+    move-result-object p1
+
+    invoke-virtual {p0, p1}, Ljava/util/ArrayList;->addAll(Ljava/util/Collection;)Z
+
+    :cond_0
+    invoke-static {}, Lcom/oneplus/util/OpUtils;->isCustomFingerprint()Z
+
+    move-result p1
+
+    if-eqz p1, :cond_1
+
+    const-class p1, Lcom/oneplus/systemui/biometrics/OpBiometricDialogImpl;
+
+    invoke-virtual {p1}, Ljava/lang/Class;->getName()Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-virtual {p0, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    :cond_1
+    invoke-virtual {p0}, Ljava/util/ArrayList;->size()I
+
+    move-result p1
+
+    new-array p1, p1, [Ljava/lang/String;
+
+    invoke-virtual {p0, p1}, Ljava/util/ArrayList;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
+
+    move-result-object p0
+
+    check-cast p0, [Ljava/lang/String;
+
+    return-object p0
+.end method
+
 .method private startServicesIfNeeded([Ljava/lang/String;)V
     .locals 11
 
@@ -119,7 +169,7 @@
 
     if-nez v0, :cond_1
 
-    const-string v0, "sys.boot_completed"
+    const-string/jumbo v0, "sys.boot_completed"
 
     invoke-static {v0}, Landroid/os/SystemProperties;->get(Ljava/lang/String;)Ljava/lang/String;
 
@@ -625,6 +675,10 @@
     sget v1, Lcom/android/systemui/R$array;->config_systemUIServiceComponents:I
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getStringArray(I)[Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-direct {p0, v0}, Lcom/android/systemui/SystemUIApplication;->needOverrideServicesByOp([Ljava/lang/String;)[Ljava/lang/String;
 
     move-result-object v0
 

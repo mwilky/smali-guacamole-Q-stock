@@ -32,7 +32,7 @@
 
     const-string/jumbo v4, "zen"
 
-    const-string v5, "sync"
+    const-string/jumbo v5, "sync"
 
     const-string/jumbo v6, "tty"
 
@@ -305,7 +305,7 @@
 
     invoke-virtual {v1, v0}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V
 
-    const-string v0, "sysui_tuner_demo_on"
+    const-string/jumbo v0, "sysui_tuner_demo_on"
 
     invoke-direct {p0, v0, v2}, Lcom/android/systemui/tuner/DemoModeFragment;->setGlobal(Ljava/lang/String;I)V
 
@@ -333,7 +333,7 @@
 
     invoke-virtual {v1, v0}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V
 
-    const-string v0, "sysui_tuner_demo_on"
+    const-string/jumbo v0, "sysui_tuner_demo_on"
 
     const/4 v1, 0x0
 
@@ -355,7 +355,7 @@
 
     const/4 v1, 0x0
 
-    const-string v2, "sysui_demo_allowed"
+    const-string/jumbo v2, "sysui_demo_allowed"
 
     invoke-static {v0, v2, v1}, Landroid/provider/Settings$Global;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
 
@@ -390,7 +390,7 @@
 
     const/4 v1, 0x0
 
-    const-string v2, "sysui_tuner_demo_on"
+    const-string/jumbo v2, "sysui_tuner_demo_on"
 
     invoke-static {v0, v2, v1}, Landroid/provider/Settings$Global;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
 
@@ -485,7 +485,7 @@
 
     move-result-object p1
 
-    const-string p2, "sysui_demo_allowed"
+    const-string/jumbo p2, "sysui_demo_allowed"
 
     invoke-static {p2}, Landroid/provider/Settings$Global;->getUriFor(Ljava/lang/String;)Landroid/net/Uri;
 
@@ -495,7 +495,7 @@
 
     invoke-virtual {p1, p2, v0, v1}, Landroid/content/ContentResolver;->registerContentObserver(Landroid/net/Uri;ZLandroid/database/ContentObserver;)V
 
-    const-string p2, "sysui_tuner_demo_on"
+    const-string/jumbo p2, "sysui_tuner_demo_on"
 
     invoke-static {p2}, Landroid/provider/Settings$Global;->getUriFor(Ljava/lang/String;)Landroid/net/Uri;
 
@@ -618,7 +618,7 @@
 
     invoke-static {p1, v0, p2}, Lcom/android/internal/logging/MetricsLogger;->action(Landroid/content/Context;IZ)V
 
-    const-string p1, "sysui_demo_allowed"
+    const-string/jumbo p1, "sysui_demo_allowed"
 
     invoke-direct {p0, p1, p2}, Lcom/android/systemui/tuner/DemoModeFragment;->setGlobal(Ljava/lang/String;I)V
 

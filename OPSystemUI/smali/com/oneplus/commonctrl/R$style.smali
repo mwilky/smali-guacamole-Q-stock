@@ -60,20 +60,26 @@
 
 .field public static final Oneplus_Widget_Design_OPTabLayout:I = 0x7f12027e
 
-.field public static final TextAppearance_Material_Widget_Calendar_Day:I = 0x7f12038a
+.field public static final TextAppearance_Material_Widget_Calendar_Day:I = 0x7f12038c
 
-.field public static final TextAppearance_Material_Widget_Calendar_DayOfWeek:I = 0x7f12038b
+.field public static final TextAppearance_Material_Widget_Calendar_DayOfWeek:I = 0x7f12038d
 
-.field public static final TextAppearance_Material_Widget_Calendar_Month:I = 0x7f12038c
+.field public static final TextAppearance_Material_Widget_Calendar_Month:I = 0x7f12038e
 
-.field public static final TextAppearance_Widget_ActionBar_Title:I = 0x7f1203c3
+.field public static final TextAppearance_Widget_ActionBar_Title:I = 0x7f1203c5
 
-.field public static final Widget_Design_AppBarLayout:I = 0x7f120451
+.field public static final Widget_Design_AppBarLayout:I = 0x7f120453
 
-.field public static final Widget_Design_BottomNavigationView:I = 0x7f120452
+.field public static final Widget_Design_BottomNavigationView:I = 0x7f120454
 
-.field public static final Widget_Design_CollapsingToolbar:I = 0x7f120453
+.field public static final Widget_Design_CollapsingToolbar:I = 0x7f120455
 
-.field public static final Widget_Design_CoordinatorLayout:I = 0x7f120454
+.field public static final Widget_Design_CoordinatorLayout:I = 0x7f120456
 
-.field public static final Widget_Design_OPTextInputLayout:I = 0x7f120455
+.field public static final Widget_Design_OPTextInputLayout:I = 0x7f120457
+
+.field public static final oneplus_contorl_text_style_body1:I = 0x7f1204c6
+
+.field public static final oneplus_contorl_text_style_subheading:I = 0x7f1204d2
+
+.field public static final oneplus_contorl_text_style_title:I = 0x7f1204d4

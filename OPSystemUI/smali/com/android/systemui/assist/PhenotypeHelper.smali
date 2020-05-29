@@ -17,7 +17,7 @@
 .method addOnPropertiesChangedListener(Ljava/util/concurrent/Executor;Landroid/provider/DeviceConfig$OnPropertiesChangedListener;)V
     .locals 0
 
-    const-string p0, "systemui"
+    const-string/jumbo p0, "systemui"
 
     invoke-static {p0, p1, p2}, Landroid/provider/DeviceConfig;->addOnPropertiesChangedListener(Ljava/lang/String;Ljava/util/concurrent/Executor;Landroid/provider/DeviceConfig$OnPropertiesChangedListener;)V
 
@@ -27,7 +27,7 @@
 .method getBoolean(Ljava/lang/String;Z)Z
     .locals 0
 
-    const-string p0, "systemui"
+    const-string/jumbo p0, "systemui"
 
     invoke-static {p0, p1, p2}, Landroid/provider/DeviceConfig;->getBoolean(Ljava/lang/String;Ljava/lang/String;Z)Z
 
@@ -39,7 +39,7 @@
 .method getInt(Ljava/lang/String;I)I
     .locals 0
 
-    const-string p0, "systemui"
+    const-string/jumbo p0, "systemui"
 
     invoke-static {p0, p1, p2}, Landroid/provider/DeviceConfig;->getInt(Ljava/lang/String;Ljava/lang/String;I)I
 
@@ -51,7 +51,7 @@
 .method getLong(Ljava/lang/String;J)J
     .locals 0
 
-    const-string p0, "systemui"
+    const-string/jumbo p0, "systemui"
 
     invoke-static {p0, p1, p2, p3}, Landroid/provider/DeviceConfig;->getLong(Ljava/lang/String;Ljava/lang/String;J)J
 
@@ -63,7 +63,7 @@
 .method getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
 
-    const-string p0, "systemui"
+    const-string/jumbo p0, "systemui"
 
     invoke-static {p0, p1, p2}, Landroid/provider/DeviceConfig;->getString(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 

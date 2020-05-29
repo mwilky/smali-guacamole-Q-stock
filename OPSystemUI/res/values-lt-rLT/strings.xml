@@ -17,7 +17,7 @@
     <string name="allow_notification">Leisti pranešimus</string>
     <string name="battery_low_warning">Liko %s; įjunkite energijos taupymą, kad prailgintumėte darbo laiką</string>
     <string name="battery_usage_extanded">Pagal jūsų naudojimą energijos taupymo režimas gali prailginti darbo laiką apie %s</string>
-    <string name="battery_usage_remaining">Pagal jūsų naudojimą turėtų veikti apie %s. Sumažina darbo našumą ir foniniu režimu siunčiamų duomenų kiekį.</string>
+    <string name="battery_usage_remaining_time">Liko %s</string>
     <string name="clear_process_done">Viskas aišku!</string>
     <string name="clear_process_warning_checkbox">Supratau, daugiau neberodyti</string>
     <string name="clear_process_warning_message">Tai išjungs visus foninius procesus ir dėl to galimi nenumatyti rezultatai. Kai kurios programėlės gali nebeveikti ir jas reikės paleisti iš naujo. Tęsti?</string>

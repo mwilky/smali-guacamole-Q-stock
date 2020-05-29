@@ -1546,6 +1546,16 @@
 
     move-result-object v1
 
+    if-eqz v1, :cond_6
+
+    invoke-static {}, Lcom/oneplus/plugin/OpLsState;->getInstance()Lcom/oneplus/plugin/OpLsState;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Lcom/oneplus/plugin/OpLsState;->getFpAnimationCtrl()Lcom/oneplus/systemui/biometrics/OpFingerprintAnimationCtrl;
+
+    move-result-object v1
+
     invoke-virtual {v1}, Lcom/oneplus/systemui/biometrics/OpFingerprintAnimationCtrl;->isPlayingAnimation()Z
 
     move-result v1

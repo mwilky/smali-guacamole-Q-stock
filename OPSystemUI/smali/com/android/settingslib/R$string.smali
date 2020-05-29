@@ -126,46 +126,44 @@
 
 .field public static final wifi_ap_unable_to_handle_new_sta:I = 0x7f11071f
 
-.field public static final wifi_auth_password_wrong:I = 0x7f110720
+.field public static final wifi_check_password_try_again:I = 0x7f110723
 
-.field public static final wifi_check_password_try_again:I = 0x7f110724
+.field public static final wifi_connected_no_internet:I = 0x7f110724
 
-.field public static final wifi_connected_no_internet:I = 0x7f110725
+.field public static final wifi_disabled_by_recommendation_provider:I = 0x7f110727
 
-.field public static final wifi_disabled_by_recommendation_provider:I = 0x7f110728
+.field public static final wifi_disabled_generic:I = 0x7f110728
 
-.field public static final wifi_disabled_generic:I = 0x7f110729
+.field public static final wifi_disabled_network_failure:I = 0x7f110729
 
-.field public static final wifi_disabled_network_failure:I = 0x7f11072a
+.field public static final wifi_disabled_password_failure:I = 0x7f11072a
 
-.field public static final wifi_disabled_password_failure:I = 0x7f11072b
+.field public static final wifi_disconnected:I = 0x7f11072c
 
-.field public static final wifi_disconnected:I = 0x7f11072d
+.field public static final wifi_fail_to_scan:I = 0x7f110731
 
-.field public static final wifi_fail_to_scan:I = 0x7f110732
+.field public static final wifi_limited_connection:I = 0x7f110736
 
-.field public static final wifi_limited_connection:I = 0x7f110737
+.field public static final wifi_metered_label:I = 0x7f110737
 
-.field public static final wifi_metered_label:I = 0x7f110738
+.field public static final wifi_no_internet:I = 0x7f110739
 
-.field public static final wifi_no_internet:I = 0x7f11073a
+.field public static final wifi_no_internet_no_reconnect:I = 0x7f11073a
 
-.field public static final wifi_no_internet_no_reconnect:I = 0x7f11073b
+.field public static final wifi_not_in_range:I = 0x7f11073b
 
-.field public static final wifi_not_in_range:I = 0x7f11073c
+.field public static final wifi_remembered:I = 0x7f11073c
 
-.field public static final wifi_remembered:I = 0x7f11073d
+.field public static final wifi_status_no_internet:I = 0x7f110762
 
-.field public static final wifi_status_no_internet:I = 0x7f110763
+.field public static final wifi_status_sign_in_required:I = 0x7f110763
 
-.field public static final wifi_status_sign_in_required:I = 0x7f110764
+.field public static final wifi_unmetered_label:I = 0x7f110764
 
-.field public static final wifi_unmetered_label:I = 0x7f110765
+.field public static final zen_alarm_warning:I = 0x7f110771
 
-.field public static final zen_alarm_warning:I = 0x7f110772
+.field public static final zen_alarm_warning_indef:I = 0x7f110772
 
-.field public static final zen_alarm_warning_indef:I = 0x7f110773
+.field public static final zen_mode_enable_dialog_turn_on:I = 0x7f11077a
 
-.field public static final zen_mode_enable_dialog_turn_on:I = 0x7f11077b
-
-.field public static final zen_mode_settings_turn_on_dialog_title:I = 0x7f11077e
+.field public static final zen_mode_settings_turn_on_dialog_title:I = 0x7f11077d

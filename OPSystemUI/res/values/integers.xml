@@ -136,7 +136,7 @@
     <integer name="preference_screen_header_scrollbarStyle">0x02000000</integer>
     <integer name="preferences_left_pane_weight">4</integer>
     <integer name="preferences_right_pane_weight">6</integer>
-    <integer name="qs_footer_actions_weight">1</integer>
+    <integer name="qs_footer_actions_weight">5</integer>
     <integer name="qs_footer_actions_width">0</integer>
     <integer name="quick_qs_panel_max_columns">6</integer>
     <integer name="quick_settings_brightness_dialog_long_timeout">4000</integer>

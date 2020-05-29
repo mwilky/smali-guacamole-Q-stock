@@ -3,6 +3,17 @@
 .source "OPAlertDialog.java"
 
 
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/oneplus/lib/app/OPAlertDialog;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x9
+    name = "Builder"
+.end annotation
+
+
 # instance fields
 .field private final P:Lcom/oneplus/lib/app/OPAlertController$AlertParams;
 

@@ -324,7 +324,7 @@
     <string name="battery_saver_notification_title">Oszczędzanie baterii jest włączone</string>
     <string name="battery_saver_start_action">Włączyć Oszczędzanie baterii?</string>
     <string name="battery_usage_extanded">Tryb Oszczędzanie baterii może wydłużyć czas użytkowania o ok. %s, w zależności od sposobu korzystania</string>
-    <string name="battery_usage_remaining">Powinno wystarczyć na %s, w zależności od sposobu korzystania. Powoduje obniżenie wydajności i użycia danych w tle.</string>
+    <string name="battery_usage_remaining_time">Pozostało %s</string>
     <string name="biometric_dialog_confirm">Potwierdź</string>
     <string name="biometric_dialog_empty_space_description">Pusty obszar, kliknij, by anulować uwierzytelnianie</string>
     <string name="biometric_dialog_face_icon_description_authenticated">Twarz rozpoznana</string>
@@ -1253,7 +1253,7 @@ Aby dowiedzieć się więcej, skontaktuj się z administratorem.
     <string name="quick_settings_bluetooth_multiple_devices_label">Bluetooth (urządzenia: %d)</string>
     <string name="quick_settings_bluetooth_off_label">Bluetooth wył.</string>
     <string name="quick_settings_bluetooth_secondary_label_audio">Dźwięk</string>
-    <string name="quick_settings_bluetooth_secondary_label_battery_level">%s naładowania baterii</string>
+    <string name="quick_settings_bluetooth_secondary_label_battery_level">%s baterii</string>
     <string name="quick_settings_bluetooth_secondary_label_headset">Zestaw słuchawkowy</string>
     <string name="quick_settings_bluetooth_secondary_label_hearing_aids">Aparaty słuchowe</string>
     <string name="quick_settings_bluetooth_secondary_label_input">Wejście</string>

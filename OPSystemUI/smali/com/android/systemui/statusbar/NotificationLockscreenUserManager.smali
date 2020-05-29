@@ -12,6 +12,9 @@
 
 
 # virtual methods
+.method public abstract addUserChangedListener(Lcom/android/systemui/statusbar/NotificationLockscreenUserManager$UserChangedListener;)V
+.end method
+
 .method public abstract getCurrentUserId()I
 .end method
 

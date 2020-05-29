@@ -1,5 +1,5 @@
 .class Lcom/android/systemui/biometrics/BiometricDialogImpl$1;
-.super Lcom/oneplus/systemui/biometrics/OpBiometricDialogImpl$OpHandler;
+.super Landroid/os/Handler;
 .source "BiometricDialogImpl.java"
 
 
@@ -19,12 +19,12 @@
 
 
 # direct methods
-.method constructor <init>(Lcom/android/systemui/biometrics/BiometricDialogImpl;)V
+.method constructor <init>(Lcom/android/systemui/biometrics/BiometricDialogImpl;Landroid/os/Looper;)V
     .locals 0
 
     iput-object p1, p0, Lcom/android/systemui/biometrics/BiometricDialogImpl$1;->this$0:Lcom/android/systemui/biometrics/BiometricDialogImpl;
 
-    invoke-direct {p0, p1}, Lcom/oneplus/systemui/biometrics/OpBiometricDialogImpl$OpHandler;-><init>(Lcom/oneplus/systemui/biometrics/OpBiometricDialogImpl;)V
+    invoke-direct {p0, p2}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
 
     return-void
 .end method
@@ -38,7 +38,25 @@
 
     packed-switch v0, :pswitch_data_0
 
-    invoke-super {p0, p1}, Lcom/oneplus/systemui/biometrics/OpBiometricDialogImpl$OpHandler;->handleMessage(Landroid/os/Message;)V
+    new-instance p0, Ljava/lang/StringBuilder;
+
+    invoke-direct {p0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v0, "Unknown message: "
+
+    invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget p1, p1, Landroid/os/Message;->what:I
+
+    invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p0
+
+    const-string p1, "BiometricDialogImpl"
+
+    invoke-static {p1, p0}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
     goto :goto_0
 
@@ -153,8 +171,6 @@
 
     :goto_0
     return-void
-
-    nop
 
     :pswitch_data_0
     .packed-switch 0x1

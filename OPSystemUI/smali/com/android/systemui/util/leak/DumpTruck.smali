@@ -622,7 +622,7 @@
 
     new-instance v3, Landroid/content/ClipDescription;
 
-    const-string v4, "text/plain"
+    const-string/jumbo v4, "text/plain"
 
     filled-new-array {v4}, [Ljava/lang/String;
 

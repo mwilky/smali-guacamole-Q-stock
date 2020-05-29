@@ -20,6 +20,8 @@
 # static fields
 .field private static final DEBUG:Z
 
+.field public static ONEPLUS_GRADIENT_SCRIM_ALPHA_BUSY:F
+
 .field private static final TAG_END_ALPHA:I
 
 .field static final TAG_KEY_ANIM:I
@@ -154,6 +156,10 @@
     move-result v0
 
     sput-boolean v0, Lcom/android/systemui/statusbar/phone/ScrimController;->DEBUG:Z
+
+    const v0, 0x3f333333    # 0.7f
+
+    sput v0, Lcom/android/systemui/statusbar/phone/ScrimController;->ONEPLUS_GRADIENT_SCRIM_ALPHA_BUSY:F
 
     sget v0, Lcom/android/systemui/R$id;->scrim:I
 
@@ -349,6 +355,20 @@
 
     iput-boolean v0, p0, Lcom/android/systemui/statusbar/phone/ScrimController;->mNeedsDrawableColorUpdate:Z
 
+    iget-object p1, p0, Lcom/android/systemui/statusbar/phone/ScrimController;->mContext:Landroid/content/Context;
+
+    invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object p1
+
+    sget p2, Lcom/android/systemui/R$dimen;->op_gradient_scrim_alpha_busy:I
+
+    invoke-virtual {p1, p2}, Landroid/content/res/Resources;->getFloat(I)F
+
+    move-result p1
+
+    sput p1, Lcom/android/systemui/statusbar/phone/ScrimController;->ONEPLUS_GRADIENT_SCRIM_ALPHA_BUSY:F
+
     invoke-static {}, Lcom/android/systemui/statusbar/phone/ScrimState;->values()[Lcom/android/systemui/statusbar/phone/ScrimState;
 
     move-result-object p1
@@ -377,6 +397,10 @@
     iget p5, p0, Lcom/android/systemui/statusbar/phone/ScrimController;->mScrimBehindAlphaKeyguard:F
 
     invoke-virtual {p4, p5}, Lcom/android/systemui/statusbar/phone/ScrimState;->setScrimBehindAlphaKeyguard(F)V
+
+    aget-object p4, p1, p3
+
+    invoke-virtual {p4}, Lcom/android/systemui/statusbar/phone/ScrimState;->applyOpAlphaValue()V
 
     add-int/lit8 p3, p3, 0x1
 
@@ -482,9 +506,7 @@
 
     sget-object v1, Lcom/android/systemui/statusbar/phone/ScrimState;->UNLOCKED:Lcom/android/systemui/statusbar/phone/ScrimState;
 
-    const v2, 0x3f333333    # 0.7f
-
-    const/4 v3, 0x0
+    const/4 v2, 0x0
 
     if-ne v0, v1, :cond_1
 
@@ -494,19 +516,23 @@
 
     float-to-double v0, v0
 
-    const-wide v4, 0x3fe99999a0000000L    # 0.800000011920929
+    const-wide v3, 0x3fe99999a0000000L    # 0.800000011920929
 
-    invoke-static {v0, v1, v4, v5}, Ljava/lang/Math;->pow(DD)D
+    invoke-static {v0, v1, v3, v4}, Ljava/lang/Math;->pow(DD)D
 
     move-result-wide v0
 
     double-to-float v0, v0
 
-    mul-float/2addr v0, v2
+    invoke-direct {p0}, Lcom/android/systemui/statusbar/phone/ScrimController;->getGradientScrimAlphaBusyValue()F
+
+    move-result v1
+
+    mul-float/2addr v0, v1
 
     iput v0, p0, Lcom/android/systemui/statusbar/phone/ScrimController;->mCurrentBehindAlpha:F
 
-    iput v3, p0, Lcom/android/systemui/statusbar/phone/ScrimController;->mCurrentInFrontAlpha:F
+    iput v2, p0, Lcom/android/systemui/statusbar/phone/ScrimController;->mCurrentInFrontAlpha:F
 
     goto/16 :goto_1
 
@@ -526,52 +552,56 @@
 
     const v1, 0x3dcccccd    # 0.1f
 
-    iget-boolean v4, p0, Lcom/android/systemui/statusbar/phone/ScrimController;->mDarkenWhileDragging:Z
+    iget-boolean v3, p0, Lcom/android/systemui/statusbar/phone/ScrimController;->mDarkenWhileDragging:Z
 
-    if-eqz v4, :cond_3
+    if-eqz v3, :cond_3
 
-    invoke-static {v2, v1, v0}, Landroid/util/MathUtils;->lerp(FFF)F
+    invoke-direct {p0}, Lcom/android/systemui/statusbar/phone/ScrimController;->getGradientScrimAlphaBusyValue()F
+
+    move-result v3
+
+    invoke-static {v3, v1, v0}, Landroid/util/MathUtils;->lerp(FFF)F
 
     move-result v1
 
     iput v1, p0, Lcom/android/systemui/statusbar/phone/ScrimController;->mCurrentBehindAlpha:F
 
-    iput v3, p0, Lcom/android/systemui/statusbar/phone/ScrimController;->mCurrentInFrontAlpha:F
+    iput v2, p0, Lcom/android/systemui/statusbar/phone/ScrimController;->mCurrentInFrontAlpha:F
 
     goto :goto_0
 
     :cond_3
     invoke-static {}, Lcom/oneplus/plugin/OpLsState;->getInstance()Lcom/oneplus/plugin/OpLsState;
 
-    move-result-object v2
+    move-result-object v3
 
-    invoke-virtual {v2}, Lcom/oneplus/plugin/OpLsState;->getBiometricUnlockController()Lcom/android/systemui/statusbar/phone/BiometricUnlockController;
+    invoke-virtual {v3}, Lcom/oneplus/plugin/OpLsState;->getBiometricUnlockController()Lcom/android/systemui/statusbar/phone/BiometricUnlockController;
 
-    move-result-object v2
+    move-result-object v3
 
-    invoke-virtual {v2}, Lcom/android/systemui/statusbar/phone/BiometricUnlockController;->getMode()I
+    invoke-virtual {v3}, Lcom/android/systemui/statusbar/phone/BiometricUnlockController;->getMode()I
 
-    move-result v2
+    move-result v3
 
     const/4 v4, 0x5
 
     const v5, 0x3db851ec    # 0.09f
 
-    if-ne v2, v4, :cond_4
+    if-ne v3, v4, :cond_4
 
     invoke-static {}, Lcom/oneplus/util/OpUtils;->isHomeApp()Z
 
-    move-result v2
+    move-result v3
 
-    if-eqz v2, :cond_4
+    if-eqz v3, :cond_4
 
-    iget-object v2, p0, Lcom/android/systemui/statusbar/phone/ScrimController;->mKeyguardUpdateMonitor:Lcom/android/keyguard/KeyguardUpdateMonitor;
+    iget-object v3, p0, Lcom/android/systemui/statusbar/phone/ScrimController;->mKeyguardUpdateMonitor:Lcom/android/keyguard/KeyguardUpdateMonitor;
 
-    invoke-virtual {v2}, Lcom/oneplus/keyguard/OpKeyguardUpdateMonitor;->isFingerprintAlreadyAuthenticated()Z
+    invoke-virtual {v3}, Lcom/oneplus/keyguard/OpKeyguardUpdateMonitor;->isFingerprintAlreadyAuthenticated()Z
 
-    move-result v2
+    move-result v3
 
-    if-eqz v2, :cond_4
+    if-eqz v3, :cond_4
 
     const/4 v1, 0x1
 
@@ -579,43 +609,43 @@
 
     iput v5, p0, Lcom/android/systemui/statusbar/phone/ScrimController;->mCurrentBehindAlpha:F
 
-    iput v3, p0, Lcom/android/systemui/statusbar/phone/ScrimController;->mCurrentInFrontAlpha:F
+    iput v2, p0, Lcom/android/systemui/statusbar/phone/ScrimController;->mCurrentInFrontAlpha:F
 
     goto :goto_0
 
     :cond_4
-    iget-object v2, p0, Lcom/android/systemui/statusbar/phone/ScrimController;->mContext:Landroid/content/Context;
+    iget-object v3, p0, Lcom/android/systemui/statusbar/phone/ScrimController;->mContext:Landroid/content/Context;
 
-    invoke-static {v2}, Lcom/android/keyguard/KeyguardUpdateMonitor;->getInstance(Landroid/content/Context;)Lcom/android/keyguard/KeyguardUpdateMonitor;
+    invoke-static {v3}, Lcom/android/keyguard/KeyguardUpdateMonitor;->getInstance(Landroid/content/Context;)Lcom/android/keyguard/KeyguardUpdateMonitor;
 
-    move-result-object v2
+    move-result-object v3
 
-    invoke-virtual {v2}, Lcom/oneplus/keyguard/OpKeyguardUpdateMonitor;->isFacelockUnlocking()Z
+    invoke-virtual {v3}, Lcom/oneplus/keyguard/OpKeyguardUpdateMonitor;->isFacelockUnlocking()Z
 
-    move-result v2
+    move-result v3
 
-    if-eqz v2, :cond_5
+    if-eqz v3, :cond_5
 
     invoke-static {}, Lcom/oneplus/util/OpUtils;->isCustomFingerprint()Z
 
-    move-result v2
+    move-result v3
 
-    if-eqz v2, :cond_5
+    if-eqz v3, :cond_5
 
     iput v5, p0, Lcom/android/systemui/statusbar/phone/ScrimController;->mCurrentBehindAlpha:F
 
-    iput v3, p0, Lcom/android/systemui/statusbar/phone/ScrimController;->mCurrentInFrontAlpha:F
+    iput v2, p0, Lcom/android/systemui/statusbar/phone/ScrimController;->mCurrentInFrontAlpha:F
 
     goto :goto_0
 
     :cond_5
-    invoke-static {v3, v1, v0}, Landroid/util/MathUtils;->lerp(FFF)F
+    invoke-static {v2, v1, v0}, Landroid/util/MathUtils;->lerp(FFF)F
 
     move-result v1
 
     iput v1, p0, Lcom/android/systemui/statusbar/phone/ScrimController;->mCurrentBehindAlpha:F
 
-    iput v3, p0, Lcom/android/systemui/statusbar/phone/ScrimController;->mCurrentInFrontAlpha:F
+    iput v2, p0, Lcom/android/systemui/statusbar/phone/ScrimController;->mCurrentInFrontAlpha:F
 
     :goto_0
     sget-object v1, Lcom/android/systemui/statusbar/phone/ScrimState;->BOUNCER:Lcom/android/systemui/statusbar/phone/ScrimState;
@@ -827,6 +857,14 @@
     invoke-direct {p0, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
     throw p0
+.end method
+
+.method private getGradientScrimAlphaBusyValue()F
+    .locals 0
+
+    sget p0, Lcom/android/systemui/statusbar/phone/ScrimController;->ONEPLUS_GRADIENT_SCRIM_ALPHA_BUSY:F
+
+    return p0
 .end method
 
 .method private getInterpolatedFraction()F
@@ -1639,6 +1677,14 @@
     iget-boolean p0, p0, Lcom/android/systemui/statusbar/phone/ScrimController;->mTracking:Z
 
     invoke-virtual {p2, p0}, Ljava/io/PrintWriter;->println(Z)V
+
+    const-string p0, " customize_gradient_scrim_alpha_busy="
+
+    invoke-virtual {p2, p0}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
+
+    sget p0, Lcom/android/systemui/statusbar/phone/ScrimController;->ONEPLUS_GRADIENT_SCRIM_ALPHA_BUSY:F
+
+    invoke-virtual {p2, p0}, Ljava/io/PrintWriter;->println(F)V
 
     return-void
 .end method

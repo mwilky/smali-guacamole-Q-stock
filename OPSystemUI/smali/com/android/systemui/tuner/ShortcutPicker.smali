@@ -146,7 +146,7 @@
 
     iget-object p1, p0, Lcom/android/systemui/tuner/ShortcutPicker;->mKey:Ljava/lang/String;
 
-    const-string v0, "sysui_keyguard_left"
+    const-string/jumbo v0, "sysui_keyguard_left"
 
     invoke-virtual {v0, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 

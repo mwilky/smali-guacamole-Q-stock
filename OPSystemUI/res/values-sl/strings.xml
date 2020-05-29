@@ -324,7 +324,7 @@
     <string name="battery_saver_notification_title">Varčevanje z energijo akumulatorja je vklopljeno</string>
     <string name="battery_saver_start_action">Vklop varčevanja z energijo akumulatorja</string>
     <string name="battery_usage_extanded">Glede na vašo uporabo Battery Saver lahko podaljša čas uporabe za približno %s</string>
-    <string name="battery_usage_remaining">Glede na vašo uporabo mora trajati %s. Zmanjšuje učinkovitost in količino podatkov v ozadju.</string>
+    <string name="battery_usage_remaining_time">Še %s</string>
     <string name="biometric_dialog_confirm">Potrdite</string>
     <string name="biometric_dialog_empty_space_description">Prazno območje. Dotaknite se, da prekličete preverjanje pristnosti.</string>
     <string name="biometric_dialog_face_icon_description_authenticated">Pristnost obraza je potrjena</string>

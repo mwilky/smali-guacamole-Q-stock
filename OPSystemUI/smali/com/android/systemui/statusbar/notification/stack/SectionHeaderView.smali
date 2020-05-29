@@ -208,12 +208,73 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setTextColor(I)V
 
+    iget-object v0, p0, Lcom/android/systemui/statusbar/notification/stack/SectionHeaderView;->mClearAllButton:Landroid/widget/ImageView;
+
+    sget v1, Lcom/android/systemui/R$drawable;->status_bar_notification_section_header_clear_btn:I
+
+    invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageResource(I)V
+
+    invoke-virtual {p0}, Landroid/widget/FrameLayout;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Landroid/content/res/Resources;->getConfiguration()Landroid/content/res/Configuration;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_2
+
+    iget v0, v0, Landroid/content/res/Configuration;->uiMode:I
+
+    and-int/lit8 v0, v0, 0x30
+
+    const/16 v1, 0x20
+
+    if-ne v0, v1, :cond_0
+
+    const/4 v0, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    :goto_0
+    if-eqz v0, :cond_1
+
+    invoke-virtual {p0}, Landroid/widget/FrameLayout;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v0
+
+    sget v1, Lcom/android/systemui/R$color;->oneplus_contorl_icon_color_accent_active_dark:I
+
+    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getColor(I)I
+
+    move-result v0
+
     iget-object p0, p0, Lcom/android/systemui/statusbar/notification/stack/SectionHeaderView;->mClearAllButton:Landroid/widget/ImageView;
 
-    sget v0, Lcom/android/systemui/R$drawable;->status_bar_notification_section_header_clear_btn:I
+    invoke-virtual {p0, v0}, Landroid/widget/ImageView;->setColorFilter(I)V
 
-    invoke-virtual {p0, v0}, Landroid/widget/ImageView;->setImageResource(I)V
+    goto :goto_1
 
+    :cond_1
+    invoke-virtual {p0}, Landroid/widget/FrameLayout;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v0
+
+    sget v1, Lcom/android/systemui/R$color;->oneplus_contorl_icon_color_accent_active_light:I
+
+    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getColor(I)I
+
+    move-result v0
+
+    iget-object p0, p0, Lcom/android/systemui/statusbar/notification/stack/SectionHeaderView;->mClearAllButton:Landroid/widget/ImageView;
+
+    invoke-virtual {p0, v0}, Landroid/widget/ImageView;->setColorFilter(I)V
+
+    :cond_2
+    :goto_1
     return-void
 .end method
 

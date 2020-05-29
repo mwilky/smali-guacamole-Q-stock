@@ -367,7 +367,7 @@
 
     move-result p1
 
-    if-ge v5, p1, :cond_a
+    if-ge v5, p1, :cond_b
 
     iget-object p1, p0, Lcom/android/systemui/statusbar/phone/WLBSwitchController$IncomingHandler;->this$0:Lcom/android/systemui/statusbar/phone/WLBSwitchController;
 
@@ -379,28 +379,25 @@
 
     move-result-object p1
 
-    check-cast p1, Ljava/lang/ref/WeakReference;
-
-    invoke-virtual {p1}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
-
-    move-result-object p1
-
     check-cast p1, Lcom/android/systemui/statusbar/phone/WLBSwitchController$BaseUserAdapter;
+
+    if-eqz p1, :cond_a
 
     invoke-virtual {p1}, Landroid/widget/BaseAdapter;->notifyDataSetChanged()V
 
+    :cond_a
     add-int/lit8 v5, v5, 0x1
 
     goto :goto_5
 
-    :cond_a
+    :cond_b
     iget-object p1, p0, Lcom/android/systemui/statusbar/phone/WLBSwitchController$IncomingHandler;->this$0:Lcom/android/systemui/statusbar/phone/WLBSwitchController;
 
     invoke-static {p1}, Lcom/android/systemui/statusbar/phone/WLBSwitchController;->access$900(Lcom/android/systemui/statusbar/phone/WLBSwitchController;)Lcom/android/systemui/statusbar/phone/WLBSwitchController$WLBControllerCallbacks;
 
     move-result-object p1
 
-    if-eqz p1, :cond_b
+    if-eqz p1, :cond_c
 
     iget-object p1, p0, Lcom/android/systemui/statusbar/phone/WLBSwitchController$IncomingHandler;->this$0:Lcom/android/systemui/statusbar/phone/WLBSwitchController;
 
@@ -416,7 +413,7 @@
 
     invoke-interface {p1, p0}, Lcom/android/systemui/statusbar/phone/WLBSwitchController$WLBControllerCallbacks;->onWLBModeChanged(I)V
 
-    :cond_b
+    :cond_c
     :goto_6
     return-void
 

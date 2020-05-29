@@ -43,21 +43,21 @@
     :pswitch_0
     iget-object p0, p0, Lcom/android/systemui/statusbar/policy/FiveGServiceClient$1;->this$0:Lcom/android/systemui/statusbar/policy/FiveGServiceClient;
 
-    invoke-static {p0}, Lcom/android/systemui/statusbar/policy/FiveGServiceClient;->access$600(Lcom/android/systemui/statusbar/policy/FiveGServiceClient;)V
+    invoke-static {p0}, Lcom/android/systemui/statusbar/policy/FiveGServiceClient;->access$700(Lcom/android/systemui/statusbar/policy/FiveGServiceClient;)V
 
     goto :goto_0
 
     :pswitch_1
     iget-object p0, p0, Lcom/android/systemui/statusbar/policy/FiveGServiceClient$1;->this$0:Lcom/android/systemui/statusbar/policy/FiveGServiceClient;
 
-    invoke-static {p0}, Lcom/android/systemui/statusbar/policy/FiveGServiceClient;->access$500(Lcom/android/systemui/statusbar/policy/FiveGServiceClient;)V
+    invoke-static {p0}, Lcom/android/systemui/statusbar/policy/FiveGServiceClient;->access$600(Lcom/android/systemui/statusbar/policy/FiveGServiceClient;)V
 
     goto :goto_0
 
     :pswitch_2
     iget-object p0, p0, Lcom/android/systemui/statusbar/policy/FiveGServiceClient$1;->this$0:Lcom/android/systemui/statusbar/policy/FiveGServiceClient;
 
-    invoke-static {p0}, Lcom/android/systemui/statusbar/policy/FiveGServiceClient;->access$400(Lcom/android/systemui/statusbar/policy/FiveGServiceClient;)V
+    invoke-static {p0}, Lcom/android/systemui/statusbar/policy/FiveGServiceClient;->access$500(Lcom/android/systemui/statusbar/policy/FiveGServiceClient;)V
 
     :goto_0
     return-void

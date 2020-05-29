@@ -197,9 +197,9 @@
 
     invoke-static {v0, v4, v3, v2}, Landroid/provider/Settings$System;->getIntForUser(Landroid/content/ContentResolver;Ljava/lang/String;II)I
 
-    move-result v2
+    move-result v3
 
-    invoke-static {v1, v2}, Lcom/oneplus/notification/OpNotificationController;->access$1502(Lcom/oneplus/notification/OpNotificationController;I)I
+    invoke-static {v1, v3}, Lcom/oneplus/notification/OpNotificationController;->access$1502(Lcom/oneplus/notification/OpNotificationController;I)I
 
     iget-object v1, p0, Lcom/oneplus/notification/OpNotificationController$SettingsObserver;->this$0:Lcom/oneplus/notification/OpNotificationController;
 
@@ -215,9 +215,9 @@
 
     move-result-object v1
 
-    sget-object v2, Lcom/oneplus/core/oimc/OIMCRule;->RULE_DISABLE_HEADSUPNOTIFICATION:Lcom/oneplus/core/oimc/OIMCRule;
+    sget-object v3, Lcom/oneplus/core/oimc/OIMCRule;->RULE_DISABLE_HEADSUPNOTIFICATION:Lcom/oneplus/core/oimc/OIMCRule;
 
-    invoke-virtual {v1, v2}, Lcom/oneplus/core/oimc/OIMCServiceManager;->addFuncRuleGlobal(Lcom/oneplus/core/oimc/OIMCRule;)V
+    invoke-virtual {v1, v3}, Lcom/oneplus/core/oimc/OIMCServiceManager;->addFuncRuleGlobal(Lcom/oneplus/core/oimc/OIMCRule;)V
 
     goto :goto_2
 
@@ -228,9 +228,9 @@
 
     move-result-object v1
 
-    sget-object v2, Lcom/oneplus/core/oimc/OIMCRule;->RULE_DISABLE_HEADSUPNOTIFICATION:Lcom/oneplus/core/oimc/OIMCRule;
+    sget-object v3, Lcom/oneplus/core/oimc/OIMCRule;->RULE_DISABLE_HEADSUPNOTIFICATION:Lcom/oneplus/core/oimc/OIMCRule;
 
-    invoke-virtual {v1, v2}, Lcom/oneplus/core/oimc/OIMCServiceManager;->removeFuncRuleGlobal(Lcom/oneplus/core/oimc/OIMCRule;)V
+    invoke-virtual {v1, v3}, Lcom/oneplus/core/oimc/OIMCServiceManager;->removeFuncRuleGlobal(Lcom/oneplus/core/oimc/OIMCRule;)V
 
     :cond_8
     :goto_2
@@ -240,70 +240,24 @@
 
     invoke-static {}, Lcom/oneplus/notification/OpNotificationController;->access$1200()Landroid/net/Uri;
 
-    move-result-object v2
-
-    invoke-virtual {v2, p1}, Landroid/net/Uri;->equals(Ljava/lang/Object;)Z
-
-    move-result v2
-
-    if-eqz v2, :cond_a
-
-    :cond_9
-    iget-object v2, p0, Lcom/oneplus/notification/OpNotificationController$SettingsObserver;->this$0:Lcom/oneplus/notification/OpNotificationController;
-
-    const-string v3, "game_mode_notifications_3rd_calls_uid"
-
-    invoke-static {v0, v3}, Landroid/provider/Settings$System;->getString(Landroid/content/ContentResolver;Ljava/lang/String;)Ljava/lang/String;
-
     move-result-object v3
 
-    invoke-static {v2, v3}, Lcom/oneplus/notification/OpNotificationController;->access$1702(Lcom/oneplus/notification/OpNotificationController;Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v3, p1}, Landroid/net/Uri;->equals(Ljava/lang/Object;)Z
 
-    iget-object v2, p0, Lcom/oneplus/notification/OpNotificationController$SettingsObserver;->this$0:Lcom/oneplus/notification/OpNotificationController;
+    move-result v3
 
-    invoke-static {v2}, Lcom/oneplus/notification/OpNotificationController;->access$1700(Lcom/oneplus/notification/OpNotificationController;)Ljava/lang/String;
+    if-eqz v3, :cond_a
 
-    move-result-object v2
+    :cond_9
+    iget-object v3, p0, Lcom/oneplus/notification/OpNotificationController$SettingsObserver;->this$0:Lcom/oneplus/notification/OpNotificationController;
 
-    if-eqz v2, :cond_a
+    const-string v4, "game_mode_notifications_3rd_calls_uid"
 
-    iget-object v2, p0, Lcom/oneplus/notification/OpNotificationController$SettingsObserver;->this$0:Lcom/oneplus/notification/OpNotificationController;
+    invoke-static {v0, v4, v2}, Landroid/provider/Settings$System;->getStringForUser(Landroid/content/ContentResolver;Ljava/lang/String;I)Ljava/lang/String;
 
-    invoke-static {v2}, Lcom/oneplus/notification/OpNotificationController;->access$1700(Lcom/oneplus/notification/OpNotificationController;)Ljava/lang/String;
+    move-result-object v4
 
-    move-result-object v2
-
-    const-string v3, "-1"
-
-    invoke-virtual {v3, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v2
-
-    if-nez v2, :cond_a
-
-    invoke-static {}, Lcom/oneplus/plugin/OpLsState;->getInstance()Lcom/oneplus/plugin/OpLsState;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Lcom/oneplus/plugin/OpLsState;->getPhoneStatusBar()Lcom/android/systemui/statusbar/phone/StatusBar;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Lcom/oneplus/systemui/statusbar/phone/OpStatusBar;->removeHeadsUps()V
-
-    invoke-static {}, Lcom/oneplus/notification/OpNotificationController;->access$1800()Z
-
-    move-result v2
-
-    if-eqz v2, :cond_a
-
-    new-instance v2, Ljava/lang/StringBuilder;
-
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v3, "removeHeadsUps for 3rd party app calling uid: "
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v3, v4}, Lcom/oneplus/notification/OpNotificationController;->access$1702(Lcom/oneplus/notification/OpNotificationController;Ljava/lang/String;)Ljava/lang/String;
 
     iget-object v3, p0, Lcom/oneplus/notification/OpNotificationController$SettingsObserver;->this$0:Lcom/oneplus/notification/OpNotificationController;
 
@@ -311,31 +265,77 @@
 
     move-result-object v3
 
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    if-eqz v3, :cond_a
 
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    iget-object v3, p0, Lcom/oneplus/notification/OpNotificationController$SettingsObserver;->this$0:Lcom/oneplus/notification/OpNotificationController;
 
-    move-result-object v2
+    invoke-static {v3}, Lcom/oneplus/notification/OpNotificationController;->access$1700(Lcom/oneplus/notification/OpNotificationController;)Ljava/lang/String;
 
-    invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    move-result-object v3
+
+    const-string v4, "-1"
+
+    invoke-virtual {v4, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v3
+
+    if-nez v3, :cond_a
+
+    invoke-static {}, Lcom/oneplus/plugin/OpLsState;->getInstance()Lcom/oneplus/plugin/OpLsState;
+
+    move-result-object v3
+
+    invoke-virtual {v3}, Lcom/oneplus/plugin/OpLsState;->getPhoneStatusBar()Lcom/android/systemui/statusbar/phone/StatusBar;
+
+    move-result-object v3
+
+    invoke-virtual {v3}, Lcom/oneplus/systemui/statusbar/phone/OpStatusBar;->removeHeadsUps()V
+
+    invoke-static {}, Lcom/oneplus/notification/OpNotificationController;->access$1800()Z
+
+    move-result v3
+
+    if-eqz v3, :cond_a
+
+    new-instance v3, Ljava/lang/StringBuilder;
+
+    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v4, "removeHeadsUps for 3rd party app calling uid: "
+
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object v4, p0, Lcom/oneplus/notification/OpNotificationController$SettingsObserver;->this$0:Lcom/oneplus/notification/OpNotificationController;
+
+    invoke-static {v4}, Lcom/oneplus/notification/OpNotificationController;->access$1700(Lcom/oneplus/notification/OpNotificationController;)Ljava/lang/String;
+
+    move-result-object v4
+
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-static {v1, v3}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_a
     if-eqz p1, :cond_b
 
     invoke-static {}, Lcom/oneplus/notification/OpNotificationController;->access$800()Landroid/net/Uri;
 
-    move-result-object v2
+    move-result-object v3
 
-    invoke-virtual {v2, p1}, Landroid/net/Uri;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v3, p1}, Landroid/net/Uri;->equals(Ljava/lang/Object;)Z
 
-    move-result v2
+    move-result v3
 
-    if-eqz v2, :cond_d
+    if-eqz v3, :cond_d
 
     :cond_b
-    const-string v2, "op_quickreply_im_list"
+    const-string v3, "op_quickreply_im_list"
 
-    invoke-static {v0, v2}, Landroid/provider/Settings$System;->getString(Landroid/content/ContentResolver;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, v3, v2}, Landroid/provider/Settings$System;->getStringForUser(Landroid/content/ContentResolver;Ljava/lang/String;I)Ljava/lang/String;
 
     move-result-object v0
 

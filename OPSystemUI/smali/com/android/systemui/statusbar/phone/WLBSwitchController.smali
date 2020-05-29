@@ -31,9 +31,8 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/ArrayList<",
-            "Ljava/lang/ref/WeakReference<",
             "Lcom/android/systemui/statusbar/phone/WLBSwitchController$BaseUserAdapter;",
-            ">;>;"
+            ">;"
         }
     .end annotation
 .end field
@@ -208,10 +207,10 @@
     return-object p0
 .end method
 
-.method static synthetic access$500(Lcom/android/systemui/statusbar/phone/WLBSwitchController;Ljava/lang/ref/WeakReference;)V
+.method static synthetic access$500(Lcom/android/systemui/statusbar/phone/WLBSwitchController;Lcom/android/systemui/statusbar/phone/WLBSwitchController$BaseUserAdapter;)V
     .locals 0
 
-    invoke-direct {p0, p1}, Lcom/android/systemui/statusbar/phone/WLBSwitchController;->addAdapter(Ljava/lang/ref/WeakReference;)V
+    invoke-direct {p0, p1}, Lcom/android/systemui/statusbar/phone/WLBSwitchController;->addAdapter(Lcom/android/systemui/statusbar/phone/WLBSwitchController$BaseUserAdapter;)V
 
     return-void
 .end method
@@ -248,16 +247,8 @@
     return-object p0
 .end method
 
-.method private addAdapter(Ljava/lang/ref/WeakReference;)V
+.method private addAdapter(Lcom/android/systemui/statusbar/phone/WLBSwitchController$BaseUserAdapter;)V
     .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/lang/ref/WeakReference<",
-            "Lcom/android/systemui/statusbar/phone/WLBSwitchController$BaseUserAdapter;",
-            ">;)V"
-        }
-    .end annotation
 
     iget-object p0, p0, Lcom/android/systemui/statusbar/phone/WLBSwitchController;->mAdapters:Ljava/util/ArrayList;
 

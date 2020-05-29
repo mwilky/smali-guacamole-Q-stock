@@ -959,7 +959,7 @@
     goto :goto_1
 
     :cond_1
-    const-string v3, "text"
+    const-string/jumbo v3, "text"
 
     const-string v4, "selection_option_key"
 

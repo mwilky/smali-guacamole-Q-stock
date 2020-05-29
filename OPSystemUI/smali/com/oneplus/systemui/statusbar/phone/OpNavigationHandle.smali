@@ -535,7 +535,13 @@
 
     iget-boolean v3, p0, Lcom/oneplus/systemui/statusbar/phone/OpNavigationHandle;->mStartAnimPlayed:Z
 
-    if-eqz v3, :cond_1
+    if-nez v3, :cond_9
+
+    const/16 v3, 0x1e
+
+    if-ge p1, v3, :cond_1
+
+    if-ge v2, v3, :cond_1
 
     goto :goto_3
 
@@ -546,7 +552,7 @@
 
     if-ne v3, v4, :cond_5
 
-    if-lt p1, v2, :cond_3
+    if-le p1, v2, :cond_3
 
     iget p1, p0, Lcom/oneplus/systemui/statusbar/phone/OpNavigationHandle;->mDownX:I
 
@@ -567,6 +573,8 @@
     goto :goto_2
 
     :cond_3
+    if-ge p1, v2, :cond_5
+
     iget p1, p0, Lcom/oneplus/systemui/statusbar/phone/OpNavigationHandle;->mDownY:I
 
     sub-int/2addr v1, p1
@@ -612,6 +620,7 @@
 
     iput v1, p0, Lcom/oneplus/systemui/statusbar/phone/OpNavigationHandle;->mDownY:I
 
+    :cond_9
     :goto_3
     return-void
 .end method

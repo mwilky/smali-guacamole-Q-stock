@@ -39,13 +39,13 @@
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/DozeScrimController$2;->this$0:Lcom/android/systemui/statusbar/phone/DozeScrimController;
 
-    invoke-static {v0}, Lcom/android/systemui/statusbar/phone/DozeScrimController;->access$700(Lcom/android/systemui/statusbar/phone/DozeScrimController;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/android/systemui/statusbar/phone/DozeScrimController;->access$800(Lcom/android/systemui/statusbar/phone/DozeScrimController;)Landroid/os/Handler;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/android/systemui/statusbar/phone/DozeScrimController$2;->this$0:Lcom/android/systemui/statusbar/phone/DozeScrimController;
 
-    invoke-static {v1}, Lcom/android/systemui/statusbar/phone/DozeScrimController;->access$500(Lcom/android/systemui/statusbar/phone/DozeScrimController;)Ljava/lang/Runnable;
+    invoke-static {v1}, Lcom/android/systemui/statusbar/phone/DozeScrimController;->access$600(Lcom/android/systemui/statusbar/phone/DozeScrimController;)Ljava/lang/Runnable;
 
     move-result-object v1
 
@@ -53,7 +53,7 @@
 
     iget-object p0, p0, Lcom/android/systemui/statusbar/phone/DozeScrimController$2;->this$0:Lcom/android/systemui/statusbar/phone/DozeScrimController;
 
-    invoke-static {p0}, Lcom/android/systemui/statusbar/phone/DozeScrimController;->access$500(Lcom/android/systemui/statusbar/phone/DozeScrimController;)Ljava/lang/Runnable;
+    invoke-static {p0}, Lcom/android/systemui/statusbar/phone/DozeScrimController;->access$600(Lcom/android/systemui/statusbar/phone/DozeScrimController;)Ljava/lang/Runnable;
 
     move-result-object p0
 

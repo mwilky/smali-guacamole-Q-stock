@@ -125,7 +125,7 @@
     return-void
 
     :cond_0
-    const-string p0, "switch"
+    const-string/jumbo p0, "switch"
 
     invoke-static {p0}, Lkotlin/jvm/internal/Intrinsics;->throwUninitializedPropertyAccessException(Ljava/lang/String;)V
 

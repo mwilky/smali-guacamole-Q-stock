@@ -130,7 +130,7 @@
 
     iput p1, p0, Lcom/oneplus/systemui/statusbar/phone/OpEdgeNavGestureHandler;->mEdgeWidth:I
 
-    const p1, 0x505002d
+    const p1, 0x505002e
 
     invoke-virtual {v0, p1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -138,7 +138,7 @@
 
     iput p1, p0, Lcom/oneplus/systemui/statusbar/phone/OpEdgeNavGestureHandler;->mNavEdgeWidth:I
 
-    const p1, 0x505002c
+    const p1, 0x505002d
 
     invoke-virtual {v0, p1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -567,6 +567,33 @@
 
     move-result-object v0
 
+    if-nez v0, :cond_0
+
+    const-string p0, "OpEdgeNavGestureHandler"
+
+    const-string v0, "It\'s not update display size, because display is null or display already removed."
+
+    invoke-static {p0, v0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    return-void
+
+    :cond_0
+    iget-object v0, p0, Lcom/oneplus/systemui/statusbar/phone/OpEdgeNavGestureHandler;->mContext:Landroid/content/Context;
+
+    const-class v1, Landroid/hardware/display/DisplayManager;
+
+    invoke-virtual {v0, v1}, Landroid/content/Context;->getSystemService(Ljava/lang/Class;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/hardware/display/DisplayManager;
+
+    iget v1, p0, Lcom/oneplus/systemui/statusbar/phone/OpEdgeNavGestureHandler;->mDisplayId:I
+
+    invoke-virtual {v0, v1}, Landroid/hardware/display/DisplayManager;->getDisplay(I)Landroid/view/Display;
+
+    move-result-object v0
+
     iget-object p0, p0, Lcom/oneplus/systemui/statusbar/phone/OpEdgeNavGestureHandler;->mDisplaySize:Landroid/graphics/Point;
 
     invoke-virtual {v0, p0}, Landroid/view/Display;->getRealSize(Landroid/graphics/Point;)V
@@ -642,7 +669,7 @@
 
     iget-boolean v0, p0, Lcom/oneplus/systemui/statusbar/phone/OpEdgeNavGestureHandler;->mIsEnabled:Z
 
-    if-nez v0, :cond_2
+    if-nez v0, :cond_3
 
     invoke-static {}, Lcom/android/systemui/shared/system/WindowManagerWrapper;->getInstance()Lcom/android/systemui/shared/system/WindowManagerWrapper;
 
@@ -653,6 +680,24 @@
     invoke-virtual {v0, v2}, Lcom/android/systemui/shared/system/WindowManagerWrapper;->removePinnedStackListener(Landroid/view/IPinnedStackListener;)V
 
     :try_start_0
+    iget-object v0, p0, Lcom/oneplus/systemui/statusbar/phone/OpEdgeNavGestureHandler;->mContext:Landroid/content/Context;
+
+    const-class v2, Landroid/hardware/display/DisplayManager;
+
+    invoke-virtual {v0, v2}, Landroid/content/Context;->getSystemService(Ljava/lang/Class;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/hardware/display/DisplayManager;
+
+    iget v2, p0, Lcom/oneplus/systemui/statusbar/phone/OpEdgeNavGestureHandler;->mDisplayId:I
+
+    invoke-virtual {v0, v2}, Landroid/hardware/display/DisplayManager;->getDisplay(I)Landroid/view/Display;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_2
+
     invoke-static {}, Landroid/view/WindowManagerGlobal;->getWindowManagerService()Landroid/view/IWindowManager;
 
     move-result-object v0
@@ -662,6 +707,13 @@
     iget p0, p0, Lcom/oneplus/systemui/statusbar/phone/OpEdgeNavGestureHandler;->mDisplayId:I
 
     invoke-interface {v0, v2, p0}, Landroid/view/IWindowManager;->unregisterSystemGestureExclusionListener(Landroid/view/ISystemGestureExclusionListener;I)V
+
+    goto :goto_2
+
+    :cond_2
+    const-string p0, "It is not unregister system gesture exclusion listener, because display is null or display already removed."
+
+    invoke-static {v1, p0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -676,10 +728,28 @@
 
     goto :goto_2
 
-    :cond_2
+    :cond_3
     invoke-direct {p0}, Lcom/oneplus/systemui/statusbar/phone/OpEdgeNavGestureHandler;->updateDisplaySize()V
 
     :try_start_1
+    iget-object v0, p0, Lcom/oneplus/systemui/statusbar/phone/OpEdgeNavGestureHandler;->mContext:Landroid/content/Context;
+
+    const-class v2, Landroid/hardware/display/DisplayManager;
+
+    invoke-virtual {v0, v2}, Landroid/content/Context;->getSystemService(Ljava/lang/Class;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/hardware/display/DisplayManager;
+
+    iget v2, p0, Lcom/oneplus/systemui/statusbar/phone/OpEdgeNavGestureHandler;->mDisplayId:I
+
+    invoke-virtual {v0, v2}, Landroid/hardware/display/DisplayManager;->getDisplay(I)Landroid/view/Display;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_4
+
     invoke-static {}, Lcom/android/systemui/shared/system/WindowManagerWrapper;->getInstance()Lcom/android/systemui/shared/system/WindowManagerWrapper;
 
     move-result-object v0
@@ -697,6 +767,13 @@
     iget v3, p0, Lcom/oneplus/systemui/statusbar/phone/OpEdgeNavGestureHandler;->mDisplayId:I
 
     invoke-interface {v0, v2, v3}, Landroid/view/IWindowManager;->registerSystemGestureExclusionListener(Landroid/view/ISystemGestureExclusionListener;I)V
+
+    goto :goto_1
+
+    :cond_4
+    const-string v0, "It is not register system gesture exclusion listener, because display is null or display already removed."
+
+    invoke-static {v1, v0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
     :try_end_1
     .catch Landroid/os/RemoteException; {:try_start_1 .. :try_end_1} :catch_1
 

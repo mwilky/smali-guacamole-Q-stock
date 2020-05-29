@@ -54,7 +54,7 @@
 
     move-result-object p1
 
-    const-string v0, "systemui:keyguard:visibility"
+    const-string/jumbo v0, "systemui:keyguard:visibility"
 
     invoke-interface {p0, v0, p1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -192,7 +192,7 @@
 
     iget-object p1, p4, Landroid/transition/TransitionValues;->values:Ljava/util/Map;
 
-    const-string p3, "systemui:keyguard:visibility"
+    const-string/jumbo p3, "systemui:keyguard:visibility"
 
     invoke-interface {p1, p3}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -243,7 +243,7 @@
 
     iget-object p1, p4, Landroid/transition/TransitionValues;->values:Ljava/util/Map;
 
-    const-string p3, "systemui:keyguard:visibility"
+    const-string/jumbo p3, "systemui:keyguard:visibility"
 
     invoke-interface {p1, p3}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 

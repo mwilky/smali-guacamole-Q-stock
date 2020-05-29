@@ -322,7 +322,7 @@
     <string name="battery_saver_notification_title">Energiesparmodus ist aktiviert</string>
     <string name="battery_saver_start_action">Energiesparmodus aktivieren</string>
     <string name="battery_usage_extanded">Durch den Akkusparmodus kann die Verwendung nutzungsabhängig um ca. %s verlängert werden</string>
-    <string name="battery_usage_remaining">Sollte je nach Nutzung ca. %s reichen. Dabei werden Leistung und Hintergrunddaten reduziert.</string>
+    <string name="battery_usage_remaining_time">Noch %s</string>
     <string name="biometric_dialog_confirm">Bestätigen</string>
     <string name="biometric_dialog_empty_space_description">Feld \"Region\" ist leer, zum Abbrechen der Authentifizierung tippen</string>
     <string name="biometric_dialog_face_icon_description_authenticated">Gesicht authentifiziert</string>

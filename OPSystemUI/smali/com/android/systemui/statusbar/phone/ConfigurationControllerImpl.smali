@@ -9,7 +9,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nConfigurationControllerImpl.kt\nKotlin\n*S Kotlin\n*F\n+ 1 ConfigurationControllerImpl.kt\ncom/android/systemui/statusbar/phone/ConfigurationControllerImpl\n+ 2 ConfigurationControllerImpl.kt\ncom/android/systemui/statusbar/phone/ConfigurationControllerImplKt\n+ 3 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n*L\n1#1,150:1\n144#2:151\n145#2,4:153\n149#2:158\n144#2:159\n145#2,4:161\n149#2:166\n144#2:167\n145#2,4:169\n149#2:174\n144#2:175\n145#2,4:177\n149#2:182\n144#2:183\n145#2,4:185\n149#2:190\n144#2:191\n145#2,4:193\n149#2:198\n1574#3:152\n1575#3:157\n1574#3:160\n1575#3:165\n1574#3:168\n1575#3:173\n1574#3:176\n1575#3:181\n1574#3:184\n1575#3:189\n1574#3:192\n1575#3:197\n*E\n*S KotlinDebug\n*F\n+ 1 ConfigurationControllerImpl.kt\ncom/android/systemui/statusbar/phone/ConfigurationControllerImpl\n*L\n68#1:151\n68#1,4:153\n68#1:158\n77#1:159\n77#1,4:161\n77#1:166\n94#1:167\n94#1,4:169\n94#1:174\n107#1:175\n107#1,4:177\n107#1:182\n118#1:183\n118#1,4:185\n118#1:190\n124#1:191\n124#1,4:193\n124#1:198\n68#1:152\n68#1:157\n77#1:160\n77#1:165\n94#1:168\n94#1:173\n107#1:176\n107#1:181\n118#1:184\n118#1:189\n124#1:192\n124#1:197\n*E\n"
+    value = "SMAP\nConfigurationControllerImpl.kt\nKotlin\n*S Kotlin\n*F\n+ 1 ConfigurationControllerImpl.kt\ncom/android/systemui/statusbar/phone/ConfigurationControllerImpl\n+ 2 ConfigurationControllerImpl.kt\ncom/android/systemui/statusbar/phone/ConfigurationControllerImplKt\n+ 3 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n*L\n1#1,154:1\n148#2:155\n149#2,4:157\n153#2:162\n148#2:163\n149#2,4:165\n153#2:170\n148#2:171\n149#2,4:173\n153#2:178\n148#2:179\n149#2,4:181\n153#2:186\n148#2:187\n149#2,4:189\n153#2:194\n148#2:195\n149#2,4:197\n153#2:202\n1574#3:156\n1575#3:161\n1574#3:164\n1575#3:169\n1574#3:172\n1575#3:177\n1574#3:180\n1575#3:185\n1574#3:188\n1575#3:193\n1574#3:196\n1575#3:201\n*E\n*S KotlinDebug\n*F\n+ 1 ConfigurationControllerImpl.kt\ncom/android/systemui/statusbar/phone/ConfigurationControllerImpl\n*L\n68#1:155\n68#1,4:157\n68#1:162\n81#1:163\n81#1,4:165\n81#1:170\n98#1:171\n98#1,4:173\n98#1:178\n111#1:179\n111#1,4:181\n111#1:186\n122#1:187\n122#1,4:189\n122#1:194\n128#1:195\n128#1,4:197\n128#1:202\n68#1:156\n68#1:161\n81#1:164\n81#1:169\n98#1:172\n98#1:177\n111#1:180\n111#1:185\n122#1:188\n122#1:193\n128#1:196\n128#1:201\n*E\n"
 .end annotation
 
 
@@ -203,6 +203,8 @@
     const-string v0, "newConfig"
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-static {}, Lcom/oneplus/util/OpUtils;->updateIsCutoutEmulationEnabled()V
 
     new-instance v0, Ljava/util/ArrayList;
 

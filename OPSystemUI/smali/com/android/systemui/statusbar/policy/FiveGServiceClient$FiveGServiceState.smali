@@ -89,7 +89,7 @@
     return-object p1
 .end method
 
-.method static synthetic access$1402(Lcom/android/systemui/statusbar/policy/FiveGServiceClient$FiveGServiceState;I)I
+.method static synthetic access$1502(Lcom/android/systemui/statusbar/policy/FiveGServiceClient$FiveGServiceState;I)I
     .locals 0
 
     iput p1, p0, Lcom/android/systemui/statusbar/policy/FiveGServiceClient$FiveGServiceState;->mDcnr:I
@@ -97,18 +97,10 @@
     return p1
 .end method
 
-.method static synthetic access$1602(Lcom/android/systemui/statusbar/policy/FiveGServiceClient$FiveGServiceState;I)I
+.method static synthetic access$1702(Lcom/android/systemui/statusbar/policy/FiveGServiceClient$FiveGServiceState;I)I
     .locals 0
 
     iput p1, p0, Lcom/android/systemui/statusbar/policy/FiveGServiceClient$FiveGServiceState;->mLevel:I
-
-    return p1
-.end method
-
-.method static synthetic access$1802(Lcom/android/systemui/statusbar/policy/FiveGServiceClient$FiveGServiceState;I)I
-    .locals 0
-
-    iput p1, p0, Lcom/android/systemui/statusbar/policy/FiveGServiceClient$FiveGServiceState;->mRsrp:I
 
     return p1
 .end method
@@ -148,12 +140,28 @@
 .method static synthetic access$300(Lcom/android/systemui/statusbar/policy/FiveGServiceClient$FiveGServiceState;)I
     .locals 0
 
-    iget p0, p0, Lcom/android/systemui/statusbar/policy/FiveGServiceClient$FiveGServiceState;->mBearerAllocationStatus:I
+    iget p0, p0, Lcom/android/systemui/statusbar/policy/FiveGServiceClient$FiveGServiceState;->mRsrp:I
 
     return p0
 .end method
 
 .method static synthetic access$302(Lcom/android/systemui/statusbar/policy/FiveGServiceClient$FiveGServiceState;I)I
+    .locals 0
+
+    iput p1, p0, Lcom/android/systemui/statusbar/policy/FiveGServiceClient$FiveGServiceState;->mRsrp:I
+
+    return p1
+.end method
+
+.method static synthetic access$400(Lcom/android/systemui/statusbar/policy/FiveGServiceClient$FiveGServiceState;)I
+    .locals 0
+
+    iget p0, p0, Lcom/android/systemui/statusbar/policy/FiveGServiceClient$FiveGServiceState;->mBearerAllocationStatus:I
+
+    return p0
+.end method
+
+.method static synthetic access$402(Lcom/android/systemui/statusbar/policy/FiveGServiceClient$FiveGServiceState;I)I
     .locals 0
 
     iput p1, p0, Lcom/android/systemui/statusbar/policy/FiveGServiceClient$FiveGServiceState;->mBearerAllocationStatus:I

@@ -152,309 +152,291 @@
 
     move-object/from16 v0, p0
 
-    iget-object v1, v0, Lcom/oneplus/anim/OpGraphLight;->mAnimateImageView:Lcom/oneplus/anim/OpGraphLight$AnimateImageView;
+    const/4 v1, 0x0
 
-    if-nez v1, :cond_0
+    const-string/jumbo v2, "sys.debug.camera.anim"
 
-    new-instance v1, Lcom/oneplus/anim/OpGraphLight$AnimateImageView;
+    invoke-static {v2, v1}, Landroid/os/SystemProperties;->getInt(Ljava/lang/String;I)I
 
-    iget-object v2, v0, Lcom/oneplus/anim/OpGraphLight;->mContext:Landroid/content/Context;
+    move-result v2
 
-    invoke-direct {v1, v0, v2}, Lcom/oneplus/anim/OpGraphLight$AnimateImageView;-><init>(Lcom/oneplus/anim/OpGraphLight;Landroid/content/Context;)V
+    const-string v3, "OpGraphLight"
 
-    iput-object v1, v0, Lcom/oneplus/anim/OpGraphLight;->mAnimateImageView:Lcom/oneplus/anim/OpGraphLight$AnimateImageView;
+    const/16 v4, 0x9
+
+    if-ne v2, v4, :cond_0
+
+    const-string v0, "not show frontCam anim"
+
+    invoke-static {v3, v0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    return-void
 
     :cond_0
-    iget-object v1, v0, Lcom/oneplus/anim/OpGraphLight;->mContext:Landroid/content/Context;
+    iget-object v2, v0, Lcom/oneplus/anim/OpGraphLight;->mAnimateImageView:Lcom/oneplus/anim/OpGraphLight$AnimateImageView;
 
-    invoke-virtual {v1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+    if-nez v2, :cond_1
 
-    move-result-object v1
+    new-instance v2, Lcom/oneplus/anim/OpGraphLight$AnimateImageView;
 
-    new-instance v2, Landroid/util/DisplayMetrics;
+    iget-object v4, v0, Lcom/oneplus/anim/OpGraphLight;->mContext:Landroid/content/Context;
 
-    invoke-direct {v2}, Landroid/util/DisplayMetrics;-><init>()V
+    invoke-direct {v2, v0, v4}, Lcom/oneplus/anim/OpGraphLight$AnimateImageView;-><init>(Lcom/oneplus/anim/OpGraphLight;Landroid/content/Context;)V
 
-    iget-object v3, v0, Lcom/oneplus/anim/OpGraphLight;->mWm:Landroid/view/WindowManager;
+    iput-object v2, v0, Lcom/oneplus/anim/OpGraphLight;->mAnimateImageView:Lcom/oneplus/anim/OpGraphLight$AnimateImageView;
 
-    invoke-interface {v3}, Landroid/view/WindowManager;->getDefaultDisplay()Landroid/view/Display;
+    :cond_1
+    iget-object v2, v0, Lcom/oneplus/anim/OpGraphLight;->mContext:Landroid/content/Context;
 
-    move-result-object v3
+    invoke-virtual {v2}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
-    invoke-virtual {v3, v2}, Landroid/view/Display;->getRealMetrics(Landroid/util/DisplayMetrics;)V
+    move-result-object v2
 
-    iget v3, v2, Landroid/util/DisplayMetrics;->widthPixels:I
+    new-instance v4, Landroid/util/DisplayMetrics;
 
-    iget v4, v2, Landroid/util/DisplayMetrics;->heightPixels:I
+    invoke-direct {v4}, Landroid/util/DisplayMetrics;-><init>()V
 
-    invoke-static {v3, v4}, Ljava/lang/Math;->max(II)I
+    iget-object v5, v0, Lcom/oneplus/anim/OpGraphLight;->mWm:Landroid/view/WindowManager;
 
-    move-result v3
+    invoke-interface {v5}, Landroid/view/WindowManager;->getDefaultDisplay()Landroid/view/Display;
 
-    iget v4, v2, Landroid/util/DisplayMetrics;->widthPixels:I
+    move-result-object v5
 
-    iget v5, v2, Landroid/util/DisplayMetrics;->heightPixels:I
+    invoke-virtual {v5, v4}, Landroid/view/Display;->getRealMetrics(Landroid/util/DisplayMetrics;)V
 
-    invoke-static {v4, v5}, Ljava/lang/Math;->min(II)I
+    iget v5, v4, Landroid/util/DisplayMetrics;->widthPixels:I
 
-    move-result v4
+    iget v6, v4, Landroid/util/DisplayMetrics;->heightPixels:I
 
-    new-instance v5, Ljava/lang/StringBuilder;
+    invoke-static {v5, v6}, Ljava/lang/Math;->max(II)I
 
-    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
+    move-result v5
 
-    const-string v6, "screenHeight:"
+    iget v6, v4, Landroid/util/DisplayMetrics;->widthPixels:I
 
-    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    iget v7, v4, Landroid/util/DisplayMetrics;->heightPixels:I
 
-    invoke-virtual {v5, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-static {v6, v7}, Ljava/lang/Math;->min(II)I
 
-    const-string v3, " / screenWidth:"
+    move-result v6
 
-    invoke-virtual {v5, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    new-instance v7, Ljava/lang/StringBuilder;
 
-    invoke-virtual {v5, v4}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-direct {v7}, Ljava/lang/StringBuilder;-><init>()V
 
-    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    const-string v8, "screenHeight:"
 
-    move-result-object v3
+    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string v5, "OpGraphLight"
+    invoke-virtual {v7, v5}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    invoke-static {v5, v3}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
+    const-string v5, " / screenWidth:"
 
-    const/16 v3, 0x438
+    invoke-virtual {v7, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const/4 v6, 0x0
+    invoke-virtual {v7, v6}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v7}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v5
+
+    invoke-static {v3, v5}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
+
+    const/16 v5, 0x438
 
     const/4 v7, 0x1
 
-    if-ne v4, v3, :cond_1
+    if-ne v6, v5, :cond_2
 
     iput v7, v0, Lcom/oneplus/anim/OpGraphLight;->m2kOr1080p:I
 
     goto :goto_0
 
-    :cond_1
-    iput v6, v0, Lcom/oneplus/anim/OpGraphLight;->m2kOr1080p:I
+    :cond_2
+    iput v1, v0, Lcom/oneplus/anim/OpGraphLight;->m2kOr1080p:I
 
     :goto_0
-    sget v3, Lcom/android/systemui/R$drawable;->op_front_camera_animation_graph:I
+    sget v5, Lcom/android/systemui/R$drawable;->op_front_camera_animation_graph:I
 
-    invoke-virtual {v1, v3}, Landroid/content/res/Resources;->openRawResource(I)Ljava/io/InputStream;
+    invoke-virtual {v2, v5}, Landroid/content/res/Resources;->openRawResource(I)Ljava/io/InputStream;
 
-    move-result-object v3
+    move-result-object v5
 
-    invoke-static {v3}, Landroid/graphics/BitmapFactory;->decodeStream(Ljava/io/InputStream;)Landroid/graphics/Bitmap;
+    invoke-static {v5}, Landroid/graphics/BitmapFactory;->decodeStream(Ljava/io/InputStream;)Landroid/graphics/Bitmap;
 
-    move-result-object v4
+    move-result-object v6
 
-    invoke-virtual {v4}, Landroid/graphics/Bitmap;->getWidth()I
+    invoke-virtual {v6}, Landroid/graphics/Bitmap;->getWidth()I
 
     move-result v8
 
     iput v8, v0, Lcom/oneplus/anim/OpGraphLight;->mAnimateImageWidth:I
 
-    invoke-virtual {v4}, Landroid/graphics/Bitmap;->getHeight()I
+    invoke-virtual {v6}, Landroid/graphics/Bitmap;->getHeight()I
 
     move-result v8
 
     iput v8, v0, Lcom/oneplus/anim/OpGraphLight;->mAnimateImageHeight:I
 
-    if-eqz v3, :cond_2
+    if-eqz v5, :cond_3
 
     :try_start_0
-    invoke-virtual {v3}, Ljava/io/InputStream;->close()V
+    invoke-virtual {v5}, Ljava/io/InputStream;->close()V
     :try_end_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
 
     :catch_0
-    :cond_2
-    if-eqz v4, :cond_3
-
-    invoke-virtual {v4}, Landroid/graphics/Bitmap;->recycle()V
-
     :cond_3
-    iget v3, v0, Lcom/oneplus/anim/OpGraphLight;->m2kOr1080p:I
+    if-eqz v6, :cond_4
 
-    if-ne v3, v7, :cond_4
+    invoke-virtual {v6}, Landroid/graphics/Bitmap;->recycle()V
 
-    iget v3, v0, Lcom/oneplus/anim/OpGraphLight;->mAnimateImageWidth:I
+    :cond_4
+    iget v5, v0, Lcom/oneplus/anim/OpGraphLight;->m2kOr1080p:I
 
-    int-to-double v3, v3
+    if-ne v5, v7, :cond_5
+
+    iget v5, v0, Lcom/oneplus/anim/OpGraphLight;->mAnimateImageWidth:I
+
+    int-to-double v5, v5
 
     const-wide/high16 v8, 0x3fe8000000000000L    # 0.75
 
-    mul-double/2addr v3, v8
+    mul-double/2addr v5, v8
 
-    double-to-int v3, v3
+    double-to-int v5, v5
 
-    iput v3, v0, Lcom/oneplus/anim/OpGraphLight;->mAnimateImageWidth:I
-
-    iget v3, v0, Lcom/oneplus/anim/OpGraphLight;->mAnimateImageHeight:I
-
-    int-to-double v3, v3
-
-    const-wide v8, 0x3fe7f559b3d07c85L    # 0.7487
-
-    mul-double/2addr v3, v8
-
-    double-to-int v3, v3
-
-    iput v3, v0, Lcom/oneplus/anim/OpGraphLight;->mAnimateImageHeight:I
-
-    :cond_4
-    new-instance v3, Ljava/lang/StringBuilder;
-
-    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v4, "mAnimateImageWidth:"
-
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget v4, v0, Lcom/oneplus/anim/OpGraphLight;->mAnimateImageWidth:I
-
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    const-string v4, " / mAnimateImageHeight:"
-
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget v4, v0, Lcom/oneplus/anim/OpGraphLight;->mAnimateImageHeight:I
-
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v3
-
-    invoke-static {v5, v3}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
-
-    sget v3, Lcom/android/systemui/R$dimen;->op_front_camera_animation_front_camera_posistion:I
-
-    invoke-virtual {v1, v3}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
-
-    move-result v1
-
-    iput v1, v0, Lcom/oneplus/anim/OpGraphLight;->mFrontCameraPosistion:I
-
-    iget-object v1, v0, Lcom/oneplus/anim/OpGraphLight;->mWm:Landroid/view/WindowManager;
-
-    invoke-interface {v1}, Landroid/view/WindowManager;->getDefaultDisplay()Landroid/view/Display;
-
-    move-result-object v1
-
-    if-nez v1, :cond_5
-
-    return-void
-
-    :cond_5
-    iget-object v3, v0, Lcom/oneplus/anim/OpGraphLight;->mViewContainer:Landroid/widget/LinearLayout;
-
-    if-nez v3, :cond_6
-
-    new-instance v3, Landroid/widget/LinearLayout;
-
-    iget-object v4, v0, Lcom/oneplus/anim/OpGraphLight;->mContext:Landroid/content/Context;
-
-    invoke-direct {v3, v4}, Landroid/widget/LinearLayout;-><init>(Landroid/content/Context;)V
-
-    iput-object v3, v0, Lcom/oneplus/anim/OpGraphLight;->mViewContainer:Landroid/widget/LinearLayout;
-
-    :cond_6
-    invoke-virtual {v1}, Landroid/view/Display;->getRotation()I
-
-    move-result v1
-
-    new-instance v3, Ljava/lang/StringBuilder;
-
-    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v4, "in first show() / rotation:"
-
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v3, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v3
-
-    invoke-static {v5, v3}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
-
-    iget v3, v0, Lcom/oneplus/anim/OpGraphLight;->mAnimateImageWidth:I
-
-    iget v4, v0, Lcom/oneplus/anim/OpGraphLight;->mAnimateImageHeight:I
-
-    invoke-static {v3, v4}, Ljava/lang/Math;->max(II)I
-
-    move-result v3
-
-    iget v4, v0, Lcom/oneplus/anim/OpGraphLight;->mAnimateImageWidth:I
+    iput v5, v0, Lcom/oneplus/anim/OpGraphLight;->mAnimateImageWidth:I
 
     iget v5, v0, Lcom/oneplus/anim/OpGraphLight;->mAnimateImageHeight:I
 
-    invoke-static {v4, v5}, Ljava/lang/Math;->max(II)I
+    int-to-double v5, v5
 
-    move-result v4
+    const-wide v8, 0x3fe7f559b3d07c85L    # 0.7487
 
-    iget v5, v0, Lcom/oneplus/anim/OpGraphLight;->mFrontCameraPosistion:I
+    mul-double/2addr v5, v8
+
+    double-to-int v5, v5
+
+    iput v5, v0, Lcom/oneplus/anim/OpGraphLight;->mAnimateImageHeight:I
+
+    :cond_5
+    new-instance v5, Ljava/lang/StringBuilder;
+
+    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v6, "mAnimateImageWidth:"
+
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget v6, v0, Lcom/oneplus/anim/OpGraphLight;->mAnimateImageWidth:I
+
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    const-string v6, " / mAnimateImageHeight:"
+
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget v6, v0, Lcom/oneplus/anim/OpGraphLight;->mAnimateImageHeight:I
+
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v5
+
+    invoke-static {v3, v5}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
+
+    sget v5, Lcom/android/systemui/R$dimen;->op_front_camera_animation_front_camera_posistion:I
+
+    invoke-virtual {v2, v5}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+
+    move-result v2
+
+    iput v2, v0, Lcom/oneplus/anim/OpGraphLight;->mFrontCameraPosistion:I
+
+    iget-object v2, v0, Lcom/oneplus/anim/OpGraphLight;->mWm:Landroid/view/WindowManager;
+
+    invoke-interface {v2}, Landroid/view/WindowManager;->getDefaultDisplay()Landroid/view/Display;
+
+    move-result-object v2
+
+    if-nez v2, :cond_6
+
+    return-void
+
+    :cond_6
+    iget-object v5, v0, Lcom/oneplus/anim/OpGraphLight;->mViewContainer:Landroid/widget/LinearLayout;
+
+    if-nez v5, :cond_7
+
+    new-instance v5, Landroid/widget/LinearLayout;
+
+    iget-object v6, v0, Lcom/oneplus/anim/OpGraphLight;->mContext:Landroid/content/Context;
+
+    invoke-direct {v5, v6}, Landroid/widget/LinearLayout;-><init>(Landroid/content/Context;)V
+
+    iput-object v5, v0, Lcom/oneplus/anim/OpGraphLight;->mViewContainer:Landroid/widget/LinearLayout;
+
+    :cond_7
+    invoke-virtual {v2}, Landroid/view/Display;->getRotation()I
+
+    move-result v2
+
+    new-instance v5, Ljava/lang/StringBuilder;
+
+    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v6, "in first show() / rotation:"
+
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v5, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v5
+
+    invoke-static {v3, v5}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
+
+    iget v3, v0, Lcom/oneplus/anim/OpGraphLight;->mAnimateImageWidth:I
+
+    iget v5, v0, Lcom/oneplus/anim/OpGraphLight;->mAnimateImageHeight:I
+
+    invoke-static {v3, v5}, Ljava/lang/Math;->max(II)I
+
+    move-result v3
+
+    iget v5, v0, Lcom/oneplus/anim/OpGraphLight;->mAnimateImageWidth:I
+
+    iget v6, v0, Lcom/oneplus/anim/OpGraphLight;->mAnimateImageHeight:I
+
+    invoke-static {v5, v6}, Ljava/lang/Math;->max(II)I
+
+    move-result v5
+
+    iget v6, v0, Lcom/oneplus/anim/OpGraphLight;->mFrontCameraPosistion:I
 
     const/4 v8, 0x0
 
-    if-eqz v1, :cond_a
+    if-eqz v2, :cond_b
 
-    if-eq v1, v7, :cond_9
+    if-eq v2, v7, :cond_a
 
     const/4 v9, 0x2
 
-    if-eq v1, v9, :cond_8
+    if-eq v2, v9, :cond_9
 
     const/4 v9, 0x3
 
-    if-eq v1, v9, :cond_7
+    if-eq v2, v9, :cond_8
 
-    goto/16 :goto_3
-
-    :cond_7
-    iget v1, v2, Landroid/util/DisplayMetrics;->widthPixels:I
-
-    sub-int v6, v1, v3
-
-    iget-object v1, v0, Lcom/oneplus/anim/OpGraphLight;->mViewContainer:Landroid/widget/LinearLayout;
-
-    invoke-virtual {v1, v8}, Landroid/widget/LinearLayout;->setPivotX(F)V
-
-    iget-object v1, v0, Lcom/oneplus/anim/OpGraphLight;->mViewContainer:Landroid/widget/LinearLayout;
-
-    invoke-virtual {v1, v8}, Landroid/widget/LinearLayout;->setPivotY(F)V
-
-    iget-object v1, v0, Lcom/oneplus/anim/OpGraphLight;->mViewContainer:Landroid/widget/LinearLayout;
-
-    const/high16 v2, 0x42b40000    # 90.0f
-
-    invoke-virtual {v1, v2}, Landroid/widget/LinearLayout;->setRotation(F)V
-
-    iget-object v1, v0, Lcom/oneplus/anim/OpGraphLight;->mViewContainer:Landroid/widget/LinearLayout;
-
-    int-to-float v2, v3
-
-    invoke-virtual {v1, v2}, Landroid/widget/LinearLayout;->setTranslationX(F)V
-
-    move v13, v5
-
-    goto :goto_2
+    goto/16 :goto_2
 
     :cond_8
-    iget v1, v2, Landroid/util/DisplayMetrics;->widthPixels:I
+    iget v1, v4, Landroid/util/DisplayMetrics;->widthPixels:I
 
-    sub-int/2addr v1, v5
-
-    sub-int v6, v1, v3
-
-    iget v1, v2, Landroid/util/DisplayMetrics;->heightPixels:I
-
-    sub-int/2addr v1, v4
+    sub-int/2addr v1, v3
 
     iget-object v2, v0, Lcom/oneplus/anim/OpGraphLight;->mViewContainer:Landroid/widget/LinearLayout;
 
@@ -466,93 +448,129 @@
 
     iget-object v2, v0, Lcom/oneplus/anim/OpGraphLight;->mViewContainer:Landroid/widget/LinearLayout;
 
-    const/high16 v5, 0x43340000    # 180.0f
+    const/high16 v4, 0x42b40000    # 90.0f
 
-    invoke-virtual {v2, v5}, Landroid/widget/LinearLayout;->setRotation(F)V
-
-    iget-object v2, v0, Lcom/oneplus/anim/OpGraphLight;->mViewContainer:Landroid/widget/LinearLayout;
-
-    int-to-float v5, v3
-
-    invoke-virtual {v2, v5}, Landroid/widget/LinearLayout;->setTranslationX(F)V
+    invoke-virtual {v2, v4}, Landroid/widget/LinearLayout;->setRotation(F)V
 
     iget-object v2, v0, Lcom/oneplus/anim/OpGraphLight;->mViewContainer:Landroid/widget/LinearLayout;
 
-    int-to-float v5, v4
+    int-to-float v4, v3
 
-    invoke-virtual {v2, v5}, Landroid/widget/LinearLayout;->setTranslationY(F)V
+    invoke-virtual {v2, v4}, Landroid/widget/LinearLayout;->setTranslationX(F)V
 
-    goto :goto_1
-
-    :cond_9
-    iget v1, v2, Landroid/util/DisplayMetrics;->heightPixels:I
-
-    sub-int/2addr v1, v5
-
-    sub-int/2addr v1, v4
-
-    iget-object v2, v0, Lcom/oneplus/anim/OpGraphLight;->mViewContainer:Landroid/widget/LinearLayout;
-
-    invoke-virtual {v2, v8}, Landroid/widget/LinearLayout;->setPivotX(F)V
-
-    iget-object v2, v0, Lcom/oneplus/anim/OpGraphLight;->mViewContainer:Landroid/widget/LinearLayout;
-
-    invoke-virtual {v2, v8}, Landroid/widget/LinearLayout;->setPivotY(F)V
-
-    iget-object v2, v0, Lcom/oneplus/anim/OpGraphLight;->mViewContainer:Landroid/widget/LinearLayout;
-
-    const/high16 v5, -0x3d4c0000    # -90.0f
-
-    invoke-virtual {v2, v5}, Landroid/widget/LinearLayout;->setRotation(F)V
-
-    iget-object v2, v0, Lcom/oneplus/anim/OpGraphLight;->mViewContainer:Landroid/widget/LinearLayout;
-
-    int-to-float v5, v4
-
-    invoke-virtual {v2, v5}, Landroid/widget/LinearLayout;->setTranslationY(F)V
-
-    :goto_1
-    move v13, v1
-
-    :goto_2
-    move v12, v6
-
-    goto :goto_4
-
-    :cond_a
-    iget-object v1, v0, Lcom/oneplus/anim/OpGraphLight;->mViewContainer:Landroid/widget/LinearLayout;
-
-    invoke-virtual {v1, v8}, Landroid/widget/LinearLayout;->setPivotX(F)V
-
-    iget-object v1, v0, Lcom/oneplus/anim/OpGraphLight;->mViewContainer:Landroid/widget/LinearLayout;
-
-    invoke-virtual {v1, v8}, Landroid/widget/LinearLayout;->setPivotY(F)V
-
-    iget-object v1, v0, Lcom/oneplus/anim/OpGraphLight;->mViewContainer:Landroid/widget/LinearLayout;
-
-    invoke-virtual {v1, v8}, Landroid/widget/LinearLayout;->setRotation(F)V
-
-    iget-object v1, v0, Lcom/oneplus/anim/OpGraphLight;->mViewContainer:Landroid/widget/LinearLayout;
-
-    invoke-virtual {v1, v8}, Landroid/widget/LinearLayout;->setTranslationY(F)V
-
-    :goto_3
-    move v12, v5
+    move v12, v1
 
     move v13, v6
 
-    :goto_4
+    goto :goto_3
+
+    :cond_9
+    iget v1, v4, Landroid/util/DisplayMetrics;->widthPixels:I
+
+    sub-int/2addr v1, v6
+
+    sub-int/2addr v1, v3
+
+    iget v2, v4, Landroid/util/DisplayMetrics;->heightPixels:I
+
+    sub-int/2addr v2, v5
+
+    iget-object v4, v0, Lcom/oneplus/anim/OpGraphLight;->mViewContainer:Landroid/widget/LinearLayout;
+
+    invoke-virtual {v4, v8}, Landroid/widget/LinearLayout;->setPivotX(F)V
+
+    iget-object v4, v0, Lcom/oneplus/anim/OpGraphLight;->mViewContainer:Landroid/widget/LinearLayout;
+
+    invoke-virtual {v4, v8}, Landroid/widget/LinearLayout;->setPivotY(F)V
+
+    iget-object v4, v0, Lcom/oneplus/anim/OpGraphLight;->mViewContainer:Landroid/widget/LinearLayout;
+
+    const/high16 v6, 0x43340000    # 180.0f
+
+    invoke-virtual {v4, v6}, Landroid/widget/LinearLayout;->setRotation(F)V
+
+    iget-object v4, v0, Lcom/oneplus/anim/OpGraphLight;->mViewContainer:Landroid/widget/LinearLayout;
+
+    int-to-float v6, v3
+
+    invoke-virtual {v4, v6}, Landroid/widget/LinearLayout;->setTranslationX(F)V
+
+    iget-object v4, v0, Lcom/oneplus/anim/OpGraphLight;->mViewContainer:Landroid/widget/LinearLayout;
+
+    int-to-float v6, v5
+
+    invoke-virtual {v4, v6}, Landroid/widget/LinearLayout;->setTranslationY(F)V
+
+    goto :goto_1
+
+    :cond_a
+    iget v2, v4, Landroid/util/DisplayMetrics;->heightPixels:I
+
+    sub-int/2addr v2, v6
+
+    sub-int/2addr v2, v5
+
+    iget-object v4, v0, Lcom/oneplus/anim/OpGraphLight;->mViewContainer:Landroid/widget/LinearLayout;
+
+    invoke-virtual {v4, v8}, Landroid/widget/LinearLayout;->setPivotX(F)V
+
+    iget-object v4, v0, Lcom/oneplus/anim/OpGraphLight;->mViewContainer:Landroid/widget/LinearLayout;
+
+    invoke-virtual {v4, v8}, Landroid/widget/LinearLayout;->setPivotY(F)V
+
+    iget-object v4, v0, Lcom/oneplus/anim/OpGraphLight;->mViewContainer:Landroid/widget/LinearLayout;
+
+    const/high16 v6, -0x3d4c0000    # -90.0f
+
+    invoke-virtual {v4, v6}, Landroid/widget/LinearLayout;->setRotation(F)V
+
+    iget-object v4, v0, Lcom/oneplus/anim/OpGraphLight;->mViewContainer:Landroid/widget/LinearLayout;
+
+    int-to-float v6, v5
+
+    invoke-virtual {v4, v6}, Landroid/widget/LinearLayout;->setTranslationY(F)V
+
+    :goto_1
+    move v12, v1
+
+    move v13, v2
+
+    goto :goto_3
+
+    :cond_b
+    iget-object v2, v0, Lcom/oneplus/anim/OpGraphLight;->mViewContainer:Landroid/widget/LinearLayout;
+
+    invoke-virtual {v2, v8}, Landroid/widget/LinearLayout;->setPivotX(F)V
+
+    iget-object v2, v0, Lcom/oneplus/anim/OpGraphLight;->mViewContainer:Landroid/widget/LinearLayout;
+
+    invoke-virtual {v2, v8}, Landroid/widget/LinearLayout;->setPivotY(F)V
+
+    iget-object v2, v0, Lcom/oneplus/anim/OpGraphLight;->mViewContainer:Landroid/widget/LinearLayout;
+
+    invoke-virtual {v2, v8}, Landroid/widget/LinearLayout;->setRotation(F)V
+
+    iget-object v2, v0, Lcom/oneplus/anim/OpGraphLight;->mViewContainer:Landroid/widget/LinearLayout;
+
+    invoke-virtual {v2, v8}, Landroid/widget/LinearLayout;->setTranslationY(F)V
+
+    :goto_2
+    move v13, v1
+
+    move v12, v6
+
+    :goto_3
     iget-boolean v1, v0, Lcom/oneplus/anim/OpGraphLight;->mViewAdded:Z
 
-    if-nez v1, :cond_b
+    if-nez v1, :cond_c
 
     new-instance v1, Landroid/view/WindowManager$LayoutParams;
 
-    invoke-static {v3, v4}, Ljava/lang/Math;->max(II)I
+    invoke-static {v3, v5}, Ljava/lang/Math;->max(II)I
 
     move-result v10
 
-    invoke-static {v3, v4}, Ljava/lang/Math;->max(II)I
+    invoke-static {v3, v5}, Ljava/lang/Math;->max(II)I
 
     move-result v11
 
@@ -612,7 +630,7 @@
 
     iput-boolean v7, v0, Lcom/oneplus/anim/OpGraphLight;->mViewAdded:Z
 
-    :cond_b
+    :cond_c
     return-void
 .end method
 

@@ -8,9 +8,11 @@
 
 .field private final mAnimationTranslationOffset:F
 
+.field private mAuthenticatePkg:Ljava/lang/String;
+
 .field protected final mBiometricIcon:Landroid/widget/ImageView;
 
-.field private mBundle:Landroid/os/Bundle;
+.field protected mBundle:Landroid/os/Bundle;
 
 .field protected final mCallback:Lcom/android/systemui/biometrics/DialogViewCallback;
 
@@ -24,7 +26,7 @@
 
 .field private final mErrorColor:I
 
-.field protected final mErrorText:Landroid/widget/TextView;
+.field protected mErrorText:Landroid/widget/TextView;
 
 .field protected mHandler:Landroid/os/Handler;
 
@@ -32,9 +34,11 @@
 
 .field private final mLinearOutSlowIn:Landroid/view/animation/Interpolator;
 
-.field protected final mNegativeButton:Landroid/widget/Button;
+.field protected mNegativeButton:Landroid/widget/Button;
 
-.field protected final mPositiveButton:Landroid/widget/Button;
+.field private mPause:Z
+
+.field protected mPositiveButton:Landroid/widget/Button;
 
 .field protected mRequireConfirmation:Z
 
@@ -48,7 +52,7 @@
 
 .field protected final mSubtitleText:Landroid/widget/TextView;
 
-.field protected final mTextColor:I
+.field protected mTextColor:I
 
 .field protected final mTitleText:Landroid/widget/TextView;
 
@@ -66,10 +70,28 @@
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;Lcom/android/systemui/biometrics/DialogViewCallback;)V
-    .locals 4
+.method public constructor <init>(Landroid/content/Context;Lcom/android/systemui/biometrics/DialogViewCallback;Z)V
+    .locals 6
 
-    invoke-direct {p0, p1}, Landroid/widget/LinearLayout;-><init>(Landroid/content/Context;)V
+    invoke-static {}, Lcom/oneplus/util/ThemeColorUtils;->getCurrentTheme()I
+
+    move-result v0
+
+    const/4 v1, 0x1
+
+    if-ne v0, v1, :cond_0
+
+    sget v0, Lcom/android/systemui/R$style;->Oneplus_Theme_BiometricDialog_Dark:I
+
+    goto :goto_0
+
+    :cond_0
+    sget v0, Lcom/android/systemui/R$style;->Oneplus_Theme_BiometricDialog_Light:I
+
+    :goto_0
+    const/4 v2, 0x0
+
+    invoke-direct {p0, p1, v2, v0}, Landroid/widget/LinearLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     new-instance p1, Landroid/os/Binder;
 
@@ -92,6 +114,10 @@
     invoke-direct {v0, p0}, Lcom/android/systemui/biometrics/BiometricDialogView$2;-><init>(Lcom/android/systemui/biometrics/BiometricDialogView;)V
 
     iput-object v0, p0, Lcom/android/systemui/biometrics/BiometricDialogView;->mHandler:Landroid/os/Handler;
+
+    invoke-virtual {p0, p2}, Lcom/android/systemui/biometrics/BiometricDialogView;->needWrap(Lcom/android/systemui/biometrics/DialogViewCallback;)Lcom/android/systemui/biometrics/DialogViewCallback;
+
+    move-result-object p2
 
     iput-object p2, p0, Lcom/android/systemui/biometrics/BiometricDialogView;->mCallback:Lcom/android/systemui/biometrics/DialogViewCallback;
 
@@ -159,18 +185,6 @@
 
     iput p2, p0, Lcom/android/systemui/biometrics/BiometricDialogView;->mErrorColor:I
 
-    invoke-virtual {p0}, Landroid/widget/LinearLayout;->getResources()Landroid/content/res/Resources;
-
-    move-result-object p2
-
-    sget v0, Lcom/android/systemui/R$color;->biometric_dialog_gray:I
-
-    invoke-virtual {p2, v0}, Landroid/content/res/Resources;->getColor(I)I
-
-    move-result p2
-
-    iput p2, p0, Lcom/android/systemui/biometrics/BiometricDialogView;->mTextColor:I
-
     new-instance p2, Landroid/util/DisplayMetrics;
 
     invoke-direct {p2}, Landroid/util/DisplayMetrics;-><init>()V
@@ -183,29 +197,41 @@
 
     invoke-virtual {v0, p2}, Landroid/view/Display;->getMetrics(Landroid/util/DisplayMetrics;)V
 
-    iget v0, p2, Landroid/util/DisplayMetrics;->widthPixels:I
+    new-instance v0, Landroid/util/DisplayMetrics;
 
-    iget p2, p2, Landroid/util/DisplayMetrics;->heightPixels:I
+    invoke-direct {v0}, Landroid/util/DisplayMetrics;-><init>()V
 
-    invoke-static {v0, p2}, Ljava/lang/Math;->min(II)I
+    iget-object v2, p0, Lcom/android/systemui/biometrics/BiometricDialogView;->mWindowManager:Landroid/view/WindowManager;
 
-    move-result p2
+    invoke-interface {v2}, Landroid/view/WindowManager;->getDefaultDisplay()Landroid/view/Display;
 
-    int-to-float p2, p2
+    move-result-object v2
 
-    iput p2, p0, Lcom/android/systemui/biometrics/BiometricDialogView;->mDialogWidth:F
+    invoke-virtual {v2, v0}, Landroid/view/Display;->getRealMetrics(Landroid/util/DisplayMetrics;)V
+
+    iget v2, p2, Landroid/util/DisplayMetrics;->widthPixels:I
+
+    iget v3, p2, Landroid/util/DisplayMetrics;->heightPixels:I
+
+    invoke-static {v2, v3}, Ljava/lang/Math;->min(II)I
+
+    move-result v2
+
+    int-to-float v2, v2
+
+    iput v2, p0, Lcom/android/systemui/biometrics/BiometricDialogView;->mDialogWidth:F
 
     invoke-virtual {p0}, Landroid/widget/LinearLayout;->getContext()Landroid/content/Context;
 
-    move-result-object p2
+    move-result-object v2
 
-    invoke-static {p2}, Landroid/view/LayoutInflater;->from(Landroid/content/Context;)Landroid/view/LayoutInflater;
+    invoke-static {v2}, Landroid/view/LayoutInflater;->from(Landroid/content/Context;)Landroid/view/LayoutInflater;
 
-    move-result-object p2
+    move-result-object v2
 
-    sget v0, Lcom/android/systemui/R$layout;->biometric_dialog:I
+    sget v3, Lcom/android/systemui/R$layout;->op_biometric_dialog:I
 
-    invoke-virtual {p2, v0, p0, p1}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
+    invoke-virtual {v2, v3, p0, p1}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
 
     move-result-object p1
 
@@ -219,165 +245,151 @@
 
     iget-object p1, p0, Lcom/android/systemui/biometrics/BiometricDialogView;->mLayout:Landroid/view/ViewGroup;
 
-    new-instance p2, Lcom/android/systemui/biometrics/BiometricDialogView$3;
+    new-instance v2, Lcom/android/systemui/biometrics/BiometricDialogView$3;
 
-    invoke-direct {p2, p0}, Lcom/android/systemui/biometrics/BiometricDialogView$3;-><init>(Lcom/android/systemui/biometrics/BiometricDialogView;)V
+    invoke-direct {v2, p0}, Lcom/android/systemui/biometrics/BiometricDialogView$3;-><init>(Lcom/android/systemui/biometrics/BiometricDialogView;)V
 
-    invoke-virtual {p1, p2}, Landroid/view/ViewGroup;->setOnKeyListener(Landroid/view/View$OnKeyListener;)V
+    invoke-virtual {p1, v2}, Landroid/view/ViewGroup;->setOnKeyListener(Landroid/view/View$OnKeyListener;)V
 
     iget-object p1, p0, Lcom/android/systemui/biometrics/BiometricDialogView;->mLayout:Landroid/view/ViewGroup;
 
-    sget p2, Lcom/android/systemui/R$id;->space:I
+    sget v2, Lcom/android/systemui/R$id;->space:I
 
-    invoke-virtual {p1, p2}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p1, v2}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
 
     move-result-object p1
 
+    iget-object v2, p0, Lcom/android/systemui/biometrics/BiometricDialogView;->mLayout:Landroid/view/ViewGroup;
+
+    sget v3, Lcom/android/systemui/R$id;->left_space:I
+
+    invoke-virtual {v2, v3}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
+
+    move-result-object v2
+
+    iget-object v3, p0, Lcom/android/systemui/biometrics/BiometricDialogView;->mLayout:Landroid/view/ViewGroup;
+
+    sget v4, Lcom/android/systemui/R$id;->right_space:I
+
+    invoke-virtual {v3, v4}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
+
+    move-result-object v3
+
+    iget-object v4, p0, Lcom/android/systemui/biometrics/BiometricDialogView;->mLayout:Landroid/view/ViewGroup;
+
+    sget v5, Lcom/android/systemui/R$id;->dialog:I
+
+    invoke-virtual {v4, v5}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
+
+    move-result-object v4
+
+    check-cast v4, Landroid/widget/LinearLayout;
+
+    iput-object v4, p0, Lcom/android/systemui/biometrics/BiometricDialogView;->mDialog:Landroid/widget/LinearLayout;
+
+    iget-object v4, p0, Lcom/android/systemui/biometrics/BiometricDialogView;->mLayout:Landroid/view/ViewGroup;
+
+    sget v5, Lcom/android/systemui/R$id;->title:I
+
+    invoke-virtual {v4, v5}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
+
+    move-result-object v4
+
+    check-cast v4, Landroid/widget/TextView;
+
+    iput-object v4, p0, Lcom/android/systemui/biometrics/BiometricDialogView;->mTitleText:Landroid/widget/TextView;
+
+    iget-object v4, p0, Lcom/android/systemui/biometrics/BiometricDialogView;->mLayout:Landroid/view/ViewGroup;
+
+    sget v5, Lcom/android/systemui/R$id;->subtitle:I
+
+    invoke-virtual {v4, v5}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
+
+    move-result-object v4
+
+    check-cast v4, Landroid/widget/TextView;
+
+    iput-object v4, p0, Lcom/android/systemui/biometrics/BiometricDialogView;->mSubtitleText:Landroid/widget/TextView;
+
+    iget-object v4, p0, Lcom/android/systemui/biometrics/BiometricDialogView;->mLayout:Landroid/view/ViewGroup;
+
+    sget v5, Lcom/android/systemui/R$id;->description:I
+
+    invoke-virtual {v4, v5}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
+
+    move-result-object v4
+
+    check-cast v4, Landroid/widget/TextView;
+
+    iput-object v4, p0, Lcom/android/systemui/biometrics/BiometricDialogView;->mDescriptionText:Landroid/widget/TextView;
+
+    iget-object v4, p0, Lcom/android/systemui/biometrics/BiometricDialogView;->mLayout:Landroid/view/ViewGroup;
+
+    sget v5, Lcom/android/systemui/R$id;->biometric_icon:I
+
+    invoke-virtual {v4, v5}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
+
+    move-result-object v4
+
+    check-cast v4, Landroid/widget/ImageView;
+
+    iput-object v4, p0, Lcom/android/systemui/biometrics/BiometricDialogView;->mBiometricIcon:Landroid/widget/ImageView;
+
+    iget-object v4, p0, Lcom/android/systemui/biometrics/BiometricDialogView;->mLayout:Landroid/view/ViewGroup;
+
+    invoke-direct {p0, v4, p2, v0, p3}, Lcom/android/systemui/biometrics/BiometricDialogView;->shouldAdjustForOpUIDesign(Landroid/view/ViewGroup;Landroid/util/DisplayMetrics;Landroid/util/DisplayMetrics;Z)V
+
     iget-object p2, p0, Lcom/android/systemui/biometrics/BiometricDialogView;->mLayout:Landroid/view/ViewGroup;
 
-    sget v0, Lcom/android/systemui/R$id;->left_space:I
+    sget p3, Lcom/android/systemui/R$id;->button_try_again:I
 
-    invoke-virtual {p2, v0}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p2, p3}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
 
     move-result-object p2
 
-    iget-object v0, p0, Lcom/android/systemui/biometrics/BiometricDialogView;->mLayout:Landroid/view/ViewGroup;
+    check-cast p2, Landroid/widget/Button;
 
-    sget v1, Lcom/android/systemui/R$id;->right_space:I
+    iput-object p2, p0, Lcom/android/systemui/biometrics/BiometricDialogView;->mTryAgainButton:Landroid/widget/Button;
 
-    invoke-virtual {v0, v1}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
+    sget p2, Lcom/oneplus/util/ThemeColorUtils;->QS_ACCENT:I
 
-    move-result-object v0
+    invoke-static {p2}, Lcom/oneplus/util/ThemeColorUtils;->getColor(I)I
 
-    iget-object v1, p0, Lcom/android/systemui/biometrics/BiometricDialogView;->mLayout:Landroid/view/ViewGroup;
+    move-result p2
 
-    sget v2, Lcom/android/systemui/R$id;->dialog:I
+    iget-object p3, p0, Lcom/android/systemui/biometrics/BiometricDialogView;->mPositiveButton:Landroid/widget/Button;
 
-    invoke-virtual {v1, v2}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p3, p2}, Landroid/widget/Button;->setTextColor(I)V
 
-    move-result-object v1
+    iget-object p3, p0, Lcom/android/systemui/biometrics/BiometricDialogView;->mNegativeButton:Landroid/widget/Button;
 
-    check-cast v1, Landroid/widget/LinearLayout;
+    invoke-virtual {p3, p2}, Landroid/widget/Button;->setTextColor(I)V
 
-    iput-object v1, p0, Lcom/android/systemui/biometrics/BiometricDialogView;->mDialog:Landroid/widget/LinearLayout;
+    iget-object p3, p0, Lcom/android/systemui/biometrics/BiometricDialogView;->mTryAgainButton:Landroid/widget/Button;
 
-    iget-object v1, p0, Lcom/android/systemui/biometrics/BiometricDialogView;->mLayout:Landroid/view/ViewGroup;
+    invoke-virtual {p3, p2}, Landroid/widget/Button;->setTextColor(I)V
 
-    sget v2, Lcom/android/systemui/R$id;->title:I
-
-    invoke-virtual {v1, v2}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
-
-    move-result-object v1
-
-    check-cast v1, Landroid/widget/TextView;
-
-    iput-object v1, p0, Lcom/android/systemui/biometrics/BiometricDialogView;->mTitleText:Landroid/widget/TextView;
-
-    iget-object v1, p0, Lcom/android/systemui/biometrics/BiometricDialogView;->mLayout:Landroid/view/ViewGroup;
-
-    sget v2, Lcom/android/systemui/R$id;->subtitle:I
-
-    invoke-virtual {v1, v2}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
-
-    move-result-object v1
-
-    check-cast v1, Landroid/widget/TextView;
-
-    iput-object v1, p0, Lcom/android/systemui/biometrics/BiometricDialogView;->mSubtitleText:Landroid/widget/TextView;
-
-    iget-object v1, p0, Lcom/android/systemui/biometrics/BiometricDialogView;->mLayout:Landroid/view/ViewGroup;
-
-    sget v2, Lcom/android/systemui/R$id;->description:I
-
-    invoke-virtual {v1, v2}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
-
-    move-result-object v1
-
-    check-cast v1, Landroid/widget/TextView;
-
-    iput-object v1, p0, Lcom/android/systemui/biometrics/BiometricDialogView;->mDescriptionText:Landroid/widget/TextView;
-
-    iget-object v1, p0, Lcom/android/systemui/biometrics/BiometricDialogView;->mLayout:Landroid/view/ViewGroup;
-
-    sget v2, Lcom/android/systemui/R$id;->biometric_icon:I
-
-    invoke-virtual {v1, v2}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
-
-    move-result-object v1
-
-    check-cast v1, Landroid/widget/ImageView;
-
-    iput-object v1, p0, Lcom/android/systemui/biometrics/BiometricDialogView;->mBiometricIcon:Landroid/widget/ImageView;
-
-    iget-object v1, p0, Lcom/android/systemui/biometrics/BiometricDialogView;->mLayout:Landroid/view/ViewGroup;
-
-    sget v2, Lcom/android/systemui/R$id;->error:I
-
-    invoke-virtual {v1, v2}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
-
-    move-result-object v1
-
-    check-cast v1, Landroid/widget/TextView;
-
-    iput-object v1, p0, Lcom/android/systemui/biometrics/BiometricDialogView;->mErrorText:Landroid/widget/TextView;
-
-    iget-object v1, p0, Lcom/android/systemui/biometrics/BiometricDialogView;->mLayout:Landroid/view/ViewGroup;
-
-    sget v2, Lcom/android/systemui/R$id;->button2:I
-
-    invoke-virtual {v1, v2}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
-
-    move-result-object v1
-
-    check-cast v1, Landroid/widget/Button;
-
-    iput-object v1, p0, Lcom/android/systemui/biometrics/BiometricDialogView;->mNegativeButton:Landroid/widget/Button;
-
-    iget-object v1, p0, Lcom/android/systemui/biometrics/BiometricDialogView;->mLayout:Landroid/view/ViewGroup;
-
-    sget v2, Lcom/android/systemui/R$id;->button1:I
-
-    invoke-virtual {v1, v2}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
-
-    move-result-object v1
-
-    check-cast v1, Landroid/widget/Button;
-
-    iput-object v1, p0, Lcom/android/systemui/biometrics/BiometricDialogView;->mPositiveButton:Landroid/widget/Button;
-
-    iget-object v1, p0, Lcom/android/systemui/biometrics/BiometricDialogView;->mLayout:Landroid/view/ViewGroup;
-
-    sget v2, Lcom/android/systemui/R$id;->button_try_again:I
-
-    invoke-virtual {v1, v2}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
-
-    move-result-object v1
-
-    check-cast v1, Landroid/widget/Button;
-
-    iput-object v1, p0, Lcom/android/systemui/biometrics/BiometricDialogView;->mTryAgainButton:Landroid/widget/Button;
-
-    iget-object v1, p0, Lcom/android/systemui/biometrics/BiometricDialogView;->mBiometricIcon:Landroid/widget/ImageView;
+    iget-object p2, p0, Lcom/android/systemui/biometrics/BiometricDialogView;->mBiometricIcon:Landroid/widget/ImageView;
 
     invoke-virtual {p0}, Landroid/widget/LinearLayout;->getResources()Landroid/content/res/Resources;
 
-    move-result-object v2
+    move-result-object p3
 
     invoke-virtual {p0}, Lcom/android/systemui/biometrics/BiometricDialogView;->getIconDescriptionResourceId()I
 
-    move-result v3
+    move-result v0
 
-    invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+    invoke-virtual {p3, v0}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
-    move-result-object v2
+    move-result-object p3
 
-    invoke-virtual {v1, v2}, Landroid/widget/ImageView;->setContentDescription(Ljava/lang/CharSequence;)V
+    invoke-virtual {p2, p3}, Landroid/widget/ImageView;->setContentDescription(Ljava/lang/CharSequence;)V
 
     invoke-direct {p0, p1}, Lcom/android/systemui/biometrics/BiometricDialogView;->setDismissesDialog(Landroid/view/View;)V
 
-    invoke-direct {p0, p2}, Lcom/android/systemui/biometrics/BiometricDialogView;->setDismissesDialog(Landroid/view/View;)V
+    invoke-direct {p0, v2}, Lcom/android/systemui/biometrics/BiometricDialogView;->setDismissesDialog(Landroid/view/View;)V
 
-    invoke-direct {p0, v0}, Lcom/android/systemui/biometrics/BiometricDialogView;->setDismissesDialog(Landroid/view/View;)V
+    invoke-direct {p0, v3}, Lcom/android/systemui/biometrics/BiometricDialogView;->setDismissesDialog(Landroid/view/View;)V
 
     iget-object p1, p0, Lcom/android/systemui/biometrics/BiometricDialogView;->mNegativeButton:Landroid/widget/Button;
 
@@ -405,9 +417,7 @@
 
     iget-object p1, p0, Lcom/android/systemui/biometrics/BiometricDialogView;->mLayout:Landroid/view/ViewGroup;
 
-    const/4 p2, 0x1
-
-    invoke-virtual {p1, p2}, Landroid/view/ViewGroup;->setFocusableInTouchMode(Z)V
+    invoke-virtual {p1, v1}, Landroid/view/ViewGroup;->setFocusableInTouchMode(Z)V
 
     iget-object p0, p0, Lcom/android/systemui/biometrics/BiometricDialogView;->mLayout:Landroid/view/ViewGroup;
 
@@ -448,6 +458,224 @@
     return p0
 .end method
 
+.method private getFodAnimationSize()F
+    .locals 1
+
+    invoke-static {}, Lcom/oneplus/util/OpUtils;->is2KResolution()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    sget v0, Lcom/android/systemui/R$dimen;->fp_animation_height_2k:I
+
+    goto :goto_0
+
+    :cond_0
+    sget v0, Lcom/android/systemui/R$dimen;->fp_animation_height_1080p:I
+
+    :goto_0
+    invoke-virtual {p0}, Landroid/widget/LinearLayout;->getResources()Landroid/content/res/Resources;
+
+    move-result-object p0
+
+    invoke-virtual {p0, v0}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+
+    move-result p0
+
+    int-to-float p0, p0
+
+    return p0
+.end method
+
+.method private getFodIconBottomSpace(Landroid/util/DisplayMetrics;)I
+    .locals 9
+
+    iget p1, p1, Landroid/util/DisplayMetrics;->heightPixels:I
+
+    invoke-direct {p0}, Lcom/android/systemui/biometrics/BiometricDialogView;->getFodAnimationSize()F
+
+    move-result v0
+
+    invoke-direct {p0}, Lcom/android/systemui/biometrics/BiometricDialogView;->getFodIconSize()F
+
+    move-result v1
+
+    invoke-static {}, Lcom/oneplus/util/OpUtils;->isSupportCustomFingerprintType2()Z
+
+    move-result v2
+
+    invoke-static {}, Lcom/oneplus/util/OpUtils;->is2KResolution()Z
+
+    move-result v3
+
+    invoke-static {}, Lcom/oneplus/util/OpUtils;->isSupportCutout()Z
+
+    move-result v4
+
+    invoke-virtual {p0}, Landroid/widget/LinearLayout;->getContext()Landroid/content/Context;
+
+    move-result-object v5
+
+    invoke-static {v5}, Lcom/oneplus/util/OpUtils;->isCutoutHide(Landroid/content/Context;)Z
+
+    move-result v5
+
+    invoke-virtual {p0}, Landroid/widget/LinearLayout;->getContext()Landroid/content/Context;
+
+    move-result-object v6
+
+    invoke-static {v6}, Lcom/oneplus/util/OpUtils;->isSupportResolutionSwitch(Landroid/content/Context;)Z
+
+    move-result v6
+
+    new-instance v7, Ljava/lang/StringBuilder;
+
+    invoke-direct {v7}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v8, "adjusting bottom space. isFpType2= "
+
+    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v7, v2}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    const-string v8, ", is2kDisplay= "
+
+    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v7, v3}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    const-string v8, ", isSupportCutout= "
+
+    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v7, v4}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    const-string v8, ", isCutoutHide= "
+
+    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v7, v5}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    const-string v8, ", isSupportResolutionSwitch= "
+
+    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v7, v6}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v7}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v7
+
+    const-string v8, "BiometricDialogView"
+
+    invoke-static {v8, v7}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    if-eqz v6, :cond_2
+
+    if-eqz v2, :cond_0
+
+    sget v2, Lcom/android/systemui/R$dimen;->op_biometric_animation_view_ss_y:I
+
+    goto :goto_0
+
+    :cond_0
+    if-eqz v3, :cond_1
+
+    sget v2, Lcom/android/systemui/R$dimen;->op_biometric_animation_view_y_2k:I
+
+    goto :goto_0
+
+    :cond_1
+    sget v2, Lcom/android/systemui/R$dimen;->op_biometric_animation_view_y_1080p:I
+
+    goto :goto_0
+
+    :cond_2
+    if-eqz v2, :cond_3
+
+    sget v2, Lcom/android/systemui/R$dimen;->op_biometric_animation_view_ss_y:I
+
+    goto :goto_0
+
+    :cond_3
+    sget v2, Lcom/android/systemui/R$dimen;->op_biometric_animation_view_y:I
+
+    :goto_0
+    invoke-virtual {p0}, Landroid/widget/LinearLayout;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v3
+
+    invoke-virtual {v3, v2}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+
+    move-result v2
+
+    int-to-float v2, v2
+
+    if-eqz v4, :cond_4
+
+    if-eqz v5, :cond_4
+
+    invoke-virtual {p0}, Landroid/widget/LinearLayout;->getContext()Landroid/content/Context;
+
+    move-result-object p0
+
+    invoke-static {p0}, Lcom/oneplus/util/OpUtils;->getCutoutPathdataHeight(Landroid/content/Context;)I
+
+    move-result p0
+
+    add-int/2addr p1, p0
+
+    :cond_4
+    int-to-float p0, p1
+
+    sub-float/2addr p0, v2
+
+    sub-float/2addr p0, v1
+
+    sub-float/2addr v0, v1
+
+    const/high16 p1, 0x40000000    # 2.0f
+
+    div-float/2addr v0, p1
+
+    sub-float/2addr p0, v0
+
+    float-to-int p0, p0
+
+    return p0
+.end method
+
+.method private getFodIconSize()F
+    .locals 1
+
+    invoke-static {}, Lcom/oneplus/util/OpUtils;->is2KResolution()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    sget v0, Lcom/android/systemui/R$dimen;->op_biometric_icon_normal_width_2k:I
+
+    goto :goto_0
+
+    :cond_0
+    sget v0, Lcom/android/systemui/R$dimen;->op_biometric_icon_normal_width_1080p:I
+
+    :goto_0
+    invoke-virtual {p0}, Landroid/widget/LinearLayout;->getResources()Landroid/content/res/Resources;
+
+    move-result-object p0
+
+    invoke-virtual {p0, v0}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+
+    move-result p0
+
+    int-to-float p0, p0
+
+    return p0
+.end method
+
 .method private setDismissesDialog(Landroid/view/View;)V
     .locals 1
 
@@ -461,6 +689,332 @@
 
     invoke-virtual {p1, v0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
+    return-void
+.end method
+
+.method private shouldAdjustForOpUIDesign(Landroid/view/ViewGroup;Landroid/util/DisplayMetrics;Landroid/util/DisplayMetrics;Z)V
+    .locals 6
+
+    invoke-static {}, Lcom/oneplus/util/OpUtils;->isCustomFingerprint()Z
+
+    move-result v0
+
+    const/4 v1, 0x0
+
+    if-eqz v0, :cond_0
+
+    sget v0, Lcom/android/systemui/R$id;->error1:I
+
+    instance-of v2, p0, Lcom/android/systemui/biometrics/FingerprintDialogView;
+
+    if-eqz v2, :cond_1
+
+    invoke-direct {p0}, Lcom/android/systemui/biometrics/BiometricDialogView;->getFodIconSize()F
+
+    move-result v2
+
+    float-to-int v2, v2
+
+    invoke-direct {p0, p2}, Lcom/android/systemui/biometrics/BiometricDialogView;->getFodIconBottomSpace(Landroid/util/DisplayMetrics;)I
+
+    move-result v3
+
+    const/4 v4, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    sget v0, Lcom/android/systemui/R$id;->error2:I
+
+    :cond_1
+    move v2, v1
+
+    move v3, v2
+
+    move v4, v3
+
+    :goto_0
+    if-nez v4, :cond_2
+
+    invoke-virtual {p0}, Landroid/widget/LinearLayout;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v2
+
+    sget v3, Lcom/android/systemui/R$dimen;->biometric_dialog_biometric_icon_size:I
+
+    invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getDimension(I)F
+
+    move-result v2
+
+    float-to-int v2, v2
+
+    invoke-virtual {p0}, Landroid/widget/LinearLayout;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v3
+
+    sget v5, Lcom/android/systemui/R$dimen;->op_biometric_dialog_bottom_height_no_fod:I
+
+    invoke-virtual {v3, v5}, Landroid/content/res/Resources;->getDimension(I)F
+
+    move-result v3
+
+    float-to-int v3, v3
+
+    :cond_2
+    invoke-virtual {p1, v0}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/widget/TextView;
+
+    iput-object v0, p0, Lcom/android/systemui/biometrics/BiometricDialogView;->mErrorText:Landroid/widget/TextView;
+
+    iget-object v0, p0, Lcom/android/systemui/biometrics/BiometricDialogView;->mErrorText:Landroid/widget/TextView;
+
+    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setVisibility(I)V
+
+    iget-object v0, p0, Lcom/android/systemui/biometrics/BiometricDialogView;->mErrorText:Landroid/widget/TextView;
+
+    invoke-virtual {v0}, Landroid/widget/TextView;->getTextColors()Landroid/content/res/ColorStateList;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Landroid/content/res/ColorStateList;->getDefaultColor()I
+
+    move-result v0
+
+    iput v0, p0, Lcom/android/systemui/biometrics/BiometricDialogView;->mTextColor:I
+
+    iget-object v0, p0, Lcom/android/systemui/biometrics/BiometricDialogView;->mBiometricIcon:Landroid/widget/ImageView;
+
+    invoke-virtual {v0}, Landroid/widget/ImageView;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
+
+    move-result-object v0
+
+    iput v2, v0, Landroid/view/ViewGroup$LayoutParams;->width:I
+
+    iget-object v0, p0, Lcom/android/systemui/biometrics/BiometricDialogView;->mBiometricIcon:Landroid/widget/ImageView;
+
+    invoke-virtual {v0}, Landroid/widget/ImageView;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
+
+    move-result-object v0
+
+    iput v2, v0, Landroid/view/ViewGroup$LayoutParams;->height:I
+
+    sget v0, Lcom/android/systemui/R$id;->bottom_space:I
+
+    invoke-virtual {p1, v0}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
+
+    move-result-object p1
+
+    iget p3, p3, Landroid/util/DisplayMetrics;->heightPixels:I
+
+    iget p2, p2, Landroid/util/DisplayMetrics;->heightPixels:I
+
+    sub-int/2addr p3, p2
+
+    add-int/2addr v3, p3
+
+    sget p2, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    const/16 p3, 0x1d
+
+    if-lt p2, p3, :cond_3
+
+    iget-object p2, p0, Lcom/android/systemui/biometrics/BiometricDialogView;->mWindowManager:Landroid/view/WindowManager;
+
+    invoke-interface {p2}, Landroid/view/WindowManager;->getDefaultDisplay()Landroid/view/Display;
+
+    move-result-object p2
+
+    invoke-virtual {p2}, Landroid/view/Display;->getCutout()Landroid/view/DisplayCutout;
+
+    move-result-object p2
+
+    if-eqz p2, :cond_3
+
+    if-nez v4, :cond_3
+
+    invoke-virtual {p2}, Landroid/view/DisplayCutout;->getSafeInsetTop()I
+
+    move-result p2
+
+    sub-int/2addr v3, p2
+
+    :cond_3
+    invoke-virtual {p1}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
+
+    move-result-object p1
+
+    iput v3, p1, Landroid/view/ViewGroup$LayoutParams;->height:I
+
+    if-eqz p4, :cond_4
+
+    iget-object p1, p0, Lcom/android/systemui/biometrics/BiometricDialogView;->mLayout:Landroid/view/ViewGroup;
+
+    sget p2, Lcom/android/systemui/R$id;->button1:I
+
+    invoke-virtual {p1, p2}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
+
+    move-result-object p1
+
+    check-cast p1, Landroid/widget/Button;
+
+    iput-object p1, p0, Lcom/android/systemui/biometrics/BiometricDialogView;->mNegativeButton:Landroid/widget/Button;
+
+    iget-object p1, p0, Lcom/android/systemui/biometrics/BiometricDialogView;->mLayout:Landroid/view/ViewGroup;
+
+    sget p2, Lcom/android/systemui/R$id;->button2:I
+
+    invoke-virtual {p1, p2}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
+
+    move-result-object p1
+
+    check-cast p1, Landroid/widget/Button;
+
+    iput-object p1, p0, Lcom/android/systemui/biometrics/BiometricDialogView;->mPositiveButton:Landroid/widget/Button;
+
+    iget-object p1, p0, Lcom/android/systemui/biometrics/BiometricDialogView;->mPositiveButton:Landroid/widget/Button;
+
+    const/16 p2, 0x8
+
+    invoke-virtual {p1, p2}, Landroid/widget/Button;->setVisibility(I)V
+
+    iget-object p1, p0, Lcom/android/systemui/biometrics/BiometricDialogView;->mNegativeButton:Landroid/widget/Button;
+
+    iget p0, p0, Lcom/android/systemui/biometrics/BiometricDialogView;->mDialogWidth:F
+
+    const/high16 p2, 0x40000000    # 2.0f
+
+    div-float/2addr p0, p2
+
+    float-to-int p0, p0
+
+    invoke-virtual {p1, p0}, Landroid/widget/Button;->setMaxWidth(I)V
+
+    goto :goto_1
+
+    :cond_4
+    iget-object p1, p0, Lcom/android/systemui/biometrics/BiometricDialogView;->mLayout:Landroid/view/ViewGroup;
+
+    sget p2, Lcom/android/systemui/R$id;->button2:I
+
+    invoke-virtual {p1, p2}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
+
+    move-result-object p1
+
+    check-cast p1, Landroid/widget/Button;
+
+    iput-object p1, p0, Lcom/android/systemui/biometrics/BiometricDialogView;->mNegativeButton:Landroid/widget/Button;
+
+    iget-object p1, p0, Lcom/android/systemui/biometrics/BiometricDialogView;->mLayout:Landroid/view/ViewGroup;
+
+    sget p2, Lcom/android/systemui/R$id;->button1:I
+
+    invoke-virtual {p1, p2}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
+
+    move-result-object p1
+
+    check-cast p1, Landroid/widget/Button;
+
+    iput-object p1, p0, Lcom/android/systemui/biometrics/BiometricDialogView;->mPositiveButton:Landroid/widget/Button;
+
+    :goto_1
+    return-void
+.end method
+
+.method private updateFingerprintStatus()V
+    .locals 4
+
+    const-string v0, "fingerprint"
+
+    invoke-static {v0}, Landroid/os/ServiceManager;->getService(Ljava/lang/String;)Landroid/os/IBinder;
+
+    move-result-object v0
+
+    invoke-static {v0}, Landroid/hardware/fingerprint/IFingerprintService$Stub;->asInterface(Landroid/os/IBinder;)Landroid/hardware/fingerprint/IFingerprintService;
+
+    move-result-object v0
+
+    const-string v1, "BiometricDialogView"
+
+    if-eqz v0, :cond_2
+
+    :try_start_0
+    invoke-interface {v0}, Landroid/hardware/fingerprint/IFingerprintService;->getAuthenticatedPackage()Ljava/lang/String;
+
+    move-result-object v2
+
+    iget-object v3, p0, Lcom/android/systemui/biometrics/BiometricDialogView;->mAuthenticatePkg:Ljava/lang/String;
+
+    invoke-static {v3}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+
+    move-result v3
+
+    if-nez v3, :cond_1
+
+    iget-object v3, p0, Lcom/android/systemui/biometrics/BiometricDialogView;->mAuthenticatePkg:Ljava/lang/String;
+
+    invoke-static {v3, v2}, Landroid/text/TextUtils;->equals(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_1
+
+    iget-boolean p0, p0, Lcom/android/systemui/biometrics/BiometricDialogView;->mPause:Z
+
+    if-eqz p0, :cond_0
+
+    const/16 p0, 0xc
+
+    goto :goto_0
+
+    :cond_0
+    const/16 p0, 0xb
+
+    :goto_0
+    invoke-interface {v0, p0}, Landroid/hardware/fingerprint/IFingerprintService;->updateStatus(I)I
+
+    goto :goto_1
+
+    :cond_1
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v2, "updateFingerprintStatus: current authentication pkg is not "
+
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object p0, p0, Lcom/android/systemui/biometrics/BiometricDialogView;->mAuthenticatePkg:Ljava/lang/String;
+
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p0
+
+    invoke-static {v1, p0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    :try_end_0
+    .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
+
+    goto :goto_1
+
+    :catch_0
+    move-exception p0
+
+    const-string/jumbo v0, "updateStatus occur remote exception"
+
+    invoke-static {v1, v0, p0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
+
+    goto :goto_1
+
+    :cond_2
+    const-string/jumbo p0, "updateFingerprintStatus null pointer"
+
+    invoke-static {v1, p0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    :goto_1
     return-void
 .end method
 
@@ -533,7 +1087,7 @@
 
     const/16 v3, 0x7de
 
-    const/high16 v4, 0x1000000
+    const v4, 0x1000100
 
     const/4 v5, -0x3
 
@@ -546,6 +1100,10 @@
     or-int/lit8 v0, v0, 0x10
 
     iput v0, v6, Landroid/view/WindowManager$LayoutParams;->privateFlags:I
+
+    const/4 v0, 0x1
+
+    iput v0, v6, Landroid/view/WindowManager$LayoutParams;->layoutInDisplayCutoutMode:I
 
     const-string v0, "BiometricDialogView"
 
@@ -678,6 +1236,12 @@
     return-void
 .end method
 
+.method protected needWrap(Lcom/android/systemui/biometrics/DialogViewCallback;)Lcom/android/systemui/biometrics/DialogViewCallback;
+    .locals 0
+
+    return-object p1
+.end method
+
 .method public onAttachedToWindow()V
     .locals 4
 
@@ -742,7 +1306,7 @@
 
     sget v1, Lcom/android/systemui/R$color;->biometric_dialog_dim_color:I
 
-    invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setBackgroundColor(I)V
+    invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setBackgroundResource(I)V
 
     :goto_0
     iget-object v0, p0, Lcom/android/systemui/biometrics/BiometricDialogView;->mNegativeButton:Landroid/widget/Button;
@@ -814,6 +1378,16 @@
     invoke-virtual {p0, v0}, Lcom/android/systemui/biometrics/BiometricDialogView;->updateState(I)V
 
     :goto_1
+    iget-object v0, p0, Lcom/android/systemui/biometrics/BiometricDialogView;->mBundle:Landroid/os/Bundle;
+
+    const-string v2, "key_fingerprint_package_name"
+
+    invoke-virtual {v0, v2}, Landroid/os/Bundle;->getString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lcom/android/systemui/biometrics/BiometricDialogView;->mAuthenticatePkg:Ljava/lang/String;
+
     iget-object v0, p0, Lcom/android/systemui/biometrics/BiometricDialogView;->mBundle:Landroid/os/Bundle;
 
     const-string/jumbo v2, "title"
@@ -984,6 +1558,8 @@
 
     invoke-virtual {v0, v3}, Landroid/view/ViewGroup;->setAlpha(F)V
 
+    invoke-virtual {p0}, Lcom/android/systemui/biometrics/BiometricDialogView;->onBiometricPromptReady()V
+
     :goto_5
     iput-boolean v1, p0, Lcom/android/systemui/biometrics/BiometricDialogView;->mWasForceRemoved:Z
 
@@ -1004,8 +1580,16 @@
     return-void
 .end method
 
+.method protected onBiometricPromptReady()V
+    .locals 0
+
+    return-void
+.end method
+
 .method public onDialogAnimatedIn()V
     .locals 0
+
+    invoke-virtual {p0}, Lcom/android/systemui/biometrics/BiometricDialogView;->onBiometricPromptReady()V
 
     return-void
 .end method
@@ -1113,6 +1697,99 @@
 
     invoke-virtual {p1, v0, p0}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
 
+    return-void
+.end method
+
+.method public onWindowFocusChanged(Z)V
+    .locals 2
+
+    invoke-super {p0, p1}, Landroid/widget/LinearLayout;->onWindowFocusChanged(Z)V
+
+    invoke-static {}, Lcom/oneplus/util/OpUtils;->isCustomFingerprint()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v1, "onWindowFocusChanged: hasFocus= "
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    const-string v1, ", mAnimatingAway= "
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-boolean v1, p0, Lcom/android/systemui/biometrics/BiometricDialogView;->mAnimatingAway:Z
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    const-string v1, ", mWasForceRemoved= "
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-boolean v1, p0, Lcom/android/systemui/biometrics/BiometricDialogView;->mWasForceRemoved:Z
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    const-string v1, "BiometricDialogView"
+
+    invoke-static {v1, v0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    iget-boolean v0, p0, Lcom/android/systemui/biometrics/BiometricDialogView;->mAnimatingAway:Z
+
+    if-nez v0, :cond_1
+
+    iget-boolean v0, p0, Lcom/android/systemui/biometrics/BiometricDialogView;->mWasForceRemoved:Z
+
+    if-nez v0, :cond_1
+
+    if-eqz p1, :cond_0
+
+    iget-boolean v0, p0, Lcom/android/systemui/biometrics/BiometricDialogView;->mPause:Z
+
+    if-eqz v0, :cond_0
+
+    const-string p1, "onWindowFocusChanged: need to resume"
+
+    invoke-static {v1, p1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    const/4 p1, 0x0
+
+    iput-boolean p1, p0, Lcom/android/systemui/biometrics/BiometricDialogView;->mPause:Z
+
+    invoke-direct {p0}, Lcom/android/systemui/biometrics/BiometricDialogView;->updateFingerprintStatus()V
+
+    goto :goto_0
+
+    :cond_0
+    if-nez p1, :cond_1
+
+    iget-boolean p1, p0, Lcom/android/systemui/biometrics/BiometricDialogView;->mPause:Z
+
+    if-nez p1, :cond_1
+
+    const-string p1, "onWindowFocusChanged: need to suspend"
+
+    invoke-static {v1, p1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    const/4 p1, 0x1
+
+    iput-boolean p1, p0, Lcom/android/systemui/biometrics/BiometricDialogView;->mPause:Z
+
+    invoke-direct {p0}, Lcom/android/systemui/biometrics/BiometricDialogView;->updateFingerprintStatus()V
+
+    :cond_1
+    :goto_0
     return-void
 .end method
 

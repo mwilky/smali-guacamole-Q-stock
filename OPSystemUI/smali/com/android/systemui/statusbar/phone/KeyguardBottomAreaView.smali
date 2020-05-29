@@ -854,7 +854,7 @@
 
     new-instance v0, Landroid/os/HandlerThread;
 
-    const-string v1, "thread"
+    const-string/jumbo v1, "thread"
 
     invoke-direct {v0, v1}, Landroid/os/HandlerThread;-><init>(Ljava/lang/String;)V
 
@@ -1211,7 +1211,7 @@
 
     check-cast v0, Lcom/android/systemui/tuner/TunerService;
 
-    const-string v2, "sysui_keyguard_left_unlock"
+    const-string/jumbo v2, "sysui_keyguard_left_unlock"
 
     invoke-virtual {v0, v2, v1}, Lcom/android/systemui/tuner/TunerService;->getValue(Ljava/lang/String;I)I
 
@@ -2184,7 +2184,7 @@
 
     check-cast v0, Lcom/android/systemui/tuner/TunerService;
 
-    const-string v3, "sysui_keyguard_right_unlock"
+    const-string/jumbo v3, "sysui_keyguard_right_unlock"
 
     invoke-virtual {v0, v3, v2}, Lcom/android/systemui/tuner/TunerService;->getValue(Ljava/lang/String;I)I
 
@@ -2317,7 +2317,7 @@
 
     iget-object v2, p0, Landroid/widget/FrameLayout;->mContext:Landroid/content/Context;
 
-    const-string v3, "sysui_keyguard_right"
+    const-string/jumbo v3, "sysui_keyguard_right"
 
     invoke-direct {v1, v2, v3}, Lcom/android/systemui/tuner/LockscreenFragment$LockButtonFactory;-><init>(Landroid/content/Context;Ljava/lang/String;)V
 
@@ -2367,7 +2367,7 @@
 
     iget-object v2, p0, Landroid/widget/FrameLayout;->mContext:Landroid/content/Context;
 
-    const-string v3, "sysui_keyguard_left"
+    const-string/jumbo v3, "sysui_keyguard_left"
 
     invoke-direct {v1, v2, v3}, Lcom/android/systemui/tuner/LockscreenFragment$LockButtonFactory;-><init>(Landroid/content/Context;Ljava/lang/String;)V
 
@@ -2815,6 +2815,12 @@
     iput-object v0, p0, Lcom/android/systemui/statusbar/phone/KeyguardBottomAreaView;->mActivityIntentHelper:Lcom/android/systemui/ActivityIntentHelper;
 
     invoke-virtual {p0}, Lcom/android/systemui/statusbar/phone/KeyguardBottomAreaView;->updateLeftAffordance()V
+
+    sget-object p0, Lcom/android/systemui/statusbar/phone/KeyguardBottomAreaView;->PHONE_INTENT:Landroid/content/Intent;
+
+    const-string v0, "android.intent.category.DEFAULT"
+
+    invoke-virtual {p0, v0}, Landroid/content/Intent;->addCategory(Ljava/lang/String;)Landroid/content/Intent;
 
     return-void
 .end method

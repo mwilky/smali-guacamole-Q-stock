@@ -264,7 +264,7 @@
 
     const-string/jumbo v4, "title"
 
-    const-string v5, "text"
+    const-string/jumbo v5, "text"
 
     if-eqz v3, :cond_6
 

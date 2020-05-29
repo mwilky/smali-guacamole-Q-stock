@@ -27,10 +27,10 @@
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;Lcom/android/systemui/biometrics/DialogViewCallback;)V
+.method public constructor <init>(Landroid/content/Context;Lcom/android/systemui/biometrics/DialogViewCallback;Z)V
     .locals 0
 
-    invoke-direct {p0, p1, p2}, Lcom/android/systemui/biometrics/BiometricDialogView;-><init>(Landroid/content/Context;Lcom/android/systemui/biometrics/DialogViewCallback;)V
+    invoke-direct {p0, p1, p2, p3}, Lcom/android/systemui/biometrics/BiometricDialogView;-><init>(Landroid/content/Context;Lcom/android/systemui/biometrics/DialogViewCallback;Z)V
 
     new-instance p1, Lcom/android/systemui/biometrics/FaceDialogView$DialogOutlineProvider;
 

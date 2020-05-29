@@ -324,7 +324,7 @@
     <string name="battery_saver_notification_title">Trình tiết kiệm pin đang bật</string>
     <string name="battery_saver_start_action">Bật trình tiết kiệm pin</string>
     <string name="battery_usage_extanded">Trình tiết kiệm pin có thể kéo dài thời gian sử dụng thêm khoảng %s dựa trên cách bạn sử dụng</string>
-    <string name="battery_usage_remaining">Cần kéo dài khoảng %s dựa trên cách bạn sử dụng. Giảm hiệu suất và dữ liệu nền.</string>
+    <string name="battery_usage_remaining_time">Còn lại %s</string>
     <string name="biometric_dialog_confirm">Xác nhận</string>
     <string name="biometric_dialog_empty_space_description">Vùng trống, nhấn để hủy quá trình xác thực</string>
     <string name="biometric_dialog_face_icon_description_authenticated">Đã xác thực khuôn mặt</string>

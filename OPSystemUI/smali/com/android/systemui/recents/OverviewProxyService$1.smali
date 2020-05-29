@@ -600,7 +600,7 @@
 .end method
 
 .method public notifyGestureEnded(I)V
-    .locals 4
+    .locals 5
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -647,6 +647,29 @@
 
     move-result-wide v0
 
+    invoke-static {}, Lcom/oneplus/util/OpUtils;->isCustomFingerprint()Z
+
+    move-result v2
+
+    if-eqz v2, :cond_1
+
+    iget-object v2, p0, Lcom/android/systemui/recents/OverviewProxyService$1;->this$0:Lcom/android/systemui/recents/OverviewProxyService;
+
+    invoke-static {v2}, Lcom/android/systemui/recents/OverviewProxyService;->access$200(Lcom/android/systemui/recents/OverviewProxyService;)Landroid/content/Context;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object v2
+
+    const/4 v3, 0x0
+
+    const-string v4, "global_gesture_notify_applocker"
+
+    invoke-static {v2, v4, p1, v3}, Landroid/provider/Settings$System;->putIntForUser(Landroid/content/ContentResolver;Ljava/lang/String;II)Z
+
+    :cond_1
     :try_start_0
     iget-object v2, p0, Lcom/android/systemui/recents/OverviewProxyService$1;->this$0:Lcom/android/systemui/recents/OverviewProxyService;
 
@@ -675,7 +698,7 @@
 .end method
 
 .method public notifyGestureStarted()V
-    .locals 6
+    .locals 8
 
     const-string v0, "notifyGestureStarted"
 
@@ -706,6 +729,31 @@
 
     move-result-object v3
 
+    invoke-static {}, Lcom/oneplus/util/OpUtils;->isCustomFingerprint()Z
+
+    move-result v4
+
+    if-eqz v4, :cond_1
+
+    iget-object v4, p0, Lcom/android/systemui/recents/OverviewProxyService$1;->this$0:Lcom/android/systemui/recents/OverviewProxyService;
+
+    invoke-static {v4}, Lcom/android/systemui/recents/OverviewProxyService;->access$200(Lcom/android/systemui/recents/OverviewProxyService;)Landroid/content/Context;
+
+    move-result-object v4
+
+    invoke-virtual {v4}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object v4
+
+    const/16 v5, 0xa
+
+    const/4 v6, 0x0
+
+    const-string v7, "global_gesture_notify_applocker"
+
+    invoke-static {v4, v7, v5, v6}, Landroid/provider/Settings$System;->putIntForUser(Landroid/content/ContentResolver;Ljava/lang/String;II)Z
+
+    :cond_1
     iget-object v4, p0, Lcom/android/systemui/recents/OverviewProxyService$1;->this$0:Lcom/android/systemui/recents/OverviewProxyService;
 
     invoke-static {v4}, Lcom/android/systemui/recents/OverviewProxyService;->access$200(Lcom/android/systemui/recents/OverviewProxyService;)Landroid/content/Context;

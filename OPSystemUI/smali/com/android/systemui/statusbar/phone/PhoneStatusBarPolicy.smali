@@ -597,7 +597,7 @@
 
     invoke-interface {v2, v3, v0}, Lcom/android/systemui/statusbar/phone/StatusBarIconController;->setIconVisibility(Ljava/lang/String;Z)V
 
-    const/16 v2, 0xd7
+    const/16 v2, 0xd8
 
     const/4 v3, 0x1
 
@@ -1060,7 +1060,7 @@
 .end method
 
 .method private updateAlarm()V
-    .locals 7
+    .locals 8
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBarPolicy;->mAlarmManager:Landroid/app/AlarmManager;
 
@@ -1082,73 +1082,116 @@
 
     const-wide/16 v5, 0x0
 
-    cmp-long v0, v3, v5
+    cmp-long v3, v3, v5
 
-    if-lez v0, :cond_0
+    if-lez v3, :cond_0
 
-    move v0, v1
+    move v3, v1
 
     goto :goto_0
 
     :cond_0
-    move v0, v2
+    move v3, v2
 
     :goto_0
-    iget-object v3, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBarPolicy;->mZenController:Lcom/android/systemui/statusbar/policy/ZenModeController;
+    iget-object v4, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBarPolicy;->mZenController:Lcom/android/systemui/statusbar/policy/ZenModeController;
 
-    invoke-interface {v3}, Lcom/android/systemui/statusbar/policy/ZenModeController;->getZen()I
+    invoke-interface {v4}, Lcom/android/systemui/statusbar/policy/ZenModeController;->getZen()I
 
-    move-result v3
+    move-result v4
 
-    const/4 v4, 0x2
+    const/4 v5, 0x2
 
-    if-ne v3, v4, :cond_1
+    if-ne v4, v5, :cond_1
 
-    move v3, v1
+    move v4, v1
 
     goto :goto_1
 
     :cond_1
-    move v3, v2
+    move v4, v2
 
     :goto_1
-    iget-object v4, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBarPolicy;->mIconController:Lcom/android/systemui/statusbar/phone/StatusBarIconController;
+    iget-object v5, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBarPolicy;->mIconController:Lcom/android/systemui/statusbar/phone/StatusBarIconController;
 
-    iget-object v5, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBarPolicy;->mSlotAlarmClock:Ljava/lang/String;
+    iget-object v6, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBarPolicy;->mSlotAlarmClock:Ljava/lang/String;
 
-    if-eqz v3, :cond_2
+    if-eqz v4, :cond_2
 
-    sget v3, Lcom/android/systemui/R$drawable;->stat_sys_alarm_dim:I
+    sget v4, Lcom/android/systemui/R$drawable;->stat_sys_alarm_dim:I
 
     goto :goto_2
 
     :cond_2
-    sget v3, Lcom/android/systemui/R$drawable;->stat_sys_alarm:I
+    sget v4, Lcom/android/systemui/R$drawable;->stat_sys_alarm:I
 
     :goto_2
     invoke-direct {p0}, Lcom/android/systemui/statusbar/phone/PhoneStatusBarPolicy;->buildAlarmContentDescription()Ljava/lang/String;
 
-    move-result-object v6
+    move-result-object v7
 
-    invoke-interface {v4, v5, v3, v6}, Lcom/android/systemui/statusbar/phone/StatusBarIconController;->setIcon(Ljava/lang/String;ILjava/lang/CharSequence;)V
+    invoke-interface {v5, v6, v4, v7}, Lcom/android/systemui/statusbar/phone/StatusBarIconController;->setIcon(Ljava/lang/String;ILjava/lang/CharSequence;)V
 
-    iget-object v3, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBarPolicy;->mIconController:Lcom/android/systemui/statusbar/phone/StatusBarIconController;
+    iget-object v4, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBarPolicy;->mContext:Landroid/content/Context;
+
+    if-eqz v4, :cond_3
+
+    new-instance v4, Ljava/lang/StringBuilder;
+
+    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v5, "updateAlarm "
+
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object v5, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBarPolicy;->mContext:Landroid/content/Context;
+
+    invoke-static {v0, v5}, Lcom/android/systemui/statusbar/phone/PhoneStatusBarPolicy;->formatNextAlarm(Landroid/app/AlarmManager$AlarmClockInfo;Landroid/content/Context;)Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v0, " hasAlarm: "
+
+    invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v4, v3}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    const-string v0, " UserSetup: "
+
+    invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-boolean v0, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBarPolicy;->mCurrentUserSetup:Z
+
+    invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    const-string v4, "PhoneStatusBarPolicy"
+
+    invoke-static {v4, v0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    :cond_3
+    iget-object v0, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBarPolicy;->mIconController:Lcom/android/systemui/statusbar/phone/StatusBarIconController;
 
     iget-object v4, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBarPolicy;->mSlotAlarmClock:Ljava/lang/String;
 
     iget-boolean p0, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBarPolicy;->mCurrentUserSetup:Z
 
-    if-eqz p0, :cond_3
+    if-eqz p0, :cond_4
 
-    if-eqz v0, :cond_3
+    if-eqz v3, :cond_4
 
     goto :goto_3
 
-    :cond_3
+    :cond_4
     move v1, v2
 
     :goto_3
-    invoke-interface {v3, v4, v1}, Lcom/android/systemui/statusbar/phone/StatusBarIconController;->setIconVisibility(Ljava/lang/String;Z)V
+    invoke-interface {v0, v4, v1}, Lcom/android/systemui/statusbar/phone/StatusBarIconController;->setIconVisibility(Ljava/lang/String;Z)V
 
     return-void
 .end method
@@ -1595,7 +1638,7 @@
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBarPolicy;->mContext:Landroid/content/Context;
 
-    const-string v1, "telecom"
+    const-string/jumbo v1, "telecom"
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 

@@ -501,6 +501,12 @@
     if-eqz v4, :cond_3
 
     :cond_2
+    invoke-static {}, Lcom/oneplus/util/OpUtils;->isCutoutEmulationEnabled()Z
+
+    move-result v5
+
+    if-nez v5, :cond_3
+
     iput v3, v0, Landroid/graphics/Rect;->left:I
 
     iput v4, v0, Landroid/graphics/Rect;->right:I
@@ -1541,6 +1547,16 @@
     iget v0, v0, Landroid/content/res/Configuration;->fontScale:F
 
     iput v0, p0, Lcom/android/systemui/statusbar/phone/KeyguardStatusBarView;->mFontScale:F
+
+    iget-object v0, p0, Lcom/android/systemui/statusbar/phone/KeyguardStatusBarView;->mBatteryView:Lcom/android/systemui/BatteryMeterView;
+
+    iget-object p0, p0, Lcom/android/systemui/statusbar/phone/KeyguardStatusBarView;->mBatteryController:Lcom/android/systemui/statusbar/policy/BatteryController;
+
+    invoke-interface {p0}, Lcom/android/systemui/statusbar/policy/BatteryController;->isPowerSave()Z
+
+    move-result p0
+
+    invoke-virtual {v0, p0}, Lcom/oneplus/systemui/OpBatteryMeterView;->setPowerSaveEnabled(Z)V
 
     return-void
 .end method

@@ -324,7 +324,7 @@
     <string name="battery_saver_notification_title">Šetrič batérie je zapnutý</string>
     <string name="battery_saver_start_action">Zapnúť šetrič batérie</string>
     <string name="battery_usage_extanded">Šetrič batérie môže predĺžiť výdrž o %s v závislosti na vašom používaní</string>
-    <string name="battery_usage_remaining">Pri vašom používaní by mal vydržať %s. Zníži výkon a dáta na pozadí.</string>
+    <string name="battery_usage_remaining_time">Zostáva %s</string>
     <string name="biometric_dialog_confirm">Potvrdiť</string>
     <string name="biometric_dialog_empty_space_description">Prázdna oblasť, klepnutím zrušte overenie</string>
     <string name="biometric_dialog_face_icon_description_authenticated">Tvár bola overená</string>

@@ -324,7 +324,7 @@
     <string name="battery_saver_notification_title">Batterisparefunktion er aktiveret</string>
     <string name="battery_saver_start_action">Aktivér batterisparefunktion</string>
     <string name="battery_usage_extanded">Strømsparetilstand kan forlænge brugen med ca. %s alt afhængigt af brug</string>
-    <string name="battery_usage_remaining">Bør holde ca. %s alt afhængigt af brug. Reducerer ydeevne og baggrundsdata.</string>
+    <string name="battery_usage_remaining_time">%s venstre</string>
     <string name="biometric_dialog_confirm">Bekræft</string>
     <string name="biometric_dialog_empty_space_description">Tomt område. Tryk for at annullere godkendelsen.</string>
     <string name="biometric_dialog_face_icon_description_authenticated">Ansigtet er godkendt</string>

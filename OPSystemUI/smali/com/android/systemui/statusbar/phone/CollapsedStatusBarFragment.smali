@@ -523,6 +523,8 @@
     return-void
 
     :cond_0
+    iput p2, p0, Lcom/oneplus/systemui/statusbar/phone/OpCollapsedStatusBarFragment;->mState1:I
+
     invoke-virtual {p0, p2}, Lcom/android/systemui/statusbar/phone/CollapsedStatusBarFragment;->adjustDisableFlags(I)I
 
     move-result p1

@@ -28,7 +28,7 @@
 
     invoke-direct {v0, p0, p1}, Lcom/android/systemui/classifier/-$$Lambda$FalsingManagerProxy$gca_JCTVGHkvAjBNMeOIeE6opNs;-><init>(Lcom/android/systemui/classifier/FalsingManagerProxy;Landroid/content/Context;)V
 
-    const-string v1, "systemui"
+    const-string/jumbo v1, "systemui"
 
     invoke-static {v1, p3, v0}, Landroid/provider/DeviceConfig;->addOnPropertiesChangedListener(Ljava/lang/String;Ljava/util/concurrent/Executor;Landroid/provider/DeviceConfig$OnPropertiesChangedListener;)V
 
@@ -64,7 +64,7 @@
 .method private onDeviceConfigPropertiesChanged(Landroid/content/Context;Ljava/lang/String;)V
     .locals 1
 
-    const-string v0, "systemui"
+    const-string/jumbo v0, "systemui"
 
     invoke-virtual {v0, p2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -489,7 +489,7 @@
     .annotation build Lcom/android/internal/annotations/VisibleForTesting;
     .end annotation
 
-    const-string v0, "systemui"
+    const-string/jumbo v0, "systemui"
 
     const-string v1, "brightline_falsing_manager_enabled"
 

@@ -1737,6 +1737,25 @@
     return p0
 .end method
 
+.method public shouldHideIme()V
+    .locals 2
+
+    iget-object v0, p0, Lcom/android/keyguard/KeyguardSecurityContainer;->mCurrentSecuritySelection:Lcom/android/keyguard/KeyguardSecurityModel$SecurityMode;
+
+    sget-object v1, Lcom/android/keyguard/KeyguardSecurityModel$SecurityMode;->Password:Lcom/android/keyguard/KeyguardSecurityModel$SecurityMode;
+
+    if-ne v0, v1, :cond_0
+
+    invoke-direct {p0, v0}, Lcom/android/keyguard/KeyguardSecurityContainer;->getSecurityView(Lcom/android/keyguard/KeyguardSecurityModel$SecurityMode;)Lcom/android/keyguard/KeyguardSecurityView;
+
+    move-result-object p0
+
+    invoke-interface {p0}, Lcom/android/keyguard/KeyguardSecurityView;->shouldHideIme()V
+
+    :cond_0
+    return-void
+.end method
+
 .method public showMessage(Ljava/lang/CharSequence;Landroid/content/res/ColorStateList;)V
     .locals 2
 
@@ -1799,7 +1818,7 @@
 
     const/4 v2, 0x4
 
-    const-string v3, "swipe"
+    const-string/jumbo v3, "swipe"
 
     const/4 v4, 0x2
 

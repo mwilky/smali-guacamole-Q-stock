@@ -324,7 +324,7 @@
     <string name="battery_saver_notification_title">Risparmio energetico attivo</string>
     <string name="battery_saver_start_action">Attiva Risparmio energetico</string>
     <string name="battery_usage_extanded">"Risparmio batteria può estendere l'utilizzo di circa %s in base al tuo utilizzo"</string>
-    <string name="battery_usage_remaining">Si prevede ancora una durata di %s in base al tuo utilizzo. Abbassa le prestazioni e riduce i dati in background.</string>
+    <string name="battery_usage_remaining_time">"%s all'esaurimento della batteria"</string>
     <string name="biometric_dialog_confirm">Conferma</string>
     <string name="biometric_dialog_empty_space_description">"Spazio vuoto, tocca per annullare l'autenticazione"</string>
     <string name="biometric_dialog_face_icon_description_authenticated">Volto autenticato</string>
@@ -1100,7 +1100,7 @@ Sei inoltre connesso a una VPN, da cui è possibile monitorare la tua attività 
     <string name="ongoing_privacy_dialog_separator">", "</string>
     <string name="op_earphone_connect">Associazione in corso...</string>
     <string name="op_earphone_connected_fail">Associazione non riuscita. Controllare lo stato degli auricolari e del Bluetooth.</string>
-    <string name="op_earphone_connected_success">Associazione riuscita. Tocca per eseguire ulteriori impostazioni.</string>
+    <string name="op_earphone_connected_success">Associazione riuscita. Tocca per altre impostazioni.</string>
     <string name="op_earphone_device">TOCCA PER ASSOCIARE</string>
     <string name="op_earphone_title">OnePlus Bullets Wireless</string>
     <string name="op_emergency_indicator_hint_text">Scorri verso il basso per i servizi di emergenza</string>

@@ -79,7 +79,7 @@
 
     iget v0, p0, Lcom/android/systemui/statusbar/policy/BatteryControllerImpl$1;->curLevel:I
 
-    const-string v1, "testmode"
+    const-string/jumbo v1, "testmode"
 
     const-string v2, "plugged"
 

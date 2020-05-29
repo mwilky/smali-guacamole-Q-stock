@@ -265,7 +265,7 @@
     const/16 v16, 0x0
 
     :goto_1
-    const-string v5, "text"
+    const-string/jumbo v5, "text"
 
     if-nez v16, :cond_6
 
@@ -625,7 +625,7 @@
 
     move-result-object v0
 
-    const-string v1, "text"
+    const-string/jumbo v1, "text"
 
     invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -1163,7 +1163,7 @@
 
     move-result-object v1
 
-    const-string v2, "text"
+    const-string/jumbo v2, "text"
 
     invoke-virtual {v2, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 

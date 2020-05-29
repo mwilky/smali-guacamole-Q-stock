@@ -324,7 +324,7 @@
     <string name="battery_saver_notification_title">ബാറ്ററി ലാഭിക്കൽ ഓണാണ്</string>
     <string name="battery_saver_start_action">ബാറ്ററി ലാഭിക്കൽ ഓണാക്കുക</string>
     <string name="battery_usage_extanded">നിങ്ങളുടെ ഉപയോഗത്തെ അടിസ്ഥാനമാക്കി ബാറ്ററി സേവർ ഏകദേശം %s ഉപയോഗം നീട്ടാം</string>
-    <string name="battery_usage_remaining">നിങ്ങളുടെ ഉപയോഗത്തെ അടിസ്ഥാനമാക്കി ഏകദേശം %s വരെ നീണ്ടുനിൽക്കണം. പ്രകടനവും പശ്ചാത്തല ഡാറ്റയും പരിമിതപ്പെടുത്തുന്നു.</string>
+    <string name="battery_usage_remaining_time">%s ശേഷിക്കുന്നു</string>
     <string name="biometric_dialog_confirm">സ്ഥിരീകരിക്കുക</string>
     <string name="biometric_dialog_empty_space_description">ശൂന്യമായ ഇടം, പരിശോധിച്ചുറപ്പിക്കൽ റദ്ദാക്കാൻ ടാപ്പ് ചെയ്യുക</string>
     <string name="biometric_dialog_face_icon_description_authenticated">മുഖം പരിശോധിച്ചുറപ്പിച്ചു</string>

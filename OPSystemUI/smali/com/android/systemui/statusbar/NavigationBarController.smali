@@ -452,31 +452,59 @@
     invoke-virtual {p6, p1, p2}, Lcom/android/systemui/statusbar/phone/NavigationBarFragment;->notifyNavBarColorChanged(ILjava/lang/String;)V
 
     :cond_2
-    iget-object p0, p0, Lcom/android/systemui/statusbar/NavigationBarController;->mNavigationBars:Landroid/util/SparseArray;
+    iget-object p1, p0, Lcom/android/systemui/statusbar/NavigationBarController;->mNavigationBars:Landroid/util/SparseArray;
 
-    invoke-virtual {p0, p3, p6}, Landroid/util/SparseArray;->append(ILjava/lang/Object;)V
+    invoke-virtual {p1, p3, p6}, Landroid/util/SparseArray;->append(ILjava/lang/Object;)V
 
     if-eqz p4, :cond_3
 
     invoke-virtual {p5}, Landroid/view/Display;->getDisplayId()I
 
-    move-result p1
+    move-result p2
 
-    iget-object p2, p4, Lcom/android/internal/statusbar/RegisterStatusBarResult;->mImeToken:Landroid/os/IBinder;
+    iget-object p3, p4, Lcom/android/internal/statusbar/RegisterStatusBarResult;->mImeToken:Landroid/os/IBinder;
 
-    iget p3, p4, Lcom/android/internal/statusbar/RegisterStatusBarResult;->mImeWindowVis:I
+    iget p5, p4, Lcom/android/internal/statusbar/RegisterStatusBarResult;->mImeWindowVis:I
 
-    iget p5, p4, Lcom/android/internal/statusbar/RegisterStatusBarResult;->mImeBackDisposition:I
+    iget p7, p4, Lcom/android/internal/statusbar/RegisterStatusBarResult;->mImeBackDisposition:I
 
-    iget-boolean p7, p4, Lcom/android/internal/statusbar/RegisterStatusBarResult;->mShowImeSwitcher:Z
+    iget-boolean v0, p4, Lcom/android/internal/statusbar/RegisterStatusBarResult;->mShowImeSwitcher:Z
 
-    move-object p0, p6
+    move-object p1, p6
 
     move p4, p5
 
     move p5, p7
 
-    invoke-virtual/range {p0 .. p5}, Lcom/android/systemui/statusbar/phone/NavigationBarFragment;->setImeWindowStatus(ILandroid/os/IBinder;IIZ)V
+    move p6, v0
+
+    invoke-virtual/range {p1 .. p6}, Lcom/android/systemui/statusbar/phone/NavigationBarFragment;->setImeWindowStatus(ILandroid/os/IBinder;IIZ)V
+
+    iget-object p0, p0, Lcom/android/systemui/statusbar/NavigationBarController;->mContext:Landroid/content/Context;
+
+    const-class p1, Lcom/android/systemui/statusbar/phone/StatusBar;
+
+    invoke-static {p0, p1}, Lcom/android/systemui/SysUiServiceProvider;->getComponent(Landroid/content/Context;Ljava/lang/Class;)Ljava/lang/Object;
+
+    move-result-object p0
+
+    check-cast p0, Lcom/android/systemui/statusbar/phone/StatusBar;
+
+    if-eqz p0, :cond_3
+
+    invoke-virtual {p0}, Lcom/oneplus/systemui/statusbar/phone/OpStatusBar;->isImeStateChange()Z
+
+    move-result p1
+
+    if-eqz p1, :cond_3
+
+    sget-object p1, Lcom/android/systemui/statusbar/NavigationBarController;->TAG:Ljava/lang/String;
+
+    const-string p2, "Update ImeWindowStatus when add view by IME showing"
+
+    invoke-static {p1, p2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    invoke-virtual {p0}, Lcom/oneplus/systemui/statusbar/phone/OpStatusBar;->updateImeWindowStatus()V
 
     :cond_3
     return-void

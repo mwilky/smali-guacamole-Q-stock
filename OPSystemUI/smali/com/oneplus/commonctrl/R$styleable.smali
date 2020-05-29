@@ -341,6 +341,16 @@
 
 .field public static final OPAlertDialog:[I
 
+.field public static final OPAlertDialog_android_layout:I = 0x0
+
+.field public static final OPAlertDialog_op_listItemLayout:I = 0x1
+
+.field public static final OPAlertDialog_op_listLayout:I = 0x2
+
+.field public static final OPAlertDialog_op_multiChoiceItemLayout:I = 0x3
+
+.field public static final OPAlertDialog_op_singleChoiceItemLayout:I = 0x4
+
 .field public static final OPAutoCompleteTextView:[I
 
 .field public static final OPAutoCompleteTextView_android_completionHint:I = 0x0

@@ -256,7 +256,7 @@
 
     move-result v1
 
-    const-string v2, "sysui_qs_tiles"
+    const-string/jumbo v2, "sysui_qs_tiles"
 
     invoke-static {v0, v2, v1}, Landroid/provider/Settings$Secure;->getStringForUser(Landroid/content/ContentResolver;Ljava/lang/String;I)Ljava/lang/String;
 
@@ -847,7 +847,7 @@
 
     move-result p2
 
-    const-string v0, "sysui_qs_tiles"
+    const-string/jumbo v0, "sysui_qs_tiles"
 
     invoke-static {p0, v0, p1, p2}, Landroid/provider/Settings$Secure;->putStringForUser(Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;I)Z
 
@@ -1164,7 +1164,7 @@
 .method public synthetic lambda$new$0$QSTileHost(Lcom/android/systemui/tuner/TunerService;Ljavax/inject/Provider;)V
     .locals 1
 
-    const-string v0, "sysui_qs_tiles"
+    const-string/jumbo v0, "sysui_qs_tiles"
 
     filled-new-array {v0}, [Ljava/lang/String;
 
@@ -1204,7 +1204,7 @@
 
     iget-object p1, p0, Lcom/android/systemui/qs/QSTileHost;->mTunerService:Lcom/android/systemui/tuner/TunerService;
 
-    const-string p2, "sysui_qs_tiles"
+    const-string/jumbo p2, "sysui_qs_tiles"
 
     invoke-virtual {p1, p2}, Lcom/android/systemui/tuner/TunerService;->getValue(Ljava/lang/String;)Ljava/lang/String;
 
@@ -1238,7 +1238,7 @@
 
     iget-object p1, p0, Lcom/android/systemui/qs/QSTileHost;->mTunerService:Lcom/android/systemui/tuner/TunerService;
 
-    const-string v0, "sysui_qs_tiles"
+    const-string/jumbo v0, "sysui_qs_tiles"
 
     invoke-virtual {p1, v0}, Lcom/android/systemui/tuner/TunerService;->getValue(Ljava/lang/String;)Ljava/lang/String;
 
@@ -1256,7 +1256,7 @@
 .method public onTuningChanged(Ljava/lang/String;Ljava/lang/String;)V
     .locals 8
 
-    const-string v0, "sysui_qs_tiles"
+    const-string/jumbo v0, "sysui_qs_tiles"
 
     invoke-virtual {v0, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 

@@ -18,6 +18,8 @@
 
 .field private mCutOutInset:I
 
+.field private mDisplayCutout:Landroid/view/DisplayCutout;
+
 .field private mDisplaySize:Landroid/graphics/Point;
 
 .field private mEndMargin:I
@@ -261,6 +263,158 @@
     return-void
 .end method
 
+.method private updatePosition()V
+    .locals 8
+
+    iget-object v0, p0, Lcom/android/systemui/statusbar/HeadsUpStatusBarView;->mIconPlaceholder:Landroid/view/View;
+
+    iget-object v1, p0, Lcom/android/systemui/statusbar/HeadsUpStatusBarView;->mTmpPosition:[I
+
+    invoke-virtual {v0, v1}, Landroid/view/View;->getLocationOnScreen([I)V
+
+    iget-object v0, p0, Lcom/android/systemui/statusbar/HeadsUpStatusBarView;->mTmpPosition:[I
+
+    const/4 v1, 0x0
+
+    aget v0, v0, v1
+
+    int-to-float v0, v0
+
+    invoke-virtual {p0}, Landroid/widget/LinearLayout;->getTranslationX()F
+
+    move-result v2
+
+    sub-float/2addr v0, v2
+
+    float-to-int v0, v0
+
+    iget-object v2, p0, Lcom/android/systemui/statusbar/HeadsUpStatusBarView;->mTmpPosition:[I
+
+    const/4 v3, 0x1
+
+    aget v2, v2, v3
+
+    iget-object v3, p0, Lcom/android/systemui/statusbar/HeadsUpStatusBarView;->mIconPlaceholder:Landroid/view/View;
+
+    invoke-virtual {v3}, Landroid/view/View;->getWidth()I
+
+    move-result v3
+
+    add-int/2addr v3, v0
+
+    iget-object v4, p0, Lcom/android/systemui/statusbar/HeadsUpStatusBarView;->mIconPlaceholder:Landroid/view/View;
+
+    invoke-virtual {v4}, Landroid/view/View;->getHeight()I
+
+    move-result v4
+
+    add-int/2addr v4, v2
+
+    iget-object v5, p0, Lcom/android/systemui/statusbar/HeadsUpStatusBarView;->mLayoutedIconRect:Landroid/graphics/Rect;
+
+    invoke-virtual {v5, v0, v2, v3, v4}, Landroid/graphics/Rect;->set(IIII)V
+
+    invoke-direct {p0}, Lcom/android/systemui/statusbar/HeadsUpStatusBarView;->updateDrawingRect()V
+
+    iget v2, p0, Lcom/android/systemui/statusbar/HeadsUpStatusBarView;->mAbsoluteStartPadding:I
+
+    iget v4, p0, Lcom/android/systemui/statusbar/HeadsUpStatusBarView;->mSysWinInset:I
+
+    add-int/2addr v2, v4
+
+    iget v4, p0, Lcom/android/systemui/statusbar/HeadsUpStatusBarView;->mCutOutInset:I
+
+    add-int/2addr v2, v4
+
+    invoke-virtual {p0}, Landroid/widget/LinearLayout;->isLayoutRtl()Z
+
+    move-result v4
+
+    if-eqz v4, :cond_0
+
+    iget-object v0, p0, Lcom/android/systemui/statusbar/HeadsUpStatusBarView;->mDisplaySize:Landroid/graphics/Point;
+
+    iget v0, v0, Landroid/graphics/Point;->x:I
+
+    sub-int/2addr v0, v3
+
+    :cond_0
+    if-eq v0, v2, :cond_3
+
+    new-instance v3, Landroid/graphics/Rect;
+
+    invoke-direct {v3}, Landroid/graphics/Rect;-><init>()V
+
+    iget-object v5, p0, Lcom/android/systemui/statusbar/HeadsUpStatusBarView;->mDisplayCutout:Landroid/view/DisplayCutout;
+
+    if-eqz v5, :cond_2
+
+    invoke-virtual {v3}, Landroid/graphics/Rect;->width()I
+
+    move-result v5
+
+    if-eqz v5, :cond_2
+
+    iget-object v5, p0, Landroid/widget/LinearLayout;->mContext:Landroid/content/Context;
+
+    iget-object v6, p0, Lcom/android/systemui/statusbar/HeadsUpStatusBarView;->mDisplayCutout:Landroid/view/DisplayCutout;
+
+    const/16 v7, 0x30
+
+    invoke-static {v5, v6, v7, v3}, Lcom/android/systemui/ScreenDecorations$DisplayCutoutView;->boundsFromDirection(Landroid/content/Context;Landroid/view/DisplayCutout;ILandroid/graphics/Rect;)V
+
+    if-eqz v4, :cond_1
+
+    iget-object v4, p0, Lcom/android/systemui/statusbar/HeadsUpStatusBarView;->mDisplaySize:Landroid/graphics/Point;
+
+    iget v4, v4, Landroid/graphics/Point;->x:I
+
+    iget v5, v3, Landroid/graphics/Rect;->right:I
+
+    sub-int/2addr v4, v5
+
+    goto :goto_0
+
+    :cond_1
+    iget v4, v3, Landroid/graphics/Rect;->left:I
+
+    :goto_0
+    if-le v0, v4, :cond_2
+
+    invoke-virtual {v3}, Landroid/graphics/Rect;->width()I
+
+    move-result v3
+
+    sub-int/2addr v0, v3
+
+    :cond_2
+    sub-int/2addr v2, v0
+
+    invoke-virtual {p0}, Landroid/widget/LinearLayout;->getPaddingStart()I
+
+    move-result v0
+
+    add-int/2addr v2, v0
+
+    iget v0, p0, Lcom/android/systemui/statusbar/HeadsUpStatusBarView;->mEndMargin:I
+
+    invoke-virtual {p0, v2, v1, v0, v1}, Landroid/widget/LinearLayout;->setPaddingRelative(IIII)V
+
+    :cond_3
+    iget-boolean v0, p0, Lcom/android/systemui/statusbar/HeadsUpStatusBarView;->mFirstLayout:Z
+
+    if-eqz v0, :cond_4
+
+    const/16 v0, 0x8
+
+    invoke-virtual {p0, v0}, Landroid/widget/LinearLayout;->setVisibility(I)V
+
+    iput-boolean v1, p0, Lcom/android/systemui/statusbar/HeadsUpStatusBarView;->mFirstLayout:Z
+
+    :cond_4
+    return-void
+.end method
+
 
 # virtual methods
 .method protected fitSystemWindows(Landroid/graphics/Rect;)Z
@@ -289,6 +443,10 @@
     invoke-virtual {v1}, Landroid/view/WindowInsets;->getDisplayCutout()Landroid/view/DisplayCutout;
 
     move-result-object v1
+
+    iput-object v1, p0, Lcom/android/systemui/statusbar/HeadsUpStatusBarView;->mDisplayCutout:Landroid/view/DisplayCutout;
+
+    iget-object v1, p0, Lcom/android/systemui/statusbar/HeadsUpStatusBarView;->mDisplayCutout:Landroid/view/DisplayCutout;
 
     const/4 v2, 0x0
 
@@ -372,6 +530,14 @@
     return-object p0
 .end method
 
+.method public synthetic lambda$onLayout$0$HeadsUpStatusBarView()V
+    .locals 0
+
+    invoke-direct {p0}, Lcom/android/systemui/statusbar/HeadsUpStatusBarView;->updatePosition()V
+
+    return-void
+.end method
+
 .method protected onAttachedToWindow()V
     .locals 0
 
@@ -433,160 +599,16 @@
 .end method
 
 .method protected onLayout(ZIIII)V
-    .locals 3
+    .locals 0
 
     invoke-super/range {p0 .. p5}, Landroid/widget/LinearLayout;->onLayout(ZIIII)V
 
-    iget-object p1, p0, Lcom/android/systemui/statusbar/HeadsUpStatusBarView;->mIconPlaceholder:Landroid/view/View;
+    new-instance p1, Lcom/android/systemui/statusbar/-$$Lambda$HeadsUpStatusBarView$CjKyjpHAQ7stabiq9TZnHr_AVXM;
 
-    iget-object p2, p0, Lcom/android/systemui/statusbar/HeadsUpStatusBarView;->mTmpPosition:[I
+    invoke-direct {p1, p0}, Lcom/android/systemui/statusbar/-$$Lambda$HeadsUpStatusBarView$CjKyjpHAQ7stabiq9TZnHr_AVXM;-><init>(Lcom/android/systemui/statusbar/HeadsUpStatusBarView;)V
 
-    invoke-virtual {p1, p2}, Landroid/view/View;->getLocationOnScreen([I)V
+    invoke-virtual {p0, p1}, Landroid/widget/LinearLayout;->post(Ljava/lang/Runnable;)Z
 
-    iget-object p1, p0, Lcom/android/systemui/statusbar/HeadsUpStatusBarView;->mTmpPosition:[I
-
-    const/4 p2, 0x0
-
-    aget p1, p1, p2
-
-    int-to-float p1, p1
-
-    invoke-virtual {p0}, Landroid/widget/LinearLayout;->getTranslationX()F
-
-    move-result p3
-
-    sub-float/2addr p1, p3
-
-    float-to-int p1, p1
-
-    iget-object p3, p0, Lcom/android/systemui/statusbar/HeadsUpStatusBarView;->mTmpPosition:[I
-
-    const/4 p4, 0x1
-
-    aget p3, p3, p4
-
-    iget-object p4, p0, Lcom/android/systemui/statusbar/HeadsUpStatusBarView;->mIconPlaceholder:Landroid/view/View;
-
-    invoke-virtual {p4}, Landroid/view/View;->getWidth()I
-
-    move-result p4
-
-    add-int/2addr p4, p1
-
-    iget-object p5, p0, Lcom/android/systemui/statusbar/HeadsUpStatusBarView;->mIconPlaceholder:Landroid/view/View;
-
-    invoke-virtual {p5}, Landroid/view/View;->getHeight()I
-
-    move-result p5
-
-    add-int/2addr p5, p3
-
-    iget-object v0, p0, Lcom/android/systemui/statusbar/HeadsUpStatusBarView;->mLayoutedIconRect:Landroid/graphics/Rect;
-
-    invoke-virtual {v0, p1, p3, p4, p5}, Landroid/graphics/Rect;->set(IIII)V
-
-    invoke-direct {p0}, Lcom/android/systemui/statusbar/HeadsUpStatusBarView;->updateDrawingRect()V
-
-    iget p3, p0, Lcom/android/systemui/statusbar/HeadsUpStatusBarView;->mAbsoluteStartPadding:I
-
-    iget p5, p0, Lcom/android/systemui/statusbar/HeadsUpStatusBarView;->mSysWinInset:I
-
-    add-int/2addr p3, p5
-
-    iget p5, p0, Lcom/android/systemui/statusbar/HeadsUpStatusBarView;->mCutOutInset:I
-
-    add-int/2addr p3, p5
-
-    invoke-virtual {p0}, Landroid/widget/LinearLayout;->isLayoutRtl()Z
-
-    move-result p5
-
-    if-eqz p5, :cond_0
-
-    iget-object p1, p0, Lcom/android/systemui/statusbar/HeadsUpStatusBarView;->mDisplaySize:Landroid/graphics/Point;
-
-    iget p1, p1, Landroid/graphics/Point;->x:I
-
-    sub-int/2addr p1, p4
-
-    :cond_0
-    if-eq p1, p3, :cond_3
-
-    invoke-virtual {p0}, Landroid/widget/LinearLayout;->getRootWindowInsets()Landroid/view/WindowInsets;
-
-    move-result-object p4
-
-    invoke-virtual {p4}, Landroid/view/WindowInsets;->getDisplayCutout()Landroid/view/DisplayCutout;
-
-    move-result-object p4
-
-    new-instance v0, Landroid/graphics/Rect;
-
-    invoke-direct {v0}, Landroid/graphics/Rect;-><init>()V
-
-    if-eqz p4, :cond_2
-
-    invoke-virtual {v0}, Landroid/graphics/Rect;->width()I
-
-    move-result v1
-
-    if-eqz v1, :cond_2
-
-    iget-object v1, p0, Landroid/widget/LinearLayout;->mContext:Landroid/content/Context;
-
-    const/16 v2, 0x30
-
-    invoke-static {v1, p4, v2, v0}, Lcom/android/systemui/ScreenDecorations$DisplayCutoutView;->boundsFromDirection(Landroid/content/Context;Landroid/view/DisplayCutout;ILandroid/graphics/Rect;)V
-
-    if-eqz p5, :cond_1
-
-    iget-object p4, p0, Lcom/android/systemui/statusbar/HeadsUpStatusBarView;->mDisplaySize:Landroid/graphics/Point;
-
-    iget p4, p4, Landroid/graphics/Point;->x:I
-
-    iget p5, v0, Landroid/graphics/Rect;->right:I
-
-    sub-int/2addr p4, p5
-
-    goto :goto_0
-
-    :cond_1
-    iget p4, v0, Landroid/graphics/Rect;->left:I
-
-    :goto_0
-    if-le p1, p4, :cond_2
-
-    invoke-virtual {v0}, Landroid/graphics/Rect;->width()I
-
-    move-result p4
-
-    sub-int/2addr p1, p4
-
-    :cond_2
-    sub-int/2addr p3, p1
-
-    invoke-virtual {p0}, Landroid/widget/LinearLayout;->getPaddingStart()I
-
-    move-result p1
-
-    add-int/2addr p3, p1
-
-    iget p1, p0, Lcom/android/systemui/statusbar/HeadsUpStatusBarView;->mEndMargin:I
-
-    invoke-virtual {p0, p3, p2, p1, p2}, Landroid/widget/LinearLayout;->setPaddingRelative(IIII)V
-
-    :cond_3
-    iget-boolean p1, p0, Lcom/android/systemui/statusbar/HeadsUpStatusBarView;->mFirstLayout:Z
-
-    if-eqz p1, :cond_4
-
-    const/16 p1, 0x8
-
-    invoke-virtual {p0, p1}, Landroid/widget/LinearLayout;->setVisibility(I)V
-
-    iput-boolean p2, p0, Lcom/android/systemui/statusbar/HeadsUpStatusBarView;->mFirstLayout:Z
-
-    :cond_4
     return-void
 .end method
 

@@ -3212,6 +3212,20 @@
         <item name="timePickerStyle">?android:timePickerStyle</item>
         <item name="toolbarStyle">@style/OPWidget.Material.Toolbar</item>
     </style>
+    <style name="Oneplus_Theme_BiometricDialog_Dark" parent="@style/Theme.SystemUI">
+        <item name="android:textColorPrimary">@color/oneplus_contorl_text_color_primary_dark</item>
+        <item name="android:textColorSecondary">@color/oneplus_contorl_text_color_secondary_dark</item>
+        <item name="android:listDivider">@color/oneplus_contorl_divider_color_dark</item>
+        <item name="android:colorBackgroundFloating">@color/oneplus_contorl_bg_color_bottomsheets_dark</item>
+    </style>
+    <style name="Oneplus_Theme_BiometricDialog_Light" parent="@style/Theme.SystemUI.Light">
+        <item name="android:textColorPrimary">@color/oneplus_contorl_text_color_primary_light</item>
+        <item name="android:textColorSecondary">@color/oneplus_contorl_text_color_secondary_light</item>
+        <item name="android:listDivider">@color/oneplus_contorl_divider_color_light</item>
+        <item name="android:colorBackgroundFloating">@color/oneplus_contorl_bg_color_bottomsheets_light</item>
+    </style>
+    <style name="Oneplus_Theme_Material_Dialog_Alert" parent="@style/Oneplus.Theme.Material.Dialog.Alert" />
+    <style name="Oneplus_Theme_Material_Light_Dialog_Alert" parent="@style/Oneplus.Theme.Material.Light.Dialog.Alert" />
     <style name="Oneplus_bottom_fullscreen" parent="@style/Oneplus.Theme.DeviceDefault.Dialog">
         <item name="android:windowBackground">@color/bg_dialog</item>
         <item name="android:windowFullscreen">true</item>
@@ -3226,16 +3240,6 @@
         <item name="android:textAppearance">@style/oneplus_contorl_text_style_body1</item>
         <item name="android:textSize">@dimen/oneplus_contorl_text_size_body1</item>
         <item name="android:textColor">?wallpaperTextColorSecondary</item>
-    </style>
-    <style name="OverflowMenuStyleDark" parent="@android:style/Widget.Material.PopupMenu.Overflow">
-        <item name="android:popupBackground">@color/oneplus_contorl_bg_color_menu_dark</item>
-        <item name="android:dropDownHorizontalOffset">@dimen/qs_toolbar_menu_offset</item>
-        <item name="android:dropDownVerticalOffset">@dimen/oneplus_contorl_list_item_height_one_line1</item>
-    </style>
-    <style name="OverflowMenuStyleLight" parent="@android:style/Widget.Material.PopupMenu.Overflow">
-        <item name="android:popupBackground">@color/oneplus_contorl_bg_color_menu_light</item>
-        <item name="android:dropDownHorizontalOffset">@dimen/qs_toolbar_menu_offset</item>
-        <item name="android:dropDownVerticalOffset">@dimen/oneplus_contorl_list_item_height_one_line1</item>
     </style>
     <style name="PasswordTheme" parent="@style/Theme.SystemUI">
         <item name="android:textColor">?wallpaperTextColor</item>
@@ -5354,10 +5358,10 @@
         <item name="darkIconTheme">@style/QSIconTheme</item>
         <item name="lightIconTheme">@style/QSIconTheme</item>
     </style>
-    <style name="oneplus_theme_dialog_dark" parent="@android:style/Theme.DeviceDefault.Dialog">
+    <style name="oneplus_theme_dialog_dark" parent="@style/Oneplus.Theme.Material.Dialog.Alert">
         <item name="android:colorAccent">@color/oneplus_accent_color</item>
     </style>
-    <style name="oneplus_theme_dialog_light" parent="@android:style/Theme.DeviceDefault.Light.Dialog">
+    <style name="oneplus_theme_dialog_light" parent="@style/Oneplus.Theme.Material.Light.Dialog.Alert">
         <item name="android:colorAccent">@color/oneplus_accent_color</item>
     </style>
     <style name="op_car_mode_dock_animation">
@@ -5367,17 +5371,17 @@
     <style name="op_edit_theme_android" parent="@style/qs_theme">
         <item name="android:colorBackground">?android:colorSecondary</item>
         <item name="android:textColor">@color/oneplus_contorl_text_color_primary_dark</item>
-        <item name="android:actionOverflowMenuStyle">@style/OverflowMenuStyleDark</item>
+        <item name="android:actionOverflowMenuStyle">@style/Oneplus.Widget.Material.PopupMenu.Overflow</item>
     </style>
     <style name="op_edit_theme_dark" parent="@style/qs_theme">
         <item name="android:colorBackground">?android:colorSecondary</item>
         <item name="android:textColor">@color/oneplus_contorl_text_color_primary_dark</item>
-        <item name="android:actionOverflowMenuStyle">@style/OverflowMenuStyleDark</item>
+        <item name="android:actionOverflowMenuStyle">@style/Oneplus.Widget.Material.PopupMenu.Overflow</item>
     </style>
     <style name="op_edit_theme_light" parent="@style/qs_theme">
         <item name="android:colorBackground">?android:colorSecondary</item>
         <item name="android:textColor">@color/oneplus_contorl_text_color_primary_light</item>
-        <item name="android:actionOverflowMenuStyle">@style/OverflowMenuStyleLight</item>
+        <item name="android:actionOverflowMenuStyle">@style/Oneplus.Widget.Material.Light.PopupMenu.Overflow</item>
     </style>
     <style name="op_widget_big">
         <item name="android:textSize">@dimen/widget_big_font_size</item>

@@ -324,7 +324,7 @@
     <string name="battery_saver_notification_title">Virransäästö on käytössä</string>
     <string name="battery_saver_start_action">Ota virransäästö käyttöön</string>
     <string name="battery_usage_extanded">Virransäästö voi pidentää käyttöaikaa noin %s käyttösi perusteella</string>
-    <string name="battery_usage_remaining">Tulisi kestää noin %s käyttösi perusteella. Heikentää suorituskykyä ja vähentäätaustadataa.</string>
+    <string name="battery_usage_remaining_time">%s jäljellä</string>
     <string name="biometric_dialog_confirm">Vahvista</string>
     <string name="biometric_dialog_empty_space_description">Tyhjä alue, napauta sitä peruuttaaksesi tunnistuksen</string>
     <string name="biometric_dialog_face_icon_description_authenticated">Kasvot tunnistettu</string>
@@ -1141,7 +1141,7 @@ Olet myös yhteydessä VPN:ään, joka voi valvoa toimintaasi verkossa."</string
     <string name="overheat_dialog_purple_message">Puhelin sammutetaan 5 sekunnin kuluttua</string>
     <string name="overheat_dialog_red_message">Tyhjentää kaikki sovellusprosessit lämpötilan alentamiseksi</string>
     <string name="overheat_dialog_title">Puhelin on liian kuuma</string>
-    <string name="overheat_notification_alert">Puhelimesi lämpötila on liian korkea. Korkeat virrankuluttajatoiminnot sammutetaan lämpötilan alentamiseksi</string>
+    <string name="overheat_notification_alert">Puhelin on liian kuuma, ja paljon virtaa käyttävät toiminnot on poistettu käytöstä lämpötilan laskemiseksi</string>
     <string name="overheat_notification_resume">Puhelimen lämpötila on palautettu, ja puhelinta voi käyttää normaalisti</string>
     <string name="overheat_notification_title_resume">Puhelimen lämpötila on palautettu</string>
     <string name="overheat_toast_content">Puhelin on liian kuuma, ja paljon virtaa käyttävät toiminnot on poistettu käytöstä lämpötilan laskemiseksi</string>

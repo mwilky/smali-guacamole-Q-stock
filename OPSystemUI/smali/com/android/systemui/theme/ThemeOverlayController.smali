@@ -39,7 +39,7 @@
 
     move-result-object v1
 
-    const-string v2, "theme_customization_overlay_packages"
+    const-string/jumbo v2, "theme_customization_overlay_packages"
 
     invoke-static {v1, v2, v0}, Landroid/provider/Settings$Secure;->getStringForUser(Landroid/content/ContentResolver;Ljava/lang/String;I)Ljava/lang/String;
 
@@ -259,7 +259,7 @@
 
     move-result-object v1
 
-    const-string v2, "theme_customization_overlay_packages"
+    const-string/jumbo v2, "theme_customization_overlay_packages"
 
     invoke-static {v2}, Landroid/provider/Settings$Secure;->getUriFor(Ljava/lang/String;)Landroid/net/Uri;
 

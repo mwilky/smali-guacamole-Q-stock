@@ -54,7 +54,11 @@
 
     move-result-object p1
 
-    invoke-static {}, Lcom/android/systemui/statusbar/phone/WLBSwitch;->access$400()Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/systemui/statusbar/phone/WLBSwitch$UserSwitchReceiver;->this$0:Lcom/android/systemui/statusbar/phone/WLBSwitch;
+
+    invoke-static {v0, p2}, Lcom/android/systemui/statusbar/phone/WLBSwitch;->access$402(Lcom/android/systemui/statusbar/phone/WLBSwitch;I)I
+
+    invoke-static {}, Lcom/android/systemui/statusbar/phone/WLBSwitch;->access$500()Ljava/lang/String;
 
     move-result-object p2
 
@@ -127,7 +131,7 @@
     goto :goto_0
 
     :cond_0
-    invoke-static {}, Lcom/android/systemui/statusbar/phone/WLBSwitch;->access$400()Ljava/lang/String;
+    invoke-static {}, Lcom/android/systemui/statusbar/phone/WLBSwitch;->access$500()Ljava/lang/String;
 
     move-result-object p0
 

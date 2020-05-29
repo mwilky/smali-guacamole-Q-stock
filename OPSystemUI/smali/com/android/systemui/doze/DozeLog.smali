@@ -610,12 +610,12 @@
     return-object p0
 
     :pswitch_3
-    const-string p0, "threeKeyChanged"
+    const-string/jumbo p0, "threeKeyChanged"
 
     return-object p0
 
     :pswitch_4
-    const-string p0, "tap"
+    const-string/jumbo p0, "tap"
 
     return-object p0
 

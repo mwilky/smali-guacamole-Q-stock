@@ -32,7 +32,7 @@
 
     sput-object v0, Lcom/airbnb/lottie/parser/KeyframeParser;->LINEAR_INTERPOLATOR:Landroid/view/animation/Interpolator;
 
-    const-string v1, "t"
+    const-string/jumbo v1, "t"
 
     const-string v2, "s"
 

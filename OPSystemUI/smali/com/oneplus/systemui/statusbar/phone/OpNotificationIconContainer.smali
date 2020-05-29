@@ -3,52 +3,39 @@
 .source "OpNotificationIconContainer.java"
 
 
-# static fields
-.field protected static final MAX_DOTS:I
-
-
 # instance fields
+.field private mContext:Landroid/content/Context;
+
 .field protected mIconPadding:I
+
+.field protected mRemoveWithoutAnimation:Z
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 4
-
-    const/4 v0, 0x1
-
-    new-array v1, v0, [I
-
-    const/4 v2, 0x0
-
-    const/16 v3, 0x40
-
-    aput v3, v1, v2
-
-    invoke-static {v1}, Landroid/util/OpFeatures;->isSupport([I)Z
-
-    move-result v1
-
-    if-eqz v1, :cond_0
-
-    move v0, v2
-
-    :cond_0
-    sput v0, Lcom/oneplus/systemui/statusbar/phone/OpNotificationIconContainer;->MAX_DOTS:I
-
-    return-void
-.end method
-
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 0
 
     invoke-direct {p0, p1, p2}, Lcom/android/systemui/statusbar/AlphaOptimizedFrameLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+
+    iput-object p1, p0, Lcom/oneplus/systemui/statusbar/phone/OpNotificationIconContainer;->mContext:Landroid/content/Context;
 
     return-void
 .end method
 
 
 # virtual methods
+.method protected getMaxDots()I
+    .locals 0
+
+    iget-object p0, p0, Lcom/oneplus/systemui/statusbar/phone/OpNotificationIconContainer;->mContext:Landroid/content/Context;
+
+    invoke-static {p0}, Lcom/oneplus/util/OpUtils;->getMaxDotsForNotificationIconContainer(Landroid/content/Context;)I
+
+    move-result p0
+
+    return p0
+.end method
+
 .method protected initDimensInternal()V
     .locals 2
 
@@ -67,12 +54,52 @@
     return-void
 .end method
 
+.method protected onKeyguard()Z
+    .locals 1
+
+    invoke-static {}, Lcom/oneplus/plugin/OpLsState;->getInstance()Lcom/oneplus/plugin/OpLsState;
+
+    move-result-object p0
+
+    invoke-virtual {p0}, Lcom/oneplus/plugin/OpLsState;->getStatusBarKeyguardViewManager()Lcom/android/systemui/statusbar/phone/StatusBarKeyguardViewManager;
+
+    move-result-object p0
+
+    invoke-virtual {p0}, Lcom/android/systemui/statusbar/phone/StatusBarKeyguardViewManager;->isShowing()Z
+
+    move-result v0
+
+    invoke-virtual {p0}, Lcom/android/systemui/statusbar/phone/StatusBarKeyguardViewManager;->isBouncerShowing()Z
+
+    move-result p0
+
+    if-eqz v0, :cond_0
+
+    if-nez p0, :cond_0
+
+    const/4 p0, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 p0, 0x0
+
+    :goto_0
+    return p0
+.end method
+
 .method protected setOverflowWidth(III)I
-    .locals 0
+    .locals 1
 
-    sget p0, Lcom/oneplus/systemui/statusbar/phone/OpNotificationIconContainer;->MAX_DOTS:I
+    invoke-virtual {p0}, Lcom/oneplus/systemui/statusbar/phone/OpNotificationIconContainer;->getMaxDots()I
 
-    if-lez p0, :cond_0
+    move-result v0
+
+    if-lez v0, :cond_0
+
+    invoke-virtual {p0}, Lcom/oneplus/systemui/statusbar/phone/OpNotificationIconContainer;->getMaxDots()I
+
+    move-result p0
 
     add-int/lit8 p0, p0, -0x1
 
@@ -89,4 +116,12 @@
 
     :goto_0
     return p1
+.end method
+
+.method public setRemoveWithoutAnimation(Z)V
+    .locals 0
+
+    iput-boolean p1, p0, Lcom/oneplus/systemui/statusbar/phone/OpNotificationIconContainer;->mRemoveWithoutAnimation:Z
+
+    return-void
 .end method

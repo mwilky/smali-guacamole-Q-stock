@@ -657,7 +657,7 @@
 
     move-result-object v5
 
-    const v6, 0x5050008
+    const v6, 0x5050009
 
     invoke-virtual {v5, v6}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -1857,7 +1857,7 @@
     :cond_8
     iget-object p0, p0, Lcom/oneplus/systemui/biometrics/OpQLHelper;->mContext:Landroid/content/Context;
 
-    const p1, 0x50d00b1
+    const p1, 0x50d00b4
 
     invoke-static {p0, p1, v2}, Landroid/widget/Toast;->makeText(Landroid/content/Context;II)Landroid/widget/Toast;
 

@@ -14,6 +14,8 @@
 # static fields
 .field public static final DEBUG_ONEPLUS:Z
 
+.field private static DETmoMmcMnc:[Ljava/lang/String;
+
 .field public static final SUPPORT_WARP_CHARGING:Z
 
 .field private static SprintMmcMnc:[Ljava/lang/String;
@@ -24,15 +26,21 @@
 
 .field private static mIsCTSAdded:Z
 
+.field public static mIsCutoutEmulationEnabled:Z
+
 .field private static mIsHomeApp:Z
 
 .field private static mIsNeedDarkNavBar:Z
+
+.field private static mIsOnePlusHomeApp:Z
 
 .field private static mIsScreenCompat:Z
 
 .field private static mIsSupportResolutionSwitch:Z
 
 .field private static mIsSystemUI:Z
+
+.field private static mOverlayManager:Landroid/content/om/IOverlayManager;
 
 .field public static mScreenResolution:I
 
@@ -52,7 +60,7 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 5
+    .locals 6
 
     sget-boolean v0, Landroid/os/Build;->DEBUG_ONEPLUS:Z
 
@@ -86,21 +94,41 @@
 
     sput-boolean v0, Lcom/oneplus/util/OpUtils;->mIsSupportResolutionSwitch:Z
 
-    const-string v0, "310120"
+    sput-boolean v0, Lcom/oneplus/util/OpUtils;->mIsOnePlusHomeApp:Z
 
-    const-string v1, "312530"
+    const-string v1, "310120"
 
-    const-string v2, "311870"
+    const-string v2, "312530"
 
-    const-string v3, "311490"
+    const-string v3, "311870"
 
-    const-string v4, "310000"
+    const-string v4, "311490"
 
-    filled-new-array {v0, v1, v2, v3, v4}, [Ljava/lang/String;
+    const-string v5, "310000"
 
-    move-result-object v0
+    filled-new-array {v1, v2, v3, v4, v5}, [Ljava/lang/String;
 
-    sput-object v0, Lcom/oneplus/util/OpUtils;->SprintMmcMnc:[Ljava/lang/String;
+    move-result-object v1
+
+    sput-object v1, Lcom/oneplus/util/OpUtils;->SprintMmcMnc:[Ljava/lang/String;
+
+    const-string v1, "23203"
+
+    const-string v2, "23207"
+
+    const-string v3, "26002"
+
+    const-string v4, "26201"
+
+    const-string v5, "23001"
+
+    filled-new-array {v1, v2, v3, v4, v5}, [Ljava/lang/String;
+
+    move-result-object v1
+
+    sput-object v1, Lcom/oneplus/util/OpUtils;->DETmoMmcMnc:[Ljava/lang/String;
+
+    sput-boolean v0, Lcom/oneplus/util/OpUtils;->mIsCutoutEmulationEnabled:Z
 
     return-void
 .end method
@@ -222,6 +250,38 @@
 
     :goto_0
     return-object p0
+.end method
+
+.method public static getBatteryTimeRemaining(Landroid/content/Context;)J
+    .locals 2
+
+    new-instance v0, Lcom/android/internal/os/BatteryStatsHelper;
+
+    const/4 v1, 0x1
+
+    invoke-direct {v0, p0, v1}, Lcom/android/internal/os/BatteryStatsHelper;-><init>(Landroid/content/Context;Z)V
+
+    const/4 p0, 0x0
+
+    invoke-virtual {v0, p0}, Lcom/android/internal/os/BatteryStatsHelper;->create(Landroid/os/Bundle;)V
+
+    invoke-virtual {v0}, Lcom/android/internal/os/BatteryStatsHelper;->getStats()Landroid/os/BatteryStats;
+
+    move-result-object p0
+
+    invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
+
+    move-result-wide v0
+
+    invoke-virtual {p0, v0, v1}, Landroid/os/BatteryStats;->computeBatteryTimeRemaining(J)J
+
+    move-result-wide v0
+
+    invoke-static {v0, v1}, Lcom/android/settingslib/utils/PowerUtil;->convertUsToMs(J)J
+
+    move-result-wide v0
+
+    return-wide v0
 .end method
 
 .method private static getCurrentDefaultDensity()F
@@ -381,6 +441,59 @@
 
     :goto_0
     return v1
+.end method
+
+.method public static getMaxDotsForNotificationIconContainer(Landroid/content/Context;)I
+    .locals 4
+
+    const/4 v0, 0x0
+
+    if-nez p0, :cond_0
+
+    const-string p0, "OpUtils"
+
+    const-string v1, "getMaxDotsForNotificationIconContainer context is null"
+
+    invoke-static {p0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    return v0
+
+    :cond_0
+    const/4 v1, 0x1
+
+    new-array v2, v1, [I
+
+    const/16 v3, 0x40
+
+    aput v3, v2, v0
+
+    invoke-static {v2}, Landroid/util/OpFeatures;->isSupport([I)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_1
+
+    invoke-static {p0}, Lcom/oneplus/util/OpUtils;->isCutoutHide(Landroid/content/Context;)Z
+
+    move-result p0
+
+    if-nez p0, :cond_1
+
+    goto :goto_0
+
+    :cond_1
+    move v0, v1
+
+    :goto_0
+    return v0
+.end method
+
+.method public static getMaxDotsForStatusIconContainer()I
+    .locals 1
+
+    const/4 v0, 0x0
+
+    return v0
 .end method
 
 .method public static getMclTypeface(I)Landroid/graphics/Typeface;
@@ -714,6 +827,18 @@
 
     invoke-static {}, Lcom/oneplus/util/OpUtils;->loadMCLTypeface()V
 
+    const-string p0, "overlay"
+
+    invoke-static {p0}, Landroid/os/ServiceManager;->getService(Ljava/lang/String;)Landroid/os/IBinder;
+
+    move-result-object p0
+
+    invoke-static {p0}, Landroid/content/om/IOverlayManager$Stub;->asInterface(Landroid/os/IBinder;)Landroid/content/om/IOverlayManager;
+
+    move-result-object p0
+
+    sput-object p0, Lcom/oneplus/util/OpUtils;->mOverlayManager:Landroid/content/om/IOverlayManager;
+
     return-void
 .end method
 
@@ -838,6 +963,14 @@
     return v0
 .end method
 
+.method public static isCutoutEmulationEnabled()Z
+    .locals 1
+
+    sget-boolean v0, Lcom/oneplus/util/OpUtils;->mIsCutoutEmulationEnabled:Z
+
+    return v0
+.end method
+
 .method public static isCutoutHide(Landroid/content/Context;)Z
     .locals 1
 
@@ -865,6 +998,47 @@
     move-result p0
 
     return p0
+.end method
+
+.method public static isDETmoMccMnc(Landroid/content/Context;)Z
+    .locals 4
+
+    const/4 v0, 0x0
+
+    invoke-static {p0, v0}, Lcom/oneplus/util/OpUtils;->getMmcMnc(Landroid/content/Context;I)Ljava/lang/String;
+
+    move-result-object p0
+
+    if-eqz p0, :cond_1
+
+    move v1, v0
+
+    :goto_0
+    sget-object v2, Lcom/oneplus/util/OpUtils;->DETmoMmcMnc:[Ljava/lang/String;
+
+    array-length v3, v2
+
+    if-ge v1, v3, :cond_1
+
+    aget-object v2, v2, v1
+
+    invoke-virtual {p0, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_0
+
+    const/4 p0, 0x1
+
+    return p0
+
+    :cond_0
+    add-int/lit8 v1, v1, 0x1
+
+    goto :goto_0
+
+    :cond_1
+    return v0
 .end method
 
 .method public static isEnableCustShutdownAnim(Landroid/content/Context;)Z
@@ -979,7 +1153,7 @@
 
     new-array v0, v1, [I
 
-    const/16 v3, 0xf2
+    const/16 v3, 0xf4
 
     aput v3, v0, v2
 
@@ -1024,6 +1198,14 @@
 
     :goto_0
     return p0
+.end method
+
+.method public static isOnePlusHomeApp()Z
+    .locals 1
+
+    sget-boolean v0, Lcom/oneplus/util/OpUtils;->mIsOnePlusHomeApp:Z
+
+    return v0
 .end method
 
 .method public static isPackageInstalled(Landroid/content/Context;Ljava/lang/String;)Z
@@ -1236,6 +1418,26 @@
     return v0
 .end method
 
+.method public static isSupportCutout()Z
+    .locals 3
+
+    const/4 v0, 0x1
+
+    new-array v0, v0, [I
+
+    const/4 v1, 0x0
+
+    const/16 v2, 0x41
+
+    aput v2, v0, v1
+
+    invoke-static {v0}, Landroid/util/OpFeatures;->isSupport([I)Z
+
+    move-result v0
+
+    return v0
+.end method
+
 .method public static isSupportEmergencyPanel()Z
     .locals 4
 
@@ -1245,7 +1447,7 @@
 
     const/4 v2, 0x0
 
-    const/16 v3, 0x8c
+    const/16 v3, 0x8d
 
     aput v3, v1, v2
 
@@ -1431,16 +1633,30 @@
     return v0
 .end method
 
-.method public static isSupportShowVoLTE()Z
+.method public static isSupportShowVoLTE(Landroid/content/Context;)Z
     .locals 1
 
     invoke-static {}, Lcom/oneplus/util/OpUtils;->isUST()Z
 
     move-result v0
 
-    xor-int/lit8 v0, v0, 0x1
+    if-nez v0, :cond_0
 
-    return v0
+    invoke-static {p0}, Lcom/oneplus/util/OpUtils;->isDETmoMccMnc(Landroid/content/Context;)Z
+
+    move-result p0
+
+    if-nez p0, :cond_0
+
+    const/4 p0, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 p0, 0x0
+
+    :goto_0
+    return p0
 .end method
 
 .method public static isSupportShowVoWifi()Z
@@ -1476,7 +1692,7 @@
 
     new-array v0, v2, [I
 
-    const/16 v3, 0x91
+    const/16 v3, 0x92
 
     aput v3, v0, v1
 
@@ -1520,7 +1736,7 @@
 
     const/4 v1, 0x0
 
-    const/16 v2, 0xd5
+    const/16 v2, 0xd6
 
     aput v2, v0, v1
 
@@ -1548,7 +1764,7 @@
 
     const/4 v2, 0x0
 
-    const/16 v3, 0x97
+    const/16 v3, 0x98
 
     aput v3, v1, v2
 
@@ -1792,8 +2008,115 @@
     return-void
 .end method
 
+.method public static updateIsCutoutEmulationEnabled()V
+    .locals 6
+
+    const-string v0, "OpUtils"
+
+    const/4 v1, 0x0
+
+    :try_start_0
+    sget-object v2, Lcom/oneplus/util/OpUtils;->mOverlayManager:Landroid/content/om/IOverlayManager;
+
+    if-eqz v2, :cond_1
+
+    sget-object v2, Lcom/oneplus/util/OpUtils;->mOverlayManager:Landroid/content/om/IOverlayManager;
+
+    const-string v3, "android"
+
+    invoke-interface {v2, v3, v1}, Landroid/content/om/IOverlayManager;->getOverlayInfosForTarget(Ljava/lang/String;I)Ljava/util/List;
+
+    move-result-object v2
+
+    invoke-interface {v2}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+
+    move-result-object v2
+
+    :cond_0
+    :goto_0
+    invoke-interface {v2}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v3
+
+    if-eqz v3, :cond_1
+
+    invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v3
+
+    check-cast v3, Landroid/content/om/OverlayInfo;
+
+    const-string v4, "com.android.internal.display_cutout_emulation"
+
+    iget-object v5, v3, Landroid/content/om/OverlayInfo;->category:Ljava/lang/String;
+
+    invoke-virtual {v4, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v4
+
+    if-eqz v4, :cond_0
+
+    invoke-virtual {v3}, Landroid/content/om/OverlayInfo;->isEnabled()Z
+
+    move-result v3
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    if-eqz v3, :cond_0
+
+    const/4 v1, 0x1
+
+    goto :goto_0
+
+    :catch_0
+    move-exception v2
+
+    new-instance v3, Ljava/lang/StringBuilder;
+
+    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v4, "isCutoutEmulationEnabled: "
+
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v3, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-static {v0, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    :cond_1
+    sput-boolean v1, Lcom/oneplus/util/OpUtils;->mIsCutoutEmulationEnabled:Z
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v2, "updateIsCutoutEmulationEnabled "
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    sget-boolean v2, Lcom/oneplus/util/OpUtils;->mIsCutoutEmulationEnabled:Z
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    return-void
+.end method
+
 .method public static updateTopPackage(Landroid/content/Context;Ljava/lang/String;)V
-    .locals 4
+    .locals 6
 
     new-instance v0, Landroid/content/Intent;
 
@@ -1833,25 +2156,25 @@
 
     const/4 v2, 0x0
 
-    if-eqz v1, :cond_4
+    if-eqz v1, :cond_6
 
-    if-eqz p1, :cond_4
+    if-eqz p1, :cond_6
 
     const-string v3, "net.oneplus.launcher"
 
     invoke-virtual {p1, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    move-result v3
+    move-result v4
 
-    if-nez v3, :cond_3
+    const-string v5, "net.oneplus.h2launcher"
 
-    const-string v3, "net.oneplus.h2launcher"
+    if-nez v4, :cond_3
 
-    invoke-virtual {p1, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {p1, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    move-result v3
+    move-result v4
 
-    if-nez v3, :cond_3
+    if-nez v4, :cond_3
 
     invoke-virtual {p1, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -1873,13 +2196,41 @@
     :goto_1
     sput-boolean v1, Lcom/oneplus/util/OpUtils;->mIsHomeApp:Z
 
+    invoke-virtual {p1, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_5
+
+    invoke-virtual {p1, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_4
+
     goto :goto_2
 
     :cond_4
+    move v1, v2
+
+    goto :goto_3
+
+    :cond_5
+    :goto_2
+    move v1, v0
+
+    :goto_3
+    sput-boolean v1, Lcom/oneplus/util/OpUtils;->mIsOnePlusHomeApp:Z
+
+    goto :goto_4
+
+    :cond_6
     sput-boolean v2, Lcom/oneplus/util/OpUtils;->mIsHomeApp:Z
 
-    :goto_2
-    if-eqz p1, :cond_5
+    sput-boolean v2, Lcom/oneplus/util/OpUtils;->mIsOnePlusHomeApp:Z
+
+    :goto_4
+    if-eqz p1, :cond_7
 
     const-string v1, "com.android.systemui"
 
@@ -1889,13 +2240,13 @@
 
     sput-boolean v1, Lcom/oneplus/util/OpUtils;->mIsSystemUI:Z
 
-    goto :goto_3
+    goto :goto_5
 
-    :cond_5
+    :cond_7
     sput-boolean v2, Lcom/oneplus/util/OpUtils;->mIsSystemUI:Z
 
-    :goto_3
-    if-eqz p1, :cond_6
+    :goto_5
+    if-eqz p1, :cond_8
 
     const-string v1, "android.systemui.cts"
 
@@ -1905,13 +2256,13 @@
 
     sput-boolean v1, Lcom/oneplus/util/OpUtils;->mIsCTS:Z
 
-    goto :goto_4
+    goto :goto_6
 
-    :cond_6
+    :cond_8
     sput-boolean v2, Lcom/oneplus/util/OpUtils;->mIsCTS:Z
 
-    :goto_4
-    if-eqz p1, :cond_9
+    :goto_6
+    if-eqz p1, :cond_b
 
     const-string v1, "com.mobile.legends"
 
@@ -1919,7 +2270,7 @@
 
     move-result v1
 
-    if-nez v1, :cond_8
+    if-nez v1, :cond_a
 
     const-string v1, "com.tencent.tmgp.sgame"
 
@@ -1927,28 +2278,28 @@
 
     move-result v1
 
-    if-eqz v1, :cond_7
-
-    goto :goto_5
-
-    :cond_7
-    move v1, v2
-
-    goto :goto_6
-
-    :cond_8
-    :goto_5
-    move v1, v0
-
-    :goto_6
-    sput-boolean v1, Lcom/oneplus/util/OpUtils;->mIsNeedDarkNavBar:Z
+    if-eqz v1, :cond_9
 
     goto :goto_7
 
     :cond_9
+    move v1, v2
+
+    goto :goto_8
+
+    :cond_a
+    :goto_7
+    move v1, v0
+
+    :goto_8
+    sput-boolean v1, Lcom/oneplus/util/OpUtils;->mIsNeedDarkNavBar:Z
+
+    goto :goto_9
+
+    :cond_b
     sput-boolean v2, Lcom/oneplus/util/OpUtils;->mIsNeedDarkNavBar:Z
 
-    :goto_7
+    :goto_9
     const-string v1, "appops"
 
     invoke-virtual {p0, v1}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
@@ -1957,7 +2308,7 @@
 
     check-cast v1, Landroid/app/AppOpsManager;
 
-    if-eqz p1, :cond_b
+    if-eqz p1, :cond_d
 
     :try_start_0
     invoke-virtual {p0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
@@ -1976,24 +2327,24 @@
 
     move-result p0
 
-    if-nez p0, :cond_a
+    if-nez p0, :cond_c
 
-    goto :goto_8
+    goto :goto_a
 
-    :cond_a
+    :cond_c
     move v0, v2
 
-    :goto_8
+    :goto_a
     sput-boolean v0, Lcom/oneplus/util/OpUtils;->mIsScreenCompat:Z
 
-    goto :goto_9
+    goto :goto_b
 
-    :cond_b
+    :cond_d
     sput-boolean v2, Lcom/oneplus/util/OpUtils;->mIsScreenCompat:Z
     :try_end_0
     .catch Landroid/content/pm/PackageManager$NameNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 
-    goto :goto_9
+    goto :goto_b
 
     :catch_0
     move-exception p0
@@ -2002,6 +2353,6 @@
 
     sput-boolean v2, Lcom/oneplus/util/OpUtils;->mIsScreenCompat:Z
 
-    :goto_9
+    :goto_b
     return-void
 .end method

@@ -264,8 +264,11 @@
     return v1
 
     :cond_5
-    if-ne p1, v1, :cond_7
+    if-eq p1, v1, :cond_6
 
+    if-ne p1, v4, :cond_8
+
+    :cond_6
     iget-object p1, p0, Lcom/oneplus/keyguard/OpDragPanelController$OpOnTouchListener;->this$0:Lcom/oneplus/keyguard/OpDragPanelController;
 
     invoke-static {p1}, Lcom/oneplus/keyguard/OpDragPanelController;->access$1400(Lcom/oneplus/keyguard/OpDragPanelController;)Lcom/oneplus/keyguard/OpDragPanelController$VelocityTracker;
@@ -280,7 +283,7 @@
 
     move-result p1
 
-    if-eqz p1, :cond_6
+    if-eqz p1, :cond_7
 
     iget-object p1, p0, Lcom/oneplus/keyguard/OpDragPanelController$OpOnTouchListener;->this$0:Lcom/oneplus/keyguard/OpDragPanelController;
 
@@ -292,7 +295,7 @@
 
     return v1
 
-    :cond_6
+    :cond_7
     sget-boolean p0, Landroid/os/Build;->DEBUG_ONEPLUS:Z
 
     if-eqz p0, :cond_8
@@ -303,24 +306,6 @@
 
     invoke-static {p0, p1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    goto :goto_1
-
-    :cond_7
-    if-ne p1, v4, :cond_8
-
-    iget-object p1, p0, Lcom/oneplus/keyguard/OpDragPanelController$OpOnTouchListener;->this$0:Lcom/oneplus/keyguard/OpDragPanelController;
-
-    invoke-static {p1}, Lcom/oneplus/keyguard/OpDragPanelController;->access$1400(Lcom/oneplus/keyguard/OpDragPanelController;)Lcom/oneplus/keyguard/OpDragPanelController$VelocityTracker;
-
-    move-result-object p1
-
-    invoke-virtual {p1, p2, v2}, Lcom/oneplus/keyguard/OpDragPanelController$VelocityTracker;->updateMovePoint(FF)V
-
-    iget-object p0, p0, Lcom/oneplus/keyguard/OpDragPanelController$OpOnTouchListener;->this$0:Lcom/oneplus/keyguard/OpDragPanelController;
-
-    invoke-static {p0, v0}, Lcom/oneplus/keyguard/OpDragPanelController;->access$1302(Lcom/oneplus/keyguard/OpDragPanelController;Z)Z
-
     :cond_8
-    :goto_1
     return v0
 .end method

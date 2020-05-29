@@ -14,8 +14,6 @@
 
 .field public static final battery_percentage_view:I = 0x7f0d003a
 
-.field public static final biometric_dialog:I = 0x7f0d003b
-
 .field public static final brightness_mirror:I = 0x7f0d003e
 
 .field public static final bubble_dismiss_target:I = 0x7f0d0040
@@ -154,156 +152,156 @@
 
 .field public static final op_aod_view:I = 0x7f0d0125
 
-.field public static final op_fingerprint_dim_view:I = 0x7f0d0133
+.field public static final op_biometric_dialog:I = 0x7f0d0126
 
-.field public static final op_fingerprint_high_light_view:I = 0x7f0d0134
+.field public static final op_fingerprint_high_light_view:I = 0x7f0d0135
 
-.field public static final op_fingerprint_icon:I = 0x7f0d0135
+.field public static final op_fingerprint_icon:I = 0x7f0d0136
 
-.field public static final op_fingerprint_view:I = 0x7f0d0136
+.field public static final op_fingerprint_view:I = 0x7f0d0137
 
-.field public static final op_keyguard_emergency_panel:I = 0x7f0d0139
+.field public static final op_keyguard_emergency_panel:I = 0x7f0d013a
 
-.field public static final op_quick_reply_notification:I = 0x7f0d0151
+.field public static final op_quick_reply_notification:I = 0x7f0d0152
 
-.field public static final op_threekey_dialog:I = 0x7f0d015b
+.field public static final op_threekey_dialog:I = 0x7f0d015c
 
-.field public static final op_threekey_navigation_dialog_first:I = 0x7f0d015e
+.field public static final op_threekey_navigation_dialog_first:I = 0x7f0d015f
 
-.field public static final op_threekey_navigation_dialog_first_left_land:I = 0x7f0d015f
+.field public static final op_threekey_navigation_dialog_first_left_land:I = 0x7f0d0160
 
-.field public static final op_threekey_navigation_dialog_first_right_land:I = 0x7f0d0160
+.field public static final op_threekey_navigation_dialog_first_right_land:I = 0x7f0d0161
 
-.field public static final op_threekey_navigation_dialog_second:I = 0x7f0d0161
+.field public static final op_threekey_navigation_dialog_second:I = 0x7f0d0162
 
-.field public static final op_volume_dialog:I = 0x7f0d016a
+.field public static final op_volume_dialog:I = 0x7f0d016b
 
-.field public static final op_volume_dialog_row:I = 0x7f0d016b
+.field public static final op_volume_dialog_row:I = 0x7f0d016c
 
-.field public static final op_wakingup_scrim_view:I = 0x7f0d016c
+.field public static final op_wakingup_scrim_view:I = 0x7f0d016d
 
-.field public static final op_warp_charging_animation_view:I = 0x7f0d016e
+.field public static final op_warp_charging_animation_view:I = 0x7f0d016f
 
-.field public static final output_chooser:I = 0x7f0d0172
+.field public static final output_chooser:I = 0x7f0d0173
 
-.field public static final output_chooser_item:I = 0x7f0d0173
+.field public static final output_chooser_item:I = 0x7f0d0174
 
-.field public static final pip_dismiss_view:I = 0x7f0d0174
+.field public static final pip_dismiss_view:I = 0x7f0d0175
 
-.field public static final pip_menu_action:I = 0x7f0d0175
+.field public static final pip_menu_action:I = 0x7f0d0176
 
-.field public static final pip_menu_activity:I = 0x7f0d0176
+.field public static final pip_menu_activity:I = 0x7f0d0177
 
-.field public static final power_notification_controls_settings:I = 0x7f0d0177
+.field public static final power_notification_controls_settings:I = 0x7f0d0178
 
-.field public static final preference_widget_radiobutton:I = 0x7f0d018c
+.field public static final preference_widget_radiobutton:I = 0x7f0d018d
 
-.field public static final ql_root_view:I = 0x7f0d0193
+.field public static final ql_root_view:I = 0x7f0d0194
 
-.field public static final qs_customize_panel_content2:I = 0x7f0d019b
+.field public static final qs_customize_panel_content2:I = 0x7f0d019c
 
-.field public static final qs_detail_item:I = 0x7f0d01a1
+.field public static final qs_detail_item:I = 0x7f0d01a2
 
-.field public static final qs_detail_items:I = 0x7f0d01a2
+.field public static final qs_detail_items:I = 0x7f0d01a3
 
-.field public static final qs_page_indicator:I = 0x7f0d01a6
+.field public static final qs_page_indicator:I = 0x7f0d01a7
 
-.field public static final qs_paged_page:I = 0x7f0d01a7
+.field public static final qs_paged_page:I = 0x7f0d01a8
 
-.field public static final qs_paged_tile_layout:I = 0x7f0d01a8
+.field public static final qs_paged_tile_layout:I = 0x7f0d01a9
 
-.field public static final qs_panel:I = 0x7f0d01a9
+.field public static final qs_panel:I = 0x7f0d01aa
 
-.field public static final qs_tile_label:I = 0x7f0d01aa
+.field public static final qs_tile_label:I = 0x7f0d01ab
 
-.field public static final qs_user_detail:I = 0x7f0d01ac
+.field public static final qs_user_detail:I = 0x7f0d01ad
 
-.field public static final qs_user_detail_item:I = 0x7f0d01ad
+.field public static final qs_user_detail_item:I = 0x7f0d01ae
 
-.field public static final qs_wlb_detail_panel:I = 0x7f0d01ae
+.field public static final qs_wlb_detail_panel:I = 0x7f0d01af
 
-.field public static final quick_settings_brightness_dialog:I = 0x7f0d01b0
+.field public static final quick_settings_brightness_dialog:I = 0x7f0d01b1
 
-.field public static final quick_settings_footer:I = 0x7f0d01b1
+.field public static final quick_settings_footer:I = 0x7f0d01b2
 
-.field public static final quick_settings_footer_dialog:I = 0x7f0d01b2
+.field public static final quick_settings_footer_dialog:I = 0x7f0d01b3
 
-.field public static final recent_apps:I = 0x7f0d01b6
+.field public static final recent_apps:I = 0x7f0d01b7
 
-.field public static final recent_apps2:I = 0x7f0d01b7
+.field public static final recent_apps2:I = 0x7f0d01b8
 
-.field public static final recents_onboarding:I = 0x7f0d01b8
+.field public static final recents_onboarding:I = 0x7f0d01b9
 
-.field public static final remote_input:I = 0x7f0d01ba
+.field public static final remote_input:I = 0x7f0d01bb
 
-.field public static final rotate_suggestion:I = 0x7f0d01bf
+.field public static final rotate_suggestion:I = 0x7f0d01c0
 
-.field public static final rounded_corners:I = 0x7f0d01c0
+.field public static final rounded_corners:I = 0x7f0d01c1
 
-.field public static final screen_pinning_request:I = 0x7f0d01c1
+.field public static final screen_pinning_request:I = 0x7f0d01c2
 
-.field public static final screen_pinning_request_land_phone:I = 0x7f0d01c5
+.field public static final screen_pinning_request_land_phone:I = 0x7f0d01c6
 
-.field public static final screen_pinning_request_sea_phone:I = 0x7f0d01c6
+.field public static final screen_pinning_request_sea_phone:I = 0x7f0d01c7
 
-.field public static final screen_record_dialog:I = 0x7f0d01c8
+.field public static final screen_record_dialog:I = 0x7f0d01c9
 
-.field public static final segmented_button:I = 0x7f0d01c9
+.field public static final segmented_button:I = 0x7f0d01ca
 
-.field public static final size_compat_mode_hint:I = 0x7f0d01d4
+.field public static final size_compat_mode_hint:I = 0x7f0d01d5
 
-.field public static final slice_permission_request:I = 0x7f0d01d5
+.field public static final slice_permission_request:I = 0x7f0d01d6
 
-.field public static final smart_action_button:I = 0x7f0d01d6
+.field public static final smart_action_button:I = 0x7f0d01d7
 
-.field public static final smart_reply_button:I = 0x7f0d01d7
+.field public static final smart_reply_button:I = 0x7f0d01d8
 
-.field public static final smart_reply_view:I = 0x7f0d01d8
+.field public static final smart_reply_view:I = 0x7f0d01d9
 
-.field public static final status_bar:I = 0x7f0d01da
+.field public static final status_bar:I = 0x7f0d01db
 
-.field public static final status_bar_mobile_signal_group:I = 0x7f0d01dc
+.field public static final status_bar_mobile_signal_group:I = 0x7f0d01dd
 
-.field public static final status_bar_network_speed:I = 0x7f0d01dd
+.field public static final status_bar_network_speed:I = 0x7f0d01de
 
-.field public static final status_bar_no_notifications:I = 0x7f0d01de
+.field public static final status_bar_no_notifications:I = 0x7f0d01df
 
-.field public static final status_bar_notification_footer:I = 0x7f0d01df
+.field public static final status_bar_notification_footer:I = 0x7f0d01e0
 
-.field public static final status_bar_notification_row:I = 0x7f0d01e0
+.field public static final status_bar_notification_row:I = 0x7f0d01e1
 
-.field public static final status_bar_notification_section_header:I = 0x7f0d01e1
+.field public static final status_bar_notification_section_header:I = 0x7f0d01e2
 
-.field public static final status_bar_notification_section_header_contents:I = 0x7f0d01e2
+.field public static final status_bar_notification_section_header_contents:I = 0x7f0d01e3
 
-.field public static final status_bar_notification_shelf:I = 0x7f0d01e3
+.field public static final status_bar_notification_shelf:I = 0x7f0d01e4
 
-.field public static final status_bar_toggle_slider:I = 0x7f0d01e4
+.field public static final status_bar_toggle_slider:I = 0x7f0d01e5
 
-.field public static final status_bar_wifi_group:I = 0x7f0d01e5
+.field public static final status_bar_wifi_group:I = 0x7f0d01e6
 
-.field public static final super_status_bar:I = 0x7f0d01e6
+.field public static final super_status_bar:I = 0x7f0d01e7
 
-.field public static final tuner_activity:I = 0x7f0d01eb
+.field public static final tuner_activity:I = 0x7f0d01ec
 
-.field public static final tuner_shortcut_item:I = 0x7f0d01ec
+.field public static final tuner_shortcut_item:I = 0x7f0d01ed
 
-.field public static final tuner_widget_settings_switch:I = 0x7f0d01ee
+.field public static final tuner_widget_settings_switch:I = 0x7f0d01ef
 
-.field public static final tv_pip_control_button:I = 0x7f0d01f0
+.field public static final tv_pip_control_button:I = 0x7f0d01f1
 
-.field public static final tv_pip_controls:I = 0x7f0d01f1
+.field public static final tv_pip_controls:I = 0x7f0d01f2
 
-.field public static final tv_pip_custom_control:I = 0x7f0d01f2
+.field public static final tv_pip_custom_control:I = 0x7f0d01f3
 
-.field public static final tv_pip_menu:I = 0x7f0d01f3
+.field public static final tv_pip_menu:I = 0x7f0d01f4
 
-.field public static final wireless_charging_layout:I = 0x7f0d01fa
+.field public static final wireless_charging_layout:I = 0x7f0d01fb
 
-.field public static final wlb_detail_item_view:I = 0x7f0d01fb
+.field public static final wlb_detail_item_view:I = 0x7f0d01fc
 
-.field public static final zen_mode_button:I = 0x7f0d01fc
+.field public static final zen_mode_button:I = 0x7f0d01fd
 
-.field public static final zen_mode_condition:I = 0x7f0d01fd
+.field public static final zen_mode_condition:I = 0x7f0d01fe
 
-.field public static final zen_mode_panel:I = 0x7f0d01ff
+.field public static final zen_mode_panel:I = 0x7f0d0200

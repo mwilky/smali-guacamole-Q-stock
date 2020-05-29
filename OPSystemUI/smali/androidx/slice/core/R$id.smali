@@ -4,6 +4,6 @@
 
 
 # static fields
-.field public static final text1:I = 0x7f0a04a4
+.field public static final text1:I = 0x7f0a04a9
 
-.field public static final text2:I = 0x7f0a04a5
+.field public static final text2:I = 0x7f0a04aa

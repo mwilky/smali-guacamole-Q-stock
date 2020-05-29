@@ -324,7 +324,7 @@
     <string name="battery_saver_notification_title">Battery Saver is on</string>
     <string name="battery_saver_start_action">Turn on Battery Saver</string>
     <string name="battery_usage_extanded">Battery Saver may extend usage for about %s based on your usage</string>
-    <string name="battery_usage_remaining">Should last about %s based on your usage. Reduces performance and background data usage.</string>
+    <string name="battery_usage_remaining_time">%s left</string>
     <string name="biometric_dialog_confirm">Confirm</string>
     <string name="biometric_dialog_empty_space_description">Empty region, tap to cancel authentication</string>
     <string name="biometric_dialog_face_icon_description_authenticated">Face authenticated</string>

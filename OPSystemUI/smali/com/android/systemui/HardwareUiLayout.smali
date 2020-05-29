@@ -988,7 +988,7 @@
 
     const/4 v1, 0x0
 
-    const-string v2, "sysui_hwui_edge_bleed"
+    const-string/jumbo v2, "sysui_hwui_edge_bleed"
 
     invoke-static {v0, v2, v1}, Landroid/provider/Settings$Secure;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
 
@@ -1016,7 +1016,7 @@
 
     move-result-object v0
 
-    const-string v3, "sysui_hwui_rounded_divider"
+    const-string/jumbo v3, "sysui_hwui_rounded_divider"
 
     invoke-static {v0, v3, v1}, Landroid/provider/Settings$Secure;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
 
@@ -1299,9 +1299,9 @@
 
     check-cast v0, Lcom/android/systemui/tuner/TunerService;
 
-    const-string v1, "sysui_hwui_edge_bleed"
+    const-string/jumbo v1, "sysui_hwui_edge_bleed"
 
-    const-string v2, "sysui_hwui_rounded_divider"
+    const-string/jumbo v2, "sysui_hwui_rounded_divider"
 
     filled-new-array {v1, v2}, [Ljava/lang/String;
 

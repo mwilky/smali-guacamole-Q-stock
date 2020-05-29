@@ -127,7 +127,9 @@
     <item type="id" name="app_views_container" />
     <item type="id" name="appendix" />
     <item type="id" name="arrow" />
+    <item type="id" name="arrow_left" />
     <item type="id" name="arrow_panel" />
+    <item type="id" name="arrow_right" />
     <item type="id" name="assist_hint_left" />
     <item type="id" name="assist_hint_right" />
     <item type="id" name="assist_orb" />
@@ -182,6 +184,7 @@
     <item type="id" name="bottom_roundess_animator_end_tag" />
     <item type="id" name="bottom_roundess_animator_start_tag" />
     <item type="id" name="bottom_roundess_animator_tag" />
+    <item type="id" name="bottom_space" />
     <item type="id" name="bottom_spacer" />
     <item type="id" name="breadcrumb_section" />
     <item type="id" name="brightness_icon" />
@@ -368,6 +371,8 @@
     <item type="id" name="entity_header_summary" />
     <item type="id" name="entity_header_title" />
     <item type="id" name="error" />
+    <item type="id" name="error1" />
+    <item type="id" name="error2" />
     <item type="id" name="error_frame" />
     <item type="id" name="expand" />
     <item type="id" name="expand_activities_button" />
@@ -1170,8 +1175,10 @@
     <item type="id" name="visible" />
     <item type="id" name="volume_dialog" />
     <item type="id" name="volume_dialog_container" />
+    <item type="id" name="volume_dialog_lower" />
     <item type="id" name="volume_dialog_row_container" />
     <item type="id" name="volume_dialog_rows" />
+    <item type="id" name="volume_dialog_upper" />
     <item type="id" name="volume_item_container" />
     <item type="id" name="volume_row_connected_device" />
     <item type="id" name="volume_row_header" />

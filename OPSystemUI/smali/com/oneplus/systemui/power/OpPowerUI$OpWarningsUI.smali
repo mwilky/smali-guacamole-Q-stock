@@ -17,6 +17,3 @@
 # virtual methods
 .method public abstract isWarningNotificationShow()Z
 .end method
-
-.method public abstract showSaverMode(Z)V
-.end method

@@ -94,42 +94,42 @@
 
 .field public static final design_bottom_navigation_item_background:I = 0x7f080313
 
-.field public static final op_actionbar_background:I = 0x7f08086f
+.field public static final op_actionbar_background:I = 0x7f08085e
 
-.field public static final op_actionbar_background_nodivider:I = 0x7f080870
+.field public static final op_actionbar_background_nodivider:I = 0x7f08085f
 
-.field public static final op_btn_clock_material:I = 0x7f080885
+.field public static final op_btn_clock_material:I = 0x7f080874
 
-.field public static final op_btn_keyboard_key_material:I = 0x7f080890
+.field public static final op_btn_keyboard_key_material:I = 0x7f08087f
 
-.field public static final op_drop_down_item_background:I = 0x7f08089c
+.field public static final op_drop_down_item_background:I = 0x7f08088b
 
-.field public static final op_drop_down_item_background_bottom:I = 0x7f08089d
+.field public static final op_drop_down_item_background_bottom:I = 0x7f08088c
 
-.field public static final op_drop_down_item_background_top:I = 0x7f08089e
+.field public static final op_drop_down_item_background_top:I = 0x7f08088d
 
-.field public static final op_edit_text_error_material_light:I = 0x7f0808a0
+.field public static final op_edit_text_error_material_light:I = 0x7f08088f
 
-.field public static final op_edit_text_material_light:I = 0x7f0808a2
+.field public static final op_edit_text_material_light:I = 0x7f080891
 
-.field public static final op_major_a_b:I = 0x7f0808de
+.field public static final op_major_a_b:I = 0x7f0808d2
 
-.field public static final op_major_a_b_animation:I = 0x7f0808df
+.field public static final op_major_a_b_animation:I = 0x7f0808d3
 
-.field public static final op_major_b_a_animation:I = 0x7f0808e1
+.field public static final op_major_b_a_animation:I = 0x7f0808d5
 
-.field public static final op_major_b_c_animation:I = 0x7f0808e3
+.field public static final op_major_b_c_animation:I = 0x7f0808d7
 
-.field public static final op_major_c_b_animation:I = 0x7f0808e5
+.field public static final op_major_c_b_animation:I = 0x7f0808d9
 
-.field public static final op_minor_a_b_animation:I = 0x7f0808e7
+.field public static final op_minor_a_b_animation:I = 0x7f0808db
 
-.field public static final op_minor_b_a_animation:I = 0x7f0808e9
+.field public static final op_minor_b_a_animation:I = 0x7f0808dd
 
-.field public static final op_minor_b_c_animation:I = 0x7f0808eb
+.field public static final op_minor_b_c_animation:I = 0x7f0808df
 
-.field public static final op_minor_c_b_animation:I = 0x7f0808ed
+.field public static final op_minor_c_b_animation:I = 0x7f0808e1
 
-.field public static final op_rectangle_floating_action_button:I = 0x7f080915
+.field public static final op_rectangle_floating_action_button:I = 0x7f080909
 
-.field public static final op_switch_floating_action_button:I = 0x7f08092d
+.field public static final op_switch_floating_action_button:I = 0x7f080922

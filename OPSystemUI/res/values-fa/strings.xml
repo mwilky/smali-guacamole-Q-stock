@@ -324,7 +324,7 @@
     <string name="battery_saver_notification_title">بهینه‌سازی باتری روشن است</string>
     <string name="battery_saver_start_action">بهینه‌سازی باتری را روشن کنید</string>
     <string name="battery_usage_extanded">با توجه به نحوۀ استفادۀ شما، «ذخیره‌کنندۀ باتری» می‌تواند مدت استفاده را در حدود %s افزایش دهد</string>
-    <string name="battery_usage_remaining">با توجه به نحوۀ استفادۀ شما، باید %s دوام بیاورد. عملکرد و داده‌های پس‌زمینه را کاهش می‌دهد.</string>
+    <string name="battery_usage_remaining_time">%s باقی مانده است</string>
     <string name="biometric_dialog_confirm">تأیید</string>
     <string name="biometric_dialog_empty_space_description">برای لغو احراز هویت، در قسمت خالی ضربه بزنید</string>
     <string name="biometric_dialog_face_icon_description_authenticated">چهره احراز هویت شد</string>

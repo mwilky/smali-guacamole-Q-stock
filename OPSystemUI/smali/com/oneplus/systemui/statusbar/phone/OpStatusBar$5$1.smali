@@ -43,7 +43,7 @@
 
     const-string v0, "OpStatusBar"
 
-    const-string v1, "theme setting changed."
+    const-string/jumbo v1, "theme setting changed."
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 

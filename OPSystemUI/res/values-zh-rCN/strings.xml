@@ -323,7 +323,7 @@
     <string name="battery_saver_notification_title">省电模式已开启</string>
     <string name="battery_saver_start_action">开启省电模式</string>
     <string name="battery_usage_extanded">开启省电模式后预计延长使用时间约 %s</string>
-    <string name="battery_usage_remaining">根据当前使用状况，你的手机大约还可以使用 %s。已降低手机性能并限制后台流量。</string>
+    <string name="battery_usage_remaining_time">剩余 %s</string>
     <string name="biometric_dialog_confirm">确认</string>
     <string name="biometric_dialog_empty_space_description">空白区域，点按即可取消身份验证</string>
     <string name="biometric_dialog_face_icon_description_authenticated">面孔身份验证成功</string>

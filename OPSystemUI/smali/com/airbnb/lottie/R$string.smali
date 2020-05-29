@@ -729,7 +729,7 @@
 
 .field public static final battery_usage_extanded:I = 0x7f110164
 
-.field public static final battery_usage_remaining:I = 0x7f110165
+.field public static final battery_usage_remaining_time:I = 0x7f110165
 
 .field public static final biometric_dialog_confirm:I = 0x7f110166
 
@@ -3663,205 +3663,203 @@
 
 .field public static final wifi_ap_unable_to_handle_new_sta:I = 0x7f11071f
 
-.field public static final wifi_auth_password_wrong:I = 0x7f110720
+.field public static final wifi_auto_sel_wapi_cert:I = 0x7f110720
 
-.field public static final wifi_auto_sel_wapi_cert:I = 0x7f110721
+.field public static final wifi_cant_connect:I = 0x7f110721
 
-.field public static final wifi_cant_connect:I = 0x7f110722
+.field public static final wifi_cant_connect_to_ap:I = 0x7f110722
 
-.field public static final wifi_cant_connect_to_ap:I = 0x7f110723
+.field public static final wifi_check_password_try_again:I = 0x7f110723
 
-.field public static final wifi_check_password_try_again:I = 0x7f110724
+.field public static final wifi_connected_no_internet:I = 0x7f110724
 
-.field public static final wifi_connected_no_internet:I = 0x7f110725
+.field public static final wifi_coverage_extend:I = 0x7f110725
 
-.field public static final wifi_coverage_extend:I = 0x7f110726
+.field public static final wifi_coverage_extend_summary:I = 0x7f110726
 
-.field public static final wifi_coverage_extend_summary:I = 0x7f110727
+.field public static final wifi_disabled_by_recommendation_provider:I = 0x7f110727
 
-.field public static final wifi_disabled_by_recommendation_provider:I = 0x7f110728
+.field public static final wifi_disabled_generic:I = 0x7f110728
 
-.field public static final wifi_disabled_generic:I = 0x7f110729
+.field public static final wifi_disabled_network_failure:I = 0x7f110729
 
-.field public static final wifi_disabled_network_failure:I = 0x7f11072a
+.field public static final wifi_disabled_password_failure:I = 0x7f11072a
 
-.field public static final wifi_disabled_password_failure:I = 0x7f11072b
+.field public static final wifi_disabled_wifi_failure:I = 0x7f11072b
 
-.field public static final wifi_disabled_wifi_failure:I = 0x7f11072c
+.field public static final wifi_disconnected:I = 0x7f11072c
 
-.field public static final wifi_disconnected:I = 0x7f11072d
+.field public static final wifi_display_certification:I = 0x7f11072d
 
-.field public static final wifi_display_certification:I = 0x7f11072e
+.field public static final wifi_display_certification_summary:I = 0x7f11072e
 
-.field public static final wifi_display_certification_summary:I = 0x7f11072f
+.field public static final wifi_dns1_hint:I = 0x7f11072f
 
-.field public static final wifi_dns1_hint:I = 0x7f110730
+.field public static final wifi_dns2_hint:I = 0x7f110730
 
-.field public static final wifi_dns2_hint:I = 0x7f110731
+.field public static final wifi_fail_to_scan:I = 0x7f110731
 
-.field public static final wifi_fail_to_scan:I = 0x7f110732
+.field public static final wifi_gateway_hint:I = 0x7f110732
 
-.field public static final wifi_gateway_hint:I = 0x7f110733
+.field public static final wifi_hand_sel_wapi_cert:I = 0x7f110733
 
-.field public static final wifi_hand_sel_wapi_cert:I = 0x7f110734
+.field public static final wifi_ip_address_hint:I = 0x7f110734
 
-.field public static final wifi_ip_address_hint:I = 0x7f110735
+.field public static final wifi_is_off:I = 0x7f110735
 
-.field public static final wifi_is_off:I = 0x7f110736
+.field public static final wifi_limited_connection:I = 0x7f110736
 
-.field public static final wifi_limited_connection:I = 0x7f110737
+.field public static final wifi_metered_label:I = 0x7f110737
 
-.field public static final wifi_metered_label:I = 0x7f110738
+.field public static final wifi_network_prefix_length_hint:I = 0x7f110738
 
-.field public static final wifi_network_prefix_length_hint:I = 0x7f110739
+.field public static final wifi_no_internet:I = 0x7f110739
 
-.field public static final wifi_no_internet:I = 0x7f11073a
+.field public static final wifi_no_internet_no_reconnect:I = 0x7f11073a
 
-.field public static final wifi_no_internet_no_reconnect:I = 0x7f11073b
+.field public static final wifi_not_in_range:I = 0x7f11073b
 
-.field public static final wifi_not_in_range:I = 0x7f11073c
+.field public static final wifi_remembered:I = 0x7f11073c
 
-.field public static final wifi_remembered:I = 0x7f11073d
+.field public static final wifi_scan_throttling:I = 0x7f11073d
 
-.field public static final wifi_scan_throttling:I = 0x7f11073e
+.field public static final wifi_scan_throttling_summary:I = 0x7f11073e
 
-.field public static final wifi_scan_throttling_summary:I = 0x7f11073f
+.field public static final wifi_security_dpp:I = 0x7f11073f
 
-.field public static final wifi_security_dpp:I = 0x7f110740
+.field public static final wifi_security_eap:I = 0x7f110740
 
-.field public static final wifi_security_eap:I = 0x7f110741
+.field public static final wifi_security_eap_suiteb:I = 0x7f110741
 
-.field public static final wifi_security_eap_suiteb:I = 0x7f110742
+.field public static final wifi_security_eap_wpa:I = 0x7f110742
 
-.field public static final wifi_security_eap_wpa:I = 0x7f110743
+.field public static final wifi_security_eap_wpa2_wpa3:I = 0x7f110743
 
-.field public static final wifi_security_eap_wpa2_wpa3:I = 0x7f110744
+.field public static final wifi_security_none:I = 0x7f110744
 
-.field public static final wifi_security_none:I = 0x7f110745
+.field public static final wifi_security_owe:I = 0x7f110745
 
-.field public static final wifi_security_owe:I = 0x7f110746
+.field public static final wifi_security_passpoint:I = 0x7f110746
 
-.field public static final wifi_security_passpoint:I = 0x7f110747
+.field public static final wifi_security_psk_generic:I = 0x7f110747
 
-.field public static final wifi_security_psk_generic:I = 0x7f110748
+.field public static final wifi_security_psk_sae:I = 0x7f110748
 
-.field public static final wifi_security_psk_sae:I = 0x7f110749
+.field public static final wifi_security_sae:I = 0x7f110749
 
-.field public static final wifi_security_sae:I = 0x7f11074a
+.field public static final wifi_security_short_dpp:I = 0x7f11074a
 
-.field public static final wifi_security_short_dpp:I = 0x7f11074b
+.field public static final wifi_security_short_eap:I = 0x7f11074b
 
-.field public static final wifi_security_short_eap:I = 0x7f11074c
+.field public static final wifi_security_short_eap_suiteb:I = 0x7f11074c
 
-.field public static final wifi_security_short_eap_suiteb:I = 0x7f11074d
+.field public static final wifi_security_short_eap_wpa:I = 0x7f11074d
 
-.field public static final wifi_security_short_eap_wpa:I = 0x7f11074e
+.field public static final wifi_security_short_eap_wpa2_wpa3:I = 0x7f11074e
 
-.field public static final wifi_security_short_eap_wpa2_wpa3:I = 0x7f11074f
+.field public static final wifi_security_short_owe:I = 0x7f11074f
 
-.field public static final wifi_security_short_owe:I = 0x7f110750
+.field public static final wifi_security_short_psk_generic:I = 0x7f110750
 
-.field public static final wifi_security_short_psk_generic:I = 0x7f110751
+.field public static final wifi_security_short_psk_sae:I = 0x7f110751
 
-.field public static final wifi_security_short_psk_sae:I = 0x7f110752
+.field public static final wifi_security_short_sae:I = 0x7f110752
 
-.field public static final wifi_security_short_sae:I = 0x7f110753
+.field public static final wifi_security_short_wep:I = 0x7f110753
 
-.field public static final wifi_security_short_wep:I = 0x7f110754
+.field public static final wifi_security_short_wpa:I = 0x7f110754
 
-.field public static final wifi_security_short_wpa:I = 0x7f110755
+.field public static final wifi_security_short_wpa2:I = 0x7f110755
 
-.field public static final wifi_security_short_wpa2:I = 0x7f110756
+.field public static final wifi_security_short_wpa_wpa2:I = 0x7f110756
 
-.field public static final wifi_security_short_wpa_wpa2:I = 0x7f110757
+.field public static final wifi_security_wapi_cert:I = 0x7f110757
 
-.field public static final wifi_security_wapi_cert:I = 0x7f110758
+.field public static final wifi_security_wapi_psk:I = 0x7f110758
 
-.field public static final wifi_security_wapi_psk:I = 0x7f110759
+.field public static final wifi_security_wapi_psk_ascii:I = 0x7f110759
 
-.field public static final wifi_security_wapi_psk_ascii:I = 0x7f11075a
+.field public static final wifi_security_wapi_psk_hexadecimal:I = 0x7f11075a
 
-.field public static final wifi_security_wapi_psk_hexadecimal:I = 0x7f11075b
+.field public static final wifi_security_wep:I = 0x7f11075b
 
-.field public static final wifi_security_wep:I = 0x7f11075c
+.field public static final wifi_security_wpa:I = 0x7f11075c
 
-.field public static final wifi_security_wpa:I = 0x7f11075d
+.field public static final wifi_security_wpa2:I = 0x7f11075d
 
-.field public static final wifi_security_wpa2:I = 0x7f11075e
+.field public static final wifi_security_wpa_wpa2:I = 0x7f11075e
 
-.field public static final wifi_security_wpa_wpa2:I = 0x7f11075f
+.field public static final wifi_ssid_is_empty:I = 0x7f11075f
 
-.field public static final wifi_ssid_is_empty:I = 0x7f110760
+.field public static final wifi_ssid_length_is_max:I = 0x7f110760
 
-.field public static final wifi_ssid_length_is_max:I = 0x7f110761
+.field public static final wifi_status_mac_randomized:I = 0x7f110761
 
-.field public static final wifi_status_mac_randomized:I = 0x7f110762
+.field public static final wifi_status_no_internet:I = 0x7f110762
 
-.field public static final wifi_status_no_internet:I = 0x7f110763
+.field public static final wifi_status_sign_in_required:I = 0x7f110763
 
-.field public static final wifi_status_sign_in_required:I = 0x7f110764
+.field public static final wifi_unmetered_label:I = 0x7f110764
 
-.field public static final wifi_unmetered_label:I = 0x7f110765
+.field public static final wifi_verbose_logging:I = 0x7f110765
 
-.field public static final wifi_verbose_logging:I = 0x7f110766
+.field public static final wifi_verbose_logging_summary:I = 0x7f110766
 
-.field public static final wifi_verbose_logging_summary:I = 0x7f110767
+.field public static final wifi_wapi_as_certificate:I = 0x7f110767
 
-.field public static final wifi_wapi_as_certificate:I = 0x7f110768
+.field public static final wifi_wapi_cert_mode_hand_text:I = 0x7f110768
 
-.field public static final wifi_wapi_cert_mode_hand_text:I = 0x7f110769
+.field public static final wifi_wapi_certification_dont_exist:I = 0x7f110769
 
-.field public static final wifi_wapi_certification_dont_exist:I = 0x7f11076a
+.field public static final wifi_wapi_fail_to_auth:I = 0x7f11076a
 
-.field public static final wifi_wapi_fail_to_auth:I = 0x7f11076b
+.field public static final wifi_wapi_fail_to_init:I = 0x7f11076b
 
-.field public static final wifi_wapi_fail_to_init:I = 0x7f11076c
+.field public static final wifi_wapi_psk_type:I = 0x7f11076c
 
-.field public static final wifi_wapi_psk_type:I = 0x7f11076d
+.field public static final wifi_wapi_user_certificate:I = 0x7f11076d
 
-.field public static final wifi_wapi_user_certificate:I = 0x7f11076e
+.field public static final window_animation_scale_title:I = 0x7f11076e
 
-.field public static final window_animation_scale_title:I = 0x7f11076f
+.field public static final work_life_balance_mode:I = 0x7f11076f
 
-.field public static final work_life_balance_mode:I = 0x7f110770
+.field public static final yes_bubbles:I = 0x7f110770
 
-.field public static final yes_bubbles:I = 0x7f110771
+.field public static final zen_alarm_warning:I = 0x7f110771
 
-.field public static final zen_alarm_warning:I = 0x7f110772
+.field public static final zen_alarm_warning_indef:I = 0x7f110772
 
-.field public static final zen_alarm_warning_indef:I = 0x7f110773
+.field public static final zen_alarms_introduction:I = 0x7f110773
 
-.field public static final zen_alarms_introduction:I = 0x7f110774
+.field public static final zen_important_interruptions:I = 0x7f110774
 
-.field public static final zen_important_interruptions:I = 0x7f110775
+.field public static final zen_interruption_level_all:I = 0x7f110775
 
-.field public static final zen_interruption_level_all:I = 0x7f110776
+.field public static final zen_interruption_level_priority:I = 0x7f110776
 
-.field public static final zen_interruption_level_priority:I = 0x7f110777
+.field public static final zen_mode_and_condition:I = 0x7f110777
 
-.field public static final zen_mode_and_condition:I = 0x7f110778
+.field public static final zen_mode_duration_always_prompt_title:I = 0x7f110778
 
-.field public static final zen_mode_duration_always_prompt_title:I = 0x7f110779
+.field public static final zen_mode_duration_settings_title:I = 0x7f110779
 
-.field public static final zen_mode_duration_settings_title:I = 0x7f11077a
+.field public static final zen_mode_enable_dialog_turn_on:I = 0x7f11077a
 
-.field public static final zen_mode_enable_dialog_turn_on:I = 0x7f11077b
+.field public static final zen_mode_forever:I = 0x7f11077b
 
-.field public static final zen_mode_forever:I = 0x7f11077c
+.field public static final zen_mode_settings_summary_off:I = 0x7f11077c
 
-.field public static final zen_mode_settings_summary_off:I = 0x7f11077d
+.field public static final zen_mode_settings_turn_on_dialog_title:I = 0x7f11077d
 
-.field public static final zen_mode_settings_turn_on_dialog_title:I = 0x7f11077e
+.field public static final zen_no_interruptions:I = 0x7f11077e
 
-.field public static final zen_no_interruptions:I = 0x7f11077f
+.field public static final zen_priority_customize_button:I = 0x7f11077f
 
-.field public static final zen_priority_customize_button:I = 0x7f110780
+.field public static final zen_priority_introduction:I = 0x7f110780
 
-.field public static final zen_priority_introduction:I = 0x7f110781
+.field public static final zen_silence_introduction:I = 0x7f110781
 
-.field public static final zen_silence_introduction:I = 0x7f110782
-
-.field public static final zen_silence_introduction_voice:I = 0x7f110783
+.field public static final zen_silence_introduction_voice:I = 0x7f110782
 
 
 # direct methods

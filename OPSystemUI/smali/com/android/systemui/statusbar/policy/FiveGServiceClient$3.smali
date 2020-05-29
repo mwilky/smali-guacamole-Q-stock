@@ -101,7 +101,7 @@
 
     iget-object p0, p0, Lcom/android/systemui/statusbar/policy/FiveGServiceClient$3;->this$0:Lcom/android/systemui/statusbar/policy/FiveGServiceClient;
 
-    invoke-static {p0, p1}, Lcom/android/systemui/statusbar/policy/FiveGServiceClient;->access$1500(Lcom/android/systemui/statusbar/policy/FiveGServiceClient;I)V
+    invoke-static {p0, p1}, Lcom/android/systemui/statusbar/policy/FiveGServiceClient;->access$1600(Lcom/android/systemui/statusbar/policy/FiveGServiceClient;I)V
 
     :cond_0
     return-void
@@ -115,7 +115,7 @@
         }
     .end annotation
 
-    invoke-static {}, Lcom/android/systemui/statusbar/policy/FiveGServiceClient;->access$1300()Z
+    invoke-static {}, Lcom/android/systemui/statusbar/policy/FiveGServiceClient;->access$1400()Z
 
     move-result p0
 
@@ -169,7 +169,7 @@
         }
     .end annotation
 
-    invoke-static {}, Lcom/android/systemui/statusbar/policy/FiveGServiceClient;->access$1300()Z
+    invoke-static {}, Lcom/android/systemui/statusbar/policy/FiveGServiceClient;->access$1400()Z
 
     move-result p2
 
@@ -216,7 +216,7 @@
 
     move-result p3
 
-    invoke-static {p2, p3}, Lcom/android/systemui/statusbar/policy/FiveGServiceClient$FiveGServiceState;->access$302(Lcom/android/systemui/statusbar/policy/FiveGServiceClient$FiveGServiceState;I)I
+    invoke-static {p2, p3}, Lcom/android/systemui/statusbar/policy/FiveGServiceClient$FiveGServiceState;->access$402(Lcom/android/systemui/statusbar/policy/FiveGServiceClient$FiveGServiceState;I)I
 
     iget-object p3, p0, Lcom/android/systemui/statusbar/policy/FiveGServiceClient$3;->this$0:Lcom/android/systemui/statusbar/policy/FiveGServiceClient;
 
@@ -224,7 +224,7 @@
 
     iget-object p0, p0, Lcom/android/systemui/statusbar/policy/FiveGServiceClient$3;->this$0:Lcom/android/systemui/statusbar/policy/FiveGServiceClient;
 
-    invoke-static {p0, p1}, Lcom/android/systemui/statusbar/policy/FiveGServiceClient;->access$1500(Lcom/android/systemui/statusbar/policy/FiveGServiceClient;I)V
+    invoke-static {p0, p1}, Lcom/android/systemui/statusbar/policy/FiveGServiceClient;->access$1600(Lcom/android/systemui/statusbar/policy/FiveGServiceClient;I)V
 
     :cond_1
     return-void
@@ -238,7 +238,7 @@
         }
     .end annotation
 
-    invoke-static {}, Lcom/android/systemui/statusbar/policy/FiveGServiceClient;->access$1300()Z
+    invoke-static {}, Lcom/android/systemui/statusbar/policy/FiveGServiceClient;->access$1400()Z
 
     move-result v0
 
@@ -299,11 +299,11 @@
 
     move-result p3
 
-    invoke-static {p2, p3}, Lcom/android/systemui/statusbar/policy/FiveGServiceClient$FiveGServiceState;->access$1402(Lcom/android/systemui/statusbar/policy/FiveGServiceClient$FiveGServiceState;I)I
+    invoke-static {p2, p3}, Lcom/android/systemui/statusbar/policy/FiveGServiceClient$FiveGServiceState;->access$1502(Lcom/android/systemui/statusbar/policy/FiveGServiceClient$FiveGServiceState;I)I
 
     iget-object p0, p0, Lcom/android/systemui/statusbar/policy/FiveGServiceClient$3;->this$0:Lcom/android/systemui/statusbar/policy/FiveGServiceClient;
 
-    invoke-static {p0, p1}, Lcom/android/systemui/statusbar/policy/FiveGServiceClient;->access$1500(Lcom/android/systemui/statusbar/policy/FiveGServiceClient;I)V
+    invoke-static {p0, p1}, Lcom/android/systemui/statusbar/policy/FiveGServiceClient;->access$1600(Lcom/android/systemui/statusbar/policy/FiveGServiceClient;I)V
 
     :cond_1
     return-void
@@ -379,7 +379,7 @@
 
     iget-object p0, p0, Lcom/android/systemui/statusbar/policy/FiveGServiceClient$3;->this$0:Lcom/android/systemui/statusbar/policy/FiveGServiceClient;
 
-    invoke-static {p0, p1}, Lcom/android/systemui/statusbar/policy/FiveGServiceClient;->access$1500(Lcom/android/systemui/statusbar/policy/FiveGServiceClient;I)V
+    invoke-static {p0, p1}, Lcom/android/systemui/statusbar/policy/FiveGServiceClient;->access$1600(Lcom/android/systemui/statusbar/policy/FiveGServiceClient;I)V
 
     :cond_0
     return-void
@@ -393,7 +393,7 @@
         }
     .end annotation
 
-    invoke-static {}, Lcom/android/systemui/statusbar/policy/FiveGServiceClient;->access$1300()Z
+    invoke-static {}, Lcom/android/systemui/statusbar/policy/FiveGServiceClient;->access$1400()Z
 
     move-result v0
 
@@ -458,21 +458,25 @@
 
     move-result v0
 
-    invoke-static {p3, v0}, Lcom/android/systemui/statusbar/policy/FiveGServiceClient;->access$1700(Lcom/android/systemui/statusbar/policy/FiveGServiceClient;I)I
+    invoke-static {p3, v0}, Lcom/android/systemui/statusbar/policy/FiveGServiceClient;->access$1800(Lcom/android/systemui/statusbar/policy/FiveGServiceClient;I)I
 
     move-result p3
 
-    invoke-static {p2, p3}, Lcom/android/systemui/statusbar/policy/FiveGServiceClient$FiveGServiceState;->access$1602(Lcom/android/systemui/statusbar/policy/FiveGServiceClient$FiveGServiceState;I)I
+    invoke-static {p2, p3}, Lcom/android/systemui/statusbar/policy/FiveGServiceClient$FiveGServiceState;->access$1702(Lcom/android/systemui/statusbar/policy/FiveGServiceClient$FiveGServiceState;I)I
 
     invoke-virtual {p4}, Lorg/codeaurora/internal/SignalStrength;->getRsrp()I
 
     move-result p3
 
-    invoke-static {p2, p3}, Lcom/android/systemui/statusbar/policy/FiveGServiceClient$FiveGServiceState;->access$1802(Lcom/android/systemui/statusbar/policy/FiveGServiceClient$FiveGServiceState;I)I
+    invoke-static {p2, p3}, Lcom/android/systemui/statusbar/policy/FiveGServiceClient$FiveGServiceState;->access$302(Lcom/android/systemui/statusbar/policy/FiveGServiceClient$FiveGServiceState;I)I
+
+    iget-object p3, p0, Lcom/android/systemui/statusbar/policy/FiveGServiceClient$3;->this$0:Lcom/android/systemui/statusbar/policy/FiveGServiceClient;
+
+    invoke-virtual {p3, p2, p1}, Lcom/android/systemui/statusbar/policy/FiveGServiceClient;->update5GIcon(Lcom/android/systemui/statusbar/policy/FiveGServiceClient$FiveGServiceState;I)V
 
     iget-object p0, p0, Lcom/android/systemui/statusbar/policy/FiveGServiceClient$3;->this$0:Lcom/android/systemui/statusbar/policy/FiveGServiceClient;
 
-    invoke-static {p0, p1}, Lcom/android/systemui/statusbar/policy/FiveGServiceClient;->access$1500(Lcom/android/systemui/statusbar/policy/FiveGServiceClient;I)V
+    invoke-static {p0, p1}, Lcom/android/systemui/statusbar/policy/FiveGServiceClient;->access$1600(Lcom/android/systemui/statusbar/policy/FiveGServiceClient;I)V
 
     :cond_1
     return-void
@@ -486,7 +490,7 @@
         }
     .end annotation
 
-    invoke-static {}, Lcom/android/systemui/statusbar/policy/FiveGServiceClient;->access$1300()Z
+    invoke-static {}, Lcom/android/systemui/statusbar/policy/FiveGServiceClient;->access$1400()Z
 
     move-result p2
 
@@ -553,7 +557,7 @@
 
     iget-object p0, p0, Lcom/android/systemui/statusbar/policy/FiveGServiceClient$3;->this$0:Lcom/android/systemui/statusbar/policy/FiveGServiceClient;
 
-    invoke-static {p0, p1}, Lcom/android/systemui/statusbar/policy/FiveGServiceClient;->access$1500(Lcom/android/systemui/statusbar/policy/FiveGServiceClient;I)V
+    invoke-static {p0, p1}, Lcom/android/systemui/statusbar/policy/FiveGServiceClient;->access$1600(Lcom/android/systemui/statusbar/policy/FiveGServiceClient;I)V
 
     :cond_1
     return-void

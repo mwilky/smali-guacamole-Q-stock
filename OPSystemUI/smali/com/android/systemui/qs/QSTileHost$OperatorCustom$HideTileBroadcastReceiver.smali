@@ -102,7 +102,7 @@
 
     move-result v3
 
-    const-string v4, "sysui_qs_tiles"
+    const-string/jumbo v4, "sysui_qs_tiles"
 
     invoke-static {v2, v4, v3}, Landroid/provider/Settings$Secure;->getStringForUser(Landroid/content/ContentResolver;Ljava/lang/String;I)Ljava/lang/String;
 

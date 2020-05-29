@@ -56,6 +56,17 @@
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 2
 
+    iget-object p1, p0, Lcom/android/systemui/statusbar/policy/DateView$1;->this$0:Lcom/android/systemui/statusbar/policy/DateView;
+
+    invoke-virtual {p1}, Landroid/widget/TextView;->getHandler()Landroid/os/Handler;
+
+    move-result-object p1
+
+    if-nez p1, :cond_0
+
+    return-void
+
+    :cond_0
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
     move-result-object p1
@@ -70,7 +81,7 @@
 
     const-string v1, "android.intent.action.LOCALE_CHANGED"
 
-    if-nez p2, :cond_0
+    if-nez p2, :cond_1
 
     const-string p2, "android.intent.action.TIME_SET"
 
@@ -78,34 +89,34 @@
 
     move-result p2
 
-    if-nez p2, :cond_0
+    if-nez p2, :cond_1
 
     invoke-virtual {v0, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result p2
-
-    if-nez p2, :cond_0
-
-    invoke-virtual {v1, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result p2
-
-    if-eqz p2, :cond_3
-
-    :cond_0
-    invoke-virtual {v1, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result p2
 
     if-nez p2, :cond_1
 
+    invoke-virtual {v1, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result p2
+
+    if-eqz p2, :cond_4
+
+    :cond_1
+    invoke-virtual {v1, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result p2
+
+    if-nez p2, :cond_2
+
     invoke-virtual {v0, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result p1
 
-    if-eqz p1, :cond_2
+    if-eqz p1, :cond_3
 
-    :cond_1
+    :cond_2
     iget-object p1, p0, Lcom/android/systemui/statusbar/policy/DateView$1;->this$0:Lcom/android/systemui/statusbar/policy/DateView;
 
     invoke-virtual {p1}, Landroid/widget/TextView;->getHandler()Landroid/os/Handler;
@@ -118,7 +129,7 @@
 
     invoke-virtual {p1, p2}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 
-    :cond_2
+    :cond_3
     iget-object p1, p0, Lcom/android/systemui/statusbar/policy/DateView$1;->this$0:Lcom/android/systemui/statusbar/policy/DateView;
 
     invoke-virtual {p1}, Landroid/widget/TextView;->getHandler()Landroid/os/Handler;
@@ -131,6 +142,6 @@
 
     invoke-virtual {p1, p2}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 
-    :cond_3
+    :cond_4
     return-void
 .end method

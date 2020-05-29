@@ -324,7 +324,7 @@
     <string name="battery_saver_notification_title">תכונת החיסכון בסוללה פועלת</string>
     <string name="battery_saver_start_action">הפעלת תכונת החיסכון בסוללה</string>
     <string name="battery_usage_extanded">על סמך השימוש שלך, חוסך הסוללה יכול להאריך את משך השימוש ב- %s בערך</string>
-    <string name="battery_usage_remaining">על סמך השימוש שלך, הסוללה תספיק למשך %s. פוגע בביצועים ובנתוני רקע.</string>
+    <string name="battery_usage_remaining_time">%s נותרו</string>
     <string name="biometric_dialog_confirm">אישור</string>
     <string name="biometric_dialog_empty_space_description">אזור ריק, יש להקיש עליו כדי לבטל את האימות</string>
     <string name="biometric_dialog_face_icon_description_authenticated">זיהוי הפנים בוצע</string>

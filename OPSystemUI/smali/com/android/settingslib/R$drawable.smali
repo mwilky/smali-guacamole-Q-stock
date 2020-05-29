@@ -28,14 +28,14 @@
 
 .field public static final ic_settings_bluetooth:I = 0x7f08075c
 
-.field public static final op_ic_account_circle:I = 0x7f0808aa
+.field public static final op_ic_account_circle:I = 0x7f080899
 
-.field public static final op_ic_wifi_signal_0:I = 0x7f0808d6
+.field public static final op_ic_wifi_signal_0:I = 0x7f0808ca
 
-.field public static final op_ic_wifi_signal_1:I = 0x7f0808d7
+.field public static final op_ic_wifi_signal_1:I = 0x7f0808cb
 
-.field public static final op_ic_wifi_signal_2:I = 0x7f0808d8
+.field public static final op_ic_wifi_signal_2:I = 0x7f0808cc
 
-.field public static final op_ic_wifi_signal_3:I = 0x7f0808d9
+.field public static final op_ic_wifi_signal_3:I = 0x7f0808cd
 
-.field public static final op_ic_wifi_signal_4:I = 0x7f0808da
+.field public static final op_ic_wifi_signal_4:I = 0x7f0808ce

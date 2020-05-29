@@ -17,7 +17,7 @@
     <string name="allow_notification">Atļaut paziņojumus</string>
     <string name="battery_low_warning">Atlikuši %s, aktivizējiet enerģijas taupīšanas režīmu, lai paildzinātu lietošanas laiku</string>
     <string name="battery_usage_extanded">Enerģijas taupīšanas režīms paildzinās lietošanas laiku par aptuveni %s, pamatojoties uz jūsu lietojumu</string>
-    <string name="battery_usage_remaining">Ņemot vērā jūsu lietojumu, iekārta vēl darbosies %s. Samaziniet veiktspēju un fona datus.</string>
+    <string name="battery_usage_remaining_time">%s atlicis</string>
     <string name="clear_process_done">Viss skaidrs!</string>
     <string name="clear_process_warning_checkbox">Sapratu! Vairāk nerādīt šo paziņojumu</string>
     <string name="clear_process_warning_message">Tā rezultātā tiks notīrīti visi fona procesi, kas var radīt neparedzamas sekas. Dažas lietotnes var pārtraukt darboties, un tās var būt nepieciešams restartēt. Vai vēlaties turpināt?</string>
@@ -72,7 +72,7 @@
     <string name="oneplus_threekey_navigation_disturb_changed">Statuss Netraucēt ir izmainīts!</string>
     <string name="oneplus_threekey_navigation_next">TĀLĀK</string>
     <string name="oneplus_threekey_navigation_silence">Pilnīgs klusums</string>
-    <string name="oneplus_threekey_navigation_slider_has_changed">Brīdinājuma slīdnis ir izmainīts!</string>
+    <string name="oneplus_threekey_navigation_slider_has_changed">Alert Slider ir izmainīts!</string>
     <string name="oneplus_threekey_navigation_sound">Atļaut visas skaņas</string>
     <string name="oneplus_threekey_navigation_turned_on_here">To var aktivizēt, izmantojot pārslēgu augstāk</string>
     <string name="oneplus_threekey_navigation_vibration">Tikai vibrēt</string>

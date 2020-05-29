@@ -324,7 +324,7 @@
     <string name="battery_saver_notification_title">Η Εξοικονόμηση μπαταρίας είναι ενεργή</string>
     <string name="battery_saver_start_action">Ενεργοποίηση Εξοικονόμησης μπαταρίας</string>
     <string name="battery_usage_extanded">Με το Πρόγραμμα εξοικονόμησης ισχύος της μπαταρίας η συσκευή σας θα παραμείνει σε λειτουργία επί περίπου %s με βάση τη χρήση σας.</string>
-    <string name="battery_usage_remaining">Η εναπομένουσα ισχύς λογικά θα σας καλύψει περίπου %s με βάση τη χρήση σας. Μειώνονται οι επιδόσεις και τα δεδομένα στο παρασκήνιο.</string>
+    <string name="battery_usage_remaining_time">%s ακόμη</string>
     <string name="biometric_dialog_confirm">Επιβεβαίωση</string>
     <string name="biometric_dialog_empty_space_description">Κενή περιοχή, πατήστε για ακύρωση ελέγχου ταυτότητας</string>
     <string name="biometric_dialog_face_icon_description_authenticated">Έγινε έλεγχος ταυτότητας προσώπου</string>
@@ -1030,7 +1030,7 @@
     <string name="music_controls_no_title">Χωρίς τίτλο</string>
     <string name="nav_bar">Γραμμή πλοήγησης</string>
     <string name="nav_bar_default">(προεπιλογή)</string>
-    <string name="nav_bar_guide_positive">ΤΟ ΚΑΤΑΛΑΒΑ</string>
+    <string name="nav_bar_guide_positive">ΚΑΤΑΛΑΒΑ.</string>
     <string name="nav_bar_guide_title">Σύρετε το δάχτυλό σας προς τα επάνω από το κάτω μέρος της οθόνης για να εμφανιστεί η γραμμή πλοήγησης. Για να διακόψετε την απόκρυψη της πλοήγησης, πατήστε εδώ.</string>
     <string name="nav_bar_layout">Διάταξη</string>
     <string name="no_application">Καμία</string>

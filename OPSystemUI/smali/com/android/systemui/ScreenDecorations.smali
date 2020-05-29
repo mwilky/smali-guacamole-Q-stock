@@ -1223,7 +1223,7 @@
 
     iget-object v9, p0, Lcom/android/systemui/ScreenDecorations;->mHandler:Landroid/os/Handler;
 
-    const-string v10, "temp_disable_inversion"
+    const-string/jumbo v10, "temp_disable_inversion"
 
     const/4 v11, 0x1
 
@@ -1340,7 +1340,7 @@
 
     const/4 v1, 0x2
 
-    const-string v2, "sysui_rounded_content_padding"
+    const-string/jumbo v2, "sysui_rounded_content_padding"
 
     invoke-static {v0, v2, p1, v1}, Lcom/android/systemui/tuner/TunablePadding;->addTunablePadding(Landroid/view/View;Ljava/lang/String;II)Lcom/android/systemui/tuner/TunablePadding;
 
@@ -2083,7 +2083,7 @@
 
     const/4 v0, 0x0
 
-    const-string v1, "sysui_rounded_size"
+    const-string/jumbo v1, "sysui_rounded_size"
 
     invoke-virtual {p0, v1, v0}, Lcom/android/systemui/ScreenDecorations;->onTuningChanged(Ljava/lang/String;Ljava/lang/String;)V
 
@@ -2953,7 +2953,7 @@
     return-void
 
     :cond_0
-    const-string p0, "sysui_rounded_size"
+    const-string/jumbo p0, "sysui_rounded_size"
 
     invoke-virtual {p0, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -2987,7 +2987,7 @@
 
     check-cast v0, Lcom/android/systemui/tuner/TunerService;
 
-    const-string v1, "sysui_rounded_size"
+    const-string/jumbo v1, "sysui_rounded_size"
 
     filled-new-array {v1}, [Ljava/lang/String;
 

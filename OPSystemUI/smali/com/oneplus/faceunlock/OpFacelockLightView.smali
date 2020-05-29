@@ -295,7 +295,27 @@
 .end method
 
 .method public refreshTime()V
-    .locals 2
+    .locals 3
+
+    invoke-static {}, Ljava/util/TimeZone;->getDefault()Ljava/util/TimeZone;
+
+    move-result-object v0
+
+    iget-object v1, p0, Lcom/oneplus/faceunlock/OpFacelockLightView;->mClockView:Lcom/oneplus/keyguard/clock/OpTextClock;
+
+    invoke-virtual {v0}, Ljava/util/TimeZone;->getID()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, Landroid/widget/TextClock;->setTimeZone(Ljava/lang/String;)V
+
+    iget-object v1, p0, Lcom/oneplus/faceunlock/OpFacelockLightView;->mDateView:Lcom/oneplus/keyguard/clock/OpTextClock;
+
+    invoke-virtual {v0}, Ljava/util/TimeZone;->getID()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-virtual {v1, v0}, Landroid/widget/TextClock;->setTimeZone(Ljava/lang/String;)V
 
     iget-object v0, p0, Lcom/oneplus/faceunlock/OpFacelockLightView;->mDateView:Lcom/oneplus/keyguard/clock/OpTextClock;
 

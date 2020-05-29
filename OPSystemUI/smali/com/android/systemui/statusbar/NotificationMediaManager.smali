@@ -220,7 +220,7 @@
 
     invoke-virtual {p4, p1}, Lcom/android/systemui/statusbar/notification/NotificationEntryManager;->addNotificationEntryListener(Lcom/android/systemui/statusbar/notification/NotificationEntryListener;)V
 
-    const-string p1, "systemui"
+    const-string/jumbo p1, "systemui"
 
     const-string p2, "compact_media_notification_seekbar_enabled"
 

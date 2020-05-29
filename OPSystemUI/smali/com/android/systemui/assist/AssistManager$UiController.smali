@@ -20,3 +20,6 @@
 
 .method public abstract onInvocationProgress(IF)V
 .end method
+
+.method public abstract onOverlayChanged()V
+.end method

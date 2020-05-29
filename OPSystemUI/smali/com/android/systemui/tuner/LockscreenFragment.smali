@@ -266,15 +266,15 @@
 
     invoke-virtual {p0, p1}, Landroidx/preference/PreferenceFragment;->addPreferencesFromResource(I)V
 
-    const-string p1, "sysui_keyguard_left"
+    const-string/jumbo p1, "sysui_keyguard_left"
 
-    const-string p2, "sysui_keyguard_left_unlock"
+    const-string/jumbo p2, "sysui_keyguard_left_unlock"
 
     invoke-direct {p0, p1, p2}, Lcom/android/systemui/tuner/LockscreenFragment;->setupGroup(Ljava/lang/String;Ljava/lang/String;)V
 
-    const-string p1, "sysui_keyguard_right"
+    const-string/jumbo p1, "sysui_keyguard_right"
 
-    const-string p2, "sysui_keyguard_right_unlock"
+    const-string/jumbo p2, "sysui_keyguard_right_unlock"
 
     invoke-direct {p0, p1, p2}, Lcom/android/systemui/tuner/LockscreenFragment;->setupGroup(Ljava/lang/String;Ljava/lang/String;)V
 

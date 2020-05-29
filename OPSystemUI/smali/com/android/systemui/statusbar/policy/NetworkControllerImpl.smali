@@ -1201,7 +1201,9 @@
     :goto_1
     if-lez v4, :cond_9
 
-    invoke-static {}, Lcom/oneplus/util/OpUtils;->isSupportShowVoLTE()Z
+    iget-object v4, p0, Lcom/android/systemui/statusbar/policy/NetworkControllerImpl;->mContext:Landroid/content/Context;
+
+    invoke-static {v4}, Lcom/oneplus/util/OpUtils;->isSupportShowVoLTE(Landroid/content/Context;)Z
 
     move-result v4
 
@@ -4338,6 +4340,14 @@
     check-cast v4, Lcom/android/systemui/statusbar/policy/MobileSignalController$MobileState;
 
     iput-boolean v1, v4, Lcom/android/systemui/statusbar/policy/SignalController$State;->enabled:Z
+
+    invoke-virtual {v13}, Lcom/android/systemui/statusbar/policy/SignalController;->getState()Lcom/android/systemui/statusbar/policy/SignalController$State;
+
+    move-result-object v4
+
+    check-cast v4, Lcom/android/systemui/statusbar/policy/MobileSignalController$MobileState;
+
+    iput-boolean v1, v4, Lcom/android/systemui/statusbar/policy/MobileSignalController$MobileState;->isDemoMode:Z
 
     invoke-virtual {v13}, Lcom/android/systemui/statusbar/policy/SignalController;->notifyListeners()V
 

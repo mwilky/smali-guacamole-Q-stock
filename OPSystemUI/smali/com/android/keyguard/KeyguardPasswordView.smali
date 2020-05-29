@@ -21,6 +21,8 @@
 
 .field private mFingerprintIcon:Landroid/view/View;
 
+.field private mHasWindowFocus:Z
+
 .field private mHideNavigationBar:Z
 
 .field mImm:Landroid/view/inputmethod/InputMethodManager;
@@ -28,6 +30,10 @@
 .field private mIsResume:Z
 
 .field private mLinearOutSlowInInterpolator:Landroid/view/animation/Interpolator;
+
+.field private mOriginFingerprintIconHeight:I
+
+.field private mOriginPasswordEntryHeight:I
 
 .field private mOverviewProxyService:Lcom/android/systemui/recents/OverviewProxyService;
 
@@ -139,7 +145,47 @@
     return-object p0
 .end method
 
-.method static synthetic access$100(Lcom/android/keyguard/KeyguardPasswordView;)Z
+.method static synthetic access$100(Lcom/android/keyguard/KeyguardPasswordView;)I
+    .locals 0
+
+    iget p0, p0, Lcom/android/keyguard/KeyguardPasswordView;->mOriginPasswordEntryHeight:I
+
+    return p0
+.end method
+
+.method static synthetic access$102(Lcom/android/keyguard/KeyguardPasswordView;I)I
+    .locals 0
+
+    iput p1, p0, Lcom/android/keyguard/KeyguardPasswordView;->mOriginPasswordEntryHeight:I
+
+    return p1
+.end method
+
+.method static synthetic access$200(Lcom/android/keyguard/KeyguardPasswordView;)Landroid/view/View;
+    .locals 0
+
+    iget-object p0, p0, Lcom/android/keyguard/KeyguardPasswordView;->mFingerprintIcon:Landroid/view/View;
+
+    return-object p0
+.end method
+
+.method static synthetic access$300(Lcom/android/keyguard/KeyguardPasswordView;)I
+    .locals 0
+
+    iget p0, p0, Lcom/android/keyguard/KeyguardPasswordView;->mOriginFingerprintIconHeight:I
+
+    return p0
+.end method
+
+.method static synthetic access$302(Lcom/android/keyguard/KeyguardPasswordView;I)I
+    .locals 0
+
+    iput p1, p0, Lcom/android/keyguard/KeyguardPasswordView;->mOriginFingerprintIconHeight:I
+
+    return p1
+.end method
+
+.method static synthetic access$400(Lcom/android/keyguard/KeyguardPasswordView;)Z
     .locals 0
 
     iget-boolean p0, p0, Lcom/android/keyguard/KeyguardPasswordView;->mShowImeAtScreenOn:Z
@@ -147,7 +193,7 @@
     return p0
 .end method
 
-.method static synthetic access$200(Lcom/android/keyguard/KeyguardPasswordView;)Z
+.method static synthetic access$500(Lcom/android/keyguard/KeyguardPasswordView;)Z
     .locals 0
 
     invoke-direct {p0}, Lcom/android/keyguard/KeyguardPasswordView;->isNeedToPendingIME()Z
@@ -157,7 +203,7 @@
     return p0
 .end method
 
-.method static synthetic access$300(Lcom/android/keyguard/KeyguardPasswordView;)V
+.method static synthetic access$600(Lcom/android/keyguard/KeyguardPasswordView;)V
     .locals 0
 
     invoke-direct {p0}, Lcom/android/keyguard/KeyguardPasswordView;->requestShowIME()V
@@ -165,7 +211,15 @@
     return-void
 .end method
 
-.method static synthetic access$400(Lcom/android/keyguard/KeyguardPasswordView;)V
+.method static synthetic access$700(Lcom/android/keyguard/KeyguardPasswordView;)Z
+    .locals 0
+
+    iget-boolean p0, p0, Lcom/android/keyguard/KeyguardPasswordView;->mHasWindowFocus:Z
+
+    return p0
+.end method
+
+.method static synthetic access$800(Lcom/android/keyguard/KeyguardPasswordView;)V
     .locals 0
 
     invoke-direct {p0}, Lcom/android/keyguard/KeyguardPasswordView;->updateSwitchImeButton()V
@@ -971,9 +1025,9 @@
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardPasswordView;->mPasswordEntry:Landroid/widget/TextView;
 
-    new-instance v1, Lcom/android/keyguard/KeyguardPasswordView$2;
+    new-instance v1, Lcom/android/keyguard/KeyguardPasswordView$3;
 
-    invoke-direct {v1, p0}, Lcom/android/keyguard/KeyguardPasswordView$2;-><init>(Lcom/android/keyguard/KeyguardPasswordView;)V
+    invoke-direct {v1, p0}, Lcom/android/keyguard/KeyguardPasswordView$3;-><init>(Lcom/android/keyguard/KeyguardPasswordView;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -993,9 +1047,9 @@
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardPasswordView;->mSwitchImeButton:Landroid/view/View;
 
-    new-instance v2, Lcom/android/keyguard/KeyguardPasswordView$3;
+    new-instance v2, Lcom/android/keyguard/KeyguardPasswordView$4;
 
-    invoke-direct {v2, p0}, Lcom/android/keyguard/KeyguardPasswordView$3;-><init>(Lcom/android/keyguard/KeyguardPasswordView;)V
+    invoke-direct {v2, p0}, Lcom/android/keyguard/KeyguardPasswordView$4;-><init>(Lcom/android/keyguard/KeyguardPasswordView;)V
 
     invoke-virtual {v0, v2}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -1016,9 +1070,9 @@
     :cond_0
     invoke-direct {p0}, Lcom/android/keyguard/KeyguardPasswordView;->updateSwitchImeButton()V
 
-    new-instance v0, Lcom/android/keyguard/KeyguardPasswordView$4;
+    new-instance v0, Lcom/android/keyguard/KeyguardPasswordView$5;
 
-    invoke-direct {v0, p0}, Lcom/android/keyguard/KeyguardPasswordView$4;-><init>(Lcom/android/keyguard/KeyguardPasswordView;)V
+    invoke-direct {v0, p0}, Lcom/android/keyguard/KeyguardPasswordView$5;-><init>(Lcom/android/keyguard/KeyguardPasswordView;)V
 
     const-wide/16 v2, 0x1f4
 
@@ -1141,6 +1195,21 @@
 
     invoke-virtual {p0, v0}, Landroid/widget/LinearLayout;->post(Ljava/lang/Runnable;)Z
 
+    iget-object p1, p0, Lcom/android/keyguard/KeyguardPasswordView;->mPasswordEntry:Landroid/widget/TextView;
+
+    if-eqz p1, :cond_0
+
+    iget-object v0, p0, Lcom/android/keyguard/KeyguardPasswordView;->mFingerprintIcon:Landroid/view/View;
+
+    if-eqz v0, :cond_0
+
+    new-instance v0, Lcom/android/keyguard/KeyguardPasswordView$2;
+
+    invoke-direct {v0, p0}, Lcom/android/keyguard/KeyguardPasswordView$2;-><init>(Lcom/android/keyguard/KeyguardPasswordView;)V
+
+    invoke-virtual {p1, v0}, Landroid/widget/TextView;->addOnLayoutChangeListener(Landroid/view/View$OnLayoutChangeListener;)V
+
+    :cond_0
     return-void
 .end method
 
@@ -1224,6 +1293,8 @@
     const-string v1, "KeyguardPasswordView"
 
     invoke-static {v1, v0}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
+
+    iput-boolean p1, p0, Lcom/android/keyguard/KeyguardPasswordView;->mHasWindowFocus:Z
 
     invoke-direct {p0}, Lcom/android/keyguard/KeyguardPasswordView;->isNeedToPendingIME()Z
 
@@ -1443,6 +1514,29 @@
 
     invoke-virtual {p0, p1}, Lcom/android/internal/widget/TextViewInputDisabler;->setInputEnabled(Z)V
 
+    return-void
+.end method
+
+.method public shouldHideIme()V
+    .locals 2
+
+    invoke-virtual {p0}, Landroid/widget/LinearLayout;->isShown()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    iget-object v0, p0, Lcom/android/keyguard/KeyguardPasswordView;->mImm:Landroid/view/inputmethod/InputMethodManager;
+
+    invoke-virtual {p0}, Landroid/widget/LinearLayout;->getWindowToken()Landroid/os/IBinder;
+
+    move-result-object p0
+
+    const/4 v1, 0x0
+
+    invoke-virtual {v0, p0, v1}, Landroid/view/inputmethod/InputMethodManager;->hideSoftInputFromWindow(Landroid/os/IBinder;I)Z
+
+    :cond_0
     return-void
 .end method
 

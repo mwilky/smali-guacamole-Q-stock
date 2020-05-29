@@ -1101,12 +1101,6 @@
 
     invoke-direct {p0}, Lcom/android/systemui/qs/QSFragment;->updateQsState()V
 
-    iget-boolean p1, p0, Lcom/android/systemui/qs/QSFragment;->mQsExpanded:Z
-
-    iget-boolean v0, p0, Lcom/android/systemui/qs/QSFragment;->mKeyguardShowing:Z
-
-    invoke-super {p0, p1, v0}, Lcom/oneplus/systemui/qs/OpQSFragment;->setExpanded(ZZ)V
-
     return-void
 .end method
 
@@ -1182,7 +1176,7 @@
 .end method
 
 .method public setKeyguardShowing(Z)V
-    .locals 2
+    .locals 1
 
     iput-boolean p1, p0, Lcom/android/systemui/qs/QSFragment;->mKeyguardShowing:Z
 
@@ -1197,12 +1191,6 @@
     invoke-virtual {v0, p1}, Lcom/android/systemui/qs/QSAnimator;->setOnKeyguard(Z)V
 
     :cond_0
-    iget-boolean v0, p0, Lcom/android/systemui/qs/QSFragment;->mQsExpanded:Z
-
-    iget-boolean v1, p0, Lcom/android/systemui/qs/QSFragment;->mKeyguardShowing:Z
-
-    invoke-super {p0, v0, v1}, Lcom/oneplus/systemui/qs/OpQSFragment;->setExpanded(ZZ)V
-
     iget-object v0, p0, Lcom/android/systemui/qs/QSFragment;->mFooter:Lcom/android/systemui/qs/QSFooter;
 
     invoke-interface {v0, p1}, Lcom/android/systemui/qs/QSFooter;->setKeyguardShowing(Z)V

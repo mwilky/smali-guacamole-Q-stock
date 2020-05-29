@@ -566,7 +566,7 @@
 
     const-string v12, "content"
 
-    const-string v13, "text/plain"
+    const-string/jumbo v13, "text/plain"
 
     filled-new-array {v13}, [Ljava/lang/String;
 

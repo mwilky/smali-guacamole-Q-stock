@@ -129,11 +129,11 @@
 
     check-cast p1, Lcom/android/systemui/tuner/TunerService;
 
-    const-string p2, "sysui_volume_down_silent"
+    const-string/jumbo p2, "sysui_volume_down_silent"
 
-    const-string v0, "sysui_volume_up_silent"
+    const-string/jumbo v0, "sysui_volume_up_silent"
 
-    const-string v1, "sysui_do_not_disturb"
+    const-string/jumbo v1, "sysui_do_not_disturb"
 
     filled-new-array {p2, v0, v1}, [Ljava/lang/String;
 
@@ -347,7 +347,7 @@
 
     iget-boolean v0, v0, Landroid/media/VolumePolicy;->doNotDisturbWhenSilent:Z
 
-    const-string v3, "sysui_volume_down_silent"
+    const-string/jumbo v3, "sysui_volume_down_silent"
 
     invoke-virtual {v3, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -364,7 +364,7 @@
     goto :goto_0
 
     :cond_0
-    const-string v3, "sysui_volume_up_silent"
+    const-string/jumbo v3, "sysui_volume_up_silent"
 
     invoke-virtual {v3, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -379,7 +379,7 @@
     goto :goto_0
 
     :cond_1
-    const-string v3, "sysui_do_not_disturb"
+    const-string/jumbo v3, "sysui_do_not_disturb"
 
     invoke-virtual {v3, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 

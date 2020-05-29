@@ -122,7 +122,7 @@
 
     if-eqz v4, :cond_4
 
-    invoke-static {}, Lcom/android/systemui/statusbar/phone/StatusIconContainer;->access$100()Lcom/android/systemui/statusbar/notification/stack/AnimationProperties;
+    invoke-static {}, Lcom/android/systemui/statusbar/phone/StatusIconContainer;->access$400()Lcom/android/systemui/statusbar/notification/stack/AnimationProperties;
 
     move-result-object v2
 
@@ -132,7 +132,7 @@
     :goto_1
     invoke-super {p0, p1}, Lcom/android/systemui/statusbar/notification/stack/ViewState;->applyToView(Landroid/view/View;)V
 
-    invoke-static {}, Lcom/android/systemui/statusbar/phone/StatusIconContainer;->access$000()Lcom/android/systemui/statusbar/notification/stack/AnimationProperties;
+    invoke-static {}, Lcom/android/systemui/statusbar/phone/StatusIconContainer;->access$300()Lcom/android/systemui/statusbar/notification/stack/AnimationProperties;
 
     move-result-object v2
 

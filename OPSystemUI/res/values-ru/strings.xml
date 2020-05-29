@@ -324,7 +324,7 @@
     <string name="battery_saver_notification_title">Режим энергосбережения включен</string>
     <string name="battery_saver_start_action">Включить режим энергосбережения</string>
     <string name="battery_usage_extanded">Экономия батареи должна увеличить время использования примерно на %s, основываясь на сценарии использования</string>
-    <string name="battery_usage_remaining">Основываясь на сценарии использования телефона, заряда батареи должно хватить примерно на %s. Снижена производительность и использование данных в фоновом режиме.</string>
+    <string name="battery_usage_remaining_time">Осталось %s</string>
     <string name="biometric_dialog_confirm">Подтвердить</string>
     <string name="biometric_dialog_empty_space_description">Пустая область. Нажмите на нее, чтобы отменить аутентификацию.</string>
     <string name="biometric_dialog_face_icon_description_authenticated">Лицо распознано</string>
@@ -608,7 +608,7 @@
     <string name="face_unlock_timeout">Слишком много неудачных попыток. Попробуйте позже.</string>
     <string name="failed_to_open_app_settings_toast">Не удалось открыть настройки приложения \"%1$s\"</string>
     <string name="fingerprint_dialog_touch_sensor">Прикоснитесь к сканеру отпечатков пальцев.</string>
-    <string name="fingerprint_not_found">Попробуйте снова</string>
+    <string name="fingerprint_not_found">Попробуйте еще раз</string>
     <string name="force_allow_on_external">Разрешить сохранение на внешние накопители</string>
     <string name="force_allow_on_external_summary">Разрешить сохранение приложений на внешних накопителях (независимо от значений в манифесте)</string>
     <string name="force_msaa">Включить 4x MSAA</string>
@@ -1677,7 +1677,7 @@
     <string name="volume_dialog_title">%s: регулировка громкости</string>
     <string name="volume_dnd_silent">Кнопки регулировки громкости</string>
     <string name="volume_footer_no_disturb">Не беспокоить</string>
-    <string name="volume_footer_ring">Звонок</string>
+    <string name="volume_footer_ring">Со звуком</string>
     <string name="volume_footer_slient">Без звука</string>
     <string name="volume_footer_vibrate">Бесшумный (вибрация)</string>
     <string name="volume_odi_captions_content_description">Наложение субтитров</string>

@@ -105,7 +105,7 @@
 .method private static getStructure(Landroidx/slice/Slice;Ljava/lang/StringBuilder;)V
     .locals 1
 
-    const-string v0, "s{"
+    const-string/jumbo v0, "s{"
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -203,7 +203,7 @@
     goto :goto_1
 
     :sswitch_3
-    const-string v1, "text"
+    const-string/jumbo v1, "text"
 
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -335,8 +335,6 @@
 
     :goto_2
     return-void
-
-    nop
 
     :sswitch_data_0
     .sparse-switch

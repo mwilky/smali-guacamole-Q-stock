@@ -4,6 +4,8 @@
 
 
 # static fields
+.field public static final OPAlertDialogStyle:I = 0x7f040000
+
 .field public static final OPEditTextStyle:I = 0x7f040001
 
 .field public static final OPFloatingActionButtonStyle:I = 0x7f040002

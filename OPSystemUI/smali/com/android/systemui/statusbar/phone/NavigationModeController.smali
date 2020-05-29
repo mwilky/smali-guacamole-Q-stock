@@ -789,7 +789,7 @@
 
     move-result-object v0
 
-    const-string v3, "switched_from_gesture_nav"
+    const-string/jumbo v3, "switched_from_gesture_nav"
 
     invoke-interface {v0, v3, v2}, Landroid/content/SharedPreferences;->getBoolean(Ljava/lang/String;Z)Z
 
@@ -990,7 +990,7 @@
 
     move-result-object p0
 
-    const-string p3, "switched_from_gesture_nav"
+    const-string/jumbo p3, "switched_from_gesture_nav"
 
     invoke-interface {p0, p3, p1}, Landroid/content/SharedPreferences;->getBoolean(Ljava/lang/String;Z)Z
 

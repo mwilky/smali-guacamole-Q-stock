@@ -324,7 +324,7 @@
     <string name="battery_saver_notification_title">Batterijbesparing aan</string>
     <string name="battery_saver_start_action">Batterijbesparing inschakelen</string>
     <string name="battery_usage_extanded">Batterijbesparing kan het gebruik met ongeveer %s verlengen op basis van uw gebruik</string>
-    <string name="battery_usage_remaining">De batterij zou nog ongeveer %s moeten meegaan op basis van uw gebruik. Batterijbesparing vermindert prestaties en gegevensgebruik op de achtergrond.</string>
+    <string name="battery_usage_remaining_time">%s resterend</string>
     <string name="biometric_dialog_confirm">Bevestigen</string>
     <string name="biometric_dialog_empty_space_description">Leeg gebied. Tik om de verificatie te annuleren.</string>
     <string name="biometric_dialog_face_icon_description_authenticated">Gezicht geverifieerd</string>
@@ -1104,7 +1104,7 @@ Je bent ook verbonden met een VPN, waarmee je netwerkactiviteit kan worden gecon
     <string name="op_earphone_device">TIK OM TE KOPPELEN</string>
     <string name="op_earphone_title">OnePlus Bullets Wireless</string>
     <string name="op_emergency_indicator_hint_text">Veeg omlaag voor hulpdiensten</string>
-    <string name="op_keyguard_indication_face_unlocked">Blijft ontgrendeld door Gezichtsontgrendeling</string>
+    <string name="op_keyguard_indication_face_unlocked">Blijft ontgrendeld door gezichtsontgrendeling</string>
     <string name="op_keyguard_indication_trust_unlocked">Blijft ontgrendeld door Smart Lock</string>
     <string name="op_kg_prompt_reason_timeout_password">Voor veiligheid: druk op aan-uitknop en veeg omhoog om wachtwoord te gebruiken</string>
     <string name="op_kg_prompt_reason_timeout_pattern">Voor veiligheid: druk op de aan-uitknop en veeg omhoog om patroon te gebruiken</string>

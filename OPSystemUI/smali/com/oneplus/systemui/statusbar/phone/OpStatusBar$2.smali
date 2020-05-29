@@ -32,7 +32,7 @@
 
 # virtual methods
 .method public onChange(Z)V
-    .locals 4
+    .locals 5
 
     iget-object p1, p0, Lcom/oneplus/systemui/statusbar/phone/OpStatusBar$2;->this$0:Lcom/oneplus/systemui/statusbar/phone/OpStatusBar;
 
@@ -102,32 +102,85 @@
 
     if-eqz p1, :cond_0
 
-    move v0, v1
+    move p1, v1
+
+    goto :goto_0
 
     :cond_0
-    sget-boolean p1, Lcom/android/systemui/statusbar/phone/EdgeBackGestureHandler;->sSideGestureEnabled:Z
+    move p1, v0
 
-    if-eq p1, v0, :cond_1
+    :goto_0
+    sget-boolean v3, Lcom/android/systemui/statusbar/phone/EdgeBackGestureHandler;->sSideGestureEnabled:Z
 
-    new-instance p1, Ljava/lang/StringBuilder;
+    if-eq v3, p1, :cond_1
 
-    invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
+    new-instance v3, Ljava/lang/StringBuilder;
 
-    const-string v1, "gesture side to "
+    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
 
-    invoke-virtual {p1, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string v4, "gesture side to "
 
-    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v3, p1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-static {v2, v3}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    sput-boolean p1, Lcom/android/systemui/statusbar/phone/EdgeBackGestureHandler;->sSideGestureEnabled:Z
+
+    :cond_1
+    const-class p1, Lcom/android/systemui/recents/OverviewProxyService;
+
+    invoke-static {p1}, Lcom/android/systemui/Dependency;->get(Ljava/lang/Class;)Ljava/lang/Object;
 
     move-result-object p1
 
-    invoke-static {v2, p1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    check-cast p1, Lcom/android/systemui/recents/OverviewProxyService;
 
-    sput-boolean v0, Lcom/android/systemui/statusbar/phone/EdgeBackGestureHandler;->sSideGestureEnabled:Z
+    invoke-virtual {p1}, Lcom/android/systemui/recents/OverviewProxyService;->getNavBarMode()I
 
-    :cond_1
+    move-result p1
+
+    iget-object v2, p0, Lcom/oneplus/systemui/statusbar/phone/OpStatusBar$2;->this$0:Lcom/oneplus/systemui/statusbar/phone/OpStatusBar;
+
+    invoke-static {v2}, Lcom/oneplus/systemui/statusbar/phone/OpStatusBar;->access$200(Lcom/oneplus/systemui/statusbar/phone/OpStatusBar;)I
+
+    move-result v2
+
+    if-eq v2, v1, :cond_2
+
+    sget-boolean v2, Lcom/android/systemui/statusbar/phone/EdgeBackGestureHandler;->sSideGestureEnabled:Z
+
+    if-nez v2, :cond_3
+
+    :cond_2
+    invoke-static {p1}, Lcom/android/systemui/shared/system/QuickStepContract;->isGesturalMode(I)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_3
+
+    move v0, v1
+
+    :cond_3
+    iget-object p1, p0, Lcom/oneplus/systemui/statusbar/phone/OpStatusBar$2;->this$0:Lcom/oneplus/systemui/statusbar/phone/OpStatusBar;
+
+    iget-object p1, p1, Lcom/android/systemui/SystemUI;->mContext:Landroid/content/Context;
+
+    invoke-virtual {p1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object p1
+
+    xor-int/2addr v0, v1
+
+    const-string v1, "buttons_show_on_screen_navkeys"
+
+    invoke-static {p1, v1, v0}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
+
     iget-object p0, p0, Lcom/oneplus/systemui/statusbar/phone/OpStatusBar$2;->this$0:Lcom/oneplus/systemui/statusbar/phone/OpStatusBar;
 
     invoke-virtual {p0}, Lcom/oneplus/systemui/statusbar/phone/OpStatusBar;->checkNavigationBarState()V

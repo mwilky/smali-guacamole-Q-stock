@@ -1431,7 +1431,7 @@
 
     iget-object v0, p0, Lcom/android/systemui/qs/QuickStatusBarHeader;->mBatteryRemainingIcon:Lcom/android/systemui/BatteryMeterView;
 
-    invoke-virtual {v0, v1}, Lcom/android/systemui/BatteryMeterView;->setViewPositionType(I)V
+    invoke-virtual {v0, v1}, Lcom/oneplus/systemui/OpBatteryMeterView;->setViewPositionType(I)V
 
     iget-object v0, p0, Lcom/android/systemui/qs/QuickStatusBarHeader;->mBatteryRemainingIcon:Lcom/android/systemui/BatteryMeterView;
 
@@ -1623,12 +1623,16 @@
 
     invoke-interface {p1, p0}, Lcom/android/systemui/statusbar/policy/CallbackController;->removeCallback(Ljava/lang/Object;)V
 
+    :try_start_0
     iget-object p1, p0, Landroid/widget/RelativeLayout;->mContext:Landroid/content/Context;
 
     iget-object p0, p0, Lcom/android/systemui/qs/QuickStatusBarHeader;->mRingerReceiver:Landroid/content/BroadcastReceiver;
 
     invoke-virtual {p1, p0}, Landroid/content/Context;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
+    :catch_0
     :goto_0
     return-void
 .end method

@@ -26,7 +26,7 @@
 
     sget p1, Lcom/android/systemui/R$drawable;->ic_bootloader:I
 
-    const v0, 0x50d00a9
+    const v0, 0x50d00ac
 
     invoke-direct {p0, p1, v0}, Lcom/android/systemui/globalactions/GlobalActionsDialog$SinglePressAction;-><init>(II)V
 

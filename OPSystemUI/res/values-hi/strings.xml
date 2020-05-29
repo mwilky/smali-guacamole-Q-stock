@@ -324,7 +324,7 @@
     <string name="battery_saver_notification_title">बैटरी सेवर चालू है</string>
     <string name="battery_saver_start_action">बैटरी सेवर चालू करें</string>
     <string name="battery_usage_extanded">आपके उपयोग के आधार पर बैटरी सेवर लगभग %s के लिए उपयोग में वृद्धि कर सकता है</string>
-    <string name="battery_usage_remaining">आपके उपयोग के आधार पर लगभग %s चलनी चाहिए। प्रदर्शन और पृष्ठभूमि डेटा को कम करती है।</string>
+    <string name="battery_usage_remaining_time">%s शेष</string>
     <string name="biometric_dialog_confirm">पुष्टि करें</string>
     <string name="biometric_dialog_empty_space_description">कोई चेहरा नहीं मिला, टैप करके पुष्टि की प्रक्रिया रद्द करें</string>
     <string name="biometric_dialog_face_icon_description_authenticated">चेहरे की पुष्टि हो गई</string>
@@ -1030,7 +1030,7 @@
     <string name="music_controls_no_title">कोई शीर्षक नहीं</string>
     <string name="nav_bar">नेविगेशन बार</string>
     <string name="nav_bar_default">(डिफ़ॉल्ट)</string>
-    <string name="nav_bar_guide_positive">समझ में आ गया</string>
+    <string name="nav_bar_guide_positive">समझ आ गया</string>
     <string name="nav_bar_guide_title">नेविगेशन बार दिखाने के लिए नीचे से ऊपर की ओर स्वाइप करें। नेविगेशन को रोकने के लिए, कृपया यहां टैप करें।</string>
     <string name="nav_bar_layout">लेआउट</string>
     <string name="no_application">कुछ भी नहीं</string>
@@ -1100,7 +1100,7 @@
     <string name="ongoing_privacy_dialog_separator">", "</string>
     <string name="op_earphone_connect">जोड़ा जा रहा है...</string>
     <string name="op_earphone_connected_fail">जुड़ने में विफल। आप हेडसेट और ब्लूटूथ स्थिति की जांच कर सकते हैं ।</string>
-    <string name="op_earphone_connected_success">पेयर हो गया। अधिक एक्सेस कार्ड टैप करें।</string>
+    <string name="op_earphone_connected_success">जुड़ गया। अधिक एक्सेस कार्ड टैप करें।</string>
     <string name="op_earphone_device">जोड़ने के लिए टैप करें</string>
     <string name="op_earphone_title">OnePlus Bullets Wireless</string>
     <string name="op_emergency_indicator_hint_text">आपातकालीन सेवाओं के लिए नीचे की ओर स्वाइप करें</string>
@@ -1141,7 +1141,7 @@
     <string name="overheat_dialog_purple_message">5 सेकंड के बाद फ़ोन बंद हो जाएगा</string>
     <string name="overheat_dialog_red_message">तापमान कम करने के लिए सभी एप्लिकेशन प्रक्रियाओं को साफ किया जाएगा</string>
     <string name="overheat_dialog_title">आपके फ़ोन का तापमान बहुत अधिक है</string>
-    <string name="overheat_notification_alert">आपके फ़ोन का तापमान बहुत अधिक है और तापमान कम करने के लिए पावर की उच्च खपत करने वाले फ़ंक्शन बंद कर दिए गए हैं</string>
+    <string name="overheat_notification_alert">आपके फ़ोन का तापमान बहुत अधिक है और तापमान कम करने के लिए पॉवर की उच्च खपत करने वाले फ़ंक्शन बंद कर दिए गए हैं</string>
     <string name="overheat_notification_resume">फ़ोन का तापमान रीस्टोर कर दिया गया है और फ़ोन का सामान्य रूप से उपयोग किया जा सकता है</string>
     <string name="overheat_notification_title_resume">फ़ोन का तापमान रीस्टोर कर दिया गया है</string>
     <string name="overheat_toast_content">आपके फ़ोन का तापमान बहुत अधिक है और तापमान कम करने के लिए पॉवर की उच्च खपत करने वाले फ़ंक्शन बंद कर दिए गए हैं</string>

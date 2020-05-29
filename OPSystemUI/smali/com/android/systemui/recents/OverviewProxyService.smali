@@ -1783,6 +1783,7 @@
 
     if-eqz v0, :cond_0
 
+    :try_start_0
     iget-object v1, p0, Lcom/android/systemui/recents/OverviewProxyService;->mStatusBarGestureDownEvent:Landroid/view/MotionEvent;
 
     const/4 v2, 0x3
@@ -1800,8 +1801,22 @@
     const/4 v0, 0x0
 
     iput-object v0, p0, Lcom/android/systemui/recents/OverviewProxyService;->mStatusBarGestureDownEvent:Landroid/view/MotionEvent;
+    :try_end_0
+    .catch Ljava/lang/NullPointerException; {:try_start_0 .. :try_end_0} :catch_0
+
+    goto :goto_0
+
+    :catch_0
+    move-exception p0
+
+    const-string v0, "OverviewProxyService"
+
+    const-string v1, "StatusBarGestureDownEvent is null "
+
+    invoke-static {v0, v1, p0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
     :cond_0
+    :goto_0
     return-void
 .end method
 
@@ -1965,6 +1980,18 @@
     invoke-static {v1, v0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     iput p1, p0, Lcom/android/systemui/recents/OverviewProxyService;->mNavBarMode:I
+
+    invoke-virtual {p0}, Lcom/android/systemui/recents/OverviewProxyService;->shouldShowSwipeUpUI()Z
+
+    move-result p0
+
+    invoke-static {}, Lcom/android/systemui/shared/system/WindowManagerWrapper;->getInstance()Lcom/android/systemui/shared/system/WindowManagerWrapper;
+
+    move-result-object p1
+
+    xor-int/lit8 p0, p0, 0x1
+
+    invoke-virtual {p1, p0}, Lcom/android/systemui/shared/system/WindowManagerWrapper;->setNavBarVirtualKeyHapticFeedbackEnabled(Z)V
 
     return-void
 .end method

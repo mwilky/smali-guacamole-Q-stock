@@ -394,9 +394,13 @@
 
     move-result v12
 
-    const/4 v13, 0x0
+    iget-object v0, v9, Lcom/android/systemui/statusbar/phone/NotificationIconAreaController;->mShelfIcons:Lcom/android/systemui/statusbar/phone/NotificationIconContainer;
 
-    move v14, v13
+    invoke-virtual {v10, v0}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+
+    move-result v13
+
+    const/4 v15, 0x0
 
     :goto_0
     iget-object v0, v9, Lcom/android/systemui/statusbar/phone/NotificationIconAreaController;->mNotificationScrollLayout:Landroid/view/ViewGroup;
@@ -405,11 +409,11 @@
 
     move-result v0
 
-    if-ge v14, v0, :cond_2
+    if-ge v15, v0, :cond_2
 
     iget-object v0, v9, Lcom/android/systemui/statusbar/phone/NotificationIconAreaController;->mNotificationScrollLayout:Landroid/view/ViewGroup;
 
-    invoke-virtual {v0, v14}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
+    invoke-virtual {v0, v15}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
 
     move-result-object v0
 
@@ -421,11 +425,11 @@
 
     invoke-virtual {v0}, Lcom/android/systemui/statusbar/notification/row/ExpandableNotificationRow;->getEntry()Lcom/android/systemui/statusbar/notification/collection/NotificationEntry;
 
-    move-result-object v15
+    move-result-object v8
 
     move-object/from16 v0, p0
 
-    move-object v1, v15
+    move-object v1, v8
 
     move/from16 v2, p3
 
@@ -439,6 +443,8 @@
 
     move/from16 v7, p8
 
+    move-object v14, v8
+
     move v8, v12
 
     invoke-super/range {v0 .. v8}, Lcom/oneplus/systemui/statusbar/phone/OpNotificationIconAreaController;->shouldShowNotificationIcon(Lcom/android/systemui/statusbar/notification/collection/NotificationEntry;ZZZZZZZ)Z
@@ -449,7 +455,7 @@
 
     move-object/from16 v0, p1
 
-    invoke-interface {v0, v15}, Ljava/util/function/Function;->apply(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {v0, v14}, Ljava/util/function/Function;->apply(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v1
 
@@ -466,7 +472,7 @@
 
     :cond_1
     :goto_1
-    add-int/lit8 v14, v14, 0x1
+    add-int/lit8 v15, v15, 0x1
 
     goto :goto_0
 
@@ -479,14 +485,14 @@
 
     invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
 
-    move v2, v13
+    const/4 v2, 0x0
 
     :goto_2
     invoke-virtual/range {p2 .. p2}, Landroid/widget/FrameLayout;->getChildCount()I
 
     move-result v3
 
-    const/4 v4, 0x1
+    const/4 v14, 0x1
 
     if-ge v2, v3, :cond_a
 
@@ -494,115 +500,115 @@
 
     move-result-object v3
 
-    instance-of v5, v3, Lcom/android/systemui/statusbar/StatusBarIconView;
+    instance-of v4, v3, Lcom/android/systemui/statusbar/StatusBarIconView;
 
-    if-nez v5, :cond_3
+    if-nez v4, :cond_3
 
     goto :goto_6
 
     :cond_3
     invoke-virtual {v11, v3}, Ljava/util/ArrayList;->contains(Ljava/lang/Object;)Z
 
-    move-result v5
+    move-result v4
 
-    if-nez v5, :cond_9
+    if-nez v4, :cond_9
 
     check-cast v3, Lcom/android/systemui/statusbar/StatusBarIconView;
 
     invoke-virtual {v3}, Lcom/android/systemui/statusbar/StatusBarIconView;->getNotification()Landroid/service/notification/StatusBarNotification;
 
-    move-result-object v5
+    move-result-object v4
 
-    invoke-virtual {v5}, Landroid/service/notification/StatusBarNotification;->getGroupKey()Ljava/lang/String;
+    invoke-virtual {v4}, Landroid/service/notification/StatusBarNotification;->getGroupKey()Ljava/lang/String;
 
-    move-result-object v5
+    move-result-object v4
 
-    move v6, v13
+    const/4 v5, 0x0
 
-    move v7, v6
+    const/4 v6, 0x0
 
     :goto_3
     invoke-virtual {v11}, Ljava/util/ArrayList;->size()I
 
-    move-result v8
+    move-result v7
 
-    if-ge v6, v8, :cond_6
+    if-ge v5, v7, :cond_6
 
-    invoke-virtual {v11, v6}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+    invoke-virtual {v11, v5}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+
+    move-result-object v7
+
+    check-cast v7, Lcom/android/systemui/statusbar/StatusBarIconView;
+
+    invoke-virtual {v7}, Lcom/android/systemui/statusbar/StatusBarIconView;->getSourceIcon()Landroid/graphics/drawable/Icon;
 
     move-result-object v8
-
-    check-cast v8, Lcom/android/systemui/statusbar/StatusBarIconView;
-
-    invoke-virtual {v8}, Lcom/android/systemui/statusbar/StatusBarIconView;->getSourceIcon()Landroid/graphics/drawable/Icon;
-
-    move-result-object v14
 
     invoke-virtual {v3}, Lcom/android/systemui/statusbar/StatusBarIconView;->getSourceIcon()Landroid/graphics/drawable/Icon;
 
     move-result-object v15
 
-    invoke-virtual {v14, v15}, Landroid/graphics/drawable/Icon;->sameAs(Landroid/graphics/drawable/Icon;)Z
-
-    move-result v14
-
-    if-eqz v14, :cond_5
-
-    invoke-virtual {v8}, Lcom/android/systemui/statusbar/StatusBarIconView;->getNotification()Landroid/service/notification/StatusBarNotification;
-
-    move-result-object v8
-
-    invoke-virtual {v8}, Landroid/service/notification/StatusBarNotification;->getGroupKey()Ljava/lang/String;
-
-    move-result-object v8
-
-    invoke-virtual {v8, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v8, v15}, Landroid/graphics/drawable/Icon;->sameAs(Landroid/graphics/drawable/Icon;)Z
 
     move-result v8
 
     if-eqz v8, :cond_5
 
-    if-nez v7, :cond_4
+    invoke-virtual {v7}, Lcom/android/systemui/statusbar/StatusBarIconView;->getNotification()Landroid/service/notification/StatusBarNotification;
 
-    move v7, v4
+    move-result-object v7
+
+    invoke-virtual {v7}, Landroid/service/notification/StatusBarNotification;->getGroupKey()Ljava/lang/String;
+
+    move-result-object v7
+
+    invoke-virtual {v7, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v7
+
+    if-eqz v7, :cond_5
+
+    if-nez v6, :cond_4
+
+    move v6, v14
 
     goto :goto_4
 
     :cond_4
-    move v7, v13
+    const/4 v6, 0x0
 
     goto :goto_5
 
     :cond_5
     :goto_4
-    add-int/lit8 v6, v6, 0x1
+    add-int/lit8 v5, v5, 0x1
 
     goto :goto_3
 
     :cond_6
     :goto_5
-    if-eqz v7, :cond_8
+    if-eqz v6, :cond_8
 
-    invoke-virtual {v0, v5}, Landroidx/collection/SimpleArrayMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v4}, Landroidx/collection/SimpleArrayMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
-    move-result-object v4
+    move-result-object v5
 
-    check-cast v4, Ljava/util/ArrayList;
+    check-cast v5, Ljava/util/ArrayList;
 
-    if-nez v4, :cond_7
+    if-nez v5, :cond_7
 
-    new-instance v4, Ljava/util/ArrayList;
+    new-instance v5, Ljava/util/ArrayList;
 
-    invoke-direct {v4}, Ljava/util/ArrayList;-><init>()V
+    invoke-direct {v5}, Ljava/util/ArrayList;-><init>()V
 
-    invoke-virtual {v0, v5, v4}, Landroidx/collection/SimpleArrayMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v4, v5}, Landroidx/collection/SimpleArrayMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     :cond_7
     invoke-virtual {v3}, Lcom/android/systemui/statusbar/StatusBarIconView;->getStatusBarIcon()Lcom/android/internal/statusbar/StatusBarIcon;
 
-    move-result-object v5
+    move-result-object v4
 
-    invoke-virtual {v4, v5}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v5, v4}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     :cond_8
     invoke-virtual {v1, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
@@ -630,29 +636,29 @@
     :goto_7
     invoke-interface {v3}, Ljava/util/Iterator;->hasNext()Z
 
-    move-result v5
+    move-result v4
 
-    if-eqz v5, :cond_c
+    if-eqz v4, :cond_c
 
     invoke-interface {v3}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
+    move-result-object v4
+
+    check-cast v4, Ljava/lang/String;
+
+    invoke-virtual {v0, v4}, Landroidx/collection/SimpleArrayMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
     move-result-object v5
 
-    check-cast v5, Ljava/lang/String;
+    check-cast v5, Ljava/util/ArrayList;
 
-    invoke-virtual {v0, v5}, Landroidx/collection/SimpleArrayMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v5}, Ljava/util/ArrayList;->size()I
 
-    move-result-object v6
+    move-result v5
 
-    check-cast v6, Ljava/util/ArrayList;
+    if-eq v5, v14, :cond_b
 
-    invoke-virtual {v6}, Ljava/util/ArrayList;->size()I
-
-    move-result v6
-
-    if-eq v6, v4, :cond_b
-
-    invoke-virtual {v2, v5}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v2, v4}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     goto :goto_7
 
@@ -665,10 +671,31 @@
 
     move-result v0
 
-    move v2, v13
+    if-eqz v13, :cond_e
+
+    invoke-virtual {v11}, Ljava/util/ArrayList;->size()I
+
+    move-result v2
+
+    sub-int/2addr v2, v0
+
+    if-gt v2, v14, :cond_d
+
+    move v2, v14
+
+    goto :goto_8
+
+    :cond_d
+    const/4 v2, 0x0
 
     :goto_8
-    if-ge v2, v0, :cond_d
+    invoke-virtual {v10, v2}, Lcom/oneplus/systemui/statusbar/phone/OpNotificationIconContainer;->setRemoveWithoutAnimation(Z)V
+
+    :cond_e
+    const/4 v2, 0x0
+
+    :goto_9
+    if-ge v2, v0, :cond_f
 
     invoke-virtual {v1, v2}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -680,21 +707,28 @@
 
     add-int/lit8 v2, v2, 0x1
 
-    goto :goto_8
+    goto :goto_9
 
-    :cond_d
+    :cond_f
+    if-eqz v13, :cond_10
+
+    const/4 v0, 0x0
+
+    invoke-virtual {v10, v0}, Lcom/oneplus/systemui/statusbar/phone/OpNotificationIconContainer;->setRemoveWithoutAnimation(Z)V
+
+    :cond_10
     invoke-direct/range {p0 .. p0}, Lcom/android/systemui/statusbar/phone/NotificationIconAreaController;->generateIconLayoutParams()Landroid/widget/FrameLayout$LayoutParams;
 
     move-result-object v0
 
-    move v1, v13
+    const/4 v1, 0x0
 
-    :goto_9
+    :goto_a
     invoke-virtual {v11}, Ljava/util/ArrayList;->size()I
 
     move-result v2
 
-    if-ge v1, v2, :cond_10
+    if-ge v1, v2, :cond_13
 
     invoke-virtual {v11, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -708,33 +742,33 @@
 
     move-result-object v3
 
-    if-nez v3, :cond_f
+    if-nez v3, :cond_12
 
-    if-eqz p5, :cond_e
+    if-eqz p5, :cond_11
 
     iget-object v3, v9, Lcom/android/systemui/statusbar/phone/NotificationIconAreaController;->mUpdateStatusBarIcons:Ljava/lang/Runnable;
 
     invoke-virtual {v2, v3}, Lcom/android/systemui/statusbar/StatusBarIconView;->setOnDismissListener(Ljava/lang/Runnable;)V
 
-    :cond_e
+    :cond_11
     invoke-virtual {v10, v2, v1, v0}, Landroid/widget/FrameLayout;->addView(Landroid/view/View;ILandroid/view/ViewGroup$LayoutParams;)V
 
-    :cond_f
+    :cond_12
     add-int/lit8 v1, v1, 0x1
 
-    goto :goto_9
+    goto :goto_a
 
-    :cond_10
-    invoke-virtual {v10, v4}, Lcom/android/systemui/statusbar/phone/NotificationIconContainer;->setChangingViewPositions(Z)V
+    :cond_13
+    invoke-virtual {v10, v14}, Lcom/android/systemui/statusbar/phone/NotificationIconContainer;->setChangingViewPositions(Z)V
 
     invoke-virtual/range {p2 .. p2}, Landroid/widget/FrameLayout;->getChildCount()I
 
     move-result v0
 
-    move v1, v13
+    const/4 v1, 0x0
 
-    :goto_a
-    if-ge v1, v0, :cond_12
+    :goto_b
+    if-ge v1, v0, :cond_15
 
     invoke-virtual {v10, v1}, Landroid/widget/FrameLayout;->getChildAt(I)Landroid/view/View;
 
@@ -746,29 +780,31 @@
 
     check-cast v3, Lcom/android/systemui/statusbar/StatusBarIconView;
 
-    if-ne v2, v3, :cond_11
+    if-ne v2, v3, :cond_14
 
-    goto :goto_b
+    goto :goto_c
 
-    :cond_11
+    :cond_14
     invoke-virtual {v10, v3}, Landroid/widget/FrameLayout;->removeView(Landroid/view/View;)V
 
     invoke-virtual {v10, v3, v1}, Landroid/widget/FrameLayout;->addView(Landroid/view/View;I)V
 
-    :goto_b
+    :goto_c
     add-int/lit8 v1, v1, 0x1
 
-    goto :goto_a
+    goto :goto_b
 
-    :cond_12
-    if-eqz v12, :cond_13
+    :cond_15
+    if-eqz v12, :cond_16
 
     iget-object v0, v9, Lcom/oneplus/systemui/statusbar/phone/OpNotificationIconAreaController;->mAodNotificationIconCtrl:Lcom/oneplus/aod/OpAodNotificationIconAreaController;
 
     invoke-virtual {v0, v10}, Lcom/oneplus/aod/OpAodNotificationIconAreaController;->updateNotificationIcons(Lcom/android/systemui/statusbar/phone/NotificationIconContainer;)V
 
-    :cond_13
-    invoke-virtual {v10, v13}, Lcom/android/systemui/statusbar/phone/NotificationIconContainer;->setChangingViewPositions(Z)V
+    :cond_16
+    const/4 v0, 0x0
+
+    invoke-virtual {v10, v0}, Lcom/android/systemui/statusbar/phone/NotificationIconContainer;->setChangingViewPositions(Z)V
 
     const/4 v0, 0x0
 

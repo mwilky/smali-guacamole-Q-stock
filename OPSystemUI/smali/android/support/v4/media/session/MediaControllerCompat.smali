@@ -171,7 +171,7 @@
 
     const-string p0, "MediaControllerCompat"
 
-    const-string p1, "the callback has already been registered"
+    const-string/jumbo p1, "the callback has already been registered"
 
     invoke-static {p0, p1}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
@@ -218,7 +218,7 @@
 
     const-string p0, "MediaControllerCompat"
 
-    const-string p1, "the callback has never been registered"
+    const-string/jumbo p1, "the callback has never been registered"
 
     invoke-static {p0, p1}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 

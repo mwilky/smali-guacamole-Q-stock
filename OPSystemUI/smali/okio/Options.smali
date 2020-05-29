@@ -853,13 +853,11 @@
     :cond_a
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
-    const-string v0, "the empty byte string is not a supported option"
+    const-string/jumbo v0, "the empty byte string is not a supported option"
 
     invoke-direct {p0, v0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
     throw p0
-
-    nop
 
     :array_0
     .array-data 4

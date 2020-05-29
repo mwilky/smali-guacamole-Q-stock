@@ -21,7 +21,7 @@
 
     const-string v2, "o"
 
-    const-string v3, "t"
+    const-string/jumbo v3, "t"
 
     const-string v4, "s"
 

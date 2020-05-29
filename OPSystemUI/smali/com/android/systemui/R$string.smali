@@ -274,13 +274,9 @@
 
 .field public static final battery_detail_switch_title:I = 0x7f11014d
 
-.field public static final battery_low_percent_format:I = 0x7f110154
-
 .field public static final battery_low_title:I = 0x7f110158
 
 .field public static final battery_low_warning:I = 0x7f110159
-
-.field public static final battery_meter_very_low_overlay_symbol:I = 0x7f11015b
 
 .field public static final battery_saver_confirmation_ok:I = 0x7f11015d
 
@@ -288,15 +284,11 @@
 
 .field public static final battery_saver_confirmation_title_generic:I = 0x7f11015f
 
-.field public static final battery_saver_notification_action_text:I = 0x7f110160
-
-.field public static final battery_saver_notification_title:I = 0x7f110162
-
 .field public static final battery_saver_start_action:I = 0x7f110163
 
 .field public static final battery_usage_extanded:I = 0x7f110164
 
-.field public static final battery_usage_remaining:I = 0x7f110165
+.field public static final battery_usage_remaining_time:I = 0x7f110165
 
 .field public static final biometric_dialog_face_icon_description_authenticated:I = 0x7f110168
 
@@ -1302,22 +1294,22 @@
 
 .field public static final volume_vibrate:I = 0x7f110708
 
-.field public static final wifi_is_off:I = 0x7f110736
+.field public static final wifi_is_off:I = 0x7f110735
 
-.field public static final work_life_balance_mode:I = 0x7f110770
+.field public static final work_life_balance_mode:I = 0x7f11076f
 
-.field public static final zen_alarm_warning:I = 0x7f110772
+.field public static final zen_alarm_warning:I = 0x7f110771
 
-.field public static final zen_alarm_warning_indef:I = 0x7f110773
+.field public static final zen_alarm_warning_indef:I = 0x7f110772
 
-.field public static final zen_alarms_introduction:I = 0x7f110774
+.field public static final zen_alarms_introduction:I = 0x7f110773
 
-.field public static final zen_mode_and_condition:I = 0x7f110778
+.field public static final zen_mode_and_condition:I = 0x7f110777
 
-.field public static final zen_priority_customize_button:I = 0x7f110780
+.field public static final zen_priority_customize_button:I = 0x7f11077f
 
-.field public static final zen_priority_introduction:I = 0x7f110781
+.field public static final zen_priority_introduction:I = 0x7f110780
 
-.field public static final zen_silence_introduction:I = 0x7f110782
+.field public static final zen_silence_introduction:I = 0x7f110781
 
-.field public static final zen_silence_introduction_voice:I = 0x7f110783
+.field public static final zen_silence_introduction_voice:I = 0x7f110782

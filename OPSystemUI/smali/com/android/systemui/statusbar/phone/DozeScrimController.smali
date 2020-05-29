@@ -27,6 +27,8 @@
 
 .field private mPulseReason:I
 
+.field private mRequestPulsing:Z
+
 .field private final mScrimCallback:Lcom/android/systemui/statusbar/phone/ScrimController$Callback;
 
 
@@ -111,7 +113,15 @@
     return p0
 .end method
 
-.method static synthetic access$1000(Lcom/android/systemui/statusbar/phone/DozeScrimController;)V
+.method static synthetic access$1000(Lcom/android/systemui/statusbar/phone/DozeScrimController;)Ljava/lang/Runnable;
+    .locals 0
+
+    iget-object p0, p0, Lcom/android/systemui/statusbar/phone/DozeScrimController;->mPulseOutExtended:Ljava/lang/Runnable;
+
+    return-object p0
+.end method
+
+.method static synthetic access$1100(Lcom/android/systemui/statusbar/phone/DozeScrimController;)V
     .locals 0
 
     invoke-direct {p0}, Lcom/android/systemui/statusbar/phone/DozeScrimController;->pulseFinished()V
@@ -119,7 +129,7 @@
     return-void
 .end method
 
-.method static synthetic access$1100(Lcom/android/systemui/statusbar/phone/DozeScrimController;)V
+.method static synthetic access$1200(Lcom/android/systemui/statusbar/phone/DozeScrimController;)V
     .locals 0
 
     invoke-virtual {p0}, Lcom/oneplus/aod/OpDozeScrimController;->releaseWaleLock()V
@@ -135,7 +145,15 @@
     return p0
 .end method
 
-.method static synthetic access$300(Lcom/android/systemui/statusbar/phone/DozeScrimController;)V
+.method static synthetic access$300(Lcom/android/systemui/statusbar/phone/DozeScrimController;)Z
+    .locals 0
+
+    iget-boolean p0, p0, Lcom/android/systemui/statusbar/phone/DozeScrimController;->mRequestPulsing:Z
+
+    return p0
+.end method
+
+.method static synthetic access$400(Lcom/android/systemui/statusbar/phone/DozeScrimController;)V
     .locals 0
 
     invoke-direct {p0}, Lcom/android/systemui/statusbar/phone/DozeScrimController;->pulseStarted()V
@@ -143,7 +161,7 @@
     return-void
 .end method
 
-.method static synthetic access$400(Lcom/android/systemui/statusbar/phone/DozeScrimController;)V
+.method static synthetic access$500(Lcom/android/systemui/statusbar/phone/DozeScrimController;)V
     .locals 0
 
     invoke-virtual {p0}, Lcom/oneplus/aod/OpDozeScrimController;->acquireWakeLock()V
@@ -151,7 +169,7 @@
     return-void
 .end method
 
-.method static synthetic access$500(Lcom/android/systemui/statusbar/phone/DozeScrimController;)Ljava/lang/Runnable;
+.method static synthetic access$600(Lcom/android/systemui/statusbar/phone/DozeScrimController;)Ljava/lang/Runnable;
     .locals 0
 
     iget-object p0, p0, Lcom/android/systemui/statusbar/phone/DozeScrimController;->mPulseOut:Ljava/lang/Runnable;
@@ -159,7 +177,7 @@
     return-object p0
 .end method
 
-.method static synthetic access$600(Lcom/android/systemui/statusbar/phone/DozeScrimController;)Lcom/android/systemui/statusbar/phone/DozeParameters;
+.method static synthetic access$700(Lcom/android/systemui/statusbar/phone/DozeScrimController;)Lcom/android/systemui/statusbar/phone/DozeParameters;
     .locals 0
 
     iget-object p0, p0, Lcom/android/systemui/statusbar/phone/DozeScrimController;->mDozeParameters:Lcom/android/systemui/statusbar/phone/DozeParameters;
@@ -167,7 +185,7 @@
     return-object p0
 .end method
 
-.method static synthetic access$700(Lcom/android/systemui/statusbar/phone/DozeScrimController;)Landroid/os/Handler;
+.method static synthetic access$800(Lcom/android/systemui/statusbar/phone/DozeScrimController;)Landroid/os/Handler;
     .locals 0
 
     iget-object p0, p0, Lcom/android/systemui/statusbar/phone/DozeScrimController;->mHandler:Landroid/os/Handler;
@@ -175,20 +193,12 @@
     return-object p0
 .end method
 
-.method static synthetic access$802(Lcom/android/systemui/statusbar/phone/DozeScrimController;Z)Z
+.method static synthetic access$902(Lcom/android/systemui/statusbar/phone/DozeScrimController;Z)Z
     .locals 0
 
     iput-boolean p1, p0, Lcom/android/systemui/statusbar/phone/DozeScrimController;->mFullyPulsing:Z
 
     return p1
-.end method
-
-.method static synthetic access$900(Lcom/android/systemui/statusbar/phone/DozeScrimController;)Ljava/lang/Runnable;
-    .locals 0
-
-    iget-object p0, p0, Lcom/android/systemui/statusbar/phone/DozeScrimController;->mPulseOutExtended:Ljava/lang/Runnable;
-
-    return-object p0
 .end method
 
 .method private cancelPulsing()V
@@ -235,6 +245,10 @@
     .locals 1
 
     invoke-static {}, Lcom/android/systemui/doze/DozeLog;->tracePulseFinish()V
+
+    const/4 v0, 0x0
+
+    iput-boolean v0, p0, Lcom/android/systemui/statusbar/phone/DozeScrimController;->mRequestPulsing:Z
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/DozeScrimController;->mPulseCallback:Lcom/android/systemui/doze/DozeHost$PulseCallback;
 
@@ -379,11 +393,13 @@
 .end method
 
 .method public pulse(Lcom/android/systemui/doze/DozeHost$PulseCallback;I)V
-    .locals 1
+    .locals 2
 
     if-eqz p1, :cond_4
 
     iget-boolean v0, p0, Lcom/android/systemui/statusbar/phone/DozeScrimController;->mDozing:Z
+
+    const/4 v1, 0x1
 
     if-eqz v0, :cond_1
 
@@ -394,6 +410,8 @@
     goto :goto_0
 
     :cond_0
+    iput-boolean v1, p0, Lcom/android/systemui/statusbar/phone/DozeScrimController;->mRequestPulsing:Z
+
     iput-object p1, p0, Lcom/android/systemui/statusbar/phone/DozeScrimController;->mPulseCallback:Lcom/android/systemui/doze/DozeHost$PulseCallback;
 
     iput p2, p0, Lcom/android/systemui/statusbar/phone/DozeScrimController;->mPulseReason:I
@@ -430,15 +448,13 @@
 
     if-eqz p0, :cond_2
 
-    const/4 p0, 0x1
-
     goto :goto_1
 
     :cond_2
-    const/4 p0, 0x0
+    const/4 v1, 0x0
 
     :goto_1
-    invoke-virtual {p2, p0}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+    invoke-virtual {p2, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
     invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 

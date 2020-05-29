@@ -64,7 +64,7 @@
 
     iget-object v0, p0, Lcom/android/systemui/volume/VolumeDialogImpl$Accessibility;->this$0:Lcom/android/systemui/volume/VolumeDialogImpl;
 
-    invoke-static {v0}, Lcom/android/systemui/volume/VolumeDialogImpl;->access$2200(Lcom/android/systemui/volume/VolumeDialogImpl;)Landroid/view/ViewGroup;
+    invoke-static {v0}, Lcom/android/systemui/volume/VolumeDialogImpl;->access$2500(Lcom/android/systemui/volume/VolumeDialogImpl;)Landroid/view/ViewGroup;
 
     move-result-object v0
 

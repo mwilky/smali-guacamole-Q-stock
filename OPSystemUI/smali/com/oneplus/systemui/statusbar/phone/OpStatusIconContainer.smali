@@ -3,7 +3,23 @@
 .source "OpStatusIconContainer.java"
 
 
+# static fields
+.field protected static final MAX_DOTS:I
+
+
 # direct methods
+.method static constructor <clinit>()V
+    .locals 1
+
+    invoke-static {}, Lcom/oneplus/util/OpUtils;->getMaxDotsForStatusIconContainer()I
+
+    move-result v0
+
+    sput v0, Lcom/oneplus/systemui/statusbar/phone/OpStatusIconContainer;->MAX_DOTS:I
+
+    return-void
+.end method
+
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 0
 

@@ -68,7 +68,7 @@
 .method static constructor <clinit>()V
     .locals 2
 
-    const-string v0, "sysui_qs_tiles"
+    const-string/jumbo v0, "sysui_qs_tiles"
 
     const-string v1, "doze_always_on"
 
@@ -172,7 +172,7 @@
 
     const/4 p3, 0x0
 
-    const-string v0, "sysui_tuner_version"
+    const-string/jumbo v0, "sysui_tuner_version"
 
     invoke-virtual {p0, v0, p3}, Lcom/android/systemui/tuner/TunerServiceImpl;->getValue(Ljava/lang/String;I)I
 
@@ -530,7 +530,7 @@
     invoke-static {v0, p1, p3, v1}, Landroid/provider/Settings$Secure;->putStringForUser(Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;I)Z
 
     :cond_1
-    const-string p1, "sysui_tuner_version"
+    const-string/jumbo p1, "sysui_tuner_version"
 
     invoke-virtual {p0, p1, p2}, Lcom/android/systemui/tuner/TunerServiceImpl;->setValue(Ljava/lang/String;I)V
 
@@ -578,7 +578,7 @@
 
     const/4 v1, 0x0
 
-    const-string v2, "sysui_demo_allowed"
+    const-string/jumbo v2, "sysui_demo_allowed"
 
     invoke-static {v0, v2, v1}, Landroid/provider/Settings$Global;->putString(Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;)Z
 

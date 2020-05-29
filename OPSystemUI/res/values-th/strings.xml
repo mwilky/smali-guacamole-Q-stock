@@ -324,7 +324,7 @@
     <string name="battery_saver_notification_title">เปิดโหมดประหยัดแบตเตอรี่อยู่</string>
     <string name="battery_saver_start_action">เปิดโหมดประหยัดแบตเตอรี่</string>
     <string name="battery_usage_extanded">ตัวประหยัดแบตเตอรี่อาจยืดอายุการใช้งานได้เป็นเวลา %s ตามการใช้งานของคุณ</string>
-    <string name="battery_usage_remaining">คาดว่าจะใช้ได้ประมาณ %s ตามการใช้งานของคุณ กรุณาลดการทำงานและข้อมูลในเบื้องหลัง</string>
+    <string name="battery_usage_remaining_time">เหลือ %s</string>
     <string name="biometric_dialog_confirm">ยืนยัน</string>
     <string name="biometric_dialog_empty_space_description">พื้นที่ว่าง แตะเพื่อยกเลิกการตรวจสอบสิทธิ์</string>
     <string name="biometric_dialog_face_icon_description_authenticated">ตรวจสอบสิทธิ์ใบหน้าแล้ว</string>
@@ -1030,7 +1030,7 @@
     <string name="music_controls_no_title">ไม่มีชื่อ</string>
     <string name="nav_bar">แถบนำทาง</string>
     <string name="nav_bar_default">(ค่าเริ่มต้น)</string>
-    <string name="nav_bar_guide_positive">รับทราบ</string>
+    <string name="nav_bar_guide_positive">เข้าใจแล้ว</string>
     <string name="nav_bar_guide_title">ปัดนิ้วขึ้นจากด้านล่างสุดเพื่อแสดงแถบการนำทาง ในการหยุดซ่อนการนำทาง กรุณาแตะที่นี่</string>
     <string name="nav_bar_layout">การจัดวาง</string>
     <string name="no_application">ไม่มี</string>

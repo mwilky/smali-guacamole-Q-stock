@@ -24,6 +24,16 @@
 
 .field private static final GAME_MODE_BLOCK_HEADS_UP_URI:Landroid/net/Uri;
 
+.field private static final LIFETIME_EXTENSION_LIST:Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/List<",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+.end field
+
 .field private static final OP_DEBUG:Z
 
 .field private static final OP_OIMC_FUNC_DISABLE_HEADSUP_BRICK_URI:Landroid/net/Uri;
@@ -214,6 +224,18 @@
     move-result-object v0
 
     sput-object v0, Lcom/oneplus/notification/OpNotificationController;->PRIORITY_LIST_GAME_MODE:Ljava/util/List;
+
+    const-string v0, "com.whatsapp"
+
+    filled-new-array {v1, v0}, [Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {v0}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
+
+    move-result-object v0
+
+    sput-object v0, Lcom/oneplus/notification/OpNotificationController;->LIFETIME_EXTENSION_LIST:Ljava/util/List;
 
     const-string v0, "com.oneplus.soundrecorder"
 
@@ -508,7 +530,7 @@
 
     iget-object p1, p0, Lcom/oneplus/notification/OpNotificationController;->mContext:Landroid/content/Context;
 
-    const v2, 0x50d0070
+    const v2, 0x50d0071
 
     invoke-virtual {p1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1554,9 +1576,9 @@
 
     const/16 v2, 0x1a
 
-    const v3, 0x50d0071
+    const v3, 0x50d0072
 
-    const v4, 0x50d0072
+    const v4, 0x50d0073
 
     const/4 v5, 0x2
 
@@ -1888,7 +1910,7 @@
 
     move-result v5
 
-    const v6, 0x50d0070
+    const v6, 0x50d0071
 
     const-string v7, "android.substName"
 
@@ -2069,7 +2091,7 @@
 
     iget-object v5, v0, Lcom/oneplus/notification/OpNotificationController;->mContext:Landroid/content/Context;
 
-    const v6, 0x50d0070
+    const v6, 0x50d0071
 
     invoke-virtual {v5, v6}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -2177,7 +2199,7 @@
 
     const/4 v2, 0x0
 
-    const/16 v4, 0xc4
+    const/16 v4, 0xc5
 
     aput v4, p2, v2
 
@@ -2960,7 +2982,17 @@
 .end method
 
 .method public synthetic lambda$getQuickReplyView$0$OpNotificationController(Landroid/service/notification/StatusBarNotification;Landroid/view/View;)V
-    .locals 0
+    .locals 3
+
+    const-string p2, "landscape_quick_reply"
+
+    const-string v0, "hun_action"
+
+    const-string v1, "2"
+
+    const-string v2, "YLTI9SVG4L"
+
+    invoke-static {p2, v0, v1, v2}, Lcom/oneplus/systemui/util/OpMdmLogger;->log(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     const/4 p2, 0x0
 
@@ -2970,8 +3002,44 @@
 .end method
 
 .method public synthetic lambda$getQuickReplyView$1$OpNotificationController(Landroid/service/notification/StatusBarNotification;Landroid/view/View;)V
-    .locals 0
+    .locals 3
 
+    invoke-static {}, Lcom/oneplus/plugin/OpLsState;->getInstance()Lcom/oneplus/plugin/OpLsState;
+
+    move-result-object p2
+
+    invoke-virtual {p2}, Lcom/oneplus/plugin/OpLsState;->getPhoneStatusBar()Lcom/android/systemui/statusbar/phone/StatusBar;
+
+    move-result-object p2
+
+    invoke-virtual {p2}, Lcom/android/systemui/statusbar/phone/StatusBar;->getPresenter()Lcom/android/systemui/statusbar/NotificationPresenter;
+
+    move-result-object p2
+
+    invoke-interface {p2}, Lcom/android/systemui/statusbar/NotificationPresenter;->isPresenterFullyCollapsed()Z
+
+    move-result p2
+
+    const-string v0, "YLTI9SVG4L"
+
+    const-string v1, "1"
+
+    const-string v2, "landscape_quick_reply"
+
+    if-eqz p2, :cond_0
+
+    const-string p2, "hun_action"
+
+    invoke-static {v2, p2, v1, v0}, Lcom/oneplus/systemui/util/OpMdmLogger;->log(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+
+    goto :goto_0
+
+    :cond_0
+    const-string p2, "nd_action"
+
+    invoke-static {v2, p2, v1, v0}, Lcom/oneplus/systemui/util/OpMdmLogger;->log(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+
+    :goto_0
     const/4 p2, 0x1
 
     invoke-direct {p0, p1, p2}, Lcom/oneplus/notification/OpNotificationController;->sentIntent(Landroid/service/notification/StatusBarNotification;Z)V
@@ -3141,6 +3209,18 @@
     iput-object p1, p0, Lcom/oneplus/notification/OpNotificationController;->mTopActivity:Ljava/lang/String;
 
     return-void
+.end method
+
+.method public shouldForceRemoveEntry(Ljava/lang/String;)Z
+    .locals 0
+
+    sget-object p0, Lcom/oneplus/notification/OpNotificationController;->LIFETIME_EXTENSION_LIST:Ljava/util/List;
+
+    invoke-interface {p0, p1}, Ljava/util/List;->contains(Ljava/lang/Object;)Z
+
+    move-result p0
+
+    return p0
 .end method
 
 .method public shouldSuppressFullScreenIntent(Lcom/android/systemui/statusbar/notification/collection/NotificationEntry;)Z

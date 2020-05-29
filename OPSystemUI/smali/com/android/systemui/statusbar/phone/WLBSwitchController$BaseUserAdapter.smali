@@ -20,17 +20,13 @@
 
 # direct methods
 .method protected constructor <init>(Lcom/android/systemui/statusbar/phone/WLBSwitchController;)V
-    .locals 1
+    .locals 0
 
     invoke-direct {p0}, Landroid/widget/BaseAdapter;-><init>()V
 
     iput-object p1, p0, Lcom/android/systemui/statusbar/phone/WLBSwitchController$BaseUserAdapter;->mController:Lcom/android/systemui/statusbar/phone/WLBSwitchController;
 
-    new-instance v0, Ljava/lang/ref/WeakReference;
-
-    invoke-direct {v0, p0}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
-
-    invoke-static {p1, v0}, Lcom/android/systemui/statusbar/phone/WLBSwitchController;->access$500(Lcom/android/systemui/statusbar/phone/WLBSwitchController;Ljava/lang/ref/WeakReference;)V
+    invoke-static {p1, p0}, Lcom/android/systemui/statusbar/phone/WLBSwitchController;->access$500(Lcom/android/systemui/statusbar/phone/WLBSwitchController;Lcom/android/systemui/statusbar/phone/WLBSwitchController$BaseUserAdapter;)V
 
     return-void
 .end method

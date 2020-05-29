@@ -412,59 +412,87 @@
 .end method
 
 .method private flip(Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;
-    .locals 7
+    .locals 8
 
-    const/4 p0, 0x0
+    const-string p0, "OpAodLightEffectContainer"
+
+    const/4 v0, 0x0
 
     if-eqz p1, :cond_1
 
-    new-instance v5, Landroid/graphics/Matrix;
+    :try_start_0
+    new-instance v6, Landroid/graphics/Matrix;
 
-    invoke-direct {v5}, Landroid/graphics/Matrix;-><init>()V
+    invoke-direct {v6}, Landroid/graphics/Matrix;-><init>()V
 
-    const/high16 v0, -0x40800000    # -1.0f
+    const/high16 v1, -0x40800000    # -1.0f
 
-    const/high16 v1, 0x3f800000    # 1.0f
+    const/high16 v2, 0x3f800000    # 1.0f
 
-    invoke-virtual {v5, v0, v1}, Landroid/graphics/Matrix;->preScale(FF)Z
+    invoke-virtual {v6, v1, v2}, Landroid/graphics/Matrix;->preScale(FF)Z
 
     invoke-virtual {p1}, Landroid/graphics/Bitmap;->isRecycled()Z
 
-    move-result v0
+    move-result v1
 
-    if-eqz v0, :cond_0
+    if-eqz v1, :cond_0
 
-    const-string p1, "OpAodLightEffectContainer"
+    const-string p1, "src is recycled"
 
-    const-string v0, "src is recycled"
+    invoke-static {p0, p1}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
-    invoke-static {p1, v0}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
-
-    return-object p0
+    return-object v0
 
     :cond_0
-    const/4 v1, 0x0
-
     const/4 v2, 0x0
+
+    const/4 v3, 0x0
 
     invoke-virtual {p1}, Landroid/graphics/Bitmap;->getWidth()I
 
-    move-result v3
+    move-result v4
 
     invoke-virtual {p1}, Landroid/graphics/Bitmap;->getHeight()I
 
-    move-result v4
+    move-result v5
 
-    const/4 v6, 0x0
+    const/4 v7, 0x0
 
-    move-object v0, p1
+    move-object v1, p1
 
-    invoke-static/range {v0 .. v6}, Landroid/graphics/Bitmap;->createBitmap(Landroid/graphics/Bitmap;IIIILandroid/graphics/Matrix;Z)Landroid/graphics/Bitmap;
+    invoke-static/range {v1 .. v7}, Landroid/graphics/Bitmap;->createBitmap(Landroid/graphics/Bitmap;IIIILandroid/graphics/Matrix;Z)Landroid/graphics/Bitmap;
 
     move-result-object p0
+    :try_end_0
+    .catch Ljava/lang/RuntimeException; {:try_start_0 .. :try_end_0} :catch_0
+
+    return-object p0
+
+    :catch_0
+    move-exception p1
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v2, "flip error: "
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p1}, Ljava/lang/RuntimeException;->getMessage()Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-static {p0, p1}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_1
-    return-object p0
+    return-object v0
 .end method
 
 .method private initViews()V

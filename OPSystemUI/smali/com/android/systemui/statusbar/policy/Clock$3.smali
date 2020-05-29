@@ -32,7 +32,7 @@
 
 # virtual methods
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
-    .locals 4
+    .locals 0
 
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
@@ -48,7 +48,7 @@
 
     iget-object p1, p0, Lcom/android/systemui/statusbar/policy/Clock$3;->this$0:Lcom/android/systemui/statusbar/policy/Clock;
 
-    invoke-static {p1}, Lcom/android/systemui/statusbar/policy/Clock;->access$600(Lcom/android/systemui/statusbar/policy/Clock;)Landroid/os/Handler;
+    invoke-static {p1}, Lcom/android/systemui/statusbar/policy/Clock;->access$300(Lcom/android/systemui/statusbar/policy/Clock;)Landroid/os/Handler;
 
     move-result-object p1
 
@@ -56,13 +56,13 @@
 
     iget-object p1, p0, Lcom/android/systemui/statusbar/policy/Clock$3;->this$0:Lcom/android/systemui/statusbar/policy/Clock;
 
-    invoke-static {p1}, Lcom/android/systemui/statusbar/policy/Clock;->access$600(Lcom/android/systemui/statusbar/policy/Clock;)Landroid/os/Handler;
+    invoke-static {p1}, Lcom/android/systemui/statusbar/policy/Clock;->access$300(Lcom/android/systemui/statusbar/policy/Clock;)Landroid/os/Handler;
 
     move-result-object p1
 
     iget-object p0, p0, Lcom/android/systemui/statusbar/policy/Clock$3;->this$0:Lcom/android/systemui/statusbar/policy/Clock;
 
-    invoke-static {p0}, Lcom/android/systemui/statusbar/policy/Clock;->access$700(Lcom/android/systemui/statusbar/policy/Clock;)Ljava/lang/Runnable;
+    invoke-static {p0}, Lcom/android/systemui/statusbar/policy/Clock;->access$400(Lcom/android/systemui/statusbar/policy/Clock;)Ljava/lang/Runnable;
 
     move-result-object p0
 
@@ -81,37 +81,13 @@
 
     iget-object p1, p0, Lcom/android/systemui/statusbar/policy/Clock$3;->this$0:Lcom/android/systemui/statusbar/policy/Clock;
 
-    invoke-static {p1}, Lcom/android/systemui/statusbar/policy/Clock;->access$600(Lcom/android/systemui/statusbar/policy/Clock;)Landroid/os/Handler;
+    const/4 p2, 0x0
 
-    move-result-object p1
-
-    if-eqz p1, :cond_1
-
-    iget-object p1, p0, Lcom/android/systemui/statusbar/policy/Clock$3;->this$0:Lcom/android/systemui/statusbar/policy/Clock;
-
-    invoke-static {p1}, Lcom/android/systemui/statusbar/policy/Clock;->access$600(Lcom/android/systemui/statusbar/policy/Clock;)Landroid/os/Handler;
-
-    move-result-object p1
+    invoke-static {p1, p2}, Lcom/android/systemui/statusbar/policy/Clock;->access$502(Lcom/android/systemui/statusbar/policy/Clock;I)I
 
     iget-object p0, p0, Lcom/android/systemui/statusbar/policy/Clock$3;->this$0:Lcom/android/systemui/statusbar/policy/Clock;
 
-    invoke-static {p0}, Lcom/android/systemui/statusbar/policy/Clock;->access$700(Lcom/android/systemui/statusbar/policy/Clock;)Ljava/lang/Runnable;
-
-    move-result-object p0
-
-    invoke-static {}, Landroid/os/SystemClock;->uptimeMillis()J
-
-    move-result-wide v0
-
-    const-wide/16 v2, 0x3e8
-
-    div-long/2addr v0, v2
-
-    mul-long/2addr v0, v2
-
-    add-long/2addr v0, v2
-
-    invoke-virtual {p1, p0, v0, v1}, Landroid/os/Handler;->postAtTime(Ljava/lang/Runnable;J)Z
+    invoke-static {p0}, Lcom/android/systemui/statusbar/policy/Clock;->access$1000(Lcom/android/systemui/statusbar/policy/Clock;)V
 
     :cond_1
     :goto_0

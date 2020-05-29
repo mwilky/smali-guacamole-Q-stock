@@ -3,7 +3,7 @@
 .source "OpFingerprintDialogView.java"
 
 # interfaces
-.implements Ljava/lang/Runnable;
+.implements Lcom/oneplus/systemui/biometrics/OpFrameAnimationHelper$Callbacks;
 
 
 # annotations
@@ -34,64 +34,62 @@
 
 
 # virtual methods
-.method public run()V
-    .locals 2
+.method public animationFinished()V
+    .locals 3
 
-    new-instance v0, Ljava/lang/StringBuilder;
+    const-string v0, "OpFingerprintDialogView"
 
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+    const-string v1, "animationFinished"
 
-    const-string v1, "Press Timeout: pressed = "
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     iget-object v1, p0, Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView$5;->this$0:Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView;
 
-    invoke-static {v1}, Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView;->access$3100(Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView;)Z
+    invoke-static {v1}, Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView;->access$1700(Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView;)V
 
-    move-result v1
+    iget-object v1, p0, Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView$5;->this$0:Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView;
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+    invoke-static {v1}, Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView;->access$1800(Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView;)V
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    iget-object v1, p0, Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView$5;->this$0:Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView;
 
-    move-result-object v0
+    invoke-static {v1}, Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView;->access$1400(Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView;)Lcom/oneplus/systemui/biometrics/OpBiometricDialogImpl;
 
-    const-string v1, "OpFingerprintDialogView"
+    move-result-object v1
 
-    invoke-static {v1, v0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-virtual {v1}, Lcom/oneplus/systemui/biometrics/OpBiometricDialogImpl;->collapseTransparentLayout()V
 
-    iget-object v0, p0, Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView$5;->this$0:Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView;
+    iget-object v1, p0, Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView$5;->this$0:Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView;
 
-    invoke-static {v0}, Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView;->access$3100(Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView;)Z
+    iget-boolean v1, v1, Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView;->mPendingHideDialog:Z
 
-    move-result v0
+    if-eqz v1, :cond_0
 
-    if-eqz v0, :cond_0
+    const-string v1, "Pending hide fingerprint dialog until animation end"
+
+    invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     iget-object v0, p0, Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView$5;->this$0:Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView;
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView;->access$3200(Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView;I)V
+    iput-boolean v1, v0, Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView;->mPendingHideDialog:Z
+
+    invoke-static {v0, v1}, Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView;->access$1902(Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView;Z)Z
 
     iget-object v0, p0, Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView$5;->this$0:Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView;
 
-    const/4 v1, 0x2
-
-    invoke-static {v0, v1}, Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView;->access$3300(Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView;I)V
-
-    iget-object v0, p0, Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView$5;->this$0:Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView;
-
-    invoke-static {v0}, Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView;->access$3400(Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView;->access$1400(Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView;)Lcom/oneplus/systemui/biometrics/OpBiometricDialogImpl;
 
     move-result-object v0
 
-    new-instance v1, Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView$5$1;
+    const-string v2, "animation finished"
 
-    invoke-direct {v1, p0}, Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView$5$1;-><init>(Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView$5;)V
+    invoke-virtual {v0, v2}, Lcom/oneplus/systemui/biometrics/OpBiometricDialogImpl;->hideFodDialogInner(Ljava/lang/String;)V
 
-    invoke-virtual {v0, v1}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
+    iget-object p0, p0, Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView$5;->this$0:Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView;
+
+    invoke-virtual {p0, v1}, Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView;->updateIconVisibility(Z)V
 
     :cond_0
     return-void

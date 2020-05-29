@@ -1,5 +1,5 @@
 .class public Lcom/android/systemui/util/NotificationChannels;
-.super Lcom/android/systemui/SystemUI;
+.super Lcom/oneplus/systemui/util/OpNotificationChannels;
 .source "NotificationChannels.java"
 
 
@@ -25,7 +25,7 @@
 .method public constructor <init>()V
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/systemui/SystemUI;-><init>()V
+    invoke-direct {p0}, Lcom/oneplus/systemui/util/OpNotificationChannels;-><init>()V
 
     return-void
 .end method
@@ -77,41 +77,59 @@
 
     invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
+    move-result-object v3
+
+    invoke-static {v3}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
+
+    move-result-object v3
+
+    new-instance v5, Landroid/media/AudioAttributes$Builder;
+
+    invoke-direct {v5}, Landroid/media/AudioAttributes$Builder;-><init>()V
+
+    const/4 v6, 0x4
+
+    invoke-virtual {v5, v6}, Landroid/media/AudioAttributes$Builder;->setContentType(I)Landroid/media/AudioAttributes$Builder;
+
+    move-result-object v5
+
+    const/16 v7, 0xa
+
+    invoke-virtual {v5, v7}, Landroid/media/AudioAttributes$Builder;->setUsage(I)Landroid/media/AudioAttributes$Builder;
+
+    move-result-object v5
+
+    invoke-virtual {v5}, Landroid/media/AudioAttributes$Builder;->build()Landroid/media/AudioAttributes;
+
+    move-result-object v5
+
+    invoke-virtual {v1, v3, v5}, Landroid/app/NotificationChannel;->setSound(Landroid/net/Uri;Landroid/media/AudioAttributes;)V
+
+    const/4 v3, 0x1
+
+    invoke-virtual {v1, v3}, Landroid/app/NotificationChannel;->setBlockableSystem(Z)V
+
+    sget-object v5, Lcom/oneplus/systemui/util/OpNotificationChannels;->TAG:Ljava/lang/String;
+
+    new-instance v7, Ljava/lang/StringBuilder;
+
+    invoke-direct {v7}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v8, " soundPath:"
+
+    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v7, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v7}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
     move-result-object v2
 
-    invoke-static {v2}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
+    invoke-static {v5, v2}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    move-result-object v2
+    new-instance v2, Landroid/app/NotificationChannel;
 
-    new-instance v3, Landroid/media/AudioAttributes$Builder;
-
-    invoke-direct {v3}, Landroid/media/AudioAttributes$Builder;-><init>()V
-
-    const/4 v5, 0x4
-
-    invoke-virtual {v3, v5}, Landroid/media/AudioAttributes$Builder;->setContentType(I)Landroid/media/AudioAttributes$Builder;
-
-    move-result-object v3
-
-    const/16 v6, 0xa
-
-    invoke-virtual {v3, v6}, Landroid/media/AudioAttributes$Builder;->setUsage(I)Landroid/media/AudioAttributes$Builder;
-
-    move-result-object v3
-
-    invoke-virtual {v3}, Landroid/media/AudioAttributes$Builder;->build()Landroid/media/AudioAttributes;
-
-    move-result-object v3
-
-    invoke-virtual {v1, v2, v3}, Landroid/app/NotificationChannel;->setSound(Landroid/net/Uri;Landroid/media/AudioAttributes;)V
-
-    const/4 v2, 0x1
-
-    invoke-virtual {v1, v2}, Landroid/app/NotificationChannel;->setBlockableSystem(Z)V
-
-    new-instance v3, Landroid/app/NotificationChannel;
-
-    sget-object v6, Lcom/android/systemui/util/NotificationChannels;->ALERTS:Ljava/lang/String;
+    sget-object v5, Lcom/android/systemui/util/NotificationChannels;->ALERTS:Ljava/lang/String;
 
     sget v7, Lcom/android/systemui/R$string;->notification_channel_alerts:I
 
@@ -119,9 +137,9 @@
 
     move-result-object v7
 
-    invoke-direct {v3, v6, v7, v5}, Landroid/app/NotificationChannel;-><init>(Ljava/lang/String;Ljava/lang/CharSequence;I)V
+    invoke-direct {v2, v5, v7, v6}, Landroid/app/NotificationChannel;-><init>(Ljava/lang/String;Ljava/lang/CharSequence;I)V
 
-    new-instance v6, Landroid/app/NotificationChannel;
+    new-instance v5, Landroid/app/NotificationChannel;
 
     sget-object v7, Lcom/android/systemui/util/NotificationChannels;->GENERAL:Ljava/lang/String;
 
@@ -131,7 +149,7 @@
 
     move-result-object v8
 
-    invoke-direct {v6, v7, v8, v2}, Landroid/app/NotificationChannel;-><init>(Ljava/lang/String;Ljava/lang/CharSequence;I)V
+    invoke-direct {v5, v7, v8, v3}, Landroid/app/NotificationChannel;-><init>(Ljava/lang/String;Ljava/lang/CharSequence;I)V
 
     new-instance v7, Landroid/app/NotificationChannel;
 
@@ -181,9 +199,9 @@
 
     const/4 v10, 0x0
 
-    aput-object v3, v9, v10
+    aput-object v2, v9, v10
 
-    aput-object v6, v9, v2
+    aput-object v5, v9, v3
 
     aput-object v7, v9, v11
 
@@ -205,41 +223,43 @@
 
     aput-object v2, v9, v12
 
-    aput-object v1, v9, v5
+    aput-object v1, v9, v6
 
     aput-object v8, v9, v4
 
     invoke-static {v9}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
 
-    move-result-object v1
+    move-result-object v2
 
-    invoke-virtual {v0, v1}, Landroid/app/NotificationManager;->createNotificationChannels(Ljava/util/List;)V
+    invoke-virtual {v0, v2}, Landroid/app/NotificationManager;->createNotificationChannels(Ljava/util/List;)V
 
-    sget-object v1, Lcom/android/systemui/util/NotificationChannels;->SCREENSHOTS_LEGACY:Ljava/lang/String;
+    sget-object v2, Lcom/android/systemui/util/NotificationChannels;->SCREENSHOTS_LEGACY:Ljava/lang/String;
 
-    invoke-virtual {v0, v1}, Landroid/app/NotificationManager;->deleteNotificationChannel(Ljava/lang/String;)V
+    invoke-virtual {v0, v2}, Landroid/app/NotificationManager;->deleteNotificationChannel(Ljava/lang/String;)V
 
     invoke-static {p0}, Lcom/android/systemui/util/NotificationChannels;->isTv(Landroid/content/Context;)Z
 
-    move-result v1
+    move-result v2
 
-    if-eqz v1, :cond_1
+    if-eqz v2, :cond_1
 
-    new-instance v1, Landroid/app/NotificationChannel;
+    new-instance v2, Landroid/app/NotificationChannel;
 
-    sget-object v2, Lcom/android/systemui/util/NotificationChannels;->TVPIP:Ljava/lang/String;
+    sget-object v3, Lcom/android/systemui/util/NotificationChannels;->TVPIP:Ljava/lang/String;
 
-    sget v3, Lcom/android/systemui/R$string;->notification_channel_tv_pip:I
+    sget v5, Lcom/android/systemui/R$string;->notification_channel_tv_pip:I
 
-    invoke-virtual {p0, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v5}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
-    move-result-object p0
+    move-result-object v5
 
-    invoke-direct {v1, v2, p0, v4}, Landroid/app/NotificationChannel;-><init>(Ljava/lang/String;Ljava/lang/CharSequence;I)V
+    invoke-direct {v2, v3, v5, v4}, Landroid/app/NotificationChannel;-><init>(Ljava/lang/String;Ljava/lang/CharSequence;I)V
 
-    invoke-virtual {v0, v1}, Landroid/app/NotificationManager;->createNotificationChannel(Landroid/app/NotificationChannel;)V
+    invoke-virtual {v0, v2}, Landroid/app/NotificationManager;->createNotificationChannel(Landroid/app/NotificationChannel;)V
 
     :cond_1
+    invoke-static {p0, v1}, Lcom/oneplus/systemui/util/OpNotificationChannels;->opMayUpdateBatteryNotificationCannel(Landroid/content/Context;Landroid/app/NotificationChannel;)V
+
     return-void
 .end method
 

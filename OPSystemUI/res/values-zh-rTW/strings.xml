@@ -323,7 +323,7 @@
     <string name="battery_saver_notification_title">節約耗電量模式已開啟</string>
     <string name="battery_saver_start_action">開啟節約耗電量模式</string>
     <string name="battery_usage_extanded">開啟節約耗電量模式後預計延長使用時間約 %s</string>
-    <string name="battery_usage_remaining">根據當前使用狀況，你的裝置大約還可以使用 %s。已降低效能並限制背景數據傳輸。</string>
+    <string name="battery_usage_remaining_time">剩餘 %s</string>
     <string name="biometric_dialog_confirm">確認</string>
     <string name="biometric_dialog_empty_space_description">空白的區域，輕觸即可取消驗證</string>
     <string name="biometric_dialog_face_icon_description_authenticated">臉孔驗證成功</string>
@@ -592,7 +592,7 @@
     <string name="face_dialog_looking_for_face">正在尋找你的臉孔…</string>
     <string name="face_unlock_camera_error">臉部辨識失敗，相機正被其它應用佔用</string>
     <string name="face_unlock_fail">臉部辨識失敗，點擊圖示再次辨識</string>
-    <string name="face_unlock_light_view_notify">正在進行屏幕補光，幫助完成臉部辨識。</string>
+    <string name="face_unlock_light_view_notify">正在進行螢幕補光，幫助完成臉部辨識。</string>
     <string name="face_unlock_no_face">沒有偵測到人臉，點擊圖示再次辨識</string>
     <string name="face_unlock_no_permission">臉部辨識無法獲得相機權限，請使用其它方式解鎖</string>
     <string name="face_unlock_notify_password">使用臉部辨識或使用密碼進行解鎖</string>
@@ -1072,11 +1072,11 @@
     <string name="oneplus_screen_features_not_available_toast">開啟後，螢幕顏色模式等功能將無法使用</string>
     <string name="oneplus_threekey_navigation_disturb_changed">勿擾模式已搬家</string>
     <string name="oneplus_threekey_navigation_next">下一步</string>
-    <string name="oneplus_threekey_navigation_silence">完全靜音且不振動</string>
+    <string name="oneplus_threekey_navigation_silence">完全靜音且不震動</string>
     <string name="oneplus_threekey_navigation_slider_has_changed">全新三段式開關</string>
-    <string name="oneplus_threekey_navigation_sound">允許聲音和振動</string>
+    <string name="oneplus_threekey_navigation_sound">允許聲音和震動</string>
     <string name="oneplus_threekey_navigation_turned_on_here">可在下拉菜單裡打開勿擾模式</string>
-    <string name="oneplus_threekey_navigation_vibration">僅提供振動</string>
+    <string name="oneplus_threekey_navigation_vibration">僅提供震動</string>
     <string name="ongoing_privacy_chip_content_multiple_apps">有多個應用程式正在使用%s。</string>
     <string name="ongoing_privacy_chip_content_single_app">「%1$s」正在使用%2$s。</string>
     <string name="ongoing_privacy_dialog_last_separator">" 和 "</string>
@@ -1204,7 +1204,7 @@
     <string name="prevent_view_title">已啟用口袋模式</string>
     <string name="prevent_view_title_cancel">關閉方式：</string>
     <string name="prevent_view_top_tag_cancel">請勿遮擋如圖所示藍色區域，擦拭掉該區域的灰塵或油汙</string>
-    <string name="prevent_view_top_tag_cancel2">依次點擊屏幕上的圓圈，強制退出口袋模式</string>
+    <string name="prevent_view_top_tag_cancel2">依次點擊螢幕上的圓圈，強制退出口袋模式</string>
     <string name="prevent_view_top_tag_numbuer1">"1. "</string>
     <string name="prevent_view_top_tag_numbuer2">"2. "</string>
     <string name="privacy_type_camera">相機</string>
@@ -1289,8 +1289,8 @@
     <string name="quick_settings_footer_audio_output">音頻輸出</string>
     <string name="quick_settings_footer_audio_speaker">揚聲器</string>
     <string name="quick_settings_game_mode_demo">遊戲免打擾開啟時，%s，你可以在控制中心里關閉或點擊通知關閉該模式。</string>
-    <string name="quick_settings_game_mode_demo_all">會屏蔽懸浮通知及屏幕下方的3個按鍵</string>
-    <string name="quick_settings_game_mode_demo_button">會屏蔽手機屏幕下方的3個按鍵</string>
+    <string name="quick_settings_game_mode_demo_all">會屏蔽懸浮通知及螢幕下方的3個按鍵</string>
+    <string name="quick_settings_game_mode_demo_button">會屏蔽手機螢幕下方的3個按鍵</string>
     <string name="quick_settings_game_mode_demo_notification">會屏蔽懸浮通知</string>
     <string name="quick_settings_game_mode_label">遊戲模式</string>
     <string name="quick_settings_game_mode_summary_off">遊戲模式已關閉，輕觸即可開啟</string>

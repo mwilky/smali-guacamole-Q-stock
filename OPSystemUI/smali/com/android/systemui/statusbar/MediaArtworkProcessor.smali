@@ -44,148 +44,328 @@
 .end method
 
 .method public final processArtwork(Landroid/content/Context;Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;
-    .locals 4
+    .locals 8
 
-    const-string v0, "context"
+    const-string v0, "inBitmap"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    const-string v1, "context"
 
-    const-string v0, "artwork"
+    invoke-static {p1, v1}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    const-string v1, "artwork"
 
-    iget-object v0, p0, Lcom/android/systemui/statusbar/MediaArtworkProcessor;->mArtworkCache:Landroid/graphics/Bitmap;
+    invoke-static {p2, v1}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
 
-    if-eqz v0, :cond_1
+    iget-object v1, p0, Lcom/android/systemui/statusbar/MediaArtworkProcessor;->mArtworkCache:Landroid/graphics/Bitmap;
 
-    if-eqz v0, :cond_0
+    if-eqz v1, :cond_0
 
-    return-object v0
+    return-object v1
 
     :cond_0
-    invoke-static {}, Lkotlin/jvm/internal/Intrinsics;->throwNpe()V
-
-    const/4 p0, 0x0
-
-    throw p0
-
-    :cond_1
-    invoke-virtual {p1}, Landroid/content/Context;->getDisplay()Landroid/view/Display;
-
-    move-result-object v0
-
-    iget-object v1, p0, Lcom/android/systemui/statusbar/MediaArtworkProcessor;->mTmpSize:Landroid/graphics/Point;
-
-    invoke-virtual {v0, v1}, Landroid/view/Display;->getSize(Landroid/graphics/Point;)V
-
     invoke-static {p1}, Landroid/renderscript/RenderScript;->create(Landroid/content/Context;)Landroid/renderscript/RenderScript;
 
-    move-result-object p1
+    move-result-object v1
 
-    new-instance v0, Landroid/graphics/Rect;
+    invoke-static {v1}, Landroid/renderscript/Element;->U8_4(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
 
-    invoke-virtual {p2}, Landroid/graphics/Bitmap;->getWidth()I
+    move-result-object v2
 
-    move-result v1
+    invoke-static {v1, v2}, Landroid/renderscript/ScriptIntrinsicBlur;->create(Landroid/renderscript/RenderScript;Landroid/renderscript/Element;)Landroid/renderscript/ScriptIntrinsicBlur;
 
-    invoke-virtual {p2}, Landroid/graphics/Bitmap;->getHeight()I
-
-    move-result v2
+    move-result-object v2
 
     const/4 v3, 0x0
 
-    invoke-direct {v0, v3, v3, v1, v2}, Landroid/graphics/Rect;-><init>(IIII)V
+    :try_start_0
+    invoke-virtual {p1}, Landroid/content/Context;->getDisplay()Landroid/view/Display;
+
+    move-result-object p1
+
+    iget-object v4, p0, Lcom/android/systemui/statusbar/MediaArtworkProcessor;->mTmpSize:Landroid/graphics/Point;
+
+    invoke-virtual {p1, v4}, Landroid/view/Display;->getSize(Landroid/graphics/Point;)V
+
+    new-instance p1, Landroid/graphics/Rect;
+
+    invoke-virtual {p2}, Landroid/graphics/Bitmap;->getWidth()I
+
+    move-result v4
+
+    invoke-virtual {p2}, Landroid/graphics/Bitmap;->getHeight()I
+
+    move-result v5
+
+    const/4 v6, 0x0
+
+    invoke-direct {p1, v6, v6, v4, v5}, Landroid/graphics/Rect;-><init>(IIII)V
+
+    iget-object v4, p0, Lcom/android/systemui/statusbar/MediaArtworkProcessor;->mTmpSize:Landroid/graphics/Point;
+
+    iget v4, v4, Landroid/graphics/Point;->x:I
+
+    div-int/lit8 v4, v4, 0x6
 
     iget-object p0, p0, Lcom/android/systemui/statusbar/MediaArtworkProcessor;->mTmpSize:Landroid/graphics/Point;
-
-    iget v1, p0, Landroid/graphics/Point;->x:I
-
-    div-int/lit8 v1, v1, 0x6
 
     iget p0, p0, Landroid/graphics/Point;->y:I
 
     div-int/lit8 p0, p0, 0x6
 
-    invoke-static {v1, p0}, Ljava/lang/Math;->max(II)I
+    invoke-static {v4, p0}, Ljava/lang/Math;->max(II)I
 
     move-result p0
 
-    invoke-static {v0, p0}, Landroid/util/MathUtils;->fitRect(Landroid/graphics/Rect;I)V
+    invoke-static {p1, p0}, Landroid/util/MathUtils;->fitRect(Landroid/graphics/Rect;I)V
 
-    invoke-virtual {v0}, Landroid/graphics/Rect;->width()I
+    invoke-virtual {p1}, Landroid/graphics/Rect;->width()I
 
     move-result p0
 
-    invoke-virtual {v0}, Landroid/graphics/Rect;->height()I
+    invoke-virtual {p1}, Landroid/graphics/Rect;->height()I
 
-    move-result v0
+    move-result p1
 
-    const/4 v1, 0x1
+    const/4 v4, 0x1
 
-    invoke-static {p2, p0, v0, v1}, Landroid/graphics/Bitmap;->createScaledBitmap(Landroid/graphics/Bitmap;IIZ)Landroid/graphics/Bitmap;
+    invoke-static {p2, p0, p1, v4}, Landroid/graphics/Bitmap;->createScaledBitmap(Landroid/graphics/Bitmap;IIZ)Landroid/graphics/Bitmap;
 
     move-result-object p0
+    :try_end_0
+    .catch Ljava/lang/IllegalArgumentException; {:try_start_0 .. :try_end_0} :catch_4
+    .catchall {:try_start_0 .. :try_end_0} :catchall_4
 
-    const-string p2, "inBitmap"
-
-    invoke-static {p0, p2}, Lkotlin/jvm/internal/Intrinsics;->checkExpressionValueIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    :try_start_1
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkExpressionValueIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {p0}, Landroid/graphics/Bitmap;->getConfig()Landroid/graphics/Bitmap$Config;
 
-    move-result-object v0
+    move-result-object p1
 
-    sget-object v1, Landroid/graphics/Bitmap$Config;->ARGB_8888:Landroid/graphics/Bitmap$Config;
+    sget-object p2, Landroid/graphics/Bitmap$Config;->ARGB_8888:Landroid/graphics/Bitmap$Config;
 
-    if-eq v0, v1, :cond_2
+    if-eq p1, p2, :cond_1
 
-    invoke-virtual {p0, v1, v3}, Landroid/graphics/Bitmap;->copy(Landroid/graphics/Bitmap$Config;Z)Landroid/graphics/Bitmap;
+    sget-object p1, Landroid/graphics/Bitmap$Config;->ARGB_8888:Landroid/graphics/Bitmap$Config;
 
-    move-result-object v0
+    invoke-virtual {p0, p1, v6}, Landroid/graphics/Bitmap;->copy(Landroid/graphics/Bitmap$Config;Z)Landroid/graphics/Bitmap;
 
+    move-result-object p1
+    :try_end_1
+    .catch Ljava/lang/IllegalArgumentException; {:try_start_1 .. :try_end_1} :catch_3
+    .catchall {:try_start_1 .. :try_end_1} :catchall_3
+
+    :try_start_2
     invoke-virtual {p0}, Landroid/graphics/Bitmap;->recycle()V
+    :try_end_2
+    .catch Ljava/lang/IllegalArgumentException; {:try_start_2 .. :try_end_2} :catch_0
+    .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
-    move-object p0, v0
+    move-object p0, p1
 
-    :cond_2
-    sget-object v0, Landroid/renderscript/Allocation$MipmapControl;->MIPMAP_NONE:Landroid/renderscript/Allocation$MipmapControl;
+    goto :goto_0
 
-    const/4 v1, 0x2
+    :catchall_0
+    move-exception p0
 
-    invoke-static {p1, p0, v0, v1}, Landroid/renderscript/Allocation;->createFromBitmap(Landroid/renderscript/RenderScript;Landroid/graphics/Bitmap;Landroid/renderscript/Allocation$MipmapControl;I)Landroid/renderscript/Allocation;
+    move-object v0, v3
 
-    move-result-object v0
+    goto/16 :goto_6
 
-    invoke-static {p0, p2}, Lkotlin/jvm/internal/Intrinsics;->checkExpressionValueIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    :catch_0
+    move-exception p0
+
+    move-object p2, v3
+
+    goto/16 :goto_4
+
+    :cond_1
+    :goto_0
+    :try_start_3
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkExpressionValueIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {p0}, Landroid/graphics/Bitmap;->getWidth()I
 
-    move-result p2
+    move-result p1
 
     invoke-virtual {p0}, Landroid/graphics/Bitmap;->getHeight()I
 
-    move-result v1
+    move-result p2
 
-    sget-object v2, Landroid/graphics/Bitmap$Config;->ARGB_8888:Landroid/graphics/Bitmap$Config;
+    sget-object v0, Landroid/graphics/Bitmap$Config;->ARGB_8888:Landroid/graphics/Bitmap$Config;
 
-    invoke-static {p2, v1, v2}, Landroid/graphics/Bitmap;->createBitmap(IILandroid/graphics/Bitmap$Config;)Landroid/graphics/Bitmap;
-
-    move-result-object p2
-
-    invoke-static {p1, p2}, Landroid/renderscript/Allocation;->createFromBitmap(Landroid/renderscript/RenderScript;Landroid/graphics/Bitmap;)Landroid/renderscript/Allocation;
+    invoke-static {p1, p2, v0}, Landroid/graphics/Bitmap;->createBitmap(IILandroid/graphics/Bitmap$Config;)Landroid/graphics/Bitmap;
 
     move-result-object p1
 
-    invoke-virtual {v0, p2}, Landroid/renderscript/Allocation;->copyTo(Landroid/graphics/Bitmap;)V
+    sget-object p2, Landroid/renderscript/Allocation$MipmapControl;->MIPMAP_NONE:Landroid/renderscript/Allocation$MipmapControl;
+
+    const/4 v0, 0x2
+
+    invoke-static {v1, p0, p2, v0}, Landroid/renderscript/Allocation;->createFromBitmap(Landroid/renderscript/RenderScript;Landroid/graphics/Bitmap;Landroid/renderscript/Allocation$MipmapControl;I)Landroid/renderscript/Allocation;
+
+    move-result-object p2
+    :try_end_3
+    .catch Ljava/lang/IllegalArgumentException; {:try_start_3 .. :try_end_3} :catch_3
+    .catchall {:try_start_3 .. :try_end_3} :catchall_3
+
+    :try_start_4
+    invoke-static {v1, p1}, Landroid/renderscript/Allocation;->createFromBitmap(Landroid/renderscript/RenderScript;Landroid/graphics/Bitmap;)Landroid/renderscript/Allocation;
+
+    move-result-object v0
+    :try_end_4
+    .catch Ljava/lang/IllegalArgumentException; {:try_start_4 .. :try_end_4} :catch_2
+    .catchall {:try_start_4 .. :try_end_4} :catchall_2
+
+    :try_start_5
+    invoke-virtual {p2, p1}, Landroid/renderscript/Allocation;->copyTo(Landroid/graphics/Bitmap;)V
+    :try_end_5
+    .catch Ljava/lang/IllegalArgumentException; {:try_start_5 .. :try_end_5} :catch_1
+    .catchall {:try_start_5 .. :try_end_5} :catchall_1
+
+    if-eqz p2, :cond_2
+
+    invoke-virtual {p2}, Landroid/renderscript/Allocation;->destroy()V
+
+    :cond_2
+    if-eqz v0, :cond_3
 
     invoke-virtual {v0}, Landroid/renderscript/Allocation;->destroy()V
 
-    invoke-virtual {p1}, Landroid/renderscript/Allocation;->destroy()V
+    :cond_3
+    invoke-virtual {v2}, Landroid/renderscript/ScriptIntrinsicBlur;->destroy()V
 
     invoke-virtual {p0}, Landroid/graphics/Bitmap;->recycle()V
 
-    const-string p0, "outBitmap"
+    return-object p1
 
-    invoke-static {p2, p0}, Lkotlin/jvm/internal/Intrinsics;->checkExpressionValueIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    :catchall_1
+    move-exception p1
 
-    return-object p2
+    goto :goto_1
+
+    :catch_1
+    move-exception p1
+
+    goto :goto_3
+
+    :catchall_2
+    move-exception p1
+
+    move-object v0, v3
+
+    :goto_1
+    move-object v3, p2
+
+    goto :goto_2
+
+    :catch_2
+    move-exception p1
+
+    move-object v0, v3
+
+    goto :goto_3
+
+    :catchall_3
+    move-exception p1
+
+    move-object v0, v3
+
+    :goto_2
+    move-object v7, p1
+
+    move-object p1, p0
+
+    move-object p0, v7
+
+    goto :goto_6
+
+    :catch_3
+    move-exception p1
+
+    move-object p2, v3
+
+    move-object v0, p2
+
+    :goto_3
+    move-object v7, p1
+
+    move-object p1, p0
+
+    move-object p0, v7
+
+    goto :goto_5
+
+    :catchall_4
+    move-exception p0
+
+    move-object p1, v3
+
+    move-object v0, p1
+
+    goto :goto_6
+
+    :catch_4
+    move-exception p0
+
+    move-object p1, v3
+
+    move-object p2, p1
+
+    :goto_4
+    move-object v0, p2
+
+    :goto_5
+    :try_start_6
+    const-string v1, "MediaArtworkProcessor"
+
+    const-string v4, "error while processing artwork"
+
+    invoke-static {v1, v4, p0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
+    :try_end_6
+    .catchall {:try_start_6 .. :try_end_6} :catchall_5
+
+    if-eqz p2, :cond_4
+
+    invoke-virtual {p2}, Landroid/renderscript/Allocation;->destroy()V
+
+    :cond_4
+    if-eqz v0, :cond_5
+
+    invoke-virtual {v0}, Landroid/renderscript/Allocation;->destroy()V
+
+    :cond_5
+    invoke-virtual {v2}, Landroid/renderscript/ScriptIntrinsicBlur;->destroy()V
+
+    if-eqz p1, :cond_6
+
+    invoke-virtual {p1}, Landroid/graphics/Bitmap;->recycle()V
+
+    :cond_6
+    return-object v3
+
+    :catchall_5
+    move-exception p0
+
+    move-object v3, p2
+
+    :goto_6
+    if-eqz v3, :cond_7
+
+    invoke-virtual {v3}, Landroid/renderscript/Allocation;->destroy()V
+
+    :cond_7
+    if-eqz v0, :cond_8
+
+    invoke-virtual {v0}, Landroid/renderscript/Allocation;->destroy()V
+
+    :cond_8
+    invoke-virtual {v2}, Landroid/renderscript/ScriptIntrinsicBlur;->destroy()V
+
+    if-eqz p1, :cond_9
+
+    invoke-virtual {p1}, Landroid/graphics/Bitmap;->recycle()V
+
+    :cond_9
+    throw p0
 .end method

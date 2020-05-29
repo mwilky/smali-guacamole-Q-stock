@@ -145,7 +145,7 @@
 
     const/4 v2, 0x0
 
-    const-string v3, "text"
+    const-string/jumbo v3, "text"
 
     const-string/jumbo v4, "title"
 

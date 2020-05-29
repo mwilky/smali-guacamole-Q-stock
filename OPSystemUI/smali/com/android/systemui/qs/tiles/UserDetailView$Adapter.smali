@@ -244,7 +244,7 @@
 
     if-nez v0, :cond_2
 
-    const-string v0, "switch"
+    const-string/jumbo v0, "switch"
 
     invoke-static {v2, v0, v1}, Lcom/oneplus/systemui/util/OpMdmLogger;->log(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 

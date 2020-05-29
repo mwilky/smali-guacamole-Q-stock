@@ -361,7 +361,7 @@
 
     new-instance v2, Lcom/android/systemui/statusbar/notification/row/NotificationMenuRow$NotificationMenuItem;
 
-    sget v3, Lcom/android/systemui/R$drawable;->ic_settings:I
+    sget v3, Lcom/android/systemui/R$drawable;->op_ic_settings:I
 
     invoke-direct {v2, p0, v0, v1, v3}, Lcom/android/systemui/statusbar/notification/row/NotificationMenuRow$NotificationMenuItem;-><init>(Landroid/content/Context;Ljava/lang/String;Lcom/android/systemui/statusbar/notification/row/NotificationGuts$GutsContent;I)V
 

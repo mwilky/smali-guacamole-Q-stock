@@ -112,7 +112,7 @@
     :goto_1
     if-nez p1, :cond_3
 
-    const-string p1, "text"
+    const-string/jumbo p1, "text"
 
     invoke-virtual {p1, p0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -455,7 +455,7 @@
 
     if-ge v4, v7, :cond_7
 
-    const-string v4, "text"
+    const-string/jumbo v4, "text"
 
     invoke-virtual {v4, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 

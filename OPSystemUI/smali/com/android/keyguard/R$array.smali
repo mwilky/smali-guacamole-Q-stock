@@ -4,4 +4,4 @@
 
 
 # static fields
-.field public static final lockscreen_num_pad_klondike:I = 0x7f030039
+.field public static final lockscreen_num_pad_klondike:I = 0x7f03003a

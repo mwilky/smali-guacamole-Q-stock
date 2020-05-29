@@ -145,7 +145,7 @@
     goto :goto_1
 
     :sswitch_3
-    const-string v1, "text"
+    const-string/jumbo v1, "text"
 
     invoke-virtual {p1, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -308,6 +308,8 @@
     :cond_4
     return-void
 
+    nop
+
     :sswitch_data_0
     .sparse-switch
         -0x54d081ca -> :sswitch_6
@@ -395,7 +397,7 @@
     goto :goto_0
 
     :sswitch_3
-    const-string v1, "text"
+    const-string/jumbo v1, "text"
 
     invoke-virtual {p1, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -557,6 +559,8 @@
     invoke-direct {p1, v0, p0}, Landroidx/core/util/Pair;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
 
     return-object p1
+
+    nop
 
     :sswitch_data_0
     .sparse-switch

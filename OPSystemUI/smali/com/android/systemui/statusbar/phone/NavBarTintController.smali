@@ -308,15 +308,32 @@
 
     cmpl-float v0, v0, v1
 
-    if-lez v0, :cond_1
+    if-gtz v0, :cond_0
 
+    iget-object v0, p0, Lcom/android/systemui/statusbar/phone/NavBarTintController;->mNavigationBarView:Lcom/android/systemui/statusbar/phone/NavigationBarView;
+
+    invoke-virtual {v0}, Lcom/android/systemui/statusbar/phone/NavigationBarView;->isImeShow()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_2
+
+    iget v0, p0, Lcom/android/systemui/statusbar/phone/NavBarTintController;->mNavBarMode:I
+
+    invoke-static {v0}, Lcom/android/systemui/shared/system/QuickStepContract;->isGesturalMode(I)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_2
+
+    :cond_0
     iget v0, p0, Lcom/android/systemui/statusbar/phone/NavBarTintController;->mLuminanceThreshold:F
 
     cmpl-float v0, p1, v0
 
     const/4 v1, 0x1
 
-    if-lez v0, :cond_0
+    if-lez v0, :cond_1
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/NavBarTintController;->mLightBarController:Lcom/android/systemui/statusbar/phone/LightBarTransitionsController;
 
@@ -324,7 +341,7 @@
 
     goto :goto_0
 
-    :cond_0
+    :cond_1
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/NavBarTintController;->mLightBarController:Lcom/android/systemui/statusbar/phone/LightBarTransitionsController;
 
     const/4 v2, 0x0
@@ -334,7 +351,7 @@
     :goto_0
     iput p1, p0, Lcom/android/systemui/statusbar/phone/NavBarTintController;->mCurrentMedianLuma:F
 
-    :cond_1
+    :cond_2
     return-void
 .end method
 

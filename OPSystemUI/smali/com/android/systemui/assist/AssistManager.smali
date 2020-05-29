@@ -4,6 +4,7 @@
 
 # interfaces
 .implements Lcom/android/systemui/ConfigurationChangedReceiver;
+.implements Lcom/android/systemui/statusbar/policy/ConfigurationController$ConfigurationListener;
 
 
 # annotations
@@ -163,6 +164,16 @@
     invoke-direct {p2, p0}, Lcom/android/systemui/assist/AssistManager$3;-><init>(Lcom/android/systemui/assist/AssistManager;)V
 
     invoke-virtual {p1, p2}, Lcom/android/systemui/recents/OverviewProxyService;->addCallback(Lcom/android/systemui/recents/OverviewProxyService$OverviewProxyListener;)V
+
+    const-class p1, Lcom/android/systemui/statusbar/policy/ConfigurationController;
+
+    invoke-static {p1}, Lcom/android/systemui/Dependency;->get(Ljava/lang/Class;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Lcom/android/systemui/statusbar/policy/ConfigurationController;
+
+    invoke-interface {p1, p0}, Lcom/android/systemui/statusbar/policy/CallbackController;->addCallback(Ljava/lang/Object;)V
 
     return-void
 .end method
@@ -749,6 +760,25 @@
     return-void
 .end method
 
+.method public onDensityOrFontScaleChanged()V
+    .locals 2
+
+    const-string v0, "AssistManager"
+
+    const-string v1, "onDensityOrFontScaleChanged"
+
+    invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    iget-object p0, p0, Lcom/android/systemui/assist/AssistManager;->mUiController:Lcom/android/systemui/assist/AssistManager$UiController;
+
+    if-eqz p0, :cond_0
+
+    invoke-interface {p0}, Lcom/android/systemui/assist/AssistManager$UiController;->onOverlayChanged()V
+
+    :cond_0
+    return-void
+.end method
+
 .method public onGestureCompletion(F)V
     .locals 0
 
@@ -776,6 +806,19 @@
 
     invoke-virtual {p0}, Lcom/android/internal/app/AssistUtils;->onLockscreenShown()V
 
+    return-void
+.end method
+
+.method public onOverlayChanged()V
+    .locals 0
+
+    iget-object p0, p0, Lcom/android/systemui/assist/AssistManager;->mUiController:Lcom/android/systemui/assist/AssistManager$UiController;
+
+    if-eqz p0, :cond_0
+
+    invoke-interface {p0}, Lcom/android/systemui/assist/AssistManager$UiController;->onOverlayChanged()V
+
+    :cond_0
     return-void
 .end method
 

@@ -48,7 +48,7 @@
 
     const-class v1, Landroid/telephony/SubscriptionManager;
 
-    const-string v2, "telephony_subscription_service"
+    const-string/jumbo v2, "telephony_subscription_service"
 
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -135,7 +135,7 @@
 
     const-class v1, Landroid/telecom/TelecomManager;
 
-    const-string v2, "telecom"
+    const-string/jumbo v2, "telecom"
 
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -428,7 +428,7 @@
 
     const-class v1, Landroid/view/textservice/TextServicesManager;
 
-    const-string v2, "textservices"
+    const-string/jumbo v2, "textservices"
 
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 

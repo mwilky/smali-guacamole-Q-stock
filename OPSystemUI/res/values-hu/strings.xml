@@ -324,7 +324,7 @@
     <string name="battery_saver_notification_title">Akkumulátorkímélő mód bekapcsolva</string>
     <string name="battery_saver_start_action">Akkumulátorkímélő mód bekapcsolása</string>
     <string name="battery_usage_extanded">Az Akkumulátor-kímélő körülbelül %s időtartammal növeli a használatát, a használata alapján</string>
-    <string name="battery_usage_remaining">Az Ön használati szokásai alapján körülbelül %s van hátra. Csökkenti a teljesítményt és a háttéradatokat.</string>
+    <string name="battery_usage_remaining_time">Hátra van %s</string>
     <string name="biometric_dialog_confirm">Megerősítés</string>
     <string name="biometric_dialog_empty_space_description">Üres régió. Koppintson a hitelesítés visszavonásához</string>
     <string name="biometric_dialog_face_icon_description_authenticated">Arc hitelesítve</string>

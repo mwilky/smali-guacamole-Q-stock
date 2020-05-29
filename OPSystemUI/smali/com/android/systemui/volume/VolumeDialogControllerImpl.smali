@@ -995,11 +995,17 @@
 
     move-result-object v1
 
-    invoke-static {v1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+    const/4 v2, 0x1
 
-    move-result v2
+    new-array v3, v2, [I
 
-    if-eqz v2, :cond_0
+    aput v0, v3, v0
+
+    invoke-static {v3}, Landroid/util/OpFeatures;->isSupport([I)Z
+
+    move-result v3
+
+    if-eqz v3, :cond_0
 
     iget-object v1, p0, Lcom/android/systemui/volume/VolumeDialogControllerImpl;->mCallbacks:Lcom/android/systemui/volume/VolumeDialogControllerImpl$C;
 
@@ -1016,32 +1022,11 @@
     return-void
 
     :cond_0
-    sget-boolean v2, Lcom/android/systemui/volume/D;->BUG:Z
+    invoke-static {v1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
-    const/4 v3, 0x1
+    move-result v3
 
-    if-eqz v2, :cond_1
-
-    sget-object v2, Lcom/android/systemui/volume/VolumeDialogControllerImpl;->TAG:Ljava/lang/String;
-
-    const-string v4, "isCaptionsServiceEnabled componentNameString=%s"
-
-    new-array v5, v3, [Ljava/lang/Object;
-
-    aput-object v1, v5, v0
-
-    invoke-static {v4, v5}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object v4
-
-    invoke-static {v2, v4}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
-
-    :cond_1
-    invoke-static {v1}, Landroid/content/ComponentName;->unflattenFromString(Ljava/lang/String;)Landroid/content/ComponentName;
-
-    move-result-object v1
-
-    if-nez v1, :cond_2
+    if-eqz v3, :cond_1
 
     iget-object v1, p0, Lcom/android/systemui/volume/VolumeDialogControllerImpl;->mCallbacks:Lcom/android/systemui/volume/VolumeDialogControllerImpl$C;
 
@@ -1057,28 +1042,68 @@
 
     return-void
 
-    :cond_2
-    iget-object v2, p0, Lcom/android/systemui/volume/VolumeDialogControllerImpl;->mContext:Landroid/content/Context;
+    :cond_1
+    sget-boolean v3, Lcom/android/systemui/volume/D;->BUG:Z
 
-    invoke-virtual {v2}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
+    if-eqz v3, :cond_2
+
+    sget-object v3, Lcom/android/systemui/volume/VolumeDialogControllerImpl;->TAG:Ljava/lang/String;
+
+    const-string v4, "isCaptionsServiceEnabled componentNameString=%s"
+
+    new-array v5, v2, [Ljava/lang/Object;
+
+    aput-object v1, v5, v0
+
+    invoke-static {v4, v5}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v4
+
+    invoke-static {v3, v4}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
+
+    :cond_2
+    invoke-static {v1}, Landroid/content/ComponentName;->unflattenFromString(Ljava/lang/String;)Landroid/content/ComponentName;
+
+    move-result-object v1
+
+    if-nez v1, :cond_3
+
+    iget-object v1, p0, Lcom/android/systemui/volume/VolumeDialogControllerImpl;->mCallbacks:Lcom/android/systemui/volume/VolumeDialogControllerImpl$C;
+
+    invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object v2
 
+    invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object v3
+
+    invoke-virtual {v1, v2, v3}, Lcom/android/systemui/volume/VolumeDialogControllerImpl$C;->onCaptionComponentStateChanged(Ljava/lang/Boolean;Ljava/lang/Boolean;)V
+
+    return-void
+
+    :cond_3
+    iget-object v3, p0, Lcom/android/systemui/volume/VolumeDialogControllerImpl;->mContext:Landroid/content/Context;
+
+    invoke-virtual {v3}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
+
+    move-result-object v3
+
     iget-object v4, p0, Lcom/android/systemui/volume/VolumeDialogControllerImpl;->mCallbacks:Lcom/android/systemui/volume/VolumeDialogControllerImpl$C;
 
-    invoke-virtual {v2, v1}, Landroid/content/pm/PackageManager;->getComponentEnabledSetting(Landroid/content/ComponentName;)I
+    invoke-virtual {v3, v1}, Landroid/content/pm/PackageManager;->getComponentEnabledSetting(Landroid/content/ComponentName;)I
 
     move-result v1
 
-    if-ne v1, v3, :cond_3
+    if-ne v1, v2, :cond_4
 
     goto :goto_0
 
-    :cond_3
-    move v3, v0
+    :cond_4
+    move v2, v0
 
     :goto_0
-    invoke-static {v3}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+    invoke-static {v2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object v1
 
@@ -2286,7 +2311,7 @@
 .end method
 
 .method public areCaptionsEnabled()Z
-    .locals 2
+    .locals 3
 
     iget-object p0, p0, Lcom/android/systemui/volume/VolumeDialogControllerImpl;->mContext:Landroid/content/Context;
 
@@ -2298,7 +2323,9 @@
 
     const-string v1, "odi_captions_enabled"
 
-    invoke-static {p0, v1, v0}, Landroid/provider/Settings$Secure;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
+    const/4 v2, -0x2
+
+    invoke-static {p0, v1, v0, v2}, Landroid/provider/Settings$Secure;->getIntForUser(Landroid/content/ContentResolver;Ljava/lang/String;II)I
 
     move-result p0
 
@@ -2809,7 +2836,7 @@
 .end method
 
 .method public setCaptionsEnabled(Z)V
-    .locals 1
+    .locals 2
 
     iget-object p0, p0, Lcom/android/systemui/volume/VolumeDialogControllerImpl;->mContext:Landroid/content/Context;
 
@@ -2817,9 +2844,11 @@
 
     move-result-object p0
 
-    const-string v0, "odi_captions_enabled"
+    const/4 v0, -0x2
 
-    invoke-static {p0, v0, p1}, Landroid/provider/Settings$Secure;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
+    const-string v1, "odi_captions_enabled"
+
+    invoke-static {p0, v1, p1, v0}, Landroid/provider/Settings$Secure;->putIntForUser(Landroid/content/ContentResolver;Ljava/lang/String;II)Z
 
     return-void
 .end method
@@ -3036,7 +3065,7 @@
 
     new-array v0, v0, [I
 
-    const/16 v1, 0xd5
+    const/16 v1, 0xd6
 
     aput v1, v0, v3
 

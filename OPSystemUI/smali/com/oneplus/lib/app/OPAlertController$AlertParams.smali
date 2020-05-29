@@ -3,6 +3,17 @@
 .source "OPAlertController.java"
 
 
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/oneplus/lib/app/OPAlertController;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x9
+    name = "AlertParams"
+.end annotation
+
+
 # instance fields
 .field public mCancelable:Z
 

@@ -96,6 +96,7 @@
     <color name="background_floating_material_light">@color/white</color>
     <color name="background_material_dark">@color/material_grey_850</color>
     <color name="background_material_light">@color/material_grey_50</color>
+    <color name="battery_power_save_color">#ffffb61f</color>
     <color name="batterymeter_bolt_color">#ffffffff</color>
     <color name="batterymeter_charge_color">#ffffffff</color>
     <color name="batterymeter_frame_color">#4dffffff</color>
@@ -110,8 +111,9 @@
     <color name="bg_interface_light">#ffffffff</color>
     <color name="biometric_dialog_accent">#ff008577</color>
     <color name="biometric_dialog_dim_color">#80000000</color>
-    <color name="biometric_dialog_error">#ffd93025</color>
+    <color name="biometric_dialog_error">#fff50514</color>
     <color name="biometric_dialog_gray">#ff757575</color>
+    <color name="biometric_fingerprint_error_color">#32000000</color>
     <color name="black">#ff000000</color>
     <color name="black_system_primary_color">#ff1d1d1d</color>
     <color name="black_volume_panel_expand_btn_color">#ffffffff</color>
@@ -773,6 +775,8 @@
     <color name="op_nav_bar_key_dark">#ff8a8a8a</color>
     <color name="op_nav_bar_key_light">#ffa4a4a4</color>
     <color name="op_nav_bar_key_transparent">#fffafafa</color>
+    <color name="op_notification_info_primary_color">@color/oneplus_contorl_text_color_primary_light</color>
+    <color name="op_notification_info_secondary_color">@color/oneplus_contorl_text_color_secondary_light</color>
     <color name="op_primary_default_dark">@color/primary_default_dark</color>
     <color name="op_primary_default_light">@color/primary_default_light</color>
     <color name="op_primary_text_color_dark">@color/control_primary_text_color_dark</color>

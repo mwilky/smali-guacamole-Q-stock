@@ -192,7 +192,7 @@
 
     move-result p2
 
-    const-string p3, "systemui_am_heap_limit"
+    const-string/jumbo p3, "systemui_am_heap_limit"
 
     invoke-static {p1, p3, p2}, Landroid/provider/Settings$Global;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
 

@@ -18,7 +18,7 @@
 
     move-result-object p0
 
-    const-string v1, "three_Key_mode"
+    const-string/jumbo v1, "three_Key_mode"
 
     invoke-static {p0, v1, v0}, Landroid/provider/Settings$Global;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
 

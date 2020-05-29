@@ -1601,7 +1601,7 @@
 
     div-float/2addr v0, v1
 
-    const-string v1, "sys.fod.icon.dim"
+    const-string/jumbo v1, "sys.fod.icon.dim"
 
     const/16 v3, 0x46
 

@@ -36,7 +36,7 @@
 
     iget-object v0, p0, Lcom/android/systemui/volume/VolumeDialogImpl$7;->this$0:Lcom/android/systemui/volume/VolumeDialogImpl;
 
-    invoke-static {v0}, Lcom/android/systemui/volume/VolumeDialogImpl;->access$1800(Lcom/android/systemui/volume/VolumeDialogImpl;)Ljava/lang/Object;
+    invoke-static {v0}, Lcom/android/systemui/volume/VolumeDialogImpl;->access$2100(Lcom/android/systemui/volume/VolumeDialogImpl;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -47,7 +47,7 @@
 
     const/4 v2, 0x0
 
-    invoke-static {v1, v2}, Lcom/android/systemui/volume/VolumeDialogImpl;->access$1902(Lcom/android/systemui/volume/VolumeDialogImpl;Lcom/android/systemui/volume/SafetyWarningDialog;)Lcom/android/systemui/volume/SafetyWarningDialog;
+    invoke-static {v1, v2}, Lcom/android/systemui/volume/VolumeDialogImpl;->access$2202(Lcom/android/systemui/volume/VolumeDialogImpl;Lcom/android/systemui/volume/SafetyWarningDialog;)Lcom/android/systemui/volume/SafetyWarningDialog;
 
     monitor-exit v0
     :try_end_0
@@ -55,7 +55,7 @@
 
     iget-object p0, p0, Lcom/android/systemui/volume/VolumeDialogImpl$7;->this$0:Lcom/android/systemui/volume/VolumeDialogImpl;
 
-    invoke-static {p0, v2}, Lcom/android/systemui/volume/VolumeDialogImpl;->access$2000(Lcom/android/systemui/volume/VolumeDialogImpl;Lcom/oneplus/volume/OpVolumeDialogImpl$VolumeRow;)V
+    invoke-static {p0, v2}, Lcom/android/systemui/volume/VolumeDialogImpl;->access$2300(Lcom/android/systemui/volume/VolumeDialogImpl;Lcom/oneplus/volume/OpVolumeDialogImpl$VolumeRow;)V
 
     return-void
 

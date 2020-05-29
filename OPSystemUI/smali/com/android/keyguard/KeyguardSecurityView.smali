@@ -28,6 +28,12 @@
 .method public abstract setLockPatternUtils(Lcom/android/internal/widget/LockPatternUtils;)V
 .end method
 
+.method public shouldHideIme()V
+    .locals 0
+
+    return-void
+.end method
+
 .method public abstract showMessage(Ljava/lang/CharSequence;Landroid/content/res/ColorStateList;)V
 .end method
 

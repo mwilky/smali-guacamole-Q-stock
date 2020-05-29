@@ -13,7 +13,7 @@
 
     const-string v0, "nm"
 
-    const-string v1, "sy"
+    const-string/jumbo v1, "sy"
 
     const-string v2, "pt"
 

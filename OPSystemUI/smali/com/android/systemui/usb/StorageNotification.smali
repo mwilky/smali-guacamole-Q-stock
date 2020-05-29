@@ -1240,7 +1240,7 @@
 
     move-result-object p2
 
-    const-string v0, "sys"
+    const-string/jumbo v0, "sys"
 
     invoke-virtual {p2, v0}, Landroid/app/Notification$Builder;->setCategory(Ljava/lang/String;)Landroid/app/Notification$Builder;
 
@@ -2044,7 +2044,7 @@
 
     move-result-object v0
 
-    const-string v2, "sys"
+    const-string/jumbo v2, "sys"
 
     invoke-virtual {v0, v2}, Landroid/app/Notification$Builder;->setCategory(Ljava/lang/String;)Landroid/app/Notification$Builder;
 
@@ -2432,7 +2432,7 @@
 
     move-result-object v1
 
-    const-string v3, "sys"
+    const-string/jumbo v3, "sys"
 
     invoke-virtual {v1, v3}, Landroid/app/Notification$Builder;->setCategory(Ljava/lang/String;)Landroid/app/Notification$Builder;
 

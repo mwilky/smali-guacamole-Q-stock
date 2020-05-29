@@ -76,6 +76,12 @@
 
     if-eqz p1, :cond_0
 
+    invoke-static {}, Lcom/oneplus/util/OpUtils;->isCustomFingerprint()Z
+
+    move-result p1
+
+    if-nez p1, :cond_0
+
     iget-object p0, p0, Lcom/android/systemui/doze/DozeTriggers$2;->this$0:Lcom/android/systemui/doze/DozeTriggers;
 
     invoke-static {p0}, Lcom/android/systemui/doze/DozeTriggers;->access$900(Lcom/android/systemui/doze/DozeTriggers;)Lcom/android/systemui/doze/DozeMachine;

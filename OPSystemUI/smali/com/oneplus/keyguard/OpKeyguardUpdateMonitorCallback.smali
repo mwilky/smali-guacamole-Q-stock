@@ -50,6 +50,12 @@
     return-void
 .end method
 
+.method public onKeyguardDoneChanged(Z)V
+    .locals 0
+
+    return-void
+.end method
+
 .method public onPasswordLockout()V
     .locals 0
 
@@ -62,7 +68,19 @@
     return-void
 .end method
 
+.method public onQSExpendChanged(Z)V
+    .locals 0
+
+    return-void
+.end method
+
 .method public onScreenTurningOn()V
+    .locals 0
+
+    return-void
+.end method
+
+.method public onShuttingDown()V
     .locals 0
 
     return-void

@@ -17,7 +17,7 @@
     <string name="allow_notification">Luba teavitused</string>
     <string name="battery_low_warning">%s on jäänud, lülitage akusäästja kasutusaja pikendamiseks sisse</string>
     <string name="battery_usage_extanded">Lähtuvalt teie kasutusest võib akusäästja aku kasutusaega umbes %s pikendada</string>
-    <string name="battery_usage_remaining">Aku peaks teie kasutuse alusel veel %s kestma. Vähendab jõudlust ja taustaandmeid.</string>
+    <string name="battery_usage_remaining_time">%s on jäänud</string>
     <string name="clear_process_done">Kõik on korras.</string>
     <string name="clear_process_warning_checkbox">Sain aru, ära rohkem näita</string>
     <string name="clear_process_warning_message">Sellega kustutatakse kõik taustal toimuvad protsessid ning see võib põhjustada tahtmatuid tulemusi. Mõned rakendused võivad lõpetada töötamise ja need tuleb uuesti käivitada. Jätkate?</string>

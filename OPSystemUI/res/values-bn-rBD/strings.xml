@@ -17,7 +17,7 @@
     <string name="allow_notification">বিজ্ঞপ্তির অনুমতি দিন</string>
     <string name="battery_low_warning">%s বাকি আছে, ব্যবহার বাড়াতে ব্যাটারি সেভার চালু করুন</string>
     <string name="battery_usage_extanded">আপনার ব্যবহারের উপরে ভিত্তি করে ব্যাটারি সেভার আপনার ব্যবহার প্রায় %s বাড়াতে পারে</string>
-    <string name="battery_usage_remaining">আপনার ব্যবহারের উপরে ভিত্তি করে প্রায় %s চলা উচিত। পারফরমেন্স ও ব্যাকগ্রাউন্ড ডেটা কমে যায়।</string>
+    <string name="battery_usage_remaining_time">%s বাকি আছে</string>
     <string name="clear_process_done">সব পরিষ্কার!</string>
     <string name="clear_process_warning_checkbox">বুঝেছি, আর দেখাবেন না</string>
     <string name="clear_process_warning_message">এটি সমস্ত ব্যাকগ্রাউন্ড প্রক্রিয়া সাফ করে দেবে যা অনভিপ্রেত ফলাফল দিতে পারে। কিছু অ্যাপ কাজ করা থামাতে পারে এবং আবার শুরু করতে হতে পারে। অবিরত করবেন?</string>

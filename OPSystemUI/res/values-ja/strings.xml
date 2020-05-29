@@ -324,7 +324,7 @@
     <string name="battery_saver_notification_title">バッテリー セーバー ON</string>
     <string name="battery_saver_start_action">バッテリー セーバーを ON</string>
     <string name="battery_usage_extanded">バッテリーセーバーを使用した場合、ご使用状況に基づくと、バッテリーの寿命を約 %s 延長できます</string>
-    <string name="battery_usage_remaining">ご使用状況に基づくと、あと %s でバッテリーがなくなります。パフォーマンスを低下させ、バックグラウンドデータを削減します。</string>
+    <string name="battery_usage_remaining_time">残り時間：%s</string>
     <string name="biometric_dialog_confirm">確認</string>
     <string name="biometric_dialog_empty_space_description">空白の領域をタップすると、認証をキャンセルできます</string>
     <string name="biometric_dialog_face_icon_description_authenticated">顔を認証しました</string>

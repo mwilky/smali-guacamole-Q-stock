@@ -493,62 +493,42 @@
     move p2, v0
 
     :goto_5
-    iget-object v1, p1, Lcom/android/systemui/statusbar/notification/collection/NotificationEntry;->notification:Landroid/service/notification/StatusBarNotification;
+    const-class v1, Lcom/android/systemui/statusbar/NotificationLockscreenUserManager;
 
-    invoke-virtual {v1}, Landroid/service/notification/StatusBarNotification;->getNotification()Landroid/app/Notification;
+    invoke-static {v1}, Lcom/android/systemui/Dependency;->get(Ljava/lang/Class;)Ljava/lang/Object;
 
     move-result-object v1
 
-    iget v1, v1, Landroid/app/Notification;->visibility:I
+    check-cast v1, Lcom/android/systemui/statusbar/NotificationLockscreenUserManager;
 
-    if-eq v1, v3, :cond_7
+    invoke-interface {v1, p1}, Lcom/android/systemui/statusbar/NotificationLockscreenUserManager;->needsRedaction(Lcom/android/systemui/statusbar/notification/collection/NotificationEntry;)Z
 
-    move v1, v3
+    move-result p1
+
+    if-nez p1, :cond_8
+
+    if-eqz p2, :cond_7
 
     goto :goto_6
 
     :cond_7
-    move v1, v0
-
-    :goto_6
-    const-class v2, Lcom/android/systemui/statusbar/NotificationLockscreenUserManager;
-
-    invoke-static {v2}, Lcom/android/systemui/Dependency;->get(Ljava/lang/Class;)Ljava/lang/Object;
-
-    move-result-object v2
-
-    check-cast v2, Lcom/android/systemui/statusbar/NotificationLockscreenUserManager;
-
-    invoke-interface {v2, p1}, Lcom/android/systemui/statusbar/NotificationLockscreenUserManager;->needsRedaction(Lcom/android/systemui/statusbar/notification/collection/NotificationEntry;)Z
-
-    move-result p1
-
-    if-nez p1, :cond_9
-
-    if-eqz p2, :cond_8
-
-    if-eqz v1, :cond_8
+    move p1, v0
 
     goto :goto_7
 
     :cond_8
-    move p1, v0
-
-    goto :goto_8
-
-    :cond_9
-    :goto_7
+    :goto_6
     move p1, v3
 
-    :goto_8
-    if-nez p1, :cond_a
+    :goto_7
+    if-nez p1, :cond_9
 
-    if-eqz p2, :cond_b
+    if-eqz p2, :cond_a
 
-    :cond_a
+    :cond_9
     move v0, v3
 
-    :cond_b
+    :cond_a
     invoke-virtual {p4, v0}, Lcom/android/systemui/statusbar/notification/row/ExpandableNotificationRow;->setNeedsRedaction(Z)V
 
     invoke-virtual {p4, p2}, Lcom/android/systemui/statusbar/notification/row/ExpandableNotificationRow;->setContentHidden(Z)V

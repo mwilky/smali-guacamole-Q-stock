@@ -1114,6 +1114,14 @@
 
     invoke-virtual {p0, v1}, Lcom/android/systemui/statusbar/notification/stack/NotificationStackScrollLayout;->addOnExpandedHeightListener(Ljava/util/function/BiConsumer;)V
 
+    iget-object v0, v6, Lcom/android/systemui/statusbar/notification/stack/NotificationStackScrollLayout;->mLockscreenUserManager:Lcom/android/systemui/statusbar/NotificationLockscreenUserManager;
+
+    new-instance v1, Lcom/android/systemui/statusbar/notification/stack/-$$Lambda$NotificationStackScrollLayout$h47I7Qi44nR3_482BY7RSDFFr-0;
+
+    invoke-direct {v1, p0}, Lcom/android/systemui/statusbar/notification/stack/-$$Lambda$NotificationStackScrollLayout$h47I7Qi44nR3_482BY7RSDFFr-0;-><init>(Lcom/android/systemui/statusbar/notification/stack/NotificationStackScrollLayout;)V
+
+    invoke-interface {v0, v1}, Lcom/android/systemui/statusbar/NotificationLockscreenUserManager;->addUserChangedListener(Lcom/android/systemui/statusbar/NotificationLockscreenUserManager$UserChangedListener;)V
+
     iget-object v0, v6, Lcom/android/systemui/statusbar/notification/stack/NotificationStackScrollLayout;->mOutlineProvider:Landroid/view/ViewOutlineProvider;
 
     invoke-virtual {p0, v0}, Landroid/view/ViewGroup;->setOutlineProvider(Landroid/view/ViewOutlineProvider;)V
@@ -1126,9 +1134,9 @@
 
     check-cast v0, Lcom/android/systemui/statusbar/notification/row/NotificationBlockingHelperManager;
 
-    new-instance v1, Lcom/android/systemui/statusbar/notification/stack/-$$Lambda$NotificationStackScrollLayout$vvfSYMLkcxgkYfV0xZ33PG0V3KM;
+    new-instance v1, Lcom/android/systemui/statusbar/notification/stack/-$$Lambda$NotificationStackScrollLayout$EOvrpynV_4_HqkQZPqElzpbHsN4;
 
-    invoke-direct {v1, v0}, Lcom/android/systemui/statusbar/notification/stack/-$$Lambda$NotificationStackScrollLayout$vvfSYMLkcxgkYfV0xZ33PG0V3KM;-><init>(Lcom/android/systemui/statusbar/notification/row/NotificationBlockingHelperManager;)V
+    invoke-direct {v1, v0}, Lcom/android/systemui/statusbar/notification/stack/-$$Lambda$NotificationStackScrollLayout$EOvrpynV_4_HqkQZPqElzpbHsN4;-><init>(Lcom/android/systemui/statusbar/notification/row/NotificationBlockingHelperManager;)V
 
     invoke-virtual {p0, v1}, Lcom/android/systemui/statusbar/notification/stack/NotificationStackScrollLayout;->addOnExpandedHeightListener(Ljava/util/function/BiConsumer;)V
 
@@ -1154,9 +1162,9 @@
 
     check-cast v0, Lcom/android/systemui/tuner/TunerService;
 
-    new-instance v1, Lcom/android/systemui/statusbar/notification/stack/-$$Lambda$NotificationStackScrollLayout$Wy8GXHBNQmyobv_GY74nULEilrI;
+    new-instance v1, Lcom/android/systemui/statusbar/notification/stack/-$$Lambda$NotificationStackScrollLayout$Jw0uVZk_QqBt9QukDWfY9zQ7BQU;
 
-    invoke-direct {v1, p0}, Lcom/android/systemui/statusbar/notification/stack/-$$Lambda$NotificationStackScrollLayout$Wy8GXHBNQmyobv_GY74nULEilrI;-><init>(Lcom/android/systemui/statusbar/notification/stack/NotificationStackScrollLayout;)V
+    invoke-direct {v1, p0}, Lcom/android/systemui/statusbar/notification/stack/-$$Lambda$NotificationStackScrollLayout$Jw0uVZk_QqBt9QukDWfY9zQ7BQU;-><init>(Lcom/android/systemui/statusbar/notification/stack/NotificationStackScrollLayout;)V
 
     const-string v2, "high_priority"
 
@@ -1180,6 +1188,31 @@
 
     invoke-virtual {v0, p0}, Lcom/android/systemui/statusbar/notification/DynamicPrivacyController;->addListener(Lcom/android/systemui/statusbar/notification/DynamicPrivacyController$Listener;)V
 
+    sget-boolean v0, Lcom/android/systemui/statusbar/notification/stack/NotificationStackScrollLayout;->DEBUG_ONEPLUS:Z
+
+    if-eqz v0, :cond_1
+
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v1, "init NotificationStackScrollLayout, mBgColor= "
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget v1, v6, Lcom/android/systemui/statusbar/notification/stack/NotificationStackScrollLayout;->mBgColor:I
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    const-string v1, "StackScroller"
+
+    invoke-static {v1, v0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    :cond_1
     return-void
 .end method
 
@@ -2178,9 +2211,9 @@
     return-void
 
     :cond_9
-    new-instance v0, Lcom/android/systemui/statusbar/notification/stack/-$$Lambda$NotificationStackScrollLayout$1JoW9tMXjFe-6yv5uN3FfACI74A;
+    new-instance v0, Lcom/android/systemui/statusbar/notification/stack/-$$Lambda$NotificationStackScrollLayout$BKZ0Bh5XLVtMnQqHjBJSLhE_Z2M;
 
-    invoke-direct {v0, p0, v2, p1}, Lcom/android/systemui/statusbar/notification/stack/-$$Lambda$NotificationStackScrollLayout$1JoW9tMXjFe-6yv5uN3FfACI74A;-><init>(Lcom/android/systemui/statusbar/notification/stack/NotificationStackScrollLayout;Ljava/util/ArrayList;I)V
+    invoke-direct {v0, p0, v2, p1}, Lcom/android/systemui/statusbar/notification/stack/-$$Lambda$NotificationStackScrollLayout$BKZ0Bh5XLVtMnQqHjBJSLhE_Z2M;-><init>(Lcom/android/systemui/statusbar/notification/stack/NotificationStackScrollLayout;Ljava/util/ArrayList;I)V
 
     invoke-direct {p0, v1, p2, v0}, Lcom/android/systemui/statusbar/notification/stack/NotificationStackScrollLayout;->performDismissAllAnimations(Ljava/util/ArrayList;ZLjava/lang/Runnable;)V
 
@@ -5579,7 +5612,7 @@
     return-void
 .end method
 
-.method static synthetic lambda$new$3(Lcom/android/systemui/statusbar/notification/row/NotificationBlockingHelperManager;Ljava/lang/Float;Ljava/lang/Float;)V
+.method static synthetic lambda$new$4(Lcom/android/systemui/statusbar/notification/row/NotificationBlockingHelperManager;Ljava/lang/Float;Ljava/lang/Float;)V
     .locals 0
 
     invoke-virtual {p1}, Ljava/lang/Float;->floatValue()F
@@ -6719,7 +6752,7 @@
 
     move-result v5
 
-    invoke-virtual {p0, v1, v5}, Lcom/android/systemui/statusbar/notification/stack/NotificationStackScrollLayout;->setHideSensitive(ZZ)V
+    invoke-virtual {p0, v1, v5}, Lcom/android/systemui/statusbar/notification/stack/NotificationStackScrollLayout;->updateSensitiveness(ZZ)V
 
     invoke-interface {v4}, Lcom/android/systemui/statusbar/SysuiStatusBarStateController;->fromShadeLocked()Z
 
@@ -7009,9 +7042,9 @@
         }
     .end annotation
 
-    new-instance v0, Lcom/android/systemui/statusbar/notification/stack/-$$Lambda$NotificationStackScrollLayout$-wc1B8DN_KitBy8lCSoeeETqd6k;
+    new-instance v0, Lcom/android/systemui/statusbar/notification/stack/-$$Lambda$NotificationStackScrollLayout$NJnpZAF3yxT4RBuBz44A-eIeHrg;
 
-    invoke-direct {v0, p0, p2, p3}, Lcom/android/systemui/statusbar/notification/stack/-$$Lambda$NotificationStackScrollLayout$-wc1B8DN_KitBy8lCSoeeETqd6k;-><init>(Lcom/android/systemui/statusbar/notification/stack/NotificationStackScrollLayout;ZLjava/lang/Runnable;)V
+    invoke-direct {v0, p0, p2, p3}, Lcom/android/systemui/statusbar/notification/stack/-$$Lambda$NotificationStackScrollLayout$NJnpZAF3yxT4RBuBz44A-eIeHrg;-><init>(Lcom/android/systemui/statusbar/notification/stack/NotificationStackScrollLayout;ZLjava/lang/Runnable;)V
 
     invoke-virtual {p1}, Ljava/util/ArrayList;->isEmpty()Z
 
@@ -7112,6 +7145,12 @@
     invoke-direct {p0}, Lcom/android/systemui/statusbar/notification/stack/NotificationStackScrollLayout;->inflateEmptyShadeView()V
 
     invoke-virtual {p0}, Lcom/android/systemui/statusbar/notification/stack/NotificationStackScrollLayout;->updateFooter()V
+
+    iget-boolean v0, p0, Lcom/android/systemui/statusbar/notification/stack/NotificationStackScrollLayout;->mQsExpanded:Z
+
+    xor-int/lit8 v0, v0, 0x1
+
+    invoke-virtual {p0, v0}, Lcom/android/systemui/statusbar/notification/stack/NotificationStackScrollLayout;->updateEmptyShadeView(Z)V
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/notification/stack/NotificationStackScrollLayout;->mSectionsManager:Lcom/android/systemui/statusbar/notification/stack/NotificationSectionsManager;
 
@@ -8436,44 +8475,66 @@
 .end method
 
 .method private updateBackgroundDimming()V
-    .locals 3
+    .locals 4
 
     iget-boolean v0, p0, Lcom/android/systemui/statusbar/notification/stack/NotificationStackScrollLayout;->mShouldDrawNotificationBackground:Z
 
+    const-string v1, "StackScroller"
+
     if-nez v0, :cond_0
+
+    const-string/jumbo p0, "updateBackgroundDimming, should not draw notification background!"
+
+    invoke-static {v1, p0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     return-void
 
     :cond_0
     const v0, 0x3ecccccd    # 0.4f
 
-    const/high16 v1, 0x3f800000    # 1.0f
+    const/high16 v2, 0x3f800000    # 1.0f
 
-    iget v2, p0, Lcom/android/systemui/statusbar/notification/stack/NotificationStackScrollLayout;->mLinearDarkAmount:F
+    iget v3, p0, Lcom/android/systemui/statusbar/notification/stack/NotificationStackScrollLayout;->mLinearDarkAmount:F
 
-    invoke-static {v0, v1, v2}, Landroid/util/MathUtils;->smoothStep(FFF)F
-
-    move-result v0
-
-    iget v1, p0, Lcom/android/systemui/statusbar/notification/stack/NotificationStackScrollLayout;->mBgColor:I
-
-    const/4 v2, -0x1
-
-    invoke-static {v1, v2, v0}, Lcom/android/internal/graphics/ColorUtils;->blendARGB(IIF)I
+    invoke-static {v0, v2, v3}, Landroid/util/MathUtils;->smoothStep(FFF)F
 
     move-result v0
 
-    iget v1, p0, Lcom/android/systemui/statusbar/notification/stack/NotificationStackScrollLayout;->mCachedBackgroundColor:I
+    iget v2, p0, Lcom/android/systemui/statusbar/notification/stack/NotificationStackScrollLayout;->mBgColor:I
 
-    if-eq v1, v0, :cond_1
+    const/4 v3, -0x1
+
+    invoke-static {v2, v3, v0}, Lcom/android/internal/graphics/ColorUtils;->blendARGB(IIF)I
+
+    move-result v0
+
+    iget v2, p0, Lcom/android/systemui/statusbar/notification/stack/NotificationStackScrollLayout;->mCachedBackgroundColor:I
+
+    if-eq v2, v0, :cond_1
 
     iput v0, p0, Lcom/android/systemui/statusbar/notification/stack/NotificationStackScrollLayout;->mCachedBackgroundColor:I
 
-    iget-object v1, p0, Lcom/android/systemui/statusbar/notification/stack/NotificationStackScrollLayout;->mBackgroundPaint:Landroid/graphics/Paint;
+    iget-object v2, p0, Lcom/android/systemui/statusbar/notification/stack/NotificationStackScrollLayout;->mBackgroundPaint:Landroid/graphics/Paint;
 
-    invoke-virtual {v1, v0}, Landroid/graphics/Paint;->setColor(I)V
+    invoke-virtual {v2, v0}, Landroid/graphics/Paint;->setColor(I)V
 
     invoke-virtual {p0}, Landroid/view/ViewGroup;->invalidate()V
+
+    new-instance p0, Ljava/lang/StringBuilder;
+
+    invoke-direct {p0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v2, "updateBackgroundDimming, set notification background color: "
+
+    invoke-virtual {p0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p0
+
+    invoke-static {v1, p0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_1
     return-void
@@ -9998,6 +10059,16 @@
     return-void
 .end method
 
+.method private updateSensitiveness(Z)V
+    .locals 1
+
+    const/4 v0, 0x0
+
+    invoke-virtual {p0, v0, p1}, Lcom/android/systemui/statusbar/notification/stack/NotificationStackScrollLayout;->updateSensitiveness(ZZ)V
+
+    return-void
+.end method
+
 .method private updateViewShadows()V
     .locals 8
 
@@ -10241,9 +10312,9 @@
 .method public bindRow(Lcom/android/systemui/statusbar/notification/row/ExpandableNotificationRow;)V
     .locals 1
 
-    new-instance v0, Lcom/android/systemui/statusbar/notification/stack/-$$Lambda$NotificationStackScrollLayout$vyqGeK1IJVIh_l8qPCKfOsTCmEY;
+    new-instance v0, Lcom/android/systemui/statusbar/notification/stack/-$$Lambda$NotificationStackScrollLayout$IyVMQHsc5qYX2sBD-ykvCcuqAGw;
 
-    invoke-direct {v0, p0, p1}, Lcom/android/systemui/statusbar/notification/stack/-$$Lambda$NotificationStackScrollLayout$vyqGeK1IJVIh_l8qPCKfOsTCmEY;-><init>(Lcom/android/systemui/statusbar/notification/stack/NotificationStackScrollLayout;Lcom/android/systemui/statusbar/notification/row/ExpandableNotificationRow;)V
+    invoke-direct {v0, p0, p1}, Lcom/android/systemui/statusbar/notification/stack/-$$Lambda$NotificationStackScrollLayout$IyVMQHsc5qYX2sBD-ykvCcuqAGw;-><init>(Lcom/android/systemui/statusbar/notification/stack/NotificationStackScrollLayout;Lcom/android/systemui/statusbar/notification/row/ExpandableNotificationRow;)V
 
     invoke-virtual {p1, v0}, Lcom/android/systemui/statusbar/notification/row/ExpandableNotificationRow;->setHeadsUpAnimatingAwayListener(Ljava/util/function/Consumer;)V
 
@@ -10920,48 +10991,102 @@
     goto :goto_6
 
     :cond_8
-    iget-object p0, p0, Lcom/android/systemui/statusbar/notification/stack/NotificationStackScrollLayout;->mAmbientState:Lcom/android/systemui/statusbar/notification/stack/AmbientState;
+    iget-object v0, p0, Lcom/android/systemui/statusbar/notification/stack/NotificationStackScrollLayout;->mAmbientState:Lcom/android/systemui/statusbar/notification/stack/AmbientState;
 
-    invoke-virtual {p0}, Lcom/android/systemui/statusbar/notification/stack/AmbientState;->getDraggedViews()Ljava/util/ArrayList;
+    invoke-virtual {v0}, Lcom/android/systemui/statusbar/notification/stack/AmbientState;->getDraggedViews()Ljava/util/ArrayList;
 
-    move-result-object p0
+    move-result-object v0
 
-    invoke-virtual {p0}, Ljava/util/ArrayList;->size()I
+    invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
-    move-result v0
+    move-result v1
 
-    new-instance v1, Ljava/lang/StringBuilder;
+    new-instance v3, Ljava/lang/StringBuilder;
 
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v3, "  Dragged Views: "
+    const-string v4, "  Dragged Views: "
 
-    invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v3, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v1
+    move-result-object v3
 
-    invoke-virtual {p2, v1}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
+    invoke-virtual {p2, v3}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
     :goto_7
-    if-ge v2, v0, :cond_9
+    if-ge v2, v1, :cond_9
 
-    invoke-virtual {p0, v2}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
-    move-result-object v1
+    move-result-object v3
 
-    check-cast v1, Lcom/android/systemui/statusbar/notification/row/ExpandableView;
+    check-cast v3, Lcom/android/systemui/statusbar/notification/row/ExpandableView;
 
-    invoke-virtual {v1, p1, p2, p3}, Lcom/android/systemui/statusbar/notification/row/ExpandableView;->dump(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
+    invoke-virtual {v3, p1, p2, p3}, Lcom/android/systemui/statusbar/notification/row/ExpandableView;->dump(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
 
     add-int/lit8 v2, v2, 0x1
 
     goto :goto_7
 
     :cond_9
+    new-instance p1, Ljava/lang/StringBuilder;
+
+    invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string p3, "  mShouldDrawNotificationBackground: "
+
+    invoke-virtual {p1, p3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-boolean p3, p0, Lcom/android/systemui/statusbar/notification/stack/NotificationStackScrollLayout;->mShouldDrawNotificationBackground:Z
+
+    invoke-virtual {p1, p3}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-virtual {p2, p1}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
+
+    new-instance p1, Ljava/lang/StringBuilder;
+
+    invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string p3, "  mBgColor: "
+
+    invoke-virtual {p1, p3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget p3, p0, Lcom/android/systemui/statusbar/notification/stack/NotificationStackScrollLayout;->mBgColor:I
+
+    invoke-virtual {p1, p3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-virtual {p2, p1}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
+
+    new-instance p1, Ljava/lang/StringBuilder;
+
+    invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string p3, "  mCachedBackgroundColor: "
+
+    invoke-virtual {p1, p3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget p0, p0, Lcom/android/systemui/statusbar/notification/stack/NotificationStackScrollLayout;->mCachedBackgroundColor:I
+
+    invoke-virtual {p1, p0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p0
+
+    invoke-virtual {p2, p0}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
+
     return-void
 .end method
 
@@ -12467,9 +12592,9 @@
 
     check-cast v0, Lcom/android/systemui/statusbar/notification/row/FooterView;
 
-    new-instance v1, Lcom/android/systemui/statusbar/notification/stack/-$$Lambda$NotificationStackScrollLayout$tTmleiEUCQNFZAgE8HJh01E-kkA;
+    new-instance v1, Lcom/android/systemui/statusbar/notification/stack/-$$Lambda$NotificationStackScrollLayout$op8qZbY4pqro2H5co8U9Hoiim3w;
 
-    invoke-direct {v1, p0}, Lcom/android/systemui/statusbar/notification/stack/-$$Lambda$NotificationStackScrollLayout$tTmleiEUCQNFZAgE8HJh01E-kkA;-><init>(Lcom/android/systemui/statusbar/notification/stack/NotificationStackScrollLayout;)V
+    invoke-direct {v1, p0}, Lcom/android/systemui/statusbar/notification/stack/-$$Lambda$NotificationStackScrollLayout$op8qZbY4pqro2H5co8U9Hoiim3w;-><init>(Lcom/android/systemui/statusbar/notification/stack/NotificationStackScrollLayout;)V
 
     invoke-virtual {v0, v1}, Lcom/android/systemui/statusbar/notification/row/FooterView;->setDismissButtonClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -12509,9 +12634,9 @@
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/notification/stack/NotificationStackScrollLayout;->mDismissAllButton:Landroid/view/View;
 
-    new-instance v1, Lcom/android/systemui/statusbar/notification/stack/-$$Lambda$NotificationStackScrollLayout$op8qZbY4pqro2H5co8U9Hoiim3w;
+    new-instance v1, Lcom/android/systemui/statusbar/notification/stack/-$$Lambda$NotificationStackScrollLayout$wRz_cKR0VjESbMoAvlmPqYy5DCI;
 
-    invoke-direct {v1, p0}, Lcom/android/systemui/statusbar/notification/stack/-$$Lambda$NotificationStackScrollLayout$op8qZbY4pqro2H5co8U9Hoiim3w;-><init>(Lcom/android/systemui/statusbar/notification/stack/NotificationStackScrollLayout;)V
+    invoke-direct {v1, p0}, Lcom/android/systemui/statusbar/notification/stack/-$$Lambda$NotificationStackScrollLayout$wRz_cKR0VjESbMoAvlmPqYy5DCI;-><init>(Lcom/android/systemui/statusbar/notification/stack/NotificationStackScrollLayout;)V
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -12905,7 +13030,7 @@
     return p0
 .end method
 
-.method public synthetic lambda$bindRow$5$NotificationStackScrollLayout(Lcom/android/systemui/statusbar/notification/row/ExpandableNotificationRow;Ljava/lang/Boolean;)V
+.method public synthetic lambda$bindRow$6$NotificationStackScrollLayout(Lcom/android/systemui/statusbar/notification/row/ExpandableNotificationRow;Ljava/lang/Boolean;)V
     .locals 1
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/notification/stack/NotificationStackScrollLayout;->mRoundnessManager:Lcom/android/systemui/statusbar/notification/stack/NotificationRoundnessManager;
@@ -12927,7 +13052,7 @@
     return-void
 .end method
 
-.method public synthetic lambda$clearNotifications$6$NotificationStackScrollLayout(Ljava/util/ArrayList;I)V
+.method public synthetic lambda$clearNotifications$7$NotificationStackScrollLayout(Ljava/util/ArrayList;I)V
     .locals 4
 
     invoke-virtual {p1}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
@@ -13028,7 +13153,7 @@
     return-void
 .end method
 
-.method public synthetic lambda$inflateFooterView$9$NotificationStackScrollLayout(Landroid/view/View;)V
+.method public synthetic lambda$inflateFooterView$11$NotificationStackScrollLayout(Landroid/view/View;)V
     .locals 1
 
     iget-object p1, p0, Lcom/android/systemui/statusbar/notification/stack/NotificationStackScrollLayout;->mMetricsLogger:Lcom/android/internal/logging/MetricsLogger;
@@ -13082,7 +13207,17 @@
     return-void
 .end method
 
-.method public synthetic lambda$new$4$NotificationStackScrollLayout(Ljava/lang/String;Ljava/lang/String;)V
+.method public synthetic lambda$new$3$NotificationStackScrollLayout(I)V
+    .locals 0
+
+    const/4 p1, 0x0
+
+    invoke-direct {p0, p1}, Lcom/android/systemui/statusbar/notification/stack/NotificationStackScrollLayout;->updateSensitiveness(Z)V
+
+    return-void
+.end method
+
+.method public synthetic lambda$new$5$NotificationStackScrollLayout(Ljava/lang/String;Ljava/lang/String;)V
     .locals 2
 
     const-string v0, "high_priority"
@@ -13123,7 +13258,7 @@
     return-void
 .end method
 
-.method public synthetic lambda$performDismissAllAnimations$7$NotificationStackScrollLayout(Ljava/lang/Runnable;)V
+.method public synthetic lambda$performDismissAllAnimations$8$NotificationStackScrollLayout(Ljava/lang/Runnable;)V
     .locals 1
 
     const/4 v0, 0x0
@@ -13135,7 +13270,7 @@
     return-void
 .end method
 
-.method public synthetic lambda$performDismissAllAnimations$8$NotificationStackScrollLayout(ZLjava/lang/Runnable;)V
+.method public synthetic lambda$performDismissAllAnimations$9$NotificationStackScrollLayout(ZLjava/lang/Runnable;)V
     .locals 2
 
     const/4 v0, 0x0
@@ -13144,9 +13279,9 @@
 
     iget-object p1, p0, Lcom/android/systemui/statusbar/notification/stack/NotificationStackScrollLayout;->mShadeController:Lcom/android/systemui/statusbar/phone/ShadeController;
 
-    new-instance v1, Lcom/android/systemui/statusbar/notification/stack/-$$Lambda$NotificationStackScrollLayout$y6iOkv2wWZF_m0txPiJKS_W22Gs;
+    new-instance v1, Lcom/android/systemui/statusbar/notification/stack/-$$Lambda$NotificationStackScrollLayout$w5SuV9LLRamOioCzTlwfHPKXPk0;
 
-    invoke-direct {v1, p0, p2}, Lcom/android/systemui/statusbar/notification/stack/-$$Lambda$NotificationStackScrollLayout$y6iOkv2wWZF_m0txPiJKS_W22Gs;-><init>(Lcom/android/systemui/statusbar/notification/stack/NotificationStackScrollLayout;Ljava/lang/Runnable;)V
+    invoke-direct {v1, p0, p2}, Lcom/android/systemui/statusbar/notification/stack/-$$Lambda$NotificationStackScrollLayout$w5SuV9LLRamOioCzTlwfHPKXPk0;-><init>(Lcom/android/systemui/statusbar/notification/stack/NotificationStackScrollLayout;Ljava/lang/Runnable;)V
 
     invoke-interface {p1, v1}, Lcom/android/systemui/statusbar/phone/ShadeController;->addPostCollapseAction(Ljava/lang/Runnable;)V
 
@@ -13333,6 +13468,14 @@
     check-cast v0, Lcom/android/systemui/statusbar/policy/ConfigurationController;
 
     invoke-interface {v0, p0}, Lcom/android/systemui/statusbar/policy/CallbackController;->addCallback(Ljava/lang/Object;)V
+
+    const-string v0, "StackScroller"
+
+    const-string v1, "onAttachedToWindow, register StackScroller to ConfigurationController"
+
+    invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    invoke-virtual {p0}, Lcom/android/systemui/statusbar/notification/stack/NotificationStackScrollLayout;->onUiModeChanged()V
 
     return-void
 .end method
@@ -14492,8 +14635,69 @@
 .end method
 
 .method public onUiModeChanged()V
-    .locals 2
+    .locals 3
 
+    invoke-virtual {p0}, Landroid/view/ViewGroup;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Landroid/content/res/Resources;->getConfiguration()Landroid/content/res/Configuration;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_1
+
+    iget v0, v0, Landroid/content/res/Configuration;->uiMode:I
+
+    and-int/lit8 v0, v0, 0x30
+
+    const/16 v1, 0x20
+
+    if-ne v0, v1, :cond_0
+
+    const/4 v0, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    :goto_0
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v2, "opOnUiModeChanged, current theme is in night mode: "
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    const-string v0, ", mBgColor: "
+
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget v0, p0, Lcom/android/systemui/statusbar/notification/stack/NotificationStackScrollLayout;->mBgColor:I
+
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    const-string v0, ", mCachedBackgroundColor: "
+
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget v0, p0, Lcom/android/systemui/statusbar/notification/stack/NotificationStackScrollLayout;->mCachedBackgroundColor:I
+
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    const-string v1, "StackScroller"
+
+    invoke-static {v1, v0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    :cond_1
     iget-object v0, p0, Landroid/view/ViewGroup;->mContext:Landroid/content/Context;
 
     sget v1, Lcom/android/systemui/R$color;->notification_shade_background_color:I
@@ -15645,68 +15849,6 @@
     return-void
 .end method
 
-.method public setHideSensitive(ZZ)V
-    .locals 4
-
-    iget-object v0, p0, Lcom/android/systemui/statusbar/notification/stack/NotificationStackScrollLayout;->mAmbientState:Lcom/android/systemui/statusbar/notification/stack/AmbientState;
-
-    invoke-virtual {v0}, Lcom/android/systemui/statusbar/notification/stack/AmbientState;->isHideSensitive()Z
-
-    move-result v0
-
-    if-eq p1, v0, :cond_2
-
-    invoke-virtual {p0}, Landroid/view/ViewGroup;->getChildCount()I
-
-    move-result v0
-
-    const/4 v1, 0x0
-
-    :goto_0
-    if-ge v1, v0, :cond_0
-
-    invoke-virtual {p0, v1}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
-
-    move-result-object v2
-
-    check-cast v2, Lcom/android/systemui/statusbar/notification/row/ExpandableView;
-
-    invoke-direct {p0, v2, p1}, Lcom/android/systemui/statusbar/notification/stack/NotificationStackScrollLayout;->shouldHideSensitive(Landroid/view/View;Z)Z
-
-    move-result v3
-
-    invoke-virtual {v2, v3}, Lcom/android/systemui/statusbar/notification/row/ExpandableView;->setHideSensitiveForIntrinsicHeight(Z)V
-
-    add-int/lit8 v1, v1, 0x1
-
-    goto :goto_0
-
-    :cond_0
-    iget-object v0, p0, Lcom/android/systemui/statusbar/notification/stack/NotificationStackScrollLayout;->mAmbientState:Lcom/android/systemui/statusbar/notification/stack/AmbientState;
-
-    invoke-virtual {v0, p1}, Lcom/android/systemui/statusbar/notification/stack/AmbientState;->setHideSensitive(Z)V
-
-    if-eqz p2, :cond_1
-
-    iget-boolean p1, p0, Lcom/android/systemui/statusbar/notification/stack/NotificationStackScrollLayout;->mAnimationsEnabled:Z
-
-    if-eqz p1, :cond_1
-
-    const/4 p1, 0x1
-
-    iput-boolean p1, p0, Lcom/android/systemui/statusbar/notification/stack/NotificationStackScrollLayout;->mHideSensitiveNeedsAnimation:Z
-
-    iput-boolean p1, p0, Lcom/android/systemui/statusbar/notification/stack/NotificationStackScrollLayout;->mNeedsAnimation:Z
-
-    :cond_1
-    invoke-direct {p0}, Lcom/android/systemui/statusbar/notification/stack/NotificationStackScrollLayout;->updateContentHeight()V
-
-    invoke-direct {p0}, Lcom/android/systemui/statusbar/notification/stack/NotificationStackScrollLayout;->requestChildrenUpdate()V
-
-    :cond_2
-    return-void
-.end method
-
 .method public setHorizontalPanelTranslation(F)V
     .locals 0
 
@@ -16652,6 +16794,79 @@
 
     invoke-virtual {p0}, Lcom/android/systemui/statusbar/notification/stack/NotificationSectionsManager;->updateSectionBoundaries()V
 
+    return-void
+.end method
+
+.method public updateSensitiveness(ZZ)V
+    .locals 5
+
+    iget-object v0, p0, Lcom/android/systemui/statusbar/notification/stack/NotificationStackScrollLayout;->mLockscreenUserManager:Lcom/android/systemui/statusbar/NotificationLockscreenUserManager;
+
+    invoke-interface {v0}, Lcom/android/systemui/statusbar/NotificationLockscreenUserManager;->isAnyProfilePublicMode()Z
+
+    move-result v0
+
+    const/4 v1, 0x1
+
+    if-eqz p1, :cond_0
+
+    move v0, v1
+
+    :cond_0
+    iget-object p1, p0, Lcom/android/systemui/statusbar/notification/stack/NotificationStackScrollLayout;->mAmbientState:Lcom/android/systemui/statusbar/notification/stack/AmbientState;
+
+    invoke-virtual {p1}, Lcom/android/systemui/statusbar/notification/stack/AmbientState;->isHideSensitive()Z
+
+    move-result p1
+
+    if-eq v0, p1, :cond_3
+
+    invoke-virtual {p0}, Landroid/view/ViewGroup;->getChildCount()I
+
+    move-result p1
+
+    const/4 v2, 0x0
+
+    :goto_0
+    if-ge v2, p1, :cond_1
+
+    invoke-virtual {p0, v2}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
+
+    move-result-object v3
+
+    check-cast v3, Lcom/android/systemui/statusbar/notification/row/ExpandableView;
+
+    invoke-direct {p0, v3, v0}, Lcom/android/systemui/statusbar/notification/stack/NotificationStackScrollLayout;->shouldHideSensitive(Landroid/view/View;Z)Z
+
+    move-result v4
+
+    invoke-virtual {v3, v4}, Lcom/android/systemui/statusbar/notification/row/ExpandableView;->setHideSensitiveForIntrinsicHeight(Z)V
+
+    add-int/lit8 v2, v2, 0x1
+
+    goto :goto_0
+
+    :cond_1
+    iget-object p1, p0, Lcom/android/systemui/statusbar/notification/stack/NotificationStackScrollLayout;->mAmbientState:Lcom/android/systemui/statusbar/notification/stack/AmbientState;
+
+    invoke-virtual {p1, v0}, Lcom/android/systemui/statusbar/notification/stack/AmbientState;->setHideSensitive(Z)V
+
+    if-eqz p2, :cond_2
+
+    iget-boolean p1, p0, Lcom/android/systemui/statusbar/notification/stack/NotificationStackScrollLayout;->mAnimationsEnabled:Z
+
+    if-eqz p1, :cond_2
+
+    iput-boolean v1, p0, Lcom/android/systemui/statusbar/notification/stack/NotificationStackScrollLayout;->mHideSensitiveNeedsAnimation:Z
+
+    iput-boolean v1, p0, Lcom/android/systemui/statusbar/notification/stack/NotificationStackScrollLayout;->mNeedsAnimation:Z
+
+    :cond_2
+    invoke-direct {p0}, Lcom/android/systemui/statusbar/notification/stack/NotificationStackScrollLayout;->updateContentHeight()V
+
+    invoke-direct {p0}, Lcom/android/systemui/statusbar/notification/stack/NotificationStackScrollLayout;->requestChildrenUpdate()V
+
+    :cond_3
     return-void
 .end method
 

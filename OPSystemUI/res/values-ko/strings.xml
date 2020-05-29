@@ -324,7 +324,7 @@
     <string name="battery_saver_notification_title">절전 모드 사용 중</string>
     <string name="battery_saver_start_action">절전 모드 사용 설정</string>
     <string name="battery_usage_extanded">배터리 절약 모드는 사용량에 따라 약 %s만큼 사용을 연장할 수 있습니다.</string>
-    <string name="battery_usage_remaining">사용량에 따라 앞으로 약 %s 남았습니다. 성능 및 백그라운드 데이터가 감소합니다.</string>
+    <string name="battery_usage_remaining_time">%s 남음</string>
     <string name="biometric_dialog_confirm">확인</string>
     <string name="biometric_dialog_empty_space_description">비어 있는 공간, 탭하여 인증 취소</string>
     <string name="biometric_dialog_face_icon_description_authenticated">얼굴이 인증되었습니다.</string>

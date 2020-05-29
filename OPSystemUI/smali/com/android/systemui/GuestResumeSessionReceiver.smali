@@ -319,7 +319,7 @@
 
     const/4 v0, 0x0
 
-    const-string v2, "systemui.guest_has_logged_in"
+    const-string/jumbo v2, "systemui.guest_has_logged_in"
 
     invoke-static {p2, v2, v0, v1}, Landroid/provider/Settings$System;->getIntForUser(Landroid/content/ContentResolver;Ljava/lang/String;II)I
 

@@ -54,6 +54,8 @@
 
 .field private mShowSeconds:Z
 
+.field private mTimeTickCount:I
+
 .field private mUseWallpaperTextColor:Z
 
 
@@ -89,33 +91,35 @@
 
     iput-boolean p3, p0, Lcom/android/systemui/statusbar/policy/Clock;->mClockVisibleByUser:Z
 
-    new-instance v0, Lcom/android/systemui/statusbar/policy/Clock$2;
+    const/4 v0, 0x0
 
-    invoke-direct {v0, p0}, Lcom/android/systemui/statusbar/policy/Clock$2;-><init>(Lcom/android/systemui/statusbar/policy/Clock;)V
+    iput v0, p0, Lcom/android/systemui/statusbar/policy/Clock;->mTimeTickCount:I
 
-    iput-object v0, p0, Lcom/android/systemui/statusbar/policy/Clock;->mIntentReceiver:Landroid/content/BroadcastReceiver;
+    new-instance v1, Lcom/android/systemui/statusbar/policy/Clock$2;
 
-    new-instance v0, Lcom/android/systemui/statusbar/policy/Clock$3;
+    invoke-direct {v1, p0}, Lcom/android/systemui/statusbar/policy/Clock$2;-><init>(Lcom/android/systemui/statusbar/policy/Clock;)V
 
-    invoke-direct {v0, p0}, Lcom/android/systemui/statusbar/policy/Clock$3;-><init>(Lcom/android/systemui/statusbar/policy/Clock;)V
+    iput-object v1, p0, Lcom/android/systemui/statusbar/policy/Clock;->mIntentReceiver:Landroid/content/BroadcastReceiver;
 
-    iput-object v0, p0, Lcom/android/systemui/statusbar/policy/Clock;->mScreenReceiver:Landroid/content/BroadcastReceiver;
+    new-instance v1, Lcom/android/systemui/statusbar/policy/Clock$3;
 
-    new-instance v0, Lcom/android/systemui/statusbar/policy/Clock$4;
+    invoke-direct {v1, p0}, Lcom/android/systemui/statusbar/policy/Clock$3;-><init>(Lcom/android/systemui/statusbar/policy/Clock;)V
 
-    invoke-direct {v0, p0}, Lcom/android/systemui/statusbar/policy/Clock$4;-><init>(Lcom/android/systemui/statusbar/policy/Clock;)V
+    iput-object v1, p0, Lcom/android/systemui/statusbar/policy/Clock;->mScreenReceiver:Landroid/content/BroadcastReceiver;
 
-    iput-object v0, p0, Lcom/android/systemui/statusbar/policy/Clock;->mSecondTick:Ljava/lang/Runnable;
+    new-instance v1, Lcom/android/systemui/statusbar/policy/Clock$4;
+
+    invoke-direct {v1, p0}, Lcom/android/systemui/statusbar/policy/Clock$4;-><init>(Lcom/android/systemui/statusbar/policy/Clock;)V
+
+    iput-object v1, p0, Lcom/android/systemui/statusbar/policy/Clock;->mSecondTick:Ljava/lang/Runnable;
 
     invoke-virtual {p1}, Landroid/content/Context;->getTheme()Landroid/content/res/Resources$Theme;
 
-    move-result-object v0
+    move-result-object v1
 
-    sget-object v1, Lcom/android/systemui/R$styleable;->Clock:[I
+    sget-object v2, Lcom/android/systemui/R$styleable;->Clock:[I
 
-    const/4 v2, 0x0
-
-    invoke-virtual {v0, p2, v1, v2, v2}, Landroid/content/res/Resources$Theme;->obtainStyledAttributes(Landroid/util/AttributeSet;[III)Landroid/content/res/TypedArray;
+    invoke-virtual {v1, p2, v2, v0, v0}, Landroid/content/res/Resources$Theme;->obtainStyledAttributes(Landroid/util/AttributeSet;[III)Landroid/content/res/TypedArray;
 
     move-result-object p2
 
@@ -180,55 +184,25 @@
     return-object v0
 .end method
 
-.method static synthetic access$200(Lcom/android/systemui/statusbar/policy/Clock;)Ljava/util/Locale;
+.method static synthetic access$1000(Lcom/android/systemui/statusbar/policy/Clock;)V
     .locals 0
 
-    iget-object p0, p0, Lcom/android/systemui/statusbar/policy/Clock;->mLocale:Ljava/util/Locale;
+    invoke-direct {p0}, Lcom/android/systemui/statusbar/policy/Clock;->runSecondTick()V
 
-    return-object p0
+    return-void
 .end method
 
-.method static synthetic access$202(Lcom/android/systemui/statusbar/policy/Clock;Ljava/util/Locale;)Ljava/util/Locale;
+.method static synthetic access$200(Lcom/android/systemui/statusbar/policy/Clock;)Z
     .locals 0
 
-    iput-object p1, p0, Lcom/android/systemui/statusbar/policy/Clock;->mLocale:Ljava/util/Locale;
+    invoke-direct {p0}, Lcom/android/systemui/statusbar/policy/Clock;->showSeconds()Z
 
-    return-object p1
+    move-result p0
+
+    return p0
 .end method
 
-.method static synthetic access$302(Lcom/android/systemui/statusbar/policy/Clock;Ljava/lang/String;)Ljava/lang/String;
-    .locals 0
-
-    iput-object p1, p0, Lcom/android/systemui/statusbar/policy/Clock;->mClockFormatString:Ljava/lang/String;
-
-    return-object p1
-.end method
-
-.method static synthetic access$400(Lcom/android/systemui/statusbar/policy/Clock;)Ljava/util/Calendar;
-    .locals 0
-
-    iget-object p0, p0, Lcom/android/systemui/statusbar/policy/Clock;->mCalendar:Ljava/util/Calendar;
-
-    return-object p0
-.end method
-
-.method static synthetic access$402(Lcom/android/systemui/statusbar/policy/Clock;Ljava/util/Calendar;)Ljava/util/Calendar;
-    .locals 0
-
-    iput-object p1, p0, Lcom/android/systemui/statusbar/policy/Clock;->mCalendar:Ljava/util/Calendar;
-
-    return-object p1
-.end method
-
-.method static synthetic access$500(Lcom/android/systemui/statusbar/policy/Clock;)Ljava/text/SimpleDateFormat;
-    .locals 0
-
-    iget-object p0, p0, Lcom/android/systemui/statusbar/policy/Clock;->mClockFormat:Ljava/text/SimpleDateFormat;
-
-    return-object p0
-.end method
-
-.method static synthetic access$600(Lcom/android/systemui/statusbar/policy/Clock;)Landroid/os/Handler;
+.method static synthetic access$300(Lcom/android/systemui/statusbar/policy/Clock;)Landroid/os/Handler;
     .locals 0
 
     iget-object p0, p0, Lcom/android/systemui/statusbar/policy/Clock;->mSecondsHandler:Landroid/os/Handler;
@@ -236,10 +210,86 @@
     return-object p0
 .end method
 
-.method static synthetic access$700(Lcom/android/systemui/statusbar/policy/Clock;)Ljava/lang/Runnable;
+.method static synthetic access$400(Lcom/android/systemui/statusbar/policy/Clock;)Ljava/lang/Runnable;
     .locals 0
 
     iget-object p0, p0, Lcom/android/systemui/statusbar/policy/Clock;->mSecondTick:Ljava/lang/Runnable;
+
+    return-object p0
+.end method
+
+.method static synthetic access$500(Lcom/android/systemui/statusbar/policy/Clock;)I
+    .locals 0
+
+    iget p0, p0, Lcom/android/systemui/statusbar/policy/Clock;->mTimeTickCount:I
+
+    return p0
+.end method
+
+.method static synthetic access$502(Lcom/android/systemui/statusbar/policy/Clock;I)I
+    .locals 0
+
+    iput p1, p0, Lcom/android/systemui/statusbar/policy/Clock;->mTimeTickCount:I
+
+    return p1
+.end method
+
+.method static synthetic access$508(Lcom/android/systemui/statusbar/policy/Clock;)I
+    .locals 2
+
+    iget v0, p0, Lcom/android/systemui/statusbar/policy/Clock;->mTimeTickCount:I
+
+    add-int/lit8 v1, v0, 0x1
+
+    iput v1, p0, Lcom/android/systemui/statusbar/policy/Clock;->mTimeTickCount:I
+
+    return v0
+.end method
+
+.method static synthetic access$600(Lcom/android/systemui/statusbar/policy/Clock;)Ljava/util/Locale;
+    .locals 0
+
+    iget-object p0, p0, Lcom/android/systemui/statusbar/policy/Clock;->mLocale:Ljava/util/Locale;
+
+    return-object p0
+.end method
+
+.method static synthetic access$602(Lcom/android/systemui/statusbar/policy/Clock;Ljava/util/Locale;)Ljava/util/Locale;
+    .locals 0
+
+    iput-object p1, p0, Lcom/android/systemui/statusbar/policy/Clock;->mLocale:Ljava/util/Locale;
+
+    return-object p1
+.end method
+
+.method static synthetic access$702(Lcom/android/systemui/statusbar/policy/Clock;Ljava/lang/String;)Ljava/lang/String;
+    .locals 0
+
+    iput-object p1, p0, Lcom/android/systemui/statusbar/policy/Clock;->mClockFormatString:Ljava/lang/String;
+
+    return-object p1
+.end method
+
+.method static synthetic access$800(Lcom/android/systemui/statusbar/policy/Clock;)Ljava/util/Calendar;
+    .locals 0
+
+    iget-object p0, p0, Lcom/android/systemui/statusbar/policy/Clock;->mCalendar:Ljava/util/Calendar;
+
+    return-object p0
+.end method
+
+.method static synthetic access$802(Lcom/android/systemui/statusbar/policy/Clock;Ljava/util/Calendar;)Ljava/util/Calendar;
+    .locals 0
+
+    iput-object p1, p0, Lcom/android/systemui/statusbar/policy/Clock;->mCalendar:Ljava/util/Calendar;
+
+    return-object p1
+.end method
+
+.method static synthetic access$900(Lcom/android/systemui/statusbar/policy/Clock;)Ljava/text/SimpleDateFormat;
+    .locals 0
+
+    iget-object p0, p0, Lcom/android/systemui/statusbar/policy/Clock;->mClockFormat:Ljava/text/SimpleDateFormat;
 
     return-object p0
 .end method
@@ -543,6 +593,77 @@
     return-void
 .end method
 
+.method private runSecondTick()V
+    .locals 5
+
+    iget-object v0, p0, Lcom/android/systemui/statusbar/policy/Clock;->mSecondsHandler:Landroid/os/Handler;
+
+    if-nez v0, :cond_0
+
+    new-instance v0, Landroid/os/Handler;
+
+    invoke-direct {v0}, Landroid/os/Handler;-><init>()V
+
+    iput-object v0, p0, Lcom/android/systemui/statusbar/policy/Clock;->mSecondsHandler:Landroid/os/Handler;
+
+    :cond_0
+    invoke-virtual {p0}, Landroid/widget/TextView;->getDisplay()Landroid/view/Display;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_2
+
+    invoke-virtual {p0}, Landroid/widget/TextView;->getDisplay()Landroid/view/Display;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Landroid/view/Display;->getState()I
+
+    move-result v0
+
+    const/4 v1, 0x2
+
+    if-ne v0, v1, :cond_2
+
+    iget-object v0, p0, Lcom/android/systemui/statusbar/policy/Clock;->mSecondsHandler:Landroid/os/Handler;
+
+    iget-object v1, p0, Lcom/android/systemui/statusbar/policy/Clock;->mSecondTick:Ljava/lang/Runnable;
+
+    invoke-virtual {v0, v1}, Landroid/os/Handler;->hasCallbacks(Ljava/lang/Runnable;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    iget-object v0, p0, Lcom/android/systemui/statusbar/policy/Clock;->mSecondsHandler:Landroid/os/Handler;
+
+    iget-object v1, p0, Lcom/android/systemui/statusbar/policy/Clock;->mSecondTick:Ljava/lang/Runnable;
+
+    invoke-virtual {v0, v1}, Landroid/os/Handler;->removeCallbacks(Ljava/lang/Runnable;)V
+
+    :cond_1
+    iget-object v0, p0, Lcom/android/systemui/statusbar/policy/Clock;->mSecondsHandler:Landroid/os/Handler;
+
+    iget-object p0, p0, Lcom/android/systemui/statusbar/policy/Clock;->mSecondTick:Ljava/lang/Runnable;
+
+    invoke-static {}, Landroid/os/SystemClock;->uptimeMillis()J
+
+    move-result-wide v1
+
+    const-wide/16 v3, 0x3e8
+
+    div-long/2addr v1, v3
+
+    mul-long/2addr v1, v3
+
+    add-long/2addr v1, v3
+
+    invoke-virtual {v0, p0, v1, v2}, Landroid/os/Handler;->postAtTime(Ljava/lang/Runnable;J)Z
+
+    :cond_2
+    return-void
+.end method
+
 .method private shouldBeVisible()Z
     .locals 1
 
@@ -620,83 +741,21 @@
 .end method
 
 .method private updateShowSeconds()V
-    .locals 6
+    .locals 1
 
     invoke-direct {p0}, Lcom/android/systemui/statusbar/policy/Clock;->showSeconds()Z
 
     move-result v0
 
-    if-eqz v0, :cond_1
+    if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/android/systemui/statusbar/policy/Clock;->mSecondsHandler:Landroid/os/Handler;
-
-    if-nez v0, :cond_2
-
-    invoke-virtual {p0}, Landroid/widget/TextView;->getDisplay()Landroid/view/Display;
-
-    move-result-object v0
-
-    if-eqz v0, :cond_2
-
-    new-instance v0, Landroid/os/Handler;
-
-    invoke-direct {v0}, Landroid/os/Handler;-><init>()V
-
-    iput-object v0, p0, Lcom/android/systemui/statusbar/policy/Clock;->mSecondsHandler:Landroid/os/Handler;
-
-    invoke-virtual {p0}, Landroid/widget/TextView;->getDisplay()Landroid/view/Display;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Landroid/view/Display;->getState()I
-
-    move-result v0
-
-    const/4 v1, 0x2
-
-    if-ne v0, v1, :cond_0
-
-    iget-object v0, p0, Lcom/android/systemui/statusbar/policy/Clock;->mSecondsHandler:Landroid/os/Handler;
-
-    iget-object v1, p0, Lcom/android/systemui/statusbar/policy/Clock;->mSecondTick:Ljava/lang/Runnable;
-
-    invoke-static {}, Landroid/os/SystemClock;->uptimeMillis()J
-
-    move-result-wide v2
-
-    const-wide/16 v4, 0x3e8
-
-    div-long/2addr v2, v4
-
-    mul-long/2addr v2, v4
-
-    add-long/2addr v2, v4
-
-    invoke-virtual {v0, v1, v2, v3}, Landroid/os/Handler;->postAtTime(Ljava/lang/Runnable;J)Z
-
-    :cond_0
-    new-instance v0, Landroid/content/IntentFilter;
-
-    const-string v1, "android.intent.action.SCREEN_OFF"
-
-    invoke-direct {v0, v1}, Landroid/content/IntentFilter;-><init>(Ljava/lang/String;)V
-
-    const-string v1, "android.intent.action.SCREEN_ON"
-
-    invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
-
-    iget-object v1, p0, Landroid/widget/TextView;->mContext:Landroid/content/Context;
-
-    iget-object p0, p0, Lcom/android/systemui/statusbar/policy/Clock;->mScreenReceiver:Landroid/content/BroadcastReceiver;
-
-    invoke-virtual {v1, p0, v0}, Landroid/content/Context;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
+    invoke-direct {p0}, Lcom/android/systemui/statusbar/policy/Clock;->runSecondTick()V
 
     goto :goto_0
 
-    :cond_1
-    invoke-direct {p0}, Lcom/android/systemui/statusbar/policy/Clock;->releaseReceiver()V
+    :cond_0
+    invoke-virtual {p0}, Lcom/android/systemui/statusbar/policy/Clock;->updateClock()V
 
-    :cond_2
     :goto_0
     return-void
 .end method
@@ -970,6 +1029,28 @@
     check-cast v6, Landroid/os/Handler;
 
     invoke-virtual/range {v1 .. v6}, Landroid/content/Context;->registerReceiverAsUser(Landroid/content/BroadcastReceiver;Landroid/os/UserHandle;Landroid/content/IntentFilter;Ljava/lang/String;Landroid/os/Handler;)Landroid/content/Intent;
+
+    new-instance v0, Landroid/content/IntentFilter;
+
+    invoke-direct {v0}, Landroid/content/IntentFilter;-><init>()V
+
+    const-string v1, "android.intent.action.SCREEN_OFF"
+
+    invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
+
+    const-string v1, "android.intent.action.SCREEN_ON"
+
+    invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
+
+    invoke-virtual {p0}, Landroid/widget/TextView;->getContext()Landroid/content/Context;
+
+    move-result-object v1
+
+    iget-object v2, p0, Lcom/android/systemui/statusbar/policy/Clock;->mScreenReceiver:Landroid/content/BroadcastReceiver;
+
+    invoke-virtual {v1, v2, v0}, Landroid/content/Context;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
+
+    invoke-direct {p0}, Lcom/android/systemui/statusbar/policy/Clock;->runSecondTick()V
 
     const-class v0, Lcom/android/systemui/tuner/TunerService;
 
@@ -1491,6 +1572,11 @@
     :cond_0
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/Clock;->mCalendar:Ljava/util/Calendar;
 
+    if-nez v0, :cond_1
+
+    return-void
+
+    :cond_1
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v1

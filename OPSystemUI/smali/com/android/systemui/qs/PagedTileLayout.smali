@@ -847,35 +847,6 @@
     return-void
 .end method
 
-.method public getColumnCount()I
-    .locals 2
-
-    iget-object v0, p0, Lcom/android/systemui/qs/PagedTileLayout;->mPages:Ljava/util/ArrayList;
-
-    invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
-
-    move-result v0
-
-    const/4 v1, 0x0
-
-    if-nez v0, :cond_0
-
-    return v1
-
-    :cond_0
-    iget-object p0, p0, Lcom/android/systemui/qs/PagedTileLayout;->mPages:Ljava/util/ArrayList;
-
-    invoke-virtual {p0, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
-
-    move-result-object p0
-
-    check-cast p0, Lcom/android/systemui/qs/PagedTileLayout$TilePage;
-
-    iget p0, p0, Lcom/android/systemui/qs/TileLayout;->mColumns:I
-
-    return p0
-.end method
-
 .method public getNumVisibleTiles()I
     .locals 1
 

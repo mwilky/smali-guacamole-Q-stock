@@ -17,7 +17,7 @@
     <string name="allow_notification">Benarkan pemberitahuan</string>
     <string name="battery_low_warning">Tinggal %s, hidupkan Penjimat Bateri untuk melanjutkan penggunaan</string>
     <string name="battery_usage_extanded">Penjimat Bateri boleh memanjangkan penggunaan selama kira-kira %s berdasarkan penggunaan anda</string>
-    <string name="battery_usage_remaining">Boleh bertahan kira-kira %s berdasarkan penggunaan anda. Ini akan mengurangkan prestasi dan penggunaan data latar belakang.</string>
+    <string name="battery_usage_remaining_time">Tinggal %s</string>
     <string name="clear_process_done">Semua dipadam!</string>
     <string name="clear_process_warning_checkbox">Sudah dapat, sila jangan tunjuk lagi</string>
     <string name="clear_process_warning_message">Ini akan mengosongkan semua proses latar belakang yang boleh mengakibatkan hasil yang tidak diingini. Beberapa aplikasi mungkin berhenti berfungsi dan perlu dimulakan semula. Teruskan?</string>
@@ -59,7 +59,7 @@
     <string name="maxxaudio_disable">Lumpuhkan</string>
     <string name="maxxaudio_enable">Bolehkan</string>
     <string name="mobile263">Perantauan OnePlus</string>
-    <string name="nav_bar_guide_positive">SUDAH DAPAT</string>
+    <string name="nav_bar_guide_positive">FAHAM</string>
     <string name="nav_bar_guide_title">Leret ke atas dari bawah untuk menunjukkan bar navigasi. Untuk berhenti menyembunyikan navigasi, sila ketik di sini.</string>
     <string name="non_op_earphone_notification_content">OnePlus menawarkan beberapa ciri baru bagi set kepala anda. Klik pada pemberitahuan untuk mencubanya.</string>
     <string name="non_op_earphone_notification_title">Petua</string>

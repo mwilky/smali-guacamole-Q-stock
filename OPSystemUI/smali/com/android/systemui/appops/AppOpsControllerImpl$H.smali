@@ -1,4 +1,4 @@
-.class public final Lcom/android/systemui/appops/AppOpsControllerImpl$H;
+.class public Lcom/android/systemui/appops/AppOpsControllerImpl$H;
 .super Landroid/os/Handler;
 .source "AppOpsControllerImpl.java"
 
@@ -9,7 +9,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x14
+    accessFlags = 0x4
     name = "H"
 .end annotation
 

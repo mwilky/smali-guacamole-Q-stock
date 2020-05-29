@@ -98,7 +98,7 @@
     :cond_0
     iget-object v0, p0, Landroidx/slice/SliceItem;->mFormat:Ljava/lang/String;
 
-    const-string v1, "text"
+    const-string/jumbo v1, "text"
 
     invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 

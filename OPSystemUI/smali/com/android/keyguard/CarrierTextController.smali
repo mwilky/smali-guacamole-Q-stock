@@ -1160,7 +1160,7 @@
 
     iget-object v0, p0, Lcom/android/keyguard/CarrierTextController;->mContext:Landroid/content/Context;
 
-    const-string v2, "telephony_subscription_service"
+    const-string/jumbo v2, "telephony_subscription_service"
 
     invoke-virtual {v0, v2}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 

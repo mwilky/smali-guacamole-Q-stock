@@ -463,9 +463,11 @@
 
     const/4 v7, 0x0
 
+    const/4 v8, 0x0
+
     move-object v1, v0
 
-    invoke-direct/range {v1 .. v7}, Lcom/android/keyguard/KeyguardUpdateMonitor$BatteryStatus;-><init>(IIIIII)V
+    invoke-direct/range {v1 .. v8}, Lcom/android/keyguard/KeyguardUpdateMonitor$BatteryStatus;-><init>(IIIIIIZ)V
 
     iput-object v0, p0, Lcom/android/keyguard/KeyguardUpdateMonitor;->mBatteryStatus:Lcom/android/keyguard/KeyguardUpdateMonitor$BatteryStatus;
 
@@ -6981,8 +6983,6 @@
     iput-boolean p1, p0, Lcom/android/keyguard/KeyguardUpdateMonitor;->mGoingToSleep:Z
 
     invoke-virtual {p0}, Lcom/oneplus/keyguard/OpKeyguardUpdateMonitor;->opHandleStartedGoingToSleep()V
-
-    invoke-virtual {p0}, Lcom/android/keyguard/KeyguardUpdateMonitor;->updateBiometricListeningState()V
 
     iput-boolean v1, p0, Lcom/oneplus/keyguard/OpKeyguardUpdateMonitor;->mCameraLaunched:Z
 

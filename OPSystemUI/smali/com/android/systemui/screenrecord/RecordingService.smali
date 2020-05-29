@@ -683,7 +683,7 @@
     .locals 12
 
     :try_start_0
-    const-string v0, "temp"
+    const-string/jumbo v0, "temp"
 
     const-string v1, ".mp4"
 

@@ -324,7 +324,7 @@
     <string name="battery_saver_notification_title">బ్యాటరీ సేవర్ ఆన్‌లో ఉంది</string>
     <string name="battery_saver_start_action">బ్యాటరీ సేవర్‌ను ఆన్ చేయండి</string>
     <string name="battery_usage_extanded">బ్యాటరీ సేవర్ మీ వాడకం ఆధారంగా సుమారు %s వరకు పని చేసేలా చేస్తుంది</string>
-    <string name="battery_usage_remaining">మీ వాడకం ఆధారంగా సుమారు %s వరకు పని చేస్తుంది. పనితీరు మరియు నేపథ్య డేటాను తగ్గిస్తుంది.</string>
+    <string name="battery_usage_remaining_time">%s మిగిలి ఉంది</string>
     <string name="biometric_dialog_confirm">నిర్ధారించు</string>
     <string name="biometric_dialog_empty_space_description">ఖాళీ ప్రదేశం, ప్రామాణీకరణను రద్దు చేయడానికి నొక్కండి</string>
     <string name="biometric_dialog_face_icon_description_authenticated">ముఖం ప్రామాణీకరించబడింది</string>

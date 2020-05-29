@@ -67,7 +67,7 @@
 
     const/4 v0, 0x3
 
-    const-string v1, "sysui_rounded_content_padding"
+    const-string/jumbo v1, "sysui_rounded_content_padding"
 
     invoke-static {p1, v1, p2, v0}, Lcom/android/systemui/tuner/TunablePadding;->addTunablePadding(Landroid/view/View;Ljava/lang/String;II)Lcom/android/systemui/tuner/TunablePadding;
 

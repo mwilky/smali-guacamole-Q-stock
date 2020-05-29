@@ -612,6 +612,12 @@
     if-eqz p0, :cond_3
 
     :cond_2
+    invoke-static {}, Lcom/oneplus/util/OpUtils;->isCutoutEmulationEnabled()Z
+
+    move-result v2
+
+    if-nez v2, :cond_3
+
     iput v1, v0, Landroid/graphics/Rect;->left:I
 
     iput p0, v0, Landroid/graphics/Rect;->right:I

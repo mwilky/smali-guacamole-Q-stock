@@ -36,7 +36,7 @@
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/EdgeBackGestureHandler$SysUiInputEventReceiver;->this$0:Lcom/android/systemui/statusbar/phone/EdgeBackGestureHandler;
 
-    invoke-static {v0, p1}, Lcom/android/systemui/statusbar/phone/EdgeBackGestureHandler;->access$1300(Lcom/android/systemui/statusbar/phone/EdgeBackGestureHandler;Landroid/view/InputEvent;)V
+    invoke-static {v0, p1}, Lcom/android/systemui/statusbar/phone/EdgeBackGestureHandler;->access$600(Lcom/android/systemui/statusbar/phone/EdgeBackGestureHandler;Landroid/view/InputEvent;)V
 
     const/4 v0, 0x1
 

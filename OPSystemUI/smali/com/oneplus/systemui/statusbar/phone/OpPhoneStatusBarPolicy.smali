@@ -1320,7 +1320,7 @@
 
     const-string v8, "show no disturb icon on status bar"
 
-    const-string v9, "three key in normal state, no icon shows on status bar"
+    const-string/jumbo v9, "three key in normal state, no icon shows on status bar"
 
     const/16 v10, 0x17
 

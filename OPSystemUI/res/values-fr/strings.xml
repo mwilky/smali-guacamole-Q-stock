@@ -324,7 +324,7 @@
     <string name="battery_saver_notification_title">Économiseur de batterie activé</string>
     <string name="battery_saver_start_action">"Activer l'économiseur de batterie ?"</string>
     <string name="battery_usage_extanded">"L'économiseur de batterie peut prolonger l'utilisation d'environ %s en fonction de votre utilisation."</string>
-    <string name="battery_usage_remaining">Devrait durer environ %s en fonction de votre utilisation. Réduit les performances et les données en arrière-plan.</string>
+    <string name="battery_usage_remaining_time">%s restante(s)</string>
     <string name="biometric_dialog_confirm">Confirmer</string>
     <string name="biometric_dialog_empty_space_description">"Zone vide : appuyez pour annuler l'authentification"</string>
     <string name="biometric_dialog_face_icon_description_authenticated">Visage authentifié</string>
@@ -1030,7 +1030,7 @@ Vous êtes également connecté à un VPN qui peut contrôler votre activité su
     <string name="music_controls_no_title">Sans titre</string>
     <string name="nav_bar">Barre de navigation</string>
     <string name="nav_bar_default">(par défaut)</string>
-    <string name="nav_bar_guide_positive">"D'ACCORD"</string>
+    <string name="nav_bar_guide_positive">OK</string>
     <string name="nav_bar_guide_title">Balayez de bas en haut pour afficher la barre de navigation. Si vous voulez arrêter de masquer la navigation, veuillez appuyer ici.</string>
     <string name="nav_bar_layout">Disposition</string>
     <string name="no_application">Aucune</string>

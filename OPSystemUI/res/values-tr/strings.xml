@@ -324,7 +324,7 @@
     <string name="battery_saver_notification_title">Pil Tasarrufu açık</string>
     <string name="battery_saver_start_action">"Pil Tasarrufu'nu aç"</string>
     <string name="battery_usage_extanded">Pil Tasarrufu, kullanımınıza bağlı olarak pil ömrünü %s kadar uzatır</string>
-    <string name="battery_usage_remaining">Kullanımınıza bağlı olarak %s kadar dayanacaktır. Performans düşer ve arka plan verileri kullanılamaz.</string>
+    <string name="battery_usage_remaining_time">%s kaldı</string>
     <string name="biometric_dialog_confirm">Onaylayın</string>
     <string name="biometric_dialog_empty_space_description">Boş alan, yetkilendirmeyi iptal etmek için dokunun</string>
     <string name="biometric_dialog_face_icon_description_authenticated">Yüz kimliği doğrulandı</string>
@@ -1247,7 +1247,7 @@ Ayrıca, ağ etkinliğinizi izleyebilen bir VPN'ye de bağlısınız."</string>
     <string name="qs_status_phone_vibrate">Telefonun titreşimi açık</string>
     <string name="quick_launch_exit">Çıkış</string>
     <string name="quick_launch_exit_hint">Çıkmak için parmağınızı ekrandan kaldırın</string>
-    <string name="quick_reply">YANIT</string>
+    <string name="quick_reply">YANITLA</string>
     <string name="quick_settings">Hızlı Ayarlar</string>
     <string name="quick_settings_bluetooth_detail_empty_text">Kullanılabilir eşlenmiş cihaz yok</string>
     <string name="quick_settings_bluetooth_label">Bluetooth</string>

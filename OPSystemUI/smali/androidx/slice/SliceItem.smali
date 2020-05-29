@@ -35,7 +35,7 @@
 
     iput-object v0, p0, Landroidx/slice/SliceItem;->mHints:[Ljava/lang/String;
 
-    const-string v0, "text"
+    const-string/jumbo v0, "text"
 
     iput-object v0, p0, Landroidx/slice/SliceItem;->mFormat:Ljava/lang/String;
 
@@ -67,7 +67,7 @@
 
     iput-object v0, p0, Landroidx/slice/SliceItem;->mHints:[Ljava/lang/String;
 
-    const-string v0, "text"
+    const-string/jumbo v0, "text"
 
     iput-object v0, p0, Landroidx/slice/SliceItem;->mFormat:Ljava/lang/String;
 
@@ -150,7 +150,7 @@
 
     iput-object v0, p0, Landroidx/slice/SliceItem;->mHints:[Ljava/lang/String;
 
-    const-string v0, "text"
+    const-string/jumbo v0, "text"
 
     iput-object v0, p0, Landroidx/slice/SliceItem;->mFormat:Ljava/lang/String;
 
@@ -418,7 +418,7 @@
     goto :goto_1
 
     :sswitch_3
-    const-string v0, "text"
+    const-string/jumbo v0, "text"
 
     invoke-virtual {p0, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -577,8 +577,6 @@
 
     return-object p0
 
-    nop
-
     :sswitch_data_0
     .sparse-switch
         -0x54d081ca -> :sswitch_6
@@ -698,7 +696,7 @@
     goto :goto_1
 
     :sswitch_3
-    const-string v0, "text"
+    const-string/jumbo v0, "text"
 
     invoke-virtual {p0, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -807,8 +805,6 @@
 
     return-object p0
 
-    nop
-
     :sswitch_data_0
     .sparse-switch
         -0x54d081ca -> :sswitch_6
@@ -883,7 +879,7 @@
     goto :goto_1
 
     :sswitch_3
-    const-string v0, "text"
+    const-string/jumbo v0, "text"
 
     invoke-virtual {p3, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -1030,6 +1026,8 @@
 
     :goto_2
     return-void
+
+    nop
 
     :sswitch_data_0
     .sparse-switch
@@ -1572,7 +1570,7 @@
     goto :goto_0
 
     :sswitch_2
-    const-string v4, "text"
+    const-string/jumbo v4, "text"
 
     invoke-virtual {v2, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -1913,6 +1911,8 @@
     move-result-object p0
 
     return-object p0
+
+    nop
 
     :sswitch_data_0
     .sparse-switch

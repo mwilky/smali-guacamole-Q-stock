@@ -227,7 +227,7 @@
 
     new-array v2, v2, [I
 
-    const/16 v3, 0xb7
+    const/16 v3, 0xb8
 
     aput v3, v2, v0
 
@@ -1357,7 +1357,7 @@
     :try_start_0
     iget-object p0, p0, Lcom/oneplus/faceunlock/OpFacelockController;->mMotorManager:Lcom/oneplus/os/OpMotorManager;
 
-    const-string v2, "systemui_faceunlock"
+    const-string/jumbo v2, "systemui_faceunlock"
 
     invoke-virtual {p0, v2}, Lcom/oneplus/os/OpMotorManager;->downMotorBySystemApp(Ljava/lang/String;)I
 
@@ -2652,7 +2652,7 @@
     :cond_0
     iget-object p0, p0, Lcom/oneplus/faceunlock/OpFacelockController;->mMotorManager:Lcom/oneplus/os/OpMotorManager;
 
-    const-string v5, "systemui_faceunlock"
+    const-string/jumbo v5, "systemui_faceunlock"
 
     invoke-virtual {p0, v5}, Lcom/oneplus/os/OpMotorManager;->upMotorBySystemApp(Ljava/lang/String;)I
 

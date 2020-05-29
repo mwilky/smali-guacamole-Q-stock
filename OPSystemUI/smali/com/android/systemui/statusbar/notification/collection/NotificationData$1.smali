@@ -60,7 +60,7 @@
 
 # virtual methods
 .method public compare(Lcom/android/systemui/statusbar/notification/collection/NotificationEntry;Lcom/android/systemui/statusbar/notification/collection/NotificationEntry;)I
-    .locals 12
+    .locals 13
 
     iget-object v0, p1, Lcom/android/systemui/statusbar/notification/collection/NotificationEntry;->notification:Landroid/service/notification/StatusBarNotification;
 
@@ -202,18 +202,15 @@
 
     if-eqz v2, :cond_4
 
-    move v4, v9
+    move v2, v9
+
+    goto :goto_4
 
     :cond_4
+    move v2, v4
+
+    :goto_4
     invoke-virtual {p1}, Lcom/android/systemui/statusbar/notification/collection/NotificationEntry;->getRow()Lcom/android/systemui/statusbar/notification/row/ExpandableNotificationRow;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Lcom/android/systemui/statusbar/notification/row/ExpandableNotificationRow;->isHeadsUp()Z
-
-    move-result v2
-
-    invoke-virtual {p2}, Lcom/android/systemui/statusbar/notification/collection/NotificationEntry;->getRow()Lcom/android/systemui/statusbar/notification/row/ExpandableNotificationRow;
 
     move-result-object v10
 
@@ -221,19 +218,27 @@
 
     move-result v10
 
-    const/4 v11, -0x1
+    invoke-virtual {p2}, Lcom/android/systemui/statusbar/notification/collection/NotificationEntry;->getRow()Lcom/android/systemui/statusbar/notification/row/ExpandableNotificationRow;
 
-    if-eq v2, v10, :cond_6
+    move-result-object v11
 
-    if-eqz v2, :cond_5
+    invoke-virtual {v11}, Lcom/android/systemui/statusbar/notification/row/ExpandableNotificationRow;->isHeadsUp()Z
 
-    move v9, v11
+    move-result v11
+
+    const/4 v12, -0x1
+
+    if-eq v10, v11, :cond_6
+
+    if-eqz v10, :cond_5
+
+    move v9, v12
 
     :cond_5
     return v9
 
     :cond_6
-    if-eqz v2, :cond_7
+    if-eqz v10, :cond_7
 
     iget-object p0, p0, Lcom/android/systemui/statusbar/notification/collection/NotificationData$1;->this$0:Lcom/android/systemui/statusbar/notification/collection/NotificationData;
 
@@ -252,7 +257,7 @@
 
     if-eqz p0, :cond_8
 
-    return v11
+    return v12
 
     :cond_8
     iget-boolean p0, p2, Lcom/android/systemui/statusbar/notification/collection/NotificationEntry;->mIsGamingModeNotification:Z
@@ -272,13 +277,13 @@
 
     invoke-virtual {p2}, Lcom/android/systemui/statusbar/notification/collection/NotificationEntry;->getRow()Lcom/android/systemui/statusbar/notification/row/ExpandableNotificationRow;
 
-    move-result-object v2
+    move-result-object v10
 
-    invoke-virtual {v2}, Lcom/android/systemui/statusbar/notification/row/ExpandableNotificationRow;->showingAmbientPulsing()Z
+    invoke-virtual {v10}, Lcom/android/systemui/statusbar/notification/row/ExpandableNotificationRow;->showingAmbientPulsing()Z
 
-    move-result v2
+    move-result v10
 
-    if-eq p0, v2, :cond_b
+    if-eq p0, v10, :cond_b
 
     invoke-virtual {p1}, Lcom/android/systemui/statusbar/notification/collection/NotificationEntry;->getRow()Lcom/android/systemui/statusbar/notification/row/ExpandableNotificationRow;
 
@@ -290,7 +295,7 @@
 
     if-eqz p0, :cond_a
 
-    move v9, v11
+    move v9, v12
 
     :cond_a
     return v9
@@ -300,17 +305,17 @@
 
     if-eqz v8, :cond_c
 
-    move v9, v11
+    move v9, v12
 
     :cond_c
     return v9
 
     :cond_d
-    if-eq v3, v4, :cond_f
+    if-eq v3, v2, :cond_f
 
     if-eqz v3, :cond_e
 
-    move v9, v11
+    move v9, v12
 
     :cond_e
     return v9
@@ -338,7 +343,7 @@
 
     move-result p0
 
-    mul-int/2addr p0, v11
+    mul-int/2addr p0, v12
 
     return p0
 
@@ -350,6 +355,47 @@
     return v5
 
     :cond_11
+    invoke-virtual {v0}, Landroid/service/notification/StatusBarNotification;->getNotification()Landroid/app/Notification;
+
+    move-result-object p0
+
+    iget-wide p0, p0, Landroid/app/Notification;->when:J
+
+    const-wide/16 v2, 0x0
+
+    cmp-long p0, p0, v2
+
+    if-nez p0, :cond_13
+
+    invoke-virtual {v1}, Landroid/service/notification/StatusBarNotification;->getNotification()Landroid/app/Notification;
+
+    move-result-object p0
+
+    iget-wide p0, p0, Landroid/app/Notification;->when:J
+
+    cmp-long p0, p0, v2
+
+    if-nez p0, :cond_12
+
+    return v4
+
+    :cond_12
+    return v9
+
+    :cond_13
+    invoke-virtual {v1}, Landroid/service/notification/StatusBarNotification;->getNotification()Landroid/app/Notification;
+
+    move-result-object p0
+
+    iget-wide p0, p0, Landroid/app/Notification;->when:J
+
+    cmp-long p0, p0, v2
+
+    if-nez p0, :cond_14
+
+    return v12
+
+    :cond_14
     invoke-virtual {v1}, Landroid/service/notification/StatusBarNotification;->getNotification()Landroid/app/Notification;
 
     move-result-object p0

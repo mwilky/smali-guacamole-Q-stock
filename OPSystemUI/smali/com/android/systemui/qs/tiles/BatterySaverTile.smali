@@ -87,7 +87,7 @@
 
     new-instance p0, Landroid/content/Intent;
 
-    const-string v0, "android.intent.action.POWER_USAGE_SUMMARY"
+    const-string v0, "android.settings.BATTERY_SAVER_SETTINGS"
 
     invoke-direct {p0, v0}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
@@ -168,7 +168,7 @@
 .end method
 
 .method protected handleUpdateState(Lcom/android/systemui/plugins/qs/QSTile$BooleanState;Ljava/lang/Object;)V
-    .locals 3
+    .locals 6
 
     iget-boolean p2, p0, Lcom/android/systemui/qs/tiles/BatterySaverTile;->mPluggedIn:Z
 
@@ -227,21 +227,62 @@
 
     iput-object p2, p1, Lcom/android/systemui/plugins/qs/QSTile$State;->expandedAccessibilityClassName:Ljava/lang/String;
 
-    iget-object p0, p0, Lcom/android/systemui/qs/tiles/BatterySaverTile;->mSetting:Lcom/android/systemui/qs/SecureSetting;
+    iget-object p2, p0, Lcom/android/systemui/qs/tiles/BatterySaverTile;->mSetting:Lcom/android/systemui/qs/SecureSetting;
 
-    invoke-virtual {p0}, Lcom/android/systemui/qs/SecureSetting;->getValue()I
+    invoke-virtual {p2}, Lcom/android/systemui/qs/SecureSetting;->getValue()I
 
-    move-result p0
+    move-result p2
 
-    if-nez p0, :cond_2
+    if-nez p2, :cond_2
+
+    move p2, v0
 
     goto :goto_1
 
     :cond_2
-    move v0, v1
+    move p2, v1
 
     :goto_1
-    iput-boolean v0, p1, Lcom/android/systemui/plugins/qs/QSTile$State;->showRippleEffect:Z
+    iput-boolean p2, p1, Lcom/android/systemui/plugins/qs/QSTile$State;->showRippleEffect:Z
+
+    const/4 p2, 0x0
+
+    iget-boolean v2, p0, Lcom/android/systemui/qs/tiles/BatterySaverTile;->mPowerSave:Z
+
+    if-eqz v2, :cond_3
+
+    iget-object v2, p0, Lcom/android/systemui/qs/tileimpl/QSTileImpl;->mContext:Landroid/content/Context;
+
+    invoke-static {v2}, Lcom/oneplus/util/OpUtils;->getBatteryTimeRemaining(Landroid/content/Context;)J
+
+    move-result-wide v2
+
+    const-wide/16 v4, 0x0
+
+    cmp-long v4, v2, v4
+
+    if-lez v4, :cond_3
+
+    iget-object p0, p0, Lcom/android/systemui/qs/tileimpl/QSTileImpl;->mContext:Landroid/content/Context;
+
+    sget p2, Lcom/android/systemui/R$string;->battery_usage_remaining_time:I
+
+    new-array v0, v0, [Ljava/lang/Object;
+
+    long-to-double v2, v2
+
+    invoke-static {p0, v2, v3, v1}, Lcom/android/settingslib/utils/StringUtil;->formatElapsedTime(Landroid/content/Context;DZ)Ljava/lang/CharSequence;
+
+    move-result-object v2
+
+    aput-object v2, v0, v1
+
+    invoke-virtual {p0, p2, v0}, Landroid/content/Context;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object p2
+
+    :cond_3
+    iput-object p2, p1, Lcom/android/systemui/plugins/qs/QSTile$State;->secondaryLabel:Ljava/lang/CharSequence;
 
     return-void
 .end method

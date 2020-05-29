@@ -217,7 +217,7 @@
 
     invoke-direct {v0}, Lcom/android/systemui/qs/TouchAnimator$Builder;-><init>()V
 
-    const v1, 0x3f5c28f6    # 0.86f
+    const v1, 0x3eeb851f    # 0.46f
 
     invoke-virtual {v0, v1}, Lcom/android/systemui/qs/TouchAnimator$Builder;->setStartDelay(F)Lcom/android/systemui/qs/TouchAnimator$Builder;
 

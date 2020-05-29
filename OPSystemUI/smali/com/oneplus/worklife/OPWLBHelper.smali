@@ -590,6 +590,32 @@
     return-void
 .end method
 
+.method public sendShutDownBroadcast()V
+    .locals 2
+
+    const-string v0, "OPSystemUIWLBHelper"
+
+    const-string v1, "sending Shutdown event to WLB"
+
+    invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    new-instance v0, Landroid/content/Intent;
+
+    const-string v1, "com.oneplus.intent.ACTION_SHUTDOWN"
+
+    invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
+
+    const-string v1, "com.oneplus.opwlb"
+
+    invoke-virtual {v0, v1}, Landroid/content/Intent;->setPackage(Ljava/lang/String;)Landroid/content/Intent;
+
+    iget-object p0, p0, Lcom/oneplus/worklife/OPWLBHelper;->mContext:Landroid/content/Context;
+
+    invoke-virtual {p0, v0}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V
+
+    return-void
+.end method
+
 .method public setNotificationMediaManager(Lcom/android/systemui/statusbar/NotificationMediaManager;)V
     .locals 0
 

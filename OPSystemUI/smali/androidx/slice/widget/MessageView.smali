@@ -148,7 +148,7 @@
 
     invoke-direct {p2}, Landroid/text/SpannableStringBuilder;-><init>()V
 
-    const-string p3, "text"
+    const-string/jumbo p3, "text"
 
     invoke-static {p1, p3}, Landroidx/slice/core/SliceQuery;->findAll(Landroidx/slice/SliceItem;Ljava/lang/String;)Ljava/util/List;
 

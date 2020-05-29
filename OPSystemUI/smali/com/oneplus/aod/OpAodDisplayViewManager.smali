@@ -27,7 +27,11 @@
 
 .field private mDozeHost:Lcom/android/systemui/doze/DozeHost;
 
+.field private mHandler:Landroid/os/Handler;
+
 .field private mHostCallback:Lcom/android/systemui/doze/DozeHost$Callback;
+
+.field private mIndication:Lcom/oneplus/aod/OpFpAodIndicationText;
 
 .field public mIsPlayFingerprintUnlockAnimation:Z
 
@@ -85,6 +89,12 @@
     check-cast v0, Lcom/android/systemui/statusbar/AmbientPulseManager;
 
     iput-object v0, p0, Lcom/oneplus/aod/OpAodDisplayViewManager;->mAmbientPulseManager:Lcom/android/systemui/statusbar/AmbientPulseManager;
+
+    new-instance v0, Landroid/os/Handler;
+
+    invoke-direct {v0}, Landroid/os/Handler;-><init>()V
+
+    iput-object v0, p0, Lcom/oneplus/aod/OpAodDisplayViewManager;->mHandler:Landroid/os/Handler;
 
     new-instance v0, Lcom/oneplus/aod/OpAodDisplayViewManager$1;
 
@@ -265,7 +275,25 @@
     return-object p0
 .end method
 
-.method static synthetic access$500(Lcom/oneplus/aod/OpAodDisplayViewManager;)Landroid/content/Context;
+.method static synthetic access$500(Lcom/oneplus/aod/OpAodDisplayViewManager;)Lcom/oneplus/aod/OpFpAodIndicationText;
+    .locals 0
+
+    iget-object p0, p0, Lcom/oneplus/aod/OpAodDisplayViewManager;->mIndication:Lcom/oneplus/aod/OpFpAodIndicationText;
+
+    return-object p0
+.end method
+
+.method static synthetic access$600(Lcom/oneplus/aod/OpAodDisplayViewManager;)Z
+    .locals 0
+
+    invoke-direct {p0}, Lcom/oneplus/aod/OpAodDisplayViewManager;->isAodMode()Z
+
+    move-result p0
+
+    return p0
+.end method
+
+.method static synthetic access$700(Lcom/oneplus/aod/OpAodDisplayViewManager;)Landroid/content/Context;
     .locals 0
 
     iget-object p0, p0, Lcom/oneplus/aod/OpAodDisplayViewManager;->mContext:Landroid/content/Context;
@@ -273,7 +301,7 @@
     return-object p0
 .end method
 
-.method static synthetic access$600(Lcom/oneplus/aod/OpAodDisplayViewManager;)Lcom/oneplus/aod/OpAodLightEffectContainer;
+.method static synthetic access$800(Lcom/oneplus/aod/OpAodDisplayViewManager;)Lcom/oneplus/aod/OpAodLightEffectContainer;
     .locals 0
 
     iget-object p0, p0, Lcom/oneplus/aod/OpAodDisplayViewManager;->mLightEffectContainer:Lcom/oneplus/aod/OpAodLightEffectContainer;
@@ -303,7 +331,7 @@
     return-object p0
 
     :cond_0
-    const-string p0, "threekey"
+    const-string/jumbo p0, "threekey"
 
     return-object p0
 
@@ -324,7 +352,7 @@
 .end method
 
 .method private initViews(Landroid/view/ViewGroup;)V
-    .locals 4
+    .locals 5
 
     sget v0, Lcom/android/systemui/R$id;->op_aod_container:I
 
@@ -394,35 +422,81 @@
 
     invoke-virtual {p1, v0}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
 
-    move-result-object p1
-
-    check-cast p1, Lcom/oneplus/aod/OpAodLightEffectContainer;
-
-    iput-object p1, p0, Lcom/oneplus/aod/OpAodDisplayViewManager;->mLightEffectContainer:Lcom/oneplus/aod/OpAodLightEffectContainer;
-
-    iget-object p1, p0, Lcom/oneplus/aod/OpAodDisplayViewManager;->mLightEffectContainer:Lcom/oneplus/aod/OpAodLightEffectContainer;
-
-    iget-object v0, p0, Lcom/oneplus/aod/OpAodDisplayViewManager;->mContext:Landroid/content/Context;
-
-    invoke-virtual {v0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
-
     move-result-object v0
 
-    const-string v1, "op_custom_horizon_light_animation_style"
+    check-cast v0, Lcom/oneplus/aod/OpAodLightEffectContainer;
 
-    const/4 v2, 0x0
+    iput-object v0, p0, Lcom/oneplus/aod/OpAodDisplayViewManager;->mLightEffectContainer:Lcom/oneplus/aod/OpAodLightEffectContainer;
 
-    const/4 v3, -0x2
+    iget-object v0, p0, Lcom/oneplus/aod/OpAodDisplayViewManager;->mLightEffectContainer:Lcom/oneplus/aod/OpAodLightEffectContainer;
 
-    invoke-static {v0, v1, v2, v3}, Landroid/provider/Settings$System;->getIntForUser(Landroid/content/ContentResolver;Ljava/lang/String;II)I
+    iget-object v1, p0, Lcom/oneplus/aod/OpAodDisplayViewManager;->mContext:Landroid/content/Context;
 
-    move-result v0
+    invoke-virtual {v1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
-    invoke-virtual {p1, v0}, Lcom/oneplus/aod/OpAodLightEffectContainer;->setLightIndex(I)V
+    move-result-object v1
+
+    const-string v2, "op_custom_horizon_light_animation_style"
+
+    const/4 v3, 0x0
+
+    const/4 v4, -0x2
+
+    invoke-static {v1, v2, v3, v4}, Landroid/provider/Settings$System;->getIntForUser(Landroid/content/ContentResolver;Ljava/lang/String;II)I
+
+    move-result v1
+
+    invoke-virtual {v0, v1}, Lcom/oneplus/aod/OpAodLightEffectContainer;->setLightIndex(I)V
+
+    sget v0, Lcom/android/systemui/R$id;->op_aod_fp_indication_text:I
+
+    invoke-virtual {p1, v0}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
+
+    move-result-object p1
+
+    check-cast p1, Lcom/oneplus/aod/OpFpAodIndicationText;
+
+    iput-object p1, p0, Lcom/oneplus/aod/OpAodDisplayViewManager;->mIndication:Lcom/oneplus/aod/OpFpAodIndicationText;
+
+    iget-object p1, p0, Lcom/oneplus/aod/OpAodDisplayViewManager;->mIndication:Lcom/oneplus/aod/OpFpAodIndicationText;
+
+    iget-object v0, p0, Lcom/oneplus/aod/OpAodDisplayViewManager;->mHandler:Landroid/os/Handler;
+
+    invoke-virtual {p1, p0, v0}, Lcom/oneplus/aod/OpFpAodIndicationText;->init(Lcom/oneplus/aod/OpAodDisplayViewManager;Landroid/os/Handler;)V
 
     invoke-direct {p0}, Lcom/oneplus/aod/OpAodDisplayViewManager;->updateAodMainParam()V
 
     return-void
+.end method
+
+.method private isAodMode()Z
+    .locals 1
+
+    iget-object v0, p0, Lcom/oneplus/aod/OpAodDisplayViewManager;->mKeyguardUpdateMonitor:Lcom/android/keyguard/KeyguardUpdateMonitor;
+
+    invoke-virtual {v0}, Lcom/android/keyguard/KeyguardUpdateMonitor;->isScreenOn()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    iget-object p0, p0, Lcom/oneplus/aod/OpAodDisplayViewManager;->mPowerManager:Landroid/os/PowerManager;
+
+    invoke-virtual {p0}, Landroid/os/PowerManager;->isInteractive()Z
+
+    move-result p0
+
+    if-nez p0, :cond_0
+
+    const/4 p0, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 p0, 0x0
+
+    :goto_0
+    return p0
 .end method
 
 .method private updateAodMainParam()V
@@ -828,9 +902,25 @@
 
     invoke-virtual {p1, v0}, Lcom/oneplus/aod/OpAodNotificationIconAreaController;->initViews(Landroid/view/ViewGroup;)V
 
-    iget-object p0, p0, Lcom/oneplus/aod/OpAodDisplayViewManager;->mAodMainView:Lcom/oneplus/aod/OpAodMain;
+    iget-object p1, p0, Lcom/oneplus/aod/OpAodDisplayViewManager;->mAodMainView:Lcom/oneplus/aod/OpAodMain;
 
-    invoke-virtual {p0}, Lcom/oneplus/aod/OpAodMain;->onDensityOrFontScaleChanged()V
+    invoke-virtual {p1}, Lcom/oneplus/aod/OpAodMain;->onDensityOrFontScaleChanged()V
+
+    iget-object p1, p0, Lcom/oneplus/aod/OpAodDisplayViewManager;->mContext:Landroid/content/Context;
+
+    invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object p1
+
+    sget v0, Lcom/android/systemui/R$dimen;->oneplus_contorl_text_size_body1:I
+
+    invoke-virtual {p1, v0}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+
+    move-result p1
+
+    const/4 v0, 0x0
+
+    invoke-virtual {p0, v0, p1}, Lcom/oneplus/aod/OpAodDisplayViewManager;->updateIndicationTextSize(II)V
 
     return-void
 .end method
@@ -1055,5 +1145,17 @@
     invoke-direct {p0}, Lcom/oneplus/aod/OpAodDisplayViewManager;->updateView()V
 
     :cond_8
+    return-void
+.end method
+
+.method public updateIndicationTextSize(II)V
+    .locals 0
+
+    iget-object p0, p0, Lcom/oneplus/aod/OpAodDisplayViewManager;->mIndication:Lcom/oneplus/aod/OpFpAodIndicationText;
+
+    int-to-float p2, p2
+
+    invoke-virtual {p0, p1, p2}, Landroid/widget/TextView;->setTextSize(IF)V
+
     return-void
 .end method

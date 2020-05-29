@@ -17,7 +17,7 @@
     <string name="allow_notification">सूचनांना परवानगी द्या</string>
     <string name="battery_low_warning">%s शिल्लक, वापर वाढवण्यासाठी बॅटरी सेव्हर चालू करा</string>
     <string name="battery_usage_extanded">आपला वापर पाहता बॅटरी सेव्हर %s पर्यंत वापर वाढवू शकते</string>
-    <string name="battery_usage_remaining">आपला वापर पाहता %s पर्यंत शिल्लक राहू शकेल. कार्यप्रदर्शन आणि पार्श्वभूमीवरील डेटाचा वापर कमी करते.</string>
+    <string name="battery_usage_remaining_time">%s बाकी आहे</string>
     <string name="clear_process_done">सर्व साफ झाल्या!</string>
     <string name="clear_process_warning_checkbox">समजले, पुन्हा दाखवू नका</string>
     <string name="clear_process_warning_message">हे सर्व बॅकग्राऊंड प्रक्रिया साफ करेल ज्यामुळे अनपेक्षित परिणाम होऊ शकतात. काही अॅप्स काम करणे थांबवू शकतात आणि त्यांना पुन्हा सुरू करणे आवश्यक असेल. सुरू ठेवायचे का?</string>

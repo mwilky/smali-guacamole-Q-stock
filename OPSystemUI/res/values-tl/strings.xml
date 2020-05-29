@@ -324,7 +324,7 @@
     <string name="battery_saver_notification_title">Naka-on ang Pangtipid sa Baterya</string>
     <string name="battery_saver_start_action">I-on ang Pangtipid sa Baterya</string>
     <string name="battery_usage_extanded">Maaaring patagalin ng Tagatipid ng Baterya ang paggamit ng mga %s batay sa iyong paggamit</string>
-    <string name="battery_usage_remaining">Tatagal ng mga %s batay sa iyong paggamit. Pinapababa ang performance at data sa background.</string>
+    <string name="battery_usage_remaining_time">%s ang natitira</string>
     <string name="biometric_dialog_confirm">Kumpirmahin</string>
     <string name="biometric_dialog_empty_space_description">Walang laman na rehiyon, mag-tap para kanselahin ang pag-authenticate</string>
     <string name="biometric_dialog_face_icon_description_authenticated">Na-authenticate ang mukha</string>

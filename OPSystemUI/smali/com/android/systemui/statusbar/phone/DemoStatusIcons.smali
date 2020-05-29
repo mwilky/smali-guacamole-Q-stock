@@ -135,6 +135,10 @@
 
     invoke-virtual {p1, p0, p2}, Landroid/view/ViewGroup;->addView(Landroid/view/View;I)V
 
+    const-string p1, "demo_status_icon_container"
+
+    invoke-virtual {p0, p1}, Lcom/android/systemui/statusbar/phone/StatusIconContainer;->setOpTag(Ljava/lang/String;)V
+
     return-void
 .end method
 

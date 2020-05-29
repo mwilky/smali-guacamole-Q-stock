@@ -324,7 +324,7 @@
     <string name="battery_saver_notification_title">Batterisparläget är aktiverat</string>
     <string name="battery_saver_start_action">Aktivera batterisparläget</string>
     <string name="battery_usage_extanded">Batterisparfunktionen kan förlänga användningen med ca %s baserat på din användning</string>
-    <string name="battery_usage_remaining">Bör räcka i %s baserat på din användning. Minskar prestanda och bakgrundsdata.</string>
+    <string name="battery_usage_remaining_time">%s kvar</string>
     <string name="biometric_dialog_confirm">Bekräfta</string>
     <string name="biometric_dialog_empty_space_description">Området är tomt. Tryck för att avbryta autentiseringen</string>
     <string name="biometric_dialog_face_icon_description_authenticated">Ansiktet har autentiserats</string>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="center" />
+    <LinearLayout android:gravity="bottom" android:orientation="vertical" android:background="@color/biometric_dialog_dim_color" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <View android:id="@id/space" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" android:contentDescription="@string/biometric_dialog_empty_space_description" />
+        <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <View android:id="@id/left_space" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                <LinearLayout android:orientation="vertical" android:id="@id/dialog" android:background="@drawable/biometric_dialog_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textColor="?android:textColorPrimary" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/oneplus_contorl_margin_left2" android:layout_marginTop="@dimen/oneplus_contorl_margin_top4" android:layout_marginRight="@dimen/oneplus_contorl_margin_right2" android:textDirection="locale" android:textAlignment="viewStart" style="@style/oneplus_contorl_text_style_title" />
+                    <TextView android:textColor="?android:textColorSecondary" android:id="@id/subtitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/oneplus_contorl_margin_left2" android:layout_marginTop="@dimen/oneplus_contorl_margin_top1" android:layout_marginRight="@dimen/oneplus_contorl_margin_right2" android:textDirection="locale" android:textAlignment="viewStart" style="@style/oneplus_contorl_text_style_subheading" />
+                    <TextView android:textColor="?android:textColorSecondary" android:id="@id/description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/oneplus_contorl_margin_left2" android:layout_marginTop="@dimen/oneplus_contorl_margin_top1" android:layout_marginRight="@dimen/oneplus_contorl_margin_right2" android:textDirection="locale" android:textAlignment="viewStart" style="@style/oneplus_contorl_text_style_body1" />
+                    <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/oneplus_button_mini_height" android:layout_marginTop="@dimen/oneplus_contorl_margin_top1" android:layout_marginBottom="@dimen/oneplus_contorl_margin_top1" android:measureWithLargestChild="true" style="?android:buttonBarStyle">
+                        <Space android:id="@id/leftSpacer" android:visibility="visible" android:layout_width="0.0dip" android:layout_height="fill_parent" />
+                        <Button android:gravity="center" android:id="@id/button2" android:layout_width="wrap_content" android:layout_height="fill_parent" android:maxLines="2" style="@android:style/Widget.DeviceDefault.Button.Borderless.Colored" />
+                        <Space android:id="@id/middleSpacer" android:visibility="visible" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                        <Button android:ellipsize="end" android:gravity="center" android:id="@id/button1" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/biometric_dialog_confirm" android:maxLines="2" style="@android:style/Widget.DeviceDefault.Button.Borderless.Colored" />
+                        <Button android:gravity="center" android:id="@id/button_try_again" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/biometric_dialog_try_again" android:maxLines="2" style="@android:style/Widget.DeviceDefault.Button.Colored" />
+                        <Space android:id="@id/rightSpacer" android:visibility="visible" android:layout_width="0.0dip" android:layout_height="fill_parent" />
+                    </LinearLayout>
+                    <View android:background="?android:listDivider" android:layout_width="fill_parent" android:layout_height="@dimen/oneplus_contorl_divider_height_standard" android:layout_marginBottom="@dimen/oneplus_contorl_margin_top4" />
+                    <TextView android:textColor="?android:textColorSecondary" android:gravity="center_horizontal" android:id="@id/error1" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/oneplus_contorl_margin_left2" android:layout_marginRight="@dimen/oneplus_contorl_margin_right2" android:layout_marginBottom="@dimen/oneplus_contorl_margin_top2" android:accessibilityLiveRegion="polite" style="@style/oneplus_contorl_text_style_body1" />
+                    <ImageView android:layout_gravity="center_horizontal" android:id="@id/biometric_icon" android:layout_width="0.0dip" android:layout_height="0.0dip" android:scaleType="fitXY" />
+                    <TextView android:textSize="12.0sp" android:textColor="@color/biometric_dialog_gray" android:gravity="center_horizontal" android:id="@id/error2" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/oneplus_contorl_margin_left2" android:layout_marginTop="@dimen/oneplus_contorl_margin_top2" android:layout_marginRight="@dimen/oneplus_contorl_margin_right2" android:accessibilityLiveRegion="polite" />
+                    <View android:id="@id/bottom_space" android:layout_width="1.0dip" android:layout_height="0.0dip" />
+                </LinearLayout>
+                <View android:id="@id/right_space" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</FrameLayout>

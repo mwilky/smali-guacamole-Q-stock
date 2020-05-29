@@ -17,7 +17,7 @@
     <string name="allow_notification">அறிவிப்புகளை அனுமதிக்கவும்</string>
     <string name="battery_low_warning">%s மீதமுள்ளது, உபயோகத்தை நீட்டிக்க, பேட்டரி சேவர் அம்சத்தை இயக்கவும்</string>
     <string name="battery_usage_extanded">உங்கள் உபயோகத்தின் அடிப்படையில், பேட்டரி சேவர் அம்சம் சுமார் %s உபயோகத்தை நீட்டிக்கக்கூடும்</string>
-    <string name="battery_usage_remaining">உங்கள் உபயோகத்தின் அடிப்படையில் சுமார் %s நீட்டிக்கும். இதனால் செயல்திறனும் பின்னணித் தரவு உபயோகமும் குறையும்.</string>
+    <string name="battery_usage_remaining_time">%s மீதமுள்ளது</string>
     <string name="clear_process_done">அனைத்தும் நீக்கப்பட்டுவிட்டன!</string>
     <string name="clear_process_warning_checkbox">புரிந்தது, மீண்டும் காட்டவேண்டாம்</string>
     <string name="clear_process_warning_message">திட்டமிடப்படாத முடிவுகளுக்கு வழிவகுக்கக்கூடிய அனைத்து பின்னணி செயல்முறைகளையும் இது அழித்துவிடும். சில பயன்பாடுகள் வேலை செய்வது நின்றுவிடக்கூடும், மேலும் அவற்றை மறுதொடக்கம் செய்ய வேண்டியிருக்கும். தொடர வேண்டுமா?</string>
@@ -117,7 +117,7 @@
     <string name="qs_edit">திருத்துக</string>
     <string name="quick_launch_exit">வெளியேறுக</string>
     <string name="quick_launch_exit_hint">வெளியேறுவதற்கு திரையிலிருந்து விரலை எடுத்துவிடவும்</string>
-    <string name="quick_reply">பதிலளி</string>
+    <string name="quick_reply">பதிலளிக்கும் பட்டன்</string>
     <string name="quick_settings_buttons_label">பூட்டு பொத்தான்கள்</string>
     <string name="quick_settings_data_switch_label">தரவு அட்டையை மாற்றுக</string>
     <string name="quick_settings_data_switch_toast_0">தற்சமயம் SIM அட்டை ஏதும் செருகப்படவில்லை</string>

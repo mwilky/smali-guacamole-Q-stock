@@ -42,6 +42,8 @@
 
 .field private mOverviewProxyService:Lcom/android/systemui/recents/OverviewProxyService;
 
+.field private mScreenResolution:I
+
 .field private mUsingCustomLayout:Z
 
 .field protected mVertical:Landroid/widget/FrameLayout;
@@ -92,6 +94,10 @@
     move-result p1
 
     iput p1, p0, Lcom/android/systemui/statusbar/phone/NavigationBarInflaterView;->mNavBarMode:I
+
+    sget p1, Lcom/oneplus/util/OpUtils;->mScreenResolution:I
+
+    iput p1, p0, Lcom/android/systemui/statusbar/phone/NavigationBarInflaterView;->mScreenResolution:I
 
     return-void
 .end method
@@ -1086,7 +1092,7 @@
 
     iget-boolean v0, p0, Lcom/android/systemui/statusbar/phone/NavigationBarInflaterView;->mIsCustomNavBar:Z
 
-    if-eqz v0, :cond_0
+    if-eqz v0, :cond_1
 
     iget-object v0, p0, Landroid/widget/FrameLayout;->mContext:Landroid/content/Context;
 
@@ -1094,18 +1100,32 @@
 
     move-result-object v0
 
-    sget v1, Lcom/android/systemui/R$dimen;->op_rounded_corner_content_padding:I
+    iget v1, p0, Lcom/android/systemui/statusbar/phone/NavigationBarInflaterView;->mNavBarMode:I
 
-    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+    invoke-static {v1}, Lcom/android/systemui/shared/system/QuickStepContract;->isGesturalMode(I)Z
 
-    move-result v0
+    move-result v1
+
+    if-eqz v1, :cond_0
+
+    sget v1, Lcom/android/systemui/R$dimen;->op_gesture_navigation_side_padding:I
 
     goto :goto_0
 
     :cond_0
-    move v0, v2
+    sget v1, Lcom/android/systemui/R$dimen;->op_rounded_corner_content_padding:I
 
     :goto_0
+    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+
+    move-result v0
+
+    goto :goto_1
+
+    :cond_1
+    move v0, v2
+
+    :goto_1
     iget-object v1, p0, Lcom/android/systemui/statusbar/phone/NavigationBarInflaterView;->mHorizontal:Landroid/widget/FrameLayout;
 
     invoke-virtual {v1}, Landroid/widget/FrameLayout;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
@@ -1265,6 +1285,78 @@
     invoke-virtual {p1, p0}, Lcom/android/systemui/statusbar/phone/ReverseLinearLayout;->setAlternativeOrder(Z)V
 
     :cond_0
+    return-void
+.end method
+
+.method private updateChildrenMargin()V
+    .locals 4
+
+    iget-boolean v0, p0, Lcom/android/systemui/statusbar/phone/NavigationBarInflaterView;->mIsCustomNavBar:Z
+
+    const/4 v1, 0x0
+
+    if-eqz v0, :cond_1
+
+    iget-object v0, p0, Landroid/widget/FrameLayout;->mContext:Landroid/content/Context;
+
+    invoke-virtual {v0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v0
+
+    iget v2, p0, Lcom/android/systemui/statusbar/phone/NavigationBarInflaterView;->mNavBarMode:I
+
+    invoke-static {v2}, Lcom/android/systemui/shared/system/QuickStepContract;->isGesturalMode(I)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_0
+
+    sget v2, Lcom/android/systemui/R$dimen;->op_gesture_navigation_side_padding:I
+
+    goto :goto_0
+
+    :cond_0
+    sget v2, Lcom/android/systemui/R$dimen;->op_rounded_corner_content_padding:I
+
+    :goto_0
+    invoke-virtual {v0, v2}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+
+    move-result v0
+
+    goto :goto_1
+
+    :cond_1
+    move v0, v1
+
+    :goto_1
+    iget-object v2, p0, Lcom/android/systemui/statusbar/phone/NavigationBarInflaterView;->mHorizontal:Landroid/widget/FrameLayout;
+
+    invoke-virtual {v2}, Landroid/widget/FrameLayout;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
+
+    move-result-object v2
+
+    check-cast v2, Landroid/view/ViewGroup$MarginLayoutParams;
+
+    invoke-virtual {v2, v0, v1, v0, v1}, Landroid/view/ViewGroup$MarginLayoutParams;->setMarginsRelative(IIII)V
+
+    iget-object v3, p0, Lcom/android/systemui/statusbar/phone/NavigationBarInflaterView;->mHorizontal:Landroid/widget/FrameLayout;
+
+    invoke-virtual {p0, v3, v2}, Landroid/widget/FrameLayout;->updateViewLayout(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
+
+    iget-object v2, p0, Lcom/android/systemui/statusbar/phone/NavigationBarInflaterView;->mVertical:Landroid/widget/FrameLayout;
+
+    invoke-virtual {v2}, Landroid/widget/FrameLayout;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
+
+    move-result-object v2
+
+    check-cast v2, Landroid/view/ViewGroup$MarginLayoutParams;
+
+    invoke-virtual {v2, v1, v0, v1, v0}, Landroid/view/ViewGroup$MarginLayoutParams;->setMarginsRelative(IIII)V
+
+    iget-object v0, p0, Lcom/android/systemui/statusbar/phone/NavigationBarInflaterView;->mVertical:Landroid/widget/FrameLayout;
+
+    invoke-virtual {p0, v0, v2}, Landroid/widget/FrameLayout;->updateViewLayout(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
+
     return-void
 .end method
 
@@ -1742,6 +1834,8 @@
 
     if-nez v1, :cond_1
 
+    invoke-direct {p0}, Lcom/android/systemui/statusbar/phone/NavigationBarInflaterView;->updateChildrenMargin()V
+
     invoke-direct {p0}, Lcom/android/systemui/statusbar/phone/NavigationBarInflaterView;->clearViews()V
 
     invoke-virtual {p0, v0}, Lcom/android/systemui/statusbar/phone/NavigationBarInflaterView;->inflateLayout(Ljava/lang/String;)V
@@ -1871,5 +1965,32 @@
     goto :goto_1
 
     :cond_1
+    return-void
+.end method
+
+.method public updateCurrentView()V
+    .locals 2
+
+    sget v0, Lcom/oneplus/util/OpUtils;->mScreenResolution:I
+
+    iget v1, p0, Lcom/android/systemui/statusbar/phone/NavigationBarInflaterView;->mScreenResolution:I
+
+    if-ne v0, v1, :cond_0
+
+    return-void
+
+    :cond_0
+    iput v0, p0, Lcom/android/systemui/statusbar/phone/NavigationBarInflaterView;->mScreenResolution:I
+
+    invoke-direct {p0}, Lcom/android/systemui/statusbar/phone/NavigationBarInflaterView;->updateChildrenMargin()V
+
+    invoke-direct {p0}, Lcom/android/systemui/statusbar/phone/NavigationBarInflaterView;->clearViews()V
+
+    invoke-virtual {p0}, Lcom/android/systemui/statusbar/phone/NavigationBarInflaterView;->getDefaultLayout()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-virtual {p0, v0}, Lcom/android/systemui/statusbar/phone/NavigationBarInflaterView;->inflateLayout(Ljava/lang/String;)V
+
     return-void
 .end method

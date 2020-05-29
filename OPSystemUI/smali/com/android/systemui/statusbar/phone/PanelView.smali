@@ -892,7 +892,7 @@
 
     const-string p4, "lock_unlock_success"
 
-    const-string v1, "swipe"
+    const-string/jumbo v1, "swipe"
 
     const-string v4, "1"
 
@@ -2395,7 +2395,7 @@
 
     cmpl-float p3, v6, p3
 
-    if-eqz p3, :cond_c
+    if-eqz p3, :cond_d
 
     invoke-virtual {p0}, Lcom/android/systemui/statusbar/phone/PanelView;->getOverExpansionAmount()F
 
@@ -2412,17 +2412,60 @@
     goto/16 :goto_4
 
     :cond_2
+    sget-boolean p3, Landroid/os/Build;->DEBUG_ONEPLUS:Z
+
+    if-eqz p3, :cond_3
+
+    sget-object p3, Lcom/android/systemui/statusbar/phone/PanelView;->TAG:Ljava/lang/String;
+
+    new-instance v3, Ljava/lang/StringBuilder;
+
+    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v4, " flingToHeight target:"
+
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v3, v6}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
+
+    const-string v4, " getMaxPanelHeight:"
+
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p0}, Lcom/android/systemui/statusbar/phone/PanelView;->getMaxPanelHeight()I
+
+    move-result v4
+
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    const-string v4, " getClearAllHeight:"
+
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p0}, Lcom/android/systemui/statusbar/phone/PanelView;->getClearAllHeight()I
+
+    move-result v4
+
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-static {p3, v3}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
+
+    :cond_3
     invoke-virtual {p0}, Lcom/android/systemui/statusbar/phone/PanelView;->getOverExpansionAmount()F
 
     move-result p3
 
     cmpl-float p3, p3, v9
 
-    if-lez p3, :cond_3
+    if-lez p3, :cond_4
 
     goto :goto_1
 
-    :cond_3
+    :cond_4
     move v0, v1
 
     :goto_1
@@ -2434,17 +2477,17 @@
 
     const/4 v0, -0x1
 
-    if-eqz p2, :cond_5
+    if-eqz p2, :cond_6
 
-    if-eqz p5, :cond_4
+    if-eqz p5, :cond_5
 
     cmpg-float p2, p1, v9
 
-    if-gez p2, :cond_4
+    if-gez p2, :cond_5
 
     move p1, v9
 
-    :cond_4
+    :cond_5
     iget-object v3, p0, Lcom/android/systemui/statusbar/phone/PanelView;->mFlingAnimationUtils:Lcom/android/systemui/statusbar/FlingAnimationUtils;
 
     iget v5, p0, Lcom/android/systemui/statusbar/phone/PanelView;->mExpandedHeight:F
@@ -2463,7 +2506,7 @@
 
     cmpl-float p1, p1, v9
 
-    if-nez p1, :cond_9
+    if-nez p1, :cond_a
 
     const-wide/16 p1, 0x15e
 
@@ -2471,16 +2514,16 @@
 
     goto :goto_3
 
-    :cond_5
+    :cond_6
     invoke-virtual {p0}, Lcom/android/systemui/statusbar/phone/PanelView;->shouldUseDismissingAnimation()Z
 
     move-result p2
 
-    if-eqz p2, :cond_7
+    if-eqz p2, :cond_8
 
     cmpl-float p2, p1, v9
 
-    if-nez p2, :cond_6
+    if-nez p2, :cond_7
 
     sget-object p2, Lcom/android/systemui/Interpolators;->PANEL_CLOSE_ACCELERATED:Landroid/view/animation/Interpolator;
 
@@ -2510,7 +2553,7 @@
 
     goto :goto_2
 
-    :cond_6
+    :cond_7
     iget-object v3, p0, Lcom/android/systemui/statusbar/phone/PanelView;->mFlingAnimationUtilsDismissing:Lcom/android/systemui/statusbar/FlingAnimationUtils;
 
     iget v5, p0, Lcom/android/systemui/statusbar/phone/PanelView;->mExpandedHeight:F
@@ -2529,7 +2572,7 @@
 
     goto :goto_2
 
-    :cond_7
+    :cond_8
     iget-object v3, p0, Lcom/android/systemui/statusbar/phone/PanelView;->mFlingAnimationUtilsClosing:Lcom/android/systemui/statusbar/FlingAnimationUtils;
 
     iget v5, p0, Lcom/android/systemui/statusbar/phone/PanelView;->mExpandedHeight:F
@@ -2549,7 +2592,7 @@
     :goto_2
     cmpl-float p1, p1, v9
 
-    if-nez p1, :cond_8
+    if-nez p1, :cond_9
 
     invoke-virtual {p3}, Landroid/animation/ValueAnimator;->getDuration()J
 
@@ -2563,20 +2606,20 @@
 
     invoke-virtual {p3, p1, p2}, Landroid/animation/ValueAnimator;->setDuration(J)Landroid/animation/ValueAnimator;
 
-    :cond_8
+    :cond_9
     iget p1, p0, Lcom/android/systemui/statusbar/phone/PanelView;->mFixedDuration:I
 
-    if-eq p1, v0, :cond_9
+    if-eq p1, v0, :cond_a
 
     int-to-long p1, p1
 
     invoke-virtual {p3, p1, p2}, Landroid/animation/ValueAnimator;->setDuration(J)Landroid/animation/ValueAnimator;
 
-    :cond_9
+    :cond_a
     :goto_3
     iget-object p1, p0, Lcom/android/systemui/statusbar/phone/PanelView;->mPerf:Landroid/util/BoostFramework;
 
-    if-eqz p1, :cond_a
+    if-eqz p1, :cond_b
 
     iget-object p1, p0, Landroid/widget/FrameLayout;->mContext:Landroid/content/Context;
 
@@ -2592,7 +2635,7 @@
 
     invoke-virtual {p2, p4, p1, v0, p5}, Landroid/util/BoostFramework;->perfHint(ILjava/lang/String;II)I
 
-    :cond_a
+    :cond_b
     invoke-static {}, Lcom/oneplus/plugin/OpLsState;->getInstance()Lcom/oneplus/plugin/OpLsState;
 
     move-result-object p1
@@ -2645,15 +2688,15 @@
 
     invoke-static {p4, p5}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    if-eqz p1, :cond_b
+    if-eqz p1, :cond_c
 
-    if-eqz p2, :cond_b
+    if-eqz p2, :cond_c
 
     invoke-virtual {p0}, Lcom/android/systemui/statusbar/phone/PanelView;->opFlingToHeightAnimatorForBiometricUnlock()V
 
     return-void
 
-    :cond_b
+    :cond_c
     new-instance p1, Lcom/android/systemui/statusbar/phone/PanelView$2;
 
     invoke-direct {p1, p0, v2}, Lcom/android/systemui/statusbar/phone/PanelView$2;-><init>(Lcom/android/systemui/statusbar/phone/PanelView;Z)V
@@ -2666,7 +2709,7 @@
 
     return-void
 
-    :cond_c
+    :cond_d
     :goto_4
     invoke-virtual {p0}, Lcom/android/systemui/statusbar/phone/PanelView;->notifyExpandingFinished()V
 
@@ -3052,60 +3095,141 @@
 .end method
 
 .method protected notifyBarPanelExpansionChanged()V
-    .locals 3
+    .locals 7
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/PanelView;->mBar:Lcom/android/systemui/statusbar/phone/PanelBar;
 
+    const/4 v1, 0x0
+
+    const/4 v2, 0x1
+
+    const/4 v3, 0x0
+
     if-eqz v0, :cond_2
 
-    iget v1, p0, Lcom/android/systemui/statusbar/phone/PanelView;->mExpandedFraction:F
+    iget v4, p0, Lcom/android/systemui/statusbar/phone/PanelView;->mExpandedFraction:F
 
-    const/4 v2, 0x0
+    cmpl-float v5, v4, v3
 
-    cmpl-float v2, v1, v2
+    if-gtz v5, :cond_1
 
-    if-gtz v2, :cond_1
+    iget-object v5, p0, Lcom/android/systemui/statusbar/phone/PanelView;->mPeekAnimator:Landroid/animation/ObjectAnimator;
 
-    iget-object v2, p0, Lcom/android/systemui/statusbar/phone/PanelView;->mPeekAnimator:Landroid/animation/ObjectAnimator;
+    if-nez v5, :cond_1
 
-    if-nez v2, :cond_1
+    iget-boolean v5, p0, Lcom/android/systemui/statusbar/phone/PanelView;->mInstantExpanding:Z
 
-    iget-boolean v2, p0, Lcom/android/systemui/statusbar/phone/PanelView;->mInstantExpanding:Z
-
-    if-nez v2, :cond_1
+    if-nez v5, :cond_1
 
     invoke-virtual {p0}, Lcom/android/systemui/statusbar/phone/PanelView;->isPanelVisibleBecauseOfHeadsUp()Z
 
-    move-result v2
+    move-result v5
 
-    if-nez v2, :cond_1
+    if-nez v5, :cond_1
 
-    iget-boolean v2, p0, Lcom/android/systemui/statusbar/phone/PanelView;->mTracking:Z
+    iget-boolean v5, p0, Lcom/android/systemui/statusbar/phone/PanelView;->mTracking:Z
 
-    if-nez v2, :cond_1
+    if-nez v5, :cond_1
 
-    iget-object v2, p0, Lcom/android/systemui/statusbar/phone/PanelView;->mHeightAnimator:Landroid/animation/ValueAnimator;
+    iget-object v5, p0, Lcom/android/systemui/statusbar/phone/PanelView;->mHeightAnimator:Landroid/animation/ValueAnimator;
 
-    if-eqz v2, :cond_0
+    if-eqz v5, :cond_0
 
     goto :goto_0
 
     :cond_0
-    const/4 v2, 0x0
+    move v5, v1
 
     goto :goto_1
 
     :cond_1
     :goto_0
-    const/4 v2, 0x1
+    move v5, v2
 
     :goto_1
-    invoke-virtual {v0, v1, v2}, Lcom/android/systemui/statusbar/phone/PanelBar;->panelExpansionChanged(FZ)V
+    invoke-virtual {v0, v4, v5}, Lcom/android/systemui/statusbar/phone/PanelBar;->panelExpansionChanged(FZ)V
 
     :cond_2
+    invoke-virtual {p0}, Landroid/widget/FrameLayout;->getContext()Landroid/content/Context;
+
+    move-result-object v0
+
+    invoke-static {v0}, Lcom/android/keyguard/KeyguardUpdateMonitor;->getInstance(Landroid/content/Context;)Lcom/android/keyguard/KeyguardUpdateMonitor;
+
+    move-result-object v0
+
+    sget-object v4, Lcom/android/systemui/statusbar/phone/PanelView;->TAG:Ljava/lang/String;
+
+    new-instance v5, Ljava/lang/StringBuilder;
+
+    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v6, "notifyBarPanelExpansionChanged: isKeyguardShowing= "
+
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object v6, p0, Lcom/android/systemui/statusbar/phone/PanelView;->mStatusBar:Lcom/android/systemui/statusbar/phone/StatusBar;
+
+    invoke-virtual {v6}, Lcom/android/systemui/statusbar/phone/StatusBar;->isKeyguardShowing()Z
+
+    move-result v6
+
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    const-string v6, ", isKeyguardDone= "
+
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Lcom/oneplus/keyguard/OpKeyguardUpdateMonitor;->isKeyguardDone()Z
+
+    move-result v6
+
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v5
+
+    invoke-static {v4, v5}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    iget-object v4, p0, Lcom/android/systemui/statusbar/phone/PanelView;->mStatusBar:Lcom/android/systemui/statusbar/phone/StatusBar;
+
+    invoke-virtual {v4}, Lcom/android/systemui/statusbar/phone/StatusBar;->isKeyguardShowing()Z
+
+    move-result v4
+
+    if-nez v4, :cond_4
+
+    invoke-virtual {v0}, Lcom/oneplus/keyguard/OpKeyguardUpdateMonitor;->isKeyguardDone()Z
+
+    move-result v4
+
+    if-eqz v4, :cond_4
+
+    iget v4, p0, Lcom/android/systemui/statusbar/phone/PanelView;->mExpandedFraction:F
+
+    cmpl-float v3, v4, v3
+
+    if-nez v3, :cond_3
+
+    invoke-virtual {v0, v1}, Lcom/oneplus/keyguard/OpKeyguardUpdateMonitor;->setQSExpanded(Z)V
+
+    goto :goto_2
+
+    :cond_3
+    const v1, 0x3c23d70a    # 0.01f
+
+    cmpl-float v1, v4, v1
+
+    if-lez v1, :cond_4
+
+    invoke-virtual {v0, v2}, Lcom/oneplus/keyguard/OpKeyguardUpdateMonitor;->setQSExpanded(Z)V
+
+    :cond_4
+    :goto_2
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/PanelView;->mExpansionListener:Lcom/android/systemui/statusbar/phone/NotificationPanelView$PanelExpansionListener;
 
-    if-eqz v0, :cond_3
+    if-eqz v0, :cond_5
 
     iget v1, p0, Lcom/android/systemui/statusbar/phone/PanelView;->mExpandedFraction:F
 
@@ -3113,7 +3237,7 @@
 
     invoke-interface {v0, v1, p0}, Lcom/android/systemui/statusbar/phone/NotificationPanelView$PanelExpansionListener;->onPanelExpansionChanged(FZ)V
 
-    :cond_3
+    :cond_5
     return-void
 .end method
 

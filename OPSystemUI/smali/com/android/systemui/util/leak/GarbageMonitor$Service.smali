@@ -56,7 +56,7 @@
 
     const/4 v1, 0x0
 
-    const-string v2, "sysui_force_enable_leak_reporting"
+    const-string/jumbo v2, "sysui_force_enable_leak_reporting"
 
     invoke-static {v0, v2, v1}, Landroid/provider/Settings$Secure;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
 

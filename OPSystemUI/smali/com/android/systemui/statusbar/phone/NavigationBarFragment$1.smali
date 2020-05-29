@@ -99,7 +99,7 @@
 
     move-result v0
 
-    if-eqz v0, :cond_2
+    if-eqz v0, :cond_3
 
     invoke-static {}, Lcom/android/systemui/statusbar/phone/NavigationBarFragment;->access$500()Landroid/content/Context;
 
@@ -113,8 +113,47 @@
 
     move-result v0
 
-    if-eqz v0, :cond_1
+    if-nez v0, :cond_1
 
+    iget-object v0, p0, Lcom/android/systemui/statusbar/phone/NavigationBarFragment$1;->this$0:Lcom/android/systemui/statusbar/phone/NavigationBarFragment;
+
+    invoke-static {v0}, Lcom/android/systemui/statusbar/phone/NavigationBarFragment;->access$400(Lcom/android/systemui/statusbar/phone/NavigationBarFragment;)I
+
+    move-result v0
+
+    invoke-static {v0}, Lcom/android/systemui/shared/system/QuickStepContract;->isGesturalMode(I)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_2
+
+    iget-object v0, p0, Lcom/android/systemui/statusbar/phone/NavigationBarFragment$1;->this$0:Lcom/android/systemui/statusbar/phone/NavigationBarFragment;
+
+    invoke-static {v0}, Lcom/android/systemui/statusbar/phone/NavigationBarFragment;->access$600(Lcom/android/systemui/statusbar/phone/NavigationBarFragment;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_2
+
+    iget-object v0, p0, Lcom/android/systemui/statusbar/phone/NavigationBarFragment$1;->this$0:Lcom/android/systemui/statusbar/phone/NavigationBarFragment;
+
+    invoke-static {v0}, Lcom/android/systemui/statusbar/phone/NavigationBarFragment;->access$300(Lcom/android/systemui/statusbar/phone/NavigationBarFragment;)Lcom/android/systemui/statusbar/phone/StatusBar;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/oneplus/systemui/statusbar/phone/OpStatusBar;->getNavigationBarHiddenMode()I
+
+    move-result v0
+
+    const/4 v2, 0x1
+
+    if-eq v0, v2, :cond_1
+
+    sget-boolean v0, Lcom/android/systemui/statusbar/phone/EdgeBackGestureHandler;->sSideGestureEnabled:Z
+
+    if-nez v0, :cond_2
+
+    :cond_1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -139,7 +178,7 @@
 
     move p1, v1
 
-    :cond_1
+    :cond_2
     iget-object p0, p0, Lcom/android/systemui/statusbar/phone/NavigationBarFragment$1;->this$0:Lcom/android/systemui/statusbar/phone/NavigationBarFragment;
 
     iget-object p0, p0, Lcom/android/systemui/statusbar/phone/NavigationBarFragment;->mNavigationBarView:Lcom/android/systemui/statusbar/phone/NavigationBarView;
@@ -150,21 +189,21 @@
 
     goto :goto_0
 
-    :cond_2
+    :cond_3
     const/4 p0, 0x0
 
     :goto_0
-    if-eqz p0, :cond_4
+    if-eqz p0, :cond_5
 
     cmpl-float v0, p1, v1
 
-    if-lez v0, :cond_3
+    if-lez v0, :cond_4
 
     const/4 v0, 0x0
 
     goto :goto_1
 
-    :cond_3
+    :cond_4
     const/4 v0, 0x4
 
     :goto_1
@@ -172,7 +211,7 @@
 
     invoke-virtual {p0, p1, p2}, Lcom/android/systemui/statusbar/phone/ButtonDispatcher;->setAlpha(FZ)V
 
-    :cond_4
+    :cond_5
     return-void
 .end method
 

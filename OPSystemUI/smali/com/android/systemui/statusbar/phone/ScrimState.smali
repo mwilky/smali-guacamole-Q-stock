@@ -299,6 +299,12 @@
 
 
 # virtual methods
+.method protected applyOpAlphaValue()V
+    .locals 0
+
+    return-void
+.end method
+
 .method public getAnimateChange()Z
     .locals 0
 

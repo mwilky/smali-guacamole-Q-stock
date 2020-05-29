@@ -408,7 +408,7 @@
 
     iget-object v3, p0, Lcom/oneplus/opzenmode/OpZenModeControllerImpl;->mHandler:Landroid/os/Handler;
 
-    const-string v4, "three_Key_mode"
+    const-string/jumbo v4, "three_Key_mode"
 
     invoke-direct {v0, p0, v2, v3, v4}, Lcom/oneplus/opzenmode/OpZenModeControllerImpl$4;-><init>(Lcom/oneplus/opzenmode/OpZenModeControllerImpl;Landroid/content/Context;Landroid/os/Handler;Ljava/lang/String;)V
 

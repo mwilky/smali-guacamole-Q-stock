@@ -111,7 +111,19 @@
     return-void
 .end method
 
+.method public hideFodDialog(Landroid/os/Bundle;Ljava/lang/String;)V
+    .locals 0
+
+    return-void
+.end method
+
 .method public hideRecentApps(ZZ)V
+    .locals 0
+
+    return-void
+.end method
+
+.method public notifyImeWindowVisibleStatus(ILandroid/os/IBinder;IIZ)V
     .locals 0
 
     return-void
@@ -171,7 +183,19 @@
     return-void
 .end method
 
-.method public onFingerprintEnrollResult()V
+.method public onFingerprintAuthenticatedSuccess()V
+    .locals 0
+
+    return-void
+.end method
+
+.method public onFingerprintEnrollResult(I)V
+    .locals 0
+
+    return-void
+.end method
+
+.method public onFingerprintError(I)V
     .locals 0
 
     return-void
@@ -256,6 +280,12 @@
 .end method
 
 .method public showBiometricDialog(Landroid/os/Bundle;Landroid/hardware/biometrics/IBiometricServiceReceiverInternal;IZI)V
+    .locals 0
+
+    return-void
+.end method
+
+.method public showFodDialog(Landroid/os/Bundle;Ljava/lang/String;)V
     .locals 0
 
     return-void

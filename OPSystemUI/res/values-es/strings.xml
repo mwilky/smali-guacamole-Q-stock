@@ -324,7 +324,7 @@
     <string name="battery_saver_notification_title">Ahorro de batería activado</string>
     <string name="battery_saver_start_action">Activar Ahorro de batería</string>
     <string name="battery_usage_extanded">Ahorro de batería puede prolongar el uso aproximadamente %s en función del uso</string>
-    <string name="battery_usage_remaining">Se prevé una duración aproximada de %s en función del uso. Reduce el rendimiento y los datos en segundo plano.</string>
+    <string name="battery_usage_remaining_time">%s restante(s)</string>
     <string name="biometric_dialog_confirm">Confirmar</string>
     <string name="biometric_dialog_empty_space_description">Zona vacía. Toca para cancelar la autenticación.</string>
     <string name="biometric_dialog_face_icon_description_authenticated">Cara autenticada</string>
@@ -1030,7 +1030,7 @@ También estás conectado a una red VPN, que puede supervisar tu actividad de re
     <string name="music_controls_no_title">Sin título</string>
     <string name="nav_bar">Barra de navegación</string>
     <string name="nav_bar_default">(predeterminada)</string>
-    <string name="nav_bar_guide_positive">ENTENDIDO</string>
+    <string name="nav_bar_guide_positive">Entendido</string>
     <string name="nav_bar_guide_title">Desliza hacia arriba desde la parte inferior para mostrar la barra de navegación. Si quieres dejar de ocultar la navegación, toca aquí.</string>
     <string name="nav_bar_layout">Diseño</string>
     <string name="no_application">Ninguna</string>
@@ -1311,7 +1311,7 @@ También estás conectado a una red VPN, que puede supervisar tu actividad de re
     <string name="quick_settings_game_mode_demo">Cuando el modo de juego está activado, %s, puedes desactivarlo en el centro de control o tocando la notificación.</string>
     <string name="quick_settings_game_mode_demo_all">las notificaciones y los botones capacitivos se bloquearán</string>
     <string name="quick_settings_game_mode_demo_button">los botones capacitivos se bloquearán</string>
-    <string name="quick_settings_game_mode_demo_notification">las notificaciones se bloquearán</string>
+    <string name="quick_settings_game_mode_demo_notification">las notificaciones se bloquarán</string>
     <string name="quick_settings_game_mode_label">Modo de juego</string>
     <string name="quick_settings_game_mode_summary_off">Modo de juego desactivado. Tocar para activar</string>
     <string name="quick_settings_game_mode_summary_on">Modo de juego activado. Tocar para desactivar</string>

@@ -69,7 +69,7 @@
 
     const/4 v1, 0x0
 
-    const/16 v2, 0x8c
+    const/16 v2, 0x8d
 
     aput v2, v0, v1
 
@@ -177,8 +177,17 @@
 .end method
 
 .method private bypassPreventMode()Z
-    .locals 1
+    .locals 2
 
+    iget-boolean v0, p0, Lcom/oneplus/plugin/OpPreventModeCtrl;->mKeyguardIsVisible:Z
+
+    const/4 v1, 0x0
+
+    if-eqz v0, :cond_0
+
+    return v1
+
+    :cond_0
     invoke-static {}, Lcom/oneplus/plugin/OpLsState;->getInstance()Lcom/oneplus/plugin/OpLsState;
 
     move-result-object v0
@@ -187,35 +196,30 @@
 
     move-result-object v0
 
-    if-eqz v0, :cond_0
+    if-eqz v0, :cond_1
 
     invoke-virtual {v0}, Lcom/android/systemui/statusbar/phone/StatusBar;->isCameraForeground()Z
 
     move-result v0
 
-    if-nez v0, :cond_1
+    if-nez v0, :cond_2
 
-    :cond_0
+    :cond_1
     iget-object p0, p0, Lcom/oneplus/plugin/OpPreventModeCtrl;->mOpSceneModeObserver:Lcom/oneplus/scene/OpSceneModeObserver;
 
-    if-eqz p0, :cond_2
+    if-eqz p0, :cond_3
 
     invoke-virtual {p0}, Lcom/oneplus/scene/OpSceneModeObserver;->isInBrickMode()Z
 
     move-result p0
 
-    if-eqz p0, :cond_2
-
-    :cond_1
-    const/4 p0, 0x1
-
-    goto :goto_0
+    if-eqz p0, :cond_3
 
     :cond_2
-    const/4 p0, 0x0
+    const/4 v1, 0x1
 
-    :goto_0
-    return p0
+    :cond_3
+    return v1
 .end method
 
 .method private disableProximitySensorInternal()V
@@ -338,8 +342,39 @@
 .end method
 
 .method private hideSoftInput()V
-    .locals 0
+    .locals 2
 
+    :try_start_0
+    const-string p0, "input_method"
+
+    invoke-static {p0}, Landroid/os/ServiceManager;->getService(Ljava/lang/String;)Landroid/os/IBinder;
+
+    move-result-object p0
+
+    invoke-static {p0}, Lcom/android/internal/view/IInputMethodManager$Stub;->asInterface(Landroid/os/IBinder;)Lcom/android/internal/view/IInputMethodManager;
+
+    move-result-object p0
+
+    const/4 v0, 0x0
+
+    const/4 v1, 0x0
+
+    invoke-interface {p0, v0, v1}, Lcom/android/internal/view/IInputMethodManager;->hideSoftInputForLongshot(ILandroid/os/ResultReceiver;)Z
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    goto :goto_0
+
+    :catch_0
+    move-exception p0
+
+    const-string v0, "OpPreventModeCtrl"
+
+    const-string v1, "hide ime failed, "
+
+    invoke-static {v0, v1, p0}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
+
+    :goto_0
     return-void
 .end method
 
@@ -378,11 +413,11 @@
 
     sget-boolean v0, Lcom/oneplus/plugin/OpPreventModeCtrl;->mPreventModeActive:Z
 
-    if-nez v0, :cond_3
+    if-nez v0, :cond_4
 
     iget-boolean v0, p0, Lcom/oneplus/plugin/OpPreventModeCtrl;->mKeyguardIsShowing:Z
 
-    if-eqz v0, :cond_3
+    if-eqz v0, :cond_4
 
     invoke-direct {p0}, Lcom/oneplus/plugin/OpPreventModeCtrl;->bypassPreventMode()Z
 
@@ -476,11 +511,24 @@
     :cond_1
     sput-boolean v4, Lcom/oneplus/plugin/OpPreventModeCtrl;->mPreventModeActive:Z
 
-    if-eqz v0, :cond_2
+    if-eqz v0, :cond_3
 
-    invoke-virtual {v0, v4}, Lcom/android/systemui/statusbar/phone/StatusBar;->notifyPreventModeChange(Z)V
+    invoke-virtual {v0}, Lcom/oneplus/systemui/statusbar/phone/OpStatusBar;->getFacelockController()Lcom/oneplus/faceunlock/OpFacelockController;
+
+    move-result-object v1
+
+    if-eqz v1, :cond_2
+
+    invoke-virtual {v0}, Lcom/oneplus/systemui/statusbar/phone/OpStatusBar;->getFacelockController()Lcom/oneplus/faceunlock/OpFacelockController;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Lcom/oneplus/faceunlock/OpFacelockController;->stopFacelockLightMode()V
 
     :cond_2
+    invoke-virtual {v0, v4}, Lcom/android/systemui/statusbar/phone/StatusBar;->notifyPreventModeChange(Z)V
+
+    :cond_3
     const/4 v0, 0x2
 
     new-array v0, v0, [F
@@ -519,9 +567,11 @@
 
     invoke-virtual {p0}, Landroid/animation/ValueAnimator;->start()V
 
-    :cond_3
+    :cond_4
     :goto_0
     return-void
+
+    nop
 
     :array_0
     .array-data 4

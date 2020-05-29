@@ -136,7 +136,7 @@
 
     invoke-static {v1, v0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    const-string v0, "sys.aod.localtest"
+    const-string/jumbo v0, "sys.aod.localtest"
 
     invoke-static {v0}, Landroid/os/SystemProperties;->get(Ljava/lang/String;)Ljava/lang/String;
 
@@ -163,7 +163,7 @@
 .method public static isAlwaysOnEnabledWithTimer()Z
     .locals 4
 
-    const-string v0, "sys.aod.localtest.timer"
+    const-string/jumbo v0, "sys.aod.localtest.timer"
 
     invoke-static {v0}, Landroid/os/SystemProperties;->get(Ljava/lang/String;)Ljava/lang/String;
 
@@ -231,7 +231,7 @@
 .method public static isNotificationLightEnabled()Z
     .locals 3
 
-    const-string v0, "sys.aod.notif_light_disable"
+    const-string/jumbo v0, "sys.aod.notif_light_disable"
 
     invoke-static {v0}, Landroid/os/SystemProperties;->get(Ljava/lang/String;)Ljava/lang/String;
 
@@ -361,7 +361,7 @@
 
     :goto_1
     :try_start_0
-    const-string v1, "sys.aod.disable"
+    const-string/jumbo v1, "sys.aod.disable"
 
     invoke-static {v1, p0}, Landroid/os/SystemProperties;->set(Ljava/lang/String;Ljava/lang/String;)V
     :try_end_0

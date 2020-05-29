@@ -253,7 +253,7 @@
 
     const-string v6, "events"
 
-    const-string v7, "system"
+    const-string/jumbo v7, "system"
 
     const-string v8, "crash"
 

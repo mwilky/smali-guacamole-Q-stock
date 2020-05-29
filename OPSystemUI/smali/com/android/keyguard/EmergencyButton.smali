@@ -194,7 +194,7 @@
 
     iget-object p0, p0, Landroid/widget/Button;->mContext:Landroid/content/Context;
 
-    const-string v0, "telecom"
+    const-string/jumbo v0, "telecom"
 
     invoke-virtual {p0, v0}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 

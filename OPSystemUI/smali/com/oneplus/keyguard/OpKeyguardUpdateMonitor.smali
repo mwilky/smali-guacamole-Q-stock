@@ -74,6 +74,8 @@
 
 .field private mIsUserUnlocked:Z
 
+.field private mKeyguardShowing:Z
+
 .field private mLastHangupTimeMillis:J
 
 .field private mLaunchingCamera:Z
@@ -93,6 +95,8 @@
 .field private mPocketSensorEnabled:Z
 
 .field private mPocketState:I
+
+.field protected mPowerManager:Landroid/os/PowerManager;
 
 .field private mPreventModeActive:Z
 
@@ -165,7 +169,7 @@
 
     new-array v1, v0, [I
 
-    const/16 v3, 0x8c
+    const/16 v3, 0x8d
 
     aput v3, v1, v2
 
@@ -211,7 +215,7 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    const-string v0, "sys.prop.fod_ui_test"
+    const-string/jumbo v0, "sys.prop.fod_ui_test"
 
     iput-object v0, p0, Lcom/oneplus/keyguard/OpKeyguardUpdateMonitor;->FOD_UI_DEBUG:Ljava/lang/String;
 
@@ -232,6 +236,8 @@
     iput-boolean v1, p0, Lcom/oneplus/keyguard/OpKeyguardUpdateMonitor;->mImeShow:Z
 
     iput-boolean v1, p0, Lcom/oneplus/keyguard/OpKeyguardUpdateMonitor;->mQSExpanded:Z
+
+    iput-boolean v1, p0, Lcom/oneplus/keyguard/OpKeyguardUpdateMonitor;->mKeyguardShowing:Z
 
     iput-boolean v1, p0, Lcom/oneplus/keyguard/OpKeyguardUpdateMonitor;->mScreenTurningOn:Z
 
@@ -323,13 +329,23 @@
 
     invoke-virtual {p1, v0}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
-    move-result-object p1
+    move-result-object v0
 
-    check-cast p1, Landroid/hardware/fingerprint/FingerprintManager;
+    check-cast v0, Landroid/hardware/fingerprint/FingerprintManager;
 
-    iput-object p1, p0, Lcom/oneplus/keyguard/OpKeyguardUpdateMonitor;->mFpm:Landroid/hardware/fingerprint/FingerprintManager;
+    iput-object v0, p0, Lcom/oneplus/keyguard/OpKeyguardUpdateMonitor;->mFpm:Landroid/hardware/fingerprint/FingerprintManager;
 
     :cond_0
+    const-string v0, "power"
+
+    invoke-virtual {p1, v0}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Landroid/os/PowerManager;
+
+    iput-object p1, p0, Lcom/oneplus/keyguard/OpKeyguardUpdateMonitor;->mPowerManager:Landroid/os/PowerManager;
+
     invoke-direct {p0}, Lcom/oneplus/keyguard/OpKeyguardUpdateMonitor;->startClockCtrl()V
 
     return-void
@@ -1149,6 +1165,26 @@
     return p0
 .end method
 
+.method private isKeyguardOccluded()Z
+    .locals 2
+
+    const-class v0, Lcom/android/keyguard/KeyguardUpdateMonitor;
+
+    const-string v1, "mKeyguardOccluded"
+
+    invoke-static {v0, p0, v1}, Lcom/oneplus/util/OpReflectionUtils;->getValue(Ljava/lang/Class;Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+
+    move-result-object p0
+
+    check-cast p0, Ljava/lang/Boolean;
+
+    invoke-virtual {p0}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result p0
+
+    return p0
+.end method
+
 .method private isKeyguardVisible()Z
     .locals 3
 
@@ -1493,59 +1529,6 @@
 
     invoke-static {p0, v0, v1}, Lcom/oneplus/util/OpReflectionUtils;->methodInvokeWithArgs(Ljava/lang/Object;Ljava/lang/reflect/Method;[Ljava/lang/Object;)Ljava/lang/Object;
 
-    return-void
-.end method
-
-.method private showFPDialogWhenNoWindow()V
-    .locals 4
-
-    const-string v0, "OpKeyguardUpdateMonitor"
-
-    sget-boolean v1, Lcom/oneplus/keyguard/OpKeyguardUpdateMonitor;->IS_SUPPORT_CUSTOM_FINGERPRINT:Z
-
-    if-nez v1, :cond_0
-
-    return-void
-
-    :cond_0
-    :try_start_0
-    const-string v1, "showFPDialogWhenNoWindow"
-
-    invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    new-instance v1, Landroid/os/Bundle;
-
-    invoke-direct {v1}, Landroid/os/Bundle;-><init>()V
-
-    const-string v2, "key_fingerprint_package_name"
-
-    const-string v3, "forceShow-keyguard"
-
-    invoke-virtual {v1, v2, v3}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
-
-    iget-object v2, p0, Lcom/oneplus/keyguard/OpKeyguardUpdateMonitor;->mFodDialogView:Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView;
-
-    if-eqz v2, :cond_1
-
-    iget-object p0, p0, Lcom/oneplus/keyguard/OpKeyguardUpdateMonitor;->mFodDialogView:Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView;
-
-    const/4 v2, 0x0
-
-    invoke-virtual {p0, v1, v2}, Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView;->showFingerprintDialog(Landroid/os/Bundle;Ljava/lang/Object;)V
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
-
-    goto :goto_0
-
-    :catch_0
-    move-exception p0
-
-    const-string v1, "error: "
-
-    invoke-static {v0, v1, p0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
-
-    :cond_1
-    :goto_0
     return-void
 .end method
 
@@ -2200,18 +2183,6 @@
 
     invoke-direct {p0}, Lcom/oneplus/keyguard/OpKeyguardUpdateMonitor;->updateFingerprintListeningState()V
 
-    invoke-direct {p0}, Lcom/oneplus/keyguard/OpKeyguardUpdateMonitor;->isDeviceInteractive()Z
-
-    move-result v0
-
-    if-nez v0, :cond_0
-
-    iget-object v0, p0, Lcom/oneplus/keyguard/OpKeyguardUpdateMonitor;->mFodDialogView:Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView;
-
-    const/4 v1, 0x2
-
-    invoke-virtual {v0, v1}, Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView;->setDisplayAodMode(I)V
-
     :cond_0
     invoke-direct {p0}, Lcom/oneplus/keyguard/OpKeyguardUpdateMonitor;->getCallbacks()Ljava/util/ArrayList;
 
@@ -2279,12 +2250,6 @@
     move-result v0
 
     invoke-virtual {p0, v0}, Lcom/oneplus/keyguard/OpKeyguardUpdateMonitor;->isFingerprintEnrolled(I)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_3
-
-    invoke-direct {p0}, Lcom/oneplus/keyguard/OpKeyguardUpdateMonitor;->showFPDialogWhenNoWindow()V
 
     :cond_3
     return-void
@@ -2357,14 +2322,15 @@
 .end method
 
 .method public hideFODDim()V
-    .locals 1
+    .locals 0
 
     iget-object p0, p0, Lcom/oneplus/keyguard/OpKeyguardUpdateMonitor;->mFodDialogView:Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView;
 
-    const/4 v0, 0x0
+    if-eqz p0, :cond_0
 
-    invoke-virtual {p0, v0}, Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView;->updateDimViewVisibility(Z)V
+    invoke-virtual {p0}, Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView;->hideFODDim()V
 
+    :cond_0
     return-void
 .end method
 
@@ -2975,6 +2941,22 @@
     return p0
 .end method
 
+.method public isScreenTurningOn()Z
+    .locals 0
+
+    iget-boolean p0, p0, Lcom/oneplus/keyguard/OpKeyguardUpdateMonitor;->mScreenTurningOn:Z
+
+    return p0
+.end method
+
+.method public isShuttingDown()Z
+    .locals 0
+
+    iget-boolean p0, p0, Lcom/oneplus/keyguard/OpKeyguardUpdateMonitor;->mShutingDown:Z
+
+    return p0
+.end method
+
 .method public isSimPinSecure()Z
     .locals 0
 
@@ -3158,8 +3140,11 @@
 
     iget-object p0, p0, Lcom/oneplus/keyguard/OpKeyguardUpdateMonitor;->mFodDialogView:Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView;
 
+    if-eqz p0, :cond_0
+
     invoke-virtual {p0}, Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView;->notifyBrightnessChange()V
 
+    :cond_0
     return-void
 .end method
 
@@ -3289,18 +3274,65 @@
     invoke-static {v1, v0}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
     :goto_0
-    iput-boolean p1, p0, Lcom/oneplus/keyguard/OpKeyguardUpdateMonitor;->mIsKeyguardDone:Z
+    iget-boolean v0, p0, Lcom/oneplus/keyguard/OpKeyguardUpdateMonitor;->mDuringAcquired:Z
 
-    iget-object v0, p0, Lcom/oneplus/keyguard/OpKeyguardUpdateMonitor;->mFodDialogView:Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView;
+    const/4 v1, 0x0
 
     if-eqz v0, :cond_0
 
-    invoke-virtual {v0, p1}, Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView;->notifyKeyguardDone(Z)V
+    invoke-direct {p0}, Lcom/oneplus/keyguard/OpKeyguardUpdateMonitor;->getHandler()Lcom/oneplus/keyguard/OpKeyguardUpdateMonitor$OpHandler;
+
+    move-result-object v0
+
+    const/16 v2, 0x1f5
+
+    invoke-virtual {v0, v2}, Landroid/os/Handler;->removeMessages(I)V
+
+    iput-boolean v1, p0, Lcom/oneplus/keyguard/OpKeyguardUpdateMonitor;->mDuringAcquired:Z
 
     :cond_0
+    iput-boolean p1, p0, Lcom/oneplus/keyguard/OpKeyguardUpdateMonitor;->mIsKeyguardDone:Z
+
+    invoke-direct {p0}, Lcom/oneplus/keyguard/OpKeyguardUpdateMonitor;->getCallbacks()Ljava/util/ArrayList;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
+
+    move-result v0
+
+    :goto_1
+    if-ge v1, v0, :cond_2
+
+    invoke-direct {p0}, Lcom/oneplus/keyguard/OpKeyguardUpdateMonitor;->getCallbacks()Ljava/util/ArrayList;
+
+    move-result-object v2
+
+    invoke-virtual {v2, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Ljava/lang/ref/WeakReference;
+
+    invoke-virtual {v2}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Lcom/android/keyguard/KeyguardUpdateMonitorCallback;
+
+    if-eqz v2, :cond_1
+
+    invoke-virtual {v2, p1}, Lcom/oneplus/keyguard/OpKeyguardUpdateMonitorCallback;->onKeyguardDoneChanged(Z)V
+
+    :cond_1
+    add-int/lit8 v1, v1, 0x1
+
+    goto :goto_1
+
+    :cond_2
     iget-boolean p0, p0, Lcom/oneplus/keyguard/OpKeyguardUpdateMonitor;->mIsKeyguardDone:Z
 
-    if-eqz p0, :cond_1
+    if-eqz p0, :cond_3
 
     const-class p0, Lcom/android/systemui/recents/OverviewProxyService;
 
@@ -3312,7 +3344,7 @@
 
     invoke-virtual {p0}, Lcom/android/systemui/recents/OverviewProxyService;->notifyKeyguardDone()V
 
-    :cond_1
+    :cond_3
     return-void
 .end method
 
@@ -3502,7 +3534,7 @@
 .end method
 
 .method public notifyShutDownOrReboot()V
-    .locals 1
+    .locals 2
 
     const/4 v0, 0x1
 
@@ -3510,6 +3542,45 @@
 
     invoke-direct {p0}, Lcom/oneplus/keyguard/OpKeyguardUpdateMonitor;->updateFingerprintListeningState()V
 
+    const/4 v0, 0x0
+
+    :goto_0
+    invoke-direct {p0}, Lcom/oneplus/keyguard/OpKeyguardUpdateMonitor;->getCallbacks()Ljava/util/ArrayList;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/util/ArrayList;->size()I
+
+    move-result v1
+
+    if-ge v0, v1, :cond_1
+
+    invoke-direct {p0}, Lcom/oneplus/keyguard/OpKeyguardUpdateMonitor;->getCallbacks()Ljava/util/ArrayList;
+
+    move-result-object v1
+
+    invoke-virtual {v1, v0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Ljava/lang/ref/WeakReference;
+
+    invoke-virtual {v1}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Lcom/android/keyguard/KeyguardUpdateMonitorCallback;
+
+    if-eqz v1, :cond_0
+
+    invoke-virtual {v1}, Lcom/oneplus/keyguard/OpKeyguardUpdateMonitorCallback;->onShuttingDown()V
+
+    :cond_0
+    add-int/lit8 v0, v0, 0x1
+
+    goto :goto_0
+
+    :cond_1
     return-void
 .end method
 
@@ -3536,26 +3607,69 @@
 
     if-eqz v0, :cond_3
 
+    invoke-virtual {p0}, Lcom/oneplus/keyguard/OpKeyguardUpdateMonitor;->isUnlockingWithBiometricAllowed()Z
+
+    move-result v0
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v2, "onImeShow: show:( "
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-boolean v2, p0, Lcom/oneplus/keyguard/OpKeyguardUpdateMonitor;->mImeShow:Z
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    const-string v2, " -> "
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    const-string v2, " ), mLockoutState= "
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-boolean v2, p0, Lcom/oneplus/keyguard/OpKeyguardUpdateMonitor;->mLockoutState:Z
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    const-string v2, ", isUnlockingWithBiometricAllowed= "
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    const-string v2, "OpKeyguardUpdateMonitor"
+
+    invoke-static {v2, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    iget-boolean v1, p0, Lcom/oneplus/keyguard/OpKeyguardUpdateMonitor;->mImeShow:Z
+
+    if-eq v1, p1, :cond_3
+
     iput-boolean p1, p0, Lcom/oneplus/keyguard/OpKeyguardUpdateMonitor;->mImeShow:Z
 
     iget-boolean p1, p0, Lcom/oneplus/keyguard/OpKeyguardUpdateMonitor;->mLockoutState:Z
 
-    if-eqz p1, :cond_1
+    if-nez p1, :cond_2
 
-    iget-object p0, p0, Lcom/oneplus/keyguard/OpKeyguardUpdateMonitor;->mFodDialogView:Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView;
-
-    if-nez p0, :cond_0
-
-    return-void
-
-    :cond_0
-    const/4 p1, 0x0
-
-    invoke-virtual {p0, p1}, Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView;->updateIconVisibility(Z)V
+    if-nez v0, :cond_0
 
     goto :goto_1
 
-    :cond_1
+    :cond_0
+    const-string p1, "onImeShow: update fingerprint listening state"
+
+    invoke-static {v2, p1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
     invoke-direct {p0}, Lcom/oneplus/keyguard/OpKeyguardUpdateMonitor;->getHandler()Lcom/oneplus/keyguard/OpKeyguardUpdateMonitor$OpHandler;
 
     move-result-object p1
@@ -3566,22 +3680,46 @@
 
     invoke-direct {p0}, Lcom/oneplus/keyguard/OpKeyguardUpdateMonitor;->isFingerprintDetectionRunning()Z
 
-    move-result p0
+    move-result v1
 
-    if-eqz p0, :cond_2
+    if-eqz v1, :cond_1
 
     const-wide/16 v1, 0x0
 
     goto :goto_0
 
-    :cond_2
+    :cond_1
     const-wide/16 v1, 0xfa
 
     :goto_0
     invoke-virtual {p1, v0, v1, v2}, Landroid/os/Handler;->postDelayed(Ljava/lang/Runnable;J)Z
 
-    :cond_3
+    goto :goto_2
+
+    :cond_2
     :goto_1
+    const-string p1, "onImeShow: in lockout state, just update ui."
+
+    invoke-static {v2, p1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    :goto_2
+    iget-object p1, p0, Lcom/oneplus/keyguard/OpKeyguardUpdateMonitor;->mFodDialogView:Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView;
+
+    if-eqz p1, :cond_3
+
+    invoke-virtual {p1}, Landroid/widget/LinearLayout;->isAttachedToWindow()Z
+
+    move-result p1
+
+    if-eqz p1, :cond_3
+
+    iget-object p0, p0, Lcom/oneplus/keyguard/OpKeyguardUpdateMonitor;->mFodDialogView:Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView;
+
+    const/4 p1, 0x0
+
+    invoke-virtual {p0, p1}, Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView;->updateIconVisibility(Z)V
+
+    :cond_3
     return-void
 .end method
 
@@ -4384,7 +4522,7 @@
 
     const/4 p1, 0x0
 
-    const-string p3, "sys.debug.systemui.pin"
+    const-string/jumbo p3, "sys.debug.systemui.pin"
 
     invoke-static {p3, p1}, Landroid/os/SystemProperties;->getInt(Ljava/lang/String;I)I
 
@@ -4530,35 +4668,35 @@
 
     sget-boolean v0, Lcom/oneplus/keyguard/OpKeyguardUpdateMonitor;->IS_SUPPORT_CUSTOM_FINGERPRINT:Z
 
-    if-eqz v0, :cond_3
+    if-eqz v0, :cond_2
 
     const/16 v0, 0x9
 
-    if-ne p1, v0, :cond_3
+    if-ne p1, v0, :cond_2
 
     :cond_0
+    invoke-virtual {p0}, Lcom/oneplus/keyguard/OpKeyguardUpdateMonitor;->getFingerprintFailedUnlockAttempts()I
+
+    move-result p1
+
+    const/4 v0, 0x5
+
+    if-lt p1, v0, :cond_1
+
     const/4 p1, 0x1
 
     iput-boolean p1, p0, Lcom/oneplus/keyguard/OpKeyguardUpdateMonitor;->mLockoutState:Z
 
+    :cond_1
     sget-boolean p1, Lcom/oneplus/keyguard/OpKeyguardUpdateMonitor;->IS_SUPPORT_CUSTOM_FINGERPRINT:Z
 
-    if-eqz p1, :cond_3
+    if-eqz p1, :cond_2
 
-    iget-object p1, p0, Lcom/oneplus/keyguard/OpKeyguardUpdateMonitor;->mFodDialogView:Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView;
-
-    if-eqz p1, :cond_1
-
-    const/4 v0, 0x6
-
-    invoke-virtual {p1, v0}, Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView;->updateFpDaemonStatus(I)V
-
-    :cond_1
     invoke-direct {p0}, Lcom/oneplus/keyguard/OpKeyguardUpdateMonitor;->isKeyguardVisible()Z
 
     move-result p1
 
-    if-eqz p1, :cond_3
+    if-eqz p1, :cond_2
 
     invoke-direct {p0}, Lcom/oneplus/keyguard/OpKeyguardUpdateMonitor;->getCurrentUser()I
 
@@ -4568,22 +4706,15 @@
 
     move-result p1
 
-    if-eqz p1, :cond_3
-
-    iget-object p1, p0, Lcom/oneplus/keyguard/OpKeyguardUpdateMonitor;->mFodDialogView:Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView;
-
     if-eqz p1, :cond_2
 
-    invoke-virtual {p1}, Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView;->isDialogShowing()Z
+    iget-object p0, p0, Lcom/oneplus/keyguard/OpKeyguardUpdateMonitor;->mFodDialogView:Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView;
 
-    move-result p1
+    if-eqz p0, :cond_2
 
-    if-nez p1, :cond_3
+    invoke-virtual {p0}, Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView;->isDialogShowing()Z
 
     :cond_2
-    invoke-direct {p0}, Lcom/oneplus/keyguard/OpKeyguardUpdateMonitor;->showFPDialogWhenNoWindow()V
-
-    :cond_3
     return-void
 .end method
 
@@ -4776,12 +4907,6 @@
 
     invoke-virtual {p0, v1}, Lcom/oneplus/keyguard/OpKeyguardUpdateMonitor;->isFingerprintEnrolled(I)Z
 
-    move-result v1
-
-    if-eqz v1, :cond_0
-
-    invoke-direct {p0}, Lcom/oneplus/keyguard/OpKeyguardUpdateMonitor;->showFPDialogWhenNoWindow()V
-
     :cond_0
     invoke-direct {p0, v0}, Lcom/oneplus/keyguard/OpKeyguardUpdateMonitor;->onScreenStatusChanged(Z)V
 
@@ -4813,26 +4938,11 @@
 
     invoke-virtual {p1, v0}, Landroid/content/Intent;->setPackage(Ljava/lang/String;)Landroid/content/Intent;
 
-    iget-object v0, p0, Lcom/oneplus/keyguard/OpKeyguardUpdateMonitor;->mContext:Landroid/content/Context;
+    iget-object p0, p0, Lcom/oneplus/keyguard/OpKeyguardUpdateMonitor;->mContext:Landroid/content/Context;
 
-    invoke-virtual {v0, p1}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V
+    invoke-virtual {p0, p1}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V
 
     :cond_0
-    sget-boolean p1, Lcom/oneplus/keyguard/OpKeyguardUpdateMonitor;->IS_SUPPORT_CUSTOM_FINGERPRINT:Z
-
-    if-eqz p1, :cond_1
-
-    iget-object p1, p0, Lcom/oneplus/keyguard/OpKeyguardUpdateMonitor;->mFodDialogView:Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView;
-
-    if-eqz p1, :cond_1
-
-    iget-boolean p0, p0, Lcom/oneplus/keyguard/OpKeyguardUpdateMonitor;->mFingerprintAlreadyAuthenticated:Z
-
-    if-eqz p0, :cond_1
-
-    invoke-virtual {p1}, Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView;->notifyFingerprintAuthenticated()V
-
-    :cond_1
     invoke-static {}, Lcom/oneplus/plugin/OpLsState;->getInstance()Lcom/oneplus/plugin/OpLsState;
 
     move-result-object p0
@@ -4841,7 +4951,7 @@
 
     move-result-object p0
 
-    if-eqz p0, :cond_2
+    if-eqz p0, :cond_1
 
     invoke-static {}, Lcom/oneplus/plugin/OpLsState;->getInstance()Lcom/oneplus/plugin/OpLsState;
 
@@ -4853,16 +4963,16 @@
 
     invoke-virtual {p0}, Lcom/oneplus/systemui/statusbar/phone/OpStatusBar;->onFingerprintAuthenticated()V
 
-    :cond_2
+    :cond_1
     return-void
 .end method
 
 .method public opOnKeyguardVisibilityChanged(Z)V
-    .locals 3
+    .locals 1
+
+    iput-boolean p1, p0, Lcom/oneplus/keyguard/OpKeyguardUpdateMonitor;->mKeyguardShowing:Z
 
     const/4 v0, 0x0
-
-    const/4 v1, 0x1
 
     if-nez p1, :cond_0
 
@@ -4871,54 +4981,77 @@
     goto :goto_0
 
     :cond_0
-    iget-object v2, p0, Lcom/oneplus/keyguard/OpKeyguardUpdateMonitor;->FOD_UI_DEBUG:Ljava/lang/String;
+    iget-object p0, p0, Lcom/oneplus/keyguard/OpKeyguardUpdateMonitor;->FOD_UI_DEBUG:Ljava/lang/String;
 
-    invoke-static {v2, v0}, Landroid/os/SystemProperties;->getInt(Ljava/lang/String;I)I
+    invoke-static {p0, v0}, Landroid/os/SystemProperties;->getInt(Ljava/lang/String;I)I
+
+    :goto_0
+    new-instance p0, Ljava/lang/StringBuilder;
+
+    invoke-direct {p0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v0, "keyguard showing "
+
+    invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    const-string v0, " isOnePlusHomeApp "
+
+    invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-static {}, Lcom/oneplus/util/OpUtils;->isOnePlusHomeApp()Z
 
     move-result v0
 
-    if-ne v0, v1, :cond_1
+    invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
-    invoke-direct {p0}, Lcom/oneplus/keyguard/OpKeyguardUpdateMonitor;->showFPDialogWhenNoWindow()V
-
-    :cond_1
-    :goto_0
-    if-eqz p1, :cond_2
-
-    const-class p0, Lcom/android/systemui/recents/OverviewProxyService;
-
-    invoke-static {p0}, Lcom/android/systemui/Dependency;->get(Ljava/lang/Class;)Ljava/lang/Object;
+    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p0
 
-    check-cast p0, Lcom/android/systemui/recents/OverviewProxyService;
+    const-string v0, "OpKeyguardUpdateMonitor"
 
-    const/4 p1, 0x0
+    invoke-static {v0, p0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    invoke-virtual {p0, p1, v1}, Lcom/android/systemui/recents/OverviewProxyService;->notifyNavBarButtonAlphaChanged(FZ)V
+    const/4 p0, 0x1
+
+    if-eqz p1, :cond_1
+
+    const-class p1, Lcom/android/systemui/recents/OverviewProxyService;
+
+    invoke-static {p1}, Lcom/android/systemui/Dependency;->get(Ljava/lang/Class;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Lcom/android/systemui/recents/OverviewProxyService;
+
+    const/4 v0, 0x0
+
+    invoke-virtual {p1, v0, p0}, Lcom/android/systemui/recents/OverviewProxyService;->notifyNavBarButtonAlphaChanged(FZ)V
 
     goto :goto_1
 
+    :cond_1
+    invoke-static {}, Lcom/oneplus/util/OpUtils;->isOnePlusHomeApp()Z
+
+    move-result p1
+
+    if-nez p1, :cond_2
+
+    const-class p1, Lcom/android/systemui/recents/OverviewProxyService;
+
+    invoke-static {p1}, Lcom/android/systemui/Dependency;->get(Ljava/lang/Class;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Lcom/android/systemui/recents/OverviewProxyService;
+
+    const/high16 v0, 0x3f800000    # 1.0f
+
+    invoke-virtual {p1, v0, p0}, Lcom/android/systemui/recents/OverviewProxyService;->notifyNavBarButtonAlphaChanged(FZ)V
+
     :cond_2
-    invoke-static {}, Lcom/oneplus/util/OpUtils;->isHomeApp()Z
-
-    move-result p0
-
-    if-nez p0, :cond_3
-
-    const-class p0, Lcom/android/systemui/recents/OverviewProxyService;
-
-    invoke-static {p0}, Lcom/android/systemui/Dependency;->get(Ljava/lang/Class;)Ljava/lang/Object;
-
-    move-result-object p0
-
-    check-cast p0, Lcom/android/systemui/recents/OverviewProxyService;
-
-    const/high16 p1, 0x3f800000    # 1.0f
-
-    invoke-virtual {p0, p1, v1}, Lcom/android/systemui/recents/OverviewProxyService;->notifyNavBarButtonAlphaChanged(FZ)V
-
-    :cond_3
     :goto_1
     return-void
 .end method
@@ -5011,7 +5144,7 @@
 
     const/4 v3, 0x0
 
-    if-eqz v0, :cond_8
+    if-eqz v0, :cond_b
 
     invoke-direct {p0}, Lcom/oneplus/keyguard/OpKeyguardUpdateMonitor;->isDeviceInteractive()Z
 
@@ -5079,34 +5212,63 @@
     return v3
 
     :cond_3
-    invoke-direct {p0}, Lcom/oneplus/keyguard/OpKeyguardUpdateMonitor;->isDreaming()Z
+    invoke-static {}, Lcom/oneplus/plugin/OpLsState;->getInstance()Lcom/oneplus/plugin/OpLsState;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/oneplus/plugin/OpLsState;->getPhoneStatusBar()Lcom/android/systemui/statusbar/phone/StatusBar;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/android/systemui/statusbar/phone/StatusBar;->getPanel()Lcom/android/systemui/statusbar/phone/NotificationPanelView;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/android/systemui/statusbar/phone/PanelView;->isFullyExpanded()Z
 
     move-result v0
 
     if-eqz v0, :cond_4
 
-    invoke-direct {p0}, Lcom/oneplus/keyguard/OpKeyguardUpdateMonitor;->isDeviceInteractive()Z
+    iget-boolean v0, p0, Lcom/oneplus/keyguard/OpKeyguardUpdateMonitor;->mKeyguardShowing:Z
+
+    if-nez v0, :cond_4
+
+    invoke-direct {p0}, Lcom/oneplus/keyguard/OpKeyguardUpdateMonitor;->isBouncer()Z
 
     move-result v0
 
     if-nez v0, :cond_4
 
-    invoke-virtual {p0}, Lcom/oneplus/keyguard/OpKeyguardUpdateMonitor;->isUnlockingWithBiometricAllowed()Z
-
-    move-result v0
-
-    if-nez v0, :cond_4
-
-    const-string p0, "opShouldListenForFingerprint false: dreaming"
+    const-string p0, "opShouldListenForFingerprint false: disableByPanelExpanded"
 
     invoke-static {v2, p0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     return v3
 
     :cond_4
+    invoke-virtual {p0}, Lcom/oneplus/keyguard/OpKeyguardUpdateMonitor;->isUnlockingWithBiometricAllowed()Z
+
+    move-result v0
+
+    if-nez v0, :cond_5
+
+    invoke-virtual {p0}, Lcom/oneplus/keyguard/OpKeyguardUpdateMonitor;->isFingerprintLockout()Z
+
+    move-result v0
+
+    if-nez v0, :cond_5
+
+    const-string p0, "opShouldListenForFingerprint false: biometric not allowed"
+
+    invoke-static {v2, p0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    return v3
+
+    :cond_5
     iget-boolean v0, p0, Lcom/oneplus/keyguard/OpKeyguardUpdateMonitor;->mShutingDown:Z
 
-    if-eqz v0, :cond_5
+    if-eqz v0, :cond_6
 
     const-string p0, "opShouldListenForFingerprint false: Shuting Down"
 
@@ -5114,12 +5276,12 @@
 
     return v3
 
-    :cond_5
+    :cond_6
     iget v0, p0, Lcom/oneplus/keyguard/OpKeyguardUpdateMonitor;->mFacelockRunningType:I
 
     const/4 v4, 0x4
 
-    if-ne v0, v4, :cond_6
+    if-ne v0, v4, :cond_7
 
     const-string p0, "opShouldListenForFingerprint false: Facelock RECOGNIZED_OK"
 
@@ -5127,14 +5289,14 @@
 
     return v3
 
-    :cond_6
+    :cond_7
     iget-boolean v0, p0, Lcom/oneplus/keyguard/OpKeyguardUpdateMonitor;->mIsKeyguardDone:Z
 
-    if-eqz v0, :cond_7
+    if-eqz v0, :cond_8
 
     iget-boolean v0, p0, Lcom/oneplus/keyguard/OpKeyguardUpdateMonitor;->mFakeLocking:Z
 
-    if-nez v0, :cond_7
+    if-nez v0, :cond_8
 
     const-string p0, "opShouldListenForFingerprint false: Keyguard Done and not fake locking"
 
@@ -5142,10 +5304,10 @@
 
     return v3
 
-    :cond_7
+    :cond_8
     iget-boolean v0, p0, Lcom/oneplus/keyguard/OpKeyguardUpdateMonitor;->mFacelockUnlocking:Z
 
-    if-eqz v0, :cond_8
+    if-eqz v0, :cond_9
 
     const-string p0, "opShouldListenForFingerprint false: FacelockUnlocking"
 
@@ -5153,16 +5315,54 @@
 
     return v3
 
-    :cond_8
+    :cond_9
+    iget-object v0, p0, Lcom/oneplus/keyguard/OpKeyguardUpdateMonitor;->mPowerManager:Landroid/os/PowerManager;
+
+    invoke-virtual {v0}, Landroid/os/PowerManager;->isInteractive()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_b
+
+    invoke-direct {p0}, Lcom/oneplus/keyguard/OpKeyguardUpdateMonitor;->isKeyguardOccluded()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_a
+
     invoke-direct {p0}, Lcom/oneplus/keyguard/OpKeyguardUpdateMonitor;->isBouncer()Z
 
     move-result v0
 
-    if-eqz v0, :cond_9
+    if-nez v0, :cond_a
+
+    const-string p0, "opShouldListenForFingerprint false: start to wake up and keyguard is occluded."
+
+    invoke-static {v2, p0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    return v3
+
+    :cond_a
+    iget-boolean v0, p0, Lcom/oneplus/keyguard/OpKeyguardUpdateMonitor;->mIsKeyguardDone:Z
+
+    if-eqz v0, :cond_b
+
+    const-string p0, "opShouldListenForFingerprint false: start to wake up and keyguard is done."
+
+    invoke-static {v2, p0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    return v3
+
+    :cond_b
+    invoke-direct {p0}, Lcom/oneplus/keyguard/OpKeyguardUpdateMonitor;->isBouncer()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_c
 
     iget-boolean v0, p0, Lcom/oneplus/keyguard/OpKeyguardUpdateMonitor;->mImeShow:Z
 
-    if-eqz v0, :cond_9
+    if-eqz v0, :cond_c
 
     const-string p0, "opShouldListenForFingerprint false: IME show"
 
@@ -5170,10 +5370,10 @@
 
     return v3
 
-    :cond_9
+    :cond_c
     iget-boolean v0, p0, Lcom/oneplus/keyguard/OpKeyguardUpdateMonitor;->mFingerprintAlreadyAuthenticated:Z
 
-    if-eqz v0, :cond_a
+    if-eqz v0, :cond_d
 
     const-string p0, "opShouldListenForFingerprint false: FingerprintAlreadyAuthenticated"
 
@@ -5181,7 +5381,7 @@
 
     return v3
 
-    :cond_a
+    :cond_d
     iget v0, p0, Lcom/oneplus/keyguard/OpKeyguardUpdateMonitor;->mPocketState:I
 
     iget-boolean v4, p0, Lcom/oneplus/keyguard/OpKeyguardUpdateMonitor;->mLidOpen:Z
@@ -5190,7 +5390,7 @@
 
     move-result v0
 
-    if-eqz v0, :cond_b
+    if-eqz v0, :cond_e
 
     iget-object v0, p0, Lcom/oneplus/keyguard/OpKeyguardUpdateMonitor;->mContext:Landroid/content/Context;
 
@@ -5198,7 +5398,7 @@
 
     move-result v0
 
-    if-eqz v0, :cond_b
+    if-eqz v0, :cond_e
 
     const-string p0, "opShouldListenForFingerprint false: prevent mode"
 
@@ -5206,26 +5406,39 @@
 
     return v3
 
-    :cond_b
+    :cond_e
+    invoke-virtual {p0}, Lcom/oneplus/keyguard/OpKeyguardUpdateMonitor;->isGoingToSleep()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_f
+
+    const-string p0, "opShouldListenForFingerprint false: going to sleep"
+
+    invoke-static {v2, p0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    return v3
+
+    :cond_f
     invoke-direct {p0}, Lcom/oneplus/keyguard/OpKeyguardUpdateMonitor;->isDeviceInteractive()Z
 
     move-result v0
 
-    if-eqz v0, :cond_c
+    if-eqz v0, :cond_10
 
     invoke-virtual {p0}, Lcom/oneplus/keyguard/OpKeyguardUpdateMonitor;->isGoingToSleep()Z
 
     move-result v0
 
-    if-eqz v0, :cond_d
+    if-eqz v0, :cond_11
 
-    :cond_c
+    :cond_10
     iput-boolean v3, p0, Lcom/oneplus/keyguard/OpKeyguardUpdateMonitor;->mLaunchingCamera:Z
 
-    :cond_d
+    :cond_11
     iget-boolean v0, p0, Lcom/oneplus/keyguard/OpKeyguardUpdateMonitor;->mLaunchingCamera:Z
 
-    if-eqz v0, :cond_e
+    if-eqz v0, :cond_12
 
     const-string p0, "opShouldListenForFingerprint false: Launching Camera"
 
@@ -5233,10 +5446,10 @@
 
     return v3
 
-    :cond_e
+    :cond_12
     iget-boolean v0, p0, Lcom/oneplus/keyguard/OpKeyguardUpdateMonitor;->mLaunchingLeftAffordance:Z
 
-    if-eqz v0, :cond_f
+    if-eqz v0, :cond_13
 
     const-string p0, "opShouldListenForFingerprint false: LaunchingLeftAffordance"
 
@@ -5244,10 +5457,10 @@
 
     return v3
 
-    :cond_f
+    :cond_13
     iget-boolean p0, p0, Lcom/oneplus/keyguard/OpKeyguardUpdateMonitor;->mIsInBrickMode:Z
 
-    if-eqz p0, :cond_10
+    if-eqz p0, :cond_14
 
     const-string p0, "opShouldListenForFingerprint false: Brick Mode"
 
@@ -5255,7 +5468,7 @@
 
     return v3
 
-    :cond_10
+    :cond_14
     return v1
 .end method
 
@@ -5384,7 +5597,7 @@
     :cond_0
     iget-boolean v0, p0, Lcom/oneplus/keyguard/OpKeyguardUpdateMonitor;->mQSExpanded:Z
 
-    if-eq p1, v0, :cond_2
+    if-eq p1, v0, :cond_4
 
     sget-boolean v0, Lcom/oneplus/keyguard/OpKeyguardUpdateMonitor;->DEBUG:Z
 
@@ -5413,25 +5626,52 @@
 
     invoke-direct {p0}, Lcom/oneplus/keyguard/OpKeyguardUpdateMonitor;->isKeyguardVisible()Z
 
-    move-result p1
+    move-result v0
 
-    if-eqz p1, :cond_2
+    if-eqz v0, :cond_2
 
     invoke-direct {p0}, Lcom/oneplus/keyguard/OpKeyguardUpdateMonitor;->updateFingerprintListeningState()V
 
-    iget-boolean p1, p0, Lcom/oneplus/keyguard/OpKeyguardUpdateMonitor;->mLockoutState:Z
-
-    if-eqz p1, :cond_2
-
-    iget-object p0, p0, Lcom/oneplus/keyguard/OpKeyguardUpdateMonitor;->mFodDialogView:Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView;
-
-    if-eqz p0, :cond_2
-
-    const/4 p1, 0x0
-
-    invoke-virtual {p0, p1}, Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView;->updateIconVisibility(Z)V
-
     :cond_2
+    const/4 v0, 0x0
+
+    :goto_0
+    invoke-direct {p0}, Lcom/oneplus/keyguard/OpKeyguardUpdateMonitor;->getCallbacks()Ljava/util/ArrayList;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/util/ArrayList;->size()I
+
+    move-result v1
+
+    if-ge v0, v1, :cond_4
+
+    invoke-direct {p0}, Lcom/oneplus/keyguard/OpKeyguardUpdateMonitor;->getCallbacks()Ljava/util/ArrayList;
+
+    move-result-object v1
+
+    invoke-virtual {v1, v0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Ljava/lang/ref/WeakReference;
+
+    invoke-virtual {v1}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Lcom/android/keyguard/KeyguardUpdateMonitorCallback;
+
+    if-eqz v1, :cond_3
+
+    invoke-virtual {v1, p1}, Lcom/oneplus/keyguard/OpKeyguardUpdateMonitorCallback;->onQSExpendChanged(Z)V
+
+    :cond_3
+    add-int/lit8 v0, v0, 0x1
+
+    goto :goto_0
+
+    :cond_4
     return-void
 .end method
 
@@ -5477,9 +5717,16 @@
 
     iget-object p0, p0, Lcom/oneplus/keyguard/OpKeyguardUpdateMonitor;->mFodDialogView:Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView;
 
+    if-eqz p0, :cond_0
+
     invoke-virtual {p0}, Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView;->shouldHideDismissButton()Z
 
     move-result p0
+
+    return p0
+
+    :cond_0
+    const/4 p0, 0x0
 
     return p0
 .end method

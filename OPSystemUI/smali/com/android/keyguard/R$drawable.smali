@@ -10,4 +10,4 @@
 
 .field public static final default_thumbnail:I = 0x7f080312
 
-.field public static final ripple_drawable:I = 0x7f080972
+.field public static final ripple_drawable:I = 0x7f080967

@@ -526,7 +526,7 @@
 
     if-nez v0, :cond_1
 
-    const-string v0, "text"
+    const-string/jumbo v0, "text"
 
     invoke-virtual {v0, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -783,7 +783,7 @@
 
     move-result-object v6
 
-    const-string v7, "text"
+    const-string/jumbo v7, "text"
 
     invoke-virtual {v7, v6}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 

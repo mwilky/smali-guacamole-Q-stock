@@ -65,7 +65,7 @@
 
     move-result-object p0
 
-    const-string v0, "text/plain"
+    const-string/jumbo v0, "text/plain"
 
     invoke-virtual {p0, v0}, Landroid/content/Intent;->setType(Ljava/lang/String;)Landroid/content/Intent;
 

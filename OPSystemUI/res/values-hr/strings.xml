@@ -324,7 +324,7 @@
     <string name="battery_saver_notification_title">Štednja baterije je uključena</string>
     <string name="battery_saver_start_action">Uključite Štednju baterije</string>
     <string name="battery_usage_extanded">Temeljem vaše upotrebe Funkcija štednje energije može produljiti upotrebu za oko %s</string>
-    <string name="battery_usage_remaining">Temeljem vaše upotrebe trebalo bi trajati oko %s. Smanjite performanse i pozadinske podatke.</string>
+    <string name="battery_usage_remaining_time">Preostalo %s</string>
     <string name="biometric_dialog_confirm">Potvrdi</string>
     <string name="biometric_dialog_empty_space_description">Prazno područje, dodirnite da biste otkazali autentifikaciju</string>
     <string name="biometric_dialog_face_icon_description_authenticated">Lice je autentificirano</string>
@@ -1030,7 +1030,7 @@ Povezani ste i s VPN-om koji može nadzirati vašu mrežnu aktivnost."</string>
     <string name="music_controls_no_title">Bez naslova</string>
     <string name="nav_bar">Navigacijska traka</string>
     <string name="nav_bar_default">(zadano)</string>
-    <string name="nav_bar_guide_positive">U REDU</string>
+    <string name="nav_bar_guide_positive">RAZUMIJEM</string>
     <string name="nav_bar_guide_title">Prijeđite prstom od dolje prema gore za prikazivanje navigacijske trake. Ako želite zaustaviti skrivanje navigacije, dodirnite ovdje.</string>
     <string name="nav_bar_layout">Izgled</string>
     <string name="no_application">Ništa</string>

@@ -183,7 +183,7 @@
     return-object p0
 
     :cond_1
-    const-string p0, "teardrop"
+    const-string/jumbo p0, "teardrop"
 
     return-object p0
 
@@ -467,7 +467,7 @@
 
     move-result-object v0
 
-    const-wide/16 v1, 0x15e
+    const-wide/16 v1, 0x0
 
     invoke-virtual {v0, v1, v2}, Landroid/animation/ValueAnimator;->setDuration(J)Landroid/animation/ValueAnimator;
 

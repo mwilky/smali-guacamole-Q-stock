@@ -272,6 +272,14 @@
         <item>Natural</item>
         <item>Standard</item>
     </string-array>
+    <integer-array name="config_5_bar_5g_signal_rsrp_thresholds">
+        <item>-125</item>
+        <item>-120</item>
+        <item>-115</item>
+        <item>-110</item>
+        <item>-100</item>
+        <item>-44</item>
+    </integer-array>
     <integer-array name="config_5g_signal_rsrp_thresholds">
         <item>-110</item>
         <item>-90</item>

@@ -27,6 +27,16 @@
 
 
 # virtual methods
+.method protected applyOpAlphaValue()V
+    .locals 1
+
+    sget v0, Lcom/android/systemui/statusbar/phone/ScrimController;->ONEPLUS_GRADIENT_SCRIM_ALPHA_BUSY:F
+
+    iput v0, p0, Lcom/android/systemui/statusbar/phone/ScrimState;->mCurrentInFrontAlpha:F
+
+    return-void
+.end method
+
 .method public prepare(Lcom/android/systemui/statusbar/phone/ScrimState;)V
     .locals 0
 

@@ -61,6 +61,14 @@
 
     move-result-object p1
 
+    if-eqz p1, :cond_1
+
+    iget-object p1, p0, Lcom/oneplus/aod/OpAodLightEffectContainer$2;->this$0:Lcom/oneplus/aod/OpAodLightEffectContainer;
+
+    invoke-static {p1}, Lcom/oneplus/aod/OpAodLightEffectContainer;->access$800(Lcom/oneplus/aod/OpAodLightEffectContainer;)Landroid/os/Handler;
+
+    move-result-object p1
+
     invoke-virtual {p1, v0}, Landroid/os/Handler;->sendEmptyMessage(I)Z
 
     iget-object p0, p0, Lcom/oneplus/aod/OpAodLightEffectContainer$2;->this$0:Lcom/oneplus/aod/OpAodLightEffectContainer;

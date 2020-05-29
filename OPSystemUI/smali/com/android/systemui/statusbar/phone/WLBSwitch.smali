@@ -24,6 +24,8 @@
 # instance fields
 .field private mContext:Landroid/content/Context;
 
+.field private mCurrentUser:I
+
 .field private mFeatureDisableObr:Lcom/android/systemui/statusbar/phone/WLBSwitch$FeatureDisableObserver;
 
 .field protected mQsPanel:Lcom/android/systemui/qs/QSPanel;
@@ -52,6 +54,12 @@
     iput-object p2, p0, Lcom/android/systemui/statusbar/phone/WLBSwitch;->mTmpInt2:[I
 
     iput-object p1, p0, Lcom/android/systemui/statusbar/phone/WLBSwitch;->mContext:Landroid/content/Context;
+
+    invoke-static {}, Landroid/app/ActivityManager;->getCurrentUser()I
+
+    move-result p1
+
+    iput p1, p0, Lcom/android/systemui/statusbar/phone/WLBSwitch;->mCurrentUser:I
 
     return-void
 .end method
@@ -88,7 +96,15 @@
     return-void
 .end method
 
-.method static synthetic access$400()Ljava/lang/String;
+.method static synthetic access$402(Lcom/android/systemui/statusbar/phone/WLBSwitch;I)I
+    .locals 0
+
+    iput p1, p0, Lcom/android/systemui/statusbar/phone/WLBSwitch;->mCurrentUser:I
+
+    return p1
+.end method
+
+.method static synthetic access$500()Ljava/lang/String;
     .locals 1
 
     sget-object v0, Lcom/android/systemui/statusbar/phone/WLBSwitch;->TAG:Ljava/lang/String;
@@ -97,7 +113,7 @@
 .end method
 
 .method private handleFeature()V
-    .locals 3
+    .locals 5
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/WLBSwitch;->mContext:Landroid/content/Context;
 
@@ -112,6 +128,30 @@
     invoke-static {v0, v2, v1}, Landroid/provider/Settings$System;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
 
     move-result v0
+
+    sget-object v2, Lcom/android/systemui/statusbar/phone/WLBSwitch;->TAG:Ljava/lang/String;
+
+    new-instance v3, Ljava/lang/StringBuilder;
+
+    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v4, "handleFeature : WLB app present:"
+
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget v4, p0, Lcom/android/systemui/statusbar/phone/WLBSwitch;->mCurrentUser:I
+
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-static {v2, v3}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    iget v2, p0, Lcom/android/systemui/statusbar/phone/WLBSwitch;->mCurrentUser:I
+
+    if-nez v2, :cond_1
 
     const/4 v2, 0x1
 
@@ -409,31 +449,67 @@
 .end method
 
 .method protected onConfigurationChanged(Landroid/content/res/Configuration;)V
-    .locals 2
+    .locals 4
 
     invoke-super {p0, p1}, Landroid/widget/FrameLayout;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
-    iget-object p1, p0, Lcom/android/systemui/statusbar/phone/WLBSwitch;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/systemui/statusbar/phone/WLBSwitch;->mContext:Landroid/content/Context;
 
-    invoke-virtual {p1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {v0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object v0
+
+    const-string/jumbo v1, "worklife_feature_enable"
+
+    const/4 v2, 0x0
+
+    invoke-static {v0, v1, v2}, Landroid/provider/Settings$System;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
+
+    move-result v0
+
+    sget-object v1, Lcom/android/systemui/statusbar/phone/WLBSwitch;->TAG:Ljava/lang/String;
+
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v3, "onConfigurationChanged: user :"
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget v3, p0, Lcom/android/systemui/statusbar/phone/WLBSwitch;->mCurrentUser:I
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    const-string v3, " featureEnable:"
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    const-string v3, " newConfig:"
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p1
 
-    const-string/jumbo v0, "worklife_feature_enable"
+    invoke-static {v1, p1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    const/4 v1, 0x0
+    iget p1, p0, Lcom/android/systemui/statusbar/phone/WLBSwitch;->mCurrentUser:I
 
-    invoke-static {p1, v0, v1}, Landroid/provider/Settings$System;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
+    if-nez p1, :cond_2
 
-    move-result p1
+    const/4 p1, 0x1
 
-    const/4 v0, 0x1
+    if-eq v0, p1, :cond_2
 
-    if-eq p1, v0, :cond_2
+    const/4 p1, 0x2
 
-    const/4 v0, 0x2
-
-    if-ne p1, v0, :cond_0
+    if-ne v0, p1, :cond_0
 
     goto :goto_1
 
@@ -529,10 +605,39 @@
 .end method
 
 .method protected onFinishInflate()V
-    .locals 1
+    .locals 3
 
     invoke-super {p0}, Landroid/widget/FrameLayout;->onFinishInflate()V
 
+    sget-object v0, Lcom/android/systemui/statusbar/phone/WLBSwitch;->TAG:Ljava/lang/String;
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v2, " finishInflate current User :"
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget v2, p0, Lcom/android/systemui/statusbar/phone/WLBSwitch;->mCurrentUser:I
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    iget v0, p0, Lcom/android/systemui/statusbar/phone/WLBSwitch;->mCurrentUser:I
+
+    if-eqz v0, :cond_0
+
+    const/16 v0, 0x8
+
+    invoke-virtual {p0, v0}, Landroid/widget/FrameLayout;->setVisibility(I)V
+
+    :cond_0
     invoke-virtual {p0, p0}, Landroid/widget/FrameLayout;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     sget v0, Lcom/android/systemui/R$id;->wlb_avatar:I

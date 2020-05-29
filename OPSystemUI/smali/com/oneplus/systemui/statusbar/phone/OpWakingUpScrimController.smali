@@ -135,7 +135,7 @@
 .end method
 
 .method private getWindowLayoutParams()Landroid/view/WindowManager$LayoutParams;
-    .locals 3
+    .locals 2
 
     new-instance p0, Landroid/view/WindowManager$LayoutParams;
 
@@ -153,21 +153,6 @@
 
     iput v0, p0, Landroid/view/WindowManager$LayoutParams;->layoutInDisplayCutoutMode:I
 
-    sget v1, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    const/16 v2, 0x1b
-
-    if-lt v1, v2, :cond_0
-
-    iget v1, p0, Landroid/view/WindowManager$LayoutParams;->privateFlags:I
-
-    const/high16 v2, 0x200000
-
-    or-int/2addr v1, v2
-
-    iput v1, p0, Landroid/view/WindowManager$LayoutParams;->privateFlags:I
-
-    :cond_0
     const/16 v1, 0x518
 
     iput v1, p0, Landroid/view/WindowManager$LayoutParams;->flags:I

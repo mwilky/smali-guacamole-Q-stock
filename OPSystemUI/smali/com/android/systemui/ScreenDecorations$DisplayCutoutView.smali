@@ -189,6 +189,12 @@
     if-eqz p0, :cond_6
 
     :cond_3
+    invoke-static {}, Lcom/oneplus/util/OpUtils;->isCutoutEmulationEnabled()Z
+
+    move-result p0
+
+    if-nez p0, :cond_6
+
     invoke-static {}, Lcom/android/systemui/ScreenDecorations;->access$1900()I
 
     move-result p0

@@ -29,9 +29,9 @@
 
     const-string v1, "sc"
 
-    const-string v2, "sw"
+    const-string/jumbo v2, "sw"
 
-    const-string v3, "t"
+    const-string/jumbo v3, "t"
 
     filled-new-array {v0, v1, v2, v3}, [Ljava/lang/String;
 

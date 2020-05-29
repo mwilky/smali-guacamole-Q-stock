@@ -9,6 +9,8 @@
 # instance fields
 .field private mOpSceneModeObserver:Lcom/oneplus/scene/OpSceneModeObserver;
 
+.field protected mState1:I
+
 
 # direct methods
 .method public constructor <init>()V
@@ -62,89 +64,79 @@
 .end method
 
 .method public onBrickModeChanged()V
-    .locals 9
+    .locals 8
 
     const-class v0, Lcom/android/systemui/statusbar/phone/CollapsedStatusBarFragment;
 
-    const-string v1, "mDisabled1"
+    const/4 v1, 0x4
 
-    invoke-static {v0, p0, v1}, Lcom/oneplus/util/OpReflectionUtils;->getValue(Ljava/lang/Class;Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+    new-array v2, v1, [Ljava/lang/Class;
 
-    move-result-object v0
+    sget-object v3, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
 
-    check-cast v0, Ljava/lang/Integer;
+    const/4 v4, 0x0
 
-    invoke-virtual {v0}, Ljava/lang/Integer;->intValue()I
+    aput-object v3, v2, v4
 
-    move-result v0
-
-    const-class v1, Lcom/android/systemui/statusbar/phone/CollapsedStatusBarFragment;
-
-    const/4 v2, 0x4
-
-    new-array v3, v2, [Ljava/lang/Class;
-
-    sget-object v4, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
-
-    const/4 v5, 0x0
-
-    aput-object v4, v3, v5
-
-    const/4 v6, 0x1
-
-    aput-object v4, v3, v6
-
-    const/4 v7, 0x2
-
-    aput-object v4, v3, v7
-
-    sget-object v4, Ljava/lang/Boolean;->TYPE:Ljava/lang/Class;
-
-    const/4 v8, 0x3
-
-    aput-object v4, v3, v8
-
-    const-string v4, "disable"
-
-    invoke-static {v1, v4, v3}, Lcom/oneplus/util/OpReflectionUtils;->getMethodWithParams(Ljava/lang/Class;Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
-
-    move-result-object v1
-
-    new-array v2, v2, [Ljava/lang/Object;
-
-    invoke-virtual {p0}, Landroid/app/Fragment;->getContext()Landroid/content/Context;
-
-    move-result-object v3
-
-    invoke-virtual {v3}, Landroid/content/Context;->getDisplayId()I
-
-    move-result v3
-
-    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v3
+    const/4 v5, 0x1
 
     aput-object v3, v2, v5
 
-    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v3
+    const/4 v6, 0x2
 
     aput-object v3, v2, v6
 
-    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    sget-object v3, Ljava/lang/Boolean;->TYPE:Ljava/lang/Class;
+
+    const/4 v7, 0x3
+
+    aput-object v3, v2, v7
+
+    const-string v3, "disable"
+
+    invoke-static {v0, v3, v2}, Lcom/oneplus/util/OpReflectionUtils;->getMethodWithParams(Ljava/lang/Class;Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
 
     move-result-object v0
 
-    aput-object v0, v2, v7
+    new-array v1, v1, [Ljava/lang/Object;
 
-    invoke-static {v5}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+    invoke-virtual {p0}, Landroid/app/Fragment;->getContext()Landroid/content/Context;
 
-    move-result-object v0
+    move-result-object v2
 
-    aput-object v0, v2, v8
+    invoke-virtual {v2}, Landroid/content/Context;->getDisplayId()I
 
-    invoke-static {p0, v1, v2}, Lcom/oneplus/util/OpReflectionUtils;->methodInvokeWithArgs(Ljava/lang/Object;Ljava/lang/reflect/Method;[Ljava/lang/Object;)Ljava/lang/Object;
+    move-result v2
+
+    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v2
+
+    aput-object v2, v1, v4
+
+    iget v2, p0, Lcom/oneplus/systemui/statusbar/phone/OpCollapsedStatusBarFragment;->mState1:I
+
+    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v2
+
+    aput-object v2, v1, v5
+
+    iget v2, p0, Lcom/oneplus/systemui/statusbar/phone/OpCollapsedStatusBarFragment;->mState1:I
+
+    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v2
+
+    aput-object v2, v1, v6
+
+    invoke-static {v4}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object v2
+
+    aput-object v2, v1, v7
+
+    invoke-static {p0, v0, v1}, Lcom/oneplus/util/OpReflectionUtils;->methodInvokeWithArgs(Ljava/lang/Object;Ljava/lang/reflect/Method;[Ljava/lang/Object;)Ljava/lang/Object;
 
     return-void
 .end method

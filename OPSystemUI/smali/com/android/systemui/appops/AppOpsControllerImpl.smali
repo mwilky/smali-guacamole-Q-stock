@@ -197,7 +197,7 @@
     return-void
 .end method
 
-.method private addNoted(IILjava/lang/String;)V
+.method private addNoted(IILjava/lang/String;)Z
     .locals 8
 
     iget-object v0, p0, Lcom/android/systemui/appops/AppOpsControllerImpl;->mNotedItems:Ljava/util/List;
@@ -233,18 +233,29 @@
 
     invoke-interface {p1, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
+    const/4 p1, 0x1
+
+    goto :goto_0
+
     :cond_0
+    const/4 p1, 0x0
+
+    :goto_0
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
+    iget-object p2, p0, Lcom/android/systemui/appops/AppOpsControllerImpl;->mBGHandler:Lcom/android/systemui/appops/AppOpsControllerImpl$H;
+
+    invoke-virtual {p2, v1}, Landroid/os/Handler;->removeCallbacksAndMessages(Ljava/lang/Object;)V
+
     iget-object p0, p0, Lcom/android/systemui/appops/AppOpsControllerImpl;->mBGHandler:Lcom/android/systemui/appops/AppOpsControllerImpl$H;
 
-    const-wide/16 p1, 0x1388
+    const-wide/16 p2, 0x1388
 
-    invoke-virtual {p0, v1, p1, p2}, Lcom/android/systemui/appops/AppOpsControllerImpl$H;->scheduleRemoval(Lcom/android/systemui/appops/AppOpItem;J)V
+    invoke-virtual {p0, v1, p2, p3}, Lcom/android/systemui/appops/AppOpsControllerImpl$H;->scheduleRemoval(Lcom/android/systemui/appops/AppOpItem;J)V
 
-    return-void
+    return p1
 
     :catchall_0
     move-exception p0
@@ -400,21 +411,59 @@
 
     monitor-exit v0
     :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
-    const/4 v0, 0x0
+    iget-object v1, p0, Lcom/android/systemui/appops/AppOpsControllerImpl;->mActiveItems:Ljava/util/List;
 
-    invoke-direct {p0, p1, p2, p3, v0}, Lcom/android/systemui/appops/AppOpsControllerImpl;->notifySuscribers(IILjava/lang/String;Z)V
+    monitor-enter v1
 
+    :try_start_1
+    iget-object v0, p0, Lcom/android/systemui/appops/AppOpsControllerImpl;->mActiveItems:Ljava/util/List;
+
+    invoke-direct {p0, v0, p1, p2, p3}, Lcom/android/systemui/appops/AppOpsControllerImpl;->getAppOpItem(Ljava/util/List;IILjava/lang/String;)Lcom/android/systemui/appops/AppOpItem;
+
+    move-result-object v0
+
+    const/4 v2, 0x0
+
+    if-eqz v0, :cond_1
+
+    const/4 v0, 0x1
+
+    goto :goto_0
+
+    :cond_1
+    move v0, v2
+
+    :goto_0
+    monitor-exit v1
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    if-nez v0, :cond_2
+
+    invoke-direct {p0, p1, p2, p3, v2}, Lcom/android/systemui/appops/AppOpsControllerImpl;->notifySuscribers(IILjava/lang/String;Z)V
+
+    :cond_2
     return-void
 
     :catchall_0
     move-exception p0
 
-    :try_start_1
+    :try_start_2
+    monitor-exit v1
+    :try_end_2
+    .catchall {:try_start_2 .. :try_end_2} :catchall_0
+
+    throw p0
+
+    :catchall_1
+    move-exception p0
+
+    :try_start_3
     monitor-exit v0
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+    :try_end_3
+    .catchall {:try_start_3 .. :try_end_3} :catchall_1
 
     throw p0
 .end method
@@ -579,36 +628,161 @@
     return-void
 .end method
 
-.method public onOpActiveChanged(IILjava/lang/String;Z)V
+.method public synthetic lambda$onOpActiveChanged$0$AppOpsControllerImpl(IILjava/lang/String;Z)V
+    .locals 0
+
+    invoke-direct {p0, p1, p2, p3, p4}, Lcom/android/systemui/appops/AppOpsControllerImpl;->notifySuscribers(IILjava/lang/String;Z)V
+
+    return-void
+.end method
+
+.method public synthetic lambda$onOpNoted$1$AppOpsControllerImpl(IILjava/lang/String;)V
     .locals 1
+
+    const/4 v0, 0x1
+
+    invoke-direct {p0, p1, p2, p3, v0}, Lcom/android/systemui/appops/AppOpsControllerImpl;->notifySuscribers(IILjava/lang/String;Z)V
+
+    return-void
+.end method
+
+.method public onOpActiveChanged(IILjava/lang/String;Z)V
+    .locals 8
 
     invoke-direct {p0, p1, p2, p3, p4}, Lcom/android/systemui/appops/AppOpsControllerImpl;->updateActives(IILjava/lang/String;Z)Z
 
     move-result v0
 
-    if-eqz v0, :cond_0
+    if-nez v0, :cond_0
 
-    invoke-direct {p0, p1, p2, p3, p4}, Lcom/android/systemui/appops/AppOpsControllerImpl;->notifySuscribers(IILjava/lang/String;Z)V
+    return-void
 
     :cond_0
+    iget-object v0, p0, Lcom/android/systemui/appops/AppOpsControllerImpl;->mNotedItems:Ljava/util/List;
+
+    monitor-enter v0
+
+    :try_start_0
+    iget-object v1, p0, Lcom/android/systemui/appops/AppOpsControllerImpl;->mNotedItems:Ljava/util/List;
+
+    invoke-direct {p0, v1, p1, p2, p3}, Lcom/android/systemui/appops/AppOpsControllerImpl;->getAppOpItem(Ljava/util/List;IILjava/lang/String;)Lcom/android/systemui/appops/AppOpItem;
+
+    move-result-object v1
+
+    if-eqz v1, :cond_1
+
+    const/4 v1, 0x1
+
+    goto :goto_0
+
+    :cond_1
+    const/4 v1, 0x0
+
+    :goto_0
+    monitor-exit v0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    if-nez v1, :cond_2
+
+    iget-object v0, p0, Lcom/android/systemui/appops/AppOpsControllerImpl;->mBGHandler:Lcom/android/systemui/appops/AppOpsControllerImpl$H;
+
+    new-instance v7, Lcom/android/systemui/appops/-$$Lambda$AppOpsControllerImpl$ytWudla0eUXQNol33KSx7VyQvYM;
+
+    move-object v1, v7
+
+    move-object v2, p0
+
+    move v3, p1
+
+    move v4, p2
+
+    move-object v5, p3
+
+    move v6, p4
+
+    invoke-direct/range {v1 .. v6}, Lcom/android/systemui/appops/-$$Lambda$AppOpsControllerImpl$ytWudla0eUXQNol33KSx7VyQvYM;-><init>(Lcom/android/systemui/appops/AppOpsControllerImpl;IILjava/lang/String;Z)V
+
+    invoke-virtual {v0, v7}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
+
+    :cond_2
     return-void
+
+    :catchall_0
+    move-exception p0
+
+    :try_start_1
+    monitor-exit v0
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    throw p0
 .end method
 
 .method public onOpNoted(IILjava/lang/String;I)V
-    .locals 0
+    .locals 1
 
     if-eqz p4, :cond_0
 
     return-void
 
     :cond_0
-    invoke-direct {p0, p1, p2, p3}, Lcom/android/systemui/appops/AppOpsControllerImpl;->addNoted(IILjava/lang/String;)V
+    invoke-direct {p0, p1, p2, p3}, Lcom/android/systemui/appops/AppOpsControllerImpl;->addNoted(IILjava/lang/String;)Z
 
-    const/4 p4, 0x1
+    move-result p4
 
-    invoke-direct {p0, p1, p2, p3, p4}, Lcom/android/systemui/appops/AppOpsControllerImpl;->notifySuscribers(IILjava/lang/String;Z)V
+    if-nez p4, :cond_1
 
     return-void
+
+    :cond_1
+    iget-object p4, p0, Lcom/android/systemui/appops/AppOpsControllerImpl;->mActiveItems:Ljava/util/List;
+
+    monitor-enter p4
+
+    :try_start_0
+    iget-object v0, p0, Lcom/android/systemui/appops/AppOpsControllerImpl;->mActiveItems:Ljava/util/List;
+
+    invoke-direct {p0, v0, p1, p2, p3}, Lcom/android/systemui/appops/AppOpsControllerImpl;->getAppOpItem(Ljava/util/List;IILjava/lang/String;)Lcom/android/systemui/appops/AppOpItem;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_2
+
+    const/4 v0, 0x1
+
+    goto :goto_0
+
+    :cond_2
+    const/4 v0, 0x0
+
+    :goto_0
+    monitor-exit p4
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    if-nez v0, :cond_3
+
+    iget-object p4, p0, Lcom/android/systemui/appops/AppOpsControllerImpl;->mBGHandler:Lcom/android/systemui/appops/AppOpsControllerImpl$H;
+
+    new-instance v0, Lcom/android/systemui/appops/-$$Lambda$AppOpsControllerImpl$Ik-chvj1nqb8W_dVPetwy70ZXqg;
+
+    invoke-direct {v0, p0, p1, p2, p3}, Lcom/android/systemui/appops/-$$Lambda$AppOpsControllerImpl$Ik-chvj1nqb8W_dVPetwy70ZXqg;-><init>(Lcom/android/systemui/appops/AppOpsControllerImpl;IILjava/lang/String;)V
+
+    invoke-virtual {p4, v0}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
+
+    :cond_3
+    return-void
+
+    :catchall_0
+    move-exception p0
+
+    :try_start_1
+    monitor-exit p4
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    throw p0
 .end method
 
 .method protected setBGHandler(Lcom/android/systemui/appops/AppOpsControllerImpl$H;)V

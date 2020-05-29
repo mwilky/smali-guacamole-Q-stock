@@ -281,7 +281,7 @@
 
     invoke-direct {v0, p0, p1}, Lcom/android/systemui/tuner/-$$Lambda$NavBarTuner$nx5Q7aHowvZ9Bevy96_zeYYIxAY;-><init>(Lcom/android/systemui/tuner/NavBarTuner;Landroidx/preference/ListPreference;)V
 
-    const-string v1, "sysui_nav_bar"
+    const-string/jumbo v1, "sysui_nav_bar"
 
     filled-new-array {v1}, [Ljava/lang/String;
 
@@ -333,7 +333,7 @@
 
     check-cast p0, Lcom/android/systemui/tuner/TunerService;
 
-    const-string v0, "sysui_nav_bar"
+    const-string/jumbo v0, "sysui_nav_bar"
 
     invoke-virtual {p0, v0, p1}, Lcom/android/systemui/tuner/TunerService;->setValue(Ljava/lang/String;Ljava/lang/String;)V
 
@@ -1050,7 +1050,7 @@
 
     invoke-direct {p0, p1}, Lcom/android/systemui/tuner/NavBarTuner;->bindLayout(Landroidx/preference/ListPreference;)V
 
-    const-string p1, "sysui_nav_bar_left"
+    const-string/jumbo p1, "sysui_nav_bar_left"
 
     const-string p2, "space"
 
@@ -1058,7 +1058,7 @@
 
     invoke-direct {p0, p1, p2, v0}, Lcom/android/systemui/tuner/NavBarTuner;->bindButton(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    const-string p1, "sysui_nav_bar_right"
+    const-string/jumbo p1, "sysui_nav_bar_right"
 
     const-string p2, "menu_ime"
 

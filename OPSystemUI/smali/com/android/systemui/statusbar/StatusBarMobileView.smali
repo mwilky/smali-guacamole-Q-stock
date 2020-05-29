@@ -842,6 +842,8 @@
 
     invoke-direct {p0}, Lcom/android/systemui/statusbar/StatusBarMobileView;->updateMobileIconPadding()V
 
+    invoke-direct {p0}, Lcom/android/systemui/statusbar/StatusBarMobileView;->updateInOutIndicatorPadding()V
+
     return-void
 .end method
 
@@ -929,6 +931,70 @@
     return p0
 .end method
 
+.method private updateInOutIndicatorPadding()V
+    .locals 3
+
+    iget-object v0, p0, Lcom/android/systemui/statusbar/StatusBarMobileView;->mMobileInOut:Landroid/widget/ImageView;
+
+    if-nez v0, :cond_0
+
+    return-void
+
+    :cond_0
+    invoke-virtual {v0}, Landroid/widget/ImageView;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/view/ViewGroup$MarginLayoutParams;
+
+    iget v1, v0, Landroid/view/ViewGroup$MarginLayoutParams;->topMargin:I
+
+    invoke-static {}, Lcom/oneplus/util/OpUtils;->isUST()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_1
+
+    iget-object v1, p0, Lcom/android/systemui/statusbar/StatusBarMobileView;->mState:Lcom/android/systemui/statusbar/phone/StatusBarSignalPolicy$MobileIconState;
+
+    iget v1, v1, Lcom/android/systemui/statusbar/phone/StatusBarSignalPolicy$MobileIconState;->typeId:I
+
+    sget v2, Lcom/android/systemui/R$drawable;->stat_sys_data_fully_connected_5g:I
+
+    if-ne v1, v2, :cond_1
+
+    iget-object v1, p0, Landroid/widget/FrameLayout;->mContext:Landroid/content/Context;
+
+    invoke-virtual {v1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v1
+
+    sget v2, Lcom/android/systemui/R$dimen;->op_5g_inout_indicator_margin_top:I
+
+    invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+
+    move-result v1
+
+    goto :goto_0
+
+    :cond_1
+    const/4 v1, 0x0
+
+    :goto_0
+    iget v2, v0, Landroid/view/ViewGroup$MarginLayoutParams;->topMargin:I
+
+    if-eq v2, v1, :cond_2
+
+    iput v1, v0, Landroid/view/ViewGroup$MarginLayoutParams;->topMargin:I
+
+    iget-object p0, p0, Lcom/android/systemui/statusbar/StatusBarMobileView;->mMobileInOut:Landroid/widget/ImageView;
+
+    invoke-virtual {p0, v0}, Landroid/widget/ImageView;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
+
+    :cond_2
+    return-void
+.end method
+
 .method private updateMobileIconPadding()V
     .locals 5
 
@@ -989,7 +1055,21 @@
 
     move-result v3
 
+    if-nez v3, :cond_5
+
+    invoke-static {}, Lcom/oneplus/util/OpUtils;->isUST()Z
+
+    move-result v3
+
     if-eqz v3, :cond_1
+
+    iget-object v3, p0, Lcom/android/systemui/statusbar/StatusBarMobileView;->mState:Lcom/android/systemui/statusbar/phone/StatusBarSignalPolicy$MobileIconState;
+
+    iget v3, v3, Lcom/android/systemui/statusbar/phone/StatusBarSignalPolicy$MobileIconState;->typeId:I
+
+    sget v4, Lcom/android/systemui/R$drawable;->stat_sys_data_fully_connected_5g:I
+
+    if-ne v3, v4, :cond_1
 
     goto :goto_1
 
@@ -1348,6 +1428,8 @@
     iput-object p1, p0, Lcom/android/systemui/statusbar/StatusBarMobileView;->mState:Lcom/android/systemui/statusbar/phone/StatusBarSignalPolicy$MobileIconState;
 
     invoke-direct {p0}, Lcom/android/systemui/statusbar/StatusBarMobileView;->updateMobileIconPadding()V
+
+    invoke-direct {p0}, Lcom/android/systemui/statusbar/StatusBarMobileView;->updateInOutIndicatorPadding()V
 
     return v0
 .end method

@@ -159,7 +159,7 @@
 .method private static readDeviceConfigBooleanOrDefaultIfEmpty(Ljava/lang/String;Z)Z
     .locals 1
 
-    const-string v0, "systemui"
+    const-string/jumbo v0, "systemui"
 
     invoke-static {v0, p0}, Landroid/provider/DeviceConfig;->getProperty(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
@@ -214,7 +214,7 @@
 
     invoke-direct {v1, p0}, Lcom/android/systemui/statusbar/policy/-$$Lambda$SmartReplyConstants$4opg-Q5IrqXO7Mn9_Fp2x2nMZNY;-><init>(Lcom/android/systemui/statusbar/policy/SmartReplyConstants;)V
 
-    const-string p0, "systemui"
+    const-string/jumbo p0, "systemui"
 
     invoke-static {p0, v0, v1}, Landroid/provider/DeviceConfig;->addOnPropertiesChangedListener(Ljava/lang/String;Ljava/util/concurrent/Executor;Landroid/provider/DeviceConfig$OnPropertiesChangedListener;)V
 
@@ -247,7 +247,7 @@
 
     iput-boolean v0, p0, Lcom/android/systemui/statusbar/policy/SmartReplyConstants;->mRequiresTargetingP:Z
 
-    const-string v0, "systemui"
+    const-string/jumbo v0, "systemui"
 
     const-string v1, "ssin_max_squeeze_remeasure_attempts"
 
@@ -279,7 +279,7 @@
 
     iput-boolean v0, p0, Lcom/android/systemui/statusbar/policy/SmartReplyConstants;->mShowInHeadsUp:Z
 
-    const-string v0, "systemui"
+    const-string/jumbo v0, "systemui"
 
     const-string v1, "ssin_min_num_system_generated_replies"
 
@@ -291,7 +291,7 @@
 
     iput v0, p0, Lcom/android/systemui/statusbar/policy/SmartReplyConstants;->mMinNumSystemGeneratedReplies:I
 
-    const-string v0, "systemui"
+    const-string/jumbo v0, "systemui"
 
     const-string v1, "ssin_max_num_actions"
 
@@ -303,7 +303,7 @@
 
     iput v0, p0, Lcom/android/systemui/statusbar/policy/SmartReplyConstants;->mMaxNumActions:I
 
-    const-string v0, "systemui"
+    const-string/jumbo v0, "systemui"
 
     const-string v1, "ssin_onclick_init_delay"
 
@@ -422,7 +422,7 @@
     .annotation build Lcom/android/internal/annotations/VisibleForTesting;
     .end annotation
 
-    const-string v0, "systemui"
+    const-string/jumbo v0, "systemui"
 
     invoke-virtual {v0, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 

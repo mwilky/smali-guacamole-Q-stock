@@ -630,6 +630,36 @@
     return-void
 .end method
 
+.method public updateAnimationDelayTime(Z)V
+    .locals 2
+
+    if-eqz p1, :cond_0
+
+    iget-wide v0, p0, Lcom/oneplus/systemui/biometrics/OpFingerprintAnimationCtrl;->mAnimPostDelayTime:J
+
+    goto :goto_0
+
+    :cond_0
+    iget-wide v0, p0, Lcom/oneplus/systemui/biometrics/OpFingerprintAnimationCtrl;->mAnimPostDelayTimeOnAod:J
+
+    :goto_0
+    iget-object p1, p0, Lcom/oneplus/systemui/biometrics/OpFingerprintAnimationCtrl;->mDownAnimationHelper:Lcom/oneplus/systemui/biometrics/OpFrameAnimationHelper;
+
+    if-eqz p1, :cond_1
+
+    invoke-virtual {p1, v0, v1}, Lcom/oneplus/systemui/biometrics/OpFrameAnimationHelper;->updateAnimPostDelayTime(J)V
+
+    :cond_1
+    iget-object p0, p0, Lcom/oneplus/systemui/biometrics/OpFingerprintAnimationCtrl;->mUpAnimationHelper:Lcom/oneplus/systemui/biometrics/OpFrameAnimationHelper;
+
+    if-eqz p0, :cond_2
+
+    invoke-virtual {p0, v0, v1}, Lcom/oneplus/systemui/biometrics/OpFrameAnimationHelper;->updateAnimPostDelayTime(J)V
+
+    :cond_2
+    return-void
+.end method
+
 .method public updateAnimationRes(Z)V
     .locals 9
 

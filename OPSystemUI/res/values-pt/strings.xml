@@ -324,7 +324,7 @@
     <string name="battery_saver_notification_title">Economia de bateria ativada</string>
     <string name="battery_saver_start_action">Ativar a Economia de bateria</string>
     <string name="battery_usage_extanded">Segundo a sua utilização, a Poupança de bateria poderá prolongar a utilização em cerca de %s</string>
-    <string name="battery_usage_remaining">Segundo a sua utilização, deverá durar cerca de %s. Reduz o desempenho e os dados em segundo plano.</string>
+    <string name="battery_usage_remaining_time">faltam %s</string>
     <string name="biometric_dialog_confirm">Confirmar</string>
     <string name="biometric_dialog_empty_space_description">Região vazia. Toque nela para cancelar a autenticação</string>
     <string name="biometric_dialog_face_icon_description_authenticated">Rosto autenticado</string>
@@ -1030,7 +1030,7 @@ Você também está conectado a uma VPN, que pode monitorar sua atividade de red
     <string name="music_controls_no_title">Sem título</string>
     <string name="nav_bar">Barra de navegação</string>
     <string name="nav_bar_default">(padrão)</string>
-    <string name="nav_bar_guide_positive">PERCEBI</string>
+    <string name="nav_bar_guide_positive">ENTENDI</string>
     <string name="nav_bar_guide_title">Deslize para cima a partir de baixo para mostrar a barra de navegação. Para parar de ocultar a barra de navegação, toque aqui.</string>
     <string name="nav_bar_layout">Layout</string>
     <string name="no_application">Nada</string>
