@@ -102,7 +102,7 @@
     :goto_0
     iget-object v4, p0, Lcom/android/server/power/wtn;->this$0:Lcom/android/server/power/OnePlusStandbyAnalyzer;
 
-    iget-object v4, v4, Lcom/android/server/power/OnePlusStandbyAnalyzer;->wI:Ljava/util/List;
+    iget-object v4, v4, Lcom/android/server/power/OnePlusStandbyAnalyzer;->MJ:Ljava/util/List;
 
     invoke-interface {v4}, Ljava/util/List;->size()I
 
@@ -112,7 +112,7 @@
 
     iget-object v4, p0, Lcom/android/server/power/wtn;->this$0:Lcom/android/server/power/OnePlusStandbyAnalyzer;
 
-    iget-object v4, v4, Lcom/android/server/power/OnePlusStandbyAnalyzer;->wI:Ljava/util/List;
+    iget-object v4, v4, Lcom/android/server/power/OnePlusStandbyAnalyzer;->MJ:Ljava/util/List;
 
     invoke-interface {v4, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -126,7 +126,7 @@
 
     iget-object v4, p0, Lcom/android/server/power/wtn;->this$0:Lcom/android/server/power/OnePlusStandbyAnalyzer;
 
-    iget-object v4, v4, Lcom/android/server/power/OnePlusStandbyAnalyzer;->wI:Ljava/util/List;
+    iget-object v4, v4, Lcom/android/server/power/OnePlusStandbyAnalyzer;->MJ:Ljava/util/List;
 
     invoke-interface {v4, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -150,7 +150,7 @@
     goto :goto_0
 
     :cond_1
-    sget-object p1, Lcom/android/server/power/kth;->lG:[I
+    sget-object p1, Lcom/android/server/power/kth;->BH:[I
 
     invoke-virtual {v0}, Ljava/lang/Enum;->ordinal()I
 
@@ -171,7 +171,7 @@
     :cond_2
     iget-object p0, p0, Lcom/android/server/power/wtn;->this$0:Lcom/android/server/power/OnePlusStandbyAnalyzer;
 
-    sget-object p1, Lcom/android/server/power/OnePlusStandbyAnalyzer$QXDM_REASON;->dla:Lcom/android/server/power/OnePlusStandbyAnalyzer$QXDM_REASON;
+    sget-object p1, Lcom/android/server/power/OnePlusStandbyAnalyzer$QXDM_REASON;->sna:Lcom/android/server/power/OnePlusStandbyAnalyzer$QXDM_REASON;
 
     invoke-virtual {p0, v3, v0, p1, v2}, Lcom/android/server/power/OnePlusStandbyAnalyzer;->zta(ZLcom/android/server/power/OnePlusStandbyAnalyzer$TELEPHONY_TYPE;Lcom/android/server/power/OnePlusStandbyAnalyzer$QXDM_REASON;Z)V
 

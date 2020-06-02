@@ -4,11 +4,11 @@
 
 
 # static fields
+.field private static final DCa:Ljava/util/logging/Logger;
+
 .field private static final ONE:Ljava/math/BigInteger;
 
-.field private static final Yoa:Ljava/math/BigInteger;
-
-.field private static final pAa:Ljava/util/logging/Logger;
+.field private static final lra:Ljava/math/BigInteger;
 
 
 # direct methods
@@ -25,7 +25,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lorg/bouncycastle/crypto/ssp/ssp;->pAa:Ljava/util/logging/Logger;
+    sput-object v0, Lorg/bouncycastle/crypto/ssp/ssp;->DCa:Ljava/util/logging/Logger;
 
     const-wide/16 v0, 0x1
 
@@ -41,7 +41,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lorg/bouncycastle/crypto/ssp/ssp;->Yoa:Ljava/math/BigInteger;
+    sput-object v0, Lorg/bouncycastle/crypto/ssp/ssp;->lra:Ljava/math/BigInteger;
 
     return-void
 .end method
@@ -57,7 +57,7 @@
 .method static you(IILjava/security/SecureRandom;)[Ljava/math/BigInteger;
     .locals 10
 
-    sget-object v0, Lorg/bouncycastle/crypto/ssp/ssp;->pAa:Ljava/util/logging/Logger;
+    sget-object v0, Lorg/bouncycastle/crypto/ssp/ssp;->DCa:Ljava/util/logging/Logger;
 
     const-string v1, "Generating safe primes. This may take a long time."
 
@@ -133,7 +133,7 @@
 
     sub-long/2addr p0, v0
 
-    sget-object p2, Lorg/bouncycastle/crypto/ssp/ssp;->pAa:Ljava/util/logging/Logger;
+    sget-object p2, Lorg/bouncycastle/crypto/ssp/ssp;->DCa:Ljava/util/logging/Logger;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -173,20 +173,20 @@
 .method static zta(Ljava/math/BigInteger;Ljava/math/BigInteger;Ljava/security/SecureRandom;)Ljava/math/BigInteger;
     .locals 2
 
-    sget-object p1, Lorg/bouncycastle/crypto/ssp/ssp;->Yoa:Ljava/math/BigInteger;
+    sget-object p1, Lorg/bouncycastle/crypto/ssp/ssp;->lra:Ljava/math/BigInteger;
 
     invoke-virtual {p0, p1}, Ljava/math/BigInteger;->subtract(Ljava/math/BigInteger;)Ljava/math/BigInteger;
 
     move-result-object p1
 
     :cond_0
-    sget-object v0, Lorg/bouncycastle/crypto/ssp/ssp;->Yoa:Ljava/math/BigInteger;
+    sget-object v0, Lorg/bouncycastle/crypto/ssp/ssp;->lra:Ljava/math/BigInteger;
 
     invoke-static {v0, p1, p2}, Lorg/bouncycastle/util/you;->you(Ljava/math/BigInteger;Ljava/math/BigInteger;Ljava/security/SecureRandom;)Ljava/math/BigInteger;
 
     move-result-object v0
 
-    sget-object v1, Lorg/bouncycastle/crypto/ssp/ssp;->Yoa:Ljava/math/BigInteger;
+    sget-object v1, Lorg/bouncycastle/crypto/ssp/ssp;->lra:Ljava/math/BigInteger;
 
     invoke-virtual {v0, v1, p0}, Ljava/math/BigInteger;->modPow(Ljava/math/BigInteger;Ljava/math/BigInteger;)Ljava/math/BigInteger;
 

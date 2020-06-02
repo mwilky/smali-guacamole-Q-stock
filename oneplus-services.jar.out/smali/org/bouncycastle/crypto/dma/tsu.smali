@@ -17,7 +17,7 @@
 
 
 # static fields
-.field private static vBa:Ljava/util/Map;
+.field private static JDa:Ljava/util/Map;
 
 
 # direct methods
@@ -28,9 +28,9 @@
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    sput-object v0, Lorg/bouncycastle/crypto/dma/tsu;->vBa:Ljava/util/Map;
+    sput-object v0, Lorg/bouncycastle/crypto/dma/tsu;->JDa:Ljava/util/Map;
 
-    sget-object v0, Lorg/bouncycastle/crypto/dma/tsu;->vBa:Ljava/util/Map;
+    sget-object v0, Lorg/bouncycastle/crypto/dma/tsu;->JDa:Ljava/util/Map;
 
     sget-object v1, Lorg/bouncycastle/asn1/dma/gwm;->rsaEncryption:Lorg/bouncycastle/asn1/bvj;
 
@@ -42,7 +42,7 @@
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    sget-object v0, Lorg/bouncycastle/crypto/dma/tsu;->vBa:Ljava/util/Map;
+    sget-object v0, Lorg/bouncycastle/crypto/dma/tsu;->JDa:Ljava/util/Map;
 
     sget-object v1, Lorg/bouncycastle/asn1/dma/gwm;->id_RSASSA_PSS:Lorg/bouncycastle/asn1/bvj;
 
@@ -52,9 +52,9 @@
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    sget-object v0, Lorg/bouncycastle/crypto/dma/tsu;->vBa:Ljava/util/Map;
+    sget-object v0, Lorg/bouncycastle/crypto/dma/tsu;->JDa:Ljava/util/Map;
 
-    sget-object v1, Lorg/bouncycastle/asn1/x509/t;->YOa:Lorg/bouncycastle/asn1/bvj;
+    sget-object v1, Lorg/bouncycastle/asn1/x509/t;->lRa:Lorg/bouncycastle/asn1/bvj;
 
     new-instance v2, Lorg/bouncycastle/crypto/dma/tsu$rtg;
 
@@ -62,7 +62,7 @@
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    sget-object v0, Lorg/bouncycastle/crypto/dma/tsu;->vBa:Ljava/util/Map;
+    sget-object v0, Lorg/bouncycastle/crypto/dma/tsu;->JDa:Ljava/util/Map;
 
     sget-object v1, Lorg/bouncycastle/asn1/ibl/ivd;->dhpublicnumber:Lorg/bouncycastle/asn1/bvj;
 
@@ -72,7 +72,7 @@
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    sget-object v0, Lorg/bouncycastle/crypto/dma/tsu;->vBa:Ljava/util/Map;
+    sget-object v0, Lorg/bouncycastle/crypto/dma/tsu;->JDa:Ljava/util/Map;
 
     sget-object v1, Lorg/bouncycastle/asn1/dma/gwm;->dhKeyAgreement:Lorg/bouncycastle/asn1/bvj;
 
@@ -82,7 +82,7 @@
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    sget-object v0, Lorg/bouncycastle/crypto/dma/tsu;->vBa:Ljava/util/Map;
+    sget-object v0, Lorg/bouncycastle/crypto/dma/tsu;->JDa:Ljava/util/Map;
 
     sget-object v1, Lorg/bouncycastle/asn1/ibl/ivd;->id_dsa:Lorg/bouncycastle/asn1/bvj;
 
@@ -92,9 +92,9 @@
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    sget-object v0, Lorg/bouncycastle/crypto/dma/tsu;->vBa:Ljava/util/Map;
+    sget-object v0, Lorg/bouncycastle/crypto/dma/tsu;->JDa:Ljava/util/Map;
 
-    sget-object v1, Lorg/bouncycastle/asn1/gck/zta;->UNa:Lorg/bouncycastle/asn1/bvj;
+    sget-object v1, Lorg/bouncycastle/asn1/gck/zta;->hQa:Lorg/bouncycastle/asn1/bvj;
 
     new-instance v2, Lorg/bouncycastle/crypto/dma/tsu$sis;
 
@@ -102,7 +102,7 @@
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    sget-object v0, Lorg/bouncycastle/crypto/dma/tsu;->vBa:Ljava/util/Map;
+    sget-object v0, Lorg/bouncycastle/crypto/dma/tsu;->JDa:Ljava/util/Map;
 
     sget-object v1, Lorg/bouncycastle/asn1/ibl/ivd;->id_ecPublicKey:Lorg/bouncycastle/asn1/bvj;
 
@@ -202,7 +202,7 @@
 
     move-result-object v0
 
-    sget-object v1, Lorg/bouncycastle/crypto/dma/tsu;->vBa:Ljava/util/Map;
+    sget-object v1, Lorg/bouncycastle/crypto/dma/tsu;->JDa:Ljava/util/Map;
 
     invoke-virtual {v0}, Lorg/bouncycastle/asn1/x509/zta;->getAlgorithm()Lorg/bouncycastle/asn1/bvj;
 
@@ -251,7 +251,7 @@
 .method private static zta(Lorg/bouncycastle/asn1/x509/c;Ljava/lang/Object;I)[B
     .locals 0
 
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/x509/c;->mh()Lorg/bouncycastle/asn1/n;
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/x509/c;->vh()Lorg/bouncycastle/asn1/n;
 
     move-result-object p0
 

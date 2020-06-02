@@ -41,7 +41,7 @@
 
     iget-object p0, p0, Lorg/bouncycastle/asn1/bud;->parser:Lorg/bouncycastle/asn1/hmo;
 
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/hmo;->Ti()Lorg/bouncycastle/asn1/cno;
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/hmo;->bj()Lorg/bouncycastle/asn1/cno;
 
     move-result-object p0
 

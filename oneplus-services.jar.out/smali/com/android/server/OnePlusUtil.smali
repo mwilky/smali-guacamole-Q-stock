@@ -127,7 +127,7 @@
 .method public dynamicallyConfigWMSLogTag(Ljava/io/PrintWriter;[Ljava/lang/String;I)V
     .locals 0
 
-    invoke-static {p1, p2, p3}, Lcom/android/server/wm/ivd;->you(Ljava/io/PrintWriter;[Ljava/lang/String;I)V
+    invoke-static {p1, p2, p3}, Lcom/android/server/wm/a;->you(Ljava/io/PrintWriter;[Ljava/lang/String;I)V
 
     return-void
 .end method

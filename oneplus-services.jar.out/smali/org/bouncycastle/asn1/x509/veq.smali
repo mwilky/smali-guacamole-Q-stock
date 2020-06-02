@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field private permitted:[Lorg/bouncycastle/asn1/x509/oxb;
+.field private Eva:[Lorg/bouncycastle/asn1/x509/oxb;
 
-.field private pta:[Lorg/bouncycastle/asn1/x509/oxb;
+.field private permitted:[Lorg/bouncycastle/asn1/x509/oxb;
 
 
 # direct methods
@@ -15,7 +15,7 @@
 
     invoke-direct {p0}, Lorg/bouncycastle/asn1/oif;-><init>()V
 
-    invoke-virtual {p1}, Lorg/bouncycastle/asn1/obl;->Jg()Ljava/util/Enumeration;
+    invoke-virtual {p1}, Lorg/bouncycastle/asn1/obl;->Sg()Ljava/util/Enumeration;
 
     move-result-object p1
 
@@ -54,7 +54,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lorg/bouncycastle/asn1/x509/veq;->pta:[Lorg/bouncycastle/asn1/x509/oxb;
+    iput-object v0, p0, Lorg/bouncycastle/asn1/x509/veq;->Eva:[Lorg/bouncycastle/asn1/x509/oxb;
 
     goto :goto_0
 
@@ -115,7 +115,7 @@
 
     move-result-object p1
 
-    iput-object p1, p0, Lorg/bouncycastle/asn1/x509/veq;->pta:[Lorg/bouncycastle/asn1/x509/oxb;
+    iput-object p1, p0, Lorg/bouncycastle/asn1/x509/veq;->Eva:[Lorg/bouncycastle/asn1/x509/oxb;
 
     return-void
 .end method
@@ -209,30 +209,6 @@
 
 
 # virtual methods
-.method public ki()[Lorg/bouncycastle/asn1/x509/oxb;
-    .locals 0
-
-    iget-object p0, p0, Lorg/bouncycastle/asn1/x509/veq;->pta:[Lorg/bouncycastle/asn1/x509/oxb;
-
-    invoke-static {p0}, Lorg/bouncycastle/asn1/x509/veq;->you([Lorg/bouncycastle/asn1/x509/oxb;)[Lorg/bouncycastle/asn1/x509/oxb;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public li()[Lorg/bouncycastle/asn1/x509/oxb;
-    .locals 0
-
-    iget-object p0, p0, Lorg/bouncycastle/asn1/x509/veq;->permitted:[Lorg/bouncycastle/asn1/x509/oxb;
-
-    invoke-static {p0}, Lorg/bouncycastle/asn1/x509/veq;->you([Lorg/bouncycastle/asn1/x509/oxb;)[Lorg/bouncycastle/asn1/x509/oxb;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
 .method public toASN1Primitive()Lorg/bouncycastle/asn1/vdb;
     .locals 5
 
@@ -257,7 +233,7 @@
     invoke-virtual {v0, v3}, Lorg/bouncycastle/asn1/cno;->you(Lorg/bouncycastle/asn1/ssp;)V
 
     :cond_0
-    iget-object p0, p0, Lorg/bouncycastle/asn1/x509/veq;->pta:[Lorg/bouncycastle/asn1/x509/oxb;
+    iget-object p0, p0, Lorg/bouncycastle/asn1/x509/veq;->Eva:[Lorg/bouncycastle/asn1/x509/oxb;
 
     if-eqz p0, :cond_1
 
@@ -277,6 +253,30 @@
     new-instance p0, Lorg/bouncycastle/asn1/G;
 
     invoke-direct {p0, v0}, Lorg/bouncycastle/asn1/G;-><init>(Lorg/bouncycastle/asn1/cno;)V
+
+    return-object p0
+.end method
+
+.method public ui()[Lorg/bouncycastle/asn1/x509/oxb;
+    .locals 0
+
+    iget-object p0, p0, Lorg/bouncycastle/asn1/x509/veq;->Eva:[Lorg/bouncycastle/asn1/x509/oxb;
+
+    invoke-static {p0}, Lorg/bouncycastle/asn1/x509/veq;->you([Lorg/bouncycastle/asn1/x509/oxb;)[Lorg/bouncycastle/asn1/x509/oxb;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public vi()[Lorg/bouncycastle/asn1/x509/oxb;
+    .locals 0
+
+    iget-object p0, p0, Lorg/bouncycastle/asn1/x509/veq;->permitted:[Lorg/bouncycastle/asn1/x509/oxb;
+
+    invoke-static {p0}, Lorg/bouncycastle/asn1/x509/veq;->you([Lorg/bouncycastle/asn1/x509/oxb;)[Lorg/bouncycastle/asn1/x509/oxb;
+
+    move-result-object p0
 
     return-object p0
 .end method

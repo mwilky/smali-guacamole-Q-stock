@@ -37,7 +37,7 @@
 
 
 # static fields
-.field private static final ICa:Ljava/util/Map;
+.field private static final WEa:Ljava/util/Map;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Map<",
@@ -57,9 +57,9 @@
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    sput-object v0, Lorg/bouncycastle/jcajce/you/tsu/zta;->ICa:Ljava/util/Map;
+    sput-object v0, Lorg/bouncycastle/jcajce/you/tsu/zta;->WEa:Ljava/util/Map;
 
-    sget-object v0, Lorg/bouncycastle/jcajce/you/tsu/zta;->ICa:Ljava/util/Map;
+    sget-object v0, Lorg/bouncycastle/jcajce/you/tsu/zta;->WEa:Ljava/util/Map;
 
     const-string v1, "SupportedKeyClasses"
 
@@ -67,7 +67,7 @@
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    sget-object v0, Lorg/bouncycastle/jcajce/you/tsu/zta;->ICa:Ljava/util/Map;
+    sget-object v0, Lorg/bouncycastle/jcajce/you/tsu/zta;->WEa:Ljava/util/Map;
 
     const-string v1, "SupportedKeyFormats"
 
@@ -89,7 +89,7 @@
 .method static synthetic access$000()Ljava/util/Map;
     .locals 1
 
-    sget-object v0, Lorg/bouncycastle/jcajce/you/tsu/zta;->ICa:Ljava/util/Map;
+    sget-object v0, Lorg/bouncycastle/jcajce/you/tsu/zta;->WEa:Ljava/util/Map;
 
     return-object v0
 .end method

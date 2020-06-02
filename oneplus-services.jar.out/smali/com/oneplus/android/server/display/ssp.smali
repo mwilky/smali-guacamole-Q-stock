@@ -157,7 +157,7 @@
 
     move-result-object p0
 
-    invoke-virtual {p0, p1}, Lcom/oneplus/android/server/display/dma;->I(I)V
+    invoke-virtual {p0, p1}, Lcom/oneplus/android/server/display/dma;->L(I)V
 
     goto :goto_2
 

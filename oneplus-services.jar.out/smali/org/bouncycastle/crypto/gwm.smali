@@ -131,9 +131,6 @@
 
 
 # virtual methods
-.method public abstract ga(I)Lorg/bouncycastle/crypto/kth;
-.end method
-
 .method public abstract generateDerivedParameters(I)Lorg/bouncycastle/crypto/kth;
 .end method
 
@@ -159,6 +156,9 @@
     iget-object p0, p0, Lorg/bouncycastle/crypto/gwm;->salt:[B
 
     return-object p0
+.end method
+
+.method public abstract ja(I)Lorg/bouncycastle/crypto/kth;
 .end method
 
 .method public abstract ugm(II)Lorg/bouncycastle/crypto/kth;

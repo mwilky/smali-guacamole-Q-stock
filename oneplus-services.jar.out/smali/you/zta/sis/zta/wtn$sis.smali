@@ -91,16 +91,473 @@
 
 
 # virtual methods
+.method public Hk()Lyou/zta/sis/zta/wtn;
+    .locals 18
+
+    move-object/from16 v0, p0
+
+    invoke-virtual/range {p0 .. p0}, Lyou/zta/sis/zta/wtn;->Bk()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_0
+
+    return-object v0
+
+    :cond_0
+    invoke-virtual/range {p0 .. p0}, Lyou/zta/sis/zta/wtn;->getCurve()Lyou/zta/sis/zta/rtg;
+
+    move-result-object v3
+
+    iget-object v1, v0, Lyou/zta/sis/zta/wtn;->x:Lyou/zta/sis/zta/cno;
+
+    invoke-virtual {v1}, Lyou/zta/sis/zta/cno;->isZero()Z
+
+    move-result v2
+
+    if-eqz v2, :cond_1
+
+    invoke-virtual {v3}, Lyou/zta/sis/zta/rtg;->getInfinity()Lyou/zta/sis/zta/wtn;
+
+    move-result-object v0
+
+    return-object v0
+
+    :cond_1
+    invoke-virtual {v3}, Lyou/zta/sis/zta/rtg;->Zj()I
+
+    move-result v2
+
+    if-eqz v2, :cond_10
+
+    const/4 v4, 0x0
+
+    const/4 v5, 0x1
+
+    if-eq v2, v5, :cond_d
+
+    const/4 v6, 0x6
+
+    if-ne v2, v6, :cond_c
+
+    iget-object v2, v0, Lyou/zta/sis/zta/wtn;->y:Lyou/zta/sis/zta/cno;
+
+    iget-object v6, v0, Lyou/zta/sis/zta/wtn;->WGa:[Lyou/zta/sis/zta/cno;
+
+    aget-object v6, v6, v4
+
+    invoke-virtual {v6}, Lyou/zta/sis/zta/cno;->ik()Z
+
+    move-result v7
+
+    if-eqz v7, :cond_2
+
+    move-object v8, v2
+
+    goto :goto_0
+
+    :cond_2
+    invoke-virtual {v2, v6}, Lyou/zta/sis/zta/cno;->rtg(Lyou/zta/sis/zta/cno;)Lyou/zta/sis/zta/cno;
+
+    move-result-object v8
+
+    :goto_0
+    if-eqz v7, :cond_3
+
+    move-object v9, v6
+
+    goto :goto_1
+
+    :cond_3
+    invoke-virtual {v6}, Lyou/zta/sis/zta/cno;->square()Lyou/zta/sis/zta/cno;
+
+    move-result-object v9
+
+    :goto_1
+    invoke-virtual {v3}, Lyou/zta/sis/zta/rtg;->getA()Lyou/zta/sis/zta/cno;
+
+    move-result-object v10
+
+    if-eqz v7, :cond_4
+
+    move-object v11, v10
+
+    goto :goto_2
+
+    :cond_4
+    invoke-virtual {v10, v9}, Lyou/zta/sis/zta/cno;->rtg(Lyou/zta/sis/zta/cno;)Lyou/zta/sis/zta/cno;
+
+    move-result-object v11
+
+    :goto_2
+    invoke-virtual {v2}, Lyou/zta/sis/zta/cno;->square()Lyou/zta/sis/zta/cno;
+
+    move-result-object v12
+
+    invoke-virtual {v12, v8}, Lyou/zta/sis/zta/cno;->sis(Lyou/zta/sis/zta/cno;)Lyou/zta/sis/zta/cno;
+
+    move-result-object v12
+
+    invoke-virtual {v12, v11}, Lyou/zta/sis/zta/cno;->sis(Lyou/zta/sis/zta/cno;)Lyou/zta/sis/zta/cno;
+
+    move-result-object v12
+
+    invoke-virtual {v12}, Lyou/zta/sis/zta/cno;->isZero()Z
+
+    move-result v13
+
+    if-eqz v13, :cond_5
+
+    new-instance v1, Lyou/zta/sis/zta/wtn$sis;
+
+    invoke-virtual {v3}, Lyou/zta/sis/zta/rtg;->getB()Lyou/zta/sis/zta/cno;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Lyou/zta/sis/zta/cno;->jk()Lyou/zta/sis/zta/cno;
+
+    move-result-object v2
+
+    iget-boolean v0, v0, Lyou/zta/sis/zta/wtn;->withCompression:Z
+
+    invoke-direct {v1, v3, v12, v2, v0}, Lyou/zta/sis/zta/wtn$sis;-><init>(Lyou/zta/sis/zta/rtg;Lyou/zta/sis/zta/cno;Lyou/zta/sis/zta/cno;Z)V
+
+    return-object v1
+
+    :cond_5
+    invoke-virtual {v12}, Lyou/zta/sis/zta/cno;->square()Lyou/zta/sis/zta/cno;
+
+    move-result-object v13
+
+    if-eqz v7, :cond_6
+
+    move-object v14, v12
+
+    goto :goto_3
+
+    :cond_6
+    invoke-virtual {v12, v9}, Lyou/zta/sis/zta/cno;->rtg(Lyou/zta/sis/zta/cno;)Lyou/zta/sis/zta/cno;
+
+    move-result-object v14
+
+    :goto_3
+    invoke-virtual {v3}, Lyou/zta/sis/zta/rtg;->getB()Lyou/zta/sis/zta/cno;
+
+    move-result-object v15
+
+    invoke-virtual {v15}, Lyou/zta/sis/zta/cno;->bitLength()I
+
+    move-result v4
+
+    invoke-virtual {v3}, Lyou/zta/sis/zta/rtg;->getFieldSize()I
+
+    move-result v16
+
+    move-object/from16 v17, v3
+
+    shr-int/lit8 v3, v16, 0x1
+
+    if-ge v4, v3, :cond_9
+
+    invoke-virtual {v2, v1}, Lyou/zta/sis/zta/cno;->sis(Lyou/zta/sis/zta/cno;)Lyou/zta/sis/zta/cno;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Lyou/zta/sis/zta/cno;->square()Lyou/zta/sis/zta/cno;
+
+    move-result-object v1
+
+    invoke-virtual {v15}, Lyou/zta/sis/zta/cno;->ik()Z
+
+    move-result v2
+
+    if-eqz v2, :cond_7
+
+    invoke-virtual {v11, v9}, Lyou/zta/sis/zta/cno;->sis(Lyou/zta/sis/zta/cno;)Lyou/zta/sis/zta/cno;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Lyou/zta/sis/zta/cno;->square()Lyou/zta/sis/zta/cno;
+
+    move-result-object v2
+
+    goto :goto_4
+
+    :cond_7
+    invoke-virtual {v9}, Lyou/zta/sis/zta/cno;->square()Lyou/zta/sis/zta/cno;
+
+    move-result-object v2
+
+    invoke-virtual {v11, v15, v2}, Lyou/zta/sis/zta/cno;->you(Lyou/zta/sis/zta/cno;Lyou/zta/sis/zta/cno;)Lyou/zta/sis/zta/cno;
+
+    move-result-object v2
+
+    :goto_4
+    invoke-virtual {v1, v12}, Lyou/zta/sis/zta/cno;->sis(Lyou/zta/sis/zta/cno;)Lyou/zta/sis/zta/cno;
+
+    move-result-object v3
+
+    invoke-virtual {v3, v9}, Lyou/zta/sis/zta/cno;->sis(Lyou/zta/sis/zta/cno;)Lyou/zta/sis/zta/cno;
+
+    move-result-object v3
+
+    invoke-virtual {v3, v1}, Lyou/zta/sis/zta/cno;->rtg(Lyou/zta/sis/zta/cno;)Lyou/zta/sis/zta/cno;
+
+    move-result-object v1
+
+    invoke-virtual {v1, v2}, Lyou/zta/sis/zta/cno;->sis(Lyou/zta/sis/zta/cno;)Lyou/zta/sis/zta/cno;
+
+    move-result-object v1
+
+    invoke-virtual {v1, v13}, Lyou/zta/sis/zta/cno;->sis(Lyou/zta/sis/zta/cno;)Lyou/zta/sis/zta/cno;
+
+    move-result-object v1
+
+    invoke-virtual {v10}, Lyou/zta/sis/zta/cno;->isZero()Z
+
+    move-result v2
+
+    if-eqz v2, :cond_8
+
+    goto :goto_6
+
+    :cond_8
+    invoke-virtual {v10}, Lyou/zta/sis/zta/cno;->ik()Z
+
+    move-result v2
+
+    if-nez v2, :cond_b
+
+    invoke-virtual {v10}, Lyou/zta/sis/zta/cno;->gk()Lyou/zta/sis/zta/cno;
+
+    move-result-object v2
+
+    invoke-virtual {v2, v14}, Lyou/zta/sis/zta/cno;->rtg(Lyou/zta/sis/zta/cno;)Lyou/zta/sis/zta/cno;
+
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, Lyou/zta/sis/zta/cno;->sis(Lyou/zta/sis/zta/cno;)Lyou/zta/sis/zta/cno;
+
+    move-result-object v1
+
+    goto :goto_7
+
+    :cond_9
+    if-eqz v7, :cond_a
+
+    goto :goto_5
+
+    :cond_a
+    invoke-virtual {v1, v6}, Lyou/zta/sis/zta/cno;->rtg(Lyou/zta/sis/zta/cno;)Lyou/zta/sis/zta/cno;
+
+    move-result-object v1
+
+    :goto_5
+    invoke-virtual {v1, v12, v8}, Lyou/zta/sis/zta/cno;->you(Lyou/zta/sis/zta/cno;Lyou/zta/sis/zta/cno;)Lyou/zta/sis/zta/cno;
+
+    move-result-object v1
+
+    invoke-virtual {v1, v13}, Lyou/zta/sis/zta/cno;->sis(Lyou/zta/sis/zta/cno;)Lyou/zta/sis/zta/cno;
+
+    move-result-object v1
+
+    :goto_6
+    invoke-virtual {v1, v14}, Lyou/zta/sis/zta/cno;->sis(Lyou/zta/sis/zta/cno;)Lyou/zta/sis/zta/cno;
+
+    move-result-object v1
+
+    :cond_b
+    :goto_7
+    new-instance v8, Lyou/zta/sis/zta/wtn$sis;
+
+    new-array v6, v5, [Lyou/zta/sis/zta/cno;
+
+    const/4 v2, 0x0
+
+    aput-object v14, v6, v2
+
+    iget-boolean v7, v0, Lyou/zta/sis/zta/wtn;->withCompression:Z
+
+    move-object v2, v8
+
+    move-object/from16 v3, v17
+
+    move-object v4, v13
+
+    move-object v5, v1
+
+    invoke-direct/range {v2 .. v7}, Lyou/zta/sis/zta/wtn$sis;-><init>(Lyou/zta/sis/zta/rtg;Lyou/zta/sis/zta/cno;Lyou/zta/sis/zta/cno;[Lyou/zta/sis/zta/cno;Z)V
+
+    return-object v8
+
+    :cond_c
+    new-instance v0, Ljava/lang/IllegalStateException;
+
+    const-string v1, "unsupported coordinate system"
+
+    invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    throw v0
+
+    :cond_d
+    move-object/from16 v17, v3
+
+    iget-object v2, v0, Lyou/zta/sis/zta/wtn;->y:Lyou/zta/sis/zta/cno;
+
+    iget-object v3, v0, Lyou/zta/sis/zta/wtn;->WGa:[Lyou/zta/sis/zta/cno;
+
+    const/4 v4, 0x0
+
+    aget-object v3, v3, v4
+
+    invoke-virtual {v3}, Lyou/zta/sis/zta/cno;->ik()Z
+
+    move-result v4
+
+    if-eqz v4, :cond_e
+
+    move-object v6, v1
+
+    goto :goto_8
+
+    :cond_e
+    invoke-virtual {v1, v3}, Lyou/zta/sis/zta/cno;->rtg(Lyou/zta/sis/zta/cno;)Lyou/zta/sis/zta/cno;
+
+    move-result-object v6
+
+    :goto_8
+    if-eqz v4, :cond_f
+
+    goto :goto_9
+
+    :cond_f
+    invoke-virtual {v2, v3}, Lyou/zta/sis/zta/cno;->rtg(Lyou/zta/sis/zta/cno;)Lyou/zta/sis/zta/cno;
+
+    move-result-object v2
+
+    :goto_9
+    invoke-virtual {v1}, Lyou/zta/sis/zta/cno;->square()Lyou/zta/sis/zta/cno;
+
+    move-result-object v1
+
+    invoke-virtual {v1, v2}, Lyou/zta/sis/zta/cno;->sis(Lyou/zta/sis/zta/cno;)Lyou/zta/sis/zta/cno;
+
+    move-result-object v2
+
+    invoke-virtual {v6}, Lyou/zta/sis/zta/cno;->square()Lyou/zta/sis/zta/cno;
+
+    move-result-object v3
+
+    invoke-virtual {v2, v6}, Lyou/zta/sis/zta/cno;->sis(Lyou/zta/sis/zta/cno;)Lyou/zta/sis/zta/cno;
+
+    move-result-object v4
+
+    invoke-virtual/range {v17 .. v17}, Lyou/zta/sis/zta/rtg;->getA()Lyou/zta/sis/zta/cno;
+
+    move-result-object v7
+
+    invoke-virtual {v4, v2, v3, v7}, Lyou/zta/sis/zta/cno;->you(Lyou/zta/sis/zta/cno;Lyou/zta/sis/zta/cno;Lyou/zta/sis/zta/cno;)Lyou/zta/sis/zta/cno;
+
+    move-result-object v2
+
+    invoke-virtual {v6, v2}, Lyou/zta/sis/zta/cno;->rtg(Lyou/zta/sis/zta/cno;)Lyou/zta/sis/zta/cno;
+
+    move-result-object v7
+
+    invoke-virtual {v1}, Lyou/zta/sis/zta/cno;->square()Lyou/zta/sis/zta/cno;
+
+    move-result-object v1
+
+    invoke-virtual {v1, v6, v2, v4}, Lyou/zta/sis/zta/cno;->you(Lyou/zta/sis/zta/cno;Lyou/zta/sis/zta/cno;Lyou/zta/sis/zta/cno;)Lyou/zta/sis/zta/cno;
+
+    move-result-object v1
+
+    invoke-virtual {v6, v3}, Lyou/zta/sis/zta/cno;->rtg(Lyou/zta/sis/zta/cno;)Lyou/zta/sis/zta/cno;
+
+    move-result-object v2
+
+    new-instance v8, Lyou/zta/sis/zta/wtn$sis;
+
+    new-array v6, v5, [Lyou/zta/sis/zta/cno;
+
+    const/4 v3, 0x0
+
+    aput-object v2, v6, v3
+
+    iget-boolean v0, v0, Lyou/zta/sis/zta/wtn;->withCompression:Z
+
+    move-object v2, v8
+
+    move-object/from16 v3, v17
+
+    move-object v4, v7
+
+    move-object v5, v1
+
+    move v7, v0
+
+    invoke-direct/range {v2 .. v7}, Lyou/zta/sis/zta/wtn$sis;-><init>(Lyou/zta/sis/zta/rtg;Lyou/zta/sis/zta/cno;Lyou/zta/sis/zta/cno;[Lyou/zta/sis/zta/cno;Z)V
+
+    return-object v8
+
+    :cond_10
+    move-object/from16 v17, v3
+
+    iget-object v2, v0, Lyou/zta/sis/zta/wtn;->y:Lyou/zta/sis/zta/cno;
+
+    invoke-virtual {v2, v1}, Lyou/zta/sis/zta/cno;->tsu(Lyou/zta/sis/zta/cno;)Lyou/zta/sis/zta/cno;
+
+    move-result-object v2
+
+    invoke-virtual {v2, v1}, Lyou/zta/sis/zta/cno;->sis(Lyou/zta/sis/zta/cno;)Lyou/zta/sis/zta/cno;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Lyou/zta/sis/zta/cno;->square()Lyou/zta/sis/zta/cno;
+
+    move-result-object v3
+
+    invoke-virtual {v3, v2}, Lyou/zta/sis/zta/cno;->sis(Lyou/zta/sis/zta/cno;)Lyou/zta/sis/zta/cno;
+
+    move-result-object v3
+
+    invoke-virtual/range {v17 .. v17}, Lyou/zta/sis/zta/rtg;->getA()Lyou/zta/sis/zta/cno;
+
+    move-result-object v4
+
+    invoke-virtual {v3, v4}, Lyou/zta/sis/zta/cno;->sis(Lyou/zta/sis/zta/cno;)Lyou/zta/sis/zta/cno;
+
+    move-result-object v3
+
+    invoke-virtual {v2}, Lyou/zta/sis/zta/cno;->gk()Lyou/zta/sis/zta/cno;
+
+    move-result-object v2
+
+    invoke-virtual {v1, v3, v2}, Lyou/zta/sis/zta/cno;->you(Lyou/zta/sis/zta/cno;Lyou/zta/sis/zta/cno;)Lyou/zta/sis/zta/cno;
+
+    move-result-object v1
+
+    new-instance v2, Lyou/zta/sis/zta/wtn$sis;
+
+    iget-boolean v0, v0, Lyou/zta/sis/zta/wtn;->withCompression:Z
+
+    move-object/from16 v4, v17
+
+    invoke-direct {v2, v4, v3, v1, v0}, Lyou/zta/sis/zta/wtn$sis;-><init>(Lyou/zta/sis/zta/rtg;Lyou/zta/sis/zta/cno;Lyou/zta/sis/zta/cno;Z)V
+
+    return-object v2
+.end method
+
 .method protected detach()Lyou/zta/sis/zta/wtn;
     .locals 4
 
     new-instance v0, Lyou/zta/sis/zta/wtn$sis;
 
-    invoke-virtual {p0}, Lyou/zta/sis/zta/wtn;->gk()Lyou/zta/sis/zta/cno;
+    invoke-virtual {p0}, Lyou/zta/sis/zta/wtn;->pk()Lyou/zta/sis/zta/cno;
 
     move-result-object v1
 
-    invoke-virtual {p0}, Lyou/zta/sis/zta/wtn;->hk()Lyou/zta/sis/zta/cno;
+    invoke-virtual {p0}, Lyou/zta/sis/zta/wtn;->qk()Lyou/zta/sis/zta/cno;
 
     move-result-object p0
 
@@ -113,67 +570,6 @@
     return-object v0
 .end method
 
-.method protected ik()Z
-    .locals 4
-
-    invoke-virtual {p0}, Lyou/zta/sis/zta/wtn;->lk()Lyou/zta/sis/zta/cno;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Lyou/zta/sis/zta/cno;->isZero()Z
-
-    move-result v1
-
-    const/4 v2, 0x0
-
-    if-eqz v1, :cond_0
-
-    return v2
-
-    :cond_0
-    invoke-virtual {p0}, Lyou/zta/sis/zta/wtn;->mk()Lyou/zta/sis/zta/cno;
-
-    move-result-object v1
-
-    invoke-virtual {p0}, Lyou/zta/sis/zta/wtn;->jk()I
-
-    move-result p0
-
-    const/4 v3, 0x5
-
-    if-eq p0, v3, :cond_1
-
-    const/4 v3, 0x6
-
-    if-eq p0, v3, :cond_1
-
-    invoke-virtual {v1, v0}, Lyou/zta/sis/zta/cno;->tsu(Lyou/zta/sis/zta/cno;)Lyou/zta/sis/zta/cno;
-
-    move-result-object p0
-
-    invoke-virtual {p0}, Lyou/zta/sis/zta/cno;->bk()Z
-
-    move-result p0
-
-    return p0
-
-    :cond_1
-    invoke-virtual {v1}, Lyou/zta/sis/zta/cno;->bk()Z
-
-    move-result p0
-
-    invoke-virtual {v0}, Lyou/zta/sis/zta/cno;->bk()Z
-
-    move-result v0
-
-    if-eq p0, v0, :cond_2
-
-    const/4 v2, 0x1
-
-    :cond_2
-    return v2
-.end method
-
 .method public kth(Lyou/zta/sis/zta/wtn;)Lyou/zta/sis/zta/wtn;
     .locals 17
 
@@ -181,7 +577,7 @@
 
     move-object/from16 v1, p1
 
-    invoke-virtual/range {p0 .. p0}, Lyou/zta/sis/zta/wtn;->sk()Z
+    invoke-virtual/range {p0 .. p0}, Lyou/zta/sis/zta/wtn;->Bk()Z
 
     move-result v2
 
@@ -190,7 +586,7 @@
     return-object v1
 
     :cond_0
-    invoke-virtual/range {p1 .. p1}, Lyou/zta/sis/zta/wtn;->sk()Z
+    invoke-virtual/range {p1 .. p1}, Lyou/zta/sis/zta/wtn;->Bk()Z
 
     move-result v2
 
@@ -203,7 +599,7 @@
 
     move-result-object v4
 
-    invoke-virtual {v4}, Lyou/zta/sis/zta/rtg;->Qj()I
+    invoke-virtual {v4}, Lyou/zta/sis/zta/rtg;->Zj()I
 
     move-result v2
 
@@ -251,17 +647,17 @@
     :cond_3
     iget-object v2, v0, Lyou/zta/sis/zta/wtn;->y:Lyou/zta/sis/zta/cno;
 
-    iget-object v8, v0, Lyou/zta/sis/zta/wtn;->IEa:[Lyou/zta/sis/zta/cno;
+    iget-object v8, v0, Lyou/zta/sis/zta/wtn;->WGa:[Lyou/zta/sis/zta/cno;
 
     aget-object v8, v8, v7
 
     iget-object v9, v1, Lyou/zta/sis/zta/wtn;->y:Lyou/zta/sis/zta/cno;
 
-    iget-object v1, v1, Lyou/zta/sis/zta/wtn;->IEa:[Lyou/zta/sis/zta/cno;
+    iget-object v1, v1, Lyou/zta/sis/zta/wtn;->WGa:[Lyou/zta/sis/zta/cno;
 
     aget-object v1, v1, v7
 
-    invoke-virtual {v8}, Lyou/zta/sis/zta/cno;->_j()Z
+    invoke-virtual {v8}, Lyou/zta/sis/zta/cno;->ik()Z
 
     move-result v10
 
@@ -283,7 +679,7 @@
     move-object v12, v9
 
     :goto_0
-    invoke-virtual {v1}, Lyou/zta/sis/zta/cno;->_j()Z
+    invoke-virtual {v1}, Lyou/zta/sis/zta/cno;->ik()Z
 
     move-result v13
 
@@ -323,7 +719,7 @@
 
     if-eqz v1, :cond_6
 
-    invoke-virtual/range {p0 .. p0}, Lyou/zta/sis/zta/wtn$sis;->yk()Lyou/zta/sis/zta/wtn;
+    invoke-virtual/range {p0 .. p0}, Lyou/zta/sis/zta/wtn$sis;->Hk()Lyou/zta/sis/zta/wtn;
 
     move-result-object v0
 
@@ -347,11 +743,11 @@
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lyou/zta/sis/zta/wtn;->ok()Lyou/zta/sis/zta/cno;
+    invoke-virtual {v1}, Lyou/zta/sis/zta/wtn;->xk()Lyou/zta/sis/zta/cno;
 
     move-result-object v2
 
-    invoke-virtual {v1}, Lyou/zta/sis/zta/wtn;->pk()Lyou/zta/sis/zta/cno;
+    invoke-virtual {v1}, Lyou/zta/sis/zta/wtn;->yk()Lyou/zta/sis/zta/cno;
 
     move-result-object v1
 
@@ -395,7 +791,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v2}, Lyou/zta/sis/zta/cno;->ak()Lyou/zta/sis/zta/cno;
+    invoke-virtual {v2}, Lyou/zta/sis/zta/cno;->jk()Lyou/zta/sis/zta/cno;
 
     move-result-object v2
 
@@ -473,7 +869,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v2}, Lyou/zta/sis/zta/cno;->ak()Lyou/zta/sis/zta/cno;
+    invoke-virtual {v2}, Lyou/zta/sis/zta/cno;->jk()Lyou/zta/sis/zta/cno;
 
     move-result-object v2
 
@@ -554,17 +950,17 @@
     :cond_e
     iget-object v2, v0, Lyou/zta/sis/zta/wtn;->y:Lyou/zta/sis/zta/cno;
 
-    iget-object v8, v0, Lyou/zta/sis/zta/wtn;->IEa:[Lyou/zta/sis/zta/cno;
+    iget-object v8, v0, Lyou/zta/sis/zta/wtn;->WGa:[Lyou/zta/sis/zta/cno;
 
     aget-object v8, v8, v7
 
     iget-object v9, v1, Lyou/zta/sis/zta/wtn;->y:Lyou/zta/sis/zta/cno;
 
-    iget-object v1, v1, Lyou/zta/sis/zta/wtn;->IEa:[Lyou/zta/sis/zta/cno;
+    iget-object v1, v1, Lyou/zta/sis/zta/wtn;->WGa:[Lyou/zta/sis/zta/cno;
 
     aget-object v1, v1, v7
 
-    invoke-virtual {v1}, Lyou/zta/sis/zta/cno;->_j()Z
+    invoke-virtual {v1}, Lyou/zta/sis/zta/cno;->ik()Z
 
     move-result v10
 
@@ -620,7 +1016,7 @@
 
     if-eqz v1, :cond_11
 
-    invoke-virtual/range {p0 .. p0}, Lyou/zta/sis/zta/wtn$sis;->yk()Lyou/zta/sis/zta/wtn;
+    invoke-virtual/range {p0 .. p0}, Lyou/zta/sis/zta/wtn$sis;->Hk()Lyou/zta/sis/zta/wtn;
 
     move-result-object v0
 
@@ -745,7 +1141,7 @@
 
     if-eqz v1, :cond_16
 
-    invoke-virtual/range {p0 .. p0}, Lyou/zta/sis/zta/wtn$sis;->yk()Lyou/zta/sis/zta/wtn;
+    invoke-virtual/range {p0 .. p0}, Lyou/zta/sis/zta/wtn$sis;->Hk()Lyou/zta/sis/zta/wtn;
 
     move-result-object v0
 
@@ -811,7 +1207,7 @@
 .method public negate()Lyou/zta/sis/zta/wtn;
     .locals 8
 
-    invoke-virtual {p0}, Lyou/zta/sis/zta/wtn;->sk()Z
+    invoke-virtual {p0}, Lyou/zta/sis/zta/wtn;->Bk()Z
 
     move-result v0
 
@@ -831,7 +1227,7 @@
     return-object p0
 
     :cond_1
-    invoke-virtual {p0}, Lyou/zta/sis/zta/wtn;->jk()I
+    invoke-virtual {p0}, Lyou/zta/sis/zta/wtn;->sk()I
 
     move-result v0
 
@@ -853,7 +1249,7 @@
 
     iget-object v0, p0, Lyou/zta/sis/zta/wtn;->y:Lyou/zta/sis/zta/cno;
 
-    iget-object v4, p0, Lyou/zta/sis/zta/wtn;->IEa:[Lyou/zta/sis/zta/cno;
+    iget-object v4, p0, Lyou/zta/sis/zta/wtn;->WGa:[Lyou/zta/sis/zta/cno;
 
     aget-object v4, v4, v2
 
@@ -901,7 +1297,7 @@
 
     iget-object v2, p0, Lyou/zta/sis/zta/wtn;->curve:Lyou/zta/sis/zta/rtg;
 
-    invoke-virtual {v0}, Lyou/zta/sis/zta/cno;->Yj()Lyou/zta/sis/zta/cno;
+    invoke-virtual {v0}, Lyou/zta/sis/zta/cno;->gk()Lyou/zta/sis/zta/cno;
 
     move-result-object v0
 
@@ -914,7 +1310,7 @@
     :cond_4
     iget-object v0, p0, Lyou/zta/sis/zta/wtn;->y:Lyou/zta/sis/zta/cno;
 
-    iget-object v4, p0, Lyou/zta/sis/zta/wtn;->IEa:[Lyou/zta/sis/zta/cno;
+    iget-object v4, p0, Lyou/zta/sis/zta/wtn;->WGa:[Lyou/zta/sis/zta/cno;
 
     aget-object v4, v4, v2
 
@@ -964,83 +1360,71 @@
     return-object v1
 .end method
 
-.method public pk()Lyou/zta/sis/zta/cno;
-    .locals 5
+.method protected rk()Z
+    .locals 4
 
-    invoke-virtual {p0}, Lyou/zta/sis/zta/wtn;->jk()I
+    invoke-virtual {p0}, Lyou/zta/sis/zta/wtn;->uk()Lyou/zta/sis/zta/cno;
 
-    move-result v0
+    move-result-object v0
 
-    const/4 v1, 0x5
+    invoke-virtual {v0}, Lyou/zta/sis/zta/cno;->isZero()Z
 
-    const/4 v2, 0x6
+    move-result v1
 
-    if-eq v0, v1, :cond_0
+    const/4 v2, 0x0
 
-    if-eq v0, v2, :cond_0
+    if-eqz v1, :cond_0
 
-    iget-object p0, p0, Lyou/zta/sis/zta/wtn;->y:Lyou/zta/sis/zta/cno;
-
-    return-object p0
+    return v2
 
     :cond_0
-    iget-object v1, p0, Lyou/zta/sis/zta/wtn;->x:Lyou/zta/sis/zta/cno;
-
-    iget-object v3, p0, Lyou/zta/sis/zta/wtn;->y:Lyou/zta/sis/zta/cno;
-
-    invoke-virtual {p0}, Lyou/zta/sis/zta/wtn;->sk()Z
-
-    move-result v4
-
-    if-nez v4, :cond_3
-
-    invoke-virtual {v1}, Lyou/zta/sis/zta/cno;->isZero()Z
-
-    move-result v4
-
-    if-eqz v4, :cond_1
-
-    goto :goto_0
-
-    :cond_1
-    invoke-virtual {v3, v1}, Lyou/zta/sis/zta/cno;->sis(Lyou/zta/sis/zta/cno;)Lyou/zta/sis/zta/cno;
-
-    move-result-object v3
-
-    invoke-virtual {v3, v1}, Lyou/zta/sis/zta/cno;->rtg(Lyou/zta/sis/zta/cno;)Lyou/zta/sis/zta/cno;
+    invoke-virtual {p0}, Lyou/zta/sis/zta/wtn;->vk()Lyou/zta/sis/zta/cno;
 
     move-result-object v1
 
-    if-ne v2, v0, :cond_2
+    invoke-virtual {p0}, Lyou/zta/sis/zta/wtn;->sk()I
 
-    iget-object p0, p0, Lyou/zta/sis/zta/wtn;->IEa:[Lyou/zta/sis/zta/cno;
+    move-result p0
 
-    const/4 v0, 0x0
+    const/4 v3, 0x5
 
-    aget-object p0, p0, v0
+    if-eq p0, v3, :cond_1
 
-    invoke-virtual {p0}, Lyou/zta/sis/zta/cno;->_j()Z
+    const/4 v3, 0x6
+
+    if-eq p0, v3, :cond_1
+
+    invoke-virtual {v1, v0}, Lyou/zta/sis/zta/cno;->tsu(Lyou/zta/sis/zta/cno;)Lyou/zta/sis/zta/cno;
+
+    move-result-object p0
+
+    invoke-virtual {p0}, Lyou/zta/sis/zta/cno;->kk()Z
+
+    move-result p0
+
+    return p0
+
+    :cond_1
+    invoke-virtual {v1}, Lyou/zta/sis/zta/cno;->kk()Z
+
+    move-result p0
+
+    invoke-virtual {v0}, Lyou/zta/sis/zta/cno;->kk()Z
 
     move-result v0
 
-    if-nez v0, :cond_2
+    if-eq p0, v0, :cond_2
 
-    invoke-virtual {v1, p0}, Lyou/zta/sis/zta/cno;->tsu(Lyou/zta/sis/zta/cno;)Lyou/zta/sis/zta/cno;
-
-    move-result-object v1
+    const/4 v2, 0x1
 
     :cond_2
-    return-object v1
-
-    :cond_3
-    :goto_0
-    return-object v3
+    return v2
 .end method
 
 .method public wtn(Lyou/zta/sis/zta/wtn;)Lyou/zta/sis/zta/wtn;
     .locals 9
 
-    invoke-virtual {p0}, Lyou/zta/sis/zta/wtn;->sk()Z
+    invoke-virtual {p0}, Lyou/zta/sis/zta/wtn;->Bk()Z
 
     move-result v0
 
@@ -1049,13 +1433,13 @@
     return-object p1
 
     :cond_0
-    invoke-virtual {p1}, Lyou/zta/sis/zta/wtn;->sk()Z
+    invoke-virtual {p1}, Lyou/zta/sis/zta/wtn;->Bk()Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
-    invoke-virtual {p0}, Lyou/zta/sis/zta/wtn$sis;->yk()Lyou/zta/sis/zta/wtn;
+    invoke-virtual {p0}, Lyou/zta/sis/zta/wtn$sis;->Hk()Lyou/zta/sis/zta/wtn;
 
     move-result-object p0
 
@@ -1077,7 +1461,7 @@
     return-object p1
 
     :cond_2
-    invoke-virtual {v1}, Lyou/zta/sis/zta/rtg;->Qj()I
+    invoke-virtual {v1}, Lyou/zta/sis/zta/rtg;->Zj()I
 
     move-result v2
 
@@ -1087,7 +1471,7 @@
 
     :cond_3
     :goto_0
-    invoke-virtual {p0}, Lyou/zta/sis/zta/wtn$sis;->yk()Lyou/zta/sis/zta/wtn;
+    invoke-virtual {p0}, Lyou/zta/sis/zta/wtn$sis;->Hk()Lyou/zta/sis/zta/wtn;
 
     move-result-object p0
 
@@ -1100,7 +1484,7 @@
     :cond_4
     iget-object v2, p1, Lyou/zta/sis/zta/wtn;->x:Lyou/zta/sis/zta/cno;
 
-    iget-object v3, p1, Lyou/zta/sis/zta/wtn;->IEa:[Lyou/zta/sis/zta/cno;
+    iget-object v3, p1, Lyou/zta/sis/zta/wtn;->WGa:[Lyou/zta/sis/zta/cno;
 
     const/4 v4, 0x0
 
@@ -1112,7 +1496,7 @@
 
     if-nez v5, :cond_3
 
-    invoke-virtual {v3}, Lyou/zta/sis/zta/cno;->_j()Z
+    invoke-virtual {v3}, Lyou/zta/sis/zta/cno;->ik()Z
 
     move-result v3
 
@@ -1123,7 +1507,7 @@
     :cond_5
     iget-object v3, p0, Lyou/zta/sis/zta/wtn;->y:Lyou/zta/sis/zta/cno;
 
-    iget-object v5, p0, Lyou/zta/sis/zta/wtn;->IEa:[Lyou/zta/sis/zta/cno;
+    iget-object v5, p0, Lyou/zta/sis/zta/wtn;->WGa:[Lyou/zta/sis/zta/cno;
 
     aget-object v5, v5, v4
 
@@ -1161,7 +1545,7 @@
 
     move-result-object v3
 
-    invoke-virtual {v6}, Lyou/zta/sis/zta/cno;->Yj()Lyou/zta/sis/zta/cno;
+    invoke-virtual {v6}, Lyou/zta/sis/zta/cno;->gk()Lyou/zta/sis/zta/cno;
 
     move-result-object v5
 
@@ -1209,7 +1593,7 @@
 
     if-eqz p0, :cond_6
 
-    invoke-virtual {p1}, Lyou/zta/sis/zta/wtn;->yk()Lyou/zta/sis/zta/wtn;
+    invoke-virtual {p1}, Lyou/zta/sis/zta/wtn;->Hk()Lyou/zta/sis/zta/wtn;
 
     move-result-object p0
 
@@ -1235,7 +1619,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v2}, Lyou/zta/sis/zta/cno;->ak()Lyou/zta/sis/zta/cno;
+    invoke-virtual {v2}, Lyou/zta/sis/zta/cno;->jk()Lyou/zta/sis/zta/cno;
 
     move-result-object v2
 
@@ -1295,213 +1679,46 @@
     return-object v6
 .end method
 
-.method public yk()Lyou/zta/sis/zta/wtn;
-    .locals 18
+.method public yk()Lyou/zta/sis/zta/cno;
+    .locals 5
 
-    move-object/from16 v0, p0
+    invoke-virtual {p0}, Lyou/zta/sis/zta/wtn;->sk()I
 
-    invoke-virtual/range {p0 .. p0}, Lyou/zta/sis/zta/wtn;->sk()Z
+    move-result v0
 
-    move-result v1
+    const/4 v1, 0x5
 
-    if-eqz v1, :cond_0
+    const/4 v2, 0x6
 
-    return-object v0
+    if-eq v0, v1, :cond_0
+
+    if-eq v0, v2, :cond_0
+
+    iget-object p0, p0, Lyou/zta/sis/zta/wtn;->y:Lyou/zta/sis/zta/cno;
+
+    return-object p0
 
     :cond_0
-    invoke-virtual/range {p0 .. p0}, Lyou/zta/sis/zta/wtn;->getCurve()Lyou/zta/sis/zta/rtg;
+    iget-object v1, p0, Lyou/zta/sis/zta/wtn;->x:Lyou/zta/sis/zta/cno;
 
-    move-result-object v3
+    iget-object v3, p0, Lyou/zta/sis/zta/wtn;->y:Lyou/zta/sis/zta/cno;
 
-    iget-object v1, v0, Lyou/zta/sis/zta/wtn;->x:Lyou/zta/sis/zta/cno;
-
-    invoke-virtual {v1}, Lyou/zta/sis/zta/cno;->isZero()Z
-
-    move-result v2
-
-    if-eqz v2, :cond_1
-
-    invoke-virtual {v3}, Lyou/zta/sis/zta/rtg;->getInfinity()Lyou/zta/sis/zta/wtn;
-
-    move-result-object v0
-
-    return-object v0
-
-    :cond_1
-    invoke-virtual {v3}, Lyou/zta/sis/zta/rtg;->Qj()I
-
-    move-result v2
-
-    if-eqz v2, :cond_10
-
-    const/4 v4, 0x0
-
-    const/4 v5, 0x1
-
-    if-eq v2, v5, :cond_d
-
-    const/4 v6, 0x6
-
-    if-ne v2, v6, :cond_c
-
-    iget-object v2, v0, Lyou/zta/sis/zta/wtn;->y:Lyou/zta/sis/zta/cno;
-
-    iget-object v6, v0, Lyou/zta/sis/zta/wtn;->IEa:[Lyou/zta/sis/zta/cno;
-
-    aget-object v6, v6, v4
-
-    invoke-virtual {v6}, Lyou/zta/sis/zta/cno;->_j()Z
-
-    move-result v7
-
-    if-eqz v7, :cond_2
-
-    move-object v8, v2
-
-    goto :goto_0
-
-    :cond_2
-    invoke-virtual {v2, v6}, Lyou/zta/sis/zta/cno;->rtg(Lyou/zta/sis/zta/cno;)Lyou/zta/sis/zta/cno;
-
-    move-result-object v8
-
-    :goto_0
-    if-eqz v7, :cond_3
-
-    move-object v9, v6
-
-    goto :goto_1
-
-    :cond_3
-    invoke-virtual {v6}, Lyou/zta/sis/zta/cno;->square()Lyou/zta/sis/zta/cno;
-
-    move-result-object v9
-
-    :goto_1
-    invoke-virtual {v3}, Lyou/zta/sis/zta/rtg;->getA()Lyou/zta/sis/zta/cno;
-
-    move-result-object v10
-
-    if-eqz v7, :cond_4
-
-    move-object v11, v10
-
-    goto :goto_2
-
-    :cond_4
-    invoke-virtual {v10, v9}, Lyou/zta/sis/zta/cno;->rtg(Lyou/zta/sis/zta/cno;)Lyou/zta/sis/zta/cno;
-
-    move-result-object v11
-
-    :goto_2
-    invoke-virtual {v2}, Lyou/zta/sis/zta/cno;->square()Lyou/zta/sis/zta/cno;
-
-    move-result-object v12
-
-    invoke-virtual {v12, v8}, Lyou/zta/sis/zta/cno;->sis(Lyou/zta/sis/zta/cno;)Lyou/zta/sis/zta/cno;
-
-    move-result-object v12
-
-    invoke-virtual {v12, v11}, Lyou/zta/sis/zta/cno;->sis(Lyou/zta/sis/zta/cno;)Lyou/zta/sis/zta/cno;
-
-    move-result-object v12
-
-    invoke-virtual {v12}, Lyou/zta/sis/zta/cno;->isZero()Z
-
-    move-result v13
-
-    if-eqz v13, :cond_5
-
-    new-instance v1, Lyou/zta/sis/zta/wtn$sis;
-
-    invoke-virtual {v3}, Lyou/zta/sis/zta/rtg;->getB()Lyou/zta/sis/zta/cno;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Lyou/zta/sis/zta/cno;->ak()Lyou/zta/sis/zta/cno;
-
-    move-result-object v2
-
-    iget-boolean v0, v0, Lyou/zta/sis/zta/wtn;->withCompression:Z
-
-    invoke-direct {v1, v3, v12, v2, v0}, Lyou/zta/sis/zta/wtn$sis;-><init>(Lyou/zta/sis/zta/rtg;Lyou/zta/sis/zta/cno;Lyou/zta/sis/zta/cno;Z)V
-
-    return-object v1
-
-    :cond_5
-    invoke-virtual {v12}, Lyou/zta/sis/zta/cno;->square()Lyou/zta/sis/zta/cno;
-
-    move-result-object v13
-
-    if-eqz v7, :cond_6
-
-    move-object v14, v12
-
-    goto :goto_3
-
-    :cond_6
-    invoke-virtual {v12, v9}, Lyou/zta/sis/zta/cno;->rtg(Lyou/zta/sis/zta/cno;)Lyou/zta/sis/zta/cno;
-
-    move-result-object v14
-
-    :goto_3
-    invoke-virtual {v3}, Lyou/zta/sis/zta/rtg;->getB()Lyou/zta/sis/zta/cno;
-
-    move-result-object v15
-
-    invoke-virtual {v15}, Lyou/zta/sis/zta/cno;->bitLength()I
+    invoke-virtual {p0}, Lyou/zta/sis/zta/wtn;->Bk()Z
 
     move-result v4
 
-    invoke-virtual {v3}, Lyou/zta/sis/zta/rtg;->getFieldSize()I
+    if-nez v4, :cond_3
 
-    move-result v16
+    invoke-virtual {v1}, Lyou/zta/sis/zta/cno;->isZero()Z
 
-    move-object/from16 v17, v3
+    move-result v4
 
-    shr-int/lit8 v3, v16, 0x1
+    if-eqz v4, :cond_1
 
-    if-ge v4, v3, :cond_9
+    goto :goto_0
 
-    invoke-virtual {v2, v1}, Lyou/zta/sis/zta/cno;->sis(Lyou/zta/sis/zta/cno;)Lyou/zta/sis/zta/cno;
-
-    move-result-object v1
-
-    invoke-virtual {v1}, Lyou/zta/sis/zta/cno;->square()Lyou/zta/sis/zta/cno;
-
-    move-result-object v1
-
-    invoke-virtual {v15}, Lyou/zta/sis/zta/cno;->_j()Z
-
-    move-result v2
-
-    if-eqz v2, :cond_7
-
-    invoke-virtual {v11, v9}, Lyou/zta/sis/zta/cno;->sis(Lyou/zta/sis/zta/cno;)Lyou/zta/sis/zta/cno;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Lyou/zta/sis/zta/cno;->square()Lyou/zta/sis/zta/cno;
-
-    move-result-object v2
-
-    goto :goto_4
-
-    :cond_7
-    invoke-virtual {v9}, Lyou/zta/sis/zta/cno;->square()Lyou/zta/sis/zta/cno;
-
-    move-result-object v2
-
-    invoke-virtual {v11, v15, v2}, Lyou/zta/sis/zta/cno;->you(Lyou/zta/sis/zta/cno;Lyou/zta/sis/zta/cno;)Lyou/zta/sis/zta/cno;
-
-    move-result-object v2
-
-    :goto_4
-    invoke-virtual {v1, v12}, Lyou/zta/sis/zta/cno;->sis(Lyou/zta/sis/zta/cno;)Lyou/zta/sis/zta/cno;
-
-    move-result-object v3
-
-    invoke-virtual {v3, v9}, Lyou/zta/sis/zta/cno;->sis(Lyou/zta/sis/zta/cno;)Lyou/zta/sis/zta/cno;
+    :cond_1
+    invoke-virtual {v3, v1}, Lyou/zta/sis/zta/cno;->sis(Lyou/zta/sis/zta/cno;)Lyou/zta/sis/zta/cno;
 
     move-result-object v3
 
@@ -1509,245 +1726,28 @@
 
     move-result-object v1
 
-    invoke-virtual {v1, v2}, Lyou/zta/sis/zta/cno;->sis(Lyou/zta/sis/zta/cno;)Lyou/zta/sis/zta/cno;
+    if-ne v2, v0, :cond_2
+
+    iget-object p0, p0, Lyou/zta/sis/zta/wtn;->WGa:[Lyou/zta/sis/zta/cno;
+
+    const/4 v0, 0x0
+
+    aget-object p0, p0, v0
+
+    invoke-virtual {p0}, Lyou/zta/sis/zta/cno;->ik()Z
+
+    move-result v0
+
+    if-nez v0, :cond_2
+
+    invoke-virtual {v1, p0}, Lyou/zta/sis/zta/cno;->tsu(Lyou/zta/sis/zta/cno;)Lyou/zta/sis/zta/cno;
 
     move-result-object v1
 
-    invoke-virtual {v1, v13}, Lyou/zta/sis/zta/cno;->sis(Lyou/zta/sis/zta/cno;)Lyou/zta/sis/zta/cno;
-
-    move-result-object v1
-
-    invoke-virtual {v10}, Lyou/zta/sis/zta/cno;->isZero()Z
-
-    move-result v2
-
-    if-eqz v2, :cond_8
-
-    goto :goto_6
-
-    :cond_8
-    invoke-virtual {v10}, Lyou/zta/sis/zta/cno;->_j()Z
-
-    move-result v2
-
-    if-nez v2, :cond_b
-
-    invoke-virtual {v10}, Lyou/zta/sis/zta/cno;->Yj()Lyou/zta/sis/zta/cno;
-
-    move-result-object v2
-
-    invoke-virtual {v2, v14}, Lyou/zta/sis/zta/cno;->rtg(Lyou/zta/sis/zta/cno;)Lyou/zta/sis/zta/cno;
-
-    move-result-object v2
-
-    invoke-virtual {v1, v2}, Lyou/zta/sis/zta/cno;->sis(Lyou/zta/sis/zta/cno;)Lyou/zta/sis/zta/cno;
-
-    move-result-object v1
-
-    goto :goto_7
-
-    :cond_9
-    if-eqz v7, :cond_a
-
-    goto :goto_5
-
-    :cond_a
-    invoke-virtual {v1, v6}, Lyou/zta/sis/zta/cno;->rtg(Lyou/zta/sis/zta/cno;)Lyou/zta/sis/zta/cno;
-
-    move-result-object v1
-
-    :goto_5
-    invoke-virtual {v1, v12, v8}, Lyou/zta/sis/zta/cno;->you(Lyou/zta/sis/zta/cno;Lyou/zta/sis/zta/cno;)Lyou/zta/sis/zta/cno;
-
-    move-result-object v1
-
-    invoke-virtual {v1, v13}, Lyou/zta/sis/zta/cno;->sis(Lyou/zta/sis/zta/cno;)Lyou/zta/sis/zta/cno;
-
-    move-result-object v1
-
-    :goto_6
-    invoke-virtual {v1, v14}, Lyou/zta/sis/zta/cno;->sis(Lyou/zta/sis/zta/cno;)Lyou/zta/sis/zta/cno;
-
-    move-result-object v1
-
-    :cond_b
-    :goto_7
-    new-instance v8, Lyou/zta/sis/zta/wtn$sis;
-
-    new-array v6, v5, [Lyou/zta/sis/zta/cno;
-
-    const/4 v2, 0x0
-
-    aput-object v14, v6, v2
-
-    iget-boolean v7, v0, Lyou/zta/sis/zta/wtn;->withCompression:Z
-
-    move-object v2, v8
-
-    move-object/from16 v3, v17
-
-    move-object v4, v13
-
-    move-object v5, v1
-
-    invoke-direct/range {v2 .. v7}, Lyou/zta/sis/zta/wtn$sis;-><init>(Lyou/zta/sis/zta/rtg;Lyou/zta/sis/zta/cno;Lyou/zta/sis/zta/cno;[Lyou/zta/sis/zta/cno;Z)V
-
-    return-object v8
-
-    :cond_c
-    new-instance v0, Ljava/lang/IllegalStateException;
-
-    const-string v1, "unsupported coordinate system"
-
-    invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_d
-    move-object/from16 v17, v3
-
-    iget-object v2, v0, Lyou/zta/sis/zta/wtn;->y:Lyou/zta/sis/zta/cno;
-
-    iget-object v3, v0, Lyou/zta/sis/zta/wtn;->IEa:[Lyou/zta/sis/zta/cno;
-
-    const/4 v4, 0x0
-
-    aget-object v3, v3, v4
-
-    invoke-virtual {v3}, Lyou/zta/sis/zta/cno;->_j()Z
-
-    move-result v4
-
-    if-eqz v4, :cond_e
-
-    move-object v6, v1
-
-    goto :goto_8
-
-    :cond_e
-    invoke-virtual {v1, v3}, Lyou/zta/sis/zta/cno;->rtg(Lyou/zta/sis/zta/cno;)Lyou/zta/sis/zta/cno;
-
-    move-result-object v6
-
-    :goto_8
-    if-eqz v4, :cond_f
-
-    goto :goto_9
-
-    :cond_f
-    invoke-virtual {v2, v3}, Lyou/zta/sis/zta/cno;->rtg(Lyou/zta/sis/zta/cno;)Lyou/zta/sis/zta/cno;
-
-    move-result-object v2
-
-    :goto_9
-    invoke-virtual {v1}, Lyou/zta/sis/zta/cno;->square()Lyou/zta/sis/zta/cno;
-
-    move-result-object v1
-
-    invoke-virtual {v1, v2}, Lyou/zta/sis/zta/cno;->sis(Lyou/zta/sis/zta/cno;)Lyou/zta/sis/zta/cno;
-
-    move-result-object v2
-
-    invoke-virtual {v6}, Lyou/zta/sis/zta/cno;->square()Lyou/zta/sis/zta/cno;
-
-    move-result-object v3
-
-    invoke-virtual {v2, v6}, Lyou/zta/sis/zta/cno;->sis(Lyou/zta/sis/zta/cno;)Lyou/zta/sis/zta/cno;
-
-    move-result-object v4
-
-    invoke-virtual/range {v17 .. v17}, Lyou/zta/sis/zta/rtg;->getA()Lyou/zta/sis/zta/cno;
-
-    move-result-object v7
-
-    invoke-virtual {v4, v2, v3, v7}, Lyou/zta/sis/zta/cno;->you(Lyou/zta/sis/zta/cno;Lyou/zta/sis/zta/cno;Lyou/zta/sis/zta/cno;)Lyou/zta/sis/zta/cno;
-
-    move-result-object v2
-
-    invoke-virtual {v6, v2}, Lyou/zta/sis/zta/cno;->rtg(Lyou/zta/sis/zta/cno;)Lyou/zta/sis/zta/cno;
-
-    move-result-object v7
-
-    invoke-virtual {v1}, Lyou/zta/sis/zta/cno;->square()Lyou/zta/sis/zta/cno;
-
-    move-result-object v1
-
-    invoke-virtual {v1, v6, v2, v4}, Lyou/zta/sis/zta/cno;->you(Lyou/zta/sis/zta/cno;Lyou/zta/sis/zta/cno;Lyou/zta/sis/zta/cno;)Lyou/zta/sis/zta/cno;
-
-    move-result-object v1
-
-    invoke-virtual {v6, v3}, Lyou/zta/sis/zta/cno;->rtg(Lyou/zta/sis/zta/cno;)Lyou/zta/sis/zta/cno;
-
-    move-result-object v2
-
-    new-instance v8, Lyou/zta/sis/zta/wtn$sis;
-
-    new-array v6, v5, [Lyou/zta/sis/zta/cno;
-
-    const/4 v3, 0x0
-
-    aput-object v2, v6, v3
-
-    iget-boolean v0, v0, Lyou/zta/sis/zta/wtn;->withCompression:Z
-
-    move-object v2, v8
-
-    move-object/from16 v3, v17
-
-    move-object v4, v7
-
-    move-object v5, v1
-
-    move v7, v0
-
-    invoke-direct/range {v2 .. v7}, Lyou/zta/sis/zta/wtn$sis;-><init>(Lyou/zta/sis/zta/rtg;Lyou/zta/sis/zta/cno;Lyou/zta/sis/zta/cno;[Lyou/zta/sis/zta/cno;Z)V
-
-    return-object v8
-
-    :cond_10
-    move-object/from16 v17, v3
-
-    iget-object v2, v0, Lyou/zta/sis/zta/wtn;->y:Lyou/zta/sis/zta/cno;
-
-    invoke-virtual {v2, v1}, Lyou/zta/sis/zta/cno;->tsu(Lyou/zta/sis/zta/cno;)Lyou/zta/sis/zta/cno;
-
-    move-result-object v2
-
-    invoke-virtual {v2, v1}, Lyou/zta/sis/zta/cno;->sis(Lyou/zta/sis/zta/cno;)Lyou/zta/sis/zta/cno;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Lyou/zta/sis/zta/cno;->square()Lyou/zta/sis/zta/cno;
-
-    move-result-object v3
-
-    invoke-virtual {v3, v2}, Lyou/zta/sis/zta/cno;->sis(Lyou/zta/sis/zta/cno;)Lyou/zta/sis/zta/cno;
-
-    move-result-object v3
-
-    invoke-virtual/range {v17 .. v17}, Lyou/zta/sis/zta/rtg;->getA()Lyou/zta/sis/zta/cno;
-
-    move-result-object v4
-
-    invoke-virtual {v3, v4}, Lyou/zta/sis/zta/cno;->sis(Lyou/zta/sis/zta/cno;)Lyou/zta/sis/zta/cno;
-
-    move-result-object v3
-
-    invoke-virtual {v2}, Lyou/zta/sis/zta/cno;->Yj()Lyou/zta/sis/zta/cno;
-
-    move-result-object v2
-
-    invoke-virtual {v1, v3, v2}, Lyou/zta/sis/zta/cno;->you(Lyou/zta/sis/zta/cno;Lyou/zta/sis/zta/cno;)Lyou/zta/sis/zta/cno;
-
-    move-result-object v1
-
-    new-instance v2, Lyou/zta/sis/zta/wtn$sis;
-
-    iget-boolean v0, v0, Lyou/zta/sis/zta/wtn;->withCompression:Z
-
-    move-object/from16 v4, v17
-
-    invoke-direct {v2, v4, v3, v1, v0}, Lyou/zta/sis/zta/wtn$sis;-><init>(Lyou/zta/sis/zta/rtg;Lyou/zta/sis/zta/cno;Lyou/zta/sis/zta/cno;Z)V
-
-    return-object v2
+    :cond_2
+    return-object v1
+
+    :cond_3
+    :goto_0
+    return-object v3
 .end method

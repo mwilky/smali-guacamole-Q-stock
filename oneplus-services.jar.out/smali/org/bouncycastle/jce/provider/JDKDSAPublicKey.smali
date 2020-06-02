@@ -87,7 +87,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     :try_start_0
-    invoke-virtual {p1}, Lorg/bouncycastle/asn1/x509/c;->oh()Lorg/bouncycastle/asn1/vdb;
+    invoke-virtual {p1}, Lorg/bouncycastle/asn1/x509/c;->xh()Lorg/bouncycastle/asn1/vdb;
 
     move-result-object v0
 

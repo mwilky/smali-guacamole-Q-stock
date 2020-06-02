@@ -23,7 +23,7 @@
 
     move-result-object v0
 
-    invoke-static {p1}, Lorg/bouncycastle/asn1/sis;->aa(I)I
+    invoke-static {p1}, Lorg/bouncycastle/asn1/sis;->da(I)I
 
     move-result p1
 
@@ -275,15 +275,7 @@
 
 
 # virtual methods
-.method isConstructed()Z
-    .locals 0
-
-    const/4 p0, 0x0
-
-    return p0
-.end method
-
-.method ug()I
+.method Dg()I
     .locals 1
 
     iget-object v0, p0, Lorg/bouncycastle/asn1/sis;->data:[B
@@ -292,7 +284,7 @@
 
     add-int/lit8 v0, v0, 0x1
 
-    invoke-static {v0}, Lorg/bouncycastle/asn1/ia;->ea(I)I
+    invoke-static {v0}, Lorg/bouncycastle/asn1/ia;->ha(I)I
 
     move-result v0
 
@@ -307,6 +299,14 @@
     add-int/lit8 v0, v0, 0x1
 
     return v0
+.end method
+
+.method isConstructed()Z
+    .locals 0
+
+    const/4 p0, 0x0
+
+    return p0
 .end method
 
 .method zta(Lorg/bouncycastle/asn1/ugm;)V
@@ -327,7 +327,7 @@
 
     new-array v1, v1, [B
 
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/sis;->yg()I
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/sis;->Hg()I
 
     move-result p0
 

@@ -45,7 +45,7 @@
     return-object p0
 .end method
 
-.method public g(Ljava/lang/String;)Lcom/android/server/am/oxb$zta$zta;
+.method public h(Ljava/lang/String;)Lcom/android/server/am/oxb$zta$zta;
     .locals 1
 
     iget-object v0, p0, Lcom/android/server/am/oxb$zta$zta;->mRecord:Lcom/android/server/am/oxb$zta;
@@ -55,7 +55,7 @@
     return-object p0
 .end method
 
-.method public h(Ljava/lang/String;)Lcom/android/server/am/oxb$zta$zta;
+.method public j(Ljava/lang/String;)Lcom/android/server/am/oxb$zta$zta;
     .locals 3
 
     iget-object v0, p0, Lcom/android/server/am/oxb$zta$zta;->mRecord:Lcom/android/server/am/oxb$zta;

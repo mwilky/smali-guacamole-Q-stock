@@ -18,9 +18,9 @@
 
 
 # instance fields
-.field final synthetic AP:Lcom/android/server/wm/ActivityRecord;
+.field final synthetic SQ:Lcom/android/server/wm/ActivityRecord;
 
-.field final synthetic BP:Z
+.field final synthetic TQ:Z
 
 .field final synthetic this$0:Lcom/android/server/wm/OPAppSwitchManagerService;
 
@@ -35,9 +35,9 @@
 
     iput-object p2, p0, Lcom/android/server/wm/tsu;->val$r:Lcom/android/server/wm/ActivityRecord;
 
-    iput-object p3, p0, Lcom/android/server/wm/tsu;->AP:Lcom/android/server/wm/ActivityRecord;
+    iput-object p3, p0, Lcom/android/server/wm/tsu;->SQ:Lcom/android/server/wm/ActivityRecord;
 
-    iput-boolean p4, p0, Lcom/android/server/wm/tsu;->BP:Z
+    iput-boolean p4, p0, Lcom/android/server/wm/tsu;->TQ:Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -54,9 +54,9 @@
 
     iget-object v1, p0, Lcom/android/server/wm/tsu;->val$r:Lcom/android/server/wm/ActivityRecord;
 
-    iget-object v2, p0, Lcom/android/server/wm/tsu;->AP:Lcom/android/server/wm/ActivityRecord;
+    iget-object v2, p0, Lcom/android/server/wm/tsu;->SQ:Lcom/android/server/wm/ActivityRecord;
 
-    iget-boolean p0, p0, Lcom/android/server/wm/tsu;->BP:Z
+    iget-boolean p0, p0, Lcom/android/server/wm/tsu;->TQ:Z
 
     if-nez p0, :cond_0
 
@@ -68,7 +68,7 @@
     const/4 p0, 0x0
 
     :goto_0
-    invoke-static {v0, v1, v2, p0}, Lcom/android/server/wm/OPAppSwitchManagerService;->access$600(Lcom/android/server/wm/OPAppSwitchManagerService;Lcom/android/server/wm/ActivityRecord;Lcom/android/server/wm/ActivityRecord;Z)V
+    invoke-static {v0, v1, v2, p0}, Lcom/android/server/wm/OPAppSwitchManagerService;->access$700(Lcom/android/server/wm/OPAppSwitchManagerService;Lcom/android/server/wm/ActivityRecord;Lcom/android/server/wm/ActivityRecord;Z)V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 

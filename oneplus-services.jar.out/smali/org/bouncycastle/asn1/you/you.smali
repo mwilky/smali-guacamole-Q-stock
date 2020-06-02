@@ -56,7 +56,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lorg/bouncycastle/asn1/you/zta;->Ng()Lorg/bouncycastle/asn1/bvj;
+    invoke-virtual {v1}, Lorg/bouncycastle/asn1/you/zta;->Wg()Lorg/bouncycastle/asn1/bvj;
 
     move-result-object v2
 
@@ -98,7 +98,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lorg/bouncycastle/asn1/you/zta;->Ng()Lorg/bouncycastle/asn1/bvj;
+    invoke-virtual {v1}, Lorg/bouncycastle/asn1/you/zta;->Wg()Lorg/bouncycastle/asn1/bvj;
 
     move-result-object v2
 
@@ -139,7 +139,7 @@
 
     iput-object v0, p0, Lorg/bouncycastle/asn1/you/you;->attributes:Ljava/util/Hashtable;
 
-    invoke-virtual {p1}, Lorg/bouncycastle/asn1/you/zta;->Ng()Lorg/bouncycastle/asn1/bvj;
+    invoke-virtual {p1}, Lorg/bouncycastle/asn1/you/zta;->Wg()Lorg/bouncycastle/asn1/bvj;
 
     move-result-object v0
 
@@ -230,7 +230,38 @@
 
 
 # virtual methods
-.method public Ui()Lorg/bouncycastle/asn1/cno;
+.method public bio(Lorg/bouncycastle/asn1/bvj;)Lorg/bouncycastle/asn1/you/zta;
+    .locals 0
+
+    iget-object p0, p0, Lorg/bouncycastle/asn1/you/you;->attributes:Ljava/util/Hashtable;
+
+    invoke-virtual {p0, p1}, Ljava/util/Hashtable;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p0
+
+    instance-of p1, p0, Ljava/util/Vector;
+
+    if-eqz p1, :cond_0
+
+    check-cast p0, Ljava/util/Vector;
+
+    const/4 p1, 0x0
+
+    invoke-virtual {p0, p1}, Ljava/util/Vector;->elementAt(I)Ljava/lang/Object;
+
+    move-result-object p0
+
+    check-cast p0, Lorg/bouncycastle/asn1/you/zta;
+
+    return-object p0
+
+    :cond_0
+    check-cast p0, Lorg/bouncycastle/asn1/you/zta;
+
+    return-object p0
+.end method
+
+.method public cj()Lorg/bouncycastle/asn1/cno;
     .locals 3
 
     new-instance v0, Lorg/bouncycastle/asn1/cno;
@@ -297,12 +328,12 @@
     return-object v0
 .end method
 
-.method public Vi()Lorg/bouncycastle/asn1/you/sis;
+.method public dj()Lorg/bouncycastle/asn1/you/sis;
     .locals 1
 
     new-instance v0, Lorg/bouncycastle/asn1/you/sis;
 
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/you/you;->Ui()Lorg/bouncycastle/asn1/cno;
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/you/you;->cj()Lorg/bouncycastle/asn1/cno;
 
     move-result-object p0
 
@@ -311,7 +342,7 @@
     return-object v0
 .end method
 
-.method public Wi()Ljava/util/Hashtable;
+.method public ej()Ljava/util/Hashtable;
     .locals 1
 
     iget-object v0, p0, Lorg/bouncycastle/asn1/you/you;->attributes:Ljava/util/Hashtable;
@@ -319,37 +350,6 @@
     invoke-direct {p0, v0}, Lorg/bouncycastle/asn1/you/you;->zta(Ljava/util/Hashtable;)Ljava/util/Hashtable;
 
     move-result-object p0
-
-    return-object p0
-.end method
-
-.method public bio(Lorg/bouncycastle/asn1/bvj;)Lorg/bouncycastle/asn1/you/zta;
-    .locals 0
-
-    iget-object p0, p0, Lorg/bouncycastle/asn1/you/you;->attributes:Ljava/util/Hashtable;
-
-    invoke-virtual {p0, p1}, Ljava/util/Hashtable;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object p0
-
-    instance-of p1, p0, Ljava/util/Vector;
-
-    if-eqz p1, :cond_0
-
-    check-cast p0, Ljava/util/Vector;
-
-    const/4 p1, 0x0
-
-    invoke-virtual {p0, p1}, Ljava/util/Vector;->elementAt(I)Ljava/lang/Object;
-
-    move-result-object p0
-
-    check-cast p0, Lorg/bouncycastle/asn1/you/zta;
-
-    return-object p0
-
-    :cond_0
-    check-cast p0, Lorg/bouncycastle/asn1/you/zta;
 
     return-object p0
 .end method

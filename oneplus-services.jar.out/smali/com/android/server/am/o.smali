@@ -13,7 +13,7 @@
 
 
 # instance fields
-.field private Mw:Lcom/android/server/am/zgw;
+.field private sx:Lcom/android/server/am/zgw;
 
 
 # direct methods
@@ -34,12 +34,30 @@
 
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/android/server/am/o;->Mw:Lcom/android/server/am/zgw;
+    iput-object v0, p0, Lcom/android/server/am/o;->sx:Lcom/android/server/am/zgw;
 
     return-void
 .end method
 
-.method private ssp(Landroid/content/pm/ApplicationInfo;)Z
+.method private Nn()Z
+    .locals 0
+
+    iget-object p0, p0, Lcom/android/server/am/o;->sx:Lcom/android/server/am/zgw;
+
+    if-eqz p0, :cond_0
+
+    const/4 p0, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 p0, 0x0
+
+    :goto_0
+    return p0
+.end method
+
+.method private kth(Landroid/content/pm/ApplicationInfo;)Z
     .locals 0
 
     if-eqz p1, :cond_1
@@ -93,36 +111,18 @@
     return p0
 .end method
 
-.method private xn()Z
-    .locals 0
-
-    iget-object p0, p0, Lcom/android/server/am/o;->Mw:Lcom/android/server/am/zgw;
-
-    if-eqz p0, :cond_0
-
-    const/4 p0, 0x1
-
-    goto :goto_0
-
-    :cond_0
-    const/4 p0, 0x0
-
-    :goto_0
-    return p0
-.end method
-
 
 # virtual methods
 .method public addDependencyPackageFlag(Ljava/lang/String;I)V
     .locals 1
 
-    invoke-direct {p0}, Lcom/android/server/am/o;->xn()Z
+    invoke-direct {p0}, Lcom/android/server/am/o;->Nn()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    iget-object p0, p0, Lcom/android/server/am/o;->Mw:Lcom/android/server/am/zgw;
+    iget-object p0, p0, Lcom/android/server/am/o;->sx:Lcom/android/server/am/zgw;
 
     invoke-virtual {p0, p1, p2}, Lcom/android/server/am/zgw;->addDependencyPackageFlag(Ljava/lang/String;I)V
 
@@ -133,13 +133,13 @@
 .method public canActivityGo(Landroid/content/pm/ActivityInfo;Ljava/lang/String;)Z
     .locals 1
 
-    invoke-direct {p0}, Lcom/android/server/am/o;->xn()Z
+    invoke-direct {p0}, Lcom/android/server/am/o;->Nn()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    iget-object p0, p0, Lcom/android/server/am/o;->Mw:Lcom/android/server/am/zgw;
+    iget-object p0, p0, Lcom/android/server/am/o;->sx:Lcom/android/server/am/zgw;
 
     invoke-virtual {p0, p1, p2}, Lcom/android/server/am/zgw;->canActivityGo(Landroid/content/pm/ActivityInfo;Ljava/lang/String;)Z
 
@@ -156,13 +156,13 @@
 .method public canInstrumentationGo(Landroid/content/ComponentName;II)Z
     .locals 1
 
-    invoke-direct {p0}, Lcom/android/server/am/o;->xn()Z
+    invoke-direct {p0}, Lcom/android/server/am/o;->Nn()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    iget-object p0, p0, Lcom/android/server/am/o;->Mw:Lcom/android/server/am/zgw;
+    iget-object p0, p0, Lcom/android/server/am/o;->sx:Lcom/android/server/am/zgw;
 
     invoke-virtual {p0, p1, p2, p3}, Lcom/android/server/am/zgw;->canInstrumentationGo(Landroid/content/ComponentName;II)Z
 
@@ -179,13 +179,13 @@
 .method public canJobSchedulerServiceGo(Lcom/android/server/job/controllers/JobStatus;)Z
     .locals 1
 
-    invoke-direct {p0}, Lcom/android/server/am/o;->xn()Z
+    invoke-direct {p0}, Lcom/android/server/am/o;->Nn()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    iget-object p0, p0, Lcom/android/server/am/o;->Mw:Lcom/android/server/am/zgw;
+    iget-object p0, p0, Lcom/android/server/am/o;->sx:Lcom/android/server/am/zgw;
 
     invoke-virtual {p0, p1}, Lcom/android/server/am/zgw;->canJobSchedulerServiceGo(Lcom/android/server/job/controllers/JobStatus;)Z
 
@@ -202,13 +202,13 @@
 .method public canKillProcessService(Ljava/lang/String;Ljava/lang/String;Z)Z
     .locals 1
 
-    invoke-direct {p0}, Lcom/android/server/am/o;->xn()Z
+    invoke-direct {p0}, Lcom/android/server/am/o;->Nn()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    iget-object p0, p0, Lcom/android/server/am/o;->Mw:Lcom/android/server/am/zgw;
+    iget-object p0, p0, Lcom/android/server/am/o;->sx:Lcom/android/server/am/zgw;
 
     invoke-virtual {p0, p1, p2, p3}, Lcom/android/server/am/zgw;->canKillProcessService(Ljava/lang/String;Ljava/lang/String;Z)Z
 
@@ -225,13 +225,13 @@
 .method public canNotificationListenerServiceGo(Landroid/content/ComponentName;)Z
     .locals 1
 
-    invoke-direct {p0}, Lcom/android/server/am/o;->xn()Z
+    invoke-direct {p0}, Lcom/android/server/am/o;->Nn()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    iget-object p0, p0, Lcom/android/server/am/o;->Mw:Lcom/android/server/am/zgw;
+    iget-object p0, p0, Lcom/android/server/am/o;->sx:Lcom/android/server/am/zgw;
 
     invoke-virtual {p0, p1}, Lcom/android/server/am/zgw;->canNotificationListenerServiceGo(Landroid/content/ComponentName;)Z
 
@@ -248,13 +248,13 @@
 .method public canProcGo(Lcom/android/server/am/ProcessRecord;Ljava/lang/String;)Z
     .locals 1
 
-    invoke-direct {p0}, Lcom/android/server/am/o;->xn()Z
+    invoke-direct {p0}, Lcom/android/server/am/o;->Nn()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    iget-object p0, p0, Lcom/android/server/am/o;->Mw:Lcom/android/server/am/zgw;
+    iget-object p0, p0, Lcom/android/server/am/o;->sx:Lcom/android/server/am/zgw;
 
     invoke-virtual {p0, p1, p2}, Lcom/android/server/am/zgw;->canProcGo(Lcom/android/server/am/ProcessRecord;Ljava/lang/String;)Z
 
@@ -271,13 +271,13 @@
 .method public canProviderGo(Lcom/android/server/am/ContentProviderRecord;Lcom/android/server/am/ProcessRecord;)Z
     .locals 1
 
-    invoke-direct {p0}, Lcom/android/server/am/o;->xn()Z
+    invoke-direct {p0}, Lcom/android/server/am/o;->Nn()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    iget-object p0, p0, Lcom/android/server/am/o;->Mw:Lcom/android/server/am/zgw;
+    iget-object p0, p0, Lcom/android/server/am/o;->sx:Lcom/android/server/am/zgw;
 
     invoke-virtual {p0, p1, p2}, Lcom/android/server/am/zgw;->canProviderGo(Lcom/android/server/am/ContentProviderRecord;Lcom/android/server/am/ProcessRecord;)Z
 
@@ -294,13 +294,13 @@
 .method public canReceiverGo(Landroid/content/pm/ApplicationInfo;Lcom/android/server/am/BroadcastRecord;Ljava/lang/String;)Z
     .locals 1
 
-    invoke-direct {p0}, Lcom/android/server/am/o;->xn()Z
+    invoke-direct {p0}, Lcom/android/server/am/o;->Nn()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    iget-object p0, p0, Lcom/android/server/am/o;->Mw:Lcom/android/server/am/zgw;
+    iget-object p0, p0, Lcom/android/server/am/o;->sx:Lcom/android/server/am/zgw;
 
     invoke-virtual {p0, p1, p2, p3}, Lcom/android/server/am/zgw;->canReceiverGo(Landroid/content/pm/ApplicationInfo;Lcom/android/server/am/BroadcastRecord;Ljava/lang/String;)Z
 
@@ -317,13 +317,13 @@
 .method public canScheduleServiceRestart(Lcom/android/server/am/ProcessRecord;)Z
     .locals 1
 
-    invoke-direct {p0}, Lcom/android/server/am/o;->xn()Z
+    invoke-direct {p0}, Lcom/android/server/am/o;->Nn()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    iget-object p0, p0, Lcom/android/server/am/o;->Mw:Lcom/android/server/am/zgw;
+    iget-object p0, p0, Lcom/android/server/am/o;->sx:Lcom/android/server/am/zgw;
 
     invoke-virtual {p0, p1}, Lcom/android/server/am/zgw;->canScheduleServiceRestart(Lcom/android/server/am/ProcessRecord;)Z
 
@@ -340,13 +340,13 @@
 .method public canServiceGo(Lcom/android/server/am/ProcessRecord;Landroid/content/Intent;Lcom/android/server/am/ServiceRecord;ILjava/lang/String;)Z
     .locals 7
 
-    invoke-direct {p0}, Lcom/android/server/am/o;->xn()Z
+    invoke-direct {p0}, Lcom/android/server/am/o;->Nn()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    iget-object v1, p0, Lcom/android/server/am/o;->Mw:Lcom/android/server/am/zgw;
+    iget-object v1, p0, Lcom/android/server/am/o;->sx:Lcom/android/server/am/zgw;
 
     move-object v2, p1
 
@@ -373,7 +373,7 @@
 .method public checkAppInfo(ILandroid/content/pm/ApplicationInfo;)Landroid/content/pm/ApplicationInfo;
     .locals 1
 
-    invoke-direct {p0}, Lcom/android/server/am/o;->xn()Z
+    invoke-direct {p0}, Lcom/android/server/am/o;->Nn()Z
 
     move-result v0
 
@@ -383,7 +383,7 @@
 
     if-ne p1, v0, :cond_0
 
-    invoke-direct {p0, p2}, Lcom/android/server/am/o;->ssp(Landroid/content/pm/ApplicationInfo;)Z
+    invoke-direct {p0, p2}, Lcom/android/server/am/o;->kth(Landroid/content/pm/ApplicationInfo;)Z
 
     move-result p0
 
@@ -402,13 +402,13 @@
 .method public getScreenState()Z
     .locals 1
 
-    invoke-direct {p0}, Lcom/android/server/am/o;->xn()Z
+    invoke-direct {p0}, Lcom/android/server/am/o;->Nn()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    iget-object p0, p0, Lcom/android/server/am/o;->Mw:Lcom/android/server/am/zgw;
+    iget-object p0, p0, Lcom/android/server/am/o;->sx:Lcom/android/server/am/zgw;
 
     invoke-virtual {p0}, Lcom/android/server/am/zgw;->getScreenState()Z
 
@@ -425,13 +425,13 @@
 .method public handleAppKilledLocked(Lcom/android/server/am/ProcessRecord;)V
     .locals 1
 
-    invoke-direct {p0}, Lcom/android/server/am/o;->xn()Z
+    invoke-direct {p0}, Lcom/android/server/am/o;->Nn()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    iget-object p0, p0, Lcom/android/server/am/o;->Mw:Lcom/android/server/am/zgw;
+    iget-object p0, p0, Lcom/android/server/am/o;->sx:Lcom/android/server/am/zgw;
 
     invoke-virtual {p0, p1}, Lcom/android/server/am/zgw;->handleAppKilledLocked(Lcom/android/server/am/ProcessRecord;)V
 
@@ -442,13 +442,13 @@
 .method public initEnv(Lcom/android/server/am/ActivityManagerService;Landroid/content/Context;)V
     .locals 1
 
-    invoke-direct {p0}, Lcom/android/server/am/o;->xn()Z
+    invoke-direct {p0}, Lcom/android/server/am/o;->Nn()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    iget-object p0, p0, Lcom/android/server/am/o;->Mw:Lcom/android/server/am/zgw;
+    iget-object p0, p0, Lcom/android/server/am/o;->sx:Lcom/android/server/am/zgw;
 
     invoke-virtual {p0, p1, p2}, Lcom/android/server/am/zgw;->initEnv(Lcom/android/server/am/ActivityManagerService;Landroid/content/Context;)V
 
@@ -469,7 +469,7 @@
         }
     .end annotation
 
-    invoke-direct {p0}, Lcom/android/server/am/o;->xn()Z
+    invoke-direct {p0}, Lcom/android/server/am/o;->Nn()Z
 
     move-result v0
 
@@ -479,9 +479,9 @@
 
     move-result-object p1
 
-    iput-object p1, p0, Lcom/android/server/am/o;->Mw:Lcom/android/server/am/zgw;
+    iput-object p1, p0, Lcom/android/server/am/o;->sx:Lcom/android/server/am/zgw;
 
-    iget-object p0, p0, Lcom/android/server/am/o;->Mw:Lcom/android/server/am/zgw;
+    iget-object p0, p0, Lcom/android/server/am/o;->sx:Lcom/android/server/am/zgw;
 
     invoke-virtual {p0, p2}, Lcom/android/server/am/zgw;->zta(Landroid/util/ArrayMap;)V
 
@@ -492,13 +492,13 @@
 .method public isBlackJobClass(Ljava/lang/String;)Z
     .locals 1
 
-    invoke-direct {p0}, Lcom/android/server/am/o;->xn()Z
+    invoke-direct {p0}, Lcom/android/server/am/o;->Nn()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    iget-object p0, p0, Lcom/android/server/am/o;->Mw:Lcom/android/server/am/zgw;
+    iget-object p0, p0, Lcom/android/server/am/o;->sx:Lcom/android/server/am/zgw;
 
     invoke-virtual {p0, p1}, Lcom/android/server/am/zgw;->isBlackJobClass(Ljava/lang/String;)Z
 
@@ -515,13 +515,13 @@
 .method public isDebug()Z
     .locals 1
 
-    invoke-direct {p0}, Lcom/android/server/am/o;->xn()Z
+    invoke-direct {p0}, Lcom/android/server/am/o;->Nn()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    iget-object p0, p0, Lcom/android/server/am/o;->Mw:Lcom/android/server/am/zgw;
+    iget-object p0, p0, Lcom/android/server/am/o;->sx:Lcom/android/server/am/zgw;
 
     invoke-virtual {p0}, Lcom/android/server/am/zgw;->isDebug()Z
 
@@ -538,7 +538,7 @@
 .method public isNotAppUserSetted(Ljava/lang/String;)Z
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/am/o;->xn()Z
+    invoke-direct {p0}, Lcom/android/server/am/o;->Nn()Z
 
     move-result p0
 
@@ -567,13 +567,13 @@
 .method public setCurrentIME(Landroid/content/Intent;)V
     .locals 1
 
-    invoke-direct {p0}, Lcom/android/server/am/o;->xn()Z
+    invoke-direct {p0}, Lcom/android/server/am/o;->Nn()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    iget-object p0, p0, Lcom/android/server/am/o;->Mw:Lcom/android/server/am/zgw;
+    iget-object p0, p0, Lcom/android/server/am/o;->sx:Lcom/android/server/am/zgw;
 
     invoke-virtual {p0, p1}, Lcom/android/server/am/zgw;->setCurrentIME(Landroid/content/Intent;)V
 
@@ -584,13 +584,13 @@
 .method public setCurrentWallpaperPackage(Landroid/content/ComponentName;)V
     .locals 1
 
-    invoke-direct {p0}, Lcom/android/server/am/o;->xn()Z
+    invoke-direct {p0}, Lcom/android/server/am/o;->Nn()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    iget-object p0, p0, Lcom/android/server/am/o;->Mw:Lcom/android/server/am/zgw;
+    iget-object p0, p0, Lcom/android/server/am/o;->sx:Lcom/android/server/am/zgw;
 
     invoke-virtual {p0, p1}, Lcom/android/server/am/zgw;->setCurrentWallpaperPackage(Landroid/content/ComponentName;)V
 
@@ -601,13 +601,13 @@
 .method public skipBroadcast(Landroid/content/Intent;Ljava/lang/String;IILcom/android/server/am/ProcessRecord;)Z
     .locals 7
 
-    invoke-direct {p0}, Lcom/android/server/am/o;->xn()Z
+    invoke-direct {p0}, Lcom/android/server/am/o;->Nn()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    iget-object v1, p0, Lcom/android/server/am/o;->Mw:Lcom/android/server/am/zgw;
+    iget-object v1, p0, Lcom/android/server/am/o;->sx:Lcom/android/server/am/zgw;
 
     move-object v2, p1
 
@@ -634,13 +634,13 @@
 .method public trackProcess(ZLcom/android/server/am/ProcessRecord;Ljava/lang/String;)V
     .locals 1
 
-    invoke-direct {p0}, Lcom/android/server/am/o;->xn()Z
+    invoke-direct {p0}, Lcom/android/server/am/o;->Nn()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    iget-object p0, p0, Lcom/android/server/am/o;->Mw:Lcom/android/server/am/zgw;
+    iget-object p0, p0, Lcom/android/server/am/o;->sx:Lcom/android/server/am/zgw;
 
     invoke-virtual {p0, p1, p2, p3}, Lcom/android/server/am/zgw;->trackProcess(ZLcom/android/server/am/ProcessRecord;Ljava/lang/String;)V
 
@@ -651,13 +651,13 @@
 .method public updateAccesibilityServiceFlag(Landroid/content/Intent;Landroid/content/ComponentName;I)V
     .locals 1
 
-    invoke-direct {p0}, Lcom/android/server/am/o;->xn()Z
+    invoke-direct {p0}, Lcom/android/server/am/o;->Nn()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    iget-object p0, p0, Lcom/android/server/am/o;->Mw:Lcom/android/server/am/zgw;
+    iget-object p0, p0, Lcom/android/server/am/o;->sx:Lcom/android/server/am/zgw;
 
     invoke-virtual {p0, p1, p2, p3}, Lcom/android/server/am/zgw;->updateAccesibilityServiceFlag(Landroid/content/Intent;Landroid/content/ComponentName;I)V
 
@@ -668,13 +668,13 @@
 .method public updateAppStopInfo(Ljava/lang/String;)V
     .locals 1
 
-    invoke-direct {p0}, Lcom/android/server/am/o;->xn()Z
+    invoke-direct {p0}, Lcom/android/server/am/o;->Nn()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    iget-object p0, p0, Lcom/android/server/am/o;->Mw:Lcom/android/server/am/zgw;
+    iget-object p0, p0, Lcom/android/server/am/o;->sx:Lcom/android/server/am/zgw;
 
     invoke-virtual {p0, p1}, Lcom/android/server/am/zgw;->updateAppStopInfo(Ljava/lang/String;)V
 
@@ -685,13 +685,13 @@
 .method public updateAppStopInfo(Ljava/lang/String;I)V
     .locals 1
 
-    invoke-direct {p0}, Lcom/android/server/am/o;->xn()Z
+    invoke-direct {p0}, Lcom/android/server/am/o;->Nn()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    iget-object p0, p0, Lcom/android/server/am/o;->Mw:Lcom/android/server/am/zgw;
+    iget-object p0, p0, Lcom/android/server/am/o;->sx:Lcom/android/server/am/zgw;
 
     invoke-virtual {p0, p1, p2}, Lcom/android/server/am/zgw;->updateAppStopInfo(Ljava/lang/String;I)V
 
@@ -702,13 +702,13 @@
 .method public updatePowerFlag(Ljava/lang/String;I)V
     .locals 1
 
-    invoke-direct {p0}, Lcom/android/server/am/o;->xn()Z
+    invoke-direct {p0}, Lcom/android/server/am/o;->Nn()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    iget-object p0, p0, Lcom/android/server/am/o;->Mw:Lcom/android/server/am/zgw;
+    iget-object p0, p0, Lcom/android/server/am/o;->sx:Lcom/android/server/am/zgw;
 
     invoke-virtual {p0, p1, p2}, Lcom/android/server/am/zgw;->updatePowerFlag(Ljava/lang/String;I)V
 
@@ -719,13 +719,13 @@
 .method public updateWidgetPackage(Ljava/lang/String;Z)V
     .locals 1
 
-    invoke-direct {p0}, Lcom/android/server/am/o;->xn()Z
+    invoke-direct {p0}, Lcom/android/server/am/o;->Nn()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    iget-object p0, p0, Lcom/android/server/am/o;->Mw:Lcom/android/server/am/zgw;
+    iget-object p0, p0, Lcom/android/server/am/o;->sx:Lcom/android/server/am/zgw;
 
     invoke-virtual {p0, p1, p2}, Lcom/android/server/am/zgw;->updateWidgetPackage(Ljava/lang/String;Z)V
 
@@ -744,13 +744,13 @@
         }
     .end annotation
 
-    invoke-direct {p0}, Lcom/android/server/am/o;->xn()Z
+    invoke-direct {p0}, Lcom/android/server/am/o;->Nn()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    iget-object p0, p0, Lcom/android/server/am/o;->Mw:Lcom/android/server/am/zgw;
+    iget-object p0, p0, Lcom/android/server/am/o;->sx:Lcom/android/server/am/zgw;
 
     invoke-virtual {p0, p1}, Lcom/android/server/am/zgw;->updateWidgetPackages(Ljava/util/HashSet;)V
 

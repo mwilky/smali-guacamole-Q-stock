@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field private final tsa:[Lorg/bouncycastle/asn1/x509/zgw;
+.field private final Iua:[Lorg/bouncycastle/asn1/x509/zgw;
 
 
 # direct methods
@@ -19,7 +19,7 @@
 
     new-array v0, v0, [Lorg/bouncycastle/asn1/x509/zgw;
 
-    iput-object v0, p0, Lorg/bouncycastle/asn1/x509/obl;->tsa:[Lorg/bouncycastle/asn1/x509/zgw;
+    iput-object v0, p0, Lorg/bouncycastle/asn1/x509/obl;->Iua:[Lorg/bouncycastle/asn1/x509/zgw;
 
     const/4 v0, 0x0
 
@@ -30,7 +30,7 @@
 
     if-eq v0, v1, :cond_0
 
-    iget-object v1, p0, Lorg/bouncycastle/asn1/x509/obl;->tsa:[Lorg/bouncycastle/asn1/x509/zgw;
+    iget-object v1, p0, Lorg/bouncycastle/asn1/x509/obl;->Iua:[Lorg/bouncycastle/asn1/x509/zgw;
 
     invoke-virtual {p1, v0}, Lorg/bouncycastle/asn1/obl;->getObjectAt(I)Lorg/bouncycastle/asn1/ssp;
 
@@ -63,7 +63,7 @@
 
     aput-object p1, v0, v1
 
-    iput-object v0, p0, Lorg/bouncycastle/asn1/x509/obl;->tsa:[Lorg/bouncycastle/asn1/x509/zgw;
+    iput-object v0, p0, Lorg/bouncycastle/asn1/x509/obl;->Iua:[Lorg/bouncycastle/asn1/x509/zgw;
 
     return-void
 .end method
@@ -77,7 +77,7 @@
 
     move-result-object p1
 
-    iput-object p1, p0, Lorg/bouncycastle/asn1/x509/obl;->tsa:[Lorg/bouncycastle/asn1/x509/zgw;
+    iput-object p1, p0, Lorg/bouncycastle/asn1/x509/obl;->Iua:[Lorg/bouncycastle/asn1/x509/zgw;
 
     return-void
 .end method
@@ -161,7 +161,7 @@
 .method public getNames()[Lorg/bouncycastle/asn1/x509/zgw;
     .locals 1
 
-    iget-object v0, p0, Lorg/bouncycastle/asn1/x509/obl;->tsa:[Lorg/bouncycastle/asn1/x509/zgw;
+    iget-object v0, p0, Lorg/bouncycastle/asn1/x509/obl;->Iua:[Lorg/bouncycastle/asn1/x509/zgw;
 
     invoke-direct {p0, v0}, Lorg/bouncycastle/asn1/x509/obl;->zta([Lorg/bouncycastle/asn1/x509/zgw;)[Lorg/bouncycastle/asn1/x509/zgw;
 
@@ -175,7 +175,7 @@
 
     new-instance v0, Lorg/bouncycastle/asn1/G;
 
-    iget-object p0, p0, Lorg/bouncycastle/asn1/x509/obl;->tsa:[Lorg/bouncycastle/asn1/x509/zgw;
+    iget-object p0, p0, Lorg/bouncycastle/asn1/x509/obl;->Iua:[Lorg/bouncycastle/asn1/x509/zgw;
 
     invoke-direct {v0, p0}, Lorg/bouncycastle/asn1/G;-><init>([Lorg/bouncycastle/asn1/ssp;)V
 
@@ -202,7 +202,7 @@
     const/4 v2, 0x0
 
     :goto_0
-    iget-object v3, p0, Lorg/bouncycastle/asn1/x509/obl;->tsa:[Lorg/bouncycastle/asn1/x509/zgw;
+    iget-object v3, p0, Lorg/bouncycastle/asn1/x509/obl;->Iua:[Lorg/bouncycastle/asn1/x509/zgw;
 
     array-length v3, v3
 
@@ -212,7 +212,7 @@
 
     invoke-virtual {v0, v3}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
 
-    iget-object v3, p0, Lorg/bouncycastle/asn1/x509/obl;->tsa:[Lorg/bouncycastle/asn1/x509/zgw;
+    iget-object v3, p0, Lorg/bouncycastle/asn1/x509/obl;->Iua:[Lorg/bouncycastle/asn1/x509/zgw;
 
     aget-object v3, v3, v2
 

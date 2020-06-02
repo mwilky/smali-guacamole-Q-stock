@@ -106,7 +106,7 @@
 
     invoke-static {p1, v0}, Lcom/oneplus/android/server/scene/ESportMode;->access$002(Lcom/oneplus/android/server/scene/ESportMode;Z)Z
 
-    invoke-static {}, Lcom/android/server/wm/wtn;->Zd()Lcom/android/server/wm/wtn$zta;
+    invoke-static {}, Lcom/android/server/wm/wtn;->fe()Lcom/android/server/wm/wtn$zta;
 
     move-result-object p1
 

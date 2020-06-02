@@ -96,7 +96,7 @@
 
 .field private mHandler:Landroid/os/Handler;
 
-.field private mOpScreenDecor:Lcom/android/server/wm/les;
+.field private mOpScreenDecor:Lcom/android/server/wm/irq;
 
 .field public mScreenCompatDefaultEnabledList:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
@@ -1560,7 +1560,7 @@
 
     if-eqz v0, :cond_5
 
-    iget-object v0, p0, Lcom/android/server/wm/OpScreenCompat;->mOpScreenDecor:Lcom/android/server/wm/les;
+    iget-object v0, p0, Lcom/android/server/wm/OpScreenCompat;->mOpScreenDecor:Lcom/android/server/wm/irq;
 
     if-eqz v0, :cond_5
 
@@ -1619,9 +1619,9 @@
     move v1, v2
 
     :goto_2
-    iget-object v3, p0, Lcom/android/server/wm/OpScreenCompat;->mOpScreenDecor:Lcom/android/server/wm/les;
+    iget-object v3, p0, Lcom/android/server/wm/OpScreenCompat;->mOpScreenDecor:Lcom/android/server/wm/irq;
 
-    iget-boolean v3, v3, Lcom/android/server/wm/les;->IV:Z
+    iget-boolean v3, v3, Lcom/android/server/wm/irq;->dX:Z
 
     if-eq v3, v1, :cond_5
 
@@ -1688,16 +1688,16 @@
     invoke-static {p2, p1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_4
-    iget-object p0, p0, Lcom/android/server/wm/OpScreenCompat;->mOpScreenDecor:Lcom/android/server/wm/les;
+    iget-object p0, p0, Lcom/android/server/wm/OpScreenCompat;->mOpScreenDecor:Lcom/android/server/wm/irq;
 
-    invoke-virtual {p0, v1}, Lcom/android/server/wm/les;->z(Z)V
+    invoke-virtual {p0, v1}, Lcom/android/server/wm/irq;->z(Z)V
 
     :cond_5
     return-void
 .end method
 
 .method public finishBooting()V
-    .locals 6
+    .locals 5
 
     const-string v0, "OpScreenCompat"
 
@@ -1741,28 +1741,28 @@
 
     if-eqz v2, :cond_0
 
-    new-instance v2, Ljava/util/ArrayList;
+    new-instance v1, Ljava/util/ArrayList;
 
-    iget-object v4, p0, Lcom/android/server/wm/OpScreenCompat;->mContext:Landroid/content/Context;
+    iget-object v2, p0, Lcom/android/server/wm/OpScreenCompat;->mContext:Landroid/content/Context;
 
-    invoke-virtual {v4}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {v2}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
-    move-result-object v4
+    move-result-object v2
 
-    const v5, 0x5020028
+    const v4, 0x5020028
 
-    invoke-virtual {v4, v5}, Landroid/content/res/Resources;->getStringArray(I)[Ljava/lang/String;
+    invoke-virtual {v2, v4}, Landroid/content/res/Resources;->getStringArray(I)[Ljava/lang/String;
 
-    move-result-object v4
+    move-result-object v2
 
-    invoke-static {v4}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
+    invoke-static {v2}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
 
-    move-result-object v4
+    move-result-object v2
 
-    invoke-direct {v2, v4}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
+    invoke-direct {v1, v2}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
 
     :goto_0
-    iput-object v2, p0, Lcom/android/server/wm/OpScreenCompat;->mSystemAppList:Ljava/util/ArrayList;
+    iput-object v1, p0, Lcom/android/server/wm/OpScreenCompat;->mSystemAppList:Ljava/util/ArrayList;
 
     goto :goto_1
 
@@ -1773,96 +1773,76 @@
 
     invoke-static {v2}, Landroid/util/OpFeatures;->isSupport([I)Z
 
-    move-result v2
+    move-result v1
 
-    if-eqz v2, :cond_1
+    if-eqz v1, :cond_1
 
-    new-instance v2, Ljava/util/ArrayList;
+    new-instance v1, Ljava/util/ArrayList;
 
-    iget-object v4, p0, Lcom/android/server/wm/OpScreenCompat;->mContext:Landroid/content/Context;
+    iget-object v2, p0, Lcom/android/server/wm/OpScreenCompat;->mContext:Landroid/content/Context;
 
-    invoke-virtual {v4}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {v2}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
-    move-result-object v4
+    move-result-object v2
 
-    const v5, 0x5020029    # 6.1126E-36f
+    const v4, 0x5020029    # 6.1126E-36f
 
-    invoke-virtual {v4, v5}, Landroid/content/res/Resources;->getStringArray(I)[Ljava/lang/String;
+    invoke-virtual {v2, v4}, Landroid/content/res/Resources;->getStringArray(I)[Ljava/lang/String;
 
-    move-result-object v4
+    move-result-object v2
 
-    invoke-static {v4}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
+    invoke-static {v2}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
 
-    move-result-object v4
+    move-result-object v2
 
-    invoke-direct {v2, v4}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
+    invoke-direct {v1, v2}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
 
     goto :goto_0
 
     :cond_1
     :goto_1
-    sget-boolean v2, Lcom/android/server/wm/OpScreenCompat;->IS_SUPPORT_CAMERA_NOTCH:Z
+    sget-boolean v1, Lcom/android/server/wm/OpScreenCompat;->IS_SUPPORT_CAMERA_NOTCH:Z
 
-    if-eqz v2, :cond_2
+    if-eqz v1, :cond_2
 
-    new-instance v2, Ljava/util/ArrayList;
-
-    iget-object v4, p0, Lcom/android/server/wm/OpScreenCompat;->mContext:Landroid/content/Context;
-
-    invoke-virtual {v4}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
-
-    move-result-object v4
-
-    const v5, 0x5020027
-
-    invoke-virtual {v4, v5}, Landroid/content/res/Resources;->getStringArray(I)[Ljava/lang/String;
-
-    move-result-object v4
-
-    invoke-static {v4}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
-
-    move-result-object v4
-
-    invoke-direct {v2, v4}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
-
-    iput-object v2, p0, Lcom/android/server/wm/OpScreenCompat;->mScreenCompatThirdPartyAppList:Ljava/util/ArrayList;
-
-    new-instance v2, Lcom/android/server/wm/les;
-
-    iget-object v4, p0, Lcom/android/server/wm/OpScreenCompat;->mContext:Landroid/content/Context;
-
-    invoke-direct {v2, v4}, Lcom/android/server/wm/les;-><init>(Landroid/content/Context;)V
-
-    iput-object v2, p0, Lcom/android/server/wm/OpScreenCompat;->mOpScreenDecor:Lcom/android/server/wm/les;
-
-    :cond_2
-    sget-boolean v2, Lcom/android/server/wm/OpScreenCompat;->IS_SUPPORT_HIDE_CAMERA_NOTCH:Z
-
-    if-eqz v2, :cond_4
+    new-instance v1, Ljava/util/ArrayList;
 
     iget-object v2, p0, Lcom/android/server/wm/OpScreenCompat;->mContext:Landroid/content/Context;
 
-    invoke-virtual {v2}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {v2}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object v2
 
-    const-string v4, "op_camera_notch_ignore"
+    const v4, 0x5020027
 
-    invoke-static {v2, v4, v3}, Landroid/provider/Settings$System;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
+    invoke-virtual {v2, v4}, Landroid/content/res/Resources;->getStringArray(I)[Ljava/lang/String;
 
-    move-result v2
+    move-result-object v2
 
-    if-eqz v2, :cond_3
+    invoke-static {v2}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
 
-    goto :goto_2
+    move-result-object v2
+
+    invoke-direct {v1, v2}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
+
+    iput-object v1, p0, Lcom/android/server/wm/OpScreenCompat;->mScreenCompatThirdPartyAppList:Ljava/util/ArrayList;
+
+    new-instance v1, Lcom/android/server/wm/irq;
+
+    iget-object v2, p0, Lcom/android/server/wm/OpScreenCompat;->mContext:Landroid/content/Context;
+
+    invoke-direct {v1, v2}, Lcom/android/server/wm/irq;-><init>(Landroid/content/Context;)V
+
+    iput-object v1, p0, Lcom/android/server/wm/OpScreenCompat;->mOpScreenDecor:Lcom/android/server/wm/irq;
+
+    :cond_2
+    sget-boolean v1, Lcom/android/server/wm/OpScreenCompat;->IS_SUPPORT_HIDE_CAMERA_NOTCH:Z
+
+    if-eqz v1, :cond_3
+
+    sput-boolean v3, Lcom/android/server/wm/OpScreenCompat;->mIsIgnoreCameraNotch:Z
 
     :cond_3
-    move v1, v3
-
-    :goto_2
-    sput-boolean v1, Lcom/android/server/wm/OpScreenCompat;->mIsIgnoreCameraNotch:Z
-
-    :cond_4
     invoke-virtual {p0}, Lcom/android/server/wm/OpScreenCompat;->updateDefaultForScreenCompat()V
 
     invoke-virtual {p0}, Lcom/android/server/wm/OpScreenCompat;->updateSizeForResolutionChanged()V
@@ -1889,7 +1869,7 @@
 
     const-string v1, "Screen_Compat_Config"
 
-    if-nez v0, :cond_5
+    if-nez v0, :cond_4
 
     new-instance v0, Lcom/oneplus/config/ConfigObserver;
 
@@ -1909,7 +1889,7 @@
 
     invoke-virtual {v0}, Lcom/oneplus/config/ConfigObserver;->register()V
 
-    :cond_5
+    :cond_4
     new-instance v0, Lcom/oneplus/config/ConfigGrabber;
 
     iget-object v2, p0, Lcom/android/server/wm/OpScreenCompat;->mContext:Landroid/content/Context;
@@ -2140,11 +2120,11 @@
 
     if-eqz v0, :cond_2
 
-    iget-object v0, p0, Lcom/android/server/wm/OpScreenCompat;->mOpScreenDecor:Lcom/android/server/wm/les;
+    iget-object v0, p0, Lcom/android/server/wm/OpScreenCompat;->mOpScreenDecor:Lcom/android/server/wm/irq;
 
     if-eqz v0, :cond_2
 
-    iget-boolean v0, v0, Lcom/android/server/wm/les;->IV:Z
+    iget-boolean v0, v0, Lcom/android/server/wm/irq;->dX:Z
 
     if-eqz v0, :cond_2
 
@@ -2180,9 +2160,9 @@
 
     :cond_1
     :goto_0
-    iget-object p0, p0, Lcom/android/server/wm/OpScreenCompat;->mOpScreenDecor:Lcom/android/server/wm/les;
+    iget-object p0, p0, Lcom/android/server/wm/OpScreenCompat;->mOpScreenDecor:Lcom/android/server/wm/irq;
 
-    iget p0, p0, Lcom/android/server/wm/les;->KV:I
+    iget p0, p0, Lcom/android/server/wm/irq;->fX:I
 
     monitor-exit v0
 
@@ -2331,9 +2311,9 @@
 
     iget-object v1, v1, Lcom/android/server/wm/WindowManagerService;->mH:Lcom/android/server/wm/WindowManagerService$H;
 
-    new-instance v2, Lcom/android/server/wm/cgv;
+    new-instance v2, Lcom/android/server/wm/vju;
 
-    invoke-direct {v2, p0, p1, p2, v0}, Lcom/android/server/wm/cgv;-><init>(Lcom/android/server/wm/OpScreenCompat;Landroid/graphics/Rect;Lcom/android/server/wm/WindowState;Z)V
+    invoke-direct {v2, p0, p1, p2, v0}, Lcom/android/server/wm/vju;-><init>(Lcom/android/server/wm/OpScreenCompat;Landroid/graphics/Rect;Lcom/android/server/wm/WindowState;Z)V
 
     invoke-virtual {v1, v2}, Lcom/android/server/wm/WindowManagerService$H;->post(Ljava/lang/Runnable;)Z
 
@@ -2432,11 +2412,11 @@
 
     if-eqz v0, :cond_0
 
-    iget-object p0, p0, Lcom/android/server/wm/OpScreenCompat;->mOpScreenDecor:Lcom/android/server/wm/les;
+    iget-object p0, p0, Lcom/android/server/wm/OpScreenCompat;->mOpScreenDecor:Lcom/android/server/wm/irq;
 
     if-eqz p0, :cond_0
 
-    invoke-virtual {p0}, Lcom/android/server/wm/les;->onConfigurationChanged()V
+    invoke-virtual {p0}, Lcom/android/server/wm/irq;->onConfigurationChanged()V
 
     :cond_0
     return-void

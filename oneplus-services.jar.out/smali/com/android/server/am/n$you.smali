@@ -15,11 +15,9 @@
 
 
 # instance fields
-.field enable:I
+.field Uw:Z
 
-.field mw:Z
-
-.field final nw:Ljava/util/List;
+.field final Vw:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
@@ -29,7 +27,9 @@
     .end annotation
 .end field
 
-.field ow:Ljava/lang/String;
+.field Ww:Ljava/lang/String;
+
+.field enable:I
 
 .field final synthetic this$0:Lcom/android/server/am/n;
 
@@ -44,13 +44,13 @@
 
     const/4 p1, 0x0
 
-    iput-boolean p1, p0, Lcom/android/server/am/n$you;->mw:Z
+    iput-boolean p1, p0, Lcom/android/server/am/n$you;->Uw:Z
 
     new-instance p1, Ljava/util/ArrayList;
 
     invoke-direct {p1}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object p1, p0, Lcom/android/server/am/n$you;->nw:Ljava/util/List;
+    iput-object p1, p0, Lcom/android/server/am/n$you;->Vw:Ljava/util/List;
 
     const/4 p1, -0x1
 
@@ -58,7 +58,7 @@
 
     const-string p1, ""
 
-    iput-object p1, p0, Lcom/android/server/am/n$you;->ow:Ljava/lang/String;
+    iput-object p1, p0, Lcom/android/server/am/n$you;->Ww:Ljava/lang/String;
 
     return-void
 .end method
@@ -88,7 +88,7 @@
 
     aput-object v2, v1, v3
 
-    iget-object p0, p0, Lcom/android/server/am/n$you;->nw:Ljava/util/List;
+    iget-object p0, p0, Lcom/android/server/am/n$you;->Vw:Ljava/util/List;
 
     invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
@@ -107,7 +107,7 @@
     return-object p0
 .end method
 
-.method mc()Lcom/android/server/am/n$you;
+.method lc()Lcom/android/server/am/n$you;
     .locals 3
 
     new-instance v0, Lcom/android/server/am/n$you;
@@ -116,23 +116,23 @@
 
     invoke-direct {v0, v1}, Lcom/android/server/am/n$you;-><init>(Lcom/android/server/am/n;)V
 
-    iget-boolean v1, p0, Lcom/android/server/am/n$you;->mw:Z
+    iget-boolean v1, p0, Lcom/android/server/am/n$you;->Uw:Z
 
-    iput-boolean v1, v0, Lcom/android/server/am/n$you;->mw:Z
+    iput-boolean v1, v0, Lcom/android/server/am/n$you;->Uw:Z
 
     iget v1, p0, Lcom/android/server/am/n$you;->enable:I
 
     iput v1, v0, Lcom/android/server/am/n$you;->enable:I
 
-    iget-object v1, v0, Lcom/android/server/am/n$you;->nw:Ljava/util/List;
+    iget-object v1, v0, Lcom/android/server/am/n$you;->Vw:Ljava/util/List;
 
-    iget-object v2, p0, Lcom/android/server/am/n$you;->nw:Ljava/util/List;
+    iget-object v2, p0, Lcom/android/server/am/n$you;->Vw:Ljava/util/List;
 
     invoke-interface {v1, v2}, Ljava/util/List;->addAll(Ljava/util/Collection;)Z
 
-    iget-object p0, p0, Lcom/android/server/am/n$you;->ow:Ljava/lang/String;
+    iget-object p0, p0, Lcom/android/server/am/n$you;->Ww:Ljava/lang/String;
 
-    iput-object p0, v0, Lcom/android/server/am/n$you;->ow:Ljava/lang/String;
+    iput-object p0, v0, Lcom/android/server/am/n$you;->Ww:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -149,7 +149,7 @@
 
     move-result v1
 
-    iput-boolean v1, p0, Lcom/android/server/am/n$you;->mw:Z
+    iput-boolean v1, p0, Lcom/android/server/am/n$you;->Uw:Z
 
     const-string v1, "enable"
 
@@ -178,7 +178,7 @@
 
     if-ge v2, v3, :cond_0
 
-    iget-object v3, p0, Lcom/android/server/am/n$you;->nw:Ljava/util/List;
+    iget-object v3, p0, Lcom/android/server/am/n$you;->Vw:Ljava/util/List;
 
     invoke-virtual {v1, v2}, Lorg/json/JSONArray;->optInt(I)I
 
@@ -207,7 +207,7 @@
 
     move-result-object p1
 
-    iput-object p1, p0, Lcom/android/server/am/n$you;->ow:Ljava/lang/String;
+    iput-object p1, p0, Lcom/android/server/am/n$you;->Ww:Ljava/lang/String;
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -225,9 +225,9 @@
 
     if-eqz p1, :cond_1
 
-    iget-boolean v0, p1, Lcom/android/server/am/n$you;->mw:Z
+    iget-boolean v0, p1, Lcom/android/server/am/n$you;->Uw:Z
 
-    iget-boolean v1, p0, Lcom/android/server/am/n$you;->mw:Z
+    iget-boolean v1, p0, Lcom/android/server/am/n$you;->Uw:Z
 
     if-ne v0, v1, :cond_1
 
@@ -237,9 +237,9 @@
 
     if-ne v0, v1, :cond_1
 
-    iget-object v0, p0, Lcom/android/server/am/n$you;->nw:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/server/am/n$you;->Vw:Ljava/util/List;
 
-    iget-object v1, p1, Lcom/android/server/am/n$you;->nw:Ljava/util/List;
+    iget-object v1, p1, Lcom/android/server/am/n$you;->Vw:Ljava/util/List;
 
     invoke-interface {v0, v1}, Ljava/util/List;->equals(Ljava/lang/Object;)Z
 
@@ -247,9 +247,9 @@
 
     if-eqz v0, :cond_1
 
-    iget-object p0, p0, Lcom/android/server/am/n$you;->ow:Ljava/lang/String;
+    iget-object p0, p0, Lcom/android/server/am/n$you;->Ww:Ljava/lang/String;
 
-    iget-object p1, p1, Lcom/android/server/am/n$you;->ow:Ljava/lang/String;
+    iget-object p1, p1, Lcom/android/server/am/n$you;->Ww:Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 

@@ -43,7 +43,7 @@
         }
     .end annotation
 
-    invoke-virtual {p0, p1}, Lorg/bouncycastle/jcajce/provider/symmetric/util/you;->ta(Ljava/lang/String;)Z
+    invoke-virtual {p0, p1}, Lorg/bouncycastle/jcajce/provider/symmetric/util/you;->va(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -178,7 +178,7 @@
         }
     .end annotation
 
-    invoke-virtual {p0, p2}, Lorg/bouncycastle/jcajce/provider/symmetric/util/you;->ta(Ljava/lang/String;)Z
+    invoke-virtual {p0, p2}, Lorg/bouncycastle/jcajce/provider/symmetric/util/you;->va(Ljava/lang/String;)Z
 
     move-result v0
 

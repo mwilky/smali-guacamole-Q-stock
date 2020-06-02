@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field private state:[B
+.field private Jza:Lorg/bouncycastle/crypto/ibl;
 
-.field private vxa:Lorg/bouncycastle/crypto/ibl;
+.field private state:[B
 
 
 # direct methods
@@ -31,9 +31,9 @@
 
     invoke-direct {v0, p1}, Lorg/bouncycastle/crypto/kth/you;-><init>(Lorg/bouncycastle/crypto/qbh;)V
 
-    iput-object v0, p0, Lorg/bouncycastle/crypto/ssp/dma;->vxa:Lorg/bouncycastle/crypto/ibl;
+    iput-object v0, p0, Lorg/bouncycastle/crypto/ssp/dma;->Jza:Lorg/bouncycastle/crypto/ibl;
 
-    iget-object p1, p0, Lorg/bouncycastle/crypto/ssp/dma;->vxa:Lorg/bouncycastle/crypto/ibl;
+    iget-object p1, p0, Lorg/bouncycastle/crypto/ssp/dma;->Jza:Lorg/bouncycastle/crypto/ibl;
 
     invoke-interface {p1}, Lorg/bouncycastle/crypto/ibl;->you()I
 
@@ -46,10 +46,10 @@
     return-void
 .end method
 
-.method private nc(I)[B
+.method private Ec(I)[B
     .locals 12
 
-    iget-object v0, p0, Lorg/bouncycastle/crypto/ssp/dma;->vxa:Lorg/bouncycastle/crypto/ibl;
+    iget-object v0, p0, Lorg/bouncycastle/crypto/ssp/dma;->Jza:Lorg/bouncycastle/crypto/ibl;
 
     invoke-interface {v0}, Lorg/bouncycastle/crypto/ibl;->you()I
 
@@ -77,7 +77,7 @@
 
     invoke-direct {v3, v4}, Lorg/bouncycastle/crypto/wtn/cjf;-><init>([B)V
 
-    iget-object v4, p0, Lorg/bouncycastle/crypto/ssp/dma;->vxa:Lorg/bouncycastle/crypto/ibl;
+    iget-object v4, p0, Lorg/bouncycastle/crypto/ssp/dma;->Jza:Lorg/bouncycastle/crypto/ibl;
 
     invoke-interface {v4, v3}, Lorg/bouncycastle/crypto/ibl;->you(Lorg/bouncycastle/crypto/kth;)V
 
@@ -141,20 +141,20 @@
 
     if-eqz p1, :cond_0
 
-    iget-object v1, p0, Lorg/bouncycastle/crypto/ssp/dma;->vxa:Lorg/bouncycastle/crypto/ibl;
+    iget-object v1, p0, Lorg/bouncycastle/crypto/ssp/dma;->Jza:Lorg/bouncycastle/crypto/ibl;
 
     array-length v2, p1
 
     invoke-interface {v1, p1, v0, v2}, Lorg/bouncycastle/crypto/ibl;->update([BII)V
 
     :cond_0
-    iget-object p1, p0, Lorg/bouncycastle/crypto/ssp/dma;->vxa:Lorg/bouncycastle/crypto/ibl;
+    iget-object p1, p0, Lorg/bouncycastle/crypto/ssp/dma;->Jza:Lorg/bouncycastle/crypto/ibl;
 
     array-length v1, p3
 
     invoke-interface {p1, p3, v0, v1}, Lorg/bouncycastle/crypto/ibl;->update([BII)V
 
-    iget-object p1, p0, Lorg/bouncycastle/crypto/ssp/dma;->vxa:Lorg/bouncycastle/crypto/ibl;
+    iget-object p1, p0, Lorg/bouncycastle/crypto/ssp/dma;->Jza:Lorg/bouncycastle/crypto/ibl;
 
     iget-object p3, p0, Lorg/bouncycastle/crypto/ssp/dma;->state:[B
 
@@ -171,7 +171,7 @@
     :goto_0
     if-ge p1, p2, :cond_2
 
-    iget-object p3, p0, Lorg/bouncycastle/crypto/ssp/dma;->vxa:Lorg/bouncycastle/crypto/ibl;
+    iget-object p3, p0, Lorg/bouncycastle/crypto/ssp/dma;->Jza:Lorg/bouncycastle/crypto/ibl;
 
     iget-object v1, p0, Lorg/bouncycastle/crypto/ssp/dma;->state:[B
 
@@ -179,7 +179,7 @@
 
     invoke-interface {p3, v1, v0, v2}, Lorg/bouncycastle/crypto/ibl;->update([BII)V
 
-    iget-object p3, p0, Lorg/bouncycastle/crypto/ssp/dma;->vxa:Lorg/bouncycastle/crypto/ibl;
+    iget-object p3, p0, Lorg/bouncycastle/crypto/ssp/dma;->Jza:Lorg/bouncycastle/crypto/ibl;
 
     iget-object v1, p0, Lorg/bouncycastle/crypto/ssp/dma;->state:[B
 
@@ -230,22 +230,12 @@
 
 
 # virtual methods
-.method public ga(I)Lorg/bouncycastle/crypto/kth;
-    .locals 0
-
-    invoke-virtual {p0, p1}, Lorg/bouncycastle/crypto/ssp/dma;->generateDerivedParameters(I)Lorg/bouncycastle/crypto/kth;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
 .method public generateDerivedParameters(I)Lorg/bouncycastle/crypto/kth;
     .locals 2
 
     div-int/lit8 p1, p1, 0x8
 
-    invoke-direct {p0, p1}, Lorg/bouncycastle/crypto/ssp/dma;->nc(I)[B
+    invoke-direct {p0, p1}, Lorg/bouncycastle/crypto/ssp/dma;->Ec(I)[B
 
     move-result-object p0
 
@@ -262,6 +252,16 @@
     return-object v1
 .end method
 
+.method public ja(I)Lorg/bouncycastle/crypto/kth;
+    .locals 0
+
+    invoke-virtual {p0, p1}, Lorg/bouncycastle/crypto/ssp/dma;->generateDerivedParameters(I)Lorg/bouncycastle/crypto/kth;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
 .method public ugm(II)Lorg/bouncycastle/crypto/kth;
     .locals 3
 
@@ -271,7 +271,7 @@
 
     add-int v0, p1, p2
 
-    invoke-direct {p0, v0}, Lorg/bouncycastle/crypto/ssp/dma;->nc(I)[B
+    invoke-direct {p0, v0}, Lorg/bouncycastle/crypto/ssp/dma;->Ec(I)[B
 
     move-result-object p0
 

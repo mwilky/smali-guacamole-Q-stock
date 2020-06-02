@@ -13,7 +13,7 @@
 
 
 # instance fields
-.field private final CZ:Ljava/lang/Runnable;
+.field private final Taa:Ljava/lang/Runnable;
 
 .field private mContext:Landroid/content/Context;
 
@@ -60,7 +60,7 @@
 
     invoke-direct {p2, p0}, Lcom/oneplus/android/server/alertslider/ssp;-><init>(Lcom/oneplus/android/server/alertslider/cno;)V
 
-    iput-object p2, p0, Lcom/oneplus/android/server/alertslider/cno;->CZ:Ljava/lang/Runnable;
+    iput-object p2, p0, Lcom/oneplus/android/server/alertslider/cno;->Taa:Ljava/lang/Runnable;
 
     iput-object p1, p0, Lcom/oneplus/android/server/alertslider/cno;->mContext:Landroid/content/Context;
 
@@ -240,7 +240,7 @@
 
     iget-object v0, p0, Lcom/oneplus/android/server/alertslider/cno;->mHandler:Landroid/os/Handler;
 
-    iget-object v1, p0, Lcom/oneplus/android/server/alertslider/cno;->CZ:Ljava/lang/Runnable;
+    iget-object v1, p0, Lcom/oneplus/android/server/alertslider/cno;->Taa:Ljava/lang/Runnable;
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->removeCallbacks(Ljava/lang/Runnable;)V
 
@@ -251,7 +251,7 @@
     :cond_1
     new-array v0, v0, [I
 
-    const/16 v1, 0xd5
+    const/16 v1, 0xd6
 
     aput v1, v0, v3
 
@@ -317,7 +317,7 @@
 
     iget-object v0, p0, Lcom/oneplus/android/server/alertslider/cno;->mHandler:Landroid/os/Handler;
 
-    iget-object v1, p0, Lcom/oneplus/android/server/alertslider/cno;->CZ:Ljava/lang/Runnable;
+    iget-object v1, p0, Lcom/oneplus/android/server/alertslider/cno;->Taa:Ljava/lang/Runnable;
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->removeCallbacks(Ljava/lang/Runnable;)V
 
@@ -336,7 +336,7 @@
     :cond_1
     new-array v0, v0, [I
 
-    const/16 v1, 0xd5
+    const/16 v1, 0xd6
 
     aput v1, v0, v3
 
@@ -400,13 +400,13 @@
 
     iget-object v1, p0, Lcom/oneplus/android/server/alertslider/cno;->mHandler:Landroid/os/Handler;
 
-    iget-object v2, p0, Lcom/oneplus/android/server/alertslider/cno;->CZ:Ljava/lang/Runnable;
+    iget-object v2, p0, Lcom/oneplus/android/server/alertslider/cno;->Taa:Ljava/lang/Runnable;
 
     invoke-virtual {v1, v2}, Landroid/os/Handler;->removeCallbacks(Ljava/lang/Runnable;)V
 
     iget-object v1, p0, Lcom/oneplus/android/server/alertslider/cno;->mHandler:Landroid/os/Handler;
 
-    iget-object p0, p0, Lcom/oneplus/android/server/alertslider/cno;->CZ:Ljava/lang/Runnable;
+    iget-object p0, p0, Lcom/oneplus/android/server/alertslider/cno;->Taa:Ljava/lang/Runnable;
 
     int-to-long v2, v0
 
@@ -417,7 +417,7 @@
     :cond_1
     new-array v0, v0, [I
 
-    const/16 v1, 0xd5
+    const/16 v1, 0xd6
 
     aput v1, v0, v3
 

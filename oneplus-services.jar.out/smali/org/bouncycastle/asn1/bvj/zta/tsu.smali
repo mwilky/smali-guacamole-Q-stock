@@ -12,7 +12,7 @@
     return-void
 .end method
 
-.method public static Fa(Ljava/lang/String;)Ljava/lang/String;
+.method public static Ha(Ljava/lang/String;)Ljava/lang/String;
     .locals 5
 
     new-instance v0, Ljava/lang/StringBuffer;
@@ -68,52 +68,6 @@
     move-result-object p0
 
     return-object p0
-.end method
-
-.method private static Zc(Ljava/lang/String;)Lorg/bouncycastle/asn1/vdb;
-    .locals 3
-
-    const/4 v0, 0x1
-
-    :try_start_0
-    invoke-virtual {p0, v0}, Ljava/lang/String;->substring(I)Ljava/lang/String;
-
-    move-result-object p0
-
-    invoke-static {p0}, Lorg/bouncycastle/util/encoders/tsu;->decode(Ljava/lang/String;)[B
-
-    move-result-object p0
-
-    invoke-static {p0}, Lorg/bouncycastle/asn1/vdb;->fromByteArray([B)Lorg/bouncycastle/asn1/vdb;
-
-    move-result-object p0
-    :try_end_0
-    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
-
-    return-object p0
-
-    :catch_0
-    move-exception p0
-
-    new-instance v0, Ljava/lang/IllegalStateException;
-
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v2, "unknown encoding in name: "
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p0
-
-    invoke-direct {v0, p0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
-    throw v0
 .end method
 
 .method private static bytesToString([B)Ljava/lang/String;
@@ -173,7 +127,7 @@
 
     if-ne v0, v2, :cond_0
 
-    invoke-static {p0}, Lorg/bouncycastle/asn1/bvj/zta/tsu;->Zc(Ljava/lang/String;)Lorg/bouncycastle/asn1/vdb;
+    invoke-static {p0}, Lorg/bouncycastle/asn1/bvj/zta/tsu;->cd(Ljava/lang/String;)Lorg/bouncycastle/asn1/vdb;
 
     move-result-object v0
 
@@ -276,78 +230,57 @@
     move-result-object p0
 
     :cond_4
-    invoke-static {p0}, Lorg/bouncycastle/asn1/bvj/zta/tsu;->Fa(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p0}, Lorg/bouncycastle/asn1/bvj/zta/tsu;->Ha(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p0
 
     return-object p0
 .end method
 
-.method public static igw(Ljava/lang/String;I)Lorg/bouncycastle/asn1/ssp;
-    .locals 4
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
+.method private static cd(Ljava/lang/String;)Lorg/bouncycastle/asn1/vdb;
+    .locals 3
 
-    invoke-virtual {p0}, Ljava/lang/String;->length()I
+    const/4 v0, 0x1
 
-    move-result v0
-
-    sub-int/2addr v0, p1
-
-    div-int/lit8 v0, v0, 0x2
-
-    new-array v0, v0, [B
-
-    const/4 v1, 0x0
-
-    :goto_0
-    array-length v2, v0
-
-    if-eq v1, v2, :cond_0
-
-    mul-int/lit8 v2, v1, 0x2
-
-    add-int/2addr v2, p1
-
-    invoke-virtual {p0, v2}, Ljava/lang/String;->charAt(I)C
-
-    move-result v3
-
-    add-int/lit8 v2, v2, 0x1
-
-    invoke-virtual {p0, v2}, Ljava/lang/String;->charAt(I)C
-
-    move-result v2
-
-    invoke-static {v3}, Lorg/bouncycastle/asn1/bvj/zta/tsu;->zta(C)I
-
-    move-result v3
-
-    shl-int/lit8 v3, v3, 0x4
-
-    invoke-static {v2}, Lorg/bouncycastle/asn1/bvj/zta/tsu;->zta(C)I
-
-    move-result v2
-
-    or-int/2addr v2, v3
-
-    int-to-byte v2, v2
-
-    aput-byte v2, v0, v1
-
-    add-int/lit8 v1, v1, 0x1
-
-    goto :goto_0
-
-    :cond_0
-    invoke-static {v0}, Lorg/bouncycastle/asn1/vdb;->fromByteArray([B)Lorg/bouncycastle/asn1/vdb;
+    :try_start_0
+    invoke-virtual {p0, v0}, Ljava/lang/String;->substring(I)Ljava/lang/String;
 
     move-result-object p0
 
+    invoke-static {p0}, Lorg/bouncycastle/util/encoders/tsu;->decode(Ljava/lang/String;)[B
+
+    move-result-object p0
+
+    invoke-static {p0}, Lorg/bouncycastle/asn1/vdb;->fromByteArray([B)Lorg/bouncycastle/asn1/vdb;
+
+    move-result-object p0
+    :try_end_0
+    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
+
     return-object p0
+
+    :catch_0
+    move-exception p0
+
+    new-instance v0, Ljava/lang/IllegalStateException;
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v2, "unknown encoding in name: "
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p0
+
+    invoke-direct {v0, p0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    throw v0
 .end method
 
 .method private static isHexDigit(C)Z
@@ -956,10 +889,77 @@
     return-object p0
 .end method
 
+.method public static wtn(Ljava/lang/String;I)Lorg/bouncycastle/asn1/ssp;
+    .locals 4
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    invoke-virtual {p0}, Ljava/lang/String;->length()I
+
+    move-result v0
+
+    sub-int/2addr v0, p1
+
+    div-int/lit8 v0, v0, 0x2
+
+    new-array v0, v0, [B
+
+    const/4 v1, 0x0
+
+    :goto_0
+    array-length v2, v0
+
+    if-eq v1, v2, :cond_0
+
+    mul-int/lit8 v2, v1, 0x2
+
+    add-int/2addr v2, p1
+
+    invoke-virtual {p0, v2}, Ljava/lang/String;->charAt(I)C
+
+    move-result v3
+
+    add-int/lit8 v2, v2, 0x1
+
+    invoke-virtual {p0, v2}, Ljava/lang/String;->charAt(I)C
+
+    move-result v2
+
+    invoke-static {v3}, Lorg/bouncycastle/asn1/bvj/zta/tsu;->zta(C)I
+
+    move-result v3
+
+    shl-int/lit8 v3, v3, 0x4
+
+    invoke-static {v2}, Lorg/bouncycastle/asn1/bvj/zta/tsu;->zta(C)I
+
+    move-result v2
+
+    or-int/2addr v2, v3
+
+    int-to-byte v2, v2
+
+    aput-byte v2, v0, v1
+
+    add-int/lit8 v1, v1, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    invoke-static {v0}, Lorg/bouncycastle/asn1/vdb;->fromByteArray([B)Lorg/bouncycastle/asn1/vdb;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
 .method public static you(Lorg/bouncycastle/asn1/bvj/sis;Lorg/bouncycastle/asn1/bvj/sis;)Z
     .locals 4
 
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/bvj/sis;->Bh()Z
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/bvj/sis;->Kh()Z
 
     move-result v0
 
@@ -967,17 +967,17 @@
 
     if-eqz v0, :cond_4
 
-    invoke-virtual {p1}, Lorg/bouncycastle/asn1/bvj/sis;->Bh()Z
+    invoke-virtual {p1}, Lorg/bouncycastle/asn1/bvj/sis;->Kh()Z
 
     move-result v0
 
     if-eqz v0, :cond_3
 
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/bvj/sis;->Ah()[Lorg/bouncycastle/asn1/bvj/zta;
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/bvj/sis;->Jh()[Lorg/bouncycastle/asn1/bvj/zta;
 
     move-result-object p0
 
-    invoke-virtual {p1}, Lorg/bouncycastle/asn1/bvj/sis;->Ah()[Lorg/bouncycastle/asn1/bvj/zta;
+    invoke-virtual {p1}, Lorg/bouncycastle/asn1/bvj/sis;->Jh()[Lorg/bouncycastle/asn1/bvj/zta;
 
     move-result-object p1
 
@@ -1023,7 +1023,7 @@
     return v1
 
     :cond_4
-    invoke-virtual {p1}, Lorg/bouncycastle/asn1/bvj/sis;->Bh()Z
+    invoke-virtual {p1}, Lorg/bouncycastle/asn1/bvj/sis;->Kh()Z
 
     move-result v0
 
@@ -1180,13 +1180,13 @@
 .method public static zta(Ljava/lang/StringBuffer;Lorg/bouncycastle/asn1/bvj/sis;Ljava/util/Hashtable;)V
     .locals 4
 
-    invoke-virtual {p1}, Lorg/bouncycastle/asn1/bvj/sis;->Bh()Z
+    invoke-virtual {p1}, Lorg/bouncycastle/asn1/bvj/sis;->Kh()Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
-    invoke-virtual {p1}, Lorg/bouncycastle/asn1/bvj/sis;->Ah()[Lorg/bouncycastle/asn1/bvj/zta;
+    invoke-virtual {p1}, Lorg/bouncycastle/asn1/bvj/sis;->Jh()[Lorg/bouncycastle/asn1/bvj/zta;
 
     move-result-object p1
 
@@ -1649,7 +1649,7 @@
 
     move-result-object p0
 
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/bvj/tsu;->Eh()[Lorg/bouncycastle/asn1/bvj/sis;
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/bvj/tsu;->Nh()[Lorg/bouncycastle/asn1/bvj/sis;
 
     move-result-object p0
 

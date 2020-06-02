@@ -146,7 +146,7 @@
 
     move-result-object p0
 
-    invoke-static {p0, p1}, Lcom/android/server/am/irq;->ssp(Lcom/android/server/am/irq;I)V
+    invoke-static {p0, p1}, Lcom/android/server/am/irq;->cno(Lcom/android/server/am/irq;I)V
 
     :cond_1
     return-void

@@ -19,9 +19,9 @@
 
 
 # instance fields
-.field private final hc:Z
+.field private final ic:Z
 
-.field private ic:Ljava/util/Map;
+.field private jc:Ljava/util/Map;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Map<",
@@ -32,7 +32,7 @@
     .end annotation
 .end field
 
-.field private final jc:[Ljava/lang/String;
+.field private final kc:[Ljava/lang/String;
 
 .field final synthetic this$0:Lcom/android/server/OnePlusExService;
 
@@ -53,13 +53,13 @@
 
     move-result p1
 
-    iput-boolean p1, p0, Lcom/android/server/OnePlusExService$zta;->hc:Z
+    iput-boolean p1, p0, Lcom/android/server/OnePlusExService$zta;->ic:Z
 
     new-instance p1, Ljava/util/HashMap;
 
     invoke-direct {p1}, Ljava/util/HashMap;-><init>()V
 
-    iput-object p1, p0, Lcom/android/server/OnePlusExService$zta;->ic:Ljava/util/Map;
+    iput-object p1, p0, Lcom/android/server/OnePlusExService$zta;->jc:Ljava/util/Map;
 
     const-string v0, "_id"
 
@@ -79,7 +79,7 @@
 
     move-result-object p1
 
-    iput-object p1, p0, Lcom/android/server/OnePlusExService$zta;->jc:[Ljava/lang/String;
+    iput-object p1, p0, Lcom/android/server/OnePlusExService$zta;->kc:[Ljava/lang/String;
 
     return-void
 .end method
@@ -135,7 +135,7 @@
 
     move-result-object v2
 
-    iget-object v3, p0, Lcom/android/server/OnePlusExService$zta;->ic:Ljava/util/Map;
+    iget-object v3, p0, Lcom/android/server/OnePlusExService$zta;->jc:Ljava/util/Map;
 
     invoke-interface {v3}, Ljava/util/Map;->size()I
 
@@ -143,7 +143,7 @@
 
     if-eqz v3, :cond_1
 
-    iget-object v3, p0, Lcom/android/server/OnePlusExService$zta;->ic:Ljava/util/Map;
+    iget-object v3, p0, Lcom/android/server/OnePlusExService$zta;->jc:Ljava/util/Map;
 
     invoke-interface {v3, v2}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -151,7 +151,7 @@
 
     if-eqz v3, :cond_1
 
-    iget-object v3, p0, Lcom/android/server/OnePlusExService$zta;->ic:Ljava/util/Map;
+    iget-object v3, p0, Lcom/android/server/OnePlusExService$zta;->jc:Ljava/util/Map;
 
     invoke-interface {v3, v2}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -166,7 +166,7 @@
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_2
 
     :try_start_1
-    iget-boolean v4, p0, Lcom/android/server/OnePlusExService$zta;->hc:Z
+    iget-boolean v4, p0, Lcom/android/server/OnePlusExService$zta;->ic:Z
 
     if-eqz v4, :cond_2
 
@@ -210,7 +210,7 @@
     if-eq p1, v0, :cond_4
 
     :try_start_2
-    iget-object p0, p0, Lcom/android/server/OnePlusExService$zta;->ic:Ljava/util/Map;
+    iget-object p0, p0, Lcom/android/server/OnePlusExService$zta;->jc:Ljava/util/Map;
 
     new-instance p2, Ljava/lang/Integer;
 
@@ -326,7 +326,7 @@
     :try_start_2
     sget-object v6, Landroid/provider/MediaStore$Audio$Media;->INTERNAL_CONTENT_URI:Landroid/net/Uri;
 
-    iget-object v7, p0, Lcom/android/server/OnePlusExService$zta;->jc:[Ljava/lang/String;
+    iget-object v7, p0, Lcom/android/server/OnePlusExService$zta;->kc:[Ljava/lang/String;
 
     const-string v8, "composer=?"
 
@@ -386,7 +386,7 @@
 
     move-result-object v6
 
-    iget-object v7, p0, Lcom/android/server/OnePlusExService$zta;->ic:Ljava/util/Map;
+    iget-object v7, p0, Lcom/android/server/OnePlusExService$zta;->jc:Ljava/util/Map;
 
     new-instance v8, Ljava/lang/Integer;
 
@@ -493,7 +493,7 @@
 
     invoke-virtual {p1, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object p0, p0, Lcom/android/server/OnePlusExService$zta;->ic:Ljava/util/Map;
+    iget-object p0, p0, Lcom/android/server/OnePlusExService$zta;->jc:Ljava/util/Map;
 
     invoke-interface {p0}, Ljava/util/Map;->size()I
 
@@ -605,7 +605,7 @@
 
     :cond_1
     :try_start_2
-    iget-object v8, p0, Lcom/android/server/OnePlusExService$zta;->jc:[Ljava/lang/String;
+    iget-object v8, p0, Lcom/android/server/OnePlusExService$zta;->kc:[Ljava/lang/String;
 
     const-string v9, "composer=?"
 
@@ -825,7 +825,7 @@
 
     move-result-object v5
 
-    iget-boolean v6, p0, Lcom/android/server/OnePlusExService$zta;->hc:Z
+    iget-boolean v6, p0, Lcom/android/server/OnePlusExService$zta;->ic:Z
 
     if-eqz v6, :cond_0
 
@@ -918,7 +918,7 @@
 
     move-result v1
 
-    iget-boolean p0, p0, Lcom/android/server/OnePlusExService$zta;->hc:Z
+    iget-boolean p0, p0, Lcom/android/server/OnePlusExService$zta;->ic:Z
 
     if-eqz p0, :cond_1
 

@@ -150,11 +150,11 @@
     :cond_1
     iget-object p1, p0, Lcom/android/server/am/ywr;->this$0:Lcom/android/server/am/oif;
 
-    invoke-static {p1}, Lcom/android/server/am/oif;->sis(Lcom/android/server/am/oif;)Lcom/android/server/am/z;
+    invoke-static {p1}, Lcom/android/server/am/oif;->sis(Lcom/android/server/am/oif;)Lcom/android/server/am/B;
 
     move-result-object p1
 
-    invoke-virtual {p1}, Lcom/android/server/am/z;->xc()V
+    invoke-virtual {p1}, Lcom/android/server/am/B;->xc()V
 
     iget-object p0, p0, Lcom/android/server/am/ywr;->this$0:Lcom/android/server/am/oif;
 

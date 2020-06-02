@@ -24,7 +24,7 @@
 
     const/16 p1, 0x24
 
-    invoke-virtual {p0, p1}, Lorg/bouncycastle/asn1/vdw;->Z(I)V
+    invoke-virtual {p0, p1}, Lorg/bouncycastle/asn1/vdw;->ca(I)V
 
     return-void
 .end method
@@ -41,24 +41,14 @@
 
     const/16 p1, 0x24
 
-    invoke-virtual {p0, p1}, Lorg/bouncycastle/asn1/vdw;->Z(I)V
+    invoke-virtual {p0, p1}, Lorg/bouncycastle/asn1/vdw;->ca(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public bio([B)Ljava/io/OutputStream;
-    .locals 1
-
-    new-instance v0, Lorg/bouncycastle/asn1/a$zta;
-
-    invoke-direct {v0, p0, p1}, Lorg/bouncycastle/asn1/a$zta;-><init>(Lorg/bouncycastle/asn1/a;[B)V
-
-    return-object v0
-.end method
-
-.method public sg()Ljava/io/OutputStream;
+.method public Bg()Ljava/io/OutputStream;
     .locals 1
 
     const/16 v0, 0x3e8
@@ -70,4 +60,14 @@
     move-result-object p0
 
     return-object p0
+.end method
+
+.method public bio([B)Ljava/io/OutputStream;
+    .locals 1
+
+    new-instance v0, Lorg/bouncycastle/asn1/a$zta;
+
+    invoke-direct {v0, p0, p1}, Lorg/bouncycastle/asn1/a$zta;-><init>(Lorg/bouncycastle/asn1/a;[B)V
+
+    return-object v0
 .end method

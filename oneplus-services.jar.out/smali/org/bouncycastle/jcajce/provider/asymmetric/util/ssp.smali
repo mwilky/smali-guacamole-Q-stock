@@ -8,11 +8,11 @@
 
 
 # instance fields
+.field protected Fpa:Lorg/bouncycastle/crypto/gck;
+
 .field protected digest:Lorg/bouncycastle/crypto/qbh;
 
 .field protected encoding:Lorg/bouncycastle/crypto/gck/zta;
-
-.field protected qna:Lorg/bouncycastle/crypto/gck;
 
 
 # direct methods
@@ -23,7 +23,7 @@
 
     iput-object p1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/util/ssp;->digest:Lorg/bouncycastle/crypto/qbh;
 
-    iput-object p2, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/util/ssp;->qna:Lorg/bouncycastle/crypto/gck;
+    iput-object p2, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/util/ssp;->Fpa:Lorg/bouncycastle/crypto/gck;
 
     iput-object p3, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/util/ssp;->encoding:Lorg/bouncycastle/crypto/gck/zta;
 
@@ -91,7 +91,7 @@
     invoke-interface {v1, v0, v2}, Lorg/bouncycastle/crypto/qbh;->doFinal([BI)I
 
     :try_start_0
-    iget-object v1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/util/ssp;->qna:Lorg/bouncycastle/crypto/gck;
+    iget-object v1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/util/ssp;->Fpa:Lorg/bouncycastle/crypto/gck;
 
     invoke-interface {v1, v0}, Lorg/bouncycastle/crypto/wtn;->you([B)[Ljava/math/BigInteger;
 
@@ -99,7 +99,7 @@
 
     iget-object v1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/util/ssp;->encoding:Lorg/bouncycastle/crypto/gck/zta;
 
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/util/ssp;->qna:Lorg/bouncycastle/crypto/gck;
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/util/ssp;->Fpa:Lorg/bouncycastle/crypto/gck;
 
     invoke-interface {p0}, Lorg/bouncycastle/crypto/gck;->getOrder()Ljava/math/BigInteger;
 
@@ -188,7 +188,7 @@
     :try_start_0
     iget-object v1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/util/ssp;->encoding:Lorg/bouncycastle/crypto/gck/zta;
 
-    iget-object v3, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/util/ssp;->qna:Lorg/bouncycastle/crypto/gck;
+    iget-object v3, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/util/ssp;->Fpa:Lorg/bouncycastle/crypto/gck;
 
     invoke-interface {v3}, Lorg/bouncycastle/crypto/gck;->getOrder()Ljava/math/BigInteger;
 
@@ -200,7 +200,7 @@
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/util/ssp;->qna:Lorg/bouncycastle/crypto/gck;
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/util/ssp;->Fpa:Lorg/bouncycastle/crypto/gck;
 
     aget-object v1, p1, v2
 

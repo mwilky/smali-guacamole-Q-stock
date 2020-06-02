@@ -23,7 +23,7 @@
 
     move-result-object v0
 
-    invoke-static {p1}, Lorg/bouncycastle/asn1/sis;->aa(I)I
+    invoke-static {p1}, Lorg/bouncycastle/asn1/sis;->da(I)I
 
     move-result p1
 
@@ -97,7 +97,7 @@
 
     iget-object v1, p0, Lorg/bouncycastle/asn1/sis;->data:[B
 
-    iget p0, p0, Lorg/bouncycastle/asn1/sis;->wpa:I
+    iget p0, p0, Lorg/bouncycastle/asn1/sis;->Kra:I
 
     invoke-direct {v0, v1, p0}, Lorg/bouncycastle/asn1/n;-><init>([BI)V
 
@@ -283,15 +283,7 @@
 
 
 # virtual methods
-.method isConstructed()Z
-    .locals 0
-
-    const/4 p0, 0x0
-
-    return p0
-.end method
-
-.method ug()I
+.method Dg()I
     .locals 1
 
     iget-object v0, p0, Lorg/bouncycastle/asn1/sis;->data:[B
@@ -300,7 +292,7 @@
 
     add-int/lit8 v0, v0, 0x1
 
-    invoke-static {v0}, Lorg/bouncycastle/asn1/ia;->ea(I)I
+    invoke-static {v0}, Lorg/bouncycastle/asn1/ia;->ha(I)I
 
     move-result v0
 
@@ -317,6 +309,14 @@
     return v0
 .end method
 
+.method isConstructed()Z
+    .locals 0
+
+    const/4 p0, 0x0
+
+    return p0
+.end method
+
 .method zta(Lorg/bouncycastle/asn1/ugm;)V
     .locals 4
     .annotation system Ldalvik/annotation/Throws;
@@ -327,7 +327,7 @@
 
     iget-object v0, p0, Lorg/bouncycastle/asn1/sis;->data:[B
 
-    iget v1, p0, Lorg/bouncycastle/asn1/sis;->wpa:I
+    iget v1, p0, Lorg/bouncycastle/asn1/sis;->Kra:I
 
     invoke-static {v0, v1}, Lorg/bouncycastle/asn1/sis;->tsu([BI)[B
 
@@ -341,7 +341,7 @@
 
     new-array v1, v1, [B
 
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/sis;->yg()I
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/sis;->Hg()I
 
     move-result p0
 

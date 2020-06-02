@@ -15,11 +15,11 @@
 
 
 # instance fields
-.field cw:Lcom/android/server/am/n$you;
+.field Lw:Lcom/android/server/am/n$you;
 
-.field dw:I
+.field Mw:I
 
-.field ew:Z
+.field Nw:Z
 
 .field final synthetic this$1:Lcom/android/server/am/n$zta;
 
@@ -34,11 +34,11 @@
 
     const/4 p1, -0x1
 
-    iput p1, p0, Lcom/android/server/am/n$zta$zta;->dw:I
+    iput p1, p0, Lcom/android/server/am/n$zta$zta;->Mw:I
 
     const/4 p1, 0x0
 
-    iput-boolean p1, p0, Lcom/android/server/am/n$zta$zta;->ew:Z
+    iput-boolean p1, p0, Lcom/android/server/am/n$zta$zta;->Nw:Z
 
     return-void
 .end method

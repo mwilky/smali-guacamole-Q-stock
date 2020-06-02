@@ -34,18 +34,36 @@
 .method public handleMessage(Landroid/os/Message;)V
     .locals 2
 
-    iget p0, p1, Landroid/os/Message;->what:I
+    iget v0, p1, Landroid/os/Message;->what:I
 
-    const-string v0, "OPBF"
+    const-string v1, "OPBF"
 
-    sparse-switch p0, :sswitch_data_0
+    sparse-switch v0, :sswitch_data_0
 
     goto/16 :goto_2
 
     :sswitch_0
+    sget v0, Lcom/android/server/Watchdog;->mPhonePid:I
+
+    if-lez v0, :cond_0
+
+    iget-object p0, p0, Lcom/android/server/am/irq$cno;->this$0:Lcom/android/server/am/irq;
+
+    iget v0, p1, Landroid/os/Message;->arg2:I
+
+    invoke-static {p0, v0}, Lcom/android/server/am/irq;->zta(Lcom/android/server/am/irq;I)I
+
+    move-result p0
+
+    iget v0, p1, Landroid/os/Message;->arg1:I
+
+    if-ne p0, v0, :cond_0
+
     sget p0, Lcom/android/server/Watchdog;->mPhonePid:I
 
-    if-lez p0, :cond_0
+    iget p1, p1, Landroid/os/Message;->arg2:I
+
+    if-ne p0, p1, :cond_0
 
     new-instance p0, Ljava/lang/StringBuilder;
 
@@ -53,6 +71,38 @@
 
     const-string p1, "GET_GETVTDATAUSAGE_TIMEOUT kill phone process , pid = "
 
+    goto :goto_0
+
+    :sswitch_1
+    sget v0, Lcom/android/server/Watchdog;->mPhonePid:I
+
+    if-lez v0, :cond_0
+
+    iget-object p0, p0, Lcom/android/server/am/irq$cno;->this$0:Lcom/android/server/am/irq;
+
+    iget v0, p1, Landroid/os/Message;->arg2:I
+
+    invoke-static {p0, v0}, Lcom/android/server/am/irq;->zta(Lcom/android/server/am/irq;I)I
+
+    move-result p0
+
+    iget v0, p1, Landroid/os/Message;->arg1:I
+
+    if-ne p0, v0, :cond_0
+
+    sget p0, Lcom/android/server/Watchdog;->mPhonePid:I
+
+    iget p1, p1, Landroid/os/Message;->arg2:I
+
+    if-ne p0, p1, :cond_0
+
+    new-instance p0, Ljava/lang/StringBuilder;
+
+    invoke-direct {p0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string p1, "GET_CONFIGFORSUBID_TIMEOUT kill phone process , pid = "
+
+    :goto_0
     invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     sget p1, Lcom/android/server/Watchdog;->mPhonePid:I
@@ -63,29 +113,7 @@
 
     move-result-object p0
 
-    goto :goto_0
-
-    :sswitch_1
-    sget p0, Lcom/android/server/Watchdog;->mPhonePid:I
-
-    if-lez p0, :cond_0
-
-    new-instance p1, Ljava/lang/StringBuilder;
-
-    invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v1, "GET_CONFIGFORSUBID_TIMEOUT kill phone process , pid = "
-
-    invoke-virtual {p1, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p1, p0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p0
-
-    :goto_0
-    invoke-static {v0, p0}, Landroid/util/Slog;->e(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {v1, p0}, Landroid/util/Slog;->e(Ljava/lang/String;Ljava/lang/String;)I
 
     sget p0, Lcom/android/server/Watchdog;->mPhonePid:I
 
@@ -178,11 +206,21 @@
     goto :goto_2
 
     :sswitch_b
-    iget p0, p1, Landroid/os/Message;->arg1:I
+    iget-object p0, p0, Lcom/android/server/am/irq$cno;->this$0:Lcom/android/server/am/irq;
 
-    iget p1, p1, Landroid/os/Message;->arg2:I
+    iget v0, p1, Landroid/os/Message;->arg2:I
 
-    invoke-static {p0, p1}, Landroid/os/Process;->killProcessGroup(II)I
+    invoke-static {p0, v0}, Lcom/android/server/am/irq;->zta(Lcom/android/server/am/irq;I)I
+
+    move-result p0
+
+    iget v0, p1, Landroid/os/Message;->arg1:I
+
+    if-ne p0, v0, :cond_0
+
+    iget p0, p1, Landroid/os/Message;->arg2:I
+
+    invoke-static {v0, p0}, Landroid/os/Process;->killProcessGroup(II)I
 
     :cond_0
     :goto_2

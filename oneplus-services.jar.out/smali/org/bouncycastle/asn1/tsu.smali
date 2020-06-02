@@ -6,11 +6,11 @@
 # static fields
 .field public static final FALSE:Lorg/bouncycastle/asn1/tsu;
 
-.field private static final Opa:[B
-
-.field private static final Ppa:[B
-
 .field public static final TRUE:Lorg/bouncycastle/asn1/tsu;
+
+.field private static final bsa:[B
+
+.field private static final csa:[B
 
 
 # instance fields
@@ -31,13 +31,13 @@
 
     aput-byte v3, v1, v2
 
-    sput-object v1, Lorg/bouncycastle/asn1/tsu;->Opa:[B
+    sput-object v1, Lorg/bouncycastle/asn1/tsu;->bsa:[B
 
     new-array v1, v0, [B
 
     aput-byte v2, v1, v2
 
-    sput-object v1, Lorg/bouncycastle/asn1/tsu;->Ppa:[B
+    sput-object v1, Lorg/bouncycastle/asn1/tsu;->csa:[B
 
     new-instance v1, Lorg/bouncycastle/asn1/tsu;
 
@@ -61,12 +61,12 @@
 
     if-eqz p1, :cond_0
 
-    sget-object p1, Lorg/bouncycastle/asn1/tsu;->Opa:[B
+    sget-object p1, Lorg/bouncycastle/asn1/tsu;->bsa:[B
 
     goto :goto_0
 
     :cond_0
-    sget-object p1, Lorg/bouncycastle/asn1/tsu;->Ppa:[B
+    sget-object p1, Lorg/bouncycastle/asn1/tsu;->csa:[B
 
     :goto_0
     iput-object p1, p0, Lorg/bouncycastle/asn1/tsu;->value:[B
@@ -91,7 +91,7 @@
 
     if-nez v1, :cond_0
 
-    sget-object p1, Lorg/bouncycastle/asn1/tsu;->Ppa:[B
+    sget-object p1, Lorg/bouncycastle/asn1/tsu;->csa:[B
 
     :goto_0
     iput-object p1, p0, Lorg/bouncycastle/asn1/tsu;->value:[B
@@ -107,7 +107,7 @@
 
     if-ne v0, v1, :cond_1
 
-    sget-object p1, Lorg/bouncycastle/asn1/tsu;->Opa:[B
+    sget-object p1, Lorg/bouncycastle/asn1/tsu;->bsa:[B
 
     goto :goto_0
 
@@ -363,6 +363,31 @@
 
 
 # virtual methods
+.method Dg()I
+    .locals 0
+
+    const/4 p0, 0x3
+
+    return p0
+.end method
+
+.method public Ig()Z
+    .locals 1
+
+    iget-object p0, p0, Lorg/bouncycastle/asn1/tsu;->value:[B
+
+    const/4 v0, 0x0
+
+    aget-byte p0, p0, v0
+
+    if-eqz p0, :cond_0
+
+    const/4 v0, 0x1
+
+    :cond_0
+    return v0
+.end method
+
 .method public hashCode()I
     .locals 1
 
@@ -403,31 +428,6 @@
 
     :goto_0
     return-object p0
-.end method
-
-.method ug()I
-    .locals 0
-
-    const/4 p0, 0x3
-
-    return p0
-.end method
-
-.method public zg()Z
-    .locals 1
-
-    iget-object p0, p0, Lorg/bouncycastle/asn1/tsu;->value:[B
-
-    const/4 v0, 0x0
-
-    aget-byte p0, p0, v0
-
-    if-eqz p0, :cond_0
-
-    const/4 v0, 0x1
-
-    :cond_0
-    return v0
 .end method
 
 .method zta(Lorg/bouncycastle/asn1/ugm;)V

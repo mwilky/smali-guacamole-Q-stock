@@ -16,7 +16,7 @@
     return-void
 .end method
 
-.method public static Da(I)[J
+.method public static Ga(I)[J
     .locals 0
 
     new-array p0, p0, [J

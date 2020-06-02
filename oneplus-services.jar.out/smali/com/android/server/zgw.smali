@@ -28,11 +28,11 @@
 
 .field public static final TAG:Ljava/lang/String; = "OPTraffic"
 
-.field private static final Vc:I = 0x400
+.field private static final Wc:I = 0x400
 
-.field private static Wc:Z = false
+.field private static Xc:Z = false
 
-.field private static Xc:Landroid/util/ArrayMap; = null
+.field private static Yc:Landroid/util/ArrayMap; = null
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Landroid/util/ArrayMap<",
@@ -43,9 +43,9 @@
     .end annotation
 .end field
 
-.field private static final Yc:I = 0x2
+.field private static final Zc:I = 0x2
 
-.field private static final Zc:I = 0x3
+.field private static final _c:I = 0x3
 
 .field public static mInstance:Lcom/android/server/zgw;
 
@@ -53,15 +53,15 @@
 
 
 # instance fields
-.field private Qc:I
+.field private Rc:I
 
-.field private Rc:J
+.field private Sc:J
 
-.field private Sc:I
+.field private Tc:I
 
-.field private Tc:Z
+.field private Uc:Z
 
-.field private Uc:Lcom/android/server/zgw$zta;
+.field private Vc:Lcom/android/server/zgw$zta;
 
 .field private mGeneralReceiver:Landroid/content/BroadcastReceiver;
 
@@ -80,13 +80,13 @@
 
     sput-boolean v0, Lcom/android/server/zgw;->sDebug:Z
 
-    sput-boolean v0, Lcom/android/server/zgw;->Wc:Z
+    sput-boolean v0, Lcom/android/server/zgw;->Xc:Z
 
     new-instance v0, Landroid/util/ArrayMap;
 
     invoke-direct {v0}, Landroid/util/ArrayMap;-><init>()V
 
-    sput-object v0, Lcom/android/server/zgw;->Xc:Landroid/util/ArrayMap;
+    sput-object v0, Lcom/android/server/zgw;->Yc:Landroid/util/ArrayMap;
 
     return-void
 .end method
@@ -98,19 +98,19 @@
 
     const/16 v0, 0x3a98
 
-    iput v0, p0, Lcom/android/server/zgw;->Qc:I
+    iput v0, p0, Lcom/android/server/zgw;->Rc:I
 
     const-wide/32 v0, 0x100000
 
-    iput-wide v0, p0, Lcom/android/server/zgw;->Rc:J
+    iput-wide v0, p0, Lcom/android/server/zgw;->Sc:J
 
     const v0, 0x493e0
 
-    iput v0, p0, Lcom/android/server/zgw;->Sc:I
+    iput v0, p0, Lcom/android/server/zgw;->Tc:I
 
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/android/server/zgw;->Tc:Z
+    iput-boolean v0, p0, Lcom/android/server/zgw;->Uc:Z
 
     new-instance v0, Ljava/lang/Object;
 
@@ -146,7 +146,7 @@
 
     invoke-direct {v0, p0, v1}, Lcom/android/server/zgw$zta;-><init>(Lcom/android/server/zgw;Landroid/os/Looper;)V
 
-    iput-object v0, p0, Lcom/android/server/zgw;->Uc:Lcom/android/server/zgw$zta;
+    iput-object v0, p0, Lcom/android/server/zgw;->Vc:Lcom/android/server/zgw$zta;
 
     invoke-static {}, Lcom/android/server/OnePlusUtil$zta;->getInstance()Lcom/android/server/OnePlusUtil$zta;
 
@@ -160,7 +160,7 @@
 .method static synthetic access$100()Landroid/util/ArrayMap;
     .locals 1
 
-    sget-object v0, Lcom/android/server/zgw;->Xc:Landroid/util/ArrayMap;
+    sget-object v0, Lcom/android/server/zgw;->Yc:Landroid/util/ArrayMap;
 
     return-object v0
 .end method
@@ -192,7 +192,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget v1, p0, Lcom/android/server/zgw;->Sc:I
+    iget v1, p0, Lcom/android/server/zgw;->Tc:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -216,7 +216,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget v1, p0, Lcom/android/server/zgw;->Qc:I
+    iget v1, p0, Lcom/android/server/zgw;->Rc:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -240,7 +240,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-wide v1, p0, Lcom/android/server/zgw;->Rc:J
+    iget-wide v1, p0, Lcom/android/server/zgw;->Sc:J
 
     invoke-virtual {v0, v1, v2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
@@ -256,7 +256,7 @@
 
     invoke-static {v0, p0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    sget-object p0, Lcom/android/server/zgw;->Xc:Landroid/util/ArrayMap;
+    sget-object p0, Lcom/android/server/zgw;->Yc:Landroid/util/ArrayMap;
 
     monitor-enter p0
 
@@ -271,7 +271,7 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sget-object v2, Lcom/android/server/zgw;->Xc:Landroid/util/ArrayMap;
+    sget-object v2, Lcom/android/server/zgw;->Yc:Landroid/util/ArrayMap;
 
     invoke-virtual {v2}, Landroid/util/ArrayMap;->size()I
 
@@ -285,7 +285,7 @@
 
     invoke-static {v0, v1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    sget-object v0, Lcom/android/server/zgw;->Xc:Landroid/util/ArrayMap;
+    sget-object v0, Lcom/android/server/zgw;->Yc:Landroid/util/ArrayMap;
 
     invoke-virtual {v0}, Landroid/util/ArrayMap;->values()Ljava/util/Collection;
 
@@ -422,7 +422,66 @@
     throw v1
 .end method
 
-.method private pl()V
+.method private veq(J)Z
+    .locals 3
+
+    iget-object v0, p0, Lcom/android/server/zgw;->mLock:Ljava/lang/Object;
+
+    monitor-enter v0
+
+    :try_start_0
+    iget-wide v1, p0, Lcom/android/server/zgw;->Sc:J
+
+    cmp-long p0, p1, v1
+
+    if-ltz p0, :cond_0
+
+    const/4 p0, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 p0, 0x0
+
+    :goto_0
+    monitor-exit v0
+
+    return p0
+
+    :catchall_0
+    move-exception p0
+
+    monitor-exit v0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    throw p0
+.end method
+
+.method public static w()Landroid/util/ArrayMap;
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Landroid/util/ArrayMap<",
+            "Ljava/lang/Integer;",
+            "Lcom/android/server/zgw$you;",
+            ">;"
+        }
+    .end annotation
+
+    new-instance v0, Landroid/util/ArrayMap;
+
+    invoke-direct {v0}, Landroid/util/ArrayMap;-><init>()V
+
+    sget-object v1, Lcom/android/server/zgw;->Yc:Landroid/util/ArrayMap;
+
+    invoke-virtual {v0, v1}, Landroid/util/ArrayMap;->putAll(Landroid/util/ArrayMap;)V
+
+    return-object v0
+.end method
+
+.method private yl()V
     .locals 4
 
     sget-boolean v0, Lcom/android/server/zgw;->DEBUG_ONEPLUS:Z
@@ -437,7 +496,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sget-boolean v1, Lcom/android/server/zgw;->Wc:Z
+    sget-boolean v1, Lcom/android/server/zgw;->Xc:Z
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -458,13 +517,13 @@
 
     iput v1, v0, Landroid/os/Message;->what:I
 
-    iget-object v2, p0, Lcom/android/server/zgw;->Uc:Lcom/android/server/zgw$zta;
+    iget-object v2, p0, Lcom/android/server/zgw;->Vc:Lcom/android/server/zgw$zta;
 
     invoke-virtual {v2, v1}, Landroid/os/Handler;->removeMessages(I)V
 
-    iget-object v1, p0, Lcom/android/server/zgw;->Uc:Lcom/android/server/zgw$zta;
+    iget-object v1, p0, Lcom/android/server/zgw;->Vc:Lcom/android/server/zgw$zta;
 
-    iget p0, p0, Lcom/android/server/zgw;->Qc:I
+    iget p0, p0, Lcom/android/server/zgw;->Rc:I
 
     int-to-long v2, p0
 
@@ -473,14 +532,38 @@
     return-void
 .end method
 
-.method private ql()V
+.method static synthetic you(Lcom/android/server/zgw;I)I
+    .locals 0
+
+    iput p1, p0, Lcom/android/server/zgw;->Rc:I
+
+    return p1
+.end method
+
+.method static synthetic you(Lcom/android/server/zgw;J)J
+    .locals 0
+
+    iput-wide p1, p0, Lcom/android/server/zgw;->Sc:J
+
+    return-wide p1
+.end method
+
+.method static synthetic you(Lcom/android/server/zgw;)V
+    .locals 0
+
+    invoke-direct {p0}, Lcom/android/server/zgw;->dump()V
+
+    return-void
+.end method
+
+.method private zl()V
     .locals 8
 
     invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
 
     move-result-wide v0
 
-    sget-object v2, Lcom/android/server/zgw;->Xc:Landroid/util/ArrayMap;
+    sget-object v2, Lcom/android/server/zgw;->Yc:Landroid/util/ArrayMap;
 
     monitor-enter v2
 
@@ -499,7 +582,7 @@
 
     invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sget-object v5, Lcom/android/server/zgw;->Xc:Landroid/util/ArrayMap;
+    sget-object v5, Lcom/android/server/zgw;->Yc:Landroid/util/ArrayMap;
 
     invoke-virtual {v5}, Landroid/util/ArrayMap;->size()I
 
@@ -514,7 +597,7 @@
     invoke-static {v3, v4}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_0
-    sget-object v3, Lcom/android/server/zgw;->Xc:Landroid/util/ArrayMap;
+    sget-object v3, Lcom/android/server/zgw;->Yc:Landroid/util/ArrayMap;
 
     invoke-virtual {v3}, Landroid/util/ArrayMap;->entrySet()Ljava/util/Set;
 
@@ -575,7 +658,7 @@
 
     invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sget-object v7, Lcom/android/server/zgw;->Xc:Landroid/util/ArrayMap;
+    sget-object v7, Lcom/android/server/zgw;->Yc:Landroid/util/ArrayMap;
 
     invoke-virtual {v7}, Landroid/util/ArrayMap;->size()I
 
@@ -635,12 +718,12 @@
     :cond_4
     if-nez v5, :cond_5
 
-    sput-boolean v4, Lcom/android/server/zgw;->Wc:Z
+    sput-boolean v4, Lcom/android/server/zgw;->Xc:Z
 
     goto :goto_1
 
     :cond_5
-    invoke-direct {p0}, Lcom/android/server/zgw;->pl()V
+    invoke-direct {p0}, Lcom/android/server/zgw;->yl()V
 
     :goto_1
     return-void
@@ -656,93 +739,10 @@
     throw p0
 .end method
 
-.method private veq(J)Z
-    .locals 3
-
-    iget-object v0, p0, Lcom/android/server/zgw;->mLock:Ljava/lang/Object;
-
-    monitor-enter v0
-
-    :try_start_0
-    iget-wide v1, p0, Lcom/android/server/zgw;->Rc:J
-
-    cmp-long p0, p1, v1
-
-    if-ltz p0, :cond_0
-
-    const/4 p0, 0x1
-
-    goto :goto_0
-
-    :cond_0
-    const/4 p0, 0x0
-
-    :goto_0
-    monitor-exit v0
-
-    return p0
-
-    :catchall_0
-    move-exception p0
-
-    monitor-exit v0
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    throw p0
-.end method
-
-.method public static w()Landroid/util/ArrayMap;
-    .locals 2
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Landroid/util/ArrayMap<",
-            "Ljava/lang/Integer;",
-            "Lcom/android/server/zgw$you;",
-            ">;"
-        }
-    .end annotation
-
-    new-instance v0, Landroid/util/ArrayMap;
-
-    invoke-direct {v0}, Landroid/util/ArrayMap;-><init>()V
-
-    sget-object v1, Lcom/android/server/zgw;->Xc:Landroid/util/ArrayMap;
-
-    invoke-virtual {v0, v1}, Landroid/util/ArrayMap;->putAll(Landroid/util/ArrayMap;)V
-
-    return-object v0
-.end method
-
-.method static synthetic you(Lcom/android/server/zgw;I)I
-    .locals 0
-
-    iput p1, p0, Lcom/android/server/zgw;->Qc:I
-
-    return p1
-.end method
-
-.method static synthetic you(Lcom/android/server/zgw;J)J
-    .locals 0
-
-    iput-wide p1, p0, Lcom/android/server/zgw;->Rc:J
-
-    return-wide p1
-.end method
-
-.method static synthetic you(Lcom/android/server/zgw;)V
-    .locals 0
-
-    invoke-direct {p0}, Lcom/android/server/zgw;->dump()V
-
-    return-void
-.end method
-
 .method static synthetic zta(Lcom/android/server/zgw;I)I
     .locals 0
 
-    iput p1, p0, Lcom/android/server/zgw;->Sc:I
+    iput p1, p0, Lcom/android/server/zgw;->Tc:I
 
     return p1
 .end method
@@ -750,7 +750,7 @@
 .method static synthetic zta(Lcom/android/server/zgw;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/zgw;->ql()V
+    invoke-direct {p0}, Lcom/android/server/zgw;->zl()V
 
     return-void
 .end method
@@ -780,7 +780,7 @@
 
     iput p1, v0, Landroid/os/Message;->arg1:I
 
-    iget-object p0, p0, Lcom/android/server/zgw;->Uc:Lcom/android/server/zgw$zta;
+    iget-object p0, p0, Lcom/android/server/zgw;->Vc:Lcom/android/server/zgw$zta;
 
     invoke-virtual {p0, v0}, Landroid/os/Handler;->sendMessage(Landroid/os/Message;)Z
 
@@ -853,7 +853,7 @@
     return-void
 
     :cond_0
-    iput p1, p0, Lcom/android/server/zgw;->Qc:I
+    iput p1, p0, Lcom/android/server/zgw;->Rc:I
 
     return-void
 .end method
@@ -873,7 +873,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sget-boolean v1, Lcom/android/server/zgw;->Wc:Z
+    sget-boolean v1, Lcom/android/server/zgw;->Xc:Z
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -888,13 +888,13 @@
     invoke-static {v1, v0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_0
-    sget-boolean v0, Lcom/android/server/zgw;->Wc:Z
+    sget-boolean v0, Lcom/android/server/zgw;->Xc:Z
 
     if-nez v0, :cond_1
 
     const/4 v0, 0x1
 
-    sput-boolean v0, Lcom/android/server/zgw;->Wc:Z
+    sput-boolean v0, Lcom/android/server/zgw;->Xc:Z
 
     new-instance v1, Landroid/os/Message;
 
@@ -902,7 +902,7 @@
 
     iput v0, v1, Landroid/os/Message;->what:I
 
-    iget-object p0, p0, Lcom/android/server/zgw;->Uc:Lcom/android/server/zgw$zta;
+    iget-object p0, p0, Lcom/android/server/zgw;->Vc:Lcom/android/server/zgw$zta;
 
     invoke-virtual {p0, v1}, Landroid/os/Handler;->sendMessage(Landroid/os/Message;)Z
 
@@ -913,7 +913,7 @@
 .method public x()Z
     .locals 0
 
-    iget-boolean p0, p0, Lcom/android/server/zgw;->Tc:Z
+    iget-boolean p0, p0, Lcom/android/server/zgw;->Uc:Z
 
     return p0
 .end method
@@ -933,7 +933,7 @@
 
     iput-object p2, v0, Landroid/os/Message;->obj:Ljava/lang/Object;
 
-    iget-object p0, p0, Lcom/android/server/zgw;->Uc:Lcom/android/server/zgw$zta;
+    iget-object p0, p0, Lcom/android/server/zgw;->Vc:Lcom/android/server/zgw$zta;
 
     invoke-virtual {p0, v0}, Landroid/os/Handler;->sendMessage(Landroid/os/Message;)Z
 
@@ -957,7 +957,7 @@
     monitor-enter v0
 
     :try_start_0
-    iput-wide p1, p0, Lcom/android/server/zgw;->Rc:J
+    iput-wide p1, p0, Lcom/android/server/zgw;->Sc:J
 
     monitor-exit v0
 

@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field private nBa:I
+.field private BDa:I
 
 
 # direct methods
@@ -37,7 +37,7 @@
 
     invoke-direct {p0, p1}, Lorg/bouncycastle/crypto/wtn/cjf;-><init>([B)V
 
-    iput p2, p0, Lorg/bouncycastle/crypto/wtn/fto;->nBa:I
+    iput p2, p0, Lorg/bouncycastle/crypto/wtn/fto;->BDa:I
 
     return-void
 .end method
@@ -47,7 +47,7 @@
 .method public getEffectiveKeyBits()I
     .locals 0
 
-    iget p0, p0, Lorg/bouncycastle/crypto/wtn/fto;->nBa:I
+    iget p0, p0, Lorg/bouncycastle/crypto/wtn/fto;->BDa:I
 
     return p0
 .end method

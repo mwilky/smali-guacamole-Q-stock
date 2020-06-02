@@ -70,7 +70,7 @@
 
     move-result-object p1
 
-    invoke-static {p1}, Lcom/oneplus/android/server/vdb;->ka(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p1}, Lcom/oneplus/android/server/vdb;->ma(Ljava/lang/String;)Ljava/lang/String;
 
     invoke-static {p0}, Lcom/oneplus/android/server/vdb;->access$302(Z)Z
 
@@ -81,7 +81,7 @@
 
     const-string p0, ""
 
-    invoke-static {p0}, Lcom/oneplus/android/server/vdb;->ka(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p0}, Lcom/oneplus/android/server/vdb;->ma(Ljava/lang/String;)Ljava/lang/String;
 
     invoke-static {v1}, Lcom/oneplus/android/server/vdb;->access$302(Z)Z
 

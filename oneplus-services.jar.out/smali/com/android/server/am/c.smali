@@ -87,7 +87,7 @@
 
     if-eqz v3, :cond_3
 
-    invoke-static {v12}, Lcom/android/server/am/OnePlusHighPowerDetector;->vju(Z)Z
+    invoke-static {v12}, Lcom/android/server/am/OnePlusHighPowerDetector;->bud(Z)Z
 
     new-array v1, v11, [I
 
@@ -158,7 +158,7 @@
 
     if-eqz v3, :cond_6
 
-    invoke-static {v11}, Lcom/android/server/am/OnePlusHighPowerDetector;->vju(Z)Z
+    invoke-static {v11}, Lcom/android/server/am/OnePlusHighPowerDetector;->bud(Z)Z
 
     new-array v1, v11, [I
 
@@ -973,7 +973,7 @@
 
     iget-object v0, v0, Lcom/android/server/am/c;->this$0:Lcom/android/server/am/OnePlusHighPowerDetector;
 
-    sget v1, Lcom/android/server/am/OnePlusHighPowerDetector;->Xt:I
+    sget v1, Lcom/android/server/am/OnePlusHighPowerDetector;->Au:I
 
     invoke-static {v0, v12, v1}, Lcom/android/server/am/OnePlusHighPowerDetector;->zta(Lcom/android/server/am/OnePlusHighPowerDetector;II)I
 
@@ -981,7 +981,7 @@
 
     if-nez v0, :cond_1d
 
-    invoke-static {}, Lcom/android/server/am/OnePlusHighPowerDetector;->Zb()Lcom/android/server/am/ActivityManagerService;
+    invoke-static {}, Lcom/android/server/am/OnePlusHighPowerDetector;->Yb()Lcom/android/server/am/ActivityManagerService;
 
     move-result-object v1
 
@@ -1008,7 +1008,7 @@
 
     move-result-object v2
 
-    sget-object v3, Lcom/android/server/am/OnePlusHighPowerDetector;->eu:[I
+    sget-object v3, Lcom/android/server/am/OnePlusHighPowerDetector;->Iu:[I
 
     aget v3, v3, v12
 

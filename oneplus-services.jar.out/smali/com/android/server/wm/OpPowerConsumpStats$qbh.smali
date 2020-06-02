@@ -15,15 +15,15 @@
 
 
 # instance fields
-.field Gf:Lcom/android/server/wm/OpPowerConsumpStats$dma;
+.field RS:Z
+
+.field bg:Lcom/android/server/wm/OpPowerConsumpStats$dma;
 
 .field mTime:J
 
 .field tag:Ljava/lang/String;
 
 .field final synthetic this$0:Lcom/android/server/wm/OpPowerConsumpStats;
-
-.field yR:Z
 
 
 # direct methods
@@ -44,7 +44,7 @@
 
     invoke-direct {p1, v0}, Lcom/android/server/wm/OpPowerConsumpStats$dma;-><init>(Lcom/android/server/wm/OpPowerConsumpStats;)V
 
-    iput-object p1, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->Gf:Lcom/android/server/wm/OpPowerConsumpStats$dma;
+    iput-object p1, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->bg:Lcom/android/server/wm/OpPowerConsumpStats$dma;
 
     iput-object p2, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->tag:Ljava/lang/String;
 
@@ -104,7 +104,7 @@
 
     iget-wide v0, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->mTime:J
 
-    iget-object p0, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->Gf:Lcom/android/server/wm/OpPowerConsumpStats$dma;
+    iget-object p0, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->bg:Lcom/android/server/wm/OpPowerConsumpStats$dma;
 
     invoke-virtual {p0}, Lcom/android/server/wm/OpPowerConsumpStats$dma;->T()J
 
@@ -298,7 +298,7 @@
 
 
 # virtual methods
-.method public declared-synchronized Rc()V
+.method public declared-synchronized Yc()V
     .locals 4
 
     monitor-enter p0
@@ -322,7 +322,7 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean v2, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->yR:Z
+    iget-boolean v2, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->RS:Z
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -416,7 +416,7 @@
     monitor-enter p0
 
     :try_start_0
-    invoke-static {}, Lcom/android/server/wm/OpPowerConsumpStats;->fe()Z
+    invoke-static {}, Lcom/android/server/wm/OpPowerConsumpStats;->me()Z
 
     move-result v0
 
@@ -453,9 +453,9 @@
 
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->yR:Z
+    iput-boolean v0, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->RS:Z
 
-    iget-object v0, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->Gf:Lcom/android/server/wm/OpPowerConsumpStats$dma;
+    iget-object v0, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->bg:Lcom/android/server/wm/OpPowerConsumpStats$dma;
 
     invoke-virtual {v0}, Lcom/android/server/wm/OpPowerConsumpStats$dma;->reset()V
     :try_end_0
@@ -479,7 +479,7 @@
     monitor-enter p0
 
     :try_start_0
-    iget-boolean v0, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->yR:Z
+    iget-boolean v0, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->RS:Z
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -493,7 +493,7 @@
 
     :cond_0
     :try_start_1
-    invoke-static {}, Lcom/android/server/wm/OpPowerConsumpStats;->fe()Z
+    invoke-static {}, Lcom/android/server/wm/OpPowerConsumpStats;->me()Z
 
     move-result v0
 
@@ -524,9 +524,9 @@
     invoke-static {v0, v2}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_1
-    iput-boolean v1, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->yR:Z
+    iput-boolean v1, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->RS:Z
 
-    iget-object v0, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->Gf:Lcom/android/server/wm/OpPowerConsumpStats$dma;
+    iget-object v0, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->bg:Lcom/android/server/wm/OpPowerConsumpStats$dma;
 
     invoke-virtual {v0}, Lcom/android/server/wm/OpPowerConsumpStats$dma;->start()Lcom/android/server/wm/OpPowerConsumpStats$dma;
     :try_end_1
@@ -550,7 +550,7 @@
     monitor-enter p0
 
     :try_start_0
-    iget-boolean v0, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->yR:Z
+    iget-boolean v0, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->RS:Z
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -564,11 +564,11 @@
     const/4 v0, 0x0
 
     :try_start_1
-    iput-boolean v0, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->yR:Z
+    iput-boolean v0, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->RS:Z
 
     iget-wide v0, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->mTime:J
 
-    iget-object v2, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->Gf:Lcom/android/server/wm/OpPowerConsumpStats$dma;
+    iget-object v2, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->bg:Lcom/android/server/wm/OpPowerConsumpStats$dma;
 
     invoke-virtual {v2}, Lcom/android/server/wm/OpPowerConsumpStats$dma;->stop()J
 
@@ -578,7 +578,7 @@
 
     iput-wide v0, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->mTime:J
 
-    invoke-static {}, Lcom/android/server/wm/OpPowerConsumpStats;->fe()Z
+    invoke-static {}, Lcom/android/server/wm/OpPowerConsumpStats;->me()Z
 
     move-result v0
 
@@ -613,7 +613,7 @@
     invoke-static {v0, v1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_1
-    iget-object v0, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->Gf:Lcom/android/server/wm/OpPowerConsumpStats$dma;
+    iget-object v0, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->bg:Lcom/android/server/wm/OpPowerConsumpStats$dma;
 
     invoke-virtual {v0}, Lcom/android/server/wm/OpPowerConsumpStats$dma;->reset()V
     :try_end_1

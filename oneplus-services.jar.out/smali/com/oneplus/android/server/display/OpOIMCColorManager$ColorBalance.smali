@@ -78,7 +78,7 @@
 
     iget-object v0, p0, Lcom/oneplus/android/server/display/OpOIMCColorManager$ColorBalance;->this$0:Lcom/oneplus/android/server/display/OpOIMCColorManager;
 
-    iget v0, v0, Lcom/oneplus/android/server/display/OpOIMCColorManager;->Bda:I
+    iget v0, v0, Lcom/oneplus/android/server/display/OpOIMCColorManager;->Sea:I
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -98,7 +98,7 @@
 
     iget-object p1, p0, Lcom/oneplus/android/server/display/OpOIMCColorManager$ColorBalance;->this$0:Lcom/oneplus/android/server/display/OpOIMCColorManager;
 
-    iget v1, p1, Lcom/oneplus/android/server/display/OpOIMCColorManager;->Bda:I
+    iget v1, p1, Lcom/oneplus/android/server/display/OpOIMCColorManager;->Sea:I
 
     if-eqz v1, :cond_2
 
@@ -142,7 +142,7 @@
     :goto_1
     iget-object p0, p0, Lcom/oneplus/android/server/display/OpOIMCColorManager$ColorBalance;->this$0:Lcom/oneplus/android/server/display/OpOIMCColorManager;
 
-    iput v0, p0, Lcom/oneplus/android/server/display/OpOIMCColorManager;->Bda:I
+    iput v0, p0, Lcom/oneplus/android/server/display/OpOIMCColorManager;->Sea:I
 
     const/4 p0, 0x0
 
@@ -162,7 +162,7 @@
 
     iget-object v0, p0, Lcom/oneplus/android/server/display/OpOIMCColorManager$ColorBalance;->this$0:Lcom/oneplus/android/server/display/OpOIMCColorManager;
 
-    iget v0, v0, Lcom/oneplus/android/server/display/OpOIMCColorManager;->Bda:I
+    iget v0, v0, Lcom/oneplus/android/server/display/OpOIMCColorManager;->Sea:I
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -176,7 +176,7 @@
 
     iget-object p1, p0, Lcom/oneplus/android/server/display/OpOIMCColorManager$ColorBalance;->this$0:Lcom/oneplus/android/server/display/OpOIMCColorManager;
 
-    iget v0, p1, Lcom/oneplus/android/server/display/OpOIMCColorManager;->Bda:I
+    iget v0, p1, Lcom/oneplus/android/server/display/OpOIMCColorManager;->Sea:I
 
     const/4 v1, 0x0
 
@@ -194,7 +194,7 @@
 
     iget-object p0, p0, Lcom/oneplus/android/server/display/OpOIMCColorManager$ColorBalance;->this$0:Lcom/oneplus/android/server/display/OpOIMCColorManager;
 
-    iput v1, p0, Lcom/oneplus/android/server/display/OpOIMCColorManager;->Bda:I
+    iput v1, p0, Lcom/oneplus/android/server/display/OpOIMCColorManager;->Sea:I
 
     :cond_0
     return v1

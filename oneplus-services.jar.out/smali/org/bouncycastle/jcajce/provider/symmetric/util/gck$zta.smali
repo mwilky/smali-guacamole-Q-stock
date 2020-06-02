@@ -23,7 +23,7 @@
     return-void
 .end method
 
-.method private static a(II)Lorg/bouncycastle/crypto/gwm;
+.method private static b(II)Lorg/bouncycastle/crypto/gwm;
     .locals 6
 
     const/4 v0, 0x1
@@ -322,7 +322,7 @@
 .method public static zta(Ljavax/crypto/SecretKey;IIILjavax/crypto/spec/PBEParameterSpec;)Lorg/bouncycastle/crypto/kth;
     .locals 1
 
-    invoke-static {p1, p2}, Lorg/bouncycastle/jcajce/provider/symmetric/util/gck$zta;->a(II)Lorg/bouncycastle/crypto/gwm;
+    invoke-static {p1, p2}, Lorg/bouncycastle/jcajce/provider/symmetric/util/gck$zta;->b(II)Lorg/bouncycastle/crypto/gwm;
 
     move-result-object p1
 
@@ -344,7 +344,7 @@
 
     invoke-virtual {p1, p0, v0, p4}, Lorg/bouncycastle/crypto/gwm;->zta([B[BI)V
 
-    invoke-virtual {p1, p3}, Lorg/bouncycastle/crypto/gwm;->ga(I)Lorg/bouncycastle/crypto/kth;
+    invoke-virtual {p1, p3}, Lorg/bouncycastle/crypto/gwm;->ja(I)Lorg/bouncycastle/crypto/kth;
 
     move-result-object p0
 
@@ -370,7 +370,7 @@
 .method public static zta(Ljavax/crypto/spec/PBEKeySpec;III)Lorg/bouncycastle/crypto/kth;
     .locals 1
 
-    invoke-static {p1, p2}, Lorg/bouncycastle/jcajce/provider/symmetric/util/gck$zta;->a(II)Lorg/bouncycastle/crypto/gwm;
+    invoke-static {p1, p2}, Lorg/bouncycastle/jcajce/provider/symmetric/util/gck$zta;->b(II)Lorg/bouncycastle/crypto/gwm;
 
     move-result-object p2
 
@@ -388,7 +388,7 @@
 
     invoke-virtual {p2, p1, v0, p0}, Lorg/bouncycastle/crypto/gwm;->zta([B[BI)V
 
-    invoke-virtual {p2, p3}, Lorg/bouncycastle/crypto/gwm;->ga(I)Lorg/bouncycastle/crypto/kth;
+    invoke-virtual {p2, p3}, Lorg/bouncycastle/crypto/gwm;->ja(I)Lorg/bouncycastle/crypto/kth;
 
     move-result-object p0
 
@@ -414,7 +414,7 @@
 .method public static zta(Ljavax/crypto/spec/PBEKeySpec;IIII)Lorg/bouncycastle/crypto/kth;
     .locals 1
 
-    invoke-static {p1, p2}, Lorg/bouncycastle/jcajce/provider/symmetric/util/gck$zta;->a(II)Lorg/bouncycastle/crypto/gwm;
+    invoke-static {p1, p2}, Lorg/bouncycastle/jcajce/provider/symmetric/util/gck$zta;->b(II)Lorg/bouncycastle/crypto/gwm;
 
     move-result-object p2
 
@@ -480,11 +480,11 @@
 
     move-result v0
 
-    invoke-virtual {p0}, Lorg/bouncycastle/jcajce/provider/symmetric/util/BCPBEKey;->Kf()I
+    invoke-virtual {p0}, Lorg/bouncycastle/jcajce/provider/symmetric/util/BCPBEKey;->Tf()I
 
     move-result v1
 
-    invoke-static {v0, v1}, Lorg/bouncycastle/jcajce/provider/symmetric/util/gck$zta;->a(II)Lorg/bouncycastle/crypto/gwm;
+    invoke-static {v0, v1}, Lorg/bouncycastle/jcajce/provider/symmetric/util/gck$zta;->b(II)Lorg/bouncycastle/crypto/gwm;
 
     move-result-object v0
 
@@ -506,7 +506,7 @@
 
     move-result p0
 
-    invoke-virtual {v0, p0}, Lorg/bouncycastle/crypto/gwm;->ga(I)Lorg/bouncycastle/crypto/kth;
+    invoke-virtual {v0, p0}, Lorg/bouncycastle/crypto/gwm;->ja(I)Lorg/bouncycastle/crypto/kth;
 
     move-result-object p0
 
@@ -537,11 +537,11 @@
 
     move-result v0
 
-    invoke-virtual {p0}, Lorg/bouncycastle/jcajce/provider/symmetric/util/BCPBEKey;->Kf()I
+    invoke-virtual {p0}, Lorg/bouncycastle/jcajce/provider/symmetric/util/BCPBEKey;->Tf()I
 
     move-result v1
 
-    invoke-static {v0, v1}, Lorg/bouncycastle/jcajce/provider/symmetric/util/gck$zta;->a(II)Lorg/bouncycastle/crypto/gwm;
+    invoke-static {v0, v1}, Lorg/bouncycastle/jcajce/provider/symmetric/util/gck$zta;->b(II)Lorg/bouncycastle/crypto/gwm;
 
     move-result-object v0
 
@@ -549,7 +549,7 @@
 
     move-result-object v1
 
-    invoke-virtual {p0}, Lorg/bouncycastle/jcajce/provider/symmetric/util/BCPBEKey;->Bj()Z
+    invoke-virtual {p0}, Lorg/bouncycastle/jcajce/provider/symmetric/util/BCPBEKey;->Kj()Z
 
     move-result v2
 
@@ -570,7 +570,7 @@
 
     invoke-virtual {v0, v1, v2, v3}, Lorg/bouncycastle/crypto/gwm;->zta([B[BI)V
 
-    invoke-virtual {p0}, Lorg/bouncycastle/jcajce/provider/symmetric/util/BCPBEKey;->Aj()I
+    invoke-virtual {p0}, Lorg/bouncycastle/jcajce/provider/symmetric/util/BCPBEKey;->Jj()I
 
     move-result v1
 
@@ -580,7 +580,7 @@
 
     move-result v1
 
-    invoke-virtual {p0}, Lorg/bouncycastle/jcajce/provider/symmetric/util/BCPBEKey;->Aj()I
+    invoke-virtual {p0}, Lorg/bouncycastle/jcajce/provider/symmetric/util/BCPBEKey;->Jj()I
 
     move-result v2
 
@@ -713,7 +713,7 @@
 
     check-cast p5, Ljavax/crypto/spec/PBEParameterSpec;
 
-    invoke-static {p1, p2}, Lorg/bouncycastle/jcajce/provider/symmetric/util/gck$zta;->a(II)Lorg/bouncycastle/crypto/gwm;
+    invoke-static {p1, p2}, Lorg/bouncycastle/jcajce/provider/symmetric/util/gck$zta;->b(II)Lorg/bouncycastle/crypto/gwm;
 
     move-result-object p2
 

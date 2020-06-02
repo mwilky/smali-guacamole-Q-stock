@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field private oxb:Ljava/lang/String;
+.field private cjf:Ljava/lang/String;
 
 .field final synthetic this$0:Lcom/android/server/wm/OPAppSwitchSettings;
 
@@ -30,7 +30,7 @@
 
     invoke-direct {p0, p2, p1}, Landroid/os/FileObserver;-><init>(Ljava/lang/String;I)V
 
-    iput-object p2, p0, Lcom/android/server/wm/OPAppSwitchSettings$zta;->oxb:Ljava/lang/String;
+    iput-object p2, p0, Lcom/android/server/wm/OPAppSwitchSettings$zta;->cjf:Ljava/lang/String;
 
     return-void
 .end method
@@ -75,7 +75,7 @@
 
     if-ne p1, p2, :cond_1
 
-    iget-object p1, p0, Lcom/android/server/wm/OPAppSwitchSettings$zta;->oxb:Ljava/lang/String;
+    iget-object p1, p0, Lcom/android/server/wm/OPAppSwitchSettings$zta;->cjf:Ljava/lang/String;
 
     const-string p2, "data/oneplus/ads/appswitch/sys_app_switch_config.xml"
 

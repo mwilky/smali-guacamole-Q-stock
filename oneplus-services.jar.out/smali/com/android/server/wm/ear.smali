@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/server/wm/veq;->eq()V
+    value = Lcom/android/server/wm/cgv;->yq()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/server/wm/veq;
+.field final synthetic this$0:Lcom/android/server/wm/cgv;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/server/wm/veq;)V
+.method constructor <init>(Lcom/android/server/wm/cgv;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/android/server/wm/ear;->this$0:Lcom/android/server/wm/veq;
+    iput-object p1, p0, Lcom/android/server/wm/ear;->this$0:Lcom/android/server/wm/cgv;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -37,9 +37,9 @@
 .method public onGlobalLayout()V
     .locals 1
 
-    iget-object v0, p0, Lcom/android/server/wm/ear;->this$0:Lcom/android/server/wm/veq;
+    iget-object v0, p0, Lcom/android/server/wm/ear;->this$0:Lcom/android/server/wm/cgv;
 
-    iget-object v0, v0, Lcom/android/server/wm/veq;->JU:Landroid/view/View;
+    iget-object v0, v0, Lcom/android/server/wm/cgv;->aW:Landroid/view/View;
 
     if-eqz v0, :cond_0
 
@@ -49,15 +49,15 @@
 
     invoke-virtual {v0, p0}, Landroid/view/ViewTreeObserver;->removeOnGlobalLayoutListener(Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;)V
 
-    iget-object p0, p0, Lcom/android/server/wm/ear;->this$0:Lcom/android/server/wm/veq;
+    iget-object p0, p0, Lcom/android/server/wm/ear;->this$0:Lcom/android/server/wm/cgv;
 
-    iget-object p0, p0, Lcom/android/server/wm/veq;->JU:Landroid/view/View;
+    iget-object p0, p0, Lcom/android/server/wm/cgv;->aW:Landroid/view/View;
 
     invoke-virtual {p0}, Landroid/view/View;->getMeasuredWidth()I
 
     move-result p0
 
-    sput p0, Lcom/android/server/wm/veq;->dV:I
+    sput p0, Lcom/android/server/wm/cgv;->wW:I
 
     sget-boolean p0, Landroid/os/Build;->DEBUG_ONEPLUS:Z
 
@@ -71,7 +71,7 @@
 
     invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sget v0, Lcom/android/server/wm/veq;->dV:I
+    sget v0, Lcom/android/server/wm/cgv;->wW:I
 
     invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 

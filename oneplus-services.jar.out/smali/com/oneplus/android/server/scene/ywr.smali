@@ -40,7 +40,7 @@
 
     move-result p1
 
-    invoke-virtual {p0, p1}, Lcom/oneplus/android/server/scene/qbh;->W(I)V
+    invoke-virtual {p0, p1}, Lcom/oneplus/android/server/scene/qbh;->Z(I)V
 
     return-void
 .end method

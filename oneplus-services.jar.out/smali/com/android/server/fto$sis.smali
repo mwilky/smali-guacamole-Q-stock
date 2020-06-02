@@ -42,18 +42,18 @@
 
     const-string p1, "CommonFrontMonitor"
 
-    const-string v0, "Video enhancer setting changed!"
+    const-string v0, "[SMART5G] SMART5G changed!"
 
     invoke-static {p1, v0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_0
     iget-object p0, p0, Lcom/android/server/fto$sis;->this$0:Lcom/android/server/fto;
 
-    invoke-static {p0}, Lcom/android/server/fto;->cno(Lcom/android/server/fto;)Landroid/os/Handler;
+    invoke-static {p0}, Lcom/android/server/fto;->sis(Lcom/android/server/fto;)Landroid/os/Handler;
 
     move-result-object p0
 
-    const/4 p1, 0x3
+    const/4 p1, 0x4
 
     invoke-virtual {p0, p1}, Landroid/os/Handler;->sendEmptyMessage(I)Z
 

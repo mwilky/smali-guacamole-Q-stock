@@ -25,7 +25,7 @@
 
 
 # virtual methods
-.method protected Xi()Lorg/bouncycastle/asn1/ibl/vju;
+.method protected fj()Lorg/bouncycastle/asn1/ibl/vju;
     .locals 10
 
     new-instance p0, Lyou/zta/sis/zta/you/tsu;

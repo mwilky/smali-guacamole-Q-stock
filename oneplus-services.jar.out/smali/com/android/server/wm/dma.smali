@@ -13,11 +13,11 @@
 
 
 # instance fields
-.field private jQ:Z
-
 .field private mActivityTaskManager:Lcom/android/server/wm/ActivityTaskManagerService;
 
 .field private mWindowManager:Lcom/android/server/wm/WindowManagerService;
+
+.field private xR:Z
 
 
 # direct methods
@@ -42,7 +42,7 @@
 
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/android/server/wm/dma;->jQ:Z
+    iput-boolean v0, p0, Lcom/android/server/wm/dma;->xR:Z
 
     return-void
 .end method
@@ -64,7 +64,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean v1, p0, Lcom/android/server/wm/dma;->jQ:Z
+    iget-boolean v1, p0, Lcom/android/server/wm/dma;->xR:Z
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -77,7 +77,7 @@
     invoke-static {v1, v0}, Landroid/util/Slog;->v(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_0
-    iget-boolean p0, p0, Lcom/android/server/wm/dma;->jQ:Z
+    iget-boolean p0, p0, Lcom/android/server/wm/dma;->xR:Z
 
     return p0
 .end method
@@ -222,7 +222,7 @@
     invoke-static {v1, v0}, Landroid/util/Slog;->v(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_0
-    iput-boolean p1, p0, Lcom/android/server/wm/dma;->jQ:Z
+    iput-boolean p1, p0, Lcom/android/server/wm/dma;->xR:Z
 
     return-void
 .end method

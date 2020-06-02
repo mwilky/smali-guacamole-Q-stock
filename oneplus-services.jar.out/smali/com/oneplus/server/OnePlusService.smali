@@ -37,9 +37,9 @@
 
     sput-boolean v0, Lcom/oneplus/server/OnePlusService;->DEBUG:Z
 
-    new-instance v0, Lcom/oneplus/server/cno;
+    new-instance v0, Lcom/oneplus/server/bio;
 
-    invoke-direct {v0}, Lcom/oneplus/server/cno;-><init>()V
+    invoke-direct {v0}, Lcom/oneplus/server/bio;-><init>()V
 
     sput-object v0, Lcom/oneplus/server/OnePlusService;->CREATOR:Landroid/util/Singleton;
 
@@ -86,8 +86,19 @@
 
 # virtual methods
 .method public disableTheme(Ljava/lang/String;)V
-    .locals 0
+    .locals 2
 
+    invoke-static {}, Landroid/os/Binder;->getCallingUid()I
+
+    move-result v0
+
+    const/16 v1, 0x3e8
+
+    if-eq v0, v1, :cond_0
+
+    return-void
+
+    :cond_0
     iget-object p0, p0, Lcom/oneplus/server/OnePlusService;->mOnePlusThemeController:Lcom/oneplus/server/zta/sis;
 
     invoke-virtual {p0, p1}, Lcom/oneplus/server/zta/sis;->disableTheme(Ljava/lang/String;)V
@@ -96,12 +107,40 @@
 .end method
 
 .method public enableTheme(Ljava/lang/String;)V
-    .locals 0
+    .locals 2
 
+    invoke-static {}, Landroid/os/Binder;->getCallingUid()I
+
+    move-result v0
+
+    const/16 v1, 0x3e8
+
+    if-eq v0, v1, :cond_0
+
+    return-void
+
+    :cond_0
     iget-object p0, p0, Lcom/oneplus/server/OnePlusService;->mOnePlusThemeController:Lcom/oneplus/server/zta/sis;
 
     invoke-virtual {p0, p1}, Lcom/oneplus/server/zta/sis;->enableTheme(Ljava/lang/String;)V
 
+    return-void
+.end method
+
+.method public flingEvent(Ljava/lang/String;I)V
+    .locals 0
+
+    sget-boolean p0, Lcom/oneplus/server/DynamicVsyncManager;->Gja:Z
+
+    if-eqz p0, :cond_0
+
+    invoke-static {}, Lcom/oneplus/server/DynamicVsyncManager;->getInstance()Lcom/oneplus/server/DynamicVsyncManager;
+
+    move-result-object p0
+
+    invoke-virtual {p0, p1, p2}, Lcom/oneplus/server/DynamicVsyncManager;->flingEvent(Ljava/lang/String;I)V
+
+    :cond_0
     return-void
 .end method
 
@@ -184,6 +223,29 @@
     invoke-direct {p0}, Ljava/util/ArrayList;-><init>()V
 
     return-object p0
+.end method
+
+.method public getDynamicVsyncConfig(Ljava/lang/String;)I
+    .locals 0
+
+    sget-boolean p0, Lcom/oneplus/server/DynamicVsyncManager;->Gja:Z
+
+    if-eqz p0, :cond_0
+
+    invoke-static {}, Lcom/oneplus/server/DynamicVsyncManager;->getInstance()Lcom/oneplus/server/DynamicVsyncManager;
+
+    move-result-object p0
+
+    invoke-virtual {p0, p1}, Lcom/oneplus/server/DynamicVsyncManager;->getDynamicVsyncConfig(Ljava/lang/String;)I
+
+    move-result p0
+
+    return p0
+
+    :cond_0
+    const/4 p0, 0x0
+
+    return p0
 .end method
 
 .method public getGameMultiTouchList()Ljava/util/List;
@@ -302,8 +364,19 @@
 .end method
 
 .method public processDisableThemeCategory(Ljava/lang/String;Ljava/lang/String;)V
-    .locals 0
+    .locals 2
 
+    invoke-static {}, Landroid/os/Binder;->getCallingUid()I
+
+    move-result v0
+
+    const/16 v1, 0x3e8
+
+    if-eq v0, v1, :cond_0
+
+    return-void
+
+    :cond_0
     iget-object p0, p0, Lcom/oneplus/server/OnePlusService;->mOnePlusThemeController:Lcom/oneplus/server/zta/sis;
 
     invoke-virtual {p0, p1, p2}, Lcom/oneplus/server/zta/sis;->processDisableThemeCategory(Ljava/lang/String;Ljava/lang/String;)V
@@ -312,8 +385,19 @@
 .end method
 
 .method public processEnableThemeCategory(Ljava/lang/String;Ljava/lang/String;)V
-    .locals 0
+    .locals 2
 
+    invoke-static {}, Landroid/os/Binder;->getCallingUid()I
+
+    move-result v0
+
+    const/16 v1, 0x3e8
+
+    if-eq v0, v1, :cond_0
+
+    return-void
+
+    :cond_0
     iget-object p0, p0, Lcom/oneplus/server/OnePlusService;->mOnePlusThemeController:Lcom/oneplus/server/zta/sis;
 
     invoke-virtual {p0, p1, p2}, Lcom/oneplus/server/zta/sis;->processEnableThemeCategory(Ljava/lang/String;Ljava/lang/String;)V
@@ -368,6 +452,23 @@
     return-void
 .end method
 
+.method public resume(Ljava/lang/String;)V
+    .locals 0
+
+    sget-boolean p0, Lcom/oneplus/server/DynamicVsyncManager;->Gja:Z
+
+    if-eqz p0, :cond_0
+
+    invoke-static {}, Lcom/oneplus/server/DynamicVsyncManager;->getInstance()Lcom/oneplus/server/DynamicVsyncManager;
+
+    move-result-object p0
+
+    invoke-virtual {p0, p1}, Lcom/oneplus/server/DynamicVsyncManager;->resume(Ljava/lang/String;)V
+
+    :cond_0
+    return-void
+.end method
+
 .method public setAppControlMode(Ljava/lang/String;II)I
     .locals 0
 
@@ -416,7 +517,7 @@
 .end method
 
 .method public systemReady()V
-    .locals 1
+    .locals 2
 
     iget-object v0, p0, Lcom/oneplus/server/OnePlusService;->mContext:Landroid/content/Context;
 
@@ -436,7 +537,7 @@
 
     iget-object v0, p0, Lcom/oneplus/server/OnePlusService;->mOnePlusThemeController:Lcom/oneplus/server/zta/sis;
 
-    invoke-virtual {v0}, Lcom/oneplus/server/zta/sis;->Hf()V
+    invoke-virtual {v0}, Lcom/oneplus/server/zta/sis;->Qf()V
 
     invoke-static {}, Lcom/android/server/fto;->getInstance()Lcom/android/server/fto;
 
@@ -446,9 +547,44 @@
 
     iget-object v0, p0, Lcom/oneplus/server/OnePlusService;->mOpCommonFrontMonitor:Lcom/android/server/fto;
 
+    iget-object v1, p0, Lcom/oneplus/server/OnePlusService;->mContext:Landroid/content/Context;
+
+    invoke-virtual {v0, v1}, Lcom/android/server/fto;->init(Landroid/content/Context;)V
+
+    sget-boolean v0, Lcom/oneplus/server/DynamicVsyncManager;->Gja:Z
+
+    if-nez v0, :cond_0
+
+    sget-boolean v0, Lcom/oneplus/server/DynamicVsyncManager;->FEATURE_EXTREME_ENABLE:Z
+
+    if-eqz v0, :cond_1
+
+    :cond_0
+    invoke-static {}, Lcom/oneplus/server/DynamicVsyncManager;->getInstance()Lcom/oneplus/server/DynamicVsyncManager;
+
+    move-result-object v0
+
     iget-object p0, p0, Lcom/oneplus/server/OnePlusService;->mContext:Landroid/content/Context;
 
-    invoke-virtual {v0, p0}, Lcom/android/server/fto;->init(Landroid/content/Context;)V
+    invoke-virtual {v0, p0}, Lcom/oneplus/server/DynamicVsyncManager;->initEnv(Landroid/content/Context;)V
 
+    :cond_1
+    return-void
+.end method
+
+.method public updateVelocity(Ljava/lang/String;FD)V
+    .locals 0
+
+    sget-boolean p0, Lcom/oneplus/server/DynamicVsyncManager;->Gja:Z
+
+    if-eqz p0, :cond_0
+
+    invoke-static {}, Lcom/oneplus/server/DynamicVsyncManager;->getInstance()Lcom/oneplus/server/DynamicVsyncManager;
+
+    move-result-object p0
+
+    invoke-virtual {p0, p1, p2, p3, p4}, Lcom/oneplus/server/DynamicVsyncManager;->updateVelocity(Ljava/lang/String;FD)V
+
+    :cond_0
     return-void
 .end method

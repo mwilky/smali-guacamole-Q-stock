@@ -15,35 +15,35 @@
 # static fields
 .field private static final DBG:Z
 
-.field private static Nea:Z = false
-
 .field private static final TAG:Ljava/lang/String; = "ESportGuider"
 
 .field private static final VALUE_OFF:Ljava/lang/String; = "0"
 
 .field private static final VALUE_ON:Ljava/lang/String; = "1"
 
+.field private static lga:Z
+
 .field private static sInstance:Lcom/oneplus/android/server/scene/tsu;
 
 
 # instance fields
-.field private Eea:Landroid/widget/LinearLayout;
+.field private cga:Landroid/widget/LinearLayout;
 
-.field private Fea:Landroid/widget/TextView;
+.field private dga:Landroid/widget/TextView;
 
-.field private Gea:Landroid/view/View;
+.field private ega:Landroid/view/View;
 
-.field private Hea:Landroid/view/View;
+.field private fga:Landroid/view/View;
 
-.field private Iea:Landroid/widget/TextView;
+.field private gga:Landroid/widget/TextView;
 
-.field private Jea:Landroid/widget/CheckBox;
+.field private hga:Landroid/widget/CheckBox;
 
-.field private Kea:Z
+.field private iga:Z
 
-.field private Lea:Lcom/oneplus/android/server/scene/cgv;
+.field private jga:Lcom/oneplus/android/server/scene/cgv;
 
-.field private Mea:Z
+.field private kga:Z
 
 .field private mContext:Landroid/content/Context;
 
@@ -68,7 +68,7 @@
 
     const/4 v0, 0x0
 
-    sput-boolean v0, Lcom/oneplus/android/server/scene/tsu;->Nea:Z
+    sput-boolean v0, Lcom/oneplus/android/server/scene/tsu;->lga:Z
 
     const/4 v0, 0x0
 
@@ -86,13 +86,13 @@
 
     iput v0, p0, Lcom/oneplus/android/server/scene/tsu;->mRotation:I
 
-    iput-boolean v0, p0, Lcom/oneplus/android/server/scene/tsu;->Kea:Z
+    iput-boolean v0, p0, Lcom/oneplus/android/server/scene/tsu;->iga:Z
 
     const/4 v1, 0x0
 
-    iput-object v1, p0, Lcom/oneplus/android/server/scene/tsu;->Lea:Lcom/oneplus/android/server/scene/cgv;
+    iput-object v1, p0, Lcom/oneplus/android/server/scene/tsu;->jga:Lcom/oneplus/android/server/scene/cgv;
 
-    iput-boolean v0, p0, Lcom/oneplus/android/server/scene/tsu;->Mea:Z
+    iput-boolean v0, p0, Lcom/oneplus/android/server/scene/tsu;->kga:Z
 
     iput-object p1, p0, Lcom/oneplus/android/server/scene/tsu;->mContext:Landroid/content/Context;
 
@@ -132,7 +132,7 @@
 .method static synthetic access$100()Z
     .locals 1
 
-    sget-boolean v0, Lcom/oneplus/android/server/scene/tsu;->Nea:Z
+    sget-boolean v0, Lcom/oneplus/android/server/scene/tsu;->lga:Z
 
     return v0
 .end method
@@ -228,7 +228,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/oneplus/android/server/scene/tsu;->Gea:Landroid/view/View;
+    iput-object v0, p0, Lcom/oneplus/android/server/scene/tsu;->ega:Landroid/view/View;
 
     const v0, 0x507000d
 
@@ -236,7 +236,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/oneplus/android/server/scene/tsu;->Hea:Landroid/view/View;
+    iput-object v0, p0, Lcom/oneplus/android/server/scene/tsu;->fga:Landroid/view/View;
 
     const v0, 0x5070055
 
@@ -246,9 +246,9 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/oneplus/android/server/scene/tsu;->Fea:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/oneplus/android/server/scene/tsu;->dga:Landroid/widget/TextView;
 
-    iget-object v0, p0, Lcom/oneplus/android/server/scene/tsu;->Fea:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/oneplus/android/server/scene/tsu;->dga:Landroid/widget/TextView;
 
     new-instance v1, Lcom/oneplus/android/server/scene/you;
 
@@ -264,7 +264,7 @@
 
     check-cast v0, Landroid/widget/CheckBox;
 
-    iput-object v0, p0, Lcom/oneplus/android/server/scene/tsu;->Jea:Landroid/widget/CheckBox;
+    iput-object v0, p0, Lcom/oneplus/android/server/scene/tsu;->hga:Landroid/widget/CheckBox;
 
     iget-object v0, p0, Lcom/oneplus/android/server/scene/tsu;->mContext:Landroid/content/Context;
 
@@ -289,17 +289,17 @@
     move v1, v2
 
     :cond_0
-    iget-object v0, p0, Lcom/oneplus/android/server/scene/tsu;->Jea:Landroid/widget/CheckBox;
+    iget-object v0, p0, Lcom/oneplus/android/server/scene/tsu;->hga:Landroid/widget/CheckBox;
 
     invoke-virtual {v0, v1}, Landroid/widget/CheckBox;->setChecked(Z)V
 
-    iget-object v0, p0, Lcom/oneplus/android/server/scene/tsu;->Jea:Landroid/widget/CheckBox;
+    iget-object v0, p0, Lcom/oneplus/android/server/scene/tsu;->hga:Landroid/widget/CheckBox;
 
     invoke-virtual {v0}, Landroid/widget/CheckBox;->isChecked()Z
 
     move-result v0
 
-    sput-boolean v0, Lcom/oneplus/android/server/scene/tsu;->Nea:Z
+    sput-boolean v0, Lcom/oneplus/android/server/scene/tsu;->lga:Z
 
     const v0, 0x5070027
 
@@ -309,9 +309,9 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/oneplus/android/server/scene/tsu;->Iea:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/oneplus/android/server/scene/tsu;->gga:Landroid/widget/TextView;
 
-    iget-object v0, p0, Lcom/oneplus/android/server/scene/tsu;->Iea:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/oneplus/android/server/scene/tsu;->gga:Landroid/widget/TextView;
 
     new-instance v1, Lcom/oneplus/android/server/scene/sis;
 
@@ -327,7 +327,7 @@
 .method static synthetic zta(Lcom/oneplus/android/server/scene/tsu;)Landroid/widget/CheckBox;
     .locals 0
 
-    iget-object p0, p0, Lcom/oneplus/android/server/scene/tsu;->Jea:Landroid/widget/CheckBox;
+    iget-object p0, p0, Lcom/oneplus/android/server/scene/tsu;->hga:Landroid/widget/CheckBox;
 
     return-object p0
 .end method
@@ -337,23 +337,23 @@
 .method protected hide()V
     .locals 3
 
-    iget-object v0, p0, Lcom/oneplus/android/server/scene/tsu;->Eea:Landroid/widget/LinearLayout;
+    iget-object v0, p0, Lcom/oneplus/android/server/scene/tsu;->cga:Landroid/widget/LinearLayout;
 
     if-eqz v0, :cond_1
 
     :try_start_0
-    iget-object v0, p0, Lcom/oneplus/android/server/scene/tsu;->Lea:Lcom/oneplus/android/server/scene/cgv;
+    iget-object v0, p0, Lcom/oneplus/android/server/scene/tsu;->jga:Lcom/oneplus/android/server/scene/cgv;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/oneplus/android/server/scene/tsu;->Lea:Lcom/oneplus/android/server/scene/cgv;
+    iget-object v0, p0, Lcom/oneplus/android/server/scene/tsu;->jga:Lcom/oneplus/android/server/scene/cgv;
 
-    invoke-virtual {v0}, Lcom/oneplus/android/server/scene/cgv;->hf()V
+    invoke-virtual {v0}, Lcom/oneplus/android/server/scene/cgv;->qf()V
 
     :cond_0
     iget-object v0, p0, Lcom/oneplus/android/server/scene/tsu;->mWindowManager:Landroid/view/WindowManager;
 
-    iget-object v1, p0, Lcom/oneplus/android/server/scene/tsu;->Eea:Landroid/widget/LinearLayout;
+    iget-object v1, p0, Lcom/oneplus/android/server/scene/tsu;->cga:Landroid/widget/LinearLayout;
 
     invoke-interface {v0, v1}, Landroid/view/WindowManager;->removeView(Landroid/view/View;)V
     :try_end_0
@@ -387,12 +387,12 @@
     :goto_0
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/oneplus/android/server/scene/tsu;->Eea:Landroid/widget/LinearLayout;
+    iput-object v0, p0, Lcom/oneplus/android/server/scene/tsu;->cga:Landroid/widget/LinearLayout;
 
     :cond_1
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/oneplus/android/server/scene/tsu;->Mea:Z
+    iput-boolean v0, p0, Lcom/oneplus/android/server/scene/tsu;->kga:Z
 
     return-void
 .end method
@@ -400,7 +400,7 @@
 .method public isAcquired()Z
     .locals 0
 
-    iget-boolean p0, p0, Lcom/oneplus/android/server/scene/tsu;->Mea:Z
+    iget-boolean p0, p0, Lcom/oneplus/android/server/scene/tsu;->kga:Z
 
     return p0
 .end method
@@ -421,9 +421,9 @@
 
     invoke-direct {v0, p0, v1, v2}, Lcom/oneplus/android/server/scene/tsu$you;-><init>(Lcom/oneplus/android/server/scene/tsu;Landroid/content/Context;I)V
 
-    iput-object v0, p0, Lcom/oneplus/android/server/scene/tsu;->Eea:Landroid/widget/LinearLayout;
+    iput-object v0, p0, Lcom/oneplus/android/server/scene/tsu;->cga:Landroid/widget/LinearLayout;
 
-    iget-object v0, p0, Lcom/oneplus/android/server/scene/tsu;->Eea:Landroid/widget/LinearLayout;
+    iget-object v0, p0, Lcom/oneplus/android/server/scene/tsu;->cga:Landroid/widget/LinearLayout;
 
     invoke-direct {p0, v0}, Lcom/oneplus/android/server/scene/tsu;->you(Landroid/view/ViewGroup;)V
 
@@ -459,11 +459,11 @@
 
     iget-object v1, p0, Lcom/oneplus/android/server/scene/tsu;->mWindowManager:Landroid/view/WindowManager;
 
-    iget-object v2, p0, Lcom/oneplus/android/server/scene/tsu;->Eea:Landroid/widget/LinearLayout;
+    iget-object v2, p0, Lcom/oneplus/android/server/scene/tsu;->cga:Landroid/widget/LinearLayout;
 
     invoke-interface {v1, v2, v0}, Landroid/view/WindowManager;->addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
 
-    iget-object v0, p0, Lcom/oneplus/android/server/scene/tsu;->Eea:Landroid/widget/LinearLayout;
+    iget-object v0, p0, Lcom/oneplus/android/server/scene/tsu;->cga:Landroid/widget/LinearLayout;
 
     const/16 v1, 0x400
 
@@ -471,7 +471,7 @@
 
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/oneplus/android/server/scene/tsu;->Mea:Z
+    iput-boolean v0, p0, Lcom/oneplus/android/server/scene/tsu;->kga:Z
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -488,7 +488,7 @@
 .end method
 
 .method zta(Landroid/view/ViewGroup;)V
-    .locals 6
+    .locals 7
 
     const v0, 0x507000f
 
@@ -544,13 +544,13 @@
 
     invoke-virtual {p1, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
-    move-result-object p1
+    move-result-object v5
 
-    check-cast p1, Landroid/widget/TextView;
+    check-cast v5, Landroid/widget/TextView;
 
-    const v5, 0x5060045
+    const v6, 0x5060045
 
-    invoke-virtual {v3, v5}, Landroid/widget/ImageView;->setImageResource(I)V
+    invoke-virtual {v3, v6}, Landroid/widget/ImageView;->setImageResource(I)V
 
     const v3, 0x5060043
 
@@ -570,15 +570,19 @@
 
     iget-object v0, p0, Lcom/oneplus/android/server/scene/tsu;->mContext:Landroid/content/Context;
 
-    invoke-direct {p0, v0}, Lcom/oneplus/android/server/scene/tsu;->igw(Landroid/content/Context;)Z
+    invoke-direct {p0, v0}, Lcom/oneplus/android/server/scene/tsu;->qbh(Landroid/content/Context;)Z
 
     move-result v0
 
-    if-eqz v0, :cond_0
+    if-eqz v0, :cond_1
 
-    iget-object v0, p0, Lcom/oneplus/android/server/scene/tsu;->mContext:Landroid/content/Context;
+    const/4 v0, 0x0
 
-    invoke-direct {p0, v0}, Lcom/oneplus/android/server/scene/tsu;->qbh(Landroid/content/Context;)Z
+    invoke-virtual {p1, v0}, Landroid/view/View;->setVisibility(I)V
+
+    iget-object p1, p0, Lcom/oneplus/android/server/scene/tsu;->mContext:Landroid/content/Context;
+
+    invoke-direct {p0, p1}, Lcom/oneplus/android/server/scene/tsu;->igw(Landroid/content/Context;)Z
 
     move-result p0
 
@@ -592,15 +596,23 @@
     const p0, 0x50d004c
 
     :goto_0
-    invoke-virtual {p1, p0}, Landroid/widget/TextView;->setText(I)V
+    invoke-virtual {v5, p0}, Landroid/widget/TextView;->setText(I)V
 
+    goto :goto_1
+
+    :cond_1
+    const/16 p0, 0x8
+
+    invoke-virtual {p1, p0}, Landroid/view/View;->setVisibility(I)V
+
+    :goto_1
     return-void
 .end method
 
 .method public zta(Lcom/oneplus/android/server/scene/cgv;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/oneplus/android/server/scene/tsu;->Lea:Lcom/oneplus/android/server/scene/cgv;
+    iput-object p1, p0, Lcom/oneplus/android/server/scene/tsu;->jga:Lcom/oneplus/android/server/scene/cgv;
 
     return-void
 .end method

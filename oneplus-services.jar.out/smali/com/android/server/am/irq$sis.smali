@@ -38,7 +38,7 @@
 
     iget v1, p1, Landroid/os/Message;->what:I
 
-    invoke-static {v0, v1}, Lcom/android/server/am/irq;->cno(Lcom/android/server/am/irq;I)I
+    invoke-static {v0, v1}, Lcom/android/server/am/irq;->kth(Lcom/android/server/am/irq;I)I
 
     move-result v0
 
@@ -46,7 +46,7 @@
 
     iget v2, p1, Landroid/os/Message;->what:I
 
-    invoke-static {v1, v2}, Lcom/android/server/am/irq;->kth(Lcom/android/server/am/irq;I)I
+    invoke-static {v1, v2}, Lcom/android/server/am/irq;->bio(Lcom/android/server/am/irq;I)I
 
     move-result v1
 
@@ -57,6 +57,10 @@
     invoke-static {v2, v3}, Lcom/android/server/am/irq;->zta(Lcom/android/server/am/irq;Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v2
+
+    const/16 v3, 0x11
+
+    if-eq v1, v3, :cond_7
 
     const/4 v3, 0x0
 
@@ -72,7 +76,7 @@
     :try_start_0
     iget-object p0, p0, Lcom/android/server/am/irq$sis;->this$0:Lcom/android/server/am/irq;
 
-    invoke-static {p0}, Lcom/android/server/am/irq;->ugm(Lcom/android/server/am/irq;)V
+    invoke-static {p0}, Lcom/android/server/am/irq;->vdb(Lcom/android/server/am/irq;)V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -92,7 +96,7 @@
     :pswitch_1
     iget-object p1, p0, Lcom/android/server/am/irq$sis;->this$0:Lcom/android/server/am/irq;
 
-    invoke-static {p1, v0}, Lcom/android/server/am/irq;->bio(Lcom/android/server/am/irq;I)Z
+    invoke-static {p1, v0}, Lcom/android/server/am/irq;->igw(Lcom/android/server/am/irq;I)Z
 
     move-result p1
 
@@ -120,7 +124,7 @@
 
     invoke-static {v6, p0}, Lcom/android/server/am/irq;->tsu(ILjava/lang/String;)V
 
-    invoke-static {}, Lcom/android/server/am/irq;->access$3800()Landroid/os/Handler;
+    invoke-static {}, Lcom/android/server/am/irq;->Ib()Landroid/os/Handler;
 
     move-result-object p0
 
@@ -135,82 +139,84 @@
     :cond_0
     iget-object p0, p0, Lcom/android/server/am/irq$sis;->this$0:Lcom/android/server/am/irq;
 
-    invoke-static {p0, v0}, Lcom/android/server/am/irq;->zta(Lcom/android/server/am/irq;I)Lcom/android/server/am/irq$bio;
-
-    move-result-object v2
-
-    monitor-enter v2
-
-    :try_start_1
-    invoke-static {}, Lcom/android/server/am/irq;->access$3800()Landroid/os/Handler;
+    invoke-static {p0, v0}, Lcom/android/server/am/irq;->you(Lcom/android/server/am/irq;I)Lcom/android/server/am/irq$bio;
 
     move-result-object p0
+
+    if-eqz p0, :cond_9
+
+    monitor-enter p0
+
+    :try_start_1
+    invoke-static {}, Lcom/android/server/am/irq;->Ib()Landroid/os/Handler;
+
+    move-result-object p1
 
     invoke-static {v0, v1}, Lcom/android/server/am/irq;->ywr(II)I
 
+    move-result v1
+
+    invoke-virtual {p1, v1}, Landroid/os/Handler;->hasMessages(I)Z
+
     move-result p1
 
-    invoke-virtual {p0, p1}, Landroid/os/Handler;->hasMessages(I)Z
+    if-eqz p1, :cond_1
 
-    move-result p0
+    new-instance p1, Ljava/lang/StringBuilder;
 
-    if-eqz p0, :cond_1
+    invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
 
-    new-instance p0, Ljava/lang/StringBuilder;
+    const-string v1, "GeneralThread------MSG_GT_FOREGROUND_SWITCH_PROTECT end uid:"
 
-    invoke-direct {p0}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-virtual {p1, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string p1, "GeneralThread------MSG_GT_FOREGROUND_SWITCH_PROTECT end uid:"
+    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string v0, " there is also the same uid message behind, return"
 
-    invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string p1, " there is also the same uid message behind, return"
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object p1
 
-    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-static {v6, p1}, Lcom/android/server/am/irq;->tsu(ILjava/lang/String;)V
 
-    move-result-object p0
-
-    invoke-static {v6, p0}, Lcom/android/server/am/irq;->tsu(ILjava/lang/String;)V
-
-    monitor-exit v2
+    monitor-exit p0
 
     return-void
 
     :cond_1
-    new-instance p0, Ljava/lang/StringBuilder;
+    new-instance p1, Ljava/lang/StringBuilder;
 
-    invoke-direct {p0}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string p1, "event removeForegroundSwitchProtect uid:"
+    const-string v1, "event removeForegroundSwitchProtect uid:"
 
-    invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {p1, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object p0
+    move-result-object p1
 
-    invoke-static {v6, p0}, Lcom/android/server/am/irq;->tsu(ILjava/lang/String;)V
+    invoke-static {v6, p1}, Lcom/android/server/am/irq;->tsu(ILjava/lang/String;)V
 
-    invoke-static {v2}, Lcom/android/server/am/irq$bio;->tsu(Lcom/android/server/am/irq$bio;)V
+    invoke-static {p0}, Lcom/android/server/am/irq$bio;->rtg(Lcom/android/server/am/irq$bio;)V
 
-    monitor-exit v2
+    monitor-exit p0
 
     goto/16 :goto_1
 
     :catchall_0
-    move-exception p0
+    move-exception p1
 
-    monitor-exit v2
+    monitor-exit p0
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    throw p0
+    throw p1
 
     :pswitch_2
     iget v1, p1, Landroid/os/Message;->arg1:I
@@ -245,12 +251,12 @@
     :pswitch_3
     iget-object p0, p0, Lcom/android/server/am/irq$sis;->this$0:Lcom/android/server/am/irq;
 
-    invoke-static {p0, v0}, Lcom/android/server/am/irq;->gck(Lcom/android/server/am/irq;I)V
+    invoke-static {p0, v0}, Lcom/android/server/am/irq;->dma(Lcom/android/server/am/irq;I)V
 
     goto/16 :goto_1
 
     :pswitch_4
-    invoke-static {}, Lcom/android/server/am/irq;->access$3800()Landroid/os/Handler;
+    invoke-static {}, Lcom/android/server/am/irq;->Ib()Landroid/os/Handler;
 
     move-result-object p1
 
@@ -282,7 +288,7 @@
     :pswitch_6
     iget-object p0, p0, Lcom/android/server/am/irq$sis;->this$0:Lcom/android/server/am/irq;
 
-    invoke-static {p0, v0}, Lcom/android/server/am/irq;->wtn(Lcom/android/server/am/irq;I)V
+    invoke-static {p0, v0}, Lcom/android/server/am/irq;->gck(Lcom/android/server/am/irq;I)V
 
     goto/16 :goto_1
 
@@ -350,14 +356,14 @@
     :pswitch_8
     iget-object p0, p0, Lcom/android/server/am/irq$sis;->this$0:Lcom/android/server/am/irq;
 
-    invoke-static {p0}, Lcom/android/server/am/irq;->oif(Lcom/android/server/am/irq;)V
+    invoke-static {p0}, Lcom/android/server/am/irq;->ibl(Lcom/android/server/am/irq;)V
 
     goto/16 :goto_1
 
     :pswitch_9
     iget-object p0, p0, Lcom/android/server/am/irq$sis;->this$0:Lcom/android/server/am/irq;
 
-    invoke-static {p0, v0}, Lcom/android/server/am/irq;->igw(Lcom/android/server/am/irq;I)V
+    invoke-static {p0, v0}, Lcom/android/server/am/irq;->wtn(Lcom/android/server/am/irq;I)V
 
     goto/16 :goto_1
 
@@ -376,7 +382,7 @@
     goto/16 :goto_1
 
     :pswitch_c
-    invoke-static {}, Lcom/android/server/am/irq;->Hb()Z
+    invoke-static {}, Lcom/android/server/am/irq;->access$3800()Z
 
     move-result p1
 
@@ -407,7 +413,7 @@
     :cond_4
     iget-object p1, p0, Lcom/android/server/am/irq$sis;->this$0:Lcom/android/server/am/irq;
 
-    invoke-static {p1, v0}, Lcom/android/server/am/irq;->bio(Lcom/android/server/am/irq;I)Z
+    invoke-static {p1, v0}, Lcom/android/server/am/irq;->igw(Lcom/android/server/am/irq;I)Z
 
     move-result p1
 
@@ -435,7 +441,7 @@
 
     invoke-static {v6, p0}, Lcom/android/server/am/irq;->tsu(ILjava/lang/String;)V
 
-    invoke-static {}, Lcom/android/server/am/irq;->access$3800()Landroid/os/Handler;
+    invoke-static {}, Lcom/android/server/am/irq;->Ib()Landroid/os/Handler;
 
     move-result-object p0
 
@@ -450,11 +456,11 @@
     :cond_5
     iget-object p1, p0, Lcom/android/server/am/irq$sis;->this$0:Lcom/android/server/am/irq;
 
-    invoke-static {p1, v0}, Lcom/android/server/am/irq;->zta(Lcom/android/server/am/irq;I)Lcom/android/server/am/irq$bio;
+    invoke-static {p1, v0}, Lcom/android/server/am/irq;->you(Lcom/android/server/am/irq;I)Lcom/android/server/am/irq$bio;
 
     move-result-object p1
 
-    if-eqz p1, :cond_7
+    if-eqz p1, :cond_9
 
     iget-object v3, p0, Lcom/android/server/am/irq$sis;->this$0:Lcom/android/server/am/irq;
 
@@ -469,7 +475,7 @@
     monitor-enter p1
 
     :try_start_3
-    invoke-static {}, Lcom/android/server/am/irq;->access$3800()Landroid/os/Handler;
+    invoke-static {}, Lcom/android/server/am/irq;->Ib()Landroid/os/Handler;
 
     move-result-object v3
 
@@ -534,13 +540,13 @@
     :pswitch_d
     iget-object p1, p0, Lcom/android/server/am/irq$sis;->this$0:Lcom/android/server/am/irq;
 
-    invoke-static {p1}, Lcom/android/server/am/irq;->qbh(Lcom/android/server/am/irq;)V
+    invoke-static {p1}, Lcom/android/server/am/irq;->oif(Lcom/android/server/am/irq;)V
 
     new-instance p1, Lcom/oneplus/config/ConfigGrabber;
 
     iget-object v0, p0, Lcom/android/server/am/irq$sis;->this$0:Lcom/android/server/am/irq;
 
-    invoke-static {v0}, Lcom/android/server/am/irq;->cno(Lcom/android/server/am/irq;)Landroid/content/Context;
+    invoke-static {v0}, Lcom/android/server/am/irq;->kth(Lcom/android/server/am/irq;)Landroid/content/Context;
 
     move-result-object v0
 
@@ -558,15 +564,15 @@
 
     iget-object p1, p0, Lcom/android/server/am/irq$sis;->this$0:Lcom/android/server/am/irq;
 
-    invoke-static {p1}, Lcom/android/server/am/irq;->oif(Lcom/android/server/am/irq;)V
+    invoke-static {p1}, Lcom/android/server/am/irq;->ibl(Lcom/android/server/am/irq;)V
 
     iget-object p1, p0, Lcom/android/server/am/irq$sis;->this$0:Lcom/android/server/am/irq;
 
-    invoke-static {p1}, Lcom/android/server/am/irq;->gck(Lcom/android/server/am/irq;)V
+    invoke-static {p1}, Lcom/android/server/am/irq;->dma(Lcom/android/server/am/irq;)V
 
     iget-object p1, p0, Lcom/android/server/am/irq$sis;->this$0:Lcom/android/server/am/irq;
 
-    invoke-static {p1}, Lcom/android/server/am/irq;->wtn(Lcom/android/server/am/irq;)Landroid/content/ContentResolver;
+    invoke-static {p1}, Lcom/android/server/am/irq;->gck(Lcom/android/server/am/irq;)Landroid/content/ContentResolver;
 
     move-result-object p1
 
@@ -578,7 +584,7 @@
 
     iget-object v1, p0, Lcom/android/server/am/irq$sis;->this$0:Lcom/android/server/am/irq;
 
-    invoke-static {v1}, Lcom/android/server/am/irq;->bvj(Lcom/android/server/am/irq;)Lcom/android/server/am/irq$rtg;
+    invoke-static {v1}, Lcom/android/server/am/irq;->gwm(Lcom/android/server/am/irq;)Lcom/android/server/am/irq$rtg;
 
     move-result-object v1
 
@@ -586,15 +592,49 @@
 
     iget-object p0, p0, Lcom/android/server/am/irq$sis;->this$0:Lcom/android/server/am/irq;
 
-    invoke-static {p0}, Lcom/android/server/am/irq;->gwm(Lcom/android/server/am/irq;)Lcom/oneplus/config/ConfigObserver;
+    invoke-static {p0}, Lcom/android/server/am/irq;->ugm(Lcom/android/server/am/irq;)Lcom/oneplus/config/ConfigObserver;
 
     move-result-object p0
 
     invoke-virtual {p0}, Lcom/oneplus/config/ConfigObserver;->register()V
 
+    goto :goto_1
+
     :cond_7
+    iget-object v0, p0, Lcom/android/server/am/irq$sis;->this$0:Lcom/android/server/am/irq;
+
+    iget v1, p1, Landroid/os/Message;->arg1:I
+
+    invoke-static {v0, v1}, Lcom/android/server/am/irq;->you(Lcom/android/server/am/irq;I)Lcom/android/server/am/irq$bio;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_8
+
+    iget v1, p1, Landroid/os/Message;->arg2:I
+
+    invoke-static {v0, v1}, Lcom/android/server/am/irq$bio;->tsu(Lcom/android/server/am/irq$bio;I)V
+
+    :cond_8
+    iget-object p0, p0, Lcom/android/server/am/irq$sis;->this$0:Lcom/android/server/am/irq;
+
+    iget v0, p1, Landroid/os/Message;->arg2:I
+
+    invoke-static {p0, v0}, Lcom/android/server/am/irq;->you(Lcom/android/server/am/irq;I)Lcom/android/server/am/irq$bio;
+
+    move-result-object p0
+
+    if-eqz p0, :cond_9
+
+    iget p1, p1, Landroid/os/Message;->arg1:I
+
+    invoke-static {p0, p1}, Lcom/android/server/am/irq$bio;->rtg(Lcom/android/server/am/irq$bio;I)V
+
+    :cond_9
     :goto_1
     return-void
+
+    nop
 
     :pswitch_data_0
     .packed-switch 0x1

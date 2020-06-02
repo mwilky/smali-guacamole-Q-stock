@@ -18,7 +18,7 @@
 
 
 # instance fields
-.field final synthetic RM:Landroid/view/View;
+.field final synthetic fO:Landroid/view/View;
 
 .field final synthetic this$0:Lcom/android/server/you/wtn;
 
@@ -29,7 +29,7 @@
 
     iput-object p1, p0, Lcom/android/server/you/kth;->this$0:Lcom/android/server/you/wtn;
 
-    iput-object p2, p0, Lcom/android/server/you/kth;->RM:Landroid/view/View;
+    iput-object p2, p0, Lcom/android/server/you/kth;->fO:Landroid/view/View;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -41,7 +41,7 @@
 .method public onPreDraw()Z
     .locals 3
 
-    iget-object v0, p0, Lcom/android/server/you/kth;->RM:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/server/you/kth;->fO:Landroid/view/View;
 
     invoke-virtual {v0}, Landroid/view/View;->getViewTreeObserver()Landroid/view/ViewTreeObserver;
 
@@ -51,7 +51,7 @@
 
     iget-object v0, p0, Lcom/android/server/you/kth;->this$0:Lcom/android/server/you/wtn;
 
-    iget-object v1, p0, Lcom/android/server/you/kth;->RM:Landroid/view/View;
+    iget-object v1, p0, Lcom/android/server/you/kth;->fO:Landroid/view/View;
 
     invoke-virtual {v1}, Landroid/view/View;->getHeight()I
 

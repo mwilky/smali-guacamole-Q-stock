@@ -17,25 +17,25 @@
 # static fields
 .field private static final ATTR_PACKAGE:Ljava/lang/String; = "packageName"
 
-.field private static final fC:Ljava/lang/String; = "className"
+.field private static final BD:Ljava/lang/String; = "service_sw"
 
-.field private static final gC:Ljava/lang/String; = "command"
+.field private static final CD:Ljava/lang/String; = "shell_command_sw"
 
-.field private static final hC:Ljava/lang/String; = "order"
+.field private static final DD:Ljava/lang/String; = "engineer_order_sw"
 
-.field private static final iC:Ljava/lang/String; = "switchName"
+.field private static final ED:Ljava/lang/String; = "reset_atm_sw"
 
-.field private static final jC:Ljava/lang/String; = "switchState"
+.field private static final uD:Ljava/lang/String; = "className"
 
-.field private static final kC:Ljava/lang/String; = "activity_sw"
+.field private static final vD:Ljava/lang/String; = "command"
 
-.field private static final lC:Ljava/lang/String; = "service_sw"
+.field private static final wD:Ljava/lang/String; = "order"
 
-.field private static final mC:Ljava/lang/String; = "shell_command_sw"
+.field private static final xD:Ljava/lang/String; = "switchName"
 
-.field private static final nC:Ljava/lang/String; = "engineer_order_sw"
+.field private static final yD:Ljava/lang/String; = "switchState"
 
-.field private static final oC:Ljava/lang/String; = "reset_atm_sw"
+.field private static final zD:Ljava/lang/String; = "activity_sw"
 
 
 # instance fields
@@ -45,13 +45,13 @@
 
 .field private final TAG_SWITCH:Ljava/lang/String;
 
-.field private final UB:Ljava/lang/String;
+.field private final iD:Ljava/lang/String;
 
-.field private final VB:Ljava/lang/String;
+.field private final jD:Ljava/lang/String;
 
-.field private final WB:Lcom/android/server/engineer/you$zta;
+.field private final kD:Lcom/android/server/engineer/you$zta;
 
-.field private XB:Ljava/util/List;
+.field private lD:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
@@ -61,7 +61,7 @@
     .end annotation
 .end field
 
-.field private YB:Ljava/util/List;
+.field private mD:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
@@ -70,38 +70,38 @@
         }
     .end annotation
 .end field
-
-.field private ZB:Ljava/util/List;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/List<",
-            "Ljava/lang/String;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private _B:Ljava/util/List;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/List<",
-            "Ljava/lang/String;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private aC:Z
-
-.field private bC:Z
-
-.field private cC:Z
-
-.field private dC:Z
-
-.field private eC:Z
 
 .field private final mLock:Ljava/lang/Object;
+
+.field private nD:Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/List<",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private oD:Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/List<",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private pD:Z
+
+.field private qD:Z
+
+.field private rD:Z
+
+.field private sD:Z
+
+.field private tD:Z
 
 .field final synthetic this$0:Lcom/android/server/engineer/you;
 
@@ -134,37 +134,37 @@
 
     const-string p1, "shell_command"
 
-    iput-object p1, p0, Lcom/android/server/engineer/you$you;->UB:Ljava/lang/String;
+    iput-object p1, p0, Lcom/android/server/engineer/you$you;->iD:Ljava/lang/String;
 
     const-string p1, "engineer_order"
 
-    iput-object p1, p0, Lcom/android/server/engineer/you$you;->VB:Ljava/lang/String;
+    iput-object p1, p0, Lcom/android/server/engineer/you$you;->jD:Ljava/lang/String;
 
     new-instance p1, Ljava/util/ArrayList;
 
     invoke-direct {p1}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object p1, p0, Lcom/android/server/engineer/you$you;->XB:Ljava/util/List;
+    iput-object p1, p0, Lcom/android/server/engineer/you$you;->lD:Ljava/util/List;
 
     new-instance p1, Ljava/util/ArrayList;
 
     invoke-direct {p1}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object p1, p0, Lcom/android/server/engineer/you$you;->YB:Ljava/util/List;
+    iput-object p1, p0, Lcom/android/server/engineer/you$you;->mD:Ljava/util/List;
 
     new-instance p1, Ljava/util/ArrayList;
 
     invoke-direct {p1}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object p1, p0, Lcom/android/server/engineer/you$you;->ZB:Ljava/util/List;
+    iput-object p1, p0, Lcom/android/server/engineer/you$you;->nD:Ljava/util/List;
 
     new-instance p1, Ljava/util/ArrayList;
 
     invoke-direct {p1}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object p1, p0, Lcom/android/server/engineer/you$you;->_B:Ljava/util/List;
+    iput-object p1, p0, Lcom/android/server/engineer/you$you;->oD:Ljava/util/List;
 
-    iput-object p2, p0, Lcom/android/server/engineer/you$you;->WB:Lcom/android/server/engineer/you$zta;
+    iput-object p2, p0, Lcom/android/server/engineer/you$you;->kD:Lcom/android/server/engineer/you$zta;
 
     return-void
 .end method
@@ -379,7 +379,7 @@
 
 
 # virtual methods
-.method public I(Ljava/lang/String;)V
+.method public K(Ljava/lang/String;)V
     .locals 11
 
     if-nez p1, :cond_0
@@ -418,11 +418,11 @@
     .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
     :try_start_2
-    iget-object v5, p0, Lcom/android/server/engineer/you$you;->XB:Ljava/util/List;
+    iget-object v5, p0, Lcom/android/server/engineer/you$you;->lD:Ljava/util/List;
 
     invoke-interface {v5}, Ljava/util/List;->clear()V
 
-    iget-object v5, p0, Lcom/android/server/engineer/you$you;->YB:Ljava/util/List;
+    iget-object v5, p0, Lcom/android/server/engineer/you$you;->mD:Ljava/util/List;
 
     invoke-interface {v5}, Ljava/util/List;->clear()V
 
@@ -515,7 +515,7 @@
 
     move-result p1
 
-    iput-boolean p1, p0, Lcom/android/server/engineer/you$you;->aC:Z
+    iput-boolean p1, p0, Lcom/android/server/engineer/you$you;->pD:Z
 
     goto/16 :goto_3
 
@@ -532,7 +532,7 @@
 
     move-result p1
 
-    iput-boolean p1, p0, Lcom/android/server/engineer/you$you;->bC:Z
+    iput-boolean p1, p0, Lcom/android/server/engineer/you$you;->qD:Z
 
     goto :goto_3
 
@@ -549,7 +549,7 @@
 
     move-result p1
 
-    iput-boolean p1, p0, Lcom/android/server/engineer/you$you;->cC:Z
+    iput-boolean p1, p0, Lcom/android/server/engineer/you$you;->rD:Z
 
     goto :goto_3
 
@@ -566,7 +566,7 @@
 
     move-result p1
 
-    iput-boolean p1, p0, Lcom/android/server/engineer/you$you;->dC:Z
+    iput-boolean p1, p0, Lcom/android/server/engineer/you$you;->sD:Z
 
     goto :goto_3
 
@@ -583,7 +583,7 @@
 
     move-result p1
 
-    iput-boolean p1, p0, Lcom/android/server/engineer/you$you;->eC:Z
+    iput-boolean p1, p0, Lcom/android/server/engineer/you$you;->tD:Z
 
     goto :goto_3
 
@@ -596,7 +596,7 @@
 
     if-eqz v6, :cond_7
 
-    iget-object p1, p0, Lcom/android/server/engineer/you$you;->XB:Ljava/util/List;
+    iget-object p1, p0, Lcom/android/server/engineer/you$you;->lD:Ljava/util/List;
 
     :goto_1
     invoke-direct {p0, v2, p1}, Lcom/android/server/engineer/you$you;->zta(Lorg/xmlpull/v1/XmlPullParser;Ljava/util/List;)V
@@ -615,7 +615,7 @@
 
     if-eqz v6, :cond_8
 
-    iget-object p1, p0, Lcom/android/server/engineer/you$you;->YB:Ljava/util/List;
+    iget-object p1, p0, Lcom/android/server/engineer/you$you;->mD:Ljava/util/List;
 
     goto :goto_1
 
@@ -628,7 +628,7 @@
 
     if-eqz v6, :cond_9
 
-    iget-object p1, p0, Lcom/android/server/engineer/you$you;->ZB:Ljava/util/List;
+    iget-object p1, p0, Lcom/android/server/engineer/you$you;->nD:Ljava/util/List;
 
     invoke-direct {p0, v2, p1}, Lcom/android/server/engineer/you$you;->sis(Lorg/xmlpull/v1/XmlPullParser;Ljava/util/List;)V
 
@@ -643,7 +643,7 @@
 
     if-eqz p1, :cond_a
 
-    iget-object p1, p0, Lcom/android/server/engineer/you$you;->_B:Ljava/util/List;
+    iget-object p1, p0, Lcom/android/server/engineer/you$you;->oD:Ljava/util/List;
 
     invoke-direct {p0, v2, p1}, Lcom/android/server/engineer/you$you;->you(Lorg/xmlpull/v1/XmlPullParser;Ljava/util/List;)V
 
@@ -731,7 +731,7 @@
     :goto_6
     if-eqz v4, :cond_d
 
-    iget-object p0, p0, Lcom/android/server/engineer/you$you;->WB:Lcom/android/server/engineer/you$zta;
+    iget-object p0, p0, Lcom/android/server/engineer/you$you;->kD:Lcom/android/server/engineer/you$zta;
 
     if-eqz p0, :cond_d
 
@@ -749,114 +749,114 @@
     throw p0
 .end method
 
-.method Ic()Z
+.method M(Ljava/lang/String;)Z
+    .locals 2
+
+    iget-boolean v0, p0, Lcom/android/server/engineer/you$you;->sD:Z
+
+    const/4 v1, 0x0
+
+    if-eqz v0, :cond_2
+
+    if-nez p1, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    iget-object p0, p0, Lcom/android/server/engineer/you$you;->oD:Ljava/util/List;
+
+    invoke-interface {p0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+
+    move-result-object p0
+
+    :cond_1
+    invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_2
+
+    invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Ljava/lang/String;
+
+    invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    const/4 p0, 0x1
+
+    return p0
+
+    :cond_2
+    :goto_0
+    return v1
+.end method
+
+.method N(Ljava/lang/String;)Z
+    .locals 2
+
+    iget-boolean v0, p0, Lcom/android/server/engineer/you$you;->rD:Z
+
+    const/4 v1, 0x0
+
+    if-eqz v0, :cond_2
+
+    if-nez p1, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    iget-object p0, p0, Lcom/android/server/engineer/you$you;->nD:Ljava/util/List;
+
+    invoke-interface {p0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+
+    move-result-object p0
+
+    :cond_1
+    invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_2
+
+    invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Ljava/lang/String;
+
+    invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    const/4 p0, 0x1
+
+    return p0
+
+    :cond_2
+    :goto_0
+    return v1
+.end method
+
+.method Pc()Z
     .locals 0
 
-    iget-boolean p0, p0, Lcom/android/server/engineer/you$you;->eC:Z
+    iget-boolean p0, p0, Lcom/android/server/engineer/you$you;->tD:Z
 
     return p0
-.end method
-
-.method K(Ljava/lang/String;)Z
-    .locals 2
-
-    iget-boolean v0, p0, Lcom/android/server/engineer/you$you;->dC:Z
-
-    const/4 v1, 0x0
-
-    if-eqz v0, :cond_2
-
-    if-nez p1, :cond_0
-
-    goto :goto_0
-
-    :cond_0
-    iget-object p0, p0, Lcom/android/server/engineer/you$you;->_B:Ljava/util/List;
-
-    invoke-interface {p0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
-
-    move-result-object p0
-
-    :cond_1
-    invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_2
-
-    invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Ljava/lang/String;
-
-    invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_1
-
-    const/4 p0, 0x1
-
-    return p0
-
-    :cond_2
-    :goto_0
-    return v1
-.end method
-
-.method L(Ljava/lang/String;)Z
-    .locals 2
-
-    iget-boolean v0, p0, Lcom/android/server/engineer/you$you;->cC:Z
-
-    const/4 v1, 0x0
-
-    if-eqz v0, :cond_2
-
-    if-nez p1, :cond_0
-
-    goto :goto_0
-
-    :cond_0
-    iget-object p0, p0, Lcom/android/server/engineer/you$you;->ZB:Ljava/util/List;
-
-    invoke-interface {p0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
-
-    move-result-object p0
-
-    :cond_1
-    invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_2
-
-    invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Ljava/lang/String;
-
-    invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_1
-
-    const/4 p0, 0x1
-
-    return p0
-
-    :cond_2
-    :goto_0
-    return v1
 .end method
 
 .method sis(Landroid/content/ComponentName;)Z
     .locals 2
 
-    iget-boolean v0, p0, Lcom/android/server/engineer/you$you;->aC:Z
+    iget-boolean v0, p0, Lcom/android/server/engineer/you$you;->pD:Z
 
     const/4 v1, 0x0
 
@@ -867,7 +867,7 @@
     goto :goto_0
 
     :cond_0
-    iget-object p0, p0, Lcom/android/server/engineer/you$you;->XB:Ljava/util/List;
+    iget-object p0, p0, Lcom/android/server/engineer/you$you;->lD:Ljava/util/List;
 
     invoke-interface {p0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -904,7 +904,7 @@
 .method tsu(Landroid/content/ComponentName;)Z
     .locals 2
 
-    iget-boolean v0, p0, Lcom/android/server/engineer/you$you;->bC:Z
+    iget-boolean v0, p0, Lcom/android/server/engineer/you$you;->qD:Z
 
     const/4 v1, 0x0
 
@@ -915,7 +915,7 @@
     goto :goto_0
 
     :cond_0
-    iget-object p0, p0, Lcom/android/server/engineer/you$you;->YB:Ljava/util/List;
+    iget-object p0, p0, Lcom/android/server/engineer/you$you;->mD:Ljava/util/List;
 
     invoke-interface {p0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 

@@ -12,25 +12,25 @@
 
 
 # static fields
-.field private static final Gna:Lorg/bouncycastle/jcajce/provider/asymmetric/x509/you;
+.field private static final Vpa:Lorg/bouncycastle/jcajce/provider/asymmetric/x509/you;
 
-.field private static final Hna:Lorg/bouncycastle/jcajce/provider/asymmetric/x509/you;
+.field private static final Wpa:Lorg/bouncycastle/jcajce/provider/asymmetric/x509/you;
 
-.field private static final Ina:Lorg/bouncycastle/jcajce/provider/asymmetric/x509/you;
+.field private static final Xpa:Lorg/bouncycastle/jcajce/provider/asymmetric/x509/you;
 
 
 # instance fields
-.field private Ana:Lorg/bouncycastle/asn1/ear;
+.field private Ppa:Lorg/bouncycastle/asn1/ear;
 
-.field private Bna:I
+.field private Qpa:I
 
-.field private Cna:Ljava/io/InputStream;
+.field private Rpa:Ljava/io/InputStream;
 
-.field private Dna:Lorg/bouncycastle/asn1/ear;
+.field private Spa:Lorg/bouncycastle/asn1/ear;
 
-.field private Ena:I
+.field private Tpa:I
 
-.field private Fna:Ljava/io/InputStream;
+.field private Upa:Ljava/io/InputStream;
 
 .field private final bcHelper:Lorg/bouncycastle/jcajce/tsu/tsu;
 
@@ -45,7 +45,7 @@
 
     invoke-direct {v0, v1}, Lorg/bouncycastle/jcajce/provider/asymmetric/x509/you;-><init>(Ljava/lang/String;)V
 
-    sput-object v0, Lorg/bouncycastle/jcajce/provider/asymmetric/x509/CertificateFactory;->Gna:Lorg/bouncycastle/jcajce/provider/asymmetric/x509/you;
+    sput-object v0, Lorg/bouncycastle/jcajce/provider/asymmetric/x509/CertificateFactory;->Vpa:Lorg/bouncycastle/jcajce/provider/asymmetric/x509/you;
 
     new-instance v0, Lorg/bouncycastle/jcajce/provider/asymmetric/x509/you;
 
@@ -53,7 +53,7 @@
 
     invoke-direct {v0, v1}, Lorg/bouncycastle/jcajce/provider/asymmetric/x509/you;-><init>(Ljava/lang/String;)V
 
-    sput-object v0, Lorg/bouncycastle/jcajce/provider/asymmetric/x509/CertificateFactory;->Hna:Lorg/bouncycastle/jcajce/provider/asymmetric/x509/you;
+    sput-object v0, Lorg/bouncycastle/jcajce/provider/asymmetric/x509/CertificateFactory;->Wpa:Lorg/bouncycastle/jcajce/provider/asymmetric/x509/you;
 
     new-instance v0, Lorg/bouncycastle/jcajce/provider/asymmetric/x509/you;
 
@@ -61,7 +61,7 @@
 
     invoke-direct {v0, v1}, Lorg/bouncycastle/jcajce/provider/asymmetric/x509/you;-><init>(Ljava/lang/String;)V
 
-    sput-object v0, Lorg/bouncycastle/jcajce/provider/asymmetric/x509/CertificateFactory;->Ina:Lorg/bouncycastle/jcajce/provider/asymmetric/x509/you;
+    sput-object v0, Lorg/bouncycastle/jcajce/provider/asymmetric/x509/CertificateFactory;->Xpa:Lorg/bouncycastle/jcajce/provider/asymmetric/x509/you;
 
     return-void
 .end method
@@ -79,46 +79,24 @@
 
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/x509/CertificateFactory;->Ana:Lorg/bouncycastle/asn1/ear;
+    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/x509/CertificateFactory;->Ppa:Lorg/bouncycastle/asn1/ear;
 
     const/4 v1, 0x0
 
-    iput v1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/x509/CertificateFactory;->Bna:I
+    iput v1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/x509/CertificateFactory;->Qpa:I
 
-    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/x509/CertificateFactory;->Cna:Ljava/io/InputStream;
+    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/x509/CertificateFactory;->Rpa:Ljava/io/InputStream;
 
-    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/x509/CertificateFactory;->Dna:Lorg/bouncycastle/asn1/ear;
+    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/x509/CertificateFactory;->Spa:Lorg/bouncycastle/asn1/ear;
 
-    iput v1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/x509/CertificateFactory;->Ena:I
+    iput v1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/x509/CertificateFactory;->Tpa:I
 
-    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/x509/CertificateFactory;->Fna:Ljava/io/InputStream;
+    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/x509/CertificateFactory;->Upa:Ljava/io/InputStream;
 
     return-void
 .end method
 
-.method private bio(Ljava/io/InputStream;)Ljava/security/cert/Certificate;
-    .locals 1
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;,
-            Ljava/security/cert/CertificateParsingException;
-        }
-    .end annotation
-
-    sget-object v0, Lorg/bouncycastle/jcajce/provider/asymmetric/x509/CertificateFactory;->Gna:Lorg/bouncycastle/jcajce/provider/asymmetric/x509/you;
-
-    invoke-virtual {v0, p1}, Lorg/bouncycastle/jcajce/provider/asymmetric/x509/you;->tsu(Ljava/io/InputStream;)Lorg/bouncycastle/asn1/obl;
-
-    move-result-object p1
-
-    invoke-direct {p0, p1}, Lorg/bouncycastle/jcajce/provider/asymmetric/x509/CertificateFactory;->ssp(Lorg/bouncycastle/asn1/obl;)Ljava/security/cert/Certificate;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method private ft()Ljava/security/cert/CRL;
+.method private Et()Ljava/security/cert/CRL;
     .locals 3
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -126,11 +104,11 @@
         }
     .end annotation
 
-    iget-object v0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/x509/CertificateFactory;->Dna:Lorg/bouncycastle/asn1/ear;
+    iget-object v0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/x509/CertificateFactory;->Spa:Lorg/bouncycastle/asn1/ear;
 
     if-eqz v0, :cond_1
 
-    iget v1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/x509/CertificateFactory;->Ena:I
+    iget v1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/x509/CertificateFactory;->Tpa:I
 
     invoke-virtual {v0}, Lorg/bouncycastle/asn1/ear;->size()I
 
@@ -141,13 +119,13 @@
     goto :goto_0
 
     :cond_0
-    iget-object v0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/x509/CertificateFactory;->Dna:Lorg/bouncycastle/asn1/ear;
+    iget-object v0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/x509/CertificateFactory;->Spa:Lorg/bouncycastle/asn1/ear;
 
-    iget v1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/x509/CertificateFactory;->Ena:I
+    iget v1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/x509/CertificateFactory;->Tpa:I
 
     add-int/lit8 v2, v1, 0x1
 
-    iput v2, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/x509/CertificateFactory;->Ena:I
+    iput v2, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/x509/CertificateFactory;->Tpa:I
 
     invoke-virtual {v0, v1}, Lorg/bouncycastle/asn1/ear;->getObjectAt(I)Lorg/bouncycastle/asn1/ssp;
 
@@ -170,6 +148,28 @@
     return-object p0
 .end method
 
+.method private bio(Ljava/io/InputStream;)Ljava/security/cert/Certificate;
+    .locals 1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;,
+            Ljava/security/cert/CertificateParsingException;
+        }
+    .end annotation
+
+    sget-object v0, Lorg/bouncycastle/jcajce/provider/asymmetric/x509/CertificateFactory;->Vpa:Lorg/bouncycastle/jcajce/provider/asymmetric/x509/you;
+
+    invoke-virtual {v0, p1}, Lorg/bouncycastle/jcajce/provider/asymmetric/x509/you;->tsu(Ljava/io/InputStream;)Lorg/bouncycastle/asn1/obl;
+
+    move-result-object p1
+
+    invoke-direct {p0, p1}, Lorg/bouncycastle/jcajce/provider/asymmetric/x509/CertificateFactory;->ssp(Lorg/bouncycastle/asn1/obl;)Ljava/security/cert/Certificate;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
 .method private getCertificate()Ljava/security/cert/Certificate;
     .locals 3
     .annotation system Ldalvik/annotation/Throws;
@@ -178,14 +178,14 @@
         }
     .end annotation
 
-    iget-object v0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/x509/CertificateFactory;->Ana:Lorg/bouncycastle/asn1/ear;
+    iget-object v0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/x509/CertificateFactory;->Ppa:Lorg/bouncycastle/asn1/ear;
 
     if-eqz v0, :cond_1
 
     :cond_0
-    iget v0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/x509/CertificateFactory;->Bna:I
+    iget v0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/x509/CertificateFactory;->Qpa:I
 
-    iget-object v1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/x509/CertificateFactory;->Ana:Lorg/bouncycastle/asn1/ear;
+    iget-object v1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/x509/CertificateFactory;->Ppa:Lorg/bouncycastle/asn1/ear;
 
     invoke-virtual {v1}, Lorg/bouncycastle/asn1/ear;->size()I
 
@@ -193,13 +193,13 @@
 
     if-ge v0, v1, :cond_1
 
-    iget-object v0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/x509/CertificateFactory;->Ana:Lorg/bouncycastle/asn1/ear;
+    iget-object v0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/x509/CertificateFactory;->Ppa:Lorg/bouncycastle/asn1/ear;
 
-    iget v1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/x509/CertificateFactory;->Bna:I
+    iget v1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/x509/CertificateFactory;->Qpa:I
 
     add-int/lit8 v2, v1, 0x1
 
-    iput v2, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/x509/CertificateFactory;->Bna:I
+    iput v2, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/x509/CertificateFactory;->Qpa:I
 
     invoke-virtual {v0, v1}, Lorg/bouncycastle/asn1/ear;->getObjectAt(I)Lorg/bouncycastle/asn1/ssp;
 
@@ -236,7 +236,7 @@
         }
     .end annotation
 
-    sget-object v0, Lorg/bouncycastle/jcajce/provider/asymmetric/x509/CertificateFactory;->Hna:Lorg/bouncycastle/jcajce/provider/asymmetric/x509/you;
+    sget-object v0, Lorg/bouncycastle/jcajce/provider/asymmetric/x509/CertificateFactory;->Wpa:Lorg/bouncycastle/jcajce/provider/asymmetric/x509/you;
 
     invoke-virtual {v0, p1}, Lorg/bouncycastle/jcajce/provider/asymmetric/x509/you;->tsu(Ljava/io/InputStream;)Lorg/bouncycastle/asn1/obl;
 
@@ -308,13 +308,13 @@
 
     move-result-object p1
 
-    invoke-virtual {p1}, Lorg/bouncycastle/asn1/dma/hmo;->Tg()Lorg/bouncycastle/asn1/ear;
+    invoke-virtual {p1}, Lorg/bouncycastle/asn1/dma/hmo;->bh()Lorg/bouncycastle/asn1/ear;
 
     move-result-object p1
 
-    iput-object p1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/x509/CertificateFactory;->Dna:Lorg/bouncycastle/asn1/ear;
+    iput-object p1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/x509/CertificateFactory;->Spa:Lorg/bouncycastle/asn1/ear;
 
-    invoke-direct {p0}, Lorg/bouncycastle/jcajce/provider/asymmetric/x509/CertificateFactory;->ft()Ljava/security/cert/CRL;
+    invoke-direct {p0}, Lorg/bouncycastle/jcajce/provider/asymmetric/x509/CertificateFactory;->Et()Ljava/security/cert/CRL;
 
     move-result-object p0
 
@@ -395,7 +395,7 @@
 
     move-result-object p1
 
-    iput-object p1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/x509/CertificateFactory;->Ana:Lorg/bouncycastle/asn1/ear;
+    iput-object p1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/x509/CertificateFactory;->Ppa:Lorg/bouncycastle/asn1/ear;
 
     invoke-direct {p0}, Lorg/bouncycastle/jcajce/provider/asymmetric/x509/CertificateFactory;->getCertificate()Ljava/security/cert/Certificate;
 
@@ -475,7 +475,7 @@
         }
     .end annotation
 
-    iget-object v0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/x509/CertificateFactory;->Fna:Ljava/io/InputStream;
+    iget-object v0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/x509/CertificateFactory;->Upa:Ljava/io/InputStream;
 
     const/4 v1, 0x0
 
@@ -484,11 +484,11 @@
     if-nez v0, :cond_0
 
     :goto_0
-    iput-object p1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/x509/CertificateFactory;->Fna:Ljava/io/InputStream;
+    iput-object p1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/x509/CertificateFactory;->Upa:Ljava/io/InputStream;
 
-    iput-object v2, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/x509/CertificateFactory;->Dna:Lorg/bouncycastle/asn1/ear;
+    iput-object v2, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/x509/CertificateFactory;->Spa:Lorg/bouncycastle/asn1/ear;
 
-    iput v1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/x509/CertificateFactory;->Ena:I
+    iput v1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/x509/CertificateFactory;->Tpa:I
 
     goto :goto_1
 
@@ -500,13 +500,13 @@
     :cond_1
     :goto_1
     :try_start_0
-    iget-object v0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/x509/CertificateFactory;->Dna:Lorg/bouncycastle/asn1/ear;
+    iget-object v0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/x509/CertificateFactory;->Spa:Lorg/bouncycastle/asn1/ear;
 
     if-eqz v0, :cond_3
 
-    iget p1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/x509/CertificateFactory;->Ena:I
+    iget p1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/x509/CertificateFactory;->Tpa:I
 
-    iget-object v0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/x509/CertificateFactory;->Dna:Lorg/bouncycastle/asn1/ear;
+    iget-object v0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/x509/CertificateFactory;->Spa:Lorg/bouncycastle/asn1/ear;
 
     invoke-virtual {v0}, Lorg/bouncycastle/asn1/ear;->size()I
 
@@ -514,16 +514,16 @@
 
     if-eq p1, v0, :cond_2
 
-    invoke-direct {p0}, Lorg/bouncycastle/jcajce/provider/asymmetric/x509/CertificateFactory;->ft()Ljava/security/cert/CRL;
+    invoke-direct {p0}, Lorg/bouncycastle/jcajce/provider/asymmetric/x509/CertificateFactory;->Et()Ljava/security/cert/CRL;
 
     move-result-object p0
 
     return-object p0
 
     :cond_2
-    iput-object v2, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/x509/CertificateFactory;->Dna:Lorg/bouncycastle/asn1/ear;
+    iput-object v2, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/x509/CertificateFactory;->Spa:Lorg/bouncycastle/asn1/ear;
 
-    iput v1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/x509/CertificateFactory;->Ena:I
+    iput v1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/x509/CertificateFactory;->Tpa:I
 
     return-object v2
 
@@ -744,7 +744,7 @@
         }
     .end annotation
 
-    iget-object v0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/x509/CertificateFactory;->Cna:Ljava/io/InputStream;
+    iget-object v0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/x509/CertificateFactory;->Rpa:Ljava/io/InputStream;
 
     const/4 v1, 0x0
 
@@ -753,11 +753,11 @@
     if-nez v0, :cond_0
 
     :goto_0
-    iput-object p1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/x509/CertificateFactory;->Cna:Ljava/io/InputStream;
+    iput-object p1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/x509/CertificateFactory;->Rpa:Ljava/io/InputStream;
 
-    iput-object v2, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/x509/CertificateFactory;->Ana:Lorg/bouncycastle/asn1/ear;
+    iput-object v2, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/x509/CertificateFactory;->Ppa:Lorg/bouncycastle/asn1/ear;
 
-    iput v1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/x509/CertificateFactory;->Bna:I
+    iput v1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/x509/CertificateFactory;->Qpa:I
 
     goto :goto_1
 
@@ -769,13 +769,13 @@
     :cond_1
     :goto_1
     :try_start_0
-    iget-object v0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/x509/CertificateFactory;->Ana:Lorg/bouncycastle/asn1/ear;
+    iget-object v0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/x509/CertificateFactory;->Ppa:Lorg/bouncycastle/asn1/ear;
 
     if-eqz v0, :cond_3
 
-    iget p1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/x509/CertificateFactory;->Bna:I
+    iget p1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/x509/CertificateFactory;->Qpa:I
 
-    iget-object v0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/x509/CertificateFactory;->Ana:Lorg/bouncycastle/asn1/ear;
+    iget-object v0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/x509/CertificateFactory;->Ppa:Lorg/bouncycastle/asn1/ear;
 
     invoke-virtual {v0}, Lorg/bouncycastle/asn1/ear;->size()I
 
@@ -790,9 +790,9 @@
     return-object p0
 
     :cond_2
-    iput-object v2, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/x509/CertificateFactory;->Ana:Lorg/bouncycastle/asn1/ear;
+    iput-object v2, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/x509/CertificateFactory;->Ppa:Lorg/bouncycastle/asn1/ear;
 
-    iput v1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/x509/CertificateFactory;->Bna:I
+    iput v1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/x509/CertificateFactory;->Qpa:I
 
     return-object v2
 
@@ -934,7 +934,7 @@
 .method public engineGetCertPathEncodings()Ljava/util/Iterator;
     .locals 0
 
-    sget-object p0, Lorg/bouncycastle/jcajce/provider/asymmetric/x509/PKIXCertPath;->yna:Ljava/util/List;
+    sget-object p0, Lorg/bouncycastle/jcajce/provider/asymmetric/x509/PKIXCertPath;->Npa:Ljava/util/List;
 
     invoke-interface {p0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 

@@ -164,42 +164,12 @@
     return-void
 .end method
 
-.method public static getInstance(Ljava/lang/Object;)Lorg/bouncycastle/asn1/ywr/zta;
-    .locals 1
-
-    instance-of v0, p0, Lorg/bouncycastle/asn1/ywr/zta;
-
-    if-eqz v0, :cond_0
-
-    check-cast p0, Lorg/bouncycastle/asn1/ywr/zta;
-
-    return-object p0
-
-    :cond_0
-    if-eqz p0, :cond_1
-
-    new-instance v0, Lorg/bouncycastle/asn1/ywr/zta;
-
-    invoke-static {p0}, Lorg/bouncycastle/asn1/obl;->getInstance(Ljava/lang/Object;)Lorg/bouncycastle/asn1/obl;
-
-    move-result-object p0
-
-    invoke-direct {v0, p0}, Lorg/bouncycastle/asn1/ywr/zta;-><init>(Lorg/bouncycastle/asn1/obl;)V
-
-    return-object v0
-
-    :cond_1
-    const/4 p0, 0x0
-
-    return-object p0
-.end method
-
-.method private lc(I)Lorg/bouncycastle/asn1/vdb;
+.method private Cc(I)Lorg/bouncycastle/asn1/vdb;
     .locals 2
 
     iget-object p0, p0, Lorg/bouncycastle/asn1/ywr/zta;->seq:Lorg/bouncycastle/asn1/obl;
 
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/obl;->Jg()Ljava/util/Enumeration;
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/obl;->Sg()Ljava/util/Enumeration;
 
     move-result-object p0
 
@@ -244,6 +214,36 @@
     return-object p0
 .end method
 
+.method public static getInstance(Ljava/lang/Object;)Lorg/bouncycastle/asn1/ywr/zta;
+    .locals 1
+
+    instance-of v0, p0, Lorg/bouncycastle/asn1/ywr/zta;
+
+    if-eqz v0, :cond_0
+
+    check-cast p0, Lorg/bouncycastle/asn1/ywr/zta;
+
+    return-object p0
+
+    :cond_0
+    if-eqz p0, :cond_1
+
+    new-instance v0, Lorg/bouncycastle/asn1/ywr/zta;
+
+    invoke-static {p0}, Lorg/bouncycastle/asn1/obl;->getInstance(Ljava/lang/Object;)Lorg/bouncycastle/asn1/obl;
+
+    move-result-object p0
+
+    invoke-direct {v0, p0}, Lorg/bouncycastle/asn1/ywr/zta;-><init>(Lorg/bouncycastle/asn1/obl;)V
+
+    return-object v0
+
+    :cond_1
+    const/4 p0, 0x0
+
+    return-object p0
+.end method
+
 
 # virtual methods
 .method public getKey()Ljava/math/BigInteger;
@@ -275,7 +275,7 @@
 
     const/4 v0, 0x0
 
-    invoke-direct {p0, v0}, Lorg/bouncycastle/asn1/ywr/zta;->lc(I)Lorg/bouncycastle/asn1/vdb;
+    invoke-direct {p0, v0}, Lorg/bouncycastle/asn1/ywr/zta;->Cc(I)Lorg/bouncycastle/asn1/vdb;
 
     move-result-object p0
 
@@ -287,7 +287,7 @@
 
     const/4 v0, 0x1
 
-    invoke-direct {p0, v0}, Lorg/bouncycastle/asn1/ywr/zta;->lc(I)Lorg/bouncycastle/asn1/vdb;
+    invoke-direct {p0, v0}, Lorg/bouncycastle/asn1/ywr/zta;->Cc(I)Lorg/bouncycastle/asn1/vdb;
 
     move-result-object p0
 

@@ -17,13 +17,13 @@
 # instance fields
 .field degree:I
 
-.field final synthetic obl:I
+.field obl:I
+
+.field final synthetic oxb:I
 
 .field final synthetic this$0:Lcom/oneplus/android/server/scene/OemSceneAdModeController;
 
 .field final synthetic val$enable:Z
-
-.field vdb:I
 
 .field zgw:I
 
@@ -34,13 +34,13 @@
 
     iput-object p1, p0, Lcom/oneplus/android/server/scene/gck;->this$0:Lcom/oneplus/android/server/scene/OemSceneAdModeController;
 
-    iput p6, p0, Lcom/oneplus/android/server/scene/gck;->obl:I
+    iput p6, p0, Lcom/oneplus/android/server/scene/gck;->oxb:I
 
     iput-boolean p7, p0, Lcom/oneplus/android/server/scene/gck;->val$enable:Z
 
     invoke-direct {p0, p2, p3, p4, p5}, Landroid/os/CountDownTimer;-><init>(JJ)V
 
-    iget p1, p0, Lcom/oneplus/android/server/scene/gck;->obl:I
+    iget p1, p0, Lcom/oneplus/android/server/scene/gck;->oxb:I
 
     iget-object p2, p0, Lcom/oneplus/android/server/scene/gck;->this$0:Lcom/oneplus/android/server/scene/OemSceneAdModeController;
 
@@ -52,13 +52,13 @@
 
     iput p1, p0, Lcom/oneplus/android/server/scene/gck;->degree:I
 
-    iget p1, p0, Lcom/oneplus/android/server/scene/gck;->obl:I
+    iget p1, p0, Lcom/oneplus/android/server/scene/gck;->oxb:I
 
-    iput p1, p0, Lcom/oneplus/android/server/scene/gck;->vdb:I
+    iput p1, p0, Lcom/oneplus/android/server/scene/gck;->zgw:I
 
     const/4 p1, 0x0
 
-    iput p1, p0, Lcom/oneplus/android/server/scene/gck;->zgw:I
+    iput p1, p0, Lcom/oneplus/android/server/scene/gck;->obl:I
 
     return-void
 .end method
@@ -93,7 +93,7 @@
 
     const/16 v1, 0xe
 
-    iget p0, p0, Lcom/oneplus/android/server/scene/gck;->obl:I
+    iget p0, p0, Lcom/oneplus/android/server/scene/gck;->oxb:I
 
     invoke-interface {v0, v1, p0}, Lsis/you/you/zta/zta/you;->setMode(II)V
 
@@ -161,11 +161,42 @@
 
     if-eqz p1, :cond_1
 
-    iget p1, p0, Lcom/oneplus/android/server/scene/gck;->zgw:I
+    iget p1, p0, Lcom/oneplus/android/server/scene/gck;->obl:I
 
     iget v0, p0, Lcom/oneplus/android/server/scene/gck;->degree:I
 
     add-int/2addr p1, v0
+
+    iput p1, p0, Lcom/oneplus/android/server/scene/gck;->obl:I
+
+    iget-object p1, p0, Lcom/oneplus/android/server/scene/gck;->this$0:Lcom/oneplus/android/server/scene/OemSceneAdModeController;
+
+    invoke-static {p1}, Lcom/oneplus/android/server/scene/OemSceneAdModeController;->access$200(Lcom/oneplus/android/server/scene/OemSceneAdModeController;)Lsis/you/you/zta/zta/you;
+
+    move-result-object p1
+
+    iget v0, p0, Lcom/oneplus/android/server/scene/gck;->obl:I
+
+    const/16 v1, 0x3ff
+
+    if-le v0, v1, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    iget v1, p0, Lcom/oneplus/android/server/scene/gck;->obl:I
+
+    :goto_0
+    invoke-interface {p1, p2, v1}, Lsis/you/you/zta/zta/you;->setMode(II)V
+
+    goto :goto_2
+
+    :cond_1
+    iget p1, p0, Lcom/oneplus/android/server/scene/gck;->zgw:I
+
+    iget v0, p0, Lcom/oneplus/android/server/scene/gck;->degree:I
+
+    sub-int/2addr p1, v0
 
     iput p1, p0, Lcom/oneplus/android/server/scene/gck;->zgw:I
 
@@ -177,37 +208,6 @@
 
     iget v0, p0, Lcom/oneplus/android/server/scene/gck;->zgw:I
 
-    const/16 v1, 0x3ff
-
-    if-le v0, v1, :cond_0
-
-    goto :goto_0
-
-    :cond_0
-    iget v1, p0, Lcom/oneplus/android/server/scene/gck;->zgw:I
-
-    :goto_0
-    invoke-interface {p1, p2, v1}, Lsis/you/you/zta/zta/you;->setMode(II)V
-
-    goto :goto_2
-
-    :cond_1
-    iget p1, p0, Lcom/oneplus/android/server/scene/gck;->vdb:I
-
-    iget v0, p0, Lcom/oneplus/android/server/scene/gck;->degree:I
-
-    sub-int/2addr p1, v0
-
-    iput p1, p0, Lcom/oneplus/android/server/scene/gck;->vdb:I
-
-    iget-object p1, p0, Lcom/oneplus/android/server/scene/gck;->this$0:Lcom/oneplus/android/server/scene/OemSceneAdModeController;
-
-    invoke-static {p1}, Lcom/oneplus/android/server/scene/OemSceneAdModeController;->access$200(Lcom/oneplus/android/server/scene/OemSceneAdModeController;)Lsis/you/you/zta/zta/you;
-
-    move-result-object p1
-
-    iget v0, p0, Lcom/oneplus/android/server/scene/gck;->vdb:I
-
     if-gez v0, :cond_2
 
     const/4 p0, 0x0
@@ -215,7 +215,7 @@
     goto :goto_1
 
     :cond_2
-    iget p0, p0, Lcom/oneplus/android/server/scene/gck;->vdb:I
+    iget p0, p0, Lcom/oneplus/android/server/scene/gck;->zgw:I
 
     :goto_1
     invoke-interface {p1, p2, p0}, Lsis/you/you/zta/zta/you;->setMode(II)V

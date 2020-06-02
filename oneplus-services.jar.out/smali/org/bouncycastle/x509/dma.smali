@@ -12,9 +12,9 @@
 
 
 # static fields
-.field private static Iqa:Ljava/util/Hashtable;
+.field private static Wsa:Ljava/util/Hashtable;
 
-.field private static Kqa:Ljava/util/Set;
+.field private static Ysa:Ljava/util/Set;
 
 .field private static params:Ljava/util/Hashtable;
 
@@ -27,7 +27,7 @@
 
     invoke-direct {v0}, Ljava/util/Hashtable;-><init>()V
 
-    sput-object v0, Lorg/bouncycastle/x509/dma;->Iqa:Ljava/util/Hashtable;
+    sput-object v0, Lorg/bouncycastle/x509/dma;->Wsa:Ljava/util/Hashtable;
 
     new-instance v0, Ljava/util/Hashtable;
 
@@ -39,9 +39,9 @@
 
     invoke-direct {v0}, Ljava/util/HashSet;-><init>()V
 
-    sput-object v0, Lorg/bouncycastle/x509/dma;->Kqa:Ljava/util/Set;
+    sput-object v0, Lorg/bouncycastle/x509/dma;->Ysa:Ljava/util/Set;
 
-    sget-object v0, Lorg/bouncycastle/x509/dma;->Iqa:Ljava/util/Hashtable;
+    sget-object v0, Lorg/bouncycastle/x509/dma;->Wsa:Ljava/util/Hashtable;
 
     sget-object v1, Lorg/bouncycastle/asn1/dma/gwm;->md5WithRSAEncryption:Lorg/bouncycastle/asn1/bvj;
 
@@ -49,7 +49,7 @@
 
     invoke-virtual {v0, v2, v1}, Ljava/util/Hashtable;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    sget-object v0, Lorg/bouncycastle/x509/dma;->Iqa:Ljava/util/Hashtable;
+    sget-object v0, Lorg/bouncycastle/x509/dma;->Wsa:Ljava/util/Hashtable;
 
     sget-object v1, Lorg/bouncycastle/asn1/dma/gwm;->md5WithRSAEncryption:Lorg/bouncycastle/asn1/bvj;
 
@@ -57,7 +57,7 @@
 
     invoke-virtual {v0, v2, v1}, Ljava/util/Hashtable;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    sget-object v0, Lorg/bouncycastle/x509/dma;->Iqa:Ljava/util/Hashtable;
+    sget-object v0, Lorg/bouncycastle/x509/dma;->Wsa:Ljava/util/Hashtable;
 
     sget-object v1, Lorg/bouncycastle/asn1/dma/gwm;->sha1WithRSAEncryption:Lorg/bouncycastle/asn1/bvj;
 
@@ -65,7 +65,7 @@
 
     invoke-virtual {v0, v2, v1}, Ljava/util/Hashtable;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    sget-object v0, Lorg/bouncycastle/x509/dma;->Iqa:Ljava/util/Hashtable;
+    sget-object v0, Lorg/bouncycastle/x509/dma;->Wsa:Ljava/util/Hashtable;
 
     sget-object v1, Lorg/bouncycastle/asn1/dma/gwm;->sha1WithRSAEncryption:Lorg/bouncycastle/asn1/bvj;
 
@@ -73,7 +73,7 @@
 
     invoke-virtual {v0, v2, v1}, Ljava/util/Hashtable;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    sget-object v0, Lorg/bouncycastle/x509/dma;->Iqa:Ljava/util/Hashtable;
+    sget-object v0, Lorg/bouncycastle/x509/dma;->Wsa:Ljava/util/Hashtable;
 
     sget-object v1, Lorg/bouncycastle/asn1/dma/gwm;->sha224WithRSAEncryption:Lorg/bouncycastle/asn1/bvj;
 
@@ -81,7 +81,7 @@
 
     invoke-virtual {v0, v2, v1}, Ljava/util/Hashtable;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    sget-object v0, Lorg/bouncycastle/x509/dma;->Iqa:Ljava/util/Hashtable;
+    sget-object v0, Lorg/bouncycastle/x509/dma;->Wsa:Ljava/util/Hashtable;
 
     sget-object v1, Lorg/bouncycastle/asn1/dma/gwm;->sha224WithRSAEncryption:Lorg/bouncycastle/asn1/bvj;
 
@@ -89,7 +89,7 @@
 
     invoke-virtual {v0, v2, v1}, Ljava/util/Hashtable;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    sget-object v0, Lorg/bouncycastle/x509/dma;->Iqa:Ljava/util/Hashtable;
+    sget-object v0, Lorg/bouncycastle/x509/dma;->Wsa:Ljava/util/Hashtable;
 
     sget-object v1, Lorg/bouncycastle/asn1/dma/gwm;->sha256WithRSAEncryption:Lorg/bouncycastle/asn1/bvj;
 
@@ -97,7 +97,7 @@
 
     invoke-virtual {v0, v2, v1}, Ljava/util/Hashtable;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    sget-object v0, Lorg/bouncycastle/x509/dma;->Iqa:Ljava/util/Hashtable;
+    sget-object v0, Lorg/bouncycastle/x509/dma;->Wsa:Ljava/util/Hashtable;
 
     sget-object v1, Lorg/bouncycastle/asn1/dma/gwm;->sha256WithRSAEncryption:Lorg/bouncycastle/asn1/bvj;
 
@@ -105,7 +105,7 @@
 
     invoke-virtual {v0, v2, v1}, Ljava/util/Hashtable;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    sget-object v0, Lorg/bouncycastle/x509/dma;->Iqa:Ljava/util/Hashtable;
+    sget-object v0, Lorg/bouncycastle/x509/dma;->Wsa:Ljava/util/Hashtable;
 
     sget-object v1, Lorg/bouncycastle/asn1/dma/gwm;->sha384WithRSAEncryption:Lorg/bouncycastle/asn1/bvj;
 
@@ -113,7 +113,7 @@
 
     invoke-virtual {v0, v2, v1}, Ljava/util/Hashtable;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    sget-object v0, Lorg/bouncycastle/x509/dma;->Iqa:Ljava/util/Hashtable;
+    sget-object v0, Lorg/bouncycastle/x509/dma;->Wsa:Ljava/util/Hashtable;
 
     sget-object v1, Lorg/bouncycastle/asn1/dma/gwm;->sha384WithRSAEncryption:Lorg/bouncycastle/asn1/bvj;
 
@@ -121,7 +121,7 @@
 
     invoke-virtual {v0, v2, v1}, Ljava/util/Hashtable;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    sget-object v0, Lorg/bouncycastle/x509/dma;->Iqa:Ljava/util/Hashtable;
+    sget-object v0, Lorg/bouncycastle/x509/dma;->Wsa:Ljava/util/Hashtable;
 
     sget-object v1, Lorg/bouncycastle/asn1/dma/gwm;->sha512WithRSAEncryption:Lorg/bouncycastle/asn1/bvj;
 
@@ -129,7 +129,7 @@
 
     invoke-virtual {v0, v2, v1}, Ljava/util/Hashtable;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    sget-object v0, Lorg/bouncycastle/x509/dma;->Iqa:Ljava/util/Hashtable;
+    sget-object v0, Lorg/bouncycastle/x509/dma;->Wsa:Ljava/util/Hashtable;
 
     sget-object v1, Lorg/bouncycastle/asn1/dma/gwm;->sha512WithRSAEncryption:Lorg/bouncycastle/asn1/bvj;
 
@@ -137,7 +137,7 @@
 
     invoke-virtual {v0, v2, v1}, Ljava/util/Hashtable;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    sget-object v0, Lorg/bouncycastle/x509/dma;->Iqa:Ljava/util/Hashtable;
+    sget-object v0, Lorg/bouncycastle/x509/dma;->Wsa:Ljava/util/Hashtable;
 
     sget-object v1, Lorg/bouncycastle/asn1/dma/gwm;->id_RSASSA_PSS:Lorg/bouncycastle/asn1/bvj;
 
@@ -145,7 +145,7 @@
 
     invoke-virtual {v0, v2, v1}, Ljava/util/Hashtable;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    sget-object v0, Lorg/bouncycastle/x509/dma;->Iqa:Ljava/util/Hashtable;
+    sget-object v0, Lorg/bouncycastle/x509/dma;->Wsa:Ljava/util/Hashtable;
 
     sget-object v1, Lorg/bouncycastle/asn1/dma/gwm;->id_RSASSA_PSS:Lorg/bouncycastle/asn1/bvj;
 
@@ -153,7 +153,7 @@
 
     invoke-virtual {v0, v3, v1}, Ljava/util/Hashtable;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    sget-object v0, Lorg/bouncycastle/x509/dma;->Iqa:Ljava/util/Hashtable;
+    sget-object v0, Lorg/bouncycastle/x509/dma;->Wsa:Ljava/util/Hashtable;
 
     sget-object v1, Lorg/bouncycastle/asn1/dma/gwm;->id_RSASSA_PSS:Lorg/bouncycastle/asn1/bvj;
 
@@ -161,7 +161,7 @@
 
     invoke-virtual {v0, v4, v1}, Ljava/util/Hashtable;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    sget-object v0, Lorg/bouncycastle/x509/dma;->Iqa:Ljava/util/Hashtable;
+    sget-object v0, Lorg/bouncycastle/x509/dma;->Wsa:Ljava/util/Hashtable;
 
     sget-object v1, Lorg/bouncycastle/asn1/dma/gwm;->id_RSASSA_PSS:Lorg/bouncycastle/asn1/bvj;
 
@@ -169,7 +169,7 @@
 
     invoke-virtual {v0, v5, v1}, Ljava/util/Hashtable;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    sget-object v0, Lorg/bouncycastle/x509/dma;->Iqa:Ljava/util/Hashtable;
+    sget-object v0, Lorg/bouncycastle/x509/dma;->Wsa:Ljava/util/Hashtable;
 
     sget-object v1, Lorg/bouncycastle/asn1/dma/gwm;->id_RSASSA_PSS:Lorg/bouncycastle/asn1/bvj;
 
@@ -177,7 +177,7 @@
 
     invoke-virtual {v0, v6, v1}, Ljava/util/Hashtable;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    sget-object v0, Lorg/bouncycastle/x509/dma;->Iqa:Ljava/util/Hashtable;
+    sget-object v0, Lorg/bouncycastle/x509/dma;->Wsa:Ljava/util/Hashtable;
 
     sget-object v1, Lorg/bouncycastle/asn1/ibl/ivd;->id_dsa_with_sha1:Lorg/bouncycastle/asn1/bvj;
 
@@ -185,7 +185,7 @@
 
     invoke-virtual {v0, v7, v1}, Ljava/util/Hashtable;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    sget-object v0, Lorg/bouncycastle/x509/dma;->Iqa:Ljava/util/Hashtable;
+    sget-object v0, Lorg/bouncycastle/x509/dma;->Wsa:Ljava/util/Hashtable;
 
     sget-object v1, Lorg/bouncycastle/asn1/ibl/ivd;->id_dsa_with_sha1:Lorg/bouncycastle/asn1/bvj;
 
@@ -193,39 +193,39 @@
 
     invoke-virtual {v0, v7, v1}, Ljava/util/Hashtable;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    sget-object v0, Lorg/bouncycastle/x509/dma;->Iqa:Ljava/util/Hashtable;
+    sget-object v0, Lorg/bouncycastle/x509/dma;->Wsa:Ljava/util/Hashtable;
 
-    sget-object v1, Lorg/bouncycastle/asn1/bio/you;->DMa:Lorg/bouncycastle/asn1/bvj;
+    sget-object v1, Lorg/bouncycastle/asn1/bio/you;->ROa:Lorg/bouncycastle/asn1/bvj;
 
     const-string v7, "SHA224WITHDSA"
 
     invoke-virtual {v0, v7, v1}, Ljava/util/Hashtable;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    sget-object v0, Lorg/bouncycastle/x509/dma;->Iqa:Ljava/util/Hashtable;
+    sget-object v0, Lorg/bouncycastle/x509/dma;->Wsa:Ljava/util/Hashtable;
 
-    sget-object v1, Lorg/bouncycastle/asn1/bio/you;->EMa:Lorg/bouncycastle/asn1/bvj;
+    sget-object v1, Lorg/bouncycastle/asn1/bio/you;->SOa:Lorg/bouncycastle/asn1/bvj;
 
     const-string v7, "SHA256WITHDSA"
 
     invoke-virtual {v0, v7, v1}, Ljava/util/Hashtable;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    sget-object v0, Lorg/bouncycastle/x509/dma;->Iqa:Ljava/util/Hashtable;
+    sget-object v0, Lorg/bouncycastle/x509/dma;->Wsa:Ljava/util/Hashtable;
 
-    sget-object v1, Lorg/bouncycastle/asn1/bio/you;->FMa:Lorg/bouncycastle/asn1/bvj;
+    sget-object v1, Lorg/bouncycastle/asn1/bio/you;->TOa:Lorg/bouncycastle/asn1/bvj;
 
     const-string v7, "SHA384WITHDSA"
 
     invoke-virtual {v0, v7, v1}, Ljava/util/Hashtable;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    sget-object v0, Lorg/bouncycastle/x509/dma;->Iqa:Ljava/util/Hashtable;
+    sget-object v0, Lorg/bouncycastle/x509/dma;->Wsa:Ljava/util/Hashtable;
 
-    sget-object v1, Lorg/bouncycastle/asn1/bio/you;->GMa:Lorg/bouncycastle/asn1/bvj;
+    sget-object v1, Lorg/bouncycastle/asn1/bio/you;->UOa:Lorg/bouncycastle/asn1/bvj;
 
     const-string v7, "SHA512WITHDSA"
 
     invoke-virtual {v0, v7, v1}, Ljava/util/Hashtable;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    sget-object v0, Lorg/bouncycastle/x509/dma;->Iqa:Ljava/util/Hashtable;
+    sget-object v0, Lorg/bouncycastle/x509/dma;->Wsa:Ljava/util/Hashtable;
 
     sget-object v1, Lorg/bouncycastle/asn1/ibl/ivd;->ecdsa_with_SHA1:Lorg/bouncycastle/asn1/bvj;
 
@@ -233,7 +233,7 @@
 
     invoke-virtual {v0, v7, v1}, Ljava/util/Hashtable;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    sget-object v0, Lorg/bouncycastle/x509/dma;->Iqa:Ljava/util/Hashtable;
+    sget-object v0, Lorg/bouncycastle/x509/dma;->Wsa:Ljava/util/Hashtable;
 
     sget-object v1, Lorg/bouncycastle/asn1/ibl/ivd;->ecdsa_with_SHA1:Lorg/bouncycastle/asn1/bvj;
 
@@ -241,7 +241,7 @@
 
     invoke-virtual {v0, v7, v1}, Ljava/util/Hashtable;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    sget-object v0, Lorg/bouncycastle/x509/dma;->Iqa:Ljava/util/Hashtable;
+    sget-object v0, Lorg/bouncycastle/x509/dma;->Wsa:Ljava/util/Hashtable;
 
     sget-object v1, Lorg/bouncycastle/asn1/ibl/ivd;->ecdsa_with_SHA224:Lorg/bouncycastle/asn1/bvj;
 
@@ -249,7 +249,7 @@
 
     invoke-virtual {v0, v7, v1}, Ljava/util/Hashtable;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    sget-object v0, Lorg/bouncycastle/x509/dma;->Iqa:Ljava/util/Hashtable;
+    sget-object v0, Lorg/bouncycastle/x509/dma;->Wsa:Ljava/util/Hashtable;
 
     sget-object v1, Lorg/bouncycastle/asn1/ibl/ivd;->ecdsa_with_SHA256:Lorg/bouncycastle/asn1/bvj;
 
@@ -257,7 +257,7 @@
 
     invoke-virtual {v0, v7, v1}, Ljava/util/Hashtable;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    sget-object v0, Lorg/bouncycastle/x509/dma;->Iqa:Ljava/util/Hashtable;
+    sget-object v0, Lorg/bouncycastle/x509/dma;->Wsa:Ljava/util/Hashtable;
 
     sget-object v1, Lorg/bouncycastle/asn1/ibl/ivd;->ecdsa_with_SHA384:Lorg/bouncycastle/asn1/bvj;
 
@@ -265,7 +265,7 @@
 
     invoke-virtual {v0, v7, v1}, Ljava/util/Hashtable;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    sget-object v0, Lorg/bouncycastle/x509/dma;->Iqa:Ljava/util/Hashtable;
+    sget-object v0, Lorg/bouncycastle/x509/dma;->Wsa:Ljava/util/Hashtable;
 
     sget-object v1, Lorg/bouncycastle/asn1/ibl/ivd;->ecdsa_with_SHA512:Lorg/bouncycastle/asn1/bvj;
 
@@ -273,69 +273,69 @@
 
     invoke-virtual {v0, v7, v1}, Ljava/util/Hashtable;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    sget-object v0, Lorg/bouncycastle/x509/dma;->Kqa:Ljava/util/Set;
+    sget-object v0, Lorg/bouncycastle/x509/dma;->Ysa:Ljava/util/Set;
 
     sget-object v1, Lorg/bouncycastle/asn1/ibl/ivd;->ecdsa_with_SHA1:Lorg/bouncycastle/asn1/bvj;
 
     invoke-interface {v0, v1}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
 
-    sget-object v0, Lorg/bouncycastle/x509/dma;->Kqa:Ljava/util/Set;
+    sget-object v0, Lorg/bouncycastle/x509/dma;->Ysa:Ljava/util/Set;
 
     sget-object v1, Lorg/bouncycastle/asn1/ibl/ivd;->ecdsa_with_SHA224:Lorg/bouncycastle/asn1/bvj;
 
     invoke-interface {v0, v1}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
 
-    sget-object v0, Lorg/bouncycastle/x509/dma;->Kqa:Ljava/util/Set;
+    sget-object v0, Lorg/bouncycastle/x509/dma;->Ysa:Ljava/util/Set;
 
     sget-object v1, Lorg/bouncycastle/asn1/ibl/ivd;->ecdsa_with_SHA256:Lorg/bouncycastle/asn1/bvj;
 
     invoke-interface {v0, v1}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
 
-    sget-object v0, Lorg/bouncycastle/x509/dma;->Kqa:Ljava/util/Set;
+    sget-object v0, Lorg/bouncycastle/x509/dma;->Ysa:Ljava/util/Set;
 
     sget-object v1, Lorg/bouncycastle/asn1/ibl/ivd;->ecdsa_with_SHA384:Lorg/bouncycastle/asn1/bvj;
 
     invoke-interface {v0, v1}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
 
-    sget-object v0, Lorg/bouncycastle/x509/dma;->Kqa:Ljava/util/Set;
+    sget-object v0, Lorg/bouncycastle/x509/dma;->Ysa:Ljava/util/Set;
 
     sget-object v1, Lorg/bouncycastle/asn1/ibl/ivd;->ecdsa_with_SHA512:Lorg/bouncycastle/asn1/bvj;
 
     invoke-interface {v0, v1}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
 
-    sget-object v0, Lorg/bouncycastle/x509/dma;->Kqa:Ljava/util/Set;
+    sget-object v0, Lorg/bouncycastle/x509/dma;->Ysa:Ljava/util/Set;
 
     sget-object v1, Lorg/bouncycastle/asn1/ibl/ivd;->id_dsa_with_sha1:Lorg/bouncycastle/asn1/bvj;
 
     invoke-interface {v0, v1}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
 
-    sget-object v0, Lorg/bouncycastle/x509/dma;->Kqa:Ljava/util/Set;
+    sget-object v0, Lorg/bouncycastle/x509/dma;->Ysa:Ljava/util/Set;
 
-    sget-object v1, Lorg/bouncycastle/asn1/bio/you;->DMa:Lorg/bouncycastle/asn1/bvj;
-
-    invoke-interface {v0, v1}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
-
-    sget-object v0, Lorg/bouncycastle/x509/dma;->Kqa:Ljava/util/Set;
-
-    sget-object v1, Lorg/bouncycastle/asn1/bio/you;->EMa:Lorg/bouncycastle/asn1/bvj;
+    sget-object v1, Lorg/bouncycastle/asn1/bio/you;->ROa:Lorg/bouncycastle/asn1/bvj;
 
     invoke-interface {v0, v1}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
 
-    sget-object v0, Lorg/bouncycastle/x509/dma;->Kqa:Ljava/util/Set;
+    sget-object v0, Lorg/bouncycastle/x509/dma;->Ysa:Ljava/util/Set;
 
-    sget-object v1, Lorg/bouncycastle/asn1/bio/you;->FMa:Lorg/bouncycastle/asn1/bvj;
+    sget-object v1, Lorg/bouncycastle/asn1/bio/you;->SOa:Lorg/bouncycastle/asn1/bvj;
 
     invoke-interface {v0, v1}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
 
-    sget-object v0, Lorg/bouncycastle/x509/dma;->Kqa:Ljava/util/Set;
+    sget-object v0, Lorg/bouncycastle/x509/dma;->Ysa:Ljava/util/Set;
 
-    sget-object v1, Lorg/bouncycastle/asn1/bio/you;->GMa:Lorg/bouncycastle/asn1/bvj;
+    sget-object v1, Lorg/bouncycastle/asn1/bio/you;->TOa:Lorg/bouncycastle/asn1/bvj;
+
+    invoke-interface {v0, v1}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
+
+    sget-object v0, Lorg/bouncycastle/x509/dma;->Ysa:Ljava/util/Set;
+
+    sget-object v1, Lorg/bouncycastle/asn1/bio/you;->UOa:Lorg/bouncycastle/asn1/bvj;
 
     invoke-interface {v0, v1}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
 
     new-instance v0, Lorg/bouncycastle/asn1/x509/zta;
 
-    sget-object v1, Lorg/bouncycastle/asn1/gck/zta;->TNa:Lorg/bouncycastle/asn1/bvj;
+    sget-object v1, Lorg/bouncycastle/asn1/gck/zta;->gQa:Lorg/bouncycastle/asn1/bvj;
 
     sget-object v7, Lorg/bouncycastle/asn1/z;->INSTANCE:Lorg/bouncycastle/asn1/z;
 
@@ -353,7 +353,7 @@
 
     new-instance v0, Lorg/bouncycastle/asn1/x509/zta;
 
-    sget-object v1, Lorg/bouncycastle/asn1/bio/you;->QLa:Lorg/bouncycastle/asn1/bvj;
+    sget-object v1, Lorg/bouncycastle/asn1/bio/you;->dOa:Lorg/bouncycastle/asn1/bvj;
 
     sget-object v2, Lorg/bouncycastle/asn1/z;->INSTANCE:Lorg/bouncycastle/asn1/z;
 
@@ -371,7 +371,7 @@
 
     new-instance v0, Lorg/bouncycastle/asn1/x509/zta;
 
-    sget-object v1, Lorg/bouncycastle/asn1/bio/you;->NLa:Lorg/bouncycastle/asn1/bvj;
+    sget-object v1, Lorg/bouncycastle/asn1/bio/you;->aOa:Lorg/bouncycastle/asn1/bvj;
 
     sget-object v2, Lorg/bouncycastle/asn1/z;->INSTANCE:Lorg/bouncycastle/asn1/z;
 
@@ -389,7 +389,7 @@
 
     new-instance v0, Lorg/bouncycastle/asn1/x509/zta;
 
-    sget-object v1, Lorg/bouncycastle/asn1/bio/you;->OLa:Lorg/bouncycastle/asn1/bvj;
+    sget-object v1, Lorg/bouncycastle/asn1/bio/you;->bOa:Lorg/bouncycastle/asn1/bvj;
 
     sget-object v2, Lorg/bouncycastle/asn1/z;->INSTANCE:Lorg/bouncycastle/asn1/z;
 
@@ -407,7 +407,7 @@
 
     new-instance v0, Lorg/bouncycastle/asn1/x509/zta;
 
-    sget-object v1, Lorg/bouncycastle/asn1/bio/you;->PLa:Lorg/bouncycastle/asn1/bvj;
+    sget-object v1, Lorg/bouncycastle/asn1/bio/you;->cOa:Lorg/bouncycastle/asn1/bvj;
 
     sget-object v2, Lorg/bouncycastle/asn1/z;->INSTANCE:Lorg/bouncycastle/asn1/z;
 
@@ -434,14 +434,14 @@
     return-void
 .end method
 
-.method static Xa(Ljava/lang/String;)Lorg/bouncycastle/asn1/bvj;
+.method static Za(Ljava/lang/String;)Lorg/bouncycastle/asn1/bvj;
     .locals 1
 
     invoke-static {p0}, Lorg/bouncycastle/util/Strings;->toUpperCase(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p0
 
-    sget-object v0, Lorg/bouncycastle/x509/dma;->Iqa:Ljava/util/Hashtable;
+    sget-object v0, Lorg/bouncycastle/x509/dma;->Wsa:Ljava/util/Hashtable;
 
     invoke-virtual {v0, p0}, Ljava/util/Hashtable;->containsKey(Ljava/lang/Object;)Z
 
@@ -449,7 +449,7 @@
 
     if-eqz v0, :cond_0
 
-    sget-object v0, Lorg/bouncycastle/x509/dma;->Iqa:Ljava/util/Hashtable;
+    sget-object v0, Lorg/bouncycastle/x509/dma;->Wsa:Ljava/util/Hashtable;
 
     invoke-virtual {v0, p0}, Ljava/util/Hashtable;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -467,7 +467,7 @@
     return-object v0
 .end method
 
-.method static Ya(Ljava/lang/String;)Ljava/security/Signature;
+.method static _a(Ljava/lang/String;)Ljava/security/Signature;
     .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -549,42 +549,6 @@
     throw v0
 .end method
 
-.method static gl()Ljava/util/Iterator;
-    .locals 3
-
-    sget-object v0, Lorg/bouncycastle/x509/dma;->Iqa:Ljava/util/Hashtable;
-
-    invoke-virtual {v0}, Ljava/util/Hashtable;->keys()Ljava/util/Enumeration;
-
-    move-result-object v0
-
-    new-instance v1, Ljava/util/ArrayList;
-
-    invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
-
-    :goto_0
-    invoke-interface {v0}, Ljava/util/Enumeration;->hasMoreElements()Z
-
-    move-result v2
-
-    if-eqz v2, :cond_0
-
-    invoke-interface {v0}, Ljava/util/Enumeration;->nextElement()Ljava/lang/Object;
-
-    move-result-object v2
-
-    invoke-interface {v1, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
-
-    goto :goto_0
-
-    :cond_0
-    invoke-interface {v1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
 .method static oif(Ljava/lang/String;Ljava/lang/String;)Lorg/bouncycastle/x509/dma$zta;
     .locals 4
     .annotation system Ldalvik/annotation/Throws;
@@ -653,10 +617,46 @@
     throw p0
 .end method
 
+.method static pl()Ljava/util/Iterator;
+    .locals 3
+
+    sget-object v0, Lorg/bouncycastle/x509/dma;->Wsa:Ljava/util/Hashtable;
+
+    invoke-virtual {v0}, Ljava/util/Hashtable;->keys()Ljava/util/Enumeration;
+
+    move-result-object v0
+
+    new-instance v1, Ljava/util/ArrayList;
+
+    invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
+
+    :goto_0
+    invoke-interface {v0}, Ljava/util/Enumeration;->hasMoreElements()Z
+
+    move-result v2
+
+    if-eqz v2, :cond_0
+
+    invoke-interface {v0}, Ljava/util/Enumeration;->nextElement()Ljava/lang/Object;
+
+    move-result-object v2
+
+    invoke-interface {v1, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    goto :goto_0
+
+    :cond_0
+    invoke-interface {v1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
 .method static rtg(Lorg/bouncycastle/asn1/bvj;Ljava/lang/String;)Lorg/bouncycastle/asn1/x509/zta;
     .locals 2
 
-    sget-object v0, Lorg/bouncycastle/x509/dma;->Kqa:Ljava/util/Set;
+    sget-object v0, Lorg/bouncycastle/x509/dma;->Ysa:Ljava/util/Set;
 
     invoke-interface {v0, p0}, Ljava/util/Set;->contains(Ljava/lang/Object;)Z
 
@@ -1040,7 +1040,7 @@
 
     if-eqz p0, :cond_1
 
-    invoke-static {p1}, Lorg/bouncycastle/x509/dma;->Ya(Ljava/lang/String;)Ljava/security/Signature;
+    invoke-static {p1}, Lorg/bouncycastle/x509/dma;->_a(Ljava/lang/String;)Ljava/security/Signature;
 
     move-result-object p0
 

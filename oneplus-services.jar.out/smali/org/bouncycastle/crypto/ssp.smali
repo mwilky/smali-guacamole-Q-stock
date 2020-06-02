@@ -4,17 +4,17 @@
 
 
 # instance fields
-.field protected axa:I
+.field protected Gpa:Lorg/bouncycastle/crypto/rtg;
 
 .field protected buf:[B
 
-.field protected bxa:Z
+.field protected oza:I
 
-.field protected cxa:Z
+.field protected pza:Z
 
-.field protected dxa:Z
+.field protected qza:Z
 
-.field protected rna:Lorg/bouncycastle/crypto/rtg;
+.field protected rza:Z
 
 
 # direct methods
@@ -31,7 +31,7 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lorg/bouncycastle/crypto/ssp;->rna:Lorg/bouncycastle/crypto/rtg;
+    iput-object p1, p0, Lorg/bouncycastle/crypto/ssp;->Gpa:Lorg/bouncycastle/crypto/rtg;
 
     invoke-interface {p1}, Lorg/bouncycastle/crypto/rtg;->getBlockSize()I
 
@@ -43,7 +43,7 @@
 
     const/4 v0, 0x0
 
-    iput v0, p0, Lorg/bouncycastle/crypto/ssp;->axa:I
+    iput v0, p0, Lorg/bouncycastle/crypto/ssp;->oza:I
 
     invoke-interface {p1}, Lorg/bouncycastle/crypto/rtg;->vju()Ljava/lang/String;
 
@@ -77,9 +77,9 @@
     move v4, v0
 
     :goto_0
-    iput-boolean v4, p0, Lorg/bouncycastle/crypto/ssp;->dxa:Z
+    iput-boolean v4, p0, Lorg/bouncycastle/crypto/ssp;->rza:Z
 
-    iget-boolean v4, p0, Lorg/bouncycastle/crypto/ssp;->dxa:Z
+    iget-boolean v4, p0, Lorg/bouncycastle/crypto/ssp;->rza:Z
 
     if-nez v4, :cond_3
 
@@ -103,13 +103,13 @@
     move v0, v3
 
     :cond_2
-    iput-boolean v0, p0, Lorg/bouncycastle/crypto/ssp;->cxa:Z
+    iput-boolean v0, p0, Lorg/bouncycastle/crypto/ssp;->qza:Z
 
     goto :goto_2
 
     :cond_3
     :goto_1
-    iput-boolean v3, p0, Lorg/bouncycastle/crypto/ssp;->cxa:Z
+    iput-boolean v3, p0, Lorg/bouncycastle/crypto/ssp;->qza:Z
 
     :goto_2
     return-void
@@ -120,7 +120,7 @@
 .method public b()Lorg/bouncycastle/crypto/rtg;
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/crypto/ssp;->rna:Lorg/bouncycastle/crypto/rtg;
+    iget-object p0, p0, Lorg/bouncycastle/crypto/ssp;->Gpa:Lorg/bouncycastle/crypto/rtg;
 
     return-object p0
 .end method
@@ -136,7 +136,7 @@
     .end annotation
 
     :try_start_0
-    iget v0, p0, Lorg/bouncycastle/crypto/ssp;->axa:I
+    iget v0, p0, Lorg/bouncycastle/crypto/ssp;->oza:I
 
     add-int/2addr v0, p2
 
@@ -144,17 +144,17 @@
 
     if-gt v0, v1, :cond_2
 
-    iget v0, p0, Lorg/bouncycastle/crypto/ssp;->axa:I
+    iget v0, p0, Lorg/bouncycastle/crypto/ssp;->oza:I
 
     const/4 v1, 0x0
 
     if-eqz v0, :cond_1
 
-    iget-boolean v0, p0, Lorg/bouncycastle/crypto/ssp;->cxa:Z
+    iget-boolean v0, p0, Lorg/bouncycastle/crypto/ssp;->qza:Z
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lorg/bouncycastle/crypto/ssp;->rna:Lorg/bouncycastle/crypto/rtg;
+    iget-object v0, p0, Lorg/bouncycastle/crypto/ssp;->Gpa:Lorg/bouncycastle/crypto/rtg;
 
     iget-object v2, p0, Lorg/bouncycastle/crypto/ssp;->buf:[B
 
@@ -162,9 +162,9 @@
 
     invoke-interface {v0, v2, v1, v3, v1}, Lorg/bouncycastle/crypto/rtg;->zta([BI[BI)I
 
-    iget v0, p0, Lorg/bouncycastle/crypto/ssp;->axa:I
+    iget v0, p0, Lorg/bouncycastle/crypto/ssp;->oza:I
 
-    iput v1, p0, Lorg/bouncycastle/crypto/ssp;->axa:I
+    iput v1, p0, Lorg/bouncycastle/crypto/ssp;->oza:I
 
     iget-object v2, p0, Lorg/bouncycastle/crypto/ssp;->buf:[B
 
@@ -214,7 +214,7 @@
 .method public getBlockSize()I
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/crypto/ssp;->rna:Lorg/bouncycastle/crypto/rtg;
+    iget-object p0, p0, Lorg/bouncycastle/crypto/ssp;->Gpa:Lorg/bouncycastle/crypto/rtg;
 
     invoke-interface {p0}, Lorg/bouncycastle/crypto/rtg;->getBlockSize()I
 
@@ -226,7 +226,7 @@
 .method public getOutputSize(I)I
     .locals 0
 
-    iget p0, p0, Lorg/bouncycastle/crypto/ssp;->axa:I
+    iget p0, p0, Lorg/bouncycastle/crypto/ssp;->oza:I
 
     add-int/2addr p1, p0
 
@@ -254,9 +254,9 @@
     goto :goto_0
 
     :cond_0
-    iput v0, p0, Lorg/bouncycastle/crypto/ssp;->axa:I
+    iput v0, p0, Lorg/bouncycastle/crypto/ssp;->oza:I
 
-    iget-object p0, p0, Lorg/bouncycastle/crypto/ssp;->rna:Lorg/bouncycastle/crypto/rtg;
+    iget-object p0, p0, Lorg/bouncycastle/crypto/ssp;->Gpa:Lorg/bouncycastle/crypto/rtg;
 
     invoke-interface {p0}, Lorg/bouncycastle/crypto/rtg;->reset()V
 
@@ -266,15 +266,15 @@
 .method public you(I)I
     .locals 1
 
-    iget v0, p0, Lorg/bouncycastle/crypto/ssp;->axa:I
+    iget v0, p0, Lorg/bouncycastle/crypto/ssp;->oza:I
 
     add-int/2addr p1, v0
 
-    iget-boolean v0, p0, Lorg/bouncycastle/crypto/ssp;->dxa:Z
+    iget-boolean v0, p0, Lorg/bouncycastle/crypto/ssp;->rza:Z
 
     if-eqz v0, :cond_1
 
-    iget-boolean v0, p0, Lorg/bouncycastle/crypto/ssp;->bxa:Z
+    iget-boolean v0, p0, Lorg/bouncycastle/crypto/ssp;->pza:Z
 
     if-eqz v0, :cond_0
 
@@ -284,7 +284,7 @@
 
     rem-int v0, p1, v0
 
-    iget-object p0, p0, Lorg/bouncycastle/crypto/ssp;->rna:Lorg/bouncycastle/crypto/rtg;
+    iget-object p0, p0, Lorg/bouncycastle/crypto/ssp;->Gpa:Lorg/bouncycastle/crypto/rtg;
 
     invoke-interface {p0}, Lorg/bouncycastle/crypto/rtg;->getBlockSize()I
 
@@ -328,15 +328,15 @@
 
     iget-object v0, p0, Lorg/bouncycastle/crypto/ssp;->buf:[B
 
-    iget v1, p0, Lorg/bouncycastle/crypto/ssp;->axa:I
+    iget v1, p0, Lorg/bouncycastle/crypto/ssp;->oza:I
 
     add-int/lit8 v2, v1, 0x1
 
-    iput v2, p0, Lorg/bouncycastle/crypto/ssp;->axa:I
+    iput v2, p0, Lorg/bouncycastle/crypto/ssp;->oza:I
 
     aput-byte p1, v0, v1
 
-    iget p1, p0, Lorg/bouncycastle/crypto/ssp;->axa:I
+    iget p1, p0, Lorg/bouncycastle/crypto/ssp;->oza:I
 
     array-length v1, v0
 
@@ -344,13 +344,13 @@
 
     if-ne p1, v1, :cond_0
 
-    iget-object p1, p0, Lorg/bouncycastle/crypto/ssp;->rna:Lorg/bouncycastle/crypto/rtg;
+    iget-object p1, p0, Lorg/bouncycastle/crypto/ssp;->Gpa:Lorg/bouncycastle/crypto/rtg;
 
     invoke-interface {p1, v0, v2, p2, p3}, Lorg/bouncycastle/crypto/rtg;->zta([BI[BI)I
 
     move-result p1
 
-    iput v2, p0, Lorg/bouncycastle/crypto/ssp;->axa:I
+    iput v2, p0, Lorg/bouncycastle/crypto/ssp;->oza:I
 
     goto :goto_0
 
@@ -405,7 +405,7 @@
 
     array-length v2, v1
 
-    iget v3, p0, Lorg/bouncycastle/crypto/ssp;->axa:I
+    iget v3, p0, Lorg/bouncycastle/crypto/ssp;->oza:I
 
     sub-int/2addr v2, v3
 
@@ -415,7 +415,7 @@
 
     invoke-static {p1, p2, v1, v3, v2}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    iget-object v1, p0, Lorg/bouncycastle/crypto/ssp;->rna:Lorg/bouncycastle/crypto/rtg;
+    iget-object v1, p0, Lorg/bouncycastle/crypto/ssp;->Gpa:Lorg/bouncycastle/crypto/rtg;
 
     iget-object v3, p0, Lorg/bouncycastle/crypto/ssp;->buf:[B
 
@@ -425,7 +425,7 @@
 
     add-int/2addr v1, v4
 
-    iput v4, p0, Lorg/bouncycastle/crypto/ssp;->axa:I
+    iput v4, p0, Lorg/bouncycastle/crypto/ssp;->oza:I
 
     sub-int/2addr p3, v2
 
@@ -438,7 +438,7 @@
 
     if-le p3, v2, :cond_3
 
-    iget-object v2, p0, Lorg/bouncycastle/crypto/ssp;->rna:Lorg/bouncycastle/crypto/rtg;
+    iget-object v2, p0, Lorg/bouncycastle/crypto/ssp;->Gpa:Lorg/bouncycastle/crypto/rtg;
 
     add-int v3, p5, v1
 
@@ -460,17 +460,17 @@
     :cond_3
     iget-object v0, p0, Lorg/bouncycastle/crypto/ssp;->buf:[B
 
-    iget v2, p0, Lorg/bouncycastle/crypto/ssp;->axa:I
+    iget v2, p0, Lorg/bouncycastle/crypto/ssp;->oza:I
 
     invoke-static {p1, p2, v0, v2, p3}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    iget p1, p0, Lorg/bouncycastle/crypto/ssp;->axa:I
+    iget p1, p0, Lorg/bouncycastle/crypto/ssp;->oza:I
 
     add-int/2addr p1, p3
 
-    iput p1, p0, Lorg/bouncycastle/crypto/ssp;->axa:I
+    iput p1, p0, Lorg/bouncycastle/crypto/ssp;->oza:I
 
-    iget p1, p0, Lorg/bouncycastle/crypto/ssp;->axa:I
+    iget p1, p0, Lorg/bouncycastle/crypto/ssp;->oza:I
 
     iget-object p2, p0, Lorg/bouncycastle/crypto/ssp;->buf:[B
 
@@ -478,7 +478,7 @@
 
     if-ne p1, p3, :cond_4
 
-    iget-object p1, p0, Lorg/bouncycastle/crypto/ssp;->rna:Lorg/bouncycastle/crypto/rtg;
+    iget-object p1, p0, Lorg/bouncycastle/crypto/ssp;->Gpa:Lorg/bouncycastle/crypto/rtg;
 
     add-int/2addr p5, v1
 
@@ -488,7 +488,7 @@
 
     add-int/2addr v1, p1
 
-    iput v4, p0, Lorg/bouncycastle/crypto/ssp;->axa:I
+    iput v4, p0, Lorg/bouncycastle/crypto/ssp;->oza:I
 
     :cond_4
     return v1
@@ -511,11 +511,11 @@
         }
     .end annotation
 
-    iput-boolean p1, p0, Lorg/bouncycastle/crypto/ssp;->bxa:Z
+    iput-boolean p1, p0, Lorg/bouncycastle/crypto/ssp;->pza:Z
 
     invoke-virtual {p0}, Lorg/bouncycastle/crypto/ssp;->reset()V
 
-    iget-object p0, p0, Lorg/bouncycastle/crypto/ssp;->rna:Lorg/bouncycastle/crypto/rtg;
+    iget-object p0, p0, Lorg/bouncycastle/crypto/ssp;->Gpa:Lorg/bouncycastle/crypto/rtg;
 
     invoke-interface {p0, p1, p2}, Lorg/bouncycastle/crypto/rtg;->zta(ZLorg/bouncycastle/crypto/kth;)V
 

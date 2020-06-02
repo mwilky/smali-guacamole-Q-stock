@@ -2,514 +2,1146 @@
 .super Ljava/lang/Object;
 .source ""
 
+# interfaces
+.implements Lcom/android/server/wm/IOpScreenRotationImprovement;
+
+
+# static fields
+.field private static final SCREEN_FREEZE_LAYER_BASE:I = 0x1eab90
+
+.field private static final SCREEN_FREEZE_LAYER_CUSTOM:I = 0x1eab93
+
+.field private static final SCREEN_FREEZE_LAYER_ENTER:I = 0x1eab90
+
+.field private static final SCREEN_FREEZE_LAYER_EXIT:I = 0x1eab92
+
+.field private static final SCREEN_FREEZE_LAYER_SCREENSHOT:I = 0x1eab91
+
+.field private static final TAG:Ljava/lang/String; = "OpScreenRotationImprovement"
+
+.field private static final sX:I = 0x1
+
+.field private static final tX:I = 0x2
+
+.field private static final uX:I = 0x3
+
+.field private static final vX:I = 0x4
+
+
+# instance fields
+.field private mContext:Landroid/content/Context;
+
+.field private mDisplayContent:Lcom/android/server/wm/DisplayContent;
+
+.field private mForceDefaultOrientation:Z
+
+.field private mHeight:I
+
+.field private mOriginalDisplayRect:Landroid/graphics/Rect;
+
+.field private mOriginalHeight:I
+
+.field private mOriginalRotation:I
+
+.field private mOriginalWidth:I
+
+.field private mService:Lcom/android/server/wm/WindowManagerService;
+
+.field private mSurfaceControl:Landroid/view/SurfaceControl;
+
+.field private mWidth:I
+
+.field private oX:I
+
+.field private pX:I
+
+.field private qX:Landroid/graphics/Color;
+
+.field private rX:I
+
 
 # direct methods
-.method public constructor <init>()V
-    .locals 0
+.method public constructor <init>(Landroid/content/Context;)V
+    .locals 1
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    return-void
-.end method
+    new-instance v0, Landroid/graphics/Rect;
 
-.method static tsu(Ljava/io/PrintWriter;)V
-    .locals 2
+    invoke-direct {v0}, Landroid/graphics/Rect;-><init>()V
 
-    const-string v0, "********************** Help begin:**********************"
+    iput-object v0, p0, Lcom/android/server/wm/ivd;->mOriginalDisplayRect:Landroid/graphics/Rect;
 
-    invoke-virtual {p0, v0}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
+    const/4 v0, 0x0
 
-    const-string v0, "1 Window add or remove:DEBUG_ADD_REMOVE | DEBUG_FOCUS | DEBUG_STARTING_WINDOW | DEBUG_WINDOW_MOVEMENT | DEBUG_FOCUS_LIGHT | DEBUG_TASK_MOVEMENT | DEBUG_STACK"
+    iput v0, p0, Lcom/android/server/wm/ivd;->oX:I
 
-    invoke-virtual {p0, v0}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
+    iput v0, p0, Lcom/android/server/wm/ivd;->pX:I
 
-    const-string v0, "cmd: dumpsys window log window 0/1"
+    new-instance v0, Landroid/graphics/Color;
 
-    invoke-virtual {p0, v0}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
+    invoke-direct {v0}, Landroid/graphics/Color;-><init>()V
 
-    const-string v0, "----------------------------------"
+    iput-object v0, p0, Lcom/android/server/wm/ivd;->qX:Landroid/graphics/Color;
 
-    invoke-virtual {p0, v0}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
-
-    const-string v1, "2 Window fresh: DEBUG_LAYOUT | DEBUG_RESIZE | DEBUG_VISIBILITY"
-
-    invoke-virtual {p0, v1}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
-
-    const-string v1, "cmd: dumpsys window log fresh 0/1"
-
-    invoke-virtual {p0, v1}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
-
-    invoke-virtual {p0, v0}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
-
-    const-string v1, "3 Animation:DEBUG_ANIM"
-
-    invoke-virtual {p0, v1}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
-
-    const-string v1, "cmd: dumpsys window log anim 0/1"
-
-    invoke-virtual {p0, v1}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
-
-    invoke-virtual {p0, v0}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
-
-    const-string v1, "4 Input envent:DEBUG_INPUT | DEBUG_INPUT_METHOD | DEBUG_DRAG"
-
-    invoke-virtual {p0, v1}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
-
-    const-string v1, "cmd: dumpsys window log input 0/1"
-
-    invoke-virtual {p0, v1}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
-
-    invoke-virtual {p0, v0}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
-
-    const-string v1, "5 Screen status change:DEBUG_SCREEN_ON | DEBUG_SCREENSHOT | DEBUG_BOOT"
-
-    invoke-virtual {p0, v1}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
-
-    const-string v1, "cmd: dumpsys window log screen 0/1"
-
-    invoke-virtual {p0, v1}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
-
-    invoke-virtual {p0, v0}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
-
-    const-string v1, "6 App token:DEBUG_TOKEN_MOVEMENT | DEBUG_APP_TRANSITIONS | DEBUG_APP_ORIENTATION"
-
-    invoke-virtual {p0, v1}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
-
-    const-string v1, "cmd: dumpsys window log apptoken 0/1"
-
-    invoke-virtual {p0, v1}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
-
-    invoke-virtual {p0, v0}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
-
-    const-string v1, "7 Wallpaper change:DEBUG_WALLPAPER | DEBUG_WALLPAPER_LIGH"
-
-    invoke-virtual {p0, v1}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
-
-    const-string v1, "cmd: dumpsys window log wallpaper 0/1"
-
-    invoke-virtual {p0, v1}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
-
-    invoke-virtual {p0, v0}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
-
-    const-string v1, "8 Config change:DEBUG_ORIENTATION | DEBUG_APP_ORIENTATION | DEBUG_CONFIGURATION | PROFILE_ORIENTATION"
-
-    invoke-virtual {p0, v1}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
-
-    const-string v1, "cmd: dumpsys window log config 0/1"
-
-    invoke-virtual {p0, v1}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
-
-    invoke-virtual {p0, v0}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
-
-    const-string v1, "9 Trace surface and window: DEBUG_WINDOW_TRACE"
-
-    invoke-virtual {p0, v1}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
-
-    const-string v1, "cmd: dumpsys window log trace 0/1"
-
-    invoke-virtual {p0, v1}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
-
-    invoke-virtual {p0, v0}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
-
-    const-string v1, "10 Surface show change:SHOW_SURFACE_ALLOC | SHOW_TRANSACTIONS | SHOW_LIGHT_TRANSACTIONS"
-
-    invoke-virtual {p0, v1}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
-
-    const-string v1, "cmd: dumpsys window log surface 0/1"
-
-    invoke-virtual {p0, v1}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
-
-    invoke-virtual {p0, v0}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
-
-    const-string v1, "11 Layer change:DEBUG_LAYERS"
-
-    invoke-virtual {p0, v1}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
-
-    const-string v1, "cmd: dumpsys window log layer 0/1"
-
-    invoke-virtual {p0, v1}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
-
-    invoke-virtual {p0, v0}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
-
-    const-string v1, "12 PhoneWindowManager log:All PhoneWindowManager debug log switch"
-
-    invoke-virtual {p0, v1}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
-
-    const-string v1, "cmd: dumpsys window log policy 0/1"
-
-    invoke-virtual {p0, v1}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
-
-    invoke-virtual {p0, v0}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
-
-    const-string v1, "13 local log:localLOGV"
-
-    invoke-virtual {p0, v1}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
-
-    const-string v1, "cmd: dumpsys window log local 0/1"
-
-    invoke-virtual {p0, v1}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
-
-    invoke-virtual {p0, v0}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
-
-    const-string v1, "14 ScreenRotationAnimation log: DEBUG_STATE"
-
-    invoke-virtual {p0, v1}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
-
-    const-string v1, "cmd: dumpsys window log rotateanim 0/1"
-
-    invoke-virtual {p0, v1}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
-
-    invoke-virtual {p0, v0}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
-
-    const-string v0, "********************** Help end.  **********************"
-
-    invoke-virtual {p0, v0}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
+    iput-object p1, p0, Lcom/android/server/wm/ivd;->mContext:Landroid/content/Context;
 
     return-void
 .end method
 
-.method public static you(Ljava/io/PrintWriter;[Ljava/lang/String;I)V
-    .locals 3
+.method private sis(F)Landroid/graphics/Color;
+    .locals 5
 
-    new-instance v0, Ljava/lang/StringBuilder;
+    iget v0, p0, Lcom/android/server/wm/ivd;->oX:I
 
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v1, "dynamicallyConfigLogTag, opti:"
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0, p2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    const-string p2, ", args.length:"
-
-    invoke-virtual {v0, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    array-length p2, p1
-
-    invoke-virtual {v0, p2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p2
-
-    invoke-virtual {p0, p2}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
-
-    const/4 p2, 0x0
-
-    :goto_0
-    array-length v0, p1
-
-    if-ge p2, v0, :cond_0
-
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v1, "dynamicallyConfigLogTag, args["
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0, p2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    const-string v1, "]:"
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    aget-object v1, p1, p2
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-static {v0}, Landroid/graphics/Color;->valueOf(I)Landroid/graphics/Color;
 
     move-result-object v0
 
-    invoke-virtual {p0, v0}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
+    iget p0, p0, Lcom/android/server/wm/ivd;->pX:I
 
-    add-int/lit8 p2, p2, 0x1
+    invoke-static {p0}, Landroid/graphics/Color;->valueOf(I)Landroid/graphics/Color;
+
+    move-result-object p0
+
+    invoke-virtual {v0}, Landroid/graphics/Color;->red()F
+
+    move-result v1
+
+    const/high16 v2, 0x3f800000    # 1.0f
+
+    sub-float/2addr v2, p1
+
+    mul-float/2addr v1, v2
+
+    invoke-virtual {p0}, Landroid/graphics/Color;->red()F
+
+    move-result v3
+
+    mul-float/2addr v3, p1
+
+    add-float/2addr v1, v3
+
+    invoke-virtual {v0}, Landroid/graphics/Color;->green()F
+
+    move-result v3
+
+    mul-float/2addr v3, v2
+
+    invoke-virtual {p0}, Landroid/graphics/Color;->green()F
+
+    move-result v4
+
+    mul-float/2addr v4, p1
+
+    add-float/2addr v3, v4
+
+    invoke-virtual {v0}, Landroid/graphics/Color;->blue()F
+
+    move-result v0
+
+    mul-float/2addr v0, v2
+
+    invoke-virtual {p0}, Landroid/graphics/Color;->blue()F
+
+    move-result p0
+
+    mul-float/2addr p0, p1
+
+    add-float/2addr v0, p0
+
+    invoke-static {v1, v3, v0}, Landroid/graphics/Color;->valueOf(FFF)Landroid/graphics/Color;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method private zta(Landroid/graphics/Bitmap;II)I
+    .locals 10
+
+    invoke-virtual {p1}, Landroid/graphics/Bitmap;->getWidth()I
+
+    move-result v0
+
+    invoke-virtual {p1}, Landroid/graphics/Bitmap;->getHeight()I
+
+    move-result v1
+
+    mul-int/lit8 v2, p2, 0x2
+
+    sub-int v3, v0, v2
+
+    sub-int v2, v1, v2
+
+    const/4 v4, 0x0
+
+    if-ltz v3, :cond_9
+
+    if-gez v2, :cond_0
+
+    goto/16 :goto_4
+
+    :cond_0
+    new-instance v5, Ljava/util/ArrayList;
+
+    invoke-direct {v5}, Ljava/util/ArrayList;-><init>()V
+
+    move v6, v4
+
+    :goto_0
+    const/4 v7, 0x1
+
+    if-ge v6, v3, :cond_3
+
+    const/4 v8, 0x2
+
+    if-eq p3, v8, :cond_1
+
+    add-int v8, v6, p2
+
+    add-int/lit8 v9, p2, 0x0
+
+    invoke-virtual {p1, v8, v9}, Landroid/graphics/Bitmap;->getPixel(II)I
+
+    move-result v8
+
+    invoke-static {v8}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v8
+
+    invoke-virtual {v5, v8}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    :cond_1
+    const/4 v8, 0x4
+
+    if-eq p3, v8, :cond_2
+
+    add-int v8, v6, p2
+
+    add-int/lit8 v7, v1, -0x1
+
+    sub-int/2addr v7, p2
+
+    invoke-virtual {p1, v8, v7}, Landroid/graphics/Bitmap;->getPixel(II)I
+
+    move-result v7
+
+    invoke-static {v7}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v7
+
+    invoke-virtual {v5, v7}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    :cond_2
+    add-int/lit8 v6, v6, 0x1
 
     goto :goto_0
 
-    :cond_0
-    array-length p2, p1
+    :cond_3
+    move v1, v7
 
-    const/4 v0, 0x3
+    :goto_1
+    add-int/lit8 v3, v2, -0x1
 
-    if-eq p2, v0, :cond_1
+    if-ge v1, v3, :cond_6
 
-    const-string p1, "********** Invalid argument! Get detail help as bellow: **********"
+    if-eq p3, v7, :cond_4
 
-    invoke-virtual {p0, p1}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
+    add-int/lit8 v3, p2, 0x0
 
-    invoke-static {p0}, Lcom/android/server/wm/ivd;->tsu(Ljava/io/PrintWriter;)V
+    add-int v6, v1, p2
 
-    return-void
+    invoke-virtual {p1, v3, v6}, Landroid/graphics/Bitmap;->getPixel(II)I
 
-    :cond_1
-    const/4 p2, 0x1
+    move-result v3
 
-    aget-object v0, p1, p2
+    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    const/4 v1, 0x2
+    move-result-object v3
 
-    aget-object p1, p1, v1
+    invoke-virtual {v5, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    const-string v1, "1"
+    :cond_4
+    const/4 v3, 0x3
 
-    invoke-virtual {v1, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    if-eq p3, v3, :cond_5
 
-    move-result p1
+    add-int/lit8 v3, v0, -0x1
 
-    new-instance v1, Ljava/lang/StringBuilder;
+    sub-int/2addr v3, p2
 
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+    add-int v6, v1, p2
 
-    const-string v2, "dynamicallyConfigLogTag, tag:"
+    invoke-virtual {p1, v3, v6}, Landroid/graphics/Bitmap;->getPixel(II)I
 
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result v3
 
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    const-string v2, ", on:"
+    move-result-object v3
 
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v5, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+    :cond_5
+    add-int/lit8 v1, v1, 0x1
 
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    goto :goto_1
+
+    :cond_6
+    new-instance p1, Lcom/android/server/wm/qeg;
+
+    invoke-direct {p1, p0}, Lcom/android/server/wm/qeg;-><init>(Lcom/android/server/wm/ivd;)V
+
+    invoke-static {v5, p1}, Ljava/util/Collections;->sort(Ljava/util/List;Ljava/util/Comparator;)V
+
+    invoke-virtual {v5}, Ljava/util/ArrayList;->size()I
+
+    move-result p0
+
+    move p1, v7
+
+    move p2, p1
+
+    move p3, p2
+
+    :goto_2
+    if-ge p1, p0, :cond_9
+
+    invoke-virtual {v5, p1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Ljava/lang/Integer;
+
+    add-int/lit8 v1, p1, -0x1
+
+    invoke-virtual {v5, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v1
 
-    invoke-virtual {p0, v1}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
+    invoke-virtual {v0, v1}, Ljava/lang/Integer;->equals(Ljava/lang/Object;)Z
 
-    const-string v1, "window"
+    move-result v0
 
-    invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    if-eqz v0, :cond_7
 
-    move-result v1
+    add-int/2addr p2, v7
 
-    if-eqz v1, :cond_2
+    if-le p2, p3, :cond_8
 
-    sput-boolean p1, Lcom/android/server/wm/WindowManagerDebugConfig;->DEBUG_ADD_REMOVE:Z
+    invoke-virtual {v5, p1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
-    sput-boolean p1, Lcom/android/server/wm/WindowManagerDebugConfig;->DEBUG_FOCUS:Z
+    move-result-object p3
 
-    sput-boolean p1, Lcom/android/server/wm/WindowManagerDebugConfig;->DEBUG_FOCUS_LIGHT:Z
+    check-cast p3, Ljava/lang/Integer;
 
-    sput-boolean p1, Lcom/android/server/wm/WindowManagerDebugConfig;->DEBUG_WINDOW_MOVEMENT:Z
+    invoke-virtual {p3}, Ljava/lang/Integer;->intValue()I
 
-    sput-boolean p1, Lcom/android/server/wm/WindowManagerDebugConfig;->DEBUG_TASK_MOVEMENT:Z
+    move-result p3
 
-    sput-boolean p1, Lcom/android/server/wm/WindowManagerDebugConfig;->DEBUG_STARTING_WINDOW:Z
+    move v4, p3
 
-    sput-boolean p1, Lcom/android/server/wm/WindowManagerDebugConfig;->DEBUG_STACK:Z
+    move p3, p2
 
-    goto/16 :goto_1
+    goto :goto_3
 
-    :cond_2
-    const-string v1, "fresh"
+    :cond_7
+    move p2, v7
 
-    invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    :cond_8
+    :goto_3
+    add-int/lit8 p1, p1, 0x1
 
-    move-result v1
+    goto :goto_2
 
-    if-eqz v1, :cond_3
+    :cond_9
+    :goto_4
+    return v4
+.end method
 
-    sput-boolean p1, Lcom/android/server/wm/WindowManagerDebugConfig;->DEBUG_LAYOUT:Z
+.method private zta(ILandroid/view/animation/Animation;Landroid/view/animation/Animation;II)V
+    .locals 12
 
-    sput-boolean p1, Lcom/android/server/wm/WindowManagerDebugConfig;->DEBUG_RESIZE:Z
+    move-object v0, p0
 
-    sput-boolean p1, Lcom/android/server/wm/WindowManagerDebugConfig;->DEBUG_VISIBILITY:Z
+    move v1, p1
 
-    goto/16 :goto_1
+    move/from16 v8, p4
 
-    :cond_3
-    const-string v1, "anim"
-
-    invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v1
+    move/from16 v9, p5
 
     if-eqz v1, :cond_4
 
-    sput-boolean p1, Lcom/android/server/wm/WindowManagerDebugConfig;->DEBUG_ANIM:Z
+    const/4 v2, 0x2
 
-    goto/16 :goto_1
+    if-ne v1, v2, :cond_0
 
-    :cond_4
-    const-string v1, "input"
+    goto/16 :goto_2
 
-    invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    :cond_0
+    const/4 v2, 0x3
 
-    move-result v1
+    const/4 v3, 0x1
 
-    if-eqz v1, :cond_5
+    if-le v8, v9, :cond_2
 
-    sput-boolean p1, Lcom/android/server/wm/WindowManagerDebugConfig;->DEBUG_INPUT:Z
+    sub-int v10, v8, v9
 
-    sput-boolean p1, Lcom/android/server/wm/WindowManagerDebugConfig;->DEBUG_INPUT_METHOD:Z
+    if-ne v1, v3, :cond_1
 
-    sput-boolean p1, Lcom/android/server/wm/WindowManagerDebugConfig;->DEBUG_DRAG:Z
+    iget v4, v0, Lcom/android/server/wm/ivd;->mOriginalWidth:I
 
-    goto/16 :goto_1
+    iget v5, v0, Lcom/android/server/wm/ivd;->mOriginalHeight:I
 
-    :cond_5
-    const-string v1, "screen"
+    move-object v1, p3
 
-    invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    move/from16 v2, p4
 
-    move-result v1
+    move/from16 v3, p5
 
-    if-eqz v1, :cond_6
+    move v6, v10
 
-    sput-boolean p1, Lcom/android/server/wm/WindowManagerDebugConfig;->DEBUG_SCREEN_ON:Z
+    move v7, v10
 
-    sput-boolean p1, Lcom/android/server/wm/WindowManagerDebugConfig;->DEBUG_SCREENSHOT:Z
+    invoke-virtual/range {v1 .. v7}, Landroid/view/animation/Animation;->initialize(IIIIII)V
 
-    sput-boolean p1, Lcom/android/server/wm/WindowManagerDebugConfig;->DEBUG_BOOT:Z
+    iget v3, v0, Lcom/android/server/wm/ivd;->mOriginalWidth:I
 
-    goto/16 :goto_1
+    iget v4, v0, Lcom/android/server/wm/ivd;->mOriginalHeight:I
 
-    :cond_6
-    const-string v1, "apptoken"
+    neg-int v5, v10
 
-    invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    move-object v0, p2
 
-    move-result v1
+    move/from16 v1, p4
 
-    if-eqz v1, :cond_7
-
-    sput-boolean p1, Lcom/android/server/wm/WindowManagerDebugConfig;->DEBUG_TOKEN_MOVEMENT:Z
-
-    sput-boolean p1, Lcom/android/server/wm/WindowManagerDebugConfig;->DEBUG_APP_TRANSITIONS:Z
-
-    sput-boolean p1, Lcom/android/server/wm/WindowManagerDebugConfig;->DEBUG_APP_ORIENTATION:Z
+    move/from16 v2, p5
 
     goto :goto_1
 
-    :cond_7
-    const-string v1, "wallpaper"
+    :cond_1
+    if-ne v1, v2, :cond_5
 
-    invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    iget v4, v0, Lcom/android/server/wm/ivd;->mOriginalWidth:I
 
-    move-result v1
+    iget v5, v0, Lcom/android/server/wm/ivd;->mOriginalHeight:I
 
-    if-eqz v1, :cond_8
+    neg-int v11, v10
 
-    sput-boolean p1, Lcom/android/server/wm/WindowManagerDebugConfig;->DEBUG_WALLPAPER:Z
+    move-object v1, p3
 
-    sput-boolean p1, Lcom/android/server/wm/WindowManagerDebugConfig;->DEBUG_WALLPAPER_LIGHT:Z
+    move/from16 v2, p4
 
-    goto :goto_1
+    move/from16 v3, p5
 
-    :cond_8
-    const-string v1, "config"
+    move v6, v11
 
-    invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    move v7, v11
 
-    move-result v1
+    invoke-virtual/range {v1 .. v7}, Landroid/view/animation/Animation;->initialize(IIIIII)V
 
-    if-eqz v1, :cond_9
+    iget v3, v0, Lcom/android/server/wm/ivd;->mOriginalWidth:I
 
-    sput-boolean p1, Lcom/android/server/wm/WindowManagerDebugConfig;->DEBUG_ORIENTATION:Z
+    iget v4, v0, Lcom/android/server/wm/ivd;->mOriginalHeight:I
 
-    sput-boolean p1, Lcom/android/server/wm/WindowManagerDebugConfig;->DEBUG_APP_ORIENTATION:Z
+    move-object v0, p2
 
-    sput-boolean p1, Lcom/android/server/wm/WindowManagerDebugConfig;->DEBUG_CONFIGURATION:Z
+    move/from16 v1, p4
 
-    sput-boolean p1, Lcom/android/server/wm/WindowManagerService;->PROFILE_ORIENTATION:Z
+    move/from16 v2, p5
 
-    goto :goto_1
+    move v5, v11
 
-    :cond_9
-    const-string v1, "trace"
-
-    invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-eqz v1, :cond_a
-
-    sput-boolean p1, Lcom/android/server/wm/WindowManagerDebugConfig;->DEBUG_WINDOW_TRACE:Z
+    move v6, v10
 
     goto :goto_1
 
-    :cond_a
-    const-string v1, "surface"
+    :cond_2
+    sub-int v10, v9, v8
 
-    invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    if-ne v1, v3, :cond_3
 
-    move-result v1
+    iget v4, v0, Lcom/android/server/wm/ivd;->mOriginalWidth:I
 
-    if-eqz v1, :cond_b
+    iget v5, v0, Lcom/android/server/wm/ivd;->mOriginalHeight:I
 
-    sput-boolean p1, Lcom/android/server/wm/WindowManagerDebugConfig;->SHOW_SURFACE_ALLOC:Z
+    neg-int v11, v10
 
-    sput-boolean p1, Lcom/android/server/wm/WindowManagerDebugConfig;->SHOW_TRANSACTIONS:Z
+    move-object v1, p3
 
-    sput-boolean p1, Lcom/android/server/wm/WindowManagerDebugConfig;->SHOW_LIGHT_TRANSACTIONS:Z
+    move/from16 v2, p4
 
-    goto :goto_1
+    move/from16 v3, p5
 
-    :cond_b
-    const-string v1, "layer"
+    move v6, v11
 
-    invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    move v7, v11
 
-    move-result v1
+    invoke-virtual/range {v1 .. v7}, Landroid/view/animation/Animation;->initialize(IIIIII)V
 
-    if-eqz v1, :cond_c
+    iget v3, v0, Lcom/android/server/wm/ivd;->mOriginalWidth:I
 
-    sput-boolean p1, Lcom/android/server/wm/WindowManagerDebugConfig;->DEBUG_LAYERS:Z
+    iget v4, v0, Lcom/android/server/wm/ivd;->mOriginalHeight:I
 
-    sput-boolean p1, Lcom/android/server/wm/WindowManagerDebugConfig;->DEBUG_DIM_LAYER:Z
+    :goto_0
+    move-object v0, p2
 
-    goto :goto_1
+    move/from16 v1, p4
 
-    :cond_c
-    const-string v1, "policy"
+    move/from16 v2, p5
 
-    invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-eqz v1, :cond_d
-
-    invoke-static {p1, p2}, Lcom/android/server/policy/OpPhoneWindowManager;->switchDynamicLog(ZZ)V
-
-    goto :goto_1
-
-    :cond_d
-    const-string p2, "local"
-
-    invoke-virtual {p2, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result p2
-
-    if-eqz p2, :cond_e
-
-    sput-boolean p1, Lcom/android/server/wm/WindowManagerService;->localLOGV:Z
-
-    goto :goto_1
-
-    :cond_e
-    const-string p2, "rotateanim"
-
-    invoke-virtual {p2, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result p2
-
-    if-eqz p2, :cond_f
-
-    sput-boolean p1, Lcom/android/server/wm/ScreenRotationAnimation;->DEBUG_STATE:Z
+    move v5, v10
 
     :goto_1
+    invoke-virtual/range {v0 .. v6}, Landroid/view/animation/Animation;->initialize(IIIIII)V
+
+    goto :goto_3
+
+    :cond_3
+    if-ne v1, v2, :cond_5
+
+    iget v4, v0, Lcom/android/server/wm/ivd;->mOriginalWidth:I
+
+    iget v5, v0, Lcom/android/server/wm/ivd;->mOriginalHeight:I
+
+    move-object v1, p3
+
+    move/from16 v2, p4
+
+    move/from16 v3, p5
+
+    move v6, v10
+
+    move v7, v10
+
+    invoke-virtual/range {v1 .. v7}, Landroid/view/animation/Animation;->initialize(IIIIII)V
+
+    iget v3, v0, Lcom/android/server/wm/ivd;->mOriginalWidth:I
+
+    iget v4, v0, Lcom/android/server/wm/ivd;->mOriginalHeight:I
+
+    neg-int v6, v10
+
+    goto :goto_0
+
+    :cond_4
+    :goto_2
+    iget v1, v0, Lcom/android/server/wm/ivd;->mOriginalWidth:I
+
+    iget v2, v0, Lcom/android/server/wm/ivd;->mOriginalHeight:I
+
+    move-object v3, p3
+
+    invoke-virtual {p3, v8, v9, v1, v2}, Landroid/view/animation/Animation;->initialize(IIII)V
+
+    iget v1, v0, Lcom/android/server/wm/ivd;->mOriginalWidth:I
+
+    iget v0, v0, Lcom/android/server/wm/ivd;->mOriginalHeight:I
+
+    move-object v2, p2
+
+    invoke-virtual {p2, v8, v9, v1, v0}, Landroid/view/animation/Animation;->initialize(IIII)V
+
+    :cond_5
+    :goto_3
     return-void
+.end method
 
-    :cond_f
-    const-string p1, "Failed! Invalid argument! Type cmd for help: dumpsys window log"
 
-    invoke-virtual {p0, p1}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
+# virtual methods
+.method public init(Lcom/android/server/wm/DisplayContent;ZZLcom/android/server/wm/WindowManagerService;Landroid/view/SurfaceControl;Landroid/view/SurfaceControl$ScreenshotGraphicBuffer;)V
+    .locals 2
 
+    sget-boolean p3, Landroid/os/Build;->DEBUG_ONEPLUS:Z
+
+    const-string v0, "OpScreenRotationImprovement"
+
+    if-eqz p3, :cond_0
+
+    const-string p3, "init OpScreenRotationImprovement"
+
+    invoke-static {v0, p3}, Landroid/util/Slog;->v(Ljava/lang/String;Ljava/lang/String;)I
+
+    :cond_0
+    iput-object p4, p0, Lcom/android/server/wm/ivd;->mService:Lcom/android/server/wm/WindowManagerService;
+
+    iput-object p5, p0, Lcom/android/server/wm/ivd;->mSurfaceControl:Landroid/view/SurfaceControl;
+
+    iput-object p1, p0, Lcom/android/server/wm/ivd;->mDisplayContent:Lcom/android/server/wm/DisplayContent;
+
+    iget-object p3, p0, Lcom/android/server/wm/ivd;->mOriginalDisplayRect:Landroid/graphics/Rect;
+
+    invoke-virtual {p1, p3}, Lcom/android/server/wm/DisplayContent;->getBounds(Landroid/graphics/Rect;)V
+
+    const/4 p3, 0x0
+
+    iput p3, p0, Lcom/android/server/wm/ivd;->rX:I
+
+    invoke-virtual {p1}, Lcom/android/server/wm/DisplayContent;->getDisplay()Landroid/view/Display;
+
+    move-result-object p4
+
+    invoke-virtual {p4}, Landroid/view/Display;->getRotation()I
+
+    move-result p4
+
+    invoke-virtual {p1}, Lcom/android/server/wm/DisplayContent;->getDisplayInfo()Landroid/view/DisplayInfo;
+
+    move-result-object p5
+
+    const/4 v1, 0x1
+
+    if-eqz p2, :cond_1
+
+    iput-boolean v1, p0, Lcom/android/server/wm/ivd;->mForceDefaultOrientation:Z
+
+    iget p2, p1, Lcom/android/server/wm/DisplayContent;->mBaseDisplayWidth:I
+
+    iget p1, p1, Lcom/android/server/wm/DisplayContent;->mBaseDisplayHeight:I
+
+    goto :goto_0
+
+    :cond_1
+    iget p2, p5, Landroid/view/DisplayInfo;->logicalWidth:I
+
+    iget p1, p5, Landroid/view/DisplayInfo;->logicalHeight:I
+
+    :goto_0
+    const/4 p5, 0x3
+
+    if-eq p4, v1, :cond_3
+
+    if-ne p4, p5, :cond_2
+
+    goto :goto_1
+
+    :cond_2
+    iput p2, p0, Lcom/android/server/wm/ivd;->mWidth:I
+
+    iput p1, p0, Lcom/android/server/wm/ivd;->mHeight:I
+
+    goto :goto_2
+
+    :cond_3
+    :goto_1
+    iput p1, p0, Lcom/android/server/wm/ivd;->mWidth:I
+
+    iput p2, p0, Lcom/android/server/wm/ivd;->mHeight:I
+
+    :goto_2
+    iput p4, p0, Lcom/android/server/wm/ivd;->mOriginalRotation:I
+
+    iput p2, p0, Lcom/android/server/wm/ivd;->mOriginalWidth:I
+
+    iput p1, p0, Lcom/android/server/wm/ivd;->mOriginalHeight:I
+
+    const/4 p1, 0x0
+
+    :try_start_0
+    invoke-virtual {p6}, Landroid/view/SurfaceControl$ScreenshotGraphicBuffer;->getGraphicBuffer()Landroid/graphics/GraphicBuffer;
+
+    move-result-object p2
+
+    invoke-virtual {p6}, Landroid/view/SurfaceControl$ScreenshotGraphicBuffer;->getColorSpace()Landroid/graphics/ColorSpace;
+
+    move-result-object p6
+
+    invoke-static {p2, p6}, Landroid/graphics/Bitmap;->wrapHardwareBuffer(Landroid/graphics/GraphicBuffer;Landroid/graphics/ColorSpace;)Landroid/graphics/Bitmap;
+
+    move-result-object p1
+    :try_end_0
+    .catch Ljava/lang/IllegalArgumentException; {:try_start_0 .. :try_end_0} :catch_0
+
+    goto :goto_3
+
+    :catch_0
+    move-exception p2
+
+    const-string p6, "init(): taking screenshot to Bitmap failed:"
+
+    invoke-static {v0, p6, p2}, Landroid/util/Slog;->v(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
+
+    :goto_3
+    if-eqz p1, :cond_6
+
+    sget-object p2, Landroid/graphics/Bitmap$Config;->RGB_565:Landroid/graphics/Bitmap$Config;
+
+    invoke-virtual {p1, p2, p3}, Landroid/graphics/Bitmap;->copy(Landroid/graphics/Bitmap$Config;Z)Landroid/graphics/Bitmap;
+
+    move-result-object p1
+
+    if-eqz p1, :cond_6
+
+    if-ne p4, v1, :cond_4
+
+    move p3, p5
+
+    goto :goto_4
+
+    :cond_4
+    if-ne p4, p5, :cond_5
+
+    move p3, v1
+
+    :cond_5
+    :goto_4
+    const/16 p2, 0x28
+
+    invoke-direct {p0, p1, p2, p3}, Lcom/android/server/wm/ivd;->zta(Landroid/graphics/Bitmap;II)I
+
+    move-result p2
+
+    iput p2, p0, Lcom/android/server/wm/ivd;->oX:I
+
+    invoke-virtual {p1}, Landroid/graphics/Bitmap;->recycle()V
+
+    :cond_6
     return-void
+.end method
+
+.method public initBlackFrame(Landroid/view/SurfaceControl$Transaction;ZIIZ)Lcom/android/server/wm/BlackFrame;
+    .locals 8
+
+    const/4 v0, 0x0
+
+    if-eqz p5, :cond_0
+
+    if-nez p2, :cond_0
+
+    new-instance v3, Landroid/graphics/Rect;
+
+    neg-int p2, p3
+
+    const/4 p5, 0x2
+
+    mul-int/2addr p2, p5
+
+    neg-int v0, p4
+
+    mul-int/2addr v0, p5
+
+    mul-int/lit8 v1, p3, 0x3
+
+    mul-int/lit8 v2, p4, 0x3
+
+    invoke-direct {v3, p2, v0, v1, v2}, Landroid/graphics/Rect;-><init>(IIII)V
+
+    new-instance v4, Landroid/graphics/Rect;
+
+    const/4 p2, 0x0
+
+    invoke-direct {v4, p2, p2, p3, p4}, Landroid/graphics/Rect;-><init>(IIII)V
+
+    new-instance p3, Lcom/android/server/wm/BlackFrame;
+
+    const v5, 0x1eab90
+
+    iget-object v6, p0, Lcom/android/server/wm/ivd;->mDisplayContent:Lcom/android/server/wm/DisplayContent;
+
+    const/4 v7, 0x0
+
+    move-object v1, p3
+
+    move-object v2, p1
+
+    invoke-direct/range {v1 .. v7}, Lcom/android/server/wm/BlackFrame;-><init>(Landroid/view/SurfaceControl$Transaction;Landroid/graphics/Rect;Landroid/graphics/Rect;ILcom/android/server/wm/DisplayContent;Z)V
+
+    iget p0, p0, Lcom/android/server/wm/ivd;->oX:I
+
+    invoke-static {p0}, Landroid/graphics/Color;->valueOf(I)Landroid/graphics/Color;
+
+    move-result-object p0
+
+    const/4 p4, 0x3
+
+    new-array p4, p4, [F
+
+    invoke-virtual {p0}, Landroid/graphics/Color;->red()F
+
+    move-result v0
+
+    aput v0, p4, p2
+
+    const/4 p2, 0x1
+
+    invoke-virtual {p0}, Landroid/graphics/Color;->green()F
+
+    move-result v0
+
+    aput v0, p4, p2
+
+    invoke-virtual {p0}, Landroid/graphics/Color;->blue()F
+
+    move-result p0
+
+    aput p0, p4, p5
+
+    invoke-virtual {p3, p1, p4}, Lcom/android/server/wm/BlackFrame;->setColor(Landroid/view/SurfaceControl$Transaction;[F)V
+
+    const/4 p0, 0x0
+
+    invoke-virtual {p3, p1, p0}, Lcom/android/server/wm/BlackFrame;->setAlpha(Landroid/view/SurfaceControl$Transaction;F)V
+
+    move-object v0, p3
+
+    :cond_0
+    return-object v0
+.end method
+
+.method public loadAnimation(IZII)Landroid/view/animation/Animation;
+    .locals 8
+
+    const/4 v0, 0x0
+
+    if-eqz p1, :cond_3
+
+    const/4 v1, 0x1
+
+    if-eq p1, v1, :cond_2
+
+    const/4 v1, 0x2
+
+    if-eq p1, v1, :cond_1
+
+    const/4 v1, 0x3
+
+    if-eq p1, v1, :cond_0
+
+    move-object v1, v0
+
+    goto :goto_1
+
+    :cond_0
+    iget-object v0, p0, Lcom/android/server/wm/ivd;->mContext:Landroid/content/Context;
+
+    const v1, 0x501001b
+
+    invoke-static {v0, v1}, Landroid/view/animation/AnimationUtils;->loadAnimation(Landroid/content/Context;I)Landroid/view/animation/Animation;
+
+    move-result-object v0
+
+    iget-object v1, p0, Lcom/android/server/wm/ivd;->mContext:Landroid/content/Context;
+
+    const v2, 0x501001a
+
+    goto :goto_0
+
+    :cond_1
+    iget-object v0, p0, Lcom/android/server/wm/ivd;->mContext:Landroid/content/Context;
+
+    const v1, 0x501001d
+
+    invoke-static {v0, v1}, Landroid/view/animation/AnimationUtils;->loadAnimation(Landroid/content/Context;I)Landroid/view/animation/Animation;
+
+    move-result-object v0
+
+    iget-object v1, p0, Lcom/android/server/wm/ivd;->mContext:Landroid/content/Context;
+
+    const v2, 0x501001c
+
+    goto :goto_0
+
+    :cond_2
+    iget-object v0, p0, Lcom/android/server/wm/ivd;->mContext:Landroid/content/Context;
+
+    const v1, 0x501001f
+
+    invoke-static {v0, v1}, Landroid/view/animation/AnimationUtils;->loadAnimation(Landroid/content/Context;I)Landroid/view/animation/Animation;
+
+    move-result-object v0
+
+    iget-object v1, p0, Lcom/android/server/wm/ivd;->mContext:Landroid/content/Context;
+
+    const v2, 0x501001e
+
+    goto :goto_0
+
+    :cond_3
+    iget-object v0, p0, Lcom/android/server/wm/ivd;->mContext:Landroid/content/Context;
+
+    const v1, 0x10a0112
+
+    invoke-static {v0, v1}, Landroid/view/animation/AnimationUtils;->loadAnimation(Landroid/content/Context;I)Landroid/view/animation/Animation;
+
+    move-result-object v0
+
+    iget-object v1, p0, Lcom/android/server/wm/ivd;->mContext:Landroid/content/Context;
+
+    const v2, 0x10a0111
+
+    :goto_0
+    invoke-static {v1, v2}, Landroid/view/animation/AnimationUtils;->loadAnimation(Landroid/content/Context;I)Landroid/view/animation/Animation;
+
+    move-result-object v1
+
+    :goto_1
+    move-object v2, p0
+
+    move v3, p1
+
+    move-object v4, v0
+
+    move-object v5, v1
+
+    move v6, p3
+
+    move v7, p4
+
+    invoke-direct/range {v2 .. v7}, Lcom/android/server/wm/ivd;->zta(ILandroid/view/animation/Animation;Landroid/view/animation/Animation;II)V
+
+    if-eqz p2, :cond_4
+
+    return-object v1
+
+    :cond_4
+    return-object v0
+.end method
+
+.method public stepAnimation(JILandroid/view/animation/Animation;)V
+    .locals 3
+
+    invoke-static {p4, p1, p2}, Landroid/view/animation/OpAnimation;->getInterpolatedTime(Landroid/view/animation/Animation;J)F
+
+    move-result p1
+
+    invoke-direct {p0, p1}, Lcom/android/server/wm/ivd;->sis(F)Landroid/graphics/Color;
+
+    move-result-object p1
+
+    iput-object p1, p0, Lcom/android/server/wm/ivd;->qX:Landroid/graphics/Color;
+
+    iget p1, p0, Lcom/android/server/wm/ivd;->rX:I
+
+    const/4 p2, 0x1
+
+    add-int/2addr p1, p2
+
+    iput p1, p0, Lcom/android/server/wm/ivd;->rX:I
+
+    iget p1, p0, Lcom/android/server/wm/ivd;->rX:I
+
+    if-ne p1, p2, :cond_6
+
+    iget p1, p0, Lcom/android/server/wm/ivd;->mOriginalRotation:I
+
+    invoke-static {p3, p1}, Lcom/android/server/wm/DisplayContent;->deltaRotation(II)I
+
+    move-result p1
+
+    if-eqz p1, :cond_4
+
+    const/4 p3, 0x2
+
+    if-ne p1, p3, :cond_0
+
+    goto :goto_3
+
+    :cond_0
+    iget p1, p0, Lcom/android/server/wm/ivd;->mOriginalRotation:I
+
+    const/4 p4, 0x3
+
+    const/high16 v0, 0x3e800000    # 0.25f
+
+    const/4 v1, 0x0
+
+    if-eq p1, p4, :cond_2
+
+    if-ne p1, p2, :cond_1
+
+    goto :goto_0
+
+    :cond_1
+    iget-object p1, p0, Lcom/android/server/wm/ivd;->mDisplayContent:Lcom/android/server/wm/DisplayContent;
+
+    invoke-virtual {p1}, Lcom/android/server/wm/DisplayContent;->getWindowingLayer()Landroid/view/SurfaceControl;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Landroid/view/SurfaceControl;->getHandle()Landroid/os/IBinder;
+
+    move-result-object p1
+
+    new-instance p2, Landroid/graphics/Rect;
+
+    iget p4, p0, Lcom/android/server/wm/ivd;->mHeight:I
+
+    iget v2, p0, Lcom/android/server/wm/ivd;->mWidth:I
+
+    invoke-direct {p2, v1, v1, p4, v2}, Landroid/graphics/Rect;-><init>(IIII)V
+
+    goto :goto_1
+
+    :cond_2
+    :goto_0
+    iget-object p1, p0, Lcom/android/server/wm/ivd;->mDisplayContent:Lcom/android/server/wm/DisplayContent;
+
+    invoke-virtual {p1}, Lcom/android/server/wm/DisplayContent;->getWindowingLayer()Landroid/view/SurfaceControl;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Landroid/view/SurfaceControl;->getHandle()Landroid/os/IBinder;
+
+    move-result-object p1
+
+    new-instance p2, Landroid/graphics/Rect;
+
+    iget p4, p0, Lcom/android/server/wm/ivd;->mWidth:I
+
+    iget v2, p0, Lcom/android/server/wm/ivd;->mHeight:I
+
+    invoke-direct {p2, v1, v1, p4, v2}, Landroid/graphics/Rect;-><init>(IIII)V
+
+    :goto_1
+    invoke-static {p1, p2, v0}, Landroid/view/SurfaceControl;->captureLayers(Landroid/os/IBinder;Landroid/graphics/Rect;F)Landroid/view/SurfaceControl$ScreenshotGraphicBuffer;
+
+    move-result-object p1
+
+    if-eqz p1, :cond_5
+
+    invoke-virtual {p1}, Landroid/view/SurfaceControl$ScreenshotGraphicBuffer;->getGraphicBuffer()Landroid/graphics/GraphicBuffer;
+
+    move-result-object p2
+
+    invoke-static {p2}, Landroid/hardware/HardwareBuffer;->createFromGraphicBuffer(Landroid/graphics/GraphicBuffer;)Landroid/hardware/HardwareBuffer;
+
+    move-result-object p2
+
+    invoke-virtual {p1}, Landroid/view/SurfaceControl$ScreenshotGraphicBuffer;->getColorSpace()Landroid/graphics/ColorSpace;
+
+    move-result-object p1
+
+    invoke-static {p2, p1}, Landroid/graphics/Bitmap;->wrapHardwareBuffer(Landroid/hardware/HardwareBuffer;Landroid/graphics/ColorSpace;)Landroid/graphics/Bitmap;
+
+    move-result-object p1
+
+    if-eqz p1, :cond_5
+
+    sget-object p2, Landroid/graphics/Bitmap$Config;->RGB_565:Landroid/graphics/Bitmap$Config;
+
+    invoke-virtual {p1, p2, v1}, Landroid/graphics/Bitmap;->copy(Landroid/graphics/Bitmap$Config;Z)Landroid/graphics/Bitmap;
+
+    move-result-object p1
+
+    if-eqz p1, :cond_5
+
+    iget p2, p0, Lcom/android/server/wm/ivd;->mOriginalRotation:I
+
+    if-nez p2, :cond_3
+
+    goto :goto_2
+
+    :cond_3
+    move p3, v1
+
+    :goto_2
+    const/16 p2, 0x28
+
+    invoke-direct {p0, p1, p2, p3}, Lcom/android/server/wm/ivd;->zta(Landroid/graphics/Bitmap;II)I
+
+    move-result p2
+
+    iput p2, p0, Lcom/android/server/wm/ivd;->pX:I
+
+    invoke-virtual {p1}, Landroid/graphics/Bitmap;->recycle()V
+
+    goto :goto_4
+
+    :cond_4
+    :goto_3
+    iget p1, p0, Lcom/android/server/wm/ivd;->oX:I
+
+    iput p1, p0, Lcom/android/server/wm/ivd;->pX:I
+
+    :cond_5
+    :goto_4
+    sget-boolean p1, Landroid/os/Build;->DEBUG_ONEPLUS:Z
+
+    if-eqz p1, :cond_6
+
+    new-instance p1, Ljava/lang/StringBuilder;
+
+    invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string p2, "ScreenShot Popular Color="
+
+    invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget p2, p0, Lcom/android/server/wm/ivd;->oX:I
+
+    invoke-static {p2}, Ljava/lang/Integer;->toHexString(I)Ljava/lang/String;
+
+    move-result-object p2
+
+    invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string p2, ", Windowing Layer Popular Color="
+
+    invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget p0, p0, Lcom/android/server/wm/ivd;->pX:I
+
+    invoke-static {p0}, Ljava/lang/Integer;->toHexString(I)Ljava/lang/String;
+
+    move-result-object p0
+
+    invoke-virtual {p1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p0
+
+    const-string p1, "OpScreenRotationImprovement"
+
+    invoke-static {p1, p0}, Landroid/util/Slog;->v(Ljava/lang/String;Ljava/lang/String;)I
+
+    :cond_6
+    return-void
+.end method
+
+.method public updateEnteringBlackFrame(Landroid/view/SurfaceControl$Transaction;Lcom/android/server/wm/BlackFrame;)Lcom/android/server/wm/BlackFrame;
+    .locals 3
+
+    const/4 v0, 0x3
+
+    new-array v0, v0, [F
+
+    iget-object v1, p0, Lcom/android/server/wm/ivd;->qX:Landroid/graphics/Color;
+
+    invoke-virtual {v1}, Landroid/graphics/Color;->red()F
+
+    move-result v1
+
+    const/4 v2, 0x0
+
+    aput v1, v0, v2
+
+    iget-object v1, p0, Lcom/android/server/wm/ivd;->qX:Landroid/graphics/Color;
+
+    invoke-virtual {v1}, Landroid/graphics/Color;->green()F
+
+    move-result v1
+
+    const/4 v2, 0x1
+
+    aput v1, v0, v2
+
+    iget-object p0, p0, Lcom/android/server/wm/ivd;->qX:Landroid/graphics/Color;
+
+    invoke-virtual {p0}, Landroid/graphics/Color;->blue()F
+
+    move-result p0
+
+    const/4 v1, 0x2
+
+    aput p0, v0, v1
+
+    invoke-virtual {p2, p1, v0}, Lcom/android/server/wm/BlackFrame;->setColor(Landroid/view/SurfaceControl$Transaction;[F)V
+
+    const/high16 p0, 0x3f800000    # 1.0f
+
+    invoke-virtual {p2, p1, p0}, Lcom/android/server/wm/BlackFrame;->setAlpha(Landroid/view/SurfaceControl$Transaction;F)V
+
+    return-object p2
 .end method

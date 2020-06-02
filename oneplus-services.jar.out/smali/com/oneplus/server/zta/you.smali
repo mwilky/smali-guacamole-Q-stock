@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/oneplus/server/zta/sis;->Zs()V
+    value = Lcom/oneplus/server/zta/sis;->xt()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -104,7 +104,7 @@
 
     iget-object p1, p0, Lcom/oneplus/server/zta/you;->this$0:Lcom/oneplus/server/zta/sis;
 
-    invoke-virtual {p1, v4, v0}, Lcom/oneplus/server/zta/sis;->bio(Ljava/lang/String;I)V
+    invoke-virtual {p1, v4, v0}, Lcom/oneplus/server/zta/sis;->igw(Ljava/lang/String;I)V
 
     goto :goto_1
 
@@ -124,7 +124,7 @@
 
     const-string v6, "oneplus_basiccolor_black"
 
-    invoke-virtual {p1, v6, v0}, Lcom/oneplus/server/zta/sis;->bio(Ljava/lang/String;I)V
+    invoke-virtual {p1, v6, v0}, Lcom/oneplus/server/zta/sis;->igw(Ljava/lang/String;I)V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -345,7 +345,7 @@
 
     move-result p1
 
-    if-nez p1, :cond_9
+    if-nez p1, :cond_a
 
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
@@ -359,7 +359,7 @@
 
     if-eqz p1, :cond_7
 
-    goto :goto_4
+    goto/16 :goto_5
 
     :cond_7
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
@@ -384,7 +384,7 @@
 
     move-result p1
 
-    if-eqz p1, :cond_c
+    if-eqz p1, :cond_d
 
     :cond_8
     invoke-virtual {p2}, Landroid/content/Intent;->clone()Ljava/lang/Object;
@@ -393,37 +393,101 @@
 
     check-cast p1, Landroid/content/Intent;
 
-    const-string p2, "com.oem.intent.action.PKG_ADDED_UPDATED"
+    const-string v0, "com.oem.intent.action.PKG_ADDED_UPDATED"
 
-    invoke-virtual {p1, p2}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
+    invoke-virtual {p1, v0}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
 
-    new-instance p2, Landroid/content/ComponentName;
+    new-instance v0, Landroid/content/ComponentName;
 
-    const-string v0, "com.oneplus.coreservice"
+    const-string v2, "com.oneplus.coreservice"
 
-    const-string v1, "com.oneplus.coreservice.OpThemesApkHandlerReceiver"
+    const-string v3, "com.oneplus.coreservice.OpThemesApkHandlerReceiver"
 
-    invoke-direct {p2, v0, v1}, Landroid/content/ComponentName;-><init>(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {v0, v2, v3}, Landroid/content/ComponentName;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
-    invoke-virtual {p1, p2}, Landroid/content/Intent;->setComponent(Landroid/content/ComponentName;)Landroid/content/Intent;
+    invoke-virtual {p1, v0}, Landroid/content/Intent;->setComponent(Landroid/content/ComponentName;)Landroid/content/Intent;
 
-    const/high16 p2, 0x10000000
+    const/high16 v0, 0x10000000
 
-    invoke-virtual {p1, p2}, Landroid/content/Intent;->setFlags(I)Landroid/content/Intent;
+    invoke-virtual {p1, v0}, Landroid/content/Intent;->setFlags(I)Landroid/content/Intent;
+
+    iget-object v0, p0, Lcom/oneplus/server/zta/you;->this$0:Lcom/oneplus/server/zta/sis;
+
+    invoke-static {v0}, Lcom/oneplus/server/zta/sis;->sis(Lcom/oneplus/server/zta/sis;)Landroid/content/Context;
+
+    move-result-object v0
+
+    invoke-virtual {v0, p1}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V
+
+    :try_start_1
+    invoke-virtual {p2}, Landroid/content/Intent;->getData()Landroid/net/Uri;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Landroid/net/Uri;->getSchemeSpecificPart()Ljava/lang/String;
+
+    move-result-object p1
+
+    iget-object p2, p0, Lcom/oneplus/server/zta/you;->this$0:Lcom/oneplus/server/zta/sis;
+
+    invoke-static {p2}, Lcom/oneplus/server/zta/sis;->zta(Lcom/oneplus/server/zta/sis;)I
+
+    move-result p2
+
+    if-ne p2, v5, :cond_9
+
+    if-eqz p1, :cond_9
+
+    const-string v0, "black.overlay"
+
+    invoke-virtual {p1, v0}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_9
 
     iget-object p0, p0, Lcom/oneplus/server/zta/you;->this$0:Lcom/oneplus/server/zta/sis;
 
-    invoke-static {p0}, Lcom/oneplus/server/zta/sis;->sis(Lcom/oneplus/server/zta/sis;)Landroid/content/Context;
+    invoke-static {p0}, Lcom/oneplus/server/zta/sis;->tsu(Lcom/oneplus/server/zta/sis;)Landroid/content/om/IOverlayManager;
 
     move-result-object p0
 
-    invoke-virtual {p0, p1}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V
+    invoke-static {}, Landroid/app/ActivityManager;->getCurrentUser()I
 
-    goto :goto_5
+    move-result p2
+
+    :goto_4
+    invoke-interface {p0, p1, v5, p2}, Landroid/content/om/IOverlayManager;->setEnabled(Ljava/lang/String;ZI)Z
+
+    goto :goto_6
 
     :cond_9
-    :goto_4
-    :try_start_1
+    if-nez p2, :cond_d
+
+    if-eqz p1, :cond_d
+
+    const-string p2, "white.overlay"
+
+    invoke-virtual {p1, p2}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+
+    move-result p2
+
+    if-eqz p2, :cond_d
+
+    iget-object p0, p0, Lcom/oneplus/server/zta/you;->this$0:Lcom/oneplus/server/zta/sis;
+
+    invoke-static {p0}, Lcom/oneplus/server/zta/sis;->tsu(Lcom/oneplus/server/zta/sis;)Landroid/content/om/IOverlayManager;
+
+    move-result-object p0
+
+    invoke-static {}, Landroid/app/ActivityManager;->getCurrentUser()I
+
+    move-result p2
+
+    goto :goto_4
+
+    :cond_a
+    :goto_5
     iget-object p1, p0, Lcom/oneplus/server/zta/you;->this$0:Lcom/oneplus/server/zta/sis;
 
     invoke-static {p1}, Lcom/oneplus/server/zta/sis;->sis(Lcom/oneplus/server/zta/sis;)Landroid/content/Context;
@@ -456,7 +520,7 @@
 
     invoke-static {v1, p2}, Landroid/util/Slog;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    if-nez p1, :cond_a
+    if-nez p1, :cond_b
 
     iget-object p1, p0, Lcom/oneplus/server/zta/you;->this$0:Lcom/oneplus/server/zta/sis;
 
@@ -470,10 +534,10 @@
 
     invoke-virtual {p0, v4}, Lcom/oneplus/server/zta/sis;->enableTheme(Ljava/lang/String;)V
 
-    goto :goto_5
+    goto :goto_6
 
-    :cond_a
-    if-ne p1, v5, :cond_b
+    :cond_b
+    if-ne p1, v5, :cond_c
 
     iget-object p0, p0, Lcom/oneplus/server/zta/you;->this$0:Lcom/oneplus/server/zta/sis;
 
@@ -483,9 +547,9 @@
 
     invoke-interface {p0, v2}, Landroid/app/IUiModeManager;->setNightMode(I)V
 
-    goto :goto_5
+    goto :goto_6
 
-    :cond_b
+    :cond_c
     iget-object p1, p0, Lcom/oneplus/server/zta/you;->this$0:Lcom/oneplus/server/zta/sis;
 
     invoke-static {p1}, Lcom/oneplus/server/zta/sis;->you(Lcom/oneplus/server/zta/sis;)Landroid/app/IUiModeManager;
@@ -500,7 +564,7 @@
     :try_end_1
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_1
 
-    goto :goto_5
+    goto :goto_6
 
     :catch_1
     move-exception p0
@@ -511,7 +575,7 @@
 
     invoke-static {v1, p0}, Landroid/util/Slog;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    :cond_c
-    :goto_5
+    :cond_d
+    :goto_6
     return-void
 .end method

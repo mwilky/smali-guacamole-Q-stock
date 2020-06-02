@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field private data:Lorg/bouncycastle/asn1/ibl;
+.field private Hpa:Lorg/bouncycastle/asn1/x509/zta;
 
-.field private sna:Lorg/bouncycastle/asn1/x509/zta;
+.field private data:Lorg/bouncycastle/asn1/ibl;
 
 
 # direct methods
@@ -15,7 +15,7 @@
 
     invoke-direct {p0}, Lorg/bouncycastle/asn1/oif;-><init>()V
 
-    invoke-virtual {p1}, Lorg/bouncycastle/asn1/obl;->Jg()Ljava/util/Enumeration;
+    invoke-virtual {p1}, Lorg/bouncycastle/asn1/obl;->Sg()Ljava/util/Enumeration;
 
     move-result-object p1
 
@@ -27,7 +27,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lorg/bouncycastle/asn1/dma/igw;->sna:Lorg/bouncycastle/asn1/x509/zta;
+    iput-object v0, p0, Lorg/bouncycastle/asn1/dma/igw;->Hpa:Lorg/bouncycastle/asn1/x509/zta;
 
     invoke-interface {p1}, Ljava/util/Enumeration;->nextElement()Ljava/lang/Object;
 
@@ -47,7 +47,7 @@
 
     invoke-direct {p0}, Lorg/bouncycastle/asn1/oif;-><init>()V
 
-    iput-object p1, p0, Lorg/bouncycastle/asn1/dma/igw;->sna:Lorg/bouncycastle/asn1/x509/zta;
+    iput-object p1, p0, Lorg/bouncycastle/asn1/dma/igw;->Hpa:Lorg/bouncycastle/asn1/x509/zta;
 
     new-instance p1, Lorg/bouncycastle/asn1/C;
 
@@ -105,7 +105,7 @@
 .method public getEncryptionAlgorithm()Lorg/bouncycastle/asn1/x509/zta;
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/asn1/dma/igw;->sna:Lorg/bouncycastle/asn1/x509/zta;
+    iget-object p0, p0, Lorg/bouncycastle/asn1/dma/igw;->Hpa:Lorg/bouncycastle/asn1/x509/zta;
 
     return-object p0
 .end method
@@ -117,7 +117,7 @@
 
     invoke-direct {v0}, Lorg/bouncycastle/asn1/cno;-><init>()V
 
-    iget-object v1, p0, Lorg/bouncycastle/asn1/dma/igw;->sna:Lorg/bouncycastle/asn1/x509/zta;
+    iget-object v1, p0, Lorg/bouncycastle/asn1/dma/igw;->Hpa:Lorg/bouncycastle/asn1/x509/zta;
 
     invoke-virtual {v0, v1}, Lorg/bouncycastle/asn1/cno;->you(Lorg/bouncycastle/asn1/ssp;)V
 

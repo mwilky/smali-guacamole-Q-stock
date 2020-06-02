@@ -2770,9 +2770,9 @@
 
     const/4 v4, 0x3
 
-    const/4 v5, 0x2
+    const/4 v5, 0x1
 
-    const/4 v6, 0x1
+    const/4 v6, 0x2
 
     const/4 v7, 0x0
 
@@ -2796,7 +2796,7 @@
 
     invoke-direct {v0, v8}, Lcom/android/server/OpVibratorService;->writeNodeValue(I)V
 
-    iput v6, v0, Lcom/android/server/OpVibratorService;->intensityStrengthType:I
+    iput v5, v0, Lcom/android/server/OpVibratorService;->intensityStrengthType:I
 
     aget-wide v8, v3, v7
 
@@ -2820,7 +2820,7 @@
 
     invoke-direct {v0, v8}, Lcom/android/server/OpVibratorService;->writeNodeValue(I)V
 
-    iput v5, v0, Lcom/android/server/OpVibratorService;->intensityStrengthType:I
+    iput v6, v0, Lcom/android/server/OpVibratorService;->intensityStrengthType:I
 
     aget-wide v8, v3, v7
 
@@ -2857,7 +2857,7 @@
 
     invoke-direct {v0, v8}, Lcom/android/server/OpVibratorService;->writeNodeValue(I)V
 
-    iput v5, v0, Lcom/android/server/OpVibratorService;->intensityStrengthType:I
+    iput v6, v0, Lcom/android/server/OpVibratorService;->intensityStrengthType:I
 
     :goto_1
     :try_start_0
@@ -2901,7 +2901,7 @@
 
     if-eqz v3, :cond_5
 
-    iput v5, v0, Lcom/android/server/OpVibratorService;->intensityStrengthType:I
+    iput v6, v0, Lcom/android/server/OpVibratorService;->intensityStrengthType:I
 
     :cond_5
     :goto_2
@@ -2974,7 +2974,11 @@
 
     iget-object v11, v11, Landroid/os/VibrationEffect$Waveform;->mTimings:[J
 
-    aget-wide v11, v11, v6
+    array-length v12, v11
+
+    if-lt v12, v6, :cond_b
+
+    aget-wide v11, v11, v5
 
     goto :goto_3
 
@@ -3143,7 +3147,7 @@
 
     long-to-int v9, v14
 
-    sub-int/2addr v9, v6
+    sub-int/2addr v9, v5
 
     iput v9, v0, Lcom/android/server/OpVibratorService;->intensityStrengthType:I
 
@@ -3174,7 +3178,7 @@
     iput v4, v0, Lcom/android/server/OpVibratorService;->intensityStrengthType:I
 
     :cond_e
-    new-array v4, v6, [I
+    new-array v4, v5, [I
 
     const/16 v9, 0x76
 
@@ -3226,9 +3230,9 @@
 
     array-length v4, v3
 
-    if-lt v4, v5, :cond_11
+    if-lt v4, v6, :cond_11
 
-    aget-wide v9, v3, v6
+    aget-wide v9, v3, v5
 
     move-wide/from16 v18, v9
 
@@ -3293,15 +3297,15 @@
 
     check-cast v7, Lcom/android/server/OpVibratorService$you;
 
-    invoke-virtual {v7}, Lcom/android/server/OpVibratorService$you;->Y()I
+    invoke-virtual {v7}, Lcom/android/server/OpVibratorService$you;->Z()I
 
     move-result v8
 
-    invoke-virtual {v7}, Lcom/android/server/OpVibratorService$you;->X()I
+    invoke-virtual {v7}, Lcom/android/server/OpVibratorService$you;->Y()I
 
     move-result v9
 
-    invoke-virtual {v7}, Lcom/android/server/OpVibratorService$you;->W()I
+    invoke-virtual {v7}, Lcom/android/server/OpVibratorService$you;->X()I
 
     move-result v7
 

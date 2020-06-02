@@ -4,17 +4,11 @@
 
 
 # static fields
-.field private static final PARAM_BACKCOVER_COLOR:I = 0x2
+.field private static final BN:Ljava/lang/String; = "/sys/module/param_read_write/parameters/backcover_color"
 
-.field private static final PARAM_INTRANET:I = 0x1
+.field private static final DN:I = 0x7
 
-.field private static final TAG:Ljava/lang/String; = "ParamReader"
-
-.field private static final mM:Ljava/lang/String; = "/sys/module/param_read_write/parameters/backcover_color"
-
-.field private static final nM:I = 0x7
-
-.field private static oM:Ljava/util/ArrayList;
+.field private static EN:Ljava/util/ArrayList; = null
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/ArrayList<",
@@ -24,7 +18,13 @@
     .end annotation
 .end field
 
-.field private static pM:Z
+.field private static FN:Z = false
+
+.field private static final PARAM_BACKCOVER_COLOR:I = 0x2
+
+.field private static final PARAM_INTRANET:I = 0x1
+
+.field private static final TAG:Ljava/lang/String; = "ParamReader"
 
 
 # direct methods
@@ -35,11 +35,11 @@
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    sput-object v0, Lcom/android/server/secrecy/zta/zta/sis;->oM:Ljava/util/ArrayList;
+    sput-object v0, Lcom/android/server/secrecy/zta/zta/sis;->EN:Ljava/util/ArrayList;
 
     const/4 v0, 0x0
 
-    sput-boolean v0, Lcom/android/server/secrecy/zta/zta/sis;->pM:Z
+    sput-boolean v0, Lcom/android/server/secrecy/zta/zta/sis;->FN:Z
 
     return-void
 .end method
@@ -52,7 +52,7 @@
     return-void
 .end method
 
-.method public static Jd()Ljava/lang/String;
+.method public static Qd()Ljava/lang/String;
     .locals 7
 
     const-string v0, "ParamReader"
@@ -72,7 +72,7 @@
 
     invoke-interface {v3, v4, v2}, Lsis/you/you/sis/zta/zta;->zta(ILsis/you/you/sis/zta/zta$sis;)V
 
-    sget-object v2, Lcom/android/server/secrecy/zta/zta/sis;->oM:Ljava/util/ArrayList;
+    sget-object v2, Lcom/android/server/secrecy/zta/zta/sis;->EN:Ljava/util/ArrayList;
 
     invoke-virtual {v2}, Ljava/util/ArrayList;->size()I
 
@@ -85,7 +85,7 @@
     move v4, v3
 
     :goto_0
-    sget-object v5, Lcom/android/server/secrecy/zta/zta/sis;->oM:Ljava/util/ArrayList;
+    sget-object v5, Lcom/android/server/secrecy/zta/zta/sis;->EN:Ljava/util/ArrayList;
 
     invoke-virtual {v5}, Ljava/util/ArrayList;->size()I
 
@@ -93,7 +93,7 @@
 
     if-ge v4, v5, :cond_1
 
-    sget-object v5, Lcom/android/server/secrecy/zta/zta/sis;->oM:Ljava/util/ArrayList;
+    sget-object v5, Lcom/android/server/secrecy/zta/zta/sis;->EN:Ljava/util/ArrayList;
 
     invoke-virtual {v5, v4}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -110,7 +110,7 @@
     goto :goto_1
 
     :cond_0
-    sget-object v5, Lcom/android/server/secrecy/zta/zta/sis;->oM:Ljava/util/ArrayList;
+    sget-object v5, Lcom/android/server/secrecy/zta/zta/sis;->EN:Ljava/util/ArrayList;
 
     invoke-virtual {v5, v4}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -198,7 +198,7 @@
     return-object v1
 .end method
 
-.method public static Kd()Z
+.method public static Rd()Z
     .locals 7
 
     const-string v0, "ParamReader"
@@ -278,6 +278,22 @@
 
     :goto_2
     return v1
+.end method
+
+.method static synthetic bud(Z)Z
+    .locals 0
+
+    sput-boolean p0, Lcom/android/server/secrecy/zta/zta/sis;->FN:Z
+
+    return p0
+.end method
+
+.method static synthetic cno(Ljava/util/ArrayList;)Ljava/util/ArrayList;
+    .locals 0
+
+    sput-object p0, Lcom/android/server/secrecy/zta/zta/sis;->EN:Ljava/util/ArrayList;
+
+    return-object p0
 .end method
 
 .method public static getBackCoverColorVal()Ljava/lang/String;
@@ -575,15 +591,7 @@
     return-object v0
 .end method
 
-.method static synthetic ssp(Ljava/util/ArrayList;)Ljava/util/ArrayList;
-    .locals 0
-
-    sput-object p0, Lcom/android/server/secrecy/zta/zta/sis;->oM:Ljava/util/ArrayList;
-
-    return-object p0
-.end method
-
-.method public static u(I)Z
+.method public static w(I)Z
     .locals 4
 
     const-string v0, "ParamReader"
@@ -642,12 +650,4 @@
 
     :goto_0
     return v1
-.end method
-
-.method static synthetic vju(Z)Z
-    .locals 0
-
-    sput-boolean p0, Lcom/android/server/secrecy/zta/zta/sis;->pM:Z
-
-    return p0
 .end method

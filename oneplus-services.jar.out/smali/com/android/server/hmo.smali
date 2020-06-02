@@ -18,7 +18,7 @@
 
 
 # instance fields
-.field final synthetic ne:Ljava/lang/String;
+.field final synthetic oe:Ljava/lang/String;
 
 .field final synthetic this$0:Lcom/android/server/fto;
 
@@ -33,7 +33,7 @@
 
     iput-object p2, p0, Lcom/android/server/hmo;->val$packageName:Ljava/lang/String;
 
-    iput-object p3, p0, Lcom/android/server/hmo;->ne:Ljava/lang/String;
+    iput-object p3, p0, Lcom/android/server/hmo;->oe:Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -57,7 +57,7 @@
 
     invoke-virtual {v0, v2, v1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    iget-object v1, p0, Lcom/android/server/hmo;->ne:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/server/hmo;->oe:Ljava/lang/String;
 
     const-string v2, "lfrontpackage"
 
@@ -69,7 +69,7 @@
 
     iget-object v1, p0, Lcom/android/server/hmo;->this$0:Lcom/android/server/fto;
 
-    invoke-static {v1}, Lcom/android/server/fto;->ssp(Lcom/android/server/fto;)Landroid/content/Context;
+    invoke-static {v1}, Lcom/android/server/fto;->you(Lcom/android/server/fto;)Landroid/content/Context;
 
     move-result-object v1
 

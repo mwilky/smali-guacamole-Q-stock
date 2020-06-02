@@ -7,11 +7,11 @@
 
 
 # instance fields
-.field private iva:Z
+.field private wxa:Z
 
-.field private jva:I
+.field private xxa:I
 
-.field private kia:Lorg/bouncycastle/asn1/hmo;
+.field private yka:Lorg/bouncycastle/asn1/hmo;
 
 
 # direct methods
@@ -20,11 +20,11 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-boolean p1, p0, Lorg/bouncycastle/asn1/i;->iva:Z
+    iput-boolean p1, p0, Lorg/bouncycastle/asn1/i;->wxa:Z
 
-    iput p2, p0, Lorg/bouncycastle/asn1/i;->jva:I
+    iput p2, p0, Lorg/bouncycastle/asn1/i;->xxa:I
 
-    iput-object p3, p0, Lorg/bouncycastle/asn1/i;->kia:Lorg/bouncycastle/asn1/hmo;
+    iput-object p3, p0, Lorg/bouncycastle/asn1/i;->yka:Lorg/bouncycastle/asn1/hmo;
 
     return-void
 .end method
@@ -39,13 +39,13 @@
         }
     .end annotation
 
-    iget-object v0, p0, Lorg/bouncycastle/asn1/i;->kia:Lorg/bouncycastle/asn1/hmo;
+    iget-object v0, p0, Lorg/bouncycastle/asn1/i;->yka:Lorg/bouncycastle/asn1/hmo;
 
-    iget-boolean v1, p0, Lorg/bouncycastle/asn1/i;->iva:Z
+    iget-boolean v1, p0, Lorg/bouncycastle/asn1/i;->wxa:Z
 
-    iget p0, p0, Lorg/bouncycastle/asn1/i;->jva:I
+    iget p0, p0, Lorg/bouncycastle/asn1/i;->xxa:I
 
-    invoke-virtual {v0, v1, p0}, Lorg/bouncycastle/asn1/hmo;->sis(ZI)Lorg/bouncycastle/asn1/vdb;
+    invoke-virtual {v0, v1, p0}, Lorg/bouncycastle/asn1/hmo;->tsu(ZI)Lorg/bouncycastle/asn1/vdb;
 
     move-result-object p0
 
@@ -55,7 +55,7 @@
 .method public getTagNo()I
     .locals 0
 
-    iget p0, p0, Lorg/bouncycastle/asn1/i;->jva:I
+    iget p0, p0, Lorg/bouncycastle/asn1/i;->xxa:I
 
     return p0
 .end method
@@ -63,7 +63,7 @@
 .method public isConstructed()Z
     .locals 0
 
-    iget-boolean p0, p0, Lorg/bouncycastle/asn1/i;->iva:Z
+    iget-boolean p0, p0, Lorg/bouncycastle/asn1/i;->wxa:Z
 
     return p0
 .end method
@@ -104,11 +104,11 @@
 
     if-eqz p2, :cond_1
 
-    iget-boolean p1, p0, Lorg/bouncycastle/asn1/i;->iva:Z
+    iget-boolean p1, p0, Lorg/bouncycastle/asn1/i;->wxa:Z
 
     if-eqz p1, :cond_0
 
-    iget-object p0, p0, Lorg/bouncycastle/asn1/i;->kia:Lorg/bouncycastle/asn1/hmo;
+    iget-object p0, p0, Lorg/bouncycastle/asn1/i;->yka:Lorg/bouncycastle/asn1/hmo;
 
     invoke-virtual {p0}, Lorg/bouncycastle/asn1/hmo;->readObject()Lorg/bouncycastle/asn1/ssp;
 
@@ -126,11 +126,11 @@
     throw p0
 
     :cond_1
-    iget-object p2, p0, Lorg/bouncycastle/asn1/i;->kia:Lorg/bouncycastle/asn1/hmo;
+    iget-object p2, p0, Lorg/bouncycastle/asn1/i;->yka:Lorg/bouncycastle/asn1/hmo;
 
-    iget-boolean p0, p0, Lorg/bouncycastle/asn1/i;->iva:Z
+    iget-boolean p0, p0, Lorg/bouncycastle/asn1/i;->wxa:Z
 
-    invoke-virtual {p2, p0, p1}, Lorg/bouncycastle/asn1/hmo;->you(ZI)Lorg/bouncycastle/asn1/ssp;
+    invoke-virtual {p2, p0, p1}, Lorg/bouncycastle/asn1/hmo;->sis(ZI)Lorg/bouncycastle/asn1/ssp;
 
     move-result-object p0
 

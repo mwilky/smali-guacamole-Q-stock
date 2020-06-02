@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field private Aia:Ljava/io/OutputStream;
+.field private Nka:Ljava/io/OutputStream;
 
-.field private zia:Ljava/io/OutputStream;
+.field private Oka:Ljava/io/OutputStream;
 
 
 # direct methods
@@ -15,9 +15,9 @@
 
     invoke-direct {p0}, Ljava/io/OutputStream;-><init>()V
 
-    iput-object p1, p0, Lorg/bouncycastle/util/io/tsu;->zia:Ljava/io/OutputStream;
+    iput-object p1, p0, Lorg/bouncycastle/util/io/tsu;->Nka:Ljava/io/OutputStream;
 
-    iput-object p2, p0, Lorg/bouncycastle/util/io/tsu;->Aia:Ljava/io/OutputStream;
+    iput-object p2, p0, Lorg/bouncycastle/util/io/tsu;->Oka:Ljava/io/OutputStream;
 
     return-void
 .end method
@@ -32,11 +32,11 @@
         }
     .end annotation
 
-    iget-object v0, p0, Lorg/bouncycastle/util/io/tsu;->zia:Ljava/io/OutputStream;
+    iget-object v0, p0, Lorg/bouncycastle/util/io/tsu;->Nka:Ljava/io/OutputStream;
 
     invoke-virtual {v0}, Ljava/io/OutputStream;->close()V
 
-    iget-object p0, p0, Lorg/bouncycastle/util/io/tsu;->Aia:Ljava/io/OutputStream;
+    iget-object p0, p0, Lorg/bouncycastle/util/io/tsu;->Oka:Ljava/io/OutputStream;
 
     invoke-virtual {p0}, Ljava/io/OutputStream;->close()V
 
@@ -51,11 +51,11 @@
         }
     .end annotation
 
-    iget-object v0, p0, Lorg/bouncycastle/util/io/tsu;->zia:Ljava/io/OutputStream;
+    iget-object v0, p0, Lorg/bouncycastle/util/io/tsu;->Nka:Ljava/io/OutputStream;
 
     invoke-virtual {v0}, Ljava/io/OutputStream;->flush()V
 
-    iget-object p0, p0, Lorg/bouncycastle/util/io/tsu;->Aia:Ljava/io/OutputStream;
+    iget-object p0, p0, Lorg/bouncycastle/util/io/tsu;->Oka:Ljava/io/OutputStream;
 
     invoke-virtual {p0}, Ljava/io/OutputStream;->flush()V
 
@@ -70,11 +70,11 @@
         }
     .end annotation
 
-    iget-object v0, p0, Lorg/bouncycastle/util/io/tsu;->zia:Ljava/io/OutputStream;
+    iget-object v0, p0, Lorg/bouncycastle/util/io/tsu;->Nka:Ljava/io/OutputStream;
 
     invoke-virtual {v0, p1}, Ljava/io/OutputStream;->write(I)V
 
-    iget-object p0, p0, Lorg/bouncycastle/util/io/tsu;->Aia:Ljava/io/OutputStream;
+    iget-object p0, p0, Lorg/bouncycastle/util/io/tsu;->Oka:Ljava/io/OutputStream;
 
     invoke-virtual {p0, p1}, Ljava/io/OutputStream;->write(I)V
 
@@ -89,11 +89,11 @@
         }
     .end annotation
 
-    iget-object v0, p0, Lorg/bouncycastle/util/io/tsu;->zia:Ljava/io/OutputStream;
+    iget-object v0, p0, Lorg/bouncycastle/util/io/tsu;->Nka:Ljava/io/OutputStream;
 
     invoke-virtual {v0, p1}, Ljava/io/OutputStream;->write([B)V
 
-    iget-object p0, p0, Lorg/bouncycastle/util/io/tsu;->Aia:Ljava/io/OutputStream;
+    iget-object p0, p0, Lorg/bouncycastle/util/io/tsu;->Oka:Ljava/io/OutputStream;
 
     invoke-virtual {p0, p1}, Ljava/io/OutputStream;->write([B)V
 
@@ -108,11 +108,11 @@
         }
     .end annotation
 
-    iget-object v0, p0, Lorg/bouncycastle/util/io/tsu;->zia:Ljava/io/OutputStream;
+    iget-object v0, p0, Lorg/bouncycastle/util/io/tsu;->Nka:Ljava/io/OutputStream;
 
     invoke-virtual {v0, p1, p2, p3}, Ljava/io/OutputStream;->write([BII)V
 
-    iget-object p0, p0, Lorg/bouncycastle/util/io/tsu;->Aia:Ljava/io/OutputStream;
+    iget-object p0, p0, Lorg/bouncycastle/util/io/tsu;->Oka:Ljava/io/OutputStream;
 
     invoke-virtual {p0, p1, p2, p3}, Ljava/io/OutputStream;->write([BII)V
 

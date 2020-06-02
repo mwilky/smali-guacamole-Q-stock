@@ -4,9 +4,9 @@
 
 
 # static fields
-.field private static final QE:I = 0x200
-
 .field private static final TAG:Ljava/lang/String; = "FileUtils"
+
+.field private static final eG:I = 0x200
 
 
 # direct methods
@@ -18,7 +18,7 @@
     return-void
 .end method
 
-.method public static P(Ljava/lang/String;)Ljava/lang/String;
+.method public static R(Ljava/lang/String;)Ljava/lang/String;
     .locals 6
 
     const/4 v0, 0x0
@@ -167,7 +167,7 @@
     return p0
 .end method
 
-.method public static ssp(Ljava/lang/String;I)Z
+.method public static cno(Ljava/lang/String;I)Z
     .locals 2
 
     :try_start_0

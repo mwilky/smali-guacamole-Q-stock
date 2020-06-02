@@ -34,7 +34,7 @@
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 1
 
-    sget-boolean p1, Lcom/android/server/am/ire;->Ol:Z
+    sget-boolean p1, Lcom/android/server/am/ire;->jm:Z
 
     if-nez p1, :cond_0
 

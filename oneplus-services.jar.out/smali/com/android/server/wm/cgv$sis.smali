@@ -1,11 +1,11 @@
-.class final Lcom/android/server/wm/veq$sis;
+.class final Lcom/android/server/wm/cgv$sis;
 .super Landroid/database/ContentObserver;
 .source ""
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/server/wm/veq;
+    value = Lcom/android/server/wm/cgv;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,18 +15,18 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/server/wm/veq;
+.field final synthetic this$0:Lcom/android/server/wm/cgv;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/server/wm/veq;Lcom/android/server/wm/veq$zta;)V
+.method constructor <init>(Lcom/android/server/wm/cgv;Lcom/android/server/wm/cgv$zta;)V
     .locals 2
 
-    iput-object p1, p0, Lcom/android/server/wm/veq$sis;->this$0:Lcom/android/server/wm/veq;
+    iput-object p1, p0, Lcom/android/server/wm/cgv$sis;->this$0:Lcom/android/server/wm/cgv;
 
     invoke-direct {p0, p2}, Landroid/database/ContentObserver;-><init>(Landroid/os/Handler;)V
 
-    invoke-static {p1}, Lcom/android/server/wm/veq;->zta(Lcom/android/server/wm/veq;)Landroid/content/Context;
+    invoke-static {p1}, Lcom/android/server/wm/cgv;->zta(Lcom/android/server/wm/cgv;)Landroid/content/Context;
 
     move-result-object p1
 
@@ -62,9 +62,9 @@
 .method public onChange(Z)V
     .locals 0
 
-    iget-object p0, p0, Lcom/android/server/wm/veq$sis;->this$0:Lcom/android/server/wm/veq;
+    iget-object p0, p0, Lcom/android/server/wm/cgv$sis;->this$0:Lcom/android/server/wm/cgv;
 
-    invoke-static {p0}, Lcom/android/server/wm/veq;->ywr(Lcom/android/server/wm/veq;)V
+    invoke-static {p0}, Lcom/android/server/wm/cgv;->ywr(Lcom/android/server/wm/cgv;)V
 
     return-void
 .end method

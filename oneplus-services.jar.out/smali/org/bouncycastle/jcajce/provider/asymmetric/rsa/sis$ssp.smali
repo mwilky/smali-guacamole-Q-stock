@@ -18,7 +18,7 @@
 .method public constructor <init>()V
     .locals 4
 
-    sget-object v0, Lorg/bouncycastle/asn1/bio/you;->PLa:Lorg/bouncycastle/asn1/bvj;
+    sget-object v0, Lorg/bouncycastle/asn1/bio/you;->cOa:Lorg/bouncycastle/asn1/bvj;
 
     invoke-static {}, Lorg/bouncycastle/crypto/you/zta;->wtn()Lorg/bouncycastle/crypto/qbh;
 

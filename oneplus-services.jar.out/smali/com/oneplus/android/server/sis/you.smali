@@ -16,23 +16,23 @@
 
 
 # static fields
+.field private static final Kia:Ljava/lang/String; = "UidIdle"
+
+.field private static Lia:Ljava/lang/Object; = null
+
 .field private static final MSG_GET_ONLINECONFIG:I = 0x1
 
 .field private static final TAG:Ljava/lang/String; = "OnePlusIdleWhiltelistService"
 
-.field private static final lha:Ljava/lang/String; = "UidIdle"
-
-.field private static mha:Ljava/lang/Object;
-
 
 # instance fields
-.field private cha:Lcom/oneplus/config/ConfigObserver;
+.field private Bia:Lcom/oneplus/config/ConfigObserver;
 
-.field private dha:Landroid/os/Handler;
+.field private Cia:Landroid/os/Handler;
 
-.field private eha:I
+.field private Dia:I
 
-.field private fha:Ljava/util/List;
+.field private Eia:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
@@ -42,7 +42,7 @@
     .end annotation
 .end field
 
-.field private gha:Ljava/util/List;
+.field private Fia:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
@@ -52,7 +52,7 @@
     .end annotation
 .end field
 
-.field private hha:Ljava/util/List;
+.field private Gia:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
@@ -62,7 +62,7 @@
     .end annotation
 .end field
 
-.field private iha:Ljava/util/List;
+.field private Hia:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
@@ -72,7 +72,7 @@
     .end annotation
 .end field
 
-.field private jha:Ljava/util/Map;
+.field private Iia:Ljava/util/Map;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Map<",
@@ -83,7 +83,7 @@
     .end annotation
 .end field
 
-.field private kha:Z
+.field private Jia:Z
 
 .field private mContext:Landroid/content/Context;
 
@@ -96,7 +96,7 @@
 
     invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
-    sput-object v0, Lcom/oneplus/android/server/sis/you;->mha:Ljava/lang/Object;
+    sput-object v0, Lcom/oneplus/android/server/sis/you;->Lia:Ljava/lang/Object;
 
     return-void
 .end method
@@ -108,45 +108,45 @@
 
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/oneplus/android/server/sis/you;->dha:Landroid/os/Handler;
+    iput-object v0, p0, Lcom/oneplus/android/server/sis/you;->Cia:Landroid/os/Handler;
 
     const/4 v0, 0x3
 
-    iput v0, p0, Lcom/oneplus/android/server/sis/you;->eha:I
+    iput v0, p0, Lcom/oneplus/android/server/sis/you;->Dia:I
 
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/oneplus/android/server/sis/you;->fha:Ljava/util/List;
+    iput-object v0, p0, Lcom/oneplus/android/server/sis/you;->Eia:Ljava/util/List;
 
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/oneplus/android/server/sis/you;->gha:Ljava/util/List;
+    iput-object v0, p0, Lcom/oneplus/android/server/sis/you;->Fia:Ljava/util/List;
 
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/oneplus/android/server/sis/you;->hha:Ljava/util/List;
+    iput-object v0, p0, Lcom/oneplus/android/server/sis/you;->Gia:Ljava/util/List;
 
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/oneplus/android/server/sis/you;->iha:Ljava/util/List;
+    iput-object v0, p0, Lcom/oneplus/android/server/sis/you;->Hia:Ljava/util/List;
 
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    iput-object v0, p0, Lcom/oneplus/android/server/sis/you;->jha:Ljava/util/Map;
+    iput-object v0, p0, Lcom/oneplus/android/server/sis/you;->Iia:Ljava/util/Map;
 
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/oneplus/android/server/sis/you;->kha:Z
+    iput-boolean v0, p0, Lcom/oneplus/android/server/sis/you;->Jia:Z
 
     new-instance v0, Lcom/oneplus/android/server/sis/you$you;
 
@@ -160,40 +160,40 @@
 
     invoke-direct {v0, p0, v1}, Lcom/oneplus/android/server/sis/you$you;-><init>(Lcom/oneplus/android/server/sis/you;Landroid/os/Looper;)V
 
-    iput-object v0, p0, Lcom/oneplus/android/server/sis/you;->dha:Landroid/os/Handler;
+    iput-object v0, p0, Lcom/oneplus/android/server/sis/you;->Cia:Landroid/os/Handler;
 
     iput-object p1, p0, Lcom/oneplus/android/server/sis/you;->mContext:Landroid/content/Context;
 
     return-void
 .end method
 
-.method private Qs()V
+.method private it()V
     .locals 4
 
-    iget-object v0, p0, Lcom/oneplus/android/server/sis/you;->hha:Ljava/util/List;
+    iget-object v0, p0, Lcom/oneplus/android/server/sis/you;->Gia:Ljava/util/List;
 
     monitor-enter v0
 
     :try_start_0
-    iget-object v1, p0, Lcom/oneplus/android/server/sis/you;->hha:Ljava/util/List;
+    iget-object v1, p0, Lcom/oneplus/android/server/sis/you;->Gia:Ljava/util/List;
 
     const-string v2, "com.hegu.dnl.mg"
 
     invoke-interface {v1, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    iget-object v1, p0, Lcom/oneplus/android/server/sis/you;->hha:Ljava/util/List;
+    iget-object v1, p0, Lcom/oneplus/android/server/sis/you;->Gia:Ljava/util/List;
 
     const-string v2, "com.tencent.tmgp.cf"
 
     invoke-interface {v1, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    iget-object v1, p0, Lcom/oneplus/android/server/sis/you;->hha:Ljava/util/List;
+    iget-object v1, p0, Lcom/oneplus/android/server/sis/you;->Gia:Ljava/util/List;
 
     const-string v2, "com.duowan.kiwi"
 
     invoke-interface {v1, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    iget-object v1, p0, Lcom/oneplus/android/server/sis/you;->hha:Ljava/util/List;
+    iget-object v1, p0, Lcom/oneplus/android/server/sis/you;->Gia:Ljava/util/List;
 
     const-string v2, "com.hegu.dnl.oppo.nearme.gamecenter"
 
@@ -209,7 +209,7 @@
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object p0, p0, Lcom/oneplus/android/server/sis/you;->hha:Ljava/util/List;
+    iget-object p0, p0, Lcom/oneplus/android/server/sis/you;->Gia:Ljava/util/List;
 
     invoke-virtual {v2, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -233,15 +233,15 @@
     throw p0
 .end method
 
-.method private Rs()V
+.method private jt()V
     .locals 4
 
-    sget-object v0, Lcom/oneplus/android/server/sis/you;->mha:Ljava/lang/Object;
+    sget-object v0, Lcom/oneplus/android/server/sis/you;->Lia:Ljava/lang/Object;
 
     monitor-enter v0
 
     :try_start_0
-    iget-object v1, p0, Lcom/oneplus/android/server/sis/you;->jha:Ljava/util/Map;
+    iget-object v1, p0, Lcom/oneplus/android/server/sis/you;->Iia:Ljava/util/Map;
 
     const-string v2, "com.tencent.mm/.booter.CoreService"
 
@@ -253,7 +253,7 @@
 
     invoke-interface {v1, v2, v3}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/sis/you;->Ts()V
+    invoke-direct {p0}, Lcom/oneplus/android/server/sis/you;->lt()V
 
     monitor-exit v0
 
@@ -269,63 +269,63 @@
     throw p0
 .end method
 
-.method private Ss()V
+.method private kt()V
     .locals 4
 
-    sget-object v0, Lcom/oneplus/android/server/sis/you;->mha:Ljava/lang/Object;
+    sget-object v0, Lcom/oneplus/android/server/sis/you;->Lia:Ljava/lang/Object;
 
     monitor-enter v0
 
     :try_start_0
-    iget-object v1, p0, Lcom/oneplus/android/server/sis/you;->fha:Ljava/util/List;
+    iget-object v1, p0, Lcom/oneplus/android/server/sis/you;->Eia:Ljava/util/List;
 
     const-string v2, "com.tencent.mm"
 
     invoke-interface {v1, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    iget-object v1, p0, Lcom/oneplus/android/server/sis/you;->fha:Ljava/util/List;
+    iget-object v1, p0, Lcom/oneplus/android/server/sis/you;->Eia:Ljava/util/List;
 
     const-string v2, "com.google.android.gms"
 
     invoke-interface {v1, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    iget-object v1, p0, Lcom/oneplus/android/server/sis/you;->fha:Ljava/util/List;
+    iget-object v1, p0, Lcom/oneplus/android/server/sis/you;->Eia:Ljava/util/List;
 
     const-string v2, "com.oneplus.dirac.simplemanager"
 
     invoke-interface {v1, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    iget-object v1, p0, Lcom/oneplus/android/server/sis/you;->gha:Ljava/util/List;
+    iget-object v1, p0, Lcom/oneplus/android/server/sis/you;->Fia:Ljava/util/List;
 
     const-string v2, "com.nearme.gamecenter"
 
     invoke-interface {v1, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    iget-object v1, p0, Lcom/oneplus/android/server/sis/you;->gha:Ljava/util/List;
+    iget-object v1, p0, Lcom/oneplus/android/server/sis/you;->Fia:Ljava/util/List;
 
     const-string v2, "com.oneplus.dirac.simplemanager"
 
     invoke-interface {v1, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    iget-object v1, p0, Lcom/oneplus/android/server/sis/you;->gha:Ljava/util/List;
+    iget-object v1, p0, Lcom/oneplus/android/server/sis/you;->Fia:Ljava/util/List;
 
     const-string v2, "com.heytap.cloud"
 
     invoke-interface {v1, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    iget-object v1, p0, Lcom/oneplus/android/server/sis/you;->gha:Ljava/util/List;
+    iget-object v1, p0, Lcom/oneplus/android/server/sis/you;->Fia:Ljava/util/List;
 
     const-string v2, "com.heytap.usercenter"
 
     invoke-interface {v1, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    iget-object v1, p0, Lcom/oneplus/android/server/sis/you;->gha:Ljava/util/List;
+    iget-object v1, p0, Lcom/oneplus/android/server/sis/you;->Fia:Ljava/util/List;
 
     const-string v2, "com.oneplus.calendar"
 
     invoke-interface {v1, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    iget-object v1, p0, Lcom/oneplus/android/server/sis/you;->iha:Ljava/util/List;
+    iget-object v1, p0, Lcom/oneplus/android/server/sis/you;->Hia:Ljava/util/List;
 
     const-string v2, "com.oneplus.card"
 
@@ -341,7 +341,7 @@
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object p0, p0, Lcom/oneplus/android/server/sis/you;->fha:Ljava/util/List;
+    iget-object p0, p0, Lcom/oneplus/android/server/sis/you;->Eia:Ljava/util/List;
 
     invoke-virtual {v2, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -365,7 +365,7 @@
     throw p0
 .end method
 
-.method private Ts()V
+.method private lt()V
     .locals 5
 
     sget-boolean v0, Landroid/os/Build;->DEBUG_ONEPLUS:Z
@@ -382,7 +382,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object p0, p0, Lcom/oneplus/android/server/sis/you;->jha:Ljava/util/Map;
+    iget-object p0, p0, Lcom/oneplus/android/server/sis/you;->Iia:Ljava/util/Map;
 
     invoke-interface {p0}, Ljava/util/Map;->entrySet()Ljava/util/Set;
 
@@ -532,7 +532,7 @@
 
     move-result v2
 
-    iput v2, p0, Lcom/oneplus/android/server/sis/you;->eha:I
+    iput v2, p0, Lcom/oneplus/android/server/sis/you;->Dia:I
 
     :cond_1
     add-int/lit8 v1, v1, 0x1
@@ -567,7 +567,7 @@
 
     if-eqz v3, :cond_5
 
-    iget-object v3, p0, Lcom/oneplus/android/server/sis/you;->fha:Ljava/util/List;
+    iget-object v3, p0, Lcom/oneplus/android/server/sis/you;->Eia:Ljava/util/List;
 
     monitor-enter v3
     :try_end_0
@@ -582,7 +582,7 @@
 
     move-result-object v2
 
-    iget-object v4, p0, Lcom/oneplus/android/server/sis/you;->fha:Ljava/util/List;
+    iget-object v4, p0, Lcom/oneplus/android/server/sis/you;->Eia:Ljava/util/List;
 
     invoke-interface {v4}, Ljava/util/List;->clear()V
 
@@ -599,7 +599,7 @@
 
     move-result-object v5
 
-    iget-object v6, p0, Lcom/oneplus/android/server/sis/you;->fha:Ljava/util/List;
+    iget-object v6, p0, Lcom/oneplus/android/server/sis/you;->Eia:Ljava/util/List;
 
     invoke-interface {v6, v5}, Ljava/util/List;->contains(Ljava/lang/Object;)Z
 
@@ -607,7 +607,7 @@
 
     if-nez v6, :cond_3
 
-    iget-object v6, p0, Lcom/oneplus/android/server/sis/you;->fha:Ljava/util/List;
+    iget-object v6, p0, Lcom/oneplus/android/server/sis/you;->Eia:Ljava/util/List;
 
     invoke-interface {v6, v5}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
@@ -646,7 +646,7 @@
 
     if-eqz v3, :cond_8
 
-    iget-object v3, p0, Lcom/oneplus/android/server/sis/you;->gha:Ljava/util/List;
+    iget-object v3, p0, Lcom/oneplus/android/server/sis/you;->Fia:Ljava/util/List;
 
     monitor-enter v3
     :try_end_2
@@ -661,7 +661,7 @@
 
     move-result-object v2
 
-    iget-object v4, p0, Lcom/oneplus/android/server/sis/you;->gha:Ljava/util/List;
+    iget-object v4, p0, Lcom/oneplus/android/server/sis/you;->Fia:Ljava/util/List;
 
     invoke-interface {v4}, Ljava/util/List;->clear()V
 
@@ -678,7 +678,7 @@
 
     move-result-object v5
 
-    iget-object v6, p0, Lcom/oneplus/android/server/sis/you;->gha:Ljava/util/List;
+    iget-object v6, p0, Lcom/oneplus/android/server/sis/you;->Fia:Ljava/util/List;
 
     invoke-interface {v6, v5}, Ljava/util/List;->contains(Ljava/lang/Object;)Z
 
@@ -686,7 +686,7 @@
 
     if-nez v6, :cond_6
 
-    iget-object v6, p0, Lcom/oneplus/android/server/sis/you;->gha:Ljava/util/List;
+    iget-object v6, p0, Lcom/oneplus/android/server/sis/you;->Fia:Ljava/util/List;
 
     invoke-interface {v6, v5}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
@@ -725,7 +725,7 @@
 
     if-eqz v3, :cond_b
 
-    iget-object v3, p0, Lcom/oneplus/android/server/sis/you;->iha:Ljava/util/List;
+    iget-object v3, p0, Lcom/oneplus/android/server/sis/you;->Hia:Ljava/util/List;
 
     monitor-enter v3
     :try_end_4
@@ -740,7 +740,7 @@
 
     move-result-object v2
 
-    iget-object v4, p0, Lcom/oneplus/android/server/sis/you;->iha:Ljava/util/List;
+    iget-object v4, p0, Lcom/oneplus/android/server/sis/you;->Hia:Ljava/util/List;
 
     invoke-interface {v4}, Ljava/util/List;->clear()V
 
@@ -757,7 +757,7 @@
 
     move-result-object v5
 
-    iget-object v6, p0, Lcom/oneplus/android/server/sis/you;->iha:Ljava/util/List;
+    iget-object v6, p0, Lcom/oneplus/android/server/sis/you;->Hia:Ljava/util/List;
 
     invoke-interface {v6, v5}, Ljava/util/List;->contains(Ljava/lang/Object;)Z
 
@@ -765,7 +765,7 @@
 
     if-nez v6, :cond_9
 
-    iget-object v6, p0, Lcom/oneplus/android/server/sis/you;->iha:Ljava/util/List;
+    iget-object v6, p0, Lcom/oneplus/android/server/sis/you;->Hia:Ljava/util/List;
 
     invoke-interface {v6, v5}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
@@ -804,7 +804,7 @@
 
     if-eqz v3, :cond_d
 
-    iget-object v3, p0, Lcom/oneplus/android/server/sis/you;->jha:Ljava/util/Map;
+    iget-object v3, p0, Lcom/oneplus/android/server/sis/you;->Iia:Ljava/util/Map;
 
     monitor-enter v3
     :try_end_6
@@ -819,7 +819,7 @@
 
     move-result-object v2
 
-    iget-object v4, p0, Lcom/oneplus/android/server/sis/you;->jha:Ljava/util/Map;
+    iget-object v4, p0, Lcom/oneplus/android/server/sis/you;->Iia:Ljava/util/Map;
 
     invoke-interface {v4}, Ljava/util/Map;->clear()V
 
@@ -836,7 +836,7 @@
 
     move-result-object v5
 
-    iget-object v6, p0, Lcom/oneplus/android/server/sis/you;->jha:Ljava/util/Map;
+    iget-object v6, p0, Lcom/oneplus/android/server/sis/you;->Iia:Ljava/util/Map;
 
     const/4 v7, 0x1
 
@@ -851,7 +851,7 @@
     goto :goto_5
 
     :cond_c
-    invoke-direct {p0}, Lcom/oneplus/android/server/sis/you;->Ts()V
+    invoke-direct {p0}, Lcom/oneplus/android/server/sis/you;->lt()V
 
     monitor-exit v3
 
@@ -882,7 +882,7 @@
 
     if-eqz v3, :cond_10
 
-    iget-object v3, p0, Lcom/oneplus/android/server/sis/you;->hha:Ljava/util/List;
+    iget-object v3, p0, Lcom/oneplus/android/server/sis/you;->Gia:Ljava/util/List;
 
     monitor-enter v3
     :try_end_8
@@ -897,7 +897,7 @@
 
     move-result-object v2
 
-    iget-object v4, p0, Lcom/oneplus/android/server/sis/you;->hha:Ljava/util/List;
+    iget-object v4, p0, Lcom/oneplus/android/server/sis/you;->Gia:Ljava/util/List;
 
     invoke-interface {v4}, Ljava/util/List;->clear()V
 
@@ -914,7 +914,7 @@
 
     move-result-object v5
 
-    iget-object v6, p0, Lcom/oneplus/android/server/sis/you;->hha:Ljava/util/List;
+    iget-object v6, p0, Lcom/oneplus/android/server/sis/you;->Gia:Ljava/util/List;
 
     invoke-interface {v6, v5}, Ljava/util/List;->contains(Ljava/lang/Object;)Z
 
@@ -922,7 +922,7 @@
 
     if-nez v6, :cond_e
 
-    iget-object v6, p0, Lcom/oneplus/android/server/sis/you;->hha:Ljava/util/List;
+    iget-object v6, p0, Lcom/oneplus/android/server/sis/you;->Gia:Ljava/util/List;
 
     invoke-interface {v6, v5}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
@@ -965,7 +965,7 @@
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget v0, p0, Lcom/oneplus/android/server/sis/you;->eha:I
+    iget v0, p0, Lcom/oneplus/android/server/sis/you;->Dia:I
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -985,7 +985,7 @@
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v0, p0, Lcom/oneplus/android/server/sis/you;->fha:Ljava/util/List;
+    iget-object v0, p0, Lcom/oneplus/android/server/sis/you;->Eia:Ljava/util/List;
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -1005,7 +1005,7 @@
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v0, p0, Lcom/oneplus/android/server/sis/you;->gha:Ljava/util/List;
+    iget-object v0, p0, Lcom/oneplus/android/server/sis/you;->Fia:Ljava/util/List;
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -1025,7 +1025,7 @@
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v0, p0, Lcom/oneplus/android/server/sis/you;->hha:Ljava/util/List;
+    iget-object v0, p0, Lcom/oneplus/android/server/sis/you;->Gia:Ljava/util/List;
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -1046,7 +1046,7 @@
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object p0, p0, Lcom/oneplus/android/server/sis/you;->iha:Ljava/util/List;
+    iget-object p0, p0, Lcom/oneplus/android/server/sis/you;->Hia:Ljava/util/List;
 
     invoke-virtual {p1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -1103,7 +1103,7 @@
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget v0, p0, Lcom/oneplus/android/server/sis/you;->eha:I
+    iget v0, p0, Lcom/oneplus/android/server/sis/you;->Dia:I
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -1123,7 +1123,7 @@
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v0, p0, Lcom/oneplus/android/server/sis/you;->fha:Ljava/util/List;
+    iget-object v0, p0, Lcom/oneplus/android/server/sis/you;->Eia:Ljava/util/List;
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -1143,7 +1143,7 @@
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v0, p0, Lcom/oneplus/android/server/sis/you;->gha:Ljava/util/List;
+    iget-object v0, p0, Lcom/oneplus/android/server/sis/you;->Fia:Ljava/util/List;
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -1163,7 +1163,7 @@
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v0, p0, Lcom/oneplus/android/server/sis/you;->hha:Ljava/util/List;
+    iget-object v0, p0, Lcom/oneplus/android/server/sis/you;->Gia:Ljava/util/List;
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -1219,7 +1219,7 @@
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget v0, p0, Lcom/oneplus/android/server/sis/you;->eha:I
+    iget v0, p0, Lcom/oneplus/android/server/sis/you;->Dia:I
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -1239,7 +1239,7 @@
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v0, p0, Lcom/oneplus/android/server/sis/you;->fha:Ljava/util/List;
+    iget-object v0, p0, Lcom/oneplus/android/server/sis/you;->Eia:Ljava/util/List;
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -1259,7 +1259,7 @@
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v0, p0, Lcom/oneplus/android/server/sis/you;->gha:Ljava/util/List;
+    iget-object v0, p0, Lcom/oneplus/android/server/sis/you;->Fia:Ljava/util/List;
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -1279,7 +1279,7 @@
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v0, p0, Lcom/oneplus/android/server/sis/you;->hha:Ljava/util/List;
+    iget-object v0, p0, Lcom/oneplus/android/server/sis/you;->Gia:Ljava/util/List;
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -1309,7 +1309,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget v1, p0, Lcom/oneplus/android/server/sis/you;->eha:I
+    iget v1, p0, Lcom/oneplus/android/server/sis/you;->Dia:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -1329,7 +1329,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lcom/oneplus/android/server/sis/you;->fha:Ljava/util/List;
+    iget-object v1, p0, Lcom/oneplus/android/server/sis/you;->Eia:Ljava/util/List;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -1349,7 +1349,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lcom/oneplus/android/server/sis/you;->gha:Ljava/util/List;
+    iget-object v1, p0, Lcom/oneplus/android/server/sis/you;->Fia:Ljava/util/List;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -1369,7 +1369,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lcom/oneplus/android/server/sis/you;->hha:Ljava/util/List;
+    iget-object v1, p0, Lcom/oneplus/android/server/sis/you;->Gia:Ljava/util/List;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -1389,7 +1389,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object p0, p0, Lcom/oneplus/android/server/sis/you;->iha:Ljava/util/List;
+    iget-object p0, p0, Lcom/oneplus/android/server/sis/you;->Hia:Ljava/util/List;
 
     invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -1425,11 +1425,11 @@
 .method public init()V
     .locals 0
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/sis/you;->Ss()V
+    invoke-direct {p0}, Lcom/oneplus/android/server/sis/you;->kt()V
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/sis/you;->Rs()V
+    invoke-direct {p0}, Lcom/oneplus/android/server/sis/you;->jt()V
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/sis/you;->Qs()V
+    invoke-direct {p0}, Lcom/oneplus/android/server/sis/you;->it()V
 
     invoke-virtual {p0}, Lcom/oneplus/android/server/sis/you;->initOnlineConfig()V
 
@@ -1443,7 +1443,7 @@
 
     iget-object v1, p0, Lcom/oneplus/android/server/sis/you;->mContext:Landroid/content/Context;
 
-    iget-object v2, p0, Lcom/oneplus/android/server/sis/you;->dha:Landroid/os/Handler;
+    iget-object v2, p0, Lcom/oneplus/android/server/sis/you;->Cia:Landroid/os/Handler;
 
     new-instance v3, Lcom/oneplus/android/server/sis/you$zta;
 
@@ -1455,13 +1455,13 @@
 
     invoke-direct {v0, v1, v2, v3, v4}, Lcom/oneplus/config/ConfigObserver;-><init>(Landroid/content/Context;Landroid/os/Handler;Lcom/oneplus/config/ConfigObserver$ConfigUpdater;Ljava/lang/String;)V
 
-    iput-object v0, p0, Lcom/oneplus/android/server/sis/you;->cha:Lcom/oneplus/config/ConfigObserver;
+    iput-object v0, p0, Lcom/oneplus/android/server/sis/you;->Bia:Lcom/oneplus/config/ConfigObserver;
 
-    iget-object v0, p0, Lcom/oneplus/android/server/sis/you;->cha:Lcom/oneplus/config/ConfigObserver;
+    iget-object v0, p0, Lcom/oneplus/android/server/sis/you;->Bia:Lcom/oneplus/config/ConfigObserver;
 
     invoke-virtual {v0}, Lcom/oneplus/config/ConfigObserver;->register()V
 
-    iget-object v0, p0, Lcom/oneplus/android/server/sis/you;->dha:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/oneplus/android/server/sis/you;->Cia:Landroid/os/Handler;
 
     const/4 v1, 0x1
 
@@ -1483,7 +1483,7 @@
 
     move-result v0
 
-    iput-boolean v0, p0, Lcom/oneplus/android/server/sis/you;->kha:Z
+    iput-boolean v0, p0, Lcom/oneplus/android/server/sis/you;->Jia:Z
 
     return-void
 .end method
@@ -1491,7 +1491,7 @@
 .method public isBackgroundActivityWhitelist(Ljava/lang/String;)Z
     .locals 0
 
-    iget-object p0, p0, Lcom/oneplus/android/server/sis/you;->iha:Ljava/util/List;
+    iget-object p0, p0, Lcom/oneplus/android/server/sis/you;->Hia:Ljava/util/List;
 
     if-eqz p0, :cond_0
 
@@ -1514,7 +1514,7 @@
 .method public isBackgroundWhitelist(Ljava/lang/String;)Z
     .locals 0
 
-    iget-object p0, p0, Lcom/oneplus/android/server/sis/you;->gha:Ljava/util/List;
+    iget-object p0, p0, Lcom/oneplus/android/server/sis/you;->Fia:Ljava/util/List;
 
     if-eqz p0, :cond_0
 
@@ -1537,7 +1537,7 @@
 .method public isInAudioWhiteList(Ljava/lang/String;)Z
     .locals 0
 
-    iget-object p0, p0, Lcom/oneplus/android/server/sis/you;->hha:Ljava/util/List;
+    iget-object p0, p0, Lcom/oneplus/android/server/sis/you;->Gia:Ljava/util/List;
 
     invoke-interface {p0, p1}, Ljava/util/List;->contains(Ljava/lang/Object;)Z
 
@@ -1546,12 +1546,12 @@
     return p0
 .end method
 
-.method public pa(Ljava/lang/String;)Z
+.method public ra(Ljava/lang/String;)Z
     .locals 1
 
     if-eqz p1, :cond_0
 
-    iget-object v0, p0, Lcom/oneplus/android/server/sis/you;->jha:Ljava/util/Map;
+    iget-object v0, p0, Lcom/oneplus/android/server/sis/you;->Iia:Ljava/util/Map;
 
     invoke-interface {v0, p1}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
 
@@ -1559,7 +1559,7 @@
 
     if-eqz v0, :cond_0
 
-    iget-object p0, p0, Lcom/oneplus/android/server/sis/you;->jha:Ljava/util/Map;
+    iget-object p0, p0, Lcom/oneplus/android/server/sis/you;->Iia:Ljava/util/Map;
 
     invoke-interface {p0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -1583,7 +1583,7 @@
 .method public shoudSkipIdle(Ljava/lang/String;)Z
     .locals 3
 
-    iget v0, p0, Lcom/oneplus/android/server/sis/you;->eha:I
+    iget v0, p0, Lcom/oneplus/android/server/sis/you;->Dia:I
 
     const/4 v1, 0x1
 
@@ -1591,25 +1591,25 @@
 
     if-eq v0, v2, :cond_1
 
-    iget-boolean v2, p0, Lcom/oneplus/android/server/sis/you;->kha:Z
+    iget-boolean v2, p0, Lcom/oneplus/android/server/sis/you;->Jia:Z
 
     if-eqz v2, :cond_0
 
     if-eq v0, v1, :cond_1
 
     :cond_0
-    iget-boolean v0, p0, Lcom/oneplus/android/server/sis/you;->kha:Z
+    iget-boolean v0, p0, Lcom/oneplus/android/server/sis/you;->Jia:Z
 
     if-nez v0, :cond_2
 
-    iget v0, p0, Lcom/oneplus/android/server/sis/you;->eha:I
+    iget v0, p0, Lcom/oneplus/android/server/sis/you;->Dia:I
 
     const/4 v2, 0x2
 
     if-ne v0, v2, :cond_2
 
     :cond_1
-    iget-object p0, p0, Lcom/oneplus/android/server/sis/you;->fha:Ljava/util/List;
+    iget-object p0, p0, Lcom/oneplus/android/server/sis/you;->Eia:Ljava/util/List;
 
     invoke-interface {p0, p1}, Ljava/util/List;->contains(Ljava/lang/Object;)Z
 

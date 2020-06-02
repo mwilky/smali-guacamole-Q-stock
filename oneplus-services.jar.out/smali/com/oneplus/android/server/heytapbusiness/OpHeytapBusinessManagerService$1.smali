@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/oneplus/android/server/heytapbusiness/you;
+    value = Lcom/oneplus/android/server/heytapbusiness/sis;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,24 +15,117 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/oneplus/android/server/heytapbusiness/you;
+.field final synthetic this$0:Lcom/oneplus/android/server/heytapbusiness/sis;
 
 
 # direct methods
-.method constructor <init>(Lcom/oneplus/android/server/heytapbusiness/you;)V
+.method constructor <init>(Lcom/oneplus/android/server/heytapbusiness/sis;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/oneplus/android/server/heytapbusiness/OpHeytapBusinessManagerService$1;->this$0:Lcom/oneplus/android/server/heytapbusiness/you;
+    iput-object p1, p0, Lcom/oneplus/android/server/heytapbusiness/OpHeytapBusinessManagerService$1;->this$0:Lcom/oneplus/android/server/heytapbusiness/sis;
 
     invoke-direct {p0}, Lcom/oneplus/android/heytapbusiness/IOpHeytapBusinessManager$Stub;-><init>()V
 
     return-void
 .end method
 
+.method private enforceCallerInstantPlatform(ILjava/lang/String;)V
+    .locals 2
+
+    const-class p0, Landroid/content/pm/PackageManagerInternal;
+
+    invoke-static {p0}, Lcom/android/server/LocalServices;->getService(Ljava/lang/Class;)Ljava/lang/Object;
+
+    move-result-object p0
+
+    check-cast p0, Landroid/content/pm/PackageManagerInternal;
+
+    const-string v0, "com.nearme.instant.platform"
+
+    const/4 v1, 0x0
+
+    invoke-virtual {p0, v0, v1, p1}, Landroid/content/pm/PackageManagerInternal;->getPackageUid(Ljava/lang/String;II)I
+
+    move-result p0
+
+    invoke-static {}, Landroid/os/Binder;->getCallingUid()I
+
+    move-result p1
+
+    if-ne p1, p0, :cond_0
+
+    return-void
+
+    :cond_0
+    new-instance p0, Ljava/lang/StringBuilder;
+
+    invoke-direct {p0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string p1, "Permission Denial: "
+
+    invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p0, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string p1, " from pid="
+
+    invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-static {}, Landroid/os/Binder;->getCallingPid()I
+
+    move-result p1
+
+    invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    const-string p1, " and uid="
+
+    invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-static {}, Landroid/os/Binder;->getCallingUid()I
+
+    move-result p1
+
+    invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    const-string p1, ", expected caller is "
+
+    invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p0
+
+    const-string p1, "OpHeytapBusiness"
+
+    invoke-static {p1, p0}, Landroid/util/Slog;->w(Ljava/lang/String;Ljava/lang/String;)I
+
+    new-instance p1, Ljava/lang/SecurityException;
+
+    invoke-direct {p1, p0}, Ljava/lang/SecurityException;-><init>(Ljava/lang/String;)V
+
+    throw p1
+.end method
+
 
 # virtual methods
 .method public addFastAppThirdLogin(Ljava/lang/String;Ljava/lang/String;)V
-    .locals 1
+    .locals 2
+
+    iget-object v0, p0, Lcom/oneplus/android/server/heytapbusiness/OpHeytapBusinessManagerService$1;->this$0:Lcom/oneplus/android/server/heytapbusiness/sis;
+
+    invoke-static {v0}, Lcom/oneplus/android/server/heytapbusiness/sis;->zta(Lcom/oneplus/android/server/heytapbusiness/sis;)Landroid/content/Context;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Landroid/content/Context;->getUserId()I
+
+    move-result v0
+
+    const-string v1, "addFastAppThirdLogin"
+
+    invoke-direct {p0, v0, v1}, Lcom/oneplus/android/server/heytapbusiness/OpHeytapBusinessManagerService$1;->enforceCallerInstantPlatform(ILjava/lang/String;)V
 
     invoke-static {}, Lcom/oneplus/android/server/heytapbusiness/zta/zta/you;->getInstance()Lcom/oneplus/android/server/heytapbusiness/zta/zta/you;
 
@@ -40,13 +133,31 @@
 
     const/4 v0, 0x0
 
-    invoke-virtual {p0, p1, p2, v0, v0}, Lcom/oneplus/android/server/heytapbusiness/zta/zta/you;->zta(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)V
+    new-array v0, v0, [Ljava/lang/String;
+
+    const/4 v1, 0x0
+
+    invoke-virtual {p0, p1, p2, v1, v0}, Lcom/oneplus/android/server/heytapbusiness/zta/zta/you;->zta(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)V
 
     return-void
 .end method
 
 .method public addFastAppWechatPay(Ljava/lang/String;Ljava/lang/String;)V
     .locals 2
+
+    iget-object v0, p0, Lcom/oneplus/android/server/heytapbusiness/OpHeytapBusinessManagerService$1;->this$0:Lcom/oneplus/android/server/heytapbusiness/sis;
+
+    invoke-static {v0}, Lcom/oneplus/android/server/heytapbusiness/sis;->zta(Lcom/oneplus/android/server/heytapbusiness/sis;)Landroid/content/Context;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Landroid/content/Context;->getUserId()I
+
+    move-result v0
+
+    const-string v1, "addFastAppWechatPay"
+
+    invoke-direct {p0, v0, v1}, Lcom/oneplus/android/server/heytapbusiness/OpHeytapBusinessManagerService$1;->enforceCallerInstantPlatform(ILjava/lang/String;)V
 
     invoke-static {}, Lcom/oneplus/android/server/heytapbusiness/zta/sis/you;->getInstance()Lcom/oneplus/android/server/heytapbusiness/zta/sis/you;
 
@@ -65,6 +176,20 @@
 
 .method public addMiniProgramShare(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 2
+
+    iget-object v0, p0, Lcom/oneplus/android/server/heytapbusiness/OpHeytapBusinessManagerService$1;->this$0:Lcom/oneplus/android/server/heytapbusiness/sis;
+
+    invoke-static {v0}, Lcom/oneplus/android/server/heytapbusiness/sis;->zta(Lcom/oneplus/android/server/heytapbusiness/sis;)Landroid/content/Context;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Landroid/content/Context;->getUserId()I
+
+    move-result v0
+
+    const-string v1, "addMiniProgramShare"
+
+    invoke-direct {p0, v0, v1}, Lcom/oneplus/android/server/heytapbusiness/OpHeytapBusinessManagerService$1;->enforceCallerInstantPlatform(ILjava/lang/String;)V
 
     invoke-static {}, Lcom/oneplus/android/server/heytapbusiness/zta/you/you;->getInstance()Lcom/oneplus/android/server/heytapbusiness/zta/you/you;
 
@@ -86,59 +211,85 @@
 .end method
 
 .method public dump(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
-    .locals 0
+    .locals 2
 
-    array-length p0, p3
+    array-length p1, p3
 
-    if-nez p0, :cond_0
+    const-string v0, "dumpsys heytapbusiness"
 
-    const-string p0, "dumpsys heytapbusiness"
+    if-nez p1, :cond_0
 
-    invoke-virtual {p2, p0}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
+    :goto_0
+    invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
     invoke-static {}, Lcom/oneplus/android/server/heytapbusiness/zta/you/you;->getInstance()Lcom/oneplus/android/server/heytapbusiness/zta/you/you;
 
-    move-result-object p0
+    move-result-object p1
 
-    invoke-virtual {p0, p2}, Lcom/oneplus/android/server/heytapbusiness/zta/you/you;->dump(Ljava/io/PrintWriter;)V
+    invoke-virtual {p1, p2}, Lcom/oneplus/android/server/heytapbusiness/zta/you/you;->dump(Ljava/io/PrintWriter;)V
 
     invoke-virtual {p2}, Ljava/io/PrintWriter;->println()V
 
     invoke-static {}, Lcom/oneplus/android/server/heytapbusiness/zta/zta/you;->getInstance()Lcom/oneplus/android/server/heytapbusiness/zta/zta/you;
 
-    move-result-object p0
+    move-result-object p1
 
-    invoke-virtual {p0, p2}, Lcom/oneplus/android/server/heytapbusiness/zta/zta/you;->dump(Ljava/io/PrintWriter;)V
+    invoke-virtual {p1, p2}, Lcom/oneplus/android/server/heytapbusiness/zta/zta/you;->dump(Ljava/io/PrintWriter;)V
 
     invoke-virtual {p2}, Ljava/io/PrintWriter;->println()V
 
-    :goto_0
     invoke-static {}, Lcom/oneplus/android/server/heytapbusiness/zta/sis/you;->getInstance()Lcom/oneplus/android/server/heytapbusiness/zta/sis/you;
+
+    move-result-object p1
+
+    invoke-virtual {p1, p2}, Lcom/oneplus/android/server/heytapbusiness/zta/sis/you;->dump(Ljava/io/PrintWriter;)V
+
+    invoke-virtual {p2}, Ljava/io/PrintWriter;->println()V
+
+    :goto_1
+    iget-object p0, p0, Lcom/oneplus/android/server/heytapbusiness/OpHeytapBusinessManagerService$1;->this$0:Lcom/oneplus/android/server/heytapbusiness/sis;
+
+    invoke-static {p0}, Lcom/oneplus/android/server/heytapbusiness/sis;->you(Lcom/oneplus/android/server/heytapbusiness/sis;)Ljava/lang/String;
 
     move-result-object p0
 
-    invoke-virtual {p0, p2}, Lcom/oneplus/android/server/heytapbusiness/zta/sis/you;->dump(Ljava/io/PrintWriter;)V
+    invoke-static {p0}, Lcom/oneplus/android/server/heytapbusiness/tsu;->getInstance(Ljava/lang/String;)Lcom/oneplus/android/server/heytapbusiness/tsu;
 
-    goto/16 :goto_5
+    move-result-object p0
+
+    invoke-virtual {p0, p2}, Lcom/oneplus/android/server/heytapbusiness/tsu;->dump(Ljava/io/PrintWriter;)V
+
+    goto/16 :goto_7
 
     :cond_0
-    array-length p0, p3
+    array-length p1, p3
 
-    const/4 p1, 0x1
+    const/4 v1, 0x1
 
-    if-ne p0, p1, :cond_8
+    if-ne p1, v1, :cond_b
 
-    const/4 p0, 0x0
+    const/4 p1, 0x0
 
-    aget-object p0, p3, p0
+    aget-object p1, p3, p1
 
-    const-string p1, "-h"
+    const-string p3, "-a"
 
-    invoke-virtual {p1, p0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {p3, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    move-result p1
+    move-result p3
 
-    if-eqz p1, :cond_1
+    if-eqz p3, :cond_1
+
+    goto :goto_0
+
+    :cond_1
+    const-string p3, "-h"
+
+    invoke-virtual {p3, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result p3
+
+    if-eqz p3, :cond_2
 
     const-string p0, "Heytap business manager dump options:"
 
@@ -164,101 +315,138 @@
 
     invoke-virtual {p2, p0}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
-    const-string p0, "    wp(or wechat pay): print settings of wechat pay"
+    const-string p0, "    wp(or wechatpay): print settings of wechat pay"
 
-    :goto_1
     invoke-virtual {p2, p0}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
+
+    const-string p0, "    c(or configuration): print settings of configuration"
+
+    :goto_2
+    invoke-virtual {p2, p0}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
+
+    goto/16 :goto_7
+
+    :cond_2
+    const-string p3, "s"
+
+    invoke-virtual {p3, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result p3
+
+    if-nez p3, :cond_a
+
+    const-string p3, "share"
+
+    invoke-virtual {p3, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result p3
+
+    if-eqz p3, :cond_3
+
+    goto/16 :goto_6
+
+    :cond_3
+    const-string p3, "l"
+
+    invoke-virtual {p3, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result p3
+
+    if-nez p3, :cond_9
+
+    const-string p3, "login"
+
+    invoke-virtual {p3, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result p3
+
+    if-eqz p3, :cond_4
 
     goto :goto_5
 
-    :cond_1
-    const-string p1, "s"
+    :cond_4
+    const-string p3, "wp"
 
-    invoke-virtual {p1, p0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {p3, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    move-result p1
+    move-result p3
 
-    if-nez p1, :cond_7
+    if-nez p3, :cond_8
 
-    const-string p1, "share"
+    const-string p3, "wechatpay"
 
-    invoke-virtual {p1, p0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {p3, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    move-result p1
+    move-result p3
 
-    if-eqz p1, :cond_2
+    if-eqz p3, :cond_5
 
     goto :goto_4
 
-    :cond_2
-    const-string p1, "l"
+    :cond_5
+    const-string p3, "c"
 
-    invoke-virtual {p1, p0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {p3, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    move-result p1
+    move-result p3
 
-    if-nez p1, :cond_6
+    if-nez p3, :cond_7
 
-    const-string p1, "login"
+    const-string p3, "configuration"
 
-    invoke-virtual {p1, p0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {p3, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    move-result p1
+    move-result p3
 
-    if-eqz p1, :cond_3
+    if-eqz p3, :cond_6
 
     goto :goto_3
 
-    :cond_3
-    const-string p1, "wp"
+    :cond_6
+    new-instance p0, Ljava/lang/StringBuilder;
 
-    invoke-virtual {p1, p0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result p1
-
-    if-nez p1, :cond_5
-
-    const-string p1, "wechatpay"
-
-    invoke-virtual {p1, p0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result p1
-
-    if-eqz p1, :cond_4
-
-    goto :goto_2
-
-    :cond_4
-    new-instance p1, Ljava/lang/StringBuilder;
-
-    invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct {p0}, Ljava/lang/StringBuilder;-><init>()V
 
     const-string p3, "Unknown cmd: "
 
-    invoke-virtual {p1, p3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {p0, p3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string p0, "; use -h for help"
+    const-string p1, "; use -h for help"
 
-    invoke-virtual {p1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p0
 
-    goto :goto_1
+    goto :goto_2
 
-    :cond_5
-    :goto_2
+    :cond_7
+    :goto_3
+    const-string p1, "dumpsys heytapbusiness configuration"
+
+    invoke-virtual {p2, p1}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
+
+    goto/16 :goto_1
+
+    :cond_8
+    :goto_4
     const-string p0, "dumpsys heytapbusiness wechatpay"
 
     invoke-virtual {p2, p0}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
-    goto/16 :goto_0
+    invoke-static {}, Lcom/oneplus/android/server/heytapbusiness/zta/sis/you;->getInstance()Lcom/oneplus/android/server/heytapbusiness/zta/sis/you;
 
-    :cond_6
-    :goto_3
+    move-result-object p0
+
+    invoke-virtual {p0, p2}, Lcom/oneplus/android/server/heytapbusiness/zta/sis/you;->dump(Ljava/io/PrintWriter;)V
+
+    goto :goto_7
+
+    :cond_9
+    :goto_5
     const-string p0, "dumpsys heytapbusiness login"
 
     invoke-virtual {p2, p0}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
@@ -269,10 +457,10 @@
 
     invoke-virtual {p0, p2}, Lcom/oneplus/android/server/heytapbusiness/zta/zta/you;->dump(Ljava/io/PrintWriter;)V
 
-    goto :goto_5
+    goto :goto_7
 
-    :cond_7
-    :goto_4
+    :cond_a
+    :goto_6
     const-string p0, "dumpsys heytapbusiness share"
 
     invoke-virtual {p2, p0}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
@@ -283,13 +471,68 @@
 
     invoke-virtual {p0, p2}, Lcom/oneplus/android/server/heytapbusiness/zta/you/you;->dump(Ljava/io/PrintWriter;)V
 
-    :cond_8
-    :goto_5
+    :cond_b
+    :goto_7
     return-void
 .end method
 
-.method public removeFastAppThirdLogin(Ljava/lang/String;Ljava/lang/String;)V
+.method public getAppInfoCustomizations()Landroid/content/pm/ParceledListSlice;
     .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Landroid/content/pm/ParceledListSlice<",
+            "Lcom/oneplus/android/heytapbusiness/appinfocustomization/AppInfoCustomization;",
+            ">;"
+        }
+    .end annotation
+
+    iget-object p0, p0, Lcom/oneplus/android/server/heytapbusiness/OpHeytapBusinessManagerService$1;->this$0:Lcom/oneplus/android/server/heytapbusiness/sis;
+
+    invoke-static {p0}, Lcom/oneplus/android/server/heytapbusiness/sis;->you(Lcom/oneplus/android/server/heytapbusiness/sis;)Ljava/lang/String;
+
+    move-result-object p0
+
+    invoke-static {p0}, Lcom/oneplus/android/server/heytapbusiness/tsu;->getInstance(Ljava/lang/String;)Lcom/oneplus/android/server/heytapbusiness/tsu;
+
+    move-result-object p0
+
+    invoke-virtual {p0}, Lcom/oneplus/android/server/heytapbusiness/tsu;->getAppInfoCustomizations()Ljava/util/List;
+
+    move-result-object p0
+
+    if-nez p0, :cond_0
+
+    invoke-static {}, Landroid/content/pm/ParceledListSlice;->emptyList()Landroid/content/pm/ParceledListSlice;
+
+    move-result-object p0
+
+    return-object p0
+
+    :cond_0
+    new-instance v0, Landroid/content/pm/ParceledListSlice;
+
+    invoke-direct {v0, p0}, Landroid/content/pm/ParceledListSlice;-><init>(Ljava/util/List;)V
+
+    return-object v0
+.end method
+
+.method public removeFastAppThirdLogin(Ljava/lang/String;Ljava/lang/String;)V
+    .locals 2
+
+    iget-object v0, p0, Lcom/oneplus/android/server/heytapbusiness/OpHeytapBusinessManagerService$1;->this$0:Lcom/oneplus/android/server/heytapbusiness/sis;
+
+    invoke-static {v0}, Lcom/oneplus/android/server/heytapbusiness/sis;->zta(Lcom/oneplus/android/server/heytapbusiness/sis;)Landroid/content/Context;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Landroid/content/Context;->getUserId()I
+
+    move-result v0
+
+    const-string v1, "removeFastAppThirdLogin"
+
+    invoke-direct {p0, v0, v1}, Lcom/oneplus/android/server/heytapbusiness/OpHeytapBusinessManagerService$1;->enforceCallerInstantPlatform(ILjava/lang/String;)V
 
     invoke-static {}, Lcom/oneplus/android/server/heytapbusiness/zta/zta/you;->getInstance()Lcom/oneplus/android/server/heytapbusiness/zta/zta/you;
 
@@ -297,13 +540,31 @@
 
     const/4 v0, 0x0
 
-    invoke-virtual {p0, p1, p2, v0, v0}, Lcom/oneplus/android/server/heytapbusiness/zta/zta/you;->you(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)V
+    new-array v0, v0, [Ljava/lang/String;
+
+    const/4 v1, 0x0
+
+    invoke-virtual {p0, p1, p2, v1, v0}, Lcom/oneplus/android/server/heytapbusiness/zta/zta/you;->you(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)V
 
     return-void
 .end method
 
 .method public removeFastAppWechatPay(Ljava/lang/String;Ljava/lang/String;)V
     .locals 2
+
+    iget-object v0, p0, Lcom/oneplus/android/server/heytapbusiness/OpHeytapBusinessManagerService$1;->this$0:Lcom/oneplus/android/server/heytapbusiness/sis;
+
+    invoke-static {v0}, Lcom/oneplus/android/server/heytapbusiness/sis;->zta(Lcom/oneplus/android/server/heytapbusiness/sis;)Landroid/content/Context;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Landroid/content/Context;->getUserId()I
+
+    move-result v0
+
+    const-string v1, "removeFastAppWechatPay"
+
+    invoke-direct {p0, v0, v1}, Lcom/oneplus/android/server/heytapbusiness/OpHeytapBusinessManagerService$1;->enforceCallerInstantPlatform(ILjava/lang/String;)V
 
     invoke-static {}, Lcom/oneplus/android/server/heytapbusiness/zta/sis/you;->getInstance()Lcom/oneplus/android/server/heytapbusiness/zta/sis/you;
 
@@ -322,6 +583,20 @@
 
 .method public removeMiniProgramShare(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 2
+
+    iget-object v0, p0, Lcom/oneplus/android/server/heytapbusiness/OpHeytapBusinessManagerService$1;->this$0:Lcom/oneplus/android/server/heytapbusiness/sis;
+
+    invoke-static {v0}, Lcom/oneplus/android/server/heytapbusiness/sis;->zta(Lcom/oneplus/android/server/heytapbusiness/sis;)Landroid/content/Context;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Landroid/content/Context;->getUserId()I
+
+    move-result v0
+
+    const-string v1, "removeMiniProgramShare"
+
+    invoke-direct {p0, v0, v1}, Lcom/oneplus/android/server/heytapbusiness/OpHeytapBusinessManagerService$1;->enforceCallerInstantPlatform(ILjava/lang/String;)V
 
     invoke-static {}, Lcom/oneplus/android/server/heytapbusiness/zta/you/you;->getInstance()Lcom/oneplus/android/server/heytapbusiness/zta/you/you;
 

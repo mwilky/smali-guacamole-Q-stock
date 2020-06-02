@@ -1309,6 +1309,10 @@
 
     invoke-virtual {v2, v3}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
+    const-string v3, "android.intent.action.ACTION_SHUTDOWN"
+
+    invoke-virtual {v2, v3}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
+
     iget-object v3, p0, Lcom/android/server/OnePlusExService;->mContext:Landroid/content/Context;
 
     iget-object v4, p0, Lcom/android/server/OnePlusExService;->mCarModeReceiver:Landroid/content/BroadcastReceiver;
@@ -1329,7 +1333,7 @@
 
     const/4 v2, 0x0
 
-    const/16 v3, 0xe0
+    const/16 v3, 0xe1
 
     aput v3, v1, v2
 
@@ -1350,7 +1354,7 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-static {}, Lcom/oneplus/custom/utils/OpCustomizeSettings;->Cf()Lcom/oneplus/custom/utils/OpCustomizeSettings$CUSTOM_TYPE;
+    invoke-static {}, Lcom/oneplus/custom/utils/OpCustomizeSettings;->Lf()Lcom/oneplus/custom/utils/OpCustomizeSettings$CUSTOM_TYPE;
 
     move-result-object v2
 
@@ -1364,7 +1368,7 @@
 
     sget-object v0, Lcom/oneplus/custom/utils/OpCustomizeSettings$CUSTOM_TYPE;->MCL:Lcom/oneplus/custom/utils/OpCustomizeSettings$CUSTOM_TYPE;
 
-    invoke-static {}, Lcom/oneplus/custom/utils/OpCustomizeSettings;->Cf()Lcom/oneplus/custom/utils/OpCustomizeSettings$CUSTOM_TYPE;
+    invoke-static {}, Lcom/oneplus/custom/utils/OpCustomizeSettings;->Lf()Lcom/oneplus/custom/utils/OpCustomizeSettings$CUSTOM_TYPE;
 
     move-result-object v1
 
@@ -2863,7 +2867,7 @@
     :cond_1
     iget-object p0, p0, Lcom/android/server/OnePlusExService;->mSceneModeController:Lcom/oneplus/android/server/scene/ivd;
 
-    invoke-virtual {p0}, Lcom/oneplus/android/server/scene/ivd;->tf()V
+    invoke-virtual {p0}, Lcom/oneplus/android/server/scene/ivd;->Cf()V
 
     goto :goto_0
 
@@ -2872,7 +2876,7 @@
 
     if-eqz p0, :cond_4
 
-    invoke-virtual {p0}, Lcom/oneplus/android/server/scene/ivd;->vf()V
+    invoke-virtual {p0}, Lcom/oneplus/android/server/scene/ivd;->Ef()V
 
     goto :goto_0
 
@@ -2925,6 +2929,17 @@
 .method public shutdown()V
     .locals 3
 
+    invoke-static {}, Landroid/os/Binder;->getCallingUid()I
+
+    move-result v0
+
+    const/16 v1, 0x3e8
+
+    if-eq v0, v1, :cond_0
+
+    return-void
+
+    :cond_0
     const/4 v0, 0x1
 
     new-array v0, v0, [I
@@ -2941,20 +2956,20 @@
 
     const-string v1, "OnePlusExService"
 
-    if-eqz v0, :cond_2
+    if-eqz v0, :cond_3
 
     sget-boolean v0, Lcom/android/server/OnePlusExService;->debugOnePlus:Z
 
-    if-eqz v0, :cond_0
+    if-eqz v0, :cond_1
 
     const-string v0, "[scene] shutdown"
 
     invoke-static {v1, v0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    :cond_0
+    :cond_1
     iget-object v0, p0, Lcom/android/server/OnePlusExService;->mSceneModeController:Lcom/oneplus/android/server/scene/ivd;
 
-    if-nez v0, :cond_1
+    if-nez v0, :cond_2
 
     iget-object v0, p0, Lcom/android/server/OnePlusExService;->mContext:Landroid/content/Context;
 
@@ -2964,27 +2979,27 @@
 
     iput-object v0, p0, Lcom/android/server/OnePlusExService;->mSceneModeController:Lcom/oneplus/android/server/scene/ivd;
 
-    :cond_1
+    :cond_2
     iget-object v0, p0, Lcom/android/server/OnePlusExService;->mSceneModeController:Lcom/oneplus/android/server/scene/ivd;
 
     invoke-virtual {v0}, Lcom/oneplus/android/server/scene/ivd;->shutdown()V
 
     iget-object p0, p0, Lcom/android/server/OnePlusExService;->mSceneModeController:Lcom/oneplus/android/server/scene/ivd;
 
-    invoke-virtual {p0}, Lcom/oneplus/android/server/scene/ivd;->uf()V
+    invoke-virtual {p0}, Lcom/oneplus/android/server/scene/ivd;->Df()V
 
     goto :goto_0
 
-    :cond_2
+    :cond_3
     sget-boolean p0, Lcom/android/server/OnePlusExService;->debugOnePlus:Z
 
-    if-eqz p0, :cond_3
+    if-eqz p0, :cond_4
 
     const-string p0, "[scene] Scene mode not supported"
 
     invoke-static {v1, p0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    :cond_3
+    :cond_4
     :goto_0
     return-void
 .end method

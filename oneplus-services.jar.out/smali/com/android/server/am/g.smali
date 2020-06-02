@@ -18,7 +18,7 @@
 
 
 # instance fields
-.field final synthetic Lu:Lcom/android/server/am/OnePlusMemoryTracker$zta;
+.field final synthetic ov:Lcom/android/server/am/OnePlusMemoryTracker$zta;
 
 .field final synthetic this$0:Lcom/android/server/am/OnePlusMemoryTracker;
 
@@ -29,7 +29,7 @@
 
     iput-object p1, p0, Lcom/android/server/am/g;->this$0:Lcom/android/server/am/OnePlusMemoryTracker;
 
-    iput-object p2, p0, Lcom/android/server/am/g;->Lu:Lcom/android/server/am/OnePlusMemoryTracker$zta;
+    iput-object p2, p0, Lcom/android/server/am/g;->ov:Lcom/android/server/am/OnePlusMemoryTracker$zta;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -44,7 +44,7 @@
     :try_start_0
     iget-object v0, p0, Lcom/android/server/am/g;->this$0:Lcom/android/server/am/OnePlusMemoryTracker;
 
-    iget-object p0, p0, Lcom/android/server/am/g;->Lu:Lcom/android/server/am/OnePlusMemoryTracker$zta;
+    iget-object p0, p0, Lcom/android/server/am/g;->ov:Lcom/android/server/am/OnePlusMemoryTracker$zta;
 
     invoke-static {v0, p0}, Lcom/android/server/am/OnePlusMemoryTracker;->access$100(Lcom/android/server/am/OnePlusMemoryTracker;Lcom/android/server/am/OnePlusMemoryTracker$zta;)V
     :try_end_0

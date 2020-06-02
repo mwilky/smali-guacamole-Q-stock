@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/server/policy/kth;->Mc()V
+    value = Lcom/android/server/policy/kth;->Tc()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -41,7 +41,7 @@
 
     const/16 v0, 0x31
 
-    invoke-static {p0, v0}, Lcom/android/server/policy/bio;->ssp(Ljava/lang/String;I)Z
+    invoke-static {p0, v0}, Lcom/android/server/policy/bio;->cno(Ljava/lang/String;I)Z
 
     const-string p0, "DeviceKeyHandler"
 

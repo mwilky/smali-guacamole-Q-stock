@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field private Ul:Ljava/util/List;
+.field private pm:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
@@ -36,7 +36,7 @@
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/android/server/am/OnePlusBGController$zta;->Ul:Ljava/util/List;
+    iput-object v0, p0, Lcom/android/server/am/OnePlusBGController$zta;->pm:Ljava/util/List;
 
     return-void
 .end method
@@ -46,12 +46,12 @@
 .method public cleanUp()V
     .locals 1
 
-    iget-object v0, p0, Lcom/android/server/am/OnePlusBGController$zta;->Ul:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/server/am/OnePlusBGController$zta;->pm:Ljava/util/List;
 
     monitor-enter v0
 
     :try_start_0
-    iget-object p0, p0, Lcom/android/server/am/OnePlusBGController$zta;->Ul:Ljava/util/List;
+    iget-object p0, p0, Lcom/android/server/am/OnePlusBGController$zta;->pm:Ljava/util/List;
 
     invoke-interface {p0}, Ljava/util/List;->clear()V
 
@@ -72,7 +72,7 @@
 .method public dump()V
     .locals 3
 
-    iget-object v0, p0, Lcom/android/server/am/OnePlusBGController$zta;->Ul:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/server/am/OnePlusBGController$zta;->pm:Ljava/util/List;
 
     monitor-enter v0
 
@@ -80,7 +80,7 @@
 
     :goto_0
     :try_start_0
-    iget-object v2, p0, Lcom/android/server/am/OnePlusBGController$zta;->Ul:Ljava/util/List;
+    iget-object v2, p0, Lcom/android/server/am/OnePlusBGController$zta;->pm:Ljava/util/List;
 
     invoke-interface {v2}, Ljava/util/List;->size()I
 
@@ -88,7 +88,7 @@
 
     if-ge v1, v2, :cond_0
 
-    iget-object v2, p0, Lcom/android/server/am/OnePlusBGController$zta;->Ul:Ljava/util/List;
+    iget-object v2, p0, Lcom/android/server/am/OnePlusBGController$zta;->pm:Ljava/util/List;
 
     invoke-interface {v2, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -121,7 +121,7 @@
     throw p0
 .end method
 
-.method public nb()Ljava/util/List;
+.method public ob()Ljava/util/List;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -132,12 +132,12 @@
         }
     .end annotation
 
-    iget-object v0, p0, Lcom/android/server/am/OnePlusBGController$zta;->Ul:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/server/am/OnePlusBGController$zta;->pm:Ljava/util/List;
 
     monitor-enter v0
 
     :try_start_0
-    iget-object p0, p0, Lcom/android/server/am/OnePlusBGController$zta;->Ul:Ljava/util/List;
+    iget-object p0, p0, Lcom/android/server/am/OnePlusBGController$zta;->pm:Ljava/util/List;
 
     monitor-exit v0
 
@@ -158,7 +158,7 @@
 
     move-object/from16 v0, p0
 
-    iget-object v1, v0, Lcom/android/server/am/OnePlusBGController$zta;->Ul:Ljava/util/List;
+    iget-object v1, v0, Lcom/android/server/am/OnePlusBGController$zta;->pm:Ljava/util/List;
 
     monitor-enter v1
 
@@ -193,7 +193,7 @@
 
     invoke-direct/range {v2 .. v16}, Lcom/android/server/am/OnePlusBGController$wtn;-><init>(Ljava/lang/String;IDDDLcom/android/server/am/OnePlusBGController$AppBucketRanking;Lcom/android/server/am/OnePlusBGController$MyDrainType;ZZZZ)V
 
-    iget-object v0, v0, Lcom/android/server/am/OnePlusBGController$zta;->Ul:Ljava/util/List;
+    iget-object v0, v0, Lcom/android/server/am/OnePlusBGController$zta;->pm:Ljava/util/List;
 
     move-object/from16 v2, v17
 

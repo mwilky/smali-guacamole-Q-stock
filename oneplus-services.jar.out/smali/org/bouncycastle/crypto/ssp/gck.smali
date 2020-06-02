@@ -18,7 +18,7 @@
     return-void
 .end method
 
-.method private ot()[B
+.method private Nt()[B
     .locals 5
 
     iget-object v0, p0, Lorg/bouncycastle/crypto/ssp/gck;->digest:Lorg/bouncycastle/crypto/qbh;
@@ -78,16 +78,6 @@
 
 
 # virtual methods
-.method public ga(I)Lorg/bouncycastle/crypto/kth;
-    .locals 0
-
-    invoke-virtual {p0, p1}, Lorg/bouncycastle/crypto/ssp/gck;->generateDerivedParameters(I)Lorg/bouncycastle/crypto/kth;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
 .method public generateDerivedParameters(I)Lorg/bouncycastle/crypto/kth;
     .locals 2
 
@@ -101,7 +91,7 @@
 
     if-gt p1, v0, :cond_0
 
-    invoke-direct {p0}, Lorg/bouncycastle/crypto/ssp/gck;->ot()[B
+    invoke-direct {p0}, Lorg/bouncycastle/crypto/ssp/gck;->Nt()[B
 
     move-result-object p0
 
@@ -139,6 +129,16 @@
     throw p0
 .end method
 
+.method public ja(I)Lorg/bouncycastle/crypto/kth;
+    .locals 0
+
+    invoke-virtual {p0, p1}, Lorg/bouncycastle/crypto/ssp/gck;->generateDerivedParameters(I)Lorg/bouncycastle/crypto/kth;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
 .method public ugm(II)Lorg/bouncycastle/crypto/kth;
     .locals 3
 
@@ -156,7 +156,7 @@
 
     if-gt v0, v1, :cond_0
 
-    invoke-direct {p0}, Lorg/bouncycastle/crypto/ssp/gck;->ot()[B
+    invoke-direct {p0}, Lorg/bouncycastle/crypto/ssp/gck;->Nt()[B
 
     move-result-object p0
 

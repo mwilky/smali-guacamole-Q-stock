@@ -23,7 +23,7 @@
 
 
 # instance fields
-.field private WFa:Ljava/util/Collection;
+.field private jIa:Ljava/util/Collection;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Collection<",
@@ -50,7 +50,7 @@
 
     invoke-direct {v0, p1}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
 
-    iput-object v0, p0, Lorg/bouncycastle/util/sis;->WFa:Ljava/util/Collection;
+    iput-object v0, p0, Lorg/bouncycastle/util/sis;->jIa:Ljava/util/Collection;
 
     return-void
 .end method
@@ -96,7 +96,7 @@
 
     new-instance p1, Ljava/util/ArrayList;
 
-    iget-object p0, p0, Lorg/bouncycastle/util/sis;->WFa:Ljava/util/Collection;
+    iget-object p0, p0, Lorg/bouncycastle/util/sis;->jIa:Ljava/util/Collection;
 
     invoke-direct {p1, p0}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
 
@@ -107,7 +107,7 @@
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iget-object p0, p0, Lorg/bouncycastle/util/sis;->WFa:Ljava/util/Collection;
+    iget-object p0, p0, Lorg/bouncycastle/util/sis;->jIa:Ljava/util/Collection;
 
     invoke-interface {p0}, Ljava/util/Collection;->iterator()Ljava/util/Iterator;
 

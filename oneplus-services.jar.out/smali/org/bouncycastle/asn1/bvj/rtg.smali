@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field private ora:Ljava/util/Vector;
+.field private Dta:Ljava/util/Vector;
 
 .field private template:Lorg/bouncycastle/asn1/bvj/ssp;
 
@@ -29,7 +29,7 @@
 
     invoke-direct {v0}, Ljava/util/Vector;-><init>()V
 
-    iput-object v0, p0, Lorg/bouncycastle/asn1/bvj/rtg;->ora:Ljava/util/Vector;
+    iput-object v0, p0, Lorg/bouncycastle/asn1/bvj/rtg;->Dta:Ljava/util/Vector;
 
     iput-object p1, p0, Lorg/bouncycastle/asn1/bvj/rtg;->template:Lorg/bouncycastle/asn1/bvj/ssp;
 
@@ -41,7 +41,7 @@
 .method public build()Lorg/bouncycastle/asn1/bvj/tsu;
     .locals 3
 
-    iget-object v0, p0, Lorg/bouncycastle/asn1/bvj/rtg;->ora:Ljava/util/Vector;
+    iget-object v0, p0, Lorg/bouncycastle/asn1/bvj/rtg;->Dta:Ljava/util/Vector;
 
     invoke-virtual {v0}, Ljava/util/Vector;->size()I
 
@@ -56,7 +56,7 @@
 
     if-eq v1, v2, :cond_0
 
-    iget-object v2, p0, Lorg/bouncycastle/asn1/bvj/rtg;->ora:Ljava/util/Vector;
+    iget-object v2, p0, Lorg/bouncycastle/asn1/bvj/rtg;->Dta:Ljava/util/Vector;
 
     invoke-virtual {v2, v1}, Ljava/util/Vector;->elementAt(I)Ljava/lang/Object;
 
@@ -83,7 +83,7 @@
 .method public sis(Lorg/bouncycastle/asn1/bvj;Lorg/bouncycastle/asn1/ssp;)Lorg/bouncycastle/asn1/bvj/rtg;
     .locals 2
 
-    iget-object v0, p0, Lorg/bouncycastle/asn1/bvj/rtg;->ora:Ljava/util/Vector;
+    iget-object v0, p0, Lorg/bouncycastle/asn1/bvj/rtg;->Dta:Ljava/util/Vector;
 
     new-instance v1, Lorg/bouncycastle/asn1/bvj/sis;
 
@@ -111,7 +111,7 @@
 .method public zta(Lorg/bouncycastle/asn1/bvj/zta;)Lorg/bouncycastle/asn1/bvj/rtg;
     .locals 2
 
-    iget-object v0, p0, Lorg/bouncycastle/asn1/bvj/rtg;->ora:Ljava/util/Vector;
+    iget-object v0, p0, Lorg/bouncycastle/asn1/bvj/rtg;->Dta:Ljava/util/Vector;
 
     new-instance v1, Lorg/bouncycastle/asn1/bvj/sis;
 
@@ -125,7 +125,7 @@
 .method public zta([Lorg/bouncycastle/asn1/bvj/zta;)Lorg/bouncycastle/asn1/bvj/rtg;
     .locals 2
 
-    iget-object v0, p0, Lorg/bouncycastle/asn1/bvj/rtg;->ora:Ljava/util/Vector;
+    iget-object v0, p0, Lorg/bouncycastle/asn1/bvj/rtg;->Dta:Ljava/util/Vector;
 
     new-instance v1, Lorg/bouncycastle/asn1/bvj/sis;
 

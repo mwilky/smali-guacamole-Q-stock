@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field private NDa:Lyou/zta/you/you/rtg;
+.field private aGa:Lyou/zta/you/you/rtg;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lyou/zta/you/you/zta;->NDa:Lyou/zta/you/you/rtg;
+    iput-object p1, p0, Lyou/zta/you/you/zta;->aGa:Lyou/zta/you/you/rtg;
 
     return-void
 .end method
@@ -26,7 +26,7 @@
 .method public getParams()Lyou/zta/you/you/rtg;
     .locals 0
 
-    iget-object p0, p0, Lyou/zta/you/you/zta;->NDa:Lyou/zta/you/you/rtg;
+    iget-object p0, p0, Lyou/zta/you/you/zta;->aGa:Lyou/zta/you/you/rtg;
 
     return-object p0
 .end method

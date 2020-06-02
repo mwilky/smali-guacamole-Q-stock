@@ -1775,7 +1775,7 @@
 
     check-cast v7, Lcom/android/server/OpPowerControllerService$sis;
 
-    iput-boolean v5, v7, Lcom/android/server/OpPowerControllerService$sis;->Xe:Z
+    iput-boolean v5, v7, Lcom/android/server/OpPowerControllerService$sis;->sf:Z
 
     iget-object v7, p0, Lcom/android/server/OpPowerControllerService;->mNetworkManagementService:Landroid/os/INetworkManagementService;
 
@@ -1900,7 +1900,7 @@
 
     check-cast v7, Lcom/android/server/OpPowerControllerService$sis;
 
-    iget-boolean v7, v7, Lcom/android/server/OpPowerControllerService$sis;->Xe:Z
+    iget-boolean v7, v7, Lcom/android/server/OpPowerControllerService$sis;->sf:Z
 
     if-eqz v7, :cond_b
 
@@ -1912,7 +1912,7 @@
 
     check-cast v7, Lcom/android/server/OpPowerControllerService$sis;
 
-    iput-boolean v6, v7, Lcom/android/server/OpPowerControllerService$sis;->Xe:Z
+    iput-boolean v6, v7, Lcom/android/server/OpPowerControllerService$sis;->sf:Z
 
     iget-object v7, p0, Lcom/android/server/OpPowerControllerService;->mContext:Landroid/content/Context;
 
@@ -2445,7 +2445,7 @@
 
     iget-object v1, p0, Lcom/android/server/OpPowerControllerService;->mContext:Landroid/content/Context;
 
-    const v2, 0x50d007f
+    const v2, 0x50d0080
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -2453,7 +2453,7 @@
 
     iget-object v2, p0, Lcom/android/server/OpPowerControllerService;->mContext:Landroid/content/Context;
 
-    const v3, 0x50d007e
+    const v3, 0x50d007f
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -2467,7 +2467,7 @@
 
     invoke-direct {v3, v4, v5}, Landroid/app/Notification$Builder;-><init>(Landroid/content/Context;Ljava/lang/String;)V
 
-    const v4, 0x5060059
+    const v4, 0x506005b
 
     invoke-virtual {v3, v4}, Landroid/app/Notification$Builder;->setSmallIcon(I)Landroid/app/Notification$Builder;
 
@@ -2881,7 +2881,7 @@
 
     check-cast v1, Lcom/android/server/power/zta/zta;
 
-    invoke-virtual {v1, p2}, Lcom/android/server/power/zta/zta;->T(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v1, p2}, Lcom/android/server/power/zta/zta;->V(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -6439,7 +6439,7 @@
     :pswitch_0
     new-array v5, v8, [I
 
-    const/16 v6, 0xf1
+    const/16 v6, 0xf3
 
     aput v6, v5, v2
 
@@ -6466,7 +6466,7 @@
     :pswitch_3
     new-array v5, v8, [I
 
-    const/16 v6, 0x8d
+    const/16 v6, 0x8e
 
     aput v6, v5, v2
 
@@ -6792,11 +6792,11 @@
     .catch Ljava/lang/InterruptedException; {:try_start_0 .. :try_end_0} :catch_1
     .catch Ljava/lang/ArrayIndexOutOfBoundsException; {:try_start_0 .. :try_end_0} :catch_0
 
-    invoke-virtual {v2}, Lcom/android/server/ivd;->Qf()Z
+    invoke-virtual {v2}, Lcom/android/server/ivd;->Zf()Z
 
     move-result p0
 
-    invoke-virtual {v4}, Lcom/android/server/ivd;->Qf()Z
+    invoke-virtual {v4}, Lcom/android/server/ivd;->Zf()Z
 
     move-result v1
 
@@ -7329,7 +7329,7 @@
 
     const/4 v2, 0x0
 
-    const/16 v3, 0xf1
+    const/16 v3, 0xf3
 
     aput v3, v1, v2
 
@@ -7418,7 +7418,7 @@
     :cond_1
     new-array v1, v0, [I
 
-    const/16 v4, 0x8d
+    const/16 v4, 0x8e
 
     aput v4, v1, v2
 
@@ -7595,7 +7595,7 @@
     :cond_8
     new-array v1, v0, [I
 
-    const/16 v3, 0x9c
+    const/16 v3, 0x9d
 
     aput v3, v1, v2
 
@@ -8008,7 +8008,7 @@
     :cond_5
     new-array p1, p1, [I
 
-    const/16 p3, 0x9c
+    const/16 p3, 0x9d
 
     aput p3, p1, v0
 
@@ -8815,6 +8815,17 @@
 .method public inform1stLightIdle()V
     .locals 3
 
+    invoke-static {}, Landroid/os/Binder;->getCallingUid()I
+
+    move-result v0
+
+    const/16 v1, 0x3e8
+
+    if-eq v0, v1, :cond_0
+
+    return-void
+
+    :cond_0
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -8847,19 +8858,19 @@
 
     sget-object v2, Lcom/android/server/OpPowerControllerService$PkgRestrictType;->ENABLE:Lcom/android/server/OpPowerControllerService$PkgRestrictType;
 
-    if-ne v1, v2, :cond_0
+    if-ne v1, v2, :cond_1
 
     iget-object p0, p0, Lcom/android/server/OpPowerControllerService;->mRestrictType:Lcom/oneplus/android/server/am/highpower/IHighPowerDetector$RestrictType;
 
     sget-object v1, Lcom/oneplus/android/server/am/highpower/IHighPowerDetector$RestrictType;->FULLY:Lcom/oneplus/android/server/am/highpower/IHighPowerDetector$RestrictType;
 
-    if-ne p0, v1, :cond_0
+    if-ne p0, v1, :cond_1
 
     invoke-static {v0}, Lcom/android/server/power/OpPowerManagerInjector;->disableExclusiveWakeLocks(Z)V
 
     sget-boolean p0, Lcom/android/server/am/zgw;->sInUsing:Z
 
-    if-eqz p0, :cond_0
+    if-eqz p0, :cond_1
 
     const/4 p0, 0x0
 
@@ -8869,13 +8880,24 @@
 
     invoke-virtual {p0, v0}, Lcom/android/server/am/zgw;->ear(Z)V
 
-    :cond_0
+    :cond_1
     return-void
 .end method
 
 .method public informDeviceActive()V
     .locals 2
 
+    invoke-static {}, Landroid/os/Binder;->getCallingUid()I
+
+    move-result v0
+
+    const/16 v1, 0x3e8
+
+    if-eq v0, v1, :cond_0
+
+    return-void
+
+    :cond_0
     const-string v0, "OpPowerControllerService"
 
     const-string v1, "Update mIsAfter1stLightIdle to false"
@@ -8892,7 +8914,7 @@
 
     sget-boolean p0, Lcom/android/server/am/zgw;->sInUsing:Z
 
-    if-eqz p0, :cond_0
+    if-eqz p0, :cond_1
 
     const/4 p0, 0x0
 
@@ -8902,7 +8924,7 @@
 
     invoke-virtual {p0, v0}, Lcom/android/server/am/zgw;->ear(Z)V
 
-    :cond_0
+    :cond_1
     return-void
 .end method
 
@@ -9003,7 +9025,7 @@
 
     const/4 v2, 0x0
 
-    const/16 v3, 0x9c
+    const/16 v3, 0x9d
 
     aput v3, v1, v2
 
@@ -9222,7 +9244,7 @@
     :cond_4
     new-array v0, v0, [I
 
-    const/16 v1, 0x8d
+    const/16 v1, 0x8e
 
     aput v1, v0, v2
 
@@ -9370,8 +9392,21 @@
 .end method
 
 .method public isAggressive()Z
-    .locals 0
+    .locals 2
 
+    invoke-static {}, Landroid/os/Binder;->getCallingUid()I
+
+    move-result v0
+
+    const/16 v1, 0x3e8
+
+    if-eq v0, v1, :cond_0
+
+    const/4 p0, 0x0
+
+    return p0
+
+    :cond_0
     invoke-virtual {p0}, Lcom/android/server/OpPowerControllerService;->isAggressiveInternal()Z
 
     move-result p0
@@ -9397,8 +9432,21 @@
 .end method
 
 .method public isChinaRegion()Z
-    .locals 0
+    .locals 2
 
+    invoke-static {}, Landroid/os/Binder;->getCallingUid()I
+
+    move-result v0
+
+    const/16 v1, 0x3e8
+
+    if-eq v0, v1, :cond_0
+
+    const/4 p0, 0x0
+
+    return p0
+
+    :cond_0
     invoke-virtual {p0}, Lcom/android/server/OpPowerControllerService;->isChinaRegionInternal()Z
 
     move-result p0
@@ -9434,8 +9482,21 @@
 .end method
 
 .method public isInDeepIdle()Z
-    .locals 0
+    .locals 2
 
+    invoke-static {}, Landroid/os/Binder;->getCallingUid()I
+
+    move-result v0
+
+    const/16 v1, 0x3e8
+
+    if-eq v0, v1, :cond_0
+
+    const/4 p0, 0x0
+
+    return p0
+
+    :cond_0
     invoke-virtual {p0}, Lcom/android/server/OpPowerControllerService;->isInDeepIdleInternal()Z
 
     move-result p0
@@ -9464,8 +9525,21 @@
 .end method
 
 .method public isInDeepSleep()Z
-    .locals 0
+    .locals 2
 
+    invoke-static {}, Landroid/os/Binder;->getCallingUid()I
+
+    move-result v0
+
+    const/16 v1, 0x3e8
+
+    if-eq v0, v1, :cond_0
+
+    const/4 p0, 0x0
+
+    return p0
+
+    :cond_0
     invoke-virtual {p0}, Lcom/android/server/OpPowerControllerService;->isInDeepSleepInternal()Z
 
     move-result p0
@@ -9482,8 +9556,21 @@
 .end method
 
 .method public isInSleep()Z
-    .locals 0
+    .locals 2
 
+    invoke-static {}, Landroid/os/Binder;->getCallingUid()I
+
+    move-result v0
+
+    const/16 v1, 0x3e8
+
+    if-eq v0, v1, :cond_0
+
+    const/4 p0, 0x0
+
+    return p0
+
+    :cond_0
     invoke-virtual {p0}, Lcom/android/server/OpPowerControllerService;->isInSleepInternal()Z
 
     move-result p0
@@ -9512,8 +9599,21 @@
 .end method
 
 .method public isIndiaRegion()Z
-    .locals 0
+    .locals 2
 
+    invoke-static {}, Landroid/os/Binder;->getCallingUid()I
+
+    move-result v0
+
+    const/16 v1, 0x3e8
+
+    if-eq v0, v1, :cond_0
+
+    const/4 p0, 0x0
+
+    return p0
+
+    :cond_0
     invoke-virtual {p0}, Lcom/android/server/OpPowerControllerService;->isIndiaRegionInternal()Z
 
     move-result p0
@@ -9549,16 +9649,29 @@
 .end method
 
 .method public isOemDeviceIdleWhitelist(Ljava/lang/String;)Z
-    .locals 2
+    .locals 3
 
+    invoke-static {}, Landroid/os/Binder;->getCallingUid()I
+
+    move-result v0
+
+    const/4 v1, 0x0
+
+    const/16 v2, 0x3e8
+
+    if-eq v0, v2, :cond_0
+
+    return v1
+
+    :cond_0
     iget-object v0, p0, Lcom/android/server/OpPowerControllerService;->mOemDeviceIdleWhitelist:Ljava/util/Set;
 
     monitor-enter v0
 
     :try_start_0
-    iget-object v1, p0, Lcom/android/server/OpPowerControllerService;->mOemDeviceIdleWhitelist:Ljava/util/Set;
+    iget-object v2, p0, Lcom/android/server/OpPowerControllerService;->mOemDeviceIdleWhitelist:Ljava/util/Set;
 
-    if-eqz v1, :cond_0
+    if-eqz v2, :cond_1
 
     iget-object p0, p0, Lcom/android/server/OpPowerControllerService;->mOemDeviceIdleWhitelist:Ljava/util/Set;
 
@@ -9570,12 +9683,10 @@
 
     return p0
 
-    :cond_0
-    const/4 p0, 0x0
-
+    :cond_1
     monitor-exit v0
 
-    return p0
+    return v1
 
     :catchall_0
     move-exception p0
@@ -9827,8 +9938,19 @@
 .end method
 
 .method public noteCameraOn(Z)V
-    .locals 0
+    .locals 2
 
+    invoke-static {}, Landroid/os/Binder;->getCallingUid()I
+
+    move-result v0
+
+    const/16 v1, 0x3e8
+
+    if-eq v0, v1, :cond_0
+
+    return-void
+
+    :cond_0
     invoke-virtual {p0, p1}, Lcom/android/server/OpPowerControllerService;->noteCameraOnInternal(Z)V
 
     return-void
@@ -9843,6 +9965,17 @@
 .method public notifyScreenState(I)V
     .locals 2
 
+    invoke-static {}, Landroid/os/Binder;->getCallingUid()I
+
+    move-result v0
+
+    const/16 v1, 0x3e8
+
+    if-eq v0, v1, :cond_0
+
+    return-void
+
+    :cond_0
     const-string v0, "OpPowerControllerService"
 
     const-string v1, "SCREEN is OFF"
@@ -9851,11 +9984,11 @@
 
     iget-boolean v0, p0, Lcom/android/server/OpPowerControllerService;->mUserSleep:Z
 
-    if-eqz v0, :cond_0
+    if-eqz v0, :cond_1
 
     invoke-virtual {p0, p1}, Lcom/android/server/OpPowerControllerService;->notifyScreenStateInternal(I)V
 
-    :cond_0
+    :cond_1
     return-void
 .end method
 
@@ -10407,7 +10540,7 @@
 
     sput-boolean v3, Lcom/android/server/OpPowerControllerService;->mDebugOneplus:Z
 
-    sput-boolean v3, Lcom/android/server/you$zta;->Qb:Z
+    sput-boolean v3, Lcom/android/server/you$zta;->Rb:Z
 
     const-string p1, "log is on"
 
@@ -10427,7 +10560,7 @@
 
     sput-boolean v4, Lcom/android/server/OpPowerControllerService;->mDebugOneplus:Z
 
-    sput-boolean v4, Lcom/android/server/you$zta;->Qb:Z
+    sput-boolean v4, Lcom/android/server/you$zta;->Rb:Z
 
     const-string p1, "log is off"
 
@@ -11805,7 +11938,7 @@
     :cond_34
     new-array v1, v3, [I
 
-    const/16 v6, 0x9c
+    const/16 v6, 0x9d
 
     aput v6, v1, v4
 
@@ -12047,7 +12180,7 @@
 
     iget-object p1, p0, Lcom/android/server/OpPowerControllerService;->mOverHeatingDiagnosis:Lcom/android/server/l;
 
-    invoke-virtual {p1}, Lcom/android/server/l;->ha()V
+    invoke-virtual {p1}, Lcom/android/server/l;->ia()V
 
     goto/16 :goto_13
 
@@ -12062,7 +12195,7 @@
 
     iget-object p1, p0, Lcom/android/server/OpPowerControllerService;->mOverHeatingDiagnosis:Lcom/android/server/l;
 
-    invoke-virtual {p1}, Lcom/android/server/l;->da()V
+    invoke-virtual {p1}, Lcom/android/server/l;->ea()V
 
     goto/16 :goto_13
 
@@ -13364,7 +13497,7 @@
     :cond_70
     new-array v1, v3, [I
 
-    const/16 v3, 0xf1
+    const/16 v3, 0xf3
 
     aput v3, v1, v4
 
@@ -14019,8 +14152,19 @@
 .end method
 
 .method public setDozeState(I)V
-    .locals 0
+    .locals 2
 
+    invoke-static {}, Landroid/os/Binder;->getCallingUid()I
+
+    move-result v0
+
+    const/16 v1, 0x3e8
+
+    if-eq v0, v1, :cond_0
+
+    return-void
+
+    :cond_0
     invoke-virtual {p0, p1}, Lcom/android/server/OpPowerControllerService;->setDozeStateInternal(I)V
 
     return-void
@@ -14152,8 +14296,19 @@
 .end method
 
 .method public shutdown()V
-    .locals 1
+    .locals 2
 
+    invoke-static {}, Landroid/os/Binder;->getCallingUid()I
+
+    move-result v0
+
+    const/16 v1, 0x3e8
+
+    if-eq v0, v1, :cond_0
+
+    return-void
+
+    :cond_0
     iget-object v0, p0, Lcom/android/server/OpPowerControllerService;->mIdleStats:Lcom/android/server/OpPowerControllerService$rtg;
 
     monitor-enter v0
@@ -14176,8 +14331,19 @@
 .end method
 
 .method shutdownInternal()V
-    .locals 0
+    .locals 1
 
+    invoke-static {}, Landroid/os/Binder;->getCallingUid()I
+
+    move-result p0
+
+    const/16 v0, 0x3e8
+
+    if-eq p0, v0, :cond_0
+
+    return-void
+
+    :cond_0
     const/4 p0, 0x1
 
     sput-boolean p0, Lcom/android/server/OpPowerControllerService;->mShuttingDown:Z

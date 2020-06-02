@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field private final qbh:Landroid/net/Uri;
+.field private final oif:Landroid/net/Uri;
 
 .field final synthetic this$0:Lcom/oneplus/android/server/alertslider/you;
 
@@ -38,7 +38,7 @@
 
     move-result-object p1
 
-    iput-object p1, p0, Lcom/oneplus/android/server/alertslider/you$zta;->qbh:Landroid/net/Uri;
+    iput-object p1, p0, Lcom/oneplus/android/server/alertslider/you$zta;->oif:Landroid/net/Uri;
 
     return-void
 .end method
@@ -58,7 +58,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/oneplus/android/server/alertslider/you$zta;->qbh:Landroid/net/Uri;
+    iget-object v1, p0, Lcom/oneplus/android/server/alertslider/you$zta;->oif:Landroid/net/Uri;
 
     const/4 v2, 0x0
 
@@ -101,7 +101,7 @@
     invoke-static {v0, p1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_0
-    iget-object p1, p0, Lcom/oneplus/android/server/alertslider/you$zta;->qbh:Landroid/net/Uri;
+    iget-object p1, p0, Lcom/oneplus/android/server/alertslider/you$zta;->oif:Landroid/net/Uri;
 
     invoke-virtual {p2, p1}, Landroid/net/Uri;->equals(Ljava/lang/Object;)Z
 
@@ -109,33 +109,64 @@
 
     if-eqz p1, :cond_2
 
-    iget-object p0, p0, Lcom/oneplus/android/server/alertslider/you$zta;->this$0:Lcom/oneplus/android/server/alertslider/you;
+    iget-object p1, p0, Lcom/oneplus/android/server/alertslider/you$zta;->this$0:Lcom/oneplus/android/server/alertslider/you;
 
-    invoke-static {p0}, Lcom/oneplus/android/server/alertslider/you;->zta(Lcom/oneplus/android/server/alertslider/you;)Landroid/content/Context;
+    invoke-static {p1}, Lcom/oneplus/android/server/alertslider/you;->zta(Lcom/oneplus/android/server/alertslider/you;)Landroid/content/Context;
+
+    move-result-object p2
+
+    invoke-virtual {p2}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object p2
+
+    const/4 v0, 0x0
+
+    const-string v1, "oem_zen_media_switch"
+
+    invoke-static {p2, v1, v0}, Landroid/provider/Settings$System;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
+
+    move-result p2
+
+    const/4 v1, 0x1
+
+    if-ne p2, v1, :cond_1
+
+    move v0, v1
+
+    :cond_1
+    invoke-static {p1, v0}, Lcom/oneplus/android/server/alertslider/you;->zta(Lcom/oneplus/android/server/alertslider/you;Z)Z
+
+    :cond_2
+    iget-object p1, p0, Lcom/oneplus/android/server/alertslider/you$zta;->this$0:Lcom/oneplus/android/server/alertslider/you;
+
+    invoke-static {p1}, Lcom/oneplus/android/server/alertslider/you;->sis(Lcom/oneplus/android/server/alertslider/you;)Lcom/android/server/audio/AudioService;
 
     move-result-object p1
 
-    invoke-virtual {p1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
-
-    move-result-object p1
-
-    const/4 p2, 0x0
-
-    const-string v0, "oem_zen_media_switch"
-
-    invoke-static {p1, v0, p2}, Landroid/provider/Settings$System;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
+    invoke-virtual {p1}, Lcom/android/server/audio/AudioService;->getRingerModeInternal()I
 
     move-result p1
 
-    const/4 v0, 0x1
+    if-nez p1, :cond_4
 
-    if-ne p1, v0, :cond_1
+    iget-object p1, p0, Lcom/oneplus/android/server/alertslider/you$zta;->this$0:Lcom/oneplus/android/server/alertslider/you;
 
-    move p2, v0
+    invoke-static {p1}, Lcom/oneplus/android/server/alertslider/you;->you(Lcom/oneplus/android/server/alertslider/you;)Z
 
-    :cond_1
-    invoke-static {p0, p2}, Lcom/oneplus/android/server/alertslider/you;->zta(Lcom/oneplus/android/server/alertslider/you;Z)Z
+    move-result p1
 
-    :cond_2
+    iget-object p0, p0, Lcom/oneplus/android/server/alertslider/you$zta;->this$0:Lcom/oneplus/android/server/alertslider/you;
+
+    if-eqz p1, :cond_3
+
+    invoke-static {p0}, Lcom/oneplus/android/server/alertslider/you;->tsu(Lcom/oneplus/android/server/alertslider/you;)V
+
+    goto :goto_0
+
+    :cond_3
+    invoke-static {p0}, Lcom/oneplus/android/server/alertslider/you;->rtg(Lcom/oneplus/android/server/alertslider/you;)V
+
+    :cond_4
+    :goto_0
     return-void
 .end method

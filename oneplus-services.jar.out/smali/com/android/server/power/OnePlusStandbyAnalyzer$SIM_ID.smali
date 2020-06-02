@@ -25,9 +25,9 @@
 # static fields
 .field private static final synthetic $VALUES:[Lcom/android/server/power/OnePlusStandbyAnalyzer$SIM_ID;
 
-.field public static final enum xla:Lcom/android/server/power/OnePlusStandbyAnalyzer$SIM_ID;
+.field public static final enum Mna:Lcom/android/server/power/OnePlusStandbyAnalyzer$SIM_ID;
 
-.field public static final enum yla:Lcom/android/server/power/OnePlusStandbyAnalyzer$SIM_ID;
+.field public static final enum Nna:Lcom/android/server/power/OnePlusStandbyAnalyzer$SIM_ID;
 
 
 # instance fields
@@ -46,7 +46,7 @@
 
     invoke-direct {v0, v2, v1, v1}, Lcom/android/server/power/OnePlusStandbyAnalyzer$SIM_ID;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$SIM_ID;->xla:Lcom/android/server/power/OnePlusStandbyAnalyzer$SIM_ID;
+    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$SIM_ID;->Mna:Lcom/android/server/power/OnePlusStandbyAnalyzer$SIM_ID;
 
     new-instance v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$SIM_ID;
 
@@ -56,17 +56,17 @@
 
     invoke-direct {v0, v3, v2, v2}, Lcom/android/server/power/OnePlusStandbyAnalyzer$SIM_ID;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$SIM_ID;->yla:Lcom/android/server/power/OnePlusStandbyAnalyzer$SIM_ID;
+    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$SIM_ID;->Nna:Lcom/android/server/power/OnePlusStandbyAnalyzer$SIM_ID;
 
     const/4 v0, 0x2
 
     new-array v0, v0, [Lcom/android/server/power/OnePlusStandbyAnalyzer$SIM_ID;
 
-    sget-object v3, Lcom/android/server/power/OnePlusStandbyAnalyzer$SIM_ID;->xla:Lcom/android/server/power/OnePlusStandbyAnalyzer$SIM_ID;
+    sget-object v3, Lcom/android/server/power/OnePlusStandbyAnalyzer$SIM_ID;->Mna:Lcom/android/server/power/OnePlusStandbyAnalyzer$SIM_ID;
 
     aput-object v3, v0, v1
 
-    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$SIM_ID;->yla:Lcom/android/server/power/OnePlusStandbyAnalyzer$SIM_ID;
+    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$SIM_ID;->Nna:Lcom/android/server/power/OnePlusStandbyAnalyzer$SIM_ID;
 
     aput-object v1, v0, v2
 

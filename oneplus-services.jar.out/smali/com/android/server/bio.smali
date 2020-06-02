@@ -18,7 +18,7 @@
 
 
 # instance fields
-.field final synthetic dc:Ljava/lang/String;
+.field final synthetic ec:Ljava/lang/String;
 
 .field final synthetic this$0:Lcom/android/server/OnePlusExService;
 
@@ -29,7 +29,7 @@
 
     iput-object p1, p0, Lcom/android/server/bio;->this$0:Lcom/android/server/OnePlusExService;
 
-    iput-object p2, p0, Lcom/android/server/bio;->dc:Ljava/lang/String;
+    iput-object p2, p0, Lcom/android/server/bio;->ec:Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -95,7 +95,7 @@
     :cond_2
     const-string v2, "sdm845"
 
-    iget-object v3, p0, Lcom/android/server/bio;->dc:Ljava/lang/String;
+    iget-object v3, p0, Lcom/android/server/bio;->ec:Ljava/lang/String;
 
     invoke-virtual {v2, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -126,7 +126,7 @@
     :cond_3
     const-string v2, "msmnile"
 
-    iget-object v4, p0, Lcom/android/server/bio;->dc:Ljava/lang/String;
+    iget-object v4, p0, Lcom/android/server/bio;->ec:Ljava/lang/String;
 
     invoke-virtual {v2, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 

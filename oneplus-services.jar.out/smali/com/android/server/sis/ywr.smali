@@ -52,7 +52,7 @@
 
     move-result p1
 
-    invoke-virtual {p0, p1}, Lcom/android/server/sis/vdb;->x(I)V
+    invoke-virtual {p0, p1}, Lcom/android/server/sis/vdb;->z(I)V
 
     return-void
 .end method

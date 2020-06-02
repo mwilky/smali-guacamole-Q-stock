@@ -87,7 +87,7 @@
 .end method
 
 .method public constructor <init>(Landroid/content/Context;)V
-    .locals 4
+    .locals 3
 
     invoke-direct {p0}, Lcom/oneplus/core/oimc/IOIMCRemoteAction$Stub;-><init>()V
 
@@ -101,100 +101,100 @@
 
     iput v0, p0, Lcom/oneplus/android/server/scene/ESportMode;->mTelephonyEsportRetryCount:I
 
-    const/4 v1, -0x1
+    const/4 v0, -0x1
 
-    iput v1, p0, Lcom/oneplus/android/server/scene/ESportMode;->mUser:I
+    iput v0, p0, Lcom/oneplus/android/server/scene/ESportMode;->mUser:I
 
-    new-instance v1, Landroid/os/Handler;
+    new-instance v0, Landroid/os/Handler;
 
-    invoke-direct {v1}, Landroid/os/Handler;-><init>()V
+    invoke-direct {v0}, Landroid/os/Handler;-><init>()V
 
-    iput-object v1, p0, Lcom/oneplus/android/server/scene/ESportMode;->mHandler:Landroid/os/Handler;
+    iput-object v0, p0, Lcom/oneplus/android/server/scene/ESportMode;->mHandler:Landroid/os/Handler;
 
-    new-instance v1, Lcom/oneplus/android/server/scene/ESportMode$zta;
+    new-instance v0, Lcom/oneplus/android/server/scene/ESportMode$zta;
 
-    invoke-direct {v1, p0}, Lcom/oneplus/android/server/scene/ESportMode$zta;-><init>(Lcom/oneplus/android/server/scene/ESportMode;)V
+    invoke-direct {v0, p0}, Lcom/oneplus/android/server/scene/ESportMode$zta;-><init>(Lcom/oneplus/android/server/scene/ESportMode;)V
 
-    iput-object v1, p0, Lcom/oneplus/android/server/scene/ESportMode;->mReceiver:Lcom/oneplus/android/server/scene/ESportMode$zta;
+    iput-object v0, p0, Lcom/oneplus/android/server/scene/ESportMode;->mReceiver:Lcom/oneplus/android/server/scene/ESportMode$zta;
 
-    const/4 v1, 0x0
+    const/4 v0, 0x0
 
-    iput-object v1, p0, Lcom/oneplus/android/server/scene/ESportMode;->mESportGuider:Lcom/oneplus/android/server/scene/tsu;
+    iput-object v0, p0, Lcom/oneplus/android/server/scene/ESportMode;->mESportGuider:Lcom/oneplus/android/server/scene/tsu;
 
-    new-instance v1, Lcom/oneplus/android/server/scene/rtg;
+    new-instance v0, Lcom/oneplus/android/server/scene/rtg;
 
-    invoke-direct {v1, p0}, Lcom/oneplus/android/server/scene/rtg;-><init>(Lcom/oneplus/android/server/scene/ESportMode;)V
+    invoke-direct {v0, p0}, Lcom/oneplus/android/server/scene/rtg;-><init>(Lcom/oneplus/android/server/scene/ESportMode;)V
 
-    iput-object v1, p0, Lcom/oneplus/android/server/scene/ESportMode;->mPhoneEsportRetryRunnable:Ljava/lang/Runnable;
+    iput-object v0, p0, Lcom/oneplus/android/server/scene/ESportMode;->mPhoneEsportRetryRunnable:Ljava/lang/Runnable;
 
     iput-object p1, p0, Lcom/oneplus/android/server/scene/ESportMode;->mContext:Landroid/content/Context;
 
     invoke-virtual {p1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
-    move-result-object v1
+    move-result-object v0
 
-    iput-object v1, p0, Lcom/oneplus/android/server/scene/ESportMode;->mResolver:Landroid/content/ContentResolver;
+    iput-object v0, p0, Lcom/oneplus/android/server/scene/ESportMode;->mResolver:Landroid/content/ContentResolver;
 
     invoke-static {}, Landroid/view/WindowManagerGlobal;->getWindowManagerService()Landroid/view/IWindowManager;
 
-    move-result-object v1
+    move-result-object v0
 
-    iput-object v1, p0, Lcom/oneplus/android/server/scene/ESportMode;->mWindowManagerService:Landroid/view/IWindowManager;
+    iput-object v0, p0, Lcom/oneplus/android/server/scene/ESportMode;->mWindowManagerService:Landroid/view/IWindowManager;
 
-    const-class v1, Lcom/android/server/wm/WindowManagerInternal;
+    const-class v0, Lcom/android/server/wm/WindowManagerInternal;
 
-    invoke-static {v1}, Lcom/android/server/LocalServices;->getService(Ljava/lang/Class;)Ljava/lang/Object;
+    invoke-static {v0}, Lcom/android/server/LocalServices;->getService(Ljava/lang/Class;)Ljava/lang/Object;
 
-    move-result-object v1
+    move-result-object v0
 
-    check-cast v1, Lcom/android/server/wm/WindowManagerInternal;
+    check-cast v0, Lcom/android/server/wm/WindowManagerInternal;
 
-    iput-object v1, p0, Lcom/oneplus/android/server/scene/ESportMode;->mWindowManagerInternal:Lcom/android/server/wm/WindowManagerInternal;
+    iput-object v0, p0, Lcom/oneplus/android/server/scene/ESportMode;->mWindowManagerInternal:Lcom/android/server/wm/WindowManagerInternal;
 
     :try_start_0
     invoke-static {}, Landroid/app/ActivityManager;->getService()Landroid/app/IActivityManager;
 
-    move-result-object v1
+    move-result-object v0
 
-    new-instance v2, Lcom/oneplus/android/server/scene/ESportMode$1;
+    new-instance v1, Lcom/oneplus/android/server/scene/ESportMode$1;
 
-    invoke-direct {v2, p0}, Lcom/oneplus/android/server/scene/ESportMode$1;-><init>(Lcom/oneplus/android/server/scene/ESportMode;)V
+    invoke-direct {v1, p0}, Lcom/oneplus/android/server/scene/ESportMode$1;-><init>(Lcom/oneplus/android/server/scene/ESportMode;)V
 
-    const-class v3, Lcom/oneplus/android/server/scene/ESportMode;
+    const-class v2, Lcom/oneplus/android/server/scene/ESportMode;
 
-    invoke-virtual {v3}, Ljava/lang/Class;->getName()Ljava/lang/String;
+    invoke-virtual {v2}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
-    move-result-object v3
+    move-result-object v2
 
-    invoke-interface {v1, v2, v3}, Landroid/app/IActivityManager;->registerUserSwitchObserver(Landroid/app/IUserSwitchObserver;Ljava/lang/String;)V
+    invoke-interface {v0, v1, v2}, Landroid/app/IActivityManager;->registerUserSwitchObserver(Landroid/app/IUserSwitchObserver;Ljava/lang/String;)V
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
     goto :goto_0
 
     :catch_0
-    move-exception v1
+    move-exception v0
 
-    invoke-virtual {v1}, Landroid/os/RemoteException;->printStackTrace()V
+    invoke-virtual {v0}, Landroid/os/RemoteException;->printStackTrace()V
 
     :goto_0
-    new-instance v1, Landroid/content/IntentFilter;
+    new-instance v0, Landroid/content/IntentFilter;
 
-    invoke-direct {v1}, Landroid/content/IntentFilter;-><init>()V
+    invoke-direct {v0}, Landroid/content/IntentFilter;-><init>()V
 
-    const-string v2, "android.net.conn.CONNECTIVITY_CHANGE"
+    const-string v1, "android.net.conn.CONNECTIVITY_CHANGE"
 
-    invoke-virtual {v1, v2}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
+    invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
-    const-string v2, "android.intent.action.SCREEN_OFF"
+    const-string v1, "android.intent.action.SCREEN_OFF"
 
-    invoke-virtual {v1, v2}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
+    invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
-    iget-object v2, p0, Lcom/oneplus/android/server/scene/ESportMode;->mContext:Landroid/content/Context;
+    iget-object v1, p0, Lcom/oneplus/android/server/scene/ESportMode;->mContext:Landroid/content/Context;
 
-    iget-object v3, p0, Lcom/oneplus/android/server/scene/ESportMode;->mReceiver:Lcom/oneplus/android/server/scene/ESportMode$zta;
+    iget-object v2, p0, Lcom/oneplus/android/server/scene/ESportMode;->mReceiver:Lcom/oneplus/android/server/scene/ESportMode$zta;
 
-    invoke-virtual {v2, v3, v1}, Landroid/content/Context;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
+    invoke-virtual {v1, v2, v0}, Landroid/content/Context;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
 
     invoke-static {p1}, Lcom/oneplus/android/server/scene/tsu;->getInstance(Landroid/content/Context;)Lcom/oneplus/android/server/scene/tsu;
 
@@ -204,29 +204,6 @@
 
     invoke-direct {p0}, Lcom/oneplus/android/server/scene/ESportMode;->listenForConfigChanged()V
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/scene/ESportMode;->needResumeUserDataSaver()Z
-
-    move-result p1
-
-    if-eqz p1, :cond_0
-
-    iget-object p0, p0, Lcom/oneplus/android/server/scene/ESportMode;->mResolver:Landroid/content/ContentResolver;
-
-    const/4 p1, -0x2
-
-    const-string v1, "esport_mode_enabled"
-
-    const-string v2, "0"
-
-    invoke-static {p0, v1, v2, p1}, Landroid/provider/Settings$System;->putStringForUser(Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;I)Z
-
-    invoke-static {}, Lcom/android/server/zta/you;->getInstance()Lcom/android/server/zta/you;
-
-    move-result-object p0
-
-    invoke-virtual {p0, v0}, Lcom/android/server/zta/you;->q(Z)V
-
-    :cond_0
     return-void
 .end method
 
@@ -286,31 +263,6 @@
     sget-boolean v0, Lcom/oneplus/android/server/scene/ESportMode;->sEsportEnabled:Z
 
     return v0
-.end method
-
-.method private getDataSaverEnabled()Z
-    .locals 1
-
-    iget-object v0, p0, Lcom/oneplus/android/server/scene/ESportMode;->mPolicyManager:Landroid/net/NetworkPolicyManager;
-
-    if-nez v0, :cond_0
-
-    iget-object v0, p0, Lcom/oneplus/android/server/scene/ESportMode;->mContext:Landroid/content/Context;
-
-    invoke-static {v0}, Landroid/net/NetworkPolicyManager;->from(Landroid/content/Context;)Landroid/net/NetworkPolicyManager;
-
-    move-result-object v0
-
-    iput-object v0, p0, Lcom/oneplus/android/server/scene/ESportMode;->mPolicyManager:Landroid/net/NetworkPolicyManager;
-
-    :cond_0
-    iget-object p0, p0, Lcom/oneplus/android/server/scene/ESportMode;->mPolicyManager:Landroid/net/NetworkPolicyManager;
-
-    invoke-virtual {p0}, Landroid/net/NetworkPolicyManager;->getRestrictBackground()Z
-
-    move-result p0
-
-    return p0
 .end method
 
 .method private static getIExtTelephony()Ljava/lang/Object;
@@ -421,7 +373,7 @@
 .end method
 
 .method private invokeEsportAPIs(Z)V
-    .locals 6
+    .locals 4
 
     sget-boolean v0, Lcom/oneplus/android/server/scene/ESportMode;->DBG:Z
 
@@ -448,25 +400,21 @@
     :cond_0
     iget-object v0, p0, Lcom/oneplus/android/server/scene/ESportMode;->mResolver:Landroid/content/ContentResolver;
 
-    const-string v1, "1"
-
-    const-string v2, "0"
-
     if-eqz p1, :cond_1
 
-    move-object v3, v1
+    const-string v1, "1"
 
     goto :goto_0
 
     :cond_1
-    move-object v3, v2
+    const-string v1, "0"
 
     :goto_0
-    const/4 v4, -0x2
+    const/4 v2, -0x2
 
-    const-string v5, "esport_mode_enabled"
+    const-string v3, "esport_mode_enabled"
 
-    invoke-static {v0, v5, v3, v4}, Landroid/provider/Settings$System;->putStringForUser(Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;I)Z
+    invoke-static {v0, v3, v1, v2}, Landroid/provider/Settings$System;->putStringForUser(Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;I)Z
 
     sput-boolean p1, Lcom/oneplus/android/server/scene/ESportMode;->sEsportEnabled:Z
 
@@ -486,59 +434,43 @@
     invoke-direct {p0, p1}, Lcom/oneplus/android/server/scene/ESportMode;->setTelephonyEsportMode(Z)V
 
     :goto_1
-    if-eqz p1, :cond_4
-
-    invoke-direct {p0}, Lcom/oneplus/android/server/scene/ESportMode;->getDataSaverEnabled()Z
-
-    move-result v0
-
-    iget-object p0, p0, Lcom/oneplus/android/server/scene/ESportMode;->mResolver:Landroid/content/ContentResolver;
-
-    if-eqz v0, :cond_3
-
-    goto :goto_2
-
-    :cond_3
-    move-object v1, v2
-
-    :goto_2
-    const-string v2, "esport_mode_data_saver"
-
-    invoke-static {p0, v2, v1, v4}, Landroid/provider/Settings$System;->putStringForUser(Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;I)Z
-
-    if-nez v0, :cond_5
-
-    goto :goto_3
-
-    :cond_4
-    invoke-direct {p0}, Lcom/oneplus/android/server/scene/ESportMode;->needResumeUserDataSaver()Z
-
-    move-result p0
-
-    if-eqz p0, :cond_5
-
-    :goto_3
     invoke-static {}, Lcom/android/server/zta/you;->getInstance()Lcom/android/server/zta/you;
 
     move-result-object p0
 
     invoke-virtual {p0, p1}, Lcom/android/server/zta/you;->setRestrictBackground(Z)V
 
-    :cond_5
     invoke-static {}, Lcom/android/server/am/ivd;->getInstance()Lcom/android/server/am/ivd;
 
     move-result-object p0
 
-    if-eqz p0, :cond_6
+    if-eqz p0, :cond_3
 
     invoke-static {}, Lcom/android/server/am/ivd;->getInstance()Lcom/android/server/am/ivd;
 
     move-result-object p0
 
-    invoke-virtual {p0, p1}, Lcom/android/server/am/ivd;->cgv(Z)V
+    invoke-virtual {p0, p1}, Lcom/android/server/am/ivd;->vju(Z)V
 
-    :cond_6
+    :cond_3
     return-void
+.end method
+
+.method public static isFnaticModeOn()Z
+    .locals 1
+
+    sget-object v0, Lcom/oneplus/android/server/scene/ESportMode;->sInstance:Lcom/oneplus/android/server/scene/ESportMode;
+
+    if-nez v0, :cond_0
+
+    const/4 v0, 0x0
+
+    return v0
+
+    :cond_0
+    sget-boolean v0, Lcom/oneplus/android/server/scene/ESportMode;->sEsportEnabled:Z
+
+    return v0
 .end method
 
 .method private isWiFiConnected()Z
@@ -608,28 +540,6 @@
     invoke-virtual {v1, v2, v0}, Landroid/content/Context;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
 
     return-void
-.end method
-
-.method private needResumeUserDataSaver()Z
-    .locals 2
-
-    iget-object p0, p0, Lcom/oneplus/android/server/scene/ESportMode;->mResolver:Landroid/content/ContentResolver;
-
-    const-string v0, "esport_mode_data_saver"
-
-    const/4 v1, -0x2
-
-    invoke-static {p0, v0, v1}, Landroid/provider/Settings$System;->getStringForUser(Landroid/content/ContentResolver;Ljava/lang/String;I)Ljava/lang/String;
-
-    move-result-object p0
-
-    const-string v0, "0"
-
-    invoke-virtual {v0, p0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result p0
-
-    return p0
 .end method
 
 .method private setTelephonyEsportMode(Z)V
@@ -997,7 +907,7 @@
 
     if-eqz p2, :cond_4
 
-    invoke-static {}, Lcom/android/server/wm/wtn;->Zd()Lcom/android/server/wm/wtn$zta;
+    invoke-static {}, Lcom/android/server/wm/wtn;->fe()Lcom/android/server/wm/wtn$zta;
 
     move-result-object p1
 

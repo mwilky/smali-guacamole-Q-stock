@@ -58,19 +58,19 @@
 
     iget-object p1, p0, Lcom/android/server/am/qbh;->this$0:Lcom/android/server/am/oif;
 
-    invoke-static {p1}, Lcom/android/server/am/oif;->sis(Lcom/android/server/am/oif;)Lcom/android/server/am/z;
+    invoke-static {p1}, Lcom/android/server/am/oif;->sis(Lcom/android/server/am/oif;)Lcom/android/server/am/B;
 
     move-result-object p1
 
-    invoke-virtual {p1}, Lcom/android/server/am/z;->vc()V
+    invoke-virtual {p1}, Lcom/android/server/am/B;->vc()V
 
     iget-object p1, p0, Lcom/android/server/am/qbh;->this$0:Lcom/android/server/am/oif;
 
-    invoke-static {p1}, Lcom/android/server/am/oif;->sis(Lcom/android/server/am/oif;)Lcom/android/server/am/z;
+    invoke-static {p1}, Lcom/android/server/am/oif;->sis(Lcom/android/server/am/oif;)Lcom/android/server/am/B;
 
     move-result-object p1
 
-    invoke-virtual {p1}, Lcom/android/server/am/z;->wc()V
+    invoke-virtual {p1}, Lcom/android/server/am/B;->wc()V
 
     invoke-static {}, Lcom/android/server/am/oif;->access$500()Landroid/content/Context;
 

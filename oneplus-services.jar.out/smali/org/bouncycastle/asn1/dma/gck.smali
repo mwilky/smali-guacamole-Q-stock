@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field Mqa:Lorg/bouncycastle/asn1/ywr;
+.field _sa:Lorg/bouncycastle/asn1/ywr;
 
 .field name:Lorg/bouncycastle/asn1/bvj/tsu;
 
@@ -21,7 +21,7 @@
 
     invoke-direct {p1, p2}, Lorg/bouncycastle/asn1/ywr;-><init>(Ljava/math/BigInteger;)V
 
-    iput-object p1, p0, Lorg/bouncycastle/asn1/dma/gck;->Mqa:Lorg/bouncycastle/asn1/ywr;
+    iput-object p1, p0, Lorg/bouncycastle/asn1/dma/gck;->_sa:Lorg/bouncycastle/asn1/ywr;
 
     return-void
 .end method
@@ -51,7 +51,7 @@
 
     check-cast p1, Lorg/bouncycastle/asn1/ywr;
 
-    iput-object p1, p0, Lorg/bouncycastle/asn1/dma/gck;->Mqa:Lorg/bouncycastle/asn1/ywr;
+    iput-object p1, p0, Lorg/bouncycastle/asn1/dma/gck;->_sa:Lorg/bouncycastle/asn1/ywr;
 
     return-void
 .end method
@@ -75,7 +75,7 @@
 
     invoke-direct {p1, p2}, Lorg/bouncycastle/asn1/ywr;-><init>(Ljava/math/BigInteger;)V
 
-    iput-object p1, p0, Lorg/bouncycastle/asn1/dma/gck;->Mqa:Lorg/bouncycastle/asn1/ywr;
+    iput-object p1, p0, Lorg/bouncycastle/asn1/dma/gck;->_sa:Lorg/bouncycastle/asn1/ywr;
 
     return-void
 .end method
@@ -95,7 +95,7 @@
 
     iput-object p1, p0, Lorg/bouncycastle/asn1/dma/gck;->name:Lorg/bouncycastle/asn1/bvj/tsu;
 
-    iput-object p2, p0, Lorg/bouncycastle/asn1/dma/gck;->Mqa:Lorg/bouncycastle/asn1/ywr;
+    iput-object p2, p0, Lorg/bouncycastle/asn1/dma/gck;->_sa:Lorg/bouncycastle/asn1/ywr;
 
     return-void
 .end method
@@ -135,7 +135,7 @@
 .method public getCertificateSerialNumber()Lorg/bouncycastle/asn1/ywr;
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/asn1/dma/gck;->Mqa:Lorg/bouncycastle/asn1/ywr;
+    iget-object p0, p0, Lorg/bouncycastle/asn1/dma/gck;->_sa:Lorg/bouncycastle/asn1/ywr;
 
     return-object p0
 .end method
@@ -159,7 +159,7 @@
 
     invoke-virtual {v0, v1}, Lorg/bouncycastle/asn1/cno;->you(Lorg/bouncycastle/asn1/ssp;)V
 
-    iget-object p0, p0, Lorg/bouncycastle/asn1/dma/gck;->Mqa:Lorg/bouncycastle/asn1/ywr;
+    iget-object p0, p0, Lorg/bouncycastle/asn1/dma/gck;->_sa:Lorg/bouncycastle/asn1/ywr;
 
     invoke-virtual {v0, p0}, Lorg/bouncycastle/asn1/cno;->you(Lorg/bouncycastle/asn1/ssp;)V
 

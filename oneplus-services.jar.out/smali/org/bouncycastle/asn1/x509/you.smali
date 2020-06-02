@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field obj:Lorg/bouncycastle/asn1/ssp;
+.field Fta:Lorg/bouncycastle/asn1/vdb;
 
-.field qra:Lorg/bouncycastle/asn1/vdb;
+.field obj:Lorg/bouncycastle/asn1/ssp;
 
 
 # direct methods
@@ -28,7 +28,7 @@
 
     invoke-direct {p1, v1, v1, v0}, Lorg/bouncycastle/asn1/L;-><init>(ZILorg/bouncycastle/asn1/ssp;)V
 
-    iput-object p1, p0, Lorg/bouncycastle/asn1/x509/you;->qra:Lorg/bouncycastle/asn1/vdb;
+    iput-object p1, p0, Lorg/bouncycastle/asn1/x509/you;->Fta:Lorg/bouncycastle/asn1/vdb;
 
     return-void
 .end method
@@ -46,7 +46,7 @@
 
     move-result-object p1
 
-    iput-object p1, p0, Lorg/bouncycastle/asn1/x509/you;->qra:Lorg/bouncycastle/asn1/vdb;
+    iput-object p1, p0, Lorg/bouncycastle/asn1/x509/you;->Fta:Lorg/bouncycastle/asn1/vdb;
 
     return-void
 .end method
@@ -187,7 +187,7 @@
 .method public toASN1Primitive()Lorg/bouncycastle/asn1/vdb;
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/asn1/x509/you;->qra:Lorg/bouncycastle/asn1/vdb;
+    iget-object p0, p0, Lorg/bouncycastle/asn1/x509/you;->Fta:Lorg/bouncycastle/asn1/vdb;
 
     return-object p0
 .end method

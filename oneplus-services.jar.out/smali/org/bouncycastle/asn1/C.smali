@@ -52,22 +52,14 @@
 
 
 # virtual methods
-.method isConstructed()Z
-    .locals 0
-
-    const/4 p0, 0x0
-
-    return p0
-.end method
-
-.method ug()I
+.method Dg()I
     .locals 1
 
     iget-object v0, p0, Lorg/bouncycastle/asn1/ibl;->string:[B
 
     array-length v0, v0
 
-    invoke-static {v0}, Lorg/bouncycastle/asn1/ia;->ea(I)I
+    invoke-static {v0}, Lorg/bouncycastle/asn1/ia;->ha(I)I
 
     move-result v0
 
@@ -80,6 +72,14 @@
     add-int/2addr v0, p0
 
     return v0
+.end method
+
+.method isConstructed()Z
+    .locals 0
+
+    const/4 p0, 0x0
+
+    return p0
 .end method
 
 .method zta(Lorg/bouncycastle/asn1/ugm;)V

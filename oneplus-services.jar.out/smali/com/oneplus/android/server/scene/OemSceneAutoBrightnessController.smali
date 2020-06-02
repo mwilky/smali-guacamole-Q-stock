@@ -546,7 +546,7 @@
 .end method
 
 .method public updateFunctionRule(I)V
-    .locals 4
+    .locals 3
 
     const-string v0, "OemSceneAutoBrightnessController"
 
@@ -581,14 +581,9 @@
 
     :cond_0
     iget v1, p0, Lcom/oneplus/android/server/scene/OemSceneAutoBrightnessController;->mUser:I
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
-
-    const-string v2, "[scene] removeFuncRule for blocking auto brightness "
 
     if-eq v1, p1, :cond_2
 
-    :try_start_1
     sget-boolean v1, Lcom/oneplus/android/server/scene/OemSceneAutoBrightnessController;->DBG:Z
 
     if-eqz v1, :cond_1
@@ -597,11 +592,13 @@
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
+    const-string v2, "[scene] removeFuncRule for blocking auto brightness "
+
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget v3, p0, Lcom/oneplus/android/server/scene/OemSceneAutoBrightnessController;->mUser:I
+    iget v2, p0, Lcom/oneplus/android/server/scene/OemSceneAutoBrightnessController;->mUser:I
 
-    invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -612,74 +609,16 @@
     :cond_1
     sget-object v1, Lcom/oneplus/core/oimc/OIMCRule;->RULE_DISABLE_AUTOBACKLIGHT:Lcom/oneplus/core/oimc/OIMCRule;
 
-    iget v3, p0, Lcom/oneplus/android/server/scene/OemSceneAutoBrightnessController;->mUser:I
+    iget v2, p0, Lcom/oneplus/android/server/scene/OemSceneAutoBrightnessController;->mUser:I
 
-    invoke-static {v1, v3}, Lcom/oneplus/server/zta;->removeFuncRule(Lcom/oneplus/core/oimc/OIMCRule;I)V
+    invoke-static {v1, v2}, Lcom/oneplus/server/sis;->removeFuncRule(Lcom/oneplus/core/oimc/OIMCRule;I)V
 
     :cond_2
-    invoke-direct {p0}, Lcom/oneplus/android/server/scene/OemSceneAutoBrightnessController;->getGameModeAutoBrightnessBlocked()Z
-
-    move-result v1
-
-    if-eqz v1, :cond_4
-
-    sget-boolean v1, Lcom/oneplus/android/server/scene/OemSceneAutoBrightnessController;->DBG:Z
-
-    if-eqz v1, :cond_3
-
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v2, "[scene] addFuncRule for blocking auto brightness for user "
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    :cond_3
-    sget-object v1, Lcom/oneplus/core/oimc/OIMCRule;->RULE_DISABLE_AUTOBACKLIGHT:Lcom/oneplus/core/oimc/OIMCRule;
-
-    invoke-static {v1, p1}, Lcom/oneplus/server/zta;->addFuncRule(Lcom/oneplus/core/oimc/OIMCRule;I)V
+    iput p1, p0, Lcom/oneplus/android/server/scene/OemSceneAutoBrightnessController;->mUser:I
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
     goto :goto_0
-
-    :cond_4
-    sget-boolean v1, Lcom/oneplus/android/server/scene/OemSceneAutoBrightnessController;->DBG:Z
-
-    if-eqz v1, :cond_5
-
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    :cond_5
-    sget-object v1, Lcom/oneplus/core/oimc/OIMCRule;->RULE_DISABLE_AUTOBACKLIGHT:Lcom/oneplus/core/oimc/OIMCRule;
-
-    invoke-static {v1, p1}, Lcom/oneplus/server/zta;->removeFuncRule(Lcom/oneplus/core/oimc/OIMCRule;I)V
-
-    :goto_0
-    iput p1, p0, Lcom/oneplus/android/server/scene/OemSceneAutoBrightnessController;->mUser:I
-    :try_end_1
-    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
-
-    goto :goto_1
 
     :catch_0
     move-exception p0
@@ -700,6 +639,6 @@
 
     invoke-static {v0, p0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    :goto_1
+    :goto_0
     return-void
 .end method

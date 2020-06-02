@@ -152,7 +152,7 @@
 
     sget-object v2, Lyou/zta/sis/zta/sis;->ONE:Ljava/math/BigInteger;
 
-    sget-object v3, Lyou/zta/sis/zta/sis;->Yoa:Ljava/math/BigInteger;
+    sget-object v3, Lyou/zta/sis/zta/sis;->lra:Ljava/math/BigInteger;
 
     sget-object v4, Lyou/zta/sis/zta/sis;->ONE:Ljava/math/BigInteger;
 
@@ -375,7 +375,118 @@
 
 
 # virtual methods
-.method public Yj()Lyou/zta/sis/zta/cno;
+.method protected bio(Ljava/math/BigInteger;Ljava/math/BigInteger;)Ljava/math/BigInteger;
+    .locals 0
+
+    invoke-virtual {p1, p2}, Ljava/math/BigInteger;->multiply(Ljava/math/BigInteger;)Ljava/math/BigInteger;
+
+    move-result-object p1
+
+    invoke-virtual {p0, p1}, Lyou/zta/sis/zta/cno$tsu;->gwm(Ljava/math/BigInteger;)Ljava/math/BigInteger;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method protected bvj(Ljava/math/BigInteger;)Ljava/math/BigInteger;
+    .locals 1
+
+    const/4 v0, 0x0
+
+    invoke-virtual {p1, v0}, Ljava/math/BigInteger;->testBit(I)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    iget-object p0, p0, Lyou/zta/sis/zta/cno$tsu;->q:Ljava/math/BigInteger;
+
+    invoke-virtual {p0, p1}, Ljava/math/BigInteger;->add(Ljava/math/BigInteger;)Ljava/math/BigInteger;
+
+    move-result-object p1
+
+    :cond_0
+    const/4 p0, 0x1
+
+    invoke-virtual {p1, p0}, Ljava/math/BigInteger;->shiftRight(I)Ljava/math/BigInteger;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public equals(Ljava/lang/Object;)Z
+    .locals 4
+
+    const/4 v0, 0x1
+
+    if-ne p1, p0, :cond_0
+
+    return v0
+
+    :cond_0
+    instance-of v1, p1, Lyou/zta/sis/zta/cno$tsu;
+
+    const/4 v2, 0x0
+
+    if-nez v1, :cond_1
+
+    return v2
+
+    :cond_1
+    check-cast p1, Lyou/zta/sis/zta/cno$tsu;
+
+    iget-object v1, p0, Lyou/zta/sis/zta/cno$tsu;->q:Ljava/math/BigInteger;
+
+    iget-object v3, p1, Lyou/zta/sis/zta/cno$tsu;->q:Ljava/math/BigInteger;
+
+    invoke-virtual {v1, v3}, Ljava/math/BigInteger;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_2
+
+    iget-object p0, p0, Lyou/zta/sis/zta/cno$tsu;->x:Ljava/math/BigInteger;
+
+    iget-object p1, p1, Lyou/zta/sis/zta/cno$tsu;->x:Ljava/math/BigInteger;
+
+    invoke-virtual {p0, p1}, Ljava/math/BigInteger;->equals(Ljava/lang/Object;)Z
+
+    move-result p0
+
+    if-eqz p0, :cond_2
+
+    goto :goto_0
+
+    :cond_2
+    move v0, v2
+
+    :goto_0
+    return v0
+.end method
+
+.method public getFieldSize()I
+    .locals 0
+
+    iget-object p0, p0, Lyou/zta/sis/zta/cno$tsu;->q:Ljava/math/BigInteger;
+
+    invoke-virtual {p0}, Ljava/math/BigInteger;->bitLength()I
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public getQ()Ljava/math/BigInteger;
+    .locals 0
+
+    iget-object p0, p0, Lyou/zta/sis/zta/cno$tsu;->q:Ljava/math/BigInteger;
+
+    return-object p0
+.end method
+
+.method public gk()Lyou/zta/sis/zta/cno;
     .locals 3
 
     iget-object v0, p0, Lyou/zta/sis/zta/cno$tsu;->x:Ljava/math/BigInteger;
@@ -408,7 +519,152 @@
     return-object v1
 .end method
 
-.method public Zj()Ljava/lang/String;
+.method protected gwm(Ljava/math/BigInteger;)Ljava/math/BigInteger;
+    .locals 5
+
+    iget-object v0, p0, Lyou/zta/sis/zta/cno$tsu;->r:Ljava/math/BigInteger;
+
+    if-eqz v0, :cond_5
+
+    invoke-virtual {p1}, Ljava/math/BigInteger;->signum()I
+
+    move-result v0
+
+    if-gez v0, :cond_0
+
+    const/4 v0, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    :goto_0
+    if-eqz v0, :cond_1
+
+    invoke-virtual {p1}, Ljava/math/BigInteger;->abs()Ljava/math/BigInteger;
+
+    move-result-object p1
+
+    :cond_1
+    iget-object v1, p0, Lyou/zta/sis/zta/cno$tsu;->q:Ljava/math/BigInteger;
+
+    invoke-virtual {v1}, Ljava/math/BigInteger;->bitLength()I
+
+    move-result v1
+
+    iget-object v2, p0, Lyou/zta/sis/zta/cno$tsu;->r:Ljava/math/BigInteger;
+
+    sget-object v3, Lyou/zta/sis/zta/sis;->ONE:Ljava/math/BigInteger;
+
+    invoke-virtual {v2, v3}, Ljava/math/BigInteger;->equals(Ljava/lang/Object;)Z
+
+    move-result v2
+
+    :goto_1
+    invoke-virtual {p1}, Ljava/math/BigInteger;->bitLength()I
+
+    move-result v3
+
+    add-int/lit8 v4, v1, 0x1
+
+    if-le v3, v4, :cond_3
+
+    invoke-virtual {p1, v1}, Ljava/math/BigInteger;->shiftRight(I)Ljava/math/BigInteger;
+
+    move-result-object v3
+
+    invoke-virtual {v3, v1}, Ljava/math/BigInteger;->shiftLeft(I)Ljava/math/BigInteger;
+
+    move-result-object v4
+
+    invoke-virtual {p1, v4}, Ljava/math/BigInteger;->subtract(Ljava/math/BigInteger;)Ljava/math/BigInteger;
+
+    move-result-object p1
+
+    if-nez v2, :cond_2
+
+    iget-object v4, p0, Lyou/zta/sis/zta/cno$tsu;->r:Ljava/math/BigInteger;
+
+    invoke-virtual {v3, v4}, Ljava/math/BigInteger;->multiply(Ljava/math/BigInteger;)Ljava/math/BigInteger;
+
+    move-result-object v3
+
+    :cond_2
+    invoke-virtual {v3, p1}, Ljava/math/BigInteger;->add(Ljava/math/BigInteger;)Ljava/math/BigInteger;
+
+    move-result-object p1
+
+    goto :goto_1
+
+    :cond_3
+    :goto_2
+    iget-object v1, p0, Lyou/zta/sis/zta/cno$tsu;->q:Ljava/math/BigInteger;
+
+    invoke-virtual {p1, v1}, Ljava/math/BigInteger;->compareTo(Ljava/math/BigInteger;)I
+
+    move-result v1
+
+    if-ltz v1, :cond_4
+
+    iget-object v1, p0, Lyou/zta/sis/zta/cno$tsu;->q:Ljava/math/BigInteger;
+
+    invoke-virtual {p1, v1}, Ljava/math/BigInteger;->subtract(Ljava/math/BigInteger;)Ljava/math/BigInteger;
+
+    move-result-object p1
+
+    goto :goto_2
+
+    :cond_4
+    if-eqz v0, :cond_6
+
+    invoke-virtual {p1}, Ljava/math/BigInteger;->signum()I
+
+    move-result v0
+
+    if-eqz v0, :cond_6
+
+    iget-object p0, p0, Lyou/zta/sis/zta/cno$tsu;->q:Ljava/math/BigInteger;
+
+    invoke-virtual {p0, p1}, Ljava/math/BigInteger;->subtract(Ljava/math/BigInteger;)Ljava/math/BigInteger;
+
+    move-result-object p1
+
+    goto :goto_3
+
+    :cond_5
+    iget-object p0, p0, Lyou/zta/sis/zta/cno$tsu;->q:Ljava/math/BigInteger;
+
+    invoke-virtual {p1, p0}, Ljava/math/BigInteger;->mod(Ljava/math/BigInteger;)Ljava/math/BigInteger;
+
+    move-result-object p1
+
+    :cond_6
+    :goto_3
+    return-object p1
+.end method
+
+.method public hashCode()I
+    .locals 1
+
+    iget-object v0, p0, Lyou/zta/sis/zta/cno$tsu;->q:Ljava/math/BigInteger;
+
+    invoke-virtual {v0}, Ljava/math/BigInteger;->hashCode()I
+
+    move-result v0
+
+    iget-object p0, p0, Lyou/zta/sis/zta/cno$tsu;->x:Ljava/math/BigInteger;
+
+    invoke-virtual {p0}, Ljava/math/BigInteger;->hashCode()I
+
+    move-result p0
+
+    xor-int/2addr p0, v0
+
+    return p0
+.end method
+
+.method public hk()Ljava/lang/String;
     .locals 0
 
     const-string p0, "Fp"
@@ -416,7 +672,77 @@
     return-object p0
 .end method
 
-.method public ak()Lyou/zta/sis/zta/cno;
+.method protected ibl(Ljava/math/BigInteger;)Ljava/math/BigInteger;
+    .locals 1
+
+    const/4 v0, 0x0
+
+    invoke-virtual {p1, v0}, Ljava/math/BigInteger;->testBit(I)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    iget-object p0, p0, Lyou/zta/sis/zta/cno$tsu;->q:Ljava/math/BigInteger;
+
+    invoke-virtual {p0, p1}, Ljava/math/BigInteger;->subtract(Ljava/math/BigInteger;)Ljava/math/BigInteger;
+
+    move-result-object p1
+
+    :cond_0
+    const/4 p0, 0x1
+
+    invoke-virtual {p1, p0}, Ljava/math/BigInteger;->shiftRight(I)Ljava/math/BigInteger;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method protected igw(Ljava/math/BigInteger;Ljava/math/BigInteger;)Ljava/math/BigInteger;
+    .locals 0
+
+    invoke-virtual {p1, p2}, Ljava/math/BigInteger;->subtract(Ljava/math/BigInteger;)Ljava/math/BigInteger;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Ljava/math/BigInteger;->signum()I
+
+    move-result p2
+
+    if-gez p2, :cond_0
+
+    iget-object p0, p0, Lyou/zta/sis/zta/cno$tsu;->q:Ljava/math/BigInteger;
+
+    invoke-virtual {p1, p0}, Ljava/math/BigInteger;->add(Ljava/math/BigInteger;)Ljava/math/BigInteger;
+
+    move-result-object p1
+
+    :cond_0
+    return-object p1
+.end method
+
+.method public invert()Lyou/zta/sis/zta/cno;
+    .locals 4
+
+    new-instance v0, Lyou/zta/sis/zta/cno$tsu;
+
+    iget-object v1, p0, Lyou/zta/sis/zta/cno$tsu;->q:Ljava/math/BigInteger;
+
+    iget-object v2, p0, Lyou/zta/sis/zta/cno$tsu;->r:Ljava/math/BigInteger;
+
+    iget-object v3, p0, Lyou/zta/sis/zta/cno$tsu;->x:Ljava/math/BigInteger;
+
+    invoke-virtual {p0, v3}, Lyou/zta/sis/zta/cno$tsu;->modInverse(Ljava/math/BigInteger;)Ljava/math/BigInteger;
+
+    move-result-object p0
+
+    invoke-direct {v0, v1, v2, p0}, Lyou/zta/sis/zta/cno$tsu;-><init>(Ljava/math/BigInteger;Ljava/math/BigInteger;Ljava/math/BigInteger;)V
+
+    return-object v0
+.end method
+
+.method public jk()Lyou/zta/sis/zta/cno;
     .locals 12
 
     invoke-virtual {p0}, Lyou/zta/sis/zta/cno;->isZero()Z
@@ -425,7 +751,7 @@
 
     if-nez v0, :cond_8
 
-    invoke-virtual {p0}, Lyou/zta/sis/zta/cno;->_j()Z
+    invoke-virtual {p0}, Lyou/zta/sis/zta/cno;->ik()Z
 
     move-result v0
 
@@ -546,7 +872,7 @@
     return-object p0
 
     :cond_2
-    sget-object v0, Lyou/zta/sis/zta/sis;->Yoa:Ljava/math/BigInteger;
+    sget-object v0, Lyou/zta/sis/zta/sis;->lra:Ljava/math/BigInteger;
 
     iget-object v2, p0, Lyou/zta/sis/zta/cno$tsu;->q:Ljava/math/BigInteger;
 
@@ -738,332 +1064,6 @@
     :cond_8
     :goto_0
     return-object p0
-.end method
-
-.method protected bio(Ljava/math/BigInteger;Ljava/math/BigInteger;)Ljava/math/BigInteger;
-    .locals 0
-
-    invoke-virtual {p1, p2}, Ljava/math/BigInteger;->multiply(Ljava/math/BigInteger;)Ljava/math/BigInteger;
-
-    move-result-object p1
-
-    invoke-virtual {p0, p1}, Lyou/zta/sis/zta/cno$tsu;->gwm(Ljava/math/BigInteger;)Ljava/math/BigInteger;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method protected bvj(Ljava/math/BigInteger;)Ljava/math/BigInteger;
-    .locals 1
-
-    const/4 v0, 0x0
-
-    invoke-virtual {p1, v0}, Ljava/math/BigInteger;->testBit(I)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    iget-object p0, p0, Lyou/zta/sis/zta/cno$tsu;->q:Ljava/math/BigInteger;
-
-    invoke-virtual {p0, p1}, Ljava/math/BigInteger;->add(Ljava/math/BigInteger;)Ljava/math/BigInteger;
-
-    move-result-object p1
-
-    :cond_0
-    const/4 p0, 0x1
-
-    invoke-virtual {p1, p0}, Ljava/math/BigInteger;->shiftRight(I)Ljava/math/BigInteger;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public equals(Ljava/lang/Object;)Z
-    .locals 4
-
-    const/4 v0, 0x1
-
-    if-ne p1, p0, :cond_0
-
-    return v0
-
-    :cond_0
-    instance-of v1, p1, Lyou/zta/sis/zta/cno$tsu;
-
-    const/4 v2, 0x0
-
-    if-nez v1, :cond_1
-
-    return v2
-
-    :cond_1
-    check-cast p1, Lyou/zta/sis/zta/cno$tsu;
-
-    iget-object v1, p0, Lyou/zta/sis/zta/cno$tsu;->q:Ljava/math/BigInteger;
-
-    iget-object v3, p1, Lyou/zta/sis/zta/cno$tsu;->q:Ljava/math/BigInteger;
-
-    invoke-virtual {v1, v3}, Ljava/math/BigInteger;->equals(Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-eqz v1, :cond_2
-
-    iget-object p0, p0, Lyou/zta/sis/zta/cno$tsu;->x:Ljava/math/BigInteger;
-
-    iget-object p1, p1, Lyou/zta/sis/zta/cno$tsu;->x:Ljava/math/BigInteger;
-
-    invoke-virtual {p0, p1}, Ljava/math/BigInteger;->equals(Ljava/lang/Object;)Z
-
-    move-result p0
-
-    if-eqz p0, :cond_2
-
-    goto :goto_0
-
-    :cond_2
-    move v0, v2
-
-    :goto_0
-    return v0
-.end method
-
-.method public getFieldSize()I
-    .locals 0
-
-    iget-object p0, p0, Lyou/zta/sis/zta/cno$tsu;->q:Ljava/math/BigInteger;
-
-    invoke-virtual {p0}, Ljava/math/BigInteger;->bitLength()I
-
-    move-result p0
-
-    return p0
-.end method
-
-.method public getQ()Ljava/math/BigInteger;
-    .locals 0
-
-    iget-object p0, p0, Lyou/zta/sis/zta/cno$tsu;->q:Ljava/math/BigInteger;
-
-    return-object p0
-.end method
-
-.method protected gwm(Ljava/math/BigInteger;)Ljava/math/BigInteger;
-    .locals 5
-
-    iget-object v0, p0, Lyou/zta/sis/zta/cno$tsu;->r:Ljava/math/BigInteger;
-
-    if-eqz v0, :cond_5
-
-    invoke-virtual {p1}, Ljava/math/BigInteger;->signum()I
-
-    move-result v0
-
-    if-gez v0, :cond_0
-
-    const/4 v0, 0x1
-
-    goto :goto_0
-
-    :cond_0
-    const/4 v0, 0x0
-
-    :goto_0
-    if-eqz v0, :cond_1
-
-    invoke-virtual {p1}, Ljava/math/BigInteger;->abs()Ljava/math/BigInteger;
-
-    move-result-object p1
-
-    :cond_1
-    iget-object v1, p0, Lyou/zta/sis/zta/cno$tsu;->q:Ljava/math/BigInteger;
-
-    invoke-virtual {v1}, Ljava/math/BigInteger;->bitLength()I
-
-    move-result v1
-
-    iget-object v2, p0, Lyou/zta/sis/zta/cno$tsu;->r:Ljava/math/BigInteger;
-
-    sget-object v3, Lyou/zta/sis/zta/sis;->ONE:Ljava/math/BigInteger;
-
-    invoke-virtual {v2, v3}, Ljava/math/BigInteger;->equals(Ljava/lang/Object;)Z
-
-    move-result v2
-
-    :goto_1
-    invoke-virtual {p1}, Ljava/math/BigInteger;->bitLength()I
-
-    move-result v3
-
-    add-int/lit8 v4, v1, 0x1
-
-    if-le v3, v4, :cond_3
-
-    invoke-virtual {p1, v1}, Ljava/math/BigInteger;->shiftRight(I)Ljava/math/BigInteger;
-
-    move-result-object v3
-
-    invoke-virtual {v3, v1}, Ljava/math/BigInteger;->shiftLeft(I)Ljava/math/BigInteger;
-
-    move-result-object v4
-
-    invoke-virtual {p1, v4}, Ljava/math/BigInteger;->subtract(Ljava/math/BigInteger;)Ljava/math/BigInteger;
-
-    move-result-object p1
-
-    if-nez v2, :cond_2
-
-    iget-object v4, p0, Lyou/zta/sis/zta/cno$tsu;->r:Ljava/math/BigInteger;
-
-    invoke-virtual {v3, v4}, Ljava/math/BigInteger;->multiply(Ljava/math/BigInteger;)Ljava/math/BigInteger;
-
-    move-result-object v3
-
-    :cond_2
-    invoke-virtual {v3, p1}, Ljava/math/BigInteger;->add(Ljava/math/BigInteger;)Ljava/math/BigInteger;
-
-    move-result-object p1
-
-    goto :goto_1
-
-    :cond_3
-    :goto_2
-    iget-object v1, p0, Lyou/zta/sis/zta/cno$tsu;->q:Ljava/math/BigInteger;
-
-    invoke-virtual {p1, v1}, Ljava/math/BigInteger;->compareTo(Ljava/math/BigInteger;)I
-
-    move-result v1
-
-    if-ltz v1, :cond_4
-
-    iget-object v1, p0, Lyou/zta/sis/zta/cno$tsu;->q:Ljava/math/BigInteger;
-
-    invoke-virtual {p1, v1}, Ljava/math/BigInteger;->subtract(Ljava/math/BigInteger;)Ljava/math/BigInteger;
-
-    move-result-object p1
-
-    goto :goto_2
-
-    :cond_4
-    if-eqz v0, :cond_6
-
-    invoke-virtual {p1}, Ljava/math/BigInteger;->signum()I
-
-    move-result v0
-
-    if-eqz v0, :cond_6
-
-    iget-object p0, p0, Lyou/zta/sis/zta/cno$tsu;->q:Ljava/math/BigInteger;
-
-    invoke-virtual {p0, p1}, Ljava/math/BigInteger;->subtract(Ljava/math/BigInteger;)Ljava/math/BigInteger;
-
-    move-result-object p1
-
-    goto :goto_3
-
-    :cond_5
-    iget-object p0, p0, Lyou/zta/sis/zta/cno$tsu;->q:Ljava/math/BigInteger;
-
-    invoke-virtual {p1, p0}, Ljava/math/BigInteger;->mod(Ljava/math/BigInteger;)Ljava/math/BigInteger;
-
-    move-result-object p1
-
-    :cond_6
-    :goto_3
-    return-object p1
-.end method
-
-.method public hashCode()I
-    .locals 1
-
-    iget-object v0, p0, Lyou/zta/sis/zta/cno$tsu;->q:Ljava/math/BigInteger;
-
-    invoke-virtual {v0}, Ljava/math/BigInteger;->hashCode()I
-
-    move-result v0
-
-    iget-object p0, p0, Lyou/zta/sis/zta/cno$tsu;->x:Ljava/math/BigInteger;
-
-    invoke-virtual {p0}, Ljava/math/BigInteger;->hashCode()I
-
-    move-result p0
-
-    xor-int/2addr p0, v0
-
-    return p0
-.end method
-
-.method protected ibl(Ljava/math/BigInteger;)Ljava/math/BigInteger;
-    .locals 1
-
-    const/4 v0, 0x0
-
-    invoke-virtual {p1, v0}, Ljava/math/BigInteger;->testBit(I)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    iget-object p0, p0, Lyou/zta/sis/zta/cno$tsu;->q:Ljava/math/BigInteger;
-
-    invoke-virtual {p0, p1}, Ljava/math/BigInteger;->subtract(Ljava/math/BigInteger;)Ljava/math/BigInteger;
-
-    move-result-object p1
-
-    :cond_0
-    const/4 p0, 0x1
-
-    invoke-virtual {p1, p0}, Ljava/math/BigInteger;->shiftRight(I)Ljava/math/BigInteger;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method protected igw(Ljava/math/BigInteger;Ljava/math/BigInteger;)Ljava/math/BigInteger;
-    .locals 0
-
-    invoke-virtual {p1, p2}, Ljava/math/BigInteger;->subtract(Ljava/math/BigInteger;)Ljava/math/BigInteger;
-
-    move-result-object p1
-
-    invoke-virtual {p1}, Ljava/math/BigInteger;->signum()I
-
-    move-result p2
-
-    if-gez p2, :cond_0
-
-    iget-object p0, p0, Lyou/zta/sis/zta/cno$tsu;->q:Ljava/math/BigInteger;
-
-    invoke-virtual {p1, p0}, Ljava/math/BigInteger;->add(Ljava/math/BigInteger;)Ljava/math/BigInteger;
-
-    move-result-object p1
-
-    :cond_0
-    return-object p1
-.end method
-
-.method public invert()Lyou/zta/sis/zta/cno;
-    .locals 4
-
-    new-instance v0, Lyou/zta/sis/zta/cno$tsu;
-
-    iget-object v1, p0, Lyou/zta/sis/zta/cno$tsu;->q:Ljava/math/BigInteger;
-
-    iget-object v2, p0, Lyou/zta/sis/zta/cno$tsu;->r:Ljava/math/BigInteger;
-
-    iget-object v3, p0, Lyou/zta/sis/zta/cno$tsu;->x:Ljava/math/BigInteger;
-
-    invoke-virtual {p0, v3}, Lyou/zta/sis/zta/cno$tsu;->modInverse(Ljava/math/BigInteger;)Ljava/math/BigInteger;
-
-    move-result-object p0
-
-    invoke-direct {v0, v1, v2, p0}, Lyou/zta/sis/zta/cno$tsu;-><init>(Ljava/math/BigInteger;Ljava/math/BigInteger;Ljava/math/BigInteger;)V
-
-    return-object v0
 .end method
 
 .method protected kth(Ljava/math/BigInteger;Ljava/math/BigInteger;)Ljava/math/BigInteger;

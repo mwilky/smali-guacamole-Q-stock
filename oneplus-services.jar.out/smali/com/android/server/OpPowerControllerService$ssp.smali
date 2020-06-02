@@ -15,9 +15,9 @@
 
 
 # instance fields
-.field private final gf:[[D
+.field private final Bf:[[D
 
-.field private final hf:[Lcom/android/server/OpPowerControllerService$zta;
+.field private final Cf:[Lcom/android/server/OpPowerControllerService$zta;
 
 .field final synthetic this$0:Lcom/android/server/OpPowerControllerService;
 
@@ -48,7 +48,7 @@
 
     check-cast p1, [[D
 
-    iput-object p1, p0, Lcom/android/server/OpPowerControllerService$ssp;->gf:[[D
+    iput-object p1, p0, Lcom/android/server/OpPowerControllerService$ssp;->Bf:[[D
 
     invoke-static {}, Lcom/android/server/OpPowerControllerService;->access$2400()I
 
@@ -56,12 +56,12 @@
 
     new-array p1, p1, [Lcom/android/server/OpPowerControllerService$zta;
 
-    iput-object p1, p0, Lcom/android/server/OpPowerControllerService$ssp;->hf:[Lcom/android/server/OpPowerControllerService$zta;
+    iput-object p1, p0, Lcom/android/server/OpPowerControllerService$ssp;->Cf:[Lcom/android/server/OpPowerControllerService$zta;
 
     return-void
 .end method
 
-.method private Al()V
+.method private Ll()V
     .locals 6
 
     const/4 v0, 0x0
@@ -82,7 +82,7 @@
 
     if-ge v2, v3, :cond_0
 
-    iget-object v3, p0, Lcom/android/server/OpPowerControllerService$ssp;->gf:[[D
+    iget-object v3, p0, Lcom/android/server/OpPowerControllerService$ssp;->Bf:[[D
 
     aget-object v3, v3, v1
 
@@ -103,7 +103,7 @@
     return-void
 .end method
 
-.method private ab(Ljava/lang/String;)Z
+.method private cb(Ljava/lang/String;)Z
     .locals 1
 
     :try_start_0
@@ -481,7 +481,7 @@
     move v5, v4
 
     :goto_0
-    iget-object v6, v0, Lcom/android/server/OpPowerControllerService$ssp;->hf:[Lcom/android/server/OpPowerControllerService$zta;
+    iget-object v6, v0, Lcom/android/server/OpPowerControllerService$ssp;->Cf:[Lcom/android/server/OpPowerControllerService$zta;
 
     array-length v7, v6
 
@@ -572,7 +572,7 @@
     :goto_2
     if-ge v7, v2, :cond_3
 
-    iget-object v8, v0, Lcom/android/server/OpPowerControllerService$ssp;->gf:[[D
+    iget-object v8, v0, Lcom/android/server/OpPowerControllerService$ssp;->Bf:[[D
 
     aget-object v8, v8, v6
 
@@ -612,7 +612,7 @@
 
     invoke-static {v7, v6}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    iget-object v5, v0, Lcom/android/server/OpPowerControllerService$ssp;->gf:[[D
+    iget-object v5, v0, Lcom/android/server/OpPowerControllerService$ssp;->Bf:[[D
 
     invoke-direct {v0, v5}, Lcom/android/server/OpPowerControllerService$ssp;->you([[D)V
 
@@ -622,7 +622,7 @@
     :goto_3
     if-ge v5, v1, :cond_7
 
-    iget-object v8, v0, Lcom/android/server/OpPowerControllerService$ssp;->gf:[[D
+    iget-object v8, v0, Lcom/android/server/OpPowerControllerService$ssp;->Bf:[[D
 
     aget-object v9, p1, v5
 
@@ -635,7 +635,7 @@
     :goto_4
     if-ge v9, v2, :cond_6
 
-    iget-object v10, v0, Lcom/android/server/OpPowerControllerService$ssp;->hf:[Lcom/android/server/OpPowerControllerService$zta;
+    iget-object v10, v0, Lcom/android/server/OpPowerControllerService$ssp;->Cf:[Lcom/android/server/OpPowerControllerService$zta;
 
     aget-object v10, v10, v8
 
@@ -660,7 +660,7 @@
     goto :goto_4
 
     :cond_6
-    iget-object v9, v0, Lcom/android/server/OpPowerControllerService$ssp;->hf:[Lcom/android/server/OpPowerControllerService$zta;
+    iget-object v9, v0, Lcom/android/server/OpPowerControllerService$ssp;->Cf:[Lcom/android/server/OpPowerControllerService$zta;
 
     aget-object v10, v9, v8
 
@@ -681,9 +681,9 @@
     :cond_7
     const-wide/high16 v8, -0x4010000000000000L    # -1.0
 
-    iget-object v5, v0, Lcom/android/server/OpPowerControllerService$ssp;->hf:[Lcom/android/server/OpPowerControllerService$zta;
+    iget-object v5, v0, Lcom/android/server/OpPowerControllerService$ssp;->Cf:[Lcom/android/server/OpPowerControllerService$zta;
 
-    iget-object v10, v0, Lcom/android/server/OpPowerControllerService$ssp;->gf:[[D
+    iget-object v10, v0, Lcom/android/server/OpPowerControllerService$ssp;->Bf:[[D
 
     invoke-direct {v0, v5, v10}, Lcom/android/server/OpPowerControllerService$ssp;->zta([Lcom/android/server/OpPowerControllerService$zta;[[D)D
 
@@ -768,9 +768,9 @@
     :goto_6
     if-ge v10, v3, :cond_b
 
-    iget-object v11, v0, Lcom/android/server/OpPowerControllerService$ssp;->gf:[[D
+    iget-object v11, v0, Lcom/android/server/OpPowerControllerService$ssp;->Bf:[[D
 
-    iget-object v12, v0, Lcom/android/server/OpPowerControllerService$ssp;->hf:[Lcom/android/server/OpPowerControllerService$zta;
+    iget-object v12, v0, Lcom/android/server/OpPowerControllerService$ssp;->Cf:[Lcom/android/server/OpPowerControllerService$zta;
 
     aget-object v12, v12, v10
 
@@ -793,14 +793,14 @@
 
     invoke-static {v7, v6}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    iget-object v10, v0, Lcom/android/server/OpPowerControllerService$ssp;->gf:[[D
+    iget-object v10, v0, Lcom/android/server/OpPowerControllerService$ssp;->Bf:[[D
 
     invoke-direct {v0, v10}, Lcom/android/server/OpPowerControllerService$ssp;->you([[D)V
 
     :cond_c
-    iget-object v10, v0, Lcom/android/server/OpPowerControllerService$ssp;->hf:[Lcom/android/server/OpPowerControllerService$zta;
+    iget-object v10, v0, Lcom/android/server/OpPowerControllerService$ssp;->Cf:[Lcom/android/server/OpPowerControllerService$zta;
 
-    iget-object v11, v0, Lcom/android/server/OpPowerControllerService$ssp;->gf:[[D
+    iget-object v11, v0, Lcom/android/server/OpPowerControllerService$ssp;->Bf:[[D
 
     invoke-direct {v0, v10, v11}, Lcom/android/server/OpPowerControllerService$ssp;->zta([Lcom/android/server/OpPowerControllerService$zta;[[D)D
 
@@ -809,7 +809,7 @@
     move v12, v4
 
     :goto_7
-    iget-object v13, v0, Lcom/android/server/OpPowerControllerService$ssp;->hf:[Lcom/android/server/OpPowerControllerService$zta;
+    iget-object v13, v0, Lcom/android/server/OpPowerControllerService$ssp;->Cf:[Lcom/android/server/OpPowerControllerService$zta;
 
     array-length v14, v13
 
@@ -829,7 +829,7 @@
     :goto_8
     if-ge v12, v1, :cond_f
 
-    iget-object v13, v0, Lcom/android/server/OpPowerControllerService$ssp;->gf:[[D
+    iget-object v13, v0, Lcom/android/server/OpPowerControllerService$ssp;->Bf:[[D
 
     aget-object v14, p1, v12
 
@@ -842,7 +842,7 @@
     :goto_9
     if-ge v14, v2, :cond_e
 
-    iget-object v15, v0, Lcom/android/server/OpPowerControllerService$ssp;->hf:[Lcom/android/server/OpPowerControllerService$zta;
+    iget-object v15, v0, Lcom/android/server/OpPowerControllerService$ssp;->Cf:[Lcom/android/server/OpPowerControllerService$zta;
 
     aget-object v15, v15, v13
 
@@ -867,7 +867,7 @@
     goto :goto_9
 
     :cond_e
-    iget-object v14, v0, Lcom/android/server/OpPowerControllerService$ssp;->hf:[Lcom/android/server/OpPowerControllerService$zta;
+    iget-object v14, v0, Lcom/android/server/OpPowerControllerService$ssp;->Cf:[Lcom/android/server/OpPowerControllerService$zta;
 
     aget-object v15, v14, v13
 
@@ -944,7 +944,7 @@
 
     invoke-static {v7, v1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    iget-object v1, v0, Lcom/android/server/OpPowerControllerService$ssp;->hf:[Lcom/android/server/OpPowerControllerService$zta;
+    iget-object v1, v0, Lcom/android/server/OpPowerControllerService$ssp;->Cf:[Lcom/android/server/OpPowerControllerService$zta;
 
     aget-object v1, v1, v4
 
@@ -1049,7 +1049,7 @@
     goto :goto_1
 
     :cond_1
-    iget-object v2, p0, Lcom/android/server/OpPowerControllerService$ssp;->hf:[Lcom/android/server/OpPowerControllerService$zta;
+    iget-object v2, p0, Lcom/android/server/OpPowerControllerService$ssp;->Cf:[Lcom/android/server/OpPowerControllerService$zta;
 
     aget-object v2, v2, p1
 
@@ -1062,7 +1062,7 @@
     return-wide v0
 
     :cond_2
-    iget-object p0, p0, Lcom/android/server/OpPowerControllerService$ssp;->hf:[Lcom/android/server/OpPowerControllerService$zta;
+    iget-object p0, p0, Lcom/android/server/OpPowerControllerService$ssp;->Cf:[Lcom/android/server/OpPowerControllerService$zta;
 
     aget-object p0, p0, p1
 
@@ -1111,7 +1111,7 @@
     goto :goto_0
 
     :cond_0
-    iget-object p0, p0, Lcom/android/server/OpPowerControllerService$ssp;->gf:[[D
+    iget-object p0, p0, Lcom/android/server/OpPowerControllerService$ssp;->Bf:[[D
 
     aget-object p0, p0, p1
 
@@ -1177,7 +1177,7 @@
     goto :goto_0
 
     :cond_0
-    iget-object p0, p0, Lcom/android/server/OpPowerControllerService$ssp;->hf:[Lcom/android/server/OpPowerControllerService$zta;
+    iget-object p0, p0, Lcom/android/server/OpPowerControllerService$ssp;->Cf:[Lcom/android/server/OpPowerControllerService$zta;
 
     aget-object v1, p0, p1
 
@@ -1221,7 +1221,7 @@
     goto :goto_1
 
     :cond_1
-    iget-object v2, p0, Lcom/android/server/OpPowerControllerService$ssp;->hf:[Lcom/android/server/OpPowerControllerService$zta;
+    iget-object v2, p0, Lcom/android/server/OpPowerControllerService$ssp;->Cf:[Lcom/android/server/OpPowerControllerService$zta;
 
     aget-object v2, v2, p1
 
@@ -1234,7 +1234,7 @@
     return-wide v0
 
     :cond_2
-    iget-object v0, p0, Lcom/android/server/OpPowerControllerService$ssp;->hf:[Lcom/android/server/OpPowerControllerService$zta;
+    iget-object v0, p0, Lcom/android/server/OpPowerControllerService$ssp;->Cf:[Lcom/android/server/OpPowerControllerService$zta;
 
     aget-object v0, v0, p1
 
@@ -1297,7 +1297,7 @@
     goto :goto_0
 
     :cond_0
-    iget-object p0, p0, Lcom/android/server/OpPowerControllerService$ssp;->gf:[[D
+    iget-object p0, p0, Lcom/android/server/OpPowerControllerService$ssp;->Bf:[[D
 
     aget-object p0, p0, p1
 

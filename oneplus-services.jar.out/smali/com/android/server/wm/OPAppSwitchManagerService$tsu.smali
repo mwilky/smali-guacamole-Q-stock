@@ -98,7 +98,7 @@
 .end method
 
 .method public update(Landroid/net/Uri;)V
-    .locals 3
+    .locals 5
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -131,38 +131,110 @@
     if-eqz p1, :cond_2
 
     :cond_0
-    iget-object p0, p0, Lcom/android/server/wm/OPAppSwitchManagerService$tsu;->this$0:Lcom/android/server/wm/OPAppSwitchManagerService;
+    iget-object p1, p0, Lcom/android/server/wm/OPAppSwitchManagerService$tsu;->this$0:Lcom/android/server/wm/OPAppSwitchManagerService;
 
-    invoke-static {p0}, Lcom/android/server/wm/OPAppSwitchManagerService;->access$300(Lcom/android/server/wm/OPAppSwitchManagerService;)Landroid/content/Context;
+    invoke-static {p1}, Lcom/android/server/wm/OPAppSwitchManagerService;->access$300(Lcom/android/server/wm/OPAppSwitchManagerService;)Landroid/content/Context;
 
-    move-result-object p1
+    move-result-object v0
 
-    invoke-virtual {p1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {v0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
-    move-result-object p1
+    move-result-object v0
 
-    const/4 v0, -0x2
+    const/4 v2, -0x2
 
-    const/4 v1, 0x0
+    const/4 v3, 0x0
 
-    const-string v2, "oem_splash_ads_enable"
+    const-string v4, "oem_splash_ads_enable"
 
-    invoke-static {p1, v2, v1, v0}, Landroid/provider/Settings$System;->getIntForUser(Landroid/content/ContentResolver;Ljava/lang/String;II)I
+    invoke-static {v0, v4, v3, v2}, Landroid/provider/Settings$System;->getIntForUser(Landroid/content/ContentResolver;Ljava/lang/String;II)I
 
-    move-result p1
+    move-result v0
 
-    const/4 v0, 0x1
+    const/4 v2, 0x1
 
-    if-ne p1, v0, :cond_1
+    if-ne v0, v2, :cond_1
 
     goto :goto_0
 
     :cond_1
-    move v0, v1
+    move v2, v3
 
     :goto_0
-    invoke-static {p0, v0}, Lcom/android/server/wm/OPAppSwitchManagerService;->access$502(Lcom/android/server/wm/OPAppSwitchManagerService;Z)Z
+    invoke-static {p1, v2}, Lcom/android/server/wm/OPAppSwitchManagerService;->access$502(Lcom/android/server/wm/OPAppSwitchManagerService;Z)Z
 
     :cond_2
+    invoke-static {}, Lnet/oneplus/odm/OpDeviceManagerInjector;->getInstance()Lnet/oneplus/odm/OpDeviceManagerInjector;
+
+    move-result-object p1
+
+    invoke-static {p1}, Lcom/android/server/wm/OPAppSwitchManagerService;->access$602(Lnet/oneplus/odm/OpDeviceManagerInjector;)Lnet/oneplus/odm/OpDeviceManagerInjector;
+
+    new-instance p1, Ljava/util/HashMap;
+
+    invoke-direct {p1}, Ljava/util/HashMap;-><init>()V
+
+    const-string v0, "appid"
+
+    const-string v2, "7554P2RV0X"
+
+    invoke-virtual {p1, v0, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    new-instance v0, Ljava/util/HashMap;
+
+    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
+
+    iget-object v2, p0, Lcom/android/server/wm/OPAppSwitchManagerService$tsu;->this$0:Lcom/android/server/wm/OPAppSwitchManagerService;
+
+    invoke-static {v2}, Lcom/android/server/wm/OPAppSwitchManagerService;->access$500(Lcom/android/server/wm/OPAppSwitchManagerService;)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_3
+
+    const-string v2, "1"
+
+    goto :goto_1
+
+    :cond_3
+    const-string v2, "0"
+
+    :goto_1
+    const-string v3, "status"
+
+    invoke-virtual {v0, v3, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    invoke-static {}, Lcom/android/server/wm/OPAppSwitchManagerService;->access$600()Lnet/oneplus/odm/OpDeviceManagerInjector;
+
+    move-result-object v2
+
+    if-eqz v2, :cond_5
+
+    invoke-static {}, Lcom/android/server/wm/OPAppSwitchManagerService;->access$000()Z
+
+    move-result v2
+
+    if-eqz v2, :cond_4
+
+    const-string v2, "COMMIT_TO_MDM"
+
+    invoke-static {v1, v2}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    :cond_4
+    invoke-static {}, Lcom/android/server/wm/OPAppSwitchManagerService;->access$600()Lnet/oneplus/odm/OpDeviceManagerInjector;
+
+    move-result-object v1
+
+    iget-object p0, p0, Lcom/android/server/wm/OPAppSwitchManagerService$tsu;->this$0:Lcom/android/server/wm/OPAppSwitchManagerService;
+
+    invoke-static {p0}, Lcom/android/server/wm/OPAppSwitchManagerService;->access$300(Lcom/android/server/wm/OPAppSwitchManagerService;)Landroid/content/Context;
+
+    move-result-object p0
+
+    const-string v2, "splash_switch"
+
+    invoke-virtual {v1, p0, v2, v0, p1}, Lnet/oneplus/odm/OpDeviceManagerInjector;->preserveOsData(Landroid/content/Context;Ljava/lang/String;Ljava/util/Map;Ljava/util/Map;)V
+
+    :cond_5
     return-void
 .end method

@@ -10,12 +10,6 @@
 
 
 # instance fields
-.field private Wh:Ljava/lang/reflect/Method;
-
-.field private Xh:Ljava/lang/reflect/Method;
-
-.field private Yh:Ljava/lang/reflect/Method;
-
 .field private mAms:Lcom/android/server/am/ActivityManagerService;
 
 .field private mAtmService:Lcom/android/server/wm/ActivityTaskManagerService;
@@ -28,6 +22,12 @@
 
 .field private mProcessList:Lcom/android/server/am/ProcessList;
 
+.field private ui:Ljava/lang/reflect/Method;
+
+.field private vi:Ljava/lang/reflect/Method;
+
+.field private wi:Ljava/lang/reflect/Method;
+
 
 # direct methods
 .method constructor <init>(Lcom/android/server/am/oif;Lcom/android/server/am/ActivityManagerService;Lcom/android/server/am/ProcessList;Lcom/android/server/wm/ActivityTaskManagerService;Lcom/android/internal/os/ProcessCpuTracker;)V
@@ -37,11 +37,11 @@
 
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/android/server/am/dma;->Wh:Ljava/lang/reflect/Method;
+    iput-object v0, p0, Lcom/android/server/am/dma;->ui:Ljava/lang/reflect/Method;
 
-    iput-object v0, p0, Lcom/android/server/am/dma;->Xh:Ljava/lang/reflect/Method;
+    iput-object v0, p0, Lcom/android/server/am/dma;->vi:Ljava/lang/reflect/Method;
 
-    iput-object v0, p0, Lcom/android/server/am/dma;->Yh:Ljava/lang/reflect/Method;
+    iput-object v0, p0, Lcom/android/server/am/dma;->wi:Ljava/lang/reflect/Method;
 
     iput-object p1, p0, Lcom/android/server/am/dma;->mEmbryoManager:Lcom/android/server/am/oif;
 
@@ -68,7 +68,7 @@
 
 
 # virtual methods
-.method public Ga()Lcom/android/server/am/ActivityManagerService;
+.method public Ha()Lcom/android/server/am/ActivityManagerService;
     .locals 0
 
     iget-object p0, p0, Lcom/android/server/am/dma;->mAms:Lcom/android/server/am/ActivityManagerService;
@@ -76,7 +76,7 @@
     return-object p0
 .end method
 
-.method Ha()Z
+.method Ia()Z
     .locals 7
 
     const-string v0, "EmbryoHelper"
@@ -110,9 +110,9 @@
 
     move-result-object v2
 
-    iput-object v2, p0, Lcom/android/server/am/dma;->Wh:Ljava/lang/reflect/Method;
+    iput-object v2, p0, Lcom/android/server/am/dma;->ui:Ljava/lang/reflect/Method;
 
-    iget-object v2, p0, Lcom/android/server/am/dma;->Wh:Ljava/lang/reflect/Method;
+    iget-object v2, p0, Lcom/android/server/am/dma;->ui:Ljava/lang/reflect/Method;
 
     if-nez v2, :cond_0
 
@@ -123,7 +123,7 @@
     return v1
 
     :cond_0
-    iget-object v2, p0, Lcom/android/server/am/dma;->Wh:Ljava/lang/reflect/Method;
+    iget-object v2, p0, Lcom/android/server/am/dma;->ui:Ljava/lang/reflect/Method;
 
     invoke-virtual {v2, v6}, Ljava/lang/reflect/Method;->setAccessible(Z)V
 
@@ -145,9 +145,9 @@
 
     move-result-object v2
 
-    iput-object v2, p0, Lcom/android/server/am/dma;->Xh:Ljava/lang/reflect/Method;
+    iput-object v2, p0, Lcom/android/server/am/dma;->vi:Ljava/lang/reflect/Method;
 
-    iget-object v2, p0, Lcom/android/server/am/dma;->Xh:Ljava/lang/reflect/Method;
+    iget-object v2, p0, Lcom/android/server/am/dma;->vi:Ljava/lang/reflect/Method;
 
     if-nez v2, :cond_1
 
@@ -158,7 +158,7 @@
     return v1
 
     :cond_1
-    iget-object v2, p0, Lcom/android/server/am/dma;->Xh:Ljava/lang/reflect/Method;
+    iget-object v2, p0, Lcom/android/server/am/dma;->vi:Ljava/lang/reflect/Method;
 
     invoke-virtual {v2, v6}, Ljava/lang/reflect/Method;->setAccessible(Z)V
 
@@ -180,9 +180,9 @@
 
     move-result-object v2
 
-    iput-object v2, p0, Lcom/android/server/am/dma;->Yh:Ljava/lang/reflect/Method;
+    iput-object v2, p0, Lcom/android/server/am/dma;->wi:Ljava/lang/reflect/Method;
 
-    iget-object v2, p0, Lcom/android/server/am/dma;->Yh:Ljava/lang/reflect/Method;
+    iget-object v2, p0, Lcom/android/server/am/dma;->wi:Ljava/lang/reflect/Method;
 
     if-nez v2, :cond_2
 
@@ -193,7 +193,7 @@
     return v1
 
     :cond_2
-    iget-object p0, p0, Lcom/android/server/am/dma;->Yh:Ljava/lang/reflect/Method;
+    iget-object p0, p0, Lcom/android/server/am/dma;->wi:Ljava/lang/reflect/Method;
 
     invoke-virtual {p0, v6}, Ljava/lang/reflect/Method;->setAccessible(Z)V
     :try_end_0
@@ -211,7 +211,7 @@
     return v1
 .end method
 
-.method public Ia()Z
+.method public Ja()Z
     .locals 0
 
     iget-object p0, p0, Lcom/android/server/am/dma;->mAms:Lcom/android/server/am/ActivityManagerService;
@@ -234,7 +234,7 @@
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
     :try_start_1
-    iget-object v1, p0, Lcom/android/server/am/dma;->Yh:Ljava/lang/reflect/Method;
+    iget-object v1, p0, Lcom/android/server/am/dma;->wi:Ljava/lang/reflect/Method;
 
     iget-object p0, p0, Lcom/android/server/am/dma;->mAtmService:Lcom/android/server/wm/ActivityTaskManagerService;
 
@@ -520,7 +520,7 @@
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
     :try_start_1
-    iget-object v1, p0, Lcom/android/server/am/dma;->Xh:Ljava/lang/reflect/Method;
+    iget-object v1, p0, Lcom/android/server/am/dma;->vi:Ljava/lang/reflect/Method;
 
     iget-object p0, p0, Lcom/android/server/am/dma;->mAms:Lcom/android/server/am/ActivityManagerService;
 
@@ -606,7 +606,102 @@
     throw p0
 .end method
 
-.method public irq(Ljava/lang/String;)Z
+.method public isPackageAvailable(Ljava/lang/String;I)Z
+    .locals 3
+
+    iget-object v0, p0, Lcom/android/server/am/dma;->mPms:Landroid/content/pm/IPackageManager;
+
+    if-nez v0, :cond_0
+
+    invoke-static {}, Landroid/app/AppGlobals;->getPackageManager()Landroid/content/pm/IPackageManager;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lcom/android/server/am/dma;->mPms:Landroid/content/pm/IPackageManager;
+
+    :cond_0
+    iget-object p0, p0, Lcom/android/server/am/dma;->mPms:Landroid/content/pm/IPackageManager;
+
+    const/4 v0, 0x0
+
+    const-string v1, "EmbryoHelper"
+
+    if-nez p0, :cond_1
+
+    const-string p0, "PM not ready."
+
+    invoke-static {v1, p0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    return v0
+
+    :cond_1
+    :try_start_0
+    invoke-interface {p0, p1, p2}, Landroid/content/pm/IPackageManager;->isPackageAvailable(Ljava/lang/String;I)Z
+
+    move-result p0
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    return p0
+
+    :catch_0
+    move-exception p0
+
+    new-instance p2, Ljava/lang/StringBuilder;
+
+    invoke-direct {p2}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v2, "isPackageAvailable failed. "
+
+    invoke-virtual {p2, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-static {v1, p1, p0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
+
+    return v0
+.end method
+
+.method public sis(Landroid/content/pm/ApplicationInfo;)Z
+    .locals 0
+
+    iget p0, p1, Landroid/content/pm/ApplicationInfo;->uid:I
+
+    invoke-static {p0}, Landroid/os/UserHandle;->getUserId(I)I
+
+    move-result p0
+
+    if-eqz p0, :cond_1
+
+    iget p0, p1, Landroid/content/pm/ApplicationInfo;->uid:I
+
+    invoke-static {p0}, Landroid/os/UserHandle;->getUserId(I)I
+
+    move-result p0
+
+    const/16 p1, 0x3e7
+
+    if-ne p0, p1, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    const/4 p0, 0x0
+
+    return p0
+
+    :cond_1
+    :goto_0
+    const/4 p0, 0x1
+
+    return p0
+.end method
+
+.method public vdw(Ljava/lang/String;)Z
     .locals 5
 
     iget-object v0, p0, Lcom/android/server/am/dma;->mPms:Landroid/content/pm/IPackageManager;
@@ -712,101 +807,6 @@
     return v2
 .end method
 
-.method public isPackageAvailable(Ljava/lang/String;I)Z
-    .locals 3
-
-    iget-object v0, p0, Lcom/android/server/am/dma;->mPms:Landroid/content/pm/IPackageManager;
-
-    if-nez v0, :cond_0
-
-    invoke-static {}, Landroid/app/AppGlobals;->getPackageManager()Landroid/content/pm/IPackageManager;
-
-    move-result-object v0
-
-    iput-object v0, p0, Lcom/android/server/am/dma;->mPms:Landroid/content/pm/IPackageManager;
-
-    :cond_0
-    iget-object p0, p0, Lcom/android/server/am/dma;->mPms:Landroid/content/pm/IPackageManager;
-
-    const/4 v0, 0x0
-
-    const-string v1, "EmbryoHelper"
-
-    if-nez p0, :cond_1
-
-    const-string p0, "PM not ready."
-
-    invoke-static {v1, p0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    return v0
-
-    :cond_1
-    :try_start_0
-    invoke-interface {p0, p1, p2}, Landroid/content/pm/IPackageManager;->isPackageAvailable(Ljava/lang/String;I)Z
-
-    move-result p0
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
-
-    return p0
-
-    :catch_0
-    move-exception p0
-
-    new-instance p2, Ljava/lang/StringBuilder;
-
-    invoke-direct {p2}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v2, "isPackageAvailable failed. "
-
-    invoke-virtual {p2, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p1
-
-    invoke-static {v1, p1, p0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
-
-    return v0
-.end method
-
-.method public sis(Landroid/content/pm/ApplicationInfo;)Z
-    .locals 0
-
-    iget p0, p1, Landroid/content/pm/ApplicationInfo;->uid:I
-
-    invoke-static {p0}, Landroid/os/UserHandle;->getUserId(I)I
-
-    move-result p0
-
-    if-eqz p0, :cond_1
-
-    iget p0, p1, Landroid/content/pm/ApplicationInfo;->uid:I
-
-    invoke-static {p0}, Landroid/os/UserHandle;->getUserId(I)I
-
-    move-result p0
-
-    const/16 p1, 0x3e7
-
-    if-ne p0, p1, :cond_0
-
-    goto :goto_0
-
-    :cond_0
-    const/4 p0, 0x0
-
-    return p0
-
-    :cond_1
-    :goto_0
-    const/4 p0, 0x1
-
-    return p0
-.end method
-
 .method public you(Landroid/content/pm/ApplicationInfo;)Z
     .locals 3
 
@@ -868,7 +868,7 @@
 
     invoke-direct {v1, p2, p3}, Lcom/android/server/am/HostingRecord;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
-    iget-object p2, p0, Lcom/android/server/am/dma;->Wh:Ljava/lang/reflect/Method;
+    iget-object p2, p0, Lcom/android/server/am/dma;->ui:Ljava/lang/reflect/Method;
 
     iget-object p0, p0, Lcom/android/server/am/dma;->mProcessList:Lcom/android/server/am/ProcessList;
 
@@ -920,7 +920,7 @@
 
     iget-object p1, p1, Landroid/content/pm/ApplicationInfo;->packageName:Ljava/lang/String;
 
-    invoke-virtual {p0, p1}, Lcom/android/server/am/dma;->irq(Ljava/lang/String;)Z
+    invoke-virtual {p0, p1}, Lcom/android/server/am/dma;->vdw(Ljava/lang/String;)Z
 
     move-result p0
 

@@ -4,7 +4,7 @@
 
 
 # static fields
-.field private static XFa:[C
+.field private static kIa:[C
 
 
 # instance fields
@@ -21,7 +21,7 @@
 
     fill-array-data v0, :array_0
 
-    sput-object v0, Lorg/bouncycastle/util/rtg;->XFa:[C
+    sput-object v0, Lorg/bouncycastle/util/rtg;->kIa:[C
 
     return-void
 
@@ -211,7 +211,7 @@
     invoke-virtual {v0, v2}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
 
     :cond_0
-    sget-object v2, Lorg/bouncycastle/util/rtg;->XFa:[C
+    sget-object v2, Lorg/bouncycastle/util/rtg;->kIa:[C
 
     iget-object v3, p0, Lorg/bouncycastle/util/rtg;->fingerprint:[B
 
@@ -225,7 +225,7 @@
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuffer;->append(C)Ljava/lang/StringBuffer;
 
-    sget-object v2, Lorg/bouncycastle/util/rtg;->XFa:[C
+    sget-object v2, Lorg/bouncycastle/util/rtg;->kIa:[C
 
     iget-object v3, p0, Lorg/bouncycastle/util/rtg;->fingerprint:[B
 

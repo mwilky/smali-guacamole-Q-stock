@@ -49,7 +49,7 @@
     throw p0
 .end method
 
-.method protected ta(Ljava/lang/String;)Z
+.method protected va(Ljava/lang/String;)Z
     .locals 0
 
     if-eqz p1, :cond_1

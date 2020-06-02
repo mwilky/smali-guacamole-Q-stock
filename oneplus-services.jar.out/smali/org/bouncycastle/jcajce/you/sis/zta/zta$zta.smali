@@ -35,7 +35,7 @@
         }
     .end annotation
 
-    iget-object v0, p0, Lorg/bouncycastle/jcajce/you/sis/zta/zta;->Lma:Ljava/util/Hashtable;
+    iget-object v0, p0, Lorg/bouncycastle/jcajce/you/sis/zta/zta;->_oa:Ljava/util/Hashtable;
 
     invoke-virtual {v0}, Ljava/util/Hashtable;->clear()V
 
@@ -164,7 +164,7 @@
     return-void
 
     :cond_4
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/you/sis/zta/zta;->Lma:Ljava/util/Hashtable;
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/you/sis/zta/zta;->_oa:Ljava/util/Hashtable;
 
     invoke-virtual {p0}, Ljava/util/Hashtable;->clear()V
 
@@ -207,7 +207,7 @@
 
     new-array v5, p1, [B
 
-    iget-object p1, p0, Lorg/bouncycastle/jcajce/you/sis/zta/zta;->xma:Ljava/security/SecureRandom;
+    iget-object p1, p0, Lorg/bouncycastle/jcajce/you/sis/zta/zta;->Moa:Ljava/security/SecureRandom;
 
     invoke-virtual {p1}, Ljava/security/SecureRandom;->nextInt()I
 
@@ -217,7 +217,7 @@
 
     add-int/lit16 v6, p1, 0x400
 
-    iget-object p1, p0, Lorg/bouncycastle/jcajce/you/sis/zta/zta;->xma:Ljava/security/SecureRandom;
+    iget-object p1, p0, Lorg/bouncycastle/jcajce/you/sis/zta/zta;->Moa:Ljava/security/SecureRandom;
 
     invoke-virtual {p1, v5}, Ljava/security/SecureRandom;->nextBytes([B)V
 
@@ -263,7 +263,7 @@
 
     invoke-virtual {p0, v0}, Lorg/bouncycastle/jcajce/you/sis/zta/zta;->zta(Ljava/io/OutputStream;)V
 
-    invoke-virtual {p1}, Lorg/bouncycastle/crypto/cno/you;->Kf()[B
+    invoke-virtual {p1}, Lorg/bouncycastle/crypto/cno/you;->Tf()[B
 
     move-result-object p0
 

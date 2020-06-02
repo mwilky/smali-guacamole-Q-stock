@@ -24,13 +24,13 @@
 # static fields
 .field private static final TAG:Ljava/lang/String; = "OnePlusFrontMonitor"
 
-.field public static final bd:Ljava/lang/String; = "SCREEN OFF"
+.field public static final cd:Ljava/lang/String; = "SCREEN OFF"
 
 .field private static sInstance:Lcom/android/server/OnePlusUtil$zta;
 
 
 # instance fields
-.field private _c:Ljava/util/ArrayList;
+.field private ad:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/ArrayList<",
@@ -40,7 +40,7 @@
     .end annotation
 .end field
 
-.field private ad:Ljava/util/ArrayList;
+.field private bd:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/ArrayList<",
@@ -87,40 +87,21 @@
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/android/server/OnePlusUtil$zta;->_c:Ljava/util/ArrayList;
+    iput-object v0, p0, Lcom/android/server/OnePlusUtil$zta;->ad:Ljava/util/ArrayList;
 
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/android/server/OnePlusUtil$zta;->ad:Ljava/util/ArrayList;
+    iput-object v0, p0, Lcom/android/server/OnePlusUtil$zta;->bd:Ljava/util/ArrayList;
 
     return-void
 .end method
 
-.method public static getInstance()Lcom/android/server/OnePlusUtil$zta;
-    .locals 1
-
-    sget-object v0, Lcom/android/server/OnePlusUtil$zta;->sInstance:Lcom/android/server/OnePlusUtil$zta;
-
-    if-nez v0, :cond_0
-
-    new-instance v0, Lcom/android/server/OnePlusUtil$zta;
-
-    invoke-direct {v0}, Lcom/android/server/OnePlusUtil$zta;-><init>()V
-
-    sput-object v0, Lcom/android/server/OnePlusUtil$zta;->sInstance:Lcom/android/server/OnePlusUtil$zta;
-
-    :cond_0
-    sget-object v0, Lcom/android/server/OnePlusUtil$zta;->sInstance:Lcom/android/server/OnePlusUtil$zta;
-
-    return-object v0
-.end method
-
-.method private rl()V
+.method private Al()V
     .locals 3
 
-    iget-object v0, p0, Lcom/android/server/OnePlusUtil$zta;->_c:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/server/OnePlusUtil$zta;->ad:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
@@ -147,6 +128,25 @@
 
     :cond_0
     return-void
+.end method
+
+.method public static getInstance()Lcom/android/server/OnePlusUtil$zta;
+    .locals 1
+
+    sget-object v0, Lcom/android/server/OnePlusUtil$zta;->sInstance:Lcom/android/server/OnePlusUtil$zta;
+
+    if-nez v0, :cond_0
+
+    new-instance v0, Lcom/android/server/OnePlusUtil$zta;
+
+    invoke-direct {v0}, Lcom/android/server/OnePlusUtil$zta;-><init>()V
+
+    sput-object v0, Lcom/android/server/OnePlusUtil$zta;->sInstance:Lcom/android/server/OnePlusUtil$zta;
+
+    :cond_0
+    sget-object v0, Lcom/android/server/OnePlusUtil$zta;->sInstance:Lcom/android/server/OnePlusUtil$zta;
+
+    return-object v0
 .end method
 
 .method private zta(Ljava/lang/String;IILjava/lang/String;II)V
@@ -183,7 +183,7 @@
     invoke-static {v1, v0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_0
-    iget-object p0, p0, Lcom/android/server/OnePlusUtil$zta;->ad:Ljava/util/ArrayList;
+    iget-object p0, p0, Lcom/android/server/OnePlusUtil$zta;->bd:Ljava/util/ArrayList;
 
     invoke-virtual {p0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
@@ -341,7 +341,7 @@
     iput p4, p0, Lcom/android/server/OnePlusUtil$zta;->mPid:I
 
     :cond_0
-    invoke-direct {p0}, Lcom/android/server/OnePlusUtil$zta;->rl()V
+    invoke-direct {p0}, Lcom/android/server/OnePlusUtil$zta;->Al()V
 
     monitor-exit v0
     :try_end_0
@@ -465,7 +465,7 @@
     monitor-enter v0
 
     :try_start_0
-    iget-object p0, p0, Lcom/android/server/OnePlusUtil$zta;->ad:Ljava/util/ArrayList;
+    iget-object p0, p0, Lcom/android/server/OnePlusUtil$zta;->bd:Ljava/util/ArrayList;
 
     invoke-virtual {p0, p1}, Ljava/util/ArrayList;->remove(Ljava/lang/Object;)Z
 
@@ -491,7 +491,7 @@
     monitor-enter v0
 
     :try_start_0
-    iget-object p0, p0, Lcom/android/server/OnePlusUtil$zta;->_c:Ljava/util/ArrayList;
+    iget-object p0, p0, Lcom/android/server/OnePlusUtil$zta;->ad:Ljava/util/ArrayList;
 
     invoke-virtual {p0, p1}, Ljava/util/ArrayList;->remove(Ljava/lang/Object;)Z
 
@@ -541,7 +541,7 @@
     monitor-enter v0
 
     :try_start_0
-    iget-object v1, p0, Lcom/android/server/OnePlusUtil$zta;->ad:Ljava/util/ArrayList;
+    iget-object v1, p0, Lcom/android/server/OnePlusUtil$zta;->bd:Ljava/util/ArrayList;
 
     invoke-virtual {v1, p1}, Ljava/util/ArrayList;->contains(Ljava/lang/Object;)Z
 
@@ -549,7 +549,7 @@
 
     if-nez v1, :cond_0
 
-    iget-object p0, p0, Lcom/android/server/OnePlusUtil$zta;->ad:Ljava/util/ArrayList;
+    iget-object p0, p0, Lcom/android/server/OnePlusUtil$zta;->bd:Ljava/util/ArrayList;
 
     invoke-virtual {p0, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
@@ -576,7 +576,7 @@
     monitor-enter v0
 
     :try_start_0
-    iget-object v1, p0, Lcom/android/server/OnePlusUtil$zta;->_c:Ljava/util/ArrayList;
+    iget-object v1, p0, Lcom/android/server/OnePlusUtil$zta;->ad:Ljava/util/ArrayList;
 
     invoke-virtual {v1, p1}, Ljava/util/ArrayList;->contains(Ljava/lang/Object;)Z
 
@@ -584,7 +584,7 @@
 
     if-nez v1, :cond_0
 
-    iget-object p0, p0, Lcom/android/server/OnePlusUtil$zta;->_c:Ljava/util/ArrayList;
+    iget-object p0, p0, Lcom/android/server/OnePlusUtil$zta;->ad:Ljava/util/ArrayList;
 
     invoke-virtual {p0, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 

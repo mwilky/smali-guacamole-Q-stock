@@ -16,11 +16,11 @@
 
 .field private static final TAG:Ljava/lang/String; = "OemSceneModeAmHelper"
 
-.field private static final cQ:Z
+.field private static final qR:Z
 
-.field private static dQ:Lcom/oneplus/os/IOnePlusExService;
+.field private static rR:Lcom/oneplus/os/IOnePlusExService;
 
-.field private static eQ:Ljava/util/ArrayList;
+.field private static sR:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/ArrayList<",
@@ -30,9 +30,9 @@
     .end annotation
 .end field
 
-.field private static fQ:Z
+.field private static tR:Z
 
-.field static gQ:Lcom/android/server/wm/wtn$zta;
+.field static uR:Lcom/android/server/wm/wtn$zta;
 
 
 # direct methods
@@ -57,13 +57,13 @@
 
     move-result v0
 
-    sput-boolean v0, Lcom/android/server/wm/wtn;->cQ:Z
+    sput-boolean v0, Lcom/android/server/wm/wtn;->qR:Z
 
     new-instance v0, Lcom/android/server/wm/wtn$zta;
 
     invoke-direct {v0}, Lcom/android/server/wm/wtn$zta;-><init>()V
 
-    sput-object v0, Lcom/android/server/wm/wtn;->gQ:Lcom/android/server/wm/wtn$zta;
+    sput-object v0, Lcom/android/server/wm/wtn;->uR:Lcom/android/server/wm/wtn$zta;
 
     return-void
 .end method
@@ -76,76 +76,10 @@
     return-void
 .end method
 
-.method public static Yd()V
-    .locals 2
-
-    sget-boolean v0, Lcom/android/server/wm/wtn;->DBG:Z
-
-    if-eqz v0, :cond_0
-
-    const-string v0, "OemSceneModeAmHelper"
-
-    const-string v1, "clearGameModeRecord"
-
-    invoke-static {v0, v1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    :cond_0
-    invoke-static {}, Lcom/android/server/wm/wtn;->Zd()Lcom/android/server/wm/wtn$zta;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Lcom/android/server/wm/wtn$zta;->Yd()V
-
-    return-void
-.end method
-
-.method public static Zd()Lcom/android/server/wm/wtn$zta;
-    .locals 1
-
-    sget-object v0, Lcom/android/server/wm/wtn;->gQ:Lcom/android/server/wm/wtn$zta;
-
-    return-object v0
-.end method
-
-.method public static _d()V
-    .locals 2
-
-    sget-boolean v0, Lcom/android/server/wm/wtn;->DBG:Z
-
-    if-eqz v0, :cond_0
-
-    const-string v0, "OemSceneModeAmHelper"
-
-    const-string v1, "ReadMode2: handleStopMonitorPassive"
-
-    invoke-static {v0, v1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    :cond_0
-    invoke-static {}, Lcom/android/server/wm/wtn;->Zd()Lcom/android/server/wm/wtn$zta;
-
-    move-result-object v0
-
-    invoke-static {v0}, Lcom/android/server/wm/wtn$zta;->rtg(Lcom/android/server/wm/wtn$zta;)Lcom/android/server/wm/ActivityStack;
-
-    move-result-object v0
-
-    iget-object v0, v0, Lcom/android/server/wm/ActivityStack;->mHandler:Landroid/os/Handler;
-
-    const/16 v1, 0x6f
-
-    invoke-virtual {v0, v1}, Landroid/os/Handler;->removeMessages(I)V
-
-    const/4 v0, 0x0
-
-    sput-object v0, Lcom/oneplus/android/server/scene/ivd;->Xga:Ljava/lang/String;
-
-    return-void
-.end method
-
 .method static synthetic access$000()Z
     .locals 1
 
-    sget-boolean v0, Lcom/android/server/wm/wtn;->cQ:Z
+    sget-boolean v0, Lcom/android/server/wm/wtn;->qR:Z
 
     return v0
 .end method
@@ -153,7 +87,7 @@
 .method public static disableSceneButtonLockFeature(Landroid/content/Context;Z)V
     .locals 3
 
-    sget-boolean v0, Lcom/android/server/wm/wtn;->cQ:Z
+    sget-boolean v0, Lcom/android/server/wm/wtn;->qR:Z
 
     if-eqz v0, :cond_1
 
@@ -203,10 +137,33 @@
     return-void
 .end method
 
+.method public static ee()V
+    .locals 2
+
+    sget-boolean v0, Lcom/android/server/wm/wtn;->DBG:Z
+
+    if-eqz v0, :cond_0
+
+    const-string v0, "OemSceneModeAmHelper"
+
+    const-string v1, "clearGameModeRecord"
+
+    invoke-static {v0, v1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    :cond_0
+    invoke-static {}, Lcom/android/server/wm/wtn;->fe()Lcom/android/server/wm/wtn$zta;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/android/server/wm/wtn$zta;->ee()V
+
+    return-void
+.end method
+
 .method public static endUserSwitching(Lcom/android/server/am/ActivityManagerService;)V
     .locals 3
 
-    sget-boolean p0, Lcom/android/server/wm/wtn;->cQ:Z
+    sget-boolean p0, Lcom/android/server/wm/wtn;->qR:Z
 
     if-eqz p0, :cond_1
 
@@ -217,7 +174,7 @@
     invoke-static {p0, v0}, Landroid/util/Slog;->i(Ljava/lang/String;Ljava/lang/String;)I
 
     :try_start_0
-    sget-object v0, Lcom/android/server/wm/wtn;->dQ:Lcom/oneplus/os/IOnePlusExService;
+    sget-object v0, Lcom/android/server/wm/wtn;->rR:Lcom/oneplus/os/IOnePlusExService;
 
     if-nez v0, :cond_0
 
@@ -229,10 +186,10 @@
 
     check-cast v0, Lcom/oneplus/os/IOnePlusExService;
 
-    sput-object v0, Lcom/android/server/wm/wtn;->dQ:Lcom/oneplus/os/IOnePlusExService;
+    sput-object v0, Lcom/android/server/wm/wtn;->rR:Lcom/oneplus/os/IOnePlusExService;
 
     :cond_0
-    sget-object v0, Lcom/android/server/wm/wtn;->dQ:Lcom/oneplus/os/IOnePlusExService;
+    sget-object v0, Lcom/android/server/wm/wtn;->rR:Lcom/oneplus/os/IOnePlusExService;
 
     const/4 v1, 0x1
 
@@ -266,10 +223,53 @@
     return-void
 .end method
 
+.method public static fe()Lcom/android/server/wm/wtn$zta;
+    .locals 1
+
+    sget-object v0, Lcom/android/server/wm/wtn;->uR:Lcom/android/server/wm/wtn$zta;
+
+    return-object v0
+.end method
+
+.method public static ge()V
+    .locals 2
+
+    sget-boolean v0, Lcom/android/server/wm/wtn;->DBG:Z
+
+    if-eqz v0, :cond_0
+
+    const-string v0, "OemSceneModeAmHelper"
+
+    const-string v1, "ReadMode2: handleStopMonitorPassive"
+
+    invoke-static {v0, v1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    :cond_0
+    invoke-static {}, Lcom/android/server/wm/wtn;->fe()Lcom/android/server/wm/wtn$zta;
+
+    move-result-object v0
+
+    invoke-static {v0}, Lcom/android/server/wm/wtn$zta;->rtg(Lcom/android/server/wm/wtn$zta;)Lcom/android/server/wm/ActivityStack;
+
+    move-result-object v0
+
+    iget-object v0, v0, Lcom/android/server/wm/ActivityStack;->mHandler:Landroid/os/Handler;
+
+    const/16 v1, 0x6f
+
+    invoke-virtual {v0, v1}, Landroid/os/Handler;->removeMessages(I)V
+
+    const/4 v0, 0x0
+
+    sput-object v0, Lcom/oneplus/android/server/scene/ivd;->via:Ljava/lang/String;
+
+    return-void
+.end method
+
 .method public static handleShowOrOccludedChanged(Lcom/android/server/wm/KeyguardController;ZZLcom/android/server/wm/ActivityStackSupervisor;)V
     .locals 4
 
-    sget-boolean p3, Lcom/android/server/wm/wtn;->cQ:Z
+    sget-boolean p3, Lcom/android/server/wm/wtn;->qR:Z
 
     if-eqz p3, :cond_6
 
@@ -317,12 +317,12 @@
     move v2, p3
 
     :goto_1
-    sget-boolean v3, Lcom/android/server/wm/wtn;->fQ:Z
+    sget-boolean v3, Lcom/android/server/wm/wtn;->tR:Z
 
     if-eq v2, v3, :cond_5
 
     :try_start_0
-    sget-object v3, Lcom/android/server/wm/wtn;->dQ:Lcom/oneplus/os/IOnePlusExService;
+    sget-object v3, Lcom/android/server/wm/wtn;->rR:Lcom/oneplus/os/IOnePlusExService;
 
     if-nez v3, :cond_2
 
@@ -334,10 +334,10 @@
 
     check-cast v3, Lcom/oneplus/os/IOnePlusExService;
 
-    sput-object v3, Lcom/android/server/wm/wtn;->dQ:Lcom/oneplus/os/IOnePlusExService;
+    sput-object v3, Lcom/android/server/wm/wtn;->rR:Lcom/oneplus/os/IOnePlusExService;
 
     :cond_2
-    sget-object v3, Lcom/android/server/wm/wtn;->dQ:Lcom/oneplus/os/IOnePlusExService;
+    sget-object v3, Lcom/android/server/wm/wtn;->rR:Lcom/oneplus/os/IOnePlusExService;
 
     if-eqz p1, :cond_4
 
@@ -377,7 +377,7 @@
 
     :cond_5
     :goto_3
-    sput-boolean v2, Lcom/android/server/wm/wtn;->fQ:Z
+    sput-boolean v2, Lcom/android/server/wm/wtn;->tR:Z
 
     invoke-virtual {p0, v1}, Lcom/android/server/wm/KeyguardController;->isKeyguardShowing(I)Z
 
@@ -394,7 +394,7 @@
 .method public static shouldIgnoreSceneEvaluation(Lcom/android/server/wm/ActivityTaskManagerService;Lcom/android/server/wm/ActivityRecord;)Z
     .locals 4
 
-    sget-object v0, Lcom/android/server/wm/wtn;->eQ:Ljava/util/ArrayList;
+    sget-object v0, Lcom/android/server/wm/wtn;->sR:Ljava/util/ArrayList;
 
     if-nez v0, :cond_2
 
@@ -402,7 +402,7 @@
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    sput-object v0, Lcom/android/server/wm/wtn;->eQ:Ljava/util/ArrayList;
+    sput-object v0, Lcom/android/server/wm/wtn;->sR:Ljava/util/ArrayList;
 
     new-instance v0, Landroid/content/Intent;
 
@@ -447,7 +447,7 @@
 
     check-cast v0, Landroid/content/pm/ResolveInfo;
 
-    sget-object v1, Lcom/android/server/wm/wtn;->eQ:Ljava/util/ArrayList;
+    sget-object v1, Lcom/android/server/wm/wtn;->sR:Ljava/util/ArrayList;
 
     iget-object v0, v0, Landroid/content/pm/ResolveInfo;->activityInfo:Landroid/content/pm/ActivityInfo;
 
@@ -470,7 +470,7 @@
 
     invoke-static {p0, v0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    sget-object v0, Lcom/android/server/wm/wtn;->eQ:Ljava/util/ArrayList;
+    sget-object v0, Lcom/android/server/wm/wtn;->sR:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->isEmpty()Z
 
@@ -478,7 +478,7 @@
 
     if-nez v0, :cond_1
 
-    sget-object v0, Lcom/android/server/wm/wtn;->eQ:Ljava/util/ArrayList;
+    sget-object v0, Lcom/android/server/wm/wtn;->sR:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
@@ -539,7 +539,7 @@
     return v1
 
     :cond_4
-    sget-object v0, Lcom/android/server/wm/wtn;->eQ:Ljava/util/ArrayList;
+    sget-object v0, Lcom/android/server/wm/wtn;->sR:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
@@ -577,7 +577,7 @@
 .method public static startUserSwitching()V
     .locals 4
 
-    sget-boolean v0, Lcom/android/server/wm/wtn;->cQ:Z
+    sget-boolean v0, Lcom/android/server/wm/wtn;->qR:Z
 
     if-eqz v0, :cond_1
 
@@ -588,7 +588,7 @@
     invoke-static {v0, v1}, Landroid/util/Slog;->i(Ljava/lang/String;Ljava/lang/String;)I
 
     :try_start_0
-    sget-object v1, Lcom/android/server/wm/wtn;->dQ:Lcom/oneplus/os/IOnePlusExService;
+    sget-object v1, Lcom/android/server/wm/wtn;->rR:Lcom/oneplus/os/IOnePlusExService;
 
     if-nez v1, :cond_0
 
@@ -600,10 +600,10 @@
 
     check-cast v1, Lcom/oneplus/os/IOnePlusExService;
 
-    sput-object v1, Lcom/android/server/wm/wtn;->dQ:Lcom/oneplus/os/IOnePlusExService;
+    sput-object v1, Lcom/android/server/wm/wtn;->rR:Lcom/oneplus/os/IOnePlusExService;
 
     :cond_0
-    sget-object v1, Lcom/android/server/wm/wtn;->dQ:Lcom/oneplus/os/IOnePlusExService;
+    sget-object v1, Lcom/android/server/wm/wtn;->rR:Lcom/oneplus/os/IOnePlusExService;
 
     const/4 v2, 0x0
 

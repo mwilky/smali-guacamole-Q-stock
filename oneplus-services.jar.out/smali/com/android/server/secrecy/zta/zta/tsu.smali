@@ -4,17 +4,17 @@
 
 
 # static fields
+.field private static GN:Ljava/lang/String; = "/sys/devices/download_info/upgrade_download_time1"
+
+.field private static HN:Ljava/lang/String; = "/sys/devices/download_info/intranet"
+
+.field private static JN:Ljava/lang/String; = "[1-9][0-9]{3}/[0-9]{2}/[0-9]{2}"
+
+.field private static KN:Ljava/lang/String; = "[0-9]{2}:[0-9]{2}:[0-9]{2}"
+
+.field private static final LN:I = 0x1
+
 .field private static final TAG:Ljava/lang/String; = "SecrecyService.Utils"
-
-.field private static qM:Ljava/lang/String; = "/sys/devices/download_info/upgrade_download_time1"
-
-.field private static rM:Ljava/lang/String; = "/sys/devices/download_info/intranet"
-
-.field private static sM:Ljava/lang/String; = "[1-9][0-9]{3}/[0-9]{2}/[0-9]{2}"
-
-.field private static tM:Ljava/lang/String; = "[0-9]{2}:[0-9]{2}:[0-9]{2}"
-
-.field private static final uM:I = 0x1
 
 
 # direct methods
@@ -32,7 +32,27 @@
     return-void
 .end method
 
-.method private static Co()Ljava/lang/String;
+.method public static Rd()Z
+    .locals 1
+
+    invoke-static {}, Lcom/android/server/secrecy/zta/zta/sis;->Rd()Z
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public static Sd()Ljava/lang/String;
+    .locals 1
+
+    invoke-static {}, Lcom/android/server/secrecy/zta/zta/sis;->Qd()Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method private static Wo()Ljava/lang/String;
     .locals 1
 
     const-string v0, "none"
@@ -40,7 +60,7 @@
     return-object v0
 .end method
 
-.method private static Do()Z
+.method private static Xo()Z
     .locals 2
 
     sget-object v0, Landroid/os/Build;->HARDWARE:Ljava/lang/String;
@@ -61,126 +81,6 @@
     const/4 v0, 0x0
 
     return v0
-.end method
-
-.method public static Kd()Z
-    .locals 1
-
-    invoke-static {}, Lcom/android/server/secrecy/zta/zta/sis;->Kd()Z
-
-    move-result v0
-
-    return v0
-.end method
-
-.method public static Ld()Ljava/lang/String;
-    .locals 1
-
-    invoke-static {}, Lcom/android/server/secrecy/zta/zta/sis;->Jd()Ljava/lang/String;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public static ca(Ljava/lang/String;)Ljava/lang/String;
-    .locals 3
-
-    sget-object v0, Lcom/android/server/secrecy/zta/zta/tsu;->sM:Ljava/lang/String;
-
-    invoke-static {v0}, Ljava/util/regex/Pattern;->compile(Ljava/lang/String;)Ljava/util/regex/Pattern;
-
-    move-result-object v0
-
-    invoke-virtual {v0, p0}, Ljava/util/regex/Pattern;->matcher(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
-
-    move-result-object p0
-
-    const-string v0, ""
-
-    :goto_0
-    invoke-virtual {p0}, Ljava/util/regex/Matcher;->find()Z
-
-    move-result v1
-
-    if-eqz v1, :cond_0
-
-    invoke-virtual {p0}, Ljava/util/regex/Matcher;->group()Ljava/lang/String;
-
-    move-result-object v0
-
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v2, "dateMatcher = "
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v1
-
-    const-string v2, "SecrecyService.Utils"
-
-    invoke-static {v2, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    goto :goto_0
-
-    :cond_0
-    return-object v0
-.end method
-
-.method public static da(Ljava/lang/String;)Ljava/lang/String;
-    .locals 3
-
-    sget-object v0, Lcom/android/server/secrecy/zta/zta/tsu;->tM:Ljava/lang/String;
-
-    invoke-static {v0}, Ljava/util/regex/Pattern;->compile(Ljava/lang/String;)Ljava/util/regex/Pattern;
-
-    move-result-object v0
-
-    invoke-virtual {v0, p0}, Ljava/util/regex/Pattern;->matcher(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
-
-    move-result-object p0
-
-    const-string v0, ""
-
-    :goto_0
-    invoke-virtual {p0}, Ljava/util/regex/Matcher;->find()Z
-
-    move-result v1
-
-    if-eqz v1, :cond_0
-
-    invoke-virtual {p0}, Ljava/util/regex/Matcher;->group()Ljava/lang/String;
-
-    move-result-object v0
-
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v2, "timeMatcher = "
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v1
-
-    const-string v2, "SecrecyService.Utils"
-
-    invoke-static {v2, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    goto :goto_0
-
-    :cond_0
-    return-object v0
 .end method
 
 .method public static dma(Ljava/lang/String;Ljava/lang/String;)J
@@ -259,6 +159,106 @@
 .end method
 
 .method public static ea(Ljava/lang/String;)Ljava/lang/String;
+    .locals 3
+
+    sget-object v0, Lcom/android/server/secrecy/zta/zta/tsu;->JN:Ljava/lang/String;
+
+    invoke-static {v0}, Ljava/util/regex/Pattern;->compile(Ljava/lang/String;)Ljava/util/regex/Pattern;
+
+    move-result-object v0
+
+    invoke-virtual {v0, p0}, Ljava/util/regex/Pattern;->matcher(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
+
+    move-result-object p0
+
+    const-string v0, ""
+
+    :goto_0
+    invoke-virtual {p0}, Ljava/util/regex/Matcher;->find()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_0
+
+    invoke-virtual {p0}, Ljava/util/regex/Matcher;->group()Ljava/lang/String;
+
+    move-result-object v0
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v2, "dateMatcher = "
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    const-string v2, "SecrecyService.Utils"
+
+    invoke-static {v2, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    goto :goto_0
+
+    :cond_0
+    return-object v0
+.end method
+
+.method public static fa(Ljava/lang/String;)Ljava/lang/String;
+    .locals 3
+
+    sget-object v0, Lcom/android/server/secrecy/zta/zta/tsu;->KN:Ljava/lang/String;
+
+    invoke-static {v0}, Ljava/util/regex/Pattern;->compile(Ljava/lang/String;)Ljava/util/regex/Pattern;
+
+    move-result-object v0
+
+    invoke-virtual {v0, p0}, Ljava/util/regex/Pattern;->matcher(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
+
+    move-result-object p0
+
+    const-string v0, ""
+
+    :goto_0
+    invoke-virtual {p0}, Ljava/util/regex/Matcher;->find()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_0
+
+    invoke-virtual {p0}, Ljava/util/regex/Matcher;->group()Ljava/lang/String;
+
+    move-result-object v0
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v2, "timeMatcher = "
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    const-string v2, "SecrecyService.Utils"
+
+    invoke-static {v2, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    goto :goto_0
+
+    :cond_0
+    return-object v0
+.end method
+
+.method public static ga(Ljava/lang/String;)Ljava/lang/String;
     .locals 6
 
     const-string v0, "readStringFromFile io close exception :"

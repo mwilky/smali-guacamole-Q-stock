@@ -65,7 +65,7 @@
 
     const-string v0, "org.bouncycastle.asn1.allow_unsafe_integer"
 
-    invoke-static {v0}, Lorg/bouncycastle/util/gck;->Ua(Ljava/lang/String;)Z
+    invoke-static {v0}, Lorg/bouncycastle/util/gck;->Wa(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -300,6 +300,28 @@
 
 
 # virtual methods
+.method Dg()I
+    .locals 1
+
+    iget-object v0, p0, Lorg/bouncycastle/asn1/bio;->bytes:[B
+
+    array-length v0, v0
+
+    invoke-static {v0}, Lorg/bouncycastle/asn1/ia;->ha(I)I
+
+    move-result v0
+
+    add-int/lit8 v0, v0, 0x1
+
+    iget-object p0, p0, Lorg/bouncycastle/asn1/bio;->bytes:[B
+
+    array-length p0, p0
+
+    add-int/2addr v0, p0
+
+    return v0
+.end method
+
 .method public getValue()Ljava/math/BigInteger;
     .locals 1
 
@@ -330,28 +352,6 @@
     const/4 p0, 0x0
 
     return p0
-.end method
-
-.method ug()I
-    .locals 1
-
-    iget-object v0, p0, Lorg/bouncycastle/asn1/bio;->bytes:[B
-
-    array-length v0, v0
-
-    invoke-static {v0}, Lorg/bouncycastle/asn1/ia;->ea(I)I
-
-    move-result v0
-
-    add-int/lit8 v0, v0, 0x1
-
-    iget-object p0, p0, Lorg/bouncycastle/asn1/bio;->bytes:[B
-
-    array-length p0, p0
-
-    add-int/2addr v0, p0
-
-    return v0
 .end method
 
 .method zta(Lorg/bouncycastle/asn1/ugm;)V

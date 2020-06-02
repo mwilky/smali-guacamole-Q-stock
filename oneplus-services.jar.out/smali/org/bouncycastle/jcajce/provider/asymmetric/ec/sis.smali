@@ -12,13 +12,13 @@
 
 
 # static fields
-.field private static final _oa:Lorg/bouncycastle/asn1/ibl/qeg;
+.field private static final nra:Lorg/bouncycastle/asn1/ibl/qeg;
 
 
 # instance fields
-.field private Qoa:Ljava/lang/String;
+.field private dra:Ljava/lang/String;
 
-.field private Zoa:Ljava/lang/Object;
+.field private mra:Ljava/lang/Object;
 
 .field private parameters:Lorg/bouncycastle/crypto/wtn/ibl;
 
@@ -33,7 +33,7 @@
 
     invoke-direct {v0}, Lorg/bouncycastle/asn1/ibl/qeg;-><init>()V
 
-    sput-object v0, Lorg/bouncycastle/jcajce/provider/asymmetric/ec/sis;->_oa:Lorg/bouncycastle/asn1/ibl/qeg;
+    sput-object v0, Lorg/bouncycastle/jcajce/provider/asymmetric/ec/sis;->nra:Lorg/bouncycastle/asn1/ibl/qeg;
 
     return-void
 .end method
@@ -43,9 +43,9 @@
 
     invoke-direct {p0, p1, p3}, Lorg/bouncycastle/jcajce/provider/asymmetric/util/zta;-><init>(Ljava/lang/String;Lorg/bouncycastle/crypto/dma;)V
 
-    iput-object p1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/ec/sis;->Qoa:Ljava/lang/String;
+    iput-object p1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/ec/sis;->dra:Ljava/lang/String;
 
-    iput-object p2, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/ec/sis;->Zoa:Ljava/lang/Object;
+    iput-object p2, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/ec/sis;->mra:Ljava/lang/Object;
 
     return-void
 .end method
@@ -85,7 +85,7 @@
 
     if-eqz v0, :cond_3
 
-    iget-object v0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/util/zta;->Cma:Lorg/bouncycastle/crypto/dma;
+    iget-object v0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/util/zta;->Roa:Lorg/bouncycastle/crypto/dma;
 
     if-nez v0, :cond_1
 
@@ -126,7 +126,7 @@
 
     check-cast p2, Lorg/bouncycastle/jcajce/sis/tsu;
 
-    invoke-virtual {p2}, Lorg/bouncycastle/jcajce/sis/tsu;->Cj()[B
+    invoke-virtual {p2}, Lorg/bouncycastle/jcajce/sis/tsu;->Lj()[B
 
     move-result-object p2
 
@@ -136,9 +136,9 @@
     const/4 p2, 0x0
 
     :goto_1
-    iput-object p2, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/util/zta;->Roa:[B
+    iput-object p2, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/util/zta;->era:[B
 
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/ec/sis;->Zoa:Ljava/lang/Object;
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/ec/sis;->mra:Ljava/lang/Object;
 
     check-cast p0, Lorg/bouncycastle/crypto/tsu;
 
@@ -153,7 +153,7 @@
 
     invoke-direct {p2}, Ljava/lang/StringBuilder;-><init>()V
 
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/ec/sis;->Qoa:Ljava/lang/String;
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/ec/sis;->dra:Ljava/lang/String;
 
     invoke-virtual {p2, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -210,7 +210,7 @@
     move-result-object p1
 
     :try_start_0
-    iget-object p2, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/ec/sis;->Zoa:Ljava/lang/Object;
+    iget-object p2, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/ec/sis;->mra:Ljava/lang/Object;
 
     check-cast p2, Lorg/bouncycastle/crypto/tsu;
 
@@ -264,7 +264,7 @@
 
     invoke-direct {p2}, Ljava/lang/StringBuilder;-><init>()V
 
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/ec/sis;->Qoa:Ljava/lang/String;
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/ec/sis;->dra:Ljava/lang/String;
 
     invoke-virtual {p2, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -299,7 +299,7 @@
 
     invoke-direct {p2}, Ljava/lang/StringBuilder;-><init>()V
 
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/ec/sis;->Qoa:Ljava/lang/String;
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/ec/sis;->dra:Ljava/lang/String;
 
     invoke-virtual {p2, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -322,7 +322,7 @@
 
     invoke-direct {p2}, Ljava/lang/StringBuilder;-><init>()V
 
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/ec/sis;->Qoa:Ljava/lang/String;
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/ec/sis;->dra:Ljava/lang/String;
 
     invoke-virtual {p2, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -403,7 +403,7 @@
     return-void
 .end method
 
-.method protected kg()[B
+.method protected tg()[B
     .locals 0
 
     iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/ec/sis;->result:[B
@@ -418,7 +418,7 @@
 .method protected tsu(Ljava/math/BigInteger;)[B
     .locals 1
 
-    sget-object v0, Lorg/bouncycastle/jcajce/provider/asymmetric/ec/sis;->_oa:Lorg/bouncycastle/asn1/ibl/qeg;
+    sget-object v0, Lorg/bouncycastle/jcajce/provider/asymmetric/ec/sis;->nra:Lorg/bouncycastle/asn1/ibl/qeg;
 
     iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/ec/sis;->parameters:Lorg/bouncycastle/crypto/wtn/ibl;
 

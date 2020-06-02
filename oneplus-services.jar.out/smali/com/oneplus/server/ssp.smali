@@ -4,35 +4,33 @@
 
 
 # static fields
-.field public static final DEBUG:Z
+.field static final DEBUG:Z
 
-.field public static final IN_USING:Z = true
+.field private static final HAS_HW_KEYS:Z
 
-.field private static Jha:Landroid/app/PendingIntent; = null
+.field private static Nja:Lcom/oneplus/android/server/scene/OemSceneAutoBrightnessController; = null
 
-.field private static final Kha:Ljava/lang/String; = "com.oneplus.android.screenOffCheckProcessState"
+.field private static Oja:Lcom/oneplus/android/server/scene/OemSceneButtonController; = null
 
-.field private static final No:Ljava/lang/String; = "deviceidle"
+.field private static Pja:Lcom/oneplus/android/server/scene/OemSceneVibrationController; = null
 
-.field public static final TAG:Ljava/lang/String; = "DozeManager"
+.field private static Qja:Lcom/oneplus/android/server/scene/OemSceneActivityController; = null
 
-.field private static mAlarmManager:Landroid/app/AlarmManager;
+.field private static Rja:Lcom/oneplus/android/server/scene/OemSceneLightsController; = null
 
-.field private static mInstance:Lcom/oneplus/server/ssp;
+.field private static Sja:Lcom/oneplus/android/server/scene/OemSceneFloatingWindowController; = null
 
-.field private static mScreenOffIntent:Landroid/content/Intent;
+.field static final TAG:Ljava/lang/String; = "OIMCManagerUtil"
 
-.field private static screenOffCheckDelayTime:J
+.field private static Tja:Lcom/oneplus/android/server/scene/OemSceneAudioController;
 
+.field private static Uja:Lcom/oneplus/android/server/scene/ESportMode;
 
-# instance fields
-.field Ad:Landroid/content/BroadcastReceiver;
+.field private static Vja:Lcom/oneplus/android/server/scene/qbh;
 
-.field private mActivityManager:Lcom/android/server/am/ActivityManagerService;
+.field private static Wja:Landroid/content/BroadcastReceiver;
 
-.field private mAudioManager:Landroid/media/AudioManager;
-
-.field private mDeviceIdleService:Landroid/os/IDeviceIdleController;
+.field private static sOemSceneCallBlock:Lcom/oneplus/android/server/scene/OemSceneCallBlock;
 
 
 # direct methods
@@ -43,630 +41,619 @@
 
     sput-boolean v0, Lcom/oneplus/server/ssp;->DEBUG:Z
 
-    const-wide/32 v0, 0x493e0
+    const-string v0, "qemu.hw.mainkeys"
 
-    sput-wide v0, Lcom/oneplus/server/ssp;->screenOffCheckDelayTime:J
-
-    return-void
-.end method
-
-.method private constructor <init>()V
-    .locals 1
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    const/4 v0, 0x0
-
-    iput-object v0, p0, Lcom/oneplus/server/ssp;->mDeviceIdleService:Landroid/os/IDeviceIdleController;
-
-    new-instance v0, Lcom/oneplus/server/rtg;
-
-    invoke-direct {v0, p0}, Lcom/oneplus/server/rtg;-><init>(Lcom/oneplus/server/ssp;)V
-
-    iput-object v0, p0, Lcom/oneplus/server/ssp;->Ad:Landroid/content/BroadcastReceiver;
-
-    const-string v0, "deviceidle"
-
-    invoke-static {v0}, Landroid/os/ServiceManager;->getService(Ljava/lang/String;)Landroid/os/IBinder;
+    invoke-static {v0}, Landroid/os/SystemProperties;->get(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
-    invoke-static {v0}, Landroid/os/IDeviceIdleController$Stub;->asInterface(Landroid/os/IBinder;)Landroid/os/IDeviceIdleController;
+    const-string v1, "1"
 
-    move-result-object v0
-
-    iput-object v0, p0, Lcom/oneplus/server/ssp;->mDeviceIdleService:Landroid/os/IDeviceIdleController;
-
-    return-void
-.end method
-
-.method private Lc(Ljava/lang/String;)[Ljava/lang/String;
-    .locals 2
-
-    sget-boolean p0, Lcom/oneplus/server/ssp;->DEBUG:Z
-
-    if-eqz p0, :cond_0
-
-    new-instance p0, Ljava/lang/StringBuilder;
-
-    invoke-direct {p0}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v0, "parseAudioUidsStr():uids="
-
-    invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p0
-
-    const-string v0, "DozeManager"
-
-    invoke-static {v0, p0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    :cond_0
-    const/4 p0, 0x0
-
-    if-eqz p1, :cond_3
-
-    invoke-virtual {p1}, Ljava/lang/String;->length()I
+    invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v0
 
-    if-nez v0, :cond_1
+    sput-boolean v0, Lcom/oneplus/server/ssp;->HAS_HW_KEYS:Z
 
-    goto :goto_0
+    new-instance v0, Lcom/oneplus/server/rtg;
 
-    :cond_1
-    const-string v0, ":"
+    invoke-direct {v0}, Lcom/oneplus/server/rtg;-><init>()V
 
-    invoke-virtual {p1, v0}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+    sput-object v0, Lcom/oneplus/server/ssp;->Wja:Landroid/content/BroadcastReceiver;
 
-    move-result v1
-
-    if-nez v1, :cond_2
-
-    return-object p0
-
-    :cond_2
-    invoke-virtual {p1, v0}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
-
-    move-result-object p0
-
-    :cond_3
-    :goto_0
-    return-object p0
+    return-void
 .end method
 
-.method private Us()[Ljava/lang/String;
+.method public constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method public static cno(Landroid/content/Context;)V
     .locals 2
 
-    iget-object v0, p0, Lcom/oneplus/server/ssp;->mAudioManager:Landroid/media/AudioManager;
+    new-instance v0, Landroid/content/IntentFilter;
 
-    if-eqz v0, :cond_0
+    invoke-direct {v0}, Landroid/content/IntentFilter;-><init>()V
 
-    const-string v1, "get_silent_uid"
+    const-string v1, "android.intent.action.USER_SWITCHED"
 
-    invoke-virtual {v0, v1}, Landroid/media/AudioManager;->getParameters(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
-    move-result-object v0
+    const/16 v1, 0x3e8
+
+    invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->setPriority(I)V
+
+    sget-object v1, Lcom/oneplus/server/ssp;->Wja:Landroid/content/BroadcastReceiver;
+
+    invoke-virtual {p0, v1, v0}, Landroid/content/Context;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
+
+    return-void
+.end method
+
+.method public static sa(Ljava/lang/String;)I
+    .locals 5
+
+    invoke-virtual {p0}, Ljava/lang/String;->hashCode()I
+
+    move-result v0
+
+    const v1, -0x50c07cbe
+
+    const/4 v2, -0x1
+
+    const/4 v3, 0x2
+
+    const/4 v4, 0x1
+
+    if-eq v0, v1, :cond_2
+
+    const/16 v1, 0xddf
+
+    if-eq v0, v1, :cond_1
+
+    const v1, 0x1ad6f
+
+    if-eq v0, v1, :cond_0
 
     goto :goto_0
 
     :cond_0
-    const-string v0, ":0"
+    const-string v0, "off"
 
-    :goto_0
-    invoke-direct {p0, v0}, Lcom/oneplus/server/ssp;->Lc(Ljava/lang/String;)[Ljava/lang/String;
+    invoke-virtual {p0, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    move-result-object p0
+    move-result p0
 
-    return-object p0
-.end method
+    if-eqz p0, :cond_3
 
-.method private Vs()V
-    .locals 4
-
-    invoke-direct {p0}, Lcom/oneplus/server/ssp;->Us()[Ljava/lang/String;
-
-    move-result-object v0
-
-    sget-boolean v1, Lcom/oneplus/server/ssp;->DEBUG:Z
-
-    if-eqz v1, :cond_0
-
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v2, "handleAudioUid getMode="
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget-object v2, p0, Lcom/oneplus/server/ssp;->mAudioManager:Landroid/media/AudioManager;
-
-    invoke-virtual {v2}, Landroid/media/AudioManager;->getMode()I
-
-    move-result v2
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v1
-
-    const-string v2, "DozeManager"
-
-    invoke-static {v2, v1}, Landroid/util/Slog;->i(Ljava/lang/String;Ljava/lang/String;)I
-
-    :cond_0
-    if-eqz v0, :cond_3
-
-    iget-object v1, p0, Lcom/oneplus/server/ssp;->mAudioManager:Landroid/media/AudioManager;
-
-    if-eqz v1, :cond_3
-
-    invoke-virtual {v1}, Landroid/media/AudioManager;->getMode()I
-
-    move-result v1
-
-    const/4 v2, 0x2
-
-    if-eq v1, v2, :cond_3
-
-    iget-object v1, p0, Lcom/oneplus/server/ssp;->mAudioManager:Landroid/media/AudioManager;
-
-    invoke-virtual {v1}, Landroid/media/AudioManager;->getMode()I
-
-    move-result v1
-
-    const/4 v2, 0x3
-
-    if-eq v1, v2, :cond_3
-
-    const/4 v1, 0x0
-
-    :goto_0
-    array-length v2, v0
-
-    if-ge v1, v2, :cond_3
-
-    aget-object v2, v0, v1
-
-    if-eqz v2, :cond_2
-
-    aget-object v2, v0, v1
-
-    invoke-virtual {v2}, Ljava/lang/String;->isEmpty()Z
-
-    move-result v2
-
-    if-eqz v2, :cond_1
+    move p0, v4
 
     goto :goto_1
 
     :cond_1
-    aget-object v2, v0, v1
+    const-string v0, "on"
 
-    invoke-static {v2}, Ljava/lang/Integer;->valueOf(Ljava/lang/String;)Ljava/lang/Integer;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Ljava/lang/Integer;->intValue()I
-
-    move-result v2
-
-    const/16 v3, 0x2710
-
-    if-lt v2, v3, :cond_2
-
-    invoke-direct {p0, v2}, Lcom/oneplus/server/ssp;->hc(I)Z
-
-    move-result v3
-
-    if-nez v3, :cond_2
-
-    invoke-static {v2}, Lcom/android/server/am/irq;->d(I)Z
-
-    move-result v3
-
-    if-nez v3, :cond_2
-
-    invoke-direct {p0, v2}, Lcom/oneplus/server/ssp;->ic(I)V
-
-    :cond_2
-    :goto_1
-    add-int/lit8 v1, v1, 0x1
-
-    goto :goto_0
-
-    :cond_3
-    return-void
-.end method
-
-.method static synthetic access$000()J
-    .locals 2
-
-    sget-wide v0, Lcom/oneplus/server/ssp;->screenOffCheckDelayTime:J
-
-    return-wide v0
-.end method
-
-.method static synthetic access$100()Landroid/app/PendingIntent;
-    .locals 1
-
-    sget-object v0, Lcom/oneplus/server/ssp;->Jha:Landroid/app/PendingIntent;
-
-    return-object v0
-.end method
-
-.method static synthetic access$200()Landroid/app/AlarmManager;
-    .locals 1
-
-    sget-object v0, Lcom/oneplus/server/ssp;->mAlarmManager:Landroid/app/AlarmManager;
-
-    return-object v0
-.end method
-
-.method public static getInstance()Lcom/oneplus/server/ssp;
-    .locals 1
-
-    sget-object v0, Lcom/oneplus/server/ssp;->mInstance:Lcom/oneplus/server/ssp;
-
-    if-nez v0, :cond_0
-
-    new-instance v0, Lcom/oneplus/server/ssp;
-
-    invoke-direct {v0}, Lcom/oneplus/server/ssp;-><init>()V
-
-    sput-object v0, Lcom/oneplus/server/ssp;->mInstance:Lcom/oneplus/server/ssp;
-
-    :cond_0
-    sget-object v0, Lcom/oneplus/server/ssp;->mInstance:Lcom/oneplus/server/ssp;
-
-    return-object v0
-.end method
-
-.method private hc(I)Z
-    .locals 4
-
-    const-string v0, "DozeManager"
-
-    :try_start_0
-    iget-object v1, p0, Lcom/oneplus/server/ssp;->mDeviceIdleService:Landroid/os/IDeviceIdleController;
-
-    if-eqz v1, :cond_1
-
-    iget-object v1, p0, Lcom/oneplus/server/ssp;->mDeviceIdleService:Landroid/os/IDeviceIdleController;
-
-    invoke-interface {v1}, Landroid/os/IDeviceIdleController;->getAppIdUserWhitelist()[I
-
-    move-result-object v1
-
-    invoke-static {v1, p1}, Ljava/util/Arrays;->binarySearch([II)I
-
-    move-result v1
-    :try_end_0
-    .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
-
-    const/4 v2, 0x1
-
-    const-string v3, "checkWhiteUid uid="
-
-    if-ltz v1, :cond_0
-
-    :try_start_1
-    new-instance p0, Ljava/lang/StringBuilder;
-
-    invoke-direct {p0}, Ljava/lang/StringBuilder;-><init>()V
-
-    invoke-virtual {p0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    const-string p1, " is in whiteList!"
-
-    invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p0
-
-    invoke-static {v0, p0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    return v2
-
-    :cond_0
-    iget-object p0, p0, Lcom/oneplus/server/ssp;->mDeviceIdleService:Landroid/os/IDeviceIdleController;
-
-    invoke-interface {p0}, Landroid/os/IDeviceIdleController;->getAppIdTempWhitelist()[I
-
-    move-result-object p0
-
-    invoke-static {p0, p1}, Ljava/util/Arrays;->binarySearch([II)I
+    invoke-virtual {p0, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result p0
 
-    if-ltz p0, :cond_1
+    if-eqz p0, :cond_3
 
-    new-instance p0, Ljava/lang/StringBuilder;
+    const/4 p0, 0x0
 
-    invoke-direct {p0}, Ljava/lang/StringBuilder;-><init>()V
+    goto :goto_1
 
-    invoke-virtual {p0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    :cond_2
+    const-string v0, "config"
 
-    invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {p0, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    const-string p1, " is in tempWhiteList!"
+    move-result p0
 
-    invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    if-eqz p0, :cond_3
 
-    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move p0, v3
+
+    goto :goto_1
+
+    :cond_3
+    :goto_0
+    move p0, v2
+
+    :goto_1
+    if-eqz p0, :cond_6
+
+    if-eq p0, v4, :cond_5
+
+    if-eq p0, v3, :cond_4
+
+    return v2
+
+    :cond_4
+    const/4 p0, 0x3
+
+    return p0
+
+    :cond_5
+    return v3
+
+    :cond_6
+    return v4
+.end method
+
+.method public static sis(Landroid/content/Context;I)V
+    .locals 1
+
+    :try_start_0
+    invoke-static {p0}, Lcom/oneplus/android/server/scene/qbh;->getInstance(Landroid/content/Context;)Lcom/oneplus/android/server/scene/qbh;
 
     move-result-object p0
 
-    invoke-static {v0, p0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
-    :try_end_1
-    .catch Landroid/os/RemoteException; {:try_start_1 .. :try_end_1} :catch_0
+    sput-object p0, Lcom/oneplus/server/ssp;->Vja:Lcom/oneplus/android/server/scene/qbh;
 
-    return v2
+    sget-object p0, Lcom/oneplus/server/ssp;->Vja:Lcom/oneplus/android/server/scene/qbh;
+
+    if-eqz p0, :cond_0
+
+    sget-object p0, Lcom/oneplus/server/ssp;->Vja:Lcom/oneplus/android/server/scene/qbh;
+
+    invoke-virtual {p0}, Lcom/oneplus/android/server/scene/qbh;->mf()V
+
+    sget-object p0, Lcom/oneplus/server/ssp;->Vja:Lcom/oneplus/android/server/scene/qbh;
+
+    invoke-virtual {p0, p1}, Lcom/oneplus/android/server/scene/qbh;->Z(I)V
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    goto :goto_0
 
     :catch_0
     move-exception p0
 
-    invoke-virtual {p0}, Landroid/os/RemoteException;->getMessage()Ljava/lang/String;
+    new-instance p1, Ljava/lang/StringBuilder;
+
+    invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v0, "registerOIMCRules error "
+
+    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p0
 
-    invoke-static {v0, p0}, Landroid/util/Slog;->e(Ljava/lang/String;Ljava/lang/String;)I
+    const-string p1, "OIMCManagerUtil"
 
-    :cond_1
-    const/4 p0, 0x0
-
-    return p0
-.end method
-
-.method private ic(I)V
-    .locals 5
-
-    iget-object v0, p0, Lcom/oneplus/server/ssp;->mActivityManager:Lcom/android/server/am/ActivityManagerService;
-
-    if-nez v0, :cond_0
-
-    return-void
+    invoke-static {p1, p0}, Landroid/util/Slog;->e(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_0
-    invoke-static {p1}, Lcom/android/server/am/AppRecordManager;->getPackageNameFromUid(I)Ljava/lang/String;
-
-    move-result-object v0
-
-    iget-object v1, p0, Lcom/oneplus/server/ssp;->mActivityManager:Lcom/android/server/am/ActivityManagerService;
-
-    monitor-enter v1
-
-    :try_start_0
-    const-string v2, "DozeManager"
-
-    new-instance v3, Ljava/lang/StringBuilder;
-
-    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v4, "forceStopApplication: silent="
-
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v3, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    const-string p1, ", "
-
-    invoke-virtual {v3, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p1
-
-    invoke-static {v2, p1}, Landroid/util/Slog;->i(Ljava/lang/String;Ljava/lang/String;)I
-
-    iget-object p0, p0, Lcom/oneplus/server/ssp;->mActivityManager:Lcom/android/server/am/ActivityManagerService;
-
-    const/4 p1, 0x0
-
-    invoke-virtual {p0, v0, p1}, Lcom/android/server/am/ActivityManagerService;->forceStopPackage(Ljava/lang/String;I)V
-
-    monitor-exit v1
-
+    :goto_0
     return-void
-
-    :catchall_0
-    move-exception p0
-
-    monitor-exit v1
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    throw p0
 .end method
 
-.method private in()[Ljava/lang/String;
-    .locals 2
+.method public static you(Lcom/oneplus/core/oimc/IOIMCServiceManager;Landroid/content/Context;)V
+    .locals 3
 
-    iget-object v0, p0, Lcom/oneplus/server/ssp;->mAudioManager:Landroid/media/AudioManager;
+    :try_start_0
+    sget-object v0, Lcom/oneplus/server/ssp;->Oja:Lcom/oneplus/android/server/scene/OemSceneButtonController;
+
+    const/4 v1, 0x0
 
     if-eqz v0, :cond_0
 
-    const-string v1, "get_uid"
+    sget-object v0, Lcom/oneplus/server/ssp;->Oja:Lcom/oneplus/android/server/scene/OemSceneButtonController;
 
-    invoke-virtual {v0, v1}, Landroid/media/AudioManager;->getParameters(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v0
-
-    goto :goto_0
+    invoke-virtual {v0, v1}, Lcom/oneplus/android/server/scene/OemSceneButtonController;->updateFunctionRule(I)V
 
     :cond_0
-    const-string v0, ":0"
+    const/4 v0, 0x1
 
-    :goto_0
-    invoke-direct {p0, v0}, Lcom/oneplus/server/ssp;->Lc(Ljava/lang/String;)[Ljava/lang/String;
+    new-array v0, v0, [I
 
-    move-result-object p0
+    const/16 v2, 0xe
 
-    return-object p0
-.end method
+    aput v2, v0, v1
 
-.method private isMusicPlaying()Z
-    .locals 4
-
-    iget-object v0, p0, Lcom/oneplus/server/ssp;->mAudioManager:Landroid/media/AudioManager;
-
-    const/4 v1, 0x3
-
-    invoke-virtual {v0, v1}, Landroid/media/AudioManager;->getStreamVolume(I)I
+    invoke-static {v0}, Landroid/util/OpFeatures;->isSupport([I)Z
 
     move-result v0
 
-    iget-object p0, p0, Lcom/oneplus/server/ssp;->mAudioManager:Landroid/media/AudioManager;
-
-    invoke-virtual {p0}, Landroid/media/AudioManager;->isMusicActive()Z
-
-    move-result p0
-
-    sget-boolean v1, Lcom/oneplus/server/ssp;->DEBUG:Z
-
-    if-eqz v1, :cond_0
-
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v2, "currentVolume: "
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v1
-
-    const-string v2, "DozeManager"
-
-    invoke-static {v2, v1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v3, "isMusicActive: "
-
-    invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-static {v2, v1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    :cond_0
-    if-eqz p0, :cond_1
-
     if-eqz v0, :cond_1
 
-    const/4 p0, 0x1
+    sget-object v0, Lcom/oneplus/android/server/scene/OemSceneButtonController;->RULE_KEYBLOCKING_ZENMODE:Lcom/oneplus/core/oimc/OIMCRule;
+
+    invoke-interface {p0, v0}, Lcom/oneplus/core/oimc/IOIMCServiceManager;->addFuncRuleGlobal(Lcom/oneplus/core/oimc/OIMCRule;)V
+
+    :cond_1
+    invoke-static {p1}, Lcom/oneplus/android/server/scene/qbh;->getInstance(Landroid/content/Context;)Lcom/oneplus/android/server/scene/qbh;
+
+    move-result-object p0
+
+    sput-object p0, Lcom/oneplus/server/ssp;->Vja:Lcom/oneplus/android/server/scene/qbh;
+
+    sget-object p0, Lcom/oneplus/server/ssp;->Vja:Lcom/oneplus/android/server/scene/qbh;
+
+    invoke-virtual {p0}, Lcom/oneplus/android/server/scene/qbh;->mf()V
+
+    sget-object p0, Lcom/oneplus/server/ssp;->Vja:Lcom/oneplus/android/server/scene/qbh;
+
+    invoke-static {}, Landroid/app/ActivityManager;->getCurrentUser()I
+
+    move-result v0
+
+    invoke-virtual {p0, v0}, Lcom/oneplus/android/server/scene/qbh;->Z(I)V
+
+    sget-boolean p0, Lcom/oneplus/android/server/scene/OemSceneAdModeController;->IN_USING:Z
+
+    if-eqz p0, :cond_2
+
+    invoke-static {p1}, Lcom/oneplus/android/server/scene/OemSceneAdModeController;->getInstance(Landroid/content/Context;)Lcom/oneplus/android/server/scene/OemSceneAdModeController;
+
+    move-result-object p0
+
+    if-eqz p0, :cond_2
+
+    invoke-virtual {p0}, Lcom/oneplus/android/server/scene/OemSceneAdModeController;->updateFunctionRule()V
+
+    :cond_2
+    sget-boolean p0, Lcom/oneplus/android/server/scene/OemSceneXLinearVibrationMotorController;->IN_USING:Z
+
+    if-eqz p0, :cond_3
+
+    invoke-static {p1}, Lcom/oneplus/android/server/scene/OemSceneXLinearVibrationMotorController;->getInstance(Landroid/content/Context;)Lcom/oneplus/android/server/scene/OemSceneXLinearVibrationMotorController;
+
+    move-result-object p0
+
+    if-eqz p0, :cond_3
+
+    invoke-virtual {p0}, Lcom/oneplus/android/server/scene/OemSceneXLinearVibrationMotorController;->updateFunctionRule()V
+
+    :cond_3
+    sget-object p0, Lcom/oneplus/server/ssp;->Nja:Lcom/oneplus/android/server/scene/OemSceneAutoBrightnessController;
+
+    if-eqz p0, :cond_4
+
+    sget-object p0, Lcom/oneplus/server/ssp;->Nja:Lcom/oneplus/android/server/scene/OemSceneAutoBrightnessController;
+
+    invoke-virtual {p0, v1}, Lcom/oneplus/android/server/scene/OemSceneAutoBrightnessController;->updateFunctionRule(I)V
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
     goto :goto_0
 
-    :cond_1
-    const/4 p0, 0x0
+    :catch_0
+    move-exception p0
 
+    new-instance p1, Ljava/lang/StringBuilder;
+
+    invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v0, "registerOIMCRules error "
+
+    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p0
+
+    const-string p1, "OIMCManagerUtil"
+
+    invoke-static {p1, p0}, Landroid/util/Slog;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    :cond_4
     :goto_0
-    return p0
+    return-void
 .end method
 
-.method private you(Landroid/content/Context;Lcom/android/server/am/ActivityManagerService;)V
+.method public static zta(Lcom/oneplus/core/oimc/IOIMCServiceManager;Landroid/content/Context;)V
     .locals 3
 
-    iput-object p2, p0, Lcom/oneplus/server/ssp;->mActivityManager:Lcom/android/server/am/ActivityManagerService;
+    const/4 v0, 0x1
 
-    const-string p2, "alarm"
+    :try_start_0
+    new-array v0, v0, [I
 
-    invoke-virtual {p1, p2}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    const/4 v1, 0x0
 
-    move-result-object p2
+    const/16 v2, 0xe
 
-    check-cast p2, Landroid/app/AlarmManager;
+    aput v2, v0, v1
 
-    sput-object p2, Lcom/oneplus/server/ssp;->mAlarmManager:Landroid/app/AlarmManager;
+    invoke-static {v0}, Landroid/util/OpFeatures;->isSupport([I)Z
 
-    const-string p2, "audio"
+    move-result v0
 
-    invoke-virtual {p1, p2}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    if-eqz v0, :cond_0
 
-    move-result-object p2
-
-    check-cast p2, Landroid/media/AudioManager;
-
-    iput-object p2, p0, Lcom/oneplus/server/ssp;->mAudioManager:Landroid/media/AudioManager;
-
-    new-instance p2, Landroid/content/IntentFilter;
-
-    invoke-direct {p2}, Landroid/content/IntentFilter;-><init>()V
-
-    const-string v0, "android.intent.action.SCREEN_OFF"
-
-    invoke-virtual {p2, v0}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
-
-    const-string v0, "android.intent.action.SCREEN_ON"
-
-    invoke-virtual {p2, v0}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
-
-    new-instance v0, Landroid/content/Intent;
-
-    const-string v1, "com.oneplus.android.screenOffCheckProcessState"
-
-    invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
-
-    sput-object v0, Lcom/oneplus/server/ssp;->mScreenOffIntent:Landroid/content/Intent;
-
-    sget-object v0, Lcom/oneplus/server/ssp;->mScreenOffIntent:Landroid/content/Intent;
-
-    const/4 v2, 0x0
-
-    invoke-static {p1, v2, v0, v2}, Landroid/app/PendingIntent;->getBroadcast(Landroid/content/Context;ILandroid/content/Intent;I)Landroid/app/PendingIntent;
+    invoke-static {p1}, Lcom/oneplus/android/server/scene/OemSceneButtonController;->getInstance(Landroid/content/Context;)Lcom/oneplus/android/server/scene/OemSceneButtonController;
 
     move-result-object v0
 
-    sput-object v0, Lcom/oneplus/server/ssp;->Jha:Landroid/app/PendingIntent;
+    sput-object v0, Lcom/oneplus/server/ssp;->Oja:Lcom/oneplus/android/server/scene/OemSceneButtonController;
 
-    invoke-virtual {p2, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
+    sget-object v0, Lcom/oneplus/server/ssp;->Oja:Lcom/oneplus/android/server/scene/OemSceneButtonController;
 
-    iget-object p0, p0, Lcom/oneplus/server/ssp;->Ad:Landroid/content/BroadcastReceiver;
+    if-eqz v0, :cond_0
 
-    invoke-virtual {p1, p0, p2}, Landroid/content/Context;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
+    const-string v0, "KeyBlocking"
 
-    return-void
-.end method
+    sget-object v1, Lcom/oneplus/server/ssp;->Oja:Lcom/oneplus/android/server/scene/OemSceneButtonController;
 
-.method public static zta(Landroid/content/Context;Lcom/android/server/am/ActivityManagerService;)V
-    .locals 1
+    invoke-interface {p0, v0, v1}, Lcom/oneplus/core/oimc/IOIMCServiceManager;->registerRemoteAction(Ljava/lang/String;Lcom/oneplus/core/oimc/IOIMCRemoteAction;)V
 
-    invoke-static {}, Lcom/oneplus/server/ssp;->getInstance()Lcom/oneplus/server/ssp;
+    :cond_0
+    const-string v0, "ZenModeObserver"
+
+    invoke-static {}, Lcom/oneplus/android/server/scene/ZenModeObserver;->getInstance()Lcom/oneplus/android/server/scene/ZenModeObserver;
+
+    move-result-object v1
+
+    invoke-interface {p0, v0, v1}, Lcom/oneplus/core/oimc/IOIMCServiceManager;->registerRemoteAction(Ljava/lang/String;Lcom/oneplus/core/oimc/IOIMCRemoteAction;)V
+
+    invoke-static {p1}, Lcom/oneplus/android/server/scene/OemSceneActivityController;->getInstance(Landroid/content/Context;)Lcom/oneplus/android/server/scene/OemSceneActivityController;
 
     move-result-object v0
 
-    invoke-direct {v0, p0, p1}, Lcom/oneplus/server/ssp;->you(Landroid/content/Context;Lcom/android/server/am/ActivityManagerService;)V
+    sput-object v0, Lcom/oneplus/server/ssp;->Qja:Lcom/oneplus/android/server/scene/OemSceneActivityController;
 
-    return-void
-.end method
+    sget-object v0, Lcom/oneplus/server/ssp;->Qja:Lcom/oneplus/android/server/scene/OemSceneActivityController;
 
-.method static synthetic zta(Lcom/oneplus/server/ssp;)V
-    .locals 0
+    if-eqz v0, :cond_1
 
-    invoke-direct {p0}, Lcom/oneplus/server/ssp;->Vs()V
+    const-string v0, "AllowWhiteActivity"
 
+    sget-object v1, Lcom/oneplus/server/ssp;->Qja:Lcom/oneplus/android/server/scene/OemSceneActivityController;
+
+    invoke-virtual {v1}, Lcom/oneplus/android/server/scene/OemSceneActivityController;->lf()Lcom/oneplus/android/server/scene/OemSceneActivityController$AllowWhiteActivity;
+
+    move-result-object v1
+
+    invoke-interface {p0, v0, v1}, Lcom/oneplus/core/oimc/IOIMCServiceManager;->registerRemoteAction(Ljava/lang/String;Lcom/oneplus/core/oimc/IOIMCRemoteAction;)V
+
+    :cond_1
+    invoke-static {p1}, Lcom/oneplus/android/server/scene/OemSceneVibrationController;->getInstance(Landroid/content/Context;)Lcom/oneplus/android/server/scene/OemSceneVibrationController;
+
+    move-result-object v0
+
+    sput-object v0, Lcom/oneplus/server/ssp;->Pja:Lcom/oneplus/android/server/scene/OemSceneVibrationController;
+
+    sget-object v0, Lcom/oneplus/server/ssp;->Pja:Lcom/oneplus/android/server/scene/OemSceneVibrationController;
+
+    if-eqz v0, :cond_2
+
+    const-string v0, "AllowWhiteVibration"
+
+    sget-object v1, Lcom/oneplus/server/ssp;->Pja:Lcom/oneplus/android/server/scene/OemSceneVibrationController;
+
+    invoke-virtual {v1}, Lcom/oneplus/android/server/scene/OemSceneVibrationController;->Ff()Lcom/oneplus/android/server/scene/OemSceneVibrationController$AllowWhiteVibration;
+
+    move-result-object v1
+
+    invoke-interface {p0, v0, v1}, Lcom/oneplus/core/oimc/IOIMCServiceManager;->registerRemoteAction(Ljava/lang/String;Lcom/oneplus/core/oimc/IOIMCRemoteAction;)V
+
+    :cond_2
+    invoke-static {p1}, Lcom/oneplus/android/server/scene/OemSceneLightsController;->getInstance(Landroid/content/Context;)Lcom/oneplus/android/server/scene/OemSceneLightsController;
+
+    move-result-object v0
+
+    sput-object v0, Lcom/oneplus/server/ssp;->Rja:Lcom/oneplus/android/server/scene/OemSceneLightsController;
+
+    sget-object v0, Lcom/oneplus/server/ssp;->Rja:Lcom/oneplus/android/server/scene/OemSceneLightsController;
+
+    if-eqz v0, :cond_3
+
+    const-string v0, "ZenModeLedController"
+
+    sget-object v1, Lcom/oneplus/server/ssp;->Rja:Lcom/oneplus/android/server/scene/OemSceneLightsController;
+
+    invoke-virtual {v1}, Lcom/oneplus/android/server/scene/OemSceneLightsController;->vf()Lcom/oneplus/android/server/scene/OemSceneLightsController$ZenModeLedController;
+
+    move-result-object v1
+
+    invoke-interface {p0, v0, v1}, Lcom/oneplus/core/oimc/IOIMCServiceManager;->registerRemoteAction(Ljava/lang/String;Lcom/oneplus/core/oimc/IOIMCRemoteAction;)V
+
+    :cond_3
+    invoke-static {p1}, Lcom/oneplus/android/server/scene/OemSceneFloatingWindowController;->getInstance(Landroid/content/Context;)Lcom/oneplus/android/server/scene/OemSceneFloatingWindowController;
+
+    move-result-object v0
+
+    sput-object v0, Lcom/oneplus/server/ssp;->Sja:Lcom/oneplus/android/server/scene/OemSceneFloatingWindowController;
+
+    sget-object v0, Lcom/oneplus/server/ssp;->Sja:Lcom/oneplus/android/server/scene/OemSceneFloatingWindowController;
+
+    if-eqz v0, :cond_4
+
+    const-string v0, "FloatingWindowController"
+
+    sget-object v1, Lcom/oneplus/server/ssp;->Sja:Lcom/oneplus/android/server/scene/OemSceneFloatingWindowController;
+
+    invoke-virtual {v1}, Lcom/oneplus/android/server/scene/OemSceneFloatingWindowController;->of()Lcom/oneplus/android/server/scene/OemSceneFloatingWindowController$FloatingWindowController;
+
+    move-result-object v1
+
+    invoke-interface {p0, v0, v1}, Lcom/oneplus/core/oimc/IOIMCServiceManager;->registerRemoteAction(Ljava/lang/String;Lcom/oneplus/core/oimc/IOIMCRemoteAction;)V
+
+    :cond_4
+    invoke-static {p1}, Lcom/oneplus/android/server/scene/OemSceneAudioController;->getInstance(Landroid/content/Context;)Lcom/oneplus/android/server/scene/OemSceneAudioController;
+
+    move-result-object v0
+
+    sput-object v0, Lcom/oneplus/server/ssp;->Tja:Lcom/oneplus/android/server/scene/OemSceneAudioController;
+
+    sget-object v0, Lcom/oneplus/server/ssp;->Tja:Lcom/oneplus/android/server/scene/OemSceneAudioController;
+
+    if-eqz v0, :cond_5
+
+    const-string v0, "AudioProcessesController"
+
+    sget-object v1, Lcom/oneplus/server/ssp;->Tja:Lcom/oneplus/android/server/scene/OemSceneAudioController;
+
+    invoke-virtual {v1}, Lcom/oneplus/android/server/scene/OemSceneAudioController;->nf()Lcom/oneplus/android/server/scene/OemSceneAudioController$AudioProcessesController;
+
+    move-result-object v1
+
+    invoke-interface {p0, v0, v1}, Lcom/oneplus/core/oimc/IOIMCServiceManager;->registerRemoteAction(Ljava/lang/String;Lcom/oneplus/core/oimc/IOIMCRemoteAction;)V
+
+    :cond_5
+    invoke-static {}, Lcom/oneplus/android/server/scene/OemSceneCallBlock;->getInstance()Lcom/oneplus/android/server/scene/OemSceneCallBlock;
+
+    move-result-object v0
+
+    sput-object v0, Lcom/oneplus/server/ssp;->sOemSceneCallBlock:Lcom/oneplus/android/server/scene/OemSceneCallBlock;
+
+    sget-object v0, Lcom/oneplus/server/ssp;->sOemSceneCallBlock:Lcom/oneplus/android/server/scene/OemSceneCallBlock;
+
+    if-eqz v0, :cond_6
+
+    const-string v0, "NotifyFor3PtyCallsBlocking"
+
+    sget-object v1, Lcom/oneplus/server/ssp;->sOemSceneCallBlock:Lcom/oneplus/android/server/scene/OemSceneCallBlock;
+
+    invoke-interface {p0, v0, v1}, Lcom/oneplus/core/oimc/IOIMCServiceManager;->registerRemoteAction(Ljava/lang/String;Lcom/oneplus/core/oimc/IOIMCRemoteAction;)V
+
+    :cond_6
+    invoke-static {p1}, Lcom/oneplus/android/server/scene/ESportMode;->getInstance(Landroid/content/Context;)Lcom/oneplus/android/server/scene/ESportMode;
+
+    move-result-object v0
+
+    sput-object v0, Lcom/oneplus/server/ssp;->Uja:Lcom/oneplus/android/server/scene/ESportMode;
+
+    sget-object v0, Lcom/oneplus/server/ssp;->Uja:Lcom/oneplus/android/server/scene/ESportMode;
+
+    if-eqz v0, :cond_7
+
+    const-string v0, "ESportMode"
+
+    sget-object v1, Lcom/oneplus/server/ssp;->Uja:Lcom/oneplus/android/server/scene/ESportMode;
+
+    invoke-interface {p0, v0, v1}, Lcom/oneplus/core/oimc/IOIMCServiceManager;->registerRemoteAction(Ljava/lang/String;Lcom/oneplus/core/oimc/IOIMCRemoteAction;)V
+
+    :cond_7
+    new-instance v0, Lcom/oneplus/android/server/display/OpOIMCColorManager;
+
+    invoke-direct {v0, p1}, Lcom/oneplus/android/server/display/OpOIMCColorManager;-><init>(Landroid/content/Context;)V
+
+    const-string v1, "GrayColor"
+
+    iget-object v2, v0, Lcom/oneplus/android/server/display/OpOIMCColorManager;->Kea:Lcom/oneplus/android/server/display/OpOIMCColorManager$GrayColor;
+
+    invoke-interface {p0, v1, v2}, Lcom/oneplus/core/oimc/IOIMCServiceManager;->registerRemoteAction(Ljava/lang/String;Lcom/oneplus/core/oimc/IOIMCRemoteAction;)V
+
+    const-string v1, "ColorBalance"
+
+    iget-object v2, v0, Lcom/oneplus/android/server/display/OpOIMCColorManager;->Jea:Lcom/oneplus/android/server/display/OpOIMCColorManager$ColorBalance;
+
+    invoke-interface {p0, v1, v2}, Lcom/oneplus/core/oimc/IOIMCServiceManager;->registerRemoteAction(Ljava/lang/String;Lcom/oneplus/core/oimc/IOIMCRemoteAction;)V
+
+    const-string v1, "ColorDisable"
+
+    iget-object v2, v0, Lcom/oneplus/android/server/display/OpOIMCColorManager;->Mea:Lcom/oneplus/android/server/display/OpOIMCColorManager$ColorDisable;
+
+    invoke-interface {p0, v1, v2}, Lcom/oneplus/core/oimc/IOIMCServiceManager;->registerRemoteAction(Ljava/lang/String;Lcom/oneplus/core/oimc/IOIMCRemoteAction;)V
+
+    const-string v1, "PaperColor"
+
+    iget-object v2, v0, Lcom/oneplus/android/server/display/OpOIMCColorManager;->Lea:Lcom/oneplus/android/server/display/OpOIMCColorManager$PaperColor;
+
+    invoke-interface {p0, v1, v2}, Lcom/oneplus/core/oimc/IOIMCServiceManager;->registerRemoteAction(Ljava/lang/String;Lcom/oneplus/core/oimc/IOIMCRemoteAction;)V
+
+    const-string v1, "gooleMatrix"
+
+    iget-object v0, v0, Lcom/oneplus/android/server/display/OpOIMCColorManager;->Nea:Lcom/oneplus/android/server/display/OpOIMCColorManager$GoogleMatrix;
+
+    invoke-interface {p0, v1, v0}, Lcom/oneplus/core/oimc/IOIMCServiceManager;->registerRemoteAction(Ljava/lang/String;Lcom/oneplus/core/oimc/IOIMCRemoteAction;)V
+
+    invoke-static {}, Lcom/oneplus/android/server/scene/GameModeObserver;->getInstance()Lcom/oneplus/android/server/scene/GameModeObserver;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_8
+
+    const-string v1, "GameModeObserver"
+
+    invoke-interface {p0, v1, v0}, Lcom/oneplus/core/oimc/IOIMCServiceManager;->registerRemoteAction(Ljava/lang/String;Lcom/oneplus/core/oimc/IOIMCRemoteAction;)V
+
+    :cond_8
+    sget-boolean v0, Lcom/oneplus/android/server/scene/OemSceneAdModeController;->IN_USING:Z
+
+    if-eqz v0, :cond_9
+
+    invoke-static {p1}, Lcom/oneplus/android/server/scene/OemSceneAdModeController;->getInstance(Landroid/content/Context;)Lcom/oneplus/android/server/scene/OemSceneAdModeController;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_9
+
+    const-string v1, "AdModeController"
+
+    invoke-interface {p0, v1, v0}, Lcom/oneplus/core/oimc/IOIMCServiceManager;->registerRemoteAction(Ljava/lang/String;Lcom/oneplus/core/oimc/IOIMCRemoteAction;)V
+
+    :cond_9
+    sget-boolean v0, Lcom/oneplus/android/server/scene/OemSceneXLinearVibrationMotorController;->IN_USING:Z
+
+    if-eqz v0, :cond_a
+
+    invoke-static {p1}, Lcom/oneplus/android/server/scene/OemSceneXLinearVibrationMotorController;->getInstance(Landroid/content/Context;)Lcom/oneplus/android/server/scene/OemSceneXLinearVibrationMotorController;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_a
+
+    const-string v1, "XLVMotorController"
+
+    invoke-interface {p0, v1, v0}, Lcom/oneplus/core/oimc/IOIMCServiceManager;->registerRemoteAction(Ljava/lang/String;Lcom/oneplus/core/oimc/IOIMCRemoteAction;)V
+
+    :cond_a
+    invoke-static {p1}, Lcom/oneplus/android/server/scene/OemSceneAutoBrightnessController;->getInstance(Landroid/content/Context;)Lcom/oneplus/android/server/scene/OemSceneAutoBrightnessController;
+
+    move-result-object p1
+
+    sput-object p1, Lcom/oneplus/server/ssp;->Nja:Lcom/oneplus/android/server/scene/OemSceneAutoBrightnessController;
+
+    sget-object p1, Lcom/oneplus/server/ssp;->Nja:Lcom/oneplus/android/server/scene/OemSceneAutoBrightnessController;
+
+    if-eqz p1, :cond_b
+
+    const-string p1, "TurnOffAutoBacklight"
+
+    sget-object v0, Lcom/oneplus/server/ssp;->Nja:Lcom/oneplus/android/server/scene/OemSceneAutoBrightnessController;
+
+    invoke-interface {p0, p1, v0}, Lcom/oneplus/core/oimc/IOIMCServiceManager;->registerRemoteAction(Ljava/lang/String;Lcom/oneplus/core/oimc/IOIMCRemoteAction;)V
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    goto :goto_0
+
+    :catch_0
+    move-exception p0
+
+    new-instance p1, Ljava/lang/StringBuilder;
+
+    invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v0, "registerOIMCFunctions error "
+
+    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p0
+
+    const-string p1, "OIMCManagerUtil"
+
+    invoke-static {p1, p0}, Landroid/util/Slog;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    :cond_b
+    :goto_0
     return-void
 .end method

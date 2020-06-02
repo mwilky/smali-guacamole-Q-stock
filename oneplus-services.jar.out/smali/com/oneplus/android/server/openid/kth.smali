@@ -13,40 +13,76 @@
 
 
 # static fields
-.field private static final AC:Ljava/lang/String; = "openid_config_values"
-
-.field private static final Aea:Ljava/lang/String; = "duid_pkg"
-
-.field private static final Bea:Ljava/lang/String; = "openid_apid"
-
-.field private static final CC:Ljava/lang/String; = "/data/heytap-id"
-
-.field private static final Cea:Ljava/lang/String; = "apid_pkg"
-
 .field private static final DEBUG:Z
+
+.field private static final RD:Ljava/lang/String; = "openid_config_values"
+
+.field private static final Rfa:Ljava/lang/String; = "OpenIdConfigList"
+
+.field private static final SD:Ljava/lang/String; = "/data/heytap-id"
 
 .field private static final STATE_ON:Ljava/lang/String; = "1"
 
+.field private static final Sfa:Ljava/lang/String; = "op_access_whitelist.xml"
+
 .field private static final TAG:Ljava/lang/String; = "OpenIdManager"
 
-.field private static final sea:Ljava/lang/String; = "OpenIdConfigList"
+.field private static final Tfa:Ljava/lang/String; = "filter-conf"
 
-.field private static final tea:Ljava/lang/String; = "op_access_whitelist.xml"
+.field private static final Ufa:Ljava/lang/String; = "isOpen"
 
-.field private static final uea:Ljava/lang/String; = "filter-conf"
+.field private static final Vfa:Ljava/lang/String; = "forceOverride"
 
-.field private static final vea:Ljava/lang/String; = "isOpen"
+.field private static final Wfa:Ljava/lang/String; = "openid_guid"
 
-.field private static final wea:Ljava/lang/String; = "forceOverride"
+.field private static final Xfa:Ljava/lang/String; = "guid_pkg"
 
-.field private static final xea:Ljava/lang/String; = "openid_guid"
+.field private static final Yfa:Ljava/lang/String; = "openid_duid"
 
-.field private static final yea:Ljava/lang/String; = "guid_pkg"
+.field private static final Zfa:Ljava/lang/String; = "duid_pkg"
 
-.field private static final zea:Ljava/lang/String; = "openid_duid"
+.field private static final _fa:Ljava/lang/String; = "openid_apid"
+
+.field private static final aga:Ljava/lang/String; = "apid_pkg"
 
 
 # instance fields
+.field private Lfa:Lcom/oneplus/config/ConfigObserver;
+
+.field private Mfa:Ljava/lang/Object;
+
+.field private Nfa:Z
+
+.field private Ofa:Ljava/util/ArrayList;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/ArrayList<",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private Pfa:Ljava/util/ArrayList;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/ArrayList<",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private Qfa:Ljava/util/ArrayList;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/ArrayList<",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+.end field
+
 .field private mCallback:Lcom/oneplus/android/server/openid/kth$zta;
 
 .field private mContext:Landroid/content/Context;
@@ -54,42 +90,6 @@
 .field private mEnabled:Z
 
 .field private mTotalCount:I
-
-.field private mea:Lcom/oneplus/config/ConfigObserver;
-
-.field private nea:Ljava/lang/Object;
-
-.field private oea:Z
-
-.field private pea:Ljava/util/ArrayList;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/ArrayList<",
-            "Ljava/lang/String;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private qea:Ljava/util/ArrayList;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/ArrayList<",
-            "Ljava/lang/String;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private rea:Ljava/util/ArrayList;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/ArrayList<",
-            "Ljava/lang/String;",
-            ">;"
-        }
-    .end annotation
-.end field
 
 
 # direct methods
@@ -112,7 +112,7 @@
 
     invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
-    iput-object v0, p0, Lcom/oneplus/android/server/openid/kth;->nea:Ljava/lang/Object;
+    iput-object v0, p0, Lcom/oneplus/android/server/openid/kth;->Mfa:Ljava/lang/Object;
 
     const/4 v0, 0x0
 
@@ -122,44 +122,44 @@
 
     iput-boolean v1, p0, Lcom/oneplus/android/server/openid/kth;->mEnabled:Z
 
-    iput-boolean v0, p0, Lcom/oneplus/android/server/openid/kth;->oea:Z
+    iput-boolean v0, p0, Lcom/oneplus/android/server/openid/kth;->Nfa:Z
 
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/oneplus/android/server/openid/kth;->pea:Ljava/util/ArrayList;
+    iput-object v0, p0, Lcom/oneplus/android/server/openid/kth;->Ofa:Ljava/util/ArrayList;
 
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/oneplus/android/server/openid/kth;->qea:Ljava/util/ArrayList;
+    iput-object v0, p0, Lcom/oneplus/android/server/openid/kth;->Pfa:Ljava/util/ArrayList;
 
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/oneplus/android/server/openid/kth;->rea:Ljava/util/ArrayList;
+    iput-object v0, p0, Lcom/oneplus/android/server/openid/kth;->Qfa:Ljava/util/ArrayList;
 
     iput-object p1, p0, Lcom/oneplus/android/server/openid/kth;->mContext:Landroid/content/Context;
 
     iput-object p2, p0, Lcom/oneplus/android/server/openid/kth;->mCallback:Lcom/oneplus/android/server/openid/kth$zta;
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/openid/kth;->ms()Ljava/io/File;
+    invoke-direct {p0}, Lcom/oneplus/android/server/openid/kth;->Fs()Ljava/io/File;
 
-    iget-object p1, p0, Lcom/oneplus/android/server/openid/kth;->nea:Ljava/lang/Object;
+    iget-object p1, p0, Lcom/oneplus/android/server/openid/kth;->Mfa:Ljava/lang/Object;
 
     monitor-enter p1
 
     :try_start_0
-    invoke-direct {p0}, Lcom/oneplus/android/server/openid/kth;->os()V
+    invoke-direct {p0}, Lcom/oneplus/android/server/openid/kth;->Hs()V
 
-    iget-boolean p2, p0, Lcom/oneplus/android/server/openid/kth;->oea:Z
+    iget-boolean p2, p0, Lcom/oneplus/android/server/openid/kth;->Nfa:Z
 
     if-nez p2, :cond_0
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/openid/kth;->ns()V
+    invoke-direct {p0}, Lcom/oneplus/android/server/openid/kth;->Gs()V
 
     :cond_0
     monitor-exit p1
@@ -176,219 +176,7 @@
     throw p0
 .end method
 
-.method private gck(Lorg/json/JSONArray;)V
-    .locals 11
-
-    if-nez p1, :cond_0
-
-    return-void
-
-    :cond_0
-    :try_start_0
-    new-instance v0, Landroid/util/ArrayMap;
-
-    invoke-direct {v0}, Landroid/util/ArrayMap;-><init>()V
-
-    const/4 v1, 0x0
-
-    move v2, v1
-
-    move v3, v2
-
-    move v4, v3
-
-    :goto_0
-    invoke-virtual {p1}, Lorg/json/JSONArray;->length()I
-
-    move-result v5
-
-    const/4 v6, 0x1
-
-    if-ge v2, v5, :cond_5
-
-    invoke-virtual {p1, v2}, Lorg/json/JSONArray;->getJSONObject(I)Lorg/json/JSONObject;
-
-    move-result-object v5
-
-    const-string v7, "name"
-
-    invoke-virtual {v5, v7}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v7
-
-    const-string v8, "openid_config_values"
-
-    invoke-virtual {v7, v8}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v7
-
-    if-eqz v7, :cond_4
-
-    const-string v7, "value"
-
-    invoke-virtual {v5, v7}, Lorg/json/JSONObject;->getJSONArray(Ljava/lang/String;)Lorg/json/JSONArray;
-
-    move-result-object v5
-
-    move v7, v4
-
-    move v4, v3
-
-    move v3, v1
-
-    :goto_1
-    invoke-virtual {v5}, Lorg/json/JSONArray;->length()I
-
-    move-result v8
-
-    if-ge v3, v8, :cond_3
-
-    invoke-virtual {v5, v3}, Lorg/json/JSONArray;->getJSONObject(I)Lorg/json/JSONObject;
-
-    move-result-object v8
-
-    const-string v9, "type"
-
-    invoke-virtual {v8, v9}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v9
-
-    const-string v10, "val"
-
-    invoke-virtual {v8, v10}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v8
-
-    invoke-virtual {v0, v9}, Landroid/util/ArrayMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v10
-
-    check-cast v10, Ljava/util/ArrayList;
-
-    if-nez v10, :cond_1
-
-    new-instance v10, Ljava/util/ArrayList;
-
-    invoke-direct {v10}, Ljava/util/ArrayList;-><init>()V
-
-    invoke-virtual {v10, v8}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    invoke-virtual {v0, v9, v10}, Landroid/util/ArrayMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    goto :goto_2
-
-    :cond_1
-    invoke-virtual {v10, v8}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    :goto_2
-    if-nez v4, :cond_2
-
-    move v4, v6
-
-    :cond_2
-    add-int/lit8 v7, v7, 0x1
-
-    add-int/lit8 v3, v3, 0x1
-
-    goto :goto_1
-
-    :cond_3
-    move v3, v4
-
-    move v4, v7
-
-    :cond_4
-    add-int/lit8 v2, v2, 0x1
-
-    goto :goto_0
-
-    :cond_5
-    iget p1, p0, Lcom/oneplus/android/server/openid/kth;->mTotalCount:I
-
-    if-eq p1, v4, :cond_6
-
-    move v1, v6
-
-    :cond_6
-    or-int p1, v3, v1
-
-    sget-boolean v1, Lcom/oneplus/android/server/openid/kth;->DEBUG:Z
-
-    if-eqz v1, :cond_8
-
-    const-string v1, "OpenIdManager"
-
-    new-instance v2, Ljava/lang/StringBuilder;
-
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v3, "OpenId online config "
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    if-eqz p1, :cond_7
-
-    const-string v3, "changed."
-
-    goto :goto_3
-
-    :cond_7
-    const-string v3, "not change."
-
-    :goto_3
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-static {v1, v2}, Landroid/util/Slog;->i(Ljava/lang/String;Ljava/lang/String;)I
-
-    :cond_8
-    if-eqz p1, :cond_9
-
-    iget-object p1, p0, Lcom/oneplus/android/server/openid/kth;->nea:Ljava/lang/Object;
-
-    monitor-enter p1
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
-
-    :try_start_1
-    invoke-direct {p0, v0}, Lcom/oneplus/android/server/openid/kth;->you(Landroid/util/ArrayMap;)V
-
-    iput v4, p0, Lcom/oneplus/android/server/openid/kth;->mTotalCount:I
-
-    monitor-exit p1
-
-    goto :goto_4
-
-    :catchall_0
-    move-exception p0
-
-    monitor-exit p1
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
-    :try_start_2
-    throw p0
-    :try_end_2
-    .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_0
-
-    :catch_0
-    move-exception p0
-
-    const-string p1, "OpenIdManager"
-
-    const-string v0, "resolveOpenIdConfigFromJSON got exception..."
-
-    invoke-static {p1, v0, p0}, Landroid/util/Slog;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
-
-    :cond_9
-    :goto_4
-    return-void
-.end method
-
-.method private ms()Ljava/io/File;
+.method private Fs()Ljava/io/File;
     .locals 2
 
     :try_start_0
@@ -433,7 +221,7 @@
     return-object p0
 .end method
 
-.method private ns()V
+.method private Gs()V
     .locals 12
 
     const-string v0, "OpenIdManager"
@@ -655,24 +443,24 @@
     return-void
 .end method
 
-.method private os()V
-    .locals 6
+.method private Hs()V
+    .locals 7
 
     const-string v0, "OpenIdManager"
 
-    iget-object v1, p0, Lcom/oneplus/android/server/openid/kth;->pea:Ljava/util/ArrayList;
+    iget-object v1, p0, Lcom/oneplus/android/server/openid/kth;->Ofa:Ljava/util/ArrayList;
 
     invoke-virtual {v1}, Ljava/util/ArrayList;->clear()V
 
-    iget-object v1, p0, Lcom/oneplus/android/server/openid/kth;->qea:Ljava/util/ArrayList;
+    iget-object v1, p0, Lcom/oneplus/android/server/openid/kth;->Pfa:Ljava/util/ArrayList;
 
     invoke-virtual {v1}, Ljava/util/ArrayList;->clear()V
 
-    iget-object v1, p0, Lcom/oneplus/android/server/openid/kth;->rea:Ljava/util/ArrayList;
+    iget-object v1, p0, Lcom/oneplus/android/server/openid/kth;->Qfa:Ljava/util/ArrayList;
 
     invoke-virtual {v1}, Ljava/util/ArrayList;->clear()V
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/openid/kth;->ms()Ljava/io/File;
+    invoke-direct {p0}, Lcom/oneplus/android/server/openid/kth;->Fs()Ljava/io/File;
 
     move-result-object v1
 
@@ -703,198 +491,427 @@
 
     invoke-interface {v2}, Lorg/xmlpull/v1/XmlPullParser;->getDepth()I
 
-    move-result v1
+    move-result v3
 
     :cond_1
     :goto_0
     invoke-interface {v2}, Lorg/xmlpull/v1/XmlPullParser;->next()I
 
-    move-result v3
+    move-result v4
 
-    const/4 v4, 0x1
+    const/4 v5, 0x1
 
-    if-eq v3, v4, :cond_7
+    if-eq v4, v5, :cond_7
 
     invoke-interface {v2}, Lorg/xmlpull/v1/XmlPullParser;->getDepth()I
 
-    move-result v4
+    move-result v5
 
-    if-le v4, v1, :cond_7
+    if-le v5, v3, :cond_7
 
-    const/4 v4, 0x2
+    const/4 v5, 0x2
 
-    if-eq v3, v4, :cond_2
+    if-eq v4, v5, :cond_2
 
     goto :goto_0
 
     :cond_2
-    const-string v3, "isOpen"
-
-    invoke-interface {v2}, Lorg/xmlpull/v1/XmlPullParser;->getName()Ljava/lang/String;
-
-    move-result-object v4
-
-    invoke-virtual {v3, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v3
-    :try_end_1
-    .catch Lorg/xmlpull/v1/XmlPullParserException; {:try_start_1 .. :try_end_1} :catch_0
-    .catch Ljava/io/IOException; {:try_start_1 .. :try_end_1} :catch_0
-
-    const-string v4, "1"
-
-    if-eqz v3, :cond_3
-
-    :try_start_2
-    invoke-interface {v2}, Lorg/xmlpull/v1/XmlPullParser;->nextText()Ljava/lang/String;
-
-    move-result-object v3
-
-    invoke-virtual {v4, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v3
-
-    iput-boolean v3, p0, Lcom/oneplus/android/server/openid/kth;->mEnabled:Z
-
-    iget-object v3, p0, Lcom/oneplus/android/server/openid/kth;->mCallback:Lcom/oneplus/android/server/openid/kth$zta;
-
-    if-eqz v3, :cond_1
-
-    iget-object v3, p0, Lcom/oneplus/android/server/openid/kth;->mCallback:Lcom/oneplus/android/server/openid/kth$zta;
-
-    iget-boolean v4, p0, Lcom/oneplus/android/server/openid/kth;->mEnabled:Z
-
-    invoke-interface {v3, v4}, Lcom/oneplus/android/server/openid/kth$zta;->rtg(Z)V
-
-    goto :goto_0
-
-    :cond_3
-    const-string v3, "forceOverride"
+    const-string v4, "isOpen"
 
     invoke-interface {v2}, Lorg/xmlpull/v1/XmlPullParser;->getName()Ljava/lang/String;
 
     move-result-object v5
 
-    invoke-virtual {v3, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v4, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    move-result v3
+    move-result v4
+    :try_end_1
+    .catch Lorg/xmlpull/v1/XmlPullParserException; {:try_start_1 .. :try_end_1} :catch_0
+    .catch Ljava/io/IOException; {:try_start_1 .. :try_end_1} :catch_0
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    if-eqz v3, :cond_4
+    const-string v5, "1"
+
+    if-eqz v4, :cond_3
+
+    :try_start_2
+    invoke-interface {v2}, Lorg/xmlpull/v1/XmlPullParser;->nextText()Ljava/lang/String;
+
+    move-result-object v4
+
+    invoke-virtual {v5, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v4
+
+    iput-boolean v4, p0, Lcom/oneplus/android/server/openid/kth;->mEnabled:Z
+
+    iget-object v4, p0, Lcom/oneplus/android/server/openid/kth;->mCallback:Lcom/oneplus/android/server/openid/kth$zta;
+
+    if-eqz v4, :cond_1
+
+    iget-object v4, p0, Lcom/oneplus/android/server/openid/kth;->mCallback:Lcom/oneplus/android/server/openid/kth$zta;
+
+    iget-boolean v5, p0, Lcom/oneplus/android/server/openid/kth;->mEnabled:Z
+
+    invoke-interface {v4, v5}, Lcom/oneplus/android/server/openid/kth$zta;->rtg(Z)V
+
+    goto :goto_0
+
+    :cond_3
+    const-string v4, "forceOverride"
+
+    invoke-interface {v2}, Lorg/xmlpull/v1/XmlPullParser;->getName()Ljava/lang/String;
+
+    move-result-object v6
+
+    invoke-virtual {v4, v6}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v4
+
+    if-eqz v4, :cond_4
 
     invoke-interface {v2}, Lorg/xmlpull/v1/XmlPullParser;->nextText()Ljava/lang/String;
 
-    move-result-object v3
+    move-result-object v4
 
-    invoke-virtual {v4, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v5, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    move-result v3
+    move-result v4
 
-    iput-boolean v3, p0, Lcom/oneplus/android/server/openid/kth;->oea:Z
+    iput-boolean v4, p0, Lcom/oneplus/android/server/openid/kth;->Nfa:Z
 
-    new-instance v3, Ljava/lang/StringBuilder;
+    new-instance v4, Ljava/lang/StringBuilder;
 
-    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v4, "Get state of force override: "
+    const-string v5, "Get state of force override: "
 
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean v4, p0, Lcom/oneplus/android/server/openid/kth;->oea:Z
+    iget-boolean v5, p0, Lcom/oneplus/android/server/openid/kth;->Nfa:Z
 
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v3
+    move-result-object v4
 
-    invoke-static {v0, v3}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {v0, v4}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     goto :goto_0
 
     :cond_4
-    const-string v3, "guid_pkg"
+    const-string v4, "guid_pkg"
 
     invoke-interface {v2}, Lorg/xmlpull/v1/XmlPullParser;->getName()Ljava/lang/String;
 
-    move-result-object v4
+    move-result-object v5
 
-    invoke-virtual {v3, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v4, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    move-result v3
+    move-result v4
 
-    if-eqz v3, :cond_5
+    if-eqz v4, :cond_5
 
-    iget-object v3, p0, Lcom/oneplus/android/server/openid/kth;->pea:Ljava/util/ArrayList;
+    iget-object v4, p0, Lcom/oneplus/android/server/openid/kth;->Ofa:Ljava/util/ArrayList;
 
     invoke-interface {v2}, Lorg/xmlpull/v1/XmlPullParser;->nextText()Ljava/lang/String;
 
-    move-result-object v4
+    move-result-object v5
 
     :goto_1
-    invoke-virtual {v3, v4}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v4, v5}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     goto :goto_0
 
     :cond_5
-    const-string v3, "duid_pkg"
+    const-string v4, "duid_pkg"
 
     invoke-interface {v2}, Lorg/xmlpull/v1/XmlPullParser;->getName()Ljava/lang/String;
 
-    move-result-object v4
+    move-result-object v5
 
-    invoke-virtual {v3, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v4, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    move-result v3
+    move-result v4
 
-    if-eqz v3, :cond_6
+    if-eqz v4, :cond_6
 
-    iget-object v3, p0, Lcom/oneplus/android/server/openid/kth;->qea:Ljava/util/ArrayList;
+    iget-object v4, p0, Lcom/oneplus/android/server/openid/kth;->Pfa:Ljava/util/ArrayList;
 
     invoke-interface {v2}, Lorg/xmlpull/v1/XmlPullParser;->nextText()Ljava/lang/String;
 
-    move-result-object v4
+    move-result-object v5
 
     goto :goto_1
 
     :cond_6
-    const-string v3, "apid_pkg"
+    const-string v4, "apid_pkg"
 
     invoke-interface {v2}, Lorg/xmlpull/v1/XmlPullParser;->getName()Ljava/lang/String;
 
-    move-result-object v4
+    move-result-object v5
 
-    invoke-virtual {v3, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v4, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    move-result v3
+    move-result v4
 
-    if-eqz v3, :cond_1
+    if-eqz v4, :cond_1
 
-    iget-object v3, p0, Lcom/oneplus/android/server/openid/kth;->rea:Ljava/util/ArrayList;
+    iget-object v4, p0, Lcom/oneplus/android/server/openid/kth;->Qfa:Ljava/util/ArrayList;
 
     invoke-interface {v2}, Lorg/xmlpull/v1/XmlPullParser;->nextText()Ljava/lang/String;
 
-    move-result-object v4
+    move-result-object v5
     :try_end_2
     .catch Lorg/xmlpull/v1/XmlPullParserException; {:try_start_2 .. :try_end_2} :catch_0
     .catch Ljava/io/IOException; {:try_start_2 .. :try_end_2} :catch_0
+    .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
     goto :goto_1
+
+    :catchall_0
+    move-exception p0
+
+    goto :goto_2
 
     :catch_0
     move-exception p0
 
-    const-string v1, "Error while read whitelist config file"
+    :try_start_3
+    const-string v2, "Error while read whitelist config file"
 
-    invoke-static {v0, v1, p0}, Landroid/util/Slog;->w(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
+    invoke-static {v0, v2, p0}, Landroid/util/Slog;->w(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
+    :try_end_3
+    .catchall {:try_start_3 .. :try_end_3} :catchall_0
 
     :cond_7
+    invoke-static {v1}, Llibcore/io/IoUtils;->closeQuietly(Ljava/lang/AutoCloseable;)V
+
     return-void
+
+    :goto_2
+    invoke-static {v1}, Llibcore/io/IoUtils;->closeQuietly(Ljava/lang/AutoCloseable;)V
+
+    throw p0
 
     :catch_1
     const-string p0, "No config file found"
 
     invoke-static {v0, p0}, Landroid/util/Slog;->w(Ljava/lang/String;Ljava/lang/String;)I
 
+    return-void
+.end method
+
+.method private qbh(Lorg/json/JSONArray;)V
+    .locals 11
+
+    if-nez p1, :cond_0
+
+    return-void
+
+    :cond_0
+    :try_start_0
+    new-instance v0, Landroid/util/ArrayMap;
+
+    invoke-direct {v0}, Landroid/util/ArrayMap;-><init>()V
+
+    const/4 v1, 0x0
+
+    move v2, v1
+
+    move v3, v2
+
+    move v4, v3
+
+    :goto_0
+    invoke-virtual {p1}, Lorg/json/JSONArray;->length()I
+
+    move-result v5
+
+    const/4 v6, 0x1
+
+    if-ge v2, v5, :cond_5
+
+    invoke-virtual {p1, v2}, Lorg/json/JSONArray;->getJSONObject(I)Lorg/json/JSONObject;
+
+    move-result-object v5
+
+    const-string v7, "name"
+
+    invoke-virtual {v5, v7}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v7
+
+    const-string v8, "openid_config_values"
+
+    invoke-virtual {v7, v8}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v7
+
+    if-eqz v7, :cond_4
+
+    const-string v7, "value"
+
+    invoke-virtual {v5, v7}, Lorg/json/JSONObject;->getJSONArray(Ljava/lang/String;)Lorg/json/JSONArray;
+
+    move-result-object v5
+
+    move v7, v4
+
+    move v4, v3
+
+    move v3, v1
+
+    :goto_1
+    invoke-virtual {v5}, Lorg/json/JSONArray;->length()I
+
+    move-result v8
+
+    if-ge v3, v8, :cond_3
+
+    invoke-virtual {v5, v3}, Lorg/json/JSONArray;->getJSONObject(I)Lorg/json/JSONObject;
+
+    move-result-object v8
+
+    const-string v9, "type"
+
+    invoke-virtual {v8, v9}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v9
+
+    const-string v10, "val"
+
+    invoke-virtual {v8, v10}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v8
+
+    invoke-virtual {v0, v9}, Landroid/util/ArrayMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v10
+
+    check-cast v10, Ljava/util/ArrayList;
+
+    if-nez v10, :cond_1
+
+    new-instance v10, Ljava/util/ArrayList;
+
+    invoke-direct {v10}, Ljava/util/ArrayList;-><init>()V
+
+    invoke-virtual {v10, v8}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    invoke-virtual {v0, v9, v10}, Landroid/util/ArrayMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    goto :goto_2
+
+    :cond_1
+    invoke-virtual {v10, v8}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    :goto_2
+    if-nez v4, :cond_2
+
+    move v4, v6
+
+    :cond_2
+    add-int/lit8 v7, v7, 0x1
+
+    add-int/lit8 v3, v3, 0x1
+
+    goto :goto_1
+
+    :cond_3
+    move v3, v4
+
+    move v4, v7
+
+    :cond_4
+    add-int/lit8 v2, v2, 0x1
+
+    goto :goto_0
+
+    :cond_5
+    iget p1, p0, Lcom/oneplus/android/server/openid/kth;->mTotalCount:I
+
+    if-eq p1, v4, :cond_6
+
+    move v1, v6
+
+    :cond_6
+    or-int p1, v3, v1
+
+    sget-boolean v1, Lcom/oneplus/android/server/openid/kth;->DEBUG:Z
+
+    if-eqz v1, :cond_8
+
+    const-string v1, "OpenIdManager"
+
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v3, "OpenId online config "
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    if-eqz p1, :cond_7
+
+    const-string v3, "changed."
+
+    goto :goto_3
+
+    :cond_7
+    const-string v3, "not change."
+
+    :goto_3
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-static {v1, v2}, Landroid/util/Slog;->i(Ljava/lang/String;Ljava/lang/String;)I
+
+    :cond_8
+    if-eqz p1, :cond_9
+
+    iget-object p1, p0, Lcom/oneplus/android/server/openid/kth;->Mfa:Ljava/lang/Object;
+
+    monitor-enter p1
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    :try_start_1
+    invoke-direct {p0, v0}, Lcom/oneplus/android/server/openid/kth;->you(Landroid/util/ArrayMap;)V
+
+    iput v4, p0, Lcom/oneplus/android/server/openid/kth;->mTotalCount:I
+
+    monitor-exit p1
+
+    goto :goto_4
+
+    :catchall_0
+    move-exception p0
+
+    monitor-exit p1
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    :try_start_2
+    throw p0
+    :try_end_2
+    .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_0
+
+    :catch_0
+    move-exception p0
+
+    const-string p1, "OpenIdManager"
+
+    const-string v0, "resolveOpenIdConfigFromJSON got exception..."
+
+    invoke-static {p1, v0, p0}, Landroid/util/Slog;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
+
+    :cond_9
+    :goto_4
     return-void
 .end method
 
@@ -953,7 +970,7 @@
 
     move-result v9
 
-    iput-boolean v9, v0, Lcom/oneplus/android/server/openid/kth;->oea:Z
+    iput-boolean v9, v0, Lcom/oneplus/android/server/openid/kth;->Nfa:Z
 
     :cond_0
     new-instance v9, Ljava/lang/StringBuilder;
@@ -964,7 +981,7 @@
 
     invoke-virtual {v9, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean v12, v0, Lcom/oneplus/android/server/openid/kth;->oea:Z
+    iget-boolean v12, v0, Lcom/oneplus/android/server/openid/kth;->Nfa:Z
 
     invoke-virtual {v9, v12}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -1006,49 +1023,49 @@
 
     move-object/from16 v16, v4
 
-    iget-boolean v4, v0, Lcom/oneplus/android/server/openid/kth;->oea:Z
+    iget-boolean v4, v0, Lcom/oneplus/android/server/openid/kth;->Nfa:Z
 
     if-eqz v4, :cond_1
 
-    iput-object v13, v0, Lcom/oneplus/android/server/openid/kth;->pea:Ljava/util/ArrayList;
+    iput-object v13, v0, Lcom/oneplus/android/server/openid/kth;->Ofa:Ljava/util/ArrayList;
 
-    iput-object v15, v0, Lcom/oneplus/android/server/openid/kth;->qea:Ljava/util/ArrayList;
+    iput-object v15, v0, Lcom/oneplus/android/server/openid/kth;->Pfa:Ljava/util/ArrayList;
 
-    iput-object v12, v0, Lcom/oneplus/android/server/openid/kth;->rea:Ljava/util/ArrayList;
+    iput-object v12, v0, Lcom/oneplus/android/server/openid/kth;->Qfa:Ljava/util/ArrayList;
 
     goto :goto_0
 
     :cond_1
     if-eqz v13, :cond_2
 
-    iget-object v4, v0, Lcom/oneplus/android/server/openid/kth;->pea:Ljava/util/ArrayList;
+    iget-object v4, v0, Lcom/oneplus/android/server/openid/kth;->Ofa:Ljava/util/ArrayList;
 
     invoke-virtual {v13, v4}, Ljava/util/ArrayList;->removeAll(Ljava/util/Collection;)Z
 
     :cond_2
-    iget-object v4, v0, Lcom/oneplus/android/server/openid/kth;->pea:Ljava/util/ArrayList;
+    iget-object v4, v0, Lcom/oneplus/android/server/openid/kth;->Ofa:Ljava/util/ArrayList;
 
     invoke-virtual {v4, v13}, Ljava/util/ArrayList;->addAll(Ljava/util/Collection;)Z
 
     if-eqz v15, :cond_3
 
-    iget-object v4, v0, Lcom/oneplus/android/server/openid/kth;->qea:Ljava/util/ArrayList;
+    iget-object v4, v0, Lcom/oneplus/android/server/openid/kth;->Pfa:Ljava/util/ArrayList;
 
     invoke-virtual {v15, v4}, Ljava/util/ArrayList;->removeAll(Ljava/util/Collection;)Z
 
     :cond_3
-    iget-object v4, v0, Lcom/oneplus/android/server/openid/kth;->qea:Ljava/util/ArrayList;
+    iget-object v4, v0, Lcom/oneplus/android/server/openid/kth;->Pfa:Ljava/util/ArrayList;
 
     invoke-virtual {v4, v15}, Ljava/util/ArrayList;->addAll(Ljava/util/Collection;)Z
 
     if-eqz v12, :cond_4
 
-    iget-object v4, v0, Lcom/oneplus/android/server/openid/kth;->rea:Ljava/util/ArrayList;
+    iget-object v4, v0, Lcom/oneplus/android/server/openid/kth;->Qfa:Ljava/util/ArrayList;
 
     invoke-virtual {v12, v4}, Ljava/util/ArrayList;->removeAll(Ljava/util/Collection;)Z
 
     :cond_4
-    iget-object v4, v0, Lcom/oneplus/android/server/openid/kth;->rea:Ljava/util/ArrayList;
+    iget-object v4, v0, Lcom/oneplus/android/server/openid/kth;->Qfa:Ljava/util/ArrayList;
 
     invoke-virtual {v4, v12}, Ljava/util/ArrayList;->addAll(Ljava/util/Collection;)Z
 
@@ -1226,7 +1243,7 @@
     invoke-interface {v4, v7}, Lorg/xmlpull/v1/XmlSerializer;->text(Ljava/lang/String;)Lorg/xmlpull/v1/XmlSerializer;
 
     :cond_6
-    iget-object v1, v0, Lcom/oneplus/android/server/openid/kth;->pea:Ljava/util/ArrayList;
+    iget-object v1, v0, Lcom/oneplus/android/server/openid/kth;->Ofa:Ljava/util/ArrayList;
     :try_end_3
     .catch Ljava/lang/Exception; {:try_start_3 .. :try_end_3} :catch_0
     .catchall {:try_start_3 .. :try_end_3} :catchall_0
@@ -1236,7 +1253,7 @@
     if-eqz v1, :cond_8
 
     :try_start_4
-    iget-object v1, v0, Lcom/oneplus/android/server/openid/kth;->pea:Ljava/util/ArrayList;
+    iget-object v1, v0, Lcom/oneplus/android/server/openid/kth;->Ofa:Ljava/util/ArrayList;
 
     invoke-virtual {v1}, Ljava/util/ArrayList;->isEmpty()Z
 
@@ -1254,7 +1271,7 @@
 
     invoke-interface {v4, v7}, Lorg/xmlpull/v1/XmlSerializer;->text(Ljava/lang/String;)Lorg/xmlpull/v1/XmlSerializer;
 
-    iget-object v1, v0, Lcom/oneplus/android/server/openid/kth;->pea:Ljava/util/ArrayList;
+    iget-object v1, v0, Lcom/oneplus/android/server/openid/kth;->Ofa:Ljava/util/ArrayList;
 
     invoke-virtual {v1}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
@@ -1299,11 +1316,11 @@
     invoke-interface {v4, v7}, Lorg/xmlpull/v1/XmlSerializer;->text(Ljava/lang/String;)Lorg/xmlpull/v1/XmlSerializer;
 
     :cond_8
-    iget-object v1, v0, Lcom/oneplus/android/server/openid/kth;->qea:Ljava/util/ArrayList;
+    iget-object v1, v0, Lcom/oneplus/android/server/openid/kth;->Pfa:Ljava/util/ArrayList;
 
     if-eqz v1, :cond_a
 
-    iget-object v1, v0, Lcom/oneplus/android/server/openid/kth;->qea:Ljava/util/ArrayList;
+    iget-object v1, v0, Lcom/oneplus/android/server/openid/kth;->Pfa:Ljava/util/ArrayList;
 
     invoke-virtual {v1}, Ljava/util/ArrayList;->isEmpty()Z
 
@@ -1321,7 +1338,7 @@
 
     invoke-interface {v4, v7}, Lorg/xmlpull/v1/XmlSerializer;->text(Ljava/lang/String;)Lorg/xmlpull/v1/XmlSerializer;
 
-    iget-object v1, v0, Lcom/oneplus/android/server/openid/kth;->qea:Ljava/util/ArrayList;
+    iget-object v1, v0, Lcom/oneplus/android/server/openid/kth;->Pfa:Ljava/util/ArrayList;
 
     invoke-virtual {v1}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
@@ -1366,11 +1383,11 @@
     invoke-interface {v4, v7}, Lorg/xmlpull/v1/XmlSerializer;->text(Ljava/lang/String;)Lorg/xmlpull/v1/XmlSerializer;
 
     :cond_a
-    iget-object v1, v0, Lcom/oneplus/android/server/openid/kth;->rea:Ljava/util/ArrayList;
+    iget-object v1, v0, Lcom/oneplus/android/server/openid/kth;->Qfa:Ljava/util/ArrayList;
 
     if-eqz v1, :cond_c
 
-    iget-object v1, v0, Lcom/oneplus/android/server/openid/kth;->rea:Ljava/util/ArrayList;
+    iget-object v1, v0, Lcom/oneplus/android/server/openid/kth;->Qfa:Ljava/util/ArrayList;
 
     invoke-virtual {v1}, Ljava/util/ArrayList;->isEmpty()Z
 
@@ -1388,7 +1405,7 @@
 
     invoke-interface {v4, v7}, Lorg/xmlpull/v1/XmlSerializer;->text(Ljava/lang/String;)Lorg/xmlpull/v1/XmlSerializer;
 
-    iget-object v1, v0, Lcom/oneplus/android/server/openid/kth;->rea:Ljava/util/ArrayList;
+    iget-object v1, v0, Lcom/oneplus/android/server/openid/kth;->Qfa:Ljava/util/ArrayList;
 
     invoke-virtual {v1}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
@@ -1472,7 +1489,7 @@
 
     invoke-interface {v4}, Lorg/xmlpull/v1/XmlSerializer;->endDocument()V
 
-    invoke-direct/range {p0 .. p0}, Lcom/oneplus/android/server/openid/kth;->ms()Ljava/io/File;
+    invoke-direct/range {p0 .. p0}, Lcom/oneplus/android/server/openid/kth;->Fs()Ljava/io/File;
 
     move-result-object v0
 
@@ -1689,14 +1706,14 @@
 .method static synthetic zta(Lcom/oneplus/android/server/openid/kth;Lorg/json/JSONArray;)V
     .locals 0
 
-    invoke-direct {p0, p1}, Lcom/oneplus/android/server/openid/kth;->gck(Lorg/json/JSONArray;)V
+    invoke-direct {p0, p1}, Lcom/oneplus/android/server/openid/kth;->qbh(Lorg/json/JSONArray;)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public bf()V
+.method public kf()V
     .locals 5
 
     new-instance v0, Lcom/oneplus/config/ConfigObserver;
@@ -1713,16 +1730,16 @@
 
     invoke-direct {v0, v1, v3, v2, v4}, Lcom/oneplus/config/ConfigObserver;-><init>(Landroid/content/Context;Landroid/os/Handler;Lcom/oneplus/config/ConfigObserver$ConfigUpdater;Ljava/lang/String;)V
 
-    iput-object v0, p0, Lcom/oneplus/android/server/openid/kth;->mea:Lcom/oneplus/config/ConfigObserver;
+    iput-object v0, p0, Lcom/oneplus/android/server/openid/kth;->Lfa:Lcom/oneplus/config/ConfigObserver;
 
-    iget-object p0, p0, Lcom/oneplus/android/server/openid/kth;->mea:Lcom/oneplus/config/ConfigObserver;
+    iget-object p0, p0, Lcom/oneplus/android/server/openid/kth;->Lfa:Lcom/oneplus/config/ConfigObserver;
 
     invoke-virtual {p0}, Lcom/oneplus/config/ConfigObserver;->register()V
 
     return-void
 .end method
 
-.method public sis(Ljava/io/PrintWriter;[Ljava/lang/String;)V
+.method public tsu(Ljava/io/PrintWriter;[Ljava/lang/String;)V
     .locals 4
 
     :try_start_0
@@ -1762,7 +1779,7 @@
 
     invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean v0, p0, Lcom/oneplus/android/server/openid/kth;->oea:Z
+    iget-boolean v0, p0, Lcom/oneplus/android/server/openid/kth;->Nfa:Z
 
     invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -1780,14 +1797,14 @@
 
     invoke-virtual {p1, p2}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
-    iget-object p2, p0, Lcom/oneplus/android/server/openid/kth;->nea:Ljava/lang/Object;
+    iget-object p2, p0, Lcom/oneplus/android/server/openid/kth;->Mfa:Ljava/lang/Object;
 
     monitor-enter p2
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
     :try_start_1
-    iget-object v0, p0, Lcom/oneplus/android/server/openid/kth;->pea:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/oneplus/android/server/openid/kth;->Ofa:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->isEmpty()Z
 
@@ -1795,7 +1812,7 @@
 
     if-nez v0, :cond_1
 
-    iget-object v0, p0, Lcom/oneplus/android/server/openid/kth;->pea:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/oneplus/android/server/openid/kth;->Ofa:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
@@ -1843,7 +1860,7 @@
 
     invoke-virtual {p1, v0}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
-    iget-object v0, p0, Lcom/oneplus/android/server/openid/kth;->qea:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/oneplus/android/server/openid/kth;->Pfa:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->isEmpty()Z
 
@@ -1851,7 +1868,7 @@
 
     if-nez v0, :cond_2
 
-    iget-object v0, p0, Lcom/oneplus/android/server/openid/kth;->qea:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/oneplus/android/server/openid/kth;->Pfa:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
@@ -1899,7 +1916,7 @@
 
     invoke-virtual {p1, v0}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
-    iget-object v0, p0, Lcom/oneplus/android/server/openid/kth;->rea:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/oneplus/android/server/openid/kth;->Qfa:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->isEmpty()Z
 
@@ -1907,7 +1924,7 @@
 
     if-nez v0, :cond_3
 
-    iget-object p0, p0, Lcom/oneplus/android/server/openid/kth;->rea:Ljava/util/ArrayList;
+    iget-object p0, p0, Lcom/oneplus/android/server/openid/kth;->Qfa:Ljava/util/ArrayList;
 
     invoke-virtual {p0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 

@@ -9,14 +9,12 @@
 # static fields
 .field private static final TAG:Ljava/lang/String; = "OpSlaManager"
 
-.field private static final jN:Ljava/lang/String; = "android.net.conn.CONNECTIVITY_CHANGE"
+.field private static final yO:Ljava/lang/String; = "android.net.conn.CONNECTIVITY_CHANGE"
 
-.field private static final kN:Ljava/lang/String; = "android.net.network.CONNECTION_CHANGE"
+.field private static final zO:Ljava/lang/String; = "android.net.network.CONNECTION_CHANGE"
 
 
 # instance fields
-.field private iN:Lcom/android/server/sis/vdb;
-
 .field private mBroadcastReceiver:Landroid/content/BroadcastReceiver;
 
 .field private mCm:Landroid/net/ConnectivityManager;
@@ -24,6 +22,8 @@
 .field private mContext:Landroid/content/Context;
 
 .field private mTelephonyManager:Landroid/telephony/TelephonyManager;
+
+.field private xO:Lcom/android/server/sis/vdb;
 
 
 # direct methods
@@ -35,7 +35,7 @@
     return-void
 .end method
 
-.method private Lo()V
+.method private ep()V
     .locals 2
 
     iget-object v0, p0, Lcom/android/server/sis/sis;->mCm:Landroid/net/ConnectivityManager;
@@ -58,7 +58,7 @@
     return-void
 .end method
 
-.method private Mo()V
+.method private fp()V
     .locals 2
 
     new-instance v0, Landroid/content/IntentFilter;
@@ -91,7 +91,7 @@
 .method static synthetic sis(Lcom/android/server/sis/sis;)Lcom/android/server/sis/vdb;
     .locals 0
 
-    iget-object p0, p0, Lcom/android/server/sis/sis;->iN:Lcom/android/server/sis/vdb;
+    iget-object p0, p0, Lcom/android/server/sis/sis;->xO:Lcom/android/server/sis/vdb;
 
     return-object p0
 .end method
@@ -107,7 +107,7 @@
 .method static synthetic zta(Lcom/android/server/sis/sis;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/sis/sis;->Lo()V
+    invoke-direct {p0}, Lcom/android/server/sis/sis;->ep()V
 
     return-void
 .end method
@@ -117,7 +117,7 @@
 .method public enableVerboseLogging(I)V
     .locals 0
 
-    iget-object p0, p0, Lcom/android/server/sis/sis;->iN:Lcom/android/server/sis/vdb;
+    iget-object p0, p0, Lcom/android/server/sis/sis;->xO:Lcom/android/server/sis/vdb;
 
     invoke-virtual {p0, p1}, Lcom/android/server/sis/vdb;->enableVerboseLogging(I)V
 
@@ -151,9 +151,9 @@
 
     invoke-direct {p1, v0, v1}, Lcom/android/server/sis/vdb;-><init>(Landroid/content/Context;Lcom/android/server/sis/vdb$sis;)V
 
-    iput-object p1, p0, Lcom/android/server/sis/sis;->iN:Lcom/android/server/sis/vdb;
+    iput-object p1, p0, Lcom/android/server/sis/sis;->xO:Lcom/android/server/sis/vdb;
 
-    invoke-direct {p0}, Lcom/android/server/sis/sis;->Mo()V
+    invoke-direct {p0}, Lcom/android/server/sis/sis;->fp()V
 
     return-void
 .end method
@@ -161,7 +161,7 @@
 .method public sendWifiScoreToKernel(I)V
     .locals 0
 
-    iget-object p0, p0, Lcom/android/server/sis/sis;->iN:Lcom/android/server/sis/vdb;
+    iget-object p0, p0, Lcom/android/server/sis/sis;->xO:Lcom/android/server/sis/vdb;
 
     invoke-virtual {p0, p1}, Lcom/android/server/sis/vdb;->sendWifiScoreToKernel(I)V
 

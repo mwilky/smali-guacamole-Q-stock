@@ -37,13 +37,13 @@
 
 
 # virtual methods
-.method public I(Ljava/lang/String;)V
+.method public K(Ljava/lang/String;)V
     .locals 0
 
     return-void
 .end method
 
-.method public J(Ljava/lang/String;)Z
+.method public L(Ljava/lang/String;)Z
     .locals 0
 
     const/4 p0, 0x0

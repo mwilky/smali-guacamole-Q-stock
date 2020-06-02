@@ -7,17 +7,17 @@
 
 
 # static fields
-.field private static final rBa:Ljava/util/Hashtable;
+.field private static final FDa:Ljava/util/Hashtable;
 
 
 # instance fields
+.field private final DDa:Lorg/bouncycastle/crypto/zta;
+
+.field private EDa:Z
+
+.field private final Hpa:Lorg/bouncycastle/asn1/x509/zta;
+
 .field private final digest:Lorg/bouncycastle/crypto/qbh;
-
-.field private final pBa:Lorg/bouncycastle/crypto/zta;
-
-.field private qBa:Z
-
-.field private final sna:Lorg/bouncycastle/asn1/x509/zta;
 
 
 # direct methods
@@ -28,65 +28,65 @@
 
     invoke-direct {v0}, Ljava/util/Hashtable;-><init>()V
 
-    sput-object v0, Lorg/bouncycastle/crypto/gck/ssp;->rBa:Ljava/util/Hashtable;
+    sput-object v0, Lorg/bouncycastle/crypto/gck/ssp;->FDa:Ljava/util/Hashtable;
 
-    sget-object v0, Lorg/bouncycastle/crypto/gck/ssp;->rBa:Ljava/util/Hashtable;
+    sget-object v0, Lorg/bouncycastle/crypto/gck/ssp;->FDa:Ljava/util/Hashtable;
 
-    sget-object v1, Lorg/bouncycastle/asn1/x509/t;->WOa:Lorg/bouncycastle/asn1/bvj;
+    sget-object v1, Lorg/bouncycastle/asn1/x509/t;->jRa:Lorg/bouncycastle/asn1/bvj;
 
     const-string v2, "SHA-1"
 
     invoke-virtual {v0, v2, v1}, Ljava/util/Hashtable;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    sget-object v0, Lorg/bouncycastle/crypto/gck/ssp;->rBa:Ljava/util/Hashtable;
+    sget-object v0, Lorg/bouncycastle/crypto/gck/ssp;->FDa:Ljava/util/Hashtable;
 
-    sget-object v1, Lorg/bouncycastle/asn1/bio/you;->QLa:Lorg/bouncycastle/asn1/bvj;
+    sget-object v1, Lorg/bouncycastle/asn1/bio/you;->dOa:Lorg/bouncycastle/asn1/bvj;
 
     const-string v2, "SHA-224"
 
     invoke-virtual {v0, v2, v1}, Ljava/util/Hashtable;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    sget-object v0, Lorg/bouncycastle/crypto/gck/ssp;->rBa:Ljava/util/Hashtable;
+    sget-object v0, Lorg/bouncycastle/crypto/gck/ssp;->FDa:Ljava/util/Hashtable;
 
-    sget-object v1, Lorg/bouncycastle/asn1/bio/you;->NLa:Lorg/bouncycastle/asn1/bvj;
+    sget-object v1, Lorg/bouncycastle/asn1/bio/you;->aOa:Lorg/bouncycastle/asn1/bvj;
 
     const-string v2, "SHA-256"
 
     invoke-virtual {v0, v2, v1}, Ljava/util/Hashtable;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    sget-object v0, Lorg/bouncycastle/crypto/gck/ssp;->rBa:Ljava/util/Hashtable;
+    sget-object v0, Lorg/bouncycastle/crypto/gck/ssp;->FDa:Ljava/util/Hashtable;
 
-    sget-object v1, Lorg/bouncycastle/asn1/bio/you;->OLa:Lorg/bouncycastle/asn1/bvj;
+    sget-object v1, Lorg/bouncycastle/asn1/bio/you;->bOa:Lorg/bouncycastle/asn1/bvj;
 
     const-string v2, "SHA-384"
 
     invoke-virtual {v0, v2, v1}, Ljava/util/Hashtable;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    sget-object v0, Lorg/bouncycastle/crypto/gck/ssp;->rBa:Ljava/util/Hashtable;
+    sget-object v0, Lorg/bouncycastle/crypto/gck/ssp;->FDa:Ljava/util/Hashtable;
 
-    sget-object v1, Lorg/bouncycastle/asn1/bio/you;->PLa:Lorg/bouncycastle/asn1/bvj;
+    sget-object v1, Lorg/bouncycastle/asn1/bio/you;->cOa:Lorg/bouncycastle/asn1/bvj;
 
     const-string v2, "SHA-512"
 
     invoke-virtual {v0, v2, v1}, Ljava/util/Hashtable;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    sget-object v0, Lorg/bouncycastle/crypto/gck/ssp;->rBa:Ljava/util/Hashtable;
+    sget-object v0, Lorg/bouncycastle/crypto/gck/ssp;->FDa:Ljava/util/Hashtable;
 
-    sget-object v1, Lorg/bouncycastle/asn1/bio/you;->RLa:Lorg/bouncycastle/asn1/bvj;
+    sget-object v1, Lorg/bouncycastle/asn1/bio/you;->eOa:Lorg/bouncycastle/asn1/bvj;
 
     const-string v2, "SHA-512/224"
 
     invoke-virtual {v0, v2, v1}, Ljava/util/Hashtable;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    sget-object v0, Lorg/bouncycastle/crypto/gck/ssp;->rBa:Ljava/util/Hashtable;
+    sget-object v0, Lorg/bouncycastle/crypto/gck/ssp;->FDa:Ljava/util/Hashtable;
 
-    sget-object v1, Lorg/bouncycastle/asn1/bio/you;->SLa:Lorg/bouncycastle/asn1/bvj;
+    sget-object v1, Lorg/bouncycastle/asn1/bio/you;->fOa:Lorg/bouncycastle/asn1/bvj;
 
     const-string v2, "SHA-512/256"
 
     invoke-virtual {v0, v2, v1}, Ljava/util/Hashtable;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    sget-object v0, Lorg/bouncycastle/crypto/gck/ssp;->rBa:Ljava/util/Hashtable;
+    sget-object v0, Lorg/bouncycastle/crypto/gck/ssp;->FDa:Ljava/util/Hashtable;
 
     sget-object v1, Lorg/bouncycastle/asn1/dma/gwm;->md5:Lorg/bouncycastle/asn1/bvj;
 
@@ -100,7 +100,7 @@
 .method public constructor <init>(Lorg/bouncycastle/crypto/qbh;)V
     .locals 2
 
-    sget-object v0, Lorg/bouncycastle/crypto/gck/ssp;->rBa:Ljava/util/Hashtable;
+    sget-object v0, Lorg/bouncycastle/crypto/gck/ssp;->FDa:Ljava/util/Hashtable;
 
     invoke-interface {p1}, Lorg/bouncycastle/crypto/qbh;->vju()Ljava/lang/String;
 
@@ -130,7 +130,7 @@
 
     invoke-direct {v0, v1}, Lorg/bouncycastle/crypto/tsu/tsu;-><init>(Lorg/bouncycastle/crypto/zta;)V
 
-    iput-object v0, p0, Lorg/bouncycastle/crypto/gck/ssp;->pBa:Lorg/bouncycastle/crypto/zta;
+    iput-object v0, p0, Lorg/bouncycastle/crypto/gck/ssp;->DDa:Lorg/bouncycastle/crypto/zta;
 
     iput-object p1, p0, Lorg/bouncycastle/crypto/gck/ssp;->digest:Lorg/bouncycastle/crypto/qbh;
 
@@ -140,7 +140,7 @@
 
     invoke-direct {p1, p2, v0}, Lorg/bouncycastle/asn1/x509/zta;-><init>(Lorg/bouncycastle/asn1/bvj;Lorg/bouncycastle/asn1/ssp;)V
 
-    iput-object p1, p0, Lorg/bouncycastle/crypto/gck/ssp;->sna:Lorg/bouncycastle/asn1/x509/zta;
+    iput-object p1, p0, Lorg/bouncycastle/crypto/gck/ssp;->Hpa:Lorg/bouncycastle/asn1/x509/zta;
 
     return-void
 .end method
@@ -155,7 +155,7 @@
 
     new-instance v0, Lorg/bouncycastle/asn1/x509/qbh;
 
-    iget-object p0, p0, Lorg/bouncycastle/crypto/gck/ssp;->sna:Lorg/bouncycastle/asn1/x509/zta;
+    iget-object p0, p0, Lorg/bouncycastle/crypto/gck/ssp;->Hpa:Lorg/bouncycastle/asn1/x509/zta;
 
     invoke-direct {v0, p0, p1}, Lorg/bouncycastle/asn1/x509/qbh;-><init>(Lorg/bouncycastle/asn1/x509/zta;[B)V
 
@@ -179,7 +179,7 @@
         }
     .end annotation
 
-    iget-boolean v0, p0, Lorg/bouncycastle/crypto/gck/ssp;->qBa:Z
+    iget-boolean v0, p0, Lorg/bouncycastle/crypto/gck/ssp;->EDa:Z
 
     if-eqz v0, :cond_0
 
@@ -202,7 +202,7 @@
 
     move-result-object v0
 
-    iget-object p0, p0, Lorg/bouncycastle/crypto/gck/ssp;->pBa:Lorg/bouncycastle/crypto/zta;
+    iget-object p0, p0, Lorg/bouncycastle/crypto/gck/ssp;->DDa:Lorg/bouncycastle/crypto/zta;
 
     array-length v1, v0
 
@@ -310,7 +310,7 @@
 .method public zta(ZLorg/bouncycastle/crypto/kth;)V
     .locals 2
 
-    iput-boolean p1, p0, Lorg/bouncycastle/crypto/gck/ssp;->qBa:Z
+    iput-boolean p1, p0, Lorg/bouncycastle/crypto/gck/ssp;->EDa:Z
 
     instance-of v0, p2, Lorg/bouncycastle/crypto/wtn/hmo;
 
@@ -378,7 +378,7 @@
     :goto_2
     invoke-virtual {p0}, Lorg/bouncycastle/crypto/gck/ssp;->reset()V
 
-    iget-object p0, p0, Lorg/bouncycastle/crypto/gck/ssp;->pBa:Lorg/bouncycastle/crypto/zta;
+    iget-object p0, p0, Lorg/bouncycastle/crypto/gck/ssp;->DDa:Lorg/bouncycastle/crypto/zta;
 
     invoke-interface {p0, p1, p2}, Lorg/bouncycastle/crypto/zta;->zta(ZLorg/bouncycastle/crypto/kth;)V
 
@@ -388,7 +388,7 @@
 .method public zta([B)Z
     .locals 9
 
-    iget-boolean v0, p0, Lorg/bouncycastle/crypto/gck/ssp;->qBa:Z
+    iget-boolean v0, p0, Lorg/bouncycastle/crypto/gck/ssp;->EDa:Z
 
     if-nez v0, :cond_5
 
@@ -407,7 +407,7 @@
     invoke-interface {v1, v0, v2}, Lorg/bouncycastle/crypto/qbh;->doFinal([BI)I
 
     :try_start_0
-    iget-object v1, p0, Lorg/bouncycastle/crypto/gck/ssp;->pBa:Lorg/bouncycastle/crypto/zta;
+    iget-object v1, p0, Lorg/bouncycastle/crypto/gck/ssp;->DDa:Lorg/bouncycastle/crypto/zta;
 
     array-length v3, p1
 

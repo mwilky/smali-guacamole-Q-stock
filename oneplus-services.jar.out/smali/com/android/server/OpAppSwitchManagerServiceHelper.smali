@@ -9,6 +9,8 @@
 # static fields
 .field private static final DEBUG:Z
 
+.field private static final OPOS_PKG:Ljava/lang/String; = "com.opos.ads"
+
 .field private static final TAG:Ljava/lang/String; = "OpAppSwitchManagerServiceHelper"
 
 
@@ -37,14 +39,14 @@
     return-void
 .end method
 
-.method private getAdsSettings(Landroid/content/Context;)Z
+.method private getAdsSettings()Z
     .locals 0
 
     invoke-static {}, Lcom/android/server/wm/OPAppSwitchManagerService;->getInstance()Lcom/android/server/wm/OPAppSwitchManagerService;
 
     move-result-object p0
 
-    invoke-virtual {p0, p1}, Lcom/android/server/wm/OPAppSwitchManagerService;->getAdsSettings(Landroid/content/Context;)Z
+    invoke-virtual {p0}, Lcom/android/server/wm/OPAppSwitchManagerService;->getAdsSettings()Z
 
     move-result p0
 
@@ -115,7 +117,7 @@
 
     const-string p0, "com.opos.ads"
 
-    invoke-virtual {p1, p0}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+    invoke-virtual {p0, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result p0
 
@@ -154,22 +156,114 @@
     return p0
 .end method
 
-.method public getOposAdsSettings(Landroid/content/Context;)Z
-    .locals 0
+.method public getOposAdsSettings(Ljava/lang/String;Ljava/lang/String;)Z
+    .locals 1
 
-    invoke-direct {p0, p1}, Lcom/android/server/OpAppSwitchManagerServiceHelper;->getAdsSettings(Landroid/content/Context;)Z
+    const-string v0, "com.opos.ads"
+
+    invoke-virtual {v0, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_1
+
+    const-string p1, "android.permission.SYSTEM_ALERT_WINDOW"
+
+    invoke-virtual {p1, p2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result p1
+
+    if-nez p1, :cond_0
+
+    const-string p1, "android.permission.INTERNET"
+
+    invoke-virtual {p1, p2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result p1
+
+    if-nez p1, :cond_0
+
+    const-string p1, "android.permission.ACCESS_NETWORK_STATE"
+
+    invoke-virtual {p1, p2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result p1
+
+    if-nez p1, :cond_0
+
+    const-string p1, "android.permission.ACCESS_WIFI_STATE"
+
+    invoke-virtual {p1, p2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result p1
+
+    if-nez p1, :cond_0
+
+    const-string p1, "android.permission.ACCESS_BACKGROUND_LOCATION"
+
+    invoke-virtual {p1, p2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result p1
+
+    if-nez p1, :cond_0
+
+    const-string p1, "android.permission.WRITE_EXTERNAL_STORAGE"
+
+    invoke-virtual {p1, p2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result p1
+
+    if-nez p1, :cond_0
+
+    const-string p1, "android.permission.READ_EXTERNAL_STORAGE"
+
+    invoke-virtual {p1, p2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result p1
+
+    if-nez p1, :cond_0
+
+    const-string p1, "android.permission.ACCESS_COARSE_LOCATION"
+
+    invoke-virtual {p1, p2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result p1
+
+    if-nez p1, :cond_0
+
+    const-string p1, "android.permission.ACCESS_FINE_LOCATION"
+
+    invoke-virtual {p1, p2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result p1
+
+    if-nez p1, :cond_0
+
+    const-string p1, "android.permission.READ_PHONE_STATE"
+
+    invoke-virtual {p1, p2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_1
+
+    :cond_0
+    invoke-direct {p0}, Lcom/android/server/OpAppSwitchManagerServiceHelper;->getAdsSettings()Z
 
     move-result p0
+
+    return p0
+
+    :cond_1
+    const/4 p0, 0x0
 
     return p0
 .end method
 
 .method public handleActivityPaused(Lcom/android/server/wm/ActivityRecord;Lcom/android/server/wm/ActivityRecord;)V
-    .locals 1
+    .locals 0
 
-    iget-object v0, p0, Lcom/android/server/OpAppSwitchManagerServiceHelper;->mContext:Landroid/content/Context;
-
-    invoke-direct {p0, v0}, Lcom/android/server/OpAppSwitchManagerServiceHelper;->getAdsSettings(Landroid/content/Context;)Z
+    invoke-direct {p0}, Lcom/android/server/OpAppSwitchManagerServiceHelper;->getAdsSettings()Z
 
     move-result p0
 
@@ -186,11 +280,9 @@
 .end method
 
 .method public handleActivityResumed(Lcom/android/server/wm/ActivityRecord;)V
-    .locals 1
+    .locals 0
 
-    iget-object v0, p0, Lcom/android/server/OpAppSwitchManagerServiceHelper;->mContext:Landroid/content/Context;
-
-    invoke-direct {p0, v0}, Lcom/android/server/OpAppSwitchManagerServiceHelper;->getAdsSettings(Landroid/content/Context;)Z
+    invoke-direct {p0}, Lcom/android/server/OpAppSwitchManagerServiceHelper;->getAdsSettings()Z
 
     move-result p0
 

@@ -49,7 +49,7 @@
     :cond_0
     iget-object p0, p0, Lcom/android/server/fto$you;->this$0:Lcom/android/server/fto;
 
-    invoke-static {p0}, Lcom/android/server/fto;->cno(Lcom/android/server/fto;)Landroid/os/Handler;
+    invoke-static {p0}, Lcom/android/server/fto;->sis(Lcom/android/server/fto;)Landroid/os/Handler;
 
     move-result-object p0
 

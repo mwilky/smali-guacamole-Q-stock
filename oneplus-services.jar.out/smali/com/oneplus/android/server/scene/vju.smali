@@ -4,27 +4,27 @@
 
 
 # static fields
-.field public static final db:I = 0x0
+.field public static final eb:I = 0x0
 
-.field public static final eb:I = 0x1
+.field public static final fb:I = 0x1
 
-.field public static final fb:I = -0x1
+.field public static final gb:I = -0x1
 
-.field public static final gb:I = 0x1
+.field public static final hb:I = 0x1
 
-.field public static final hb:I = 0x0
+.field public static final ib:I = 0x0
 
-.field public static ib:I = -0x1
+.field public static jb:I = -0x1
 
 
 # instance fields
-.field protected Za:Landroid/widget/RelativeLayout;
-
-.field protected _a:Z
+.field protected _a:Landroid/widget/RelativeLayout;
 
 .field protected ab:Z
 
-.field protected bb:Lcom/oneplus/android/server/scene/cgv;
+.field protected bb:Z
+
+.field protected db:Lcom/oneplus/android/server/scene/cgv;
 
 .field protected mContext:Landroid/content/Context;
 
@@ -43,15 +43,15 @@
 
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/oneplus/android/server/scene/vju;->_a:Z
-
     iput-boolean v0, p0, Lcom/oneplus/android/server/scene/vju;->ab:Z
+
+    iput-boolean v0, p0, Lcom/oneplus/android/server/scene/vju;->bb:Z
 
     iput-object p1, p0, Lcom/oneplus/android/server/scene/vju;->mContext:Landroid/content/Context;
 
-    iput-object p3, p0, Lcom/oneplus/android/server/scene/vju;->bb:Lcom/oneplus/android/server/scene/cgv;
+    iput-object p3, p0, Lcom/oneplus/android/server/scene/vju;->db:Lcom/oneplus/android/server/scene/cgv;
 
-    iput-boolean p4, p0, Lcom/oneplus/android/server/scene/vju;->ab:Z
+    iput-boolean p4, p0, Lcom/oneplus/android/server/scene/vju;->bb:Z
 
     iget-object p1, p0, Lcom/oneplus/android/server/scene/vju;->mContext:Landroid/content/Context;
 
@@ -65,7 +65,7 @@
 
     check-cast p1, Landroid/widget/RelativeLayout;
 
-    iput-object p1, p0, Lcom/oneplus/android/server/scene/vju;->Za:Landroid/widget/RelativeLayout;
+    iput-object p1, p0, Lcom/oneplus/android/server/scene/vju;->_a:Landroid/widget/RelativeLayout;
 
     invoke-virtual {p0}, Lcom/oneplus/android/server/scene/vju;->r()V
 
@@ -128,7 +128,7 @@
 
     if-ne p1, v0, :cond_2
 
-    iget-object p0, p0, Lcom/oneplus/android/server/scene/vju;->bb:Lcom/oneplus/android/server/scene/cgv;
+    iget-object p0, p0, Lcom/oneplus/android/server/scene/vju;->db:Lcom/oneplus/android/server/scene/cgv;
 
     invoke-virtual {p0}, Lcom/oneplus/android/server/scene/cgv;->hide()V
 
@@ -147,7 +147,7 @@
 
     invoke-super {p0, p1}, Landroid/widget/RelativeLayout;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
-    iget-object v0, p0, Lcom/oneplus/android/server/scene/vju;->bb:Lcom/oneplus/android/server/scene/cgv;
+    iget-object v0, p0, Lcom/oneplus/android/server/scene/vju;->db:Lcom/oneplus/android/server/scene/cgv;
 
     invoke-virtual {v0, p1}, Lcom/oneplus/android/server/scene/cgv;->zta(Landroid/content/res/Configuration;)V
 

@@ -1,126 +1,235 @@
-.class Lcom/oneplus/server/sis;
-.super Landroid/content/BroadcastReceiver;
+.class public Lcom/oneplus/server/sis;
+.super Ljava/lang/Object;
 .source ""
 
 
-# annotations
-.annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/oneplus/server/tsu;
-.end annotation
+# static fields
+.field private static final BOOT_TIMEOUT:I = 0x1388
 
-.annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
-    name = null
-.end annotation
+.field private static final TAG:Ljava/lang/String; = "OIMCManager"
+
+.field private static mService:Lcom/oneplus/core/oimc/OIMCServiceManager;
 
 
 # direct methods
-.method constructor <init>()V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 1
 
-    invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
+    new-instance v0, Lcom/oneplus/core/oimc/OIMCServiceManager;
+
+    invoke-direct {v0}, Lcom/oneplus/core/oimc/OIMCServiceManager;-><init>()V
+
+    sput-object v0, Lcom/oneplus/server/sis;->mService:Lcom/oneplus/core/oimc/OIMCServiceManager;
 
     return-void
 .end method
 
+.method public constructor <init>()V
+    .locals 0
 
-# virtual methods
-.method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
-    .locals 5
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    :try_start_0
-    const-string v0, "android.intent.extra.user_handle"
+    return-void
+.end method
 
-    const/4 v1, 0x0
+.method public static addFuncRule(Lcom/oneplus/core/oimc/OIMCRule;I)V
+    .locals 1
 
-    invoke-virtual {p2, v0, v1}, Landroid/content/Intent;->getIntExtra(Ljava/lang/String;I)I
+    sget-object v0, Lcom/oneplus/server/sis;->mService:Lcom/oneplus/core/oimc/OIMCServiceManager;
 
-    move-result v0
+    invoke-virtual {v0, p0, p1}, Lcom/oneplus/core/oimc/OIMCServiceManager;->addFuncRule(Lcom/oneplus/core/oimc/OIMCRule;I)V
 
-    const-string v2, "OIMCManagerUtil"
+    return-void
+.end method
 
-    new-instance v3, Ljava/lang/StringBuilder;
+.method public static addFuncRuleGlobal(Lcom/oneplus/core/oimc/OIMCRule;)V
+    .locals 1
 
-    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
+    sget-object v0, Lcom/oneplus/server/sis;->mService:Lcom/oneplus/core/oimc/OIMCServiceManager;
 
-    const-string v4, "onReceive action "
+    invoke-virtual {v0, p0}, Lcom/oneplus/core/oimc/OIMCServiceManager;->addFuncRuleGlobal(Lcom/oneplus/core/oimc/OIMCRule;)V
 
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    return-void
+.end method
 
-    invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
+.method public static getRemoteFuncConfig(Ljava/lang/String;)[Ljava/lang/String;
+    .locals 1
 
-    move-result-object v4
+    sget-object v0, Lcom/oneplus/server/sis;->mService:Lcom/oneplus/core/oimc/OIMCServiceManager;
 
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, p0}, Lcom/oneplus/core/oimc/OIMCServiceManager;->getRemoteFuncConfig(Ljava/lang/String;)[Ljava/lang/String;
 
-    const-string v4, " user = "
+    move-result-object p0
 
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    return-object p0
+.end method
 
-    invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+.method public static getRemoteFuncStatus(Ljava/lang/String;)I
+    .locals 1
 
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    sget-object v0, Lcom/oneplus/server/sis;->mService:Lcom/oneplus/core/oimc/OIMCServiceManager;
 
-    move-result-object v3
+    invoke-virtual {v0, p0}, Lcom/oneplus/core/oimc/OIMCServiceManager;->getRemoteFuncStatus(Ljava/lang/String;)I
 
-    invoke-static {v2, v3}, Landroid/util/Slog;->i(Ljava/lang/String;Ljava/lang/String;)I
+    move-result p0
 
-    invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
+    return p0
+.end method
 
-    move-result-object p2
+.method public static notifyModeChange(Ljava/lang/String;II)V
+    .locals 1
 
-    const/4 v2, -0x1
+    sget-object v0, Lcom/oneplus/server/sis;->mService:Lcom/oneplus/core/oimc/OIMCServiceManager;
 
-    invoke-virtual {p2}, Ljava/lang/String;->hashCode()I
+    invoke-virtual {v0, p0, p1, p2}, Lcom/oneplus/core/oimc/OIMCServiceManager;->notifyModeChange(Ljava/lang/String;II)V
 
-    move-result v3
+    return-void
+.end method
 
-    const v4, 0x392cb822
+.method public static registerRemoteAction(Ljava/lang/String;Lcom/oneplus/core/oimc/IOIMCRemoteAction;)V
+    .locals 1
 
-    if-eq v3, v4, :cond_0
+    sget-object v0, Lcom/oneplus/server/sis;->mService:Lcom/oneplus/core/oimc/OIMCServiceManager;
 
-    goto :goto_0
+    invoke-virtual {v0, p0, p1}, Lcom/oneplus/core/oimc/OIMCServiceManager;->registerRemoteAction(Ljava/lang/String;Lcom/oneplus/core/oimc/IOIMCRemoteAction;)V
+
+    return-void
+.end method
+
+.method public static removeFuncRule(Lcom/oneplus/core/oimc/OIMCRule;I)V
+    .locals 1
+
+    sget-object v0, Lcom/oneplus/server/sis;->mService:Lcom/oneplus/core/oimc/OIMCServiceManager;
+
+    invoke-virtual {v0, p0, p1}, Lcom/oneplus/core/oimc/OIMCServiceManager;->removeFuncRule(Lcom/oneplus/core/oimc/OIMCRule;I)V
+
+    return-void
+.end method
+
+.method public static removeFuncRuleGlobal(Lcom/oneplus/core/oimc/OIMCRule;)V
+    .locals 1
+
+    sget-object v0, Lcom/oneplus/server/sis;->mService:Lcom/oneplus/core/oimc/OIMCServiceManager;
+
+    invoke-virtual {v0, p0}, Lcom/oneplus/core/oimc/OIMCServiceManager;->removeFuncRuleGlobal(Lcom/oneplus/core/oimc/OIMCRule;)V
+
+    return-void
+.end method
+
+.method public static runRuleGlobal(Lcom/oneplus/core/oimc/OIMCRule;)V
+    .locals 1
+
+    sget-object v0, Lcom/oneplus/server/sis;->mService:Lcom/oneplus/core/oimc/OIMCServiceManager;
+
+    invoke-virtual {v0, p0}, Lcom/oneplus/core/oimc/OIMCServiceManager;->runRuleGlobal(Lcom/oneplus/core/oimc/OIMCRule;)V
+
+    return-void
+.end method
+
+.method public static systemReady(Landroid/content/Context;)V
+    .locals 8
+
+    invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
+
+    move-result-wide v0
 
     :cond_0
-    const-string v3, "android.intent.action.USER_SWITCHED"
-
-    invoke-virtual {p2, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result p2
-
-    if-eqz p2, :cond_1
-
-    goto :goto_1
-
-    :cond_1
     :goto_0
-    move v1, v2
+    invoke-static {}, Lcom/oneplus/core/oimc/OIMCServiceManager;->getService()Lcom/oneplus/core/oimc/IOIMCService;
 
-    :goto_1
-    if-eqz v1, :cond_2
+    move-result-object v2
 
-    goto :goto_2
+    const-string v3, "OIMCManager"
 
-    :cond_2
-    new-instance p2, Ljava/lang/Thread;
+    if-nez v2, :cond_1
 
-    new-instance v1, Lcom/oneplus/server/you;
+    const-wide/16 v4, 0x32
 
-    invoke-direct {v1, p0, p1, v0}, Lcom/oneplus/server/you;-><init>(Lcom/oneplus/server/sis;Landroid/content/Context;I)V
+    :try_start_0
+    invoke-static {v4, v5}, Ljava/lang/Thread;->sleep(J)V
 
-    invoke-direct {p2, v1}, Ljava/lang/Thread;-><init>(Ljava/lang/Runnable;)V
+    invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
 
-    invoke-virtual {p2}, Ljava/lang/Thread;->start()V
+    move-result-wide v4
+
+    sub-long/2addr v4, v0
+
+    const-wide/16 v6, 0x1388
+
+    cmp-long v2, v4, v6
+
+    if-ltz v2, :cond_0
+
+    const-string v2, "oimc service boot failed!!!"
+
+    invoke-static {v3, v2}, Landroid/util/Slog;->e(Ljava/lang/String;Ljava/lang/String;)I
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    goto :goto_2
+    goto :goto_1
 
     :catch_0
-    move-exception p0
+    move-exception v2
 
-    invoke-virtual {p0}, Ljava/lang/Exception;->printStackTrace()V
+    invoke-virtual {v2}, Ljava/lang/Exception;->getStackTrace()[Ljava/lang/StackTraceElement;
 
-    :goto_2
+    move-result-object v2
+
+    invoke-virtual {v2}, Ljava/lang/Object;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-static {v3, v2}, Landroid/util/Slog;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    goto :goto_0
+
+    :cond_1
+    :goto_1
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v4, "wait "
+
+    invoke-virtual {v2, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
+
+    move-result-wide v4
+
+    sub-long/2addr v4, v0
+
+    invoke-virtual {v2, v4, v5}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
+    const-string v0, "ms for oimc service!"
+
+    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {v3, v0}, Landroid/util/Slog;->i(Ljava/lang/String;Ljava/lang/String;)I
+
+    sget-object v0, Lcom/oneplus/server/sis;->mService:Lcom/oneplus/core/oimc/OIMCServiceManager;
+
+    invoke-static {v0, p0}, Lcom/oneplus/server/ssp;->zta(Lcom/oneplus/core/oimc/IOIMCServiceManager;Landroid/content/Context;)V
+
+    sget-object v0, Lcom/oneplus/server/sis;->mService:Lcom/oneplus/core/oimc/OIMCServiceManager;
+
+    invoke-static {v0, p0}, Lcom/oneplus/server/ssp;->you(Lcom/oneplus/core/oimc/IOIMCServiceManager;Landroid/content/Context;)V
+
+    invoke-static {p0}, Lcom/oneplus/server/ssp;->cno(Landroid/content/Context;)V
+
+    return-void
+.end method
+
+.method public static unRegisterRemoteAction(Ljava/lang/String;)V
+    .locals 1
+
+    sget-object v0, Lcom/oneplus/server/sis;->mService:Lcom/oneplus/core/oimc/OIMCServiceManager;
+
+    invoke-virtual {v0, p0}, Lcom/oneplus/core/oimc/OIMCServiceManager;->unRegisterRemoteAction(Ljava/lang/String;)V
+
     return-void
 .end method

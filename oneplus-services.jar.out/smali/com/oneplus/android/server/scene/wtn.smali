@@ -18,7 +18,7 @@
 
 
 # instance fields
-.field final synthetic obl:I
+.field final synthetic oxb:I
 
 .field final synthetic this$0:Lcom/oneplus/android/server/scene/OemSceneAdModeController;
 
@@ -33,7 +33,7 @@
 
     iput-boolean p2, p0, Lcom/oneplus/android/server/scene/wtn;->val$enable:Z
 
-    iput p3, p0, Lcom/oneplus/android/server/scene/wtn;->obl:I
+    iput p3, p0, Lcom/oneplus/android/server/scene/wtn;->oxb:I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -49,7 +49,7 @@
 
     iget-boolean v1, p0, Lcom/oneplus/android/server/scene/wtn;->val$enable:Z
 
-    iget p0, p0, Lcom/oneplus/android/server/scene/wtn;->obl:I
+    iget p0, p0, Lcom/oneplus/android/server/scene/wtn;->oxb:I
 
     invoke-static {v0, v1, p0}, Lcom/oneplus/android/server/scene/OemSceneAdModeController;->access$000(Lcom/oneplus/android/server/scene/OemSceneAdModeController;ZI)V
 

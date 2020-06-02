@@ -12,7 +12,7 @@
     return-void
 .end method
 
-.method public static Ca(I)I
+.method public static Fa(I)I
     .locals 2
 
     mul-int v0, p0, p0
@@ -39,26 +39,6 @@
 
     mul-int/2addr v0, p0
 
-    return v0
-.end method
-
-.method private static Wc(I)I
-    .locals 2
-
-    const/4 v0, 0x0
-
-    :goto_0
-    and-int/lit8 v1, p0, 0x1
-
-    if-nez v1, :cond_0
-
-    ushr-int/lit8 p0, p0, 0x1
-
-    add-int/lit8 v0, v0, 0x1
-
-    goto :goto_0
-
-    :cond_0
     return v0
 .end method
 
@@ -219,6 +199,26 @@
     throw p0
 .end method
 
+.method private static md(I)I
+    .locals 2
+
+    const/4 v0, 0x0
+
+    :goto_0
+    and-int/lit8 v1, p0, 0x1
+
+    if-nez v1, :cond_0
+
+    ushr-int/lit8 p0, p0, 0x1
+
+    add-int/lit8 v0, v0, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    return v0
+.end method
+
 .method public static wtn([I)[I
     .locals 7
 
@@ -328,7 +328,7 @@
     :cond_0
     aget v3, p1, v1
 
-    invoke-static {v3}, Lyou/zta/sis/sis/you;->Wc(I)I
+    invoke-static {v3}, Lyou/zta/sis/sis/you;->md(I)I
 
     move-result v3
 

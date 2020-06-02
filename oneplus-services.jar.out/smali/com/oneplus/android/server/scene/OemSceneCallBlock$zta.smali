@@ -15,13 +15,13 @@
 
 
 # static fields
-.field public static final Zea:I = 0x0
+.field private static final Aga:Ljava/lang/String; = "driving_mode_state"
 
-.field public static final _ea:I = 0x1
+.field public static final xga:I = 0x0
 
-.field public static final afa:I = 0x2
+.field public static final yga:I = 0x1
 
-.field private static final bfa:Ljava/lang/String; = "driving_mode_state"
+.field public static final zga:I = 0x2
 
 
 # direct methods

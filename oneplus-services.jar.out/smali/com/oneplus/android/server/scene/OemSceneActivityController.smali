@@ -15,20 +15,18 @@
 # static fields
 .field public static final DEBUG:Z
 
-.field private static Pea:Lcom/oneplus/android/server/scene/OemSceneActivityController$AllowWhiteActivity; = null
-
-.field private static final Qea:I
-
-.field private static final Rea:I
-
 .field public static final TAG:Ljava/lang/String; = "OemSceneActivityController"
+
+.field private static nga:Lcom/oneplus/android/server/scene/OemSceneActivityController$AllowWhiteActivity;
+
+.field private static final oga:I
+
+.field private static final pga:I
 
 .field private static sInstance:Lcom/oneplus/android/server/scene/OemSceneActivityController;
 
 
 # instance fields
-.field private Oea:I
-
 .field private mContext:Landroid/content/Context;
 
 .field private mHandler:Landroid/os/Handler;
@@ -36,6 +34,8 @@
 .field private mLock:Ljava/lang/Object;
 
 .field private mResolver:Landroid/content/ContentResolver;
+
+.field private mga:I
 
 
 # direct methods
@@ -46,7 +46,7 @@
 
     sput-boolean v0, Lcom/oneplus/android/server/scene/OemSceneActivityController;->DEBUG:Z
 
-    sget-object v0, Lcom/oneplus/android/server/scene/OemSceneActivityController$ActivityMode;->Zla:Lcom/oneplus/android/server/scene/OemSceneActivityController$ActivityMode;
+    sget-object v0, Lcom/oneplus/android/server/scene/OemSceneActivityController$ActivityMode;->noa:Lcom/oneplus/android/server/scene/OemSceneActivityController$ActivityMode;
 
     invoke-virtual {v0}, Ljava/lang/Enum;->ordinal()I
 
@@ -56,9 +56,9 @@
 
     shl-int v0, v1, v0
 
-    sput v0, Lcom/oneplus/android/server/scene/OemSceneActivityController;->Qea:I
+    sput v0, Lcom/oneplus/android/server/scene/OemSceneActivityController;->oga:I
 
-    sget-object v0, Lcom/oneplus/android/server/scene/OemSceneActivityController$ActivityMode;->_la:Lcom/oneplus/android/server/scene/OemSceneActivityController$ActivityMode;
+    sget-object v0, Lcom/oneplus/android/server/scene/OemSceneActivityController$ActivityMode;->ooa:Lcom/oneplus/android/server/scene/OemSceneActivityController$ActivityMode;
 
     invoke-virtual {v0}, Ljava/lang/Enum;->ordinal()I
 
@@ -66,7 +66,7 @@
 
     shl-int v0, v1, v0
 
-    sput v0, Lcom/oneplus/android/server/scene/OemSceneActivityController;->Rea:I
+    sput v0, Lcom/oneplus/android/server/scene/OemSceneActivityController;->pga:I
 
     return-void
 .end method
@@ -84,7 +84,7 @@
 
     const/4 v0, 0x0
 
-    iput v0, p0, Lcom/oneplus/android/server/scene/OemSceneActivityController;->Oea:I
+    iput v0, p0, Lcom/oneplus/android/server/scene/OemSceneActivityController;->mga:I
 
     new-instance v1, Ljava/lang/Object;
 
@@ -105,7 +105,7 @@
     monitor-enter p1
 
     :try_start_0
-    iput v0, p0, Lcom/oneplus/android/server/scene/OemSceneActivityController;->Oea:I
+    iput v0, p0, Lcom/oneplus/android/server/scene/OemSceneActivityController;->mga:I
 
     monitor-exit p1
 
@@ -188,18 +188,18 @@
     if-eqz p2, :cond_0
 
     :try_start_0
-    iget p2, p0, Lcom/oneplus/android/server/scene/OemSceneActivityController;->Oea:I
+    iget p2, p0, Lcom/oneplus/android/server/scene/OemSceneActivityController;->mga:I
 
     shl-int p1, v1, p1
 
     or-int/2addr p1, p2
 
-    iput p1, p0, Lcom/oneplus/android/server/scene/OemSceneActivityController;->Oea:I
+    iput p1, p0, Lcom/oneplus/android/server/scene/OemSceneActivityController;->mga:I
 
     goto :goto_0
 
     :cond_0
-    iget p2, p0, Lcom/oneplus/android/server/scene/OemSceneActivityController;->Oea:I
+    iget p2, p0, Lcom/oneplus/android/server/scene/OemSceneActivityController;->mga:I
 
     shl-int p1, v1, p1
 
@@ -207,7 +207,7 @@
 
     and-int/2addr p1, p2
 
-    iput p1, p0, Lcom/oneplus/android/server/scene/OemSceneActivityController;->Oea:I
+    iput p1, p0, Lcom/oneplus/android/server/scene/OemSceneActivityController;->mga:I
 
     :goto_0
     monitor-exit v0
@@ -281,9 +281,9 @@
 .method private tsu(Landroid/content/pm/ActivityInfo;)Z
     .locals 3
 
-    iget v0, p0, Lcom/oneplus/android/server/scene/OemSceneActivityController;->Oea:I
+    iget v0, p0, Lcom/oneplus/android/server/scene/OemSceneActivityController;->mga:I
 
-    sget v1, Lcom/oneplus/android/server/scene/OemSceneActivityController;->Qea:I
+    sget v1, Lcom/oneplus/android/server/scene/OemSceneActivityController;->oga:I
 
     and-int/2addr v1, v0
 
@@ -294,7 +294,7 @@
     return v2
 
     :cond_0
-    sget v1, Lcom/oneplus/android/server/scene/OemSceneActivityController;->Rea:I
+    sget v1, Lcom/oneplus/android/server/scene/OemSceneActivityController;->pga:I
 
     and-int/2addr v0, v1
 
@@ -320,10 +320,10 @@
 
 
 # virtual methods
-.method public cf()Lcom/oneplus/android/server/scene/OemSceneActivityController$AllowWhiteActivity;
+.method public lf()Lcom/oneplus/android/server/scene/OemSceneActivityController$AllowWhiteActivity;
     .locals 1
 
-    sget-object v0, Lcom/oneplus/android/server/scene/OemSceneActivityController;->Pea:Lcom/oneplus/android/server/scene/OemSceneActivityController$AllowWhiteActivity;
+    sget-object v0, Lcom/oneplus/android/server/scene/OemSceneActivityController;->nga:Lcom/oneplus/android/server/scene/OemSceneActivityController$AllowWhiteActivity;
 
     if-nez v0, :cond_0
 
@@ -331,10 +331,10 @@
 
     invoke-direct {v0, p0}, Lcom/oneplus/android/server/scene/OemSceneActivityController$AllowWhiteActivity;-><init>(Lcom/oneplus/android/server/scene/OemSceneActivityController;)V
 
-    sput-object v0, Lcom/oneplus/android/server/scene/OemSceneActivityController;->Pea:Lcom/oneplus/android/server/scene/OemSceneActivityController$AllowWhiteActivity;
+    sput-object v0, Lcom/oneplus/android/server/scene/OemSceneActivityController;->nga:Lcom/oneplus/android/server/scene/OemSceneActivityController$AllowWhiteActivity;
 
     :cond_0
-    sget-object p0, Lcom/oneplus/android/server/scene/OemSceneActivityController;->Pea:Lcom/oneplus/android/server/scene/OemSceneActivityController$AllowWhiteActivity;
+    sget-object p0, Lcom/oneplus/android/server/scene/OemSceneActivityController;->nga:Lcom/oneplus/android/server/scene/OemSceneActivityController$AllowWhiteActivity;
 
     return-object p0
 .end method

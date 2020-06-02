@@ -17,14 +17,18 @@
 
 .field public static final TAG:Ljava/lang/String; = "OemSceneLightsController"
 
+.field private static final Vga:I
+
+.field private static final Wga:I
+
 .field private static sInstance:Lcom/oneplus/android/server/scene/OemSceneLightsController;
-
-.field private static final wfa:I
-
-.field private static final xfa:I
 
 
 # instance fields
+.field private Tga:Lcom/oneplus/android/server/scene/OemSceneLightsController$ZenModeLedController;
+
+.field private Uga:I
+
 .field private mBatteryManagerInternal:Landroid/os/BatteryManagerInternal;
 
 .field private mContext:Landroid/content/Context;
@@ -37,10 +41,6 @@
 
 .field private mResolver:Landroid/content/ContentResolver;
 
-.field private ufa:Lcom/oneplus/android/server/scene/OemSceneLightsController$ZenModeLedController;
-
-.field private vfa:I
-
 
 # direct methods
 .method static constructor <clinit>()V
@@ -50,7 +50,7 @@
 
     sput-boolean v0, Lcom/oneplus/android/server/scene/OemSceneLightsController;->DEBUG:Z
 
-    sget-object v0, Lcom/oneplus/android/server/scene/OemSceneLightsController$LightsMode;->Zla:Lcom/oneplus/android/server/scene/OemSceneLightsController$LightsMode;
+    sget-object v0, Lcom/oneplus/android/server/scene/OemSceneLightsController$LightsMode;->noa:Lcom/oneplus/android/server/scene/OemSceneLightsController$LightsMode;
 
     invoke-virtual {v0}, Ljava/lang/Enum;->ordinal()I
 
@@ -60,7 +60,7 @@
 
     shl-int v0, v1, v0
 
-    sput v0, Lcom/oneplus/android/server/scene/OemSceneLightsController;->wfa:I
+    sput v0, Lcom/oneplus/android/server/scene/OemSceneLightsController;->Vga:I
 
     sget-object v0, Lcom/oneplus/android/server/scene/OemSceneLightsController$LightsMode;->ZEN_MODE:Lcom/oneplus/android/server/scene/OemSceneLightsController$LightsMode;
 
@@ -70,7 +70,7 @@
 
     shl-int v0, v1, v0
 
-    sput v0, Lcom/oneplus/android/server/scene/OemSceneLightsController;->xfa:I
+    sput v0, Lcom/oneplus/android/server/scene/OemSceneLightsController;->Wga:I
 
     return-void
 .end method
@@ -82,7 +82,7 @@
 
     const/4 v0, 0x0
 
-    iput v0, p0, Lcom/oneplus/android/server/scene/OemSceneLightsController;->vfa:I
+    iput v0, p0, Lcom/oneplus/android/server/scene/OemSceneLightsController;->Uga:I
 
     new-instance v1, Ljava/lang/Object;
 
@@ -133,7 +133,7 @@
     monitor-enter p1
 
     :try_start_0
-    iput v0, p0, Lcom/oneplus/android/server/scene/OemSceneLightsController;->vfa:I
+    iput v0, p0, Lcom/oneplus/android/server/scene/OemSceneLightsController;->Uga:I
 
     monitor-exit p1
 
@@ -152,9 +152,9 @@
 .method private bio(III)Z
     .locals 3
 
-    iget v0, p0, Lcom/oneplus/android/server/scene/OemSceneLightsController;->vfa:I
+    iget v0, p0, Lcom/oneplus/android/server/scene/OemSceneLightsController;->Uga:I
 
-    sget v1, Lcom/oneplus/android/server/scene/OemSceneLightsController;->wfa:I
+    sget v1, Lcom/oneplus/android/server/scene/OemSceneLightsController;->Vga:I
 
     and-int/2addr v1, v0
 
@@ -165,7 +165,7 @@
     return v2
 
     :cond_0
-    sget v1, Lcom/oneplus/android/server/scene/OemSceneLightsController;->xfa:I
+    sget v1, Lcom/oneplus/android/server/scene/OemSceneLightsController;->Wga:I
 
     and-int/2addr v0, v1
 
@@ -284,18 +284,18 @@
     if-eqz p2, :cond_0
 
     :try_start_0
-    iget p2, p0, Lcom/oneplus/android/server/scene/OemSceneLightsController;->vfa:I
+    iget p2, p0, Lcom/oneplus/android/server/scene/OemSceneLightsController;->Uga:I
 
     shl-int p1, v1, p1
 
     or-int/2addr p1, p2
 
-    iput p1, p0, Lcom/oneplus/android/server/scene/OemSceneLightsController;->vfa:I
+    iput p1, p0, Lcom/oneplus/android/server/scene/OemSceneLightsController;->Uga:I
 
     goto :goto_0
 
     :cond_0
-    iget p2, p0, Lcom/oneplus/android/server/scene/OemSceneLightsController;->vfa:I
+    iget p2, p0, Lcom/oneplus/android/server/scene/OemSceneLightsController;->Uga:I
 
     shl-int p1, v1, p1
 
@@ -303,7 +303,7 @@
 
     and-int/2addr p1, p2
 
-    iput p1, p0, Lcom/oneplus/android/server/scene/OemSceneLightsController;->vfa:I
+    iput p1, p0, Lcom/oneplus/android/server/scene/OemSceneLightsController;->Uga:I
 
     :goto_0
     monitor-exit v0
@@ -338,10 +338,10 @@
 
 
 # virtual methods
-.method public mf()Lcom/oneplus/android/server/scene/OemSceneLightsController$ZenModeLedController;
+.method public vf()Lcom/oneplus/android/server/scene/OemSceneLightsController$ZenModeLedController;
     .locals 1
 
-    iget-object v0, p0, Lcom/oneplus/android/server/scene/OemSceneLightsController;->ufa:Lcom/oneplus/android/server/scene/OemSceneLightsController$ZenModeLedController;
+    iget-object v0, p0, Lcom/oneplus/android/server/scene/OemSceneLightsController;->Tga:Lcom/oneplus/android/server/scene/OemSceneLightsController$ZenModeLedController;
 
     if-nez v0, :cond_0
 
@@ -349,10 +349,10 @@
 
     invoke-direct {v0, p0}, Lcom/oneplus/android/server/scene/OemSceneLightsController$ZenModeLedController;-><init>(Lcom/oneplus/android/server/scene/OemSceneLightsController;)V
 
-    iput-object v0, p0, Lcom/oneplus/android/server/scene/OemSceneLightsController;->ufa:Lcom/oneplus/android/server/scene/OemSceneLightsController$ZenModeLedController;
+    iput-object v0, p0, Lcom/oneplus/android/server/scene/OemSceneLightsController;->Tga:Lcom/oneplus/android/server/scene/OemSceneLightsController$ZenModeLedController;
 
     :cond_0
-    iget-object p0, p0, Lcom/oneplus/android/server/scene/OemSceneLightsController;->ufa:Lcom/oneplus/android/server/scene/OemSceneLightsController$ZenModeLedController;
+    iget-object p0, p0, Lcom/oneplus/android/server/scene/OemSceneLightsController;->Tga:Lcom/oneplus/android/server/scene/OemSceneLightsController$ZenModeLedController;
 
     return-object p0
 .end method

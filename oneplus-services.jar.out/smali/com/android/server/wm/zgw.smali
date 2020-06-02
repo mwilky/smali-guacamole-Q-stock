@@ -11,9 +11,9 @@
 
 .field private static final TAG:Ljava/lang/String;
 
-.field private static final lU:I = 0x499602d2
+.field private static final yV:I = 0x499602d2
 
-.field private static final mU:Ljava/lang/String; = "com.android.settings"
+.field private static final zV:Ljava/lang/String; = "com.android.settings"
 
 
 # direct methods
@@ -45,6 +45,16 @@
 
 
 # virtual methods
+.method A(I)I
+    .locals 0
+
+    const p0, 0x499602d2
+
+    sub-int/2addr p1, p0
+
+    return p1
+.end method
+
 .method public removeTaskByIdLocked(Lcom/android/server/wm/ActivityStackSupervisor;IZZLjava/lang/String;Landroid/util/SparseArray;I)Z
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
@@ -66,7 +76,7 @@
     return v0
 
     :cond_0
-    invoke-virtual {p0, p2}, Lcom/android/server/wm/zgw;->y(I)I
+    invoke-virtual {p0, p2}, Lcom/android/server/wm/zgw;->A(I)I
 
     move-result v1
 
@@ -112,16 +122,6 @@
     const/4 p0, 0x1
 
     return p0
-.end method
-
-.method y(I)I
-    .locals 0
-
-    const p0, 0x499602d2
-
-    sub-int/2addr p1, p0
-
-    return p1
 .end method
 
 .method zta(Landroid/util/SparseArray;I)Ljava/lang/String;

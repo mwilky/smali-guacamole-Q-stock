@@ -9,11 +9,11 @@
 # instance fields
 .field empty:Z
 
-.field eqa:I
-
-.field fqa:Z
-
 .field obj:Lorg/bouncycastle/asn1/ssp;
+
+.field ssa:I
+
+.field tsa:Z
 
 
 # direct methods
@@ -28,7 +28,7 @@
 
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lorg/bouncycastle/asn1/lqr;->fqa:Z
+    iput-boolean v0, p0, Lorg/bouncycastle/asn1/lqr;->tsa:Z
 
     const/4 v1, 0x0
 
@@ -38,17 +38,17 @@
 
     if-eqz v1, :cond_0
 
-    iput-boolean v0, p0, Lorg/bouncycastle/asn1/lqr;->fqa:Z
+    iput-boolean v0, p0, Lorg/bouncycastle/asn1/lqr;->tsa:Z
 
     goto :goto_0
 
     :cond_0
-    iput-boolean p1, p0, Lorg/bouncycastle/asn1/lqr;->fqa:Z
+    iput-boolean p1, p0, Lorg/bouncycastle/asn1/lqr;->tsa:Z
 
     :goto_0
-    iput p2, p0, Lorg/bouncycastle/asn1/lqr;->eqa:I
+    iput p2, p0, Lorg/bouncycastle/asn1/lqr;->ssa:I
 
-    iget-boolean p1, p0, Lorg/bouncycastle/asn1/lqr;->fqa:Z
+    iget-boolean p1, p0, Lorg/bouncycastle/asn1/lqr;->tsa:Z
 
     if-eqz p1, :cond_1
 
@@ -189,10 +189,42 @@
 
 
 # virtual methods
-.method public Kg()Z
+.method Eg()Lorg/bouncycastle/asn1/vdb;
+    .locals 3
+
+    new-instance v0, Lorg/bouncycastle/asn1/L;
+
+    iget-boolean v1, p0, Lorg/bouncycastle/asn1/lqr;->tsa:Z
+
+    iget v2, p0, Lorg/bouncycastle/asn1/lqr;->ssa:I
+
+    iget-object p0, p0, Lorg/bouncycastle/asn1/lqr;->obj:Lorg/bouncycastle/asn1/ssp;
+
+    invoke-direct {v0, v1, v2, p0}, Lorg/bouncycastle/asn1/L;-><init>(ZILorg/bouncycastle/asn1/ssp;)V
+
+    return-object v0
+.end method
+
+.method Fg()Lorg/bouncycastle/asn1/vdb;
+    .locals 3
+
+    new-instance v0, Lorg/bouncycastle/asn1/Z;
+
+    iget-boolean v1, p0, Lorg/bouncycastle/asn1/lqr;->tsa:Z
+
+    iget v2, p0, Lorg/bouncycastle/asn1/lqr;->ssa:I
+
+    iget-object p0, p0, Lorg/bouncycastle/asn1/lqr;->obj:Lorg/bouncycastle/asn1/ssp;
+
+    invoke-direct {v0, v1, v2, p0}, Lorg/bouncycastle/asn1/Z;-><init>(ZILorg/bouncycastle/asn1/ssp;)V
+
+    return-object v0
+.end method
+
+.method public Tg()Z
     .locals 0
 
-    iget-boolean p0, p0, Lorg/bouncycastle/asn1/lqr;->fqa:Z
+    iget-boolean p0, p0, Lorg/bouncycastle/asn1/lqr;->tsa:Z
 
     return p0
 .end method
@@ -229,7 +261,7 @@
 .method public getTagNo()I
     .locals 0
 
-    iget p0, p0, Lorg/bouncycastle/asn1/lqr;->eqa:I
+    iget p0, p0, Lorg/bouncycastle/asn1/lqr;->ssa:I
 
     return p0
 .end method
@@ -237,7 +269,7 @@
 .method public hashCode()I
     .locals 1
 
-    iget v0, p0, Lorg/bouncycastle/asn1/lqr;->eqa:I
+    iget v0, p0, Lorg/bouncycastle/asn1/lqr;->ssa:I
 
     iget-object p0, p0, Lorg/bouncycastle/asn1/lqr;->obj:Lorg/bouncycastle/asn1/ssp;
 
@@ -272,7 +304,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget v1, p0, Lorg/bouncycastle/asn1/lqr;->eqa:I
+    iget v1, p0, Lorg/bouncycastle/asn1/lqr;->ssa:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -289,38 +321,6 @@
     move-result-object p0
 
     return-object p0
-.end method
-
-.method vg()Lorg/bouncycastle/asn1/vdb;
-    .locals 3
-
-    new-instance v0, Lorg/bouncycastle/asn1/L;
-
-    iget-boolean v1, p0, Lorg/bouncycastle/asn1/lqr;->fqa:Z
-
-    iget v2, p0, Lorg/bouncycastle/asn1/lqr;->eqa:I
-
-    iget-object p0, p0, Lorg/bouncycastle/asn1/lqr;->obj:Lorg/bouncycastle/asn1/ssp;
-
-    invoke-direct {v0, v1, v2, p0}, Lorg/bouncycastle/asn1/L;-><init>(ZILorg/bouncycastle/asn1/ssp;)V
-
-    return-object v0
-.end method
-
-.method wg()Lorg/bouncycastle/asn1/vdb;
-    .locals 3
-
-    new-instance v0, Lorg/bouncycastle/asn1/Z;
-
-    iget-boolean v1, p0, Lorg/bouncycastle/asn1/lqr;->fqa:Z
-
-    iget v2, p0, Lorg/bouncycastle/asn1/lqr;->eqa:I
-
-    iget-object p0, p0, Lorg/bouncycastle/asn1/lqr;->obj:Lorg/bouncycastle/asn1/ssp;
-
-    invoke-direct {v0, v1, v2, p0}, Lorg/bouncycastle/asn1/Z;-><init>(ZILorg/bouncycastle/asn1/ssp;)V
-
-    return-object v0
 .end method
 
 .method public zta(IZ)Lorg/bouncycastle/asn1/ssp;
@@ -428,9 +428,9 @@
     :cond_0
     check-cast p1, Lorg/bouncycastle/asn1/lqr;
 
-    iget v0, p0, Lorg/bouncycastle/asn1/lqr;->eqa:I
+    iget v0, p0, Lorg/bouncycastle/asn1/lqr;->ssa:I
 
-    iget v2, p1, Lorg/bouncycastle/asn1/lqr;->eqa:I
+    iget v2, p1, Lorg/bouncycastle/asn1/lqr;->ssa:I
 
     if-ne v0, v2, :cond_4
 
@@ -440,9 +440,9 @@
 
     if-ne v0, v2, :cond_4
 
-    iget-boolean v0, p0, Lorg/bouncycastle/asn1/lqr;->fqa:Z
+    iget-boolean v0, p0, Lorg/bouncycastle/asn1/lqr;->tsa:Z
 
-    iget-boolean v2, p1, Lorg/bouncycastle/asn1/lqr;->fqa:Z
+    iget-boolean v2, p1, Lorg/bouncycastle/asn1/lqr;->tsa:Z
 
     if-eq v0, v2, :cond_1
 

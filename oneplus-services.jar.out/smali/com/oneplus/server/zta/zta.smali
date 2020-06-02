@@ -53,7 +53,7 @@
     :cond_0
     const/4 p0, 0x0
 
-    invoke-static {p0}, Lcom/oneplus/server/zta/sis;->vju(Z)Z
+    invoke-static {p0}, Lcom/oneplus/server/zta/sis;->bud(Z)Z
 
     :goto_0
     return-void

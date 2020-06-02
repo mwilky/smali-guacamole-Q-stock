@@ -28,35 +28,6 @@
 
 
 # virtual methods
-.method public abstract Yj()Lyou/zta/sis/zta/cno;
-.end method
-
-.method public abstract Zj()Ljava/lang/String;
-.end method
-
-.method public _j()Z
-    .locals 1
-
-    invoke-virtual {p0}, Lyou/zta/sis/zta/cno;->bitLength()I
-
-    move-result p0
-
-    const/4 v0, 0x1
-
-    if-ne p0, v0, :cond_0
-
-    goto :goto_0
-
-    :cond_0
-    const/4 v0, 0x0
-
-    :goto_0
-    return v0
-.end method
-
-.method public abstract ak()Lyou/zta/sis/zta/cno;
-.end method
-
 .method public bitLength()I
     .locals 0
 
@@ -65,22 +36,6 @@
     move-result-object p0
 
     invoke-virtual {p0}, Ljava/math/BigInteger;->bitLength()I
-
-    move-result p0
-
-    return p0
-.end method
-
-.method public bk()Z
-    .locals 1
-
-    invoke-virtual {p0}, Lyou/zta/sis/zta/cno;->toBigInteger()Ljava/math/BigInteger;
-
-    move-result-object p0
-
-    const/4 v0, 0x0
-
-    invoke-virtual {p0, v0}, Ljava/math/BigInteger;->testBit(I)Z
 
     move-result p0
 
@@ -112,6 +67,32 @@
 .method public abstract getFieldSize()I
 .end method
 
+.method public abstract gk()Lyou/zta/sis/zta/cno;
+.end method
+
+.method public abstract hk()Ljava/lang/String;
+.end method
+
+.method public ik()Z
+    .locals 1
+
+    invoke-virtual {p0}, Lyou/zta/sis/zta/cno;->bitLength()I
+
+    move-result p0
+
+    const/4 v0, 0x1
+
+    if-ne p0, v0, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    :goto_0
+    return v0
+.end method
+
 .method public abstract invert()Lyou/zta/sis/zta/cno;
 .end method
 
@@ -139,10 +120,29 @@
     return p0
 .end method
 
+.method public abstract jk()Lyou/zta/sis/zta/cno;
+.end method
+
+.method public kk()Z
+    .locals 1
+
+    invoke-virtual {p0}, Lyou/zta/sis/zta/cno;->toBigInteger()Ljava/math/BigInteger;
+
+    move-result-object p0
+
+    const/4 v0, 0x0
+
+    invoke-virtual {p0, v0}, Ljava/math/BigInteger;->testBit(I)Z
+
+    move-result p0
+
+    return p0
+.end method
+
 .method public abstract negate()Lyou/zta/sis/zta/cno;
 .end method
 
-.method public oa(I)Lyou/zta/sis/zta/cno;
+.method public ra(I)Lyou/zta/sis/zta/cno;
     .locals 1
 
     const/4 v0, 0x0

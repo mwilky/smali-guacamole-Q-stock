@@ -4,7 +4,7 @@
 
 
 # static fields
-.field private static final fxa:I = 0x14
+.field private static final tza:I = 0x14
 
 
 # direct methods
@@ -30,7 +30,7 @@
     move v2, v1
 
     :cond_0
-    iget-object v3, p0, Lorg/bouncycastle/crypto/cno;->xma:Ljava/security/SecureRandom;
+    iget-object v3, p0, Lorg/bouncycastle/crypto/cno;->Moa:Ljava/security/SecureRandom;
 
     invoke-virtual {v3, v0}, Ljava/security/SecureRandom;->nextBytes([B)V
 
@@ -86,11 +86,11 @@
 .method public zta(Lorg/bouncycastle/crypto/bvj;)V
     .locals 3
 
-    invoke-virtual {p1}, Lorg/bouncycastle/crypto/bvj;->Zi()Ljava/security/SecureRandom;
+    invoke-virtual {p1}, Lorg/bouncycastle/crypto/bvj;->hj()Ljava/security/SecureRandom;
 
     move-result-object v0
 
-    iput-object v0, p0, Lorg/bouncycastle/crypto/cno;->xma:Ljava/security/SecureRandom;
+    iput-object v0, p0, Lorg/bouncycastle/crypto/cno;->Moa:Ljava/security/SecureRandom;
 
     invoke-virtual {p1}, Lorg/bouncycastle/crypto/bvj;->getStrength()I
 

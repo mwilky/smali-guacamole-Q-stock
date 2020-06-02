@@ -18,9 +18,9 @@
 
 
 # instance fields
-.field final synthetic GEa:Z
+.field final synthetic UGa:Z
 
-.field final synthetic HEa:Z
+.field final synthetic VGa:Z
 
 .field final synthetic this$0:Lyou/zta/sis/zta/wtn;
 
@@ -31,9 +31,9 @@
 
     iput-object p1, p0, Lyou/zta/sis/zta/igw;->this$0:Lyou/zta/sis/zta/wtn;
 
-    iput-boolean p2, p0, Lyou/zta/sis/zta/igw;->GEa:Z
+    iput-boolean p2, p0, Lyou/zta/sis/zta/igw;->UGa:Z
 
-    iput-boolean p3, p0, Lyou/zta/sis/zta/igw;->HEa:Z
+    iput-boolean p3, p0, Lyou/zta/sis/zta/igw;->VGa:Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -64,7 +64,7 @@
     invoke-direct {p1}, Lyou/zta/sis/zta/oxb;-><init>()V
 
     :cond_1
-    invoke-virtual {p1}, Lyou/zta/sis/zta/oxb;->Hk()Z
+    invoke-virtual {p1}, Lyou/zta/sis/zta/oxb;->Qk()Z
 
     move-result v0
 
@@ -73,37 +73,37 @@
     return-object p1
 
     :cond_2
-    invoke-virtual {p1}, Lyou/zta/sis/zta/oxb;->Gk()Z
+    invoke-virtual {p1}, Lyou/zta/sis/zta/oxb;->Pk()Z
 
     move-result v0
 
     if-nez v0, :cond_4
 
-    iget-boolean v0, p0, Lyou/zta/sis/zta/igw;->GEa:Z
+    iget-boolean v0, p0, Lyou/zta/sis/zta/igw;->UGa:Z
 
     if-nez v0, :cond_3
 
     iget-object v0, p0, Lyou/zta/sis/zta/igw;->this$0:Lyou/zta/sis/zta/wtn;
 
-    invoke-virtual {v0}, Lyou/zta/sis/zta/wtn;->vk()Z
+    invoke-virtual {v0}, Lyou/zta/sis/zta/wtn;->Ek()Z
 
     move-result v0
 
     if-nez v0, :cond_3
 
-    invoke-virtual {p1}, Lyou/zta/sis/zta/oxb;->Kk()V
+    invoke-virtual {p1}, Lyou/zta/sis/zta/oxb;->Tk()V
 
     return-object p1
 
     :cond_3
-    invoke-virtual {p1}, Lyou/zta/sis/zta/oxb;->Jk()V
+    invoke-virtual {p1}, Lyou/zta/sis/zta/oxb;->Sk()V
 
     :cond_4
-    iget-boolean v0, p0, Lyou/zta/sis/zta/igw;->HEa:Z
+    iget-boolean v0, p0, Lyou/zta/sis/zta/igw;->VGa:Z
 
     if-eqz v0, :cond_6
 
-    invoke-virtual {p1}, Lyou/zta/sis/zta/oxb;->Ik()Z
+    invoke-virtual {p1}, Lyou/zta/sis/zta/oxb;->Rk()Z
 
     move-result v0
 
@@ -111,18 +111,18 @@
 
     iget-object p0, p0, Lyou/zta/sis/zta/igw;->this$0:Lyou/zta/sis/zta/wtn;
 
-    invoke-virtual {p0}, Lyou/zta/sis/zta/wtn;->wk()Z
+    invoke-virtual {p0}, Lyou/zta/sis/zta/wtn;->Fk()Z
 
     move-result p0
 
     if-nez p0, :cond_5
 
-    invoke-virtual {p1}, Lyou/zta/sis/zta/oxb;->Kk()V
+    invoke-virtual {p1}, Lyou/zta/sis/zta/oxb;->Tk()V
 
     return-object p1
 
     :cond_5
-    invoke-virtual {p1}, Lyou/zta/sis/zta/oxb;->Lk()V
+    invoke-virtual {p1}, Lyou/zta/sis/zta/oxb;->Uk()V
 
     :cond_6
     return-object p1

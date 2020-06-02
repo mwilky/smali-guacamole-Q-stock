@@ -15,11 +15,11 @@
 
 
 # instance fields
-.field public Xe:Z
-
 .field public mPkg:Ljava/lang/String;
 
 .field public mUid:I
+
+.field public sf:Z
 
 .field final synthetic this$0:Lcom/android/server/OpPowerControllerService;
 
@@ -34,7 +34,7 @@
 
     const/4 p1, 0x0
 
-    iput-boolean p1, p0, Lcom/android/server/OpPowerControllerService$sis;->Xe:Z
+    iput-boolean p1, p0, Lcom/android/server/OpPowerControllerService$sis;->sf:Z
 
     iput-object p2, p0, Lcom/android/server/OpPowerControllerService$sis;->mPkg:Ljava/lang/String;
 
@@ -70,7 +70,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean p0, p0, Lcom/android/server/OpPowerControllerService$sis;->Xe:Z
+    iget-boolean p0, p0, Lcom/android/server/OpPowerControllerService$sis;->sf:Z
 
     invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 

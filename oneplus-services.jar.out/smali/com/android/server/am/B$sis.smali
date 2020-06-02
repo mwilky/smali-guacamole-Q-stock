@@ -1,4 +1,4 @@
-.class final Lcom/android/server/am/z$sis;
+.class final Lcom/android/server/am/B$sis;
 .super Ljava/lang/Object;
 .source ""
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/server/am/z;
+    value = Lcom/android/server/am/B;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,24 +18,24 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/server/am/z;
+.field final synthetic this$0:Lcom/android/server/am/B;
 
 
 # direct methods
-.method private constructor <init>(Lcom/android/server/am/z;)V
+.method private constructor <init>(Lcom/android/server/am/B;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/android/server/am/z$sis;->this$0:Lcom/android/server/am/z;
+    iput-object p1, p0, Lcom/android/server/am/B$sis;->this$0:Lcom/android/server/am/B;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/android/server/am/z;Lcom/android/server/am/v;)V
+.method synthetic constructor <init>(Lcom/android/server/am/B;Lcom/android/server/am/x;)V
     .locals 0
 
-    invoke-direct {p0, p1}, Lcom/android/server/am/z$sis;-><init>(Lcom/android/server/am/z;)V
+    invoke-direct {p0, p1}, Lcom/android/server/am/B$sis;-><init>(Lcom/android/server/am/B;)V
 
     return-void
 .end method
@@ -71,7 +71,7 @@
 
     if-ge v1, p0, :cond_1
 
-    invoke-static {}, Lcom/android/server/am/z;->access$1000()Ljava/util/ArrayList;
+    invoke-static {}, Lcom/android/server/am/B;->access$1000()Ljava/util/ArrayList;
 
     move-result-object p0
 
@@ -80,7 +80,7 @@
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
     :try_start_1
-    invoke-static {}, Lcom/android/server/am/z;->access$1000()Ljava/util/ArrayList;
+    invoke-static {}, Lcom/android/server/am/B;->access$1000()Ljava/util/ArrayList;
 
     move-result-object v2
 
@@ -95,7 +95,7 @@
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     :try_start_2
-    invoke-static {}, Lcom/android/server/am/z;->access$1100()Z
+    invoke-static {}, Lcom/android/server/am/B;->access$1100()Z
 
     move-result p0
 

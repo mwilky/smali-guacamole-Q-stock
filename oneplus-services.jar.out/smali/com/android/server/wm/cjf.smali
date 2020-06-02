@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/server/wm/veq;->eq()V
+    value = Lcom/android/server/wm/cgv;->yq()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/server/wm/veq;
+.field final synthetic this$0:Lcom/android/server/wm/cgv;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/server/wm/veq;)V
+.method constructor <init>(Lcom/android/server/wm/cgv;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/android/server/wm/cjf;->this$0:Lcom/android/server/wm/veq;
+    iput-object p1, p0, Lcom/android/server/wm/cjf;->this$0:Lcom/android/server/wm/cgv;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -54,9 +54,9 @@
 
     invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v0, p0, Lcom/android/server/wm/cjf;->this$0:Lcom/android/server/wm/veq;
+    iget-object v0, p0, Lcom/android/server/wm/cjf;->this$0:Lcom/android/server/wm/cgv;
 
-    invoke-static {v0}, Lcom/android/server/wm/veq;->oif(Lcom/android/server/wm/veq;)Lcom/android/server/wm/ActivityRecord;
+    invoke-static {v0}, Lcom/android/server/wm/cgv;->oif(Lcom/android/server/wm/cgv;)Lcom/android/server/wm/ActivityRecord;
 
     move-result-object v0
 
@@ -68,9 +68,9 @@
 
     invoke-static {p1, p2}, Landroid/util/Slog;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    iget-object p0, p0, Lcom/android/server/wm/cjf;->this$0:Lcom/android/server/wm/veq;
+    iget-object p0, p0, Lcom/android/server/wm/cjf;->this$0:Lcom/android/server/wm/cgv;
 
-    invoke-virtual {p0}, Lcom/android/server/wm/veq;->exitQuickReply()V
+    invoke-virtual {p0}, Lcom/android/server/wm/cgv;->exitQuickReply()V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 

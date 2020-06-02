@@ -166,6 +166,28 @@
 
 
 # virtual methods
+.method Dg()I
+    .locals 1
+
+    iget-object v0, p0, Lorg/bouncycastle/asn1/u;->string:[B
+
+    array-length v0, v0
+
+    invoke-static {v0}, Lorg/bouncycastle/asn1/ia;->ha(I)I
+
+    move-result v0
+
+    add-int/lit8 v0, v0, 0x1
+
+    iget-object p0, p0, Lorg/bouncycastle/asn1/u;->string:[B
+
+    array-length p0, p0
+
+    add-int/2addr v0, p0
+
+    return v0
+.end method
+
 .method public getOctets()[B
     .locals 0
 
@@ -218,28 +240,6 @@
     move-result-object p0
 
     return-object p0
-.end method
-
-.method ug()I
-    .locals 1
-
-    iget-object v0, p0, Lorg/bouncycastle/asn1/u;->string:[B
-
-    array-length v0, v0
-
-    invoke-static {v0}, Lorg/bouncycastle/asn1/ia;->ea(I)I
-
-    move-result v0
-
-    add-int/lit8 v0, v0, 0x1
-
-    iget-object p0, p0, Lorg/bouncycastle/asn1/u;->string:[B
-
-    array-length p0, p0
-
-    add-int/2addr v0, p0
-
-    return v0
 .end method
 
 .method zta(Lorg/bouncycastle/asn1/ugm;)V

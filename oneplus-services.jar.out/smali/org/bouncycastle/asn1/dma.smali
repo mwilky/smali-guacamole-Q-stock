@@ -7,11 +7,11 @@
 
 
 # instance fields
-.field private final hia:Z
-
-.field private final iia:[[B
-
 .field private final limit:I
+
+.field private final vka:Z
+
+.field private final wka:[[B
 
 
 # direct methods
@@ -44,13 +44,13 @@
 
     iput p2, p0, Lorg/bouncycastle/asn1/dma;->limit:I
 
-    iput-boolean p3, p0, Lorg/bouncycastle/asn1/dma;->hia:Z
+    iput-boolean p3, p0, Lorg/bouncycastle/asn1/dma;->vka:Z
 
     const/16 p1, 0xb
 
     new-array p1, p1, [[B
 
-    iput-object p1, p0, Lorg/bouncycastle/asn1/dma;->iia:[[B
+    iput-object p1, p0, Lorg/bouncycastle/asn1/dma;->wka:[[B
 
     return-void
 .end method
@@ -688,7 +688,7 @@
 
 
 # virtual methods
-.method If()Lorg/bouncycastle/asn1/cno;
+.method Rf()Lorg/bouncycastle/asn1/cno;
     .locals 2
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -715,7 +715,7 @@
     return-object v0
 .end method
 
-.method protected Jf()I
+.method protected Sf()I
     .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -816,7 +816,7 @@
     const/4 v2, 0x0
 
     :goto_0
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/dma;->Jf()I
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/dma;->Sf()I
 
     move-result v4
 
@@ -1014,7 +1014,7 @@
 
     invoke-direct {p0, v2}, Lorg/bouncycastle/asn1/hmo;-><init>(Ljava/io/InputStream;)V
 
-    invoke-virtual {p0, v0, p2}, Lorg/bouncycastle/asn1/hmo;->sis(ZI)Lorg/bouncycastle/asn1/vdb;
+    invoke-virtual {p0, v0, p2}, Lorg/bouncycastle/asn1/hmo;->tsu(ZI)Lorg/bouncycastle/asn1/vdb;
 
     move-result-object p0
 
@@ -1075,7 +1075,7 @@
     throw p0
 
     :cond_4
-    iget-boolean p1, p0, Lorg/bouncycastle/asn1/dma;->hia:Z
+    iget-boolean p1, p0, Lorg/bouncycastle/asn1/dma;->vka:Z
 
     if-eqz p1, :cond_5
 
@@ -1147,7 +1147,7 @@
     return-object p0
 
     :cond_9
-    iget-object p0, p0, Lorg/bouncycastle/asn1/dma;->iia:[[B
+    iget-object p0, p0, Lorg/bouncycastle/asn1/dma;->wka:[[B
 
     invoke-static {p2, v2, p0}, Lorg/bouncycastle/asn1/dma;->zta(ILorg/bouncycastle/asn1/ba;[[B)Lorg/bouncycastle/asn1/vdb;
 
@@ -1168,7 +1168,7 @@
 
     invoke-direct {p0, p1}, Lorg/bouncycastle/asn1/dma;-><init>(Ljava/io/InputStream;)V
 
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/dma;->If()Lorg/bouncycastle/asn1/cno;
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/dma;->Rf()Lorg/bouncycastle/asn1/cno;
 
     move-result-object p0
 

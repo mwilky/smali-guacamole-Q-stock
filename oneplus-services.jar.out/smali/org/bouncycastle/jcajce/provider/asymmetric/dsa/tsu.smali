@@ -4,7 +4,7 @@
 
 
 # static fields
-.field public static final pCa:[Lorg/bouncycastle/asn1/bvj;
+.field public static final DEa:[Lorg/bouncycastle/asn1/bvj;
 
 
 # direct methods
@@ -21,7 +21,7 @@
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lorg/bouncycastle/asn1/gck/zta;->UNa:Lorg/bouncycastle/asn1/bvj;
+    sget-object v1, Lorg/bouncycastle/asn1/gck/zta;->hQa:Lorg/bouncycastle/asn1/bvj;
 
     const/4 v2, 0x1
 
@@ -33,7 +33,7 @@
 
     aput-object v1, v0, v2
 
-    sput-object v0, Lorg/bouncycastle/jcajce/provider/asymmetric/dsa/tsu;->pCa:[Lorg/bouncycastle/asn1/bvj;
+    sput-object v0, Lorg/bouncycastle/jcajce/provider/asymmetric/dsa/tsu;->DEa:[Lorg/bouncycastle/asn1/bvj;
 
     return-void
 .end method
@@ -116,7 +116,7 @@
     move v1, v0
 
     :goto_0
-    sget-object v2, Lorg/bouncycastle/jcajce/provider/asymmetric/dsa/tsu;->pCa:[Lorg/bouncycastle/asn1/bvj;
+    sget-object v2, Lorg/bouncycastle/jcajce/provider/asymmetric/dsa/tsu;->DEa:[Lorg/bouncycastle/asn1/bvj;
 
     array-length v3, v2
 
@@ -203,7 +203,7 @@
 
     check-cast p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dsa/BCDSAPublicKey;
 
-    invoke-virtual {p0}, Lorg/bouncycastle/jcajce/provider/asymmetric/dsa/BCDSAPublicKey;->xj()Lorg/bouncycastle/crypto/wtn/oif;
+    invoke-virtual {p0}, Lorg/bouncycastle/jcajce/provider/asymmetric/dsa/BCDSAPublicKey;->Gj()Lorg/bouncycastle/crypto/wtn/oif;
 
     move-result-object p0
 
@@ -220,7 +220,7 @@
 
     invoke-direct {v0, p0}, Lorg/bouncycastle/jcajce/provider/asymmetric/dsa/BCDSAPublicKey;-><init>(Ljava/security/interfaces/DSAPublicKey;)V
 
-    invoke-virtual {v0}, Lorg/bouncycastle/jcajce/provider/asymmetric/dsa/BCDSAPublicKey;->xj()Lorg/bouncycastle/crypto/wtn/oif;
+    invoke-virtual {v0}, Lorg/bouncycastle/jcajce/provider/asymmetric/dsa/BCDSAPublicKey;->Gj()Lorg/bouncycastle/crypto/wtn/oif;
 
     move-result-object p0
 
@@ -240,7 +240,7 @@
 
     invoke-direct {v1, v0}, Lorg/bouncycastle/jcajce/provider/asymmetric/dsa/BCDSAPublicKey;-><init>(Lorg/bouncycastle/asn1/x509/c;)V
 
-    invoke-virtual {v1}, Lorg/bouncycastle/jcajce/provider/asymmetric/dsa/BCDSAPublicKey;->xj()Lorg/bouncycastle/crypto/wtn/oif;
+    invoke-virtual {v1}, Lorg/bouncycastle/jcajce/provider/asymmetric/dsa/BCDSAPublicKey;->Gj()Lorg/bouncycastle/crypto/wtn/oif;
 
     move-result-object p0
     :try_end_0

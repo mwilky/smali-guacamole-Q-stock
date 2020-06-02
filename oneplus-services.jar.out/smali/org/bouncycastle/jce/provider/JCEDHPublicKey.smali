@@ -87,7 +87,7 @@
     iput-object p1, p0, Lorg/bouncycastle/jce/provider/JCEDHPublicKey;->info:Lorg/bouncycastle/asn1/x509/c;
 
     :try_start_0
-    invoke-virtual {p1}, Lorg/bouncycastle/asn1/x509/c;->oh()Lorg/bouncycastle/asn1/vdb;
+    invoke-virtual {p1}, Lorg/bouncycastle/asn1/x509/c;->xh()Lorg/bouncycastle/asn1/vdb;
 
     move-result-object v0
 
@@ -101,7 +101,7 @@
 
     iput-object v0, p0, Lorg/bouncycastle/jce/provider/JCEDHPublicKey;->y:Ljava/math/BigInteger;
 
-    invoke-virtual {p1}, Lorg/bouncycastle/asn1/x509/c;->Rh()Lorg/bouncycastle/asn1/x509/zta;
+    invoke-virtual {p1}, Lorg/bouncycastle/asn1/x509/c;->_h()Lorg/bouncycastle/asn1/x509/zta;
 
     move-result-object v0
 
@@ -113,7 +113,7 @@
 
     move-result-object v0
 
-    invoke-virtual {p1}, Lorg/bouncycastle/asn1/x509/c;->Rh()Lorg/bouncycastle/asn1/x509/zta;
+    invoke-virtual {p1}, Lorg/bouncycastle/asn1/x509/c;->_h()Lorg/bouncycastle/asn1/x509/zta;
 
     move-result-object p1
 

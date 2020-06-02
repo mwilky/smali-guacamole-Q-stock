@@ -16,61 +16,61 @@
 
 
 # static fields
-.field private static final Aq:Z
-
-.field private static Bq:Lcom/android/server/wm/ActivityTaskManagerService; = null
-
 .field private static final CONFIG_NAME:Ljava/lang/String; = "ProcessFreezer"
-
-.field private static final Cq:Ljava/lang/String; = "/system/bpm/brd.xml"
 
 .field public static final DEBUG:Z
 
-.field private static final Dq:Ljava/lang/String; = "/system/bpm/black_gps.xml"
-
-.field private static final Eq:Ljava/lang/String; = "/system/bpm/black_brd.xml"
-
-.field private static final Fq:Ljava/lang/String; = "/system/bpm/black_alarm.xml"
-
-.field private static final Gq:Ljava/lang/String; = "brd.xml"
-
-.field private static final Hq:Ljava/lang/String; = "/data/data_bpm/brd.xml"
-
 .field public static final IN_USING:Z = true
-
-.field private static final Iq:Ljava/lang/String; = "black_gps.xml"
-
-.field private static final Jq:Ljava/lang/String; = "/data/data_bpm/black_gps.xml"
-
-.field private static final Kq:Ljava/lang/String; = "black_brd.xml"
-
-.field private static final Lq:Ljava/lang/String; = "/data/data_bpm/black_brd.xml"
-
-.field private static final Mq:Ljava/lang/String; = "black_alarm.xml"
-
-.field private static final Nq:Ljava/lang/String; = "/data/data_bpm/black_alarm.xml"
-
-.field private static final Oq:I = 0x1
-
-.field private static final Ro:Ljava/lang/String; = "/data/data_bpm/"
 
 .field public static final TAG:Ljava/lang/String; = "BFP"
 
-.field private static mActivityManager:Lcom/android/server/am/ActivityManagerService;
+.field private static final dr:Z
 
-.field private static mActivityTaskManagerInternal:Lcom/android/server/wm/ActivityTaskManagerInternal;
+.field private static er:Lcom/android/server/wm/ActivityTaskManagerService; = null
 
-.field private static mInstance:Lcom/android/server/am/vdw;
+.field private static final fr:Ljava/lang/String; = "/system/bpm/brd.xml"
+
+.field private static final gr:Ljava/lang/String; = "/system/bpm/black_gps.xml"
+
+.field private static final hr:Ljava/lang/String; = "/system/bpm/black_brd.xml"
+
+.field private static final ir:Ljava/lang/String; = "/system/bpm/black_alarm.xml"
+
+.field private static final jr:Ljava/lang/String; = "brd.xml"
+
+.field private static final kr:Ljava/lang/String; = "/data/data_bpm/brd.xml"
+
+.field private static final lr:Ljava/lang/String; = "black_gps.xml"
+
+.field private static mActivityManager:Lcom/android/server/am/ActivityManagerService; = null
+
+.field private static mActivityTaskManagerInternal:Lcom/android/server/wm/ActivityTaskManagerInternal; = null
+
+.field private static mInstance:Lcom/android/server/am/vdw; = null
+
+.field private static final mr:Ljava/lang/String; = "/data/data_bpm/black_gps.xml"
+
+.field private static final or:Ljava/lang/String; = "black_brd.xml"
+
+.field private static final pr:Ljava/lang/String; = "/data/data_bpm/black_brd.xml"
+
+.field private static final qr:Ljava/lang/String; = "black_alarm.xml"
+
+.field private static final rr:Ljava/lang/String; = "/data/data_bpm/black_alarm.xml"
+
+.field private static final tr:I = 0x1
+
+.field private static final vp:Ljava/lang/String; = "/data/data_bpm/"
 
 
 # instance fields
+.field private br:Landroid/os/Handler;
+
+.field private cr:Landroid/os/HandlerThread;
+
 .field private mConfigObserver:Lcom/oneplus/config/ConfigObserver;
 
 .field private mContext:Landroid/content/Context;
-
-.field private yq:Landroid/os/Handler;
-
-.field private zq:Landroid/os/HandlerThread;
 
 
 # direct methods
@@ -89,13 +89,13 @@
 
     move-result v0
 
-    sput-boolean v0, Lcom/android/server/am/vdw;->Aq:Z
+    sput-boolean v0, Lcom/android/server/am/vdw;->dr:Z
 
     const/4 v0, 0x0
 
     sput-object v0, Lcom/android/server/am/vdw;->mActivityManager:Lcom/android/server/am/ActivityManagerService;
 
-    sput-object v0, Lcom/android/server/am/vdw;->Bq:Lcom/android/server/wm/ActivityTaskManagerService;
+    sput-object v0, Lcom/android/server/am/vdw;->er:Lcom/android/server/wm/ActivityTaskManagerService;
 
     sput-object v0, Lcom/android/server/am/vdw;->mActivityTaskManagerInternal:Lcom/android/server/wm/ActivityTaskManagerInternal;
 
@@ -111,9 +111,9 @@
 
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/android/server/am/vdw;->yq:Landroid/os/Handler;
+    iput-object v0, p0, Lcom/android/server/am/vdw;->br:Landroid/os/Handler;
 
-    iput-object v0, p0, Lcom/android/server/am/vdw;->zq:Landroid/os/HandlerThread;
+    iput-object v0, p0, Lcom/android/server/am/vdw;->cr:Landroid/os/HandlerThread;
 
     new-instance v0, Landroid/os/HandlerThread;
 
@@ -121,15 +121,15 @@
 
     invoke-direct {v0, v1}, Landroid/os/HandlerThread;-><init>(Ljava/lang/String;)V
 
-    iput-object v0, p0, Lcom/android/server/am/vdw;->zq:Landroid/os/HandlerThread;
+    iput-object v0, p0, Lcom/android/server/am/vdw;->cr:Landroid/os/HandlerThread;
 
-    iget-object v0, p0, Lcom/android/server/am/vdw;->zq:Landroid/os/HandlerThread;
+    iget-object v0, p0, Lcom/android/server/am/vdw;->cr:Landroid/os/HandlerThread;
 
     invoke-virtual {v0}, Landroid/os/HandlerThread;->start()V
 
     new-instance v0, Lcom/android/server/am/vdw$rtg;
 
-    iget-object v1, p0, Lcom/android/server/am/vdw;->zq:Landroid/os/HandlerThread;
+    iget-object v1, p0, Lcom/android/server/am/vdw;->cr:Landroid/os/HandlerThread;
 
     invoke-virtual {v1}, Landroid/os/HandlerThread;->getLooper()Landroid/os/Looper;
 
@@ -137,21 +137,21 @@
 
     invoke-direct {v0, p0, v1}, Lcom/android/server/am/vdw$rtg;-><init>(Lcom/android/server/am/vdw;Landroid/os/Looper;)V
 
-    iput-object v0, p0, Lcom/android/server/am/vdw;->yq:Landroid/os/Handler;
+    iput-object v0, p0, Lcom/android/server/am/vdw;->br:Landroid/os/Handler;
 
     return-void
 .end method
 
-.method private Nb()V
+.method private Mb()V
     .locals 1
 
-    invoke-direct {p0}, Lcom/android/server/am/vdw;->Vm()V
+    invoke-direct {p0}, Lcom/android/server/am/vdw;->kn()V
 
-    invoke-static {}, Lcom/android/server/am/vdw$zta;->Nb()V
+    invoke-static {}, Lcom/android/server/am/vdw$zta;->Mb()V
 
     const-string v0, "/data/data_bpm/black_gps.xml"
 
-    invoke-static {v0}, Lcom/android/server/am/vdw;->m(Ljava/lang/String;)Ljava/util/List;
+    invoke-static {v0}, Lcom/android/server/am/vdw;->n(Ljava/lang/String;)Ljava/util/List;
 
     move-result-object v0
 
@@ -162,7 +162,138 @@
     return-void
 .end method
 
-.method private Vm()V
+.method static synthetic access$200()Z
+    .locals 1
+
+    sget-boolean v0, Lcom/android/server/am/vdw;->dr:Z
+
+    return v0
+.end method
+
+.method static synthetic access$300()Lcom/android/server/am/ActivityManagerService;
+    .locals 1
+
+    sget-object v0, Lcom/android/server/am/vdw;->mActivityManager:Lcom/android/server/am/ActivityManagerService;
+
+    return-object v0
+.end method
+
+.method public static declared-synchronized getInstance()Lcom/android/server/am/vdw;
+    .locals 2
+
+    const-class v0, Lcom/android/server/am/vdw;
+
+    monitor-enter v0
+
+    :try_start_0
+    sget-object v1, Lcom/android/server/am/vdw;->mInstance:Lcom/android/server/am/vdw;
+
+    if-nez v1, :cond_0
+
+    new-instance v1, Lcom/android/server/am/vdw;
+
+    invoke-direct {v1}, Lcom/android/server/am/vdw;-><init>()V
+
+    sput-object v1, Lcom/android/server/am/vdw;->mInstance:Lcom/android/server/am/vdw;
+
+    :cond_0
+    sget-object v1, Lcom/android/server/am/vdw;->mInstance:Lcom/android/server/am/vdw;
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    monitor-exit v0
+
+    return-object v1
+
+    :catchall_0
+    move-exception v1
+
+    monitor-exit v0
+
+    throw v1
+.end method
+
+.method private gwm(Ljava/lang/String;Ljava/lang/String;)V
+    .locals 2
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    new-instance p0, Ljava/io/File;
+
+    invoke-direct {p0, p2}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {p0}, Ljava/io/File;->exists()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    return-void
+
+    :cond_0
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v1, "copyFile():fromFile="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v1, ", toFile="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p2
+
+    const-string v0, "BFP"
+
+    invoke-static {v0, p2}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    new-instance p2, Ljava/io/File;
+
+    invoke-direct {p2, p1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    invoke-static {p2, p0}, Landroid/os/FileUtils;->copyFile(Ljava/io/File;Ljava/io/File;)Z
+
+    return-void
+.end method
+
+.method private initOnlineConfig()V
+    .locals 5
+
+    new-instance v0, Lcom/oneplus/config/ConfigObserver;
+
+    iget-object v1, p0, Lcom/android/server/am/vdw;->mContext:Landroid/content/Context;
+
+    iget-object v2, p0, Lcom/android/server/am/vdw;->br:Landroid/os/Handler;
+
+    new-instance v3, Lcom/android/server/am/vdw$tsu;
+
+    invoke-direct {v3, p0}, Lcom/android/server/am/vdw$tsu;-><init>(Lcom/android/server/am/vdw;)V
+
+    const-string v4, "ProcessFreezer"
+
+    invoke-direct {v0, v1, v2, v3, v4}, Lcom/oneplus/config/ConfigObserver;-><init>(Landroid/content/Context;Landroid/os/Handler;Lcom/oneplus/config/ConfigObserver$ConfigUpdater;Ljava/lang/String;)V
+
+    iput-object v0, p0, Lcom/android/server/am/vdw;->mConfigObserver:Lcom/oneplus/config/ConfigObserver;
+
+    iget-object p0, p0, Lcom/android/server/am/vdw;->mConfigObserver:Lcom/oneplus/config/ConfigObserver;
+
+    invoke-virtual {p0}, Lcom/oneplus/config/ConfigObserver;->register()V
+
+    return-void
+.end method
+
+.method private kn()V
     .locals 3
 
     const-string v0, "BFP"
@@ -305,138 +436,7 @@
     return-void
 .end method
 
-.method static synthetic access$200()Z
-    .locals 1
-
-    sget-boolean v0, Lcom/android/server/am/vdw;->Aq:Z
-
-    return v0
-.end method
-
-.method static synthetic access$300()Lcom/android/server/am/ActivityManagerService;
-    .locals 1
-
-    sget-object v0, Lcom/android/server/am/vdw;->mActivityManager:Lcom/android/server/am/ActivityManagerService;
-
-    return-object v0
-.end method
-
-.method public static declared-synchronized getInstance()Lcom/android/server/am/vdw;
-    .locals 2
-
-    const-class v0, Lcom/android/server/am/vdw;
-
-    monitor-enter v0
-
-    :try_start_0
-    sget-object v1, Lcom/android/server/am/vdw;->mInstance:Lcom/android/server/am/vdw;
-
-    if-nez v1, :cond_0
-
-    new-instance v1, Lcom/android/server/am/vdw;
-
-    invoke-direct {v1}, Lcom/android/server/am/vdw;-><init>()V
-
-    sput-object v1, Lcom/android/server/am/vdw;->mInstance:Lcom/android/server/am/vdw;
-
-    :cond_0
-    sget-object v1, Lcom/android/server/am/vdw;->mInstance:Lcom/android/server/am/vdw;
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    monitor-exit v0
-
-    return-object v1
-
-    :catchall_0
-    move-exception v1
-
-    monitor-exit v0
-
-    throw v1
-.end method
-
-.method private gwm(Ljava/lang/String;Ljava/lang/String;)V
-    .locals 2
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
-
-    new-instance p0, Ljava/io/File;
-
-    invoke-direct {p0, p2}, Ljava/io/File;-><init>(Ljava/lang/String;)V
-
-    invoke-virtual {p0}, Ljava/io/File;->exists()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    return-void
-
-    :cond_0
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v1, "copyFile():fromFile="
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string v1, ", toFile="
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p2
-
-    const-string v0, "BFP"
-
-    invoke-static {v0, p2}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    new-instance p2, Ljava/io/File;
-
-    invoke-direct {p2, p1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
-
-    invoke-static {p2, p0}, Landroid/os/FileUtils;->copyFile(Ljava/io/File;Ljava/io/File;)Z
-
-    return-void
-.end method
-
-.method private initOnlineConfig()V
-    .locals 5
-
-    new-instance v0, Lcom/oneplus/config/ConfigObserver;
-
-    iget-object v1, p0, Lcom/android/server/am/vdw;->mContext:Landroid/content/Context;
-
-    iget-object v2, p0, Lcom/android/server/am/vdw;->yq:Landroid/os/Handler;
-
-    new-instance v3, Lcom/android/server/am/vdw$tsu;
-
-    invoke-direct {v3, p0}, Lcom/android/server/am/vdw$tsu;-><init>(Lcom/android/server/am/vdw;)V
-
-    const-string v4, "ProcessFreezer"
-
-    invoke-direct {v0, v1, v2, v3, v4}, Lcom/oneplus/config/ConfigObserver;-><init>(Landroid/content/Context;Landroid/os/Handler;Lcom/oneplus/config/ConfigObserver$ConfigUpdater;Ljava/lang/String;)V
-
-    iput-object v0, p0, Lcom/android/server/am/vdw;->mConfigObserver:Lcom/oneplus/config/ConfigObserver;
-
-    iget-object p0, p0, Lcom/android/server/am/vdw;->mConfigObserver:Lcom/oneplus/config/ConfigObserver;
-
-    invoke-virtual {p0}, Lcom/oneplus/config/ConfigObserver;->register()V
-
-    return-void
-.end method
-
-.method public static m(Ljava/lang/String;)Ljava/util/List;
+.method public static n(Ljava/lang/String;)Ljava/util/List;
     .locals 12
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -998,7 +998,7 @@
 
     if-ge v1, v2, :cond_2
 
-    sget-boolean v0, Lcom/android/server/am/vdw;->Aq:Z
+    sget-boolean v0, Lcom/android/server/am/vdw;->dr:Z
 
     if-eqz v0, :cond_1
 
@@ -1039,7 +1039,7 @@
 
     if-eqz v1, :cond_5
 
-    sget-boolean v0, Lcom/android/server/am/vdw;->Aq:Z
+    sget-boolean v0, Lcom/android/server/am/vdw;->dr:Z
 
     if-eqz v0, :cond_4
 
@@ -1073,7 +1073,7 @@
 
     if-eqz v1, :cond_7
 
-    sget-boolean v0, Lcom/android/server/am/vdw;->Aq:Z
+    sget-boolean v0, Lcom/android/server/am/vdw;->dr:Z
 
     if-eqz v0, :cond_6
 
@@ -1138,7 +1138,7 @@
 .method static synthetic zta(Lcom/android/server/am/vdw;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/am/vdw;->Nb()V
+    invoke-direct {p0}, Lcom/android/server/am/vdw;->Mb()V
 
     return-void
 .end method
@@ -1372,7 +1372,7 @@
 .method public getLooper()Landroid/os/Looper;
     .locals 0
 
-    iget-object p0, p0, Lcom/android/server/am/vdw;->zq:Landroid/os/HandlerThread;
+    iget-object p0, p0, Lcom/android/server/am/vdw;->cr:Landroid/os/HandlerThread;
 
     invoke-virtual {p0}, Landroid/os/HandlerThread;->getLooper()Landroid/os/Looper;
 
@@ -1388,7 +1388,7 @@
 
     sput-object p2, Lcom/android/server/am/vdw;->mActivityManager:Lcom/android/server/am/ActivityManagerService;
 
-    sput-object p3, Lcom/android/server/am/vdw;->Bq:Lcom/android/server/wm/ActivityTaskManagerService;
+    sput-object p3, Lcom/android/server/am/vdw;->er:Lcom/android/server/wm/ActivityTaskManagerService;
 
     const-class p1, Lcom/android/server/wm/ActivityTaskManagerInternal;
 
@@ -1414,7 +1414,7 @@
 
     iput p2, p1, Landroid/os/Message;->what:I
 
-    iget-object p0, p0, Lcom/android/server/am/vdw;->yq:Landroid/os/Handler;
+    iget-object p0, p0, Lcom/android/server/am/vdw;->br:Landroid/os/Handler;
 
     const-wide/16 p2, 0x1388
 

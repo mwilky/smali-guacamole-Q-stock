@@ -4,7 +4,7 @@
 
 
 # static fields
-.field private static final gqa:[B
+.field private static final usa:[B
 
 
 # direct methods
@@ -15,7 +15,7 @@
 
     new-array v0, v0, [B
 
-    sput-object v0, Lorg/bouncycastle/asn1/L;->gqa:[B
+    sput-object v0, Lorg/bouncycastle/asn1/L;->usa:[B
 
     return-void
 .end method
@@ -40,43 +40,7 @@
 
 
 # virtual methods
-.method isConstructed()Z
-    .locals 2
-
-    iget-boolean v0, p0, Lorg/bouncycastle/asn1/lqr;->empty:Z
-
-    const/4 v1, 0x1
-
-    if-nez v0, :cond_1
-
-    iget-boolean v0, p0, Lorg/bouncycastle/asn1/lqr;->fqa:Z
-
-    if-eqz v0, :cond_0
-
-    return v1
-
-    :cond_0
-    iget-object p0, p0, Lorg/bouncycastle/asn1/lqr;->obj:Lorg/bouncycastle/asn1/ssp;
-
-    invoke-interface {p0}, Lorg/bouncycastle/asn1/ssp;->toASN1Primitive()Lorg/bouncycastle/asn1/vdb;
-
-    move-result-object p0
-
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/vdb;->vg()Lorg/bouncycastle/asn1/vdb;
-
-    move-result-object p0
-
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/vdb;->isConstructed()Z
-
-    move-result p0
-
-    return p0
-
-    :cond_1
-    return v1
-.end method
-
-.method ug()I
+.method Dg()I
     .locals 2
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -94,25 +58,25 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lorg/bouncycastle/asn1/vdb;->vg()Lorg/bouncycastle/asn1/vdb;
+    invoke-virtual {v0}, Lorg/bouncycastle/asn1/vdb;->Eg()Lorg/bouncycastle/asn1/vdb;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lorg/bouncycastle/asn1/vdb;->ug()I
+    invoke-virtual {v0}, Lorg/bouncycastle/asn1/vdb;->Dg()I
 
     move-result v0
 
-    iget-boolean v1, p0, Lorg/bouncycastle/asn1/lqr;->fqa:Z
+    iget-boolean v1, p0, Lorg/bouncycastle/asn1/lqr;->tsa:Z
 
     if-eqz v1, :cond_0
 
-    iget p0, p0, Lorg/bouncycastle/asn1/lqr;->eqa:I
+    iget p0, p0, Lorg/bouncycastle/asn1/lqr;->ssa:I
 
-    invoke-static {p0}, Lorg/bouncycastle/asn1/ia;->fa(I)I
+    invoke-static {p0}, Lorg/bouncycastle/asn1/ia;->ia(I)I
 
     move-result p0
 
-    invoke-static {v0}, Lorg/bouncycastle/asn1/ia;->ea(I)I
+    invoke-static {v0}, Lorg/bouncycastle/asn1/ia;->ha(I)I
 
     move-result v1
 
@@ -125,9 +89,9 @@
     :cond_0
     add-int/lit8 v0, v0, -0x1
 
-    iget p0, p0, Lorg/bouncycastle/asn1/lqr;->eqa:I
+    iget p0, p0, Lorg/bouncycastle/asn1/lqr;->ssa:I
 
-    invoke-static {p0}, Lorg/bouncycastle/asn1/ia;->fa(I)I
+    invoke-static {p0}, Lorg/bouncycastle/asn1/ia;->ia(I)I
 
     move-result p0
 
@@ -136,15 +100,51 @@
     return p0
 
     :cond_1
-    iget p0, p0, Lorg/bouncycastle/asn1/lqr;->eqa:I
+    iget p0, p0, Lorg/bouncycastle/asn1/lqr;->ssa:I
 
-    invoke-static {p0}, Lorg/bouncycastle/asn1/ia;->fa(I)I
+    invoke-static {p0}, Lorg/bouncycastle/asn1/ia;->ia(I)I
 
     move-result p0
 
     add-int/lit8 p0, p0, 0x1
 
     return p0
+.end method
+
+.method isConstructed()Z
+    .locals 2
+
+    iget-boolean v0, p0, Lorg/bouncycastle/asn1/lqr;->empty:Z
+
+    const/4 v1, 0x1
+
+    if-nez v0, :cond_1
+
+    iget-boolean v0, p0, Lorg/bouncycastle/asn1/lqr;->tsa:Z
+
+    if-eqz v0, :cond_0
+
+    return v1
+
+    :cond_0
+    iget-object p0, p0, Lorg/bouncycastle/asn1/lqr;->obj:Lorg/bouncycastle/asn1/ssp;
+
+    invoke-interface {p0}, Lorg/bouncycastle/asn1/ssp;->toASN1Primitive()Lorg/bouncycastle/asn1/vdb;
+
+    move-result-object p0
+
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/vdb;->Eg()Lorg/bouncycastle/asn1/vdb;
+
+    move-result-object p0
+
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/vdb;->isConstructed()Z
+
+    move-result p0
+
+    return p0
+
+    :cond_1
+    return v1
 .end method
 
 .method zta(Lorg/bouncycastle/asn1/ugm;)V
@@ -167,23 +167,23 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lorg/bouncycastle/asn1/vdb;->vg()Lorg/bouncycastle/asn1/vdb;
+    invoke-virtual {v0}, Lorg/bouncycastle/asn1/vdb;->Eg()Lorg/bouncycastle/asn1/vdb;
 
     move-result-object v0
 
-    iget-boolean v2, p0, Lorg/bouncycastle/asn1/lqr;->fqa:Z
+    iget-boolean v2, p0, Lorg/bouncycastle/asn1/lqr;->tsa:Z
 
     if-eqz v2, :cond_0
 
-    iget p0, p0, Lorg/bouncycastle/asn1/lqr;->eqa:I
+    iget p0, p0, Lorg/bouncycastle/asn1/lqr;->ssa:I
 
     invoke-virtual {p1, v1, p0}, Lorg/bouncycastle/asn1/ugm;->writeTag(II)V
 
-    invoke-virtual {v0}, Lorg/bouncycastle/asn1/vdb;->ug()I
+    invoke-virtual {v0}, Lorg/bouncycastle/asn1/vdb;->Dg()I
 
     move-result p0
 
-    invoke-virtual {p1, p0}, Lorg/bouncycastle/asn1/ugm;->ca(I)V
+    invoke-virtual {p1, p0}, Lorg/bouncycastle/asn1/ugm;->fa(I)V
 
     invoke-virtual {p1, v0}, Lorg/bouncycastle/asn1/ugm;->sis(Lorg/bouncycastle/asn1/ssp;)V
 
@@ -202,7 +202,7 @@
     const/16 v1, 0x80
 
     :goto_0
-    iget p0, p0, Lorg/bouncycastle/asn1/lqr;->eqa:I
+    iget p0, p0, Lorg/bouncycastle/asn1/lqr;->ssa:I
 
     invoke-virtual {p1, v1, p0}, Lorg/bouncycastle/asn1/ugm;->writeTag(II)V
 
@@ -211,9 +211,9 @@
     goto :goto_1
 
     :cond_2
-    iget p0, p0, Lorg/bouncycastle/asn1/lqr;->eqa:I
+    iget p0, p0, Lorg/bouncycastle/asn1/lqr;->ssa:I
 
-    sget-object v0, Lorg/bouncycastle/asn1/L;->gqa:[B
+    sget-object v0, Lorg/bouncycastle/asn1/L;->usa:[B
 
     invoke-virtual {p1, v1, p0, v0}, Lorg/bouncycastle/asn1/ugm;->you(II[B)V
 

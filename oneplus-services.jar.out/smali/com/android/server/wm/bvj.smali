@@ -68,7 +68,7 @@
 
     const-string p0, "BaseTimer not yet timing, return"
 
-    invoke-static {p0}, Lcom/android/server/wm/OpPowerConsumpStats;->ja(Ljava/lang/String;)V
+    invoke-static {p0}, Lcom/android/server/wm/OpPowerConsumpStats;->la(Ljava/lang/String;)V
 
     return-void
 

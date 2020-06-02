@@ -73,7 +73,7 @@
 
 
 # virtual methods
-.method public Aj()I
+.method public Jj()I
     .locals 0
 
     iget p0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/BCPBEKey;->ivSize:I
@@ -81,7 +81,7 @@
     return p0
 .end method
 
-.method Bj()Z
+.method Kj()Z
     .locals 0
 
     iget-boolean p0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/BCPBEKey;->tryWrong:Z
@@ -89,7 +89,7 @@
     return p0
 .end method
 
-.method Kf()I
+.method Tf()I
     .locals 0
 
     iget p0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/BCPBEKey;->digest:I
@@ -97,7 +97,7 @@
     return p0
 .end method
 
-.method public Pi()Lorg/bouncycastle/asn1/bvj;
+.method public Yi()Lorg/bouncycastle/asn1/bvj;
     .locals 0
 
     iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/BCPBEKey;->oid:Lorg/bouncycastle/asn1/bvj;
@@ -105,20 +105,12 @@
     return-object p0
 .end method
 
-.method public Y(Z)V
+.method public aa(Z)V
     .locals 0
 
     iput-boolean p1, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/BCPBEKey;->tryWrong:Z
 
     return-void
-.end method
-
-.method public ae()Lorg/bouncycastle/crypto/kth;
-    .locals 0
-
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/BCPBEKey;->param:Lorg/bouncycastle/crypto/kth;
-
-    return-object p0
 .end method
 
 .method public getAlgorithm()Ljava/lang/String;
@@ -264,4 +256,12 @@
     iget p0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/BCPBEKey;->type:I
 
     return p0
+.end method
+
+.method public he()Lorg/bouncycastle/crypto/kth;
+    .locals 0
+
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/BCPBEKey;->param:Lorg/bouncycastle/crypto/kth;
+
+    return-object p0
 .end method

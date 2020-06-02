@@ -15,7 +15,11 @@
 
 
 # instance fields
-.field aj:Ljava/util/ArrayList;
+.field mUid:I
+
+.field final synthetic this$0:Lcom/android/server/am/zgw;
+
+.field wj:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/ArrayList<",
@@ -25,11 +29,7 @@
     .end annotation
 .end field
 
-.field bj:Ljava/lang/String;
-
-.field mUid:I
-
-.field final synthetic this$0:Lcom/android/server/am/zgw;
+.field xj:Ljava/lang/String;
 
 
 # direct methods
@@ -44,11 +44,11 @@
 
     invoke-direct {p1}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object p1, p0, Lcom/android/server/am/zgw$tsu;->aj:Ljava/util/ArrayList;
+    iput-object p1, p0, Lcom/android/server/am/zgw$tsu;->wj:Ljava/util/ArrayList;
 
     const-string p1, ""
 
-    iput-object p1, p0, Lcom/android/server/am/zgw$tsu;->bj:Ljava/lang/String;
+    iput-object p1, p0, Lcom/android/server/am/zgw$tsu;->xj:Ljava/lang/String;
 
     const/4 p1, -0x1
 
@@ -65,35 +65,10 @@
     return-void
 .end method
 
-.method private Zl()Z
-    .locals 2
-
-    iget-object v0, p0, Lcom/android/server/am/zgw$tsu;->aj:Ljava/util/ArrayList;
-
-    invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
-
-    move-result v0
-
-    const/16 v1, 0x8
-
-    if-lt v0, v1, :cond_0
-
-    invoke-direct {p0}, Lcom/android/server/am/zgw$tsu;->clear()V
-
-    const/4 p0, 0x1
-
-    return p0
-
-    :cond_0
-    const/4 p0, 0x0
-
-    return p0
-.end method
-
 .method private cgv(J)V
     .locals 1
 
-    iget-object v0, p0, Lcom/android/server/am/zgw$tsu;->aj:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/server/am/zgw$tsu;->wj:Ljava/util/ArrayList;
 
     invoke-static {p1, p2}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
@@ -113,7 +88,7 @@
 
     invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object p0, p0, Lcom/android/server/am/zgw$tsu;->aj:Ljava/util/ArrayList;
+    iget-object p0, p0, Lcom/android/server/am/zgw$tsu;->wj:Ljava/util/ArrayList;
 
     invoke-virtual {p0}, Ljava/util/ArrayList;->size()I
 
@@ -138,17 +113,42 @@
 
     const-string v0, ""
 
-    iput-object v0, p0, Lcom/android/server/am/zgw$tsu;->bj:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/server/am/zgw$tsu;->xj:Ljava/lang/String;
 
     const/4 v0, -0x1
 
     iput v0, p0, Lcom/android/server/am/zgw$tsu;->mUid:I
 
-    iget-object p0, p0, Lcom/android/server/am/zgw$tsu;->aj:Ljava/util/ArrayList;
+    iget-object p0, p0, Lcom/android/server/am/zgw$tsu;->wj:Ljava/util/ArrayList;
 
     invoke-virtual {p0}, Ljava/util/ArrayList;->clear()V
 
     return-void
+.end method
+
+.method private km()Z
+    .locals 2
+
+    iget-object v0, p0, Lcom/android/server/am/zgw$tsu;->wj:Ljava/util/ArrayList;
+
+    invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
+
+    move-result v0
+
+    const/16 v1, 0x8
+
+    if-lt v0, v1, :cond_0
+
+    invoke-direct {p0}, Lcom/android/server/am/zgw$tsu;->clear()V
+
+    const/4 p0, 0x1
+
+    return p0
+
+    :cond_0
+    const/4 p0, 0x0
+
+    return p0
 .end method
 
 .method static synthetic you(Lcom/android/server/am/zgw$tsu;Ljava/lang/String;IJ)Z
@@ -164,7 +164,7 @@
 .method private you(Ljava/lang/String;IJ)Z
     .locals 1
 
-    iget-object v0, p0, Lcom/android/server/am/zgw$tsu;->bj:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/server/am/zgw$tsu;->xj:Ljava/lang/String;
 
     invoke-virtual {v0, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -176,7 +176,7 @@
 
     if-ne p1, p2, :cond_0
 
-    iget-object p0, p0, Lcom/android/server/am/zgw$tsu;->aj:Ljava/util/ArrayList;
+    iget-object p0, p0, Lcom/android/server/am/zgw$tsu;->wj:Ljava/util/ArrayList;
 
     invoke-virtual {p0}, Ljava/util/ArrayList;->size()I
 
@@ -239,11 +239,11 @@
 
     invoke-direct {p0}, Lcom/android/server/am/zgw$tsu;->clear()V
 
-    iput-object p1, p0, Lcom/android/server/am/zgw$tsu;->bj:Ljava/lang/String;
+    iput-object p1, p0, Lcom/android/server/am/zgw$tsu;->xj:Ljava/lang/String;
 
     iput p2, p0, Lcom/android/server/am/zgw$tsu;->mUid:I
 
-    iget-object p0, p0, Lcom/android/server/am/zgw$tsu;->aj:Ljava/util/ArrayList;
+    iget-object p0, p0, Lcom/android/server/am/zgw$tsu;->wj:Ljava/util/ArrayList;
 
     invoke-static {p3, p4}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
@@ -257,7 +257,7 @@
 .method static synthetic zta(Lcom/android/server/am/zgw$tsu;)Z
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/am/zgw$tsu;->Zl()Z
+    invoke-direct {p0}, Lcom/android/server/am/zgw$tsu;->km()Z
 
     move-result p0
 

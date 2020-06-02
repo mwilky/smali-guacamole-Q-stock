@@ -1,11 +1,11 @@
 .class Lcom/oneplus/server/cno;
-.super Landroid/util/Singleton;
+.super Landroid/content/BroadcastReceiver;
 .source ""
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/oneplus/server/OnePlusService;
+    value = Lcom/oneplus/server/kth;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -13,68 +13,121 @@
     name = null
 .end annotation
 
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Landroid/util/Singleton<",
-        "Lcom/oneplus/os/IOnePlusService;",
-        ">;"
-    }
-.end annotation
+
+# instance fields
+.field final synthetic this$0:Lcom/oneplus/server/kth;
 
 
 # direct methods
-.method constructor <init>()V
+.method constructor <init>(Lcom/oneplus/server/kth;)V
     .locals 0
 
-    invoke-direct {p0}, Landroid/util/Singleton;-><init>()V
+    iput-object p1, p0, Lcom/oneplus/server/cno;->this$0:Lcom/oneplus/server/kth;
+
+    invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method protected create()Lcom/oneplus/os/IOnePlusService;
-    .locals 2
+.method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
+    .locals 4
 
-    const-string p0, "opservice"
+    invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
-    invoke-static {p0}, Landroid/os/ServiceManager;->getService(Ljava/lang/String;)Landroid/os/IBinder;
+    move-result-object p1
 
-    move-result-object p0
+    sget-boolean p2, Lcom/oneplus/server/kth;->DEBUG:Z
 
-    const-string v0, "OnePlusService"
+    if-eqz p2, :cond_0
 
-    if-nez p0, :cond_0
+    new-instance p2, Ljava/lang/StringBuilder;
 
-    const-string p0, "can\'t get service binder: OnePlusServiceManager"
+    invoke-direct {p2}, Ljava/lang/StringBuilder;-><init>()V
 
-    invoke-static {v0, p0}, Landroid/util/Slog;->e(Ljava/lang/String;Ljava/lang/String;)I
+    const-string v0, "mScreenStateReceiver: action="
 
-    const/4 p0, 0x0
+    invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    return-object p0
+    invoke-virtual {p2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p2
+
+    const-string v0, "DozeManager"
+
+    invoke-static {v0, p2}, Landroid/util/Slog;->i(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_0
-    invoke-static {p0}, Lcom/oneplus/os/IOnePlusService$Stub;->asInterface(Landroid/os/IBinder;)Lcom/oneplus/os/IOnePlusService;
+    const-string p2, "android.intent.action.SCREEN_OFF"
+
+    invoke-virtual {p2, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result p2
+
+    if-eqz p2, :cond_1
+
+    invoke-static {}, Lcom/oneplus/server/kth;->access$200()Landroid/app/AlarmManager;
 
     move-result-object p0
 
-    if-nez p0, :cond_1
+    const/4 p1, 0x1
 
-    const-string v1, "can\'t get service interface: OnePlusServiceManager"
+    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
-    invoke-static {v0, v1}, Landroid/util/Slog;->e(Ljava/lang/String;Ljava/lang/String;)I
+    move-result-wide v0
+
+    invoke-static {}, Lcom/oneplus/server/kth;->access$000()J
+
+    move-result-wide v2
+
+    add-long/2addr v0, v2
+
+    invoke-static {}, Lcom/oneplus/server/kth;->access$100()Landroid/app/PendingIntent;
+
+    move-result-object p2
+
+    invoke-virtual {p0, p1, v0, v1, p2}, Landroid/app/AlarmManager;->setExact(IJLandroid/app/PendingIntent;)V
+
+    goto :goto_0
 
     :cond_1
-    return-object p0
-.end method
+    const-string p2, "android.intent.action.SCREEN_ON"
 
-.method protected bridge synthetic create()Ljava/lang/Object;
-    .locals 0
+    invoke-virtual {p2, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    invoke-virtual {p0}, Lcom/oneplus/server/cno;->create()Lcom/oneplus/os/IOnePlusService;
+    move-result p2
+
+    if-eqz p2, :cond_2
+
+    invoke-static {}, Lcom/oneplus/server/kth;->access$200()Landroid/app/AlarmManager;
 
     move-result-object p0
 
-    return-object p0
+    invoke-static {}, Lcom/oneplus/server/kth;->access$100()Landroid/app/PendingIntent;
+
+    move-result-object p1
+
+    invoke-virtual {p0, p1}, Landroid/app/AlarmManager;->cancel(Landroid/app/PendingIntent;)V
+
+    goto :goto_0
+
+    :cond_2
+    const-string p2, "com.oneplus.android.screenOffCheckProcessState"
+
+    invoke-virtual {p2, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_3
+
+    iget-object p0, p0, Lcom/oneplus/server/cno;->this$0:Lcom/oneplus/server/kth;
+
+    invoke-static {p0}, Lcom/oneplus/server/kth;->zta(Lcom/oneplus/server/kth;)V
+
+    :cond_3
+    :goto_0
+    return-void
 .end method

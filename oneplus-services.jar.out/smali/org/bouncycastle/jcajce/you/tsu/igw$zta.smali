@@ -76,7 +76,7 @@
 .method protected engineGetEncoded(Ljava/lang/String;)[B
     .locals 0
 
-    invoke-virtual {p0, p1}, Lorg/bouncycastle/jcajce/provider/symmetric/util/you;->ta(Ljava/lang/String;)Z
+    invoke-virtual {p0, p1}, Lorg/bouncycastle/jcajce/provider/symmetric/util/you;->va(Ljava/lang/String;)Z
 
     move-result p1
 
@@ -163,7 +163,7 @@
         }
     .end annotation
 
-    invoke-virtual {p0, p2}, Lorg/bouncycastle/jcajce/provider/symmetric/util/you;->ta(Ljava/lang/String;)Z
+    invoke-virtual {p0, p2}, Lorg/bouncycastle/jcajce/provider/symmetric/util/you;->va(Ljava/lang/String;)Z
 
     move-result p2
 
@@ -213,7 +213,7 @@
 
     iget-object p0, p0, Lorg/bouncycastle/jcajce/you/tsu/igw$zta;->params:Lorg/bouncycastle/asn1/dma/ibl;
 
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/dma/ibl;->jh()Ljava/math/BigInteger;
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/dma/ibl;->sh()Ljava/math/BigInteger;
 
     move-result-object p0
 

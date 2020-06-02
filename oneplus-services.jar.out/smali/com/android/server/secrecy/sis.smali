@@ -12,43 +12,43 @@
 
 
 # static fields
+.field private static final BM:Ljava/lang/String; = "last_download_time"
+
+.field private static final CM:Ljava/lang/String; = "encrypt_app"
+
+.field private static final DM:Ljava/lang/String; = "encrypt_log"
+
+.field private static final EM:Ljava/lang/String; = "encrypt_adb"
+
 .field private static final TAG:Ljava/lang/String; = "SecrecyService.SecrecyConfig"
 
-.field private static final iL:I = 0x1
-
-.field private static final jL:I = 0x2
-
-.field private static final kL:I = 0x3
-
-.field private static final lL:Ljava/lang/String; = "imei"
-
-.field private static final mL:Ljava/lang/String; = "rc4_key"
-
-.field private static final nL:Ljava/lang/String; = "last_download_time"
-
-.field private static final oL:Ljava/lang/String; = "encrypt_app"
-
-.field private static final pL:Ljava/lang/String; = "encrypt_log"
-
-.field private static final qL:Ljava/lang/String; = "encrypt_adb"
-
-.field private static sInstance:Lcom/android/server/secrecy/sis;
+.field private static sInstance:Lcom/android/server/secrecy/sis; = null
 
 .field private static final sInstanceLock:Ljava/lang/Object;
 
+.field private static final vM:I = 0x1
+
+.field private static final wM:I = 0x2
+
+.field private static final xM:I = 0x3
+
+.field private static final yM:Ljava/lang/String; = "imei"
+
+.field private static final zM:Ljava/lang/String; = "rc4_key"
+
 
 # instance fields
-.field private final eL:Ljava/lang/String;
-
-.field private final fL:[B
-
-.field private gL:[B
-
-.field private hL:Ljava/lang/String;
-
 .field private mHandler:Landroid/os/Handler;
 
 .field private mPolicyManager:Lcom/android/server/secrecy/zta/sis;
+
+.field private final rM:Ljava/lang/String;
+
+.field private final sM:[B
+
+.field private tM:[B
+
+.field private uM:Ljava/lang/String;
 
 
 # direct methods
@@ -71,154 +71,18 @@
 
     const-string v0, "/mnt/vendor/persist/engineermode/engineermode_config"
 
-    iput-object v0, p0, Lcom/android/server/secrecy/sis;->eL:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/server/secrecy/sis;->rM:Ljava/lang/String;
 
     const/16 v0, 0x100
 
     new-array v0, v0, [B
 
-    iput-object v0, p0, Lcom/android/server/secrecy/sis;->fL:[B
+    iput-object v0, p0, Lcom/android/server/secrecy/sis;->sM:[B
 
     return-void
 .end method
 
-.method public static getInstance()Lcom/android/server/secrecy/sis;
-    .locals 2
-
-    sget-object v0, Lcom/android/server/secrecy/sis;->sInstanceLock:Ljava/lang/Object;
-
-    monitor-enter v0
-
-    :try_start_0
-    sget-object v1, Lcom/android/server/secrecy/sis;->sInstance:Lcom/android/server/secrecy/sis;
-
-    if-nez v1, :cond_0
-
-    new-instance v1, Lcom/android/server/secrecy/sis;
-
-    invoke-direct {v1}, Lcom/android/server/secrecy/sis;-><init>()V
-
-    sput-object v1, Lcom/android/server/secrecy/sis;->sInstance:Lcom/android/server/secrecy/sis;
-
-    :cond_0
-    monitor-exit v0
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    sget-object v0, Lcom/android/server/secrecy/sis;->sInstance:Lcom/android/server/secrecy/sis;
-
-    return-object v0
-
-    :catchall_0
-    move-exception v1
-
-    :try_start_1
-    monitor-exit v0
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
-    throw v1
-.end method
-
-.method private hc(Ljava/lang/String;)V
-    .locals 1
-
-    :try_start_0
-    new-instance p0, Ljava/io/File;
-
-    const-string v0, "/mnt/vendor/persist/engineermode/engineermode_config"
-
-    invoke-direct {p0, v0}, Ljava/io/File;-><init>(Ljava/lang/String;)V
-
-    invoke-virtual {p0}, Ljava/io/File;->exists()Z
-
-    move-result v0
-
-    if-nez v0, :cond_0
-
-    invoke-virtual {p0}, Ljava/io/File;->createNewFile()Z
-
-    :cond_0
-    new-instance v0, Ljava/io/FileOutputStream;
-
-    invoke-direct {v0, p0}, Ljava/io/FileOutputStream;-><init>(Ljava/io/File;)V
-
-    new-instance p0, Ljava/io/BufferedOutputStream;
-
-    invoke-direct {p0, v0}, Ljava/io/BufferedOutputStream;-><init>(Ljava/io/OutputStream;)V
-    :try_end_0
-    .catch Ljava/io/FileNotFoundException; {:try_start_0 .. :try_end_0} :catch_1
-    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
-
-    :try_start_1
-    invoke-virtual {p1}, Ljava/lang/String;->getBytes()[B
-
-    move-result-object p1
-
-    invoke-virtual {p0, p1}, Ljava/io/BufferedOutputStream;->write([B)V
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
-    :try_start_2
-    invoke-virtual {p0}, Ljava/io/BufferedOutputStream;->flush()V
-
-    invoke-virtual {v0}, Ljava/io/FileOutputStream;->flush()V
-
-    invoke-virtual {v0}, Ljava/io/FileOutputStream;->getFD()Ljava/io/FileDescriptor;
-
-    move-result-object p1
-
-    invoke-virtual {p1}, Ljava/io/FileDescriptor;->sync()V
-
-    invoke-virtual {p0}, Ljava/io/BufferedOutputStream;->close()V
-
-    goto :goto_0
-
-    :catchall_0
-    move-exception p1
-
-    invoke-virtual {p0}, Ljava/io/BufferedOutputStream;->flush()V
-
-    invoke-virtual {v0}, Ljava/io/FileOutputStream;->flush()V
-
-    invoke-virtual {v0}, Ljava/io/FileOutputStream;->getFD()Ljava/io/FileDescriptor;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Ljava/io/FileDescriptor;->sync()V
-
-    invoke-virtual {p0}, Ljava/io/BufferedOutputStream;->close()V
-
-    throw p1
-    :try_end_2
-    .catch Ljava/io/FileNotFoundException; {:try_start_2 .. :try_end_2} :catch_1
-    .catch Ljava/io/IOException; {:try_start_2 .. :try_end_2} :catch_0
-
-    :catch_0
-    move-exception p0
-
-    invoke-virtual {p0}, Ljava/io/IOException;->printStackTrace()V
-
-    goto :goto_0
-
-    :catch_1
-    move-exception p0
-
-    invoke-virtual {p0}, Ljava/io/FileNotFoundException;->printStackTrace()V
-
-    :goto_0
-    return-void
-.end method
-
-.method static synthetic sis(Lcom/android/server/secrecy/sis;)V
-    .locals 0
-
-    invoke-direct {p0}, Lcom/android/server/secrecy/sis;->yo()V
-
-    return-void
-.end method
-
-.method private wo()V
+.method private Qo()V
     .locals 13
 
     new-instance v0, Landroid/util/ArrayMap;
@@ -265,7 +129,7 @@
 
     if-eqz v1, :cond_0
 
-    invoke-static {}, Lcom/android/server/secrecy/zta/zta/tsu;->Kd()Z
+    invoke-static {}, Lcom/android/server/secrecy/zta/zta/tsu;->Rd()Z
 
     move-result v1
 
@@ -284,7 +148,7 @@
     return-void
 
     :cond_0
-    invoke-direct {p0}, Lcom/android/server/secrecy/sis;->xo()Ljava/lang/String;
+    invoke-direct {p0}, Lcom/android/server/secrecy/sis;->Ro()Ljava/lang/String;
 
     move-result-object v1
 
@@ -295,7 +159,7 @@
     :cond_1
     iget-object v6, p0, Lcom/android/server/secrecy/sis;->mPolicyManager:Lcom/android/server/secrecy/zta/sis;
 
-    invoke-virtual {v6}, Lcom/android/server/secrecy/zta/sis;->zd()Z
+    invoke-virtual {v6}, Lcom/android/server/secrecy/zta/sis;->Gd()Z
 
     move-result v6
 
@@ -361,11 +225,11 @@
 
     move-result-object v1
 
-    iput-object v1, p0, Lcom/android/server/secrecy/sis;->gL:[B
+    iput-object v1, p0, Lcom/android/server/secrecy/sis;->tM:[B
 
-    iget-object v1, p0, Lcom/android/server/secrecy/sis;->fL:[B
+    iget-object v1, p0, Lcom/android/server/secrecy/sis;->sM:[B
 
-    iget-object v9, p0, Lcom/android/server/secrecy/sis;->gL:[B
+    iget-object v9, p0, Lcom/android/server/secrecy/sis;->tM:[B
 
     invoke-static {v1, v9}, Landroid/secrecy/RC4;->mixSbox([B[B)V
     :try_end_3
@@ -382,7 +246,7 @@
 
     if-eqz v1, :cond_3
 
-    iput-object v1, p0, Lcom/android/server/secrecy/sis;->hL:Ljava/lang/String;
+    iput-object v1, p0, Lcom/android/server/secrecy/sis;->uM:Ljava/lang/String;
 
     :cond_3
     const-string v1, "encrypt_log"
@@ -470,7 +334,7 @@
 
     iget-object p0, p0, Lcom/android/server/secrecy/sis;->mPolicyManager:Lcom/android/server/secrecy/zta/sis;
 
-    invoke-virtual {p0, v0}, Lcom/android/server/secrecy/zta/sis;->Y(Ljava/lang/String;)V
+    invoke-virtual {p0, v0}, Lcom/android/server/secrecy/zta/sis;->aa(Ljava/lang/String;)V
     :try_end_5
     .catch Ljava/io/IOException; {:try_start_5 .. :try_end_5} :catch_5
     .catchall {:try_start_5 .. :try_end_5} :catchall_0
@@ -540,7 +404,7 @@
     return-void
 .end method
 
-.method private xo()Ljava/lang/String;
+.method private Ro()Ljava/lang/String;
     .locals 4
 
     new-instance p0, Ljava/io/File;
@@ -668,10 +532,10 @@
     throw p0
 .end method
 
-.method private yo()V
+.method private So()V
     .locals 10
 
-    iget-object v0, p0, Lcom/android/server/secrecy/sis;->gL:[B
+    iget-object v0, p0, Lcom/android/server/secrecy/sis;->tM:[B
 
     if-nez v0, :cond_0
 
@@ -703,7 +567,7 @@
 
     const/4 v4, 0x1
 
-    invoke-virtual {v3, v4}, Lcom/android/server/secrecy/zta/sis;->t(I)Z
+    invoke-virtual {v3, v4}, Lcom/android/server/secrecy/zta/sis;->v(I)Z
 
     move-result v3
 
@@ -711,7 +575,7 @@
 
     const/4 v5, 0x2
 
-    invoke-virtual {v4, v5}, Lcom/android/server/secrecy/zta/sis;->t(I)Z
+    invoke-virtual {v4, v5}, Lcom/android/server/secrecy/zta/sis;->v(I)Z
 
     move-result v4
 
@@ -719,13 +583,13 @@
 
     const/4 v6, 0x4
 
-    invoke-virtual {v5, v6}, Lcom/android/server/secrecy/zta/sis;->t(I)Z
+    invoke-virtual {v5, v6}, Lcom/android/server/secrecy/zta/sis;->v(I)Z
 
     move-result v5
 
     iget-object v6, p0, Lcom/android/server/secrecy/sis;->mPolicyManager:Lcom/android/server/secrecy/zta/sis;
 
-    invoke-virtual {v6}, Lcom/android/server/secrecy/zta/sis;->ud()Ljava/lang/Long;
+    invoke-virtual {v6}, Lcom/android/server/secrecy/zta/sis;->Bd()Ljava/lang/Long;
 
     move-result-object v6
 
@@ -737,20 +601,20 @@
 
     move-result-object v6
 
-    iget-object v7, p0, Lcom/android/server/secrecy/sis;->hL:Ljava/lang/String;
+    iget-object v7, p0, Lcom/android/server/secrecy/sis;->uM:Ljava/lang/String;
 
     if-eqz v7, :cond_1
 
     const-string v7, "imei"
 
-    iget-object v8, p0, Lcom/android/server/secrecy/sis;->hL:Ljava/lang/String;
+    iget-object v8, p0, Lcom/android/server/secrecy/sis;->uM:Ljava/lang/String;
 
     invoke-virtual {v0, v7, v8}, Ljava/util/Properties;->setProperty(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/Object;
 
     :cond_1
     const-string v7, "rc4_key"
 
-    iget-object v8, p0, Lcom/android/server/secrecy/sis;->gL:[B
+    iget-object v8, p0, Lcom/android/server/secrecy/sis;->tM:[B
 
     invoke-static {v8}, Landroid/secrecy/RC4;->encodeHex([B)Ljava/lang/String;
 
@@ -818,7 +682,7 @@
 
     move-result-object v0
 
-    invoke-direct {p0, v0}, Lcom/android/server/secrecy/sis;->hc(Ljava/lang/String;)V
+    invoke-direct {p0, v0}, Lcom/android/server/secrecy/sis;->lc(Ljava/lang/String;)V
     :try_end_2
     .catch Ljava/io/IOException; {:try_start_2 .. :try_end_2} :catch_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
@@ -867,6 +731,142 @@
     return-void
 .end method
 
+.method public static getInstance()Lcom/android/server/secrecy/sis;
+    .locals 2
+
+    sget-object v0, Lcom/android/server/secrecy/sis;->sInstanceLock:Ljava/lang/Object;
+
+    monitor-enter v0
+
+    :try_start_0
+    sget-object v1, Lcom/android/server/secrecy/sis;->sInstance:Lcom/android/server/secrecy/sis;
+
+    if-nez v1, :cond_0
+
+    new-instance v1, Lcom/android/server/secrecy/sis;
+
+    invoke-direct {v1}, Lcom/android/server/secrecy/sis;-><init>()V
+
+    sput-object v1, Lcom/android/server/secrecy/sis;->sInstance:Lcom/android/server/secrecy/sis;
+
+    :cond_0
+    monitor-exit v0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    sget-object v0, Lcom/android/server/secrecy/sis;->sInstance:Lcom/android/server/secrecy/sis;
+
+    return-object v0
+
+    :catchall_0
+    move-exception v1
+
+    :try_start_1
+    monitor-exit v0
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    throw v1
+.end method
+
+.method private lc(Ljava/lang/String;)V
+    .locals 1
+
+    :try_start_0
+    new-instance p0, Ljava/io/File;
+
+    const-string v0, "/mnt/vendor/persist/engineermode/engineermode_config"
+
+    invoke-direct {p0, v0}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {p0}, Ljava/io/File;->exists()Z
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    invoke-virtual {p0}, Ljava/io/File;->createNewFile()Z
+
+    :cond_0
+    new-instance v0, Ljava/io/FileOutputStream;
+
+    invoke-direct {v0, p0}, Ljava/io/FileOutputStream;-><init>(Ljava/io/File;)V
+
+    new-instance p0, Ljava/io/BufferedOutputStream;
+
+    invoke-direct {p0, v0}, Ljava/io/BufferedOutputStream;-><init>(Ljava/io/OutputStream;)V
+    :try_end_0
+    .catch Ljava/io/FileNotFoundException; {:try_start_0 .. :try_end_0} :catch_1
+    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
+
+    :try_start_1
+    invoke-virtual {p1}, Ljava/lang/String;->getBytes()[B
+
+    move-result-object p1
+
+    invoke-virtual {p0, p1}, Ljava/io/BufferedOutputStream;->write([B)V
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    :try_start_2
+    invoke-virtual {p0}, Ljava/io/BufferedOutputStream;->flush()V
+
+    invoke-virtual {v0}, Ljava/io/FileOutputStream;->flush()V
+
+    invoke-virtual {v0}, Ljava/io/FileOutputStream;->getFD()Ljava/io/FileDescriptor;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Ljava/io/FileDescriptor;->sync()V
+
+    invoke-virtual {p0}, Ljava/io/BufferedOutputStream;->close()V
+
+    goto :goto_0
+
+    :catchall_0
+    move-exception p1
+
+    invoke-virtual {p0}, Ljava/io/BufferedOutputStream;->flush()V
+
+    invoke-virtual {v0}, Ljava/io/FileOutputStream;->flush()V
+
+    invoke-virtual {v0}, Ljava/io/FileOutputStream;->getFD()Ljava/io/FileDescriptor;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/io/FileDescriptor;->sync()V
+
+    invoke-virtual {p0}, Ljava/io/BufferedOutputStream;->close()V
+
+    throw p1
+    :try_end_2
+    .catch Ljava/io/FileNotFoundException; {:try_start_2 .. :try_end_2} :catch_1
+    .catch Ljava/io/IOException; {:try_start_2 .. :try_end_2} :catch_0
+
+    :catch_0
+    move-exception p0
+
+    invoke-virtual {p0}, Ljava/io/IOException;->printStackTrace()V
+
+    goto :goto_0
+
+    :catch_1
+    move-exception p0
+
+    invoke-virtual {p0}, Ljava/io/FileNotFoundException;->printStackTrace()V
+
+    :goto_0
+    return-void
+.end method
+
+.method static synthetic sis(Lcom/android/server/secrecy/sis;)V
+    .locals 0
+
+    invoke-direct {p0}, Lcom/android/server/secrecy/sis;->So()V
+
+    return-void
+.end method
+
 .method static synthetic you(Lcom/android/server/secrecy/sis;)Lcom/android/server/secrecy/zta/sis;
     .locals 0
 
@@ -878,29 +878,29 @@
 .method static synthetic zta(Lcom/android/server/secrecy/sis;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/secrecy/sis;->wo()V
+    invoke-direct {p0}, Lcom/android/server/secrecy/sis;->Qo()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public W(Ljava/lang/String;)V
+.method public Y(Ljava/lang/String;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/android/server/secrecy/sis;->hL:Ljava/lang/String;
+    iput-object p1, p0, Lcom/android/server/secrecy/sis;->uM:Ljava/lang/String;
 
     return-void
 .end method
 
-.method public X(Ljava/lang/String;)V
+.method public Z(Ljava/lang/String;)V
     .locals 0
 
     invoke-static {p1}, Landroid/secrecy/RC4;->decodeHex(Ljava/lang/String;)[B
 
     move-result-object p1
 
-    iput-object p1, p0, Lcom/android/server/secrecy/sis;->gL:[B
+    iput-object p1, p0, Lcom/android/server/secrecy/sis;->tM:[B
 
     return-void
 .end method
@@ -927,7 +927,7 @@
 .method public getSecrecyKey([B)Z
     .locals 2
 
-    iget-object p0, p0, Lcom/android/server/secrecy/sis;->fL:[B
+    iget-object p0, p0, Lcom/android/server/secrecy/sis;->sM:[B
 
     array-length v0, p0
 
@@ -943,7 +943,7 @@
 .method public oxb(J)Ljava/lang/String;
     .locals 2
 
-    iget-object v0, p0, Lcom/android/server/secrecy/sis;->gL:[B
+    iget-object v0, p0, Lcom/android/server/secrecy/sis;->tM:[B
 
     if-nez v0, :cond_0
 
@@ -960,7 +960,7 @@
 
     new-array p2, p2, [B
 
-    iget-object p0, p0, Lcom/android/server/secrecy/sis;->fL:[B
+    iget-object p0, p0, Lcom/android/server/secrecy/sis;->sM:[B
 
     array-length v0, p0
 
@@ -1037,7 +1037,7 @@
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v0, p0, Lcom/android/server/secrecy/sis;->gL:[B
+    iget-object v0, p0, Lcom/android/server/secrecy/sis;->tM:[B
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -1057,7 +1057,7 @@
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v0, p0, Lcom/android/server/secrecy/sis;->fL:[B
+    iget-object v0, p0, Lcom/android/server/secrecy/sis;->sM:[B
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -1077,7 +1077,7 @@
 
     invoke-virtual {p1, p3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object p0, p0, Lcom/android/server/secrecy/sis;->hL:Ljava/lang/String;
+    iget-object p0, p0, Lcom/android/server/secrecy/sis;->uM:Ljava/lang/String;
 
     invoke-virtual {p1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 

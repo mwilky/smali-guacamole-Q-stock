@@ -76,7 +76,7 @@
 
     invoke-interface {p1, v0, v1}, Lorg/bouncycastle/jcajce/provider/config/zta;->zta(Ljava/lang/String;Ljava/lang/String;)V
 
-    sget-object v5, Lorg/bouncycastle/asn1/bio/you;->DMa:Lorg/bouncycastle/asn1/bvj;
+    sget-object v5, Lorg/bouncycastle/asn1/bio/you;->ROa:Lorg/bouncycastle/asn1/bvj;
 
     const-string v2, "SHA224"
 
@@ -90,7 +90,7 @@
 
     invoke-virtual/range {v0 .. v5}, Lorg/bouncycastle/jcajce/provider/util/you;->zta(Lorg/bouncycastle/jcajce/provider/config/zta;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lorg/bouncycastle/asn1/bvj;)V
 
-    sget-object v5, Lorg/bouncycastle/asn1/bio/you;->EMa:Lorg/bouncycastle/asn1/bvj;
+    sget-object v5, Lorg/bouncycastle/asn1/bio/you;->SOa:Lorg/bouncycastle/asn1/bvj;
 
     const-string v2, "SHA256"
 
@@ -143,7 +143,7 @@
     const/4 v1, 0x0
 
     :goto_0
-    sget-object v2, Lorg/bouncycastle/jcajce/provider/asymmetric/dsa/tsu;->pCa:[Lorg/bouncycastle/asn1/bvj;
+    sget-object v2, Lorg/bouncycastle/jcajce/provider/asymmetric/dsa/tsu;->DEa:[Lorg/bouncycastle/asn1/bvj;
 
     array-length v2, v2
 
@@ -157,7 +157,7 @@
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sget-object v3, Lorg/bouncycastle/jcajce/provider/asymmetric/dsa/tsu;->pCa:[Lorg/bouncycastle/asn1/bvj;
+    sget-object v3, Lorg/bouncycastle/jcajce/provider/asymmetric/dsa/tsu;->DEa:[Lorg/bouncycastle/asn1/bvj;
 
     aget-object v3, v3, v1
 
@@ -169,7 +169,7 @@
 
     invoke-interface {p1, v2, v6}, Lorg/bouncycastle/jcajce/provider/config/zta;->zta(Ljava/lang/String;Ljava/lang/String;)V
 
-    sget-object v2, Lorg/bouncycastle/jcajce/provider/asymmetric/dsa/tsu;->pCa:[Lorg/bouncycastle/asn1/bvj;
+    sget-object v2, Lorg/bouncycastle/jcajce/provider/asymmetric/dsa/tsu;->DEa:[Lorg/bouncycastle/asn1/bvj;
 
     aget-object v2, v2, v1
 
@@ -177,7 +177,7 @@
 
     invoke-virtual {p0, p1, v2, v3, v0}, Lorg/bouncycastle/jcajce/provider/util/you;->zta(Lorg/bouncycastle/jcajce/provider/config/zta;Lorg/bouncycastle/asn1/bvj;Ljava/lang/String;Lorg/bouncycastle/jcajce/provider/util/sis;)V
 
-    sget-object v2, Lorg/bouncycastle/jcajce/provider/asymmetric/dsa/tsu;->pCa:[Lorg/bouncycastle/asn1/bvj;
+    sget-object v2, Lorg/bouncycastle/jcajce/provider/asymmetric/dsa/tsu;->DEa:[Lorg/bouncycastle/asn1/bvj;
 
     aget-object v2, v2, v1
 

@@ -18,9 +18,9 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/server/pm/OpLauncherAppsService;
+.field final synthetic UE:Landroid/app/AlertDialog;
 
-.field final synthetic zD:Landroid/app/AlertDialog;
+.field final synthetic this$0:Lcom/android/server/pm/OpLauncherAppsService;
 
 
 # direct methods
@@ -29,7 +29,7 @@
 
     iput-object p1, p0, Lcom/android/server/pm/bio;->this$0:Lcom/android/server/pm/OpLauncherAppsService;
 
-    iput-object p2, p0, Lcom/android/server/pm/bio;->zD:Landroid/app/AlertDialog;
+    iput-object p2, p0, Lcom/android/server/pm/bio;->UE:Landroid/app/AlertDialog;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -41,7 +41,7 @@
 .method public onShow(Landroid/content/DialogInterface;)V
     .locals 2
 
-    iget-object p1, p0, Lcom/android/server/pm/bio;->zD:Landroid/app/AlertDialog;
+    iget-object p1, p0, Lcom/android/server/pm/bio;->UE:Landroid/app/AlertDialog;
 
     const/4 v0, -0x1
 
@@ -63,7 +63,7 @@
 
     invoke-virtual {p1, v0}, Landroid/widget/Button;->setTextColor(I)V
 
-    iget-object p0, p0, Lcom/android/server/pm/bio;->zD:Landroid/app/AlertDialog;
+    iget-object p0, p0, Lcom/android/server/pm/bio;->UE:Landroid/app/AlertDialog;
 
     const/4 p1, -0x2
 

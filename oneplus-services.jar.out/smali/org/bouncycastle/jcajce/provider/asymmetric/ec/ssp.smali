@@ -47,7 +47,7 @@
 
     const/4 v1, 0x1
 
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/util/ssp;->qna:Lorg/bouncycastle/crypto/gck;
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/util/ssp;->Fpa:Lorg/bouncycastle/crypto/gck;
 
     if-eqz v0, :cond_0
 
@@ -82,7 +82,7 @@
 
     invoke-interface {v0}, Lorg/bouncycastle/crypto/qbh;->reset()V
 
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/util/ssp;->qna:Lorg/bouncycastle/crypto/gck;
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/util/ssp;->Fpa:Lorg/bouncycastle/crypto/gck;
 
     const/4 v0, 0x0
 

@@ -4,17 +4,17 @@
 
 
 # static fields
-.field private static final AFa:I = -0x1
+.field static final DHa:[I
+
+.field private static final EHa:[I
 
 .field private static final M:J = 0xffffffffL
 
+.field private static final NHa:I = -0x1
+
+.field private static final OHa:I = -0x1
+
 .field static final P:[I
-
-.field static final pFa:[I
-
-.field private static final qFa:[I
-
-.field private static final zFa:I = -0x1
 
 
 # direct methods
@@ -35,7 +35,7 @@
 
     fill-array-data v0, :array_1
 
-    sput-object v0, Lyou/zta/sis/zta/zta/zta/vju;->pFa:[I
+    sput-object v0, Lyou/zta/sis/zta/zta/zta/vju;->DHa:[I
 
     const/16 v0, 0x11
 
@@ -43,7 +43,7 @@
 
     fill-array-data v0, :array_2
 
-    sput-object v0, Lyou/zta/sis/zta/zta/zta/vju;->qFa:[I
+    sput-object v0, Lyou/zta/sis/zta/zta/zta/vju;->EHa:[I
 
     return-void
 
@@ -770,7 +770,7 @@
 
     if-eqz p0, :cond_0
 
-    sget-object p0, Lyou/zta/sis/zta/zta/zta/vju;->qFa:[I
+    sget-object p0, Lyou/zta/sis/zta/zta/zta/vju;->EHa:[I
 
     array-length p1, p0
 
@@ -780,7 +780,7 @@
 
     if-eqz p0, :cond_0
 
-    sget-object p0, Lyou/zta/sis/zta/zta/zta/vju;->qFa:[I
+    sget-object p0, Lyou/zta/sis/zta/zta/zta/vju;->EHa:[I
 
     array-length p0, p0
 
@@ -1116,7 +1116,7 @@
 
     if-ne p0, p1, :cond_1
 
-    sget-object p0, Lyou/zta/sis/zta/zta/zta/vju;->pFa:[I
+    sget-object p0, Lyou/zta/sis/zta/zta/zta/vju;->DHa:[I
 
     invoke-static {v0, p2, p0}, Lyou/zta/sis/sis/kth;->ssp(I[I[I)Z
 
@@ -1125,7 +1125,7 @@
     if-eqz p0, :cond_1
 
     :cond_0
-    sget-object p0, Lyou/zta/sis/zta/zta/zta/vju;->qFa:[I
+    sget-object p0, Lyou/zta/sis/zta/zta/zta/vju;->EHa:[I
 
     array-length p1, p0
 
@@ -1135,7 +1135,7 @@
 
     if-eqz p0, :cond_1
 
-    sget-object p0, Lyou/zta/sis/zta/zta/zta/vju;->qFa:[I
+    sget-object p0, Lyou/zta/sis/zta/zta/zta/vju;->EHa:[I
 
     array-length p0, p0
 

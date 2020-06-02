@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field private sna:Lorg/bouncycastle/asn1/x509/zta;
+.field private Hpa:Lorg/bouncycastle/asn1/x509/zta;
 
 
 # direct methods
@@ -17,7 +17,7 @@
 
     invoke-direct {v0, p1}, Lorg/bouncycastle/asn1/x509/zta;-><init>(Lorg/bouncycastle/asn1/bvj;)V
 
-    iput-object v0, p0, Lorg/bouncycastle/asn1/dma/wtn;->sna:Lorg/bouncycastle/asn1/x509/zta;
+    iput-object v0, p0, Lorg/bouncycastle/asn1/dma/wtn;->Hpa:Lorg/bouncycastle/asn1/x509/zta;
 
     return-void
 .end method
@@ -31,7 +31,7 @@
 
     invoke-direct {v0, p1, p2}, Lorg/bouncycastle/asn1/x509/zta;-><init>(Lorg/bouncycastle/asn1/bvj;Lorg/bouncycastle/asn1/ssp;)V
 
-    iput-object v0, p0, Lorg/bouncycastle/asn1/dma/wtn;->sna:Lorg/bouncycastle/asn1/x509/zta;
+    iput-object v0, p0, Lorg/bouncycastle/asn1/dma/wtn;->Hpa:Lorg/bouncycastle/asn1/x509/zta;
 
     return-void
 .end method
@@ -45,7 +45,7 @@
 
     move-result-object p1
 
-    iput-object p1, p0, Lorg/bouncycastle/asn1/dma/wtn;->sna:Lorg/bouncycastle/asn1/x509/zta;
+    iput-object p1, p0, Lorg/bouncycastle/asn1/dma/wtn;->Hpa:Lorg/bouncycastle/asn1/x509/zta;
 
     return-void
 .end method
@@ -85,7 +85,7 @@
 .method public getAlgorithm()Lorg/bouncycastle/asn1/bvj;
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/asn1/dma/wtn;->sna:Lorg/bouncycastle/asn1/x509/zta;
+    iget-object p0, p0, Lorg/bouncycastle/asn1/dma/wtn;->Hpa:Lorg/bouncycastle/asn1/x509/zta;
 
     invoke-virtual {p0}, Lorg/bouncycastle/asn1/x509/zta;->getAlgorithm()Lorg/bouncycastle/asn1/bvj;
 
@@ -97,7 +97,7 @@
 .method public getParameters()Lorg/bouncycastle/asn1/ssp;
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/asn1/dma/wtn;->sna:Lorg/bouncycastle/asn1/x509/zta;
+    iget-object p0, p0, Lorg/bouncycastle/asn1/dma/wtn;->Hpa:Lorg/bouncycastle/asn1/x509/zta;
 
     invoke-virtual {p0}, Lorg/bouncycastle/asn1/x509/zta;->getParameters()Lorg/bouncycastle/asn1/ssp;
 
@@ -109,7 +109,7 @@
 .method public toASN1Primitive()Lorg/bouncycastle/asn1/vdb;
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/asn1/dma/wtn;->sna:Lorg/bouncycastle/asn1/x509/zta;
+    iget-object p0, p0, Lorg/bouncycastle/asn1/dma/wtn;->Hpa:Lorg/bouncycastle/asn1/x509/zta;
 
     invoke-virtual {p0}, Lorg/bouncycastle/asn1/x509/zta;->toASN1Primitive()Lorg/bouncycastle/asn1/vdb;
 

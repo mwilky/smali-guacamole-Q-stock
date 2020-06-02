@@ -4,9 +4,9 @@
 
 
 # static fields
-.field private static final BFa:I = 0x1ff
-
 .field static final P:[I
+
+.field private static final PHa:I = 0x1ff
 
 
 # direct methods

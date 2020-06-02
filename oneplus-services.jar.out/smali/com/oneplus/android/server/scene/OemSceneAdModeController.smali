@@ -71,7 +71,7 @@
 
     const/4 v2, 0x0
 
-    const/16 v3, 0x82
+    const/16 v3, 0x83
 
     aput v3, v1, v2
 
@@ -689,14 +689,14 @@
 
     sget-object p0, Lcom/oneplus/android/server/scene/OemSceneAdModeController;->RULE_ADMODE_CONTROLLER:Lcom/oneplus/core/oimc/OIMCRule;
 
-    invoke-static {p0, v0}, Lcom/oneplus/server/zta;->addFuncRule(Lcom/oneplus/core/oimc/OIMCRule;I)V
+    invoke-static {p0, v0}, Lcom/oneplus/server/sis;->addFuncRule(Lcom/oneplus/core/oimc/OIMCRule;I)V
 
     goto :goto_0
 
     :cond_0
     sget-object p0, Lcom/oneplus/android/server/scene/OemSceneAdModeController;->RULE_ADMODE_CONTROLLER:Lcom/oneplus/core/oimc/OIMCRule;
 
-    invoke-static {p0, v0}, Lcom/oneplus/server/zta;->removeFuncRule(Lcom/oneplus/core/oimc/OIMCRule;I)V
+    invoke-static {p0, v0}, Lcom/oneplus/server/sis;->removeFuncRule(Lcom/oneplus/core/oimc/OIMCRule;I)V
 
     :goto_0
     return-void

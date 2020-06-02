@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field protected rpa:Ljava/io/OutputStream;
+.field protected Fra:Ljava/io/OutputStream;
 
 
 # direct methods
@@ -13,7 +13,7 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lorg/bouncycastle/asn1/gck;->rpa:Ljava/io/OutputStream;
+    iput-object p1, p0, Lorg/bouncycastle/asn1/gck;->Fra:Ljava/io/OutputStream;
 
     return-void
 .end method

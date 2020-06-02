@@ -1166,7 +1166,7 @@
 
     if-eqz v1, :cond_1
 
-    invoke-virtual {v1, p1}, Lcom/android/server/wm/OnePlusPerfManager$ssp;->ga(Ljava/lang/String;)Z
+    invoke-virtual {v1, p1}, Lcom/android/server/wm/OnePlusPerfManager$ssp;->ia(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -1343,7 +1343,7 @@
 
     const-string p1, "FST"
 
-    iget-object v2, p0, Lcom/android/server/wm/OnePlusPerfManager$you;->Df:Ljava/lang/String;
+    iget-object v2, p0, Lcom/android/server/wm/OnePlusPerfManager$you;->Zf:Ljava/lang/String;
 
     invoke-virtual {p1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -1511,7 +1511,7 @@
 
     iget-object p0, p0, Lcom/android/server/wm/OnePlusPerfManager;->currentSPI:Lcom/android/server/wm/OnePlusPerfManager$rtg;
 
-    invoke-virtual {p0}, Lcom/android/server/wm/OnePlusPerfManager$rtg;->be()V
+    invoke-virtual {p0}, Lcom/android/server/wm/OnePlusPerfManager$rtg;->ie()V
 
     monitor-exit v0
 
@@ -1561,7 +1561,7 @@
 
     iget-object v4, p0, Lcom/android/server/wm/OnePlusPerfManager;->currentSPI:Lcom/android/server/wm/OnePlusPerfManager$rtg;
 
-    iget-object v4, v4, Lcom/android/server/wm/OnePlusPerfManager$rtg;->Df:Ljava/lang/String;
+    iget-object v4, v4, Lcom/android/server/wm/OnePlusPerfManager$rtg;->Zf:Ljava/lang/String;
 
     invoke-virtual {v2, v4}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -1578,9 +1578,9 @@
     :try_start_2
     iget-object v1, p0, Lcom/android/server/wm/OnePlusPerfManager;->currentSPI:Lcom/android/server/wm/OnePlusPerfManager$rtg;
 
-    iget-object v1, v1, Lcom/android/server/wm/OnePlusPerfManager$rtg;->Df:Ljava/lang/String;
+    iget-object v1, v1, Lcom/android/server/wm/OnePlusPerfManager$rtg;->Zf:Ljava/lang/String;
 
-    invoke-virtual {v2, v1}, Lcom/android/server/wm/OnePlusPerfManager$ssp;->ga(Ljava/lang/String;)Z
+    invoke-virtual {v2, v1}, Lcom/android/server/wm/OnePlusPerfManager$ssp;->ia(Ljava/lang/String;)Z
 
     const-string v1, "OPPerf"
 
@@ -1604,7 +1604,7 @@
 
     iget-object p0, p0, Lcom/android/server/wm/OnePlusPerfManager;->currentSPI:Lcom/android/server/wm/OnePlusPerfManager$rtg;
 
-    invoke-virtual {p0}, Lcom/android/server/wm/OnePlusPerfManager$rtg;->be()V
+    invoke-virtual {p0}, Lcom/android/server/wm/OnePlusPerfManager$rtg;->ie()V
 
     monitor-exit v0
 
@@ -1742,9 +1742,9 @@
 
     iget-object p2, p0, Lcom/android/server/wm/OnePlusPerfManager;->currentSPI:Lcom/android/server/wm/OnePlusPerfManager$rtg;
 
-    iget-object p2, p2, Lcom/android/server/wm/OnePlusPerfManager$rtg;->Df:Ljava/lang/String;
+    iget-object p2, p2, Lcom/android/server/wm/OnePlusPerfManager$rtg;->Zf:Ljava/lang/String;
 
-    iget-object v1, p1, Lcom/android/server/wm/OnePlusPerfManager$rtg;->Df:Ljava/lang/String;
+    iget-object v1, p1, Lcom/android/server/wm/OnePlusPerfManager$rtg;->Zf:Ljava/lang/String;
 
     invoke-virtual {p2, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -1787,7 +1787,7 @@
     :try_start_1
     iget-object v1, p0, Lcom/android/server/wm/OnePlusPerfManager;->mPerfLockLevelMap:Ljava/util/HashMap;
 
-    iget-object v4, p1, Lcom/android/server/wm/OnePlusPerfManager$rtg;->Df:Ljava/lang/String;
+    iget-object v4, p1, Lcom/android/server/wm/OnePlusPerfManager$rtg;->Zf:Ljava/lang/String;
 
     invoke-virtual {v1, v4}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -1804,7 +1804,7 @@
     :try_start_2
     iget-object p2, p0, Lcom/android/server/wm/OnePlusPerfManager;->mPerfBoost:Landroid/util/BoostFramework;
 
-    invoke-virtual {v1}, Lcom/android/server/wm/OnePlusPerfManager$sis;->ae()[I
+    invoke-virtual {v1}, Lcom/android/server/wm/OnePlusPerfManager$sis;->he()[I
 
     move-result-object v1
 
@@ -1905,9 +1905,9 @@
 
     iget-object p2, p0, Lcom/android/server/wm/OnePlusPerfManager;->currentSPI:Lcom/android/server/wm/OnePlusPerfManager$rtg;
 
-    iget-object p2, p2, Lcom/android/server/wm/OnePlusPerfManager$rtg;->Df:Ljava/lang/String;
+    iget-object p2, p2, Lcom/android/server/wm/OnePlusPerfManager$rtg;->Zf:Ljava/lang/String;
 
-    iget-object v1, p1, Lcom/android/server/wm/OnePlusPerfManager$rtg;->Df:Ljava/lang/String;
+    iget-object v1, p1, Lcom/android/server/wm/OnePlusPerfManager$rtg;->Zf:Ljava/lang/String;
 
     invoke-virtual {p2, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -1945,7 +1945,7 @@
     :try_start_5
     iget-object v1, p0, Lcom/android/server/wm/OnePlusPerfManager;->mSchedtuneParamMap:Ljava/util/HashMap;
 
-    iget-object v4, p1, Lcom/android/server/wm/OnePlusPerfManager$rtg;->Df:Ljava/lang/String;
+    iget-object v4, p1, Lcom/android/server/wm/OnePlusPerfManager$rtg;->Zf:Ljava/lang/String;
 
     invoke-virtual {v1, v4}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -1960,9 +1960,9 @@
     if-eqz v1, :cond_6
 
     :try_start_6
-    iget-object p2, p1, Lcom/android/server/wm/OnePlusPerfManager$rtg;->Df:Ljava/lang/String;
+    iget-object p2, p1, Lcom/android/server/wm/OnePlusPerfManager$rtg;->Zf:Ljava/lang/String;
 
-    invoke-virtual {v1, p2}, Lcom/android/server/wm/OnePlusPerfManager$ssp;->ha(Ljava/lang/String;)Z
+    invoke-virtual {v1, p2}, Lcom/android/server/wm/OnePlusPerfManager$ssp;->ja(Ljava/lang/String;)Z
 
     move-result p2
 
@@ -3074,7 +3074,7 @@
     :cond_4
     iput v6, v8, Lcom/android/server/wm/OnePlusPerfManager$you;->mPerfLock:I
 
-    iput-object v4, v8, Lcom/android/server/wm/OnePlusPerfManager$you;->Df:Ljava/lang/String;
+    iput-object v4, v8, Lcom/android/server/wm/OnePlusPerfManager$you;->Zf:Ljava/lang/String;
 
     goto :goto_2
 
@@ -3514,7 +3514,7 @@
     :cond_f
     iput v6, v9, Lcom/android/server/wm/OnePlusPerfManager$rtg;->mMode:I
 
-    iput-object v7, v9, Lcom/android/server/wm/OnePlusPerfManager$rtg;->Df:Ljava/lang/String;
+    iput-object v7, v9, Lcom/android/server/wm/OnePlusPerfManager$rtg;->Zf:Ljava/lang/String;
 
     iput v4, v9, Lcom/android/server/wm/OnePlusPerfManager$rtg;->mTimeout:I
 
@@ -4614,7 +4614,7 @@
 
     if-ne v1, v2, :cond_0
 
-    iget-object v0, p1, Lcom/android/server/wm/OnePlusPerfManager$rtg;->Df:Ljava/lang/String;
+    iget-object v0, p1, Lcom/android/server/wm/OnePlusPerfManager$rtg;->Zf:Ljava/lang/String;
 
     iget p1, p1, Lcom/android/server/wm/OnePlusPerfManager$rtg;->mTimeout:I
 
@@ -4704,7 +4704,7 @@
 
     if-eqz v1, :cond_3
 
-    invoke-virtual {v1, p1}, Lcom/android/server/wm/OnePlusPerfManager$ssp;->ha(Ljava/lang/String;)Z
+    invoke-virtual {v1, p1}, Lcom/android/server/wm/OnePlusPerfManager$ssp;->ja(Ljava/lang/String;)Z
 
     move-result v1
 
@@ -5288,7 +5288,7 @@
 
     const-string v1, "FST"
 
-    iget-object p1, p1, Lcom/android/server/wm/OnePlusPerfManager$you;->Df:Ljava/lang/String;
+    iget-object p1, p1, Lcom/android/server/wm/OnePlusPerfManager$you;->Zf:Ljava/lang/String;
 
     invoke-virtual {v1, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 

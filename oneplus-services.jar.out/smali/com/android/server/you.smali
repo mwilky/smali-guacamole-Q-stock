@@ -12,9 +12,9 @@
 
 
 # static fields
-.field private static final Rb:Ljava/lang/String; = "diagnosis_heating.txt"
+.field private static final Sb:Ljava/lang/String; = "diagnosis_heating.txt"
 
-.field private static final Sb:Landroid/util/AtomicFile;
+.field private static final Tb:Landroid/util/AtomicFile;
 
 
 # instance fields
@@ -39,7 +39,7 @@
 
     invoke-direct {v0, v1}, Landroid/util/AtomicFile;-><init>(Ljava/io/File;)V
 
-    sput-object v0, Lcom/android/server/you;->Sb:Landroid/util/AtomicFile;
+    sput-object v0, Lcom/android/server/you;->Tb:Landroid/util/AtomicFile;
 
     return-void
 .end method
@@ -56,7 +56,7 @@
     return-void
 .end method
 
-.method private Za(Ljava/lang/String;)V
+.method private ab(Ljava/lang/String;)V
     .locals 0
 
     iget-object p0, p0, Lcom/android/server/you;->mLocalLog:Landroid/util/LocalLog;

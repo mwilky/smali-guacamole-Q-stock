@@ -22,77 +22,57 @@
 
 .field private static final DEFAULT_NONE:Ljava/lang/String; = ""
 
-.field private static final Jo:Ljava/lang/String; = "com.Duallte.action.debug"
+.field private static Er:Lcom/android/server/am/ivd; = null
+
+.field private static Fr:Ljava/lang/Object; = null
+
+.field private static final Gr:Ljava/lang/String; = "persist.radio.duallte.enable"
+
+.field private static final Hr:Ljava/lang/String; = "persist.radio.duallte.operated"
+
+.field private static final Ir:I = 0x1
+
+.field private static final Jr:I = 0x2
+
+.field private static final Kr:I = 0x0
+
+.field private static final Lr:I = 0x1
 
 .field private static final MSG_GET_ONLINECONFIG:I = 0x3
 
+.field private static final Mr:I = 0x2
+
+.field private static Nr:J = 0x0L
+
+.field private static final Or:Ljava/lang/String; = "Duallte"
+
+.field private static Pr:I = 0x0
+
+.field private static Qr:I = 0x0
+
+.field private static Rr:Z = false
+
+.field private static Sr:Z = false
+
 .field private static final TAG:Ljava/lang/String; = "OnePlusDuallteManager"
+
+.field public static Tr:Z = false
 
 .field private static final VERSION:I = 0x78492d21
 
-.field private static Zq:Lcom/android/server/am/ivd; = null
-
-.field private static _q:Ljava/lang/Object; = null
-
-.field private static final ar:Ljava/lang/String; = "persist.radio.duallte.enable"
-
-.field private static final br:Ljava/lang/String; = "persist.radio.duallte.operated"
-
-.field private static final cr:I = 0x1
-
-.field private static final dr:I = 0x2
-
-.field private static final er:I = 0x0
-
-.field private static final fr:I = 0x1
-
-.field private static final gr:I = 0x2
-
-.field private static hr:J = 0x0L
-
-.field private static final ir:Ljava/lang/String; = "Duallte"
-
-.field private static jr:I
-
-.field private static kr:I
-
-.field private static lr:Z
-
-.field private static mr:Z
-
-.field public static or:Z
+.field private static final kp:Ljava/lang/String; = "com.Duallte.action.debug"
 
 .field public static sEnable:Z
 
 
 # instance fields
-.field private Pq:I
+.field private Ar:Ljava/lang/Object;
 
-.field private Qq:Ljava/lang/String;
+.field private Br:Landroid/telephony/TelephonyManager;
 
-.field private Rq:Z
+.field private Cr:Landroid/net/ConnectivityManager;
 
-.field private Sq:Landroid/os/Handler;
-
-.field private Tq:Ljava/util/List;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/List<",
-            "Ljava/lang/String;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private Uq:Lcom/oneplus/config/ConfigObserver;
-
-.field private Vq:Ljava/lang/Object;
-
-.field private Wq:Landroid/telephony/TelephonyManager;
-
-.field private Xq:Landroid/net/ConnectivityManager;
-
-.field private Yq:Z
+.field private Dr:Z
 
 .field private mContext:Landroid/content/Context;
 
@@ -103,6 +83,26 @@
 .field private offScreenPkgName:Ljava/lang/String;
 
 .field private screenOn:Z
+
+.field private ur:I
+
+.field private vr:Ljava/lang/String;
+
+.field private wr:Z
+
+.field private xr:Landroid/os/Handler;
+
+.field private yr:Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/List<",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private zr:Lcom/oneplus/config/ConfigObserver;
 
 
 # direct methods
@@ -115,33 +115,33 @@
 
     const/4 v0, 0x0
 
-    sput-object v0, Lcom/android/server/am/ivd;->Zq:Lcom/android/server/am/ivd;
+    sput-object v0, Lcom/android/server/am/ivd;->Er:Lcom/android/server/am/ivd;
 
     new-instance v0, Ljava/lang/Object;
 
     invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
-    sput-object v0, Lcom/android/server/am/ivd;->_q:Ljava/lang/Object;
+    sput-object v0, Lcom/android/server/am/ivd;->Fr:Ljava/lang/Object;
 
     const-wide/32 v0, 0xea60
 
-    sput-wide v0, Lcom/android/server/am/ivd;->hr:J
+    sput-wide v0, Lcom/android/server/am/ivd;->Nr:J
 
     const/4 v0, 0x0
 
     sput-boolean v0, Lcom/android/server/am/ivd;->sEnable:Z
 
-    sput v0, Lcom/android/server/am/ivd;->jr:I
+    sput v0, Lcom/android/server/am/ivd;->Pr:I
 
-    sput v0, Lcom/android/server/am/ivd;->kr:I
+    sput v0, Lcom/android/server/am/ivd;->Qr:I
 
-    sput-boolean v0, Lcom/android/server/am/ivd;->lr:Z
+    sput-boolean v0, Lcom/android/server/am/ivd;->Rr:Z
 
-    sput-boolean v0, Lcom/android/server/am/ivd;->mr:Z
+    sput-boolean v0, Lcom/android/server/am/ivd;->Sr:Z
 
     const/4 v0, 0x1
 
-    sput-boolean v0, Lcom/android/server/am/ivd;->or:Z
+    sput-boolean v0, Lcom/android/server/am/ivd;->Tr:Z
 
     return-void
 .end method
@@ -153,39 +153,39 @@
 
     const/4 v0, 0x0
 
-    iput v0, p0, Lcom/android/server/am/ivd;->Pq:I
+    iput v0, p0, Lcom/android/server/am/ivd;->ur:I
 
     const-string v1, ""
 
     iput-object v1, p0, Lcom/android/server/am/ivd;->offScreenPkgName:Ljava/lang/String;
 
-    iput-object v1, p0, Lcom/android/server/am/ivd;->Qq:Ljava/lang/String;
+    iput-object v1, p0, Lcom/android/server/am/ivd;->vr:Ljava/lang/String;
 
     iput-boolean v0, p0, Lcom/android/server/am/ivd;->screenOn:Z
 
-    iput-boolean v0, p0, Lcom/android/server/am/ivd;->Rq:Z
+    iput-boolean v0, p0, Lcom/android/server/am/ivd;->wr:Z
 
     const/4 v1, 0x0
 
     iput-object v1, p0, Lcom/android/server/am/ivd;->mContext:Landroid/content/Context;
 
-    iput-object v1, p0, Lcom/android/server/am/ivd;->Sq:Landroid/os/Handler;
+    iput-object v1, p0, Lcom/android/server/am/ivd;->xr:Landroid/os/Handler;
 
     new-instance v2, Ljava/util/ArrayList;
 
     invoke-direct {v2}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v2, p0, Lcom/android/server/am/ivd;->Tq:Ljava/util/List;
+    iput-object v2, p0, Lcom/android/server/am/ivd;->yr:Ljava/util/List;
 
     iput-object v1, p0, Lcom/android/server/am/ivd;->method:Ljava/lang/reflect/Method;
 
-    iput-object v1, p0, Lcom/android/server/am/ivd;->Vq:Ljava/lang/Object;
+    iput-object v1, p0, Lcom/android/server/am/ivd;->Ar:Ljava/lang/Object;
 
-    iput-object v1, p0, Lcom/android/server/am/ivd;->Wq:Landroid/telephony/TelephonyManager;
+    iput-object v1, p0, Lcom/android/server/am/ivd;->Br:Landroid/telephony/TelephonyManager;
 
-    iput-object v1, p0, Lcom/android/server/am/ivd;->Xq:Landroid/net/ConnectivityManager;
+    iput-object v1, p0, Lcom/android/server/am/ivd;->Cr:Landroid/net/ConnectivityManager;
 
-    iput-boolean v0, p0, Lcom/android/server/am/ivd;->Yq:Z
+    iput-boolean v0, p0, Lcom/android/server/am/ivd;->Dr:Z
 
     new-instance v1, Lcom/android/server/am/qeg;
 
@@ -197,9 +197,9 @@
 
     move-result v1
 
-    sput-boolean v1, Lcom/android/server/am/ivd;->or:Z
+    sput-boolean v1, Lcom/android/server/am/ivd;->Tr:Z
 
-    sget-boolean v1, Lcom/android/server/am/ivd;->or:Z
+    sget-boolean v1, Lcom/android/server/am/ivd;->Tr:Z
 
     sput-boolean v1, Lcom/android/server/am/ivd;->sEnable:Z
 
@@ -239,9 +239,9 @@
 
     check-cast v1, Landroid/telephony/TelephonyManager;
 
-    iput-object v1, p0, Lcom/android/server/am/ivd;->Wq:Landroid/telephony/TelephonyManager;
+    iput-object v1, p0, Lcom/android/server/am/ivd;->Br:Landroid/telephony/TelephonyManager;
 
-    iget-object v1, p0, Lcom/android/server/am/ivd;->Wq:Landroid/telephony/TelephonyManager;
+    iget-object v1, p0, Lcom/android/server/am/ivd;->Br:Landroid/telephony/TelephonyManager;
 
     if-eqz v1, :cond_0
 
@@ -253,33 +253,33 @@
 
     if-ne v1, v2, :cond_0
 
-    iget-object v1, p0, Lcom/android/server/am/ivd;->Wq:Landroid/telephony/TelephonyManager;
+    iget-object v1, p0, Lcom/android/server/am/ivd;->Br:Landroid/telephony/TelephonyManager;
 
     invoke-virtual {v1, v0}, Landroid/telephony/TelephonyManager;->getSimState(I)I
 
     move-result v0
 
-    sput v0, Lcom/android/server/am/ivd;->jr:I
+    sput v0, Lcom/android/server/am/ivd;->Pr:I
 
-    iget-object v0, p0, Lcom/android/server/am/ivd;->Wq:Landroid/telephony/TelephonyManager;
+    iget-object v0, p0, Lcom/android/server/am/ivd;->Br:Landroid/telephony/TelephonyManager;
 
     invoke-virtual {v0, p1}, Landroid/telephony/TelephonyManager;->getSimState(I)I
 
     move-result v0
 
-    sput v0, Lcom/android/server/am/ivd;->kr:I
+    sput v0, Lcom/android/server/am/ivd;->Qr:I
 
-    sget v0, Lcom/android/server/am/ivd;->jr:I
+    sget v0, Lcom/android/server/am/ivd;->Pr:I
 
     const/4 v1, 0x5
 
     if-ne v0, v1, :cond_0
 
-    sget v0, Lcom/android/server/am/ivd;->kr:I
+    sget v0, Lcom/android/server/am/ivd;->Qr:I
 
     if-ne v0, v1, :cond_0
 
-    sput-boolean p1, Lcom/android/server/am/ivd;->lr:Z
+    sput-boolean p1, Lcom/android/server/am/ivd;->Rr:Z
 
     :cond_0
     new-instance v0, Landroid/os/HandlerThread;
@@ -298,7 +298,7 @@
 
     invoke-direct {v1, p0, v0}, Lcom/android/server/am/ivd$you;-><init>(Lcom/android/server/am/ivd;Landroid/os/Looper;)V
 
-    iput-object v1, p0, Lcom/android/server/am/ivd;->Sq:Landroid/os/Handler;
+    iput-object v1, p0, Lcom/android/server/am/ivd;->xr:Landroid/os/Handler;
 
     iget-object v0, p0, Lcom/android/server/am/ivd;->mContext:Landroid/content/Context;
 
@@ -310,9 +310,9 @@
 
     check-cast v0, Landroid/net/ConnectivityManager;
 
-    iput-object v0, p0, Lcom/android/server/am/ivd;->Xq:Landroid/net/ConnectivityManager;
+    iput-object v0, p0, Lcom/android/server/am/ivd;->Cr:Landroid/net/ConnectivityManager;
 
-    iget-object v0, p0, Lcom/android/server/am/ivd;->Xq:Landroid/net/ConnectivityManager;
+    iget-object v0, p0, Lcom/android/server/am/ivd;->Cr:Landroid/net/ConnectivityManager;
 
     invoke-virtual {v0}, Landroid/net/ConnectivityManager;->getActiveNetworkInfo()Landroid/net/NetworkInfo;
 
@@ -332,7 +332,7 @@
 
     if-nez v0, :cond_1
 
-    sput-boolean p1, Lcom/android/server/am/ivd;->mr:Z
+    sput-boolean p1, Lcom/android/server/am/ivd;->Sr:Z
 
     :cond_1
     invoke-direct {p0}, Lcom/android/server/am/ivd;->init()V
@@ -365,12 +365,12 @@
 
     invoke-virtual {p1, p0}, Lcom/android/server/OnePlusUtil$zta;->zta(Lcom/android/server/OnePlusUtil$zta$you;)V
 
-    sput-object p0, Lcom/android/server/am/ivd;->Zq:Lcom/android/server/am/ivd;
+    sput-object p0, Lcom/android/server/am/ivd;->Er:Lcom/android/server/am/ivd;
 
     return-void
 .end method
 
-.method private Gb(Ljava/lang/String;)V
+.method private Ib(Ljava/lang/String;)V
     .locals 5
 
     sget-boolean v0, Lcom/android/server/am/ivd;->DBG:Z
@@ -396,12 +396,12 @@
     invoke-static {v1, v0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_0
-    iget-object v0, p0, Lcom/android/server/am/ivd;->Tq:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/server/am/ivd;->yr:Ljava/util/List;
 
     monitor-enter v0
 
     :try_start_0
-    iget-object v1, p0, Lcom/android/server/am/ivd;->Tq:Ljava/util/List;
+    iget-object v1, p0, Lcom/android/server/am/ivd;->yr:Ljava/util/List;
 
     invoke-interface {v1, p1}, Ljava/util/List;->contains(Ljava/lang/Object;)Z
 
@@ -415,9 +415,9 @@
 
     if-eqz p1, :cond_2
 
-    iput v1, p0, Lcom/android/server/am/ivd;->Pq:I
+    iput v1, p0, Lcom/android/server/am/ivd;->ur:I
 
-    iget-object p1, p0, Lcom/android/server/am/ivd;->Sq:Landroid/os/Handler;
+    iget-object p1, p0, Lcom/android/server/am/ivd;->xr:Landroid/os/Handler;
 
     invoke-virtual {p1, v3}, Landroid/os/Handler;->hasMessages(I)Z
 
@@ -425,7 +425,7 @@
 
     if-eqz p1, :cond_1
 
-    iget-object p1, p0, Lcom/android/server/am/ivd;->Sq:Landroid/os/Handler;
+    iget-object p1, p0, Lcom/android/server/am/ivd;->xr:Landroid/os/Handler;
 
     invoke-virtual {p1, v3}, Landroid/os/Handler;->removeMessages(I)V
 
@@ -446,7 +446,7 @@
 
     if-eqz p1, :cond_7
 
-    iput-boolean v1, p0, Lcom/android/server/am/ivd;->Rq:Z
+    iput-boolean v1, p0, Lcom/android/server/am/ivd;->wr:Z
 
     const-string p1, "persist.radio.duallte.operated"
 
@@ -460,7 +460,7 @@
 
     invoke-direct {p0, p1, v1}, Lcom/android/server/am/ivd;->setProptValue(Ljava/lang/String;Ljava/lang/String;)V
 
-    iget-object p1, p0, Lcom/android/server/am/ivd;->Sq:Landroid/os/Handler;
+    iget-object p1, p0, Lcom/android/server/am/ivd;->xr:Landroid/os/Handler;
 
     invoke-static {v2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -470,14 +470,14 @@
 
     move-result-object p1
 
-    iget-object p0, p0, Lcom/android/server/am/ivd;->Sq:Landroid/os/Handler;
+    iget-object p0, p0, Lcom/android/server/am/ivd;->xr:Landroid/os/Handler;
 
     invoke-virtual {p0, p1}, Landroid/os/Handler;->sendMessage(Landroid/os/Message;)Z
 
     goto :goto_0
 
     :cond_2
-    iget p1, p0, Lcom/android/server/am/ivd;->Pq:I
+    iget p1, p0, Lcom/android/server/am/ivd;->ur:I
 
     if-eqz p1, :cond_3
 
@@ -488,18 +488,18 @@
     goto :goto_0
 
     :cond_3
-    iput v2, p0, Lcom/android/server/am/ivd;->Pq:I
+    iput v2, p0, Lcom/android/server/am/ivd;->ur:I
 
     goto :goto_0
 
     :cond_4
-    iput v3, p0, Lcom/android/server/am/ivd;->Pq:I
+    iput v3, p0, Lcom/android/server/am/ivd;->ur:I
 
-    iget-boolean p1, p0, Lcom/android/server/am/ivd;->Rq:Z
+    iget-boolean p1, p0, Lcom/android/server/am/ivd;->wr:Z
 
     if-eqz p1, :cond_7
 
-    iput-boolean v2, p0, Lcom/android/server/am/ivd;->Rq:Z
+    iput-boolean v2, p0, Lcom/android/server/am/ivd;->wr:Z
 
     const-string p1, "persist.radio.duallte.enable"
 
@@ -523,7 +523,7 @@
 
     invoke-direct {p0, p1, v4}, Lcom/android/server/am/ivd;->setProptValue(Ljava/lang/String;Ljava/lang/String;)V
 
-    iget-object p1, p0, Lcom/android/server/am/ivd;->Sq:Landroid/os/Handler;
+    iget-object p1, p0, Lcom/android/server/am/ivd;->xr:Landroid/os/Handler;
 
     invoke-virtual {p1, v3}, Landroid/os/Handler;->hasMessages(I)Z
 
@@ -531,12 +531,12 @@
 
     if-eqz p1, :cond_5
 
-    iget-object p1, p0, Lcom/android/server/am/ivd;->Sq:Landroid/os/Handler;
+    iget-object p1, p0, Lcom/android/server/am/ivd;->xr:Landroid/os/Handler;
 
     invoke-virtual {p1, v3}, Landroid/os/Handler;->removeMessages(I)V
 
     :cond_5
-    iget-object p1, p0, Lcom/android/server/am/ivd;->Sq:Landroid/os/Handler;
+    iget-object p1, p0, Lcom/android/server/am/ivd;->xr:Landroid/os/Handler;
 
     invoke-static {v1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -546,9 +546,9 @@
 
     move-result-object p1
 
-    iget-object p0, p0, Lcom/android/server/am/ivd;->Sq:Landroid/os/Handler;
+    iget-object p0, p0, Lcom/android/server/am/ivd;->xr:Landroid/os/Handler;
 
-    sget-wide v1, Lcom/android/server/am/ivd;->hr:J
+    sget-wide v1, Lcom/android/server/am/ivd;->Nr:J
 
     invoke-virtual {p0, p1, v1, v2}, Landroid/os/Handler;->sendMessageDelayed(Landroid/os/Message;J)Z
 
@@ -585,7 +585,7 @@
     throw p0
 .end method
 
-.method private Rc()V
+.method private Yc()V
     .locals 3
 
     const-string p0, "OnePlusDuallteManager"
@@ -620,7 +620,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sget-wide v1, Lcom/android/server/am/ivd;->hr:J
+    sget-wide v1, Lcom/android/server/am/ivd;->Nr:J
 
     invoke-virtual {v0, v1, v2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
@@ -633,21 +633,273 @@
     return-void
 .end method
 
-.method private Wm()V
+.method static synthetic access$800()I
+    .locals 1
+
+    sget v0, Lcom/android/server/am/ivd;->Pr:I
+
+    return v0
+.end method
+
+.method static synthetic access$802(I)I
+    .locals 0
+
+    sput p0, Lcom/android/server/am/ivd;->Pr:I
+
+    return p0
+.end method
+
+.method static synthetic access$900()I
+    .locals 1
+
+    sget v0, Lcom/android/server/am/ivd;->Qr:I
+
+    return v0
+.end method
+
+.method static synthetic f(I)I
+    .locals 0
+
+    sput p0, Lcom/android/server/am/ivd;->Qr:I
+
+    return p0
+.end method
+
+.method private getIExtTelephony()Ljava/lang/Object;
+    .locals 9
+
+    sget-boolean v0, Lcom/android/server/am/ivd;->DBG:Z
+
+    const-string v1, "OnePlusDuallteManager"
+
+    if-eqz v0, :cond_0
+
+    const-string v0, "getIExtTelephony()"
+
+    invoke-static {v1, v0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    :cond_0
+    const/4 v0, 0x0
+
+    :try_start_0
+    const-string v2, "extphone"
+
+    invoke-static {v2}, Landroid/os/ServiceManager;->getService(Ljava/lang/String;)Landroid/os/IBinder;
+
+    move-result-object v2
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    const-string v3, "org.codeaurora.internal.IExtTelephony$Stub"
+
+    :try_start_1
+    invoke-static {v3}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
+
+    move-result-object v3
+
+    const-string v4, "asInterface"
+
+    const/4 v5, 0x1
+
+    new-array v6, v5, [Ljava/lang/Class;
+
+    const-class v7, Landroid/os/IBinder;
+
+    const/4 v8, 0x0
+
+    aput-object v7, v6, v8
+
+    invoke-virtual {v3, v4, v6}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+
+    move-result-object v3
+
+    new-array v4, v5, [Ljava/lang/Object;
+
+    aput-object v2, v4, v8
+
+    invoke-virtual {v3, v0, v4}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v2
+
+    iput-object v2, p0, Lcom/android/server/am/ivd;->Ar:Ljava/lang/Object;
+    :try_end_1
+    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
+
+    iget-object p0, p0, Lcom/android/server/am/ivd;->Ar:Ljava/lang/Object;
+
+    return-object p0
+
+    :catch_0
+    move-exception p0
+
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v3, "getIExtTelephony() exception: "
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-static {v1, v2}, Landroid/util/Slog;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    invoke-virtual {p0}, Ljava/lang/Exception;->printStackTrace()V
+
+    return-object v0
+.end method
+
+.method public static final getInstance()Lcom/android/server/am/ivd;
+    .locals 1
+
+    sget-object v0, Lcom/android/server/am/ivd;->Er:Lcom/android/server/am/ivd;
+
+    return-object v0
+.end method
+
+.method private getMethod()Ljava/lang/reflect/Method;
+    .locals 6
+
+    sget-boolean v0, Lcom/android/server/am/ivd;->DBG:Z
+
+    const-string v1, "OnePlusDuallteManager"
+
+    if-eqz v0, :cond_0
+
+    const-string v0, "getMethod()"
+
+    invoke-static {v1, v0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    :cond_0
+    const-string v0, "org.codeaurora.internal.IExtTelephony"
+
+    :try_start_0
+    invoke-static {v0}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
+
+    move-result-object v0
+
+    const-string v2, "generalSetter"
+
+    const/4 v3, 0x2
+
+    new-array v3, v3, [Ljava/lang/Class;
+
+    const/4 v4, 0x0
+
+    const-class v5, Ljava/lang/String;
+
+    aput-object v5, v3, v4
+
+    const/4 v4, 0x1
+
+    const-class v5, Landroid/os/Bundle;
+
+    aput-object v5, v3, v4
+
+    invoke-virtual {v0, v2, v3}, Ljava/lang/Class;->getDeclaredMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lcom/android/server/am/ivd;->method:Ljava/lang/reflect/Method;
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    iget-object p0, p0, Lcom/android/server/am/ivd;->method:Ljava/lang/reflect/Method;
+
+    return-object p0
+
+    :catch_0
+    move-exception p0
+
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v2, "getMethod() exception: "
+
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {v1, v0}, Landroid/util/Slog;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    invoke-virtual {p0}, Ljava/lang/Exception;->printStackTrace()V
+
+    const/4 p0, 0x0
+
+    return-object p0
+.end method
+
+.method private igw(Landroid/content/Context;)Z
+    .locals 0
+
+    invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object p0
+
+    const p1, 0x1110063
+
+    invoke-virtual {p0, p1}, Landroid/content/res/Resources;->getBoolean(I)Z
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public static final init(Landroid/content/Context;)Lcom/android/server/am/ivd;
+    .locals 1
+
+    sget-object v0, Lcom/android/server/am/ivd;->Er:Lcom/android/server/am/ivd;
+
+    if-nez v0, :cond_0
+
+    new-instance v0, Lcom/android/server/am/ivd;
+
+    invoke-direct {v0, p0}, Lcom/android/server/am/ivd;-><init>(Landroid/content/Context;)V
+
+    sput-object v0, Lcom/android/server/am/ivd;->Er:Lcom/android/server/am/ivd;
+
+    :cond_0
+    sget-object p0, Lcom/android/server/am/ivd;->Er:Lcom/android/server/am/ivd;
+
+    return-object p0
+.end method
+
+.method private init()V
+    .locals 0
+
+    invoke-direct {p0}, Lcom/android/server/am/ivd;->nn()V
+
+    invoke-virtual {p0}, Lcom/android/server/am/ivd;->initOnlineConfig()V
+
+    invoke-direct {p0}, Lcom/android/server/am/ivd;->on()V
+
+    return-void
+.end method
+
+.method private ln()V
     .locals 7
 
-    sget-object v0, Lcom/android/server/am/ivd;->_q:Ljava/lang/Object;
+    sget-object v0, Lcom/android/server/am/ivd;->Fr:Ljava/lang/Object;
 
     monitor-enter v0
 
     :try_start_0
-    iget-object v1, p0, Lcom/android/server/am/ivd;->Tq:Ljava/util/List;
+    iget-object v1, p0, Lcom/android/server/am/ivd;->yr:Ljava/util/List;
 
     const/4 v2, 0x1
 
     if-nez v1, :cond_0
 
-    iget-object v1, p0, Lcom/android/server/am/ivd;->Tq:Ljava/util/List;
+    iget-object v1, p0, Lcom/android/server/am/ivd;->yr:Ljava/util/List;
 
     invoke-interface {v1}, Ljava/util/List;->size()I
 
@@ -668,7 +920,7 @@
     :cond_0
     const/4 v1, 0x0
 
-    iget-object p0, p0, Lcom/android/server/am/ivd;->Tq:Ljava/util/List;
+    iget-object p0, p0, Lcom/android/server/am/ivd;->yr:Ljava/util/List;
 
     invoke-interface {p0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -730,20 +982,20 @@
     throw p0
 .end method
 
-.method private Xm()V
+.method private mn()V
     .locals 2
 
-    sget v0, Lcom/android/server/am/ivd;->jr:I
+    sget v0, Lcom/android/server/am/ivd;->Pr:I
 
     const/4 v1, 0x5
 
     if-ne v0, v1, :cond_0
 
-    sget v0, Lcom/android/server/am/ivd;->kr:I
+    sget v0, Lcom/android/server/am/ivd;->Qr:I
 
     if-ne v0, v1, :cond_0
 
-    sget-boolean v0, Lcom/android/server/am/ivd;->lr:Z
+    sget-boolean v0, Lcom/android/server/am/ivd;->Rr:Z
 
     if-nez v0, :cond_1
 
@@ -752,7 +1004,7 @@
     goto :goto_0
 
     :cond_0
-    sget-boolean v0, Lcom/android/server/am/ivd;->lr:Z
+    sget-boolean v0, Lcom/android/server/am/ivd;->Rr:Z
 
     if-eqz v0, :cond_1
 
@@ -769,165 +1021,165 @@
     return-void
 .end method
 
-.method private Ym()V
+.method private nn()V
     .locals 3
 
-    sget-object v0, Lcom/android/server/am/ivd;->_q:Ljava/lang/Object;
+    sget-object v0, Lcom/android/server/am/ivd;->Fr:Ljava/lang/Object;
 
     monitor-enter v0
 
     :try_start_0
-    iget-object v1, p0, Lcom/android/server/am/ivd;->Tq:Ljava/util/List;
+    iget-object v1, p0, Lcom/android/server/am/ivd;->yr:Ljava/util/List;
 
     const-string v2, "com.tencent.tmgp.cf"
 
     invoke-interface {v1, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    iget-object v1, p0, Lcom/android/server/am/ivd;->Tq:Ljava/util/List;
+    iget-object v1, p0, Lcom/android/server/am/ivd;->yr:Ljava/util/List;
 
     const-string v2, "com.tencent.tmgp.dwrg"
 
     invoke-interface {v1, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    iget-object v1, p0, Lcom/android/server/am/ivd;->Tq:Ljava/util/List;
+    iget-object v1, p0, Lcom/android/server/am/ivd;->yr:Ljava/util/List;
 
     const-string v2, "com.tencent.tmgp.sgame"
 
     invoke-interface {v1, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    iget-object v1, p0, Lcom/android/server/am/ivd;->Tq:Ljava/util/List;
+    iget-object v1, p0, Lcom/android/server/am/ivd;->yr:Ljava/util/List;
 
     const-string v2, "com.tencent.tmgp.pubgm"
 
     invoke-interface {v1, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    iget-object v1, p0, Lcom/android/server/am/ivd;->Tq:Ljava/util/List;
+    iget-object v1, p0, Lcom/android/server/am/ivd;->yr:Ljava/util/List;
 
     const-string v2, "com.tencent.tmgp.pubgmhd"
 
     invoke-interface {v1, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    iget-object v1, p0, Lcom/android/server/am/ivd;->Tq:Ljava/util/List;
+    iget-object v1, p0, Lcom/android/server/am/ivd;->yr:Ljava/util/List;
 
     const-string v2, "com.tencent.tmgp.speedmobile"
 
     invoke-interface {v1, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    iget-object v1, p0, Lcom/android/server/am/ivd;->Tq:Ljava/util/List;
+    iget-object v1, p0, Lcom/android/server/am/ivd;->yr:Ljava/util/List;
 
     const-string v2, "com.tencent.tmgp.supercell.clashroyale"
 
     invoke-interface {v1, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    iget-object v1, p0, Lcom/android/server/am/ivd;->Tq:Ljava/util/List;
+    iget-object v1, p0, Lcom/android/server/am/ivd;->yr:Ljava/util/List;
 
     const-string v2, "com.tencent.tmgp.supercell.clashofclans"
 
     invoke-interface {v1, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    iget-object v1, p0, Lcom/android/server/am/ivd;->Tq:Ljava/util/List;
+    iget-object v1, p0, Lcom/android/server/am/ivd;->yr:Ljava/util/List;
 
     const-string v2, "com.netease.dwrg"
 
     invoke-interface {v1, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    iget-object v1, p0, Lcom/android/server/am/ivd;->Tq:Ljava/util/List;
+    iget-object v1, p0, Lcom/android/server/am/ivd;->yr:Ljava/util/List;
 
     const-string v2, "com.netease.dwrg.baidu"
 
     invoke-interface {v1, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    iget-object v1, p0, Lcom/android/server/am/ivd;->Tq:Ljava/util/List;
+    iget-object v1, p0, Lcom/android/server/am/ivd;->yr:Ljava/util/List;
 
     const-string v2, "com.netease.dwrg.aligames"
 
     invoke-interface {v1, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    iget-object v1, p0, Lcom/android/server/am/ivd;->Tq:Ljava/util/List;
+    iget-object v1, p0, Lcom/android/server/am/ivd;->yr:Ljava/util/List;
 
     const-string v2, "com.netease.dwrg.nearme.gamecenter"
 
     invoke-interface {v1, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    iget-object v1, p0, Lcom/android/server/am/ivd;->Tq:Ljava/util/List;
+    iget-object v1, p0, Lcom/android/server/am/ivd;->yr:Ljava/util/List;
 
     const-string v2, "com.netease.hyxd"
 
     invoke-interface {v1, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    iget-object v1, p0, Lcom/android/server/am/ivd;->Tq:Ljava/util/List;
+    iget-object v1, p0, Lcom/android/server/am/ivd;->yr:Ljava/util/List;
 
     const-string v2, "com.netease.hyxd.baidu"
 
     invoke-interface {v1, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    iget-object v1, p0, Lcom/android/server/am/ivd;->Tq:Ljava/util/List;
+    iget-object v1, p0, Lcom/android/server/am/ivd;->yr:Ljava/util/List;
 
     const-string v2, "com.netease.hyxd.aligames"
 
     invoke-interface {v1, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    iget-object v1, p0, Lcom/android/server/am/ivd;->Tq:Ljava/util/List;
+    iget-object v1, p0, Lcom/android/server/am/ivd;->yr:Ljava/util/List;
 
     const-string v2, "com.netease.hyxd.nearme.gamecenter"
 
     invoke-interface {v1, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    iget-object v1, p0, Lcom/android/server/am/ivd;->Tq:Ljava/util/List;
+    iget-object v1, p0, Lcom/android/server/am/ivd;->yr:Ljava/util/List;
 
     const-string v2, "com.supercell.clashroyale.uc"
 
     invoke-interface {v1, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    iget-object v1, p0, Lcom/android/server/am/ivd;->Tq:Ljava/util/List;
+    iget-object v1, p0, Lcom/android/server/am/ivd;->yr:Ljava/util/List;
 
     const-string v2, "com.supercell.clashofclans.uc"
 
     invoke-interface {v1, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    iget-object v1, p0, Lcom/android/server/am/ivd;->Tq:Ljava/util/List;
+    iget-object v1, p0, Lcom/android/server/am/ivd;->yr:Ljava/util/List;
 
     const-string v2, "com.supercell.clashroyale.baidu"
 
     invoke-interface {v1, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    iget-object v1, p0, Lcom/android/server/am/ivd;->Tq:Ljava/util/List;
+    iget-object v1, p0, Lcom/android/server/am/ivd;->yr:Ljava/util/List;
 
     const-string v2, "com.supercell.clashofclans.qihoo"
 
     invoke-interface {v1, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    iget-object v1, p0, Lcom/android/server/am/ivd;->Tq:Ljava/util/List;
+    iget-object v1, p0, Lcom/android/server/am/ivd;->yr:Ljava/util/List;
 
     const-string v2, "com.supercell.clashofclans.baidu"
 
     invoke-interface {v1, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    iget-object v1, p0, Lcom/android/server/am/ivd;->Tq:Ljava/util/List;
+    iget-object v1, p0, Lcom/android/server/am/ivd;->yr:Ljava/util/List;
 
     const-string v2, "com.supercell.clashroyale.kunlun"
 
     invoke-interface {v1, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    iget-object v1, p0, Lcom/android/server/am/ivd;->Tq:Ljava/util/List;
+    iget-object v1, p0, Lcom/android/server/am/ivd;->yr:Ljava/util/List;
 
     const-string v2, "com.supercell.clashofclans.kunlun"
 
     invoke-interface {v1, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    iget-object v1, p0, Lcom/android/server/am/ivd;->Tq:Ljava/util/List;
+    iget-object v1, p0, Lcom/android/server/am/ivd;->yr:Ljava/util/List;
 
     const-string v2, "com.supercell.clashroyale.nearme.gamecenter"
 
     invoke-interface {v1, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    iget-object v1, p0, Lcom/android/server/am/ivd;->Tq:Ljava/util/List;
+    iget-object v1, p0, Lcom/android/server/am/ivd;->yr:Ljava/util/List;
 
     const-string v2, "com.supercell.clashofclans.nearme.gamecenter"
 
     invoke-interface {v1, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    iget-object p0, p0, Lcom/android/server/am/ivd;->Tq:Ljava/util/List;
+    iget-object p0, p0, Lcom/android/server/am/ivd;->yr:Ljava/util/List;
 
     const-string v1, "com.blizzard.wtcg.hearthstone"
 
@@ -947,7 +1199,7 @@
     throw p0
 .end method
 
-.method private Zm()V
+.method private on()V
     .locals 7
 
     const-string v0, "persist.radio.duallte.operated"
@@ -1008,7 +1260,7 @@
 
     invoke-direct {p0, v2, v5}, Lcom/android/server/am/ivd;->setProptValue(Ljava/lang/String;Ljava/lang/String;)V
 
-    iget-object v0, p0, Lcom/android/server/am/ivd;->Sq:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/android/server/am/ivd;->xr:Landroid/os/Handler;
 
     const/4 v1, 0x2
 
@@ -1024,7 +1276,7 @@
 
     move-result-object v0
 
-    iget-object p0, p0, Lcom/android/server/am/ivd;->Sq:Landroid/os/Handler;
+    iget-object p0, p0, Lcom/android/server/am/ivd;->xr:Landroid/os/Handler;
 
     const-wide/32 v1, 0xea60
 
@@ -1034,14 +1286,14 @@
     return-void
 .end method
 
-.method private _m()Z
+.method private pn()Z
     .locals 0
 
-    sget-boolean p0, Lcom/android/server/am/ivd;->lr:Z
+    sget-boolean p0, Lcom/android/server/am/ivd;->Rr:Z
 
     if-eqz p0, :cond_0
 
-    sget-boolean p0, Lcom/android/server/am/ivd;->mr:Z
+    sget-boolean p0, Lcom/android/server/am/ivd;->Sr:Z
 
     if-eqz p0, :cond_0
 
@@ -1056,31 +1308,7 @@
     return p0
 .end method
 
-.method static synthetic access$800()I
-    .locals 1
-
-    sget v0, Lcom/android/server/am/ivd;->jr:I
-
-    return v0
-.end method
-
-.method static synthetic access$802(I)I
-    .locals 0
-
-    sput p0, Lcom/android/server/am/ivd;->jr:I
-
-    return p0
-.end method
-
-.method static synthetic access$900()I
-    .locals 1
-
-    sget v0, Lcom/android/server/am/ivd;->kr:I
-
-    return v0
-.end method
-
-.method private an()V
+.method private qn()V
     .locals 4
 
     sget-boolean v0, Lcom/android/server/am/ivd;->DBG:Z
@@ -1095,7 +1323,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean v1, p0, Lcom/android/server/am/ivd;->Rq:Z
+    iget-boolean v1, p0, Lcom/android/server/am/ivd;->wr:Z
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -1108,11 +1336,11 @@
     invoke-static {v1, v0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_0
-    iget-boolean v0, p0, Lcom/android/server/am/ivd;->Rq:Z
+    iget-boolean v0, p0, Lcom/android/server/am/ivd;->wr:Z
 
     if-eqz v0, :cond_2
 
-    iget-object v0, p0, Lcom/android/server/am/ivd;->Sq:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/android/server/am/ivd;->xr:Landroid/os/Handler;
 
     const/4 v1, 0x2
 
@@ -1122,7 +1350,7 @@
 
     if-eqz v0, :cond_1
 
-    iget-object v0, p0, Lcom/android/server/am/ivd;->Sq:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/android/server/am/ivd;->xr:Landroid/os/Handler;
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->removeMessages(I)V
 
@@ -1133,7 +1361,7 @@
 
     invoke-direct {p0, v0, v2}, Lcom/android/server/am/ivd;->setProptValue(Ljava/lang/String;Ljava/lang/String;)V
 
-    iget-object v0, p0, Lcom/android/server/am/ivd;->Sq:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/android/server/am/ivd;->xr:Landroid/os/Handler;
 
     const/4 v2, 0x1
 
@@ -1147,7 +1375,7 @@
 
     move-result-object v0
 
-    iget-object p0, p0, Lcom/android/server/am/ivd;->Sq:Landroid/os/Handler;
+    iget-object p0, p0, Lcom/android/server/am/ivd;->xr:Landroid/os/Handler;
 
     invoke-virtual {p0, v0}, Landroid/os/Handler;->sendMessage(Landroid/os/Message;)Z
 
@@ -1155,7 +1383,505 @@
     return-void
 .end method
 
-.method private bn()V
+.method private resolveConfigFromJSON(Lorg/json/JSONArray;)V
+    .locals 7
+
+    if-nez p1, :cond_0
+
+    const-string p0, "OnePlusDuallteManager"
+
+    const-string p1, "[OnlineConfig] resolveConfigFromJSON jsonArray is null, return"
+
+    invoke-static {p0, p1}, Landroid/util/Slog;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    return-void
+
+    :cond_0
+    const/4 v0, 0x0
+
+    move v1, v0
+
+    :goto_0
+    :try_start_0
+    invoke-virtual {p1}, Lorg/json/JSONArray;->length()I
+
+    move-result v2
+
+    if-ge v1, v2, :cond_2
+
+    invoke-virtual {p1, v1}, Lorg/json/JSONArray;->getJSONObject(I)Lorg/json/JSONObject;
+
+    move-result-object v2
+
+    const-string v3, "name"
+
+    invoke-virtual {v2, v3}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v3
+
+    const-string v4, "enable"
+
+    invoke-virtual {v3, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v3
+
+    if-eqz v3, :cond_1
+
+    const-string v3, "value"
+
+    invoke-virtual {v2, v3}, Lorg/json/JSONObject;->getJSONArray(Ljava/lang/String;)Lorg/json/JSONArray;
+
+    move-result-object v2
+
+    invoke-virtual {v2, v0}, Lorg/json/JSONArray;->getBoolean(I)Z
+
+    move-result v2
+
+    sput-boolean v2, Lcom/android/server/am/ivd;->sEnable:Z
+
+    :cond_1
+    add-int/lit8 v1, v1, 0x1
+
+    goto :goto_0
+
+    :cond_2
+    move v1, v0
+
+    :goto_1
+    invoke-virtual {p1}, Lorg/json/JSONArray;->length()I
+
+    move-result v2
+
+    if-ge v1, v2, :cond_4
+
+    invoke-virtual {p1, v1}, Lorg/json/JSONArray;->getJSONObject(I)Lorg/json/JSONObject;
+
+    move-result-object v2
+
+    const-string v3, "name"
+
+    invoke-virtual {v2, v3}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v3
+
+    const-string v4, "delaytime"
+
+    invoke-virtual {v3, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v3
+
+    if-eqz v3, :cond_3
+
+    const-string v3, "value"
+
+    invoke-virtual {v2, v3}, Lorg/json/JSONObject;->getJSONArray(Ljava/lang/String;)Lorg/json/JSONArray;
+
+    move-result-object v2
+
+    invoke-virtual {v2, v0}, Lorg/json/JSONArray;->getInt(I)I
+
+    move-result v2
+
+    int-to-long v2, v2
+
+    sput-wide v2, Lcom/android/server/am/ivd;->Nr:J
+
+    :cond_3
+    add-int/lit8 v1, v1, 0x1
+
+    goto :goto_1
+
+    :cond_4
+    move v1, v0
+
+    :goto_2
+    invoke-virtual {p1}, Lorg/json/JSONArray;->length()I
+
+    move-result v2
+
+    if-ge v1, v2, :cond_8
+
+    invoke-virtual {p1, v1}, Lorg/json/JSONArray;->getJSONObject(I)Lorg/json/JSONObject;
+
+    move-result-object v2
+
+    const-string v3, "name"
+
+    invoke-virtual {v2, v3}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v3
+
+    const-string v4, "mSpecialGameList"
+
+    invoke-virtual {v3, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v3
+
+    if-eqz v3, :cond_7
+
+    iget-object v3, p0, Lcom/android/server/am/ivd;->yr:Ljava/util/List;
+
+    monitor-enter v3
+    :try_end_0
+    .catch Lorg/json/JSONException; {:try_start_0 .. :try_end_0} :catch_1
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_1
+
+    :try_start_1
+    const-string v4, "value"
+
+    invoke-virtual {v2, v4}, Lorg/json/JSONObject;->getJSONArray(Ljava/lang/String;)Lorg/json/JSONArray;
+
+    move-result-object v2
+
+    iget-object v4, p0, Lcom/android/server/am/ivd;->yr:Ljava/util/List;
+
+    invoke-interface {v4}, Ljava/util/List;->clear()V
+
+    move v4, v0
+
+    :goto_3
+    invoke-virtual {v2}, Lorg/json/JSONArray;->length()I
+
+    move-result v5
+
+    if-ge v4, v5, :cond_6
+
+    invoke-virtual {v2, v4}, Lorg/json/JSONArray;->getString(I)Ljava/lang/String;
+
+    move-result-object v5
+
+    iget-object v6, p0, Lcom/android/server/am/ivd;->yr:Ljava/util/List;
+
+    invoke-interface {v6, v5}, Ljava/util/List;->contains(Ljava/lang/Object;)Z
+
+    move-result v6
+
+    if-nez v6, :cond_5
+
+    iget-object v6, p0, Lcom/android/server/am/ivd;->yr:Ljava/util/List;
+
+    invoke-interface {v6, v5}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    :cond_5
+    add-int/lit8 v4, v4, 0x1
+
+    goto :goto_3
+
+    :cond_6
+    monitor-exit v3
+
+    goto :goto_4
+
+    :catchall_0
+    move-exception p1
+
+    monitor-exit v3
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    :try_start_2
+    throw p1
+    :try_end_2
+    .catch Lorg/json/JSONException; {:try_start_2 .. :try_end_2} :catch_1
+    .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_0
+    .catchall {:try_start_2 .. :try_end_2} :catchall_1
+
+    :cond_7
+    :goto_4
+    add-int/lit8 v1, v1, 0x1
+
+    goto :goto_2
+
+    :cond_8
+    new-instance p1, Ljava/lang/StringBuilder;
+
+    invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v0, "[OnlineConfig] resolveConfigFromJSON sEnable:"
+
+    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    sget-boolean v0, Lcom/android/server/am/ivd;->sEnable:Z
+
+    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    const-string v0, "OnePlusDuallteManager"
+
+    invoke-static {v0, p1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    new-instance p1, Ljava/lang/StringBuilder;
+
+    invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v0, "[OnlineConfig] resolveConfigFromJSON operateDelayTime:"
+
+    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    sget-wide v0, Lcom/android/server/am/ivd;->Nr:J
+
+    invoke-virtual {p1, v0, v1}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    const-string v0, "OnePlusDuallteManager"
+
+    invoke-static {v0, p1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    new-instance p1, Ljava/lang/StringBuilder;
+
+    invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
+
+    :goto_5
+    const-string v0, "[OnlineConfig] resolveConfigFromJSON mSpecialGameList:"
+
+    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object p0, p0, Lcom/android/server/am/ivd;->yr:Ljava/util/List;
+
+    invoke-virtual {p1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p0
+
+    const-string p1, "OnePlusDuallteManager"
+
+    invoke-static {p1, p0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    goto/16 :goto_6
+
+    :catchall_1
+    move-exception p1
+
+    goto/16 :goto_7
+
+    :catch_0
+    move-exception p1
+
+    :try_start_3
+    const-string v0, "OnePlusDuallteManager"
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v2, "[OnlineConfig] Exception:"
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p1}, Ljava/lang/Exception;->getMessage()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-static {v0, v1}, Landroid/util/Slog;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    invoke-virtual {p1}, Ljava/lang/Exception;->printStackTrace()V
+    :try_end_3
+    .catchall {:try_start_3 .. :try_end_3} :catchall_1
+
+    new-instance p1, Ljava/lang/StringBuilder;
+
+    invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v0, "[OnlineConfig] resolveConfigFromJSON sEnable:"
+
+    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    sget-boolean v0, Lcom/android/server/am/ivd;->sEnable:Z
+
+    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    const-string v0, "OnePlusDuallteManager"
+
+    invoke-static {v0, p1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    new-instance p1, Ljava/lang/StringBuilder;
+
+    invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v0, "[OnlineConfig] resolveConfigFromJSON operateDelayTime:"
+
+    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    sget-wide v0, Lcom/android/server/am/ivd;->Nr:J
+
+    invoke-virtual {p1, v0, v1}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    const-string v0, "OnePlusDuallteManager"
+
+    invoke-static {v0, p1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    new-instance p1, Ljava/lang/StringBuilder;
+
+    invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
+
+    goto :goto_5
+
+    :catch_1
+    move-exception p1
+
+    :try_start_4
+    const-string v0, "OnePlusDuallteManager"
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v2, "[OnlineConfig] JSONException:"
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p1}, Lorg/json/JSONException;->getMessage()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-static {v0, v1}, Landroid/util/Slog;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    invoke-virtual {p1}, Lorg/json/JSONException;->printStackTrace()V
+    :try_end_4
+    .catchall {:try_start_4 .. :try_end_4} :catchall_1
+
+    new-instance p1, Ljava/lang/StringBuilder;
+
+    invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v0, "[OnlineConfig] resolveConfigFromJSON sEnable:"
+
+    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    sget-boolean v0, Lcom/android/server/am/ivd;->sEnable:Z
+
+    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    const-string v0, "OnePlusDuallteManager"
+
+    invoke-static {v0, p1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    new-instance p1, Ljava/lang/StringBuilder;
+
+    invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v0, "[OnlineConfig] resolveConfigFromJSON operateDelayTime:"
+
+    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    sget-wide v0, Lcom/android/server/am/ivd;->Nr:J
+
+    invoke-virtual {p1, v0, v1}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    const-string v0, "OnePlusDuallteManager"
+
+    invoke-static {v0, p1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    new-instance p1, Ljava/lang/StringBuilder;
+
+    invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
+
+    goto/16 :goto_5
+
+    :goto_6
+    return-void
+
+    :goto_7
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v1, "[OnlineConfig] resolveConfigFromJSON sEnable:"
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    sget-boolean v1, Lcom/android/server/am/ivd;->sEnable:Z
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    const-string v1, "OnePlusDuallteManager"
+
+    invoke-static {v1, v0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v1, "[OnlineConfig] resolveConfigFromJSON operateDelayTime:"
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    sget-wide v1, Lcom/android/server/am/ivd;->Nr:J
+
+    invoke-virtual {v0, v1, v2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    const-string v1, "OnePlusDuallteManager"
+
+    invoke-static {v1, v0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v1, "[OnlineConfig] resolveConfigFromJSON mSpecialGameList:"
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object p0, p0, Lcom/android/server/am/ivd;->yr:Ljava/util/List;
+
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p0
+
+    const-string v0, "OnePlusDuallteManager"
+
+    invoke-static {v0, p0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    throw p1
+.end method
+
+.method private rn()V
     .locals 9
 
     sget-boolean p0, Lcom/android/server/am/ivd;->DBG:Z
@@ -1365,736 +2091,10 @@
     return-void
 .end method
 
-.method static synthetic f(I)I
-    .locals 0
-
-    sput p0, Lcom/android/server/am/ivd;->kr:I
-
-    return p0
-.end method
-
-.method private getIExtTelephony()Ljava/lang/Object;
-    .locals 9
-
-    sget-boolean v0, Lcom/android/server/am/ivd;->DBG:Z
-
-    const-string v1, "OnePlusDuallteManager"
-
-    if-eqz v0, :cond_0
-
-    const-string v0, "getIExtTelephony()"
-
-    invoke-static {v1, v0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    :cond_0
-    const/4 v0, 0x0
-
-    :try_start_0
-    const-string v2, "extphone"
-
-    invoke-static {v2}, Landroid/os/ServiceManager;->getService(Ljava/lang/String;)Landroid/os/IBinder;
-
-    move-result-object v2
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
-
-    const-string v3, "org.codeaurora.internal.IExtTelephony$Stub"
-
-    :try_start_1
-    invoke-static {v3}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
-
-    move-result-object v3
-
-    const-string v4, "asInterface"
-
-    const/4 v5, 0x1
-
-    new-array v6, v5, [Ljava/lang/Class;
-
-    const-class v7, Landroid/os/IBinder;
-
-    const/4 v8, 0x0
-
-    aput-object v7, v6, v8
-
-    invoke-virtual {v3, v4, v6}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
-
-    move-result-object v3
-
-    new-array v4, v5, [Ljava/lang/Object;
-
-    aput-object v2, v4, v8
-
-    invoke-virtual {v3, v0, v4}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v2
-
-    iput-object v2, p0, Lcom/android/server/am/ivd;->Vq:Ljava/lang/Object;
-    :try_end_1
-    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
-
-    iget-object p0, p0, Lcom/android/server/am/ivd;->Vq:Ljava/lang/Object;
-
-    return-object p0
-
-    :catch_0
-    move-exception p0
-
-    new-instance v2, Ljava/lang/StringBuilder;
-
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v3, "getIExtTelephony() exception: "
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-static {v1, v2}, Landroid/util/Slog;->e(Ljava/lang/String;Ljava/lang/String;)I
-
-    invoke-virtual {p0}, Ljava/lang/Exception;->printStackTrace()V
-
-    return-object v0
-.end method
-
-.method public static final getInstance()Lcom/android/server/am/ivd;
-    .locals 1
-
-    sget-object v0, Lcom/android/server/am/ivd;->Zq:Lcom/android/server/am/ivd;
-
-    return-object v0
-.end method
-
-.method private getMethod()Ljava/lang/reflect/Method;
-    .locals 6
-
-    sget-boolean v0, Lcom/android/server/am/ivd;->DBG:Z
-
-    const-string v1, "OnePlusDuallteManager"
-
-    if-eqz v0, :cond_0
-
-    const-string v0, "getMethod()"
-
-    invoke-static {v1, v0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    :cond_0
-    const-string v0, "org.codeaurora.internal.IExtTelephony"
-
-    :try_start_0
-    invoke-static {v0}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
-
-    move-result-object v0
-
-    const-string v2, "generalSetter"
-
-    const/4 v3, 0x2
-
-    new-array v3, v3, [Ljava/lang/Class;
-
-    const/4 v4, 0x0
-
-    const-class v5, Ljava/lang/String;
-
-    aput-object v5, v3, v4
-
-    const/4 v4, 0x1
-
-    const-class v5, Landroid/os/Bundle;
-
-    aput-object v5, v3, v4
-
-    invoke-virtual {v0, v2, v3}, Ljava/lang/Class;->getDeclaredMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
-
-    move-result-object v0
-
-    iput-object v0, p0, Lcom/android/server/am/ivd;->method:Ljava/lang/reflect/Method;
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
-
-    iget-object p0, p0, Lcom/android/server/am/ivd;->method:Ljava/lang/reflect/Method;
-
-    return-object p0
-
-    :catch_0
-    move-exception p0
-
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v2, "getMethod() exception: "
-
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-static {v1, v0}, Landroid/util/Slog;->e(Ljava/lang/String;Ljava/lang/String;)I
-
-    invoke-virtual {p0}, Ljava/lang/Exception;->printStackTrace()V
-
-    const/4 p0, 0x0
-
-    return-object p0
-.end method
-
-.method private igw(Landroid/content/Context;)Z
-    .locals 0
-
-    invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
-
-    move-result-object p0
-
-    const p1, 0x1110063
-
-    invoke-virtual {p0, p1}, Landroid/content/res/Resources;->getBoolean(I)Z
-
-    move-result p0
-
-    return p0
-.end method
-
-.method public static final init(Landroid/content/Context;)Lcom/android/server/am/ivd;
-    .locals 1
-
-    sget-object v0, Lcom/android/server/am/ivd;->Zq:Lcom/android/server/am/ivd;
-
-    if-nez v0, :cond_0
-
-    new-instance v0, Lcom/android/server/am/ivd;
-
-    invoke-direct {v0, p0}, Lcom/android/server/am/ivd;-><init>(Landroid/content/Context;)V
-
-    sput-object v0, Lcom/android/server/am/ivd;->Zq:Lcom/android/server/am/ivd;
-
-    :cond_0
-    sget-object p0, Lcom/android/server/am/ivd;->Zq:Lcom/android/server/am/ivd;
-
-    return-object p0
-.end method
-
-.method private init()V
-    .locals 0
-
-    invoke-direct {p0}, Lcom/android/server/am/ivd;->Ym()V
-
-    invoke-virtual {p0}, Lcom/android/server/am/ivd;->initOnlineConfig()V
-
-    invoke-direct {p0}, Lcom/android/server/am/ivd;->Zm()V
-
-    return-void
-.end method
-
-.method private resolveConfigFromJSON(Lorg/json/JSONArray;)V
-    .locals 7
-
-    if-nez p1, :cond_0
-
-    const-string p0, "OnePlusDuallteManager"
-
-    const-string p1, "[OnlineConfig] resolveConfigFromJSON jsonArray is null, return"
-
-    invoke-static {p0, p1}, Landroid/util/Slog;->e(Ljava/lang/String;Ljava/lang/String;)I
-
-    return-void
-
-    :cond_0
-    const/4 v0, 0x0
-
-    move v1, v0
-
-    :goto_0
-    :try_start_0
-    invoke-virtual {p1}, Lorg/json/JSONArray;->length()I
-
-    move-result v2
-
-    if-ge v1, v2, :cond_2
-
-    invoke-virtual {p1, v1}, Lorg/json/JSONArray;->getJSONObject(I)Lorg/json/JSONObject;
-
-    move-result-object v2
-
-    const-string v3, "name"
-
-    invoke-virtual {v2, v3}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v3
-
-    const-string v4, "enable"
-
-    invoke-virtual {v3, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v3
-
-    if-eqz v3, :cond_1
-
-    const-string v3, "value"
-
-    invoke-virtual {v2, v3}, Lorg/json/JSONObject;->getJSONArray(Ljava/lang/String;)Lorg/json/JSONArray;
-
-    move-result-object v2
-
-    invoke-virtual {v2, v0}, Lorg/json/JSONArray;->getBoolean(I)Z
-
-    move-result v2
-
-    sput-boolean v2, Lcom/android/server/am/ivd;->sEnable:Z
-
-    :cond_1
-    add-int/lit8 v1, v1, 0x1
-
-    goto :goto_0
-
-    :cond_2
-    move v1, v0
-
-    :goto_1
-    invoke-virtual {p1}, Lorg/json/JSONArray;->length()I
-
-    move-result v2
-
-    if-ge v1, v2, :cond_4
-
-    invoke-virtual {p1, v1}, Lorg/json/JSONArray;->getJSONObject(I)Lorg/json/JSONObject;
-
-    move-result-object v2
-
-    const-string v3, "name"
-
-    invoke-virtual {v2, v3}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v3
-
-    const-string v4, "delaytime"
-
-    invoke-virtual {v3, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v3
-
-    if-eqz v3, :cond_3
-
-    const-string v3, "value"
-
-    invoke-virtual {v2, v3}, Lorg/json/JSONObject;->getJSONArray(Ljava/lang/String;)Lorg/json/JSONArray;
-
-    move-result-object v2
-
-    invoke-virtual {v2, v0}, Lorg/json/JSONArray;->getInt(I)I
-
-    move-result v2
-
-    int-to-long v2, v2
-
-    sput-wide v2, Lcom/android/server/am/ivd;->hr:J
-
-    :cond_3
-    add-int/lit8 v1, v1, 0x1
-
-    goto :goto_1
-
-    :cond_4
-    move v1, v0
-
-    :goto_2
-    invoke-virtual {p1}, Lorg/json/JSONArray;->length()I
-
-    move-result v2
-
-    if-ge v1, v2, :cond_8
-
-    invoke-virtual {p1, v1}, Lorg/json/JSONArray;->getJSONObject(I)Lorg/json/JSONObject;
-
-    move-result-object v2
-
-    const-string v3, "name"
-
-    invoke-virtual {v2, v3}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v3
-
-    const-string v4, "mSpecialGameList"
-
-    invoke-virtual {v3, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v3
-
-    if-eqz v3, :cond_7
-
-    iget-object v3, p0, Lcom/android/server/am/ivd;->Tq:Ljava/util/List;
-
-    monitor-enter v3
-    :try_end_0
-    .catch Lorg/json/JSONException; {:try_start_0 .. :try_end_0} :catch_1
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_1
-
-    :try_start_1
-    const-string v4, "value"
-
-    invoke-virtual {v2, v4}, Lorg/json/JSONObject;->getJSONArray(Ljava/lang/String;)Lorg/json/JSONArray;
-
-    move-result-object v2
-
-    iget-object v4, p0, Lcom/android/server/am/ivd;->Tq:Ljava/util/List;
-
-    invoke-interface {v4}, Ljava/util/List;->clear()V
-
-    move v4, v0
-
-    :goto_3
-    invoke-virtual {v2}, Lorg/json/JSONArray;->length()I
-
-    move-result v5
-
-    if-ge v4, v5, :cond_6
-
-    invoke-virtual {v2, v4}, Lorg/json/JSONArray;->getString(I)Ljava/lang/String;
-
-    move-result-object v5
-
-    iget-object v6, p0, Lcom/android/server/am/ivd;->Tq:Ljava/util/List;
-
-    invoke-interface {v6, v5}, Ljava/util/List;->contains(Ljava/lang/Object;)Z
-
-    move-result v6
-
-    if-nez v6, :cond_5
-
-    iget-object v6, p0, Lcom/android/server/am/ivd;->Tq:Ljava/util/List;
-
-    invoke-interface {v6, v5}, Ljava/util/List;->add(Ljava/lang/Object;)Z
-
-    :cond_5
-    add-int/lit8 v4, v4, 0x1
-
-    goto :goto_3
-
-    :cond_6
-    monitor-exit v3
-
-    goto :goto_4
-
-    :catchall_0
-    move-exception p1
-
-    monitor-exit v3
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
-    :try_start_2
-    throw p1
-    :try_end_2
-    .catch Lorg/json/JSONException; {:try_start_2 .. :try_end_2} :catch_1
-    .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_0
-    .catchall {:try_start_2 .. :try_end_2} :catchall_1
-
-    :cond_7
-    :goto_4
-    add-int/lit8 v1, v1, 0x1
-
-    goto :goto_2
-
-    :cond_8
-    new-instance p1, Ljava/lang/StringBuilder;
-
-    invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v0, "[OnlineConfig] resolveConfigFromJSON sEnable:"
-
-    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    sget-boolean v0, Lcom/android/server/am/ivd;->sEnable:Z
-
-    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p1
-
-    const-string v0, "OnePlusDuallteManager"
-
-    invoke-static {v0, p1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    new-instance p1, Ljava/lang/StringBuilder;
-
-    invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v0, "[OnlineConfig] resolveConfigFromJSON operateDelayTime:"
-
-    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    sget-wide v0, Lcom/android/server/am/ivd;->hr:J
-
-    invoke-virtual {p1, v0, v1}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p1
-
-    const-string v0, "OnePlusDuallteManager"
-
-    invoke-static {v0, p1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    new-instance p1, Ljava/lang/StringBuilder;
-
-    invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
-
-    :goto_5
-    const-string v0, "[OnlineConfig] resolveConfigFromJSON mSpecialGameList:"
-
-    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget-object p0, p0, Lcom/android/server/am/ivd;->Tq:Ljava/util/List;
-
-    invoke-virtual {p1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p0
-
-    const-string p1, "OnePlusDuallteManager"
-
-    invoke-static {p1, p0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    goto/16 :goto_6
-
-    :catchall_1
-    move-exception p1
-
-    goto/16 :goto_7
-
-    :catch_0
-    move-exception p1
-
-    :try_start_3
-    const-string v0, "OnePlusDuallteManager"
-
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v2, "[OnlineConfig] Exception:"
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p1}, Ljava/lang/Exception;->getMessage()Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-static {v0, v1}, Landroid/util/Slog;->e(Ljava/lang/String;Ljava/lang/String;)I
-
-    invoke-virtual {p1}, Ljava/lang/Exception;->printStackTrace()V
-    :try_end_3
-    .catchall {:try_start_3 .. :try_end_3} :catchall_1
-
-    new-instance p1, Ljava/lang/StringBuilder;
-
-    invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v0, "[OnlineConfig] resolveConfigFromJSON sEnable:"
-
-    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    sget-boolean v0, Lcom/android/server/am/ivd;->sEnable:Z
-
-    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p1
-
-    const-string v0, "OnePlusDuallteManager"
-
-    invoke-static {v0, p1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    new-instance p1, Ljava/lang/StringBuilder;
-
-    invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v0, "[OnlineConfig] resolveConfigFromJSON operateDelayTime:"
-
-    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    sget-wide v0, Lcom/android/server/am/ivd;->hr:J
-
-    invoke-virtual {p1, v0, v1}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p1
-
-    const-string v0, "OnePlusDuallteManager"
-
-    invoke-static {v0, p1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    new-instance p1, Ljava/lang/StringBuilder;
-
-    invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
-
-    goto :goto_5
-
-    :catch_1
-    move-exception p1
-
-    :try_start_4
-    const-string v0, "OnePlusDuallteManager"
-
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v2, "[OnlineConfig] JSONException:"
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p1}, Lorg/json/JSONException;->getMessage()Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-static {v0, v1}, Landroid/util/Slog;->e(Ljava/lang/String;Ljava/lang/String;)I
-
-    invoke-virtual {p1}, Lorg/json/JSONException;->printStackTrace()V
-    :try_end_4
-    .catchall {:try_start_4 .. :try_end_4} :catchall_1
-
-    new-instance p1, Ljava/lang/StringBuilder;
-
-    invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v0, "[OnlineConfig] resolveConfigFromJSON sEnable:"
-
-    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    sget-boolean v0, Lcom/android/server/am/ivd;->sEnable:Z
-
-    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p1
-
-    const-string v0, "OnePlusDuallteManager"
-
-    invoke-static {v0, p1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    new-instance p1, Ljava/lang/StringBuilder;
-
-    invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v0, "[OnlineConfig] resolveConfigFromJSON operateDelayTime:"
-
-    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    sget-wide v0, Lcom/android/server/am/ivd;->hr:J
-
-    invoke-virtual {p1, v0, v1}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p1
-
-    const-string v0, "OnePlusDuallteManager"
-
-    invoke-static {v0, p1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    new-instance p1, Ljava/lang/StringBuilder;
-
-    invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
-
-    goto/16 :goto_5
-
-    :goto_6
-    return-void
-
-    :goto_7
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v1, "[OnlineConfig] resolveConfigFromJSON sEnable:"
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    sget-boolean v1, Lcom/android/server/am/ivd;->sEnable:Z
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    const-string v1, "OnePlusDuallteManager"
-
-    invoke-static {v1, v0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v1, "[OnlineConfig] resolveConfigFromJSON operateDelayTime:"
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    sget-wide v1, Lcom/android/server/am/ivd;->hr:J
-
-    invoke-virtual {v0, v1, v2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    const-string v1, "OnePlusDuallteManager"
-
-    invoke-static {v1, v0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v1, "[OnlineConfig] resolveConfigFromJSON mSpecialGameList:"
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget-object p0, p0, Lcom/android/server/am/ivd;->Tq:Ljava/util/List;
-
-    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p0
-
-    const-string v0, "OnePlusDuallteManager"
-
-    invoke-static {v0, p0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    throw p1
-.end method
-
 .method static synthetic rtg(Lcom/android/server/am/ivd;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/am/ivd;->bn()V
+    invoke-direct {p0}, Lcom/android/server/am/ivd;->rn()V
 
     return-void
 .end method
@@ -2170,7 +2170,7 @@
 .method static synthetic sis(Lcom/android/server/am/ivd;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/am/ivd;->Rc()V
+    invoke-direct {p0}, Lcom/android/server/am/ivd;->Yc()V
 
     return-void
 .end method
@@ -2178,7 +2178,7 @@
 .method static synthetic ssp(Lcom/android/server/am/ivd;)Landroid/telephony/TelephonyManager;
     .locals 0
 
-    iget-object p0, p0, Lcom/android/server/am/ivd;->Wq:Landroid/telephony/TelephonyManager;
+    iget-object p0, p0, Lcom/android/server/am/ivd;->Br:Landroid/telephony/TelephonyManager;
 
     return-object p0
 .end method
@@ -2186,12 +2186,12 @@
 .method static synthetic tsu(Lcom/android/server/am/ivd;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/am/ivd;->Wm()V
+    invoke-direct {p0}, Lcom/android/server/am/ivd;->ln()V
 
     return-void
 .end method
 
-.method private ua(Z)Z
+.method private wa(Z)Z
     .locals 7
 
     sget-boolean v0, Lcom/android/server/am/ivd;->DBG:Z
@@ -2231,7 +2231,7 @@
     iput-object v2, p0, Lcom/android/server/am/ivd;->method:Ljava/lang/reflect/Method;
 
     :cond_1
-    iget-object v2, p0, Lcom/android/server/am/ivd;->Vq:Ljava/lang/Object;
+    iget-object v2, p0, Lcom/android/server/am/ivd;->Ar:Ljava/lang/Object;
 
     if-nez v2, :cond_2
 
@@ -2239,14 +2239,14 @@
 
     move-result-object v2
 
-    iput-object v2, p0, Lcom/android/server/am/ivd;->Vq:Ljava/lang/Object;
+    iput-object v2, p0, Lcom/android/server/am/ivd;->Ar:Ljava/lang/Object;
 
     :cond_2
     iget-object v2, p0, Lcom/android/server/am/ivd;->method:Ljava/lang/reflect/Method;
 
     if-eqz v2, :cond_6
 
-    iget-object v2, p0, Lcom/android/server/am/ivd;->Vq:Ljava/lang/Object;
+    iget-object v2, p0, Lcom/android/server/am/ivd;->Ar:Ljava/lang/Object;
 
     if-nez v2, :cond_3
 
@@ -2259,13 +2259,13 @@
 
     invoke-virtual {v2, v3}, Ljava/lang/reflect/Method;->setAccessible(Z)V
 
-    iget-boolean v2, p0, Lcom/android/server/am/ivd;->Yq:Z
+    iget-boolean v2, p0, Lcom/android/server/am/ivd;->Dr:Z
 
     if-nez v2, :cond_4
 
     iget-object v2, p0, Lcom/android/server/am/ivd;->method:Ljava/lang/reflect/Method;
 
-    iget-object v4, p0, Lcom/android/server/am/ivd;->Vq:Ljava/lang/Object;
+    iget-object v4, p0, Lcom/android/server/am/ivd;->Ar:Ljava/lang/Object;
 
     const/4 v5, 0x2
 
@@ -2288,7 +2288,7 @@
     :cond_4
     if-eqz p1, :cond_5
 
-    iput-boolean v0, p0, Lcom/android/server/am/ivd;->Rq:Z
+    iput-boolean v0, p0, Lcom/android/server/am/ivd;->wr:Z
 
     const-string p1, "persist.radio.duallte.operated"
 
@@ -2363,7 +2363,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lcom/android/server/am/ivd;->Qq:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/server/am/ivd;->vr:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -2376,7 +2376,7 @@
     invoke-static {v1, v0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_0
-    sget-boolean v0, Lcom/android/server/am/ivd;->mr:Z
+    sget-boolean v0, Lcom/android/server/am/ivd;->Sr:Z
 
     invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
 
@@ -2388,21 +2388,21 @@
 
     move-result p1
 
-    sput-boolean p1, Lcom/android/server/am/ivd;->mr:Z
+    sput-boolean p1, Lcom/android/server/am/ivd;->Sr:Z
 
-    sget-boolean p1, Lcom/android/server/am/ivd;->mr:Z
+    sget-boolean p1, Lcom/android/server/am/ivd;->Sr:Z
 
     if-eqz p1, :cond_1
 
-    sget-boolean p1, Lcom/android/server/am/ivd;->lr:Z
+    sget-boolean p1, Lcom/android/server/am/ivd;->Rr:Z
 
     if-eqz p1, :cond_2
 
-    iget-object p1, p0, Lcom/android/server/am/ivd;->Sq:Landroid/os/Handler;
+    iget-object p1, p0, Lcom/android/server/am/ivd;->xr:Landroid/os/Handler;
 
     const/4 v0, 0x1
 
-    iget-object v1, p0, Lcom/android/server/am/ivd;->Qq:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/server/am/ivd;->vr:Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -2410,14 +2410,14 @@
 
     move-result-object p1
 
-    iget-object p0, p0, Lcom/android/server/am/ivd;->Sq:Landroid/os/Handler;
+    iget-object p0, p0, Lcom/android/server/am/ivd;->xr:Landroid/os/Handler;
 
     invoke-virtual {p0, p1}, Landroid/os/Handler;->sendMessage(Landroid/os/Message;)Z
 
     goto :goto_0
 
     :cond_1
-    invoke-direct {p0}, Lcom/android/server/am/ivd;->an()V
+    invoke-direct {p0}, Lcom/android/server/am/ivd;->qn()V
 
     :cond_2
     :goto_0
@@ -2427,7 +2427,7 @@
 .method static synthetic zta(Lcom/android/server/am/ivd;Landroid/telephony/TelephonyManager;)Landroid/telephony/TelephonyManager;
     .locals 0
 
-    iput-object p1, p0, Lcom/android/server/am/ivd;->Wq:Landroid/telephony/TelephonyManager;
+    iput-object p1, p0, Lcom/android/server/am/ivd;->Br:Landroid/telephony/TelephonyManager;
 
     return-object p1
 .end method
@@ -2435,7 +2435,7 @@
 .method static synthetic zta(Lcom/android/server/am/ivd;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/am/ivd;->Xm()V
+    invoke-direct {p0}, Lcom/android/server/am/ivd;->mn()V
 
     return-void
 .end method
@@ -2451,7 +2451,7 @@
 .method static synthetic zta(Lcom/android/server/am/ivd;Ljava/lang/String;)V
     .locals 0
 
-    invoke-direct {p0, p1}, Lcom/android/server/am/ivd;->Gb(Ljava/lang/String;)V
+    invoke-direct {p0, p1}, Lcom/android/server/am/ivd;->Ib(Ljava/lang/String;)V
 
     return-void
 .end method
@@ -2485,7 +2485,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lcom/android/server/am/ivd;->Qq:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/server/am/ivd;->vr:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -2498,7 +2498,7 @@
     invoke-static {v1, v0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_0
-    sget-boolean v0, Lcom/android/server/am/ivd;->lr:Z
+    sget-boolean v0, Lcom/android/server/am/ivd;->Rr:Z
 
     invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
 
@@ -2510,21 +2510,21 @@
 
     move-result p1
 
-    sput-boolean p1, Lcom/android/server/am/ivd;->lr:Z
+    sput-boolean p1, Lcom/android/server/am/ivd;->Rr:Z
 
-    sget-boolean p1, Lcom/android/server/am/ivd;->lr:Z
+    sget-boolean p1, Lcom/android/server/am/ivd;->Rr:Z
 
     if-eqz p1, :cond_1
 
-    sget-boolean p1, Lcom/android/server/am/ivd;->mr:Z
+    sget-boolean p1, Lcom/android/server/am/ivd;->Sr:Z
 
     if-eqz p1, :cond_2
 
-    iget-object p1, p0, Lcom/android/server/am/ivd;->Sq:Landroid/os/Handler;
+    iget-object p1, p0, Lcom/android/server/am/ivd;->xr:Landroid/os/Handler;
 
     const/4 v0, 0x1
 
-    iget-object v1, p0, Lcom/android/server/am/ivd;->Qq:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/server/am/ivd;->vr:Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -2532,14 +2532,14 @@
 
     move-result-object p1
 
-    iget-object p0, p0, Lcom/android/server/am/ivd;->Sq:Landroid/os/Handler;
+    iget-object p0, p0, Lcom/android/server/am/ivd;->xr:Landroid/os/Handler;
 
     invoke-virtual {p0, p1}, Landroid/os/Handler;->sendMessage(Landroid/os/Message;)Z
 
     goto :goto_0
 
     :cond_1
-    invoke-direct {p0}, Lcom/android/server/am/ivd;->an()V
+    invoke-direct {p0}, Lcom/android/server/am/ivd;->qn()V
 
     :cond_2
     :goto_0
@@ -2549,7 +2549,7 @@
 .method static synthetic zta(Lcom/android/server/am/ivd;Z)Z
     .locals 0
 
-    invoke-direct {p0, p1}, Lcom/android/server/am/ivd;->ua(Z)Z
+    invoke-direct {p0, p1}, Lcom/android/server/am/ivd;->wa(Z)Z
 
     move-result p0
 
@@ -2558,91 +2558,6 @@
 
 
 # virtual methods
-.method public cgv(Z)V
-    .locals 3
-
-    monitor-enter p0
-
-    :try_start_0
-    sget-boolean v0, Lcom/android/server/am/ivd;->DBG:Z
-
-    if-eqz v0, :cond_0
-
-    const-string v0, "OnePlusDuallteManager"
-
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v2, "updateEsportModeStatus  | sEnable:"
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    sget-boolean v2, Lcom/android/server/am/ivd;->sEnable:Z
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
-
-    const-string v2, " |inEsportMode: "
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget-boolean v2, p0, Lcom/android/server/am/ivd;->Yq:Z
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
-
-    const-string v2, " |enable: "
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-static {v0, v1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    :cond_0
-    iget-boolean v0, p0, Lcom/android/server/am/ivd;->Yq:Z
-
-    if-ne v0, p1, :cond_1
-
-    monitor-exit p0
-
-    return-void
-
-    :cond_1
-    iput-boolean p1, p0, Lcom/android/server/am/ivd;->Yq:Z
-
-    iget-boolean p1, p0, Lcom/android/server/am/ivd;->Yq:Z
-
-    if-nez p1, :cond_2
-
-    invoke-static {}, Lcom/android/server/OnePlusUtil$zta;->getInstance()Lcom/android/server/OnePlusUtil$zta;
-
-    move-result-object p1
-
-    invoke-virtual {p1}, Lcom/android/server/OnePlusUtil$zta;->z()Ljava/lang/String;
-
-    move-result-object p1
-
-    invoke-virtual {p0, p1}, Lcom/android/server/am/ivd;->n(Ljava/lang/String;)V
-
-    :cond_2
-    monitor-exit p0
-
-    return-void
-
-    :catchall_0
-    move-exception p1
-
-    monitor-exit p0
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    throw p1
-.end method
-
 .method public frontPackageChanged(Ljava/lang/String;IILjava/lang/String;II)V
     .locals 0
 
@@ -2690,7 +2605,7 @@
     invoke-static {p3, p2}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_1
-    invoke-virtual {p0, p1}, Lcom/android/server/am/ivd;->n(Ljava/lang/String;)V
+    invoke-virtual {p0, p1}, Lcom/android/server/am/ivd;->o(Ljava/lang/String;)V
 
     :cond_2
     return-void
@@ -2703,7 +2618,7 @@
 
     iget-object v1, p0, Lcom/android/server/am/ivd;->mContext:Landroid/content/Context;
 
-    iget-object v2, p0, Lcom/android/server/am/ivd;->Sq:Landroid/os/Handler;
+    iget-object v2, p0, Lcom/android/server/am/ivd;->xr:Landroid/os/Handler;
 
     new-instance v3, Lcom/android/server/am/ivd$zta;
 
@@ -2713,13 +2628,13 @@
 
     invoke-direct {v0, v1, v2, v3, v4}, Lcom/oneplus/config/ConfigObserver;-><init>(Landroid/content/Context;Landroid/os/Handler;Lcom/oneplus/config/ConfigObserver$ConfigUpdater;Ljava/lang/String;)V
 
-    iput-object v0, p0, Lcom/android/server/am/ivd;->Uq:Lcom/oneplus/config/ConfigObserver;
+    iput-object v0, p0, Lcom/android/server/am/ivd;->zr:Lcom/oneplus/config/ConfigObserver;
 
-    iget-object v0, p0, Lcom/android/server/am/ivd;->Uq:Lcom/oneplus/config/ConfigObserver;
+    iget-object v0, p0, Lcom/android/server/am/ivd;->zr:Lcom/oneplus/config/ConfigObserver;
 
     invoke-virtual {v0}, Lcom/oneplus/config/ConfigObserver;->register()V
 
-    iget-object p0, p0, Lcom/android/server/am/ivd;->Sq:Landroid/os/Handler;
+    iget-object p0, p0, Lcom/android/server/am/ivd;->xr:Landroid/os/Handler;
 
     const/4 v0, 0x3
 
@@ -2734,7 +2649,7 @@
     return-void
 .end method
 
-.method public n(Ljava/lang/String;)V
+.method public o(Ljava/lang/String;)V
     .locals 3
 
     sget-boolean v0, Lcom/android/server/am/ivd;->sEnable:Z
@@ -2762,7 +2677,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lcom/android/server/am/ivd;->Qq:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/server/am/ivd;->vr:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -2775,7 +2690,7 @@
     invoke-static {v1, v0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_1
-    iput-object p1, p0, Lcom/android/server/am/ivd;->Qq:Ljava/lang/String;
+    iput-object p1, p0, Lcom/android/server/am/ivd;->vr:Ljava/lang/String;
 
     iget-boolean v0, p0, Lcom/android/server/am/ivd;->screenOn:Z
 
@@ -2794,13 +2709,13 @@
     return-void
 
     :cond_3
-    invoke-direct {p0}, Lcom/android/server/am/ivd;->_m()Z
+    invoke-direct {p0}, Lcom/android/server/am/ivd;->pn()Z
 
     move-result v0
 
     if-eqz v0, :cond_4
 
-    iget-object v0, p0, Lcom/android/server/am/ivd;->Sq:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/android/server/am/ivd;->xr:Landroid/os/Handler;
 
     const/4 v1, 0x1
 
@@ -2810,7 +2725,7 @@
 
     move-result-object p1
 
-    iget-object p0, p0, Lcom/android/server/am/ivd;->Sq:Landroid/os/Handler;
+    iget-object p0, p0, Lcom/android/server/am/ivd;->xr:Landroid/os/Handler;
 
     invoke-virtual {p0, p1}, Landroid/os/Handler;->sendMessage(Landroid/os/Message;)Z
 
@@ -2854,7 +2769,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lcom/android/server/am/ivd;->Qq:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/server/am/ivd;->vr:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -2883,18 +2798,103 @@
 
     iget-object p1, p0, Lcom/android/server/am/ivd;->offScreenPkgName:Ljava/lang/String;
 
-    invoke-virtual {p0, p1}, Lcom/android/server/am/ivd;->n(Ljava/lang/String;)V
+    invoke-virtual {p0, p1}, Lcom/android/server/am/ivd;->o(Ljava/lang/String;)V
 
     iput-object v0, p0, Lcom/android/server/am/ivd;->offScreenPkgName:Ljava/lang/String;
 
     goto :goto_0
 
     :cond_2
-    iget-object p1, p0, Lcom/android/server/am/ivd;->Qq:Ljava/lang/String;
+    iget-object p1, p0, Lcom/android/server/am/ivd;->vr:Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/server/am/ivd;->offScreenPkgName:Ljava/lang/String;
 
     :cond_3
     :goto_0
     return-void
+.end method
+
+.method public vju(Z)V
+    .locals 3
+
+    monitor-enter p0
+
+    :try_start_0
+    sget-boolean v0, Lcom/android/server/am/ivd;->DBG:Z
+
+    if-eqz v0, :cond_0
+
+    const-string v0, "OnePlusDuallteManager"
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v2, "updateEsportModeStatus  | sEnable:"
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    sget-boolean v2, Lcom/android/server/am/ivd;->sEnable:Z
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    const-string v2, " |inEsportMode: "
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-boolean v2, p0, Lcom/android/server/am/ivd;->Dr:Z
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    const-string v2, " |enable: "
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-static {v0, v1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    :cond_0
+    iget-boolean v0, p0, Lcom/android/server/am/ivd;->Dr:Z
+
+    if-ne v0, p1, :cond_1
+
+    monitor-exit p0
+
+    return-void
+
+    :cond_1
+    iput-boolean p1, p0, Lcom/android/server/am/ivd;->Dr:Z
+
+    iget-boolean p1, p0, Lcom/android/server/am/ivd;->Dr:Z
+
+    if-nez p1, :cond_2
+
+    invoke-static {}, Lcom/android/server/OnePlusUtil$zta;->getInstance()Lcom/android/server/OnePlusUtil$zta;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Lcom/android/server/OnePlusUtil$zta;->z()Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-virtual {p0, p1}, Lcom/android/server/am/ivd;->o(Ljava/lang/String;)V
+
+    :cond_2
+    monitor-exit p0
+
+    return-void
+
+    :catchall_0
+    move-exception p1
+
+    monitor-exit p0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    throw p1
 .end method

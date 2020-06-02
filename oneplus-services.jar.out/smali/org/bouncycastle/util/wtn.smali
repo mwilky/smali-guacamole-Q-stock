@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lorg/bouncycastle/util/gck;->hd(Ljava/lang/String;)Ljava/lang/String;
+    value = Lorg/bouncycastle/util/gck;->ld(Ljava/lang/String;)Ljava/lang/String;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field final synthetic YFa:Ljava/lang/String;
+.field final synthetic lIa:Ljava/lang/String;
 
 
 # direct methods
 .method constructor <init>(Ljava/lang/String;)V
     .locals 0
 
-    iput-object p1, p0, Lorg/bouncycastle/util/wtn;->YFa:Ljava/lang/String;
+    iput-object p1, p0, Lorg/bouncycastle/util/wtn;->lIa:Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -47,7 +47,7 @@
 
     check-cast v0, Ljava/util/Map;
 
-    iget-object p0, p0, Lorg/bouncycastle/util/wtn;->YFa:Ljava/lang/String;
+    iget-object p0, p0, Lorg/bouncycastle/util/wtn;->lIa:Ljava/lang/String;
 
     if-eqz v0, :cond_0
 

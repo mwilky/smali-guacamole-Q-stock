@@ -4,7 +4,7 @@
 
 
 # static fields
-.field static final Poa:Ljava/lang/Class;
+.field static final cra:Ljava/lang/Class;
 
 
 # direct methods
@@ -19,7 +19,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lorg/bouncycastle/jcajce/you/tsu/cno;->Poa:Ljava/lang/Class;
+    sput-object v0, Lorg/bouncycastle/jcajce/you/tsu/cno;->cra:Ljava/lang/Class;
 
     return-void
 .end method
@@ -30,6 +30,24 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
+.end method
+
+.method static Ij()Z
+    .locals 1
+
+    sget-object v0, Lorg/bouncycastle/jcajce/you/tsu/cno;->cra:Ljava/lang/Class;
+
+    if-eqz v0, :cond_0
+
+    const/4 v0, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    :goto_0
+    return v0
 .end method
 
 .method static sis(Lorg/bouncycastle/asn1/vdb;)Ljava/security/spec/AlgorithmParameterSpec;
@@ -45,7 +63,7 @@
 
     move-result-object p0
 
-    sget-object v0, Lorg/bouncycastle/jcajce/you/tsu/cno;->Poa:Ljava/lang/Class;
+    sget-object v0, Lorg/bouncycastle/jcajce/you/tsu/cno;->cra:Ljava/lang/Class;
 
     const/4 v1, 0x2
 
@@ -69,7 +87,7 @@
 
     new-array v1, v1, [Ljava/lang/Object;
 
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/you/kth;->Sg()I
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/you/kth;->ah()I
 
     move-result v2
 
@@ -138,7 +156,7 @@
 .method static you(Ljava/lang/Class;)Z
     .locals 1
 
-    sget-object v0, Lorg/bouncycastle/jcajce/you/tsu/cno;->Poa:Ljava/lang/Class;
+    sget-object v0, Lorg/bouncycastle/jcajce/you/tsu/cno;->cra:Ljava/lang/Class;
 
     if-ne v0, p0, :cond_0
 
@@ -156,7 +174,7 @@
 .method static you(Ljava/security/spec/AlgorithmParameterSpec;)Z
     .locals 1
 
-    sget-object v0, Lorg/bouncycastle/jcajce/you/tsu/cno;->Poa:Ljava/lang/Class;
+    sget-object v0, Lorg/bouncycastle/jcajce/you/tsu/cno;->cra:Ljava/lang/Class;
 
     if-eqz v0, :cond_0
 
@@ -177,24 +195,6 @@
     return p0
 .end method
 
-.method static zj()Z
-    .locals 1
-
-    sget-object v0, Lorg/bouncycastle/jcajce/you/tsu/cno;->Poa:Ljava/lang/Class;
-
-    if-eqz v0, :cond_0
-
-    const/4 v0, 0x1
-
-    goto :goto_0
-
-    :cond_0
-    const/4 v0, 0x0
-
-    :goto_0
-    return v0
-.end method
-
 .method static zta(Ljava/security/spec/AlgorithmParameterSpec;)Lorg/bouncycastle/asn1/you/kth;
     .locals 5
     .annotation system Ldalvik/annotation/Throws;
@@ -204,7 +204,7 @@
     .end annotation
 
     :try_start_0
-    sget-object v0, Lorg/bouncycastle/jcajce/you/tsu/cno;->Poa:Ljava/lang/Class;
+    sget-object v0, Lorg/bouncycastle/jcajce/you/tsu/cno;->cra:Ljava/lang/Class;
 
     const-string v1, "getTLen"
 
@@ -216,7 +216,7 @@
 
     move-result-object v0
 
-    sget-object v1, Lorg/bouncycastle/jcajce/you/tsu/cno;->Poa:Ljava/lang/Class;
+    sget-object v1, Lorg/bouncycastle/jcajce/you/tsu/cno;->cra:Ljava/lang/Class;
 
     const-string v3, "getIV"
 

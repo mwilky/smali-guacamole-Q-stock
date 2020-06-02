@@ -16,36 +16,6 @@
     return-void
 .end method
 
-.method public static _k()[J
-    .locals 1
-
-    const/4 v0, 0x4
-
-    new-array v0, v0, [J
-
-    return-object v0
-.end method
-
-.method public static al()[I
-    .locals 1
-
-    const/16 v0, 0x10
-
-    new-array v0, v0, [I
-
-    return-object v0
-.end method
-
-.method public static bl()[J
-    .locals 1
-
-    const/16 v0, 0x8
-
-    new-array v0, v0, [J
-
-    return-object v0
-.end method
-
 .method public static cjf(Ljava/math/BigInteger;)[J
     .locals 5
 
@@ -63,7 +33,7 @@
 
     if-gt v0, v1, :cond_1
 
-    invoke-static {}, Lyou/zta/sis/sis/rtg;->_k()[J
+    invoke-static {}, Lyou/zta/sis/sis/rtg;->il()[J
 
     move-result-object v0
 
@@ -2109,6 +2079,36 @@
     move v8, v10
 
     goto/16 :goto_0
+.end method
+
+.method public static il()[J
+    .locals 1
+
+    const/4 v0, 0x4
+
+    new-array v0, v0, [J
+
+    return-object v0
+.end method
+
+.method public static jl()[I
+    .locals 1
+
+    const/16 v0, 0x10
+
+    new-array v0, v0, [I
+
+    return-object v0
+.end method
+
+.method public static kl()[J
+    .locals 1
+
+    const/16 v0, 0x8
+
+    new-array v0, v0, [J
+
+    return-object v0
 .end method
 
 .method public static kth(I[I)I

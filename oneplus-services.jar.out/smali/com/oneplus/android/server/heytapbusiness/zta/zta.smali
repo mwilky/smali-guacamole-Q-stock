@@ -3,7 +3,7 @@
 .source ""
 
 # interfaces
-.implements Lcom/oneplus/android/server/heytapbusiness/zta;
+.implements Lcom/oneplus/android/server/heytapbusiness/you;
 
 
 # annotations
@@ -17,17 +17,17 @@
         "Ljava/lang/Object;",
         ">",
         "Ljava/lang/Object;",
-        "Lcom/oneplus/android/server/heytapbusiness/zta;"
+        "Lcom/oneplus/android/server/heytapbusiness/you;"
     }
 .end annotation
 
 
 # static fields
-.field protected static final Ida:Ljava/lang/String; = "com.nearme.instant.platform"
+.field protected static final ifa:Ljava/lang/String; = "com.nearme.instant.platform"
 
-.field protected static final Jda:Ljava/lang/String; = "miniprogram"
+.field protected static final jfa:Ljava/lang/String; = "miniprogram"
 
-.field protected static final Kda:I = 0x14
+.field protected static final kfa:I = 0x14
 
 
 # instance fields
@@ -58,10 +58,10 @@
 
 
 # virtual methods
-.method public abstract _e()Ljava/lang/String;
+.method public abstract dump(Ljava/io/PrintWriter;)V
 .end method
 
-.method public abstract dump(Ljava/io/PrintWriter;)V
+.method public abstract if()Ljava/lang/String;
 .end method
 
 .method public abstract rtg(Ljava/lang/Object;)Ljava/lang/Object;

@@ -54,7 +54,7 @@
 
     move-result-object p1
 
-    invoke-virtual {p1, p2, p3}, Lcom/oneplus/android/server/openid/cno;->you(Ljava/io/PrintWriter;[Ljava/lang/String;)V
+    invoke-virtual {p1, p2, p3}, Lcom/oneplus/android/server/openid/cno;->sis(Ljava/io/PrintWriter;[Ljava/lang/String;)V
 
     invoke-virtual {p2}, Ljava/io/PrintWriter;->println()V
 
@@ -66,7 +66,7 @@
 
     move-result-object p0
 
-    invoke-virtual {p0, p2, p3}, Lcom/oneplus/android/server/openid/kth;->sis(Ljava/io/PrintWriter;[Ljava/lang/String;)V
+    invoke-virtual {p0, p2, p3}, Lcom/oneplus/android/server/openid/kth;->tsu(Ljava/io/PrintWriter;[Ljava/lang/String;)V
 
     goto :goto_2
 
@@ -131,7 +131,7 @@
 
     move-result-object p0
 
-    invoke-virtual {p0, p2, p3}, Lcom/oneplus/android/server/openid/cno;->you(Ljava/io/PrintWriter;[Ljava/lang/String;)V
+    invoke-virtual {p0, p2, p3}, Lcom/oneplus/android/server/openid/cno;->sis(Ljava/io/PrintWriter;[Ljava/lang/String;)V
 
     goto :goto_2
 

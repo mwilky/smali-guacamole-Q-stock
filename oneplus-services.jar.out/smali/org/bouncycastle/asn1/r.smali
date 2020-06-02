@@ -46,7 +46,7 @@
 
 
 # virtual methods
-.method ug()I
+.method Dg()I
     .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -75,7 +75,7 @@
 
     invoke-direct {v0}, Ljava/io/ByteArrayOutputStream;-><init>()V
 
-    iget-object v1, p0, Lorg/bouncycastle/asn1/igw;->Qpa:Lorg/bouncycastle/asn1/bvj;
+    iget-object v1, p0, Lorg/bouncycastle/asn1/igw;->dsa:Lorg/bouncycastle/asn1/bvj;
 
     const-string v2, "DER"
 
@@ -88,7 +88,7 @@
     invoke-virtual {v0, v1}, Ljava/io/ByteArrayOutputStream;->write([B)V
 
     :cond_0
-    iget-object v1, p0, Lorg/bouncycastle/asn1/igw;->Rpa:Lorg/bouncycastle/asn1/ywr;
+    iget-object v1, p0, Lorg/bouncycastle/asn1/igw;->esa:Lorg/bouncycastle/asn1/ywr;
 
     if-eqz v1, :cond_1
 
@@ -99,7 +99,7 @@
     invoke-virtual {v0, v1}, Ljava/io/ByteArrayOutputStream;->write([B)V
 
     :cond_1
-    iget-object v1, p0, Lorg/bouncycastle/asn1/igw;->Spa:Lorg/bouncycastle/asn1/vdb;
+    iget-object v1, p0, Lorg/bouncycastle/asn1/igw;->fsa:Lorg/bouncycastle/asn1/vdb;
 
     if-eqz v1, :cond_2
 
@@ -116,7 +116,7 @@
 
     iget v4, p0, Lorg/bouncycastle/asn1/igw;->encoding:I
 
-    iget-object p0, p0, Lorg/bouncycastle/asn1/igw;->Tpa:Lorg/bouncycastle/asn1/vdb;
+    iget-object p0, p0, Lorg/bouncycastle/asn1/igw;->gsa:Lorg/bouncycastle/asn1/vdb;
 
     invoke-direct {v1, v3, v4, p0}, Lorg/bouncycastle/asn1/L;-><init>(ZILorg/bouncycastle/asn1/ssp;)V
 

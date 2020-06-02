@@ -4,9 +4,9 @@
 
 
 # static fields
-.field private static final XAa:I = -0x1f000000
+.field private static final kDa:I = -0x1f000000
 
-.field private static final YAa:J = -0x1f00000000000000L
+.field private static final lDa:J = -0x1f00000000000000L
 
 
 # direct methods
@@ -164,70 +164,6 @@
     return-void
 .end method
 
-.method public static ej()[B
-    .locals 3
-
-    const/16 v0, 0x10
-
-    new-array v0, v0, [B
-
-    const/4 v1, 0x0
-
-    const/16 v2, -0x80
-
-    aput-byte v2, v0, v1
-
-    return-object v0
-.end method
-
-.method public static fj()[I
-    .locals 3
-
-    const/4 v0, 0x4
-
-    new-array v0, v0, [I
-
-    const/4 v1, 0x0
-
-    const/high16 v2, -0x80000000
-
-    aput v2, v0, v1
-
-    return-object v0
-.end method
-
-.method public static gj()[J
-    .locals 4
-
-    const/4 v0, 0x2
-
-    new-array v0, v0, [J
-
-    const/4 v1, 0x0
-
-    const-wide/high16 v2, -0x8000000000000000L
-
-    aput-wide v2, v0, v1
-
-    return-object v0
-.end method
-
-.method public static hj()[J
-    .locals 4
-
-    const/4 v0, 0x2
-
-    new-array v0, v0, [J
-
-    const/4 v1, 0x0
-
-    const-wide/high16 v2, 0x4000000000000000L    # 2.0
-
-    aput-wide v2, v0, v1
-
-    return-object v0
-.end method
-
 .method public static igw([J[J)V
     .locals 5
 
@@ -304,6 +240,22 @@
     return-void
 .end method
 
+.method public static nj()[B
+    .locals 3
+
+    const/16 v0, 0x10
+
+    new-array v0, v0, [B
+
+    const/4 v1, 0x0
+
+    const/16 v2, -0x80
+
+    aput-byte v2, v0, v1
+
+    return-object v0
+.end method
+
 .method public static oif([B)[J
     .locals 2
 
@@ -318,6 +270,38 @@
     return-object v0
 .end method
 
+.method public static oj()[I
+    .locals 3
+
+    const/4 v0, 0x4
+
+    new-array v0, v0, [I
+
+    const/4 v1, 0x0
+
+    const/high16 v2, -0x80000000
+
+    aput v2, v0, v1
+
+    return-object v0
+.end method
+
+.method public static pj()[J
+    .locals 4
+
+    const/4 v0, 0x2
+
+    new-array v0, v0, [J
+
+    const/4 v1, 0x0
+
+    const-wide/high16 v2, -0x8000000000000000L
+
+    aput-wide v2, v0, v1
+
+    return-object v0
+.end method
+
 .method public static qbh([B)[I
     .locals 2
 
@@ -328,6 +312,22 @@
     const/4 v1, 0x0
 
     invoke-static {p0, v1, v0}, Lorg/bouncycastle/util/igw;->zta([BI[I)V
+
+    return-object v0
+.end method
+
+.method public static qj()[J
+    .locals 4
+
+    const/4 v0, 0x2
+
+    new-array v0, v0, [J
+
+    const/4 v1, 0x0
+
+    const-wide/high16 v2, 0x4000000000000000L    # 2.0
+
+    aput-wide v2, v0, v1
 
     return-object v0
 .end method

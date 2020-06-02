@@ -93,7 +93,7 @@
     :goto_0
     iget-object p0, p0, Lcom/android/server/am/vju;->this$0:Lcom/android/server/am/irq;
 
-    invoke-static {p0}, Lcom/android/server/am/irq;->cno(Lcom/android/server/am/irq;)Landroid/content/Context;
+    invoke-static {p0}, Lcom/android/server/am/irq;->kth(Lcom/android/server/am/irq;)Landroid/content/Context;
 
     move-result-object p0
 

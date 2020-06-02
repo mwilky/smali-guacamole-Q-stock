@@ -22,7 +22,7 @@
     new-array v0, v0, [B
 
     :cond_0
-    iget-object v1, p0, Lorg/bouncycastle/crypto/cno;->xma:Ljava/security/SecureRandom;
+    iget-object v1, p0, Lorg/bouncycastle/crypto/cno;->Moa:Ljava/security/SecureRandom;
 
     invoke-virtual {v1, v0}, Ljava/security/SecureRandom;->nextBytes([B)V
 

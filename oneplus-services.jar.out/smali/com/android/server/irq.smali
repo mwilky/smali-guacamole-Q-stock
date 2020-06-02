@@ -20,33 +20,35 @@
 
 .field private static final DEBUG:Z
 
-.field private static final Re:Z = false
-
-.field private static final Se:Ljava/lang/String; = "BatteryLed"
-
 .field private static final TAG:Ljava/lang/String; = "FastCharge"
 
-.field private static final Te:Ljava/lang/String; = "/sys/class/power_supply/battery/fastchg_status"
+.field private static final lf:Z = false
 
-.field private static final Ue:Ljava/lang/String; = "/proc/enhance_dash"
+.field private static mContext:Landroid/content/Context; = null
 
-.field private static Ve:Lcom/android/server/irq$zta;
+.field private static final mf:Ljava/lang/String; = "BatteryLed"
 
-.field private static mContext:Landroid/content/Context;
+.field private static final nf:Ljava/lang/String; = "/sys/class/power_supply/battery/fastchg_status"
+
+.field private static final of:Ljava/lang/String; = "/proc/enhance_dash"
+
+.field private static final pf:Ljava/lang/String; = "sys/class/power_supply/usb/real_type"
+
+.field private static qf:Lcom/android/server/irq$zta;
 
 
 # instance fields
-.field private Le:Z
+.field private ff:Z
 
-.field private Me:Z
+.field private gf:Z
 
-.field private Ne:Z
+.field private hf:Z
 
-.field private Oe:Z
+.field private if:Z
 
-.field private Pe:Z
+.field private jf:Z
 
-.field private Qe:Z
+.field private kf:Z
 
 .field private mBatteryLevel:I
 
@@ -84,79 +86,7 @@
     return-void
 .end method
 
-.method static synthetic access$100()Lcom/android/server/irq$zta;
-    .locals 1
-
-    sget-object v0, Lcom/android/server/irq;->Ve:Lcom/android/server/irq$zta;
-
-    return-object v0
-.end method
-
-.method static synthetic access$500()Landroid/content/Context;
-    .locals 1
-
-    sget-object v0, Lcom/android/server/irq;->mContext:Landroid/content/Context;
-
-    return-object v0
-.end method
-
-.method static synthetic bio(Lcom/android/server/irq;)I
-    .locals 0
-
-    iget p0, p0, Lcom/android/server/irq;->mBatteryLevel:I
-
-    return p0
-.end method
-
-.method static synthetic cno(Lcom/android/server/irq;)V
-    .locals 0
-
-    invoke-direct {p0}, Lcom/android/server/irq;->yl()V
-
-    return-void
-.end method
-
-.method static synthetic kth(Lcom/android/server/irq;)I
-    .locals 0
-
-    iget p0, p0, Lcom/android/server/irq;->mPlugType:I
-
-    return p0
-.end method
-
-.method static synthetic rtg(Lcom/android/server/irq;)Z
-    .locals 0
-
-    iget-boolean p0, p0, Lcom/android/server/irq;->Me:Z
-
-    return p0
-.end method
-
-.method static synthetic sis(Lcom/android/server/irq;)I
-    .locals 0
-
-    iget p0, p0, Lcom/android/server/irq;->mDefLowBatteryWarningLevel:I
-
-    return p0
-.end method
-
-.method static synthetic ssp(Lcom/android/server/irq;)Ljava/lang/Object;
-    .locals 0
-
-    iget-object p0, p0, Lcom/android/server/irq;->mLock:Ljava/lang/Object;
-
-    return-object p0
-.end method
-
-.method static synthetic tsu(Lcom/android/server/irq;)Z
-    .locals 0
-
-    iget-boolean p0, p0, Lcom/android/server/irq;->Ne:Z
-
-    return p0
-.end method
-
-.method private wl()I
+.method private Hl()I
     .locals 6
 
     const-string p0, "getFastChargeType io close exception :"
@@ -395,7 +325,7 @@
     throw v1
 .end method
 
-.method private xl()Z
+.method private Il()Z
     .locals 6
 
     const-string p0, "Failure in reading charger type"
@@ -459,7 +389,7 @@
     return v2
 .end method
 
-.method private yl()V
+.method private Jl()V
     .locals 4
 
     sget-object p0, Lcom/android/server/irq;->mContext:Landroid/content/Context;
@@ -522,41 +452,25 @@
 
     move-result p0
 
-    sget-object v2, Lcom/android/server/irq;->Ve:Lcom/android/server/irq$zta;
+    sget-object v2, Lcom/android/server/irq;->qf:Lcom/android/server/irq$zta;
 
     invoke-virtual {v2, v0, v1, p0}, Lcom/android/server/irq$zta;->tsu(III)V
 
-    sget-object p0, Lcom/android/server/irq;->Ve:Lcom/android/server/irq$zta;
+    sget-object p0, Lcom/android/server/irq;->qf:Lcom/android/server/irq$zta;
 
     invoke-virtual {p0}, Lcom/android/server/irq$zta;->updateLightsLocked()V
 
     return-void
 .end method
 
-.method static synthetic you(Lcom/android/server/irq;)I
-    .locals 0
-
-    iget p0, p0, Lcom/android/server/irq;->mBatteryStatus:I
-
-    return p0
-.end method
-
-.method static synthetic you(Lcom/android/server/irq;Z)Z
-    .locals 0
-
-    iput-boolean p1, p0, Lcom/android/server/irq;->Me:Z
-
-    return p1
-.end method
-
-.method private zl()V
+.method private Kl()V
     .locals 2
 
-    iget-boolean v0, p0, Lcom/android/server/irq;->Oe:Z
+    iget-boolean v0, p0, Lcom/android/server/irq;->if:Z
 
     if-eqz v0, :cond_0
 
-    invoke-direct {p0}, Lcom/android/server/irq;->xl()Z
+    invoke-direct {p0}, Lcom/android/server/irq;->Il()Z
 
     move-result v0
 
@@ -566,7 +480,7 @@
     const/4 v0, 0x0
 
     :goto_0
-    iput-boolean v0, p0, Lcom/android/server/irq;->Ne:Z
+    iput-boolean v0, p0, Lcom/android/server/irq;->hf:Z
 
     sget-boolean v0, Lcom/android/server/irq;->DEBUG:Z
 
@@ -580,7 +494,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean p0, p0, Lcom/android/server/irq;->Ne:Z
+    iget-boolean p0, p0, Lcom/android/server/irq;->hf:Z
 
     invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -596,10 +510,98 @@
     return-void
 .end method
 
+.method static synthetic access$100()Lcom/android/server/irq$zta;
+    .locals 1
+
+    sget-object v0, Lcom/android/server/irq;->qf:Lcom/android/server/irq$zta;
+
+    return-object v0
+.end method
+
+.method static synthetic access$500()Landroid/content/Context;
+    .locals 1
+
+    sget-object v0, Lcom/android/server/irq;->mContext:Landroid/content/Context;
+
+    return-object v0
+.end method
+
+.method static synthetic bio(Lcom/android/server/irq;)I
+    .locals 0
+
+    iget p0, p0, Lcom/android/server/irq;->mBatteryLevel:I
+
+    return p0
+.end method
+
+.method static synthetic cno(Lcom/android/server/irq;)V
+    .locals 0
+
+    invoke-direct {p0}, Lcom/android/server/irq;->Jl()V
+
+    return-void
+.end method
+
+.method static synthetic kth(Lcom/android/server/irq;)I
+    .locals 0
+
+    iget p0, p0, Lcom/android/server/irq;->mPlugType:I
+
+    return p0
+.end method
+
+.method static synthetic rtg(Lcom/android/server/irq;)Z
+    .locals 0
+
+    iget-boolean p0, p0, Lcom/android/server/irq;->gf:Z
+
+    return p0
+.end method
+
+.method static synthetic sis(Lcom/android/server/irq;)I
+    .locals 0
+
+    iget p0, p0, Lcom/android/server/irq;->mDefLowBatteryWarningLevel:I
+
+    return p0
+.end method
+
+.method static synthetic ssp(Lcom/android/server/irq;)Ljava/lang/Object;
+    .locals 0
+
+    iget-object p0, p0, Lcom/android/server/irq;->mLock:Ljava/lang/Object;
+
+    return-object p0
+.end method
+
+.method static synthetic tsu(Lcom/android/server/irq;)Z
+    .locals 0
+
+    iget-boolean p0, p0, Lcom/android/server/irq;->hf:Z
+
+    return p0
+.end method
+
+.method static synthetic you(Lcom/android/server/irq;)I
+    .locals 0
+
+    iget p0, p0, Lcom/android/server/irq;->mBatteryStatus:I
+
+    return p0
+.end method
+
+.method static synthetic you(Lcom/android/server/irq;Z)Z
+    .locals 0
+
+    iput-boolean p1, p0, Lcom/android/server/irq;->gf:Z
+
+    return p1
+.end method
+
 .method static synthetic zta(Lcom/android/server/irq;)Z
     .locals 0
 
-    iget-boolean p0, p0, Lcom/android/server/irq;->Le:Z
+    iget-boolean p0, p0, Lcom/android/server/irq;->ff:Z
 
     return p0
 .end method
@@ -607,7 +609,7 @@
 .method static synthetic zta(Lcom/android/server/irq;Z)Z
     .locals 0
 
-    iput-boolean p1, p0, Lcom/android/server/irq;->Le:Z
+    iput-boolean p1, p0, Lcom/android/server/irq;->ff:Z
 
     return p1
 .end method
@@ -615,15 +617,15 @@
 
 # virtual methods
 .method public addIntentExtra(Landroid/content/Intent;)V
-    .locals 2
+    .locals 5
 
-    iget-boolean v0, p0, Lcom/android/server/irq;->Pe:Z
+    iget-boolean v0, p0, Lcom/android/server/irq;->jf:Z
 
     const/4 v1, 0x1
 
     if-ne v0, v1, :cond_0
 
-    invoke-direct {p0}, Lcom/android/server/irq;->wl()I
+    invoke-direct {p0}, Lcom/android/server/irq;->Hl()I
 
     move-result v0
 
@@ -633,23 +635,79 @@
     move v0, v1
 
     :goto_0
-    iget-boolean p0, p0, Lcom/android/server/irq;->Ne:Z
+    iget-boolean v2, p0, Lcom/android/server/irq;->hf:Z
 
-    if-ne p0, v1, :cond_1
+    const/4 v3, 0x0
+
+    if-ne v2, v1, :cond_1
 
     goto :goto_1
 
     :cond_1
-    const/4 v0, 0x0
+    move v0, v3
 
     :goto_1
-    if-eqz p1, :cond_2
+    const/4 v2, -0x1
+
+    const-string v4, "status"
+
+    invoke-virtual {p1, v4, v2}, Landroid/content/Intent;->getIntExtra(Ljava/lang/String;I)I
+
+    move-result v2
+
+    const/4 v4, 0x2
+
+    if-eq v2, v4, :cond_3
+
+    const/4 v4, 0x5
+
+    if-ne v2, v4, :cond_2
+
+    goto :goto_2
+
+    :cond_2
+    move v2, v3
+
+    goto :goto_3
+
+    :cond_3
+    :goto_2
+    move v2, v1
+
+    :goto_3
+    const-string v4, "sys/class/power_supply/usb/real_type"
+
+    invoke-virtual {p0, v4}, Lcom/android/server/irq;->zgw(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object p0
+
+    const-string v4, "USB_PD"
+
+    invoke-virtual {p0, v4}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
+
+    move-result p0
+
+    if-eqz p0, :cond_4
+
+    if-eqz v2, :cond_4
+
+    goto :goto_4
+
+    :cond_4
+    move v1, v3
+
+    :goto_4
+    if-eqz p1, :cond_5
 
     const-string p0, "fastcharge_status"
 
     invoke-virtual {p1, p0, v0}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
-    :cond_2
+    const-string p0, "pd_charge"
+
+    invoke-virtual {p1, p0, v1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
+
+    :cond_5
     return-void
 .end method
 
@@ -672,7 +730,7 @@
 .method public getFastChargeStatus()Z
     .locals 0
 
-    iget-boolean p0, p0, Lcom/android/server/irq;->Ne:Z
+    iget-boolean p0, p0, Lcom/android/server/irq;->hf:Z
 
     return p0
 .end method
@@ -680,7 +738,7 @@
 .method public getLastFastChargeStatus()Z
     .locals 0
 
-    iget-boolean p0, p0, Lcom/android/server/irq;->Qe:Z
+    iget-boolean p0, p0, Lcom/android/server/irq;->kf:Z
 
     return p0
 .end method
@@ -713,7 +771,7 @@
 
     if-eqz v0, :cond_1
 
-    iput-boolean v1, p0, Lcom/android/server/irq;->Oe:Z
+    iput-boolean v1, p0, Lcom/android/server/irq;->if:Z
 
     :cond_1
     new-instance v0, Ljava/io/File;
@@ -728,7 +786,7 @@
 
     if-eqz v0, :cond_2
 
-    iput-boolean v1, p0, Lcom/android/server/irq;->Pe:Z
+    iput-boolean v1, p0, Lcom/android/server/irq;->jf:Z
 
     :cond_2
     if-eqz p1, :cond_3
@@ -761,7 +819,7 @@
 
     invoke-direct {v0, p0, p1, v1}, Lcom/android/server/irq$zta;-><init>(Lcom/android/server/irq;Landroid/content/Context;Lcom/android/server/lights/LightsManager;)V
 
-    sput-object v0, Lcom/android/server/irq;->Ve:Lcom/android/server/irq$zta;
+    sput-object v0, Lcom/android/server/irq;->qf:Lcom/android/server/irq$zta;
 
     :cond_3
     return-void
@@ -844,7 +902,7 @@
 
     invoke-virtual {p2, v2, v0, v1, v3}, Landroid/content/ContentResolver;->registerContentObserver(Landroid/net/Uri;ZLandroid/database/ContentObserver;I)V
 
-    invoke-direct {p0}, Lcom/android/server/irq;->yl()V
+    invoke-direct {p0}, Lcom/android/server/irq;->Jl()V
 
     monitor-exit p1
 
@@ -915,7 +973,7 @@
 
     iput p1, p0, Lcom/android/server/irq;->mBatteryStatus:I
 
-    invoke-direct {p0}, Lcom/android/server/irq;->zl()V
+    invoke-direct {p0}, Lcom/android/server/irq;->Kl()V
 
     return-void
 .end method
@@ -923,15 +981,15 @@
 .method public updateLastFastChargeStatus()Z
     .locals 2
 
-    iget-boolean v0, p0, Lcom/android/server/irq;->Qe:Z
+    iget-boolean v0, p0, Lcom/android/server/irq;->kf:Z
 
-    iget-boolean v1, p0, Lcom/android/server/irq;->Ne:Z
+    iget-boolean v1, p0, Lcom/android/server/irq;->hf:Z
 
     if-eq v0, v1, :cond_0
 
     const/4 v0, 0x1
 
-    iput-boolean v1, p0, Lcom/android/server/irq;->Qe:Z
+    iput-boolean v1, p0, Lcom/android/server/irq;->kf:Z
 
     goto :goto_0
 
@@ -945,7 +1003,7 @@
 .method public updateLightsLocked()Z
     .locals 0
 
-    sget-object p0, Lcom/android/server/irq;->Ve:Lcom/android/server/irq$zta;
+    sget-object p0, Lcom/android/server/irq;->qf:Lcom/android/server/irq$zta;
 
     if-eqz p0, :cond_0
 
@@ -959,4 +1017,207 @@
     const/4 p0, 0x0
 
     return p0
+.end method
+
+.method public zgw(Ljava/lang/String;)Ljava/lang/String;
+    .locals 6
+
+    const-string p0, "BufferedReader close exception :"
+
+    const-string v0, "FastCharge"
+
+    new-instance v1, Ljava/io/File;
+
+    invoke-direct {v1, p1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    const/4 p1, 0x0
+
+    :try_start_0
+    new-instance v2, Ljava/io/BufferedReader;
+
+    new-instance v3, Ljava/io/FileReader;
+
+    invoke-direct {v3, v1}, Ljava/io/FileReader;-><init>(Ljava/io/File;)V
+
+    invoke-direct {v2, v3}, Ljava/io/BufferedReader;-><init>(Ljava/io/Reader;)V
+    :try_end_0
+    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_2
+    .catchall {:try_start_0 .. :try_end_0} :catchall_1
+
+    :try_start_1
+    invoke-virtual {v2}, Ljava/io/BufferedReader;->readLine()Ljava/lang/String;
+
+    move-result-object v1
+
+    if-eqz v1, :cond_0
+
+    invoke-virtual {v1}, Ljava/lang/String;->length()I
+
+    move-result v3
+
+    if-lez v3, :cond_0
+
+    move-object p1, v1
+
+    :cond_0
+    invoke-virtual {v2}, Ljava/io/BufferedReader;->close()V
+    :try_end_1
+    .catch Ljava/io/IOException; {:try_start_1 .. :try_end_1} :catch_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    :try_start_2
+    invoke-virtual {v2}, Ljava/io/BufferedReader;->close()V
+    :try_end_2
+    .catch Ljava/io/IOException; {:try_start_2 .. :try_end_2} :catch_0
+
+    goto :goto_2
+
+    :catch_0
+    move-exception v1
+
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    invoke-virtual {v2, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/io/IOException;->getMessage()Ljava/lang/String;
+
+    move-result-object p0
+
+    invoke-virtual {v2, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p0
+
+    invoke-static {v0, p0}, Landroid/util/Slog;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    goto :goto_2
+
+    :catchall_0
+    move-exception p1
+
+    move-object v1, p1
+
+    move-object p1, v2
+
+    goto :goto_3
+
+    :catch_1
+    move-exception v1
+
+    move-object v5, v2
+
+    move-object v2, p1
+
+    move-object p1, v5
+
+    goto :goto_0
+
+    :catchall_1
+    move-exception v1
+
+    goto :goto_3
+
+    :catch_2
+    move-exception v1
+
+    move-object v2, p1
+
+    :goto_0
+    :try_start_3
+    new-instance v3, Ljava/lang/StringBuilder;
+
+    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v4, "readNodeValue IO exception:"
+
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/io/IOException;->getMessage()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v3, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-static {v0, v1}, Landroid/util/Slog;->e(Ljava/lang/String;Ljava/lang/String;)I
+    :try_end_3
+    .catchall {:try_start_3 .. :try_end_3} :catchall_1
+
+    if-eqz p1, :cond_1
+
+    :try_start_4
+    invoke-virtual {p1}, Ljava/io/BufferedReader;->close()V
+    :try_end_4
+    .catch Ljava/io/IOException; {:try_start_4 .. :try_end_4} :catch_3
+
+    goto :goto_1
+
+    :catch_3
+    move-exception p1
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p1}, Ljava/io/IOException;->getMessage()Ljava/lang/String;
+
+    move-result-object p0
+
+    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p0
+
+    invoke-static {v0, p0}, Landroid/util/Slog;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    :cond_1
+    :goto_1
+    move-object p1, v2
+
+    :goto_2
+    return-object p1
+
+    :goto_3
+    if-eqz p1, :cond_2
+
+    :try_start_5
+    invoke-virtual {p1}, Ljava/io/BufferedReader;->close()V
+    :try_end_5
+    .catch Ljava/io/IOException; {:try_start_5 .. :try_end_5} :catch_4
+
+    goto :goto_4
+
+    :catch_4
+    move-exception p1
+
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    invoke-virtual {v2, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p1}, Ljava/io/IOException;->getMessage()Ljava/lang/String;
+
+    move-result-object p0
+
+    invoke-virtual {v2, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p0
+
+    invoke-static {v0, p0}, Landroid/util/Slog;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    :cond_2
+    :goto_4
+    throw v1
 .end method

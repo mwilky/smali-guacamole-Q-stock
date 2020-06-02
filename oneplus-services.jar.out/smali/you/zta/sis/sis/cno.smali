@@ -61,7 +61,7 @@
 
     invoke-static/range {v6 .. v11}, Lyou/zta/sis/sis/rtg;->zta([II[II[II)Z
 
-    invoke-static {}, Lyou/zta/sis/sis/rtg;->al()[I
+    invoke-static {}, Lyou/zta/sis/sis/rtg;->jl()[I
 
     move-result-object p0
 
@@ -165,7 +165,7 @@
     move p0, v3
 
     :goto_0
-    invoke-static {}, Lyou/zta/sis/sis/rtg;->al()[I
+    invoke-static {}, Lyou/zta/sis/sis/rtg;->jl()[I
 
     move-result-object p1
 

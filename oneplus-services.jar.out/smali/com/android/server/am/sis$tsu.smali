@@ -37,7 +37,7 @@
 .method public frontPackageChanged(Ljava/lang/String;IILjava/lang/String;II)V
     .locals 3
 
-    sget-boolean v0, Lcom/android/server/am/ire;->Ol:Z
+    sget-boolean v0, Lcom/android/server/am/ire;->jm:Z
 
     if-nez v0, :cond_0
 

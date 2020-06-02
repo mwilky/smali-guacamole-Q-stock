@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field yma:Ljavax/crypto/spec/DHParameterSpec;
+.field Noa:Ljavax/crypto/spec/DHParameterSpec;
 
 
 # direct methods
@@ -23,19 +23,19 @@
 
     new-instance v0, Lorg/bouncycastle/asn1/dma/kth;
 
-    iget-object v1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dh/you;->yma:Ljavax/crypto/spec/DHParameterSpec;
+    iget-object v1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dh/you;->Noa:Ljavax/crypto/spec/DHParameterSpec;
 
     invoke-virtual {v1}, Ljavax/crypto/spec/DHParameterSpec;->getP()Ljava/math/BigInteger;
 
     move-result-object v1
 
-    iget-object v2, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dh/you;->yma:Ljavax/crypto/spec/DHParameterSpec;
+    iget-object v2, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dh/you;->Noa:Ljavax/crypto/spec/DHParameterSpec;
 
     invoke-virtual {v2}, Ljavax/crypto/spec/DHParameterSpec;->getG()Ljava/math/BigInteger;
 
     move-result-object v2
 
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dh/you;->yma:Ljavax/crypto/spec/DHParameterSpec;
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dh/you;->Noa:Ljavax/crypto/spec/DHParameterSpec;
 
     invoke-virtual {p0}, Ljavax/crypto/spec/DHParameterSpec;->getL()I
 
@@ -67,7 +67,7 @@
 .method protected engineGetEncoded(Ljava/lang/String;)[B
     .locals 0
 
-    invoke-virtual {p0, p1}, Lorg/bouncycastle/jcajce/provider/asymmetric/dh/you;->ta(Ljava/lang/String;)Z
+    invoke-virtual {p0, p1}, Lorg/bouncycastle/jcajce/provider/asymmetric/dh/you;->va(Ljava/lang/String;)Z
 
     move-result p1
 
@@ -125,7 +125,7 @@
 
     check-cast p1, Ljavax/crypto/spec/DHParameterSpec;
 
-    iput-object p1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dh/you;->yma:Ljavax/crypto/spec/DHParameterSpec;
+    iput-object p1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dh/you;->Noa:Ljavax/crypto/spec/DHParameterSpec;
 
     return-void
 
@@ -181,7 +181,7 @@
     invoke-direct {v1, v2, v3, p1}, Ljavax/crypto/spec/DHParameterSpec;-><init>(Ljava/math/BigInteger;Ljava/math/BigInteger;I)V
 
     :goto_0
-    iput-object v1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dh/you;->yma:Ljavax/crypto/spec/DHParameterSpec;
+    iput-object v1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dh/you;->Noa:Ljavax/crypto/spec/DHParameterSpec;
 
     goto :goto_1
 
@@ -229,7 +229,7 @@
         }
     .end annotation
 
-    invoke-virtual {p0, p2}, Lorg/bouncycastle/jcajce/provider/asymmetric/dh/you;->ta(Ljava/lang/String;)Z
+    invoke-virtual {p0, p2}, Lorg/bouncycastle/jcajce/provider/asymmetric/dh/you;->va(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -269,7 +269,7 @@
     return-object p0
 .end method
 
-.method protected ta(Ljava/lang/String;)Z
+.method protected va(Ljava/lang/String;)Z
     .locals 0
 
     if-eqz p1, :cond_1
@@ -326,7 +326,7 @@
 
     :cond_1
     :goto_0
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dh/you;->yma:Ljavax/crypto/spec/DHParameterSpec;
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dh/you;->Noa:Ljavax/crypto/spec/DHParameterSpec;
 
     return-object p0
 .end method

@@ -154,7 +154,7 @@
 .method public zta(Lorg/bouncycastle/asn1/bvj/tsu;)I
     .locals 6
 
-    invoke-virtual {p1}, Lorg/bouncycastle/asn1/bvj/tsu;->Eh()[Lorg/bouncycastle/asn1/bvj/sis;
+    invoke-virtual {p1}, Lorg/bouncycastle/asn1/bvj/tsu;->Nh()[Lorg/bouncycastle/asn1/bvj/sis;
 
     move-result-object p1
 
@@ -171,7 +171,7 @@
 
     aget-object v3, p1, v1
 
-    invoke-virtual {v3}, Lorg/bouncycastle/asn1/bvj/sis;->Bh()Z
+    invoke-virtual {v3}, Lorg/bouncycastle/asn1/bvj/sis;->Kh()Z
 
     move-result v3
 
@@ -179,7 +179,7 @@
 
     aget-object v3, p1, v1
 
-    invoke-virtual {v3}, Lorg/bouncycastle/asn1/bvj/sis;->Ah()[Lorg/bouncycastle/asn1/bvj/zta;
+    invoke-virtual {v3}, Lorg/bouncycastle/asn1/bvj/sis;->Jh()[Lorg/bouncycastle/asn1/bvj/zta;
 
     move-result-object v3
 
@@ -289,7 +289,7 @@
     if-ne v0, v3, :cond_0
 
     :try_start_0
-    invoke-static {p2, v1}, Lorg/bouncycastle/asn1/bvj/zta/tsu;->igw(Ljava/lang/String;I)Lorg/bouncycastle/asn1/ssp;
+    invoke-static {p2, v1}, Lorg/bouncycastle/asn1/bvj/zta/tsu;->wtn(Ljava/lang/String;I)Lorg/bouncycastle/asn1/ssp;
 
     move-result-object p0
     :try_end_0
@@ -362,11 +362,11 @@
 .method public zta(Lorg/bouncycastle/asn1/bvj/tsu;Lorg/bouncycastle/asn1/bvj/tsu;)Z
     .locals 5
 
-    invoke-virtual {p1}, Lorg/bouncycastle/asn1/bvj/tsu;->Eh()[Lorg/bouncycastle/asn1/bvj/sis;
+    invoke-virtual {p1}, Lorg/bouncycastle/asn1/bvj/tsu;->Nh()[Lorg/bouncycastle/asn1/bvj/sis;
 
     move-result-object p1
 
-    invoke-virtual {p2}, Lorg/bouncycastle/asn1/bvj/tsu;->Eh()[Lorg/bouncycastle/asn1/bvj/sis;
+    invoke-virtual {p2}, Lorg/bouncycastle/asn1/bvj/tsu;->Nh()[Lorg/bouncycastle/asn1/bvj/sis;
 
     move-result-object p2
 

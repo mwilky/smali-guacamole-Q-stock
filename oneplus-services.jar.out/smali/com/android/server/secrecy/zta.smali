@@ -16,79 +16,7 @@
     return-void
 .end method
 
-.method public static V(Ljava/lang/String;)[B
-    .locals 2
-
-    :try_start_0
-    const-string v0, "SHA-256"
-
-    invoke-static {v0}, Ljava/security/MessageDigest;->getInstance(Ljava/lang/String;)Ljava/security/MessageDigest;
-
-    move-result-object v0
-
-    const-string v1, "utf-8"
-
-    invoke-virtual {p0, v1}, Ljava/lang/String;->getBytes(Ljava/lang/String;)[B
-
-    move-result-object p0
-
-    invoke-virtual {v0, p0}, Ljava/security/MessageDigest;->update([B)V
-
-    invoke-virtual {v0}, Ljava/security/MessageDigest;->digest()[B
-
-    move-result-object p0
-    :try_end_0
-    .catch Ljava/security/NoSuchAlgorithmException; {:try_start_0 .. :try_end_0} :catch_0
-    .catch Ljava/io/UnsupportedEncodingException; {:try_start_0 .. :try_end_0} :catch_0
-
-    goto :goto_0
-
-    :catch_0
-    move-exception p0
-
-    invoke-virtual {p0}, Ljava/lang/Exception;->printStackTrace()V
-
-    const/4 p0, 0x0
-
-    :goto_0
-    return-object p0
-.end method
-
-.method public static sis(Ljava/math/BigInteger;Ljava/math/BigInteger;)Ljava/security/PublicKey;
-    .locals 1
-
-    new-instance v0, Ljava/security/spec/RSAPublicKeySpec;
-
-    invoke-direct {v0, p0, p1}, Ljava/security/spec/RSAPublicKeySpec;-><init>(Ljava/math/BigInteger;Ljava/math/BigInteger;)V
-
-    :try_start_0
-    const-string p0, "RSA"
-
-    invoke-static {p0}, Ljava/security/KeyFactory;->getInstance(Ljava/lang/String;)Ljava/security/KeyFactory;
-
-    move-result-object p0
-
-    invoke-virtual {p0, v0}, Ljava/security/KeyFactory;->generatePublic(Ljava/security/spec/KeySpec;)Ljava/security/PublicKey;
-
-    move-result-object p0
-    :try_end_0
-    .catch Ljava/security/NoSuchAlgorithmException; {:try_start_0 .. :try_end_0} :catch_0
-    .catch Ljava/security/spec/InvalidKeySpecException; {:try_start_0 .. :try_end_0} :catch_0
-
-    goto :goto_0
-
-    :catch_0
-    move-exception p0
-
-    invoke-virtual {p0}, Ljava/security/GeneralSecurityException;->printStackTrace()V
-
-    const/4 p0, 0x0
-
-    :goto_0
-    return-object p0
-.end method
-
-.method static td()V
+.method static Ad()V
     .locals 5
 
     const-string v0, "RSA"
@@ -183,6 +111,78 @@
 
     :goto_2
     return-void
+.end method
+
+.method public static X(Ljava/lang/String;)[B
+    .locals 2
+
+    :try_start_0
+    const-string v0, "SHA-256"
+
+    invoke-static {v0}, Ljava/security/MessageDigest;->getInstance(Ljava/lang/String;)Ljava/security/MessageDigest;
+
+    move-result-object v0
+
+    const-string v1, "utf-8"
+
+    invoke-virtual {p0, v1}, Ljava/lang/String;->getBytes(Ljava/lang/String;)[B
+
+    move-result-object p0
+
+    invoke-virtual {v0, p0}, Ljava/security/MessageDigest;->update([B)V
+
+    invoke-virtual {v0}, Ljava/security/MessageDigest;->digest()[B
+
+    move-result-object p0
+    :try_end_0
+    .catch Ljava/security/NoSuchAlgorithmException; {:try_start_0 .. :try_end_0} :catch_0
+    .catch Ljava/io/UnsupportedEncodingException; {:try_start_0 .. :try_end_0} :catch_0
+
+    goto :goto_0
+
+    :catch_0
+    move-exception p0
+
+    invoke-virtual {p0}, Ljava/lang/Exception;->printStackTrace()V
+
+    const/4 p0, 0x0
+
+    :goto_0
+    return-object p0
+.end method
+
+.method public static sis(Ljava/math/BigInteger;Ljava/math/BigInteger;)Ljava/security/PublicKey;
+    .locals 1
+
+    new-instance v0, Ljava/security/spec/RSAPublicKeySpec;
+
+    invoke-direct {v0, p0, p1}, Ljava/security/spec/RSAPublicKeySpec;-><init>(Ljava/math/BigInteger;Ljava/math/BigInteger;)V
+
+    :try_start_0
+    const-string p0, "RSA"
+
+    invoke-static {p0}, Ljava/security/KeyFactory;->getInstance(Ljava/lang/String;)Ljava/security/KeyFactory;
+
+    move-result-object p0
+
+    invoke-virtual {p0, v0}, Ljava/security/KeyFactory;->generatePublic(Ljava/security/spec/KeySpec;)Ljava/security/PublicKey;
+
+    move-result-object p0
+    :try_end_0
+    .catch Ljava/security/NoSuchAlgorithmException; {:try_start_0 .. :try_end_0} :catch_0
+    .catch Ljava/security/spec/InvalidKeySpecException; {:try_start_0 .. :try_end_0} :catch_0
+
+    goto :goto_0
+
+    :catch_0
+    move-exception p0
+
+    invoke-virtual {p0}, Ljava/security/GeneralSecurityException;->printStackTrace()V
+
+    const/4 p0, 0x0
+
+    :goto_0
+    return-object p0
 .end method
 
 .method static you(Ljava/math/BigInteger;Ljava/math/BigInteger;)Ljava/security/PrivateKey;

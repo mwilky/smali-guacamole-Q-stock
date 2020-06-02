@@ -13,17 +13,17 @@
 
 
 # static fields
-.field private static final AC:Ljava/lang/String; = "sys_engineer_config_list"
+.field private static final RD:Ljava/lang/String; = "sys_engineer_config_list"
 
-.field private static final CC:Ljava/lang/String; = "/data/engineermode/sys_engineer_config_list.xml"
-
-.field private static final DC:Ljava/lang/String; = "/system/etc/sys_engineer_config_list.xml"
+.field private static final SD:Ljava/lang/String; = "/data/engineermode/sys_engineer_config_list.xml"
 
 .field private static final TAG:Ljava/lang/String; = "you"
 
+.field private static final TD:Ljava/lang/String; = "/system/etc/sys_engineer_config_list.xml"
+
 
 # instance fields
-.field private final WB:Lcom/android/server/engineer/you$zta;
+.field private final kD:Lcom/android/server/engineer/you$zta;
 
 
 # direct methods
@@ -54,7 +54,7 @@
 
     invoke-virtual {p0, p1, v0}, Lcom/android/server/engineer/bvj;->zta(Lcom/android/server/engineer/bvj$zta;Lcom/android/server/engineer/bvj$zta;)V
 
-    iput-object p2, p0, Lcom/android/server/engineer/you;->WB:Lcom/android/server/engineer/you$zta;
+    iput-object p2, p0, Lcom/android/server/engineer/you;->kD:Lcom/android/server/engineer/you$zta;
 
     :try_start_0
     invoke-virtual {p0}, Lcom/android/server/engineer/bvj;->init()V
@@ -82,7 +82,7 @@
 
 
 # virtual methods
-.method Ic()Z
+.method M(Ljava/lang/String;)Z
     .locals 1
 
     const/4 v0, 0x1
@@ -93,14 +93,14 @@
 
     check-cast p0, Lcom/android/server/engineer/you$you;
 
-    invoke-virtual {p0}, Lcom/android/server/engineer/you$you;->Ic()Z
+    invoke-virtual {p0, p1}, Lcom/android/server/engineer/you$you;->M(Ljava/lang/String;)Z
 
     move-result p0
 
     return p0
 .end method
 
-.method K(Ljava/lang/String;)Z
+.method N(Ljava/lang/String;)Z
     .locals 1
 
     const/4 v0, 0x1
@@ -111,19 +111,37 @@
 
     check-cast p0, Lcom/android/server/engineer/you$you;
 
-    invoke-virtual {p0, p1}, Lcom/android/server/engineer/you$you;->K(Ljava/lang/String;)Z
+    invoke-virtual {p0, p1}, Lcom/android/server/engineer/you$you;->N(Ljava/lang/String;)Z
 
     move-result p0
 
     return p0
 .end method
 
-.method public Kc()V
+.method Pc()Z
     .locals 1
 
-    invoke-super {p0}, Lcom/android/server/engineer/bvj;->Kc()V
+    const/4 v0, 0x1
 
-    iget-object p0, p0, Lcom/android/server/engineer/you;->WB:Lcom/android/server/engineer/you$zta;
+    invoke-virtual {p0, v0}, Lcom/android/server/engineer/bvj;->d(Z)Lcom/android/server/engineer/bvj$zta;
+
+    move-result-object p0
+
+    check-cast p0, Lcom/android/server/engineer/you$you;
+
+    invoke-virtual {p0}, Lcom/android/server/engineer/you$you;->Pc()Z
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public Rc()V
+    .locals 1
+
+    invoke-super {p0}, Lcom/android/server/engineer/bvj;->Rc()V
+
+    iget-object p0, p0, Lcom/android/server/engineer/you;->kD:Lcom/android/server/engineer/you$zta;
 
     if-eqz p0, :cond_0
 
@@ -137,24 +155,6 @@
     invoke-static {p0, v0}, Landroid/util/Slog;->v(Ljava/lang/String;Ljava/lang/String;)I
 
     return-void
-.end method
-
-.method L(Ljava/lang/String;)Z
-    .locals 1
-
-    const/4 v0, 0x1
-
-    invoke-virtual {p0, v0}, Lcom/android/server/engineer/bvj;->d(Z)Lcom/android/server/engineer/bvj$zta;
-
-    move-result-object p0
-
-    check-cast p0, Lcom/android/server/engineer/you$you;
-
-    invoke-virtual {p0, p1}, Lcom/android/server/engineer/you$you;->L(Ljava/lang/String;)Z
-
-    move-result p0
-
-    return p0
 .end method
 
 .method sis(Landroid/content/ComponentName;)Z

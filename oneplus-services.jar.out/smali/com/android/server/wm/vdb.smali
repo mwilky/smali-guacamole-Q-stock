@@ -15,7 +15,7 @@
 
 
 # static fields
-.field static final synthetic zQ:[I
+.field static final synthetic RR:[I
 
 
 # direct methods
@@ -30,10 +30,10 @@
 
     new-array v0, v0, [I
 
-    sput-object v0, Lcom/android/server/wm/vdb;->zQ:[I
+    sput-object v0, Lcom/android/server/wm/vdb;->RR:[I
 
     :try_start_0
-    sget-object v0, Lcom/android/server/wm/vdb;->zQ:[I
+    sget-object v0, Lcom/android/server/wm/vdb;->RR:[I
 
     sget-object v1, Lcom/android/internal/os/BatterySipper$DrainType;->APP:Lcom/android/internal/os/BatterySipper$DrainType;
 
@@ -49,7 +49,7 @@
 
     :catch_0
     :try_start_1
-    sget-object v0, Lcom/android/server/wm/vdb;->zQ:[I
+    sget-object v0, Lcom/android/server/wm/vdb;->RR:[I
 
     sget-object v1, Lcom/android/internal/os/BatterySipper$DrainType;->AMBIENT_DISPLAY:Lcom/android/internal/os/BatterySipper$DrainType;
 
@@ -65,7 +65,7 @@
 
     :catch_1
     :try_start_2
-    sget-object v0, Lcom/android/server/wm/vdb;->zQ:[I
+    sget-object v0, Lcom/android/server/wm/vdb;->RR:[I
 
     sget-object v1, Lcom/android/internal/os/BatterySipper$DrainType;->BLUETOOTH:Lcom/android/internal/os/BatterySipper$DrainType;
 
@@ -81,7 +81,7 @@
 
     :catch_2
     :try_start_3
-    sget-object v0, Lcom/android/server/wm/vdb;->zQ:[I
+    sget-object v0, Lcom/android/server/wm/vdb;->RR:[I
 
     sget-object v1, Lcom/android/internal/os/BatterySipper$DrainType;->CAMERA:Lcom/android/internal/os/BatterySipper$DrainType;
 
@@ -97,7 +97,7 @@
 
     :catch_3
     :try_start_4
-    sget-object v0, Lcom/android/server/wm/vdb;->zQ:[I
+    sget-object v0, Lcom/android/server/wm/vdb;->RR:[I
 
     sget-object v1, Lcom/android/internal/os/BatterySipper$DrainType;->CELL:Lcom/android/internal/os/BatterySipper$DrainType;
 
@@ -113,7 +113,7 @@
 
     :catch_4
     :try_start_5
-    sget-object v0, Lcom/android/server/wm/vdb;->zQ:[I
+    sget-object v0, Lcom/android/server/wm/vdb;->RR:[I
 
     sget-object v1, Lcom/android/internal/os/BatterySipper$DrainType;->FLASHLIGHT:Lcom/android/internal/os/BatterySipper$DrainType;
 
@@ -129,7 +129,7 @@
 
     :catch_5
     :try_start_6
-    sget-object v0, Lcom/android/server/wm/vdb;->zQ:[I
+    sget-object v0, Lcom/android/server/wm/vdb;->RR:[I
 
     sget-object v1, Lcom/android/internal/os/BatterySipper$DrainType;->IDLE:Lcom/android/internal/os/BatterySipper$DrainType;
 
@@ -145,7 +145,7 @@
 
     :catch_6
     :try_start_7
-    sget-object v0, Lcom/android/server/wm/vdb;->zQ:[I
+    sget-object v0, Lcom/android/server/wm/vdb;->RR:[I
 
     sget-object v1, Lcom/android/internal/os/BatterySipper$DrainType;->MEMORY:Lcom/android/internal/os/BatterySipper$DrainType;
 
@@ -161,7 +161,7 @@
 
     :catch_7
     :try_start_8
-    sget-object v0, Lcom/android/server/wm/vdb;->zQ:[I
+    sget-object v0, Lcom/android/server/wm/vdb;->RR:[I
 
     sget-object v1, Lcom/android/internal/os/BatterySipper$DrainType;->OVERCOUNTED:Lcom/android/internal/os/BatterySipper$DrainType;
 
@@ -177,7 +177,7 @@
 
     :catch_8
     :try_start_9
-    sget-object v0, Lcom/android/server/wm/vdb;->zQ:[I
+    sget-object v0, Lcom/android/server/wm/vdb;->RR:[I
 
     sget-object v1, Lcom/android/internal/os/BatterySipper$DrainType;->PHONE:Lcom/android/internal/os/BatterySipper$DrainType;
 
@@ -193,7 +193,7 @@
 
     :catch_9
     :try_start_a
-    sget-object v0, Lcom/android/server/wm/vdb;->zQ:[I
+    sget-object v0, Lcom/android/server/wm/vdb;->RR:[I
 
     sget-object v1, Lcom/android/internal/os/BatterySipper$DrainType;->SCREEN:Lcom/android/internal/os/BatterySipper$DrainType;
 
@@ -209,7 +209,7 @@
 
     :catch_a
     :try_start_b
-    sget-object v0, Lcom/android/server/wm/vdb;->zQ:[I
+    sget-object v0, Lcom/android/server/wm/vdb;->RR:[I
 
     sget-object v1, Lcom/android/internal/os/BatterySipper$DrainType;->UNACCOUNTED:Lcom/android/internal/os/BatterySipper$DrainType;
 
@@ -225,7 +225,7 @@
 
     :catch_b
     :try_start_c
-    sget-object v0, Lcom/android/server/wm/vdb;->zQ:[I
+    sget-object v0, Lcom/android/server/wm/vdb;->RR:[I
 
     sget-object v1, Lcom/android/internal/os/BatterySipper$DrainType;->USER:Lcom/android/internal/os/BatterySipper$DrainType;
 
@@ -241,7 +241,7 @@
 
     :catch_c
     :try_start_d
-    sget-object v0, Lcom/android/server/wm/vdb;->zQ:[I
+    sget-object v0, Lcom/android/server/wm/vdb;->RR:[I
 
     sget-object v1, Lcom/android/internal/os/BatterySipper$DrainType;->WIFI:Lcom/android/internal/os/BatterySipper$DrainType;
 

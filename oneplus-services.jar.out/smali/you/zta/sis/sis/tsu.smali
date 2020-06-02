@@ -16,16 +16,6 @@
     return-void
 .end method
 
-.method public static al()[I
-    .locals 1
-
-    const/16 v0, 0xe
-
-    new-array v0, v0, [I
-
-    return-object v0
-.end method
-
 .method public static create()[I
     .locals 1
 
@@ -1708,6 +1698,16 @@
     move v8, v10
 
     goto/16 :goto_0
+.end method
+
+.method public static jl()[I
+    .locals 1
+
+    const/16 v0, 0xe
+
+    new-array v0, v0, [I
+
+    return-object v0
 .end method
 
 .method public static kth(I[I)I

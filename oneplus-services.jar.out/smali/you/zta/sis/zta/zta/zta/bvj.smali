@@ -4,13 +4,13 @@
 
 
 # static fields
-.field public static final q:Ljava/math/BigInteger;
+.field private static final JGa:I = 0x2
 
-.field private static final vEa:I = 0x2
+.field public static final q:Ljava/math/BigInteger;
 
 
 # instance fields
-.field protected pEa:Lyou/zta/sis/zta/zta/zta/ugm;
+.field protected DGa:Lyou/zta/sis/zta/zta/zta/ugm;
 
 
 # direct methods
@@ -47,7 +47,7 @@
 
     invoke-direct {v0, p0, v1, v1}, Lyou/zta/sis/zta/zta/zta/ugm;-><init>(Lyou/zta/sis/zta/rtg;Lyou/zta/sis/zta/cno;Lyou/zta/sis/zta/cno;)V
 
-    iput-object v0, p0, Lyou/zta/sis/zta/zta/zta/bvj;->pEa:Lyou/zta/sis/zta/zta/zta/ugm;
+    iput-object v0, p0, Lyou/zta/sis/zta/zta/zta/bvj;->DGa:Lyou/zta/sis/zta/zta/zta/ugm;
 
     new-instance v0, Ljava/math/BigInteger;
 
@@ -101,18 +101,18 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lyou/zta/sis/zta/rtg;->dEa:Ljava/math/BigInteger;
+    iput-object v0, p0, Lyou/zta/sis/zta/rtg;->rGa:Ljava/math/BigInteger;
 
     const/4 v0, 0x2
 
-    iput v0, p0, Lyou/zta/sis/zta/rtg;->ZDa:I
+    iput v0, p0, Lyou/zta/sis/zta/rtg;->mGa:I
 
     return-void
 .end method
 
 
 # virtual methods
-.method protected Mj()Lyou/zta/sis/zta/rtg;
+.method protected Vj()Lyou/zta/sis/zta/rtg;
     .locals 0
 
     new-instance p0, Lyou/zta/sis/zta/zta/zta/bvj;
@@ -147,7 +147,7 @@
 .method public getInfinity()Lyou/zta/sis/zta/wtn;
     .locals 0
 
-    iget-object p0, p0, Lyou/zta/sis/zta/zta/zta/bvj;->pEa:Lyou/zta/sis/zta/zta/zta/ugm;
+    iget-object p0, p0, Lyou/zta/sis/zta/zta/zta/bvj;->DGa:Lyou/zta/sis/zta/zta/zta/ugm;
 
     return-object p0
 .end method
@@ -160,7 +160,7 @@
     return-object p0
 .end method
 
-.method public na(I)Z
+.method public qa(I)Z
     .locals 0
 
     const/4 p0, 0x2
@@ -199,7 +199,7 @@
 
     aget-object v4, p1, v4
 
-    invoke-virtual {v4}, Lyou/zta/sis/zta/wtn;->lk()Lyou/zta/sis/zta/cno;
+    invoke-virtual {v4}, Lyou/zta/sis/zta/wtn;->uk()Lyou/zta/sis/zta/cno;
 
     move-result-object v5
 
@@ -211,7 +211,7 @@
 
     add-int/lit8 v3, v3, 0x7
 
-    invoke-virtual {v4}, Lyou/zta/sis/zta/wtn;->mk()Lyou/zta/sis/zta/cno;
+    invoke-virtual {v4}, Lyou/zta/sis/zta/wtn;->vk()Lyou/zta/sis/zta/cno;
 
     move-result-object v4
 

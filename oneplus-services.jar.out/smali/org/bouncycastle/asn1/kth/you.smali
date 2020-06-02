@@ -4,21 +4,21 @@
 
 
 # static fields
-.field public static final Apa:I = 0x10
+.field public static final Lra:I = 0x80
 
-.field public static final Bpa:I = 0x8
+.field public static final Mra:I = 0x40
 
-.field public static final Cpa:I = 0x4
+.field public static final Nra:I = 0x20
 
-.field public static final Dpa:I = 0x2
+.field public static final Ora:I = 0x10
 
-.field public static final Epa:I = 0x1
+.field public static final Pra:I = 0x8
 
-.field public static final xpa:I = 0x80
+.field public static final Qra:I = 0x4
 
-.field public static final ypa:I = 0x40
+.field public static final Rra:I = 0x2
 
-.field public static final zpa:I = 0x20
+.field public static final Sra:I = 0x1
 
 
 # direct methods
@@ -29,7 +29,7 @@
 
     move-result-object v0
 
-    invoke-static {p1}, Lorg/bouncycastle/asn1/sis;->aa(I)I
+    invoke-static {p1}, Lorg/bouncycastle/asn1/sis;->da(I)I
 
     move-result p1
 
@@ -45,7 +45,7 @@
 
     move-result-object v0
 
-    invoke-virtual {p1}, Lorg/bouncycastle/asn1/sis;->yg()I
+    invoke-virtual {p1}, Lorg/bouncycastle/asn1/sis;->Hg()I
 
     move-result p1
 

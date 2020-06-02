@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field private Jwa:Ljava/util/Vector;
+.field private Xya:Ljava/util/Vector;
 
 .field private extensions:Ljava/util/Hashtable;
 
@@ -25,7 +25,7 @@
 
     invoke-direct {v0}, Ljava/util/Vector;-><init>()V
 
-    iput-object v0, p0, Lorg/bouncycastle/asn1/x509/vdb;->Jwa:Ljava/util/Vector;
+    iput-object v0, p0, Lorg/bouncycastle/asn1/x509/vdb;->Xya:Ljava/util/Vector;
 
     return-void
 .end method
@@ -35,7 +35,7 @@
 .method public generate()Lorg/bouncycastle/asn1/x509/ugm;
     .locals 4
 
-    iget-object v0, p0, Lorg/bouncycastle/asn1/x509/vdb;->Jwa:Ljava/util/Vector;
+    iget-object v0, p0, Lorg/bouncycastle/asn1/x509/vdb;->Xya:Ljava/util/Vector;
 
     invoke-virtual {v0}, Ljava/util/Vector;->size()I
 
@@ -46,7 +46,7 @@
     const/4 v1, 0x0
 
     :goto_0
-    iget-object v2, p0, Lorg/bouncycastle/asn1/x509/vdb;->Jwa:Ljava/util/Vector;
+    iget-object v2, p0, Lorg/bouncycastle/asn1/x509/vdb;->Xya:Ljava/util/Vector;
 
     invoke-virtual {v2}, Ljava/util/Vector;->size()I
 
@@ -56,7 +56,7 @@
 
     iget-object v2, p0, Lorg/bouncycastle/asn1/x509/vdb;->extensions:Ljava/util/Hashtable;
 
-    iget-object v3, p0, Lorg/bouncycastle/asn1/x509/vdb;->Jwa:Ljava/util/Vector;
+    iget-object v3, p0, Lorg/bouncycastle/asn1/x509/vdb;->Xya:Ljava/util/Vector;
 
     invoke-virtual {v3, v1}, Ljava/util/Vector;->elementAt(I)Ljava/lang/Object;
 
@@ -85,7 +85,7 @@
 .method public isEmpty()Z
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/asn1/x509/vdb;->Jwa:Ljava/util/Vector;
+    iget-object p0, p0, Lorg/bouncycastle/asn1/x509/vdb;->Xya:Ljava/util/Vector;
 
     invoke-virtual {p0}, Ljava/util/Vector;->isEmpty()Z
 
@@ -107,7 +107,7 @@
 
     invoke-direct {v0}, Ljava/util/Vector;-><init>()V
 
-    iput-object v0, p0, Lorg/bouncycastle/asn1/x509/vdb;->Jwa:Ljava/util/Vector;
+    iput-object v0, p0, Lorg/bouncycastle/asn1/x509/vdb;->Xya:Ljava/util/Vector;
 
     return-void
 .end method
@@ -146,7 +146,7 @@
 
     if-nez v0, :cond_0
 
-    iget-object v0, p0, Lorg/bouncycastle/asn1/x509/vdb;->Jwa:Ljava/util/Vector;
+    iget-object v0, p0, Lorg/bouncycastle/asn1/x509/vdb;->Xya:Ljava/util/Vector;
 
     invoke-virtual {v0, p1}, Ljava/util/Vector;->addElement(Ljava/lang/Object;)V
 
@@ -195,7 +195,7 @@
 
     iget-object v0, p0, Lorg/bouncycastle/asn1/x509/vdb;->extensions:Ljava/util/Hashtable;
 
-    invoke-virtual {p1}, Lorg/bouncycastle/asn1/x509/gwm;->Wh()Lorg/bouncycastle/asn1/bvj;
+    invoke-virtual {p1}, Lorg/bouncycastle/asn1/x509/gwm;->ei()Lorg/bouncycastle/asn1/bvj;
 
     move-result-object v1
 
@@ -205,9 +205,9 @@
 
     if-nez v0, :cond_0
 
-    iget-object v0, p0, Lorg/bouncycastle/asn1/x509/vdb;->Jwa:Ljava/util/Vector;
+    iget-object v0, p0, Lorg/bouncycastle/asn1/x509/vdb;->Xya:Ljava/util/Vector;
 
-    invoke-virtual {p1}, Lorg/bouncycastle/asn1/x509/gwm;->Wh()Lorg/bouncycastle/asn1/bvj;
+    invoke-virtual {p1}, Lorg/bouncycastle/asn1/x509/gwm;->ei()Lorg/bouncycastle/asn1/bvj;
 
     move-result-object v1
 
@@ -215,7 +215,7 @@
 
     iget-object p0, p0, Lorg/bouncycastle/asn1/x509/vdb;->extensions:Ljava/util/Hashtable;
 
-    invoke-virtual {p1}, Lorg/bouncycastle/asn1/x509/gwm;->Wh()Lorg/bouncycastle/asn1/bvj;
+    invoke-virtual {p1}, Lorg/bouncycastle/asn1/x509/gwm;->ei()Lorg/bouncycastle/asn1/bvj;
 
     move-result-object v0
 
@@ -234,7 +234,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p1}, Lorg/bouncycastle/asn1/x509/gwm;->Wh()Lorg/bouncycastle/asn1/bvj;
+    invoke-virtual {p1}, Lorg/bouncycastle/asn1/x509/gwm;->ei()Lorg/bouncycastle/asn1/bvj;
 
     move-result-object p1
 

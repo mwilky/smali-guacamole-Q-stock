@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/server/wm/veq;->eq()V
+    value = Lcom/android/server/wm/cgv;->yq()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/server/wm/veq;
+.field final synthetic this$0:Lcom/android/server/wm/cgv;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/server/wm/veq;)V
+.method constructor <init>(Lcom/android/server/wm/cgv;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/android/server/wm/ire;->this$0:Lcom/android/server/wm/veq;
+    iput-object p1, p0, Lcom/android/server/wm/ire;->this$0:Lcom/android/server/wm/cgv;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -50,9 +50,9 @@
 
     invoke-static {p1, p2}, Landroid/util/Slog;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    iget-object p2, p0, Lcom/android/server/wm/ire;->this$0:Lcom/android/server/wm/veq;
+    iget-object p2, p0, Lcom/android/server/wm/ire;->this$0:Lcom/android/server/wm/cgv;
 
-    invoke-virtual {p2}, Lcom/android/server/wm/veq;->exitQuickReply()V
+    invoke-virtual {p2}, Lcom/android/server/wm/cgv;->exitQuickReply()V
 
     new-instance p2, Landroid/content/Intent;
 
@@ -60,13 +60,17 @@
 
     invoke-direct {p2, v0}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
+    const-string v0, "com.android.settings"
+
+    invoke-virtual {p2, v0}, Landroid/content/Intent;->setPackage(Ljava/lang/String;)Landroid/content/Intent;
+
     const/high16 v0, 0x14000000
 
     invoke-virtual {p2, v0}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
 
-    iget-object p0, p0, Lcom/android/server/wm/ire;->this$0:Lcom/android/server/wm/veq;
+    iget-object p0, p0, Lcom/android/server/wm/ire;->this$0:Lcom/android/server/wm/cgv;
 
-    invoke-static {p0}, Lcom/android/server/wm/veq;->zta(Lcom/android/server/wm/veq;)Landroid/content/Context;
+    invoke-static {p0}, Lcom/android/server/wm/cgv;->zta(Lcom/android/server/wm/cgv;)Landroid/content/Context;
 
     move-result-object p0
 

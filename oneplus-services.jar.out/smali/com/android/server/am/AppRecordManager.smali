@@ -14,29 +14,29 @@
 # static fields
 .field public static final IN_USING:Z
 
-.field public static final Mh:I = -0x3e8
-
-.field public static final Nh:I = 0x0
-
-.field public static final Oh:I = 0x1
-
-.field public static final Ph:I = 0x2
-
-.field public static final Qh:I = 0x4
-
-.field public static final Rh:I = 0x8
-
 .field public static final STATE_ACTIVE:I = 0x1
 
 .field public static final STATE_IDLE:I = 0x2
 
-.field public static final Sh:I = 0x10
+.field public static final ii:I = -0x3e8
 
-.field public static final Th:I = 0x20
+.field public static final ji:I = 0x0
 
-.field public static final Uh:I = 0x40
+.field public static final ki:I = 0x1
 
-.field public static final Vh:I = 0x80
+.field public static final li:I = 0x2
+
+.field public static final mi:I = 0x4
+
+.field public static final ni:I = 0x8
+
+.field public static final oi:I = 0x10
+
+.field public static final qi:I = 0x20
+
+.field public static final ri:I = 0x40
+
+.field public static final ti:I = 0x80
 
 
 # direct methods

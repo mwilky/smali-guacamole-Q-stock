@@ -8,11 +8,11 @@
 
 
 # instance fields
+.field private Jua:Lorg/bouncycastle/asn1/ywr;
+
+.field private Kua:Lorg/bouncycastle/asn1/ywr;
+
 .field private base:Lorg/bouncycastle/asn1/x509/zgw;
-
-.field private usa:Lorg/bouncycastle/asn1/ywr;
-
-.field private vsa:Lorg/bouncycastle/asn1/ywr;
 
 
 # direct methods
@@ -81,7 +81,7 @@
 
     move-result-object v1
 
-    iput-object v1, p0, Lorg/bouncycastle/asn1/x509/oxb;->usa:Lorg/bouncycastle/asn1/ywr;
+    iput-object v1, p0, Lorg/bouncycastle/asn1/x509/oxb;->Jua:Lorg/bouncycastle/asn1/ywr;
 
     invoke-virtual {p1, v3}, Lorg/bouncycastle/asn1/obl;->getObjectAt(I)Lorg/bouncycastle/asn1/ssp;
 
@@ -196,7 +196,7 @@
 
     move-result-object p1
 
-    iput-object p1, p0, Lorg/bouncycastle/asn1/x509/oxb;->vsa:Lorg/bouncycastle/asn1/ywr;
+    iput-object p1, p0, Lorg/bouncycastle/asn1/x509/oxb;->Kua:Lorg/bouncycastle/asn1/ywr;
 
     goto :goto_1
 
@@ -230,7 +230,7 @@
 
     move-result-object p1
 
-    iput-object p1, p0, Lorg/bouncycastle/asn1/x509/oxb;->usa:Lorg/bouncycastle/asn1/ywr;
+    iput-object p1, p0, Lorg/bouncycastle/asn1/x509/oxb;->Jua:Lorg/bouncycastle/asn1/ywr;
 
     :cond_6
     :goto_1
@@ -260,7 +260,7 @@
 
     invoke-direct {p1, p3}, Lorg/bouncycastle/asn1/ywr;-><init>(Ljava/math/BigInteger;)V
 
-    iput-object p1, p0, Lorg/bouncycastle/asn1/x509/oxb;->vsa:Lorg/bouncycastle/asn1/ywr;
+    iput-object p1, p0, Lorg/bouncycastle/asn1/x509/oxb;->Kua:Lorg/bouncycastle/asn1/ywr;
 
     :cond_0
     if-nez p2, :cond_1
@@ -275,7 +275,7 @@
     invoke-direct {p1, p2}, Lorg/bouncycastle/asn1/ywr;-><init>(Ljava/math/BigInteger;)V
 
     :goto_0
-    iput-object p1, p0, Lorg/bouncycastle/asn1/x509/oxb;->usa:Lorg/bouncycastle/asn1/ywr;
+    iput-object p1, p0, Lorg/bouncycastle/asn1/x509/oxb;->Jua:Lorg/bouncycastle/asn1/ywr;
 
     return-void
 .end method
@@ -337,7 +337,7 @@
 .method public getMaximum()Ljava/math/BigInteger;
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/asn1/x509/oxb;->vsa:Lorg/bouncycastle/asn1/ywr;
+    iget-object p0, p0, Lorg/bouncycastle/asn1/x509/oxb;->Kua:Lorg/bouncycastle/asn1/ywr;
 
     if-nez p0, :cond_0
 
@@ -356,7 +356,7 @@
 .method public getMinimum()Ljava/math/BigInteger;
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/asn1/x509/oxb;->usa:Lorg/bouncycastle/asn1/ywr;
+    iget-object p0, p0, Lorg/bouncycastle/asn1/x509/oxb;->Jua:Lorg/bouncycastle/asn1/ywr;
 
     if-nez p0, :cond_0
 
@@ -383,7 +383,7 @@
 
     invoke-virtual {v0, v1}, Lorg/bouncycastle/asn1/cno;->you(Lorg/bouncycastle/asn1/ssp;)V
 
-    iget-object v1, p0, Lorg/bouncycastle/asn1/x509/oxb;->usa:Lorg/bouncycastle/asn1/ywr;
+    iget-object v1, p0, Lorg/bouncycastle/asn1/x509/oxb;->Jua:Lorg/bouncycastle/asn1/ywr;
 
     const/4 v2, 0x0
 
@@ -403,14 +403,14 @@
 
     new-instance v1, Lorg/bouncycastle/asn1/L;
 
-    iget-object v3, p0, Lorg/bouncycastle/asn1/x509/oxb;->usa:Lorg/bouncycastle/asn1/ywr;
+    iget-object v3, p0, Lorg/bouncycastle/asn1/x509/oxb;->Jua:Lorg/bouncycastle/asn1/ywr;
 
     invoke-direct {v1, v2, v2, v3}, Lorg/bouncycastle/asn1/L;-><init>(ZILorg/bouncycastle/asn1/ssp;)V
 
     invoke-virtual {v0, v1}, Lorg/bouncycastle/asn1/cno;->you(Lorg/bouncycastle/asn1/ssp;)V
 
     :cond_0
-    iget-object p0, p0, Lorg/bouncycastle/asn1/x509/oxb;->vsa:Lorg/bouncycastle/asn1/ywr;
+    iget-object p0, p0, Lorg/bouncycastle/asn1/x509/oxb;->Kua:Lorg/bouncycastle/asn1/ywr;
 
     if-eqz p0, :cond_1
 

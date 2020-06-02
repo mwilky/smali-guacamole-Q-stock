@@ -15,7 +15,7 @@
     return-void
 .end method
 
-.method private static Rb(Ljava/lang/String;)Z
+.method private static Tb(Ljava/lang/String;)Z
     .locals 1
 
     const-string v0, "Cause: null pointer dereference"
@@ -45,7 +45,7 @@
     return p0
 .end method
 
-.method private static Sb(Ljava/lang/String;)Z
+.method private static Ub(Ljava/lang/String;)Z
     .locals 1
 
     const-string v0, "java.lang.UnsatisfiedLinkError: JNI_ERR returned from JNI_OnLoad in"
@@ -84,7 +84,7 @@
     return p0
 .end method
 
-.method private static Tb(Ljava/lang/String;)Z
+.method private static Vb(Ljava/lang/String;)Z
     .locals 1
 
     const-string v0, "Abort message: \'JNI DETECTED ERROR IN APPLICATION: obj == null"
@@ -134,7 +134,7 @@
 
     move-result-object p1
 
-    const v0, 0x50d00b0
+    const v0, 0x50d00b3
 
     const/4 v1, 0x2
 
@@ -184,19 +184,19 @@
 .method public showCrashDetail(Ljava/lang/String;)Z
     .locals 0
 
+    invoke-static {p1}, Lcom/android/server/am/p;->Vb(Ljava/lang/String;)Z
+
+    move-result p0
+
+    if-nez p0, :cond_1
+
     invoke-static {p1}, Lcom/android/server/am/p;->Tb(Ljava/lang/String;)Z
 
     move-result p0
 
     if-nez p0, :cond_1
 
-    invoke-static {p1}, Lcom/android/server/am/p;->Rb(Ljava/lang/String;)Z
-
-    move-result p0
-
-    if-nez p0, :cond_1
-
-    invoke-static {p1}, Lcom/android/server/am/p;->Sb(Ljava/lang/String;)Z
+    invoke-static {p1}, Lcom/android/server/am/p;->Ub(Ljava/lang/String;)Z
 
     move-result p0
 

@@ -24,7 +24,23 @@
 
 
 # virtual methods
-.method public Be()I
+.method public I(I)V
+    .locals 0
+
+    iput p1, p0, Lcom/oneplus/android/server/display/igw;->mFrom:I
+
+    return-void
+.end method
+
+.method public J(I)V
+    .locals 0
+
+    iput p1, p0, Lcom/oneplus/android/server/display/igw;->mTo:I
+
+    return-void
+.end method
+
+.method public Je()I
     .locals 0
 
     iget p0, p0, Lcom/oneplus/android/server/display/igw;->mFrom:I
@@ -32,7 +48,7 @@
     return p0
 .end method
 
-.method public Ce()I
+.method public Ke()I
     .locals 0
 
     iget p0, p0, Lcom/oneplus/android/server/display/igw;->mTo:I
@@ -40,7 +56,7 @@
     return p0
 .end method
 
-.method public De()Z
+.method public Le()Z
     .locals 0
 
     iget-object p0, p0, Lcom/oneplus/android/server/display/igw;->mAnimator:Landroid/animation/ValueAnimator;
@@ -61,22 +77,6 @@
     const/4 p0, 0x0
 
     return p0
-.end method
-
-.method public F(I)V
-    .locals 0
-
-    iput p1, p0, Lcom/oneplus/android/server/display/igw;->mFrom:I
-
-    return-void
-.end method
-
-.method public G(I)V
-    .locals 0
-
-    iput p1, p0, Lcom/oneplus/android/server/display/igw;->mTo:I
-
-    return-void
 .end method
 
 .method public cancelAnimator()V

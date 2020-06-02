@@ -29,23 +29,23 @@
 
 .field private static final NOT_FOUND:I = -0x1
 
-.field private static final Sd:Ljava/lang/String; = "ProcessManagement"
-
 .field private static final TAG:Ljava/lang/String; = "OpAlarmManager"
 
-.field private static final ie:I = 0x0
+.field private static final Td:Ljava/lang/String; = "ProcessManagement"
 
-.field private static final je:I = 0x1
+.field private static final je:I = 0x0
 
-.field private static final ke:I = 0x2
+.field private static final ke:I = 0x1
 
-.field private static final le:I = 0x3
+.field private static final le:I = 0x2
 
-.field private static mAms:Lcom/android/server/AlarmManagerService;
+.field private static mAms:Lcom/android/server/AlarmManagerService; = null
 
-.field private static mIsDeepSleep:Z
+.field private static mIsDeepSleep:Z = false
 
-.field static me:Ljava/util/List;
+.field private static final me:I = 0x3
+
+.field static ne:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
@@ -57,19 +57,9 @@
 
 
 # instance fields
-.field private Jd:Lcom/android/server/AlarmManagerService$AmsInner;
+.field private Kd:Lcom/android/server/AlarmManagerService$AmsInner;
 
-.field Zd:[I
-
-.field private _d:Ljava/util/List;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/List<",
-            "Ljava/lang/String;",
-            ">;"
-        }
-    .end annotation
-.end field
+.field _d:[I
 
 .field private ae:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
@@ -81,7 +71,17 @@
     .end annotation
 .end field
 
-.field private final be:Ljava/util/HashMap;
+.field private be:Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/List<",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private final ce:Ljava/util/HashMap;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/HashMap<",
@@ -93,7 +93,7 @@
     .end annotation
 .end field
 
-.field private ce:Ljava/util/HashMap;
+.field private de:Ljava/util/HashMap;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/HashMap<",
@@ -105,7 +105,7 @@
     .end annotation
 .end field
 
-.field private de:Ljava/util/List;
+.field private ee:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
@@ -115,9 +115,9 @@
     .end annotation
 .end field
 
-.field private ee:Z
+.field private fe:Z
 
-.field private fe:Ljava/util/HashMap;
+.field private ge:Ljava/util/HashMap;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/HashMap<",
@@ -129,7 +129,7 @@
     .end annotation
 .end field
 
-.field private ge:Ljava/util/List;
+.field private he:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
@@ -139,7 +139,7 @@
     .end annotation
 .end field
 
-.field private he:Lcom/oneplus/config/ConfigObserver;
+.field private ie:Lcom/oneplus/config/ConfigObserver;
 
 .field final mConfigHandler:Lcom/android/server/ear$zta;
 
@@ -166,7 +166,7 @@
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    sput-object v0, Lcom/android/server/ear;->me:Ljava/util/List;
+    sput-object v0, Lcom/android/server/ear;->ne:Ljava/util/List;
 
     return-void
 .end method
@@ -182,7 +182,7 @@
 
     new-array v1, v0, [I
 
-    iput-object v1, p0, Lcom/android/server/ear;->Zd:[I
+    iput-object v1, p0, Lcom/android/server/ear;->_d:[I
 
     new-instance v1, Lcom/android/server/ear$zta;
 
@@ -202,33 +202,33 @@
 
     invoke-direct {v1}, Ljava/util/HashMap;-><init>()V
 
-    iput-object v1, p0, Lcom/android/server/ear;->be:Ljava/util/HashMap;
+    iput-object v1, p0, Lcom/android/server/ear;->ce:Ljava/util/HashMap;
 
     new-instance v1, Ljava/util/HashMap;
 
     invoke-direct {v1}, Ljava/util/HashMap;-><init>()V
 
-    iput-object v1, p0, Lcom/android/server/ear;->ce:Ljava/util/HashMap;
+    iput-object v1, p0, Lcom/android/server/ear;->de:Ljava/util/HashMap;
 
     new-instance v1, Ljava/util/ArrayList;
 
     invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v1, p0, Lcom/android/server/ear;->de:Ljava/util/List;
+    iput-object v1, p0, Lcom/android/server/ear;->ee:Ljava/util/List;
 
-    iput-boolean v0, p0, Lcom/android/server/ear;->ee:Z
+    iput-boolean v0, p0, Lcom/android/server/ear;->fe:Z
 
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    iput-object v0, p0, Lcom/android/server/ear;->fe:Ljava/util/HashMap;
+    iput-object v0, p0, Lcom/android/server/ear;->ge:Ljava/util/HashMap;
 
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/android/server/ear;->ge:Ljava/util/List;
+    iput-object v0, p0, Lcom/android/server/ear;->he:Ljava/util/List;
 
     return-void
 .end method
@@ -264,7 +264,7 @@
 
     if-eqz p1, :cond_2
 
-    iget-object v0, p0, Lcom/android/server/ear;->be:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/android/server/ear;->ce:Ljava/util/HashMap;
 
     invoke-virtual {v0}, Ljava/util/HashMap;->clear()V
 
@@ -316,7 +316,7 @@
 
     invoke-direct {v3, v2, v1, v0}, Lcom/android/server/ear$you;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    iget-object v0, p0, Lcom/android/server/ear;->be:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/android/server/ear;->ce:Ljava/util/HashMap;
 
     invoke-virtual {v0, v2}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -332,7 +332,7 @@
 
     invoke-virtual {v0, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    iget-object v1, p0, Lcom/android/server/ear;->be:Ljava/util/HashMap;
+    iget-object v1, p0, Lcom/android/server/ear;->ce:Ljava/util/HashMap;
 
     invoke-virtual {v1, v2, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -381,7 +381,7 @@
 
     if-eqz p2, :cond_2
 
-    iget-object p0, p0, Lcom/android/server/ear;->be:Ljava/util/HashMap;
+    iget-object p0, p0, Lcom/android/server/ear;->ce:Ljava/util/HashMap;
 
     invoke-virtual {p0, p1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -414,7 +414,7 @@
 
     if-eqz p3, :cond_1
 
-    iget-object v0, p3, Lcom/android/server/ear$you;->Yd:Ljava/lang/String;
+    iget-object v0, p3, Lcom/android/server/ear$you;->Zd:Ljava/lang/String;
 
     invoke-virtual {v0, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -445,7 +445,7 @@
     invoke-static {p1, p0}, Landroid/util/Slog;->v(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_0
-    iget-wide p0, p3, Lcom/android/server/ear$you;->Xd:J
+    iget-wide p0, p3, Lcom/android/server/ear$you;->Yd:J
 
     return-wide p0
 
@@ -824,7 +824,7 @@
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object p0, p0, Lcom/android/server/ear;->ae:Ljava/util/List;
+    iget-object p0, p0, Lcom/android/server/ear;->be:Ljava/util/List;
 
     invoke-virtual {p1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -901,14 +901,14 @@
 
     move-result-object v2
 
-    iget-object v4, p0, Lcom/android/server/ear;->ae:Ljava/util/List;
+    iget-object v4, p0, Lcom/android/server/ear;->be:Ljava/util/List;
 
     monitor-enter v4
     :try_end_0
     .catch Lorg/json/JSONException; {:try_start_0 .. :try_end_0} :catch_0
 
     :try_start_1
-    iget-object v6, p0, Lcom/android/server/ear;->ae:Ljava/util/List;
+    iget-object v6, p0, Lcom/android/server/ear;->be:Ljava/util/List;
 
     invoke-interface {v6}, Ljava/util/List;->clear()V
 
@@ -921,7 +921,7 @@
 
     if-ge v6, v7, :cond_1
 
-    iget-object v7, p0, Lcom/android/server/ear;->ae:Ljava/util/List;
+    iget-object v7, p0, Lcom/android/server/ear;->be:Ljava/util/List;
 
     invoke-virtual {v2, v6}, Lorg/json/JSONArray;->getString(I)Ljava/lang/String;
 
@@ -972,14 +972,14 @@
 
     move-result-object v4
 
-    sget-object v6, Lcom/android/server/ear;->me:Ljava/util/List;
+    sget-object v6, Lcom/android/server/ear;->ne:Ljava/util/List;
 
     monitor-enter v6
     :try_end_2
     .catch Lorg/json/JSONException; {:try_start_2 .. :try_end_2} :catch_0
 
     :try_start_3
-    sget-object v7, Lcom/android/server/ear;->me:Ljava/util/List;
+    sget-object v7, Lcom/android/server/ear;->ne:Ljava/util/List;
 
     invoke-interface {v7}, Ljava/util/List;->clear()V
 
@@ -992,7 +992,7 @@
 
     if-ge v7, v8, :cond_3
 
-    sget-object v8, Lcom/android/server/ear;->me:Ljava/util/List;
+    sget-object v8, Lcom/android/server/ear;->ne:Ljava/util/List;
 
     invoke-virtual {v4, v7}, Lorg/json/JSONArray;->getString(I)Ljava/lang/String;
 
@@ -1041,14 +1041,14 @@
 
     move-result-object v4
 
-    iget-object v6, p0, Lcom/android/server/ear;->de:Ljava/util/List;
+    iget-object v6, p0, Lcom/android/server/ear;->ee:Ljava/util/List;
 
     monitor-enter v6
     :try_end_4
     .catch Lorg/json/JSONException; {:try_start_4 .. :try_end_4} :catch_0
 
     :try_start_5
-    iget-object v7, p0, Lcom/android/server/ear;->de:Ljava/util/List;
+    iget-object v7, p0, Lcom/android/server/ear;->ee:Ljava/util/List;
 
     invoke-interface {v7}, Ljava/util/List;->clear()V
 
@@ -1088,7 +1088,7 @@
     invoke-static {v8, v9}, Landroid/util/Slog;->e(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_5
-    iget-object v8, p0, Lcom/android/server/ear;->de:Ljava/util/List;
+    iget-object v8, p0, Lcom/android/server/ear;->ee:Ljava/util/List;
 
     invoke-virtual {v4, v7}, Lorg/json/JSONArray;->getString(I)Ljava/lang/String;
 
@@ -1101,9 +1101,9 @@
     goto :goto_5
 
     :cond_6
-    iget-object v4, p0, Lcom/android/server/ear;->ce:Ljava/util/HashMap;
+    iget-object v4, p0, Lcom/android/server/ear;->de:Ljava/util/HashMap;
 
-    iget-object v7, p0, Lcom/android/server/ear;->de:Ljava/util/List;
+    iget-object v7, p0, Lcom/android/server/ear;->ee:Ljava/util/List;
 
     invoke-direct {p0, v4, v7, v0}, Lcom/android/server/ear;->zta(Ljava/util/HashMap;Ljava/util/List;Z)V
 
@@ -1143,14 +1143,14 @@
 
     move-result-object v3
 
-    iget-object v4, p0, Lcom/android/server/ear;->ge:Ljava/util/List;
+    iget-object v4, p0, Lcom/android/server/ear;->he:Ljava/util/List;
 
     monitor-enter v4
     :try_end_6
     .catch Lorg/json/JSONException; {:try_start_6 .. :try_end_6} :catch_0
 
     :try_start_7
-    iget-object v6, p0, Lcom/android/server/ear;->ge:Ljava/util/List;
+    iget-object v6, p0, Lcom/android/server/ear;->he:Ljava/util/List;
 
     invoke-interface {v6}, Ljava/util/List;->clear()V
 
@@ -1190,7 +1190,7 @@
     invoke-static {v7, v8}, Landroid/util/Slog;->e(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_8
-    iget-object v7, p0, Lcom/android/server/ear;->ge:Ljava/util/List;
+    iget-object v7, p0, Lcom/android/server/ear;->he:Ljava/util/List;
 
     invoke-virtual {v3, v6}, Lorg/json/JSONArray;->getString(I)Ljava/lang/String;
 
@@ -1203,9 +1203,9 @@
     goto :goto_7
 
     :cond_9
-    iget-object v3, p0, Lcom/android/server/ear;->fe:Ljava/util/HashMap;
+    iget-object v3, p0, Lcom/android/server/ear;->ge:Ljava/util/HashMap;
 
-    iget-object v6, p0, Lcom/android/server/ear;->ge:Ljava/util/List;
+    iget-object v6, p0, Lcom/android/server/ear;->he:Ljava/util/List;
 
     invoke-direct {p0, v3, v6, v5}, Lcom/android/server/ear;->zta(Ljava/util/HashMap;Ljava/util/List;Z)V
 
@@ -1240,7 +1240,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lcom/android/server/ear;->ae:Ljava/util/List;
+    iget-object v1, p0, Lcom/android/server/ear;->be:Ljava/util/List;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -1248,7 +1248,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sget-object v1, Lcom/android/server/ear;->me:Ljava/util/List;
+    sget-object v1, Lcom/android/server/ear;->ne:Ljava/util/List;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -1266,7 +1266,7 @@
 
     invoke-static {p1, v0}, Landroid/util/Slog;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    iget-object p1, p0, Lcom/android/server/ear;->ae:Ljava/util/List;
+    iget-object p1, p0, Lcom/android/server/ear;->be:Ljava/util/List;
 
     invoke-direct {p0, p1}, Lcom/android/server/ear;->kth(Ljava/util/List;)V
     :try_end_8
@@ -1604,7 +1604,7 @@
 
     move-result-wide v11
 
-    iget-object v1, v0, Lcom/android/server/ear;->Jd:Lcom/android/server/AlarmManagerService$AmsInner;
+    iget-object v1, v0, Lcom/android/server/ear;->Kd:Lcom/android/server/AlarmManagerService$AmsInner;
 
     invoke-virtual {v1}, Lcom/android/server/AlarmManagerService$AmsInner;->cleanUpPendingWhileIdleAlarmsLocked()V
 
@@ -1671,7 +1671,7 @@
     if-lez v4, :cond_4
 
     :cond_3
-    iget-object v4, v0, Lcom/android/server/ear;->Jd:Lcom/android/server/AlarmManagerService$AmsInner;
+    iget-object v4, v0, Lcom/android/server/ear;->Kd:Lcom/android/server/AlarmManagerService$AmsInner;
 
     invoke-virtual {v4, v8, v9, v10, v13}, Lcom/android/server/AlarmManagerService$AmsInner;->reAddAlarmLockedInner(Lcom/android/server/AlarmManagerService$Alarm;JZ)V
 
@@ -1806,7 +1806,7 @@
     :goto_5
     iput-wide v3, v1, Lcom/android/server/AlarmManagerService$Alarm;->origWhen:J
 
-    iget-object v5, v0, Lcom/android/server/ear;->Jd:Lcom/android/server/AlarmManagerService$AmsInner;
+    iget-object v5, v0, Lcom/android/server/ear;->Kd:Lcom/android/server/AlarmManagerService$AmsInner;
 
     const/4 v6, 0x0
 
@@ -1917,7 +1917,7 @@
     :goto_8
     iput-wide v3, v1, Lcom/android/server/AlarmManagerService$Alarm;->origWhen:J
 
-    iget-object v5, v0, Lcom/android/server/ear;->Jd:Lcom/android/server/AlarmManagerService$AmsInner;
+    iget-object v5, v0, Lcom/android/server/ear;->Kd:Lcom/android/server/AlarmManagerService$AmsInner;
 
     const/4 v6, 0x0
 
@@ -2279,7 +2279,7 @@
 .method public ifDropPkgAlarm(Lcom/android/server/AlarmManagerService$Alarm;Z)Z
     .locals 3
 
-    iget-object v0, p0, Lcom/android/server/ear;->ce:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/android/server/ear;->de:Ljava/util/HashMap;
 
     const/4 v1, 0x0
 
@@ -2294,11 +2294,11 @@
     return v2
 
     :cond_0
-    iget-boolean v0, p0, Lcom/android/server/ear;->ee:Z
+    iget-boolean v0, p0, Lcom/android/server/ear;->fe:Z
 
     if-eqz v0, :cond_1
 
-    iget-object v0, p0, Lcom/android/server/ear;->fe:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/android/server/ear;->ge:Ljava/util/HashMap;
 
     invoke-direct {p0, v0, p1, v2, p2}, Lcom/android/server/ear;->zta(Ljava/util/HashMap;Lcom/android/server/AlarmManagerService$Alarm;ZZ)Z
 
@@ -2385,7 +2385,7 @@
     :cond_1
     new-array p2, v2, [I
 
-    const/16 v3, 0x8d
+    const/16 v3, 0x8e
 
     aput v3, p2, v1
 
@@ -2407,11 +2407,11 @@
 
     if-ne p2, v2, :cond_2
 
-    iget-object p2, p0, Lcom/android/server/ear;->ce:Ljava/util/HashMap;
+    iget-object p2, p0, Lcom/android/server/ear;->de:Ljava/util/HashMap;
 
     invoke-direct {p0, p2, p1, v1}, Lcom/android/server/ear;->zta(Ljava/util/HashMap;Ljava/io/PrintWriter;Z)V
 
-    iget-object p2, p0, Lcom/android/server/ear;->fe:Ljava/util/HashMap;
+    iget-object p2, p0, Lcom/android/server/ear;->ge:Ljava/util/HashMap;
 
     invoke-direct {p0, p2, p1, v2}, Lcom/android/server/ear;->zta(Ljava/util/HashMap;Ljava/io/PrintWriter;Z)V
 
@@ -2701,13 +2701,13 @@
     invoke-static {v1, v0}, Landroid/util/Slog;->v(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_0
-    iput-object p1, p0, Lcom/android/server/ear;->Jd:Lcom/android/server/AlarmManagerService$AmsInner;
+    iput-object p1, p0, Lcom/android/server/ear;->Kd:Lcom/android/server/AlarmManagerService$AmsInner;
 
     const/4 p1, 0x1
 
     new-array v0, p1, [I
 
-    const/16 v2, 0x8d
+    const/16 v2, 0x8e
 
     const/4 v3, 0x0
 
@@ -2728,7 +2728,7 @@
     invoke-static {v1, v0}, Landroid/util/Slog;->e(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_1
-    iput-boolean p1, p0, Lcom/android/server/ear;->ee:Z
+    iput-boolean p1, p0, Lcom/android/server/ear;->fe:Z
 
     sget-boolean v0, Lcom/android/server/ear;->DEBUG_ONEPLUS:Z
 
@@ -2747,7 +2747,7 @@
 
     invoke-interface {v0, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    iget-object v2, p0, Lcom/android/server/ear;->fe:Ljava/util/HashMap;
+    iget-object v2, p0, Lcom/android/server/ear;->ge:Ljava/util/HashMap;
 
     invoke-direct {p0, v2, v0, p1}, Lcom/android/server/ear;->zta(Ljava/util/HashMap;Ljava/util/List;Z)V
 
@@ -2772,7 +2772,7 @@
 
     invoke-direct {p1, v0}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
 
-    iput-object p1, p0, Lcom/android/server/ear;->ae:Ljava/util/List;
+    iput-object p1, p0, Lcom/android/server/ear;->be:Ljava/util/List;
 
     new-instance p1, Ljava/lang/StringBuilder;
 
@@ -2782,7 +2782,7 @@
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v0, p0, Lcom/android/server/ear;->ae:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/server/ear;->be:Ljava/util/List;
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -2792,7 +2792,7 @@
 
     invoke-static {v1, p1}, Landroid/util/Slog;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    iget-object p1, p0, Lcom/android/server/ear;->ae:Ljava/util/List;
+    iget-object p1, p0, Lcom/android/server/ear;->be:Ljava/util/List;
 
     invoke-direct {p0, p1}, Lcom/android/server/ear;->kth(Ljava/util/List;)V
 
@@ -2810,9 +2810,9 @@
 
     invoke-direct {p1, v0, v1, v2, v4}, Lcom/oneplus/config/ConfigObserver;-><init>(Landroid/content/Context;Landroid/os/Handler;Lcom/oneplus/config/ConfigObserver$ConfigUpdater;Ljava/lang/String;)V
 
-    iput-object p1, p0, Lcom/android/server/ear;->he:Lcom/oneplus/config/ConfigObserver;
+    iput-object p1, p0, Lcom/android/server/ear;->ie:Lcom/oneplus/config/ConfigObserver;
 
-    iget-object p1, p0, Lcom/android/server/ear;->he:Lcom/oneplus/config/ConfigObserver;
+    iget-object p1, p0, Lcom/android/server/ear;->ie:Lcom/oneplus/config/ConfigObserver;
 
     invoke-virtual {p1}, Lcom/oneplus/config/ConfigObserver;->register()V
 
@@ -2836,27 +2836,27 @@
 
     invoke-direct {p1, v0}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
 
-    iput-object p1, p0, Lcom/android/server/ear;->_d:Ljava/util/List;
+    iput-object p1, p0, Lcom/android/server/ear;->ae:Ljava/util/List;
 
-    sget-object p1, Lcom/android/server/ear;->me:Ljava/util/List;
+    sget-object p1, Lcom/android/server/ear;->ne:Ljava/util/List;
 
     const-string v0, "io.rong.push.intent.action.HEART_BEAT"
 
     invoke-interface {p1, v0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    sget-object p1, Lcom/android/server/ear;->me:Ljava/util/List;
+    sget-object p1, Lcom/android/server/ear;->ne:Ljava/util/List;
 
     const-string v0, "com.xiaomi.push.PING_TIMER"
 
     invoke-interface {p1, v0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    sget-object p1, Lcom/android/server/ear;->me:Ljava/util/List;
+    sget-object p1, Lcom/android/server/ear;->ne:Ljava/util/List;
 
     const-string v0, "io.rong.push.HeartBeat"
 
     invoke-interface {p1, v0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    sget-object p1, Lcom/android/server/ear;->me:Ljava/util/List;
+    sget-object p1, Lcom/android/server/ear;->ne:Ljava/util/List;
 
     const-string v0, "com.kwai.chat.kwailink.heartbeat"
 
@@ -2956,7 +2956,7 @@
 
     invoke-static {v1, v2}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    iput-object p1, p0, Lcom/android/server/ear;->Zd:[I
+    iput-object p1, p0, Lcom/android/server/ear;->_d:[I
 
     monitor-exit v0
 
@@ -2981,7 +2981,7 @@
 
     const/4 v2, 0x0
 
-    const/16 v3, 0x8d
+    const/16 v3, 0x8e
 
     aput v3, v1, v2
 
@@ -3011,12 +3011,12 @@
 
     if-eqz p1, :cond_0
 
-    iput-boolean v0, p0, Lcom/android/server/ear;->ee:Z
+    iput-boolean v0, p0, Lcom/android/server/ear;->fe:Z
 
     goto :goto_0
 
     :cond_0
-    iput-boolean v2, p0, Lcom/android/server/ear;->ee:Z
+    iput-boolean v2, p0, Lcom/android/server/ear;->fe:Z
 
     :cond_1
     :goto_0
@@ -3049,7 +3049,7 @@
 
     if-eqz p3, :cond_2
 
-    iget-object p0, p0, Lcom/android/server/ear;->_d:Ljava/util/List;
+    iget-object p0, p0, Lcom/android/server/ear;->ae:Ljava/util/List;
 
     invoke-interface {p0, p1}, Ljava/util/List;->contains(Ljava/lang/Object;)Z
 
@@ -3066,7 +3066,7 @@
 .method public vdb(Ljava/lang/String;)Z
     .locals 3
 
-    sget-object p0, Lcom/android/server/ear;->me:Ljava/util/List;
+    sget-object p0, Lcom/android/server/ear;->ne:Ljava/util/List;
 
     monitor-enter p0
 
@@ -3076,7 +3076,7 @@
 
     :goto_0
     :try_start_0
-    sget-object v2, Lcom/android/server/ear;->me:Ljava/util/List;
+    sget-object v2, Lcom/android/server/ear;->ne:Ljava/util/List;
 
     invoke-interface {v2}, Ljava/util/List;->size()I
 
@@ -3084,7 +3084,7 @@
 
     if-ge v1, v2, :cond_1
 
-    sget-object v2, Lcom/android/server/ear;->me:Ljava/util/List;
+    sget-object v2, Lcom/android/server/ear;->ne:Ljava/util/List;
 
     invoke-interface {v2, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 

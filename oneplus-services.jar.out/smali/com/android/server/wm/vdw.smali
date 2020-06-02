@@ -1,14 +1,11 @@
 .class Lcom/android/server/wm/vdw;
-.super Ljava/lang/Object;
+.super Landroid/content/BroadcastReceiver;
 .source ""
-
-# interfaces
-.implements Ljava/util/Comparator;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/server/wm/qeg;->zta(Landroid/graphics/Bitmap;II)I
+    value = Lcom/android/server/wm/OpScreenModeService;->initReceiver()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -16,59 +13,139 @@
     name = null
 .end annotation
 
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ljava/lang/Object;",
-        "Ljava/util/Comparator<",
-        "Ljava/lang/Integer;",
-        ">;"
-    }
-.end annotation
-
 
 # instance fields
-.field final synthetic this$0:Lcom/android/server/wm/qeg;
+.field rtg:Z
+
+.field final synthetic this$0:Lcom/android/server/wm/OpScreenModeService;
+
+.field tsu:I
 
 
 # direct methods
-.method constructor <init>(Lcom/android/server/wm/qeg;)V
+.method constructor <init>(Lcom/android/server/wm/OpScreenModeService;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/android/server/wm/vdw;->this$0:Lcom/android/server/wm/qeg;
+    iput-object p1, p0, Lcom/android/server/wm/vdw;->this$0:Lcom/android/server/wm/OpScreenModeService;
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
+
+    const/4 p1, -0x1
+
+    iput p1, p0, Lcom/android/server/wm/vdw;->tsu:I
+
+    const/4 p1, 0x0
+
+    iput-boolean p1, p0, Lcom/android/server/wm/vdw;->rtg:Z
 
     return-void
 .end method
 
 
 # virtual methods
-.method public compare(Ljava/lang/Integer;Ljava/lang/Integer;)I
-    .locals 0
+.method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
+    .locals 1
 
-    invoke-virtual {p1}, Ljava/lang/Integer;->intValue()I
+    :try_start_0
+    invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
-    move-result p0
+    move-result-object v0
 
-    invoke-virtual {p2}, Ljava/lang/Integer;->intValue()I
+    invoke-virtual {p1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+
+    invoke-virtual {p2}, Landroid/content/Intent;->getData()Landroid/net/Uri;
+
+    move-result-object p1
+
+    if-eqz p1, :cond_1
+
+    invoke-virtual {p1}, Landroid/net/Uri;->getSchemeSpecificPart()Ljava/lang/String;
+
+    move-result-object p1
+
+    const-string p2, "android.intent.action.PACKAGE_ADDED"
+
+    invoke-virtual {p2, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result p2
+
+    if-eqz p2, :cond_0
+
+    const-string p2, "com.android.compatibility.common.deviceinfo"
+
+    invoke-virtual {p2, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result p1
 
-    sub-int/2addr p0, p1
+    if-eqz p1, :cond_1
 
-    return p0
-.end method
+    iget-object p1, p0, Lcom/android/server/wm/vdw;->this$0:Lcom/android/server/wm/OpScreenModeService;
 
-.method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
-    .locals 0
+    iget p1, p1, Lcom/android/server/wm/OpScreenModeService;->mScreenRateSettings:I
 
-    check-cast p1, Ljava/lang/Integer;
+    const/4 p2, 0x1
 
-    check-cast p2, Ljava/lang/Integer;
+    if-eq p1, p2, :cond_1
 
-    invoke-virtual {p0, p1, p2}, Lcom/android/server/wm/vdw;->compare(Ljava/lang/Integer;Ljava/lang/Integer;)I
+    iget-object p1, p0, Lcom/android/server/wm/vdw;->this$0:Lcom/android/server/wm/OpScreenModeService;
 
-    move-result p0
+    iget p1, p1, Lcom/android/server/wm/OpScreenModeService;->mScreenRateSettings:I
 
-    return p0
+    iput p1, p0, Lcom/android/server/wm/vdw;->tsu:I
+
+    iget-object p1, p0, Lcom/android/server/wm/vdw;->this$0:Lcom/android/server/wm/OpScreenModeService;
+
+    iput p2, p1, Lcom/android/server/wm/OpScreenModeService;->mScreenRateSettings:I
+
+    sget-boolean p1, Lcom/android/server/wm/OpScreenModeService;->sIsResolutionAuto:Z
+
+    iput-boolean p1, p0, Lcom/android/server/wm/vdw;->rtg:Z
+
+    const/4 p0, 0x0
+
+    sput-boolean p0, Lcom/android/server/wm/OpScreenModeService;->sIsResolutionAuto:Z
+
+    goto :goto_0
+
+    :cond_0
+    const-string p2, "com.android.tradefed.utils.wifi"
+
+    invoke-virtual {p2, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_1
+
+    iget p1, p0, Lcom/android/server/wm/vdw;->tsu:I
+
+    const/4 p2, -0x1
+
+    if-eq p1, p2, :cond_1
+
+    iget-object p1, p0, Lcom/android/server/wm/vdw;->this$0:Lcom/android/server/wm/OpScreenModeService;
+
+    iget p2, p0, Lcom/android/server/wm/vdw;->tsu:I
+
+    iput p2, p1, Lcom/android/server/wm/OpScreenModeService;->mScreenRateSettings:I
+
+    iget-boolean p0, p0, Lcom/android/server/wm/vdw;->rtg:Z
+
+    sput-boolean p0, Lcom/android/server/wm/OpScreenModeService;->sIsResolutionAuto:Z
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    goto :goto_0
+
+    :catch_0
+    move-exception p0
+
+    const-string p1, "ScreenModeService"
+
+    const-string p2, "sPkgReceiver error."
+
+    invoke-static {p1, p2, p0}, Landroid/util/Slog;->w(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
+
+    :cond_1
+    :goto_0
+    return-void
 .end method

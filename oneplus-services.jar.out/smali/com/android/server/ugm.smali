@@ -18,7 +18,7 @@
 # static fields
 .field static final ONLINECONFIG_PROJECT_NAME:Ljava/lang/String; = "OnePlusSensorManager"
 
-.field private static final Oc:J = 0x2bf20L
+.field private static final Pc:J = 0x2bf20L
 
 .field static final TAG:Ljava/lang/String; = "OnePlusSensorManager"
 
@@ -26,16 +26,6 @@
 
 
 # instance fields
-.field private Lc:Ljava/util/ArrayList;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/ArrayList<",
-            "Ljava/lang/String;",
-            ">;"
-        }
-    .end annotation
-.end field
-
 .field private Mc:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -46,7 +36,17 @@
     .end annotation
 .end field
 
-.field private Nc:Landroid/content/pm/PackageManager;
+.field private Nc:Ljava/util/ArrayList;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/ArrayList<",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private Oc:Landroid/content/pm/PackageManager;
 
 .field private mConfigObserver:Lcom/oneplus/config/ConfigObserver;
 
@@ -109,14 +109,14 @@
 
     move-result-object p1
 
-    iput-object p1, p0, Lcom/android/server/ugm;->Nc:Landroid/content/pm/PackageManager;
+    iput-object p1, p0, Lcom/android/server/ugm;->Oc:Landroid/content/pm/PackageManager;
 
     invoke-direct {p0}, Lcom/android/server/ugm;->init()V
 
     return-void
 .end method
 
-.method private Fa(I)I
+.method private Ia(I)I
     .locals 0
 
     div-int/lit8 p1, p1, 0x64
@@ -124,7 +124,7 @@
     return p1
 .end method
 
-.method private Ga(I)I
+.method private Ja(I)I
     .locals 0
 
     rem-int/lit8 p1, p1, 0x64
@@ -139,13 +139,13 @@
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/android/server/ugm;->Lc:Ljava/util/ArrayList;
+    iput-object v0, p0, Lcom/android/server/ugm;->Mc:Ljava/util/ArrayList;
 
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/android/server/ugm;->Mc:Ljava/util/ArrayList;
+    iput-object v0, p0, Lcom/android/server/ugm;->Nc:Ljava/util/ArrayList;
 
     iget-object v0, p0, Lcom/android/server/ugm;->mHandler:Lcom/android/server/ugm$you;
 
@@ -167,7 +167,7 @@
 
     invoke-virtual {v1, v0, v2, v3}, Landroid/os/Handler;->sendMessageDelayed(Landroid/os/Message;J)Z
 
-    invoke-direct {p0}, Lcom/android/server/ugm;->ol()V
+    invoke-direct {p0}, Lcom/android/server/ugm;->xl()V
 
     invoke-static {}, Lcom/android/server/OnePlusUtil$zta;->getInstance()Lcom/android/server/OnePlusUtil$zta;
 
@@ -186,34 +186,6 @@
     move-result p0
 
     return p0
-.end method
-
-.method private ol()V
-    .locals 2
-
-    new-instance v0, Landroid/content/IntentFilter;
-
-    invoke-direct {v0}, Landroid/content/IntentFilter;-><init>()V
-
-    const v1, 0x7fffffff
-
-    invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->setPriority(I)V
-
-    const-string v1, "android.os.action.LIGHT_DEVICE_IDLE_MODE_CHANGED"
-
-    invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
-
-    const-string v1, "android.os.action.DEVICE_IDLE_MODE_CHANGED"
-
-    invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
-
-    iget-object v1, p0, Lcom/android/server/ugm;->mContext:Landroid/content/Context;
-
-    iget-object p0, p0, Lcom/android/server/ugm;->mGeneralReceiver:Landroid/content/BroadcastReceiver;
-
-    invoke-virtual {v1, p0, v0}, Landroid/content/Context;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
-
-    return-void
 .end method
 
 .method private resolveConfigFromJSON(Lorg/json/JSONArray;)V
@@ -246,13 +218,13 @@
 
     const-string v3, "disable_sensor_after_light_idle"
 
-    iget-object v4, p0, Lcom/android/server/ugm;->Lc:Ljava/util/ArrayList;
+    iget-object v4, p0, Lcom/android/server/ugm;->Mc:Ljava/util/ArrayList;
 
     invoke-direct {p0, v2, v3, v4}, Lcom/android/server/ugm;->zta(Lorg/json/JSONObject;Ljava/lang/String;Ljava/util/ArrayList;)V
 
     const-string v3, "disable_sensor_background"
 
-    iget-object v4, p0, Lcom/android/server/ugm;->Mc:Ljava/util/ArrayList;
+    iget-object v4, p0, Lcom/android/server/ugm;->Nc:Ljava/util/ArrayList;
 
     invoke-direct {p0, v2, v3, v4}, Lcom/android/server/ugm;->zta(Lorg/json/JSONObject;Ljava/lang/String;Ljava/util/ArrayList;)V
     :try_end_0
@@ -288,7 +260,7 @@
 .method static synthetic rtg(Lcom/android/server/ugm;)Ljava/util/ArrayList;
     .locals 0
 
-    iget-object p0, p0, Lcom/android/server/ugm;->Lc:Ljava/util/ArrayList;
+    iget-object p0, p0, Lcom/android/server/ugm;->Mc:Ljava/util/ArrayList;
 
     return-object p0
 .end method
@@ -327,10 +299,38 @@
     return p0
 .end method
 
+.method private xl()V
+    .locals 2
+
+    new-instance v0, Landroid/content/IntentFilter;
+
+    invoke-direct {v0}, Landroid/content/IntentFilter;-><init>()V
+
+    const v1, 0x7fffffff
+
+    invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->setPriority(I)V
+
+    const-string v1, "android.os.action.LIGHT_DEVICE_IDLE_MODE_CHANGED"
+
+    invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
+
+    const-string v1, "android.os.action.DEVICE_IDLE_MODE_CHANGED"
+
+    invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
+
+    iget-object v1, p0, Lcom/android/server/ugm;->mContext:Landroid/content/Context;
+
+    iget-object p0, p0, Lcom/android/server/ugm;->mGeneralReceiver:Landroid/content/BroadcastReceiver;
+
+    invoke-virtual {v1, p0, v0}, Landroid/content/Context;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
+
+    return-void
+.end method
+
 .method static synthetic you(Lcom/android/server/ugm;I)I
     .locals 0
 
-    invoke-direct {p0, p1}, Lcom/android/server/ugm;->Fa(I)I
+    invoke-direct {p0, p1}, Lcom/android/server/ugm;->Ia(I)I
 
     move-result p0
 
@@ -348,7 +348,7 @@
 .method static synthetic zta(Lcom/android/server/ugm;I)I
     .locals 0
 
-    invoke-direct {p0, p1}, Lcom/android/server/ugm;->Ga(I)I
+    invoke-direct {p0, p1}, Lcom/android/server/ugm;->Ja(I)I
 
     move-result p0
 
@@ -517,7 +517,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lcom/android/server/ugm;->Lc:Ljava/util/ArrayList;
+    iget-object v1, p0, Lcom/android/server/ugm;->Mc:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -535,7 +535,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object p0, p0, Lcom/android/server/ugm;->Mc:Ljava/util/ArrayList;
+    iget-object p0, p0, Lcom/android/server/ugm;->Nc:Ljava/util/ArrayList;
 
     invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -586,7 +586,7 @@
     :cond_0
     if-eq p2, p5, :cond_2
 
-    iget-object p3, p0, Lcom/android/server/ugm;->Mc:Ljava/util/ArrayList;
+    iget-object p3, p0, Lcom/android/server/ugm;->Nc:Ljava/util/ArrayList;
 
     invoke-virtual {p3, p1}, Ljava/util/ArrayList;->contains(Ljava/lang/Object;)Z
 
@@ -649,7 +649,7 @@
     invoke-static {p6, p1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_1
-    iget-object p1, p0, Lcom/android/server/ugm;->Mc:Ljava/util/ArrayList;
+    iget-object p1, p0, Lcom/android/server/ugm;->Nc:Ljava/util/ArrayList;
 
     invoke-virtual {p1, p4}, Ljava/util/ArrayList;->contains(Ljava/lang/Object;)Z
 

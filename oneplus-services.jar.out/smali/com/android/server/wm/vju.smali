@@ -3,12 +3,12 @@
 .source ""
 
 # interfaces
-.implements Landroid/hardware/display/DisplayManager$DisplayListener;
+.implements Ljava/lang/Runnable;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/server/wm/les;-><init>(Landroid/content/Context;)V
+    value = Lcom/android/server/wm/OpScreenCompat;->isAppWindowCompat(Landroid/graphics/Rect;Lcom/android/server/wm/WindowState;)Z
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,14 +18,26 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/server/wm/les;
+.field final synthetic RW:Landroid/graphics/Rect;
+
+.field final synthetic TW:Lcom/android/server/wm/WindowState;
+
+.field final synthetic UW:Z
+
+.field final synthetic this$0:Lcom/android/server/wm/OpScreenCompat;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/server/wm/les;)V
+.method constructor <init>(Lcom/android/server/wm/OpScreenCompat;Landroid/graphics/Rect;Lcom/android/server/wm/WindowState;Z)V
     .locals 0
 
-    iput-object p1, p0, Lcom/android/server/wm/vju;->this$0:Lcom/android/server/wm/les;
+    iput-object p1, p0, Lcom/android/server/wm/vju;->this$0:Lcom/android/server/wm/OpScreenCompat;
+
+    iput-object p2, p0, Lcom/android/server/wm/vju;->RW:Landroid/graphics/Rect;
+
+    iput-object p3, p0, Lcom/android/server/wm/vju;->TW:Lcom/android/server/wm/WindowState;
+
+    iput-boolean p4, p0, Lcom/android/server/wm/vju;->UW:Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -34,24 +46,67 @@
 
 
 # virtual methods
-.method public onDisplayAdded(I)V
-    .locals 0
+.method public run()V
+    .locals 3
 
-    return-void
-.end method
+    :try_start_0
+    iget-object v0, p0, Lcom/android/server/wm/vju;->RW:Landroid/graphics/Rect;
 
-.method public onDisplayChanged(I)V
-    .locals 0
+    invoke-virtual {v0}, Landroid/graphics/Rect;->height()I
 
-    iget-object p0, p0, Lcom/android/server/wm/vju;->this$0:Lcom/android/server/wm/les;
+    move-result v0
 
-    invoke-virtual {p0}, Lcom/android/server/wm/les;->updateOrientation()V
+    iget-object v1, p0, Lcom/android/server/wm/vju;->RW:Landroid/graphics/Rect;
 
-    return-void
-.end method
+    invoke-virtual {v1}, Landroid/graphics/Rect;->width()I
 
-.method public onDisplayRemoved(I)V
-    .locals 0
+    move-result v1
 
+    if-le v0, v1, :cond_0
+
+    invoke-static {}, Lcom/android/server/wm/OpScreenCompat;->access$600()I
+
+    move-result v0
+
+    goto :goto_0
+
+    :cond_0
+    invoke-static {}, Lcom/android/server/wm/OpScreenCompat;->access$700()I
+
+    move-result v0
+
+    :goto_0
+    iget-object v1, p0, Lcom/android/server/wm/vju;->TW:Lcom/android/server/wm/WindowState;
+
+    iget-object v1, v1, Lcom/android/server/wm/WindowState;->mClient:Landroid/view/IWindow;
+
+    iget-boolean v2, p0, Lcom/android/server/wm/vju;->UW:Z
+
+    invoke-interface {v1, v2, v0}, Landroid/view/IWindow;->enterScreenCompatMode(ZI)V
+    :try_end_0
+    .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
+
+    goto :goto_1
+
+    :catch_0
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v1, "can\'t send notification to win="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p0
+
+    const-string v0, "OpScreenCompat"
+
+    invoke-static {v0, p0}, Landroid/util/Slog;->w(Ljava/lang/String;Ljava/lang/String;)I
+
+    :goto_1
     return-void
 .end method

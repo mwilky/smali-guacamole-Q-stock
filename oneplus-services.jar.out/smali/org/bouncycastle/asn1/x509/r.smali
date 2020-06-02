@@ -14,20 +14,17 @@
 
 
 # virtual methods
-.method protected Ga(Ljava/lang/String;)Z
+.method protected Ia(Ljava/lang/String;)Z
     .locals 0
 
-    invoke-static {p1}, Lorg/bouncycastle/asn1/F;->Aa(Ljava/lang/String;)Z
+    invoke-static {p1}, Lorg/bouncycastle/asn1/F;->Ca(Ljava/lang/String;)Z
 
     move-result p0
 
     return p0
 .end method
 
-.method public abstract tsu(Lorg/bouncycastle/asn1/bvj;Ljava/lang/String;)Lorg/bouncycastle/asn1/vdb;
-.end method
-
-.method protected wtn(Ljava/lang/String;I)Lorg/bouncycastle/asn1/vdb;
+.method protected gck(Ljava/lang/String;I)Lorg/bouncycastle/asn1/vdb;
     .locals 4
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -142,4 +139,7 @@
     move-result-object p0
 
     return-object p0
+.end method
+
+.method public abstract tsu(Lorg/bouncycastle/asn1/bvj;Ljava/lang/String;)Lorg/bouncycastle/asn1/vdb;
 .end method

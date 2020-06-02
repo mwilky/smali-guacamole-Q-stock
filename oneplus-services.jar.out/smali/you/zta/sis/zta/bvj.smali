@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field protected final UDa:Lyou/zta/sis/zta/you/you;
-
 .field protected final curve:Lyou/zta/sis/zta/rtg;
+
+.field protected final hGa:Lyou/zta/sis/zta/you/you;
 
 
 # direct methods
@@ -25,7 +25,7 @@
 
     iput-object p1, p0, Lyou/zta/sis/zta/bvj;->curve:Lyou/zta/sis/zta/rtg;
 
-    iput-object p2, p0, Lyou/zta/sis/zta/bvj;->UDa:Lyou/zta/sis/zta/you/you;
+    iput-object p2, p0, Lyou/zta/sis/zta/bvj;->hGa:Lyou/zta/sis/zta/you/you;
 
     return-void
 
@@ -64,7 +64,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lyou/zta/sis/zta/bvj;->UDa:Lyou/zta/sis/zta/you/you;
+    iget-object v1, p0, Lyou/zta/sis/zta/bvj;->hGa:Lyou/zta/sis/zta/you/you;
 
     invoke-virtual {p2, v0}, Ljava/math/BigInteger;->mod(Ljava/math/BigInteger;)Ljava/math/BigInteger;
 
@@ -82,13 +82,13 @@
 
     aget-object p2, p2, v1
 
-    iget-object v1, p0, Lyou/zta/sis/zta/bvj;->UDa:Lyou/zta/sis/zta/you/you;
+    iget-object v1, p0, Lyou/zta/sis/zta/bvj;->hGa:Lyou/zta/sis/zta/you/you;
 
     invoke-interface {v1}, Lyou/zta/sis/zta/you/zta;->c()Lyou/zta/sis/zta/gck;
 
     move-result-object v1
 
-    iget-object p0, p0, Lyou/zta/sis/zta/bvj;->UDa:Lyou/zta/sis/zta/you/you;
+    iget-object p0, p0, Lyou/zta/sis/zta/bvj;->hGa:Lyou/zta/sis/zta/you/you;
 
     invoke-interface {p0}, Lyou/zta/sis/zta/you/zta;->qeg()Z
 

@@ -11,11 +11,11 @@
 
 
 # instance fields
+.field private transient BEa:Lorg/bouncycastle/crypto/wtn/bio;
+
 .field private transient dhSpec:Ljavax/crypto/spec/DHParameterSpec;
 
 .field private transient info:Lorg/bouncycastle/asn1/x509/c;
-
-.field private transient nCa:Lorg/bouncycastle/crypto/wtn/bio;
 
 .field private y:Ljava/math/BigInteger;
 
@@ -38,7 +38,7 @@
 
     check-cast p2, Lorg/bouncycastle/jcajce/sis/you;
 
-    invoke-virtual {p2}, Lorg/bouncycastle/jcajce/sis/you;->lg()Lorg/bouncycastle/crypto/wtn/cno;
+    invoke-virtual {p2}, Lorg/bouncycastle/jcajce/sis/you;->ug()Lorg/bouncycastle/crypto/wtn/cno;
 
     move-result-object p2
 
@@ -64,7 +64,7 @@
     invoke-direct {v0, p1, v1}, Lorg/bouncycastle/crypto/wtn/bio;-><init>(Ljava/math/BigInteger;Lorg/bouncycastle/crypto/wtn/cno;)V
 
     :goto_0
-    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dh/BCDHPublicKey;->nCa:Lorg/bouncycastle/crypto/wtn/bio;
+    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dh/BCDHPublicKey;->BEa:Lorg/bouncycastle/crypto/wtn/bio;
 
     return-void
 .end method
@@ -108,7 +108,7 @@
 
     invoke-direct {p1, v0, v1}, Lorg/bouncycastle/crypto/wtn/bio;-><init>(Ljava/math/BigInteger;Lorg/bouncycastle/crypto/wtn/cno;)V
 
-    iput-object p1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dh/BCDHPublicKey;->nCa:Lorg/bouncycastle/crypto/wtn/bio;
+    iput-object p1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dh/BCDHPublicKey;->BEa:Lorg/bouncycastle/crypto/wtn/bio;
 
     return-void
 .end method
@@ -156,7 +156,7 @@
 
     invoke-direct {v0, v1, v2}, Lorg/bouncycastle/crypto/wtn/bio;-><init>(Ljava/math/BigInteger;Lorg/bouncycastle/crypto/wtn/cno;)V
 
-    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dh/BCDHPublicKey;->nCa:Lorg/bouncycastle/crypto/wtn/bio;
+    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dh/BCDHPublicKey;->BEa:Lorg/bouncycastle/crypto/wtn/bio;
 
     return-void
 .end method
@@ -169,7 +169,7 @@
     iput-object p1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dh/BCDHPublicKey;->info:Lorg/bouncycastle/asn1/x509/c;
 
     :try_start_0
-    invoke-virtual {p1}, Lorg/bouncycastle/asn1/x509/c;->oh()Lorg/bouncycastle/asn1/vdb;
+    invoke-virtual {p1}, Lorg/bouncycastle/asn1/x509/c;->xh()Lorg/bouncycastle/asn1/vdb;
 
     move-result-object v0
 
@@ -232,7 +232,7 @@
 
     move-result-object p1
 
-    invoke-virtual {p1}, Lorg/bouncycastle/asn1/ibl/tsu;->Bi()Lorg/bouncycastle/asn1/ibl/ssp;
+    invoke-virtual {p1}, Lorg/bouncycastle/asn1/ibl/tsu;->Ki()Lorg/bouncycastle/asn1/ibl/ssp;
 
     move-result-object v0
 
@@ -256,7 +256,7 @@
 
     move-result-object v6
 
-    invoke-virtual {p1}, Lorg/bouncycastle/asn1/ibl/tsu;->mg()Ljava/math/BigInteger;
+    invoke-virtual {p1}, Lorg/bouncycastle/asn1/ibl/tsu;->vg()Ljava/math/BigInteger;
 
     move-result-object v7
 
@@ -266,7 +266,7 @@
 
     move-result-object p1
 
-    invoke-virtual {v0}, Lorg/bouncycastle/asn1/ibl/ssp;->Ai()Ljava/math/BigInteger;
+    invoke-virtual {v0}, Lorg/bouncycastle/asn1/ibl/ssp;->Ji()Ljava/math/BigInteger;
 
     move-result-object v0
 
@@ -282,7 +282,7 @@
 
     invoke-direct {v1, v2, v9}, Lorg/bouncycastle/crypto/wtn/bio;-><init>(Ljava/math/BigInteger;Lorg/bouncycastle/crypto/wtn/cno;)V
 
-    iput-object v1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dh/BCDHPublicKey;->nCa:Lorg/bouncycastle/crypto/wtn/bio;
+    iput-object v1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dh/BCDHPublicKey;->BEa:Lorg/bouncycastle/crypto/wtn/bio;
 
     goto :goto_0
 
@@ -305,7 +305,7 @@
 
     move-result-object v5
 
-    invoke-virtual {p1}, Lorg/bouncycastle/asn1/ibl/tsu;->mg()Ljava/math/BigInteger;
+    invoke-virtual {p1}, Lorg/bouncycastle/asn1/ibl/tsu;->vg()Ljava/math/BigInteger;
 
     move-result-object v6
 
@@ -317,12 +317,12 @@
 
     invoke-direct {v0, v1, v8}, Lorg/bouncycastle/crypto/wtn/bio;-><init>(Ljava/math/BigInteger;Lorg/bouncycastle/crypto/wtn/cno;)V
 
-    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dh/BCDHPublicKey;->nCa:Lorg/bouncycastle/crypto/wtn/bio;
+    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dh/BCDHPublicKey;->BEa:Lorg/bouncycastle/crypto/wtn/bio;
 
     :goto_0
     new-instance p1, Lorg/bouncycastle/jcajce/sis/you;
 
-    iget-object v0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dh/BCDHPublicKey;->nCa:Lorg/bouncycastle/crypto/wtn/bio;
+    iget-object v0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dh/BCDHPublicKey;->BEa:Lorg/bouncycastle/crypto/wtn/bio;
 
     invoke-virtual {v0}, Lorg/bouncycastle/crypto/wtn/ssp;->getParameters()Lorg/bouncycastle/crypto/wtn/cno;
 
@@ -427,7 +427,7 @@
 
     invoke-direct {p1, v0, v1}, Lorg/bouncycastle/crypto/wtn/bio;-><init>(Ljava/math/BigInteger;Lorg/bouncycastle/crypto/wtn/cno;)V
 
-    iput-object p1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dh/BCDHPublicKey;->nCa:Lorg/bouncycastle/crypto/wtn/bio;
+    iput-object p1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dh/BCDHPublicKey;->BEa:Lorg/bouncycastle/crypto/wtn/bio;
 
     :goto_3
     return-void
@@ -463,7 +463,7 @@
 
     iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dh/BCDHPublicKey;->dhSpec:Ljavax/crypto/spec/DHParameterSpec;
 
-    iput-object p1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dh/BCDHPublicKey;->nCa:Lorg/bouncycastle/crypto/wtn/bio;
+    iput-object p1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dh/BCDHPublicKey;->BEa:Lorg/bouncycastle/crypto/wtn/bio;
 
     return-void
 .end method
@@ -622,6 +622,14 @@
 
 
 # virtual methods
+.method public Gj()Lorg/bouncycastle/crypto/wtn/bio;
+    .locals 0
+
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dh/BCDHPublicKey;->BEa:Lorg/bouncycastle/crypto/wtn/bio;
+
+    return-object p0
+.end method
+
 .method public equals(Ljava/lang/Object;)Z
     .locals 3
 
@@ -758,11 +766,11 @@
 
     check-cast v0, Lorg/bouncycastle/jcajce/sis/you;
 
-    invoke-virtual {v0}, Lorg/bouncycastle/jcajce/sis/you;->lg()Lorg/bouncycastle/crypto/wtn/cno;
+    invoke-virtual {v0}, Lorg/bouncycastle/jcajce/sis/you;->ug()Lorg/bouncycastle/crypto/wtn/cno;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lorg/bouncycastle/crypto/wtn/cno;->mj()Lorg/bouncycastle/crypto/wtn/igw;
+    invoke-virtual {v0}, Lorg/bouncycastle/crypto/wtn/cno;->vj()Lorg/bouncycastle/crypto/wtn/igw;
 
     move-result-object v1
 
@@ -776,7 +784,7 @@
 
     move-result-object v3
 
-    invoke-virtual {v1}, Lorg/bouncycastle/crypto/wtn/igw;->nj()I
+    invoke-virtual {v1}, Lorg/bouncycastle/crypto/wtn/igw;->wj()I
 
     move-result v1
 
@@ -803,7 +811,7 @@
 
     move-result-object v7
 
-    invoke-virtual {v0}, Lorg/bouncycastle/crypto/wtn/cno;->mg()Ljava/math/BigInteger;
+    invoke-virtual {v0}, Lorg/bouncycastle/crypto/wtn/cno;->vg()Ljava/math/BigInteger;
 
     move-result-object v8
 
@@ -977,14 +985,6 @@
     invoke-static {p0, v0, v1}, Lorg/bouncycastle/jcajce/provider/asymmetric/dh/sis;->you(Ljava/lang/String;Ljava/math/BigInteger;Lorg/bouncycastle/crypto/wtn/cno;)Ljava/lang/String;
 
     move-result-object p0
-
-    return-object p0
-.end method
-
-.method public xj()Lorg/bouncycastle/crypto/wtn/bio;
-    .locals 0
-
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dh/BCDHPublicKey;->nCa:Lorg/bouncycastle/crypto/wtn/bio;
 
     return-object p0
 .end method

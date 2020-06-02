@@ -22,39 +22,39 @@
 
 .field public static final ERROR_NOT_SUPPORTED:I = -0x1
 
-.field public static final GB:I = -0x2
-
-.field private static final HB:I = 0x4
-
-.field private static final IB:Ljava/lang/String; = "android.secrecy.SecrecyManagerInternal"
-
-.field private static final JB:Ljava/lang/String; = "getSecrecyState"
-
-.field private static final KB:Ljava/lang/String; = "android.os.OemManager"
-
-.field private static final LB:Ljava/lang/String; = "writeLogToPartition"
-
-.field private static final MB:Ljava/lang/String; = "cleanItem"
-
-.field private static final NB:Ljava/lang/String; = "syncCacheToEmmc"
-
-.field private static final OB:Ljava/lang/String; = "vendor.oem.hardware.cryptoeng.V1_0.ICryptoeng"
-
-.field private static final PB:Ljava/lang/String; = "vendor.oem.hardware.biometrics.fingerprintpay.V1_0.IFingerprintPay"
-
-.field public static final QB:B = 0x0t
-
-.field public static final RB:B = 0x1t
-
-.field public static final SB:B = 0x2t
+.field private static final Kh:Ljava/lang/String; = "oem.secrecy.support"
 
 .field public static final STATUS_OK:I = 0x0
 
 .field private static final TAG:Ljava/lang/String; = "OneplusEngineerUtils"
 
-.field private static final TB:Ljava/io/File;
+.field public static final VC:I = -0x2
 
-.field private static final oh:Ljava/lang/String; = "oem.secrecy.support"
+.field private static final WC:I = 0x4
+
+.field private static final XC:Ljava/lang/String; = "android.secrecy.SecrecyManagerInternal"
+
+.field private static final YC:Ljava/lang/String; = "getSecrecyState"
+
+.field private static final ZC:Ljava/lang/String; = "android.os.OemManager"
+
+.field private static final _C:Ljava/lang/String; = "writeLogToPartition"
+
+.field private static final aD:Ljava/lang/String; = "cleanItem"
+
+.field private static final bD:Ljava/lang/String; = "syncCacheToEmmc"
+
+.field private static final cD:Ljava/lang/String; = "vendor.oem.hardware.cryptoeng.V1_0.ICryptoeng"
+
+.field private static final dD:Ljava/lang/String; = "vendor.oem.hardware.biometrics.fingerprintpay.V1_0.IFingerprintPay"
+
+.field public static final eD:B = 0x0t
+
+.field public static final fD:B = 0x1t
+
+.field public static final gD:B = 0x2t
+
+.field private static final hD:Ljava/io/File;
 
 
 # direct methods
@@ -67,7 +67,7 @@
 
     invoke-direct {v0, v1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    sput-object v0, Lcom/android/server/engineer/qbh;->TB:Ljava/io/File;
+    sput-object v0, Lcom/android/server/engineer/qbh;->hD:Ljava/io/File;
 
     new-instance v0, Ljava/io/File;
 
@@ -88,7 +88,7 @@
     return-void
 .end method
 
-.method static B(Ljava/lang/String;)Lcom/android/server/engineer/qbh$zta;
+.method static D(Ljava/lang/String;)Lcom/android/server/engineer/qbh$zta;
     .locals 10
 
     invoke-static {}, Ljava/lang/Runtime;->getRuntime()Ljava/lang/Runtime;
@@ -436,7 +436,7 @@
     throw v0
 .end method
 
-.method static C(Ljava/lang/String;)Z
+.method static E(Ljava/lang/String;)Z
     .locals 1
 
     invoke-static {p0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
@@ -459,7 +459,7 @@
     return p0
 .end method
 
-.method static D(Ljava/lang/String;)Z
+.method static F(Ljava/lang/String;)Z
     .locals 1
 
     invoke-static {p0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
@@ -482,7 +482,7 @@
     return p0
 .end method
 
-.method static E(Ljava/lang/String;)Z
+.method static G(Ljava/lang/String;)Z
     .locals 1
 
     invoke-static {p0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
@@ -505,47 +505,7 @@
     return p0
 .end method
 
-.method static Ec()Ljava/lang/Object;
-    .locals 4
-
-    const-string v0, "vendor.oem.hardware.cryptoeng.V1_0.ICryptoeng"
-
-    :try_start_0
-    invoke-static {v0}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
-
-    move-result-object v0
-
-    const-string v1, "getService"
-
-    const/4 v2, 0x0
-
-    new-array v3, v2, [Ljava/lang/Class;
-
-    invoke-virtual {v0, v1, v3}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
-
-    move-result-object v1
-
-    new-array v2, v2, [Ljava/lang/Object;
-
-    invoke-virtual {v1, v0, v2}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v0
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
-
-    return-object v0
-
-    :catch_0
-    move-exception v0
-
-    invoke-virtual {v0}, Ljava/lang/Exception;->printStackTrace()V
-
-    const/4 v0, 0x0
-
-    return-object v0
-.end method
-
-.method static F(Ljava/lang/String;)Z
+.method static H(Ljava/lang/String;)Z
     .locals 1
 
     invoke-static {p0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
@@ -582,47 +542,7 @@
     return p0
 .end method
 
-.method static Fc()Ljava/lang/Object;
-    .locals 4
-
-    const-string v0, "vendor.oem.hardware.biometrics.fingerprintpay.V1_0.IFingerprintPay"
-
-    :try_start_0
-    invoke-static {v0}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
-
-    move-result-object v0
-
-    const-string v1, "getService"
-
-    const/4 v2, 0x0
-
-    new-array v3, v2, [Ljava/lang/Class;
-
-    invoke-virtual {v0, v1, v3}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
-
-    move-result-object v1
-
-    new-array v2, v2, [Ljava/lang/Object;
-
-    invoke-virtual {v1, v0, v2}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v0
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
-
-    return-object v0
-
-    :catch_0
-    move-exception v0
-
-    invoke-virtual {v0}, Ljava/lang/Exception;->printStackTrace()V
-
-    const/4 v0, 0x0
-
-    return-object v0
-.end method
-
-.method static G(Ljava/lang/String;)Z
+.method static I(Ljava/lang/String;)Z
     .locals 3
 
     invoke-static {p0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
@@ -656,7 +576,7 @@
 
     aget-object v0, p0, v1
 
-    invoke-static {v0}, Lcom/android/server/engineer/qbh;->D(Ljava/lang/String;)Z
+    invoke-static {v0}, Lcom/android/server/engineer/qbh;->F(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -666,7 +586,7 @@
 
     aget-object p0, p0, v2
 
-    invoke-static {p0}, Lcom/android/server/engineer/qbh;->F(Ljava/lang/String;)Z
+    invoke-static {p0}, Lcom/android/server/engineer/qbh;->H(Ljava/lang/String;)Z
 
     move-result p0
 
@@ -688,31 +608,7 @@
     return v1
 .end method
 
-.method static Gc()Z
-    .locals 2
-
-    const-string v0, "ro.board.platform"
-
-    const-string v1, "oem"
-
-    invoke-static {v0, v1}, Landroid/os/SystemProperties;->get(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Ljava/lang/String;->toLowerCase()Ljava/lang/String;
-
-    move-result-object v0
-
-    const-string v1, "mt"
-
-    invoke-virtual {v0, v1}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
-
-    move-result v0
-
-    return v0
-.end method
-
-.method static H(Ljava/lang/String;)Ljava/lang/String;
+.method static J(Ljava/lang/String;)Ljava/lang/String;
     .locals 7
 
     const-string v0, "readIntFromFile io close exception :"
@@ -900,7 +796,111 @@
     throw p0
 .end method
 
-.method static Hc()I
+.method static Lc()Ljava/lang/Object;
+    .locals 4
+
+    const-string v0, "vendor.oem.hardware.cryptoeng.V1_0.ICryptoeng"
+
+    :try_start_0
+    invoke-static {v0}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
+
+    move-result-object v0
+
+    const-string v1, "getService"
+
+    const/4 v2, 0x0
+
+    new-array v3, v2, [Ljava/lang/Class;
+
+    invoke-virtual {v0, v1, v3}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+
+    move-result-object v1
+
+    new-array v2, v2, [Ljava/lang/Object;
+
+    invoke-virtual {v1, v0, v2}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v0
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    return-object v0
+
+    :catch_0
+    move-exception v0
+
+    invoke-virtual {v0}, Ljava/lang/Exception;->printStackTrace()V
+
+    const/4 v0, 0x0
+
+    return-object v0
+.end method
+
+.method static Mc()Ljava/lang/Object;
+    .locals 4
+
+    const-string v0, "vendor.oem.hardware.biometrics.fingerprintpay.V1_0.IFingerprintPay"
+
+    :try_start_0
+    invoke-static {v0}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
+
+    move-result-object v0
+
+    const-string v1, "getService"
+
+    const/4 v2, 0x0
+
+    new-array v3, v2, [Ljava/lang/Class;
+
+    invoke-virtual {v0, v1, v3}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+
+    move-result-object v1
+
+    new-array v2, v2, [Ljava/lang/Object;
+
+    invoke-virtual {v1, v0, v2}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v0
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    return-object v0
+
+    :catch_0
+    move-exception v0
+
+    invoke-virtual {v0}, Ljava/lang/Exception;->printStackTrace()V
+
+    const/4 v0, 0x0
+
+    return-object v0
+.end method
+
+.method static Nc()Z
+    .locals 2
+
+    const-string v0, "ro.board.platform"
+
+    const-string v1, "oem"
+
+    invoke-static {v0, v1}, Landroid/os/SystemProperties;->get(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/String;->toLowerCase()Ljava/lang/String;
+
+    move-result-object v0
+
+    const-string v1, "mt"
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
+
+    move-result v0
+
+    return v0
+.end method
+
+.method static Oc()I
     .locals 3
 
     const/4 v0, 0x0
@@ -1334,290 +1334,69 @@
     return-object v3
 .end method
 
-.method static r(I)I
-    .locals 4
-
-    const/4 v0, 0x1
-
-    new-array v1, v0, [Ljava/lang/Class;
-
-    sget-object v2, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
-
-    const/4 v3, 0x0
-
-    aput-object v2, v1, v3
-
-    new-array v0, v0, [Ljava/lang/Object;
-
-    invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object p0
-
-    aput-object p0, v0, v3
-
-    const/4 p0, 0x0
-
-    const-string v2, "android.os.OemManager"
-
-    const-string v3, "cleanItem"
-
-    invoke-static {p0, v2, v3, v1, v0}, Lcom/android/server/engineer/qbh;->zta(Ljava/lang/Object;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Class;[Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object p0
-
-    if-eqz p0, :cond_0
-
-    check-cast p0, Ljava/lang/Integer;
-
-    invoke-virtual {p0}, Ljava/lang/Integer;->intValue()I
-
-    move-result p0
-
-    return p0
-
-    :cond_0
-    const/4 p0, -0x1
-
-    return p0
-.end method
-
-.method static rtg(Ljava/lang/String;I)I
-    .locals 5
-
-    const-string v0, "OneplusEngineerUtils"
-
-    new-instance v1, Ljava/io/File;
-
-    invoke-direct {v1, p0}, Ljava/io/File;-><init>(Ljava/lang/String;)V
-
-    const/4 v2, 0x0
-
-    :try_start_0
-    new-instance v3, Ljava/io/BufferedReader;
-
-    new-instance v4, Ljava/io/FileReader;
-
-    invoke-direct {v4, v1}, Ljava/io/FileReader;-><init>(Ljava/io/File;)V
-
-    invoke-direct {v3, v4}, Ljava/io/BufferedReader;-><init>(Ljava/io/Reader;)V
-    :try_end_0
-    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_2
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    :try_start_1
-    invoke-virtual {v3}, Ljava/io/BufferedReader;->readLine()Ljava/lang/String;
-
-    move-result-object v2
-    :try_end_1
-    .catch Ljava/io/IOException; {:try_start_1 .. :try_end_1} :catch_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_1
-
-    :try_start_2
-    invoke-virtual {v3}, Ljava/io/BufferedReader;->close()V
-    :try_end_2
-    .catch Ljava/io/IOException; {:try_start_2 .. :try_end_2} :catch_0
-
-    goto :goto_1
-
-    :catch_0
-    move-exception v1
-
-    invoke-virtual {v1}, Ljava/io/IOException;->getMessage()Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-static {v0, v1}, Landroid/util/Slog;->i(Ljava/lang/String;Ljava/lang/String;)I
-
-    goto :goto_1
-
-    :catch_1
-    move-exception v1
-
-    goto :goto_0
-
-    :catchall_0
-    move-exception p0
-
-    goto :goto_3
-
-    :catch_2
-    move-exception v1
-
-    move-object v3, v2
-
-    :goto_0
-    :try_start_3
-    invoke-virtual {v1}, Ljava/io/IOException;->getMessage()Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-static {v0, v1}, Landroid/util/Slog;->i(Ljava/lang/String;Ljava/lang/String;)I
-    :try_end_3
-    .catchall {:try_start_3 .. :try_end_3} :catchall_1
-
-    if-eqz v3, :cond_0
-
-    :try_start_4
-    invoke-virtual {v3}, Ljava/io/BufferedReader;->close()V
-    :try_end_4
-    .catch Ljava/io/IOException; {:try_start_4 .. :try_end_4} :catch_0
-
-    :cond_0
-    :goto_1
-    invoke-static {v2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
-
-    move-result v1
-
-    if-nez v1, :cond_1
-
-    :try_start_5
-    invoke-static {v2}, Ljava/lang/Integer;->valueOf(Ljava/lang/String;)Ljava/lang/Integer;
-
-    move-result-object v1
-
-    invoke-virtual {v1}, Ljava/lang/Integer;->intValue()I
-
-    move-result v1
-    :try_end_5
-    .catch Ljava/lang/NumberFormatException; {:try_start_5 .. :try_end_5} :catch_3
-
-    goto :goto_2
-
-    :catch_3
-    move-exception v1
-
-    invoke-virtual {v1}, Ljava/lang/NumberFormatException;->getMessage()Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-static {v0, v1}, Landroid/util/Slog;->i(Ljava/lang/String;Ljava/lang/String;)I
-
-    :cond_1
-    move v1, p1
-
-    :goto_2
-    new-instance v2, Ljava/lang/StringBuilder;
-
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v3, "readIntFromFile path:"
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string p0, ", result:"
-
-    invoke-virtual {v2, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    const-string p0, ", defaultValue:"
-
-    invoke-virtual {v2, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p0
-
-    invoke-static {v0, p0}, Landroid/util/Slog;->i(Ljava/lang/String;Ljava/lang/String;)I
-
-    return v1
-
-    :catchall_1
-    move-exception p0
-
-    move-object v2, v3
-
-    :goto_3
-    if-eqz v2, :cond_2
-
-    :try_start_6
-    invoke-virtual {v2}, Ljava/io/BufferedReader;->close()V
-    :try_end_6
-    .catch Ljava/io/IOException; {:try_start_6 .. :try_end_6} :catch_4
-
-    goto :goto_4
-
-    :catch_4
-    move-exception p1
-
-    invoke-virtual {p1}, Ljava/io/IOException;->getMessage()Ljava/lang/String;
-
-    move-result-object p1
-
-    invoke-static {v0, p1}, Landroid/util/Slog;->i(Ljava/lang/String;Ljava/lang/String;)I
-
-    :cond_2
-    :goto_4
-    throw p0
-.end method
-
-.method static rtg(Ljava/util/ArrayList;)Ljava/lang/String;
-    .locals 3
+.method static rtg(Ljava/util/ArrayList;)Ljava/util/ArrayList;
+    .locals 6
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Ljava/util/ArrayList<",
             "Ljava/lang/Byte;",
             ">;)",
-            "Ljava/lang/String;"
+            "Ljava/util/ArrayList<",
+            "Ljava/lang/Byte;",
+            ">;"
         }
     .end annotation
 
-    if-eqz p0, :cond_2
+    const-string v0, "vendor.oem.hardware.cryptoeng.V1_0.ICryptoeng"
 
-    invoke-virtual {p0}, Ljava/util/ArrayList;->size()I
+    :try_start_0
+    invoke-static {v0}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
 
-    move-result v0
+    move-result-object v0
 
-    if-gtz v0, :cond_0
+    const-string v1, "cryptoeng_invoke_command"
 
-    goto :goto_1
+    const/4 v2, 0x1
 
-    :cond_0
-    invoke-virtual {p0}, Ljava/util/ArrayList;->size()I
+    new-array v3, v2, [Ljava/lang/Class;
 
-    move-result v0
+    const-class v4, Ljava/util/ArrayList;
 
-    new-array v0, v0, [B
+    const/4 v5, 0x0
 
-    const/4 v1, 0x0
+    aput-object v4, v3, v5
 
-    :goto_0
-    invoke-virtual {p0}, Ljava/util/ArrayList;->size()I
+    invoke-virtual {v0, v1, v3}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
 
-    move-result v2
+    move-result-object v0
 
-    if-ge v1, v2, :cond_1
+    invoke-static {}, Lcom/android/server/engineer/qbh;->Lc()Ljava/lang/Object;
 
-    invoke-virtual {p0, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+    move-result-object v1
 
-    move-result-object v2
+    if-eqz v1, :cond_0
 
-    check-cast v2, Ljava/lang/Byte;
+    new-array v2, v2, [Ljava/lang/Object;
 
-    invoke-virtual {v2}, Ljava/lang/Byte;->byteValue()B
+    aput-object p0, v2, v5
 
-    move-result v2
-
-    aput-byte v2, v0, v1
-
-    add-int/lit8 v1, v1, 0x1
-
-    goto :goto_0
-
-    :cond_1
-    invoke-static {v0}, Lcom/android/server/engineer/qbh;->ssp([B)Ljava/lang/String;
+    invoke-virtual {v0, v1, v2}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0
 
+    check-cast p0, Ljava/util/ArrayList;
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
     return-object p0
 
-    :cond_2
-    :goto_1
+    :catch_0
+    move-exception p0
+
+    invoke-virtual {p0}, Ljava/lang/Exception;->printStackTrace()V
+
+    :cond_0
     const/4 p0, 0x0
 
     return-object p0
@@ -1908,7 +1687,7 @@
 
     :cond_3
     :goto_6
-    sget-object p0, Lcom/android/server/engineer/qbh;->TB:Ljava/io/File;
+    sget-object p0, Lcom/android/server/engineer/qbh;->hD:Ljava/io/File;
 
     invoke-virtual {p0}, Ljava/io/File;->exists()Z
 
@@ -1922,7 +1701,7 @@
 
     invoke-static {p0, v0}, Lcom/android/server/engineer/qbh;->zta(Ljava/io/File;Ljava/lang/String;)V
 
-    sget-object p0, Lcom/android/server/engineer/qbh;->TB:Ljava/io/File;
+    sget-object p0, Lcom/android/server/engineer/qbh;->hD:Ljava/io/File;
 
     invoke-static {p0, v0}, Lcom/android/server/engineer/qbh;->zta(Ljava/io/File;Ljava/lang/String;)V
 
@@ -2036,7 +1815,7 @@
     return v1
 
     :cond_2
-    sget-object v4, Lcom/android/server/engineer/qbh;->TB:Ljava/io/File;
+    sget-object v4, Lcom/android/server/engineer/qbh;->hD:Ljava/io/File;
 
     invoke-virtual {v4}, Ljava/io/File;->exists()Z
 
@@ -2249,7 +2028,7 @@
 
     invoke-static {p0, p1}, Lcom/android/server/engineer/qbh;->zta(Ljava/io/File;Ljava/lang/String;)V
 
-    sget-object p0, Lcom/android/server/engineer/qbh;->TB:Ljava/io/File;
+    sget-object p0, Lcom/android/server/engineer/qbh;->hD:Ljava/io/File;
 
     invoke-static {p0, p1}, Lcom/android/server/engineer/qbh;->zta(Ljava/io/File;Ljava/lang/String;)V
 
@@ -2310,6 +2089,248 @@
     return p0
 .end method
 
+.method static ssp(Ljava/lang/String;I)I
+    .locals 5
+
+    const-string v0, "OneplusEngineerUtils"
+
+    new-instance v1, Ljava/io/File;
+
+    invoke-direct {v1, p0}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    const/4 v2, 0x0
+
+    :try_start_0
+    new-instance v3, Ljava/io/BufferedReader;
+
+    new-instance v4, Ljava/io/FileReader;
+
+    invoke-direct {v4, v1}, Ljava/io/FileReader;-><init>(Ljava/io/File;)V
+
+    invoke-direct {v3, v4}, Ljava/io/BufferedReader;-><init>(Ljava/io/Reader;)V
+    :try_end_0
+    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_2
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    :try_start_1
+    invoke-virtual {v3}, Ljava/io/BufferedReader;->readLine()Ljava/lang/String;
+
+    move-result-object v2
+    :try_end_1
+    .catch Ljava/io/IOException; {:try_start_1 .. :try_end_1} :catch_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_1
+
+    :try_start_2
+    invoke-virtual {v3}, Ljava/io/BufferedReader;->close()V
+    :try_end_2
+    .catch Ljava/io/IOException; {:try_start_2 .. :try_end_2} :catch_0
+
+    goto :goto_1
+
+    :catch_0
+    move-exception v1
+
+    invoke-virtual {v1}, Ljava/io/IOException;->getMessage()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-static {v0, v1}, Landroid/util/Slog;->i(Ljava/lang/String;Ljava/lang/String;)I
+
+    goto :goto_1
+
+    :catch_1
+    move-exception v1
+
+    goto :goto_0
+
+    :catchall_0
+    move-exception p0
+
+    goto :goto_3
+
+    :catch_2
+    move-exception v1
+
+    move-object v3, v2
+
+    :goto_0
+    :try_start_3
+    invoke-virtual {v1}, Ljava/io/IOException;->getMessage()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-static {v0, v1}, Landroid/util/Slog;->i(Ljava/lang/String;Ljava/lang/String;)I
+    :try_end_3
+    .catchall {:try_start_3 .. :try_end_3} :catchall_1
+
+    if-eqz v3, :cond_0
+
+    :try_start_4
+    invoke-virtual {v3}, Ljava/io/BufferedReader;->close()V
+    :try_end_4
+    .catch Ljava/io/IOException; {:try_start_4 .. :try_end_4} :catch_0
+
+    :cond_0
+    :goto_1
+    invoke-static {v2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_1
+
+    :try_start_5
+    invoke-static {v2}, Ljava/lang/Integer;->valueOf(Ljava/lang/String;)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/lang/Integer;->intValue()I
+
+    move-result v1
+    :try_end_5
+    .catch Ljava/lang/NumberFormatException; {:try_start_5 .. :try_end_5} :catch_3
+
+    goto :goto_2
+
+    :catch_3
+    move-exception v1
+
+    invoke-virtual {v1}, Ljava/lang/NumberFormatException;->getMessage()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-static {v0, v1}, Landroid/util/Slog;->i(Ljava/lang/String;Ljava/lang/String;)I
+
+    :cond_1
+    move v1, p1
+
+    :goto_2
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v3, "readIntFromFile path:"
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string p0, ", result:"
+
+    invoke-virtual {v2, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    const-string p0, ", defaultValue:"
+
+    invoke-virtual {v2, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p0
+
+    invoke-static {v0, p0}, Landroid/util/Slog;->i(Ljava/lang/String;Ljava/lang/String;)I
+
+    return v1
+
+    :catchall_1
+    move-exception p0
+
+    move-object v2, v3
+
+    :goto_3
+    if-eqz v2, :cond_2
+
+    :try_start_6
+    invoke-virtual {v2}, Ljava/io/BufferedReader;->close()V
+    :try_end_6
+    .catch Ljava/io/IOException; {:try_start_6 .. :try_end_6} :catch_4
+
+    goto :goto_4
+
+    :catch_4
+    move-exception p1
+
+    invoke-virtual {p1}, Ljava/io/IOException;->getMessage()Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-static {v0, p1}, Landroid/util/Slog;->i(Ljava/lang/String;Ljava/lang/String;)I
+
+    :cond_2
+    :goto_4
+    throw p0
+.end method
+
+.method static ssp(Ljava/util/ArrayList;)Ljava/lang/String;
+    .locals 3
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/ArrayList<",
+            "Ljava/lang/Byte;",
+            ">;)",
+            "Ljava/lang/String;"
+        }
+    .end annotation
+
+    if-eqz p0, :cond_2
+
+    invoke-virtual {p0}, Ljava/util/ArrayList;->size()I
+
+    move-result v0
+
+    if-gtz v0, :cond_0
+
+    goto :goto_1
+
+    :cond_0
+    invoke-virtual {p0}, Ljava/util/ArrayList;->size()I
+
+    move-result v0
+
+    new-array v0, v0, [B
+
+    const/4 v1, 0x0
+
+    :goto_0
+    invoke-virtual {p0}, Ljava/util/ArrayList;->size()I
+
+    move-result v2
+
+    if-ge v1, v2, :cond_1
+
+    invoke-virtual {p0, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Ljava/lang/Byte;
+
+    invoke-virtual {v2}, Ljava/lang/Byte;->byteValue()B
+
+    move-result v2
+
+    aput-byte v2, v0, v1
+
+    add-int/lit8 v1, v1, 0x1
+
+    goto :goto_0
+
+    :cond_1
+    invoke-static {v0}, Lcom/android/server/engineer/qbh;->ssp([B)Ljava/lang/String;
+
+    move-result-object p0
+
+    return-object p0
+
+    :cond_2
+    :goto_1
+    const/4 p0, 0x0
+
+    return-object p0
+.end method
+
 .method static ssp([B)Ljava/lang/String;
     .locals 5
 
@@ -2363,6 +2384,53 @@
     return-object p0
 .end method
 
+.method static t(I)I
+    .locals 4
+
+    const/4 v0, 0x1
+
+    new-array v1, v0, [Ljava/lang/Class;
+
+    sget-object v2, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
+
+    const/4 v3, 0x0
+
+    aput-object v2, v1, v3
+
+    new-array v0, v0, [Ljava/lang/Object;
+
+    invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object p0
+
+    aput-object p0, v0, v3
+
+    const/4 p0, 0x0
+
+    const-string v2, "android.os.OemManager"
+
+    const-string v3, "cleanItem"
+
+    invoke-static {p0, v2, v3, v1, v0}, Lcom/android/server/engineer/qbh;->zta(Ljava/lang/Object;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Class;[Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p0
+
+    if-eqz p0, :cond_0
+
+    check-cast p0, Ljava/lang/Integer;
+
+    invoke-virtual {p0}, Ljava/lang/Integer;->intValue()I
+
+    move-result p0
+
+    return p0
+
+    :cond_0
+    const/4 p0, -0x1
+
+    return p0
+.end method
+
 .method static tsu(Ljava/lang/Object;)I
     .locals 4
 
@@ -2407,74 +2475,6 @@
     const/4 p0, -0x1
 
     return p0
-.end method
-
-.method static tsu(Ljava/util/ArrayList;)Ljava/util/ArrayList;
-    .locals 6
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/util/ArrayList<",
-            "Ljava/lang/Byte;",
-            ">;)",
-            "Ljava/util/ArrayList<",
-            "Ljava/lang/Byte;",
-            ">;"
-        }
-    .end annotation
-
-    const-string v0, "vendor.oem.hardware.cryptoeng.V1_0.ICryptoeng"
-
-    :try_start_0
-    invoke-static {v0}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
-
-    move-result-object v0
-
-    const-string v1, "cryptoeng_invoke_command"
-
-    const/4 v2, 0x1
-
-    new-array v3, v2, [Ljava/lang/Class;
-
-    const-class v4, Ljava/util/ArrayList;
-
-    const/4 v5, 0x0
-
-    aput-object v4, v3, v5
-
-    invoke-virtual {v0, v1, v3}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
-
-    move-result-object v0
-
-    invoke-static {}, Lcom/android/server/engineer/qbh;->Ec()Ljava/lang/Object;
-
-    move-result-object v1
-
-    if-eqz v1, :cond_0
-
-    new-array v2, v2, [Ljava/lang/Object;
-
-    aput-object p0, v2, v5
-
-    invoke-virtual {v0, v1, v2}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object p0
-
-    check-cast p0, Ljava/util/ArrayList;
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
-
-    return-object p0
-
-    :catch_0
-    move-exception p0
-
-    invoke-virtual {p0}, Ljava/lang/Exception;->printStackTrace()V
-
-    :cond_0
-    const/4 p0, 0x0
-
-    return-object p0
 .end method
 
 .method static you(Ljava/lang/Object;)I

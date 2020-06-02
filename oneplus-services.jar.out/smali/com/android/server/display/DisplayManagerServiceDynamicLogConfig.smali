@@ -21,7 +21,7 @@
 
     const/4 v2, 0x1
 
-    if-lt v0, v2, :cond_4
+    if-lt v0, v2, :cond_6
 
     aget-object v0, p1, v1
 
@@ -31,16 +31,46 @@
 
     move-result v0
 
+    if-nez v0, :cond_2
+
+    invoke-static {}, Lcom/android/server/backlight/OpBacklightManager;->getInstance()Lcom/android/server/backlight/OpBacklightManager;
+
+    move-result-object v0
+
+    invoke-virtual {v0, p0, p1}, Lcom/android/server/backlight/OpBacklightManager;->zta(Ljava/io/PrintWriter;[Ljava/lang/String;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_1
+
+    sget-boolean v0, Lcom/oneplus/server/DynamicVsyncManager;->Gja:Z
+
     if-nez v0, :cond_0
 
-    return v1
+    sget-boolean v0, Lcom/oneplus/server/DynamicVsyncManager;->FEATURE_EXTREME_ENABLE:Z
+
+    if-eqz v0, :cond_1
 
     :cond_0
+    invoke-static {}, Lcom/oneplus/server/DynamicVsyncManager;->getInstance()Lcom/oneplus/server/DynamicVsyncManager;
+
+    move-result-object v0
+
+    invoke-virtual {v0, p0, p1}, Lcom/oneplus/server/DynamicVsyncManager;->zta(Ljava/io/PrintWriter;[Ljava/lang/String;)Z
+
+    move-result p0
+
+    return p0
+
+    :cond_1
+    return v1
+
+    :cond_2
     array-length v0, p1
 
     const/4 v3, 0x3
 
-    if-eq v0, v3, :cond_1
+    if-eq v0, v3, :cond_3
 
     const-string p1, "Invalid argument! Get detail help as bellow:"
 
@@ -50,7 +80,7 @@
 
     return v2
 
-    :cond_1
+    :cond_3
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -72,7 +102,7 @@
     :goto_0
     array-length v0, p1
 
-    if-ge v1, v0, :cond_2
+    if-ge v1, v0, :cond_4
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -102,7 +132,7 @@
 
     goto :goto_0
 
-    :cond_2
+    :cond_4
     aget-object v0, p1, v2
 
     const/4 v1, 0x2
@@ -143,7 +173,7 @@
 
     move-result v0
 
-    if-eqz v0, :cond_3
+    if-eqz v0, :cond_5
 
     sput-boolean p1, Lcom/android/server/display/DisplayManagerService;->DEBUG:Z
 
@@ -157,7 +187,7 @@
 
     goto :goto_1
 
-    :cond_3
+    :cond_5
     const-string p1, "Invalid log tag argument! Get detail help as bellow:"
 
     invoke-virtual {p0, p1}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
@@ -167,7 +197,7 @@
     :goto_1
     return v2
 
-    :cond_4
+    :cond_6
     return v1
 .end method
 

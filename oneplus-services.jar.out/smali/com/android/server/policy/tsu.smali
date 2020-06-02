@@ -18,7 +18,7 @@
 
 
 # instance fields
-.field final synthetic HD:Z
+.field final synthetic aF:Z
 
 .field final synthetic this$1:Lcom/android/server/policy/rtg;
 
@@ -29,7 +29,7 @@
 
     iput-object p1, p0, Lcom/android/server/policy/tsu;->this$1:Lcom/android/server/policy/rtg;
 
-    iput-boolean p2, p0, Lcom/android/server/policy/tsu;->HD:Z
+    iput-boolean p2, p0, Lcom/android/server/policy/tsu;->aF:Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -67,7 +67,7 @@
 
     invoke-static {v1, v0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    iget-boolean v0, p0, Lcom/android/server/policy/tsu;->HD:Z
+    iget-boolean v0, p0, Lcom/android/server/policy/tsu;->aF:Z
 
     const-string v2, "/proc/touchpanel/gesture_switch"
 
@@ -118,7 +118,7 @@
     const/16 p0, 0x31
 
     :goto_0
-    invoke-static {v2, p0}, Lcom/android/server/policy/bio;->ssp(Ljava/lang/String;I)Z
+    invoke-static {v2, p0}, Lcom/android/server/policy/bio;->cno(Ljava/lang/String;I)Z
 
     return-void
 .end method

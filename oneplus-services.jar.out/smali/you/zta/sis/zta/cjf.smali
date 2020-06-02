@@ -14,10 +14,10 @@
 
 
 # virtual methods
-.method protected la(I)I
+.method protected oa(I)I
     .locals 0
 
-    invoke-static {p1}, Lyou/zta/sis/zta/fto;->la(I)I
+    invoke-static {p1}, Lyou/zta/sis/zta/fto;->oa(I)I
 
     move-result p0
 
@@ -31,7 +31,7 @@
 
     move-result v0
 
-    invoke-virtual {p0, v0}, Lyou/zta/sis/zta/cjf;->la(I)I
+    invoke-virtual {p0, v0}, Lyou/zta/sis/zta/cjf;->oa(I)I
 
     move-result p0
 
@@ -53,11 +53,11 @@
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lyou/zta/sis/zta/ear;->Mk()[Lyou/zta/sis/zta/wtn;
+    invoke-virtual {v1}, Lyou/zta/sis/zta/ear;->Vk()[Lyou/zta/sis/zta/wtn;
 
     move-result-object v2
 
-    invoke-virtual {v1}, Lyou/zta/sis/zta/ear;->Nk()[Lyou/zta/sis/zta/wtn;
+    invoke-virtual {v1}, Lyou/zta/sis/zta/ear;->Wk()[Lyou/zta/sis/zta/wtn;
 
     move-result-object v1
 
@@ -107,7 +107,7 @@
 
     if-ge v7, v8, :cond_1
 
-    sget-object v7, Lyou/zta/sis/zta/ibl;->UEa:[B
+    sget-object v7, Lyou/zta/sis/zta/ibl;->hHa:[B
 
     aget-byte v7, v7, v6
 
@@ -151,7 +151,7 @@
     aget-object p0, v5, p0
 
     :goto_1
-    invoke-virtual {p0, p1}, Lyou/zta/sis/zta/wtn;->qa(I)Lyou/zta/sis/zta/wtn;
+    invoke-virtual {p0, p1}, Lyou/zta/sis/zta/wtn;->ta(I)Lyou/zta/sis/zta/wtn;
 
     move-result-object p1
 
@@ -189,7 +189,7 @@
 
     move-result-object p1
 
-    invoke-virtual {p1, p0}, Lyou/zta/sis/zta/wtn;->qa(I)Lyou/zta/sis/zta/wtn;
+    invoke-virtual {p1, p0}, Lyou/zta/sis/zta/wtn;->ta(I)Lyou/zta/sis/zta/wtn;
 
     move-result-object p1
 

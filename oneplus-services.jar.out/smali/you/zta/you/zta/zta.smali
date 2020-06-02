@@ -4,17 +4,17 @@
 
 
 # instance fields
-.field Hqa:[B
-
-.field ava:Lorg/bouncycastle/asn1/x509/zta;
-
-.field bva:Lorg/bouncycastle/asn1/x509/zta;
+.field Vsa:[B
 
 .field content:Lorg/bouncycastle/asn1/n;
 
-.field cva:Ljava/lang/String;
+.field oxa:Lorg/bouncycastle/asn1/x509/zta;
 
-.field dva:Ljava/security/PublicKey;
+.field pxa:Lorg/bouncycastle/asn1/x509/zta;
+
+.field qxa:Ljava/lang/String;
+
+.field rxa:Ljava/security/PublicKey;
 
 
 # direct methods
@@ -30,17 +30,17 @@
 
     invoke-direct {p0}, Lorg/bouncycastle/asn1/oif;-><init>()V
 
-    iput-object p1, p0, Lyou/zta/you/zta/zta;->cva:Ljava/lang/String;
+    iput-object p1, p0, Lyou/zta/you/zta/zta;->qxa:Ljava/lang/String;
 
-    iput-object p2, p0, Lyou/zta/you/zta/zta;->ava:Lorg/bouncycastle/asn1/x509/zta;
+    iput-object p2, p0, Lyou/zta/you/zta/zta;->oxa:Lorg/bouncycastle/asn1/x509/zta;
 
-    iput-object p3, p0, Lyou/zta/you/zta/zta;->dva:Ljava/security/PublicKey;
+    iput-object p3, p0, Lyou/zta/you/zta/zta;->rxa:Ljava/security/PublicKey;
 
     new-instance p2, Lorg/bouncycastle/asn1/cno;
 
     invoke-direct {p2}, Lorg/bouncycastle/asn1/cno;-><init>()V
 
-    invoke-direct {p0}, Lyou/zta/you/zta/zta;->mt()Lorg/bouncycastle/asn1/vdb;
+    invoke-direct {p0}, Lyou/zta/you/zta/zta;->Lt()Lorg/bouncycastle/asn1/vdb;
 
     move-result-object p3
 
@@ -119,7 +119,7 @@
 
     move-result-object v1
 
-    iput-object v1, p0, Lyou/zta/you/zta/zta;->ava:Lorg/bouncycastle/asn1/x509/zta;
+    iput-object v1, p0, Lyou/zta/you/zta/zta;->oxa:Lorg/bouncycastle/asn1/x509/zta;
 
     const/4 v1, 0x2
 
@@ -133,7 +133,7 @@
 
     move-result-object v2
 
-    iput-object v2, p0, Lyou/zta/you/zta/zta;->Hqa:[B
+    iput-object v2, p0, Lyou/zta/you/zta/zta;->Vsa:[B
 
     const/4 v2, 0x0
 
@@ -159,7 +159,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lyou/zta/you/zta/zta;->cva:Ljava/lang/String;
+    iput-object v0, p0, Lyou/zta/you/zta/zta;->qxa:Ljava/lang/String;
 
     new-instance v0, Lorg/bouncycastle/asn1/n;
 
@@ -191,9 +191,9 @@
 
     move-result-object p1
 
-    iput-object p1, p0, Lyou/zta/you/zta/zta;->bva:Lorg/bouncycastle/asn1/x509/zta;
+    iput-object p1, p0, Lyou/zta/you/zta/zta;->pxa:Lorg/bouncycastle/asn1/x509/zta;
 
-    iget-object p1, p0, Lyou/zta/you/zta/zta;->bva:Lorg/bouncycastle/asn1/x509/zta;
+    iget-object p1, p0, Lyou/zta/you/zta/zta;->pxa:Lorg/bouncycastle/asn1/x509/zta;
 
     invoke-virtual {p1}, Lorg/bouncycastle/asn1/x509/zta;->getAlgorithm()Lorg/bouncycastle/asn1/bvj;
 
@@ -213,7 +213,7 @@
 
     move-result-object p1
 
-    iput-object p1, p0, Lyou/zta/you/zta/zta;->dva:Ljava/security/PublicKey;
+    iput-object p1, p0, Lyou/zta/you/zta/zta;->rxa:Ljava/security/PublicKey;
 
     return-void
 
@@ -300,34 +300,7 @@
     return-void
 .end method
 
-.method private static bud([B)Lorg/bouncycastle/asn1/obl;
-    .locals 2
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
-
-    new-instance v0, Lorg/bouncycastle/asn1/dma;
-
-    new-instance v1, Ljava/io/ByteArrayInputStream;
-
-    invoke-direct {v1, p0}, Ljava/io/ByteArrayInputStream;-><init>([B)V
-
-    invoke-direct {v0, v1}, Lorg/bouncycastle/asn1/dma;-><init>(Ljava/io/InputStream;)V
-
-    invoke-virtual {v0}, Lorg/bouncycastle/asn1/dma;->readObject()Lorg/bouncycastle/asn1/vdb;
-
-    move-result-object p0
-
-    invoke-static {p0}, Lorg/bouncycastle/asn1/obl;->getInstance(Ljava/lang/Object;)Lorg/bouncycastle/asn1/obl;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method private mt()Lorg/bouncycastle/asn1/vdb;
+.method private Lt()Lorg/bouncycastle/asn1/vdb;
     .locals 2
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -342,7 +315,7 @@
     invoke-direct {v0}, Ljava/io/ByteArrayOutputStream;-><init>()V
 
     :try_start_0
-    iget-object p0, p0, Lyou/zta/you/zta/zta;->dva:Ljava/security/PublicKey;
+    iget-object p0, p0, Lyou/zta/you/zta/zta;->rxa:Ljava/security/PublicKey;
 
     invoke-interface {p0}, Ljava/security/PublicKey;->getEncoded()[B
 
@@ -386,36 +359,63 @@
     throw v0
 .end method
 
+.method private static bud([B)Lorg/bouncycastle/asn1/obl;
+    .locals 2
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    new-instance v0, Lorg/bouncycastle/asn1/dma;
+
+    new-instance v1, Ljava/io/ByteArrayInputStream;
+
+    invoke-direct {v1, p0}, Ljava/io/ByteArrayInputStream;-><init>([B)V
+
+    invoke-direct {v0, v1}, Lorg/bouncycastle/asn1/dma;-><init>(Ljava/io/InputStream;)V
+
+    invoke-virtual {v0}, Lorg/bouncycastle/asn1/dma;->readObject()Lorg/bouncycastle/asn1/vdb;
+
+    move-result-object p0
+
+    invoke-static {p0}, Lorg/bouncycastle/asn1/obl;->getInstance(Ljava/lang/Object;)Lorg/bouncycastle/asn1/obl;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
 
 # virtual methods
-.method public Ca(Ljava/lang/String;)V
+.method public Ea(Ljava/lang/String;)V
     .locals 0
 
-    iput-object p1, p0, Lyou/zta/you/zta/zta;->cva:Ljava/lang/String;
+    iput-object p1, p0, Lyou/zta/you/zta/zta;->qxa:Ljava/lang/String;
 
     return-void
 .end method
 
-.method public Mi()Ljava/lang/String;
+.method public Vi()Ljava/lang/String;
     .locals 0
 
-    iget-object p0, p0, Lyou/zta/you/zta/zta;->cva:Ljava/lang/String;
+    iget-object p0, p0, Lyou/zta/you/zta/zta;->qxa:Ljava/lang/String;
 
     return-object p0
 .end method
 
-.method public Ni()Lorg/bouncycastle/asn1/x509/zta;
+.method public Wi()Lorg/bouncycastle/asn1/x509/zta;
     .locals 0
 
-    iget-object p0, p0, Lyou/zta/you/zta/zta;->bva:Lorg/bouncycastle/asn1/x509/zta;
+    iget-object p0, p0, Lyou/zta/you/zta/zta;->pxa:Lorg/bouncycastle/asn1/x509/zta;
 
     return-object p0
 .end method
 
-.method public Oi()Lorg/bouncycastle/asn1/x509/zta;
+.method public Xi()Lorg/bouncycastle/asn1/x509/zta;
     .locals 0
 
-    iget-object p0, p0, Lyou/zta/you/zta/zta;->ava:Lorg/bouncycastle/asn1/x509/zta;
+    iget-object p0, p0, Lyou/zta/you/zta/zta;->oxa:Lorg/bouncycastle/asn1/x509/zta;
 
     return-object p0
 .end method
@@ -423,7 +423,7 @@
 .method public getPublicKey()Ljava/security/PublicKey;
     .locals 0
 
-    iget-object p0, p0, Lyou/zta/you/zta/zta;->dva:Ljava/security/PublicKey;
+    iget-object p0, p0, Lyou/zta/you/zta/zta;->rxa:Ljava/security/PublicKey;
 
     return-object p0
 .end method
@@ -431,7 +431,7 @@
 .method public setPublicKey(Ljava/security/PublicKey;)V
     .locals 0
 
-    iput-object p1, p0, Lyou/zta/you/zta/zta;->dva:Ljava/security/PublicKey;
+    iput-object p1, p0, Lyou/zta/you/zta/zta;->rxa:Ljava/security/PublicKey;
 
     return-void
 .end method
@@ -439,7 +439,7 @@
 .method public sis(Lorg/bouncycastle/asn1/x509/zta;)V
     .locals 0
 
-    iput-object p1, p0, Lyou/zta/you/zta/zta;->ava:Lorg/bouncycastle/asn1/x509/zta;
+    iput-object p1, p0, Lyou/zta/you/zta/zta;->oxa:Lorg/bouncycastle/asn1/x509/zta;
 
     return-void
 .end method
@@ -456,7 +456,7 @@
     invoke-direct {v1}, Lorg/bouncycastle/asn1/cno;-><init>()V
 
     :try_start_0
-    invoke-direct {p0}, Lyou/zta/you/zta/zta;->mt()Lorg/bouncycastle/asn1/vdb;
+    invoke-direct {p0}, Lyou/zta/you/zta/zta;->Lt()Lorg/bouncycastle/asn1/vdb;
 
     move-result-object v2
 
@@ -467,7 +467,7 @@
     :catch_0
     new-instance v2, Lorg/bouncycastle/asn1/x;
 
-    iget-object v3, p0, Lyou/zta/you/zta/zta;->cva:Ljava/lang/String;
+    iget-object v3, p0, Lyou/zta/you/zta/zta;->qxa:Ljava/lang/String;
 
     invoke-direct {v2, v3}, Lorg/bouncycastle/asn1/x;-><init>(Ljava/lang/String;)V
 
@@ -479,13 +479,13 @@
 
     invoke-virtual {v0, v2}, Lorg/bouncycastle/asn1/cno;->you(Lorg/bouncycastle/asn1/ssp;)V
 
-    iget-object v1, p0, Lyou/zta/you/zta/zta;->ava:Lorg/bouncycastle/asn1/x509/zta;
+    iget-object v1, p0, Lyou/zta/you/zta/zta;->oxa:Lorg/bouncycastle/asn1/x509/zta;
 
     invoke-virtual {v0, v1}, Lorg/bouncycastle/asn1/cno;->you(Lorg/bouncycastle/asn1/ssp;)V
 
     new-instance v1, Lorg/bouncycastle/asn1/n;
 
-    iget-object p0, p0, Lyou/zta/you/zta/zta;->Hqa:[B
+    iget-object p0, p0, Lyou/zta/you/zta/zta;->Vsa:[B
 
     invoke-direct {v1, p0}, Lorg/bouncycastle/asn1/n;-><init>([B)V
 
@@ -509,7 +509,7 @@
         }
     .end annotation
 
-    iget-object v0, p0, Lyou/zta/you/zta/zta;->cva:Ljava/lang/String;
+    iget-object v0, p0, Lyou/zta/you/zta/zta;->qxa:Ljava/lang/String;
 
     invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -522,7 +522,7 @@
     return p0
 
     :cond_0
-    iget-object p1, p0, Lyou/zta/you/zta/zta;->ava:Lorg/bouncycastle/asn1/x509/zta;
+    iget-object p1, p0, Lyou/zta/you/zta/zta;->oxa:Lorg/bouncycastle/asn1/x509/zta;
 
     invoke-virtual {p1}, Lorg/bouncycastle/asn1/x509/zta;->getAlgorithm()Lorg/bouncycastle/asn1/bvj;
 
@@ -538,7 +538,7 @@
 
     move-result-object p1
 
-    iget-object v0, p0, Lyou/zta/you/zta/zta;->dva:Ljava/security/PublicKey;
+    iget-object v0, p0, Lyou/zta/you/zta/zta;->rxa:Ljava/security/PublicKey;
 
     invoke-virtual {p1, v0}, Ljava/security/Signature;->initVerify(Ljava/security/PublicKey;)V
 
@@ -550,7 +550,7 @@
 
     invoke-virtual {p1, v0}, Ljava/security/Signature;->update([B)V
 
-    iget-object p0, p0, Lyou/zta/you/zta/zta;->Hqa:[B
+    iget-object p0, p0, Lyou/zta/you/zta/zta;->Vsa:[B
 
     invoke-virtual {p1, p0}, Ljava/security/Signature;->verify([B)Z
 
@@ -562,7 +562,7 @@
 .method public you(Lorg/bouncycastle/asn1/x509/zta;)V
     .locals 0
 
-    iput-object p1, p0, Lyou/zta/you/zta/zta;->bva:Lorg/bouncycastle/asn1/x509/zta;
+    iput-object p1, p0, Lyou/zta/you/zta/zta;->pxa:Lorg/bouncycastle/asn1/x509/zta;
 
     return-void
 .end method
@@ -598,7 +598,7 @@
         }
     .end annotation
 
-    iget-object v0, p0, Lyou/zta/you/zta/zta;->ava:Lorg/bouncycastle/asn1/x509/zta;
+    iget-object v0, p0, Lyou/zta/you/zta/zta;->oxa:Lorg/bouncycastle/asn1/x509/zta;
 
     invoke-virtual {v0}, Lorg/bouncycastle/asn1/x509/zta;->getAlgorithm()Lorg/bouncycastle/asn1/bvj;
 
@@ -628,7 +628,7 @@
 
     invoke-direct {p1}, Lorg/bouncycastle/asn1/cno;-><init>()V
 
-    invoke-direct {p0}, Lyou/zta/you/zta/zta;->mt()Lorg/bouncycastle/asn1/vdb;
+    invoke-direct {p0}, Lyou/zta/you/zta/zta;->Lt()Lorg/bouncycastle/asn1/vdb;
 
     move-result-object p2
 
@@ -636,7 +636,7 @@
 
     new-instance p2, Lorg/bouncycastle/asn1/x;
 
-    iget-object v1, p0, Lyou/zta/you/zta/zta;->cva:Ljava/lang/String;
+    iget-object v1, p0, Lyou/zta/you/zta/zta;->qxa:Ljava/lang/String;
 
     invoke-direct {p2, v1}, Lorg/bouncycastle/asn1/x;-><init>(Ljava/lang/String;)V
 
@@ -661,7 +661,7 @@
 
     move-result-object p1
 
-    iput-object p1, p0, Lyou/zta/you/zta/zta;->Hqa:[B
+    iput-object p1, p0, Lyou/zta/you/zta/zta;->Vsa:[B
 
     return-void
 

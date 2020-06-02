@@ -4,245 +4,245 @@
 
 
 # static fields
-.field static final AB:Ljava/lang/String; = "oemlogkit"
+.field static final AB:Ljava/lang/String; = "persist.vendor.atm.mdmode"
 
-.field static final Az:I = 0xf4256
+.field static final AC:Ljava/lang/String; = "vendor.oem.diag.socket.ip"
 
-.field static final BA:Ljava/lang/String; = "/sys/class/power_supply/battery/short_c_hw_status"
+.field static final BA:I = 0x186a5
 
-.field static final Bz:I = 0xf4257
+.field static final BB:Ljava/lang/String; = "normal"
 
-.field static final CA:Ljava/lang/String; = "/sys/class/power_supply/battery/short_ic_otp_status"
+.field static final CA:I = 0x186a6
 
-.field static final Cz:I = 0xf4258
+.field static final CB:Ljava/lang/String; = "ENABLE_UART:TRUE"
 
-.field static final DA:I = 0x6
+.field static final CC:Ljava/lang/String; = "vendor.oem.diag.socket.port"
 
-.field static final Dz:I = 0xf4259
+.field static final DA:I = 0xf4248
 
-.field static final EA:I = 0x7
+.field static final DC:Ljava/lang/String; = "vendor.oem.diag.socket.retry"
 
-.field static final Ez:I = 0xf425a
+.field static final EA:I = 0xf4249
 
-.field static final FA:I = 0x46
+.field static final EB:Ljava/lang/String; = "ENABLE_UART:FALSE"
 
-.field static final Fz:I = 0xf425b
+.field static final EC:Ljava/lang/String; = "startDiagSocket"
 
-.field static final GA:Ljava/lang/String; = "gsm.sim.state"
+.field static final FA:I = 0xf424a
 
-.field static final Gz:I = 0xf425c
+.field static final FB:I = 0x53
 
-.field static final HA:Ljava/lang/String; = "android.telephony.ColorOSTelephonyManager"
+.field static final FC:Ljava/lang/String; = "stopDiagSocket"
 
-.field static final Hz:I = 0xf425d
+.field static final GA:I = 0xf424b
 
-.field static final Iz:I = 0xf4261
+.field static final GB:Ljava/lang/String; = "/proc/ldmp_wdt_test"
 
-.field static final JA:Ljava/lang/String; = "getDefault"
+.field static final GC:Ljava/lang/String; = "oem.permission.OEM_COMPONENT_SAFE"
 
-.field static final Jz:I = 0xf4262
+.field static final HA:I = 0xf424c
 
-.field static final KA:Ljava/lang/String; = "/mnt/vendor/persist/engineermode/server_ip"
+.field static final HB:Ljava/lang/String; = "PASS"
 
-.field static final Kz:I = 0xf4263
+.field static final HC:Ljava/lang/String; = "vendor.gsm.serial"
 
-.field static final LA:Ljava/lang/String; = "server_address"
+.field static final IB:Ljava/lang/String; = "FAILED"
 
-.field static final Lz:I = 0xf4264
+.field static final IC:Ljava/lang/String; = "gsm.serial"
 
-.field static final MA:I = 0x0
+.field static final JA:I = 0xf424d
 
-.field static final Mz:I = 0xf4265
+.field static final JB:Ljava/lang/String; = "\"login_mode\":\t\"production\""
 
-.field static final Nz:I = 0xf4266
+.field static final JC:Ljava/lang/String; = "UNKNOWN"
 
-.field static final OA:I = 0x1
+.field static final KA:I = 0xf424e
 
-.field static final Oz:I = 0xf4267
+.field static final KB:Ljava/lang/String; = "sys.oem.production.login.mode"
 
-.field static final PA:I = 0x2
+.field static final KC:Ljava/lang/String; = "ro.serialno"
 
-.field static final Pz:I = 0xf4268
+.field static final LA:I = 0xf424f
 
-.field static final QA:Ljava/lang/String; = "com.oneplus.factorymode"
+.field static final LB:Ljava/lang/String; = "[a-f0-9A-F]{8}"
 
-.field static final Qz:I = 0xf4269
+.field static final LC:Ljava/lang/String; = "ro.build.release_type"
 
-.field static final RA:Ljava/lang/String; = "com.oem.autotest"
+.field static final MA:I = 0xf4250
 
-.field static final Rz:I = 0xf426a
+.field static final MB:Ljava/lang/String; = "ro.hw.phone.color"
 
-.field static final SA:Ljava/lang/String; = "com.oem.autotest.connector.AutoTestServer"
+.field static final MC:Ljava/lang/String; = "/mnt/vendor/persist/engineermode/oem_serial_no"
 
-.field static final Sz:I = 0xf426b
+.field static final NB:Ljava/lang/String; = "persist.sys.oneplus.serialno"
 
-.field static final TA:Ljava/lang/String; = "oneplus.intent.action.START_OPPO_AT_SERVER"
+.field static final OA:I = 0xf4251
 
-.field static final Tz:I = 0xf426c
+.field static final OB:Ljava/lang/String; = "[A-J]{15}"
 
-.field static final UA:Ljava/lang/String; = "oneplus.intent.action.STOP_OPPO_AT_SERVER"
+.field static final OC:Ljava/lang/String; = "com.oem.oemlogkit.getLog"
 
-.field static final Uz:I = 0xf426d
+.field static final PA:I = 0xf4252
 
-.field static final VA:Ljava/lang/String; = "com.oneplus.factorymode.manualtest.MasterClear"
+.field static final PB:I = 0x3
 
-.field static final Vz:I = 0xf426e
+.field static final PC:Ljava/lang/String; = "com.oem.oemlogkit"
 
-.field static final WA:Ljava/lang/String; = "com.oneplus.factorymode.PowerOff"
+.field static final QA:I = 0xf4253
 
-.field static final Wz:I = 0xf4277
+.field static final QB:I = 0x4
 
-.field static final XA:Ljava/lang/String; = "com.oppo.engineermode.manualtest.modeltest.ModelTest"
+.field static final QC:Ljava/lang/String; = "oemlogkit"
 
-.field static final Xz:I = 0xf4278
+.field static final RA:I = 0xf4256
 
-.field static final YA:Ljava/lang/String; = "modeltest_key"
+.field static final RB:Ljava/lang/String; = "/sys/class/power_supply/battery/capacity"
 
-.field static final Yz:I = 0xf4279
+.field static final SA:I = 0xf4257
 
-.field static final ZA:Ljava/lang/String; = "com.oem.engineermode.EngineerModeMain"
+.field static final SB:Ljava/lang/String; = "/sys/class/power_supply/battery/short_c_hw_status"
 
-.field static final Zz:I = 0xf427a
+.field static final TA:I = 0xf4258
 
-.field static final _A:Ljava/lang/String; = "order"
+.field static final TB:Ljava/lang/String; = "/sys/class/power_supply/battery/short_ic_otp_status"
 
-.field static final _z:I = 0xf427b
+.field static final UA:I = 0xf4259
 
-.field static final aA:I = 0x2710
+.field static final UB:I = 0x6
 
-.field static final aB:Ljava/lang/String; = "com.oneplus.factorymode.assistant.SwitchProductionMode"
+.field static final VA:I = 0xf425a
 
-.field static final bA:I = 0x65
+.field static final VB:I = 0x7
 
-.field static final bB:Ljava/lang/String; = "com.oneplus.factorymode.DetectMasterClearResult"
+.field static final WA:I = 0xf425b
 
-.field static final cA:I = 0x66
+.field static final WB:I = 0x46
 
-.field static final cB:Ljava/lang/String; = "sys.masterclear.result"
+.field static final XA:I = 0xf425c
 
-.field static final dA:I = 0x80
+.field static final XB:Ljava/lang/String; = "gsm.sim.state"
 
-.field static final dB:Ljava/lang/String; = "com.oneplus.factorymode.ShowRemoteMessage"
+.field static final YA:I = 0xf425d
 
-.field static final eA:I = 0x10
+.field static final YB:Ljava/lang/String; = "android.telephony.ColorOSTelephonyManager"
 
-.field static final eB:Ljava/lang/String; = "com.oneplus.factorymode.assistant.SwitchWifiMMI"
+.field static final ZA:I = 0xf4261
 
-.field static final fA:Ljava/lang/String; = "oem.eng.factory.no"
+.field static final ZB:Ljava/lang/String; = "getDefault"
 
-.field static final fB:Ljava/lang/String; = "com.oneplus.factorymode.wifitest.WifiAdbHelper"
+.field static final _A:I = 0xf4262
 
-.field static final gA:Ljava/lang/String; = "sys.usb.config.meta"
+.field static final _B:Ljava/lang/String; = "/mnt/vendor/persist/engineermode/server_ip"
 
-.field static final gB:Ljava/lang/String; = "com.oneplus.factorymode.assistant.SmartCoverUIService"
+.field static final aB:I = 0xf4263
 
-.field static final hA:Ljava/lang/String; = "vendor.oem.quit.atm"
+.field static final aC:Ljava/lang/String; = "server_address"
 
-.field static final hB:I = 0x1
+.field static final bB:I = 0xf4264
 
-.field static final iA:Ljava/lang/String; = "persist.vendor.atm.mdmode"
+.field static final bC:I = 0x0
 
-.field static final iB:I = 0x2
+.field static final cB:I = 0xf4265
 
-.field static final iz:I = 0x186a1
+.field static final cC:I = 0x1
 
-.field static final jA:Ljava/lang/String; = "normal"
+.field static final dB:I = 0xf4266
 
-.field static final jB:I = 0x3
+.field static final dC:I = 0x2
 
-.field static final jz:I = 0x186a2
+.field static final eB:I = 0xf4267
 
-.field static final kA:Ljava/lang/String; = "ENABLE_UART:TRUE"
+.field static final eC:Ljava/lang/String; = "com.oneplus.factorymode"
 
-.field static final kB:I = 0x4
+.field static final fB:I = 0xf4268
 
-.field static final kz:I = 0x186a3
+.field static final fC:Ljava/lang/String; = "com.oem.autotest"
 
-.field static final lA:Ljava/lang/String; = "ENABLE_UART:FALSE"
+.field static final gB:I = 0xf4269
 
-.field static final lB:Ljava/lang/String; = "vendor.oem.diag.socket.ip"
+.field static final gC:Ljava/lang/String; = "com.oem.autotest.connector.AutoTestServer"
 
-.field static final lz:I = 0x186a4
+.field static final hB:I = 0xf426a
 
-.field static final mz:I = 0x186a5
+.field static final hC:Ljava/lang/String; = "oneplus.intent.action.START_OPPO_AT_SERVER"
 
-.field static final nA:I = 0x53
+.field static final iB:I = 0xf426b
 
-.field static final nB:Ljava/lang/String; = "vendor.oem.diag.socket.port"
+.field static final iC:Ljava/lang/String; = "oneplus.intent.action.STOP_OPPO_AT_SERVER"
 
-.field static final nz:I = 0x186a6
+.field static final jB:I = 0xf426c
 
-.field static final oA:Ljava/lang/String; = "/proc/ldmp_wdt_test"
+.field static final jC:Ljava/lang/String; = "com.oneplus.factorymode.manualtest.MasterClear"
 
-.field static final oB:Ljava/lang/String; = "vendor.oem.diag.socket.retry"
+.field static final kB:I = 0xf426d
 
-.field static final oz:I = 0xf4248
+.field static final kC:Ljava/lang/String; = "com.oneplus.factorymode.PowerOff"
 
-.field static final pA:Ljava/lang/String; = "PASS"
+.field static final lB:I = 0xf426e
 
-.field static final pB:Ljava/lang/String; = "startDiagSocket"
+.field static final lC:Ljava/lang/String; = "com.oppo.engineermode.manualtest.modeltest.ModelTest"
 
-.field static final pz:I = 0xf4249
+.field static final mC:Ljava/lang/String; = "modeltest_key"
 
-.field static final qA:Ljava/lang/String; = "FAILED"
+.field static final nB:I = 0xf4277
 
-.field static final qB:Ljava/lang/String; = "stopDiagSocket"
+.field static final nC:Ljava/lang/String; = "com.oem.engineermode.EngineerModeMain"
 
-.field static final qz:I = 0xf424a
+.field static final oB:I = 0xf4278
 
-.field static final rA:Ljava/lang/String; = "\"login_mode\":\t\"production\""
+.field static final oC:Ljava/lang/String; = "order"
 
-.field static final rB:Ljava/lang/String; = "oem.permission.OEM_COMPONENT_SAFE"
+.field static final pB:I = 0xf4279
 
-.field static final rz:I = 0xf424b
+.field static final pC:Ljava/lang/String; = "com.oneplus.factorymode.assistant.SwitchProductionMode"
 
-.field static final sA:Ljava/lang/String; = "sys.oem.production.login.mode"
+.field static final qB:I = 0xf427a
 
-.field static final sB:Ljava/lang/String; = "vendor.gsm.serial"
+.field static final qC:Ljava/lang/String; = "com.oneplus.factorymode.DetectMasterClearResult"
 
-.field static final sz:I = 0xf424c
+.field static final rB:I = 0xf427b
 
-.field static final tA:Ljava/lang/String; = "[a-f0-9A-F]{8}"
+.field static final rC:Ljava/lang/String; = "sys.masterclear.result"
 
-.field static final tB:Ljava/lang/String; = "gsm.serial"
+.field static final sB:I = 0x2710
 
-.field static final tz:I = 0xf424d
+.field static final sC:Ljava/lang/String; = "com.oneplus.factorymode.ShowRemoteMessage"
 
-.field static final uA:Ljava/lang/String; = "ro.hw.phone.color"
+.field static final tB:I = 0x65
 
-.field static final uB:Ljava/lang/String; = "UNKNOWN"
+.field static final tC:Ljava/lang/String; = "com.oneplus.factorymode.assistant.SwitchWifiMMI"
 
-.field static final uz:I = 0xf424e
+.field static final uB:I = 0x66
 
-.field static final vA:Ljava/lang/String; = "persist.sys.oneplus.serialno"
+.field static final uC:Ljava/lang/String; = "com.oneplus.factorymode.wifitest.WifiAdbHelper"
 
-.field static final vB:Ljava/lang/String; = "ro.serialno"
+.field static final vB:I = 0x80
 
-.field static final vz:I = 0xf424f
+.field static final vC:Ljava/lang/String; = "com.oneplus.factorymode.assistant.SmartCoverUIService"
 
-.field static final wA:Ljava/lang/String; = "[A-J]{15}"
+.field static final wA:I = 0x186a1
 
-.field static final wB:Ljava/lang/String; = "ro.build.release_type"
+.field static final wB:I = 0x10
 
-.field static final wz:I = 0xf4250
+.field static final wC:I = 0x1
 
-.field static final xA:I = 0x3
+.field static final xA:I = 0x186a2
 
-.field static final xB:Ljava/lang/String; = "/mnt/vendor/persist/engineermode/oem_serial_no"
+.field static final xB:Ljava/lang/String; = "oem.eng.factory.no"
 
-.field static final xz:I = 0xf4251
+.field static final xC:I = 0x2
 
-.field static final yA:I = 0x4
+.field static final yA:I = 0x186a3
 
-.field static final yB:Ljava/lang/String; = "com.oem.oemlogkit.getLog"
+.field static final yB:Ljava/lang/String; = "sys.usb.config.meta"
 
-.field static final yz:I = 0xf4252
+.field static final yC:I = 0x3
 
-.field static final zA:Ljava/lang/String; = "/sys/class/power_supply/battery/capacity"
+.field static final zA:I = 0x186a4
 
-.field static final zB:Ljava/lang/String; = "com.oem.oemlogkit"
+.field static final zB:Ljava/lang/String; = "vendor.oem.quit.atm"
 
-.field static final zz:I = 0xf4253
+.field static final zC:I = 0x4
 
 
 # direct methods

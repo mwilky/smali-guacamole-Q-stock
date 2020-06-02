@@ -4,11 +4,11 @@
 
 
 # static fields
+.field static Axa:Ljava/util/Locale;
+
 .field private static ZERO:Ljava/lang/Long;
 
-.field private static final lva:Ljava/util/Map;
-
-.field static mva:Ljava/util/Locale;
+.field private static final zxa:Ljava/util/Map;
 
 
 # direct methods
@@ -27,13 +27,13 @@
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    sput-object v0, Lorg/bouncycastle/asn1/aa;->lva:Ljava/util/Map;
+    sput-object v0, Lorg/bouncycastle/asn1/aa;->zxa:Ljava/util/Map;
 
-    invoke-static {}, Lorg/bouncycastle/asn1/aa;->nt()Ljava/util/Locale;
+    invoke-static {}, Lorg/bouncycastle/asn1/aa;->Mt()Ljava/util/Locale;
 
     move-result-object v0
 
-    sput-object v0, Lorg/bouncycastle/asn1/aa;->mva:Ljava/util/Locale;
+    sput-object v0, Lorg/bouncycastle/asn1/aa;->Axa:Ljava/util/Locale;
 
     return-void
 .end method
@@ -46,17 +46,7 @@
     return-void
 .end method
 
-.method private static d(J)Ljava/lang/Long;
-    .locals 0
-
-    invoke-static {p0, p1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method private static nt()Ljava/util/Locale;
+.method private static Mt()Ljava/util/Locale;
     .locals 4
 
     invoke-static {}, Ljava/util/Locale;->getDefault()Ljava/util/Locale;
@@ -122,6 +112,16 @@
     return-object v0
 .end method
 
+.method private static d(J)Ljava/lang/Long;
+    .locals 0
+
+    invoke-static {p0, p1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
 .method static zta(Ljava/util/Date;)Ljava/util/Date;
     .locals 7
     .annotation system Ldalvik/annotation/Throws;
@@ -139,12 +139,12 @@
     return-object p0
 
     :cond_0
-    sget-object v1, Lorg/bouncycastle/asn1/aa;->lva:Ljava/util/Map;
+    sget-object v1, Lorg/bouncycastle/asn1/aa;->zxa:Ljava/util/Map;
 
     monitor-enter v1
 
     :try_start_0
-    sget-object v2, Lorg/bouncycastle/asn1/aa;->lva:Ljava/util/Map;
+    sget-object v2, Lorg/bouncycastle/asn1/aa;->zxa:Ljava/util/Map;
 
     invoke-interface {v2, v0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -186,7 +186,7 @@
     move-result-object v2
 
     :goto_0
-    sget-object v3, Lorg/bouncycastle/asn1/aa;->lva:Ljava/util/Map;
+    sget-object v3, Lorg/bouncycastle/asn1/aa;->zxa:Ljava/util/Map;
 
     invoke-interface {v3, v0, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 

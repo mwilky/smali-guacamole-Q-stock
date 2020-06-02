@@ -4,29 +4,29 @@
 
 
 # static fields
-.field public static final Sna:I = 0x0
+.field public static final gqa:I = 0x0
 
-.field public static final Tna:I = 0x1
+.field public static final hqa:I = 0x1
 
 
 # instance fields
-.field private Jna:Ljava/util/List;
+.field private Ypa:Ljava/util/List;
 
-.field private Kna:Z
+.field private Zpa:Z
 
-.field private Lna:Ljava/util/List;
+.field private _pa:Ljava/util/List;
 
-.field private Mna:Ljava/util/Set;
+.field private aqa:Ljava/util/Set;
 
-.field private Nna:Ljava/util/Set;
+.field private bqa:Ljava/util/Set;
 
-.field private Ona:Ljava/util/Set;
+.field private cqa:Ljava/util/Set;
 
-.field private Pna:Ljava/util/Set;
+.field private dqa:Ljava/util/Set;
 
-.field private Qna:I
+.field private eqa:I
 
-.field private Rna:Z
+.field private fqa:Z
 
 .field private selector:Lorg/bouncycastle/util/dma;
 
@@ -44,45 +44,45 @@
 
     const/4 p1, 0x0
 
-    iput p1, p0, Lorg/bouncycastle/x509/tsu;->Qna:I
+    iput p1, p0, Lorg/bouncycastle/x509/tsu;->eqa:I
 
-    iput-boolean p1, p0, Lorg/bouncycastle/x509/tsu;->Rna:Z
-
-    new-instance p1, Ljava/util/ArrayList;
-
-    invoke-direct {p1}, Ljava/util/ArrayList;-><init>()V
-
-    iput-object p1, p0, Lorg/bouncycastle/x509/tsu;->Jna:Ljava/util/List;
+    iput-boolean p1, p0, Lorg/bouncycastle/x509/tsu;->fqa:Z
 
     new-instance p1, Ljava/util/ArrayList;
 
     invoke-direct {p1}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object p1, p0, Lorg/bouncycastle/x509/tsu;->Lna:Ljava/util/List;
+    iput-object p1, p0, Lorg/bouncycastle/x509/tsu;->Ypa:Ljava/util/List;
+
+    new-instance p1, Ljava/util/ArrayList;
+
+    invoke-direct {p1}, Ljava/util/ArrayList;-><init>()V
+
+    iput-object p1, p0, Lorg/bouncycastle/x509/tsu;->_pa:Ljava/util/List;
 
     new-instance p1, Ljava/util/HashSet;
 
     invoke-direct {p1}, Ljava/util/HashSet;-><init>()V
 
-    iput-object p1, p0, Lorg/bouncycastle/x509/tsu;->Mna:Ljava/util/Set;
+    iput-object p1, p0, Lorg/bouncycastle/x509/tsu;->aqa:Ljava/util/Set;
 
     new-instance p1, Ljava/util/HashSet;
 
     invoke-direct {p1}, Ljava/util/HashSet;-><init>()V
 
-    iput-object p1, p0, Lorg/bouncycastle/x509/tsu;->Nna:Ljava/util/Set;
+    iput-object p1, p0, Lorg/bouncycastle/x509/tsu;->bqa:Ljava/util/Set;
 
     new-instance p1, Ljava/util/HashSet;
 
     invoke-direct {p1}, Ljava/util/HashSet;-><init>()V
 
-    iput-object p1, p0, Lorg/bouncycastle/x509/tsu;->Ona:Ljava/util/Set;
+    iput-object p1, p0, Lorg/bouncycastle/x509/tsu;->cqa:Ljava/util/Set;
 
     new-instance p1, Ljava/util/HashSet;
 
     invoke-direct {p1}, Ljava/util/HashSet;-><init>()V
 
-    iput-object p1, p0, Lorg/bouncycastle/x509/tsu;->Pna:Ljava/util/Set;
+    iput-object p1, p0, Lorg/bouncycastle/x509/tsu;->dqa:Ljava/util/Set;
 
     return-void
 .end method
@@ -121,149 +121,40 @@
 
 
 # virtual methods
-.method public T(Z)V
+.method public V(Z)V
     .locals 0
 
-    iput-boolean p1, p0, Lorg/bouncycastle/x509/tsu;->Kna:Z
+    iput-boolean p1, p0, Lorg/bouncycastle/x509/tsu;->Zpa:Z
 
     return-void
 .end method
 
-.method public U(Z)V
+.method public W(Z)V
     .locals 0
 
-    iput-boolean p1, p0, Lorg/bouncycastle/x509/tsu;->Rna:Z
+    iput-boolean p1, p0, Lorg/bouncycastle/x509/tsu;->fqa:Z
 
     return-void
 .end method
 
-.method public Uf()Ljava/util/List;
+.method public ba(I)V
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/x509/tsu;->Lna:Ljava/util/List;
+    iput p1, p0, Lorg/bouncycastle/x509/tsu;->eqa:I
+
+    return-void
+.end method
+
+.method public cg()Ljava/util/List;
+    .locals 0
+
+    iget-object p0, p0, Lorg/bouncycastle/x509/tsu;->_pa:Ljava/util/List;
 
     invoke-static {p0}, Ljava/util/Collections;->unmodifiableList(Ljava/util/List;)Ljava/util/List;
 
     move-result-object p0
 
     return-object p0
-.end method
-
-.method public Vf()Ljava/util/Set;
-    .locals 0
-
-    iget-object p0, p0, Lorg/bouncycastle/x509/tsu;->Pna:Ljava/util/Set;
-
-    invoke-static {p0}, Ljava/util/Collections;->unmodifiableSet(Ljava/util/Set;)Ljava/util/Set;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public Wf()Ljava/util/Set;
-    .locals 0
-
-    iget-object p0, p0, Lorg/bouncycastle/x509/tsu;->Nna:Ljava/util/Set;
-
-    invoke-static {p0}, Ljava/util/Collections;->unmodifiableSet(Ljava/util/Set;)Ljava/util/Set;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public Xf()Ljava/util/Set;
-    .locals 0
-
-    iget-object p0, p0, Lorg/bouncycastle/x509/tsu;->Ona:Ljava/util/Set;
-
-    invoke-static {p0}, Ljava/util/Collections;->unmodifiableSet(Ljava/util/Set;)Ljava/util/Set;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public Y(I)V
-    .locals 0
-
-    iput p1, p0, Lorg/bouncycastle/x509/tsu;->Qna:I
-
-    return-void
-.end method
-
-.method public Yf()Ljava/util/List;
-    .locals 1
-
-    new-instance v0, Ljava/util/ArrayList;
-
-    iget-object p0, p0, Lorg/bouncycastle/x509/tsu;->Jna:Ljava/util/List;
-
-    invoke-direct {v0, p0}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
-
-    invoke-static {v0}, Ljava/util/Collections;->unmodifiableList(Ljava/util/List;)Ljava/util/List;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public Zf()Lorg/bouncycastle/util/dma;
-    .locals 0
-
-    iget-object p0, p0, Lorg/bouncycastle/x509/tsu;->selector:Lorg/bouncycastle/util/dma;
-
-    if-eqz p0, :cond_0
-
-    invoke-interface {p0}, Lorg/bouncycastle/util/dma;->clone()Ljava/lang/Object;
-
-    move-result-object p0
-
-    check-cast p0, Lorg/bouncycastle/util/dma;
-
-    return-object p0
-
-    :cond_0
-    const/4 p0, 0x0
-
-    return-object p0
-.end method
-
-.method public _f()Ljava/util/Set;
-    .locals 0
-
-    iget-object p0, p0, Lorg/bouncycastle/x509/tsu;->Mna:Ljava/util/Set;
-
-    invoke-static {p0}, Ljava/util/Collections;->unmodifiableSet(Ljava/util/Set;)Ljava/util/Set;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public ag()I
-    .locals 0
-
-    iget p0, p0, Lorg/bouncycastle/x509/tsu;->Qna:I
-
-    return p0
-.end method
-
-.method public bg()Z
-    .locals 0
-
-    iget-boolean p0, p0, Lorg/bouncycastle/x509/tsu;->Kna:Z
-
-    return p0
-.end method
-
-.method public cg()Z
-    .locals 0
-
-    iget-boolean p0, p0, Lorg/bouncycastle/x509/tsu;->Rna:Z
-
-    return p0
 .end method
 
 .method public clone()Ljava/lang/Object;
@@ -307,7 +198,7 @@
 
     invoke-direct {p1}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object p1, p0, Lorg/bouncycastle/x509/tsu;->Jna:Ljava/util/List;
+    iput-object p1, p0, Lorg/bouncycastle/x509/tsu;->Ypa:Ljava/util/List;
 
     goto :goto_1
 
@@ -347,10 +238,119 @@
 
     invoke-direct {v0, p1}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
 
-    iput-object v0, p0, Lorg/bouncycastle/x509/tsu;->Jna:Ljava/util/List;
+    iput-object v0, p0, Lorg/bouncycastle/x509/tsu;->Ypa:Ljava/util/List;
 
     :goto_1
     return-void
+.end method
+
+.method public dg()Ljava/util/Set;
+    .locals 0
+
+    iget-object p0, p0, Lorg/bouncycastle/x509/tsu;->dqa:Ljava/util/Set;
+
+    invoke-static {p0}, Ljava/util/Collections;->unmodifiableSet(Ljava/util/Set;)Ljava/util/Set;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public eg()Ljava/util/Set;
+    .locals 0
+
+    iget-object p0, p0, Lorg/bouncycastle/x509/tsu;->bqa:Ljava/util/Set;
+
+    invoke-static {p0}, Ljava/util/Collections;->unmodifiableSet(Ljava/util/Set;)Ljava/util/Set;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public fg()Ljava/util/Set;
+    .locals 0
+
+    iget-object p0, p0, Lorg/bouncycastle/x509/tsu;->cqa:Ljava/util/Set;
+
+    invoke-static {p0}, Ljava/util/Collections;->unmodifiableSet(Ljava/util/Set;)Ljava/util/Set;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public gg()Ljava/util/List;
+    .locals 1
+
+    new-instance v0, Ljava/util/ArrayList;
+
+    iget-object p0, p0, Lorg/bouncycastle/x509/tsu;->Ypa:Ljava/util/List;
+
+    invoke-direct {v0, p0}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
+
+    invoke-static {v0}, Ljava/util/Collections;->unmodifiableList(Ljava/util/List;)Ljava/util/List;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public hg()Lorg/bouncycastle/util/dma;
+    .locals 0
+
+    iget-object p0, p0, Lorg/bouncycastle/x509/tsu;->selector:Lorg/bouncycastle/util/dma;
+
+    if-eqz p0, :cond_0
+
+    invoke-interface {p0}, Lorg/bouncycastle/util/dma;->clone()Ljava/lang/Object;
+
+    move-result-object p0
+
+    check-cast p0, Lorg/bouncycastle/util/dma;
+
+    return-object p0
+
+    :cond_0
+    const/4 p0, 0x0
+
+    return-object p0
+.end method
+
+.method public ig()Ljava/util/Set;
+    .locals 0
+
+    iget-object p0, p0, Lorg/bouncycastle/x509/tsu;->aqa:Ljava/util/Set;
+
+    invoke-static {p0}, Ljava/util/Collections;->unmodifiableSet(Ljava/util/Set;)Ljava/util/Set;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public jg()I
+    .locals 0
+
+    iget p0, p0, Lorg/bouncycastle/x509/tsu;->eqa:I
+
+    return p0
+.end method
+
+.method public kg()Z
+    .locals 0
+
+    iget-boolean p0, p0, Lorg/bouncycastle/x509/tsu;->Zpa:Z
+
+    return p0
+.end method
+
+.method public lg()Z
+    .locals 0
+
+    iget-boolean p0, p0, Lorg/bouncycastle/x509/tsu;->fqa:Z
+
+    return p0
 .end method
 
 .method public setCertStores(Ljava/util/List;)V
@@ -412,7 +412,7 @@
 
     if-nez p1, :cond_0
 
-    iget-object p0, p0, Lorg/bouncycastle/x509/tsu;->Ona:Ljava/util/Set;
+    iget-object p0, p0, Lorg/bouncycastle/x509/tsu;->cqa:Ljava/util/Set;
 
     invoke-interface {p0}, Ljava/util/Set;->clear()V
 
@@ -450,11 +450,11 @@
     throw p0
 
     :cond_2
-    iget-object v0, p0, Lorg/bouncycastle/x509/tsu;->Ona:Ljava/util/Set;
+    iget-object v0, p0, Lorg/bouncycastle/x509/tsu;->cqa:Ljava/util/Set;
 
     invoke-interface {v0}, Ljava/util/Set;->clear()V
 
-    iget-object p0, p0, Lorg/bouncycastle/x509/tsu;->Ona:Ljava/util/Set;
+    iget-object p0, p0, Lorg/bouncycastle/x509/tsu;->cqa:Ljava/util/Set;
 
     invoke-interface {p0, p1}, Ljava/util/Set;->addAll(Ljava/util/Collection;)Z
 
@@ -466,7 +466,7 @@
 
     if-eqz p1, :cond_0
 
-    iget-object p0, p0, Lorg/bouncycastle/x509/tsu;->Jna:Ljava/util/List;
+    iget-object p0, p0, Lorg/bouncycastle/x509/tsu;->Ypa:Ljava/util/List;
 
     invoke-interface {p0, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
@@ -479,7 +479,7 @@
 
     if-nez p1, :cond_0
 
-    iget-object p0, p0, Lorg/bouncycastle/x509/tsu;->Mna:Ljava/util/Set;
+    iget-object p0, p0, Lorg/bouncycastle/x509/tsu;->aqa:Ljava/util/Set;
 
     invoke-interface {p0}, Ljava/util/Set;->clear()V
 
@@ -539,11 +539,11 @@
     throw p0
 
     :cond_2
-    iget-object v0, p0, Lorg/bouncycastle/x509/tsu;->Mna:Ljava/util/Set;
+    iget-object v0, p0, Lorg/bouncycastle/x509/tsu;->aqa:Ljava/util/Set;
 
     invoke-interface {v0}, Ljava/util/Set;->clear()V
 
-    iget-object p0, p0, Lorg/bouncycastle/x509/tsu;->Mna:Ljava/util/Set;
+    iget-object p0, p0, Lorg/bouncycastle/x509/tsu;->aqa:Ljava/util/Set;
 
     invoke-interface {p0, p1}, Ljava/util/Set;->addAll(Ljava/util/Collection;)Z
 
@@ -634,17 +634,17 @@
 
     check-cast p1, Lorg/bouncycastle/x509/tsu;
 
-    iget v0, p1, Lorg/bouncycastle/x509/tsu;->Qna:I
+    iget v0, p1, Lorg/bouncycastle/x509/tsu;->eqa:I
 
-    iput v0, p0, Lorg/bouncycastle/x509/tsu;->Qna:I
+    iput v0, p0, Lorg/bouncycastle/x509/tsu;->eqa:I
 
-    iget-boolean v0, p1, Lorg/bouncycastle/x509/tsu;->Rna:Z
+    iget-boolean v0, p1, Lorg/bouncycastle/x509/tsu;->fqa:Z
 
-    iput-boolean v0, p0, Lorg/bouncycastle/x509/tsu;->Rna:Z
+    iput-boolean v0, p0, Lorg/bouncycastle/x509/tsu;->fqa:Z
 
-    iget-boolean v0, p1, Lorg/bouncycastle/x509/tsu;->Kna:Z
+    iget-boolean v0, p1, Lorg/bouncycastle/x509/tsu;->Zpa:Z
 
-    iput-boolean v0, p0, Lorg/bouncycastle/x509/tsu;->Kna:Z
+    iput-boolean v0, p0, Lorg/bouncycastle/x509/tsu;->Zpa:Z
 
     iget-object v0, p1, Lorg/bouncycastle/x509/tsu;->selector:Lorg/bouncycastle/util/dma;
 
@@ -666,51 +666,51 @@
 
     new-instance v0, Ljava/util/ArrayList;
 
-    iget-object v1, p1, Lorg/bouncycastle/x509/tsu;->Jna:Ljava/util/List;
+    iget-object v1, p1, Lorg/bouncycastle/x509/tsu;->Ypa:Ljava/util/List;
 
     invoke-direct {v0, v1}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
 
-    iput-object v0, p0, Lorg/bouncycastle/x509/tsu;->Jna:Ljava/util/List;
+    iput-object v0, p0, Lorg/bouncycastle/x509/tsu;->Ypa:Ljava/util/List;
 
     new-instance v0, Ljava/util/ArrayList;
 
-    iget-object v1, p1, Lorg/bouncycastle/x509/tsu;->Lna:Ljava/util/List;
+    iget-object v1, p1, Lorg/bouncycastle/x509/tsu;->_pa:Ljava/util/List;
 
     invoke-direct {v0, v1}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
 
-    iput-object v0, p0, Lorg/bouncycastle/x509/tsu;->Lna:Ljava/util/List;
+    iput-object v0, p0, Lorg/bouncycastle/x509/tsu;->_pa:Ljava/util/List;
 
     new-instance v0, Ljava/util/HashSet;
 
-    iget-object v1, p1, Lorg/bouncycastle/x509/tsu;->Mna:Ljava/util/Set;
+    iget-object v1, p1, Lorg/bouncycastle/x509/tsu;->aqa:Ljava/util/Set;
 
     invoke-direct {v0, v1}, Ljava/util/HashSet;-><init>(Ljava/util/Collection;)V
 
-    iput-object v0, p0, Lorg/bouncycastle/x509/tsu;->Mna:Ljava/util/Set;
+    iput-object v0, p0, Lorg/bouncycastle/x509/tsu;->aqa:Ljava/util/Set;
 
     new-instance v0, Ljava/util/HashSet;
 
-    iget-object v1, p1, Lorg/bouncycastle/x509/tsu;->Ona:Ljava/util/Set;
+    iget-object v1, p1, Lorg/bouncycastle/x509/tsu;->cqa:Ljava/util/Set;
 
     invoke-direct {v0, v1}, Ljava/util/HashSet;-><init>(Ljava/util/Collection;)V
 
-    iput-object v0, p0, Lorg/bouncycastle/x509/tsu;->Ona:Ljava/util/Set;
+    iput-object v0, p0, Lorg/bouncycastle/x509/tsu;->cqa:Ljava/util/Set;
 
     new-instance v0, Ljava/util/HashSet;
 
-    iget-object v1, p1, Lorg/bouncycastle/x509/tsu;->Nna:Ljava/util/Set;
+    iget-object v1, p1, Lorg/bouncycastle/x509/tsu;->bqa:Ljava/util/Set;
 
     invoke-direct {v0, v1}, Ljava/util/HashSet;-><init>(Ljava/util/Collection;)V
 
-    iput-object v0, p0, Lorg/bouncycastle/x509/tsu;->Nna:Ljava/util/Set;
+    iput-object v0, p0, Lorg/bouncycastle/x509/tsu;->bqa:Ljava/util/Set;
 
     new-instance v0, Ljava/util/HashSet;
 
-    iget-object p1, p1, Lorg/bouncycastle/x509/tsu;->Pna:Ljava/util/Set;
+    iget-object p1, p1, Lorg/bouncycastle/x509/tsu;->dqa:Ljava/util/Set;
 
     invoke-direct {v0, p1}, Ljava/util/HashSet;-><init>(Ljava/util/Collection;)V
 
-    iput-object v0, p0, Lorg/bouncycastle/x509/tsu;->Pna:Ljava/util/Set;
+    iput-object v0, p0, Lorg/bouncycastle/x509/tsu;->dqa:Ljava/util/Set;
 
     :cond_1
     return-void
@@ -734,7 +734,7 @@
 
     if-nez p1, :cond_0
 
-    iget-object p0, p0, Lorg/bouncycastle/x509/tsu;->Nna:Ljava/util/Set;
+    iget-object p0, p0, Lorg/bouncycastle/x509/tsu;->bqa:Ljava/util/Set;
 
     invoke-interface {p0}, Ljava/util/Set;->clear()V
 
@@ -772,11 +772,11 @@
     throw p0
 
     :cond_2
-    iget-object v0, p0, Lorg/bouncycastle/x509/tsu;->Nna:Ljava/util/Set;
+    iget-object v0, p0, Lorg/bouncycastle/x509/tsu;->bqa:Ljava/util/Set;
 
     invoke-interface {v0}, Ljava/util/Set;->clear()V
 
-    iget-object p0, p0, Lorg/bouncycastle/x509/tsu;->Nna:Ljava/util/Set;
+    iget-object p0, p0, Lorg/bouncycastle/x509/tsu;->bqa:Ljava/util/Set;
 
     invoke-interface {p0, p1}, Ljava/util/Set;->addAll(Ljava/util/Collection;)Z
 
@@ -810,7 +810,7 @@
 
     if-eqz p1, :cond_0
 
-    iget-object p0, p0, Lorg/bouncycastle/x509/tsu;->Lna:Ljava/util/List;
+    iget-object p0, p0, Lorg/bouncycastle/x509/tsu;->_pa:Ljava/util/List;
 
     invoke-interface {p0, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
@@ -823,7 +823,7 @@
 
     if-nez p1, :cond_0
 
-    iget-object p0, p0, Lorg/bouncycastle/x509/tsu;->Pna:Ljava/util/Set;
+    iget-object p0, p0, Lorg/bouncycastle/x509/tsu;->dqa:Ljava/util/Set;
 
     invoke-interface {p0}, Ljava/util/Set;->clear()V
 
@@ -883,11 +883,11 @@
     throw p0
 
     :cond_2
-    iget-object v0, p0, Lorg/bouncycastle/x509/tsu;->Pna:Ljava/util/Set;
+    iget-object v0, p0, Lorg/bouncycastle/x509/tsu;->dqa:Ljava/util/Set;
 
     invoke-interface {v0}, Ljava/util/Set;->clear()V
 
-    iget-object p0, p0, Lorg/bouncycastle/x509/tsu;->Pna:Ljava/util/Set;
+    iget-object p0, p0, Lorg/bouncycastle/x509/tsu;->dqa:Ljava/util/Set;
 
     invoke-interface {p0, p1}, Ljava/util/Set;->addAll(Ljava/util/Collection;)Z
 

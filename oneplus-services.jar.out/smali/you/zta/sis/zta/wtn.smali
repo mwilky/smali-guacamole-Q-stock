@@ -15,13 +15,13 @@
 
 
 # static fields
-.field protected static final KEa:[Lyou/zta/sis/zta/cno;
+.field protected static final YGa:[Lyou/zta/sis/zta/cno;
 
 
 # instance fields
-.field protected IEa:[Lyou/zta/sis/zta/cno;
+.field protected WGa:[Lyou/zta/sis/zta/cno;
 
-.field protected JEa:Ljava/util/Hashtable;
+.field protected XGa:Ljava/util/Hashtable;
 
 .field protected curve:Lyou/zta/sis/zta/rtg;
 
@@ -40,7 +40,7 @@
 
     new-array v0, v0, [Lyou/zta/sis/zta/cno;
 
-    sput-object v0, Lyou/zta/sis/zta/wtn;->KEa:[Lyou/zta/sis/zta/cno;
+    sput-object v0, Lyou/zta/sis/zta/wtn;->YGa:[Lyou/zta/sis/zta/cno;
 
     return-void
 .end method
@@ -64,7 +64,7 @@
 
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lyou/zta/sis/zta/wtn;->JEa:Ljava/util/Hashtable;
+    iput-object v0, p0, Lyou/zta/sis/zta/wtn;->XGa:Ljava/util/Hashtable;
 
     iput-object p1, p0, Lyou/zta/sis/zta/wtn;->curve:Lyou/zta/sis/zta/rtg;
 
@@ -72,7 +72,7 @@
 
     iput-object p3, p0, Lyou/zta/sis/zta/wtn;->y:Lyou/zta/sis/zta/cno;
 
-    iput-object p4, p0, Lyou/zta/sis/zta/wtn;->IEa:[Lyou/zta/sis/zta/cno;
+    iput-object p4, p0, Lyou/zta/sis/zta/wtn;->WGa:[Lyou/zta/sis/zta/cno;
 
     return-void
 .end method
@@ -89,7 +89,7 @@
     goto :goto_0
 
     :cond_0
-    invoke-virtual {p0}, Lyou/zta/sis/zta/rtg;->Qj()I
+    invoke-virtual {p0}, Lyou/zta/sis/zta/rtg;->Zj()I
 
     move-result v1
 
@@ -170,17 +170,120 @@
     return-object p0
 
     :cond_5
-    sget-object p0, Lyou/zta/sis/zta/wtn;->KEa:[Lyou/zta/sis/zta/cno;
+    sget-object p0, Lyou/zta/sis/zta/wtn;->YGa:[Lyou/zta/sis/zta/cno;
 
     return-object p0
 .end method
 
 
 # virtual methods
-.method public ba(Z)[B
-    .locals 4
+.method public Ak()Z
+    .locals 0
 
-    invoke-virtual {p0}, Lyou/zta/sis/zta/wtn;->sk()Z
+    iget-boolean p0, p0, Lyou/zta/sis/zta/wtn;->withCompression:Z
+
+    return p0
+.end method
+
+.method public Bk()Z
+    .locals 2
+
+    iget-object v0, p0, Lyou/zta/sis/zta/wtn;->x:Lyou/zta/sis/zta/cno;
+
+    const/4 v1, 0x0
+
+    if-eqz v0, :cond_0
+
+    iget-object v0, p0, Lyou/zta/sis/zta/wtn;->y:Lyou/zta/sis/zta/cno;
+
+    if-eqz v0, :cond_0
+
+    iget-object p0, p0, Lyou/zta/sis/zta/wtn;->WGa:[Lyou/zta/sis/zta/cno;
+
+    array-length v0, p0
+
+    if-lez v0, :cond_1
+
+    aget-object p0, p0, v1
+
+    invoke-virtual {p0}, Lyou/zta/sis/zta/cno;->isZero()Z
+
+    move-result p0
+
+    if-eqz p0, :cond_1
+
+    :cond_0
+    const/4 v1, 0x1
+
+    :cond_1
+    return v1
+.end method
+
+.method public Ck()Z
+    .locals 3
+
+    invoke-virtual {p0}, Lyou/zta/sis/zta/wtn;->sk()I
+
+    move-result v0
+
+    const/4 v1, 0x0
+
+    if-eqz v0, :cond_0
+
+    const/4 v2, 0x5
+
+    if-eq v0, v2, :cond_0
+
+    invoke-virtual {p0}, Lyou/zta/sis/zta/wtn;->Bk()Z
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    iget-object p0, p0, Lyou/zta/sis/zta/wtn;->WGa:[Lyou/zta/sis/zta/cno;
+
+    aget-object p0, p0, v1
+
+    invoke-virtual {p0}, Lyou/zta/sis/zta/cno;->ik()Z
+
+    move-result p0
+
+    if-eqz p0, :cond_1
+
+    :cond_0
+    const/4 v1, 0x1
+
+    :cond_1
+    return v1
+.end method
+
+.method Dk()Z
+    .locals 1
+
+    const/4 v0, 0x0
+
+    invoke-virtual {p0, v0, v0}, Lyou/zta/sis/zta/wtn;->you(ZZ)Z
+
+    move-result p0
+
+    return p0
+.end method
+
+.method protected abstract Ek()Z
+.end method
+
+.method protected Fk()Z
+    .locals 2
+
+    sget-object v0, Lyou/zta/sis/zta/sis;->ONE:Ljava/math/BigInteger;
+
+    iget-object v1, p0, Lyou/zta/sis/zta/wtn;->curve:Lyou/zta/sis/zta/rtg;
+
+    invoke-virtual {v1}, Lyou/zta/sis/zta/rtg;->getCofactor()Ljava/math/BigInteger;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Ljava/math/BigInteger;->equals(Ljava/lang/Object;)Z
 
     move-result v0
 
@@ -188,99 +291,54 @@
 
     if-eqz v0, :cond_0
 
-    new-array p0, v1, [B
-
-    return-object p0
+    return v1
 
     :cond_0
-    invoke-virtual {p0}, Lyou/zta/sis/zta/wtn;->normalize()Lyou/zta/sis/zta/wtn;
+    iget-object v0, p0, Lyou/zta/sis/zta/wtn;->curve:Lyou/zta/sis/zta/rtg;
+
+    invoke-virtual {v0}, Lyou/zta/sis/zta/rtg;->getOrder()Ljava/math/BigInteger;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_2
+
+    invoke-static {p0, v0}, Lyou/zta/sis/zta/you;->sis(Lyou/zta/sis/zta/wtn;Ljava/math/BigInteger;)Lyou/zta/sis/zta/wtn;
 
     move-result-object p0
 
-    invoke-virtual {p0}, Lyou/zta/sis/zta/wtn;->ok()Lyou/zta/sis/zta/cno;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Lyou/zta/sis/zta/cno;->getEncoded()[B
-
-    move-result-object v0
-
-    const/4 v2, 0x0
-
-    if-eqz p1, :cond_2
-
-    array-length p1, v0
-
-    add-int/2addr p1, v1
-
-    new-array p1, p1, [B
-
-    invoke-virtual {p0}, Lyou/zta/sis/zta/wtn;->ik()Z
+    invoke-virtual {p0}, Lyou/zta/sis/zta/wtn;->Bk()Z
 
     move-result p0
 
     if-eqz p0, :cond_1
 
-    const/4 p0, 0x3
-
     goto :goto_0
 
     :cond_1
-    const/4 p0, 0x2
-
-    :goto_0
-    int-to-byte p0, p0
-
-    aput-byte p0, p1, v2
-
-    array-length p0, v0
-
-    invoke-static {v0, v2, p1, v1, p0}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
-
-    return-object p1
+    const/4 v1, 0x0
 
     :cond_2
-    invoke-virtual {p0}, Lyou/zta/sis/zta/wtn;->pk()Lyou/zta/sis/zta/cno;
+    :goto_0
+    return v1
+.end method
+
+.method public Gk()Lyou/zta/sis/zta/wtn;
+    .locals 0
+
+    invoke-virtual {p0, p0}, Lyou/zta/sis/zta/wtn;->wtn(Lyou/zta/sis/zta/wtn;)Lyou/zta/sis/zta/wtn;
 
     move-result-object p0
 
-    invoke-virtual {p0}, Lyou/zta/sis/zta/cno;->getEncoded()[B
+    return-object p0
+.end method
 
-    move-result-object p0
-
-    array-length p1, v0
-
-    array-length v3, p0
-
-    add-int/2addr p1, v3
-
-    add-int/2addr p1, v1
-
-    new-array p1, p1, [B
-
-    const/4 v3, 0x4
-
-    aput-byte v3, p1, v2
-
-    array-length v3, v0
-
-    invoke-static {v0, v2, p1, v1, v3}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
-
-    array-length v0, v0
-
-    add-int/2addr v0, v1
-
-    array-length v1, p0
-
-    invoke-static {p0, v2, p1, v0, v1}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
-
-    return-object p1
+.method public abstract Hk()Lyou/zta/sis/zta/wtn;
 .end method
 
 .method public bio(Lyou/zta/sis/zta/cno;)Lyou/zta/sis/zta/wtn;
     .locals 3
 
-    invoke-virtual {p0}, Lyou/zta/sis/zta/wtn;->sk()Z
+    invoke-virtual {p0}, Lyou/zta/sis/zta/wtn;->Bk()Z
 
     move-result v0
 
@@ -293,11 +351,11 @@
 
     move-result-object v0
 
-    invoke-virtual {p0}, Lyou/zta/sis/zta/wtn;->lk()Lyou/zta/sis/zta/cno;
+    invoke-virtual {p0}, Lyou/zta/sis/zta/wtn;->uk()Lyou/zta/sis/zta/cno;
 
     move-result-object v1
 
-    invoke-virtual {p0}, Lyou/zta/sis/zta/wtn;->mk()Lyou/zta/sis/zta/cno;
+    invoke-virtual {p0}, Lyou/zta/sis/zta/wtn;->vk()Lyou/zta/sis/zta/cno;
 
     move-result-object v2
 
@@ -305,7 +363,7 @@
 
     move-result-object p1
 
-    invoke-virtual {p0}, Lyou/zta/sis/zta/wtn;->nk()[Lyou/zta/sis/zta/cno;
+    invoke-virtual {p0}, Lyou/zta/sis/zta/wtn;->wk()[Lyou/zta/sis/zta/cno;
 
     move-result-object v2
 
@@ -359,11 +417,11 @@
     move v5, v0
 
     :goto_1
-    invoke-virtual {p0}, Lyou/zta/sis/zta/wtn;->sk()Z
+    invoke-virtual {p0}, Lyou/zta/sis/zta/wtn;->Bk()Z
 
     move-result v6
 
-    invoke-virtual {p1}, Lyou/zta/sis/zta/wtn;->sk()Z
+    invoke-virtual {p1}, Lyou/zta/sis/zta/wtn;->Bk()Z
 
     move-result v7
 
@@ -427,11 +485,11 @@
     aget-object p1, v2, v3
 
     :goto_2
-    invoke-virtual {p0}, Lyou/zta/sis/zta/wtn;->ok()Lyou/zta/sis/zta/cno;
+    invoke-virtual {p0}, Lyou/zta/sis/zta/wtn;->xk()Lyou/zta/sis/zta/cno;
 
     move-result-object v1
 
-    invoke-virtual {p1}, Lyou/zta/sis/zta/wtn;->ok()Lyou/zta/sis/zta/cno;
+    invoke-virtual {p1}, Lyou/zta/sis/zta/wtn;->xk()Lyou/zta/sis/zta/cno;
 
     move-result-object v2
 
@@ -441,11 +499,11 @@
 
     if-eqz v1, :cond_8
 
-    invoke-virtual {p0}, Lyou/zta/sis/zta/wtn;->pk()Lyou/zta/sis/zta/cno;
+    invoke-virtual {p0}, Lyou/zta/sis/zta/wtn;->yk()Lyou/zta/sis/zta/cno;
 
     move-result-object p0
 
-    invoke-virtual {p1}, Lyou/zta/sis/zta/wtn;->pk()Lyou/zta/sis/zta/cno;
+    invoke-virtual {p1}, Lyou/zta/sis/zta/wtn;->yk()Lyou/zta/sis/zta/cno;
 
     move-result-object p1
 
@@ -486,7 +544,7 @@
 .method cno(Lyou/zta/sis/zta/cno;)Lyou/zta/sis/zta/wtn;
     .locals 2
 
-    invoke-virtual {p0}, Lyou/zta/sis/zta/wtn;->jk()I
+    invoke-virtual {p0}, Lyou/zta/sis/zta/wtn;->sk()I
 
     move-result v0
 
@@ -545,6 +603,106 @@
     return-object p0
 .end method
 
+.method public da(Z)[B
+    .locals 4
+
+    invoke-virtual {p0}, Lyou/zta/sis/zta/wtn;->Bk()Z
+
+    move-result v0
+
+    const/4 v1, 0x1
+
+    if-eqz v0, :cond_0
+
+    new-array p0, v1, [B
+
+    return-object p0
+
+    :cond_0
+    invoke-virtual {p0}, Lyou/zta/sis/zta/wtn;->normalize()Lyou/zta/sis/zta/wtn;
+
+    move-result-object p0
+
+    invoke-virtual {p0}, Lyou/zta/sis/zta/wtn;->xk()Lyou/zta/sis/zta/cno;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lyou/zta/sis/zta/cno;->getEncoded()[B
+
+    move-result-object v0
+
+    const/4 v2, 0x0
+
+    if-eqz p1, :cond_2
+
+    array-length p1, v0
+
+    add-int/2addr p1, v1
+
+    new-array p1, p1, [B
+
+    invoke-virtual {p0}, Lyou/zta/sis/zta/wtn;->rk()Z
+
+    move-result p0
+
+    if-eqz p0, :cond_1
+
+    const/4 p0, 0x3
+
+    goto :goto_0
+
+    :cond_1
+    const/4 p0, 0x2
+
+    :goto_0
+    int-to-byte p0, p0
+
+    aput-byte p0, p1, v2
+
+    array-length p0, v0
+
+    invoke-static {v0, v2, p1, v1, p0}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+
+    return-object p1
+
+    :cond_2
+    invoke-virtual {p0}, Lyou/zta/sis/zta/wtn;->yk()Lyou/zta/sis/zta/cno;
+
+    move-result-object p0
+
+    invoke-virtual {p0}, Lyou/zta/sis/zta/cno;->getEncoded()[B
+
+    move-result-object p0
+
+    array-length p1, v0
+
+    array-length v3, p0
+
+    add-int/2addr p1, v3
+
+    add-int/2addr p1, v1
+
+    new-array p1, p1, [B
+
+    const/4 v3, 0x4
+
+    aput-byte v3, p1, v2
+
+    array-length v3, v0
+
+    invoke-static {v0, v2, p1, v1, v3}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+
+    array-length v0, v0
+
+    add-int/2addr v0, v1
+
+    array-length v1, p0
+
+    invoke-static {p0, v2, p1, v0, v1}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+
+    return-object p1
+.end method
+
 .method protected abstract detach()Lyou/zta/sis/zta/wtn;
 .end method
 
@@ -576,27 +734,6 @@
     return p0
 .end method
 
-.method protected fk()V
-    .locals 1
-
-    invoke-virtual {p0}, Lyou/zta/sis/zta/wtn;->tk()Z
-
-    move-result p0
-
-    if-eqz p0, :cond_0
-
-    return-void
-
-    :cond_0
-    new-instance p0, Ljava/lang/IllegalStateException;
-
-    const-string v0, "point not in normal form"
-
-    invoke-direct {p0, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
-    throw p0
-.end method
-
 .method public getCurve()Lyou/zta/sis/zta/rtg;
     .locals 0
 
@@ -610,19 +747,7 @@
 
     iget-boolean v0, p0, Lyou/zta/sis/zta/wtn;->withCompression:Z
 
-    invoke-virtual {p0, v0}, Lyou/zta/sis/zta/wtn;->ba(Z)[B
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public gk()Lyou/zta/sis/zta/cno;
-    .locals 0
-
-    invoke-virtual {p0}, Lyou/zta/sis/zta/wtn;->fk()V
-
-    invoke-virtual {p0}, Lyou/zta/sis/zta/wtn;->ok()Lyou/zta/sis/zta/cno;
+    invoke-virtual {p0, v0}, Lyou/zta/sis/zta/wtn;->da(Z)[B
 
     move-result-object p0
 
@@ -650,7 +775,7 @@
     not-int v0, v0
 
     :goto_0
-    invoke-virtual {p0}, Lyou/zta/sis/zta/wtn;->sk()Z
+    invoke-virtual {p0}, Lyou/zta/sis/zta/wtn;->Bk()Z
 
     move-result v1
 
@@ -660,7 +785,7 @@
 
     move-result-object p0
 
-    invoke-virtual {p0}, Lyou/zta/sis/zta/wtn;->ok()Lyou/zta/sis/zta/cno;
+    invoke-virtual {p0}, Lyou/zta/sis/zta/wtn;->xk()Lyou/zta/sis/zta/cno;
 
     move-result-object v1
 
@@ -672,7 +797,7 @@
 
     xor-int/2addr v0, v1
 
-    invoke-virtual {p0}, Lyou/zta/sis/zta/wtn;->pk()Lyou/zta/sis/zta/cno;
+    invoke-virtual {p0}, Lyou/zta/sis/zta/wtn;->yk()Lyou/zta/sis/zta/cno;
 
     move-result-object p0
 
@@ -688,22 +813,7 @@
     return v0
 .end method
 
-.method public hk()Lyou/zta/sis/zta/cno;
-    .locals 0
-
-    invoke-virtual {p0}, Lyou/zta/sis/zta/wtn;->fk()V
-
-    invoke-virtual {p0}, Lyou/zta/sis/zta/wtn;->pk()Lyou/zta/sis/zta/cno;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
 .method public abstract igw(Lyou/zta/sis/zta/wtn;)Lyou/zta/sis/zta/wtn;
-.end method
-
-.method protected abstract ik()Z
 .end method
 
 .method public isValid()Z
@@ -720,44 +830,10 @@
     return p0
 .end method
 
-.method protected jk()I
-    .locals 0
-
-    iget-object p0, p0, Lyou/zta/sis/zta/wtn;->curve:Lyou/zta/sis/zta/rtg;
-
-    if-nez p0, :cond_0
-
-    const/4 p0, 0x0
-
-    goto :goto_0
-
-    :cond_0
-    invoke-virtual {p0}, Lyou/zta/sis/zta/rtg;->Qj()I
-
-    move-result p0
-
-    :goto_0
-    return p0
-.end method
-
-.method public final kk()Lyou/zta/sis/zta/wtn;
-    .locals 0
-
-    invoke-virtual {p0}, Lyou/zta/sis/zta/wtn;->normalize()Lyou/zta/sis/zta/wtn;
-
-    move-result-object p0
-
-    invoke-virtual {p0}, Lyou/zta/sis/zta/wtn;->detach()Lyou/zta/sis/zta/wtn;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
 .method public kth(Lyou/zta/sis/zta/cno;)Lyou/zta/sis/zta/wtn;
     .locals 3
 
-    invoke-virtual {p0}, Lyou/zta/sis/zta/wtn;->sk()Z
+    invoke-virtual {p0}, Lyou/zta/sis/zta/wtn;->Bk()Z
 
     move-result v0
 
@@ -770,7 +846,7 @@
 
     move-result-object v0
 
-    invoke-virtual {p0}, Lyou/zta/sis/zta/wtn;->lk()Lyou/zta/sis/zta/cno;
+    invoke-virtual {p0}, Lyou/zta/sis/zta/wtn;->uk()Lyou/zta/sis/zta/cno;
 
     move-result-object v1
 
@@ -778,11 +854,11 @@
 
     move-result-object p1
 
-    invoke-virtual {p0}, Lyou/zta/sis/zta/wtn;->mk()Lyou/zta/sis/zta/cno;
+    invoke-virtual {p0}, Lyou/zta/sis/zta/wtn;->vk()Lyou/zta/sis/zta/cno;
 
     move-result-object v1
 
-    invoke-virtual {p0}, Lyou/zta/sis/zta/wtn;->nk()[Lyou/zta/sis/zta/cno;
+    invoke-virtual {p0}, Lyou/zta/sis/zta/wtn;->wk()[Lyou/zta/sis/zta/cno;
 
     move-result-object v2
 
@@ -797,22 +873,6 @@
 .end method
 
 .method public abstract kth(Lyou/zta/sis/zta/wtn;)Lyou/zta/sis/zta/wtn;
-.end method
-
-.method public final lk()Lyou/zta/sis/zta/cno;
-    .locals 0
-
-    iget-object p0, p0, Lyou/zta/sis/zta/wtn;->x:Lyou/zta/sis/zta/cno;
-
-    return-object p0
-.end method
-
-.method public final mk()Lyou/zta/sis/zta/cno;
-    .locals 0
-
-    iget-object p0, p0, Lyou/zta/sis/zta/wtn;->y:Lyou/zta/sis/zta/cno;
-
-    return-object p0
 .end method
 
 .method public multiply(Ljava/math/BigInteger;)Lyou/zta/sis/zta/wtn;
@@ -836,18 +896,10 @@
 .method public abstract negate()Lyou/zta/sis/zta/wtn;
 .end method
 
-.method protected final nk()[Lyou/zta/sis/zta/cno;
-    .locals 0
-
-    iget-object p0, p0, Lyou/zta/sis/zta/wtn;->IEa:[Lyou/zta/sis/zta/cno;
-
-    return-object p0
-.end method
-
 .method public normalize()Lyou/zta/sis/zta/wtn;
     .locals 2
 
-    invoke-virtual {p0}, Lyou/zta/sis/zta/wtn;->sk()Z
+    invoke-virtual {p0}, Lyou/zta/sis/zta/wtn;->Bk()Z
 
     move-result v0
 
@@ -856,7 +908,7 @@
     return-object p0
 
     :cond_0
-    invoke-virtual {p0}, Lyou/zta/sis/zta/wtn;->jk()I
+    invoke-virtual {p0}, Lyou/zta/sis/zta/wtn;->sk()I
 
     move-result v0
 
@@ -868,11 +920,11 @@
 
     const/4 v0, 0x0
 
-    invoke-virtual {p0, v0}, Lyou/zta/sis/zta/wtn;->pa(I)Lyou/zta/sis/zta/cno;
+    invoke-virtual {p0, v0}, Lyou/zta/sis/zta/wtn;->sa(I)Lyou/zta/sis/zta/cno;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lyou/zta/sis/zta/cno;->_j()Z
+    invoke-virtual {v0}, Lyou/zta/sis/zta/cno;->ik()Z
 
     move-result v1
 
@@ -893,20 +945,60 @@
     return-object p0
 .end method
 
-.method public ok()Lyou/zta/sis/zta/cno;
+.method protected ok()V
+    .locals 1
+
+    invoke-virtual {p0}, Lyou/zta/sis/zta/wtn;->Ck()Z
+
+    move-result p0
+
+    if-eqz p0, :cond_0
+
+    return-void
+
+    :cond_0
+    new-instance p0, Ljava/lang/IllegalStateException;
+
+    const-string v0, "point not in normal form"
+
+    invoke-direct {p0, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    throw p0
+.end method
+
+.method public pk()Lyou/zta/sis/zta/cno;
     .locals 0
 
-    iget-object p0, p0, Lyou/zta/sis/zta/wtn;->x:Lyou/zta/sis/zta/cno;
+    invoke-virtual {p0}, Lyou/zta/sis/zta/wtn;->ok()V
+
+    invoke-virtual {p0}, Lyou/zta/sis/zta/wtn;->xk()Lyou/zta/sis/zta/cno;
+
+    move-result-object p0
 
     return-object p0
 .end method
 
-.method public pa(I)Lyou/zta/sis/zta/cno;
+.method public qk()Lyou/zta/sis/zta/cno;
+    .locals 0
+
+    invoke-virtual {p0}, Lyou/zta/sis/zta/wtn;->ok()V
+
+    invoke-virtual {p0}, Lyou/zta/sis/zta/wtn;->yk()Lyou/zta/sis/zta/cno;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method protected abstract rk()Z
+.end method
+
+.method public sa(I)Lyou/zta/sis/zta/cno;
     .locals 1
 
     if-ltz p1, :cond_1
 
-    iget-object p0, p0, Lyou/zta/sis/zta/wtn;->IEa:[Lyou/zta/sis/zta/cno;
+    iget-object p0, p0, Lyou/zta/sis/zta/wtn;->WGa:[Lyou/zta/sis/zta/cno;
 
     array-length v0, p0
 
@@ -927,15 +1019,27 @@
     return-object p0
 .end method
 
-.method public pk()Lyou/zta/sis/zta/cno;
+.method protected sk()I
     .locals 0
 
-    iget-object p0, p0, Lyou/zta/sis/zta/wtn;->y:Lyou/zta/sis/zta/cno;
+    iget-object p0, p0, Lyou/zta/sis/zta/wtn;->curve:Lyou/zta/sis/zta/rtg;
 
-    return-object p0
+    if-nez p0, :cond_0
+
+    const/4 p0, 0x0
+
+    goto :goto_0
+
+    :cond_0
+    invoke-virtual {p0}, Lyou/zta/sis/zta/rtg;->Zj()I
+
+    move-result p0
+
+    :goto_0
+    return p0
 .end method
 
-.method public qa(I)Lyou/zta/sis/zta/wtn;
+.method public ta(I)Lyou/zta/sis/zta/wtn;
     .locals 0
 
     if-ltz p1, :cond_1
@@ -945,7 +1049,7 @@
 
     if-ltz p1, :cond_0
 
-    invoke-virtual {p0}, Lyou/zta/sis/zta/wtn;->yk()Lyou/zta/sis/zta/wtn;
+    invoke-virtual {p0}, Lyou/zta/sis/zta/wtn;->Hk()Lyou/zta/sis/zta/wtn;
 
     move-result-object p0
 
@@ -964,113 +1068,24 @@
     throw p0
 .end method
 
-.method public qk()[Lyou/zta/sis/zta/cno;
-    .locals 3
-
-    iget-object p0, p0, Lyou/zta/sis/zta/wtn;->IEa:[Lyou/zta/sis/zta/cno;
-
-    array-length v0, p0
-
-    if-nez v0, :cond_0
-
-    sget-object p0, Lyou/zta/sis/zta/wtn;->KEa:[Lyou/zta/sis/zta/cno;
-
-    return-object p0
-
-    :cond_0
-    new-array v1, v0, [Lyou/zta/sis/zta/cno;
-
-    const/4 v2, 0x0
-
-    invoke-static {p0, v2, v1, v2, v0}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
-
-    return-object v1
-.end method
-
-.method public rk()Z
+.method public final tk()Lyou/zta/sis/zta/wtn;
     .locals 0
 
-    iget-boolean p0, p0, Lyou/zta/sis/zta/wtn;->withCompression:Z
+    invoke-virtual {p0}, Lyou/zta/sis/zta/wtn;->normalize()Lyou/zta/sis/zta/wtn;
 
-    return p0
-.end method
+    move-result-object p0
 
-.method public sk()Z
-    .locals 2
+    invoke-virtual {p0}, Lyou/zta/sis/zta/wtn;->detach()Lyou/zta/sis/zta/wtn;
 
-    iget-object v0, p0, Lyou/zta/sis/zta/wtn;->x:Lyou/zta/sis/zta/cno;
+    move-result-object p0
 
-    const/4 v1, 0x0
-
-    if-eqz v0, :cond_0
-
-    iget-object v0, p0, Lyou/zta/sis/zta/wtn;->y:Lyou/zta/sis/zta/cno;
-
-    if-eqz v0, :cond_0
-
-    iget-object p0, p0, Lyou/zta/sis/zta/wtn;->IEa:[Lyou/zta/sis/zta/cno;
-
-    array-length v0, p0
-
-    if-lez v0, :cond_1
-
-    aget-object p0, p0, v1
-
-    invoke-virtual {p0}, Lyou/zta/sis/zta/cno;->isZero()Z
-
-    move-result p0
-
-    if-eqz p0, :cond_1
-
-    :cond_0
-    const/4 v1, 0x1
-
-    :cond_1
-    return v1
-.end method
-
-.method public tk()Z
-    .locals 3
-
-    invoke-virtual {p0}, Lyou/zta/sis/zta/wtn;->jk()I
-
-    move-result v0
-
-    const/4 v1, 0x0
-
-    if-eqz v0, :cond_0
-
-    const/4 v2, 0x5
-
-    if-eq v0, v2, :cond_0
-
-    invoke-virtual {p0}, Lyou/zta/sis/zta/wtn;->sk()Z
-
-    move-result v0
-
-    if-nez v0, :cond_0
-
-    iget-object p0, p0, Lyou/zta/sis/zta/wtn;->IEa:[Lyou/zta/sis/zta/cno;
-
-    aget-object p0, p0, v1
-
-    invoke-virtual {p0}, Lyou/zta/sis/zta/cno;->_j()Z
-
-    move-result p0
-
-    if-eqz p0, :cond_1
-
-    :cond_0
-    const/4 v1, 0x1
-
-    :cond_1
-    return v1
+    return-object p0
 .end method
 
 .method public toString()Ljava/lang/String;
     .locals 4
 
-    invoke-virtual {p0}, Lyou/zta/sis/zta/wtn;->sk()Z
+    invoke-virtual {p0}, Lyou/zta/sis/zta/wtn;->Bk()Z
 
     move-result v0
 
@@ -1089,7 +1104,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuffer;->append(C)Ljava/lang/StringBuffer;
 
-    invoke-virtual {p0}, Lyou/zta/sis/zta/wtn;->lk()Lyou/zta/sis/zta/cno;
+    invoke-virtual {p0}, Lyou/zta/sis/zta/wtn;->uk()Lyou/zta/sis/zta/cno;
 
     move-result-object v1
 
@@ -1099,7 +1114,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuffer;->append(C)Ljava/lang/StringBuffer;
 
-    invoke-virtual {p0}, Lyou/zta/sis/zta/wtn;->mk()Lyou/zta/sis/zta/cno;
+    invoke-virtual {p0}, Lyou/zta/sis/zta/wtn;->vk()Lyou/zta/sis/zta/cno;
 
     move-result-object v2
 
@@ -1108,7 +1123,7 @@
     const/4 v2, 0x0
 
     :goto_0
-    iget-object v3, p0, Lyou/zta/sis/zta/wtn;->IEa:[Lyou/zta/sis/zta/cno;
+    iget-object v3, p0, Lyou/zta/sis/zta/wtn;->WGa:[Lyou/zta/sis/zta/cno;
 
     array-length v3, v3
 
@@ -1116,7 +1131,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuffer;->append(C)Ljava/lang/StringBuffer;
 
-    iget-object v3, p0, Lyou/zta/sis/zta/wtn;->IEa:[Lyou/zta/sis/zta/cno;
+    iget-object v3, p0, Lyou/zta/sis/zta/wtn;->WGa:[Lyou/zta/sis/zta/cno;
 
     aget-object v3, v3, v2
 
@@ -1145,7 +1160,7 @@
 
     move-result-object v0
 
-    invoke-virtual {p0}, Lyou/zta/sis/zta/wtn;->lk()Lyou/zta/sis/zta/cno;
+    invoke-virtual {p0}, Lyou/zta/sis/zta/wtn;->uk()Lyou/zta/sis/zta/cno;
 
     move-result-object v1
 
@@ -1153,7 +1168,7 @@
 
     move-result-object p1
 
-    invoke-virtual {p0}, Lyou/zta/sis/zta/wtn;->mk()Lyou/zta/sis/zta/cno;
+    invoke-virtual {p0}, Lyou/zta/sis/zta/wtn;->vk()Lyou/zta/sis/zta/cno;
 
     move-result-object v1
 
@@ -1170,75 +1185,34 @@
     return-object p0
 .end method
 
-.method uk()Z
-    .locals 1
+.method public final uk()Lyou/zta/sis/zta/cno;
+    .locals 0
 
-    const/4 v0, 0x0
+    iget-object p0, p0, Lyou/zta/sis/zta/wtn;->x:Lyou/zta/sis/zta/cno;
 
-    invoke-virtual {p0, v0, v0}, Lyou/zta/sis/zta/wtn;->you(ZZ)Z
-
-    move-result p0
-
-    return p0
+    return-object p0
 .end method
 
-.method protected abstract vk()Z
+.method public final vk()Lyou/zta/sis/zta/cno;
+    .locals 0
+
+    iget-object p0, p0, Lyou/zta/sis/zta/wtn;->y:Lyou/zta/sis/zta/cno;
+
+    return-object p0
 .end method
 
-.method protected wk()Z
-    .locals 2
+.method protected final wk()[Lyou/zta/sis/zta/cno;
+    .locals 0
 
-    sget-object v0, Lyou/zta/sis/zta/sis;->ONE:Ljava/math/BigInteger;
+    iget-object p0, p0, Lyou/zta/sis/zta/wtn;->WGa:[Lyou/zta/sis/zta/cno;
 
-    iget-object v1, p0, Lyou/zta/sis/zta/wtn;->curve:Lyou/zta/sis/zta/rtg;
-
-    invoke-virtual {v1}, Lyou/zta/sis/zta/rtg;->getCofactor()Ljava/math/BigInteger;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Ljava/math/BigInteger;->equals(Ljava/lang/Object;)Z
-
-    move-result v0
-
-    const/4 v1, 0x1
-
-    if-eqz v0, :cond_0
-
-    return v1
-
-    :cond_0
-    iget-object v0, p0, Lyou/zta/sis/zta/wtn;->curve:Lyou/zta/sis/zta/rtg;
-
-    invoke-virtual {v0}, Lyou/zta/sis/zta/rtg;->getOrder()Ljava/math/BigInteger;
-
-    move-result-object v0
-
-    if-eqz v0, :cond_2
-
-    invoke-static {p0, v0}, Lyou/zta/sis/zta/you;->sis(Lyou/zta/sis/zta/wtn;Ljava/math/BigInteger;)Lyou/zta/sis/zta/wtn;
-
-    move-result-object p0
-
-    invoke-virtual {p0}, Lyou/zta/sis/zta/wtn;->sk()Z
-
-    move-result p0
-
-    if-eqz p0, :cond_1
-
-    goto :goto_0
-
-    :cond_1
-    const/4 v1, 0x0
-
-    :cond_2
-    :goto_0
-    return v1
+    return-object p0
 .end method
 
 .method public wtn(Lyou/zta/sis/zta/wtn;)Lyou/zta/sis/zta/wtn;
     .locals 0
 
-    invoke-virtual {p0}, Lyou/zta/sis/zta/wtn;->yk()Lyou/zta/sis/zta/wtn;
+    invoke-virtual {p0}, Lyou/zta/sis/zta/wtn;->Hk()Lyou/zta/sis/zta/wtn;
 
     move-result-object p0
 
@@ -1249,23 +1223,26 @@
     return-object p0
 .end method
 
-.method public xk()Lyou/zta/sis/zta/wtn;
+.method public xk()Lyou/zta/sis/zta/cno;
     .locals 0
 
-    invoke-virtual {p0, p0}, Lyou/zta/sis/zta/wtn;->wtn(Lyou/zta/sis/zta/wtn;)Lyou/zta/sis/zta/wtn;
-
-    move-result-object p0
+    iget-object p0, p0, Lyou/zta/sis/zta/wtn;->x:Lyou/zta/sis/zta/cno;
 
     return-object p0
 .end method
 
-.method public abstract yk()Lyou/zta/sis/zta/wtn;
+.method public yk()Lyou/zta/sis/zta/cno;
+    .locals 0
+
+    iget-object p0, p0, Lyou/zta/sis/zta/wtn;->y:Lyou/zta/sis/zta/cno;
+
+    return-object p0
 .end method
 
 .method you(ZZ)Z
     .locals 3
 
-    invoke-virtual {p0}, Lyou/zta/sis/zta/wtn;->sk()Z
+    invoke-virtual {p0}, Lyou/zta/sis/zta/wtn;->Bk()Z
 
     move-result v0
 
@@ -1292,11 +1269,34 @@
 
     check-cast p0, Lyou/zta/sis/zta/oxb;
 
-    invoke-virtual {p0}, Lyou/zta/sis/zta/oxb;->Hk()Z
+    invoke-virtual {p0}, Lyou/zta/sis/zta/oxb;->Qk()Z
 
     move-result p0
 
     xor-int/2addr p0, v1
 
     return p0
+.end method
+
+.method public zk()[Lyou/zta/sis/zta/cno;
+    .locals 3
+
+    iget-object p0, p0, Lyou/zta/sis/zta/wtn;->WGa:[Lyou/zta/sis/zta/cno;
+
+    array-length v0, p0
+
+    if-nez v0, :cond_0
+
+    sget-object p0, Lyou/zta/sis/zta/wtn;->YGa:[Lyou/zta/sis/zta/cno;
+
+    return-object p0
+
+    :cond_0
+    new-array v1, v0, [Lyou/zta/sis/zta/cno;
+
+    const/4 v2, 0x0
+
+    invoke-static {p0, v2, v1, v2, v0}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+
+    return-object v1
 .end method

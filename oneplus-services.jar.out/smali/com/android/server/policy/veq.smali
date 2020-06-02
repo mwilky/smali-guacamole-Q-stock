@@ -18,17 +18,17 @@
 
 
 # instance fields
+.field private KG:I
+
+.field private LG:I
+
+.field private MG:F
+
+.field private NG:F
+
+.field final synthetic OG:I
+
 .field final synthetic this$0:Lcom/android/server/policy/OpQuickPay;
-
-.field private uF:I
-
-.field private vF:I
-
-.field private wF:F
-
-.field private xF:F
-
-.field final synthetic yF:I
 
 
 # direct methods
@@ -37,7 +37,7 @@
 
     iput-object p1, p0, Lcom/android/server/policy/veq;->this$0:Lcom/android/server/policy/OpQuickPay;
 
-    iput p2, p0, Lcom/android/server/policy/veq;->yF:I
+    iput p2, p0, Lcom/android/server/policy/veq;->OG:I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -67,7 +67,7 @@
 
     const/4 v13, 0x1
 
-    if-eqz v0, :cond_8
+    if-eqz v0, :cond_9
 
     if-eq v0, v13, :cond_2
 
@@ -80,13 +80,13 @@
 
     iget-object v0, v0, Lcom/android/server/policy/OpQuickPay;->mWindowParams:Landroid/view/WindowManager$LayoutParams;
 
-    iget v1, v8, Lcom/android/server/policy/veq;->uF:I
+    iget v1, v8, Lcom/android/server/policy/veq;->KG:I
 
     invoke-virtual/range {p2 .. p2}, Landroid/view/MotionEvent;->getRawX()F
 
     move-result v2
 
-    iget v3, v8, Lcom/android/server/policy/veq;->wF:F
+    iget v3, v8, Lcom/android/server/policy/veq;->MG:F
 
     sub-float/2addr v2, v3
 
@@ -100,13 +100,13 @@
 
     iget-object v0, v0, Lcom/android/server/policy/OpQuickPay;->mWindowParams:Landroid/view/WindowManager$LayoutParams;
 
-    iget v1, v8, Lcom/android/server/policy/veq;->vF:I
+    iget v1, v8, Lcom/android/server/policy/veq;->LG:I
 
     invoke-virtual/range {p2 .. p2}, Landroid/view/MotionEvent;->getRawY()F
 
     move-result v2
 
-    iget v3, v8, Lcom/android/server/policy/veq;->xF:F
+    iget v3, v8, Lcom/android/server/policy/veq;->NG:F
 
     sub-float/2addr v2, v3
 
@@ -207,7 +207,7 @@
 
     iget v0, v0, Landroid/view/WindowManager$LayoutParams;->x:I
 
-    iget v1, v8, Lcom/android/server/policy/veq;->uF:I
+    iget v1, v8, Lcom/android/server/policy/veq;->KG:I
 
     sub-int/2addr v0, v1
 
@@ -221,7 +221,7 @@
 
     iget v1, v1, Landroid/view/WindowManager$LayoutParams;->y:I
 
-    iget v2, v8, Lcom/android/server/policy/veq;->vF:I
+    iget v2, v8, Lcom/android/server/policy/veq;->LG:I
 
     sub-int/2addr v1, v2
 
@@ -243,13 +243,13 @@
 
     const/16 v1, 0xa
 
-    if-ge v0, v1, :cond_6
+    if-ge v0, v1, :cond_7
 
     const-wide/16 v0, 0xfa
 
     cmp-long v0, v2, v0
 
-    if-gez v0, :cond_6
+    if-gez v0, :cond_7
 
     invoke-static {}, Lcom/android/server/policy/OpQuickPay;->access$000()Ljava/lang/String;
 
@@ -279,44 +279,64 @@
 
     iget-object v1, v0, Lcom/android/server/policy/OpQuickPay;->mQuickPayAlertDialog:Landroid/app/AlertDialog;
 
-    if-nez v1, :cond_6
-
-    const v1, 0x1030223
-
-    new-instance v14, Landroid/app/AlertDialog$Builder;
+    if-nez v1, :cond_7
 
     iget-object v0, v0, Lcom/android/server/policy/OpQuickPay;->mContext:Landroid/content/Context;
 
-    invoke-direct {v14, v0, v1}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;I)V
+    invoke-static {v0}, Landroid/content/res/OpThemeUtils;->getInstance(Landroid/content/Context;)Landroid/content/res/OpThemeUtils;
 
-    const v0, 0x50d00b2
+    move-result-object v0
 
-    invoke-virtual {v14, v0}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
+    invoke-virtual {v0}, Landroid/content/res/OpThemeUtils;->getThemeState()I
 
-    iget-object v0, v8, Lcom/android/server/policy/veq;->this$0:Lcom/android/server/policy/OpQuickPay;
+    move-result v0
 
-    invoke-static {v0}, Lcom/android/server/policy/OpQuickPay;->access$200(Lcom/android/server/policy/OpQuickPay;)Ljava/util/ArrayList;
+    if-ne v0, v13, :cond_4
+
+    const v0, 0x50e0009
+
+    goto :goto_0
+
+    :cond_4
+    const v0, 0x50e0001
+
+    :goto_0
+    new-instance v14, Landroid/app/AlertDialog$Builder;
+
+    iget-object v1, v8, Lcom/android/server/policy/veq;->this$0:Lcom/android/server/policy/OpQuickPay;
+
+    iget-object v1, v1, Lcom/android/server/policy/OpQuickPay;->mContext:Landroid/content/Context;
+
+    invoke-direct {v14, v1, v0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;I)V
+
+    const v1, 0x50d00b5
+
+    invoke-virtual {v14, v1}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
+
+    iget-object v1, v8, Lcom/android/server/policy/veq;->this$0:Lcom/android/server/policy/OpQuickPay;
+
+    invoke-static {v1}, Lcom/android/server/policy/OpQuickPay;->access$200(Lcom/android/server/policy/OpQuickPay;)Ljava/util/ArrayList;
 
     move-result-object v15
 
     invoke-virtual {v15}, Ljava/util/ArrayList;->size()I
 
-    move-result v0
+    move-result v1
 
-    new-array v5, v0, [Ljava/lang/String;
+    new-array v5, v1, [Ljava/lang/String;
 
-    move v0, v12
+    move v1, v12
 
-    move v7, v0
+    move v7, v1
 
-    :goto_0
+    :goto_1
     invoke-virtual {v15}, Ljava/util/ArrayList;->size()I
 
     move-result v2
 
-    if-ge v0, v2, :cond_5
+    if-ge v1, v2, :cond_6
 
-    invoke-virtual {v15, v0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+    invoke-virtual {v15, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v2
 
@@ -328,27 +348,27 @@
 
     iget v4, v4, Lcom/android/server/policy/OpQuickPay;->mQuickPayWhich:I
 
-    if-ne v3, v4, :cond_4
+    if-ne v3, v4, :cond_5
 
-    move v7, v0
-
-    :cond_4
-    iget-object v2, v2, Lcom/android/server/policy/OpQuickPay$zta;->CF:Ljava/lang/String;
-
-    aput-object v2, v5, v0
-
-    add-int/lit8 v0, v0, 0x1
-
-    goto :goto_0
+    move v7, v1
 
     :cond_5
+    iget-object v2, v2, Lcom/android/server/policy/OpQuickPay$zta;->SG:Ljava/lang/String;
+
+    aput-object v2, v5, v1
+
+    add-int/lit8 v1, v1, 0x1
+
+    goto :goto_1
+
+    :cond_6
     new-instance v2, Landroid/view/ContextThemeWrapper;
 
-    iget-object v0, v8, Lcom/android/server/policy/veq;->this$0:Lcom/android/server/policy/OpQuickPay;
+    iget-object v1, v8, Lcom/android/server/policy/veq;->this$0:Lcom/android/server/policy/OpQuickPay;
 
-    iget-object v0, v0, Lcom/android/server/policy/OpQuickPay;->mContext:Landroid/content/Context;
+    iget-object v1, v1, Lcom/android/server/policy/OpQuickPay;->mContext:Landroid/content/Context;
 
-    invoke-direct {v2, v0, v1}, Landroid/view/ContextThemeWrapper;-><init>(Landroid/content/Context;I)V
+    invoke-direct {v2, v1, v0}, Landroid/view/ContextThemeWrapper;-><init>(Landroid/content/Context;I)V
 
     new-instance v6, Lcom/android/server/policy/ire;
 
@@ -424,7 +444,7 @@
 
     invoke-virtual {v0}, Landroid/app/AlertDialog;->show()V
 
-    :cond_6
+    :cond_7
     iget-object v0, v8, Lcom/android/server/policy/veq;->this$0:Lcom/android/server/policy/OpQuickPay;
 
     iget-object v1, v0, Lcom/android/server/policy/OpQuickPay;->mWindowParams:Landroid/view/WindowManager$LayoutParams;
@@ -435,22 +455,22 @@
 
     div-int/lit8 v3, v0, 0x2
 
-    if-ge v2, v3, :cond_7
+    if-ge v2, v3, :cond_8
 
-    iget v0, v8, Lcom/android/server/policy/veq;->yF:I
+    iget v0, v8, Lcom/android/server/policy/veq;->OG:I
 
-    goto :goto_1
+    goto :goto_2
 
-    :cond_7
+    :cond_8
     iget v1, v1, Landroid/view/WindowManager$LayoutParams;->width:I
 
     sub-int/2addr v0, v1
 
-    iget v1, v8, Lcom/android/server/policy/veq;->yF:I
+    iget v1, v8, Lcom/android/server/policy/veq;->OG:I
 
     sub-int/2addr v0, v1
 
-    :goto_1
+    :goto_2
     iget-object v1, v8, Lcom/android/server/policy/veq;->this$0:Lcom/android/server/policy/OpQuickPay;
 
     new-array v2, v11, [I
@@ -539,16 +559,16 @@
 
     return v13
 
-    :cond_8
+    :cond_9
     iget-object v0, v8, Lcom/android/server/policy/veq;->this$0:Lcom/android/server/policy/OpQuickPay;
 
     iget-object v0, v0, Lcom/android/server/policy/OpQuickPay;->mScaleAnimation:Landroid/animation/ObjectAnimator;
 
-    if-eqz v0, :cond_9
+    if-eqz v0, :cond_a
 
     invoke-virtual {v0}, Landroid/animation/ObjectAnimator;->cancel()V
 
-    :cond_9
+    :cond_a
     iget-object v0, v8, Lcom/android/server/policy/veq;->this$0:Lcom/android/server/policy/OpQuickPay;
 
     iget-object v3, v0, Lcom/android/server/policy/OpQuickPay;->mFloatingButtonBG:Landroid/widget/ImageView;
@@ -603,23 +623,23 @@
 
     iget v1, v0, Landroid/view/WindowManager$LayoutParams;->x:I
 
-    iput v1, v8, Lcom/android/server/policy/veq;->uF:I
+    iput v1, v8, Lcom/android/server/policy/veq;->KG:I
 
     iget v0, v0, Landroid/view/WindowManager$LayoutParams;->y:I
 
-    iput v0, v8, Lcom/android/server/policy/veq;->vF:I
+    iput v0, v8, Lcom/android/server/policy/veq;->LG:I
 
     invoke-virtual/range {p2 .. p2}, Landroid/view/MotionEvent;->getRawX()F
 
     move-result v0
 
-    iput v0, v8, Lcom/android/server/policy/veq;->wF:F
+    iput v0, v8, Lcom/android/server/policy/veq;->MG:F
 
     invoke-virtual/range {p2 .. p2}, Landroid/view/MotionEvent;->getRawY()F
 
     move-result v0
 
-    iput v0, v8, Lcom/android/server/policy/veq;->xF:F
+    iput v0, v8, Lcom/android/server/policy/veq;->NG:F
 
     return v13
 .end method

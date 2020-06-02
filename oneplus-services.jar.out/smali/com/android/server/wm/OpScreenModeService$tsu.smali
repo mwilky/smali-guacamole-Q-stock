@@ -17,6 +17,8 @@
 # instance fields
 .field private final dma:Landroid/net/Uri;
 
+.field private final qbh:Landroid/net/Uri;
+
 .field final synthetic this$0:Lcom/android/server/wm/OpScreenModeService;
 
 .field private final ywr:Landroid/net/Uri;
@@ -50,6 +52,14 @@
 
     iput-object v0, p0, Lcom/android/server/wm/OpScreenModeService$tsu;->ywr:Landroid/net/Uri;
 
+    const-string v0, "tgpa_frame_rate"
+
+    invoke-static {v0}, Landroid/provider/Settings$System;->getUriFor(Ljava/lang/String;)Landroid/net/Uri;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lcom/android/server/wm/OpScreenModeService$tsu;->qbh:Landroid/net/Uri;
+
     iget-object p1, p1, Lcom/android/server/wm/OpScreenModeService;->mContext:Landroid/content/Context;
 
     invoke-virtual {p1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
@@ -65,6 +75,10 @@
     invoke-virtual {p1, v0, v2, p0, v1}, Landroid/content/ContentResolver;->registerContentObserver(Landroid/net/Uri;ZLandroid/database/ContentObserver;I)V
 
     iget-object v0, p0, Lcom/android/server/wm/OpScreenModeService$tsu;->ywr:Landroid/net/Uri;
+
+    invoke-virtual {p1, v0, v2, p0, v1}, Landroid/content/ContentResolver;->registerContentObserver(Landroid/net/Uri;ZLandroid/database/ContentObserver;I)V
+
+    iget-object v0, p0, Lcom/android/server/wm/OpScreenModeService$tsu;->qbh:Landroid/net/Uri;
 
     invoke-virtual {p1, v0, v2, p0, v1}, Landroid/content/ContentResolver;->registerContentObserver(Landroid/net/Uri;ZLandroid/database/ContentObserver;I)V
 
@@ -114,9 +128,13 @@
     iput p1, p2, Lcom/android/server/wm/OpScreenModeService;->mScreenRateSettings:I
 
     :cond_1
+    iget-object p1, p0, Lcom/android/server/wm/OpScreenModeService$tsu;->this$0:Lcom/android/server/wm/OpScreenModeService;
+
+    invoke-virtual {p1}, Lcom/android/server/wm/OpScreenModeService;->setResolution()V
+
     iget-object p0, p0, Lcom/android/server/wm/OpScreenModeService$tsu;->this$0:Lcom/android/server/wm/OpScreenModeService;
 
-    invoke-virtual {p0}, Lcom/android/server/wm/OpScreenModeService;->setResolution()V
+    invoke-virtual {p0}, Lcom/android/server/wm/OpScreenModeService;->updateTgpaFrameRate()V
 
     return-void
 .end method

@@ -133,13 +133,13 @@
     :try_start_0
     iget-object p2, p0, Lcom/android/server/h;->this$0:Lcom/android/server/i;
 
-    invoke-virtual {p2, p1}, Lcom/android/server/i;->ear(Ljava/lang/String;)Z
+    invoke-virtual {p2, p1}, Lcom/android/server/i;->ire(Ljava/lang/String;)Z
 
     move-result p2
 
     iget-object v0, p0, Lcom/android/server/h;->this$0:Lcom/android/server/i;
 
-    invoke-virtual {v0, p1}, Lcom/android/server/i;->ire(Ljava/lang/String;)Z
+    invoke-virtual {v0, p1}, Lcom/android/server/i;->hmo(Ljava/lang/String;)Z
 
     move-result p1
 

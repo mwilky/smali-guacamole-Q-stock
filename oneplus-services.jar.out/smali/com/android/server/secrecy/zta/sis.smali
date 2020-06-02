@@ -7,11 +7,11 @@
 
 
 # static fields
-.field public static final PL:Z = false
-
-.field public static final QL:Z = true
-
 .field private static final TAG:Ljava/lang/String; = "SecrecyService.PolicyManager"
+
+.field public static final dN:Z = false
+
+.field public static final eN:Z = true
 
 .field private static final mLock:Ljava/lang/Object;
 
@@ -19,21 +19,21 @@
 
 
 # instance fields
-.field private final GL:Lcom/android/server/secrecy/sis;
+.field private final WM:Lcom/android/server/secrecy/sis;
 
-.field private HL:Lcom/android/server/secrecy/SecrecyService;
+.field private XM:Lcom/android/server/secrecy/SecrecyService;
 
-.field private IL:Z
+.field private YM:Z
 
-.field private KL:Z
+.field private ZM:Z
 
-.field private LL:Z
+.field private _M:Z
 
-.field private ML:Lcom/android/server/secrecy/zta/you;
+.field private aN:Lcom/android/server/secrecy/zta/you;
 
-.field private NL:Lcom/android/server/secrecy/zta/zta;
+.field private bN:Lcom/android/server/secrecy/zta/zta;
 
-.field private OL:Lcom/android/server/secrecy/zta/rtg;
+.field private cN:Lcom/android/server/secrecy/zta/rtg;
 
 .field private mContext:Landroid/content/Context;
 
@@ -66,21 +66,112 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/server/secrecy/zta/sis;->GL:Lcom/android/server/secrecy/sis;
+    iput-object v0, p0, Lcom/android/server/secrecy/zta/sis;->WM:Lcom/android/server/secrecy/sis;
 
     return-void
 .end method
 
-.method private Ao()V
+.method private To()V
+    .locals 8
+
+    iget-object v0, p0, Lcom/android/server/secrecy/zta/sis;->aN:Lcom/android/server/secrecy/zta/you;
+
+    invoke-virtual {v0}, Lcom/android/server/secrecy/zta/you;->Bd()J
+
+    move-result-wide v0
+
+    iget-object v2, p0, Lcom/android/server/secrecy/zta/sis;->aN:Lcom/android/server/secrecy/zta/you;
+
+    invoke-virtual {v2}, Lcom/android/server/secrecy/zta/you;->Cd()J
+
+    move-result-wide v2
+
+    iget-object v4, p0, Lcom/android/server/secrecy/zta/sis;->aN:Lcom/android/server/secrecy/zta/you;
+
+    invoke-virtual {v4}, Lcom/android/server/secrecy/zta/you;->Dd()Z
+
+    move-result v4
+
+    new-instance v5, Ljava/lang/StringBuilder;
+
+    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v6, "checkChangeToPolicyDecryptedIfNeeded, currentDownloadTimeInMills = "
+
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v5, v0, v1}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v5
+
+    const-string v6, "SecrecyService.PolicyManager"
+
+    invoke-static {v6, v5}, Lcom/android/server/secrecy/zta/zta/zta;->d(Ljava/lang/String;Ljava/lang/String;)V
+
+    new-instance v5, Ljava/lang/StringBuilder;
+
+    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v7, "checkChangeToPolicyDecryptedIfNeeded, lastDownloadTimeInMills    = "
+
+    invoke-virtual {v5, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v5, v2, v3}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v5
+
+    invoke-static {v6, v5}, Lcom/android/server/secrecy/zta/zta/zta;->d(Ljava/lang/String;Ljava/lang/String;)V
+
+    new-instance v5, Ljava/lang/StringBuilder;
+
+    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
+
+    invoke-virtual {v5, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v5, v2, v3}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v5
+
+    invoke-static {v6, v5}, Lcom/android/server/secrecy/zta/zta/zta;->d(Ljava/lang/String;Ljava/lang/String;)V
+
+    cmp-long v0, v0, v2
+
+    if-eqz v0, :cond_0
+
+    if-eqz v4, :cond_0
+
+    new-instance v0, Landroid/util/ArrayMap;
+
+    invoke-direct {v0}, Landroid/util/ArrayMap;-><init>()V
+
+    const/4 v1, 0x0
+
+    invoke-virtual {p0, v0, v1}, Lcom/android/server/secrecy/zta/sis;->zta(Ljava/util/Map;Z)V
+
+    const-string v1, "newDownloadInternal"
+
+    invoke-virtual {p0, v0, v1}, Lcom/android/server/secrecy/zta/sis;->zta(Ljava/util/Map;Ljava/lang/String;)V
+
+    :cond_0
+    return-void
+.end method
+
+.method private Uo()V
     .locals 2
 
-    iget-object v0, p0, Lcom/android/server/secrecy/zta/sis;->GL:Lcom/android/server/secrecy/sis;
+    iget-object v0, p0, Lcom/android/server/secrecy/zta/sis;->WM:Lcom/android/server/secrecy/sis;
 
     iget-object v1, p0, Lcom/android/server/secrecy/zta/sis;->mLooper:Landroid/os/Looper;
 
     invoke-virtual {v0, p0, v1}, Lcom/android/server/secrecy/sis;->zta(Lcom/android/server/secrecy/zta/sis;Landroid/os/Looper;)V
 
-    iget-object p0, p0, Lcom/android/server/secrecy/zta/sis;->GL:Lcom/android/server/secrecy/sis;
+    iget-object p0, p0, Lcom/android/server/secrecy/zta/sis;->WM:Lcom/android/server/secrecy/sis;
 
     invoke-virtual {p0}, Lcom/android/server/secrecy/sis;->cgv()V
 
@@ -174,7 +265,7 @@
 
     iget-object p0, p0, Lcom/android/server/secrecy/zta/sis;->sis:Lcom/android/server/secrecy/zta/tsu;
 
-    invoke-virtual {p0, p1}, Lcom/android/server/secrecy/zta/tsu;->ba(Ljava/lang/String;)V
+    invoke-virtual {p0, p1}, Lcom/android/server/secrecy/zta/tsu;->da(Ljava/lang/String;)V
 
     :cond_1
     return-void
@@ -296,7 +387,7 @@
 
     move-result v3
 
-    iget-boolean v5, p0, Lcom/android/server/secrecy/zta/sis;->IL:Z
+    iget-boolean v5, p0, Lcom/android/server/secrecy/zta/sis;->YM:Z
 
     if-eq v3, v5, :cond_0
 
@@ -310,7 +401,7 @@
 
     invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean v7, p0, Lcom/android/server/secrecy/zta/sis;->IL:Z
+    iget-boolean v7, p0, Lcom/android/server/secrecy/zta/sis;->YM:Z
 
     invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -326,13 +417,13 @@
 
     invoke-static {v5, v6}, Lcom/android/server/secrecy/zta/zta/zta;->d(Ljava/lang/String;Ljava/lang/String;)V
 
-    iput-boolean v3, p0, Lcom/android/server/secrecy/zta/sis;->IL:Z
+    iput-boolean v3, p0, Lcom/android/server/secrecy/zta/sis;->YM:Z
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v2
 
-    iget-boolean v3, p0, Lcom/android/server/secrecy/zta/sis;->IL:Z
+    iget-boolean v3, p0, Lcom/android/server/secrecy/zta/sis;->YM:Z
 
     invoke-static {v3}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -340,7 +431,7 @@
 
     invoke-interface {v0, v2, v3}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    iget-boolean v2, p0, Lcom/android/server/secrecy/zta/sis;->IL:Z
+    iget-boolean v2, p0, Lcom/android/server/secrecy/zta/sis;->YM:Z
 
     xor-int/2addr v2, v4
 
@@ -374,7 +465,7 @@
 
     move-result v3
 
-    iget-boolean v5, p0, Lcom/android/server/secrecy/zta/sis;->KL:Z
+    iget-boolean v5, p0, Lcom/android/server/secrecy/zta/sis;->ZM:Z
 
     if-eq v3, v5, :cond_1
 
@@ -388,7 +479,7 @@
 
     invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean v6, p0, Lcom/android/server/secrecy/zta/sis;->KL:Z
+    iget-boolean v6, p0, Lcom/android/server/secrecy/zta/sis;->ZM:Z
 
     invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -404,13 +495,13 @@
 
     invoke-static {v2, v5}, Lcom/android/server/secrecy/zta/zta/zta;->d(Ljava/lang/String;Ljava/lang/String;)V
 
-    iput-boolean v3, p0, Lcom/android/server/secrecy/zta/sis;->KL:Z
+    iput-boolean v3, p0, Lcom/android/server/secrecy/zta/sis;->ZM:Z
 
     invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v2
 
-    iget-boolean v3, p0, Lcom/android/server/secrecy/zta/sis;->KL:Z
+    iget-boolean v3, p0, Lcom/android/server/secrecy/zta/sis;->ZM:Z
 
     invoke-static {v3}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -418,7 +509,7 @@
 
     invoke-interface {v0, v2, v3}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    iget-boolean v2, p0, Lcom/android/server/secrecy/zta/sis;->KL:Z
+    iget-boolean v2, p0, Lcom/android/server/secrecy/zta/sis;->ZM:Z
 
     xor-int/2addr v2, v4
 
@@ -449,7 +540,7 @@
 
     move-result p1
 
-    iget-boolean v5, p0, Lcom/android/server/secrecy/zta/sis;->LL:Z
+    iget-boolean v5, p0, Lcom/android/server/secrecy/zta/sis;->_M:Z
 
     if-eq p1, v5, :cond_2
 
@@ -463,7 +554,7 @@
 
     invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean v6, p0, Lcom/android/server/secrecy/zta/sis;->LL:Z
+    iget-boolean v6, p0, Lcom/android/server/secrecy/zta/sis;->_M:Z
 
     invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -479,13 +570,13 @@
 
     invoke-static {v2, v5}, Lcom/android/server/secrecy/zta/zta/zta;->d(Ljava/lang/String;Ljava/lang/String;)V
 
-    iput-boolean p1, p0, Lcom/android/server/secrecy/zta/sis;->LL:Z
+    iput-boolean p1, p0, Lcom/android/server/secrecy/zta/sis;->_M:Z
 
     invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p1
 
-    iget-boolean v2, p0, Lcom/android/server/secrecy/zta/sis;->LL:Z
+    iget-boolean v2, p0, Lcom/android/server/secrecy/zta/sis;->_M:Z
 
     invoke-static {v2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -493,7 +584,7 @@
 
     invoke-interface {v0, p1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    iget-boolean p1, p0, Lcom/android/server/secrecy/zta/sis;->LL:Z
+    iget-boolean p1, p0, Lcom/android/server/secrecy/zta/sis;->_M:Z
 
     xor-int/lit8 v2, p1, 0x1
 
@@ -557,106 +648,87 @@
     throw p0
 .end method
 
-.method private zo()V
-    .locals 8
 
-    iget-object v0, p0, Lcom/android/server/secrecy/zta/sis;->ML:Lcom/android/server/secrecy/zta/you;
+# virtual methods
+.method public Bd()Ljava/lang/Long;
+    .locals 2
 
-    invoke-virtual {v0}, Lcom/android/server/secrecy/zta/you;->ud()J
+    iget-object p0, p0, Lcom/android/server/secrecy/zta/sis;->aN:Lcom/android/server/secrecy/zta/you;
+
+    invoke-virtual {p0}, Lcom/android/server/secrecy/zta/you;->Bd()J
 
     move-result-wide v0
 
-    iget-object v2, p0, Lcom/android/server/secrecy/zta/sis;->ML:Lcom/android/server/secrecy/zta/you;
+    invoke-static {v0, v1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
-    invoke-virtual {v2}, Lcom/android/server/secrecy/zta/you;->vd()J
+    move-result-object p0
 
-    move-result-wide v2
+    return-object p0
+.end method
 
-    iget-object v4, p0, Lcom/android/server/secrecy/zta/sis;->ML:Lcom/android/server/secrecy/zta/you;
+.method public Fd()Lcom/android/server/secrecy/zta/zta;
+    .locals 0
 
-    invoke-virtual {v4}, Lcom/android/server/secrecy/zta/you;->wd()Z
+    iget-object p0, p0, Lcom/android/server/secrecy/zta/sis;->bN:Lcom/android/server/secrecy/zta/zta;
 
-    move-result v4
+    return-object p0
+.end method
 
-    new-instance v5, Ljava/lang/StringBuilder;
+.method public Gd()Z
+    .locals 6
 
-    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
+    iget-object v0, p0, Lcom/android/server/secrecy/zta/sis;->XM:Lcom/android/server/secrecy/SecrecyService;
 
-    const-string v6, "checkChangeToPolicyDecryptedIfNeeded, currentDownloadTimeInMills = "
+    invoke-virtual {v0}, Lcom/android/server/secrecy/SecrecyService;->na()Z
 
-    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v5, v0, v1}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v5
-
-    const-string v6, "SecrecyService.PolicyManager"
-
-    invoke-static {v6, v5}, Lcom/android/server/secrecy/zta/zta/zta;->d(Ljava/lang/String;Ljava/lang/String;)V
-
-    new-instance v5, Ljava/lang/StringBuilder;
-
-    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v7, "checkChangeToPolicyDecryptedIfNeeded, lastDownloadTimeInMills    = "
-
-    invoke-virtual {v5, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v5, v2, v3}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v5
-
-    invoke-static {v6, v5}, Lcom/android/server/secrecy/zta/zta/zta;->d(Ljava/lang/String;Ljava/lang/String;)V
-
-    new-instance v5, Ljava/lang/StringBuilder;
-
-    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
-
-    invoke-virtual {v5, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v5, v2, v3}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v5
-
-    invoke-static {v6, v5}, Lcom/android/server/secrecy/zta/zta/zta;->d(Ljava/lang/String;Ljava/lang/String;)V
-
-    cmp-long v0, v0, v2
-
-    if-eqz v0, :cond_0
-
-    if-eqz v4, :cond_0
-
-    new-instance v0, Landroid/util/ArrayMap;
-
-    invoke-direct {v0}, Landroid/util/ArrayMap;-><init>()V
+    move-result v0
 
     const/4 v1, 0x0
 
-    invoke-virtual {p0, v0, v1}, Lcom/android/server/secrecy/zta/sis;->zta(Ljava/util/Map;Z)V
+    if-nez v0, :cond_0
 
-    const-string v1, "newDownloadInternal"
-
-    invoke-virtual {p0, v0, v1}, Lcom/android/server/secrecy/zta/sis;->zta(Ljava/util/Map;Ljava/lang/String;)V
+    return v1
 
     :cond_0
-    return-void
+    iget-object v0, p0, Lcom/android/server/secrecy/zta/sis;->aN:Lcom/android/server/secrecy/zta/you;
+
+    invoke-virtual {v0}, Lcom/android/server/secrecy/zta/you;->Dd()Z
+
+    move-result v0
+
+    if-nez v0, :cond_2
+
+    iget-object p0, p0, Lcom/android/server/secrecy/zta/sis;->aN:Lcom/android/server/secrecy/zta/you;
+
+    invoke-virtual {p0}, Lcom/android/server/secrecy/zta/you;->Cd()J
+
+    move-result-wide v2
+
+    const-wide/16 v4, 0x0
+
+    cmp-long p0, v2, v4
+
+    if-nez p0, :cond_1
+
+    goto :goto_0
+
+    :cond_1
+    const/4 p0, 0x1
+
+    return p0
+
+    :cond_2
+    :goto_0
+    return v1
 .end method
 
-
-# virtual methods
-.method public Ad()V
+.method public Hd()V
     .locals 0
 
     return-void
 .end method
 
-.method public Bd()V
+.method public Id()V
     .locals 2
 
     const-string v0, "SecrecyService.PolicyManager"
@@ -680,40 +752,40 @@
     return-void
 .end method
 
-.method public Lc()V
+.method public Sc()V
     .locals 0
 
     return-void
 .end method
 
-.method public Y(Ljava/lang/String;)V
+.method public aa(Ljava/lang/String;)V
     .locals 1
 
-    iget-object v0, p0, Lcom/android/server/secrecy/zta/sis;->ML:Lcom/android/server/secrecy/zta/you;
+    iget-object v0, p0, Lcom/android/server/secrecy/zta/sis;->aN:Lcom/android/server/secrecy/zta/you;
 
-    invoke-virtual {v0, p1}, Lcom/android/server/secrecy/zta/you;->Y(Ljava/lang/String;)V
+    invoke-virtual {v0, p1}, Lcom/android/server/secrecy/zta/you;->aa(Ljava/lang/String;)V
 
-    invoke-direct {p0}, Lcom/android/server/secrecy/zta/sis;->zo()V
+    invoke-direct {p0}, Lcom/android/server/secrecy/zta/sis;->To()V
 
     return-void
 .end method
 
-.method public Z(Ljava/lang/String;)V
+.method public ba(Ljava/lang/String;)V
     .locals 2
 
-    iget-object v0, p0, Lcom/android/server/secrecy/zta/sis;->GL:Lcom/android/server/secrecy/sis;
+    iget-object v0, p0, Lcom/android/server/secrecy/zta/sis;->WM:Lcom/android/server/secrecy/sis;
 
     invoke-virtual {p0}, Lcom/android/server/secrecy/zta/sis;->getImei()Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/android/server/secrecy/sis;->W(Ljava/lang/String;)V
+    invoke-virtual {v0, v1}, Lcom/android/server/secrecy/sis;->Y(Ljava/lang/String;)V
 
-    iget-object v0, p0, Lcom/android/server/secrecy/zta/sis;->GL:Lcom/android/server/secrecy/sis;
+    iget-object v0, p0, Lcom/android/server/secrecy/zta/sis;->WM:Lcom/android/server/secrecy/sis;
 
-    invoke-virtual {v0, p1}, Lcom/android/server/secrecy/sis;->X(Ljava/lang/String;)V
+    invoke-virtual {v0, p1}, Lcom/android/server/secrecy/sis;->Z(Ljava/lang/String;)V
 
-    iget-object p0, p0, Lcom/android/server/secrecy/zta/sis;->GL:Lcom/android/server/secrecy/sis;
+    iget-object p0, p0, Lcom/android/server/secrecy/zta/sis;->WM:Lcom/android/server/secrecy/sis;
 
     new-instance p1, Landroid/util/ArrayMap;
 
@@ -734,27 +806,27 @@
     return-void
 
     :cond_0
-    iget-object v0, p0, Lcom/android/server/secrecy/zta/sis;->OL:Lcom/android/server/secrecy/zta/rtg;
+    iget-object v0, p0, Lcom/android/server/secrecy/zta/sis;->cN:Lcom/android/server/secrecy/zta/rtg;
 
-    invoke-virtual {v0}, Lcom/android/server/secrecy/zta/rtg;->Id()Z
+    invoke-virtual {v0}, Lcom/android/server/secrecy/zta/rtg;->Pd()Z
 
     move-result v0
 
-    iget-object v1, p0, Lcom/android/server/secrecy/zta/sis;->OL:Lcom/android/server/secrecy/zta/rtg;
+    iget-object v1, p0, Lcom/android/server/secrecy/zta/sis;->cN:Lcom/android/server/secrecy/zta/rtg;
 
-    invoke-virtual {v1}, Lcom/android/server/secrecy/zta/rtg;->Dd()Z
+    invoke-virtual {v1}, Lcom/android/server/secrecy/zta/rtg;->Kd()Z
 
     move-result v1
 
-    iget-object v2, p0, Lcom/android/server/secrecy/zta/sis;->OL:Lcom/android/server/secrecy/zta/rtg;
+    iget-object v2, p0, Lcom/android/server/secrecy/zta/sis;->cN:Lcom/android/server/secrecy/zta/rtg;
 
-    invoke-virtual {v2}, Lcom/android/server/secrecy/zta/rtg;->Gd()Z
+    invoke-virtual {v2}, Lcom/android/server/secrecy/zta/rtg;->Nd()Z
 
     move-result v2
 
-    iget-object v3, p0, Lcom/android/server/secrecy/zta/sis;->OL:Lcom/android/server/secrecy/zta/rtg;
+    iget-object v3, p0, Lcom/android/server/secrecy/zta/sis;->cN:Lcom/android/server/secrecy/zta/rtg;
 
-    invoke-virtual {v3}, Lcom/android/server/secrecy/zta/rtg;->Ed()Z
+    invoke-virtual {v3}, Lcom/android/server/secrecy/zta/rtg;->Ld()Z
 
     move-result v3
 
@@ -778,15 +850,15 @@
 
     iget-object v0, p0, Lcom/android/server/secrecy/zta/sis;->sis:Lcom/android/server/secrecy/zta/tsu;
 
-    iget-object v4, p0, Lcom/android/server/secrecy/zta/sis;->OL:Lcom/android/server/secrecy/zta/rtg;
+    iget-object v4, p0, Lcom/android/server/secrecy/zta/sis;->cN:Lcom/android/server/secrecy/zta/rtg;
 
-    invoke-virtual {v4}, Lcom/android/server/secrecy/zta/rtg;->Hd()J
+    invoke-virtual {v4}, Lcom/android/server/secrecy/zta/rtg;->Od()J
 
     move-result-wide v4
 
-    iget-object v6, p0, Lcom/android/server/secrecy/zta/sis;->OL:Lcom/android/server/secrecy/zta/rtg;
+    iget-object v6, p0, Lcom/android/server/secrecy/zta/sis;->cN:Lcom/android/server/secrecy/zta/rtg;
 
-    invoke-virtual {v6}, Lcom/android/server/secrecy/zta/rtg;->Fd()J
+    invoke-virtual {v6}, Lcom/android/server/secrecy/zta/rtg;->Md()J
 
     move-result-wide v6
 
@@ -870,7 +942,7 @@
 .method public getSecrecyKey([B)Z
     .locals 0
 
-    iget-object p0, p0, Lcom/android/server/secrecy/zta/sis;->GL:Lcom/android/server/secrecy/sis;
+    iget-object p0, p0, Lcom/android/server/secrecy/zta/sis;->WM:Lcom/android/server/secrecy/sis;
 
     invoke-virtual {p0, p1}, Lcom/android/server/secrecy/sis;->getSecrecyKey([B)Z
 
@@ -886,15 +958,15 @@
 
     iput-boolean v0, p0, Lcom/android/server/secrecy/zta/sis;->mSystemReady:Z
 
-    iget-object v0, p0, Lcom/android/server/secrecy/zta/sis;->ML:Lcom/android/server/secrecy/zta/you;
+    iget-object v0, p0, Lcom/android/server/secrecy/zta/sis;->aN:Lcom/android/server/secrecy/zta/you;
 
-    invoke-virtual {v0}, Lcom/android/server/secrecy/zta/you;->xd()V
+    invoke-virtual {v0}, Lcom/android/server/secrecy/zta/you;->Ed()V
 
-    invoke-direct {p0}, Lcom/android/server/secrecy/zta/sis;->Ao()V
+    invoke-direct {p0}, Lcom/android/server/secrecy/zta/sis;->Uo()V
 
     if-eqz p1, :cond_0
 
-    invoke-virtual {p0}, Lcom/android/server/secrecy/zta/sis;->Lc()V
+    invoke-virtual {p0}, Lcom/android/server/secrecy/zta/sis;->Sc()V
 
     const-string p1, "SecrecyService.PolicyManager"
 
@@ -905,15 +977,15 @@
     :cond_0
     iget-object p1, p0, Lcom/android/server/secrecy/zta/sis;->sis:Lcom/android/server/secrecy/zta/tsu;
 
-    iget-object v0, p0, Lcom/android/server/secrecy/zta/sis;->OL:Lcom/android/server/secrecy/zta/rtg;
+    iget-object v0, p0, Lcom/android/server/secrecy/zta/sis;->cN:Lcom/android/server/secrecy/zta/rtg;
 
-    invoke-virtual {v0}, Lcom/android/server/secrecy/zta/rtg;->Hd()J
+    invoke-virtual {v0}, Lcom/android/server/secrecy/zta/rtg;->Od()J
 
     move-result-wide v0
 
-    iget-object p0, p0, Lcom/android/server/secrecy/zta/sis;->OL:Lcom/android/server/secrecy/zta/rtg;
+    iget-object p0, p0, Lcom/android/server/secrecy/zta/sis;->cN:Lcom/android/server/secrecy/zta/rtg;
 
-    invoke-virtual {p0}, Lcom/android/server/secrecy/zta/rtg;->Fd()J
+    invoke-virtual {p0}, Lcom/android/server/secrecy/zta/rtg;->Md()J
 
     move-result-wide v2
 
@@ -922,7 +994,43 @@
     return-void
 .end method
 
-.method public t(I)Z
+.method public tsu(Ljava/util/Map;)V
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/Map<",
+            "Ljava/lang/Integer;",
+            "Ljava/lang/Boolean;",
+            ">;)V"
+        }
+    .end annotation
+
+    invoke-interface {p1}, Ljava/util/Map;->isEmpty()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    const-string p0, "SecrecyService.PolicyManager"
+
+    const-string p1, "updatedSecrecyStateMap.isEnpty() onConfigSaveFinished return"
+
+    invoke-static {p0, p1}, Lcom/android/server/secrecy/zta/zta/zta;->d(Ljava/lang/String;Ljava/lang/String;)V
+
+    return-void
+
+    :cond_0
+    iget-object v0, p0, Lcom/android/server/secrecy/zta/sis;->XM:Lcom/android/server/secrecy/SecrecyService;
+
+    invoke-virtual {v0, p1}, Lcom/android/server/secrecy/SecrecyService;->zta(Ljava/util/Map;)V
+
+    invoke-direct {p0, p1}, Lcom/android/server/secrecy/zta/sis;->rtg(Ljava/util/Map;)V
+
+    return-void
+.end method
+
+.method public v(I)Z
     .locals 2
 
     sget-object v0, Lcom/android/server/secrecy/zta/sis;->mLock:Ljava/lang/Object;
@@ -954,21 +1062,21 @@
     goto :goto_0
 
     :cond_0
-    iget-boolean p0, p0, Lcom/android/server/secrecy/zta/sis;->LL:Z
+    iget-boolean p0, p0, Lcom/android/server/secrecy/zta/sis;->_M:Z
 
     monitor-exit v0
 
     return p0
 
     :cond_1
-    iget-boolean p0, p0, Lcom/android/server/secrecy/zta/sis;->IL:Z
+    iget-boolean p0, p0, Lcom/android/server/secrecy/zta/sis;->YM:Z
 
     monitor-exit v0
 
     return p0
 
     :cond_2
-    iget-boolean p0, p0, Lcom/android/server/secrecy/zta/sis;->KL:Z
+    iget-boolean p0, p0, Lcom/android/server/secrecy/zta/sis;->ZM:Z
 
     monitor-exit v0
 
@@ -982,114 +1090,6 @@
     throw p0
 .end method
 
-.method public tsu(Ljava/util/Map;)V
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/util/Map<",
-            "Ljava/lang/Integer;",
-            "Ljava/lang/Boolean;",
-            ">;)V"
-        }
-    .end annotation
-
-    invoke-interface {p1}, Ljava/util/Map;->isEmpty()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    const-string p0, "SecrecyService.PolicyManager"
-
-    const-string p1, "updatedSecrecyStateMap.isEnpty() onConfigSaveFinished return"
-
-    invoke-static {p0, p1}, Lcom/android/server/secrecy/zta/zta/zta;->d(Ljava/lang/String;Ljava/lang/String;)V
-
-    return-void
-
-    :cond_0
-    iget-object v0, p0, Lcom/android/server/secrecy/zta/sis;->HL:Lcom/android/server/secrecy/SecrecyService;
-
-    invoke-virtual {v0, p1}, Lcom/android/server/secrecy/SecrecyService;->zta(Ljava/util/Map;)V
-
-    invoke-direct {p0, p1}, Lcom/android/server/secrecy/zta/sis;->rtg(Ljava/util/Map;)V
-
-    return-void
-.end method
-
-.method public ud()Ljava/lang/Long;
-    .locals 2
-
-    iget-object p0, p0, Lcom/android/server/secrecy/zta/sis;->ML:Lcom/android/server/secrecy/zta/you;
-
-    invoke-virtual {p0}, Lcom/android/server/secrecy/zta/you;->ud()J
-
-    move-result-wide v0
-
-    invoke-static {v0, v1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public yd()Lcom/android/server/secrecy/zta/zta;
-    .locals 0
-
-    iget-object p0, p0, Lcom/android/server/secrecy/zta/sis;->NL:Lcom/android/server/secrecy/zta/zta;
-
-    return-object p0
-.end method
-
-.method public zd()Z
-    .locals 6
-
-    iget-object v0, p0, Lcom/android/server/secrecy/zta/sis;->HL:Lcom/android/server/secrecy/SecrecyService;
-
-    invoke-virtual {v0}, Lcom/android/server/secrecy/SecrecyService;->ma()Z
-
-    move-result v0
-
-    const/4 v1, 0x0
-
-    if-nez v0, :cond_0
-
-    return v1
-
-    :cond_0
-    iget-object v0, p0, Lcom/android/server/secrecy/zta/sis;->ML:Lcom/android/server/secrecy/zta/you;
-
-    invoke-virtual {v0}, Lcom/android/server/secrecy/zta/you;->wd()Z
-
-    move-result v0
-
-    if-nez v0, :cond_2
-
-    iget-object p0, p0, Lcom/android/server/secrecy/zta/sis;->ML:Lcom/android/server/secrecy/zta/you;
-
-    invoke-virtual {p0}, Lcom/android/server/secrecy/zta/you;->vd()J
-
-    move-result-wide v2
-
-    const-wide/16 v4, 0x0
-
-    cmp-long p0, v2, v4
-
-    if-nez p0, :cond_1
-
-    goto :goto_0
-
-    :cond_1
-    const/4 p0, 0x1
-
-    return p0
-
-    :cond_2
-    :goto_0
-    return v1
-.end method
-
 .method public zta(Landroid/content/Context;Lcom/android/server/secrecy/SecrecyService;Landroid/os/Looper;)V
     .locals 0
 
@@ -1097,19 +1097,19 @@
 
     iput-object p1, p0, Lcom/android/server/secrecy/zta/sis;->mContext:Landroid/content/Context;
 
-    iput-object p2, p0, Lcom/android/server/secrecy/zta/sis;->HL:Lcom/android/server/secrecy/SecrecyService;
+    iput-object p2, p0, Lcom/android/server/secrecy/zta/sis;->XM:Lcom/android/server/secrecy/SecrecyService;
 
     new-instance p2, Lcom/android/server/secrecy/zta/you;
 
     invoke-direct {p2}, Lcom/android/server/secrecy/zta/you;-><init>()V
 
-    iput-object p2, p0, Lcom/android/server/secrecy/zta/sis;->ML:Lcom/android/server/secrecy/zta/you;
+    iput-object p2, p0, Lcom/android/server/secrecy/zta/sis;->aN:Lcom/android/server/secrecy/zta/you;
 
     new-instance p2, Lcom/android/server/secrecy/zta/zta;
 
     invoke-direct {p2, p1, p0}, Lcom/android/server/secrecy/zta/zta;-><init>(Landroid/content/Context;Lcom/android/server/secrecy/zta/sis;)V
 
-    iput-object p2, p0, Lcom/android/server/secrecy/zta/sis;->NL:Lcom/android/server/secrecy/zta/zta;
+    iput-object p2, p0, Lcom/android/server/secrecy/zta/sis;->bN:Lcom/android/server/secrecy/zta/zta;
 
     new-instance p1, Lcom/android/server/secrecy/zta/tsu;
 
@@ -1125,7 +1125,7 @@
 
     invoke-direct {p1, p2, p0}, Lcom/android/server/secrecy/zta/rtg;-><init>(Landroid/content/Context;Lcom/android/server/secrecy/zta/rtg$zta;)V
 
-    iput-object p1, p0, Lcom/android/server/secrecy/zta/sis;->OL:Lcom/android/server/secrecy/zta/rtg;
+    iput-object p1, p0, Lcom/android/server/secrecy/zta/sis;->cN:Lcom/android/server/secrecy/zta/rtg;
 
     return-void
 .end method
@@ -1146,9 +1146,9 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lcom/android/server/secrecy/zta/sis;->HL:Lcom/android/server/secrecy/SecrecyService;
+    iget-object v1, p0, Lcom/android/server/secrecy/zta/sis;->XM:Lcom/android/server/secrecy/SecrecyService;
 
-    invoke-virtual {v1}, Lcom/android/server/secrecy/SecrecyService;->ma()Z
+    invoke-virtual {v1}, Lcom/android/server/secrecy/SecrecyService;->na()Z
 
     move-result v1
 
@@ -1168,7 +1168,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean v1, p0, Lcom/android/server/secrecy/zta/sis;->IL:Z
+    iget-boolean v1, p0, Lcom/android/server/secrecy/zta/sis;->YM:Z
 
     const/4 v2, 0x1
 
@@ -1176,11 +1176,11 @@
 
     if-eqz v1, :cond_0
 
-    iget-boolean v1, p0, Lcom/android/server/secrecy/zta/sis;->KL:Z
+    iget-boolean v1, p0, Lcom/android/server/secrecy/zta/sis;->ZM:Z
 
     if-eqz v1, :cond_0
 
-    iget-boolean v1, p0, Lcom/android/server/secrecy/zta/sis;->LL:Z
+    iget-boolean v1, p0, Lcom/android/server/secrecy/zta/sis;->_M:Z
 
     if-eqz v1, :cond_0
 
@@ -1208,7 +1208,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean v1, p0, Lcom/android/server/secrecy/zta/sis;->IL:Z
+    iget-boolean v1, p0, Lcom/android/server/secrecy/zta/sis;->YM:Z
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -1226,7 +1226,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean v1, p0, Lcom/android/server/secrecy/zta/sis;->KL:Z
+    iget-boolean v1, p0, Lcom/android/server/secrecy/zta/sis;->ZM:Z
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -1244,7 +1244,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean v1, p0, Lcom/android/server/secrecy/zta/sis;->LL:Z
+    iget-boolean v1, p0, Lcom/android/server/secrecy/zta/sis;->_M:Z
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -1262,15 +1262,15 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean v1, p0, Lcom/android/server/secrecy/zta/sis;->IL:Z
+    iget-boolean v1, p0, Lcom/android/server/secrecy/zta/sis;->YM:Z
 
     if-nez v1, :cond_1
 
-    iget-boolean v1, p0, Lcom/android/server/secrecy/zta/sis;->KL:Z
+    iget-boolean v1, p0, Lcom/android/server/secrecy/zta/sis;->ZM:Z
 
     if-nez v1, :cond_1
 
-    iget-boolean p0, p0, Lcom/android/server/secrecy/zta/sis;->LL:Z
+    iget-boolean p0, p0, Lcom/android/server/secrecy/zta/sis;->_M:Z
 
     if-nez p0, :cond_1
 
@@ -1326,7 +1326,7 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean v2, p0, Lcom/android/server/secrecy/zta/sis;->IL:Z
+    iget-boolean v2, p0, Lcom/android/server/secrecy/zta/sis;->YM:Z
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -1346,7 +1346,7 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean v2, p0, Lcom/android/server/secrecy/zta/sis;->KL:Z
+    iget-boolean v2, p0, Lcom/android/server/secrecy/zta/sis;->ZM:Z
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -1366,7 +1366,7 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean v2, p0, Lcom/android/server/secrecy/zta/sis;->LL:Z
+    iget-boolean v2, p0, Lcom/android/server/secrecy/zta/sis;->_M:Z
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -1380,7 +1380,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    iget-object v0, p0, Lcom/android/server/secrecy/zta/sis;->ML:Lcom/android/server/secrecy/zta/you;
+    iget-object v0, p0, Lcom/android/server/secrecy/zta/sis;->aN:Lcom/android/server/secrecy/zta/you;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -1398,7 +1398,7 @@
 
     invoke-virtual {v0, p1, p2, v1}, Lcom/android/server/secrecy/zta/you;->zta(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;Ljava/lang/String;)V
 
-    iget-object v0, p0, Lcom/android/server/secrecy/zta/sis;->GL:Lcom/android/server/secrecy/sis;
+    iget-object v0, p0, Lcom/android/server/secrecy/zta/sis;->WM:Lcom/android/server/secrecy/sis;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -1418,7 +1418,7 @@
 
     const/4 v0, 0x2
 
-    invoke-virtual {p0, v0}, Lcom/android/server/secrecy/zta/sis;->t(I)Z
+    invoke-virtual {p0, v0}, Lcom/android/server/secrecy/zta/sis;->v(I)Z
 
     move-result v0
 
@@ -1442,7 +1442,7 @@
 
     invoke-virtual {v0, p1, p2, v1}, Lcom/android/server/secrecy/zta/tsu;->zta(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;Ljava/lang/String;)V
 
-    iget-object p0, p0, Lcom/android/server/secrecy/zta/sis;->OL:Lcom/android/server/secrecy/zta/rtg;
+    iget-object p0, p0, Lcom/android/server/secrecy/zta/sis;->cN:Lcom/android/server/secrecy/zta/rtg;
 
     new-instance v0, Ljava/lang/StringBuilder;
 

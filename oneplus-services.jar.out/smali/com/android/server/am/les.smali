@@ -65,7 +65,7 @@
 
     move-result-object p0
 
-    invoke-static {p0}, Lcom/android/server/am/irq;->dma(Lcom/android/server/am/irq;)V
+    invoke-static {p0}, Lcom/android/server/am/irq;->ywr(Lcom/android/server/am/irq;)V
 
     goto :goto_0
 
@@ -82,7 +82,7 @@
 
     move-result-object p0
 
-    invoke-static {p0}, Lcom/android/server/am/irq;->ywr(Lcom/android/server/am/irq;)V
+    invoke-static {p0}, Lcom/android/server/am/irq;->qbh(Lcom/android/server/am/irq;)V
 
     :cond_2
     :goto_0

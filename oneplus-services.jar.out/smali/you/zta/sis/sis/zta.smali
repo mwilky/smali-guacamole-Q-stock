@@ -4,11 +4,11 @@
 
 
 # static fields
-.field private static final RFa:J = 0x55555555L
+.field private static final eIa:J = 0x55555555L
 
-.field private static final SFa:J = 0x5555555555555555L
+.field private static final fIa:J = 0x5555555555555555L
 
-.field private static final TFa:J = -0x5555555555555556L
+.field private static final gIa:J = -0x5555555555555556L
 
 
 # direct methods
@@ -21,6 +21,156 @@
 .end method
 
 .method public static Aa(I)I
+    .locals 1
+
+    and-int/lit16 p0, p0, 0xff
+
+    shl-int/lit8 v0, p0, 0x4
+
+    or-int/2addr p0, v0
+
+    and-int/lit16 p0, p0, 0xf0f
+
+    shl-int/lit8 v0, p0, 0x2
+
+    or-int/2addr p0, v0
+
+    and-int/lit16 p0, p0, 0x3333
+
+    shl-int/lit8 v0, p0, 0x1
+
+    or-int/2addr p0, v0
+
+    and-int/lit16 p0, p0, 0x5555
+
+    return p0
+.end method
+
+.method public static Ba(I)I
+    .locals 2
+
+    ushr-int/lit8 v0, p0, 0x8
+
+    xor-int/2addr v0, p0
+
+    const v1, 0xff00
+
+    and-int/2addr v0, v1
+
+    shl-int/lit8 v1, v0, 0x8
+
+    xor-int/2addr v0, v1
+
+    xor-int/2addr p0, v0
+
+    ushr-int/lit8 v0, p0, 0x4
+
+    xor-int/2addr v0, p0
+
+    const v1, 0xf000f0
+
+    and-int/2addr v0, v1
+
+    shl-int/lit8 v1, v0, 0x4
+
+    xor-int/2addr v0, v1
+
+    xor-int/2addr p0, v0
+
+    ushr-int/lit8 v0, p0, 0x2
+
+    xor-int/2addr v0, p0
+
+    const v1, 0xc0c0c0c
+
+    and-int/2addr v0, v1
+
+    shl-int/lit8 v1, v0, 0x2
+
+    xor-int/2addr v0, v1
+
+    xor-int/2addr p0, v0
+
+    ushr-int/lit8 v0, p0, 0x1
+
+    xor-int/2addr v0, p0
+
+    const v1, 0x22222222
+
+    and-int/2addr v0, v1
+
+    shl-int/lit8 v1, v0, 0x1
+
+    xor-int/2addr v0, v1
+
+    xor-int/2addr p0, v0
+
+    return p0
+.end method
+
+.method public static Ca(I)I
+    .locals 2
+
+    ushr-int/lit8 v0, p0, 0x7
+
+    xor-int/2addr v0, p0
+
+    const v1, 0xaa00aa
+
+    and-int/2addr v0, v1
+
+    shl-int/lit8 v1, v0, 0x7
+
+    xor-int/2addr v0, v1
+
+    xor-int/2addr p0, v0
+
+    ushr-int/lit8 v0, p0, 0xe
+
+    xor-int/2addr v0, p0
+
+    const v1, 0xcccc
+
+    and-int/2addr v0, v1
+
+    shl-int/lit8 v1, v0, 0xe
+
+    xor-int/2addr v0, v1
+
+    xor-int/2addr p0, v0
+
+    ushr-int/lit8 v0, p0, 0x4
+
+    xor-int/2addr v0, p0
+
+    const v1, 0xf000f0
+
+    and-int/2addr v0, v1
+
+    shl-int/lit8 v1, v0, 0x4
+
+    xor-int/2addr v0, v1
+
+    xor-int/2addr p0, v0
+
+    ushr-int/lit8 v0, p0, 0x8
+
+    xor-int/2addr v0, p0
+
+    const v1, 0xff00
+
+    and-int/2addr v0, v1
+
+    shl-int/lit8 v1, v0, 0x8
+
+    xor-int/2addr v0, v1
+
+    xor-int/2addr p0, v0
+
+    return p0
+.end method
+
+.method public static Da(I)I
     .locals 2
 
     ushr-int/lit8 v0, p0, 0x1
@@ -82,7 +232,7 @@
     return p0
 .end method
 
-.method public static Ba(I)I
+.method public static Ea(I)I
     .locals 2
 
     ushr-int/lit8 v0, p0, 0x8
@@ -316,7 +466,7 @@
     return-wide p0
 .end method
 
-.method public static va(I)I
+.method public static ya(I)I
     .locals 1
 
     const v0, 0xffff
@@ -354,174 +504,6 @@
     const v0, 0x55555555
 
     and-int/2addr p0, v0
-
-    return p0
-.end method
-
-.method public static wa(I)J
-    .locals 6
-
-    ushr-int/lit8 v0, p0, 0x8
-
-    xor-int/2addr v0, p0
-
-    const v1, 0xff00
-
-    and-int/2addr v0, v1
-
-    shl-int/lit8 v1, v0, 0x8
-
-    xor-int/2addr v0, v1
-
-    xor-int/2addr p0, v0
-
-    ushr-int/lit8 v0, p0, 0x4
-
-    xor-int/2addr v0, p0
-
-    const v1, 0xf000f0
-
-    and-int/2addr v0, v1
-
-    shl-int/lit8 v1, v0, 0x4
-
-    xor-int/2addr v0, v1
-
-    xor-int/2addr p0, v0
-
-    ushr-int/lit8 v0, p0, 0x2
-
-    xor-int/2addr v0, p0
-
-    const v1, 0xc0c0c0c
-
-    and-int/2addr v0, v1
-
-    shl-int/lit8 v1, v0, 0x2
-
-    xor-int/2addr v0, v1
-
-    xor-int/2addr p0, v0
-
-    ushr-int/lit8 v0, p0, 0x1
-
-    xor-int/2addr v0, p0
-
-    const v1, 0x22222222
-
-    and-int/2addr v0, v1
-
-    shl-int/lit8 v1, v0, 0x1
-
-    xor-int/2addr v0, v1
-
-    xor-int/2addr p0, v0
-
-    ushr-int/lit8 v0, p0, 0x1
-
-    int-to-long v0, v0
-
-    const-wide/32 v2, 0x55555555
-
-    and-long/2addr v0, v2
-
-    const/16 v4, 0x20
-
-    shl-long/2addr v0, v4
-
-    int-to-long v4, p0
-
-    and-long/2addr v2, v4
-
-    or-long/2addr v0, v2
-
-    return-wide v0
-.end method
-
-.method public static xa(I)I
-    .locals 1
-
-    and-int/lit16 p0, p0, 0xff
-
-    shl-int/lit8 v0, p0, 0x4
-
-    or-int/2addr p0, v0
-
-    and-int/lit16 p0, p0, 0xf0f
-
-    shl-int/lit8 v0, p0, 0x2
-
-    or-int/2addr p0, v0
-
-    and-int/lit16 p0, p0, 0x3333
-
-    shl-int/lit8 v0, p0, 0x1
-
-    or-int/2addr p0, v0
-
-    and-int/lit16 p0, p0, 0x5555
-
-    return p0
-.end method
-
-.method public static ya(I)I
-    .locals 2
-
-    ushr-int/lit8 v0, p0, 0x8
-
-    xor-int/2addr v0, p0
-
-    const v1, 0xff00
-
-    and-int/2addr v0, v1
-
-    shl-int/lit8 v1, v0, 0x8
-
-    xor-int/2addr v0, v1
-
-    xor-int/2addr p0, v0
-
-    ushr-int/lit8 v0, p0, 0x4
-
-    xor-int/2addr v0, p0
-
-    const v1, 0xf000f0
-
-    and-int/2addr v0, v1
-
-    shl-int/lit8 v1, v0, 0x4
-
-    xor-int/2addr v0, v1
-
-    xor-int/2addr p0, v0
-
-    ushr-int/lit8 v0, p0, 0x2
-
-    xor-int/2addr v0, p0
-
-    const v1, 0xc0c0c0c
-
-    and-int/2addr v0, v1
-
-    shl-int/lit8 v1, v0, 0x2
-
-    xor-int/2addr v0, v1
-
-    xor-int/2addr p0, v0
-
-    ushr-int/lit8 v0, p0, 0x1
-
-    xor-int/2addr v0, p0
-
-    const v1, 0x22222222
-
-    and-int/2addr v0, v1
-
-    shl-int/lit8 v1, v0, 0x1
-
-    xor-int/2addr v0, v1
-
-    xor-int/2addr p0, v0
 
     return p0
 .end method
@@ -626,32 +608,18 @@
     return-void
 .end method
 
-.method public static za(I)I
-    .locals 2
+.method public static za(I)J
+    .locals 6
 
-    ushr-int/lit8 v0, p0, 0x7
-
-    xor-int/2addr v0, p0
-
-    const v1, 0xaa00aa
-
-    and-int/2addr v0, v1
-
-    shl-int/lit8 v1, v0, 0x7
-
-    xor-int/2addr v0, v1
-
-    xor-int/2addr p0, v0
-
-    ushr-int/lit8 v0, p0, 0xe
+    ushr-int/lit8 v0, p0, 0x8
 
     xor-int/2addr v0, p0
 
-    const v1, 0xcccc
+    const v1, 0xff00
 
     and-int/2addr v0, v1
 
-    shl-int/lit8 v1, v0, 0xe
+    shl-int/lit8 v1, v0, 0x8
 
     xor-int/2addr v0, v1
 
@@ -671,21 +639,53 @@
 
     xor-int/2addr p0, v0
 
-    ushr-int/lit8 v0, p0, 0x8
+    ushr-int/lit8 v0, p0, 0x2
 
     xor-int/2addr v0, p0
 
-    const v1, 0xff00
+    const v1, 0xc0c0c0c
 
     and-int/2addr v0, v1
 
-    shl-int/lit8 v1, v0, 0x8
+    shl-int/lit8 v1, v0, 0x2
 
     xor-int/2addr v0, v1
 
     xor-int/2addr p0, v0
 
-    return p0
+    ushr-int/lit8 v0, p0, 0x1
+
+    xor-int/2addr v0, p0
+
+    const v1, 0x22222222
+
+    and-int/2addr v0, v1
+
+    shl-int/lit8 v1, v0, 0x1
+
+    xor-int/2addr v0, v1
+
+    xor-int/2addr p0, v0
+
+    ushr-int/lit8 v0, p0, 0x1
+
+    int-to-long v0, v0
+
+    const-wide/32 v2, 0x55555555
+
+    and-long/2addr v0, v2
+
+    const/16 v4, 0x20
+
+    shl-long/2addr v0, v4
+
+    int-to-long v4, p0
+
+    and-long/2addr v2, v4
+
+    or-long/2addr v0, v2
+
+    return-wide v0
 .end method
 
 .method public static zta(J[JI)V

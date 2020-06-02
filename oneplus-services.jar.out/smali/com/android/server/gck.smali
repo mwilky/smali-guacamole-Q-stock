@@ -60,7 +60,7 @@
 
     move-result v1
 
-    if-eqz v1, :cond_6
+    if-eqz v1, :cond_8
 
     new-array v1, v2, [I
 
@@ -72,7 +72,7 @@
 
     move-result v1
 
-    if-eqz v1, :cond_6
+    if-eqz v1, :cond_8
 
     const v1, 0x50d000c
 
@@ -284,15 +284,24 @@
 
     move-result p1
 
-    if-eqz p1, :cond_6
+    const-string p2, "android.intent.action.ACTION_SHUTDOWN"
 
+    if-nez p1, :cond_6
+
+    invoke-virtual {p2, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_8
+
+    :cond_6
     iget-object p1, p0, Lcom/android/server/gck;->this$0:Lcom/android/server/OnePlusExService;
 
     invoke-static {p1}, Lcom/android/server/OnePlusExService;->access$2400(Lcom/android/server/OnePlusExService;)Z
 
     move-result p1
 
-    if-eqz p1, :cond_6
+    if-eqz p1, :cond_8
 
     const-string p1, "power disconnected broadcast, cancel car charger notification"
 
@@ -304,13 +313,13 @@
 
     move-result-object p1
 
-    iget-object p2, p0, Lcom/android/server/gck;->this$0:Lcom/android/server/OnePlusExService;
+    iget-object v4, p0, Lcom/android/server/gck;->this$0:Lcom/android/server/OnePlusExService;
 
-    invoke-static {p2}, Lcom/android/server/OnePlusExService;->access$2700(Lcom/android/server/OnePlusExService;)Ljava/lang/Runnable;
+    invoke-static {v4}, Lcom/android/server/OnePlusExService;->access$2700(Lcom/android/server/OnePlusExService;)Ljava/lang/Runnable;
 
-    move-result-object p2
+    move-result-object v4
 
-    invoke-virtual {p1, p2}, Landroid/os/Handler;->removeCallbacks(Ljava/lang/Runnable;)V
+    invoke-virtual {p1, v4}, Landroid/os/Handler;->removeCallbacks(Ljava/lang/Runnable;)V
 
     iget-object p1, p0, Lcom/android/server/gck;->this$0:Lcom/android/server/OnePlusExService;
 
@@ -324,15 +333,27 @@
 
     invoke-static {p1, v3}, Lcom/android/server/OnePlusExService;->access$2402(Lcom/android/server/OnePlusExService;Z)Z
 
+    invoke-virtual {p2, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_7
+
+    invoke-static {v2}, Lcom/android/server/OnePlusExService;->access$1802(Z)Z
+
+    goto :goto_2
+
+    :cond_7
     invoke-static {v3}, Lcom/android/server/OnePlusExService;->access$1802(Z)Z
 
+    :goto_2
     iget-object p1, p0, Lcom/android/server/gck;->this$0:Lcom/android/server/OnePlusExService;
 
     invoke-static {p1}, Lcom/android/server/OnePlusExService;->access$2800(Lcom/android/server/OnePlusExService;)I
 
     move-result p1
 
-    if-ne p1, v2, :cond_6
+    if-ne p1, v2, :cond_8
 
     new-array p1, v2, [I
 
@@ -342,7 +363,7 @@
 
     move-result p1
 
-    if-eqz p1, :cond_6
+    if-eqz p1, :cond_8
 
     iget-object p1, p0, Lcom/android/server/gck;->this$0:Lcom/android/server/OnePlusExService;
 
@@ -352,6 +373,6 @@
 
     invoke-static {p0, v3}, Lcom/android/server/OnePlusExService;->access$2300(Lcom/android/server/OnePlusExService;Z)V
 
-    :cond_6
+    :cond_8
     return-void
 .end method

@@ -60,6 +60,26 @@
 
 
 # virtual methods
+.method abstract Dg()I
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+.end method
+
+.method Eg()Lorg/bouncycastle/asn1/vdb;
+    .locals 0
+
+    return-object p0
+.end method
+
+.method Fg()Lorg/bouncycastle/asn1/vdb;
+    .locals 0
+
+    return-object p0
+.end method
+
 .method public final equals(Ljava/lang/Object;)Z
     .locals 2
 
@@ -102,26 +122,6 @@
 .end method
 
 .method public toASN1Primitive()Lorg/bouncycastle/asn1/vdb;
-    .locals 0
-
-    return-object p0
-.end method
-
-.method abstract ug()I
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
-.end method
-
-.method vg()Lorg/bouncycastle/asn1/vdb;
-    .locals 0
-
-    return-object p0
-.end method
-
-.method wg()Lorg/bouncycastle/asn1/vdb;
     .locals 0
 
     return-object p0

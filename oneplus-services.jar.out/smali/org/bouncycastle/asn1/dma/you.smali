@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field private Aqa:Z
+.field private Osa:Z
 
 .field private info:[Lorg/bouncycastle/asn1/dma/cno;
 
@@ -17,7 +17,7 @@
 
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lorg/bouncycastle/asn1/dma/you;->Aqa:Z
+    iput-boolean v0, p0, Lorg/bouncycastle/asn1/dma/you;->Osa:Z
 
     invoke-virtual {p1}, Lorg/bouncycastle/asn1/obl;->size()I
 
@@ -53,7 +53,7 @@
     :cond_0
     instance-of p1, p1, Lorg/bouncycastle/asn1/d;
 
-    iput-boolean p1, p0, Lorg/bouncycastle/asn1/dma/you;->Aqa:Z
+    iput-boolean p1, p0, Lorg/bouncycastle/asn1/dma/you;->Osa:Z
 
     return-void
 .end method
@@ -65,7 +65,7 @@
 
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lorg/bouncycastle/asn1/dma/you;->Aqa:Z
+    iput-boolean v0, p0, Lorg/bouncycastle/asn1/dma/you;->Osa:Z
 
     invoke-direct {p0, p1}, Lorg/bouncycastle/asn1/dma/you;->zta([Lorg/bouncycastle/asn1/dma/cno;)[Lorg/bouncycastle/asn1/dma/cno;
 
@@ -161,7 +161,7 @@
     goto :goto_0
 
     :cond_0
-    iget-boolean p0, p0, Lorg/bouncycastle/asn1/dma/you;->Aqa:Z
+    iget-boolean p0, p0, Lorg/bouncycastle/asn1/dma/you;->Osa:Z
 
     if-eqz p0, :cond_1
 

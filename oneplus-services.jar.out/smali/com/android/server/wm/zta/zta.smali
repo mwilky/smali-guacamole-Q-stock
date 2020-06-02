@@ -12,23 +12,25 @@
 
 
 # static fields
-.field private static final Hb:F = 0.6f
+.field private static final Ib:F = 0.6f
 
-.field public static final Ib:J = 0x12cL
-
-.field private static final Jb:Landroid/view/animation/Interpolator;
+.field public static final Jb:J = 0x12cL
 
 .field private static final Kb:Landroid/view/animation/Interpolator;
 
 .field private static final LINEAR:Landroid/view/animation/Interpolator;
 
+.field private static final Lb:Landroid/view/animation/Interpolator;
+
 .field private static final TAG:Ljava/lang/String; = "OpAppLaunchAnimation"
 
 
 # instance fields
-.field private Ab:Landroid/graphics/RectF;
+.field private final Ab:Landroid/graphics/Rect;
 
-.field private Bb:Ljava/util/ArrayList;
+.field private Bb:Landroid/graphics/RectF;
+
+.field private Cb:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/ArrayList<",
@@ -38,15 +40,15 @@
     .end annotation
 .end field
 
-.field private Cb:Lcom/android/server/wm/zta/zta$zta;
-
 .field private Db:Lcom/android/server/wm/zta/zta$zta;
 
 .field private Eb:Lcom/android/server/wm/zta/zta$zta;
 
-.field private Fb:F
+.field private Fb:Lcom/android/server/wm/zta/zta$zta;
 
 .field private Gb:F
+
+.field private Hb:F
 
 .field private mDx:Lcom/android/server/wm/zta/zta$zta;
 
@@ -56,11 +58,9 @@
 
 .field private mScale:F
 
-.field private final rb:F
-
 .field private final sb:F
 
-.field private final tb:J
+.field private final tb:F
 
 .field private final ub:J
 
@@ -70,7 +70,7 @@
 
 .field private final xb:J
 
-.field private final yb:Landroid/graphics/Rect;
+.field private final yb:J
 
 .field private final zb:Landroid/graphics/Rect;
 
@@ -95,7 +95,7 @@
 
     invoke-direct {v0, v2, v1, v1, v3}, Landroid/view/animation/PathInterpolator;-><init>(FFFF)V
 
-    sput-object v0, Lcom/android/server/wm/zta/zta;->Jb:Landroid/view/animation/Interpolator;
+    sput-object v0, Lcom/android/server/wm/zta/zta;->Kb:Landroid/view/animation/Interpolator;
 
     new-instance v0, Landroid/graphics/Path;
 
@@ -137,7 +137,7 @@
 
     invoke-direct {v1, v0}, Landroid/view/animation/PathInterpolator;-><init>(Landroid/graphics/Path;)V
 
-    sput-object v1, Lcom/android/server/wm/zta/zta;->Kb:Landroid/view/animation/Interpolator;
+    sput-object v1, Lcom/android/server/wm/zta/zta;->Lb:Landroid/view/animation/Interpolator;
 
     return-void
 .end method
@@ -149,171 +149,49 @@
 
     const v0, 0x3f4ccccd    # 0.8f
 
-    iput v0, p0, Lcom/android/server/wm/zta/zta;->rb:F
+    iput v0, p0, Lcom/android/server/wm/zta/zta;->sb:F
 
     const v0, 0x3e99999a    # 0.3f
 
-    iput v0, p0, Lcom/android/server/wm/zta/zta;->sb:F
+    iput v0, p0, Lcom/android/server/wm/zta/zta;->tb:F
 
     const-wide/16 v0, 0x96
 
-    iput-wide v0, p0, Lcom/android/server/wm/zta/zta;->tb:J
+    iput-wide v0, p0, Lcom/android/server/wm/zta/zta;->ub:J
 
     const-wide/16 v0, 0xf0
 
-    iput-wide v0, p0, Lcom/android/server/wm/zta/zta;->ub:J
+    iput-wide v0, p0, Lcom/android/server/wm/zta/zta;->vb:J
 
     const-wide/16 v0, 0x78
 
-    iput-wide v0, p0, Lcom/android/server/wm/zta/zta;->vb:J
+    iput-wide v0, p0, Lcom/android/server/wm/zta/zta;->wb:J
 
     const-wide/16 v0, 0x32
 
-    iput-wide v0, p0, Lcom/android/server/wm/zta/zta;->wb:J
+    iput-wide v0, p0, Lcom/android/server/wm/zta/zta;->xb:J
 
     const-wide/16 v0, 0x28
 
-    iput-wide v0, p0, Lcom/android/server/wm/zta/zta;->xb:J
+    iput-wide v0, p0, Lcom/android/server/wm/zta/zta;->yb:J
 
     new-instance v0, Landroid/graphics/RectF;
 
     invoke-direct {v0}, Landroid/graphics/RectF;-><init>()V
 
-    iput-object v0, p0, Lcom/android/server/wm/zta/zta;->Ab:Landroid/graphics/RectF;
+    iput-object v0, p0, Lcom/android/server/wm/zta/zta;->Bb:Landroid/graphics/RectF;
 
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/android/server/wm/zta/zta;->Bb:Ljava/util/ArrayList;
+    iput-object v0, p0, Lcom/android/server/wm/zta/zta;->Cb:Ljava/util/ArrayList;
 
-    iput-object p1, p0, Lcom/android/server/wm/zta/zta;->yb:Landroid/graphics/Rect;
+    iput-object p1, p0, Lcom/android/server/wm/zta/zta;->zb:Landroid/graphics/Rect;
 
-    iput-object p2, p0, Lcom/android/server/wm/zta/zta;->zb:Landroid/graphics/Rect;
+    iput-object p2, p0, Lcom/android/server/wm/zta/zta;->Ab:Landroid/graphics/Rect;
 
     invoke-direct {p0, p3}, Lcom/android/server/wm/zta/zta;->you(F)V
-
-    return-void
-.end method
-
-.method private jl()V
-    .locals 6
-
-    iget-object v0, p0, Lcom/android/server/wm/zta/zta;->yb:Landroid/graphics/Rect;
-
-    invoke-virtual {v0}, Landroid/graphics/Rect;->width()I
-
-    move-result v0
-
-    int-to-float v0, v0
-
-    iget-object v1, p0, Lcom/android/server/wm/zta/zta;->Cb:Lcom/android/server/wm/zta/zta$zta;
-
-    iget v1, v1, Lcom/android/server/wm/zta/zta$zta;->value:F
-
-    mul-float/2addr v0, v1
-
-    iget-object v1, p0, Lcom/android/server/wm/zta/zta;->yb:Landroid/graphics/Rect;
-
-    invoke-virtual {v1}, Landroid/graphics/Rect;->height()I
-
-    move-result v1
-
-    int-to-float v1, v1
-
-    iget-object v2, p0, Lcom/android/server/wm/zta/zta;->Cb:Lcom/android/server/wm/zta/zta$zta;
-
-    iget v2, v2, Lcom/android/server/wm/zta/zta$zta;->value:F
-
-    mul-float/2addr v1, v2
-
-    iget-object v2, p0, Lcom/android/server/wm/zta/zta;->Eb:Lcom/android/server/wm/zta/zta$zta;
-
-    iget v2, v2, Lcom/android/server/wm/zta/zta$zta;->value:F
-
-    float-to-int v2, v2
-
-    iget-object v3, p0, Lcom/android/server/wm/zta/zta;->zb:Landroid/graphics/Rect;
-
-    invoke-virtual {v3}, Landroid/graphics/Rect;->height()I
-
-    move-result v3
-
-    int-to-float v2, v2
-
-    div-float v4, v0, v2
-
-    int-to-float v3, v3
-
-    div-float v5, v1, v3
-
-    invoke-static {v4, v5}, Ljava/lang/Math;->max(FF)F
-
-    move-result v4
-
-    const/high16 v5, 0x3f800000    # 1.0f
-
-    invoke-static {v5, v4}, Ljava/lang/Math;->min(FF)F
-
-    move-result v4
-
-    iput v4, p0, Lcom/android/server/wm/zta/zta;->mScale:F
-
-    iget v4, p0, Lcom/android/server/wm/zta/zta;->mScale:F
-
-    mul-float/2addr v2, v4
-
-    mul-float/2addr v3, v4
-
-    sub-float/2addr v2, v0
-
-    const/high16 v0, 0x40000000    # 2.0f
-
-    div-float/2addr v2, v0
-
-    sub-float/2addr v3, v1
-
-    div-float/2addr v3, v0
-
-    iget-object v0, p0, Lcom/android/server/wm/zta/zta;->Ab:Landroid/graphics/RectF;
-
-    iget-object v1, p0, Lcom/android/server/wm/zta/zta;->yb:Landroid/graphics/Rect;
-
-    invoke-virtual {v0, v1}, Landroid/graphics/RectF;->set(Landroid/graphics/Rect;)V
-
-    iget-object v0, p0, Lcom/android/server/wm/zta/zta;->Ab:Landroid/graphics/RectF;
-
-    iget-object v1, p0, Lcom/android/server/wm/zta/zta;->mDx:Lcom/android/server/wm/zta/zta$zta;
-
-    iget v1, v1, Lcom/android/server/wm/zta/zta$zta;->value:F
-
-    iget-object v4, p0, Lcom/android/server/wm/zta/zta;->mDy:Lcom/android/server/wm/zta/zta$zta;
-
-    iget v4, v4, Lcom/android/server/wm/zta/zta$zta;->value:F
-
-    invoke-virtual {v0, v1, v4}, Landroid/graphics/RectF;->offset(FF)V
-
-    iget-object v0, p0, Lcom/android/server/wm/zta/zta;->Ab:Landroid/graphics/RectF;
-
-    iget-object v1, p0, Lcom/android/server/wm/zta/zta;->Cb:Lcom/android/server/wm/zta/zta$zta;
-
-    iget v1, v1, Lcom/android/server/wm/zta/zta$zta;->value:F
-
-    invoke-direct {p0, v0, v1}, Lcom/android/server/wm/zta/zta;->zta(Landroid/graphics/RectF;F)V
-
-    iget-object v0, p0, Lcom/android/server/wm/zta/zta;->Ab:Landroid/graphics/RectF;
-
-    iget v1, v0, Landroid/graphics/RectF;->left:F
-
-    sub-float/2addr v1, v2
-
-    iput v1, p0, Lcom/android/server/wm/zta/zta;->Fb:F
-
-    iget v0, v0, Landroid/graphics/RectF;->top:F
-
-    sub-float/2addr v0, v3
-
-    iput v0, p0, Lcom/android/server/wm/zta/zta;->Gb:F
 
     return-void
 .end method
@@ -321,7 +199,7 @@
 .method private lqr(J)V
     .locals 6
 
-    iget-object v0, p0, Lcom/android/server/wm/zta/zta;->Bb:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/server/wm/zta/zta;->Cb:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -332,7 +210,7 @@
     :goto_0
     if-ltz v0, :cond_1
 
-    iget-object v1, p0, Lcom/android/server/wm/zta/zta;->Bb:Ljava/util/ArrayList;
+    iget-object v1, p0, Lcom/android/server/wm/zta/zta;->Cb:Ljava/util/ArrayList;
 
     invoke-virtual {v1, v0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -397,7 +275,129 @@
     goto :goto_0
 
     :cond_1
-    invoke-direct {p0}, Lcom/android/server/wm/zta/zta;->jl()V
+    invoke-direct {p0}, Lcom/android/server/wm/zta/zta;->sl()V
+
+    return-void
+.end method
+
+.method private sl()V
+    .locals 6
+
+    iget-object v0, p0, Lcom/android/server/wm/zta/zta;->zb:Landroid/graphics/Rect;
+
+    invoke-virtual {v0}, Landroid/graphics/Rect;->width()I
+
+    move-result v0
+
+    int-to-float v0, v0
+
+    iget-object v1, p0, Lcom/android/server/wm/zta/zta;->Db:Lcom/android/server/wm/zta/zta$zta;
+
+    iget v1, v1, Lcom/android/server/wm/zta/zta$zta;->value:F
+
+    mul-float/2addr v0, v1
+
+    iget-object v1, p0, Lcom/android/server/wm/zta/zta;->zb:Landroid/graphics/Rect;
+
+    invoke-virtual {v1}, Landroid/graphics/Rect;->height()I
+
+    move-result v1
+
+    int-to-float v1, v1
+
+    iget-object v2, p0, Lcom/android/server/wm/zta/zta;->Db:Lcom/android/server/wm/zta/zta$zta;
+
+    iget v2, v2, Lcom/android/server/wm/zta/zta$zta;->value:F
+
+    mul-float/2addr v1, v2
+
+    iget-object v2, p0, Lcom/android/server/wm/zta/zta;->Fb:Lcom/android/server/wm/zta/zta$zta;
+
+    iget v2, v2, Lcom/android/server/wm/zta/zta$zta;->value:F
+
+    float-to-int v2, v2
+
+    iget-object v3, p0, Lcom/android/server/wm/zta/zta;->Ab:Landroid/graphics/Rect;
+
+    invoke-virtual {v3}, Landroid/graphics/Rect;->height()I
+
+    move-result v3
+
+    int-to-float v2, v2
+
+    div-float v4, v0, v2
+
+    int-to-float v3, v3
+
+    div-float v5, v1, v3
+
+    invoke-static {v4, v5}, Ljava/lang/Math;->max(FF)F
+
+    move-result v4
+
+    const/high16 v5, 0x3f800000    # 1.0f
+
+    invoke-static {v5, v4}, Ljava/lang/Math;->min(FF)F
+
+    move-result v4
+
+    iput v4, p0, Lcom/android/server/wm/zta/zta;->mScale:F
+
+    iget v4, p0, Lcom/android/server/wm/zta/zta;->mScale:F
+
+    mul-float/2addr v2, v4
+
+    mul-float/2addr v3, v4
+
+    sub-float/2addr v2, v0
+
+    const/high16 v0, 0x40000000    # 2.0f
+
+    div-float/2addr v2, v0
+
+    sub-float/2addr v3, v1
+
+    div-float/2addr v3, v0
+
+    iget-object v0, p0, Lcom/android/server/wm/zta/zta;->Bb:Landroid/graphics/RectF;
+
+    iget-object v1, p0, Lcom/android/server/wm/zta/zta;->zb:Landroid/graphics/Rect;
+
+    invoke-virtual {v0, v1}, Landroid/graphics/RectF;->set(Landroid/graphics/Rect;)V
+
+    iget-object v0, p0, Lcom/android/server/wm/zta/zta;->Bb:Landroid/graphics/RectF;
+
+    iget-object v1, p0, Lcom/android/server/wm/zta/zta;->mDx:Lcom/android/server/wm/zta/zta$zta;
+
+    iget v1, v1, Lcom/android/server/wm/zta/zta$zta;->value:F
+
+    iget-object v4, p0, Lcom/android/server/wm/zta/zta;->mDy:Lcom/android/server/wm/zta/zta$zta;
+
+    iget v4, v4, Lcom/android/server/wm/zta/zta$zta;->value:F
+
+    invoke-virtual {v0, v1, v4}, Landroid/graphics/RectF;->offset(FF)V
+
+    iget-object v0, p0, Lcom/android/server/wm/zta/zta;->Bb:Landroid/graphics/RectF;
+
+    iget-object v1, p0, Lcom/android/server/wm/zta/zta;->Db:Lcom/android/server/wm/zta/zta$zta;
+
+    iget v1, v1, Lcom/android/server/wm/zta/zta$zta;->value:F
+
+    invoke-direct {p0, v0, v1}, Lcom/android/server/wm/zta/zta;->zta(Landroid/graphics/RectF;F)V
+
+    iget-object v0, p0, Lcom/android/server/wm/zta/zta;->Bb:Landroid/graphics/RectF;
+
+    iget v1, v0, Landroid/graphics/RectF;->left:F
+
+    sub-float/2addr v1, v2
+
+    iput v1, p0, Lcom/android/server/wm/zta/zta;->Gb:F
+
+    iget v0, v0, Landroid/graphics/RectF;->top:F
+
+    sub-float/2addr v0, v3
+
+    iput v0, p0, Lcom/android/server/wm/zta/zta;->Hb:F
 
     return-void
 .end method
@@ -407,7 +407,7 @@
 
     move-object/from16 v7, p0
 
-    iget-object v0, v7, Lcom/android/server/wm/zta/zta;->zb:Landroid/graphics/Rect;
+    iget-object v0, v7, Lcom/android/server/wm/zta/zta;->Ab:Landroid/graphics/Rect;
 
     invoke-virtual {v0}, Landroid/graphics/Rect;->height()I
 
@@ -415,7 +415,7 @@
 
     int-to-float v0, v0
 
-    iget-object v1, v7, Lcom/android/server/wm/zta/zta;->yb:Landroid/graphics/Rect;
+    iget-object v1, v7, Lcom/android/server/wm/zta/zta;->zb:Landroid/graphics/Rect;
 
     invoke-virtual {v1}, Landroid/graphics/Rect;->width()I
 
@@ -425,7 +425,7 @@
 
     div-float/2addr v0, v1
 
-    iget-object v1, v7, Lcom/android/server/wm/zta/zta;->zb:Landroid/graphics/Rect;
+    iget-object v1, v7, Lcom/android/server/wm/zta/zta;->Ab:Landroid/graphics/Rect;
 
     invoke-virtual {v1}, Landroid/graphics/Rect;->height()I
 
@@ -433,7 +433,7 @@
 
     int-to-float v1, v1
 
-    iget-object v2, v7, Lcom/android/server/wm/zta/zta;->yb:Landroid/graphics/Rect;
+    iget-object v2, v7, Lcom/android/server/wm/zta/zta;->zb:Landroid/graphics/Rect;
 
     invoke-virtual {v2}, Landroid/graphics/Rect;->height()I
 
@@ -447,7 +447,7 @@
 
     move-result v8
 
-    iget-object v0, v7, Lcom/android/server/wm/zta/zta;->zb:Landroid/graphics/Rect;
+    iget-object v0, v7, Lcom/android/server/wm/zta/zta;->Ab:Landroid/graphics/Rect;
 
     invoke-virtual {v0}, Landroid/graphics/Rect;->centerX()I
 
@@ -455,7 +455,7 @@
 
     int-to-float v0, v0
 
-    iget-object v1, v7, Lcom/android/server/wm/zta/zta;->zb:Landroid/graphics/Rect;
+    iget-object v1, v7, Lcom/android/server/wm/zta/zta;->Ab:Landroid/graphics/Rect;
 
     invoke-virtual {v1}, Landroid/graphics/Rect;->centerY()I
 
@@ -463,7 +463,7 @@
 
     int-to-float v1, v1
 
-    iget-object v2, v7, Lcom/android/server/wm/zta/zta;->yb:Landroid/graphics/Rect;
+    iget-object v2, v7, Lcom/android/server/wm/zta/zta;->zb:Landroid/graphics/Rect;
 
     invoke-virtual {v2}, Landroid/graphics/Rect;->centerX()I
 
@@ -473,7 +473,7 @@
 
     sub-float v3, v0, v2
 
-    iget-object v2, v7, Lcom/android/server/wm/zta/zta;->yb:Landroid/graphics/Rect;
+    iget-object v2, v7, Lcom/android/server/wm/zta/zta;->zb:Landroid/graphics/Rect;
 
     invoke-virtual {v2}, Landroid/graphics/Rect;->centerY()I
 
@@ -483,7 +483,7 @@
 
     sub-float v9, v1, v2
 
-    iget-object v1, v7, Lcom/android/server/wm/zta/zta;->yb:Landroid/graphics/Rect;
+    iget-object v1, v7, Lcom/android/server/wm/zta/zta;->zb:Landroid/graphics/Rect;
 
     iget v1, v1, Landroid/graphics/Rect;->left:I
 
@@ -509,7 +509,7 @@
 
     mul-float v5, v0, p1
 
-    sget-object v6, Lcom/android/server/wm/zta/zta;->Jb:Landroid/view/animation/Interpolator;
+    sget-object v6, Lcom/android/server/wm/zta/zta;->Kb:Landroid/view/animation/Interpolator;
 
     move-object v0, v15
 
@@ -525,7 +525,7 @@
 
     mul-float v5, v0, p1
 
-    sget-object v6, Lcom/android/server/wm/zta/zta;->Jb:Landroid/view/animation/Interpolator;
+    sget-object v6, Lcom/android/server/wm/zta/zta;->Kb:Landroid/view/animation/Interpolator;
 
     move-object v0, v15
 
@@ -541,7 +541,7 @@
 
     mul-float v5, p1, v0
 
-    sget-object v6, Lcom/android/server/wm/zta/zta;->Kb:Landroid/view/animation/Interpolator;
+    sget-object v6, Lcom/android/server/wm/zta/zta;->Lb:Landroid/view/animation/Interpolator;
 
     const/high16 v2, 0x3f800000    # 1.0f
 
@@ -551,7 +551,7 @@
 
     invoke-direct/range {v0 .. v6}, Lcom/android/server/wm/zta/zta$zta;-><init>(Lcom/android/server/wm/zta/zta;FFFFLandroid/view/animation/Interpolator;)V
 
-    iput-object v9, v7, Lcom/android/server/wm/zta/zta;->Cb:Lcom/android/server/wm/zta/zta$zta;
+    iput-object v9, v7, Lcom/android/server/wm/zta/zta;->Db:Lcom/android/server/wm/zta/zta$zta;
 
     new-instance v8, Lcom/android/server/wm/zta/zta$zta;
 
@@ -569,11 +569,11 @@
 
     invoke-direct/range {v0 .. v6}, Lcom/android/server/wm/zta/zta$zta;-><init>(Lcom/android/server/wm/zta/zta;FFFFLandroid/view/animation/Interpolator;)V
 
-    iput-object v8, v7, Lcom/android/server/wm/zta/zta;->Db:Lcom/android/server/wm/zta/zta$zta;
+    iput-object v8, v7, Lcom/android/server/wm/zta/zta;->Eb:Lcom/android/server/wm/zta/zta$zta;
 
     new-instance v8, Lcom/android/server/wm/zta/zta$zta;
 
-    iget-object v0, v7, Lcom/android/server/wm/zta/zta;->zb:Landroid/graphics/Rect;
+    iget-object v0, v7, Lcom/android/server/wm/zta/zta;->Ab:Landroid/graphics/Rect;
 
     invoke-virtual {v0}, Landroid/graphics/Rect;->height()I
 
@@ -581,7 +581,7 @@
 
     int-to-float v2, v0
 
-    iget-object v0, v7, Lcom/android/server/wm/zta/zta;->zb:Landroid/graphics/Rect;
+    iget-object v0, v7, Lcom/android/server/wm/zta/zta;->Ab:Landroid/graphics/Rect;
 
     invoke-virtual {v0}, Landroid/graphics/Rect;->width()I
 
@@ -593,41 +593,41 @@
 
     mul-float v5, p1, v14
 
-    sget-object v6, Lcom/android/server/wm/zta/zta;->Jb:Landroid/view/animation/Interpolator;
+    sget-object v6, Lcom/android/server/wm/zta/zta;->Kb:Landroid/view/animation/Interpolator;
 
     move-object v0, v8
 
     invoke-direct/range {v0 .. v6}, Lcom/android/server/wm/zta/zta$zta;-><init>(Lcom/android/server/wm/zta/zta;FFFFLandroid/view/animation/Interpolator;)V
 
-    iput-object v8, v7, Lcom/android/server/wm/zta/zta;->Eb:Lcom/android/server/wm/zta/zta$zta;
+    iput-object v8, v7, Lcom/android/server/wm/zta/zta;->Fb:Lcom/android/server/wm/zta/zta$zta;
 
-    iget-object v0, v7, Lcom/android/server/wm/zta/zta;->Bb:Ljava/util/ArrayList;
+    iget-object v0, v7, Lcom/android/server/wm/zta/zta;->Cb:Ljava/util/ArrayList;
 
     iget-object v1, v7, Lcom/android/server/wm/zta/zta;->mDx:Lcom/android/server/wm/zta/zta$zta;
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    iget-object v0, v7, Lcom/android/server/wm/zta/zta;->Bb:Ljava/util/ArrayList;
+    iget-object v0, v7, Lcom/android/server/wm/zta/zta;->Cb:Ljava/util/ArrayList;
 
     iget-object v1, v7, Lcom/android/server/wm/zta/zta;->mDy:Lcom/android/server/wm/zta/zta$zta;
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    iget-object v0, v7, Lcom/android/server/wm/zta/zta;->Bb:Ljava/util/ArrayList;
-
-    iget-object v1, v7, Lcom/android/server/wm/zta/zta;->Cb:Lcom/android/server/wm/zta/zta$zta;
-
-    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    iget-object v0, v7, Lcom/android/server/wm/zta/zta;->Bb:Ljava/util/ArrayList;
+    iget-object v0, v7, Lcom/android/server/wm/zta/zta;->Cb:Ljava/util/ArrayList;
 
     iget-object v1, v7, Lcom/android/server/wm/zta/zta;->Db:Lcom/android/server/wm/zta/zta$zta;
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    iget-object v0, v7, Lcom/android/server/wm/zta/zta;->Bb:Ljava/util/ArrayList;
+    iget-object v0, v7, Lcom/android/server/wm/zta/zta;->Cb:Ljava/util/ArrayList;
 
     iget-object v1, v7, Lcom/android/server/wm/zta/zta;->Eb:Lcom/android/server/wm/zta/zta$zta;
+
+    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    iget-object v0, v7, Lcom/android/server/wm/zta/zta;->Cb:Ljava/util/ArrayList;
+
+    iget-object v1, v7, Lcom/android/server/wm/zta/zta;->Fb:Lcom/android/server/wm/zta/zta$zta;
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
@@ -704,13 +704,13 @@
 
     move-result-object p1
 
-    iget v0, p0, Lcom/android/server/wm/zta/zta;->Fb:F
+    iget v0, p0, Lcom/android/server/wm/zta/zta;->Gb:F
 
-    iget v1, p0, Lcom/android/server/wm/zta/zta;->Gb:F
+    iget v1, p0, Lcom/android/server/wm/zta/zta;->Hb:F
 
     invoke-virtual {p1, v0, v1}, Landroid/graphics/Matrix;->postTranslate(FF)Z
 
-    iget-object p1, p0, Lcom/android/server/wm/zta/zta;->Db:Lcom/android/server/wm/zta/zta$zta;
+    iget-object p1, p0, Lcom/android/server/wm/zta/zta;->Eb:Lcom/android/server/wm/zta/zta$zta;
 
     iget p1, p1, Lcom/android/server/wm/zta/zta$zta;->value:F
 
@@ -740,7 +740,7 @@
 
     invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget p2, p0, Lcom/android/server/wm/zta/zta;->Fb:F
+    iget p2, p0, Lcom/android/server/wm/zta/zta;->Gb:F
 
     invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
 
@@ -748,7 +748,7 @@
 
     invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget p2, p0, Lcom/android/server/wm/zta/zta;->Gb:F
+    iget p2, p0, Lcom/android/server/wm/zta/zta;->Hb:F
 
     invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
 
@@ -756,7 +756,7 @@
 
     invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object p2, p0, Lcom/android/server/wm/zta/zta;->Db:Lcom/android/server/wm/zta/zta$zta;
+    iget-object p2, p0, Lcom/android/server/wm/zta/zta;->Eb:Lcom/android/server/wm/zta/zta$zta;
 
     iget p2, p2, Lcom/android/server/wm/zta/zta$zta;->value:F
 
@@ -776,7 +776,7 @@
 
     invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object p0, p0, Lcom/android/server/wm/zta/zta;->yb:Landroid/graphics/Rect;
+    iget-object p0, p0, Lcom/android/server/wm/zta/zta;->zb:Landroid/graphics/Rect;
 
     invoke-virtual {p1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 

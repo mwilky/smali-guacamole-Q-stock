@@ -17,13 +17,13 @@
 # instance fields
 .field private digest:I
 
-.field private gpa:Z
-
 .field private ivSize:I
 
 .field private keySize:I
 
 .field private scheme:I
+
+.field private ura:Z
 
 
 # direct methods
@@ -32,7 +32,7 @@
 
     invoke-direct {p0, p1, p2}, Lorg/bouncycastle/jcajce/provider/symmetric/util/ssp;-><init>(Ljava/lang/String;Lorg/bouncycastle/asn1/bvj;)V
 
-    iput-boolean p3, p0, Lorg/bouncycastle/jcajce/you/tsu/rtg$rtg;->gpa:Z
+    iput-boolean p3, p0, Lorg/bouncycastle/jcajce/you/tsu/rtg$rtg;->ura:Z
 
     iput p4, p0, Lorg/bouncycastle/jcajce/you/tsu/rtg$rtg;->scheme:I
 
@@ -71,9 +71,9 @@
 
     new-instance p1, Lorg/bouncycastle/jcajce/provider/symmetric/util/BCPBEKey;
 
-    iget-object v2, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/ssp;->apa:Ljava/lang/String;
+    iget-object v2, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/ssp;->ora:Ljava/lang/String;
 
-    iget-object v3, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/ssp;->fpa:Lorg/bouncycastle/asn1/bvj;
+    iget-object v3, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/ssp;->tra:Lorg/bouncycastle/asn1/bvj;
 
     iget v4, p0, Lorg/bouncycastle/jcajce/you/tsu/rtg$rtg;->scheme:I
 
@@ -92,7 +92,7 @@
     return-object p1
 
     :cond_0
-    iget-boolean p1, p0, Lorg/bouncycastle/jcajce/you/tsu/rtg$rtg;->gpa:Z
+    iget-boolean p1, p0, Lorg/bouncycastle/jcajce/you/tsu/rtg$rtg;->ura:Z
 
     if-eqz p1, :cond_1
 
@@ -154,9 +154,9 @@
 
     new-instance p1, Lorg/bouncycastle/jcajce/provider/symmetric/util/BCPBEKey;
 
-    iget-object v2, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/ssp;->apa:Ljava/lang/String;
+    iget-object v2, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/ssp;->ora:Ljava/lang/String;
 
-    iget-object v3, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/ssp;->fpa:Lorg/bouncycastle/asn1/bvj;
+    iget-object v3, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/ssp;->tra:Lorg/bouncycastle/asn1/bvj;
 
     iget v4, p0, Lorg/bouncycastle/jcajce/you/tsu/rtg$rtg;->scheme:I
 

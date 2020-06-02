@@ -110,14 +110,6 @@
 
 
 # virtual methods
-.method public _e()Ljava/lang/String;
-    .locals 0
-
-    const-string p0, "share"
-
-    return-object p0
-.end method
-
 .method public dump(Ljava/io/PrintWriter;)V
     .locals 4
 
@@ -208,7 +200,15 @@
     throw p0
 .end method
 
-.method public la(Ljava/lang/String;)Landroid/content/pm/PackageInfo;
+.method public if()Ljava/lang/String;
+    .locals 0
+
+    const-string p0, "share"
+
+    return-object p0
+.end method
+
+.method public na(Ljava/lang/String;)Landroid/content/pm/PackageInfo;
     .locals 2
 
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
@@ -253,7 +253,7 @@
     throw p0
 .end method
 
-.method public ma(Ljava/lang/String;)Z
+.method public oa(Ljava/lang/String;)Z
     .locals 3
 
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
@@ -321,7 +321,7 @@
 
     check-cast p1, Ljava/lang/String;
 
-    invoke-virtual {p0, p1}, Lcom/oneplus/android/server/heytapbusiness/zta/you/you;->la(Ljava/lang/String;)Landroid/content/pm/PackageInfo;
+    invoke-virtual {p0, p1}, Lcom/oneplus/android/server/heytapbusiness/zta/you/you;->na(Ljava/lang/String;)Landroid/content/pm/PackageInfo;
 
     move-result-object p0
 
@@ -333,7 +333,7 @@
 
     check-cast p1, Ljava/lang/String;
 
-    invoke-virtual {p0, p1}, Lcom/oneplus/android/server/heytapbusiness/zta/you/you;->ma(Ljava/lang/String;)Z
+    invoke-virtual {p0, p1}, Lcom/oneplus/android/server/heytapbusiness/zta/you/you;->oa(Ljava/lang/String;)Z
 
     move-result p0
 

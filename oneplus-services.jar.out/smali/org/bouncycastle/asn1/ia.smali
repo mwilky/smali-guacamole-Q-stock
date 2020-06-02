@@ -12,7 +12,7 @@
     return-void
 .end method
 
-.method static ea(I)I
+.method static ha(I)I
     .locals 2
 
     const/4 v0, 0x1
@@ -50,7 +50,7 @@
     return v0
 .end method
 
-.method static fa(I)I
+.method static ia(I)I
     .locals 5
     .annotation system Ldalvik/annotation/Throws;
         value = {

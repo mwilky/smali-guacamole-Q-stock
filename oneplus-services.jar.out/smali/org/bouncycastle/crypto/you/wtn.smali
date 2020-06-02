@@ -20,9 +20,9 @@
 
 
 # instance fields
-.field private final delegate:Ljava/security/MessageDigest;
+.field private final DAa:I
 
-.field private final pya:I
+.field private final delegate:Ljava/security/MessageDigest;
 
 
 # direct methods
@@ -40,7 +40,7 @@
 
     iput-object p1, p0, Lorg/bouncycastle/crypto/you/wtn;->delegate:Ljava/security/MessageDigest;
 
-    iput p2, p0, Lorg/bouncycastle/crypto/you/wtn;->pya:I
+    iput p2, p0, Lorg/bouncycastle/crypto/you/wtn;->DAa:I
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -89,7 +89,7 @@
 .method public getByteLength()I
     .locals 0
 
-    iget p0, p0, Lorg/bouncycastle/crypto/you/wtn;->pya:I
+    iget p0, p0, Lorg/bouncycastle/crypto/you/wtn;->DAa:I
 
     return p0
 .end method

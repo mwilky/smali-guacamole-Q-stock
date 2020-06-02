@@ -110,7 +110,7 @@
 
     const/4 v0, 0x0
 
-    if-eqz p1, :cond_3
+    if-eqz p1, :cond_2
 
     iget-object p1, p0, Lcom/android/server/wm/OpScreenCompat$you;->igw:Landroid/net/Uri;
 
@@ -118,29 +118,8 @@
 
     move-result p1
 
-    if-eqz p1, :cond_3
+    if-eqz p1, :cond_2
 
-    iget-object p1, p0, Lcom/android/server/wm/OpScreenCompat$you;->this$0:Lcom/android/server/wm/OpScreenCompat;
-
-    invoke-static {p1}, Lcom/android/server/wm/OpScreenCompat;->access$000(Lcom/android/server/wm/OpScreenCompat;)Landroid/content/Context;
-
-    move-result-object p1
-
-    invoke-virtual {p1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
-
-    move-result-object p1
-
-    const-string p2, "op_camera_notch_ignore"
-
-    invoke-static {p1, p2, v0}, Landroid/provider/Settings$System;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
-
-    move-result p1
-
-    if-eqz p1, :cond_1
-
-    const/4 v0, 0x1
-
-    :cond_1
     invoke-static {v0}, Lcom/android/server/wm/OpScreenCompat;->access$202(Z)Z
 
     new-instance p1, Ljava/lang/StringBuilder;
@@ -186,7 +165,7 @@
 
     move-result-object p2
 
-    if-eqz p2, :cond_2
+    if-eqz p2, :cond_1
 
     iget-object p0, p0, Lcom/android/server/wm/OpScreenCompat$you;->this$0:Lcom/android/server/wm/OpScreenCompat;
 
@@ -196,7 +175,7 @@
 
     invoke-virtual {p0, p2}, Lcom/android/server/wm/WindowManagerService;->reconfigureDisplayLocked(Lcom/android/server/wm/DisplayContent;)V
 
-    :cond_2
+    :cond_1
     monitor-exit p1
 
     return-void
@@ -210,12 +189,12 @@
 
     throw p0
 
-    :cond_3
+    :cond_2
     invoke-static {}, Lcom/android/server/wm/OpScreenCompat;->access$100()Z
 
     move-result p1
 
-    if-eqz p1, :cond_4
+    if-eqz p1, :cond_3
 
     iget-object p1, p0, Lcom/android/server/wm/OpScreenCompat$you;->wtn:Landroid/net/Uri;
 
@@ -223,7 +202,7 @@
 
     move-result p1
 
-    if-eqz p1, :cond_4
+    if-eqz p1, :cond_3
 
     iget-object p1, p0, Lcom/android/server/wm/OpScreenCompat$you;->this$0:Lcom/android/server/wm/OpScreenCompat;
 
@@ -243,12 +222,12 @@
 
     invoke-static {p1, v1}, Lcom/android/server/wm/OpScreenCompat;->access$402(Lcom/android/server/wm/OpScreenCompat;I)I
 
-    :cond_4
+    :cond_3
     invoke-static {}, Lcom/android/server/wm/OpScreenCompat;->access$100()Z
 
     move-result p1
 
-    if-eqz p1, :cond_5
+    if-eqz p1, :cond_4
 
     iget-object p1, p0, Lcom/android/server/wm/OpScreenCompat$you;->gck:Landroid/net/Uri;
 
@@ -256,7 +235,7 @@
 
     move-result p1
 
-    if-eqz p1, :cond_5
+    if-eqz p1, :cond_4
 
     iget-object p0, p0, Lcom/android/server/wm/OpScreenCompat$you;->this$0:Lcom/android/server/wm/OpScreenCompat;
 
@@ -276,6 +255,6 @@
 
     invoke-static {p0, p1}, Lcom/android/server/wm/OpScreenCompat;->access$502(Lcom/android/server/wm/OpScreenCompat;I)I
 
-    :cond_5
+    :cond_4
     return-void
 .end method

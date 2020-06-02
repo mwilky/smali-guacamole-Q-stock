@@ -18,11 +18,11 @@
 
 
 # instance fields
-.field private final Zh:Lcom/android/server/am/IEmbryoManager;
-
-.field private _h:Lcom/android/server/am/oif;
-
 .field private target:Lcom/android/server/am/IEmbryoManager;
+
+.field private final xi:Lcom/android/server/am/IEmbryoManager;
+
+.field private yi:Lcom/android/server/am/oif;
 
 
 # direct methods
@@ -37,7 +37,7 @@
 
     invoke-direct {v0, v1}, Lcom/android/server/am/oif$sis;-><init>(Lcom/android/server/am/ywr;)V
 
-    iput-object v0, p0, Lcom/android/server/am/oif$you;->Zh:Lcom/android/server/am/IEmbryoManager;
+    iput-object v0, p0, Lcom/android/server/am/oif$you;->xi:Lcom/android/server/am/IEmbryoManager;
 
     invoke-static {}, Lcom/android/server/am/oif;->access$700()Z
 
@@ -55,14 +55,14 @@
 
     invoke-direct {v0, v1}, Lcom/android/server/am/oif;-><init>(Lcom/android/server/am/ywr;)V
 
-    iput-object v0, p0, Lcom/android/server/am/oif$you;->_h:Lcom/android/server/am/oif;
+    iput-object v0, p0, Lcom/android/server/am/oif$you;->yi:Lcom/android/server/am/oif;
 
-    iget-object v0, p0, Lcom/android/server/am/oif$you;->_h:Lcom/android/server/am/oif;
+    iget-object v0, p0, Lcom/android/server/am/oif$you;->yi:Lcom/android/server/am/oif;
 
     goto :goto_0
 
     :cond_0
-    iget-object v0, p0, Lcom/android/server/am/oif$you;->Zh:Lcom/android/server/am/IEmbryoManager;
+    iget-object v0, p0, Lcom/android/server/am/oif$you;->xi:Lcom/android/server/am/IEmbryoManager;
 
     :goto_0
     iput-object v0, p0, Lcom/android/server/am/oif$you;->target:Lcom/android/server/am/IEmbryoManager;
@@ -396,7 +396,7 @@
     if-eqz p1, :cond_0
 
     :try_start_0
-    iget-object p1, p0, Lcom/android/server/am/oif$you;->Zh:Lcom/android/server/am/IEmbryoManager;
+    iget-object p1, p0, Lcom/android/server/am/oif$you;->xi:Lcom/android/server/am/IEmbryoManager;
 
     :goto_0
     iput-object p1, p0, Lcom/android/server/am/oif$you;->target:Lcom/android/server/am/IEmbryoManager;
@@ -404,24 +404,24 @@
     goto :goto_1
 
     :cond_0
-    iget-object p1, p0, Lcom/android/server/am/oif$you;->_h:Lcom/android/server/am/oif;
+    iget-object p1, p0, Lcom/android/server/am/oif$you;->yi:Lcom/android/server/am/oif;
 
     if-eqz p1, :cond_1
 
-    iget-object p1, p0, Lcom/android/server/am/oif$you;->_h:Lcom/android/server/am/oif;
+    iget-object p1, p0, Lcom/android/server/am/oif$you;->yi:Lcom/android/server/am/oif;
 
     invoke-virtual {p1}, Lcom/android/server/am/oif;->shutdown()V
 
-    iget-object p1, p0, Lcom/android/server/am/oif$you;->_h:Lcom/android/server/am/oif;
+    iget-object p1, p0, Lcom/android/server/am/oif$you;->yi:Lcom/android/server/am/oif;
 
     invoke-virtual {p1}, Lcom/android/server/am/oif;->cleanup()V
 
     const/4 p1, 0x0
 
-    iput-object p1, p0, Lcom/android/server/am/oif$you;->_h:Lcom/android/server/am/oif;
+    iput-object p1, p0, Lcom/android/server/am/oif$you;->yi:Lcom/android/server/am/oif;
 
     :cond_1
-    iget-object p1, p0, Lcom/android/server/am/oif$you;->Zh:Lcom/android/server/am/IEmbryoManager;
+    iget-object p1, p0, Lcom/android/server/am/oif$you;->xi:Lcom/android/server/am/IEmbryoManager;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 

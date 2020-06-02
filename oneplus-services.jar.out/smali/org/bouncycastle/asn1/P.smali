@@ -7,7 +7,7 @@
 
 
 # static fields
-.field private static final Lma:[C
+.field private static final _oa:[C
 
 
 # instance fields
@@ -24,7 +24,7 @@
 
     fill-array-data v0, :array_0
 
-    sput-object v0, Lorg/bouncycastle/asn1/P;->Lma:[C
+    sput-object v0, Lorg/bouncycastle/asn1/P;->_oa:[C
 
     return-void
 
@@ -194,6 +194,28 @@
 
 
 # virtual methods
+.method Dg()I
+    .locals 1
+
+    iget-object v0, p0, Lorg/bouncycastle/asn1/P;->string:[B
+
+    array-length v0, v0
+
+    invoke-static {v0}, Lorg/bouncycastle/asn1/ia;->ha(I)I
+
+    move-result v0
+
+    add-int/lit8 v0, v0, 0x1
+
+    iget-object p0, p0, Lorg/bouncycastle/asn1/P;->string:[B
+
+    array-length p0, p0
+
+    add-int/2addr v0, p0
+
+    return v0
+.end method
+
 .method public getOctets()[B
     .locals 0
 
@@ -239,7 +261,7 @@
 
     if-eq v1, v2, :cond_0
 
-    sget-object v2, Lorg/bouncycastle/asn1/P;->Lma:[C
+    sget-object v2, Lorg/bouncycastle/asn1/P;->_oa:[C
 
     aget-byte v3, p0, v1
 
@@ -251,7 +273,7 @@
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuffer;->append(C)Ljava/lang/StringBuffer;
 
-    sget-object v2, Lorg/bouncycastle/asn1/P;->Lma:[C
+    sget-object v2, Lorg/bouncycastle/asn1/P;->_oa:[C
 
     aget-byte v3, p0, v1
 
@@ -310,28 +332,6 @@
     move-result-object p0
 
     return-object p0
-.end method
-
-.method ug()I
-    .locals 1
-
-    iget-object v0, p0, Lorg/bouncycastle/asn1/P;->string:[B
-
-    array-length v0, v0
-
-    invoke-static {v0}, Lorg/bouncycastle/asn1/ia;->ea(I)I
-
-    move-result v0
-
-    add-int/lit8 v0, v0, 0x1
-
-    iget-object p0, p0, Lorg/bouncycastle/asn1/P;->string:[B
-
-    array-length p0, p0
-
-    add-int/2addr v0, p0
-
-    return v0
 .end method
 
 .method zta(Lorg/bouncycastle/asn1/ugm;)V

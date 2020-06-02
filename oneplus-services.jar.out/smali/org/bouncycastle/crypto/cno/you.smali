@@ -20,7 +20,7 @@
 
 
 # virtual methods
-.method public Kf()[B
+.method public Tf()[B
     .locals 2
 
     iget-object v0, p0, Lorg/bouncycastle/crypto/cno/you;->digest:Lorg/bouncycastle/crypto/qbh;

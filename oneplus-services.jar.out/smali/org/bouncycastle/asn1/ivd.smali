@@ -4,13 +4,13 @@
 
 
 # static fields
-.field private static final aqa:I = 0x3e8
+.field private static final osa:I = 0x3e8
 
 
 # instance fields
-.field private final _pa:[Lorg/bouncycastle/asn1/ibl;
-
 .field private final chunkSize:I
+
+.field private final nsa:[Lorg/bouncycastle/asn1/ibl;
 
 
 # direct methods
@@ -39,7 +39,7 @@
 
     invoke-direct {p0, p1}, Lorg/bouncycastle/asn1/ibl;-><init>([B)V
 
-    iput-object p2, p0, Lorg/bouncycastle/asn1/ivd;->_pa:[Lorg/bouncycastle/asn1/ibl;
+    iput-object p2, p0, Lorg/bouncycastle/asn1/ivd;->nsa:[Lorg/bouncycastle/asn1/ibl;
 
     iput p3, p0, Lorg/bouncycastle/asn1/ivd;->chunkSize:I
 
@@ -68,7 +68,7 @@
     return-void
 .end method
 
-.method private jt()Ljava/util/Vector;
+.method private It()Ljava/util/Vector;
     .locals 7
 
     new-instance v0, Ljava/util/Vector;
@@ -137,7 +137,7 @@
 
     new-array v0, v0, [Lorg/bouncycastle/asn1/ibl;
 
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/obl;->Jg()Ljava/util/Enumeration;
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/obl;->Sg()Ljava/util/Enumeration;
 
     move-result-object p0
 
@@ -273,21 +273,68 @@
 .method static synthetic zta(Lorg/bouncycastle/asn1/ivd;)[Lorg/bouncycastle/asn1/ibl;
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/asn1/ivd;->_pa:[Lorg/bouncycastle/asn1/ibl;
+    iget-object p0, p0, Lorg/bouncycastle/asn1/ivd;->nsa:[Lorg/bouncycastle/asn1/ibl;
 
     return-object p0
 .end method
 
 
 # virtual methods
-.method public Jg()Ljava/util/Enumeration;
+.method Dg()I
+    .locals 2
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/ivd;->Sg()Ljava/util/Enumeration;
+
+    move-result-object p0
+
+    const/4 v0, 0x0
+
+    :goto_0
+    invoke-interface {p0}, Ljava/util/Enumeration;->hasMoreElements()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_0
+
+    invoke-interface {p0}, Ljava/util/Enumeration;->nextElement()Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Lorg/bouncycastle/asn1/ssp;
+
+    invoke-interface {v1}, Lorg/bouncycastle/asn1/ssp;->toASN1Primitive()Lorg/bouncycastle/asn1/vdb;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Lorg/bouncycastle/asn1/vdb;->Dg()I
+
+    move-result v1
+
+    add-int/2addr v0, v1
+
+    goto :goto_0
+
+    :cond_0
+    add-int/lit8 v0, v0, 0x2
+
+    add-int/lit8 v0, v0, 0x2
+
+    return v0
+.end method
+
+.method public Sg()Ljava/util/Enumeration;
     .locals 1
 
-    iget-object v0, p0, Lorg/bouncycastle/asn1/ivd;->_pa:[Lorg/bouncycastle/asn1/ibl;
+    iget-object v0, p0, Lorg/bouncycastle/asn1/ivd;->nsa:[Lorg/bouncycastle/asn1/ibl;
 
     if-nez v0, :cond_0
 
-    invoke-direct {p0}, Lorg/bouncycastle/asn1/ivd;->jt()Ljava/util/Vector;
+    invoke-direct {p0}, Lorg/bouncycastle/asn1/ivd;->It()Ljava/util/Vector;
 
     move-result-object p0
 
@@ -321,53 +368,6 @@
     return p0
 .end method
 
-.method ug()I
-    .locals 2
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
-
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/ivd;->Jg()Ljava/util/Enumeration;
-
-    move-result-object p0
-
-    const/4 v0, 0x0
-
-    :goto_0
-    invoke-interface {p0}, Ljava/util/Enumeration;->hasMoreElements()Z
-
-    move-result v1
-
-    if-eqz v1, :cond_0
-
-    invoke-interface {p0}, Ljava/util/Enumeration;->nextElement()Ljava/lang/Object;
-
-    move-result-object v1
-
-    check-cast v1, Lorg/bouncycastle/asn1/ssp;
-
-    invoke-interface {v1}, Lorg/bouncycastle/asn1/ssp;->toASN1Primitive()Lorg/bouncycastle/asn1/vdb;
-
-    move-result-object v1
-
-    invoke-virtual {v1}, Lorg/bouncycastle/asn1/vdb;->ug()I
-
-    move-result v1
-
-    add-int/2addr v0, v1
-
-    goto :goto_0
-
-    :cond_0
-    add-int/lit8 v0, v0, 0x2
-
-    add-int/lit8 v0, v0, 0x2
-
-    return v0
-.end method
-
 .method public zta(Lorg/bouncycastle/asn1/ugm;)V
     .locals 1
     .annotation system Ldalvik/annotation/Throws;
@@ -384,7 +384,7 @@
 
     invoke-virtual {p1, v0}, Lorg/bouncycastle/asn1/ugm;->write(I)V
 
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/ivd;->Jg()Ljava/util/Enumeration;
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/ivd;->Sg()Ljava/util/Enumeration;
 
     move-result-object p0
 

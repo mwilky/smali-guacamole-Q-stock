@@ -4,7 +4,9 @@
 
 
 # static fields
-.field static final Xva:Ljava/util/Hashtable;
+.field static final Dxa:Ljava/util/Hashtable;
+
+.field static final Iua:Ljava/util/Hashtable;
 
 .field static c2pnb163v1:Lorg/bouncycastle/asn1/ibl/bud;
 
@@ -38,6 +40,8 @@
 
 .field static c2tnb431r1:Lorg/bouncycastle/asn1/ibl/bud;
 
+.field static final kya:Ljava/util/Hashtable;
+
 .field static prime192v1:Lorg/bouncycastle/asn1/ibl/bud;
 
 .field static prime192v2:Lorg/bouncycastle/asn1/ibl/bud;
@@ -51,10 +55,6 @@
 .field static prime239v3:Lorg/bouncycastle/asn1/ibl/bud;
 
 .field static prime256v1:Lorg/bouncycastle/asn1/ibl/bud;
-
-.field static final pva:Ljava/util/Hashtable;
-
-.field static final tsa:Ljava/util/Hashtable;
 
 
 # direct methods
@@ -203,19 +203,19 @@
 
     invoke-direct {v0}, Ljava/util/Hashtable;-><init>()V
 
-    sput-object v0, Lorg/bouncycastle/asn1/ibl/lqr;->pva:Ljava/util/Hashtable;
+    sput-object v0, Lorg/bouncycastle/asn1/ibl/lqr;->Dxa:Ljava/util/Hashtable;
 
     new-instance v0, Ljava/util/Hashtable;
 
     invoke-direct {v0}, Ljava/util/Hashtable;-><init>()V
 
-    sput-object v0, Lorg/bouncycastle/asn1/ibl/lqr;->Xva:Ljava/util/Hashtable;
+    sput-object v0, Lorg/bouncycastle/asn1/ibl/lqr;->kya:Ljava/util/Hashtable;
 
     new-instance v0, Ljava/util/Hashtable;
 
     invoke-direct {v0}, Ljava/util/Hashtable;-><init>()V
 
-    sput-object v0, Lorg/bouncycastle/asn1/ibl/lqr;->tsa:Ljava/util/Hashtable;
+    sput-object v0, Lorg/bouncycastle/asn1/ibl/lqr;->Iua:Ljava/util/Hashtable;
 
     sget-object v0, Lorg/bouncycastle/asn1/ibl/ivd;->prime192v1:Lorg/bouncycastle/asn1/bvj;
 
@@ -412,10 +412,10 @@
     return-void
 .end method
 
-.method public static Da(Ljava/lang/String;)Lorg/bouncycastle/asn1/bvj;
+.method public static Fa(Ljava/lang/String;)Lorg/bouncycastle/asn1/bvj;
     .locals 1
 
-    sget-object v0, Lorg/bouncycastle/asn1/ibl/lqr;->pva:Ljava/util/Hashtable;
+    sget-object v0, Lorg/bouncycastle/asn1/ibl/lqr;->Dxa:Ljava/util/Hashtable;
 
     invoke-static {p0}, Lorg/bouncycastle/util/Strings;->toLowerCase(Ljava/lang/String;)Ljava/lang/String;
 
@@ -433,7 +433,7 @@
 .method public static dma(Lorg/bouncycastle/asn1/bvj;)Ljava/lang/String;
     .locals 1
 
-    sget-object v0, Lorg/bouncycastle/asn1/ibl/lqr;->tsa:Ljava/util/Hashtable;
+    sget-object v0, Lorg/bouncycastle/asn1/ibl/lqr;->Iua:Ljava/util/Hashtable;
 
     invoke-virtual {v0, p0}, Ljava/util/Hashtable;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -447,7 +447,7 @@
 .method public static gck(Lorg/bouncycastle/asn1/bvj;)Lorg/bouncycastle/asn1/ibl/vju;
     .locals 1
 
-    sget-object v0, Lorg/bouncycastle/asn1/ibl/lqr;->Xva:Ljava/util/Hashtable;
+    sget-object v0, Lorg/bouncycastle/asn1/ibl/lqr;->kya:Ljava/util/Hashtable;
 
     invoke-virtual {v0, p0}, Ljava/util/Hashtable;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -472,7 +472,7 @@
 .method public static getByName(Ljava/lang/String;)Lorg/bouncycastle/asn1/ibl/vju;
     .locals 1
 
-    sget-object v0, Lorg/bouncycastle/asn1/ibl/lqr;->pva:Ljava/util/Hashtable;
+    sget-object v0, Lorg/bouncycastle/asn1/ibl/lqr;->Dxa:Ljava/util/Hashtable;
 
     invoke-static {p0}, Lorg/bouncycastle/util/Strings;->toLowerCase(Ljava/lang/String;)Ljava/lang/String;
 
@@ -501,7 +501,7 @@
 .method public static getNames()Ljava/util/Enumeration;
     .locals 1
 
-    sget-object v0, Lorg/bouncycastle/asn1/ibl/lqr;->pva:Ljava/util/Hashtable;
+    sget-object v0, Lorg/bouncycastle/asn1/ibl/lqr;->Dxa:Ljava/util/Hashtable;
 
     invoke-virtual {v0}, Ljava/util/Hashtable;->keys()Ljava/util/Enumeration;
 
@@ -513,15 +513,15 @@
 .method static zta(Ljava/lang/String;Lorg/bouncycastle/asn1/bvj;Lorg/bouncycastle/asn1/ibl/bud;)V
     .locals 1
 
-    sget-object v0, Lorg/bouncycastle/asn1/ibl/lqr;->pva:Ljava/util/Hashtable;
+    sget-object v0, Lorg/bouncycastle/asn1/ibl/lqr;->Dxa:Ljava/util/Hashtable;
 
     invoke-virtual {v0, p0, p1}, Ljava/util/Hashtable;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    sget-object v0, Lorg/bouncycastle/asn1/ibl/lqr;->tsa:Ljava/util/Hashtable;
+    sget-object v0, Lorg/bouncycastle/asn1/ibl/lqr;->Iua:Ljava/util/Hashtable;
 
     invoke-virtual {v0, p1, p0}, Ljava/util/Hashtable;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    sget-object p0, Lorg/bouncycastle/asn1/ibl/lqr;->Xva:Ljava/util/Hashtable;
+    sget-object p0, Lorg/bouncycastle/asn1/ibl/lqr;->kya:Ljava/util/Hashtable;
 
     invoke-virtual {p0, p1, p2}, Ljava/util/Hashtable;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 

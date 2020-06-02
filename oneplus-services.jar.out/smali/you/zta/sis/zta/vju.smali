@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field public final qpa:Ljava/math/BigInteger;
+.field public final Era:Ljava/math/BigInteger;
 
-.field public final rxa:Ljava/math/BigInteger;
+.field public final Fza:Ljava/math/BigInteger;
 
 
 # direct methods
@@ -15,9 +15,9 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lyou/zta/sis/zta/vju;->rxa:Ljava/math/BigInteger;
+    iput-object p1, p0, Lyou/zta/sis/zta/vju;->Fza:Ljava/math/BigInteger;
 
-    iput-object p2, p0, Lyou/zta/sis/zta/vju;->qpa:Ljava/math/BigInteger;
+    iput-object p2, p0, Lyou/zta/sis/zta/vju;->Era:Ljava/math/BigInteger;
 
     return-void
 .end method

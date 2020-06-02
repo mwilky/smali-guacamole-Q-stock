@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field private digest:[B
+.field private Hpa:Lorg/bouncycastle/asn1/x509/zta;
 
-.field private sna:Lorg/bouncycastle/asn1/x509/zta;
+.field private digest:[B
 
 
 # direct methods
@@ -15,7 +15,7 @@
 
     invoke-direct {p0}, Lorg/bouncycastle/asn1/oif;-><init>()V
 
-    invoke-virtual {p1}, Lorg/bouncycastle/asn1/obl;->Jg()Ljava/util/Enumeration;
+    invoke-virtual {p1}, Lorg/bouncycastle/asn1/obl;->Sg()Ljava/util/Enumeration;
 
     move-result-object p1
 
@@ -27,7 +27,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lorg/bouncycastle/asn1/x509/qbh;->sna:Lorg/bouncycastle/asn1/x509/zta;
+    iput-object v0, p0, Lorg/bouncycastle/asn1/x509/qbh;->Hpa:Lorg/bouncycastle/asn1/x509/zta;
 
     invoke-interface {p1}, Ljava/util/Enumeration;->nextElement()Ljava/lang/Object;
 
@@ -57,7 +57,7 @@
 
     iput-object p2, p0, Lorg/bouncycastle/asn1/x509/qbh;->digest:[B
 
-    iput-object p1, p0, Lorg/bouncycastle/asn1/x509/qbh;->sna:Lorg/bouncycastle/asn1/x509/zta;
+    iput-object p1, p0, Lorg/bouncycastle/asn1/x509/qbh;->Hpa:Lorg/bouncycastle/asn1/x509/zta;
 
     return-void
 .end method
@@ -108,7 +108,7 @@
 
 
 # virtual methods
-.method public Kf()[B
+.method public Tf()[B
     .locals 0
 
     iget-object p0, p0, Lorg/bouncycastle/asn1/x509/qbh;->digest:[B
@@ -120,10 +120,10 @@
     return-object p0
 .end method
 
-.method public Rh()Lorg/bouncycastle/asn1/x509/zta;
+.method public _h()Lorg/bouncycastle/asn1/x509/zta;
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/asn1/x509/qbh;->sna:Lorg/bouncycastle/asn1/x509/zta;
+    iget-object p0, p0, Lorg/bouncycastle/asn1/x509/qbh;->Hpa:Lorg/bouncycastle/asn1/x509/zta;
 
     return-object p0
 .end method
@@ -135,7 +135,7 @@
 
     invoke-direct {v0}, Lorg/bouncycastle/asn1/cno;-><init>()V
 
-    iget-object v1, p0, Lorg/bouncycastle/asn1/x509/qbh;->sna:Lorg/bouncycastle/asn1/x509/zta;
+    iget-object v1, p0, Lorg/bouncycastle/asn1/x509/qbh;->Hpa:Lorg/bouncycastle/asn1/x509/zta;
 
     invoke-virtual {v0, v1}, Lorg/bouncycastle/asn1/cno;->you(Lorg/bouncycastle/asn1/ssp;)V
 

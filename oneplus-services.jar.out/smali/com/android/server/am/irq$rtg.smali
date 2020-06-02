@@ -97,7 +97,7 @@
 
     iget-object p0, p0, Lcom/android/server/am/irq$rtg;->this$0:Lcom/android/server/am/irq;
 
-    invoke-static {p0}, Lcom/android/server/am/irq;->wtn(Lcom/android/server/am/irq;)Landroid/content/ContentResolver;
+    invoke-static {p0}, Lcom/android/server/am/irq;->gck(Lcom/android/server/am/irq;)Landroid/content/ContentResolver;
 
     move-result-object p0
 
@@ -119,7 +119,7 @@
 
     move-result-object p0
 
-    invoke-static {p0}, Lcom/android/server/am/irq;->gck(Lcom/android/server/am/irq;)V
+    invoke-static {p0}, Lcom/android/server/am/irq;->dma(Lcom/android/server/am/irq;)V
 
     :cond_1
     return-void

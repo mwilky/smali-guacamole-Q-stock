@@ -25,7 +25,7 @@
 
 
 # virtual methods
-.method protected Xi()Lorg/bouncycastle/asn1/ibl/vju;
+.method protected fj()Lorg/bouncycastle/asn1/ibl/vju;
     .locals 11
 
     sget-object v3, Lyou/zta/sis/zta/sis;->ZERO:Ljava/math/BigInteger;
@@ -38,7 +38,7 @@
 
     const-string p0, "8000000000000000000000000000069D5BB915BCD46EFB1AD5F173ABDF"
 
-    invoke-static {p0}, Lorg/bouncycastle/asn1/ywr/irq;->Ea(Ljava/lang/String;)Ljava/math/BigInteger;
+    invoke-static {p0}, Lorg/bouncycastle/asn1/ywr/irq;->Ga(Ljava/lang/String;)Ljava/math/BigInteger;
 
     move-result-object v8
 

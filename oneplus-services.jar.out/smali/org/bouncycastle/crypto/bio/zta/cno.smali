@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field private LAa:[B
-
 .field private T:[[[J
+
+.field private ZCa:[B
 
 
 # direct methods
@@ -53,7 +53,7 @@
     goto :goto_0
 
     :cond_0
-    iget-object v0, p0, Lorg/bouncycastle/crypto/bio/zta/cno;->LAa:[B
+    iget-object v0, p0, Lorg/bouncycastle/crypto/bio/zta/cno;->ZCa:[B
 
     invoke-static {v0, p1}, Lorg/bouncycastle/util/zta;->sis([B[B)Z
 
@@ -69,7 +69,7 @@
 
     move-result-object p1
 
-    iput-object p1, p0, Lorg/bouncycastle/crypto/bio/zta/cno;->LAa:[B
+    iput-object p1, p0, Lorg/bouncycastle/crypto/bio/zta/cno;->ZCa:[B
 
     const/4 p1, 0x0
 
@@ -84,7 +84,7 @@
 
     if-nez p1, :cond_2
 
-    iget-object v0, p0, Lorg/bouncycastle/crypto/bio/zta/cno;->LAa:[B
+    iget-object v0, p0, Lorg/bouncycastle/crypto/bio/zta/cno;->ZCa:[B
 
     aget-object v6, v4, v5
 

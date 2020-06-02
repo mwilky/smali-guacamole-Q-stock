@@ -12,10 +12,6 @@
 
 
 # static fields
-.field private static final Aba:I = 0x8
-
-.field private static final Bba:I = 0x9
-
 .field private static final CUSTOM_DISPLAYP3_MODE:I = 0x2
 
 .field private static final CUSTOM_MODE:I = 0x3
@@ -24,117 +20,115 @@
 
 .field private static final CUSTOM_SRGB_MODE:I = 0x1
 
-.field private static final Cba:I = 0xa
-
 .field private static final DEBUG:Z
 
-.field private static final Dba:I = 0xb
+.field private static final Jca:I = 0x0
 
-.field private static final Eba:I = 0x0
+.field private static final Kca:I = 0x1
 
-.field private static final Fba:I = 0x1
+.field private static final Lca:I = 0x2
 
-.field private static final Gba:I = 0x2
-
-.field private static final Hba:I = 0x0
-
-.field private static final Iba:I = 0x1
-
-.field private static final Jba:I = 0x2
-
-.field private static final Kba:I = 0x3
-
-.field private static final Lba:I = 0x4
-
-.field private static final Mba:I = 0x1
+.field private static final Mca:I = 0x3
 
 .field private static final NATURAL_MODE:I = 0xa
 
-.field private static final Nba:I = 0x0
+.field private static final Nca:I = 0x4
 
-.field private static final Oba:I = 0x1
+.field private static final Oca:I = 0x5
 
-.field private static final Pba:I = 0x2
+.field private static final Pca:I = 0x6
 
-.field private static final Qba:I = 0x3
+.field private static final Qca:I = 0x7
 
-.field private static final Rba:I = 0x190
+.field private static final Rca:I = 0x8
 
-.field private static final Sba:J = 0x2710L
+.field private static final Sca:I = 0x9
 
 .field private static final TAG:Ljava/lang/String; = "OpColorGamutManager"
 
-.field private static final Tba:F = 1.1f
+.field private static final Tca:I = 0xa
 
-.field private static final Uba:I = 0x3e
+.field private static final Uca:I = 0xb
 
-.field private static final Vba:I = 0x10
+.field private static final Vca:I = 0x0
 
-.field private static final Wba:I = 0x5f
+.field private static final Wca:I = 0x1
 
-.field private static final Xba:I = 0x56
+.field private static final Xca:I = 0x2
 
-.field private static final Yba:I = 0x190
+.field private static final Yca:I = 0x0
 
-.field private static final Zba:I = 0x64
+.field private static final Zca:I = 0x1
 
-.field private static final _ba:I = 0x64
+.field private static final _ca:I = 0x2
 
-.field private static final aca:I = 0x88
+.field private static final ada:I = 0x3
 
-.field private static final bca:I = 0x94
+.field private static final bda:I = 0x4
 
-.field private static final cca:I = 0x6e
+.field private static final cda:I = 0x1
 
-.field private static final dca:I = 0x93
+.field private static final dda:I = 0x0
 
-.field private static final eca:Ljava/lang/String; = "oem_screen_better_value"
+.field private static final eda:I = 0x1
 
-.field private static final fca:Ljava/lang/String; = "op_game_mode_ad_enable"
+.field private static final fda:I = 0x2
 
-.field private static final sba:I = 0x0
+.field private static final gda:I = 0x3
 
-.field private static final tba:I = 0x1
+.field private static final hda:I = 0x190
 
-.field private static final uba:I = 0x2
+.field private static final ida:J = 0x2710L
 
-.field private static final vba:I = 0x3
+.field private static final jda:F = 1.1f
 
-.field private static final wba:I = 0x4
+.field private static final kda:I = 0x3e
 
-.field private static final xba:I = 0x5
+.field private static final lda:I = 0x10
 
-.field private static final yba:I = 0x6
+.field private static final mda:I = 0x5f
 
-.field private static final zba:I = 0x7
+.field private static final nda:I = 0x56
+
+.field private static final oda:I = 0x190
+
+.field private static final pda:I = 0x64
+
+.field private static final qda:I = 0x64
+
+.field private static final rda:I = 0x88
+
+.field private static final sda:I = 0x94
+
+.field private static final tda:I = 0x6e
+
+.field private static final uda:I = 0x93
+
+.field private static final vda:Ljava/lang/String; = "oem_screen_better_value"
+
+.field private static final wda:Ljava/lang/String; = "op_game_mode_ad_enable"
 
 
 # instance fields
-.field private Yaa:Lcom/oneplus/android/server/display/bio;
+.field private Aca:Z
 
-.field private bba:I
+.field private Bca:[[I
 
-.field private cba:I
+.field private Cca:Z
 
-.field private dba:I
+.field private Cg:I
 
-.field private eba:I
+.field private Dca:Z
 
-.field private fba:Z
+.field private Eca:Z
 
-.field private gba:Z
+.field private Fca:Z
 
-.field private gg:I
+.field private final Gca:Lcom/oneplus/android/server/display/ibl;
 
-.field private hba:Z
+.field private final Hca:Lcom/oneplus/android/server/display/gwm;
 
-.field private iba:Z
-
-.field private jba:Z
-
-.field private kba:[[I
-
-.field private lba:Z
+.field private Ica:Lcom/oneplus/android/server/display/OpColorModeManager;
 
 .field private mBrightness:I
 
@@ -152,17 +146,23 @@
 
 .field private mScreenOn:Z
 
-.field private mba:Z
+.field private oca:Lcom/oneplus/android/server/display/bio;
 
-.field private nba:Z
+.field private sca:I
 
-.field private oba:Z
+.field private tca:I
 
-.field private final pba:Lcom/oneplus/android/server/display/ibl;
+.field private uca:I
 
-.field private final qba:Lcom/oneplus/android/server/display/gwm;
+.field private vca:I
 
-.field private rba:Lcom/oneplus/android/server/display/OpColorModeManager;
+.field private wca:Z
+
+.field private xca:Z
+
+.field private yca:Z
+
+.field private zca:Z
 
 
 # direct methods
@@ -189,17 +189,17 @@
 
     const/16 v1, 0x64
 
-    iput v1, p0, Lcom/oneplus/android/server/display/dma;->gg:I
+    iput v1, p0, Lcom/oneplus/android/server/display/dma;->Cg:I
 
     const/4 v1, 0x1
 
     iput-boolean v1, p0, Lcom/oneplus/android/server/display/dma;->mScreenOn:Z
 
-    iput-boolean v0, p0, Lcom/oneplus/android/server/display/dma;->hba:Z
+    iput-boolean v0, p0, Lcom/oneplus/android/server/display/dma;->yca:Z
 
-    iput-boolean v0, p0, Lcom/oneplus/android/server/display/dma;->iba:Z
+    iput-boolean v0, p0, Lcom/oneplus/android/server/display/dma;->zca:Z
 
-    iput-boolean v0, p0, Lcom/oneplus/android/server/display/dma;->jba:Z
+    iput-boolean v0, p0, Lcom/oneplus/android/server/display/dma;->Aca:Z
 
     const/4 v2, 0x6
 
@@ -217,11 +217,11 @@
 
     check-cast v2, [[I
 
-    iput-object v2, p0, Lcom/oneplus/android/server/display/dma;->kba:[[I
+    iput-object v2, p0, Lcom/oneplus/android/server/display/dma;->Bca:[[I
 
-    iput-boolean v0, p0, Lcom/oneplus/android/server/display/dma;->mba:Z
+    iput-boolean v0, p0, Lcom/oneplus/android/server/display/dma;->Dca:Z
 
-    iput-boolean v1, p0, Lcom/oneplus/android/server/display/dma;->nba:Z
+    iput-boolean v1, p0, Lcom/oneplus/android/server/display/dma;->Eca:Z
 
     iput-object p1, p0, Lcom/oneplus/android/server/display/dma;->mContext:Landroid/content/Context;
 
@@ -229,7 +229,7 @@
 
     invoke-direct {v2, p1}, Lcom/oneplus/android/server/display/ibl;-><init>(Landroid/content/Context;)V
 
-    iput-object v2, p0, Lcom/oneplus/android/server/display/dma;->pba:Lcom/oneplus/android/server/display/ibl;
+    iput-object v2, p0, Lcom/oneplus/android/server/display/dma;->Gca:Lcom/oneplus/android/server/display/ibl;
 
     new-instance v2, Lcom/oneplus/android/server/display/dma$zta;
 
@@ -249,23 +249,23 @@
 
     iput v0, p0, Lcom/oneplus/android/server/display/dma;->mRefreshRate:I
 
-    iput v0, p0, Lcom/oneplus/android/server/display/dma;->bba:I
+    iput v0, p0, Lcom/oneplus/android/server/display/dma;->sca:I
 
-    iput v0, p0, Lcom/oneplus/android/server/display/dma;->dba:I
+    iput v0, p0, Lcom/oneplus/android/server/display/dma;->uca:I
 
-    iput v1, p0, Lcom/oneplus/android/server/display/dma;->cba:I
+    iput v1, p0, Lcom/oneplus/android/server/display/dma;->tca:I
 
     new-instance v0, Lcom/oneplus/android/server/display/bio;
 
     invoke-direct {v0}, Lcom/oneplus/android/server/display/bio;-><init>()V
 
-    iput-object v0, p0, Lcom/oneplus/android/server/display/dma;->Yaa:Lcom/oneplus/android/server/display/bio;
+    iput-object v0, p0, Lcom/oneplus/android/server/display/dma;->oca:Lcom/oneplus/android/server/display/bio;
 
     invoke-static {p1}, Lcom/oneplus/android/server/display/gwm;->create(Landroid/content/Context;)Lcom/oneplus/android/server/display/gwm;
 
     move-result-object p1
 
-    iput-object p1, p0, Lcom/oneplus/android/server/display/dma;->qba:Lcom/oneplus/android/server/display/gwm;
+    iput-object p1, p0, Lcom/oneplus/android/server/display/dma;->Hca:Lcom/oneplus/android/server/display/gwm;
 
     const-class p1, Lcom/oneplus/android/server/display/OpColorDisplayService$you;
 
@@ -280,7 +280,7 @@
     return-void
 .end method
 
-.method private Na(Z)V
+.method private Ra(Z)V
     .locals 3
 
     const/4 v0, 0x0
@@ -289,7 +289,7 @@
 
     if-eqz p1, :cond_0
 
-    iget p1, p0, Lcom/oneplus/android/server/display/dma;->bba:I
+    iget p1, p0, Lcom/oneplus/android/server/display/dma;->sca:I
 
     if-ne p1, v1, :cond_1
 
@@ -298,13 +298,13 @@
     goto :goto_0
 
     :cond_0
-    invoke-direct {p0}, Lcom/oneplus/android/server/display/dma;->Sr()Z
+    invoke-direct {p0}, Lcom/oneplus/android/server/display/dma;->ls()Z
 
     move-result p1
 
     if-eqz p1, :cond_1
 
-    iget p1, p0, Lcom/oneplus/android/server/display/dma;->bba:I
+    iget p1, p0, Lcom/oneplus/android/server/display/dma;->sca:I
 
     if-eq p1, v1, :cond_1
 
@@ -312,17 +312,17 @@
 
     if-eq p1, v2, :cond_1
 
-    iget p1, p0, Lcom/oneplus/android/server/display/dma;->eba:I
+    iget p1, p0, Lcom/oneplus/android/server/display/dma;->vca:I
 
     if-eq p1, v1, :cond_1
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/display/dma;->Qr()Z
+    invoke-direct {p0}, Lcom/oneplus/android/server/display/dma;->js()Z
 
     move-result p1
 
     if-eqz p1, :cond_1
 
-    iget-boolean p1, p0, Lcom/oneplus/android/server/display/dma;->oba:Z
+    iget-boolean p1, p0, Lcom/oneplus/android/server/display/dma;->Fca:Z
 
     if-nez p1, :cond_1
 
@@ -333,7 +333,7 @@
     return-void
 .end method
 
-.method private Oa(Z)V
+.method private Sa(Z)V
     .locals 5
 
     const-string v0, "OpColorGamutManager"
@@ -344,13 +344,13 @@
 
     if-eqz p1, :cond_1
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/display/dma;->Sr()Z
+    invoke-direct {p0}, Lcom/oneplus/android/server/display/dma;->ls()Z
 
     move-result p1
 
     if-eqz p1, :cond_5
 
-    iget p1, p0, Lcom/oneplus/android/server/display/dma;->bba:I
+    iget p1, p0, Lcom/oneplus/android/server/display/dma;->sca:I
 
     if-ne p1, v2, :cond_5
 
@@ -368,13 +368,13 @@
     goto :goto_0
 
     :cond_1
-    invoke-direct {p0}, Lcom/oneplus/android/server/display/dma;->Sr()Z
+    invoke-direct {p0}, Lcom/oneplus/android/server/display/dma;->ls()Z
 
     move-result p1
 
     if-eqz p1, :cond_5
 
-    iget p1, p0, Lcom/oneplus/android/server/display/dma;->bba:I
+    iget p1, p0, Lcom/oneplus/android/server/display/dma;->sca:I
 
     if-eq p1, v2, :cond_5
 
@@ -386,24 +386,24 @@
 
     if-eq p1, v4, :cond_5
 
-    iget p1, p0, Lcom/oneplus/android/server/display/dma;->eba:I
+    iget p1, p0, Lcom/oneplus/android/server/display/dma;->vca:I
 
     if-ne p1, v2, :cond_5
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/display/dma;->Qr()Z
+    invoke-direct {p0}, Lcom/oneplus/android/server/display/dma;->js()Z
 
     move-result p1
 
     if-eqz p1, :cond_2
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/display/dma;->Pr()Z
+    invoke-direct {p0}, Lcom/oneplus/android/server/display/dma;->is()Z
 
     move-result p1
 
     if-eqz p1, :cond_3
 
     :cond_2
-    iget-boolean p1, p0, Lcom/oneplus/android/server/display/dma;->lba:Z
+    iget-boolean p1, p0, Lcom/oneplus/android/server/display/dma;->Cca:Z
 
     if-eqz p1, :cond_5
 
@@ -428,34 +428,13 @@
     return-void
 .end method
 
-.method private Pa(Z)V
+.method private Ta(Z)V
     .locals 0
 
     return-void
 .end method
 
-.method private Pr()Z
-    .locals 2
-
-    const/4 p0, 0x0
-
-    const-string v0, "vendor.sys.blacklist.layer"
-
-    invoke-static {v0, p0}, Landroid/os/SystemProperties;->getInt(Ljava/lang/String;I)I
-
-    move-result v0
-
-    const/4 v1, 0x1
-
-    if-ne v0, v1, :cond_0
-
-    move p0, v1
-
-    :cond_0
-    return p0
-.end method
-
-.method private Qa(Z)V
+.method private Ua(Z)V
     .locals 4
 
     new-instance v0, Ljava/lang/StringBuilder;
@@ -472,7 +451,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget v1, p0, Lcom/oneplus/android/server/display/dma;->dba:I
+    iget v1, p0, Lcom/oneplus/android/server/display/dma;->uca:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -515,16 +494,16 @@
     goto :goto_0
 
     :cond_0
-    iget p1, p0, Lcom/oneplus/android/server/display/dma;->dba:I
+    iget p1, p0, Lcom/oneplus/android/server/display/dma;->uca:I
 
     if-ne p1, v1, :cond_1
 
     const/4 p1, 0x0
 
-    iput p1, p0, Lcom/oneplus/android/server/display/dma;->dba:I
+    iput p1, p0, Lcom/oneplus/android/server/display/dma;->uca:I
 
     :cond_1
-    iget p1, p0, Lcom/oneplus/android/server/display/dma;->dba:I
+    iget p1, p0, Lcom/oneplus/android/server/display/dma;->uca:I
 
     invoke-virtual {p0, p1, v0}, Lcom/oneplus/android/server/display/dma;->bvj(IZ)V
 
@@ -532,28 +511,7 @@
     return-void
 .end method
 
-.method private Qr()Z
-    .locals 2
-
-    const/4 p0, 0x0
-
-    const-string v0, "vendor.sys.hardware.decoding"
-
-    invoke-static {v0, p0}, Landroid/os/SystemProperties;->getInt(Ljava/lang/String;I)I
-
-    move-result v0
-
-    const/4 v1, 0x1
-
-    if-ne v0, v1, :cond_0
-
-    move p0, v1
-
-    :cond_0
-    return p0
-.end method
-
-.method private Ra(Z)V
+.method private Va(Z)V
     .locals 3
 
     new-instance v0, Ljava/lang/StringBuilder;
@@ -578,7 +536,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean v1, p0, Lcom/oneplus/android/server/display/dma;->mba:Z
+    iget-boolean v1, p0, Lcom/oneplus/android/server/display/dma;->Dca:Z
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -586,9 +544,9 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget v1, p0, Lcom/oneplus/android/server/display/dma;->bba:I
+    iget v1, p0, Lcom/oneplus/android/server/display/dma;->sca:I
 
-    invoke-direct {p0, v1}, Lcom/oneplus/android/server/display/dma;->Zb(I)Ljava/lang/String;
+    invoke-direct {p0, v1}, Lcom/oneplus/android/server/display/dma;->jc(I)Ljava/lang/String;
 
     move-result-object v1
 
@@ -602,7 +560,7 @@
 
     invoke-static {v1, v0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    iget-boolean v0, p0, Lcom/oneplus/android/server/display/dma;->mba:Z
+    iget-boolean v0, p0, Lcom/oneplus/android/server/display/dma;->Dca:Z
 
     if-eqz v0, :cond_0
 
@@ -615,7 +573,7 @@
 
     if-nez p1, :cond_1
 
-    iget p1, p0, Lcom/oneplus/android/server/display/dma;->bba:I
+    iget p1, p0, Lcom/oneplus/android/server/display/dma;->sca:I
 
     if-ne p1, v1, :cond_2
 
@@ -628,7 +586,7 @@
     goto :goto_0
 
     :cond_1
-    invoke-direct {p0}, Lcom/oneplus/android/server/display/dma;->Sr()Z
+    invoke-direct {p0}, Lcom/oneplus/android/server/display/dma;->ls()Z
 
     move-result p1
 
@@ -640,11 +598,11 @@
 
     if-ne p1, v2, :cond_2
 
-    iget p1, p0, Lcom/oneplus/android/server/display/dma;->eba:I
+    iget p1, p0, Lcom/oneplus/android/server/display/dma;->vca:I
 
     if-eq p1, v1, :cond_2
 
-    iget-boolean p1, p0, Lcom/oneplus/android/server/display/dma;->oba:Z
+    iget-boolean p1, p0, Lcom/oneplus/android/server/display/dma;->Fca:Z
 
     if-nez p1, :cond_2
 
@@ -655,20 +613,12 @@
     return-void
 .end method
 
-.method private Rr()Z
-    .locals 0
-
-    const/4 p0, 0x1
-
-    return p0
-.end method
-
-.method private Sa(Z)V
+.method private Wa(Z)V
     .locals 1
 
     if-eqz p1, :cond_2
 
-    iget-boolean p1, p0, Lcom/oneplus/android/server/display/dma;->fba:Z
+    iget-boolean p1, p0, Lcom/oneplus/android/server/display/dma;->wca:Z
 
     const/4 v0, 0x4
 
@@ -680,11 +630,11 @@
     goto :goto_1
 
     :cond_0
-    iget p1, p0, Lcom/oneplus/android/server/display/dma;->bba:I
+    iget p1, p0, Lcom/oneplus/android/server/display/dma;->sca:I
 
     if-ne p1, v0, :cond_1
 
-    iget p1, p0, Lcom/oneplus/android/server/display/dma;->dba:I
+    iget p1, p0, Lcom/oneplus/android/server/display/dma;->uca:I
 
     if-ne p1, v0, :cond_1
 
@@ -702,28 +652,14 @@
     return-void
 .end method
 
-.method private Sr()Z
-    .locals 1
-
-    const-string p0, "persist.sys.oem.vendor.media.vpp.enable"
-
-    const/4 v0, 0x0
-
-    invoke-static {p0, v0}, Landroid/os/SystemProperties;->getBoolean(Ljava/lang/String;Z)Z
-
-    move-result p0
-
-    return p0
-.end method
-
-.method private Ta(Z)V
+.method private Xa(Z)V
     .locals 3
 
     const/4 v0, 0x0
 
     if-eqz p1, :cond_0
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/display/dma;->Pr()Z
+    invoke-direct {p0}, Lcom/oneplus/android/server/display/dma;->is()Z
 
     move-result v1
 
@@ -732,36 +668,36 @@
     move p1, v0
 
     :cond_0
-    iget-boolean v1, p0, Lcom/oneplus/android/server/display/dma;->mba:Z
+    iget-boolean v1, p0, Lcom/oneplus/android/server/display/dma;->Dca:Z
 
     if-ne v1, p1, :cond_1
 
     return-void
 
     :cond_1
-    iput-boolean p1, p0, Lcom/oneplus/android/server/display/dma;->mba:Z
+    iput-boolean p1, p0, Lcom/oneplus/android/server/display/dma;->Dca:Z
 
     const/4 v1, 0x2
 
     if-eqz p1, :cond_2
 
-    iget p1, p0, Lcom/oneplus/android/server/display/dma;->bba:I
+    iget p1, p0, Lcom/oneplus/android/server/display/dma;->sca:I
 
     const/4 v2, 0x4
 
     if-eq p1, v2, :cond_2
 
-    iget-boolean p1, p0, Lcom/oneplus/android/server/display/dma;->oba:Z
+    iget-boolean p1, p0, Lcom/oneplus/android/server/display/dma;->Fca:Z
 
     if-nez p1, :cond_2
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/display/dma;->Pr()Z
+    invoke-direct {p0}, Lcom/oneplus/android/server/display/dma;->is()Z
 
     move-result p1
 
     if-nez p1, :cond_2
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/display/dma;->Sr()Z
+    invoke-direct {p0}, Lcom/oneplus/android/server/display/dma;->ls()Z
 
     move-result p1
 
@@ -772,7 +708,7 @@
     goto :goto_0
 
     :cond_2
-    iget p1, p0, Lcom/oneplus/android/server/display/dma;->bba:I
+    iget p1, p0, Lcom/oneplus/android/server/display/dma;->sca:I
 
     if-ne p1, v1, :cond_3
 
@@ -783,675 +719,12 @@
     return-void
 .end method
 
-.method private Tr()Z
-    .locals 2
-
-    const/4 p0, 0x1
-
-    new-array p0, p0, [I
-
-    const/4 v0, 0x0
-
-    const/16 v1, 0xdc
-
-    aput v1, p0, v0
-
-    invoke-static {p0}, Landroid/util/OpFeatures;->isSupport([I)Z
-
-    move-result p0
-
-    return p0
-.end method
-
-.method private Ur()Z
-    .locals 2
-
-    iget-object v0, p0, Lcom/oneplus/android/server/display/dma;->rba:Lcom/oneplus/android/server/display/OpColorModeManager;
-
-    const/4 v1, -0x2
-
-    invoke-virtual {v0, v1}, Lcom/oneplus/android/server/display/OpColorModeManager;->L(I)Z
-
-    move-result v0
-
-    if-nez v0, :cond_1
-
-    iget-object v0, p0, Lcom/oneplus/android/server/display/dma;->rba:Lcom/oneplus/android/server/display/OpColorModeManager;
-
-    invoke-virtual {v0, v1}, Lcom/oneplus/android/server/display/OpColorModeManager;->N(I)Z
-
-    move-result v0
-
-    if-nez v0, :cond_1
-
-    iget-object v0, p0, Lcom/oneplus/android/server/display/dma;->rba:Lcom/oneplus/android/server/display/OpColorModeManager;
-
-    invoke-virtual {v0, v1}, Lcom/oneplus/android/server/display/OpColorModeManager;->O(I)Z
-
-    move-result v0
-
-    if-nez v0, :cond_1
-
-    iget-object v0, p0, Lcom/oneplus/android/server/display/dma;->rba:Lcom/oneplus/android/server/display/OpColorModeManager;
-
-    invoke-virtual {v0, v1}, Lcom/oneplus/android/server/display/OpColorModeManager;->M(I)Z
-
-    move-result v0
-
-    if-nez v0, :cond_1
-
-    iget-object p0, p0, Lcom/oneplus/android/server/display/dma;->rba:Lcom/oneplus/android/server/display/OpColorModeManager;
-
-    invoke-virtual {p0, v1}, Lcom/oneplus/android/server/display/OpColorModeManager;->K(I)Z
-
-    move-result p0
-
-    if-eqz p0, :cond_0
-
-    goto :goto_0
-
-    :cond_0
-    const/4 p0, 0x0
-
-    goto :goto_1
-
-    :cond_1
-    :goto_0
-    const/4 p0, 0x1
-
-    :goto_1
-    return p0
-.end method
-
-.method private Wb(I)V
-    .locals 2
-
-    iget v0, p0, Lcom/oneplus/android/server/display/dma;->eba:I
-
-    const/4 v1, 0x2
-
-    if-ne v0, v1, :cond_0
-
-    return-void
-
-    :cond_0
-    const/4 v0, 0x1
-
-    if-eq p1, v1, :cond_2
-
-    if-ne p1, v0, :cond_1
-
-    goto :goto_0
-
-    :cond_1
-    iget-boolean p1, p0, Lcom/oneplus/android/server/display/dma;->jba:Z
-
-    if-eqz p1, :cond_6
-
-    iget-object p1, p0, Lcom/oneplus/android/server/display/dma;->mCdsi:Lcom/oneplus/android/server/display/OpColorDisplayService$you;
-
-    const/4 v0, 0x0
-
-    if-eqz p1, :cond_5
-
-    invoke-virtual {p1, v0}, Lcom/oneplus/android/server/display/OpColorDisplayService$you;->E(Z)V
-
-    goto :goto_2
-
-    :cond_2
-    :goto_0
-    iget-boolean p1, p0, Lcom/oneplus/android/server/display/dma;->iba:Z
-
-    if-eqz p1, :cond_3
-
-    iget-object p1, p0, Lcom/oneplus/android/server/display/dma;->mCdsi:Lcom/oneplus/android/server/display/OpColorDisplayService$you;
-
-    if-eqz p1, :cond_5
-
-    invoke-virtual {p1}, Lcom/oneplus/android/server/display/OpColorDisplayService$you;->ze()V
-
-    goto :goto_2
-
-    :cond_3
-    iget-object p1, p0, Lcom/oneplus/android/server/display/dma;->mColorTintManager:Lcom/oneplus/android/server/display/bvj;
-
-    if-eqz p1, :cond_5
-
-    iget p1, p0, Lcom/oneplus/android/server/display/dma;->cba:I
-
-    if-nez p1, :cond_4
-
-    iget-object p1, p0, Lcom/oneplus/android/server/display/dma;->mCdsi:Lcom/oneplus/android/server/display/OpColorDisplayService$you;
-
-    if-eqz p1, :cond_5
-
-    iget-object v1, p0, Lcom/oneplus/android/server/display/dma;->qba:Lcom/oneplus/android/server/display/gwm;
-
-    invoke-virtual {v1}, Lcom/oneplus/android/server/display/gwm;->Ue()I
-
-    move-result v1
-
-    :goto_1
-    invoke-virtual {p1, v1}, Lcom/oneplus/android/server/display/OpColorDisplayService$you;->E(I)V
-
-    goto :goto_2
-
-    :cond_4
-    if-ne p1, v0, :cond_5
-
-    iget-object p1, p0, Lcom/oneplus/android/server/display/dma;->mCdsi:Lcom/oneplus/android/server/display/OpColorDisplayService$you;
-
-    if-eqz p1, :cond_5
-
-    iget-object v1, p0, Lcom/oneplus/android/server/display/dma;->qba:Lcom/oneplus/android/server/display/gwm;
-
-    invoke-virtual {v1}, Lcom/oneplus/android/server/display/gwm;->Te()I
-
-    move-result v1
-
-    goto :goto_1
-
-    :cond_5
-    :goto_2
-    iput-boolean v0, p0, Lcom/oneplus/android/server/display/dma;->jba:Z
-
-    :cond_6
-    return-void
-.end method
-
-.method private Xb(I)Ljava/lang/String;
-    .locals 0
-
-    if-eqz p1, :cond_2
-
-    const/4 p0, 0x1
-
-    if-eq p1, p0, :cond_1
-
-    const/4 p0, 0x2
-
-    if-eq p1, p0, :cond_0
-
-    const-string p0, "UNKNOWN"
-
-    return-object p0
-
-    :cond_0
-    const-string p0, "CG_NATIVE_MODE"
-
-    return-object p0
-
-    :cond_1
-    const-string p0, "CG_DISPLAY_P3_MODE"
-
-    return-object p0
-
-    :cond_2
-    const-string p0, "CG_SRGB_MODE"
-
-    return-object p0
-.end method
-
-.method private Yb(I)Ljava/lang/String;
-    .locals 0
-
-    if-eqz p1, :cond_3
-
-    const/4 p0, 0x1
-
-    if-eq p1, p0, :cond_2
-
-    const/4 p0, 0x2
-
-    if-eq p1, p0, :cond_1
-
-    const/4 p0, 0x3
-
-    if-eq p1, p0, :cond_0
-
-    const-string p0, "UNKNOWN"
-
-    return-object p0
-
-    :cond_0
-    const-string p0, "SF_NATIVE_MODE"
-
-    return-object p0
-
-    :cond_1
-    const-string p0, "SF_HDR_MODE"
-
-    return-object p0
-
-    :cond_2
-    const-string p0, "SF_P3_MODE"
-
-    return-object p0
-
-    :cond_3
-    const-string p0, "SF_SRGB_MODE"
-
-    return-object p0
-.end method
-
-.method private Zb(I)Ljava/lang/String;
-    .locals 0
-
-    if-eqz p1, :cond_4
-
-    const/4 p0, 0x1
-
-    if-eq p1, p0, :cond_3
-
-    const/4 p0, 0x2
-
-    if-eq p1, p0, :cond_2
-
-    const/4 p0, 0x3
-
-    if-eq p1, p0, :cond_1
-
-    const/4 p0, 0x4
-
-    if-eq p1, p0, :cond_0
-
-    const-string p0, "UNKNOWN"
-
-    return-object p0
-
-    :cond_0
-    const-string p0, "SC_FP"
-
-    return-object p0
-
-    :cond_1
-    const-string p0, "SC_READ"
-
-    return-object p0
-
-    :cond_2
-    const-string p0, "SC_VIDEO"
-
-    return-object p0
-
-    :cond_3
-    const-string p0, "SC_GAME"
-
-    return-object p0
-
-    :cond_4
-    const-string p0, "SC_NORMAL"
-
-    return-object p0
-.end method
-
-.method private _b(I)V
-    .locals 3
-
-    iget-boolean v0, p0, Lcom/oneplus/android/server/display/dma;->fba:Z
-
-    if-nez v0, :cond_4
-
-    iget-boolean v0, p0, Lcom/oneplus/android/server/display/dma;->nba:Z
-
-    if-nez v0, :cond_0
-
-    goto :goto_0
-
-    :cond_0
-    iget v0, p0, Lcom/oneplus/android/server/display/dma;->gg:I
-
-    invoke-direct {p0, v0, p1}, Lcom/oneplus/android/server/display/dma;->vju(II)[[I
-
-    move-result-object v0
-
-    sget-boolean v1, Lcom/oneplus/android/server/display/dma;->DEBUG:Z
-
-    if-eqz v1, :cond_1
-
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v2, "handleAdjustLightColorGamut mCurrentScenario = "
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget v2, p0, Lcom/oneplus/android/server/display/dma;->bba:I
-
-    invoke-direct {p0, v2}, Lcom/oneplus/android/server/display/dma;->Zb(I)Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string v2, " mCurrentBaseMode = "
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget v2, p0, Lcom/oneplus/android/server/display/dma;->cba:I
-
-    invoke-direct {p0, v2}, Lcom/oneplus/android/server/display/dma;->Xb(I)Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v1
-
-    const-string v2, "OpColorGamutManager"
-
-    invoke-static {v2, v1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    :cond_1
-    iget-object v1, p0, Lcom/oneplus/android/server/display/dma;->kba:[[I
-
-    invoke-direct {p0, v0, v1}, Lcom/oneplus/android/server/display/dma;->you([[I[[I)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_2
-
-    return-void
-
-    :cond_2
-    iget-object v0, p0, Lcom/oneplus/android/server/display/dma;->pba:Lcom/oneplus/android/server/display/ibl;
-
-    invoke-virtual {v0}, Lcom/oneplus/android/server/display/igw;->De()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_3
-
-    iget-object p1, p0, Lcom/oneplus/android/server/display/dma;->pba:Lcom/oneplus/android/server/display/ibl;
-
-    invoke-virtual {p1}, Lcom/oneplus/android/server/display/igw;->Be()I
-
-    iget-object p1, p0, Lcom/oneplus/android/server/display/dma;->pba:Lcom/oneplus/android/server/display/ibl;
-
-    invoke-virtual {p1}, Lcom/oneplus/android/server/display/igw;->Ce()I
-
-    move-result p1
-
-    iget v0, p0, Lcom/oneplus/android/server/display/dma;->gg:I
-
-    invoke-direct {p0, v0, p1}, Lcom/oneplus/android/server/display/dma;->bud(II)V
-
-    goto :goto_0
-
-    :cond_3
-    iget v0, p0, Lcom/oneplus/android/server/display/dma;->gg:I
-
-    invoke-direct {p0, v0, p1}, Lcom/oneplus/android/server/display/dma;->cgv(II)V
-
-    :cond_4
-    :goto_0
-    return-void
-.end method
-
-.method private ac(I)V
-    .locals 6
-
-    iget-object v0, p0, Lcom/oneplus/android/server/display/dma;->mContext:Landroid/content/Context;
-
-    invoke-virtual {v0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
-
-    move-result-object v0
-
-    const/4 v1, 0x0
-
-    const-string v2, "screen_color_mode_advanced_settings_value"
-
-    invoke-static {v0, v2, v1}, Landroid/provider/Settings$System;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
-
-    move-result v0
-
-    new-instance v2, Ljava/lang/StringBuilder;
-
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v3, "handleColorModeChange mCurrentBaseMode = "
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget v3, p0, Lcom/oneplus/android/server/display/dma;->cba:I
-
-    invoke-direct {p0, v3}, Lcom/oneplus/android/server/display/dma;->Xb(I)Ljava/lang/String;
-
-    move-result-object v3
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string v3, " colorMode = "
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    const-string v3, " customColorMode = "
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v2
-
-    const-string v3, "OpColorGamutManager"
-
-    invoke-static {v3, v2}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    const/4 v2, 0x2
-
-    const/4 v4, 0x1
-
-    if-eq p1, v4, :cond_4
-
-    const/4 v5, 0x3
-
-    if-eq p1, v5, :cond_1
-
-    const/16 v0, 0xa
-
-    if-eq p1, v0, :cond_0
-
-    move p1, v2
-
-    goto :goto_1
-
-    :cond_0
-    iput-boolean v1, p0, Lcom/oneplus/android/server/display/dma;->iba:Z
-
-    move p1, v1
-
-    goto :goto_1
-
-    :cond_1
-    if-ne v0, v4, :cond_2
-
-    move p1, v1
-
-    goto :goto_0
-
-    :cond_2
-    if-ne v0, v2, :cond_3
-
-    move p1, v4
-
-    goto :goto_0
-
-    :cond_3
-    move p1, v2
-
-    :goto_0
-    iput-boolean v4, p0, Lcom/oneplus/android/server/display/dma;->iba:Z
-
-    goto :goto_1
-
-    :cond_4
-    iput-boolean v1, p0, Lcom/oneplus/android/server/display/dma;->iba:Z
-
-    move p1, v4
-
-    :goto_1
-    if-eq p1, v2, :cond_5
-
-    move v1, v4
-
-    :cond_5
-    iput-boolean v1, p0, Lcom/oneplus/android/server/display/dma;->nba:Z
-
-    iput p1, p0, Lcom/oneplus/android/server/display/dma;->cba:I
-
-    iget p1, p0, Lcom/oneplus/android/server/display/dma;->bba:I
-
-    iget v0, p0, Lcom/oneplus/android/server/display/dma;->eba:I
-
-    iget v1, p0, Lcom/oneplus/android/server/display/dma;->cba:I
-
-    invoke-virtual {p0, p1, v0, v1}, Lcom/oneplus/android/server/display/dma;->rtg(III)I
-
-    move-result p1
-
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v1, "handleColorModeChange level = "
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-static {v3, v0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    iget v0, p0, Lcom/oneplus/android/server/display/dma;->mBrightness:I
-
-    invoke-direct {p0, p1, v0}, Lcom/oneplus/android/server/display/dma;->cgv(II)V
-
-    return-void
-.end method
-
 .method static synthetic access$800()Z
     .locals 1
 
     sget-boolean v0, Lcom/oneplus/android/server/display/dma;->DEBUG:Z
 
     return v0
-.end method
-
-.method private bc(I)V
-    .locals 3
-
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v1, "handleRefreshRateChange refreshRate = "
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    const-string v1, " mediacodec status = "
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget-boolean v1, p0, Lcom/oneplus/android/server/display/dma;->lba:Z
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
-
-    const-string v1, " mSFVideoScene = "
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget-boolean v1, p0, Lcom/oneplus/android/server/display/dma;->mba:Z
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
-
-    const-string v1, " mCurrentScenario = "
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget v1, p0, Lcom/oneplus/android/server/display/dma;->bba:I
-
-    invoke-direct {p0, v1}, Lcom/oneplus/android/server/display/dma;->Zb(I)Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    const-string v1, "OpColorGamutManager"
-
-    invoke-static {v1, v0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    iget-boolean v0, p0, Lcom/oneplus/android/server/display/dma;->mba:Z
-
-    if-eqz v0, :cond_0
-
-    return-void
-
-    :cond_0
-    const/4 v0, 0x1
-
-    const/4 v1, 0x2
-
-    const/4 v2, 0x0
-
-    if-ne p1, v0, :cond_1
-
-    iget-boolean p1, p0, Lcom/oneplus/android/server/display/dma;->lba:Z
-
-    if-eqz p1, :cond_3
-
-    iget p1, p0, Lcom/oneplus/android/server/display/dma;->eba:I
-
-    if-eq p1, v1, :cond_3
-
-    iget-boolean p1, p0, Lcom/oneplus/android/server/display/dma;->oba:Z
-
-    if-nez p1, :cond_3
-
-    invoke-direct {p0}, Lcom/oneplus/android/server/display/dma;->Pr()Z
-
-    move-result p1
-
-    if-nez p1, :cond_3
-
-    invoke-direct {p0}, Lcom/oneplus/android/server/display/dma;->Sr()Z
-
-    move-result p1
-
-    if-eqz p1, :cond_3
-
-    invoke-virtual {p0, v1, v2}, Lcom/oneplus/android/server/display/dma;->bvj(IZ)V
-
-    goto :goto_0
-
-    :cond_1
-    iget p1, p0, Lcom/oneplus/android/server/display/dma;->bba:I
-
-    if-ne p1, v1, :cond_2
-
-    invoke-virtual {p0, v2, v2}, Lcom/oneplus/android/server/display/dma;->bvj(IZ)V
-
-    :cond_2
-    iput-boolean v2, p0, Lcom/oneplus/android/server/display/dma;->lba:Z
-
-    :cond_3
-    :goto_0
-    return-void
 .end method
 
 .method private bud(II)V
@@ -1525,19 +798,19 @@
 
     move-result-object v4
 
-    iget-object v5, p0, Lcom/oneplus/android/server/display/dma;->pba:Lcom/oneplus/android/server/display/ibl;
+    iget-object v5, p0, Lcom/oneplus/android/server/display/dma;->Gca:Lcom/oneplus/android/server/display/ibl;
 
     invoke-virtual {v5}, Lcom/oneplus/android/server/display/igw;->cancelAnimator()V
 
-    iget-object v5, p0, Lcom/oneplus/android/server/display/dma;->pba:Lcom/oneplus/android/server/display/ibl;
+    iget-object v5, p0, Lcom/oneplus/android/server/display/dma;->Gca:Lcom/oneplus/android/server/display/ibl;
 
-    invoke-virtual {v5, p1}, Lcom/oneplus/android/server/display/igw;->F(I)V
+    invoke-virtual {v5, p1}, Lcom/oneplus/android/server/display/igw;->I(I)V
 
-    iget-object v5, p0, Lcom/oneplus/android/server/display/dma;->pba:Lcom/oneplus/android/server/display/ibl;
+    iget-object v5, p0, Lcom/oneplus/android/server/display/dma;->Gca:Lcom/oneplus/android/server/display/ibl;
 
-    invoke-virtual {v5, p2}, Lcom/oneplus/android/server/display/igw;->G(I)V
+    invoke-virtual {v5, p2}, Lcom/oneplus/android/server/display/igw;->J(I)V
 
-    iget-object v5, p0, Lcom/oneplus/android/server/display/dma;->pba:Lcom/oneplus/android/server/display/ibl;
+    iget-object v5, p0, Lcom/oneplus/android/server/display/dma;->Gca:Lcom/oneplus/android/server/display/ibl;
 
     const/4 v6, 0x2
 
@@ -1557,7 +830,7 @@
 
     invoke-virtual {v5, p1}, Lcom/oneplus/android/server/display/igw;->setAnimator(Landroid/animation/ValueAnimator;)V
 
-    iget-object p1, p0, Lcom/oneplus/android/server/display/dma;->pba:Lcom/oneplus/android/server/display/ibl;
+    iget-object p1, p0, Lcom/oneplus/android/server/display/dma;->Gca:Lcom/oneplus/android/server/display/ibl;
 
     invoke-virtual {p1}, Lcom/oneplus/android/server/display/igw;->getAnimator()Landroid/animation/ValueAnimator;
 
@@ -1565,7 +838,7 @@
 
     invoke-virtual {p1, v0, v1}, Landroid/animation/ValueAnimator;->setDuration(J)Landroid/animation/ValueAnimator;
 
-    iget-object p1, p0, Lcom/oneplus/android/server/display/dma;->pba:Lcom/oneplus/android/server/display/ibl;
+    iget-object p1, p0, Lcom/oneplus/android/server/display/dma;->Gca:Lcom/oneplus/android/server/display/ibl;
 
     invoke-virtual {p1}, Lcom/oneplus/android/server/display/igw;->getAnimator()Landroid/animation/ValueAnimator;
 
@@ -1577,7 +850,7 @@
 
     invoke-virtual {p1, p2}, Landroid/animation/ValueAnimator;->setInterpolator(Landroid/animation/TimeInterpolator;)V
 
-    iget-object p1, p0, Lcom/oneplus/android/server/display/dma;->pba:Lcom/oneplus/android/server/display/ibl;
+    iget-object p1, p0, Lcom/oneplus/android/server/display/dma;->Gca:Lcom/oneplus/android/server/display/ibl;
 
     invoke-virtual {p1}, Lcom/oneplus/android/server/display/igw;->getAnimator()Landroid/animation/ValueAnimator;
 
@@ -1589,7 +862,7 @@
 
     invoke-virtual {p1, p2}, Landroid/animation/ValueAnimator;->addUpdateListener(Landroid/animation/ValueAnimator$AnimatorUpdateListener;)V
 
-    iget-object p1, p0, Lcom/oneplus/android/server/display/dma;->pba:Lcom/oneplus/android/server/display/ibl;
+    iget-object p1, p0, Lcom/oneplus/android/server/display/dma;->Gca:Lcom/oneplus/android/server/display/ibl;
 
     invoke-virtual {p1}, Lcom/oneplus/android/server/display/igw;->getAnimator()Landroid/animation/ValueAnimator;
 
@@ -1601,128 +874,13 @@
 
     invoke-virtual {p1, p2}, Landroid/animation/ValueAnimator;->addListener(Landroid/animation/Animator$AnimatorListener;)V
 
-    iget-object p0, p0, Lcom/oneplus/android/server/display/dma;->pba:Lcom/oneplus/android/server/display/ibl;
+    iget-object p0, p0, Lcom/oneplus/android/server/display/dma;->Gca:Lcom/oneplus/android/server/display/ibl;
 
     invoke-virtual {p0}, Lcom/oneplus/android/server/display/igw;->getAnimator()Landroid/animation/ValueAnimator;
 
     move-result-object p0
 
     invoke-virtual {p0}, Landroid/animation/ValueAnimator;->start()V
-
-    return-void
-.end method
-
-.method private cc(I)V
-    .locals 5
-
-    const/4 v0, 0x2
-
-    const-string v1, "OpColorGamutManager"
-
-    if-ne p1, v0, :cond_0
-
-    iget v2, p0, Lcom/oneplus/android/server/display/dma;->bba:I
-
-    if-ne v2, v0, :cond_0
-
-    const-string v0, "handleSFColorModeChange change video mode to narmal mode"
-
-    invoke-static {v1, v0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    const/4 v0, 0x0
-
-    iput v0, p0, Lcom/oneplus/android/server/display/dma;->bba:I
-
-    :cond_0
-    iget v0, p0, Lcom/oneplus/android/server/display/dma;->bba:I
-
-    iget v2, p0, Lcom/oneplus/android/server/display/dma;->eba:I
-
-    iget v3, p0, Lcom/oneplus/android/server/display/dma;->cba:I
-
-    invoke-virtual {p0, v0, v2, v3}, Lcom/oneplus/android/server/display/dma;->rtg(III)I
-
-    move-result v0
-
-    iget v2, p0, Lcom/oneplus/android/server/display/dma;->bba:I
-
-    iget v3, p0, Lcom/oneplus/android/server/display/dma;->cba:I
-
-    invoke-virtual {p0, v2, p1, v3}, Lcom/oneplus/android/server/display/dma;->rtg(III)I
-
-    move-result v2
-
-    new-instance v3, Ljava/lang/StringBuilder;
-
-    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v4, "handleSFColorModeChange colorMode = "
-
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v3, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    const-string v4, " fromLevel = "
-
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    const-string v4, " targetLevel = "
-
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v3, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v3
-
-    invoke-static {v1, v3}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    iput p1, p0, Lcom/oneplus/android/server/display/dma;->eba:I
-
-    if-ne v0, v2, :cond_1
-
-    return-void
-
-    :cond_1
-    iget p1, p0, Lcom/oneplus/android/server/display/dma;->bba:I
-
-    invoke-direct {p0, p1}, Lcom/oneplus/android/server/display/dma;->Wb(I)V
-
-    iget-object p1, p0, Lcom/oneplus/android/server/display/dma;->pba:Lcom/oneplus/android/server/display/ibl;
-
-    invoke-virtual {p1}, Lcom/oneplus/android/server/display/igw;->De()Z
-
-    move-result p1
-
-    if-eqz p1, :cond_2
-
-    iget v0, p0, Lcom/oneplus/android/server/display/dma;->gg:I
-
-    :cond_2
-    new-instance p1, Ljava/lang/StringBuilder;
-
-    invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v3, "handleSFColorModeChange fromLevel = "
-
-    invoke-virtual {p1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p1, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p1, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p1
-
-    invoke-static {v1, p1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    invoke-direct {p0, v0, v2}, Lcom/oneplus/android/server/display/dma;->bud(II)V
 
     return-void
 .end method
@@ -1759,17 +917,17 @@
     invoke-static {v1, v0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_0
-    iput p1, p0, Lcom/oneplus/android/server/display/dma;->gg:I
+    iput p1, p0, Lcom/oneplus/android/server/display/dma;->Cg:I
 
     invoke-direct {p0, p1, p2}, Lcom/oneplus/android/server/display/dma;->vju(II)[[I
 
     move-result-object p1
 
-    iput-object p1, p0, Lcom/oneplus/android/server/display/dma;->kba:[[I
+    iput-object p1, p0, Lcom/oneplus/android/server/display/dma;->Bca:[[I
 
-    iget-object p1, p0, Lcom/oneplus/android/server/display/dma;->Yaa:Lcom/oneplus/android/server/display/bio;
+    iget-object p1, p0, Lcom/oneplus/android/server/display/dma;->oca:Lcom/oneplus/android/server/display/bio;
 
-    iget-object p2, p0, Lcom/oneplus/android/server/display/dma;->kba:[[I
+    iget-object p2, p0, Lcom/oneplus/android/server/display/dma;->Bca:[[I
 
     invoke-direct {p0}, Lcom/oneplus/android/server/display/dma;->getWhitePoint()[I
 
@@ -1777,12 +935,108 @@
 
     invoke-virtual {p1, p2, v0}, Lcom/oneplus/android/server/display/bio;->zta([[I[I)V
 
-    iget-object p1, p0, Lcom/oneplus/android/server/display/dma;->pba:Lcom/oneplus/android/server/display/ibl;
+    iget-object p1, p0, Lcom/oneplus/android/server/display/dma;->Gca:Lcom/oneplus/android/server/display/ibl;
 
-    iget-object p0, p0, Lcom/oneplus/android/server/display/dma;->Yaa:Lcom/oneplus/android/server/display/bio;
+    iget-object p0, p0, Lcom/oneplus/android/server/display/dma;->oca:Lcom/oneplus/android/server/display/bio;
 
     invoke-virtual {p1, p0}, Lcom/oneplus/android/server/display/ibl;->zta(Lcom/oneplus/android/server/display/bio;)V
 
+    return-void
+.end method
+
+.method private gc(I)V
+    .locals 2
+
+    iget v0, p0, Lcom/oneplus/android/server/display/dma;->vca:I
+
+    const/4 v1, 0x2
+
+    if-ne v0, v1, :cond_0
+
+    return-void
+
+    :cond_0
+    const/4 v0, 0x1
+
+    if-eq p1, v1, :cond_2
+
+    if-ne p1, v0, :cond_1
+
+    goto :goto_0
+
+    :cond_1
+    iget-boolean p1, p0, Lcom/oneplus/android/server/display/dma;->Aca:Z
+
+    if-eqz p1, :cond_6
+
+    iget-object p1, p0, Lcom/oneplus/android/server/display/dma;->mCdsi:Lcom/oneplus/android/server/display/OpColorDisplayService$you;
+
+    const/4 v0, 0x0
+
+    if-eqz p1, :cond_5
+
+    invoke-virtual {p1, v0}, Lcom/oneplus/android/server/display/OpColorDisplayService$you;->E(Z)V
+
+    goto :goto_2
+
+    :cond_2
+    :goto_0
+    iget-boolean p1, p0, Lcom/oneplus/android/server/display/dma;->zca:Z
+
+    if-eqz p1, :cond_3
+
+    iget-object p1, p0, Lcom/oneplus/android/server/display/dma;->mCdsi:Lcom/oneplus/android/server/display/OpColorDisplayService$you;
+
+    if-eqz p1, :cond_5
+
+    invoke-virtual {p1}, Lcom/oneplus/android/server/display/OpColorDisplayService$you;->He()V
+
+    goto :goto_2
+
+    :cond_3
+    iget-object p1, p0, Lcom/oneplus/android/server/display/dma;->mColorTintManager:Lcom/oneplus/android/server/display/bvj;
+
+    if-eqz p1, :cond_5
+
+    iget p1, p0, Lcom/oneplus/android/server/display/dma;->tca:I
+
+    if-nez p1, :cond_4
+
+    iget-object p1, p0, Lcom/oneplus/android/server/display/dma;->mCdsi:Lcom/oneplus/android/server/display/OpColorDisplayService$you;
+
+    if-eqz p1, :cond_5
+
+    iget-object v1, p0, Lcom/oneplus/android/server/display/dma;->Hca:Lcom/oneplus/android/server/display/gwm;
+
+    invoke-virtual {v1}, Lcom/oneplus/android/server/display/gwm;->bf()I
+
+    move-result v1
+
+    :goto_1
+    invoke-virtual {p1, v1}, Lcom/oneplus/android/server/display/OpColorDisplayService$you;->H(I)V
+
+    goto :goto_2
+
+    :cond_4
+    if-ne p1, v0, :cond_5
+
+    iget-object p1, p0, Lcom/oneplus/android/server/display/dma;->mCdsi:Lcom/oneplus/android/server/display/OpColorDisplayService$you;
+
+    if-eqz p1, :cond_5
+
+    iget-object v1, p0, Lcom/oneplus/android/server/display/dma;->Hca:Lcom/oneplus/android/server/display/gwm;
+
+    invoke-virtual {v1}, Lcom/oneplus/android/server/display/gwm;->af()I
+
+    move-result v1
+
+    goto :goto_1
+
+    :cond_5
+    :goto_2
+    iput-boolean v0, p0, Lcom/oneplus/android/server/display/dma;->Aca:Z
+
+    :cond_6
     return-void
 .end method
 
@@ -1795,11 +1049,11 @@
 
     fill-array-data v0, :array_0
 
-    iget-boolean v1, p0, Lcom/oneplus/android/server/display/dma;->iba:Z
+    iget-boolean v1, p0, Lcom/oneplus/android/server/display/dma;->zca:Z
 
     if-nez v1, :cond_5
 
-    iget v1, p0, Lcom/oneplus/android/server/display/dma;->eba:I
+    iget v1, p0, Lcom/oneplus/android/server/display/dma;->vca:I
 
     const/4 v2, 0x2
 
@@ -1808,7 +1062,7 @@
     goto :goto_2
 
     :cond_0
-    iget v1, p0, Lcom/oneplus/android/server/display/dma;->bba:I
+    iget v1, p0, Lcom/oneplus/android/server/display/dma;->sca:I
 
     if-eq v1, v2, :cond_4
 
@@ -1819,7 +1073,7 @@
     goto :goto_1
 
     :cond_1
-    iget v1, p0, Lcom/oneplus/android/server/display/dma;->cba:I
+    iget v1, p0, Lcom/oneplus/android/server/display/dma;->tca:I
 
     if-eqz v1, :cond_3
 
@@ -1828,18 +1082,18 @@
     goto :goto_0
 
     :cond_2
-    iget-object v0, p0, Lcom/oneplus/android/server/display/dma;->qba:Lcom/oneplus/android/server/display/gwm;
+    iget-object v0, p0, Lcom/oneplus/android/server/display/dma;->Hca:Lcom/oneplus/android/server/display/gwm;
 
-    invoke-virtual {v0}, Lcom/oneplus/android/server/display/gwm;->Se()[I
+    invoke-virtual {v0}, Lcom/oneplus/android/server/display/gwm;->_e()[I
 
     move-result-object v0
 
     goto :goto_0
 
     :cond_3
-    iget-object v0, p0, Lcom/oneplus/android/server/display/dma;->qba:Lcom/oneplus/android/server/display/gwm;
+    iget-object v0, p0, Lcom/oneplus/android/server/display/dma;->Hca:Lcom/oneplus/android/server/display/gwm;
 
-    invoke-virtual {v0}, Lcom/oneplus/android/server/display/gwm;->Ye()[I
+    invoke-virtual {v0}, Lcom/oneplus/android/server/display/gwm;->ff()[I
 
     move-result-object v0
 
@@ -1850,9 +1104,9 @@
 
     :cond_4
     :goto_1
-    iget-object v0, p0, Lcom/oneplus/android/server/display/dma;->qba:Lcom/oneplus/android/server/display/gwm;
+    iget-object v0, p0, Lcom/oneplus/android/server/display/dma;->Hca:Lcom/oneplus/android/server/display/gwm;
 
-    invoke-virtual {v0}, Lcom/oneplus/android/server/display/gwm;->Se()[I
+    invoke-virtual {v0}, Lcom/oneplus/android/server/display/gwm;->_e()[I
 
     move-result-object v0
 
@@ -1874,6 +1128,81 @@
     .end array-data
 .end method
 
+.method private hc(I)Ljava/lang/String;
+    .locals 0
+
+    if-eqz p1, :cond_2
+
+    const/4 p0, 0x1
+
+    if-eq p1, p0, :cond_1
+
+    const/4 p0, 0x2
+
+    if-eq p1, p0, :cond_0
+
+    const-string p0, "UNKNOWN"
+
+    return-object p0
+
+    :cond_0
+    const-string p0, "CG_NATIVE_MODE"
+
+    return-object p0
+
+    :cond_1
+    const-string p0, "CG_DISPLAY_P3_MODE"
+
+    return-object p0
+
+    :cond_2
+    const-string p0, "CG_SRGB_MODE"
+
+    return-object p0
+.end method
+
+.method private ic(I)Ljava/lang/String;
+    .locals 0
+
+    if-eqz p1, :cond_3
+
+    const/4 p0, 0x1
+
+    if-eq p1, p0, :cond_2
+
+    const/4 p0, 0x2
+
+    if-eq p1, p0, :cond_1
+
+    const/4 p0, 0x3
+
+    if-eq p1, p0, :cond_0
+
+    const-string p0, "UNKNOWN"
+
+    return-object p0
+
+    :cond_0
+    const-string p0, "SF_NATIVE_MODE"
+
+    return-object p0
+
+    :cond_1
+    const-string p0, "SF_HDR_MODE"
+
+    return-object p0
+
+    :cond_2
+    const-string p0, "SF_P3_MODE"
+
+    return-object p0
+
+    :cond_3
+    const-string p0, "SF_SRGB_MODE"
+
+    return-object p0
+.end method
+
 .method private irq(IZ)V
     .locals 7
 
@@ -1885,7 +1214,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-direct {p0, p1}, Lcom/oneplus/android/server/display/dma;->Zb(I)Ljava/lang/String;
+    invoke-direct {p0, p1}, Lcom/oneplus/android/server/display/dma;->jc(I)Ljava/lang/String;
 
     move-result-object v1
 
@@ -1901,7 +1230,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean v1, p0, Lcom/oneplus/android/server/display/dma;->iba:Z
+    iget-boolean v1, p0, Lcom/oneplus/android/server/display/dma;->zca:Z
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -1909,7 +1238,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/display/dma;->Sr()Z
+    invoke-direct {p0}, Lcom/oneplus/android/server/display/dma;->ls()Z
 
     move-result v1
 
@@ -1919,7 +1248,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/display/dma;->Rr()Z
+    invoke-direct {p0}, Lcom/oneplus/android/server/display/dma;->ks()Z
 
     move-result v1
 
@@ -1929,7 +1258,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget v1, p0, Lcom/oneplus/android/server/display/dma;->bba:I
+    iget v1, p0, Lcom/oneplus/android/server/display/dma;->sca:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -1959,7 +1288,7 @@
 
     invoke-static {v0, v3, p1, v4}, Landroid/provider/Settings$Secure;->putIntForUser(Landroid/content/ContentResolver;Ljava/lang/String;II)Z
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/display/dma;->Sr()Z
+    invoke-direct {p0}, Lcom/oneplus/android/server/display/dma;->ls()Z
 
     move-result v0
 
@@ -1969,7 +1298,7 @@
 
     if-eq p1, v0, :cond_0
 
-    iget v3, p0, Lcom/oneplus/android/server/display/dma;->dba:I
+    iget v3, p0, Lcom/oneplus/android/server/display/dma;->uca:I
 
     if-ne v3, v0, :cond_1
 
@@ -1977,7 +1306,7 @@
     return-void
 
     :cond_1
-    invoke-direct {p0}, Lcom/oneplus/android/server/display/dma;->Rr()Z
+    invoke-direct {p0}, Lcom/oneplus/android/server/display/dma;->ks()Z
 
     move-result v0
 
@@ -1987,7 +1316,7 @@
 
     if-eq p1, v3, :cond_2
 
-    iget v0, p0, Lcom/oneplus/android/server/display/dma;->dba:I
+    iget v0, p0, Lcom/oneplus/android/server/display/dma;->uca:I
 
     if-ne v0, v3, :cond_3
 
@@ -1995,21 +1324,21 @@
     return-void
 
     :cond_3
-    invoke-direct {p0, p1}, Lcom/oneplus/android/server/display/dma;->Wb(I)V
+    invoke-direct {p0, p1}, Lcom/oneplus/android/server/display/dma;->gc(I)V
 
-    iget v0, p0, Lcom/oneplus/android/server/display/dma;->dba:I
+    iget v0, p0, Lcom/oneplus/android/server/display/dma;->uca:I
 
-    iget v4, p0, Lcom/oneplus/android/server/display/dma;->eba:I
+    iget v4, p0, Lcom/oneplus/android/server/display/dma;->vca:I
 
-    iget v5, p0, Lcom/oneplus/android/server/display/dma;->cba:I
+    iget v5, p0, Lcom/oneplus/android/server/display/dma;->tca:I
 
     invoke-virtual {p0, v0, v4, v5}, Lcom/oneplus/android/server/display/dma;->rtg(III)I
 
     move-result v0
 
-    iget v4, p0, Lcom/oneplus/android/server/display/dma;->eba:I
+    iget v4, p0, Lcom/oneplus/android/server/display/dma;->vca:I
 
-    iget v5, p0, Lcom/oneplus/android/server/display/dma;->cba:I
+    iget v5, p0, Lcom/oneplus/android/server/display/dma;->tca:I
 
     invoke-virtual {p0, p1, v4, v5}, Lcom/oneplus/android/server/display/dma;->rtg(III)I
 
@@ -2038,7 +1367,7 @@
 
     invoke-virtual {v5, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-direct {p0, p1}, Lcom/oneplus/android/server/display/dma;->Zb(I)Ljava/lang/String;
+    invoke-direct {p0, p1}, Lcom/oneplus/android/server/display/dma;->jc(I)Ljava/lang/String;
 
     move-result-object v1
 
@@ -2048,9 +1377,9 @@
 
     invoke-virtual {v5, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget v1, p0, Lcom/oneplus/android/server/display/dma;->dba:I
+    iget v1, p0, Lcom/oneplus/android/server/display/dma;->uca:I
 
-    invoke-direct {p0, v1}, Lcom/oneplus/android/server/display/dma;->Zb(I)Ljava/lang/String;
+    invoke-direct {p0, v1}, Lcom/oneplus/android/server/display/dma;->jc(I)Ljava/lang/String;
 
     move-result-object v1
 
@@ -2060,7 +1389,7 @@
 
     invoke-virtual {v5, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/display/dma;->Ur()Z
+    invoke-direct {p0}, Lcom/oneplus/android/server/display/dma;->ns()Z
 
     move-result v1
 
@@ -2076,12 +1405,12 @@
 
     if-eq p1, v1, :cond_5
 
-    iget p1, p0, Lcom/oneplus/android/server/display/dma;->dba:I
+    iget p1, p0, Lcom/oneplus/android/server/display/dma;->uca:I
 
     if-ne p1, v1, :cond_6
 
     :cond_5
-    invoke-direct {p0}, Lcom/oneplus/android/server/display/dma;->Ur()Z
+    invoke-direct {p0}, Lcom/oneplus/android/server/display/dma;->ns()Z
 
     move-result p1
 
@@ -2090,7 +1419,7 @@
     move p2, v3
 
     :cond_6
-    iget-object p1, p0, Lcom/oneplus/android/server/display/dma;->pba:Lcom/oneplus/android/server/display/ibl;
+    iget-object p1, p0, Lcom/oneplus/android/server/display/dma;->Gca:Lcom/oneplus/android/server/display/ibl;
 
     if-eqz p2, :cond_7
 
@@ -2103,13 +1432,13 @@
     goto :goto_0
 
     :cond_7
-    invoke-virtual {p1}, Lcom/oneplus/android/server/display/igw;->De()Z
+    invoke-virtual {p1}, Lcom/oneplus/android/server/display/igw;->Le()Z
 
     move-result p1
 
     if-eqz p1, :cond_8
 
-    iget v0, p0, Lcom/oneplus/android/server/display/dma;->gg:I
+    iget v0, p0, Lcom/oneplus/android/server/display/dma;->Cg:I
 
     :cond_8
     invoke-direct {p0, v0, v4}, Lcom/oneplus/android/server/display/dma;->bud(II)V
@@ -2118,10 +1447,681 @@
     return-void
 .end method
 
+.method private is()Z
+    .locals 2
+
+    const/4 p0, 0x0
+
+    const-string v0, "vendor.sys.blacklist.layer"
+
+    invoke-static {v0, p0}, Landroid/os/SystemProperties;->getInt(Ljava/lang/String;I)I
+
+    move-result v0
+
+    const/4 v1, 0x1
+
+    if-ne v0, v1, :cond_0
+
+    move p0, v1
+
+    :cond_0
+    return p0
+.end method
+
+.method private jc(I)Ljava/lang/String;
+    .locals 0
+
+    if-eqz p1, :cond_4
+
+    const/4 p0, 0x1
+
+    if-eq p1, p0, :cond_3
+
+    const/4 p0, 0x2
+
+    if-eq p1, p0, :cond_2
+
+    const/4 p0, 0x3
+
+    if-eq p1, p0, :cond_1
+
+    const/4 p0, 0x4
+
+    if-eq p1, p0, :cond_0
+
+    const-string p0, "UNKNOWN"
+
+    return-object p0
+
+    :cond_0
+    const-string p0, "SC_FP"
+
+    return-object p0
+
+    :cond_1
+    const-string p0, "SC_READ"
+
+    return-object p0
+
+    :cond_2
+    const-string p0, "SC_VIDEO"
+
+    return-object p0
+
+    :cond_3
+    const-string p0, "SC_GAME"
+
+    return-object p0
+
+    :cond_4
+    const-string p0, "SC_NORMAL"
+
+    return-object p0
+.end method
+
+.method private js()Z
+    .locals 2
+
+    const/4 p0, 0x0
+
+    const-string v0, "vendor.sys.hardware.decoding"
+
+    invoke-static {v0, p0}, Landroid/os/SystemProperties;->getInt(Ljava/lang/String;I)I
+
+    move-result v0
+
+    const/4 v1, 0x1
+
+    if-ne v0, v1, :cond_0
+
+    move p0, v1
+
+    :cond_0
+    return p0
+.end method
+
+.method private kc(I)V
+    .locals 3
+
+    iget-boolean v0, p0, Lcom/oneplus/android/server/display/dma;->wca:Z
+
+    if-nez v0, :cond_4
+
+    iget-boolean v0, p0, Lcom/oneplus/android/server/display/dma;->Eca:Z
+
+    if-nez v0, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    iget v0, p0, Lcom/oneplus/android/server/display/dma;->Cg:I
+
+    invoke-direct {p0, v0, p1}, Lcom/oneplus/android/server/display/dma;->vju(II)[[I
+
+    move-result-object v0
+
+    sget-boolean v1, Lcom/oneplus/android/server/display/dma;->DEBUG:Z
+
+    if-eqz v1, :cond_1
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v2, "handleAdjustLightColorGamut mCurrentScenario = "
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget v2, p0, Lcom/oneplus/android/server/display/dma;->sca:I
+
+    invoke-direct {p0, v2}, Lcom/oneplus/android/server/display/dma;->jc(I)Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v2, " mCurrentBaseMode = "
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget v2, p0, Lcom/oneplus/android/server/display/dma;->tca:I
+
+    invoke-direct {p0, v2}, Lcom/oneplus/android/server/display/dma;->hc(I)Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    const-string v2, "OpColorGamutManager"
+
+    invoke-static {v2, v1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    :cond_1
+    iget-object v1, p0, Lcom/oneplus/android/server/display/dma;->Bca:[[I
+
+    invoke-direct {p0, v0, v1}, Lcom/oneplus/android/server/display/dma;->you([[I[[I)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_2
+
+    return-void
+
+    :cond_2
+    iget-object v0, p0, Lcom/oneplus/android/server/display/dma;->Gca:Lcom/oneplus/android/server/display/ibl;
+
+    invoke-virtual {v0}, Lcom/oneplus/android/server/display/igw;->Le()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_3
+
+    iget-object p1, p0, Lcom/oneplus/android/server/display/dma;->Gca:Lcom/oneplus/android/server/display/ibl;
+
+    invoke-virtual {p1}, Lcom/oneplus/android/server/display/igw;->Je()I
+
+    iget-object p1, p0, Lcom/oneplus/android/server/display/dma;->Gca:Lcom/oneplus/android/server/display/ibl;
+
+    invoke-virtual {p1}, Lcom/oneplus/android/server/display/igw;->Ke()I
+
+    move-result p1
+
+    iget v0, p0, Lcom/oneplus/android/server/display/dma;->Cg:I
+
+    invoke-direct {p0, v0, p1}, Lcom/oneplus/android/server/display/dma;->bud(II)V
+
+    goto :goto_0
+
+    :cond_3
+    iget v0, p0, Lcom/oneplus/android/server/display/dma;->Cg:I
+
+    invoke-direct {p0, v0, p1}, Lcom/oneplus/android/server/display/dma;->cgv(II)V
+
+    :cond_4
+    :goto_0
+    return-void
+.end method
+
+.method private ks()Z
+    .locals 0
+
+    const/4 p0, 0x1
+
+    return p0
+.end method
+
+.method private lc(I)V
+    .locals 6
+
+    iget-object v0, p0, Lcom/oneplus/android/server/display/dma;->mContext:Landroid/content/Context;
+
+    invoke-virtual {v0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object v0
+
+    const/4 v1, 0x0
+
+    const-string v2, "screen_color_mode_advanced_settings_value"
+
+    invoke-static {v0, v2, v1}, Landroid/provider/Settings$System;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
+
+    move-result v0
+
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v3, "handleColorModeChange mCurrentBaseMode = "
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget v3, p0, Lcom/oneplus/android/server/display/dma;->tca:I
+
+    invoke-direct {p0, v3}, Lcom/oneplus/android/server/display/dma;->hc(I)Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v3, " colorMode = "
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    const-string v3, " customColorMode = "
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    const-string v3, "OpColorGamutManager"
+
+    invoke-static {v3, v2}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    const/4 v2, 0x2
+
+    const/4 v4, 0x1
+
+    if-eq p1, v4, :cond_4
+
+    const/4 v5, 0x3
+
+    if-eq p1, v5, :cond_1
+
+    const/16 v0, 0xa
+
+    if-eq p1, v0, :cond_0
+
+    move p1, v2
+
+    goto :goto_1
+
+    :cond_0
+    iput-boolean v1, p0, Lcom/oneplus/android/server/display/dma;->zca:Z
+
+    move p1, v1
+
+    goto :goto_1
+
+    :cond_1
+    if-ne v0, v4, :cond_2
+
+    move p1, v1
+
+    goto :goto_0
+
+    :cond_2
+    if-ne v0, v2, :cond_3
+
+    move p1, v4
+
+    goto :goto_0
+
+    :cond_3
+    move p1, v2
+
+    :goto_0
+    iput-boolean v4, p0, Lcom/oneplus/android/server/display/dma;->zca:Z
+
+    goto :goto_1
+
+    :cond_4
+    iput-boolean v1, p0, Lcom/oneplus/android/server/display/dma;->zca:Z
+
+    move p1, v4
+
+    :goto_1
+    if-eq p1, v2, :cond_5
+
+    move v1, v4
+
+    :cond_5
+    iput-boolean v1, p0, Lcom/oneplus/android/server/display/dma;->Eca:Z
+
+    iput p1, p0, Lcom/oneplus/android/server/display/dma;->tca:I
+
+    iget p1, p0, Lcom/oneplus/android/server/display/dma;->sca:I
+
+    iget v0, p0, Lcom/oneplus/android/server/display/dma;->vca:I
+
+    iget v1, p0, Lcom/oneplus/android/server/display/dma;->tca:I
+
+    invoke-virtual {p0, p1, v0, v1}, Lcom/oneplus/android/server/display/dma;->rtg(III)I
+
+    move-result p1
+
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v1, "handleColorModeChange level = "
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {v3, v0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    iget v0, p0, Lcom/oneplus/android/server/display/dma;->mBrightness:I
+
+    invoke-direct {p0, p1, v0}, Lcom/oneplus/android/server/display/dma;->cgv(II)V
+
+    return-void
+.end method
+
+.method private ls()Z
+    .locals 1
+
+    const-string p0, "persist.sys.oem.vendor.media.vpp.enable"
+
+    const/4 v0, 0x0
+
+    invoke-static {p0, v0}, Landroid/os/SystemProperties;->getBoolean(Ljava/lang/String;Z)Z
+
+    move-result p0
+
+    return p0
+.end method
+
+.method private mc(I)V
+    .locals 3
+
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v1, "handleRefreshRateChange refreshRate = "
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    const-string v1, " mediacodec status = "
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-boolean v1, p0, Lcom/oneplus/android/server/display/dma;->Cca:Z
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    const-string v1, " mSFVideoScene = "
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-boolean v1, p0, Lcom/oneplus/android/server/display/dma;->Dca:Z
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    const-string v1, " mCurrentScenario = "
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget v1, p0, Lcom/oneplus/android/server/display/dma;->sca:I
+
+    invoke-direct {p0, v1}, Lcom/oneplus/android/server/display/dma;->jc(I)Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    const-string v1, "OpColorGamutManager"
+
+    invoke-static {v1, v0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    iget-boolean v0, p0, Lcom/oneplus/android/server/display/dma;->Dca:Z
+
+    if-eqz v0, :cond_0
+
+    return-void
+
+    :cond_0
+    const/4 v0, 0x1
+
+    const/4 v1, 0x2
+
+    const/4 v2, 0x0
+
+    if-ne p1, v0, :cond_1
+
+    iget-boolean p1, p0, Lcom/oneplus/android/server/display/dma;->Cca:Z
+
+    if-eqz p1, :cond_3
+
+    iget p1, p0, Lcom/oneplus/android/server/display/dma;->vca:I
+
+    if-eq p1, v1, :cond_3
+
+    iget-boolean p1, p0, Lcom/oneplus/android/server/display/dma;->Fca:Z
+
+    if-nez p1, :cond_3
+
+    invoke-direct {p0}, Lcom/oneplus/android/server/display/dma;->is()Z
+
+    move-result p1
+
+    if-nez p1, :cond_3
+
+    invoke-direct {p0}, Lcom/oneplus/android/server/display/dma;->ls()Z
+
+    move-result p1
+
+    if-eqz p1, :cond_3
+
+    invoke-virtual {p0, v1, v2}, Lcom/oneplus/android/server/display/dma;->bvj(IZ)V
+
+    goto :goto_0
+
+    :cond_1
+    iget p1, p0, Lcom/oneplus/android/server/display/dma;->sca:I
+
+    if-ne p1, v1, :cond_2
+
+    invoke-virtual {p0, v2, v2}, Lcom/oneplus/android/server/display/dma;->bvj(IZ)V
+
+    :cond_2
+    iput-boolean v2, p0, Lcom/oneplus/android/server/display/dma;->Cca:Z
+
+    :cond_3
+    :goto_0
+    return-void
+.end method
+
+.method private ms()Z
+    .locals 2
+
+    const/4 p0, 0x1
+
+    new-array p0, p0, [I
+
+    const/4 v0, 0x0
+
+    const/16 v1, 0xdd
+
+    aput v1, p0, v0
+
+    invoke-static {p0}, Landroid/util/OpFeatures;->isSupport([I)Z
+
+    move-result p0
+
+    return p0
+.end method
+
+.method private nc(I)V
+    .locals 5
+
+    const/4 v0, 0x2
+
+    const-string v1, "OpColorGamutManager"
+
+    if-ne p1, v0, :cond_0
+
+    iget v2, p0, Lcom/oneplus/android/server/display/dma;->sca:I
+
+    if-ne v2, v0, :cond_0
+
+    const-string v0, "handleSFColorModeChange change video mode to narmal mode"
+
+    invoke-static {v1, v0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    const/4 v0, 0x0
+
+    iput v0, p0, Lcom/oneplus/android/server/display/dma;->sca:I
+
+    :cond_0
+    iget v0, p0, Lcom/oneplus/android/server/display/dma;->sca:I
+
+    iget v2, p0, Lcom/oneplus/android/server/display/dma;->vca:I
+
+    iget v3, p0, Lcom/oneplus/android/server/display/dma;->tca:I
+
+    invoke-virtual {p0, v0, v2, v3}, Lcom/oneplus/android/server/display/dma;->rtg(III)I
+
+    move-result v0
+
+    iget v2, p0, Lcom/oneplus/android/server/display/dma;->sca:I
+
+    iget v3, p0, Lcom/oneplus/android/server/display/dma;->tca:I
+
+    invoke-virtual {p0, v2, p1, v3}, Lcom/oneplus/android/server/display/dma;->rtg(III)I
+
+    move-result v2
+
+    new-instance v3, Ljava/lang/StringBuilder;
+
+    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v4, "handleSFColorModeChange colorMode = "
+
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v3, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    const-string v4, " fromLevel = "
+
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    const-string v4, " targetLevel = "
+
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v3, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-static {v1, v3}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    iput p1, p0, Lcom/oneplus/android/server/display/dma;->vca:I
+
+    if-ne v0, v2, :cond_1
+
+    return-void
+
+    :cond_1
+    iget p1, p0, Lcom/oneplus/android/server/display/dma;->sca:I
+
+    invoke-direct {p0, p1}, Lcom/oneplus/android/server/display/dma;->gc(I)V
+
+    iget-object p1, p0, Lcom/oneplus/android/server/display/dma;->Gca:Lcom/oneplus/android/server/display/ibl;
+
+    invoke-virtual {p1}, Lcom/oneplus/android/server/display/igw;->Le()Z
+
+    move-result p1
+
+    if-eqz p1, :cond_2
+
+    iget v0, p0, Lcom/oneplus/android/server/display/dma;->Cg:I
+
+    :cond_2
+    new-instance p1, Ljava/lang/StringBuilder;
+
+    invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v3, "handleSFColorModeChange fromLevel = "
+
+    invoke-virtual {p1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p1, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p1, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-static {v1, p1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    invoke-direct {p0, v0, v2}, Lcom/oneplus/android/server/display/dma;->bud(II)V
+
+    return-void
+.end method
+
+.method private ns()Z
+    .locals 2
+
+    iget-object v0, p0, Lcom/oneplus/android/server/display/dma;->Ica:Lcom/oneplus/android/server/display/OpColorModeManager;
+
+    const/4 v1, -0x2
+
+    invoke-virtual {v0, v1}, Lcom/oneplus/android/server/display/OpColorModeManager;->O(I)Z
+
+    move-result v0
+
+    if-nez v0, :cond_1
+
+    iget-object v0, p0, Lcom/oneplus/android/server/display/dma;->Ica:Lcom/oneplus/android/server/display/OpColorModeManager;
+
+    invoke-virtual {v0, v1}, Lcom/oneplus/android/server/display/OpColorModeManager;->Q(I)Z
+
+    move-result v0
+
+    if-nez v0, :cond_1
+
+    iget-object v0, p0, Lcom/oneplus/android/server/display/dma;->Ica:Lcom/oneplus/android/server/display/OpColorModeManager;
+
+    invoke-virtual {v0, v1}, Lcom/oneplus/android/server/display/OpColorModeManager;->R(I)Z
+
+    move-result v0
+
+    if-nez v0, :cond_1
+
+    iget-object v0, p0, Lcom/oneplus/android/server/display/dma;->Ica:Lcom/oneplus/android/server/display/OpColorModeManager;
+
+    invoke-virtual {v0, v1}, Lcom/oneplus/android/server/display/OpColorModeManager;->P(I)Z
+
+    move-result v0
+
+    if-nez v0, :cond_1
+
+    iget-object p0, p0, Lcom/oneplus/android/server/display/dma;->Ica:Lcom/oneplus/android/server/display/OpColorModeManager;
+
+    invoke-virtual {p0, v1}, Lcom/oneplus/android/server/display/OpColorModeManager;->N(I)Z
+
+    move-result p0
+
+    if-eqz p0, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    const/4 p0, 0x0
+
+    goto :goto_1
+
+    :cond_1
+    :goto_0
+    const/4 p0, 0x1
+
+    :goto_1
+    return p0
+.end method
+
 .method static synthetic rtg(Lcom/oneplus/android/server/display/dma;)Lcom/oneplus/android/server/display/gwm;
     .locals 0
 
-    iget-object p0, p0, Lcom/oneplus/android/server/display/dma;->qba:Lcom/oneplus/android/server/display/gwm;
+    iget-object p0, p0, Lcom/oneplus/android/server/display/dma;->Hca:Lcom/oneplus/android/server/display/gwm;
 
     return-object p0
 .end method
@@ -2129,7 +2129,7 @@
 .method static synthetic rtg(Lcom/oneplus/android/server/display/dma;I)V
     .locals 0
 
-    invoke-direct {p0, p1}, Lcom/oneplus/android/server/display/dma;->bc(I)V
+    invoke-direct {p0, p1}, Lcom/oneplus/android/server/display/dma;->mc(I)V
 
     return-void
 .end method
@@ -2137,7 +2137,7 @@
 .method static synthetic rtg(Lcom/oneplus/android/server/display/dma;Z)V
     .locals 0
 
-    invoke-direct {p0, p1}, Lcom/oneplus/android/server/display/dma;->Na(Z)V
+    invoke-direct {p0, p1}, Lcom/oneplus/android/server/display/dma;->Ra(Z)V
 
     return-void
 .end method
@@ -2145,7 +2145,7 @@
 .method static synthetic sis(Lcom/oneplus/android/server/display/dma;)Lcom/oneplus/android/server/display/bio;
     .locals 0
 
-    iget-object p0, p0, Lcom/oneplus/android/server/display/dma;->Yaa:Lcom/oneplus/android/server/display/bio;
+    iget-object p0, p0, Lcom/oneplus/android/server/display/dma;->oca:Lcom/oneplus/android/server/display/bio;
 
     return-object p0
 .end method
@@ -2153,7 +2153,7 @@
 .method static synthetic sis(Lcom/oneplus/android/server/display/dma;I)V
     .locals 0
 
-    invoke-direct {p0, p1}, Lcom/oneplus/android/server/display/dma;->ac(I)V
+    invoke-direct {p0, p1}, Lcom/oneplus/android/server/display/dma;->lc(I)V
 
     return-void
 .end method
@@ -2161,7 +2161,7 @@
 .method static synthetic sis(Lcom/oneplus/android/server/display/dma;Z)V
     .locals 0
 
-    invoke-direct {p0, p1}, Lcom/oneplus/android/server/display/dma;->Ra(Z)V
+    invoke-direct {p0, p1}, Lcom/oneplus/android/server/display/dma;->Va(Z)V
 
     return-void
 .end method
@@ -2169,7 +2169,7 @@
 .method static synthetic ssp(Lcom/oneplus/android/server/display/dma;Z)V
     .locals 0
 
-    invoke-direct {p0, p1}, Lcom/oneplus/android/server/display/dma;->Oa(Z)V
+    invoke-direct {p0, p1}, Lcom/oneplus/android/server/display/dma;->Sa(Z)V
 
     return-void
 .end method
@@ -2177,7 +2177,7 @@
 .method static synthetic tsu(Lcom/oneplus/android/server/display/dma;)Lcom/oneplus/android/server/display/ibl;
     .locals 0
 
-    iget-object p0, p0, Lcom/oneplus/android/server/display/dma;->pba:Lcom/oneplus/android/server/display/ibl;
+    iget-object p0, p0, Lcom/oneplus/android/server/display/dma;->Gca:Lcom/oneplus/android/server/display/ibl;
 
     return-object p0
 .end method
@@ -2185,7 +2185,7 @@
 .method static synthetic tsu(Lcom/oneplus/android/server/display/dma;I)V
     .locals 0
 
-    invoke-direct {p0, p1}, Lcom/oneplus/android/server/display/dma;->cc(I)V
+    invoke-direct {p0, p1}, Lcom/oneplus/android/server/display/dma;->nc(I)V
 
     return-void
 .end method
@@ -2193,7 +2193,7 @@
 .method static synthetic tsu(Lcom/oneplus/android/server/display/dma;Z)V
     .locals 0
 
-    invoke-direct {p0, p1}, Lcom/oneplus/android/server/display/dma;->Ta(Z)V
+    invoke-direct {p0, p1}, Lcom/oneplus/android/server/display/dma;->Xa(Z)V
 
     return-void
 .end method
@@ -2237,9 +2237,9 @@
 .method private vju(II)[[I
     .locals 2
 
-    iget-object v0, p0, Lcom/oneplus/android/server/display/dma;->qba:Lcom/oneplus/android/server/display/gwm;
+    iget-object v0, p0, Lcom/oneplus/android/server/display/dma;->Hca:Lcom/oneplus/android/server/display/gwm;
 
-    invoke-virtual {v0}, Lcom/oneplus/android/server/display/gwm;->We()[[I
+    invoke-virtual {v0}, Lcom/oneplus/android/server/display/gwm;->df()[[I
 
     move-result-object v0
 
@@ -2263,41 +2263,41 @@
 
     if-eq p1, p2, :cond_4
 
-    iget-object v0, p0, Lcom/oneplus/android/server/display/dma;->kba:[[I
+    iget-object v0, p0, Lcom/oneplus/android/server/display/dma;->Bca:[[I
 
     goto :goto_0
 
     :cond_0
-    iget-object p1, p0, Lcom/oneplus/android/server/display/dma;->qba:Lcom/oneplus/android/server/display/gwm;
+    iget-object p1, p0, Lcom/oneplus/android/server/display/dma;->Hca:Lcom/oneplus/android/server/display/gwm;
 
-    invoke-virtual {p1}, Lcom/oneplus/android/server/display/gwm;->Ze()[[I
+    invoke-virtual {p1}, Lcom/oneplus/android/server/display/gwm;->gf()[[I
 
     move-result-object v0
 
     goto :goto_0
 
     :cond_1
-    iget-object p1, p0, Lcom/oneplus/android/server/display/dma;->qba:Lcom/oneplus/android/server/display/gwm;
+    iget-object p1, p0, Lcom/oneplus/android/server/display/dma;->Hca:Lcom/oneplus/android/server/display/gwm;
 
-    invoke-virtual {p1, p2}, Lcom/oneplus/android/server/display/gwm;->U(I)[[I
+    invoke-virtual {p1, p2}, Lcom/oneplus/android/server/display/gwm;->X(I)[[I
 
     move-result-object v0
 
     goto :goto_0
 
     :cond_2
-    iget-object p1, p0, Lcom/oneplus/android/server/display/dma;->qba:Lcom/oneplus/android/server/display/gwm;
+    iget-object p1, p0, Lcom/oneplus/android/server/display/dma;->Hca:Lcom/oneplus/android/server/display/gwm;
 
-    invoke-virtual {p1}, Lcom/oneplus/android/server/display/gwm;->Ve()[[I
+    invoke-virtual {p1}, Lcom/oneplus/android/server/display/gwm;->cf()[[I
 
     move-result-object v0
 
     goto :goto_0
 
     :cond_3
-    iget-object p1, p0, Lcom/oneplus/android/server/display/dma;->qba:Lcom/oneplus/android/server/display/gwm;
+    iget-object p1, p0, Lcom/oneplus/android/server/display/dma;->Hca:Lcom/oneplus/android/server/display/gwm;
 
-    invoke-virtual {p1, p2}, Lcom/oneplus/android/server/display/gwm;->S(I)[[I
+    invoke-virtual {p1, p2}, Lcom/oneplus/android/server/display/gwm;->V(I)[[I
 
     move-result-object v0
 
@@ -2311,7 +2311,7 @@
 .method static synthetic you(Lcom/oneplus/android/server/display/dma;I)I
     .locals 0
 
-    iput p1, p0, Lcom/oneplus/android/server/display/dma;->gg:I
+    iput p1, p0, Lcom/oneplus/android/server/display/dma;->Cg:I
 
     return p1
 .end method
@@ -2319,7 +2319,7 @@
 .method static synthetic you(Lcom/oneplus/android/server/display/dma;Z)V
     .locals 0
 
-    invoke-direct {p0, p1}, Lcom/oneplus/android/server/display/dma;->Qa(Z)V
+    invoke-direct {p0, p1}, Lcom/oneplus/android/server/display/dma;->Ua(Z)V
 
     return-void
 .end method
@@ -2484,7 +2484,7 @@
 .method static synthetic zta(Lcom/oneplus/android/server/display/dma;I)V
     .locals 0
 
-    invoke-direct {p0, p1}, Lcom/oneplus/android/server/display/dma;->_b(I)V
+    invoke-direct {p0, p1}, Lcom/oneplus/android/server/display/dma;->kc(I)V
 
     return-void
 .end method
@@ -2500,7 +2500,7 @@
 .method static synthetic zta(Lcom/oneplus/android/server/display/dma;Z)V
     .locals 0
 
-    invoke-direct {p0, p1}, Lcom/oneplus/android/server/display/dma;->Sa(Z)V
+    invoke-direct {p0, p1}, Lcom/oneplus/android/server/display/dma;->Wa(Z)V
 
     return-void
 .end method
@@ -2607,31 +2607,17 @@
 .method static synthetic zta(Lcom/oneplus/android/server/display/dma;)[[I
     .locals 0
 
-    iget-object p0, p0, Lcom/oneplus/android/server/display/dma;->kba:[[I
+    iget-object p0, p0, Lcom/oneplus/android/server/display/dma;->Bca:[[I
 
     return-object p0
 .end method
 
 
 # virtual methods
-.method public Ee()I
-    .locals 1
-
-    const-string p0, "vendor.sys.color.mode"
-
-    const/4 v0, 0x0
-
-    invoke-static {p0, v0}, Landroid/os/SystemProperties;->getInt(Ljava/lang/String;I)I
-
-    move-result p0
-
-    return p0
-.end method
-
 .method public F(Z)V
     .locals 2
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/display/dma;->Tr()Z
+    invoke-direct {p0}, Lcom/oneplus/android/server/display/dma;->ms()Z
 
     move-result v0
 
@@ -2658,14 +2644,14 @@
 
     invoke-static {v1, v0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    iget-boolean v0, p0, Lcom/oneplus/android/server/display/dma;->gba:Z
+    iget-boolean v0, p0, Lcom/oneplus/android/server/display/dma;->xca:Z
 
     if-ne v0, p1, :cond_1
 
     return-void
 
     :cond_1
-    iput-boolean p1, p0, Lcom/oneplus/android/server/display/dma;->gba:Z
+    iput-boolean p1, p0, Lcom/oneplus/android/server/display/dma;->xca:Z
 
     return-void
 .end method
@@ -2673,7 +2659,7 @@
 .method public G(Z)V
     .locals 2
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/display/dma;->Tr()Z
+    invoke-direct {p0}, Lcom/oneplus/android/server/display/dma;->ms()Z
 
     move-result v0
 
@@ -2700,14 +2686,14 @@
 
     invoke-static {v1, v0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    iget-boolean v0, p0, Lcom/oneplus/android/server/display/dma;->fba:Z
+    iget-boolean v0, p0, Lcom/oneplus/android/server/display/dma;->wca:Z
 
     if-ne v0, p1, :cond_1
 
     return-void
 
     :cond_1
-    iput-boolean p1, p0, Lcom/oneplus/android/server/display/dma;->fba:Z
+    iput-boolean p1, p0, Lcom/oneplus/android/server/display/dma;->wca:Z
 
     iget-object v0, p0, Lcom/oneplus/android/server/display/dma;->mHandler:Lcom/oneplus/android/server/display/dma$zta;
 
@@ -2722,53 +2708,6 @@
     move-result-object p1
 
     iput-object p1, v0, Landroid/os/Message;->obj:Ljava/lang/Object;
-
-    iget-object p0, p0, Lcom/oneplus/android/server/display/dma;->mHandler:Lcom/oneplus/android/server/display/dma$zta;
-
-    invoke-virtual {p0, v0}, Landroid/os/Handler;->sendMessage(Landroid/os/Message;)Z
-
-    return-void
-.end method
-
-.method public H(I)V
-    .locals 2
-
-    invoke-direct {p0}, Lcom/oneplus/android/server/display/dma;->Tr()Z
-
-    move-result v0
-
-    if-nez v0, :cond_0
-
-    return-void
-
-    :cond_0
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v1, "notifyColorModeChange colorMode = "
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    const-string v1, "OpColorGamutManager"
-
-    invoke-static {v1, v0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    iget-object v0, p0, Lcom/oneplus/android/server/display/dma;->mHandler:Lcom/oneplus/android/server/display/dma$zta;
-
-    const/4 v1, 0x4
-
-    invoke-virtual {v0, v1}, Landroid/os/Handler;->obtainMessage(I)Landroid/os/Message;
-
-    move-result-object v0
-
-    iput p1, v0, Landroid/os/Message;->arg1:I
 
     iget-object p0, p0, Lcom/oneplus/android/server/display/dma;->mHandler:Lcom/oneplus/android/server/display/dma$zta;
 
@@ -2798,7 +2737,7 @@
 
     invoke-static {v1, v0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/display/dma;->Tr()Z
+    invoke-direct {p0}, Lcom/oneplus/android/server/display/dma;->ms()Z
 
     move-result v0
 
@@ -2807,14 +2746,14 @@
     return-void
 
     :cond_0
-    iget-boolean v0, p0, Lcom/oneplus/android/server/display/dma;->lba:Z
+    iget-boolean v0, p0, Lcom/oneplus/android/server/display/dma;->Cca:Z
 
     if-ne v0, p1, :cond_1
 
     return-void
 
     :cond_1
-    iput-boolean p1, p0, Lcom/oneplus/android/server/display/dma;->lba:Z
+    iput-boolean p1, p0, Lcom/oneplus/android/server/display/dma;->Cca:Z
 
     iget-object v0, p0, Lcom/oneplus/android/server/display/dma;->mHandler:Lcom/oneplus/android/server/display/dma$zta;
 
@@ -2837,66 +2776,10 @@
     return-void
 .end method
 
-.method public I(I)V
-    .locals 2
-
-    invoke-direct {p0}, Lcom/oneplus/android/server/display/dma;->Tr()Z
-
-    move-result v0
-
-    if-nez v0, :cond_0
-
-    return-void
-
-    :cond_0
-    iget v0, p0, Lcom/oneplus/android/server/display/dma;->mRefreshRate:I
-
-    if-ne v0, p1, :cond_1
-
-    return-void
-
-    :cond_1
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v1, "notifyRefreshRateChange refreshRate = "
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    const-string v1, "OpColorGamutManager"
-
-    invoke-static {v1, v0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    iput p1, p0, Lcom/oneplus/android/server/display/dma;->mRefreshRate:I
-
-    iget-object v0, p0, Lcom/oneplus/android/server/display/dma;->mHandler:Lcom/oneplus/android/server/display/dma$zta;
-
-    const/4 v1, 0x7
-
-    invoke-virtual {v0, v1}, Landroid/os/Handler;->obtainMessage(I)Landroid/os/Message;
-
-    move-result-object v0
-
-    iput p1, v0, Landroid/os/Message;->arg1:I
-
-    iget-object p0, p0, Lcom/oneplus/android/server/display/dma;->mHandler:Lcom/oneplus/android/server/display/dma$zta;
-
-    invoke-virtual {p0, v0}, Landroid/os/Handler;->sendMessage(Landroid/os/Message;)Z
-
-    return-void
-.end method
-
 .method public I(Z)V
     .locals 2
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/display/dma;->Tr()Z
+    invoke-direct {p0}, Lcom/oneplus/android/server/display/dma;->ms()Z
 
     move-result v0
 
@@ -2953,10 +2836,127 @@
     return-void
 .end method
 
+.method public K(I)V
+    .locals 2
+
+    invoke-direct {p0}, Lcom/oneplus/android/server/display/dma;->ms()Z
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    return-void
+
+    :cond_0
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v1, "notifyColorModeChange colorMode = "
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    const-string v1, "OpColorGamutManager"
+
+    invoke-static {v1, v0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    iget-object v0, p0, Lcom/oneplus/android/server/display/dma;->mHandler:Lcom/oneplus/android/server/display/dma$zta;
+
+    const/4 v1, 0x4
+
+    invoke-virtual {v0, v1}, Landroid/os/Handler;->obtainMessage(I)Landroid/os/Message;
+
+    move-result-object v0
+
+    iput p1, v0, Landroid/os/Message;->arg1:I
+
+    iget-object p0, p0, Lcom/oneplus/android/server/display/dma;->mHandler:Lcom/oneplus/android/server/display/dma$zta;
+
+    invoke-virtual {p0, v0}, Landroid/os/Handler;->sendMessage(Landroid/os/Message;)Z
+
+    return-void
+.end method
+
+.method public L(I)V
+    .locals 2
+
+    invoke-direct {p0}, Lcom/oneplus/android/server/display/dma;->ms()Z
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    return-void
+
+    :cond_0
+    iget v0, p0, Lcom/oneplus/android/server/display/dma;->mRefreshRate:I
+
+    if-ne v0, p1, :cond_1
+
+    return-void
+
+    :cond_1
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v1, "notifyRefreshRateChange refreshRate = "
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    const-string v1, "OpColorGamutManager"
+
+    invoke-static {v1, v0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    iput p1, p0, Lcom/oneplus/android/server/display/dma;->mRefreshRate:I
+
+    iget-object v0, p0, Lcom/oneplus/android/server/display/dma;->mHandler:Lcom/oneplus/android/server/display/dma$zta;
+
+    const/4 v1, 0x7
+
+    invoke-virtual {v0, v1}, Landroid/os/Handler;->obtainMessage(I)Landroid/os/Message;
+
+    move-result-object v0
+
+    iput p1, v0, Landroid/os/Message;->arg1:I
+
+    iget-object p0, p0, Lcom/oneplus/android/server/display/dma;->mHandler:Lcom/oneplus/android/server/display/dma$zta;
+
+    invoke-virtual {p0, v0}, Landroid/os/Handler;->sendMessage(Landroid/os/Message;)Z
+
+    return-void
+.end method
+
+.method public Me()I
+    .locals 1
+
+    const-string p0, "vendor.sys.color.mode"
+
+    const/4 v0, 0x0
+
+    invoke-static {p0, v0}, Landroid/os/SystemProperties;->getInt(Ljava/lang/String;I)I
+
+    move-result p0
+
+    return p0
+.end method
+
 .method public adjustLightColorGamut(I)V
     .locals 2
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/display/dma;->Tr()Z
+    invoke-direct {p0}, Lcom/oneplus/android/server/display/dma;->ms()Z
 
     move-result v0
 
@@ -3002,7 +3002,7 @@
 .method public bvj(IZ)V
     .locals 2
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/display/dma;->Tr()Z
+    invoke-direct {p0}, Lcom/oneplus/android/server/display/dma;->ms()Z
 
     move-result v0
 
@@ -3019,7 +3019,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-direct {p0, p1}, Lcom/oneplus/android/server/display/dma;->Zb(I)Ljava/lang/String;
+    invoke-direct {p0, p1}, Lcom/oneplus/android/server/display/dma;->jc(I)Ljava/lang/String;
 
     move-result-object v1
 
@@ -3039,16 +3039,16 @@
 
     invoke-static {v1, v0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    iget v0, p0, Lcom/oneplus/android/server/display/dma;->bba:I
+    iget v0, p0, Lcom/oneplus/android/server/display/dma;->sca:I
 
     if-ne v0, p1, :cond_1
 
     return-void
 
     :cond_1
-    iput v0, p0, Lcom/oneplus/android/server/display/dma;->dba:I
+    iput v0, p0, Lcom/oneplus/android/server/display/dma;->uca:I
 
-    iput p1, p0, Lcom/oneplus/android/server/display/dma;->bba:I
+    iput p1, p0, Lcom/oneplus/android/server/display/dma;->sca:I
 
     iget-object v0, p0, Lcom/oneplus/android/server/display/dma;->mHandler:Lcom/oneplus/android/server/display/dma$zta;
 
@@ -3096,9 +3096,9 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget v2, p0, Lcom/oneplus/android/server/display/dma;->cba:I
+    iget v2, p0, Lcom/oneplus/android/server/display/dma;->tca:I
 
-    invoke-direct {p0, v2}, Lcom/oneplus/android/server/display/dma;->Xb(I)Ljava/lang/String;
+    invoke-direct {p0, v2}, Lcom/oneplus/android/server/display/dma;->hc(I)Ljava/lang/String;
 
     move-result-object v2
 
@@ -3118,9 +3118,9 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget v2, p0, Lcom/oneplus/android/server/display/dma;->bba:I
+    iget v2, p0, Lcom/oneplus/android/server/display/dma;->sca:I
 
-    invoke-direct {p0, v2}, Lcom/oneplus/android/server/display/dma;->Zb(I)Ljava/lang/String;
+    invoke-direct {p0, v2}, Lcom/oneplus/android/server/display/dma;->jc(I)Ljava/lang/String;
 
     move-result-object v2
 
@@ -3140,9 +3140,9 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget v2, p0, Lcom/oneplus/android/server/display/dma;->dba:I
+    iget v2, p0, Lcom/oneplus/android/server/display/dma;->uca:I
 
-    invoke-direct {p0, v2}, Lcom/oneplus/android/server/display/dma;->Zb(I)Ljava/lang/String;
+    invoke-direct {p0, v2}, Lcom/oneplus/android/server/display/dma;->jc(I)Ljava/lang/String;
 
     move-result-object v2
 
@@ -3162,9 +3162,9 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget v2, p0, Lcom/oneplus/android/server/display/dma;->eba:I
+    iget v2, p0, Lcom/oneplus/android/server/display/dma;->vca:I
 
-    invoke-direct {p0, v2}, Lcom/oneplus/android/server/display/dma;->Yb(I)Ljava/lang/String;
+    invoke-direct {p0, v2}, Lcom/oneplus/android/server/display/dma;->ic(I)Ljava/lang/String;
 
     move-result-object v2
 
@@ -3208,7 +3208,7 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean v2, p0, Lcom/oneplus/android/server/display/dma;->lba:Z
+    iget-boolean v2, p0, Lcom/oneplus/android/server/display/dma;->Cca:Z
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -3226,7 +3226,7 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/display/dma;->Sr()Z
+    invoke-direct {p0}, Lcom/oneplus/android/server/display/dma;->ls()Z
 
     move-result v2
 
@@ -3252,7 +3252,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/display/dma;->Qr()Z
+    invoke-direct {p0}, Lcom/oneplus/android/server/display/dma;->js()Z
 
     move-result v1
 
@@ -3272,7 +3272,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/display/dma;->Pr()Z
+    invoke-direct {p0}, Lcom/oneplus/android/server/display/dma;->is()Z
 
     move-result v1
 
@@ -3284,7 +3284,7 @@
 
     invoke-virtual {p1, v0}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
-    iget-object p0, p0, Lcom/oneplus/android/server/display/dma;->Yaa:Lcom/oneplus/android/server/display/bio;
+    iget-object p0, p0, Lcom/oneplus/android/server/display/dma;->oca:Lcom/oneplus/android/server/display/bio;
 
     invoke-virtual {p0, p1}, Lcom/oneplus/android/server/display/bio;->dump(Ljava/io/PrintWriter;)V
 
@@ -3312,7 +3312,7 @@
 
     invoke-static {v1, v0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/display/dma;->Tr()Z
+    invoke-direct {p0}, Lcom/oneplus/android/server/display/dma;->ms()Z
 
     move-result v0
 
@@ -3363,7 +3363,7 @@
 
     invoke-static {v1, v0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/display/dma;->Tr()Z
+    invoke-direct {p0}, Lcom/oneplus/android/server/display/dma;->ms()Z
 
     move-result v0
 
@@ -3372,14 +3372,14 @@
     return-void
 
     :cond_0
-    iget-boolean v0, p0, Lcom/oneplus/android/server/display/dma;->oba:Z
+    iget-boolean v0, p0, Lcom/oneplus/android/server/display/dma;->Fca:Z
 
     if-ne v0, p1, :cond_1
 
     return-void
 
     :cond_1
-    iput-boolean p1, p0, Lcom/oneplus/android/server/display/dma;->oba:Z
+    iput-boolean p1, p0, Lcom/oneplus/android/server/display/dma;->Fca:Z
 
     iget-object v0, p0, Lcom/oneplus/android/server/display/dma;->mHandler:Lcom/oneplus/android/server/display/dma$zta;
 
@@ -3423,7 +3423,7 @@
 
     invoke-static {v1, v0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/display/dma;->Tr()Z
+    invoke-direct {p0}, Lcom/oneplus/android/server/display/dma;->ms()Z
 
     move-result v0
 
@@ -3432,7 +3432,7 @@
     return-void
 
     :cond_0
-    iget v0, p0, Lcom/oneplus/android/server/display/dma;->eba:I
+    iget v0, p0, Lcom/oneplus/android/server/display/dma;->vca:I
 
     if-ne v0, p1, :cond_1
 
@@ -3473,7 +3473,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/display/dma;->Pr()Z
+    invoke-direct {p0}, Lcom/oneplus/android/server/display/dma;->is()Z
 
     move-result v1
 
@@ -3487,7 +3487,7 @@
 
     invoke-static {v1, v0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/display/dma;->Tr()Z
+    invoke-direct {p0}, Lcom/oneplus/android/server/display/dma;->ms()Z
 
     move-result v0
 
@@ -3528,7 +3528,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-direct {p0, p1}, Lcom/oneplus/android/server/display/dma;->Zb(I)Ljava/lang/String;
+    invoke-direct {p0, p1}, Lcom/oneplus/android/server/display/dma;->jc(I)Ljava/lang/String;
 
     move-result-object v1
 
@@ -3538,7 +3538,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-direct {p0, p2}, Lcom/oneplus/android/server/display/dma;->Yb(I)Ljava/lang/String;
+    invoke-direct {p0, p2}, Lcom/oneplus/android/server/display/dma;->ic(I)Ljava/lang/String;
 
     move-result-object v1
 
@@ -3548,7 +3548,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-direct {p0, p3}, Lcom/oneplus/android/server/display/dma;->Xb(I)Ljava/lang/String;
+    invoke-direct {p0, p3}, Lcom/oneplus/android/server/display/dma;->hc(I)Ljava/lang/String;
 
     move-result-object p0
 
@@ -3654,7 +3654,7 @@
 .method public zta(Lcom/oneplus/android/server/display/OpColorModeManager;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/oneplus/android/server/display/dma;->rba:Lcom/oneplus/android/server/display/OpColorModeManager;
+    iput-object p1, p0, Lcom/oneplus/android/server/display/dma;->Ica:Lcom/oneplus/android/server/display/OpColorModeManager;
 
     return-void
 .end method

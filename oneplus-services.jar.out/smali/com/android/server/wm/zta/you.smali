@@ -8,9 +8,9 @@
 
 .field private final mTranslateInterpolator:Landroid/view/animation/Interpolator;
 
-.field private final pb:I
-
 .field private final qb:I
+
+.field private final rb:I
 
 
 # direct methods
@@ -41,11 +41,11 @@
 
     move v0, p5
 
-    iput v0, v9, Lcom/android/server/wm/zta/you;->pb:I
+    iput v0, v9, Lcom/android/server/wm/zta/you;->qb:I
 
     move/from16 v0, p6
 
-    iput v0, v9, Lcom/android/server/wm/zta/you;->qb:I
+    iput v0, v9, Lcom/android/server/wm/zta/you;->rb:I
 
     move-object/from16 v0, p7
 
@@ -67,11 +67,11 @@
 
     move-result v0
 
-    iget v1, p0, Lcom/android/server/wm/zta/you;->pb:I
+    iget v1, p0, Lcom/android/server/wm/zta/you;->qb:I
 
     int-to-float v2, v1
 
-    iget v3, p0, Lcom/android/server/wm/zta/you;->qb:I
+    iget v3, p0, Lcom/android/server/wm/zta/you;->rb:I
 
     sub-int/2addr v3, v1
 

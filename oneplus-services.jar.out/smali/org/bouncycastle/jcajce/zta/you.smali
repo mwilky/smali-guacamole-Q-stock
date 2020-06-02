@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field private jia:Ljavax/crypto/Mac;
+.field private xka:Ljavax/crypto/Mac;
 
 
 # direct methods
@@ -13,7 +13,7 @@
 
     invoke-direct {p0}, Ljava/io/OutputStream;-><init>()V
 
-    iput-object p1, p0, Lorg/bouncycastle/jcajce/zta/you;->jia:Ljavax/crypto/Mac;
+    iput-object p1, p0, Lorg/bouncycastle/jcajce/zta/you;->xka:Ljavax/crypto/Mac;
 
     return-void
 .end method
@@ -28,7 +28,7 @@
         }
     .end annotation
 
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/zta/you;->jia:Ljavax/crypto/Mac;
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/zta/you;->xka:Ljavax/crypto/Mac;
 
     int-to-byte p1, p1
 
@@ -45,7 +45,7 @@
         }
     .end annotation
 
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/zta/you;->jia:Ljavax/crypto/Mac;
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/zta/you;->xka:Ljavax/crypto/Mac;
 
     invoke-virtual {p0, p1}, Ljavax/crypto/Mac;->update([B)V
 
@@ -60,7 +60,7 @@
         }
     .end annotation
 
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/zta/you;->jia:Ljavax/crypto/Mac;
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/zta/you;->xka:Ljavax/crypto/Mac;
 
     invoke-virtual {p0, p1, p2, p3}, Ljavax/crypto/Mac;->update([BII)V
 

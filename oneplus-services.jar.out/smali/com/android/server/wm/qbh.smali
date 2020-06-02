@@ -13,6 +13,8 @@
 
 .field static final DEFAULT_APP_TRANSITION_DURATION:I = 0x150
 
+.field static final QR:I = 0x1eab92
+
 .field static final SCREEN_FREEZE_LAYER_BASE:I = 0x1eab90
 
 .field static final SCREEN_FREEZE_LAYER_SCREENSHOT:I = 0x1eab91
@@ -21,10 +23,30 @@
 
 .field static final TOUCH_RESPONSE_INTERPOLATOR:Landroid/view/animation/Interpolator;
 
-.field static final yQ:I = 0x1eab92
-
 
 # instance fields
+.field BR:Landroid/view/SurfaceControl;
+
+.field DR:Z
+
+.field ER:Z
+
+.field FR:Z
+
+.field GR:Z
+
+.field HR:Z
+
+.field IR:Z
+
+.field JR:Z
+
+.field KR:Z
+
+.field MR:I
+
+.field private final OR:Landroid/view/animation/Interpolator;
+
 .field mAnimRunning:Z
 
 .field final mContext:Landroid/content/Context;
@@ -94,28 +116,6 @@
 .field final mTmpFloats:[F
 
 .field mWidth:I
-
-.field nQ:Landroid/view/SurfaceControl;
-
-.field oQ:Z
-
-.field pQ:Z
-
-.field qQ:Z
-
-.field rQ:Z
-
-.field sQ:Z
-
-.field tQ:Z
-
-.field uQ:Z
-
-.field vQ:Z
-
-.field wQ:I
-
-.field private final xQ:Landroid/view/animation/Interpolator;
 
 
 # direct methods
@@ -218,25 +218,25 @@
 
     const/4 v7, 0x1
 
-    iput-boolean v7, v1, Lcom/android/server/wm/qbh;->oQ:Z
+    iput-boolean v7, v1, Lcom/android/server/wm/qbh;->DR:Z
 
-    iput-boolean v6, v1, Lcom/android/server/wm/qbh;->pQ:Z
+    iput-boolean v6, v1, Lcom/android/server/wm/qbh;->ER:Z
 
-    iput-boolean v6, v1, Lcom/android/server/wm/qbh;->qQ:Z
+    iput-boolean v6, v1, Lcom/android/server/wm/qbh;->FR:Z
 
-    iput-boolean v6, v1, Lcom/android/server/wm/qbh;->rQ:Z
+    iput-boolean v6, v1, Lcom/android/server/wm/qbh;->GR:Z
 
-    iput-boolean v6, v1, Lcom/android/server/wm/qbh;->sQ:Z
+    iput-boolean v6, v1, Lcom/android/server/wm/qbh;->HR:Z
 
-    iput-boolean v6, v1, Lcom/android/server/wm/qbh;->tQ:Z
+    iput-boolean v6, v1, Lcom/android/server/wm/qbh;->IR:Z
 
-    iput-boolean v6, v1, Lcom/android/server/wm/qbh;->uQ:Z
+    iput-boolean v6, v1, Lcom/android/server/wm/qbh;->JR:Z
 
     invoke-static {}, Lcom/android/server/policy/OpPhoneWindowManagerInjector;->isGestureButtonEnabled()Z
 
     move-result v8
 
-    iput-boolean v8, v1, Lcom/android/server/wm/qbh;->vQ:Z
+    iput-boolean v8, v1, Lcom/android/server/wm/qbh;->KR:Z
 
     iput-boolean v7, v1, Lcom/android/server/wm/qbh;->mHasSetRotation:Z
 
@@ -250,7 +250,7 @@
 
     invoke-direct {v8, v9, v9, v10, v11}, Landroid/view/animation/PathInterpolator;-><init>(FFFF)V
 
-    iput-object v8, v1, Lcom/android/server/wm/qbh;->xQ:Landroid/view/animation/Interpolator;
+    iput-object v8, v1, Lcom/android/server/wm/qbh;->OR:Landroid/view/animation/Interpolator;
 
     move-object/from16 v8, p5
 
@@ -264,7 +264,7 @@
 
     invoke-virtual {v2, v8}, Lcom/android/server/wm/DisplayContent;->getBounds(Landroid/graphics/Rect;)V
 
-    iput v4, v1, Lcom/android/server/wm/qbh;->wQ:I
+    iput v4, v1, Lcom/android/server/wm/qbh;->MR:I
 
     const v8, 0x10c000e
 
@@ -300,20 +300,20 @@
     goto :goto_0
 
     :pswitch_1
-    iput-boolean v7, v1, Lcom/android/server/wm/qbh;->rQ:Z
+    iput-boolean v7, v1, Lcom/android/server/wm/qbh;->GR:Z
 
     goto :goto_0
 
     :pswitch_2
-    iput-boolean v6, v1, Lcom/android/server/wm/qbh;->oQ:Z
+    iput-boolean v6, v1, Lcom/android/server/wm/qbh;->DR:Z
 
     goto :goto_0
 
     :pswitch_3
-    iput-boolean v7, v1, Lcom/android/server/wm/qbh;->oQ:Z
+    iput-boolean v7, v1, Lcom/android/server/wm/qbh;->DR:Z
 
     :goto_0
-    iget-boolean v11, v1, Lcom/android/server/wm/qbh;->rQ:Z
+    iget-boolean v11, v1, Lcom/android/server/wm/qbh;->GR:Z
 
     const-string v12, "OpLandscapeAppAnimationImprovement"
 
@@ -329,9 +329,9 @@
 
     if-eqz v11, :cond_0
 
-    iput-boolean v7, v1, Lcom/android/server/wm/qbh;->qQ:Z
+    iput-boolean v7, v1, Lcom/android/server/wm/qbh;->FR:Z
 
-    iput-boolean v6, v1, Lcom/android/server/wm/qbh;->pQ:Z
+    iput-boolean v6, v1, Lcom/android/server/wm/qbh;->ER:Z
 
     :cond_0
     move v11, v6
@@ -375,9 +375,9 @@
 
     if-eqz v13, :cond_1
 
-    iput-boolean v7, v1, Lcom/android/server/wm/qbh;->qQ:Z
+    iput-boolean v7, v1, Lcom/android/server/wm/qbh;->FR:Z
 
-    iput-boolean v6, v1, Lcom/android/server/wm/qbh;->pQ:Z
+    iput-boolean v6, v1, Lcom/android/server/wm/qbh;->ER:Z
 
     goto :goto_2
 
@@ -408,9 +408,9 @@
 
     invoke-static {v5}, Lcom/android/server/wm/OpActivityStarterInjector;->setSourceIntent(Landroid/content/Intent;)V
 
-    iput-boolean v6, v1, Lcom/android/server/wm/qbh;->qQ:Z
+    iput-boolean v6, v1, Lcom/android/server/wm/qbh;->FR:Z
 
-    iput-boolean v7, v1, Lcom/android/server/wm/qbh;->pQ:Z
+    iput-boolean v7, v1, Lcom/android/server/wm/qbh;->ER:Z
 
     goto :goto_3
 
@@ -429,11 +429,11 @@
 
     invoke-static {v5}, Lcom/android/server/wm/OpActivityStarterInjector;->setSourceIntent(Landroid/content/Intent;)V
 
-    iput-boolean v7, v1, Lcom/android/server/wm/qbh;->qQ:Z
+    iput-boolean v7, v1, Lcom/android/server/wm/qbh;->FR:Z
 
-    iput-boolean v6, v1, Lcom/android/server/wm/qbh;->pQ:Z
+    iput-boolean v6, v1, Lcom/android/server/wm/qbh;->ER:Z
 
-    iput-boolean v7, v1, Lcom/android/server/wm/qbh;->uQ:Z
+    iput-boolean v7, v1, Lcom/android/server/wm/qbh;->JR:Z
 
     :cond_4
     :goto_3
@@ -443,11 +443,11 @@
 
     if-eqz v5, :cond_5
 
-    iput-boolean v6, v1, Lcom/android/server/wm/qbh;->qQ:Z
+    iput-boolean v6, v1, Lcom/android/server/wm/qbh;->FR:Z
 
-    iput-boolean v6, v1, Lcom/android/server/wm/qbh;->pQ:Z
+    iput-boolean v6, v1, Lcom/android/server/wm/qbh;->ER:Z
 
-    iput-boolean v7, v1, Lcom/android/server/wm/qbh;->sQ:Z
+    iput-boolean v7, v1, Lcom/android/server/wm/qbh;->HR:Z
 
     invoke-static {v6}, Lcom/android/server/wm/ActivityTaskManagerServiceInjector;->setStartActivityFromRecents(Z)V
 
@@ -456,15 +456,15 @@
 
     if-ne v4, v5, :cond_6
 
-    iput-boolean v6, v1, Lcom/android/server/wm/qbh;->qQ:Z
+    iput-boolean v6, v1, Lcom/android/server/wm/qbh;->FR:Z
 
-    iput-boolean v6, v1, Lcom/android/server/wm/qbh;->pQ:Z
+    iput-boolean v6, v1, Lcom/android/server/wm/qbh;->ER:Z
 
-    iput-boolean v6, v1, Lcom/android/server/wm/qbh;->sQ:Z
+    iput-boolean v6, v1, Lcom/android/server/wm/qbh;->HR:Z
 
     invoke-static {v6}, Lcom/android/server/wm/ActivityTaskManagerServiceInjector;->setStartActivityFromRecents(Z)V
 
-    iput-boolean v7, v1, Lcom/android/server/wm/qbh;->tQ:Z
+    iput-boolean v7, v1, Lcom/android/server/wm/qbh;->IR:Z
 
     :cond_6
     sget-boolean v4, Landroid/os/Build;->DEBUG_ONEPLUS:Z
@@ -499,7 +499,7 @@
     :goto_4
     invoke-static {v12, v4}, Landroid/util/Slog;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    invoke-static {}, Lcom/android/server/wm/ywr;->de()Lcom/android/server/wm/AppWindowToken;
+    invoke-static {}, Lcom/android/server/wm/ywr;->ke()Lcom/android/server/wm/AppWindowToken;
 
     move-result-object v4
 
@@ -513,7 +513,7 @@
 
     invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-static {}, Lcom/android/server/wm/ywr;->de()Lcom/android/server/wm/AppWindowToken;
+    invoke-static {}, Lcom/android/server/wm/ywr;->ke()Lcom/android/server/wm/AppWindowToken;
 
     move-result-object v5
 
@@ -531,7 +531,7 @@
     :goto_5
     invoke-static {v12, v4}, Landroid/util/Slog;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    invoke-static {}, Lcom/android/server/wm/ywr;->ee()Lcom/android/server/wm/AppWindowToken;
+    invoke-static {}, Lcom/android/server/wm/ywr;->le()Lcom/android/server/wm/AppWindowToken;
 
     move-result-object v4
 
@@ -545,7 +545,7 @@
 
     invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-static {}, Lcom/android/server/wm/ywr;->ee()Lcom/android/server/wm/AppWindowToken;
+    invoke-static {}, Lcom/android/server/wm/ywr;->le()Lcom/android/server/wm/AppWindowToken;
 
     move-result-object v5
 
@@ -576,7 +576,7 @@
 
     invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean v5, v1, Lcom/android/server/wm/qbh;->pQ:Z
+    iget-boolean v5, v1, Lcom/android/server/wm/qbh;->ER:Z
 
     invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -584,7 +584,7 @@
 
     invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean v5, v1, Lcom/android/server/wm/qbh;->qQ:Z
+    iget-boolean v5, v1, Lcom/android/server/wm/qbh;->FR:Z
 
     invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -592,7 +592,7 @@
 
     invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean v5, v1, Lcom/android/server/wm/qbh;->uQ:Z
+    iget-boolean v5, v1, Lcom/android/server/wm/qbh;->JR:Z
 
     invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -600,7 +600,7 @@
 
     invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean v5, v1, Lcom/android/server/wm/qbh;->oQ:Z
+    iget-boolean v5, v1, Lcom/android/server/wm/qbh;->DR:Z
 
     invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -608,7 +608,7 @@
 
     invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean v5, v1, Lcom/android/server/wm/qbh;->rQ:Z
+    iget-boolean v5, v1, Lcom/android/server/wm/qbh;->GR:Z
 
     invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -616,7 +616,7 @@
 
     invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean v5, v1, Lcom/android/server/wm/qbh;->sQ:Z
+    iget-boolean v5, v1, Lcom/android/server/wm/qbh;->HR:Z
 
     invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -624,7 +624,7 @@
 
     invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean v5, v1, Lcom/android/server/wm/qbh;->tQ:Z
+    iget-boolean v5, v1, Lcom/android/server/wm/qbh;->IR:Z
 
     invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -694,7 +694,7 @@
     move-result-object v6
 
     :try_start_0
-    iget-boolean v10, v1, Lcom/android/server/wm/qbh;->pQ:Z
+    iget-boolean v10, v1, Lcom/android/server/wm/qbh;->ER:Z
     :try_end_0
     .catch Landroid/view/Surface$OutOfResourcesException; {:try_start_0 .. :try_end_0} :catch_2
 
@@ -703,7 +703,7 @@
     if-nez v10, :cond_10
 
     :try_start_1
-    iget-boolean v10, v1, Lcom/android/server/wm/qbh;->rQ:Z
+    iget-boolean v10, v1, Lcom/android/server/wm/qbh;->GR:Z
 
     if-eqz v10, :cond_f
 
@@ -794,7 +794,7 @@
 
     move-result-object v2
 
-    iput-object v2, v1, Lcom/android/server/wm/qbh;->nQ:Landroid/view/SurfaceControl;
+    iput-object v2, v1, Lcom/android/server/wm/qbh;->BR:Landroid/view/SurfaceControl;
 
     iget-object v2, v1, Lcom/android/server/wm/qbh;->mService:Lcom/android/server/wm/WindowManagerService;
 
@@ -922,7 +922,7 @@
     invoke-static {v12, v0}, Landroid/util/Slog;->w(Ljava/lang/String;Ljava/lang/String;)I
 
     :goto_d
-    iget-object v0, v1, Lcom/android/server/wm/qbh;->nQ:Landroid/view/SurfaceControl;
+    iget-object v0, v1, Lcom/android/server/wm/qbh;->BR:Landroid/view/SurfaceControl;
 
     invoke-virtual {v2, v0}, Landroid/view/Surface;->copyFrom(Landroid/view/SurfaceControl;)V
     :try_end_3
@@ -974,7 +974,7 @@
 
     invoke-virtual {v6, v0, v7}, Landroid/view/SurfaceControl$Transaction;->setSecure(Landroid/view/SurfaceControl;Z)Landroid/view/SurfaceControl$Transaction;
 
-    iget-object v0, v1, Lcom/android/server/wm/qbh;->nQ:Landroid/view/SurfaceControl;
+    iget-object v0, v1, Lcom/android/server/wm/qbh;->BR:Landroid/view/SurfaceControl;
 
     invoke-virtual {v6, v0, v7}, Landroid/view/SurfaceControl$Transaction;->setSecure(Landroid/view/SurfaceControl;Z)Landroid/view/SurfaceControl$Transaction;
 
@@ -993,17 +993,17 @@
 
     invoke-virtual {v6, v0}, Landroid/view/SurfaceControl$Transaction;->show(Landroid/view/SurfaceControl;)Landroid/view/SurfaceControl$Transaction;
 
-    iget-object v0, v1, Lcom/android/server/wm/qbh;->nQ:Landroid/view/SurfaceControl;
+    iget-object v0, v1, Lcom/android/server/wm/qbh;->BR:Landroid/view/SurfaceControl;
 
     const v3, 0x1eab92
 
     invoke-virtual {v6, v0, v3}, Landroid/view/SurfaceControl$Transaction;->setLayer(Landroid/view/SurfaceControl;I)Landroid/view/SurfaceControl$Transaction;
 
-    iget-object v0, v1, Lcom/android/server/wm/qbh;->nQ:Landroid/view/SurfaceControl;
+    iget-object v0, v1, Lcom/android/server/wm/qbh;->BR:Landroid/view/SurfaceControl;
 
     invoke-virtual {v6, v0, v9}, Landroid/view/SurfaceControl$Transaction;->setAlpha(Landroid/view/SurfaceControl;F)Landroid/view/SurfaceControl$Transaction;
 
-    iget-object v0, v1, Lcom/android/server/wm/qbh;->nQ:Landroid/view/SurfaceControl;
+    iget-object v0, v1, Lcom/android/server/wm/qbh;->BR:Landroid/view/SurfaceControl;
 
     invoke-virtual {v6, v0}, Landroid/view/SurfaceControl$Transaction;->show(Landroid/view/SurfaceControl;)Landroid/view/SurfaceControl$Transaction;
 
@@ -1247,7 +1247,7 @@
 
     if-eqz v6, :cond_1e
 
-    iget-object v6, v0, Lcom/android/server/wm/qbh;->nQ:Landroid/view/SurfaceControl;
+    iget-object v6, v0, Lcom/android/server/wm/qbh;->BR:Landroid/view/SurfaceControl;
 
     if-nez v6, :cond_0
 
@@ -1378,7 +1378,7 @@
     goto/16 :goto_7
 
     :cond_4
-    iget-boolean v12, v0, Lcom/android/server/wm/qbh;->rQ:Z
+    iget-boolean v12, v0, Lcom/android/server/wm/qbh;->GR:Z
 
     if-eqz v12, :cond_5
 
@@ -1399,36 +1399,36 @@
     goto/16 :goto_5
 
     :cond_5
-    iget-boolean v12, v0, Lcom/android/server/wm/qbh;->tQ:Z
+    iget-boolean v12, v0, Lcom/android/server/wm/qbh;->IR:Z
 
     if-eqz v12, :cond_6
 
     goto :goto_0
 
     :cond_6
-    iget-boolean v4, v0, Lcom/android/server/wm/qbh;->sQ:Z
+    iget-boolean v4, v0, Lcom/android/server/wm/qbh;->HR:Z
 
     if-eqz v4, :cond_7
 
     goto/16 :goto_1
 
     :cond_7
-    iget-boolean v4, v0, Lcom/android/server/wm/qbh;->pQ:Z
+    iget-boolean v4, v0, Lcom/android/server/wm/qbh;->ER:Z
 
     if-eqz v4, :cond_8
 
     goto/16 :goto_2
 
     :cond_8
-    iget-boolean v4, v0, Lcom/android/server/wm/qbh;->qQ:Z
+    iget-boolean v4, v0, Lcom/android/server/wm/qbh;->FR:Z
 
     if-eqz v4, :cond_b
 
-    iget-boolean v4, v0, Lcom/android/server/wm/qbh;->vQ:Z
+    iget-boolean v4, v0, Lcom/android/server/wm/qbh;->KR:Z
 
     if-eqz v4, :cond_a
 
-    iget-boolean v4, v0, Lcom/android/server/wm/qbh;->uQ:Z
+    iget-boolean v4, v0, Lcom/android/server/wm/qbh;->JR:Z
 
     if-eqz v4, :cond_9
 
@@ -1453,7 +1453,7 @@
     goto/16 :goto_3
 
     :cond_b
-    iget-boolean v4, v0, Lcom/android/server/wm/qbh;->oQ:Z
+    iget-boolean v4, v0, Lcom/android/server/wm/qbh;->DR:Z
 
     if-eqz v4, :cond_15
 
@@ -1477,7 +1477,7 @@
     goto/16 :goto_5
 
     :cond_d
-    iget-boolean v12, v0, Lcom/android/server/wm/qbh;->rQ:Z
+    iget-boolean v12, v0, Lcom/android/server/wm/qbh;->GR:Z
 
     if-eqz v12, :cond_e
 
@@ -1498,7 +1498,7 @@
     goto/16 :goto_5
 
     :cond_e
-    iget-boolean v12, v0, Lcom/android/server/wm/qbh;->tQ:Z
+    iget-boolean v12, v0, Lcom/android/server/wm/qbh;->IR:Z
 
     if-eqz v12, :cond_f
 
@@ -1520,7 +1520,7 @@
     goto/16 :goto_6
 
     :cond_f
-    iget-boolean v4, v0, Lcom/android/server/wm/qbh;->sQ:Z
+    iget-boolean v4, v0, Lcom/android/server/wm/qbh;->HR:Z
 
     if-eqz v4, :cond_10
 
@@ -1542,7 +1542,7 @@
     goto/16 :goto_6
 
     :cond_10
-    iget-boolean v4, v0, Lcom/android/server/wm/qbh;->pQ:Z
+    iget-boolean v4, v0, Lcom/android/server/wm/qbh;->ER:Z
 
     if-eqz v4, :cond_11
 
@@ -1564,15 +1564,15 @@
     goto :goto_6
 
     :cond_11
-    iget-boolean v4, v0, Lcom/android/server/wm/qbh;->qQ:Z
+    iget-boolean v4, v0, Lcom/android/server/wm/qbh;->FR:Z
 
     if-eqz v4, :cond_14
 
-    iget-boolean v4, v0, Lcom/android/server/wm/qbh;->vQ:Z
+    iget-boolean v4, v0, Lcom/android/server/wm/qbh;->KR:Z
 
     if-eqz v4, :cond_13
 
-    iget-boolean v4, v0, Lcom/android/server/wm/qbh;->uQ:Z
+    iget-boolean v4, v0, Lcom/android/server/wm/qbh;->JR:Z
 
     if-eqz v4, :cond_12
 
@@ -1608,7 +1608,7 @@
     goto :goto_5
 
     :cond_14
-    iget-boolean v4, v0, Lcom/android/server/wm/qbh;->oQ:Z
+    iget-boolean v4, v0, Lcom/android/server/wm/qbh;->DR:Z
 
     if-eqz v4, :cond_15
 
@@ -1764,7 +1764,7 @@
 
     move-result-object v5
 
-    iget-boolean v6, v0, Lcom/android/server/wm/qbh;->pQ:Z
+    iget-boolean v6, v0, Lcom/android/server/wm/qbh;->ER:Z
 
     if-eqz v6, :cond_19
 
@@ -2346,7 +2346,7 @@
 
     invoke-direct {v1, v15, v12, v11, v10}, Lcom/android/server/wm/zta/sis;-><init>(IIII)V
 
-    iget-object v2, v0, Lcom/android/server/wm/qbh;->xQ:Landroid/view/animation/Interpolator;
+    iget-object v2, v0, Lcom/android/server/wm/qbh;->OR:Landroid/view/animation/Interpolator;
 
     invoke-virtual {v1, v2}, Landroid/view/animation/Animation;->setInterpolator(Landroid/view/animation/Interpolator;)V
 
@@ -2569,7 +2569,7 @@
 .method private zta(Landroid/view/SurfaceControl$Transaction;Landroid/graphics/Matrix;F)V
     .locals 8
 
-    iget-object v0, p0, Lcom/android/server/wm/qbh;->nQ:Landroid/view/SurfaceControl;
+    iget-object v0, p0, Lcom/android/server/wm/qbh;->BR:Landroid/view/SurfaceControl;
 
     if-eqz v0, :cond_1
 
@@ -2612,11 +2612,11 @@
     sub-float/2addr p2, v1
 
     :cond_0
-    iget-object v1, p0, Lcom/android/server/wm/qbh;->nQ:Landroid/view/SurfaceControl;
+    iget-object v1, p0, Lcom/android/server/wm/qbh;->BR:Landroid/view/SurfaceControl;
 
     invoke-virtual {p1, v1, v0, p2}, Landroid/view/SurfaceControl$Transaction;->setPosition(Landroid/view/SurfaceControl;FF)Landroid/view/SurfaceControl$Transaction;
 
-    iget-object v3, p0, Lcom/android/server/wm/qbh;->nQ:Landroid/view/SurfaceControl;
+    iget-object v3, p0, Lcom/android/server/wm/qbh;->BR:Landroid/view/SurfaceControl;
 
     iget-object p2, p0, Lcom/android/server/wm/qbh;->mTmpFloats:[F
 
@@ -2640,7 +2640,7 @@
 
     invoke-virtual/range {v2 .. v7}, Landroid/view/SurfaceControl$Transaction;->setMatrix(Landroid/view/SurfaceControl;FFFF)Landroid/view/SurfaceControl$Transaction;
 
-    iget-object p0, p0, Lcom/android/server/wm/qbh;->nQ:Landroid/view/SurfaceControl;
+    iget-object p0, p0, Lcom/android/server/wm/qbh;->BR:Landroid/view/SurfaceControl;
 
     invoke-virtual {p1, p0, p3}, Landroid/view/SurfaceControl$Transaction;->setAlpha(Landroid/view/SurfaceControl;F)Landroid/view/SurfaceControl$Transaction;
 
@@ -2760,7 +2760,7 @@
 
     if-eqz v0, :cond_5
 
-    iget-object v0, v10, Lcom/android/server/wm/qbh;->nQ:Landroid/view/SurfaceControl;
+    iget-object v0, v10, Lcom/android/server/wm/qbh;->BR:Landroid/view/SurfaceControl;
 
     if-nez v0, :cond_1
 
@@ -2834,7 +2834,7 @@
 
     if-eqz v0, :cond_0
 
-    iget-object p0, p0, Lcom/android/server/wm/qbh;->nQ:Landroid/view/SurfaceControl;
+    iget-object p0, p0, Lcom/android/server/wm/qbh;->BR:Landroid/view/SurfaceControl;
 
     if-eqz p0, :cond_0
 
@@ -2993,7 +2993,7 @@
     iput-object v1, p0, Lcom/android/server/wm/qbh;->mSurfaceControl:Landroid/view/SurfaceControl;
 
     :cond_4
-    iget-object v0, p0, Lcom/android/server/wm/qbh;->nQ:Landroid/view/SurfaceControl;
+    iget-object v0, p0, Lcom/android/server/wm/qbh;->BR:Landroid/view/SurfaceControl;
 
     if-eqz v0, :cond_7
 
@@ -3012,7 +3012,7 @@
 
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v3, p0, Lcom/android/server/wm/qbh;->nQ:Landroid/view/SurfaceControl;
+    iget-object v3, p0, Lcom/android/server/wm/qbh;->BR:Landroid/view/SurfaceControl;
 
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -3025,11 +3025,11 @@
     invoke-static {v4, v0}, Landroid/util/Slog;->i(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_6
-    iget-object v0, p0, Lcom/android/server/wm/qbh;->nQ:Landroid/view/SurfaceControl;
+    iget-object v0, p0, Lcom/android/server/wm/qbh;->BR:Landroid/view/SurfaceControl;
 
     invoke-virtual {v0}, Landroid/view/SurfaceControl;->remove()V
 
-    iput-object v1, p0, Lcom/android/server/wm/qbh;->nQ:Landroid/view/SurfaceControl;
+    iput-object v1, p0, Lcom/android/server/wm/qbh;->BR:Landroid/view/SurfaceControl;
 
     :cond_7
     iget-object v0, p0, Lcom/android/server/wm/qbh;->mRotateExitAnimation:Landroid/view/animation/Animation;
@@ -3087,7 +3087,7 @@
 
     invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
-    iget-object v0, p0, Lcom/android/server/wm/qbh;->nQ:Landroid/view/SurfaceControl;
+    iget-object v0, p0, Lcom/android/server/wm/qbh;->BR:Landroid/view/SurfaceControl;
 
     invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->print(Ljava/lang/Object;)V
 
@@ -3308,7 +3308,7 @@
 
     invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
-    iget-boolean v0, p0, Lcom/android/server/wm/qbh;->oQ:Z
+    iget-boolean v0, p0, Lcom/android/server/wm/qbh;->DR:Z
 
     invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->print(Z)V
 
@@ -3320,7 +3320,7 @@
 
     invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
-    iget-boolean v0, p0, Lcom/android/server/wm/qbh;->pQ:Z
+    iget-boolean v0, p0, Lcom/android/server/wm/qbh;->ER:Z
 
     invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->print(Z)V
 
@@ -3332,7 +3332,7 @@
 
     invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
-    iget-boolean v0, p0, Lcom/android/server/wm/qbh;->qQ:Z
+    iget-boolean v0, p0, Lcom/android/server/wm/qbh;->FR:Z
 
     invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->print(Z)V
 
@@ -3344,7 +3344,7 @@
 
     invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
-    iget-boolean v0, p0, Lcom/android/server/wm/qbh;->uQ:Z
+    iget-boolean v0, p0, Lcom/android/server/wm/qbh;->JR:Z
 
     invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->print(Z)V
 
@@ -3356,7 +3356,7 @@
 
     invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
-    iget-boolean v0, p0, Lcom/android/server/wm/qbh;->rQ:Z
+    iget-boolean v0, p0, Lcom/android/server/wm/qbh;->GR:Z
 
     invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->print(Z)V
 
@@ -3368,7 +3368,7 @@
 
     invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
-    iget-boolean v0, p0, Lcom/android/server/wm/qbh;->sQ:Z
+    iget-boolean v0, p0, Lcom/android/server/wm/qbh;->HR:Z
 
     invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->print(Z)V
 
@@ -3380,7 +3380,7 @@
 
     invoke-virtual {p2, p1}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
-    iget-boolean p0, p0, Lcom/android/server/wm/qbh;->tQ:Z
+    iget-boolean p0, p0, Lcom/android/server/wm/qbh;->IR:Z
 
     invoke-virtual {p2, p0}, Ljava/io/PrintWriter;->print(Z)V
 
@@ -3500,7 +3500,7 @@
     invoke-virtual {p1, v0}, Landroid/view/SurfaceControl$Transaction;->hide(Landroid/view/SurfaceControl;)Landroid/view/SurfaceControl$Transaction;
 
     :cond_1
-    iget-object v0, p0, Lcom/android/server/wm/qbh;->nQ:Landroid/view/SurfaceControl;
+    iget-object v0, p0, Lcom/android/server/wm/qbh;->BR:Landroid/view/SurfaceControl;
 
     if-eqz v0, :cond_2
 

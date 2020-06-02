@@ -43,7 +43,7 @@
 
 
 # virtual methods
-.method public W()I
+.method public X()I
     .locals 0
 
     iget p0, p0, Lcom/android/server/OpVibratorService$you;->mEffect:I
@@ -51,7 +51,7 @@
     return p0
 .end method
 
-.method X()I
+.method Y()I
     .locals 0
 
     iget p0, p0, Lcom/android/server/OpVibratorService$you;->mMaxDuration:I
@@ -59,7 +59,7 @@
     return p0
 .end method
 
-.method Y()I
+.method Z()I
     .locals 0
 
     iget p0, p0, Lcom/android/server/OpVibratorService$you;->mMinDuration:I

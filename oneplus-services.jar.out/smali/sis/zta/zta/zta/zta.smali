@@ -4,13 +4,13 @@
 
 
 # static fields
-.field public static final FGa:I = 0x1
-
-.field public static final GGa:I = 0x2
-
-.field public static final HGa:I = 0x4
-
 .field public static final MAX:I = 0xff
+
+.field public static final TIa:I = 0x1
+
+.field public static final UIa:I = 0x2
+
+.field public static final VIa:I = 0x4
 
 
 # direct methods

@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field private xGa:Ljava/util/Collection;
+.field private LIa:Ljava/util/Collection;
 
 
 # direct methods
@@ -18,7 +18,7 @@
 
     if-eqz p1, :cond_0
 
-    iput-object p1, p0, Lorg/bouncycastle/x509/igw;->xGa:Ljava/util/Collection;
+    iput-object p1, p0, Lorg/bouncycastle/x509/igw;->LIa:Ljava/util/Collection;
 
     return-void
 
@@ -39,7 +39,7 @@
 
     new-instance v0, Lorg/bouncycastle/x509/igw;
 
-    iget-object p0, p0, Lorg/bouncycastle/x509/igw;->xGa:Ljava/util/Collection;
+    iget-object p0, p0, Lorg/bouncycastle/x509/igw;->LIa:Ljava/util/Collection;
 
     invoke-direct {v0, p0}, Lorg/bouncycastle/x509/igw;-><init>(Ljava/util/Collection;)V
 
@@ -51,7 +51,7 @@
 
     new-instance v0, Ljava/util/ArrayList;
 
-    iget-object p0, p0, Lorg/bouncycastle/x509/igw;->xGa:Ljava/util/Collection;
+    iget-object p0, p0, Lorg/bouncycastle/x509/igw;->LIa:Ljava/util/Collection;
 
     invoke-direct {v0, p0}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
 
@@ -77,7 +77,7 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object p0, p0, Lorg/bouncycastle/x509/igw;->xGa:Ljava/util/Collection;
+    iget-object p0, p0, Lorg/bouncycastle/x509/igw;->LIa:Ljava/util/Collection;
 
     invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 

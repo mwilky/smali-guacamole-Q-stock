@@ -79,35 +79,35 @@
     :pswitch_4
     iget-object p1, p0, Lcom/oneplus/android/server/scene/bud;->this$0:Lcom/oneplus/android/server/scene/ivd;
 
-    invoke-virtual {p1}, Lcom/oneplus/android/server/scene/ivd;->rf()V
+    invoke-virtual {p1}, Lcom/oneplus/android/server/scene/ivd;->Af()V
 
     goto :goto_0
 
     :pswitch_5
     iget-object p1, p0, Lcom/oneplus/android/server/scene/bud;->this$0:Lcom/oneplus/android/server/scene/ivd;
 
-    invoke-virtual {p1}, Lcom/oneplus/android/server/scene/ivd;->pf()V
+    invoke-virtual {p1}, Lcom/oneplus/android/server/scene/ivd;->yf()V
 
     goto :goto_0
 
     :pswitch_6
     iget-object p1, p0, Lcom/oneplus/android/server/scene/bud;->this$0:Lcom/oneplus/android/server/scene/ivd;
 
-    invoke-virtual {p1}, Lcom/oneplus/android/server/scene/ivd;->_d()V
+    invoke-virtual {p1}, Lcom/oneplus/android/server/scene/ivd;->ge()V
 
     goto :goto_0
 
     :pswitch_7
     iget-object p1, p0, Lcom/oneplus/android/server/scene/bud;->this$0:Lcom/oneplus/android/server/scene/ivd;
 
-    invoke-virtual {p1}, Lcom/oneplus/android/server/scene/ivd;->qf()V
+    invoke-virtual {p1}, Lcom/oneplus/android/server/scene/ivd;->zf()V
 
     goto :goto_0
 
     :pswitch_8
     iget-object p1, p0, Lcom/oneplus/android/server/scene/bud;->this$0:Lcom/oneplus/android/server/scene/ivd;
 
-    invoke-virtual {p1}, Lcom/oneplus/android/server/scene/ivd;->of()V
+    invoke-virtual {p1}, Lcom/oneplus/android/server/scene/ivd;->xf()V
 
     goto :goto_0
 

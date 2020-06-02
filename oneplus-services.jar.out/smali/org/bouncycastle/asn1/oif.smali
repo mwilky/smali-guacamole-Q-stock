@@ -39,6 +39,16 @@
 
 
 # virtual methods
+.method public Cg()Lorg/bouncycastle/asn1/vdb;
+    .locals 0
+
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/oif;->toASN1Primitive()Lorg/bouncycastle/asn1/vdb;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
 .method public equals(Ljava/lang/Object;)Z
     .locals 1
 
@@ -174,16 +184,6 @@
     move-result p0
 
     return p0
-.end method
-
-.method public tg()Lorg/bouncycastle/asn1/vdb;
-    .locals 0
-
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/oif;->toASN1Primitive()Lorg/bouncycastle/asn1/vdb;
-
-    move-result-object p0
-
-    return-object p0
 .end method
 
 .method public abstract toASN1Primitive()Lorg/bouncycastle/asn1/vdb;

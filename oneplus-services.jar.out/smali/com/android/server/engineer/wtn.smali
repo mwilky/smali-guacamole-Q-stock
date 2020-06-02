@@ -52,7 +52,7 @@
 
     invoke-static {p0, v1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    invoke-static {v0}, Lcom/android/server/engineer/qbh;->H(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0}, Lcom/android/server/engineer/qbh;->J(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p0
 

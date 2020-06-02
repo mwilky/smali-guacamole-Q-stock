@@ -63,7 +63,7 @@
 
     move-result-object p0
 
-    invoke-virtual {p0}, Lcom/android/server/am/tsu;->Da()V
+    invoke-virtual {p0}, Lcom/android/server/am/tsu;->Ea()V
 
     return-void
 .end method
@@ -117,7 +117,7 @@
 
     move-result-object p2
 
-    invoke-virtual {p2}, Lcom/android/server/am/tsu;->Ea()V
+    invoke-virtual {p2}, Lcom/android/server/am/tsu;->Fa()V
 
     iget-boolean p2, p2, Lcom/android/server/am/tsu;->mIsolated:Z
 
@@ -200,7 +200,7 @@
 
     move-result-object p0
 
-    invoke-virtual {p0}, Lcom/android/server/am/tsu;->Fa()V
+    invoke-virtual {p0}, Lcom/android/server/am/tsu;->Ga()V
 
     return-void
 .end method

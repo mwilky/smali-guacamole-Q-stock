@@ -73,7 +73,7 @@
 
     move-result p1
 
-    invoke-virtual {p0, p1}, Lcom/android/server/sis/vdb;->w(I)V
+    invoke-virtual {p0, p1}, Lcom/android/server/sis/vdb;->y(I)V
 
     goto/16 :goto_2
 
@@ -84,7 +84,7 @@
 
     iget-object p0, p0, Lcom/android/server/sis/vdb$zta;->this$0:Lcom/android/server/sis/vdb;
 
-    invoke-virtual {p0}, Lcom/android/server/sis/vdb;->Vd()V
+    invoke-virtual {p0}, Lcom/android/server/sis/vdb;->be()V
 
     goto/16 :goto_2
 
@@ -122,7 +122,7 @@
 
     iget-object p1, p0, Lcom/android/server/sis/vdb$zta;->this$0:Lcom/android/server/sis/vdb;
 
-    invoke-virtual {p1}, Lcom/android/server/sis/vdb;->Xd()V
+    invoke-virtual {p1}, Lcom/android/server/sis/vdb;->de()V
 
     goto :goto_1
 
@@ -138,7 +138,7 @@
 
     iget-object p0, p0, Lcom/android/server/sis/vdb$zta;->this$0:Lcom/android/server/sis/vdb;
 
-    invoke-virtual {p0}, Lcom/android/server/sis/vdb;->Sd()V
+    invoke-virtual {p0}, Lcom/android/server/sis/vdb;->Zd()V
 
     goto/16 :goto_2
 
@@ -164,7 +164,7 @@
 
     iget-object p0, p0, Lcom/android/server/sis/vdb$zta;->this$0:Lcom/android/server/sis/vdb;
 
-    invoke-virtual {p0}, Lcom/android/server/sis/vdb;->Wd()V
+    invoke-virtual {p0}, Lcom/android/server/sis/vdb;->ce()V
 
     goto :goto_2
 
@@ -175,7 +175,7 @@
 
     iget-object p0, p0, Lcom/android/server/sis/vdb$zta;->this$0:Lcom/android/server/sis/vdb;
 
-    invoke-virtual {p0}, Lcom/android/server/sis/vdb;->Ud()V
+    invoke-virtual {p0}, Lcom/android/server/sis/vdb;->ae()V
 
     goto :goto_2
 
@@ -187,7 +187,7 @@
     :goto_1
     iget-object p0, p0, Lcom/android/server/sis/vdb$zta;->this$0:Lcom/android/server/sis/vdb;
 
-    invoke-virtual {p0}, Lcom/android/server/sis/vdb;->Td()V
+    invoke-virtual {p0}, Lcom/android/server/sis/vdb;->_d()V
 
     goto :goto_2
 
@@ -208,7 +208,7 @@
 
     iget-object p0, p0, Lcom/android/server/sis/vdb$zta;->this$0:Lcom/android/server/sis/vdb;
 
-    invoke-virtual {p0}, Lcom/android/server/sis/vdb;->Xd()V
+    invoke-virtual {p0}, Lcom/android/server/sis/vdb;->de()V
 
     goto :goto_2
 

@@ -1,88 +1,80 @@
-.class Lcom/android/server/am/b$you;
-.super Landroid/os/Handler;
+.class final Lcom/android/server/am/B$you;
+.super Ljava/lang/Object;
 .source ""
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/server/am/b;
+    value = Lcom/android/server/am/B;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x2
+    accessFlags = 0x18
     name = "you"
 .end annotation
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/server/am/b;
+.field count:I
+
+.field gz:J
+
+.field pss:J
 
 
 # direct methods
-.method public constructor <init>(Lcom/android/server/am/b;Landroid/os/Looper;)V
-    .locals 0
+.method constructor <init>()V
+    .locals 2
 
-    iput-object p1, p0, Lcom/android/server/am/b$you;->this$0:Lcom/android/server/am/b;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    invoke-direct {p0, p2}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
+    const-wide/16 v0, 0x0
+
+    iput-wide v0, p0, Lcom/android/server/am/B$you;->pss:J
+
+    iput-wide v0, p0, Lcom/android/server/am/B$you;->gz:J
+
+    const/4 v0, 0x0
+
+    iput v0, p0, Lcom/android/server/am/B$you;->count:I
 
     return-void
 .end method
 
 
 # virtual methods
-.method public handleMessage(Landroid/os/Message;)V
-    .locals 2
+.method zta(Landroid/os/Debug$MemoryInfo;)V
+    .locals 4
 
-    iget p1, p1, Landroid/os/Message;->what:I
+    iget-wide v0, p0, Lcom/android/server/am/B$you;->pss:J
 
-    const/4 v0, 0x1
+    invoke-virtual {p1}, Landroid/os/Debug$MemoryInfo;->getTotalPss()I
 
-    if-eq p1, v0, :cond_0
+    move-result v2
 
-    goto :goto_0
+    int-to-long v2, v2
 
-    :cond_0
-    new-instance p1, Lcom/oneplus/config/ConfigGrabber;
+    add-long/2addr v0, v2
 
-    iget-object v0, p0, Lcom/android/server/am/b$you;->this$0:Lcom/android/server/am/b;
+    iput-wide v0, p0, Lcom/android/server/am/B$you;->pss:J
 
-    invoke-static {v0}, Lcom/android/server/am/b;->zta(Lcom/android/server/am/b;)Landroid/content/Context;
+    iget-wide v0, p0, Lcom/android/server/am/B$you;->gz:J
 
-    move-result-object v0
+    invoke-virtual {p1}, Landroid/os/Debug$MemoryInfo;->getTotalUss()I
 
-    const-string v1, "GameShakeConfig"
+    move-result p1
 
-    invoke-direct {p1, v0, v1}, Lcom/oneplus/config/ConfigGrabber;-><init>(Landroid/content/Context;Ljava/lang/String;)V
+    int-to-long v2, p1
 
-    iget-object v0, p0, Lcom/android/server/am/b$you;->this$0:Lcom/android/server/am/b;
+    add-long/2addr v0, v2
 
-    invoke-virtual {p1}, Lcom/oneplus/config/ConfigGrabber;->grabConfig()Lorg/json/JSONArray;
+    iput-wide v0, p0, Lcom/android/server/am/B$you;->gz:J
 
-    move-result-object p1
+    iget p1, p0, Lcom/android/server/am/B$you;->count:I
 
-    invoke-static {v0, p1}, Lcom/android/server/am/b;->zta(Lcom/android/server/am/b;Lorg/json/JSONArray;)V
+    add-int/lit8 p1, p1, 0x1
 
-    new-instance p1, Lcom/oneplus/config/ConfigGrabber;
+    iput p1, p0, Lcom/android/server/am/B$you;->count:I
 
-    iget-object v0, p0, Lcom/android/server/am/b$you;->this$0:Lcom/android/server/am/b;
-
-    invoke-static {v0}, Lcom/android/server/am/b;->zta(Lcom/android/server/am/b;)Landroid/content/Context;
-
-    move-result-object v0
-
-    const-string v1, "GameMultiTouchConfig"
-
-    invoke-direct {p1, v0, v1}, Lcom/oneplus/config/ConfigGrabber;-><init>(Landroid/content/Context;Ljava/lang/String;)V
-
-    iget-object p0, p0, Lcom/android/server/am/b$you;->this$0:Lcom/android/server/am/b;
-
-    invoke-virtual {p1}, Lcom/oneplus/config/ConfigGrabber;->grabConfig()Lorg/json/JSONArray;
-
-    move-result-object p1
-
-    invoke-static {p0, p1}, Lcom/android/server/am/b;->zta(Lcom/android/server/am/b;Lorg/json/JSONArray;)V
-
-    :goto_0
     return-void
 .end method

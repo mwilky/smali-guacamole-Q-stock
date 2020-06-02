@@ -10,11 +10,11 @@
 
 .field private static final TAG:Ljava/lang/String; = "OpColorDisplayShellCommand"
 
-.field private static final Wa:I = 0x0
+.field private static final Xa:I = 0x0
 
-.field private static final Xa:I = 0x1
+.field private static final Ya:I = 0x1
 
-.field private static final Ya:I = 0x3
+.field private static final Za:I = 0x3
 
 
 # instance fields

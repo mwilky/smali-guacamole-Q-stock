@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field private final value:Lorg/bouncycastle/asn1/ssp;
+.field private final Kva:Lorg/bouncycastle/asn1/bvj;
 
-.field private final vta:Lorg/bouncycastle/asn1/bvj;
+.field private final value:Lorg/bouncycastle/asn1/ssp;
 
 
 # direct methods
@@ -15,7 +15,7 @@
 
     invoke-direct {p0}, Lorg/bouncycastle/asn1/oif;-><init>()V
 
-    iput-object p1, p0, Lorg/bouncycastle/asn1/x509/vju;->vta:Lorg/bouncycastle/asn1/bvj;
+    iput-object p1, p0, Lorg/bouncycastle/asn1/x509/vju;->Kva:Lorg/bouncycastle/asn1/bvj;
 
     iput-object p2, p0, Lorg/bouncycastle/asn1/x509/vju;->value:Lorg/bouncycastle/asn1/ssp;
 
@@ -37,7 +37,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lorg/bouncycastle/asn1/x509/vju;->vta:Lorg/bouncycastle/asn1/bvj;
+    iput-object v0, p0, Lorg/bouncycastle/asn1/x509/vju;->Kva:Lorg/bouncycastle/asn1/bvj;
 
     const/4 v0, 0x1
 
@@ -98,14 +98,6 @@
     return-object p0
 .end method
 
-.method public qi()Lorg/bouncycastle/asn1/bvj;
-    .locals 0
-
-    iget-object p0, p0, Lorg/bouncycastle/asn1/x509/vju;->vta:Lorg/bouncycastle/asn1/bvj;
-
-    return-object p0
-.end method
-
 .method public toASN1Primitive()Lorg/bouncycastle/asn1/vdb;
     .locals 4
 
@@ -113,7 +105,7 @@
 
     invoke-direct {v0}, Lorg/bouncycastle/asn1/cno;-><init>()V
 
-    iget-object v1, p0, Lorg/bouncycastle/asn1/x509/vju;->vta:Lorg/bouncycastle/asn1/bvj;
+    iget-object v1, p0, Lorg/bouncycastle/asn1/x509/vju;->Kva:Lorg/bouncycastle/asn1/bvj;
 
     invoke-virtual {v0, v1}, Lorg/bouncycastle/asn1/cno;->you(Lorg/bouncycastle/asn1/ssp;)V
 
@@ -132,6 +124,14 @@
     new-instance p0, Lorg/bouncycastle/asn1/G;
 
     invoke-direct {p0, v0}, Lorg/bouncycastle/asn1/G;-><init>(Lorg/bouncycastle/asn1/cno;)V
+
+    return-object p0
+.end method
+
+.method public zi()Lorg/bouncycastle/asn1/bvj;
+    .locals 0
+
+    iget-object p0, p0, Lorg/bouncycastle/asn1/x509/vju;->Kva:Lorg/bouncycastle/asn1/bvj;
 
     return-object p0
 .end method

@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/server/wm/veq;->Mb(I)V
+    value = Lcom/android/server/wm/cgv;->Xb(I)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,18 +18,18 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/server/wm/veq;
+.field private KG:I
 
-.field private uF:I
+.field private MG:F
 
-.field private wF:F
+.field final synthetic this$0:Lcom/android/server/wm/cgv;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/server/wm/veq;)V
+.method constructor <init>(Lcom/android/server/wm/cgv;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/android/server/wm/fto;->this$0:Lcom/android/server/wm/veq;
+    iput-object p1, p0, Lcom/android/server/wm/fto;->this$0:Lcom/android/server/wm/cgv;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -72,15 +72,15 @@
     return p0
 
     :cond_0
-    iget-object p1, p0, Lcom/android/server/wm/fto;->this$0:Lcom/android/server/wm/veq;
+    iget-object p1, p0, Lcom/android/server/wm/fto;->this$0:Lcom/android/server/wm/cgv;
 
-    iget v0, p0, Lcom/android/server/wm/fto;->uF:I
+    iget v0, p0, Lcom/android/server/wm/fto;->KG:I
 
     invoke-virtual {p2}, Landroid/view/MotionEvent;->getRawX()F
 
     move-result p2
 
-    iget v2, p0, Lcom/android/server/wm/fto;->wF:F
+    iget v2, p0, Lcom/android/server/wm/fto;->MG:F
 
     sub-float/2addr p2, v2
 
@@ -88,51 +88,51 @@
 
     add-int/2addr v0, p2
 
-    invoke-static {p1, v0}, Lcom/android/server/wm/veq;->sis(Lcom/android/server/wm/veq;I)I
+    invoke-static {p1, v0}, Lcom/android/server/wm/cgv;->sis(Lcom/android/server/wm/cgv;I)I
 
-    iget-object p1, p0, Lcom/android/server/wm/fto;->this$0:Lcom/android/server/wm/veq;
+    iget-object p1, p0, Lcom/android/server/wm/fto;->this$0:Lcom/android/server/wm/cgv;
 
-    invoke-static {p1}, Lcom/android/server/wm/veq;->ibl(Lcom/android/server/wm/veq;)I
+    invoke-static {p1}, Lcom/android/server/wm/cgv;->ibl(Lcom/android/server/wm/cgv;)I
 
     move-result p1
 
-    iget-object p2, p0, Lcom/android/server/wm/fto;->this$0:Lcom/android/server/wm/veq;
+    iget-object p2, p0, Lcom/android/server/wm/fto;->this$0:Lcom/android/server/wm/cgv;
 
-    invoke-static {p2}, Lcom/android/server/wm/veq;->ugm(Lcom/android/server/wm/veq;)I
+    invoke-static {p2}, Lcom/android/server/wm/cgv;->ugm(Lcom/android/server/wm/cgv;)I
 
     move-result p2
 
     if-le p1, p2, :cond_1
 
-    iget-object p1, p0, Lcom/android/server/wm/fto;->this$0:Lcom/android/server/wm/veq;
+    iget-object p1, p0, Lcom/android/server/wm/fto;->this$0:Lcom/android/server/wm/cgv;
 
-    invoke-static {p1}, Lcom/android/server/wm/veq;->ugm(Lcom/android/server/wm/veq;)I
+    invoke-static {p1}, Lcom/android/server/wm/cgv;->ugm(Lcom/android/server/wm/cgv;)I
 
     move-result p2
 
     :goto_0
-    invoke-static {p1, p2}, Lcom/android/server/wm/veq;->sis(Lcom/android/server/wm/veq;I)I
+    invoke-static {p1, p2}, Lcom/android/server/wm/cgv;->sis(Lcom/android/server/wm/cgv;I)I
 
     goto :goto_1
 
     :cond_1
-    iget-object p1, p0, Lcom/android/server/wm/fto;->this$0:Lcom/android/server/wm/veq;
+    iget-object p1, p0, Lcom/android/server/wm/fto;->this$0:Lcom/android/server/wm/cgv;
 
-    invoke-static {p1}, Lcom/android/server/wm/veq;->ibl(Lcom/android/server/wm/veq;)I
+    invoke-static {p1}, Lcom/android/server/wm/cgv;->ibl(Lcom/android/server/wm/cgv;)I
 
     move-result p1
 
-    iget-object p2, p0, Lcom/android/server/wm/fto;->this$0:Lcom/android/server/wm/veq;
+    iget-object p2, p0, Lcom/android/server/wm/fto;->this$0:Lcom/android/server/wm/cgv;
 
-    invoke-static {p2}, Lcom/android/server/wm/veq;->vdb(Lcom/android/server/wm/veq;)I
+    invoke-static {p2}, Lcom/android/server/wm/cgv;->vdb(Lcom/android/server/wm/cgv;)I
 
     move-result p2
 
     if-ge p1, p2, :cond_2
 
-    iget-object p1, p0, Lcom/android/server/wm/fto;->this$0:Lcom/android/server/wm/veq;
+    iget-object p1, p0, Lcom/android/server/wm/fto;->this$0:Lcom/android/server/wm/cgv;
 
-    invoke-static {p1}, Lcom/android/server/wm/veq;->vdb(Lcom/android/server/wm/veq;)I
+    invoke-static {p1}, Lcom/android/server/wm/cgv;->vdb(Lcom/android/server/wm/cgv;)I
 
     move-result p2
 
@@ -140,26 +140,26 @@
 
     :cond_2
     :goto_1
-    iget-object p0, p0, Lcom/android/server/wm/fto;->this$0:Lcom/android/server/wm/veq;
+    iget-object p0, p0, Lcom/android/server/wm/fto;->this$0:Lcom/android/server/wm/cgv;
 
-    invoke-static {p0}, Lcom/android/server/wm/veq;->sis(Lcom/android/server/wm/veq;)V
+    invoke-static {p0}, Lcom/android/server/wm/cgv;->sis(Lcom/android/server/wm/cgv;)V
 
     return v1
 
     :cond_3
-    iget-object p1, p0, Lcom/android/server/wm/fto;->this$0:Lcom/android/server/wm/veq;
+    iget-object p1, p0, Lcom/android/server/wm/fto;->this$0:Lcom/android/server/wm/cgv;
 
-    invoke-static {p1}, Lcom/android/server/wm/veq;->gwm(Lcom/android/server/wm/veq;)Landroid/view/WindowManager$LayoutParams;
+    invoke-static {p1}, Lcom/android/server/wm/cgv;->gwm(Lcom/android/server/wm/cgv;)Landroid/view/WindowManager$LayoutParams;
 
     move-result-object p2
 
     iget p2, p2, Landroid/view/WindowManager$LayoutParams;->x:I
 
-    invoke-static {p1, p2}, Lcom/android/server/wm/veq;->sis(Lcom/android/server/wm/veq;I)I
+    invoke-static {p1, p2}, Lcom/android/server/wm/cgv;->sis(Lcom/android/server/wm/cgv;I)I
 
-    iget-object p1, p0, Lcom/android/server/wm/fto;->this$0:Lcom/android/server/wm/veq;
+    iget-object p1, p0, Lcom/android/server/wm/fto;->this$0:Lcom/android/server/wm/cgv;
 
-    invoke-static {p1}, Lcom/android/server/wm/veq;->zta(Lcom/android/server/wm/veq;)Landroid/content/Context;
+    invoke-static {p1}, Lcom/android/server/wm/cgv;->zta(Lcom/android/server/wm/cgv;)Landroid/content/Context;
 
     move-result-object p1
 
@@ -167,9 +167,9 @@
 
     move-result-object p1
 
-    iget-object p2, p0, Lcom/android/server/wm/fto;->this$0:Lcom/android/server/wm/veq;
+    iget-object p2, p0, Lcom/android/server/wm/fto;->this$0:Lcom/android/server/wm/cgv;
 
-    invoke-static {p2}, Lcom/android/server/wm/veq;->ibl(Lcom/android/server/wm/veq;)I
+    invoke-static {p2}, Lcom/android/server/wm/cgv;->ibl(Lcom/android/server/wm/cgv;)I
 
     move-result p2
 
@@ -177,17 +177,17 @@
 
     invoke-static {p1, v2, p2}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
-    iget-object p1, p0, Lcom/android/server/wm/fto;->this$0:Lcom/android/server/wm/veq;
+    iget-object p1, p0, Lcom/android/server/wm/fto;->this$0:Lcom/android/server/wm/cgv;
 
-    invoke-static {p1}, Lcom/android/server/wm/veq;->bvj(Lcom/android/server/wm/veq;)Lcom/android/server/wm/veq$zta;
+    invoke-static {p1}, Lcom/android/server/wm/cgv;->bvj(Lcom/android/server/wm/cgv;)Lcom/android/server/wm/cgv$zta;
 
     move-result-object p1
 
     invoke-virtual {p1, v0}, Landroid/os/Handler;->removeMessages(I)V
 
-    iget-object p0, p0, Lcom/android/server/wm/fto;->this$0:Lcom/android/server/wm/veq;
+    iget-object p0, p0, Lcom/android/server/wm/fto;->this$0:Lcom/android/server/wm/cgv;
 
-    invoke-static {p0}, Lcom/android/server/wm/veq;->bvj(Lcom/android/server/wm/veq;)Lcom/android/server/wm/veq$zta;
+    invoke-static {p0}, Lcom/android/server/wm/cgv;->bvj(Lcom/android/server/wm/cgv;)Lcom/android/server/wm/cgv$zta;
 
     move-result-object p0
 
@@ -198,9 +198,9 @@
     return v1
 
     :cond_4
-    iget-object p1, p0, Lcom/android/server/wm/fto;->this$0:Lcom/android/server/wm/veq;
+    iget-object p1, p0, Lcom/android/server/wm/fto;->this$0:Lcom/android/server/wm/cgv;
 
-    invoke-static {p1}, Lcom/android/server/wm/veq;->gwm(Lcom/android/server/wm/veq;)Landroid/view/WindowManager$LayoutParams;
+    invoke-static {p1}, Lcom/android/server/wm/cgv;->gwm(Lcom/android/server/wm/cgv;)Landroid/view/WindowManager$LayoutParams;
 
     move-result-object p1
 
@@ -208,31 +208,31 @@
 
     iput v2, p1, Landroid/view/WindowManager$LayoutParams;->alpha:F
 
-    iget-object p1, p0, Lcom/android/server/wm/fto;->this$0:Lcom/android/server/wm/veq;
+    iget-object p1, p0, Lcom/android/server/wm/fto;->this$0:Lcom/android/server/wm/cgv;
 
-    invoke-static {p1}, Lcom/android/server/wm/veq;->bvj(Lcom/android/server/wm/veq;)Lcom/android/server/wm/veq$zta;
+    invoke-static {p1}, Lcom/android/server/wm/cgv;->bvj(Lcom/android/server/wm/cgv;)Lcom/android/server/wm/cgv$zta;
 
     move-result-object p1
 
     invoke-virtual {p1, v0}, Landroid/os/Handler;->removeMessages(I)V
 
-    iget-object p1, p0, Lcom/android/server/wm/fto;->this$0:Lcom/android/server/wm/veq;
+    iget-object p1, p0, Lcom/android/server/wm/fto;->this$0:Lcom/android/server/wm/cgv;
 
-    invoke-static {p1}, Lcom/android/server/wm/veq;->gwm(Lcom/android/server/wm/veq;)Landroid/view/WindowManager$LayoutParams;
+    invoke-static {p1}, Lcom/android/server/wm/cgv;->gwm(Lcom/android/server/wm/cgv;)Landroid/view/WindowManager$LayoutParams;
 
     move-result-object v0
 
     iget v0, v0, Landroid/view/WindowManager$LayoutParams;->x:I
 
-    invoke-static {p1, v0}, Lcom/android/server/wm/veq;->sis(Lcom/android/server/wm/veq;I)I
+    invoke-static {p1, v0}, Lcom/android/server/wm/cgv;->sis(Lcom/android/server/wm/cgv;I)I
 
-    iput v0, p0, Lcom/android/server/wm/fto;->uF:I
+    iput v0, p0, Lcom/android/server/wm/fto;->KG:I
 
     invoke-virtual {p2}, Landroid/view/MotionEvent;->getRawX()F
 
     move-result p1
 
-    iput p1, p0, Lcom/android/server/wm/fto;->wF:F
+    iput p1, p0, Lcom/android/server/wm/fto;->MG:F
 
     return v1
 .end method

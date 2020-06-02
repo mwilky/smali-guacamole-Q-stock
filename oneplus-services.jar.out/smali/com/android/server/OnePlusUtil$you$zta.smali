@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field public cd:I
+.field public dd:I
 
 .field public mH:I
 
@@ -40,7 +40,7 @@
 
     iput-object p3, p0, Lcom/android/server/OnePlusUtil$you$zta;->mPkgName:Ljava/lang/String;
 
-    iput p4, p0, Lcom/android/server/OnePlusUtil$you$zta;->cd:I
+    iput p4, p0, Lcom/android/server/OnePlusUtil$you$zta;->dd:I
 
     iput p5, p0, Lcom/android/server/OnePlusUtil$you$zta;->mH:I
 
@@ -88,7 +88,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget v1, p0, Lcom/android/server/OnePlusUtil$you$zta;->cd:I
+    iget v1, p0, Lcom/android/server/OnePlusUtil$you$zta;->dd:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 

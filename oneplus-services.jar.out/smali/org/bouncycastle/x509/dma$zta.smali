@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field Gma:Ljava/lang/Object;
+.field Voa:Ljava/lang/Object;
 
 .field provider:Ljava/security/Provider;
 
@@ -26,7 +26,7 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lorg/bouncycastle/x509/dma$zta;->Gma:Ljava/lang/Object;
+    iput-object p1, p0, Lorg/bouncycastle/x509/dma$zta;->Voa:Ljava/lang/Object;
 
     iput-object p2, p0, Lorg/bouncycastle/x509/dma$zta;->provider:Ljava/security/Provider;
 
@@ -35,18 +35,18 @@
 
 
 # virtual methods
-.method fl()Ljava/lang/Object;
-    .locals 0
-
-    iget-object p0, p0, Lorg/bouncycastle/x509/dma$zta;->Gma:Ljava/lang/Object;
-
-    return-object p0
-.end method
-
 .method getProvider()Ljava/security/Provider;
     .locals 0
 
     iget-object p0, p0, Lorg/bouncycastle/x509/dma$zta;->provider:Ljava/security/Provider;
+
+    return-object p0
+.end method
+
+.method ol()Ljava/lang/Object;
+    .locals 0
+
+    iget-object p0, p0, Lorg/bouncycastle/x509/dma$zta;->Voa:Ljava/lang/Object;
 
     return-object p0
 .end method

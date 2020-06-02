@@ -18,9 +18,15 @@
 
 
 # static fields
+.field private static final API:Ljava/lang/String; = "status"
+
+.field public static final APPID:Ljava/lang/String; = "7554P2RV0X"
+
 .field private static final DEBUG:Z
 
 .field private static final KEY_OEM_SPLASH_ADS_ENABLE:Ljava/lang/String; = "oem_splash_ads_enable"
+
+.field public static final MDM_NATIVE_EVENT:Ljava/lang/String; = "splash_switch"
 
 .field private static final MSG_GET_ONLINECONFIG:I = 0x1
 
@@ -33,6 +39,8 @@
 .field private static mOpAdsOn:Ljava/lang/String;
 
 .field private static mOpAdsPermEnable:Z
+
+.field private static mOpDeviceManagerInjector:Lnet/oneplus/odm/OpDeviceManagerInjector;
 
 .field private static sInstance:Lcom/android/server/wm/OPAppSwitchManagerService;
 
@@ -201,6 +209,14 @@
     return v0
 .end method
 
+.method static synthetic access$1000(Lcom/android/server/wm/OPAppSwitchManagerService;)Landroid/os/Handler;
+    .locals 0
+
+    iget-object p0, p0, Lcom/android/server/wm/OPAppSwitchManagerService;->mHandler:Landroid/os/Handler;
+
+    return-object p0
+.end method
+
 .method static synthetic access$200()Z
     .locals 1
 
@@ -225,6 +241,14 @@
     return-object v0
 .end method
 
+.method static synthetic access$500(Lcom/android/server/wm/OPAppSwitchManagerService;)Z
+    .locals 0
+
+    iget-boolean p0, p0, Lcom/android/server/wm/OPAppSwitchManagerService;->mOpAdsSettingsOn:Z
+
+    return p0
+.end method
+
 .method static synthetic access$502(Lcom/android/server/wm/OPAppSwitchManagerService;Z)Z
     .locals 0
 
@@ -233,7 +257,23 @@
     return p1
 .end method
 
-.method static synthetic access$600(Lcom/android/server/wm/OPAppSwitchManagerService;Lcom/android/server/wm/ActivityRecord;Lcom/android/server/wm/ActivityRecord;Z)V
+.method static synthetic access$600()Lnet/oneplus/odm/OpDeviceManagerInjector;
+    .locals 1
+
+    sget-object v0, Lcom/android/server/wm/OPAppSwitchManagerService;->mOpDeviceManagerInjector:Lnet/oneplus/odm/OpDeviceManagerInjector;
+
+    return-object v0
+.end method
+
+.method static synthetic access$602(Lnet/oneplus/odm/OpDeviceManagerInjector;)Lnet/oneplus/odm/OpDeviceManagerInjector;
+    .locals 0
+
+    sput-object p0, Lcom/android/server/wm/OPAppSwitchManagerService;->mOpDeviceManagerInjector:Lnet/oneplus/odm/OpDeviceManagerInjector;
+
+    return-object p0
+.end method
+
+.method static synthetic access$700(Lcom/android/server/wm/OPAppSwitchManagerService;Lcom/android/server/wm/ActivityRecord;Lcom/android/server/wm/ActivityRecord;Z)V
     .locals 0
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/server/wm/OPAppSwitchManagerService;->onActivityPaused(Lcom/android/server/wm/ActivityRecord;Lcom/android/server/wm/ActivityRecord;Z)V
@@ -241,7 +281,7 @@
     return-void
 .end method
 
-.method static synthetic access$700(Lcom/android/server/wm/OPAppSwitchManagerService;Lcom/android/server/wm/ActivityRecord;Z)V
+.method static synthetic access$800(Lcom/android/server/wm/OPAppSwitchManagerService;Lcom/android/server/wm/ActivityRecord;Z)V
     .locals 0
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/wm/OPAppSwitchManagerService;->onActivityResumed(Lcom/android/server/wm/ActivityRecord;Z)V
@@ -249,20 +289,12 @@
     return-void
 .end method
 
-.method static synthetic access$800(Lcom/android/server/wm/OPAppSwitchManagerService;Lorg/json/JSONArray;)V
+.method static synthetic access$900(Lcom/android/server/wm/OPAppSwitchManagerService;Lorg/json/JSONArray;)V
     .locals 0
 
     invoke-direct {p0, p1}, Lcom/android/server/wm/OPAppSwitchManagerService;->resolveOnlineConfig(Lorg/json/JSONArray;)V
 
     return-void
-.end method
-
-.method static synthetic access$900(Lcom/android/server/wm/OPAppSwitchManagerService;)Landroid/os/Handler;
-    .locals 0
-
-    iget-object p0, p0, Lcom/android/server/wm/OPAppSwitchManagerService;->mHandler:Landroid/os/Handler;
-
-    return-object p0
 .end method
 
 .method private getGrantedAppPermissionsCount(Landroid/content/Context;Ljava/lang/String;)I
@@ -1760,40 +1792,40 @@
 
 
 # virtual methods
-.method public getAdsSettings(Landroid/content/Context;)Z
-    .locals 1
+.method public getAdsSettings()Z
+    .locals 2
 
-    sget-boolean p1, Lcom/android/server/wm/OPAppSwitchManagerService;->DEBUG:Z
+    sget-boolean v0, Lcom/android/server/wm/OPAppSwitchManagerService;->DEBUG:Z
 
-    if-eqz p1, :cond_0
+    if-eqz v0, :cond_0
 
-    new-instance p1, Ljava/lang/StringBuilder;
+    new-instance v0, Ljava/lang/StringBuilder;
 
-    invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v0, "ads settings : "
+    const-string v1, "ads settings : "
 
-    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean v0, p0, Lcom/android/server/wm/OPAppSwitchManagerService;->mOpAdsSettingsOn:Z
+    iget-boolean v1, p0, Lcom/android/server/wm/OPAppSwitchManagerService;->mOpAdsSettingsOn:Z
 
-    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
-    const-string v0, ", "
+    const-string v1, ", "
 
-    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sget-boolean v0, Lcom/android/server/wm/OPAppSwitchManagerService;->mOpAdsEnable:Z
+    sget-boolean v1, Lcom/android/server/wm/OPAppSwitchManagerService;->mOpAdsEnable:Z
 
-    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object p1
+    move-result-object v0
 
-    const-string v0, "OPAppSwitchManagerService"
+    const-string v1, "OPAppSwitchManagerService"
 
-    invoke-static {v0, p1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {v1, v0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_0
     iget-boolean p0, p0, Lcom/android/server/wm/OPAppSwitchManagerService;->mOpAdsSettingsOn:Z

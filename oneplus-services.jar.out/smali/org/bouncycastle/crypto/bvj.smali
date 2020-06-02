@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field private strength:I
+.field private Moa:Ljava/security/SecureRandom;
 
-.field private xma:Ljava/security/SecureRandom;
+.field private strength:I
 
 
 # direct methods
@@ -15,7 +15,7 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lorg/bouncycastle/crypto/bvj;->xma:Ljava/security/SecureRandom;
+    iput-object p1, p0, Lorg/bouncycastle/crypto/bvj;->Moa:Ljava/security/SecureRandom;
 
     iput p2, p0, Lorg/bouncycastle/crypto/bvj;->strength:I
 
@@ -24,18 +24,18 @@
 
 
 # virtual methods
-.method public Zi()Ljava/security/SecureRandom;
-    .locals 0
-
-    iget-object p0, p0, Lorg/bouncycastle/crypto/bvj;->xma:Ljava/security/SecureRandom;
-
-    return-object p0
-.end method
-
 .method public getStrength()I
     .locals 0
 
     iget p0, p0, Lorg/bouncycastle/crypto/bvj;->strength:I
 
     return p0
+.end method
+
+.method public hj()Ljava/security/SecureRandom;
+    .locals 0
+
+    iget-object p0, p0, Lorg/bouncycastle/crypto/bvj;->Moa:Ljava/security/SecureRandom;
+
+    return-object p0
 .end method

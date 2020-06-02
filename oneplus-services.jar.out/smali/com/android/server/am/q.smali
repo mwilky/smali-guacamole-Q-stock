@@ -13,11 +13,11 @@
 
 
 # instance fields
-.field private Nw:Lcom/android/server/am/irq;
-
-.field private Ow:Lcom/android/server/dma;
-
 .field private mInited:Z
+
+.field private tx:Lcom/android/server/am/irq;
+
+.field private ux:Lcom/android/server/dma;
 
 
 # direct methods
@@ -71,6 +71,21 @@
 
     :cond_0
     invoke-static {p1, p2, p3}, Lcom/android/server/am/irq;->addProc(IILcom/android/server/am/ProcessRecord;)V
+
+    return-void
+.end method
+
+.method public bindServiceLockedEvent(Lcom/android/server/am/ProcessRecord;Landroid/content/Intent;Lcom/android/server/am/ServiceRecord;Ljava/lang/String;)V
+    .locals 0
+
+    iget-boolean p0, p0, Lcom/android/server/am/q;->mInited:Z
+
+    if-nez p0, :cond_0
+
+    return-void
+
+    :cond_0
+    invoke-static {p1, p2, p3, p4}, Lcom/android/server/am/irq;->bindServiceLockedEvent(Lcom/android/server/am/ProcessRecord;Landroid/content/Intent;Lcom/android/server/am/ServiceRecord;Ljava/lang/String;)V
 
     return-void
 .end method
@@ -198,7 +213,7 @@
     return-void
 
     :cond_0
-    iget-object p0, p0, Lcom/android/server/am/q;->Nw:Lcom/android/server/am/irq;
+    iget-object p0, p0, Lcom/android/server/am/q;->tx:Lcom/android/server/am/irq;
 
     invoke-virtual {p0}, Lcom/android/server/am/irq;->clearImportantUids()V
 
@@ -315,7 +330,7 @@
 
     move-result-object v1
 
-    iput-object v1, p0, Lcom/android/server/am/q;->Nw:Lcom/android/server/am/irq;
+    iput-object v1, p0, Lcom/android/server/am/q;->tx:Lcom/android/server/am/irq;
 
     invoke-static {}, Lcom/android/server/am/vdw;->getInstance()Lcom/android/server/am/vdw;
 
@@ -327,19 +342,19 @@
 
     iget-object p2, p1, Lcom/android/server/am/ActivityManagerService;->mContext:Landroid/content/Context;
 
-    invoke-static {p2, p1}, Lcom/oneplus/server/ssp;->zta(Landroid/content/Context;Lcom/android/server/am/ActivityManagerService;)V
+    invoke-static {p2, p1}, Lcom/oneplus/server/kth;->zta(Landroid/content/Context;Lcom/android/server/am/ActivityManagerService;)V
 
     invoke-static {}, Lcom/android/server/dma;->getInstance()Lcom/android/server/dma;
 
     move-result-object p2
 
-    iput-object p2, p0, Lcom/android/server/am/q;->Ow:Lcom/android/server/dma;
+    iput-object p2, p0, Lcom/android/server/am/q;->ux:Lcom/android/server/dma;
 
-    iget-object p2, p0, Lcom/android/server/am/q;->Ow:Lcom/android/server/dma;
+    iget-object p2, p0, Lcom/android/server/am/q;->ux:Lcom/android/server/dma;
 
     invoke-virtual {p2, p1}, Lcom/android/server/dma;->zta(Lcom/android/server/am/ActivityManagerService;)V
 
-    iget-object p1, p0, Lcom/android/server/am/q;->Ow:Lcom/android/server/dma;
+    iget-object p1, p0, Lcom/android/server/am/q;->ux:Lcom/android/server/dma;
 
     invoke-virtual {p1, p3}, Lcom/android/server/dma;->zta(Landroid/content/pm/IPackageManager;)V
 
@@ -521,7 +536,7 @@
 
     if-eqz p1, :cond_1
 
-    iget-object p0, p0, Lcom/android/server/am/q;->Nw:Lcom/android/server/am/irq;
+    iget-object p0, p0, Lcom/android/server/am/q;->tx:Lcom/android/server/am/irq;
 
     invoke-virtual {p0, p4, p3}, Lcom/android/server/am/irq;->dump(Ljava/io/PrintWriter;[Ljava/lang/String;)V
 
@@ -640,7 +655,7 @@
     return-void
 
     :cond_0
-    iget-object p0, p0, Lcom/android/server/am/q;->Nw:Lcom/android/server/am/irq;
+    iget-object p0, p0, Lcom/android/server/am/q;->tx:Lcom/android/server/am/irq;
 
     invoke-virtual {p0, p1, p2}, Lcom/android/server/am/irq;->updateImportantUids(Lcom/android/server/am/ConnectionRecord;Lcom/android/server/am/ProcessRecord;)V
 
@@ -657,7 +672,7 @@
     return-void
 
     :cond_0
-    iget-object p0, p0, Lcom/android/server/am/q;->Nw:Lcom/android/server/am/irq;
+    iget-object p0, p0, Lcom/android/server/am/q;->tx:Lcom/android/server/am/irq;
 
     invoke-virtual {p0, p1, p2}, Lcom/android/server/am/irq;->updateImportantUids(Lcom/android/server/am/ProcessRecord;Lcom/android/server/am/ProcessRecord;)V
 
@@ -674,7 +689,7 @@
     return-void
 
     :cond_0
-    iget-object p0, p0, Lcom/android/server/am/q;->Nw:Lcom/android/server/am/irq;
+    iget-object p0, p0, Lcom/android/server/am/q;->tx:Lcom/android/server/am/irq;
 
     invoke-virtual {p0}, Lcom/android/server/am/irq;->updateLastImportantUidsIfNeeded()V
 

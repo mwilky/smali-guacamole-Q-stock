@@ -1,4 +1,4 @@
-.class final Lcom/android/server/am/t$rtg;
+.class final Lcom/android/server/am/v$tsu;
 .super Ljava/lang/Object;
 .source ""
 
@@ -8,19 +8,19 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/server/am/t;
+    value = Lcom/android/server/am/v;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
     accessFlags = 0x1a
-    name = "rtg"
+    name = "tsu"
 .end annotation
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
         "Ljava/util/Comparator<",
-        "Lcom/android/server/am/t$cno;",
+        "Lcom/android/server/am/v$cno;",
         ">;"
     }
 .end annotation
@@ -35,10 +35,10 @@
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/android/server/am/s;)V
+.method synthetic constructor <init>(Lcom/android/server/am/u;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/am/t$rtg;-><init>()V
+    invoke-direct {p0}, Lcom/android/server/am/v$tsu;-><init>()V
 
     return-void
 .end method
@@ -48,21 +48,21 @@
 .method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 0
 
-    check-cast p1, Lcom/android/server/am/t$cno;
+    check-cast p1, Lcom/android/server/am/v$cno;
 
-    check-cast p2, Lcom/android/server/am/t$cno;
+    check-cast p2, Lcom/android/server/am/v$cno;
 
-    invoke-virtual {p0, p1, p2}, Lcom/android/server/am/t$rtg;->zta(Lcom/android/server/am/t$cno;Lcom/android/server/am/t$cno;)I
+    invoke-virtual {p0, p1, p2}, Lcom/android/server/am/v$tsu;->zta(Lcom/android/server/am/v$cno;Lcom/android/server/am/v$cno;)I
 
     move-result p0
 
     return p0
 .end method
 
-.method public zta(Lcom/android/server/am/t$cno;Lcom/android/server/am/t$cno;)I
+.method public zta(Lcom/android/server/am/v$cno;Lcom/android/server/am/v$cno;)I
     .locals 0
 
-    invoke-static {p1}, Lcom/android/server/am/t$cno;->zta(Lcom/android/server/am/t$cno;)J
+    invoke-static {p1}, Lcom/android/server/am/v$cno;->bio(Lcom/android/server/am/v$cno;)J
 
     move-result-wide p0
 
@@ -70,7 +70,7 @@
 
     move-result-object p0
 
-    invoke-static {p2}, Lcom/android/server/am/t$cno;->zta(Lcom/android/server/am/t$cno;)J
+    invoke-static {p2}, Lcom/android/server/am/v$cno;->bio(Lcom/android/server/am/v$cno;)J
 
     move-result-wide p1
 

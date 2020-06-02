@@ -4,15 +4,15 @@
 
 
 # instance fields
-.field protected Qpa:Lorg/bouncycastle/asn1/bvj;
-
-.field protected Rpa:Lorg/bouncycastle/asn1/ywr;
-
-.field protected Spa:Lorg/bouncycastle/asn1/vdb;
-
-.field protected Tpa:Lorg/bouncycastle/asn1/vdb;
+.field protected dsa:Lorg/bouncycastle/asn1/bvj;
 
 .field protected encoding:I
+
+.field protected esa:Lorg/bouncycastle/asn1/ywr;
+
+.field protected fsa:Lorg/bouncycastle/asn1/vdb;
+
+.field protected gsa:Lorg/bouncycastle/asn1/vdb;
 
 
 # direct methods
@@ -81,7 +81,7 @@
 
     check-cast v1, Lorg/bouncycastle/asn1/bvj;
 
-    iput-object v1, p0, Lorg/bouncycastle/asn1/igw;->Qpa:Lorg/bouncycastle/asn1/bvj;
+    iput-object v1, p0, Lorg/bouncycastle/asn1/igw;->dsa:Lorg/bouncycastle/asn1/bvj;
 
     invoke-direct {p0, p1, v3}, Lorg/bouncycastle/asn1/igw;->zta(Lorg/bouncycastle/asn1/cno;I)Lorg/bouncycastle/asn1/vdb;
 
@@ -96,7 +96,7 @@
 
     check-cast v1, Lorg/bouncycastle/asn1/ywr;
 
-    iput-object v1, p0, Lorg/bouncycastle/asn1/igw;->Rpa:Lorg/bouncycastle/asn1/ywr;
+    iput-object v1, p0, Lorg/bouncycastle/asn1/igw;->esa:Lorg/bouncycastle/asn1/ywr;
 
     add-int/lit8 v0, v0, 0x1
 
@@ -109,7 +109,7 @@
 
     if-nez v2, :cond_2
 
-    iput-object v1, p0, Lorg/bouncycastle/asn1/igw;->Spa:Lorg/bouncycastle/asn1/vdb;
+    iput-object v1, p0, Lorg/bouncycastle/asn1/igw;->fsa:Lorg/bouncycastle/asn1/vdb;
 
     add-int/lit8 v0, v0, 0x1
 
@@ -142,7 +142,7 @@
 
     move-result-object p1
 
-    iput-object p1, p0, Lorg/bouncycastle/asn1/igw;->Tpa:Lorg/bouncycastle/asn1/vdb;
+    iput-object p1, p0, Lorg/bouncycastle/asn1/igw;->gsa:Lorg/bouncycastle/asn1/vdb;
 
     return-void
 
@@ -168,7 +168,7 @@
 .method private obl(Lorg/bouncycastle/asn1/bvj;)V
     .locals 0
 
-    iput-object p1, p0, Lorg/bouncycastle/asn1/igw;->Qpa:Lorg/bouncycastle/asn1/bvj;
+    iput-object p1, p0, Lorg/bouncycastle/asn1/igw;->dsa:Lorg/bouncycastle/asn1/bvj;
 
     return-void
 .end method
@@ -176,7 +176,7 @@
 .method private rtg(Lorg/bouncycastle/asn1/vdb;)V
     .locals 0
 
-    iput-object p1, p0, Lorg/bouncycastle/asn1/igw;->Tpa:Lorg/bouncycastle/asn1/vdb;
+    iput-object p1, p0, Lorg/bouncycastle/asn1/igw;->gsa:Lorg/bouncycastle/asn1/vdb;
 
     return-void
 .end method
@@ -219,7 +219,7 @@
 .method private tsu(Lorg/bouncycastle/asn1/vdb;)V
     .locals 0
 
-    iput-object p1, p0, Lorg/bouncycastle/asn1/igw;->Spa:Lorg/bouncycastle/asn1/vdb;
+    iput-object p1, p0, Lorg/bouncycastle/asn1/igw;->fsa:Lorg/bouncycastle/asn1/vdb;
 
     return-void
 .end method
@@ -227,7 +227,7 @@
 .method private you(Lorg/bouncycastle/asn1/ywr;)V
     .locals 0
 
-    iput-object p1, p0, Lorg/bouncycastle/asn1/igw;->Rpa:Lorg/bouncycastle/asn1/ywr;
+    iput-object p1, p0, Lorg/bouncycastle/asn1/igw;->esa:Lorg/bouncycastle/asn1/ywr;
 
     return-void
 .end method
@@ -263,105 +263,7 @@
 
 
 # virtual methods
-.method public Ag()Lorg/bouncycastle/asn1/vdb;
-    .locals 0
-
-    iget-object p0, p0, Lorg/bouncycastle/asn1/igw;->Spa:Lorg/bouncycastle/asn1/vdb;
-
-    return-object p0
-.end method
-
-.method public Bg()Lorg/bouncycastle/asn1/bvj;
-    .locals 0
-
-    iget-object p0, p0, Lorg/bouncycastle/asn1/igw;->Qpa:Lorg/bouncycastle/asn1/bvj;
-
-    return-object p0
-.end method
-
-.method public Cg()Lorg/bouncycastle/asn1/vdb;
-    .locals 0
-
-    iget-object p0, p0, Lorg/bouncycastle/asn1/igw;->Tpa:Lorg/bouncycastle/asn1/vdb;
-
-    return-object p0
-.end method
-
-.method public Dg()Lorg/bouncycastle/asn1/ywr;
-    .locals 0
-
-    iget-object p0, p0, Lorg/bouncycastle/asn1/igw;->Rpa:Lorg/bouncycastle/asn1/ywr;
-
-    return-object p0
-.end method
-
-.method public getEncoding()I
-    .locals 0
-
-    iget p0, p0, Lorg/bouncycastle/asn1/igw;->encoding:I
-
-    return p0
-.end method
-
-.method public hashCode()I
-    .locals 2
-
-    iget-object v0, p0, Lorg/bouncycastle/asn1/igw;->Qpa:Lorg/bouncycastle/asn1/bvj;
-
-    if-eqz v0, :cond_0
-
-    invoke-virtual {v0}, Lorg/bouncycastle/asn1/bvj;->hashCode()I
-
-    move-result v0
-
-    goto :goto_0
-
-    :cond_0
-    const/4 v0, 0x0
-
-    :goto_0
-    iget-object v1, p0, Lorg/bouncycastle/asn1/igw;->Rpa:Lorg/bouncycastle/asn1/ywr;
-
-    if-eqz v1, :cond_1
-
-    invoke-virtual {v1}, Lorg/bouncycastle/asn1/ywr;->hashCode()I
-
-    move-result v1
-
-    xor-int/2addr v0, v1
-
-    :cond_1
-    iget-object v1, p0, Lorg/bouncycastle/asn1/igw;->Spa:Lorg/bouncycastle/asn1/vdb;
-
-    if-eqz v1, :cond_2
-
-    invoke-virtual {v1}, Lorg/bouncycastle/asn1/vdb;->hashCode()I
-
-    move-result v1
-
-    xor-int/2addr v0, v1
-
-    :cond_2
-    iget-object p0, p0, Lorg/bouncycastle/asn1/igw;->Tpa:Lorg/bouncycastle/asn1/vdb;
-
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/vdb;->hashCode()I
-
-    move-result p0
-
-    xor-int/2addr p0, v0
-
-    return p0
-.end method
-
-.method isConstructed()Z
-    .locals 0
-
-    const/4 p0, 0x1
-
-    return p0
-.end method
-
-.method ug()I
+.method Dg()I
     .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -378,7 +280,7 @@
     return p0
 .end method
 
-.method vg()Lorg/bouncycastle/asn1/vdb;
+.method Eg()Lorg/bouncycastle/asn1/vdb;
     .locals 7
 
     instance-of v0, p0, Lorg/bouncycastle/asn1/r;
@@ -390,21 +292,119 @@
     :cond_0
     new-instance v0, Lorg/bouncycastle/asn1/r;
 
-    iget-object v2, p0, Lorg/bouncycastle/asn1/igw;->Qpa:Lorg/bouncycastle/asn1/bvj;
+    iget-object v2, p0, Lorg/bouncycastle/asn1/igw;->dsa:Lorg/bouncycastle/asn1/bvj;
 
-    iget-object v3, p0, Lorg/bouncycastle/asn1/igw;->Rpa:Lorg/bouncycastle/asn1/ywr;
+    iget-object v3, p0, Lorg/bouncycastle/asn1/igw;->esa:Lorg/bouncycastle/asn1/ywr;
 
-    iget-object v4, p0, Lorg/bouncycastle/asn1/igw;->Spa:Lorg/bouncycastle/asn1/vdb;
+    iget-object v4, p0, Lorg/bouncycastle/asn1/igw;->fsa:Lorg/bouncycastle/asn1/vdb;
 
     iget v5, p0, Lorg/bouncycastle/asn1/igw;->encoding:I
 
-    iget-object v6, p0, Lorg/bouncycastle/asn1/igw;->Tpa:Lorg/bouncycastle/asn1/vdb;
+    iget-object v6, p0, Lorg/bouncycastle/asn1/igw;->gsa:Lorg/bouncycastle/asn1/vdb;
 
     move-object v1, v0
 
     invoke-direct/range {v1 .. v6}, Lorg/bouncycastle/asn1/r;-><init>(Lorg/bouncycastle/asn1/bvj;Lorg/bouncycastle/asn1/ywr;Lorg/bouncycastle/asn1/vdb;ILorg/bouncycastle/asn1/vdb;)V
 
     return-object v0
+.end method
+
+.method public Jg()Lorg/bouncycastle/asn1/vdb;
+    .locals 0
+
+    iget-object p0, p0, Lorg/bouncycastle/asn1/igw;->fsa:Lorg/bouncycastle/asn1/vdb;
+
+    return-object p0
+.end method
+
+.method public Kg()Lorg/bouncycastle/asn1/bvj;
+    .locals 0
+
+    iget-object p0, p0, Lorg/bouncycastle/asn1/igw;->dsa:Lorg/bouncycastle/asn1/bvj;
+
+    return-object p0
+.end method
+
+.method public Lg()Lorg/bouncycastle/asn1/vdb;
+    .locals 0
+
+    iget-object p0, p0, Lorg/bouncycastle/asn1/igw;->gsa:Lorg/bouncycastle/asn1/vdb;
+
+    return-object p0
+.end method
+
+.method public Mg()Lorg/bouncycastle/asn1/ywr;
+    .locals 0
+
+    iget-object p0, p0, Lorg/bouncycastle/asn1/igw;->esa:Lorg/bouncycastle/asn1/ywr;
+
+    return-object p0
+.end method
+
+.method public getEncoding()I
+    .locals 0
+
+    iget p0, p0, Lorg/bouncycastle/asn1/igw;->encoding:I
+
+    return p0
+.end method
+
+.method public hashCode()I
+    .locals 2
+
+    iget-object v0, p0, Lorg/bouncycastle/asn1/igw;->dsa:Lorg/bouncycastle/asn1/bvj;
+
+    if-eqz v0, :cond_0
+
+    invoke-virtual {v0}, Lorg/bouncycastle/asn1/bvj;->hashCode()I
+
+    move-result v0
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    :goto_0
+    iget-object v1, p0, Lorg/bouncycastle/asn1/igw;->esa:Lorg/bouncycastle/asn1/ywr;
+
+    if-eqz v1, :cond_1
+
+    invoke-virtual {v1}, Lorg/bouncycastle/asn1/ywr;->hashCode()I
+
+    move-result v1
+
+    xor-int/2addr v0, v1
+
+    :cond_1
+    iget-object v1, p0, Lorg/bouncycastle/asn1/igw;->fsa:Lorg/bouncycastle/asn1/vdb;
+
+    if-eqz v1, :cond_2
+
+    invoke-virtual {v1}, Lorg/bouncycastle/asn1/vdb;->hashCode()I
+
+    move-result v1
+
+    xor-int/2addr v0, v1
+
+    :cond_2
+    iget-object p0, p0, Lorg/bouncycastle/asn1/igw;->gsa:Lorg/bouncycastle/asn1/vdb;
+
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/vdb;->hashCode()I
+
+    move-result p0
+
+    xor-int/2addr p0, v0
+
+    return p0
+.end method
+
+.method isConstructed()Z
+    .locals 0
+
+    const/4 p0, 0x1
+
+    return p0
 .end method
 
 .method zta(Lorg/bouncycastle/asn1/vdb;)Z
@@ -428,11 +428,11 @@
     :cond_1
     check-cast p1, Lorg/bouncycastle/asn1/igw;
 
-    iget-object v0, p0, Lorg/bouncycastle/asn1/igw;->Qpa:Lorg/bouncycastle/asn1/bvj;
+    iget-object v0, p0, Lorg/bouncycastle/asn1/igw;->dsa:Lorg/bouncycastle/asn1/bvj;
 
     if-eqz v0, :cond_3
 
-    iget-object v2, p1, Lorg/bouncycastle/asn1/igw;->Qpa:Lorg/bouncycastle/asn1/bvj;
+    iget-object v2, p1, Lorg/bouncycastle/asn1/igw;->dsa:Lorg/bouncycastle/asn1/bvj;
 
     if-eqz v2, :cond_2
 
@@ -446,11 +446,11 @@
     return v1
 
     :cond_3
-    iget-object v0, p0, Lorg/bouncycastle/asn1/igw;->Rpa:Lorg/bouncycastle/asn1/ywr;
+    iget-object v0, p0, Lorg/bouncycastle/asn1/igw;->esa:Lorg/bouncycastle/asn1/ywr;
 
     if-eqz v0, :cond_5
 
-    iget-object v2, p1, Lorg/bouncycastle/asn1/igw;->Rpa:Lorg/bouncycastle/asn1/ywr;
+    iget-object v2, p1, Lorg/bouncycastle/asn1/igw;->esa:Lorg/bouncycastle/asn1/ywr;
 
     if-eqz v2, :cond_4
 
@@ -464,11 +464,11 @@
     return v1
 
     :cond_5
-    iget-object v0, p0, Lorg/bouncycastle/asn1/igw;->Spa:Lorg/bouncycastle/asn1/vdb;
+    iget-object v0, p0, Lorg/bouncycastle/asn1/igw;->fsa:Lorg/bouncycastle/asn1/vdb;
 
     if-eqz v0, :cond_7
 
-    iget-object v2, p1, Lorg/bouncycastle/asn1/igw;->Spa:Lorg/bouncycastle/asn1/vdb;
+    iget-object v2, p1, Lorg/bouncycastle/asn1/igw;->fsa:Lorg/bouncycastle/asn1/vdb;
 
     if-eqz v2, :cond_6
 
@@ -482,9 +482,9 @@
     return v1
 
     :cond_7
-    iget-object p0, p0, Lorg/bouncycastle/asn1/igw;->Tpa:Lorg/bouncycastle/asn1/vdb;
+    iget-object p0, p0, Lorg/bouncycastle/asn1/igw;->gsa:Lorg/bouncycastle/asn1/vdb;
 
-    iget-object p1, p1, Lorg/bouncycastle/asn1/igw;->Tpa:Lorg/bouncycastle/asn1/vdb;
+    iget-object p1, p1, Lorg/bouncycastle/asn1/igw;->gsa:Lorg/bouncycastle/asn1/vdb;
 
     invoke-virtual {p0, p1}, Lorg/bouncycastle/asn1/vdb;->equals(Ljava/lang/Object;)Z
 

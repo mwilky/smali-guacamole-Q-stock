@@ -89,7 +89,53 @@
 
 
 # virtual methods
-.method public Yj()Lyou/zta/sis/zta/cno;
+.method public equals(Ljava/lang/Object;)Z
+    .locals 1
+
+    if-ne p1, p0, :cond_0
+
+    const/4 p0, 0x1
+
+    return p0
+
+    :cond_0
+    instance-of v0, p1, Lyou/zta/sis/zta/zta/zta/ivd;
+
+    if-nez v0, :cond_1
+
+    const/4 p0, 0x0
+
+    return p0
+
+    :cond_1
+    check-cast p1, Lyou/zta/sis/zta/zta/zta/ivd;
+
+    const/16 v0, 0x11
+
+    iget-object p0, p0, Lyou/zta/sis/zta/zta/zta/ivd;->x:[I
+
+    iget-object p1, p1, Lyou/zta/sis/zta/zta/zta/ivd;->x:[I
+
+    invoke-static {v0, p0, p1}, Lyou/zta/sis/sis/kth;->rtg(I[I[I)Z
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public getFieldSize()I
+    .locals 0
+
+    sget-object p0, Lyou/zta/sis/zta/zta/zta/ivd;->Q:Ljava/math/BigInteger;
+
+    invoke-virtual {p0}, Ljava/math/BigInteger;->bitLength()I
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public gk()Lyou/zta/sis/zta/cno;
     .locals 1
 
     const/16 v0, 0x11
@@ -109,7 +155,31 @@
     return-object p0
 .end method
 
-.method public Zj()Ljava/lang/String;
+.method public hashCode()I
+    .locals 3
+
+    sget-object v0, Lyou/zta/sis/zta/zta/zta/ivd;->Q:Ljava/math/BigInteger;
+
+    invoke-virtual {v0}, Ljava/math/BigInteger;->hashCode()I
+
+    move-result v0
+
+    iget-object p0, p0, Lyou/zta/sis/zta/zta/zta/ivd;->x:[I
+
+    const/4 v1, 0x0
+
+    const/16 v2, 0x11
+
+    invoke-static {p0, v1, v2}, Lorg/bouncycastle/util/zta;->you([III)I
+
+    move-result p0
+
+    xor-int/2addr p0, v0
+
+    return p0
+.end method
+
+.method public hk()Ljava/lang/String;
     .locals 0
 
     const-string p0, "SecP521R1Field"
@@ -117,7 +187,7 @@
     return-object p0
 .end method
 
-.method public _j()Z
+.method public ik()Z
     .locals 1
 
     iget-object p0, p0, Lyou/zta/sis/zta/zta/zta/ivd;->x:[I
@@ -131,7 +201,43 @@
     return p0
 .end method
 
-.method public ak()Lyou/zta/sis/zta/cno;
+.method public invert()Lyou/zta/sis/zta/cno;
+    .locals 2
+
+    const/16 v0, 0x11
+
+    invoke-static {v0}, Lyou/zta/sis/sis/kth;->create(I)[I
+
+    move-result-object v0
+
+    sget-object v1, Lyou/zta/sis/zta/zta/zta/qeg;->P:[I
+
+    iget-object p0, p0, Lyou/zta/sis/zta/zta/zta/ivd;->x:[I
+
+    invoke-static {v1, p0, v0}, Lyou/zta/sis/sis/you;->bio([I[I[I)V
+
+    new-instance p0, Lyou/zta/sis/zta/zta/zta/ivd;
+
+    invoke-direct {p0, v0}, Lyou/zta/sis/zta/zta/zta/ivd;-><init>([I)V
+
+    return-object p0
+.end method
+
+.method public isZero()Z
+    .locals 1
+
+    iget-object p0, p0, Lyou/zta/sis/zta/zta/zta/ivd;->x:[I
+
+    const/16 v0, 0x11
+
+    invoke-static {v0, p0}, Lyou/zta/sis/sis/kth;->dma(I[I)Z
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public jk()Lyou/zta/sis/zta/cno;
     .locals 4
 
     iget-object v0, p0, Lyou/zta/sis/zta/zta/zta/ivd;->x:[I
@@ -190,7 +296,7 @@
     return-object p0
 .end method
 
-.method public bk()Z
+.method public kk()Z
     .locals 2
 
     iget-object p0, p0, Lyou/zta/sis/zta/zta/zta/ivd;->x:[I
@@ -209,112 +315,6 @@
 
     :cond_0
     return v0
-.end method
-
-.method public equals(Ljava/lang/Object;)Z
-    .locals 1
-
-    if-ne p1, p0, :cond_0
-
-    const/4 p0, 0x1
-
-    return p0
-
-    :cond_0
-    instance-of v0, p1, Lyou/zta/sis/zta/zta/zta/ivd;
-
-    if-nez v0, :cond_1
-
-    const/4 p0, 0x0
-
-    return p0
-
-    :cond_1
-    check-cast p1, Lyou/zta/sis/zta/zta/zta/ivd;
-
-    const/16 v0, 0x11
-
-    iget-object p0, p0, Lyou/zta/sis/zta/zta/zta/ivd;->x:[I
-
-    iget-object p1, p1, Lyou/zta/sis/zta/zta/zta/ivd;->x:[I
-
-    invoke-static {v0, p0, p1}, Lyou/zta/sis/sis/kth;->rtg(I[I[I)Z
-
-    move-result p0
-
-    return p0
-.end method
-
-.method public getFieldSize()I
-    .locals 0
-
-    sget-object p0, Lyou/zta/sis/zta/zta/zta/ivd;->Q:Ljava/math/BigInteger;
-
-    invoke-virtual {p0}, Ljava/math/BigInteger;->bitLength()I
-
-    move-result p0
-
-    return p0
-.end method
-
-.method public hashCode()I
-    .locals 3
-
-    sget-object v0, Lyou/zta/sis/zta/zta/zta/ivd;->Q:Ljava/math/BigInteger;
-
-    invoke-virtual {v0}, Ljava/math/BigInteger;->hashCode()I
-
-    move-result v0
-
-    iget-object p0, p0, Lyou/zta/sis/zta/zta/zta/ivd;->x:[I
-
-    const/4 v1, 0x0
-
-    const/16 v2, 0x11
-
-    invoke-static {p0, v1, v2}, Lorg/bouncycastle/util/zta;->you([III)I
-
-    move-result p0
-
-    xor-int/2addr p0, v0
-
-    return p0
-.end method
-
-.method public invert()Lyou/zta/sis/zta/cno;
-    .locals 2
-
-    const/16 v0, 0x11
-
-    invoke-static {v0}, Lyou/zta/sis/sis/kth;->create(I)[I
-
-    move-result-object v0
-
-    sget-object v1, Lyou/zta/sis/zta/zta/zta/qeg;->P:[I
-
-    iget-object p0, p0, Lyou/zta/sis/zta/zta/zta/ivd;->x:[I
-
-    invoke-static {v1, p0, v0}, Lyou/zta/sis/sis/you;->bio([I[I[I)V
-
-    new-instance p0, Lyou/zta/sis/zta/zta/zta/ivd;
-
-    invoke-direct {p0, v0}, Lyou/zta/sis/zta/zta/zta/ivd;-><init>([I)V
-
-    return-object p0
-.end method
-
-.method public isZero()Z
-    .locals 1
-
-    iget-object p0, p0, Lyou/zta/sis/zta/zta/zta/ivd;->x:[I
-
-    const/16 v0, 0x11
-
-    invoke-static {v0, p0}, Lyou/zta/sis/sis/kth;->dma(I[I)Z
-
-    move-result p0
-
-    return p0
 .end method
 
 .method public negate()Lyou/zta/sis/zta/cno;

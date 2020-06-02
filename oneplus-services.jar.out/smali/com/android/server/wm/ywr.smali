@@ -7,18 +7,16 @@
 
 
 # static fields
+.field private static AR:Lcom/android/server/wm/AppWindowToken; = null
+
 .field private static final DEBUG:Z
 
 .field private static final TAG:Ljava/lang/String; = "OpDisplayContent"
 
-.field private static lQ:Lcom/android/server/wm/AppWindowToken;
-
-.field private static mQ:Lcom/android/server/wm/AppWindowToken;
+.field private static zR:Lcom/android/server/wm/AppWindowToken;
 
 
 # instance fields
-.field private kQ:Landroid/view/SurfaceControl;
-
 .field private mDisplay:Landroid/view/Display;
 
 .field private mDisplayContent:Lcom/android/server/wm/DisplayContent;
@@ -28,6 +26,8 @@
 .field private mSession:Landroid/view/SurfaceSession;
 
 .field private mWindowManager:Lcom/android/server/wm/WindowManagerService;
+
+.field private yR:Landroid/view/SurfaceControl;
 
 
 # direct methods
@@ -40,9 +40,9 @@
 
     const/4 v0, 0x0
 
-    sput-object v0, Lcom/android/server/wm/ywr;->lQ:Lcom/android/server/wm/AppWindowToken;
+    sput-object v0, Lcom/android/server/wm/ywr;->zR:Lcom/android/server/wm/AppWindowToken;
 
-    sput-object v0, Lcom/android/server/wm/ywr;->mQ:Lcom/android/server/wm/AppWindowToken;
+    sput-object v0, Lcom/android/server/wm/ywr;->AR:Lcom/android/server/wm/AppWindowToken;
 
     return-void
 .end method
@@ -61,18 +61,18 @@
     return-void
 .end method
 
-.method public static de()Lcom/android/server/wm/AppWindowToken;
+.method public static ke()Lcom/android/server/wm/AppWindowToken;
     .locals 1
 
-    sget-object v0, Lcom/android/server/wm/ywr;->lQ:Lcom/android/server/wm/AppWindowToken;
+    sget-object v0, Lcom/android/server/wm/ywr;->zR:Lcom/android/server/wm/AppWindowToken;
 
     return-object v0
 .end method
 
-.method public static ee()Lcom/android/server/wm/AppWindowToken;
+.method public static le()Lcom/android/server/wm/AppWindowToken;
     .locals 1
 
-    sget-object v0, Lcom/android/server/wm/ywr;->mQ:Lcom/android/server/wm/AppWindowToken;
+    sget-object v0, Lcom/android/server/wm/ywr;->AR:Lcom/android/server/wm/AppWindowToken;
 
     return-object v0
 .end method
@@ -149,7 +149,7 @@
 
     move-result-object p1
 
-    iput-object p1, p0, Lcom/android/server/wm/ywr;->kQ:Landroid/view/SurfaceControl;
+    iput-object p1, p0, Lcom/android/server/wm/ywr;->yR:Landroid/view/SurfaceControl;
 
     iget-object p1, p0, Lcom/android/server/wm/ywr;->mDisplayContent:Lcom/android/server/wm/DisplayContent;
 
@@ -157,7 +157,7 @@
 
     move-result-object p1
 
-    iget-object p2, p0, Lcom/android/server/wm/ywr;->kQ:Landroid/view/SurfaceControl;
+    iget-object p2, p0, Lcom/android/server/wm/ywr;->yR:Landroid/view/SurfaceControl;
 
     const/4 p3, -0x1
 
@@ -165,7 +165,7 @@
 
     move-result-object p1
 
-    iget-object p2, p0, Lcom/android/server/wm/ywr;->kQ:Landroid/view/SurfaceControl;
+    iget-object p2, p0, Lcom/android/server/wm/ywr;->yR:Landroid/view/SurfaceControl;
 
     iget p3, p0, Lcom/android/server/wm/ywr;->mDisplayId:I
 
@@ -173,7 +173,7 @@
 
     move-result-object p1
 
-    iget-object p0, p0, Lcom/android/server/wm/ywr;->kQ:Landroid/view/SurfaceControl;
+    iget-object p0, p0, Lcom/android/server/wm/ywr;->yR:Landroid/view/SurfaceControl;
 
     invoke-virtual {p1, p0}, Landroid/view/SurfaceControl$Transaction;->show(Landroid/view/SurfaceControl;)Landroid/view/SurfaceControl$Transaction;
 
@@ -191,7 +191,7 @@
 
     move-result-object v0
 
-    iget-object p0, p0, Lcom/android/server/wm/ywr;->kQ:Landroid/view/SurfaceControl;
+    iget-object p0, p0, Lcom/android/server/wm/ywr;->yR:Landroid/view/SurfaceControl;
 
     invoke-virtual {v0, p0}, Landroid/view/SurfaceControl$Builder;->setParent(Landroid/view/SurfaceControl;)Landroid/view/SurfaceControl$Builder;
 
@@ -283,7 +283,7 @@
     invoke-static {v0, v1}, Landroid/util/Slog;->v(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_0
-    iget-object p0, p0, Lcom/android/server/wm/ywr;->kQ:Landroid/view/SurfaceControl;
+    iget-object p0, p0, Lcom/android/server/wm/ywr;->yR:Landroid/view/SurfaceControl;
 
     invoke-virtual {p0}, Landroid/view/SurfaceControl;->release()V
 
@@ -389,7 +389,7 @@
 
     if-eqz p1, :cond_1
 
-    sput-object v0, Lcom/android/server/wm/ywr;->lQ:Lcom/android/server/wm/AppWindowToken;
+    sput-object v0, Lcom/android/server/wm/ywr;->zR:Lcom/android/server/wm/AppWindowToken;
 
     :cond_1
     iget-object p0, p0, Lcom/android/server/wm/ywr;->mDisplayContent:Lcom/android/server/wm/DisplayContent;
@@ -398,7 +398,7 @@
 
     if-eqz p0, :cond_2
 
-    sput-object p0, Lcom/android/server/wm/ywr;->mQ:Lcom/android/server/wm/AppWindowToken;
+    sput-object p0, Lcom/android/server/wm/ywr;->AR:Lcom/android/server/wm/AppWindowToken;
 
     :cond_2
     return-void

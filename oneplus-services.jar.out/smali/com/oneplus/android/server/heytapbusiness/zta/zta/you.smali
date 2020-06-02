@@ -66,14 +66,6 @@
 
 
 # virtual methods
-.method public _e()Ljava/lang/String;
-    .locals 0
-
-    const-string p0, "login"
-
-    return-object p0
-.end method
-
 .method public dump(Ljava/io/PrintWriter;)V
     .locals 4
 
@@ -164,7 +156,15 @@
     throw p0
 .end method
 
-.method public la(Ljava/lang/String;)Ljava/lang/String;
+.method public if()Ljava/lang/String;
+    .locals 0
+
+    const-string p0, "login"
+
+    return-object p0
+.end method
+
+.method public na(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
 
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
@@ -218,7 +218,7 @@
     throw p0
 .end method
 
-.method public ma(Ljava/lang/String;)Z
+.method public oa(Ljava/lang/String;)Z
     .locals 0
 
     const-string p0, "com.nearme.instant.platform"
@@ -235,7 +235,7 @@
 
     check-cast p1, Ljava/lang/String;
 
-    invoke-virtual {p0, p1}, Lcom/oneplus/android/server/heytapbusiness/zta/zta/you;->la(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p0, p1}, Lcom/oneplus/android/server/heytapbusiness/zta/zta/you;->na(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p0
 
@@ -247,7 +247,7 @@
 
     check-cast p1, Ljava/lang/String;
 
-    invoke-virtual {p0, p1}, Lcom/oneplus/android/server/heytapbusiness/zta/zta/you;->ma(Ljava/lang/String;)Z
+    invoke-virtual {p0, p1}, Lcom/oneplus/android/server/heytapbusiness/zta/zta/you;->oa(Ljava/lang/String;)Z
 
     move-result p0
 

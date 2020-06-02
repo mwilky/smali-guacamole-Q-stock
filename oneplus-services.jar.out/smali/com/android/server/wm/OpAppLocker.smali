@@ -194,266 +194,6 @@
     return-object p0
 .end method
 
-.method private lockTopApp(Lcom/android/server/wm/ActivityStack;Ljava/lang/String;)V
-    .locals 14
-
-    move-object v0, p0
-
-    move-object/from16 v1, p2
-
-    if-nez p1, :cond_0
-
-    return-void
-
-    :cond_0
-    invoke-virtual {p1}, Lcom/android/server/wm/ActivityStack;->topRunningActivityLocked()Lcom/android/server/wm/ActivityRecord;
-
-    move-result-object v2
-
-    sget-boolean v3, Lcom/android/server/wm/OpAppLocker;->DEBUG_ONEPLUS:Z
-
-    if-eqz v3, :cond_1
-
-    sget-object v3, Lcom/android/server/wm/OpAppLocker;->TAG:Ljava/lang/String;
-
-    new-instance v4, Ljava/lang/StringBuilder;
-
-    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v5, "lockTopApp, isAppLocked(next) = "
-
-    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p0, v2}, Lcom/android/server/wm/OpAppLocker;->isAppLocked(Lcom/android/server/wm/ActivityRecord;)Z
-
-    move-result v5
-
-    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v4
-
-    invoke-static {v3, v4}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    :cond_1
-    invoke-virtual {p0, v2}, Lcom/android/server/wm/OpAppLocker;->isAppLocked(Lcom/android/server/wm/ActivityRecord;)Z
-
-    move-result v3
-
-    if-eqz v3, :cond_5
-
-    sget-object v3, Lcom/android/server/wm/OpAppLocker;->mAppLockerKeyguardWhiteList:Ljava/util/ArrayList;
-
-    iget-object v4, v2, Lcom/android/server/wm/ActivityRecord;->packageName:Ljava/lang/String;
-
-    invoke-virtual {v3, v4}, Ljava/util/ArrayList;->contains(Ljava/lang/Object;)Z
-
-    move-result v3
-
-    if-eqz v3, :cond_2
-
-    sget-object v0, Lcom/android/server/wm/OpAppLocker;->TAG:Ljava/lang/String;
-
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v3, "lockTopApp, keyguard white listed "
-
-    invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-static {v0, v1}, Landroid/util/Slog;->i(Ljava/lang/String;Ljava/lang/String;)I
-
-    iget-object v0, v2, Lcom/android/server/wm/ActivityRecord;->appInfo:Landroid/content/pm/ApplicationInfo;
-
-    iget v0, v0, Landroid/content/pm/ApplicationInfo;->uid:I
-
-    invoke-static {v0}, Landroid/os/UserHandle;->getUserId(I)I
-
-    move-result v0
-
-    sget-object v1, Lcom/android/server/wm/OpAppLocker;->mPassedPackageList:Ljava/util/ArrayList;
-
-    new-instance v3, Ljava/lang/StringBuilder;
-
-    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
-
-    iget-object v2, v2, Lcom/android/server/wm/ActivityRecord;->packageName:Ljava/lang/String;
-
-    invoke-virtual {v3, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-virtual {v1, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    return-void
-
-    :cond_2
-    sget-object v3, Lcom/android/server/wm/OpAppLocker;->TAG:Ljava/lang/String;
-
-    new-instance v4, Ljava/lang/StringBuilder;
-
-    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v5, "lockTopApp, blocking "
-
-    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v4, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    const-string v5, " reason="
-
-    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v4, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v4
-
-    invoke-static {v3, v4}, Landroid/util/Slog;->i(Ljava/lang/String;Ljava/lang/String;)I
-
-    new-instance v3, Landroid/content/Intent;
-
-    iget-object v4, v0, Lcom/android/server/wm/OpAppLocker;->mConfirmIntent:Landroid/content/Intent;
-
-    invoke-direct {v3, v4}, Landroid/content/Intent;-><init>(Landroid/content/Intent;)V
-
-    iget-object v4, v2, Lcom/android/server/wm/ActivityRecord;->appInfo:Landroid/content/pm/ApplicationInfo;
-
-    iget v4, v4, Landroid/content/pm/ApplicationInfo;->uid:I
-
-    const-string v5, "OP_APP_LOCKER_BLOCKING_UID"
-
-    invoke-virtual {v3, v5, v4}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
-
-    iget-object v4, v2, Lcom/android/server/wm/ActivityRecord;->intent:Landroid/content/Intent;
-
-    invoke-virtual {v4}, Landroid/content/Intent;->getComponent()Landroid/content/ComponentName;
-
-    move-result-object v4
-
-    if-eqz v4, :cond_3
-
-    iget-object v4, v2, Lcom/android/server/wm/ActivityRecord;->intent:Landroid/content/Intent;
-
-    invoke-virtual {v4}, Landroid/content/Intent;->getComponent()Landroid/content/ComponentName;
-
-    move-result-object v4
-
-    invoke-virtual {v4}, Landroid/content/ComponentName;->flattenToString()Ljava/lang/String;
-
-    move-result-object v4
-
-    goto :goto_0
-
-    :cond_3
-    const-string v4, ""
-
-    :goto_0
-    const-string v5, "OP_APP_LOCKER_COMPONENT"
-
-    invoke-virtual {v3, v5, v4}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
-
-    iget-object v4, v2, Lcom/android/server/wm/ActivityRecord;->app:Lcom/android/server/wm/WindowProcessController;
-
-    if-nez v4, :cond_4
-
-    sget-object v0, Lcom/android/server/wm/OpAppLocker;->mATMService:Lcom/android/server/wm/ActivityTaskManagerService;
-
-    invoke-virtual {v0}, Lcom/android/server/wm/ActivityTaskManagerService;->getActivityStartController()Lcom/android/server/wm/ActivityStartController;
-
-    move-result-object v0
-
-    invoke-virtual {v0, v3, v1}, Lcom/android/server/wm/ActivityStartController;->obtainStarter(Landroid/content/Intent;Ljava/lang/String;)Lcom/android/server/wm/ActivityStarter;
-
-    move-result-object v0
-
-    const/4 v1, 0x0
-
-    invoke-virtual {v0, v1}, Lcom/android/server/wm/ActivityStarter;->setCallingUid(I)Lcom/android/server/wm/ActivityStarter;
-
-    move-result-object v0
-
-    iget-object v1, v2, Lcom/android/server/wm/ActivityRecord;->appToken:Landroid/view/IApplicationToken$Stub;
-
-    invoke-virtual {v0, v1}, Lcom/android/server/wm/ActivityStarter;->setResultTo(Landroid/os/IBinder;)Lcom/android/server/wm/ActivityStarter;
-
-    move-result-object v0
-
-    sget v1, Lcom/android/server/wm/OpAppLocker;->mRequestHashCode:I
-
-    invoke-virtual {v0, v1}, Lcom/android/server/wm/ActivityStarter;->setRequestCode(I)Lcom/android/server/wm/ActivityStarter;
-
-    move-result-object v0
-
-    sget-object v1, Lcom/android/server/wm/OpAppLocker;->mConfirmResolveInfo:Landroid/content/pm/ResolveInfo;
-
-    iget-object v1, v1, Landroid/content/pm/ResolveInfo;->activityInfo:Landroid/content/pm/ActivityInfo;
-
-    invoke-virtual {v0, v1}, Lcom/android/server/wm/ActivityStarter;->setActivityInfo(Landroid/content/pm/ActivityInfo;)Lcom/android/server/wm/ActivityStarter;
-
-    move-result-object v0
-
-    const/4 v1, 0x1
-
-    invoke-virtual {v0, v1}, Lcom/android/server/wm/ActivityStarter;->setAllowBackgroundActivityStart(Z)Lcom/android/server/wm/ActivityStarter;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Lcom/android/server/wm/ActivityStarter;->execute()I
-
-    goto :goto_1
-
-    :cond_4
-    invoke-virtual {v4}, Lcom/android/server/wm/WindowProcessController;->getThread()Landroid/app/IApplicationThread;
-
-    move-result-object v1
-
-    iget-object v4, v2, Lcom/android/server/wm/ActivityRecord;->packageName:Ljava/lang/String;
-
-    iget-object v5, v2, Lcom/android/server/wm/ActivityRecord;->appToken:Landroid/view/IApplicationToken$Stub;
-
-    iget-object v6, v2, Lcom/android/server/wm/ActivityRecord;->resultWho:Ljava/lang/String;
-
-    sget v7, Lcom/android/server/wm/OpAppLocker;->mRequestHashCode:I
-
-    const/4 v8, 0x0
-
-    const/4 v9, 0x0
-
-    const/4 v10, 0x0
-
-    const/4 v11, 0x0
-
-    const/16 v12, -0x2710
-
-    const-string v13, ""
-
-    move-object v0, p0
-
-    move-object v2, v4
-
-    move-object v4, v13
-
-    invoke-direct/range {v0 .. v12}, Lcom/android/server/wm/OpAppLocker;->oemStartActivityAsCaller(Landroid/app/IApplicationThread;Ljava/lang/String;Landroid/content/Intent;Ljava/lang/String;Landroid/os/IBinder;Ljava/lang/String;IILandroid/app/ProfilerInfo;Landroid/os/Bundle;ZI)I
-
-    :cond_5
-    :goto_1
-    return-void
-.end method
-
 .method private final oemStartActivityAsCaller(Landroid/app/IApplicationThread;Ljava/lang/String;Landroid/content/Intent;Ljava/lang/String;Landroid/os/IBinder;Ljava/lang/String;IILandroid/app/ProfilerInfo;Landroid/os/Bundle;ZI)I
     .locals 0
 
@@ -663,6 +403,14 @@
 .method public addAppLockerPassedPackage(Ljava/lang/String;)V
     .locals 3
 
+    const-string v0, "android.permission.DEVICE_POWER"
+
+    invoke-direct {p0, v0}, Lcom/android/server/wm/OpAppLocker;->checkCallingPermission(Ljava/lang/String;)I
+
+    move-result p0
+
+    if-nez p0, :cond_1
+
     sget-object p0, Lcom/android/server/wm/OpAppLocker;->mATMService:Lcom/android/server/wm/ActivityTaskManagerService;
 
     iget-object p0, p0, Lcom/android/server/wm/ActivityTaskManagerService;->mGlobalLock:Lcom/android/server/wm/WindowManagerGlobalLock;
@@ -709,6 +457,15 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     throw p1
+
+    :cond_1
+    new-instance p0, Ljava/lang/SecurityException;
+
+    const-string p1, "Requires permission android.permission.DEVICE_POWER"
+
+    invoke-direct {p0, p1}, Ljava/lang/SecurityException;-><init>(Ljava/lang/String;)V
+
+    throw p0
 .end method
 
 .method public initOpAppLocker(Lcom/android/server/wm/ActivityTaskManagerService;)V
@@ -1090,6 +847,20 @@
     throw p0
 .end method
 
+.method public isAppLockerEnabled(I)Z
+    .locals 0
+
+    sget-object p0, Lcom/android/server/wm/OpAppLocker;->mATMService:Lcom/android/server/wm/ActivityTaskManagerService;
+
+    iget-object p0, p0, Lcom/android/server/wm/ActivityTaskManagerService;->mWindowManager:Lcom/android/server/wm/WindowManagerService;
+
+    invoke-virtual {p0, p1}, Lcom/android/server/wm/WindowManagerService;->isKeyguardSecure(I)Z
+
+    move-result p0
+
+    return p0
+.end method
+
 .method public isKeyguardDone()Z
     .locals 0
 
@@ -1158,17 +929,7 @@
 
     iput-boolean p0, p1, Landroid/app/ActivityManager$RecentTaskInfo;->isTopAppLocked:Z
 
-    sget-object v0, Lcom/android/server/wm/OpAppLocker;->mATMService:Lcom/android/server/wm/ActivityTaskManagerService;
-
-    iget-object v1, v0, Lcom/android/server/wm/ActivityTaskManagerService;->mWindowManager:Lcom/android/server/wm/WindowManagerService;
-
-    invoke-virtual {v0}, Lcom/android/server/wm/ActivityTaskManagerService;->getCurrentUserId()I
-
-    move-result v0
-
-    invoke-virtual {v1, v0}, Lcom/android/server/wm/WindowManagerService;->isKeyguardSecure(I)Z
-
-    move-result v0
+    sget-boolean v0, Lcom/android/server/wm/OpAppLockerInjector;->mIsAppLockerEnabledForRecents:Z
 
     if-eqz v0, :cond_4
 
@@ -1541,6 +1302,276 @@
     return v15
 .end method
 
+.method public lockTopApp(Lcom/android/server/wm/ActivityStack;Ljava/lang/String;)V
+    .locals 14
+
+    move-object v0, p0
+
+    move-object/from16 v1, p2
+
+    if-nez p1, :cond_0
+
+    return-void
+
+    :cond_0
+    invoke-virtual {p1}, Lcom/android/server/wm/ActivityStack;->topRunningActivityLocked()Lcom/android/server/wm/ActivityRecord;
+
+    move-result-object v2
+
+    sget-boolean v3, Lcom/android/server/wm/OpAppLocker;->DEBUG_ONEPLUS:Z
+
+    if-eqz v3, :cond_1
+
+    sget-object v3, Lcom/android/server/wm/OpAppLocker;->TAG:Ljava/lang/String;
+
+    new-instance v4, Ljava/lang/StringBuilder;
+
+    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v5, "lockTopApp, isAppLocked(next) = "
+
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p0, v2}, Lcom/android/server/wm/OpAppLocker;->isAppLocked(Lcom/android/server/wm/ActivityRecord;)Z
+
+    move-result v5
+
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v4
+
+    invoke-static {v3, v4}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    :cond_1
+    invoke-virtual {p0, v2}, Lcom/android/server/wm/OpAppLocker;->isAppLocked(Lcom/android/server/wm/ActivityRecord;)Z
+
+    move-result v3
+
+    if-eqz v3, :cond_5
+
+    sget-object v3, Lcom/android/server/wm/OpAppLocker;->mAppLockerKeyguardWhiteList:Ljava/util/ArrayList;
+
+    iget-object v4, v2, Lcom/android/server/wm/ActivityRecord;->packageName:Ljava/lang/String;
+
+    invoke-virtual {v3, v4}, Ljava/util/ArrayList;->contains(Ljava/lang/Object;)Z
+
+    move-result v3
+
+    if-eqz v3, :cond_2
+
+    if-eqz v1, :cond_2
+
+    const-string v3, "setKeyguardDone"
+
+    invoke-virtual {v1, v3}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+
+    move-result v3
+
+    if-eqz v3, :cond_2
+
+    sget-object v0, Lcom/android/server/wm/OpAppLocker;->TAG:Ljava/lang/String;
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v3, "lockTopApp, keyguard white listed "
+
+    invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-static {v0, v1}, Landroid/util/Slog;->i(Ljava/lang/String;Ljava/lang/String;)I
+
+    iget-object v0, v2, Lcom/android/server/wm/ActivityRecord;->appInfo:Landroid/content/pm/ApplicationInfo;
+
+    iget v0, v0, Landroid/content/pm/ApplicationInfo;->uid:I
+
+    invoke-static {v0}, Landroid/os/UserHandle;->getUserId(I)I
+
+    move-result v0
+
+    sget-object v1, Lcom/android/server/wm/OpAppLocker;->mPassedPackageList:Ljava/util/ArrayList;
+
+    new-instance v3, Ljava/lang/StringBuilder;
+
+    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
+
+    iget-object v2, v2, Lcom/android/server/wm/ActivityRecord;->packageName:Ljava/lang/String;
+
+    invoke-virtual {v3, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-virtual {v1, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    return-void
+
+    :cond_2
+    sget-object v3, Lcom/android/server/wm/OpAppLocker;->TAG:Ljava/lang/String;
+
+    new-instance v4, Ljava/lang/StringBuilder;
+
+    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v5, "lockTopApp, blocking "
+
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v4, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    const-string v5, " reason="
+
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v4, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v4
+
+    invoke-static {v3, v4}, Landroid/util/Slog;->i(Ljava/lang/String;Ljava/lang/String;)I
+
+    new-instance v3, Landroid/content/Intent;
+
+    iget-object v4, v0, Lcom/android/server/wm/OpAppLocker;->mConfirmIntent:Landroid/content/Intent;
+
+    invoke-direct {v3, v4}, Landroid/content/Intent;-><init>(Landroid/content/Intent;)V
+
+    iget-object v4, v2, Lcom/android/server/wm/ActivityRecord;->appInfo:Landroid/content/pm/ApplicationInfo;
+
+    iget v4, v4, Landroid/content/pm/ApplicationInfo;->uid:I
+
+    const-string v5, "OP_APP_LOCKER_BLOCKING_UID"
+
+    invoke-virtual {v3, v5, v4}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
+
+    iget-object v4, v2, Lcom/android/server/wm/ActivityRecord;->intent:Landroid/content/Intent;
+
+    invoke-virtual {v4}, Landroid/content/Intent;->getComponent()Landroid/content/ComponentName;
+
+    move-result-object v4
+
+    if-eqz v4, :cond_3
+
+    iget-object v4, v2, Lcom/android/server/wm/ActivityRecord;->intent:Landroid/content/Intent;
+
+    invoke-virtual {v4}, Landroid/content/Intent;->getComponent()Landroid/content/ComponentName;
+
+    move-result-object v4
+
+    invoke-virtual {v4}, Landroid/content/ComponentName;->flattenToString()Ljava/lang/String;
+
+    move-result-object v4
+
+    goto :goto_0
+
+    :cond_3
+    const-string v4, ""
+
+    :goto_0
+    const-string v5, "OP_APP_LOCKER_COMPONENT"
+
+    invoke-virtual {v3, v5, v4}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
+
+    iget-object v4, v2, Lcom/android/server/wm/ActivityRecord;->app:Lcom/android/server/wm/WindowProcessController;
+
+    if-nez v4, :cond_4
+
+    sget-object v0, Lcom/android/server/wm/OpAppLocker;->mATMService:Lcom/android/server/wm/ActivityTaskManagerService;
+
+    invoke-virtual {v0}, Lcom/android/server/wm/ActivityTaskManagerService;->getActivityStartController()Lcom/android/server/wm/ActivityStartController;
+
+    move-result-object v0
+
+    invoke-virtual {v0, v3, v1}, Lcom/android/server/wm/ActivityStartController;->obtainStarter(Landroid/content/Intent;Ljava/lang/String;)Lcom/android/server/wm/ActivityStarter;
+
+    move-result-object v0
+
+    const/4 v1, 0x0
+
+    invoke-virtual {v0, v1}, Lcom/android/server/wm/ActivityStarter;->setCallingUid(I)Lcom/android/server/wm/ActivityStarter;
+
+    move-result-object v0
+
+    iget-object v1, v2, Lcom/android/server/wm/ActivityRecord;->appToken:Landroid/view/IApplicationToken$Stub;
+
+    invoke-virtual {v0, v1}, Lcom/android/server/wm/ActivityStarter;->setResultTo(Landroid/os/IBinder;)Lcom/android/server/wm/ActivityStarter;
+
+    move-result-object v0
+
+    sget v1, Lcom/android/server/wm/OpAppLocker;->mRequestHashCode:I
+
+    invoke-virtual {v0, v1}, Lcom/android/server/wm/ActivityStarter;->setRequestCode(I)Lcom/android/server/wm/ActivityStarter;
+
+    move-result-object v0
+
+    sget-object v1, Lcom/android/server/wm/OpAppLocker;->mConfirmResolveInfo:Landroid/content/pm/ResolveInfo;
+
+    iget-object v1, v1, Landroid/content/pm/ResolveInfo;->activityInfo:Landroid/content/pm/ActivityInfo;
+
+    invoke-virtual {v0, v1}, Lcom/android/server/wm/ActivityStarter;->setActivityInfo(Landroid/content/pm/ActivityInfo;)Lcom/android/server/wm/ActivityStarter;
+
+    move-result-object v0
+
+    const/4 v1, 0x1
+
+    invoke-virtual {v0, v1}, Lcom/android/server/wm/ActivityStarter;->setAllowBackgroundActivityStart(Z)Lcom/android/server/wm/ActivityStarter;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/android/server/wm/ActivityStarter;->execute()I
+
+    goto :goto_1
+
+    :cond_4
+    invoke-virtual {v4}, Lcom/android/server/wm/WindowProcessController;->getThread()Landroid/app/IApplicationThread;
+
+    move-result-object v1
+
+    iget-object v4, v2, Lcom/android/server/wm/ActivityRecord;->packageName:Ljava/lang/String;
+
+    iget-object v5, v2, Lcom/android/server/wm/ActivityRecord;->appToken:Landroid/view/IApplicationToken$Stub;
+
+    iget-object v6, v2, Lcom/android/server/wm/ActivityRecord;->resultWho:Ljava/lang/String;
+
+    sget v7, Lcom/android/server/wm/OpAppLocker;->mRequestHashCode:I
+
+    const/4 v8, 0x0
+
+    const/4 v9, 0x0
+
+    const/4 v10, 0x0
+
+    const/4 v11, 0x0
+
+    const/16 v12, -0x2710
+
+    const-string v13, ""
+
+    move-object v0, p0
+
+    move-object v2, v4
+
+    move-object v4, v13
+
+    invoke-direct/range {v0 .. v12}, Lcom/android/server/wm/OpAppLocker;->oemStartActivityAsCaller(Landroid/app/IApplicationThread;Ljava/lang/String;Landroid/content/Intent;Ljava/lang/String;Landroid/os/IBinder;Ljava/lang/String;IILandroid/app/ProfilerInfo;Landroid/os/Bundle;ZI)I
+
+    :cond_5
+    :goto_1
+    return-void
+.end method
+
 .method public setKeyguardDone(Z)V
     .locals 7
 
@@ -1589,8 +1620,6 @@
     invoke-virtual {v0, p1}, Lcom/android/server/am/ivd;->screenStateChangedEvent(Z)V
 
     :cond_0
-    invoke-static {p1}, Lcom/android/server/am/OpBGFrozenInjector;->screenStateChangedEvent(Z)V
-
     const/4 v0, 0x1
 
     new-array v0, v0, [I
@@ -1669,7 +1698,7 @@
     const-string v5, "setKeyguardDone-full"
 
     :goto_1
-    invoke-direct {p0, v4, v5}, Lcom/android/server/wm/OpAppLocker;->lockTopApp(Lcom/android/server/wm/ActivityStack;Ljava/lang/String;)V
+    invoke-virtual {p0, v4, v5}, Lcom/android/server/wm/OpAppLocker;->lockTopApp(Lcom/android/server/wm/ActivityStack;Ljava/lang/String;)V
 
     goto :goto_2
 
@@ -1690,7 +1719,7 @@
     :goto_2
     const-string v4, "setKeyguardDone-focused"
 
-    invoke-direct {p0, v3, v4}, Lcom/android/server/wm/OpAppLocker;->lockTopApp(Lcom/android/server/wm/ActivityStack;Ljava/lang/String;)V
+    invoke-virtual {p0, v3, v4}, Lcom/android/server/wm/OpAppLocker;->lockTopApp(Lcom/android/server/wm/ActivityStack;Ljava/lang/String;)V
     :try_end_1
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
     .catchall {:try_start_1 .. :try_end_1} :catchall_0

@@ -39,17 +39,17 @@
 
     iget-object v0, p0, Lcom/android/server/wm/OPAppSwitchManagerService$you;->this$0:Lcom/android/server/wm/OPAppSwitchManagerService;
 
-    invoke-static {v0, p1}, Lcom/android/server/wm/OPAppSwitchManagerService;->access$800(Lcom/android/server/wm/OPAppSwitchManagerService;Lorg/json/JSONArray;)V
+    invoke-static {v0, p1}, Lcom/android/server/wm/OPAppSwitchManagerService;->access$900(Lcom/android/server/wm/OPAppSwitchManagerService;Lorg/json/JSONArray;)V
 
     iget-object p1, p0, Lcom/android/server/wm/OPAppSwitchManagerService$you;->this$0:Lcom/android/server/wm/OPAppSwitchManagerService;
 
-    invoke-static {p1}, Lcom/android/server/wm/OPAppSwitchManagerService;->access$900(Lcom/android/server/wm/OPAppSwitchManagerService;)Landroid/os/Handler;
+    invoke-static {p1}, Lcom/android/server/wm/OPAppSwitchManagerService;->access$1000(Lcom/android/server/wm/OPAppSwitchManagerService;)Landroid/os/Handler;
 
     move-result-object p1
 
     iget-object p0, p0, Lcom/android/server/wm/OPAppSwitchManagerService$you;->this$0:Lcom/android/server/wm/OPAppSwitchManagerService;
 
-    invoke-static {p0}, Lcom/android/server/wm/OPAppSwitchManagerService;->access$900(Lcom/android/server/wm/OPAppSwitchManagerService;)Landroid/os/Handler;
+    invoke-static {p0}, Lcom/android/server/wm/OPAppSwitchManagerService;->access$1000(Lcom/android/server/wm/OPAppSwitchManagerService;)Landroid/os/Handler;
 
     move-result-object p0
 

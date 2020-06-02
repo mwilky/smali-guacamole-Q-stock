@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field protected final OFa:Lyou/zta/sis/you/you;
+.field protected final bIa:Lyou/zta/sis/you/you;
 
-.field protected final PFa:Lyou/zta/sis/you/ssp;
+.field protected final cIa:Lyou/zta/sis/you/ssp;
 
 
 # direct methods
@@ -18,9 +18,9 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lyou/zta/sis/you/rtg;->OFa:Lyou/zta/sis/you/you;
+    iput-object p1, p0, Lyou/zta/sis/you/rtg;->bIa:Lyou/zta/sis/you/you;
 
-    iput-object p2, p0, Lyou/zta/sis/you/rtg;->PFa:Lyou/zta/sis/you/ssp;
+    iput-object p2, p0, Lyou/zta/sis/you/rtg;->cIa:Lyou/zta/sis/you/ssp;
 
     return-void
 .end method
@@ -48,9 +48,9 @@
     :cond_1
     check-cast p1, Lyou/zta/sis/you/rtg;
 
-    iget-object v1, p0, Lyou/zta/sis/you/rtg;->OFa:Lyou/zta/sis/you/you;
+    iget-object v1, p0, Lyou/zta/sis/you/rtg;->bIa:Lyou/zta/sis/you/you;
 
-    iget-object v3, p1, Lyou/zta/sis/you/rtg;->OFa:Lyou/zta/sis/you/you;
+    iget-object v3, p1, Lyou/zta/sis/you/rtg;->bIa:Lyou/zta/sis/you/you;
 
     invoke-virtual {v1, v3}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
@@ -58,9 +58,9 @@
 
     if-eqz v1, :cond_2
 
-    iget-object p0, p0, Lyou/zta/sis/you/rtg;->PFa:Lyou/zta/sis/you/ssp;
+    iget-object p0, p0, Lyou/zta/sis/you/rtg;->cIa:Lyou/zta/sis/you/ssp;
 
-    iget-object p1, p1, Lyou/zta/sis/you/rtg;->PFa:Lyou/zta/sis/you/ssp;
+    iget-object p1, p1, Lyou/zta/sis/you/rtg;->cIa:Lyou/zta/sis/you/ssp;
 
     invoke-virtual {p0, p1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
@@ -80,7 +80,7 @@
 .method public getCharacteristic()Ljava/math/BigInteger;
     .locals 0
 
-    iget-object p0, p0, Lyou/zta/sis/you/rtg;->OFa:Lyou/zta/sis/you/you;
+    iget-object p0, p0, Lyou/zta/sis/you/rtg;->bIa:Lyou/zta/sis/you/you;
 
     invoke-interface {p0}, Lyou/zta/sis/you/you;->getCharacteristic()Ljava/math/BigInteger;
 
@@ -92,7 +92,7 @@
 .method public h()Lyou/zta/sis/you/you;
     .locals 0
 
-    iget-object p0, p0, Lyou/zta/sis/you/rtg;->OFa:Lyou/zta/sis/you/you;
+    iget-object p0, p0, Lyou/zta/sis/you/rtg;->bIa:Lyou/zta/sis/you/you;
 
     return-object p0
 .end method
@@ -100,13 +100,13 @@
 .method public hashCode()I
     .locals 2
 
-    iget-object v0, p0, Lyou/zta/sis/you/rtg;->OFa:Lyou/zta/sis/you/you;
+    iget-object v0, p0, Lyou/zta/sis/you/rtg;->bIa:Lyou/zta/sis/you/you;
 
     invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
 
     move-result v0
 
-    iget-object p0, p0, Lyou/zta/sis/you/rtg;->PFa:Lyou/zta/sis/you/ssp;
+    iget-object p0, p0, Lyou/zta/sis/you/rtg;->cIa:Lyou/zta/sis/you/ssp;
 
     invoke-virtual {p0}, Ljava/lang/Object;->hashCode()I
 
@@ -126,7 +126,7 @@
 .method public j()Lyou/zta/sis/you/ssp;
     .locals 0
 
-    iget-object p0, p0, Lyou/zta/sis/you/rtg;->PFa:Lyou/zta/sis/you/ssp;
+    iget-object p0, p0, Lyou/zta/sis/you/rtg;->cIa:Lyou/zta/sis/you/ssp;
 
     return-object p0
 .end method
@@ -134,7 +134,7 @@
 .method public l()I
     .locals 0
 
-    iget-object p0, p0, Lyou/zta/sis/you/rtg;->PFa:Lyou/zta/sis/you/ssp;
+    iget-object p0, p0, Lyou/zta/sis/you/rtg;->cIa:Lyou/zta/sis/you/ssp;
 
     invoke-interface {p0}, Lyou/zta/sis/you/ssp;->l()I
 
@@ -146,13 +146,13 @@
 .method public vdw()I
     .locals 1
 
-    iget-object v0, p0, Lyou/zta/sis/you/rtg;->OFa:Lyou/zta/sis/you/you;
+    iget-object v0, p0, Lyou/zta/sis/you/rtg;->bIa:Lyou/zta/sis/you/you;
 
     invoke-interface {v0}, Lyou/zta/sis/you/you;->vdw()I
 
     move-result v0
 
-    iget-object p0, p0, Lyou/zta/sis/you/rtg;->PFa:Lyou/zta/sis/you/ssp;
+    iget-object p0, p0, Lyou/zta/sis/you/rtg;->cIa:Lyou/zta/sis/you/ssp;
 
     invoke-interface {p0}, Lyou/zta/sis/you/ssp;->l()I
 

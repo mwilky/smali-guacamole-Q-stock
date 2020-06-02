@@ -13,9 +13,9 @@
 
 
 # instance fields
-.field private transient dsaSpec:Ljava/security/interfaces/DSAParams;
+.field private transient CEa:Lorg/bouncycastle/crypto/wtn/oif;
 
-.field private transient oCa:Lorg/bouncycastle/crypto/wtn/oif;
+.field private transient dsaSpec:Ljava/security/interfaces/DSAParams;
 
 .field private y:Ljava/math/BigInteger;
 
@@ -64,7 +64,7 @@
 
     invoke-direct {p1, v0, v1}, Lorg/bouncycastle/crypto/wtn/oif;-><init>(Ljava/math/BigInteger;Lorg/bouncycastle/crypto/wtn/ywr;)V
 
-    iput-object p1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dsa/BCDSAPublicKey;->oCa:Lorg/bouncycastle/crypto/wtn/oif;
+    iput-object p1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dsa/BCDSAPublicKey;->CEa:Lorg/bouncycastle/crypto/wtn/oif;
 
     return-void
 .end method
@@ -110,7 +110,7 @@
 
     invoke-direct {p1, v0, v1}, Lorg/bouncycastle/crypto/wtn/oif;-><init>(Ljava/math/BigInteger;Lorg/bouncycastle/crypto/wtn/ywr;)V
 
-    iput-object p1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dsa/BCDSAPublicKey;->oCa:Lorg/bouncycastle/crypto/wtn/oif;
+    iput-object p1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dsa/BCDSAPublicKey;->CEa:Lorg/bouncycastle/crypto/wtn/oif;
 
     return-void
 .end method
@@ -121,7 +121,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     :try_start_0
-    invoke-virtual {p1}, Lorg/bouncycastle/asn1/x509/c;->oh()Lorg/bouncycastle/asn1/vdb;
+    invoke-virtual {p1}, Lorg/bouncycastle/asn1/x509/c;->xh()Lorg/bouncycastle/asn1/vdb;
 
     move-result-object v0
 
@@ -199,7 +199,7 @@
 
     invoke-direct {p1, v0, v1}, Lorg/bouncycastle/crypto/wtn/oif;-><init>(Ljava/math/BigInteger;Lorg/bouncycastle/crypto/wtn/ywr;)V
 
-    iput-object p1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dsa/BCDSAPublicKey;->oCa:Lorg/bouncycastle/crypto/wtn/oif;
+    iput-object p1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dsa/BCDSAPublicKey;->CEa:Lorg/bouncycastle/crypto/wtn/oif;
 
     return-void
 
@@ -262,7 +262,7 @@
     :goto_0
     iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dsa/BCDSAPublicKey;->dsaSpec:Ljava/security/interfaces/DSAParams;
 
-    iput-object p1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dsa/BCDSAPublicKey;->oCa:Lorg/bouncycastle/crypto/wtn/oif;
+    iput-object p1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dsa/BCDSAPublicKey;->CEa:Lorg/bouncycastle/crypto/wtn/oif;
 
     return-void
 .end method
@@ -358,7 +358,7 @@
 
     invoke-direct {p1, v0, v1}, Lorg/bouncycastle/crypto/wtn/oif;-><init>(Ljava/math/BigInteger;Lorg/bouncycastle/crypto/wtn/ywr;)V
 
-    iput-object p1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dsa/BCDSAPublicKey;->oCa:Lorg/bouncycastle/crypto/wtn/oif;
+    iput-object p1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dsa/BCDSAPublicKey;->CEa:Lorg/bouncycastle/crypto/wtn/oif;
 
     return-void
 .end method
@@ -410,6 +410,14 @@
 
 
 # virtual methods
+.method Gj()Lorg/bouncycastle/crypto/wtn/oif;
+    .locals 0
+
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dsa/BCDSAPublicKey;->CEa:Lorg/bouncycastle/crypto/wtn/oif;
+
+    return-object p0
+.end method
+
 .method public equals(Ljava/lang/Object;)Z
     .locals 4
 
@@ -774,14 +782,6 @@
     invoke-virtual {v0}, Ljava/lang/StringBuffer;->toString()Ljava/lang/String;
 
     move-result-object p0
-
-    return-object p0
-.end method
-
-.method xj()Lorg/bouncycastle/crypto/wtn/oif;
-    .locals 0
-
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dsa/BCDSAPublicKey;->oCa:Lorg/bouncycastle/crypto/wtn/oif;
 
     return-object p0
 .end method

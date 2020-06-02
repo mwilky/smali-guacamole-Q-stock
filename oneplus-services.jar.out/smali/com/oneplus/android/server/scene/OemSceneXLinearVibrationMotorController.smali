@@ -540,7 +540,7 @@
 
     iput-boolean p1, p0, Lcom/oneplus/android/server/scene/OemSceneXLinearVibrationMotorController;->mLastEnableAwinic:Z
 
-    const/16 v0, 0xdd
+    const/16 v0, 0xde
 
     const-string v1, "enableXLinearVibrator: "
 
@@ -771,7 +771,7 @@
 
     if-eqz p0, :cond_0
 
-    iget p0, p0, Lcom/oneplus/android/server/scene/OemSceneXLinearVibrationMotorController$zta;->bha:I
+    iget p0, p0, Lcom/oneplus/android/server/scene/OemSceneXLinearVibrationMotorController$zta;->Aia:I
 
     monitor-exit v0
 
@@ -969,14 +969,14 @@
 
     sget-object p1, Lcom/oneplus/android/server/scene/OemSceneXLinearVibrationMotorController;->RULE_XLVMOTOR_CONTROLLER:Lcom/oneplus/core/oimc/OIMCRule;
 
-    invoke-static {p1, p0}, Lcom/oneplus/server/zta;->addFuncRule(Lcom/oneplus/core/oimc/OIMCRule;I)V
+    invoke-static {p1, p0}, Lcom/oneplus/server/sis;->addFuncRule(Lcom/oneplus/core/oimc/OIMCRule;I)V
 
     goto :goto_0
 
     :cond_1
     sget-object p1, Lcom/oneplus/android/server/scene/OemSceneXLinearVibrationMotorController;->RULE_XLVMOTOR_CONTROLLER:Lcom/oneplus/core/oimc/OIMCRule;
 
-    invoke-static {p1, p0}, Lcom/oneplus/server/zta;->removeFuncRule(Lcom/oneplus/core/oimc/OIMCRule;I)V
+    invoke-static {p1, p0}, Lcom/oneplus/server/sis;->removeFuncRule(Lcom/oneplus/core/oimc/OIMCRule;I)V
 
     :goto_0
     return-void

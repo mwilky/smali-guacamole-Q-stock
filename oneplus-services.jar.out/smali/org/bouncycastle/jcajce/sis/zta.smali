@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field private final mpa:[B
+.field private final Ara:[B
 
-.field private final npa:I
+.field private final Bra:I
 
 
 # direct methods
@@ -25,13 +25,13 @@
 
     invoke-direct {p0, p1}, Ljavax/crypto/spec/IvParameterSpec;-><init>([B)V
 
-    iput p2, p0, Lorg/bouncycastle/jcajce/sis/zta;->npa:I
+    iput p2, p0, Lorg/bouncycastle/jcajce/sis/zta;->Bra:I
 
     invoke-static {p3}, Lorg/bouncycastle/util/zta;->vdb([B)[B
 
     move-result-object p1
 
-    iput-object p1, p0, Lorg/bouncycastle/jcajce/sis/zta;->mpa:[B
+    iput-object p1, p0, Lorg/bouncycastle/jcajce/sis/zta;->Ara:[B
 
     return-void
 .end method
@@ -48,10 +48,10 @@
     return-object p0
 .end method
 
-.method public ng()[B
+.method public wg()[B
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/sis/zta;->mpa:[B
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/sis/zta;->Ara:[B
 
     invoke-static {p0}, Lorg/bouncycastle/util/zta;->vdb([B)[B
 
@@ -60,10 +60,10 @@
     return-object p0
 .end method
 
-.method public og()I
+.method public xg()I
     .locals 0
 
-    iget p0, p0, Lorg/bouncycastle/jcajce/sis/zta;->npa:I
+    iget p0, p0, Lorg/bouncycastle/jcajce/sis/zta;->Bra:I
 
     return p0
 .end method

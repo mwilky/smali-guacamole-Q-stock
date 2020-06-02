@@ -4,7 +4,7 @@
 
 
 # static fields
-.field private static final DCa:Lorg/bouncycastle/asn1/qbh;
+.field private static final REa:Lorg/bouncycastle/asn1/qbh;
 
 
 # direct methods
@@ -13,7 +13,7 @@
 
     sget-object v0, Lorg/bouncycastle/asn1/z;->INSTANCE:Lorg/bouncycastle/asn1/z;
 
-    sput-object v0, Lorg/bouncycastle/jcajce/provider/asymmetric/x509/rtg;->DCa:Lorg/bouncycastle/asn1/qbh;
+    sput-object v0, Lorg/bouncycastle/jcajce/provider/asymmetric/x509/rtg;->REa:Lorg/bouncycastle/asn1/qbh;
 
     return-void
 .end method
@@ -94,7 +94,7 @@
 
     if-eqz v0, :cond_1
 
-    sget-object v2, Lorg/bouncycastle/jcajce/provider/asymmetric/x509/rtg;->DCa:Lorg/bouncycastle/asn1/qbh;
+    sget-object v2, Lorg/bouncycastle/jcajce/provider/asymmetric/x509/rtg;->REa:Lorg/bouncycastle/asn1/qbh;
 
     invoke-virtual {v2, v0}, Lorg/bouncycastle/asn1/vdb;->equals(Ljava/lang/Object;)Z
 
@@ -122,7 +122,7 @@
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/dma/ear;->ph()Lorg/bouncycastle/asn1/x509/zta;
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/dma/ear;->yh()Lorg/bouncycastle/asn1/x509/zta;
 
     move-result-object p0
 
@@ -297,7 +297,7 @@
 
     if-eqz p1, :cond_0
 
-    sget-object v0, Lorg/bouncycastle/jcajce/provider/asymmetric/x509/rtg;->DCa:Lorg/bouncycastle/asn1/qbh;
+    sget-object v0, Lorg/bouncycastle/jcajce/provider/asymmetric/x509/rtg;->REa:Lorg/bouncycastle/asn1/qbh;
 
     invoke-virtual {v0, p1}, Lorg/bouncycastle/asn1/vdb;->equals(Ljava/lang/Object;)Z
 

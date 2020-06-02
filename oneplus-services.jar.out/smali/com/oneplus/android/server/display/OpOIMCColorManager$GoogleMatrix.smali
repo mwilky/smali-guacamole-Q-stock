@@ -74,7 +74,7 @@
 
     iget-object v0, p0, Lcom/oneplus/android/server/display/OpOIMCColorManager$GoogleMatrix;->this$0:Lcom/oneplus/android/server/display/OpOIMCColorManager;
 
-    iget v0, v0, Lcom/oneplus/android/server/display/OpOIMCColorManager;->Bda:I
+    iget v0, v0, Lcom/oneplus/android/server/display/OpOIMCColorManager;->Sea:I
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -96,7 +96,7 @@
 
     const/4 p1, 0x4
 
-    iput p1, p0, Lcom/oneplus/android/server/display/OpOIMCColorManager;->Bda:I
+    iput p1, p0, Lcom/oneplus/android/server/display/OpOIMCColorManager;->Sea:I
 
     iget-object p0, p0, Lcom/oneplus/android/server/display/OpOIMCColorManager;->mOneplusColorDisplayManager:Lcom/oneplus/display/IOneplusColorDisplayManager;
 
@@ -120,7 +120,7 @@
 
     iget-object v0, p0, Lcom/oneplus/android/server/display/OpOIMCColorManager$GoogleMatrix;->this$0:Lcom/oneplus/android/server/display/OpOIMCColorManager;
 
-    iget v0, v0, Lcom/oneplus/android/server/display/OpOIMCColorManager;->Bda:I
+    iget v0, v0, Lcom/oneplus/android/server/display/OpOIMCColorManager;->Sea:I
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -134,7 +134,7 @@
 
     iget-object p1, p0, Lcom/oneplus/android/server/display/OpOIMCColorManager$GoogleMatrix;->this$0:Lcom/oneplus/android/server/display/OpOIMCColorManager;
 
-    iget v0, p1, Lcom/oneplus/android/server/display/OpOIMCColorManager;->Bda:I
+    iget v0, p1, Lcom/oneplus/android/server/display/OpOIMCColorManager;->Sea:I
 
     const/4 v1, 0x0
 
@@ -152,7 +152,7 @@
 
     iget-object p0, p0, Lcom/oneplus/android/server/display/OpOIMCColorManager$GoogleMatrix;->this$0:Lcom/oneplus/android/server/display/OpOIMCColorManager;
 
-    iput v1, p0, Lcom/oneplus/android/server/display/OpOIMCColorManager;->Bda:I
+    iput v1, p0, Lcom/oneplus/android/server/display/OpOIMCColorManager;->Sea:I
 
     :cond_0
     return v1

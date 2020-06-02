@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/server/wm/veq;->eq()V
+    value = Lcom/android/server/wm/cgv;->yq()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/server/wm/veq;
+.field final synthetic this$0:Lcom/android/server/wm/cgv;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/server/wm/veq;)V
+.method constructor <init>(Lcom/android/server/wm/cgv;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/android/server/wm/hmo;->this$0:Lcom/android/server/wm/veq;
+    iput-object p1, p0, Lcom/android/server/wm/hmo;->this$0:Lcom/android/server/wm/cgv;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -54,7 +54,7 @@
 
     invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sget v0, Lcom/android/server/wm/veq;->TU:I
+    sget v0, Lcom/android/server/wm/cgv;->lW:I
 
     invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -64,7 +64,7 @@
 
     invoke-static {p1, p2}, Landroid/util/Slog;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    sget p2, Lcom/android/server/wm/veq;->TU:I
+    sget p2, Lcom/android/server/wm/cgv;->lW:I
 
     const/4 v0, 0x0
 
@@ -72,17 +72,17 @@
 
     if-ne p2, v1, :cond_0
 
-    sput v0, Lcom/android/server/wm/veq;->TU:I
+    sput v0, Lcom/android/server/wm/cgv;->lW:I
 
     goto :goto_0
 
     :cond_0
-    sput v1, Lcom/android/server/wm/veq;->TU:I
+    sput v1, Lcom/android/server/wm/cgv;->lW:I
 
     :goto_0
-    iget-object p2, p0, Lcom/android/server/wm/hmo;->this$0:Lcom/android/server/wm/veq;
+    iget-object p2, p0, Lcom/android/server/wm/hmo;->this$0:Lcom/android/server/wm/cgv;
 
-    invoke-static {p2}, Lcom/android/server/wm/veq;->bvj(Lcom/android/server/wm/veq;)Lcom/android/server/wm/veq$zta;
+    invoke-static {p2}, Lcom/android/server/wm/cgv;->bvj(Lcom/android/server/wm/cgv;)Lcom/android/server/wm/cgv$zta;
 
     move-result-object p2
 
@@ -90,9 +90,9 @@
 
     invoke-virtual {p2, v1}, Landroid/os/Handler;->sendEmptyMessage(I)Z
 
-    iget-object p2, p0, Lcom/android/server/wm/hmo;->this$0:Lcom/android/server/wm/veq;
+    iget-object p2, p0, Lcom/android/server/wm/hmo;->this$0:Lcom/android/server/wm/cgv;
 
-    invoke-static {p2}, Lcom/android/server/wm/veq;->zta(Lcom/android/server/wm/veq;)Landroid/content/Context;
+    invoke-static {p2}, Lcom/android/server/wm/cgv;->zta(Lcom/android/server/wm/cgv;)Landroid/content/Context;
 
     move-result-object p2
 
@@ -102,17 +102,17 @@
 
     const-string v1, "quickreply_ime_position"
 
-    sget v2, Lcom/android/server/wm/veq;->TU:I
+    sget v2, Lcom/android/server/wm/cgv;->lW:I
 
     invoke-static {p2, v1, v2}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
-    iget-object p2, p0, Lcom/android/server/wm/hmo;->this$0:Lcom/android/server/wm/veq;
+    iget-object p2, p0, Lcom/android/server/wm/hmo;->this$0:Lcom/android/server/wm/cgv;
 
-    invoke-static {p2, v0}, Lcom/android/server/wm/veq;->sis(Lcom/android/server/wm/veq;I)I
+    invoke-static {p2, v0}, Lcom/android/server/wm/cgv;->sis(Lcom/android/server/wm/cgv;I)I
 
-    iget-object p2, p0, Lcom/android/server/wm/hmo;->this$0:Lcom/android/server/wm/veq;
+    iget-object p2, p0, Lcom/android/server/wm/hmo;->this$0:Lcom/android/server/wm/cgv;
 
-    invoke-static {p2}, Lcom/android/server/wm/veq;->zta(Lcom/android/server/wm/veq;)Landroid/content/Context;
+    invoke-static {p2}, Lcom/android/server/wm/cgv;->zta(Lcom/android/server/wm/cgv;)Landroid/content/Context;
 
     move-result-object p2
 
@@ -122,9 +122,9 @@
 
     const-string v0, "quickreply_imbutton_x"
 
-    iget-object p0, p0, Lcom/android/server/wm/hmo;->this$0:Lcom/android/server/wm/veq;
+    iget-object p0, p0, Lcom/android/server/wm/hmo;->this$0:Lcom/android/server/wm/cgv;
 
-    invoke-static {p0}, Lcom/android/server/wm/veq;->ibl(Lcom/android/server/wm/veq;)I
+    invoke-static {p0}, Lcom/android/server/wm/cgv;->ibl(Lcom/android/server/wm/cgv;)I
 
     move-result p0
 
