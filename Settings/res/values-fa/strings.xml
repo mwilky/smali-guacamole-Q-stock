@@ -2445,6 +2445,7 @@
 شما در حال حاضر به حساب‌های زیر وارد شده‌اید:
 "</string>
     <string name="master_clear_button_text">پاک کردن تمام داده‌ها</string>
+    <string name="master_clear_confirm_summary">تمام محتوای ذخیره‌ساز داخلی، از جمله موسیقی، عکس‌ها، ویدیوها و سایر داده‌های شخصی، نیز حذف خواهد شد. پاک شود؟</string>
     <string name="master_clear_confirm_title">همه داده‌ها پاک شود؟</string>
     <string name="master_clear_desc">‏با این کار همه داده‌های <b>حافظه داخلی</b>" تلفنتان پاک می‌شود، از جمله: 
 
@@ -2923,7 +2924,7 @@
     <string name="oneplus_auto_activate">روشن شدن خودکار</string>
     <string name="oneplus_auto_answer_via_bluetooth_summary">در صورت اتصال به یک دستگاه صوتی بلوتوث، تماس ورودی به صورت خودکار پاسخ داده خواهد شد</string>
     <string name="oneplus_auto_answer_via_bluetooth_title">پاسخ‌گویی هوشمند برای بلوتوث</string>
-    <string name="oneplus_auto_check_pin_length">پین را بدون ضربه زد به «✓» تأیید کنید</string>
+    <string name="oneplus_auto_check_pin_length">پس از وارد کردن PIN، قفل صفحۀ نمایش به صورت خودکار باز شود</string>
     <string name="oneplus_auto_disconect_the_ap">اگر تا 5 دقیقه هیچ دستگاهی متصل نشود، نقطۀ اتصال به صورت خودکار خاموش می‌شود.</string>
     <string name="oneplus_auto_open_app_none">هیچ کدام</string>
     <string name="oneplus_auto_open_app_other_applications">سایر برنامه‌ها</string>
@@ -3077,6 +3078,9 @@
 2.در یک پردازش تنظمیات مجرد، لطفاً تنها اطلاعات اثر مربوط به یک انگشت را وارد کنید."</string>
     <string name="oneplus_enroll_fingerprint_tips_title">تنظیم سریع اثرانگشت</string>
     <string name="oneplus_enter_your_fingerprint">· ثبت اثر انگشت</string>
+    <string name="oneplus_erase_system_data">پاک کردن داده‌های سیستم</string>
+    <string name="oneplus_erase_system_data_summary">داده‌های سیستم، شامل اطلاعات حساب، مخاطبین و داده‌های مربوط به برنامه‌ها، حذف خواهد شد. این کار برگشت‌پذیر نیست.</string>
+    <string name="oneplus_erase_system_data_title">داده‌های سیستم پاک شود؟</string>
     <string name="oneplus_esportmode_introduction_summary">برای فعال کردن «حالت Esports»، به کلید روی پانل «حالت بازی» ضربه بزنید.</string>
     <string name="oneplus_experience_improvement_programs">برنامه‌های بهبود تجربه کاربری</string>
     <string name="oneplus_face_auto_unlock_while_screen_on_sumary">قفل تلفن خود را به محض روشن شدن صفحه نمایش و بدون جاروب کردن آن در ابتدا، با چهره خود باز کنید.</string>
@@ -3573,7 +3577,7 @@
     <string name="oneplus_search_keyword_swap_navkeys">دکمه سواپ یا معاوضه</string>
     <string name="oneplus_search_keyword_switch">انتقال، انتقال دائمی داده</string>
     <string name="oneplus_search_keyword_theme_settings">سفارشی‌سازی صفحۀ قفل، تصاویر زمینه، سبک ساعت، پویانمایی اثر انگشت، Horizon light، سفارشی‌سازی سیستم، رنگ برجسته، شکل، فونت، تون، بستۀ آیکون‌ها، نور درخشان، تاریکی با جزئیات، ته‌رنگ‌های درخشان</string>
-    <string name="oneplus_search_keyword_theme_settings_mcl">سفارشی‌سازی صفحۀ قفل، تصاویر زمینه، سبک ساعت، پویانمایی اثر انگشت، Horizon Light، سفارشی‌سازی سیستم، رنگ برجسته، شکل، فونت، تون، بستۀ آیکون‌ها، نور درخشان، تاریکی با جزئیات، ته‌رنگ‌های درخشان، McLaren</string>
+    <string name="oneplus_search_keyword_theme_settings_mcl">سفارشی‌سازی صفحۀ قفل، تصاویر زمینه، سبک ساعتصفحۀ قفل، پویانمایی اثر انگشت، Horizon Light، سفارشی‌سازی سیستم، رنگ برجسته، شکل، فونت، تون، بستۀ آیکون‌ها، نور درخشان، تاریکی با جزئیات، ته‌رنگ‌های درخشان، McLaren</string>
     <string name="oneplus_search_keyword_three_screenshots">عکس صفحه</string>
     <string name="oneplus_search_keyword_timer_boot" />
     <string name="oneplus_search_keyword_user_experience">اعلانات، تجربه، برنامه، بهبود</string>
@@ -3753,9 +3757,9 @@
     <string name="oneplus_vibration_settings_soc_tri_state">لرزش</string>
     <string name="oneplus_vibration_settings_soc_tri_state_summary">تماس‌ها و اعلان‌ها به‌جز زنگ‌های ساعت، بی‌صدا می‌شوند و روی «فقط لرزش» تنظیم می‌شوند</string>
     <string name="oneplus_vibration_summary">هشدارا همیشه زنگ خواهد زد</string>
-    <string name="oneplus_video_enhancer">بهبوددهنده ویدئو</string>
-    <string name="oneplus_video_enhancer_footer">بهبود رنگ هنگام پخش ویدیو</string>
-    <string name="oneplus_video_enhancer_summary">بهبود رنگ هنگام پخش ویدیو</string>
+    <string name="oneplus_video_enhancer">جلوۀ رنگ درخشان</string>
+    <string name="oneplus_video_enhancer_footer">بهبود رنگ هنگام پخش ویدئوها</string>
+    <string name="oneplus_video_enhancer_summary">بهبود رنگ هنگام پخش ویدئوها</string>
     <string name="oneplus_volume_keys_adjust">با استفاده از کلیدهای میزان صدا تنظیم کنید</string>
     <string name="oneplus_volume_keys_adjust_media">حجم صدای رسانه ها</string>
     <string name="oneplus_volume_keys_adjust_ringtones">حجم صدای زنگ</string>
@@ -4785,7 +4789,7 @@
     <string name="status_bar_settings_cellular_title">داده های شبکه موبایل</string>
     <string name="status_bar_settings_dnd_title">مزاحم نشوید</string>
     <string name="status_bar_settings_headset_title">هدست</string>
-    <string name="status_bar_settings_hotspot_title">هات اسپات</string>
+    <string name="status_bar_settings_hotspot_title">نقطۀ اتصال</string>
     <string name="status_bar_settings_network_speed_title">نمایش سرعت شبکه</string>
     <string name="status_bar_settings_time_title">زمان</string>
     <string name="status_bar_settings_wifi_title">Wi-Fi</string>

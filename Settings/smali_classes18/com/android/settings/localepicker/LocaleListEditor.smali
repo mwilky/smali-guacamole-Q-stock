@@ -244,13 +244,13 @@
 
     invoke-direct {v1, v2}, Landroidx/appcompat/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v2, 0x7f12061a
+    const v2, 0x7f120619
 
     invoke-virtual {v1, v2}, Landroidx/appcompat/app/AlertDialog$Builder;->setTitle(I)Landroidx/appcompat/app/AlertDialog$Builder;
 
     move-result-object v1
 
-    const v2, 0x7f120619
+    const v2, 0x7f120618
 
     invoke-virtual {v1, v2}, Landroidx/appcompat/app/AlertDialog$Builder;->setMessage(I)Landroidx/appcompat/app/AlertDialog$Builder;
 
@@ -305,7 +305,7 @@
 
     move-result-object v1
 
-    const v4, 0x7f12061b
+    const v4, 0x7f12061a
 
     invoke-virtual {v1, v4}, Landroidx/appcompat/app/AlertDialog$Builder;->setMessage(I)Landroidx/appcompat/app/AlertDialog$Builder;
 
@@ -500,7 +500,7 @@
 
     const/4 v1, 0x2
 
-    const v2, 0x7f120913
+    const v2, 0x7f120912
 
     invoke-interface {p1, v0, v1, v0, v2}, Landroid/view/Menu;->add(IIII)Landroid/view/MenuItem;
 
@@ -510,7 +510,7 @@
 
     invoke-interface {v0, v1}, Landroid/view/MenuItem;->setShowAsAction(I)V
 
-    const v1, 0x7f0801c7
+    const v1, 0x7f0801c8
 
     invoke-interface {v0, v1}, Landroid/view/MenuItem;->setIcon(I)Landroid/view/MenuItem;
 
@@ -622,7 +622,7 @@
 
     if-nez v0, :cond_0
 
-    const v2, 0x7f1208bb
+    const v2, 0x7f1208ba
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(I)V
 

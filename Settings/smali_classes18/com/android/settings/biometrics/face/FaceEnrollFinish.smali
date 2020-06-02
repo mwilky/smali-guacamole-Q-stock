@@ -31,7 +31,7 @@
 
     invoke-virtual {p0, v0}, Lcom/android/settings/biometrics/face/FaceEnrollFinish;->setContentView(I)V
 
-    const v0, 0x7f1212e6
+    const v0, 0x7f1212ee
 
     invoke-virtual {p0, v0}, Lcom/android/settings/biometrics/face/FaceEnrollFinish;->setHeaderText(I)V
 
@@ -55,7 +55,7 @@
 
     invoke-direct {v1, p0}, Lcom/google/android/setupcompat/template/FooterButton$Builder;-><init>(Landroid/content/Context;)V
 
-    const v2, 0x7f1212dc
+    const v2, 0x7f1212e4
 
     invoke-virtual {v1, v2}, Lcom/google/android/setupcompat/template/FooterButton$Builder;->setText(I)Lcom/google/android/setupcompat/template/FooterButton$Builder;
 
@@ -75,7 +75,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f1303e2
+    const v2, 0x7f1303e3
 
     invoke-virtual {v1, v2}, Lcom/google/android/setupcompat/template/FooterButton$Builder;->setTheme(I)Lcom/google/android/setupcompat/template/FooterButton$Builder;
 

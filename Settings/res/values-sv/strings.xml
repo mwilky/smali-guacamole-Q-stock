@@ -2447,6 +2447,7 @@ Du kan ändra detta senare under Inställningar > Appar och aviseringar."</strin
 Du är inloggad på följande konton:
 "</string>
     <string name="master_clear_button_text">Radera all data</string>
+    <string name="master_clear_confirm_summary">Allt innehåll i den interna lagringen tas också bort, inklusive musik, foton, videor och andra personuppgifter. Vill du bekräfta och ta bort?</string>
     <string name="master_clear_confirm_title">Vill du radera all data?</string>
     <string name="master_clear_desc">Detta raderar all data från enhetens <b>interna lagringsutrymme</b>", bland annat:
 
@@ -2925,7 +2926,7 @@ Appen kan också aktivera eller inaktivera Stör ej och ändra relaterade instä
     <string name="oneplus_auto_activate">Sätt på automatiskt</string>
     <string name="oneplus_auto_answer_via_bluetooth_summary">Det inkommande samtalet besvaras automatiskt under uppkoppling till en Bluetooth-ljudenhet</string>
     <string name="oneplus_auto_answer_via_bluetooth_title">Smart svar för Bluetooth</string>
-    <string name="oneplus_auto_check_pin_length">Bekräfta PIN-koden utan att trycka på \"✓\"</string>
+    <string name="oneplus_auto_check_pin_length">Lås upp skärmen automatiskt efter att du har angett en PIN-kod</string>
     <string name="oneplus_auto_disconect_the_ap">Trådlös surfzon stängs av automatiskt efter 5 minuter om inga enheter är anslutna.</string>
     <string name="oneplus_auto_open_app_none">Ingen</string>
     <string name="oneplus_auto_open_app_other_applications">ANDRA APPLIKATIONER</string>
@@ -3079,6 +3080,9 @@ Batteribesparing stängs av automatiskt när enheten laddar."</string>
 2. I varje inställningsprocess anger du bara informationen för ett fingeravtryck."</string>
     <string name="oneplus_enroll_fingerprint_tips_title">Fråga om att ställa in fingeravtryck</string>
     <string name="oneplus_enter_your_fingerprint">· Registrera ditt fingeravtryck</string>
+    <string name="oneplus_erase_system_data">TA BORT SYSTEMDATA</string>
+    <string name="oneplus_erase_system_data_summary">Systemdata, inklusive kontoinformation,, kontakter och appdata tas bort. Du kan inte ångra den här åtgärden.</string>
+    <string name="oneplus_erase_system_data_title">Vill du ta bort systemdata?</string>
     <string name="oneplus_esportmode_introduction_summary">Aktivera Esports-läget genom att peka på panelen Spelläge.</string>
     <string name="oneplus_experience_improvement_programs">Upplevelseförbättringsprogram</string>
     <string name="oneplus_face_auto_unlock_while_screen_on_sumary">Lås upp telefonen med ditt ansikte så fort skärmen sätts på utan att först behöva svepa.</string>
@@ -3587,7 +3591,7 @@ Obs! Ditt fingeravtryck kan vara mindre säkert än ett starkt mönster eller en
     <string name="oneplus_security_detection_summary">Säkerhetsdetektering för appar med okända källa</string>
     <string name="oneplus_security_detection_title">OnePlus säkerhetsdetektering</string>
     <string name="oneplus_security_lock_settings_summary">Låsa upp inställningar, platstjänst, applås</string>
-    <string name="oneplus_security_lock_settings_title">Säkerhet &amp; sekretess</string>
+    <string name="oneplus_security_lock_settings_title">Säkerhet och sekretess</string>
     <string name="oneplus_security_settings_fingerprint_enroll_error_dialog_title">Det gick inte att ställa in</string>
     <string name="oneplus_security_settings_fingerprint_enroll_introduction_message">"Det är bara att trycka på området för identifiering av fingeravtryck för att låsa upp telefonen, godkänna köp eller logga in till appar. 
 
@@ -3755,9 +3759,9 @@ Obs! Ansiktsupplåsning kan vara mindre säkert än fingeravtryck, PIN-kod eller
     <string name="oneplus_vibration_settings_soc_tri_state">Vibration</string>
     <string name="oneplus_vibration_settings_soc_tri_state_summary">Samtal och meddelanden är ljudlösa och inställda på att endast vibrera, förutom för larm</string>
     <string name="oneplus_vibration_summary">Larm ringer alltid</string>
-    <string name="oneplus_video_enhancer">Videoförbättrare</string>
-    <string name="oneplus_video_enhancer_footer">Förbättra färgen under videouppspelning</string>
-    <string name="oneplus_video_enhancer_summary">Förbättra färgen under videouppspelning</string>
+    <string name="oneplus_video_enhancer">Levande färgeffekt</string>
+    <string name="oneplus_video_enhancer_footer">Förbättra färgen när du spelar upp videoklipp</string>
+    <string name="oneplus_video_enhancer_summary">Förbättra färgen när du spelar upp videoklipp</string>
     <string name="oneplus_volume_keys_adjust">Använd volymknapparna för att justera</string>
     <string name="oneplus_volume_keys_adjust_media">Mediavolym</string>
     <string name="oneplus_volume_keys_adjust_ringtones">Volym för ringsignal</string>

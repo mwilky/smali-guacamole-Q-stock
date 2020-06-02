@@ -422,7 +422,7 @@
 
     move-result v2
 
-    if-eqz v2, :cond_10
+    if-eqz v2, :cond_12
 
     invoke-static {p1}, Lcom/oneplus/settings/utils/OPUtils;->restoreBackupEntranceInLauncher(Landroid/content/Context;)V
 
@@ -549,6 +549,22 @@
     invoke-static {p1}, Lcom/android/settings/datausage/backgrounddata/utils/BackgroundDataUtils;->initAppBackgroundDataType(Landroid/content/Context;)V
 
     :cond_10
+    invoke-static {}, Lcom/oneplus/settings/utils/OPUtils;->isSupportUss()Z
+
+    move-result v0
+
+    if-nez v0, :cond_11
+
+    invoke-static {}, Lcom/oneplus/settings/utils/OPUtils;->isSupportUstMode()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_12
+
+    :cond_11
+    invoke-static {}, Lcom/oneplus/settings/utils/OPUtils;->initHwId()V
+
+    :cond_12
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
     move-result-object v0
@@ -559,7 +575,7 @@
 
     move-result v0
 
-    if-eqz v0, :cond_11
+    if-eqz v0, :cond_13
 
     const-string v0, "persist.sys.oem.otg_support"
 
@@ -589,7 +605,7 @@
 
     move-result v0
 
-    if-nez v0, :cond_11
+    if-nez v0, :cond_13
 
     new-instance v3, Landroid/app/NotificationChannel;
 
@@ -597,7 +613,7 @@
 
     move-result-object v4
 
-    const v6, 0x7f120e3b
+    const v6, 0x7f120e39
 
     invoke-virtual {v4, v6}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -613,7 +629,7 @@
 
     invoke-direct {v4, p1, v9}, Landroidx/core/app/NotificationCompat$Builder;-><init>(Landroid/content/Context;Ljava/lang/String;)V
 
-    const v7, 0x7f0804ef
+    const v7, 0x7f0804f0
 
     invoke-virtual {v4, v7}, Landroidx/core/app/NotificationCompat$Builder;->setSmallIcon(I)Landroidx/core/app/NotificationCompat$Builder;
 
@@ -683,6 +699,6 @@
 
     invoke-static {v6, v2, v5}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
-    :cond_11
+    :cond_13
     return-void
 .end method

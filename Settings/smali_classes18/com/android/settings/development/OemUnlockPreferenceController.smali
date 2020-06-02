@@ -283,6 +283,12 @@
 
     if-nez v0, :cond_0
 
+    invoke-static {}, Lcom/oneplus/settings/utils/OPUtils;->isSupportUssOnly()Z
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
     const/4 v0, 0x1
 
     goto :goto_0
@@ -410,7 +416,7 @@
 .method private updateOemUnlockSettingDescription()V
     .locals 3
 
-    const v0, 0x7f120b9a
+    const v0, 0x7f120b9e
 
     invoke-virtual {p0}, Lcom/android/settings/development/OemUnlockPreferenceController;->isBootloaderUnlocked()Z
 
@@ -418,7 +424,7 @@
 
     if-eqz v1, :cond_0
 
-    const v0, 0x7f120b96
+    const v0, 0x7f120b9a
 
     goto :goto_0
 
@@ -429,7 +435,7 @@
 
     if-eqz v1, :cond_1
 
-    const v0, 0x7f120b99
+    const v0, 0x7f120b9d
 
     goto :goto_0
 
@@ -440,7 +446,7 @@
 
     if-nez v1, :cond_2
 
-    const v0, 0x7f120b98
+    const v0, 0x7f120b9c
 
     :cond_2
     :goto_0
@@ -718,7 +724,7 @@
 
     iget-object v0, p0, Lcom/android/settings/development/OemUnlockPreferenceController;->mChooseLockSettingsHelper:Lcom/android/settings/password/ChooseLockSettingsHelper;
 
-    const v1, 0x7f120b95
+    const v1, 0x7f120b99
 
     invoke-virtual {p1, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 

@@ -42,7 +42,7 @@
 
     iget-object v0, p0, Lcom/android/settings/homepage/contextualcards/slices/ContextualNotificationChannelSlice;->mContext:Landroid/content/Context;
 
-    const v1, 0x7f121201
+    const v1, 0x7f121209
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 

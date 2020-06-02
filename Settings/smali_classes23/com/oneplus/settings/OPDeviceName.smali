@@ -230,7 +230,7 @@
 .method public onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
     .locals 3
 
-    const v0, 0x7f120c6b
+    const v0, 0x7f120c6c
 
     const/4 v1, 0x1
 
@@ -520,7 +520,7 @@
 
     const/4 v3, 0x0
 
-    const v4, 0x7f121858
+    const v4, 0x7f12185f
 
     if-eqz v2, :cond_2
 

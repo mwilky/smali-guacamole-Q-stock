@@ -28,7 +28,7 @@
 .method protected getMessageId()I
     .locals 1
 
-    const v0, 0x7f121768
+    const v0, 0x7f121770
 
     return v0
 .end method
@@ -52,7 +52,7 @@
 .method protected getTitleId()I
     .locals 1
 
-    const v0, 0x7f121769
+    const v0, 0x7f121771
 
     return v0
 .end method

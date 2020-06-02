@@ -201,7 +201,7 @@
 
     iget-object v5, p0, Lcom/android/settings/network/telephony/DataUsagePreferenceController;->mContext:Landroid/content/Context;
 
-    const v6, 0x7f120568
+    const v6, 0x7f120567
 
     const/4 v7, 0x2
 

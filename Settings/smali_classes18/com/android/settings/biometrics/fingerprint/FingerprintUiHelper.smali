@@ -146,7 +146,7 @@
 
     if-eqz v0, :cond_1
 
-    const v1, 0x7f0804c7
+    const v1, 0x7f0804c8
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -177,11 +177,21 @@
 .method public cancelAuthenticate()V
     .locals 2
 
-    iget-object v0, p0, Lcom/android/settings/biometrics/fingerprint/FingerprintUiHelper;->mCancellationSignal:Landroid/os/CancellationSignal;
-
-    if-eqz v0, :cond_0
-
     const-string v0, "FingerprintUiHelper"
+
+    const-string v1, "cancelAuthenticate"
+
+    invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
+
+    iget-object v1, p0, Lcom/android/settings/biometrics/fingerprint/FingerprintUiHelper;->mCancellationSignal:Landroid/os/CancellationSignal;
+
+    if-eqz v1, :cond_0
+
+    invoke-virtual {v1}, Landroid/os/CancellationSignal;->isCanceled()Z
+
+    move-result v1
+
+    if-nez v1, :cond_0
 
     const-string v1, "Fingerprint cancelAuthenticate"
 
@@ -251,7 +261,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f12070f
+    const v1, 0x7f12070e
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -277,7 +287,7 @@
 
     if-eqz v0, :cond_0
 
-    const v1, 0x7f0801e4
+    const v1, 0x7f0801e5
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -358,7 +368,7 @@
 
     if-eqz v0, :cond_0
 
-    const v1, 0x7f0801e0
+    const v1, 0x7f0801e1
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageResource(I)V
 

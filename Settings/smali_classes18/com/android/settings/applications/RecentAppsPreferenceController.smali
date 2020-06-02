@@ -339,7 +339,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f1211fe
+    const v2, 0x7f121206
 
     invoke-virtual {v1, v2}, Lcom/android/settingslib/widget/AppEntitiesHeaderController;->setHeaderTitleRes(I)Lcom/android/settingslib/widget/AppEntitiesHeaderController;
 

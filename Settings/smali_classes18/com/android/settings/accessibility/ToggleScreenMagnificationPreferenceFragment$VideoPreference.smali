@@ -62,7 +62,7 @@
 
     move-result-object v9
 
-    const v0, 0x7f070509
+    const v0, 0x7f07050b
 
     invoke-virtual {v9, v0}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -70,7 +70,7 @@
 
     nop
 
-    const v0, 0x7f07050c
+    const v0, 0x7f07050e
 
     invoke-virtual {v9, v0}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -78,13 +78,13 @@
 
     nop
 
-    const v0, 0x7f07050a
+    const v0, 0x7f07050c
 
     invoke-virtual {v9, v0}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
     move-result v12
 
-    const v0, 0x7f07050b
+    const v0, 0x7f07050d
 
     invoke-virtual {v9, v0}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -96,7 +96,7 @@
 
     invoke-virtual {v8, v0}, Landroidx/preference/PreferenceViewHolder;->setDividerAllowedBelow(Z)V
 
-    const v1, 0x7f0a0756
+    const v1, 0x7f0a0758
 
     invoke-virtual {v8, v1}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 
@@ -106,7 +106,7 @@
 
     iput-object v1, v7, Lcom/android/settings/accessibility/ToggleScreenMagnificationPreferenceFragment$VideoPreference;->mVideoBackgroundView:Landroid/widget/ImageView;
 
-    const v1, 0x7f0a0755
+    const v1, 0x7f0a0757
 
     invoke-virtual {v8, v1}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 

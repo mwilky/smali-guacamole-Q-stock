@@ -100,7 +100,7 @@
 
     invoke-super {p0, p1}, Landroidx/fragment/app/FragmentActivity;->onCreate(Landroid/os/Bundle;)V
 
-    const v0, 0x7f0d02b7
+    const v0, 0x7f0d02be
 
     invoke-virtual {p0, v0}, Lcom/android/settings/homepage/SettingsHomepageActivity;->setContentView(I)V
 
@@ -118,7 +118,7 @@
 
     invoke-static {v0, v1}, Lcom/oneplus/settings/utils/OPUtils;->setLightNavigationBar(Landroid/view/Window;I)V
 
-    const v0, 0x7f0a05e6
+    const v0, 0x7f0a05e8
 
     invoke-virtual {p0, v0}, Lcom/android/settings/homepage/SettingsHomepageActivity;->findViewById(I)Landroid/view/View;
 
@@ -198,7 +198,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f07051c
+    const v2, 0x7f07051e
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -208,7 +208,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f07051d
+    const v3, 0x7f07051f
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 

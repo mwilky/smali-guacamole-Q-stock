@@ -94,7 +94,7 @@
 
     aput-object v3, v2, v4
 
-    const v3, 0x7f1209c6
+    const v3, 0x7f1209c5
 
     invoke-virtual {v1, v3, v2}, Lcom/android/settings/password/ConfirmLockPassword$ConfirmLockPasswordFragment;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 

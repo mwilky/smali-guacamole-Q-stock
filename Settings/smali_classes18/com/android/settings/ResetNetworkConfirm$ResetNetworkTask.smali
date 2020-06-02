@@ -102,17 +102,6 @@
 
     check-cast v2, Landroid/telephony/TelephonyManager;
 
-    if-eqz v2, :cond_2
-
-    iget-object v3, p0, Lcom/android/settings/ResetNetworkConfirm$ResetNetworkTask;->this$0:Lcom/android/settings/ResetNetworkConfirm;
-
-    invoke-static {v3}, Lcom/android/settings/ResetNetworkConfirm;->access$000(Lcom/android/settings/ResetNetworkConfirm;)I
-
-    move-result v3
-
-    invoke-virtual {v2, v3}, Landroid/telephony/TelephonyManager;->factoryReset(I)V
-
-    :cond_2
     iget-object v3, p0, Lcom/android/settings/ResetNetworkConfirm$ResetNetworkTask;->mContext:Landroid/content/Context;
 
     const-string v4, "netpolicy"
@@ -123,7 +112,7 @@
 
     check-cast v3, Landroid/net/NetworkPolicyManager;
 
-    if-eqz v3, :cond_3
+    if-eqz v3, :cond_2
 
     iget-object v4, p0, Lcom/android/settings/ResetNetworkConfirm$ResetNetworkTask;->this$0:Lcom/android/settings/ResetNetworkConfirm;
 
@@ -137,7 +126,7 @@
 
     invoke-virtual {v3, v4}, Landroid/net/NetworkPolicyManager;->factoryReset(Ljava/lang/String;)V
 
-    :cond_3
+    :cond_2
     iget-object v4, p0, Lcom/android/settings/ResetNetworkConfirm$ResetNetworkTask;->mContext:Landroid/content/Context;
 
     const-string v5, "bluetooth"
@@ -148,13 +137,13 @@
 
     check-cast v4, Landroid/bluetooth/BluetoothManager;
 
-    if-eqz v4, :cond_4
+    if-eqz v4, :cond_3
 
     invoke-virtual {v4}, Landroid/bluetooth/BluetoothManager;->getAdapter()Landroid/bluetooth/BluetoothAdapter;
 
     move-result-object v5
 
-    if-eqz v5, :cond_4
+    if-eqz v5, :cond_3
 
     invoke-virtual {v5}, Landroid/bluetooth/BluetoothAdapter;->factoryReset()Z
 
@@ -166,7 +155,7 @@
 
     move-result-object v6
 
-    if-eqz v6, :cond_4
+    if-eqz v6, :cond_3
 
     nop
 
@@ -176,7 +165,7 @@
 
     invoke-virtual {v7}, Lcom/android/settingslib/bluetooth/CachedBluetoothDeviceManager;->clearAllDevices()V
 
-    :cond_4
+    :cond_3
     iget-object v5, p0, Lcom/android/settings/ResetNetworkConfirm$ResetNetworkTask;->mContext:Landroid/content/Context;
 
     iget-object v6, p0, Lcom/android/settings/ResetNetworkConfirm$ResetNetworkTask;->this$0:Lcom/android/settings/ResetNetworkConfirm;
@@ -195,6 +184,17 @@
 
     invoke-virtual {v5}, Lcom/android/ims/ImsManager;->factoryReset()V
 
+    if-eqz v2, :cond_4
+
+    iget-object v5, p0, Lcom/android/settings/ResetNetworkConfirm$ResetNetworkTask;->this$0:Lcom/android/settings/ResetNetworkConfirm;
+
+    invoke-static {v5}, Lcom/android/settings/ResetNetworkConfirm;->access$000(Lcom/android/settings/ResetNetworkConfirm;)I
+
+    move-result v5
+
+    invoke-virtual {v2, v5}, Landroid/telephony/TelephonyManager;->factoryReset(I)V
+
+    :cond_4
     iget-object v5, p0, Lcom/android/settings/ResetNetworkConfirm$ResetNetworkTask;->this$0:Lcom/android/settings/ResetNetworkConfirm;
 
     iget-boolean v5, v5, Lcom/android/settings/ResetNetworkConfirm;->mEraseEsim:Z
@@ -256,7 +256,7 @@
 
     iget-object v0, p0, Lcom/android/settings/ResetNetworkConfirm$ResetNetworkTask;->mContext:Landroid/content/Context;
 
-    const v1, 0x7f12121e
+    const v1, 0x7f121226
 
     const/4 v2, 0x0
 
@@ -277,13 +277,13 @@
 
     invoke-direct {v1, v2}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v2, 0x7f12121b
+    const v2, 0x7f121223
 
     invoke-virtual {v1, v2}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
     move-result-object v1
 
-    const v2, 0x7f12121a
+    const v2, 0x7f121222
 
     invoke-virtual {v1, v2}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
 

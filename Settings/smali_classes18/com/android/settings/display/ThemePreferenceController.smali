@@ -495,7 +495,7 @@
 
     iget-object v5, p0, Lcom/android/settings/display/ThemePreferenceController;->mContext:Landroid/content/Context;
 
-    const v6, 0x7f1205b2
+    const v6, 0x7f1205b1
 
     invoke-virtual {v5, v6}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

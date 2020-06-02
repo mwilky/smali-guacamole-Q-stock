@@ -271,7 +271,7 @@
 
     iget-object v3, p0, Lcom/android/settings/gestures/GesturesSettingPreferenceController;->mContext:Landroid/content/Context;
 
-    const v4, 0x7f1208be
+    const v4, 0x7f1208bd
 
     invoke-virtual {v3, v4}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
@@ -284,7 +284,7 @@
 
     iget-object v3, p0, Lcom/android/settings/gestures/GesturesSettingPreferenceController;->mContext:Landroid/content/Context;
 
-    const v4, 0x7f1208bd
+    const v4, 0x7f1208bc
 
     invoke-virtual {v3, v4}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
@@ -295,7 +295,7 @@
     :cond_4
     iget-object v3, p0, Lcom/android/settings/gestures/GesturesSettingPreferenceController;->mContext:Landroid/content/Context;
 
-    const v4, 0x7f1208bc
+    const v4, 0x7f1208bb
 
     invoke-virtual {v3, v4}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 

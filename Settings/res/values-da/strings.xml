@@ -2447,6 +2447,7 @@ Du kan ændre dette senere under Indstillinger > Apps og notifikationer."</strin
 Du er i øjeblikket logget ind på disse konti:
 "</string>
     <string name="master_clear_button_text">Ryd alle data</string>
+    <string name="master_clear_confirm_summary">Alt indhold i det interne lager vil fjernes, inklusive musik, billeder, videoer og andre personlige data. Bekræfter du sletningen?</string>
     <string name="master_clear_confirm_title">Vil du slette alle data?</string>
     <string name="master_clear_desc">Dette sletter alle data fra den <b>interne lagerplads</b>" på telefonen, f.eks.: 
 
@@ -2925,7 +2926,7 @@ Dette gør det også muligt for appen at slå Forstyr ikke til eller fra og ænd
     <string name="oneplus_auto_activate">Tænde automatisk</string>
     <string name="oneplus_auto_answer_via_bluetooth_summary">Det indgående opkald besvares automatisk, mens det er tilsluttet en Bluetooth-lydenhed</string>
     <string name="oneplus_auto_answer_via_bluetooth_title">Smart Answer til Bluetooth</string>
-    <string name="oneplus_auto_check_pin_length">Bekræft pinkoden uden at trykke på \"✓\"</string>
+    <string name="oneplus_auto_check_pin_length">Lås automatisk skærmen op efter indtastning af PIN-kode</string>
     <string name="oneplus_auto_disconect_the_ap">Hotspotten vil automatisk slukke efter 5 minutter, hvis ingen af enhederne er tilsluttet.</string>
     <string name="oneplus_auto_open_app_none">Ingen</string>
     <string name="oneplus_auto_open_app_other_applications">ANDRE PROGRAMMER</string>
@@ -3079,6 +3080,9 @@ Batterisparetilstanden deaktiveres automatisk, når din enhed oplader."</string>
 2.Under en enkelt konfigurationsproces bedes du kun angive fingeraftryksoplysninger fra én finger"</string>
     <string name="oneplus_enroll_fingerprint_tips_title">Meddelelse om opsætning af fingeraftryk</string>
     <string name="oneplus_enter_your_fingerprint">· Registrere dit fingeraftryk</string>
+    <string name="oneplus_erase_system_data">SLET SYSTEMDATA</string>
+    <string name="oneplus_erase_system_data_summary">Systemdata inklusive kontoinfo, kontakter og appdata vil blive slettet. Denne handling kan ikke fortrydes.</string>
+    <string name="oneplus_erase_system_data_title">Vil du slette systemdata?</string>
     <string name="oneplus_esportmode_introduction_summary">Hvis du vil aktivere Esports-tilstand, skal du trykke på til/fra-knappen på panelet Spilletilstand.</string>
     <string name="oneplus_experience_improvement_programs">Programmer til forbedring af oplevelsen</string>
     <string name="oneplus_face_auto_unlock_while_screen_on_sumary">Lås din telefon op med dit ansigt så snart skærmen tændes, uden at stryge først.</string>
@@ -3755,7 +3759,7 @@ Bemærk: Ansigtsgenkendelse er muligvis mindre sikkert end fingeraftryk, PIN-kod
     <string name="oneplus_vibration_settings_soc_tri_state">Vibration</string>
     <string name="oneplus_vibration_settings_soc_tri_state_summary">Opkald og meddelelser, undtagen alarmer, vil blive indstillet til lydløs og kun vibration</string>
     <string name="oneplus_vibration_summary">Alarmen vil altid lyde</string>
-    <string name="oneplus_video_enhancer">Video-forbedring</string>
+    <string name="oneplus_video_enhancer">Livlig farveeffekt</string>
     <string name="oneplus_video_enhancer_footer">Forbedring af farver før du afspiller videoer</string>
     <string name="oneplus_video_enhancer_summary">Forbedring af farver før du afspiller videoer</string>
     <string name="oneplus_volume_keys_adjust">Brug Lydstyrkeknapper til at justere</string>

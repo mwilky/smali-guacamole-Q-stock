@@ -212,7 +212,7 @@
 
     invoke-virtual {p2, v2}, Landroidx/preference/SwitchPreference;->setEnabled(Z)V
 
-    const v2, 0x7f121922
+    const v2, 0x7f121929
 
     invoke-virtual {p0, v2}, Lcom/android/settings/applications/specialaccess/zenaccess/ZenAccessDetails;->getString(I)Ljava/lang/String;
 

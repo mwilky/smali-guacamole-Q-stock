@@ -3,15 +3,13 @@
     <string name="access_permissions">அணுகல் அனுமதிகள்</string>
     <string name="adb_over_network">பிணையம் வாயிலாக ADB</string>
     <string name="adb_over_network_summary">பிணைய இடைமுகங்கள் வழியாக TCP/IP டீபக்கிங்கை செயல்படுத்தவும் (Wi‑Fi, USB பிணையங்கள்). இந்த அமைப்பு மறுதொடக்கம் செய்யும்போது மீட்டமைக்கப்படுகிறது</string>
-    <string name="adb_over_network_warning">"எச்சரிக்கை: பிணையம் வாயிலாக ADB செயல்படுத்தப்பட்டிருக்கும் போது, இணைக்கப்பட்ட எல்லா பிணையங்களிலும் உங்கள் ஃபோன் ஊடுருவலுக்கு உட்பட்டிருக்கும். GSM தரவு பிணையம் உட்பட!
+    <string name="adb_over_network_warning">"பிணையம் மூலமா ஏ டீ பீ செயல்படப்போல் உங்கள் சாதனத்துக்கூ ஊடுருவல் ஆபத்து!
 
-நம்பத்தக்க பிணையங்களில் நீங்கள் இணைந்திருக்கும் போது மட்டுமே இந்த அம்சத்தைப் பயன்படுத்தவும்.
-
-இச்செயல்பாட்டை நீங்கள் நிச்சயம் செயல்படுத்த விரும்புகிறீர்களா?"</string>
+இந்த அம்சத்தை உபயோகிக்க விரும்புகிறீர்களா?"</string>
     <string name="add_fingerprints_dialog">நீங்கள் இதுவரை கைரேகைகள் எதையும் அமைக்கவில்லை. நீங்கள் கைரேகைகளைப் பதிவுசெய்ய விரும்புகிறீர்களா?</string>
     <string name="add_oneplus_account_label">OnePlus கணக்கு</string>
     <string name="advanced_reboot_summary">பூட்டுநீக்கப்பட்டிருக்கும் போது, மறுதொடக்கமானது சாதாரண மறுதொடக்கம், மீட்டெடுத்தல், அல்லது ஃபாஸ்ட்பூட்டுக்கானத் தெரிவை வழங்கும்</string>
-    <string name="advanced_reboot_title">மேம்பட்ட மறுதொடக்கம்</string>
+    <string name="advanced_reboot_title">மேம்பட்ட மறுஇயக்கம்</string>
     <string name="alarms_summary">பயன்முறையைச் செயல்படுத்துவது, அழைப்புகள் மற்றும் அறிவிப்புகளை ஒலிதடுக்கும், மற்றும் அதிர்வை ஆஃப் செய்யும். இது அலாரங்களுக்கும் நீங்கள் தேர்வுசெய்த விதிவிலக்கு அம்சங்களுக்கும் பொருந்தாது.</string>
     <string name="alert_dialog_cancel">ரத்துசெய்க</string>
     <string name="alert_slider_settings_title">முன்னுரிமை அமைவுகள்</string>
@@ -25,7 +23,7 @@
     <string name="aod_clock_mcl">McLaren</string>
     <string name="aod_clock_minimalism">குறைந்தபட்சதன்மை</string>
     <string name="aod_clock_none">ஏதுமில்லை</string>
-    <string name="aod_clock_select_style_text">கடிகாரம் பாணியைத் தேர்வுசெய்யவும்</string>
+    <string name="aod_clock_select_style_text">கடிகாரம் பாணியை தேர்வுசெய்க</string>
     <string name="aod_horizon_light_effect_1">நீலம்</string>
     <string name="aod_horizon_light_effect_2">சிவப்பு</string>
     <string name="aod_horizon_light_effect_3">ஊதா</string>
@@ -53,15 +51,15 @@
     <string name="app_permissions_warning_message">அனுமதிகளை முடக்குவது பயன்பாட்டை சரிவர இயங்காமல் செய்யக்கூடும். விழிப்புடன் தொடரவும்.</string>
     <string name="app_permissions_warning_title">எச்சரிக்கை</string>
     <string name="automatic">தானியங்கு</string>
-    <string name="battery_bar">மின்கலப் பட்டி</string>
+    <string name="battery_bar">மின்கல பட்டி</string>
     <string name="battery_circle">மின்கல வட்டம்</string>
-    <string name="battery_hidden">மின்கலம் மறைந்துள்ளது</string>
+    <string name="battery_hidden">மின்கல மறைந்திருக்கும்</string>
     <string name="battery_optization_no_support">ஆதரிக்கப்படாது</string>
     <string name="battery_percent">பேட்டரி சதவீதம்</string>
     <string name="battery_status_icon_title">மின்கல ஸ்டைல்</string>
     <string name="bg_optimize_advance_settings">மேம்படுத்தப்பட்ட உகந்ததாக்கல்</string>
     <string name="bg_optimize_advance_settings_summery">பேட்டரியின் ஆயுளை மேலும் மேம்படுத்த, இன்னும் அதிகமாக பயன்பாடுகளின் பின்னணி செயல்பாட்டைக் கட்டுப்படுத்துகிறது. அவை மீண்டும் திறக்கப்படும் வரை குறிப்பிட்ட பயன்பாடுகள் அறிவிப்புகளைப் பெறாது.</string>
-    <string name="bluetooth_accept_all_files">எல்லா கோப்பு வகைகளையும் ஏற்கவும்</string>
+    <string name="bluetooth_accept_all_files">அனைத்து கோப்பு வகைகள் ஏற்றுக்கொள்</string>
     <string name="brand_name">பிராண்ட்</string>
     <string name="bugreport_capturing_text">இதற்கு சில நிமிடங்கள் எடுக்கக்கூடும்</string>
     <string name="bugreport_capturing_title">பிழை அறிக்கையை கேப்ட்சர் செய்கிறது</string>
@@ -148,17 +146,17 @@
     <string name="hardware_keys_action_assist">தேடல் உதவி</string>
     <string name="hardware_keys_action_camera">கேமராவைத் திறக்கவும்</string>
     <string name="hardware_keys_action_last_app">கடைசியாக உபயோகித்தப் பயன்பாட்டடைத் திறக்கவும்</string>
-    <string name="hardware_keys_action_menu">மெனுவைத் திறக்கவும்/மூடவும்</string>
-    <string name="hardware_keys_action_nothing">செயல் ஏதுமில்லை</string>
+    <string name="hardware_keys_action_menu">திற/மூடு மெனு</string>
+    <string name="hardware_keys_action_nothing">எந்த நடவடிக்கையும்</string>
     <string name="hardware_keys_action_notification_center">அறிவிப்பு மையத்தைத் திறக்கவும்/மூடவும்</string>
     <string name="hardware_keys_action_recents">சமீபத்தியவைகள்</string>
     <string name="hardware_keys_action_shelf">Shelf-ஐத் திறக்கவும்</string>
     <string name="hardware_keys_action_turn_off_screen">திரையை ஆஃப் செய்யவும்</string>
     <string name="hardware_keys_action_voice_search">குரல் தேடல்</string>
     <string name="hardware_keys_back_key_title">பின்செல் பொத்தான்</string>
-    <string name="hardware_keys_double_tap_title">இரட்டை டேப் செயல்</string>
+    <string name="hardware_keys_double_tap_title">இரட்டை ஆணி செயல்</string>
     <string name="hardware_keys_home_key_title">முகப்பு பொத்தான்</string>
-    <string name="hardware_keys_long_press_title">நீண்ட அழுத்தச் செயல்</string>
+    <string name="hardware_keys_long_press_title">நீண்ட பத்திரிகை செயல்</string>
     <string name="hardware_keys_menu_key_title">சமீபத்திய பொத்தான்</string>
     <string name="header_category_custom">தனிப்பயனாக்கல்</string>
     <string name="high_power_app_text_nomal">%1$s உங்கள் பேட்டரியை ட்ரெயின் செய்கிறது</string>
@@ -191,6 +189,7 @@
     <string name="manage_device_administrators">சாதன நிர்வாகிகளை நிர்வகிக்கவும்</string>
     <string name="manage_fingerprints_dialog">கைரேகை பூட்டுநீக்கு இப்பொழுது செயல்படுத்தப்பட்டுள்ளது. நீங்கள் உங்களுடைய கைரேகைகளை நிர்வகிக்க விரும்புகிறீர்களா?</string>
     <string name="manage_users">பயனர்களை நிர்வகிக்கவும்</string>
+    <string name="master_clear_confirm_summary">உள்ளக சேமிப்பகத்தில் இருக்கும் இசை, படங்கள், வீடியோக்கள் மற்றும் பிற தனிப்பட்ட தரவு உட்பட எல்லா உள்ளடக்கமும் அகற்றப்படும். உறுதியாக அழிக்க வேண்டுமா?</string>
     <string name="memory_capacity_title">RAM</string>
     <string name="multi_app_label_badge">இணையான %1$s</string>
     <string name="music_application_title">இசை பயன்பாடு</string>
@@ -241,7 +240,7 @@
     <string name="oneplus_applock_at_least_four_points">குறைந்தது 4 புள்ளிகளைச் சேர்க்க வரையவும்</string>
     <string name="oneplus_applock_lockpassword_confirm_your_pin_header">PIN உள்ளிடுக</string>
     <string name="oneplus_applock_need_to_unlock_wrong">தவறான PIN</string>
-    <string name="oneplus_applock_pattern_header">பேட்டர்னை வரையவும்</string>
+    <string name="oneplus_applock_pattern_header">உங்கள் பேட்டர்னை வரையவும்</string>
     <string name="oneplus_applock_wrong_pattern_header">தவறான பேட்டர்ன்</string>
     <string name="oneplus_apps_notifications">செயலிகள் &amp; அறிவிப்புகள்</string>
     <string name="oneplus_apps_title">பயன்பாடுகள்</string>
@@ -250,7 +249,7 @@
     <string name="oneplus_auto_activate">தானாக ஆன் செய்யவும்</string>
     <string name="oneplus_auto_answer_via_bluetooth_summary">புளூடூத் ஆடியோ சாதனத்தில் இணைத்தபடியே உள்வரும் அழைப்புகளுக்கு தானாகப் பதிலளிக்க முடியும்</string>
     <string name="oneplus_auto_answer_via_bluetooth_title">ப்ளூடூத்திற்கான ஸ்மார்ட் பதில்</string>
-    <string name="oneplus_auto_check_pin_length">\"✓\"-ஐ டேப் செய்யாமல் PIN-ஐ உறுதிபடுத்தவும்</string>
+    <string name="oneplus_auto_check_pin_length">PIN ஐ உள்ளிட்ட பின் திரையை தானாகத் திறக்கும்</string>
     <string name="oneplus_auto_disconect_the_ap">சாதனங்கள் எதுவும் இணைக்கப்படவில்லை என்றால், 5 நிமிடங்கள் கழித்து ஹாட்ஸ்பாட் தானாக ஆஃப் ஆகிவிடும்.</string>
     <string name="oneplus_auto_open_app_none">ஏதுமில்லை</string>
     <string name="oneplus_auto_open_app_other_applications">பிற பயன்பாடுகள்</string>
@@ -279,7 +278,7 @@
     <string name="oneplus_block_all_notifications_summary">பயன்பாட்டிலிருந்து எல்லா அறிவிப்புகளையும் தடுக்கவும்</string>
     <string name="oneplus_block_notifications">அறிவிப்புகளைத் தடுக்கவும்</string>
     <string name="oneplus_block_notifications_summary">அழைப்புகள் மற்றும் அலாரங்களுக்கு விதிவிலக்கு</string>
-    <string name="oneplus_block_peek_notifications">பீக் அறிவிப்புகளை தடைசெய்யவும்</string>
+    <string name="oneplus_block_peek_notifications">பீக் அறிவிப்புகளை தடுக்கவும்</string>
     <string name="oneplus_bluetooth_aptX">aptX</string>
     <string name="oneplus_bluetooth_aptx_hd">aptX HD</string>
     <string name="oneplus_bluetooth_audio_codec">ப்ளூடூத் ஆடியோ கோடெக்</string>
@@ -404,6 +403,9 @@
 2.ஒற்றை அமைப்பு செயலாக்கத்தில், ஒரே ஒரு விரலின் கைரேகைத் தகவலை மட்டும் உள்ளிடவும்"</string>
     <string name="oneplus_enroll_fingerprint_tips_title">கைரேகை அமைப்பு விழிப்பூட்டல்</string>
     <string name="oneplus_enter_your_fingerprint">உங்கள் கைரேகையைப் பதிவுசெய்க</string>
+    <string name="oneplus_erase_system_data">சிஸ்டம் தரவை அழி</string>
+    <string name="oneplus_erase_system_data_summary">கணக்கு தகவல், தொடர்புகள் மற்றும் பயன்பாட்டின் தரவு உட்பட அனைத்து சிஸ்டம் தரவும் நீக்கப்படும். இந்தச் செயலை உங்களால் செயல்தவிர்க்க முடியாது.</string>
+    <string name="oneplus_erase_system_data_title">சிஸ்டம் தரவை அழிக்கவா?</string>
     <string name="oneplus_esportmode_introduction_summary">Esports பயன்முறையைச் செயற்படுத்த, கேமிங் பயன்முறை பேனலில் உள்ள நிலைமாற்றியைத் தட்டவும்.</string>
     <string name="oneplus_experience_improvement_programs">அனுபவ மேம்பாட்டுத் திட்டங்கள்</string>
     <string name="oneplus_face_auto_unlock_while_screen_on_sumary">முதலில் ஸ்வைப் செய்யாமல், திரை ஆன் ஆனவுடன் உங்கள் முகத்தைப் பயன்படுத்தி உங்கள் ஃபோனை பூட்டுநீக்கவும்.</string>
@@ -566,7 +568,7 @@
     <string name="oneplus_hand_up_proximity_title">டிஸ்பிளேவை உயர்த்தவும்</string>
     <string name="oneplus_hand_up_to_show">காண்பிக்க உங்கள் தொலைபேசியை எடுக்கவும்</string>
     <string name="oneplus_haptic_feedback_no_app">ஆதரிக்கப்படும் கேம்கள் எதுவும் நிறுவப்படவில்லை</string>
-    <string name="oneplus_haptic_feedback_no_app_tip">PUBG Mobile மற்றும் Asphalt 9 -ஐ நிறுவலாம்</string>
+    <string name="oneplus_haptic_feedback_no_app_tip">PUBG மொபைல் மற்றும் Asphalt 9 ஐ நீங்கள் நிறுவலாம்</string>
     <string name="oneplus_haptic_feedback_summary">ஆதரிக்கப்படும் கேம்களுக்கு மேலும் சிறப்பான ஹேப்டிக் கருத்தை வழங்கும்</string>
     <string name="oneplus_haptic_feedback_support">ஆதரிக்கப்படும் கேம்கள்</string>
     <string name="oneplus_haptic_feedback_tips">குறிப்பிட்ட கேம் சீன்களுக்கு ஹேப்டிக் கருத்தை வழங்கும், இது ஆதரிக்கப்படும் கேம்களுக்கு மட்டுமே பொருந்தும்</string>
@@ -797,13 +799,13 @@
     <string name="oneplus_ramboost_switch_title">RAM பூஸ்ட்டை இயக்கு</string>
     <string name="oneplus_ramboost_title">RAM பூஸ்ட்</string>
     <string name="oneplus_read_mode_app_list">வாசிப்பு பயன்முறை பயன்பாட்டுப் பட்டியல்</string>
-    <string name="oneplus_reading_mode">வாசிப்பு பயன்முறை</string>
+    <string name="oneplus_reading_mode">வாசிப்பு முறை</string>
     <string name="oneplus_reading_mode_activate_manual">மேனுவலாக செயல்படுத்துக</string>
     <string name="oneplus_reading_mode_add_apps">வாசிப்பு பயன்முறைக்கு பயன்பாடுகளைச் சேர்க்கவும்</string>
     <string name="oneplus_reading_mode_ask">ஒவ்வொரு முறையும் கேள்</string>
     <string name="oneplus_reading_mode_auto_summary">இந்தப் பயன்பாடுகள் திறக்கப்படும்போது வாசிப்பு பயன்முறை தானாக ஆன் ஆகும், அவை மூடப்படும்போது தானாக ஆஃப் ஆகும்</string>
     <string name="oneplus_reading_mode_available">விளைவு இல்லை</string>
-    <string name="oneplus_reading_mode_block_peek_notifications">பீக் அறிவிப்புகளை தடைசெய்யவும்</string>
+    <string name="oneplus_reading_mode_block_peek_notifications">பீக் அறிவிப்புகளை தடுக்கவும்</string>
     <string name="oneplus_reading_mode_chromatic">குரோமேட்டிக் விளைவு</string>
     <string name="oneplus_reading_mode_default_state">இயல்புநிலை நிலை</string>
     <string name="oneplus_reading_mode_manual_settings">மேனுவல் அமைப்புகள்</string>
@@ -814,7 +816,7 @@
     <string name="oneplus_reading_mode_summary">எல்லா பக்கங்களிலும் சூழ்ந்துள்ள ஒளியைப் பொருத்து, வாசித்தல் பயன்முறையானது திரையின் நிற வெப்பநிலையைத் தானாக சரிசெய்து, சுற்றுப்புற சூழலுக்குப் பொருத்தமான உரை வாசித்தலுக்கு உகந்த கேலிப்ரேஷனை செய்யும், இது வாசித்தல் அனுபவத்தை மேம்படுத்தக்கூடும்.</string>
     <string name="oneplus_reading_mode_summary_no_sensor">படிக்கும் பயன்முறை, திரை மற்றும் உரைக் காட்சியை உகந்ததாக்கி, ஒரு இ-புக் ரீடரில் படிப்பதைப் போன்ற வசதியான படிக்கும் அனுபவத்தை வழங்கும்.</string>
     <string name="oneplus_reading_mode_tips">மோனோ விளைவு உங்களை வார்த்தைகளில் மூழ்கடிக்கும்; குரோமேட்டிக் விளைவு உங்களுக்கு மிகவும் வசதியான வண்ணமயமான வாசிப்பு அனுபவத்தை வழங்கும்</string>
-    <string name="oneplus_reading_mode_turn_on">வாசிப்பு பயன்முறையை ஆன் செய்க</string>
+    <string name="oneplus_reading_mode_turn_on">வாசிப்பு பயன்முறையை ஆன் செய்யவும்</string>
     <string name="oneplus_reading_mode_turn_on_chromatic">குரோமேட்டிக் விளைவை ஆன் செய்</string>
     <string name="oneplus_reading_mode_turn_on_mono">மோனோ விளைவை ஆன் செய்</string>
     <string name="oneplus_reading_mode_turn_on_tips">குறிப்பிட்ட பயன்பாடுகளால் தானாக இயக்கப்படும் போது தவிர, வாசிப்பு பயன்முறையை கைமுறையாக ஆன் செய்யும்போது மேலே உள்ள விதிகள் பின்பற்றப்படும்</string>
@@ -1080,7 +1082,7 @@
     <string name="oneplus_vibration_settings_soc_tri_state">அதிர்வு</string>
     <string name="oneplus_vibration_settings_soc_tri_state_summary">அலாரங்களைத் தவிர்த்து, அழைப்புகள் மற்றும் அறிவிப்புகள் அமைதியாக்கப்பட்டு அதிர்வு மட்டும் வருமாறு அமைக்கப்படும்</string>
     <string name="oneplus_vibration_summary">அலாரம் எப்பொழுதுமே ஒலிக்கும்</string>
-    <string name="oneplus_video_enhancer">வீடியோ என்ஹேன்ஸர்</string>
+    <string name="oneplus_video_enhancer">வைப்ரண்ட் நிற எஃபெக்ட்</string>
     <string name="oneplus_video_enhancer_footer">வீடியோக்களை இயக்கும்போது நிறத்தை மேம்படுத்துக</string>
     <string name="oneplus_video_enhancer_summary">வீடியோக்களை இயக்கும்போது நிறத்தை மேம்படுத்துக</string>
     <string name="oneplus_volume_keys_adjust">சரிசெய்ய ஒலியளவு பொத்தான்களைப் பயன்படுத்தவும்</string>
@@ -1292,7 +1294,7 @@
     <string name="summary_voice_network">VoLTE, Wi-Fi அழைப்பு</string>
     <string name="summary_voice_volte_only">VoLTE</string>
     <string name="summary_voice_wfc_only">Wi-Fi அழைப்பு</string>
-    <string name="switch_skin_doing">தீமினை மாற்றுகிறது...</string>
+    <string name="switch_skin_doing">தீம்-ஐ மாற்றுகிறது...</string>
     <string name="switch_theme_has_success">முடிந்தது</string>
     <string name="system_is_up_to_date">உங்கள் சிஸ்டம் சமீபத்தியது வரை புதுப்பிக்கப்பட்டுள்ளது</string>
     <string name="system_update_uss_title">பதிவிறக்கி நிறுவு</string>
@@ -1320,13 +1322,13 @@
     <string name="timepower_power_on_title">பவர் ஆன்-ஐ திட்டமிடுகிறது</string>
     <string name="timepower_time_duplicate">நேர அமைப்பு திரும்பச் செய்யப்பட்டது, தயவுசெய்து மீண்டும் முயற்சிக்கவும்!</string>
     <string name="timer_shutdown_startup_settings_title">திட்டமிடப்பட்ட பவர் ஆன்/ஆஃப்</string>
-    <string name="touchscreen_camera_gesture_summary">கேமராவைத் திறக்க ஓர் O வரையவும்</string>
+    <string name="touchscreen_camera_gesture_summary">கேமரா திறக்க ஒரு O வரையவும்</string>
     <string name="touchscreen_camera_gesture_title">கேமராவைத் திறக்கவும்</string>
     <string name="touchscreen_double_tap_to_wake_gesture_summary">சாதனத்தை எழுப்ப திரையை இருமுறை டேப் செய்யவும்</string>
-    <string name="touchscreen_double_tap_to_wake_gesture_title">எழுப்ப இருமுறை டேப் செய்க</string>
-    <string name="touchscreen_flashlight_gesture_summary">ஃப்ளாஷ் லைட்டை மாற்ற ஒரு V வரையவும்</string>
-    <string name="touchscreen_flashlight_gesture_title">ஃப்ளாஷ் லைட்டை மாற்றவும்</string>
-    <string name="touchscreen_music_gesture_summary">இசையை இயக்க அல்லது இடைநிறுத்த இருவிரல்களுடன் || ஐ வரையவும். முந்தைய அல்லது அடுத்த ட்ராக்கிற்குச் செல்ல &lt; அல்லது > ஐ வரையவும்</string>
+    <string name="touchscreen_double_tap_to_wake_gesture_title">எழுப்ப இரண்டு வேளை தட்டவும்</string>
+    <string name="touchscreen_flashlight_gesture_summary">"ஒரு 'V' வரைந்து விளக்குவெளிச்த்திற்கு நிலைமாறலாம்"</string>
+    <string name="touchscreen_flashlight_gesture_title">விளக்கு நிலை மாற்று</string>
+    <string name="touchscreen_music_gesture_summary">வரைய || உடன் இயக்கு அல்லது இசை நிற்க வை இரண்டு விரல்கள். வரைய &lt; அல்லது > முந்தைய அல்லது அடுத்த தடத்திற்கு</string>
     <string name="touchscreen_music_gesture_title">இசை கட்டுப்பாடு</string>
     <string name="uicc_all_lock_summary">உங்கள் சாதனம் Sprint அல்லது சர்வதேச SIM-களால் பூட்டப்பட்டுள்ளது</string>
     <string name="uicc_lock_summary">உங்கள் சாதனம் ஸ்பிரிண்ட் SIM-களால் மட்டுமே பூட்டப்பட்டுள்ளது</string>
@@ -1358,14 +1360,14 @@
     <string name="usb_audio_source_title">ஆடியோ மூலம்</string>
     <string name="usb_charging_summary">கணினியுடனான எல்லா தரவு மற்றும் கோப்பு பரிமாற்றத்தை நாம் செயல்நீக்கிவிட்டு சாதனத்தை சார்ஜிங் மட்டும் எனும் முறையில் விட்டுவிடவும்.</string>
     <string name="usb_charging_title">சார்ஜ் ஆகிறது</string>
-    <string name="usb_connect_to_access">USB இணைப்பு அமைப்புகளை அணுக உங்கள் சாதனத்தைக் கணினியுடன் இணைக்கவும்</string>
+    <string name="usb_connect_to_access">ஒரு கணினியில் USB இணைப்பு அமைப்புகளை அணுக உங்கள் சாதனத்தை இணைக்கவும்</string>
     <string name="user_experience">பயனர் அனுபவத் திட்டம்</string>
     <string name="user_experience_description">தயாரிப்பு வடிவமைப்பு மற்றும் பயனர் அனுபவத்தை மேம்படுத்த எங்களுக்கு உதவும் பொருட்டு, உங்கள் ஃபோனை எப்படி பயன்படுத்துகிறீர்கள் என்பது குறித்த பொதுவான புள்ளிவிவரத் தரவை அடையாளமின்றிப் பகுப்பாய்வு செய்ய OnePlus-ஐ அனுமதிக்கவும்</string>
     <string name="user_is_not_allowed_dlg_text">இந்த நிறுவல் நீக்கம் செய்ய தற்போதைய பயனருக்கு அனுமதி இல்லை.</string>
     <string name="user_is_not_allowed_dlg_title">அனுமதி இல்லை</string>
     <string name="vn_wfc_summary">குரல் அழைப்புகளுக்கு Wi-Fi நெட்வொர்க்குகளைப் பயன்படுத்தும்.</string>
     <string name="voice_network_title">குரல் நெட்வொர்க்குகள்</string>
-    <string name="volume_adjust_sound_title">வால்யூம் ஸ்லைடர் ஒலி</string>
+    <string name="volume_adjust_sound_title">தொகுதி நகர்வுகோல் ஒலி</string>
     <string name="wifi_certificate">சான்றிதழ்</string>
     <string name="wifi_context_menu_change_password">கடவுச்சொல்லை மாற்றவும்</string>
     <string name="wifi_context_menu_change_wapi_certificate">WAPI சான்றிதழை மாற்றவும்</string>

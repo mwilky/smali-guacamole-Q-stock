@@ -78,7 +78,7 @@
 
     aput-object v1, v2, v3
 
-    const v3, 0x7f120761
+    const v3, 0x7f120760
 
     invoke-virtual {p0, v3, v2}, Lcom/android/settings/gestures/GestureNavigationNotAvailableDialog;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -92,7 +92,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f120b9b
+    const v4, 0x7f120b9f
 
     const/4 v5, 0x0
 

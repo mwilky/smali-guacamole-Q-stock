@@ -224,6 +224,14 @@
     return-void
 .end method
 
+.method public isLaunchableInTaskModePinned()Z
+    .locals 1
+
+    const/4 v0, 0x0
+
+    return v0
+.end method
+
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 6
 
@@ -236,6 +244,12 @@
     if-eqz v0, :cond_0
 
     invoke-direct {p0}, Lcom/android/settings/core/SettingsBaseActivity;->isSettingsRunOnTop()Z
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    invoke-virtual {p0}, Lcom/android/settings/core/SettingsBaseActivity;->isLaunchableInTaskModePinned()Z
 
     move-result v0
 
@@ -308,7 +322,7 @@
     invoke-virtual {p0, v5}, Lcom/android/settings/core/SettingsBaseActivity;->setTheme(I)V
 
     :cond_2
-    const v5, 0x7f0d02b2
+    const v5, 0x7f0d02b9
 
     invoke-super {p0, v5}, Landroidx/fragment/app/FragmentActivity;->setContentView(I)V
 

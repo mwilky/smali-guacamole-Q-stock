@@ -387,6 +387,19 @@
 .method protected refreshUi()Z
     .locals 5
 
+    iget-object v0, p0, Lcom/android/settings/applications/appinfo/WriteSettingsDetails;->mPackageInfo:Landroid/content/pm/PackageInfo;
+
+    if-eqz v0, :cond_1
+
+    iget-object v0, p0, Lcom/android/settings/applications/appinfo/WriteSettingsDetails;->mPackageInfo:Landroid/content/pm/PackageInfo;
+
+    iget-object v0, v0, Landroid/content/pm/PackageInfo;->applicationInfo:Landroid/content/pm/ApplicationInfo;
+
+    if-nez v0, :cond_0
+
+    goto :goto_0
+
+    :cond_0
     iget-object v0, p0, Lcom/android/settings/applications/appinfo/WriteSettingsDetails;->mAppBridge:Lcom/android/settings/applications/AppStateWriteSettingsBridge;
 
     iget-object v1, p0, Lcom/android/settings/applications/appinfo/WriteSettingsDetails;->mPackageName:Ljava/lang/String;
@@ -425,15 +438,21 @@
 
     iget-object v2, p0, Lcom/android/settings/applications/appinfo/WriteSettingsDetails;->mSettingsIntent:Landroid/content/Intent;
 
-    iget v3, p0, Lcom/android/settings/applications/appinfo/WriteSettingsDetails;->mUserId:I
+    const/16 v3, 0x80
 
-    const/16 v4, 0x80
+    iget v4, p0, Lcom/android/settings/applications/appinfo/WriteSettingsDetails;->mUserId:I
 
-    invoke-virtual {v1, v2, v4, v3}, Landroid/content/pm/PackageManager;->resolveActivityAsUser(Landroid/content/Intent;II)Landroid/content/pm/ResolveInfo;
+    invoke-virtual {v1, v2, v3, v4}, Landroid/content/pm/PackageManager;->resolveActivityAsUser(Landroid/content/Intent;II)Landroid/content/pm/ResolveInfo;
 
     move-result-object v1
 
     const/4 v2, 0x1
 
     return v2
+
+    :cond_1
+    :goto_0
+    const/4 v0, 0x0
+
+    return v0
 .end method

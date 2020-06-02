@@ -2447,6 +2447,7 @@
 आप इस समय नीचे दिए गए खातों में साइन इन किए हुए हैं:
 "</string>
     <string name="master_clear_button_text">सारा डेटा मिटाएं</string>
+    <string name="master_clear_confirm_summary">आंतरिक स्टोरेज में सभी सामग्री भी निकाल दी जाएगी, जिनमें म्यूज़िक, फ़ोटो, वीडियो और अन्य निजी डेटा शामिल हैं. मिटाने की पुष्टि करें?</string>
     <string name="master_clear_confirm_title">पूरा डेटा मिटाना चाहते हैं?</string>
     <string name="master_clear_desc">इससे आपके फ़ोन की <b>मेमोरी</b>" से सारा डेटा मिट जाएगा, जिसमें शामिल हैं:
 
@@ -2925,7 +2926,7 @@
     <string name="oneplus_auto_activate">स्वचालित रूप से चालू करें</string>
     <string name="oneplus_auto_answer_via_bluetooth_summary">ब्लूटूथ ऑडियो डिवाइस से कनेक्ट होने के दौरान इनकमिंग कॉल का स्वचालित रूप से उत्तर दिया जाएगा</string>
     <string name="oneplus_auto_answer_via_bluetooth_title">ब्लूटूथ के लिए स्मार्ट उत्तर</string>
-    <string name="oneplus_auto_check_pin_length">\"✓\" टैप किए बिना पिन की पुष्टि करें</string>
+    <string name="oneplus_auto_check_pin_length">पिन एंटर करने के बाद स्क्रीन को ऑटोमैटिक्ली अनलॉक करें</string>
     <string name="oneplus_auto_disconect_the_ap">अगर कोई डिवाइस कनेक्ट नहीं की जाती है, तो हॉटस्पॉट स्वचालित रूप से 5 मिनट के बाद बंद हो जाएगा।</string>
     <string name="oneplus_auto_open_app_none">कोई नहीं</string>
     <string name="oneplus_auto_open_app_other_applications">अन्य ऐप्लिकेशन</string>
@@ -2954,7 +2955,7 @@
     <string name="oneplus_block_all_notifications_summary">ऐप से सभी नोटिफिकेशन ब्लॉक करें</string>
     <string name="oneplus_block_notifications">नोटिफिकेशन ब्लॉक करें</string>
     <string name="oneplus_block_notifications_summary">कॉल और अलार्म छूट-प्राप्त हैं</string>
-    <string name="oneplus_block_peek_notifications">पीक नोटिफिकेशन ब्लॉक करें</string>
+    <string name="oneplus_block_peek_notifications">पीक नोटिफ़िकेशन ब्लॉक करें</string>
     <string name="oneplus_bluetooth_aptX">aptX</string>
     <string name="oneplus_bluetooth_aptx_hd">aptX HD</string>
     <string name="oneplus_bluetooth_audio_codec">ब्लूटूथ ऑडियो कोडेक</string>
@@ -3079,6 +3080,9 @@
 2.एकल सेटअप प्रक्रिया में, कृपया केवल एक अंगुली की फ़िंगरप्रिंट जानकारी दर्ज करें"</string>
     <string name="oneplus_enroll_fingerprint_tips_title">फ़िंगरप्रिंट सेटअप प्रॉंप्ट</string>
     <string name="oneplus_enter_your_fingerprint">· अपना फ़िंगरप्रिंट दर्ज कराएँ</string>
+    <string name="oneplus_erase_system_data">सिस्टम डेटा मिटाएँ</string>
+    <string name="oneplus_erase_system_data_summary">अकाउंट जानकारी, संपर्क और ऐप डेटा सहित सिस्टम डेटा डिलीट कर दिया जाएगा. आप इस एक्शन को पूर्ववत नहीं कर सकते.</string>
+    <string name="oneplus_erase_system_data_title">सिस्टम डेटा मिटाएँ?</string>
     <string name="oneplus_esportmode_introduction_summary">Esports मोड को सक्रिय करने के लिए, गेमिंग मोड पैनल पर टॉगल ऑन टैप करें|</string>
     <string name="oneplus_experience_improvement_programs">अनुभव सुधार कार्यक्रम</string>
     <string name="oneplus_face_auto_unlock_while_screen_on_sumary">जैसे ही स्क्रीन ऑन होती है बिना कोई स्वाइप किए हुए अपने चेहरे से अपना फ़ोन अनलॉक करें।</string>
@@ -3143,7 +3147,7 @@
     <string name="oneplus_fnatic_mode_disturb_introduction_summary">सभी नोटिफिकेशंस और कॉल ब्लॉक करें (निम्न बैटरी नोटिफ़िकेशन, अलार्म और टाइमर के अलावा)। छूटी हुई कॉल, कॉल इतिहास में सहेजी नहीं हो सकती हैं।</string>
     <string name="oneplus_fnatic_mode_disturb_introduction_title">उन्नत DND</string>
     <string name="oneplus_fnatic_mode_enable_introduction_title">Fnatic मोड का उपयोग करने के लिए, सबसे पहले गेमिंग मोड को सक्षम किया जाना चाहिए।</string>
-    <string name="oneplus_fnatic_mode_network_introduction_dual4g_summary">प्राथमिक सिम कार्ड की सिग्नल क्षमता को निम्न लैटेंसी गेम प्ले के लिए अवरोधन को कम करने के लिए प्राथमिकता दी गई है। परिणामस्वरूप सिम कार्ड को अक्षम कर दिया जाएगा और कॉल और संदेश प्राप्त नहीं होंगे।</string>
+    <string name="oneplus_fnatic_mode_network_introduction_dual4g_summary">प्राथमिक सिम कार्ड की सिग्नल क्षमता को कम लैटेंसी गेम प्ले के लिए अवरोधन को कम करने के लिए प्राथमिकता दी गई है। नतीजतन, द्वितीयक सिम कार्ड अक्षम कर दिया जाएगा और कॉल और संदेश नहीं मिलेंगे।</string>
     <string name="oneplus_fnatic_mode_network_introduction_summary">नेटवर्क कनेक्शन की स्थिरता में सुधार करें</string>
     <string name="oneplus_fnatic_mode_network_introduction_title">नेटवर्क वृद्धि</string>
     <string name="oneplus_fnatic_mode_summary">अपने गेमिंग अनुभव को बढ़ाएँ</string>
@@ -3241,7 +3245,7 @@
     <string name="oneplus_hand_up_proximity_title">डिस्प्ले बेहतर करें</string>
     <string name="oneplus_hand_up_to_show">दिखाने के लिए अपना फ़ोन उठाएँ</string>
     <string name="oneplus_haptic_feedback_no_app">कोई भी समर्थित गेम्स इंस्टॉल नहीं हैं</string>
-    <string name="oneplus_haptic_feedback_no_app_tip">आप PUBG मोबाइल और Asphalt 9 इंस्टॉल कर सकते हैं</string>
+    <string name="oneplus_haptic_feedback_no_app_tip">आप PUBG मोबाइल और Asphalt 9 को इंस्टॉल कर सकते हैं</string>
     <string name="oneplus_haptic_feedback_summary">समर्थित गेम्स के लिए बेहतर हैप्टिक प्रतिक्रिया प्रदान करें</string>
     <string name="oneplus_haptic_feedback_support">समर्थित गेम्स</string>
     <string name="oneplus_haptic_feedback_tips">विशिष्ट गेम दृश्यों के लिए हैप्टिक प्रतिक्रिया प्रदान कररें, केवल समर्थित गेम्स के लिए लागू</string>
@@ -3478,7 +3482,7 @@
     <string name="oneplus_reading_mode_ask">हर बार पूछें</string>
     <string name="oneplus_reading_mode_auto_summary">जब ये ऐप्स खुले होते हैं तो पठन मोड स्वत: ऑन हो जाता है और जह ये बंद होते हैं तो पठन मोड ऑफ हो जाता है</string>
     <string name="oneplus_reading_mode_available">कोई प्रभाव नहीं</string>
-    <string name="oneplus_reading_mode_block_peek_notifications">पीक नोटिफिकेशन ब्लॉक करें</string>
+    <string name="oneplus_reading_mode_block_peek_notifications">पीक नोटिफ़िकेशन ब्लॉक करें</string>
     <string name="oneplus_reading_mode_chromatic">क्रोमैटिक प्रभाव</string>
     <string name="oneplus_reading_mode_default_state">डिफ़ॉल्ट स्थिति</string>
     <string name="oneplus_reading_mode_manual_settings">मैन्युअल सेटिंग्स</string>
@@ -3575,7 +3579,7 @@
     <string name="oneplus_search_keyword_swap_navkeys">स्वैप बटन</string>
     <string name="oneplus_search_keyword_switch">स्थानांतरण, डेटा माइग्रेशन</string>
     <string name="oneplus_search_keyword_theme_settings">लॉक स्क्रीन अनुकूलन, वॉलपेपर, घड़ी की शैली, फ़िंगरप्रिंट एनिमेशन, Horizon Light, सिस्टम अनुकूलन, एक्सेंट रंग, आकार, फ़ॉन्ट, टोन, आइकन पैक</string>
-    <string name="oneplus_search_keyword_theme_settings_mcl">लॉक स्क्रीन अनुकूलन, वॉलपेपर, घड़ी स्टाइल, फ़िंगरप्रिंट एनिमेशन, Horizon Light, सिस्टम अनुकूलन, एक्सेंट रंग, आकार, फ़ॉन्ट, टोन, आइकन पैक, इल्यूमिनेटिंग लाइट, नूआन्स डार्क, वाइब्रैंट टिंट, McLaren</string>
+    <string name="oneplus_search_keyword_theme_settings_mcl">लॉक स्क्रीन कस्टमाइज़ेशन, वॉलपेपर, क्लॉक स्टाइल, घड़ी की शैली, फ़िंगरप्रिंट एनिमेशन, होराइज़न लाइट, सिस्टम अनुकूलन, एक्सेंट रंग, आकार, फ़ॉन्ट, टोन, आइकन पैक, इल्यूमिनेटिंग लाइट, नूआन्स डार्क, वाइब्रैंट टिंट, मैकलैरन</string>
     <string name="oneplus_search_keyword_three_screenshots">स्क्रीनशॉट</string>
     <string name="oneplus_search_keyword_timer_boot" />
     <string name="oneplus_search_keyword_user_experience">अधिसूचनाएं,अनुभव,प्रोग्राम,सुधार</string>
@@ -3747,7 +3751,7 @@
     <string name="oneplus_user_agreement">अंतिम उपयोगकर्ता लाइसेंस अनुबंध</string>
     <string name="oneplus_user_enjoy_plan_title">उपयोगकर्ता अनुभव कार्यक्रम में शामिल हों</string>
     <string name="oneplus_vibrate">कंपन</string>
-    <string name="oneplus_vibrate_dynamic_mode">डायनेमिक</string>
+    <string name="oneplus_vibrate_dynamic_mode">डायनमिक</string>
     <string name="oneplus_vibrate_intensity">कंपन तीव्रता</string>
     <string name="oneplus_vibrate_on_touch_intensity">टैप करने पर कंपन</string>
     <string name="oneplus_vibrate_rhythm">कंपन पैटर्न</string>
@@ -3755,9 +3759,9 @@
     <string name="oneplus_vibration_settings_soc_tri_state">वाइब्रेशन</string>
     <string name="oneplus_vibration_settings_soc_tri_state_summary">अलार्म के सिवाय, कॉल और नोटिफ़िकेशन मौन हो जाएँगी और केवल कंपन पर सेट कर दी जाएँगी</string>
     <string name="oneplus_vibration_summary">अलार्म हमेशा बजेगा</string>
-    <string name="oneplus_video_enhancer">वीडियो एन्हांसर</string>
-    <string name="oneplus_video_enhancer_footer">वीडियो प्ले करने के दौरान रंग गुणवत्ता बेहतर बनाएँ</string>
-    <string name="oneplus_video_enhancer_summary">वीडियो प्ले करने के दौरान रंग गुणवत्ता बेहतर बनाएँ</string>
+    <string name="oneplus_video_enhancer">जीवंत रंगों का प्रभाव</string>
+    <string name="oneplus_video_enhancer_footer">वीडियो प्ले करने के दौरान रंग गुणवत्ता बढ़ाएँ</string>
+    <string name="oneplus_video_enhancer_summary">वीडियो प्ले करने के दौरान रंग गुणवत्ता बढ़ाएँ</string>
     <string name="oneplus_volume_keys_adjust">समायोजित करने के लिए वॉल्यूम बटनों का उपयोग करें</string>
     <string name="oneplus_volume_keys_adjust_media">मीडिया वॉल्यूम</string>
     <string name="oneplus_volume_keys_adjust_ringtones">रिंगटोन वॉल्यूम</string>
@@ -3851,7 +3855,7 @@
     <string name="op_security_settings_back_fingerprint_enroll_find_sensor_message">आप इसे अपने फोन के पीछे की तरफ पा सकते हैं।</string>
     <string name="op_security_settings_fingerprint_enroll_find_sensor_message">होम बटन पर फिंगरप्रिंट सेंसर की स्थिति जानें</string>
     <string name="op_security_settings_title">सुरक्षा &amp; फिंगरप्रिंट</string>
-    <string name="op_sim_card_with_slotid">सिम  %1$s</string>
+    <string name="op_sim_card_with_slotid">सिम %1$s</string>
     <string name="op_sim_cord">सिम &amp; नेटवर्क</string>
     <string name="op_sim_cord_summary">डिफ़ॉल्ट सिम कार्ड, बैंडविड्थ उपयोग</string>
     <string name="op_sim_name_with_prefix">  (%1$s)</string>

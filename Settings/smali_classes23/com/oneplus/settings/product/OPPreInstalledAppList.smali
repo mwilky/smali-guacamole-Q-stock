@@ -165,7 +165,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f120db4
+    const v2, 0x7f120db2
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -185,7 +185,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f120db5
+    const v2, 0x7f120db3
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -499,7 +499,7 @@
 
     invoke-direct {v3, v4}, Lcom/oneplus/settings/ui/OPNoSelectablePreference;-><init>(Landroid/content/Context;)V
 
-    const v4, 0x7f0d01f0
+    const v4, 0x7f0d01f7
 
     invoke-virtual {v3, v4}, Lcom/oneplus/settings/ui/OPNoSelectablePreference;->setLayoutResource(I)V
 

@@ -63,7 +63,7 @@
     :cond_0
     invoke-interface {p1, v0}, Landroid/view/ContextMenu;->setHeaderTitle(Ljava/lang/CharSequence;)Landroid/view/ContextMenu;
 
-    const v1, 0x7f1204ba
+    const v1, 0x7f1204b9
 
     const/4 v2, 0x0
 
@@ -131,7 +131,7 @@
 
     aput-object v1, v6, v7
 
-    const v8, 0x7f121127
+    const v8, 0x7f121124
 
     invoke-virtual {v4, v8, v6}, Landroid/content/Context;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 

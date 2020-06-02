@@ -47,7 +47,7 @@
 
     invoke-direct {p0, p1}, Lcom/android/settingslib/RestrictedPreference;-><init>(Landroid/content/Context;)V
 
-    const v0, 0x7f0d022c
+    const v0, 0x7f0d0233
 
     iput v0, p0, Lcom/oneplus/settings/ui/OPTextViewButtonPreference;->resid:I
 
@@ -61,7 +61,7 @@
 
     invoke-direct {p0, p1, p2}, Lcom/android/settingslib/RestrictedPreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
-    const v0, 0x7f0d022c
+    const v0, 0x7f0d0233
 
     iput v0, p0, Lcom/oneplus/settings/ui/OPTextViewButtonPreference;->resid:I
 
@@ -75,7 +75,7 @@
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/settingslib/RestrictedPreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
-    const v0, 0x7f0d022c
+    const v0, 0x7f0d0233
 
     iput v0, p0, Lcom/oneplus/settings/ui/OPTextViewButtonPreference;->resid:I
 
@@ -201,7 +201,7 @@
 
     iput-object v0, p0, Lcom/oneplus/settings/ui/OPTextViewButtonPreference;->mLeftIcon:Landroid/widget/ImageView;
 
-    const v0, 0x7f0a05b0
+    const v0, 0x7f0a05b2
 
     invoke-virtual {p1, v0}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 
@@ -271,7 +271,7 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    const v0, 0x7f0a0696
+    const v0, 0x7f0a0698
 
     invoke-virtual {p1, v0}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 
@@ -303,7 +303,7 @@
     :goto_1
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setVisibility(I)V
 
-    const v0, 0x7f0a05b1
+    const v0, 0x7f0a05b3
 
     invoke-virtual {p1, v0}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 

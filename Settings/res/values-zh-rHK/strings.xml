@@ -2386,6 +2386,7 @@
 您目前已登入下列帳戶：
 "</string>
     <string name="master_clear_button_text">清除所有資料</string>
+    <string name="master_clear_confirm_summary">內部儲存中的所有內容也將一併清除，包括你的音樂、照片、影片等。是否確認清除？</string>
     <string name="master_clear_confirm_title">要清除所有資料嗎？</string>
     <string name="master_clear_desc">此操作將會清除您手機<b>內部儲存空間</b>"的所有資料，包括：
 
@@ -3040,6 +3041,9 @@
 2.單次錄入過程中，請僅錄入一個手指的指紋訊息"</string>
     <string name="oneplus_enroll_fingerprint_tips_title">指紋錄入提示</string>
     <string name="oneplus_enter_your_fingerprint">· 錄入您的指紋</string>
+    <string name="oneplus_erase_system_data">清除系統資料</string>
+    <string name="oneplus_erase_system_data_summary">將刪除包括賬號信息、聯絡人信息、下載應用等在內的系統資料，這個動作無法復原。</string>
+    <string name="oneplus_erase_system_data_title">要清除系統資料嗎？</string>
     <string name="oneplus_esportmode_introduction_summary">你可以在遊戲模式啟動的彈窗上切換為電競模式</string>
     <string name="oneplus_experience_improvement_programs">體驗改進計劃</string>
     <string name="oneplus_face_auto_unlock_while_screen_on_sumary">喚醒螢幕後無需向上滑動，立刻使用人臉解鎖</string>
@@ -3896,6 +3900,8 @@
     <string name="op_battery_info_voltage_label">電池電壓：</string>
     <string name="op_battery_info_voltage_units">mV</string>
     <string name="op_buttons_settings">按鍵</string>
+    <string name="op_charging_optimization">充電優化</string>
+    <string name="op_charging_optimization_summary">根據你的使用習慣優化充電方式</string>
     <string name="op_choose_lock_generic_title">請先選擇備用解鎖方式</string>
     <string name="op_cloud_service_summary">同步你的聯絡人，便籤，照片等</string>
     <string name="op_cloud_service_title">雲端服務</string>

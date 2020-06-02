@@ -133,7 +133,7 @@
 
     invoke-virtual {v1, v2}, Landroid/graphics/Paint;->setAntiAlias(Z)V
 
-    const v1, 0x7f0705fc
+    const v1, 0x7f0705fe
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -155,7 +155,7 @@
 
     iget-object v1, p0, Lcom/android/settings/widget/UsageGraph;->mLinePaint:Landroid/graphics/Paint;
 
-    const v3, 0x7f0705fd
+    const v3, 0x7f0705ff
 
     invoke-virtual {v0, v3}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -193,7 +193,7 @@
 
     invoke-virtual {v1, v3}, Landroid/graphics/Paint;->setStyle(Landroid/graphics/Paint$Style;)V
 
-    const v1, 0x7f0705f9
+    const v1, 0x7f0705fb
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -201,7 +201,7 @@
 
     int-to-float v1, v1
 
-    const v3, 0x7f0705f8
+    const v3, 0x7f0705fa
 
     invoke-virtual {v0, v3}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -275,7 +275,7 @@
 
     iput-object v2, p0, Lcom/android/settings/widget/UsageGraph;->mTintedDivider:Landroid/graphics/drawable/Drawable;
 
-    const v2, 0x7f0705f7
+    const v2, 0x7f0705f9
 
     invoke-virtual {v0, v2}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 

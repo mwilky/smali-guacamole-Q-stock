@@ -1209,6 +1209,7 @@ Selection"</string>
     <string name="config_emergency_package_name">com.android.emergency</string>
     <string name="config_face_enroll" />
     <string name="config_featureFactory">com.android.settings.overlay.FeatureFactoryImpl</string>
+    <string name="config_google_package_installer_package_name">com.google.android.packageinstaller</string>
     <string name="config_grayscale_settings_intent" />
     <string name="config_list_label">Configured networks</string>
     <string name="config_nearby_devices_slice_uri">content://com.google.android.gms.nearby.fastpair/device_status_list_item</string>
@@ -2654,6 +2655,7 @@ You can change this later from Settings > Apps &amp; notifications."</string>
 You are currently signed into the following accounts:
 "</string>
     <string name="master_clear_button_text">Erase all data</string>
+    <string name="master_clear_confirm_summary">All content in the internal storage will also be removed, including music, photos, videos and other personal data. Confirm to erase?</string>
     <string name="master_clear_confirm_title">Erase all data?</string>
     <string name="master_clear_desc">This will erase all data from your phone’s <b>internal storage</b>", including:
 
@@ -2860,6 +2862,8 @@ Switching to %1$s won't cancel your %2$s service."</string>
     <string name="network_2G">2G</string>
     <string name="network_3G">3G</string>
     <string name="network_4G">4G (recommended)</string>
+    <string name="network_4G_pure">4G</string>
+    <string name="network_5G">5G</string>
     <string name="network_connected">Connected</string>
     <string name="network_connecting">Connecting…</string>
     <string name="network_connection_connect_successful">Connection successful</string>
@@ -2876,9 +2880,11 @@ Switching to %1$s won't cancel your %2$s service."</string>
     <string name="network_disconnected">Disconnected</string>
     <string name="network_global">Global</string>
     <string name="network_lte">LTE (recommended)</string>
+    <string name="network_lte_pure">LTE</string>
     <string name="network_operator_category">Network</string>
     <string name="network_operators_settings">Network operators</string>
     <string name="network_query_error">Couldn’t find networks. Try again.</string>
+    <string name="network_recommended">" (recommended)"</string>
     <string name="network_reset_not_available">Network reset is not available for this user</string>
     <string name="network_restrictions">Network restrictions</string>
     <string name="network_scorer_change_active_dialog_text">Use %1$s instead of %2$s to manage your network connections?</string>
@@ -3362,6 +3368,9 @@ Battery saver turns off automatically when your device is charging."</string>
 2.In a single setup process, please enter only one finger's fingerprint information"</string>
     <string name="oneplus_enroll_fingerprint_tips_title">Fingerprint setup prompt</string>
     <string name="oneplus_enter_your_fingerprint">· Enroll your fingerprint</string>
+    <string name="oneplus_erase_system_data">ERASE SYSTEM DATA</string>
+    <string name="oneplus_erase_system_data_summary">"System data including account info, contacts and app data will be deleted. You can't undo this action."</string>
+    <string name="oneplus_erase_system_data_title">Erase system data?</string>
     <string name="oneplus_esportmode_introduction_summary">To activate Esports mode, tap the toggle on the Gaming mode panel.</string>
     <string name="oneplus_experience_improvement_programs">Experience improvement programs</string>
     <string name="oneplus_face_auto_unlock_while_screen_on_sumary">Unlock your phone with your face as soon as the screen turns on without swiping first.</string>
@@ -3689,7 +3698,7 @@ The Speak Caller ID service uses Baidu’s text-to-speech technology. By using t
     <string name="oneplus_no_choice">No ringtone selected</string>
     <string name="oneplus_no_device_connected">No device connected</string>
     <string name="oneplus_no_file_tips">No ringtone files</string>
-    <string name="oneplus_no_ringtone">@string/app_list_preference_none</string>
+    <string name="oneplus_no_ringtone">@string/enterprise_privacy_none</string>
     <string name="oneplus_no_supported_apps">No supported apps installed</string>
     <string name="oneplus_noise_tips">Enable vibration</string>
     <string name="oneplus_none_default_camera">No default camera</string>
@@ -4299,6 +4308,8 @@ OnePlus does not collect your personal data during use, we only need to call you
     <string name="op_battery_info_voltage_units">mV</string>
     <string name="op_buttons_settings">@string/buttons_settings</string>
     <string name="op_character_counter_pattern">%1$d / %2$d</string>
+    <string name="op_charging_optimization">Optimized charging</string>
+    <string name="op_charging_optimization_summary">Optimize the charging pattern according to your usage habits</string>
     <string name="op_china_mobile">CMCC</string>
     <string name="op_china_telecom">CTCC</string>
     <string name="op_china_unicom">CUCC</string>
@@ -4557,6 +4568,17 @@ OnePlus does not collect your personal data during use, we only need to call you
     <string name="preferred_network_mode_lte_tdscdma_summary">Preferred network mode: LTE / TDSCDMA</string>
     <string name="preferred_network_mode_lte_tdscdma_wcdma_summary">Preferred network mode: LTE/TDSCDMA/WCDMA</string>
     <string name="preferred_network_mode_lte_wcdma_summary">Preferred network mode: LTE / WCDMA</string>
+    <string name="preferred_network_mode_nr_lte_cdma_evdo_gsm_wcdma_summary">Preferred network mode: NR/LTE/CDMA/EvDo/GSM/WCDMA</string>
+    <string name="preferred_network_mode_nr_lte_cdma_evdo_summary">Preferred network mode: NR/LTE/CDME/EvDo</string>
+    <string name="preferred_network_mode_nr_lte_gsm_wcdma_summary">Preferred network mode: NR/LTE/GSM/WCDMA</string>
+    <string name="preferred_network_mode_nr_lte_summary">Preferred network mode: NR / LTE</string>
+    <string name="preferred_network_mode_nr_lte_tdscdma_cdma_evdo_gsm_wcdma_summary">Preferred network mode: NR/LTE/TDSCDMA/CDMA/EvDo/GSM/WCDMA</string>
+    <string name="preferred_network_mode_nr_lte_tdscdma_gsm_summary">Preferred network mode: NR/LTE/TDSCDMA/GSM</string>
+    <string name="preferred_network_mode_nr_lte_tdscdma_gsm_wcdma_summary">Preferred network mode: NR/LTE/TDSCDMA/GSM/WCDMA</string>
+    <string name="preferred_network_mode_nr_lte_tdscdma_summary">Preferred network mode: NR/LTE/TDSCDMA</string>
+    <string name="preferred_network_mode_nr_lte_tdscdma_wcdma_summary">Preferred network mode: NR/LTE/TDSCDMA/WCDMA</string>
+    <string name="preferred_network_mode_nr_lte_wcdma_summary">Preferred network mode: NR/LTE/WCDMA</string>
+    <string name="preferred_network_mode_nr_only_summary">Preferred network mode: NR only</string>
     <string name="preferred_network_mode_summary">Change the network operating mode</string>
     <string name="preferred_network_mode_tdscdma_cdma_evdo_gsm_wcdma_summary">Preferred network mode: TDSCDMA/CDMA/EvDo/GSM/WCDMA</string>
     <string name="preferred_network_mode_tdscdma_gsm_summary">Preferred network mode: TDSCDMA / GSM</string>
@@ -6305,7 +6327,6 @@ Please review your service provider’s privacy policy."</string>
     <string name="wifi_api_test">Wi-Fi API</string>
     <string name="wifi_ask_disable">%s wants to turn off Wi-Fi</string>
     <string name="wifi_ask_enable">%s wants to turn on Wi-Fi</string>
-    <string name="wifi_auth_password_wrong">Password may be incorrect</string>
     <string name="wifi_auto_sel_wapi_cert">Select automatically</string>
     <string name="wifi_avoid_poor_network_detection_summary">Only use networks that have a good internet connection</string>
     <string name="wifi_badging_thresholds_default">10:3000,20:5000,30:25000</string>
@@ -6969,51 +6990,37 @@ Update settings to:
     <string name="zone_menu_by_region">Select by region</string>
     <string name="zone_time_type_dst">Daylight savings time</string>
     <string name="zone_time_type_standard">Standard time</string>
-    <item type="string" name="APKTOOL_DUMMY_2bc">false</item>
-    <item type="string" name="APKTOOL_DUMMY_2f8">false</item>
+    <item type="string" name="APKTOOL_DUMMY_4ca">false</item>
     <item type="string" name="APKTOOL_DUMMY_4cb">false</item>
-    <item type="string" name="APKTOOL_DUMMY_4cc">false</item>
-    <item type="string" name="APKTOOL_DUMMY_4cf">false</item>
-    <item type="string" name="APKTOOL_DUMMY_5e4">false</item>
-    <item type="string" name="APKTOOL_DUMMY_6f4">false</item>
+    <item type="string" name="APKTOOL_DUMMY_4ce">false</item>
+    <item type="string" name="APKTOOL_DUMMY_5e3">false</item>
+    <item type="string" name="APKTOOL_DUMMY_6f3">false</item>
+    <item type="string" name="APKTOOL_DUMMY_769">false</item>
     <item type="string" name="APKTOOL_DUMMY_76a">false</item>
-    <item type="string" name="APKTOOL_DUMMY_76b">false</item>
+    <item type="string" name="APKTOOL_DUMMY_775">false</item>
     <item type="string" name="APKTOOL_DUMMY_776">false</item>
     <item type="string" name="APKTOOL_DUMMY_777">false</item>
     <item type="string" name="APKTOOL_DUMMY_778">false</item>
     <item type="string" name="APKTOOL_DUMMY_779">false</item>
     <item type="string" name="APKTOOL_DUMMY_77a">false</item>
     <item type="string" name="APKTOOL_DUMMY_77b">false</item>
-    <item type="string" name="APKTOOL_DUMMY_77c">false</item>
-    <item type="string" name="APKTOOL_DUMMY_b0a">false</item>
-    <item type="string" name="APKTOOL_DUMMY_ba7">false</item>
-    <item type="string" name="APKTOOL_DUMMY_ba8">false</item>
-    <item type="string" name="APKTOOL_DUMMY_ba9">false</item>
-    <item type="string" name="APKTOOL_DUMMY_baa">false</item>
-    <item type="string" name="APKTOOL_DUMMY_bd7">false</item>
-    <item type="string" name="APKTOOL_DUMMY_bd8">false</item>
-    <item type="string" name="APKTOOL_DUMMY_bfa">false</item>
-    <item type="string" name="APKTOOL_DUMMY_bfb">false</item>
-    <item type="string" name="APKTOOL_DUMMY_c5f">false</item>
+    <item type="string" name="APKTOOL_DUMMY_b0e">false</item>
+    <item type="string" name="APKTOOL_DUMMY_bab">false</item>
+    <item type="string" name="APKTOOL_DUMMY_bac">false</item>
+    <item type="string" name="APKTOOL_DUMMY_bad">false</item>
+    <item type="string" name="APKTOOL_DUMMY_bae">false</item>
+    <item type="string" name="APKTOOL_DUMMY_bdb">false</item>
+    <item type="string" name="APKTOOL_DUMMY_bdc">false</item>
     <item type="string" name="APKTOOL_DUMMY_c61">false</item>
-    <item type="string" name="APKTOOL_DUMMY_c6e">false</item>
-    <item type="string" name="APKTOOL_DUMMY_d4e">false</item>
-    <item type="string" name="APKTOOL_DUMMY_d61">false</item>
-    <item type="string" name="APKTOOL_DUMMY_d62">false</item>
-    <item type="string" name="APKTOOL_DUMMY_d67">false</item>
-    <item type="string" name="APKTOOL_DUMMY_d7b">false</item>
-    <item type="string" name="APKTOOL_DUMMY_d90">false</item>
-    <item type="string" name="APKTOOL_DUMMY_d92">false</item>
-    <item type="string" name="APKTOOL_DUMMY_d94">false</item>
-    <item type="string" name="APKTOOL_DUMMY_da0">false</item>
-    <item type="string" name="APKTOOL_DUMMY_dc5">false</item>
-    <item type="string" name="APKTOOL_DUMMY_dc6">false</item>
-    <item type="string" name="APKTOOL_DUMMY_e15">false</item>
-    <item type="string" name="APKTOOL_DUMMY_e16">false</item>
-    <item type="string" name="APKTOOL_DUMMY_f9d">false</item>
-    <item type="string" name="APKTOOL_DUMMY_f9e">false</item>
-    <item type="string" name="APKTOOL_DUMMY_fd7">false</item>
-    <item type="string" name="APKTOOL_DUMMY_103e">false</item>
-    <item type="string" name="APKTOOL_DUMMY_103f">false</item>
-    <item type="string" name="APKTOOL_DUMMY_15d7">false</item>
+    <item type="string" name="APKTOOL_DUMMY_d51">false</item>
+    <item type="string" name="APKTOOL_DUMMY_d8f">false</item>
+    <item type="string" name="APKTOOL_DUMMY_d91">false</item>
+    <item type="string" name="APKTOOL_DUMMY_d93">false</item>
+    <item type="string" name="APKTOOL_DUMMY_dc3">false</item>
+    <item type="string" name="APKTOOL_DUMMY_dc4">false</item>
+    <item type="string" name="APKTOOL_DUMMY_e13">false</item>
+    <item type="string" name="APKTOOL_DUMMY_e14">false</item>
+    <item type="string" name="APKTOOL_DUMMY_f9b">false</item>
+    <item type="string" name="APKTOOL_DUMMY_f9c">false</item>
+    <item type="string" name="APKTOOL_DUMMY_15df">false</item>
 </resources>

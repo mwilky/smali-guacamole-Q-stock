@@ -684,7 +684,7 @@
 
     const/16 v7, 0xd
 
-    const v8, 0x7f120323
+    const v8, 0x7f120321
 
     move-object v3, p0
 
@@ -708,7 +708,7 @@
 
     const/16 v7, 0xf
 
-    const v8, 0x7f12032d
+    const v8, 0x7f12032b
 
     move-object v3, p0
 
@@ -732,7 +732,7 @@
 
     const/16 v7, 0xe
 
-    const v8, 0x7f120372
+    const v8, 0x7f120370
 
     move-object v3, p0
 

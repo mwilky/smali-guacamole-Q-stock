@@ -101,12 +101,12 @@
     goto :goto_0
 
     :cond_0
-    const v1, 0x7f121284
+    const v1, 0x7f12128c
 
     return v1
 
     :cond_1
-    const v1, 0x7f121286
+    const v1, 0x7f12128e
 
     return v1
 
@@ -123,13 +123,13 @@
 
     if-eqz v1, :cond_3
 
-    const v1, 0x7f121285
+    const v1, 0x7f12128d
 
     return v1
 
     :cond_3
     :goto_0
-    const v1, 0x7f121283
+    const v1, 0x7f12128b
 
     return v1
 .end method
@@ -322,7 +322,7 @@
 .method public getHelpResource()I
     .locals 1
 
-    const v0, 0x7f1207e1
+    const v0, 0x7f1207e0
 
     return v0
 .end method
@@ -346,7 +346,7 @@
 
     check-cast v0, Lcom/android/settings/SettingsActivity;
 
-    const v1, 0x7f121282
+    const v1, 0x7f12128a
 
     invoke-virtual {v0, v1}, Lcom/android/settings/SettingsActivity;->setTitle(I)V
 
@@ -496,7 +496,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0d02a2
+    const v2, 0x7f0d02a9
 
     const/4 v3, 0x0
 

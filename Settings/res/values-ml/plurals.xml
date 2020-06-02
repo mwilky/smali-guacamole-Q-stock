@@ -221,8 +221,8 @@
         <item quantity="one">നിങ്ങള്‍ക്ക് ഇപ്പോഴും %1$d അവസരമുണ്ട്</item>
     </plurals>
     <plurals name="oneplus_lockpattern_too_many_failed_confirmation_attempts_footer">
-        <item quantity="other">%d സെക്കന്‍ഡില്‍ വീണ്ടും ശ്രമിക്കുക.</item>
-        <item quantity="one">%d സെക്കന്‍ഡില്‍ വീണ്ടും ശ്രമിക്കുക.</item>
+        <item quantity="other">%d സെക്കന്‍ഡുകള്‍ക്കുള്ളില്‍ വീണ്ടും ശ്രമിക്കുക.</item>
+        <item quantity="one">%d സെക്കന്‍ഡിനുള്ളില്‍ വീണ്ടും ശ്രമിക്കുക.</item>
     </plurals>
     <plurals name="permission_bar_chart_label">
         <item quantity="other">%s ആപ്പുകൾ</item>

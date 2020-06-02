@@ -309,22 +309,22 @@
     goto :goto_2
 
     :cond_1
-    const v0, 0x7f1204f6
-
-    goto :goto_2
-
-    :cond_2
     const v0, 0x7f1204f5
 
     goto :goto_2
 
+    :cond_2
+    const v0, 0x7f1204f4
+
+    goto :goto_2
+
     :cond_3
-    const v0, 0x7f1204f8
+    const v0, 0x7f1204f7
 
     goto :goto_2
 
     :cond_4
-    const v0, 0x7f1204f7
+    const v0, 0x7f1204f6
 
     nop
 

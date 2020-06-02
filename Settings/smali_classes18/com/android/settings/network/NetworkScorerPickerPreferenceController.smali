@@ -74,7 +74,7 @@
 
     iget-object v3, p0, Lcom/android/settings/network/NetworkScorerPickerPreferenceController;->mContext:Landroid/content/Context;
 
-    const v4, 0x7f120ac5
+    const v4, 0x7f120ac9
 
     invoke-virtual {v3, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

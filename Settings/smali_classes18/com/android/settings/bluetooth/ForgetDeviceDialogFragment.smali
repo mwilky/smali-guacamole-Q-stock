@@ -144,7 +144,7 @@
 
     invoke-direct {v3, v1}, Landroidx/appcompat/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v4, 0x7f12039d
+    const v4, 0x7f12039b
 
     invoke-virtual {v3, v4, v0}, Landroidx/appcompat/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroidx/appcompat/app/AlertDialog$Builder;
 
@@ -162,18 +162,18 @@
 
     move-result-object v3
 
-    const v4, 0x7f12039e
+    const v4, 0x7f12039c
 
     invoke-virtual {v3, v4}, Landroidx/appcompat/app/AlertDialog;->setTitle(I)V
 
     if-eqz v2, :cond_0
 
-    const v4, 0x7f1203a0
+    const v4, 0x7f12039e
 
     goto :goto_0
 
     :cond_0
-    const v4, 0x7f12039c
+    const v4, 0x7f12039a
 
     :goto_0
     const/4 v5, 0x1

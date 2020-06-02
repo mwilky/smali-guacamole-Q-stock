@@ -2447,6 +2447,7 @@ Googleアカウントなど、アカウントによっては、スマートフ�
 以下のアカウントにログインしています:
 "</string>
     <string name="master_clear_button_text">すべてのデータを消去</string>
+    <string name="master_clear_confirm_summary">内蔵ストレージのすべてのコンテンツ（音楽、写真、ビデオ、他の個人データを含む）も削除されます。消去してもよろしいですか？</string>
     <string name="master_clear_confirm_title">すべてのデータを消去しますか？</string>
     <string name="master_clear_desc">この操作を行うと、以下のデータを含め、スマートフォンの<b>内部ストレージ</b>"の全データが消去されます。
 
@@ -2925,7 +2926,7 @@ Googleアカウントなど、アカウントによっては、スマートフ�
     <string name="oneplus_auto_activate">自動でオンにします</string>
     <string name="oneplus_auto_answer_via_bluetooth_summary">Bluetooth オーディオデバイスに接続されている場合は、着信に自動的に応答します</string>
     <string name="oneplus_auto_answer_via_bluetooth_title">Bluetooth のスマート応答</string>
-    <string name="oneplus_auto_check_pin_length">「✓」をタップせずに PIN を確認する</string>
+    <string name="oneplus_auto_check_pin_length">PIN を入力した後、画面を自動的にロック解除する</string>
     <string name="oneplus_auto_disconect_the_ap">デバイスが設定されていない状態で 5 分が経過すると、ホットスポットは自動的にオフになります。</string>
     <string name="oneplus_auto_open_app_none">なし</string>
     <string name="oneplus_auto_open_app_other_applications">他のアプリケーション</string>
@@ -3079,6 +3080,9 @@ Googleアカウントなど、アカウントによっては、スマートフ�
 2.1回の設定で、指の指紋情報を1つだけ入力してください。"</string>
     <string name="oneplus_enroll_fingerprint_tips_title">指紋セットアップ プロンプト</string>
     <string name="oneplus_enter_your_fingerprint">· あなたの指紋を登録します。</string>
+    <string name="oneplus_erase_system_data">システムデータを消去</string>
+    <string name="oneplus_erase_system_data_summary">システムデータ（アカウント情報、連絡先、アプリデータ）が削除されます。この操作は元に戻せません。</string>
+    <string name="oneplus_erase_system_data_title">システムデータを消去しますか？</string>
     <string name="oneplus_esportmode_introduction_summary">E スポーツモードをアクティブ化するには、[ゲームモード] パネルでトグルをタップしてください。</string>
     <string name="oneplus_experience_improvement_programs">エクスペリエンス向上プログラム</string>
     <string name="oneplus_face_auto_unlock_while_screen_on_sumary">最初にスワイプ操作を行わなくても、画面がオンになったら直ちに顔認証で携帯電話のロックを解除します。</string>
@@ -3755,9 +3759,9 @@ Googleアカウントなど、アカウントによっては、スマートフ�
     <string name="oneplus_vibration_settings_soc_tri_state">バイブ</string>
     <string name="oneplus_vibration_settings_soc_tri_state_summary">アラーム以外の着信音や通知音が鳴らなくなり、バイブのみに設定されます</string>
     <string name="oneplus_vibration_summary">アラームが常に鳴ります</string>
-    <string name="oneplus_video_enhancer">ビデオエンハンサー</string>
-    <string name="oneplus_video_enhancer_footer">再生中のビデオの色を強化します</string>
-    <string name="oneplus_video_enhancer_summary">再生中のビデオの色を強化します</string>
+    <string name="oneplus_video_enhancer">鮮やかなカラーエフェクト</string>
+    <string name="oneplus_video_enhancer_footer">再生中のビデオの色を強化します。</string>
+    <string name="oneplus_video_enhancer_summary">再生中のビデオの色を強化します。</string>
     <string name="oneplus_volume_keys_adjust">音量ボタンを使用して、調整してください</string>
     <string name="oneplus_volume_keys_adjust_media">メディアの音量</string>
     <string name="oneplus_volume_keys_adjust_ringtones">着信音量</string>

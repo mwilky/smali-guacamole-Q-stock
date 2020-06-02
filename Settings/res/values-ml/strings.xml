@@ -2447,6 +2447,7 @@ Selection ട്രിഗ്ഗര്‍ ചെയ്യുക"</string>
  നിലവിൽ, നിങ്ങൾ ഇനിപ്പറയുന്ന അക്കൗണ്ടുകളിലേക്ക് സൈൻ ഇൻ ചെ‌യ്തിരിക്കുന്നു:
 "</string>
     <string name="master_clear_button_text">എല്ലാ ഡാറ്റയും മായ്ക്കുക</string>
+    <string name="master_clear_confirm_summary">സംഗീതം, ഫോട്ടോകൾ, വീഡിയോകൾ, മറ്റ് വ്യക്തിഗത ഡാറ്റ എന്നിവ ഉൾപ്പെടെ ആന്തരിക സംഭരണത്തിലുള്ള എല്ലാ ഉള്ളടക്കവും നീക്കം ചെയ്യും. മായ്‌ക്കുന്നത് സ്ഥിരീകരിക്കണോ?</string>
     <string name="master_clear_confirm_title">എല്ലാ ഡാറ്റയും മായ്‌ക്കണോ?</string>
     <string name="master_clear_desc">ഇത് നിങ്ങളുടെ ഫോണിന്‍റെ <b>ഉള്ളിലെ മെമ്മറിയിലുള്ള</b>" എല്ലാ ഡാറ്റയും മായ്ക്കും, അതിൽ ഇവയുൾപ്പെടുന്നു:
 
@@ -2910,7 +2911,7 @@ Selection ട്രിഗ്ഗര്‍ ചെയ്യുക"</string>
     <string name="oneplus_app_notification_allow_led">LED ഓണ്‍</string>
     <string name="oneplus_app_notification_not_allow_led">LED ഓഫ്</string>
     <string name="oneplus_app_ops_title">ആപ്പ് അനുമതികള്‍</string>
-    <string name="oneplus_app_uninstall_remark">Quick pay ആപ്പ് ഉപയോഗിക്കുന്നതിന് ദയവായി മുകളിലുള്ള പെയ്മെന്‍റ് ആപ്പുകള്‍ ഇന്‍സ്റ്റാള്‍ ചെയ്യുക</string>
+    <string name="oneplus_app_uninstall_remark">ക്വിക്ക് പേആപ്പ് ഉപയോഗിക്കുന്നതിന് ദയവായി മുകളിലുള്ള പെയ്മെന്‍റ് ആപ്പുകള്‍ ഇന്‍സ്റ്റാള്‍ ചെയ്യുക</string>
     <string name="oneplus_app_wechat">WeChat</string>
     <string name="oneplus_applications_settings_summary">ആപ്പ് അറിയിപ്പുകൾ, സമാന്തര ആപ്പുകൾ, അനുമതികൾ</string>
     <string name="oneplus_applock_at_least_four_points">4 പോയിന്‍റുകളെങ്കിലും ഉള്‍പ്പെടുത്തി വരയ്ക്കുക</string>
@@ -2925,7 +2926,7 @@ Selection ട്രിഗ്ഗര്‍ ചെയ്യുക"</string>
     <string name="oneplus_auto_activate">സ്വയം ഓണ്‍ ചെയ്യുക</string>
     <string name="oneplus_auto_answer_via_bluetooth_summary">ഒരു ബ്ലൂടൂത്ത് ഓഡിയോ ഉപകരണം കണക്റ്റ് ചെയ്‌തിരിക്കുമ്പോൾ ഇൻകമിംഗ് കോളുകൾ സ്വയമേവ സ്വീകരിക്കും</string>
     <string name="oneplus_auto_answer_via_bluetooth_title">Bluetooth-നുള്ള സ്മാർട്ട് മറുപടി</string>
-    <string name="oneplus_auto_check_pin_length">\"✓\" ടാപ്പുചെയ്യാതെതന്നെ PIN സ്ഥിരീകരിക്കുക</string>
+    <string name="oneplus_auto_check_pin_length">PIN നൽകിക്കഴിഞ്ഞാൽ, സ്‌ക്രീൻ സ്വയമേവ അൺലോക്ക് ചെയ്യുക</string>
     <string name="oneplus_auto_disconect_the_ap">ഉപകരണങ്ങളൊന്നും കണക്റ്റ് ചെയ്തിട്ടില്ലെങ്കിൽ ഹോട്ട്‌സ്പോട്ട് 5 മിനിറ്റിനു ശേഷം സ്വയം ഓഫാകും.</string>
     <string name="oneplus_auto_open_app_none">ഒന്നുമില്ല</string>
     <string name="oneplus_auto_open_app_other_applications">മറ്റ് ആപ്ലിക്കേഷനുകൾ</string>
@@ -3079,6 +3080,9 @@ Selection ട്രിഗ്ഗര്‍ ചെയ്യുക"</string>
 2.ഒറ്റ ക്രമീകരണ പ്രോസസ്സിൽ, ഒരു വിരലിന്റെ മാത്രം വിരലടയാള വിവരങ്ങൾ നൽകുക"</string>
     <string name="oneplus_enroll_fingerprint_tips_title">ഫിംഗർപ്രിൻ്റ് സെറ്റപ്പ് പ്രോംപ്റ്റ്</string>
     <string name="oneplus_enter_your_fingerprint">നിങ്ങളുടെ വിരലടയാളം ചേര്‍ക്കുക</string>
+    <string name="oneplus_erase_system_data">സിസ്‌റ്റം ഡാറ്റ മായ്‌ക്കുക</string>
+    <string name="oneplus_erase_system_data_summary">അക്കൗണ്ട് വിവരങ്ങൾ, കോൺടാക്‌റ്റുകൾ, ആപ്പ് ഡാറ്റ എന്നിവ ഉൾപ്പെടെയുള്ള സിസ്‌റ്റം ഡാറ്റ ഇല്ലാതാക്കും. ഈ നടപടി നിങ്ങൾക്ക് പഴയപടിയാക്കാനാകില്ല.</string>
+    <string name="oneplus_erase_system_data_title">സിസ്‌റ്റം ഡാറ്റ മായ്‌ക്കണോ?</string>
     <string name="oneplus_esportmode_introduction_summary">Esports മോഡ് സജീവമാക്കുന്നതിന്, ഗെയിമിംഗ് മോഡ് പാനലിൽ ടോഗിൾ ടാപ്പുചെയ്യുക.</string>
     <string name="oneplus_experience_improvement_programs">മെച്ചപ്പെടുത്തൽ പ്രോഗ്രാമുകൾ അനുഭവിക്കുക</string>
     <string name="oneplus_face_auto_unlock_while_screen_on_sumary">ആദ്യം സ്വൈപ്പ് ചെയ്യാതെ സ്ക്രീന്‍ ഓണായാല്‍ ഉടന്‍ നിങ്ങളുടെ മുഖം ഉപയോഗിച്ച് ഫോണ്‍ അണ്‍ലോക്ക് ചെയ്യുക.</string>
@@ -3128,7 +3132,7 @@ Selection ട്രിഗ്ഗര്‍ ചെയ്യുക"</string>
     <string name="oneplus_fingerprint_gesture_camera_title">ഒരു ഫോട്ടോ എടുക്കാന്‍ അമര്‍ത്തിപ്പിടിക്കുക</string>
     <string name="oneplus_fingerprint_gesture_settings_title">വിരലടയാള ആംഗ്യം</string>
     <string name="oneplus_fingerprint_longpress_for_quickpay_summary">ക്വിക് പേ ആരംഭിക്കുന്നതിന് വിരലടയാള സെന്‍സറില്‍ അമര്‍ത്തിപ്പിടിക്കുക</string>
-    <string name="oneplus_fingerprint_quickpay_lock_swtch_summary">ഫോണ്‍ ലോക്കായിരിക്കുമ്പോള്‍ ക്വിക് പേ ആരംഭിക്കാന്‍ വിരലടയാള സെന്‍സറില്‍ അമര്‍ത്തിപ്പിടിക്കുക</string>
+    <string name="oneplus_fingerprint_quickpay_lock_swtch_summary">ഫോണ്‍ ലോക്കായിരിക്കുമ്പോള്‍ ക്വിക് പേ ആരംഭിക്കാന്‍ വിരലടയാള സെന്‍സറില്‍ അമര്‍ത്തിപ്പിടിക്കുക.</string>
     <string name="oneplus_fingerprint_sensor_longpress_for_quickpay_summary">ഫോണ്‍ അണ്‍ലോക്കായിരിക്കുമ്പോള്‍ ക്വിക് പേ ആരംഭിക്കാന്‍ വിരലടയാള സെന്‍സറില്‍ അമര്‍ത്തിപ്പിടിക്കുക</string>
     <string name="oneplus_fingerprint_settings_list_title">വിരലടയാള ലിസ്റ്റ്</string>
     <string name="oneplus_fingerprint_swipe_for_notifications_summary">നിങ്ങളുടെ അറിയിപ്പുകള്‍ പരിശോധിക്കുന്നതിന് വിരലടയാള സെന്‍സറില്‍ താഴേക്ക് സ്ലൈഡ് ചെയ്യുക, നോട്ടിഫിക്കേഷന്‍ പാനല്‍ അടയ്ക്കുന്നതിന് മുകളിലേക്ക് സ്ലൈഡ് ചെയ്യുക</string>
@@ -3143,7 +3147,7 @@ Selection ട്രിഗ്ഗര്‍ ചെയ്യുക"</string>
     <string name="oneplus_fnatic_mode_disturb_introduction_summary">എല്ലാ അറിയിപ്പുകളും കോളുകളും (ബാറ്ററി കുറവാണെന്ന അറിയിപ്പ്, അലാറം, ടൈമർ എന്നിവ ഒഴികെ) തടയുക.കോൾ ലോഗുകളിൽ മിസ്‌ഡ് കോളുകൾ സംരക്ഷിച്ചേക്കില്ല.</string>
     <string name="oneplus_fnatic_mode_disturb_introduction_title">വിപുലമായ DND</string>
     <string name="oneplus_fnatic_mode_enable_introduction_title">Fnatic മോഡ് ഉപയോഗിക്കാൻ ആദ്യം ഗെയിമിംഗ് മോഡ് പ്രാപ്തമാക്കിയിരിക്കണം</string>
-    <string name="oneplus_fnatic_mode_network_introduction_dual4g_summary">കുറഞ്ഞ ലേറ്റൻസി ഗെയിം പ്ലേയ്ക്കായി ഇടപെടൽ കുറയ്ക്കുന്നതിന് പ്രാഥമിക SIM കാർഡ് സിഗ്നൽ ശക്തി മുൻഗണന നൽകുന്നു. തൽഫലമായി സെക്കൻഡറി SIM കാർഡ് അപ്രാപ്തമാകുകയും കോളുകളോ സന്ദേശങ്ങളോ സ്വീകരിക്കുകയുമില്ല.</string>
+    <string name="oneplus_fnatic_mode_network_introduction_dual4g_summary">കുറഞ്ഞ ലേറ്റൻസി ഗെയിം പ്ലേയ്‌ക്കായി ഇടപെടൽ കുറയ്‌ക്കുന്നതിന് പ്രാഥമിക SIM കാർഡ് സിഗ്നൽ ശക്തി മുൻഗണന നൽകുന്നു. തൽഫലമായി സെക്കൻഡറി SIM കാർഡ് അപ്രാപ്‌തമാകുകയും കോളുകളോ സന്ദേശങ്ങളോ സ്വീകരിക്കാതിരിക്കുകയും ചെയ്യുന്നു.</string>
     <string name="oneplus_fnatic_mode_network_introduction_summary">നെറ്റ്‌വർക്ക് കണക്ഷന്റെ സ്ഥിരത മെച്ചപ്പെടുത്തുക</string>
     <string name="oneplus_fnatic_mode_network_introduction_title">നെറ്റ്‌വർക്ക് മെച്ചപ്പെടുത്തൽ</string>
     <string name="oneplus_fnatic_mode_summary">നിങ്ങളുടെ ഗെയിമിംഗ് അനുഭവം സൂപ്പർചാർജ് ചെയ്യുക</string>
@@ -3248,7 +3252,7 @@ Selection ട്രിഗ്ഗര്‍ ചെയ്യുക"</string>
     <string name="oneplus_haptic_feedback_title">ഹാപ്റ്റിക് ഫീഡ്ബാക്ക് മെച്ചപ്പെടുത്തൽ</string>
     <string name="oneplus_hardware_keys_action_split_screen">സ്‍പ്ലിറ്റ് സ്ക്രീന്‍ തുറക്കുക/അടയ്ക്കുക</string>
     <string name="oneplus_health_safety_information">ആരോഗ്യവും സുരക്ഷാ വിവരങ്ങളും</string>
-    <string name="oneplus_hearing_aid">ശ്രവണസഹായി അനുയോജ്യത</string>
+    <string name="oneplus_hearing_aid">ശ്രവണസഹായിയുമായുള്ള പൊരുത്തം</string>
     <string name="oneplus_hide_navigation_bar">നാവിഗേഷൻ ബാർ മറയ്ക്കുക</string>
     <string name="oneplus_hide_navkeys">നാവിഗേഷന്‍ ബാര്‍ മറയ്ക്കുക</string>
     <string name="oneplus_hide_navkeys_summary">നാവിഗേഷന്‍ ബാര്‍ കാണിക്കുന്നതിനോ മറയ്ക്കുന്നതിനോ ആയി ഒരു ബട്ടണ്‍ ചേര്‍ക്കുക</string>
@@ -3455,7 +3459,7 @@ Selection ട്രിഗ്ഗര്‍ ചെയ്യുക"</string>
     <string name="oneplus_quick_turn_on_camera">ക്യാമറ വേഗത്തിൽ ഓണാക്കുക</string>
     <string name="oneplus_quickpay">ക്വിക് പേ</string>
     <string name="oneplus_quickpay_confirm_changehomebutton">%1$s ല്‍ നിന്ന് \"ക്വിക് പേ\" ക്ക് വേണ്ടി ഹോം ബട്ടണ്‍ ദീര്‍ഘസമയം അമര്‍ത്തിപ്പിടിക്കുന്ന നടപടി മാറ്റണമെന്ന് നിങ്ങള്‍ക്ക് തീര്‍ച്ചയാണോ?</string>
-    <string name="oneplus_quickpay_entry_summary">ദ്രുതമായ പണമടയ്ക്കൽ ആരംഭിക്കുന്നതിന് ഹോം ബട്ടണില്‍ അമര്‍ത്തിപ്പിടിക്കുക</string>
+    <string name="oneplus_quickpay_entry_summary">ക്വിക് പേ ആരംഭിക്കുന്നതിന് ഹോം ബട്ടണില്‍ അമര്‍ത്തിപ്പിടിക്കുക</string>
     <string name="oneplus_quickpay_instructions">നിര്‍ദ്ദേശങ്ങള്‍</string>
     <string name="oneplus_quickpay_lock_swtch_summary">ഫോണ്‍ ലോക്കായിരിക്കുമ്പോള്‍ രജിസ്റ്റര്‍ ചെയ്ത വിരലടയാളം കൊണ്ട് ക്വിക് പേ ആരംഭിക്കാന്‍ ഹോം ബട്ടണില്‍ അമര്‍ത്തിപ്പിടിക്കുക.</string>
     <string name="oneplus_quickpay_lock_swtch_title">ഓഫായ സ്ക്രീനില്‍ നിന്ന് ക്വിക് പേ</string>
@@ -3471,7 +3475,7 @@ Selection ട്രിഗ്ഗര്‍ ചെയ്യുക"</string>
     <string name="oneplus_ramboost_switch_summary">നിങ്ങളുടെ ഉപയോഗമനുസരിച്ച് RAM ഉപയോഗം വർദ്ധിപ്പിക്കുക</string>
     <string name="oneplus_ramboost_switch_title">RAM ബൂസ്റ്റ് പ്രാപ്തമാക്കുക</string>
     <string name="oneplus_ramboost_title">RAM ബൂസ്റ്റ്</string>
-    <string name="oneplus_read_mode_app_list">വായനാ മോഡ് ആപ്പ് ലിസ്റ്റ്</string>
+    <string name="oneplus_read_mode_app_list">റീഡിങ്ങ് മോഡ് ആപ്പ് ലിസ്റ്റ്</string>
     <string name="oneplus_reading_mode">വായന മോഡ്</string>
     <string name="oneplus_reading_mode_activate_manual">മാനുവലായി ആക്ടിവേറ്റ് ചെയ്തു</string>
     <string name="oneplus_reading_mode_add_apps">വായന മോഡിന് വേണ്ടി ആപ്പുകള്‍ ചേര്‍ക്കുക</string>
@@ -3505,7 +3509,7 @@ Selection ട്രിഗ്ഗര്‍ ചെയ്യുക"</string>
     <string name="oneplus_rename_fingerprint_list">വിരലടയാളം പുനര്‍നാമകരണം ചെയ്യുക</string>
     <string name="oneplus_reset_all_data">എല്ലാ ഡാറ്റയും റീസെറ്റ് ചെയ്യുക</string>
     <string name="oneplus_reset_network">നെറ്റ്‍വര്‍ക്ക് ക്രമീകരണങ്ങള്‍ റീസെറ്റ് ചെയ്യുന്നു, ദയവായി കാത്തിരിക്കുക...</string>
-    <string name="oneplus_ring_pattern">റിങ്ങ്</string>
+    <string name="oneplus_ring_pattern">റിംങ്ങ്</string>
     <string name="oneplus_ring_pattern_soc_tri_state_summary">കോളുകളും അറിയിപ്പുകളും റിംഗ് ചെയ്യും</string>
     <string name="oneplus_ring_pattern_summary">കോളുകളും അറിയിപ്പുകളും റിംഗ് ചെയ്യും</string>
     <string name="oneplus_ringtone_and_vibrate">ശബ്ദവും വൈബ്രേഷനും</string>
@@ -3575,7 +3579,7 @@ Selection ട്രിഗ്ഗര്‍ ചെയ്യുക"</string>
     <string name="oneplus_search_keyword_swap_navkeys">സ്വാപ് ബട്ടണുകള്‍</string>
     <string name="oneplus_search_keyword_switch">കൈമാറ്റം,ഡാറ്റ മൈഗ്രേഷൻ</string>
     <string name="oneplus_search_keyword_theme_settings">ലോക്ക് സ്‌ക്രീൻ ഇഷ്‌ടാനുസൃതമാക്കൽ, വാൾപേപ്പറുകൾ, ക്ലോക്ക് സ്റ്റൈൽ, വിരലടയാള ആനിമേഷൻ, Horizon light, സിസ്റ്റം ഇഷ്‌ടാനുസൃതമാക്കൽ, ആക്‌സന്റ് നിറം, ആകൃതി, ഫോണ്ട്, ടോൺ, ഐക്കൺ പായ്ക്ക്, ഇല്ലുമിനേറ്റിംഗ് ലൈറ്റ്, ന്യുവാൻസ്ഡ് ഡാർക്ക്, ആകർഷകമായ നിറങ്ങൾ</string>
-    <string name="oneplus_search_keyword_theme_settings_mcl">ലോക്ക് സ്‌ക്രീൻ ഇഷ്‌ടാനുസൃതമാക്കൽ, വാൾപേപ്പറുകൾ, ക്ലോക്ക് സ്റ്റൈൽ, വിരലടയാള ആനിമേഷൻ, Horizon Light, സിസ്റ്റം ഇഷ്‌ടാനുസൃതമാക്കൽ, ആക്‌സന്റ് നിറം, ആകൃതി, ഫോണ്ട്, ടോൺ, ഐക്കൺ പായ്‌ക്ക്, ഇല്ലുമിനേറ്റിംഗ് ലൈറ്റ്, ന്യുവാൻസ്ഡ് ഡാർക്ക്, ആകർഷകമായ നിറങ്ങൾ, McLaren</string>
+    <string name="oneplus_search_keyword_theme_settings_mcl">ലോക്ക് സ്ക്രീൻ ഇഷ്‌ടാനുസൃതമാക്കൽ, വാൾപേപ്പറുകൾ, ക്ലോക്ക് സ്റ്റൈൽ, വിരലടയാള ആനിമേഷൻ, Horizon light, സിസ്റ്റം ഇഷ്‌ടാനുസൃതമാക്കൽ, ആക്സന്റ് നിറം, ആകൃതി, ഫോണ്ട്, ടോൺ, ഐക്കൺ പായ്ക്ക്, ഇല്ലുമിനേറ്റിംഗ് ലൈറ്റ്, ന്യുവാൻസ്ഡ് ഡാർക്ക്, ആകർഷകമായ നിറങ്ങൾ, McLaren</string>
     <string name="oneplus_search_keyword_three_screenshots">സ്ക്രീന്‍ഷോട്ട്</string>
     <string name="oneplus_search_keyword_timer_boot" />
     <string name="oneplus_search_keyword_user_experience">അറിയിപ്പുകൾ,അനുഭവം,പ്രോഗ്രാം,മെച്ചപ്പെടുത്തൽ</string>
@@ -3755,7 +3759,7 @@ Selection ട്രിഗ്ഗര്‍ ചെയ്യുക"</string>
     <string name="oneplus_vibration_settings_soc_tri_state">വൈബ്രേഷന്‍</string>
     <string name="oneplus_vibration_settings_soc_tri_state_summary">അലാമുകള്‍ ഒഴികെ കോളുകളും അറിയിപ്പുകളും വൈബ്രേഷൻ മാത്രമാക്കി നിശബ്ദമാക്കപ്പെടും</string>
     <string name="oneplus_vibration_summary">അലാമുകള്‍ എല്ലായ്‍പ്പോഴും റിംഗ് ചെയ്യും</string>
-    <string name="oneplus_video_enhancer">വീഡിയോ എന്‍ഹാന്‍സര്‍</string>
+    <string name="oneplus_video_enhancer">ആകർഷകമായ കളർ ഇഫക്‌റ്റ്</string>
     <string name="oneplus_video_enhancer_footer">വീഡിയോകള്‍ പ്ലേ ചെയ്യുമ്പോള്‍ നിറം വര്‍ദ്ധിപ്പിക്കുക</string>
     <string name="oneplus_video_enhancer_summary">വീഡിയോകള്‍ പ്ലേ ചെയ്യുമ്പോള്‍ നിറം വര്‍ദ്ധിപ്പിക്കുക</string>
     <string name="oneplus_volume_keys_adjust">ക്രമീകരിക്കാൻ വോളീയം ബട്ടണുകൾ ഉപയോഗിക്കുക</string>
@@ -3854,7 +3858,7 @@ Selection ട്രിഗ്ഗര്‍ ചെയ്യുക"</string>
     <string name="op_sim_card_with_slotid">SIM  %1$s</string>
     <string name="op_sim_cord">SIM &amp;&amp; നെറ്റ്‍വര്‍ക്ക്</string>
     <string name="op_sim_cord_summary">ഡിഫോൾട്ട് SIM കാർഡ്, ബാൻഡ്‌വിഡ്ത്ത് ഉപയോഗം</string>
-    <string name="op_sim_name_with_prefix">  (%1$s)</string>
+    <string name="op_sim_name_with_prefix">"  (%1$s)"</string>
     <string name="op_sms_ringtone">SMS റിംഗ്‍ടോണ്‍</string>
     <string name="op_starwar_mode_cannot_change_color_accent">സ്റ്റാര്‍വാര്‍ തീമിന് സിസ്റ്റം കളര്‍ തീം മാത്രമേ ഉപയോഗിക്കാനാവൂ</string>
     <string name="op_starwar_mode_title">സ്റ്റാര്‍ വാര്‍സ്</string>
@@ -4787,7 +4791,7 @@ UT ഇന്റര്‍ഫേസ്: %5$s"</string>
     <string name="status_bar_settings_cellular_title">സെല്ലുലാര്‍ ‍ഡാറ്റ</string>
     <string name="status_bar_settings_dnd_title">ശല്യപ്പെടുത്തരുത്</string>
     <string name="status_bar_settings_headset_title">ഹെഡ്‍സെറ്റ്</string>
-    <string name="status_bar_settings_hotspot_title">ഹോട്ട്‍സ്പോട്ട്</string>
+    <string name="status_bar_settings_hotspot_title">ഹോട്ട്‍സ്‌പോട്ട്</string>
     <string name="status_bar_settings_network_speed_title">നെറ്റ്‍വര്‍ക്ക് വേഗത പ്രദര്‍ശിപ്പിക്കുക</string>
     <string name="status_bar_settings_time_title">സമയം</string>
     <string name="status_bar_settings_wifi_title">Wi-Fi</string>

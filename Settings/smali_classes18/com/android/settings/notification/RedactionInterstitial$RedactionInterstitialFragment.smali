@@ -488,7 +488,7 @@
 
     const/4 v1, 0x0
 
-    const v2, 0x7f0a061c
+    const v2, 0x7f0a061e
 
     if-ne p2, v2, :cond_0
 
@@ -614,7 +614,7 @@
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 2
 
-    const v0, 0x7f0d028c
+    const v0, 0x7f0d0293
 
     const/4 v1, 0x0
 
@@ -652,7 +652,7 @@
 
     invoke-super {p0, p1, p2}, Lcom/android/settings/SettingsPreferenceFragment;->onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
 
-    const v0, 0x7f0a061c
+    const v0, 0x7f0a061e
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -664,7 +664,7 @@
 
     nop
 
-    const v0, 0x7f0a0592
+    const v0, 0x7f0a0594
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -684,7 +684,7 @@
 
     iput-object v0, p0, Lcom/android/settings/notification/RedactionInterstitial$RedactionInterstitialFragment;->mHideAllButton:Lcom/android/settings/RestrictedRadioButton;
 
-    const v0, 0x7f0a0596
+    const v0, 0x7f0a0598
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -692,7 +692,7 @@
 
     iput-object v0, p0, Lcom/android/settings/notification/RedactionInterstitial$RedactionInterstitialFragment;->mViewShowAll:Landroid/view/View;
 
-    const v0, 0x7f0a0595
+    const v0, 0x7f0a0597
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -700,7 +700,7 @@
 
     iput-object v0, p0, Lcom/android/settings/notification/RedactionInterstitial$RedactionInterstitialFragment;->mViewRedactSensitive:Landroid/view/View;
 
-    const v0, 0x7f0a0594
+    const v0, 0x7f0a0596
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -772,7 +772,7 @@
 
     if-eqz v0, :cond_0
 
-    const v0, 0x7f0a0689
+    const v0, 0x7f0a068b
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -780,11 +780,11 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    const v1, 0x7f120948
+    const v1, 0x7f120947
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
 
-    const v0, 0x7f0a0725
+    const v0, 0x7f0a0727
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -792,11 +792,11 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    const v1, 0x7f12094f
+    const v1, 0x7f12094e
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
 
-    const v0, 0x7f0a0724
+    const v0, 0x7f0a0726
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -804,7 +804,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    const v1, 0x7f12094d
+    const v1, 0x7f12094c
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
 
@@ -815,7 +815,7 @@
     invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
 
     :cond_0
-    const v0, 0x7f0a0593
+    const v0, 0x7f0a0595
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

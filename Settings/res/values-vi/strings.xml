@@ -2447,6 +2447,7 @@ Bạn có thể thay đổi cài đặt này từ Cài đặt > Ứng dụng và
 Bạn hiện đã đăng nhập vào các tài khoản sau đây:
 "</string>
     <string name="master_clear_button_text">Xóa tất cả dữ liệu</string>
+    <string name="master_clear_confirm_summary">Tất cả nội dung trong bộ nhớ trong cũng sẽ bị xóa, bao gồm nhạc, ảnh, video và các dữ liệu cá nhân khác. Xác nhận xóa?</string>
     <string name="master_clear_confirm_title">Xóa tất cả dữ liệu?</string>
     <string name="master_clear_desc">Hành động này sẽ xóa tất cả dữ liệu khỏi <b>bộ nhớ trong</b>" của điện thoại, bao gồm cả:
 
@@ -2925,7 +2926,7 @@ Tính năng cũng có thể bật hoặc tắt chế độ Không làm phiền v
     <string name="oneplus_auto_activate">Bật tự động</string>
     <string name="oneplus_auto_answer_via_bluetooth_summary">Cuộc gọi đến sẽ tự động được trả lời khi đang kết nối với thiết bị âm thanh Bluetooth</string>
     <string name="oneplus_auto_answer_via_bluetooth_title">Trả lời Thông minh dành cho Bluetooth</string>
-    <string name="oneplus_auto_check_pin_length">Xác nhận mã PIN mà không cần nhấn vào \"✓\"</string>
+    <string name="oneplus_auto_check_pin_length">Tự động mở khóa màn hình sau khi nhập mã PIN</string>
     <string name="oneplus_auto_disconect_the_ap">Điểm truy cập sẽ tự động tắt sau 5 phút nếu không có thiết bị nào kết nối.</string>
     <string name="oneplus_auto_open_app_none">Không có</string>
     <string name="oneplus_auto_open_app_other_applications">CÁC ỨNG DỤNG KHÁC</string>
@@ -3079,6 +3080,9 @@ Trình tiết kiệm pin sẽ tắt tự động khi thiết bị của bạn đ
 2.Trong một quy trình thiết lập, vui lòng chỉ nhập thông tin vân tay của một ngón tay"</string>
     <string name="oneplus_enroll_fingerprint_tips_title">Thông báo nhắc thiết lập vân tay</string>
     <string name="oneplus_enter_your_fingerprint">· Đăng ký vân tay của bạn</string>
+    <string name="oneplus_erase_system_data">XÓA DỮ LIỆU HỆ THỐNG</string>
+    <string name="oneplus_erase_system_data_summary">Dữ liệu hệt hống bao gồm thông tin tài khoản, danh bạ và dữ liệu ứng dụng sẽ bị xóa. Bạn không thể hoàn tác hành động này.</string>
+    <string name="oneplus_erase_system_data_title">Xóa dữ liệu hệ thống?</string>
     <string name="oneplus_esportmode_introduction_summary">Để kích hoạt chế độ Esports, hãy nhấn vào nút bật/tắt trên bảng điều khiển Chế độ chơi game.</string>
     <string name="oneplus_experience_improvement_programs">Chương trình cải thiện trải nghiệm</string>
     <string name="oneplus_face_auto_unlock_while_screen_on_sumary">Mở khóa điện thoại bằng gương mặt của bạn ngay khi màn hình bật lên mà không cần vuốt.</string>
@@ -3575,7 +3579,7 @@ Còn %d lượt."</string>
     <string name="oneplus_search_keyword_swap_navkeys">đổi chỗ các nút</string>
     <string name="oneplus_search_keyword_switch">chuyển, di chuyển dữ liệu</string>
     <string name="oneplus_search_keyword_theme_settings">TÙY CHỈNH MÀN HÌNH KHÓA, Hình nền, Kiểu đồng hồ, Hoạt ảnh vân tay, Horizon light, TÙY CHỈNH HỆ THỐNG, Màu nhấn mạnh, Hình dạng, Phông chữ, Tông màu, Gói biểu tượng, Ánh sáng chói lòa, Sắc thái tối, Sắc thái rực rỡ</string>
-    <string name="oneplus_search_keyword_theme_settings_mcl">TÙY CHỈNH MÀN HÌNH KHÓA, Hình nền, Kiểu đồng hồ, Hoạt ảnh vân tay, Horizon Light, TÙY CHỈNH HỆ THỐNG, Màu nhấn mạnh, Hình dạng, Phông chữ, Tông màu, Gói biểu tượng, Ánh sáng chói lòa, Sắc thái tối, Sắc thái rực rỡ, McLaren</string>
+    <string name="oneplus_search_keyword_theme_settings_mcl">TÙY CHỈNH MÀN HÌNH KHÓA, Hình nền, Kiểu đồng hồ, Hoạt ảnh vân tay, Horizon light, TÙY CHỈNH HỆ THỐNG, Màu nhấn mạnh, Hình dạng, Phông chữ, Tông màu, Gói biểu tượng, Ánh sáng chói lòa, Sắc thái tối, Sắc thái rực rỡ, McLaren</string>
     <string name="oneplus_search_keyword_three_screenshots">ảnh chụp màn hình</string>
     <string name="oneplus_search_keyword_timer_boot" />
     <string name="oneplus_search_keyword_user_experience">thông báo, trải nghiệm, chương trình, cải thiện</string>
@@ -3753,7 +3757,7 @@ Lưu ý:
     <string name="oneplus_vibration_settings_soc_tri_state">Rung</string>
     <string name="oneplus_vibration_settings_soc_tri_state_summary">Các cuộc gọi và thông báo sẽ bị tắt âm và đặt ở chế độ chỉ rung, ngoại trừ báo thức</string>
     <string name="oneplus_vibration_summary">Báo thức sẽ luôn reo</string>
-    <string name="oneplus_video_enhancer">Trình tăng cường video</string>
+    <string name="oneplus_video_enhancer">Hiệu ứng màu sắc rực rỡ</string>
     <string name="oneplus_video_enhancer_footer">Tăng cường màu sắc khi phát các video</string>
     <string name="oneplus_video_enhancer_summary">Tăng cường màu sắc khi phát các video</string>
     <string name="oneplus_volume_keys_adjust">Sử dụng các nút âm lượng để điều chỉnh</string>
@@ -4785,7 +4789,7 @@ Thông báo có thể bị chậm trễ đối với những ứng dụng này."
     <string name="status_bar_settings_cellular_title">Dữ liệu di động</string>
     <string name="status_bar_settings_dnd_title">Không làm phiền</string>
     <string name="status_bar_settings_headset_title">Bộ tai nghe</string>
-    <string name="status_bar_settings_hotspot_title">Hotspot</string>
+    <string name="status_bar_settings_hotspot_title">Điểm truy cập</string>
     <string name="status_bar_settings_network_speed_title">Hiển thị tốc độ mạng</string>
     <string name="status_bar_settings_time_title">Thời gian</string>
     <string name="status_bar_settings_wifi_title">Wi-Fi</string>

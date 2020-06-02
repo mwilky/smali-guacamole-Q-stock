@@ -262,7 +262,7 @@
 
     if-eqz v1, :cond_0
 
-    const v1, 0x7f1208f3
+    const v1, 0x7f1208f2
 
     new-instance v2, Lcom/android/settings/enterprise/-$$Lambda$ActionDisabledByAdminDialogHelper$6KhLFg05b1gb8U6JccTnxRXgU-0;
 
@@ -321,7 +321,7 @@
 
     invoke-direct {p0, v1, v3, v4, v5}, Lcom/android/settings/enterprise/ActionDisabledByAdminDialogHelper;->initializeDialogViews(Landroid/view/View;Landroid/content/ComponentName;ILjava/lang/String;)V
 
-    const v1, 0x7f120b9b
+    const v1, 0x7f120b9f
 
     invoke-virtual {v0, v1, v2}, Landroidx/appcompat/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroidx/appcompat/app/AlertDialog$Builder;
 
@@ -466,7 +466,7 @@
     return-void
 
     :cond_0
-    const v1, 0x7f1205f3
+    const v1, 0x7f1205f2
 
     if-nez p2, :cond_1
 
@@ -590,42 +590,42 @@
     goto :goto_1
 
     :cond_3
-    const v1, 0x7f1205f9
-
-    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
-
-    goto :goto_1
-
-    :cond_4
-    const v1, 0x7f1205f7
-
-    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
-
-    goto :goto_1
-
-    :cond_5
-    const v1, 0x7f1205f5
-
-    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
-
-    goto :goto_1
-
-    :cond_6
     const v1, 0x7f1205f8
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
 
     goto :goto_1
 
-    :cond_7
+    :cond_4
     const v1, 0x7f1205f6
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
 
     goto :goto_1
 
-    :cond_8
+    :cond_5
     const v1, 0x7f1205f4
+
+    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
+
+    goto :goto_1
+
+    :cond_6
+    const v1, 0x7f1205f7
+
+    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
+
+    goto :goto_1
+
+    :cond_7
+    const v1, 0x7f1205f5
+
+    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
+
+    goto :goto_1
+
+    :cond_8
+    const v1, 0x7f1205f3
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
 

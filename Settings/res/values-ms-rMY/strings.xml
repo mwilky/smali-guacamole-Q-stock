@@ -191,6 +191,7 @@ Adakah anda benar-benar mahu membolehkan fungsi ini?"</string>
     <string name="manage_device_administrators">Uruskan pentadbir peranti</string>
     <string name="manage_fingerprints_dialog">Buka kunci cap jari dibolehkan sekarang. Adakah anda ingin menguruskan cap jari anda?</string>
     <string name="manage_users">Uruskan pengguna</string>
+    <string name="master_clear_confirm_summary">Semua kandungan dalam storan dalaman akan dikeluarkan, termasuk muzik, foto, video dan data peribadi lain. Sahkan untuk padam?</string>
     <string name="memory_capacity_title">RAM</string>
     <string name="multi_app_label_badge">Selari %1$s</string>
     <string name="music_application_title">Aplikasi muzik</string>
@@ -250,7 +251,7 @@ Adakah anda benar-benar mahu membolehkan fungsi ini?"</string>
     <string name="oneplus_auto_activate">Dihidupkan secara automatik</string>
     <string name="oneplus_auto_answer_via_bluetooth_summary">Panggilan masuk akan dijawab secara automatik ketika disambungkan ke peranti audio Bluetooth</string>
     <string name="oneplus_auto_answer_via_bluetooth_title">Jawab Panggilan Pintar untuk Bluetooth</string>
-    <string name="oneplus_auto_check_pin_length">Sahkan PIN tanpa mengetik \"✓\"</string>
+    <string name="oneplus_auto_check_pin_length">Buka kunci skrin secara automatik selepas memasukkan PIN</string>
     <string name="oneplus_auto_disconect_the_ap">Hotspot akan dimatikan secara automatik selepas 5 minit jika tiada peranti disambungkan.</string>
     <string name="oneplus_auto_open_app_none">Tiada</string>
     <string name="oneplus_auto_open_app_other_applications">APLIKASI LAIN</string>
@@ -404,6 +405,9 @@ Penjimat bateri dipadamkan secara automatik apabila peranti anda sedang mengecas
 2.Dalam proses persediaan tunggal, sila masukkan maklumat jari cap untuk satu jari sahaja"</string>
     <string name="oneplus_enroll_fingerprint_tips_title">Prom persediaan cap jari</string>
     <string name="oneplus_enter_your_fingerprint">· Daftarkan cap jari anda</string>
+    <string name="oneplus_erase_system_data">PADAM DATA SISTEM</string>
+    <string name="oneplus_erase_system_data_summary">Data sistem termasuk maklumat akaun, kenalan dan data aplikasi akan dipadamkan. Tindakan ini tidak boleh dibuat asal.</string>
+    <string name="oneplus_erase_system_data_title">Padam data sistem?</string>
     <string name="oneplus_esportmode_introduction_summary">Untuk mengaktifkan mod E-sukan, ketik togol pada panel mod Permainan.</string>
     <string name="oneplus_experience_improvement_programs">Program peningkatan pengalaman</string>
     <string name="oneplus_face_auto_unlock_while_screen_on_sumary">Membuka kunci telefon anda dengan muka anda sebaik sahaja skrin dihidupkan tanpa mengeset terlebih dahulu.</string>
@@ -895,7 +899,7 @@ Perhatian: Cap jari anda mungkin kurang selamat berbanding corak atau PIN yang k
     <string name="oneplus_search_keyword_swap_navkeys">tukar butang</string>
     <string name="oneplus_search_keyword_switch">pindahan,pemindahan data</string>
     <string name="oneplus_search_keyword_theme_settings">PENYESUAIAN SKRIN KUNCI, Kertas dinding, Gaya jam, Animasi cap jari, Horizon light, PENYESUAIAN SISTEM, Warna serlah, Bentuk, Fon, Warna, Pek ikon, Cahaya iluminasi, Nuansa gelap, Warna meriah</string>
-    <string name="oneplus_search_keyword_theme_settings_mcl">PENYESUAIAN SKRIN KUNCI, Kertas dinding, Gaya jam, Animasi cap jari, Horizon Light, PENYESUAIAN SISTEM, Warna aksen, Bentuk, Fon, Warna, Pek ikon, Cahaya iluminasi, Nuansa gelap, Warna meriah, McLaren</string>
+    <string name="oneplus_search_keyword_theme_settings_mcl">PENYESUAIAN SKRIN KUNCI, Kertas dinding, Gaya jam, Animasi cap jari, Horizon light, PENYESUAIAN SISTEM, Warna aksen, Bentuk, Fon, Warna, Pek ikon, Cahaya iluminasi, Nuansa gelap, Warna meriah, McLaren</string>
     <string name="oneplus_search_keyword_three_screenshots">syot layar</string>
     <string name="oneplus_search_keyword_timer_boot" />
     <string name="oneplus_search_keyword_user_experience">pemberitahuan,pengalaman,program,peningkatan</string>
@@ -1075,7 +1079,7 @@ Nota: Buka Kunci Muka mungkin kurang selamat berbanding cap jari, PIN atau pilih
     <string name="oneplus_vibration_settings_soc_tri_state">Getaran</string>
     <string name="oneplus_vibration_settings_soc_tri_state_summary">Panggilan dan pemberitahuan akan disenyapkan dan disetkan untuk bergetar sahaja, kecuali penggera</string>
     <string name="oneplus_vibration_summary">Penggera akan sentiasa berdering</string>
-    <string name="oneplus_video_enhancer">Peningkat video</string>
+    <string name="oneplus_video_enhancer">Kesan warna terang</string>
     <string name="oneplus_video_enhancer_footer">Meningkatkan warna semasa memainkan video</string>
     <string name="oneplus_video_enhancer_summary">Meningkatkan warna semasa memainkan video</string>
     <string name="oneplus_volume_keys_adjust">Guna butang kelantangan untuk menyesuaikan</string>
@@ -1267,7 +1271,7 @@ Menetapkan rangkaian sebagai tersembunyi tidak akan mengubah tetapan penghala an
     <string name="status_bar_settings_cellular_title">Data selular</string>
     <string name="status_bar_settings_dnd_title">Jangan ganggu</string>
     <string name="status_bar_settings_headset_title">Fon kepala</string>
-    <string name="status_bar_settings_hotspot_title">Kawasan khas</string>
+    <string name="status_bar_settings_hotspot_title">Hotspot</string>
     <string name="status_bar_settings_network_speed_title">Paparkan kelajuan rangkaian</string>
     <string name="status_bar_settings_time_title">Masa</string>
     <string name="status_bar_settings_wifi_title">Wi-Fi</string>

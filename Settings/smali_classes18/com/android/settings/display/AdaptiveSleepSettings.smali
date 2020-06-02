@@ -35,7 +35,7 @@
 .method public getHelpResource()I
     .locals 1
 
-    const v0, 0x7f1207be
+    const v0, 0x7f1207bd
 
     return v0
 .end method
@@ -75,7 +75,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f08031a
+    const v1, 0x7f08031b
 
     invoke-virtual {v0, v1}, Lcom/oneplus/settings/widget/OPFooterPreference;->setIcon(I)V
 

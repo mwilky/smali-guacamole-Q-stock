@@ -92,7 +92,7 @@
 .method public onCreatePreferences(Landroid/os/Bundle;Ljava/lang/String;)V
     .locals 2
 
-    const v0, 0x7f0d0345
+    const v0, 0x7f0d034c
 
     invoke-virtual {p0, v0}, Lcom/android/settings/wifi/WifiAPITest;->addPreferencesFromResource(I)V
 

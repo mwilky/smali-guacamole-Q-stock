@@ -1507,7 +1507,7 @@
 
     invoke-direct {v5, v1}, Landroidx/appcompat/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v11, 0x7f121195
+    const v11, 0x7f12119d
 
     invoke-virtual {v1, v11}, Lcom/android/settings/applications/specialaccess/deviceadmin/DeviceAdminAdd;->getText(I)Ljava/lang/CharSequence;
 
@@ -1517,7 +1517,7 @@
 
     move-result-object v5
 
-    const v11, 0x7f0d0285
+    const v11, 0x7f0d028c
 
     invoke-virtual {v5, v11}, Landroidx/appcompat/app/AlertDialog$Builder;->setView(I)Landroidx/appcompat/app/AlertDialog$Builder;
 
@@ -1533,7 +1533,7 @@
 
     move-result-object v5
 
-    const v11, 0x7f1203da
+    const v11, 0x7f1203d8
 
     const/4 v12, 0x0
 
@@ -1607,7 +1607,7 @@
 
     iget-object v3, v1, Lcom/android/settings/applications/specialaccess/deviceadmin/DeviceAdminAdd;->mAdminWarning:Landroid/widget/TextView;
 
-    const v11, 0x7f1205ca
+    const v11, 0x7f1205c9
 
     const/4 v12, 0x1
 
@@ -1660,7 +1660,7 @@
 
     iput-object v0, v1, Lcom/android/settings/applications/specialaccess/deviceadmin/DeviceAdminAdd;->mAdminDescription:Landroid/widget/TextView;
 
-    const v0, 0x7f0a0567
+    const v0, 0x7f0a0569
 
     invoke-virtual {v1, v0}, Lcom/android/settings/applications/specialaccess/deviceadmin/DeviceAdminAdd;->findViewById(I)Landroid/view/View;
 
@@ -1772,7 +1772,7 @@
 
     invoke-virtual {v3, v5}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const v3, 0x7f0a0737
+    const v3, 0x7f0a0739
 
     invoke-virtual {v1, v3}, Lcom/android/settings/applications/specialaccess/deviceadmin/DeviceAdminAdd;->findViewById(I)Landroid/view/View;
 
@@ -1806,7 +1806,7 @@
 
     iput-object v3, v1, Lcom/android/settings/applications/specialaccess/deviceadmin/DeviceAdminAdd;->mActionButton:Landroid/widget/Button;
 
-    const v3, 0x7f0a05a8
+    const v3, 0x7f0a05aa
 
     invoke-virtual {v1, v3}, Lcom/android/settings/applications/specialaccess/deviceadmin/DeviceAdminAdd;->findViewById(I)Landroid/view/View;
 
@@ -1918,7 +1918,7 @@
 
     invoke-virtual {v1, v0}, Landroidx/appcompat/app/AlertDialog$Builder;->setMessage(Ljava/lang/CharSequence;)Landroidx/appcompat/app/AlertDialog$Builder;
 
-    const v2, 0x7f120618
+    const v2, 0x7f120617
 
     new-instance v3, Lcom/android/settings/applications/specialaccess/deviceadmin/DeviceAdminAdd$8;
 
@@ -1926,7 +1926,7 @@
 
     invoke-virtual {v1, v2, v3}, Landroidx/appcompat/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroidx/appcompat/app/AlertDialog$Builder;
 
-    const v2, 0x7f120613
+    const v2, 0x7f120612
 
     const/4 v3, 0x0
 
@@ -2119,7 +2119,7 @@
 .method updateInterface()V
     .locals 10
 
-    const v0, 0x7f0a05a9
+    const v0, 0x7f0a05ab
 
     invoke-virtual {p0, v0}, Lcom/android/settings/applications/specialaccess/deviceadmin/DeviceAdminAdd;->findViewById(I)Landroid/view/View;
 
@@ -2274,7 +2274,7 @@
 
     iget-object v6, p0, Lcom/android/settings/applications/specialaccess/deviceadmin/DeviceAdminAdd;->mActionButton:Landroid/widget/Button;
 
-    const v7, 0x7f12120e
+    const v7, 0x7f121216
 
     invoke-virtual {v6, v7}, Landroid/widget/Button;->setText(I)V
 
@@ -2314,7 +2314,7 @@
     goto/16 :goto_5
 
     :cond_3
-    const v0, 0x7f12120d
+    const v0, 0x7f121215
 
     if-nez v3, :cond_6
 
@@ -2343,7 +2343,7 @@
 
     iget-object v6, p0, Lcom/android/settings/applications/specialaccess/deviceadmin/DeviceAdminAdd;->mAdminWarning:Landroid/widget/TextView;
 
-    const v7, 0x7f1205c8
+    const v7, 0x7f1205c7
 
     new-array v4, v4, [Ljava/lang/Object;
 
@@ -2381,7 +2381,7 @@
 
     iget-object v0, p0, Lcom/android/settings/applications/specialaccess/deviceadmin/DeviceAdminAdd;->mActionButton:Landroid/widget/Button;
 
-    const v4, 0x7f12120c
+    const v4, 0x7f121214
 
     invoke-virtual {v0, v4}, Landroid/widget/Button;->setText(I)V
 
@@ -2468,7 +2468,7 @@
 
     iget-object v0, p0, Lcom/android/settings/applications/specialaccess/deviceadmin/DeviceAdminAdd;->mAdminWarning:Landroid/widget/TextView;
 
-    const v3, 0x7f1205c9
+    const v3, 0x7f1205c8
 
     new-array v5, v4, [Ljava/lang/Object;
 

@@ -1071,8 +1071,10 @@
     <item type="id" name="op_finger_edge_enroll_view" />
     <item type="id" name="op_finger_enroll_view" />
     <item type="id" name="op_finger_fod_bg_view" />
+    <item type="id" name="op_finger_recognition_continue_lottie_view" />
     <item type="id" name="op_finger_recognition_continue_view" />
     <item type="id" name="op_finger_recognition_continue_wave_view" />
+    <item type="id" name="op_finger_recognition_lottie_view" />
     <item type="id" name="op_finger_recognition_view" />
     <item type="id" name="op_fingerprint_enroll_tips_view" />
     <item type="id" name="op_fingerprint_name" />

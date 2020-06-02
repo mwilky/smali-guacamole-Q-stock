@@ -79,7 +79,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f07053a
+    const v3, 0x7f07053c
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getDimension(I)F
 
@@ -281,7 +281,7 @@
 
     iget-object v7, p0, Lcom/android/settings/widget/DonutView;->mTextPaint:Landroid/text/TextPaint;
 
-    const v8, 0x7f07053b
+    const v8, 0x7f07053d
 
     invoke-virtual {v2, v8}, Landroid/content/res/Resources;->getDimension(I)F
 
@@ -323,7 +323,7 @@
 
     iget-object v0, p0, Lcom/android/settings/widget/DonutView;->mBigNumberPaint:Landroid/text/TextPaint;
 
-    const v7, 0x7f07053d
+    const v7, 0x7f07053f
 
     invoke-virtual {v2, v7}, Landroid/content/res/Resources;->getDimension(I)F
 
@@ -565,13 +565,13 @@
 
     nop
 
-    const v0, 0x7f07053c
+    const v0, 0x7f07053e
 
     invoke-virtual {p0, v0}, Landroid/content/res/Resources;->getDimension(I)F
 
     move-result v0
 
-    const v1, 0x7f07053d
+    const v1, 0x7f07053f
 
     invoke-virtual {p0, v1}, Landroid/content/res/Resources;->getDimension(I)F
 
@@ -721,7 +721,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f121487
+    const v1, 0x7f12148f
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -749,7 +749,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f07053e
+    const v2, 0x7f070540
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getDimension(I)F
 
@@ -762,7 +762,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f12084b
+    const v1, 0x7f12084a
 
     const/4 v2, 0x2
 

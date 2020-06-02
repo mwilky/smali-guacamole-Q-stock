@@ -2447,6 +2447,7 @@ You can change this later from Settings > Apps &amp; notifications."</string>
 You are currently signed in to the following accounts:
 "</string>
     <string name="master_clear_button_text">Delete all data</string>
+    <string name="master_clear_confirm_summary">All content in the internal storage will also be removed, including music, photos, videos and other personal data. Confirm to erase?</string>
     <string name="master_clear_confirm_title">Erase all data?</string>
     <string name="master_clear_desc">This will erase all data from your phone’s <b>internal storage</b>", including:
 
@@ -2925,7 +2926,7 @@ This will also give the app the ability to turn Do Not Disturb on or off and cha
     <string name="oneplus_auto_activate">Turn on automatically</string>
     <string name="oneplus_auto_answer_via_bluetooth_summary">The incoming call will be automatically answered while connected to a Bluetooth audio device</string>
     <string name="oneplus_auto_answer_via_bluetooth_title">Smart Answer for Bluetooth</string>
-    <string name="oneplus_auto_check_pin_length">Confirm the PIN without tapping the \"✓\"</string>
+    <string name="oneplus_auto_check_pin_length">Automatically unlock screen after entering PIN</string>
     <string name="oneplus_auto_disconect_the_ap">The hotspot will automatically turn off after 5 minutes if no devices are connected.</string>
     <string name="oneplus_auto_open_app_none">None</string>
     <string name="oneplus_auto_open_app_other_applications">OTHER APPLICATIONS</string>
@@ -3079,6 +3080,9 @@ Battery saver turns off automatically when your device is charging."</string>
 2. Please only enter the information of one fingerprint during any one setup"</string>
     <string name="oneplus_enroll_fingerprint_tips_title">Fingerprint setup prompt</string>
     <string name="oneplus_enter_your_fingerprint">· Register your fingerprint</string>
+    <string name="oneplus_erase_system_data">ERASE SYSTEM DATA</string>
+    <string name="oneplus_erase_system_data_summary">"System data including account info, contacts and app data will be deleted. You can't undo this action."</string>
+    <string name="oneplus_erase_system_data_title">Erase system data?</string>
     <string name="oneplus_esportmode_introduction_summary">To activate Esports mode, tap the toggle on the Gaming mode panel.</string>
     <string name="oneplus_experience_improvement_programs">Experience improvement programs</string>
     <string name="oneplus_face_auto_unlock_while_screen_on_sumary">Unlock your phone with your face as soon as the screen turns on, without swiping first.</string>
@@ -3143,7 +3147,7 @@ Caution: Face Unlock is less secure than using a fingerprint or a password"</str
     <string name="oneplus_fnatic_mode_disturb_introduction_summary">Block all notifications and calls (except low battery notification, alarm and timer). Missed calls may not be saved in call logs.</string>
     <string name="oneplus_fnatic_mode_disturb_introduction_title">Advanced DND</string>
     <string name="oneplus_fnatic_mode_enable_introduction_title">Gaming mode must be enabled first in order to use Fnatic mode</string>
-    <string name="oneplus_fnatic_mode_network_introduction_dual4g_summary">Primary SIM card signal strength is prioritised to minimise interference for low latency game play. As a result the secondary SIM card will be disabled and calls or messages will not be received.</string>
+    <string name="oneplus_fnatic_mode_network_introduction_dual4g_summary">Primary SIM card signal strength is prioritised to minimise interference for low latency game play. As a result, the secondary SIM card will be disabled and calls or messages will not be received.</string>
     <string name="oneplus_fnatic_mode_network_introduction_summary">Improve the stability of the network connection</string>
     <string name="oneplus_fnatic_mode_network_introduction_title">Network enhancement</string>
     <string name="oneplus_fnatic_mode_summary">Supercharge your gaming experience</string>
@@ -3575,7 +3579,7 @@ Note: Your fingerprint may be less secure than a strong pattern or PIN"</string>
     <string name="oneplus_search_keyword_swap_navkeys">swap buttons</string>
     <string name="oneplus_search_keyword_switch">transfer, data migration</string>
     <string name="oneplus_search_keyword_theme_settings">LOCK SCREEN CUSTOMISATION, Wallpapers, Clock style, Fingerprint animation, Horizon light, SYSTEM CUSTOMISATION, Accent colour, Shape, Font, Tone, Icon pack, Illuminating light, Nuanced dark, Vibrant tints</string>
-    <string name="oneplus_search_keyword_theme_settings_mcl">LOCK SCREEN CUSTOMISATION, Wallpapers, Clock style, Fingerprint animation, Horizon Light, SYSTEM CUSTOMISATION, Accent colour, Shape, Font, Tone, Icon pack, Illuminating light, Nuanced dark, Vibrant tints, McLaren</string>
+    <string name="oneplus_search_keyword_theme_settings_mcl">LOCK SCREEN CUSTOMISATION, Wallpapers, Clock style, Fingerprint animation, Horizon light, SYSTEM CUSTOMISATION, Accent colour, Shape, Font, Tone, Icon pack, Illuminating light, Nuanced dark, Vibrant tints, McLaren</string>
     <string name="oneplus_search_keyword_three_screenshots">screenshot</string>
     <string name="oneplus_search_keyword_timer_boot" />
     <string name="oneplus_search_keyword_user_experience">notifications, experience, program, improvement</string>
@@ -3755,7 +3759,7 @@ Note: Face Unlock may be less secure than fingerprint, PIN or other screen lock 
     <string name="oneplus_vibration_settings_soc_tri_state">Vibration</string>
     <string name="oneplus_vibration_settings_soc_tri_state_summary">Calls and notifications will be silenced and set to vibrate only, except for alarms</string>
     <string name="oneplus_vibration_summary">The alarm will always ring</string>
-    <string name="oneplus_video_enhancer">Video enhancer</string>
+    <string name="oneplus_video_enhancer">Vibrant colour effect</string>
     <string name="oneplus_video_enhancer_footer">Enhance the colour while playing videos</string>
     <string name="oneplus_video_enhancer_summary">Enhance the colour while playing videos</string>
     <string name="oneplus_volume_keys_adjust">Use volume buttons to adjust</string>

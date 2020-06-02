@@ -609,7 +609,7 @@
 
     if-eqz v0, :cond_1
 
-    const v5, 0x7f1216ae
+    const v5, 0x7f1216b6
 
     invoke-virtual {v2, v5}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -628,7 +628,7 @@
     :cond_1
     if-eqz v1, :cond_2
 
-    const v5, 0x7f1216ac
+    const v5, 0x7f1216b4
 
     invoke-virtual {v2, v5}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -677,7 +677,7 @@
 
     move-result-object v6
 
-    const v7, 0x7f0705f5
+    const v7, 0x7f0705f7
 
     invoke-virtual {v6, v7}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 

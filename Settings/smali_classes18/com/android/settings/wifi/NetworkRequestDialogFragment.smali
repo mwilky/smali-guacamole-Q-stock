@@ -146,7 +146,7 @@
     move-result-object v1
 
     :cond_0
-    const v2, 0x7f120ab2
+    const v2, 0x7f120ab4
 
     const/4 v3, 0x1
 
@@ -632,7 +632,7 @@
 
     new-instance v8, Lcom/android/settings/wifi/NetworkRequestDialogFragment$AccessPointAdapter;
 
-    const v9, 0x7f0d024c
+    const v9, 0x7f0d0253
 
     invoke-virtual {p0}, Lcom/android/settings/wifi/NetworkRequestDialogFragment;->getAccessPointList()Ljava/util/List;
 
@@ -656,7 +656,7 @@
 
     move-result-object v8
 
-    const v9, 0x7f1203da
+    const v9, 0x7f1203d8
 
     new-instance v10, Lcom/android/settings/wifi/-$$Lambda$NetworkRequestDialogFragment$WCubGJZUXXghSB4GzGNKVjh70wc;
 
@@ -666,7 +666,7 @@
 
     move-result-object v8
 
-    const v9, 0x7f120ab1
+    const v9, 0x7f120ab3
 
     invoke-virtual {v8, v9, v2}, Landroidx/appcompat/app/AlertDialog$Builder;->setNeutralButton(ILandroid/content/DialogInterface$OnClickListener;)Landroidx/appcompat/app/AlertDialog$Builder;
 
@@ -676,7 +676,7 @@
 
     if-eqz v9, :cond_1
 
-    const v9, 0x7f1217ac
+    const v9, 0x7f1217b3
 
     invoke-virtual {v8, v9, v2}, Landroidx/appcompat/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroidx/appcompat/app/AlertDialog$Builder;
 
@@ -893,7 +893,7 @@
 
     if-eqz v0, :cond_0
 
-    const v1, 0x7f120aaf
+    const v1, 0x7f120ab1
 
     const/4 v2, 0x0
 

@@ -2447,6 +2447,7 @@ Możesz zmienić to ustawienie później, wybierając Ustawienia > Aplikacje i 
 W tej chwili używasz kont:
 "</string>
     <string name="master_clear_button_text">Usuń wszystkie dane</string>
+    <string name="master_clear_confirm_summary">Zostanie również usunięta cała zawartość pamięci wewnętrznej, włącznie z muzyką, zdjęciami, wideo i innymi danymi użytkownika. Czy chcesz potwierdzić wyczyszczenie?</string>
     <string name="master_clear_confirm_title">Usunąć wszystkie dane?</string>
     <string name="master_clear_desc">Zostaną usunięte wszystkie dane z <b>pamięci wewnętrznej</b>" telefonu, w tym:
 
@@ -2925,7 +2926,7 @@ Dodatkowo aplikacja będzie mogła włączać lub wyłączać opcję Nie przeszk
     <string name="oneplus_auto_activate">Włączaj automatycznie</string>
     <string name="oneplus_auto_answer_via_bluetooth_summary">Przy połączeniu z urządzeniem audio Bluetooth połączenie przychodzące zostanie automatycznie odebrane</string>
     <string name="oneplus_auto_answer_via_bluetooth_title">Inteligentne odpowiedzi dla Bluetooth</string>
-    <string name="oneplus_auto_check_pin_length">Potwierdź PIN bez dotykania „✓”</string>
+    <string name="oneplus_auto_check_pin_length">Automatycznie odblokuj ekran po wprowadzeniu kodu PIN</string>
     <string name="oneplus_auto_disconect_the_ap">Hotspot automatycznie wyłączy się po 5 minutach, jeśli nie zostanie podłączone żadne urządzenie.</string>
     <string name="oneplus_auto_open_app_none">Brak</string>
     <string name="oneplus_auto_open_app_other_applications">INNE APLIKACJE</string>
@@ -3079,6 +3080,9 @@ Tryb Oszczędzanie baterii jest automatycznie wyłączany na czas ładowania tel
 2. Podczas konfiguracji wprowadź tylko jeden odcisk palcainformacje o odcisku palca"</string>
     <string name="oneplus_enroll_fingerprint_tips_title">Monit konfiguracji odcisku palca</string>
     <string name="oneplus_enter_your_fingerprint">· Zarejestruj odcisk palca</string>
+    <string name="oneplus_erase_system_data">WYCZYŚĆ DANE SYSTEMU</string>
+    <string name="oneplus_erase_system_data_summary">Zostaną wyczyszczone dane systemu, między innymi informacje o koncie, kontakty i dane aplikacji. Tej czynności nie można cofnąć.</string>
+    <string name="oneplus_erase_system_data_title">Wyczyścić dane systemu?</string>
     <string name="oneplus_esportmode_introduction_summary">Aby włączyć tryb Esports, dotknij przełącznika na panelu trybu gry.</string>
     <string name="oneplus_experience_improvement_programs">Programy poprawy wrażeń</string>
     <string name="oneplus_face_auto_unlock_while_screen_on_sumary">Odblokuj telefon za pomocą twarzy przy włączeniu ekranu bez uprzedniego przesuwania palcem.</string>
@@ -3143,7 +3147,7 @@ Uwaga: funkcja odblokowania twarzą jest mniej bezpieczna niż odcisk palca i ha
     <string name="oneplus_fnatic_mode_disturb_introduction_summary">Blokowanie wszystkich powiadomień i połączeń (z wyjątkiem powiadomienia o niskim stanie baterii, alarmu i czasomierza). Nieodebrane połączenia mogą nie zostać zapisane w dziennikach połączeń.</string>
     <string name="oneplus_fnatic_mode_disturb_introduction_title">Zaawansowane DND</string>
     <string name="oneplus_fnatic_mode_enable_introduction_title">Aby korzystać z trybu Fnatic, najpierw włącz tryb gry</string>
-    <string name="oneplus_fnatic_mode_network_introduction_dual4g_summary">Siła sygnału pierwotnej karty SIM jest priorytetowo traktowana w celu zminimalizowania zakłóceń i opóźnienień w grze. Dodatkowa karta SIM zostanie wyłączona, a połączenia i wiadomości nie będą odbierane.</string>
+    <string name="oneplus_fnatic_mode_network_introduction_dual4g_summary">Siła sygnału głównej karty SIM jest traktowana priorytetowo w celu zminimalizowania zakłóceń i opóźnień w grze. Dodatkowa karta SIM zostanie wyłączona, a połączenia i wiadomości nie będą odbierane.</string>
     <string name="oneplus_fnatic_mode_network_introduction_summary">Popraw stabilność połączenia internetowego</string>
     <string name="oneplus_fnatic_mode_network_introduction_title">Poprawa jakości sygnału sieci</string>
     <string name="oneplus_fnatic_mode_summary">Przenieś wrażenia z gry na wyższy poziom</string>
@@ -3755,7 +3759,7 @@ Uwaga: korzystanie z funkcji Odblokowanie twarzą może być mniej bezpieczne ni
     <string name="oneplus_vibration_settings_soc_tri_state">Wibracja</string>
     <string name="oneplus_vibration_settings_soc_tri_state_summary">Połączenia i powiadomienia, z wyjątkiem alarmów, zostaną wyciszone z włączoną wibracją</string>
     <string name="oneplus_vibration_summary">Alarm ma zawsze dzwonić</string>
-    <string name="oneplus_video_enhancer">Polepszacz wideo</string>
+    <string name="oneplus_video_enhancer">Żywy efekt kolorów</string>
     <string name="oneplus_video_enhancer_footer">Poprawiaj kolory podczas odtwarzania filmów</string>
     <string name="oneplus_video_enhancer_summary">Poprawiaj kolory podczas odtwarzania filmów</string>
     <string name="oneplus_volume_keys_adjust">Użyj przycisków głośności w celu regulacji</string>
@@ -3773,7 +3777,7 @@ Ustawienie sieci jako ukrytej nie ma wpływa na ustawienia routera."</string>
     <string name="oneplus_wifi_ipv6_surport_summary">Wyłącz IPv6 w razie problemów kompatybilności z niektórymi routerami Wi-Fi.</string>
     <string name="oneplus_wifi_ipv6_surport_title">Obsługa IPv6</string>
     <string name="oneplus_wifi_list">Lista Wi‑Fi</string>
-    <string name="oneplus_wifi_name">Nazwa hotspota mobilnego</string>
+    <string name="oneplus_wifi_name">Nazwa mobilnego hotspotu</string>
     <string name="oneplus_wifi_name_dialog_message">Jeśli wyłączysz opcję nazwy sieci transmisji (SSID), telefon nie będzie widoczny dla innych urządzeń i nie pojawi się na liście dostępnych sieci Wi-Fi. Inne urządzenia nadal mogą łączyć się z Twoim hotspotem po ręcznym wprowadzeniu nazwy sieci.</string>
     <string name="oneplus_wifi_name_dialog_title">Twój hotspot nie jest widoczny teraz</string>
     <string name="oneplus_wifi_scan_always_available">Skanowanie zawsze dostępne</string>
@@ -5098,7 +5102,7 @@ Synchronizacja danych daje Ci dostęp do kontaktów, wydarzeń i innych ważnych
     <string name="tether_error_item_default">Połączenie</string>
     <string name="tether_error_message">Nie subskrybujesz %1$s.</string>
     <string name="tether_error_title">Błąd %1$s</string>
-    <string name="tether_no_sim_message">Włóż kartę SIM, aby korzystać z mobilnego hotspota lub innych opcji połączeń</string>
+    <string name="tether_no_sim_message">Włóż kartę SIM, aby korzystać z mobilnego hotspotu lub innych opcji połączeń</string>
     <string name="tether_no_sim_title">Brak karty SIM</string>
     <string name="tether_settings_disabled_on_data_saver">Nie można korzystać z tetheringu ani przenośnych hotspotów, gdy Oszczędzanie danych jest włączone</string>
     <string name="tether_settings_summary_hotspot_off_tether_on">Tethering</string>
@@ -5886,7 +5890,7 @@ Zezwolić na to wszystkim aplikacjom, które chcą wykonywać skanowanie?"</stri
     <string name="wifi_scan_throttling">Ograniczanie skanowania Wi-Fi</string>
     <string name="wifi_scan_throttling_summary">Zmniejsza zużycie baterii i zwiększa wydajność sieci</string>
     <string name="wifi_security">Zabezpieczenia</string>
-    <string name="wifi_security_dialog">Otwarte zabezpieczenia umożliwiają dowolnym urządzeniom łączenie się z Twoim hotspotem mobilnym oraz korzystanie z danych mobilnych.</string>
+    <string name="wifi_security_dialog">Otwarte zabezpieczenia umożliwiają dowolnym urządzeniom łączenie się z Twoim mobilnym hotspotem oraz korzystanie z danych mobilnych.</string>
     <string name="wifi_security_none">Brak</string>
     <string name="wifi_security_open">Otwórz</string>
     <string name="wifi_select_network">Wybierz Wi-Fi</string>

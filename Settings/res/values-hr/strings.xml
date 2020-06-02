@@ -2447,6 +2447,7 @@ To možete kasnije promijeniti u izborniku Postavke > Aplikacije i obavijesti."<
 Trenutačno ste prijavljeni na sljedeće račune:
 "</string>
     <string name="master_clear_button_text">Brisanje svih podataka</string>
+    <string name="master_clear_confirm_summary">Uklonit će se i cjelokupni sadržaj interne pohrane, uključujući glazbu, fotografije, videozapise i druge osobne podatke. Potvrđujete brisanje?</string>
     <string name="master_clear_confirm_title">Želite izbrisati sve podatke?</string>
     <string name="master_clear_desc">Time će se izbrisati svi podaci iz <b>interne pohrane</b>" telefona, uključujući:
 
@@ -2925,7 +2926,7 @@ Aplikacija će također moći uključiti ili isključiti značajku Ne ometaj i p
     <string name="oneplus_auto_activate">Uključi automatski</string>
     <string name="oneplus_auto_answer_via_bluetooth_summary">Dok je povezan Bluetooth zvučni uređaj, na dolazni se poziv automatski odgovara</string>
     <string name="oneplus_auto_answer_via_bluetooth_title">Pametni odgovor za Bluetooth</string>
-    <string name="oneplus_auto_check_pin_length">Potvrdi PIN bez dodirivanja \"✓\"</string>
+    <string name="oneplus_auto_check_pin_length">Automatski otključaj zaslon nakon unosa PIN-a</string>
     <string name="oneplus_auto_disconect_the_ap">Žarišna točka automatski se isključuje nakon 5 min ako se ne poveže niti jedan uređaj.</string>
     <string name="oneplus_auto_open_app_none">Ništa</string>
     <string name="oneplus_auto_open_app_other_applications">DRUGE APLIKACIJE</string>
@@ -3079,6 +3080,9 @@ Aplikacija će također moći uključiti ili isključiti značajku Ne ometaj i p
 2.U jednom postupku postavljanja unesite podatke samo jednog otiska prsta"</string>
     <string name="oneplus_enroll_fingerprint_tips_title">Upit za postavljanje otiska prsta</string>
     <string name="oneplus_enter_your_fingerprint">· Primijeniti vaš otisak prsta</string>
+    <string name="oneplus_erase_system_data">IZBRIŠI SUSTAVNE PODATKE</string>
+    <string name="oneplus_erase_system_data_summary">Izbrisat će se sustavni podaci uključujući podatke računa, kontakte i podatke aplikacija. Tu radnju ne možete poništiti.</string>
+    <string name="oneplus_erase_system_data_title">Izbrisati sustavne podatke?</string>
     <string name="oneplus_esportmode_introduction_summary">Da biste aktivirali E-sport način, dodirnite prekidač na ploči Način igranja.</string>
     <string name="oneplus_experience_improvement_programs">Programi poboljšanja iskustva</string>
     <string name="oneplus_face_auto_unlock_while_screen_on_sumary">Otključajte telefon svojim licem čim se zaslon uključi, bez prethodnog prijelaza prstom.</string>
@@ -3755,9 +3759,9 @@ Napomena: otključavanje licem može biti manje sigurno od otiska prsta, PIN kod
     <string name="oneplus_vibration_settings_soc_tri_state">Vibracija</string>
     <string name="oneplus_vibration_settings_soc_tri_state_summary">Pozivi i obavijesti bit će utišani i postavljeni samo na vibraciju, osim alarma</string>
     <string name="oneplus_vibration_summary">Alarm će uvijek zvoniti</string>
-    <string name="oneplus_video_enhancer">Poboljšavač videozapisa</string>
-    <string name="oneplus_video_enhancer_footer">Poboljšava boju tijekom reprodukcije videozapisa</string>
-    <string name="oneplus_video_enhancer_summary">Poboljšava boju tijekom reprodukcije videozapisa</string>
+    <string name="oneplus_video_enhancer">Živopisan efekt u boji</string>
+    <string name="oneplus_video_enhancer_footer">Poboljšajte boju tijekom reprodukcije videozapisa</string>
+    <string name="oneplus_video_enhancer_summary">Poboljšajte boju tijekom reprodukcije videozapisa</string>
     <string name="oneplus_volume_keys_adjust">Prilagodite koristeći se tipkama za glasnoću</string>
     <string name="oneplus_volume_keys_adjust_media">Glasnoća medija</string>
     <string name="oneplus_volume_keys_adjust_ringtones">Glasnoća zvona</string>
@@ -4787,7 +4791,7 @@ To omogućuje pouzdana vjerodajnica koja je instalirana na vašem uređaju."</st
     <string name="status_bar_settings_cellular_title">Mobilni podaci</string>
     <string name="status_bar_settings_dnd_title">Ne ometaj</string>
     <string name="status_bar_settings_headset_title">Slušalice</string>
-    <string name="status_bar_settings_hotspot_title">Žarišna točka</string>
+    <string name="status_bar_settings_hotspot_title">Pristupna točka</string>
     <string name="status_bar_settings_network_speed_title">Mrežna brzina zaslona</string>
     <string name="status_bar_settings_time_title">Vrijeme</string>
     <string name="status_bar_settings_wifi_title">Wi-Fi</string>

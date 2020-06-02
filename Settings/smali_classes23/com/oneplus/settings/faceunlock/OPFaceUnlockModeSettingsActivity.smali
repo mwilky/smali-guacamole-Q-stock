@@ -332,7 +332,7 @@
 
     if-eqz v0, :cond_0
 
-    const v0, 0x7f1303a7
+    const v0, 0x7f1303a8
 
     invoke-virtual {p0, v0}, Lcom/oneplus/settings/faceunlock/OPFaceUnlockModeSettingsActivity;->setTheme(I)V
 
@@ -395,7 +395,7 @@
 
     iput-object v0, p0, Lcom/oneplus/settings/faceunlock/OPFaceUnlockModeSettingsActivity;->mPressPowerkeyButton:Landroid/widget/RadioButton;
 
-    const v0, 0x7f0a04c9
+    const v0, 0x7f0a04cb
 
     invoke-virtual {p0, v0}, Lcom/oneplus/settings/faceunlock/OPFaceUnlockModeSettingsActivity;->findViewById(I)Landroid/view/View;
 
@@ -425,7 +425,7 @@
 
     iget-object v0, p0, Lcom/oneplus/settings/faceunlock/OPFaceUnlockModeSettingsActivity;->mDoneButton:Landroid/widget/Button;
 
-    const v1, 0x7f120ace
+    const v1, 0x7f120ad2
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setText(I)V
 

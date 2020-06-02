@@ -99,7 +99,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f12126b
+    const v1, 0x7f121273
 
     invoke-virtual {v0, v1}, Landroidx/fragment/app/FragmentActivity;->setTitle(I)V
 
@@ -115,7 +115,7 @@
 
     const/4 v1, 0x0
 
-    const v2, 0x7f121393
+    const v2, 0x7f12139b
 
     invoke-interface {p1, v1, v0, v0, v2}, Landroid/view/Menu;->add(IIII)Landroid/view/MenuItem;
 
@@ -125,7 +125,7 @@
 
     const/4 v0, 0x2
 
-    const v2, 0x7f12137f
+    const v2, 0x7f121387
 
     invoke-interface {p1, v1, v0, v0, v2}, Landroid/view/Menu;->add(IIII)Landroid/view/MenuItem;
 
@@ -149,7 +149,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0a05c5
+    const v1, 0x7f0a05c7
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

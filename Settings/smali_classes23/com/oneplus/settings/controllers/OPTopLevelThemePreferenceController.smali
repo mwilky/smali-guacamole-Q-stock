@@ -51,7 +51,7 @@
 
     iget-object v0, p0, Lcom/oneplus/settings/controllers/OPTopLevelThemePreferenceController;->mContext:Landroid/content/Context;
 
-    const v1, 0x7f120f7a
+    const v1, 0x7f120f78
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

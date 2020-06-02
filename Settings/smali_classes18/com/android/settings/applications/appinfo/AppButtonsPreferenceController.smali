@@ -29,7 +29,7 @@
 
 .field private static final KEY_LATIN_INPUTMETHOD:Ljava/lang/String; = "com.android.inputmethod.latin"
 
-.field private static final KEY_MARKET:Ljava/lang/String; = "com.oppo.market"
+.field private static final KEY_MARKET:Ljava/lang/String; = "com.heytap.market"
 
 .field private static final LOCAL_LOGV:Z = false
 
@@ -780,13 +780,13 @@
 
     check-cast v0, Lcom/android/settingslib/widget/ActionButtonsPreference;
 
-    const v1, 0x7f1208ca
+    const v1, 0x7f1208c9
 
     invoke-virtual {v0, v1}, Lcom/android/settingslib/widget/ActionButtonsPreference;->setButton1Text(I)Lcom/android/settingslib/widget/ActionButtonsPreference;
 
     move-result-object v0
 
-    const v1, 0x7f08034c
+    const v1, 0x7f08034d
 
     invoke-virtual {v0, v1}, Lcom/android/settingslib/widget/ActionButtonsPreference;->setButton1Icon(I)Lcom/android/settingslib/widget/ActionButtonsPreference;
 
@@ -800,13 +800,13 @@
 
     move-result-object v0
 
-    const v1, 0x7f1215d9
+    const v1, 0x7f1215e1
 
     invoke-virtual {v0, v1}, Lcom/android/settingslib/widget/ActionButtonsPreference;->setButton2Text(I)Lcom/android/settingslib/widget/ActionButtonsPreference;
 
     move-result-object v0
 
-    const v1, 0x7f08033a
+    const v1, 0x7f08033b
 
     invoke-virtual {v0, v1}, Lcom/android/settingslib/widget/ActionButtonsPreference;->setButton2Icon(I)Lcom/android/settingslib/widget/ActionButtonsPreference;
 
@@ -822,13 +822,13 @@
 
     move-result-object v0
 
-    const v1, 0x7f12073f
+    const v1, 0x7f12073e
 
     invoke-virtual {v0, v1}, Lcom/android/settingslib/widget/ActionButtonsPreference;->setButton3Text(I)Lcom/android/settingslib/widget/ActionButtonsPreference;
 
     move-result-object v0
 
-    const v1, 0x7f080341
+    const v1, 0x7f080342
 
     invoke-virtual {v0, v1}, Lcom/android/settingslib/widget/ActionButtonsPreference;->setButton3Icon(I)Lcom/android/settingslib/widget/ActionButtonsPreference;
 
@@ -1126,9 +1126,9 @@
 
     move-result v1
 
-    const v2, 0x7f08033d
+    const v2, 0x7f08033e
 
-    const v3, 0x7f1205ed
+    const v3, 0x7f1205ec
 
     if-nez v1, :cond_2
 
@@ -1182,7 +1182,7 @@
 
     iget-object v1, v1, Landroid/content/pm/ApplicationInfo;->packageName:Ljava/lang/String;
 
-    const-string v4, "com.oppo.market"
+    const-string v4, "com.heytap.market"
 
     invoke-virtual {v4, v1}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
@@ -1240,13 +1240,13 @@
     :cond_1
     iget-object v1, p0, Lcom/android/settings/applications/appinfo/AppButtonsPreferenceController;->mButtonsPref:Lcom/android/settingslib/widget/ActionButtonsPreference;
 
-    const v2, 0x7f120673
+    const v2, 0x7f120672
 
     invoke-virtual {v1, v2}, Lcom/android/settingslib/widget/ActionButtonsPreference;->setButton2Text(I)Lcom/android/settingslib/widget/ActionButtonsPreference;
 
     move-result-object v1
 
-    const v2, 0x7f080340
+    const v2, 0x7f080341
 
     invoke-virtual {v1, v2}, Lcom/android/settingslib/widget/ActionButtonsPreference;->setButton2Icon(I)Lcom/android/settingslib/widget/ActionButtonsPreference;
 
@@ -2235,7 +2235,7 @@
     :goto_4
     iget-object v1, p0, Lcom/android/settings/applications/appinfo/AppButtonsPreferenceController;->mContext:Landroid/content/Context;
 
-    const v4, 0x7f120c22
+    const v4, 0x7f120c24
 
     invoke-virtual {v1, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -2255,7 +2255,7 @@
 
     iget-object v1, p0, Lcom/android/settings/applications/appinfo/AppButtonsPreferenceController;->mContext:Landroid/content/Context;
 
-    const v4, 0x7f120c23
+    const v4, 0x7f120c25
 
     invoke-virtual {v1, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

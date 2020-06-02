@@ -69,7 +69,7 @@
 
     move-result-object v1
 
-    const-wide/16 v2, 0xfa
+    const-wide/16 v2, 0x2ee
 
     invoke-virtual {v0, v1, v2, v3}, Landroid/widget/ProgressBar;->postDelayed(Ljava/lang/Runnable;J)Z
 

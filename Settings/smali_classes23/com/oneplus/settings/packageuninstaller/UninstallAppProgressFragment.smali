@@ -82,7 +82,7 @@
         .end annotation
     .end param
 
-    const v0, 0x7f0d023b
+    const v0, 0x7f0d0242
 
     const/4 v1, 0x0
 
@@ -122,7 +122,7 @@
 
     iput-object v2, p0, Lcom/oneplus/settings/packageuninstaller/UninstallAppProgressFragment;->mDeviceManagerButton:Landroid/widget/Button;
 
-    const v2, 0x7f0a0752
+    const v2, 0x7f0a0754
 
     invoke-virtual {v0, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -222,7 +222,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0a0572
+    const v1, 0x7f0a0574
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -232,7 +232,7 @@
 
     invoke-virtual {v1, v2}, Landroid/view/View;->setVisibility(I)V
 
-    const v1, 0x7f0a0661
+    const v1, 0x7f0a0663
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -242,7 +242,7 @@
 
     invoke-virtual {v1, v2}, Landroid/view/View;->setVisibility(I)V
 
-    const v1, 0x7f0a0660
+    const v1, 0x7f0a0662
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

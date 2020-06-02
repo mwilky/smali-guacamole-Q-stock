@@ -23,7 +23,7 @@
 
     iget-object v0, p0, Lcom/android/settings/display/WallpaperPreferenceController;->mContext:Landroid/content/Context;
 
-    const v1, 0x7f120486
+    const v1, 0x7f120485
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -33,7 +33,7 @@
 
     iget-object v0, p0, Lcom/android/settings/display/WallpaperPreferenceController;->mContext:Landroid/content/Context;
 
-    const v1, 0x7f120485
+    const v1, 0x7f120484
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -43,7 +43,7 @@
 
     iget-object v0, p0, Lcom/android/settings/display/WallpaperPreferenceController;->mContext:Landroid/content/Context;
 
-    const v1, 0x7f120484
+    const v1, 0x7f120483
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -276,7 +276,7 @@
 
     iget-object v1, p0, Lcom/android/settings/display/WallpaperPreferenceController;->mContext:Landroid/content/Context;
 
-    const v2, 0x7f1208b3
+    const v2, 0x7f1208b2
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -296,7 +296,7 @@
 
     iget-object v2, p0, Lcom/android/settings/display/WallpaperPreferenceController;->mContext:Landroid/content/Context;
 
-    const v3, 0x7f121550
+    const v3, 0x7f121558
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -308,7 +308,7 @@
 
     iget-object v1, p0, Lcom/android/settings/display/WallpaperPreferenceController;->mContext:Landroid/content/Context;
 
-    const v2, 0x7f120873
+    const v2, 0x7f120872
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -335,12 +335,12 @@
 
     if-eqz v1, :cond_0
 
-    const v1, 0x7f1214dd
+    const v1, 0x7f1214e5
 
     goto :goto_0
 
     :cond_0
-    const v1, 0x7f121743
+    const v1, 0x7f12174b
 
     :goto_0
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;

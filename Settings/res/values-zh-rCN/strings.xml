@@ -2402,6 +2402,7 @@
 目前，您已登录以下帐号：
 "</string>
     <string name="master_clear_button_text">清除所有数据</string>
+    <string name="master_clear_confirm_summary">内部存储中的所有内容也将一并清除，包括你的音乐、照片、视频等。是否确认清除？</string>
     <string name="master_clear_confirm_title">要清除所有数据吗？</string>
     <string name="master_clear_desc">此操作会清除您手机<b>内部存储空间</b>"中的所有数据，包括：
 
@@ -3059,6 +3060,9 @@
 2.单次录入过程中，请仅录入一个手指的指纹信息"</string>
     <string name="oneplus_enroll_fingerprint_tips_title">指纹录入提示</string>
     <string name="oneplus_enter_your_fingerprint">· 录入您的指纹</string>
+    <string name="oneplus_erase_system_data">清除系统数据</string>
+    <string name="oneplus_erase_system_data_summary">将删除包括账号信息、联系人信息、下载应用等在内的系统数据，此操作无法撤销。</string>
+    <string name="oneplus_erase_system_data_title">要清除系统数据吗？</string>
     <string name="oneplus_esportmode_introduction_summary">你可以在游戏模式启动的弹窗上切换为电竞模式</string>
     <string name="oneplus_experience_improvement_programs">体验改进计划</string>
     <string name="oneplus_face_auto_unlock_while_screen_on_sumary">亮屏幕后无需向上滑动，立刻使用人脸解锁</string>
@@ -3915,6 +3919,8 @@
     <string name="op_battery_info_voltage_label">电池电压：</string>
     <string name="op_battery_info_voltage_units">mV</string>
     <string name="op_buttons_settings">按键</string>
+    <string name="op_charging_optimization">充电优化</string>
+    <string name="op_charging_optimization_summary">根据你的使用习惯优化充电方式</string>
     <string name="op_china_mobile">中国移动</string>
     <string name="op_china_telecom">中国电信</string>
     <string name="op_china_unicom">中国联通</string>

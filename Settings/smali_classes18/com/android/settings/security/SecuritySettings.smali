@@ -4,15 +4,23 @@
 
 
 # static fields
+.field private static final ACTION_COLLECT_DIAG:Ljava/lang/String; = "com.metrics.tmobile.SUMMARY"
+
 .field public static final CHANGE_TRUST_AGENT_SETTINGS:I = 0x7e
+
+.field private static final CLASS_MYTMOBILE_COLLECT_DIAG:Ljava/lang/String; = "com.tmobile.pr.mytmobile.iqtoggle.ui.OptInSummary"
 
 .field private static final DEFAULT_MAX_COUNT:I = 0x8
 
 .field private static final HAS_SMART_LOCK_MAX_COUNT:I = 0x9
 
+.field private static final KEY_COLLECT_DIAGNOSTICS:Ljava/lang/String; = "reset_collect_diagnostics"
+
 .field private static final KEY_SECURITY_STATUS:Ljava/lang/String; = "security_status"
 
 .field private static final KEY_SMART_LOCK:Ljava/lang/String; = "com.google.android.gms.auth.trustagent.GoogleTrustAgent"
+
+.field private static final PACKAGE_MYTMOBILE:Ljava/lang/String; = "com.tmobile.pr.mytmobile"
 
 .field public static final SEARCH_INDEX_DATA_PROVIDER:Lcom/android/settings/search/Indexable$SearchIndexProvider;
 
@@ -417,7 +425,7 @@
 .method public getHelpResource()I
     .locals 1
 
-    const v0, 0x7f1207e3
+    const v0, 0x7f1207e2
 
     return v0
 .end method
@@ -659,6 +667,62 @@
 
     :cond_3
     return-void
+.end method
+
+.method public onPreferenceTreeClick(Landroidx/preference/Preference;)Z
+    .locals 3
+
+    invoke-virtual {p1}, Landroidx/preference/Preference;->getKey()Ljava/lang/String;
+
+    move-result-object v0
+
+    const-string v1, "reset_collect_diagnostics"
+
+    invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    :try_start_0
+    new-instance v0, Landroid/content/Intent;
+
+    const-string v1, "com.metrics.tmobile.SUMMARY"
+
+    invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
+
+    const-string v1, "com.tmobile.pr.mytmobile"
+
+    const-string v2, "com.tmobile.pr.mytmobile.iqtoggle.ui.OptInSummary"
+
+    invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->setClassName(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
+
+    invoke-virtual {p0}, Lcom/android/settings/security/SecuritySettings;->getActivity()Landroidx/fragment/app/FragmentActivity;
+
+    move-result-object v1
+
+    invoke-virtual {v1, v0}, Landroidx/fragment/app/FragmentActivity;->startActivity(Landroid/content/Intent;)V
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    goto :goto_0
+
+    :catch_0
+    move-exception v0
+
+    invoke-virtual {v0}, Ljava/lang/Exception;->printStackTrace()V
+
+    :goto_0
+    const/4 v0, 0x1
+
+    return v0
+
+    :cond_0
+    invoke-super {p0, p1}, Lcom/android/settings/dashboard/DashboardFragment;->onPreferenceTreeClick(Landroidx/preference/Preference;)Z
+
+    move-result v0
+
+    return v0
 .end method
 
 .method startUnification()V

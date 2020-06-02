@@ -36,7 +36,7 @@
 
 # virtual methods
 .method public displayPreference(Landroidx/preference/PreferenceScreen;)V
-    .locals 3
+    .locals 1
 
     invoke-super {p0, p1}, Lcom/android/settingslib/core/AbstractPreferenceController;->displayPreference(Landroidx/preference/PreferenceScreen;)V
 
@@ -49,35 +49,6 @@
     return-void
 
     :cond_0
-    const-string v0, "reset_collect_diagnostics"
-
-    invoke-virtual {p1, v0}, Landroidx/preference/PreferenceScreen;->findPreference(Ljava/lang/CharSequence;)Landroidx/preference/Preference;
-
-    move-result-object v0
-
-    if-eqz v0, :cond_1
-
-    iget-object v1, p0, Lcom/android/settings/system/OPCollectDiagnosticsPreferenceController;->mContext:Landroid/content/Context;
-
-    const v2, 0x7f120476
-
-    invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-static {v1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
-
-    move-result v2
-
-    if-nez v2, :cond_1
-
-    new-instance v2, Landroid/content/Intent;
-
-    invoke-direct {v2, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
-
-    invoke-virtual {v0, v2}, Landroidx/preference/Preference;->setIntent(Landroid/content/Intent;)V
-
-    :cond_1
     return-void
 .end method
 
@@ -135,7 +106,7 @@
 .end method
 
 .method public updateState(Landroidx/preference/Preference;)V
-    .locals 2
+    .locals 1
 
     invoke-super {p0, p1}, Lcom/android/settingslib/core/AbstractPreferenceController;->updateState(Landroidx/preference/Preference;)V
 
@@ -148,26 +119,5 @@
     return-void
 
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/system/OPCollectDiagnosticsPreferenceController;->mContext:Landroid/content/Context;
-
-    const v1, 0x7f120476
-
-    invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
-
-    move-result v1
-
-    if-nez v1, :cond_1
-
-    new-instance v1, Landroid/content/Intent;
-
-    invoke-direct {v1, v0}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
-
-    invoke-virtual {p1, v1}, Landroidx/preference/Preference;->setIntent(Landroid/content/Intent;)V
-
-    :cond_1
     return-void
 .end method

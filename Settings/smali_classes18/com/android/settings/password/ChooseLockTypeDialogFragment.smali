@@ -199,11 +199,11 @@
 
     invoke-virtual {v1, v3, p0}, Lcom/oneplus/lib/app/OPAlertDialog$Builder;->setAdapter(Landroid/widget/ListAdapter;Landroid/content/DialogInterface$OnClickListener;)Lcom/oneplus/lib/app/OPAlertDialog$Builder;
 
-    const v3, 0x7f12136e
+    const v3, 0x7f121376
 
     invoke-virtual {v1, v3}, Lcom/oneplus/lib/app/OPAlertDialog$Builder;->setTitle(I)Lcom/oneplus/lib/app/OPAlertDialog$Builder;
 
-    const v3, 0x7f1203db
+    const v3, 0x7f1203d9
 
     const/4 v4, 0x0
 

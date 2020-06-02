@@ -221,7 +221,7 @@
         <item quantity="one">आपके पास अभी भी %1$d अवसर है</item>
     </plurals>
     <plurals name="oneplus_lockpattern_too_many_failed_confirmation_attempts_footer">
-        <item quantity="other">%d सेकंड में दुबारा कोशिश करें।</item>
+        <item quantity="other">%d सेकंड्स में दुबारा कोशिश करें।</item>
         <item quantity="one">%d सेकंड में दुबारा कोशिश करें।</item>
     </plurals>
     <plurals name="permission_bar_chart_label">

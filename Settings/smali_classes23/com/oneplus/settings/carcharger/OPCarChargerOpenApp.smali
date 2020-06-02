@@ -148,7 +148,7 @@
 
     new-instance v0, Lcom/oneplus/settings/better/OPAppModel;
 
-    const v1, 0x7f120bed
+    const v1, 0x7f120bf1
 
     invoke-virtual {p0, v1}, Lcom/oneplus/settings/carcharger/OPCarChargerOpenApp;->getString(I)Ljava/lang/String;
 
@@ -451,7 +451,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f120bf0
+    const v1, 0x7f120bf4
 
     invoke-virtual {v0, v1}, Landroid/app/ActionBar;->setTitle(I)V
 

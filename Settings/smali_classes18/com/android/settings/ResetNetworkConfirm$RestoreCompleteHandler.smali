@@ -49,7 +49,7 @@
     :cond_0
     iget-object v0, p0, Lcom/android/settings/ResetNetworkConfirm$RestoreCompleteHandler;->mContext:Landroid/content/Context;
 
-    const v1, 0x7f12121e
+    const v1, 0x7f121226
 
     const/4 v2, 0x0
 

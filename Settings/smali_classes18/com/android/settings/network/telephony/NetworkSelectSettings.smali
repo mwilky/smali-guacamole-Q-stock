@@ -174,7 +174,7 @@
 
     invoke-direct {v0, p1, v1, v2, v3}, Lcom/android/settings/network/telephony/NetworkOperatorPreference;-><init>(Landroid/telephony/CellInfo;Landroid/content/Context;Ljava/util/List;Z)V
 
-    const v1, 0x7f120aad
+    const v1, 0x7f120aaf
 
     invoke-virtual {v0, v1}, Lcom/android/settings/network/telephony/NetworkOperatorPreference;->setSummary(I)V
 
@@ -416,7 +416,7 @@
 
     invoke-virtual {v2, v6}, Lcom/android/settings/network/telephony/NetworkOperatorPreference;->setTitle(Ljava/lang/CharSequence;)V
 
-    const v6, 0x7f120aad
+    const v6, 0x7f120aaf
 
     invoke-virtual {v2, v6}, Lcom/android/settings/network/telephony/NetworkOperatorPreference;->setSummary(I)V
 
@@ -770,7 +770,7 @@
 
     iget-object v2, p0, Lcom/android/settings/network/telephony/NetworkSelectSettings;->mSelectedPreference:Lcom/android/settings/network/telephony/NetworkOperatorPreference;
 
-    const v3, 0x7f120aae
+    const v3, 0x7f120ab0
 
     invoke-virtual {v2, v3}, Lcom/android/settings/network/telephony/NetworkOperatorPreference;->setSummary(I)V
 
@@ -822,7 +822,7 @@
 
     if-nez v3, :cond_1
 
-    const v3, 0x7f120aba
+    const v3, 0x7f120abc
 
     invoke-virtual {v2, v3}, Lcom/android/settings/network/telephony/NetworkOperatorPreference;->setSummary(I)V
 
@@ -900,13 +900,13 @@
 
     if-eqz v0, :cond_0
 
-    const v1, 0x7f0d0286
+    const v1, 0x7f0d028d
 
     invoke-virtual {p0, v1}, Lcom/android/settings/network/telephony/NetworkSelectSettings;->setPinnedHeaderView(I)Landroid/view/View;
 
     move-result-object v1
 
-    const v2, 0x7f0a056a
+    const v2, 0x7f0a056c
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

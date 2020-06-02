@@ -780,7 +780,7 @@
 
     invoke-direct {v2, p0}, Landroid/hardware/biometrics/BiometricPrompt$Builder;-><init>(Landroid/content/Context;)V
 
-    const v3, 0x7f1217f6
+    const v3, 0x7f1217fd
 
     invoke-virtual {p0, v3}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 

@@ -184,7 +184,7 @@
 
     iget-object v0, p1, Lcom/android/settingslib/users/AppRestrictionsHelper$SelectableAppInfo;->packageName:Ljava/lang/String;
 
-    const v1, 0x7f080319
+    const v1, 0x7f08031a
 
     invoke-virtual {p2, v1}, Lcom/android/settings/users/AppRestrictionsFragment$AppRestrictionsPreference;->setIcon(I)V
 
@@ -360,7 +360,7 @@
     return-object v0
 
     :cond_0
-    const v0, 0x7f1216bf
+    const v0, 0x7f1216c7
 
     new-array v2, v2, [Ljava/lang/Object;
 

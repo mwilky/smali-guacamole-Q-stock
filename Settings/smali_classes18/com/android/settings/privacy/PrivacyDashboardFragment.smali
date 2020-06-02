@@ -129,7 +129,7 @@
 .method public getHelpResource()I
     .locals 1
 
-    const v0, 0x7f1207df
+    const v0, 0x7f1207de
 
     return v0
 .end method
@@ -163,7 +163,7 @@
     .annotation build Landroidx/annotation/VisibleForTesting;
     .end annotation
 
-    const v0, 0x7f0d0286
+    const v0, 0x7f0d028d
 
     invoke-virtual {p0, v0}, Lcom/android/settings/privacy/PrivacyDashboardFragment;->setPinnedHeaderView(I)Landroid/view/View;
 
@@ -173,7 +173,7 @@
 
     iget-object v0, p0, Lcom/android/settings/privacy/PrivacyDashboardFragment;->mProgressHeader:Landroid/view/View;
 
-    const v1, 0x7f0a056a
+    const v1, 0x7f0a056c
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

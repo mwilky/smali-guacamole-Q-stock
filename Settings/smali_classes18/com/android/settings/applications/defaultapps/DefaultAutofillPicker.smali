@@ -195,11 +195,11 @@
 
     invoke-virtual {v3, v4}, Landroidx/preference/Preference;->setOnPreferenceClickListener(Landroidx/preference/Preference$OnPreferenceClickListener;)V
 
-    const v4, 0x7f121163
+    const v4, 0x7f12116b
 
     invoke-virtual {v3, v4}, Landroidx/preference/Preference;->setTitle(I)V
 
-    const v4, 0x7f080194
+    const v4, 0x7f080195
 
     invoke-virtual {v3, v4}, Landroidx/preference/Preference;->setIcon(I)V
 

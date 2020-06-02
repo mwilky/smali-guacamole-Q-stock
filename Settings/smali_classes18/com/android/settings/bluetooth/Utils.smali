@@ -67,7 +67,7 @@
     :goto_0
     if-nez v0, :cond_1
 
-    const v1, 0x7f1215df
+    const v1, 0x7f1215e7
 
     invoke-virtual {p0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -99,22 +99,22 @@
     return v0
 
     :cond_0
-    const v0, 0x7f120303
+    const v0, 0x7f120301
 
     return v0
 
     :cond_1
-    const v0, 0x7f1202cf
+    const v0, 0x7f1202ce
 
     return v0
 
     :cond_2
-    const v0, 0x7f1202da
+    const v0, 0x7f1202d9
 
     return v0
 
     :cond_3
-    const v0, 0x7f120302
+    const v0, 0x7f120300
 
     return v0
 .end method
@@ -175,7 +175,7 @@
 
     invoke-virtual {v0, p0, v1, v2}, Lcom/android/settingslib/core/instrumentation/MetricsFeatureProvider;->visible(Landroid/content/Context;II)V
 
-    const v0, 0x7f1202db
+    const v0, 0x7f1202da
 
     invoke-static {p0, p1, v0, p2}, Lcom/android/settings/bluetooth/Utils;->showError(Landroid/content/Context;Ljava/lang/String;ILcom/android/settingslib/bluetooth/LocalBluetoothManager;)V
 
@@ -281,7 +281,7 @@
 
     invoke-direct {v1, v2}, Landroidx/appcompat/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v3, 0x7f120312
+    const v3, 0x7f120310
 
     invoke-virtual {v1, v3}, Landroidx/appcompat/app/AlertDialog$Builder;->setTitle(I)Landroidx/appcompat/app/AlertDialog$Builder;
 

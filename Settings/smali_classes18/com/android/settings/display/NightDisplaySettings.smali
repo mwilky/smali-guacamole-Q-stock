@@ -130,7 +130,7 @@
 .method public getHelpResource()I
     .locals 1
 
-    const v0, 0x7f1207dc
+    const v0, 0x7f1207db
 
     return v0
 .end method

@@ -152,7 +152,7 @@
     :cond_4
     iget-object v6, p0, Lcom/android/settings/network/telephony/DefaultSubscriptionController;->mContext:Landroid/content/Context;
 
-    const v7, 0x7f1203d1
+    const v7, 0x7f1203cf
 
     invoke-virtual {v6, v7}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -292,7 +292,7 @@
     :cond_0
     iget-object v1, p0, Lcom/android/settings/network/telephony/DefaultSubscriptionController;->mContext:Landroid/content/Context;
 
-    const v2, 0x7f1203d1
+    const v2, 0x7f1203cf
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

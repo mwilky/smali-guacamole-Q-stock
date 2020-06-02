@@ -1345,7 +1345,7 @@
 .method private switchToFragment(Ljava/lang/String;Landroid/os/Bundle;ZILjava/lang/CharSequence;)Landroidx/fragment/app/Fragment;
     .locals 4
 
-    const v0, 0x7f1211b0
+    const v0, 0x7f1211b8
 
     invoke-virtual {p0, v0}, Lcom/android/settings/SettingsActivity;->getString(I)Ljava/lang/String;
 
@@ -1808,7 +1808,7 @@
     goto :goto_1
 
     :cond_0
-    const v0, 0x7f120507
+    const v0, 0x7f120506
 
     iput v0, p0, Lcom/android/settings/SettingsActivity;->mInitialTitleResId:I
 
@@ -1917,7 +1917,7 @@
 .method protected onApplyThemeResource(Landroid/content/res/Resources$Theme;IZ)V
     .locals 2
 
-    const v0, 0x7f1303ac
+    const v0, 0x7f1303ad
 
     const/4 v1, 0x1
 
@@ -2060,12 +2060,12 @@
 
     if-nez v10, :cond_3
 
-    const v10, 0x7f130528
+    const v10, 0x7f130529
 
     invoke-virtual {v0, v10}, Lcom/android/settings/SettingsActivity;->setTheme(I)V
 
     :cond_3
-    const v10, 0x7f0d02b8
+    const v10, 0x7f0d02bf
 
     invoke-virtual {v0, v10}, Lcom/android/settings/SettingsActivity;->setContentView(I)V
 
@@ -2123,7 +2123,7 @@
     invoke-virtual {v11, v9}, Landroid/app/ActionBar;->setDisplayShowTitleEnabled(Z)V
 
     :cond_6
-    const v9, 0x7f0a06a1
+    const v9, 0x7f0a06a3
 
     invoke-virtual {v0, v9}, Lcom/android/settings/SettingsActivity;->findViewById(I)Landroid/view/View;
 
@@ -2176,7 +2176,7 @@
 
     invoke-virtual {v12, v13}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const v13, 0x7f0a0630
+    const v13, 0x7f0a0632
 
     invoke-virtual {v0, v13}, Lcom/android/settings/SettingsActivity;->findViewById(I)Landroid/view/View;
 
@@ -2526,7 +2526,7 @@
 .method public setTaskDescription(Landroid/app/ActivityManager$TaskDescription;)V
     .locals 1
 
-    const v0, 0x7f080227
+    const v0, 0x7f080228
 
     invoke-virtual {p1, v0}, Landroid/app/ActivityManager$TaskDescription;->setIcon(I)V
 

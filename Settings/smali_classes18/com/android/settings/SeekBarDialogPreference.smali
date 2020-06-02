@@ -23,7 +23,7 @@
 
     invoke-direct {p0, p1, p2}, Lcom/android/settingslib/CustomDialogPreferenceCompat;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
-    const v0, 0x7f0d0258
+    const v0, 0x7f0d025f
 
     invoke-virtual {p0, v0}, Lcom/android/settings/SeekBarDialogPreference;->setDialogLayoutResource(I)V
 
@@ -45,7 +45,7 @@
 .method protected static getSeekBar(Landroid/view/View;)Landroid/widget/SeekBar;
     .locals 1
 
-    const v0, 0x7f0a05f7
+    const v0, 0x7f0a05f9
 
     invoke-virtual {p0, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

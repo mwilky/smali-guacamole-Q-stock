@@ -81,7 +81,7 @@
 
     invoke-static {v1, v0}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    const v0, 0x7f13051a
+    const v0, 0x7f13051b
 
     return v0
 
@@ -90,7 +90,7 @@
 
     invoke-static {v1, v0}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    const v0, 0x7f130517
+    const v0, 0x7f130518
 
     return v0
 .end method
@@ -164,7 +164,7 @@
 
     if-ne v0, v2, :cond_3
 
-    const v1, 0x7f1303b1
+    const v1, 0x7f1303b2
 
     goto :goto_0
 
@@ -173,7 +173,7 @@
 
     if-ne v0, v2, :cond_4
 
-    const v1, 0x7f1303b2
+    const v1, 0x7f1303b3
 
     :cond_4
     :goto_0

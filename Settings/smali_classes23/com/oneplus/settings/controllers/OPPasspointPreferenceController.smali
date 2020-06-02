@@ -36,63 +36,40 @@
 .end method
 
 .method public getAvailabilityStatus()I
-    .locals 4
+    .locals 2
 
-    invoke-static {}, Lcom/oneplus/settings/utils/OPUtils;->isSupportUss()Z
-
-    move-result v0
-
-    const/4 v1, 0x0
-
-    const/4 v2, 0x4
-
-    if-nez v0, :cond_1
-
-    invoke-static {}, Lcom/oneplus/settings/utils/OPUtils;->isSupportUstMode()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    invoke-static {}, Lcom/oneplus/settings/utils/OPUtils;->isGuestMode()Z
-
-    move-result v0
-
-    if-nez v0, :cond_0
-
-    goto :goto_0
-
-    :cond_0
-    move v1, v2
-
-    :goto_0
-    return v1
-
-    :cond_1
     iget-object v0, p0, Lcom/oneplus/settings/controllers/OPPasspointPreferenceController;->mContext:Landroid/content/Context;
 
-    const-string v3, "wifi"
+    const-string v1, "wifi"
 
-    invoke-virtual {v0, v3}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {v0, v1}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Landroid/net/wifi/WifiManager;
 
-    if-eqz v0, :cond_2
+    if-eqz v0, :cond_0
 
     invoke-virtual {v0}, Landroid/net/wifi/WifiManager;->isSupportPasspoint()Z
 
-    move-result v3
+    move-result v1
 
-    if-eqz v3, :cond_2
+    if-eqz v1, :cond_0
 
-    goto :goto_1
+    invoke-static {}, Lcom/oneplus/settings/utils/OPUtils;->isGuestMode()Z
 
-    :cond_2
-    move v1, v2
+    move-result v1
 
-    :goto_1
+    if-nez v1, :cond_0
+
+    const/4 v1, 0x0
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v1, 0x4
+
+    :goto_0
     return v1
 .end method
 

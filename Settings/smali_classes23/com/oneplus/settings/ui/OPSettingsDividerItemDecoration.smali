@@ -49,7 +49,7 @@
 
     iput v1, p0, Lcom/oneplus/settings/ui/OPSettingsDividerItemDecoration;->mDividerHeight:I
 
-    const v2, 0x7f070460
+    const v2, 0x7f070462
 
     invoke-virtual {v0, v2}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -57,7 +57,7 @@
 
     iput v2, p0, Lcom/oneplus/settings/ui/OPSettingsDividerItemDecoration;->mMarginLeft2:I
 
-    const v2, 0x7f070462
+    const v2, 0x7f070464
 
     invoke-virtual {v0, v2}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 

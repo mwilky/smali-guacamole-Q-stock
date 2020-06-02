@@ -218,7 +218,7 @@
 
     if-eqz v0, :cond_0
 
-    const v1, 0x7f121706
+    const v1, 0x7f12170e
 
     const/4 v2, 0x0
 
@@ -243,7 +243,7 @@
 
     invoke-direct {v1, p0}, Lcom/android/settings/password/ChooseLockSettingsHelper;-><init>(Landroid/app/Activity;)V
 
-    const v2, 0x7f1204ce
+    const v2, 0x7f1204cd
 
     invoke-virtual {v0, v2}, Landroid/content/res/Resources;->getText(I)Ljava/lang/CharSequence;
 

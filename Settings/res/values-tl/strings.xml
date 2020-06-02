@@ -2447,6 +2447,7 @@ Maaari mong baguhin ito sa ibang pagkakataon mula sa Mga Setting > Mga app at no
 Kasalukuyan kang naka-sign in sa mga sumusunod na account:
 "</string>
     <string name="master_clear_button_text">Burahin ang lahat ng data</string>
+    <string name="master_clear_confirm_summary">Tatanggalin ang lahat ng content sa internal storage, kasama ang musika, mga larawan, mga video at iba pang personal na data. Kumpirmahin para burahin?</string>
     <string name="master_clear_confirm_title">Burahin ang lahat ng data?</string>
     <string name="master_clear_desc">Buburahin nito ang lahat ng data sa <b>internal storage</b>" ng iyong telepono, kasama ang:
 
@@ -2925,7 +2926,7 @@ Dahil dito, mabibigyan din ng kakayahan ang app na i-on o i-off ang Huwag Istorb
     <string name="oneplus_auto_activate">Buksang awtomatiko</string>
     <string name="oneplus_auto_answer_via_bluetooth_summary">Awtomatikong sasagutin ang paparating na tawag habang nakakonekta sa isang Bluetooth audio device</string>
     <string name="oneplus_auto_answer_via_bluetooth_title">Smart na Pagsagot para sa Bluetooth</string>
-    <string name="oneplus_auto_check_pin_length">Kumpirmahin ang PIN nang hindi pinipindot ang \"✓\"</string>
+    <string name="oneplus_auto_check_pin_length">Awtomatikong i-unlock ang screen pagkatapos na ilagay ang PIN</string>
     <string name="oneplus_auto_disconect_the_ap">Awtomatikong io-off ang hotspot pagkalipas ng 5 minuto kung walang mga nakakonektang device.</string>
     <string name="oneplus_auto_open_app_none">Wala</string>
     <string name="oneplus_auto_open_app_other_applications">IBA PANG APPLICATION</string>
@@ -3079,6 +3080,9 @@ Ang Battery saver ay awtomatikong pinapatay kapag ang iyong aparato ay nag-charg
 2.Sa proseso ng isahang pag-set up, tanging impormasyon ng fingerprint ng isang daliri lang ang ilagay"</string>
     <string name="oneplus_enroll_fingerprint_tips_title">Prompt sa pag-set up ng fingerprint</string>
     <string name="oneplus_enter_your_fingerprint">· I-enroll ang iyong tatak ng daliri</string>
+    <string name="oneplus_erase_system_data">BURAHIN ANG SYSTEM DATA</string>
+    <string name="oneplus_erase_system_data_summary">Ide-delete ang system data kasama ang impormasyon ng account, mga contact at app data. Hindi mo maa-undo ang aksyong ito.</string>
+    <string name="oneplus_erase_system_data_title">Burahin ang system data?</string>
     <string name="oneplus_esportmode_introduction_summary">Para i-activate ang Esports mode, i-tap ang toggle sa panel ng Gaming mode.</string>
     <string name="oneplus_experience_improvement_programs">Mga program sa pagpapahusay ng karanasan</string>
     <string name="oneplus_face_auto_unlock_while_screen_on_sumary">I-unlock ang iyong telepono sa pamamagitan ng iyong mukha habang ang screen ay bumukas ng walang pag-swiping muna.</string>
@@ -3456,7 +3460,7 @@ Paalala: Maaaring hindi gaanong secure ang iyong fingerprint kumpara sa isang ma
     <string name="oneplus_quickpay">Quick pay</string>
     <string name="oneplus_quickpay_confirm_changehomebutton">Tiyak ka bang nais mong baguhin ang aksyon ng pag-long press ng pindutan ng Home mula sa \"%1$s\" \"Quick Pay\"?</string>
     <string name="oneplus_quickpay_entry_summary">Matagal na pindutin ang Home button upang ilunsad ang quick pay</string>
-    <string name="oneplus_quickpay_instructions">Instruksyon</string>
+    <string name="oneplus_quickpay_instructions">Mga Tagubilin</string>
     <string name="oneplus_quickpay_lock_swtch_summary">Matagal na pindutin ang Home button ng isang rehistradong daliri upang ilunsad ang mabilis na pagsahod kapag ang telepono ay naka-lock.</string>
     <string name="oneplus_quickpay_lock_swtch_title">Screen off quick pay</string>
     <string name="oneplus_quickpay_select_default_way">Pumili ng default na opsyon sa pagbabayad</string>
@@ -3575,7 +3579,7 @@ Paalala: Maaaring hindi gaanong secure ang iyong fingerprint kumpara sa isang ma
     <string name="oneplus_search_keyword_swap_navkeys">pagpalitin ang mga button</string>
     <string name="oneplus_search_keyword_switch">ilipat,paglilipat ng data</string>
     <string name="oneplus_search_keyword_theme_settings">PAG-CUSTOMIZE SA LOCK SCREEN, Mga wallpaper, Estilo ng orasan, Animation ng fingerprint, Horizon light, PAG-CUSTOMIZE SA SYSTEM, Kulay ng accent, Hugis, Font, Tone, Icon pack, Illuminating light, Nuanced dark, Vibrant tints</string>
-    <string name="oneplus_search_keyword_theme_settings_mcl">PAG-CUSTOMIZE SA LOCK SCREEN, Mga wallpaper, Estilo ng orasan, Animation ng fingerprint, Horizon Light, PAG-CUSTOMIZE SA SYSTEM, Kulay ng accent, Hugis, Font, Tone, Icon pack, Illuminating light, Nuanced dark, Vibrant tints, McLaren</string>
+    <string name="oneplus_search_keyword_theme_settings_mcl">PAG-CUSTOMIZE SA LOCK SCREEN, Mga wallpaper, Estilo ng orasan, Animation ng fingerprint, Horizon light, PAG-CUSTOMIZE SA SYSTEM, Kulay ng accent, Hugis, Font, Tone, Icon pack, Illuminating light, Nuanced dark, Vibrant tints, McLaren</string>
     <string name="oneplus_search_keyword_three_screenshots">screenshot</string>
     <string name="oneplus_search_keyword_timer_boot" />
     <string name="oneplus_search_keyword_user_experience">mga notification,karanasan,program,pagpapahusay</string>
@@ -3755,7 +3759,7 @@ Tandaan: Maaaring hindi gaanong secure ang Face Unlock kumpara sa fingerprint, P
     <string name="oneplus_vibration_settings_soc_tri_state">Vibration</string>
     <string name="oneplus_vibration_settings_soc_tri_state_summary">Isa-silent ang mga tawag at notification at itatakda sa mag-vibrate lang, maliban sa mga alarm</string>
     <string name="oneplus_vibration_summary">Ang alarma ay palaging nag-riring</string>
-    <string name="oneplus_video_enhancer">Pagpapahusay ng Video</string>
+    <string name="oneplus_video_enhancer">Vibrant na kulay na effect</string>
     <string name="oneplus_video_enhancer_footer">Pahusayin ang kulay habang nanunuod ng mga video</string>
     <string name="oneplus_video_enhancer_summary">Pahusayin ang kulay habang nanunuod ng mga video</string>
     <string name="oneplus_volume_keys_adjust">Gamitin ang mga button ng volume para i-adjust</string>

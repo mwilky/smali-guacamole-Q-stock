@@ -339,7 +339,7 @@
     goto :goto_0
 
     :cond_0
-    const v0, 0x7f0a067d
+    const v0, 0x7f0a067f
 
     invoke-virtual {p0, v0}, Lcom/android/settings/biometrics/fingerprint/FingerprintEnrollFinish;->findViewById(I)Landroid/view/View;
 
@@ -347,7 +347,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    const v3, 0x7f0a0689
+    const v3, 0x7f0a068b
 
     invoke-virtual {p0, v3}, Lcom/android/settings/biometrics/fingerprint/FingerprintEnrollFinish;->findViewById(I)Landroid/view/View;
 
@@ -423,7 +423,7 @@
 
     if-eqz v0, :cond_0
 
-    const v0, 0x7f1301c8
+    const v0, 0x7f1301c9
 
     invoke-virtual {p0, v0}, Lcom/android/settings/biometrics/fingerprint/FingerprintEnrollFinish;->setTheme(I)V
 
@@ -449,7 +449,7 @@
     invoke-virtual {v0, v1}, Landroid/view/View;->setSystemUiVisibility(I)V
 
     :cond_1
-    invoke-static {}, Lcom/oneplus/settings/utils/OPUtils;->isSupportCustomFingerprint()Z
+    invoke-static {}, Lcom/oneplus/settings/utils/OPUtils;->isSupportDynamicEnrollAnimation()Z
 
     move-result v0
 
@@ -459,20 +459,44 @@
 
     if-eqz v0, :cond_2
 
-    const v0, 0x7f0d01b6
+    const v0, 0x7f0d01bb
 
     invoke-virtual {p0, v0}, Lcom/android/settings/biometrics/fingerprint/FingerprintEnrollFinish;->setContentView(I)V
 
     goto :goto_0
 
     :cond_2
-    const v0, 0x7f0d01b4
+    const v0, 0x7f0d01b6
 
     invoke-virtual {p0, v0}, Lcom/android/settings/biometrics/fingerprint/FingerprintEnrollFinish;->setContentView(I)V
 
     goto :goto_0
 
     :cond_3
+    invoke-static {}, Lcom/oneplus/settings/utils/OPUtils;->isSupportCustomFingerprint()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_5
+
+    iget-boolean v0, p0, Lcom/android/settings/biometrics/fingerprint/FingerprintEnrollFinish;->isSetupPage:Z
+
+    if-eqz v0, :cond_4
+
+    const v0, 0x7f0d01bd
+
+    invoke-virtual {p0, v0}, Lcom/android/settings/biometrics/fingerprint/FingerprintEnrollFinish;->setContentView(I)V
+
+    goto :goto_0
+
+    :cond_4
+    const v0, 0x7f0d01b8
+
+    invoke-virtual {p0, v0}, Lcom/android/settings/biometrics/fingerprint/FingerprintEnrollFinish;->setContentView(I)V
+
+    goto :goto_0
+
+    :cond_5
     const v0, 0x7f0d00b0
 
     invoke-virtual {p0, v0}, Lcom/android/settings/biometrics/fingerprint/FingerprintEnrollFinish;->setContentView(I)V
@@ -482,9 +506,9 @@
 
     move-result v0
 
-    const v2, 0x7f121313
+    const v2, 0x7f12131b
 
-    if-eqz v0, :cond_4
+    if-eqz v0, :cond_6
 
     const v0, 0x7f0a03cf
 
@@ -512,7 +536,7 @@
 
     check-cast v3, Landroid/widget/TextView;
 
-    const v4, 0x7f120ea0
+    const v4, 0x7f120e9e
 
     invoke-virtual {v3, v4}, Landroid/widget/TextView;->setText(I)V
 
@@ -524,7 +548,7 @@
 
     goto :goto_1
 
-    :cond_4
+    :cond_6
     invoke-virtual {p0, v2}, Lcom/android/settings/biometrics/fingerprint/FingerprintEnrollFinish;->setHeaderText(I)V
 
     :goto_1
@@ -566,7 +590,7 @@
 
     move-result-object v0
 
-    if-eqz v0, :cond_5
+    if-eqz v0, :cond_7
 
     invoke-virtual {p0}, Lcom/android/settings/biometrics/fingerprint/FingerprintEnrollFinish;->getActionBar()Landroid/app/ActionBar;
 
@@ -576,7 +600,7 @@
 
     invoke-virtual {v0, v1}, Landroid/app/ActionBar;->setElevation(F)V
 
-    :cond_5
+    :cond_7
     const v0, 0x7f0a0432
 
     invoke-virtual {p0, v0}, Lcom/android/settings/biometrics/fingerprint/FingerprintEnrollFinish;->findViewById(I)Landroid/view/View;
@@ -633,7 +657,7 @@
 
     move-result v2
 
-    if-lt v1, v2, :cond_6
+    if-lt v1, v2, :cond_8
 
     iget-object v3, p0, Lcom/android/settings/biometrics/fingerprint/FingerprintEnrollFinish;->mBtnAdd:Lcom/oneplus/lib/widget/button/OPButton;
 
@@ -641,7 +665,7 @@
 
     invoke-virtual {v3, v4}, Lcom/oneplus/lib/widget/button/OPButton;->setVisibility(I)V
 
-    :cond_6
+    :cond_8
     invoke-virtual {p0}, Lcom/android/settings/biometrics/fingerprint/FingerprintEnrollFinish;->adjustTitleSize()V
 
     return-void
@@ -837,7 +861,7 @@
 .method protected setHeaderText(I)V
     .locals 1
 
-    const v0, 0x7f0a067d
+    const v0, 0x7f0a067f
 
     invoke-virtual {p0, v0}, Lcom/android/settings/biometrics/fingerprint/FingerprintEnrollFinish;->findViewById(I)Landroid/view/View;
 

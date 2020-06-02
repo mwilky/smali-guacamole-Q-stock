@@ -980,13 +980,13 @@
 
     iget-object v4, p0, Lcom/oneplus/settings/better/OPSuwScreenColorMode;->mScreenColorModeDefaultSettings:Lcom/android/settings/ui/RadioButtonPreference;
 
-    const v5, 0x7f12127d
+    const v5, 0x7f121285
 
     invoke-virtual {v4, v5}, Lcom/android/settings/ui/RadioButtonPreference;->setTitle(I)V
 
     iget-object v4, p0, Lcom/oneplus/settings/better/OPSuwScreenColorMode;->mScreenColorModeDefinedSettings:Lcom/android/settings/ui/RadioButtonPreference;
 
-    const v5, 0x7f12127b
+    const v5, 0x7f121283
 
     invoke-virtual {v4, v5}, Lcom/android/settings/ui/RadioButtonPreference;->setTitle(I)V
 
@@ -1853,7 +1853,7 @@
 
     invoke-super {p0, p1, p2}, Lcom/android/settings/SettingsPreferenceFragment;->onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
 
-    const v0, 0x7f0d022a
+    const v0, 0x7f0d0231
 
     invoke-virtual {p0, v0}, Lcom/oneplus/settings/better/OPSuwScreenColorMode;->setPinnedHeaderView(I)Landroid/view/View;
 

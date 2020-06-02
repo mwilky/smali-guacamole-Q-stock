@@ -2923,7 +2923,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f121227
+    const v2, 0x7f12122f
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -2978,7 +2978,7 @@
 
     move-result-object v0
 
-    const v3, 0x7f080195
+    const v3, 0x7f080196
 
     invoke-interface {v0, v3}, Landroid/view/MenuItem;->setIcon(I)Landroid/view/MenuItem;
 

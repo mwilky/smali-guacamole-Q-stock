@@ -11,7 +11,7 @@
 
 
 # static fields
-.field static final STREAMING_LABEL_ID:I = 0x7f120383
+.field static final STREAMING_LABEL_ID:I = 0x7f120381
     .annotation build Landroidx/annotation/VisibleForTesting;
     .end annotation
 .end field
@@ -255,7 +255,7 @@
 
     move-result-object v5
 
-    const v6, 0x7f120383
+    const v6, 0x7f120381
 
     new-array v7, v4, [Ljava/lang/Object;
 
@@ -365,7 +365,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f120383
+    const v4, 0x7f120381
 
     const/4 v5, 0x1
 

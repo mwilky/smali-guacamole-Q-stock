@@ -61,7 +61,7 @@
     sput-object v0, Lcom/android/settings/overlay/FeatureFactory;->sAppContext:Landroid/content/Context;
 
     :cond_1
-    const v0, 0x7f12047d
+    const v0, 0x7f12047b
 
     invoke-virtual {p0, v0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

@@ -32,7 +32,7 @@
     return-void
 
     :cond_0
-    const v0, 0x7f0d02d2
+    const v0, 0x7f0d02d9
 
     invoke-virtual {p0, v0}, Lcom/android/settings/deviceinfo/StorageWizardFormatSlow;->setContentView(I)V
 
@@ -50,7 +50,7 @@
 
     iput-boolean v0, p0, Lcom/android/settings/deviceinfo/StorageWizardFormatSlow;->mFormatPrivate:Z
 
-    const v0, 0x7f1214d8
+    const v0, 0x7f1214e0
 
     const/4 v2, 0x1
 
@@ -64,7 +64,7 @@
 
     invoke-virtual {p0, v0, v3}, Lcom/android/settings/deviceinfo/StorageWizardFormatSlow;->setHeaderText(I[Ljava/lang/CharSequence;)V
 
-    const v0, 0x7f1214d5
+    const v0, 0x7f1214dd
 
     const/4 v3, 0x4
 
@@ -100,13 +100,13 @@
 
     invoke-virtual {p0, v0, v3}, Lcom/android/settings/deviceinfo/StorageWizardFormatSlow;->setBodyText(I[Ljava/lang/CharSequence;)V
 
-    const v0, 0x7f1214d7
+    const v0, 0x7f1214df
 
     new-array v2, v1, [Ljava/lang/CharSequence;
 
     invoke-virtual {p0, v0, v2}, Lcom/android/settings/deviceinfo/StorageWizardFormatSlow;->setBackButtonText(I[Ljava/lang/CharSequence;)V
 
-    const v0, 0x7f1214d6
+    const v0, 0x7f1214de
 
     new-array v2, v1, [Ljava/lang/CharSequence;
 

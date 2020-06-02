@@ -109,7 +109,7 @@
 
     new-instance v1, Lcom/android/settings/notification/ZenModeBehaviorFooterPreferenceController;
 
-    const v2, 0x7f1219fa
+    const v2, 0x7f121a01
 
     invoke-direct {v1, p0, p1, v2}, Lcom/android/settings/notification/ZenModeBehaviorFooterPreferenceController;-><init>(Landroid/content/Context;Lcom/android/settingslib/core/lifecycle/Lifecycle;I)V
 

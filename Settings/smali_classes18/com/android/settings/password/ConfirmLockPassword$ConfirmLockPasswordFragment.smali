@@ -219,12 +219,12 @@
 
     if-eqz v0, :cond_0
 
-    const v0, 0x7f120982
+    const v0, 0x7f120981
 
     goto :goto_0
 
     :cond_0
-    const v0, 0x7f12098c
+    const v0, 0x7f12098b
 
     :goto_0
     return v0
@@ -278,12 +278,12 @@
 
     if-eqz v0, :cond_0
 
-    const v0, 0x7f120986
+    const v0, 0x7f120985
 
     goto :goto_0
 
     :cond_0
-    const v0, 0x7f120990
+    const v0, 0x7f12098f
 
     :goto_0
     return v0
@@ -293,12 +293,12 @@
 
     if-eqz v0, :cond_2
 
-    const v0, 0x7f120985
+    const v0, 0x7f120984
 
     goto :goto_1
 
     :cond_2
-    const v0, 0x7f12098f
+    const v0, 0x7f12098e
 
     :goto_1
     return v0
@@ -311,12 +311,12 @@
 
     if-eqz v0, :cond_0
 
-    const v0, 0x7f120995
+    const v0, 0x7f120994
 
     goto :goto_0
 
     :cond_0
-    const v0, 0x7f120996
+    const v0, 0x7f120995
 
     :goto_0
     return v0
@@ -994,12 +994,12 @@
 
     if-eqz v0, :cond_0
 
-    const v0, 0x7f12093d
+    const v0, 0x7f12093c
 
     goto :goto_0
 
     :cond_0
-    const v0, 0x7f120943
+    const v0, 0x7f120942
 
     :goto_0
     return v0
@@ -1030,12 +1030,12 @@
 
     if-eqz v0, :cond_3
 
-    const v0, 0x7f12093c
+    const v0, 0x7f12093b
 
     goto :goto_1
 
     :cond_3
-    const v0, 0x7f120942
+    const v0, 0x7f120941
 
     :goto_1
     return v0
@@ -1045,12 +1045,12 @@
 
     if-eqz v0, :cond_5
 
-    const v0, 0x7f12093b
+    const v0, 0x7f12093a
 
     goto :goto_2
 
     :cond_5
-    const v0, 0x7f120941
+    const v0, 0x7f120940
 
     :goto_2
     return v0
@@ -1187,7 +1187,7 @@
 
     move-result-object v3
 
-    const v7, 0x7f0a0513
+    const v7, 0x7f0a0515
 
     invoke-virtual {v3, v7}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1227,7 +1227,7 @@
 
     if-nez v7, :cond_1
 
-    const v7, 0x7f0a067d
+    const v7, 0x7f0a067f
 
     invoke-virtual {v3, v7}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1238,7 +1238,7 @@
     iput-object v7, v0, Lcom/android/settings/password/ConfirmLockPassword$ConfirmLockPasswordFragment;->mHeaderTextView:Landroid/widget/TextView;
 
     :cond_1
-    const v7, 0x7f0a0689
+    const v7, 0x7f0a068b
 
     invoke-virtual {v3, v7}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

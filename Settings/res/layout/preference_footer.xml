@@ -4,5 +4,5 @@
     <LinearLayout android:gravity="start|center|top" android:orientation="horizontal" android:id="@id/icon_frame" android:paddingTop="16.0dip" android:paddingBottom="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="56.0dip" android:paddingEnd="12.0dip">
         <ImageView android:id="@android:id/icon" android:layout_width="wrap_content" android:layout_height="wrap_content" />
     </LinearLayout>
-    <com.android.settingslib.widget.LinkTextView android:textColor="?android:textColorSecondary" android:ellipsize="marquee" android:id="@android:id/title" android:paddingTop="16.0dip" android:paddingBottom="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="10" />
+    <com.android.settingslib.widget.LinkTextView android:textColor="?android:textColorSecondary" android:ellipsize="marquee" android:id="@android:id/title" android:paddingTop="16.0dip" android:paddingBottom="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
 </LinearLayout>

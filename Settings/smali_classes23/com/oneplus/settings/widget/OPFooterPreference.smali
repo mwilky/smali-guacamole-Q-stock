@@ -33,7 +33,7 @@
 .method private init()V
     .locals 1
 
-    const v0, 0x7f080225
+    const v0, 0x7f080226
 
     invoke-virtual {p0, v0}, Lcom/oneplus/settings/widget/OPFooterPreference;->setIcon(I)V
 

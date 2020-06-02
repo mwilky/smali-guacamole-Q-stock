@@ -89,7 +89,7 @@
 
     invoke-static {v3, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    const v2, 0x7f1205cd
+    const v2, 0x7f1205cc
 
     if-eqz v1, :cond_1
 
@@ -145,7 +145,7 @@
 
     move-result-object v5
 
-    const v6, 0x7f121254
+    const v6, 0x7f12125c
 
     invoke-virtual {v5, v6}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 

@@ -314,7 +314,7 @@ Preprosto približajte napravi (običajno s hrbtno stranjo) in se dotaknite zasl
     <string name="angle_enabled_app_set">Aplikacija, ki podpira ANGLE: %1$s</string>
     <string name="animator_duration_scale_title">Merilo trajanja animacije</string>
     <string name="another_migration_already_in_progress">Poteka že druga selitev.</string>
-    <string name="aod_clock_analog">Analogno</string>
+    <string name="aod_clock_analog">Analogni</string>
     <string name="aod_clock_default">Privzeto</string>
     <string name="aod_clock_mcl">McLaren</string>
     <string name="aod_clock_minimalism">Minimalizem</string>
@@ -2447,6 +2447,7 @@ Nastavitev lahko pozneje spremenite v »Nastavitve > Aplikacije in obvestila«."
 Trenutno ste prijavljeni v te račune:
 "</string>
     <string name="master_clear_button_text">Brisanje vseh podatkov</string>
+    <string name="master_clear_confirm_summary">Odstranjena bo tudi vsa vsebina v notranjem pomnilniku, vključno z glasbo, fotografijami, videoposnetki in drugimi osebnimi podatki. Ali želite potrditi brisanje?</string>
     <string name="master_clear_confirm_title">Želite izbrisati vse podatke?</string>
     <string name="master_clear_desc">S tem boste iz <b>notranje shrambe</b>" telefona izbrisali vse podatke:
 
@@ -2925,7 +2926,7 @@ S tem lahko aplikacija tudi vklopi ali izklopi način »ne moti« in spremeni po
     <string name="oneplus_auto_activate">Samodejni vklop</string>
     <string name="oneplus_auto_answer_via_bluetooth_summary">Ko je telefon povezan z zvočno napravo Bluetooth, se vhodni klic samodejno sprejme</string>
     <string name="oneplus_auto_answer_via_bluetooth_title">Pameten odgovor za Bluetooth</string>
-    <string name="oneplus_auto_check_pin_length">Potrdi PIN brez dotika »✓«</string>
+    <string name="oneplus_auto_check_pin_length">Samodejno odkleni zaslon po spremembi kode PIN</string>
     <string name="oneplus_auto_disconect_the_ap">Dostopna točka se bo samodejno izklopila po 5 minutah, če ne boste priključili nobene naprave.</string>
     <string name="oneplus_auto_open_app_none">Brez</string>
     <string name="oneplus_auto_open_app_other_applications">DRUGE APLIKACIJE</string>
@@ -3048,7 +3049,7 @@ Varčevanje akumulatorja je samodejno onemogočeno med polnjenjem naprave."</str
     <string name="oneplus_donot_silence_or_block_summary">Dovoli vsa obvestila</string>
     <string name="oneplus_double_tap_power_gesture">Dvakrat kliknite na gumb vklop, da</string>
     <string name="oneplus_double_tap_power_gesture_app">IZBERI FUNKCIJO</string>
-    <string name="oneplus_double_tap_power_gesture_camera">Fotoaparat</string>
+    <string name="oneplus_double_tap_power_gesture_camera">Kamera</string>
     <string name="oneplus_double_tap_power_gesture_wallet">Potegnite kartice (Denarnica)</string>
     <string name="oneplus_doze_summary_801">Prikaz ure in drugih informacij o zaslonu v stanju pripravljenosti</string>
     <string name="oneplus_doze_title">Ambientalna funkcija zaslona</string>
@@ -3079,6 +3080,9 @@ Varčevanje akumulatorja je samodejno onemogočeno med polnjenjem naprave."</str
 2. Pri posamezni nastavitvi vnesite podatke zgolj enega prstnega odtisa"</string>
     <string name="oneplus_enroll_fingerprint_tips_title">Poziv za nastavitev prstnega odtisa</string>
     <string name="oneplus_enter_your_fingerprint">· Registrirati svoj prstni odtis</string>
+    <string name="oneplus_erase_system_data">IZBRIŠI PODATKE SISTEMA</string>
+    <string name="oneplus_erase_system_data_summary">Podatki sistema, vključno s podatki računa, stiki in podatki aplikacij, bodo izbrisani. Tega dejanja ne morete razveljaviti.</string>
+    <string name="oneplus_erase_system_data_title">Želite izbrisati podatke sistema?</string>
     <string name="oneplus_esportmode_introduction_summary">Da aktivirate način Esports, tapnite gumb za preklop na plošči igralnega načina.</string>
     <string name="oneplus_experience_improvement_programs">Programi za izboljšanje izkušnje</string>
     <string name="oneplus_face_auto_unlock_while_screen_on_sumary">Odklepanje telefona z obrazom po vklopu zaslona, brez podrsanja po zaslonu.</string>
@@ -3143,7 +3147,7 @@ Pozor: Odklepanje z obrazom je manj varno kot odklepanje s prstnim odtisom ali g
     <string name="oneplus_fnatic_mode_disturb_introduction_summary">Blokirajte vsa obvestila in klice (razen obvestil o prazni bateriji, budilke in časovnika). Zgrešeni klici morda ne bodo shranjeni v dnevnik klicev.</string>
     <string name="oneplus_fnatic_mode_disturb_introduction_title">Napredni DND</string>
     <string name="oneplus_fnatic_mode_enable_introduction_title">Najprej mora biti omogočen igralni način, da lahko uporabljate način Fnatic</string>
-    <string name="oneplus_fnatic_mode_network_introduction_dual4g_summary">Moč signala primarne kartice SIM ima prednost, da se zmanjšajo motnje igranja z nizko zakasnitvijo. Zato bo sekundardna kartica SIM onemogočena, klicev in sporočil pa ne boste prejemali.</string>
+    <string name="oneplus_fnatic_mode_network_introduction_dual4g_summary">Moč signala primarne kartice SIM ima prednost, da se zmanjšajo motnje pri igranju z nizko zakasnitvijo, zato bo sekundarna kartica SIM onemogočena, klicev in sporočil pa ne boste prejemali.</string>
     <string name="oneplus_fnatic_mode_network_introduction_summary">Izboljšajte stabilnost omrežne povezave</string>
     <string name="oneplus_fnatic_mode_network_introduction_title">Izboljšava omrežja</string>
     <string name="oneplus_fnatic_mode_summary">Svojo igralno izkušnjo dvignite na višjo raven</string>
@@ -3575,7 +3579,7 @@ Opomba: Vaš prstni odtis je morda manj varen od zapletenega vzorca ali kode PIN
     <string name="oneplus_search_keyword_swap_navkeys">zamenjaj gumbe</string>
     <string name="oneplus_search_keyword_switch">prenos,selitev podatkov</string>
     <string name="oneplus_search_keyword_theme_settings">PRILAGODITEV ZAKLENJENEGA ZASLONA, slike za ozadje, slog ure, animacija prstnega odtisa, Horizon light, PRILAGODITEV SISTEMA, barva poudarka, oblika, pisava, ton, paket ikon, osvetlitev, temna z niansami, živahni odtenki</string>
-    <string name="oneplus_search_keyword_theme_settings_mcl">PRILAGODITEV ZAKLENJENEGA ZASLONA, slike za ozadje, slog ure, animacija prstnega odtisa, Horizon Light, PRILAGODITEV SISTEMA, barva poudarka, oblika, pisava, ton, paket ikon, osvetlitev, temna z niansami, živahni odtenki, McLaren</string>
+    <string name="oneplus_search_keyword_theme_settings_mcl">PRILAGODITEV ZAKLENJENEGA ZASLONA, slike za ozadje, slog ure, animacija prstnega odtisa, Horizon light, PRILAGODITEV SISTEMA, barva poudarka, oblika, pisava, ton, paket ikon, osvetlitev, temna z niansami, živahni odtenki, McLaren</string>
     <string name="oneplus_search_keyword_three_screenshots">posnetek zaslona</string>
     <string name="oneplus_search_keyword_timer_boot" />
     <string name="oneplus_search_keyword_user_experience">obvestila,izkušnja,program,izboljšava</string>
@@ -3755,7 +3759,7 @@ Opomba: odklepanje z obrazom je lahko manj varno od uporabe prstnega odtiska ali
     <string name="oneplus_vibration_settings_soc_tri_state">Vibriranje</string>
     <string name="oneplus_vibration_settings_soc_tri_state_summary">Za klice in obvestila bo izbran tihi način, nastavljen samo na vibriranje, razen za alarme</string>
     <string name="oneplus_vibration_summary">Zvok za alarm bo vedno aktiviran</string>
-    <string name="oneplus_video_enhancer">Izboljšanje videoposnetkov</string>
+    <string name="oneplus_video_enhancer">Učinek živahnih barv</string>
     <string name="oneplus_video_enhancer_footer">Izboljšanje barv med predvajanjem videoposnetkov</string>
     <string name="oneplus_video_enhancer_summary">Izboljšanje barv med predvajanjem videoposnetkov</string>
     <string name="oneplus_volume_keys_adjust">Za prilagoditev uporabite gumbe za glasnost</string>

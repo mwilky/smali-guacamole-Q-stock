@@ -2447,6 +2447,7 @@ Du kan endre dette senere fra Innstillinger > Apper og varsler."</string>
 Du er for øyeblikket pålogget følgende kontoer:
 "</string>
     <string name="master_clear_button_text">Slett alle data</string>
+    <string name="master_clear_confirm_summary">Alt innhold i den interne lagringen vil også bli fjernet, inkludert musikk, bilder, videoer og andre personlige data. Bekrefte å slette?</string>
     <string name="master_clear_confirm_title">Vil du slette alle dataene?</string>
     <string name="master_clear_desc">Dette sletter alle data fra telefonens <b>interne lagringsplass</b>", inkludert følgende:
 
@@ -2925,7 +2926,7 @@ Dette gir også appen muligheten til å slå Ikke forstyrr av eller på samt end
     <string name="oneplus_auto_activate">Slå på automatisk</string>
     <string name="oneplus_auto_answer_via_bluetooth_summary">Det innkommende anropet blir automatisk besvart mens det er koblet til en Bluetooth-lydenhet</string>
     <string name="oneplus_auto_answer_via_bluetooth_title">Smart-svar for Bluetooth</string>
-    <string name="oneplus_auto_check_pin_length">Bekreft PIN-koden uten å trykke på \"✓\"</string>
+    <string name="oneplus_auto_check_pin_length">Lås skjerm automatisk etter at PIN er oppgitt</string>
     <string name="oneplus_auto_disconect_the_ap">Hotspot slås automatisk av etter 5 minutter hvis ingen enheter er tilkoblet.</string>
     <string name="oneplus_auto_open_app_none">Ingen</string>
     <string name="oneplus_auto_open_app_other_applications">ANDRE APPER</string>
@@ -3079,6 +3080,9 @@ Batterisparing slås automatisk av når enheten lader."</string>
 2.Ved en prosess med ett enkelt oppsett skal du bare legge inn fingeravtrykksinformasjon om én finger."</string>
     <string name="oneplus_enroll_fingerprint_tips_title">Fingeravtrykk installasjonsprogramspørsmål</string>
     <string name="oneplus_enter_your_fingerprint">· registrere fingeravtrykk</string>
+    <string name="oneplus_erase_system_data">SLETT SYSTEMDATA</string>
+    <string name="oneplus_erase_system_data_summary">Systemdata inkludert kontoinfo, kontakter og appdata vil bli slettet. Du kan ikke angre denne handlingen.</string>
+    <string name="oneplus_erase_system_data_title">Slett Systemdata?</string>
     <string name="oneplus_esportmode_introduction_summary">For å aktivere Esports-modus trykk på vekslingen på spillemodus-panelet.</string>
     <string name="oneplus_experience_improvement_programs">Opplev forbedringsprogrammer</string>
     <string name="oneplus_face_auto_unlock_while_screen_on_sumary">Lås opp med ansiktet når skjermen slås på uten å sveipe først.</string>
@@ -3575,7 +3579,7 @@ Merk: Fingeravtrykket kan være mindre sikkert enn et sterkt mønster eller PIN-
     <string name="oneplus_search_keyword_swap_navkeys">bytt knapper</string>
     <string name="oneplus_search_keyword_switch">overføring,dataoverføring</string>
     <string name="oneplus_search_keyword_theme_settings">TILPASNING AV LÅSESKJERMEN, bakgrunner, klokkestil, animasjon med fingeravtrykk, Horizon Light, TILPASNING AV SYSTEMET, aksentfarge, form, font, tone, ikonpakke, Nyanserte mørke, vibrerende fargetoner</string>
-    <string name="oneplus_search_keyword_theme_settings_mcl">TILPASNING AV LÅSESKJERMEN, bakgrunner, klokkestil, animasjon med fingeravtrykk, horisontalt lys, TILPASNING AV SYSTEMET, aksentfarge, form, font, tone, ikonpakke, Nyanserte mørke, vibrerende fargetoner, McLaren</string>
+    <string name="oneplus_search_keyword_theme_settings_mcl">TILPASNING AV LÅSESKJERMEN, bakgrunner, klokkestil, animasjon med fingeravtrykk, Horizon light, TILPASNING AV SYSTEMET, aksentfarge, form, font, tone, ikonpakke, Nyanserte mørke, vibrerende fargetoner, McLaren</string>
     <string name="oneplus_search_keyword_three_screenshots">skjermbilde</string>
     <string name="oneplus_search_keyword_timer_boot" />
     <string name="oneplus_search_keyword_user_experience">varsler,erfaring,program,forbedring</string>
@@ -3755,7 +3759,7 @@ Merk: Ansiktsgjenkjenning kan være mindre sikkert enn fingeravtrykk, PIN eller 
     <string name="oneplus_vibration_settings_soc_tri_state">Vibrering</string>
     <string name="oneplus_vibration_settings_soc_tri_state_summary">Anrop og varslinger er stille og satt til vibrering, unntatt alarmer</string>
     <string name="oneplus_vibration_summary">Alarmen vil alltid ringe</string>
-    <string name="oneplus_video_enhancer">Forbedring av video</string>
+    <string name="oneplus_video_enhancer">Vibrerende fargeeffekt</string>
     <string name="oneplus_video_enhancer_footer">Forbedrer fargene under videoavspilling</string>
     <string name="oneplus_video_enhancer_summary">Forbedrer fargene under videoavspilling</string>
     <string name="oneplus_volume_keys_adjust">Bruk volumknappene til å justere</string>

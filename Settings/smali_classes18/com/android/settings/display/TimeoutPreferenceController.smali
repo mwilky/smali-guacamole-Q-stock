@@ -109,7 +109,7 @@
 
     iget-object v2, p0, Lcom/android/settings/display/TimeoutPreferenceController;->mContext:Landroid/content/Context;
 
-    const v3, 0x7f1205f3
+    const v3, 0x7f1205f2
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -131,7 +131,7 @@
     :cond_1
     iget-object v3, p0, Lcom/android/settings/display/TimeoutPreferenceController;->mContext:Landroid/content/Context;
 
-    const v4, 0x7f121289
+    const v4, 0x7f121291
 
     const/4 v5, 0x1
 

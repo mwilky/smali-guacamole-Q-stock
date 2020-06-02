@@ -34,6 +34,18 @@
 
 .field public static final ONEPLUS_15811:Ljava/lang/String; = "15811"
 
+.field private static final ONEPLUS_18811:Ljava/lang/String; = "18811"
+
+.field private static final ONEPLUS_18825:Ljava/lang/String; = "18825"
+
+.field private static final ONEPLUS_18831:Ljava/lang/String; = "18831"
+
+.field private static final ONEPLUS_19855:Ljava/lang/String; = "19855"
+
+.field private static final ONEPLUS_19861:Ljava/lang/String; = "19861"
+
+.field private static final ONEPLUS_19863:Ljava/lang/String; = "19863"
+
 .field public static final ONEPLUS_CLOUD_HEYTAP_PACKAGE:Ljava/lang/String; = "com.heytap.cloud"
 
 .field public static final ONEPLUS_CLOUD_PACKAGE:Ljava/lang/String; = "com.oneplus.cloud"
@@ -1961,7 +1973,7 @@
 .method public static getQuickPayIconByType(Landroid/content/Context;I)Landroid/graphics/drawable/Drawable;
     .locals 2
 
-    const v0, 0x7f080619
+    const v0, 0x7f08061c
 
     if-eqz p1, :cond_3
 
@@ -1980,22 +1992,22 @@
     goto :goto_0
 
     :cond_0
-    const v0, 0x7f080433
+    const v0, 0x7f080434
 
     goto :goto_0
 
     :cond_1
-    const v0, 0x7f080432
+    const v0, 0x7f080433
 
     goto :goto_0
 
     :cond_2
-    const v0, 0x7f08061a
+    const v0, 0x7f08061d
 
     goto :goto_0
 
     :cond_3
-    const v0, 0x7f080619
+    const v0, 0x7f08061c
 
     nop
 
@@ -2662,6 +2674,33 @@
     return v0
 .end method
 
+.method public static initHwId()V
+    .locals 2
+
+    sget-object v0, Lcom/oneplus/settings/SettingsBaseApplication;->mApplication:Landroid/app/Application;
+
+    invoke-virtual {v0}, Landroid/app/Application;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object v0
+
+    const-string v1, "hw_version_ui"
+
+    invoke-static {v0, v1}, Landroid/provider/Settings$System;->getString(Landroid/content/ContentResolver;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_0
+
+    invoke-static {}, Lcom/oneplus/settings/utils/OPUtils;->setHardwareVersion()V
+
+    :cond_0
+    return-void
+.end method
+
 .method public static installMultiApp(Landroid/content/Context;Ljava/lang/String;I)V
     .locals 5
 
@@ -2784,6 +2823,26 @@
 
     move-result-object v1
 
+    const v2, 0x7f120e1d
+
+    invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_1
+
+    sget-object v0, Landroid/os/Build;->MODEL:Ljava/lang/String;
+
+    sget-object v1, Lcom/oneplus/settings/SettingsBaseApplication;->mApplication:Landroid/app/Application;
+
+    invoke-virtual {v1}, Landroid/app/Application;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v1
+
     const v2, 0x7f120e1f
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
@@ -2804,7 +2863,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f120e21
+    const v2, 0x7f120e1e
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -2825,26 +2884,6 @@
     move-result-object v1
 
     const v2, 0x7f120e20
-
-    invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
-
-    move-result v0
-
-    if-nez v0, :cond_1
-
-    sget-object v0, Landroid/os/Build;->MODEL:Ljava/lang/String;
-
-    sget-object v1, Lcom/oneplus/settings/SettingsBaseApplication;->mApplication:Landroid/app/Application;
-
-    invoke-virtual {v1}, Landroid/app/Application;->getResources()Landroid/content/res/Resources;
-
-    move-result-object v1
-
-    const v2, 0x7f120e22
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -5396,16 +5435,23 @@
 .end method
 
 .method public static isSupportSystemProductionRingtone()Z
-    .locals 1
+    .locals 3
 
-    nop
+    const/4 v0, 0x0
 
-    const-string v0, "OP_FEATURE_SYSTEM_PRODUCTION_RINGTONE"
+    const-string v1, "ro.product.first_api_level"
 
-    invoke-static {v0}, Lcom/oneplus/lib/util/ReflectUtil;->isFeatureSupported(Ljava/lang/String;)Z
+    invoke-static {v1, v0}, Landroid/os/SystemProperties;->getInt(Ljava/lang/String;I)I
 
-    move-result v0
+    move-result v1
 
+    const/16 v2, 0x1d
+
+    if-ge v1, v2, :cond_0
+
+    const/4 v0, 0x1
+
+    :cond_0
     return v0
 .end method
 
@@ -5441,6 +5487,40 @@
     move-result-object v0
 
     const-string v1, "sprint"
+
+    invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    const/4 v0, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    :goto_0
+    return v0
+.end method
+
+.method public static isSupportUssOnly()Z
+    .locals 2
+
+    invoke-static {}, Lcom/oneplus/settings/utils/OPUtils;->isSupportUss()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    const-string v0, "ro.boot.project_name"
+
+    invoke-static {v0}, Landroid/os/SystemProperties;->get(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
+
+    const-string v1, "18825"
 
     invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -5523,6 +5603,104 @@
 
     move-result v0
 
+    return v0
+.end method
+
+.method public static isSupportUstOnly()Z
+    .locals 3
+
+    invoke-static {}, Lcom/oneplus/settings/utils/OPUtils;->isSupportUstMode()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    const-string v0, "ro.boot.project_name"
+
+    invoke-static {v0}, Landroid/os/SystemProperties;->get(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v1
+
+    const-string v2, "18831"
+
+    invoke-virtual {v2, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_0
+
+    invoke-static {v0}, Landroid/os/SystemProperties;->get(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v1
+
+    const-string v2, "19861"
+
+    invoke-virtual {v2, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_0
+
+    invoke-static {v0}, Landroid/os/SystemProperties;->get(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
+
+    const-string v1, "18811"
+
+    invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    const/4 v0, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    :goto_0
+    return v0
+.end method
+
+.method public static isSupportUstUnify()Z
+    .locals 1
+
+    invoke-static {}, Lcom/oneplus/settings/utils/OPUtils;->isSupportUstMode()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    invoke-static {}, Lcom/oneplus/settings/utils/OPUtils;->isSupportUstOnly()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    :cond_0
+    invoke-static {}, Lcom/oneplus/settings/utils/OPUtils;->isSupportUss()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_2
+
+    invoke-static {}, Lcom/oneplus/settings/utils/OPUtils;->isSupportUssOnly()Z
+
+    move-result v0
+
+    if-nez v0, :cond_2
+
+    :cond_1
+    const/4 v0, 0x1
+
+    goto :goto_0
+
+    :cond_2
+    const/4 v0, 0x0
+
+    :goto_0
     return v0
 .end method
 
@@ -9255,6 +9433,148 @@
     invoke-virtual {v1, v0}, Landroid/view/Window;->setSoftInputMode(I)V
 
     return-void
+.end method
+
+.method private static setHardwareVersion()V
+    .locals 5
+
+    const-string v0, "ro.boot.project_name"
+
+    invoke-static {v0}, Landroid/os/SystemProperties;->get(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
+
+    move-result v1
+
+    const/4 v2, 0x3
+
+    const/4 v3, 0x2
+
+    const/4 v4, 0x1
+
+    sparse-switch v1, :sswitch_data_0
+
+    :cond_0
+    goto :goto_0
+
+    :sswitch_0
+    const-string v1, "19863"
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_0
+
+    move v1, v4
+
+    goto :goto_1
+
+    :sswitch_1
+    const-string v1, "19861"
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_0
+
+    move v1, v2
+
+    goto :goto_1
+
+    :sswitch_2
+    const-string v1, "19855"
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_0
+
+    move v1, v3
+
+    goto :goto_1
+
+    :sswitch_3
+    const-string v1, "18825"
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_0
+
+    const/4 v1, 0x0
+
+    goto :goto_1
+
+    :goto_0
+    const/4 v1, -0x1
+
+    :goto_1
+    if-eqz v1, :cond_4
+
+    if-eq v1, v4, :cond_3
+
+    if-eq v1, v3, :cond_2
+
+    if-eq v1, v2, :cond_1
+
+    const-string v1, "ro.boot.hw_version"
+
+    const-string v2, ""
+
+    invoke-static {v1, v2}, Landroid/os/SystemProperties;->get(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v1
+
+    goto :goto_2
+
+    :cond_1
+    const-string v1, "53"
+
+    goto :goto_2
+
+    :cond_2
+    const-string v1, "15"
+
+    goto :goto_2
+
+    :cond_3
+    const-string v1, "13"
+
+    goto :goto_2
+
+    :cond_4
+    const-string v1, "31"
+
+    nop
+
+    :goto_2
+    sget-object v2, Lcom/oneplus/settings/SettingsBaseApplication;->mApplication:Landroid/app/Application;
+
+    invoke-virtual {v2}, Landroid/app/Application;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object v2
+
+    const-string v3, "hw_version_ui"
+
+    invoke-static {v2, v3, v1}, Landroid/provider/Settings$System;->putString(Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;)Z
+
+    return-void
+
+    nop
+
+    :sswitch_data_0
+    .sparse-switch
+        0x2ccccf4 -> :sswitch_3
+        0x2cd41b0 -> :sswitch_2
+        0x2cd41cb -> :sswitch_1
+        0x2cd41cd -> :sswitch_0
+    .end sparse-switch
 .end method
 
 .method public static setLightNavigationBar(Landroid/view/Window;I)V

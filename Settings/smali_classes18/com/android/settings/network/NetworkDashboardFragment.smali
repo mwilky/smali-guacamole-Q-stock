@@ -9,6 +9,8 @@
 
 
 # static fields
+.field public static final OMA_WFC_CHECKED:Ljava/lang/String; = "sprint_vowifi_enable"
+
 .field public static final OMA_WFC_ENABLE:Ljava/lang/String; = "oma_wfc_enable"
 
 .field public static final SEARCH_INDEX_DATA_PROVIDER:Lcom/android/settings/search/Indexable$SearchIndexProvider;
@@ -227,6 +229,36 @@
     invoke-interface {v8, v7}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     return-object v8
+.end method
+
+.method public static isWfcOMAChecked(Landroid/content/Context;)Z
+    .locals 3
+
+    const/4 v0, 0x0
+
+    if-eqz p0, :cond_1
+
+    invoke-virtual {p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object v1
+
+    const-string v2, "sprint_vowifi_enable"
+
+    invoke-static {v1, v2, v0}, Landroid/provider/Settings$Global;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
+
+    move-result v1
+
+    const/4 v2, 0x1
+
+    if-ne v1, v2, :cond_0
+
+    move v0, v2
+
+    :cond_0
+    return v0
+
+    :cond_1
+    return v0
 .end method
 
 .method static synthetic lambda$onCreateDialog$0(Lcom/android/settings/network/MobilePlanPreferenceController;Landroid/content/DialogInterface;I)V
@@ -473,7 +505,7 @@
 .method public getHelpResource()I
     .locals 1
 
-    const v0, 0x7f1207da
+    const v0, 0x7f1207d9
 
     return v0
 .end method
@@ -694,7 +726,7 @@
 
     move-result v0
 
-    if-eqz v0, :cond_1
+    if-eqz v0, :cond_2
 
     invoke-direct {p0}, Lcom/android/settings/network/NetworkDashboardFragment;->updateUssWifiTetheringPreference()V
 
@@ -730,9 +762,24 @@
 
     iput-object v0, p0, Lcom/android/settings/network/NetworkDashboardFragment;->mCallingPlusSwitchPreference:Lcom/android/settings/widget/MasterSwitchPreference;
 
-    iget-object v0, p0, Lcom/android/settings/network/NetworkDashboardFragment;->mCallingPlusConnection:Landroid/content/ServiceConnection;
+    iget-object v0, p0, Lcom/android/settings/network/NetworkDashboardFragment;->mCallingPlusSwitchPreference:Lcom/android/settings/widget/MasterSwitchPreference;
 
     if-eqz v0, :cond_0
+
+    invoke-virtual {p0}, Lcom/android/settings/network/NetworkDashboardFragment;->getPrefContext()Landroid/content/Context;
+
+    move-result-object v1
+
+    invoke-static {v1}, Lcom/android/settings/network/NetworkDashboardFragment;->isWfcOMAChecked(Landroid/content/Context;)Z
+
+    move-result v1
+
+    invoke-virtual {v0, v1}, Lcom/android/settings/widget/MasterSwitchPreference;->setChecked(Z)V
+
+    :cond_0
+    iget-object v0, p0, Lcom/android/settings/network/NetworkDashboardFragment;->mCallingPlusConnection:Landroid/content/ServiceConnection;
+
+    if-eqz v0, :cond_1
 
     new-instance v0, Landroid/content/Intent;
 
@@ -758,10 +805,10 @@
 
     iput-boolean v1, p0, Lcom/android/settings/network/NetworkDashboardFragment;->isBindWifiCallingPlusSuccess:Z
 
-    :cond_0
+    :cond_1
     iget-object v0, p0, Lcom/android/settings/network/NetworkDashboardFragment;->mBroadcastReceiver:Landroid/content/BroadcastReceiver;
 
-    if-eqz v0, :cond_1
+    if-eqz v0, :cond_2
 
     new-instance v0, Landroid/content/IntentFilter;
 
@@ -779,7 +826,7 @@
 
     invoke-virtual {v1, v2, v0}, Landroid/content/Context;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
 
-    :cond_1
+    :cond_2
     return-void
 .end method
 

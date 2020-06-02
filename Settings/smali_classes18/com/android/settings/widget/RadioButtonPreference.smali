@@ -59,11 +59,11 @@
 
     iput v0, p0, Lcom/android/settings/widget/RadioButtonPreference;->appendixVisibility:I
 
-    const v0, 0x7f0d0276
+    const v0, 0x7f0d027d
 
     invoke-virtual {p0, v0}, Lcom/android/settings/widget/RadioButtonPreference;->setWidgetLayoutResource(I)V
 
-    const v0, 0x7f0d0264
+    const v0, 0x7f0d026b
 
     invoke-virtual {p0, v0}, Lcom/android/settings/widget/RadioButtonPreference;->setLayoutResource(I)V
 
@@ -81,7 +81,7 @@
 
     invoke-super {p0, p1}, Landroidx/preference/CheckBoxPreference;->onBindViewHolder(Landroidx/preference/PreferenceViewHolder;)V
 
-    const v0, 0x7f0a0698
+    const v0, 0x7f0a069a
 
     invoke-virtual {p1, v0}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 

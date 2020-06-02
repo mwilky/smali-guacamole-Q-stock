@@ -451,7 +451,7 @@
 
     new-instance v1, Landroid/app/AlertDialog$Builder;
 
-    const v2, 0x7f1304ba
+    const v2, 0x7f1304bb
 
     invoke-direct {v1, v0, v2}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;I)V
 

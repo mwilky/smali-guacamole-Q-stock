@@ -413,11 +413,11 @@
     .annotation build Landroidx/annotation/VisibleForTesting;
     .end annotation
 
-    const v0, 0x7f0d0362
+    const v0, 0x7f0d0369
 
     invoke-virtual {p0, v0}, Lcom/android/settings/notification/ZenOnboardingActivity;->setContentView(I)V
 
-    const v0, 0x7f0a07aa
+    const v0, 0x7f0a07ac
 
     invoke-virtual {p0, v0}, Lcom/android/settings/notification/ZenOnboardingActivity;->findViewById(I)Landroid/view/View;
 
@@ -425,7 +425,7 @@
 
     iput-object v0, p0, Lcom/android/settings/notification/ZenOnboardingActivity;->mNewSetting:Landroid/view/View;
 
-    const v0, 0x7f0a07a6
+    const v0, 0x7f0a07a8
 
     invoke-virtual {p0, v0}, Lcom/android/settings/notification/ZenOnboardingActivity;->findViewById(I)Landroid/view/View;
 
@@ -433,7 +433,7 @@
 
     iput-object v0, p0, Lcom/android/settings/notification/ZenOnboardingActivity;->mKeepCurrentSetting:Landroid/view/View;
 
-    const v0, 0x7f0a07ab
+    const v0, 0x7f0a07ad
 
     invoke-virtual {p0, v0}, Lcom/android/settings/notification/ZenOnboardingActivity;->findViewById(I)Landroid/view/View;
 
@@ -443,7 +443,7 @@
 
     iput-object v0, p0, Lcom/android/settings/notification/ZenOnboardingActivity;->mNewSettingButton:Landroid/widget/RadioButton;
 
-    const v0, 0x7f0a07a7
+    const v0, 0x7f0a07a9
 
     invoke-virtual {p0, v0}, Lcom/android/settings/notification/ZenOnboardingActivity;->findViewById(I)Landroid/view/View;
 

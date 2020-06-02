@@ -131,6 +131,79 @@
     return v2
 .end method
 
+.method public static isSystemAndNonUpdate(Landroid/content/pm/ApplicationInfo;)Z
+    .locals 4
+
+    const/4 v0, 0x0
+
+    if-eqz p0, :cond_1
+
+    iget v1, p0, Landroid/content/pm/ApplicationInfo;->flags:I
+
+    and-int/lit8 v2, v1, 0x1
+
+    const/4 v3, 0x1
+
+    if-ne v2, v3, :cond_0
+
+    and-int/lit16 v2, v1, 0x80
+
+    if-nez v2, :cond_0
+
+    move v0, v3
+
+    :cond_0
+    return v0
+
+    :cond_1
+    return v0
+.end method
+
+.method public static isSystemUpdateAndOneplus(Landroid/content/pm/ApplicationInfo;)Z
+    .locals 5
+
+    const/4 v0, 0x0
+
+    if-eqz p0, :cond_1
+
+    iget v1, p0, Landroid/content/pm/ApplicationInfo;->flags:I
+
+    and-int/lit8 v2, v1, 0x1
+
+    const/4 v3, 0x1
+
+    if-ne v2, v3, :cond_0
+
+    and-int/lit16 v2, v1, 0x80
+
+    const/16 v4, 0x80
+
+    if-ne v2, v4, :cond_0
+
+    iget-object v2, p0, Landroid/content/pm/ApplicationInfo;->packageName:Ljava/lang/String;
+
+    const-string v4, "oneplus"
+
+    invoke-virtual {v2, v4}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_0
+
+    move v0, v3
+
+    goto :goto_0
+
+    :cond_0
+    nop
+
+    :goto_0
+    return v0
+
+    :cond_1
+    return v0
+.end method
+
 .method public static killProcess(Landroid/app/ActivityManager;)V
     .locals 2
 

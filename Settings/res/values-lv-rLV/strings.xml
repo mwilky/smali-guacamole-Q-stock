@@ -16,7 +16,7 @@ Vai tiešām vēlaties iespējot šo funkciju?"</string>
     <string name="alert_dialog_cancel">Atcelt</string>
     <string name="alert_slider_settings_title">Prioritātes iestatījumi</string>
     <string name="alert_slider_silent_title">Klusā režīma iestatījumi</string>
-    <string name="alertslider_settings">Brīdinājuma slīdnis</string>
+    <string name="alertslider_settings">Alert Slider</string>
     <string name="alertslider_settings_soc_tri_state">Brīdinājuma slīdnis</string>
     <string name="android_am">"no rīta "</string>
     <string name="android_pm">"vakarā "</string>
@@ -152,7 +152,7 @@ Vai tiešām vēlaties iespējot šo funkciju?"</string>
     <string name="hardware_keys_action_nothing">Nav darbības</string>
     <string name="hardware_keys_action_notification_center">Atvērt/aizvērt paziņojumu centru</string>
     <string name="hardware_keys_action_recents">Nesen izmantotās</string>
-    <string name="hardware_keys_action_shelf">Atvērt plauktu</string>
+    <string name="hardware_keys_action_shelf">Atvērt Shelf</string>
     <string name="hardware_keys_action_turn_off_screen">Izslēgt ekrānu</string>
     <string name="hardware_keys_action_voice_search">Balss meklēšana</string>
     <string name="hardware_keys_back_key_title">Poga Atpakaļ</string>
@@ -191,6 +191,7 @@ Vai tiešām vēlaties iespējot šo funkciju?"</string>
     <string name="manage_device_administrators">Pārvaldīt ierīces administratorus</string>
     <string name="manage_fingerprints_dialog">Atbloķēšanu ar pirksta nospiedumu tagad ir iespējota. Vai vēlaties pārvaldīt savus pirkstu nospiedumus?</string>
     <string name="manage_users">Pārvaldīt lietotājus</string>
+    <string name="master_clear_confirm_summary">Viss iekšējā krātuvē esošais saturs arī tiks dzēsts, tai skaitā mūzika,. fotoattēli, video un citi personas dati. Vai apstiprināt dzēšanu?</string>
     <string name="memory_capacity_title">RAM</string>
     <string name="multi_app_label_badge">Parallel %1$s</string>
     <string name="music_application_title">Lietotne Mūzika</string>
@@ -250,7 +251,7 @@ Vai tiešām vēlaties iespējot šo funkciju?"</string>
     <string name="oneplus_auto_activate">Ieslēgt automātiski</string>
     <string name="oneplus_auto_answer_via_bluetooth_summary">Ienākošais zvans tiks automātiski atbildēts, kamēr pastāv savienojums ar Bluetooth audio ierīci</string>
     <string name="oneplus_auto_answer_via_bluetooth_title">Bluetooth viedā atbilde</string>
-    <string name="oneplus_auto_check_pin_length">Apstipriniet PIN, nepieskaroties pie “✓”</string>
+    <string name="oneplus_auto_check_pin_length">Automātiski atbloķēt ekrānu pēc PIN ievadīšanas</string>
     <string name="oneplus_auto_disconect_the_ap">Tīklājs tiks automātiski izslēgts pēc 5 minūtēm, ja neviena ierīce nav pievienota.</string>
     <string name="oneplus_auto_open_app_none">Neviens</string>
     <string name="oneplus_auto_open_app_other_applications">CITAS LIETOTNES</string>
@@ -290,7 +291,7 @@ Enerģijas taupīšanas režīms izslēdzas automātiski, kad ierīce uzlādēja
     <string name="oneplus_bluetooth_volume_switch_summary">Kad izveidots Bluetooth savienojums, automātiski sinhronizēt austiņu un ierīces skaļuma līmeni</string>
     <string name="oneplus_broadcat_wifi_name">Apraides tīkla nosaukums (SSID)</string>
     <string name="oneplus_buttons_and_gestures_settings">Pogas un žesti</string>
-    <string name="oneplus_buttons_dashboard_summary">Modinātāja slīdnis, navigācija, žesti</string>
+    <string name="oneplus_buttons_dashboard_summary">Alert Slider, navigācija, žesti</string>
     <string name="oneplus_buttons_settings">Pogu iestatījumi</string>
     <string name="oneplus_buttons_settings_summary">Navigācijas žests</string>
     <string name="oneplus_call_information_broadcast">Zvanītāja ID paziņošana ar balsi</string>
@@ -404,6 +405,9 @@ Enerģijas taupīšanas režīms izslēdzas automātiski, kad ierīce uzlādēja
 2. Vienkāršas uzstādīšanas procesā, lūdzu, ievadiet tikai viena pirksta nospieduma datus."</string>
     <string name="oneplus_enroll_fingerprint_tips_title">Pirksta nospieduma iestatīšanas uzvedne</string>
     <string name="oneplus_enter_your_fingerprint">· reģistrējiet savu pirksta nospiedumu.</string>
+    <string name="oneplus_erase_system_data">DZĒST SISTĒMAS DATUS</string>
+    <string name="oneplus_erase_system_data_summary">Sistēmas dati, tai skaitā konta informācija, kontaktpersonas un lietotņu dati, tiks izdzēsti. Šo darbību nevar atsaukt.</string>
+    <string name="oneplus_erase_system_data_title">Vai dzēst sistēmas datus?</string>
     <string name="oneplus_esportmode_introduction_summary">Lai aktivizētu e-sporta režīmu, pieskarieties pie pārslēga spēļu režīma panelī.</string>
     <string name="oneplus_experience_improvement_programs">Pieredzes uzlabošanas programmas</string>
     <string name="oneplus_face_auto_unlock_while_screen_on_sumary">Atbloķējiet tālruni ar savu seju, tiklīdz ekrāns ieslēdzas, neveicot nekādas vilkšanas darbības.</string>
@@ -556,7 +560,7 @@ Jebkurā laikā ejiet uz sākuma ekrānu un pavelciet uz augšu no ekrāna apak�
     <string name="oneplus_gestures_open_camera">Atvērt kameru</string>
     <string name="oneplus_gestures_open_flashlight">Ieslēgt/izslēgt lukturi</string>
     <string name="oneplus_gestures_open_front_camera">Atvērt priekšējo kameru</string>
-    <string name="oneplus_gestures_open_shelf">Atvērt plauktu</string>
+    <string name="oneplus_gestures_open_shelf">Atvērt Shelf</string>
     <string name="oneplus_gestures_take_video">Ierakstīt video</string>
     <string name="oneplus_getlog_title">Žurnālu ieguve</string>
     <string name="oneplus_google_tts">Google TTS balss dati</string>
@@ -634,7 +638,7 @@ Piezīme. Pirksta nospiedums var nebūt tik drošs kā spēcīgs raksts vai PIN�
     <string name="oneplus_media_ring_summary">Izslēgt multivides skaņu</string>
     <string name="oneplus_mobile_device_name_title">Tālruņa nosaukums</string>
     <string name="oneplus_mode_choose">Režīma atlase</string>
-    <string name="oneplus_mode_settings">Modinātāja slīdņa iestatījumi</string>
+    <string name="oneplus_mode_settings">Alert Slider iestatījumi</string>
     <string name="oneplus_moderate">Vidēja</string>
     <string name="oneplus_more">Vairāk</string>
     <string name="oneplus_motion_sensor_settings_title">Sistēmas žesti</string>
@@ -895,7 +899,7 @@ Atlikuši %d mēģinājumi."</string>
     <string name="oneplus_search_keyword_rotation_silent">izslēgt skaņu</string>
     <string name="oneplus_search_keyword_screen_color_mode">režīms, krāsa</string>
     <string name="oneplus_search_keyword_show_pwd">displejs, PIN, paroles</string>
-    <string name="oneplus_search_keyword_soc_tri_state">modinātāja slīdnis, vibrācija, zvans</string>
+    <string name="oneplus_search_keyword_soc_tri_state">brīdinājuma slīdnis, vibrācija, zvans</string>
     <string name="oneplus_search_keyword_sounds_and_notifications_interruptions">netraucēt, pārtraukt, pārtraukums, režīms</string>
     <string name="oneplus_search_keyword_swap_navkeys">pogu funkciju maiņa</string>
     <string name="oneplus_search_keyword_switch">pārsūtīšana, datu migrēšana</string>
@@ -1044,7 +1048,7 @@ Piezīme.
     <string name="oneplus_tools_title">Utilītas</string>
     <string name="oneplus_top_level_accounts_summary">OnePlus account, other accounts</string>
     <string name="oneplus_top_level_apps_and_notifs_summary">Noklusējuma lietotnes, atļaujas</string>
-    <string name="oneplus_top_level_buttons_and_gestures_summary">Brīdinājuma slīdnis, navigācijas josla un žesti</string>
+    <string name="oneplus_top_level_buttons_and_gestures_summary">Alert Slider, navigācijas josla un žesti</string>
     <string name="oneplus_top_level_cloud_h2_summary">Sinhronizēt datus ar mākoni, atrast manu tālruni</string>
     <string name="oneplus_top_level_cloud_o2_summary">Sinhronizēt datus ar mākoni</string>
     <string name="oneplus_top_level_connected_summary">NFC, spoguļošana, apmaksa ar skārienu</string>
@@ -1080,9 +1084,9 @@ Piezīme. Šāda atbloķēšana var būt nedrošāka par pirkstu nospiedumu, PIN
     <string name="oneplus_vibration_settings_soc_tri_state">Vibrācija</string>
     <string name="oneplus_vibration_settings_soc_tri_state_summary">Zvaniem un paziņojumiem tiks izslēgta skaņa, iestatot tiem tikai vibrācijas režīmu, izņemot modinātājus</string>
     <string name="oneplus_vibration_summary">Modinātājs vienmēr tiks atskaņots</string>
-    <string name="oneplus_video_enhancer">Video uzlabotājs</string>
-    <string name="oneplus_video_enhancer_footer">Uzlabojiet krāsu, atskaņojot video</string>
-    <string name="oneplus_video_enhancer_summary">Uzlabojiet krāsu, atskaņojot video</string>
+    <string name="oneplus_video_enhancer">Spilgtu krāsu efekts</string>
+    <string name="oneplus_video_enhancer_footer">Uzlabojiet krāsu, spēlējot video spēles</string>
+    <string name="oneplus_video_enhancer_summary">Uzlabojiet krāsu, spēlējot video spēles</string>
     <string name="oneplus_volume_keys_adjust">Izmantojiet skaļuma regulēšanas pogas, lai to pielāgotu</string>
     <string name="oneplus_volume_keys_adjust_media">Multivides skaļums</string>
     <string name="oneplus_volume_keys_adjust_ringtones">Zvana signāla skaļums</string>
@@ -1099,7 +1103,7 @@ Iestatot tīkla paslēpšanu, netiks mainīti jūsu maršrutētāja iestatījumi
     <string name="oneplus_wifi_ipv6_surport_title">IPv6 atbalsts</string>
     <string name="oneplus_wifi_list">Wi-Fi tīklu saraksts</string>
     <string name="oneplus_wifi_name">Mobilā tīklāja nosaukums</string>
-    <string name="oneplus_wifi_name_dialog_message">Ja izslēdzas apraides tīkla nosaukuma (SSID) iespēju, jūsu tālrunis nebūs redzams citām ierīcēm un neparādīsies pieejamo Wi-Fi tīklu sarakstā. Citas ierīces vēl aizvien varēs pieslēgties jūsu tīklājam, manuāli ievadot tīkla nosaukumu.</string>
+    <string name="oneplus_wifi_name_dialog_message">Ja izslēdzat apraides tīkla nosaukuma (SSID) iespēju, jūsu tālrunis nebūs redzams citām ierīcēm un neparādīsies pieejamo Wi-Fi tīklu sarakstā. Citas ierīces vēl aizvien varēs pieslēgties jūsu tīklājam, manuāli ievadot tīkla nosaukumu.</string>
     <string name="oneplus_wifi_name_dialog_title">Jūsu tīklājs tagad nav redzams</string>
     <string name="oneplus_wifi_scan_always_available">Meklēšana ir pieejama vienmēr</string>
     <string name="oneplus_wifi_scan_always_available_summary">Atļaut atrašanās vietas noteikšanas pakalpojumiem un citām lietotnēm meklēt tīklus, kad Wi-Fi tīkls ir izslēgts</string>

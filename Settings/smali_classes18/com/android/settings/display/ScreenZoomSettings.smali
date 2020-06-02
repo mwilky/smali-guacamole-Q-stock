@@ -81,7 +81,7 @@
 .method protected getActivityLayoutResId()I
     .locals 1
 
-    const v0, 0x7f0d02a3
+    const v0, 0x7f0d02aa
 
     return v0
 .end method
@@ -89,7 +89,7 @@
 .method public getHelpResource()I
     .locals 1
 
-    const v0, 0x7f1207cc
+    const v0, 0x7f1207cb
 
     return v0
 .end method
@@ -136,7 +136,7 @@
 
     const/4 v1, 0x0
 
-    const v2, 0x7f0d02a4
+    const v2, 0x7f0d02ab
 
     aput v2, v0, v1
 
@@ -145,8 +145,8 @@
 
     :array_0
     .array-data 4
-        0x7f0d02a4
-        0x7f0d02a7
+        0x7f0d02ab
+        0x7f0d02ae
     .end array-data
 .end method
 
@@ -245,7 +245,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f1212a2
+    const v3, 0x7f1212aa
 
     invoke-virtual {v2, v3}, Landroidx/fragment/app/FragmentActivity;->setTitle(I)V
 

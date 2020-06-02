@@ -125,18 +125,18 @@
 
     move-result v1
 
-    const v2, 0x7f12097d
+    const v2, 0x7f12097c
 
     if-eqz v0, :cond_0
 
-    const v2, 0x7f120978
+    const v2, 0x7f120977
 
     goto :goto_0
 
     :cond_0
     if-eqz v1, :cond_1
 
-    const v2, 0x7f12105e
+    const v2, 0x7f12105b
 
     :cond_1
     :goto_0

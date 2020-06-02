@@ -121,9 +121,9 @@
 
     invoke-direct {v0, v1}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v1, 0x7f12124b
+    const v1, 0x7f121253
 
-    const v2, 0x7f121252
+    const v2, 0x7f12125a
 
     iget-object v3, p0, Lcom/android/settings/network/telephony/RoamingDialogFragment;->mCarrierConfigManager:Landroid/telephony/CarrierConfigManager;
 
@@ -143,7 +143,7 @@
 
     if-eqz v4, :cond_0
 
-    const v2, 0x7f12124c
+    const v2, 0x7f121254
 
     :cond_0
     invoke-virtual {p0}, Lcom/android/settings/network/telephony/RoamingDialogFragment;->getResources()Landroid/content/res/Resources;

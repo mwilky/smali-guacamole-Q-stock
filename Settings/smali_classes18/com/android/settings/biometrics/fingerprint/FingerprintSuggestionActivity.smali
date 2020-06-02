@@ -144,7 +144,7 @@
 
     iget-object v0, p0, Lcom/android/settings/biometrics/fingerprint/FingerprintSuggestionActivity;->mBtnCancel:Lcom/oneplus/lib/widget/button/OPButton;
 
-    const v1, 0x7f121314
+    const v1, 0x7f12131c
 
     invoke-virtual {v0, v1}, Lcom/oneplus/lib/widget/button/OPButton;->setText(I)V
 

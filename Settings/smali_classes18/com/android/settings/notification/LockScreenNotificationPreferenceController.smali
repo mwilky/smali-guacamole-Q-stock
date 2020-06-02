@@ -290,19 +290,19 @@
     :goto_1
     if-nez v0, :cond_2
 
-    const v3, 0x7f12094b
+    const v3, 0x7f12094a
 
     goto :goto_2
 
     :cond_2
     if-eqz v2, :cond_3
 
-    const v3, 0x7f12094e
+    const v3, 0x7f12094d
 
     goto :goto_2
 
     :cond_3
-    const v3, 0x7f120d8b
+    const v3, 0x7f120d8a
 
     :goto_2
     return v3
@@ -321,7 +321,7 @@
 
     iget-object v2, p0, Lcom/android/settings/notification/LockScreenNotificationPreferenceController;->mContext:Landroid/content/Context;
 
-    const v3, 0x7f12094e
+    const v3, 0x7f12094d
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -347,7 +347,7 @@
 
     iget-object v4, p0, Lcom/android/settings/notification/LockScreenNotificationPreferenceController;->mContext:Landroid/content/Context;
 
-    const v5, 0x7f120d8b
+    const v5, 0x7f120d8a
 
     invoke-virtual {v4, v5}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -370,7 +370,7 @@
     :cond_0
     iget-object v4, p0, Lcom/android/settings/notification/LockScreenNotificationPreferenceController;->mContext:Landroid/content/Context;
 
-    const v5, 0x7f12094b
+    const v5, 0x7f12094a
 
     invoke-virtual {v4, v5}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -487,7 +487,7 @@
 
     iget-object v2, p0, Lcom/android/settings/notification/LockScreenNotificationPreferenceController;->mContext:Landroid/content/Context;
 
-    const v3, 0x7f12094f
+    const v3, 0x7f12094e
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -511,7 +511,7 @@
 
     iget-object v4, p0, Lcom/android/settings/notification/LockScreenNotificationPreferenceController;->mContext:Landroid/content/Context;
 
-    const v5, 0x7f12094d
+    const v5, 0x7f12094c
 
     invoke-virtual {v4, v5}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -746,12 +746,12 @@
 
     if-eqz v0, :cond_4
 
-    const v1, 0x7f12094f
+    const v1, 0x7f12094e
 
     goto :goto_1
 
     :cond_4
-    const v1, 0x7f12094d
+    const v1, 0x7f12094c
 
     :goto_1
     iput v1, p0, Lcom/android/settings/notification/LockScreenNotificationPreferenceController;->mLockscreenSelectedValueProfile:I
@@ -949,7 +949,7 @@
     return v4
 
     :cond_0
-    const v5, 0x7f12094f
+    const v5, 0x7f12094e
 
     if-ne v1, v5, :cond_1
 
@@ -1004,7 +1004,7 @@
     return v4
 
     :cond_4
-    const v5, 0x7f12094b
+    const v5, 0x7f12094a
 
     if-eq v1, v5, :cond_5
 
@@ -1016,7 +1016,7 @@
     move v5, v4
 
     :goto_1
-    const v6, 0x7f12094e
+    const v6, 0x7f12094d
 
     if-ne v1, v6, :cond_6
 

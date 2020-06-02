@@ -180,7 +180,7 @@
 
     invoke-virtual {v1}, Landroid/content/res/TypedArray;->recycle()V
 
-    const v2, 0x7f120445
+    const v2, 0x7f120443
 
     invoke-virtual {p0, v2}, Lcom/oneplus/settings/ui/ColorPickerPreference;->setNeutralButtonText(I)V
 
@@ -192,7 +192,7 @@
 
     invoke-virtual {p0, v2}, Lcom/oneplus/settings/ui/ColorPickerPreference;->setPositiveButtonText(I)V
 
-    const v2, 0x7f0d01df
+    const v2, 0x7f0d01e6
 
     invoke-virtual {p0, v2}, Lcom/oneplus/settings/ui/ColorPickerPreference;->setDialogLayoutResource(I)V
 
@@ -451,7 +451,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f120448
+    const v2, 0x7f120446
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -481,7 +481,7 @@
 
     move-result-object v1
 
-    const v3, 0x7f120c2f
+    const v3, 0x7f120c31
 
     invoke-virtual {v1, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -526,7 +526,7 @@
 
     move-result-object v1
 
-    const v3, 0x7f12109a
+    const v3, 0x7f121097
 
     invoke-virtual {v1, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -571,7 +571,7 @@
 
     move-result-object v1
 
-    const v3, 0x7f1210a3
+    const v3, 0x7f1210a0
 
     invoke-virtual {v1, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -616,7 +616,7 @@
 
     move-result-object v1
 
-    const v3, 0x7f1210a5
+    const v3, 0x7f1210a2
 
     invoke-virtual {v1, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -637,7 +637,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f121075
+    const v2, 0x7f121072
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -923,7 +923,7 @@
 
     aget-object v4, v4, v2
 
-    const v5, 0x7f080468
+    const v5, 0x7f080469
 
     invoke-virtual {v4, v5}, Landroid/view/View;->setBackgroundResource(I)V
 
@@ -998,7 +998,7 @@
     goto :goto_5
 
     :cond_7
-    const v2, 0x7f120447
+    const v2, 0x7f120445
 
     invoke-virtual {p0, v2}, Lcom/oneplus/settings/ui/ColorPickerPreference;->setMessage(I)V
 
@@ -1037,7 +1037,7 @@
 
     nop
 
-    const v1, 0x7f0a05ed
+    const v1, 0x7f0a05ef
 
     invoke-virtual {p1, v1}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 

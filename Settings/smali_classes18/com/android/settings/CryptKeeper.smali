@@ -105,7 +105,7 @@
 
     iput v0, p0, Lcom/android/settings/CryptKeeper;->mReleaseWakeLockCountdown:I
 
-    const v0, 0x7f120692
+    const v0, 0x7f120691
 
     iput v0, p0, Lcom/android/settings/CryptKeeper;->mStatusString:I
 
@@ -301,7 +301,7 @@
 .method private beginAttempt()V
     .locals 2
 
-    const v0, 0x7f0a065e
+    const v0, 0x7f0a0660
 
     invoke-virtual {p0, v0}, Lcom/android/settings/CryptKeeper;->findViewById(I)Landroid/view/View;
 
@@ -309,7 +309,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    const v1, 0x7f120421
+    const v1, 0x7f12041f
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
 
@@ -335,7 +335,7 @@
     invoke-virtual {v0, v1}, Lcom/android/internal/widget/LockPatternView;->setEnabled(Z)V
 
     :cond_1
-    const v0, 0x7f0a065e
+    const v0, 0x7f0a0660
 
     invoke-virtual {p0, v0}, Lcom/android/settings/CryptKeeper;->findViewById(I)Landroid/view/View;
 
@@ -343,7 +343,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    const v1, 0x7f1204e4
+    const v1, 0x7f1204e3
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
 
@@ -438,7 +438,7 @@
     invoke-virtual {v0}, Landroid/os/PowerManager$WakeLock;->acquire()V
 
     :cond_0
-    const v0, 0x7f0a0569
+    const v0, 0x7f0a056b
 
     invoke-virtual {p0, v0}, Lcom/android/settings/CryptKeeper;->findViewById(I)Landroid/view/View;
 
@@ -569,7 +569,7 @@
     goto/16 :goto_2
 
     :cond_1
-    const v0, 0x7f0a065e
+    const v0, 0x7f0a0660
 
     invoke-virtual {p0, v0}, Lcom/android/settings/CryptKeeper;->findViewById(I)Landroid/view/View;
 
@@ -585,7 +585,7 @@
 
     if-ge v3, v1, :cond_2
 
-    const v1, 0x7f1204ec
+    const v1, 0x7f1204eb
 
     invoke-virtual {p0, v1}, Lcom/android/settings/CryptKeeper;->getText(I)Ljava/lang/CharSequence;
 
@@ -653,7 +653,7 @@
 
     if-ne v1, v4, :cond_3
 
-    const v4, 0x7f1204f1
+    const v4, 0x7f1204f0
 
     invoke-virtual {v0, v4}, Landroid/widget/TextView;->setText(I)V
 
@@ -664,14 +664,14 @@
 
     if-ne v1, v4, :cond_4
 
-    const v4, 0x7f1204f0
+    const v4, 0x7f1204ef
 
     invoke-virtual {v0, v4}, Landroid/widget/TextView;->setText(I)V
 
     goto :goto_1
 
     :cond_4
-    const v4, 0x7f1204ef
+    const v4, 0x7f1204ee
 
     invoke-virtual {v0, v4}, Landroid/widget/TextView;->setText(I)V
 
@@ -1003,7 +1003,7 @@
 .method private passwordEntryInit()V
     .locals 6
 
-    const v0, 0x7f0a0511
+    const v0, 0x7f0a0513
 
     invoke-virtual {p0, v0}, Lcom/android/settings/CryptKeeper;->findViewById(I)Landroid/view/View;
 
@@ -1084,7 +1084,7 @@
     invoke-virtual {v0, v2}, Landroid/view/View;->setVisibility(I)V
 
     :cond_2
-    const v0, 0x7f0a06a4
+    const v0, 0x7f0a06a6
 
     invoke-virtual {p0, v0}, Lcom/android/settings/CryptKeeper;->findViewById(I)Landroid/view/View;
 
@@ -1433,9 +1433,9 @@
 
     invoke-virtual {v0, v2}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const v2, 0x7f0a065e
+    const v2, 0x7f0a0660
 
-    const v3, 0x7f0a06f7
+    const v3, 0x7f0a06f9
 
     if-eqz p1, :cond_0
 
@@ -1445,7 +1445,7 @@
 
     check-cast v3, Landroid/widget/TextView;
 
-    const v4, 0x7f1204da
+    const v4, 0x7f1204d9
 
     invoke-virtual {v3, v4}, Landroid/widget/TextView;->setText(I)V
 
@@ -1455,7 +1455,7 @@
 
     check-cast v2, Landroid/widget/TextView;
 
-    const v3, 0x7f1204d9
+    const v3, 0x7f1204d8
 
     invoke-virtual {v2, v3}, Landroid/widget/TextView;->setText(I)V
 
@@ -1468,7 +1468,7 @@
 
     check-cast v3, Landroid/widget/TextView;
 
-    const v4, 0x7f1204e2
+    const v4, 0x7f1204e1
 
     invoke-virtual {v3, v4}, Landroid/widget/TextView;->setText(I)V
 
@@ -1478,7 +1478,7 @@
 
     check-cast v2, Landroid/widget/TextView;
 
-    const v3, 0x7f1204e1
+    const v3, 0x7f1204e0
 
     invoke-virtual {v2, v3}, Landroid/widget/TextView;->setText(I)V
 
@@ -1565,12 +1565,12 @@
 
     if-eqz v1, :cond_1
 
-    const v1, 0x7f1204ee
+    const v1, 0x7f1204ed
 
     goto :goto_0
 
     :cond_1
-    const v1, 0x7f1204ed
+    const v1, 0x7f1204ec
 
     :goto_0
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setText(I)V
@@ -1617,7 +1617,7 @@
     return-void
 
     :cond_0
-    const v2, 0x7f1204e7
+    const v2, 0x7f1204e6
 
     invoke-virtual {p0, v2}, Lcom/android/settings/CryptKeeper;->getText(I)Ljava/lang/CharSequence;
 
@@ -1723,7 +1723,7 @@
 
     move-object v5, v0
 
-    const v0, 0x7f1204e8
+    const v0, 0x7f1204e7
 
     invoke-virtual {p0, v0}, Lcom/android/settings/CryptKeeper;->getText(I)Ljava/lang/CharSequence;
 
@@ -1740,7 +1740,7 @@
     move-exception v0
 
     :goto_2
-    const v0, 0x7f0a065e
+    const v0, 0x7f0a0660
 
     invoke-virtual {p0, v0}, Lcom/android/settings/CryptKeeper;->findViewById(I)Landroid/view/View;
 

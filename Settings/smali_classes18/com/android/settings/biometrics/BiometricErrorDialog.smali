@@ -75,12 +75,6 @@
 
     move-result-object v3
 
-    const/4 v5, 0x1
-
-    invoke-virtual {v3, v5}, Lcom/oneplus/lib/app/OPAlertDialog$Builder;->setOnlyDarkTheme(Z)Lcom/oneplus/lib/app/OPAlertDialog$Builder;
-
-    move-result-object v3
-
     invoke-virtual {p0}, Lcom/android/settings/biometrics/BiometricErrorDialog;->getOkButtonTextResId()I
 
     move-result v5
@@ -91,6 +85,26 @@
 
     invoke-virtual {v3, v5, v6}, Lcom/oneplus/lib/app/OPAlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Lcom/oneplus/lib/app/OPAlertDialog$Builder;
 
+    invoke-virtual {p0}, Lcom/android/settings/biometrics/BiometricErrorDialog;->getActivity()Landroidx/fragment/app/FragmentActivity;
+
+    move-result-object v3
+
+    invoke-static {v3}, Lcom/oneplus/settings/utils/OPUtils;->isSurportBackFingerprint(Landroid/content/Context;)Z
+
+    move-result v3
+
+    const/4 v5, 0x1
+
+    if-eqz v3, :cond_0
+
+    invoke-virtual {v0, v5}, Lcom/oneplus/lib/app/OPAlertDialog$Builder;->setOnlyLightTheme(Z)Lcom/oneplus/lib/app/OPAlertDialog$Builder;
+
+    goto :goto_0
+
+    :cond_0
+    invoke-virtual {v0, v5}, Lcom/oneplus/lib/app/OPAlertDialog$Builder;->setOnlyDarkTheme(Z)Lcom/oneplus/lib/app/OPAlertDialog$Builder;
+
+    :goto_0
     invoke-virtual {v0}, Lcom/oneplus/lib/app/OPAlertDialog$Builder;->create()Lcom/oneplus/lib/app/OPAlertDialog;
 
     move-result-object v3

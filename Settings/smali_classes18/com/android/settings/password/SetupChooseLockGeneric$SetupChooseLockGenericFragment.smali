@@ -43,7 +43,7 @@
     goto :goto_0
 
     :cond_0
-    const v0, 0x7f0d02bd
+    const v0, 0x7f0d02c4
 
     invoke-virtual {p0, v0}, Lcom/android/settings/password/SetupChooseLockGeneric$SetupChooseLockGenericFragment;->setHeaderView(I)V
 
@@ -51,7 +51,7 @@
 
     :cond_1
     :goto_0
-    const v0, 0x7f0d02bc
+    const v0, 0x7f0d02c3
 
     invoke-virtual {p0, v0}, Lcom/android/settings/password/SetupChooseLockGeneric$SetupChooseLockGenericFragment;->setHeaderView(I)V
 
@@ -355,7 +355,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f070583
+    const v2, 0x7f070585
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -367,7 +367,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0804e5
+    const v2, 0x7f0804e6
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -379,12 +379,12 @@
 
     if-eqz v1, :cond_0
 
-    const v1, 0x7f12095f
+    const v1, 0x7f12095e
 
     goto :goto_0
 
     :cond_0
-    const v1, 0x7f121370
+    const v1, 0x7f121378
 
     :goto_0
     invoke-virtual {p0}, Lcom/android/settings/password/SetupChooseLockGeneric$SetupChooseLockGenericFragment;->getActivity()Landroidx/fragment/app/FragmentActivity;

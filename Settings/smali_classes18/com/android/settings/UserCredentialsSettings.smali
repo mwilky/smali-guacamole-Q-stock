@@ -110,7 +110,7 @@
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    const v1, 0x7f0a0580
+    const v1, 0x7f0a0582
 
     invoke-virtual {p2, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -124,12 +124,12 @@
 
     if-eqz v2, :cond_1
 
-    const v2, 0x7f1204bf
+    const v2, 0x7f1204be
 
     goto :goto_0
 
     :cond_1
-    const v2, 0x7f1204c0
+    const v2, 0x7f1204bf
 
     :goto_0
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(I)V
@@ -227,7 +227,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f121685
+    const v1, 0x7f12168d
 
     const/4 v2, 0x1
 
@@ -280,7 +280,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f121687
+    const v1, 0x7f12168f
 
     invoke-virtual {v0, v1}, Landroidx/fragment/app/FragmentActivity;->setTitle(I)V
 

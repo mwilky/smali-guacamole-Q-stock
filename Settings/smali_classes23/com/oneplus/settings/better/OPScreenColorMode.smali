@@ -479,7 +479,7 @@
 
     iget-object v4, p0, Lcom/oneplus/settings/better/OPScreenColorMode;->mContext:Landroid/content/Context;
 
-    const v5, 0x7f120ec9
+    const v5, 0x7f120ec7
 
     invoke-virtual {v4, v5}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
@@ -494,7 +494,7 @@
 
     iget-object v4, p0, Lcom/oneplus/settings/better/OPScreenColorMode;->mContext:Landroid/content/Context;
 
-    const v5, 0x7f120ec6
+    const v5, 0x7f120ec4
 
     invoke-virtual {v4, v5}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
@@ -1126,13 +1126,13 @@
 
     iget-object v4, p0, Lcom/oneplus/settings/better/OPScreenColorMode;->mScreenColorModeDefaultSettings:Lcom/android/settings/ui/RadioButtonPreference;
 
-    const v5, 0x7f12127d
+    const v5, 0x7f121285
 
     invoke-virtual {v4, v5}, Lcom/android/settings/ui/RadioButtonPreference;->setTitle(I)V
 
     iget-object v4, p0, Lcom/oneplus/settings/better/OPScreenColorMode;->mScreenColorModeDefinedSettings:Lcom/android/settings/ui/RadioButtonPreference;
 
-    const v5, 0x7f12127b
+    const v5, 0x7f121283
 
     invoke-virtual {v4, v5}, Lcom/android/settings/ui/RadioButtonPreference;->setTitle(I)V
 

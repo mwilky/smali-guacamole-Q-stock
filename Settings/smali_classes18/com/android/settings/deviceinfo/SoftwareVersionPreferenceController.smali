@@ -75,7 +75,7 @@
 
     iget-object v0, p0, Lcom/android/settings/deviceinfo/SoftwareVersionPreferenceController;->mContext:Landroid/content/Context;
 
-    const v1, 0x7f1205cd
+    const v1, 0x7f1205cc
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

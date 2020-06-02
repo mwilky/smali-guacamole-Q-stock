@@ -370,9 +370,17 @@
 
     if-eqz v0, :cond_0
 
+    if-eqz p1, :cond_0
+
     invoke-virtual {p1}, Lcom/android/settingslib/drawer/Tile;->hasKey()Z
 
     move-result v0
+
+    if-eqz v0, :cond_0
+
+    invoke-virtual {p0}, Lcom/android/settings/dashboard/DashboardFragment;->getContext()Landroid/content/Context;
+
+    move-result-object v0
 
     if-eqz v0, :cond_0
 
@@ -1262,7 +1270,7 @@
 
     const-string v9, "Chromebook"
 
-    const v11, 0x7f08060d
+    const v11, 0x7f080610
 
     const-string v12, "privacy_google_autofill"
 
@@ -1299,7 +1307,7 @@
 
     if-eqz v10, :cond_8
 
-    const v10, 0x7f08057e
+    const v10, 0x7f080580
 
     invoke-virtual {v8, v10}, Landroidx/preference/Preference;->setIcon(I)V
 
@@ -1428,7 +1436,7 @@
 
     if-eqz v8, :cond_c
 
-    const v8, 0x7f08057e
+    const v8, 0x7f080580
 
     invoke-virtual {v15, v8}, Landroidx/preference/Preference;->setIcon(I)V
 

@@ -124,11 +124,11 @@
 
     if-eqz v0, :cond_0
 
-    const v0, 0x7f120f79
+    const v0, 0x7f120f77
 
-    const v1, 0x7f120f78
+    const v1, 0x7f120f76
 
-    const v2, 0x7f121273
+    const v2, 0x7f12127b
 
     const v3, 0x7f120a2f
 

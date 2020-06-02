@@ -42,7 +42,7 @@
 
     const/4 v1, 0x2
 
-    const v2, 0x7f120659
+    const v2, 0x7f120658
 
     if-eq v0, v1, :cond_2
 
@@ -80,7 +80,7 @@
 
     iget-object v0, p0, Lcom/android/settings/network/telephony/NetworkSelectSettings$1;->this$0:Lcom/android/settings/network/telephony/NetworkSelectSettings;
 
-    const v1, 0x7f120abf
+    const v1, 0x7f120ac2
 
     invoke-static {v0, v1}, Lcom/android/settings/network/telephony/NetworkSelectSettings;->access$100(Lcom/android/settings/network/telephony/NetworkSelectSettings;I)V
 
@@ -185,12 +185,12 @@
 
     if-eqz v0, :cond_5
 
-    const v2, 0x7f120aad
+    const v2, 0x7f120aaf
 
     goto :goto_0
 
     :cond_5
-    const v2, 0x7f120ab5
+    const v2, 0x7f120ab7
 
     :goto_0
     invoke-virtual {v1, v2}, Lcom/android/settings/network/telephony/NetworkOperatorPreference;->setSummary(I)V

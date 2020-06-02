@@ -98,7 +98,7 @@
     invoke-virtual {v1, v0}, Landroid/view/View;->setSystemUiVisibility(I)V
 
     :cond_0
-    const v0, 0x7f0d02b8
+    const v0, 0x7f0d02bf
 
     invoke-virtual {p0, v0}, Lcom/oneplus/settings/aod/AodSmartDisplaySettingsActivity;->setContentView(I)V
 
@@ -135,7 +135,7 @@
 
     invoke-virtual {v2}, Landroidx/fragment/app/FragmentTransaction;->commit()I
 
-    const v3, 0x7f0a06a1
+    const v3, 0x7f0a06a3
 
     invoke-virtual {p0, v3}, Lcom/oneplus/settings/aod/AodSmartDisplaySettingsActivity;->findViewById(I)Landroid/view/View;
 

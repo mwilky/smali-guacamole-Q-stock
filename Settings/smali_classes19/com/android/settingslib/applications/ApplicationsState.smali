@@ -2183,7 +2183,7 @@
 .end method
 
 .method public getEntry(Ljava/lang/String;I)Lcom/android/settingslib/applications/ApplicationsState$AppEntry;
-    .locals 6
+    .locals 7
 
     iget-object v0, p0, Lcom/android/settingslib/applications/ApplicationsState;->mEntriesMap:Landroid/util/SparseArray;
 
@@ -2198,68 +2198,75 @@
 
     check-cast v1, Ljava/util/HashMap;
 
+    const/4 v2, 0x0
+
+    if-eqz v1, :cond_0
+
     invoke-virtual {v1, p1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
-    move-result-object v1
+    move-result-object v3
 
-    check-cast v1, Lcom/android/settingslib/applications/ApplicationsState$AppEntry;
+    check-cast v3, Lcom/android/settingslib/applications/ApplicationsState$AppEntry;
 
-    if-nez v1, :cond_1
+    move-object v2, v3
+
+    :cond_0
+    if-nez v2, :cond_2
 
     invoke-direct {p0, p1, p2}, Lcom/android/settingslib/applications/ApplicationsState;->getAppInfoLocked(Ljava/lang/String;I)Landroid/content/pm/ApplicationInfo;
 
-    move-result-object v2
+    move-result-object v3
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    if-nez v2, :cond_0
+    if-nez v3, :cond_1
 
     :try_start_1
-    iget-object v3, p0, Lcom/android/settingslib/applications/ApplicationsState;->mIpm:Landroid/content/pm/IPackageManager;
+    iget-object v4, p0, Lcom/android/settingslib/applications/ApplicationsState;->mIpm:Landroid/content/pm/IPackageManager;
 
-    const/4 v4, 0x0
+    const/4 v5, 0x0
 
-    invoke-interface {v3, p1, v4, p2}, Landroid/content/pm/IPackageManager;->getApplicationInfo(Ljava/lang/String;II)Landroid/content/pm/ApplicationInfo;
+    invoke-interface {v4, p1, v5, p2}, Landroid/content/pm/IPackageManager;->getApplicationInfo(Ljava/lang/String;II)Landroid/content/pm/ApplicationInfo;
 
-    move-result-object v3
+    move-result-object v4
     :try_end_1
     .catch Landroid/os/RemoteException; {:try_start_1 .. :try_end_1} :catch_0
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    move-object v2, v3
+    move-object v3, v4
 
     goto :goto_0
 
     :catch_0
-    move-exception v3
+    move-exception v4
 
     :try_start_2
-    const-string v4, "ApplicationsState"
+    const-string v5, "ApplicationsState"
 
-    const-string v5, "getEntry couldn\'t reach PackageManager"
+    const-string v6, "getEntry couldn\'t reach PackageManager"
 
-    invoke-static {v4, v5, v3}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
+    invoke-static {v5, v6, v4}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
-    const/4 v4, 0x0
+    const/4 v5, 0x0
 
     monitor-exit v0
 
-    return-object v4
-
-    :cond_0
-    :goto_0
-    if-eqz v2, :cond_1
-
-    invoke-direct {p0, v2}, Lcom/android/settingslib/applications/ApplicationsState;->getEntryLocked(Landroid/content/pm/ApplicationInfo;)Lcom/android/settingslib/applications/ApplicationsState$AppEntry;
-
-    move-result-object v3
-
-    move-object v1, v3
+    return-object v5
 
     :cond_1
+    :goto_0
+    if-eqz v3, :cond_2
+
+    invoke-direct {p0, v3}, Lcom/android/settingslib/applications/ApplicationsState;->getEntryLocked(Landroid/content/pm/ApplicationInfo;)Lcom/android/settingslib/applications/ApplicationsState$AppEntry;
+
+    move-result-object v4
+
+    move-object v2, v4
+
+    :cond_2
     monitor-exit v0
 
-    return-object v1
+    return-object v2
 
     :catchall_0
     move-exception v1

@@ -53,7 +53,7 @@
 
     if-eqz v0, :cond_0
 
-    const v4, 0x7f120afc
+    const v4, 0x7f120b00
 
     new-array v2, v2, [Ljava/lang/Object;
 
@@ -74,7 +74,7 @@
     return-object v2
 
     :cond_0
-    const v4, 0x7f120af8
+    const v4, 0x7f120afc
 
     new-array v2, v2, [Ljava/lang/Object;
 
@@ -101,12 +101,12 @@
 
     if-eqz v0, :cond_2
 
-    const v2, 0x7f120afe
+    const v2, 0x7f120b02
 
     goto :goto_0
 
     :cond_2
-    const v2, 0x7f120afa
+    const v2, 0x7f120afe
 
     :goto_0
     invoke-virtual {p1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
@@ -118,12 +118,12 @@
     :cond_3
     if-eqz v0, :cond_4
 
-    const v2, 0x7f120afd
+    const v2, 0x7f120b01
 
     goto :goto_1
 
     :cond_4
-    const v2, 0x7f120af9
+    const v2, 0x7f120afd
 
     :goto_1
     invoke-virtual {p1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
@@ -142,12 +142,12 @@
 
     if-eqz v0, :cond_0
 
-    const v0, 0x7f120afb
+    const v0, 0x7f120aff
 
     goto :goto_0
 
     :cond_0
-    const v0, 0x7f120af7
+    const v0, 0x7f120afb
 
     :goto_0
     nop

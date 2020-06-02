@@ -23,6 +23,8 @@
     <dimen name="oneplus_fod_fingerprint_enroll_edge_lottie_height">603.0px</dimen>
     <dimen name="oneplus_fod_fingerprint_enroll_edge_lottie_witdh">552.0px</dimen>
     <dimen name="oneplus_fod_fingerprint_enroll_layout_margin_top">450.0px</dimen>
+    <dimen name="oneplus_fod_fingerprint_enroll_lottie_layout_margin_top">401.0px</dimen>
+    <dimen name="oneplus_fod_fingerprint_enroll_lottie_view_width">473.0px</dimen>
     <dimen name="oneplus_fod_fingerprint_enroll_top_margin">142.0px</dimen>
     <dimen name="oneplus_fod_fingerprint_enroll_view_width">387.0px</dimen>
     <dimen name="oneplus_fod_setup_fingerprint_enroll_complete_layout_margin_top">605.0px</dimen>

@@ -2447,6 +2447,7 @@ Môžete to zmeniť neskôr v časti Nastavenia > Aplikácie a upozornenia."</
 Aktuálne ste prihlásený/-á do nasledujúcich účtov:
 "</string>
     <string name="master_clear_button_text">Vymazať všetky údaje</string>
+    <string name="master_clear_confirm_summary">Odstráni sa všetok obsah interného úložiska vrátane hudby, fotografií, videí a iných osobných údajov. Chcete potvrdiť vymazanie?</string>
     <string name="master_clear_confirm_title">Vymazať všetky údaje?</string>
     <string name="master_clear_desc">Táto operácia vymaže všetky dáta v <b>internom úložisku</b>" telefónu:
 
@@ -2925,7 +2926,7 @@ Aplikácia tým získa aj možnosť vypnúť alebo zapnúť nastavenie Nerušiť
     <string name="oneplus_auto_activate">Zapnúť automaticky</string>
     <string name="oneplus_auto_answer_via_bluetooth_summary">Prichádzajúci hovor sa automaticky zdvihne počas pripojeného zvukového zariadenia Bluetooth</string>
     <string name="oneplus_auto_answer_via_bluetooth_title">Inteligentná odpoveď pre Bluetooth</string>
-    <string name="oneplus_auto_check_pin_length">Potvrďte kód PIN bez ťuknutia na „✓“</string>
+    <string name="oneplus_auto_check_pin_length">Automaticky odomknúť obrazovku po zadaní kódu PIN</string>
     <string name="oneplus_auto_disconect_the_ap">Hotspot sa automaticky vypne po 5 minútach, ak nie je pripojené žiadne zariadenie.</string>
     <string name="oneplus_auto_open_app_none">Žiadne</string>
     <string name="oneplus_auto_open_app_other_applications">ĎALŠIE APLIKÁCIE</string>
@@ -3079,6 +3080,9 @@ Aplikácia tým získa aj možnosť vypnúť alebo zapnúť nastavenie Nerušiť
 2.Počas priebehu registrácie odtlačku prsta používajte len jeden odtlačok prsta"</string>
     <string name="oneplus_enroll_fingerprint_tips_title">Výzva nastavenia odtlačku prsta</string>
     <string name="oneplus_enter_your_fingerprint">· Zaregistrovať svoj odtlačok prsta</string>
+    <string name="oneplus_erase_system_data">VYMAZAŤ SYSTÉMOVÉ ÚDAJE</string>
+    <string name="oneplus_erase_system_data_summary">Odstránia sa systémové údaje vrátane informácií účtu, kontaktov a dát aplikácií. Táto akcia je nevratná.</string>
+    <string name="oneplus_erase_system_data_title">Vymazať systémové údaje?</string>
     <string name="oneplus_esportmode_introduction_summary">Ak chcete zapnúť režim Esports, ťuknite na prepínač na paneli herného režimu.</string>
     <string name="oneplus_experience_improvement_programs">Programy zlepšovania skúsenosti</string>
     <string name="oneplus_face_auto_unlock_while_screen_on_sumary">Odomknite svoj telefón pomocou svojej tváre hneď, ako sa obrazovka zapne, bez potiahnutia prstom.</string>
@@ -3575,7 +3579,7 @@ Počet zostávajúcich pokusov: %d."</string>
     <string name="oneplus_search_keyword_swap_navkeys">vymeniť tlačidlá</string>
     <string name="oneplus_search_keyword_switch">prenos,migrácia dát</string>
     <string name="oneplus_search_keyword_theme_settings">PRISPÔSOBENIE UZAMKNUTIA OBRAZOVKY, Tapety, Štýl hodín, Animácia odtlačku prsta, Horizon light, PRISPÔSOBENIE SYSTÉMU, Farba zvýraznenia, Tvar, Písmo, Odtieň, Balík ikon, Svetlo podsvietenia, Jemná tmavá, Žiarivý odtieň</string>
-    <string name="oneplus_search_keyword_theme_settings_mcl">PRISPÔSOBENIE UZAMKNUTIA OBRAZOVKY, Tapety, Štýl hodín, Animácia odtlačku prsta, Horizon Light, PRISPÔSOBENIE SYSTÉMU, Farba zvýraznenia, Tvar, Písmo, Odtieň, Balík ikon, Svetlo podsvietenia, Jemná tmavá, Žiarivý odtieň, McLaren</string>
+    <string name="oneplus_search_keyword_theme_settings_mcl">PRISPÔSOBENIE UZAMKNUTIA OBRAZOVKY, Tapety, Štýl hodín, Animácia odtlačku prsta, Horizon light, PRISPÔSOBENIE SYSTÉMU, Farba zvýraznenia, Tvar, Písmo, Odtieň, Balík ikon, Svetlo podsvietenia, Jemná tmavá, Žiarivý odtieň, McLaren</string>
     <string name="oneplus_search_keyword_three_screenshots">snímka obrazovky</string>
     <string name="oneplus_search_keyword_timer_boot" />
     <string name="oneplus_search_keyword_user_experience">oznámenia,skúsenosť,program,zlepšovanie</string>
@@ -3755,7 +3759,7 @@ Poznámka: Funkcia Odomknúť tvárou je menej bezpečná ako odtlačok prsta, P
     <string name="oneplus_vibration_settings_soc_tri_state">Vibrácie</string>
     <string name="oneplus_vibration_settings_soc_tri_state_summary">Volania a oznámenia budú stíšené a nastavené len na vibrácie s výnimkou budíkov</string>
     <string name="oneplus_vibration_summary">Budík bude vždy zvoniť</string>
-    <string name="oneplus_video_enhancer">Vylepšenie videa</string>
+    <string name="oneplus_video_enhancer">Efekt živých farieb</string>
     <string name="oneplus_video_enhancer_footer">Zlepšiť farbu pri prehrávaní videí</string>
     <string name="oneplus_video_enhancer_summary">Zlepšiť farbu pri prehrávaní videí</string>
     <string name="oneplus_volume_keys_adjust">Upravte pomocou tlačidiel hlasitosti</string>

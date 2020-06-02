@@ -87,13 +87,13 @@
 
     const/4 v0, 0x0
 
-    const v1, 0x7f121839
+    const v1, 0x7f121840
 
     invoke-interface {p1, v0, v0, v0, v1}, Landroid/view/Menu;->add(IIII)Landroid/view/MenuItem;
 
     move-result-object v0
 
-    const v1, 0x7f0804ad
+    const v1, 0x7f0804ae
 
     invoke-interface {v0, v1}, Landroid/view/MenuItem;->setIcon(I)Landroid/view/MenuItem;
 
@@ -155,9 +155,9 @@
 
     move-result v0
 
-    const v1, 0x7f080672
+    const v1, 0x7f080675
 
-    const v2, 0x7f080675
+    const v2, 0x7f080678
 
     const v3, 0x7f0a044b
 
@@ -257,17 +257,17 @@
     sput v0, Lcom/oneplus/settings/OPFontStyleActivity;->mLastFontValue:I
 
     :cond_0
-    const v0, 0x7f120cf7
+    const v0, 0x7f120cfa
 
     invoke-virtual {p0, v0}, Lcom/oneplus/settings/OPFontStyleActivity;->setTitle(I)V
 
-    const v0, 0x7f0d01b8
+    const v0, 0x7f0d01bf
 
     invoke-virtual {p0, v0}, Lcom/oneplus/settings/OPFontStyleActivity;->setContentView(I)V
 
     invoke-virtual {p0, p0}, Lcom/oneplus/settings/OPFontStyleActivity;->setOnBackPressListener(Lcom/oneplus/settings/OnBackPressListener;)V
 
-    const v0, 0x7f0a054c
+    const v0, 0x7f0a054e
 
     invoke-virtual {p0, v0}, Lcom/oneplus/settings/OPFontStyleActivity;->findViewById(I)Landroid/view/View;
 
@@ -511,9 +511,9 @@
 
     iget v2, p0, Lcom/oneplus/settings/OPFontStyleActivity;->mFontValue:I
 
-    const v3, 0x7f080672
+    const v3, 0x7f080675
 
-    const v4, 0x7f080675
+    const v4, 0x7f080678
 
     if-ne v2, v1, :cond_0
 

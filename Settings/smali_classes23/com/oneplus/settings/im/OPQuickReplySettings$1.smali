@@ -120,11 +120,11 @@
 
     invoke-direct {v2, v3}, Landroidx/preference/SwitchPreference;-><init>(Landroid/content/Context;)V
 
-    const v3, 0x7f0d01f0
+    const v3, 0x7f0d01f7
 
     invoke-virtual {v2, v3}, Landroidx/preference/SwitchPreference;->setLayoutResource(I)V
 
-    const v3, 0x7f0d01fb
+    const v3, 0x7f0d0202
 
     invoke-virtual {v2, v3}, Landroidx/preference/SwitchPreference;->setWidgetLayoutResource(I)V
 

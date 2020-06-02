@@ -366,7 +366,7 @@
 
     const/4 v1, 0x2
 
-    const v2, 0x7f120836
+    const v2, 0x7f120835
 
     const/4 v3, 0x0
 

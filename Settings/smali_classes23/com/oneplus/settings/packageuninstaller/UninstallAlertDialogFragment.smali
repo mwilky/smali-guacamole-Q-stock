@@ -112,13 +112,13 @@
 
     move-result-object v2
 
-    new-instance v3, Landroid/app/AlertDialog$Builder;
+    new-instance v3, Lcom/oneplus/lib/app/OPAlertDialog$Builder;
 
     invoke-virtual {p0}, Lcom/oneplus/settings/packageuninstaller/UninstallAlertDialogFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v4
 
-    invoke-direct {v3, v4}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
+    invoke-direct {v3, v4}, Lcom/oneplus/lib/app/OPAlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
     new-instance v4, Ljava/lang/StringBuilder;
 
@@ -144,7 +144,7 @@
 
     if-nez v8, :cond_0
 
-    const v8, 0x7f1215c7
+    const v8, 0x7f1215cf
 
     new-array v9, v6, [Ljava/lang/Object;
 
@@ -199,7 +199,7 @@
 
     if-eqz v6, :cond_2
 
-    const v6, 0x7f1215da
+    const v6, 0x7f1215e2
 
     invoke-virtual {p0, v6}, Lcom/oneplus/settings/packageuninstaller/UninstallAlertDialogFragment;->getString(I)Ljava/lang/String;
 
@@ -210,7 +210,7 @@
     goto/16 :goto_2
 
     :cond_2
-    const v6, 0x7f1215db
+    const v6, 0x7f1215e3
 
     invoke-virtual {p0, v6}, Lcom/oneplus/settings/packageuninstaller/UninstallAlertDialogFragment;->getString(I)Ljava/lang/String;
 
@@ -223,7 +223,7 @@
     :cond_3
     iget-boolean v9, v1, Lcom/oneplus/settings/packageuninstaller/UninstallerActivity$DialogInfo;->allUsers:Z
 
-    const v10, 0x7f120fbe
+    const v10, 0x7f120fbc
 
     if-eqz v9, :cond_4
 
@@ -252,7 +252,7 @@
 
     move-result v9
 
-    const v11, 0x7f120fbf
+    const v11, 0x7f120fbd
 
     const/16 v12, 0x3e7
 
@@ -299,7 +299,7 @@
     goto :goto_1
 
     :cond_5
-    const v10, 0x7f1215cc
+    const v10, 0x7f1215d4
 
     new-array v6, v6, [Ljava/lang/Object;
 
@@ -348,7 +348,7 @@
     goto :goto_2
 
     :cond_7
-    const v6, 0x7f120fc0
+    const v6, 0x7f120fbe
 
     invoke-virtual {p0, v6}, Lcom/oneplus/settings/packageuninstaller/UninstallAlertDialogFragment;->getString(I)Ljava/lang/String;
 
@@ -357,23 +357,23 @@
     invoke-virtual {v4, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     :goto_2
-    invoke-virtual {v3, v2}, Landroid/app/AlertDialog$Builder;->setTitle(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
+    invoke-virtual {v3, v2}, Lcom/oneplus/lib/app/OPAlertDialog$Builder;->setTitle(Ljava/lang/CharSequence;)Lcom/oneplus/lib/app/OPAlertDialog$Builder;
 
     const v6, 0x104000a
 
-    invoke-virtual {v3, v6, p0}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
+    invoke-virtual {v3, v6, p0}, Lcom/oneplus/lib/app/OPAlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Lcom/oneplus/lib/app/OPAlertDialog$Builder;
 
     const/high16 v6, 0x1040000
 
-    invoke-virtual {v3, v6, p0}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
+    invoke-virtual {v3, v6, p0}, Lcom/oneplus/lib/app/OPAlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Lcom/oneplus/lib/app/OPAlertDialog$Builder;
 
     invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v6
 
-    invoke-virtual {v3, v6}, Landroid/app/AlertDialog$Builder;->setMessage(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
+    invoke-virtual {v3, v6}, Lcom/oneplus/lib/app/OPAlertDialog$Builder;->setMessage(Ljava/lang/CharSequence;)Lcom/oneplus/lib/app/OPAlertDialog$Builder;
 
-    invoke-virtual {v3}, Landroid/app/AlertDialog$Builder;->create()Landroid/app/AlertDialog;
+    invoke-virtual {v3}, Lcom/oneplus/lib/app/OPAlertDialog$Builder;->create()Lcom/oneplus/lib/app/OPAlertDialog;
 
     move-result-object v6
 

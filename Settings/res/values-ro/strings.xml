@@ -2447,6 +2447,7 @@ Puteți modifica opțiunea ulterior din Setări > Aplicații și notificări."</
 În prezent sunteți conectat(ă) la următoarele conturi:
 "</string>
     <string name="master_clear_button_text">Ștergeți toate datele</string>
+    <string name="master_clear_confirm_summary">Se vor șterge și elementele de conținut din spațiul de stocare intern, inclusiv muzica, fotografiile, videoclipurile și celelalte date personale. Confirmați ștergerea?</string>
     <string name="master_clear_confirm_title">Ștergeți toate datele?</string>
     <string name="master_clear_desc">Această acțiune va șterge toate datele din <b>stocarea internă</b>" a telefonului dvs., inclusiv:
 
@@ -2925,7 +2926,7 @@ Astfel, aplicația va putea să activeze sau să dezactiveze starea Nu deranja �
     <string name="oneplus_auto_activate">Activare automată</string>
     <string name="oneplus_auto_answer_via_bluetooth_summary">Apelul primit va fi preluat automat cât timp există conexiune cu dispozitivul audio Bluetooth</string>
     <string name="oneplus_auto_answer_via_bluetooth_title">Răspuns inteligent pentru Bluetooth</string>
-    <string name="oneplus_auto_check_pin_length">Confirmare PIN fără atingerea „✓”</string>
+    <string name="oneplus_auto_check_pin_length">Ecranul se deblochează automat după introducerea codului PIN</string>
     <string name="oneplus_auto_disconect_the_ap">Dacă nu sunt conectate dispozitive, Punctul de acces se va dezactiva automat după 5 minute.</string>
     <string name="oneplus_auto_open_app_none">Niciuna</string>
     <string name="oneplus_auto_open_app_other_applications">ALTE APLICAȚII</string>
@@ -3079,6 +3080,9 @@ Economizorul de baterie se oprește automat când aparatul se încarcă."</strin
 2.Într-un singur proces de setare, introduceți informațiile doar pentru amprenta unui singur deget"</string>
     <string name="oneplus_enroll_fingerprint_tips_title">Mesaj setare amprentă</string>
     <string name="oneplus_enter_your_fingerprint">· Înscrieți amprenta</string>
+    <string name="oneplus_erase_system_data">ȘTERGEREA DATELOR DE SISTEM</string>
+    <string name="oneplus_erase_system_data_summary">Se vor șterge datele de sistem, inclusiv cele din cont, despre contacte și din aplicații. Această acțiune nu se poate anula.</string>
+    <string name="oneplus_erase_system_data_title">Ștergeți datele de sistem?</string>
     <string name="oneplus_esportmode_introduction_summary">Pentru a activa modul Esports, atingeți butonul din panoul modului de joc.</string>
     <string name="oneplus_experience_improvement_programs">Programe de îmbunătățire a experienței</string>
     <string name="oneplus_face_auto_unlock_while_screen_on_sumary">Deblocați-vă telefonul cu fața imediat ce ecranul pornește fără să alunecați cu degetele pe ecran mai întâi.</string>
@@ -3143,7 +3147,7 @@ Atenție: Deblocarea facială este mai puțin sigură decât amprenta sau o paro
     <string name="oneplus_fnatic_mode_disturb_introduction_summary">Blochează toate apelurile și notificările (cu excepția notificărilor privind bateriile descărcate, a alarmei și a temporizatorului). Apelurile nepreluate nu pot fi salvate în jurnalele de apeluri.</string>
     <string name="oneplus_fnatic_mode_disturb_introduction_title">DND avansat</string>
     <string name="oneplus_fnatic_mode_enable_introduction_title">Pentru a utiliza modul jocuri, trebuie mai întâi să activați modul Fnatic</string>
-    <string name="oneplus_fnatic_mode_network_introduction_dual4g_summary">Pentru a minimiza latența scăzută a jocului, este preferat semnalul principal al cartelei SIM pentru a reduce interferențele. Prin urmare, SIM-ul secundar va fi dezactivat și nu se vor primi apeluri sau mesaje.</string>
+    <string name="oneplus_fnatic_mode_network_introduction_dual4g_summary">Se acordă prioritate semnalului cartelei SIM principale, pentru a reduce interferențele și a obține latență minimă în joc. Prin urmare, SIM-ul secundar va fi dezactivat și nu se vor primi apeluri sau mesaje.</string>
     <string name="oneplus_fnatic_mode_network_introduction_summary">Îmbunătățirea stabilității conexiunii la rețea</string>
     <string name="oneplus_fnatic_mode_network_introduction_title">Îmbunătățire rețea</string>
     <string name="oneplus_fnatic_mode_summary">Îmbunătățiți-vă experiența de joc</string>
@@ -3575,7 +3579,7 @@ Notă: Amprenta dvs. poate fi mai puțin sigură decât un model dificil sau PIN
     <string name="oneplus_search_keyword_swap_navkeys">schimbarea butoanelor</string>
     <string name="oneplus_search_keyword_switch">transfer, migrare date</string>
     <string name="oneplus_search_keyword_theme_settings">PERSONALIZARE ECRAN DE BLOCARE, Wallpaperuri, Stil ceas, Animație amprente digitale, Horizon light, PERSONALIZARE SISTEM, Accentuare culoare, Formă, Font, Ton, Pachetul de pictograme, Lumini, Întunecat nuanțat, Nuanțe vii</string>
-    <string name="oneplus_search_keyword_theme_settings_mcl">PERSONALIZARE ECRAN DE BLOCARE, Wallpaperuri, Stil ceas, Animație amprente digitale, Horizon Light, PERSONALIZARE SISTEM, Culoare de accent, Formă, Font, Ton, Pachet de pictograme, Lumini, Întunecat nuanțat, Nuanțe vii, McLaren</string>
+    <string name="oneplus_search_keyword_theme_settings_mcl">PERSONALIZARE ECRAN DE BLOCARE, Wallpaperuri, Stil ceas, Animație amprente digitale, Horizon light, PERSONALIZARE SISTEM, Accentuare culoare, Formă, Font, Ton, Pachetul de pictograme, Lumini, Întunecat nuanțat, Nuanțe vii, McLaren</string>
     <string name="oneplus_search_keyword_three_screenshots">captură de ecran</string>
     <string name="oneplus_search_keyword_timer_boot" />
     <string name="oneplus_search_keyword_user_experience">notificări, experiență, program, optimizare</string>
@@ -3755,9 +3759,9 @@ Notă: Deblocarea facială poate fi mai puțin sigură decât amprenta, PIN-ul s
     <string name="oneplus_vibration_settings_soc_tri_state">Vibrații</string>
     <string name="oneplus_vibration_settings_soc_tri_state_summary">Apelurile și notificările vor fi în modul silențios și setate doar cu vibrații, cu excepția alarmelor</string>
     <string name="oneplus_vibration_summary">Alarma va suna întotdeauna</string>
-    <string name="oneplus_video_enhancer">Funcție de îmbunătățire video</string>
-    <string name="oneplus_video_enhancer_footer">Îmbunătățirea culorilor în timpul redării materialelor video</string>
-    <string name="oneplus_video_enhancer_summary">Îmbunătățirea culorilor în timpul redării materialelor video</string>
+    <string name="oneplus_video_enhancer">Efect culori vii</string>
+    <string name="oneplus_video_enhancer_footer">Îmbunătățiți culoarea în timpul redării materialelor video</string>
+    <string name="oneplus_video_enhancer_summary">Îmbunătățiți culoarea în timpul redării materialelor video</string>
     <string name="oneplus_volume_keys_adjust">Utilizați butoanele de volum pentru ajustare</string>
     <string name="oneplus_volume_keys_adjust_media">Volum media</string>
     <string name="oneplus_volume_keys_adjust_ringtones">Volum ton de apel</string>

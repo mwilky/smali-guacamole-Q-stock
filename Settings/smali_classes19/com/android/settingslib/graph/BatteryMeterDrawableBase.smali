@@ -764,7 +764,7 @@
 .end method
 
 .method public draw(Landroid/graphics/Canvas;)V
-    .locals 33
+    .locals 35
 
     move-object/from16 v0, p0
 
@@ -889,7 +889,7 @@
 
     iget v13, v13, Landroid/graphics/RectF;->right:F
 
-    move-object/from16 v16, v3
+    move-object/from16 v17, v3
 
     int-to-float v3, v6
 
@@ -1052,7 +1052,7 @@
 
     iget-boolean v14, v0, Lcom/android/settingslib/graph/BatteryMeterDrawableBase;->mCharging:Z
 
-    const/16 v17, 0x1
+    const/16 v18, 0x1
 
     if-eqz v14, :cond_8
 
@@ -1066,9 +1066,9 @@
 
     move-result v15
 
-    const/high16 v19, 0x40800000    # 4.0f
+    const/high16 v20, 0x40800000    # 4.0f
 
-    div-float v15, v15, v19
+    div-float v15, v15, v20
 
     add-float/2addr v14, v15
 
@@ -1084,9 +1084,9 @@
 
     move-result v3
 
-    const/high16 v20, 0x40c00000    # 6.0f
+    const/high16 v22, 0x40c00000    # 6.0f
 
-    div-float v3, v3, v20
+    div-float v3, v3, v22
 
     add-float/2addr v15, v3
 
@@ -1094,7 +1094,7 @@
 
     iget v3, v3, Landroid/graphics/RectF;->right:F
 
-    move/from16 v20, v4
+    move/from16 v22, v4
 
     iget-object v4, v0, Lcom/android/settingslib/graph/BatteryMeterDrawableBase;->mFrame:Landroid/graphics/RectF;
 
@@ -1102,7 +1102,7 @@
 
     move-result v4
 
-    div-float v4, v4, v19
+    div-float v4, v4, v20
 
     sub-float/2addr v3, v4
 
@@ -1114,7 +1114,7 @@
 
     iget v4, v4, Landroid/graphics/RectF;->bottom:F
 
-    move/from16 v19, v6
+    move/from16 v20, v6
 
     iget-object v6, v0, Lcom/android/settingslib/graph/BatteryMeterDrawableBase;->mFrame:Landroid/graphics/RectF;
 
@@ -1122,9 +1122,9 @@
 
     move-result v6
 
-    const/high16 v21, 0x41200000    # 10.0f
+    const/high16 v23, 0x41200000    # 10.0f
 
-    div-float v6, v6, v21
+    div-float v6, v6, v23
 
     sub-float/2addr v4, v6
 
@@ -1163,17 +1163,15 @@
     goto :goto_2
 
     :cond_4
-    move/from16 v21, v3
+    move/from16 v23, v3
 
-    move/from16 v22, v4
+    move/from16 v24, v4
 
-    move/from16 v23, v7
+    move/from16 v25, v7
 
-    move/from16 v24, v8
+    move/from16 v26, v8
 
-    move/from16 v25, v12
-
-    const/16 v18, 0x0
+    move/from16 v27, v12
 
     goto/16 :goto_4
 
@@ -1189,21 +1187,21 @@
 
     iget-object v6, v0, Lcom/android/settingslib/graph/BatteryMeterDrawableBase;->mBoltPath:Landroid/graphics/Path;
 
-    move/from16 v21, v3
+    move/from16 v23, v3
 
     iget-object v3, v0, Lcom/android/settingslib/graph/BatteryMeterDrawableBase;->mBoltFrame:Landroid/graphics/RectF;
 
     iget v3, v3, Landroid/graphics/RectF;->left:F
 
-    move/from16 v22, v4
+    move/from16 v24, v4
 
     iget-object v4, v0, Lcom/android/settingslib/graph/BatteryMeterDrawableBase;->mBoltPoints:[F
 
-    const/16 v18, 0x0
+    const/16 v19, 0x0
 
-    aget v4, v4, v18
+    aget v4, v4, v19
 
-    move/from16 v23, v7
+    move/from16 v25, v7
 
     iget-object v7, v0, Lcom/android/settingslib/graph/BatteryMeterDrawableBase;->mBoltFrame:Landroid/graphics/RectF;
 
@@ -1221,9 +1219,9 @@
 
     iget-object v7, v0, Lcom/android/settingslib/graph/BatteryMeterDrawableBase;->mBoltPoints:[F
 
-    aget v7, v7, v17
+    aget v7, v7, v18
 
-    move/from16 v24, v8
+    move/from16 v26, v8
 
     iget-object v8, v0, Lcom/android/settingslib/graph/BatteryMeterDrawableBase;->mBoltFrame:Landroid/graphics/RectF;
 
@@ -1272,11 +1270,11 @@
 
     iget-object v8, v0, Lcom/android/settingslib/graph/BatteryMeterDrawableBase;->mBoltPoints:[F
 
-    add-int/lit8 v25, v3, 0x1
+    add-int/lit8 v27, v3, 0x1
 
-    aget v8, v8, v25
+    aget v8, v8, v27
 
-    move/from16 v25, v12
+    move/from16 v27, v12
 
     iget-object v12, v0, Lcom/android/settingslib/graph/BatteryMeterDrawableBase;->mBoltFrame:Landroid/graphics/RectF;
 
@@ -1292,12 +1290,12 @@
 
     add-int/lit8 v3, v3, 0x2
 
-    move/from16 v12, v25
+    move/from16 v12, v27
 
     goto :goto_3
 
     :cond_6
-    move/from16 v25, v12
+    move/from16 v27, v12
 
     iget-object v3, v0, Lcom/android/settingslib/graph/BatteryMeterDrawableBase;->mBoltPath:Landroid/graphics/Path;
 
@@ -1307,9 +1305,9 @@
 
     iget-object v6, v0, Lcom/android/settingslib/graph/BatteryMeterDrawableBase;->mBoltPoints:[F
 
-    const/16 v18, 0x0
+    const/4 v7, 0x0
 
-    aget v6, v6, v18
+    aget v6, v6, v7
 
     iget-object v7, v0, Lcom/android/settingslib/graph/BatteryMeterDrawableBase;->mBoltFrame:Landroid/graphics/RectF;
 
@@ -1327,7 +1325,7 @@
 
     iget-object v7, v0, Lcom/android/settingslib/graph/BatteryMeterDrawableBase;->mBoltPoints:[F
 
-    aget v7, v7, v17
+    aget v7, v7, v18
 
     iget-object v8, v0, Lcom/android/settingslib/graph/BatteryMeterDrawableBase;->mBoltFrame:Landroid/graphics/RectF;
 
@@ -1395,22 +1393,335 @@
 
     invoke-virtual {v4, v6, v7}, Landroid/graphics/Path;->op(Landroid/graphics/Path;Landroid/graphics/Path$Op;)Z
 
-    goto :goto_5
+    :goto_5
+    const/16 v19, 0x0
+
+    goto/16 :goto_9
 
     :cond_8
-    move/from16 v20, v4
+    move/from16 v22, v4
 
-    move/from16 v19, v6
+    move/from16 v20, v6
+
+    move/from16 v25, v7
+
+    move/from16 v26, v8
+
+    move/from16 v27, v12
+
+    iget-boolean v3, v0, Lcom/android/settingslib/graph/BatteryMeterDrawableBase;->mPowerSaveEnabled:Z
+
+    if-eqz v3, :cond_c
+
+    iget-object v3, v0, Lcom/android/settingslib/graph/BatteryMeterDrawableBase;->mFrame:Landroid/graphics/RectF;
+
+    invoke-virtual {v3}, Landroid/graphics/RectF;->width()F
+
+    move-result v3
+
+    const/high16 v4, 0x40000000    # 2.0f
+
+    mul-float/2addr v3, v4
+
+    const/high16 v6, 0x40400000    # 3.0f
+
+    div-float/2addr v3, v6
+
+    iget-object v6, v0, Lcom/android/settingslib/graph/BatteryMeterDrawableBase;->mFrame:Landroid/graphics/RectF;
+
+    iget v6, v6, Landroid/graphics/RectF;->left:F
+
+    iget-object v7, v0, Lcom/android/settingslib/graph/BatteryMeterDrawableBase;->mFrame:Landroid/graphics/RectF;
+
+    invoke-virtual {v7}, Landroid/graphics/RectF;->width()F
+
+    move-result v7
+
+    sub-float/2addr v7, v3
+
+    div-float/2addr v7, v4
+
+    add-float/2addr v6, v7
+
+    iget-object v7, v0, Lcom/android/settingslib/graph/BatteryMeterDrawableBase;->mFrame:Landroid/graphics/RectF;
+
+    iget v7, v7, Landroid/graphics/RectF;->top:F
+
+    iget-object v8, v0, Lcom/android/settingslib/graph/BatteryMeterDrawableBase;->mFrame:Landroid/graphics/RectF;
+
+    invoke-virtual {v8}, Landroid/graphics/RectF;->height()F
+
+    move-result v8
+
+    sub-float/2addr v8, v3
+
+    div-float/2addr v8, v4
+
+    add-float/2addr v7, v8
+
+    iget-object v8, v0, Lcom/android/settingslib/graph/BatteryMeterDrawableBase;->mFrame:Landroid/graphics/RectF;
+
+    iget v8, v8, Landroid/graphics/RectF;->right:F
+
+    iget-object v12, v0, Lcom/android/settingslib/graph/BatteryMeterDrawableBase;->mFrame:Landroid/graphics/RectF;
+
+    invoke-virtual {v12}, Landroid/graphics/RectF;->width()F
+
+    move-result v12
+
+    sub-float/2addr v12, v3
+
+    div-float/2addr v12, v4
+
+    sub-float/2addr v8, v12
+
+    iget-object v12, v0, Lcom/android/settingslib/graph/BatteryMeterDrawableBase;->mFrame:Landroid/graphics/RectF;
+
+    iget v12, v12, Landroid/graphics/RectF;->bottom:F
+
+    iget-object v14, v0, Lcom/android/settingslib/graph/BatteryMeterDrawableBase;->mFrame:Landroid/graphics/RectF;
+
+    invoke-virtual {v14}, Landroid/graphics/RectF;->height()F
+
+    move-result v14
+
+    sub-float/2addr v14, v3
+
+    div-float/2addr v14, v4
+
+    sub-float/2addr v12, v14
+
+    iget-object v4, v0, Lcom/android/settingslib/graph/BatteryMeterDrawableBase;->mPlusFrame:Landroid/graphics/RectF;
+
+    iget v4, v4, Landroid/graphics/RectF;->left:F
+
+    cmpl-float v4, v4, v6
+
+    if-nez v4, :cond_a
+
+    iget-object v4, v0, Lcom/android/settingslib/graph/BatteryMeterDrawableBase;->mPlusFrame:Landroid/graphics/RectF;
+
+    iget v4, v4, Landroid/graphics/RectF;->top:F
+
+    cmpl-float v4, v4, v7
+
+    if-nez v4, :cond_a
+
+    iget-object v4, v0, Lcom/android/settingslib/graph/BatteryMeterDrawableBase;->mPlusFrame:Landroid/graphics/RectF;
+
+    iget v4, v4, Landroid/graphics/RectF;->right:F
+
+    cmpl-float v4, v4, v8
+
+    if-nez v4, :cond_a
+
+    iget-object v4, v0, Lcom/android/settingslib/graph/BatteryMeterDrawableBase;->mPlusFrame:Landroid/graphics/RectF;
+
+    iget v4, v4, Landroid/graphics/RectF;->bottom:F
+
+    cmpl-float v4, v4, v12
+
+    if-eqz v4, :cond_9
+
+    goto :goto_6
+
+    :cond_9
+    move/from16 v16, v3
+
+    move/from16 v21, v6
 
     move/from16 v23, v7
 
-    move/from16 v24, v8
+    const/16 v19, 0x0
 
-    move/from16 v25, v12
+    goto/16 :goto_8
 
-    const/16 v18, 0x0
+    :cond_a
+    :goto_6
+    iget-object v4, v0, Lcom/android/settingslib/graph/BatteryMeterDrawableBase;->mPlusFrame:Landroid/graphics/RectF;
 
-    :goto_5
+    invoke-virtual {v4, v6, v7, v8, v12}, Landroid/graphics/RectF;->set(FFFF)V
+
+    iget-object v4, v0, Lcom/android/settingslib/graph/BatteryMeterDrawableBase;->mPlusPath:Landroid/graphics/Path;
+
+    invoke-virtual {v4}, Landroid/graphics/Path;->reset()V
+
+    iget-object v4, v0, Lcom/android/settingslib/graph/BatteryMeterDrawableBase;->mPlusPath:Landroid/graphics/Path;
+
+    iget-object v14, v0, Lcom/android/settingslib/graph/BatteryMeterDrawableBase;->mPlusFrame:Landroid/graphics/RectF;
+
+    iget v14, v14, Landroid/graphics/RectF;->left:F
+
+    iget-object v15, v0, Lcom/android/settingslib/graph/BatteryMeterDrawableBase;->mPlusPoints:[F
+
+    const/16 v16, 0x0
+
+    aget v15, v15, v16
+
+    move/from16 v16, v3
+
+    iget-object v3, v0, Lcom/android/settingslib/graph/BatteryMeterDrawableBase;->mPlusFrame:Landroid/graphics/RectF;
+
+    invoke-virtual {v3}, Landroid/graphics/RectF;->width()F
+
+    move-result v3
+
+    mul-float/2addr v15, v3
+
+    add-float/2addr v14, v15
+
+    iget-object v3, v0, Lcom/android/settingslib/graph/BatteryMeterDrawableBase;->mPlusFrame:Landroid/graphics/RectF;
+
+    iget v3, v3, Landroid/graphics/RectF;->top:F
+
+    iget-object v15, v0, Lcom/android/settingslib/graph/BatteryMeterDrawableBase;->mPlusPoints:[F
+
+    aget v15, v15, v18
+
+    move/from16 v21, v6
+
+    iget-object v6, v0, Lcom/android/settingslib/graph/BatteryMeterDrawableBase;->mPlusFrame:Landroid/graphics/RectF;
+
+    invoke-virtual {v6}, Landroid/graphics/RectF;->height()F
+
+    move-result v6
+
+    mul-float/2addr v15, v6
+
+    add-float/2addr v3, v15
+
+    invoke-virtual {v4, v14, v3}, Landroid/graphics/Path;->moveTo(FF)V
+
+    const/4 v3, 0x2
+
+    :goto_7
+    iget-object v4, v0, Lcom/android/settingslib/graph/BatteryMeterDrawableBase;->mPlusPoints:[F
+
+    array-length v4, v4
+
+    if-ge v3, v4, :cond_b
+
+    iget-object v4, v0, Lcom/android/settingslib/graph/BatteryMeterDrawableBase;->mPlusPath:Landroid/graphics/Path;
+
+    iget-object v6, v0, Lcom/android/settingslib/graph/BatteryMeterDrawableBase;->mPlusFrame:Landroid/graphics/RectF;
+
+    iget v6, v6, Landroid/graphics/RectF;->left:F
+
+    iget-object v14, v0, Lcom/android/settingslib/graph/BatteryMeterDrawableBase;->mPlusPoints:[F
+
+    aget v14, v14, v3
+
+    iget-object v15, v0, Lcom/android/settingslib/graph/BatteryMeterDrawableBase;->mPlusFrame:Landroid/graphics/RectF;
+
+    invoke-virtual {v15}, Landroid/graphics/RectF;->width()F
+
+    move-result v15
+
+    mul-float/2addr v14, v15
+
+    add-float/2addr v6, v14
+
+    iget-object v14, v0, Lcom/android/settingslib/graph/BatteryMeterDrawableBase;->mPlusFrame:Landroid/graphics/RectF;
+
+    iget v14, v14, Landroid/graphics/RectF;->top:F
+
+    iget-object v15, v0, Lcom/android/settingslib/graph/BatteryMeterDrawableBase;->mPlusPoints:[F
+
+    add-int/lit8 v23, v3, 0x1
+
+    aget v15, v15, v23
+
+    move/from16 v23, v7
+
+    iget-object v7, v0, Lcom/android/settingslib/graph/BatteryMeterDrawableBase;->mPlusFrame:Landroid/graphics/RectF;
+
+    invoke-virtual {v7}, Landroid/graphics/RectF;->height()F
+
+    move-result v7
+
+    mul-float/2addr v15, v7
+
+    add-float/2addr v14, v15
+
+    invoke-virtual {v4, v6, v14}, Landroid/graphics/Path;->lineTo(FF)V
+
+    add-int/lit8 v3, v3, 0x2
+
+    move/from16 v7, v23
+
+    goto :goto_7
+
+    :cond_b
+    move/from16 v23, v7
+
+    iget-object v3, v0, Lcom/android/settingslib/graph/BatteryMeterDrawableBase;->mPlusPath:Landroid/graphics/Path;
+
+    iget-object v4, v0, Lcom/android/settingslib/graph/BatteryMeterDrawableBase;->mPlusFrame:Landroid/graphics/RectF;
+
+    iget v4, v4, Landroid/graphics/RectF;->left:F
+
+    iget-object v6, v0, Lcom/android/settingslib/graph/BatteryMeterDrawableBase;->mPlusPoints:[F
+
+    const/16 v19, 0x0
+
+    aget v6, v6, v19
+
+    iget-object v7, v0, Lcom/android/settingslib/graph/BatteryMeterDrawableBase;->mPlusFrame:Landroid/graphics/RectF;
+
+    invoke-virtual {v7}, Landroid/graphics/RectF;->width()F
+
+    move-result v7
+
+    mul-float/2addr v6, v7
+
+    add-float/2addr v4, v6
+
+    iget-object v6, v0, Lcom/android/settingslib/graph/BatteryMeterDrawableBase;->mPlusFrame:Landroid/graphics/RectF;
+
+    iget v6, v6, Landroid/graphics/RectF;->top:F
+
+    iget-object v7, v0, Lcom/android/settingslib/graph/BatteryMeterDrawableBase;->mPlusPoints:[F
+
+    aget v7, v7, v18
+
+    iget-object v14, v0, Lcom/android/settingslib/graph/BatteryMeterDrawableBase;->mPlusFrame:Landroid/graphics/RectF;
+
+    invoke-virtual {v14}, Landroid/graphics/RectF;->height()F
+
+    move-result v14
+
+    mul-float/2addr v7, v14
+
+    add-float/2addr v6, v7
+
+    invoke-virtual {v3, v4, v6}, Landroid/graphics/Path;->lineTo(FF)V
+
+    :goto_8
+    iget-object v3, v0, Lcom/android/settingslib/graph/BatteryMeterDrawableBase;->mShapePath:Landroid/graphics/Path;
+
+    iget-object v4, v0, Lcom/android/settingslib/graph/BatteryMeterDrawableBase;->mPlusPath:Landroid/graphics/Path;
+
+    sget-object v6, Landroid/graphics/Path$Op;->DIFFERENCE:Landroid/graphics/Path$Op;
+
+    invoke-virtual {v3, v4, v6}, Landroid/graphics/Path;->op(Landroid/graphics/Path;Landroid/graphics/Path$Op;)Z
+
+    iget-boolean v3, v0, Lcom/android/settingslib/graph/BatteryMeterDrawableBase;->mPowerSaveAsColorError:Z
+
+    if-eqz v3, :cond_d
+
+    iget-object v3, v0, Lcom/android/settingslib/graph/BatteryMeterDrawableBase;->mPlusPath:Landroid/graphics/Path;
+
+    iget-object v4, v0, Lcom/android/settingslib/graph/BatteryMeterDrawableBase;->mPlusPaint:Landroid/graphics/Paint;
+
+    invoke-virtual {v1, v3, v4}, Landroid/graphics/Canvas;->drawPath(Landroid/graphics/Path;Landroid/graphics/Paint;)V
+
+    goto :goto_9
+
+    :cond_c
+    const/16 v19, 0x0
+
+    :cond_d
+    :goto_9
     const/4 v3, 0x0
 
     const/4 v4, 0x0
@@ -1421,19 +1732,19 @@
 
     iget-boolean v8, v0, Lcom/android/settingslib/graph/BatteryMeterDrawableBase;->mCharging:Z
 
-    if-nez v8, :cond_b
+    if-nez v8, :cond_10
 
     iget-boolean v8, v0, Lcom/android/settingslib/graph/BatteryMeterDrawableBase;->mPowerSaveEnabled:Z
 
-    if-nez v8, :cond_b
+    if-nez v8, :cond_10
 
     iget v8, v0, Lcom/android/settingslib/graph/BatteryMeterDrawableBase;->mCriticalLevel:I
 
-    if-le v2, v8, :cond_b
+    if-le v2, v8, :cond_10
 
     iget-boolean v8, v0, Lcom/android/settingslib/graph/BatteryMeterDrawableBase;->mShowPercent:Z
 
-    if-eqz v8, :cond_b
+    if-eqz v8, :cond_10
 
     iget-object v8, v0, Lcom/android/settingslib/graph/BatteryMeterDrawableBase;->mTextPaint:Landroid/graphics/Paint;
 
@@ -1451,16 +1762,16 @@
 
     const/16 v12, 0x64
 
-    if-ne v15, v12, :cond_9
+    if-ne v15, v12, :cond_e
 
     const v12, 0x3ec28f5c    # 0.38f
 
-    goto :goto_6
+    goto :goto_a
 
-    :cond_9
+    :cond_e
     const/high16 v12, 0x3f000000    # 0.5f
 
-    :goto_6
+    :goto_a
     mul-float/2addr v14, v12
 
     invoke-virtual {v8, v14}, Landroid/graphics/Paint;->setTextSize(F)V
@@ -1511,17 +1822,17 @@
 
     cmpl-float v8, v11, v6
 
-    if-lez v8, :cond_a
+    if-lez v8, :cond_f
 
-    goto :goto_7
+    goto :goto_b
 
-    :cond_a
-    move/from16 v17, v18
+    :cond_f
+    move/from16 v18, v19
 
-    :goto_7
-    move/from16 v3, v17
+    :goto_b
+    move/from16 v3, v18
 
-    if-nez v3, :cond_b
+    if-nez v3, :cond_10
 
     iget-object v8, v0, Lcom/android/settingslib/graph/BatteryMeterDrawableBase;->mTextPath:Landroid/graphics/Path;
 
@@ -1529,25 +1840,25 @@
 
     iget-object v8, v0, Lcom/android/settingslib/graph/BatteryMeterDrawableBase;->mTextPaint:Landroid/graphics/Paint;
 
-    const/16 v28, 0x0
+    const/16 v30, 0x0
 
     invoke-virtual {v7}, Ljava/lang/String;->length()I
 
-    move-result v29
+    move-result v31
 
     iget-object v12, v0, Lcom/android/settingslib/graph/BatteryMeterDrawableBase;->mTextPath:Landroid/graphics/Path;
 
-    move-object/from16 v26, v8
+    move-object/from16 v28, v8
 
-    move-object/from16 v27, v7
+    move-object/from16 v29, v7
 
-    move/from16 v30, v4
+    move/from16 v32, v4
 
-    move/from16 v31, v6
+    move/from16 v33, v6
 
-    move-object/from16 v32, v12
+    move-object/from16 v34, v12
 
-    invoke-virtual/range {v26 .. v32}, Landroid/graphics/Paint;->getTextPath(Ljava/lang/String;IIFFLandroid/graphics/Path;)V
+    invoke-virtual/range {v28 .. v34}, Landroid/graphics/Paint;->getTextPath(Ljava/lang/String;IIFFLandroid/graphics/Path;)V
 
     iget-object v8, v0, Lcom/android/settingslib/graph/BatteryMeterDrawableBase;->mShapePath:Landroid/graphics/Path;
 
@@ -1557,7 +1868,7 @@
 
     invoke-virtual {v8, v12, v14}, Landroid/graphics/Path;->op(Landroid/graphics/Path;Landroid/graphics/Path$Op;)Z
 
-    :cond_b
+    :cond_10
     iget-object v8, v0, Lcom/android/settingslib/graph/BatteryMeterDrawableBase;->mShapePath:Landroid/graphics/Path;
 
     iget-object v12, v0, Lcom/android/settingslib/graph/BatteryMeterDrawableBase;->mFramePaint:Landroid/graphics/Paint;
@@ -1584,15 +1895,15 @@
 
     iget-boolean v8, v0, Lcom/android/settingslib/graph/BatteryMeterDrawableBase;->mCharging:Z
 
-    if-nez v8, :cond_d
+    if-nez v8, :cond_12
 
     iget-boolean v8, v0, Lcom/android/settingslib/graph/BatteryMeterDrawableBase;->mPowerSaveEnabled:Z
 
-    if-nez v8, :cond_d
+    if-nez v8, :cond_12
 
     iget v8, v0, Lcom/android/settingslib/graph/BatteryMeterDrawableBase;->mCriticalLevel:I
 
-    if-gt v2, v8, :cond_c
+    if-gt v2, v8, :cond_11
 
     iget v8, v0, Lcom/android/settingslib/graph/BatteryMeterDrawableBase;->mWidth:I
 
@@ -1628,10 +1939,10 @@
 
     invoke-virtual {v1, v14, v8, v12, v15}, Landroid/graphics/Canvas;->drawText(Ljava/lang/String;FFLandroid/graphics/Paint;)V
 
-    goto :goto_8
+    goto :goto_c
 
-    :cond_c
-    if-eqz v3, :cond_d
+    :cond_11
+    if-eqz v3, :cond_12
 
     iget-object v8, v0, Lcom/android/settingslib/graph/BatteryMeterDrawableBase;->mTextPaint:Landroid/graphics/Paint;
 
@@ -1639,19 +1950,19 @@
 
     nop
 
-    :cond_d
-    :goto_8
+    :cond_12
+    :goto_c
     iget-boolean v8, v0, Lcom/android/settingslib/graph/BatteryMeterDrawableBase;->mCharging:Z
 
-    if-nez v8, :cond_e
+    if-nez v8, :cond_13
 
     iget-boolean v8, v0, Lcom/android/settingslib/graph/BatteryMeterDrawableBase;->mPowerSaveEnabled:Z
 
-    if-eqz v8, :cond_e
+    if-eqz v8, :cond_13
 
     iget-boolean v8, v0, Lcom/android/settingslib/graph/BatteryMeterDrawableBase;->mPowerSaveAsColorError:Z
 
-    if-eqz v8, :cond_e
+    if-eqz v8, :cond_13
 
     iget-object v8, v0, Lcom/android/settingslib/graph/BatteryMeterDrawableBase;->mOutlinePath:Landroid/graphics/Path;
 
@@ -1659,7 +1970,7 @@
 
     invoke-virtual {v1, v8, v12}, Landroid/graphics/Canvas;->drawPath(Landroid/graphics/Path;Landroid/graphics/Paint;)V
 
-    :cond_e
+    :cond_13
     return-void
 .end method
 

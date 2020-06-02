@@ -191,6 +191,7 @@ Kas soovite selle funktsiooni lubada?"</string>
     <string name="manage_device_administrators">Halda seadmehaldureid</string>
     <string name="manage_fingerprints_dialog">Sõrmejäljega avamine on nüüd lubatud. Kas soovite oma sõrmejälgi hallata?</string>
     <string name="manage_users">Halda kasutajaid</string>
+    <string name="master_clear_confirm_summary">Kustutatakse ka kõik sisemälu andmed, sh muusika, fotod, videod ja muud isiklikud andmed. Kas kustutada?</string>
     <string name="memory_capacity_title">RAM</string>
     <string name="multi_app_label_badge">Paralleelne %1$s</string>
     <string name="music_application_title">Muusikarakendus</string>
@@ -250,7 +251,7 @@ Kas soovite selle funktsiooni lubada?"</string>
     <string name="oneplus_auto_activate">Lülita automaatselt sisse</string>
     <string name="oneplus_auto_answer_via_bluetooth_summary">Sissetulev kõne võetakse automaatselt vastu, kui Bluetooth-heliseade on ühendatud</string>
     <string name="oneplus_auto_answer_via_bluetooth_title">Bluetoothi nutivastus</string>
-    <string name="oneplus_auto_check_pin_length">Kinnitage PIN-kood \"✓\" toksamata</string>
+    <string name="oneplus_auto_check_pin_length">Automaatne ekraani avamine pärast PIN-koodi sisestamist</string>
     <string name="oneplus_auto_disconect_the_ap">Kui ühtki seadet pole ühendatud, lülitub kuumpunkt viie minuti pärast automaatselt välja.</string>
     <string name="oneplus_auto_open_app_none">Puudub</string>
     <string name="oneplus_auto_open_app_other_applications">MUUD RAKENDUSED</string>
@@ -404,6 +405,9 @@ Akusäästja lülitub seadme laadimisel automaatselt välja."</string>
 2.Sisestage lihtsa seadistustoimingu ajal ainult ühe sõrme sõrmejäljeteave"</string>
     <string name="oneplus_enroll_fingerprint_tips_title">Sõrmejälje seadistamise viibe</string>
     <string name="oneplus_enter_your_fingerprint">· Registreerige sõrmejälg</string>
+    <string name="oneplus_erase_system_data">KUSTUTA SÜSTEEMIANDMED</string>
+    <string name="oneplus_erase_system_data_summary">Süsteemiandmed, sh kontoteave, kontaktid ja rakenduste andmed, kustutatakse. Seda toimingut ei saa tagasi võtta.</string>
+    <string name="oneplus_erase_system_data_title">Kas kustutada süsteemiandmed?</string>
     <string name="oneplus_esportmode_introduction_summary">Režiimi Esports aktiveerimiseks puudutage mängurežiimi paneelil olevat lülitit.</string>
     <string name="oneplus_experience_improvement_programs">Kogemuse parandusprogrammid</string>
     <string name="oneplus_face_auto_unlock_while_screen_on_sumary">Avage telefon näotuvastusfunktsiooniga ja vajaduseta ekraani nipsata nii pea, kui ekraan sisse lülitub.</string>
@@ -669,7 +673,7 @@ Märkus. Sõrmejälg ei pruugi olla nii turvaline kui tugev muster või PIN-kood
     <string name="oneplus_night_mode_summary_no_sensor">Öörežiimis olev ekraan on mugavam ning silmad ei väsi nii kiiresti.</string>
     <string name="oneplus_night_mode_weak">Nõrk</string>
     <string name="oneplus_no_applications">Rakendusi ei ole</string>
-    <string name="oneplus_no_assistant_app_dialog">Te pole abilise rakendust veel installinud</string>
+    <string name="oneplus_no_assistant_app_dialog">Te pole assistendirakendust veel installinud</string>
     <string name="oneplus_no_choice">Helinat pole valitud</string>
     <string name="oneplus_no_device_connected">Ühtki seadet pole ühendatud</string>
     <string name="oneplus_no_file_tips">Helinafaile pole</string>
@@ -775,7 +779,7 @@ Märkus. Sõrmejälg ei pruugi olla nii turvaline kui tugev muster või PIN-kood
     <string name="oneplus_quick_reply_description_O2">Saate vormistada kiirvastuse, kui saate sõnumi rakendusest WhatsApp või muust rakendusest</string>
     <string name="oneplus_quick_reply_summary">Kõik sisestusrežiimid ei toeta ujuvrežiimi kasutamist</string>
     <string name="oneplus_quick_reply_title">Kasuta kiirvastuse saatmisel ujuvat klahvistikku</string>
-    <string name="oneplus_quick_turn_on_assistant_app">Abilise rakenduse kiire aktiveerimine</string>
+    <string name="oneplus_quick_turn_on_assistant_app">Assistendirakenduse kiire aktiveerimine</string>
     <string name="oneplus_quick_turn_on_assistant_app_summary">Abilise rakenduse käivitamiseks hoidke toitenuppu 0,5 sekundit all, telefoni väljalülitamiseks hoidke toitenuppu all kolm sekundit</string>
     <string name="oneplus_quick_turn_on_camera">Kaamera kiirlülitus</string>
     <string name="oneplus_quickpay">Kiirmakse</string>
@@ -1035,7 +1039,7 @@ Märkus.
     <string name="oneplus_timepower_power_on_title">Määra sisselülituse aeg</string>
     <string name="oneplus_timer_shutdown_disable_summary">Funktsiooni avamiseks keelake käivitamisel parooli küsimine</string>
     <string name="oneplus_timer_shutdown_summary">Telefon lülitub %ds pärast välja. Kohe välja lülitamiseks kinnitage.</string>
-    <string name="oneplus_to_select_assistant_app_dialog">Valige abilise rakendus, mille soovite aktiveerida</string>
+    <string name="oneplus_to_select_assistant_app_dialog">Valige assistendirakendus, mille soovite aktiveerida</string>
     <string name="oneplus_tools_quicklaunch_summary">Mängurežiim, kiirkäivitus, rakenduste sahtel, paralleelrakendused</string>
     <string name="oneplus_tools_quicklaunch_summary_no_gamingmode">Kiirkäivitus, rakenduste sahtel, paralleelrakendused</string>
     <string name="oneplus_tools_summary">Mängurežiim, rakenduste sahtel, paralleelrakendused</string>
@@ -1080,9 +1084,9 @@ Märkus. Näotuvastus võib olla ebaturvalisem kui sõrmejälg, PIN-kood või mu
     <string name="oneplus_vibration_settings_soc_tri_state">Vibratsioon</string>
     <string name="oneplus_vibration_settings_soc_tri_state_summary">Kõned ja teavitused vaigistatakse ning nende saabumisel telefon vibreerib, v.a alarmide puhul</string>
     <string name="oneplus_vibration_summary">Alarm heliseb alati</string>
-    <string name="oneplus_video_enhancer">Videotäiustus</string>
-    <string name="oneplus_video_enhancer_footer">Täiusta videote esitamisel nende värve</string>
-    <string name="oneplus_video_enhancer_summary">Täiusta videote esitamisel nende värve</string>
+    <string name="oneplus_video_enhancer">Elav värviefekt</string>
+    <string name="oneplus_video_enhancer_footer">Täiustage videote esitamisel nende värve</string>
+    <string name="oneplus_video_enhancer_summary">Täiustage videote esitamisel nende värve</string>
     <string name="oneplus_volume_keys_adjust">Seadistamiseks kasutage helitugevuse nuppe</string>
     <string name="oneplus_volume_keys_adjust_media">Meediumi helitugevus</string>
     <string name="oneplus_volume_keys_adjust_ringtones">Helina helitugevus</string>
@@ -1272,7 +1276,7 @@ Kui võrgu peidate, ei muuda see ruuteri sätteid."</string>
     <string name="status_bar_settings_cellular_title">Mobiilandmeside</string>
     <string name="status_bar_settings_dnd_title">Ära sega</string>
     <string name="status_bar_settings_headset_title">Peakomplekt</string>
-    <string name="status_bar_settings_hotspot_title">Kuumpunkt</string>
+    <string name="status_bar_settings_hotspot_title">Kuumkoht</string>
     <string name="status_bar_settings_network_speed_title">Kuva võrgukiirus</string>
     <string name="status_bar_settings_time_title">Kellaaeg</string>
     <string name="status_bar_settings_wifi_title">Wi-Fi</string>

@@ -407,7 +407,7 @@
 
     invoke-virtual {v0, v1, v2}, Lcom/google/android/setupdesign/GlifPreferenceLayout;->setDividerInsets(II)V
 
-    const v1, 0x7f1216df
+    const v1, 0x7f1216e7
 
     invoke-virtual {v0, v1}, Lcom/google/android/setupdesign/GlifPreferenceLayout;->setHeaderText(I)V
 

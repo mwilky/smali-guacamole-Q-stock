@@ -218,48 +218,15 @@
 .end method
 
 .method private static isNeedShowWorkLife(Landroid/content/Context;)Z
-    .locals 4
+    .locals 1
 
-    invoke-virtual {p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+    const-string v0, "com.oneplus.opwlb"
 
-    move-result-object v0
-
-    const/4 v1, 0x0
-
-    const-string v2, "worklife_feature_enable"
-
-    const/4 v3, -0x2
-
-    invoke-static {v0, v2, v1, v3}, Landroid/provider/Settings$System;->getIntForUser(Landroid/content/ContentResolver;Ljava/lang/String;II)I
+    invoke-static {p0, v0}, Lcom/oneplus/settings/utils/OPUtils;->isAppExist(Landroid/content/Context;Ljava/lang/String;)Z
 
     move-result v0
 
-    new-instance v2, Ljava/lang/StringBuilder;
-
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v3, "isNeedShowWorkLife value:"
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v2
-
-    const-string v3, "OPOthersSettings"
-
-    invoke-static {v3, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    const/4 v2, 0x2
-
-    if-eq v0, v2, :cond_0
-
-    const/4 v1, 0x1
-
-    :cond_0
-    return v1
+    return v0
 .end method
 
 .method private launchChooseOrConfirmLock(I)V
@@ -277,7 +244,7 @@
 
     invoke-direct {v1, v2, p0}, Lcom/android/settings/password/ChooseLockSettingsHelper;-><init>(Landroid/app/Activity;Landroidx/fragment/app/Fragment;)V
 
-    const v2, 0x7f12108f
+    const v2, 0x7f12108c
 
     invoke-virtual {p0, v2}, Lcom/oneplus/settings/others/OPToolsSettings;->getString(I)Ljava/lang/String;
 
@@ -492,7 +459,7 @@
 
     iget-object v1, p0, Lcom/oneplus/settings/others/OPToolsSettings;->mQuickPayPreference:Landroidx/preference/Preference;
 
-    const v3, 0x7f120cd8
+    const v3, 0x7f120cdb
 
     invoke-virtual {v1, v3}, Landroidx/preference/Preference;->setSummary(I)V
 
@@ -501,7 +468,7 @@
     :cond_4
     iget-object v1, p0, Lcom/oneplus/settings/others/OPToolsSettings;->mQuickPayPreference:Landroidx/preference/Preference;
 
-    const v3, 0x7f120e74
+    const v3, 0x7f120e72
 
     invoke-virtual {v1, v3}, Landroidx/preference/Preference;->setSummary(I)V
 
@@ -571,7 +538,7 @@
 
     iget-object v1, p0, Lcom/oneplus/settings/others/OPToolsSettings;->mAntiMisOperationTouch:Landroidx/preference/SwitchPreference;
 
-    const v3, 0x7f120e4a
+    const v3, 0x7f120e48
 
     invoke-virtual {v1, v3}, Landroidx/preference/SwitchPreference;->setSummary(I)V
 
@@ -596,7 +563,7 @@
 
     iget-object v1, p0, Lcom/oneplus/settings/others/OPToolsSettings;->mTimerShutdownPreference:Landroidx/preference/Preference;
 
-    const v3, 0x7f120f9c
+    const v3, 0x7f120f9a
 
     invoke-virtual {v1, v3}, Landroidx/preference/Preference;->setSummary(I)V
 
@@ -838,7 +805,7 @@
 
     iget-object v1, p0, Lcom/oneplus/settings/others/OPToolsSettings;->mWorkLifeBalancePreference:Landroidx/preference/Preference;
 
-    const v2, 0x7f120b37
+    const v2, 0x7f120b3b
 
     invoke-virtual {v1, v2}, Landroidx/preference/Preference;->setSummary(I)V
 
@@ -851,7 +818,7 @@
 
     iget-object v1, p0, Lcom/oneplus/settings/others/OPToolsSettings;->mWorkLifeBalancePreference:Landroidx/preference/Preference;
 
-    const v2, 0x7f120b38
+    const v2, 0x7f120b3c
 
     invoke-virtual {v1, v2}, Landroidx/preference/Preference;->setSummary(I)V
 

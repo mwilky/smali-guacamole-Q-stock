@@ -1004,7 +1004,7 @@
             </intent-filter>
         </activity>
         <activity android:name="com.android.settings.password.ConfirmLockPattern" android:screenOrientation="portrait" android:theme="@style/OnePlusPasswordTheme"/>
-        <activity android:name="com.android.settings.password.ConfirmLockPassword" android:theme="@style/OnePlusPasswordTheme" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:name="com.android.settings.password.ConfirmLockPassword" android:screenOrientation="portrait" android:theme="@style/OnePlusPasswordTheme" android:windowSoftInputMode="adjustResize|stateHidden"/>
         <activity android:exported="false" android:name="com.android.settings.biometrics.face.FaceEnrollIntroduction" android:screenOrientation="portrait"/>
         <activity android:exported="false" android:name="com.android.settings.biometrics.face.FaceEnrollEducation" android:screenOrientation="portrait"/>
         <activity android:exported="false" android:name="com.android.settings.biometrics.face.FaceEnrollEnrolling" android:screenOrientation="portrait"/>
@@ -2248,7 +2248,7 @@
                 <action android:name="com.oneplus.action.PRODUCT_INFO_INTRODUCE"/>
             </intent-filter>
         </activity>
-        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="true" android:launchMode="singleInstance" android:name="com.oneplus.settings.packageuninstaller.UninstallerActivity" android:noHistory="true" android:screenOrientation="portrait" android:taskAffinity="com.android.settings.uninstaller" android:theme="@style/Theme.AlertDialogActivity">
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="true" android:launchMode="singleInstance" android:name="com.oneplus.settings.packageuninstaller.UninstallerActivity" android:noHistory="true" android:screenOrientation="portrait" android:taskAffinity="com.android.settings.uninstaller" android:theme="@style/OnePlus.Theme.Dialog.NoActionBar">
             <intent-filter android:priority="1">
                 <action android:name="oneplus.intent.action.DELETE"/>
                 <action android:name="oneplus.intent.action.UNINSTALL_PACKAGE"/>

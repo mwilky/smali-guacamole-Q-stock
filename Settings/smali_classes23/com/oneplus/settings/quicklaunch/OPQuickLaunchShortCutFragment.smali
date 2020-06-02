@@ -604,7 +604,7 @@
 
     iget-object v1, p0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchShortCutFragment;->mContext:Landroid/content/Context;
 
-    const v2, 0x7f120da1
+    const v2, 0x7f120d9f
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

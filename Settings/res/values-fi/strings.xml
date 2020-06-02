@@ -2447,6 +2447,7 @@ Voit muuttaa tätä asetusta myöhemmin kohdassa Asetukset > Sovellukset ja ilmo
 Olet kirjautunut sisään seuraaviin tileihin:
 "</string>
     <string name="master_clear_button_text">Pyyhi kaikki tiedot</string>
+    <string name="master_clear_confirm_summary">Kaikki sisäisessä tallennustilassa oleva sisältö poistetaan myös, mukaan lukien musiikki, valokuvat, videot ja muut henkilötiedot. Vahvistetaanko pyyhkiminen?</string>
     <string name="master_clear_confirm_title">Poistetaanko kaikki data?</string>
     <string name="master_clear_desc">Tämä poistaa kaiken datan puhelimen <b>sisäisestä tallennustilasta</b>", esimerkiksi
 
@@ -2925,7 +2926,7 @@ Tämä myöntää sovellukselle lisäksi oikeuden ottaa Älä häiritse ‑tilan
     <string name="oneplus_auto_activate">Ota käyttöön automaattisesti</string>
     <string name="oneplus_auto_answer_via_bluetooth_summary">Saapuvaan puheluun vastataan automaattisesti laitteen ollessa yhdistetty Bluetooth-audiolaitteeseen</string>
     <string name="oneplus_auto_answer_via_bluetooth_title">Älyvastaus Bluetoothille</string>
-    <string name="oneplus_auto_check_pin_length">Vahvista PIN-tunnus napauttamatta ”✓”</string>
+    <string name="oneplus_auto_check_pin_length">Poista näyttöruudun lukitus automaattisesti PIN-koodin antamisen jälkeen</string>
     <string name="oneplus_auto_disconect_the_ap">Hotspot sammuu automaattisesti 5 minuutin jälkeen, jos laitteita ei ole yhdistetty.</string>
     <string name="oneplus_auto_open_app_none">Ei mitään</string>
     <string name="oneplus_auto_open_app_other_applications">MUUT SOVELLUKSET</string>
@@ -3079,6 +3080,9 @@ Akunsäästäjä poistuu automaattisesti käytössä, kun laitetta ladataan."</s
 2.Syötä yhdessä asetusprosessissa vain yhden sormen sormenjälkitiedot"</string>
     <string name="oneplus_enroll_fingerprint_tips_title">Sormenjäljen asetuskehote</string>
     <string name="oneplus_enter_your_fingerprint">– rekisteröitävä sormenjälkesi</string>
+    <string name="oneplus_erase_system_data">PYYHI JÄRJESTELMÄTIEDOT</string>
+    <string name="oneplus_erase_system_data_summary">Järjestelmätiedot, mukaan lukien tilin tiedot, yhteystiedot ja sovellusten tiedot, poistetaan. Tätä toimenpidettä ei voi kumota.</string>
+    <string name="oneplus_erase_system_data_title">Pyyhitäänkö järjestelmätiedot?</string>
     <string name="oneplus_esportmode_introduction_summary">Voit aktivoida Esports-tilan napauttamalla pelitilapaneelin kytkintä.</string>
     <string name="oneplus_experience_improvement_programs">Kokemusta parantavat ohjelmat</string>
     <string name="oneplus_face_auto_unlock_while_screen_on_sumary">Poista puhelimen lukitus kasvoillasi, kun näyttö kytkeytyy päälle pyyhkäisemättä ensin.</string>
@@ -3143,7 +3147,7 @@ Varoitus: kasvojentunnistus on vähemmän turvallinen kuin sormenjälki tai sala
     <string name="oneplus_fnatic_mode_disturb_introduction_summary">Estä kaikki ilmoitukset ja puhelut (paitsi akku vähissä -ilmoitus, hälytys ja ajastin). Vastaamatta jääneitä puheluita ei välttämättä tallenneta puhelulokeihin.</string>
     <string name="oneplus_fnatic_mode_disturb_introduction_title">Edistynyt DND</string>
     <string name="oneplus_fnatic_mode_enable_introduction_title">Pelitila on otettava käyttöön, jotta Fnatic-tilaa voi käyttää</string>
-    <string name="oneplus_fnatic_mode_network_introduction_dual4g_summary">Ensisijaisen SIM-kortin signaalinvoimakkuus on etusijalla, jotta minimoidaan häiriöt matalan latenssi peleille. Tällöin toissijainen SIM-kortti poistetaan käytöstä, eikä puheluita ja viestejä vastaanoteta.</string>
+    <string name="oneplus_fnatic_mode_network_introduction_dual4g_summary">Ensisijaisen SIM-kortin signaalinvoimakkuus on etusijalla, jotta minimoidaan matalan latenssin pelaamisen häiriöt. Tällöin toissijainen SIM-kortti poistetaan käytöstä, eikä puheluita ja viestejä vastaanoteta.</string>
     <string name="oneplus_fnatic_mode_network_introduction_summary">Paranna verkkoyhteyden vakautta</string>
     <string name="oneplus_fnatic_mode_network_introduction_title">Verkkoparannus</string>
     <string name="oneplus_fnatic_mode_summary">Tehosta pelikokemustasi</string>
@@ -3575,7 +3579,7 @@ Huomautus: Sormenjälki saattaa olla vähemmän turvallinen kuin vahva kuvio tai
     <string name="oneplus_search_keyword_swap_navkeys">vaihda painikkeet</string>
     <string name="oneplus_search_keyword_switch">siirto,tietojen siirto</string>
     <string name="oneplus_search_keyword_theme_settings">LUKITUSNÄYTÖN MUKAUTUS, Taustakuvat, Kellon tyyli, Sormenjälkianimaatio, Horizon-valo, JÄRJESTELMÄN MUKAUTUS, Korostusväri, Muoto, Kirjasin, Värisävy, Kuvakepaketti, Valaistus, Värivivahdetumma, Eloisat sävyt</string>
-    <string name="oneplus_search_keyword_theme_settings_mcl">LUKITUSNÄYTÖN MUKAUTUS, Taustakuvat, Kellon tyyli, Sormenjälkianimaatio, Horizon-valo, JÄRJESTELMÄN MUKAUTUS, Korostusväri, Muoto, Kirjasin, Värisävy, Kuvakepaketti, Valaistus, Värivivahdetumma, Eloisat sävyt, McLaren</string>
+    <string name="oneplus_search_keyword_theme_settings_mcl">LUKITUSNÄYTÖN MUKAUTUS, Taustakuvat, Kellon tyyli, Sormenjälkianimaatio, Horizon-valo, JÄRJESTELMÄN MUKAUTUS, Korostusväri, Muoto, Kirjasin, Värisävy, Kuvakepaketti, Valaistus, Värivivahde tumma, Eloisat sävyt, McLaren</string>
     <string name="oneplus_search_keyword_three_screenshots">näyttökuva</string>
     <string name="oneplus_search_keyword_timer_boot" />
     <string name="oneplus_search_keyword_user_experience">ilmoitukset,kokemus,ohjelma,parannus</string>
@@ -3650,7 +3654,7 @@ Huomautus:
     <string name="oneplus_supported_apps">Tuetut sovellukset</string>
     <string name="oneplus_suspension_notice">Ennakkoilmoitus</string>
     <string name="oneplus_suspension_notice_summary">Sallii sovellusten näyttää ennakkoilmoituksia</string>
-    <string name="oneplus_switch">OnePlus-kytkin</string>
+    <string name="oneplus_switch">OnePlus Switch</string>
     <string name="oneplus_switch_resolution_kill_process_confirm">Kytkin</string>
     <string name="oneplus_switch_resolution_kill_process_tips">Tarkkuuden muuttaminen voi saada joitain taustasovelluksia sulkeutumaan. Vahvistatko muutoksen?</string>
     <string name="oneplus_switch_screen_lock_type">Vaihdetaan näytön lukitustyyppi, odota...</string>
@@ -3755,7 +3759,7 @@ Huomautus: Lukituksen avaaminen kasvojentunnistuksella saattaa olla vähemmän t
     <string name="oneplus_vibration_settings_soc_tri_state">Värinä</string>
     <string name="oneplus_vibration_settings_soc_tri_state_summary">Puhelut ja ilmoitukset mykistyvät ja pelkästään värisevät lukuun ottamatta hälytyksiä</string>
     <string name="oneplus_vibration_summary">Hälytys soi aina</string>
-    <string name="oneplus_video_enhancer">Videon tehostus</string>
+    <string name="oneplus_video_enhancer">Eloisa väritehoste</string>
     <string name="oneplus_video_enhancer_footer">Tehosta väriä videoita toistettaessa</string>
     <string name="oneplus_video_enhancer_summary">Tehosta väriä videoita toistettaessa</string>
     <string name="oneplus_volume_keys_adjust">Säädä äänenvoimakkuuspainikkeikka</string>

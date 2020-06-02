@@ -2447,6 +2447,7 @@
 మీరు ప్రస్తుతం క్రింది ఖాతాలకు సైన్ ఇన్ చేసారు:
 "</string>
     <string name="master_clear_button_text">డేటా మొత్తాన్ని తొలగించు</string>
+    <string name="master_clear_confirm_summary">అలాగే అంతర్గత నిల్వలో ఉన్న సంగీతం, ఫోటోలు, వీడియోలు మరియు ఇతర వ్యక్తిగత డేటాతో సహా కంటెంట్ మొత్తం తీసివేయబడుతుంది. తీసివేయడాన్ని నిర్ధారిస్తున్నారా?</string>
     <string name="master_clear_confirm_title">మొత్తం డేటాను తొలగించాలా?</string>
     <string name="master_clear_desc">ఇందువలన మీ ఫోన్ యొక్క <b>అంతర్గత నిల్వ</b>" నుండి వీటితో సహా, మొత్తం డేటా తొలగించబడుతుంది:
 
@@ -2925,7 +2926,7 @@
     <string name="oneplus_auto_activate">ఆటోమేటిక్‌గా ఆన్ చేయి</string>
     <string name="oneplus_auto_answer_via_bluetooth_summary">బ్లూటూత్ ఆడియో పరికరానికి అనుసంధానించబడినప్పుడు ఇన్‌కమింగ్ కాల్‌కు స్వయంచాలకంగా సమాధానం ఇవ్వబడుతుంది</string>
     <string name="oneplus_auto_answer_via_bluetooth_title">బ్లూటూత్ కోసం స్మార్ట్ సమాధానం</string>
-    <string name="oneplus_auto_check_pin_length">\"✓\" ట్యాప్ చేయకుండా PINను నిర్ధారించండి</string>
+    <string name="oneplus_auto_check_pin_length">PINని నమోదు చేసిన తర్వాత స్క్రీన్‌ను ఆటోమేటిక్‌గా అన్‌లాక్ చేస్తుంది</string>
     <string name="oneplus_auto_disconect_the_ap">పరికరాలు కనెక్ట్ కాకపోతే హాట్‌స్పాట్ స్వయంచాలకంగా 5 నిమిషాల తర్వాత ఆఫ్ అవుతుంది.</string>
     <string name="oneplus_auto_open_app_none">ఏదీ కాదు</string>
     <string name="oneplus_auto_open_app_other_applications">ఇతర అప్లికేషన్లు</string>
@@ -3079,6 +3080,9 @@
 2.ఒక సెటప్ విధానంలో, దయచేసి మీ ఒక వేలి యొక్క వేలిముద్ర సమాచారాన్ని మాత్రమే నమోదు చేయాలి"</string>
     <string name="oneplus_enroll_fingerprint_tips_title">వేలిముద్ర సెటప్ ప్రాంప్ట్</string>
     <string name="oneplus_enter_your_fingerprint">· మీ వేలిముద్రను నమోదు చేయి</string>
+    <string name="oneplus_erase_system_data">సిస్టమ్ డేటాను తీసివేయండి</string>
+    <string name="oneplus_erase_system_data_summary">ఖాతా సమాచారం, పరిచయాలు మరియు యాప్ డేటాతో సహా సిస్టమ్ డేటా తొలగించబడుతుంది. మీరు ఒకసారి ఈ చర్యను చేసాక రద్దు చేయలేరు.</string>
+    <string name="oneplus_erase_system_data_title">సిస్టమ్ డేటాను తీసివేయాలా?</string>
     <string name="oneplus_esportmode_introduction_summary">ఎస్పోర్ట్స్ మోడ్ యాక్టివేట్ చేయడానికి, గేమింగ్ మోడ్ ప్యానెల్ మీద ఉన్న టోగెల్ ట్యాప్ చేయండి.</string>
     <string name="oneplus_experience_improvement_programs">అనుభవ మెరుగుదల కార్యక్రమాలు</string>
     <string name="oneplus_face_auto_unlock_while_screen_on_sumary">మొదట స్వైపింగ్ చేయకుండా మీ స్క్రీన్ ఆన్ అయిన వెంటనే మీ ముఖంతో మీ ఫోన్‌ని అన్‌లాక్ చేయండి.</string>
@@ -3143,7 +3147,7 @@
     <string name="oneplus_fnatic_mode_disturb_introduction_summary">అన్ని నోటిఫికేషన్‌లు మరియు కాల్‌లు బ్లాక్ చేయండి (తక్కువ బ్యాటరీ నోటిఫికేషన్, అలారం మరియు టైమర్ మినహా). సమాధానమివ్వని కాల్‌లు కాల్ లాగ్‌ల్లో సేవ్ చేయబడకపోవచ్చు.</string>
     <string name="oneplus_fnatic_mode_disturb_introduction_title">అధునాతన DND</string>
     <string name="oneplus_fnatic_mode_enable_introduction_title">ఎస్పోర్ట్స్ మోడ్ ఉపయోగించడానికి ముందుగా Fnatic మోడ్ ప్రారంభించాలి</string>
-    <string name="oneplus_fnatic_mode_network_introduction_dual4g_summary">మంచి పనితీరు గేమ్ ప్లే కోసం అవాంతరాలను తగ్గించడానికి ప్రాథమిక SIM కార్డ్ సిగ్నల్ బలానికి ప్రాధాన్యత ఇవ్వబడుతుంది. ఫలితంగా, రెండవ SIM కార్డ్ నిలిపివేయబడుతుంది మరియు కాల్‌లు లేదా సందేశాలు స్వీకరించబడవు.</string>
+    <string name="oneplus_fnatic_mode_network_introduction_dual4g_summary">తక్కువ ప్రతిస్పందన సమయం గల గేమ్ ప్లేకి సంబంధించి అంతరాయాన్ని తగ్గించడానికి ప్రాథమిక SIM కార్డ్ సిగ్నల్ సామర్థ్యానికి ప్రాధాన్యత ఇవ్వబడుతుంది. ఫలితంగా, రెండవ SIM కార్డ్ నిలిపివేయబడుతుంది, అలాగే కాల్‌లు లేదా సందేశాలు స్వీకరించబడవు.</string>
     <string name="oneplus_fnatic_mode_network_introduction_summary">నెట్‌వర్క్ కనెక్షన్ యొక్క స్థిరత్వాన్ని మెరుగుపరచండి</string>
     <string name="oneplus_fnatic_mode_network_introduction_title">నెట్‌వర్క్ మెరుగుదల</string>
     <string name="oneplus_fnatic_mode_summary">మీ గేమింగ్ అనుభవాన్ని మరింత మెరుగుపరచుకోండి</string>
@@ -3241,7 +3245,7 @@
     <string name="oneplus_hand_up_proximity_title">డిస్‌ప్లేని పైకి ఎత్తండి</string>
     <string name="oneplus_hand_up_to_show">చూపడానికి మీ ఫోన్‌ను చేతిలోకి తీసుకోండి</string>
     <string name="oneplus_haptic_feedback_no_app">సపోర్ట్ చేయబడే గేమ్స్ ఇన్‌స్టాల్ చేయబడలేదు</string>
-    <string name="oneplus_haptic_feedback_no_app_tip">మీరు PUBG మొబైల్ మరియు అస్ఫాల్ట్ 9 ఇన్‌స్టాల్ చేయవచ్చు</string>
+    <string name="oneplus_haptic_feedback_no_app_tip">మీరు PUBG మొబైల్ మరియు అస్ఫాల్ట్ 9ని ఇన్‌స్టాల్ చేసి ఉండవచ్చు</string>
     <string name="oneplus_haptic_feedback_summary">మద్దతు ఉన్న గేమ్‌ల కోసం మెరుగైన హాప్టిక్ అభిప్రాయాన్ని అందిస్తుంది</string>
     <string name="oneplus_haptic_feedback_support">సపోర్ట్ చేయబడే గేమ్స్</string>
     <string name="oneplus_haptic_feedback_tips">నిర్థిష్ట గేమ్ దృశ్యాలకి స్పర్శ ఫీడ్‌బ్యాక్ అందిస్తుంది, మద్దతిచ్చే గేమ్స్‌కి మాత్రమే ఇది వర్తిస్తుంది</string>
@@ -3755,9 +3759,9 @@
     <string name="oneplus_vibration_settings_soc_tri_state">వైబ్రేషన్</string>
     <string name="oneplus_vibration_settings_soc_tri_state_summary">అలారాలు మినహా కాల్‌లు మరియు నోటిఫికేషన్‌లు నిశ్శబ్దం చేయబడతాయి మరియు వైబ్రేట్ మాత్రమే అయ్యేలా సెట్ చేయబడతాయి</string>
     <string name="oneplus_vibration_summary">అలారం ఎల్లప్పుడూ మోగుతుంది</string>
-    <string name="oneplus_video_enhancer">వీడియో వృద్ధికారకం</string>
-    <string name="oneplus_video_enhancer_footer">వీడియోలను ప్లే చేస్తున్నప్పుడు రంగును మెరుగుపరచండి</string>
-    <string name="oneplus_video_enhancer_summary">వీడియోలను ప్లే చేస్తున్నప్పుడు రంగును మెరుగుపరచండి</string>
+    <string name="oneplus_video_enhancer">వైబ్రెంట్ రంగు ప్రభావం</string>
+    <string name="oneplus_video_enhancer_footer">వీడియోలను ప్లే చేసేటప్పుడు కలర్‌ని పెంచండి</string>
+    <string name="oneplus_video_enhancer_summary">వీడియోలను ప్లే చేసేటప్పుడు కలర్‌ని పెంచండి</string>
     <string name="oneplus_volume_keys_adjust">సర్దుబాటు చేయడానికి వాల్యూమ్ బటన్‌లను ఉపయోగించండి</string>
     <string name="oneplus_volume_keys_adjust_media">మీడియా వాల్యూం</string>
     <string name="oneplus_volume_keys_adjust_ringtones">రింగ్‌టోన్ వాల్యూం</string>

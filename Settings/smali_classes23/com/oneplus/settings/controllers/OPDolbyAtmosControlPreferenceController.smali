@@ -57,7 +57,7 @@
 
     iget-object v0, p0, Lcom/oneplus/settings/controllers/OPDolbyAtmosControlPreferenceController;->mPreference:Landroidx/preference/Preference;
 
-    const v1, 0x7f080504
+    const v1, 0x7f080505
 
     invoke-virtual {v0, v1}, Landroidx/preference/Preference;->setIcon(I)V
 
@@ -66,7 +66,7 @@
     :cond_0
     iget-object v0, p0, Lcom/oneplus/settings/controllers/OPDolbyAtmosControlPreferenceController;->mPreference:Landroidx/preference/Preference;
 
-    const v1, 0x7f080503
+    const v1, 0x7f080504
 
     invoke-virtual {v0, v1}, Landroidx/preference/Preference;->setIcon(I)V
 

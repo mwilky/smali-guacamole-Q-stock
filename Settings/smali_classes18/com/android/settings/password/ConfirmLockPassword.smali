@@ -32,14 +32,14 @@
 
     :array_0
     .array-data 4
+        0x7f12098c
+        0x7f120982
         0x7f12098d
         0x7f120983
-        0x7f12098e
-        0x7f120984
+        0x7f1209a4
+        0x7f1209a2
+        0x7f1209a7
         0x7f1209a5
-        0x7f1209a3
-        0x7f1209a8
-        0x7f1209a6
     .end array-data
 .end method
 

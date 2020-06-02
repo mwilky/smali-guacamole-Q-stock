@@ -200,7 +200,7 @@
 .method private updateThemeSummary(I)V
     .locals 2
 
-    const v0, 0x7f120f87
+    const v0, 0x7f120f85
 
     if-eqz p1, :cond_3
 
@@ -225,7 +225,7 @@
     :cond_0
     iget-object v0, p0, Lcom/oneplus/settings/OPThemeSettings;->mThemeModePreference:Lcom/oneplus/settings/widget/OPThemePresetDialogPreference;
 
-    const v1, 0x7f120f88
+    const v1, 0x7f120f86
 
     invoke-virtual {v0, v1}, Lcom/oneplus/settings/widget/OPThemePresetDialogPreference;->setSummary(I)V
 
@@ -234,7 +234,7 @@
     :cond_1
     iget-object v0, p0, Lcom/oneplus/settings/OPThemeSettings;->mThemeModePreference:Lcom/oneplus/settings/widget/OPThemePresetDialogPreference;
 
-    const v1, 0x7f120f85
+    const v1, 0x7f120f83
 
     invoke-virtual {v0, v1}, Lcom/oneplus/settings/widget/OPThemePresetDialogPreference;->setSummary(I)V
 
@@ -243,7 +243,7 @@
     :cond_2
     iget-object v0, p0, Lcom/oneplus/settings/OPThemeSettings;->mThemeModePreference:Lcom/oneplus/settings/widget/OPThemePresetDialogPreference;
 
-    const v1, 0x7f120f86
+    const v1, 0x7f120f84
 
     invoke-virtual {v0, v1}, Lcom/oneplus/settings/widget/OPThemePresetDialogPreference;->setSummary(I)V
 
@@ -501,13 +501,13 @@
 
     invoke-direct {v0, v1}, Lcom/oneplus/lib/app/OPAlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v1, 0x7f120f73
+    const v1, 0x7f120f71
 
     invoke-virtual {v0, v1}, Lcom/oneplus/lib/app/OPAlertDialog$Builder;->setTitle(I)Lcom/oneplus/lib/app/OPAlertDialog$Builder;
 
     move-result-object v0
 
-    const v1, 0x7f120f72
+    const v1, 0x7f120f70
 
     invoke-virtual {v0, v1}, Lcom/oneplus/lib/app/OPAlertDialog$Builder;->setMessage(I)Lcom/oneplus/lib/app/OPAlertDialog$Builder;
 
@@ -525,7 +525,7 @@
 
     sget-object v1, Lcom/oneplus/settings/-$$Lambda$OPThemeSettings$QEX9kLB0ud0tfjfKljyzvaEhAzU;->INSTANCE:Lcom/oneplus/settings/-$$Lambda$OPThemeSettings$QEX9kLB0ud0tfjfKljyzvaEhAzU;
 
-    const v2, 0x7f1203da
+    const v2, 0x7f1203d8
 
     invoke-virtual {v0, v2, v1}, Lcom/oneplus/lib/app/OPAlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Lcom/oneplus/lib/app/OPAlertDialog$Builder;
 

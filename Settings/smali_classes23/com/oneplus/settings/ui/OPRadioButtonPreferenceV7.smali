@@ -37,11 +37,11 @@
 .method private initViews()V
     .locals 1
 
-    const v0, 0x7f0d01f0
+    const v0, 0x7f0d01f7
 
     invoke-virtual {p0, v0}, Lcom/oneplus/settings/ui/OPRadioButtonPreferenceV7;->setLayoutResource(I)V
 
-    const v0, 0x7f0d0276
+    const v0, 0x7f0d027d
 
     invoke-virtual {p0, v0}, Lcom/oneplus/settings/ui/OPRadioButtonPreferenceV7;->setWidgetLayoutResource(I)V
 

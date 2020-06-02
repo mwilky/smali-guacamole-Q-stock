@@ -130,7 +130,7 @@
     :cond_0
     iget-object v1, p0, Lcom/android/settings/connecteddevice/DiscoverableFooterPreferenceController;->mContext:Landroid/content/Context;
 
-    const v2, 0x7f1202ef
+    const v2, 0x7f1202ee
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
@@ -191,7 +191,7 @@
     :cond_0
     iget-object v0, p0, Lcom/android/settings/connecteddevice/DiscoverableFooterPreferenceController;->mPreference:Lcom/oneplus/settings/widget/OPFooterPreference;
 
-    const v1, 0x7f120334
+    const v1, 0x7f120332
 
     invoke-virtual {v0, v1}, Lcom/oneplus/settings/widget/OPFooterPreference;->setTitle(I)V
 

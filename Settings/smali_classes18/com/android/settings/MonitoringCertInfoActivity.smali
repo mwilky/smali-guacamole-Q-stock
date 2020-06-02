@@ -151,7 +151,7 @@
 
     invoke-virtual {v7, v5, p0}, Landroidx/appcompat/app/AlertDialog$Builder;->setPositiveButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroidx/appcompat/app/AlertDialog$Builder;
 
-    const v5, 0x7f1203da
+    const v5, 0x7f1203d8
 
     const/4 v8, 0x0
 
@@ -227,7 +227,7 @@
 
     invoke-virtual {v7, v3}, Landroidx/appcompat/app/AlertDialog$Builder;->setIcon(I)Landroidx/appcompat/app/AlertDialog$Builder;
 
-    const v3, 0x7f121423
+    const v3, 0x7f12142b
 
     invoke-virtual {v7, v3}, Landroidx/appcompat/app/AlertDialog$Builder;->setMessage(I)Landroidx/appcompat/app/AlertDialog$Builder;
 

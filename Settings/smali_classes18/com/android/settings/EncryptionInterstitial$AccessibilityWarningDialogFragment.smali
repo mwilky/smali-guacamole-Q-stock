@@ -126,23 +126,23 @@
 
     if-eq v0, v1, :cond_0
 
-    const v0, 0x7f12067b
+    const v0, 0x7f12067a
 
-    const v1, 0x7f120678
+    const v1, 0x7f120677
 
     goto :goto_0
 
     :cond_0
-    const v0, 0x7f12067d
+    const v0, 0x7f12067c
 
-    const v1, 0x7f12067a
+    const v1, 0x7f120679
 
     goto :goto_0
 
     :cond_1
-    const v0, 0x7f12067c
+    const v0, 0x7f12067b
 
-    const v1, 0x7f120679
+    const v1, 0x7f120678
 
     nop
 

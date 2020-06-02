@@ -1081,7 +1081,7 @@ Selección"</string>
     <string name="clear_instant_app_data">Borrar aplicación</string>
     <string name="clear_uri_btn_text">Permitir acceso</string>
     <string name="clear_user_data_text">Borrar almacenamiento</string>
-    <string name="close_dialog">Aceptar</string>
+    <string name="close_dialog">OK</string>
     <string name="color_black">Negro</string>
     <string name="color_blue">Azul</string>
     <string name="color_cyan">Cian</string>
@@ -1101,7 +1101,7 @@ Selección"</string>
     <string name="color_picker_default">Predeterminado</string>
     <string name="color_picker_led_color_message">Seleccionar el color del LED</string>
     <string name="color_picker_message_default">Escoge tu color preferido.</string>
-    <string name="color_picker_unknown_label">Desconocido</string>
+    <string name="color_picker_unknown_label">Desconocida</string>
     <string name="color_purple">Violeta</string>
     <string name="color_red">Rojo</string>
     <string name="color_temperature">Temperatura de colores fríos</string>
@@ -1287,7 +1287,7 @@ Debes restablecer el estado de fábrica para volver a usar el teléfono. Cuando 
     <string name="data_size_label">Datos de usuario</string>
     <string name="data_summary_format">%1$s usados desde %2$s</string>
     <string name="data_switch_started">Cambiando SIM de datos. Este proceso puede tardar hasta un minuto...</string>
-    <string name="data_switch_warning_text">Cambiar el acceso a datos detendrá los servicios LTE. ¿Deseas continuar?</string>
+    <string name="data_switch_warning_text">Al cambiar el acceso a los datos se detendrán los servicios LTE. ¿Quieres continuar?</string>
     <string name="data_switch_warning_title">Seleccionar datos en SIM %1$s</string>
     <string name="data_usage_accounting">El uso de datos del operador puede ser diferente al calculado por el dispositivo.</string>
     <string name="data_usage_app">Uso de las aplicaciones</string>
@@ -1797,7 +1797,7 @@ Para obtener más información, ponte en contacto con el administrador de tu org
     <string name="filter_work_apps">Trabajo</string>
     <string name="filter_write_settings_apps">Puede modificar los ajustes del sistema</string>
     <string name="fingerprint_add_fingerprint">Añadir huella digital</string>
-    <string name="fingerprint_add_fingerprint_summary">Coloca el dedo en el sensor y levántalo después de haber sentido la vibración.</string>
+    <string name="fingerprint_add_fingerprint_summary">Coloca el dedo en el sensor y levántalo despues de haber sentido la vibración.</string>
     <string name="fingerprint_add_max">Puedes añadir hasta %d huellas digitales</string>
     <string name="fingerprint_add_title">Añadir huella digital</string>
     <string name="fingerprint_allset">¡Todo listo!</string>
@@ -1826,7 +1826,7 @@ Para obtener más información, ponte en contacto con el administrador de tu org
     <string name="fingerprint_password_hint">Ingresa tu contraseña de respaldo</string>
     <string name="fingerprint_password_manage_title">Huella digital</string>
     <string name="fingerprint_pin_hint">Ingresa tu PIN de respaldo</string>
-    <string name="fingerprint_progress_summary">Coloca el dedo en el sensor y levántalo después de haber sentido la vibración.</string>
+    <string name="fingerprint_progress_summary">Coloca el dedo en el sensor y levántalo despues de haber sentido la vibración.</string>
     <string name="fingerprint_progress_too_fast_summary">Demasiado rápido</string>
     <string name="fingerprint_rename">Renombrar huella digital</string>
     <string name="fingerprint_rename_title">Renombrar</string>
@@ -2447,6 +2447,7 @@ Puedes cambiar esta opción en cualquier momento en Ajustes > Aplicaciones y not
 Has iniciado sesión en las cuentas que se indican a continuación:
 "</string>
     <string name="master_clear_button_text">Borrar todos los datos</string>
+    <string name="master_clear_confirm_summary">También se eliminará todo el contenido del almacenamiento interno, incluidos los archivos de música, fotos, vídeos y otros datos personales. ¿Confirmar el borrado?</string>
     <string name="master_clear_confirm_title">¿Borrar todos los datos?</string>
     <string name="master_clear_desc">Se borrarán todos los datos del <b>almacenamiento interno</b>" del teléfono, como:
 
@@ -2925,7 +2926,7 @@ También concede a la aplicación la capacidad de activar o desactivar el modo N
     <string name="oneplus_auto_activate">Activar automáticamente</string>
     <string name="oneplus_auto_answer_via_bluetooth_summary">La llamada entrante se responderá automáticamente cuando haya un dispositivo de sonido Bluetooth conectado</string>
     <string name="oneplus_auto_answer_via_bluetooth_title">Respuesta inteligente para Bluetooth</string>
-    <string name="oneplus_auto_check_pin_length">Confirmar el PIN sin tocar \"✓\"</string>
+    <string name="oneplus_auto_check_pin_length">Desbloquear automáticamente la pantalla después de introducir el PIN</string>
     <string name="oneplus_auto_disconect_the_ap">El punto de acceso se desactivará automáticamente después de 5 minutos si no hay dispositivos conectados.</string>
     <string name="oneplus_auto_open_app_none">Ninguno</string>
     <string name="oneplus_auto_open_app_other_applications">OTRAS APLICACIONES</string>
@@ -3079,6 +3080,9 @@ El modo Ahorro de batería se desactiva automáticamente cuando cargas tu dispos
 2.Introduce la información de una única huella digital en cada proceso de configuración."</string>
     <string name="oneplus_enroll_fingerprint_tips_title">Solicitud de configuración de huella digital</string>
     <string name="oneplus_enter_your_fingerprint">· Registrar tu huella dactilar</string>
+    <string name="oneplus_erase_system_data">BORRAR DATOS DEL SISTEMA</string>
+    <string name="oneplus_erase_system_data_summary">Se eliminarán los datos del sistema, incluyendo la información de la cuenta, los contactos y los datos de las aplicaciones. Esta acción no se puede deshacer.</string>
+    <string name="oneplus_erase_system_data_title">¿Borrar los datos del sistema?</string>
     <string name="oneplus_esportmode_introduction_summary">Para activar el modo de deportes electrónicos, toca el botón del panel del modo de juego.</string>
     <string name="oneplus_experience_improvement_programs">Programas de mejora de la experiencia</string>
     <string name="oneplus_face_auto_unlock_while_screen_on_sumary">Usar Desbloqueo facial cuando se encienda la pantalla sin tener que deslizar el dedo.</string>
@@ -3143,7 +3147,7 @@ Precaución: El Desbloqueo facial es menos seguro que el uso de la huella digita
     <string name="oneplus_fnatic_mode_disturb_introduction_summary">Bloquear todas las notificaciones y llamadas (excepto notificaciones de batería baja, alarmas y temporizadores). Es posible que las llamadas perdidas no se guarden en los registros de llamadas.</string>
     <string name="oneplus_fnatic_mode_disturb_introduction_title">No molestar avanzado</string>
     <string name="oneplus_fnatic_mode_enable_introduction_title">Para utilizar el modo Fnatic, es necesario activar el modo de juego primero</string>
-    <string name="oneplus_fnatic_mode_network_introduction_dual4g_summary">Se da prioridad a la intensidad de señal de la tarjeta SIM principal para minimizar las interferencias en el juego de baja latencia. Como resultado, se desactivará la tarjeta SIM secundaria y no se recibirán llamadas ni mensajes.</string>
+    <string name="oneplus_fnatic_mode_network_introduction_dual4g_summary">Se da prioridad a la intensidad de señal de la tarjeta SIM principal para minimizar las interferencias en el juego a baja latencia. Como resultado, se desactivará la tarjeta SIM secundaria y no se recibirán llamadas ni mensajes.</string>
     <string name="oneplus_fnatic_mode_network_introduction_summary">Mejorar la estabilidad de la conexión de red</string>
     <string name="oneplus_fnatic_mode_network_introduction_title">Optimización de red</string>
     <string name="oneplus_fnatic_mode_summary">Potencia tu experiencia de juego</string>
@@ -3424,7 +3428,7 @@ Quedan%dintentos."</string>
     <string name="oneplus_preference_settings_behavior">Preferencias</string>
     <string name="oneplus_preference_settings_custom_time">Alternancia automática</string>
     <string name="oneplus_preference_settings_manual_open">Estado</string>
-    <string name="oneplus_preference_settings_turn_off_time">Hasta las</string>
+    <string name="oneplus_preference_settings_turn_off_time">Para</string>
     <string name="oneplus_preference_settings_turn_on">Activar No molestar</string>
     <string name="oneplus_preference_settings_turn_on_time">Desde las</string>
     <string name="oneplus_prior_to_use_you_need_to">Antes de usar, debes:</string>
@@ -3475,7 +3479,7 @@ Quedan%dintentos."</string>
     <string name="oneplus_reading_mode">Modo lectura</string>
     <string name="oneplus_reading_mode_activate_manual">Activar manualmente</string>
     <string name="oneplus_reading_mode_add_apps">Añadir aplicaciones para el modo lectura</string>
-    <string name="oneplus_reading_mode_ask">Preguntar cada vez</string>
+    <string name="oneplus_reading_mode_ask">Pregunta cada vez</string>
     <string name="oneplus_reading_mode_auto_summary">El modo lectura se activará automáticamente cuando se abran estas aplicaciones y se desactivará cuando se cierren</string>
     <string name="oneplus_reading_mode_available">Sin efecto</string>
     <string name="oneplus_reading_mode_block_peek_notifications">Bloquear las notificaciones peek</string>
@@ -3581,7 +3585,7 @@ Quedan%dintentos."</string>
     <string name="oneplus_search_keyword_user_experience">notificaciones, experiencia, programa, mejora</string>
     <string name="oneplus_search_keyword_wallpaper_settings">fondo de pantalla, pantalla de bloqueo</string>
     <string name="oneplus_search_keyword_wifi_direct">directa, P2P, conexión</string>
-    <string name="oneplus_search_keyword_wifi_display_settings_screen">transmisión</string>
+    <string name="oneplus_search_keyword_wifi_display_settings_screen">screencast</string>
     <string name="oneplus_security_dashboard_summary">Huella digital, desbloqueo facial, ubicación</string>
     <string name="oneplus_security_dashboard_summary_no_faceunlock">Huella digital, ubicación</string>
     <string name="oneplus_security_detection_summary">Detección de seguridad para aplicaciones de origen desconocido</string>
@@ -3628,7 +3632,7 @@ Nota:
     <string name="oneplus_show_pattern_and_password">Mostrar la contraseña o el patrón</string>
     <string name="oneplus_silent_mode">Silencio</string>
     <string name="oneplus_silent_mode_on">El modo silencio está activado</string>
-    <string name="oneplus_silent_mode_soc_tri_state_summary">Las llamadas y notificaciones se silenciarán, excepto las alarmas</string>
+    <string name="oneplus_silent_mode_soc_tri_state_summary">Las llamadas y notificaciones se silenciarán, salvo las alarmas</string>
     <string name="oneplus_silent_mode_summary">Las llamadas y notificaciones se silenciarán, excepto las alarmas</string>
     <string name="oneplus_sim1_ringtone_switch">Tarjeta SIM 1</string>
     <string name="oneplus_sim2_ringtone_switch">Tarjeta SIM 2</string>
@@ -3731,7 +3735,7 @@ Nota:
     <string name="oneplus_top_level_sound_summary">No molestar, modo auricular, tono</string>
     <string name="oneplus_top_level_system_summary">Idioma y teclado, hora, restablecer, actualizaciones de sistema</string>
     <string name="oneplus_touch_vibrate">Vibración al tocar</string>
-    <string name="oneplus_turn_off_time">Hasta las</string>
+    <string name="oneplus_turn_off_time">Para</string>
     <string name="oneplus_turn_on_feature_cancel">CANCELAR</string>
     <string name="oneplus_turn_on_feature_ok">ACTIVAR</string>
     <string name="oneplus_turn_on_time">Desde las</string>
@@ -3755,16 +3759,16 @@ Nota: El Desbloqueo facial puede ser menos seguro que la huella digital, el PIN 
     <string name="oneplus_vibration_settings_soc_tri_state">Vibración</string>
     <string name="oneplus_vibration_settings_soc_tri_state_summary">Las llamadas y notificaciones se silenciarán y se establecerán en solo vibración, excepto las alarmas</string>
     <string name="oneplus_vibration_summary">La alarma sonará siempre</string>
-    <string name="oneplus_video_enhancer">Mejora de vídeo</string>
-    <string name="oneplus_video_enhancer_footer">Mejorar el color durante la reproducción de vídeo</string>
-    <string name="oneplus_video_enhancer_summary">Mejorar el color durante la reproducción de vídeo</string>
+    <string name="oneplus_video_enhancer">Efecto de color intenso</string>
+    <string name="oneplus_video_enhancer_footer">Mejora el color durante la reproducción de videos</string>
+    <string name="oneplus_video_enhancer_summary">Mejora el color durante la reproducción de videos</string>
     <string name="oneplus_volume_keys_adjust">Utilizar los botones de volumen para ajustar</string>
     <string name="oneplus_volume_keys_adjust_media">Volumen multimedia</string>
     <string name="oneplus_volume_keys_adjust_ringtones">Volumen de tono</string>
     <string name="oneplus_weak_text_reminding">Solo texto</string>
     <string name="oneplus_weak_text_reminding_summary">Permitir que las aplicaciones muestren notificaciones de aviso</string>
     <string name="oneplus_wellbeing_grayscale_open_tip">El modo nocturno no está disponible actualmente porque la función \"Escala de grises\" está activada</string>
-    <string name="oneplus_wifi_ap_error">Introduce la tarjeta SIM</string>
+    <string name="oneplus_wifi_ap_error">Introduzca la targeta SIM</string>
     <string name="oneplus_wifi_hidden_network_warning">"Si el router desactiva la difusión de SSID, debes seleccionar “Sí” para conectar a la red oculta.
 
 Esto puede crear un riesgo de seguridad porque el teléfono transmitirá su señal regularmente para detectar la red.
@@ -4652,7 +4656,7 @@ Es posible que el PIN no sea correcto."</string>
     <string name="sim_change_succeeded">El PIN de la tarjeta SIM se ha modificado correctamente.</string>
     <string name="sim_combination_warning_notification_title">Problema con la combinación de tarjetas SIM</string>
     <string name="sim_disable_sim_lock">Desbloquear tarjeta SIM</string>
-    <string name="sim_disabled">desactivada</string>
+    <string name="sim_disabled">deshabilitado</string>
     <string name="sim_editor_carrier">Operador</string>
     <string name="sim_editor_color">Color de la SIM</string>
     <string name="sim_editor_name">Nombre de la SIM</string>
@@ -4660,14 +4664,14 @@ Es posible que el PIN no sea correcto."</string>
     <string name="sim_editor_title">Ranura de la SIM %1$d</string>
     <string name="sim_enable_sim_lock">Bloquear tarjeta SIM</string>
     <string name="sim_enabled">activada</string>
-    <string name="sim_enabler_airplane_on">ERROR, ¡El modo avión está activado!</string>
+    <string name="sim_enabler_airplane_on">ERROR, ¡el modo de avión está activado!</string>
     <string name="sim_enabler_both_inactive">Error. No se pueden desactivar todas las SIM</string>
     <string name="sim_enabler_disabling">Desactivando...</string>
     <string name="sim_enabler_enabling">Activando...</string>
-    <string name="sim_enabler_in_call">ERROR, ¡En llamada!</string>
+    <string name="sim_enabler_in_call">ERROR, ¡en llamada!</string>
     <string name="sim_enabler_need_disable_sim">Desactivando la SIM. ¿Estás seguro?</string>
     <string name="sim_enabler_need_enable_sim">Activando la SIM. ¿Estás seguro?</string>
-    <string name="sim_enabler_need_switch_data_service">Se desactivará y se cambiará a la SIM %1$s para servicios de datos, ¿estás seguro?</string>
+    <string name="sim_enabler_need_switch_data_service">La desactivarás y cambiarás a la SIM%1$spara los servicios de datos, ¿estás seguro?</string>
     <string name="sim_enabler_not_allow_disable_data_sim">No se permite desactivar la SIM de datos</string>
     <string name="sim_enabler_summary">La SIM está %1$s</string>
     <string name="sim_enabler_summary_new_marshmallow">" es %1$s"</string>
@@ -4687,7 +4691,7 @@ Es posible que el PIN no sea correcto."</string>
     <string name="sim_lock_settings_summary_off">Desactivado</string>
     <string name="sim_lock_settings_summary_on">Bloqueada</string>
     <string name="sim_lock_settings_title">Bloqueo de tarjeta SIM</string>
-    <string name="sim_missing">no insertada o con error</string>
+    <string name="sim_missing">falta o error</string>
     <string name="sim_multi_sims_summary">Selecciona la SIM que prefieras para usar datos móviles.</string>
     <string name="sim_multi_sims_title">Varias SIM encontradas</string>
     <string name="sim_name_hint">Introduce el nombre de SIM</string>
@@ -5014,12 +5018,12 @@ Prueba a utilizar una ^3 más rápida o utiliza esta ^4 como almacenamiento port
     <string name="style_and_wallpaper_settings_title">Estilos y fondos de pantalla</string>
     <string name="style_suggestion_summary">Prueba diferentes estilos, fondos de pantalla o relojes</string>
     <string name="style_suggestion_title">Personalizar tu Pixel</string>
-    <string name="sub_activate_failed">Error de activación.</string>
+    <string name="sub_activate_failed">Error en la activación.</string>
     <string name="sub_activate_not_supported">No se admite la activación</string>
-    <string name="sub_activate_success">Activado correctamente.</string>
+    <string name="sub_activate_success">Activación correcta.</string>
     <string name="sub_deactivate_failed">Error en la desactivación.</string>
     <string name="sub_deactivate_not_supported">No se admite la desactivación</string>
-    <string name="sub_deactivate_success">Desactivado correctamente.</string>
+    <string name="sub_deactivate_success">Desactivación correcta.</string>
     <string name="subs_settings">Estado de SIM</string>
     <string name="subscription_available">Disponible</string>
     <string name="suggested_fingerprint_lock_settings_summary" />
@@ -5151,10 +5155,10 @@ un servicio de Google que te permite sincronizar datos para que puedas acceder a
     <string name="touchscreen_camera_gesture_summary">Dibuja una O para abrir la cámara</string>
     <string name="touchscreen_camera_gesture_title">Abrir cámara</string>
     <string name="touchscreen_double_tap_to_wake_gesture_summary">Tocar la pantalla dos veces para despertar el dispositivo</string>
-    <string name="touchscreen_double_tap_to_wake_gesture_title">Doble toque para despertar</string>
+    <string name="touchscreen_double_tap_to_wake_gesture_title">Doble toque para activar</string>
     <string name="touchscreen_flashlight_gesture_summary">Dibujar una V para encender/apagar la linterna</string>
     <string name="touchscreen_flashlight_gesture_title">Encender/apagar linterna</string>
-    <string name="touchscreen_music_gesture_summary">Dibuja || con dos dedos para reproducir o pausar la música. Dibuja &lt; o > para la canción anterior o la siguiente</string>
+    <string name="touchscreen_music_gesture_summary">Dibuja || con dos dedos para reproducir o pausar la música. Dibuja &lt; or > para la pista anterior o la siguiente</string>
     <string name="touchscreen_music_gesture_title">Control de música</string>
     <string name="track_frame_time">Trazar la renderización de HWUI</string>
     <string name="transition_animation_scale_title">Escala de animación de transición</string>

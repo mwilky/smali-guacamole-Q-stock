@@ -315,7 +315,7 @@
 
     iput-object v2, v0, Lcom/oneplus/settings/ui/OPCustomClockPreference;->mOPRecyclerView:Lcom/oneplus/lib/widget/recyclerview/OPRecyclerView;
 
-    const v2, 0x7f0a0550
+    const v2, 0x7f0a0552
 
     invoke-virtual {v1, v2}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 
@@ -349,7 +349,7 @@
 
     invoke-virtual {v4, v5}, Lcom/oneplus/lib/widget/recyclerview/OPRecyclerView;->addOPItemDecoration(Lcom/oneplus/lib/widget/recyclerview/OPItemDecoration;)V
 
-    const v4, 0x7f0a0551
+    const v4, 0x7f0a0553
 
     invoke-virtual {v1, v4}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 
@@ -592,7 +592,7 @@
 
     iget-object v3, v0, Lcom/oneplus/settings/ui/OPCustomClockPreference;->mPreView:Landroid/widget/ImageView;
 
-    const v9, 0x7f0805ed
+    const v9, 0x7f0805f0
 
     invoke-virtual {v3, v9}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -609,7 +609,7 @@
 
     iget-object v3, v0, Lcom/oneplus/settings/ui/OPCustomClockPreference;->mPreView:Landroid/widget/ImageView;
 
-    const v9, 0x7f0805ec
+    const v9, 0x7f0805ef
 
     invoke-virtual {v3, v9}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -628,7 +628,7 @@
 
     iget-object v3, v0, Lcom/oneplus/settings/ui/OPCustomClockPreference;->mPreView:Landroid/widget/ImageView;
 
-    const v9, 0x7f0805ef
+    const v9, 0x7f0805f2
 
     invoke-virtual {v3, v9}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -647,7 +647,7 @@
 
     iget-object v3, v0, Lcom/oneplus/settings/ui/OPCustomClockPreference;->mPreView:Landroid/widget/ImageView;
 
-    const v9, 0x7f0805f0
+    const v9, 0x7f0805f3
 
     invoke-virtual {v3, v9}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -664,7 +664,7 @@
 
     iget-object v3, v0, Lcom/oneplus/settings/ui/OPCustomClockPreference;->mPreView:Landroid/widget/ImageView;
 
-    const v9, 0x7f0805ee
+    const v9, 0x7f0805f1
 
     invoke-virtual {v3, v9}, Landroid/widget/ImageView;->setImageResource(I)V
 

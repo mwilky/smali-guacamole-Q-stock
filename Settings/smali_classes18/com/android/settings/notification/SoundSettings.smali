@@ -335,6 +335,29 @@
     return-void
 .end method
 
+.method private removeSmsRingtone()V
+    .locals 2
+
+    const-string v0, "ringtone_and_vibrate"
+
+    invoke-virtual {p0, v0}, Lcom/android/settings/notification/SoundSettings;->findPreference(Ljava/lang/CharSequence;)Landroidx/preference/Preference;
+
+    move-result-object v0
+
+    check-cast v0, Landroidx/preference/PreferenceCategory;
+
+    if-eqz v0, :cond_0
+
+    iget-object v1, p0, Lcom/android/settings/notification/SoundSettings;->mSmsRingtonePreference:Landroidx/preference/Preference;
+
+    if-eqz v1, :cond_0
+
+    invoke-virtual {v0, v1}, Landroidx/preference/PreferenceCategory;->removePreference(Landroidx/preference/Preference;)Z
+
+    :cond_0
+    return-void
+.end method
+
 
 # virtual methods
 .method protected createPreferenceControllers(Landroid/content/Context;)Ljava/util/List;
@@ -383,7 +406,7 @@
 .method public getHelpResource()I
     .locals 1
 
-    const v0, 0x7f1207e4
+    const v0, 0x7f1207e3
 
     return v0
 .end method
@@ -646,40 +669,28 @@
 
     iput-object v0, p0, Lcom/android/settings/notification/SoundSettings;->mSmsRingtonePreference:Landroidx/preference/Preference;
 
-    invoke-static {}, Lcom/oneplus/settings/utils/OPUtils;->isSupportUss()Z
+    invoke-static {}, Lcom/oneplus/settings/utils/OPUtils;->isSupportUssOnly()Z
 
     move-result v0
 
-    if-nez v0, :cond_2
+    if-eqz v0, :cond_2
 
-    invoke-static {}, Lcom/oneplus/settings/utils/OPUtils;->isSupportUstMode()Z
+    invoke-direct {p0}, Lcom/android/settings/notification/SoundSettings;->removeSmsRingtone()V
+
+    :cond_2
+    invoke-static {}, Lcom/oneplus/settings/utils/OPUtils;->isSupportUstUnify()Z
 
     move-result v0
 
     if-eqz v0, :cond_3
 
-    :cond_2
     invoke-direct {p0}, Lcom/android/settings/notification/SoundSettings;->getDefaultSms()V
 
     sget-boolean v0, Lcom/android/settings/notification/SoundSettings;->isDefaultOPSms:Z
 
     if-nez v0, :cond_3
 
-    const-string v0, "ringtone_and_vibrate"
-
-    invoke-virtual {p0, v0}, Lcom/android/settings/notification/SoundSettings;->findPreference(Ljava/lang/CharSequence;)Landroidx/preference/Preference;
-
-    move-result-object v0
-
-    check-cast v0, Landroidx/preference/PreferenceCategory;
-
-    if-eqz v0, :cond_3
-
-    iget-object v1, p0, Lcom/android/settings/notification/SoundSettings;->mSmsRingtonePreference:Landroidx/preference/Preference;
-
-    if-eqz v1, :cond_3
-
-    invoke-virtual {v0, v1}, Landroidx/preference/PreferenceCategory;->removePreference(Landroidx/preference/Preference;)Z
+    invoke-direct {p0}, Lcom/android/settings/notification/SoundSettings;->removeSmsRingtone()V
 
     :cond_3
     return-void

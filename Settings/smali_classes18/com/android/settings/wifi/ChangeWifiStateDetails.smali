@@ -247,7 +247,7 @@
 
     iget-object v1, p0, Lcom/android/settings/wifi/ChangeWifiStateDetails;->mSwitchPref:Landroidx/preference/SwitchPreference;
 
-    const v2, 0x7f120417
+    const v2, 0x7f120415
 
     invoke-virtual {v1, v2}, Landroidx/preference/SwitchPreference;->setTitle(I)V
 

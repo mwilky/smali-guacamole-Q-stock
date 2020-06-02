@@ -29,6 +29,8 @@
 
 .field public static final SHOW_WHEN_LOCKED:Ljava/lang/String; = "com.android.settings.ConfirmCredentials.showWhenLocked"
 
+.field private static final TAG:Ljava/lang/String; = "ConfirmDeviceCredentialBaseFragment"
+
 .field public static final TITLE_TEXT:Ljava/lang/String; = "com.android.settings.ConfirmCredentials.title"
 
 .field protected static final USER_TYPE_MANAGED_PROFILE:I = 0x2
@@ -164,7 +166,7 @@
 
     if-ne p1, v0, :cond_0
 
-    const v0, 0x7f120938
+    const v0, 0x7f120937
 
     return v0
 
@@ -190,12 +192,12 @@
     throw v0
 
     :cond_1
-    const v0, 0x7f120937
+    const v0, 0x7f120936
 
     return v0
 
     :cond_2
-    const v0, 0x7f120935
+    const v0, 0x7f120934
 
     return v0
 .end method
@@ -308,7 +310,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0806b3
+    const v3, 0x7f0806b6
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -681,14 +683,6 @@
 
     if-eqz v0, :cond_0
 
-    invoke-virtual {v0}, Lcom/android/settings/biometrics/fingerprint/FingerprintUiHelper;->isListening()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    iget-object v0, p0, Lcom/android/settings/password/ConfirmDeviceCredentialBaseFragment;->mFingerprintHelper:Lcom/android/settings/biometrics/fingerprint/FingerprintUiHelper;
-
     invoke-virtual {v0}, Lcom/android/settings/biometrics/fingerprint/FingerprintUiHelper;->stopListening()V
 
     :cond_0
@@ -696,23 +690,20 @@
 .end method
 
 .method public onPause()V
-    .locals 1
+    .locals 2
 
     invoke-super {p0}, Lcom/android/settings/core/InstrumentedFragment;->onPause()V
 
-    iget-object v0, p0, Lcom/android/settings/password/ConfirmDeviceCredentialBaseFragment;->mFingerprintHelper:Lcom/android/settings/biometrics/fingerprint/FingerprintUiHelper;
+    const-string v0, "ConfirmDeviceCredentialBaseFragment"
 
-    invoke-virtual {v0}, Lcom/android/settings/biometrics/fingerprint/FingerprintUiHelper;->isListening()Z
+    const-string v1, "onPause stopListening"
 
-    move-result v0
-
-    if-eqz v0, :cond_0
+    invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     iget-object v0, p0, Lcom/android/settings/password/ConfirmDeviceCredentialBaseFragment;->mFingerprintHelper:Lcom/android/settings/biometrics/fingerprint/FingerprintUiHelper;
 
     invoke-virtual {v0}, Lcom/android/settings/biometrics/fingerprint/FingerprintUiHelper;->stopListening()V
 
-    :cond_0
     return-void
 .end method
 
@@ -912,6 +903,12 @@
 .method protected refreshLockScreen()V
     .locals 2
 
+    const-string v0, "ConfirmDeviceCredentialBaseFragment"
+
+    const-string v1, "refreshLockScreen"
+
+    invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
     invoke-virtual {p0}, Lcom/android/settings/password/ConfirmDeviceCredentialBaseFragment;->isFingerprintAllowed()Z
 
     move-result v0
@@ -927,17 +924,8 @@
     :cond_0
     iget-object v0, p0, Lcom/android/settings/password/ConfirmDeviceCredentialBaseFragment;->mFingerprintHelper:Lcom/android/settings/biometrics/fingerprint/FingerprintUiHelper;
 
-    invoke-virtual {v0}, Lcom/android/settings/biometrics/fingerprint/FingerprintUiHelper;->isListening()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_1
-
-    iget-object v0, p0, Lcom/android/settings/password/ConfirmDeviceCredentialBaseFragment;->mFingerprintHelper:Lcom/android/settings/biometrics/fingerprint/FingerprintUiHelper;
-
     invoke-virtual {v0}, Lcom/android/settings/biometrics/fingerprint/FingerprintUiHelper;->stopListening()V
 
-    :cond_1
     :goto_0
     iget-object v0, p0, Lcom/android/settings/password/ConfirmDeviceCredentialBaseFragment;->mLockPatternUtils:Lcom/android/internal/widget/LockPatternUtils;
 
@@ -1148,7 +1136,7 @@
 
     move-result-object v1
 
-    const v4, 0x7f120934
+    const v4, 0x7f120933
 
     const/4 v5, 0x2
 
@@ -1196,7 +1184,7 @@
 
     move-result-object v3
 
-    const v6, 0x7f12093a
+    const v6, 0x7f120939
 
     invoke-virtual {v3, v6}, Landroidx/fragment/app/FragmentActivity;->getString(I)Ljava/lang/String;
 
@@ -1219,7 +1207,7 @@
 
     const/4 v6, 0x0
 
-    const v7, 0x7f120936
+    const v7, 0x7f120935
 
     invoke-static {v4, v6, v2, v7, v3}, Lcom/android/settings/password/ConfirmDeviceCredentialBaseFragment$LastTryDialog;->show(Landroidx/fragment/app/FragmentManager;Ljava/lang/String;IIZ)Z
 

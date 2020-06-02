@@ -2447,6 +2447,7 @@ Você poderá alterar essa opção mais tarde em \"Configurar\" > \"Apps e notif
 No momento você está conectado às seguintes contas:
 "</string>
     <string name="master_clear_button_text">Limpar todos os dados</string>
+    <string name="master_clear_confirm_summary">Todo o conteúdo no armazenamento interno também será elimindo, incluindo música, fotografias, vídeos e outros dados pessoais. Confirmar a eliminação?</string>
     <string name="master_clear_confirm_title">Limpar todos os dados?</string>
     <string name="master_clear_desc">Essa ação limpará todos os dados do <b>armazenamento interno</b>" do seu smartphone, incluindo:
 
@@ -2925,7 +2926,7 @@ Isso também autoriza o app a ativar ou desativar o modo \"Não perturbe\" e alt
     <string name="oneplus_auto_activate">Ativar automaticamente</string>
     <string name="oneplus_auto_answer_via_bluetooth_summary">A chamada recebida será atendida automaticamente quando ligado a um dispositivo de áudio Bluetooth</string>
     <string name="oneplus_auto_answer_via_bluetooth_title">Atender inteligente para Bluetooth</string>
-    <string name="oneplus_auto_check_pin_length">Confirmar o PIN sem tocar em \"✓\"</string>
+    <string name="oneplus_auto_check_pin_length">Desbloquear automaticamente o ecrã de desbloquieo após a introdução do PIN</string>
     <string name="oneplus_auto_disconect_the_ap">O ponto de acesso irá desligar-se após 5 minutos sem ligações de dispositivos.</string>
     <string name="oneplus_auto_open_app_none">Nenhum</string>
     <string name="oneplus_auto_open_app_other_applications">OUTRAS APLICAÇÕES</string>
@@ -3081,6 +3082,9 @@ bateria desliga-se automaticamente quando o dispositivo está a carregar."</stri
 2.Num único processo de configuração, introduza a informação da impressão digital de um dedo apenas"</string>
     <string name="oneplus_enroll_fingerprint_tips_title">Indicação de configuração de impressão digital</string>
     <string name="oneplus_enter_your_fingerprint">· Registar a sua impressão digital</string>
+    <string name="oneplus_erase_system_data">APAGAR DADOS DO SISTEMA</string>
+    <string name="oneplus_erase_system_data_summary">Os dados do sistema, incluindo informações de conta, contactos e dados de aplicações, serão eliminados. Não pode reverter esta ação.</string>
+    <string name="oneplus_erase_system_data_title">Apagar os dados do sistema?</string>
     <string name="oneplus_esportmode_introduction_summary">Para ativar o modo de E-Sports, toque no comutador no painel do modo de Jogo.</string>
     <string name="oneplus_experience_improvement_programs">Programas de melhoramento da experiência</string>
     <string name="oneplus_face_auto_unlock_while_screen_on_sumary">Desbloquear o telefone com o seu rosto logo que o ecrã se liga, sem deslizar primeiro.</string>
@@ -3145,7 +3149,7 @@ Aviso: o Desbloqueio facial é menos seguro que utilizar a impressão digital ou
     <string name="oneplus_fnatic_mode_disturb_introduction_summary">Bloquear todas as notificações e chamadas (exceto a notificação de bateria baixa, de alarme e do temporizador). As chamadas perdidas não poderão ser guardadas no histórico de chamadas.</string>
     <string name="oneplus_fnatic_mode_disturb_introduction_title">DND avançado</string>
     <string name="oneplus_fnatic_mode_enable_introduction_title">O Modo de jogo deve ser primeiro ativado para utilizar o modo Fnatic</string>
-    <string name="oneplus_fnatic_mode_network_introduction_dual4g_summary">A intensidade de sinal do cartão SIM principal é prioritizada para minimizar as interferências de jogo com baixa latência. Como resultado, o cartão SIM secundário será desativado e as chamadas ou mensagens não serão recebidos.</string>
+    <string name="oneplus_fnatic_mode_network_introduction_dual4g_summary">A intensidade de sinal do cartão SIM principal é prioritizada para minimizar as interferências de jogo com baixa latência. Como resultado, o cartão SIM secundário será desativado e as chamadas ou mensagens não serão recebidas.</string>
     <string name="oneplus_fnatic_mode_network_introduction_summary">Melhora a estabilidade da ligação à Internet</string>
     <string name="oneplus_fnatic_mode_network_introduction_title">Melhoramento de rede</string>
     <string name="oneplus_fnatic_mode_summary">Faça um super carregamento à sua experiência de jogo</string>
@@ -3577,7 +3581,7 @@ Nota: a sua impressão digital poderá ser menos segura que um padrão forte ou 
     <string name="oneplus_search_keyword_swap_navkeys">permutar os botões</string>
     <string name="oneplus_search_keyword_switch">transferir, migração de dados</string>
     <string name="oneplus_search_keyword_theme_settings">PERSONALIZAÇÃO DO ECRÃ DE BLOQUEIO, Papéis de parede, Estilo do relógio, Animação da impressão digital, Horizon Light, PERSONALIZAÇÃO DO SISTEMA, Cor de Destaque, Formato, Tipo de letra, Tom, Conjunto de ícones, Luz de iluminação, Escuro matizado, Tonalidades vibrantes</string>
-    <string name="oneplus_search_keyword_theme_settings_mcl">PERSONALIZAÇÃO DO ECRÃ DE BLOQUEIO, Papéis de parede, Estilo do relógio, Animação da impressão digital, Horizon Light, PERSONALIZAÇÃO DO SISTEMA, Acento de cor, Formato, Tipo de letra, Tom, Conjunto de ícones, Luz de iluminação, Escuro matizado, Tonalidades vibrantes, McLaren</string>
+    <string name="oneplus_search_keyword_theme_settings_mcl">PERSONALIZAÇÃO DO ECRÃ DE BLOQUEIO, Papéis de parede, Estilo do relógio, Animação da impressão digital, Horizon Light, PERSONALIZAÇÃO DO SISTEMA, Cor de Destaque, Formato, Tipo de letra, Tom, Conjunto de ícones, Luz de iluminação, Escuro matizado, Tonalidades vibrantes, McLaren</string>
     <string name="oneplus_search_keyword_three_screenshots">captura de ecrã</string>
     <string name="oneplus_search_keyword_timer_boot" />
     <string name="oneplus_search_keyword_user_experience">notificações, experiência, programa, melhoramento</string>
@@ -3757,7 +3761,7 @@ Nota: o Desbloqueio com o rosto pode ser menos seguro do que a impressão digita
     <string name="oneplus_vibration_settings_soc_tri_state">Vibração</string>
     <string name="oneplus_vibration_settings_soc_tri_state_summary">As chamadas e notificações serão silenciadas e definidas para vibrar, exceto os alarmes</string>
     <string name="oneplus_vibration_summary">O alarme soará sempre</string>
-    <string name="oneplus_video_enhancer">Melhoramento de vídeo</string>
+    <string name="oneplus_video_enhancer">Efeito de cor vibrante</string>
     <string name="oneplus_video_enhancer_footer">Melhora as cores durante a reprodução de vídeos</string>
     <string name="oneplus_video_enhancer_summary">Melhora as cores durante a reprodução de vídeos</string>
     <string name="oneplus_volume_keys_adjust">Utilize os botões do volume para ajustar</string>

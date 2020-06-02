@@ -967,7 +967,7 @@
     <string name="bugreport_in_power">Отчет об ошибке</string>
     <string name="bugreport_in_power_summary">Показывать в меню кнопки питания пункт для отправки отчета об ошибке</string>
     <string name="build_number">Номер сборки</string>
-    <string name="built_in_app_updates_summary">Разрешает компании OnePlus проверять наличие обновлений встроенных приложений и отправлять их вам с целью улучшения стабильности работы приложений</string>
+    <string name="built_in_app_updates_summary">Разрешить OnePlus проверять наличие обновлений встроенных приложений и отправлять их вам с целью улучшения стабильности работы приложений</string>
     <string name="built_in_app_updates_title">Обновления встроенных приложений</string>
     <string name="builtin_keyboard_settings_summary">Настройки физической клавиатуры</string>
     <string name="builtin_keyboard_settings_title">Физическая клавиатура</string>
@@ -1100,8 +1100,8 @@
     <string name="color_picker_accent_color_message">Выбрать цвет подсветки</string>
     <string name="color_picker_default">По умолчанию</string>
     <string name="color_picker_led_color_message">Выбрать цвет LED</string>
-    <string name="color_picker_message_default">Выберите свой любимый цвет.</string>
-    <string name="color_picker_unknown_label">Неизвестно</string>
+    <string name="color_picker_message_default">Выберите предпочитаемый цвет.</string>
+    <string name="color_picker_unknown_label">Неизвестный</string>
     <string name="color_purple">Фиолетовый</string>
     <string name="color_red">Красный</string>
     <string name="color_temperature">Холодные оттенки</string>
@@ -1600,7 +1600,7 @@
     <string name="double_twist_for_camera_suggestion_title">Быстрое включение фронтальной камеры</string>
     <string name="doze_always_on_summary">Показывать время, значки уведомлений и другую информацию (батарея разряжается быстрее)</string>
     <string name="doze_always_on_title">Экран всегда включен</string>
-    <string name="doze_summary">Будить экран при получении оповещений</string>
+    <string name="doze_summary">Будить экран при получении оповещений.</string>
     <string name="doze_title">Черно-белый экран</string>
     <string name="draw_overlay">Поверх других приложений</string>
     <string name="dsds_dialog_cancel">Отмена</string>
@@ -2447,6 +2447,7 @@
 Аккаунты на этом устройстве:
 "</string>
     <string name="master_clear_button_text">Удалить все данные</string>
+    <string name="master_clear_confirm_summary">Все содержимое встроенной памяти будет также удалено, включая музыку, фотографии, видео и другие личные данные. Подтвердить удаление?</string>
     <string name="master_clear_confirm_title">Удалить все данные?</string>
     <string name="master_clear_desc">Будут удалены все данные из <b>внутренней памяти</b>" телефона, в том числе:
 
@@ -2925,7 +2926,7 @@
     <string name="oneplus_auto_activate">Включать автоматически</string>
     <string name="oneplus_auto_answer_via_bluetooth_summary">Входящий вызов будет автоматически принят при подключении к звуковому устройству Bluetooth</string>
     <string name="oneplus_auto_answer_via_bluetooth_title">Интеллектуальный ответ для Bluetooth</string>
-    <string name="oneplus_auto_check_pin_length">Подтвердите PIN-код без нажатия \"✓\"</string>
+    <string name="oneplus_auto_check_pin_length">Автоматически разблокировать экран после ввода PIN-кода</string>
     <string name="oneplus_auto_disconect_the_ap">Точка доступа будет автоматически отключена через 5 минут, если нет подключенных устройств.</string>
     <string name="oneplus_auto_open_app_none">Нет</string>
     <string name="oneplus_auto_open_app_other_applications">ДРУГИЕ ПРИЛОЖЕНИЯ</string>
@@ -3079,6 +3080,9 @@
 2.При каждом процессе настройки вводите только информацию об одном отпечатке пальца"</string>
     <string name="oneplus_enroll_fingerprint_tips_title">Подсказка для настройки отпечатка пальца</string>
     <string name="oneplus_enter_your_fingerprint">· Зарегистрировать отпечаток пальца</string>
+    <string name="oneplus_erase_system_data">СТЕРЕТЬ СИСТЕМНЫЕ ДАННЫЕ</string>
+    <string name="oneplus_erase_system_data_summary">Системные данные, включая информацию учетной записи, контакты и данные приложений, будут удалены. Это действие невозможно отменить.</string>
+    <string name="oneplus_erase_system_data_title">Стереть системные данные?</string>
     <string name="oneplus_esportmode_introduction_summary">Активируйте Киберспортивный режим, включив переключатель в панели Игрового режима.</string>
     <string name="oneplus_experience_improvement_programs">Программы улучшения впечатлений от использования</string>
     <string name="oneplus_face_auto_unlock_while_screen_on_sumary">Разблокировать телефон распознаванием вашего лица сразу после включения экрана без проведения по экрану.</string>
@@ -3118,7 +3122,7 @@
     <string name="oneplus_fingerprint_acquired_too_similar">Обнаружены данные похожего отпечатка пальца. Слегка переместите палец, чтобы зарегистрировать данные различных частей отпечатка.</string>
     <string name="oneplus_fingerprint_animation_effect_title">Эффект анимации отпечатка пальца</string>
     <string name="oneplus_fingerprint_delete_confirm_message">Вы хотите это удалить?</string>
-    <string name="oneplus_fingerprint_detail">Подробности</string>
+    <string name="oneplus_fingerprint_detail">Реквизиты</string>
     <string name="oneplus_fingerprint_enrol_completed">Отпечаток пальца сохранен</string>
     <string name="oneplus_fingerprint_enroll_summary">Нажмите и расположите палец так, чтобы он максимально закрывал область распознавания отпечатка пальца. Поднимите палец после того, как почувствуете вибрацию.</string>
     <string name="oneplus_fingerprint_findsendor_summary">Когда в нижней части экрана появится рисунок отпечатка пальца, просто прижмите палец к области идентификации отпечатка, чтобы воспользоваться функцией отпечатков пальцев.</string>
@@ -3173,7 +3177,7 @@
     <string name="oneplus_fullscreen_gesture_guide_will_enable">Будут включены жесты навигации</string>
     <string name="oneplus_fullscreen_home_guide_summary">Проведите пальцем вверх от нижнего края экрана</string>
     <string name="oneplus_fullscreen_home_guide_summary_deprecated">Проведите пальцем вверх от центра нижнего края экрана</string>
-    <string name="oneplus_fullscreen_home_guide_title">Главная</string>
+    <string name="oneplus_fullscreen_home_guide_title">Домой</string>
     <string name="oneplus_fullscreen_landscape_guide_summary">Жесты навигации все еще можно использовать, проводя пальцем от нижнего края экрана. Чтобы вернуться назад, проведите пальцем от левого или правого края экрана.</string>
     <string name="oneplus_fullscreen_landscape_guide_summary_deprecated">Так же, как и портретная ориентация, жесты навигации работают в нижней части устройства</string>
     <string name="oneplus_fullscreen_landscape_guide_title">Альбомная ориентация</string>
@@ -3424,7 +3428,7 @@
     <string name="oneplus_preference_settings_behavior">Предпочтения</string>
     <string name="oneplus_preference_settings_custom_time">Автопереключение</string>
     <string name="oneplus_preference_settings_manual_open">Статус</string>
-    <string name="oneplus_preference_settings_turn_off_time">До</string>
+    <string name="oneplus_preference_settings_turn_off_time">Кому</string>
     <string name="oneplus_preference_settings_turn_on">Включить функцию \"Не беспокоить\"</string>
     <string name="oneplus_preference_settings_turn_on_time">С</string>
     <string name="oneplus_prior_to_use_you_need_to">Перед использованием вам необходимо:</string>
@@ -3498,14 +3502,14 @@
     <string name="oneplus_receive_notifications_summary">Желаю получать официальные новости от OnePlus, информацию о продуктах, анкеты для опросов и рекомендуемые покупки/информацию о купонах</string>
     <string name="oneplus_recognized_bluetooth_car_kits">Распознан Bluetooth автомобиля</string>
     <string name="oneplus_recognized_bluetooth_car_kits_no_devices">Bluetooth автомобиля отсутсвует. Ниже вы можете добавить новые устройства вручную</string>
-    <string name="oneplus_recommended_opening">Рекомендуется</string>
+    <string name="oneplus_recommended_opening">Рекомендуемые</string>
     <string name="oneplus_reenroll_fingerprint_tips">Пожалуйста, повторно введите ваш отпечаток пальца после замены защитной пленки на мобильном телефоне, чтобы обеспечить точность распознавания</string>
     <string name="oneplus_regulatory_information">Проверка</string>
     <string name="oneplus_remove">УДАЛИТЬ</string>
     <string name="oneplus_rename_fingerprint_list">Переименовать отпечаток пальца</string>
     <string name="oneplus_reset_all_data">Сбросить все данные</string>
     <string name="oneplus_reset_network">Сброс настроек сети. Пожалуйста, подождите...</string>
-    <string name="oneplus_ring_pattern">Звонок</string>
+    <string name="oneplus_ring_pattern">Со звуком</string>
     <string name="oneplus_ring_pattern_soc_tri_state_summary">Звонки и уведомления будут звучать</string>
     <string name="oneplus_ring_pattern_summary">Звонки и уведомления будут звучать</string>
     <string name="oneplus_ringtone_and_vibrate">Мелодия звонка и вибрация</string>
@@ -3575,7 +3579,7 @@
     <string name="oneplus_search_keyword_swap_navkeys">поменять кнопки местами</string>
     <string name="oneplus_search_keyword_switch">передача,перенос данных</string>
     <string name="oneplus_search_keyword_theme_settings">ПЕРСОНАЛИЗАЦИЯ ЭКРАНА БЛОКИРОВКИ, Обои, Стиль часов, Анимация отпечатка пальца, Horizon light, ПЕРСОНАЛИЗАЦИЯ СИСТЕМЫ, Цвет подсветки, Форма, Шрифт, Оттенок, Пакет значков, Иллюминация, Темная с нюансами, Яркие оттенки</string>
-    <string name="oneplus_search_keyword_theme_settings_mcl">ПЕРСОНАЛИЗАЦИЯ ЭКРАНА БЛОКИРОВКИ, Обои, Стиль часов, Анимация отпечатка пальца, Horizon Light, ПЕРСОНАЛИЗАЦИЯ СИСТЕМЫ, Цвет подсветки, Форма, Шрифт, Оттенок, Пакет значков, Иллюминация, Темная с нюансами, Яркие оттенки, McLaren</string>
+    <string name="oneplus_search_keyword_theme_settings_mcl">ПЕРСОНАЛИЗАЦИЯ ЭКРАНА БЛОКИРОВКИ, Обои, Стиль часов, Анимация отпечатка пальца, Horizon light, ПЕРСОНАЛИЗАЦИЯ СИСТЕМЫ, Цвет подсветки, Форма, Шрифт, Оттенок, Пакет значков, Иллюминация, Темная с нюансами, Яркие оттенки, McLaren</string>
     <string name="oneplus_search_keyword_three_screenshots">скриншот</string>
     <string name="oneplus_search_keyword_timer_boot" />
     <string name="oneplus_search_keyword_user_experience">уведомления,опыт,программа,улучшение</string>
@@ -3731,8 +3735,8 @@
     <string name="oneplus_top_level_sound_summary">Не беспокоить, режим наушников, мелодия звонка</string>
     <string name="oneplus_top_level_system_summary">Язык и клавиатура, время, сброс, обновления системы</string>
     <string name="oneplus_touch_vibrate">Вибрация при касании</string>
-    <string name="oneplus_turn_off_time">До</string>
-    <string name="oneplus_turn_on_feature_cancel">ОТМЕНИТЬ</string>
+    <string name="oneplus_turn_off_time">Кому</string>
+    <string name="oneplus_turn_on_feature_cancel">ОТМЕНА</string>
     <string name="oneplus_turn_on_feature_ok">ВКЛЮЧИТЬ</string>
     <string name="oneplus_turn_on_time">С</string>
     <string name="oneplus_uninstatll_multi_app_msg">При удалении параллельного приложения все его данные будут потеряны. Удалить?</string>
@@ -3755,9 +3759,9 @@
     <string name="oneplus_vibration_settings_soc_tri_state">Вибрация</string>
     <string name="oneplus_vibration_settings_soc_tri_state_summary">Вызовы и уведомления, кроме сигналов будильника, будут без звука и в режиме вибрации</string>
     <string name="oneplus_vibration_summary">Сигнал будильника будет всегда со звуком</string>
-    <string name="oneplus_video_enhancer">Оптимизатор видео</string>
-    <string name="oneplus_video_enhancer_footer">Улучшение цветопередачи во время воспроизведения видео</string>
-    <string name="oneplus_video_enhancer_summary">Улучшение цветопередачи во время воспроизведения видео</string>
+    <string name="oneplus_video_enhancer">Эффект ярких цветов</string>
+    <string name="oneplus_video_enhancer_footer">Улучшает цветопередачу во время показа видео</string>
+    <string name="oneplus_video_enhancer_summary">Улучшает цветопередачу во время показа видео</string>
     <string name="oneplus_volume_keys_adjust">Используйте кнопки громкости для регулировки</string>
     <string name="oneplus_volume_keys_adjust_media">Громкость медиафайлов</string>
     <string name="oneplus_volume_keys_adjust_ringtones">Громкость мелодии</string>
@@ -3851,7 +3855,7 @@
     <string name="op_security_settings_back_fingerprint_enroll_find_sensor_message">Датчик находится на задней панели телефона</string>
     <string name="op_security_settings_fingerprint_enroll_find_sensor_message">Найдите датчик отпечатка пальца на кнопке \"Домой\"</string>
     <string name="op_security_settings_title">Безопасность и отпечаток пальца</string>
-    <string name="op_sim_card_with_slotid">SIM-карта  %1$s</string>
+    <string name="op_sim_card_with_slotid">SIM  %1$s</string>
     <string name="op_sim_cord">SIM-карта и сеть</string>
     <string name="op_sim_cord_summary">SIM-карта по умолчанию, использование полосы пропускания</string>
     <string name="op_sim_name_with_prefix">  (%1$s)</string>
@@ -4667,7 +4671,7 @@ UT-интерфейс: %5$s"</string>
     <string name="sim_enabler_in_call">ОШИБКА, в процессе вызова!</string>
     <string name="sim_enabler_need_disable_sim">Дезактивация SIM-карты, Вы уверены?</string>
     <string name="sim_enabler_need_enable_sim">Активация SIM-карты, Вы уверены?</string>
-    <string name="sim_enabler_need_switch_data_service">Будет деактивировано и переключено на SIM-карту %1$s для передачи данных. Вы уверены, что хотите продолжить?</string>
+    <string name="sim_enabler_need_switch_data_service">Деактивирует и переключит на SIM-карту %1$s для передачи данных. Вы уверены, что хотите продолжить?</string>
     <string name="sim_enabler_not_allow_disable_data_sim">Отключение SIM-карты с данными не разрешается</string>
     <string name="sim_enabler_summary">SIM-карта %1$s</string>
     <string name="sim_enabler_summary_new_marshmallow">" %1$s"</string>

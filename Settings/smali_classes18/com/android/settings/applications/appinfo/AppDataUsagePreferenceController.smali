@@ -105,7 +105,7 @@
 
     iget-object v4, p0, Lcom/android/settings/applications/appinfo/AppDataUsagePreferenceController;->mContext:Landroid/content/Context;
 
-    const v5, 0x7f120b0b
+    const v5, 0x7f120b0f
 
     invoke-virtual {v4, v5}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -116,7 +116,7 @@
     :cond_2
     iget-object v4, p0, Lcom/android/settings/applications/appinfo/AppDataUsagePreferenceController;->mContext:Landroid/content/Context;
 
-    const v5, 0x7f120513
+    const v5, 0x7f120512
 
     const/4 v6, 0x2
 
@@ -153,7 +153,7 @@
     :cond_3
     iget-object v0, p0, Lcom/android/settings/applications/appinfo/AppDataUsagePreferenceController;->mContext:Landroid/content/Context;
 
-    const v1, 0x7f120452
+    const v1, 0x7f120450
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

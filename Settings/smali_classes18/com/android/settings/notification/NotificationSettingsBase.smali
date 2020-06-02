@@ -275,7 +275,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0802d3
+    const v1, 0x7f0802d4
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -1595,7 +1595,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f120b32
+    const v3, 0x7f120b36
 
     invoke-virtual {v2, v3}, Lcom/android/settings/core/SubSettingLauncher;->setTitleRes(I)Lcom/android/settings/core/SubSettingLauncher;
 

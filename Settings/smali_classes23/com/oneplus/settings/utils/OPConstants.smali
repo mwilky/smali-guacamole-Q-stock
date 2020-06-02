@@ -284,6 +284,8 @@
 
 .field public static final PACKAGENAME_OP_PUSH:Ljava/lang/String; = "net.oneplus.push"
 
+.field public static final PACKAGENAME_TMO_ADAPT:Ljava/lang/String; = "com.tmobile.pr.adapt"
+
 .field public static final PACKAGENAME_WELLBEING:Ljava/lang/String; = "com.google.android.apps.wellbeing"
 
 .field public static final PACKAGE_ALIPAY:Ljava/lang/String; = "com.eg.android.AlipayGphone"

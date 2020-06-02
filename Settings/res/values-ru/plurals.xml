@@ -325,12 +325,12 @@
         <item quantity="many">%d активных приложений</item>
     </plurals>
     <plurals name="oneplus_applock_wrong_pattern_warning">
-        <item quantity="other">У вас есть еще %1$d попытка</item>
-        <item quantity="one">У вас есть еще %1$d попытка</item>
+        <item quantity="other">У вас еще осталось %1$d попыток</item>
+        <item quantity="one">У вас еще осталась %1$d попытка</item>
     </plurals>
     <plurals name="oneplus_lockpattern_too_many_failed_confirmation_attempts_footer">
-        <item quantity="other">Попробуйте снова через %d секунду.</item>
-        <item quantity="one">Попробуйте снова через %d секунду.</item>
+        <item quantity="other">Повторите попытку через %d секунд.</item>
+        <item quantity="one">Повторите попытку через %d секунду.</item>
     </plurals>
     <plurals name="permission_bar_chart_label">
         <item quantity="other">%s приложения</item>

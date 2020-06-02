@@ -25,7 +25,7 @@
     <string name="aod_clock_mcl">McLaren</string>
     <string name="aod_clock_minimalism">किमानजीवी</string>
     <string name="aod_clock_none">कोणताही नाही</string>
-    <string name="aod_clock_select_style_text">घड्याळाची शैली निवडा</string>
+    <string name="aod_clock_select_style_text">घड्याळाची स्टाइल निवडा</string>
     <string name="aod_horizon_light_effect_1">निळा</string>
     <string name="aod_horizon_light_effect_2">लाल</string>
     <string name="aod_horizon_light_effect_3">जांभळा</string>
@@ -191,6 +191,7 @@
     <string name="manage_device_administrators">प्रशासक साधने व्यवस्थापित करा</string>
     <string name="manage_fingerprints_dialog">बोटाचा ठसा अनलॉक करणे आता सक्रिय केले आहे. तुम्ही तुमच्या बोटांचे ठसे व्यवस्थापित करू इच्छिता का?</string>
     <string name="manage_users">वापरकर्ते व्यवस्थापित करा</string>
+    <string name="master_clear_confirm_summary">इंटरनल स्टोरेजमधील सर्व सामग्रीही मिटविली जाईल, ज्यात संगीत, छायाचित्रे, व्हिडीयोज आणि ईतर वैयक्तिक डेटा असु शकतो. नक्की मिटवायचे?</string>
     <string name="memory_capacity_title">रॅम</string>
     <string name="multi_app_label_badge">समांतर %1$s</string>
     <string name="music_application_title">संगीत अॅप</string>
@@ -250,7 +251,7 @@
     <string name="oneplus_auto_activate">आपोआप चालू करा</string>
     <string name="oneplus_auto_answer_via_bluetooth_summary">ब्‍लूटूथ ऑडिओ साधनाशी कनेक्‍ट असताना येणार्‍या कॉलचे स्‍वयंचलितपणे उत्‍तर दिले जाईल</string>
     <string name="oneplus_auto_answer_via_bluetooth_title">ब्लूटूथसाठी हुशार उत्तर</string>
-    <string name="oneplus_auto_check_pin_length">\"✓\" ला टॅप न करता पिनची पुष्टी करा</string>
+    <string name="oneplus_auto_check_pin_length">PIN प्रविष्ट केल्यानंतर स्क्रीन स्वयंचलितपणे अनलॉक करा</string>
     <string name="oneplus_auto_disconect_the_ap">कोणतेही डिव्‍हाइस कनेक्‍ट नसल्‍यास हॉटस्‍पाॅॅट स्‍वयंचलितपणे 5 मिनिटांमध्‍ये बंद होईल.</string>
     <string name="oneplus_auto_open_app_none">कोणताही नाही</string>
     <string name="oneplus_auto_open_app_other_applications">अन्य अनुप्रयोग</string>
@@ -373,7 +374,7 @@
     <string name="oneplus_donot_silence_or_block_summary">सर्व प्रकारच्या सूचनांना परवानगी द्या</string>
     <string name="oneplus_double_tap_power_gesture">च्‍यासाठी पॉवर बटणावर दोनदा-क्लिक करा</string>
     <string name="oneplus_double_tap_power_gesture_app">फंक्‍शन निवडा</string>
-    <string name="oneplus_double_tap_power_gesture_camera">कॅॅॅॅॅॅमेरा</string>
+    <string name="oneplus_double_tap_power_gesture_camera">कॅमेरा</string>
     <string name="oneplus_double_tap_power_gesture_wallet">कार्ड्स स्‍वाइप करा (वॉलेट)</string>
     <string name="oneplus_doze_summary_801">स्टँडबाय स्क्रीनवर घड्याळ आणि अन्य माहिती प्रदर्शित करा</string>
     <string name="oneplus_doze_title">सभोवतालचे दृश्य</string>
@@ -404,6 +405,9 @@
 2.एकाच सेटअप प्रक्रियेमध्ये, केवळ एका बोटाची फिंगरप्रिंट माहिती प्रविष्ट करा"</string>
     <string name="oneplus_enroll_fingerprint_tips_title">फिंगरप्रिंट सेटअप सूचना</string>
     <string name="oneplus_enter_your_fingerprint">· आपल्या बोटाच्या ठस्याची नोंदणी करा</string>
+    <string name="oneplus_erase_system_data">सिस्टम डेटा मिटवा</string>
+    <string name="oneplus_erase_system_data_summary">खाते माहिती, संपर्क आणि अॅप डेटासह सिस्टम डेटा मिटविला जाईल. ही प्रक्रिया अनडू करता येत नाही.</string>
+    <string name="oneplus_erase_system_data_title">सिस्टम डेटा मिटवायचा?</string>
     <string name="oneplus_esportmode_introduction_summary">ईस्पोर्ट्स मोड सक्रिय करण्यासाठी, गेमिंग मोड पॅनेलवर टॉगल टॅप करा.</string>
     <string name="oneplus_experience_improvement_programs">अनुभव सुधारणा कार्यक्रम</string>
     <string name="oneplus_face_auto_unlock_while_screen_on_sumary">प्रथम स्वाइपिंग न करता स्क्रीन चालू झाल्यावर लगेचच आपल्या चेहर्‍याने आपला फोन अनलॉक करा.</string>
@@ -561,14 +565,14 @@
     <string name="oneplus_hand_up_proximity_title">डिसप्ले वर उचला</string>
     <string name="oneplus_hand_up_to_show">दर्शवण्यासाठी आपला फोन उचला</string>
     <string name="oneplus_haptic_feedback_no_app">कोणतेही समर्थित गेम्स स्थापित नाहीत</string>
-    <string name="oneplus_haptic_feedback_no_app_tip">आपण PUBG Mobile आणि Asphalt 9 स्थापित करू शकता</string>
+    <string name="oneplus_haptic_feedback_no_app_tip">तुम्ही PUBG Mobile आणि Asphalt 9 स्थापित करू शकता</string>
     <string name="oneplus_haptic_feedback_summary">समर्थित गेम्ससाठी उत्तम हॅप्टीक अभिप्राय प्रदान करा</string>
     <string name="oneplus_haptic_feedback_support">समर्थित गेम्स</string>
     <string name="oneplus_haptic_feedback_tips">विशिष्ट गेम दृश्यांसाठी हॅप्टीक अभिप्राय प्रदान करा，केवळ समर्थित गेम्सवर लागू</string>
     <string name="oneplus_haptic_feedback_title">हॅप्टीक अभिप्रायामध्ये सुधारणा</string>
     <string name="oneplus_hardware_keys_action_split_screen">स्प्लिट स्क्रीन उघडा/बंद करा</string>
     <string name="oneplus_health_safety_information">आरोग्‍य &amp; सुरक्षा माहिती</string>
-    <string name="oneplus_hearing_aid">श्रवण सहाय्यकाची सुसंगतता</string>
+    <string name="oneplus_hearing_aid">श्रवण साहाय्यकाची सुसंगतता</string>
     <string name="oneplus_hide_navigation_bar">नॅव्हिगेशन बार लपवा</string>
     <string name="oneplus_hide_navkeys">नॅविगेशन बार लपवा</string>
     <string name="oneplus_hide_navkeys_summary">नॅव्हिगेशन बार लपविण्यासाठी किंवा दर्शविण्यासाठी एक बटण जोडा</string>
@@ -585,7 +589,7 @@
     <string name="oneplus_instrucitons">सूचना</string>
     <string name="oneplus_intelligently_select_best_wifi">हुशारीने सर्वोत्तम Wi‑Fi निवडा</string>
     <string name="oneplus_intelligently_select_best_wifi_summary">Wi‑Fi नेटवर्क्सची कनेक्टिव्हिटी आणि सिग्नल क्षमता शोधून आणि विश्लेषण करून हुशारीने सर्वोत्तम Wi‑Fi निवडा आणि कनेक्ट करा</string>
-    <string name="oneplus_intensely">तीव्र</string>
+    <string name="oneplus_intensely">मजबूत</string>
     <string name="oneplus_is_turn_on_feature">आपण हे वैशिष्ट्य चालू करू इच्छित असल्याची आपल्याला खात्री आहे का?</string>
     <string name="oneplus_is_turn_on_feature_summary">"हे सुरू केले जाते तेव्हा, खालील परिस्थिती कधीकधी कदाचित उद्भवू शकते:
 1.स्क्रीनच्या काही भागाचे प्रदर्शन असामान्य आहे
@@ -660,7 +664,7 @@
     <string name="oneplus_night_mode_open_tip">कृपया प्रथम रात्र मोड चालू करा</string>
     <string name="oneplus_night_mode_sensor_summary">सभोवतालच्या प्रकाशाच्या परिस्थितीनुसार, वातावरणाशी जुळण्यासाठी रात्र मोड स्वयंचलितपणे पडद्याच्या रंगाचे तापमान मोजेल. यामुळे थकवा आणि डोळ्यांवरील ताण कमी होईल आणि आपल्याला अधिक चांगली झोप येण्यास मदत होईल.</string>
     <string name="oneplus_night_mode_strong">सर्वाधिक उष्ण</string>
-    <string name="oneplus_night_mode_summary">नाइट मोड डोळ्यांवरील थकवा आणि ताण कमी करून स्क्रीनला ऊबदार रंगाची करेल. यामुळे आपल्याला अधिक चांगली झोप येण्यात मदत होऊ शकते. नियोजित वेळापत्रकाच्या आधारावर सक्रिय करण्याची शिफारस केली.</string>
+    <string name="oneplus_night_mode_summary">नाइट मोड डोळ्यांवरील थकवा आणि ताण कमी करून स्क्रीनला उबदार रंगाची करेल. यामुळे आपल्याला अधिक चांगली झोप येण्यात मदत होऊ शकते. नियोजित वेळापत्रकाच्या आधारावर सक्रिय करण्याची शिफारस केली.</string>
     <string name="oneplus_night_mode_summary_no_sensor">रात्र मोडमध्ये स्क्रीन प्रदर्शन अधिक आरामदायक असेल आणि दृश्य थकवा कमी करण्यात मदत करेल.</string>
     <string name="oneplus_night_mode_weak">दुर्बल</string>
     <string name="oneplus_no_applications">कोणतेही अॅप्‍स नाहीत</string>
@@ -783,18 +787,18 @@
     <string name="oneplus_quickpay_unlock_swtch_summary">फोन लॉक नसताना जलद पैसे देणे सुरू करण्यासाठी होम बटण दीर्घ दाबा</string>
     <string name="oneplus_quickpay_unlock_swtch_title">जलद पैसे देण्याचा स्क्रीन चालू</string>
     <string name="oneplus_quickpay_way_alipay_qrcode">अॅलीपे क्यूआर कोड</string>
-    <string name="oneplus_quickpay_way_alipay_scanning">अॅलीपे स्कॅनिंग</string>
+    <string name="oneplus_quickpay_way_alipay_scanning">अॅलीपे स्कॅन</string>
     <string name="oneplus_quickpay_way_paytm">पेटीएम</string>
     <string name="oneplus_quickpay_way_wecaht_qrcode">वीचॅट क्यूआर कोड</string>
-    <string name="oneplus_quickpay_way_wecaht_scanning">वीचॅट स्कॅनिंग</string>
+    <string name="oneplus_quickpay_way_wecaht_scanning">वीचॅट स्कॅन</string>
     <string name="oneplus_ramboost_description">आपण आपला फोन कसा वापरता हे जाणून घेऊन, आपल्या दैनिक वापराचे कार्यप्रदर्शन वाढवण्यासाठी RAM क्षमतेचा पूर्ण लाभ घेऊन, RAM बूस्ट आपण लॉन्च करू इच्छित अॅप्स आणि लोड होणाऱ्या डेटाचा अंदाज घेऊ शकतात.</string>
     <string name="oneplus_ramboost_switch_summary">आपल्या वापरानुसार RAM वापर वाढवा</string>
     <string name="oneplus_ramboost_switch_title">RAM बूस्ट सक्षम करा</string>
     <string name="oneplus_ramboost_title">RAM बूस्ट</string>
-    <string name="oneplus_read_mode_app_list">वाचन मोड अॅप यादी</string>
-    <string name="oneplus_reading_mode">वाचन मोड</string>
+    <string name="oneplus_read_mode_app_list">वाचणे स्वरूप अॅपची सूची</string>
+    <string name="oneplus_reading_mode">वाचणे स्वरूप</string>
     <string name="oneplus_reading_mode_activate_manual">हाताने सक्रिय करा</string>
-    <string name="oneplus_reading_mode_add_apps">वाचन मोडसाठी अॅप्‍स जोडा</string>
+    <string name="oneplus_reading_mode_add_apps">वाचणे स्वरूपासाठी अॅप्स जोडा</string>
     <string name="oneplus_reading_mode_ask">प्रत्येक वेळी विचारा</string>
     <string name="oneplus_reading_mode_auto_summary">जेव्हा ही अॅप्स उघडली जातील तेव्हा वाचन मोड आपोआप चालू होईल आणि ती बंद केल्यावर आपोआप बंद होईल</string>
     <string name="oneplus_reading_mode_available">कोणताही प्रभाव नाही</string>
@@ -809,7 +813,7 @@
     <string name="oneplus_reading_mode_summary">सभोवतालच्‍या प्रकाशाच्या स्थितींवर आधारित, वाचन मोड वातावरणाशी जुळवण्‍यासाठी मजकूर वाचनाकरिता अनुकूलित स्‍क्रीन रंग तापमान आणि कॅलिब्रेशन स्वयंचलितपणे समायोजित करेल, यामुळे वाचनाचा अनुभव सुधारू शकतो.</string>
     <string name="oneplus_reading_mode_summary_no_sensor">वाचन मोड स्क्रीन आणि मजकूराचे प्रदर्शन ऑप्टिमाइझ करतो, वाचण्याचा अनुभव ई-बुक वाचक म्हणून सुलभ बनवतो.</string>
     <string name="oneplus_reading_mode_tips">मोनो प्रभाव आपल्‍याला शब्‍दांमध्‍ये अधिक गुंतवून ठेवेल; क्रोमॅटिक प्रभावाने आपल्‍याला अधिक आरामदायी रंग वाचन अनुभव देते</string>
-    <string name="oneplus_reading_mode_turn_on">वाचन मोड चालू करा</string>
+    <string name="oneplus_reading_mode_turn_on">वाचणे स्वरूप चालू करा</string>
     <string name="oneplus_reading_mode_turn_on_chromatic">क्रोमॅटिक प्रभाव चालू करा</string>
     <string name="oneplus_reading_mode_turn_on_mono">मोनो प्रभाव चालू करा</string>
     <string name="oneplus_reading_mode_turn_on_tips">विशिष्‍ट अॅप्‍स स्‍वयंचलितपणे चालू केल्‍याखेरीज, आपण मॅन्‍युअली वाचन मोड चालू केल्यावर वरील नियमांचे अनुसरण केले जाईल</string>
@@ -837,7 +841,7 @@
     <string name="oneplus_screen">स्क्रीन</string>
     <string name="oneplus_screen_better_cold">थंड</string>
     <string name="oneplus_screen_better_nature">नॅचरल</string>
-    <string name="oneplus_screen_better_warm">ऊबदार</string>
+    <string name="oneplus_screen_better_warm">उबदार</string>
     <string name="oneplus_screen_color_mode_auto">जुळवून घेणार्‍या रंग प्रोफाइल्स</string>
     <string name="oneplus_screen_color_mode_default">प्रदर्शन-P3（डिफॉल्ट）</string>
     <string name="oneplus_screen_color_mode_defined">सानुकूल रंग</string>
@@ -895,7 +899,7 @@
     <string name="oneplus_search_keyword_swap_navkeys">स्वॅप बटन्स</string>
     <string name="oneplus_search_keyword_switch">स्थानांतरित करा, डेटा स्थलांतरण</string>
     <string name="oneplus_search_keyword_theme_settings">लॉक स्‍क्रीन सानुकूल करणे, वॉलपेपर्स, घड्याळ शैली, फिंगरप्रिंट अॅनिमेशन, Horizon light, सिस्‍टम सानूकल करणे, ऍक्‍सेंंट रंंग, आकार, फॉंट, टोन, आयकॉन पॅक, प्रकाशमान लाइट, कमी अंधार, तीव्र रंगछटा</string>
-    <string name="oneplus_search_keyword_theme_settings_mcl">लॉक स्क्रीन सानुकूलीकरण, वॉलपेपर्स, क्लॉक स्टाईल, फिंगरप्रिंट अॅनिमेशन, होराझन लाईट, सिस्टम कस्टमायझेशन, ऍक्‍सेंट रंग, आकार, फाँट, टोन, आयकॉन पॅक, इल्युमिनेटिंग लाईट, नाॅन्स्ड डार्क, व्हायब्रंट टिंटस, मॅकलॅरेन</string>
+    <string name="oneplus_search_keyword_theme_settings_mcl">लॉक स्‍क्रीन सानुकूलन, वॉलपेपर्स, घड्याळाची शैली, फिंगरप्रिंट अ‍ॅनिमेशन, ‍Horizon Light, प्रणाली सानुकूलन, असेंट रंग, आकार, फॉन्ट, टोन, आयकॉन पॅक, प्रकाशमय प्रकाश, अंधूक, दोलायमान ‍रंगछटा, McLaren</string>
     <string name="oneplus_search_keyword_three_screenshots">स्क्रीनशॉट</string>
     <string name="oneplus_search_keyword_timer_boot" />
     <string name="oneplus_search_keyword_user_experience">अधिसूचना,अनुभव,कार्यक्रम,सुधारणा</string>
@@ -981,7 +985,7 @@
     <string name="oneplus_system_settings_title">सिस्टम सेटिंग्ज</string>
     <string name="oneplus_system_stability_add">सिस्टीम स्थिरता सुधारणा प्रोग्राममध्ये सामील व्हा</string>
     <string name="oneplus_system_stability_summary">OnePlus ला सिस्‍टम लॉग निनावीपणे ऍक्‍सेस करण्‍याची अनुमती द्या. चूक झाल्‍यास, लॉग्‍जसह बग अहवाल सबमिट करण्‍यास अनुमती द्या. केवळ सिस्‍टम त्रुटी विश्‍लेषणात व स्थिरता सुधारणेत लॉग्‍ज वापरले जातील</string>
-    <string name="oneplus_system_stability_title">सिस्टीम स्थिरता कार्यक्रम</string>
+    <string name="oneplus_system_stability_title">सिस्टम स्थिरता कार्यक्रम</string>
     <string name="oneplus_system_vibrate">सिस्‍टम कंपन</string>
     <string name="oneplus_theme_accent_color">असेंट रंग</string>
     <string name="oneplus_theme_accent_color_customization">कस्‍टमायझेशन</string>
@@ -1067,7 +1071,7 @@
     <string name="oneplus_user_agreement">अंतिम वापरकर्ता लायसेंस करार</string>
     <string name="oneplus_user_enjoy_plan_title">वापरकर्ता अनुभव कार्यक्रमात सामील व्हा</string>
     <string name="oneplus_vibrate">कंप</string>
-    <string name="oneplus_vibrate_dynamic_mode">डायनॅमिक</string>
+    <string name="oneplus_vibrate_dynamic_mode">डायनामिक</string>
     <string name="oneplus_vibrate_intensity">कंप तीव्रता</string>
     <string name="oneplus_vibrate_on_touch_intensity">टॅप केल्यावर कंप</string>
     <string name="oneplus_vibrate_rhythm">कंंपन शैली</string>
@@ -1075,9 +1079,9 @@
     <string name="oneplus_vibration_settings_soc_tri_state">कंप</string>
     <string name="oneplus_vibration_settings_soc_tri_state_summary">अलार्म्स सोडल्यास, कॉल्स आणि सूचना शांत केल्या जातील आणि फक्त कंपनवर सेट केल्या जातील</string>
     <string name="oneplus_vibration_summary">गजर नेहमीच वाजतील</string>
-    <string name="oneplus_video_enhancer">व्हिडिओ एन्हांसर</string>
-    <string name="oneplus_video_enhancer_footer">व्हिडीयो चालवित असताना रंग एनहान्स करा</string>
-    <string name="oneplus_video_enhancer_summary">व्हिडीयो चालवित असताना रंग एनहान्स करा</string>
+    <string name="oneplus_video_enhancer">तीव्र रंग परिणाम</string>
+    <string name="oneplus_video_enhancer_footer">व्हिडिओ प्ले करत असताना रंग वाढवा</string>
+    <string name="oneplus_video_enhancer_summary">व्हिडिओ प्ले करत असताना रंग वाढवा</string>
     <string name="oneplus_volume_keys_adjust">अॅडजस्ट करण्यासाठी व्हॉल्यूम बटणे वापरा</string>
     <string name="oneplus_volume_keys_adjust_media">मीडियाचा आवाज</string>
     <string name="oneplus_volume_keys_adjust_ringtones">रिंगटोनचा आवाज</string>
@@ -1140,7 +1144,7 @@
     <string name="op_fragment">संक्षिप्‍त</string>
     <string name="op_gamespace">गेम स्‍पेस</string>
     <string name="op_high_power_app_manager">वीजेसाठी भुकेलेल्या अॅप्सची व्यवस्था करा</string>
-    <string name="op_light_mode_title">फिकट</string>
+    <string name="op_light_mode_title">हलका</string>
     <string name="op_linked_launch_summary">अॅप्स व्यवस्थापित करून पार्श्वभूमीवर सुरू करून जोडता येऊ शकतात</string>
     <string name="op_linked_launch_title">अॅप्स आपोआप सुरू</string>
     <string name="op_lockpassword_choose_your_password_header_for_face">फेस अनलॉकचा वापर करण्यासाठी, पासवर्ड सेट करा</string>
@@ -1170,7 +1174,7 @@
     <string name="op_security_settings_back_fingerprint_enroll_find_sensor_message">आपल्याला ते आपल्या फोनच्या मागील बाजूस सापडू शकेल</string>
     <string name="op_security_settings_fingerprint_enroll_find_sensor_message">होम बटणावर बोटाच्या ठस्याचा सेन्सर शोधा</string>
     <string name="op_security_settings_title">सुरक्षितता&amp; बोटाचा ठसा</string>
-    <string name="op_sim_card_with_slotid">सिम %1$s</string>
+    <string name="op_sim_card_with_slotid">SIM  %1$s</string>
     <string name="op_sim_cord">सिम &amp; नेटवर्क</string>
     <string name="op_sim_cord_summary">डिफॉल्ट SIM कार्ड, बँडविड्थचा वापर</string>
     <string name="op_sim_name_with_prefix">(%1$s)</string>

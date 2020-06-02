@@ -469,7 +469,7 @@
 
     const/4 v5, 0x0
 
-    const v6, 0x7f08046b
+    const v6, 0x7f08046c
 
     invoke-direct {v3, p0, v4, v6, v5}, Lcom/oneplus/settings/ui/OPCustomNotificationAnimVideoPreference$AnimEntity;-><init>(Lcom/oneplus/settings/ui/OPCustomNotificationAnimVideoPreference;Ljava/lang/String;II)V
 
@@ -485,7 +485,7 @@
 
     const/4 v7, 0x1
 
-    const v8, 0x7f08046f
+    const v8, 0x7f080470
 
     invoke-direct {v4, p0, v6, v8, v7}, Lcom/oneplus/settings/ui/OPCustomNotificationAnimVideoPreference$AnimEntity;-><init>(Lcom/oneplus/settings/ui/OPCustomNotificationAnimVideoPreference;Ljava/lang/String;II)V
 
@@ -501,7 +501,7 @@
 
     const/4 v9, 0x2
 
-    const v10, 0x7f08046c
+    const v10, 0x7f08046d
 
     invoke-direct {v6, p0, v8, v10, v9}, Lcom/oneplus/settings/ui/OPCustomNotificationAnimVideoPreference$AnimEntity;-><init>(Lcom/oneplus/settings/ui/OPCustomNotificationAnimVideoPreference;Ljava/lang/String;II)V
 
@@ -517,7 +517,7 @@
 
     const/4 v11, 0x3
 
-    const v12, 0x7f08046e
+    const v12, 0x7f08046f
 
     invoke-direct {v8, p0, v10, v12, v11}, Lcom/oneplus/settings/ui/OPCustomNotificationAnimVideoPreference$AnimEntity;-><init>(Lcom/oneplus/settings/ui/OPCustomNotificationAnimVideoPreference;Ljava/lang/String;II)V
 
@@ -535,7 +535,7 @@
 
     const/16 v12, 0xa
 
-    const v13, 0x7f08046d
+    const v13, 0x7f08046e
 
     invoke-direct {v8, p0, v10, v13, v12}, Lcom/oneplus/settings/ui/OPCustomNotificationAnimVideoPreference$AnimEntity;-><init>(Lcom/oneplus/settings/ui/OPCustomNotificationAnimVideoPreference;Ljava/lang/String;II)V
 
@@ -971,7 +971,7 @@
     return-void
 
     :cond_0
-    const v0, 0x7f0a0759
+    const v0, 0x7f0a075b
 
     invoke-virtual {p1, v0}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 
@@ -985,7 +985,7 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/ScrollView;->setOnTouchListener(Landroid/view/View$OnTouchListener;)V
 
-    const v1, 0x7f0a0758
+    const v1, 0x7f0a075a
 
     invoke-virtual {p1, v1}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 
@@ -1023,7 +1023,7 @@
     invoke-virtual {v2, v3}, Landroid/view/View;->setBackgroundColor(I)V
 
     :goto_0
-    const v3, 0x7f0a075e
+    const v3, 0x7f0a0760
 
     invoke-virtual {p1, v3}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 
@@ -1031,7 +1031,7 @@
 
     check-cast v3, Landroid/view/TextureView;
 
-    const v4, 0x7f0a075b
+    const v4, 0x7f0a075d
 
     invoke-virtual {p1, v4}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 
@@ -1039,7 +1039,7 @@
 
     check-cast v4, Landroid/widget/ImageView;
 
-    const v5, 0x7f0a075a
+    const v5, 0x7f0a075c
 
     invoke-virtual {p1, v5}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 
@@ -1047,7 +1047,7 @@
 
     check-cast v5, Landroid/widget/ImageView;
 
-    const v6, 0x7f0a0757
+    const v6, 0x7f0a0759
 
     invoke-virtual {p1, v6}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 
@@ -1165,7 +1165,7 @@
 
     check-cast v8, Landroid/widget/ImageView;
 
-    const v9, 0x7f080470
+    const v9, 0x7f080471
 
     invoke-virtual {v8, v9}, Landroid/widget/ImageView;->setBackgroundResource(I)V
 

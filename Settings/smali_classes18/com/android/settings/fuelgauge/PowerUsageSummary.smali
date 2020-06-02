@@ -192,7 +192,7 @@
 .method public getHelpResource()I
     .locals 1
 
-    const v0, 0x7f1207c4
+    const v0, 0x7f1207c3
 
     return v0
 .end method
@@ -702,7 +702,7 @@
 
     iget-object v0, p0, Lcom/android/settings/fuelgauge/PowerUsageSummary;->mBatteryLayoutPref:Lcom/android/settingslib/widget/LayoutPreference;
 
-    const v1, 0x7f0a0697
+    const v1, 0x7f0a0699
 
     invoke-virtual {v0, v1}, Lcom/android/settingslib/widget/LayoutPreference;->findViewById(I)Landroid/view/View;
 
@@ -944,7 +944,7 @@
 
     iget-object v2, p0, Lcom/android/settings/fuelgauge/PowerUsageSummary;->mBatteryLayoutPref:Lcom/android/settingslib/widget/LayoutPreference;
 
-    const v3, 0x7f0a0697
+    const v3, 0x7f0a0699
 
     invoke-virtual {v2, v3}, Lcom/android/settingslib/widget/LayoutPreference;->findViewById(I)Landroid/view/View;
 

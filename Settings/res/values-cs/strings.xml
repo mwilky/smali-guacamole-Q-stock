@@ -999,9 +999,7 @@ Výběr"</string>
     <string name="calls_and_sms_ask_every_time">Pokaždé se zeptat</string>
     <string name="calls_preference">Předvolby hovorů</string>
     <string name="calls_title">Povolit hovory</string>
-    <string name="camera_application_title">"
-     Aplikace fotoaparátu
-    "</string>
+    <string name="camera_application_title">Aplikace fotoaparátu</string>
     <string name="camera_double_tap_power_gesture_desc">Rychle otevře fotoaparát bez odemknutí obrazovky</string>
     <string name="camera_double_tap_power_gesture_title">Fotoaparát dvojitým stisknutím vypínače</string>
     <string name="camera_gesture_desc">Umožňuje otevřít aplikaci Fotoaparát dvojitým otočením zápěstí.</string>
@@ -1885,9 +1883,7 @@ Zdálo se, že ve městě nejsou koně ani jakákoli zvířata. Lidé k převá
 Když zapnete automatické zálohování, data zařízení a aplikací se budou pravidelně ukládat do vzdáleného úložiště. Data aplikací mohou zahrnovat data, která uložila aplikace (v závislosti na nastavení vývojáře), včetně potenciálně citlivých dat, jako jsou kontakty, zprávy a fotky."</string>
     <string name="fullbackup_erase_dialog_message">Zastavit zálohování dat zařízení (jako jsou hesla sítí Wi-Fi a historie volání) a dat aplikací (jako jsou nastavení a soubory uložené aplikacemi) a vymazat všechny kopie na vzdálených serverech?</string>
     <string name="gadget_picker_title">Zvolte gadget</string>
-    <string name="gallery_application_title">"
-     Aplikace Galerie
-    "</string>
+    <string name="gallery_application_title">Aplikace Galerie</string>
     <string name="game_controller_settings_category">Herní ovladače</string>
     <string name="game_driver_all_apps_preference_title">Zapnout pro všechny aplikace</string>
     <string name="game_driver_app_preference_default">Výchozí</string>
@@ -2423,9 +2419,7 @@ Toto nastavení můžete později změnit v sekci Nastavení > Aplikace a ozn�
     <string name="low_label">Nízká</string>
     <string name="low_storage_summary">V úložišti je málo místa. Využito %1$s – volné místo: %2$s</string>
     <string name="mah">%d mAh</string>
-    <string name="mail_application_title">"
-     Aplikace Pošta
-    "</string>
+    <string name="mail_application_title">Aplikace Pošta</string>
     <string name="main_running_process_description">Hlavní proces, který se používá.</string>
     <string name="manage_app_notification">Spravovat oznámení aplikace %1$s</string>
     <string name="manage_device_admin">Aplikace pro správu zařízení</string>
@@ -2457,6 +2451,7 @@ Toto nastavení můžete později změnit v sekci Nastavení > Aplikace a ozn�
 Aktuálně jste přihlášeni k těmto účtům:
 "</string>
     <string name="master_clear_button_text">Vymazat všechna data</string>
+    <string name="master_clear_confirm_summary">Odstraní se veškerý obsah na interním úložišti, včetně hudby, fotografií, videí a dalších osobních údajů. Chcete potvrdit vymazání?</string>
     <string name="master_clear_confirm_title">Vymazat všechna data?</string>
     <string name="master_clear_desc">Tato akce smaže veškerá data z <b>interního úložiště</b>" telefonu, např.:
 
@@ -2641,9 +2636,7 @@ Přepnutím na operátora %1$s nezrušíte službu %2$s."</string>
     <string name="mr_user_route_category_name">Zařízení</string>
     <string name="mtp_ptp_mode_summary">Funkce MTP nebo PTP je aktivní</string>
     <string name="multi_app_label_badge">Paralelní %1$s</string>
-    <string name="music_application_title">"
-     Hudební aplikace
-    "</string>
+    <string name="music_application_title">Hudební aplikace</string>
     <string name="musicfx_title">Hudební efekty</string>
     <string name="mvno_match_data">Hodnota MVNO</string>
     <string name="mvno_type">Typ MVNO</string>
@@ -2937,7 +2930,7 @@ Tímto také aplikaci umožníte zapínat nebo vypínat režim Nerušit a měni
     <string name="oneplus_auto_activate">Automaticky zapnout</string>
     <string name="oneplus_auto_answer_via_bluetooth_summary">Příchozí hovor se automaticky zvedne během připojeného zařízení Bluetooth</string>
     <string name="oneplus_auto_answer_via_bluetooth_title">Chytrá odpověď pro Bluetooth</string>
-    <string name="oneplus_auto_check_pin_length">Potvrďte kód PIN bez klepnutí na „✓“</string>
+    <string name="oneplus_auto_check_pin_length">Automaticky odemknout obrazovku po zadání kódu PIN</string>
     <string name="oneplus_auto_disconect_the_ap">Hotspot se automaticky vypne po 5 minutách, pokud nejsou připojena žádná zařízení.</string>
     <string name="oneplus_auto_open_app_none">Žádný</string>
     <string name="oneplus_auto_open_app_other_applications">DALŠÍ APLIKACE</string>
@@ -3091,6 +3084,9 @@ Tímto také aplikaci umožníte zapínat nebo vypínat režim Nerušit a měni
 2.Během jednoho procesu nastavení zadejte prosím pouze informace o otisku jednoho prstu"</string>
     <string name="oneplus_enroll_fingerprint_tips_title">Výzva nastavení otisku prstu</string>
     <string name="oneplus_enter_your_fingerprint">· Registrace otisku prstu</string>
+    <string name="oneplus_erase_system_data">VYMAZAT SYSTÉMOVÁ DATA</string>
+    <string name="oneplus_erase_system_data_summary">Odstraní se systémová data, včetně informací o účtu, kontaktů a dat aplikací. Tuto akci nelze vrátit zpět.</string>
+    <string name="oneplus_erase_system_data_title">Vymazat systémová data?</string>
     <string name="oneplus_esportmode_introduction_summary">Chcete-li aktivovat režim E-sporty, klepnutím zapněte panel herního režimu.</string>
     <string name="oneplus_experience_improvement_programs">Programy zlepšovaní zážitku</string>
     <string name="oneplus_face_auto_unlock_while_screen_on_sumary">Odemkněte váš telefon s pomocí vašeho obličeje, když se obrazovka zapnete bez toho, abyste museli přejet po obrazovce prstem.</string>
@@ -3370,9 +3366,7 @@ Poznámka: Váš otisk prstu může být méně bezpečný než silný vzor nebo
     <string name="oneplus_none_default_music">Žádný výchozí přehrávač hudby</string>
     <string name="oneplus_normal_clear_way">Normální jasný</string>
     <string name="oneplus_normal_clear_way_summary">Vymažte seznam úkolů a mezipaměti, aniž by byly vymazány procesy na pozadí.</string>
-    <string name="oneplus_not_disturb_on">"
-     Je zapnut režim Nerušit
-    "</string>
+    <string name="oneplus_not_disturb_on">Je zapnut režim Nerušit</string>
     <string name="oneplus_not_show">Znovu nezobrazovat</string>
     <string name="oneplus_notch_display_area">Zářez</string>
     <string name="oneplus_notch_display_choose_title">Vyberte, jak se zobrazí oblast výřezu</string>
@@ -3597,7 +3591,7 @@ Poznámka: Váš otisk prstu může být méně bezpečný než silný vzor nebo
     <string name="oneplus_search_keyword_swap_navkeys">prohodit tlačítka</string>
     <string name="oneplus_search_keyword_switch">přenos,migrace dat</string>
     <string name="oneplus_search_keyword_theme_settings">VLASTNÍ NASTAVENÍ ZAMČENÉ OBRAZOVKY, tapety, styl hodin, animace otisku prstu, Horizon Light, VLASTNÍ NASTAVENÍ SYSTÉMU, barva zvýraznění, tvar, písmo, odstín, balíček ikon, světlo podsvícení, jemná tmavá, živé tóny</string>
-    <string name="oneplus_search_keyword_theme_settings_mcl">VLASTNÍ NASTAVENÍ ZAMČENÉ OBRAZOVKY, tapety, styl hodin, animace otisku prstu, Horizon Light, VLASTNÍ NASTAVENÍ SYSTÉMU, barva zvýraznění, tvar, písmo, odstín, balíček ikon, světlo podsvícení, jemná tmavá, živé tóny, McLaren</string>
+    <string name="oneplus_search_keyword_theme_settings_mcl">VLASTNÍ NASTAVENÍ ZAMČENÉ OBRAZOVKY, tapety, styl hodin, animace otisku prstu, Horizon light, VLASTNÍ NASTAVENÍ SYSTÉMU, barva zvýraznění, tvar, písmo, odstín, balíček ikon, světlo podsvícení, jemná tmavá, živé tóny, McLaren</string>
     <string name="oneplus_search_keyword_three_screenshots">snímek obrazovky</string>
     <string name="oneplus_search_keyword_timer_boot" />
     <string name="oneplus_search_keyword_user_experience">oznámení,zážitek,program,vylepšení</string>
@@ -3649,9 +3643,7 @@ Poznámka:
     <string name="oneplus_show_notch_display_title">Zobrazit oblast zářezu</string>
     <string name="oneplus_show_pattern_and_password">Zobrazit heslo nebo vzor</string>
     <string name="oneplus_silent_mode">Tichý</string>
-    <string name="oneplus_silent_mode_on">"
-     Je zapnut tichý režim
-    "</string>
+    <string name="oneplus_silent_mode_on">Je zapnut tichý režim</string>
     <string name="oneplus_silent_mode_soc_tri_state_summary">Hovory a oznámení budou, s výjimkou alarmů, ztišeny</string>
     <string name="oneplus_silent_mode_summary">Hovory a oznámení budou, s výjimkou alarmů, ztišeny</string>
     <string name="oneplus_sim1_ringtone_switch">SIM Karta 1</string>
@@ -3779,9 +3771,9 @@ Poznámka: Funkce Odemknutí obličejem je méně bezpečná než otisk prstu, k
     <string name="oneplus_vibration_settings_soc_tri_state">Vibrace</string>
     <string name="oneplus_vibration_settings_soc_tri_state_summary">Hovory a oznámení budou, s výjimkou alarmů, ztišeny a nastaveny pouze na vibrace</string>
     <string name="oneplus_vibration_summary">Alarm vždy zazvoní</string>
-    <string name="oneplus_video_enhancer">Vylepšení videa</string>
-    <string name="oneplus_video_enhancer_footer">Zlepšit barvu během přehrávání videí</string>
-    <string name="oneplus_video_enhancer_summary">Zlepšit barvu během přehrávání videí</string>
+    <string name="oneplus_video_enhancer">Efekt živých barev</string>
+    <string name="oneplus_video_enhancer_footer">Zlepšit barvu při přehrávání videí</string>
+    <string name="oneplus_video_enhancer_summary">Zlepšit barvu při přehrávání videí</string>
     <string name="oneplus_volume_keys_adjust">Pomocí tlačítek hlasitosti upravte</string>
     <string name="oneplus_volume_keys_adjust_media">Hlasitost médií</string>
     <string name="oneplus_volume_keys_adjust_ringtones">Hlasitost vyzvánění</string>
@@ -4823,7 +4815,7 @@ Umožňují to důvěryhodné identifikační údaje nainstalované ve vašem za
     <string name="status_bar_settings_cellular_title">Mobilní data</string>
     <string name="status_bar_settings_dnd_title">Nerušit</string>
     <string name="status_bar_settings_headset_title">Náhlavní souprava</string>
-    <string name="status_bar_settings_hotspot_title">HotSpot</string>
+    <string name="status_bar_settings_hotspot_title">Hotspot</string>
     <string name="status_bar_settings_network_speed_title">Zobrazit rychlost sítě</string>
     <string name="status_bar_settings_time_title">Čas</string>
     <string name="status_bar_settings_wifi_title">Wi-Fi</string>

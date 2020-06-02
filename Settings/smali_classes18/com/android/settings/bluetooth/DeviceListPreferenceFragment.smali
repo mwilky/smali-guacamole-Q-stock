@@ -715,7 +715,7 @@
 
     aput-object v2, v1, v3
 
-    const v2, 0x7f120313
+    const v2, 0x7f120311
 
     invoke-virtual {p0, v2, v1}, Lcom/android/settings/bluetooth/DeviceListPreferenceFragment;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 

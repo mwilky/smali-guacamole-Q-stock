@@ -168,6 +168,14 @@
     return v0
 .end method
 
+.method public isLaunchableInTaskModePinned()Z
+    .locals 1
+
+    const/4 v0, 0x1
+
+    return v0
+.end method
+
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 5
 
@@ -210,7 +218,7 @@
 
     if-eqz v1, :cond_0
 
-    const v1, 0x7f1304d5
+    const v1, 0x7f1304d6
 
     invoke-virtual {p0, v1}, Lcom/android/settings/password/ConfirmDeviceCredentialBaseActivity;->setTheme(I)V
 
@@ -233,7 +241,7 @@
 
     if-eqz v1, :cond_1
 
-    const v1, 0x7f1304d4
+    const v1, 0x7f1304d5
 
     invoke-virtual {p0, v1}, Lcom/android/settings/password/ConfirmDeviceCredentialBaseActivity;->setTheme(I)V
 
@@ -244,7 +252,7 @@
     goto :goto_0
 
     :cond_1
-    const v1, 0x7f1301cc
+    const v1, 0x7f1301cd
 
     invoke-virtual {p0, v1}, Lcom/android/settings/password/ConfirmDeviceCredentialBaseActivity;->setTheme(I)V
 
@@ -263,7 +271,7 @@
 
     if-eqz v1, :cond_2
 
-    const v1, 0x7f1206de
+    const v1, 0x7f1206dd
 
     invoke-static {p0, v1, v2}, Landroid/widget/Toast;->makeText(Landroid/content/Context;II)Landroid/widget/Toast;
 
@@ -472,7 +480,7 @@
 
     if-eqz p1, :cond_0
 
-    const v0, 0x7f1206de
+    const v0, 0x7f1206dd
 
     const/4 v1, 0x0
 
@@ -622,7 +630,7 @@
 
     if-eqz v0, :cond_0
 
-    const v0, 0x7f1301ca
+    const v0, 0x7f1301cb
 
     invoke-virtual {p0, v0}, Lcom/android/settings/password/ConfirmDeviceCredentialBaseActivity;->setTheme(I)V
 

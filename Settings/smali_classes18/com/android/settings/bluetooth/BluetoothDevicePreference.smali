@@ -152,14 +152,14 @@
 
     if-eqz v2, :cond_0
 
-    const v2, 0x7f1202df
+    const v2, 0x7f1202de
 
     invoke-virtual {v0, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
     :cond_0
-    const v2, 0x7f1202fb
+    const v2, 0x7f1202f9
 
     const/4 v3, 0x1
 
@@ -173,7 +173,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f120301
+    const v3, 0x7f1202ff
 
     invoke-virtual {v0, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -219,7 +219,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f120344
+    const v2, 0x7f120342
 
     invoke-static {v0, v1, v2}, Lcom/android/settings/bluetooth/Utils;->showError(Landroid/content/Context;Ljava/lang/String;I)V
 
@@ -322,7 +322,7 @@
 .method protected getSecondTargetResId()I
     .locals 1
 
-    const v0, 0x7f0d0271
+    const v0, 0x7f0d0278
 
     return v0
 .end method
@@ -371,7 +371,7 @@
 
     if-ne v0, v1, :cond_1
 
-    const v0, 0x7f0a0608
+    const v0, 0x7f0a060a
 
     invoke-virtual {p1, v0}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 

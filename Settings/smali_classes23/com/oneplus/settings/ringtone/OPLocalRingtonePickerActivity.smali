@@ -468,7 +468,7 @@
 
     invoke-virtual {v0, v1}, Landroid/app/ActionBar;->setDisplayShowTitleEnabled(Z)V
 
-    const v1, 0x7f0d0227
+    const v1, 0x7f0d022e
 
     const/4 v2, 0x0
 
@@ -496,7 +496,7 @@
 
     new-instance v4, Landroid/widget/ArrayAdapter;
 
-    const v5, 0x7f0d0225
+    const v5, 0x7f0d022c
 
     const v6, 0x1020014
 
@@ -1160,7 +1160,7 @@
     :cond_0
     invoke-super {p0, p1}, Lcom/oneplus/settings/ringtone/OPRingtoneBaseActivity;->onCreate(Landroid/os/Bundle;)V
 
-    const v0, 0x7f0d01ec
+    const v0, 0x7f0d01f3
 
     invoke-virtual {p0, v0}, Lcom/oneplus/settings/ringtone/OPLocalRingtonePickerActivity;->setContentView(I)V
 

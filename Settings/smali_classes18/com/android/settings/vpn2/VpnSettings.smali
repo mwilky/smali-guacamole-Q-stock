@@ -785,7 +785,7 @@
 .method public getHelpResource()I
     .locals 1
 
-    const v0, 0x7f1207ef
+    const v0, 0x7f1207ee
 
     return v0
 .end method
@@ -955,7 +955,7 @@
 
     move-result v0
 
-    const v1, 0x7f0a0769
+    const v1, 0x7f0a076b
 
     if-eq v0, v1, :cond_0
 
@@ -1328,7 +1328,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f121730
+    const v1, 0x7f121738
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
 
@@ -1352,7 +1352,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f121720
+    const v1, 0x7f121728
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
 

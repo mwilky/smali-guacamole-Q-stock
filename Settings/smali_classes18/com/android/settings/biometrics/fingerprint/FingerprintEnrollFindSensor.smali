@@ -282,7 +282,7 @@
 .method protected getConfirmLockTitleResId()I
     .locals 1
 
-    const v0, 0x7f12132a
+    const v0, 0x7f121332
 
     return v0
 .end method
@@ -496,7 +496,7 @@
 
     invoke-virtual {p0, v0}, Lcom/android/settings/biometrics/fingerprint/FingerprintEnrollFindSensor;->setHeaderText(I)V
 
-    const v0, 0x7f0a049d
+    const v0, 0x7f0a049f
 
     invoke-virtual {p0, v0}, Lcom/android/settings/biometrics/fingerprint/FingerprintEnrollFindSensor;->findViewById(I)Landroid/view/View;
 
@@ -569,7 +569,7 @@
     goto :goto_1
 
     :cond_1
-    const v0, 0x7f121311
+    const v0, 0x7f121319
 
     invoke-virtual {p0, v0}, Lcom/android/settings/biometrics/fingerprint/FingerprintEnrollFindSensor;->setHeaderText(I)V
 
@@ -890,7 +890,7 @@
 
     if-eqz v0, :cond_0
 
-    const v0, 0x7f0a067d
+    const v0, 0x7f0a067f
 
     invoke-virtual {p0, v0}, Lcom/android/settings/biometrics/fingerprint/FingerprintEnrollFindSensor;->findViewById(I)Landroid/view/View;
 

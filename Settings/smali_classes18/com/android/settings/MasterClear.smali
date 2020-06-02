@@ -31,6 +31,10 @@
 # instance fields
 .field private mContentView:Landroid/view/View;
 
+.field private mContext:Landroid/content/Context;
+
+.field private mDialog:Landroid/app/AlertDialog;
+
 .field mEsimStorage:Landroid/widget/CheckBox;
     .annotation build Landroidx/annotation/VisibleForTesting;
     .end annotation
@@ -69,6 +73,8 @@
     .end annotation
 .end field
 
+.field onClickListener:Landroid/content/DialogInterface$OnClickListener;
+
 
 # direct methods
 .method public constructor <init>()V
@@ -81,6 +87,12 @@
     invoke-direct {v0, p0}, Lcom/android/settings/MasterClear$1;-><init>(Lcom/android/settings/MasterClear;)V
 
     iput-object v0, p0, Lcom/android/settings/MasterClear;->mInitiateListener:Landroid/view/View$OnClickListener;
+
+    new-instance v0, Lcom/android/settings/MasterClear$2;
+
+    invoke-direct {v0, p0}, Lcom/android/settings/MasterClear$2;-><init>(Lcom/android/settings/MasterClear;)V
+
+    iput-object v0, p0, Lcom/android/settings/MasterClear;->onClickListener:Landroid/content/DialogInterface$OnClickListener;
 
     return-void
 .end method
@@ -101,6 +113,14 @@
     invoke-direct {p0, p1}, Lcom/android/settings/MasterClear;->showFinalConfirmation(Ljava/lang/String;)V
 
     return-void
+.end method
+
+.method static synthetic access$200(Lcom/android/settings/MasterClear;)Landroid/app/AlertDialog;
+    .locals 1
+
+    iget-object v0, p0, Lcom/android/settings/MasterClear;->mDialog:Landroid/app/AlertDialog;
+
+    return-object v0
 .end method
 
 .method private getContentDescription(Landroid/view/View;Ljava/lang/StringBuffer;)V
@@ -331,7 +351,7 @@
 
     if-eqz v16, :cond_1
 
-    const v16, 0x7f120400
+    const v16, 0x7f1203fe
 
     move-object/from16 v20, v13
 
@@ -340,7 +360,7 @@
     goto :goto_1
 
     :cond_1
-    const v16, 0x7f1203ff
+    const v16, 0x7f1203fd
 
     move-object/from16 v20, v13
 
@@ -692,7 +712,7 @@
     :goto_d
     iget-object v8, v1, Lcom/android/settings/MasterClear;->mContentView:Landroid/view/View;
 
-    const v10, 0x7f0a04f7
+    const v10, 0x7f0a04f9
 
     invoke-virtual {v8, v10}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -792,14 +812,6 @@
     :cond_1
     invoke-virtual {v2}, Landroid/app/ActionBar;->hide()V
 
-    invoke-virtual {v0}, Landroid/app/Activity;->getWindow()Landroid/view/Window;
-
-    move-result-object v1
-
-    const/4 v3, 0x0
-
-    invoke-virtual {v1, v3}, Landroid/view/Window;->setStatusBarColor(I)V
-
     return-void
 .end method
 
@@ -815,7 +827,7 @@
     :cond_0
     iget-object v0, p0, Lcom/android/settings/MasterClear;->mContentView:Landroid/view/View;
 
-    const v1, 0x7f0a0613
+    const v1, 0x7f0a0615
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -839,7 +851,7 @@
 
     invoke-direct {v2, v3}, Lcom/google/android/setupcompat/template/FooterButton$Builder;-><init>(Landroid/content/Context;)V
 
-    const v3, 0x7f1209f1
+    const v3, 0x7f1209f0
 
     invoke-virtual {v2, v3}, Lcom/google/android/setupcompat/template/FooterButton$Builder;->setText(I)Lcom/google/android/setupcompat/template/FooterButton$Builder;
 
@@ -857,7 +869,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f1303e2
+    const v3, 0x7f1303e3
 
     invoke-virtual {v2, v3}, Lcom/google/android/setupcompat/template/FooterButton$Builder;->setTheme(I)Lcom/google/android/setupcompat/template/FooterButton$Builder;
 
@@ -935,7 +947,7 @@
 
 # virtual methods
 .method establishInitialState()V
-    .locals 3
+    .locals 2
     .annotation build Landroidx/annotation/VisibleForTesting;
     .end annotation
 
@@ -955,36 +967,23 @@
 
     move-result v0
 
-    const/4 v1, 0x0
-
-    const/4 v2, 0x1
+    const/4 v1, 0x1
 
     if-eqz v0, :cond_0
 
     iget-object v0, p0, Lcom/android/settings/MasterClear;->mOptionalSwitchPreference:Landroidx/preference/SwitchPreference;
 
-    invoke-virtual {v0, v2}, Landroidx/preference/SwitchPreference;->setChecked(Z)V
+    invoke-virtual {v0, v1}, Landroidx/preference/SwitchPreference;->setChecked(Z)V
 
     iget-object v0, p0, Lcom/android/settings/MasterClear;->mOptionalSwitchPreference:Landroidx/preference/SwitchPreference;
+
+    const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Landroidx/preference/SwitchPreference;->setEnabled(Z)V
 
     goto :goto_0
 
     :cond_0
-    invoke-static {}, Lcom/oneplus/settings/utils/OPUtils;->isSupportUstMode()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_1
-
-    iget-object v0, p0, Lcom/android/settings/MasterClear;->mOptionalSwitchPreference:Landroidx/preference/SwitchPreference;
-
-    invoke-virtual {v0, v2}, Landroidx/preference/SwitchPreference;->setChecked(Z)V
-
-    goto :goto_0
-
-    :cond_1
     iget-object v0, p0, Lcom/android/settings/MasterClear;->mOptionalSwitchPreference:Landroidx/preference/SwitchPreference;
 
     invoke-virtual {v0, v1}, Landroidx/preference/SwitchPreference;->setChecked(Z)V
@@ -1377,25 +1376,117 @@
 
     invoke-virtual {v0, v1}, Landroidx/fragment/app/FragmentActivity;->setTitle(I)V
 
+    invoke-virtual {p0}, Lcom/android/settings/MasterClear;->getActivity()Landroidx/fragment/app/FragmentActivity;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lcom/android/settings/MasterClear;->mContext:Landroid/content/Context;
+
+    return-void
+.end method
+
+.method public onDestroy()V
+    .locals 2
+
+    invoke-virtual {p0}, Lcom/android/settings/MasterClear;->getActivity()Landroidx/fragment/app/FragmentActivity;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_0
+
+    invoke-virtual {v0}, Landroid/app/Activity;->isFinishing()Z
+
+    move-result v1
+
+    if-nez v1, :cond_0
+
+    iget-object v1, p0, Lcom/android/settings/MasterClear;->mDialog:Landroid/app/AlertDialog;
+
+    if-eqz v1, :cond_0
+
+    invoke-virtual {v1}, Landroid/app/AlertDialog;->dismiss()V
+
+    const/4 v1, 0x0
+
+    iput-object v1, p0, Lcom/android/settings/MasterClear;->mDialog:Landroid/app/AlertDialog;
+
+    :cond_0
+    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onDestroy()V
+
     return-void
 .end method
 
 .method public onFactoryResetConfirmClick()V
-    .locals 1
+    .locals 3
 
+    iget-object v0, p0, Lcom/android/settings/MasterClear;->mOptionalSwitchPreference:Landroidx/preference/SwitchPreference;
+
+    invoke-virtual {v0}, Landroidx/preference/SwitchPreference;->isChecked()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    iget-object v0, p0, Lcom/android/settings/MasterClear;->mDialog:Landroid/app/AlertDialog;
+
+    if-nez v0, :cond_0
+
+    new-instance v0, Landroid/app/AlertDialog$Builder;
+
+    iget-object v1, p0, Lcom/android/settings/MasterClear;->mContext:Landroid/content/Context;
+
+    invoke-direct {v0, v1}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
+
+    const v1, 0x7f1209f1
+
+    invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
+
+    move-result-object v0
+
+    const v1, 0x104064f
+
+    iget-object v2, p0, Lcom/android/settings/MasterClear;->onClickListener:Landroid/content/DialogInterface$OnClickListener;
+
+    invoke-virtual {v0, v1, v2}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
+
+    move-result-object v0
+
+    const/high16 v1, 0x1040000
+
+    iget-object v2, p0, Lcom/android/settings/MasterClear;->onClickListener:Landroid/content/DialogInterface$OnClickListener;
+
+    invoke-virtual {v0, v1, v2}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Landroid/app/AlertDialog$Builder;->create()Landroid/app/AlertDialog;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lcom/android/settings/MasterClear;->mDialog:Landroid/app/AlertDialog;
+
+    :cond_0
+    iget-object v0, p0, Lcom/android/settings/MasterClear;->mDialog:Landroid/app/AlertDialog;
+
+    invoke-virtual {v0}, Landroid/app/AlertDialog;->show()V
+
+    goto :goto_0
+
+    :cond_1
     const/16 v0, 0x37
 
     invoke-direct {p0, v0}, Lcom/android/settings/MasterClear;->runKeyguardConfirmation(I)Z
 
     move-result v0
 
-    if-nez v0, :cond_0
+    if-nez v0, :cond_2
 
     const-string v0, ""
 
     invoke-direct {p0, v0}, Lcom/android/settings/MasterClear;->showFinalConfirmation(Ljava/lang/String;)V
 
-    :cond_0
+    :cond_2
+    :goto_0
     return-void
 .end method
 
@@ -1416,18 +1507,42 @@
 .end method
 
 .method public onPreferenceChange(Landroidx/preference/Preference;Ljava/lang/Object;)Z
-    .locals 2
+    .locals 3
 
     iget-object v0, p0, Lcom/android/settings/MasterClear;->mOptionalSwitchPreference:Landroidx/preference/SwitchPreference;
 
-    const/4 v1, 0x1
+    if-ne p1, v0, :cond_1
 
-    if-ne p1, v0, :cond_0
+    move-object v0, p2
 
-    return v1
+    check-cast v0, Ljava/lang/Boolean;
+
+    invoke-virtual {v0}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    iget-object v1, p0, Lcom/android/settings/MasterClear;->mOPFactoryResetConfirmCategory:Lcom/oneplus/settings/ui/OPFactoryResetConfirmCategory;
+
+    const v2, 0x7f120ca7
+
+    invoke-virtual {v1, v2}, Lcom/oneplus/settings/ui/OPFactoryResetConfirmCategory;->setConfirmButtonText(I)V
+
+    goto :goto_0
 
     :cond_0
-    return v1
+    iget-object v1, p0, Lcom/android/settings/MasterClear;->mOPFactoryResetConfirmCategory:Lcom/oneplus/settings/ui/OPFactoryResetConfirmCategory;
+
+    const v2, 0x7f1209f0
+
+    invoke-virtual {v1, v2}, Lcom/oneplus/settings/ui/OPFactoryResetConfirmCategory;->setConfirmButtonText(I)V
+
+    :cond_1
+    :goto_0
+    const/4 v0, 0x1
+
+    return v0
 .end method
 
 .method showAccountCredentialConfirmation(Landroid/content/Intent;)V

@@ -57,7 +57,7 @@
 
     iput-object p1, p0, Lcom/oneplus/settings/ui/OPSeekBarPreference;->mContext:Landroid/content/Context;
 
-    const v0, 0x7f0d0210
+    const v0, 0x7f0d0217
 
     invoke-virtual {p0, v0}, Lcom/oneplus/settings/ui/OPSeekBarPreference;->setLayoutResource(I)V
 
@@ -67,7 +67,7 @@
 .method private initSeekBar(Landroidx/preference/PreferenceViewHolder;)V
     .locals 3
 
-    const v0, 0x7f0a05d0
+    const v0, 0x7f0a05d2
 
     invoke-virtual {p1, v0}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 

@@ -2447,6 +2447,7 @@
 현재 로그인한 계정:
 "</string>
     <string name="master_clear_button_text">모든 데이터 삭제</string>
+    <string name="master_clear_confirm_summary">음악, 사진, 동영상 및 기타 개인 데이터를 포함하여 내부 저장소의 모든 콘텐츠가 제거됩니다. 지우시겠습니까?</string>
     <string name="master_clear_confirm_title">모든 데이터를 삭제하시겠습니까?</string>
     <string name="master_clear_desc">초기화하면 다음을 포함한 휴대전화 <b>내부 저장소</b>"의 모든 데이터가 삭제됩니다.
 
@@ -2925,7 +2926,7 @@
     <string name="oneplus_auto_activate">자동으로 켜기</string>
     <string name="oneplus_auto_answer_via_bluetooth_summary">Bluetooth 오디오 장치에 연결되어 있는 동안 수신 전화가 자동으로 응답됩니다.</string>
     <string name="oneplus_auto_answer_via_bluetooth_title">Bluetooth용 스마트 응답</string>
-    <string name="oneplus_auto_check_pin_length">\"✓\" 표시를 탭하지 않고 PIN 확인</string>
+    <string name="oneplus_auto_check_pin_length">PIN 입력 후 자동으로 화면 잠금 해제</string>
     <string name="oneplus_auto_disconect_the_ap">연결된 장치가 없으면 핫스팟은 5분 후에 자동으로 꺼집니다.</string>
     <string name="oneplus_auto_open_app_none">없음</string>
     <string name="oneplus_auto_open_app_other_applications">기타 응용 프로그램</string>
@@ -3015,7 +3016,7 @@
     <string name="oneplus_deep_optimization">딥 최적화</string>
     <string name="oneplus_deep_optimization_summary">딥 최적화를 끄면 전력 소비가 크게 증가하며 이는 휴대폰의 정상 사용에 영향을 줄 수 있습니다.</string>
     <string name="oneplus_deep_optimization_title">딥 최적화를 끄시겠습니까?</string>
-    <string name="oneplus_default_launcher">기본 시작 관리자</string>
+    <string name="oneplus_default_launcher">기본 홈 앱</string>
     <string name="oneplus_delete_fingerprint_list">지문 삭제하기</string>
     <string name="oneplus_deleted_fingerprint_list">지문 삭제 완료</string>
     <string name="oneplus_deleted_fingerprint_list_failed">지문 삭제에 실패했습니다</string>
@@ -3079,6 +3080,9 @@
 2. 설정 과정 하나당 손가락 하나의 지문 정보만 입력하세요."</string>
     <string name="oneplus_enroll_fingerprint_tips_title">지문 설정 프롬프트</string>
     <string name="oneplus_enter_your_fingerprint">· 지문 등록</string>
+    <string name="oneplus_erase_system_data">시스템 데이터 지우기</string>
+    <string name="oneplus_erase_system_data_summary">계정 정보, 연락처 및 앱 데이터를 포함한 시스템 데이터가 삭제됩니다. 이 작업은 취소할 수 없습니다.</string>
+    <string name="oneplus_erase_system_data_title">시스템 데이터를 지우시겠습니까?</string>
     <string name="oneplus_esportmode_introduction_summary">e스포츠 모드를 활성화하려면 게임 모드 패널에서 토글 버튼을 탭하세요.</string>
     <string name="oneplus_experience_improvement_programs">경험 개선 프로그램</string>
     <string name="oneplus_face_auto_unlock_while_screen_on_sumary">먼저 살짝 밀지 않고 화면이 켜지자마자 얼굴로 휴대폰을 잠금 해제합니다.</string>
@@ -3146,7 +3150,7 @@
     <string name="oneplus_fnatic_mode_network_introduction_dual4g_summary">기본 SIM 카드 신호 강도는 게임 플레이 시 대기 시간을 낮출 수 있도록 간섭을 최소화하기 위해 우선적으로 처리됩니다. 그 결과, 보조 SIM 카드가 사용 중지되며 전화 또는 메시지가 수신되지 않습니다.</string>
     <string name="oneplus_fnatic_mode_network_introduction_summary">네트워크 연결 안정성 향상</string>
     <string name="oneplus_fnatic_mode_network_introduction_title">네트워크 향상</string>
-    <string name="oneplus_fnatic_mode_summary">게임 경험을 극적으로 향상시킵니다</string>
+    <string name="oneplus_fnatic_mode_summary">게임 경험의 극적인 향상</string>
     <string name="oneplus_fnatic_mode_summary_2">e스포츠 개척자가 만든 고급 게임 모드</string>
     <string name="oneplus_fnatic_mode_title">Fnatic 모드</string>
     <string name="oneplus_fnatic_mode_unlock_wallpapers">%1$s 특별 배경 화면의 잠금을 해제했습니다</string>
@@ -3241,7 +3245,7 @@
     <string name="oneplus_hand_up_proximity_title">디스플레이 들어올리기</string>
     <string name="oneplus_hand_up_to_show">휴대폰을 들어서 표시</string>
     <string name="oneplus_haptic_feedback_no_app">지원되는 게임이 설치되어 있지 않습니다</string>
-    <string name="oneplus_haptic_feedback_no_app_tip">PUBG Mobile과 Asphalt 9를 설치할 수 있습니다</string>
+    <string name="oneplus_haptic_feedback_no_app_tip">PUBG Mobile과 Asphalt 9를 설치할 수 있습니다.</string>
     <string name="oneplus_haptic_feedback_summary">지원되는 게임에 대해 더 나은 햅틱 피드백 제공</string>
     <string name="oneplus_haptic_feedback_support">지원되는 게임</string>
     <string name="oneplus_haptic_feedback_tips">특정 게임 장면에 대한 햅틱 피드백 제공, 지원되는 게임만 해당</string>
@@ -3294,7 +3298,7 @@
     <string name="oneplus_lock_buttons">버튼 잠그기</string>
     <string name="oneplus_lock_buttons_summary">게임 모드가 켜져 있는 경우 용량 버튼 잠금</string>
     <string name="oneplus_lock_screen_intro_skip_dialog_text">얼굴 데이터 기록을 건너뛰도록 선택하면, 지문 또는 PIN과 같은 다른 방법을 사용하여 장치 및 개인 정보를 보호하라는 메시지가 표시됩니다. 또한 특정 앱에서 암호를 설정할 수도 있습니다. 보호 기능을 활성화하려면 \"설정\" > \"보안 및 잠금 화면\"으로 이동하세요.</string>
-    <string name="oneplus_lock_screen_notifications_summary_hide">잠금이 해제된 경우에만 개인 내용 표시</string>
+    <string name="oneplus_lock_screen_notifications_summary_hide">잠금이 해제된 경우에만 비공개 콘텐츠 표시</string>
     <string name="oneplus_lock_screen_notifs_show_alerting">중요한 알림만 표시</string>
     <string name="oneplus_lock_screen_notifs_show_all">중요한 알림 및 기타 알림 표시</string>
     <string name="oneplus_lock_screen_notifs_title">잠금 화면의 알림</string>
@@ -3541,7 +3545,7 @@
     <string name="oneplus_search_keyword_app_lock">잠금, PIN, 비밀번호</string>
     <string name="oneplus_search_keyword_connected_device_manager">연결된 장치 관리자, 장치</string>
     <string name="oneplus_search_keyword_data_usage_control">데이터 사용량 제어</string>
-    <string name="oneplus_search_keyword_default_launcher_app">launcher, 기본, 앱, 기본 시작 관리자, 홈 앱</string>
+    <string name="oneplus_search_keyword_default_launcher_app">시작 관리자, 기본, 앱, 기본 시작 관리자, 홈 앱</string>
     <string name="oneplus_search_keyword_discoverable_device">검색 가능</string>
     <string name="oneplus_search_keyword_double_click_light_screen">화면, 슬립 모드 해제</string>
     <string name="oneplus_search_keyword_double_tap_power_gesture">카메라, 전원 버튼</string>
@@ -3575,7 +3579,7 @@
     <string name="oneplus_search_keyword_swap_navkeys">버튼 바꾸기</string>
     <string name="oneplus_search_keyword_switch">전송, 데이터 마이그레이션</string>
     <string name="oneplus_search_keyword_theme_settings">잠금 화면 사용자 지정, 배경 화면, 시계 스타일, 지문 애니메이션, Horizon light, 시스템 사용자 지정, 테마 컬러, 모양, 글꼴, 톤, 아이콘 팩, 조명, 몰입형 어둠, 강렬한 색조</string>
-    <string name="oneplus_search_keyword_theme_settings_mcl">잠금 화면 사용자 지정, 배경 화면, 시계 스타일, 지문 애니메이션, Horizon light, 시스템 사용자 지정, 테마 컬러, 모양, 글꼴, 톤, 아이콘 팩, 조명, 몰입형 어둠, 강렬한 색조, McLaren</string>
+    <string name="oneplus_search_keyword_theme_settings_mcl">잠금 화면 사용자 지정, 배경 화면, 시계 스타일, 지문 애니메이션, Horizon Light, 시스템 사용자 지정, 테마 컬러, 모양, 글꼴, 톤, 아이콘 팩, 조명, 몰입형 어둠, 강렬한 색조, McLaren</string>
     <string name="oneplus_search_keyword_three_screenshots">스크린샷</string>
     <string name="oneplus_search_keyword_timer_boot" />
     <string name="oneplus_search_keyword_user_experience">알림, 환경, 프로그램, 개선</string>
@@ -3754,7 +3758,7 @@
     <string name="oneplus_vibration_settings_soc_tri_state">진동</string>
     <string name="oneplus_vibration_settings_soc_tri_state_summary">알람을 제외하고 통화 및 알림은 무음이 되며 진동으로만 설정됩니다.</string>
     <string name="oneplus_vibration_summary">알람은 항상 울립니다.</string>
-    <string name="oneplus_video_enhancer">비디오 개선 프로그램</string>
+    <string name="oneplus_video_enhancer">강렬한 색상 효과</string>
     <string name="oneplus_video_enhancer_footer">동영상을 재생하는 동안 색상 향상</string>
     <string name="oneplus_video_enhancer_summary">동영상을 재생하는 동안 색상 향상</string>
     <string name="oneplus_volume_keys_adjust">볼륨 버튼을 사용하여 조정하세요.</string>

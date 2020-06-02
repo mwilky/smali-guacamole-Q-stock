@@ -149,7 +149,7 @@
 .method public getHelpResource()I
     .locals 1
 
-    const v0, 0x7f1207d2
+    const v0, 0x7f1207d1
 
     return v0
 .end method
@@ -261,7 +261,7 @@
 
     move-result-object v4
 
-    const v5, 0x7f12157a    # 1.941788E38f
+    const v5, 0x7f121582
 
     invoke-virtual {v4, v5}, Landroidx/fragment/app/FragmentActivity;->setTitle(I)V
 

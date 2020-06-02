@@ -46,7 +46,7 @@
 
     iget-object v0, p0, Lcom/android/settings/location/LocationSlice;->mContext:Landroid/content/Context;
 
-    const v1, 0x7f12092d
+    const v1, 0x7f12092c
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
@@ -120,7 +120,7 @@
 
     iget-object v1, p0, Lcom/android/settings/location/LocationSlice;->mContext:Landroid/content/Context;
 
-    const v2, 0x7f12092d
+    const v2, 0x7f12092c
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 

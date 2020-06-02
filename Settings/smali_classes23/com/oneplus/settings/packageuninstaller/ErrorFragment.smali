@@ -145,7 +145,7 @@
 .method public onProvideTheme()I
     .locals 1
 
-    const v0, 0x7f1304e6
+    const v0, 0x7f1304e7
 
     return v0
 .end method

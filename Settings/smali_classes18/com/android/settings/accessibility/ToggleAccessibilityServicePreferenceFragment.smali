@@ -72,7 +72,7 @@
 .method private createConfirmCredentialReasonMessage()Ljava/lang/String;
     .locals 5
 
-    const v0, 0x7f12066d
+    const v0, 0x7f12066c
 
     iget-object v1, p0, Lcom/android/settings/accessibility/ToggleAccessibilityServicePreferenceFragment;->mLockPatternUtils:Lcom/android/internal/widget/LockPatternUtils;
 
@@ -99,12 +99,12 @@
     goto :goto_0
 
     :cond_0
-    const v0, 0x7f12066f
+    const v0, 0x7f12066e
 
     goto :goto_0
 
     :cond_1
-    const v0, 0x7f12066e
+    const v0, 0x7f12066d
 
     nop
 
@@ -471,7 +471,7 @@
 
     const/4 v1, 0x1
 
-    const v2, 0x7f0a0528
+    const v2, 0x7f0a052a
 
     if-ne v0, v2, :cond_1
 
@@ -515,7 +515,7 @@
 
     move-result v0
 
-    const v2, 0x7f0a0529
+    const v2, 0x7f0a052b
 
     const/4 v3, 0x0
 
@@ -530,7 +530,7 @@
 
     move-result v0
 
-    const v2, 0x7f0a0527
+    const v2, 0x7f0a0529
 
     if-ne v0, v2, :cond_3
 
@@ -543,7 +543,7 @@
 
     move-result v0
 
-    const v2, 0x7f0a0526
+    const v2, 0x7f0a0528
 
     if-ne v0, v2, :cond_5
 

@@ -554,27 +554,27 @@
     goto :goto_2
 
     :cond_4
-    const v0, 0x7f110087
+    const v0, 0x7f110092
 
-    const v1, 0x7f080693
+    const v1, 0x7f080696
 
     invoke-virtual {p0, v0, v1}, Lcom/android/settings/widget/VideoPreference;->setVideo(II)V
 
     goto :goto_2
 
     :cond_5
-    const v0, 0x7f110086
+    const v0, 0x7f110091
 
-    const v1, 0x7f080692
+    const v1, 0x7f080695
 
     invoke-virtual {p0, v0, v1}, Lcom/android/settings/widget/VideoPreference;->setVideo(II)V
 
     goto :goto_2
 
     :cond_6
-    const v0, 0x7f110088
+    const v0, 0x7f110093
 
-    const v1, 0x7f080694
+    const v1, 0x7f080697
 
     invoke-virtual {p0, v0, v1}, Lcom/android/settings/widget/VideoPreference;->setVideo(II)V
 
@@ -730,13 +730,13 @@
 
     new-instance v2, Lcom/android/settings/gestures/SystemNavigationGestureSettings$NavModeCandidateInfo;
 
-    const v4, 0x7f12064e
+    const v4, 0x7f12064d
 
     invoke-virtual {v0, v4}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
     move-result-object v4
 
-    const v5, 0x7f12064d
+    const v5, 0x7f12064c
 
     invoke-virtual {v0, v5}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
@@ -759,13 +759,13 @@
 
     new-instance v2, Lcom/android/settings/gestures/SystemNavigationGestureSettings$NavModeCandidateInfo;
 
-    const v4, 0x7f12150d
+    const v4, 0x7f121515
 
     invoke-virtual {v0, v4}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
     move-result-object v4
 
-    const v5, 0x7f12150c
+    const v5, 0x7f121514
 
     invoke-virtual {v0, v5}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
@@ -788,13 +788,13 @@
 
     new-instance v2, Lcom/android/settings/gestures/SystemNavigationGestureSettings$NavModeCandidateInfo;
 
-    const v4, 0x7f120900
+    const v4, 0x7f1208ff
 
     invoke-virtual {v0, v4}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
     move-result-object v4
 
-    const v5, 0x7f1208ff
+    const v5, 0x7f1208fe
 
     invoke-virtual {v0, v5}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
@@ -933,7 +933,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0705b2
+    const v4, 0x7f0705b4
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getDimension(I)F
 

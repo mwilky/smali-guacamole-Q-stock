@@ -31,6 +31,12 @@
 .method public getAvailabilityStatus()I
     .locals 2
 
+    invoke-static {}, Lcom/oneplus/settings/utils/OPUtils;->isGuestMode()Z
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
     iget-object v0, p0, Lcom/oneplus/settings/aboutphone/OPOpenIdPreferenceController;->mContext:Landroid/content/Context;
 
     const-string v1, "com.heytap.openid"

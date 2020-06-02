@@ -285,7 +285,7 @@
 
     invoke-virtual {v0, v1}, Lcom/android/settingslib/widget/LayoutPreference;->setSelectable(Z)V
 
-    const v2, 0x7f0a06a1
+    const v2, 0x7f0a06a3
 
     invoke-virtual {v0, v2}, Lcom/android/settingslib/widget/LayoutPreference;->findViewById(I)Landroid/view/View;
 
@@ -293,13 +293,13 @@
 
     check-cast v2, Lcom/android/settings/widget/SwitchBar;
 
-    if-eqz v2, :cond_a
+    if-eqz v2, :cond_b
 
     iget-object v3, p0, Lcom/android/settings/notification/BlockPreferenceController;->mAppRow:Lcom/android/settings/notification/NotificationBackend$AppRow;
 
-    if-eqz v3, :cond_a
+    if-eqz v3, :cond_b
 
-    const v3, 0x7f120b7b
+    const v3, 0x7f120b7f
 
     invoke-virtual {v2, v3, v3}, Lcom/android/settings/widget/SwitchBar;->setSwitchBarText(II)V
 
@@ -454,17 +454,34 @@
     invoke-virtual {v2, v1}, Lcom/android/settings/widget/SwitchBar;->setEnabled(Z)V
 
     :cond_5
+    iget-object v3, p0, Lcom/android/settings/notification/BlockPreferenceController;->mAppRow:Lcom/android/settings/notification/NotificationBackend$AppRow;
+
+    iget-object v3, v3, Lcom/android/settings/notification/NotificationBackend$AppRow;->pkg:Ljava/lang/String;
+
+    const-string v4, "com.tmobile.pr.adapt"
+
+    invoke-virtual {v4, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v3
+
+    if-eqz v3, :cond_6
+
+    invoke-virtual {v2, v1}, Lcom/android/settings/widget/SwitchBar;->setEnabled(Z)V
+
+    invoke-virtual {v2}, Lcom/android/settings/widget/SwitchBar;->hide()V
+
+    :cond_6
     iget-object v3, p0, Lcom/android/settings/notification/BlockPreferenceController;->mChannel:Landroid/app/NotificationChannel;
 
     const/4 v4, 0x1
 
-    if-eqz v3, :cond_7
+    if-eqz v3, :cond_8
 
     iget-object v3, p0, Lcom/android/settings/notification/BlockPreferenceController;->mAppRow:Lcom/android/settings/notification/NotificationBackend$AppRow;
 
     iget-boolean v3, v3, Lcom/android/settings/notification/NotificationBackend$AppRow;->banned:Z
 
-    if-nez v3, :cond_6
+    if-nez v3, :cond_7
 
     iget-object v3, p0, Lcom/android/settings/notification/BlockPreferenceController;->mChannel:Landroid/app/NotificationChannel;
 
@@ -472,13 +489,13 @@
 
     move-result v3
 
-    if-eqz v3, :cond_6
+    if-eqz v3, :cond_7
 
     move v1, v4
 
     goto :goto_3
 
-    :cond_6
+    :cond_7
     nop
 
     :goto_3
@@ -486,16 +503,16 @@
 
     goto :goto_4
 
-    :cond_7
+    :cond_8
     iget-object v3, p0, Lcom/android/settings/notification/BlockPreferenceController;->mChannelGroup:Landroid/app/NotificationChannelGroup;
 
-    if-eqz v3, :cond_9
+    if-eqz v3, :cond_a
 
     iget-object v3, p0, Lcom/android/settings/notification/BlockPreferenceController;->mAppRow:Lcom/android/settings/notification/NotificationBackend$AppRow;
 
     iget-boolean v3, v3, Lcom/android/settings/notification/NotificationBackend$AppRow;->banned:Z
 
-    if-nez v3, :cond_8
+    if-nez v3, :cond_9
 
     iget-object v3, p0, Lcom/android/settings/notification/BlockPreferenceController;->mChannelGroup:Landroid/app/NotificationChannelGroup;
 
@@ -503,16 +520,16 @@
 
     move-result v3
 
-    if-nez v3, :cond_8
+    if-nez v3, :cond_9
 
     move v1, v4
 
-    :cond_8
+    :cond_9
     invoke-virtual {v2, v1}, Lcom/android/settings/widget/SwitchBar;->setChecked(Z)V
 
     goto :goto_4
 
-    :cond_9
+    :cond_a
     iget-object v1, p0, Lcom/android/settings/notification/BlockPreferenceController;->mAppRow:Lcom/android/settings/notification/NotificationBackend$AppRow;
 
     iget-boolean v1, v1, Lcom/android/settings/notification/NotificationBackend$AppRow;->banned:Z
@@ -521,7 +538,7 @@
 
     invoke-virtual {v2, v1}, Lcom/android/settings/widget/SwitchBar;->setChecked(Z)V
 
-    :cond_a
+    :cond_b
     :goto_4
     return-void
 .end method

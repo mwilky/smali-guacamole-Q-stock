@@ -2447,6 +2447,7 @@ Ezt később bármikor módosíthatja a Beállítások > Alkalmazások és érte
 Jelenleg a következő fiókokba van bejelentkezve:
 "</string>
     <string name="master_clear_button_text">Minden adat törlése</string>
+    <string name="master_clear_confirm_summary">A belső tárhely tartalma is törlődik, köztük a zenék, fotók, videók és egyéb személyes adatok. Megerősíti a törlést?</string>
     <string name="master_clear_confirm_title">Törli az összes adatot?</string>
     <string name="master_clear_desc">Ez minden adatot töröl a telefon <b>belső tárhelyéről</b>", többek között:
 
@@ -2925,7 +2926,7 @@ Ezzel az alkalmazás egyúttal képes lesz a „Ne zavarjanak” jelzés be- vag
     <string name="oneplus_auto_activate">Automatikus bekapcsolás</string>
     <string name="oneplus_auto_answer_via_bluetooth_summary">Automatikusan válaszol a bejövő hívásra, miközben Bluetooth-audioeszközre csatlakozik</string>
     <string name="oneplus_auto_answer_via_bluetooth_title">Okos válasz Bluetooth-hoz</string>
-    <string name="oneplus_auto_check_pin_length">PIN megerősítése a \"✓\" megérintése nélkül</string>
+    <string name="oneplus_auto_check_pin_length">Képernyő automatikus feloldása a PIN-kód megadása után</string>
     <string name="oneplus_auto_disconect_the_ap">A hotspot automatikusan kikapcsol 5 perc múlva, ha nincs csatlakoztatott készülék.</string>
     <string name="oneplus_auto_open_app_none">Nincs</string>
     <string name="oneplus_auto_open_app_other_applications">EGYÉB ALKALMAZÁSOK</string>
@@ -3079,6 +3080,9 @@ akkumulátor takarékállapota automatikusan kikapcsol a készülék töltéseko
 2. Egy beállítási folyamatban csak egy ujjlenyomat-információt adjon meg."</string>
     <string name="oneplus_enroll_fingerprint_tips_title">Ujjlenyomat-telepítési kérdés</string>
     <string name="oneplus_enter_your_fingerprint">· Készítsen felvételt ujjlenyomatáról</string>
+    <string name="oneplus_erase_system_data">RENDSZERADATOK TÖRLÉSE</string>
+    <string name="oneplus_erase_system_data_summary">A rendszeradatokkal a fiókinformációk, névjegyek és alkalmazásadatok is törlődnek. Nem tudja visszavonni ezt a műveletet.</string>
+    <string name="oneplus_erase_system_data_title">Törli a rendszeradatokat?</string>
     <string name="oneplus_esportmode_introduction_summary">Az E-sport mód aktiválásához érintse meg a kapcsolót a Játékmód panelen.</string>
     <string name="oneplus_experience_improvement_programs">Élményjavító programok</string>
     <string name="oneplus_face_auto_unlock_while_screen_on_sumary">A telefonzár azonnali feloldása arcfelismeréssel a képernyő bekapcsolása után, pöccintés nélkül.</string>
@@ -3575,7 +3579,7 @@ Megjegyzés: Előfordulhat, hogy az ujjlenyomata kevésbé biztonságos, mint eg
     <string name="oneplus_search_keyword_swap_navkeys">gombok felcserélése</string>
     <string name="oneplus_search_keyword_switch">átvitel,adatok áttelepítése</string>
     <string name="oneplus_search_keyword_theme_settings">ZÁRKÉPERNYŐ TESTRESZABÁSA, Háttérképek, Órastílus, Ujjlenyomat-animáció, Horizon Light, RENDSZER TESTRESZABÁSA, Kiemelés színe, Forma, Betűtípus, Tónus, Ikoncsomag, Világító fény, Árnyalt sötét, Élénk színek</string>
-    <string name="oneplus_search_keyword_theme_settings_mcl">ZÁRKÉPERNYŐ TESTRESZABÁSA, Háttérképek, Órastílus, Ujjlenyomat-animáció, Horizon fény, RENDSZER TESTRESZABÁSA, Kiemelés színe, Forma, Betűtípus, Tónus, Ikoncsomag, Világító fény, Árnyalt sötét, Élénk színek, McLaren</string>
+    <string name="oneplus_search_keyword_theme_settings_mcl">ZÁRKÉPERNYŐ TESTRESZABÁSA, Háttérképek, Órastílus, Ujjlenyomat-animáció, Horizon Light, RENDSZER TESTRESZABÁSA, Kiemelés színe, Forma, Betűtípus, Tónus, Ikoncsomag, Világító fény, Árnyalt sötét, Élénk színek, McLaren</string>
     <string name="oneplus_search_keyword_three_screenshots">képernyőfelvétel</string>
     <string name="oneplus_search_keyword_timer_boot" />
     <string name="oneplus_search_keyword_user_experience">értesítések,élmény,program,fejlesztés</string>
@@ -3755,7 +3759,7 @@ Megjegyzés: A zár feloldása arcfelismeréssel kevésbé biztonságos, mint az
     <string name="oneplus_vibration_settings_soc_tri_state">Rezgés</string>
     <string name="oneplus_vibration_settings_soc_tri_state_summary">A rendszer a riasztásokon kívül a hívásokat és értesítéseket is elnémítja, és csak rezegni fognak</string>
     <string name="oneplus_vibration_summary">A riasztás mindig csenget</string>
-    <string name="oneplus_video_enhancer">Videójavító</string>
+    <string name="oneplus_video_enhancer">Élénk színhatás</string>
     <string name="oneplus_video_enhancer_footer">Kiemeli a színeket a videók lejátszása közben</string>
     <string name="oneplus_video_enhancer_summary">Kiemeli a színeket a videók lejátszása közben</string>
     <string name="oneplus_volume_keys_adjust">Használja a hangerőgombokat a beállításhoz</string>

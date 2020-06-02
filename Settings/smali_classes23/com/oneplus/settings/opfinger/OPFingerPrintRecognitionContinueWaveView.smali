@@ -263,7 +263,7 @@
 .method public initSvgView(Landroid/content/Context;Landroid/widget/FrameLayout;)V
     .locals 1
 
-    const v0, 0x7f11006b
+    const v0, 0x7f110076
 
     invoke-direct {p0, v0, p2}, Lcom/oneplus/settings/opfinger/OPFingerPrintRecognitionContinueWaveView;->getSvgView(ILandroid/widget/FrameLayout;)Lcom/oneplus/settings/opfinger/SvgView;
 
@@ -271,7 +271,7 @@
 
     iput-object v0, p0, Lcom/oneplus/settings/opfinger/OPFingerPrintRecognitionContinueWaveView;->mSvgView_11_01:Lcom/oneplus/settings/opfinger/SvgView;
 
-    const v0, 0x7f11006c
+    const v0, 0x7f110077
 
     invoke-direct {p0, v0, p2}, Lcom/oneplus/settings/opfinger/OPFingerPrintRecognitionContinueWaveView;->getSvgView(ILandroid/widget/FrameLayout;)Lcom/oneplus/settings/opfinger/SvgView;
 
@@ -279,7 +279,7 @@
 
     iput-object v0, p0, Lcom/oneplus/settings/opfinger/OPFingerPrintRecognitionContinueWaveView;->mSvgView_11_05:Lcom/oneplus/settings/opfinger/SvgView;
 
-    const v0, 0x7f11006e
+    const v0, 0x7f110079
 
     invoke-direct {p0, v0, p2}, Lcom/oneplus/settings/opfinger/OPFingerPrintRecognitionContinueWaveView;->getSvgView(ILandroid/widget/FrameLayout;)Lcom/oneplus/settings/opfinger/SvgView;
 
@@ -287,7 +287,7 @@
 
     iput-object v0, p0, Lcom/oneplus/settings/opfinger/OPFingerPrintRecognitionContinueWaveView;->mSvgView_12_04:Lcom/oneplus/settings/opfinger/SvgView;
 
-    const v0, 0x7f110070
+    const v0, 0x7f11007b
 
     invoke-direct {p0, v0, p2}, Lcom/oneplus/settings/opfinger/OPFingerPrintRecognitionContinueWaveView;->getSvgView(ILandroid/widget/FrameLayout;)Lcom/oneplus/settings/opfinger/SvgView;
 
@@ -295,7 +295,7 @@
 
     iput-object v0, p0, Lcom/oneplus/settings/opfinger/OPFingerPrintRecognitionContinueWaveView;->mSvgView_13_03:Lcom/oneplus/settings/opfinger/SvgView;
 
-    const v0, 0x7f110071
+    const v0, 0x7f11007c
 
     invoke-direct {p0, v0, p2}, Lcom/oneplus/settings/opfinger/OPFingerPrintRecognitionContinueWaveView;->getSvgView(ILandroid/widget/FrameLayout;)Lcom/oneplus/settings/opfinger/SvgView;
 
@@ -303,7 +303,7 @@
 
     iput-object v0, p0, Lcom/oneplus/settings/opfinger/OPFingerPrintRecognitionContinueWaveView;->mSvgView_13_04:Lcom/oneplus/settings/opfinger/SvgView;
 
-    const v0, 0x7f110073
+    const v0, 0x7f11007e
 
     invoke-direct {p0, v0, p2}, Lcom/oneplus/settings/opfinger/OPFingerPrintRecognitionContinueWaveView;->getSvgView(ILandroid/widget/FrameLayout;)Lcom/oneplus/settings/opfinger/SvgView;
 
@@ -311,7 +311,7 @@
 
     iput-object v0, p0, Lcom/oneplus/settings/opfinger/OPFingerPrintRecognitionContinueWaveView;->mSvgView_14_02:Lcom/oneplus/settings/opfinger/SvgView;
 
-    const v0, 0x7f110074
+    const v0, 0x7f11007f
 
     invoke-direct {p0, v0, p2}, Lcom/oneplus/settings/opfinger/OPFingerPrintRecognitionContinueWaveView;->getSvgView(ILandroid/widget/FrameLayout;)Lcom/oneplus/settings/opfinger/SvgView;
 
@@ -319,7 +319,7 @@
 
     iput-object v0, p0, Lcom/oneplus/settings/opfinger/OPFingerPrintRecognitionContinueWaveView;->mSvgView_14_03:Lcom/oneplus/settings/opfinger/SvgView;
 
-    const v0, 0x7f110076
+    const v0, 0x7f110081
 
     invoke-direct {p0, v0, p2}, Lcom/oneplus/settings/opfinger/OPFingerPrintRecognitionContinueWaveView;->getSvgView(ILandroid/widget/FrameLayout;)Lcom/oneplus/settings/opfinger/SvgView;
 
@@ -327,7 +327,7 @@
 
     iput-object v0, p0, Lcom/oneplus/settings/opfinger/OPFingerPrintRecognitionContinueWaveView;->mSvgView_15_02:Lcom/oneplus/settings/opfinger/SvgView;
 
-    const v0, 0x7f110077
+    const v0, 0x7f110082
 
     invoke-direct {p0, v0, p2}, Lcom/oneplus/settings/opfinger/OPFingerPrintRecognitionContinueWaveView;->getSvgView(ILandroid/widget/FrameLayout;)Lcom/oneplus/settings/opfinger/SvgView;
 
@@ -335,7 +335,7 @@
 
     iput-object v0, p0, Lcom/oneplus/settings/opfinger/OPFingerPrintRecognitionContinueWaveView;->mSvgView_15_07:Lcom/oneplus/settings/opfinger/SvgView;
 
-    const v0, 0x7f110079
+    const v0, 0x7f110084
 
     invoke-direct {p0, v0, p2}, Lcom/oneplus/settings/opfinger/OPFingerPrintRecognitionContinueWaveView;->getSvgView(ILandroid/widget/FrameLayout;)Lcom/oneplus/settings/opfinger/SvgView;
 
@@ -343,7 +343,7 @@
 
     iput-object v0, p0, Lcom/oneplus/settings/opfinger/OPFingerPrintRecognitionContinueWaveView;->mSvgView_16_03:Lcom/oneplus/settings/opfinger/SvgView;
 
-    const v0, 0x7f11007a
+    const v0, 0x7f110085
 
     invoke-direct {p0, v0, p2}, Lcom/oneplus/settings/opfinger/OPFingerPrintRecognitionContinueWaveView;->getSvgView(ILandroid/widget/FrameLayout;)Lcom/oneplus/settings/opfinger/SvgView;
 
@@ -351,7 +351,7 @@
 
     iput-object v0, p0, Lcom/oneplus/settings/opfinger/OPFingerPrintRecognitionContinueWaveView;->mSvgView_16_06:Lcom/oneplus/settings/opfinger/SvgView;
 
-    const v0, 0x7f11007c
+    const v0, 0x7f110087
 
     invoke-direct {p0, v0, p2}, Lcom/oneplus/settings/opfinger/OPFingerPrintRecognitionContinueWaveView;->getSvgView(ILandroid/widget/FrameLayout;)Lcom/oneplus/settings/opfinger/SvgView;
 
@@ -359,7 +359,7 @@
 
     iput-object v0, p0, Lcom/oneplus/settings/opfinger/OPFingerPrintRecognitionContinueWaveView;->mSvgView_17_05:Lcom/oneplus/settings/opfinger/SvgView;
 
-    const v0, 0x7f11007d
+    const v0, 0x7f110088
 
     invoke-direct {p0, v0, p2}, Lcom/oneplus/settings/opfinger/OPFingerPrintRecognitionContinueWaveView;->getSvgView(ILandroid/widget/FrameLayout;)Lcom/oneplus/settings/opfinger/SvgView;
 
@@ -367,7 +367,7 @@
 
     iput-object v0, p0, Lcom/oneplus/settings/opfinger/OPFingerPrintRecognitionContinueWaveView;->mSvgView_17_06:Lcom/oneplus/settings/opfinger/SvgView;
 
-    const v0, 0x7f11007f
+    const v0, 0x7f11008a
 
     invoke-direct {p0, v0, p2}, Lcom/oneplus/settings/opfinger/OPFingerPrintRecognitionContinueWaveView;->getSvgView(ILandroid/widget/FrameLayout;)Lcom/oneplus/settings/opfinger/SvgView;
 
@@ -375,7 +375,7 @@
 
     iput-object v0, p0, Lcom/oneplus/settings/opfinger/OPFingerPrintRecognitionContinueWaveView;->mSvgView_18_05:Lcom/oneplus/settings/opfinger/SvgView;
 
-    const v0, 0x7f110080
+    const v0, 0x7f11008b
 
     invoke-direct {p0, v0, p2}, Lcom/oneplus/settings/opfinger/OPFingerPrintRecognitionContinueWaveView;->getSvgView(ILandroid/widget/FrameLayout;)Lcom/oneplus/settings/opfinger/SvgView;
 
@@ -383,7 +383,7 @@
 
     iput-object v0, p0, Lcom/oneplus/settings/opfinger/OPFingerPrintRecognitionContinueWaveView;->mSvgView_18_06:Lcom/oneplus/settings/opfinger/SvgView;
 
-    const v0, 0x7f110082
+    const v0, 0x7f11008d
 
     invoke-direct {p0, v0, p2}, Lcom/oneplus/settings/opfinger/OPFingerPrintRecognitionContinueWaveView;->getSvgView(ILandroid/widget/FrameLayout;)Lcom/oneplus/settings/opfinger/SvgView;
 
@@ -391,7 +391,7 @@
 
     iput-object v0, p0, Lcom/oneplus/settings/opfinger/OPFingerPrintRecognitionContinueWaveView;->mSvgView_19_05:Lcom/oneplus/settings/opfinger/SvgView;
 
-    const v0, 0x7f110083
+    const v0, 0x7f11008e
 
     invoke-direct {p0, v0, p2}, Lcom/oneplus/settings/opfinger/OPFingerPrintRecognitionContinueWaveView;->getSvgView(ILandroid/widget/FrameLayout;)Lcom/oneplus/settings/opfinger/SvgView;
 
@@ -399,7 +399,7 @@
 
     iput-object v0, p0, Lcom/oneplus/settings/opfinger/OPFingerPrintRecognitionContinueWaveView;->mSvgView_19_07:Lcom/oneplus/settings/opfinger/SvgView;
 
-    const v0, 0x7f110085
+    const v0, 0x7f110090
 
     invoke-direct {p0, v0, p2}, Lcom/oneplus/settings/opfinger/OPFingerPrintRecognitionContinueWaveView;->getSvgView(ILandroid/widget/FrameLayout;)Lcom/oneplus/settings/opfinger/SvgView;
 
@@ -786,7 +786,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f080621
+    const v1, 0x7f080624
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -801,7 +801,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f08061f
+    const v1, 0x7f080622
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 

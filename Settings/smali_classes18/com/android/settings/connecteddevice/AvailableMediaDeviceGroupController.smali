@@ -64,7 +64,7 @@
 
     iget-object v1, p0, Lcom/android/settings/connecteddevice/AvailableMediaDeviceGroupController;->mContext:Landroid/content/Context;
 
-    const v2, 0x7f120496
+    const v2, 0x7f120495
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -79,7 +79,7 @@
 
     iget-object v1, p0, Lcom/android/settings/connecteddevice/AvailableMediaDeviceGroupController;->mContext:Landroid/content/Context;
 
-    const v2, 0x7f120497
+    const v2, 0x7f120496
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

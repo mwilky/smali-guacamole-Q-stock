@@ -3,7 +3,13 @@
 .source "AppDataUsagePreference.java"
 
 
+# static fields
+.field private static final TAG:Ljava/lang/String; = "AppDataUsagePreference"
+
+
 # instance fields
+.field private mApps:Landroidx/preference/PreferenceGroup;
+
 .field private mContext:Landroid/content/Context;
 
 .field private mDetail:Lcom/android/settingslib/net/UidDetail;
@@ -14,7 +20,7 @@
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;Lcom/android/settingslib/AppItem;ILcom/android/settingslib/net/UidDetailProvider;)V
+.method public constructor <init>(Landroid/content/Context;Lcom/android/settingslib/AppItem;ILcom/android/settingslib/net/UidDetailProvider;Landroidx/preference/PreferenceGroup;)V
     .locals 4
 
     invoke-direct {p0, p1}, Lcom/android/settingslib/widget/apppreference/AppPreference;-><init>(Landroid/content/Context;)V
@@ -24,6 +30,8 @@
     iput p3, p0, Lcom/android/settings/datausage/AppDataUsagePreference;->mPercent:I
 
     iput-object p1, p0, Lcom/android/settings/datausage/AppDataUsagePreference;->mContext:Landroid/content/Context;
+
+    iput-object p5, p0, Lcom/android/settings/datausage/AppDataUsagePreference;->mApps:Landroidx/preference/PreferenceGroup;
 
     iget-boolean v0, p2, Lcom/android/settingslib/AppItem;->restricted:Z
 
@@ -37,7 +45,7 @@
 
     if-gtz v0, :cond_0
 
-    const v0, 0x7f120520
+    const v0, 0x7f12051f
 
     invoke-virtual {p0, v0}, Lcom/android/settings/datausage/AppDataUsagePreference;->setSummary(I)V
 
@@ -91,7 +99,7 @@
 
     iget-object v0, p0, Lcom/android/settings/datausage/AppDataUsagePreference;->mContext:Landroid/content/Context;
 
-    const v1, 0x7f1209ec
+    const v1, 0x7f1209eb
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -139,6 +147,60 @@
 
     invoke-virtual {p0, v0}, Lcom/android/settings/datausage/AppDataUsagePreference;->setTitle(Ljava/lang/CharSequence;)V
 
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v1, "items.get(i).key = "
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object v1, p0, Lcom/android/settings/datausage/AppDataUsagePreference;->mItem:Lcom/android/settingslib/AppItem;
+
+    iget v1, v1, Lcom/android/settingslib/AppItem;->key:I
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    const-string v1, " mDetail.label = "
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object v1, p0, Lcom/android/settings/datausage/AppDataUsagePreference;->mDetail:Lcom/android/settingslib/net/UidDetail;
+
+    iget-object v1, v1, Lcom/android/settingslib/net/UidDetail;->label:Ljava/lang/CharSequence;
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    const-string v1, "AppDataUsagePreference"
+
+    invoke-static {v1, v0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    iget-object v0, p0, Lcom/android/settings/datausage/AppDataUsagePreference;->mItem:Lcom/android/settingslib/AppItem;
+
+    iget v0, v0, Lcom/android/settingslib/AppItem;->key:I
+
+    invoke-static {v0}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
+
+    move-result-object v0
+
+    iget-object v1, p0, Lcom/android/settings/datausage/AppDataUsagePreference;->mDetail:Lcom/android/settingslib/net/UidDetail;
+
+    iget-object v1, v1, Lcom/android/settingslib/net/UidDetail;->label:Ljava/lang/CharSequence;
+
+    invoke-static {v0, v1}, Landroid/text/TextUtils;->equals(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_2
+
+    iget-object v0, p0, Lcom/android/settings/datausage/AppDataUsagePreference;->mApps:Landroidx/preference/PreferenceGroup;
+
+    invoke-virtual {v0, p0}, Landroidx/preference/PreferenceGroup;->removePreference(Landroidx/preference/Preference;)Z
+
     goto :goto_1
 
     :cond_1
@@ -148,6 +210,7 @@
 
     invoke-virtual {p0, v0}, Lcom/android/settings/datausage/AppDataUsagePreference;->setTitle(Ljava/lang/CharSequence;)V
 
+    :cond_2
     :goto_1
     return-void
 .end method

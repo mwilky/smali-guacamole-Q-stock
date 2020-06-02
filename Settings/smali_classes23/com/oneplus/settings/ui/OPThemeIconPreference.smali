@@ -30,7 +30,7 @@
 
     invoke-direct {p0, p1, p2}, Landroidx/preference/Preference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
-    const v0, 0x7f0d022d
+    const v0, 0x7f0d0234
 
     invoke-virtual {p0, v0}, Lcom/oneplus/settings/ui/OPThemeIconPreference;->setLayoutResource(I)V
 
@@ -193,32 +193,32 @@
 
     if-eq v0, v1, :cond_0
 
-    const v1, 0x7f080533
-
-    goto :goto_0
-
-    :cond_0
-    const v1, 0x7f080536
-
-    goto :goto_0
-
-    :cond_1
-    const v1, 0x7f080537
-
-    goto :goto_0
-
-    :cond_2
-    const v1, 0x7f080535
-
-    goto :goto_0
-
-    :cond_3
     const v1, 0x7f080534
 
     goto :goto_0
 
+    :cond_0
+    const v1, 0x7f080537
+
+    goto :goto_0
+
+    :cond_1
+    const v1, 0x7f080538
+
+    goto :goto_0
+
+    :cond_2
+    const v1, 0x7f080536
+
+    goto :goto_0
+
+    :cond_3
+    const v1, 0x7f080535
+
+    goto :goto_0
+
     :cond_4
-    const v1, 0x7f080533
+    const v1, 0x7f080534
 
     nop
 
@@ -263,32 +263,32 @@
 
     if-eq v0, v1, :cond_0
 
-    const v1, 0x7f08046b
-
-    goto :goto_0
-
-    :cond_0
-    const v1, 0x7f08046d
-
-    goto :goto_0
-
-    :cond_1
-    const v1, 0x7f08046e
-
-    goto :goto_0
-
-    :cond_2
     const v1, 0x7f08046c
 
     goto :goto_0
 
-    :cond_3
+    :cond_0
+    const v1, 0x7f08046e
+
+    goto :goto_0
+
+    :cond_1
     const v1, 0x7f08046f
 
     goto :goto_0
 
+    :cond_2
+    const v1, 0x7f08046d
+
+    goto :goto_0
+
+    :cond_3
+    const v1, 0x7f080470
+
+    goto :goto_0
+
     :cond_4
-    const v1, 0x7f08046b
+    const v1, 0x7f08046c
 
     nop
 
@@ -439,7 +439,7 @@
 
     invoke-super {p0, p1}, Landroidx/preference/Preference;->onBindViewHolder(Landroidx/preference/PreferenceViewHolder;)V
 
-    const v0, 0x7f0a06ea
+    const v0, 0x7f0a06ec
 
     invoke-virtual {p1, v0}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 
@@ -465,7 +465,7 @@
 
     invoke-virtual {v0, p0}, Lcom/oneplus/settings/ui/RadiusImageView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const v0, 0x7f0a06d6
+    const v0, 0x7f0a06d8
 
     invoke-virtual {p1, v0}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 
@@ -481,7 +481,7 @@
 
     nop
 
-    const v0, 0x7f0a06d7
+    const v0, 0x7f0a06d9
 
     invoke-virtual {p1, v0}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 
@@ -503,7 +503,7 @@
 
     if-nez v0, :cond_0
 
-    const v0, 0x7f0a06d8
+    const v0, 0x7f0a06da
 
     invoke-virtual {p1, v0}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 
@@ -512,7 +512,7 @@
     invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
 
     :cond_0
-    const v0, 0x7f0a06e3
+    const v0, 0x7f0a06e5
 
     invoke-virtual {p1, v0}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 
@@ -555,7 +555,7 @@
 
     const/high16 v1, 0x10000000
 
-    const v2, 0x7f0a06ea
+    const v2, 0x7f0a06ec
 
     if-ne v0, v2, :cond_0
 
@@ -580,7 +580,7 @@
     goto/16 :goto_4
 
     :cond_0
-    const v2, 0x7f0a06d6
+    const v2, 0x7f0a06d8
 
     const-string v3, "com.android.settings"
 
@@ -654,7 +654,7 @@
 
     move-result-object v1
 
-    const v3, 0x7f120f76
+    const v3, 0x7f120f74
 
     invoke-virtual {v1, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -668,7 +668,7 @@
 
     move-result-object v3
 
-    const v5, 0x7f120f75
+    const v5, 0x7f120f73
 
     invoke-virtual {v3, v5}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -706,7 +706,7 @@
     goto/16 :goto_4
 
     :cond_4
-    const v2, 0x7f0a06d7
+    const v2, 0x7f0a06d9
 
     if-ne v0, v2, :cond_6
 
@@ -722,7 +722,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f120f7e
+    const v2, 0x7f120f7c
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -736,7 +736,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f120f7d
+    const v3, 0x7f120f7b
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -772,7 +772,7 @@
     goto :goto_3
 
     :cond_6
-    const v2, 0x7f0a06e3
+    const v2, 0x7f0a06e5
 
     if-ne v0, v2, :cond_9
 

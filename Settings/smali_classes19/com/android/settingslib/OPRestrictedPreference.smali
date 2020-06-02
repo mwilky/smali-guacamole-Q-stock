@@ -67,7 +67,7 @@
 
     iput-boolean v0, p0, Lcom/android/settingslib/OPRestrictedPreference;->mHideDivider:Z
 
-    const v1, 0x7f0d01f8
+    const v1, 0x7f0d01ff
 
     invoke-virtual {p0, v1}, Lcom/android/settingslib/OPRestrictedPreference;->setLayoutResource(I)V
 
@@ -111,7 +111,7 @@
 .method protected getSecondTargetResId()I
     .locals 1
 
-    const v0, 0x7f0d0295
+    const v0, 0x7f0d029c
 
     return v0
 .end method
@@ -168,7 +168,7 @@
 
     invoke-virtual {v0, p1}, Lcom/android/settingslib/RestrictedPreferenceHelper;->onBindViewHolder(Landroidx/preference/PreferenceViewHolder;)V
 
-    const v0, 0x7f0a05a9
+    const v0, 0x7f0a05ab
 
     invoke-virtual {p1, v0}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 
@@ -195,7 +195,7 @@
     invoke-virtual {v0, v2}, Landroid/view/View;->setVisibility(I)V
 
     :cond_1
-    const v2, 0x7f0a075f
+    const v2, 0x7f0a0761
 
     invoke-virtual {p1, v2}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 

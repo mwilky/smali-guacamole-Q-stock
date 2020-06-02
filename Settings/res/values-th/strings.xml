@@ -225,11 +225,11 @@
     <string name="adb_keys_warning_message">ยกเลิกการเข้าถึงเพื่อแก้ปัญหาผ่าน USB จากคอมพิวเตอร์ทุกเครื่องที่คุณได้ให้สิทธิ์ก่อนหน้านี้ไหม</string>
     <string name="adb_over_network">ADB ผ่านเน็ตเวิร์ก</string>
     <string name="adb_over_network_summary">เปิดการดีบัก TCP/IP ผ่านอินเตอร์เฟสเน็ตเวิร์ก (วายฟาย เน็ตเวิร์ก USB) การตั้งค่านี้จะถูกรีเซ็ตเมื่อรีบูต</string>
-    <string name="adb_over_network_warning">"คำเตือน: เมื่อ ADB ผ่านเน็ตเวิร์กเปิดใช้งานอยู่ โทรศัพท์ของคุณจะเปิดให้ถูกโจมตีจากเน็ตเวิร์กที่เชื่อมต่ออยู่ทั้งหมดได้ รวมถึงเน็ตเวิร์กข้อมูลมือถือด้วย!
+    <string name="adb_over_network_warning">"คำเตือน: เมื่อ ADB ผ่านเครือข่ายเปิดใช้งานอยู่ โทรศัพท์ของคุณจะเปิดให้โจมตีได้จากเครือข่ายทั้งหมดที่เชื่อมต่ออยู่ รวมถึงเครือข่ายข้อมูลมือถือด้วย!
 
-ใช้งานคุณลักษณะนี้เมื่อคุณเชื่อมต่อบนเน็ตเวิร์กที่ไว้ใจได้เท่านั้น
+ใช้งานคุณลักษณะนี้เมื่อคุณเชื่อมต่อบนเครือข่ายที่ไว้ใจได้เท่านั้น
 
-คุณต้องการเปิดใช้งานฟังก์ชั่นนี้หรือไม่?"</string>
+คุณต้องการเปิดใช้งานฟังก์ชันนี้หรือไม่?"</string>
     <string name="adb_warning_message">การแก้ไขข้อบกพร่อง USB มีไว้เพื่อการพัฒนาเท่านั้น ให้ใช้การแก้ไขนี้เพื่อคัดลอกข้อมูลระหว่างคอมพิวเตอร์และอุปกรณ์ ติดตั้งแอปพลิเคชันบนอุปกรณ์โดยไม่มีการแจ้งเตือน และอ่านข้อมูลบันทึก</string>
     <string name="adb_warning_title">อนุญาตให้แก้ไขข้อบกพร่อง USB หรือไม่</string>
     <string name="add">เพิ่ม</string>
@@ -257,7 +257,7 @@
     <string name="advanced_battery_graph_subtext">ค่าประมาณแบตเตอรี่ที่เหลืออิงตามการใช้งานอุปกรณ์ของคุณ</string>
     <string name="advanced_battery_title">การใช้งานแบตเตอรี่</string>
     <string name="advanced_reboot_summary">เมื่อปลดล็อค การรีบูตจะมีตัวเลือกให้เลือกในการที่จะรีบูตปกติ เข้าสู่รีคัฟเวอรี่ หรือ รีบูตแบบด่วน</string>
-    <string name="advanced_reboot_title">รีบูตขั้นสูง</string>
+    <string name="advanced_reboot_title">เริ่มระบบใหม่แบบขั้นสูง</string>
     <string name="advanced_section_header">ขั้นสูง</string>
     <string name="advanced_security_title">ขั้นสูง</string>
     <string name="advanced_settings">การตั้งค่าขั้นสูง</string>
@@ -272,7 +272,7 @@
     <string name="alert_dialog_cancel">ยกเลิก</string>
     <string name="alert_slider_settings_title">การตั้งค่าระดับความสำคัญ</string>
     <string name="alert_slider_silent_title">การตั้งค่าเสียงเงียบ</string>
-    <string name="alertslider_settings">Alert Slider</string>
+    <string name="alertslider_settings">แถบเลื่อนการเตือน</string>
     <string name="alertslider_settings_soc_tri_state">Alert Slider</string>
     <string name="all_volume_title">ระดับเสียง</string>
     <string name="allow">อนุญาต</string>
@@ -318,7 +318,7 @@
     <string name="aod_clock_default">ค่าเริ่มต้น</string>
     <string name="aod_clock_mcl">McLaren</string>
     <string name="aod_clock_minimalism">เรียบง่าย</string>
-    <string name="aod_clock_none">ไม่มี</string>
+    <string name="aod_clock_none">ไม่มีเลย</string>
     <string name="aod_clock_select_style_text">เลือกรูปแบบนาฬิกา</string>
     <string name="aod_horizon_light_effect_1">สีฟ้า</string>
     <string name="aod_horizon_light_effect_2">สีแดง</string>
@@ -578,7 +578,7 @@
     <string name="battery_auto_restriction_summary">ตรวจจับเมื่อแอปทำให้แบตเตอรี่หมดเร็ว</string>
     <string name="battery_auto_restriction_title">ใช้ตัวจัดการแบตเตอรี่</string>
     <string name="battery_bar">แถบแบตเตอรี่</string>
-    <string name="battery_circle">วงแบตเตอรี่</string>
+    <string name="battery_circle">วงกลมแบตเตอรี่</string>
     <string name="battery_desc_apps">แบตเตอรี่จากการใช้แอปพลิเคชัน</string>
     <string name="battery_desc_bluetooth">แบตเตอรี่จากการใช้บลูทูธ</string>
     <string name="battery_desc_camera">พลังงานแบตเตอรี่ที่กล้องถ่ายรูปใช้งาน</string>
@@ -1288,7 +1288,7 @@
     <string name="data_summary_format">ใช้ไป %1$s ตั้งแต่ %2$s</string>
     <string name="data_switch_started">กำลังสลับซิมข้อมูล การดำเนินการนี้อาจใช้เวลาถึง 1 นาที...</string>
     <string name="data_switch_warning_text">การเปลี่ยนการเข้าถึงดาต้าจะหยุดบริการ LTE ทั้งหมด คุณต้องการดำเนินการต่อหรือไม่?</string>
-    <string name="data_switch_warning_title">เลือกดาต้าในซิม %1$s</string>
+    <string name="data_switch_warning_title">เลือกดาต้าในซิม%1$s</string>
     <string name="data_usage_accounting">การทำบัญชีข้อมูลผู้ให้บริการอาจแตกต่างจากอุปกรณ์ของคุณ</string>
     <string name="data_usage_app">การใช้งานแอป</string>
     <string name="data_usage_app_info_label">ข้อมูลแอป</string>
@@ -2447,6 +2447,7 @@
 ขณะนี้คุณได้ลงชื่อเข้าใช้บัญชีต่อไปนี้แล้ว:
 "</string>
     <string name="master_clear_button_text">ลบข้อมูลทั้งหมด</string>
+    <string name="master_clear_confirm_summary">เนื้อหาทั้งหมดในที่เก็บข้อมูลภายในจะถูกลบทิ้ง รวมถึง เพลง ภาพถ่าย วิดีโอ และข้อมูลส่วนบุคคลอื่นๆ ยืนยันที่จะลบใช่หรือไม่</string>
     <string name="master_clear_confirm_title">ลบข้อมูลทั้งหมดใช่ไหม</string>
     <string name="master_clear_desc">การดำเนินการนี้จะลบข้อมูลทั้งหมดออกจาก<b>พื้นที่เก็บข้อมูลภายใน</b>"โทรศัพท์ ได้แก่
 
@@ -2925,9 +2926,9 @@
     <string name="oneplus_auto_activate">เปิดโดยอัตโนมัติ</string>
     <string name="oneplus_auto_answer_via_bluetooth_summary">รับสายเรียกเข้าโดยอัตโนมัติขณะเชื่อมต่อกับอุปกรณ์เสียงแบบบลูทูธ</string>
     <string name="oneplus_auto_answer_via_bluetooth_title">การรับสายอัจฉริยะสำหรับบลูทูธ</string>
-    <string name="oneplus_auto_check_pin_length">ยืนยัน PIN โดยไม่ต้องแตะ \"✓\"</string>
+    <string name="oneplus_auto_check_pin_length">ปลดล็อคหน้าจอโดยอัตโนมัติหลังจากป้อน PIN</string>
     <string name="oneplus_auto_disconect_the_ap">ฮอตสปอตจะปิดลงโดยอัตโนมัติหลังจากผ่านไป 5 นาที หากอุปกรณ์ไม่ถูกเชื่อมต่อ</string>
-    <string name="oneplus_auto_open_app_none">ไม่มี</string>
+    <string name="oneplus_auto_open_app_none">ไม่มีเลย</string>
     <string name="oneplus_auto_open_app_other_applications">แอปพลิเคชันอื่น</string>
     <string name="oneplus_auto_open_app_recommended">แนะนำ</string>
     <string name="oneplus_auto_open_specified_app">เปิดแอปที่ระบุโดยอัตโนมัติ</string>
@@ -3079,6 +3080,9 @@
 2. ในขั้นตอนการติดตั้งครั้งเดียว กรุณาป้อนข้อมูลลายนิ้วมือเพียงนิ้วเดียว"</string>
     <string name="oneplus_enroll_fingerprint_tips_title">ข้อความการตั้งค่าลายนิ้วมือ</string>
     <string name="oneplus_enter_your_fingerprint">· ลงทะเบียนลายนิ้วมือของคุณ</string>
+    <string name="oneplus_erase_system_data">ลบข้อมูลระบบ</string>
+    <string name="oneplus_erase_system_data_summary">ข้อมูลระบบ ได้แก่ ข้อมูลบัญชี รายชื่อผู้ติดต่อ และข้อมูลแอปจะถูกลบ คุณไม่สามารถเลิกทำการดำเนินการนี้ได้</string>
+    <string name="oneplus_erase_system_data_title">ลบข้อมูลระบบหรือไม่</string>
     <string name="oneplus_esportmode_introduction_summary">แตะปุ่ม สลับเปิด บนแผงโหมดการเล่นเกมเพื่อเปิดใช้งานโหมด Esports</string>
     <string name="oneplus_experience_improvement_programs">โปรแกรมการปรับปรุงประสบการณ์</string>
     <string name="oneplus_face_auto_unlock_while_screen_on_sumary">ปลดล็อคโทรศัพท์ของคุณด้วยใบหน้าของคุณเองทันทีที่เปิดหน้าจอโดยไม่ต้องปัดนิ้วก่อน</string>
@@ -3089,7 +3093,7 @@
     <string name="oneplus_face_setup_unlock_settings_title">มาลองปลดล็อคด้วยใบหน้ากันเถอะ</string>
     <string name="oneplus_face_unlock_add_title">เพิ่มข้อมูลใบหน้า</string>
     <string name="oneplus_face_unlock_assistive_lighting_summary">ในกรณีที่กล้องไม่สามารถจดจำใบหน้าของคุณได้ หน้าจอจะสว่างขึ้นเพื่อช่วยให้กล้องจดจำใบหน้าคุณได้</string>
-    <string name="oneplus_face_unlock_assistive_lighting_title">Face Unlock Assistive Lighting</string>
+    <string name="oneplus_face_unlock_assistive_lighting_title">ไฟช่วยปลดล็อกใบหน้า</string>
     <string name="oneplus_face_unlock_choose_default_method">วิธีการปลดล็อคหน้าจอเริ่มต้น</string>
     <string name="oneplus_face_unlock_choose_default_mode">วิธีเริ่มต้นในการใช้การปลดล็อคด้วยใบหน้า</string>
     <string name="oneplus_face_unlock_choose_swipe_up_mode">ปัดขึ้นเพื่อปลดล็อค</string>
@@ -3241,7 +3245,7 @@
     <string name="oneplus_hand_up_proximity_title">ปลุกหน้าจอ</string>
     <string name="oneplus_hand_up_to_show">หยิบโทรศัพท์ของคุณขึ้นมาเพื่อแสดง</string>
     <string name="oneplus_haptic_feedback_no_app">ไม่มีการติดตั้งเกมที่รองรับ</string>
-    <string name="oneplus_haptic_feedback_no_app_tip">คุณควรติดตั้ง PUBG Mobile และ Asphalt 9</string>
+    <string name="oneplus_haptic_feedback_no_app_tip">คุณสามารถติดตั้ง PUBG Mobile และ Asphalt 9 ได้</string>
     <string name="oneplus_haptic_feedback_summary">ให้การตอบสนองการสัมผัสที่ดียิ่งขึ้นกับเกมที่รองรับ</string>
     <string name="oneplus_haptic_feedback_support">เกมที่รองรับ</string>
     <string name="oneplus_haptic_feedback_tips">ให้การตอบสนองการสัมผัสสำหรับฉากบางฉากในเกม ใช้งานได้เฉพาะเกมที่รองรับเท่านั้น</string>
@@ -3309,7 +3313,7 @@
     <string name="oneplus_media_ring_summary">ปิดเสียงสื่อต่าง ๆ</string>
     <string name="oneplus_mobile_device_name_title">ชื่อโทรศัพท์</string>
     <string name="oneplus_mode_choose">การเลือกโหมด</string>
-    <string name="oneplus_mode_settings">การตั้งค่า Alert Slider</string>
+    <string name="oneplus_mode_settings">การตั้งค่าแถบเลื่อนการเตือน</string>
     <string name="oneplus_moderate">ปานกลาง</string>
     <string name="oneplus_more">เพิ่มเติม</string>
     <string name="oneplus_motion_sensor_settings_title">เจสเชอร์ระบบ</string>
@@ -3458,12 +3462,12 @@
     <string name="oneplus_quickpay_entry_summary">การกดปุ่มหน้าหลักค้างจะเรียกใช้การชำระเงินด่วน</string>
     <string name="oneplus_quickpay_instructions">ขั้นตอน</string>
     <string name="oneplus_quickpay_lock_swtch_summary">การกดปุ่มหน้าหลักค้างด้วยนิ้วที่ลงทะเบียนไว้จะเรียกใช้การชำระเงินด่วนเวลาโทรศัพท์ล็อคอยู่</string>
-    <string name="oneplus_quickpay_lock_swtch_title">การชำระเงินด่วนขณะหน้าจอดับ</string>
+    <string name="oneplus_quickpay_lock_swtch_title">ปิดหน้าจอการชำระเงินด่วน</string>
     <string name="oneplus_quickpay_select_default_way">เลือกตัวเลือกการชำระเงินเริ่มต้น</string>
     <string name="oneplus_quickpay_unlock_swtch_summary">การกดปุ่มหน้าหลักค้างจะเรียกใช้การชำระเงินด่วนเวลาที่โทรศัพท์ไม่ได้ล็อค</string>
-    <string name="oneplus_quickpay_unlock_swtch_title">การชำระเงินด่วนขณะหน้าจอเปิด</string>
-    <string name="oneplus_quickpay_way_alipay_qrcode">Alipay QR Code</string>
-    <string name="oneplus_quickpay_way_alipay_scanning">Alipay Scanning</string>
+    <string name="oneplus_quickpay_unlock_swtch_title">เปิดหน้าจอการชำระเงินด่วน</string>
+    <string name="oneplus_quickpay_way_alipay_qrcode">รหัส QR ของ Alipay</string>
+    <string name="oneplus_quickpay_way_alipay_scanning">การสแกน Alipay</string>
     <string name="oneplus_quickpay_way_paytm">Paytm</string>
     <string name="oneplus_quickpay_way_wecaht_qrcode">รหัส QR ของ WeChat</string>
     <string name="oneplus_quickpay_way_wecaht_scanning">การสแกน WeChat</string>
@@ -3505,7 +3509,7 @@
     <string name="oneplus_rename_fingerprint_list">เปลี่ยนชื่อลายนิ้วมือ</string>
     <string name="oneplus_reset_all_data">รีเซ็ตข้อมูลทั้งหมด</string>
     <string name="oneplus_reset_network">กำลังรีเซ็ตการตั้งค่าเน็ตเวิร์ก กรุณารอสักครู่...</string>
-    <string name="oneplus_ring_pattern">เสียงเข้า</string>
+    <string name="oneplus_ring_pattern">เสียง</string>
     <string name="oneplus_ring_pattern_soc_tri_state_summary">การโทรและการแจ้งเตือนจะดังขึ้น</string>
     <string name="oneplus_ring_pattern_summary">การโทรและการแจ้งเตือนจะดังขึ้น</string>
     <string name="oneplus_ringtone_and_vibrate">เสียงเรียกเข้าและการสั่น</string>
@@ -3605,7 +3609,7 @@
     <string name="oneplus_select_fingerprint_animation_effect_3">ลายแถบ</string>
     <string name="oneplus_select_fingerprint_animation_effect_4">ระลอก</string>
     <string name="oneplus_select_fingerprint_animation_effect_mcl">McLaren</string>
-    <string name="oneplus_select_fingerprint_animation_effect_none">ไม่มี</string>
+    <string name="oneplus_select_fingerprint_animation_effect_none">ไม่มีเลย</string>
     <string name="oneplus_select_fingerprint_animation_effect_title">เลือกเอฟเฟ็กต์ภาพเคลื่อนไหวลายนิ้วมือ</string>
     <string name="oneplus_service_messaging_summary">อนุญาตให้ OnePlus ส่งพร้อมท์บริการการส่งข้อความบนคลาวด์ให้กับคุณเพื่อให้มั่นใจได้ว่าคุณจะได้รับประสบการณ์ที่ดีที่สุดในการใช้งานผลิตภัณฑ์</string>
     <string name="oneplus_service_messaging_title">การส่งข้อความเกี่ยวกับบริการของ OnePlus</string>
@@ -3724,7 +3728,7 @@
     <string name="oneplus_top_level_cloud_o2_summary">ซิงค์ข้อมูลกับคลาวด์</string>
     <string name="oneplus_top_level_connected_summary">NFC, แคสต์, แตะและชำระเงิน</string>
     <string name="oneplus_top_level_display_summary">แถบสถานะ, การแจ้งเตือนอัตโนมัติเมื่อหยิบเครื่อง, โหมดกลางคืน, โหมดการอ่าน</string>
-    <string name="oneplus_top_level_network_summary">SIM, เครือข่ายเคลื่อนที่, การใช้งานข้อมูล, ฮอตสปอต</string>
+    <string name="oneplus_top_level_network_summary">SIM, เครือข่ายมือถือ, การใช้งานข้อมูล, ฮอตสปอต</string>
     <string name="oneplus_top_level_privacy_summary">สิทธิ์, ข้อมูลส่วนบุคคล</string>
     <string name="oneplus_top_level_security_dashboard_summary">ลายนิ้วมือ, การปลดล็อคด้วยใบหน้า, การกู้ภัยฉุกเฉิน</string>
     <string name="oneplus_top_level_security_summary">ลายนิ้วมือ, การปลดล็อคด้วยใบหน้า, การกู้ภัยฉุกเฉิน</string>
@@ -3755,7 +3759,7 @@
     <string name="oneplus_vibration_settings_soc_tri_state">การสั่น</string>
     <string name="oneplus_vibration_settings_soc_tri_state_summary">การโทรและการแจ้งเตือนจะเงียบเสียงและตั้งเป็นการสั่นเท่านั้น ยกเว้นการปลุก</string>
     <string name="oneplus_vibration_summary">การปลุกจะส่งเสียงเตือนขึ้นเสมอ</string>
-    <string name="oneplus_video_enhancer">ตัวเสริมคุณภาพวิดีโอ</string>
+    <string name="oneplus_video_enhancer">เอฟเฟกต์สีสันสดใส</string>
     <string name="oneplus_video_enhancer_footer">เสริมคุณภาพสีในขณะที่เล่นวิดีโอ</string>
     <string name="oneplus_video_enhancer_summary">เสริมคุณภาพสีในขณะที่เล่นวิดีโอ</string>
     <string name="oneplus_volume_keys_adjust">ใช้ปุ่มระดับเสียงเพื่อปรับ</string>
@@ -3821,7 +3825,7 @@
     <string name="op_fragment">สั้น</string>
     <string name="op_gamespace">Game Space</string>
     <string name="op_high_power_app_manager">แอปที่ใช้พลังงานสูง</string>
-    <string name="op_light_mode_title">สว่าง</string>
+    <string name="op_light_mode_title">เบา</string>
     <string name="op_linked_launch_summary">แอปสามารถจัดการเชื่อมโยงให้เปิดทำงานอยู่ในการทำงานเบื้องหลังได้</string>
     <string name="op_linked_launch_title">เปิดแอปอัตโนมัติ</string>
     <string name="op_lockpassword_choose_your_password_header_for_face">ในการใช้การปลดล็อคด้วยใบหน้า ให้ตั้งค่ารหัสผ่าน</string>
@@ -3907,7 +3911,7 @@
     <string name="owner_info_settings_summary">ไม่มี</string>
     <string name="owner_info_settings_title">ข้อความบนหน้าจอล็อก</string>
     <string name="oxygen_version">รุ่น OxygenOS</string>
-    <string name="oxygen_version_default">ไม่​รู้จัก</string>
+    <string name="oxygen_version_default">ไม่ทราบสภาพ</string>
     <string name="packages_subtitle">แพ็คเก็จที่รวมมาด้วย</string>
     <string name="page_tab_title_summary">ทั้งหมด</string>
     <string name="page_tab_title_support">เคล็ดลับและการสนับสนุน</string>
@@ -4664,7 +4668,7 @@ PIN อาจไม่ถูกต้อง"</string>
     <string name="sim_enabler_both_inactive">มีข้อผิดพลาด ไม่สามารถปิดใช้งานซิมทั้งหมดได้</string>
     <string name="sim_enabler_disabling">กำลังปิดใช้งาน...</string>
     <string name="sim_enabler_enabling">กำลังเปิดใช้งาน...</string>
-    <string name="sim_enabler_in_call">มีข้อผิดพลาด อยู่ในระหว่างการสนทนา!</string>
+    <string name="sim_enabler_in_call">ข้อผิดพลาด อยู่ในระหว่างการสนทนา!</string>
     <string name="sim_enabler_need_disable_sim">กำลังปิดใช้งานซิม คุณแน่ใจหรือไม่?</string>
     <string name="sim_enabler_need_enable_sim">กำลังเปิดใช้งานซิม คุณแน่ใจหรือไม่?</string>
     <string name="sim_enabler_need_switch_data_service">จะปิดการใช้งานแล้วสลับไปเป็นซิม %1$s เพื่อบริการดาต้า คุณแน่ใจหรือไม่?</string>
@@ -5953,24 +5957,24 @@ PIN อาจไม่ถูกต้อง"</string>
     <string name="wifi_wapi_as_cert">AS Certificate</string>
     <string name="wifi_wapi_cert_cancel_button">ยกเลิก</string>
     <string name="wifi_wapi_cert_create_subdir">สร้างไดเรกทอรี</string>
-    <string name="wifi_wapi_cert_delet_subdir">เลือก Certificate ที่เหมาะสม</string>
+    <string name="wifi_wapi_cert_delet_subdir">เลือกใบรับรองที่เหมาะสม</string>
     <string name="wifi_wapi_cert_install">ติดตั้ง WAPI Certificate</string>
     <string name="wifi_wapi_cert_install_button">ติดตั้ง</string>
     <string name="wifi_wapi_cert_mgmt_as_dont_exist">การ์ด SD และที่เก็บภายในไม่มี AS Certificate กรุณาตรวจสอบ!</string>
     <string name="wifi_wapi_cert_mgmt_as_format_is_wrong">รูปแบบของ AS Certificate นั้นผิด! กรุณาติดตั้ง AS Certificate ที่ถูกต้อง</string>
-    <string name="wifi_wapi_cert_mgmt_as_name_is_empty">กรุณาใส่ชื่อ AS Certificate</string>
+    <string name="wifi_wapi_cert_mgmt_as_name_is_empty">กรุณาใส่ชื่อใบรับรอง AS</string>
     <string name="wifi_wapi_cert_mgmt_subdir_create_fail">ไม่สามารถสร้างไดเรกทอรีได้</string>
     <string name="wifi_wapi_cert_mgmt_subdir_exist">กรุณาใส่ชื่อไดเรกทอรีอื่น ชื่อนี้มีอยู่แล้ว</string>
     <string name="wifi_wapi_cert_mgmt_subdir_name_is_empty">กรุณาใส่ชื่อไดเรกทอรีที่คุณต้องการสร้าง!</string>
     <string name="wifi_wapi_cert_mgmt_titlebar">การจัดการ WAPI Certificate</string>
     <string name="wifi_wapi_cert_mgmt_user_dont_exist">การ์ด SD และที่เก็บภายในไม่มี User Certificate กรุณาตรวจสอบ!</string>
     <string name="wifi_wapi_cert_mgmt_user_format_is_wrong">รูปแบบของ User Certificate นั้นผิด! กรุณาติดตั้ง User Certificate ที่ถูกต้อง</string>
-    <string name="wifi_wapi_cert_mgmt_user_name_is_empty">กรุณาใส่ชื่อ User Certificate</string>
+    <string name="wifi_wapi_cert_mgmt_user_name_is_empty">กรุณาใส่ชื่อใบรับรองผู้ใช้งาน</string>
     <string name="wifi_wapi_cert_not_installed">ไม่ได้ติดตั้ง Certificate! กรุณาติดตั้ง Certificate แล้วพยายามเชื่อมต่อใหม่</string>
-    <string name="wifi_wapi_cert_uninstall">ถอนการติดตั้ง WAPI Certificate</string>
+    <string name="wifi_wapi_cert_uninstall">ถอนการติดตั้งใบรับรอง WAPI</string>
     <string name="wifi_wapi_cert_uninstall_button">ถอนการติดตั้ง</string>
     <string name="wifi_wapi_certification_dont_exist">รหัสผ่านเน็ตเวิร์กที่คุณพิมพ์ไม่ถูกต้อง กรุณาลองใหม่อีกครั้ง</string>
-    <string name="wifi_wapi_user_cert">User Certificate</string>
+    <string name="wifi_wapi_user_cert">ใบรับรองผู้ใช้งาน</string>
     <string name="wifi_wps_available_first_item">WPS ใช้งานได้</string>
     <string name="wifi_wps_available_second_item">" (WPS ใช้งานได้)"</string>
     <string name="window_animation_scale_title">อัตราการเคลื่อนไหวของหน้าต่าง</string>

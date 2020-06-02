@@ -322,7 +322,7 @@
 .end method
 
 .method private bindStats(Landroid/app/usage/NetworkStats;[I)V
-    .locals 22
+    .locals 27
 
     move-object/from16 v1, p0
 
@@ -741,58 +741,78 @@
 
     long-to-int v6, v6
 
+    move/from16 v24, v6
+
     goto :goto_9
 
     :cond_c
-    move v6, v0
+    move/from16 v24, v0
 
     :goto_9
-    new-instance v7, Lcom/android/settings/datausage/AppDataUsagePreference;
+    new-instance v6, Lcom/android/settings/datausage/AppDataUsagePreference;
 
     invoke-virtual/range {p0 .. p0}, Lcom/android/settings/datausage/DataUsageList;->getContext()Landroid/content/Context;
 
-    move-result-object v8
+    move-result-object v22
 
     invoke-virtual {v11, v5}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
-    move-result-object v9
+    move-result-object v7
 
-    check-cast v9, Lcom/android/settingslib/AppItem;
+    move-object/from16 v23, v7
 
-    iget-object v10, v1, Lcom/android/settings/datausage/DataUsageList;->mUidDetailProvider:Lcom/android/settingslib/net/UidDetailProvider;
+    check-cast v23, Lcom/android/settingslib/AppItem;
 
-    invoke-direct {v7, v8, v9, v6, v10}, Lcom/android/settings/datausage/AppDataUsagePreference;-><init>(Landroid/content/Context;Lcom/android/settingslib/AppItem;ILcom/android/settingslib/net/UidDetailProvider;)V
+    iget-object v7, v1, Lcom/android/settings/datausage/DataUsageList;->mUidDetailProvider:Lcom/android/settingslib/net/UidDetailProvider;
 
-    iget-object v8, v1, Lcom/android/settings/datausage/DataUsageList;->mExistedItems:Landroid/util/SparseArray;
+    iget-object v8, v1, Lcom/android/settings/datausage/DataUsageList;->mApps:Landroidx/preference/PreferenceGroup;
+
+    move-object/from16 v21, v6
+
+    move-object/from16 v25, v7
+
+    move-object/from16 v26, v8
+
+    invoke-direct/range {v21 .. v26}, Lcom/android/settings/datausage/AppDataUsagePreference;-><init>(Landroid/content/Context;Lcom/android/settingslib/AppItem;ILcom/android/settingslib/net/UidDetailProvider;Landroidx/preference/PreferenceGroup;)V
+
+    iget-object v7, v1, Lcom/android/settings/datausage/DataUsageList;->mExistedItems:Landroid/util/SparseArray;
 
     invoke-virtual {v11, v5}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
-    move-result-object v9
-
-    check-cast v9, Lcom/android/settingslib/AppItem;
-
-    iget v9, v9, Lcom/android/settingslib/AppItem;->key:I
-
-    invoke-virtual {v8, v9}, Landroid/util/SparseArray;->get(I)Ljava/lang/Object;
-
     move-result-object v8
 
-    if-eqz v8, :cond_d
+    check-cast v8, Lcom/android/settingslib/AppItem;
+
+    iget v8, v8, Lcom/android/settingslib/AppItem;->key:I
+
+    invoke-virtual {v7, v8}, Landroid/util/SparseArray;->get(I)Ljava/lang/Object;
+
+    move-result-object v7
+
+    if-eqz v7, :cond_d
 
     goto :goto_a
 
     :cond_d
-    new-instance v8, Lcom/android/settings/datausage/DataUsageList$3;
+    new-instance v7, Lcom/android/settings/datausage/DataUsageList$3;
 
-    invoke-direct {v8, v1}, Lcom/android/settings/datausage/DataUsageList$3;-><init>(Lcom/android/settings/datausage/DataUsageList;)V
+    invoke-direct {v7, v1}, Lcom/android/settings/datausage/DataUsageList$3;-><init>(Lcom/android/settings/datausage/DataUsageList;)V
 
-    invoke-virtual {v7, v8}, Lcom/android/settings/datausage/AppDataUsagePreference;->setOnPreferenceClickListener(Landroidx/preference/Preference$OnPreferenceClickListener;)V
+    invoke-virtual {v6, v7}, Lcom/android/settings/datausage/AppDataUsagePreference;->setOnPreferenceClickListener(Landroidx/preference/Preference$OnPreferenceClickListener;)V
 
-    iget-object v8, v1, Lcom/android/settings/datausage/DataUsageList;->mApps:Landroidx/preference/PreferenceGroup;
+    iget-object v7, v1, Lcom/android/settings/datausage/DataUsageList;->mApps:Landroidx/preference/PreferenceGroup;
 
-    invoke-virtual {v8, v7}, Landroidx/preference/PreferenceGroup;->addPreference(Landroidx/preference/Preference;)Z
+    invoke-virtual {v7, v6}, Landroidx/preference/PreferenceGroup;->addPreference(Landroidx/preference/Preference;)Z
 
-    iget-object v8, v1, Lcom/android/settings/datausage/DataUsageList;->mExistedItems:Landroid/util/SparseArray;
+    iget-object v7, v1, Lcom/android/settings/datausage/DataUsageList;->mExistedItems:Landroid/util/SparseArray;
+
+    invoke-virtual {v11, v5}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+
+    move-result-object v8
+
+    check-cast v8, Lcom/android/settingslib/AppItem;
+
+    iget v8, v8, Lcom/android/settingslib/AppItem;->key:I
 
     invoke-virtual {v11, v5}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -800,15 +820,7 @@
 
     check-cast v9, Lcom/android/settingslib/AppItem;
 
-    iget v9, v9, Lcom/android/settingslib/AppItem;->key:I
-
-    invoke-virtual {v11, v5}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
-
-    move-result-object v10
-
-    check-cast v10, Lcom/android/settingslib/AppItem;
-
-    invoke-virtual {v8, v9, v10}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
+    invoke-virtual {v7, v8, v9}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
 
     :goto_a
     add-int/lit8 v5, v5, 0x1
@@ -996,7 +1008,7 @@
 
     iget-object v3, p0, Lcom/android/settings/datausage/DataUsageList;->mUsageAmount:Landroidx/preference/Preference;
 
-    const v4, 0x7f120573
+    const v4, 0x7f120572
 
     const/4 v5, 0x1
 
@@ -1291,7 +1303,7 @@
 
     iget-object v0, p0, Lcom/android/settings/datausage/DataUsageList;->mHeader:Landroid/view/View;
 
-    const v3, 0x7f0a0722
+    const v3, 0x7f0a0724
 
     invoke-virtual {v0, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1659,7 +1671,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f120522
+    const v2, 0x7f120521
 
     invoke-virtual {v1, v2}, Lcom/android/settings/core/SubSettingLauncher;->setTitleRes(I)Lcom/android/settings/core/SubSettingLauncher;
 

@@ -191,6 +191,7 @@
     <string name="manage_device_administrators">ডিভাইসের প্রশাসক পরিচালনা করুন</string>
     <string name="manage_fingerprints_dialog">ফিঙ্গারপ্রিন্ট আনলক এখন সক্রিয়। আপনি কি আপনার ফিঙ্গারপ্রিন্টগুলি পরিচালনা করতে চান?</string>
     <string name="manage_users">ব্যবহারকারীদের পরিচালনা করুন</string>
+    <string name="master_clear_confirm_summary">এছাড়াও অভ্যন্তরীণ সঞ্চয়স্থানের সমস্ত বিষয়বস্তু সরানো হবে, সঙ্গীত, ফটো, ভিডিও এবং অন্য ব্যক্তিগত ডেটা সহ৷ মুছে দিতে নিশ্চিত?</string>
     <string name="memory_capacity_title">RAM</string>
     <string name="multi_app_label_badge">সমান্তরাল %1$s</string>
     <string name="music_application_title">মিউজিক অ্যাপ</string>
@@ -250,7 +251,7 @@
     <string name="oneplus_auto_activate">স্বয়ংক্রিয়ভাবে চালু করুন</string>
     <string name="oneplus_auto_answer_via_bluetooth_summary">একটি Bluetooth অডিও ডিভাইসে সংযুক্ত থাকাকালীন আগত কলটির স্বয়ংক্রিয়ভাবে উত্তর দেওয়া হবে</string>
     <string name="oneplus_auto_answer_via_bluetooth_title">ব্লুটুথের জন্য স্মার্ট উত্তর</string>
-    <string name="oneplus_auto_check_pin_length">\"✓\" ট্যাপ না করেই PINটি নিশ্চিত করুন</string>
+    <string name="oneplus_auto_check_pin_length">পিন দেওয়ার পরে স্বয়ংক্রিয়ভাবে স্ক্রিন আনলক হয়</string>
     <string name="oneplus_auto_disconect_the_ap">কোনও ডিভাইস সংযুক্ত না হলে, 5 মিনিট পরে হটস্পট অটোমেটিকভাবে বন্ধ হয়ে যাবে।</string>
     <string name="oneplus_auto_open_app_none">কোনোটিই নয়</string>
     <string name="oneplus_auto_open_app_other_applications">অন্য অ্যাপ্লিকেশনগুলি</string>
@@ -258,8 +259,8 @@
     <string name="oneplus_auto_open_specified_app">নির্দিষ্ট অ্যাপ আপনাআপনি খুলুন</string>
     <string name="oneplus_auto_play">অটো প্লে</string>
     <string name="oneplus_auto_play_summary">ইয়ারফোন সংযোগ করার সময় মিউজিক প্লেব্যাক নিজে থেকেই শুরু হয়ে যাবে</string>
-    <string name="oneplus_auto_switch_mobile_data">Auto switch to mobile data</string>
-    <string name="oneplus_auto_switch_mobile_data_summary">Automatically switch to mobile data when all Wi‑Fi networks are of poor quality and the mobile data is turned on</string>
+    <string name="oneplus_auto_switch_mobile_data">মোবাইল ডেটাতে আপাআপনি চলে যান</string>
+    <string name="oneplus_auto_switch_mobile_data_summary">যখন মোবাইল ডেটা অন করা থাকে এবং সবকটি Wi‑Fi নেটওয়ার্ক খারাপ গুণমানের হয় তখন আপনাআপনি মোবাইল ডেটাতে চলে যান</string>
     <string name="oneplus_auto_turn_on_apps">এইসব অ্যাপগুলির জন্য স্বয়ংক্রিয়ভাবে শুরু করুন</string>
     <string name="oneplus_auto_turn_on_car_charger_info_o2">উপরের আইটেমগুলিকে সেট করে আপনি প্রতিবার কার চার্জার সংযুক্ত হলে বিরক্ত করবেন না সক্রিয় করতে ও আপনার নির্দিষ্ট করা অ্যাপ খুলতে পারবেন</string>
     <string name="oneplus_auto_turn_on_dnd">বিরক্ত করবেন না আপনাআপনি অন করুন</string>
@@ -404,6 +405,9 @@
 2. একটি একক সেট আপ প্রক্রিয়ায়, অনুগ্রহ করে শুধুমাত্র একটি আঙুলের ফিঙ্গারপ্রিন্ট তথ্য এন্টার করুন"</string>
     <string name="oneplus_enroll_fingerprint_tips_title">ফিঙ্গারপ্রিন্ট সেট আপ করা</string>
     <string name="oneplus_enter_your_fingerprint">· আপনার ফিঙ্গারপ্রিন্ট নথিভুক্ত করুন</string>
+    <string name="oneplus_erase_system_data">সিস্টেম ডেটা মুছুন</string>
+    <string name="oneplus_erase_system_data_summary">অ্যাকাউন্টের তথ্য, পরিচিতি এবং অ্যাপ সহ সিস্টেম ডেটা মোছা হবে৷ আপনি এই কাজটি পূর্বাবস্থায় নিয়ে যেতে পারবেন না৷</string>
+    <string name="oneplus_erase_system_data_title">সিস্টেম ডেটা মুছবেন?</string>
     <string name="oneplus_esportmode_introduction_summary">ইস্পোর্টস মোড সক্রিয় করতে গেমিং মোড প্যানেলে টগল চালু ট্যাপ করুন।</string>
     <string name="oneplus_experience_improvement_programs">অভিজ্ঞতা উন্নতিসাধান প্রোগ্রাম</string>
     <string name="oneplus_face_auto_unlock_while_screen_on_sumary">স্ক্রীন খোলার পর প্রথমে সোয়াইপ না করে আপনার মুখ দিয়ে আপনার ফোন আনলক করুন।</string>
@@ -589,7 +593,7 @@
     <string name="oneplus_init_finger_input">আঙ্গুলের ছাপ শুরু হচ্ছে</string>
     <string name="oneplus_instrucitons">নির্দেশনা</string>
     <string name="oneplus_intelligently_select_best_wifi">ভেবে চিন্তে সেরা Wi‑Fiটি বেছে নিন</string>
-    <string name="oneplus_intelligently_select_best_wifi_summary">Intelligently select and connect the best Wi‑Fi by detecting and analyzing the connectivity and signal strength of Wi‑Fi networks</string>
+    <string name="oneplus_intelligently_select_best_wifi_summary">Wi‑Fi নেটওয়ার্কগুলি থেকে কানেক্টিভিটি ও সিগন্যাল শক্তি সনাক্ত ও বিশ্লেষণ করে সেরা Wi‑Fi বেছে নিয়ে তার সাথে কানেক্ট করুন</string>
     <string name="oneplus_intensely">শক্তিশালী</string>
     <string name="oneplus_is_turn_on_feature">আপনি কি নিশ্চিতভাবে এই ফিচারটি চালু করতে চান?</string>
     <string name="oneplus_is_turn_on_feature_summary">"যখন এটি চালু থাকে, নিম্নলিখিত পরিস্থিতি মাঝে মধ্যে ঘটতে পারে:
@@ -653,8 +657,8 @@
     <string name="oneplus_network_auto_change_summary">সংযোগ ও সিগন্যাল শক্তির ওপর নির্ভর করে Wi-Fi নেটওয়ার্ক বা মোবাইল ডেটার মধ্যে নিজে থেকে স্যুইচ হবে</string>
     <string name="oneplus_network_auto_change_title">স্মার্ট Wi-Fi পরিবর্তনকারী</string>
     <string name="oneplus_network_dashboard_title">Wi-Fi এবং ইন্টারনেট</string>
-    <string name="oneplus_network_datausage_restrict_title">Disabled data usage</string>
-    <string name="oneplus_network_wifi_restrict_title">Disabled Wi-Fi</string>
+    <string name="oneplus_network_datausage_restrict_title">ডেটার ব্যবহার বন্ধ করা হয়েছে</string>
+    <string name="oneplus_network_wifi_restrict_title">Wi‑Fi বন্ধ আছে</string>
     <string name="oneplus_never_auto">অক্ষমিত</string>
     <string name="oneplus_night_mode_brightness">উজ্জলতা</string>
     <string name="oneplus_night_mode_brightness_strong">অন্ধকারময়</string>
@@ -900,7 +904,7 @@
     <string name="oneplus_search_keyword_swap_navkeys">বোতামগুলি সোয়াইপ</string>
     <string name="oneplus_search_keyword_switch">ট্র্যান্সফার, ডেটা পাঠানো</string>
     <string name="oneplus_search_keyword_theme_settings">লক স্ক্রিন কাস্টমাইজেশন, ওয়ালপেপার, ঘড়ির স্টাইল, ফিঙ্গারপ্রিন্ট অ্যানিমেশন, Horizon light, সিস্টেম কাস্টমাইজেশন, অ্যাকসেন্ট রঙ, আকার, ফন্ট, টোন, আইকন প্যাক, উজ্জল লাইট, হালকা অন্ধকার, স্পন্দনশীল টিটস</string>
-    <string name="oneplus_search_keyword_theme_settings_mcl">লক স্ক্রিন কাস্টমাইজেশন, ওয়ালপেপার, ঘড়ির স্টাইল, ফিঙ্গারপ্রিন্ট অ্যানিমেশন, Horizon Light, সিস্টেম কাস্টমাইজেশন, অ্যাকসেন্ট রঙ, আকার, ফন্ট, টোন, আইকন প্যাক, উজ্জল লাইট, হালকা অন্ধকার, স্পন্দনশীল টিটস, McLaren</string>
+    <string name="oneplus_search_keyword_theme_settings_mcl">লক স্ক্রিন কাস্টমাইজেশন, ওয়ালপেপার, ঘড়ির স্টাইল, ফিঙ্গারপ্রিন্ট অ্যানিমেশন, Horizon light, সিস্টেম কাস্টমাইজেশন, অ্যাকসেন্ট রঙ, আকার, ফন্ট, টোন, আইকন প্যাক, উজ্জল লাইট, হালকা অন্ধকার, স্পন্দনশীল টিটস, McLaren</string>
     <string name="oneplus_search_keyword_three_screenshots">স্ক্রীনশট</string>
     <string name="oneplus_search_keyword_timer_boot" />
     <string name="oneplus_search_keyword_user_experience">বিজ্ঞপ্তি, অভিজ্ঞতা, প্রোগ্রাম, উন্নতি</string>
@@ -964,7 +968,7 @@
     <string name="oneplus_smart_wifi_connection">স্মার্ট Wi‑Fi কানেকশন</string>
     <string name="oneplus_sms">SMS</string>
     <string name="oneplus_sms_and_vibration">SMS এর রিংটোন এবং কম্পন</string>
-    <string name="oneplus_snooze_options_title">Snooze notifications from the pull-down shade</string>
+    <string name="oneplus_snooze_options_title">বিজ্ঞপ্তি শেড থেকে বিজ্ঞপ্তিগুলি স্নুজ করুন</string>
     <string name="oneplus_sound_and_vibrate">শব্দ &amp; কম্পন</string>
     <string name="oneplus_sound_settings_summary">বিরক্ত করবেন না, ইয়ার ফোন মোড</string>
     <string name="oneplus_sound_tuner">Dolby Atmos</string>
@@ -1014,8 +1018,8 @@
     <string name="oneplus_theme_preset_dark">সূক্ষ্ম অন্ধকার</string>
     <string name="oneplus_theme_preset_light">আলোকসজ্জা</string>
     <string name="oneplus_theme_preset_mcl">McLaren</string>
-    <string name="oneplus_theme_preset_summary">Preset themes come with a wide range of accent color, tone, etc</string>
-    <string name="oneplus_theme_preset_summary_tmp">Preset themes come with a wide range of wallpapers, accent color, tone, etc</string>
+    <string name="oneplus_theme_preset_summary">Preset themes come with a wide range of accent colors, tones, etc</string>
+    <string name="oneplus_theme_preset_summary_tmp">Preset themes come with a wide range of wallpapers, accent colors, tones, etc</string>
     <string name="oneplus_theme_shape">আকার</string>
     <string name="oneplus_theme_shape_effect_round">গোলাকার</string>
     <string name="oneplus_theme_shape_effect_round_rectangle">গোলাকার আয়ত</string>
@@ -1080,9 +1084,9 @@
     <string name="oneplus_vibration_settings_soc_tri_state">কম্পন</string>
     <string name="oneplus_vibration_settings_soc_tri_state_summary">অ্যালার্ম ছাড়া কল এবং বিজ্ঞপ্তি নিঃশব্দ হয়ে যাবে এবং কম্পনে সেট হয়ে যাবে</string>
     <string name="oneplus_vibration_summary">অ্যালার্ম সর্বদা বাজবে</string>
-    <string name="oneplus_video_enhancer">ভিডিও উন্নতকারী</string>
-    <string name="oneplus_video_enhancer_footer">ভিডিওগুলি চালানোর সময় রঙ বাড়িয়ে তোলে</string>
-    <string name="oneplus_video_enhancer_summary">ভিডিওগুলি চালানোর সময় রঙ বাড়িয়ে তোলে</string>
+    <string name="oneplus_video_enhancer">প্রাণবন্ত রঙের প্রভাব</string>
+    <string name="oneplus_video_enhancer_footer">ভিডিও চালানোর সময় রঙ উন্নত করে</string>
+    <string name="oneplus_video_enhancer_summary">ভিডিও চালানোর সময় রঙ উন্নত করে</string>
     <string name="oneplus_volume_keys_adjust">ভলিউম বোতাম দিয়ে কমবেশি করুন</string>
     <string name="oneplus_volume_keys_adjust_media">মিডিয়া ভলিউম</string>
     <string name="oneplus_volume_keys_adjust_ringtones">রিংটোন ভলিউম</string>
@@ -1102,7 +1106,7 @@
     <string name="oneplus_wifi_name_dialog_message">আপনি সম্প্রচার নেটওয়ার্কের নাম (SSID) বিকল্পটি স্যুইচ অফ করলে আপনার ফোনটি অন্যান্য ডিভাইসের কাছে দৃশ্যমান হবে না এবং লভ্য Wi-Fi নেটওয়ার্কের তালিকাতে উপস্থিত হবে না। অন্য ডিভাইসগুলি এরপরেও এর নেটওয়ার্কের নাম ম্যানুয়ালি লিখে আপনার হটস্পটে সংযুক্ত হতে পারে।</string>
     <string name="oneplus_wifi_name_dialog_title">আপনার হটস্পট এখন দৃশ্যমান নয়</string>
     <string name="oneplus_wifi_scan_always_available">স্ক্যান সর্বদা উপলব্ধ</string>
-    <string name="oneplus_wifi_scan_always_available_summary">Allow location services or other apps to scan for networks when Wi-Fi is off</string>
+    <string name="oneplus_wifi_scan_always_available_summary">Wi‑Fi বন্ধ থাকলে নেটওয়ার্কের জন্য অবস্থানের পরিষেবা ও অন্যান্য অ্যাপকে স্ক্যান করতে দিন</string>
     <string name="oneplus_wifi_scan_always_available_title">সর্বদা স্ক্যান করার মঞ্জুরি দিন</string>
     <string name="oneplus_wireless_adb_debugging">ওয়্যারলেস ADB ডিবাগিং</string>
     <string name="oneplus_wirelesssettings_summary">NFC, পোর্টেবল হটস্পট</string>
@@ -1136,9 +1140,9 @@
     <string name="op_default_apps_summary">হোম, ব্রাউজার</string>
     <string name="op_default_luncher_title">হোম অ্যাপ</string>
     <string name="op_dnd_summary">বিরক্ত করবেন না</string>
-    <string name="op_face_unlock_set_unlock_password">Face unlock + Password</string>
-    <string name="op_face_unlock_set_unlock_pattern">Face unlock + Pattern</string>
-    <string name="op_face_unlock_set_unlock_pin">Face unlock + PIN</string>
+    <string name="op_face_unlock_set_unlock_password">ফেস আনলক + পাসওয়ার্ড</string>
+    <string name="op_face_unlock_set_unlock_pattern">ফেস আনলক + প্যাটার্ন</string>
+    <string name="op_face_unlock_set_unlock_pin">ফেস আনলক + পিন</string>
     <string name="op_face_unlock_skip_face">ফেস আনলক না করেই চালিয়ে যান</string>
     <string name="op_failed_to_get_data">ডেটা পুনরুদ্ধার করতে ব্যর্থ হয়েছে</string>
     <string name="op_fetch_data_in_process">লোড হচ্ছে</string>
@@ -1148,9 +1152,9 @@
     <string name="op_light_mode_title">হালকা</string>
     <string name="op_linked_launch_summary">ব্যাকগ্রাউন্ডে লিঙ্ক করা যেতে পারে এমন অ্যাপগুলো পরিচালনা করুন</string>
     <string name="op_linked_launch_title">অ্যাপ স্বতঃ লঞ্চ</string>
-    <string name="op_lockpassword_choose_your_password_header_for_face">To use face unlock, set password</string>
-    <string name="op_lockpassword_choose_your_pattern_header_for_face">To use face unlock, set pattern</string>
-    <string name="op_lockpassword_choose_your_pin_header_for_face">To use face unlock, set PIN</string>
+    <string name="op_lockpassword_choose_your_password_header_for_face">ফেস আনলক ব্যবহার করতে, পাসওয়ার্ড সেট করুন</string>
+    <string name="op_lockpassword_choose_your_pattern_header_for_face">ফেস আনলক ব্যবহার করতে, প্যাটার্ন সেট করুন</string>
+    <string name="op_lockpassword_choose_your_pin_header_for_face">ফেস আনলক ব্যবহার করতে, পিন সেট করুন</string>
     <string name="op_member_description">এক্সক্লুসিভ সুবিধাদি পেতে আপনার ডিভাইস বাঁধুন</string>
     <string name="op_member_title">OnePlus অ্যাকাউন্টে লগ ইন করুন</string>
     <string name="op_not_disturb">বিরক্ত করবেন না এর পছন্দসমূহ</string>
@@ -1250,7 +1254,7 @@
     <string name="sim_enabler_both_inactive">ত্রুটি। সমস্ত SIM অক্ষম করা যাবে না</string>
     <string name="sim_enabler_disabling">নিষ্ক্রিয় হচ্ছে...</string>
     <string name="sim_enabler_enabling">সক্রিয় হচ্ছে...</string>
-    <string name="sim_enabler_in_call">কলে ত্রুটি,!</string>
+    <string name="sim_enabler_in_call">কলে ত্রুটি!</string>
     <string name="sim_enabler_need_disable_sim">SIM নিষ্ক্রিয় করা হচ্ছে, আপনি কি নিশ্চিত?</string>
     <string name="sim_enabler_need_enable_sim">SIM সক্রিয় করা হচ্ছে, আপনি কি নিশ্চিত?</string>
     <string name="sim_enabler_need_switch_data_service">এটি অক্ষম করবে এবং ডেটা পরিষেবার জন্য SIM%1$s এ পাল্টান, আপনি কি নিশ্চিত?</string>
@@ -1279,7 +1283,7 @@
     <string name="status_bar_settings_work_title">কাজের প্রোফাইল</string>
     <string name="status_bar_summary">স্থিতি দণ্ডে প্রদর্শিত আইকনগুলো কাস্টমাইজ করুন</string>
     <string name="status_bar_title">স্থিতি দণ্ড</string>
-    <string name="status_openid_summary">Provide anonymous device identifier for OnePlus Internet services such as Cloud service</string>
+    <string name="status_openid_summary">ক্লাউড সার্ভিসের মতো OnePlus ইন্টারনেট পরিষেবাগুলির জন্য বেনামী ডিভাইস সনাক্তকারী সরবরাহ করুন</string>
     <string name="status_openid_title">OnePlus বেনামী ডিভাইস শনাক্তকারী</string>
     <string name="statusbar_icon_manager">আইকন ম্যানেজার</string>
     <string name="sub_activate_failed">সক্রিয়করণ ব্যর্থ হয়েছে।</string>
@@ -1323,7 +1327,7 @@
     <string name="touchscreen_camera_gesture_summary">ক্যামেরা খুলতে O আঁকুন</string>
     <string name="touchscreen_camera_gesture_title">ক্যামেরা খুলুন</string>
     <string name="touchscreen_double_tap_to_wake_gesture_summary">ডিভাইস জাগ্রত করতে স্ক্রিনে দুইবার আলতো চাপুন</string>
-    <string name="touchscreen_double_tap_to_wake_gesture_title">জাগ্রত করতে দুইবার আলতো চাপুন</string>
+    <string name="touchscreen_double_tap_to_wake_gesture_title">জাগাতে দুইবার আলতো চাপুন</string>
     <string name="touchscreen_flashlight_gesture_summary">ফ্ল্যাশলাইট টগল করতে V আঁকুন</string>
     <string name="touchscreen_flashlight_gesture_title">ফ্ল্যাশলাইট টগল করুন</string>
     <string name="touchscreen_music_gesture_summary">সঙ্গীত চালাতে দুই আঙুলে করে || আঁকুন। আগের ও পরের ট্র্যাকের জন্য &lt; বা > আঁকুন</string>

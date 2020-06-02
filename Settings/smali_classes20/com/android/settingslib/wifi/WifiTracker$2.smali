@@ -205,9 +205,13 @@
 
     if-eqz v1, :cond_7
 
-    sget v1, Lcom/android/settingslib/R$string;->wifi_auth_password_wrong:I
+    const v1, 0x50d009e
 
-    invoke-static {p1, v1, v3}, Landroid/widget/Toast;->makeText(Landroid/content/Context;II)Landroid/widget/Toast;
+    invoke-virtual {p1, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-static {p1, v1, v3}, Landroid/widget/Toast;->makeText(Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;
 
     move-result-object v1
 

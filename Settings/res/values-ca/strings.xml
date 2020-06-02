@@ -2447,6 +2447,7 @@ Pots canviar-ho més tard a Configuració > Aplicacions i notificacions."</strin
 Tens la sessió iniciada als comptes següents:
 "</string>
     <string name="master_clear_button_text">Esborra totes les dades</string>
+    <string name="master_clear_confirm_summary">"Tot el contingut de l'emmagatzematge intern també s'eliminarà, incloent-hi música, fotos, vídeos i altres dades personals. Voleu confirmar l'esborrament?"</string>
     <string name="master_clear_confirm_title">Vols esborrar totes les dades?</string>
     <string name="master_clear_desc">"Aquesta acció esborrarà totes les dades de l'"<b>emmagatzematge intern</b>" del telèfon, com ara:
 
@@ -2925,7 +2926,7 @@ L'aplicació també podrà activar i desactivar el mode No molestis i canviar la
     <string name="oneplus_auto_activate">Activació automàtica</string>
     <string name="oneplus_auto_answer_via_bluetooth_summary">"La trucada entrant es respondrà automàticament mentre està connectada a un dispositiu d'àudio Bluetooth"</string>
     <string name="oneplus_auto_answer_via_bluetooth_title">Resposta intel·ligent per a Bluetooth</string>
-    <string name="oneplus_auto_check_pin_length">Confirmeu el PIN sense tocar \"✓\"</string>
+    <string name="oneplus_auto_check_pin_length">"Desbloqueja la pantalla automàticament després d'introduir el PIN"</string>
     <string name="oneplus_auto_disconect_the_ap">El punt de connexió es desactivarà automàticament després de 5 minuts si no hi ha cap dispositiu connectat.</string>
     <string name="oneplus_auto_open_app_none">Cap</string>
     <string name="oneplus_auto_open_app_other_applications">ALTRES APLICACIONS</string>
@@ -3079,6 +3080,9 @@ L'estalviador de bateria es desactiva automàticament quan el dispositiu s'està
 2.En un procés de configuració senzill, introduïu només la informació de l'empremta digital d'un dit"</string>
     <string name="oneplus_enroll_fingerprint_tips_title">"Indicador de configuració d'empremta digital"</string>
     <string name="oneplus_enter_your_fingerprint">· Enregistrar la vostra empremta digital</string>
+    <string name="oneplus_erase_system_data">ESBORRA LES DADES DEL SISTEMA</string>
+    <string name="oneplus_erase_system_data_summary">"S'esborraran les dades de sistema, incloent-hi informació del compte, contactes i dades d'aplicacions. Aquesta acció no es pot desfer."</string>
+    <string name="oneplus_erase_system_data_title">Voleu esborrar les dades del sistema?</string>
     <string name="oneplus_esportmode_introduction_summary">"Per activar el Mode d'esports, toqueu el commutador al panel del Mode de joc."</string>
     <string name="oneplus_experience_improvement_programs">"Programes de millora d'experiència"</string>
     <string name="oneplus_face_auto_unlock_while_screen_on_sumary">"Desbloquegeu el telèfon amb la cara així que la pantalla s'encengui sense fer lliscar el dit."</string>
@@ -3755,7 +3759,7 @@ Nota: el desbloqueig facial pot ser menys segur que el d'empremta digital, PIN o
     <string name="oneplus_vibration_settings_soc_tri_state">Vibració</string>
     <string name="oneplus_vibration_settings_soc_tri_state_summary">"Les trucades i notificacions se silenciaran i s'ajustaran només per vibrar, excepte les alarmes"</string>
     <string name="oneplus_vibration_summary">"L'alarma sonarà sempre"</string>
-    <string name="oneplus_video_enhancer">Millora de vídeo</string>
+    <string name="oneplus_video_enhancer">Efecte de color vibrant</string>
     <string name="oneplus_video_enhancer_footer">Millora el color durant la reproducció de vídeos</string>
     <string name="oneplus_video_enhancer_summary">Millora el color durant la reproducció de vídeos</string>
     <string name="oneplus_volume_keys_adjust">Utilitzeu els botons de volum per ajustar-lo</string>

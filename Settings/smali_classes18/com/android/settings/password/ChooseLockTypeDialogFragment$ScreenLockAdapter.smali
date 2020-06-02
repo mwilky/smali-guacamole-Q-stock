@@ -78,7 +78,7 @@
     return-object v0
 
     :cond_0
-    const v0, 0x7f08030f
+    const v0, 0x7f080310
 
     invoke-virtual {p0, v0}, Landroid/content/Context;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -87,7 +87,7 @@
     return-object v0
 
     :cond_1
-    const v0, 0x7f080317
+    const v0, 0x7f080318
 
     invoke-virtual {p0, v0}, Landroid/content/Context;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -96,7 +96,7 @@
     return-object v0
 
     :cond_2
-    const v0, 0x7f080311
+    const v0, 0x7f080312
 
     invoke-virtual {p0, v0}, Landroid/content/Context;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 

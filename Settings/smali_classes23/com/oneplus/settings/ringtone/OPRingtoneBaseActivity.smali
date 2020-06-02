@@ -695,7 +695,7 @@
 
     if-ne v1, v3, :cond_3
 
-    const v1, 0x7f120f46
+    const v1, 0x7f120f44
 
     invoke-virtual {p0, v1}, Lcom/oneplus/settings/ringtone/OPRingtoneBaseActivity;->getString(I)Ljava/lang/String;
 
@@ -708,7 +708,7 @@
 
     if-ne v1, v5, :cond_4
 
-    const v1, 0x7f120f47
+    const v1, 0x7f120f45
 
     invoke-virtual {p0, v1}, Lcom/oneplus/settings/ringtone/OPRingtoneBaseActivity;->getString(I)Ljava/lang/String;
 
@@ -1151,9 +1151,20 @@
 
     if-eqz v0, :cond_0
 
+    :try_start_0
     invoke-virtual {v0}, Landroid/os/Vibrator;->cancel()V
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    goto :goto_0
+
+    :catch_0
+    move-exception v0
+
+    invoke-virtual {v0}, Ljava/lang/Exception;->printStackTrace()V
 
     :cond_0
+    :goto_0
     return-void
 .end method
 

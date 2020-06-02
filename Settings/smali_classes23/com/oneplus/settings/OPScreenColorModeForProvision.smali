@@ -35,7 +35,7 @@
 
     invoke-super {p0, p1}, Lcom/android/settings/core/SettingsBaseActivity;->onCreate(Landroid/os/Bundle;)V
 
-    const v0, 0x7f0d0205
+    const v0, 0x7f0d020c
 
     invoke-virtual {p0, v0}, Lcom/oneplus/settings/OPScreenColorModeForProvision;->setContentView(I)V
 

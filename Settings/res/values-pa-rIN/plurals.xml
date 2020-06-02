@@ -5,7 +5,7 @@
         <item quantity="one">ਤੁਹਾਡੇ ਕੋਲ ਅਜੇ ਵੀ %1$d ਮੌਕਾ ਹੈ</item>
     </plurals>
     <plurals name="oneplus_lockpattern_too_many_failed_confirmation_attempts_footer">
-        <item quantity="other">%d ਸਕਿੰਟਾਂ ਵਿੱਚ ਮੁੜ-ਕੋਸ਼ਿਸ਼ ਕਰੋ।</item>
-        <item quantity="one">%d ਸਕਿੰਟ ਵਿੱਚ ਮੁੜ-ਕੋਸ਼ਿਸ਼ ਕਰੋ।</item>
+        <item quantity="other">%d ਸਕਿੰਟਾਂ ਵਿੱਚ ਮੁੜ ਕੋਸ਼ਿਸ਼ ਕਰੋ।</item>
+        <item quantity="one">%d ਸਕਿੰਟ ਵਿੱਚ ਮੁੜ ਕੋਸ਼ਿਸ਼ ਕਰੋ।</item>
     </plurals>
 </resources>

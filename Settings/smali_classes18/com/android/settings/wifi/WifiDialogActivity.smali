@@ -138,7 +138,7 @@
 
     if-eqz v2, :cond_2
 
-    const v2, 0x7f13040b
+    const v2, 0x7f13040c
 
     invoke-static {p0, p0, v1, v3, v2}, Lcom/android/settings/wifi/WifiDialog;->createModal(Landroid/content/Context;Lcom/android/settings/wifi/WifiDialog$WifiDialogListener;Lcom/android/settingslib/wifi/AccessPoint;II)Lcom/android/settings/wifi/WifiDialog;
 

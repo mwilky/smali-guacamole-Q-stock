@@ -217,12 +217,12 @@
         <item quantity="one">%d aplicación activa</item>
     </plurals>
     <plurals name="oneplus_applock_wrong_pattern_warning">
-        <item quantity="other">Todavía tienes %1$d oportunidades</item>
-        <item quantity="one">Todavía tienes %1$d oportunidad</item>
+        <item quantity="other">Todavía tienes %1$d posibilidades</item>
+        <item quantity="one">Todavía tienes %1$d posibilidad</item>
     </plurals>
     <plurals name="oneplus_lockpattern_too_many_failed_confirmation_attempts_footer">
-        <item quantity="other">Inténtalo de nuevo en %d segundos.</item>
-        <item quantity="one">Inténtalo de nuevo en %d segundo.</item>
+        <item quantity="other">Prueba de nuevo en %d segundos.</item>
+        <item quantity="one">Prueba de nuevo en %d segundo.</item>
     </plurals>
     <plurals name="permission_bar_chart_label">
         <item quantity="other">%s aplicaciones</item>

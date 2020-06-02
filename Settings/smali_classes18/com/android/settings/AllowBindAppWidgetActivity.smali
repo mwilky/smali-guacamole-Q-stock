@@ -290,7 +290,7 @@
 
     iput-object v5, v4, Lcom/android/internal/app/AlertController$AlertParams;->mMessage:Ljava/lang/CharSequence;
 
-    const v5, 0x7f1204bd
+    const v5, 0x7f1204bc
 
     invoke-virtual {p0, v5}, Lcom/android/settings/AllowBindAppWidgetActivity;->getString(I)Ljava/lang/String;
 

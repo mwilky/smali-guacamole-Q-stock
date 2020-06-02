@@ -271,7 +271,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f1217b7
+    const v2, 0x7f1217be
 
     invoke-virtual {v1, v2}, Lcom/android/settings/core/SubSettingLauncher;->setTitleRes(I)Lcom/android/settings/core/SubSettingLauncher;
 
@@ -331,12 +331,12 @@
 
     if-eqz v2, :cond_0
 
-    const v2, 0x7f1203f6
+    const v2, 0x7f1203f4
 
     goto :goto_1
 
     :cond_0
-    const v2, 0x7f120b07
+    const v2, 0x7f120b0b
 
     goto :goto_1
 
@@ -345,12 +345,12 @@
 
     if-eqz v2, :cond_2
 
-    const v2, 0x7f1203f7
+    const v2, 0x7f1203f5
 
     goto :goto_0
 
     :cond_2
-    const v2, 0x7f120b08
+    const v2, 0x7f120b0c
 
     :goto_0
     nop
@@ -583,7 +583,7 @@
 
     move-result-object v5
 
-    const v6, 0x7f0705ff
+    const v6, 0x7f070601
 
     invoke-virtual {v5, v6}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -607,7 +607,7 @@
 
     move-result-object v6
 
-    const v7, 0x7f120572
+    const v7, 0x7f120571
 
     invoke-virtual {v6, v7}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
@@ -633,7 +633,7 @@
 
     nop
 
-    const v9, 0x7f0a0740
+    const v9, 0x7f0a0742
 
     invoke-virtual {v1, v9}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 
@@ -685,7 +685,7 @@
 
     move-result-object v10
 
-    const v11, 0x7f12050c
+    const v11, 0x7f12050b
 
     invoke-virtual {v10, v11}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
@@ -738,7 +738,7 @@
 
     move-result-object v10
 
-    const v13, 0x7f12050b
+    const v13, 0x7f12050a
 
     invoke-virtual {v10, v13}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
@@ -948,7 +948,7 @@
     :goto_0
     invoke-direct {p0, p1}, Lcom/android/settings/datausage/DataUsageSummaryPreference;->updateDataUsageLabels(Landroidx/preference/PreferenceViewHolder;)V
 
-    const v1, 0x7f0a0742
+    const v1, 0x7f0a0744
 
     invoke-virtual {p1, v1}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 
@@ -1020,7 +1020,7 @@
 
     if-eqz v7, :cond_5
 
-    const v7, 0x7f120570
+    const v7, 0x7f12056f
 
     invoke-virtual {v1, v7}, Landroid/widget/TextView;->setText(I)V
 
@@ -1064,7 +1064,7 @@
     invoke-virtual {v5, v3}, Landroid/widget/Button;->setEnabled(Z)V
 
     :goto_1
-    const v4, 0x7f1208cc
+    const v4, 0x7f1208cb
 
     invoke-virtual {v5, v4}, Landroid/widget/Button;->setText(I)V
 

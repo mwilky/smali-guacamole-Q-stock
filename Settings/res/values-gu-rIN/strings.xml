@@ -21,7 +21,7 @@
     <string name="android_am">"AM "</string>
     <string name="android_pm">"PM "</string>
     <string name="aod_clock_analog">એનાલૉગ</string>
-    <string name="aod_clock_default">ડિફૉલ્ટ</string>
+    <string name="aod_clock_default">ડીફોલ્ટ</string>
     <string name="aod_clock_mcl">McLaren</string>
     <string name="aod_clock_minimalism">મિનિમેલિસ્મ</string>
     <string name="aod_clock_none">કોઈ નહી</string>
@@ -77,11 +77,11 @@
     <string name="buttons_swap_navkeys_summary">તાજેતરના અને પાછળ બટનના ક્રમ સ્વેપ કરો</string>
     <string name="buttons_swap_navkeys_title">સ્વેપ બટન</string>
     <string name="camera_application_title">કેમેરા એપ</string>
-    <string name="close_dialog">ઑકે</string>
+    <string name="close_dialog">બરાબર</string>
     <string name="color_picker_accent_color_message">એક એક્સેન્ટ રંગ પસંદ કરો</string>
-    <string name="color_picker_default">ડિફૉલ્ટ</string>
+    <string name="color_picker_default">ડીફોલ્ટ</string>
     <string name="color_picker_led_color_message">LED રંગ પસંદ કરો</string>
-    <string name="color_picker_message_default">તમારો મનપસંદ રંગ લ્યો.</string>
+    <string name="color_picker_message_default">તમારો મનપસંદ રંગ પસંદ કરો.</string>
     <string name="color_picker_unknown_label">અજ્ઞાત</string>
     <string name="condition_cloud_summary">તમારો ડેટા ખોવાઈ નહીં તે સુનિશ્ચિત કરવા, ક્લાઉડ સર્વિસનો ઉપયોગ કરવા માટે ક્લિક કરો</string>
     <string name="condition_cloud_title">ક્લાઉડ સર્વિસનો ઉપયોગ શરૂ કરો</string>
@@ -94,7 +94,7 @@
     <string name="crypt_failed_user_content">તમારા ફોન સંગ્રહને નુકસાન થયું છે, તમારા ફોનમાં સંગ્રહિત ડેટા વાંચી શકાતો નથી! તમારો ફોન વાપરવાનું ચાલુ રાખવા માટે, તમારે ફોનને રીસેટ કરવાની જરૂર છે (સમગ્ર સામગ્રી અને તમારા ફોનનો ડેટા પુનઃપ્રાપ્ત કરી શકાતો નથી).</string>
     <string name="customization_incoming_call_settings">કસ્ટમ કૉલ સેટિંગ્સ</string>
     <string name="customization_settings_title">કસ્ટમ રંગ</string>
-    <string name="data_switch_warning_text">ડેટા ઍક્સેસ બદલવાથી બધી LTE સેવાઓ બંધ કરશે. તમે આ ચાલુ રાખવા માંગો છો?</string>
+    <string name="data_switch_warning_text">ડેટા એક્સેસ બદલવાથી બધી LTE સેવાઓ બંધ થઇ જશે. શું તમે ચાલુ રાખવા માંગો છો?</string>
     <string name="data_switch_warning_title">%1$sસિમમાં ડેટા પસંદ કરો</string>
     <string name="data_usage_rank_wifi">Wi‑Fi ડેટા ઉપયોગ</string>
     <string name="data_usage_rank_wlan">સેલ્યુલર ડેટાનો ઉપયોગ</string>
@@ -191,6 +191,7 @@
     <string name="manage_device_administrators">ઉપકરણ સંચાલકોનું સંચાલન કરો</string>
     <string name="manage_fingerprints_dialog">હવે ફિંગરપ્રિન્ટ અનલોક સક્રિય છે. તમે તમારી ફિંગરપ્રિન્ટને ગોઠવવા માંગો છો?</string>
     <string name="manage_users">વપરાશકર્તાઓને મેનેજ કરો</string>
+    <string name="master_clear_confirm_summary">સંગીત, ફોટા, વિડિયો અને અન્ય વ્યક્તિગત ડેટા સહિત આંતરિક સંગ્રહમાં રહેલી બધી સામગ્રી પણ દૂર કરવામાં આવશે. ભૂંસી નાખવા માટે પુષ્ટિ કરીએ?</string>
     <string name="memory_capacity_title">RAM</string>
     <string name="multi_app_label_badge">સમાંતર %1$s</string>
     <string name="music_application_title">મ્યુઝીક એપ</string>
@@ -238,7 +239,7 @@
     <string name="oneplus_app_uninstall_remark">કૃપા કરીને ક્વિક પે વાપરવા માટે ચુકવણી માટેની એપ્સ ઇન્સ્ટોલ કરો</string>
     <string name="oneplus_app_wechat">Wechat</string>
     <string name="oneplus_applications_settings_summary">એપ્લિકેશન સૂચનાઓ, સમાંતર એપ્લિકેશન્સ, પરવાનગીઓ</string>
-    <string name="oneplus_applock_at_least_four_points">ઓછામાં ઓછા 4 અંકનો સમાવેશ કરી ડ્રો કરો</string>
+    <string name="oneplus_applock_at_least_four_points">ઓછામાં ઓછા 4 પોઈન્ટનો સમાવેશ કરી ડ્રો કરો</string>
     <string name="oneplus_applock_lockpassword_confirm_your_pin_header">પીન દાખલ કરો</string>
     <string name="oneplus_applock_need_to_unlock_wrong">ખોટી પીન</string>
     <string name="oneplus_applock_pattern_header">તમારી પેટર્ન દોરો</string>
@@ -250,7 +251,7 @@
     <string name="oneplus_auto_activate">આપોઆપ ચાલુ કરો</string>
     <string name="oneplus_auto_answer_via_bluetooth_summary">બ્લુટૂથ ઑડિયો ઉપકરણથી કનેક્ટ થયેલા હોવા પર ઇનકમિંગ કૉલ આપમેળે ઉપાડવામાં આવશે</string>
     <string name="oneplus_auto_answer_via_bluetooth_title">બ્લુટૂથ માટે સ્માર્ટ જવાબ</string>
-    <string name="oneplus_auto_check_pin_length">\"✓\" ટૅપ કર્યા વિના PIN ની પુષ્ટિ કરો</string>
+    <string name="oneplus_auto_check_pin_length">પીનને દાખલ કર્યા પછી આપોઆપ સ્ક્રીનને અનલૉક કરો</string>
     <string name="oneplus_auto_disconect_the_ap">જો કોઈ ઉપકરણ કનેક્ટ થયેલા ન હોય તો 5 મિનિટ પછી હૉટસ્પોટ આપમેળે બંધ થશે.</string>
     <string name="oneplus_auto_open_app_none">કોઈ નહી</string>
     <string name="oneplus_auto_open_app_other_applications">અન્ય એપ્લિકેશનો</string>
@@ -373,7 +374,7 @@
     <string name="oneplus_donot_silence_or_block_summary">તમામ પ્રકારની સૂચનાઓ માટે મંજૂરી આપો</string>
     <string name="oneplus_double_tap_power_gesture">માટે પાવર બટન પર ડબલ-ક્લિક કરો</string>
     <string name="oneplus_double_tap_power_gesture_app">ફંક્શન પસંદ કરો</string>
-    <string name="oneplus_double_tap_power_gesture_camera">કેમેરા</string>
+    <string name="oneplus_double_tap_power_gesture_camera">કૅમેરા</string>
     <string name="oneplus_double_tap_power_gesture_wallet">કાર્ડ સ્વાઈપ કરો (વૉલેટ)</string>
     <string name="oneplus_doze_summary_801">સ્ટૅન્ડબાય સ્ક્રીન પર ઘડિયાળ અને અન્ય માહિતી બતાવો</string>
     <string name="oneplus_doze_title">એમ્બિયન્ટ ડિસ્પ્લે</string>
@@ -404,6 +405,9 @@
 2.એકલ સેટઅપ પ્રક્રિયામાં, કૃપા કરીને ફક્ત એક આંગળીની ફિંગરપ્રિન્ટ માહિતી દાખલ કરો"</string>
     <string name="oneplus_enroll_fingerprint_tips_title">ફિંગરપ્રિન્ટ સેટઅપ સંકેત</string>
     <string name="oneplus_enter_your_fingerprint">· તમારા ફિંગરપ્રિન્ટની નોંધણી કરો</string>
+    <string name="oneplus_erase_system_data">સિસ્ટમ ડેટા ભૂંસી નાખો</string>
+    <string name="oneplus_erase_system_data_summary">એકાઉન્ટની માહિતી, સંપર્કો અને એપ ડેટા સહિત સિસ્ટમ ડેટા હટાવવામાં આવશે. તમે આ ક્રિયાને પૂર્વવત્ કરી શકતા નથી.</string>
+    <string name="oneplus_erase_system_data_title">સિસ્ટમ ડેટા ભૂંસી નાખીએ?</string>
     <string name="oneplus_esportmode_introduction_summary">ઇસ્પોર્ટ્સ મોડને સક્રિય કરવા માટે, ગેમિંગ મોડ પેનલ પર ટૉગલને ટૅપ કરો.</string>
     <string name="oneplus_experience_improvement_programs">સુધારાના કાર્યક્રમોનો અનુભવ કરો</string>
     <string name="oneplus_face_auto_unlock_while_screen_on_sumary">સવાઈપ કર્યા વગર સ્ક્રીન ચાલુ થાય ત્યારે તમારા ફેસ સાથે તમારા ફોનને અનલૉક કરો.</string>
@@ -468,7 +472,7 @@
     <string name="oneplus_fnatic_mode_disturb_introduction_summary">બધા સૂચનો (ઓછી બૅટરીની સૂચના, અલાર્મ અને ટાઈમર સિવાય) અને કૉલ અવરોધિત કરો. કૉલ લૉગમાં ફક્ત મિસ્ડ કૉલ સચવાઈ શકશે નહીં.</string>
     <string name="oneplus_fnatic_mode_disturb_introduction_title">પ્રગત DND</string>
     <string name="oneplus_fnatic_mode_enable_introduction_title">Fnatic મોડનો ઉપયોગ કરવા માટે પહેલાં ગેમિંગ મોડ સક્ષમ કરેલું હોવું જોઈએ</string>
-    <string name="oneplus_fnatic_mode_network_introduction_dual4g_summary">ઓછી વિલંબતાની રમત રમવા માટે, પ્રાથમિક SIM કાર્ડ સિગ્નલ પ્રબળતાને પ્રાથમિકતા આપવામાં આવે છે. પરિણામે ગૌણ SIM કાર્ડને અક્ષમ કરવામાં આવશે અને કૉલ અથવા સંદેશા પ્રાપ્ત થશે નહીં.</string>
+    <string name="oneplus_fnatic_mode_network_introduction_dual4g_summary">પ્રાથમિક SIM કાર્ડ સિગ્નલ પ્રબળતાને પ્રાધાન્યતા આપવામાં આવે છે જેથી ઓછી વિલંબતાની ગેમ રમવા માટે ઓછો વિક્ષેપ થાય. પરિણામે, ગૌણ SIM કાર્ડ અક્ષમ કરવામાં આવશે અને કૉલ કે સંદેશા પ્રાપ્ત થશે નહીં.</string>
     <string name="oneplus_fnatic_mode_network_introduction_summary">નેટવર્ક કનેક્શનની સ્થિરતા વધારો</string>
     <string name="oneplus_fnatic_mode_network_introduction_title">નેટવર્ક વિસ્તૃતિ</string>
     <string name="oneplus_fnatic_mode_summary">તમારા ગેમિંગ અનુભવને સુપરચાર્જ કરો</string>
@@ -966,7 +970,7 @@
     <string name="oneplus_snooze_options_title">સૂચના શેડથી સૂચનાઓ સ્નૂઝ કરો</string>
     <string name="oneplus_sound_and_vibrate">અવાજ; વાઈબ્રશન</string>
     <string name="oneplus_sound_settings_summary">ખલેલ પાડશો નહીં, ઇયરફોન મોડ</string>
-    <string name="oneplus_sound_tuner">Dolby Atmos</string>
+    <string name="oneplus_sound_tuner">ડોલ્બી ઍટોમ્સ</string>
     <string name="oneplus_status_summary">ફોન નંબર, સિગ્નલ વિગેરે</string>
     <string name="oneplus_stop_run">ફોર્સ સ્ટોપ</string>
     <string name="oneplus_storage">સ્ટોરેજ</string>
@@ -1079,9 +1083,9 @@
     <string name="oneplus_vibration_settings_soc_tri_state">વાઈબ્રશન</string>
     <string name="oneplus_vibration_settings_soc_tri_state_summary">એલાર્મ સિવાય, કોલ્સ અને સૂચનાઓને સાયલન્ટ કરવામાં અને ફક્ત વાઇબ્રેટ પર સેટ કરવામાં આવશે</string>
     <string name="oneplus_vibration_summary">એલાર્મ હંમેશા વાગશે</string>
-    <string name="oneplus_video_enhancer">વિડિઓ ઉન્નતીકરણ</string>
-    <string name="oneplus_video_enhancer_footer">વિડિયો ચલાવતી વખતે રંગને ઉભારો</string>
-    <string name="oneplus_video_enhancer_summary">વિડિયો ચલાવતી વખતે રંગને ઉભારો</string>
+    <string name="oneplus_video_enhancer">કાંપતો હોય તેવા રંગની અસર</string>
+    <string name="oneplus_video_enhancer_footer">વીડિયો ચલાવતી વખતે રંગને ઉભારો</string>
+    <string name="oneplus_video_enhancer_summary">વીડિયો ચલાવતી વખતે રંગને ઉભારો</string>
     <string name="oneplus_volume_keys_adjust">ગોઠવવા માટે વૉલ્યૂમ બટનોનો ઉપયોગ કરો</string>
     <string name="oneplus_volume_keys_adjust_media">મીડિયા વોલ્યુમ</string>
     <string name="oneplus_volume_keys_adjust_ringtones">રિંગટોન વોલ્યુમ</string>
@@ -1174,7 +1178,7 @@
     <string name="op_security_settings_back_fingerprint_enroll_find_sensor_message">તમે તેને તમારા ફોનની પાછળના ભાગે શોધી શકો છો</string>
     <string name="op_security_settings_fingerprint_enroll_find_sensor_message">હોમ બટન પર ફિંગરપ્રિન્ટ સેન્સરની સ્થિતિ જાણો</string>
     <string name="op_security_settings_title">સુરક્ષા &amp; ફિંગરપ્રિન્ટ</string>
-    <string name="op_sim_card_with_slotid">સિમ %1$s</string>
+    <string name="op_sim_card_with_slotid">SIM  %1$s</string>
     <string name="op_sim_cord">સિમ &amp; નેટવર્ક</string>
     <string name="op_sim_cord_summary">ડિફૉલ્ટ SIM કાર્ડ, બેન્ડવિડ્થ ઉપયોગ</string>
     <string name="op_sim_name_with_prefix">  (%1$s)</string>
@@ -1243,13 +1247,13 @@
     <string name="select_year">વર્ષ પસંદ કરો</string>
     <string name="settings_switch_user_storage_insufficient">સ્ટોરેજ પૂર્ણ છે, વપરાશકર્તા બદલી શકાતા નથી</string>
     <string name="share_wifi_chekbox">હોટસ્પોટ મારફતે કનેક્ટ કરેલ Wi‑Fi નેટવર્ક શેર કરો</string>
-    <string name="sim_disabled">નિષ્ક્રિય કરેલ</string>
+    <string name="sim_disabled">અક્ષમ કરેલું</string>
     <string name="sim_enabled">સક્રિય કરેલ</string>
-    <string name="sim_enabler_airplane_on">ભૂલ, એરપ્લેન મોડ ચાલુ છે!</string>
+    <string name="sim_enabler_airplane_on">ભૂલ, એરોપ્લેન મોડ ઓન છે!</string>
     <string name="sim_enabler_both_inactive">ભૂલ. બધી SIM અક્ષમ કરી શકાતી નથી</string>
     <string name="sim_enabler_disabling">નિષ્ક્રિય કરી રહ્યું છે...</string>
     <string name="sim_enabler_enabling">સક્રિય કરી રહ્યું છે...</string>
-    <string name="sim_enabler_in_call">ભૂલ, ફોન ચાલુ છે!</string>
+    <string name="sim_enabler_in_call">ભૂલ, કોલ માં!</string>
     <string name="sim_enabler_need_disable_sim">SIM નિષ્ક્રિય કરી રહ્યું છે. શું તમને ખાતરી છે?</string>
     <string name="sim_enabler_need_enable_sim">SIM સક્રિય કરી રહ્યું છે, તમને ખાતરી છે?</string>
     <string name="sim_enabler_need_switch_data_service">આને અક્ષમ કરી અને ડેટા સેવાઓ માટે સિમ %1$s પર ચાલ્યું જશે, શું તમે સહમત છો?</string>
@@ -1258,7 +1262,7 @@
     <string name="sim_enabler_summary_new_marshmallow">" %1$sછે"</string>
     <string name="sim_enabler_title">SIM સક્રિયક</string>
     <string name="sim_enabler_will_disable_sim_title">ધ્યાન આપો</string>
-    <string name="sim_missing">ખૂટે છે અથવા ભૂલ છે</string>
+    <string name="sim_missing">ગુમ અથવા ભૂલ</string>
     <string name="sim_status_uss_network_roam">રોમિંગ</string>
     <string name="smart_control_summery">એપ્લિકેશનના લક્ષણો અને તમારા વપરાશ અનુસાર આપમેળે બેકગ્રાઉન્ડ પાવરની વ્યૂહરચના ગોઠવો.</string>
     <string name="smart_control_title">બુદ્ધિપૂર્વકનું નિયંત્રણ</string>
@@ -1271,7 +1275,7 @@
     <string name="status_bar_settings_cellular_title">સેલ્યુલર ડેટા</string>
     <string name="status_bar_settings_dnd_title">ડિસ્ટર્બ ન કરો</string>
     <string name="status_bar_settings_headset_title">હેડસેટ</string>
-    <string name="status_bar_settings_hotspot_title">હોટ્સ્પોટ</string>
+    <string name="status_bar_settings_hotspot_title">હૉટસ્પૉટ</string>
     <string name="status_bar_settings_network_speed_title">નેટવર્ક સ્પીડ દર્શાવો</string>
     <string name="status_bar_settings_time_title">સમય</string>
     <string name="status_bar_settings_wifi_title">Wi-Fi</string>
@@ -1281,12 +1285,12 @@
     <string name="status_openid_summary">ક્લાઉડ સેવા જેવી OnePlus ઇન્ટરનેટ સેવાઓ માટે અનામી ઉપકરણ ઓળખકર્તા પ્રદાન કરો</string>
     <string name="status_openid_title">OnePlus અનામી ઉપકરણ ઓળખકર્તા</string>
     <string name="statusbar_icon_manager">આઇકોન મેનેજર</string>
-    <string name="sub_activate_failed">સક્રિયકરણ નિષ્ફળ.</string>
-    <string name="sub_activate_not_supported">સક્રિયકરણ આધારભૂત નથી</string>
-    <string name="sub_activate_success">સફળતાપૂર્વક સક્રિય થઈ ગયું.</string>
-    <string name="sub_deactivate_failed">નિષ્ક્રિયકરણ નિષ્ફળ.</string>
+    <string name="sub_activate_failed">એક્ટિવેશન નિષ્ફળ થયું.</string>
+    <string name="sub_activate_not_supported">એક્ટિવેશન સમર્થિત નથી</string>
+    <string name="sub_activate_success">સફળતાપૂર્વક સક્રિય કરવામાં આવ્યું છે.</string>
+    <string name="sub_deactivate_failed">નિષ્ક્રિય કરવું નિષ્ફળ રહ્યું.</string>
     <string name="sub_deactivate_not_supported">નિષ્ક્રિયકરણ આધારભૂત નથી</string>
-    <string name="sub_deactivate_success">સફળતાપૂર્વક નિષ્ક્રિય થયેલ.</string>
+    <string name="sub_deactivate_success">સફળતાપૂર્વક નિષ્ક્રિય કરવામાં આવ્યું છે.</string>
     <string name="subs_settings">SIM ની સ્થિતિ</string>
     <string name="summary_voice_network">VoLTE, Wi-Fi કૉલિંગ</string>
     <string name="summary_voice_volte_only">વોલટે</string>
@@ -1322,7 +1326,7 @@
     <string name="touchscreen_camera_gesture_summary">કેમેરા ખોલવા માટે એક O દોરો</string>
     <string name="touchscreen_camera_gesture_title">કેમેરા ખોલો</string>
     <string name="touchscreen_double_tap_to_wake_gesture_summary">ઉપકરણને જાગૃત કરવા સ્ક્રીન બે વાર ટેપ કરો</string>
-    <string name="touchscreen_double_tap_to_wake_gesture_title">જાગૃત કરવા માટે ડબલ ટેપ</string>
+    <string name="touchscreen_double_tap_to_wake_gesture_title">જાગૃત કરવા માટે બેવાર ટૅપ કરો</string>
     <string name="touchscreen_flashlight_gesture_summary">ફ્લેશલાઇટ ટૉગલ કરવા V દોરો</string>
     <string name="touchscreen_flashlight_gesture_title">ફ્લેશલાઇટ ટૉગલ કરો</string>
     <string name="touchscreen_music_gesture_summary">સંગીત વગાડવા અથવા રોકવા બે આંગળીઓથી || દોરો. આગળના અથવા પછીના ટ્રેક માટે &lt; અથવા > દોરો</string>

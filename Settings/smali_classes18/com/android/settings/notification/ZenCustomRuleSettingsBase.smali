@@ -61,7 +61,7 @@
 .method public getHelpResource()I
     .locals 1
 
-    const v0, 0x7f1207ac
+    const v0, 0x7f1207ab
 
     return v0
 .end method
@@ -174,7 +174,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f12196b
+    const v4, 0x7f121972
 
     const/4 v5, 0x1
 

@@ -355,7 +355,7 @@
 
     invoke-virtual {p1, v2}, Landroidx/preference/Preference;->setSelectable(Z)V
 
-    const v2, 0x7f121864
+    const v2, 0x7f12186b
 
     invoke-virtual {v0, v2}, Landroidx/preference/DropDownPreference;->setSummary(I)V
 

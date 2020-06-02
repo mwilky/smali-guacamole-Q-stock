@@ -323,6 +323,14 @@
     return v0
 .end method
 
+.method public getSnr()I
+    .locals 1
+
+    iget v0, p0, Lcom/android/settings/deviceinfo/simstatus/FiveGNetWorkStatus$FiveGServiceState;->mSnr:I
+
+    return v0
+.end method
+
 .method getUpperLayerInd()I
     .locals 1
 

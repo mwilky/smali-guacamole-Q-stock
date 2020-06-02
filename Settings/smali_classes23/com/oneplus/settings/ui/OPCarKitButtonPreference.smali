@@ -195,7 +195,7 @@
 
     iput-object v1, p0, Lcom/oneplus/settings/ui/OPCarKitButtonPreference;->mLeftIcon:Landroid/widget/ImageView;
 
-    const v1, 0x7f0a05b0
+    const v1, 0x7f0a05b2
 
     invoke-virtual {p1, v1}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 

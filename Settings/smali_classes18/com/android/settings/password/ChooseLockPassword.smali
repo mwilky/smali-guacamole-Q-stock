@@ -125,7 +125,7 @@
 
     move-result v1
 
-    const v2, 0x7f12097d
+    const v2, 0x7f12097c
 
     invoke-virtual {p0, v2}, Lcom/android/settings/password/ChooseLockPassword;->getText(I)Ljava/lang/CharSequence;
 
@@ -133,7 +133,7 @@
 
     if-eqz v0, :cond_0
 
-    const v3, 0x7f120975
+    const v3, 0x7f120974
 
     invoke-virtual {p0, v3}, Lcom/android/settings/password/ChooseLockPassword;->getText(I)Ljava/lang/CharSequence;
 
@@ -144,7 +144,7 @@
     :cond_0
     if-eqz v1, :cond_1
 
-    const v3, 0x7f12105d
+    const v3, 0x7f12105a
 
     invoke-virtual {p0, v3}, Lcom/android/settings/password/ChooseLockPassword;->getText(I)Ljava/lang/CharSequence;
 

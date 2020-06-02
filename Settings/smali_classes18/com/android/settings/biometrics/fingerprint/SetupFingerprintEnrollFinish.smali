@@ -70,7 +70,7 @@
 
     iget-object v0, p0, Lcom/android/settings/biometrics/fingerprint/SetupFingerprintEnrollFinish;->mBtnNext:Lcom/oneplus/lib/widget/button/OPButton;
 
-    const v1, 0x7f120ace
+    const v1, 0x7f120ad2
 
     invoke-virtual {v0, v1}, Lcom/oneplus/lib/widget/button/OPButton;->setText(I)V
 
@@ -156,7 +156,7 @@
 
     if-eqz v0, :cond_0
 
-    const p2, 0x7f130516
+    const p2, 0x7f130517
 
     goto :goto_0
 
@@ -190,7 +190,7 @@
 
     if-eqz v0, :cond_0
 
-    const v0, 0x7f0d01b6
+    const v0, 0x7f0d01bd
 
     invoke-virtual {p0, v0}, Lcom/android/settings/biometrics/fingerprint/SetupFingerprintEnrollFinish;->setContentView(I)V
 
@@ -262,7 +262,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    const v1, 0x7f121313
+    const v1, 0x7f12131b
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
 
@@ -282,7 +282,7 @@
 
     check-cast v2, Landroid/widget/TextView;
 
-    const v3, 0x7f120ea0
+    const v3, 0x7f120e9e
 
     invoke-virtual {v2, v3}, Landroid/widget/TextView;->setText(I)V
 

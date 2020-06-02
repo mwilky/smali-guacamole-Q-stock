@@ -226,7 +226,7 @@
 
     invoke-super {p0, p1}, Landroidx/preference/Preference;->onBindViewHolder(Landroidx/preference/PreferenceViewHolder;)V
 
-    const v0, 0x7f0a0703
+    const v0, 0x7f0a0705
 
     invoke-virtual {p1, v0}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 
@@ -250,7 +250,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f120f93
+    const v4, 0x7f120f91
 
     invoke-virtual {v3, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -258,7 +258,7 @@
 
     const/4 v4, 0x1
 
-    const v5, 0x7f080538
+    const v5, 0x7f080539
 
     invoke-direct {v2, p0, v3, v5, v4}, Lcom/oneplus/settings/ui/OPCustomTonePreference$ItemEntity;-><init>(Lcom/oneplus/settings/ui/OPCustomTonePreference;Ljava/lang/String;II)V
 
@@ -268,7 +268,7 @@
 
     move-result-object v5
 
-    const v6, 0x7f120f95
+    const v6, 0x7f120f93
 
     invoke-virtual {v5, v6}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -276,7 +276,7 @@
 
     const/4 v6, 0x2
 
-    const v7, 0x7f08053e
+    const v7, 0x7f08053f
 
     invoke-direct {v3, p0, v5, v7, v6}, Lcom/oneplus/settings/ui/OPCustomTonePreference$ItemEntity;-><init>(Lcom/oneplus/settings/ui/OPCustomTonePreference;Ljava/lang/String;II)V
 
@@ -286,13 +286,13 @@
 
     move-result-object v7
 
-    const v8, 0x7f120f94
+    const v8, 0x7f120f92
 
     invoke-virtual {v7, v8}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
     move-result-object v7
 
-    const v8, 0x7f08053b
+    const v8, 0x7f08053c
 
     invoke-direct {v5, p0, v7, v8, v1}, Lcom/oneplus/settings/ui/OPCustomTonePreference$ItemEntity;-><init>(Lcom/oneplus/settings/ui/OPCustomTonePreference;Ljava/lang/String;II)V
 
@@ -318,7 +318,7 @@
 
     iget-object v6, p0, Lcom/oneplus/settings/ui/OPCustomTonePreference;->mPreviewList:Ljava/util/List;
 
-    const v7, 0x7f080539
+    const v7, 0x7f08053a
 
     invoke-static {v7}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -328,7 +328,7 @@
 
     iget-object v6, p0, Lcom/oneplus/settings/ui/OPCustomTonePreference;->mPreviewList:Ljava/util/List;
 
-    const v7, 0x7f08053a
+    const v7, 0x7f08053b
 
     invoke-static {v7}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -349,7 +349,7 @@
 
     iget-object v6, p0, Lcom/oneplus/settings/ui/OPCustomTonePreference;->mPreviewList:Ljava/util/List;
 
-    const v7, 0x7f08053f
+    const v7, 0x7f080540
 
     invoke-static {v7}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -359,7 +359,7 @@
 
     iget-object v6, p0, Lcom/oneplus/settings/ui/OPCustomTonePreference;->mPreviewList:Ljava/util/List;
 
-    const v7, 0x7f080540
+    const v7, 0x7f080541
 
     invoke-static {v7}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -380,7 +380,7 @@
 
     iget-object v7, p0, Lcom/oneplus/settings/ui/OPCustomTonePreference;->mPreviewList:Ljava/util/List;
 
-    const v8, 0x7f08053c
+    const v8, 0x7f08053d
 
     invoke-static {v8}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -390,7 +390,7 @@
 
     iget-object v7, p0, Lcom/oneplus/settings/ui/OPCustomTonePreference;->mPreviewList:Ljava/util/List;
 
-    const v8, 0x7f08053d
+    const v8, 0x7f08053e
 
     invoke-static {v8}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -536,7 +536,7 @@
 .end method
 
 .method public saveSelectedTone()V
-    .locals 12
+    .locals 11
 
     new-instance v0, Ljava/util/HashMap;
 
@@ -550,31 +550,31 @@
 
     iget v2, p0, Lcom/oneplus/settings/ui/OPCustomTonePreference;->mSelectedIndex:I
 
-    const-string v3, "#"
+    const/4 v3, 0x2
 
-    const-string v4, "persist.sys.theme.accentcolor"
+    const-string v4, "#"
 
-    const-string v5, "oneplus_accent_color"
+    const-string v5, "persist.sys.theme.accentcolor"
 
-    const/4 v6, 0x1
+    const-string v6, "oneplus_accent_color"
 
-    const-string v7, ""
+    const/4 v7, 0x1
 
-    const/4 v8, 0x2
+    const-string v8, ""
 
     const-string v9, "theme_theme"
 
-    if-ne v2, v8, :cond_1
+    if-ne v2, v3, :cond_1
 
     const-string v2, "3"
 
     invoke-static {v9, v9, v2}, Lcom/oneplus/settings/utils/OPUtils;->sendAnalytics(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    invoke-direct {p0, v6}, Lcom/oneplus/settings/ui/OPCustomTonePreference;->enableDarkTheme(Z)V
-
     iget-object v2, p0, Lcom/oneplus/settings/ui/OPCustomTonePreference;->mContext:Landroid/content/Context;
 
-    invoke-static {v2, v6}, Lcom/oneplus/settings/utils/OPThemeUtils;->setCurrentBasicColorMode(Landroid/content/Context;I)V
+    invoke-static {v2, v7}, Lcom/oneplus/settings/utils/OPThemeUtils;->setCurrentBasicColorMode(Landroid/content/Context;I)V
+
+    invoke-direct {p0, v7}, Lcom/oneplus/settings/ui/OPCustomTonePreference;->enableDarkTheme(Z)V
 
     iget-object v2, p0, Lcom/oneplus/settings/ui/OPCustomTonePreference;->mContext:Landroid/content/Context;
 
@@ -582,45 +582,43 @@
 
     move-result-object v2
 
-    const-string v6, "oem_black_mode_accent_color"
+    const-string v3, "oem_black_mode_accent_color"
 
-    invoke-static {v2, v6}, Landroid/provider/Settings$System;->getString(Landroid/content/ContentResolver;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2, v3}, Landroid/provider/Settings$System;->getString(Landroid/content/ContentResolver;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
-    iget-object v6, p0, Lcom/oneplus/settings/ui/OPCustomTonePreference;->mContext:Landroid/content/Context;
+    iget-object v3, p0, Lcom/oneplus/settings/ui/OPCustomTonePreference;->mContext:Landroid/content/Context;
 
-    invoke-virtual {v6}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {v3}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
-    move-result-object v6
+    move-result-object v3
 
     invoke-static {}, Landroid/app/ActivityManager;->getCurrentUser()I
 
-    move-result v8
+    move-result v7
 
-    invoke-static {v6, v5, v2, v8}, Landroid/provider/Settings$System;->putStringForUser(Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;I)Z
+    invoke-static {v3, v6, v2, v7}, Landroid/provider/Settings$System;->putStringForUser(Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;I)Z
 
     invoke-static {v2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
-    move-result v5
+    move-result v3
 
-    if-nez v5, :cond_0
+    if-nez v3, :cond_0
 
-    invoke-virtual {v2, v3, v7}, Ljava/lang/String;->replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
+    invoke-virtual {v2, v4, v8}, Ljava/lang/String;->replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
 
     move-result-object v2
 
     :cond_0
-    invoke-static {v4, v2}, Landroid/os/SystemProperties;->set(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v5, v2}, Landroid/os/SystemProperties;->set(Ljava/lang/String;Ljava/lang/String;)V
 
-    goto/16 :goto_0
+    goto :goto_0
 
     :cond_1
-    const-string v10, "origin_oem_black_mode"
+    const/4 v10, 0x0
 
-    const/4 v11, 0x0
-
-    if-ne v2, v6, :cond_4
+    if-ne v2, v7, :cond_3
 
     const-string v2, "2"
 
@@ -628,74 +626,9 @@
 
     iget-object v2, p0, Lcom/oneplus/settings/ui/OPCustomTonePreference;->mContext:Landroid/content/Context;
 
-    invoke-virtual {v2}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-static {v2, v10}, Lcom/oneplus/settings/utils/OPThemeUtils;->setCurrentBasicColorMode(Landroid/content/Context;I)V
 
-    move-result-object v2
-
-    invoke-static {v2, v10, v11}, Landroid/provider/Settings$System;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
-
-    move-result v2
-
-    if-eqz v2, :cond_2
-
-    iget-object v6, p0, Lcom/oneplus/settings/ui/OPCustomTonePreference;->mContext:Landroid/content/Context;
-
-    invoke-virtual {v6}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
-
-    move-result-object v6
-
-    invoke-static {v6, v10, v11}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
-
-    :cond_2
-    iget-object v6, p0, Lcom/oneplus/settings/ui/OPCustomTonePreference;->mContext:Landroid/content/Context;
-
-    invoke-static {v6, v11}, Lcom/oneplus/settings/utils/OPThemeUtils;->setCurrentBasicColorMode(Landroid/content/Context;I)V
-
-    invoke-direct {p0, v11}, Lcom/oneplus/settings/ui/OPCustomTonePreference;->enableDarkTheme(Z)V
-
-    iget-object v6, p0, Lcom/oneplus/settings/ui/OPCustomTonePreference;->mContext:Landroid/content/Context;
-
-    invoke-virtual {v6}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
-
-    move-result-object v6
-
-    const-string v8, "oem_white_mode_accent_color"
-
-    invoke-static {v6, v8}, Landroid/provider/Settings$System;->getString(Landroid/content/ContentResolver;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v6
-
-    iget-object v8, p0, Lcom/oneplus/settings/ui/OPCustomTonePreference;->mContext:Landroid/content/Context;
-
-    invoke-virtual {v8}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
-
-    move-result-object v8
-
-    invoke-static {}, Landroid/app/ActivityManager;->getCurrentUser()I
-
-    move-result v9
-
-    invoke-static {v8, v5, v6, v9}, Landroid/provider/Settings$System;->putStringForUser(Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;I)Z
-
-    invoke-static {v6}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
-
-    move-result v5
-
-    if-nez v5, :cond_3
-
-    invoke-virtual {v6, v3, v7}, Ljava/lang/String;->replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
-
-    move-result-object v6
-
-    :cond_3
-    invoke-static {v4, v6}, Landroid/os/SystemProperties;->set(Ljava/lang/String;Ljava/lang/String;)V
-
-    goto :goto_0
-
-    :cond_4
-    const-string v2, "1"
-
-    invoke-static {v9, v9, v2}, Lcom/oneplus/settings/utils/OPUtils;->sendAnalytics(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {p0, v10}, Lcom/oneplus/settings/ui/OPCustomTonePreference;->enableDarkTheme(Z)V
 
     iget-object v2, p0, Lcom/oneplus/settings/ui/OPCustomTonePreference;->mContext:Landroid/content/Context;
 
@@ -703,64 +636,87 @@
 
     move-result-object v2
 
-    invoke-static {v2, v10, v11}, Landroid/provider/Settings$System;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
+    const-string v3, "oem_white_mode_accent_color"
 
-    move-result v2
+    invoke-static {v2, v3}, Landroid/provider/Settings$System;->getString(Landroid/content/ContentResolver;Ljava/lang/String;)Ljava/lang/String;
 
-    if-eq v2, v8, :cond_5
+    move-result-object v2
 
-    iget-object v6, p0, Lcom/oneplus/settings/ui/OPCustomTonePreference;->mContext:Landroid/content/Context;
+    iget-object v3, p0, Lcom/oneplus/settings/ui/OPCustomTonePreference;->mContext:Landroid/content/Context;
 
-    invoke-virtual {v6}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {v3}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
-    move-result-object v6
-
-    invoke-static {v6, v10, v8}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
-
-    :cond_5
-    iget-object v6, p0, Lcom/oneplus/settings/ui/OPCustomTonePreference;->mContext:Landroid/content/Context;
-
-    invoke-static {v6, v8}, Lcom/oneplus/settings/utils/OPThemeUtils;->setCurrentBasicColorMode(Landroid/content/Context;I)V
-
-    invoke-direct {p0, v11}, Lcom/oneplus/settings/ui/OPCustomTonePreference;->enableDarkTheme(Z)V
-
-    iget-object v6, p0, Lcom/oneplus/settings/ui/OPCustomTonePreference;->mContext:Landroid/content/Context;
-
-    const v8, 0x7f0603d2
-
-    invoke-virtual {v6, v8}, Landroid/content/Context;->getString(I)Ljava/lang/String;
-
-    move-result-object v6
-
-    iget-object v8, p0, Lcom/oneplus/settings/ui/OPCustomTonePreference;->mContext:Landroid/content/Context;
-
-    invoke-virtual {v8}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
-
-    move-result-object v8
+    move-result-object v3
 
     invoke-static {}, Landroid/app/ActivityManager;->getCurrentUser()I
 
-    move-result v9
+    move-result v7
 
-    invoke-static {v8, v5, v6, v9}, Landroid/provider/Settings$System;->putStringForUser(Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;I)Z
+    invoke-static {v3, v6, v2, v7}, Landroid/provider/Settings$System;->putStringForUser(Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;I)Z
 
-    invoke-static {v6}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+    invoke-static {v2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
-    move-result v5
+    move-result v3
 
-    if-nez v5, :cond_6
+    if-nez v3, :cond_2
 
-    invoke-virtual {v6, v3, v7}, Ljava/lang/String;->replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
+    invoke-virtual {v2, v4, v8}, Ljava/lang/String;->replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
 
-    move-result-object v6
+    move-result-object v2
 
-    :cond_6
-    invoke-static {v4, v6}, Landroid/os/SystemProperties;->set(Ljava/lang/String;Ljava/lang/String;)V
+    :cond_2
+    invoke-static {v5, v2}, Landroid/os/SystemProperties;->set(Ljava/lang/String;Ljava/lang/String;)V
+
+    goto :goto_0
+
+    :cond_3
+    const-string v2, "1"
+
+    invoke-static {v9, v9, v2}, Lcom/oneplus/settings/utils/OPUtils;->sendAnalytics(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+
+    iget-object v2, p0, Lcom/oneplus/settings/ui/OPCustomTonePreference;->mContext:Landroid/content/Context;
+
+    invoke-static {v2, v3}, Lcom/oneplus/settings/utils/OPThemeUtils;->setCurrentBasicColorMode(Landroid/content/Context;I)V
+
+    invoke-direct {p0, v10}, Lcom/oneplus/settings/ui/OPCustomTonePreference;->enableDarkTheme(Z)V
+
+    iget-object v2, p0, Lcom/oneplus/settings/ui/OPCustomTonePreference;->mContext:Landroid/content/Context;
+
+    const v3, 0x7f0603d2
+
+    invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+
+    move-result-object v2
+
+    iget-object v3, p0, Lcom/oneplus/settings/ui/OPCustomTonePreference;->mContext:Landroid/content/Context;
+
+    invoke-virtual {v3}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object v3
+
+    invoke-static {}, Landroid/app/ActivityManager;->getCurrentUser()I
+
+    move-result v7
+
+    invoke-static {v3, v6, v2, v7}, Landroid/provider/Settings$System;->putStringForUser(Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;I)Z
+
+    invoke-static {v2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+
+    move-result v3
+
+    if-nez v3, :cond_4
+
+    invoke-virtual {v2, v4, v8}, Ljava/lang/String;->replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
+
+    move-result-object v2
+
+    :cond_4
+    invoke-static {v5, v2}, Landroid/os/SystemProperties;->set(Ljava/lang/String;Ljava/lang/String;)V
 
     :goto_0
     const-string v2, "oneplus_accentcolor"
 
-    invoke-virtual {v0, v2, v7}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v2, v8}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     invoke-virtual {v1, v0}, Lcom/oneplus/sdk/utils/OpTheme;->enableTheme(Ljava/util/HashMap;)I
 

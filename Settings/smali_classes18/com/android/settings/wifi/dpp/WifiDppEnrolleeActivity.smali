@@ -192,7 +192,7 @@
     invoke-virtual {p0, v0}, Lcom/android/settings/wifi/dpp/WifiDppEnrolleeActivity;->setTheme(I)V
 
     :cond_0
-    const v0, 0x7f0d034e
+    const v0, 0x7f0d0355
 
     invoke-virtual {p0, v0}, Lcom/android/settings/wifi/dpp/WifiDppEnrolleeActivity;->setContentView(I)V
 

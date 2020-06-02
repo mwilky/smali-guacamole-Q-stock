@@ -974,9 +974,9 @@
 
     move-result-object v9
 
-    const v10, 0x7f121100
+    const v10, 0x7f1210fd
 
-    const v12, 0x7f12110d
+    const v12, 0x7f12110a
 
     new-array v13, v5, [Ljava/lang/Object;
 
@@ -1024,7 +1024,7 @@
     goto :goto_0
 
     :cond_1
-    const v9, 0x7f1210ff
+    const v9, 0x7f1210fc
 
     new-array v11, v11, [Ljava/lang/Object;
 
@@ -1198,7 +1198,7 @@
 
     invoke-static {v4, v2}, Lcom/android/settings/fuelgauge/BatteryInfo;->parse(Landroid/os/BatteryStats;[Lcom/android/settings/fuelgauge/BatteryInfo$BatteryDataParser;)V
 
-    const v4, 0x7f12041e
+    const v4, 0x7f12041c
 
     new-array v5, v3, [Ljava/lang/Object;
 
@@ -1226,7 +1226,7 @@
 
     if-eqz v6, :cond_1
 
-    const v6, 0x7f121208
+    const v6, 0x7f121210
 
     new-array v10, v3, [Ljava/lang/Object;
 

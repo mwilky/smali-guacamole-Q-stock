@@ -65,7 +65,7 @@
 
     iget-object v0, p0, Lcom/oneplus/settings/aboutphone/OPForumContributors;->mForumImageview:Landroid/widget/ImageView;
 
-    const v1, 0x7f080493
+    const v1, 0x7f080494
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -74,7 +74,7 @@
     :cond_0
     iget-object v0, p0, Lcom/oneplus/settings/aboutphone/OPForumContributors;->mForumImageview:Landroid/widget/ImageView;
 
-    const v1, 0x7f080494
+    const v1, 0x7f080495
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -104,7 +104,7 @@
 
     iget-object v0, p0, Lcom/oneplus/settings/aboutphone/OPForumContributors;->mForumImageview:Landroid/widget/ImageView;
 
-    const v1, 0x7f080491
+    const v1, 0x7f080492
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -113,7 +113,7 @@
     :cond_2
     iget-object v0, p0, Lcom/oneplus/settings/aboutphone/OPForumContributors;->mForumImageview:Landroid/widget/ImageView;
 
-    const v1, 0x7f080492
+    const v1, 0x7f080493
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -447,11 +447,11 @@
 
     invoke-static {v0, v1}, Lcom/oneplus/settings/utils/OPUtils;->sendAppTracker(Ljava/lang/String;Ljava/lang/String;)V
 
-    const v0, 0x7f0d01ba
+    const v0, 0x7f0d01c1
 
     invoke-virtual {p0, v0}, Lcom/oneplus/settings/aboutphone/OPForumContributors;->setContentView(I)V
 
-    const v0, 0x7f0a0704
+    const v0, 0x7f0a0706
 
     invoke-virtual {p0, v0}, Lcom/oneplus/settings/aboutphone/OPForumContributors;->findViewById(I)Landroid/view/View;
 
@@ -459,7 +459,7 @@
 
     check-cast v0, Landroid/widget/Toolbar;
 
-    const v1, 0x7f1212cd
+    const v1, 0x7f1212d5
 
     invoke-virtual {v0, v1}, Landroid/widget/Toolbar;->setTitle(I)V
 
@@ -485,7 +485,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f120e17
+    const v3, 0x7f120e15
 
     invoke-virtual {v2, v3}, Landroid/app/ActionBar;->setTitle(I)V
 
@@ -496,7 +496,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f120d48
+    const v3, 0x7f120d4b
 
     invoke-virtual {v2, v3}, Landroid/app/ActionBar;->setTitle(I)V
 

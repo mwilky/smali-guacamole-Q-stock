@@ -147,7 +147,7 @@
 
     iget-object v7, p0, Lcom/android/settings/notification/ZenModeSettingsFooterPreferenceController;->mContext:Landroid/content/Context;
 
-    const v8, 0x7f1219c8
+    const v8, 0x7f1219cf
 
     new-array v9, v5, [Ljava/lang/Object;
 
@@ -165,7 +165,7 @@
 
     iget-object v4, p0, Lcom/android/settings/notification/ZenModeSettingsFooterPreferenceController;->mContext:Landroid/content/Context;
 
-    const v5, 0x7f1219cc
+    const v5, 0x7f1219d3
 
     invoke-virtual {v4, v5}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -200,7 +200,7 @@
 
     iget-object v7, p0, Lcom/android/settings/notification/ZenModeSettingsFooterPreferenceController;->mContext:Landroid/content/Context;
 
-    const v8, 0x7f1219cb
+    const v8, 0x7f1219d2
 
     new-array v9, v5, [Ljava/lang/Object;
 
@@ -249,7 +249,7 @@
 
     move-result v7
 
-    const v8, 0x7f1219c7
+    const v8, 0x7f1219ce
 
     if-nez v7, :cond_4
 
@@ -435,7 +435,7 @@
 
     move-result-object v10
 
-    const v11, 0x7f1219c9
+    const v11, 0x7f1219d0
 
     new-array v12, v4, [Ljava/lang/Object;
 
@@ -455,7 +455,7 @@
 
     move-result-object v10
 
-    const v11, 0x7f1219ca
+    const v11, 0x7f1219d1
 
     invoke-virtual {v10, v11}, Landroid/content/res/Resources;->getText(I)Ljava/lang/CharSequence;
 

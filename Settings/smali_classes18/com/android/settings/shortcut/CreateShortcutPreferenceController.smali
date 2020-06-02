@@ -254,7 +254,7 @@
 
     invoke-static {v8, v7}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
-    const v7, 0x7f080227
+    const v7, 0x7f080228
 
     invoke-static {p0, v7}, Landroid/graphics/drawable/Icon;->createWithResource(Landroid/content/Context;I)Landroid/graphics/drawable/Icon;
 
@@ -303,13 +303,13 @@
 
     iget v2, v0, Landroid/content/pm/ActivityInfo;->icon:I
 
-    const v3, 0x7f0d02c2
+    const v3, 0x7f0d02c9
 
     invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object v4
 
-    const v5, 0x7f07052f
+    const v5, 0x7f070531
 
     invoke-virtual {v4, v5}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -326,7 +326,7 @@
     goto :goto_0
 
     :cond_0
-    const v1, 0x7f080227
+    const v1, 0x7f080228
 
     invoke-static {p0, v1}, Landroid/graphics/drawable/Icon;->createWithResource(Landroid/content/Context;I)Landroid/graphics/drawable/Icon;
 
@@ -579,7 +579,7 @@
 
     iget v5, v2, Landroid/content/pm/ActivityInfo;->icon:I
 
-    const v6, 0x7f0d02c1
+    const v6, 0x7f0d02c8
 
     iget-object v7, p0, Lcom/android/settings/shortcut/CreateShortcutPreferenceController;->mContext:Landroid/content/Context;
 
@@ -587,7 +587,7 @@
 
     move-result-object v7
 
-    const v8, 0x7f07052e
+    const v8, 0x7f070530
 
     invoke-virtual {v7, v8}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 

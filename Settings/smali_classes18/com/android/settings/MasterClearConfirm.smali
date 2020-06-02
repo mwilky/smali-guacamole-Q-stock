@@ -193,7 +193,7 @@
 
     iget-object v0, p0, Lcom/android/settings/MasterClearConfirm;->mContentView:Landroid/view/View;
 
-    const v1, 0x7f0a0613
+    const v1, 0x7f0a0615
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -201,6 +201,23 @@
 
     check-cast v0, Lcom/google/android/setupdesign/GlifLayout;
 
+    if-eqz v0, :cond_1
+
+    iget-boolean v1, p0, Lcom/android/settings/MasterClearConfirm;->mEraseSdCard:Z
+
+    if-eqz v1, :cond_0
+
+    const v1, 0x7f1209f2
+
+    goto :goto_0
+
+    :cond_0
+    const v1, 0x7f120ca9
+
+    :goto_0
+    invoke-virtual {v0, v1}, Lcom/google/android/setupdesign/GlifLayout;->setHeaderText(I)V
+
+    :cond_1
     const-class v1, Lcom/google/android/setupcompat/template/FooterBarMixin;
 
     invoke-virtual {v0, v1}, Lcom/google/android/setupdesign/GlifLayout;->getMixin(Ljava/lang/Class;)Lcom/google/android/setupcompat/template/Mixin;
@@ -217,8 +234,18 @@
 
     invoke-direct {v2, v3}, Lcom/google/android/setupcompat/template/FooterButton$Builder;-><init>(Landroid/content/Context;)V
 
-    const v3, 0x7f1209f1
+    iget-boolean v3, p0, Lcom/android/settings/MasterClearConfirm;->mEraseSdCard:Z
 
+    if-eqz v3, :cond_2
+
+    const v3, 0x7f1209f0
+
+    goto :goto_1
+
+    :cond_2
+    const v3, 0x7f120ca7
+
+    :goto_1
     invoke-virtual {v2, v3}, Lcom/google/android/setupcompat/template/FooterButton$Builder;->setText(I)Lcom/google/android/setupcompat/template/FooterButton$Builder;
 
     move-result-object v2
@@ -263,7 +290,7 @@
 
     iget-object v1, p0, Lcom/android/settings/MasterClearConfirm;->mContentView:Landroid/view/View;
 
-    const v2, 0x7f0a0689
+    const v2, 0x7f0a068b
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -271,8 +298,27 @@
 
     check-cast v1, Landroid/widget/TextView;
 
-    if-eqz v1, :cond_0
+    if-eqz v1, :cond_2
 
+    iget-boolean v2, p0, Lcom/android/settings/MasterClearConfirm;->mEraseEsims:Z
+
+    if-nez v2, :cond_1
+
+    iget-boolean v2, p0, Lcom/android/settings/MasterClearConfirm;->mEraseSdCard:Z
+
+    if-eqz v2, :cond_0
+
+    const v2, 0x7f1209fa
+
+    goto :goto_0
+
+    :cond_0
+    const v2, 0x7f120ca8
+
+    :goto_0
+    invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(I)V
+
+    :cond_1
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/CharSequence;)V
@@ -301,7 +347,7 @@
 
     invoke-virtual {v3, v4}, Landroidx/fragment/app/FragmentActivity;->setTitle(Ljava/lang/CharSequence;)V
 
-    :cond_0
+    :cond_2
     return-void
 .end method
 
@@ -337,14 +383,6 @@
 
     :cond_1
     invoke-virtual {v2}, Landroid/app/ActionBar;->hide()V
-
-    invoke-virtual {v0}, Landroid/app/Activity;->getWindow()Landroid/view/Window;
-
-    move-result-object v1
-
-    const/4 v3, 0x0
-
-    invoke-virtual {v1, v3}, Landroid/view/Window;->setStatusBarColor(I)V
 
     return-void
 .end method
@@ -583,7 +621,7 @@
 
     iget-object v0, p0, Lcom/android/settings/MasterClearConfirm;->mContentView:Landroid/view/View;
 
-    const v1, 0x7f0a0689
+    const v1, 0x7f0a068b
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

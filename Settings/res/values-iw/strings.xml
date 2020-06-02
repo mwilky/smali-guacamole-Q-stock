@@ -2447,6 +2447,7 @@
 החשבונות הבאים שלך פעילים כעת:
 "</string>
     <string name="master_clear_button_text">מחיקת כל הנתונים</string>
+    <string name="master_clear_confirm_summary">כל התוכן באחסון הפנימי יוסר, כולל מוזיקה, תמונות, סרטונים ונתונים אישיים אחרים. האם אתה מאשר למחוק?</string>
     <string name="master_clear_confirm_title">האם למחוק את כל הנתונים?</string>
     <string name="master_clear_desc">‏פעולה זו תמחק את כל הנתונים מ<b>האחסון הפנימי</b>" של הטלפון, כולל:
 
@@ -2924,7 +2925,7 @@
     <string name="oneplus_auto_activate">הפעל באופן אוטומטי</string>
     <string name="oneplus_auto_answer_via_bluetooth_summary">השיחה הנכנסת תקבל מענה באופן אוטומטי בשעה שמחוברים להתקן שמע בטכנולוגיית Bluetooth</string>
     <string name="oneplus_auto_answer_via_bluetooth_title">תשובה חכמה בשביל Bluetooth</string>
-    <string name="oneplus_auto_check_pin_length">אשר את ה-PIN ללא הקשה על הסימן \"✓\"</string>
+    <string name="oneplus_auto_check_pin_length">בטל אוטומטית נעילת מסך לאחר הזנת קוד PIN</string>
     <string name="oneplus_auto_disconect_the_ap">הנקודה החמה תבוטל באופן אוטומטי לאחר 5 דקות אם אין התקנים מחוברים.</string>
     <string name="oneplus_auto_open_app_none">ללא</string>
     <string name="oneplus_auto_open_app_other_applications">יישומים אחרים</string>
@@ -3077,6 +3078,9 @@ Battery נכבה אוטומטית כאשר המכשיר במצב טעינה."</s
 2בהליך הגדרה אחד, הזן רק טביעה של אצבע אחת."</string>
     <string name="oneplus_enroll_fingerprint_tips_title">הנחייה להגדרת טביעת אצבע</string>
     <string name="oneplus_enter_your_fingerprint">רשום את טביעת האצבע שלך</string>
+    <string name="oneplus_erase_system_data">מחיקת נתוני מערכת</string>
+    <string name="oneplus_erase_system_data_summary">נתוני מערכת, כולל פרטי חשבון, אנשי קשר ונתוני אפליקציות יימחקו. לא ניתן לבטל פעולה זו.</string>
+    <string name="oneplus_erase_system_data_title">האם למחוק נתוני מערכת?</string>
     <string name="oneplus_esportmode_introduction_summary">להפעלת מצב Esports, הקש על הפעלה או כיבוי בלוח מצב משחק.</string>
     <string name="oneplus_experience_improvement_programs">תכניות לשיפור החוויה</string>
     <string name="oneplus_face_auto_unlock_while_screen_on_sumary">שחרר את נעילת הטלפון שלך באמצעות זיהוי פניך ברגע שהמסך נדלק מבלי להחליק אצבע על המסך קודם.</string>
@@ -3141,7 +3145,7 @@ Battery נכבה אוטומטית כאשר המכשיר במצב טעינה."</s
     <string name="oneplus_fnatic_mode_disturb_introduction_summary">חסימת כל ההודעות והשיחות (חוץ מהודעה על סוללה חלשה, התראה וטיימר). ייתכן ששיחות שלא נענו לא יישמרו ביומני שיחות.</string>
     <string name="oneplus_fnatic_mode_disturb_introduction_title">DND מתקדם</string>
     <string name="oneplus_fnatic_mode_enable_introduction_title">כדי להשתמש במצב Fnatic יש להפעיל תחילה מצב משחק</string>
-    <string name="oneplus_fnatic_mode_network_introduction_dual4g_summary">עוצמת השידור של כרטיס ה-SIM הראשי מקבל עדיפות על מנת לצמצם הפרעות במהלך השהיות במשחק. כתוצאה מכך, כרטיס ה-SIM המשני יושבת, ולא יתקבלו שיחות הוא הודעות.</string>
+    <string name="oneplus_fnatic_mode_network_introduction_dual4g_summary">יש עדיפות לעוצמת האות העיקרי של כרטיס ה-SIM, כדי לצמצם את ההפרעות במהלך השהיות במשחק. כתוצאה מכך, כרטיס ה-SIM המשני יושבת, ולא יתקבלו שיחות או הודעות.</string>
     <string name="oneplus_fnatic_mode_network_introduction_summary">שפר את היציבות של חיבור הרשת</string>
     <string name="oneplus_fnatic_mode_network_introduction_title">שיפור הרשת</string>
     <string name="oneplus_fnatic_mode_summary">שדרג את חוויית המשחקים שלך</string>
@@ -3239,7 +3243,7 @@ Battery נכבה אוטומטית כאשר המכשיר במצב טעינה."</s
     <string name="oneplus_hand_up_proximity_title">תצוגה בהרמה</string>
     <string name="oneplus_hand_up_to_show">הרם את הטלפון כדי להציג</string>
     <string name="oneplus_haptic_feedback_no_app">לא מותקנים משחקים נתמכים</string>
-    <string name="oneplus_haptic_feedback_no_app_tip">באפשרותך להתקין PUBG Mobile ו-Asphalt 9</string>
+    <string name="oneplus_haptic_feedback_no_app_tip">באפשרותך להתקין את PUBG Mobile ו-Asphalt 9</string>
     <string name="oneplus_haptic_feedback_summary">ספק משוב תחושתי טוב יותר עבור המשחקים הנתמכים</string>
     <string name="oneplus_haptic_feedback_support">משחקים נתמכים</string>
     <string name="oneplus_haptic_feedback_tips">מספק משוב מגע משופר עבור סצנות משחק ספציפיות , חל רק על משחקים נתמכים</string>
@@ -3453,7 +3457,7 @@ Battery נכבה אוטומטית כאשר המכשיר במצב טעינה."</s
     <string name="oneplus_quickpay">תשלום מהיר</string>
     <string name="oneplus_quickpay_confirm_changehomebutton">האם אתה בטוח שברצונך לשנות את הפעולה עבור לחיצה ארוכה על לחצן הבית מ\"%1$s\" ל\"תשלום מהיר\"?</string>
     <string name="oneplus_quickpay_entry_summary">לחץ לחיצה ארוכה על כפתור הבית להפעלת תשלום מהיר</string>
-    <string name="oneplus_quickpay_instructions">הוראות</string>
+    <string name="oneplus_quickpay_instructions">הנחיות</string>
     <string name="oneplus_quickpay_lock_swtch_summary">לחץ לחיצה ארוכה על כפתור הבית עם אצבע רשומה להפעלת תשלום מהיר כשהטלפון נעול.</string>
     <string name="oneplus_quickpay_lock_swtch_title">תשלום מהיר ממסך נעילה</string>
     <string name="oneplus_quickpay_select_default_way">בחר באפשרות תשלום כברירת מחדל</string>
@@ -3572,7 +3576,7 @@ Battery נכבה אוטומטית כאשר המכשיר במצב טעינה."</s
     <string name="oneplus_search_keyword_swap_navkeys">החלף מקשים</string>
     <string name="oneplus_search_keyword_switch">העברה, העברת נתונים</string>
     <string name="oneplus_search_keyword_theme_settings">התאמה אישית של נעילת מסך, רקעים, סגנון שעון, הנפשה של טביעת אצבע, Horizon light, התאמה אישית של מערכת, צבע הדגשה, צורה, גופן, צליל, ערכת סמלים, אור תאורה, רקע כהה, גוונים חזקים</string>
-    <string name="oneplus_search_keyword_theme_settings_mcl">התאמה אישית של נעילת מסך, רקעים, סגנון שעון, הנפשה של טביעת אצבע, Horizon light, התאמה אישית של מערכת, צבע הדגשה, צורה, גופן, צליל, גוון, ערכת סמלים, אור תאורה, רקע כהה, גוונים חזקים, McLaren</string>
+    <string name="oneplus_search_keyword_theme_settings_mcl">התאמה אישית של נעילת מסך, רקעים, סגנון שעון, הנפשה של טביעת אצבע, Horizon light, התאמה אישית של מערכת, צבע הדגשה, צורה, גופן, צליל, ערכת סמלים, אור תאורה, רקע כהה, גוונים חזקים, McLaren</string>
     <string name="oneplus_search_keyword_three_screenshots">צילום מסך</string>
     <string name="oneplus_search_keyword_timer_boot" />
     <string name="oneplus_search_keyword_user_experience">הודעות, ניסיון, תכנית, שיפור</string>
@@ -3752,9 +3756,9 @@ Battery נכבה אוטומטית כאשר המכשיר במצב טעינה."</s
     <string name="oneplus_vibration_settings_soc_tri_state">רטט</string>
     <string name="oneplus_vibration_settings_soc_tri_state_summary">שיחות והודעות יושתקו ויוגדרו למצב רטט בלבד, מלבד התראות</string>
     <string name="oneplus_vibration_summary">השעון המעורר יצלצל תמיד</string>
-    <string name="oneplus_video_enhancer">שיפור וידאו</string>
-    <string name="oneplus_video_enhancer_footer">שפר את הצבעים תוך הפעלת סרטונים</string>
-    <string name="oneplus_video_enhancer_summary">שפר את הצבעים תוך הפעלת סרטונים</string>
+    <string name="oneplus_video_enhancer">אפקט צבע חזק</string>
+    <string name="oneplus_video_enhancer_footer">משפר את הצבעים בעת ניגון סרטונים</string>
+    <string name="oneplus_video_enhancer_summary">משפר את הצבעים בעת ניגון סרטונים</string>
     <string name="oneplus_volume_keys_adjust">השתמש בלחצני עוצמת הקול כדי להתאים</string>
     <string name="oneplus_volume_keys_adjust_media">עוצמת המדיה</string>
     <string name="oneplus_volume_keys_adjust_ringtones">עוצמת הצלצול</string>
@@ -4782,7 +4786,7 @@ Voice over Wi-Fi:‏ %3$s
     <string name="status_bar_settings_cellular_title">נתונים סלולרים</string>
     <string name="status_bar_settings_dnd_title">נא לא להפריע</string>
     <string name="status_bar_settings_headset_title">אוזניות</string>
-    <string name="status_bar_settings_hotspot_title">נקודת גישה</string>
+    <string name="status_bar_settings_hotspot_title">נקודה חמה</string>
     <string name="status_bar_settings_network_speed_title">הצגת מהירות רשת</string>
     <string name="status_bar_settings_time_title">זמן</string>
     <string name="status_bar_settings_wifi_title">Wi-Fi</string>

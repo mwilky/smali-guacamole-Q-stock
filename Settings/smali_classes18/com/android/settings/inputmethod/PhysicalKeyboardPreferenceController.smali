@@ -64,7 +64,7 @@
 
     iget-object v1, p0, Lcom/android/settings/inputmethod/PhysicalKeyboardPreferenceController;->mPreference:Landroidx/preference/Preference;
 
-    const v2, 0x7f120851
+    const v2, 0x7f120850
 
     invoke-virtual {v1, v2}, Landroidx/preference/Preference;->setSummary(I)V
 

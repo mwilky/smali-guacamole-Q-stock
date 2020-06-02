@@ -2447,6 +2447,7 @@ Puoi cambiare la tua scelta più tardi da Impostazioni > App e notifiche."</stri
 Al momento sei collegato ai seguenti account:
 "</string>
     <string name="master_clear_button_text">Cancella tutti i dati</string>
+    <string name="master_clear_confirm_summary">"Tutto il contenuto dell'archiviazione interna sarà anch'esso rimosso, inclusi musica, foto, video e altri dati personali. Cancellare?"</string>
     <string name="master_clear_confirm_title">Cancellare tutti i dati?</string>
     <string name="master_clear_desc">In questo modo tutti i dati saranno cancellati dalla <b>memoria interna</b>" del tuo cellulare, inclusi:
 
@@ -2925,7 +2926,7 @@ L'app potrà anche attivare o disattivare la funzione Non disturbare e modificar
     <string name="oneplus_auto_activate">Attivare automaticamente</string>
     <string name="oneplus_auto_answer_via_bluetooth_summary">La ricezione automatica della chiamata in arrivo sarà attivata durante la connessione a un dispositivo audio Bluetooth</string>
     <string name="oneplus_auto_answer_via_bluetooth_title">Risposta intelligente per Bluetooth</string>
-    <string name="oneplus_auto_check_pin_length">Conferma il PIN senza toccare \"✓\"</string>
+    <string name="oneplus_auto_check_pin_length">Schermo sbloccato automaticamente dopo aver inserito il PIN</string>
     <string name="oneplus_auto_disconect_the_ap">"L'hotspot si spegnerà automaticamente dopo 5 minuti se non è connesso alcun dispositivo."</string>
     <string name="oneplus_auto_open_app_none">Nessuno</string>
     <string name="oneplus_auto_open_app_other_applications">ALTRE APPLICAZIONI</string>
@@ -2984,7 +2985,7 @@ La funzione di risparmio batteria è disattivata automaticamente quando il dispo
     <string name="oneplus_clean_storage">Pulisci</string>
     <string name="oneplus_clear_intenal_storage_data_summary">Compresi musica, foto, video e altri dati personali</string>
     <string name="oneplus_clear_intenal_storage_data_title">Svuota memoria interna</string>
-    <string name="oneplus_colorful_mode_cannot_change_color_accent">Per il tono a colori si può utilizzare solo il colore di sistema</string>
+    <string name="oneplus_colorful_mode_cannot_change_color_accent">Per la tonalità a colori si può utilizzare solo il colore di sistema</string>
     <string name="oneplus_colorful_mode_title">A colori</string>
     <string name="oneplus_compatibility_mode_summary">"Le app a schermo intero non possono utilizzare l'area notch"</string>
     <string name="oneplus_compatibility_mode_title">Modalità compatibilità</string>
@@ -3079,6 +3080,9 @@ La funzione di risparmio batteria è disattivata automaticamente quando il dispo
 2.Inserire le informazioni relative a una sola impronta digitale in un unico processo di configurazione"</string>
     <string name="oneplus_enroll_fingerprint_tips_title">"Prompt per la configurazione dell'impronta digitale"</string>
     <string name="oneplus_enter_your_fingerprint">· Registrare la propria impronta digitale</string>
+    <string name="oneplus_erase_system_data">Cancella dati di sistema</string>
+    <string name="oneplus_erase_system_data_summary">"I dati di sistema, incluse le informazioni sull'account, i contatti e i dati app, saranno eliminati. Questa azione non può essere annullata."</string>
+    <string name="oneplus_erase_system_data_title">Cancellare dati di sistema?</string>
     <string name="oneplus_esportmode_introduction_summary">"Per attivare la modalità Esports, tocca l'interruttore sul pannello Modalità di gioco."</string>
     <string name="oneplus_experience_improvement_programs">"Programmi di miglioramento dell'esperienza"</string>
     <string name="oneplus_face_auto_unlock_while_screen_on_sumary">Sblocca il tuo telefono con il tuo viso non appena lo schermo si accende, senza scorrere con le dita.</string>
@@ -3574,7 +3578,7 @@ Nota: l'impronta digitale potrebbe risultare meno sicura di un pattern o del PIN
     <string name="oneplus_search_keyword_sounds_and_notifications_interruptions">non non’t disturbare, interrompere, interruzione, pausa, modalità</string>
     <string name="oneplus_search_keyword_swap_navkeys">scambiare tasti</string>
     <string name="oneplus_search_keyword_switch">trasferire, migrazione dei dati</string>
-    <string name="oneplus_search_keyword_theme_settings">PERSONALIZZAZIONE SCHERMATA DI BLOCCO, Sfondi, Stile orologio, Animazione impronta digitale, Horizon Light, PERSONALIZZAZIONE SISTEMA, Colore evidenziatore, Forma, Carattere, Tono, Pacchetto icone, Luce di illuminazione, Scuro sfumato, Tinte vivaci</string>
+    <string name="oneplus_search_keyword_theme_settings">PERSONALIZZAZIONE SCHERMATA DI BLOCCO, Sfondi, Stile orologio, Animazione impronta digitale, Horizon Light, PERSONALIZZAZIONE SISTEMA, Colore evidenziatore, Forma, Carattere, Tonalità, Pacchetto icone, Luce di illuminazione, Scuro sfumato, Tinte vivaci</string>
     <string name="oneplus_search_keyword_theme_settings_mcl">PERSONALIZZAZIONE SCHERMATA DI BLOCCO, Sfondi, Stile orologio, Animazione impronta digitale, Horizon Light, PERSONALIZZAZIONE SISTEMA, Colore evidenziatore, Forma, Carattere, Tono, Pacchetto icone, Luce di illuminazione, Scuro sfumato, Tinte vivaci, McLaren</string>
     <string name="oneplus_search_keyword_three_screenshots">screenshot</string>
     <string name="oneplus_search_keyword_timer_boot" />
@@ -3674,7 +3678,7 @@ Nota:
     <string name="oneplus_theme_colorpicker_colorvalue">CODICE COLORE</string>
     <string name="oneplus_theme_drop_summary">Rimuovere modifiche?</string>
     <string name="oneplus_theme_drop_title">Esci dalla modalità di modifica</string>
-    <string name="oneplus_theme_entrance_summary">Sfondi, colore principale, carattere, tono</string>
+    <string name="oneplus_theme_entrance_summary">Sfondi, colore principale, carattere, tonalità</string>
     <string name="oneplus_theme_entrance_title">Personalizzazione</string>
     <string name="oneplus_theme_fingerprint">Animazione impronta digitale</string>
     <string name="oneplus_theme_fingerprint_snake_action">ATTIVA IMPRONTA DIGITALE</string>
@@ -3697,7 +3701,7 @@ Nota:
     <string name="oneplus_theme_shape_effect_teardrop">A goccia</string>
     <string name="oneplus_theme_shape_effect_title">SELEZIONA FORMA</string>
     <string name="oneplus_theme_system_customization">PERSONALIZZAZIONE SISTEMA</string>
-    <string name="oneplus_theme_tone">Tono</string>
+    <string name="oneplus_theme_tone">Tonalità</string>
     <string name="oneplus_theme_tone_effect_color">A colori</string>
     <string name="oneplus_theme_tone_effect_dark">Scuro</string>
     <string name="oneplus_theme_tone_effect_light">Leggero</string>
@@ -3754,7 +3758,7 @@ Nota: Face Unlock può risultare meno sicura dell'impronta digitale, del PIN o d
     <string name="oneplus_vibration_settings_soc_tri_state">Vibrazione</string>
     <string name="oneplus_vibration_settings_soc_tri_state_summary">Le suonerie di chiamate e notifiche saranno disattivate e impostate su sola vibrazione, tranne che per gli allarmi</string>
     <string name="oneplus_vibration_summary">Le sveglie suoneranno sempre</string>
-    <string name="oneplus_video_enhancer">Video Enhancer</string>
+    <string name="oneplus_video_enhancer">Effetto di colore vivace</string>
     <string name="oneplus_video_enhancer_footer">Migliora il colore durante la riproduzione di video</string>
     <string name="oneplus_video_enhancer_summary">Migliora il colore durante la riproduzione di video</string>
     <string name="oneplus_volume_keys_adjust">Utilizza i pulsanti del volume per regolare</string>
@@ -5052,7 +5056,7 @@ Prova a usare un dispositivo ^3 più veloce oppure usa ^4 come memoria portatile
     <string name="switch_off_text">Off</string>
     <string name="switch_on_text">On</string>
     <string name="switch_skin_doing">Modifica tema in corso...</string>
-    <string name="switch_theme_has_success">Operazione completata</string>
+    <string name="switch_theme_has_success">Completo</string>
     <string name="sync_active">Sincronizzazione attiva</string>
     <string name="sync_automatically">Sincronizz. automatica</string>
     <string name="sync_calendar">Calendario</string>

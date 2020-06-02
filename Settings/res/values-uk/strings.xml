@@ -2447,6 +2447,7 @@
 Наразі ви ввійшли в такі облікові записи:
 "</string>
     <string name="master_clear_button_text">Стерти всі дані</string>
+    <string name="master_clear_confirm_summary">Буде також видалено весь вміст внутрішнього сховища, зокрема музику, фото, відео та інші особисті дані. Ви підтверджуєте стирання?</string>
     <string name="master_clear_confirm_title">Стерти всі дані?</string>
     <string name="master_clear_desc">Буде видалено всі дані з <b>внутрішньої пам’яті</b>" вашого телефона, зокрема:
 
@@ -2925,7 +2926,7 @@
     <string name="oneplus_auto_activate">Вмикати автоматично</string>
     <string name="oneplus_auto_answer_via_bluetooth_summary">Якщо телефон підключено до аудіопристрою Bluetooth, вхідний виклик буде автоматично прийнято</string>
     <string name="oneplus_auto_answer_via_bluetooth_title">Розумна відповідь через Bluetooth</string>
-    <string name="oneplus_auto_check_pin_length">Підтвердьте PIN-код, не торкаючись піктограми ✓</string>
+    <string name="oneplus_auto_check_pin_length">Розблокування екрана після введення PIN-коду</string>
     <string name="oneplus_auto_disconect_the_ap">Точку доступу буде вимкнено автоматично через 5 хвилин, якщо немає підключених пристроїв.</string>
     <string name="oneplus_auto_open_app_none">Ні</string>
     <string name="oneplus_auto_open_app_other_applications">ІНШІ ДОДАТКИ</string>
@@ -3079,6 +3080,9 @@
 2. У межах однієї операції з налаштування реєструйте лише один відбиток пальця."</string>
     <string name="oneplus_enroll_fingerprint_tips_title">Підказка з налаштування відбитка пальця</string>
     <string name="oneplus_enter_your_fingerprint">· Зберегти відбиток пальця</string>
+    <string name="oneplus_erase_system_data">СТЕРТИ СИСТЕМНІ ДАНІ</string>
+    <string name="oneplus_erase_system_data_summary">Системні дані, зокрема відомості про обліковий запис, контакти й дані додатків, буде видалено. Скасувати цю дію неможливо.</string>
+    <string name="oneplus_erase_system_data_title">Стерти системні дані?</string>
     <string name="oneplus_esportmode_introduction_summary">Щоб активувати Кіберспортивний режим, на панелі Ігрового режиму торкніться перемикача.</string>
     <string name="oneplus_experience_improvement_programs">Програми покращення взаємодії</string>
     <string name="oneplus_face_auto_unlock_while_screen_on_sumary">Розблокування телефону за допомогою розпізнавання обличчя одразу після ввімкнення екрану, без змахування.</string>
@@ -3575,7 +3579,7 @@
     <string name="oneplus_search_keyword_swap_navkeys">змінити положення кнопок</string>
     <string name="oneplus_search_keyword_switch">передавання,перенесення даних</string>
     <string name="oneplus_search_keyword_theme_settings">ПЕРСОНАЛІЗАЦІЯ ЕКРАНА БЛОКУВАННЯ, шпалери, стиль годинника, анімація відбитка пальця, Horizon Light, ПЕРСОНАЛІЗАЦІЯ СИСТЕМИ, акцентний колір, форма, шрифт, відтінок, набір піктограм, ілюмінація, темні кольори, яскраві тони</string>
-    <string name="oneplus_search_keyword_theme_settings_mcl">ПЕРСОНАЛІЗАЦІЯ ЕКРАНА БЛОКУВАННЯ, шпалери, стиль годинника, анімація відбитка пальця, Horizon Light, ПЕРСОНАЛІЗАЦІЯ СИСТЕМИ, акцентний колір, форма, шрифт, відтінок, набір піктограм, підсвічування, виражено темні кольори, яскраві тони, McLaren</string>
+    <string name="oneplus_search_keyword_theme_settings_mcl">ПЕРСОНАЛІЗАЦІЯ ЕКРАНА БЛОКУВАННЯ, шпалери, стиль годинника, анімація відбитка пальця, Horizon Light, ПЕРСОНАЛІЗАЦІЯ СИСТЕМИ, акцентний колір, форма, шрифт, відтінок, набір піктограм, ілюмінація, темні кольори, яскраві тони, McLaren</string>
     <string name="oneplus_search_keyword_three_screenshots">знімок екрана</string>
     <string name="oneplus_search_keyword_timer_boot" />
     <string name="oneplus_search_keyword_user_experience">сповіщення,взаємодія,програма,покращення,удосконалення</string>
@@ -3755,9 +3759,9 @@
     <string name="oneplus_vibration_settings_soc_tri_state">Вібрація</string>
     <string name="oneplus_vibration_settings_soc_tri_state_summary">Звук викликів і сповіщень буде вимкнено (крім сигналів будильника), а вібрацію буде ввімкнено</string>
     <string name="oneplus_vibration_summary">Будильник завжди дзвонитиме</string>
-    <string name="oneplus_video_enhancer">Поліпшувач відео</string>
-    <string name="oneplus_video_enhancer_footer">Покращувати передавання кольорів під час відтворення відео</string>
-    <string name="oneplus_video_enhancer_summary">Покращувати передавання кольорів під час відтворення відео</string>
+    <string name="oneplus_video_enhancer">Ефект яскравих кольорів</string>
+    <string name="oneplus_video_enhancer_footer">Поліпшіть колір під час відтворення відео</string>
+    <string name="oneplus_video_enhancer_summary">Поліпшіть колір під час відтворення відео</string>
     <string name="oneplus_volume_keys_adjust">Регулювати за допомогою клавіш змінення гучності</string>
     <string name="oneplus_volume_keys_adjust_media">Гучність медіафайлів</string>
     <string name="oneplus_volume_keys_adjust_ringtones">Гучність рингтону</string>
@@ -3810,7 +3814,7 @@
     <string name="op_dark_mode_title">Темна</string>
     <string name="op_data_vowlan_enable_summary">Здійснювати виклики через Wi-Fi (якщо послуга доступна)</string>
     <string name="op_default_apps_summary">Запускач, браузер</string>
-    <string name="op_default_luncher_title">Запускач</string>
+    <string name="op_default_luncher_title">Додаток головного екрана</string>
     <string name="op_dnd_summary">Не турбувати</string>
     <string name="op_face_unlock_set_unlock_password">Face Unlock + пароль</string>
     <string name="op_face_unlock_set_unlock_pattern">Face Unlock + графічний ключ</string>

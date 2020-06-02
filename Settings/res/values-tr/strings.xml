@@ -2447,6 +2447,7 @@ Bunu daha sonra Ayarlar > Uygulamalar ve bildirimler seçeneğinden değiştireb
 Şu anda aşağıdaki hesaplarda oturum açmış durumdasınız:
 "</string>
     <string name="master_clear_button_text">Tüm verileri sil</string>
+    <string name="master_clear_confirm_summary">Müzik, fotoğraflar, videolar ve diğer kişisel veriler dahil olmak üzere dahili depolama alanındaki tüm içerik de kaldırılacak. Silmeyi onaylıyor musunuz?</string>
     <string name="master_clear_confirm_title">Tüm veriler silinsin mi?</string>
     <string name="master_clear_desc">Bu işlem, telefonunuzun <b>dahili depolama alanından</b>" şu verilerin tümünü siler:
 
@@ -2925,7 +2926,7 @@ Bu izin, uygulamaya, Rahatsız Etmeyin ayarını açma veya kapatma ve ilgili ay
     <string name="oneplus_auto_activate">Otomatik olarak etkinleştir</string>
     <string name="oneplus_auto_answer_via_bluetooth_summary">Bir Bluetooth ses cihazına bağlıyken, gelen arama otomatik olarak yanıtlanır</string>
     <string name="oneplus_auto_answer_via_bluetooth_title">Bluetooth için Akıllı Cevap</string>
-    <string name="oneplus_auto_check_pin_length">"PIN'i \"✓\" öğesine dokunmadan onaylayın"</string>
+    <string name="oneplus_auto_check_pin_length">PIN girildikten sonra ekran kilidini otomatik olarak aç</string>
     <string name="oneplus_auto_disconect_the_ap">Hiçbir cihaz bağlı değilse ortak erişim noktası 5 dakika sonra otomatik olarak kapatılacaktır.</string>
     <string name="oneplus_auto_open_app_none">Hiçbiri</string>
     <string name="oneplus_auto_open_app_other_applications">DİĞER UYRGULAMALAR</string>
@@ -3079,6 +3080,9 @@ Pil tasarrufu, cihazınız şarj olduğunda otomatik olarak kapanır."</string>
 2.Her kurulum işleminde lütfen yalnızca bir parmağınızın bilgisini girin"</string>
     <string name="oneplus_enroll_fingerprint_tips_title">Parmak izi kurulumu istemi</string>
     <string name="oneplus_enter_your_fingerprint">· Parmak izinizi kaydedin</string>
+    <string name="oneplus_erase_system_data">SİSTEM VERİLERİNİ SİL</string>
+    <string name="oneplus_erase_system_data_summary">Hesap bilgileri, kişiler ve uygulama verileri dahil tüm sistem verileri silinecek. Bu eylemi geri alamazsınız.</string>
+    <string name="oneplus_erase_system_data_title">Sistem verileri silinsin mi?</string>
     <string name="oneplus_esportmode_introduction_summary">E-spor modunu aktive etmek için Oyun modu panelindeki düğmeye dokunun.</string>
     <string name="oneplus_experience_improvement_programs">İyileştirme programlarını deneyin</string>
     <string name="oneplus_face_auto_unlock_while_screen_on_sumary">Dokunmaya gerek kalmadan, ekran açıldıktan sonra yüzünüzü kullanarak telefonunuzun kilidini açın.</string>
@@ -3143,7 +3147,7 @@ Dikkat: Yüz ile kilit açma özelliği parmak izi veya parola kullanımı kadar
     <string name="oneplus_fnatic_mode_disturb_introduction_summary">Tüm bildirimleri ve aramaları engelleyin (düşük pil bildirimi, alarm ve zamanlayıcı hariç). Cevapsız aramalar, arama kayıtlarına kaydedilmeyebilir.</string>
     <string name="oneplus_fnatic_mode_disturb_introduction_title">Gelişmiş DND</string>
     <string name="oneplus_fnatic_mode_enable_introduction_title">Fnatic modunun kullanılabilmesi için önce oyun modunun etkinleştirilmesi gerekir</string>
-    <string name="oneplus_fnatic_mode_network_introduction_dual4g_summary">Oyunların düşük gecikmeyle oynanması amacıyla enterferansı minimuma indirmek için birinci SIM kartın sinyal gücüne öncelik verilir. Bunun sonucunda ikinci SIM kart devre dışı bırakılır ve arama veya mesaj alınamaz.</string>
+    <string name="oneplus_fnatic_mode_network_introduction_dual4g_summary">Oyunların düşük gecikmeyle oynanması amacıyla girişimi minimuma indirmek için birincil SIM kartın sinyal gücüne öncelik verilir. Bunun sonucunda, ikincil SIM kart devre dışı bırakılır ve arama veya mesaj alınamaz.</string>
     <string name="oneplus_fnatic_mode_network_introduction_summary">Ağ bağlantısının kararlılığını artırın</string>
     <string name="oneplus_fnatic_mode_network_introduction_title">Ağ iyileştirme</string>
     <string name="oneplus_fnatic_mode_summary">Oyun deneyiminizi güçlendirin</string>
@@ -3240,7 +3244,7 @@ Ekrana gitmek için, parmağınızı ekranın alt orta köşesinden yukarıya do
     <string name="oneplus_hand_up_proximity_title">Ekranı yukarı doğru kaydırın</string>
     <string name="oneplus_hand_up_to_show">Göstermek için telefonunuzu açın</string>
     <string name="oneplus_haptic_feedback_no_app">Yüklü bir desteklenen oyun yok</string>
-    <string name="oneplus_haptic_feedback_no_app_tip">"PUBG Mobile ve Asphalt 9'u yükleyebilirsiniz."</string>
+    <string name="oneplus_haptic_feedback_no_app_tip">PUBG Mobile ve Asphalt 9 yükleyebilirsiniz</string>
     <string name="oneplus_haptic_feedback_summary">Desteklenen oyunlar için daha iyi dokunsal geri bildirim sağlayın</string>
     <string name="oneplus_haptic_feedback_support">Desteklenen oyunlar</string>
     <string name="oneplus_haptic_feedback_tips">Belirli oyun kareleri için dokunsal geri bildirim sağlayın, yalnızca desteklenen oyunlara uygulanabilir</string>
@@ -3754,9 +3758,9 @@ Not: Yüz Kilidi parmak izi, PIN veya diğer ekran kilidi seçeneklerinden daha 
     <string name="oneplus_vibration_settings_soc_tri_state">Titreşim</string>
     <string name="oneplus_vibration_settings_soc_tri_state_summary">Alarmlar dışındaki tüm aramalar ve bildirimler sessize alınır ve sadece titreşim moduna ayarlanır</string>
     <string name="oneplus_vibration_summary">Alarmlar her zaman çalar</string>
-    <string name="oneplus_video_enhancer">Video geliştirici</string>
-    <string name="oneplus_video_enhancer_footer">Videoları oynatırken rengi geliştirir</string>
-    <string name="oneplus_video_enhancer_summary">Videoları oynatırken rengi geliştirir</string>
+    <string name="oneplus_video_enhancer">Canlı renk efekti</string>
+    <string name="oneplus_video_enhancer_footer">Videoları oynatılırken renkleri artırır</string>
+    <string name="oneplus_video_enhancer_summary">Videoları oynatılırken renkleri artırır</string>
     <string name="oneplus_volume_keys_adjust">Ayarlamak için ses düğmelerini kullanın</string>
     <string name="oneplus_volume_keys_adjust_media">Medya sesi</string>
     <string name="oneplus_volume_keys_adjust_ringtones">Zil sesi seviyesi</string>
@@ -4786,7 +4790,7 @@ Cihazınızda yüklü durumdaki güvenilen bir kimlik bilgisi bunu mümkün kıl
     <string name="status_bar_settings_cellular_title">Hücresel veri</string>
     <string name="status_bar_settings_dnd_title">Rahatsız etmeyin</string>
     <string name="status_bar_settings_headset_title">Kulaklık-mikrofon</string>
-    <string name="status_bar_settings_hotspot_title">Bağlantı noktası</string>
+    <string name="status_bar_settings_hotspot_title">Ortak erişim noktası</string>
     <string name="status_bar_settings_network_speed_title">Ağ hızını göster</string>
     <string name="status_bar_settings_time_title">Zaman</string>
     <string name="status_bar_settings_wifi_title">Wi-Fi</string>

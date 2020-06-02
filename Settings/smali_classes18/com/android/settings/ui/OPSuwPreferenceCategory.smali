@@ -43,7 +43,7 @@
 
     iput-object p1, p0, Lcom/android/settings/ui/OPSuwPreferenceCategory;->mContext:Landroid/content/Context;
 
-    const v0, 0x7f0d0228
+    const v0, 0x7f0d022f
 
     invoke-virtual {p0, v0}, Lcom/android/settings/ui/OPSuwPreferenceCategory;->setLayoutResource(I)V
 

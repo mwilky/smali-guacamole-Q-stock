@@ -122,7 +122,7 @@
 
     iget-object v2, p0, Lcom/android/settings/deviceinfo/StorageSettings$MountTask;->mContext:Landroid/content/Context;
 
-    const v3, 0x7f121482
+    const v3, 0x7f12148a
 
     new-array v0, v0, [Ljava/lang/Object;
 
@@ -165,7 +165,7 @@
 
     iget-object v2, p0, Lcom/android/settings/deviceinfo/StorageSettings$MountTask;->mContext:Landroid/content/Context;
 
-    const v3, 0x7f121481
+    const v3, 0x7f121489
 
     new-array v0, v0, [Ljava/lang/Object;
 

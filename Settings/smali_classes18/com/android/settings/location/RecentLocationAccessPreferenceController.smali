@@ -186,19 +186,19 @@
 
     move-result-object v2
 
-    const v3, 0x7f120919
+    const v3, 0x7f120918
 
     invoke-virtual {v2, v3}, Lcom/android/settingslib/widget/AppEntitiesHeaderController;->setHeaderTitleRes(I)Lcom/android/settingslib/widget/AppEntitiesHeaderController;
 
     move-result-object v2
 
-    const v3, 0x7f120923
+    const v3, 0x7f120922
 
     invoke-virtual {v2, v3}, Lcom/android/settingslib/widget/AppEntitiesHeaderController;->setHeaderDetailsRes(I)Lcom/android/settingslib/widget/AppEntitiesHeaderController;
 
     move-result-object v2
 
-    const v3, 0x7f120921
+    const v3, 0x7f120920
 
     invoke-virtual {v2, v3}, Lcom/android/settingslib/widget/AppEntitiesHeaderController;->setHeaderEmptyRes(I)Lcom/android/settingslib/widget/AppEntitiesHeaderController;
 

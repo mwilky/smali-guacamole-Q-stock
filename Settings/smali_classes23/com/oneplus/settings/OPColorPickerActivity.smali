@@ -800,34 +800,34 @@
 
     :array_0
     .array-data 4
-        0x7f121075
-        0x7f12107b
-        0x7f121081
-        0x7f12107e
-        0x7f121071
-        0x7f121086
-        0x7f121089
-        0x7f121078
-        0x7f121082    # 1.94153E38f
-        0x7f121083
         0x7f121072
-        0x7f1204fa
+        0x7f121078
+        0x7f12107e
+        0x7f12107b
+        0x7f12106e
+        0x7f121083
+        0x7f121086
+        0x7f121075
+        0x7f12107f    # 1.9415294E38f
+        0x7f121080
+        0x7f12106f
+        0x7f1204f9
     .end array-data
 
     :array_1
     .array-data 4
-        0x7f121073
-        0x7f121079
-        0x7f12107f    # 1.9415294E38f
-        0x7f12107c
-        0x7f12106f
-        0x7f121084
-        0x7f121087
+        0x7f121070
         0x7f121076
-        0x7f121082    # 1.94153E38f
-        0x7f121083
-        0x7f121072
-        0x7f1204fa
+        0x7f12107c
+        0x7f121079
+        0x7f12106c
+        0x7f121081
+        0x7f121084
+        0x7f121073
+        0x7f12107f    # 1.9415294E38f
+        0x7f121080
+        0x7f12106f
+        0x7f1204f9
     .end array-data
 .end method
 
@@ -1680,9 +1680,9 @@
 
     if-eqz v0, :cond_1
 
-    const v0, 0x7f080670
+    const v0, 0x7f080673
 
-    const v1, 0x7f08066e
+    const v1, 0x7f080671
 
     if-nez p1, :cond_0
 
@@ -1708,9 +1708,9 @@
     goto :goto_0
 
     :cond_1
-    const v0, 0x7f080671
+    const v0, 0x7f080674
 
-    const v1, 0x7f08066f
+    const v1, 0x7f080672
 
     if-nez p1, :cond_2
 
@@ -1744,13 +1744,13 @@
 
     const/4 v0, 0x0
 
-    const v1, 0x7f121839
+    const v1, 0x7f121840
 
     invoke-interface {p1, v0, v0, v0, v1}, Landroid/view/Menu;->add(IIII)Landroid/view/MenuItem;
 
     move-result-object v0
 
-    const v1, 0x7f0804ad
+    const v1, 0x7f0804ae
 
     invoke-interface {v0, v1}, Landroid/view/MenuItem;->setIcon(I)Landroid/view/MenuItem;
 
@@ -2134,7 +2134,7 @@
 
     if-eqz v0, :cond_0
 
-    const v0, 0x7f120c2f
+    const v0, 0x7f120c31
 
     const/4 v1, 0x1
 
@@ -2151,7 +2151,7 @@
     :cond_0
     invoke-virtual {p0, p0}, Lcom/oneplus/settings/OPColorPickerActivity;->setOnBackPressListener(Lcom/oneplus/settings/OnBackPressListener;)V
 
-    const v0, 0x7f0a0556
+    const v0, 0x7f0a0558
 
     invoke-virtual {p0, v0}, Lcom/oneplus/settings/OPColorPickerActivity;->findViewById(I)Landroid/view/View;
 
@@ -2197,11 +2197,11 @@
 
     move-result v3
 
-    const v5, 0x7f080673
+    const v5, 0x7f080676
 
-    const v6, 0x7f080674
+    const v6, 0x7f080677
 
-    const v7, 0x7f0a0762
+    const v7, 0x7f0a0764
 
     if-eqz v3, :cond_1
 
@@ -2361,7 +2361,7 @@
 
     invoke-direct {p0, v6}, Lcom/oneplus/settings/OPColorPickerActivity;->initAccentColorView(Landroid/view/View;)V
 
-    const v6, 0x7f0a04fd
+    const v6, 0x7f0a04ff
 
     invoke-virtual {p0, v6}, Lcom/oneplus/settings/OPColorPickerActivity;->findViewById(I)Landroid/view/View;
 
@@ -2369,7 +2369,7 @@
 
     iput-object v6, p0, Lcom/oneplus/settings/OPColorPickerActivity;->mIndicator1:Landroid/view/View;
 
-    const v6, 0x7f0a04fe
+    const v6, 0x7f0a0500
 
     invoke-virtual {p0, v6}, Lcom/oneplus/settings/OPColorPickerActivity;->findViewById(I)Landroid/view/View;
 
@@ -2584,13 +2584,13 @@
 
     const/4 v1, 0x0
 
-    const v2, 0x7f0d01ae
+    const v2, 0x7f0d01b0
 
     invoke-virtual {v0, v2, v1}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;)Landroid/view/View;
 
     move-result-object v0
 
-    const v2, 0x7f0a04ed
+    const v2, 0x7f0a04ef
 
     invoke-virtual {v0, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2674,7 +2674,7 @@
 
     invoke-direct {v2, p0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v4, 0x7f121048
+    const v4, 0x7f121045
 
     invoke-virtual {v2, v4}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
@@ -2688,7 +2688,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f120b9b
+    const v3, 0x7f120b9f
 
     invoke-virtual {v2, v3, v1}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 

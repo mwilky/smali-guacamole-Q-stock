@@ -107,7 +107,7 @@
 
     iget-object v0, p0, Lcom/android/settings/panel/PanelFragment;->mLayoutView:Landroid/view/View;
 
-    const v1, 0x7f0a0509
+    const v1, 0x7f0a050b
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -184,7 +184,7 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    const v0, 0x7f0a0509
+    const v0, 0x7f0a050b
 
     invoke-virtual {p0, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -261,7 +261,7 @@
     :cond_0
     iget-object v1, p0, Lcom/android/settings/panel/PanelFragment;->mLayoutView:Landroid/view/View;
 
-    const v2, 0x7f0a050a
+    const v2, 0x7f0a050c
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -273,7 +273,7 @@
 
     iget-object v1, p0, Lcom/android/settings/panel/PanelFragment;->mLayoutView:Landroid/view/View;
 
-    const v2, 0x7f0a05f5
+    const v2, 0x7f0a05f7
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -297,7 +297,7 @@
 
     iget-object v1, p0, Lcom/android/settings/panel/PanelFragment;->mLayoutView:Landroid/view/View;
 
-    const v2, 0x7f0a050b
+    const v2, 0x7f0a050d
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -770,7 +770,7 @@
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
 
-    const v0, 0x7f0d0245
+    const v0, 0x7f0d024c
 
     const/4 v1, 0x0
 
@@ -831,7 +831,7 @@
 
     iget-object v0, p0, Lcom/android/settings/panel/PanelFragment;->mLayoutView:Landroid/view/View;
 
-    const v1, 0x7f0a0509
+    const v1, 0x7f0a050b
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

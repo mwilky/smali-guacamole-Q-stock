@@ -281,7 +281,7 @@
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setClickable(Z)V
 
-    const v0, 0x7f0a0625
+    const v0, 0x7f0a0627
 
     invoke-virtual {p1, v0}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 
@@ -445,11 +445,11 @@
 
     const/4 v3, 0x0
 
-    const v4, 0x7f0a0628
+    const v4, 0x7f0a062a
 
-    const v5, 0x7f0a0627
+    const v5, 0x7f0a0629
 
-    const v6, 0x7f0a0626
+    const v6, 0x7f0a0628
 
     const v7, 0x7f0a007d
 
