@@ -217,7 +217,7 @@
     :cond_5
     sget-boolean v7, Lcom/oneplus/screenshot/longshot/util/Configs;->mNoFooter:Z
 
-    if-eqz v7, :cond_6
+    if-nez v7, :cond_6
 
     iget-object v7, p0, Lcom/oneplus/screenshot/TakeScreenshotService$1;->this$0:Lcom/oneplus/screenshot/TakeScreenshotService;
 

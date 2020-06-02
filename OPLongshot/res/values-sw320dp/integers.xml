@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="config_percent_move_higher_bottom">7200</integer>
+</resources>

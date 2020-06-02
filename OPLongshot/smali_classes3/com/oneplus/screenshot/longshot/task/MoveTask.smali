@@ -49,6 +49,8 @@
 
 .field private mListener:Lcom/oneplus/screenshot/longshot/task/MoveTask$OnMoveListener;
 
+.field private mMoveDuration:I
+
 .field private mMovePoint:Lcom/oneplus/screenshot/longshot/util/MovePoint;
 
 .field private mPartScreenshotMatchTimes:I
@@ -116,6 +118,10 @@
 
     iput-object v0, p0, Lcom/oneplus/screenshot/longshot/task/MoveTask;->mWindowToken:Landroid/os/IBinder;
 
+    const/16 v0, 0x190
+
+    iput v0, p0, Lcom/oneplus/screenshot/longshot/task/MoveTask;->mMoveDuration:I
+
     new-instance v0, Lcom/oneplus/screenshot/longshot/task/MoveTask$1;
 
     invoke-static {}, Lcom/android/internal/os/BackgroundThread;->getHandler()Landroid/os/Handler;
@@ -145,6 +151,12 @@
     iput-object p3, p0, Lcom/oneplus/screenshot/longshot/task/MoveTask;->mMovePoint:Lcom/oneplus/screenshot/longshot/util/MovePoint;
 
     iput p5, p0, Lcom/oneplus/screenshot/longshot/task/MoveTask;->mDisplayHeight:I
+
+    invoke-static {}, Lcom/oneplus/screenshot/longshot/util/Configs;->getMoveDurationValue()I
+
+    move-result v0
+
+    iput v0, p0, Lcom/oneplus/screenshot/longshot/task/MoveTask;->mMoveDuration:I
 
     return-void
 .end method
@@ -1445,11 +1457,7 @@
     goto :goto_1
 
     :cond_2
-    sget-object v4, Lcom/oneplus/screenshot/longshot/util/Configs;->MOVE_DURATION:Lcom/oneplus/screenshot/longshot/util/Configs;
-
-    invoke-virtual {v4}, Lcom/oneplus/screenshot/longshot/util/Configs;->getValue()I
-
-    move-result v4
+    iget v4, p0, Lcom/oneplus/screenshot/longshot/task/MoveTask;->mMoveDuration:I
 
     :goto_1
     iget v5, p0, Lcom/oneplus/screenshot/longshot/task/MoveTask;->inputSource:I

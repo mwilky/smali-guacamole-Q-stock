@@ -992,6 +992,33 @@
 
     div-int/lit8 v2, v2, 0x6
 
+    sget v3, Lcom/oneplus/screenshot/longshot/util/Configs;->sTouchXPosition:I
+
+    const/4 v4, -0x1
+
+    if-eq v3, v4, :cond_0
+
+    sget v2, Lcom/oneplus/screenshot/longshot/util/Configs;->sTouchXPosition:I
+
+    new-instance v3, Ljava/lang/StringBuilder;
+
+    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v4, "xTouchPosition : "
+
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v3, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v3
+
+    const-string v4, "Longshot.LongshotMode"
+
+    invoke-static {v4, v3}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    :cond_0
     new-instance v3, Landroid/graphics/Point;
 
     iget v4, p0, Lcom/oneplus/screenshot/longshot/state/LongshotMode;->mStatusbarHeight:I

@@ -17,13 +17,21 @@
     <integer name="config_capture_over_delay">0</integer>
     <integer name="config_display_compact_pixel_match_threshold_level_1">90</integer>
     <integer name="config_display_compact_pixel_match_threshold_level_2">95</integer>
+    <integer name="config_display_compact_pixel_match_threshold_level_3">100</integer>
     <integer name="config_display_compact_stitch_match_threshold_level_1">85</integer>
     <integer name="config_display_compact_stitch_match_threshold_level_2">98</integer>
+    <integer name="config_display_compact_stitch_match_threshold_level_3">100</integer>
     <integer name="config_effect_delay">500</integer>
     <integer name="config_fixed_big_top_offset">528</integer>
+    <integer name="config_inject_level_1">8</integer>
     <item type="integer" name="config_max_pages">@integer/max_pages</item>
     <integer name="config_move_delay">300</integer>
     <integer name="config_move_duration">400</integer>
+    <integer name="config_move_duration_level_1">400</integer>
+    <integer name="config_move_duration_level_2">600</integer>
+    <integer name="config_move_duration_level_3">800</integer>
+    <integer name="config_move_duration_level_4">1000</integer>
+    <integer name="config_move_duration_level_5">1200</integer>
     <integer name="config_move_keep_long">15</integer>
     <integer name="config_move_keep_short">10</integer>
     <integer name="config_override_match_threshold_level_1">100</integer>

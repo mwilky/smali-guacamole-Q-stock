@@ -137,9 +137,10 @@
     <dimen name="config_stitch_next_lines_level_2">60.0dip</dimen>
     <dimen name="config_stitch_next_lines_level_3">80.0dip</dimen>
     <dimen name="config_stitch_next_lines_level_4">80.0dip</dimen>
-    <dimen name="config_stitch_next_lines_level_5">140.0dip</dimen>
+    <dimen name="config_stitch_next_lines_level_5">160.0dip</dimen>
     <dimen name="config_stitch_next_offset_curr">0.0dip</dimen>
     <dimen name="config_stitch_next_offset_last">0.0dip</dimen>
+    <dimen name="config_stitch_next_step_level_0">3.0dip</dimen>
     <dimen name="config_stitch_next_step_level_1">5.0dip</dimen>
     <dimen name="config_stitch_next_step_level_2">5.0dip</dimen>
     <dimen name="config_stitch_next_step_level_3">5.0dip</dimen>

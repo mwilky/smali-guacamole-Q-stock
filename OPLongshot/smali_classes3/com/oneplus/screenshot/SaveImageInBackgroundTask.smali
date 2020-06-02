@@ -1134,7 +1134,7 @@
 
     new-instance v3, Landroid/app/Notification$Action$Builder;
 
-    const v15, 0x10401fa
+    const v15, 0x7f0d0027
 
     invoke-virtual {v9, v15}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
