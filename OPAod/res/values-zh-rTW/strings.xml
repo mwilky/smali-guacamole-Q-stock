@@ -24,7 +24,7 @@
     <string name="oneplus_aod_mode_always_on">永遠顯示</string>
     <string name="oneplus_aod_mode_lift_up">抬手顯示</string>
     <string name="oneplus_aod_mode_shake_up">拿起手機顯示</string>
-    <string name="oneplus_aod_mode_single_tap">輕觸屏幕顯示</string>
+    <string name="oneplus_aod_mode_single_tap">輕觸螢幕顯示</string>
     <string name="oneplus_aod_settings">主動顯示</string>
     <string name="oneplus_aod_settings_fod">息屏顯示</string>
     <string name="oneplus_aod_settings_what_to_show">顯示內容</string>

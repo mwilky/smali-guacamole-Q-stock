@@ -300,6 +300,8 @@
     invoke-virtual {v5, v6}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     :cond_6
+    invoke-virtual {p0}, Lcom/oneplus/settings/OpTwoTargetMasterSwitchPreference;->notifyChanged()V
+
     return-void
 .end method
 

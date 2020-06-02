@@ -19,5 +19,10 @@
                 <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
         </activity>
+        <provider android:authorities="com.oneplus.aod" android:exported="true" android:grantUriPermissions="true" android:multiprocess="false" android:name="com.oneplus.settings.AodIndexablesProvider" android:permission="android.permission.READ_SEARCH_INDEXABLES">
+            <intent-filter>
+                <action android:name="android.content.action.SEARCH_INDEXABLES_PROVIDER"/>
+            </intent-filter>
+        </provider>
     </application>
 </manifest>
