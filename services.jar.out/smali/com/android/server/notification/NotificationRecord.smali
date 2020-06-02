@@ -2408,15 +2408,60 @@
 
     invoke-virtual {v1, v7}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
+    sget-boolean v7, Landroid/os/Build;->DEBUG_ONEPLUS:Z
+
+    const-string/jumbo v8, "null"
+
+    if-eqz v7, :cond_2
+
     new-instance v7, Ljava/lang/StringBuilder;
 
     invoke-direct {v7}, Ljava/lang/StringBuilder;-><init>()V
 
     invoke-virtual {v7, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string/jumbo v8, "tickerText="
+    const-string v9, "allPendingIntents="
 
-    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v7, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object v9, v3, Landroid/app/Notification;->allPendingIntents:Landroid/util/ArraySet;
+
+    if-nez v9, :cond_1
+
+    move-object v9, v8
+
+    goto :goto_1
+
+    :cond_1
+    iget-object v9, v3, Landroid/app/Notification;->allPendingIntents:Landroid/util/ArraySet;
+
+    invoke-virtual {v9}, Landroid/util/ArraySet;->size()I
+
+    move-result v9
+
+    invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v9
+
+    :goto_1
+    invoke-virtual {v7, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v7}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v7
+
+    invoke-virtual {v1, v7}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
+
+    :cond_2
+    new-instance v7, Ljava/lang/StringBuilder;
+
+    invoke-direct {v7}, Ljava/lang/StringBuilder;-><init>()V
+
+    invoke-virtual {v7, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string/jumbo v9, "tickerText="
+
+    invoke-virtual {v7, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     invoke-virtual {v7}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -2430,11 +2475,9 @@
 
     move-result v7
 
-    const-string/jumbo v8, "null"
-
     const/4 v9, 0x0
 
-    if-nez v7, :cond_3
+    if-nez v7, :cond_5
 
     iget-object v7, v3, Landroid/app/Notification;->tickerText:Ljava/lang/CharSequence;
 
@@ -2442,7 +2485,7 @@
 
     move-result-object v7
 
-    if-eqz p4, :cond_2
+    if-eqz p4, :cond_4
 
     invoke-virtual {v7}, Ljava/lang/String;->length()I
 
@@ -2450,7 +2493,7 @@
 
     const/16 v12, 0x10
 
-    if-le v11, v12, :cond_1
+    if-le v11, v12, :cond_3
 
     const/16 v11, 0x8
 
@@ -2458,30 +2501,30 @@
 
     move-result-object v11
 
-    goto :goto_1
+    goto :goto_2
 
-    :cond_1
+    :cond_3
     const-string v11, ""
 
-    :goto_1
+    :goto_2
     invoke-virtual {v1, v11}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
     const-string v11, "..."
 
     invoke-virtual {v1, v11}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
-    goto :goto_2
-
-    :cond_2
-    invoke-virtual {v1, v7}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
-
-    :goto_2
     goto :goto_3
 
-    :cond_3
-    invoke-virtual {v1, v8}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
+    :cond_4
+    invoke-virtual {v1, v7}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
     :goto_3
+    goto :goto_4
+
+    :cond_5
+    invoke-virtual {v1, v8}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
+
+    :goto_4
     new-instance v7, Ljava/lang/StringBuilder;
 
     invoke-direct {v7}, Ljava/lang/StringBuilder;-><init>()V
@@ -2616,13 +2659,13 @@
 
     const/4 v12, 0x3
 
-    if-eqz v7, :cond_7
+    if-eqz v7, :cond_9
 
     iget-object v7, v3, Landroid/app/Notification;->actions:[Landroid/app/Notification$Action;
 
     array-length v7, v7
 
-    if-lez v7, :cond_7
+    if-lez v7, :cond_9
 
     new-instance v7, Ljava/lang/StringBuilder;
 
@@ -2646,14 +2689,14 @@
 
     const/4 v13, 0x0
 
-    :goto_4
-    if-ge v13, v7, :cond_6
+    :goto_5
+    if-ge v13, v7, :cond_8
 
     iget-object v14, v3, Landroid/app/Notification;->actions:[Landroid/app/Notification$Action;
 
     aget-object v14, v14, v13
 
-    if-eqz v14, :cond_5
+    if-eqz v14, :cond_7
 
     const/4 v15, 0x4
 
@@ -2673,20 +2716,20 @@
 
     iget-object v11, v14, Landroid/app/Notification$Action;->actionIntent:Landroid/app/PendingIntent;
 
-    if-nez v11, :cond_4
+    if-nez v11, :cond_6
 
     move-object v11, v8
 
-    goto :goto_5
+    goto :goto_6
 
-    :cond_4
+    :cond_6
     iget-object v11, v14, Landroid/app/Notification$Action;->actionIntent:Landroid/app/PendingIntent;
 
     invoke-virtual {v11}, Landroid/app/PendingIntent;->toString()Ljava/lang/String;
 
     move-result-object v11
 
-    :goto_5
+    :goto_6
     aput-object v11, v15, v12
 
     const-string v11, "%s    [%d] \"%s\" -> %s"
@@ -2697,14 +2740,14 @@
 
     invoke-virtual {v1, v11}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
-    :cond_5
+    :cond_7
     add-int/lit8 v13, v13, 0x1
 
     const/4 v11, 0x1
 
-    goto :goto_4
+    goto :goto_5
 
-    :cond_6
+    :cond_8
     new-instance v11, Ljava/lang/StringBuilder;
 
     invoke-direct {v11}, Ljava/lang/StringBuilder;-><init>()V
@@ -2721,10 +2764,10 @@
 
     invoke-virtual {v1, v11}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
-    :cond_7
+    :cond_9
     iget-object v7, v3, Landroid/app/Notification;->extras:Landroid/os/Bundle;
 
-    if-eqz v7, :cond_f
+    if-eqz v7, :cond_11
 
     iget-object v7, v3, Landroid/app/Notification;->extras:Landroid/os/Bundle;
 
@@ -2732,7 +2775,7 @@
 
     move-result v7
 
-    if-lez v7, :cond_f
+    if-lez v7, :cond_11
 
     new-instance v7, Ljava/lang/StringBuilder;
 
@@ -2760,12 +2803,12 @@
 
     move-result-object v7
 
-    :goto_6
+    :goto_7
     invoke-interface {v7}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v11
 
-    if-eqz v11, :cond_e
+    if-eqz v11, :cond_10
 
     invoke-interface {v7}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
@@ -2801,13 +2844,13 @@
 
     move-result-object v13
 
-    if-nez v13, :cond_8
+    if-nez v13, :cond_a
 
     invoke-virtual {v1, v8}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
-    goto/16 :goto_9
+    goto/16 :goto_a
 
-    :cond_8
+    :cond_a
     invoke-virtual {v13}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object v14
@@ -2818,23 +2861,23 @@
 
     invoke-virtual {v1, v14}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
-    if-eqz p4, :cond_a
+    if-eqz p4, :cond_c
 
     instance-of v14, v13, Ljava/lang/CharSequence;
 
-    if-nez v14, :cond_9
+    if-nez v14, :cond_b
 
     instance-of v14, v13, Ljava/lang/String;
 
-    if-eqz v14, :cond_a
+    if-eqz v14, :cond_c
 
-    :cond_9
-    goto/16 :goto_8
+    :cond_b
+    goto/16 :goto_9
 
-    :cond_a
+    :cond_c
     instance-of v14, v13, Landroid/graphics/Bitmap;
 
-    if-eqz v14, :cond_b
+    if-eqz v14, :cond_d
 
     new-array v14, v6, [Ljava/lang/Object;
 
@@ -2876,9 +2919,9 @@
 
     invoke-virtual {v1, v14}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
-    goto :goto_8
+    goto :goto_9
 
-    :cond_b
+    :cond_d
     invoke-virtual {v13}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object v14
@@ -2891,7 +2934,7 @@
 
     const-string v6, " ("
 
-    if-eqz v14, :cond_d
+    if-eqz v14, :cond_f
 
     invoke-static {v13}, Ljava/lang/reflect/Array;->getLength(Ljava/lang/Object;)I
 
@@ -2913,12 +2956,12 @@
 
     invoke-virtual {v1, v6}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
-    if-nez p4, :cond_c
+    if-nez p4, :cond_e
 
     const/4 v6, 0x0
 
-    :goto_7
-    if-ge v6, v14, :cond_c
+    :goto_8
+    if-ge v6, v14, :cond_e
 
     invoke-virtual/range {p1 .. p1}, Ljava/io/PrintWriter;->println()V
 
@@ -2958,12 +3001,12 @@
 
     add-int/lit8 v6, v6, 0x1
 
-    goto :goto_7
-
-    :cond_c
     goto :goto_8
 
-    :cond_d
+    :cond_e
+    goto :goto_9
+
+    :cond_f
     new-instance v9, Ljava/lang/StringBuilder;
 
     invoke-direct {v9}, Ljava/lang/StringBuilder;-><init>()V
@@ -2984,17 +3027,17 @@
 
     invoke-virtual {v1, v6}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
-    :goto_8
+    :goto_9
     invoke-virtual/range {p1 .. p1}, Ljava/io/PrintWriter;->println()V
 
-    :goto_9
+    :goto_a
     const/4 v6, 0x2
 
     const/4 v9, 0x0
 
-    goto/16 :goto_6
+    goto/16 :goto_7
 
-    :cond_e
+    :cond_10
     new-instance v6, Ljava/lang/StringBuilder;
 
     invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
@@ -3011,7 +3054,7 @@
 
     invoke-virtual {v1, v6}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
-    :cond_f
+    :cond_11
     new-instance v6, Ljava/lang/StringBuilder;
 
     invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
@@ -3412,7 +3455,7 @@
 
     iget-boolean v6, v0, Lcom/android/server/notification/NotificationRecord;->mPreChannelsNotification:Z
 
-    if-eqz v6, :cond_10
+    if-eqz v6, :cond_12
 
     new-instance v6, Ljava/lang/StringBuilder;
 
@@ -3594,7 +3637,7 @@
 
     invoke-virtual {v1, v6}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
-    :cond_10
+    :cond_12
     new-instance v6, Ljava/lang/StringBuilder;
 
     invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
@@ -3765,7 +3808,7 @@
 
     const-string v7, ","
 
-    if-eqz v6, :cond_11
+    if-eqz v6, :cond_13
 
     new-instance v6, Ljava/lang/StringBuilder;
 
@@ -3793,12 +3836,12 @@
 
     invoke-virtual {v1, v6}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
-    :cond_11
+    :cond_13
     invoke-virtual/range {p0 .. p0}, Lcom/android/server/notification/NotificationRecord;->getSnoozeCriteria()Ljava/util/ArrayList;
 
     move-result-object v6
 
-    if-eqz v6, :cond_12
+    if-eqz v6, :cond_14
 
     new-instance v6, Ljava/lang/StringBuilder;
 
@@ -3826,7 +3869,7 @@
 
     invoke-virtual {v1, v6}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
-    :cond_12
+    :cond_14
     new-instance v6, Ljava/lang/StringBuilder;
 
     invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V

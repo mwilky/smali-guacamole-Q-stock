@@ -39,7 +39,7 @@
     return-void
 .end method
 
-.method static synthetic access$2000(I)Ljava/lang/String;
+.method static synthetic access$1900(I)Ljava/lang/String;
     .locals 1
 
     invoke-static {p0}, Lcom/android/server/UiModeManagerService$Shell;->nightModeToStr(I)Ljava/lang/String;

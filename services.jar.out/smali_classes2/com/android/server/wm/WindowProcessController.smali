@@ -1671,6 +1671,22 @@
     return-void
 .end method
 
+.method public getBoundClientUids()Landroid/util/ArraySet;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Landroid/util/ArraySet<",
+            "Ljava/lang/Integer;",
+            ">;"
+        }
+    .end annotation
+
+    iget-object v0, p0, Lcom/android/server/wm/WindowProcessController;->mBoundClientUids:Landroid/util/ArraySet;
+
+    return-object v0
+.end method
+
 .method protected getChildAt(I)Lcom/android/server/wm/ConfigurationContainer;
     .locals 1
 

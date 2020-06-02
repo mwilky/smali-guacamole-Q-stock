@@ -2409,6 +2409,16 @@
     move-object/from16 v24, v2
 
     :goto_11
+    new-array v1, v3, [I
+
+    aput v3, v1, v4
+
+    invoke-static {v1}, Landroid/util/OpFeatures;->isSupport([I)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_13
+
     const/16 v26, 0x0
 
     const/16 v27, 0x1
@@ -2441,18 +2451,26 @@
 
     invoke-direct/range {v1 .. v6}, Lcom/android/server/pm/permission/DefaultPermissionGrantPolicy;->grantPermissionsToPackage(Ljava/lang/String;IZZ[Ljava/util/Set;)V
 
+    goto :goto_12
+
+    :cond_13
+    move v10, v4
+
+    move-object/from16 v26, v6
+
+    :goto_12
     const/4 v1, 0x6
 
     const/4 v2, 0x5
 
-    if-eqz v9, :cond_14
+    if-eqz v9, :cond_15
 
     array-length v3, v9
 
     move v4, v10
 
-    :goto_12
-    if-ge v4, v3, :cond_13
+    :goto_13
+    if-ge v4, v3, :cond_14
 
     aget-object v5, v9, v4
 
@@ -2496,22 +2514,22 @@
 
     const/4 v1, 0x6
 
-    goto :goto_12
-
-    :cond_13
-    const/4 v1, 0x2
-
     goto :goto_13
 
     :cond_14
     const/4 v1, 0x2
 
-    :goto_13
+    goto :goto_14
+
+    :cond_15
+    const/4 v1, 0x2
+
+    :goto_14
     invoke-static {}, Landroid/app/ActivityManager;->isLowRamDeviceStatic()Z
 
     move-result v3
 
-    if-eqz v3, :cond_15
+    if-eqz v3, :cond_16
 
     nop
 
@@ -2535,7 +2553,7 @@
 
     invoke-direct {v7, v3, v8, v4}, Lcom/android/server/pm/permission/DefaultPermissionGrantPolicy;->grantPermissionsToSystemPackage(Ljava/lang/String;I[Ljava/util/Set;)V
 
-    :cond_15
+    :cond_16
     new-instance v3, Landroid/content/Intent;
 
     const-string v4, "android.speech.RecognitionService"
@@ -2568,14 +2586,14 @@
 
     move-object/from16 v6, v33
 
-    if-eqz v6, :cond_17
+    if-eqz v6, :cond_18
 
     array-length v4, v6
 
     move v2, v10
 
-    :goto_14
-    if-ge v2, v4, :cond_16
+    :goto_15
+    if-ge v2, v4, :cond_17
 
     aget-object v1, v6, v2
 
@@ -2655,25 +2673,25 @@
 
     const/16 v5, 0x8
 
-    goto :goto_14
-
-    :cond_16
-    move-object/from16 v36, v3
-
     goto :goto_15
 
     :cond_17
     move-object/from16 v36, v3
 
-    :goto_15
-    if-eqz v0, :cond_18
+    goto :goto_16
+
+    :cond_18
+    move-object/from16 v36, v3
+
+    :goto_16
+    if-eqz v0, :cond_19
 
     array-length v1, v0
 
     move v2, v10
 
-    :goto_16
-    if-ge v2, v1, :cond_18
+    :goto_17
+    if-ge v2, v1, :cond_19
 
     aget-object v3, v0, v2
 
@@ -2689,9 +2707,9 @@
 
     add-int/lit8 v2, v2, 0x1
 
-    goto :goto_16
+    goto :goto_17
 
-    :cond_18
+    :cond_19
     const/4 v1, 0x1
 
     new-array v2, v1, [I
@@ -2702,7 +2720,7 @@
 
     move-result v2
 
-    if-eqz v2, :cond_19
+    if-eqz v2, :cond_1a
 
     const/16 v2, 0x8
 
@@ -2774,7 +2792,7 @@
 
     invoke-direct {v7, v1, v8, v2}, Lcom/android/server/pm/permission/DefaultPermissionGrantPolicy;->grantSystemFixedPermissionsToSystemPackage(Ljava/lang/String;I[Ljava/util/Set;)V
 
-    :cond_19
+    :cond_1a
     new-instance v1, Landroid/content/Intent;
 
     const-string v2, "android.intent.action.VIEW"
@@ -2865,7 +2883,7 @@
 
     move-result v3
 
-    if-eqz v3, :cond_1a
+    if-eqz v3, :cond_1b
 
     const-string v3, "android.intent.category.HOME_MAIN"
 
@@ -2931,16 +2949,16 @@
 
     invoke-direct {v7, v4, v8, v5}, Lcom/android/server/pm/permission/DefaultPermissionGrantPolicy;->grantPermissionsToSystemPackage(Ljava/lang/String;I[Ljava/util/Set;)V
 
-    goto :goto_17
+    goto :goto_18
 
-    :cond_1a
+    :cond_1b
     move-object/from16 v29, v0
 
     move/from16 v27, v10
 
     const/4 v0, 0x1
 
-    :goto_17
+    :goto_18
     new-array v3, v0, [Ljava/util/Set;
 
     sget-object v0, Lcom/android/server/pm/permission/DefaultPermissionGrantPolicy;->ALWAYS_LOCATION_PERMISSIONS:Ljava/util/Set;
@@ -3069,7 +3087,7 @@
 
     move-result v4
 
-    if-nez v4, :cond_1b
+    if-nez v4, :cond_1c
 
     const/4 v4, 0x5
 
@@ -3107,7 +3125,7 @@
 
     invoke-direct {v7, v3, v8, v4}, Lcom/android/server/pm/permission/DefaultPermissionGrantPolicy;->grantPermissionsToSystemPackage(Ljava/lang/String;I[Ljava/util/Set;)V
 
-    :cond_1b
+    :cond_1c
     iget-object v4, v7, Lcom/android/server/pm/permission/DefaultPermissionGrantPolicy;->mContext:Landroid/content/Context;
 
     invoke-virtual {v4}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
@@ -3122,7 +3140,7 @@
 
     move-result v5
 
-    if-nez v5, :cond_1c
+    if-nez v5, :cond_1d
 
     const/4 v5, 0x1
 
@@ -3136,14 +3154,14 @@
 
     invoke-direct {v7, v4, v8, v10}, Lcom/android/server/pm/permission/DefaultPermissionGrantPolicy;->grantPermissionsToSystemPackage(Ljava/lang/String;I[Ljava/util/Set;)V
 
-    goto :goto_18
+    goto :goto_19
 
-    :cond_1c
+    :cond_1d
     const/4 v5, 0x1
 
     const/16 v27, 0x0
 
-    :goto_18
+    :goto_19
     new-array v10, v5, [Ljava/util/Set;
 
     sget-object v5, Lcom/android/server/pm/permission/DefaultPermissionGrantPolicy;->STORAGE_PERMISSIONS:Ljava/util/Set;
@@ -3168,7 +3186,7 @@
 
     move-result v10
 
-    if-nez v10, :cond_1d
+    if-nez v10, :cond_1e
 
     const/4 v10, 0x1
 
@@ -3182,7 +3200,7 @@
 
     invoke-direct {v7, v5, v8, v10}, Lcom/android/server/pm/permission/DefaultPermissionGrantPolicy;->grantPermissionsToSystemPackage(Ljava/lang/String;I[Ljava/util/Set;)V
 
-    :cond_1d
+    :cond_1e
     return-void
 
     :catchall_0
@@ -6027,6 +6045,67 @@
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/server/pm/permission/DefaultPermissionGrantPolicy;->grantPermissionsToSystemPackage(Ljava/lang/String;I[Ljava/util/Set;)V
 
+    return-void
+.end method
+
+.method public revokeDefaultPermissionsFromBrowserApps([Ljava/lang/String;I)V
+    .locals 6
+
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v1, "Revoke permissions from browser apps for user:"
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0, p2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    const-string v1, "DefaultPermGrantPolicy"
+
+    invoke-static {v1, v0}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
+
+    array-length v0, p1
+
+    const/4 v1, 0x0
+
+    :goto_0
+    if-ge v1, v0, :cond_1
+
+    aget-object v2, p1, v1
+
+    invoke-direct {p0, v2}, Lcom/android/server/pm/permission/DefaultPermissionGrantPolicy;->getSystemPackageInfo(Ljava/lang/String;)Landroid/content/pm/PackageInfo;
+
+    move-result-object v3
+
+    invoke-direct {p0, v3}, Lcom/android/server/pm/permission/DefaultPermissionGrantPolicy;->isSystemPackage(Landroid/content/pm/PackageInfo;)Z
+
+    move-result v4
+
+    if-eqz v4, :cond_0
+
+    invoke-static {v3}, Lcom/android/server/pm/permission/DefaultPermissionGrantPolicy;->doesPackageSupportRuntimePermissions(Landroid/content/pm/PackageInfo;)Z
+
+    move-result v4
+
+    if-eqz v4, :cond_0
+
+    sget-object v4, Lcom/android/server/pm/permission/DefaultPermissionGrantPolicy;->ALWAYS_LOCATION_PERMISSIONS:Ljava/util/Set;
+
+    const/4 v5, 0x1
+
+    invoke-direct {p0, v2, v4, v5, p2}, Lcom/android/server/pm/permission/DefaultPermissionGrantPolicy;->revokeRuntimePermissions(Ljava/lang/String;Ljava/util/Set;ZI)V
+
+    :cond_0
+    add-int/lit8 v1, v1, 0x1
+
+    goto :goto_0
+
+    :cond_1
     return-void
 .end method
 

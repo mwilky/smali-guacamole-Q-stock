@@ -33,6 +33,8 @@
 
 .field private static final USAGES_TO_MUTE_IN_RING_OR_CALL:[I
 
+.field static fromPhoneCall:Z
+
 .field private static final mAudioFocusLock:Ljava/lang/Object;
 
 .field private static final mEventLogger:Lcom/android/server/audio/AudioEventLogger;
@@ -113,6 +115,10 @@
 .method static constructor <clinit>()V
     .locals 3
 
+    const/4 v0, 0x0
+
+    sput-boolean v0, Lcom/android/server/audio/MediaFocusControl;->fromPhoneCall:Z
+
     new-instance v0, Ljava/lang/Object;
 
     invoke-direct {v0}, Ljava/lang/Object;-><init>()V
@@ -138,8 +144,6 @@
     sput-object v0, Lcom/android/server/audio/MediaFocusControl;->USAGES_TO_MUTE_IN_RING_OR_CALL:[I
 
     return-void
-
-    nop
 
     :array_0
     .array-data 4
@@ -583,7 +587,7 @@
 .end method
 
 .method private notifyTopOfAudioFocusStack()V
-    .locals 2
+    .locals 4
     .annotation build Lcom/android/internal/annotations/GuardedBy;
         value = {
             "mAudioFocusLock"
@@ -596,27 +600,78 @@
 
     move-result v0
 
-    if-nez v0, :cond_0
+    if-nez v0, :cond_2
 
     invoke-direct {p0}, Lcom/android/server/audio/MediaFocusControl;->canReassignAudioFocus()Z
 
     move-result v0
 
-    if-eqz v0, :cond_0
+    if-eqz v0, :cond_2
 
-    iget-object v0, p0, Lcom/android/server/audio/MediaFocusControl;->mFocusStack:Ljava/util/Stack;
+    const/4 v0, 0x1
 
-    invoke-virtual {v0}, Ljava/util/Stack;->peek()Ljava/lang/Object;
+    new-array v1, v0, [I
 
-    move-result-object v0
+    const/4 v2, 0x0
 
-    check-cast v0, Lcom/android/server/audio/FocusRequester;
+    const/16 v3, 0x101
 
-    const/4 v1, 0x1
+    aput v3, v1, v2
 
-    invoke-virtual {v0, v1}, Lcom/android/server/audio/FocusRequester;->handleFocusGain(I)V
+    invoke-static {v1}, Landroid/util/OpFeatures;->isSupport([I)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_1
+
+    sget-boolean v1, Lcom/android/server/audio/MediaFocusControl;->fromPhoneCall:Z
+
+    if-eqz v1, :cond_0
+
+    const-string v1, "MediaFocusControl"
+
+    const-string/jumbo v2, "notifyTopOfAudioFocusStack fromPhoneCall true"
+
+    invoke-static {v1, v2}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
+
+    iget-object v1, p0, Lcom/android/server/audio/MediaFocusControl;->mFocusStack:Ljava/util/Stack;
+
+    invoke-virtual {v1}, Ljava/util/Stack;->peek()Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Lcom/android/server/audio/FocusRequester;
+
+    invoke-virtual {v1, v0}, Lcom/android/server/audio/FocusRequester;->handleFocusGainForPhoneCall(I)V
+
+    goto :goto_0
 
     :cond_0
+    iget-object v1, p0, Lcom/android/server/audio/MediaFocusControl;->mFocusStack:Ljava/util/Stack;
+
+    invoke-virtual {v1}, Ljava/util/Stack;->peek()Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Lcom/android/server/audio/FocusRequester;
+
+    invoke-virtual {v1, v0}, Lcom/android/server/audio/FocusRequester;->handleFocusGain(I)V
+
+    goto :goto_0
+
+    :cond_1
+    iget-object v1, p0, Lcom/android/server/audio/MediaFocusControl;->mFocusStack:Ljava/util/Stack;
+
+    invoke-virtual {v1}, Ljava/util/Stack;->peek()Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Lcom/android/server/audio/FocusRequester;
+
+    invoke-virtual {v1, v0}, Lcom/android/server/audio/FocusRequester;->handleFocusGain(I)V
+
+    :cond_2
+    :goto_0
     return-void
 .end method
 
@@ -1279,15 +1334,59 @@
     iput-boolean v0, v1, Lcom/android/server/audio/MediaFocusControl;->mRingOrCallActive:Z
 
     :cond_4
-    invoke-direct {v1, v11, v13, v13}, Lcom/android/server/audio/MediaFocusControl;->removeFocusStackEntry(Ljava/lang/String;ZZ)V
+    new-array v3, v13, [I
 
-    and-int/lit8 v3, v2, 0x1
+    const/16 v4, 0x101
+
+    aput v4, v3, v0
+
+    invoke-static {v3}, Landroid/util/OpFeatures;->isSupport([I)Z
+
+    move-result v3
 
     if-eqz v3, :cond_5
 
-    invoke-direct {v1, v0}, Lcom/android/server/audio/MediaFocusControl;->runAudioCheckerForRingOrCallAsync(Z)V
+    sput-boolean v0, Lcom/android/server/audio/MediaFocusControl;->fromPhoneCall:Z
+
+    const-string v3, "AudioFocus_For_Phone_Ring_And_Calls"
+
+    invoke-virtual {v11, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v3
+
+    if-eqz v3, :cond_5
+
+    const-string v3, "MediaFocusControl"
+
+    const-string v5, " IN_VOICE_COMM_FOCUS_ID"
+
+    invoke-static {v3, v5}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
+
+    sput-boolean v13, Lcom/android/server/audio/MediaFocusControl;->fromPhoneCall:Z
 
     :cond_5
+    invoke-direct {v1, v11, v13, v13}, Lcom/android/server/audio/MediaFocusControl;->removeFocusStackEntry(Ljava/lang/String;ZZ)V
+
+    new-array v3, v13, [I
+
+    aput v4, v3, v0
+
+    invoke-static {v3}, Landroid/util/OpFeatures;->isSupport([I)Z
+
+    move-result v3
+
+    if-eqz v3, :cond_6
+
+    sput-boolean v0, Lcom/android/server/audio/MediaFocusControl;->fromPhoneCall:Z
+
+    :cond_6
+    and-int/lit8 v3, v2, 0x1
+
+    if-eqz v3, :cond_7
+
+    invoke-direct {v1, v0}, Lcom/android/server/audio/MediaFocusControl;->runAudioCheckerForRingOrCallAsync(Z)V
+
+    :cond_7
     monitor-exit v14
 
     goto :goto_3

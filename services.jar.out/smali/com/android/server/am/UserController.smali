@@ -945,7 +945,7 @@
     :catchall_0
     move-exception v0
 
-    move v14, v6
+    move v15, v6
 
     goto/16 :goto_0
 
@@ -1123,6 +1123,24 @@
     invoke-static {v2, v3, v1}, Lcom/android/internal/logging/MetricsLogger;->histogram(Landroid/content/Context;Ljava/lang/String;I)V
 
     :cond_4
+    const/4 v1, 0x0
+
+    const-string/jumbo v2, "sys.oem.boot_count"
+
+    invoke-static {v2, v1}, Landroid/os/SystemProperties;->getInt(Ljava/lang/String;I)I
+
+    move-result v1
+
+    add-int/lit8 v9, v1, 0x1
+
+    invoke-static {v9}, Ljava/lang/Integer;->toString(I)Ljava/lang/String;
+
+    move-result-object v1
+
+    const-string/jumbo v2, "sys.oem.boot_count"
+
+    invoke-static {v2, v1}, Landroid/os/SystemProperties;->set(Ljava/lang/String;Ljava/lang/String;)V
+
     new-instance v1, Landroid/content/Intent;
 
     const/4 v2, 0x0
@@ -1131,54 +1149,54 @@
 
     invoke-direct {v1, v3, v2}, Landroid/content/Intent;-><init>(Ljava/lang/String;Landroid/net/Uri;)V
 
-    move-object v9, v1
+    move-object v10, v1
 
     const-string v1, "android.intent.extra.user_handle"
 
-    invoke-virtual {v9, v1, v6}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
+    invoke-virtual {v10, v1, v6}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
     const/high16 v1, -0x77000000
 
-    invoke-virtual {v9, v1}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
+    invoke-virtual {v10, v1}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
 
     invoke-static {}, Landroid/os/Binder;->getCallingUid()I
 
-    move-result v10
+    move-result v11
 
     invoke-static {}, Landroid/os/Binder;->getCallingPid()I
 
-    move-result v11
+    move-result v12
 
     invoke-static {}, Lcom/android/server/FgThread;->getHandler()Landroid/os/Handler;
 
-    move-result-object v12
+    move-result-object v13
 
-    new-instance v13, Lcom/android/server/am/-$$Lambda$UserController$I0p0bKjuvsSPLZB71mKQFfdUjZ4;
+    new-instance v14, Lcom/android/server/am/-$$Lambda$UserController$I0p0bKjuvsSPLZB71mKQFfdUjZ4;
 
-    move-object v1, v13
+    move-object v1, v14
 
     move-object/from16 v2, p0
 
-    move-object v3, v9
+    move-object v3, v10
 
     move v4, v6
 
-    move v5, v10
+    move v5, v11
 
-    move v14, v6
+    move v15, v6
 
-    move v6, v11
+    move v6, v12
 
     invoke-direct/range {v1 .. v6}, Lcom/android/server/am/-$$Lambda$UserController$I0p0bKjuvsSPLZB71mKQFfdUjZ4;-><init>(Lcom/android/server/am/UserController;Landroid/content/Intent;III)V
 
-    invoke-virtual {v12, v13}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
+    invoke-virtual {v13, v14}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 
     return-void
 
     :catchall_1
     move-exception v0
 
-    move v14, v6
+    move v15, v6
 
     :goto_0
     :try_start_3
@@ -1807,6 +1825,8 @@
     move-result-object v4
 
     invoke-virtual {v0, v1, v2, v3, v4}, Lcom/android/server/am/UserController$Injector;->showUserSwitchingDialog(Landroid/content/pm/UserInfo;Landroid/content/pm/UserInfo;Ljava/lang/String;Ljava/lang/String;)V
+
+    invoke-static {}, Lcom/android/server/wm/OnePlusSceneManagerInjector;->startUserSwitching()V
 
     return-void
 .end method
@@ -6851,6 +6871,14 @@
     move/from16 v19, v22
 
     invoke-virtual/range {v4 .. v20}, Lcom/android/server/am/UserController$Injector;->broadcastIntent(Landroid/content/Intent;Ljava/lang/String;Landroid/content/IIntentReceiver;ILjava/lang/String;Landroid/os/Bundle;[Ljava/lang/String;ILandroid/os/Bundle;ZZIIIII)I
+
+    iget-object v4, v1, Lcom/android/server/am/UserController;->mInjector:Lcom/android/server/am/UserController$Injector;
+
+    invoke-static {v4}, Lcom/android/server/am/UserController$Injector;->access$500(Lcom/android/server/am/UserController$Injector;)Lcom/android/server/am/ActivityManagerService;
+
+    move-result-object v4
+
+    invoke-static {v4}, Lcom/android/server/wm/OnePlusSceneManagerInjector;->endUserSwitching(Lcom/android/server/am/ActivityManagerService;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 

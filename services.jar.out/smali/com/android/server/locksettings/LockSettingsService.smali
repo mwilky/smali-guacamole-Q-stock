@@ -126,7 +126,7 @@
 
     const/4 v2, 0x0
 
-    const/16 v3, 0xd1
+    const/16 v3, 0xd2
 
     aput v3, v1, v2
 
@@ -1468,7 +1468,7 @@
 .end method
 
 .method private doVerifyCredential([BIZJILcom/android/internal/widget/ICheckCredentialProgressCallback;)Lcom/android/internal/widget/VerifyCredentialResponse;
-    .locals 16
+    .locals 17
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1483,52 +1483,52 @@
 
     move/from16 v11, p6
 
-    if-eqz v9, :cond_8
+    if-eqz v9, :cond_9
 
     array-length v0, v9
 
-    if-eqz v0, :cond_8
+    if-eqz v0, :cond_9
 
     const/4 v0, 0x0
 
     const/16 v1, -0x270f
 
-    const-string v2, "LockSettingsService"
+    const-string v12, "LockSettingsService"
 
     if-ne v11, v1, :cond_0
 
-    iget-object v3, v8, Lcom/android/server/locksettings/LockSettingsService;->mContext:Landroid/content/Context;
+    iget-object v2, v8, Lcom/android/server/locksettings/LockSettingsService;->mContext:Landroid/content/Context;
 
-    invoke-virtual {v3}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {v2}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
-    move-result-object v3
+    move-result-object v2
 
-    const-string v4, "device_provisioned"
+    const-string v3, "device_provisioned"
 
-    invoke-static {v3, v4, v0}, Landroid/provider/Settings$Global;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
+    invoke-static {v2, v3, v0}, Landroid/provider/Settings$Global;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
 
-    move-result v3
+    move-result v2
 
-    if-eqz v3, :cond_0
+    if-eqz v2, :cond_0
 
     const-string v0, "FRP credential can only be verified prior to provisioning."
 
-    invoke-static {v2, v0}, Landroid/util/Slog;->e(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {v12, v0}, Landroid/util/Slog;->e(Ljava/lang/String;Ljava/lang/String;)I
 
     sget-object v0, Lcom/android/internal/widget/VerifyCredentialResponse;->ERROR:Lcom/android/internal/widget/VerifyCredentialResponse;
 
     return-object v0
 
     :cond_0
-    const/4 v3, 0x0
+    const/4 v2, 0x0
 
     invoke-direct/range {p0 .. p7}, Lcom/android/server/locksettings/LockSettingsService;->spBasedDoVerifyCredential([BIZJILcom/android/internal/widget/ICheckCredentialProgressCallback;)Lcom/android/internal/widget/VerifyCredentialResponse;
 
-    move-result-object v12
+    move-result-object v13
 
-    if-eqz v12, :cond_2
+    if-eqz v13, :cond_2
 
-    invoke-virtual {v12}, Lcom/android/internal/widget/VerifyCredentialResponse;->getResponseCode()I
+    invoke-virtual {v13}, Lcom/android/internal/widget/VerifyCredentialResponse;->getResponseCode()I
 
     move-result v0
 
@@ -1537,14 +1537,14 @@
     invoke-direct {v8, v10, v9, v11}, Lcom/android/server/locksettings/LockSettingsService;->sendCredentialsOnUnlockIfRequired(I[BI)V
 
     :cond_1
-    return-object v12
+    return-object v13
 
     :cond_2
     if-ne v11, v1, :cond_3
 
     const-string v0, "Unexpected FRP credential type, should be SP based."
 
-    invoke-static {v2, v0}, Landroid/util/Slog;->wtf(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {v12, v0}, Landroid/util/Slog;->wtf(Ljava/lang/String;Ljava/lang/String;)I
 
     sget-object v0, Lcom/android/internal/widget/VerifyCredentialResponse;->ERROR:Lcom/android/internal/widget/VerifyCredentialResponse;
 
@@ -1555,9 +1555,9 @@
 
     invoke-virtual {v1, v11}, Lcom/android/server/locksettings/LockSettingsStorage;->readCredentialHash(I)Lcom/android/server/locksettings/LockSettingsStorage$CredentialHash;
 
-    move-result-object v13
+    move-result-object v14
 
-    iget v1, v13, Lcom/android/server/locksettings/LockSettingsStorage$CredentialHash;->type:I
+    iget v1, v14, Lcom/android/server/locksettings/LockSettingsStorage$CredentialHash;->type:I
 
     if-eq v1, v10, :cond_4
 
@@ -1569,7 +1569,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget v1, v13, Lcom/android/server/locksettings/LockSettingsStorage$CredentialHash;->type:I
+    iget v1, v14, Lcom/android/server/locksettings/LockSettingsStorage$CredentialHash;->type:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -1583,51 +1583,51 @@
 
     move-result-object v0
 
-    invoke-static {v2, v0}, Landroid/util/Slog;->wtf(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {v12, v0}, Landroid/util/Slog;->wtf(Ljava/lang/String;Ljava/lang/String;)I
 
     sget-object v0, Lcom/android/internal/widget/VerifyCredentialResponse;->ERROR:Lcom/android/internal/widget/VerifyCredentialResponse;
 
     return-object v0
 
     :cond_4
-    iget v1, v13, Lcom/android/server/locksettings/LockSettingsStorage$CredentialHash;->type:I
+    iget v1, v14, Lcom/android/server/locksettings/LockSettingsStorage$CredentialHash;->type:I
 
     const/4 v2, 0x1
 
     if-ne v1, v2, :cond_5
 
-    iget-boolean v1, v13, Lcom/android/server/locksettings/LockSettingsStorage$CredentialHash;->isBaseZeroPattern:Z
+    iget-boolean v1, v14, Lcom/android/server/locksettings/LockSettingsStorage$CredentialHash;->isBaseZeroPattern:Z
 
     if-eqz v1, :cond_5
 
     move v0, v2
 
     :cond_5
-    move v14, v0
+    move v15, v0
 
-    if-eqz v14, :cond_6
+    if-eqz v15, :cond_6
 
     invoke-static/range {p1 .. p1}, Lcom/android/internal/widget/LockPatternUtils;->patternByteArrayToBaseZero([B)[B
 
     move-result-object v0
 
-    move-object v15, v0
+    move-object/from16 v16, v0
 
     goto :goto_0
 
     :cond_6
     move-object/from16 v0, p1
 
-    move-object v15, v0
+    move-object/from16 v16, v0
 
     :goto_0
     move-object/from16 v0, p0
 
     move/from16 v1, p6
 
-    move-object v2, v13
+    move-object v2, v14
 
-    move-object v3, v15
+    move-object/from16 v3, v16
 
     move/from16 v4, p3
 
@@ -1637,21 +1637,74 @@
 
     invoke-direct/range {v0 .. v7}, Lcom/android/server/locksettings/LockSettingsService;->verifyCredential(ILcom/android/server/locksettings/LockSettingsStorage$CredentialHash;[BZJLcom/android/internal/widget/ICheckCredentialProgressCallback;)Lcom/android/internal/widget/VerifyCredentialResponse;
 
-    move-result-object v12
+    move-result-object v13
 
-    invoke-virtual {v12}, Lcom/android/internal/widget/VerifyCredentialResponse;->getResponseCode()I
+    invoke-virtual {v13}, Lcom/android/internal/widget/VerifyCredentialResponse;->getResponseCode()I
 
     move-result v0
 
-    if-nez v0, :cond_7
+    if-nez v0, :cond_8
 
     iget-object v0, v8, Lcom/android/server/locksettings/LockSettingsService;->mStrongAuth:Lcom/android/server/locksettings/LockSettingsStrongAuth;
 
     invoke-virtual {v0, v11}, Lcom/android/server/locksettings/LockSettingsStrongAuth;->reportSuccessfulStrongAuthUnlock(I)V
 
-    if-eqz v14, :cond_7
+    iget-object v0, v8, Lcom/android/server/locksettings/LockSettingsService;->mContext:Landroid/content/Context;
 
-    iget v2, v13, Lcom/android/server/locksettings/LockSettingsStorage$CredentialHash;->type:I
+    invoke-static {v0}, Landroid/hardware/biometrics/BiometricManager;->hasBiometrics(Landroid/content/Context;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_7
+
+    const-string/jumbo v0, "resetLockout"
+
+    invoke-static {v12, v0}, Landroid/util/Slog;->i(Ljava/lang/String;Ljava/lang/String;)I
+
+    iget-object v0, v8, Lcom/android/server/locksettings/LockSettingsService;->mContext:Landroid/content/Context;
+
+    const-class v1, Landroid/hardware/biometrics/BiometricManager;
+
+    invoke-virtual {v0, v1}, Landroid/content/Context;->getSystemService(Ljava/lang/Class;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/hardware/biometrics/BiometricManager;
+
+    iget-object v1, v8, Lcom/android/server/locksettings/LockSettingsService;->mContext:Landroid/content/Context;
+
+    invoke-virtual {v1}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
+
+    move-result-object v1
+
+    const/4 v2, 0x0
+
+    invoke-virtual {v0, v2}, Landroid/hardware/biometrics/BiometricManager;->resetLockout([B)V
+
+    const-string v2, "android.hardware.biometrics.face"
+
+    invoke-virtual {v1, v2}, Landroid/content/pm/PackageManager;->hasSystemFeature(Ljava/lang/String;)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_7
+
+    iget-object v2, v8, Lcom/android/server/locksettings/LockSettingsService;->mContext:Landroid/content/Context;
+
+    const-class v3, Landroid/hardware/face/FaceManager;
+
+    invoke-virtual {v2, v3}, Landroid/content/Context;->getSystemService(Ljava/lang/Class;)Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Landroid/hardware/face/FaceManager;
+
+    invoke-virtual {v2}, Landroid/hardware/face/FaceManager;->revokeChallenge()I
+
+    :cond_7
+    if-eqz v15, :cond_8
+
+    iget v2, v14, Lcom/android/server/locksettings/LockSettingsStorage$CredentialHash;->type:I
 
     const/high16 v4, 0x10000
 
@@ -1663,16 +1716,16 @@
 
     move-object/from16 v1, p1
 
-    move-object v3, v15
+    move-object/from16 v3, v16
 
     move/from16 v5, p6
 
     invoke-direct/range {v0 .. v7}, Lcom/android/server/locksettings/LockSettingsService;->setLockCredentialInternal([BI[BIIZZ)V
 
-    :cond_7
-    return-object v12
-
     :cond_8
+    return-object v13
+
+    :cond_9
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
     const-string v1, "Credential can\'t be null or empty"

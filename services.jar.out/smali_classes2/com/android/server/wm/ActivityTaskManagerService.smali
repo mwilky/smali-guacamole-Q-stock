@@ -3475,7 +3475,7 @@
 
     new-array v7, v5, [I
 
-    const/16 v8, 0xdd
+    const/16 v8, 0xde
 
     aput v8, v7, v4
 
@@ -5874,7 +5874,7 @@
 .end method
 
 .method public dismissSplitScreenMode(Z)V
-    .locals 6
+    .locals 8
 
     const-string v0, "android.permission.MANAGE_ACTIVITY_STACKS"
 
@@ -5925,42 +5925,92 @@
     return-void
 
     :cond_0
+    const/4 v4, 0x4
+
     if-eqz p1, :cond_1
 
     :try_start_2
-    const-string v4, "dismissSplitScreenMode"
+    const-string v5, "dismissSplitScreenMode"
 
-    invoke-virtual {v3, v4}, Lcom/android/server/wm/ActivityStack;->moveToFront(Ljava/lang/String;)V
+    invoke-virtual {v3, v5}, Lcom/android/server/wm/ActivityStack;->moveToFront(Ljava/lang/String;)V
+
+    invoke-virtual {v3}, Lcom/android/server/wm/ActivityStack;->getDisplay()Lcom/android/server/wm/ActivityDisplay;
+
+    move-result-object v5
+
+    invoke-virtual {v5, v4}, Lcom/android/server/wm/ActivityDisplay;->getTopStackInWindowingMode(I)Lcom/android/server/wm/ActivityStack;
+
+    move-result-object v4
+
+    if-eqz v4, :cond_2
+
+    iget-object v5, v4, Lcom/android/server/wm/ActivityStack;->mTaskStack:Lcom/android/server/wm/TaskStack;
+
+    invoke-virtual {v5}, Lcom/android/server/wm/TaskStack;->isAdjustedForIme()Z
+
+    move-result v5
+
+    if-eqz v5, :cond_2
+
+    const-string v5, "ActivityTaskManager"
+
+    new-instance v6, Ljava/lang/StringBuilder;
+
+    invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v7, "dismissSplitScreenMode : resetAdjustedForIme for "
+
+    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object v7, v4, Lcom/android/server/wm/ActivityStack;->mTaskStack:Lcom/android/server/wm/TaskStack;
+
+    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v6}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v6
+
+    invoke-static {v5, v6}, Landroid/util/Slog;->i(Ljava/lang/String;Ljava/lang/String;)I
+
+    iget-object v5, v4, Lcom/android/server/wm/ActivityStack;->mTaskStack:Lcom/android/server/wm/TaskStack;
+
+    const/4 v6, 0x1
+
+    invoke-virtual {v5, v6}, Lcom/android/server/wm/TaskStack;->resetAdjustedForIme(Z)V
 
     goto :goto_0
 
     :cond_1
-    iget-object v4, p0, Lcom/android/server/wm/ActivityTaskManagerService;->mRootActivityContainer:Lcom/android/server/wm/RootActivityContainer;
+    iget-object v5, p0, Lcom/android/server/wm/ActivityTaskManagerService;->mRootActivityContainer:Lcom/android/server/wm/RootActivityContainer;
 
-    invoke-virtual {v4, v3}, Lcom/android/server/wm/RootActivityContainer;->isTopDisplayFocusedStack(Lcom/android/server/wm/ActivityStack;)Z
+    invoke-virtual {v5, v3}, Lcom/android/server/wm/RootActivityContainer;->isTopDisplayFocusedStack(Lcom/android/server/wm/ActivityStack;)Z
 
-    move-result v4
+    move-result v5
 
-    if-eqz v4, :cond_2
+    if-eqz v5, :cond_2
 
     invoke-virtual {v3}, Lcom/android/server/wm/ActivityStack;->getDisplay()Lcom/android/server/wm/ActivityDisplay;
 
-    move-result-object v4
+    move-result-object v5
 
-    const/4 v5, 0x4
-
-    invoke-virtual {v4, v5}, Lcom/android/server/wm/ActivityDisplay;->getTopStackInWindowingMode(I)Lcom/android/server/wm/ActivityStack;
+    invoke-virtual {v5, v4}, Lcom/android/server/wm/ActivityDisplay;->getTopStackInWindowingMode(I)Lcom/android/server/wm/ActivityStack;
 
     move-result-object v4
 
-    if-eqz v4, :cond_2
+    if-eqz v4, :cond_3
 
     const-string v5, "dismissSplitScreenMode_other"
 
     invoke-virtual {v4, v5}, Lcom/android/server/wm/ActivityStack;->moveToFront(Ljava/lang/String;)V
 
+    goto :goto_1
+
     :cond_2
     :goto_0
+    nop
+
+    :cond_3
+    :goto_1
     const/4 v4, 0x0
 
     invoke-virtual {v3, v4}, Lcom/android/server/wm/ActivityStack;->setWindowingMode(I)V
@@ -7988,7 +8038,7 @@
 
     const/4 v3, 0x0
 
-    const/16 v4, 0xf7
+    const/16 v4, 0xfb
 
     aput v4, v2, v3
 
@@ -9506,6 +9556,21 @@
     :goto_0
     move v4, v0
 
+    sget-boolean v0, Lcom/android/server/wm/OpAppLockerInjector;->IS_APP_LOCKER_ENABLED:Z
+
+    if-eqz v0, :cond_1
+
+    const/16 v0, 0x3e8
+
+    if-eq v7, v0, :cond_1
+
+    invoke-static {p3}, Lcom/android/server/wm/OpAppLockerInjector;->isAppLockerEnabled(I)Z
+
+    move-result v0
+
+    sput-boolean v0, Lcom/android/server/wm/OpAppLockerInjector;->mIsAppLockerEnabledForRecents:Z
+
+    :cond_1
     iget-object v9, p0, Lcom/android/server/wm/ActivityTaskManagerService;->mGlobalLock:Lcom/android/server/wm/WindowManagerGlobalLock;
 
     monitor-enter v9
@@ -15122,14 +15187,41 @@
     :try_start_3
     invoke-interface {v1, v2}, Landroid/app/IAssistDataReceiver;->onHandleAssistData(Landroid/os/Bundle;)V
     :try_end_3
-    .catch Landroid/os/RemoteException; {:try_start_3 .. :try_end_3} :catch_0
+    .catch Landroid/os/RemoteException; {:try_start_3 .. :try_end_3} :catch_1
+    .catch Ljava/lang/NullPointerException; {:try_start_3 .. :try_end_3} :catch_0
 
-    goto :goto_0
+    :goto_0
+    goto :goto_1
 
     :catch_0
     move-exception v3
 
-    :goto_0
+    new-instance v4, Ljava/lang/StringBuilder;
+
+    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v5, "handle assist data failed, sendReceiver="
+
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v4, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v4
+
+    const-string v5, "ActivityTaskManager"
+
+    invoke-static {v5, v4, v3}, Landroid/util/Slog;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
+
+    goto :goto_1
+
+    :catch_1
+    move-exception v3
+
+    goto :goto_0
+
+    :goto_1
     return-void
 
     :cond_7
@@ -15166,7 +15258,7 @@
 
     invoke-direct {p0, v5, v6, v7}, Lcom/android/server/wm/ActivityTaskManagerService;->startVoiceInteractionServiceAsUser(Landroid/content/Intent;ILjava/lang/String;)V
 
-    goto :goto_1
+    goto :goto_2
 
     :cond_8
     iget-object v5, v0, Lcom/android/server/wm/ActivityTaskManagerService$PendingAssistExtras;->intent:Landroid/content/Intent;
@@ -15202,12 +15294,12 @@
 
     invoke-virtual {v5, v6, v7}, Landroid/content/Context;->startActivityAsUser(Landroid/content/Intent;Landroid/os/UserHandle;)V
     :try_end_5
-    .catch Landroid/content/ActivityNotFoundException; {:try_start_5 .. :try_end_5} :catch_1
+    .catch Landroid/content/ActivityNotFoundException; {:try_start_5 .. :try_end_5} :catch_2
     .catchall {:try_start_5 .. :try_end_5} :catchall_0
 
-    goto :goto_1
+    goto :goto_2
 
-    :catch_1
+    :catch_2
     move-exception v5
 
     :try_start_6
@@ -15219,7 +15311,7 @@
     :try_end_6
     .catchall {:try_start_6 .. :try_end_6} :catchall_0
 
-    :goto_1
+    :goto_2
     invoke-static {v3, v4}, Landroid/os/Binder;->restoreCallingIdentity(J)V
 
     nop
@@ -16687,7 +16779,7 @@
 
     if-ne v3, v15, :cond_b
 
-    const v3, 0x10e0129
+    const v3, 0x10e012a
 
     invoke-virtual {v0, v3}, Landroid/content/res/Resources;->getInteger(I)I
 
@@ -17494,15 +17586,23 @@
 
     const-string v0, "ActivityTaskManager"
 
+    const-string v1, "android.permission.DEVICE_POWER"
+
+    invoke-static {v1}, Lcom/android/server/wm/ActivityTaskManagerService;->checkCallingPermission(Ljava/lang/String;)I
+
+    move-result v1
+
+    if-nez v1, :cond_6
+
     const/4 v1, 0x1
 
     new-array v2, v1, [I
 
-    const/4 v3, 0x0
+    const/16 v3, 0x4d
 
-    const/16 v4, 0x4d
+    const/4 v4, 0x0
 
-    aput v4, v2, v3
+    aput v3, v2, v4
 
     invoke-static {v2}, Landroid/util/OpFeatures;->isSupport([I)Z
 
@@ -17514,47 +17614,47 @@
 
     invoke-static {}, Landroid/os/Binder;->clearCallingIdentity()J
 
-    move-result-wide v4
+    move-result-wide v2
 
     :try_start_0
-    iget-object v2, p0, Lcom/android/server/wm/ActivityTaskManagerService;->mFingerprintManager:Landroid/hardware/fingerprint/FingerprintManager;
+    iget-object v5, p0, Lcom/android/server/wm/ActivityTaskManagerService;->mFingerprintManager:Landroid/hardware/fingerprint/FingerprintManager;
 
-    if-nez v2, :cond_0
+    if-nez v5, :cond_0
 
-    iget-object v2, p0, Lcom/android/server/wm/ActivityTaskManagerService;->mContext:Landroid/content/Context;
+    iget-object v5, p0, Lcom/android/server/wm/ActivityTaskManagerService;->mContext:Landroid/content/Context;
 
-    invoke-virtual {v2}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
+    invoke-virtual {v5}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
-    move-result-object v2
+    move-result-object v5
 
     const-string v6, "android.hardware.fingerprint"
 
-    invoke-virtual {v2, v6}, Landroid/content/pm/PackageManager;->hasSystemFeature(Ljava/lang/String;)Z
+    invoke-virtual {v5, v6}, Landroid/content/pm/PackageManager;->hasSystemFeature(Ljava/lang/String;)Z
 
-    move-result v2
+    move-result v5
 
-    if-eqz v2, :cond_0
+    if-eqz v5, :cond_0
 
-    iput-boolean v3, p0, Lcom/android/server/wm/ActivityTaskManagerService;->mIsFingerprintEnabled:Z
+    iput-boolean v4, p0, Lcom/android/server/wm/ActivityTaskManagerService;->mIsFingerprintEnabled:Z
 
-    iget-object v2, p0, Lcom/android/server/wm/ActivityTaskManagerService;->mContext:Landroid/content/Context;
+    iget-object v5, p0, Lcom/android/server/wm/ActivityTaskManagerService;->mContext:Landroid/content/Context;
 
     const-class v6, Landroid/hardware/fingerprint/FingerprintManager;
 
-    invoke-virtual {v2, v6}, Landroid/content/Context;->getSystemService(Ljava/lang/Class;)Ljava/lang/Object;
+    invoke-virtual {v5, v6}, Landroid/content/Context;->getSystemService(Ljava/lang/Class;)Ljava/lang/Object;
 
-    move-result-object v2
+    move-result-object v5
 
-    check-cast v2, Landroid/hardware/fingerprint/FingerprintManager;
+    check-cast v5, Landroid/hardware/fingerprint/FingerprintManager;
 
-    iput-object v2, p0, Lcom/android/server/wm/ActivityTaskManagerService;->mFingerprintManager:Landroid/hardware/fingerprint/FingerprintManager;
+    iput-object v5, p0, Lcom/android/server/wm/ActivityTaskManagerService;->mFingerprintManager:Landroid/hardware/fingerprint/FingerprintManager;
 
     :cond_0
-    iget-object v2, p0, Lcom/android/server/wm/ActivityTaskManagerService;->mFingerprintManager:Landroid/hardware/fingerprint/FingerprintManager;
+    iget-object v5, p0, Lcom/android/server/wm/ActivityTaskManagerService;->mFingerprintManager:Landroid/hardware/fingerprint/FingerprintManager;
 
-    if-eqz v2, :cond_3
+    if-eqz v5, :cond_3
 
-    iget-object v2, p0, Lcom/android/server/wm/ActivityTaskManagerService;->mFingerprintManager:Landroid/hardware/fingerprint/FingerprintManager;
+    iget-object v5, p0, Lcom/android/server/wm/ActivityTaskManagerService;->mFingerprintManager:Landroid/hardware/fingerprint/FingerprintManager;
 
     iget-object v6, p0, Lcom/android/server/wm/ActivityTaskManagerService;->mAmInternal:Landroid/app/ActivityManagerInternal;
 
@@ -17562,20 +17662,20 @@
 
     move-result v6
 
-    invoke-virtual {v2, v6}, Landroid/hardware/fingerprint/FingerprintManager;->getEnrolledFingerprints(I)Ljava/util/List;
+    invoke-virtual {v5, v6}, Landroid/hardware/fingerprint/FingerprintManager;->getEnrolledFingerprints(I)Ljava/util/List;
 
-    move-result-object v2
+    move-result-object v5
 
-    if-eqz v2, :cond_1
+    if-eqz v5, :cond_1
 
-    invoke-interface {v2}, Ljava/util/List;->size()I
+    invoke-interface {v5}, Ljava/util/List;->size()I
 
     move-result v6
 
     goto :goto_0
 
     :cond_1
-    move v6, v3
+    move v6, v4
 
     :goto_0
     if-lez v6, :cond_2
@@ -17583,7 +17683,7 @@
     goto :goto_1
 
     :cond_2
-    move v1, v3
+    move v1, v4
 
     :goto_1
     iput-boolean v1, p0, Lcom/android/server/wm/ActivityTaskManagerService;->mIsFingerprintEnabled:Z
@@ -17613,7 +17713,7 @@
     nop
 
     :goto_2
-    invoke-static {v4, v5}, Landroid/os/Binder;->restoreCallingIdentity(J)V
+    invoke-static {v2, v3}, Landroid/os/Binder;->restoreCallingIdentity(J)V
 
     goto :goto_3
 
@@ -17626,23 +17726,23 @@
     move-exception v1
 
     :try_start_1
-    iput-boolean v3, p0, Lcom/android/server/wm/ActivityTaskManagerService;->mIsFingerprintEnabled:Z
+    iput-boolean v4, p0, Lcom/android/server/wm/ActivityTaskManagerService;->mIsFingerprintEnabled:Z
 
-    new-instance v2, Ljava/lang/StringBuilder;
+    new-instance v4, Ljava/lang/StringBuilder;
 
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v3, "FP_ACCELERATE: failed to get fingerprintCount: "
+    const-string v5, "FP_ACCELERATE: failed to get fingerprintCount: "
 
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-virtual {v4, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v2
+    move-result-object v4
 
-    invoke-static {v0, v2}, Landroid/util/Slog;->i(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {v0, v4}, Landroid/util/Slog;->i(Ljava/lang/String;Ljava/lang/String;)I
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
@@ -17660,7 +17760,7 @@
     goto :goto_5
 
     :goto_4
-    invoke-static {v4, v5}, Landroid/os/Binder;->restoreCallingIdentity(J)V
+    invoke-static {v2, v3}, Landroid/os/Binder;->restoreCallingIdentity(J)V
 
     throw v0
 
@@ -17680,6 +17780,15 @@
     invoke-static {p1}, Lcom/android/server/am/OpBGFrozenInjector;->screenStateChangedEvent(Z)V
 
     return-void
+
+    :cond_6
+    new-instance v0, Ljava/lang/SecurityException;
+
+    const-string v1, "Requires permission android.permission.DEVICE_POWER"
+
+    invoke-direct {v0, v1}, Ljava/lang/SecurityException;-><init>(Ljava/lang/String;)V
+
+    throw v0
 .end method
 
 .method public setLockScreenShown(ZZ)V

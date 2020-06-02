@@ -84,6 +84,8 @@
 
     iget-object v0, p0, Lcom/android/server/biometrics/fingerprint/FingerprintService$ServiceListenerImpl;->mFingerprintServiceReceiver:Landroid/hardware/fingerprint/IFingerprintServiceReceiver;
 
+    const-string v1, "FingerprintService"
+
     if-eqz v0, :cond_2
 
     if-eqz p3, :cond_1
@@ -95,16 +97,18 @@
     goto :goto_0
 
     :cond_0
-    const-string v0, "FingerprintService"
+    const-string/jumbo v0, "onAuthenticationSucceeded received non-fingerprint biometric"
 
-    const-string/jumbo v1, "onAuthenticationSucceeded received non-fingerprint biometric"
-
-    invoke-static {v0, v1}, Landroid/util/Slog;->e(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {v1, v0}, Landroid/util/Slog;->e(Ljava/lang/String;Ljava/lang/String;)I
 
     goto :goto_1
 
     :cond_1
     :goto_0
+    const-string/jumbo v0, "onAuthenticationSucceeded: send result"
+
+    invoke-static {v1, v0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+
     iget-object v0, p0, Lcom/android/server/biometrics/fingerprint/FingerprintService$ServiceListenerImpl;->mFingerprintServiceReceiver:Landroid/hardware/fingerprint/IFingerprintServiceReceiver;
 
     move-object v1, p3
@@ -113,7 +117,13 @@
 
     invoke-interface {v0, p1, p2, v1, p4}, Landroid/hardware/fingerprint/IFingerprintServiceReceiver;->onAuthenticationSucceeded(JLandroid/hardware/fingerprint/Fingerprint;I)V
 
+    goto :goto_1
+
     :cond_2
+    const-string/jumbo v0, "onAuthenticationSucceeded: mFingerprintServiceReceiver is null"
+
+    invoke-static {v1, v0}, Landroid/util/Slog;->w(Ljava/lang/String;Ljava/lang/String;)I
+
     :goto_1
     return-void
 .end method

@@ -10,7 +10,11 @@
 
 
 # instance fields
+.field private m5GStatusListener:Lcom/android/server/connectivity/FiveGStatusListener;
+
 .field private final mBatteryStats:Lcom/android/internal/app/IBatteryStats;
+
+.field private mCampOn5GService:Z
 
 .field private final mContext:Landroid/content/Context;
 
@@ -20,6 +24,8 @@
 
 .field private mServiceState:Landroid/telephony/ServiceState;
 
+.field private mShow5GService:Z
+
 .field private mSignalStrength:Landroid/telephony/SignalStrength;
 
 .field private mSimState:Lcom/android/internal/telephony/IccCardConstants$State;
@@ -27,7 +33,7 @@
 
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
-    .locals 1
+    .locals 2
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
@@ -39,9 +45,17 @@
 
     iput v0, p0, Lcom/android/server/connectivity/DataConnectionStats;->mDataState:I
 
-    new-instance v0, Lcom/android/server/connectivity/DataConnectionStats$1;
+    const/4 v1, 0x0
 
-    invoke-direct {v0, p0}, Lcom/android/server/connectivity/DataConnectionStats$1;-><init>(Lcom/android/server/connectivity/DataConnectionStats;)V
+    iput-object v1, p0, Lcom/android/server/connectivity/DataConnectionStats;->m5GStatusListener:Lcom/android/server/connectivity/FiveGStatusListener;
+
+    iput-boolean v0, p0, Lcom/android/server/connectivity/DataConnectionStats;->mShow5GService:Z
+
+    iput-boolean v0, p0, Lcom/android/server/connectivity/DataConnectionStats;->mCampOn5GService:Z
+
+    new-instance v0, Lcom/android/server/connectivity/DataConnectionStats$2;
+
+    invoke-direct {v0, p0}, Lcom/android/server/connectivity/DataConnectionStats$2;-><init>(Lcom/android/server/connectivity/DataConnectionStats;)V
 
     iput-object v0, p0, Lcom/android/server/connectivity/DataConnectionStats;->mPhoneStateListener:Landroid/telephony/PhoneStateListener;
 
@@ -56,20 +70,20 @@
     return-void
 .end method
 
-.method static synthetic access$002(Lcom/android/server/connectivity/DataConnectionStats;Landroid/telephony/SignalStrength;)Landroid/telephony/SignalStrength;
+.method static synthetic access$002(Lcom/android/server/connectivity/DataConnectionStats;Z)Z
     .locals 0
 
-    iput-object p1, p0, Lcom/android/server/connectivity/DataConnectionStats;->mSignalStrength:Landroid/telephony/SignalStrength;
+    iput-boolean p1, p0, Lcom/android/server/connectivity/DataConnectionStats;->mShow5GService:Z
 
-    return-object p1
+    return p1
 .end method
 
-.method static synthetic access$102(Lcom/android/server/connectivity/DataConnectionStats;Landroid/telephony/ServiceState;)Landroid/telephony/ServiceState;
+.method static synthetic access$102(Lcom/android/server/connectivity/DataConnectionStats;Z)Z
     .locals 0
 
-    iput-object p1, p0, Lcom/android/server/connectivity/DataConnectionStats;->mServiceState:Landroid/telephony/ServiceState;
+    iput-boolean p1, p0, Lcom/android/server/connectivity/DataConnectionStats;->mCampOn5GService:Z
 
-    return-object p1
+    return p1
 .end method
 
 .method static synthetic access$200(Lcom/android/server/connectivity/DataConnectionStats;)V
@@ -80,7 +94,23 @@
     return-void
 .end method
 
-.method static synthetic access$302(Lcom/android/server/connectivity/DataConnectionStats;I)I
+.method static synthetic access$302(Lcom/android/server/connectivity/DataConnectionStats;Landroid/telephony/SignalStrength;)Landroid/telephony/SignalStrength;
+    .locals 0
+
+    iput-object p1, p0, Lcom/android/server/connectivity/DataConnectionStats;->mSignalStrength:Landroid/telephony/SignalStrength;
+
+    return-object p1
+.end method
+
+.method static synthetic access$402(Lcom/android/server/connectivity/DataConnectionStats;Landroid/telephony/ServiceState;)Landroid/telephony/ServiceState;
+    .locals 0
+
+    iput-object p1, p0, Lcom/android/server/connectivity/DataConnectionStats;->mServiceState:Landroid/telephony/ServiceState;
+
+    return-object p1
+.end method
+
+.method static synthetic access$502(Lcom/android/server/connectivity/DataConnectionStats;I)I
     .locals 0
 
     iput p1, p0, Lcom/android/server/connectivity/DataConnectionStats;->mDataState:I
@@ -221,6 +251,13 @@
 
     move-result v2
 
+    iget-boolean v3, p0, Lcom/android/server/connectivity/DataConnectionStats;->mShow5GService:Z
+
+    if-eqz v3, :cond_5
+
+    const/16 v2, 0x14
+
+    :cond_5
     :try_start_0
     iget-object v3, p0, Lcom/android/server/connectivity/DataConnectionStats;->mBatteryStats:Lcom/android/internal/app/IBatteryStats;
 
@@ -393,7 +430,7 @@
 .end method
 
 .method public startMonitoring()V
-    .locals 3
+    .locals 4
 
     iget-object v0, p0, Lcom/android/server/connectivity/DataConnectionStats;->mContext:Landroid/content/Context;
 
@@ -430,6 +467,18 @@
     iget-object v2, p0, Lcom/android/server/connectivity/DataConnectionStats;->mContext:Landroid/content/Context;
 
     invoke-virtual {v2, p0, v1}, Landroid/content/Context;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
+
+    new-instance v2, Lcom/android/server/connectivity/DataConnectionStats$1;
+
+    iget-object v3, p0, Lcom/android/server/connectivity/DataConnectionStats;->mContext:Landroid/content/Context;
+
+    invoke-direct {v2, p0, v3}, Lcom/android/server/connectivity/DataConnectionStats$1;-><init>(Lcom/android/server/connectivity/DataConnectionStats;Landroid/content/Context;)V
+
+    iput-object v2, p0, Lcom/android/server/connectivity/DataConnectionStats;->m5GStatusListener:Lcom/android/server/connectivity/FiveGStatusListener;
+
+    iget-object v2, p0, Lcom/android/server/connectivity/DataConnectionStats;->m5GStatusListener:Lcom/android/server/connectivity/FiveGStatusListener;
+
+    invoke-virtual {v2}, Lcom/android/server/connectivity/FiveGStatusListener;->startListen()V
 
     return-void
 .end method

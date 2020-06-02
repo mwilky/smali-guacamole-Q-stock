@@ -1773,14 +1773,6 @@
     return-void
 .end method
 
-.method static synthetic lambda$postActivityStartTokenRemoval$0(Lcom/android/server/am/ProcessRecord;Lcom/android/server/am/BroadcastRecord;)V
-    .locals 0
-
-    invoke-virtual {p0, p1}, Lcom/android/server/am/ProcessRecord;->removeAllowBackgroundActivityStartsToken(Landroid/os/Binder;)V
-
-    return-void
-.end method
-
 .method private maybeAddAllowBackgroundActivityStartsToken(Lcom/android/server/am/ProcessRecord;Lcom/android/server/am/BroadcastRecord;)V
     .locals 2
 
@@ -1882,9 +1874,9 @@
 
     iget-object v1, p0, Lcom/android/server/am/BroadcastQueue;->mHandler:Lcom/android/server/am/BroadcastQueue$BroadcastHandler;
 
-    new-instance v2, Lcom/android/server/am/-$$Lambda$BroadcastQueue$u5X4lnAPSSN1Kjb_BebqIicVqK4;
+    new-instance v2, Lcom/android/server/am/-$$Lambda$BroadcastQueue$-Rc4kAs41vmqWweLcJR0YLxZ0dM;
 
-    invoke-direct {v2, p1, p2}, Lcom/android/server/am/-$$Lambda$BroadcastQueue$u5X4lnAPSSN1Kjb_BebqIicVqK4;-><init>(Lcom/android/server/am/ProcessRecord;Lcom/android/server/am/BroadcastRecord;)V
+    invoke-direct {v2, p0, p1, p2}, Lcom/android/server/am/-$$Lambda$BroadcastQueue$-Rc4kAs41vmqWweLcJR0YLxZ0dM;-><init>(Lcom/android/server/am/BroadcastQueue;Lcom/android/server/am/ProcessRecord;Lcom/android/server/am/BroadcastRecord;)V
 
     iget-wide v3, p2, Lcom/android/server/am/BroadcastRecord;->receiverTime:J
 
@@ -2023,7 +2015,7 @@
 
     iget v10, v3, Lcom/android/server/am/ProcessRecord;->pid:I
 
-    iget-boolean v11, v2, Lcom/android/server/am/BroadcastRecord;->ordered:Z
+    const/4 v11, 0x1
 
     iget-object v12, v2, Lcom/android/server/am/BroadcastRecord;->intent:Landroid/content/Intent;
 
@@ -4697,6 +4689,39 @@
 
     :cond_3
     return v3
+.end method
+
+.method public synthetic lambda$postActivityStartTokenRemoval$0$BroadcastQueue(Lcom/android/server/am/ProcessRecord;Lcom/android/server/am/BroadcastRecord;)V
+    .locals 2
+
+    iget-object v0, p0, Lcom/android/server/am/BroadcastQueue;->mService:Lcom/android/server/am/ActivityManagerService;
+
+    monitor-enter v0
+
+    :try_start_0
+    invoke-static {}, Lcom/android/server/am/ActivityManagerService;->boostPriorityForLockedSection()V
+
+    invoke-virtual {p1, p2}, Lcom/android/server/am/ProcessRecord;->removeAllowBackgroundActivityStartsToken(Landroid/os/Binder;)V
+
+    monitor-exit v0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    invoke-static {}, Lcom/android/server/am/ActivityManagerService;->resetPriorityAfterLockedSection()V
+
+    return-void
+
+    :catchall_0
+    move-exception v1
+
+    :try_start_1
+    monitor-exit v0
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    invoke-static {}, Lcom/android/server/am/ActivityManagerService;->resetPriorityAfterLockedSection()V
+
+    throw v1
 .end method
 
 .method final logBroadcastReceiverDiscardLocked(Lcom/android/server/am/BroadcastRecord;)V

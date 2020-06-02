@@ -142,6 +142,8 @@
 
 .field private mPendingRelaunchCount:I
 
+.field mRawRefreshRate:I
+
 .field mRefreshRate:I
 
 .field private mRemoteAnimationDefinition:Landroid/view/RemoteAnimationDefinition;
@@ -407,6 +409,8 @@
     iput v1, p0, Lcom/android/server/wm/AppWindowToken;->mRefreshRate:I
 
     iput v1, p0, Lcom/android/server/wm/AppWindowToken;->mTmpRefreshRate:I
+
+    iput v1, p0, Lcom/android/server/wm/AppWindowToken;->mRawRefreshRate:I
 
     new-instance v0, Lcom/android/server/wm/-$$Lambda$AppWindowToken$cwsF3cyeJjO4UiuaM07w8TBc698;
 

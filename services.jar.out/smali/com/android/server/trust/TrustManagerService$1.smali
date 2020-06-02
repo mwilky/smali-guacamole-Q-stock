@@ -1101,17 +1101,26 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
+    :try_start_2
+    invoke-static {}, Landroid/security/KeyStore;->getInstance()Landroid/security/KeyStore;
+
+    move-result-object v2
+
+    invoke-virtual {v2, p1, p2}, Landroid/security/KeyStore;->onUserLockedStateChanged(IZ)V
+    :try_end_2
+    .catchall {:try_start_2 .. :try_end_2} :catchall_1
+
     if-eqz p2, :cond_0
 
-    :try_start_2
+    :try_start_3
     invoke-static {}, Landroid/app/ActivityManager;->getService()Landroid/app/IActivityManager;
 
     move-result-object v2
 
     invoke-interface {v2, p1}, Landroid/app/IActivityManager;->notifyLockedProfile(I)V
-    :try_end_2
-    .catch Landroid/os/RemoteException; {:try_start_2 .. :try_end_2} :catch_0
-    .catchall {:try_start_2 .. :try_end_2} :catchall_1
+    :try_end_3
+    .catch Landroid/os/RemoteException; {:try_start_3 .. :try_end_3} :catch_0
+    .catchall {:try_start_3 .. :try_end_3} :catchall_1
 
     goto :goto_0
 
@@ -1120,7 +1129,7 @@
 
     :cond_0
     :goto_0
-    :try_start_3
+    :try_start_4
     new-instance v2, Landroid/content/Intent;
 
     const-string v3, "android.intent.action.DEVICE_LOCKED_CHANGED"
@@ -1148,23 +1157,23 @@
     const/4 v6, 0x0
 
     invoke-virtual {v3, v2, v4, v5, v6}, Landroid/content/Context;->sendBroadcastAsUser(Landroid/content/Intent;Landroid/os/UserHandle;Ljava/lang/String;Landroid/os/Bundle;)V
-    :try_end_3
-    .catchall {:try_start_3 .. :try_end_3} :catchall_1
+    :try_end_4
+    .catchall {:try_start_4 .. :try_end_4} :catchall_1
 
     goto :goto_1
 
     :catchall_0
     move-exception v3
 
-    :try_start_4
-    monitor-exit v2
-    :try_end_4
-    .catchall {:try_start_4 .. :try_end_4} :catchall_0
-
     :try_start_5
-    throw v3
+    monitor-exit v2
     :try_end_5
-    .catchall {:try_start_5 .. :try_end_5} :catchall_1
+    .catchall {:try_start_5 .. :try_end_5} :catchall_0
+
+    :try_start_6
+    throw v3
+    :try_end_6
+    .catchall {:try_start_6 .. :try_end_6} :catchall_1
 
     :cond_1
     :goto_1

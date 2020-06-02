@@ -116,10 +116,16 @@
 .method private native native_delete(J)V
 .end method
 
+.method private native native_lock()V
+.end method
+
 .method private native native_new()J
 .end method
 
 .method private native native_start_loop(J)V
+.end method
+
+.method private native native_unlock()V
 .end method
 
 .method private onClosed(I)V
@@ -168,6 +174,8 @@
             Lcom/android/server/NativeDaemonConnectorException;
         }
     .end annotation
+
+    invoke-direct {p0}, Lcom/android/server/storage/AppFuseBridge;->native_lock()V
 
     :try_start_0
     monitor-enter p0
@@ -239,7 +247,11 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
+    invoke-direct {p0}, Lcom/android/server/storage/AppFuseBridge;->native_unlock()V
+
     invoke-static {p1}, Llibcore/io/IoUtils;->closeQuietly(Ljava/lang/AutoCloseable;)V
+
+    const/4 p1, 0x0
 
     return-object v1
 
@@ -277,7 +289,11 @@
     :catchall_1
     move-exception v0
 
+    invoke-direct {p0}, Lcom/android/server/storage/AppFuseBridge;->native_unlock()V
+
     invoke-static {p1}, Llibcore/io/IoUtils;->closeQuietly(Ljava/lang/AutoCloseable;)V
+
+    const/4 p1, 0x0
 
     throw v0
 .end method

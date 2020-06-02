@@ -1252,7 +1252,7 @@
 
     iget v15, v1, Lcom/android/server/pm/PackageManagerService$InstallParams;->installFlags:I
 
-    invoke-static {v0, v9, v15, v12}, Lcom/android/server/pm/PackageManagerService;->access$2900(Lcom/android/server/pm/PackageManagerService;III)Z
+    invoke-static {v0, v9, v15, v12, v7}, Lcom/android/server/pm/PackageManagerService;->access$2900(Lcom/android/server/pm/PackageManagerService;IIILandroid/content/pm/PackageInfoLite;)Z
 
     move-result v0
 

@@ -10,6 +10,9 @@
 .method public abstract addProc(IILcom/android/server/am/ProcessRecord;)V
 .end method
 
+.method public abstract bindServiceLockedEvent(Lcom/android/server/am/ProcessRecord;Landroid/content/Intent;Lcom/android/server/am/ServiceRecord;Ljava/lang/String;)V
+.end method
+
 .method public abstract broadcastTimeoutEvent(IILandroid/content/Intent;)V
 .end method
 

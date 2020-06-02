@@ -6450,15 +6450,23 @@
 
     move-result v1
 
+    if-nez v1, :cond_1
+
+    const/4 v1, 0x1
+
+    new-array v1, v1, [I
+
+    const/4 v2, 0x0
+
+    aput v2, v1, v2
+
+    invoke-static {v1}, Landroid/util/OpFeatures;->isSupport([I)Z
+
+    move-result v1
+
     if-eqz v1, :cond_0
 
-    const-string v1, "SystemServer"
-
-    const-string v2, "SystemCaptionsManagerService disabled because resource is not overlaid"
-
-    invoke-static {v1, v2}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    return-void
+    goto :goto_0
 
     :cond_0
     const-string v1, "StartSystemCaptionsManagerService"
@@ -6472,6 +6480,16 @@
     invoke-virtual {v1, v2}, Lcom/android/server/SystemServiceManager;->startService(Ljava/lang/String;)Lcom/android/server/SystemService;
 
     invoke-static {}, Lcom/android/server/SystemServer;->traceEnd()V
+
+    return-void
+
+    :cond_1
+    :goto_0
+    const-string v1, "SystemServer"
+
+    const-string v2, "SystemCaptionsManagerService disabled because resource is not overlaid"
+
+    invoke-static {v1, v2}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     return-void
 .end method

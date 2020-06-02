@@ -21,6 +21,8 @@
 
 .field final mPackageNames:[Ljava/lang/String;
 
+.field mUid:I
+
 .field final synthetic this$0:Lcom/android/server/accessibility/AccessibilityManagerService;
 
 
@@ -32,7 +34,13 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    const/4 v0, -0x1
+
+    iput v0, p0, Lcom/android/server/accessibility/AccessibilityManagerService$Client;->mUid:I
+
     iput-object p2, p0, Lcom/android/server/accessibility/AccessibilityManagerService$Client;->mCallback:Landroid/view/accessibility/IAccessibilityManagerClient;
+
+    iput p3, p0, Lcom/android/server/accessibility/AccessibilityManagerService$Client;->mUid:I
 
     invoke-static {p1}, Lcom/android/server/accessibility/AccessibilityManagerService;->access$3200(Lcom/android/server/accessibility/AccessibilityManagerService;)Landroid/content/pm/PackageManager;
 

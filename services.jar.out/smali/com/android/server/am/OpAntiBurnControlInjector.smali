@@ -23,7 +23,7 @@
 
     const/4 v1, 0x0
 
-    const/16 v2, 0xde
+    const/16 v2, 0xdf
 
     aput v2, v0, v1
 

@@ -40,8 +40,6 @@
 
 .field private volatile mIsShowing:Z
 
-.field mKeystoreService:Landroid/security/keystore/IKeystoreService;
-
 .field private final mLockPatternUtils:Lcom/android/internal/widget/LockPatternUtils;
 
 .field private volatile mPocketModeActive:Z
@@ -105,20 +103,6 @@
 
     iput-object p3, p0, Lcom/android/server/policy/keyguard/KeyguardStateMonitor;->mCallback:Lcom/android/server/policy/keyguard/KeyguardStateMonitor$StateCallback;
 
-    nop
-
-    const-string v0, "android.security.keystore"
-
-    invoke-static {v0}, Landroid/os/ServiceManager;->getService(Ljava/lang/String;)Landroid/os/IBinder;
-
-    move-result-object v0
-
-    invoke-static {v0}, Landroid/security/keystore/IKeystoreService$Stub;->asInterface(Landroid/os/IBinder;)Landroid/security/keystore/IKeystoreService;
-
-    move-result-object v0
-
-    iput-object v0, p0, Lcom/android/server/policy/keyguard/KeyguardStateMonitor;->mKeystoreService:Landroid/security/keystore/IKeystoreService;
-
     :try_start_0
     invoke-interface {p2, p0}, Lcom/android/internal/policy/IKeyguardService;->addStateMonitorCallback(Lcom/android/internal/policy/IKeyguardStateCallback;)V
     :try_end_0
@@ -137,28 +121,6 @@
 
     :goto_0
     return-void
-.end method
-
-.method private declared-synchronized getCurrentUser()I
-    .locals 1
-
-    monitor-enter p0
-
-    :try_start_0
-    iget v0, p0, Lcom/android/server/policy/keyguard/KeyguardStateMonitor;->mCurrentUserId:I
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    monitor-exit p0
-
-    return v0
-
-    :catchall_0
-    move-exception v0
-
-    monitor-exit p0
-
-    throw v0
 .end method
 
 
@@ -502,7 +464,7 @@
 .end method
 
 .method public onShowingStateChanged(Z)V
-    .locals 4
+    .locals 1
 
     iput-boolean p1, p0, Lcom/android/server/policy/keyguard/KeyguardStateMonitor;->mIsShowing:Z
 
@@ -510,87 +472,28 @@
 
     invoke-interface {v0}, Lcom/android/server/policy/keyguard/KeyguardStateMonitor$StateCallback;->onShowingChanged()V
 
-    const/4 v0, 0x2
+    if-eqz p1, :cond_1
 
-    :goto_0
-    if-lez v0, :cond_1
+    iget-object v0, p0, Lcom/android/server/policy/keyguard/KeyguardStateMonitor;->mInputMethodManagerInternal:Lcom/android/server/inputmethod/InputMethodManagerInternal;
 
-    :try_start_0
-    iget-object v1, p0, Lcom/android/server/policy/keyguard/KeyguardStateMonitor;->mKeystoreService:Landroid/security/keystore/IKeystoreService;
+    if-nez v0, :cond_0
 
-    iget v2, p0, Lcom/android/server/policy/keyguard/KeyguardStateMonitor;->mCurrentUserId:I
+    const-class v0, Lcom/android/server/inputmethod/InputMethodManagerInternal;
 
-    invoke-interface {v1, p1, v2}, Landroid/security/keystore/IKeystoreService;->onKeyguardVisibilityChanged(ZI)I
-    :try_end_0
-    .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
+    invoke-static {v0}, Lcom/android/server/LocalServices;->getService(Ljava/lang/Class;)Ljava/lang/Object;
 
-    goto :goto_2
+    move-result-object v0
 
-    :catch_0
-    move-exception v1
+    check-cast v0, Lcom/android/server/inputmethod/InputMethodManagerInternal;
 
-    const/4 v2, 0x2
-
-    const-string v3, "KeyguardStateMonitor"
-
-    if-ne v0, v2, :cond_0
-
-    const-string v2, "Error informing keystore of screen lock. Keystore may have died -> refreshing service token and retrying"
-
-    invoke-static {v3, v2}, Landroid/util/Slog;->w(Ljava/lang/String;Ljava/lang/String;)I
-
-    nop
-
-    const-string v2, "android.security.keystore"
-
-    invoke-static {v2}, Landroid/os/ServiceManager;->getService(Ljava/lang/String;)Landroid/os/IBinder;
-
-    move-result-object v2
-
-    invoke-static {v2}, Landroid/security/keystore/IKeystoreService$Stub;->asInterface(Landroid/os/IBinder;)Landroid/security/keystore/IKeystoreService;
-
-    move-result-object v2
-
-    iput-object v2, p0, Lcom/android/server/policy/keyguard/KeyguardStateMonitor;->mKeystoreService:Landroid/security/keystore/IKeystoreService;
-
-    goto :goto_1
+    iput-object v0, p0, Lcom/android/server/policy/keyguard/KeyguardStateMonitor;->mInputMethodManagerInternal:Lcom/android/server/inputmethod/InputMethodManagerInternal;
 
     :cond_0
-    const-string v2, "Error informing keystore of screen lock after retrying once"
+    iget-object v0, p0, Lcom/android/server/policy/keyguard/KeyguardStateMonitor;->mInputMethodManagerInternal:Lcom/android/server/inputmethod/InputMethodManagerInternal;
 
-    invoke-static {v3, v2, v1}, Landroid/util/Slog;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
-
-    :goto_1
-    nop
-
-    add-int/lit8 v0, v0, -0x1
-
-    goto :goto_0
+    invoke-virtual {v0}, Lcom/android/server/inputmethod/InputMethodManagerInternal;->updateClientKeyguard()V
 
     :cond_1
-    :goto_2
-    if-eqz p1, :cond_3
-
-    iget-object v1, p0, Lcom/android/server/policy/keyguard/KeyguardStateMonitor;->mInputMethodManagerInternal:Lcom/android/server/inputmethod/InputMethodManagerInternal;
-
-    if-nez v1, :cond_2
-
-    const-class v1, Lcom/android/server/inputmethod/InputMethodManagerInternal;
-
-    invoke-static {v1}, Lcom/android/server/LocalServices;->getService(Ljava/lang/Class;)Ljava/lang/Object;
-
-    move-result-object v1
-
-    check-cast v1, Lcom/android/server/inputmethod/InputMethodManagerInternal;
-
-    iput-object v1, p0, Lcom/android/server/policy/keyguard/KeyguardStateMonitor;->mInputMethodManagerInternal:Lcom/android/server/inputmethod/InputMethodManagerInternal;
-
-    :cond_2
-    iget-object v1, p0, Lcom/android/server/policy/keyguard/KeyguardStateMonitor;->mInputMethodManagerInternal:Lcom/android/server/inputmethod/InputMethodManagerInternal;
-
-    invoke-virtual {v1}, Lcom/android/server/inputmethod/InputMethodManagerInternal;->updateClientKeyguard()V
-
-    :cond_3
     return-void
 .end method
 

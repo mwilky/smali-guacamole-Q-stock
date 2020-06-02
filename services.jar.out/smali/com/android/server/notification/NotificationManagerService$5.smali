@@ -32,7 +32,7 @@
 
 # virtual methods
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
-    .locals 36
+    .locals 37
 
     move-object/from16 v1, p0
 
@@ -148,7 +148,7 @@
 
     move/from16 v33, v8
 
-    goto/16 :goto_e
+    goto/16 :goto_f
 
     :cond_2
     move/from16 v21, v5
@@ -267,7 +267,7 @@
 
     move/from16 v33, v8
 
-    const/4 v12, 0x0
+    const/4 v13, 0x0
 
     move v8, v7
 
@@ -290,17 +290,17 @@
 
     move-result-object v6
 
-    const/4 v9, 0x0
+    const/4 v10, 0x0
 
     const/4 v7, 0x1
 
     move/from16 v33, v8
 
-    const/4 v12, 0x0
+    const/4 v13, 0x0
 
     move v8, v7
 
-    move v7, v9
+    move v7, v10
 
     goto/16 :goto_8
 
@@ -319,17 +319,17 @@
 
     move-result-object v6
 
-    const/4 v9, 0x0
+    const/4 v10, 0x0
 
     const/4 v8, 0x1
 
     move/from16 v33, v8
 
-    const/4 v12, 0x0
+    const/4 v13, 0x0
 
     move v8, v7
 
-    move v7, v9
+    move v7, v10
 
     goto/16 :goto_8
 
@@ -344,15 +344,15 @@
 
     const-string v0, "android.intent.extra.distraction_restrictions"
 
-    const/4 v9, 0x0
+    const/4 v10, 0x0
 
-    invoke-virtual {v2, v0, v9}, Landroid/content/Intent;->getIntExtra(Ljava/lang/String;I)I
+    invoke-virtual {v2, v0, v10}, Landroid/content/Intent;->getIntExtra(Ljava/lang/String;I)I
 
     move-result v0
 
-    and-int/lit8 v9, v0, 0x2
+    and-int/lit8 v10, v0, 0x2
 
-    if-eqz v9, :cond_a
+    if-eqz v10, :cond_a
 
     invoke-virtual {v2, v6}, Landroid/content/Intent;->getStringArrayExtra(Ljava/lang/String;)[Ljava/lang/String;
 
@@ -360,15 +360,15 @@
 
     invoke-virtual {v2, v13}, Landroid/content/Intent;->getIntArrayExtra(Ljava/lang/String;)[I
 
-    move-result-object v9
+    move-result-object v10
 
-    const/4 v10, 0x0
+    const/4 v11, 0x0
 
     const/4 v7, 0x1
 
     move-object v0, v6
 
-    move-object v6, v9
+    move-object v6, v10
 
     goto :goto_4
 
@@ -379,24 +379,24 @@
 
     invoke-virtual {v2, v13}, Landroid/content/Intent;->getIntArrayExtra(Ljava/lang/String;)[I
 
-    move-result-object v9
+    move-result-object v10
 
-    const/4 v10, 0x0
+    const/4 v11, 0x0
 
     const/4 v8, 0x1
 
     move-object v0, v6
 
-    move-object v6, v9
+    move-object v6, v10
 
     :goto_4
     move/from16 v33, v8
 
-    const/4 v12, 0x0
+    const/4 v13, 0x0
 
     move v8, v7
 
-    move v7, v10
+    move v7, v11
 
     goto/16 :goto_8
 
@@ -411,25 +411,25 @@
 
     move-result-object v0
 
-    const/4 v9, 0x1
+    const/4 v10, 0x1
 
-    new-array v10, v9, [I
+    new-array v11, v10, [I
 
-    const/4 v9, -0x1
+    const/4 v10, -0x1
 
-    invoke-virtual {v2, v6, v9}, Landroid/content/Intent;->getIntExtra(Ljava/lang/String;I)I
+    invoke-virtual {v2, v6, v10}, Landroid/content/Intent;->getIntExtra(Ljava/lang/String;I)I
 
     move-result v6
 
-    const/4 v9, 0x0
+    const/4 v10, 0x0
 
-    aput v6, v10, v9
+    aput v6, v11, v10
 
-    move-object v6, v10
+    move-object v6, v11
 
     move/from16 v33, v8
 
-    const/4 v12, 0x0
+    const/4 v13, 0x0
 
     move v8, v7
 
@@ -484,16 +484,16 @@
     .catch Ljava/lang/IllegalArgumentException; {:try_start_0 .. :try_end_0} :catch_1
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
-    const/4 v9, 0x1
+    const/4 v12, 0x1
 
-    if-eq v0, v9, :cond_10
+    if-eq v0, v12, :cond_10
 
     if-nez v0, :cond_11
 
     :cond_10
-    const/4 v9, 0x0
+    const/4 v12, 0x0
 
-    move/from16 v22, v9
+    move/from16 v22, v12
 
     :cond_11
     :goto_6
@@ -519,45 +519,49 @@
 
     :cond_12
     :goto_7
-    const/4 v9, 0x1
+    const/4 v12, 0x1
 
-    new-array v0, v9, [Ljava/lang/String;
+    new-array v0, v12, [Ljava/lang/String;
 
-    const/4 v12, 0x0
+    const/4 v13, 0x0
 
-    aput-object v11, v0, v12
+    aput-object v11, v0, v13
 
-    new-array v13, v9, [I
+    move-object/from16 v16, v0
 
-    const/4 v9, -0x1
+    new-array v0, v12, [I
 
-    invoke-virtual {v2, v6, v9}, Landroid/content/Intent;->getIntExtra(Ljava/lang/String;I)I
+    const/4 v12, -0x1
+
+    invoke-virtual {v2, v6, v12}, Landroid/content/Intent;->getIntExtra(Ljava/lang/String;I)I
 
     move-result v6
 
-    aput v6, v13, v12
+    aput v6, v0, v13
 
-    move-object v6, v13
+    move-object v6, v0
 
     move/from16 v33, v8
+
+    move-object/from16 v0, v16
 
     move v8, v7
 
     move/from16 v7, v22
 
     :goto_8
-    if-eqz v0, :cond_1a
+    if-eqz v0, :cond_1b
 
-    array-length v9, v0
+    array-length v10, v0
 
-    if-lez v9, :cond_1a
+    if-lez v10, :cond_1b
 
-    array-length v13, v0
+    array-length v12, v0
 
-    move v11, v12
+    move v11, v13
 
     :goto_9
-    if-ge v11, v13, :cond_19
+    if-ge v11, v12, :cond_1a
 
     aget-object v34, v0, v11
 
@@ -565,11 +569,11 @@
 
     invoke-virtual {v3, v15}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    move-result v9
+    move-result v10
 
-    if-eqz v9, :cond_14
+    if-eqz v10, :cond_14
 
-    iget-object v9, v1, Lcom/android/server/notification/NotificationManagerService$5;->this$0:Lcom/android/server/notification/NotificationManagerService;
+    iget-object v10, v1, Lcom/android/server/notification/NotificationManagerService$5;->this$0:Lcom/android/server/notification/NotificationManagerService;
 
     invoke-static {}, Lcom/android/server/notification/NotificationManagerService;->access$1500()I
 
@@ -592,14 +596,14 @@
     goto :goto_a
 
     :cond_13
-    move/from16 v29, v12
+    move/from16 v29, v13
 
     :goto_a
     const/16 v31, 0x14
 
     const/16 v32, 0x0
 
-    move-object/from16 v22, v9
+    move-object/from16 v22, v10
 
     move-object/from16 v25, v34
 
@@ -607,95 +611,107 @@
 
     invoke-virtual/range {v22 .. v32}, Lcom/android/server/notification/NotificationManagerService;->cancelAllNotificationsInt(IILjava/lang/String;Ljava/lang/String;IIZIILcom/android/server/notification/ManagedServices$ManagedServiceInfo;)V
 
-    move/from16 v27, v11
+    move-object v10, v9
 
-    move/from16 v26, v12
+    move/from16 v28, v11
 
-    move/from16 v28, v13
+    move/from16 v29, v12
 
-    move/from16 v29, v14
+    move/from16 v27, v13
 
-    move-object/from16 v30, v15
+    move-object/from16 v22, v15
 
-    const/16 v25, 0x1
+    const/16 v26, 0x1
 
-    goto :goto_c
+    goto/16 :goto_d
 
     :cond_14
-    iget-object v9, v1, Lcom/android/server/notification/NotificationManagerService$5;->this$0:Lcom/android/server/notification/NotificationManagerService;
+    iget-object v10, v1, Lcom/android/server/notification/NotificationManagerService$5;->this$0:Lcom/android/server/notification/NotificationManagerService;
 
     invoke-static {}, Lcom/android/server/notification/NotificationManagerService;->access$1500()I
 
-    move-result v10
+    move-result v16
 
     invoke-static {}, Lcom/android/server/notification/NotificationManagerService;->access$1600()I
 
-    move-result v16
-
-    const/16 v17, 0x0
+    move-result v17
 
     const/16 v18, 0x0
 
     const/16 v22, 0x0
 
+    const/16 v23, 0x0
+
     if-nez v5, :cond_15
 
-    const/16 v23, 0x1
+    const/16 v24, 0x1
 
     goto :goto_b
 
     :cond_15
-    move/from16 v23, v12
+    move/from16 v24, v13
 
     :goto_b
-    const/16 v24, 0x0
+    const/16 v25, 0x0
 
-    move/from16 v26, v12
+    move/from16 v27, v13
 
-    const/16 v25, 0x1
+    const/16 v26, 0x1
 
-    move/from16 v27, v11
+    move-object v13, v9
 
-    move/from16 v11, v16
+    move-object v9, v10
+
+    move/from16 v10, v16
+
+    move/from16 v28, v11
+
+    move/from16 v11, v17
+
+    move/from16 v29, v12
 
     move-object/from16 v12, v34
 
-    move/from16 v28, v13
+    move-object/from16 v36, v13
 
-    move-object/from16 v13, v17
+    move-object/from16 v13, v18
 
-    move/from16 v29, v14
+    move/from16 v30, v14
 
-    move/from16 v14, v18
+    move/from16 v14, v22
 
-    move-object/from16 v30, v15
+    move-object/from16 v22, v15
 
-    move/from16 v15, v22
+    move/from16 v15, v23
 
-    move/from16 v16, v23
+    move/from16 v16, v24
 
-    move/from16 v17, v29
+    move/from16 v17, v30
 
     move/from16 v18, v20
 
-    move-object/from16 v19, v24
+    move-object/from16 v19, v25
 
     invoke-virtual/range {v9 .. v19}, Lcom/android/server/notification/NotificationManagerService;->cancelAllNotificationsInt(IILjava/lang/String;Ljava/lang/String;IIZIILcom/android/server/notification/ManagedServices$ManagedServiceInfo;)V
 
-    goto :goto_c
+    move-object/from16 v10, v36
+
+    goto :goto_d
 
     :cond_16
-    move/from16 v27, v11
+    move-object/from16 v36, v9
 
-    move/from16 v26, v12
+    move/from16 v28, v11
 
-    move/from16 v28, v13
+    move/from16 v29, v12
 
-    move/from16 v29, v14
+    move/from16 v27, v13
 
-    move-object/from16 v30, v15
+    move/from16 v30, v14
 
-    const/16 v25, 0x1
+    move-object/from16 v22, v15
+
+    const/16 v26, 0x1
 
     if-eqz v8, :cond_17
 
@@ -703,45 +719,81 @@
 
     invoke-virtual {v9, v0}, Lcom/android/server/notification/NotificationManagerService;->hideNotificationsForPackages([Ljava/lang/String;)V
 
-    goto :goto_c
+    move-object/from16 v10, v36
+
+    goto :goto_d
 
     :cond_17
-    if-eqz v33, :cond_18
+    if-eqz v33, :cond_19
 
+    sget-boolean v9, Lcom/android/server/notification/NotificationManagerService;->DBG_ONEPLUS:Z
+
+    if-eqz v9, :cond_18
+
+    new-instance v9, Ljava/lang/StringBuilder;
+
+    invoke-direct {v9}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v10, "unhideNotifications"
+
+    invoke-virtual {v9, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v9, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v9}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v9
+
+    move-object/from16 v10, v36
+
+    invoke-static {v10, v9}, Landroid/util/Slog;->i(Ljava/lang/String;Ljava/lang/String;)I
+
+    goto :goto_c
+
+    :cond_18
+    move-object/from16 v10, v36
+
+    :goto_c
     iget-object v9, v1, Lcom/android/server/notification/NotificationManagerService$5;->this$0:Lcom/android/server/notification/NotificationManagerService;
 
     invoke-virtual {v9, v0}, Lcom/android/server/notification/NotificationManagerService;->unhideNotificationsForPackages([Ljava/lang/String;)V
 
-    :cond_18
-    :goto_c
-    add-int/lit8 v11, v27, 0x1
+    goto :goto_d
 
-    move/from16 v12, v26
+    :cond_19
+    move-object/from16 v10, v36
 
-    move/from16 v13, v28
+    :goto_d
+    add-int/lit8 v11, v28, 0x1
 
-    move/from16 v14, v29
+    move-object v9, v10
 
-    move-object/from16 v15, v30
+    move-object/from16 v15, v22
+
+    move/from16 v13, v27
+
+    move/from16 v12, v29
+
+    move/from16 v14, v30
 
     goto/16 :goto_9
 
-    :cond_19
-    move/from16 v29, v14
-
-    goto :goto_d
-
     :cond_1a
-    move/from16 v29, v14
+    move/from16 v30, v14
 
-    :goto_d
+    goto :goto_e
+
+    :cond_1b
+    move/from16 v30, v14
+
+    :goto_e
     iget-object v9, v1, Lcom/android/server/notification/NotificationManagerService$5;->this$0:Lcom/android/server/notification/NotificationManagerService;
 
     invoke-static {v9}, Lcom/android/server/notification/NotificationManagerService;->access$1700(Lcom/android/server/notification/NotificationManagerService;)Lcom/android/server/notification/NotificationManagerService$WorkerHandler;
 
     move-result-object v9
 
-    move/from16 v10, v29
+    move/from16 v10, v30
 
     invoke-virtual {v9, v4, v10, v0, v6}, Lcom/android/server/notification/NotificationManagerService$WorkerHandler;->scheduleOnPackageChanged(ZI[Ljava/lang/String;[I)V
 
@@ -751,6 +803,6 @@
 
     move v7, v8
 
-    :goto_e
+    :goto_f
     return-void
 .end method

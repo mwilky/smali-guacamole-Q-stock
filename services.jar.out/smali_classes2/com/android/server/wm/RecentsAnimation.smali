@@ -1256,6 +1256,10 @@
     invoke-static {v12, v3}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_b
+    iget-object v3, v7, Lcom/android/server/wm/RecentsAnimation;->mDefaultDisplay:Lcom/android/server/wm/ActivityDisplay;
+
+    invoke-static {v3, v1}, Lcom/android/server/wm/OpWindowManagerServiceInjector;->adjustFocusStackIfNeed(Lcom/android/server/wm/ActivityDisplay;Lcom/android/server/wm/ActivityStack;)V
+
     invoke-virtual {v1}, Lcom/android/server/wm/ActivityStack;->topTask()Lcom/android/server/wm/TaskRecord;
 
     move-result-object v3

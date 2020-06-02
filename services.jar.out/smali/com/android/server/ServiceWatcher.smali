@@ -16,6 +16,8 @@
 
 
 # static fields
+.field private static final BLOCKING_BINDER_TIMEOUT_MS:J = 0x7530L
+
 .field private static final D:Z = false
 
 .field public static final EXTRA_SERVICE_IS_MULTIUSER:Ljava/lang/String; = "serviceIsMultiuser"
@@ -713,7 +715,7 @@
 .end method
 
 .method private runOnHandlerBlocking(Ljava/util/concurrent/Callable;)Ljava/lang/Object;
-    .locals 3
+    .locals 4
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -726,7 +728,8 @@
 
     .annotation system Ldalvik/annotation/Throws;
         value = {
-            Ljava/lang/InterruptedException;
+            Ljava/lang/InterruptedException;,
+            Ljava/util/concurrent/TimeoutException;
         }
     .end annotation
 
@@ -769,8 +772,12 @@
 
     invoke-virtual {v1, v0}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 
+    const-wide/16 v1, 0x7530
+
     :try_start_1
-    invoke-virtual {v0}, Ljava/util/concurrent/FutureTask;->get()Ljava/lang/Object;
+    sget-object v3, Ljava/util/concurrent/TimeUnit;->MILLISECONDS:Ljava/util/concurrent/TimeUnit;
+
+    invoke-virtual {v0, v1, v2, v3}, Ljava/util/concurrent/FutureTask;->get(JLjava/util/concurrent/TimeUnit;)Ljava/lang/Object;
 
     move-result-object v1
     :try_end_1
@@ -1059,6 +1066,7 @@
     move-result-object v0
     :try_end_0
     .catch Ljava/lang/InterruptedException; {:try_start_0 .. :try_end_0} :catch_0
+    .catch Ljava/util/concurrent/TimeoutException; {:try_start_0 .. :try_end_0} :catch_0
 
     return-object v0
 

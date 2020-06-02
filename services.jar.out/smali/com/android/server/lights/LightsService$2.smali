@@ -38,7 +38,7 @@
 
     check-cast v0, Lcom/android/server/lights/LightsService$LightImpl;
 
-    invoke-static {v0}, Lcom/android/server/lights/LightsService$LightImpl;->access$500(Lcom/android/server/lights/LightsService$LightImpl;)V
+    invoke-static {v0}, Lcom/android/server/lights/LightsService$LightImpl;->access$600(Lcom/android/server/lights/LightsService$LightImpl;)V
 
     return-void
 .end method

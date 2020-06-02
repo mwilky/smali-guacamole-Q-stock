@@ -22024,6 +22024,10 @@
     :cond_1
     invoke-virtual {v0, p2}, Lcom/android/server/pm/PackageSetting;->clearDomainVerificationStatusForUser(I)V
 
+    const/4 v1, 0x0
+
+    invoke-virtual {v0, v1}, Lcom/android/server/pm/PackageSetting;->setIntentFilterVerificationInfo(Landroid/content/pm/IntentFilterVerificationInfo;)V
+
     const/4 v1, 0x1
 
     return v1

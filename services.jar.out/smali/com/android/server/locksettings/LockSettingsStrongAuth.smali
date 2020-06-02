@@ -499,86 +499,17 @@
 .end method
 
 .method public reportSuccessfulStrongAuthUnlock(I)V
-    .locals 5
+    .locals 4
 
-    const/4 v0, 0x1
+    const/4 v0, 0x0
 
-    new-array v0, v0, [I
+    iget-object v1, p0, Lcom/android/server/locksettings/LockSettingsStrongAuth;->mHandler:Landroid/os/Handler;
 
-    const/4 v1, 0x0
-
-    const/16 v2, 0xd1
-
-    aput v2, v0, v1
-
-    invoke-static {v0}, Landroid/util/OpFeatures;->isSupport([I)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    iget-object v0, p0, Lcom/android/server/locksettings/LockSettingsStrongAuth;->mContext:Landroid/content/Context;
-
-    invoke-static {v0}, Landroid/hardware/biometrics/BiometricManager;->hasBiometrics(Landroid/content/Context;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    const-string v0, "LockSettings"
-
-    const-string/jumbo v2, "resetLockout"
-
-    invoke-static {v0, v2}, Landroid/util/Slog;->i(Ljava/lang/String;Ljava/lang/String;)I
-
-    iget-object v0, p0, Lcom/android/server/locksettings/LockSettingsStrongAuth;->mContext:Landroid/content/Context;
-
-    const-class v2, Landroid/hardware/biometrics/BiometricManager;
-
-    invoke-virtual {v0, v2}, Landroid/content/Context;->getSystemService(Ljava/lang/Class;)Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Landroid/hardware/biometrics/BiometricManager;
-
-    iget-object v2, p0, Lcom/android/server/locksettings/LockSettingsStrongAuth;->mContext:Landroid/content/Context;
-
-    invoke-virtual {v2}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
-
-    move-result-object v2
+    const/4 v2, 0x5
 
     const/4 v3, 0x0
 
-    invoke-virtual {v0, v3}, Landroid/hardware/biometrics/BiometricManager;->resetLockout([B)V
-
-    const-string v3, "android.hardware.biometrics.face"
-
-    invoke-virtual {v2, v3}, Landroid/content/pm/PackageManager;->hasSystemFeature(Ljava/lang/String;)Z
-
-    move-result v3
-
-    if-eqz v3, :cond_0
-
-    iget-object v3, p0, Lcom/android/server/locksettings/LockSettingsStrongAuth;->mContext:Landroid/content/Context;
-
-    const-class v4, Landroid/hardware/face/FaceManager;
-
-    invoke-virtual {v3, v4}, Landroid/content/Context;->getSystemService(Ljava/lang/Class;)Ljava/lang/Object;
-
-    move-result-object v3
-
-    check-cast v3, Landroid/hardware/face/FaceManager;
-
-    invoke-virtual {v3}, Landroid/hardware/face/FaceManager;->revokeChallenge()I
-
-    :cond_0
-    const/4 v0, 0x0
-
-    iget-object v2, p0, Lcom/android/server/locksettings/LockSettingsStrongAuth;->mHandler:Landroid/os/Handler;
-
-    const/4 v3, 0x5
-
-    invoke-virtual {v2, v3, p1, v1}, Landroid/os/Handler;->obtainMessage(III)Landroid/os/Message;
+    invoke-virtual {v1, v2, p1, v3}, Landroid/os/Handler;->obtainMessage(III)Landroid/os/Message;
 
     move-result-object v1
 

@@ -527,6 +527,18 @@
     return-void
 .end method
 
+.method public convertNitsToBrightness(F)F
+    .locals 1
+
+    iget-object v0, p0, Lcom/android/server/display/BrightnessMappingStrategy$PhysicalMappingStrategy;->mNitsToBacklightSpline:Landroid/util/Spline;
+
+    invoke-virtual {v0, p1}, Landroid/util/Spline;->interpolate(F)F
+
+    move-result v0
+
+    return v0
+.end method
+
 .method public convertToNits(I)F
     .locals 2
 

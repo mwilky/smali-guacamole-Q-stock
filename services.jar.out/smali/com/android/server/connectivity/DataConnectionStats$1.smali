@@ -1,11 +1,11 @@
 .class Lcom/android/server/connectivity/DataConnectionStats$1;
-.super Landroid/telephony/PhoneStateListener;
+.super Lcom/android/server/connectivity/FiveGStatusListener;
 .source "DataConnectionStats.java"
 
 
 # annotations
-.annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/server/connectivity/DataConnectionStats;
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/android/server/connectivity/DataConnectionStats;->startMonitoring()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -19,62 +19,32 @@
 
 
 # direct methods
-.method constructor <init>(Lcom/android/server/connectivity/DataConnectionStats;)V
+.method constructor <init>(Lcom/android/server/connectivity/DataConnectionStats;Landroid/content/Context;)V
     .locals 0
 
     iput-object p1, p0, Lcom/android/server/connectivity/DataConnectionStats$1;->this$0:Lcom/android/server/connectivity/DataConnectionStats;
 
-    invoke-direct {p0}, Landroid/telephony/PhoneStateListener;-><init>()V
+    invoke-direct {p0, p2}, Lcom/android/server/connectivity/FiveGStatusListener;-><init>(Landroid/content/Context;)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public onDataActivity(I)V
+.method public on5GStatusChanged(ZZ)V
     .locals 1
+
+    iget-object v0, p0, Lcom/android/server/connectivity/DataConnectionStats$1;->this$0:Lcom/android/server/connectivity/DataConnectionStats;
+
+    invoke-static {v0, p1}, Lcom/android/server/connectivity/DataConnectionStats;->access$002(Lcom/android/server/connectivity/DataConnectionStats;Z)Z
+
+    iget-object v0, p0, Lcom/android/server/connectivity/DataConnectionStats$1;->this$0:Lcom/android/server/connectivity/DataConnectionStats;
+
+    invoke-static {v0, p2}, Lcom/android/server/connectivity/DataConnectionStats;->access$102(Lcom/android/server/connectivity/DataConnectionStats;Z)Z
 
     iget-object v0, p0, Lcom/android/server/connectivity/DataConnectionStats$1;->this$0:Lcom/android/server/connectivity/DataConnectionStats;
 
     invoke-static {v0}, Lcom/android/server/connectivity/DataConnectionStats;->access$200(Lcom/android/server/connectivity/DataConnectionStats;)V
-
-    return-void
-.end method
-
-.method public onDataConnectionStateChanged(II)V
-    .locals 1
-
-    iget-object v0, p0, Lcom/android/server/connectivity/DataConnectionStats$1;->this$0:Lcom/android/server/connectivity/DataConnectionStats;
-
-    invoke-static {v0, p1}, Lcom/android/server/connectivity/DataConnectionStats;->access$302(Lcom/android/server/connectivity/DataConnectionStats;I)I
-
-    iget-object v0, p0, Lcom/android/server/connectivity/DataConnectionStats$1;->this$0:Lcom/android/server/connectivity/DataConnectionStats;
-
-    invoke-static {v0}, Lcom/android/server/connectivity/DataConnectionStats;->access$200(Lcom/android/server/connectivity/DataConnectionStats;)V
-
-    return-void
-.end method
-
-.method public onServiceStateChanged(Landroid/telephony/ServiceState;)V
-    .locals 1
-
-    iget-object v0, p0, Lcom/android/server/connectivity/DataConnectionStats$1;->this$0:Lcom/android/server/connectivity/DataConnectionStats;
-
-    invoke-static {v0, p1}, Lcom/android/server/connectivity/DataConnectionStats;->access$102(Lcom/android/server/connectivity/DataConnectionStats;Landroid/telephony/ServiceState;)Landroid/telephony/ServiceState;
-
-    iget-object v0, p0, Lcom/android/server/connectivity/DataConnectionStats$1;->this$0:Lcom/android/server/connectivity/DataConnectionStats;
-
-    invoke-static {v0}, Lcom/android/server/connectivity/DataConnectionStats;->access$200(Lcom/android/server/connectivity/DataConnectionStats;)V
-
-    return-void
-.end method
-
-.method public onSignalStrengthsChanged(Landroid/telephony/SignalStrength;)V
-    .locals 1
-
-    iget-object v0, p0, Lcom/android/server/connectivity/DataConnectionStats$1;->this$0:Lcom/android/server/connectivity/DataConnectionStats;
-
-    invoke-static {v0, p1}, Lcom/android/server/connectivity/DataConnectionStats;->access$002(Lcom/android/server/connectivity/DataConnectionStats;Landroid/telephony/SignalStrength;)Landroid/telephony/SignalStrength;
 
     return-void
 .end method

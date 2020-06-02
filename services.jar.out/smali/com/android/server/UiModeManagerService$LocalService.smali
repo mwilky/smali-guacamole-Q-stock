@@ -43,7 +43,7 @@
     :try_start_0
     iget-object v1, p0, Lcom/android/server/UiModeManagerService$LocalService;->this$0:Lcom/android/server/UiModeManagerService;
 
-    invoke-static {v1}, Lcom/android/server/UiModeManagerService;->access$2100(Lcom/android/server/UiModeManagerService;)Landroid/content/res/Configuration;
+    invoke-static {v1}, Lcom/android/server/UiModeManagerService;->access$2000(Lcom/android/server/UiModeManagerService;)Landroid/content/res/Configuration;
 
     move-result-object v1
 

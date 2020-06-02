@@ -45,11 +45,11 @@
 
     iget-object v0, p0, Lcom/android/server/StorageManagerService$UnmountObbAction;->this$0:Lcom/android/server/StorageManagerService;
 
-    invoke-static {v0}, Lcom/android/server/StorageManagerService;->access$5200(Lcom/android/server/StorageManagerService;)V
+    invoke-static {v0}, Lcom/android/server/StorageManagerService;->access$5300(Lcom/android/server/StorageManagerService;)V
 
     iget-object v0, p0, Lcom/android/server/StorageManagerService$UnmountObbAction;->this$0:Lcom/android/server/StorageManagerService;
 
-    invoke-static {v0}, Lcom/android/server/StorageManagerService;->access$4900(Lcom/android/server/StorageManagerService;)Ljava/util/Map;
+    invoke-static {v0}, Lcom/android/server/StorageManagerService;->access$5000(Lcom/android/server/StorageManagerService;)Ljava/util/Map;
 
     move-result-object v0
 
@@ -58,7 +58,7 @@
     :try_start_0
     iget-object v1, p0, Lcom/android/server/StorageManagerService$UnmountObbAction;->this$0:Lcom/android/server/StorageManagerService;
 
-    invoke-static {v1}, Lcom/android/server/StorageManagerService;->access$5000(Lcom/android/server/StorageManagerService;)Ljava/util/Map;
+    invoke-static {v1}, Lcom/android/server/StorageManagerService;->access$5100(Lcom/android/server/StorageManagerService;)Ljava/util/Map;
 
     move-result-object v1
 
@@ -158,7 +158,7 @@
 
     iget-object v0, p0, Lcom/android/server/StorageManagerService$UnmountObbAction;->this$0:Lcom/android/server/StorageManagerService;
 
-    invoke-static {v0}, Lcom/android/server/StorageManagerService;->access$4900(Lcom/android/server/StorageManagerService;)Ljava/util/Map;
+    invoke-static {v0}, Lcom/android/server/StorageManagerService;->access$5000(Lcom/android/server/StorageManagerService;)Ljava/util/Map;
 
     move-result-object v0
 
@@ -169,7 +169,7 @@
     :try_start_2
     iget-object v2, p0, Lcom/android/server/StorageManagerService$UnmountObbAction;->this$0:Lcom/android/server/StorageManagerService;
 
-    invoke-static {v2, v1}, Lcom/android/server/StorageManagerService;->access$5100(Lcom/android/server/StorageManagerService;Lcom/android/server/StorageManagerService$ObbState;)V
+    invoke-static {v2, v1}, Lcom/android/server/StorageManagerService;->access$5200(Lcom/android/server/StorageManagerService;Lcom/android/server/StorageManagerService$ObbState;)V
 
     monitor-exit v0
     :try_end_2

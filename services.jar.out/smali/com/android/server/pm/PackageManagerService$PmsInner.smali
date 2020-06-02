@@ -43,6 +43,52 @@
     return-object v0
 .end method
 
+.method public deletePackageX(Ljava/lang/String;JII)V
+    .locals 9
+
+    iget-object v0, p0, Lcom/android/server/pm/PackageManagerService$PmsInner;->this$0:Lcom/android/server/pm/PackageManagerService;
+
+    iget-object v0, v0, Lcom/android/server/pm/PackageManagerService;->mHandler:Lcom/android/server/pm/PackageManagerService$PackageHandler;
+
+    new-instance v8, Lcom/android/server/pm/-$$Lambda$PackageManagerService$PmsInner$g_V68XetX7Bf2Wrc3aNj9_nv3dA;
+
+    move-object v1, v8
+
+    move-object v2, p0
+
+    move-object v3, p1
+
+    move-wide v4, p2
+
+    move v6, p4
+
+    move v7, p5
+
+    invoke-direct/range {v1 .. v7}, Lcom/android/server/pm/-$$Lambda$PackageManagerService$PmsInner$g_V68XetX7Bf2Wrc3aNj9_nv3dA;-><init>(Lcom/android/server/pm/PackageManagerService$PmsInner;Ljava/lang/String;JII)V
+
+    invoke-virtual {v0, v8}, Lcom/android/server/pm/PackageManagerService$PackageHandler;->post(Ljava/lang/Runnable;)Z
+
+    return-void
+.end method
+
+.method public synthetic lambda$deletePackageX$0$PackageManagerService$PmsInner(Ljava/lang/String;JII)V
+    .locals 6
+
+    iget-object v0, p0, Lcom/android/server/pm/PackageManagerService$PmsInner;->this$0:Lcom/android/server/pm/PackageManagerService;
+
+    move-object v1, p1
+
+    move-wide v2, p2
+
+    move v4, p4
+
+    move v5, p5
+
+    invoke-virtual/range {v0 .. v5}, Lcom/android/server/pm/PackageManagerService;->deletePackageX(Ljava/lang/String;JII)I
+
+    return-void
+.end method
+
 .method public resetUserChangesToRuntimePermissionsAndFlagsLPw(I)V
     .locals 1
 

@@ -161,7 +161,7 @@
 .end method
 
 .method private maybeHandleNetworkAgentMessage(Landroid/os/Message;)V
-    .locals 5
+    .locals 6
 
     iget-object v0, p0, Lcom/android/server/ConnectivityService$NetworkStateTrackerHandler;->this$0:Lcom/android/server/ConnectivityService;
 
@@ -223,7 +223,7 @@
 
     packed-switch v3, :pswitch_data_0
 
-    goto/16 :goto_3
+    goto/16 :goto_4
 
     :pswitch_0
     iget-object v1, p0, Lcom/android/server/ConnectivityService$NetworkStateTrackerHandler;->this$0:Lcom/android/server/ConnectivityService;
@@ -232,7 +232,7 @@
 
     invoke-static {v1, v0, v2}, Lcom/android/server/ConnectivityService;->access$1900(Lcom/android/server/ConnectivityService;Lcom/android/server/connectivity/NetworkAgentInfo;I)V
 
-    goto/16 :goto_3
+    goto/16 :goto_4
 
     :pswitch_1
     iget-object v1, p0, Lcom/android/server/ConnectivityService$NetworkStateTrackerHandler;->this$0:Lcom/android/server/ConnectivityService;
@@ -243,7 +243,7 @@
 
     invoke-virtual {v1, v0, v2}, Lcom/android/server/ConnectivityService;->handleUpdateLinkProperties(Lcom/android/server/connectivity/NetworkAgentInfo;Landroid/net/LinkProperties;)V
 
-    goto/16 :goto_3
+    goto/16 :goto_4
 
     :pswitch_2
     iget-object v1, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
@@ -289,7 +289,7 @@
 
     invoke-static {v2, v3, v0, v1}, Lcom/android/server/ConnectivityService;->access$1700(Lcom/android/server/ConnectivityService;ILcom/android/server/connectivity/NetworkAgentInfo;Landroid/net/NetworkCapabilities;)V
 
-    goto/16 :goto_3
+    goto/16 :goto_4
 
     :pswitch_3
     iget-object v1, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
@@ -300,7 +300,7 @@
 
     invoke-static {v2, v0, v1}, Lcom/android/server/ConnectivityService;->access$1800(Lcom/android/server/ConnectivityService;Lcom/android/server/connectivity/NetworkAgentInfo;Landroid/net/NetworkInfo;)V
 
-    goto :goto_3
+    goto/16 :goto_4
 
     :cond_3
     iget-object v1, p0, Lcom/android/server/ConnectivityService$NetworkStateTrackerHandler;->this$0:Lcom/android/server/ConnectivityService;
@@ -311,7 +311,7 @@
 
     invoke-virtual {v1, v0, p1}, Lcom/android/server/connectivity/KeepaliveTracker;->handleEventSocketKeepalive(Lcom/android/server/connectivity/NetworkAgentInfo;Landroid/os/Message;)V
 
-    goto :goto_3
+    goto/16 :goto_4
 
     :cond_4
     iget-boolean v3, v0, Lcom/android/server/connectivity/NetworkAgentInfo;->everConnected:Z
@@ -341,7 +341,7 @@
 
     iget-object v3, v0, Lcom/android/server/connectivity/NetworkAgentInfo;->networkInfo:Landroid/net/NetworkInfo;
 
-    if-eqz v3, :cond_9
+    if-eqz v3, :cond_d
 
     iget-object v3, v0, Lcom/android/server/connectivity/NetworkAgentInfo;->networkInfo:Landroid/net/NetworkInfo;
 
@@ -349,75 +349,156 @@
 
     move-result v3
 
-    if-ne v3, v2, :cond_9
+    if-ne v3, v2, :cond_d
 
-    iget-object v3, p0, Lcom/android/server/ConnectivityService$NetworkStateTrackerHandler;->this$0:Lcom/android/server/ConnectivityService;
+    const/4 v3, 0x0
 
-    invoke-static {v3}, Lcom/android/server/ConnectivityService;->access$2000(Lcom/android/server/ConnectivityService;)Z
+    iget-object v4, v0, Lcom/android/server/connectivity/NetworkAgentInfo;->networkCapabilities:Landroid/net/NetworkCapabilities;
 
-    move-result v3
+    if-eqz v4, :cond_7
 
-    if-eqz v3, :cond_8
+    iget-object v4, v0, Lcom/android/server/connectivity/NetworkAgentInfo;->networkCapabilities:Landroid/net/NetworkCapabilities;
 
-    iget-object v3, v0, Lcom/android/server/connectivity/NetworkAgentInfo;->networkMisc:Landroid/net/NetworkMisc;
+    invoke-virtual {v4}, Landroid/net/NetworkCapabilities;->getNetworkSpecifier()Landroid/net/NetworkSpecifier;
 
-    iget v4, p1, Landroid/os/Message;->arg1:I
+    move-result-object v4
 
-    if-ne v4, v2, :cond_7
+    move-object v3, v4
 
-    iget v4, p1, Landroid/os/Message;->arg2:I
-
-    if-ne v4, v2, :cond_7
-
-    move v4, v2
-
-    goto :goto_1
+    check-cast v3, Landroid/net/wifi/WifiNetworkAgentSpecifier;
 
     :cond_7
-    move v4, v1
+    iget-object v4, p0, Lcom/android/server/ConnectivityService$NetworkStateTrackerHandler;->this$0:Lcom/android/server/ConnectivityService;
 
-    :goto_1
-    iput-boolean v4, v3, Landroid/net/NetworkMisc;->acceptUnvalidated:Z
-
-    goto :goto_2
-
-    :cond_8
-    iget-object v3, v0, Lcom/android/server/connectivity/NetworkAgentInfo;->networkMisc:Landroid/net/NetworkMisc;
-
-    iput-boolean v2, v3, Landroid/net/NetworkMisc;->acceptUnvalidated:Z
-
-    iget-object v3, v0, Lcom/android/server/connectivity/NetworkAgentInfo;->networkMisc:Landroid/net/NetworkMisc;
-
-    iput-boolean v2, v3, Landroid/net/NetworkMisc;->explicitlySelected:Z
-
-    :goto_2
-    iget-object v3, p0, Lcom/android/server/ConnectivityService$NetworkStateTrackerHandler;->this$0:Lcom/android/server/ConnectivityService;
-
-    iget-object v4, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
-
-    check-cast v4, Ljava/lang/Boolean;
-
-    invoke-virtual {v4}, Ljava/lang/Boolean;->booleanValue()Z
+    invoke-static {v4}, Lcom/android/server/ConnectivityService;->access$2000(Lcom/android/server/ConnectivityService;)Z
 
     move-result v4
 
-    invoke-static {v3, v4}, Lcom/android/server/ConnectivityService;->access$2102(Lcom/android/server/ConnectivityService;Z)Z
+    if-eqz v4, :cond_9
+
+    iget-object v4, v0, Lcom/android/server/connectivity/NetworkAgentInfo;->networkMisc:Landroid/net/NetworkMisc;
+
+    iget v5, p1, Landroid/os/Message;->arg1:I
+
+    if-ne v5, v2, :cond_8
+
+    iget v5, p1, Landroid/os/Message;->arg2:I
+
+    if-ne v5, v2, :cond_8
+
+    move v5, v2
+
+    goto :goto_1
+
+    :cond_8
+    move v5, v1
+
+    :goto_1
+    iput-boolean v5, v4, Landroid/net/NetworkMisc;->acceptUnvalidated:Z
+
+    goto :goto_3
 
     :cond_9
+    if-eqz v3, :cond_c
+
+    invoke-virtual {v3}, Landroid/net/wifi/WifiNetworkAgentSpecifier;->isCalledByWifiNetworkSpecifier()Z
+
+    move-result v4
+
+    if-eqz v4, :cond_c
+
+    invoke-static {}, Lcom/android/server/ConnectivityService;->access$1400()Z
+
+    move-result v4
+
+    if-eqz v4, :cond_a
+
+    new-instance v4, Ljava/lang/StringBuilder;
+
+    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v5, "isCalledByWifiNetworkSpecifier msg.arg1:"
+
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget v5, p1, Landroid/os/Message;->arg1:I
+
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    const-string v5, " msg.arg2:"
+
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget v5, p1, Landroid/os/Message;->arg2:I
+
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v4
+
+    invoke-static {v4}, Lcom/android/server/ConnectivityService;->access$200(Ljava/lang/String;)V
+
+    :cond_a
+    iget-object v4, v0, Lcom/android/server/connectivity/NetworkAgentInfo;->networkMisc:Landroid/net/NetworkMisc;
+
+    iget v5, p1, Landroid/os/Message;->arg1:I
+
+    if-ne v5, v2, :cond_b
+
+    iget v5, p1, Landroid/os/Message;->arg2:I
+
+    if-ne v5, v2, :cond_b
+
+    move v5, v2
+
+    goto :goto_2
+
+    :cond_b
+    move v5, v1
+
+    :goto_2
+    iput-boolean v5, v4, Landroid/net/NetworkMisc;->acceptUnvalidated:Z
+
+    goto :goto_3
+
+    :cond_c
+    iget-object v4, v0, Lcom/android/server/connectivity/NetworkAgentInfo;->networkMisc:Landroid/net/NetworkMisc;
+
+    iput-boolean v2, v4, Landroid/net/NetworkMisc;->acceptUnvalidated:Z
+
+    iget-object v4, v0, Lcom/android/server/connectivity/NetworkAgentInfo;->networkMisc:Landroid/net/NetworkMisc;
+
+    iput-boolean v2, v4, Landroid/net/NetworkMisc;->explicitlySelected:Z
+
+    :goto_3
+    iget-object v4, p0, Lcom/android/server/ConnectivityService$NetworkStateTrackerHandler;->this$0:Lcom/android/server/ConnectivityService;
+
+    iget-object v5, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
+
+    check-cast v5, Ljava/lang/Boolean;
+
+    invoke-virtual {v5}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result v5
+
+    invoke-static {v4, v5}, Lcom/android/server/ConnectivityService;->access$2102(Lcom/android/server/ConnectivityService;Z)Z
+
+    :cond_d
     iget-object v3, v0, Lcom/android/server/connectivity/NetworkAgentInfo;->networkMisc:Landroid/net/NetworkMisc;
 
     iget v4, p1, Landroid/os/Message;->arg2:I
 
-    if-ne v4, v2, :cond_a
+    if-ne v4, v2, :cond_e
 
     move v1, v2
 
-    :cond_a
+    :cond_e
     iput-boolean v1, v3, Landroid/net/NetworkMisc;->acceptPartialConnectivity:Z
 
     nop
 
-    :goto_3
+    :goto_4
     return-void
 
     nop

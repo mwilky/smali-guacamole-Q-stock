@@ -7,7 +7,7 @@
 .method public abstract getAppStartModeLocked(Ljava/lang/String;)I
 .end method
 
-.method public abstract getOposAdsSettings(Landroid/content/Context;)Z
+.method public abstract getOposAdsSettings(Ljava/lang/String;Ljava/lang/String;)Z
 .end method
 
 .method public abstract handleActivityPaused(Lcom/android/server/wm/ActivityRecord;Lcom/android/server/wm/ActivityRecord;)V

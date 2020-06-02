@@ -31,7 +31,7 @@
 
 # direct methods
 .method constructor <init>(Lcom/android/server/location/GnssConfiguration;Lcom/android/server/location/GnssConfiguration$HalInterfaceVersion;)V
-    .locals 1
+    .locals 2
 
     iput-object p1, p0, Lcom/android/server/location/GnssConfiguration$1;->this$0:Lcom/android/server/location/GnssConfiguration;
 
@@ -84,21 +84,45 @@
 
     invoke-virtual {p0, v0, p2}, Lcom/android/server/location/GnssConfiguration$1;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
+    const/4 p2, 0x1
+
+    new-array p2, p2, [I
+
+    const/4 v0, 0x0
+
+    const/16 v1, 0xfa
+
+    aput v1, p2, v0
+
+    invoke-static {p2}, Landroid/util/OpFeatures;->isSupport([I)Z
+
+    move-result p2
+
+    const-string v0, "GPS_LOCK"
+
+    if-eqz p2, :cond_1
+
+    sget-object p2, Lcom/android/server/location/-$$Lambda$GnssConfiguration$1$rRu0NBMB8DgPt3DY5__6u_WNl7A;->INSTANCE:Lcom/android/server/location/-$$Lambda$GnssConfiguration$1$rRu0NBMB8DgPt3DY5__6u_WNl7A;
+
+    invoke-virtual {p0, v0, p2}, Lcom/android/server/location/GnssConfiguration$1;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    goto :goto_0
+
+    :cond_1
     iget-object p2, p0, Lcom/android/server/location/GnssConfiguration$1;->val$gnssConfigurationIfaceVersion:Lcom/android/server/location/GnssConfiguration$HalInterfaceVersion;
 
     invoke-static {p2}, Lcom/android/server/location/GnssConfiguration;->access$100(Lcom/android/server/location/GnssConfiguration$HalInterfaceVersion;)Z
 
     move-result p2
 
-    if-eqz p2, :cond_1
+    if-eqz p2, :cond_2
 
-    sget-object p2, Lcom/android/server/location/-$$Lambda$GnssConfiguration$1$rRu0NBMB8DgPt3DY5__6u_WNl7A;->INSTANCE:Lcom/android/server/location/-$$Lambda$GnssConfiguration$1$rRu0NBMB8DgPt3DY5__6u_WNl7A;
-
-    const-string v0, "GPS_LOCK"
+    sget-object p2, Lcom/android/server/location/-$$Lambda$GnssConfiguration$1$PZrQoifKfk74FWJJM3A3tbAk7FE;->INSTANCE:Lcom/android/server/location/-$$Lambda$GnssConfiguration$1$PZrQoifKfk74FWJJM3A3tbAk7FE;
 
     invoke-virtual {p0, v0, p2}, Lcom/android/server/location/GnssConfiguration$1;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    :cond_1
+    :cond_2
+    :goto_0
     return-void
 .end method
 
@@ -163,6 +187,16 @@
 .end method
 
 .method static synthetic lambda$new$6(I)Z
+    .locals 1
+
+    invoke-static {p0}, Lcom/android/server/location/GnssConfiguration;->access$200(I)Z
+
+    move-result v0
+
+    return v0
+.end method
+
+.method static synthetic lambda$new$7(I)Z
     .locals 1
 
     invoke-static {p0}, Lcom/android/server/location/GnssConfiguration;->access$200(I)Z

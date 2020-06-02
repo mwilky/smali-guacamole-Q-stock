@@ -2134,6 +2134,130 @@
     return-object v0
 .end method
 
+.method public static pruneNonSystemMarketApp(Lcom/android/server/pm/PackageManagerService$PmsInner;Landroid/util/ArrayMap;Lcom/android/server/pm/Settings;)V
+    .locals 11
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lcom/android/server/pm/PackageManagerService$PmsInner;",
+            "Landroid/util/ArrayMap<",
+            "Ljava/lang/String;",
+            "Landroid/content/pm/PackageParser$Package;",
+            ">;",
+            "Lcom/android/server/pm/Settings;",
+            ")V"
+        }
+    .end annotation
+
+    const/4 v0, 0x1
+
+    new-array v0, v0, [I
+
+    const/4 v1, 0x0
+
+    aput v1, v0, v1
+
+    invoke-static {v0}, Landroid/util/OpFeatures;->isSupport([I)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    const/4 v0, 0x0
+
+    const-string v1, "com.oppo.market"
+
+    const-string v2, "com.heytap.market"
+
+    monitor-enter p1
+
+    :try_start_0
+    iget-object v3, p2, Lcom/android/server/pm/Settings;->mPackages:Landroid/util/ArrayMap;
+
+    const-string v4, "com.oppo.market"
+
+    invoke-virtual {v3, v4}, Landroid/util/ArrayMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v3
+
+    check-cast v3, Lcom/android/server/pm/PackageSetting;
+
+    iget-object v4, p2, Lcom/android/server/pm/Settings;->mPackages:Landroid/util/ArrayMap;
+
+    const-string v5, "com.heytap.market"
+
+    invoke-virtual {v4, v5}, Landroid/util/ArrayMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v4
+
+    check-cast v4, Lcom/android/server/pm/PackageSetting;
+
+    if-eqz v3, :cond_0
+
+    invoke-virtual {v3}, Lcom/android/server/pm/PackageSetting;->isSystem()Z
+
+    move-result v5
+
+    if-nez v5, :cond_0
+
+    invoke-virtual {v3}, Lcom/android/server/pm/PackageSetting;->isPrivileged()Z
+
+    move-result v5
+
+    if-eqz v5, :cond_0
+
+    if-eqz v4, :cond_0
+
+    invoke-virtual {v4}, Lcom/android/server/pm/PackageSetting;->isSystem()Z
+
+    move-result v5
+
+    if-eqz v5, :cond_0
+
+    const/4 v0, 0x1
+
+    :cond_0
+    monitor-exit p1
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    if-eqz v0, :cond_1
+
+    sget-object v3, Lcom/android/server/pm/PmInjector;->TAG:Ljava/lang/String;
+
+    const-string v4, "Delete previous market app com.oppo.market"
+
+    invoke-static {v3, v4}, Landroid/util/Slog;->w(Ljava/lang/String;Ljava/lang/String;)I
+
+    const-wide/16 v7, -0x1
+
+    const/4 v9, 0x0
+
+    const/4 v10, 0x2
+
+    const-string v6, "com.oppo.market"
+
+    move-object v5, p0
+
+    invoke-virtual/range {v5 .. v10}, Lcom/android/server/pm/PackageManagerService$PmsInner;->deletePackageX(Ljava/lang/String;JII)V
+
+    goto :goto_0
+
+    :catchall_0
+    move-exception v3
+
+    :try_start_1
+    monitor-exit p1
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    throw v3
+
+    :cond_1
+    :goto_0
+    return-void
+.end method
+
 .method public static purgeInstalledThemeApks(Landroid/content/Context;Ljava/lang/String;Lcom/android/server/pm/PackageManagerService;)V
     .locals 12
 
@@ -3024,7 +3148,7 @@
 
     const/4 v1, 0x0
 
-    const/16 v2, 0xcd
+    const/16 v2, 0xce
 
     aput v2, v0, v1
 

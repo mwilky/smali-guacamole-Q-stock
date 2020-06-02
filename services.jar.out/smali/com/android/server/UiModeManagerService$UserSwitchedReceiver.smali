@@ -71,7 +71,7 @@
 
     iget-object v3, p0, Lcom/android/server/UiModeManagerService$UserSwitchedReceiver;->this$0:Lcom/android/server/UiModeManagerService;
 
-    invoke-static {v3, p1, v1}, Lcom/android/server/UiModeManagerService;->access$2200(Lcom/android/server/UiModeManagerService;Landroid/content/Context;I)Z
+    invoke-static {v3, p1, v1}, Lcom/android/server/UiModeManagerService;->access$2100(Lcom/android/server/UiModeManagerService;Landroid/content/Context;I)Z
 
     move-result v3
 

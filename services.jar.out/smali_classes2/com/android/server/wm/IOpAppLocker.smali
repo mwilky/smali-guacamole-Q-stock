@@ -16,6 +16,9 @@
 .method public abstract isAppLocked(Ljava/lang/String;I)Z
 .end method
 
+.method public abstract isAppLockerEnabled(I)Z
+.end method
+
 .method public abstract isKeyguardDone()Z
 .end method
 
@@ -26,6 +29,9 @@
 .end method
 
 .method public abstract lockAppIfNeed(Lcom/android/server/wm/ActivityRecord;Lcom/android/server/wm/ActivityRecord;)Z
+.end method
+
+.method public abstract lockTopApp(Lcom/android/server/wm/ActivityStack;Ljava/lang/String;)V
 .end method
 
 .method public abstract setKeyguardDone(Z)V

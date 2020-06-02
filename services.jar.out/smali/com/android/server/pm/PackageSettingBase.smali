@@ -24,7 +24,7 @@
 
 .field codePath:Ljava/io/File;
 
-.field codePathString:Ljava/lang/String;
+.field public codePathString:Ljava/lang/String;
 
 .field cpuAbiOverrideString:Ljava/lang/String;
 

@@ -40,6 +40,8 @@
 
 .field private final mNai:Lcom/android/server/connectivity/NetworkAgentInfo;
 
+.field private final mOldFd:Ljava/io/FileDescriptor;
+
 .field private final mPacket:Landroid/net/KeepalivePacketData;
 
 .field private final mPid:I
@@ -137,6 +139,8 @@
 
     iput-object v1, p0, Lcom/android/server/connectivity/KeepaliveTracker$KeepaliveInfo;->mFd:Ljava/io/FileDescriptor;
 
+    iput-object p7, p0, Lcom/android/server/connectivity/KeepaliveTracker$KeepaliveInfo;->mOldFd:Ljava/io/FileDescriptor;
+
     goto :goto_1
 
     :catch_0
@@ -178,6 +182,8 @@
     const/4 v1, 0x0
 
     iput-object v1, p0, Lcom/android/server/connectivity/KeepaliveTracker$KeepaliveInfo;->mFd:Ljava/io/FileDescriptor;
+
+    iput-object v1, p0, Lcom/android/server/connectivity/KeepaliveTracker$KeepaliveInfo;->mOldFd:Ljava/io/FileDescriptor;
     :try_end_0
     .catch Landroid/system/ErrnoException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -1078,13 +1084,22 @@
     :goto_0
     iget-object v1, p0, Lcom/android/server/connectivity/KeepaliveTracker$KeepaliveInfo;->mFd:Ljava/io/FileDescriptor;
 
-    if-eqz v1, :cond_4
+    if-eqz v1, :cond_5
 
     :try_start_0
+    invoke-static {v1}, Landroid/system/Os;->close(Ljava/io/FileDescriptor;)V
+
+    iget-object v1, p0, Lcom/android/server/connectivity/KeepaliveTracker$KeepaliveInfo;->mOldFd:Ljava/io/FileDescriptor;
+
+    if-eqz v1, :cond_4
+
+    iget-object v1, p0, Lcom/android/server/connectivity/KeepaliveTracker$KeepaliveInfo;->mOldFd:Ljava/io/FileDescriptor;
+
     invoke-static {v1}, Landroid/system/Os;->close(Ljava/io/FileDescriptor;)V
     :try_end_0
     .catch Landroid/system/ErrnoException; {:try_start_0 .. :try_end_0} :catch_0
 
+    :cond_4
     goto :goto_1
 
     :catch_0
@@ -1112,9 +1127,9 @@
 
     invoke-static {v3, v2}, Landroid/util/Log;->wtf(Ljava/lang/String;Ljava/lang/String;)I
 
-    :cond_4
+    :cond_5
     :goto_1
-    if-nez p1, :cond_5
+    if-nez p1, :cond_6
 
     :try_start_1
     iget-object v1, p0, Lcom/android/server/connectivity/KeepaliveTracker$KeepaliveInfo;->mCallback:Landroid/net/ISocketKeepaliveCallback;
@@ -1147,10 +1162,10 @@
     :goto_2
     goto :goto_4
 
-    :cond_5
+    :cond_6
     const/4 v1, -0x2
 
-    if-ne p1, v1, :cond_6
+    if-ne p1, v1, :cond_7
 
     :try_start_2
     iget-object v1, p0, Lcom/android/server/connectivity/KeepaliveTracker$KeepaliveInfo;->mCallback:Landroid/net/ISocketKeepaliveCallback;
@@ -1183,7 +1198,7 @@
     :goto_3
     goto :goto_4
 
-    :cond_6
+    :cond_7
     iget-object v1, p0, Lcom/android/server/connectivity/KeepaliveTracker$KeepaliveInfo;->this$0:Lcom/android/server/connectivity/KeepaliveTracker;
 
     iget-object v2, p0, Lcom/android/server/connectivity/KeepaliveTracker$KeepaliveInfo;->mCallback:Landroid/net/ISocketKeepaliveCallback;

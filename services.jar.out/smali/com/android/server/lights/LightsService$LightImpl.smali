@@ -131,7 +131,7 @@
     return-void
 .end method
 
-.method static synthetic access$500(Lcom/android/server/lights/LightsService$LightImpl;)V
+.method static synthetic access$600(Lcom/android/server/lights/LightsService$LightImpl;)V
     .locals 0
 
     invoke-direct {p0}, Lcom/android/server/lights/LightsService$LightImpl;->stopFlashing()V
@@ -166,7 +166,7 @@
     const/4 v0, 0x0
 
     :try_start_0
-    invoke-static {}, Lcom/android/server/lights/LightsService;->access$300()Lcom/oneplus/core/oimc/OIMCServiceManager;
+    invoke-static {}, Lcom/android/server/lights/LightsService;->access$400()Lcom/oneplus/core/oimc/OIMCServiceManager;
 
     move-result-object v1
 
@@ -213,6 +213,72 @@
     invoke-static {v3, v2}, Landroid/util/Slog;->e(Ljava/lang/String;Ljava/lang/String;)I
 
     return v0
+.end method
+
+.method private notifySurfaceFlingerLight(I)V
+    .locals 6
+
+    const-string v0, "LightsService"
+
+    invoke-static {}, Lcom/android/server/lights/LightsService;->access$300()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_1
+
+    :try_start_0
+    iget-object v1, p0, Lcom/android/server/lights/LightsService$LightImpl;->this$0:Lcom/android/server/lights/LightsService;
+
+    iget-object v1, v1, Lcom/android/server/lights/LightsService;->flinger:Landroid/os/IBinder;
+
+    if-eqz v1, :cond_0
+
+    invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
+
+    move-result-object v1
+
+    const-string v2, "android.ui.ISurfaceComposer"
+
+    invoke-virtual {v1, v2}, Landroid/os/Parcel;->writeInterfaceToken(Ljava/lang/String;)V
+
+    invoke-virtual {v1, p1}, Landroid/os/Parcel;->writeInt(I)V
+
+    iget-object v2, p0, Lcom/android/server/lights/LightsService$LightImpl;->this$0:Lcom/android/server/lights/LightsService;
+
+    iget-object v2, v2, Lcom/android/server/lights/LightsService;->flinger:Landroid/os/IBinder;
+
+    const/16 v3, 0x4e2d
+
+    const/4 v4, 0x0
+
+    const/4 v5, 0x0
+
+    invoke-interface {v2, v3, v1, v4, v5}, Landroid/os/IBinder;->transact(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
+
+    invoke-virtual {v1}, Landroid/os/Parcel;->recycle()V
+
+    goto :goto_0
+
+    :cond_0
+    const-string v1, "flinger is null"
+
+    invoke-static {v0, v1}, Landroid/util/Slog;->i(Ljava/lang/String;Ljava/lang/String;)I
+    :try_end_0
+    .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
+
+    :goto_0
+    goto :goto_1
+
+    :catch_0
+    move-exception v1
+
+    const-string/jumbo v2, "read flinger 20013 is fail"
+
+    invoke-static {v0, v2}, Landroid/util/Slog;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    :cond_1
+    :goto_1
+    return-void
 .end method
 
 .method private setLightLocked(IIIII)V
@@ -263,7 +329,7 @@
 
     iget v0, p0, Lcom/android/server/lights/LightsService$LightImpl;->mBrightnessMode:I
 
-    if-eq v0, p5, :cond_4
+    if-eq v0, p5, :cond_5
 
     :cond_2
     sget-boolean v0, Lcom/android/server/lights/LightsService;->DEBUG:Z
@@ -355,6 +421,13 @@
 
     invoke-static {v8, v9, v0}, Landroid/os/Trace;->traceBegin(JLjava/lang/String;)V
 
+    iget v0, p0, Lcom/android/server/lights/LightsService$LightImpl;->mId:I
+
+    if-nez v0, :cond_4
+
+    invoke-direct {p0, p1}, Lcom/android/server/lights/LightsService$LightImpl;->notifySurfaceFlingerLight(I)V
+
+    :cond_4
     :try_start_0
     iget v0, p0, Lcom/android/server/lights/LightsService$LightImpl;->mId:I
 
@@ -376,33 +449,33 @@
 
     nop
 
-    :cond_4
+    :cond_5
     invoke-direct {p0}, Lcom/android/server/lights/LightsService$LightImpl;->getDcEnable()Z
 
     move-result v0
 
-    if-eqz v0, :cond_5
+    if-eqz v0, :cond_6
 
     const/16 v0, 0x104
 
-    if-ge p1, v0, :cond_5
+    if-ge p1, v0, :cond_6
 
-    if-gt p1, v6, :cond_6
+    if-gt p1, v6, :cond_7
 
-    :cond_5
+    :cond_6
     invoke-direct {p0}, Lcom/android/server/lights/LightsService$LightImpl;->isFodEnabled()Z
 
     move-result v0
 
-    if-eqz v0, :cond_8
+    if-eqz v0, :cond_9
 
-    :cond_6
+    :cond_7
     :try_start_1
     iget-object v0, p0, Lcom/android/server/lights/LightsService$LightImpl;->this$0:Lcom/android/server/lights/LightsService;
 
     iget-object v0, v0, Lcom/android/server/lights/LightsService;->flinger:Landroid/os/IBinder;
 
-    if-eqz v0, :cond_7
+    if-eqz v0, :cond_8
 
     invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
 
@@ -428,7 +501,7 @@
 
     goto :goto_1
 
-    :cond_7
+    :cond_8
     const-string v0, "flinger is null"
 
     invoke-static {v7, v0}, Landroid/util/Slog;->i(Ljava/lang/String;Ljava/lang/String;)I
@@ -445,7 +518,7 @@
 
     invoke-static {v7, v1}, Landroid/util/Slog;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    :cond_8
+    :cond_9
     :goto_2
     return-void
 

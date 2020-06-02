@@ -53,7 +53,7 @@
 
     iget-object v0, p0, Lcom/android/server/StorageManagerService$MountObbAction;->this$0:Lcom/android/server/StorageManagerService;
 
-    invoke-static {v0}, Lcom/android/server/StorageManagerService;->access$5200(Lcom/android/server/StorageManagerService;)V
+    invoke-static {v0}, Lcom/android/server/StorageManagerService;->access$5300(Lcom/android/server/StorageManagerService;)V
 
     iget-object v0, p0, Lcom/android/server/StorageManagerService$MountObbAction;->this$0:Lcom/android/server/StorageManagerService;
 
@@ -63,7 +63,7 @@
 
     iget v2, p0, Lcom/android/server/StorageManagerService$MountObbAction;->mCallingUid:I
 
-    invoke-static {v0, v1, v2}, Lcom/android/server/StorageManagerService;->access$5300(Lcom/android/server/StorageManagerService;Ljava/lang/String;I)Z
+    invoke-static {v0, v1, v2}, Lcom/android/server/StorageManagerService;->access$5400(Lcom/android/server/StorageManagerService;Ljava/lang/String;I)Z
 
     move-result v0
 
@@ -71,7 +71,7 @@
 
     iget-object v0, p0, Lcom/android/server/StorageManagerService$MountObbAction;->this$0:Lcom/android/server/StorageManagerService;
 
-    invoke-static {v0}, Lcom/android/server/StorageManagerService;->access$4900(Lcom/android/server/StorageManagerService;)Ljava/util/Map;
+    invoke-static {v0}, Lcom/android/server/StorageManagerService;->access$5000(Lcom/android/server/StorageManagerService;)Ljava/util/Map;
 
     move-result-object v0
 
@@ -80,7 +80,7 @@
     :try_start_0
     iget-object v1, p0, Lcom/android/server/StorageManagerService$MountObbAction;->this$0:Lcom/android/server/StorageManagerService;
 
-    invoke-static {v1}, Lcom/android/server/StorageManagerService;->access$5000(Lcom/android/server/StorageManagerService;)Ljava/util/Map;
+    invoke-static {v1}, Lcom/android/server/StorageManagerService;->access$5100(Lcom/android/server/StorageManagerService;)Ljava/util/Map;
 
     move-result-object v1
 
@@ -200,7 +200,7 @@
 
     iget-object v3, p0, Lcom/android/server/StorageManagerService$MountObbAction;->this$0:Lcom/android/server/StorageManagerService;
 
-    invoke-static {v3}, Lcom/android/server/StorageManagerService;->access$4900(Lcom/android/server/StorageManagerService;)Ljava/util/Map;
+    invoke-static {v3}, Lcom/android/server/StorageManagerService;->access$5000(Lcom/android/server/StorageManagerService;)Ljava/util/Map;
 
     move-result-object v3
 
@@ -213,7 +213,7 @@
 
     iget-object v5, p0, Lcom/android/server/StorageManagerService$MountObbAction;->mObbState:Lcom/android/server/StorageManagerService$ObbState;
 
-    invoke-static {v4, v5}, Lcom/android/server/StorageManagerService;->access$5400(Lcom/android/server/StorageManagerService;Lcom/android/server/StorageManagerService$ObbState;)V
+    invoke-static {v4, v5}, Lcom/android/server/StorageManagerService;->access$5500(Lcom/android/server/StorageManagerService;Lcom/android/server/StorageManagerService$ObbState;)V
 
     monitor-exit v3
     :try_end_3

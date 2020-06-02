@@ -360,7 +360,7 @@
 
     const/4 v1, 0x0
 
-    const/16 v2, 0x97
+    const/16 v2, 0x98
 
     aput v2, v0, v1
 
@@ -791,7 +791,7 @@
     :cond_0
     new-array v0, v0, [I
 
-    const/16 v1, 0x97
+    const/16 v1, 0x98
 
     aput v1, v0, v2
 

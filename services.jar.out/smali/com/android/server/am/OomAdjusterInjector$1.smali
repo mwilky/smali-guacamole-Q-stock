@@ -1,11 +1,11 @@
 .class Lcom/android/server/am/OomAdjusterInjector$1;
-.super Landroid/os/Handler;
+.super Ljava/util/ArrayList;
 .source "OomAdjusterInjector.java"
 
 
 # annotations
-.annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/server/am/OomAdjusterInjector;-><init>(Landroid/content/Context;)V
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/android/server/am/OomAdjusterInjector;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -13,44 +13,28 @@
     name = null
 .end annotation
 
-
-# instance fields
-.field final synthetic this$0:Lcom/android/server/am/OomAdjusterInjector;
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/util/ArrayList<",
+        "Ljava/lang/String;",
+        ">;"
+    }
+.end annotation
 
 
 # direct methods
-.method constructor <init>(Lcom/android/server/am/OomAdjusterInjector;Landroid/os/Looper;)V
-    .locals 0
+.method constructor <init>()V
+    .locals 1
 
-    iput-object p1, p0, Lcom/android/server/am/OomAdjusterInjector$1;->this$0:Lcom/android/server/am/OomAdjusterInjector;
+    invoke-direct {p0}, Ljava/util/ArrayList;-><init>()V
 
-    invoke-direct {p0, p2}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
+    const-string v0, "com.tencent.mm"
 
-    return-void
-.end method
+    invoke-virtual {p0, v0}, Lcom/android/server/am/OomAdjusterInjector$1;->add(Ljava/lang/Object;)Z
 
+    const-string v0, "com.tencent.mobileqq"
 
-# virtual methods
-.method public handleMessage(Landroid/os/Message;)V
-    .locals 3
-
-    new-instance v0, Lcom/oneplus/config/ConfigGrabber;
-
-    iget-object v1, p0, Lcom/android/server/am/OomAdjusterInjector$1;->this$0:Lcom/android/server/am/OomAdjusterInjector;
-
-    invoke-static {v1}, Lcom/android/server/am/OomAdjusterInjector;->access$000(Lcom/android/server/am/OomAdjusterInjector;)Landroid/content/Context;
-
-    move-result-object v1
-
-    const-string v2, "OomAdjuster"
-
-    invoke-direct {v0, v1, v2}, Lcom/oneplus/config/ConfigGrabber;-><init>(Landroid/content/Context;Ljava/lang/String;)V
-
-    invoke-virtual {v0}, Lcom/oneplus/config/ConfigGrabber;->grabConfig()Lorg/json/JSONArray;
-
-    move-result-object v1
-
-    invoke-static {v1}, Lcom/android/server/am/OomAdjusterInjector;->resolveConfig(Lorg/json/JSONArray;)V
+    invoke-virtual {p0, v0}, Lcom/android/server/am/OomAdjusterInjector$1;->add(Ljava/lang/Object;)Z
 
     return-void
 .end method

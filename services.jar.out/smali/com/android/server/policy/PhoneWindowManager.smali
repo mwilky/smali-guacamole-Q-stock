@@ -9501,6 +9501,19 @@
     return v1
 
     :cond_0
+    sget-boolean v0, Lcom/android/server/policy/PhoneWindowManager;->mIsCustomFP:Z
+
+    if-nez v0, :cond_1
+
+    invoke-interface {p1}, Lcom/android/server/policy/WindowManagerPolicy$WindowState;->getAppToken()Landroid/view/IApplicationToken;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_1
+
+    return v1
+
+    :cond_1
     invoke-interface {p1}, Lcom/android/server/policy/WindowManagerPolicy$WindowState;->getAttrs()Landroid/view/WindowManager$LayoutParams;
 
     move-result-object v0
@@ -9509,19 +9522,19 @@
 
     const/16 v2, 0x7d0
 
-    if-eq v0, v2, :cond_2
+    if-eq v0, v2, :cond_3
 
     const/16 v3, 0x7dd
 
-    if-eq v0, v3, :cond_2
+    if-eq v0, v3, :cond_3
 
     const/16 v3, 0x7e3
 
-    if-eq v0, v3, :cond_2
+    if-eq v0, v3, :cond_3
 
     const/16 v3, 0x7e7
 
-    if-eq v0, v3, :cond_2
+    if-eq v0, v3, :cond_3
 
     invoke-virtual {p0, p1}, Lcom/android/server/policy/PhoneWindowManager;->getWindowLayerLw(Lcom/android/server/policy/WindowManagerPolicy$WindowState;)I
 
@@ -9531,14 +9544,14 @@
 
     move-result v2
 
-    if-ge v0, v2, :cond_1
+    if-ge v0, v2, :cond_2
 
     const/4 v1, 0x1
 
-    :cond_1
+    :cond_2
     return v1
 
-    :cond_2
+    :cond_3
     return v1
 .end method
 

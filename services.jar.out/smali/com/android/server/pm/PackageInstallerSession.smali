@@ -4922,7 +4922,7 @@
     iput-wide v5, v10, Landroid/content/pm/PackageInstaller$SessionParams;->appIconLastModified:J
 
     :cond_1
-    const-string v5, "isReady"
+    const-string/jumbo v5, "isReady"
 
     invoke-static {v0, v5}, Lcom/android/internal/util/XmlUtils;->readBooleanAttribute(Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;)Z
 
@@ -9500,7 +9500,7 @@
 
     invoke-static {p1, v1, v3}, Lcom/android/internal/util/XmlUtils;->writeBooleanAttribute(Lorg/xmlpull/v1/XmlSerializer;Ljava/lang/String;Z)V
 
-    const-string v1, "isReady"
+    const-string/jumbo v1, "isReady"
 
     iget-boolean v3, p0, Lcom/android/server/pm/PackageInstallerSession;->mStagedSessionReady:Z
 

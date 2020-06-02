@@ -6450,7 +6450,7 @@
 .end method
 
 .method public synthetic lambda$reportGnssServiceDied$7$GnssLocationProvider()V
-    .locals 1
+    .locals 4
 
     const/4 v0, 0x1
 
@@ -6458,19 +6458,35 @@
 
     invoke-direct {p0}, Lcom/android/server/location/GnssLocationProvider;->isGpsEnabled()Z
 
-    move-result v0
+    move-result v1
 
-    if-eqz v0, :cond_0
+    const/4 v2, 0x0
 
-    const/4 v0, 0x0
+    if-eqz v1, :cond_0
 
-    invoke-direct {p0, v0}, Lcom/android/server/location/GnssLocationProvider;->setGpsEnabled(Z)V
+    invoke-direct {p0, v2}, Lcom/android/server/location/GnssLocationProvider;->setGpsEnabled(Z)V
 
     invoke-direct {p0}, Lcom/android/server/location/GnssLocationProvider;->updateEnabled()V
 
+    :cond_0
+    if-nez v1, :cond_1
+
+    new-array v0, v0, [I
+
+    const/16 v3, 0xfa
+
+    aput v3, v0, v2
+
+    invoke-static {v0}, Landroid/util/OpFeatures;->isSupport([I)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_2
+
+    :cond_1
     invoke-direct {p0}, Lcom/android/server/location/GnssLocationProvider;->reloadGpsProperties()V
 
-    :cond_0
+    :cond_2
     return-void
 .end method
 

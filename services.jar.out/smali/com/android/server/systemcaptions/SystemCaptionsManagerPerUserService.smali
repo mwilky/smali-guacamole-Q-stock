@@ -61,13 +61,24 @@
 
     iget-object v0, p0, Lcom/android/server/systemcaptions/SystemCaptionsManagerPerUserService;->mRemoteService:Lcom/android/server/systemcaptions/RemoteSystemCaptionsManagerService;
 
-    if-nez v0, :cond_3
+    if-nez v0, :cond_4
 
     invoke-virtual {p0}, Lcom/android/server/systemcaptions/SystemCaptionsManagerPerUserService;->getComponentNameLocked()Ljava/lang/String;
 
     move-result-object v0
 
-    if-nez v0, :cond_1
+    iget v1, p0, Lcom/android/server/systemcaptions/SystemCaptionsManagerPerUserService;->mUserId:I
+
+    invoke-static {v1}, Lcom/oneplus/android/os/OnePlusParallelAppUtils;->isParallelUser(I)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_0
+
+    const/4 v0, 0x0
+
+    :cond_0
+    if-nez v0, :cond_2
 
     iget-object v1, p0, Lcom/android/server/systemcaptions/SystemCaptionsManagerPerUserService;->mMaster:Lcom/android/server/infra/AbstractMasterSystemService;
 
@@ -75,7 +86,7 @@
 
     iget-boolean v1, v1, Lcom/android/server/systemcaptions/SystemCaptionsManagerService;->verbose:Z
 
-    if-eqz v1, :cond_0
+    if-eqz v1, :cond_1
 
     sget-object v1, Lcom/android/server/systemcaptions/SystemCaptionsManagerPerUserService;->TAG:Ljava/lang/String;
 
@@ -83,12 +94,12 @@
 
     invoke-static {v1, v2}, Landroid/util/Slog;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    :cond_0
+    :cond_1
     const/4 v1, 0x0
 
     return-object v1
 
-    :cond_1
+    :cond_2
     invoke-static {v0}, Landroid/content/ComponentName;->unflattenFromString(Ljava/lang/String;)Landroid/content/ComponentName;
 
     move-result-object v1
@@ -117,7 +128,7 @@
 
     iget-boolean v2, v2, Lcom/android/server/systemcaptions/SystemCaptionsManagerService;->verbose:Z
 
-    if-eqz v2, :cond_2
+    if-eqz v2, :cond_3
 
     sget-object v2, Lcom/android/server/systemcaptions/SystemCaptionsManagerPerUserService;->TAG:Ljava/lang/String;
 
@@ -139,12 +150,12 @@
 
     invoke-static {v2, v3}, Landroid/util/Slog;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    :cond_2
+    :cond_3
     iget-object v2, p0, Lcom/android/server/systemcaptions/SystemCaptionsManagerPerUserService;->mRemoteService:Lcom/android/server/systemcaptions/RemoteSystemCaptionsManagerService;
 
     invoke-virtual {v2}, Lcom/android/server/systemcaptions/RemoteSystemCaptionsManagerService;->initialize()V
 
-    :cond_3
+    :cond_4
     iget-object v0, p0, Lcom/android/server/systemcaptions/SystemCaptionsManagerPerUserService;->mRemoteService:Lcom/android/server/systemcaptions/RemoteSystemCaptionsManagerService;
 
     return-object v0

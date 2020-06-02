@@ -10,7 +10,13 @@
 
 
 # instance fields
+.field private getSuccessful:Ljava/lang/String;
+
 .field private final mServiceWatcher:Lcom/android/server/ServiceWatcher;
+
+.field private systemCurrentRequestTime:J
+
+.field private systemLastGeocoderTime:J
 
 
 # direct methods
@@ -19,29 +25,39 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    new-instance v8, Lcom/android/server/ServiceWatcher;
+    const-wide/16 v0, 0x0
+
+    iput-wide v0, p0, Lcom/android/server/location/GeocoderProxy;->systemCurrentRequestTime:J
+
+    iput-wide v0, p0, Lcom/android/server/location/GeocoderProxy;->systemLastGeocoderTime:J
+
+    const/4 v0, 0x0
+
+    iput-object v0, p0, Lcom/android/server/location/GeocoderProxy;->getSuccessful:Ljava/lang/String;
+
+    new-instance v0, Lcom/android/server/ServiceWatcher;
 
     invoke-static {}, Lcom/android/server/FgThread;->getHandler()Landroid/os/Handler;
 
-    move-result-object v7
+    move-result-object v8
 
-    const-string v2, "GeocoderProxy"
+    const-string v3, "GeocoderProxy"
 
-    const-string v3, "com.android.location.service.GeocodeProvider"
+    const-string v4, "com.android.location.service.GeocodeProvider"
 
-    move-object v0, v8
+    move-object v1, v0
 
-    move-object v1, p1
+    move-object v2, p1
 
-    move v4, p2
+    move v5, p2
 
-    move v5, p3
+    move v6, p3
 
-    move v6, p4
+    move v7, p4
 
-    invoke-direct/range {v0 .. v7}, Lcom/android/server/ServiceWatcher;-><init>(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;IIILandroid/os/Handler;)V
+    invoke-direct/range {v1 .. v8}, Lcom/android/server/ServiceWatcher;-><init>(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;IIILandroid/os/Handler;)V
 
-    iput-object v8, p0, Lcom/android/server/location/GeocoderProxy;->mServiceWatcher:Lcom/android/server/ServiceWatcher;
+    iput-object v0, p0, Lcom/android/server/location/GeocoderProxy;->mServiceWatcher:Lcom/android/server/ServiceWatcher;
 
     return-void
 .end method
@@ -77,37 +93,6 @@
     const/4 v1, 0x0
 
     return-object v1
-.end method
-
-.method static synthetic lambda$getFromLocation$0(DDILandroid/location/GeocoderParams;Ljava/util/List;Landroid/os/IBinder;)Ljava/lang/String;
-    .locals 9
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Landroid/os/RemoteException;
-        }
-    .end annotation
-
-    invoke-static/range {p7 .. p7}, Landroid/location/IGeocodeProvider$Stub;->asInterface(Landroid/os/IBinder;)Landroid/location/IGeocodeProvider;
-
-    move-result-object v8
-
-    move-object v0, v8
-
-    move-wide v1, p0
-
-    move-wide v3, p2
-
-    move v5, p4
-
-    move-object v6, p5
-
-    move-object v7, p6
-
-    invoke-interface/range {v0 .. v7}, Landroid/location/IGeocodeProvider;->getFromLocation(DDILandroid/location/GeocoderParams;Ljava/util/List;)Ljava/lang/String;
-
-    move-result-object v0
-
-    return-object v0
 .end method
 
 .method static synthetic lambda$getFromLocationName$1(Ljava/lang/String;DDDDILandroid/location/GeocoderParams;Ljava/util/List;Landroid/os/IBinder;)Ljava/lang/String;
@@ -162,7 +147,7 @@
 .end method
 
 .method public getFromLocation(DDILandroid/location/GeocoderParams;Ljava/util/List;)Ljava/lang/String;
-    .locals 11
+    .locals 12
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(DDI",
@@ -174,35 +159,98 @@
         }
     .end annotation
 
-    move-object v0, p0
+    move-object v9, p0
 
-    iget-object v1, v0, Lcom/android/server/location/GeocoderProxy;->mServiceWatcher:Lcom/android/server/ServiceWatcher;
+    iget-wide v0, v9, Lcom/android/server/location/GeocoderProxy;->systemLastGeocoderTime:J
 
-    new-instance v10, Lcom/android/server/location/-$$Lambda$GeocoderProxy$jfLn3HL2BzwsKdoI6ZZeFfEe10k;
+    const-wide/16 v2, 0x0
 
-    move-object v2, v10
+    cmp-long v0, v0, v2
 
-    move-wide v3, p1
+    if-eqz v0, :cond_0
 
-    move-wide v5, p3
+    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
-    move/from16 v7, p5
+    move-result-wide v0
 
-    move-object/from16 v8, p6
+    iput-wide v0, v9, Lcom/android/server/location/GeocoderProxy;->systemCurrentRequestTime:J
 
-    move-object/from16 v9, p7
+    iget-wide v0, v9, Lcom/android/server/location/GeocoderProxy;->systemCurrentRequestTime:J
 
-    invoke-direct/range {v2 .. v9}, Lcom/android/server/location/-$$Lambda$GeocoderProxy$jfLn3HL2BzwsKdoI6ZZeFfEe10k;-><init>(DDILandroid/location/GeocoderParams;Ljava/util/List;)V
+    iget-wide v4, v9, Lcom/android/server/location/GeocoderProxy;->systemLastGeocoderTime:J
 
-    const-string v2, "Service not Available"
+    sub-long v6, v0, v4
 
-    invoke-virtual {v1, v10, v2}, Lcom/android/server/ServiceWatcher;->runOnBinderBlocking(Lcom/android/server/ServiceWatcher$BlockingBinderRunner;Ljava/lang/Object;)Ljava/lang/Object;
+    cmp-long v2, v6, v2
 
-    move-result-object v1
+    if-lez v2, :cond_0
 
-    check-cast v1, Ljava/lang/String;
+    sub-long/2addr v0, v4
 
-    return-object v1
+    const-wide/16 v2, 0x64
+
+    cmp-long v0, v0, v2
+
+    if-gez v0, :cond_0
+
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v1, " systemCurrentRequestTime - systemLastGeocoderTime "
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-wide v1, v9, Lcom/android/server/location/GeocoderProxy;->systemCurrentRequestTime:J
+
+    iget-wide v3, v9, Lcom/android/server/location/GeocoderProxy;->systemLastGeocoderTime:J
+
+    sub-long/2addr v1, v3
+
+    invoke-virtual {v0, v1, v2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    const-string v1, "GeocoderProxy"
+
+    invoke-static {v1, v0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    const/4 v0, 0x0
+
+    return-object v0
+
+    :cond_0
+    iget-object v10, v9, Lcom/android/server/location/GeocoderProxy;->mServiceWatcher:Lcom/android/server/ServiceWatcher;
+
+    new-instance v11, Lcom/android/server/location/-$$Lambda$GeocoderProxy$3pRxYLuoUiiGxCQbVaXbDnDtT3Y;
+
+    move-object v0, v11
+
+    move-object v1, p0
+
+    move-wide v2, p1
+
+    move-wide v4, p3
+
+    move/from16 v6, p5
+
+    move-object/from16 v7, p6
+
+    move-object/from16 v8, p7
+
+    invoke-direct/range {v0 .. v8}, Lcom/android/server/location/-$$Lambda$GeocoderProxy$3pRxYLuoUiiGxCQbVaXbDnDtT3Y;-><init>(Lcom/android/server/location/GeocoderProxy;DDILandroid/location/GeocoderParams;Ljava/util/List;)V
+
+    const-string v0, "Service not Available"
+
+    invoke-virtual {v10, v11, v0}, Lcom/android/server/ServiceWatcher;->runOnBinderBlocking(Lcom/android/server/ServiceWatcher$BlockingBinderRunner;Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Ljava/lang/String;
+
+    return-object v0
 .end method
 
 .method public getFromLocationName(Ljava/lang/String;DDDDILandroid/location/GeocoderParams;Ljava/util/List;)Ljava/lang/String;
@@ -253,6 +301,82 @@
     move-result-object v1
 
     check-cast v1, Ljava/lang/String;
+
+    return-object v1
+.end method
+
+.method public synthetic lambda$getFromLocation$0$GeocoderProxy(DDILandroid/location/GeocoderParams;Ljava/util/List;Landroid/os/IBinder;)Ljava/lang/String;
+    .locals 10
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Landroid/os/RemoteException;
+        }
+    .end annotation
+
+    move-object v0, p0
+
+    invoke-static/range {p8 .. p8}, Landroid/location/IGeocodeProvider$Stub;->asInterface(Landroid/os/IBinder;)Landroid/location/IGeocodeProvider;
+
+    move-result-object v9
+
+    move-object v1, v9
+
+    move-wide v2, p1
+
+    move-wide v4, p3
+
+    move v6, p5
+
+    move-object/from16 v7, p6
+
+    move-object/from16 v8, p7
+
+    invoke-interface/range {v1 .. v8}, Landroid/location/IGeocodeProvider;->getFromLocation(DDILandroid/location/GeocoderParams;Ljava/util/List;)Ljava/lang/String;
+
+    move-result-object v1
+
+    iput-object v1, v0, Lcom/android/server/location/GeocoderProxy;->getSuccessful:Ljava/lang/String;
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v2, "addrs.isEmpty() "
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-interface/range {p7 .. p7}, Ljava/util/List;->isEmpty()Z
+
+    move-result v2
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    const-string v2, "GeocoderProxy"
+
+    invoke-static {v2, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    invoke-interface/range {p7 .. p7}, Ljava/util/List;->isEmpty()Z
+
+    move-result v1
+
+    if-nez v1, :cond_0
+
+    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
+
+    move-result-wide v1
+
+    iput-wide v1, v0, Lcom/android/server/location/GeocoderProxy;->systemLastGeocoderTime:J
+
+    iget-object v1, v0, Lcom/android/server/location/GeocoderProxy;->getSuccessful:Ljava/lang/String;
+
+    return-object v1
+
+    :cond_0
+    const/4 v1, 0x0
 
     return-object v1
 .end method

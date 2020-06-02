@@ -3949,7 +3949,7 @@
 
     if-ne v2, v12, :cond_6
 
-    const v12, 0x50d008e
+    const v12, 0x50d008f
 
     invoke-virtual {v11, v12}, Landroid/content/res/Resources;->getText(I)Ljava/lang/CharSequence;
 
@@ -3958,7 +3958,7 @@
     goto :goto_1
 
     :cond_6
-    const v12, 0x50d0091
+    const v12, 0x50d0092
 
     invoke-virtual {v11, v12}, Landroid/content/res/Resources;->getText(I)Ljava/lang/CharSequence;
 
@@ -3980,7 +3980,7 @@
 
     if-nez v7, :cond_8
 
-    const v7, 0x50d008f
+    const v7, 0x50d0090
 
     invoke-virtual {v11, v7}, Landroid/content/res/Resources;->getText(I)Ljava/lang/CharSequence;
 
@@ -3991,7 +3991,7 @@
     :cond_8
     if-ne v7, v0, :cond_9
 
-    const v7, 0x50d0090
+    const v7, 0x50d0091
 
     invoke-virtual {v11, v7}, Landroid/content/res/Resources;->getText(I)Ljava/lang/CharSequence;
 
@@ -4018,7 +4018,7 @@
     goto :goto_2
 
     :cond_9
-    const v7, 0x50d008d
+    const v7, 0x50d008e
 
     invoke-virtual {v11, v7}, Landroid/content/res/Resources;->getText(I)Ljava/lang/CharSequence;
 
@@ -4078,129 +4078,181 @@
     const v4, 0x5060054
 
     :cond_c
-    const/4 v5, 0x0
+    new-instance v5, Landroid/app/NotificationChannel;
 
-    iget-object v13, v1, Lcom/android/server/connectivity/Tethering;->mPublicSync:Ljava/lang/Object;
+    iget-object v13, v1, Lcom/android/server/connectivity/Tethering;->mContext:Landroid/content/Context;
 
-    monitor-enter v13
+    const v14, 0x50d0059
+
+    invoke-virtual {v13, v14}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+
+    move-result-object v13
+
+    const/4 v14, 0x3
+
+    const-string v15, "HOTSPOT_TETHERING_STATUS"
+
+    invoke-direct {v5, v15, v13, v14}, Landroid/app/NotificationChannel;-><init>(Ljava/lang/String;Ljava/lang/CharSequence;I)V
+
+    invoke-virtual {v5, v0}, Landroid/app/NotificationChannel;->setBlockableSystem(Z)V
+
+    invoke-virtual {v5, v9}, Landroid/app/NotificationChannel;->enableVibration(Z)V
+
+    invoke-virtual {v5, v8, v8}, Landroid/app/NotificationChannel;->setSound(Landroid/net/Uri;Landroid/media/AudioAttributes;)V
+
+    invoke-virtual {v5, v9}, Landroid/app/NotificationChannel;->enableLights(Z)V
+
+    invoke-virtual {v3, v5}, Landroid/app/NotificationManager;->createNotificationChannel(Landroid/app/NotificationChannel;)V
+
+    const/4 v13, 0x0
+
+    iget-object v14, v1, Lcom/android/server/connectivity/Tethering;->mPublicSync:Ljava/lang/Object;
+
+    monitor-enter v14
 
     :try_start_0
-    iget-object v14, v1, Lcom/android/server/connectivity/Tethering;->mTetheredNotificationBuilder:Landroid/app/Notification$Builder;
+    iget-object v15, v1, Lcom/android/server/connectivity/Tethering;->mTetheredNotificationBuilder:Landroid/app/Notification$Builder;
 
-    if-nez v14, :cond_d
+    if-nez v15, :cond_d
 
-    new-instance v14, Landroid/app/Notification$Builder;
+    new-instance v15, Landroid/app/Notification$Builder;
 
-    iget-object v15, v1, Lcom/android/server/connectivity/Tethering;->mContext:Landroid/content/Context;
+    iget-object v8, v1, Lcom/android/server/connectivity/Tethering;->mContext:Landroid/content/Context;
 
-    sget-object v8, Lcom/android/internal/notification/SystemNotificationChannels;->NETWORK_STATUS:Ljava/lang/String;
+    const-string v9, "HOTSPOT_TETHERING_STATUS"
 
-    invoke-direct {v14, v15, v8}, Landroid/app/Notification$Builder;-><init>(Landroid/content/Context;Ljava/lang/String;)V
+    invoke-direct {v15, v8, v9}, Landroid/app/Notification$Builder;-><init>(Landroid/content/Context;Ljava/lang/String;)V
 
-    iput-object v14, v1, Lcom/android/server/connectivity/Tethering;->mTetheredNotificationBuilder:Landroid/app/Notification$Builder;
+    iput-object v15, v1, Lcom/android/server/connectivity/Tethering;->mTetheredNotificationBuilder:Landroid/app/Notification$Builder;
 
     iget-object v8, v1, Lcom/android/server/connectivity/Tethering;->mTetheredNotificationBuilder:Landroid/app/Notification$Builder;
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
-    const-wide/16 v14, 0x0
+    const-wide/16 v0, 0x0
 
-    invoke-virtual {v8, v14, v15}, Landroid/app/Notification$Builder;->setWhen(J)Landroid/app/Notification$Builder;
+    :try_start_1
+    invoke-virtual {v8, v0, v1}, Landroid/app/Notification$Builder;->setWhen(J)Landroid/app/Notification$Builder;
 
-    move-result-object v8
+    move-result-object v0
 
-    invoke-virtual {v8, v0}, Landroid/app/Notification$Builder;->setOngoing(Z)Landroid/app/Notification$Builder;
+    const/4 v1, 0x1
 
-    move-result-object v8
+    invoke-virtual {v0, v1}, Landroid/app/Notification$Builder;->setOngoing(Z)Landroid/app/Notification$Builder;
 
-    iget-object v14, v1, Lcom/android/server/connectivity/Tethering;->mContext:Landroid/content/Context;
+    move-result-object v0
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    move-object/from16 v1, p0
+
+    :try_start_2
+    iget-object v8, v1, Lcom/android/server/connectivity/Tethering;->mContext:Landroid/content/Context;
 
     const v15, 0x106001c
 
-    invoke-virtual {v14, v15}, Landroid/content/Context;->getColor(I)I
+    invoke-virtual {v8, v15}, Landroid/content/Context;->getColor(I)I
 
-    move-result v14
+    move-result v8
 
-    invoke-virtual {v8, v14}, Landroid/app/Notification$Builder;->setColor(I)Landroid/app/Notification$Builder;
+    invoke-virtual {v0, v8}, Landroid/app/Notification$Builder;->setColor(I)Landroid/app/Notification$Builder;
 
-    move-result-object v8
+    move-result-object v0
 
-    invoke-virtual {v8, v0}, Landroid/app/Notification$Builder;->setVisibility(I)Landroid/app/Notification$Builder;
+    const/4 v8, 0x1
 
-    move-result-object v8
+    invoke-virtual {v0, v8}, Landroid/app/Notification$Builder;->setVisibility(I)Landroid/app/Notification$Builder;
 
-    const-string/jumbo v14, "status"
+    move-result-object v0
 
-    invoke-virtual {v8, v14}, Landroid/app/Notification$Builder;->setCategory(Ljava/lang/String;)Landroid/app/Notification$Builder;
+    const-string/jumbo v9, "status"
 
-    :cond_d
-    iget-object v8, v1, Lcom/android/server/connectivity/Tethering;->mTetheredNotificationBuilder:Landroid/app/Notification$Builder;
-
-    invoke-virtual {v8, v4}, Landroid/app/Notification$Builder;->setSmallIcon(I)Landroid/app/Notification$Builder;
-
-    move-result-object v8
-
-    invoke-virtual {v8, v12}, Landroid/app/Notification$Builder;->setContentTitle(Ljava/lang/CharSequence;)Landroid/app/Notification$Builder;
-
-    move-result-object v8
-
-    invoke-virtual {v8, v7}, Landroid/app/Notification$Builder;->setContentText(Ljava/lang/CharSequence;)Landroid/app/Notification$Builder;
-
-    move-result-object v8
-
-    invoke-virtual {v8, v10}, Landroid/app/Notification$Builder;->setContentIntent(Landroid/app/PendingIntent;)Landroid/app/Notification$Builder;
-
-    move-result-object v8
-
-    const-string v14, "com.android.server.connectivity.tethering"
-
-    invoke-virtual {v8, v14}, Landroid/app/Notification$Builder;->setGroup(Ljava/lang/String;)Landroid/app/Notification$Builder;
-
-    move-result-object v8
-
-    invoke-virtual {v8, v9}, Landroid/app/Notification$Builder;->setPriority(I)Landroid/app/Notification$Builder;
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    :try_start_1
-    iget-object v8, v1, Lcom/android/server/connectivity/Tethering;->mTetheredNotificationBuilder:Landroid/app/Notification$Builder;
-
-    invoke-virtual {v8}, Landroid/app/Notification$Builder;->build()Landroid/app/Notification;
-
-    move-result-object v8
-
-    move-object v5, v8
-
-    iget-object v8, v5, Landroid/app/Notification;->extras:Landroid/os/Bundle;
-
-    const-string v14, "hide_icon"
-
-    if-nez v6, :cond_e
+    invoke-virtual {v0, v9}, Landroid/app/Notification$Builder;->setCategory(Ljava/lang/String;)Landroid/app/Notification$Builder;
 
     goto :goto_3
 
-    :cond_e
-    move v0, v9
+    :catchall_0
+    move-exception v0
+
+    move-object/from16 v1, p0
+
+    goto :goto_6
+
+    :cond_d
+    move v8, v0
 
     :goto_3
-    invoke-virtual {v8, v14, v0}, Landroid/os/Bundle;->putBoolean(Ljava/lang/String;Z)V
-    :try_end_1
-    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+    iget-object v0, v1, Lcom/android/server/connectivity/Tethering;->mTetheredNotificationBuilder:Landroid/app/Notification$Builder;
+
+    invoke-virtual {v0, v4}, Landroid/app/Notification$Builder;->setSmallIcon(I)Landroid/app/Notification$Builder;
+
+    move-result-object v0
+
+    invoke-virtual {v0, v12}, Landroid/app/Notification$Builder;->setContentTitle(Ljava/lang/CharSequence;)Landroid/app/Notification$Builder;
+
+    move-result-object v0
+
+    invoke-virtual {v0, v7}, Landroid/app/Notification$Builder;->setContentText(Ljava/lang/CharSequence;)Landroid/app/Notification$Builder;
+
+    move-result-object v0
+
+    invoke-virtual {v0, v10}, Landroid/app/Notification$Builder;->setContentIntent(Landroid/app/PendingIntent;)Landroid/app/Notification$Builder;
+
+    move-result-object v0
+
+    const-string v9, "com.android.server.connectivity.tethering"
+
+    invoke-virtual {v0, v9}, Landroid/app/Notification$Builder;->setGroup(Ljava/lang/String;)Landroid/app/Notification$Builder;
+
+    move-result-object v0
+
+    const/4 v9, 0x0
+
+    invoke-virtual {v0, v9}, Landroid/app/Notification$Builder;->setPriority(I)Landroid/app/Notification$Builder;
+    :try_end_2
+    .catchall {:try_start_2 .. :try_end_2} :catchall_1
+
+    :try_start_3
+    iget-object v0, v1, Lcom/android/server/connectivity/Tethering;->mTetheredNotificationBuilder:Landroid/app/Notification$Builder;
+
+    invoke-virtual {v0}, Landroid/app/Notification$Builder;->build()Landroid/app/Notification;
+
+    move-result-object v0
+
+    move-object v13, v0
+
+    iget-object v0, v13, Landroid/app/Notification;->extras:Landroid/os/Bundle;
+
+    const-string v15, "hide_icon"
+
+    if-nez v6, :cond_e
 
     goto :goto_4
+
+    :cond_e
+    move v8, v9
+
+    :goto_4
+    invoke-virtual {v0, v15, v8}, Landroid/os/Bundle;->putBoolean(Ljava/lang/String;Z)V
+    :try_end_3
+    .catch Ljava/lang/Exception; {:try_start_3 .. :try_end_3} :catch_0
+    .catchall {:try_start_3 .. :try_end_3} :catchall_1
+
+    goto :goto_5
 
     :catch_0
     move-exception v0
 
-    :try_start_2
+    :try_start_4
     sget-object v8, Lcom/android/server/connectivity/Tethering;->TAG:Ljava/lang/String;
 
     new-instance v9, Ljava/lang/StringBuilder;
 
     invoke-direct {v9}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v14, "TetheredNotificationBuilder build e:"
+    const-string v15, "TetheredNotificationBuilder build e:"
 
-    invoke-virtual {v9, v14}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v9, v15}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     invoke-virtual {v9, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -4210,12 +4262,12 @@
 
     invoke-static {v8, v9}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    :goto_4
-    monitor-exit v13
-    :try_end_2
-    .catchall {:try_start_2 .. :try_end_2} :catchall_0
+    :goto_5
+    monitor-exit v14
+    :try_end_4
+    .catchall {:try_start_4 .. :try_end_4} :catchall_1
 
-    if-eqz v5, :cond_f
+    if-eqz v13, :cond_f
 
     iput v4, v1, Lcom/android/server/connectivity/Tethering;->mLastNotificationId:I
 
@@ -4225,18 +4277,19 @@
 
     const/4 v9, 0x0
 
-    invoke-virtual {v3, v9, v0, v5, v8}, Landroid/app/NotificationManager;->notifyAsUser(Ljava/lang/String;ILandroid/app/Notification;Landroid/os/UserHandle;)V
+    invoke-virtual {v3, v9, v0, v13, v8}, Landroid/app/NotificationManager;->notifyAsUser(Ljava/lang/String;ILandroid/app/Notification;Landroid/os/UserHandle;)V
 
     :cond_f
     return-void
 
-    :catchall_0
+    :catchall_1
     move-exception v0
 
-    :try_start_3
-    monitor-exit v13
-    :try_end_3
-    .catchall {:try_start_3 .. :try_end_3} :catchall_0
+    :goto_6
+    :try_start_5
+    monitor-exit v14
+    :try_end_5
+    .catchall {:try_start_5 .. :try_end_5} :catchall_1
 
     throw v0
 .end method

@@ -6,7 +6,7 @@
 # static fields
 .field private static final DEBUG:Z
 
-.field private static final TAG:Ljava/lang/String;
+.field private static final TAG:Ljava/lang/String; = "PackageManager[ReserveApp]"
 
 .field private static sOpReserveAppManager:Lcom/android/server/pm/IOpReserveAppManager;
 
@@ -18,14 +18,6 @@
     sget-boolean v0, Landroid/os/Build;->DEBUG_ONEPLUS:Z
 
     sput-boolean v0, Lcom/android/server/pm/OpReserveAppInjector;->DEBUG:Z
-
-    const-class v0, Lcom/android/server/pm/OpReserveAppInjector;
-
-    invoke-virtual {v0}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
-
-    move-result-object v0
-
-    sput-object v0, Lcom/android/server/pm/OpReserveAppInjector;->TAG:Ljava/lang/String;
 
     return-void
 .end method
@@ -45,7 +37,7 @@
 
     if-eqz v0, :cond_0
 
-    sget-object v0, Lcom/android/server/pm/OpReserveAppInjector;->TAG:Ljava/lang/String;
+    const-string v0, "PackageManager[ReserveApp]"
 
     const-string v1, "call OpReserveAppInjector.addForInitLI()"
 
@@ -86,7 +78,7 @@
 
     if-eqz v0, :cond_0
 
-    sget-object v0, Lcom/android/server/pm/OpReserveAppInjector;->TAG:Ljava/lang/String;
+    const-string v0, "PackageManager[ReserveApp]"
 
     const-string v1, "call OpReserveAppInjector.checkAppHasDeleted()"
 
@@ -111,7 +103,7 @@
 
     if-eqz v0, :cond_0
 
-    sget-object v0, Lcom/android/server/pm/OpReserveAppInjector;->TAG:Ljava/lang/String;
+    const-string v0, "PackageManager[ReserveApp]"
 
     const-string v1, "call OpReserveAppInjector.cleanUp()"
 
@@ -136,7 +128,7 @@
 
     if-eqz v0, :cond_0
 
-    sget-object v0, Lcom/android/server/pm/OpReserveAppInjector;->TAG:Ljava/lang/String;
+    const-string v0, "PackageManager[ReserveApp]"
 
     const-string v1, "call OpReserveAppInjector.cleanUpResourcesLI()"
 
@@ -159,7 +151,7 @@
 
     if-eqz v0, :cond_0
 
-    sget-object v0, Lcom/android/server/pm/OpReserveAppInjector;->TAG:Ljava/lang/String;
+    const-string v0, "PackageManager[ReserveApp]"
 
     const-string v1, "call OpReserveAppInjector.collectReserveApps()"
 
@@ -182,7 +174,7 @@
 
     if-eqz v0, :cond_0
 
-    sget-object v0, Lcom/android/server/pm/OpReserveAppInjector;->TAG:Ljava/lang/String;
+    const-string v0, "PackageManager[ReserveApp]"
 
     const-string v1, "call OpReserveAppInjector.initInstance()"
 
@@ -205,7 +197,7 @@
 
     if-eqz v0, :cond_0
 
-    sget-object v0, Lcom/android/server/pm/OpReserveAppInjector;->TAG:Ljava/lang/String;
+    const-string v0, "PackageManager[ReserveApp]"
 
     const-string v1, "call OpReserveAppInjector.isReserveApp()"
 
@@ -244,6 +236,41 @@
     return-void
 .end method
 
+.method public static pruneNonExistReserveApps(Ljava/util/Collection;Landroid/util/ArrayMap;)V
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/Collection<",
+            "Lcom/android/server/pm/PackageSetting;",
+            ">;",
+            "Landroid/util/ArrayMap<",
+            "Ljava/lang/String;",
+            "Landroid/content/pm/PackageParser$Package;",
+            ">;)V"
+        }
+    .end annotation
+
+    sget-boolean v0, Lcom/android/server/pm/OpReserveAppInjector;->DEBUG:Z
+
+    if-eqz v0, :cond_0
+
+    const-string v0, "PackageManager[ReserveApp]"
+
+    const-string v1, "call OpReserveAppInjector.pruneNonExistReserveApps()"
+
+    invoke-static {v0, v1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    :cond_0
+    invoke-static {}, Lcom/android/server/pm/OpReserveAppInjector;->makeSureInstanceInitialized()V
+
+    sget-object v0, Lcom/android/server/pm/OpReserveAppInjector;->sOpReserveAppManager:Lcom/android/server/pm/IOpReserveAppManager;
+
+    invoke-interface {v0, p0, p1}, Lcom/android/server/pm/IOpReserveAppManager;->pruneNonExistReserveApps(Ljava/util/Collection;Landroid/util/ArrayMap;)V
+
+    return-void
+.end method
+
 .method public static setNativeLibraryPaths(Landroid/content/pm/PackageParser$Package;)V
     .locals 2
 
@@ -251,7 +278,7 @@
 
     if-eqz v0, :cond_0
 
-    sget-object v0, Lcom/android/server/pm/OpReserveAppInjector;->TAG:Ljava/lang/String;
+    const-string v0, "PackageManager[ReserveApp]"
 
     const-string v1, "call OpReserveAppInjector.setNativeLibraryPaths()"
 

@@ -12397,11 +12397,7 @@
     return v2
 
     :cond_3
-    invoke-static/range {p3 .. p3}, Landroid/os/PowerManager;->wakeReasonToString(I)Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-static {v0, v13}, Lcom/android/server/power/OpPowerManagerInjector;->CheckWakeUpOrDoze(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {v11, v13}, Lcom/android/server/power/OpPowerManagerInjector;->CheckWakeUpOrDoze(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v0
 

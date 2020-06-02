@@ -116,7 +116,7 @@
 .method public getExternalStorageMountMode(ILjava/lang/String;)I
     .locals 5
 
-    invoke-static {}, Lcom/android/server/StorageManagerService;->access$4600()Z
+    invoke-static {}, Lcom/android/server/StorageManagerService;->access$4700()Z
 
     move-result v0
 
@@ -124,7 +124,7 @@
 
     iget-object v0, p0, Lcom/android/server/StorageManagerService$StorageManagerInternalImpl;->this$0:Lcom/android/server/StorageManagerService;
 
-    invoke-static {v0, p1, p2}, Lcom/android/server/StorageManagerService;->access$4700(Lcom/android/server/StorageManagerService;ILjava/lang/String;)I
+    invoke-static {v0, p1, p2}, Lcom/android/server/StorageManagerService;->access$4800(Lcom/android/server/StorageManagerService;ILjava/lang/String;)I
 
     move-result v0
 
@@ -138,7 +138,7 @@
     :try_start_0
     iget-object v1, p0, Lcom/android/server/StorageManagerService$StorageManagerInternalImpl;->this$0:Lcom/android/server/StorageManagerService;
 
-    invoke-static {v1}, Lcom/android/server/StorageManagerService;->access$5500(Lcom/android/server/StorageManagerService;)Landroid/content/pm/IPackageManager;
+    invoke-static {v1}, Lcom/android/server/StorageManagerService;->access$5600(Lcom/android/server/StorageManagerService;)Landroid/content/pm/IPackageManager;
 
     move-result-object v1
 
@@ -223,7 +223,7 @@
     return v0
 
     :cond_0
-    invoke-static {}, Lcom/android/server/StorageManagerService;->access$4600()Z
+    invoke-static {}, Lcom/android/server/StorageManagerService;->access$4700()Z
 
     move-result v1
 
@@ -233,7 +233,7 @@
 
     iget-object v1, p0, Lcom/android/server/StorageManagerService$StorageManagerInternalImpl;->this$0:Lcom/android/server/StorageManagerService;
 
-    invoke-static {v1, p1, p2}, Lcom/android/server/StorageManagerService;->access$4700(Lcom/android/server/StorageManagerService;ILjava/lang/String;)I
+    invoke-static {v1, p1, p2}, Lcom/android/server/StorageManagerService;->access$4800(Lcom/android/server/StorageManagerService;ILjava/lang/String;)I
 
     move-result v1
 
@@ -353,7 +353,7 @@
 
     iget-object v1, p0, Lcom/android/server/StorageManagerService$StorageManagerInternalImpl;->this$0:Lcom/android/server/StorageManagerService;
 
-    invoke-static {v1, p1, v0}, Lcom/android/server/StorageManagerService;->access$4800(Lcom/android/server/StorageManagerService;II)V
+    invoke-static {v1, p1, v0}, Lcom/android/server/StorageManagerService;->access$4900(Lcom/android/server/StorageManagerService;II)V
 
     return-void
 .end method

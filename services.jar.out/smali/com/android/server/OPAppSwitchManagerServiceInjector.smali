@@ -49,14 +49,14 @@
     return v0
 .end method
 
-.method public static getOposAdsSettings(Landroid/content/Context;)Z
+.method public static getOposAdsSettings(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 1
 
     sget-object v0, Lcom/android/server/OPAppSwitchManagerServiceInjector;->opAppSwitchManagerServiceHelper:Lcom/android/server/IOPAppSwitchManagerService;
 
     if-eqz v0, :cond_0
 
-    invoke-interface {v0, p0}, Lcom/android/server/IOPAppSwitchManagerService;->getOposAdsSettings(Landroid/content/Context;)Z
+    invoke-interface {v0, p0, p1}, Lcom/android/server/IOPAppSwitchManagerService;->getOposAdsSettings(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v0
 

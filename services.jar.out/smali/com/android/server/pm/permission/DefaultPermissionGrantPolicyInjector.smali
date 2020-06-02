@@ -828,6 +828,63 @@
     return-void
 .end method
 
+.method public static revokeDefaultPermissionsFromBrowserApps([I)V
+    .locals 5
+
+    const/4 v0, 0x1
+
+    new-array v0, v0, [I
+
+    const/4 v1, 0x0
+
+    aput v1, v0, v1
+
+    invoke-static {v0}, Landroid/util/OpFeatures;->isSupport([I)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    sget-object v0, Lcom/android/server/pm/permission/DefaultPermissionGrantPolicyInjector;->mDefaultPermissionGrantPolicy:Lcom/android/server/pm/permission/DefaultPermissionGrantPolicy;
+
+    if-nez v0, :cond_0
+
+    const-string v0, "DefaultPermissionGrantPolicyInjector"
+
+    const-string/jumbo v1, "mDefaultPermissionGrantPolicy is null"
+
+    invoke-static {v0, v1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    return-void
+
+    :cond_0
+    const-string v0, "com.nearme.browser"
+
+    const-string v2, "com.heytap.browser"
+
+    filled-new-array {v0, v2}, [Ljava/lang/String;
+
+    move-result-object v0
+
+    array-length v2, p0
+
+    :goto_0
+    if-ge v1, v2, :cond_1
+
+    aget v3, p0, v1
+
+    sget-object v4, Lcom/android/server/pm/permission/DefaultPermissionGrantPolicyInjector;->mDefaultPermissionGrantPolicy:Lcom/android/server/pm/permission/DefaultPermissionGrantPolicy;
+
+    invoke-virtual {v4, v0, v3}, Lcom/android/server/pm/permission/DefaultPermissionGrantPolicy;->revokeDefaultPermissionsFromBrowserApps([Ljava/lang/String;I)V
+
+    add-int/lit8 v1, v1, 0x1
+
+    goto :goto_0
+
+    :cond_1
+    return-void
+.end method
+
 
 # virtual methods
 .method public grantDefaultPermissionsToUssVVM(Landroid/content/Context;I)V

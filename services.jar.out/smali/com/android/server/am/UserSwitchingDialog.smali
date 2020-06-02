@@ -42,7 +42,7 @@
 
 # direct methods
 .method public constructor <init>(Lcom/android/server/am/ActivityManagerService;Landroid/content/Context;Landroid/content/pm/UserInfo;Landroid/content/pm/UserInfo;ZLjava/lang/String;Ljava/lang/String;)V
-    .locals 2
+    .locals 1
 
     invoke-direct {p0, p2}, Landroid/app/AlertDialog;-><init>(Landroid/content/Context;)V
 
@@ -68,9 +68,51 @@
 
     iput-object p7, p0, Lcom/android/server/am/UserSwitchingDialog;->mSwitchingToSystemUserMessage:Ljava/lang/String;
 
+    invoke-virtual {p0, p5}, Lcom/android/server/am/UserSwitchingDialog;->applyView(Z)V
+
+    return-void
+.end method
+
+.method public constructor <init>(Lcom/android/server/am/ActivityManagerService;Landroid/content/Context;Landroid/content/pm/UserInfo;Landroid/content/pm/UserInfo;ZLjava/lang/String;Ljava/lang/String;I)V
+    .locals 1
+
+    invoke-direct {p0, p2, p8}, Landroid/app/AlertDialog;-><init>(Landroid/content/Context;I)V
+
+    new-instance v0, Lcom/android/server/am/UserSwitchingDialog$1;
+
+    invoke-direct {v0, p0}, Lcom/android/server/am/UserSwitchingDialog$1;-><init>(Lcom/android/server/am/UserSwitchingDialog;)V
+
+    iput-object v0, p0, Lcom/android/server/am/UserSwitchingDialog;->mHandler:Landroid/os/Handler;
+
+    iput-object p2, p0, Lcom/android/server/am/UserSwitchingDialog;->mContext:Landroid/content/Context;
+
+    iput-object p1, p0, Lcom/android/server/am/UserSwitchingDialog;->mService:Lcom/android/server/am/ActivityManagerService;
+
+    iget v0, p4, Landroid/content/pm/UserInfo;->id:I
+
+    iput v0, p0, Lcom/android/server/am/UserSwitchingDialog;->mUserId:I
+
+    iput-object p3, p0, Lcom/android/server/am/UserSwitchingDialog;->mOldUser:Landroid/content/pm/UserInfo;
+
+    iput-object p4, p0, Lcom/android/server/am/UserSwitchingDialog;->mNewUser:Landroid/content/pm/UserInfo;
+
+    iput-object p6, p0, Lcom/android/server/am/UserSwitchingDialog;->mSwitchingFromSystemUserMessage:Ljava/lang/String;
+
+    iput-object p7, p0, Lcom/android/server/am/UserSwitchingDialog;->mSwitchingToSystemUserMessage:Ljava/lang/String;
+
+    invoke-virtual {p0, p5}, Lcom/android/server/am/UserSwitchingDialog;->applyView(Z)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method applyView(Z)V
+    .locals 2
+
     invoke-virtual {p0}, Lcom/android/server/am/UserSwitchingDialog;->inflateContent()V
 
-    if-eqz p5, :cond_0
+    if-eqz p1, :cond_0
 
     invoke-virtual {p0}, Lcom/android/server/am/UserSwitchingDialog;->getWindow()Landroid/view/Window;
 
@@ -102,8 +144,6 @@
     return-void
 .end method
 
-
-# virtual methods
 .method inflateContent()V
     .locals 7
 

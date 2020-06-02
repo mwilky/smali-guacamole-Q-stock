@@ -471,6 +471,8 @@
     invoke-static {v8}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
 
     move-result v8
+
+    invoke-direct {p0, v8, v6, v7}, Lcom/android/server/usage/UsageStatsDatabase;->continueUpgradeLocked(IJ)V
     :try_end_7
     .catchall {:try_start_7 .. :try_end_7} :catchall_2
 
@@ -480,43 +482,33 @@
     .catch Ljava/lang/NumberFormatException; {:try_start_8 .. :try_end_8} :catch_2
     .catch Ljava/io/IOException; {:try_start_8 .. :try_end_8} :catch_2
 
-    nop
-
-    invoke-direct {p0, v8, v6, v7}, Lcom/android/server/usage/UsageStatsDatabase;->continueUpgradeLocked(IJ)V
-
     goto :goto_2
 
     :catchall_2
-    move-exception v0
+    move-exception v6
 
     :try_start_9
-    throw v0
+    throw v6
     :try_end_9
     .catchall {:try_start_9 .. :try_end_9} :catchall_3
 
     :catchall_3
-    move-exception v2
+    move-exception v7
 
     :try_start_a
-    invoke-static {v0, v3}, Lcom/android/server/usage/UsageStatsDatabase;->$closeResource(Ljava/lang/Throwable;Ljava/lang/AutoCloseable;)V
+    invoke-static {v6, v3}, Lcom/android/server/usage/UsageStatsDatabase;->$closeResource(Ljava/lang/Throwable;Ljava/lang/AutoCloseable;)V
 
-    throw v2
+    throw v7
     :try_end_a
     .catch Ljava/lang/NumberFormatException; {:try_start_a .. :try_end_a} :catch_2
     .catch Ljava/io/IOException; {:try_start_a .. :try_end_a} :catch_2
 
     :catch_2
-    move-exception v0
+    move-exception v3
 
-    const-string v2, "Failed read version upgrade breadcrumb"
+    const-string v6, "Failed read version upgrade breadcrumb"
 
-    invoke-static {v5, v2}, Landroid/util/Slog;->e(Ljava/lang/String;Ljava/lang/String;)I
-
-    new-instance v2, Ljava/lang/RuntimeException;
-
-    invoke-direct {v2, v0}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/Throwable;)V
-
-    throw v2
+    invoke-static {v5, v6}, Landroid/util/Slog;->e(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_4
     :goto_2
@@ -3473,7 +3465,8 @@
 
     invoke-direct {p0, v3, v4}, Lcom/android/server/usage/UsageStatsDatabase;->readLocked(Landroid/util/AtomicFile;Lcom/android/server/usage/IntervalStats;)V
     :try_end_1
-    .catch Ljava/io/IOException; {:try_start_1 .. :try_end_1} :catch_0
+    .catch Ljava/io/IOException; {:try_start_1 .. :try_end_1} :catch_1
+    .catch Ljava/lang/IllegalArgumentException; {:try_start_1 .. :try_end_1} :catch_0
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     :try_start_2
@@ -3486,12 +3479,24 @@
 
     const-string v4, "UsageStatsDatabase"
 
+    const-string v5, "Failed to read usage stats file(iae clear db?)"
+
+    invoke-static {v4, v5, v3}, Landroid/util/Slog;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
+
+    goto :goto_0
+
+    :catch_1
+    move-exception v3
+
+    const-string v4, "UsageStatsDatabase"
+
     const-string v5, "Failed to read usage stats file"
 
     invoke-static {v4, v5, v3}, Landroid/util/Slog;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
     nop
 
+    :goto_0
     monitor-exit v0
 
     return-object v2

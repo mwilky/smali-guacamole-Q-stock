@@ -156,7 +156,33 @@
     return-void
 .end method
 
-.method private blacklistContains(II)Z
+
+# virtual methods
+.method public binderDied()V
+    .locals 2
+
+    invoke-virtual {p0}, Lcom/android/server/biometrics/ClientMonitor;->getLogTag()Ljava/lang/String;
+
+    move-result-object v0
+
+    const-string v1, "Binder died, cancelling client"
+
+    invoke-static {v0, v1}, Landroid/util/Slog;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    const/4 v0, 0x0
+
+    invoke-virtual {p0, v0}, Lcom/android/server/biometrics/ClientMonitor;->stop(Z)I
+
+    const/4 v0, 0x0
+
+    iput-object v0, p0, Lcom/android/server/biometrics/ClientMonitor;->mToken:Landroid/os/IBinder;
+
+    iput-object v0, p0, Lcom/android/server/biometrics/ClientMonitor;->mListener:Lcom/android/server/biometrics/BiometricServiceBase$ServiceListener;
+
+    return-void
+.end method
+
+.method protected blacklistContains(II)Z
     .locals 5
 
     iget-object v0, p0, Lcom/android/server/biometrics/ClientMonitor;->mConstants:Lcom/android/server/biometrics/Constants;
@@ -270,32 +296,6 @@
     const/4 v0, 0x0
 
     return v0
-.end method
-
-
-# virtual methods
-.method public binderDied()V
-    .locals 2
-
-    invoke-virtual {p0}, Lcom/android/server/biometrics/ClientMonitor;->getLogTag()Ljava/lang/String;
-
-    move-result-object v0
-
-    const-string v1, "Binder died, cancelling client"
-
-    invoke-static {v0, v1}, Landroid/util/Slog;->e(Ljava/lang/String;Ljava/lang/String;)I
-
-    const/4 v0, 0x0
-
-    invoke-virtual {p0, v0}, Lcom/android/server/biometrics/ClientMonitor;->stop(Z)I
-
-    const/4 v0, 0x0
-
-    iput-object v0, p0, Lcom/android/server/biometrics/ClientMonitor;->mToken:Landroid/os/IBinder;
-
-    iput-object v0, p0, Lcom/android/server/biometrics/ClientMonitor;->mListener:Lcom/android/server/biometrics/BiometricServiceBase$ServiceListener;
-
-    return-void
 .end method
 
 .method public destroy()V
@@ -585,7 +585,7 @@
 
     if-eqz v0, :cond_0
 
-    invoke-direct {p0, p1, p2}, Lcom/android/server/biometrics/ClientMonitor;->blacklistContains(II)Z
+    invoke-virtual {p0, p1, p2}, Lcom/android/server/biometrics/ClientMonitor;->blacklistContains(II)Z
 
     move-result v0
 

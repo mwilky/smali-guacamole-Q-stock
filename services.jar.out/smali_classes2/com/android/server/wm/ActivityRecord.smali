@@ -10256,7 +10256,7 @@
 .end method
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
-    .locals 6
+    .locals 8
 
     invoke-super {p0, p1}, Lcom/android/server/wm/ConfigurationContainer;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
@@ -10326,56 +10326,100 @@
     :cond_3
     iget-boolean v2, p0, Lcom/android/server/wm/ActivityRecord;->visible:Z
 
-    if-eqz v2, :cond_4
+    const/4 v3, 0x0
+
+    const/4 v4, 0x1
+
+    if-eqz v2, :cond_5
 
     invoke-virtual {v1, p0}, Lcom/android/server/wm/ActivityDisplay;->handleActivitySizeCompatModeIfNeeded(Lcom/android/server/wm/ActivityRecord;)V
 
-    goto :goto_1
+    invoke-virtual {p0}, Lcom/android/server/wm/ActivityRecord;->getWindowingMode()I
+
+    move-result v2
+
+    if-ne v2, v4, :cond_8
+
+    iget-object v2, p0, Lcom/android/server/wm/ActivityRecord;->mLastReportedConfiguration:Landroid/util/MergedConfiguration;
+
+    if-eqz v2, :cond_8
+
+    invoke-virtual {v2}, Landroid/util/MergedConfiguration;->getMergedConfiguration()Landroid/content/res/Configuration;
+
+    move-result-object v2
+
+    iget-object v2, v2, Landroid/content/res/Configuration;->windowConfiguration:Landroid/app/WindowConfiguration;
+
+    invoke-virtual {v2}, Landroid/app/WindowConfiguration;->getWindowingMode()I
+
+    move-result v2
+
+    const/4 v5, 0x4
+
+    if-ne v2, v5, :cond_4
+
+    invoke-virtual {p0, v3, v4}, Lcom/android/server/wm/ActivityRecord;->ensureActivityConfiguration(IZ)Z
+
+    new-instance v3, Ljava/lang/StringBuilder;
+
+    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v4, "re-ensure config for mode changed from split-screen-secondary to fullscreen for "
+
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v3, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v3
+
+    const-string v4, "ActivityTaskManager"
+
+    invoke-static {v4, v3}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_4
+    goto :goto_0
+
+    :cond_5
     invoke-virtual {p0}, Lcom/android/server/wm/ActivityRecord;->shouldUseSizeCompatMode()Z
 
     move-result v2
 
-    if-eqz v2, :cond_7
+    if-eqz v2, :cond_8
 
     invoke-virtual {v1}, Lcom/android/server/wm/ActivityDisplay;->getLastOverrideConfigurationChanges()I
 
     move-result v2
 
-    const v3, 0x20000480
+    const v5, 0x20000480
 
     invoke-static {v2}, Lcom/android/server/wm/ActivityRecord;->hasResizeChange(I)Z
 
-    move-result v4
+    move-result v6
 
-    if-eqz v4, :cond_5
+    if-eqz v6, :cond_6
 
-    const v4, 0x20000480
+    const v6, 0x20000480
 
-    and-int v5, v2, v4
+    and-int v7, v2, v6
 
-    if-eq v5, v4, :cond_5
+    if-eq v7, v6, :cond_6
 
-    const/4 v4, 0x1
-
-    goto :goto_0
-
-    :cond_5
-    const/4 v4, 0x0
-
-    :goto_0
-    if-nez v4, :cond_6
-
-    and-int/lit16 v5, v2, 0x1000
-
-    if-eqz v5, :cond_7
+    move v3, v4
 
     :cond_6
-    invoke-virtual {p0}, Lcom/android/server/wm/ActivityRecord;->restartProcessIfVisible()V
+    if-nez v3, :cond_7
+
+    and-int/lit16 v4, v2, 0x1000
+
+    if-eqz v4, :cond_8
 
     :cond_7
-    :goto_1
+    invoke-virtual {p0}, Lcom/android/server/wm/ActivityRecord;->restartProcessIfVisible()V
+
+    :cond_8
+    :goto_0
     return-void
 .end method
 

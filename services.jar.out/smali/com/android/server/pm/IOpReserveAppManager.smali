@@ -25,5 +25,20 @@
 .method public abstract isReserveApp(Ljava/lang/String;)Z
 .end method
 
+.method public abstract pruneNonExistReserveApps(Ljava/util/Collection;Landroid/util/ArrayMap;)V
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/Collection<",
+            "Lcom/android/server/pm/PackageSetting;",
+            ">;",
+            "Landroid/util/ArrayMap<",
+            "Ljava/lang/String;",
+            "Landroid/content/pm/PackageParser$Package;",
+            ">;)V"
+        }
+    .end annotation
+.end method
+
 .method public abstract setNativeLibraryPaths(Landroid/content/pm/PackageParser$Package;)V
 .end method

@@ -580,15 +580,107 @@
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    if-eqz v8, :cond_3
+    if-eqz v8, :cond_6
 
     :try_start_1
     invoke-interface {v8}, Landroid/database/Cursor;->moveToFirst()Z
 
+    move-result v11
+
+    if-eqz v11, :cond_6
+
+    new-array v10, v10, [I
+
+    const/16 v11, 0xfc
+
+    aput v11, v10, v0
+
+    invoke-static {v10}, Landroid/util/OpFeatures;->isSupport([I)Z
+
     move-result v10
+
+    if-eqz v10, :cond_5
+
+    invoke-virtual {v4}, Landroid/telephony/TelephonyManager;->getSimOperator()Ljava/lang/String;
+
+    move-result-object v0
+
+    new-instance v10, Ljava/lang/StringBuilder;
+
+    invoke-direct {v10}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v11, "SimOperator: "
+
+    invoke-virtual {v10, v11}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v10, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v10}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v10
+
+    invoke-static {v3, v10}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    const-string v10, "310120"
+
+    invoke-virtual {v0, v10}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v10
+
+    if-nez v10, :cond_4
+
+    const-string v10, "312530"
+
+    invoke-virtual {v0, v10}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v10
+
+    if-nez v10, :cond_4
+
+    const-string v10, "311490"
+
+    invoke-virtual {v0, v10}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v10
+
+    if-nez v10, :cond_4
+
+    const-string v10, "311870"
+
+    invoke-virtual {v0, v10}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v10
+
+    if-nez v10, :cond_4
+
+    const-string v10, "310000"
+
+    invoke-virtual {v0, v10}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v10
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     if-eqz v10, :cond_3
 
+    goto :goto_2
+
+    :cond_3
+    goto :goto_3
+
+    :cond_4
+    :goto_2
+    const/4 v10, 0x2
+
+    :try_start_2
+    invoke-interface {v8}, Landroid/database/Cursor;->close()V
+    :try_end_2
+    .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_0
+
+    return v10
+
+    :cond_5
+    :try_start_3
     invoke-interface {v8, v0}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
 
     move-result-object v0
@@ -596,13 +688,13 @@
     invoke-direct {v1, v0, v2}, Lcom/android/server/location/GnssNetworkConnectivityHandler;->translateToApnIpType(Ljava/lang/String;Ljava/lang/String;)I
 
     move-result v0
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+    :try_end_3
+    .catchall {:try_start_3 .. :try_end_3} :catchall_0
 
-    :try_start_2
+    :try_start_4
     invoke-interface {v8}, Landroid/database/Cursor;->close()V
-    :try_end_2
-    .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_0
+    :try_end_4
+    .catch Ljava/lang/Exception; {:try_start_4 .. :try_end_4} :catch_0
 
     return v0
 
@@ -611,10 +703,10 @@
 
     move-object v10, v0
 
-    goto :goto_2
+    goto :goto_4
 
-    :cond_3
-    :try_start_3
+    :cond_6
+    :try_start_5
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -630,52 +722,53 @@
     move-result-object v0
 
     invoke-static {v3, v0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
-    :try_end_3
-    .catchall {:try_start_3 .. :try_end_3} :catchall_0
-
-    if-eqz v8, :cond_4
-
-    :try_start_4
-    invoke-interface {v8}, Landroid/database/Cursor;->close()V
-    :try_end_4
-    .catch Ljava/lang/Exception; {:try_start_4 .. :try_end_4} :catch_0
-
-    :cond_4
-    goto :goto_4
-
-    :goto_2
-    :try_start_5
-    throw v10
     :try_end_5
-    .catchall {:try_start_5 .. :try_end_5} :catchall_1
+    .catchall {:try_start_5 .. :try_end_5} :catchall_0
+
+    :goto_3
+    if-eqz v8, :cond_7
+
+    :try_start_6
+    invoke-interface {v8}, Landroid/database/Cursor;->close()V
+    :try_end_6
+    .catch Ljava/lang/Exception; {:try_start_6 .. :try_end_6} :catch_0
+
+    :cond_7
+    goto :goto_6
+
+    :goto_4
+    :try_start_7
+    throw v10
+    :try_end_7
+    .catchall {:try_start_7 .. :try_end_7} :catchall_1
 
     :catchall_1
     move-exception v0
 
     move-object v11, v0
 
-    if-eqz v8, :cond_5
+    if-eqz v8, :cond_8
 
-    :try_start_6
+    :try_start_8
     invoke-interface {v8}, Landroid/database/Cursor;->close()V
-    :try_end_6
-    .catchall {:try_start_6 .. :try_end_6} :catchall_2
+    :try_end_8
+    .catchall {:try_start_8 .. :try_end_8} :catchall_2
 
-    goto :goto_3
+    goto :goto_5
 
     :catchall_2
     move-exception v0
 
     move-object v12, v0
 
-    :try_start_7
+    :try_start_9
     invoke-virtual {v10, v12}, Ljava/lang/Throwable;->addSuppressed(Ljava/lang/Throwable;)V
 
-    :cond_5
-    :goto_3
+    :cond_8
+    :goto_5
     throw v11
-    :try_end_7
-    .catch Ljava/lang/Exception; {:try_start_7 .. :try_end_7} :catch_0
+    :try_end_9
+    .catch Ljava/lang/Exception; {:try_start_9 .. :try_end_9} :catch_0
 
     :catch_0
     move-exception v0
@@ -696,7 +789,7 @@
 
     invoke-static {v3, v8, v0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
-    :goto_4
+    :goto_6
     return v9
 .end method
 

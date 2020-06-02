@@ -301,20 +301,12 @@
 .method static synthetic access$1500(Lcom/android/server/UiModeManagerService;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/UiModeManagerService;->enableOnePlusBasicColorBlack()V
+    invoke-direct {p0}, Lcom/android/server/UiModeManagerService;->setThemeMode()V
 
     return-void
 .end method
 
-.method static synthetic access$1600(Lcom/android/server/UiModeManagerService;)V
-    .locals 0
-
-    invoke-direct {p0}, Lcom/android/server/UiModeManagerService;->disableOnePlusBasicColorBlack()V
-
-    return-void
-.end method
-
-.method static synthetic access$1700(Lcom/android/server/UiModeManagerService;)Z
+.method static synthetic access$1600(Lcom/android/server/UiModeManagerService;)Z
     .locals 1
 
     iget-boolean v0, p0, Lcom/android/server/UiModeManagerService;->mForceDark:Z
@@ -322,7 +314,7 @@
     return v0
 .end method
 
-.method static synthetic access$1702(Lcom/android/server/UiModeManagerService;Z)Z
+.method static synthetic access$1602(Lcom/android/server/UiModeManagerService;Z)Z
     .locals 0
 
     iput-boolean p1, p0, Lcom/android/server/UiModeManagerService;->mForceDark:Z
@@ -330,7 +322,7 @@
     return p1
 .end method
 
-.method static synthetic access$1800(Lcom/android/server/UiModeManagerService;)Z
+.method static synthetic access$1700(Lcom/android/server/UiModeManagerService;)Z
     .locals 1
 
     iget-boolean v0, p0, Lcom/android/server/UiModeManagerService;->mUiModeLocked:Z
@@ -338,12 +330,20 @@
     return v0
 .end method
 
-.method static synthetic access$1900(Lcom/android/server/UiModeManagerService;)Z
+.method static synthetic access$1800(Lcom/android/server/UiModeManagerService;)Z
     .locals 1
 
     iget-boolean v0, p0, Lcom/android/server/UiModeManagerService;->mNightModeLocked:Z
 
     return v0
+.end method
+
+.method static synthetic access$2000(Lcom/android/server/UiModeManagerService;)Landroid/content/res/Configuration;
+    .locals 1
+
+    iget-object v0, p0, Lcom/android/server/UiModeManagerService;->mConfiguration:Landroid/content/res/Configuration;
+
+    return-object v0
 .end method
 
 .method static synthetic access$202(Lcom/android/server/UiModeManagerService;Z)Z
@@ -354,15 +354,7 @@
     return p1
 .end method
 
-.method static synthetic access$2100(Lcom/android/server/UiModeManagerService;)Landroid/content/res/Configuration;
-    .locals 1
-
-    iget-object v0, p0, Lcom/android/server/UiModeManagerService;->mConfiguration:Landroid/content/res/Configuration;
-
-    return-object v0
-.end method
-
-.method static synthetic access$2200(Lcom/android/server/UiModeManagerService;Landroid/content/Context;I)Z
+.method static synthetic access$2100(Lcom/android/server/UiModeManagerService;Landroid/content/Context;I)Z
     .locals 1
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/UiModeManagerService;->updateForceDarkFromSettings(Landroid/content/Context;I)Z
@@ -636,10 +628,8 @@
     return-object v0
 .end method
 
-.method private disableOnePlusBasicColorBlack()V
+.method private enableThemeMode()V
     .locals 5
-
-    nop
 
     invoke-virtual {p0}, Lcom/android/server/UiModeManagerService;->getContext()Landroid/content/Context;
 
@@ -649,15 +639,11 @@
 
     move-result-object v0
 
-    invoke-static {}, Landroid/os/UserHandle;->getCallingUserId()I
+    const-string/jumbo v1, "origin_oem_black_mode"
 
-    move-result v1
+    const/4 v2, 0x0
 
-    const-string/jumbo v2, "origin_oem_black_mode"
-
-    const/4 v3, 0x0
-
-    invoke-static {v0, v2, v3, v1}, Landroid/provider/Settings$System;->getIntForUser(Landroid/content/ContentResolver;Ljava/lang/String;II)I
+    invoke-static {v0, v1, v2}, Landroid/provider/Settings$System;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
 
     move-result v0
 
@@ -669,13 +655,9 @@
 
     move-result-object v1
 
-    invoke-static {}, Landroid/os/UserHandle;->getCallingUserId()I
+    const-string/jumbo v2, "oem_black_mode"
 
-    move-result v2
-
-    const-string/jumbo v3, "oem_black_mode"
-
-    invoke-static {v1, v3, v0, v2}, Landroid/provider/Settings$System;->putIntForUser(Landroid/content/ContentResolver;Ljava/lang/String;II)Z
+    invoke-static {v1, v2, v0}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
     invoke-static {v0}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
 
@@ -708,24 +690,19 @@
 
     invoke-static {v3, v2}, Lcom/oneplus/os/OnePlusServiceManagerInjector;->processDisableThemeCategory(Ljava/lang/String;Ljava/lang/String;)V
 
+    goto :goto_0
+
     :cond_1
+    const/4 v4, 0x1
+
+    if-ne v0, v4, :cond_2
+
+    invoke-static {v3, v1}, Lcom/oneplus/os/OnePlusServiceManagerInjector;->processDisableThemeCategory(Ljava/lang/String;Ljava/lang/String;)V
+
+    invoke-static {v3, v2}, Lcom/oneplus/os/OnePlusServiceManagerInjector;->processEnableThemeCategory(Ljava/lang/String;Ljava/lang/String;)V
+
+    :cond_2
     :goto_0
-    return-void
-.end method
-
-.method private enableOnePlusBasicColorBlack()V
-    .locals 2
-
-    const-string/jumbo v0, "oneplus_basiccolor"
-
-    const-string/jumbo v1, "white"
-
-    invoke-static {v0, v1}, Lcom/oneplus/os/OnePlusServiceManagerInjector;->processDisableThemeCategory(Ljava/lang/String;Ljava/lang/String;)V
-
-    const-string v1, "black"
-
-    invoke-static {v0, v1}, Lcom/oneplus/os/OnePlusServiceManagerInjector;->processEnableThemeCategory(Ljava/lang/String;Ljava/lang/String;)V
-
     return-void
 .end method
 
@@ -1036,6 +1013,121 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Context;->sendBroadcastAsUser(Landroid/content/Intent;Landroid/os/UserHandle;)V
 
+    return-void
+.end method
+
+.method private setThemeMode()V
+    .locals 8
+
+    invoke-virtual {p0}, Lcom/android/server/UiModeManagerService;->getContext()Landroid/content/Context;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object v0
+
+    const-string/jumbo v1, "oem_black_mode"
+
+    const/4 v2, 0x0
+
+    invoke-static {v0, v1, v2}, Landroid/provider/Settings$System;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
+
+    move-result v0
+
+    iget-boolean v3, p0, Lcom/android/server/UiModeManagerService;->mCarModeEnabled:Z
+
+    if-nez v3, :cond_0
+
+    iget-boolean v3, p0, Lcom/android/server/UiModeManagerService;->mForceDark:Z
+
+    if-nez v3, :cond_0
+
+    invoke-virtual {p0}, Lcom/android/server/UiModeManagerService;->getContext()Landroid/content/Context;
+
+    move-result-object v3
+
+    invoke-virtual {v3}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object v3
+
+    invoke-static {}, Landroid/os/UserHandle;->getCallingUserId()I
+
+    move-result v4
+
+    const-string/jumbo v5, "origin_oem_black_mode"
+
+    invoke-static {v3, v5, v0, v4}, Landroid/provider/Settings$System;->putIntForUser(Landroid/content/ContentResolver;Ljava/lang/String;II)Z
+
+    :cond_0
+    const-string/jumbo v3, "white"
+
+    const-string v4, "black"
+
+    const-string/jumbo v5, "oneplus_basiccolor"
+
+    if-nez v0, :cond_1
+
+    invoke-static {v5, v4}, Lcom/oneplus/os/OnePlusServiceManagerInjector;->processDisableThemeCategory(Ljava/lang/String;Ljava/lang/String;)V
+
+    invoke-static {v5, v3}, Lcom/oneplus/os/OnePlusServiceManagerInjector;->processEnableThemeCategory(Ljava/lang/String;Ljava/lang/String;)V
+
+    goto :goto_0
+
+    :cond_1
+    const/4 v6, 0x2
+
+    if-ne v0, v6, :cond_2
+
+    invoke-static {v5, v3}, Lcom/oneplus/os/OnePlusServiceManagerInjector;->processDisableThemeCategory(Ljava/lang/String;Ljava/lang/String;)V
+
+    invoke-static {v5, v4}, Lcom/oneplus/os/OnePlusServiceManagerInjector;->processDisableThemeCategory(Ljava/lang/String;Ljava/lang/String;)V
+
+    goto :goto_0
+
+    :cond_2
+    const/4 v7, 0x1
+
+    if-ne v0, v7, :cond_3
+
+    iget v7, p0, Lcom/android/server/UiModeManagerService;->mNightMode:I
+
+    if-ne v7, v6, :cond_3
+
+    invoke-static {v5, v3}, Lcom/oneplus/os/OnePlusServiceManagerInjector;->processDisableThemeCategory(Ljava/lang/String;Ljava/lang/String;)V
+
+    invoke-static {v5, v4}, Lcom/oneplus/os/OnePlusServiceManagerInjector;->processEnableThemeCategory(Ljava/lang/String;Ljava/lang/String;)V
+
+    goto :goto_0
+
+    :cond_3
+    invoke-virtual {p0}, Lcom/android/server/UiModeManagerService;->getContext()Landroid/content/Context;
+
+    move-result-object v6
+
+    invoke-virtual {v6}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object v6
+
+    invoke-static {}, Landroid/os/UserHandle;->getCallingUserId()I
+
+    move-result v7
+
+    invoke-static {v6, v1, v2, v7}, Landroid/provider/Settings$System;->putIntForUser(Landroid/content/ContentResolver;Ljava/lang/String;II)Z
+
+    invoke-static {v2}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
+
+    move-result-object v1
+
+    const-string/jumbo v2, "persist.sys.theme.status"
+
+    invoke-static {v2, v1}, Landroid/os/SystemProperties;->set(Ljava/lang/String;Ljava/lang/String;)V
+
+    invoke-static {v5, v4}, Lcom/oneplus/os/OnePlusServiceManagerInjector;->processDisableThemeCategory(Ljava/lang/String;Ljava/lang/String;)V
+
+    invoke-static {v5, v3}, Lcom/oneplus/os/OnePlusServiceManagerInjector;->processEnableThemeCategory(Ljava/lang/String;Ljava/lang/String;)V
+
+    :goto_0
     return-void
 .end method
 
@@ -1558,7 +1650,7 @@
 
     iget v1, p0, Lcom/android/server/UiModeManagerService;->mNightMode:I
 
-    invoke-static {v1}, Lcom/android/server/UiModeManagerService$Shell;->access$2000(I)Ljava/lang/String;
+    invoke-static {v1}, Lcom/android/server/UiModeManagerService$Shell;->access$1900(I)Ljava/lang/String;
 
     move-result-object v1
 
@@ -2169,6 +2261,8 @@
     move-result v1
 
     invoke-direct {p0, v0, v1}, Lcom/android/server/UiModeManagerService;->updateForceDarkFromSettings(Landroid/content/Context;I)Z
+
+    invoke-direct {p0}, Lcom/android/server/UiModeManagerService;->enableThemeMode()V
 
     :cond_0
     iput p2, p0, Lcom/android/server/UiModeManagerService;->mCarModeEnableFlags:I

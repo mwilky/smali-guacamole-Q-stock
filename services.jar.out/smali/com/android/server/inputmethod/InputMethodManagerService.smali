@@ -233,6 +233,8 @@
 
 .field mIsInteractive:Z
 
+.field private mIsKeyguardPackage:Z
+
 .field private final mIsLowRam:Z
 
 .field private mKeyguardManager:Landroid/app/KeyguardManager;
@@ -7096,6 +7098,16 @@
 
     if-nez v2, :cond_1
 
+    iget-boolean v2, p0, Lcom/android/server/inputmethod/InputMethodManagerService;->mIsKeyguardPackage:Z
+
+    if-nez v2, :cond_1
+
+    const-string v2, "InputMethodManagerService"
+
+    const-string/jumbo v3, "updateSystemUiLocked: set vis to 0."
+
+    invoke-static {v2, v3}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+
     const/4 p1, 0x0
 
     :cond_1
@@ -7138,9 +7150,9 @@
 
     const/4 v6, 0x0
 
-    if-eqz v3, :cond_4
+    if-eqz v3, :cond_5
 
-    if-eqz v2, :cond_4
+    if-eqz v2, :cond_5
 
     iget-object v7, p0, Lcom/android/server/inputmethod/InputMethodManagerService;->mRes:Landroid/content/res/Resources;
 
@@ -7177,7 +7189,7 @@
     :try_start_1
     iget-object v9, p0, Lcom/android/server/inputmethod/InputMethodManagerService;->mNotificationManager:Landroid/app/NotificationManager;
 
-    if-eqz v9, :cond_3
+    if-eqz v9, :cond_4
 
     iget-object v9, p0, Lcom/android/server/inputmethod/InputMethodManagerService;->mIWindowManager:Landroid/view/IWindowManager;
 
@@ -7185,8 +7197,25 @@
 
     move-result v4
 
-    if-nez v4, :cond_3
+    if-eqz v4, :cond_3
 
+    iget-object v4, p0, Lcom/android/server/inputmethod/InputMethodManagerService;->mContext:Landroid/content/Context;
+
+    invoke-virtual {v4}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v4
+
+    invoke-virtual {v4}, Landroid/content/res/Resources;->getConfiguration()Landroid/content/res/Configuration;
+
+    move-result-object v4
+
+    iget v4, v4, Landroid/content/res/Configuration;->orientation:I
+
+    const/4 v9, 0x2
+
+    if-ne v4, v9, :cond_4
+
+    :cond_3
     iget-object v4, p0, Lcom/android/server/inputmethod/InputMethodManagerService;->mNotificationManager:Landroid/app/NotificationManager;
 
     iget-object v9, p0, Lcom/android/server/inputmethod/InputMethodManagerService;->mImeSwitcherNotification:Landroid/app/Notification$Builder;
@@ -7206,7 +7235,7 @@
     .catch Landroid/os/RemoteException; {:try_start_1 .. :try_end_1} :catch_0
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    :cond_3
+    :cond_4
     goto :goto_0
 
     :catch_0
@@ -7215,15 +7244,15 @@
     :goto_0
     goto :goto_1
 
-    :cond_4
+    :cond_5
     :try_start_2
     iget-boolean v7, p0, Lcom/android/server/inputmethod/InputMethodManagerService;->mNotificationShown:Z
 
-    if-eqz v7, :cond_5
+    if-eqz v7, :cond_6
 
     iget-object v7, p0, Lcom/android/server/inputmethod/InputMethodManagerService;->mNotificationManager:Landroid/app/NotificationManager;
 
-    if-eqz v7, :cond_5
+    if-eqz v7, :cond_6
 
     iget-object v7, p0, Lcom/android/server/inputmethod/InputMethodManagerService;->mNotificationManager:Landroid/app/NotificationManager;
 
@@ -7235,7 +7264,7 @@
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
-    :cond_5
+    :cond_6
     :goto_1
     invoke-static {v0, v1}, Landroid/os/Binder;->restoreCallingIdentity(J)V
 
@@ -12575,7 +12604,7 @@
     throw v0
 .end method
 
-.method public showSoftInput(Lcom/android/internal/view/IInputMethodClient;ILandroid/os/ResultReceiver;)Z
+.method public showSoftInput(Lcom/android/internal/view/IInputMethodClient;ILandroid/os/ResultReceiver;Ljava/lang/String;)Z
     .locals 10
 
     invoke-static {}, Landroid/os/Binder;->getCallingUid()I
@@ -12695,6 +12724,32 @@
 
     :cond_2
     :try_start_3
+    const-string v2, "InputMethodManagerService"
+
+    new-instance v3, Ljava/lang/StringBuilder;
+
+    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v6, "showSoftInput: package= "
+
+    invoke-virtual {v3, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v3, p4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-static {v2, v3}, Landroid/util/Slog;->v(Ljava/lang/String;Ljava/lang/String;)I
+
+    const-string v2, "com.android.systemui"
+
+    invoke-virtual {v2, p4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v2
+
+    iput-boolean v2, p0, Lcom/android/server/inputmethod/InputMethodManagerService;->mIsKeyguardPackage:Z
+
     invoke-virtual {p0, p2, p3}, Lcom/android/server/inputmethod/InputMethodManagerService;->showCurrentInputLocked(ILandroid/os/ResultReceiver;)Z
 
     move-result v2
@@ -13692,7 +13747,7 @@
 
     iget-object v3, p0, Lcom/android/server/inputmethod/InputMethodManagerService;->mRes:Landroid/content/res/Resources;
 
-    const v4, 0x1110126
+    const v4, 0x1110128
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getBoolean(I)Z
 

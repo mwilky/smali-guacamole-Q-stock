@@ -58,6 +58,8 @@
 
 .field private static final DEBUG_OBB:Z = false
 
+.field private static final DEBUG_ONEPLUS:Z
+
 .field private static final EMULATE_FBE_SUPPORTED:Z = true
 
 .field private static final ENABLE_ISOLATED_STORAGE:Z
@@ -349,6 +351,10 @@
     move-result v0
 
     sput-boolean v0, Lcom/android/server/StorageManagerService;->LOCAL_LOGV:Z
+
+    sget-boolean v0, Landroid/os/Build;->DEBUG_ONEPLUS:Z
+
+    sput-boolean v0, Lcom/android/server/StorageManagerService;->DEBUG_ONEPLUS:Z
 
     const-string v0, "android.permission.READ_EXTERNAL_STORAGE"
 
@@ -1051,12 +1057,20 @@
 .method static synthetic access$4600()Z
     .locals 1
 
+    sget-boolean v0, Lcom/android/server/StorageManagerService;->DEBUG_ONEPLUS:Z
+
+    return v0
+.end method
+
+.method static synthetic access$4700()Z
+    .locals 1
+
     sget-boolean v0, Lcom/android/server/StorageManagerService;->ENABLE_ISOLATED_STORAGE:Z
 
     return v0
 .end method
 
-.method static synthetic access$4700(Lcom/android/server/StorageManagerService;ILjava/lang/String;)I
+.method static synthetic access$4800(Lcom/android/server/StorageManagerService;ILjava/lang/String;)I
     .locals 1
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/StorageManagerService;->getMountMode(ILjava/lang/String;)I
@@ -1066,20 +1080,12 @@
     return v0
 .end method
 
-.method static synthetic access$4800(Lcom/android/server/StorageManagerService;II)V
+.method static synthetic access$4900(Lcom/android/server/StorageManagerService;II)V
     .locals 0
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/StorageManagerService;->remountUidExternalStorage(II)V
 
     return-void
-.end method
-
-.method static synthetic access$4900(Lcom/android/server/StorageManagerService;)Ljava/util/Map;
-    .locals 1
-
-    iget-object v0, p0, Lcom/android/server/StorageManagerService;->mObbMounts:Ljava/util/Map;
-
-    return-object v0
 .end method
 
 .method static synthetic access$500(Lcom/android/server/StorageManagerService;I)V
@@ -1093,12 +1099,20 @@
 .method static synthetic access$5000(Lcom/android/server/StorageManagerService;)Ljava/util/Map;
     .locals 1
 
+    iget-object v0, p0, Lcom/android/server/StorageManagerService;->mObbMounts:Ljava/util/Map;
+
+    return-object v0
+.end method
+
+.method static synthetic access$5100(Lcom/android/server/StorageManagerService;)Ljava/util/Map;
+    .locals 1
+
     iget-object v0, p0, Lcom/android/server/StorageManagerService;->mObbPathToStateMap:Ljava/util/Map;
 
     return-object v0
 .end method
 
-.method static synthetic access$5100(Lcom/android/server/StorageManagerService;Lcom/android/server/StorageManagerService$ObbState;)V
+.method static synthetic access$5200(Lcom/android/server/StorageManagerService;Lcom/android/server/StorageManagerService$ObbState;)V
     .locals 0
 
     invoke-direct {p0, p1}, Lcom/android/server/StorageManagerService;->removeObbStateLocked(Lcom/android/server/StorageManagerService$ObbState;)V
@@ -1106,7 +1120,7 @@
     return-void
 .end method
 
-.method static synthetic access$5200(Lcom/android/server/StorageManagerService;)V
+.method static synthetic access$5300(Lcom/android/server/StorageManagerService;)V
     .locals 0
 
     invoke-direct {p0}, Lcom/android/server/StorageManagerService;->warnOnNotMounted()V
@@ -1114,7 +1128,7 @@
     return-void
 .end method
 
-.method static synthetic access$5300(Lcom/android/server/StorageManagerService;Ljava/lang/String;I)Z
+.method static synthetic access$5400(Lcom/android/server/StorageManagerService;Ljava/lang/String;I)Z
     .locals 1
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/StorageManagerService;->isUidOwnerOfPackageOrSystem(Ljava/lang/String;I)Z
@@ -1124,7 +1138,7 @@
     return v0
 .end method
 
-.method static synthetic access$5400(Lcom/android/server/StorageManagerService;Lcom/android/server/StorageManagerService$ObbState;)V
+.method static synthetic access$5500(Lcom/android/server/StorageManagerService;Lcom/android/server/StorageManagerService$ObbState;)V
     .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -1137,7 +1151,7 @@
     return-void
 .end method
 
-.method static synthetic access$5500(Lcom/android/server/StorageManagerService;)Landroid/content/pm/IPackageManager;
+.method static synthetic access$5600(Lcom/android/server/StorageManagerService;)Landroid/content/pm/IPackageManager;
     .locals 1
 
     iget-object v0, p0, Lcom/android/server/StorageManagerService;->mIPackageManager:Landroid/content/pm/IPackageManager;
@@ -9450,11 +9464,29 @@
 .method public openProxyFileDescriptor(III)Landroid/os/ParcelFileDescriptor;
     .locals 4
 
-    const-string v0, "StorageManagerService"
+    new-instance v0, Ljava/lang/StringBuilder;
 
-    const-string/jumbo v1, "mountProxyFileDescriptor"
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    invoke-static {v0, v1}, Landroid/util/Slog;->v(Ljava/lang/String;Ljava/lang/String;)I
+    const-string/jumbo v1, "openProxyFileDescriptor: mountId = "
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    const-string v1, ", fileId = "
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0, p2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    const-string v1, "StorageManagerService"
+
+    invoke-static {v1, v0}, Landroid/util/Slog;->v(Ljava/lang/String;Ljava/lang/String;)I
 
     const/high16 v0, 0x30000000
 

@@ -5432,6 +5432,12 @@
 
     move-result-object v1
 
+    invoke-virtual {v1}, Lcom/android/server/wm/DisplayContent;->updateDisplayInfo()V
+
+    invoke-virtual {p0}, Lcom/android/server/wm/WindowManagerService;->getDefaultDisplayContentLocked()Lcom/android/server/wm/DisplayContent;
+
+    move-result-object v1
+
     invoke-virtual {v1}, Lcom/android/server/wm/DisplayContent;->getDisplayPolicy()Lcom/android/server/wm/DisplayPolicy;
 
     move-result-object v1
@@ -17148,7 +17154,7 @@
 .end method
 
 .method public relayoutWindow(Lcom/android/server/wm/Session;Landroid/view/IWindow;ILandroid/view/WindowManager$LayoutParams;IIIIJLandroid/graphics/Rect;Landroid/graphics/Rect;Landroid/graphics/Rect;Landroid/graphics/Rect;Landroid/graphics/Rect;Landroid/graphics/Rect;Landroid/graphics/Rect;Landroid/view/DisplayCutout$ParcelableWrapper;Landroid/util/MergedConfiguration;Landroid/view/SurfaceControl;Landroid/view/InsetsState;)I
-    .locals 37
+    .locals 38
 
     move-object/from16 v1, p0
 
@@ -17327,7 +17333,9 @@
 
     const/4 v8, 0x0
 
-    move/from16 v18, v8
+    const/16 v18, 0x0
+
+    move/from16 v19, v8
 
     if-eqz v3, :cond_f
 
@@ -17336,7 +17344,7 @@
     :try_start_7
     invoke-virtual {v8, v7, v3, v11, v12}, Lcom/android/server/wm/DisplayPolicy;->adjustWindowParamsLw(Lcom/android/server/wm/WindowState;Landroid/view/WindowManager$LayoutParams;II)V
 
-    move/from16 v19, v0
+    move/from16 v20, v0
 
     iget v0, v7, Lcom/android/server/wm/WindowState;->mSeq:I
     :try_end_7
@@ -17450,6 +17458,14 @@
 
     iget-object v11, v7, Lcom/android/server/wm/WindowState;->mAttrs:Landroid/view/WindowManager$LayoutParams;
 
+    iget v11, v11, Landroid/view/WindowManager$LayoutParams;->privateFlags:I
+
+    iget v14, v3, Landroid/view/WindowManager$LayoutParams;->privateFlags:I
+
+    xor-int v18, v11, v14
+
+    iget-object v11, v7, Lcom/android/server/wm/WindowState;->mAttrs:Landroid/view/WindowManager$LayoutParams;
+
     invoke-virtual {v11, v3}, Landroid/view/WindowManager$LayoutParams;->copyFrom(Landroid/view/WindowManager$LayoutParams;)I
 
     move-result v11
@@ -17465,11 +17481,11 @@
     :cond_6
     iget-object v14, v7, Lcom/android/server/wm/WindowState;->mAppToken:Lcom/android/server/wm/AppWindowToken;
 
-    const/high16 v18, 0x80000
+    const/high16 v19, 0x80000
 
     if-eqz v14, :cond_8
 
-    and-int v14, v0, v18
+    and-int v14, v0, v19
 
     if-nez v14, :cond_7
 
@@ -17517,7 +17533,7 @@
     invoke-virtual {v14}, Lcom/android/server/wm/AccessibilityController;->onSomeWindowResizedOrMovedLocked()V
 
     :cond_a
-    and-int v14, v0, v18
+    and-int v14, v18, v19
 
     if-eqz v14, :cond_b
 
@@ -17540,9 +17556,9 @@
 
     iget v14, v14, Landroid/view/WindowManager$LayoutParams;->privateFlags:I
 
-    const/high16 v18, 0x1000000
+    const/high16 v19, 0x1000000
 
-    and-int v14, v14, v18
+    and-int v14, v14, v19
 
     if-eqz v14, :cond_c
 
@@ -17554,7 +17570,7 @@
     const/4 v14, 0x0
 
     :goto_1
-    move/from16 v18, v11
+    move/from16 v19, v11
 
     move-object/from16 v11, v25
 
@@ -17563,14 +17579,16 @@
     goto :goto_2
 
     :cond_d
-    move/from16 v18, v11
+    move/from16 v19, v11
 
     move-object/from16 v11, v25
 
     :goto_2
     move/from16 v25, v12
 
-    move/from16 v14, v18
+    move/from16 v30, v18
+
+    move/from16 v14, v19
 
     move v12, v0
 
@@ -17630,7 +17648,7 @@
     :cond_f
     move/from16 v13, p3
 
-    move/from16 v19, v0
+    move/from16 v20, v0
 
     move-object/from16 v8, v24
 
@@ -17640,9 +17658,11 @@
 
     move/from16 v25, v12
 
-    move/from16 v12, v18
+    move/from16 v30, v18
 
-    move/from16 v14, v19
+    move/from16 v12, v19
+
+    move/from16 v14, v20
 
     :goto_4
     :try_start_d
@@ -17656,7 +17676,7 @@
 
     invoke-direct {v13}, Ljava/lang/StringBuilder;-><init>()V
 
-    move-object/from16 v30, v8
+    move-object/from16 v31, v8
 
     const-string v8, "Relayout "
 
@@ -17699,7 +17719,7 @@
     goto :goto_5
 
     :cond_10
-    move-object/from16 v30, v8
+    move-object/from16 v31, v8
 
     :goto_5
     and-int/lit8 v0, p8, 0x2
@@ -17872,7 +17892,7 @@
     :goto_d
     or-int v3, v3, v19
 
-    move/from16 v31, v13
+    move/from16 v32, v13
 
     and-int/lit16 v13, v12, 0x2000
 
@@ -17884,7 +17904,7 @@
 
     iget-object v13, v11, Lcom/android/server/wm/WindowStateAnimator;->mSurfaceController:Lcom/android/server/wm/WindowSurfaceController;
 
-    move/from16 v32, v12
+    move/from16 v33, v12
 
     invoke-virtual {v1, v7}, Lcom/android/server/wm/WindowManagerService;->isSecureLocked(Lcom/android/server/wm/WindowState;)Z
 
@@ -17895,7 +17915,7 @@
     goto :goto_e
 
     :cond_1d
-    move/from16 v32, v12
+    move/from16 v33, v12
 
     :goto_e
     const/4 v12, 0x1
@@ -18462,7 +18482,7 @@
 
     invoke-direct {v9}, Ljava/lang/StringBuilder;-><init>()V
 
-    move/from16 v33, v3
+    move/from16 v34, v3
 
     const-string v3, "relayoutWindow: performSurfacePlacement again if FLAG_DIM_BEHIND "
 
@@ -18475,7 +18495,7 @@
     :try_start_17
     invoke-virtual {v9, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    move/from16 v34, v5
+    move/from16 v35, v5
 
     const-string v5, "x"
 
@@ -18502,9 +18522,9 @@
     goto :goto_19
 
     :cond_30
-    move/from16 v33, v3
+    move/from16 v34, v3
 
-    move/from16 v34, v5
+    move/from16 v35, v5
 
     move/from16 v3, p5
 
@@ -18530,9 +18550,9 @@
     goto/16 :goto_25
 
     :cond_31
-    move/from16 v33, v3
+    move/from16 v34, v3
 
-    move/from16 v34, v5
+    move/from16 v35, v5
 
     const/4 v9, 0x1
 
@@ -18553,11 +18573,11 @@
 
     iget-object v9, v12, Lcom/android/server/wm/DisplayContent;->mWallpaperController:Lcom/android/server/wm/WallpaperController;
 
-    move/from16 v35, v13
+    move/from16 v36, v13
 
     iget v13, v8, Landroid/view/DisplayInfo;->logicalWidth:I
 
-    move/from16 v36, v14
+    move/from16 v37, v14
 
     iget v14, v8, Landroid/view/DisplayInfo;->logicalHeight:I
 
@@ -18570,9 +18590,9 @@
     goto :goto_1b
 
     :cond_32
-    move/from16 v35, v13
+    move/from16 v36, v13
 
-    move/from16 v36, v14
+    move/from16 v37, v14
 
     :goto_1b
     iget-object v8, v7, Lcom/android/server/wm/WindowState;->mAppToken:Lcom/android/server/wm/AppWindowToken;
@@ -18597,7 +18617,7 @@
     move v10, v8
 
     :cond_34
-    move-object/from16 v8, v30
+    move-object/from16 v8, v31
 
     invoke-virtual {v8, v7}, Lcom/android/server/wm/DisplayPolicy;->areSystemBarsForcedShownLw(Lcom/android/server/wm/WindowState;)Z
 
@@ -18718,7 +18738,7 @@
 
     invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
 
-    move-object/from16 v30, v8
+    move-object/from16 v31, v8
 
     const-string v8, "Relayout given client "
 
@@ -18774,7 +18794,7 @@
     goto :goto_1e
 
     :cond_38
-    move-object/from16 v30, v8
+    move-object/from16 v31, v8
 
     move-object/from16 v8, p20
 
@@ -18974,7 +18994,7 @@
 
     invoke-virtual {v14, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move/from16 v5, v33
+    move/from16 v5, v34
 
     invoke-virtual {v14, v5}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -19021,7 +19041,7 @@
     :cond_40
     move/from16 v17, v0
 
-    move/from16 v5, v33
+    move/from16 v5, v34
 
     :goto_23
     monitor-exit v15
@@ -19088,7 +19108,7 @@
 
     move/from16 v16, v4
 
-    move/from16 v34, v5
+    move/from16 v35, v5
 
     move v5, v8
 
@@ -24816,6 +24836,8 @@
 
     if-eqz v0, :cond_a
 
+    invoke-static {}, Lcom/android/server/wm/OpScreenModeServiceInjector;->doScreenRotation()V
+
     iput p1, p0, Lcom/android/server/wm/WindowManagerService;->mExitAnimId:I
 
     iput p2, p0, Lcom/android/server/wm/WindowManagerService;->mEnterAnimId:I
@@ -26464,6 +26486,12 @@
     xor-int/lit8 v0, v0, 0x1
 
     if-eqz p2, :cond_1
+
+    invoke-virtual {p1}, Lcom/android/server/wm/WindowState;->hideNonSystemOverlayWindowsWhenVisible()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_1
 
     iget-object v1, p0, Lcom/android/server/wm/WindowManagerService;->mHidingNonSystemOverlayWindows:Ljava/util/ArrayList;
 

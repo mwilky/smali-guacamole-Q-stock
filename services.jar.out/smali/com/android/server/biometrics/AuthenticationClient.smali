@@ -486,6 +486,8 @@
     goto :goto_1
 
     :cond_5
+    invoke-virtual {p0}, Lcom/android/server/biometrics/AuthenticationClient;->notifyFodAuthenticatedSuccess()V
+
     invoke-virtual {p0}, Lcom/android/server/biometrics/AuthenticationClient;->isBiometricPrompt()Z
 
     move-result v3
@@ -697,6 +699,8 @@
     goto :goto_5
 
     :cond_e
+    invoke-virtual {p0}, Lcom/android/server/biometrics/AuthenticationClient;->notifyFodAuthenticatedFailed()V
+
     if-eqz v1, :cond_10
 
     invoke-virtual {p0}, Lcom/android/server/biometrics/AuthenticationClient;->isBiometricPrompt()Z

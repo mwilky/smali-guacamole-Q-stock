@@ -6,6 +6,8 @@
 # static fields
 .field public static final DEBUG:Z
 
+.field private static final sIgnoreVendorList:[I
+
 
 # instance fields
 .field private final FINGERPRINT_ACQUIRED_VENDOR_DUPLICATED_FINGERPRINT:I
@@ -29,11 +31,23 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 1
+    .locals 3
 
     sget-boolean v0, Landroid/os/Build;->DEBUG_ONEPLUS:Z
 
     sput-boolean v0, Lcom/android/server/biometrics/OpClientMonitor;->DEBUG:Z
+
+    const/4 v0, 0x1
+
+    new-array v0, v0, [I
+
+    const/4 v1, 0x0
+
+    const/16 v2, 0x65
+
+    aput v2, v0, v1
+
+    sput-object v0, Lcom/android/server/biometrics/OpClientMonitor;->sIgnoreVendorList:[I
 
     return-void
 .end method
@@ -313,18 +327,270 @@
 
 # virtual methods
 .method public destroy()V
-    .locals 3
+    .locals 1
 
     invoke-super {p0}, Lcom/android/server/biometrics/ClientMonitor;->destroy()V
+
+    const-string v0, "fp client destroy"
+
+    invoke-virtual {p0, v0}, Lcom/android/server/biometrics/OpClientMonitor;->notifyFodHide(Ljava/lang/String;)V
+
+    return-void
+.end method
+
+.method public getAcquireVendorIgnorelist()[I
+    .locals 1
+
+    iget-boolean v0, p0, Lcom/android/server/biometrics/OpClientMonitor;->IS_SUPPORT_CUSTOM_FINGERPRINT:Z
+
+    if-eqz v0, :cond_0
+
+    sget-object v0, Lcom/android/server/biometrics/OpClientMonitor;->sIgnoreVendorList:[I
+
+    return-object v0
+
+    :cond_0
+    invoke-super {p0}, Lcom/android/server/biometrics/ClientMonitor;->getAcquireVendorIgnorelist()[I
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method protected isInteractive()Z
+    .locals 1
+
+    iget-object v0, p0, Lcom/android/server/biometrics/OpClientMonitor;->mPm:Landroid/os/PowerManager;
+
+    invoke-virtual {v0}, Landroid/os/PowerManager;->isInteractive()Z
+
+    move-result v0
+
+    return v0
+.end method
+
+.method protected notifyFodAcquired(II)V
+    .locals 3
+
+    iget-boolean v0, p0, Lcom/android/server/biometrics/OpClientMonitor;->IS_SUPPORT_CUSTOM_FINGERPRINT:Z
+
+    if-eqz v0, :cond_1
+
+    :try_start_0
+    iget-object v0, p0, Lcom/android/server/biometrics/OpClientMonitor;->mStatusBarService:Lcom/android/internal/statusbar/IStatusBarService;
+
+    if-eqz v0, :cond_0
+
+    invoke-virtual {p0, p1, p2}, Lcom/android/server/biometrics/OpClientMonitor;->blacklistContains(II)Z
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    iget-object v0, p0, Lcom/android/server/biometrics/OpClientMonitor;->mStatusBarService:Lcom/android/internal/statusbar/IStatusBarService;
+
+    invoke-interface {v0, p1, p2}, Lcom/android/internal/statusbar/IStatusBarService;->onFingerprintAcquired(II)V
+    :try_end_0
+    .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
+
+    :cond_0
+    goto :goto_0
+
+    :catch_0
+    move-exception v0
+
+    invoke-virtual {p0}, Lcom/android/server/biometrics/OpClientMonitor;->getLogTag()Ljava/lang/String;
+
+    move-result-object v1
+
+    const-string/jumbo v2, "notifyFodAcquired error occur"
+
+    invoke-static {v1, v2, v0}, Landroid/util/Slog;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
+
+    :cond_1
+    :goto_0
+    return-void
+.end method
+
+.method protected notifyFodAuthenticatedFailed()V
+    .locals 3
+
+    iget-boolean v0, p0, Lcom/android/server/biometrics/OpClientMonitor;->IS_SUPPORT_CUSTOM_FINGERPRINT:Z
+
+    if-eqz v0, :cond_1
+
+    :try_start_0
+    iget-object v0, p0, Lcom/android/server/biometrics/OpClientMonitor;->mStatusBarService:Lcom/android/internal/statusbar/IStatusBarService;
+
+    if-eqz v0, :cond_0
+
+    iget-object v0, p0, Lcom/android/server/biometrics/OpClientMonitor;->mStatusBarService:Lcom/android/internal/statusbar/IStatusBarService;
+
+    invoke-interface {v0}, Lcom/android/internal/statusbar/IStatusBarService;->onFingerprintAuthenticatedFailed()V
+    :try_end_0
+    .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
+
+    :cond_0
+    goto :goto_0
+
+    :catch_0
+    move-exception v0
+
+    invoke-virtual {p0}, Lcom/android/server/biometrics/OpClientMonitor;->getLogTag()Ljava/lang/String;
+
+    move-result-object v1
+
+    const-string/jumbo v2, "notifyFodAuthenticatedFailed error occur"
+
+    invoke-static {v1, v2, v0}, Landroid/util/Slog;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
+
+    :cond_1
+    :goto_0
+    return-void
+.end method
+
+.method protected notifyFodAuthenticatedSuccess()V
+    .locals 3
+
+    iget-boolean v0, p0, Lcom/android/server/biometrics/OpClientMonitor;->IS_SUPPORT_CUSTOM_FINGERPRINT:Z
+
+    if-eqz v0, :cond_1
+
+    :try_start_0
+    iget-object v0, p0, Lcom/android/server/biometrics/OpClientMonitor;->mStatusBarService:Lcom/android/internal/statusbar/IStatusBarService;
+
+    if-eqz v0, :cond_0
+
+    iget-object v0, p0, Lcom/android/server/biometrics/OpClientMonitor;->mStatusBarService:Lcom/android/internal/statusbar/IStatusBarService;
+
+    invoke-interface {v0}, Lcom/android/internal/statusbar/IStatusBarService;->onFingerprintAuthenticatedSuccess()V
+    :try_end_0
+    .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
+
+    :cond_0
+    goto :goto_0
+
+    :catch_0
+    move-exception v0
+
+    invoke-virtual {p0}, Lcom/android/server/biometrics/OpClientMonitor;->getLogTag()Ljava/lang/String;
+
+    move-result-object v1
+
+    const-string/jumbo v2, "notifyFodAuthenticatedSuccess error occur"
+
+    invoke-static {v1, v2, v0}, Landroid/util/Slog;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
+
+    :cond_1
+    :goto_0
+    return-void
+.end method
+
+.method protected notifyFodEnrollResult(I)V
+    .locals 3
+
+    iget-boolean v0, p0, Lcom/android/server/biometrics/OpClientMonitor;->IS_SUPPORT_CUSTOM_FINGERPRINT:Z
+
+    if-eqz v0, :cond_1
+
+    :try_start_0
+    iget-object v0, p0, Lcom/android/server/biometrics/OpClientMonitor;->mStatusBarService:Lcom/android/internal/statusbar/IStatusBarService;
+
+    if-eqz v0, :cond_0
+
+    iget-object v0, p0, Lcom/android/server/biometrics/OpClientMonitor;->mStatusBarService:Lcom/android/internal/statusbar/IStatusBarService;
+
+    invoke-interface {v0, p1}, Lcom/android/internal/statusbar/IStatusBarService;->onFingerprintEnrollResult(I)V
+    :try_end_0
+    .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
+
+    :cond_0
+    goto :goto_0
+
+    :catch_0
+    move-exception v0
+
+    invoke-virtual {p0}, Lcom/android/server/biometrics/OpClientMonitor;->getLogTag()Ljava/lang/String;
+
+    move-result-object v1
+
+    const-string/jumbo v2, "onFingerprintEnrollResult error occur"
+
+    invoke-static {v1, v2, v0}, Landroid/util/Slog;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
+
+    :cond_1
+    :goto_0
+    return-void
+.end method
+
+.method protected notifyFodError(I)V
+    .locals 3
+
+    iget-boolean v0, p0, Lcom/android/server/biometrics/OpClientMonitor;->IS_SUPPORT_CUSTOM_FINGERPRINT:Z
+
+    if-eqz v0, :cond_1
+
+    :try_start_0
+    iget-object v0, p0, Lcom/android/server/biometrics/OpClientMonitor;->mStatusBarService:Lcom/android/internal/statusbar/IStatusBarService;
+
+    if-eqz v0, :cond_0
+
+    iget-object v0, p0, Lcom/android/server/biometrics/OpClientMonitor;->mStatusBarService:Lcom/android/internal/statusbar/IStatusBarService;
+
+    invoke-interface {v0, p1}, Lcom/android/internal/statusbar/IStatusBarService;->onFingerprintError(I)V
+    :try_end_0
+    .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
+
+    :cond_0
+    goto :goto_0
+
+    :catch_0
+    move-exception v0
+
+    invoke-virtual {p0}, Lcom/android/server/biometrics/OpClientMonitor;->getLogTag()Ljava/lang/String;
+
+    move-result-object v1
+
+    const-string/jumbo v2, "onFingerprintError error occur"
+
+    invoke-static {v1, v2, v0}, Landroid/util/Slog;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
+
+    :cond_1
+    :goto_0
+    return-void
+.end method
+
+.method protected notifyFodHide(Ljava/lang/String;)V
+    .locals 1
+
+    const/4 v0, 0x0
+
+    invoke-virtual {p0, p1, v0}, Lcom/android/server/biometrics/OpClientMonitor;->notifyFodHide(Ljava/lang/String;Z)V
+
+    return-void
+.end method
+
+.method protected notifyFodHide(Ljava/lang/String;Z)V
+    .locals 3
 
     iget-boolean v0, p0, Lcom/android/server/biometrics/OpClientMonitor;->IS_SUPPORT_CUSTOM_FINGERPRINT:Z
 
     if-eqz v0, :cond_0
 
     :try_start_0
-    iget-object v0, p0, Lcom/android/server/biometrics/OpClientMonitor;->mStatusBarService:Lcom/android/internal/statusbar/IStatusBarService;
+    new-instance v0, Landroid/os/Bundle;
 
-    invoke-interface {v0}, Lcom/android/internal/statusbar/IStatusBarService;->hideBiometricDialog()V
+    invoke-direct {v0}, Landroid/os/Bundle;-><init>()V
+
+    invoke-virtual {p0, v0}, Lcom/android/server/biometrics/OpClientMonitor;->packFodBundle(Landroid/os/Bundle;)V
+
+    const-string/jumbo v1, "key_suspend"
+
+    invoke-virtual {v0, v1, p2}, Landroid/os/Bundle;->putBoolean(Ljava/lang/String;Z)V
+
+    iget-object v1, p0, Lcom/android/server/biometrics/OpClientMonitor;->mStatusBarService:Lcom/android/internal/statusbar/IStatusBarService;
+
+    invoke-interface {v1, v0, p1}, Lcom/android/internal/statusbar/IStatusBarService;->hideFodDialog(Landroid/os/Bundle;Ljava/lang/String;)V
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -344,16 +610,54 @@
     return-void
 .end method
 
-.method protected isInteractive()Z
+.method protected notifyFodShow(Ljava/lang/String;)V
     .locals 1
 
-    iget-object v0, p0, Lcom/android/server/biometrics/OpClientMonitor;->mPm:Landroid/os/PowerManager;
+    const/4 v0, 0x0
 
-    invoke-virtual {v0}, Landroid/os/PowerManager;->isInteractive()Z
+    invoke-virtual {p0, p1, v0}, Lcom/android/server/biometrics/OpClientMonitor;->notifyFodShow(Ljava/lang/String;Z)V
 
-    move-result v0
+    return-void
+.end method
 
-    return v0
+.method protected notifyFodShow(Ljava/lang/String;Z)V
+    .locals 3
+
+    iget-boolean v0, p0, Lcom/android/server/biometrics/OpClientMonitor;->IS_SUPPORT_CUSTOM_FINGERPRINT:Z
+
+    if-eqz v0, :cond_0
+
+    :try_start_0
+    new-instance v0, Landroid/os/Bundle;
+
+    invoke-direct {v0}, Landroid/os/Bundle;-><init>()V
+
+    invoke-virtual {p0, v0}, Lcom/android/server/biometrics/OpClientMonitor;->packFodBundle(Landroid/os/Bundle;)V
+
+    const-string/jumbo v1, "key_resume"
+
+    invoke-virtual {v0, v1, p2}, Landroid/os/Bundle;->putBoolean(Ljava/lang/String;Z)V
+
+    iget-object v1, p0, Lcom/android/server/biometrics/OpClientMonitor;->mStatusBarService:Lcom/android/internal/statusbar/IStatusBarService;
+
+    invoke-interface {v1, v0, p1}, Lcom/android/internal/statusbar/IStatusBarService;->showFodDialog(Landroid/os/Bundle;Ljava/lang/String;)V
+    :try_end_0
+    .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
+
+    goto :goto_0
+
+    :catch_0
+    move-exception v0
+
+    const-string v1, "BiometricStats"
+
+    const-string v2, "Unable to show fingerprint dialog"
+
+    invoke-static {v1, v2, v0}, Landroid/util/Slog;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
+
+    :cond_0
+    :goto_0
+    return-void
 .end method
 
 .method protected notifySurfaceFlinger()V
@@ -468,6 +772,8 @@
     instance-of v1, p0, Lcom/android/server/biometrics/AuthenticationClient;
 
     if-nez v1, :cond_2
+
+    invoke-virtual {p0, p1, p2}, Lcom/android/server/biometrics/OpClientMonitor;->notifyFodAcquired(II)V
 
     invoke-super {p0, p1, p2}, Lcom/android/server/biometrics/ClientMonitor;->onAcquired(II)Z
 
@@ -650,6 +956,8 @@
     goto :goto_2
 
     :cond_d
+    invoke-virtual {p0, p1, p2}, Lcom/android/server/biometrics/OpClientMonitor;->notifyFodAcquired(II)V
+
     invoke-super {p0, p1, p2}, Lcom/android/server/biometrics/ClientMonitor;->onAcquired(II)Z
 
     move-result v0
@@ -792,57 +1100,60 @@
     return v0
 .end method
 
-.method public resume()V
-    .locals 7
+.method public onError(JII)Z
+    .locals 1
 
-    iget-boolean v0, p0, Lcom/android/server/biometrics/OpClientMonitor;->IS_SUPPORT_CUSTOM_FINGERPRINT:Z
+    invoke-virtual {p0, p3}, Lcom/android/server/biometrics/OpClientMonitor;->notifyFodError(I)V
 
-    if-eqz v0, :cond_0
+    invoke-super {p0, p1, p2, p3, p4}, Lcom/android/server/biometrics/ClientMonitor;->onError(JII)Z
 
-    :try_start_0
-    new-instance v0, Landroid/os/Bundle;
+    move-result v0
 
-    invoke-direct {v0}, Landroid/os/Bundle;-><init>()V
+    return v0
+.end method
+
+.method protected packFodBundle(Landroid/os/Bundle;)V
+    .locals 2
+
+    if-nez p1, :cond_0
+
+    return-void
+
+    :cond_0
+    invoke-virtual {p0}, Lcom/android/server/biometrics/OpClientMonitor;->getOwnerString()Ljava/lang/String;
+
+    move-result-object v0
 
     const-string/jumbo v1, "key_fingerprint_package_name"
 
-    invoke-virtual {p0}, Lcom/android/server/biometrics/OpClientMonitor;->getOwnerString()Ljava/lang/String;
+    invoke-virtual {p1, v1, v0}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
-    move-result-object v2
+    invoke-virtual {p0}, Lcom/android/server/biometrics/OpClientMonitor;->getCookie()I
 
-    invoke-virtual {v0, v1, v2}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
+    move-result v0
 
-    iget-object v1, p0, Lcom/android/server/biometrics/OpClientMonitor;->mStatusBarService:Lcom/android/internal/statusbar/IStatusBarService;
+    const-string/jumbo v1, "key_cookie"
 
-    const/4 v3, 0x0
+    invoke-virtual {p1, v1, v0}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
 
-    const/4 v4, 0x1
+    instance-of v0, p0, Lcom/android/server/biometrics/EnrollClient;
 
-    const/4 v5, 0x1
+    const-string/jumbo v1, "key_enroll"
 
-    invoke-virtual {p0}, Lcom/android/server/biometrics/OpClientMonitor;->getTargetUserId()I
+    invoke-virtual {p1, v1, v0}, Landroid/os/Bundle;->putBoolean(Ljava/lang/String;Z)V
 
-    move-result v6
+    return-void
+.end method
 
-    move-object v2, v0
+.method public resume()V
+    .locals 2
 
-    invoke-interface/range {v1 .. v6}, Lcom/android/internal/statusbar/IStatusBarService;->showBiometricDialog(Landroid/os/Bundle;Landroid/hardware/biometrics/IBiometricServiceReceiverInternal;IZI)V
-    :try_end_0
-    .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
+    const-string v0, "fp client resume"
 
-    goto :goto_0
+    const/4 v1, 0x1
 
-    :catch_0
-    move-exception v0
+    invoke-virtual {p0, v0, v1}, Lcom/android/server/biometrics/OpClientMonitor;->notifyFodShow(Ljava/lang/String;Z)V
 
-    const-string v1, "BiometricStats"
-
-    const-string v2, "Unable to show fingerprint dialog"
-
-    invoke-static {v1, v2, v0}, Landroid/util/Slog;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
-
-    :cond_0
-    :goto_0
     return-void
 .end method
 
@@ -892,131 +1203,51 @@
     invoke-static {v0, v1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     :goto_0
+    invoke-virtual {p0, p1}, Lcom/android/server/biometrics/OpClientMonitor;->notifyFodEnrollResult(I)V
+
     return-void
 .end method
 
 .method public start()I
-    .locals 7
+    .locals 2
 
-    iget-boolean v0, p0, Lcom/android/server/biometrics/OpClientMonitor;->IS_SUPPORT_CUSTOM_FINGERPRINT:Z
+    const-string v0, "fp client start"
 
-    if-eqz v0, :cond_0
+    invoke-virtual {p0, v0}, Lcom/android/server/biometrics/OpClientMonitor;->notifyFodShow(Ljava/lang/String;)V
 
-    :try_start_0
-    new-instance v0, Landroid/os/Bundle;
-
-    invoke-direct {v0}, Landroid/os/Bundle;-><init>()V
-
-    const-string/jumbo v1, "key_fingerprint_package_name"
-
-    invoke-virtual {p0}, Lcom/android/server/biometrics/OpClientMonitor;->getOwnerString()Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-virtual {v0, v1, v2}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
-
-    iget-object v1, p0, Lcom/android/server/biometrics/OpClientMonitor;->mStatusBarService:Lcom/android/internal/statusbar/IStatusBarService;
-
-    const/4 v3, 0x0
-
-    const/4 v4, 0x1
-
-    const/4 v5, 0x1
-
-    invoke-virtual {p0}, Lcom/android/server/biometrics/OpClientMonitor;->getTargetUserId()I
-
-    move-result v6
-
-    move-object v2, v0
-
-    invoke-interface/range {v1 .. v6}, Lcom/android/internal/statusbar/IStatusBarService;->showBiometricDialog(Landroid/os/Bundle;Landroid/hardware/biometrics/IBiometricServiceReceiverInternal;IZI)V
-    :try_end_0
-    .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
-
-    goto :goto_0
-
-    :catch_0
-    move-exception v0
-
-    const-string v1, "BiometricStats"
-
-    const-string v2, "Unable to show fingerprint dialog"
-
-    invoke-static {v1, v2, v0}, Landroid/util/Slog;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
-
-    :cond_0
-    :goto_0
     instance-of v0, p0, Lcom/android/server/biometrics/EnrollClient;
 
     const/4 v1, 0x0
 
-    if-eqz v0, :cond_1
+    if-eqz v0, :cond_0
 
     iput v1, p0, Lcom/android/server/biometrics/OpClientMonitor;->mEnrollRemain:I
 
-    :cond_1
+    :cond_0
     return v1
 .end method
 
 .method public stop(Z)I
-    .locals 3
+    .locals 1
 
-    iget-boolean v0, p0, Lcom/android/server/biometrics/OpClientMonitor;->IS_SUPPORT_CUSTOM_FINGERPRINT:Z
+    const-string v0, "fp client stop"
 
-    if-eqz v0, :cond_0
+    invoke-virtual {p0, v0}, Lcom/android/server/biometrics/OpClientMonitor;->notifyFodHide(Ljava/lang/String;)V
 
-    :try_start_0
-    iget-object v0, p0, Lcom/android/server/biometrics/OpClientMonitor;->mStatusBarService:Lcom/android/internal/statusbar/IStatusBarService;
-
-    invoke-interface {v0}, Lcom/android/internal/statusbar/IStatusBarService;->hideBiometricDialog()V
-    :try_end_0
-    .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
-
-    goto :goto_0
-
-    :catch_0
-    move-exception v0
-
-    const-string v1, "BiometricStats"
-
-    const-string v2, "Unable to hide fingerprint dialog"
-
-    invoke-static {v1, v2, v0}, Landroid/util/Slog;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
-
-    :cond_0
-    :goto_0
     const/4 v0, 0x0
 
     return v0
 .end method
 
 .method public suspend()V
-    .locals 3
+    .locals 2
 
-    iget-boolean v0, p0, Lcom/android/server/biometrics/OpClientMonitor;->IS_SUPPORT_CUSTOM_FINGERPRINT:Z
+    const-string v0, "fp client suspend"
 
-    if-eqz v0, :cond_0
+    const/4 v1, 0x1
 
-    :try_start_0
-    iget-object v0, p0, Lcom/android/server/biometrics/OpClientMonitor;->mStatusBarService:Lcom/android/internal/statusbar/IStatusBarService;
+    invoke-virtual {p0, v0, v1}, Lcom/android/server/biometrics/OpClientMonitor;->notifyFodHide(Ljava/lang/String;Z)V
 
-    invoke-interface {v0}, Lcom/android/internal/statusbar/IStatusBarService;->hideBiometricDialog()V
-    :try_end_0
-    .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
-
-    goto :goto_0
-
-    :catch_0
-    move-exception v0
-
-    const-string v1, "BiometricStats"
-
-    const-string v2, "Unable to hide fingerprint dialog"
-
-    invoke-static {v1, v2, v0}, Landroid/util/Slog;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
-
-    :cond_0
-    :goto_0
     return-void
 .end method
 

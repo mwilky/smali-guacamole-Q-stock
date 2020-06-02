@@ -2315,6 +2315,24 @@
 
     if-ne v7, v3, :cond_3
 
+    iget-object v7, p0, Lcom/android/server/biometrics/BiometricService;->mCurrentAuthSession:Lcom/android/server/biometrics/BiometricService$AuthSession;
+
+    iget-object v7, v7, Lcom/android/server/biometrics/BiometricService$AuthSession;->mBundle:Landroid/os/Bundle;
+
+    const-string/jumbo v8, "key_cookie"
+
+    invoke-interface {v6}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
+
+    move-result-object v9
+
+    check-cast v9, Ljava/lang/Integer;
+
+    invoke-virtual {v9}, Ljava/lang/Integer;->intValue()I
+
+    move-result v9
+
+    invoke-virtual {v7, v8, v9}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
+
     iget-object v7, p0, Lcom/android/server/biometrics/BiometricService;->mFingerprintService:Landroid/hardware/fingerprint/IFingerprintService;
 
     invoke-interface {v6}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
@@ -2415,7 +2433,7 @@
 
     or-int/2addr v4, v7
 
-    goto :goto_3
+    goto/16 :goto_3
 
     :cond_6
     if-nez v1, :cond_7

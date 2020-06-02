@@ -14,6 +14,8 @@
 # static fields
 .field public static DEBUG:Z = false
 
+.field private static final FEATURE_EXTREME_ENABLE:Z
+
 .field static final TAG:Ljava/lang/String; = "LightsService"
 
 .field private static mOIMCService:Lcom/oneplus/core/oimc/OIMCServiceManager;
@@ -35,11 +37,25 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 1
+    .locals 3
 
     const/4 v0, 0x0
 
     sput-boolean v0, Lcom/android/server/lights/LightsService;->DEBUG:Z
+
+    const/4 v1, 0x1
+
+    new-array v1, v1, [I
+
+    const/16 v2, 0xfe
+
+    aput v2, v1, v0
+
+    invoke-static {v1}, Landroid/util/OpFeatures;->isSupport([I)Z
+
+    move-result v0
+
+    sput-boolean v0, Lcom/android/server/lights/LightsService;->FEATURE_EXTREME_ENABLE:Z
 
     return-void
 .end method
@@ -120,7 +136,15 @@
     return v0
 .end method
 
-.method static synthetic access$300()Lcom/oneplus/core/oimc/OIMCServiceManager;
+.method static synthetic access$300()Z
+    .locals 1
+
+    sget-boolean v0, Lcom/android/server/lights/LightsService;->FEATURE_EXTREME_ENABLE:Z
+
+    return v0
+.end method
+
+.method static synthetic access$400()Lcom/oneplus/core/oimc/OIMCServiceManager;
     .locals 1
 
     sget-object v0, Lcom/android/server/lights/LightsService;->mOIMCService:Lcom/oneplus/core/oimc/OIMCServiceManager;

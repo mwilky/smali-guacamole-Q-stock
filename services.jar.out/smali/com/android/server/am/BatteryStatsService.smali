@@ -32,6 +32,10 @@
 
 .field private mDecoderStat:Ljava/nio/charset/CharsetDecoder;
 
+.field private mNoAutoReset:Z
+
+.field private mOpFeatrueCollectBatterystats:Z
+
 .field final mStats:Lcom/android/internal/os/BatteryStatsImpl;
 
 .field private final mUserManagerUserInfoProvider:Lcom/android/internal/os/BatteryStatsImpl$UserInfoProvider;
@@ -88,6 +92,24 @@
     move-result-object v0
 
     iput-object v0, p0, Lcom/android/server/am/BatteryStatsService;->mUtf16BufferStat:Ljava/nio/CharBuffer;
+
+    const/4 v0, 0x0
+
+    iput-boolean v0, p0, Lcom/android/server/am/BatteryStatsService;->mNoAutoReset:Z
+
+    const/4 v1, 0x1
+
+    new-array v1, v1, [I
+
+    const/16 v2, 0xff
+
+    aput v2, v1, v0
+
+    invoke-static {v1}, Landroid/util/OpFeatures;->isSupport([I)Z
+
+    move-result v0
+
+    iput-boolean v0, p0, Lcom/android/server/am/BatteryStatsService;->mOpFeatrueCollectBatterystats:Z
 
     iput-object p1, p0, Lcom/android/server/am/BatteryStatsService;->mContext:Landroid/content/Context;
 
@@ -291,6 +313,8 @@
     iget-object v1, p0, Lcom/android/server/am/BatteryStatsService;->mStats:Lcom/android/internal/os/BatteryStatsImpl;
 
     invoke-virtual {v1, p4}, Lcom/android/internal/os/BatteryStatsImpl;->setNoAutoReset(Z)V
+
+    iput-boolean p4, p0, Lcom/android/server/am/BatteryStatsService;->mNoAutoReset:Z
 
     monitor-exit v0
 
@@ -6019,25 +6043,51 @@
 .end method
 
 .method public setBatteryState(IIIIIIII)V
-    .locals 13
+    .locals 16
 
-    invoke-virtual {p0}, Lcom/android/server/am/BatteryStatsService;->enforceCallingPermission()V
+    move-object/from16 v10, p0
 
-    move-object v10, p0
+    invoke-virtual/range {p0 .. p0}, Lcom/android/server/am/BatteryStatsService;->enforceCallingPermission()V
 
-    iget-object v11, v10, Lcom/android/server/am/BatteryStatsService;->mWorker:Lcom/android/server/am/BatteryExternalStatsWorker;
+    iget-boolean v0, v10, Lcom/android/server/am/BatteryStatsService;->mOpFeatrueCollectBatterystats:Z
 
-    new-instance v12, Lcom/android/server/am/-$$Lambda$BatteryStatsService$ZxbqtJ7ozYmzYFkkNV3m_QRd0Sk;
+    if-eqz v0, :cond_0
 
-    move-object v0, v12
+    iget-object v0, v10, Lcom/android/server/am/BatteryStatsService;->mStats:Lcom/android/internal/os/BatteryStatsImpl;
 
-    move-object v1, p0
+    iget-boolean v1, v10, Lcom/android/server/am/BatteryStatsService;->mNoAutoReset:Z
+
+    move/from16 v11, p1
+
+    move/from16 v12, p3
+
+    move/from16 v13, p4
+
+    invoke-static {v0, v12, v11, v13, v1}, Lcom/android/server/am/OpBatteryStatsServiceInjector;->collectBatteryStats(Lcom/android/internal/os/BatteryStatsImpl;IIIZ)V
+
+    goto :goto_0
+
+    :cond_0
+    move/from16 v11, p1
+
+    move/from16 v12, p3
+
+    move/from16 v13, p4
+
+    :goto_0
+    iget-object v14, v10, Lcom/android/server/am/BatteryStatsService;->mWorker:Lcom/android/server/am/BatteryExternalStatsWorker;
+
+    new-instance v15, Lcom/android/server/am/-$$Lambda$BatteryStatsService$ZxbqtJ7ozYmzYFkkNV3m_QRd0Sk;
+
+    move-object v0, v15
+
+    move-object/from16 v1, p0
 
     move/from16 v2, p3
 
-    move v3, p1
+    move/from16 v3, p1
 
-    move v4, p2
+    move/from16 v4, p2
 
     move/from16 v5, p4
 
@@ -6051,7 +6101,7 @@
 
     invoke-direct/range {v0 .. v9}, Lcom/android/server/am/-$$Lambda$BatteryStatsService$ZxbqtJ7ozYmzYFkkNV3m_QRd0Sk;-><init>(Lcom/android/server/am/BatteryStatsService;IIIIIIII)V
 
-    invoke-virtual {v11, v12}, Lcom/android/server/am/BatteryExternalStatsWorker;->scheduleRunnable(Ljava/lang/Runnable;)V
+    invoke-virtual {v14, v15}, Lcom/android/server/am/BatteryExternalStatsWorker;->scheduleRunnable(Ljava/lang/Runnable;)V
 
     return-void
 .end method

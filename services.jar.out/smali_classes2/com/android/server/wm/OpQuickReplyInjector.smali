@@ -638,7 +638,7 @@
 .end method
 
 .method public static killApplicationProcess(Lcom/android/server/wm/ActivityTaskManagerService;Landroid/content/pm/ActivityInfo;)V
-    .locals 3
+    .locals 1
 
     invoke-static {}, Lcom/android/server/wm/OpQuickReplyInjector;->initInstance()V
 
@@ -646,47 +646,7 @@
 
     if-eqz v0, :cond_0
 
-    invoke-interface {v0}, Lcom/android/server/wm/IOpQuickReply;->isQuickReplyRunning()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    if-eqz p1, :cond_0
-
-    iget-object v0, p1, Landroid/content/pm/ActivityInfo;->applicationInfo:Landroid/content/pm/ApplicationInfo;
-
-    if-eqz v0, :cond_0
-
-    sget-object v0, Lcom/android/server/wm/OpQuickReplyInjector;->sOpQuickReply:Lcom/android/server/wm/IOpQuickReply;
-
-    iget-object v1, p1, Landroid/content/pm/ActivityInfo;->applicationInfo:Landroid/content/pm/ApplicationInfo;
-
-    iget-object v1, v1, Landroid/content/pm/ApplicationInfo;->packageName:Ljava/lang/String;
-
-    invoke-interface {v0, v1}, Lcom/android/server/wm/IOpQuickReply;->isQuickReplyIME(Ljava/lang/String;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    sget-object v0, Lcom/android/server/wm/OpQuickReplyInjector;->TAG:Ljava/lang/String;
-
-    const-string v1, "kill IME before start it"
-
-    invoke-static {v0, v1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    iget-object v0, p0, Lcom/android/server/wm/ActivityTaskManagerService;->mService:Lcom/android/server/am/ActivityManagerService;
-
-    iget-object v1, p1, Landroid/content/pm/ActivityInfo;->applicationInfo:Landroid/content/pm/ApplicationInfo;
-
-    iget-object v1, v1, Landroid/content/pm/ApplicationInfo;->packageName:Ljava/lang/String;
-
-    iget-object v2, p1, Landroid/content/pm/ActivityInfo;->applicationInfo:Landroid/content/pm/ApplicationInfo;
-
-    iget v2, v2, Landroid/content/pm/ApplicationInfo;->uid:I
-
-    invoke-virtual {v0, v1, v2}, Lcom/android/server/am/ActivityManagerService;->killApplicationProcess(Ljava/lang/String;I)V
+    invoke-interface {v0, p0, p1}, Lcom/android/server/wm/IOpQuickReply;->killApplicationProcess(Lcom/android/server/wm/ActivityTaskManagerService;Landroid/content/pm/ActivityInfo;)V
 
     :cond_0
     return-void

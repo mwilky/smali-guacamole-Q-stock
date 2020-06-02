@@ -936,7 +936,7 @@
 
     new-array v2, v1, [I
 
-    const/16 v3, 0xec
+    const/16 v3, 0xed
 
     aput v3, v2, v0
 
@@ -948,7 +948,7 @@
 
     new-array v1, v1, [I
 
-    const/16 v2, 0xed
+    const/16 v2, 0xee
 
     aput v2, v1, v0
 
@@ -3314,7 +3314,7 @@
     return-void
 .end method
 
-.method private final attachApplicationLocked(Landroid/app/IApplicationThread;IIJ)Z
+.method private attachApplicationLocked(Landroid/app/IApplicationThread;IIJ)Z
     .locals 65
     .annotation build Lcom/android/internal/annotations/GuardedBy;
         value = {
@@ -10407,7 +10407,7 @@
     :cond_45
     new-array v0, v7, [I
 
-    const/16 v2, 0xc3
+    const/16 v2, 0xc4
 
     aput v2, v0, v1
 
@@ -31654,6 +31654,8 @@
 .method public final attachApplication(Landroid/app/IApplicationThread;J)V
     .locals 8
 
+    if-eqz p1, :cond_0
+
     monitor-enter p0
 
     :try_start_0
@@ -31700,6 +31702,15 @@
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     invoke-static {}, Lcom/android/server/am/ActivityManagerService;->resetPriorityAfterLockedSection()V
+
+    throw v0
+
+    :cond_0
+    new-instance v0, Ljava/lang/SecurityException;
+
+    const-string v1, "Invalid application interface"
+
+    invoke-direct {v0, v1}, Ljava/lang/SecurityException;-><init>(Ljava/lang/String;)V
 
     throw v0
 .end method
@@ -42037,54 +42048,14 @@
 .end method
 
 .method dumpBinderProxyInterfaceCounts(Ljava/io/PrintWriter;Ljava/lang/String;)V
-    .locals 4
+    .locals 2
 
-    const/16 v0, 0x32
+    const-string v0, "ActivityManager"
 
-    invoke-static {v0}, Landroid/os/BinderProxy;->getSortedInterfaceCounts(I)[Landroid/os/BinderProxy$InterfaceCount;
+    const-string v1, "do not dumpBinderProxyInterfaceCounts"
 
-    move-result-object v0
+    invoke-static {v0, v1}, Landroid/util/Slog;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    invoke-virtual {p1, p2}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
-
-    const/4 v1, 0x0
-
-    :goto_0
-    array-length v2, v0
-
-    if-ge v1, v2, :cond_0
-
-    new-instance v2, Ljava/lang/StringBuilder;
-
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v3, "    #"
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    add-int/lit8 v3, v1, 0x1
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    const-string v3, ": "
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    aget-object v3, v0, v1
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-virtual {p1, v2}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
-
-    add-int/lit8 v1, v1, 0x1
-
-    goto :goto_0
-
-    :cond_0
     return-void
 .end method
 
@@ -47943,7 +47914,7 @@
 
     new-array v0, v3, [I
 
-    const/16 v1, 0xc3
+    const/16 v1, 0xc4
 
     aput v1, v0, v2
 

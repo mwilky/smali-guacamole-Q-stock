@@ -39,7 +39,7 @@
         }
     .end annotation
 
-    invoke-static {}, Lcom/android/server/StorageManagerService;->access$4600()Z
+    invoke-static {}, Lcom/android/server/StorageManagerService;->access$4700()Z
 
     move-result v0
 
@@ -50,11 +50,11 @@
     :cond_0
     iget-object v0, p0, Lcom/android/server/StorageManagerService$12;->this$0:Lcom/android/server/StorageManagerService;
 
-    invoke-static {v0, p2, p3}, Lcom/android/server/StorageManagerService;->access$4700(Lcom/android/server/StorageManagerService;ILjava/lang/String;)I
+    invoke-static {v0, p2, p3}, Lcom/android/server/StorageManagerService;->access$4800(Lcom/android/server/StorageManagerService;ILjava/lang/String;)I
 
     move-result v1
 
-    invoke-static {v0, p2, v1}, Lcom/android/server/StorageManagerService;->access$4800(Lcom/android/server/StorageManagerService;II)V
+    invoke-static {v0, p2, v1}, Lcom/android/server/StorageManagerService;->access$4900(Lcom/android/server/StorageManagerService;II)V
 
     return-void
 .end method

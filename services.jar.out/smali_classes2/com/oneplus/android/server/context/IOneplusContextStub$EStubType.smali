@@ -51,6 +51,8 @@
 
 .field public static final enum oneplus_batteryoutlier:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
+.field public static final enum oneplus_batterystats_service:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
+
 .field public static final enum oneplus_batterystatsservice:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
 .field public static final enum oneplus_bluetooth_service_information:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
@@ -68,6 +70,8 @@
 .field public static final enum oneplus_dexoptmanager:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
 .field public static final enum oneplus_displaycontent:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
+
+.field public static final enum oneplus_displaypowercontroller:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
 .field public static final enum oneplus_embryo_manager:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
@@ -528,9 +532,19 @@
 
     new-instance v0, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
-    const-string v14, "oneplus_zenmode"
+    const-string v14, "oneplus_displaypowercontroller"
 
     const/16 v15, 0x22
+
+    invoke-direct {v0, v14, v15}, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_displaypowercontroller:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
+
+    new-instance v0, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
+
+    const-string v14, "oneplus_zenmode"
+
+    const/16 v15, 0x23
 
     invoke-direct {v0, v14, v15}, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;-><init>(Ljava/lang/String;I)V
 
@@ -540,7 +554,7 @@
 
     const-string v14, "oneplus_screencompat"
 
-    const/16 v15, 0x23
+    const/16 v15, 0x24
 
     invoke-direct {v0, v14, v15}, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;-><init>(Ljava/lang/String;I)V
 
@@ -550,7 +564,7 @@
 
     const-string v14, "oneplus_uididle"
 
-    const/16 v15, 0x24
+    const/16 v15, 0x25
 
     invoke-direct {v0, v14, v15}, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;-><init>(Ljava/lang/String;I)V
 
@@ -560,7 +574,7 @@
 
     const-string v14, "oneplus_screenshotimprovement"
 
-    const/16 v15, 0x25
+    const/16 v15, 0x26
 
     invoke-direct {v0, v14, v15}, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;-><init>(Ljava/lang/String;I)V
 
@@ -570,7 +584,7 @@
 
     const-string v14, "oneplus_gps_notification"
 
-    const/16 v15, 0x26
+    const/16 v15, 0x27
 
     invoke-direct {v0, v14, v15}, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;-><init>(Ljava/lang/String;I)V
 
@@ -580,7 +594,7 @@
 
     const-string v14, "oneplus_quickpay"
 
-    const/16 v15, 0x27
+    const/16 v15, 0x28
 
     invoke-direct {v0, v14, v15}, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;-><init>(Ljava/lang/String;I)V
 
@@ -590,7 +604,7 @@
 
     const-string v14, "oneplus_networkpolicymanagerservice"
 
-    const/16 v15, 0x28
+    const/16 v15, 0x29
 
     invoke-direct {v0, v14, v15}, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;-><init>(Ljava/lang/String;I)V
 
@@ -600,7 +614,7 @@
 
     const-string v14, "oneplus_dexoptmanager"
 
-    const/16 v15, 0x29
+    const/16 v15, 0x2a
 
     invoke-direct {v0, v14, v15}, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;-><init>(Ljava/lang/String;I)V
 
@@ -610,7 +624,7 @@
 
     const-string v14, "oneplus_appbootmanager"
 
-    const/16 v15, 0x2a
+    const/16 v15, 0x2b
 
     invoke-direct {v0, v14, v15}, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;-><init>(Ljava/lang/String;I)V
 
@@ -620,7 +634,7 @@
 
     const-string v14, "oneplus_smartboost"
 
-    const/16 v15, 0x2b
+    const/16 v15, 0x2c
 
     invoke-direct {v0, v14, v15}, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;-><init>(Ljava/lang/String;I)V
 
@@ -630,7 +644,7 @@
 
     const-string v14, "oneplus_memorytracker"
 
-    const/16 v15, 0x2c
+    const/16 v15, 0x2d
 
     invoke-direct {v0, v14, v15}, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;-><init>(Ljava/lang/String;I)V
 
@@ -640,7 +654,7 @@
 
     const-string v14, "oneplus_apprecord"
 
-    const/16 v15, 0x2d
+    const/16 v15, 0x2e
 
     invoke-direct {v0, v14, v15}, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;-><init>(Ljava/lang/String;I)V
 
@@ -650,7 +664,7 @@
 
     const-string v14, "oneplus_secrecy"
 
-    const/16 v15, 0x2e
+    const/16 v15, 0x2f
 
     invoke-direct {v0, v14, v15}, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;-><init>(Ljava/lang/String;I)V
 
@@ -660,7 +674,7 @@
 
     const-string v14, "oneplus_engineer"
 
-    const/16 v15, 0x2f
+    const/16 v15, 0x30
 
     invoke-direct {v0, v14, v15}, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;-><init>(Ljava/lang/String;I)V
 
@@ -670,7 +684,7 @@
 
     const-string v14, "oneplus_skipdoframe"
 
-    const/16 v15, 0x30
+    const/16 v15, 0x31
 
     invoke-direct {v0, v14, v15}, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;-><init>(Ljava/lang/String;I)V
 
@@ -680,7 +694,7 @@
 
     const-string v14, "oneplus_powerkey_launch"
 
-    const/16 v15, 0x31
+    const/16 v15, 0x32
 
     invoke-direct {v0, v14, v15}, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;-><init>(Ljava/lang/String;I)V
 
@@ -690,7 +704,7 @@
 
     const-string v14, "oneplus_screenmode_service"
 
-    const/16 v15, 0x32
+    const/16 v15, 0x33
 
     invoke-direct {v0, v14, v15}, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;-><init>(Ljava/lang/String;I)V
 
@@ -700,7 +714,7 @@
 
     const-string v14, "oneplus_screenrotationimprovement"
 
-    const/16 v15, 0x33
+    const/16 v15, 0x34
 
     invoke-direct {v0, v14, v15}, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;-><init>(Ljava/lang/String;I)V
 
@@ -710,7 +724,7 @@
 
     const-string v14, "oneplus_activitytaskmanagerservice"
 
-    const/16 v15, 0x34
+    const/16 v15, 0x35
 
     invoke-direct {v0, v14, v15}, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;-><init>(Ljava/lang/String;I)V
 
@@ -720,7 +734,7 @@
 
     const-string v14, "oneplus_displaycontent"
 
-    const/16 v15, 0x35
+    const/16 v15, 0x36
 
     invoke-direct {v0, v14, v15}, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;-><init>(Ljava/lang/String;I)V
 
@@ -730,7 +744,7 @@
 
     const-string v14, "oneplus_windowmanagerservice"
 
-    const/16 v15, 0x36
+    const/16 v15, 0x37
 
     invoke-direct {v0, v14, v15}, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;-><init>(Ljava/lang/String;I)V
 
@@ -740,7 +754,7 @@
 
     const-string v14, "oneplus_power_manager"
 
-    const/16 v15, 0x37
+    const/16 v15, 0x38
 
     invoke-direct {v0, v14, v15}, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;-><init>(Ljava/lang/String;I)V
 
@@ -750,7 +764,7 @@
 
     const-string v14, "oneplus_process_adj_control"
 
-    const/16 v15, 0x38
+    const/16 v15, 0x39
 
     invoke-direct {v0, v14, v15}, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;-><init>(Ljava/lang/String;I)V
 
@@ -760,7 +774,7 @@
 
     const-string v14, "oneplus_alarm_manager"
 
-    const/16 v15, 0x39
+    const/16 v15, 0x3a
 
     invoke-direct {v0, v14, v15}, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;-><init>(Ljava/lang/String;I)V
 
@@ -770,7 +784,7 @@
 
     const-string v14, "oneplus_jankmanager"
 
-    const/16 v15, 0x3a
+    const/16 v15, 0x3b
 
     invoke-direct {v0, v14, v15}, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;-><init>(Ljava/lang/String;I)V
 
@@ -780,7 +794,7 @@
 
     const-string v14, "oneplus_china_gms"
 
-    const/16 v15, 0x3b
+    const/16 v15, 0x3c
 
     invoke-direct {v0, v14, v15}, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;-><init>(Ljava/lang/String;I)V
 
@@ -790,7 +804,7 @@
 
     const-string v14, "oneplus_embryo_manager"
 
-    const/16 v15, 0x3c
+    const/16 v15, 0x3d
 
     invoke-direct {v0, v14, v15}, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;-><init>(Ljava/lang/String;I)V
 
@@ -800,7 +814,7 @@
 
     const-string v14, "oneplus_connor"
 
-    const/16 v15, 0x3d
+    const/16 v15, 0x3e
 
     invoke-direct {v0, v14, v15}, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;-><init>(Ljava/lang/String;I)V
 
@@ -810,7 +824,7 @@
 
     const-string v14, "oneplus_scenemode"
 
-    const/16 v15, 0x3e
+    const/16 v15, 0x3f
 
     invoke-direct {v0, v14, v15}, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;-><init>(Ljava/lang/String;I)V
 
@@ -820,7 +834,7 @@
 
     const-string v14, "oneplus_param_service"
 
-    const/16 v15, 0x3f
+    const/16 v15, 0x40
 
     invoke-direct {v0, v14, v15}, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;-><init>(Ljava/lang/String;I)V
 
@@ -830,7 +844,7 @@
 
     const-string v14, "oneplus_carkit_identification"
 
-    const/16 v15, 0x40
+    const/16 v15, 0x41
 
     invoke-direct {v0, v14, v15}, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;-><init>(Ljava/lang/String;I)V
 
@@ -840,7 +854,7 @@
 
     const-string v14, "oneplus_verificationcode_controller"
 
-    const/16 v15, 0x41
+    const/16 v15, 0x42
 
     invoke-direct {v0, v14, v15}, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;-><init>(Ljava/lang/String;I)V
 
@@ -850,7 +864,7 @@
 
     const-string v14, "oneplus_background_freeze"
 
-    const/16 v15, 0x42
+    const/16 v15, 0x43
 
     invoke-direct {v0, v14, v15}, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;-><init>(Ljava/lang/String;I)V
 
@@ -860,7 +874,7 @@
 
     const-string v14, "oneplus_opsla"
 
-    const/16 v15, 0x43
+    const/16 v15, 0x44
 
     invoke-direct {v0, v14, v15}, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;-><init>(Ljava/lang/String;I)V
 
@@ -870,7 +884,7 @@
 
     const-string v14, "oneplus_scene_call_block"
 
-    const/16 v15, 0x44
+    const/16 v15, 0x45
 
     invoke-direct {v0, v14, v15}, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;-><init>(Ljava/lang/String;I)V
 
@@ -880,7 +894,7 @@
 
     const-string v14, "oneplus_longshot_manager_service"
 
-    const/16 v15, 0x45
+    const/16 v15, 0x46
 
     invoke-direct {v0, v14, v15}, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;-><init>(Ljava/lang/String;I)V
 
@@ -890,7 +904,7 @@
 
     const-string v14, "oneplus_compatibility_helper"
 
-    const/16 v15, 0x46
+    const/16 v15, 0x47
 
     invoke-direct {v0, v14, v15}, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;-><init>(Ljava/lang/String;I)V
 
@@ -900,7 +914,7 @@
 
     const-string v14, "oneplus_bluetooth_service_information"
 
-    const/16 v15, 0x47
+    const/16 v15, 0x48
 
     invoke-direct {v0, v14, v15}, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;-><init>(Ljava/lang/String;I)V
 
@@ -910,7 +924,7 @@
 
     const-string v14, "oneplus_quickreply"
 
-    const/16 v15, 0x48
+    const/16 v15, 0x49
 
     invoke-direct {v0, v14, v15}, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;-><init>(Ljava/lang/String;I)V
 
@@ -920,7 +934,7 @@
 
     const-string v14, "oneplus_op_ads"
 
-    const/16 v15, 0x49
+    const/16 v15, 0x4a
 
     invoke-direct {v0, v14, v15}, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;-><init>(Ljava/lang/String;I)V
 
@@ -930,7 +944,7 @@
 
     const-string v14, "oneplus_apperror_dialog"
 
-    const/16 v15, 0x4a
+    const/16 v15, 0x4b
 
     invoke-direct {v0, v14, v15}, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;-><init>(Ljava/lang/String;I)V
 
@@ -940,7 +954,7 @@
 
     const-string v14, "oneplus_game_shake"
 
-    const/16 v15, 0x4b
+    const/16 v15, 0x4c
 
     invoke-direct {v0, v14, v15}, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;-><init>(Ljava/lang/String;I)V
 
@@ -950,7 +964,7 @@
 
     const-string v14, "oneplus_op_instant_app"
 
-    const/16 v15, 0x4c
+    const/16 v15, 0x4d
 
     invoke-direct {v0, v14, v15}, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;-><init>(Ljava/lang/String;I)V
 
@@ -960,13 +974,23 @@
 
     const-string v14, "oneplus_antiburn_manager"
 
-    const/16 v15, 0x4d
+    const/16 v15, 0x4e
 
     invoke-direct {v0, v14, v15}, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;-><init>(Ljava/lang/String;I)V
 
     sput-object v0, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_antiburn_manager:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
-    const/16 v0, 0x4e
+    new-instance v0, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
+
+    const-string v14, "oneplus_batterystats_service"
+
+    const/16 v15, 0x4f
+
+    invoke-direct {v0, v14, v15}, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_batterystats_service:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
+
+    const/16 v0, 0x50
 
     new-array v0, v0, [Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
@@ -1148,267 +1172,279 @@
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_zenmode:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
+    sget-object v1, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_displaypowercontroller:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
     const/16 v2, 0x22
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_screencompat:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
+    sget-object v1, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_zenmode:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
     const/16 v2, 0x23
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_uididle:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
+    sget-object v1, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_screencompat:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
     const/16 v2, 0x24
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_screenshotimprovement:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
+    sget-object v1, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_uididle:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
     const/16 v2, 0x25
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_gps_notification:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
+    sget-object v1, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_screenshotimprovement:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
     const/16 v2, 0x26
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_quickpay:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
+    sget-object v1, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_gps_notification:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
     const/16 v2, 0x27
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_networkpolicymanagerservice:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
+    sget-object v1, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_quickpay:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
     const/16 v2, 0x28
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_dexoptmanager:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
+    sget-object v1, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_networkpolicymanagerservice:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
     const/16 v2, 0x29
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_appbootmanager:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
+    sget-object v1, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_dexoptmanager:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
     const/16 v2, 0x2a
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_smartboost:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
+    sget-object v1, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_appbootmanager:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
     const/16 v2, 0x2b
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_memorytracker:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
+    sget-object v1, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_smartboost:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
     const/16 v2, 0x2c
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_apprecord:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
+    sget-object v1, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_memorytracker:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
     const/16 v2, 0x2d
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_secrecy:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
+    sget-object v1, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_apprecord:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
     const/16 v2, 0x2e
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_engineer:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
+    sget-object v1, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_secrecy:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
     const/16 v2, 0x2f
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_skipdoframe:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
+    sget-object v1, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_engineer:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
     const/16 v2, 0x30
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_powerkey_launch:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
+    sget-object v1, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_skipdoframe:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
     const/16 v2, 0x31
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_screenmode_service:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
+    sget-object v1, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_powerkey_launch:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
     const/16 v2, 0x32
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_screenrotationimprovement:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
+    sget-object v1, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_screenmode_service:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
     const/16 v2, 0x33
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_activitytaskmanagerservice:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
+    sget-object v1, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_screenrotationimprovement:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
     const/16 v2, 0x34
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_displaycontent:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
+    sget-object v1, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_activitytaskmanagerservice:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
     const/16 v2, 0x35
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_windowmanagerservice:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
+    sget-object v1, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_displaycontent:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
     const/16 v2, 0x36
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_power_manager:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
+    sget-object v1, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_windowmanagerservice:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
     const/16 v2, 0x37
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_process_adj_control:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
+    sget-object v1, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_power_manager:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
     const/16 v2, 0x38
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_alarm_manager:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
+    sget-object v1, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_process_adj_control:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
     const/16 v2, 0x39
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_jankmanager:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
+    sget-object v1, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_alarm_manager:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
     const/16 v2, 0x3a
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_china_gms:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
+    sget-object v1, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_jankmanager:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
     const/16 v2, 0x3b
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_embryo_manager:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
+    sget-object v1, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_china_gms:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
     const/16 v2, 0x3c
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_connor:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
+    sget-object v1, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_embryo_manager:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
     const/16 v2, 0x3d
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_scenemode:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
+    sget-object v1, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_connor:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
     const/16 v2, 0x3e
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_param_service:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
+    sget-object v1, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_scenemode:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
     const/16 v2, 0x3f
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_carkit_identification:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
+    sget-object v1, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_param_service:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
     const/16 v2, 0x40
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_verificationcode_controller:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
+    sget-object v1, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_carkit_identification:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
     const/16 v2, 0x41
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_background_freeze:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
+    sget-object v1, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_verificationcode_controller:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
     const/16 v2, 0x42
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_opsla:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
+    sget-object v1, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_background_freeze:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
     const/16 v2, 0x43
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_scene_call_block:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
+    sget-object v1, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_opsla:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
     const/16 v2, 0x44
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_longshot_manager_service:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
+    sget-object v1, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_scene_call_block:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
     const/16 v2, 0x45
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_compatibility_helper:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
+    sget-object v1, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_longshot_manager_service:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
     const/16 v2, 0x46
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_bluetooth_service_information:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
+    sget-object v1, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_compatibility_helper:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
     const/16 v2, 0x47
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_quickreply:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
+    sget-object v1, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_bluetooth_service_information:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
     const/16 v2, 0x48
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_op_ads:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
+    sget-object v1, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_quickreply:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
     const/16 v2, 0x49
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_apperror_dialog:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
+    sget-object v1, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_op_ads:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
     const/16 v2, 0x4a
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_game_shake:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
+    sget-object v1, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_apperror_dialog:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
     const/16 v2, 0x4b
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_op_instant_app:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
+    sget-object v1, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_game_shake:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
     const/16 v2, 0x4c
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_antiburn_manager:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
+    sget-object v1, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_op_instant_app:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
     const/16 v2, 0x4d
+
+    aput-object v1, v0, v2
+
+    sget-object v1, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_antiburn_manager:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
+
+    const/16 v2, 0x4e
+
+    aput-object v1, v0, v2
+
+    sget-object v1, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_batterystats_service:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
+
+    const/16 v2, 0x4f
 
     aput-object v1, v0, v2
 

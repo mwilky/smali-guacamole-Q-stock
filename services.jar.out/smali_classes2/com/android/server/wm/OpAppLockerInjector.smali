@@ -8,6 +8,8 @@
 
 .field public static final IS_APP_LOCKER_ENABLED:Z
 
+.field public static mIsAppLockerEnabledForRecents:Z
+
 .field private static sOpAppLocker:Lcom/android/server/wm/IOpAppLocker;
 
 
@@ -30,6 +32,8 @@
     move-result v0
 
     sput-boolean v0, Lcom/android/server/wm/OpAppLockerInjector;->IS_APP_LOCKER_ENABLED:Z
+
+    sput-boolean v1, Lcom/android/server/wm/OpAppLockerInjector;->mIsAppLockerEnabledForRecents:Z
 
     return-void
 .end method
@@ -115,6 +119,27 @@
     return v0
 .end method
 
+.method public static isAppLockerEnabled(I)Z
+    .locals 1
+
+    invoke-static {}, Lcom/android/server/wm/OpAppLockerInjector;->initInstance()V
+
+    sget-object v0, Lcom/android/server/wm/OpAppLockerInjector;->sOpAppLocker:Lcom/android/server/wm/IOpAppLocker;
+
+    if-eqz v0, :cond_0
+
+    invoke-interface {v0, p0}, Lcom/android/server/wm/IOpAppLocker;->isAppLockerEnabled(I)Z
+
+    move-result v0
+
+    return v0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    return v0
+.end method
+
 .method public static isKeyguardDone()Z
     .locals 1
 
@@ -169,6 +194,18 @@
     move-result v0
 
     return v0
+.end method
+
+.method public static lockTopApp(Lcom/android/server/wm/ActivityStack;Ljava/lang/String;)V
+    .locals 1
+
+    invoke-static {}, Lcom/android/server/wm/OpAppLockerInjector;->initInstance()V
+
+    sget-object v0, Lcom/android/server/wm/OpAppLockerInjector;->sOpAppLocker:Lcom/android/server/wm/IOpAppLocker;
+
+    invoke-interface {v0, p0, p1}, Lcom/android/server/wm/IOpAppLocker;->lockTopApp(Lcom/android/server/wm/ActivityStack;Ljava/lang/String;)V
+
+    return-void
 .end method
 
 .method public static setKeyguardDone(Z)V

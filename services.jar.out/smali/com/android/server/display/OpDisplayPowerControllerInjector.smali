@@ -8,6 +8,8 @@
 
 .field private static final TAG:Ljava/lang/String;
 
+.field private static sIOpDisplayPowerController:Lcom/android/server/display/IOpDisplayPowerController;
+
 
 # direct methods
 .method static constructor <clinit>()V
@@ -154,4 +156,32 @@
 
     :cond_0
     return v0
+.end method
+
+.method public static hookDisplayPowerController(Lcom/android/server/display/IOpBacklightController;)V
+    .locals 1
+
+    sget-object v0, Lcom/android/server/display/OpDisplayPowerControllerInjector;->sIOpDisplayPowerController:Lcom/android/server/display/IOpDisplayPowerController;
+
+    if-nez v0, :cond_0
+
+    sget-object v0, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_displaypowercontroller:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
+
+    invoke-static {v0}, Lcom/oneplus/android/server/context/OneplusContextStub;->queryInterface(Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/android/server/display/IOpDisplayPowerController;
+
+    sput-object v0, Lcom/android/server/display/OpDisplayPowerControllerInjector;->sIOpDisplayPowerController:Lcom/android/server/display/IOpDisplayPowerController;
+
+    :cond_0
+    sget-object v0, Lcom/android/server/display/OpDisplayPowerControllerInjector;->sIOpDisplayPowerController:Lcom/android/server/display/IOpDisplayPowerController;
+
+    if-eqz v0, :cond_1
+
+    invoke-interface {v0, p0}, Lcom/android/server/display/IOpDisplayPowerController;->hookDisplayPowerController(Lcom/android/server/display/IOpBacklightController;)V
+
+    :cond_1
+    return-void
 .end method

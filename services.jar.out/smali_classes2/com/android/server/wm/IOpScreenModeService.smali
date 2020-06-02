@@ -7,6 +7,9 @@
 .method public abstract adjustDensityForUser(II)I
 .end method
 
+.method public abstract doScreenRotation()V
+.end method
+
 .method public abstract getPreferredModeId(Lcom/android/server/wm/WindowState;I)I
 .end method
 

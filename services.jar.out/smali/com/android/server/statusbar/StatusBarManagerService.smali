@@ -1593,6 +1593,30 @@
     return-void
 .end method
 
+.method public hideFodDialog(Landroid/os/Bundle;Ljava/lang/String;)V
+    .locals 1
+
+    iget-object v0, p0, Lcom/android/server/statusbar/StatusBarManagerService;->mBar:Lcom/android/internal/statusbar/IStatusBar;
+
+    if-eqz v0, :cond_0
+
+    :try_start_0
+    iget-object v0, p0, Lcom/android/server/statusbar/StatusBarManagerService;->mBar:Lcom/android/internal/statusbar/IStatusBar;
+
+    invoke-interface {v0, p1, p2}, Lcom/android/internal/statusbar/IStatusBar;->hideFodDialog(Landroid/os/Bundle;Ljava/lang/String;)V
+    :try_end_0
+    .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
+
+    goto :goto_0
+
+    :catch_0
+    move-exception v0
+
+    :cond_0
+    :goto_0
+    return-void
+.end method
+
 .method public synthetic lambda$disableLocked$0$StatusBarManagerService(I)V
     .locals 1
 
@@ -1842,30 +1866,6 @@
     return-void
 .end method
 
-.method public onAuthenticatedFailed()V
-    .locals 1
-
-    iget-object v0, p0, Lcom/android/server/statusbar/StatusBarManagerService;->mBar:Lcom/android/internal/statusbar/IStatusBar;
-
-    if-eqz v0, :cond_0
-
-    :try_start_0
-    iget-object v0, p0, Lcom/android/server/statusbar/StatusBarManagerService;->mBar:Lcom/android/internal/statusbar/IStatusBar;
-
-    invoke-interface {v0}, Lcom/android/internal/statusbar/IStatusBar;->onAuthenticatedFailed()V
-    :try_end_0
-    .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
-
-    goto :goto_0
-
-    :catch_0
-    move-exception v0
-
-    :cond_0
-    :goto_0
-    return-void
-.end method
-
 .method public onBiometricAuthenticated(ZLjava/lang/String;)V
     .locals 1
 
@@ -2044,7 +2044,7 @@
     return-void
 .end method
 
-.method public onFingerprintAuthenticated(ZLjava/lang/String;)V
+.method public onFingerprintAuthenticatedFailed()V
     .locals 1
 
     iget-object v0, p0, Lcom/android/server/statusbar/StatusBarManagerService;->mBar:Lcom/android/internal/statusbar/IStatusBar;
@@ -2054,7 +2054,7 @@
     :try_start_0
     iget-object v0, p0, Lcom/android/server/statusbar/StatusBarManagerService;->mBar:Lcom/android/internal/statusbar/IStatusBar;
 
-    invoke-interface {v0, p1, p2}, Lcom/android/internal/statusbar/IStatusBar;->onBiometricAuthenticated(ZLjava/lang/String;)V
+    invoke-interface {v0}, Lcom/android/internal/statusbar/IStatusBar;->onFingerprintAuthenticatedFailed()V
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -2068,7 +2068,7 @@
     return-void
 .end method
 
-.method public onFingerprintEnrollResult()V
+.method public onFingerprintAuthenticatedSuccess()V
     .locals 1
 
     iget-object v0, p0, Lcom/android/server/statusbar/StatusBarManagerService;->mBar:Lcom/android/internal/statusbar/IStatusBar;
@@ -2078,7 +2078,7 @@
     :try_start_0
     iget-object v0, p0, Lcom/android/server/statusbar/StatusBarManagerService;->mBar:Lcom/android/internal/statusbar/IStatusBar;
 
-    invoke-interface {v0}, Lcom/android/internal/statusbar/IStatusBar;->onFingerprintEnrollResult()V
+    invoke-interface {v0}, Lcom/android/internal/statusbar/IStatusBar;->onFingerprintAuthenticatedSuccess()V
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -2092,7 +2092,7 @@
     return-void
 .end method
 
-.method public onFingerprintError(Ljava/lang/String;)V
+.method public onFingerprintEnrollResult(I)V
     .locals 1
 
     iget-object v0, p0, Lcom/android/server/statusbar/StatusBarManagerService;->mBar:Lcom/android/internal/statusbar/IStatusBar;
@@ -2102,7 +2102,31 @@
     :try_start_0
     iget-object v0, p0, Lcom/android/server/statusbar/StatusBarManagerService;->mBar:Lcom/android/internal/statusbar/IStatusBar;
 
-    invoke-interface {v0, p1}, Lcom/android/internal/statusbar/IStatusBar;->onBiometricError(Ljava/lang/String;)V
+    invoke-interface {v0, p1}, Lcom/android/internal/statusbar/IStatusBar;->onFingerprintEnrollResult(I)V
+    :try_end_0
+    .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
+
+    goto :goto_0
+
+    :catch_0
+    move-exception v0
+
+    :cond_0
+    :goto_0
+    return-void
+.end method
+
+.method public onFingerprintError(I)V
+    .locals 1
+
+    iget-object v0, p0, Lcom/android/server/statusbar/StatusBarManagerService;->mBar:Lcom/android/internal/statusbar/IStatusBar;
+
+    if-eqz v0, :cond_0
+
+    :try_start_0
+    iget-object v0, p0, Lcom/android/server/statusbar/StatusBarManagerService;->mBar:Lcom/android/internal/statusbar/IStatusBar;
+
+    invoke-interface {v0, p1}, Lcom/android/internal/statusbar/IStatusBar;->onFingerprintError(I)V
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -3375,6 +3399,30 @@
     move v6, p5
 
     invoke-interface/range {v1 .. v6}, Lcom/android/internal/statusbar/IStatusBar;->showBiometricDialog(Landroid/os/Bundle;Landroid/hardware/biometrics/IBiometricServiceReceiverInternal;IZI)V
+    :try_end_0
+    .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
+
+    goto :goto_0
+
+    :catch_0
+    move-exception v0
+
+    :cond_0
+    :goto_0
+    return-void
+.end method
+
+.method public showFodDialog(Landroid/os/Bundle;Ljava/lang/String;)V
+    .locals 1
+
+    iget-object v0, p0, Lcom/android/server/statusbar/StatusBarManagerService;->mBar:Lcom/android/internal/statusbar/IStatusBar;
+
+    if-eqz v0, :cond_0
+
+    :try_start_0
+    iget-object v0, p0, Lcom/android/server/statusbar/StatusBarManagerService;->mBar:Lcom/android/internal/statusbar/IStatusBar;
+
+    invoke-interface {v0, p1, p2}, Lcom/android/internal/statusbar/IStatusBar;->showFodDialog(Landroid/os/Bundle;Ljava/lang/String;)V
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 

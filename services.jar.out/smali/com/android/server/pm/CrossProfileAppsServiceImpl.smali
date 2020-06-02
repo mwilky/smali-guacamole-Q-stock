@@ -88,7 +88,7 @@
     const/4 v5, 0x0
 
     :goto_0
-    if-ge v5, v4, :cond_2
+    if-ge v5, v4, :cond_3
 
     aget v6, v2, v5
 
@@ -106,6 +106,21 @@
     goto :goto_1
 
     :cond_1
+    invoke-static {v6}, Lcom/oneplus/android/os/OnePlusParallelAppUtils;->isParallelUser(I)Z
+
+    move-result v7
+
+    if-eqz v7, :cond_2
+
+    invoke-static {p1}, Lcom/oneplus/android/os/OnePlusParallelAppUtils;->isPackageParallelNonWorkProfile(Ljava/lang/String;)Z
+
+    move-result v7
+
+    if-eqz v7, :cond_2
+
+    goto :goto_1
+
+    :cond_2
     invoke-static {v6}, Landroid/os/UserHandle;->of(I)Landroid/os/UserHandle;
 
     move-result-object v7
@@ -119,7 +134,7 @@
 
     goto :goto_0
 
-    :cond_2
+    :cond_3
     nop
 
     iget-object v4, p0, Lcom/android/server/pm/CrossProfileAppsServiceImpl;->mInjector:Lcom/android/server/pm/CrossProfileAppsServiceImpl$Injector;

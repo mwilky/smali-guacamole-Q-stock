@@ -541,7 +541,7 @@
     return-void
 .end method
 
-.method public showSoftInput(Lcom/android/internal/view/IInputMethodClient;ILandroid/os/ResultReceiver;)Z
+.method public showSoftInput(Lcom/android/internal/view/IInputMethodClient;ILandroid/os/ResultReceiver;Ljava/lang/String;)Z
     .locals 10
 
     invoke-static {}, Landroid/os/Binder;->getCallingUid()I

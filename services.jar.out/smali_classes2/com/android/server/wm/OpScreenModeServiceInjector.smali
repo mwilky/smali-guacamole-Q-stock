@@ -8,6 +8,8 @@
 
 .field private static final ENABLED:Z
 
+.field private static final FEATURE_EXTREME_ENABLE:Z
+
 .field private static final TAG:Ljava/lang/String; = "OpScreenModeServiceInjector"
 
 .field private static opScreenMode:Lcom/android/server/wm/IOpScreenModeService;
@@ -15,23 +17,35 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 3
+    .locals 4
 
     const/4 v0, 0x1
 
+    new-array v1, v0, [I
+
+    const/4 v2, 0x0
+
+    const/16 v3, 0x75
+
+    aput v3, v1, v2
+
+    invoke-static {v1}, Landroid/util/OpFeatures;->isSupport([I)Z
+
+    move-result v1
+
+    sput-boolean v1, Lcom/android/server/wm/OpScreenModeServiceInjector;->ENABLED:Z
+
     new-array v0, v0, [I
 
-    const/4 v1, 0x0
+    const/16 v1, 0xfe
 
-    const/16 v2, 0x75
-
-    aput v2, v0, v1
+    aput v1, v0, v2
 
     invoke-static {v0}, Landroid/util/OpFeatures;->isSupport([I)Z
 
     move-result v0
 
-    sput-boolean v0, Lcom/android/server/wm/OpScreenModeServiceInjector;->ENABLED:Z
+    sput-boolean v0, Lcom/android/server/wm/OpScreenModeServiceInjector;->FEATURE_EXTREME_ENABLE:Z
 
     return-void
 .end method
@@ -81,6 +95,49 @@
 
     :cond_2
     return p0
+.end method
+
+.method public static doScreenRotation()V
+    .locals 1
+
+    sget-boolean v0, Lcom/android/server/wm/OpScreenModeServiceInjector;->ENABLED:Z
+
+    if-eqz v0, :cond_3
+
+    sget-boolean v0, Lcom/android/server/wm/OpScreenModeServiceInjector;->FEATURE_EXTREME_ENABLE:Z
+
+    if-nez v0, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    sget-object v0, Lcom/android/server/wm/OpScreenModeServiceInjector;->opScreenMode:Lcom/android/server/wm/IOpScreenModeService;
+
+    if-nez v0, :cond_1
+
+    sget-object v0, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_screenmode_service:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
+
+    invoke-static {v0}, Lcom/oneplus/android/server/context/OneplusContextStub;->queryInterface(Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/android/server/wm/IOpScreenModeService;
+
+    sput-object v0, Lcom/android/server/wm/OpScreenModeServiceInjector;->opScreenMode:Lcom/android/server/wm/IOpScreenModeService;
+
+    :cond_1
+    sget-object v0, Lcom/android/server/wm/OpScreenModeServiceInjector;->opScreenMode:Lcom/android/server/wm/IOpScreenModeService;
+
+    if-eqz v0, :cond_2
+
+    invoke-interface {v0}, Lcom/android/server/wm/IOpScreenModeService;->doScreenRotation()V
+
+    :cond_2
+    return-void
+
+    :cond_3
+    :goto_0
+    return-void
 .end method
 
 .method public static getPreferredModeId(Lcom/android/server/wm/WindowState;I)I

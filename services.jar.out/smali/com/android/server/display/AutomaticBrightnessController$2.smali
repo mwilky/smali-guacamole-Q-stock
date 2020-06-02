@@ -51,22 +51,6 @@
 
     if-eqz v0, :cond_2
 
-    const/4 v0, 0x1
-
-    new-array v0, v0, [I
-
-    const/16 v1, 0x7a
-
-    const/4 v2, 0x0
-
-    aput v1, v0, v2
-
-    invoke-static {v0}, Landroid/util/OpFeatures;->isSupport([I)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_1
-
     iget-object v0, p0, Lcom/android/server/display/AutomaticBrightnessController$2;->this$0:Lcom/android/server/display/AutomaticBrightnessController;
 
     invoke-static {v0}, Lcom/android/server/display/AutomaticBrightnessController;->access$1200(Lcom/android/server/display/AutomaticBrightnessController;)Z
@@ -85,7 +69,7 @@
 
     const-string v0, "AutomaticBrightnessController"
 
-    const-string v1, "P-Sensor is Changed true."
+    const-string v1, "Block light sensor data."
 
     invoke-static {v0, v1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
@@ -97,9 +81,11 @@
 
     move-result-wide v0
 
-    iget-object v3, p1, Landroid/hardware/SensorEvent;->values:[F
+    iget-object v2, p1, Landroid/hardware/SensorEvent;->values:[F
 
-    aget v2, v3, v2
+    const/4 v3, 0x0
+
+    aget v2, v2, v3
 
     iget-object v3, p0, Lcom/android/server/display/AutomaticBrightnessController$2;->this$0:Lcom/android/server/display/AutomaticBrightnessController;
 

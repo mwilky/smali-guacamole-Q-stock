@@ -1365,6 +1365,10 @@
 
     iput-object v2, v0, Landroid/content/pm/PackageInfoLite;->oplibDependencyStr:Ljava/lang/String;
 
+    iget-boolean v2, v4, Landroid/content/pm/PackageParser$PackageLite;->oneplusTheme:Z
+
+    iput-boolean v2, v0, Landroid/content/pm/PackageInfoLite;->oneplusTheme:Z
+
     return-object v0
 
     :catch_0

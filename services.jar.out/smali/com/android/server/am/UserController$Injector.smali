@@ -36,6 +36,14 @@
     return-void
 .end method
 
+.method static synthetic access$500(Lcom/android/server/am/UserController$Injector;)Lcom/android/server/am/ActivityManagerService;
+    .locals 1
+
+    iget-object v0, p0, Lcom/android/server/am/UserController$Injector;->mService:Lcom/android/server/am/ActivityManagerService;
+
+    return-object v0
+.end method
+
 .method static synthetic lambda$startUserWidgets$0(Landroid/appwidget/AppWidgetManagerInternal;I)V
     .locals 0
 
@@ -630,7 +638,7 @@
 .end method
 
 .method showUserSwitchingDialog(Landroid/content/pm/UserInfo;Landroid/content/pm/UserInfo;Ljava/lang/String;Ljava/lang/String;)V
-    .locals 9
+    .locals 10
 
     iget-object v0, p0, Lcom/android/server/am/UserController$Injector;->mService:Lcom/android/server/am/ActivityManagerService;
 
@@ -646,7 +654,37 @@
 
     move-result v0
 
-    if-nez v0, :cond_0
+    if-nez v0, :cond_1
+
+    iget-object v0, p0, Lcom/android/server/am/UserController$Injector;->mService:Lcom/android/server/am/ActivityManagerService;
+
+    iget-object v0, v0, Lcom/android/server/am/ActivityManagerService;->mContext:Landroid/content/Context;
+
+    invoke-static {v0}, Landroid/content/res/OpThemeUtils;->getInstance(Landroid/content/Context;)Landroid/content/res/OpThemeUtils;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Landroid/content/res/OpThemeUtils;->getThemeState()I
+
+    move-result v0
+
+    const/4 v1, 0x1
+
+    if-ne v0, v1, :cond_0
+
+    const v0, 0x50e0009
+
+    move v9, v0
+
+    goto :goto_0
+
+    :cond_0
+    const v0, 0x50e0001
+
+    move v9, v0
+
+    :goto_0
+    nop
 
     new-instance v0, Lcom/android/server/am/UserSwitchingDialog;
 
@@ -666,11 +704,11 @@
 
     move-object v8, p4
 
-    invoke-direct/range {v1 .. v8}, Lcom/android/server/am/UserSwitchingDialog;-><init>(Lcom/android/server/am/ActivityManagerService;Landroid/content/Context;Landroid/content/pm/UserInfo;Landroid/content/pm/UserInfo;ZLjava/lang/String;Ljava/lang/String;)V
+    invoke-direct/range {v1 .. v9}, Lcom/android/server/am/UserSwitchingDialog;-><init>(Lcom/android/server/am/ActivityManagerService;Landroid/content/Context;Landroid/content/pm/UserInfo;Landroid/content/pm/UserInfo;ZLjava/lang/String;Ljava/lang/String;I)V
 
-    goto :goto_0
+    goto :goto_1
 
-    :cond_0
+    :cond_1
     new-instance v0, Lcom/android/server/am/CarUserSwitchingDialog;
 
     iget-object v2, p0, Lcom/android/server/am/UserController$Injector;->mService:Lcom/android/server/am/ActivityManagerService;
@@ -691,7 +729,7 @@
 
     invoke-direct/range {v1 .. v8}, Lcom/android/server/am/CarUserSwitchingDialog;-><init>(Lcom/android/server/am/ActivityManagerService;Landroid/content/Context;Landroid/content/pm/UserInfo;Landroid/content/pm/UserInfo;ZLjava/lang/String;Ljava/lang/String;)V
 
-    :goto_0
+    :goto_1
     invoke-virtual {v0}, Landroid/app/Dialog;->show()V
 
     return-void

@@ -8448,7 +8448,7 @@
 .end method
 
 .method startActivityFromRecents(IIILcom/android/server/wm/SafeActivityOptions;)I
-    .locals 30
+    .locals 33
 
     move-object/from16 v1, p0
 
@@ -8571,28 +8571,33 @@
 
     const-string v15, "startActivityFromRecents: homeVisibleInSplitScreen"
 
-    const/4 v7, 0x0
+    const-string v8, "splitFromRecents"
+
+    const/4 v4, 0x0
 
     if-ne v10, v9, :cond_6
 
     :try_start_0
-    iget-object v4, v1, Lcom/android/server/wm/ActivityStackSupervisor;->mWindowManager:Lcom/android/server/wm/WindowManagerService;
+    iget-object v7, v1, Lcom/android/server/wm/ActivityStackSupervisor;->mWindowManager:Lcom/android/server/wm/WindowManagerService;
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
+    :try_start_1
     invoke-virtual {v13}, Landroid/app/ActivityOptions;->getSplitScreenCreateMode()I
 
-    move-result v8
+    move-result v9
 
-    invoke-virtual {v4, v8, v5}, Lcom/android/server/wm/WindowManagerService;->setDockedStackCreateState(ILandroid/graphics/Rect;)V
+    invoke-virtual {v7, v9, v5}, Lcom/android/server/wm/WindowManagerService;->setDockedStackCreateState(ILandroid/graphics/Rect;)V
 
     invoke-direct/range {p0 .. p0}, Lcom/android/server/wm/ActivityStackSupervisor;->deferUpdateRecentsHomeStackBounds()V
 
-    iget-object v4, v1, Lcom/android/server/wm/ActivityStackSupervisor;->mWindowManager:Lcom/android/server/wm/WindowManagerService;
+    iget-object v5, v1, Lcom/android/server/wm/ActivityStackSupervisor;->mWindowManager:Lcom/android/server/wm/WindowManagerService;
 
-    const/16 v5, 0x13
+    const/16 v7, 0x13
 
-    invoke-virtual {v4, v5, v7}, Lcom/android/server/wm/WindowManagerService;->prepareAppTransition(IZ)V
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+    invoke-virtual {v5, v7, v4}, Lcom/android/server/wm/WindowManagerService;->prepareAppTransition(IZ)V
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     goto :goto_3
 
@@ -8601,42 +8606,69 @@
 
     move-object v6, v3
 
-    move v5, v9
-
-    move v4, v10
-
-    move/from16 v22, v11
+    move/from16 v23, v11
 
     move-object/from16 v21, v13
 
     move-object v9, v15
 
+    const/4 v5, 0x3
+
+    move v11, v4
+
+    move v4, v10
+
+    move-object v10, v8
+
     const/4 v8, 0x4
 
-    move v10, v7
+    goto/16 :goto_b
 
-    goto/16 :goto_a
+    :catchall_1
+    move-exception v0
+
+    move-object v6, v3
+
+    move v5, v9
+
+    move/from16 v23, v11
+
+    move-object/from16 v21, v13
+
+    move-object v9, v15
+
+    move v11, v4
+
+    move v4, v10
+
+    move-object v10, v8
+
+    const/4 v8, 0x4
+
+    goto/16 :goto_b
 
     :cond_6
     :goto_3
-    :try_start_1
-    iget-object v4, v1, Lcom/android/server/wm/ActivityStackSupervisor;->mRootActivityContainer:Lcom/android/server/wm/RootActivityContainer;
-
-    const/4 v5, 0x2
-
-    invoke-virtual {v4, v2, v5, v13, v6}, Lcom/android/server/wm/RootActivityContainer;->anyTaskForId(IILandroid/app/ActivityOptions;Z)Lcom/android/server/wm/TaskRecord;
-
-    move-result-object v4
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_c
-
-    move-object v8, v4
-
-    if-eqz v8, :cond_e
-
-    if-eq v10, v9, :cond_7
-
     :try_start_2
+    iget-object v5, v1, Lcom/android/server/wm/ActivityStackSupervisor;->mRootActivityContainer:Lcom/android/server/wm/RootActivityContainer;
+
+    const/4 v7, 0x2
+
+    invoke-virtual {v5, v2, v7, v13, v6}, Lcom/android/server/wm/RootActivityContainer;->anyTaskForId(IILandroid/app/ActivityOptions;Z)Lcom/android/server/wm/TaskRecord;
+
+    move-result-object v5
+    :try_end_2
+    .catchall {:try_start_2 .. :try_end_2} :catchall_e
+
+    move-object v9, v5
+
+    if-eqz v9, :cond_e
+
+    const/4 v7, 0x3
+
+    if-eq v10, v7, :cond_7
+
+    :try_start_3
     iget-object v0, v1, Lcom/android/server/wm/ActivityStackSupervisor;->mRootActivityContainer:Lcom/android/server/wm/RootActivityContainer;
 
     invoke-virtual {v0}, Lcom/android/server/wm/RootActivityContainer;->getDefaultDisplay()Lcom/android/server/wm/ActivityDisplay;
@@ -8646,57 +8678,59 @@
     const-string v3, "startActivityFromRecents"
 
     invoke-virtual {v0, v3}, Lcom/android/server/wm/ActivityDisplay;->moveHomeStackToFront(Ljava/lang/String;)V
-    :try_end_2
-    .catchall {:try_start_2 .. :try_end_2} :catchall_1
+    :try_end_3
+    .catchall {:try_start_3 .. :try_end_3} :catchall_2
 
     goto :goto_4
 
-    :catchall_1
+    :catchall_2
     move-exception v0
 
-    move-object v6, v8
+    move v5, v7
 
-    move v5, v9
+    move-object v6, v9
 
-    move v4, v10
-
-    move/from16 v22, v11
+    move/from16 v23, v11
 
     move-object/from16 v21, v13
 
     move-object v9, v15
 
+    move v11, v4
+
+    move v4, v10
+
+    move-object v10, v8
+
     const/4 v8, 0x4
 
-    move v10, v7
-
-    goto/16 :goto_a
+    goto/16 :goto_b
 
     :cond_7
     :goto_4
-    :try_start_3
+    :try_start_4
     iget-object v0, v1, Lcom/android/server/wm/ActivityStackSupervisor;->mService:Lcom/android/server/wm/ActivityTaskManagerService;
 
     iget-object v0, v0, Lcom/android/server/wm/ActivityTaskManagerService;->mAmInternal:Landroid/app/ActivityManagerInternal;
 
-    iget v3, v8, Lcom/android/server/wm/TaskRecord;->userId:I
+    iget v3, v9, Lcom/android/server/wm/TaskRecord;->userId:I
 
     invoke-virtual {v0, v3}, Landroid/app/ActivityManagerInternal;->shouldConfirmCredentials(I)Z
 
     move-result v0
-    :try_end_3
-    .catchall {:try_start_3 .. :try_end_3} :catchall_a
+    :try_end_4
+    .catchall {:try_start_4 .. :try_end_4} :catchall_c
 
     if-nez v0, :cond_b
 
-    :try_start_4
-    invoke-virtual {v8}, Lcom/android/server/wm/TaskRecord;->getRootActivity()Lcom/android/server/wm/ActivityRecord;
+    :try_start_5
+    invoke-virtual {v9}, Lcom/android/server/wm/TaskRecord;->getRootActivity()Lcom/android/server/wm/ActivityRecord;
 
     move-result-object v0
 
     if-eqz v0, :cond_a
 
-    invoke-virtual {v8}, Lcom/android/server/wm/TaskRecord;->getTopActivity()Lcom/android/server/wm/ActivityRecord;
+    invoke-virtual {v9}, Lcom/android/server/wm/TaskRecord;->getTopActivity()Lcom/android/server/wm/ActivityRecord;
 
     move-result-object v0
 
@@ -8708,60 +8742,71 @@
 
     iget-object v0, v1, Lcom/android/server/wm/ActivityStackSupervisor;->mActivityMetricsLogger:Lcom/android/server/wm/ActivityMetricsLogger;
 
-    iget-object v3, v8, Lcom/android/server/wm/TaskRecord;->intent:Landroid/content/Intent;
+    iget-object v3, v9, Lcom/android/server/wm/TaskRecord;->intent:Landroid/content/Intent;
 
     invoke-virtual {v0, v3}, Lcom/android/server/wm/ActivityMetricsLogger;->notifyActivityLaunching(Landroid/content/Intent;)V
-    :try_end_4
-    .catchall {:try_start_4 .. :try_end_4} :catchall_6
+    :try_end_5
+    .catchall {:try_start_5 .. :try_end_5} :catchall_8
 
-    :try_start_5
+    :try_start_6
     iget-object v3, v1, Lcom/android/server/wm/ActivityStackSupervisor;->mService:Lcom/android/server/wm/ActivityTaskManagerService;
-
-    const/4 v4, 0x0
+    :try_end_6
+    .catchall {:try_start_6 .. :try_end_6} :catchall_6
 
     const/4 v0, 0x0
 
-    iget v6, v8, Lcom/android/server/wm/TaskRecord;->taskId:I
-    :try_end_5
-    .catchall {:try_start_5 .. :try_end_5} :catchall_4
+    const/4 v6, 0x0
 
-    const/16 v18, 0x0
+    :try_start_7
+    iget v7, v9, Lcom/android/server/wm/TaskRecord;->taskId:I
+    :try_end_7
+    .catchall {:try_start_7 .. :try_end_7} :catchall_5
 
-    const/16 v19, 0x1
+    const/16 v19, 0x0
 
-    move-object/from16 v20, v5
-
-    move-object v5, v0
+    const/16 v20, 0x1
 
     move-object/from16 v21, v13
 
-    move v13, v7
+    move v13, v4
 
-    move/from16 v7, v18
+    move-object v4, v0
 
-    move-object/from16 v22, v8
+    move-object/from16 v22, v5
+
+    move-object v5, v6
+
+    move v6, v7
 
     const/4 v12, 0x4
 
+    const/16 v17, 0x3
+
+    move/from16 v7, v19
+
+    move/from16 v23, v11
+
+    move-object v11, v8
+
     move-object/from16 v8, p4
 
-    move/from16 v17, v11
+    move-object/from16 v24, v9
 
-    move v11, v9
+    move/from16 v13, v17
 
-    move/from16 v9, v19
+    move/from16 v9, v20
 
-    :try_start_6
+    :try_start_8
     invoke-virtual/range {v3 .. v9}, Lcom/android/server/wm/ActivityTaskManagerService;->moveTaskToFrontLocked(Landroid/app/IApplicationThread;Ljava/lang/String;IILcom/android/server/wm/SafeActivityOptions;Z)V
 
-    invoke-virtual/range {v20 .. v20}, Lcom/android/server/wm/ActivityRecord;->applyOptionsLocked()V
-    :try_end_6
-    .catchall {:try_start_6 .. :try_end_6} :catchall_3
+    invoke-virtual/range {v22 .. v22}, Lcom/android/server/wm/ActivityRecord;->applyOptionsLocked()V
+    :try_end_8
+    .catchall {:try_start_8 .. :try_end_8} :catchall_4
 
-    :try_start_7
+    :try_start_9
     iget-object v0, v1, Lcom/android/server/wm/ActivityStackSupervisor;->mActivityMetricsLogger:Lcom/android/server/wm/ActivityMetricsLogger;
 
-    move-object/from16 v3, v20
+    move-object/from16 v3, v22
 
     const/4 v4, 0x2
 
@@ -8775,25 +8820,25 @@
 
     move-result-object v0
 
-    invoke-virtual/range {v22 .. v22}, Lcom/android/server/wm/TaskRecord;->getTopActivity()Lcom/android/server/wm/ActivityRecord;
+    invoke-virtual/range {v24 .. v24}, Lcom/android/server/wm/TaskRecord;->getTopActivity()Lcom/android/server/wm/ActivityRecord;
 
     move-result-object v4
 
-    invoke-virtual/range {v22 .. v22}, Lcom/android/server/wm/TaskRecord;->getStack()Lcom/android/server/wm/ActivityStack;
+    invoke-virtual/range {v24 .. v24}, Lcom/android/server/wm/TaskRecord;->getStack()Lcom/android/server/wm/ActivityStack;
 
     move-result-object v5
 
     const/4 v6, 0x2
 
     invoke-virtual {v0, v4, v6, v5}, Lcom/android/server/wm/ActivityStartController;->postStartActivityProcessingForLastStarter(Lcom/android/server/wm/ActivityRecord;ILcom/android/server/wm/ActivityStack;)V
-    :try_end_7
-    .catchall {:try_start_7 .. :try_end_7} :catchall_2
+    :try_end_9
+    .catchall {:try_start_9 .. :try_end_9} :catchall_3
 
     nop
 
-    if-ne v10, v11, :cond_8
+    if-ne v10, v13, :cond_8
 
-    move-object/from16 v9, v22
+    move-object/from16 v9, v24
 
     invoke-virtual {v1, v9}, Lcom/android/server/wm/ActivityStackSupervisor;->setResizingDuringAnimation(Lcom/android/server/wm/TaskRecord;)V
 
@@ -8811,6 +8856,12 @@
 
     move-result-object v4
 
+    invoke-virtual {v9}, Lcom/android/server/wm/TaskRecord;->getStack()Lcom/android/server/wm/ActivityStack;
+
+    move-result-object v5
+
+    invoke-static {v5, v11}, Lcom/android/server/wm/OpAppLockerInjector;->lockTopApp(Lcom/android/server/wm/ActivityStack;Ljava/lang/String;)V
+
     invoke-virtual {v4}, Lcom/android/server/wm/ActivityStack;->isActivityTypeHome()Z
 
     move-result v5
@@ -8821,12 +8872,14 @@
 
     iget-object v5, v1, Lcom/android/server/wm/ActivityStackSupervisor;->mWindowManager:Lcom/android/server/wm/WindowManagerService;
 
-    invoke-virtual {v5, v13}, Lcom/android/server/wm/WindowManagerService;->checkSplitScreenMinimizedChanged(Z)V
+    const/4 v8, 0x0
+
+    invoke-virtual {v5, v8}, Lcom/android/server/wm/WindowManagerService;->checkSplitScreenMinimizedChanged(Z)V
 
     goto :goto_5
 
     :cond_8
-    move-object/from16 v9, v22
+    move-object/from16 v9, v24
 
     :cond_9
     :goto_5
@@ -8838,42 +8891,59 @@
 
     return v4
 
-    :catchall_2
+    :catchall_3
     move-exception v0
 
-    move-object/from16 v9, v22
+    move-object/from16 v9, v24
 
     move-object v6, v9
 
     move v4, v10
 
-    move v5, v11
+    move-object v10, v11
 
     move v8, v12
 
-    move v10, v13
+    move v5, v13
 
     move-object v9, v15
 
-    move/from16 v22, v17
+    const/4 v11, 0x0
 
-    goto/16 :goto_a
-
-    :catchall_3
-    move-exception v0
-
-    move-object/from16 v3, v20
-
-    move-object/from16 v9, v22
-
-    goto :goto_6
+    goto/16 :goto_b
 
     :catchall_4
     move-exception v0
 
+    move-object/from16 v3, v22
+
+    move-object/from16 v9, v24
+
+    const/4 v8, 0x0
+
+    goto :goto_7
+
+    :catchall_5
+    move-exception v0
+
     move-object v3, v5
 
-    move/from16 v17, v11
+    move/from16 v23, v11
+
+    move-object/from16 v21, v13
+
+    const/4 v12, 0x4
+
+    const/4 v13, 0x3
+
+    goto :goto_6
+
+    :catchall_6
+    move-exception v0
+
+    move-object v3, v5
+
+    move/from16 v23, v11
 
     move-object/from16 v21, v13
 
@@ -8881,12 +8951,13 @@
 
     move v13, v7
 
-    move v11, v9
-
-    move-object v9, v8
-
     :goto_6
-    :try_start_8
+    move-object v11, v8
+
+    move v8, v4
+
+    :goto_7
+    :try_start_a
     iget-object v4, v1, Lcom/android/server/wm/ActivityStackSupervisor;->mActivityMetricsLogger:Lcom/android/server/wm/ActivityMetricsLogger;
 
     const/4 v5, 0x2
@@ -8894,30 +8965,30 @@
     invoke-virtual {v4, v5, v3}, Lcom/android/server/wm/ActivityMetricsLogger;->notifyActivityLaunched(ILcom/android/server/wm/ActivityRecord;)V
 
     throw v0
-    :try_end_8
-    .catchall {:try_start_8 .. :try_end_8} :catchall_5
+    :try_end_a
+    .catchall {:try_start_a .. :try_end_a} :catchall_7
 
-    :catchall_5
+    :catchall_7
     move-exception v0
 
     move-object v6, v9
 
     move v4, v10
 
-    move v5, v11
+    move-object v10, v11
 
-    move v8, v12
-
-    move v10, v13
+    move v5, v13
 
     move-object v9, v15
 
-    move/from16 v22, v17
+    move v11, v8
 
-    goto/16 :goto_a
+    move v8, v12
+
+    goto/16 :goto_b
 
     :cond_a
-    move/from16 v17, v11
+    move/from16 v23, v11
 
     move-object/from16 v21, v13
 
@@ -8925,43 +8996,41 @@
 
     move v13, v7
 
-    move v11, v9
+    move-object v11, v8
 
-    move-object v9, v8
+    move v8, v4
 
-    goto :goto_7
+    goto :goto_8
 
-    :catchall_6
+    :catchall_8
     move-exception v0
 
-    move/from16 v17, v11
+    move/from16 v23, v11
 
-    const/4 v12, 0x4
+    move-object/from16 v21, v13
 
-    move v11, v9
+    move-object v11, v8
 
-    move-object v9, v8
+    move v5, v7
 
     move-object v6, v9
 
-    move v4, v10
-
-    move v5, v11
-
-    move v8, v12
-
-    move-object/from16 v21, v13
-
     move-object v9, v15
 
-    move/from16 v22, v17
+    const/4 v8, 0x4
 
-    move v10, v7
+    move-object/from16 v32, v11
 
-    goto/16 :goto_a
+    move v11, v4
+
+    move v4, v10
+
+    move-object/from16 v10, v32
+
+    goto/16 :goto_b
 
     :cond_b
-    move/from16 v17, v11
+    move/from16 v23, v11
 
     move-object/from16 v21, v13
 
@@ -8969,12 +9038,12 @@
 
     move v13, v7
 
-    move v11, v9
+    move-object v11, v8
 
-    move-object v9, v8
+    move v8, v4
 
-    :goto_7
-    :try_start_9
+    :goto_8
+    :try_start_b
     iget-object v7, v9, Lcom/android/server/wm/TaskRecord;->mCallingPackage:Ljava/lang/String;
 
     iget-object v0, v9, Lcom/android/server/wm/TaskRecord;->intent:Landroid/content/Intent;
@@ -8984,14 +9053,14 @@
     invoke-virtual {v0, v3}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
 
     iget v3, v9, Lcom/android/server/wm/TaskRecord;->userId:I
-    :try_end_9
-    .catchall {:try_start_9 .. :try_end_9} :catchall_9
+    :try_end_b
+    .catchall {:try_start_b .. :try_end_b} :catchall_b
 
-    move-object v8, v15
+    move-object v6, v15
 
     move v15, v3
 
-    :try_start_a
+    :try_start_c
     iget-object v3, v1, Lcom/android/server/wm/ActivityStackSupervisor;->mService:Lcom/android/server/wm/ActivityTaskManagerService;
 
     invoke-virtual {v3}, Lcom/android/server/wm/ActivityTaskManagerService;->getActivityStartController()Lcom/android/server/wm/ActivityStartController;
@@ -9002,17 +9071,17 @@
 
     const/16 v16, 0x0
 
-    const/16 v22, 0x0
+    const/16 v17, 0x0
 
-    const/16 v23, 0x0
+    const/16 v22, 0x0
 
     const/16 v24, 0x0
 
     const/16 v25, 0x0
 
     const-string v26, "startActivityFromRecents"
-    :try_end_a
-    .catchall {:try_start_a .. :try_end_a} :catchall_8
+    :try_end_c
+    .catchall {:try_start_c .. :try_end_c} :catchall_a
 
     const/16 v18, 0x0
 
@@ -9022,23 +9091,25 @@
 
     move/from16 v5, p1
 
+    move-object/from16 v27, v6
+
     move/from16 v6, p2
 
-    move-object/from16 v27, v8
+    move/from16 v28, v8
 
     move-object v8, v0
 
-    move-object/from16 v28, v9
+    move-object/from16 v29, v9
 
     move-object/from16 v9, v16
 
-    move/from16 v29, v10
+    move/from16 v30, v10
 
-    move-object/from16 v10, v22
+    move-object/from16 v10, v17
 
-    move/from16 v22, v17
+    move-object/from16 v31, v11
 
-    move-object/from16 v11, v23
+    move-object/from16 v11, v22
 
     move/from16 v12, v24
 
@@ -9046,24 +9117,24 @@
 
     move-object/from16 v14, p4
 
-    move-object/from16 v16, v28
+    move-object/from16 v16, v29
 
     move-object/from16 v17, v26
 
-    :try_start_b
+    :try_start_d
     invoke-virtual/range {v3 .. v20}, Lcom/android/server/wm/ActivityStartController;->startActivityInPackage(IIILjava/lang/String;Landroid/content/Intent;Ljava/lang/String;Landroid/os/IBinder;Ljava/lang/String;IILcom/android/server/wm/SafeActivityOptions;ILcom/android/server/wm/TaskRecord;Ljava/lang/String;ZLcom/android/server/am/PendingIntentRecord;Z)I
 
     move-result v3
-    :try_end_b
-    .catchall {:try_start_b .. :try_end_b} :catchall_7
+    :try_end_d
+    .catchall {:try_start_d .. :try_end_d} :catchall_9
 
-    move/from16 v4, v29
+    move/from16 v4, v30
 
     const/4 v5, 0x3
 
     if-ne v4, v5, :cond_c
 
-    move-object/from16 v6, v28
+    move-object/from16 v6, v29
 
     invoke-virtual {v1, v6}, Lcom/android/server/wm/ActivityStackSupervisor;->setResizingDuringAnimation(Lcom/android/server/wm/TaskRecord;)V
 
@@ -9083,6 +9154,14 @@
 
     move-result-object v8
 
+    invoke-virtual {v6}, Lcom/android/server/wm/TaskRecord;->getStack()Lcom/android/server/wm/ActivityStack;
+
+    move-result-object v9
+
+    move-object/from16 v10, v31
+
+    invoke-static {v9, v10}, Lcom/android/server/wm/OpAppLockerInjector;->lockTopApp(Lcom/android/server/wm/ActivityStack;Ljava/lang/String;)V
+
     invoke-virtual {v8}, Lcom/android/server/wm/ActivityStack;->isActivityTypeHome()Z
 
     move-result v9
@@ -9095,118 +9174,126 @@
 
     iget-object v9, v1, Lcom/android/server/wm/ActivityStackSupervisor;->mWindowManager:Lcom/android/server/wm/WindowManagerService;
 
-    const/4 v10, 0x0
+    const/4 v11, 0x0
 
-    invoke-virtual {v9, v10}, Lcom/android/server/wm/WindowManagerService;->checkSplitScreenMinimizedChanged(Z)V
+    invoke-virtual {v9, v11}, Lcom/android/server/wm/WindowManagerService;->checkSplitScreenMinimizedChanged(Z)V
 
-    goto :goto_8
+    goto :goto_9
 
     :cond_c
-    move-object/from16 v6, v28
+    move-object/from16 v6, v29
 
     :cond_d
-    :goto_8
+    :goto_9
     iget-object v5, v1, Lcom/android/server/wm/ActivityStackSupervisor;->mWindowManager:Lcom/android/server/wm/WindowManagerService;
 
     invoke-virtual {v5}, Lcom/android/server/wm/WindowManagerService;->continueSurfaceLayout()V
 
     return v3
 
-    :catchall_7
+    :catchall_9
     move-exception v0
 
     move-object/from16 v9, v27
 
-    move-object/from16 v6, v28
+    move-object/from16 v6, v29
 
-    move/from16 v4, v29
+    move/from16 v4, v30
+
+    move-object/from16 v10, v31
 
     const/4 v5, 0x3
 
     const/4 v8, 0x4
 
-    const/4 v10, 0x0
+    const/4 v11, 0x0
 
-    goto/16 :goto_a
-
-    :catchall_8
-    move-exception v0
-
-    move-object v6, v9
-
-    move v4, v10
-
-    move v5, v11
-
-    move v10, v13
-
-    move/from16 v22, v17
-
-    move-object v9, v8
-
-    move v8, v12
-
-    goto :goto_9
-
-    :catchall_9
-    move-exception v0
-
-    move-object v6, v9
-
-    move v4, v10
-
-    move v5, v11
-
-    move v8, v12
-
-    move v10, v13
-
-    move-object v9, v15
-
-    move/from16 v22, v17
-
-    :goto_9
-    goto :goto_a
+    goto/16 :goto_b
 
     :catchall_a
     move-exception v0
 
-    move-object v6, v8
-
-    move v5, v9
-
     move v4, v10
 
-    move/from16 v22, v11
+    move-object v10, v11
 
-    move-object/from16 v21, v13
+    move v5, v13
 
-    move-object v9, v15
+    move v11, v8
 
-    const/4 v8, 0x4
+    move v8, v12
 
-    move v10, v7
+    move-object/from16 v32, v9
+
+    move-object v9, v6
+
+    move-object/from16 v6, v32
 
     goto :goto_a
 
-    :cond_e
-    move-object v6, v8
+    :catchall_b
+    move-exception v0
 
-    move v5, v9
+    move-object v6, v9
 
     move v4, v10
 
-    move/from16 v22, v11
+    move-object v10, v11
+
+    move v5, v13
+
+    move-object v9, v15
+
+    move v11, v8
+
+    move v8, v12
+
+    :goto_a
+    goto :goto_b
+
+    :catchall_c
+    move-exception v0
+
+    move v5, v7
+
+    move-object v6, v9
+
+    move/from16 v23, v11
 
     move-object/from16 v21, v13
 
     move-object v9, v15
 
+    move v11, v4
+
+    move v4, v10
+
+    move-object v10, v8
+
     const/4 v8, 0x4
 
-    move v10, v7
+    goto :goto_b
 
-    :try_start_c
+    :cond_e
+    move-object v6, v9
+
+    move/from16 v23, v11
+
+    move-object/from16 v21, v13
+
+    move-object v9, v15
+
+    const/4 v5, 0x3
+
+    move v11, v4
+
+    move v4, v10
+
+    move-object v10, v8
+
+    const/4 v8, 0x4
+
+    :try_start_e
     invoke-direct/range {p0 .. p0}, Lcom/android/server/wm/ActivityStackSupervisor;->continueUpdateRecentsHomeStackBounds()V
 
     iget-object v3, v1, Lcom/android/server/wm/ActivityStackSupervisor;->mWindowManager:Lcom/android/server/wm/WindowManagerService;
@@ -9234,34 +9321,36 @@
     invoke-direct {v3, v0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
     throw v3
-    :try_end_c
-    .catchall {:try_start_c .. :try_end_c} :catchall_b
+    :try_end_e
+    .catchall {:try_start_e .. :try_end_e} :catchall_d
 
-    :catchall_b
+    :catchall_d
     move-exception v0
 
-    goto :goto_a
+    goto :goto_b
 
-    :catchall_c
+    :catchall_e
     move-exception v0
 
-    move v5, v9
-
-    move v4, v10
-
-    move/from16 v22, v11
+    move/from16 v23, v11
 
     move-object/from16 v21, v13
 
     move-object v9, v15
 
-    const/4 v8, 0x4
+    const/4 v5, 0x3
 
-    move v10, v7
+    move v11, v4
+
+    move v4, v10
+
+    move-object v10, v8
+
+    const/4 v8, 0x4
 
     move-object v6, v3
 
-    :goto_a
+    :goto_b
     if-ne v4, v5, :cond_f
 
     if-eqz v6, :cond_f
@@ -9282,6 +9371,12 @@
 
     move-result-object v5
 
+    invoke-virtual {v6}, Lcom/android/server/wm/TaskRecord;->getStack()Lcom/android/server/wm/ActivityStack;
+
+    move-result-object v7
+
+    invoke-static {v7, v10}, Lcom/android/server/wm/OpAppLockerInjector;->lockTopApp(Lcom/android/server/wm/ActivityStack;Ljava/lang/String;)V
+
     invoke-virtual {v5}, Lcom/android/server/wm/ActivityStack;->isActivityTypeHome()Z
 
     move-result v7
@@ -9292,7 +9387,7 @@
 
     iget-object v7, v1, Lcom/android/server/wm/ActivityStackSupervisor;->mWindowManager:Lcom/android/server/wm/WindowManagerService;
 
-    invoke-virtual {v7, v10}, Lcom/android/server/wm/WindowManagerService;->checkSplitScreenMinimizedChanged(Z)V
+    invoke-virtual {v7, v11}, Lcom/android/server/wm/WindowManagerService;->checkSplitScreenMinimizedChanged(Z)V
 
     :cond_f
     iget-object v3, v1, Lcom/android/server/wm/ActivityStackSupervisor;->mWindowManager:Lcom/android/server/wm/WindowManagerService;
@@ -9304,7 +9399,7 @@
     :cond_10
     move v4, v10
 
-    move/from16 v22, v11
+    move/from16 v23, v11
 
     move-object/from16 v21, v13
 

@@ -3178,7 +3178,7 @@
 
     move-result v2
 
-    const-string v3, "isRatingBlocked"
+    const-string/jumbo v3, "isRatingBlocked"
 
     invoke-static {v0, v1, v2, p2, v3}, Lcom/android/server/tv/TvInputManagerService;->access$4100(Lcom/android/server/tv/TvInputManagerService;IIILjava/lang/String;)I
 

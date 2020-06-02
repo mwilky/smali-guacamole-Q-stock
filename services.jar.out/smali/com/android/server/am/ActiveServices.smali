@@ -10265,6 +10265,8 @@
     return v9
 
     :cond_14
+    invoke-static {v6, v5, v7, v14}, Lcom/android/server/am/OpBGFrozenInjector;->bindServiceLockedEvent(Lcom/android/server/am/ProcessRecord;Landroid/content/Intent;Lcom/android/server/am/ServiceRecord;Ljava/lang/String;)V
+
     const/4 v0, 0x0
 
     move-object/from16 v13, p0

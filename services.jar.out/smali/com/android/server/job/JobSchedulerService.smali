@@ -1267,7 +1267,7 @@
 
     sget-boolean v1, Lcom/android/server/job/JobSchedulerService;->DEBUG:Z
 
-    const-string v2, "isReadyToBeExecutedLocked: "
+    const-string/jumbo v2, "isReadyToBeExecutedLocked: "
 
     const-string v3, "JobScheduler"
 
