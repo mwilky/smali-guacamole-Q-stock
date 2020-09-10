@@ -50,7 +50,7 @@
     :goto_0
     iget v2, p0, Lcom/oneplus/settings/quicklaunch/OPAppDragAndDropAdapter$4;->val$count:I
 
-    if-ge v1, v2, :cond_3
+    if-ge v1, v2, :cond_4
 
     iget-object v2, p0, Lcom/oneplus/settings/quicklaunch/OPAppDragAndDropAdapter$4;->this$0:Lcom/oneplus/settings/quicklaunch/OPAppDragAndDropAdapter;
 
@@ -93,7 +93,7 @@
 
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    goto :goto_1
+    goto :goto_2
 
     :cond_1
     invoke-virtual {v2}, Lcom/oneplus/settings/better/OPAppModel;->getType()I
@@ -110,9 +110,26 @@
 
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    goto :goto_2
+    goto :goto_1
 
     :cond_2
+    invoke-virtual {v2}, Lcom/oneplus/settings/better/OPAppModel;->getType()I
+
+    move-result v3
+
+    const/4 v4, 0x3
+
+    if-ne v3, v4, :cond_3
+
+    invoke-static {v2}, Lcom/oneplus/settings/utils/OPUtils;->getQuickMiniProgrameString(Lcom/oneplus/settings/better/OPAppModel;)Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    goto :goto_2
+
+    :cond_3
     :goto_1
     nop
 
@@ -133,6 +150,6 @@
 
     goto :goto_0
 
-    :cond_3
+    :cond_4
     return-void
 .end method

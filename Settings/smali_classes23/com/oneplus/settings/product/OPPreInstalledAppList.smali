@@ -57,6 +57,63 @@
 
     move-result-object v0
 
+    const v1, 0x7f0300be
+
+    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getStringArray(I)[Ljava/lang/String;
+
+    move-result-object v0
+
+    sput-object v0, Lcom/oneplus/settings/product/OPPreInstalledAppList;->sOneplusH2PreIinstalledAppsName:[Ljava/lang/String;
+
+    invoke-virtual {p0}, Lcom/oneplus/settings/product/OPPreInstalledAppList;->getContext()Landroid/content/Context;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v0
+
+    const v1, 0x7f0300b2
+
+    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getStringArray(I)[Ljava/lang/String;
+
+    move-result-object v0
+
+    sput-object v0, Lcom/oneplus/settings/product/OPPreInstalledAppList;->sOneplusH2PreIinstalledAppsCompany:[Ljava/lang/String;
+
+    invoke-virtual {p0}, Lcom/oneplus/settings/product/OPPreInstalledAppList;->getContext()Landroid/content/Context;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v0
+
+    const v1, 0x7f0300b8
+
+    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getStringArray(I)[Ljava/lang/String;
+
+    move-result-object v0
+
+    sput-object v0, Lcom/oneplus/settings/product/OPPreInstalledAppList;->sOneplusH2PreIinstalledAppsFunction:[Ljava/lang/String;
+
+    goto/16 :goto_2
+
+    :cond_0
+    invoke-static {}, Lcom/oneplus/settings/utils/OPUtils;->isGuaProject()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    invoke-virtual {p0}, Lcom/oneplus/settings/product/OPPreInstalledAppList;->getContext()Landroid/content/Context;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v0
+
     const v1, 0x7f0300bd
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getStringArray(I)[Ljava/lang/String;
@@ -99,63 +156,6 @@
 
     goto/16 :goto_2
 
-    :cond_0
-    invoke-static {}, Lcom/oneplus/settings/utils/OPUtils;->isGuaProject()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_1
-
-    invoke-virtual {p0}, Lcom/oneplus/settings/product/OPPreInstalledAppList;->getContext()Landroid/content/Context;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
-
-    move-result-object v0
-
-    const v1, 0x7f0300bc
-
-    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getStringArray(I)[Ljava/lang/String;
-
-    move-result-object v0
-
-    sput-object v0, Lcom/oneplus/settings/product/OPPreInstalledAppList;->sOneplusH2PreIinstalledAppsName:[Ljava/lang/String;
-
-    invoke-virtual {p0}, Lcom/oneplus/settings/product/OPPreInstalledAppList;->getContext()Landroid/content/Context;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
-
-    move-result-object v0
-
-    const v1, 0x7f0300b0
-
-    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getStringArray(I)[Ljava/lang/String;
-
-    move-result-object v0
-
-    sput-object v0, Lcom/oneplus/settings/product/OPPreInstalledAppList;->sOneplusH2PreIinstalledAppsCompany:[Ljava/lang/String;
-
-    invoke-virtual {p0}, Lcom/oneplus/settings/product/OPPreInstalledAppList;->getContext()Landroid/content/Context;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
-
-    move-result-object v0
-
-    const v1, 0x7f0300b6
-
-    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getStringArray(I)[Ljava/lang/String;
-
-    move-result-object v0
-
-    sput-object v0, Lcom/oneplus/settings/product/OPPreInstalledAppList;->sOneplusH2PreIinstalledAppsFunction:[Ljava/lang/String;
-
-    goto/16 :goto_2
-
     :cond_1
     sget-object v0, Landroid/os/Build;->MODEL:Ljava/lang/String;
 
@@ -165,7 +165,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f120db2
+    const v2, 0x7f120e29
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -185,7 +185,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f120db3
+    const v2, 0x7f120e2a
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -208,11 +208,11 @@
 
     move-result v0
 
-    const v1, 0x7f0300b8
+    const v1, 0x7f0300b9
 
-    const v2, 0x7f0300b2
+    const v2, 0x7f0300b3
 
-    const v3, 0x7f0300be
+    const v3, 0x7f0300bf
 
     if-eqz v0, :cond_3
 
@@ -331,52 +331,6 @@
 
     move-result-object v0
 
-    const v1, 0x7f0300b9
-
-    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getStringArray(I)[Ljava/lang/String;
-
-    move-result-object v0
-
-    sput-object v0, Lcom/oneplus/settings/product/OPPreInstalledAppList;->sOneplusH2PreIinstalledAppsName:[Ljava/lang/String;
-
-    sget-object v0, Lcom/oneplus/settings/SettingsBaseApplication;->mApplication:Landroid/app/Application;
-
-    invoke-virtual {v0}, Landroid/app/Application;->getResources()Landroid/content/res/Resources;
-
-    move-result-object v0
-
-    const v1, 0x7f0300ad
-
-    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getStringArray(I)[Ljava/lang/String;
-
-    move-result-object v0
-
-    sput-object v0, Lcom/oneplus/settings/product/OPPreInstalledAppList;->sOneplusH2PreIinstalledAppsCompany:[Ljava/lang/String;
-
-    sget-object v0, Lcom/oneplus/settings/SettingsBaseApplication;->mApplication:Landroid/app/Application;
-
-    invoke-virtual {v0}, Landroid/app/Application;->getResources()Landroid/content/res/Resources;
-
-    move-result-object v0
-
-    const v1, 0x7f0300b3
-
-    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getStringArray(I)[Ljava/lang/String;
-
-    move-result-object v0
-
-    sput-object v0, Lcom/oneplus/settings/product/OPPreInstalledAppList;->sOneplusH2PreIinstalledAppsFunction:[Ljava/lang/String;
-
-    goto :goto_2
-
-    :cond_6
-    :goto_0
-    sget-object v0, Lcom/oneplus/settings/SettingsBaseApplication;->mApplication:Landroid/app/Application;
-
-    invoke-virtual {v0}, Landroid/app/Application;->getResources()Landroid/content/res/Resources;
-
-    move-result-object v0
-
     const v1, 0x7f0300ba
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getStringArray(I)[Ljava/lang/String;
@@ -415,8 +369,8 @@
 
     goto :goto_2
 
-    :cond_7
-    :goto_1
+    :cond_6
+    :goto_0
     sget-object v0, Lcom/oneplus/settings/SettingsBaseApplication;->mApplication:Landroid/app/Application;
 
     invoke-virtual {v0}, Landroid/app/Application;->getResources()Landroid/content/res/Resources;
@@ -452,6 +406,52 @@
     move-result-object v0
 
     const v1, 0x7f0300b5
+
+    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getStringArray(I)[Ljava/lang/String;
+
+    move-result-object v0
+
+    sput-object v0, Lcom/oneplus/settings/product/OPPreInstalledAppList;->sOneplusH2PreIinstalledAppsFunction:[Ljava/lang/String;
+
+    goto :goto_2
+
+    :cond_7
+    :goto_1
+    sget-object v0, Lcom/oneplus/settings/SettingsBaseApplication;->mApplication:Landroid/app/Application;
+
+    invoke-virtual {v0}, Landroid/app/Application;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v0
+
+    const v1, 0x7f0300bc
+
+    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getStringArray(I)[Ljava/lang/String;
+
+    move-result-object v0
+
+    sput-object v0, Lcom/oneplus/settings/product/OPPreInstalledAppList;->sOneplusH2PreIinstalledAppsName:[Ljava/lang/String;
+
+    sget-object v0, Lcom/oneplus/settings/SettingsBaseApplication;->mApplication:Landroid/app/Application;
+
+    invoke-virtual {v0}, Landroid/app/Application;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v0
+
+    const v1, 0x7f0300b0
+
+    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getStringArray(I)[Ljava/lang/String;
+
+    move-result-object v0
+
+    sput-object v0, Lcom/oneplus/settings/product/OPPreInstalledAppList;->sOneplusH2PreIinstalledAppsCompany:[Ljava/lang/String;
+
+    sget-object v0, Lcom/oneplus/settings/SettingsBaseApplication;->mApplication:Landroid/app/Application;
+
+    invoke-virtual {v0}, Landroid/app/Application;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v0
+
+    const v1, 0x7f0300b6
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getStringArray(I)[Ljava/lang/String;
 
@@ -499,7 +499,7 @@
 
     invoke-direct {v3, v4}, Lcom/oneplus/settings/ui/OPNoSelectablePreference;-><init>(Landroid/content/Context;)V
 
-    const v4, 0x7f0d01f7
+    const v4, 0x7f0d01f8
 
     invoke-virtual {v3, v4}, Lcom/oneplus/settings/ui/OPNoSelectablePreference;->setLayoutResource(I)V
 

@@ -120,7 +120,7 @@
     invoke-virtual {v1}, Lcom/android/settings/widget/SwitchBar;->show()V
 
     :goto_1
-    const v1, 0x7f120128
+    const v1, 0x7f120131
 
     invoke-virtual {v0, v1}, Lcom/android/settings/SettingsActivity;->setTitle(I)V
 
@@ -190,7 +190,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f1207a7
+    const v2, 0x7f1207df
 
     invoke-static {v0, p1, v2, v1}, Lcom/android/settingslib/HelpUtils;->prepareHelpMenuItem(Landroid/app/Activity;Landroid/view/Menu;ILjava/lang/String;)Z
 
@@ -273,7 +273,7 @@
     return-object v2
 
     :cond_0
-    const v2, 0x7f0d0263
+    const v2, 0x7f0d0264
 
     const/4 v3, 0x0
 
@@ -293,7 +293,7 @@
 
     check-cast v2, Landroid/widget/ImageView;
 
-    const v3, 0x7f080226
+    const v3, 0x7f08022f
 
     invoke-virtual {v2, v3}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -313,14 +313,14 @@
 
     if-eqz v4, :cond_1
 
-    const v4, 0x7f120123
+    const v4, 0x7f12012c
 
     invoke-virtual {v3, v4}, Landroid/widget/TextView;->setText(I)V
 
     goto :goto_0
 
     :cond_1
-    const v4, 0x7f120124
+    const v4, 0x7f12012d
 
     invoke-virtual {v3, v4}, Landroid/widget/TextView;->setText(I)V
 

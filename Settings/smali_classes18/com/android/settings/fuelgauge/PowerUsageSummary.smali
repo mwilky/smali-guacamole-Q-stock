@@ -192,7 +192,7 @@
 .method public getHelpResource()I
     .locals 1
 
-    const v0, 0x7f1207c3
+    const v0, 0x7f1207fb
 
     return v0
 .end method
@@ -272,7 +272,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f1200f7
+    const v1, 0x7f1200f9
 
     invoke-virtual {v0, v1}, Lcom/android/settings/core/SubSettingLauncher;->setTitleRes(I)Lcom/android/settings/core/SubSettingLauncher;
 
@@ -406,7 +406,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f12024c
+    const v1, 0x7f12025c
 
     invoke-virtual {v0, v1}, Lcom/oneplus/settings/widget/OPFooterPreference;->setTitle(I)V
 
@@ -454,7 +454,7 @@
 
     const/4 v1, 0x2
 
-    const v2, 0x7f1200f7
+    const v2, 0x7f1200f9
 
     invoke-interface {p1, v0, v1, v0, v2}, Landroid/view/Menu;->add(IIII)Landroid/view/MenuItem;
 
@@ -525,7 +525,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f1200f7
+    const v1, 0x7f1200f9
 
     invoke-virtual {v0, v1}, Lcom/android/settings/core/SubSettingLauncher;->setTitleRes(I)Lcom/android/settings/core/SubSettingLauncher;
 
@@ -702,7 +702,7 @@
 
     iget-object v0, p0, Lcom/android/settings/fuelgauge/PowerUsageSummary;->mBatteryLayoutPref:Lcom/android/settingslib/widget/LayoutPreference;
 
-    const v1, 0x7f0a0699
+    const v1, 0x7f0a069a
 
     invoke-virtual {v0, v1}, Lcom/android/settingslib/widget/LayoutPreference;->findViewById(I)Landroid/view/View;
 
@@ -850,7 +850,7 @@
 
     iget-object v0, p0, Lcom/android/settings/fuelgauge/PowerUsageSummary;->mLastFullChargePref:Landroidx/preference/Preference;
 
-    const v2, 0x7f12024d
+    const v2, 0x7f12025d
 
     invoke-virtual {v0, v2}, Landroidx/preference/Preference;->setTitle(I)V
 
@@ -889,7 +889,7 @@
 
     iget-object v0, p0, Lcom/android/settings/fuelgauge/PowerUsageSummary;->mLastFullChargePref:Landroidx/preference/Preference;
 
-    const v4, 0x7f120256
+    const v4, 0x7f120266
 
     invoke-virtual {v0, v4}, Landroidx/preference/Preference;->setTitle(I)V
 
@@ -944,7 +944,7 @@
 
     iget-object v2, p0, Lcom/android/settings/fuelgauge/PowerUsageSummary;->mBatteryLayoutPref:Lcom/android/settingslib/widget/LayoutPreference;
 
-    const v3, 0x7f0a0699
+    const v3, 0x7f0a069a
 
     invoke-virtual {v2, v3}, Lcom/android/settingslib/widget/LayoutPreference;->findViewById(I)Landroid/view/View;
 

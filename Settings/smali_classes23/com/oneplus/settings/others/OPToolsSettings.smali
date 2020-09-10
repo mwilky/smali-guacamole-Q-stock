@@ -244,7 +244,7 @@
 
     invoke-direct {v1, v2, p0}, Lcom/android/settings/password/ChooseLockSettingsHelper;-><init>(Landroid/app/Activity;Landroidx/fragment/app/Fragment;)V
 
-    const v2, 0x7f12108c
+    const v2, 0x7f121136
 
     invoke-virtual {p0, v2}, Lcom/oneplus/settings/others/OPToolsSettings;->getString(I)Ljava/lang/String;
 
@@ -459,7 +459,7 @@
 
     iget-object v1, p0, Lcom/oneplus/settings/others/OPToolsSettings;->mQuickPayPreference:Landroidx/preference/Preference;
 
-    const v3, 0x7f120cdb
+    const v3, 0x7f120d34
 
     invoke-virtual {v1, v3}, Landroidx/preference/Preference;->setSummary(I)V
 
@@ -468,7 +468,7 @@
     :cond_4
     iget-object v1, p0, Lcom/oneplus/settings/others/OPToolsSettings;->mQuickPayPreference:Landroidx/preference/Preference;
 
-    const v3, 0x7f120e72
+    const v3, 0x7f120eef
 
     invoke-virtual {v1, v3}, Landroidx/preference/Preference;->setSummary(I)V
 
@@ -538,7 +538,7 @@
 
     iget-object v1, p0, Lcom/oneplus/settings/others/OPToolsSettings;->mAntiMisOperationTouch:Landroidx/preference/SwitchPreference;
 
-    const v3, 0x7f120e48
+    const v3, 0x7f120ec4
 
     invoke-virtual {v1, v3}, Landroidx/preference/SwitchPreference;->setSummary(I)V
 
@@ -563,7 +563,7 @@
 
     iget-object v1, p0, Lcom/oneplus/settings/others/OPToolsSettings;->mTimerShutdownPreference:Landroidx/preference/Preference;
 
-    const v3, 0x7f120f9a
+    const v3, 0x7f121023
 
     invoke-virtual {v1, v3}, Landroidx/preference/Preference;->setSummary(I)V
 
@@ -805,7 +805,7 @@
 
     iget-object v1, p0, Lcom/oneplus/settings/others/OPToolsSettings;->mWorkLifeBalancePreference:Landroidx/preference/Preference;
 
-    const v2, 0x7f120b3b
+    const v2, 0x7f120b82
 
     invoke-virtual {v1, v2}, Landroidx/preference/Preference;->setSummary(I)V
 
@@ -818,7 +818,7 @@
 
     iget-object v1, p0, Lcom/oneplus/settings/others/OPToolsSettings;->mWorkLifeBalancePreference:Landroidx/preference/Preference;
 
-    const v2, 0x7f120b3c
+    const v2, 0x7f120b83
 
     invoke-virtual {v1, v2}, Landroidx/preference/Preference;->setSummary(I)V
 

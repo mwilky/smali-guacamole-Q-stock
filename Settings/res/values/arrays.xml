@@ -824,6 +824,12 @@
         <item>net.oneplus.launcher</item>
         <item>net.oneplus.h2launcher</item>
     </string-array>
+    <string-array name="double_click_items">
+        <item>@string/earphone_function_control_play_pause</item>
+        <item>@string/earphone_function_listening_breeno</item>
+        <item>@string/earphone_function_control_last_song</item>
+        <item>@string/earphone_function_control_next_song</item>
+    </string-array>
     <string-array name="dream_timeout_entries">
         <item>Never</item>
         <item>15 seconds</item>
@@ -2264,7 +2270,22 @@
         <item>1</item>
         <item>2</item>
     </string-array>
+    <string-array name="oneplus_quicklaunch_ways_name">
+        <item>@string/oneplus_quickpay_way_wecaht_qrcode</item>
+        <item>@string/oneplus_quickpay_way_wecaht_scanning</item>
+        <item>@string/oneplus_quickpay_way_alipay_qrcode</item>
+        <item>@string/oneplus_quickpay_way_alipay_scanning</item>
+        <item>@string/oneplus_quickpay_way_paytm</item>
+    </string-array>
     <string-array name="oneplus_quickpay_ways_key">
+        <item>key_quickpay_way_wecaht_qrcode</item>
+        <item>key_quickpay_way_wecaht_scanning</item>
+        <item>key_quickpay_way_wecaht_ridecode</item>
+        <item>key_quickpay_way_alipay_qrcode</item>
+        <item>key_quickpay_way_alipay_scanning</item>
+        <item>key_quickpay_way_paytm</item>
+    </string-array>
+    <string-array name="oneplus_quickpay_ways_key_O2">
         <item>key_quickpay_way_wecaht_qrcode</item>
         <item>key_quickpay_way_wecaht_scanning</item>
         <item>key_quickpay_way_alipay_qrcode</item>
@@ -2274,11 +2295,27 @@
     <string-array name="oneplus_quickpay_ways_name">
         <item>@string/oneplus_quickpay_way_wecaht_qrcode</item>
         <item>@string/oneplus_quickpay_way_wecaht_scanning</item>
+        <item>@string/oneplus_quickpay_way_wecaht_ridecode</item>
+        <item>@string/oneplus_quickpay_way_alipay_qrcode</item>
+        <item>@string/oneplus_quickpay_way_alipay_scanning</item>
+        <item>@string/oneplus_quickpay_way_paytm</item>
+    </string-array>
+    <string-array name="oneplus_quickpay_ways_name_O2">
+        <item>@string/oneplus_quickpay_way_wecaht_qrcode</item>
+        <item>@string/oneplus_quickpay_way_wecaht_scanning</item>
         <item>@string/oneplus_quickpay_way_alipay_qrcode</item>
         <item>@string/oneplus_quickpay_way_alipay_scanning</item>
         <item>@string/oneplus_quickpay_way_paytm</item>
     </string-array>
     <integer-array name="oneplus_quickpay_ways_value">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </integer-array>
+    <integer-array name="oneplus_quickpay_ways_value_O2">
         <item>0</item>
         <item>1</item>
         <item>2</item>

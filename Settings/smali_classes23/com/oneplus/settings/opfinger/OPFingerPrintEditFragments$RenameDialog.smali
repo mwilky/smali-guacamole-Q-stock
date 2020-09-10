@@ -60,7 +60,7 @@
 
     nop
 
-    const v2, 0x7f0a04ef
+    const v2, 0x7f0a04ec
 
     invoke-virtual {v0, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -92,7 +92,7 @@
 
     invoke-direct {v3, v4}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v4, 0x7f1216c6
+    const v4, 0x7f121798
 
     invoke-virtual {v3, v4}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
@@ -108,7 +108,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f120b9f
+    const v4, 0x7f120be6
 
     invoke-virtual {v3, v4, v1}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -118,7 +118,7 @@
 
     invoke-direct {v3, p0}, Lcom/oneplus/settings/opfinger/OPFingerPrintEditFragments$RenameDialog$2;-><init>(Lcom/oneplus/settings/opfinger/OPFingerPrintEditFragments$RenameDialog;)V
 
-    const v4, 0x7f120105
+    const v4, 0x7f12010d
 
     invoke-virtual {v1, v4, v3}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 

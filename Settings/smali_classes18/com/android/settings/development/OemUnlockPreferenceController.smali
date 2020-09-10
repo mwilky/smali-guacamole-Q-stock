@@ -416,7 +416,7 @@
 .method private updateOemUnlockSettingDescription()V
     .locals 3
 
-    const v0, 0x7f120b9e
+    const v0, 0x7f120be5
 
     invoke-virtual {p0}, Lcom/android/settings/development/OemUnlockPreferenceController;->isBootloaderUnlocked()Z
 
@@ -424,7 +424,7 @@
 
     if-eqz v1, :cond_0
 
-    const v0, 0x7f120b9a
+    const v0, 0x7f120be1
 
     goto :goto_0
 
@@ -435,7 +435,7 @@
 
     if-eqz v1, :cond_1
 
-    const v0, 0x7f120b9d
+    const v0, 0x7f120be4
 
     goto :goto_0
 
@@ -446,7 +446,7 @@
 
     if-nez v1, :cond_2
 
-    const v0, 0x7f120b9c
+    const v0, 0x7f120be3
 
     :cond_2
     :goto_0
@@ -724,7 +724,7 @@
 
     iget-object v0, p0, Lcom/android/settings/development/OemUnlockPreferenceController;->mChooseLockSettingsHelper:Lcom/android/settings/password/ChooseLockSettingsHelper;
 
-    const v1, 0x7f120b99
+    const v1, 0x7f120be0
 
     invoke-virtual {p1, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 

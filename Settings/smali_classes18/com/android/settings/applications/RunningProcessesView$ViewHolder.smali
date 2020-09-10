@@ -36,7 +36,7 @@
 
     iput-object p1, p0, Lcom/android/settings/applications/RunningProcessesView$ViewHolder;->rootView:Landroid/view/View;
 
-    const v0, 0x7f0a02f0
+    const v0, 0x7f0a02f5
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -46,7 +46,7 @@
 
     iput-object v0, p0, Lcom/android/settings/applications/RunningProcessesView$ViewHolder;->icon:Landroid/widget/ImageView;
 
-    const v0, 0x7f0a0421
+    const v0, 0x7f0a0426
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -66,7 +66,7 @@
 
     iput-object v0, p0, Lcom/android/settings/applications/RunningProcessesView$ViewHolder;->description:Landroid/widget/TextView;
 
-    const v0, 0x7f0a062e
+    const v0, 0x7f0a062f
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -76,7 +76,7 @@
 
     iput-object v0, p0, Lcom/android/settings/applications/RunningProcessesView$ViewHolder;->size:Landroid/widget/TextView;
 
-    const v0, 0x7f0a0740
+    const v0, 0x7f0a0741
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -190,7 +190,7 @@
 
     move-result-object v4
 
-    const v5, 0x7f1203c6
+    const v5, 0x7f1203d9
 
     invoke-virtual {v4, v5}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 

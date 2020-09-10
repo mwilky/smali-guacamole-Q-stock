@@ -257,7 +257,7 @@
 
     iget-object v2, p0, Lcom/android/settings/applications/AppPermissionsPreferenceController;->mContext:Landroid/content/Context;
 
-    const v3, 0x7f12019a
+    const v3, 0x7f1201aa
 
     new-array v1, v1, [Ljava/lang/Object;
 

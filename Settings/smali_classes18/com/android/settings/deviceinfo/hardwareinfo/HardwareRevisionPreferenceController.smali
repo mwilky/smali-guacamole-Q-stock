@@ -25,7 +25,7 @@
 
     iget-object v2, p0, Lcom/android/settings/deviceinfo/hardwareinfo/HardwareRevisionPreferenceController;->mContext:Landroid/content/Context;
 
-    const v3, 0x7f12078d
+    const v3, 0x7f1207c5
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 

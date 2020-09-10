@@ -224,6 +224,10 @@
         <item quantity="other">بعد از %d ثانیه امتحان کنید.</item>
         <item quantity="one">بعد از %d ثانیه امتحان کنید.</item>
     </plurals>
+    <plurals name="oneplus_zen_mode_duration_summary_time_hours">
+        <item quantity="other">%d ساعت (مگر اینکه به صورت خودکار روشن شده باشد)</item>
+        <item quantity="one">1 ساعت (مگر اینکه به صورت خودکار روشن شده باشد)</item>
+    </plurals>
     <plurals name="permission_bar_chart_label">
         <item quantity="other">%s برنامه</item>
         <item quantity="one">%s برنامه</item>

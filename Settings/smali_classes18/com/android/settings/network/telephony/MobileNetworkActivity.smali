@@ -266,7 +266,7 @@
     invoke-virtual {p0, v0}, Lcom/android/settings/network/telephony/MobileNetworkActivity;->setContentView(I)V
 
     :goto_0
-    const v0, 0x7f0a03e2
+    const v0, 0x7f0a03e7
 
     invoke-virtual {p0, v0}, Lcom/android/settings/network/telephony/MobileNetworkActivity;->findViewById(I)Landroid/view/View;
 
@@ -454,7 +454,7 @@
 
     invoke-virtual {p1, v2}, Landroidx/fragment/app/Fragment;->setArguments(Landroid/os/Bundle;)V
 
-    const v3, 0x7f0a03b6
+    const v3, 0x7f0a03bb
 
     invoke-direct {p0, p2}, Lcom/android/settings/network/telephony/MobileNetworkActivity;->buildFragmentTag(I)Ljava/lang/String;
 
@@ -538,7 +538,7 @@
 
     move-result-object v5
 
-    const v6, 0x7f080357
+    const v6, 0x7f080360
 
     invoke-interface {v5, v6}, Landroid/view/MenuItem;->setIcon(I)Landroid/view/MenuItem;
 

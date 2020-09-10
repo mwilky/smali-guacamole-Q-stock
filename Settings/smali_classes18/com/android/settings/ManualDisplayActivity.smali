@@ -21,7 +21,7 @@
 .method private showErrorAndFinish()V
     .locals 2
 
-    const v0, 0x7f121368
+    const v0, 0x7f121428
 
     const/4 v1, 0x1
 
@@ -99,7 +99,7 @@
 
     invoke-virtual {v2, v4, v5}, Landroid/content/Intent;->setDataAndType(Landroid/net/Uri;Ljava/lang/String;)Landroid/content/Intent;
 
-    const v4, 0x7f121367
+    const v4, 0x7f121427
 
     invoke-virtual {p0, v4}, Lcom/android/settings/ManualDisplayActivity;->getString(I)Ljava/lang/String;
 

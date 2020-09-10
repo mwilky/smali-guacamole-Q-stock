@@ -253,7 +253,7 @@
 
     iget-object v3, p0, Lcom/android/settings/inputmethod/UserDictionaryListPreferenceController;->mContext:Landroid/content/Context;
 
-    const v4, 0x7f12169e
+    const v4, 0x7f121770
 
     invoke-virtual {v3, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

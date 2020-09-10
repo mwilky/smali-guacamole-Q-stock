@@ -123,7 +123,7 @@
 
     aput-object v2, v1, v3
 
-    const v2, 0x7f12115d
+    const v2, 0x7f12120c
 
     invoke-virtual {p0, v2, v1}, Lcom/android/settings/display/PreviewSeekBarPreferenceFragment;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -324,7 +324,7 @@
 
     move-result v6
 
-    const v8, 0x7f0a05f8
+    const v8, 0x7f0a05f9
 
     invoke-virtual {v3, v8}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -344,7 +344,7 @@
 
     invoke-virtual {v8, v6}, Lcom/android/settings/widget/LabeledSeekBar;->setMax(I)V
 
-    const v8, 0x7f0a063c
+    const v8, 0x7f0a063d
 
     invoke-virtual {v3, v8}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -360,7 +360,7 @@
 
     invoke-virtual {v8, v9}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const v8, 0x7f0a0361
+    const v8, 0x7f0a0366
 
     invoke-virtual {v3, v8}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -443,7 +443,7 @@
 
     move-result-object v12
 
-    const v13, 0x7f0a0554
+    const v13, 0x7f0a0551
 
     invoke-virtual {v3, v13}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -487,7 +487,7 @@
 
     invoke-virtual {v13, v14}, Landroidx/viewpager/widget/ViewPager;->addOnPageChangeListener(Landroidx/viewpager/widget/ViewPager$OnPageChangeListener;)V
 
-    const v13, 0x7f0a0505
+    const v13, 0x7f0a0502
 
     invoke-virtual {v3, v13}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

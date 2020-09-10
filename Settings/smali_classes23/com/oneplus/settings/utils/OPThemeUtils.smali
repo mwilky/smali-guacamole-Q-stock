@@ -119,11 +119,11 @@
 
     sput v0, Lcom/oneplus/settings/utils/OPThemeUtils;->CLOCK_TYPE_DEFAULT:I
 
-    const/4 v0, 0x1
+    const/4 v0, 0x6
 
     sput v0, Lcom/oneplus/settings/utils/OPThemeUtils;->CLOCK_TYPE_ANALOG:I
 
-    const/4 v0, 0x2
+    const/16 v0, 0x9
 
     sput v0, Lcom/oneplus/settings/utils/OPThemeUtils;->CLOCK_TYPE_MINIMALISM:I
 
@@ -345,7 +345,7 @@
 .end method
 
 .method public static disableAllThemes(Landroid/content/Context;)V
-    .locals 5
+    .locals 4
 
     new-instance v0, Ljava/util/HashMap;
 
@@ -358,24 +358,6 @@
     invoke-virtual {v0}, Ljava/util/HashMap;->clear()V
 
     const/4 v2, 0x1
-
-    invoke-static {p0, v2}, Lcom/oneplus/settings/utils/OPThemeUtils;->setCurrentFont(Landroid/content/Context;I)V
-
-    const-string v3, "oneplus_dynamicfont"
-
-    const-string v4, "2"
-
-    invoke-virtual {v0, v3, v4}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    invoke-virtual {v1, v0}, Lcom/oneplus/sdk/utils/OpTheme;->disableTheme(Ljava/util/HashMap;)I
-
-    const-string v4, "1"
-
-    invoke-virtual {v0, v3, v4}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    invoke-virtual {v1, v0}, Lcom/oneplus/sdk/utils/OpTheme;->disableTheme(Ljava/util/HashMap;)I
-
-    invoke-virtual {v0}, Ljava/util/HashMap;->clear()V
 
     invoke-static {p0, v2}, Lcom/oneplus/settings/utils/OPThemeUtils;->setCurrentShape(Landroid/content/Context;I)V
 
@@ -561,14 +543,6 @@
 
     invoke-direct {v4, p0}, Lcom/oneplus/sdk/utils/OpTheme;-><init>(Landroid/content/Context;)V
 
-    const-string v5, "oneplus_dynamicfont"
-
-    const-string v6, "2"
-
-    invoke-virtual {v3, v5, v6}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    invoke-static {p0, v1}, Lcom/oneplus/settings/utils/OPThemeUtils;->setCurrentFont(Landroid/content/Context;I)V
-
     const-string v5, "oneplus_shape"
 
     const-string v6, "squircle"
@@ -719,14 +693,6 @@
     const/4 v2, 0x1
 
     invoke-static {p0, v2}, Lcom/oneplus/settings/utils/OPThemeUtils;->setCurrentBasicColorMode(Landroid/content/Context;I)V
-
-    const-string v3, "oneplus_dynamicfont"
-
-    const-string v4, "1"
-
-    invoke-virtual {v0, v3, v4}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    invoke-static {p0, v2}, Lcom/oneplus/settings/utils/OPThemeUtils;->setCurrentFont(Landroid/content/Context;I)V
 
     const-string v3, "oneplus_shape"
 
@@ -887,21 +853,13 @@
 
     invoke-static {p0, v2}, Lcom/oneplus/settings/utils/OPThemeUtils;->setCurrentBasicColorMode(Landroid/content/Context;I)V
 
-    const-string v3, "oneplus_dynamicfont"
+    const-string v3, "oneplus_shape"
 
-    const-string v4, "1"
+    const-string v4, "circle"
 
     invoke-virtual {v0, v3, v4}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     const/4 v3, 0x1
-
-    invoke-static {p0, v3}, Lcom/oneplus/settings/utils/OPThemeUtils;->setCurrentFont(Landroid/content/Context;I)V
-
-    const-string v4, "oneplus_shape"
-
-    const-string v5, "circle"
-
-    invoke-virtual {v0, v4, v5}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     invoke-static {p0, v3}, Lcom/oneplus/settings/utils/OPThemeUtils;->setCurrentShape(Landroid/content/Context;I)V
 
@@ -1024,7 +982,7 @@
 .end method
 
 .method public static enableMclThemes(Landroid/content/Context;)V
-    .locals 9
+    .locals 7
 
     const-string v0, "OPCustomFingerAnimVideoPreference"
 
@@ -1052,14 +1010,6 @@
 
     invoke-static {p0, v3}, Lcom/oneplus/settings/utils/OPThemeUtils;->enableAospDarkTheme(Landroid/content/Context;Z)V
 
-    const-string v4, "oneplus_dynamicfont"
-
-    const-string v5, "1"
-
-    invoke-virtual {v1, v4, v5}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    invoke-static {p0, v3}, Lcom/oneplus/settings/utils/OPThemeUtils;->setCurrentFont(Landroid/content/Context;I)V
-
     const-string v4, "oneplus_shape"
 
     const-string v5, "circle"
@@ -1068,67 +1018,25 @@
 
     invoke-static {p0, v3}, Lcom/oneplus/settings/utils/OPThemeUtils;->setCurrentShape(Landroid/content/Context;I)V
 
-    const-string v4, "oneplus_aodnotification"
+    const-string v3, "oneplus_aodnotification"
 
-    const-string v5, "mcl"
+    const-string v4, "mcl"
 
-    invoke-virtual {v1, v4, v5}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v3, v4}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    const/16 v4, 0xa
+    const/16 v3, 0xa
 
-    invoke-static {p0, v4}, Lcom/oneplus/settings/utils/OPThemeUtils;->setCurrentHorizonLight(Landroid/content/Context;I)V
-
-    invoke-virtual {v2, v1}, Lcom/oneplus/sdk/utils/OpTheme;->enableTheme(Ljava/util/HashMap;)I
-
-    const-string v5, "oneplus_accentcolor"
-
-    const-string v6, ""
-
-    invoke-virtual {v1, v5, v6}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p0, v3}, Lcom/oneplus/settings/utils/OPThemeUtils;->setCurrentHorizonLight(Landroid/content/Context;I)V
 
     invoke-virtual {v2, v1}, Lcom/oneplus/sdk/utils/OpTheme;->enableTheme(Ljava/util/HashMap;)I
 
-    invoke-virtual {p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+    const-string v3, "oneplus_accentcolor"
 
-    move-result-object v5
+    const-string v4, ""
 
-    invoke-static {}, Landroid/app/ActivityManager;->getCurrentUser()I
+    invoke-virtual {v1, v3, v4}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    move-result v6
-
-    const-string v7, "oneplus_accent_color"
-
-    const-string v8, "#FFF19116"
-
-    invoke-static {v5, v7, v8, v6}, Landroid/provider/Settings$System;->putStringForUser(Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;I)Z
-
-    const-string v5, "persist.sys.theme.accentcolor"
-
-    const-string v6, "FFF19116"
-
-    invoke-static {v5, v6}, Landroid/os/SystemProperties;->set(Ljava/lang/String;Ljava/lang/String;)V
-
-    invoke-static {}, Lcom/oneplus/settings/utils/OPThemeUtils;->isSupportMclTheme()Z
-
-    move-result v5
-
-    const-string v6, "aod_clock_style"
-
-    if-eqz v5, :cond_0
-
-    const-string v5, "ro.boot.project_name"
-
-    invoke-static {v5}, Landroid/os/SystemProperties;->get(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v5
-
-    const-string v7, "18801"
-
-    invoke-static {v7, v5}, Landroid/text/TextUtils;->equals(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Z
-
-    move-result v5
-
-    if-nez v5, :cond_0
+    invoke-virtual {v2, v1}, Lcom/oneplus/sdk/utils/OpTheme;->enableTheme(Ljava/util/HashMap;)I
 
     invoke-virtual {p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -1136,22 +1044,68 @@
 
     invoke-static {}, Landroid/app/ActivityManager;->getCurrentUser()I
 
-    move-result v5
+    move-result v4
 
-    invoke-static {v3, v6, v4, v5}, Landroid/provider/Settings$Secure;->putIntForUser(Landroid/content/ContentResolver;Ljava/lang/String;II)Z
+    const-string v5, "oneplus_accent_color"
+
+    const-string v6, "#FFF19116"
+
+    invoke-static {v3, v5, v6, v4}, Landroid/provider/Settings$System;->putStringForUser(Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;I)Z
+
+    const-string v3, "persist.sys.theme.accentcolor"
+
+    const-string v4, "FFF19116"
+
+    invoke-static {v3, v4}, Landroid/os/SystemProperties;->set(Ljava/lang/String;Ljava/lang/String;)V
+
+    invoke-static {}, Lcom/oneplus/settings/utils/OPThemeUtils;->isSupportMclTheme()Z
+
+    move-result v3
+
+    const-string v4, "aod_clock_style"
+
+    if-eqz v3, :cond_0
+
+    const-string v3, "ro.boot.project_name"
+
+    invoke-static {v3}, Landroid/os/SystemProperties;->get(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v3
+
+    const-string v5, "18801"
+
+    invoke-static {v5, v3}, Landroid/text/TextUtils;->equals(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Z
+
+    move-result v3
+
+    if-nez v3, :cond_0
+
+    invoke-virtual {p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object v3
+
+    const/16 v5, 0x28
+
+    invoke-static {}, Landroid/app/ActivityManager;->getCurrentUser()I
+
+    move-result v6
+
+    invoke-static {v3, v4, v5, v6}, Landroid/provider/Settings$Secure;->putIntForUser(Landroid/content/ContentResolver;Ljava/lang/String;II)Z
 
     goto :goto_0
 
     :cond_0
     invoke-virtual {p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
-    move-result-object v4
+    move-result-object v3
+
+    const/4 v5, 0x6
 
     invoke-static {}, Landroid/app/ActivityManager;->getCurrentUser()I
 
-    move-result v5
+    move-result v6
 
-    invoke-static {v4, v6, v3, v5}, Landroid/provider/Settings$Secure;->putIntForUser(Landroid/content/ContentResolver;Ljava/lang/String;II)Z
+    invoke-static {v3, v4, v5, v6}, Landroid/provider/Settings$Secure;->putIntForUser(Landroid/content/ContentResolver;Ljava/lang/String;II)Z
 
     :goto_0
     invoke-virtual {p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;

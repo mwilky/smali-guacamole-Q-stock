@@ -224,6 +224,10 @@
         <item quantity="other">Δοκιμάστε ξανά σε %d δευτερόλεπτα.</item>
         <item quantity="one">Δοκιμάστε ξανά σε %d δευτερόλεπτο.</item>
     </plurals>
+    <plurals name="oneplus_zen_mode_duration_summary_time_hours">
+        <item quantity="other">%d ώρες (εκτός αν ενεργοποιείται αυτόματα)</item>
+        <item quantity="one">1 ώρα (εκτός αν ενεργοποιείται αυτόματα)</item>
+    </plurals>
     <plurals name="permission_bar_chart_label">
         <item quantity="other">%s εφαρμογές</item>
         <item quantity="one">1 εφαρμογή</item>

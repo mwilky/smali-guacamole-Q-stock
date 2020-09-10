@@ -269,7 +269,7 @@
 
     if-nez v7, :cond_1
 
-    const v7, 0x7f121915
+    const v7, 0x7f1219f5
 
     invoke-virtual {v10, v7}, Landroidx/preference/SwitchPreference;->setSummary(I)V
 
@@ -510,7 +510,7 @@
     goto :goto_0
 
     :cond_0
-    const v0, 0x7f1205fd
+    const v0, 0x7f120623
 
     invoke-virtual {p0, v0}, Lcom/android/settings/utils/ManagedServiceSettings;->setEmptyText(I)V
 

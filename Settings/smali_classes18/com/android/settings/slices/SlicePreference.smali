@@ -33,7 +33,7 @@
 .method private init()V
     .locals 2
 
-    const v0, 0x7f0a0636
+    const v0, 0x7f0a0637
 
     invoke-virtual {p0, v0}, Lcom/android/settings/slices/SlicePreference;->findViewById(I)Landroid/view/View;
 

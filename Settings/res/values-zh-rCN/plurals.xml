@@ -224,6 +224,10 @@
         <item quantity="other">%d秒后重试。</item>
         <item quantity="one">%d秒后重试。</item>
     </plurals>
+    <plurals name="oneplus_zen_mode_duration_summary_time_hours">
+        <item quantity="other">%d 小时（除非自动开启）</item>
+        <item quantity="one">1 小时（除非自动开启）</item>
+    </plurals>
     <plurals name="permission_bar_chart_label">
         <item quantity="other">%s 个应用</item>
         <item quantity="one">1 个应用</item>

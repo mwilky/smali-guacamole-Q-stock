@@ -45,7 +45,7 @@
 
     iput-object p1, p0, Lcom/oneplus/settings/ui/OPNoSelectablePreference;->mContext:Landroid/content/Context;
 
-    const v0, 0x7f0d01db
+    const v0, 0x7f0d01dc
 
     invoke-virtual {p0, v0}, Lcom/oneplus/settings/ui/OPNoSelectablePreference;->setLayoutResource(I)V
 

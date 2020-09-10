@@ -101,7 +101,7 @@
 .method private initViews()V
     .locals 14
 
-    const v0, 0x7f0d0204
+    const v0, 0x7f0d0205
 
     invoke-virtual {p0, v0}, Lcom/oneplus/settings/product/ProductInfoActivity;->setContentView(I)V
 
@@ -123,11 +123,11 @@
 
     const/4 v3, 0x2
 
-    const v4, 0x7f0a0302
+    const v4, 0x7f0a0307
 
     const/4 v5, 0x0
 
-    const v6, 0x7f0d0203
+    const v6, 0x7f0d0204
 
     if-nez v1, :cond_4
 
@@ -142,7 +142,7 @@
     :cond_0
     sget-object v1, Landroid/os/Build;->MODEL:Ljava/lang/String;
 
-    const v7, 0x7f120db2
+    const v7, 0x7f120e29
 
     invoke-virtual {p0, v7}, Lcom/oneplus/settings/product/ProductInfoActivity;->getString(I)Ljava/lang/String;
 
@@ -156,7 +156,7 @@
 
     sget-object v1, Landroid/os/Build;->MODEL:Ljava/lang/String;
 
-    const v7, 0x7f120db3
+    const v7, 0x7f120e2a
 
     invoke-virtual {p0, v7}, Lcom/oneplus/settings/product/ProductInfoActivity;->getString(I)Ljava/lang/String;
 
@@ -371,7 +371,7 @@
 
     :cond_5
     :goto_5
-    const v1, 0x7f0a03ba
+    const v1, 0x7f0a03bf
 
     invoke-virtual {p0, v1}, Lcom/oneplus/settings/product/ProductInfoActivity;->findViewById(I)Landroid/view/View;
 
@@ -381,7 +381,7 @@
 
     iput-object v1, p0, Lcom/oneplus/settings/product/ProductInfoActivity;->mViewPager:Landroidx/viewpager/widget/ViewPager;
 
-    const v1, 0x7f0a06cd
+    const v1, 0x7f0a06ce
 
     invoke-virtual {p0, v1}, Lcom/oneplus/settings/product/ProductInfoActivity;->findViewById(I)Landroid/view/View;
 
@@ -518,7 +518,7 @@
     :cond_0
     sget-object v0, Landroid/os/Build;->MODEL:Ljava/lang/String;
 
-    const v2, 0x7f120db2
+    const v2, 0x7f120e29
 
     invoke-virtual {p0, v2}, Lcom/oneplus/settings/product/ProductInfoActivity;->getString(I)Ljava/lang/String;
 
@@ -532,7 +532,7 @@
 
     sget-object v0, Landroid/os/Build;->MODEL:Ljava/lang/String;
 
-    const v2, 0x7f120db3
+    const v2, 0x7f120e2a
 
     invoke-virtual {p0, v2}, Lcom/oneplus/settings/product/ProductInfoActivity;->getString(I)Ljava/lang/String;
 

@@ -36,7 +36,7 @@
 
     invoke-direct {p0, p2}, Landroidx/recyclerview/widget/RecyclerView$ViewHolder;-><init>(Landroid/view/View;)V
 
-    const v0, 0x7f0a072c
+    const v0, 0x7f0a072d
 
     invoke-virtual {p2, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -46,7 +46,7 @@
 
     iput-object v0, p0, Lcom/oneplus/settings/aboutphone/SoftwareInfoAdapter$ViewHolder;->tvTitle:Landroid/widget/TextView;
 
-    const v0, 0x7f0a0728
+    const v0, 0x7f0a0729
 
     invoke-virtual {p2, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -56,7 +56,7 @@
 
     iput-object v0, p0, Lcom/oneplus/settings/aboutphone/SoftwareInfoAdapter$ViewHolder;->tvSummary:Landroid/widget/TextView;
 
-    const v0, 0x7f0a030c
+    const v0, 0x7f0a0311
 
     invoke-virtual {p2, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

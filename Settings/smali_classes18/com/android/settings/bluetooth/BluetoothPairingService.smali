@@ -137,7 +137,7 @@
 
     new-instance v1, Landroid/app/NotificationChannel;
 
-    const v2, 0x7f1202b4
+    const v2, 0x7f1202c4
 
     invoke-virtual {p0, v2}, Lcom/android/settings/bluetooth/BluetoothPairingService;->getString(I)Ljava/lang/String;
 
@@ -215,7 +215,7 @@
 
     move-result-object v5
 
-    const v7, 0x7f120330
+    const v7, 0x7f120343
 
     invoke-virtual {v4, v7}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -385,7 +385,7 @@
 
     new-instance v3, Landroid/app/Notification$Action$Builder;
 
-    const v12, 0x7f1202e9
+    const v12, 0x7f1202fa
 
     invoke-virtual {v4, v12}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -411,7 +411,7 @@
 
     move-result-object v12
 
-    const v13, 0x7f120331
+    const v13, 0x7f120344
 
     invoke-virtual {v4, v13}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -421,7 +421,7 @@
 
     move-result-object v13
 
-    const v14, 0x7f12032f
+    const v14, 0x7f120342
 
     new-array v15, v7, [Ljava/lang/Object;
 

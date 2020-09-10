@@ -81,13 +81,13 @@
 
     check-cast v0, Lcom/android/settingslib/widget/ActionButtonsPreference;
 
-    const v1, 0x7f120741
+    const v1, 0x7f120779
 
     invoke-virtual {v0, v1}, Lcom/android/settingslib/widget/ActionButtonsPreference;->setButton1Text(I)Lcom/android/settingslib/widget/ActionButtonsPreference;
 
     move-result-object v0
 
-    const v1, 0x7f08033b
+    const v1, 0x7f080344
 
     invoke-virtual {v0, v1}, Lcom/android/settingslib/widget/ActionButtonsPreference;->setButton1Icon(I)Lcom/android/settingslib/widget/ActionButtonsPreference;
 
@@ -182,13 +182,13 @@
     :cond_0
     iget-object v1, p0, Lcom/android/settings/bluetooth/BluetoothDetailsButtonsController;->mActionButtons:Lcom/android/settingslib/widget/ActionButtonsPreference;
 
-    const v3, 0x7f1202e7
+    const v3, 0x7f1202f8
 
     invoke-virtual {v1, v3}, Lcom/android/settingslib/widget/ActionButtonsPreference;->setButton2Text(I)Lcom/android/settingslib/widget/ActionButtonsPreference;
 
     move-result-object v1
 
-    const v3, 0x7f080336
+    const v3, 0x7f08033f
 
     invoke-virtual {v1, v3}, Lcom/android/settingslib/widget/ActionButtonsPreference;->setButton2Icon(I)Lcom/android/settingslib/widget/ActionButtonsPreference;
 
@@ -214,13 +214,13 @@
     :cond_2
     iget-object v1, p0, Lcom/android/settings/bluetooth/BluetoothDetailsButtonsController;->mActionButtons:Lcom/android/settingslib/widget/ActionButtonsPreference;
 
-    const v3, 0x7f1202e5
+    const v3, 0x7f1202f6
 
     invoke-virtual {v1, v3}, Lcom/android/settingslib/widget/ActionButtonsPreference;->setButton2Text(I)Lcom/android/settingslib/widget/ActionButtonsPreference;
 
     move-result-object v1
 
-    const v3, 0x7f080338
+    const v3, 0x7f080341
 
     invoke-virtual {v1, v3}, Lcom/android/settingslib/widget/ActionButtonsPreference;->setButton2Icon(I)Lcom/android/settingslib/widget/ActionButtonsPreference;
 

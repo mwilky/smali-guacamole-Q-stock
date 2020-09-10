@@ -35,7 +35,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f120213
+    const v1, 0x7f120223
 
     invoke-virtual {v0, v1}, Landroidx/fragment/app/FragmentActivity;->setTitle(I)V
 

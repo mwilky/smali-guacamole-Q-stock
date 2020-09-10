@@ -47,7 +47,7 @@
 .method private init()V
     .locals 1
 
-    const v0, 0x7f12032d
+    const v0, 0x7f120340
 
     invoke-virtual {p0, v0}, Lcom/android/settings/bluetooth/BluetoothProgressCategory;->setEmptyTextRes(I)V
 

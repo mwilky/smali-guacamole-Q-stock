@@ -1619,7 +1619,7 @@
 
     move-result-object v7
 
-    const v8, 0x7f0300d7
+    const v8, 0x7f0300dc
 
     invoke-virtual {v7, v8}, Landroid/content/res/Resources;->getStringArray(I)[Ljava/lang/String;
 
@@ -2674,7 +2674,7 @@
     invoke-interface {v1}, Ljava/util/Map;->clear()V
 
     :cond_0
-    if-eqz v0, :cond_4
+    if-eqz v0, :cond_8
 
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -2685,7 +2685,7 @@
 
     move-result v2
 
-    if-eqz v2, :cond_4
+    if-eqz v2, :cond_8
 
     invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
@@ -2714,6 +2714,10 @@
     goto :goto_0
 
     :cond_1
+    const/16 v5, 0x3eb
+
+    if-ne p1, v5, :cond_5
+
     invoke-virtual {v2}, Landroid/app/AppOpsManager$PackageOps;->getOps()Ljava/util/List;
 
     move-result-object v5
@@ -2727,7 +2731,7 @@
 
     move-result v6
 
-    if-eqz v6, :cond_3
+    if-eqz v6, :cond_4
 
     invoke-interface {v5}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
@@ -2739,13 +2743,86 @@
 
     move-result v7
 
-    if-ne v7, p1, :cond_2
+    if-ne v7, p1, :cond_3
 
     invoke-virtual {v6}, Landroid/app/AppOpsManager$OpEntry;->getMode()I
 
     move-result v7
 
-    if-nez v7, :cond_2
+    if-eqz v7, :cond_2
+
+    invoke-virtual {v6}, Landroid/app/AppOpsManager$OpEntry;->getMode()I
+
+    move-result v7
+
+    const/4 v8, 0x2
+
+    if-ne v7, v8, :cond_3
+
+    :cond_2
+    iget-object v7, p0, Lcom/oneplus/settings/apploader/OPApplicationLoader;->mSelectedAppMap:Ljava/util/Map;
+
+    new-instance v8, Ljava/lang/StringBuilder;
+
+    invoke-direct {v8}, Ljava/lang/StringBuilder;-><init>()V
+
+    invoke-virtual {v8, v4}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2}, Landroid/app/AppOpsManager$PackageOps;->getPackageName()Ljava/lang/String;
+
+    move-result-object v9
+
+    invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v8}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v8
+
+    invoke-virtual {v2}, Landroid/app/AppOpsManager$PackageOps;->getPackageName()Ljava/lang/String;
+
+    move-result-object v9
+
+    invoke-interface {v7, v8, v9}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    :cond_3
+    goto :goto_1
+
+    :cond_4
+    goto :goto_3
+
+    :cond_5
+    invoke-virtual {v2}, Landroid/app/AppOpsManager$PackageOps;->getOps()Ljava/util/List;
+
+    move-result-object v5
+
+    invoke-interface {v5}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+
+    move-result-object v5
+
+    :goto_2
+    invoke-interface {v5}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v6
+
+    if-eqz v6, :cond_7
+
+    invoke-interface {v5}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v6
+
+    check-cast v6, Landroid/app/AppOpsManager$OpEntry;
+
+    invoke-virtual {v6}, Landroid/app/AppOpsManager$OpEntry;->getOp()I
+
+    move-result v7
+
+    if-ne v7, p1, :cond_6
+
+    invoke-virtual {v6}, Landroid/app/AppOpsManager$OpEntry;->getMode()I
+
+    move-result v7
+
+    if-nez v7, :cond_6
 
     iget-object v7, p0, Lcom/oneplus/settings/apploader/OPApplicationLoader;->mSelectedAppMap:Ljava/util/Map;
 
@@ -2771,13 +2848,14 @@
 
     invoke-interface {v7, v8, v9}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    :cond_2
-    goto :goto_1
+    :cond_6
+    goto :goto_2
 
-    :cond_3
-    goto :goto_0
+    :cond_7
+    :goto_3
+    goto/16 :goto_0
 
-    :cond_4
+    :cond_8
     iget-object v1, p0, Lcom/oneplus/settings/apploader/OPApplicationLoader;->mSelectedAppMap:Ljava/util/Map;
 
     return-object v1

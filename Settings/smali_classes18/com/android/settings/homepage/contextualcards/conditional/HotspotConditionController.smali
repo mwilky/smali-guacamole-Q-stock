@@ -149,7 +149,7 @@
 
     iget-object v1, p0, Lcom/android/settings/homepage/contextualcards/conditional/HotspotConditionController;->mAppContext:Landroid/content/Context;
 
-    const v2, 0x7f120c3a
+    const v2, 0x7f120c8a
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
@@ -177,7 +177,7 @@
 
     iget-object v2, p0, Lcom/android/settings/homepage/contextualcards/conditional/HotspotConditionController;->mAppContext:Landroid/content/Context;
 
-    const v3, 0x7f120466
+    const v3, 0x7f12047a
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
@@ -221,7 +221,7 @@
 
     iget-object v1, p0, Lcom/android/settings/homepage/contextualcards/conditional/HotspotConditionController;->mAppContext:Landroid/content/Context;
 
-    const v2, 0x7f080224
+    const v2, 0x7f08022d
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -331,7 +331,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f12154c
+    const v1, 0x7f121611
 
     invoke-virtual {v0, v1}, Lcom/android/settings/core/SubSettingLauncher;->setTitleRes(I)Lcom/android/settings/core/SubSettingLauncher;
 

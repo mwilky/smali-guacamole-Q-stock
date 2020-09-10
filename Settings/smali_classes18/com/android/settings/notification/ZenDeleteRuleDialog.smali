@@ -121,7 +121,7 @@
 
     aput-object v1, v4, v5
 
-    const v5, 0x7f12197b
+    const v5, 0x7f121a5b
 
     invoke-virtual {p0, v5, v4}, Lcom/android/settings/notification/ZenDeleteRuleDialog;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -131,7 +131,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f1203d8
+    const v4, 0x7f1203eb
 
     const/4 v5, 0x0
 
@@ -143,7 +143,7 @@
 
     invoke-direct {v4, p0, v0, v2}, Lcom/android/settings/notification/ZenDeleteRuleDialog$1;-><init>(Lcom/android/settings/notification/ZenDeleteRuleDialog;Landroid/os/Bundle;Ljava/lang/String;)V
 
-    const v5, 0x7f12197a
+    const v5, 0x7f121a5a
 
     invoke-virtual {v3, v5, v4}, Landroidx/appcompat/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroidx/appcompat/app/AlertDialog$Builder;
 

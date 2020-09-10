@@ -8,4 +8,8 @@
         <item quantity="other">%d வினாடிகளில் மீண்டும் முயற்சிக்கவும்.</item>
         <item quantity="one">%d வினாடியில் மீண்டும் முயற்சிக்கவும்.</item>
     </plurals>
+    <plurals name="oneplus_zen_mode_duration_summary_time_hours">
+        <item quantity="other">&lt;xliff: g id=num_hours example=3>%d&lt;/xliff: g> மணிநேரம் (தானாக இயக்கப்படாத வரை)</item>
+        <item quantity="one">1 மணிநேரம் (தானாக இயக்கப்படாத வரை)</item>
+    </plurals>
 </resources>

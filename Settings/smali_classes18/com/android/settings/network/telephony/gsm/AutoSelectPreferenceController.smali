@@ -142,7 +142,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f12120b
+    const v2, 0x7f1212ba
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -452,7 +452,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f120421
+    const v3, 0x7f120435
 
     invoke-virtual {v2, v3}, Lcom/android/settings/core/SubSettingLauncher;->setTitleRes(I)Lcom/android/settings/core/SubSettingLauncher;
 
@@ -507,7 +507,7 @@
 
     iget-object v0, p0, Lcom/android/settings/network/telephony/gsm/AutoSelectPreferenceController;->mContext:Landroid/content/Context;
 
-    const v2, 0x7f1209ee
+    const v2, 0x7f120a2b
 
     new-array v1, v1, [Ljava/lang/Object;
 

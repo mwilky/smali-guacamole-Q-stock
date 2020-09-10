@@ -47,7 +47,7 @@
 
     iget-object v0, p0, Lcom/android/settings/display/TopLevelDisplayPreferenceController;->mContext:Landroid/content/Context;
 
-    const v1, 0x7f120faf
+    const v1, 0x7f121038    # 1.941515E38f
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

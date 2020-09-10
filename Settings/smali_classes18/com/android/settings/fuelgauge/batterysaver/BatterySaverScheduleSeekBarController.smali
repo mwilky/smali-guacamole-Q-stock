@@ -123,7 +123,7 @@
 
     aput-object v4, v3, v5
 
-    const v4, 0x7f120270
+    const v4, 0x7f120280
 
     invoke-virtual {v1, v4, v3}, Landroid/content/Context;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -190,7 +190,7 @@
 
     iget-object v7, p0, Lcom/android/settings/fuelgauge/batterysaver/BatterySaverScheduleSeekBarController;->mContext:Landroid/content/Context;
 
-    const v8, 0x7f120270
+    const v8, 0x7f120280
 
     new-array v5, v5, [Ljava/lang/Object;
 

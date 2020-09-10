@@ -313,7 +313,7 @@
 
     iget-object v0, p0, Lcom/android/settings/bluetooth/BluetoothDiscoverableEnabler;->mDiscoveryPreference:Landroidx/preference/Preference;
 
-    const v1, 0x7f120334
+    const v1, 0x7f120347
 
     invoke-virtual {v0, v1}, Landroidx/preference/Preference;->setSummary(I)V
 
@@ -322,7 +322,7 @@
     :cond_0
     iget-object v0, p0, Lcom/android/settings/bluetooth/BluetoothDiscoverableEnabler;->mDiscoveryPreference:Landroidx/preference/Preference;
 
-    const v1, 0x7f12032e
+    const v1, 0x7f120341
 
     invoke-virtual {v0, v1}, Landroidx/preference/Preference;->setSummary(I)V
 
@@ -417,7 +417,7 @@
 
     iget-object v0, p0, Lcom/android/settings/bluetooth/BluetoothDiscoverableEnabler;->mDiscoveryPreference:Landroidx/preference/Preference;
 
-    const v1, 0x7f12031f
+    const v1, 0x7f120332
 
     invoke-virtual {v0, v1}, Landroidx/preference/Preference;->setSummary(I)V
 
@@ -432,7 +432,7 @@
 
     iget-object v2, p0, Lcom/android/settings/bluetooth/BluetoothDiscoverableEnabler;->mContext:Landroid/content/Context;
 
-    const v3, 0x7f12031e
+    const v3, 0x7f120331
 
     const/4 v4, 0x1
 

@@ -129,7 +129,7 @@
 
     iget-object v0, p0, Lcom/android/settings/notification/ZenModeRuleSettingsBase;->mContext:Landroid/content/Context;
 
-    const v1, 0x7f1219bb
+    const v1, 0x7f121a9b
 
     const/4 v2, 0x0
 
@@ -169,7 +169,7 @@
 
     iget-object v0, p0, Lcom/android/settings/notification/ZenModeRuleSettingsBase;->mCustomBehaviorPreference:Landroidx/preference/Preference;
 
-    const v1, 0x7f121974
+    const v1, 0x7f121a54
 
     invoke-virtual {v0, v1}, Landroidx/preference/Preference;->setSummary(I)V
 
@@ -178,7 +178,7 @@
     :cond_0
     iget-object v0, p0, Lcom/android/settings/notification/ZenModeRuleSettingsBase;->mCustomBehaviorPreference:Landroidx/preference/Preference;
 
-    const v1, 0x7f121973
+    const v1, 0x7f121a53
 
     invoke-virtual {v0, v1}, Landroidx/preference/Preference;->setSummary(I)V
 
@@ -195,7 +195,7 @@
 .method public getHelpResource()I
     .locals 1
 
-    const v0, 0x7f1207ab
+    const v0, 0x7f1207e3
 
     return v0
 .end method

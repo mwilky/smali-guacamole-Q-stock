@@ -228,7 +228,7 @@
 
     invoke-static {v2, v3}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    const v2, 0x7f120173
+    const v2, 0x7f120183
 
     invoke-virtual {p1, v2}, Landroidx/preference/Preference;->setSummary(I)V
 

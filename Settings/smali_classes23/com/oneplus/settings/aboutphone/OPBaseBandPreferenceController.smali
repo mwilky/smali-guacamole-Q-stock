@@ -52,7 +52,7 @@
 
     iget-object v1, p0, Lcom/oneplus/settings/aboutphone/OPBaseBandPreferenceController;->mContext:Landroid/content/Context;
 
-    const v2, 0x7f1205cc
+    const v2, 0x7f1205e8
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

@@ -35,9 +35,9 @@
         }
     .end annotation
 
-    const v0, 0x7f0d029d
+    const v0, 0x7f0d029e
 
-    const v1, 0x7f0a06c1
+    const v1, 0x7f0a06c2
 
     invoke-direct {p0, p1, v0, v1, p2}, Landroid/widget/ArrayAdapter;-><init>(Landroid/content/Context;IILjava/util/List;)V
 
@@ -59,7 +59,7 @@
 
     check-cast v1, Lcom/android/settings/users/EditUserPhotoController$RestrictedMenuItem;
 
-    const v2, 0x7f0a06c1
+    const v2, 0x7f0a06c2
 
     invoke-virtual {v0, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -67,7 +67,7 @@
 
     check-cast v2, Landroid/widget/TextView;
 
-    const v3, 0x7f0a05ab
+    const v3, 0x7f0a05ac
 
     invoke-virtual {v0, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

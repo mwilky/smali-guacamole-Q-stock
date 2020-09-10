@@ -502,7 +502,7 @@
 
     invoke-super {p0, p1}, Lcom/oneplus/settings/BaseActivity;->onCreate(Landroid/os/Bundle;)V
 
-    const v0, 0x7f0d01c2
+    const v0, 0x7f0d01c3
 
     invoke-virtual {p0, v0}, Lcom/oneplus/settings/OPNotchDisplayGuideActivity;->setContentView(I)V
 
@@ -554,7 +554,7 @@
 
     iput-object v0, p0, Lcom/oneplus/settings/OPNotchDisplayGuideActivity;->mOverlayManager:Landroid/content/om/IOverlayManager;
 
-    const v0, 0x7f0a04c7
+    const v0, 0x7f0a04c4
 
     invoke-virtual {p0, v0}, Lcom/oneplus/settings/OPNotchDisplayGuideActivity;->findViewById(I)Landroid/view/View;
 
@@ -566,7 +566,7 @@
 
     invoke-virtual {v0, p0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const v0, 0x7f0a04a9
+    const v0, 0x7f0a04a6
 
     invoke-virtual {p0, v0}, Lcom/oneplus/settings/OPNotchDisplayGuideActivity;->findViewById(I)Landroid/view/View;
 
@@ -578,7 +578,7 @@
 
     invoke-virtual {v0, p0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const v0, 0x7f0a04c5
+    const v0, 0x7f0a04c2
 
     invoke-virtual {p0, v0}, Lcom/oneplus/settings/OPNotchDisplayGuideActivity;->findViewById(I)Landroid/view/View;
 
@@ -588,7 +588,7 @@
 
     iput-object v0, p0, Lcom/oneplus/settings/OPNotchDisplayGuideActivity;->mShowNotchBtn:Landroid/widget/RadioButton;
 
-    const v0, 0x7f0a04a7
+    const v0, 0x7f0a04a4
 
     invoke-virtual {p0, v0}, Lcom/oneplus/settings/OPNotchDisplayGuideActivity;->findViewById(I)Landroid/view/View;
 
@@ -598,7 +598,7 @@
 
     iput-object v0, p0, Lcom/oneplus/settings/OPNotchDisplayGuideActivity;->mHideNotchBtn:Landroid/widget/RadioButton;
 
-    const v0, 0x7f0a04c6
+    const v0, 0x7f0a04c3
 
     invoke-virtual {p0, v0}, Lcom/oneplus/settings/OPNotchDisplayGuideActivity;->findViewById(I)Landroid/view/View;
 
@@ -608,7 +608,7 @@
 
     iput-object v0, p0, Lcom/oneplus/settings/OPNotchDisplayGuideActivity;->mShowNotch:Landroid/widget/ImageView;
 
-    const v0, 0x7f0a04a8
+    const v0, 0x7f0a04a5
 
     invoke-virtual {p0, v0}, Lcom/oneplus/settings/OPNotchDisplayGuideActivity;->findViewById(I)Landroid/view/View;
 
@@ -632,13 +632,13 @@
 
     iget-object v0, p0, Lcom/oneplus/settings/OPNotchDisplayGuideActivity;->mShowNotch:Landroid/widget/ImageView;
 
-    const v1, 0x7f080496
+    const v1, 0x7f08049f
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setBackgroundResource(I)V
 
     iget-object v0, p0, Lcom/oneplus/settings/OPNotchDisplayGuideActivity;->mHideNotch:Landroid/widget/ImageView;
 
-    const v1, 0x7f080466
+    const v1, 0x7f08046f
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setBackgroundResource(I)V
 
@@ -647,13 +647,13 @@
     :cond_0
     iget-object v0, p0, Lcom/oneplus/settings/OPNotchDisplayGuideActivity;->mShowNotch:Landroid/widget/ImageView;
 
-    const v1, 0x7f080497
+    const v1, 0x7f0804a0
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setBackgroundResource(I)V
 
     iget-object v0, p0, Lcom/oneplus/settings/OPNotchDisplayGuideActivity;->mHideNotch:Landroid/widget/ImageView;
 
-    const v1, 0x7f080467
+    const v1, 0x7f080470
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setBackgroundResource(I)V
 

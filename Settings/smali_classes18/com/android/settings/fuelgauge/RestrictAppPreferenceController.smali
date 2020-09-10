@@ -164,7 +164,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f10003e
+    const v4, 0x7f10003f
 
     new-array v1, v1, [Ljava/lang/Object;
 

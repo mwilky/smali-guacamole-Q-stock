@@ -310,12 +310,12 @@
 
     if-ne v1, v2, :cond_1
 
-    const v1, 0x7f120503
+    const v1, 0x7f12051a
 
     goto :goto_0
 
     :cond_1
-    const v1, 0x7f120502
+    const v1, 0x7f120519
 
     :goto_0
     nop

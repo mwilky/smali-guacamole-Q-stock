@@ -224,6 +224,10 @@
         <item quantity="other">Próbálja újra %d másodpercen belül.</item>
         <item quantity="one">Próbálja újra %d másodpercen belül.</item>
     </plurals>
+    <plurals name="oneplus_zen_mode_duration_summary_time_hours">
+        <item quantity="other">%d óra (hacsak automatikusan nem kapcsolódik be)</item>
+        <item quantity="one">1 óra (hacsak automatikusan nem kapcsolódik be)</item>
+    </plurals>
     <plurals name="permission_bar_chart_label">
         <item quantity="other">%s alkalmazás</item>
         <item quantity="one">1 alkalmazás</item>

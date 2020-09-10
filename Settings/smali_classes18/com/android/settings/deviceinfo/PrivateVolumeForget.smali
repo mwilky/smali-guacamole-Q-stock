@@ -128,7 +128,7 @@
     return-object v2
 
     :cond_1
-    const v2, 0x7f0d02d1
+    const v2, 0x7f0d02d2
 
     const/4 v3, 0x0
 
@@ -152,7 +152,7 @@
 
     check-cast v5, Landroid/widget/Button;
 
-    const v6, 0x7f121473
+    const v6, 0x7f121537
 
     invoke-virtual {p0, v6}, Lcom/android/settings/deviceinfo/PrivateVolumeForget;->getText(I)Ljava/lang/CharSequence;
 

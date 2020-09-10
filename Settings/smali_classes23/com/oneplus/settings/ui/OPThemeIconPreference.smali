@@ -30,7 +30,7 @@
 
     invoke-direct {p0, p1, p2}, Landroidx/preference/Preference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
-    const v0, 0x7f0d0234
+    const v0, 0x7f0d0235
 
     invoke-virtual {p0, v0}, Lcom/oneplus/settings/ui/OPThemeIconPreference;->setLayoutResource(I)V
 
@@ -80,25 +80,68 @@
 
     move-result v0
 
-    if-eqz v0, :cond_5
-
-    const/4 v1, 0x1
-
-    if-eq v0, v1, :cond_4
-
-    const/4 v1, 0x2
-
-    if-eq v0, v1, :cond_3
-
-    const/4 v1, 0x3
-
-    if-eq v0, v1, :cond_2
-
-    const/16 v1, 0xa
+    const/16 v1, 0x28
 
     if-eq v0, v1, :cond_0
 
+    packed-switch v0, :pswitch_data_0
+
+    const v1, 0x7f08009c
+
+    goto :goto_0
+
+    :pswitch_0
+    const v1, 0x7f0800a2
+
+    goto :goto_0
+
+    :pswitch_1
+    const v1, 0x7f0800a1
+
+    goto :goto_0
+
+    :pswitch_2
+    const v1, 0x7f08009a
+
+    goto :goto_0
+
+    :pswitch_3
+    const v1, 0x7f080099
+
+    goto :goto_0
+
+    :pswitch_4
     const v1, 0x7f080098
+
+    goto :goto_0
+
+    :pswitch_5
+    const v1, 0x7f08009b
+
+    goto :goto_0
+
+    :pswitch_6
+    const v1, 0x7f0800a8
+
+    goto :goto_0
+
+    :pswitch_7
+    const v1, 0x7f08009e
+
+    goto :goto_0
+
+    :pswitch_8
+    const v1, 0x7f08009d
+
+    goto :goto_0
+
+    :pswitch_9
+    const v1, 0x7f0800a3
+
+    goto :goto_0
+
+    :pswitch_a
+    const v1, 0x7f08009c
 
     goto :goto_0
 
@@ -123,37 +166,34 @@
 
     if-nez v1, :cond_1
 
-    const v1, 0x7f080099
+    const v1, 0x7f08009f
 
     goto :goto_0
 
     :cond_1
-    const v1, 0x7f080097
-
-    goto :goto_0
-
-    :cond_2
-    const v1, 0x7f08009b
-
-    goto :goto_0
-
-    :cond_3
-    const v1, 0x7f08009a
-
-    goto :goto_0
-
-    :cond_4
-    const v1, 0x7f080097
-
-    goto :goto_0
-
-    :cond_5
     const v1, 0x7f080098
 
     nop
 
     :goto_0
     return v1
+
+    nop
+
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_a
+        :pswitch_9
+        :pswitch_8
+        :pswitch_7
+        :pswitch_6
+        :pswitch_5
+        :pswitch_4
+        :pswitch_3
+        :pswitch_2
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
 .end method
 
 .method private getFodAnimStyleImage()I
@@ -193,32 +233,32 @@
 
     if-eq v0, v1, :cond_0
 
-    const v1, 0x7f080534
+    const v1, 0x7f08053d
 
     goto :goto_0
 
     :cond_0
-    const v1, 0x7f080537
+    const v1, 0x7f080540
 
     goto :goto_0
 
     :cond_1
-    const v1, 0x7f080538
+    const v1, 0x7f080541
 
     goto :goto_0
 
     :cond_2
-    const v1, 0x7f080536
+    const v1, 0x7f08053f
 
     goto :goto_0
 
     :cond_3
-    const v1, 0x7f080535
+    const v1, 0x7f08053e
 
     goto :goto_0
 
     :cond_4
-    const v1, 0x7f080534
+    const v1, 0x7f08053d
 
     nop
 
@@ -263,32 +303,32 @@
 
     if-eq v0, v1, :cond_0
 
-    const v1, 0x7f08046c
+    const v1, 0x7f080475
 
     goto :goto_0
 
     :cond_0
-    const v1, 0x7f08046e
+    const v1, 0x7f080477
 
     goto :goto_0
 
     :cond_1
-    const v1, 0x7f08046f
+    const v1, 0x7f080478
 
     goto :goto_0
 
     :cond_2
-    const v1, 0x7f08046d
+    const v1, 0x7f080476
 
     goto :goto_0
 
     :cond_3
-    const v1, 0x7f080470
+    const v1, 0x7f080479
 
     goto :goto_0
 
     :cond_4
-    const v1, 0x7f08046c
+    const v1, 0x7f080475
 
     nop
 
@@ -439,7 +479,7 @@
 
     invoke-super {p0, p1}, Landroidx/preference/Preference;->onBindViewHolder(Landroidx/preference/PreferenceViewHolder;)V
 
-    const v0, 0x7f0a06ec
+    const v0, 0x7f0a06ed
 
     invoke-virtual {p1, v0}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 
@@ -465,7 +505,7 @@
 
     invoke-virtual {v0, p0}, Lcom/oneplus/settings/ui/RadiusImageView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const v0, 0x7f0a06d8
+    const v0, 0x7f0a06d9
 
     invoke-virtual {p1, v0}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 
@@ -481,7 +521,7 @@
 
     nop
 
-    const v0, 0x7f0a06d9
+    const v0, 0x7f0a06da
 
     invoke-virtual {p1, v0}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 
@@ -503,7 +543,7 @@
 
     if-nez v0, :cond_0
 
-    const v0, 0x7f0a06da
+    const v0, 0x7f0a06db
 
     invoke-virtual {p1, v0}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 
@@ -512,7 +552,7 @@
     invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
 
     :cond_0
-    const v0, 0x7f0a06e5
+    const v0, 0x7f0a06e6
 
     invoke-virtual {p1, v0}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 
@@ -532,7 +572,7 @@
 
     if-nez v0, :cond_1
 
-    const v0, 0x7f0a048d
+    const v0, 0x7f0a048a
 
     invoke-virtual {p1, v0}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 
@@ -555,7 +595,7 @@
 
     const/high16 v1, 0x10000000
 
-    const v2, 0x7f0a06ec
+    const v2, 0x7f0a06ed
 
     if-ne v0, v2, :cond_0
 
@@ -580,7 +620,7 @@
     goto/16 :goto_4
 
     :cond_0
-    const v2, 0x7f0a06d8
+    const v2, 0x7f0a06d9
 
     const-string v3, "com.android.settings"
 
@@ -654,7 +694,7 @@
 
     move-result-object v1
 
-    const v3, 0x7f120f74
+    const v3, 0x7f120ffd
 
     invoke-virtual {v1, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -668,7 +708,7 @@
 
     move-result-object v3
 
-    const v5, 0x7f120f73
+    const v5, 0x7f120ffc
 
     invoke-virtual {v3, v5}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -706,7 +746,7 @@
     goto/16 :goto_4
 
     :cond_4
-    const v2, 0x7f0a06d9
+    const v2, 0x7f0a06da
 
     if-ne v0, v2, :cond_6
 
@@ -722,7 +762,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f120f7c
+    const v2, 0x7f121005
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -736,7 +776,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f120f7b
+    const v3, 0x7f121004
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -772,7 +812,7 @@
     goto :goto_3
 
     :cond_6
-    const v2, 0x7f0a06e5
+    const v2, 0x7f0a06e6
 
     if-ne v0, v2, :cond_9
 
@@ -810,7 +850,7 @@
 
     move-result-object v1
 
-    const v3, 0x7f12013f
+    const v3, 0x7f12014f
 
     invoke-virtual {v1, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -824,7 +864,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f12013e
+    const v4, 0x7f12014e
 
     invoke-virtual {v3, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

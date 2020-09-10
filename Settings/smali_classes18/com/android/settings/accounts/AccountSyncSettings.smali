@@ -838,7 +838,7 @@
     :goto_5
     if-nez v12, :cond_9
 
-    const v4, 0x7f12151e
+    const v4, 0x7f1215e2
 
     invoke-virtual {v8, v4}, Lcom/android/settings/accounts/SyncStateSwitchPreference;->setSummary(I)V
 
@@ -855,7 +855,7 @@
     :cond_9
     if-eqz v13, :cond_a
 
-    const v4, 0x7f121523
+    const v4, 0x7f1215e7
 
     invoke-virtual {v8, v4}, Lcom/android/settings/accounts/SyncStateSwitchPreference;->setSummary(I)V
 
@@ -892,7 +892,7 @@
 
     move-wide/from16 v22, v6
 
-    const v6, 0x7f1208c4
+    const v6, 0x7f120900
 
     move-object/from16 v17, v11
 
@@ -1017,7 +1017,7 @@
 
     move-result-object v1
 
-    const v3, 0x7f121524
+    const v3, 0x7f1215e8
 
     invoke-virtual {v1, v3}, Lcom/oneplus/settings/widget/OPFooterPreference;->setTitle(I)V
 
@@ -1342,7 +1342,7 @@
 .method public getHelpResource()I
     .locals 1
 
-    const v0, 0x7f1207bc
+    const v0, 0x7f1207f4
 
     return v0
 .end method
@@ -1641,13 +1641,13 @@
 
     invoke-direct {v1, v2}, Landroidx/appcompat/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v2, 0x7f1203dc
+    const v2, 0x7f1203ef
 
     invoke-virtual {v1, v2}, Landroidx/appcompat/app/AlertDialog$Builder;->setTitle(I)Landroidx/appcompat/app/AlertDialog$Builder;
 
     move-result-object v1
 
-    const v2, 0x7f1203db
+    const v2, 0x7f1203ee
 
     invoke-virtual {v1, v2}, Landroidx/appcompat/app/AlertDialog$Builder;->setMessage(I)Landroidx/appcompat/app/AlertDialog$Builder;
 
@@ -1674,7 +1674,7 @@
 
     nop
 
-    const v0, 0x7f121526
+    const v0, 0x7f1215ea
 
     invoke-virtual {p0, v0}, Lcom/android/settings/accounts/AccountSyncSettings;->getString(I)Ljava/lang/String;
 
@@ -1688,7 +1688,7 @@
 
     move-result-object v0
 
-    const v2, 0x7f08023f
+    const v2, 0x7f080248
 
     invoke-interface {v0, v2}, Landroid/view/MenuItem;->setIcon(I)Landroid/view/MenuItem;
 
@@ -1696,7 +1696,7 @@
 
     nop
 
-    const v2, 0x7f121525
+    const v2, 0x7f1215e9
 
     invoke-virtual {p0, v2}, Lcom/android/settings/accounts/AccountSyncSettings;->getString(I)Ljava/lang/String;
 

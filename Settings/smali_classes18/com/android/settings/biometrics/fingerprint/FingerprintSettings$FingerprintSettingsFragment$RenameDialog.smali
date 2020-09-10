@@ -173,13 +173,13 @@
 
     move-result-object v3
 
-    const v4, 0x7f12130e
+    const v4, 0x7f1213ca
 
     invoke-virtual {v3, v4}, Lcom/oneplus/lib/app/OPAlertDialog$Builder;->setTitle(I)Lcom/oneplus/lib/app/OPAlertDialog$Builder;
 
     move-result-object v3
 
-    const v4, 0x7f1203d8
+    const v4, 0x7f1203eb
 
     new-instance v5, Lcom/android/settings/biometrics/fingerprint/FingerprintSettings$FingerprintSettingsFragment$RenameDialog$1;
 
@@ -189,7 +189,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f12130f
+    const v4, 0x7f1213cb
 
     const/4 v5, 0x0
 

@@ -110,7 +110,7 @@
     return v1
 
     :cond_0
-    const v1, 0x7f08067c
+    const v1, 0x7f08068f
 
     return v1
 
@@ -119,23 +119,23 @@
 
     if-eqz v1, :cond_2
 
-    const v1, 0x7f080364
+    const v1, 0x7f08036d
 
     goto :goto_0
 
     :cond_2
-    const v1, 0x7f08067e
+    const v1, 0x7f080691
 
     :goto_0
     return v1
 
     :cond_3
-    const v1, 0x7f08067b
+    const v1, 0x7f08068e
 
     return v1
 
     :cond_4
-    const v1, 0x7f08067d
+    const v1, 0x7f080690
 
     return v1
 .end method
@@ -230,7 +230,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f120733
+    const v3, 0x7f12076b
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 

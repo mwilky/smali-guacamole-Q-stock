@@ -127,75 +127,77 @@
 
 .field public static final oneplus_lockpattern_too_many_failed_confirmation_attempts_footer:I = 0x7f100037
 
-.field public static final permission_bar_chart_label:I = 0x7f100038
+.field public static final oneplus_zen_mode_duration_summary_time_hours:I = 0x7f100038
 
-.field public static final permissions_summary:I = 0x7f100039
+.field public static final permission_bar_chart_label:I = 0x7f100039
 
-.field public static final power_high_usage_summary:I = 0x7f10003a
+.field public static final permissions_summary:I = 0x7f10003a
 
-.field public static final power_high_usage_title:I = 0x7f10003b
+.field public static final power_high_usage_summary:I = 0x7f10003b
 
-.field public static final print_jobs_summary:I = 0x7f10003c
+.field public static final power_high_usage_title:I = 0x7f10003c
 
-.field public static final print_settings_summary:I = 0x7f10003d
+.field public static final print_jobs_summary:I = 0x7f10003d
 
-.field public static final restricted_app_summary:I = 0x7f10003e
+.field public static final print_settings_summary:I = 0x7f10003e
 
-.field public static final runtime_permissions_additional_count:I = 0x7f10003f
+.field public static final restricted_app_summary:I = 0x7f10003f
 
-.field public static final runtime_permissions_summary:I = 0x7f100040
+.field public static final runtime_permissions_additional_count:I = 0x7f100040
 
-.field public static final seconds:I = 0x7f100041
+.field public static final runtime_permissions_summary:I = 0x7f100041
 
-.field public static final security_settings_fingerprint_preference_summary:I = 0x7f100042
+.field public static final seconds:I = 0x7f100042
 
-.field public static final settings_suggestion_header_summary_hidden_items:I = 0x7f100043
+.field public static final security_settings_fingerprint_preference_summary:I = 0x7f100043
 
-.field public static final show_bluetooth_devices:I = 0x7f100044
+.field public static final settings_suggestion_header_summary_hidden_items:I = 0x7f100044
 
-.field public static final show_dev_countdown:I = 0x7f100045
+.field public static final show_bluetooth_devices:I = 0x7f100045
 
-.field public static final show_number_hearingaid_count:I = 0x7f100046
+.field public static final show_dev_countdown:I = 0x7f100046
 
-.field public static final special_access_summary:I = 0x7f100047
+.field public static final show_number_hearingaid_count:I = 0x7f100047
 
-.field public static final ssl_ca_cert_dialog_title:I = 0x7f100048
+.field public static final special_access_summary:I = 0x7f100048
 
-.field public static final ssl_ca_cert_info_message:I = 0x7f100049
+.field public static final ssl_ca_cert_dialog_title:I = 0x7f100049
 
-.field public static final ssl_ca_cert_info_message_device_owner:I = 0x7f10004a
+.field public static final ssl_ca_cert_info_message:I = 0x7f10004a
 
-.field public static final ssl_ca_cert_settings_button:I = 0x7f10004b
+.field public static final ssl_ca_cert_info_message_device_owner:I = 0x7f10004b
 
-.field public static final suggestions_collapsed_summary:I = 0x7f10004c
+.field public static final ssl_ca_cert_settings_button:I = 0x7f10004c
 
-.field public static final suggestions_collapsed_title:I = 0x7f10004d
+.field public static final suggestions_collapsed_summary:I = 0x7f10004d
 
-.field public static final uri_permissions_text:I = 0x7f10004e
+.field public static final suggestions_collapsed_title:I = 0x7f10004e
 
-.field public static final wifi_saved_access_points_summary:I = 0x7f10004f
+.field public static final uri_permissions_text:I = 0x7f10004f
 
-.field public static final wifi_saved_all_access_points_summary:I = 0x7f100050
+.field public static final wifi_saved_access_points_summary:I = 0x7f100050
 
-.field public static final wifi_saved_passpoint_access_points_summary:I = 0x7f100051
+.field public static final wifi_saved_all_access_points_summary:I = 0x7f100051
 
-.field public static final wifi_tether_connected_summary:I = 0x7f100052
+.field public static final wifi_saved_passpoint_access_points_summary:I = 0x7f100052
 
-.field public static final wrong_pin_code:I = 0x7f100053
+.field public static final wifi_tether_connected_summary:I = 0x7f100053
 
-.field public static final zen_mode_bypassing_apps_subtext:I = 0x7f100054
+.field public static final wrong_pin_code:I = 0x7f100054
 
-.field public static final zen_mode_duration_summary_time_hours:I = 0x7f100055
+.field public static final zen_mode_bypassing_apps_subtext:I = 0x7f100055
 
-.field public static final zen_mode_settings_summary_on:I = 0x7f100056
+.field public static final zen_mode_duration_summary_time_hours:I = 0x7f100056
 
-.field public static final zen_mode_sound_summary_summary_off_info:I = 0x7f100057
+.field public static final zen_mode_settings_summary_on:I = 0x7f100057
 
-.field public static final zen_mode_starred_contacts_summary_additional_contacts:I = 0x7f100058
+.field public static final zen_mode_sound_summary_summary_off_info:I = 0x7f100058
 
-.field public static final zen_mode_summary_alarms_only_by_hour:I = 0x7f100059
+.field public static final zen_mode_starred_contacts_summary_additional_contacts:I = 0x7f100059
 
-.field public static final zen_mode_summary_alarms_only_by_minute:I = 0x7f10005a
+.field public static final zen_mode_summary_alarms_only_by_hour:I = 0x7f10005a
+
+.field public static final zen_mode_summary_alarms_only_by_minute:I = 0x7f10005b
 
 
 # direct methods

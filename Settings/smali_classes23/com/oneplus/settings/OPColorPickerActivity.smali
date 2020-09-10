@@ -800,41 +800,41 @@
 
     :array_0
     .array-data 4
-        0x7f121072
-        0x7f121078
-        0x7f12107e
-        0x7f12107b
-        0x7f12106e
-        0x7f121083
-        0x7f121086
-        0x7f121075
-        0x7f12107f    # 1.9415294E38f
-        0x7f121080
-        0x7f12106f
-        0x7f1204f9
+        0x7f12111c
+        0x7f121122
+        0x7f121128
+        0x7f121125
+        0x7f121118
+        0x7f12112d
+        0x7f121130
+        0x7f12111f
+        0x7f121129
+        0x7f12112a
+        0x7f121119
+        0x7f120510
     .end array-data
 
     :array_1
     .array-data 4
-        0x7f121070
-        0x7f121076
-        0x7f12107c
-        0x7f121079
-        0x7f12106c
-        0x7f121081
-        0x7f121084
-        0x7f121073
-        0x7f12107f    # 1.9415294E38f
-        0x7f121080
-        0x7f12106f
-        0x7f1204f9
+        0x7f12111a
+        0x7f121120
+        0x7f121126
+        0x7f121123
+        0x7f121116
+        0x7f12112b
+        0x7f12112e
+        0x7f12111d
+        0x7f121129
+        0x7f12112a
+        0x7f121119
+        0x7f120510
     .end array-data
 .end method
 
 .method private initDarkView(Landroid/view/View;)V
     .locals 3
 
-    const v0, 0x7f0a0467
+    const v0, 0x7f0a0468
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -854,7 +854,7 @@
 
     invoke-virtual {v0, v2}, Landroid/widget/TextView;->setTextColor(I)V
 
-    const v0, 0x7f0a0466
+    const v0, 0x7f0a0467
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -864,7 +864,7 @@
 
     iput-object v0, p0, Lcom/oneplus/settings/OPColorPickerActivity;->mPreviewAdvanceDark:Landroid/widget/TextView;
 
-    const v0, 0x7f0a045e
+    const v0, 0x7f0a045f
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -874,7 +874,7 @@
 
     iput-object v0, p0, Lcom/oneplus/settings/OPColorPickerActivity;->mPreviewRadio1Dark:Lcom/oneplus/lib/widget/button/OPRadioButton;
 
-    const v0, 0x7f0a045f
+    const v0, 0x7f0a0460
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -884,7 +884,7 @@
 
     iput-object v0, p0, Lcom/oneplus/settings/OPColorPickerActivity;->mPreviewRadio2Dark:Lcom/oneplus/lib/widget/button/OPRadioButton;
 
-    const v0, 0x7f0a0460
+    const v0, 0x7f0a0461
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -894,7 +894,7 @@
 
     iput-object v0, p0, Lcom/oneplus/settings/OPColorPickerActivity;->mPreviewRadio3Dark:Lcom/oneplus/lib/widget/button/OPRadioButton;
 
-    const v0, 0x7f0a0461
+    const v0, 0x7f0a0462
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -904,7 +904,7 @@
 
     iput-object v0, p0, Lcom/oneplus/settings/OPColorPickerActivity;->mPreviewRadio4Dark:Lcom/oneplus/lib/widget/button/OPRadioButton;
 
-    const v0, 0x7f0a0462
+    const v0, 0x7f0a0463
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -922,7 +922,7 @@
 
     invoke-virtual {v0, v2}, Landroid/widget/TextView;->setTextColor(I)V
 
-    const v0, 0x7f0a0463
+    const v0, 0x7f0a0464
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -940,7 +940,7 @@
 
     invoke-virtual {v0, v2}, Landroid/widget/TextView;->setTextColor(I)V
 
-    const v0, 0x7f0a0464
+    const v0, 0x7f0a0465
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -958,7 +958,7 @@
 
     invoke-virtual {v0, v2}, Landroid/widget/TextView;->setTextColor(I)V
 
-    const v0, 0x7f0a0465
+    const v0, 0x7f0a0466
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -976,7 +976,7 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setTextColor(I)V
 
-    const v0, 0x7f0a0469
+    const v0, 0x7f0a046a
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -986,7 +986,7 @@
 
     iput-object v0, p0, Lcom/oneplus/settings/OPColorPickerActivity;->mPreviewcoldDark:Landroid/widget/TextView;
 
-    const v0, 0x7f0a046a
+    const v0, 0x7f0a046b
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -996,7 +996,7 @@
 
     iput-object v0, p0, Lcom/oneplus/settings/OPColorPickerActivity;->mPreviewwarmDark:Landroid/widget/TextView;
 
-    const v0, 0x7f0a0468
+    const v0, 0x7f0a0469
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1020,7 +1020,7 @@
 .method private initLightView(Landroid/view/View;)V
     .locals 3
 
-    const v0, 0x7f0a0467
+    const v0, 0x7f0a0468
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1040,7 +1040,7 @@
 
     invoke-virtual {v0, v2}, Landroid/widget/TextView;->setTextColor(I)V
 
-    const v0, 0x7f0a0466
+    const v0, 0x7f0a0467
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1050,7 +1050,7 @@
 
     iput-object v0, p0, Lcom/oneplus/settings/OPColorPickerActivity;->mPreviewAdvanceLight:Landroid/widget/TextView;
 
-    const v0, 0x7f0a045e
+    const v0, 0x7f0a045f
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1060,7 +1060,7 @@
 
     iput-object v0, p0, Lcom/oneplus/settings/OPColorPickerActivity;->mPreviewRadio1Light:Lcom/oneplus/lib/widget/button/OPRadioButton;
 
-    const v0, 0x7f0a045f
+    const v0, 0x7f0a0460
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1070,7 +1070,7 @@
 
     iput-object v0, p0, Lcom/oneplus/settings/OPColorPickerActivity;->mPreviewRadio2Light:Lcom/oneplus/lib/widget/button/OPRadioButton;
 
-    const v0, 0x7f0a0460
+    const v0, 0x7f0a0461
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1080,7 +1080,7 @@
 
     iput-object v0, p0, Lcom/oneplus/settings/OPColorPickerActivity;->mPreviewRadio3Light:Lcom/oneplus/lib/widget/button/OPRadioButton;
 
-    const v0, 0x7f0a0461
+    const v0, 0x7f0a0462
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1090,7 +1090,7 @@
 
     iput-object v0, p0, Lcom/oneplus/settings/OPColorPickerActivity;->mPreviewRadio4Light:Lcom/oneplus/lib/widget/button/OPRadioButton;
 
-    const v0, 0x7f0a0462
+    const v0, 0x7f0a0463
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1108,7 +1108,7 @@
 
     invoke-virtual {v0, v2}, Landroid/widget/TextView;->setTextColor(I)V
 
-    const v0, 0x7f0a0463
+    const v0, 0x7f0a0464
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1126,7 +1126,7 @@
 
     invoke-virtual {v0, v2}, Landroid/widget/TextView;->setTextColor(I)V
 
-    const v0, 0x7f0a0464
+    const v0, 0x7f0a0465
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1144,7 +1144,7 @@
 
     invoke-virtual {v0, v2}, Landroid/widget/TextView;->setTextColor(I)V
 
-    const v0, 0x7f0a0465
+    const v0, 0x7f0a0466
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1162,7 +1162,7 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setTextColor(I)V
 
-    const v0, 0x7f0a0469
+    const v0, 0x7f0a046a
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1172,7 +1172,7 @@
 
     iput-object v0, p0, Lcom/oneplus/settings/OPColorPickerActivity;->mPreviewcoldLight:Landroid/widget/TextView;
 
-    const v0, 0x7f0a046a
+    const v0, 0x7f0a046b
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1182,7 +1182,7 @@
 
     iput-object v0, p0, Lcom/oneplus/settings/OPColorPickerActivity;->mPreviewwarmLight:Landroid/widget/TextView;
 
-    const v0, 0x7f0a0468
+    const v0, 0x7f0a0469
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1680,9 +1680,9 @@
 
     if-eqz v0, :cond_1
 
-    const v0, 0x7f080673
+    const v0, 0x7f080686
 
-    const v1, 0x7f080671
+    const v1, 0x7f080684
 
     if-nez p1, :cond_0
 
@@ -1708,9 +1708,9 @@
     goto :goto_0
 
     :cond_1
-    const v0, 0x7f080674
+    const v0, 0x7f080687
 
-    const v1, 0x7f080672
+    const v1, 0x7f080685
 
     if-nez p1, :cond_2
 
@@ -1744,13 +1744,13 @@
 
     const/4 v0, 0x0
 
-    const v1, 0x7f121840
+    const v1, 0x7f121917
 
     invoke-interface {p1, v0, v0, v0, v1}, Landroid/view/Menu;->add(IIII)Landroid/view/MenuItem;
 
     move-result-object v0
 
-    const v1, 0x7f0804ae
+    const v1, 0x7f0804b7
 
     invoke-interface {v0, v1}, Landroid/view/MenuItem;->setIcon(I)Landroid/view/MenuItem;
 
@@ -2134,7 +2134,7 @@
 
     if-eqz v0, :cond_0
 
-    const v0, 0x7f120c31
+    const v0, 0x7f120c81
 
     const/4 v1, 0x1
 
@@ -2151,7 +2151,7 @@
     :cond_0
     invoke-virtual {p0, p0}, Lcom/oneplus/settings/OPColorPickerActivity;->setOnBackPressListener(Lcom/oneplus/settings/OnBackPressListener;)V
 
-    const v0, 0x7f0a0558
+    const v0, 0x7f0a0559
 
     invoke-virtual {p0, v0}, Lcom/oneplus/settings/OPColorPickerActivity;->findViewById(I)Landroid/view/View;
 
@@ -2197,11 +2197,11 @@
 
     move-result v3
 
-    const v5, 0x7f080676
+    const v5, 0x7f080689
 
-    const v6, 0x7f080677
+    const v6, 0x7f08068a
 
-    const v7, 0x7f0a0764
+    const v7, 0x7f0a0765
 
     if-eqz v3, :cond_1
 
@@ -2305,7 +2305,7 @@
 
     invoke-virtual {v5, v6}, Landroidx/viewpager/widget/ViewPager;->setOnPageChangeListener(Landroidx/viewpager/widget/ViewPager$OnPageChangeListener;)V
 
-    const v5, 0x7f0a0467
+    const v5, 0x7f0a0468
 
     invoke-virtual {p0, v5}, Lcom/oneplus/settings/OPColorPickerActivity;->findViewById(I)Landroid/view/View;
 
@@ -2315,7 +2315,7 @@
 
     iput-object v5, p0, Lcom/oneplus/settings/OPColorPickerActivity;->mPreviewText:Landroid/widget/TextView;
 
-    const v5, 0x7f0a045c
+    const v5, 0x7f0a045d
 
     invoke-virtual {p0, v5}, Lcom/oneplus/settings/OPColorPickerActivity;->findViewById(I)Landroid/view/View;
 
@@ -2361,7 +2361,7 @@
 
     invoke-direct {p0, v6}, Lcom/oneplus/settings/OPColorPickerActivity;->initAccentColorView(Landroid/view/View;)V
 
-    const v6, 0x7f0a04ff
+    const v6, 0x7f0a04fc
 
     invoke-virtual {p0, v6}, Lcom/oneplus/settings/OPColorPickerActivity;->findViewById(I)Landroid/view/View;
 
@@ -2369,7 +2369,7 @@
 
     iput-object v6, p0, Lcom/oneplus/settings/OPColorPickerActivity;->mIndicator1:Landroid/view/View;
 
-    const v6, 0x7f0a0500
+    const v6, 0x7f0a04fd
 
     invoke-virtual {p0, v6}, Lcom/oneplus/settings/OPColorPickerActivity;->findViewById(I)Landroid/view/View;
 
@@ -2387,7 +2387,7 @@
 
     iput-object v5, p0, Lcom/oneplus/settings/OPColorPickerActivity;->mCustomView:Landroid/view/View;
 
-    const v5, 0x7f0a045d
+    const v5, 0x7f0a045e
 
     invoke-virtual {p0, v5}, Lcom/oneplus/settings/OPColorPickerActivity;->findViewById(I)Landroid/view/View;
 
@@ -2590,7 +2590,7 @@
 
     move-result-object v0
 
-    const v2, 0x7f0a04ef
+    const v2, 0x7f0a04ec
 
     invoke-virtual {v0, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2674,7 +2674,7 @@
 
     invoke-direct {v2, p0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v4, 0x7f121045
+    const v4, 0x7f1210e4
 
     invoke-virtual {v2, v4}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
@@ -2688,13 +2688,13 @@
 
     move-result-object v2
 
-    const v3, 0x7f120b9f
+    const v3, 0x7f120be6
 
     invoke-virtual {v2, v3, v1}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     move-result-object v1
 
-    const v2, 0x7f120105
+    const v2, 0x7f12010d
 
     new-instance v3, Lcom/oneplus/settings/OPColorPickerActivity$9;
 

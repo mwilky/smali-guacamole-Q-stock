@@ -415,12 +415,12 @@
     return v0
 
     :cond_0
-    const v0, 0x7f120352
+    const v0, 0x7f120365
 
     return v0
 
     :cond_1
-    const v0, 0x7f120351
+    const v0, 0x7f120364
 
     return v0
 .end method
@@ -445,12 +445,12 @@
     return v0
 
     :cond_0
-    const v0, 0x7f12030e
+    const v0, 0x7f120321
 
     return v0
 
     :cond_1
-    const v0, 0x7f12030f
+    const v0, 0x7f120322
 
     return v0
 .end method

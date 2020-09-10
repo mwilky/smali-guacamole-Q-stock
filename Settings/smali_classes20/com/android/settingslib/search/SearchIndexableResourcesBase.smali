@@ -434,6 +434,10 @@
 
     invoke-virtual {p0, v0}, Lcom/android/settingslib/search/SearchIndexableResourcesBase;->addIndex(Ljava/lang/Class;)V
 
+    const-class v0, Lcom/oneplus/settings/better/OPReadingModeTurnOnSettings;
+
+    invoke-virtual {p0, v0}, Lcom/android/settingslib/search/SearchIndexableResourcesBase;->addIndex(Ljava/lang/Class;)V
+
     const-class v0, Lcom/oneplus/settings/better/OPScreenColorMode;
 
     invoke-virtual {p0, v0}, Lcom/android/settingslib/search/SearchIndexableResourcesBase;->addIndex(Ljava/lang/Class;)V

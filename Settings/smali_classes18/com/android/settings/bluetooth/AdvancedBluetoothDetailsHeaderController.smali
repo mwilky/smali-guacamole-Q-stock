@@ -94,7 +94,7 @@
 
     iget-object v0, p0, Lcom/android/settings/bluetooth/AdvancedBluetoothDetailsHeaderController;->mLayoutPreference:Lcom/android/settingslib/widget/LayoutPreference;
 
-    const v1, 0x7f0a036b
+    const v1, 0x7f0a0370
 
     invoke-virtual {v0, v1}, Lcom/android/settingslib/widget/LayoutPreference;->findViewById(I)Landroid/view/View;
 
@@ -106,7 +106,7 @@
 
     iget-object v0, p0, Lcom/android/settings/bluetooth/AdvancedBluetoothDetailsHeaderController;->mLayoutPreference:Lcom/android/settingslib/widget/LayoutPreference;
 
-    const v2, 0x7f0a036f
+    const v2, 0x7f0a0374
 
     invoke-virtual {v0, v2}, Lcom/android/settingslib/widget/LayoutPreference;->findViewById(I)Landroid/view/View;
 
@@ -116,7 +116,7 @@
 
     iget-object v0, p0, Lcom/android/settings/bluetooth/AdvancedBluetoothDetailsHeaderController;->mLayoutPreference:Lcom/android/settingslib/widget/LayoutPreference;
 
-    const v2, 0x7f0a036e
+    const v2, 0x7f0a0373
 
     invoke-virtual {v0, v2}, Lcom/android/settingslib/widget/LayoutPreference;->findViewById(I)Landroid/view/View;
 
@@ -128,7 +128,7 @@
 
     invoke-virtual {v0, v2}, Landroid/widget/LinearLayout;->setVisibility(I)V
 
-    const v2, 0x7f0a02d6
+    const v2, 0x7f0a02db
 
     invoke-virtual {v0, v2}, Landroid/widget/LinearLayout;->findViewById(I)Landroid/view/View;
 
@@ -166,7 +166,7 @@
 
     if-eqz v2, :cond_0
 
-    const v3, 0x7f0a02d4
+    const v3, 0x7f0a02d9
 
     invoke-virtual {v0, v3}, Landroid/widget/LinearLayout;->findViewById(I)Landroid/view/View;
 
@@ -200,7 +200,7 @@
 
     if-eqz v1, :cond_1
 
-    const v2, 0x7f0a02d4
+    const v2, 0x7f0a02d9
 
     invoke-virtual {p1, v2}, Landroid/widget/LinearLayout;->findViewById(I)Landroid/view/View;
 
@@ -269,7 +269,7 @@
     invoke-virtual {p1, v4}, Landroid/widget/LinearLayout;->setVisibility(I)V
 
     :goto_0
-    const v4, 0x7f0a02d6
+    const v4, 0x7f0a02db
 
     invoke-virtual {p1, v4}, Landroid/widget/LinearLayout;->findViewById(I)Landroid/view/View;
 
@@ -668,7 +668,7 @@
     :cond_0
     iget-object v2, p0, Lcom/android/settings/bluetooth/AdvancedBluetoothDetailsHeaderController;->mLayoutPreference:Lcom/android/settingslib/widget/LayoutPreference;
 
-    const v3, 0x7f0a036b
+    const v3, 0x7f0a0370
 
     invoke-virtual {v2, v3}, Lcom/android/settingslib/widget/LayoutPreference;->findViewById(I)Landroid/view/View;
 
@@ -684,7 +684,7 @@
 
     const/16 v7, 0xd
 
-    const v8, 0x7f120321
+    const v8, 0x7f120334
 
     move-object v3, p0
 
@@ -692,7 +692,7 @@
 
     iget-object v2, p0, Lcom/android/settings/bluetooth/AdvancedBluetoothDetailsHeaderController;->mLayoutPreference:Lcom/android/settingslib/widget/LayoutPreference;
 
-    const v3, 0x7f0a036e
+    const v3, 0x7f0a0373
 
     invoke-virtual {v2, v3}, Lcom/android/settingslib/widget/LayoutPreference;->findViewById(I)Landroid/view/View;
 
@@ -708,7 +708,7 @@
 
     const/16 v7, 0xf
 
-    const v8, 0x7f12032b
+    const v8, 0x7f12033e
 
     move-object v3, p0
 
@@ -716,7 +716,7 @@
 
     iget-object v2, p0, Lcom/android/settings/bluetooth/AdvancedBluetoothDetailsHeaderController;->mLayoutPreference:Lcom/android/settingslib/widget/LayoutPreference;
 
-    const v3, 0x7f0a036f
+    const v3, 0x7f0a0374
 
     invoke-virtual {v2, v3}, Lcom/android/settingslib/widget/LayoutPreference;->findViewById(I)Landroid/view/View;
 
@@ -732,7 +732,7 @@
 
     const/16 v7, 0xe
 
-    const v8, 0x7f120370
+    const v8, 0x7f120383
 
     move-object v3, p0
 

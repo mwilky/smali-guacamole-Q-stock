@@ -496,7 +496,7 @@
 
     iget-object v4, p0, Lcom/oneplus/settings/navigationbargestures/OPNavigationBarGesturesSettings;->mAlwaysShowNavigationBar:Lcom/android/settings/ui/RadioButtonPreference;
 
-    const v5, 0x7f120ce6
+    const v5, 0x7f120d3f
 
     invoke-virtual {v4, v5}, Lcom/android/settings/ui/RadioButtonPreference;->setTitle(I)V
 
@@ -515,13 +515,13 @@
 
     iget-object v4, p0, Lcom/oneplus/settings/navigationbargestures/OPNavigationBarGesturesSettings;->mGestureNavigationBar:Lcom/android/settings/ui/RadioButtonPreference;
 
-    const v7, 0x7f120d35
+    const v7, 0x7f120d91
 
     invoke-virtual {v4, v7}, Lcom/android/settings/ui/RadioButtonPreference;->setTitle(I)V
 
     iget-object v4, p0, Lcom/oneplus/settings/navigationbargestures/OPNavigationBarGesturesSettings;->mGestureNavigationBar:Lcom/android/settings/ui/RadioButtonPreference;
 
-    const v7, 0x7f120d32
+    const v7, 0x7f120d8e
 
     invoke-virtual {v4, v7}, Lcom/android/settings/ui/RadioButtonPreference;->setSummary(I)V
 
@@ -547,7 +547,7 @@
 
     iget-object v4, p0, Lcom/oneplus/settings/navigationbargestures/OPNavigationBarGesturesSettings;->mCustomization:Landroidx/preference/Preference;
 
-    const v7, 0x7f120c55
+    const v7, 0x7f120ca6
 
     invoke-virtual {v4, v7}, Landroidx/preference/Preference;->setSummary(I)V
 
@@ -594,7 +594,7 @@
 
     iget-object v4, p0, Lcom/oneplus/settings/navigationbargestures/OPNavigationBarGesturesSettings;->mbuttonLayoutPref:Lcom/android/settingslib/widget/LayoutPreference;
 
-    const v7, 0x7f0a0391
+    const v7, 0x7f0a0396
 
     invoke-virtual {v4, v7}, Lcom/android/settingslib/widget/LayoutPreference;->findViewById(I)Landroid/view/View;
 

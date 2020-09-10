@@ -610,7 +610,7 @@
 
     if-ne p1, v0, :cond_0
 
-    const v0, 0x7f121994    # 1.942001E38f
+    const v0, 0x7f121a74
 
     return v0
 
@@ -619,7 +619,7 @@
 
     if-ne p1, v0, :cond_1
 
-    const v0, 0x7f121993    # 1.9420008E38f
+    const v0, 0x7f121a73
 
     return v0
 
@@ -725,22 +725,22 @@
 
     if-eq v0, v1, :cond_0
 
-    const v1, 0x7f121993    # 1.9420008E38f
+    const v1, 0x7f121a73
 
     return v1
 
     :cond_0
-    const v1, 0x7f121995
+    const v1, 0x7f121a75
 
     return v1
 
     :cond_1
-    const v1, 0x7f121991    # 1.9420004E38f
+    const v1, 0x7f121a71
 
     return v1
 
     :cond_2
-    const v1, 0x7f121990    # 1.9420002E38f
+    const v1, 0x7f121a70
 
     return v1
 .end method
@@ -764,22 +764,22 @@
 
     if-eq v0, v1, :cond_0
 
-    const v1, 0x7f121994    # 1.942001E38f
+    const v1, 0x7f121a74
 
     return v1
 
     :cond_0
-    const v1, 0x7f121995
+    const v1, 0x7f121a75
 
     return v1
 
     :cond_1
-    const v1, 0x7f121991    # 1.9420004E38f
+    const v1, 0x7f121a71
 
     return v1
 
     :cond_2
-    const v1, 0x7f121990    # 1.9420002E38f
+    const v1, 0x7f121a70
 
     return v1
 .end method
@@ -834,27 +834,27 @@
 
     if-ne p1, v1, :cond_2
 
-    const v1, 0x7f121994    # 1.942001E38f
+    const v1, 0x7f121a74
 
     return v1
 
     :cond_2
-    const v1, 0x7f121993    # 1.9420008E38f
+    const v1, 0x7f121a73
 
     return v1
 
     :cond_3
-    const v1, 0x7f121995
+    const v1, 0x7f121a75
 
     return v1
 
     :cond_4
-    const v1, 0x7f121991    # 1.9420004E38f
+    const v1, 0x7f121a71
 
     return v1
 
     :cond_5
-    const v1, 0x7f121990    # 1.9420002E38f
+    const v1, 0x7f121a70
 
     return v1
 .end method
@@ -1045,7 +1045,7 @@
 
     iget-object v3, p0, Lcom/android/settings/notification/ZenModeBackend;->mContext:Landroid/content/Context;
 
-    const v4, 0x7f121992    # 1.9420006E38f
+    const v4, 0x7f121a72
 
     invoke-virtual {v3, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1101,7 +1101,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f100058
+    const v4, 0x7f100059
 
     add-int/lit8 v5, v1, -0x2
 

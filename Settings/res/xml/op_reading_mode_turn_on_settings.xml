@@ -1,3 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<PreferenceScreen
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:settings="http://schemas.android.com/apk/res-auto" />
+<PreferenceScreen android:title="@string/oneplus_reading_mode_manual_settings" android:key="reading_mode_turn_on"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:settings="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory android:title="@string/oneplus_reading_mode_default_state" android:key="default_state">
+        <com.android.settings.ui.RadioButtonPreference android:persistent="false" android:title="@string/oneplus_reading_mode_ask" android:key="ask" />
+        <com.android.settings.ui.RadioButtonPreference android:persistent="false" android:title="@string/oneplus_reading_mode_turn_on_chromatic" android:key="chromatic" />
+        <com.android.settings.ui.RadioButtonPreference android:persistent="false" android:title="@string/oneplus_reading_mode_turn_on_mono" android:key="mono" />
+    </PreferenceCategory>
+    <com.oneplus.settings.ui.OPPreferenceDivider android:key="preference_divider_line" />
+</PreferenceScreen>

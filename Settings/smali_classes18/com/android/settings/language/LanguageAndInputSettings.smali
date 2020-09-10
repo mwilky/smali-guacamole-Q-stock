@@ -257,7 +257,7 @@
     return-void
 
     :cond_0
-    const v1, 0x7f1208c2
+    const v1, 0x7f1208fc
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->setTitle(I)V
 

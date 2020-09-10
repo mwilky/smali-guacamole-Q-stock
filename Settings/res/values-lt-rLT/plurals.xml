@@ -8,4 +8,8 @@
         <item quantity="other">Bandykite dar kartą po %d sek.</item>
         <item quantity="one">Bandykite dar kartą po %d sek.</item>
     </plurals>
+    <plurals name="oneplus_zen_mode_duration_summary_time_hours">
+        <item quantity="other">%d val. (nebent įjungiama automatiškai)</item>
+        <item quantity="one">1 val. (nebent įjungiama automatiškai)</item>
+    </plurals>
 </resources>

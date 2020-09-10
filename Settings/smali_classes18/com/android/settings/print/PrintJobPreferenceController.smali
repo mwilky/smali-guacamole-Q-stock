@@ -69,7 +69,7 @@
 
     if-eq v3, v8, :cond_7
 
-    const v10, 0x7f121163
+    const v10, 0x7f121212
 
     if-eq v3, v7, :cond_5
 
@@ -86,7 +86,7 @@
 
     iget-object v10, v0, Lcom/android/settings/print/PrintJobPreferenceController;->mContext:Landroid/content/Context;
 
-    const v11, 0x7f121165
+    const v11, 0x7f121214
 
     new-array v12, v8, [Ljava/lang/Object;
 
@@ -119,7 +119,7 @@
 
     iget-object v10, v0, Lcom/android/settings/print/PrintJobPreferenceController;->mContext:Landroid/content/Context;
 
-    const v11, 0x7f121161
+    const v11, 0x7f121210
 
     new-array v12, v8, [Ljava/lang/Object;
 
@@ -173,7 +173,7 @@
 
     iget-object v10, v0, Lcom/android/settings/print/PrintJobPreferenceController;->mContext:Landroid/content/Context;
 
-    const v11, 0x7f121172
+    const v11, 0x7f121221
 
     new-array v12, v8, [Ljava/lang/Object;
 
@@ -217,7 +217,7 @@
 
     iget-object v10, v0, Lcom/android/settings/print/PrintJobPreferenceController;->mContext:Landroid/content/Context;
 
-    const v11, 0x7f121164
+    const v11, 0x7f121213
 
     new-array v12, v8, [Ljava/lang/Object;
 
@@ -240,7 +240,7 @@
 
     iget-object v10, v0, Lcom/android/settings/print/PrintJobPreferenceController;->mContext:Landroid/content/Context;
 
-    const v11, 0x7f121168
+    const v11, 0x7f121217
 
     new-array v12, v7, [Ljava/lang/Object;
 

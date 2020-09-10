@@ -83,7 +83,7 @@
 .method private adjustForGuideImage()V
     .locals 5
 
-    const v0, 0x7f0a068d
+    const v0, 0x7f0a068e
 
     invoke-virtual {p0, v0}, Lcom/android/settings/biometrics/face/SetupFaceUnlockEnrollIntroduction;->findViewById(I)Landroid/view/View;
 
@@ -91,7 +91,7 @@
 
     check-cast v0, Landroid/widget/ImageView;
 
-    const v1, 0x7f0a0309
+    const v1, 0x7f0a030e
 
     invoke-virtual {p0, v1}, Lcom/android/settings/biometrics/face/SetupFaceUnlockEnrollIntroduction;->findViewById(I)Landroid/view/View;
 
@@ -549,7 +549,7 @@
 
     invoke-super {p0}, Lcom/android/settings/biometrics/fingerprint/FingerprintEnrollIntroduction;->initViews()V
 
-    const v0, 0x7f0a068b
+    const v0, 0x7f0a068c
 
     invoke-virtual {p0, v0}, Lcom/android/settings/biometrics/face/SetupFaceUnlockEnrollIntroduction;->findViewById(I)Landroid/view/View;
 
@@ -557,7 +557,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    const v1, 0x7f121321
+    const v1, 0x7f1213dd
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
 
@@ -575,15 +575,15 @@
 
     move-result v1
 
-    const v2, 0x7f0a05af
+    const v2, 0x7f0a05b0
 
-    const v3, 0x7f120cb0
+    const v3, 0x7f120d09
 
     if-eqz v1, :cond_0
 
     invoke-virtual {p0, v3}, Lcom/android/settings/biometrics/face/SetupFaceUnlockEnrollIntroduction;->setHeaderText(I)V
 
-    const v1, 0x7f120cc2
+    const v1, 0x7f120d1b
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
 
@@ -604,22 +604,22 @@
 
     if-eqz v1, :cond_1
 
-    const v1, 0x7f120fc4
+    const v1, 0x7f121050
 
     invoke-virtual {p0, v1}, Lcom/android/settings/biometrics/face/SetupFaceUnlockEnrollIntroduction;->setHeaderText(I)V
 
-    const v1, 0x7f120fc3
+    const v1, 0x7f12104f
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
 
     goto :goto_0
 
     :cond_1
-    const v1, 0x7f120caf
+    const v1, 0x7f120d08
 
     invoke-virtual {p0, v1}, Lcom/android/settings/biometrics/face/SetupFaceUnlockEnrollIntroduction;->setHeaderText(I)V
 
-    const v1, 0x7f120cae
+    const v1, 0x7f120d07
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
 
@@ -656,11 +656,11 @@
 
     iget-object v1, p0, Lcom/android/settings/biometrics/face/SetupFaceUnlockEnrollIntroduction;->mBtnCancel:Lcom/oneplus/lib/widget/button/OPButton;
 
-    const v3, 0x7f12131d
+    const v3, 0x7f1213d9
 
     invoke-virtual {v1, v3}, Lcom/oneplus/lib/widget/button/OPButton;->setText(I)V
 
-    const v1, 0x7f0a029a
+    const v1, 0x7f0a029f
 
     invoke-virtual {p0, v1}, Lcom/android/settings/biometrics/face/SetupFaceUnlockEnrollIntroduction;->findViewById(I)Landroid/view/View;
 
@@ -716,7 +716,7 @@
 
     invoke-virtual {v0, v3}, Landroid/widget/TextView;->setTextColor(I)V
 
-    const v4, 0x7f0a067f
+    const v4, 0x7f0a0680
 
     invoke-virtual {p0, v4}, Lcom/android/settings/biometrics/face/SetupFaceUnlockEnrollIntroduction;->findViewById(I)Landroid/view/View;
 

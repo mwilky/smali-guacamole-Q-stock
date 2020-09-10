@@ -224,6 +224,10 @@
         <item quantity="other">ลองใหม่ในอีก %d วินาที</item>
         <item quantity="one">Try again in %d second.</item>
     </plurals>
+    <plurals name="oneplus_zen_mode_duration_summary_time_hours">
+        <item quantity="other">1 ชั่วโมง (เว้นแต่จะถูกเปิดขึ้นโดยอัตโนมัติ)</item>
+        <item quantity="one">1 hour (unless turned on automatically)</item>
+    </plurals>
     <plurals name="permission_bar_chart_label">
         <item quantity="other">%s แอป</item>
         <item quantity="one">1 แอป</item>

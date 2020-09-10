@@ -83,7 +83,7 @@
 
     invoke-direct {v2, v3}, Landroidx/appcompat/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v3, 0x7f120964
+    const v3, 0x7f1209a0
 
     invoke-virtual {v2, v3}, Landroidx/appcompat/app/AlertDialog$Builder;->setTitle(I)Landroidx/appcompat/app/AlertDialog$Builder;
 
@@ -91,12 +91,12 @@
 
     if-eqz v1, :cond_0
 
-    const v3, 0x7f120962
+    const v3, 0x7f12099e
 
     goto :goto_0
 
     :cond_0
-    const v3, 0x7f120965
+    const v3, 0x7f1209a1
 
     :goto_0
     invoke-virtual {v2, v3}, Landroidx/appcompat/app/AlertDialog$Builder;->setMessage(I)Landroidx/appcompat/app/AlertDialog$Builder;
@@ -105,12 +105,12 @@
 
     if-eqz v1, :cond_1
 
-    const v3, 0x7f120963
+    const v3, 0x7f12099f
 
     goto :goto_1
 
     :cond_1
-    const v3, 0x7f120966
+    const v3, 0x7f1209a2
 
     :goto_1
     new-instance v4, Lcom/android/settings/security/-$$Lambda$UnificationConfirmationDialog$X7Z3K6rE64nwQwG_nB1_LYi-p7Y;
@@ -121,7 +121,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f1203d8
+    const v3, 0x7f1203eb
 
     const/4 v4, 0x0
 

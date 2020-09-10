@@ -524,11 +524,11 @@
     invoke-virtual {v5, v4}, Lcom/android/settings/widget/RadioButtonPreference;->setLayoutResource(I)V
 
     :cond_3
-    const v6, 0x7f080320
+    const v6, 0x7f080329
 
     invoke-virtual {v5, v6}, Lcom/android/settings/widget/RadioButtonPreference;->setIcon(I)V
 
-    const v6, 0x7f120173
+    const v6, 0x7f120183
 
     invoke-virtual {v5, v6}, Lcom/android/settings/widget/RadioButtonPreference;->setTitle(I)V
 

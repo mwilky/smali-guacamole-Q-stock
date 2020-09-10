@@ -45,7 +45,7 @@
 
     if-gtz v0, :cond_0
 
-    const v0, 0x7f12051f
+    const v0, 0x7f120536
 
     invoke-virtual {p0, v0}, Lcom/android/settings/datausage/AppDataUsagePreference;->setSummary(I)V
 
@@ -99,7 +99,7 @@
 
     iget-object v0, p0, Lcom/android/settings/datausage/AppDataUsagePreference;->mContext:Landroid/content/Context;
 
-    const v1, 0x7f1209eb
+    const v1, 0x7f120a28
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

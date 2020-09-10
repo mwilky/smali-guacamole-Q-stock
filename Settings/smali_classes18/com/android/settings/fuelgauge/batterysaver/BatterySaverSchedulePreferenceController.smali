@@ -92,7 +92,7 @@
 
     iget-object v1, p0, Lcom/android/settings/fuelgauge/batterysaver/BatterySaverSchedulePreferenceController;->mContext:Landroid/content/Context;
 
-    const v4, 0x7f120263
+    const v4, 0x7f120273
 
     invoke-virtual {v1, v4}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
@@ -103,7 +103,7 @@
     :cond_0
     iget-object v4, p0, Lcom/android/settings/fuelgauge/batterysaver/BatterySaverSchedulePreferenceController;->mContext:Landroid/content/Context;
 
-    const v5, 0x7f120265
+    const v5, 0x7f120275
 
     const/4 v6, 0x1
 
@@ -124,7 +124,7 @@
     :cond_1
     iget-object v1, p0, Lcom/android/settings/fuelgauge/batterysaver/BatterySaverSchedulePreferenceController;->mContext:Landroid/content/Context;
 
-    const v3, 0x7f120266
+    const v3, 0x7f120276
 
     invoke-virtual {v1, v3}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 

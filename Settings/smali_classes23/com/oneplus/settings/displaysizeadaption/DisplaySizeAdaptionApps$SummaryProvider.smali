@@ -61,7 +61,7 @@
 
     iget-object v1, p0, Lcom/oneplus/settings/displaysizeadaption/DisplaySizeAdaptionApps$SummaryProvider;->mContext:Landroid/content/Context;
 
-    const v2, 0x7f120b7e
+    const v2, 0x7f120bc5
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

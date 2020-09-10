@@ -245,7 +245,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f120422
+    const v3, 0x7f120436
 
     invoke-virtual {v1, v3}, Landroidx/appcompat/app/AlertDialog$Builder;->setTitle(I)Landroidx/appcompat/app/AlertDialog$Builder;
 

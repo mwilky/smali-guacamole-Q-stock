@@ -99,7 +99,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0300c6
+    const v1, 0x7f0300c9
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getStringArray(I)[Ljava/lang/String;
 
@@ -143,489 +143,555 @@
 .end method
 
 .method private createDefaultData()V
-    .locals 10
+    .locals 19
 
-    iget-object v0, p0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchSettings;->mDefaultQuickLaunchAppList:Ljava/util/List;
+    move-object/from16 v0, p0
 
-    invoke-interface {v0}, Ljava/util/List;->clear()V
+    iget-object v1, v0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchSettings;->mDefaultQuickLaunchAppList:Ljava/util/List;
+
+    invoke-interface {v1}, Ljava/util/List;->clear()V
 
     invoke-static {}, Lcom/oneplus/settings/utils/OPUtils;->isO2()Z
 
-    move-result v0
+    move-result v1
 
-    const/4 v1, 0x1
+    const/4 v2, 0x4
 
-    const/4 v2, 0x2
+    const/4 v3, 0x1
 
-    if-eqz v0, :cond_a
+    const/4 v4, 0x2
 
-    iget-object v0, p0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchSettings;->mActivity:Lcom/android/settings/SettingsActivity;
+    if-eqz v1, :cond_a
 
-    const-string v3, "net.one97.paytm"
-
-    invoke-static {v0, v3}, Lcom/oneplus/settings/utils/OPUtils;->isAppExist(Landroid/content/Context;Ljava/lang/String;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    new-instance v0, Lcom/oneplus/settings/better/OPAppModel;
-
-    iget-object v4, p0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchSettings;->mPayWaysName:[Ljava/lang/String;
-
-    const/4 v5, 0x4
-
-    aget-object v6, v4, v5
-
-    invoke-static {v5}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
-
-    move-result-object v7
-
-    const/4 v8, 0x0
-
-    const/4 v9, 0x0
+    iget-object v1, v0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchSettings;->mActivity:Lcom/android/settings/SettingsActivity;
 
     const-string v5, "net.one97.paytm"
 
-    move-object v4, v0
+    invoke-static {v1, v5}, Lcom/oneplus/settings/utils/OPUtils;->isAppExist(Landroid/content/Context;Ljava/lang/String;)Z
 
-    invoke-direct/range {v4 .. v9}, Lcom/oneplus/settings/better/OPAppModel;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IZ)V
+    move-result v1
 
-    invoke-virtual {v0, v2}, Lcom/oneplus/settings/better/OPAppModel;->setType(I)V
-
-    iget-object v4, p0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchSettings;->mActivity:Lcom/android/settings/SettingsActivity;
-
-    invoke-static {v4, v3}, Lcom/oneplus/settings/utils/OPUtils;->getAppIcon(Landroid/content/Context;Ljava/lang/String;)Landroid/graphics/drawable/Drawable;
-
-    move-result-object v3
-
-    invoke-virtual {v0, v3}, Lcom/oneplus/settings/better/OPAppModel;->setAppIcon(Landroid/graphics/drawable/Drawable;)V
-
-    iget-object v3, p0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchSettings;->mDefaultQuickLaunchAppList:Ljava/util/List;
-
-    invoke-interface {v3, v0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
-
-    :cond_0
-    iget-object v0, p0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchSettings;->mActivity:Lcom/android/settings/SettingsActivity;
-
-    const-string v3, "com.google.android.googlequicksearchbox"
-
-    invoke-static {v0, v3}, Lcom/oneplus/settings/utils/OPUtils;->isAppExist(Landroid/content/Context;Ljava/lang/String;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_1
-
-    iget-object v0, p0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchSettings;->mActivity:Lcom/android/settings/SettingsActivity;
-
-    invoke-static {v0, v3}, Lcom/oneplus/settings/utils/OPUtils;->getResolveInfoByPackageName(Landroid/content/Context;Ljava/lang/String;)Landroid/content/pm/ResolveInfo;
-
-    move-result-object v0
-
-    if-eqz v0, :cond_1
-
-    iget-object v4, v0, Landroid/content/pm/ResolveInfo;->activityInfo:Landroid/content/pm/ActivityInfo;
-
-    iget-object v4, v4, Landroid/content/pm/ActivityInfo;->applicationInfo:Landroid/content/pm/ApplicationInfo;
-
-    iget v4, v4, Landroid/content/pm/ApplicationInfo;->uid:I
-
-    iget-object v5, p0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchSettings;->mActivity:Lcom/android/settings/SettingsActivity;
-
-    const-string v6, "voice_shortcut"
-
-    invoke-static {v5, v3, v6, v4}, Lcom/oneplus/settings/utils/OPUtils;->loadShortcutByPackageNameAndShortcutId(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;I)Lcom/oneplus/settings/better/OPAppModel;
-
-    move-result-object v3
-
-    iget-object v5, p0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchSettings;->mDefaultQuickLaunchAppList:Ljava/util/List;
-
-    invoke-interface {v5, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
-
-    :cond_1
-    iget-object v0, p0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchSettings;->mActivity:Lcom/android/settings/SettingsActivity;
-
-    const-string v3, "com.oneplus.note"
-
-    invoke-static {v0, v3}, Lcom/oneplus/settings/utils/OPUtils;->isAppExist(Landroid/content/Context;Ljava/lang/String;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_2
-
-    iget-object v0, p0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchSettings;->mActivity:Lcom/android/settings/SettingsActivity;
-
-    invoke-static {v0, v3}, Lcom/oneplus/settings/utils/OPUtils;->getResolveInfoByPackageName(Landroid/content/Context;Ljava/lang/String;)Landroid/content/pm/ResolveInfo;
-
-    move-result-object v0
-
-    if-eqz v0, :cond_2
-
-    iget-object v4, v0, Landroid/content/pm/ResolveInfo;->activityInfo:Landroid/content/pm/ActivityInfo;
-
-    iget-object v4, v4, Landroid/content/pm/ActivityInfo;->applicationInfo:Landroid/content/pm/ApplicationInfo;
-
-    iget v4, v4, Landroid/content/pm/ApplicationInfo;->uid:I
-
-    iget-object v5, p0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchSettings;->mActivity:Lcom/android/settings/SettingsActivity;
-
-    const-string v6, "new_note"
-
-    invoke-static {v5, v3, v6, v4}, Lcom/oneplus/settings/utils/OPUtils;->loadShortcutByPackageNameAndShortcutId(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;I)Lcom/oneplus/settings/better/OPAppModel;
-
-    move-result-object v3
-
-    iget-object v5, p0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchSettings;->mDefaultQuickLaunchAppList:Ljava/util/List;
-
-    invoke-interface {v5, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
-
-    :cond_2
-    iget-object v0, p0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchSettings;->mActivity:Lcom/android/settings/SettingsActivity;
-
-    const-string v3, "com.google.android.music"
-
-    invoke-static {v0, v3}, Lcom/oneplus/settings/utils/OPUtils;->isAppExist(Landroid/content/Context;Ljava/lang/String;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_3
-
-    iget-object v0, p0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchSettings;->mActivity:Lcom/android/settings/SettingsActivity;
-
-    invoke-static {v0, v3}, Lcom/oneplus/settings/utils/OPUtils;->getResolveInfoByPackageName(Landroid/content/Context;Ljava/lang/String;)Landroid/content/pm/ResolveInfo;
-
-    move-result-object v0
-
-    if-eqz v0, :cond_3
-
-    iget-object v4, v0, Landroid/content/pm/ResolveInfo;->activityInfo:Landroid/content/pm/ActivityInfo;
-
-    iget-object v4, v4, Landroid/content/pm/ActivityInfo;->applicationInfo:Landroid/content/pm/ApplicationInfo;
-
-    iget v4, v4, Landroid/content/pm/ApplicationInfo;->uid:I
-
-    iget-object v5, p0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchSettings;->mActivity:Lcom/android/settings/SettingsActivity;
-
-    const-string v6, "music-mylibrary"
-
-    invoke-static {v5, v3, v6, v4}, Lcom/oneplus/settings/utils/OPUtils;->loadShortcutByPackageNameAndShortcutId(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;I)Lcom/oneplus/settings/better/OPAppModel;
-
-    move-result-object v3
-
-    iget-object v5, p0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchSettings;->mDefaultQuickLaunchAppList:Ljava/util/List;
-
-    invoke-interface {v5, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
-
-    :cond_3
-    iget-object v0, p0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchSettings;->mActivity:Lcom/android/settings/SettingsActivity;
-
-    const-string v3, "com.google.android.calendar"
-
-    invoke-static {v0, v3}, Lcom/oneplus/settings/utils/OPUtils;->isAppExist(Landroid/content/Context;Ljava/lang/String;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_4
-
-    iget-object v0, p0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchSettings;->mActivity:Lcom/android/settings/SettingsActivity;
-
-    invoke-static {v0, v3}, Lcom/oneplus/settings/utils/OPUtils;->getResolveInfoByPackageName(Landroid/content/Context;Ljava/lang/String;)Landroid/content/pm/ResolveInfo;
-
-    move-result-object v0
-
-    if-eqz v0, :cond_4
-
-    iget-object v4, v0, Landroid/content/pm/ResolveInfo;->activityInfo:Landroid/content/pm/ActivityInfo;
-
-    iget-object v4, v4, Landroid/content/pm/ActivityInfo;->applicationInfo:Landroid/content/pm/ApplicationInfo;
-
-    iget v4, v4, Landroid/content/pm/ApplicationInfo;->uid:I
-
-    iget-object v5, p0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchSettings;->mActivity:Lcom/android/settings/SettingsActivity;
-
-    const-string v6, "launcher_shortcuts_shortcut_new_event"
-
-    invoke-static {v5, v3, v6, v4}, Lcom/oneplus/settings/utils/OPUtils;->loadShortcutByPackageNameAndShortcutId(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;I)Lcom/oneplus/settings/better/OPAppModel;
-
-    move-result-object v3
-
-    iget-object v5, p0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchSettings;->mDefaultQuickLaunchAppList:Ljava/util/List;
-
-    invoke-interface {v5, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
-
-    :cond_4
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    iget-object v3, p0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchSettings;->mDefaultQuickLaunchAppList:Ljava/util/List;
-
-    invoke-interface {v3}, Ljava/util/List;->iterator()Ljava/util/Iterator;
-
-    move-result-object v3
-
-    :goto_0
-    invoke-interface {v3}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v4
-
-    if-eqz v4, :cond_9
-
-    invoke-interface {v3}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v4
-
-    check-cast v4, Lcom/oneplus/settings/better/OPAppModel;
-
-    if-nez v4, :cond_5
-
-    goto :goto_0
-
-    :cond_5
-    invoke-static {v4}, Lcom/oneplus/settings/utils/OPUtils;->getQuickPayAppString(Lcom/oneplus/settings/better/OPAppModel;)Ljava/lang/String;
-
-    move-result-object v5
-
-    invoke-virtual {v4}, Lcom/oneplus/settings/better/OPAppModel;->getType()I
-
-    move-result v6
-
-    if-nez v6, :cond_6
-
-    invoke-static {v4}, Lcom/oneplus/settings/utils/OPUtils;->getQuickLaunchAppString(Lcom/oneplus/settings/better/OPAppModel;)Ljava/lang/String;
-
-    move-result-object v5
-
-    goto :goto_1
-
-    :cond_6
-    invoke-virtual {v4}, Lcom/oneplus/settings/better/OPAppModel;->getType()I
-
-    move-result v6
-
-    if-ne v6, v1, :cond_7
-
-    invoke-static {v4}, Lcom/oneplus/settings/utils/OPUtils;->getQuickLaunchShortcutsString(Lcom/oneplus/settings/better/OPAppModel;)Ljava/lang/String;
-
-    move-result-object v5
-
-    goto :goto_1
-
-    :cond_7
-    invoke-virtual {v4}, Lcom/oneplus/settings/better/OPAppModel;->getType()I
-
-    move-result v6
-
-    if-ne v6, v2, :cond_8
-
-    invoke-static {v4}, Lcom/oneplus/settings/utils/OPUtils;->getQuickPayAppString(Lcom/oneplus/settings/better/OPAppModel;)Ljava/lang/String;
-
-    move-result-object v5
-
-    :cond_8
-    :goto_1
-    invoke-virtual {v0, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget-object v6, p0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchSettings;->mActivity:Lcom/android/settings/SettingsActivity;
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v7
-
-    invoke-static {v6, v7}, Lcom/oneplus/settings/utils/OPUtils;->saveQuickLaunchStrings(Landroid/content/Context;Ljava/lang/String;)V
-
-    goto :goto_0
-
-    :cond_9
-    goto/16 :goto_3
-
-    :cond_a
-    iget-object v0, p0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchSettings;->mActivity:Lcom/android/settings/SettingsActivity;
-
-    const-string v3, "com.tencent.mm"
-
-    invoke-static {v0, v3}, Lcom/oneplus/settings/utils/OPUtils;->isAppExist(Landroid/content/Context;Ljava/lang/String;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_b
-
-    new-instance v0, Lcom/oneplus/settings/better/OPAppModel;
-
-    iget-object v3, p0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchSettings;->mPayWaysName:[Ljava/lang/String;
-
-    const/4 v9, 0x0
-
-    aget-object v5, v3, v9
-
-    invoke-static {v9}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
-
-    move-result-object v6
-
-    const/4 v7, 0x0
-
-    const/4 v8, 0x0
-
-    const-string v4, "com.tencent.mm"
-
-    move-object v3, v0
-
-    invoke-direct/range {v3 .. v8}, Lcom/oneplus/settings/better/OPAppModel;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IZ)V
-
-    invoke-virtual {v0, v2}, Lcom/oneplus/settings/better/OPAppModel;->setType(I)V
-
-    iget-object v3, p0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchSettings;->mActivity:Lcom/android/settings/SettingsActivity;
-
-    invoke-static {v3, v9}, Lcom/oneplus/settings/utils/OPUtils;->getQuickPayIconByType(Landroid/content/Context;I)Landroid/graphics/drawable/Drawable;
-
-    move-result-object v3
-
-    invoke-virtual {v0, v3}, Lcom/oneplus/settings/better/OPAppModel;->setAppIcon(Landroid/graphics/drawable/Drawable;)V
-
-    new-instance v3, Lcom/oneplus/settings/better/OPAppModel;
-
-    iget-object v4, p0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchSettings;->mPayWaysName:[Ljava/lang/String;
-
-    aget-object v6, v4, v1
-
-    invoke-static {v1}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
-
-    move-result-object v7
-
-    const-string v5, "com.tencent.mm"
-
-    move-object v4, v3
-
-    invoke-direct/range {v4 .. v9}, Lcom/oneplus/settings/better/OPAppModel;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IZ)V
-
-    invoke-virtual {v3, v2}, Lcom/oneplus/settings/better/OPAppModel;->setType(I)V
-
-    iget-object v4, p0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchSettings;->mActivity:Lcom/android/settings/SettingsActivity;
-
-    invoke-static {v4, v1}, Lcom/oneplus/settings/utils/OPUtils;->getQuickPayIconByType(Landroid/content/Context;I)Landroid/graphics/drawable/Drawable;
-
-    move-result-object v1
-
-    invoke-virtual {v3, v1}, Lcom/oneplus/settings/better/OPAppModel;->setAppIcon(Landroid/graphics/drawable/Drawable;)V
-
-    iget-object v1, p0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchSettings;->mDefaultQuickLaunchAppList:Ljava/util/List;
-
-    invoke-interface {v1, v0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
-
-    iget-object v1, p0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchSettings;->mDefaultQuickLaunchAppList:Ljava/util/List;
-
-    invoke-interface {v1, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
-
-    :cond_b
-    iget-object v0, p0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchSettings;->mActivity:Lcom/android/settings/SettingsActivity;
-
-    const-string v1, "com.eg.android.AlipayGphone"
-
-    invoke-static {v0, v1}, Lcom/oneplus/settings/utils/OPUtils;->isAppExist(Landroid/content/Context;Ljava/lang/String;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_c
-
-    new-instance v0, Lcom/oneplus/settings/better/OPAppModel;
-
-    iget-object v1, p0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchSettings;->mPayWaysName:[Ljava/lang/String;
-
-    aget-object v5, v1, v2
-
-    invoke-static {v2}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
-
-    move-result-object v6
-
-    const/4 v7, 0x0
-
-    const/4 v8, 0x0
-
-    const-string v4, "com.eg.android.AlipayGphone"
-
-    move-object v3, v0
-
-    invoke-direct/range {v3 .. v8}, Lcom/oneplus/settings/better/OPAppModel;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IZ)V
-
-    invoke-virtual {v0, v2}, Lcom/oneplus/settings/better/OPAppModel;->setType(I)V
-
-    iget-object v1, p0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchSettings;->mActivity:Lcom/android/settings/SettingsActivity;
-
-    invoke-static {v1, v2}, Lcom/oneplus/settings/utils/OPUtils;->getQuickPayIconByType(Landroid/content/Context;I)Landroid/graphics/drawable/Drawable;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Lcom/oneplus/settings/better/OPAppModel;->setAppIcon(Landroid/graphics/drawable/Drawable;)V
+    if-eqz v1, :cond_0
 
     new-instance v1, Lcom/oneplus/settings/better/OPAppModel;
 
-    iget-object v3, p0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchSettings;->mPayWaysName:[Ljava/lang/String;
+    iget-object v6, v0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchSettings;->mPayWaysName:[Ljava/lang/String;
 
-    const/4 v9, 0x3
+    aget-object v8, v6, v2
 
-    aget-object v5, v3, v9
+    invoke-static {v2}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
 
-    invoke-static {v9}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
+    move-result-object v9
 
-    move-result-object v6
+    const/4 v10, 0x0
 
-    const-string v4, "com.eg.android.AlipayGphone"
+    const/4 v11, 0x0
 
-    move-object v3, v1
+    const-string v7, "net.one97.paytm"
 
-    invoke-direct/range {v3 .. v8}, Lcom/oneplus/settings/better/OPAppModel;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IZ)V
+    move-object v6, v1
 
-    invoke-virtual {v1, v2}, Lcom/oneplus/settings/better/OPAppModel;->setType(I)V
+    invoke-direct/range {v6 .. v11}, Lcom/oneplus/settings/better/OPAppModel;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IZ)V
 
-    iget-object v2, p0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchSettings;->mActivity:Lcom/android/settings/SettingsActivity;
+    invoke-virtual {v1, v4}, Lcom/oneplus/settings/better/OPAppModel;->setType(I)V
 
-    invoke-static {v2, v9}, Lcom/oneplus/settings/utils/OPUtils;->getQuickPayIconByType(Landroid/content/Context;I)Landroid/graphics/drawable/Drawable;
+    iget-object v2, v0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchSettings;->mActivity:Lcom/android/settings/SettingsActivity;
+
+    invoke-static {v2, v5}, Lcom/oneplus/settings/utils/OPUtils;->getAppIcon(Landroid/content/Context;Ljava/lang/String;)Landroid/graphics/drawable/Drawable;
 
     move-result-object v2
 
     invoke-virtual {v1, v2}, Lcom/oneplus/settings/better/OPAppModel;->setAppIcon(Landroid/graphics/drawable/Drawable;)V
 
-    iget-object v2, p0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchSettings;->mDefaultQuickLaunchAppList:Ljava/util/List;
-
-    invoke-interface {v2, v0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
-
-    iget-object v2, p0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchSettings;->mDefaultQuickLaunchAppList:Ljava/util/List;
+    iget-object v2, v0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchSettings;->mDefaultQuickLaunchAppList:Ljava/util/List;
 
     invoke-interface {v2, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    :cond_c
-    new-instance v0, Ljava/lang/StringBuilder;
+    :cond_0
+    iget-object v1, v0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchSettings;->mActivity:Lcom/android/settings/SettingsActivity;
 
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+    const-string v2, "com.google.android.googlequicksearchbox"
 
-    iget-object v1, p0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchSettings;->mDefaultQuickLaunchAppList:Ljava/util/List;
+    invoke-static {v1, v2}, Lcom/oneplus/settings/utils/OPUtils;->isAppExist(Landroid/content/Context;Ljava/lang/String;)Z
 
-    invoke-interface {v1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+    move-result v1
+
+    if-eqz v1, :cond_1
+
+    iget-object v1, v0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchSettings;->mActivity:Lcom/android/settings/SettingsActivity;
+
+    invoke-static {v1, v2}, Lcom/oneplus/settings/utils/OPUtils;->getResolveInfoByPackageName(Landroid/content/Context;Ljava/lang/String;)Landroid/content/pm/ResolveInfo;
 
     move-result-object v1
 
-    :goto_2
-    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
+    if-eqz v1, :cond_1
 
-    move-result v2
+    iget-object v5, v1, Landroid/content/pm/ResolveInfo;->activityInfo:Landroid/content/pm/ActivityInfo;
 
-    if-eqz v2, :cond_d
+    iget-object v5, v5, Landroid/content/pm/ActivityInfo;->applicationInfo:Landroid/content/pm/ApplicationInfo;
 
-    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    iget v5, v5, Landroid/content/pm/ApplicationInfo;->uid:I
+
+    iget-object v6, v0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchSettings;->mActivity:Lcom/android/settings/SettingsActivity;
+
+    const-string v7, "voice_shortcut"
+
+    invoke-static {v6, v2, v7, v5}, Lcom/oneplus/settings/utils/OPUtils;->loadShortcutByPackageNameAndShortcutId(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;I)Lcom/oneplus/settings/better/OPAppModel;
 
     move-result-object v2
 
-    check-cast v2, Lcom/oneplus/settings/better/OPAppModel;
+    iget-object v6, v0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchSettings;->mDefaultQuickLaunchAppList:Ljava/util/List;
 
-    invoke-static {v2}, Lcom/oneplus/settings/utils/OPUtils;->getQuickPayAppString(Lcom/oneplus/settings/better/OPAppModel;)Ljava/lang/String;
+    invoke-interface {v6, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    :cond_1
+    iget-object v1, v0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchSettings;->mActivity:Lcom/android/settings/SettingsActivity;
+
+    const-string v2, "com.oneplus.note"
+
+    invoke-static {v1, v2}, Lcom/oneplus/settings/utils/OPUtils;->isAppExist(Landroid/content/Context;Ljava/lang/String;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_2
+
+    iget-object v1, v0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchSettings;->mActivity:Lcom/android/settings/SettingsActivity;
+
+    invoke-static {v1, v2}, Lcom/oneplus/settings/utils/OPUtils;->getResolveInfoByPackageName(Landroid/content/Context;Ljava/lang/String;)Landroid/content/pm/ResolveInfo;
+
+    move-result-object v1
+
+    if-eqz v1, :cond_2
+
+    iget-object v5, v1, Landroid/content/pm/ResolveInfo;->activityInfo:Landroid/content/pm/ActivityInfo;
+
+    iget-object v5, v5, Landroid/content/pm/ActivityInfo;->applicationInfo:Landroid/content/pm/ApplicationInfo;
+
+    iget v5, v5, Landroid/content/pm/ApplicationInfo;->uid:I
+
+    iget-object v6, v0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchSettings;->mActivity:Lcom/android/settings/SettingsActivity;
+
+    const-string v7, "new_note"
+
+    invoke-static {v6, v2, v7, v5}, Lcom/oneplus/settings/utils/OPUtils;->loadShortcutByPackageNameAndShortcutId(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;I)Lcom/oneplus/settings/better/OPAppModel;
+
+    move-result-object v2
+
+    iget-object v6, v0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchSettings;->mDefaultQuickLaunchAppList:Ljava/util/List;
+
+    invoke-interface {v6, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    :cond_2
+    iget-object v1, v0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchSettings;->mActivity:Lcom/android/settings/SettingsActivity;
+
+    const-string v2, "com.google.android.music"
+
+    invoke-static {v1, v2}, Lcom/oneplus/settings/utils/OPUtils;->isAppExist(Landroid/content/Context;Ljava/lang/String;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_3
+
+    iget-object v1, v0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchSettings;->mActivity:Lcom/android/settings/SettingsActivity;
+
+    invoke-static {v1, v2}, Lcom/oneplus/settings/utils/OPUtils;->getResolveInfoByPackageName(Landroid/content/Context;Ljava/lang/String;)Landroid/content/pm/ResolveInfo;
+
+    move-result-object v1
+
+    if-eqz v1, :cond_3
+
+    iget-object v5, v1, Landroid/content/pm/ResolveInfo;->activityInfo:Landroid/content/pm/ActivityInfo;
+
+    iget-object v5, v5, Landroid/content/pm/ActivityInfo;->applicationInfo:Landroid/content/pm/ApplicationInfo;
+
+    iget v5, v5, Landroid/content/pm/ApplicationInfo;->uid:I
+
+    iget-object v6, v0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchSettings;->mActivity:Lcom/android/settings/SettingsActivity;
+
+    const-string v7, "music-mylibrary"
+
+    invoke-static {v6, v2, v7, v5}, Lcom/oneplus/settings/utils/OPUtils;->loadShortcutByPackageNameAndShortcutId(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;I)Lcom/oneplus/settings/better/OPAppModel;
+
+    move-result-object v2
+
+    iget-object v6, v0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchSettings;->mDefaultQuickLaunchAppList:Ljava/util/List;
+
+    invoke-interface {v6, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    :cond_3
+    iget-object v1, v0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchSettings;->mActivity:Lcom/android/settings/SettingsActivity;
+
+    const-string v2, "com.google.android.calendar"
+
+    invoke-static {v1, v2}, Lcom/oneplus/settings/utils/OPUtils;->isAppExist(Landroid/content/Context;Ljava/lang/String;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_4
+
+    iget-object v1, v0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchSettings;->mActivity:Lcom/android/settings/SettingsActivity;
+
+    invoke-static {v1, v2}, Lcom/oneplus/settings/utils/OPUtils;->getResolveInfoByPackageName(Landroid/content/Context;Ljava/lang/String;)Landroid/content/pm/ResolveInfo;
+
+    move-result-object v1
+
+    if-eqz v1, :cond_4
+
+    iget-object v5, v1, Landroid/content/pm/ResolveInfo;->activityInfo:Landroid/content/pm/ActivityInfo;
+
+    iget-object v5, v5, Landroid/content/pm/ActivityInfo;->applicationInfo:Landroid/content/pm/ApplicationInfo;
+
+    iget v5, v5, Landroid/content/pm/ApplicationInfo;->uid:I
+
+    iget-object v6, v0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchSettings;->mActivity:Lcom/android/settings/SettingsActivity;
+
+    const-string v7, "launcher_shortcuts_shortcut_new_event"
+
+    invoke-static {v6, v2, v7, v5}, Lcom/oneplus/settings/utils/OPUtils;->loadShortcutByPackageNameAndShortcutId(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;I)Lcom/oneplus/settings/better/OPAppModel;
+
+    move-result-object v2
+
+    iget-object v6, v0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchSettings;->mDefaultQuickLaunchAppList:Ljava/util/List;
+
+    invoke-interface {v6, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    :cond_4
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    iget-object v2, v0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchSettings;->mDefaultQuickLaunchAppList:Ljava/util/List;
+
+    invoke-interface {v2}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+
+    move-result-object v2
+
+    :goto_0
+    invoke-interface {v2}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v5
+
+    if-eqz v5, :cond_9
+
+    invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v5
+
+    check-cast v5, Lcom/oneplus/settings/better/OPAppModel;
+
+    if-nez v5, :cond_5
+
+    goto :goto_0
+
+    :cond_5
+    invoke-static {v5}, Lcom/oneplus/settings/utils/OPUtils;->getQuickPayAppString(Lcom/oneplus/settings/better/OPAppModel;)Ljava/lang/String;
+
+    move-result-object v6
+
+    invoke-virtual {v5}, Lcom/oneplus/settings/better/OPAppModel;->getType()I
+
+    move-result v7
+
+    if-nez v7, :cond_6
+
+    invoke-static {v5}, Lcom/oneplus/settings/utils/OPUtils;->getQuickLaunchAppString(Lcom/oneplus/settings/better/OPAppModel;)Ljava/lang/String;
+
+    move-result-object v6
+
+    goto :goto_1
+
+    :cond_6
+    invoke-virtual {v5}, Lcom/oneplus/settings/better/OPAppModel;->getType()I
+
+    move-result v7
+
+    if-ne v7, v3, :cond_7
+
+    invoke-static {v5}, Lcom/oneplus/settings/utils/OPUtils;->getQuickLaunchShortcutsString(Lcom/oneplus/settings/better/OPAppModel;)Ljava/lang/String;
+
+    move-result-object v6
+
+    goto :goto_1
+
+    :cond_7
+    invoke-virtual {v5}, Lcom/oneplus/settings/better/OPAppModel;->getType()I
+
+    move-result v7
+
+    if-ne v7, v4, :cond_8
+
+    invoke-static {v5}, Lcom/oneplus/settings/utils/OPUtils;->getQuickPayAppString(Lcom/oneplus/settings/better/OPAppModel;)Ljava/lang/String;
+
+    move-result-object v6
+
+    :cond_8
+    :goto_1
+    invoke-virtual {v1, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object v7, v0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchSettings;->mActivity:Lcom/android/settings/SettingsActivity;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v8
+
+    invoke-static {v7, v8}, Lcom/oneplus/settings/utils/OPUtils;->saveQuickLaunchStrings(Landroid/content/Context;Ljava/lang/String;)V
+
+    goto :goto_0
+
+    :cond_9
+    goto/16 :goto_5
+
+    :cond_a
+    iget-object v1, v0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchSettings;->mActivity:Lcom/android/settings/SettingsActivity;
+
+    const-string v5, "com.tencent.mm"
+
+    invoke-static {v1, v5}, Lcom/oneplus/settings/utils/OPUtils;->isAppExist(Landroid/content/Context;Ljava/lang/String;)Z
+
+    move-result v1
+
+    const/4 v5, 0x3
+
+    if-eqz v1, :cond_b
+
+    new-instance v1, Lcom/oneplus/settings/better/OPAppModel;
+
+    iget-object v6, v0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchSettings;->mPayWaysName:[Ljava/lang/String;
+
+    const/4 v12, 0x0
+
+    aget-object v8, v6, v12
+
+    invoke-static {v12}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
+
+    move-result-object v9
+
+    const/4 v10, 0x0
+
+    const/4 v11, 0x0
+
+    const-string v7, "com.tencent.mm"
+
+    move-object v6, v1
+
+    invoke-direct/range {v6 .. v11}, Lcom/oneplus/settings/better/OPAppModel;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IZ)V
+
+    invoke-virtual {v1, v4}, Lcom/oneplus/settings/better/OPAppModel;->setType(I)V
+
+    iget-object v6, v0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchSettings;->mActivity:Lcom/android/settings/SettingsActivity;
+
+    invoke-static {v6, v12}, Lcom/oneplus/settings/utils/OPUtils;->getQuickPayIconByType(Landroid/content/Context;I)Landroid/graphics/drawable/Drawable;
+
+    move-result-object v6
+
+    invoke-virtual {v1, v6}, Lcom/oneplus/settings/better/OPAppModel;->setAppIcon(Landroid/graphics/drawable/Drawable;)V
+
+    new-instance v6, Lcom/oneplus/settings/better/OPAppModel;
+
+    iget-object v7, v0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchSettings;->mPayWaysName:[Ljava/lang/String;
+
+    aget-object v15, v7, v3
+
+    invoke-static {v3}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
+
+    move-result-object v16
+
+    const/16 v17, 0x0
+
+    const/16 v18, 0x0
+
+    const-string v14, "com.tencent.mm"
+
+    move-object v13, v6
+
+    invoke-direct/range {v13 .. v18}, Lcom/oneplus/settings/better/OPAppModel;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IZ)V
+
+    invoke-virtual {v6, v4}, Lcom/oneplus/settings/better/OPAppModel;->setType(I)V
+
+    iget-object v7, v0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchSettings;->mActivity:Lcom/android/settings/SettingsActivity;
+
+    invoke-static {v7, v3}, Lcom/oneplus/settings/utils/OPUtils;->getQuickPayIconByType(Landroid/content/Context;I)Landroid/graphics/drawable/Drawable;
 
     move-result-object v3
 
-    invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v6, v3}, Lcom/oneplus/settings/better/OPAppModel;->setAppIcon(Landroid/graphics/drawable/Drawable;)V
 
-    iget-object v4, p0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchSettings;->mActivity:Lcom/android/settings/SettingsActivity;
+    new-instance v3, Lcom/oneplus/settings/better/OPAppModel;
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    iget-object v7, v0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchSettings;->mPayWaysName:[Ljava/lang/String;
+
+    aget-object v15, v7, v4
+
+    invoke-static {v12}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
+
+    move-result-object v16
+
+    const-string v14, "com.tencent.mm"
+
+    move-object v13, v3
+
+    invoke-direct/range {v13 .. v18}, Lcom/oneplus/settings/better/OPAppModel;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IZ)V
+
+    invoke-virtual {v3, v5}, Lcom/oneplus/settings/better/OPAppModel;->setType(I)V
+
+    iget-object v7, v0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchSettings;->mActivity:Lcom/android/settings/SettingsActivity;
+
+    invoke-static {v7, v12}, Lcom/oneplus/settings/utils/OPUtils;->getQuickMiniProgrameconByType(Landroid/content/Context;I)Landroid/graphics/drawable/Drawable;
+
+    move-result-object v7
+
+    invoke-virtual {v3, v7}, Lcom/oneplus/settings/better/OPAppModel;->setAppIcon(Landroid/graphics/drawable/Drawable;)V
+
+    iget-object v7, v0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchSettings;->mDefaultQuickLaunchAppList:Ljava/util/List;
+
+    invoke-interface {v7, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    iget-object v7, v0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchSettings;->mDefaultQuickLaunchAppList:Ljava/util/List;
+
+    invoke-interface {v7, v6}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    iget-object v7, v0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchSettings;->mDefaultQuickLaunchAppList:Ljava/util/List;
+
+    invoke-interface {v7, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    :cond_b
+    iget-object v1, v0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchSettings;->mActivity:Lcom/android/settings/SettingsActivity;
+
+    const-string v3, "com.eg.android.AlipayGphone"
+
+    invoke-static {v1, v3}, Lcom/oneplus/settings/utils/OPUtils;->isAppExist(Landroid/content/Context;Ljava/lang/String;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_c
+
+    new-instance v1, Lcom/oneplus/settings/better/OPAppModel;
+
+    iget-object v3, v0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchSettings;->mPayWaysName:[Ljava/lang/String;
+
+    aget-object v8, v3, v5
+
+    invoke-static {v4}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
+
+    move-result-object v9
+
+    const/4 v10, 0x0
+
+    const/4 v11, 0x0
+
+    const-string v7, "com.eg.android.AlipayGphone"
+
+    move-object v6, v1
+
+    invoke-direct/range {v6 .. v11}, Lcom/oneplus/settings/better/OPAppModel;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IZ)V
+
+    invoke-virtual {v1, v4}, Lcom/oneplus/settings/better/OPAppModel;->setType(I)V
+
+    iget-object v3, v0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchSettings;->mActivity:Lcom/android/settings/SettingsActivity;
+
+    invoke-static {v3, v4}, Lcom/oneplus/settings/utils/OPUtils;->getQuickPayIconByType(Landroid/content/Context;I)Landroid/graphics/drawable/Drawable;
+
+    move-result-object v3
+
+    invoke-virtual {v1, v3}, Lcom/oneplus/settings/better/OPAppModel;->setAppIcon(Landroid/graphics/drawable/Drawable;)V
+
+    new-instance v3, Lcom/oneplus/settings/better/OPAppModel;
+
+    iget-object v6, v0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchSettings;->mPayWaysName:[Ljava/lang/String;
+
+    aget-object v8, v6, v2
+
+    invoke-static {v5}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
+
+    move-result-object v9
+
+    const-string v7, "com.eg.android.AlipayGphone"
+
+    move-object v6, v3
+
+    invoke-direct/range {v6 .. v11}, Lcom/oneplus/settings/better/OPAppModel;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IZ)V
+
+    move-object v2, v3
+
+    invoke-virtual {v2, v4}, Lcom/oneplus/settings/better/OPAppModel;->setType(I)V
+
+    iget-object v3, v0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchSettings;->mActivity:Lcom/android/settings/SettingsActivity;
+
+    invoke-static {v3, v5}, Lcom/oneplus/settings/utils/OPUtils;->getQuickPayIconByType(Landroid/content/Context;I)Landroid/graphics/drawable/Drawable;
+
+    move-result-object v3
+
+    invoke-virtual {v2, v3}, Lcom/oneplus/settings/better/OPAppModel;->setAppIcon(Landroid/graphics/drawable/Drawable;)V
+
+    iget-object v3, v0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchSettings;->mDefaultQuickLaunchAppList:Ljava/util/List;
+
+    invoke-interface {v3, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    iget-object v3, v0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchSettings;->mDefaultQuickLaunchAppList:Ljava/util/List;
+
+    invoke-interface {v3, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    :cond_c
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    iget-object v2, v0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchSettings;->mDefaultQuickLaunchAppList:Ljava/util/List;
+
+    invoke-interface {v2}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+
+    move-result-object v2
+
+    :goto_2
+    invoke-interface {v2}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v3
+
+    if-eqz v3, :cond_f
+
+    invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v3
+
+    check-cast v3, Lcom/oneplus/settings/better/OPAppModel;
+
+    invoke-static {v3}, Lcom/oneplus/settings/utils/OPUtils;->isQuickPayModel(Lcom/oneplus/settings/better/OPAppModel;)Z
+
+    move-result v4
+
+    if-eqz v4, :cond_d
+
+    invoke-static {v3}, Lcom/oneplus/settings/utils/OPUtils;->getQuickPayAppString(Lcom/oneplus/settings/better/OPAppModel;)Ljava/lang/String;
+
+    move-result-object v4
+
+    invoke-virtual {v1, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    goto :goto_3
+
+    :cond_d
+    invoke-static {v3}, Lcom/oneplus/settings/utils/OPUtils;->isWeChatMiniProgrameModel(Lcom/oneplus/settings/better/OPAppModel;)Z
+
+    move-result v4
+
+    if-eqz v4, :cond_e
+
+    invoke-static {v3}, Lcom/oneplus/settings/utils/OPUtils;->getQuickMiniProgrameString(Lcom/oneplus/settings/better/OPAppModel;)Ljava/lang/String;
+
+    move-result-object v4
+
+    invoke-virtual {v1, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    goto :goto_4
+
+    :cond_e
+    :goto_3
+    nop
+
+    :goto_4
+    iget-object v4, v0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchSettings;->mActivity:Lcom/android/settings/SettingsActivity;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v5
 
@@ -633,8 +699,8 @@
 
     goto :goto_2
 
-    :cond_d
-    :goto_3
+    :cond_f
+    :goto_5
     invoke-static {}, Lcom/oneplus/settings/utils/OPUtils;->sendAppTrackerForQuickLaunch()V
 
     return-void
@@ -778,14 +844,14 @@
 
     :array_0
     .array-data 4
-        0x7f120e62
-        0x7f120e60
+        0x7f120edf
+        0x7f120edd
     .end array-data
 
     :array_1
     .array-data 4
-        0x7f120e61
-        0x7f120e5f
+        0x7f120ede
+        0x7f120edc
     .end array-data
 .end method
 
@@ -1040,6 +1106,8 @@
     invoke-static {v3, v4, v1}, Landroid/provider/Settings$Secure;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
     move-result v3
+
+    invoke-static {}, Lcom/oneplus/settings/utils/OPUtils;->sendAppTrackerForQuickLaunchToggle()V
 
     return v2
 

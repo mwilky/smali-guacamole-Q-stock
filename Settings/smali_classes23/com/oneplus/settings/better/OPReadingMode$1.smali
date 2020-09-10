@@ -32,7 +32,7 @@
 
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
-    .locals 7
+    .locals 8
 
     invoke-super {p0, p1}, Landroid/os/Handler;->handleMessage(Landroid/os/Message;)V
 
@@ -89,7 +89,7 @@
     const/4 v2, 0x0
 
     :goto_0
-    if-ge v2, v0, :cond_0
+    if-ge v2, v0, :cond_1
 
     iget-object v3, p0, Lcom/oneplus/settings/better/OPReadingMode$1;->this$0:Lcom/oneplus/settings/better/OPReadingMode;
 
@@ -125,11 +125,75 @@
 
     invoke-virtual {v4, v5}, Lcom/oneplus/settings/ui/OPTextViewButtonPreference;->setTitle(Ljava/lang/CharSequence;)V
 
-    const/4 v5, 0x0
+    invoke-static {}, Lcom/oneplus/settings/better/OPReadingMode;->access$400()Lcom/oneplus/settings/better/ReadingModeEffectManager;
 
-    invoke-virtual {v4, v5}, Lcom/oneplus/settings/ui/OPTextViewButtonPreference;->setButtonVisible(Z)V
+    move-result-object v5
 
+    new-instance v6, Ljava/lang/StringBuilder;
+
+    invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
+
+    invoke-virtual {v3}, Lcom/oneplus/settings/better/OPAppModel;->getUid()I
+
+    move-result v7
+
+    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v3}, Lcom/oneplus/settings/better/OPAppModel;->getPkgName()Ljava/lang/String;
+
+    move-result-object v7
+
+    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v6}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v6
+
+    invoke-virtual {v5, v6}, Lcom/oneplus/settings/better/ReadingModeEffectManager;->getAppEffectSelectValue(Ljava/lang/String;)I
+
+    move-result v5
+
+    if-nez v5, :cond_0
+
+    iget-object v5, p0, Lcom/oneplus/settings/better/OPReadingMode$1;->this$0:Lcom/oneplus/settings/better/OPReadingMode;
+
+    invoke-static {v5}, Lcom/oneplus/settings/better/OPReadingMode;->access$300(Lcom/oneplus/settings/better/OPReadingMode;)Landroid/content/Context;
+
+    move-result-object v5
+
+    const v6, 0x7f120f0c
+
+    invoke-virtual {v5, v6}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+
+    move-result-object v5
+
+    invoke-virtual {v4, v5}, Lcom/oneplus/settings/ui/OPTextViewButtonPreference;->setSummary(Ljava/lang/String;)V
+
+    goto :goto_1
+
+    :cond_0
+    iget-object v5, p0, Lcom/oneplus/settings/better/OPReadingMode$1;->this$0:Lcom/oneplus/settings/better/OPReadingMode;
+
+    invoke-static {v5}, Lcom/oneplus/settings/better/OPReadingMode;->access$300(Lcom/oneplus/settings/better/OPReadingMode;)Landroid/content/Context;
+
+    move-result-object v5
+
+    const v6, 0x7f120f08
+
+    invoke-virtual {v5, v6}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+
+    move-result-object v5
+
+    invoke-virtual {v4, v5}, Lcom/oneplus/settings/ui/OPTextViewButtonPreference;->setSummary(Ljava/lang/String;)V
+
+    :goto_1
     const/4 v5, 0x1
+
+    invoke-virtual {v4, v5}, Lcom/oneplus/settings/ui/OPTextViewButtonPreference;->setSummaryVisible(Z)V
+
+    const/4 v6, 0x0
+
+    invoke-virtual {v4, v6}, Lcom/oneplus/settings/ui/OPTextViewButtonPreference;->setButtonVisible(Z)V
 
     invoke-virtual {v4, v5}, Lcom/oneplus/settings/ui/OPTextViewButtonPreference;->setRightIconVisible(Z)V
 
@@ -169,12 +233,12 @@
 
     add-int/lit8 v2, v2, 0x1
 
-    goto :goto_0
+    goto/16 :goto_0
 
-    :cond_0
+    :cond_1
     iget-object v2, p0, Lcom/oneplus/settings/better/OPReadingMode$1;->this$0:Lcom/oneplus/settings/better/OPReadingMode;
 
-    invoke-static {v2}, Lcom/oneplus/settings/better/OPReadingMode;->access$500(Lcom/oneplus/settings/better/OPReadingMode;)Landroid/content/ContentResolver;
+    invoke-static {v2}, Lcom/oneplus/settings/better/OPReadingMode;->access$600(Lcom/oneplus/settings/better/OPReadingMode;)Landroid/content/ContentResolver;
 
     move-result-object v2
 

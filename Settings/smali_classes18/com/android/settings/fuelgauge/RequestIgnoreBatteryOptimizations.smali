@@ -258,7 +258,7 @@
     :cond_3
     iget-object v2, p0, Lcom/android/settings/fuelgauge/RequestIgnoreBatteryOptimizations;->mAlertParams:Lcom/android/internal/app/AlertController$AlertParams;
 
-    const v4, 0x7f1207ff
+    const v4, 0x7f120837
 
     invoke-virtual {p0, v4}, Lcom/android/settings/fuelgauge/RequestIgnoreBatteryOptimizations;->getText(I)Ljava/lang/CharSequence;
 
@@ -266,7 +266,7 @@
 
     iput-object v4, v2, Lcom/android/internal/app/AlertController$AlertParams;->mTitle:Ljava/lang/CharSequence;
 
-    const v4, 0x7f1207fe
+    const v4, 0x7f120836
 
     const/4 v6, 0x1
 
@@ -288,7 +288,7 @@
 
     iput-object v4, v2, Lcom/android/internal/app/AlertController$AlertParams;->mMessage:Ljava/lang/CharSequence;
 
-    const v4, 0x7f12010b
+    const v4, 0x7f120114
 
     invoke-virtual {p0, v4}, Lcom/android/settings/fuelgauge/RequestIgnoreBatteryOptimizations;->getText(I)Ljava/lang/CharSequence;
 
@@ -296,7 +296,7 @@
 
     iput-object v4, v2, Lcom/android/internal/app/AlertController$AlertParams;->mPositiveButtonText:Ljava/lang/CharSequence;
 
-    const v4, 0x7f1205b9
+    const v4, 0x7f1205d5
 
     invoke-virtual {p0, v4}, Lcom/android/settings/fuelgauge/RequestIgnoreBatteryOptimizations;->getText(I)Ljava/lang/CharSequence;
 

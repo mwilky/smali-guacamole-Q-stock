@@ -224,7 +224,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f1205cf
+    const v1, 0x7f1205eb
 
     invoke-virtual {p0, v1}, Lcom/android/settings/bluetooth/DevicePickerFragment;->getString(I)Ljava/lang/String;
 

@@ -43,16 +43,16 @@
 
     :array_0
     .array-data 4
-        0x7f080556
-        0x7f080557
-        0x7f080558
-        0x7f080559
-        0x7f08055a
-        0x7f08055b
-        0x7f08055c
-        0x7f08055d
-        0x7f08055e
         0x7f08055f
+        0x7f080560
+        0x7f080561
+        0x7f080562
+        0x7f080563
+        0x7f080564
+        0x7f080565
+        0x7f080566
+        0x7f080567
+        0x7f080568
     .end array-data
 .end method
 
@@ -83,7 +83,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0300fc
+    const v1, 0x7f030101
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->obtainTypedArray(I)Landroid/content/res/TypedArray;
 

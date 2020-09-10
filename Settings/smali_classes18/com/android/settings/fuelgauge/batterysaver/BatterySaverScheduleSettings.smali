@@ -121,7 +121,7 @@
 
     new-instance v3, Lcom/android/settings/fuelgauge/batterysaver/BatterySaverScheduleSettings$BatterySaverScheduleCandidateInfo;
 
-    const v4, 0x7f120263
+    const v4, 0x7f120273
 
     invoke-virtual {v0, v4}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
@@ -145,13 +145,13 @@
 
     new-instance v3, Lcom/android/settings/fuelgauge/batterysaver/BatterySaverScheduleSettings$BatterySaverScheduleCandidateInfo;
 
-    const v4, 0x7f120266
+    const v4, 0x7f120276
 
     invoke-virtual {v0, v4}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
     move-result-object v4
 
-    const v7, 0x7f120267
+    const v7, 0x7f120277
 
     invoke-virtual {v0, v7}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
@@ -171,7 +171,7 @@
     :goto_0
     new-instance v3, Lcom/android/settings/fuelgauge/batterysaver/BatterySaverScheduleSettings$BatterySaverScheduleCandidateInfo;
 
-    const v4, 0x7f120264
+    const v4, 0x7f120274
 
     invoke-virtual {v0, v4}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 

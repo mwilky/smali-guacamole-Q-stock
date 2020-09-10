@@ -105,9 +105,9 @@
 
     :array_0
     .array-data 4
-        0x7f080176
-        0x7f080177
-        0x7f080178
+        0x7f08017f
+        0x7f080180
+        0x7f080181
     .end array-data
 .end method
 
@@ -416,7 +416,7 @@
     invoke-static {v2, v3}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
     :goto_1
-    const v1, 0x7f0a0760
+    const v1, 0x7f0a0761
 
     invoke-virtual {p0, v1}, Lcom/oneplus/settings/better/OPFnaticWallPapers;->findViewById(I)Landroid/view/View;
 
@@ -424,7 +424,7 @@
 
     check-cast v1, Landroid/view/TextureView;
 
-    const v2, 0x7f0a075d
+    const v2, 0x7f0a075e
 
     invoke-virtual {p0, v2}, Lcom/oneplus/settings/better/OPFnaticWallPapers;->findViewById(I)Landroid/view/View;
 
@@ -434,7 +434,7 @@
 
     iput-object v2, p0, Lcom/oneplus/settings/better/OPFnaticWallPapers;->imageView:Landroid/widget/ImageView;
 
-    const v2, 0x7f0a0759
+    const v2, 0x7f0a075a
 
     invoke-virtual {p0, v2}, Lcom/oneplus/settings/better/OPFnaticWallPapers;->findViewById(I)Landroid/view/View;
 
@@ -470,7 +470,7 @@
 
     iput-object v0, p0, Lcom/oneplus/settings/better/OPFnaticWallPapers;->mWallPaperLayout:Landroid/view/View;
 
-    const v0, 0x7f0a02ce
+    const v0, 0x7f0a02d3
 
     invoke-virtual {p0, v0}, Lcom/oneplus/settings/better/OPFnaticWallPapers;->findViewById(I)Landroid/view/View;
 
@@ -498,7 +498,7 @@
 
     aput-object v2, v1, v3
 
-    const v2, 0x7f120cf5
+    const v2, 0x7f120d4e
 
     invoke-virtual {p0, v2, v1}, Lcom/oneplus/settings/better/OPFnaticWallPapers;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -506,7 +506,7 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    const v0, 0x7f0a0432
+    const v0, 0x7f0a0437
 
     invoke-virtual {p0, v0}, Lcom/oneplus/settings/better/OPFnaticWallPapers;->findViewById(I)Landroid/view/View;
 
@@ -670,7 +670,7 @@
 
     iget-object v1, p0, Lcom/oneplus/settings/better/OPFnaticWallPapers;->mNextButton:Landroid/widget/Button;
 
-    const v2, 0x7f120cf6
+    const v2, 0x7f120d4f
 
     invoke-virtual {v1, v2}, Landroid/widget/Button;->setText(I)V
 
@@ -679,7 +679,7 @@
     :cond_1
     iget-object v3, p0, Lcom/oneplus/settings/better/OPFnaticWallPapers;->mNextButton:Landroid/widget/Button;
 
-    const v4, 0x7f120ce9
+    const v4, 0x7f120d42
 
     new-array v2, v2, [Ljava/lang/Object;
 

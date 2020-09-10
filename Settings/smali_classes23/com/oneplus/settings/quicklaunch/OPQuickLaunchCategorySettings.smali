@@ -114,7 +114,7 @@
 
     iget-object v3, p0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchCategorySettings;->mShortcutFragment:Lcom/oneplus/settings/quicklaunch/OPQuickLaunchShortCutFragment;
 
-    const v4, 0x7f0a04c2
+    const v4, 0x7f0a04bf
 
     if-nez v3, :cond_0
 
@@ -137,7 +137,7 @@
 
     iget-object v2, p0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchCategorySettings;->mFragmentTitles:Ljava/util/List;
 
-    const v3, 0x7f120f3a
+    const v3, 0x7f120fbd
 
     invoke-virtual {p0, v3}, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchCategorySettings;->getString(I)Ljava/lang/String;
 
@@ -184,7 +184,7 @@
 
     iget-object v2, p0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchCategorySettings;->mFragmentTitles:Ljava/util/List;
 
-    const v3, 0x7f120be4
+    const v3, 0x7f120c2f
 
     invoke-virtual {p0, v3}, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchCategorySettings;->getString(I)Ljava/lang/String;
 
@@ -287,11 +287,11 @@
     invoke-virtual {v0, v1}, Landroid/view/View;->setSystemUiVisibility(I)V
 
     :cond_0
-    const v0, 0x7f0d0205
+    const v0, 0x7f0d0206
 
     invoke-virtual {p0, v0}, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchCategorySettings;->setContentView(I)V
 
-    const v0, 0x7f0a0706
+    const v0, 0x7f0a0707
 
     invoke-virtual {p0, v0}, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchCategorySettings;->findViewById(I)Landroid/view/View;
 
@@ -314,7 +314,7 @@
     invoke-virtual {v1, v2}, Landroid/app/ActionBar;->setHomeButtonEnabled(Z)V
 
     :cond_1
-    const v2, 0x7f0a04c2
+    const v2, 0x7f0a04bf
 
     invoke-virtual {p0, v2}, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchCategorySettings;->findViewById(I)Landroid/view/View;
 
@@ -324,7 +324,7 @@
 
     iput-object v2, p0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchCategorySettings;->mViewPager:Landroidx/viewpager/widget/ViewPager;
 
-    const v2, 0x7f0a06b6
+    const v2, 0x7f0a06b7
 
     invoke-virtual {p0, v2}, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchCategorySettings;->findViewById(I)Landroid/view/View;
 

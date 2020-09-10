@@ -212,7 +212,7 @@
 
     iput-object v0, p0, Lcom/android/settings/gestures/PreventRingingGesturePreferenceController;->mPreferenceCategory:Landroidx/preference/PreferenceCategory;
 
-    const v0, 0x7f12115b
+    const v0, 0x7f12120a
 
     const-string v1, "prevent_ringing_option_vibrate"
 
@@ -222,7 +222,7 @@
 
     iput-object v0, p0, Lcom/android/settings/gestures/PreventRingingGesturePreferenceController;->mVibratePref:Lcom/android/settings/widget/RadioButtonPreference;
 
-    const v0, 0x7f121157
+    const v0, 0x7f121206
 
     const-string v1, "prevent_ringing_option_mute"
 

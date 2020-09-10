@@ -88,7 +88,7 @@
 
     iget-object v0, p2, Lcom/oneplus/settings/ui/OPCustomTonePreference$ToneViewHolder;->imageViewMask:Lcom/oneplus/settings/ui/RadiusImageView;
 
-    const v2, 0x7f0805fa
+    const v2, 0x7f08060c
 
     invoke-virtual {v0, v2}, Lcom/oneplus/settings/ui/RadiusImageView;->setImageResource(I)V
 
@@ -101,7 +101,7 @@
 
     iget-object v0, p2, Lcom/oneplus/settings/ui/OPCustomTonePreference$ToneViewHolder;->imageViewMask:Lcom/oneplus/settings/ui/RadiusImageView;
 
-    const v2, 0x7f0805fb
+    const v2, 0x7f08060d
 
     invoke-virtual {v0, v2}, Lcom/oneplus/settings/ui/RadiusImageView;->setImageResource(I)V
 
@@ -188,7 +188,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f08053a
+    const v1, 0x7f080543
 
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -202,7 +202,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f08053b
+    const v1, 0x7f080544
 
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -225,7 +225,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f080540
+    const v1, 0x7f080549
 
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -239,7 +239,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f080541
+    const v1, 0x7f08054a
 
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -256,7 +256,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f08053d
+    const v1, 0x7f080546
 
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -270,7 +270,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f08053e
+    const v1, 0x7f080547
 
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -412,7 +412,7 @@
 
     iget-object v2, p1, Lcom/oneplus/settings/ui/OPCustomTonePreference$ToneViewHolder;->imageViewMask:Lcom/oneplus/settings/ui/RadiusImageView;
 
-    const v3, 0x7f0805fa
+    const v3, 0x7f08060c
 
     invoke-virtual {v2, v3}, Lcom/oneplus/settings/ui/RadiusImageView;->setImageResource(I)V
 

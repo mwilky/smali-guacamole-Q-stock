@@ -332,6 +332,10 @@
         <item quantity="other">נסה שוב בעוד %d שניות.</item>
         <item quantity="one">נסה שוב בעוד %d שניה.</item>
     </plurals>
+    <plurals name="oneplus_zen_mode_duration_summary_time_hours">
+        <item quantity="other">%d שעות (אלא אם יופעל אוטומטית)</item>
+        <item quantity="one">שעה אחת (אלא אם יופעל אוטומטית)</item>
+    </plurals>
     <plurals name="permission_bar_chart_label">
         <item quantity="other">%s אפליקציות</item>
         <item quantity="one">אפליקציה אחת</item>

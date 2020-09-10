@@ -473,7 +473,7 @@
 
     invoke-direct {v2, v3}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v3, 0x7f120de6
+    const v3, 0x7f120e5d
 
     invoke-virtual {v2, v3}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
 
@@ -519,7 +519,7 @@
 
     invoke-direct {v2, v3}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v3, 0x7f120fa2
+    const v3, 0x7f12102b
 
     invoke-virtual {v2, v3}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
 

@@ -152,7 +152,7 @@
 
     move-result v3
 
-    const v4, 0x7f0d0292
+    const v4, 0x7f0d0293
 
     const/4 v5, 0x0
 
@@ -194,7 +194,7 @@
 
     invoke-direct {v5, v2}, Landroidx/appcompat/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v7, 0x7f1202a9
+    const v7, 0x7f1202b9
 
     invoke-virtual {v0, v7}, Lcom/android/settings/fuelgauge/batterytip/BatteryTipDialogFragment;->getString(I)Ljava/lang/String;
 
@@ -204,19 +204,19 @@
 
     move-result-object v5
 
-    const v7, 0x7f1202a7
+    const v7, 0x7f1202b7
 
     invoke-virtual {v5, v7}, Landroidx/appcompat/app/AlertDialog$Builder;->setMessage(I)Landroidx/appcompat/app/AlertDialog$Builder;
 
     move-result-object v5
 
-    const v7, 0x7f1202a8
+    const v7, 0x7f1202b8
 
     invoke-virtual {v5, v7, v0}, Landroidx/appcompat/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroidx/appcompat/app/AlertDialog$Builder;
 
     move-result-object v5
 
-    const v7, 0x7f1202a6
+    const v7, 0x7f1202b6
 
     invoke-virtual {v5, v7, v6}, Landroidx/appcompat/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroidx/appcompat/app/AlertDialog$Builder;
 
@@ -260,7 +260,7 @@
 
     invoke-direct {v3, v2}, Landroidx/appcompat/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v4, 0x7f120295
+    const v4, 0x7f1202a5
 
     invoke-virtual {v3, v4}, Landroidx/appcompat/app/AlertDialog$Builder;->setMessage(I)Landroidx/appcompat/app/AlertDialog$Builder;
 
@@ -311,7 +311,7 @@
 
     invoke-direct {v8, v2}, Landroidx/appcompat/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v10, 0x7f120293
+    const v10, 0x7f1202a3
 
     new-array v7, v7, [Ljava/lang/Object;
 
@@ -404,7 +404,7 @@
 
     move-result-object v11
 
-    const v12, 0x7f12029f
+    const v12, 0x7f1202af
 
     invoke-virtual {v11, v12, v0}, Landroidx/appcompat/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroidx/appcompat/app/AlertDialog$Builder;
 
@@ -418,7 +418,7 @@
 
     if-ne v9, v7, :cond_4
 
-    const v4, 0x7f12029e
+    const v4, 0x7f1202ae
 
     new-array v6, v7, [Ljava/lang/Object;
 
@@ -437,7 +437,7 @@
 
     if-gt v9, v12, :cond_5
 
-    const v5, 0x7f1202a0
+    const v5, 0x7f1202b0
 
     invoke-virtual {v0, v5}, Lcom/android/settings/fuelgauge/batterytip/BatteryTipDialogFragment;->getString(I)Ljava/lang/String;
 
@@ -472,7 +472,7 @@
     goto :goto_0
 
     :cond_5
-    const v4, 0x7f1202a1
+    const v4, 0x7f1202b1
 
     new-array v6, v7, [Ljava/lang/Object;
 

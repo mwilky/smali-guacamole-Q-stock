@@ -59,7 +59,7 @@
 
     aput-object v2, v1, v3
 
-    const v2, 0x7f120348
+    const v2, 0x7f12035b
 
     invoke-virtual {p0, v2, v1}, Lcom/android/settings/bluetooth/BluetoothPairingDialogFragment;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -77,7 +77,7 @@
 
     iget-object v0, p0, Lcom/android/settings/bluetooth/BluetoothPairingDialogFragment;->mBuilder:Landroidx/appcompat/app/AlertDialog$Builder;
 
-    const v1, 0x7f12033a
+    const v1, 0x7f12034d
 
     invoke-virtual {p0, v1}, Lcom/android/settings/bluetooth/BluetoothPairingDialogFragment;->getString(I)Ljava/lang/String;
 
@@ -87,7 +87,7 @@
 
     iget-object v0, p0, Lcom/android/settings/bluetooth/BluetoothPairingDialogFragment;->mBuilder:Landroidx/appcompat/app/AlertDialog$Builder;
 
-    const v1, 0x7f12033c
+    const v1, 0x7f12034f
 
     invoke-virtual {p0, v1}, Lcom/android/settings/bluetooth/BluetoothPairingDialogFragment;->getString(I)Ljava/lang/String;
 
@@ -133,7 +133,7 @@
 
     aput-object v2, v1, v3
 
-    const v2, 0x7f120348
+    const v2, 0x7f12035b
 
     invoke-virtual {p0, v2, v1}, Lcom/android/settings/bluetooth/BluetoothPairingDialogFragment;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -191,7 +191,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0a0537
+    const v1, 0x7f0a0534
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -199,7 +199,7 @@
 
     check-cast v1, Landroid/widget/TextView;
 
-    const v2, 0x7f0a03d0
+    const v2, 0x7f0a03d5
 
     invoke-virtual {v0, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -215,7 +215,7 @@
 
     check-cast v3, Landroid/widget/CheckBox;
 
-    const v4, 0x7f0a0532
+    const v4, 0x7f0a052f
 
     invoke-virtual {v0, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -237,7 +237,7 @@
 
     aput-object v7, v6, v8
 
-    const v7, 0x7f120349
+    const v7, 0x7f12035c
 
     invoke-virtual {p0, v7, v6}, Lcom/android/settings/bluetooth/BluetoothPairingDialogFragment;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -245,7 +245,7 @@
 
     invoke-virtual {v4, v6}, Landroid/widget/CheckBox;->setText(Ljava/lang/CharSequence;)V
 
-    const v6, 0x7f0a06c1
+    const v6, 0x7f0a06c2
 
     invoke-virtual {v0, v6}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -393,7 +393,7 @@
 
     aput-object v2, v1, v3
 
-    const v2, 0x7f120348
+    const v2, 0x7f12035b
 
     invoke-virtual {p0, v2, v1}, Lcom/android/settings/bluetooth/BluetoothPairingDialogFragment;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -463,7 +463,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0a0508
+    const v1, 0x7f0a0505
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -471,7 +471,7 @@
 
     check-cast v1, Landroid/widget/TextView;
 
-    const v2, 0x7f0a050a
+    const v2, 0x7f0a0507
 
     invoke-virtual {v0, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -479,7 +479,7 @@
 
     check-cast v2, Landroid/widget/TextView;
 
-    const v3, 0x7f0a0509
+    const v3, 0x7f0a0506
 
     invoke-virtual {v0, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -487,7 +487,7 @@
 
     check-cast v3, Landroid/widget/TextView;
 
-    const v4, 0x7f0a0531
+    const v4, 0x7f0a052e
 
     invoke-virtual {v0, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -509,7 +509,7 @@
 
     aput-object v6, v5, v7
 
-    const v6, 0x7f120349
+    const v6, 0x7f12035c
 
     invoke-virtual {p0, v6, v5}, Lcom/android/settings/bluetooth/BluetoothPairingDialogFragment;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 

@@ -316,7 +316,7 @@
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    const v1, 0x7f12022a
+    const v1, 0x7f12023a
 
     invoke-virtual {p0, v1}, Lcom/android/settings/BandMode;->getString(I)Ljava/lang/String;
 
@@ -352,7 +352,7 @@
 
     invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const v2, 0x7f120228
+    const v2, 0x7f120238
 
     invoke-virtual {p0, v2}, Lcom/android/settings/BandMode;->getString(I)Ljava/lang/String;
 
@@ -373,7 +373,7 @@
 
     invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const v2, 0x7f12022b
+    const v2, 0x7f12023b
 
     invoke-virtual {p0, v2}, Lcom/android/settings/BandMode;->getString(I)Ljava/lang/String;
 
@@ -414,7 +414,7 @@
 .method private loadBandList()V
     .locals 3
 
-    const v0, 0x7f120229
+    const v0, 0x7f120239
 
     invoke-virtual {p0, v0}, Lcom/android/settings/BandMode;->getString(I)Ljava/lang/String;
 

@@ -224,6 +224,10 @@
         <item quantity="other">Prøv igjen om %d sekunder.</item>
         <item quantity="one">Prøv igjen om %d sekund.</item>
     </plurals>
+    <plurals name="oneplus_zen_mode_duration_summary_time_hours">
+        <item quantity="other">%d timer (med mindre den slås på automatisk)</item>
+        <item quantity="one">1 time (med mindre den slås på automatisk)</item>
+    </plurals>
     <plurals name="permission_bar_chart_label">
         <item quantity="other">%s apper</item>
         <item quantity="one">1 app</item>

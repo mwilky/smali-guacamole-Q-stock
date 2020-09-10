@@ -2166,10 +2166,11 @@
             </intent-filter>
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS" android:value="com.oneplus.settings.OPCustomFingerprintAnimSettings"/>
         </activity>
-        <activity android:exported="false" android:icon="@mipmap/op_ic_launcher_settings" android:label="@string/oneplus_theme_tone_effect_title" android:name="com.android.settings.Settings$OPCustomToneSettingsActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Settings">
+        <activity android:exported="true" android:icon="@mipmap/op_ic_launcher_settings" android:label="@string/oneplus_theme_tone_effect_title" android:name="com.android.settings.Settings$OPCustomToneSettingsActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Settings">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="oneplus.intent.action.OP_CUSTOM_TONE_SETTINGS"/>
             </intent-filter>
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS" android:value="com.oneplus.settings.OPCustomToneSettings"/>
         </activity>

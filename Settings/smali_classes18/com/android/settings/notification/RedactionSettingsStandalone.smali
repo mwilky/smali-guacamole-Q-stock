@@ -55,7 +55,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f12018c
+    const v2, 0x7f12019c
 
     invoke-virtual {p0, v2}, Lcom/android/settings/notification/RedactionSettingsStandalone;->getString(I)Ljava/lang/String;
 

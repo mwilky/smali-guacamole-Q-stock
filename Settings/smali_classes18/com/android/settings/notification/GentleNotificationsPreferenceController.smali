@@ -100,7 +100,7 @@
 
     iget-object v2, p0, Lcom/android/settings/notification/GentleNotificationsPreferenceController;->mContext:Landroid/content/Context;
 
-    const v3, 0x7f12075b
+    const v3, 0x7f120793
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -111,7 +111,7 @@
     :cond_0
     iget-object v2, p0, Lcom/android/settings/notification/GentleNotificationsPreferenceController;->mContext:Landroid/content/Context;
 
-    const v3, 0x7f120759
+    const v3, 0x7f120791
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -124,7 +124,7 @@
 
     iget-object v2, p0, Lcom/android/settings/notification/GentleNotificationsPreferenceController;->mContext:Landroid/content/Context;
 
-    const v3, 0x7f12075a
+    const v3, 0x7f120792
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -135,7 +135,7 @@
     :cond_2
     iget-object v2, p0, Lcom/android/settings/notification/GentleNotificationsPreferenceController;->mContext:Landroid/content/Context;
 
-    const v3, 0x7f120758
+    const v3, 0x7f120790
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

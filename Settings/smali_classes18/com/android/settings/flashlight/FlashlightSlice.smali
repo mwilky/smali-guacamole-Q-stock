@@ -213,7 +213,7 @@
 
     iget-object v3, p0, Lcom/android/settings/flashlight/FlashlightSlice;->mContext:Landroid/content/Context;
 
-    const v4, 0x7f080363
+    const v4, 0x7f08036c
 
     invoke-static {v3, v4}, Landroidx/core/graphics/drawable/IconCompat;->createWithResource(Landroid/content/Context;I)Landroidx/core/graphics/drawable/IconCompat;
 
@@ -239,7 +239,7 @@
 
     iget-object v6, p0, Lcom/android/settings/flashlight/FlashlightSlice;->mContext:Landroid/content/Context;
 
-    const v7, 0x7f121106
+    const v7, 0x7f1211b2
 
     invoke-virtual {v6, v7}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 

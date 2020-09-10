@@ -134,7 +134,7 @@
 
     invoke-super {p0}, Lcom/android/settings/biometrics/BiometricEnrollBase;->initViews()V
 
-    const v0, 0x7f0a068b
+    const v0, 0x7f0a068c
 
     invoke-virtual {p0, v0}, Lcom/android/settings/biometrics/BiometricEnrollIntroduction;->findViewById(I)Landroid/view/View;
 
@@ -462,7 +462,7 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
-    const v1, 0x7f1206dd
+    const v1, 0x7f120713
 
     const/4 v2, 0x0
 
@@ -610,7 +610,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f120636
+    const v4, 0x7f12065c
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 

@@ -224,6 +224,10 @@
         <item quantity="other">Hãy thử lại trong %d giây.</item>
         <item quantity="one">Try again in %d second.</item>
     </plurals>
+    <plurals name="oneplus_zen_mode_duration_summary_time_hours">
+        <item quantity="other">%d giờ (trừ khi được bật tự động)</item>
+        <item quantity="one">1 hour (unless turned on automatically)</item>
+    </plurals>
     <plurals name="permission_bar_chart_label">
         <item quantity="other">%s ứng dụng</item>
         <item quantity="one">1 ứng dụng</item>

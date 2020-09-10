@@ -256,13 +256,23 @@ Administratoren din kan overvåke og administrere innstillinger, tilgang, apper 
     <string name="advanced_apps">Avansert</string>
     <string name="advanced_battery_graph_subtext">Beregnet gjenværende batteritid er basert på måten du bruker enheten på</string>
     <string name="advanced_battery_title">Batteribruk</string>
+    <string name="advanced_calling_summary">HD Voice, Videoanrop</string>
+    <string name="advanced_calling_title">Avansert anrop</string>
     <string name="advanced_reboot_summary">Når åpen, vil omstart tilby mulighetene å starte om normalt, til gjenoppretting, eller fastboot</string>
     <string name="advanced_reboot_title">Avansert omstart</string>
     <string name="advanced_section_header">Avansert</string>
     <string name="advanced_security_title">Avansert</string>
     <string name="advanced_settings">Avanserte innstillinger</string>
     <string name="advanced_settings_summary">Aktiver flere innstillingsalternativer</string>
+    <string name="advanced_wificall_summary">Bruk Wi-Fi når mobilnettet ikke er tilgjengelig</string>
     <string name="airplane_mode">Flymodus</string>
+    <string name="airplane_mode_description">Flymodus slår av alle nettverkstilkoblinger, inkludert samtale, teksting, Internett-tilgang, Wi-Fi og Bluetooth.</string>
+    <string name="airplane_mode_enable_dialog_message">"Når flymodus er på, kan du ikke bruke Internett, e-post eller andre apper som trenger en datatilkobling, med mindre du bruker Wi-Fi.
+
+Skru på flymodus?"</string>
+    <string name="airplane_mode_enable_dialog_message_wifi_volte">"Når flymodus er på, kan du ikke bruke Internett, e-post, Wi-Fi-anrop eller andre apper som trenger en datatilkobling, med mindre du bruker Wi-Fi.
+
+Skru på flymodus?"</string>
     <string name="alarm_ringtone_title">Standard alarmlyd</string>
     <string name="alarm_template">kl. %1$s</string>
     <string name="alarm_template_far">%1$s</string>
@@ -274,6 +284,7 @@ Administratoren din kan overvåke og administrere innstillinger, tilgang, apper 
     <string name="alert_slider_silent_title">Stille-innstillinger</string>
     <string name="alertslider_settings">Alert slider</string>
     <string name="alertslider_settings_soc_tri_state">Alert slider</string>
+    <string name="alertslider_settings_soc_tri_state_summary">Stille, vibrering, ring</string>
     <string name="all_volume_title">Volumer</string>
     <string name="allow">Tillat</string>
     <string name="allow_bind_app_widget_activity_allow_bind">Når du har opprettet modulen, kan %1$s lese alle dataene den viser.</string>
@@ -314,12 +325,19 @@ Du holder bare enhetene mot hverandre (vanligvis rygg mot rygg) og trykker på s
     <string name="angle_enabled_app_set">ANGLE-aktivert app: %1$s</string>
     <string name="animator_duration_scale_title">Varighetsskala for animasjoner</string>
     <string name="another_migration_already_in_progress">En annen overføring pågår allerede.</string>
-    <string name="aod_clock_analog">Analog</string>
+    <string name="aod_clock_analog">Analog 1</string>
+    <string name="aod_clock_analog_1">Analog 2</string>
+    <string name="aod_clock_analog_2">Analog 3</string>
+    <string name="aod_clock_bold">Fet</string>
     <string name="aod_clock_default">Standard</string>
+    <string name="aod_clock_digital">Digital 1</string>
+    <string name="aod_clock_digital_1">Digital 2</string>
     <string name="aod_clock_mcl">McLaren</string>
-    <string name="aod_clock_minimalism">Minimalisme</string>
+    <string name="aod_clock_minimalism">Minimalisme 1</string>
+    <string name="aod_clock_minimalism_1">Minimalisme 2</string>
     <string name="aod_clock_none">Ingen</string>
     <string name="aod_clock_select_style_text">Velg klokkestil</string>
+    <string name="aod_clock_text_clock">Tekstklokke</string>
     <string name="aod_horizon_light_effect_1">Blå</string>
     <string name="aod_horizon_light_effect_2">Rød</string>
     <string name="aod_horizon_light_effect_3">Lilla</string>
@@ -1065,6 +1083,7 @@ Valg"</string>
     <string name="charge_length_format">%1$s siden</string>
     <string name="charging_sounds_title">Lyd og vibrering ved lading</string>
     <string name="checkbox_notification_same_as_incoming_call">Bruk volum for innkommende anrop også for varslinger</string>
+    <string name="checkbox_usb_tether_donot_show_again">Ikke vis dette igjen</string>
     <string name="checking_decryption">Kontrollerer …</string>
     <string name="choose_network_title">Velg nettverk</string>
     <string name="choose_profile">Velg profil</string>
@@ -1100,7 +1119,7 @@ Valg"</string>
     <string name="color_picker_accent_color_message">Velg aksentfarge</string>
     <string name="color_picker_default">Standard</string>
     <string name="color_picker_led_color_message">Velg LED-farge</string>
-    <string name="color_picker_message_default">Velg foretrukket farge.</string>
+    <string name="color_picker_message_default">Velg din foretrukne farge.</string>
     <string name="color_picker_unknown_label">Ukjent</string>
     <string name="color_purple">Lilla</string>
     <string name="color_red">Rød</string>
@@ -1172,6 +1191,8 @@ Valg"</string>
     <string name="connected_devices_dashboard_no_nfc_summary">Bluetooth, kjøremodus</string>
     <string name="connected_devices_dashboard_summary">Bluetooth, kjøremodus, NFC</string>
     <string name="connected_devices_dashboard_title">Tilkoblede enheter</string>
+    <string name="connected_to_the_verizon_network">Koblet til Verizon-nettverket</string>
+    <string name="connected_to_the_verizon_network_but_data_connection_unavailable">Koblet til Verizon-nettverket, men datatilkoblingen er ikke tilgjengelig</string>
     <string name="connected_via_app">Tilkoblet via %1$s</string>
     <string name="connected_via_carrier">Tilkoblet via %1$s</string>
     <string name="connected_via_network_scorer">Automatisk tilkoblet via %1$s</string>
@@ -1187,6 +1208,7 @@ Valg"</string>
     <string name="contextual_card_feedback_send">Send tilbakemelding</string>
     <string name="contextual_card_removed_message">Forslaget er fjernet</string>
     <string name="contextual_card_undo_dismissal_text">Angre</string>
+    <string name="continue_anyway">Fortsett likevel</string>
     <string name="contributors_title">Medvirkende</string>
     <string name="controls_label">Kontroller</string>
     <string name="controls_subtitle">Juster strømforbruk</string>
@@ -1318,6 +1340,7 @@ Noen kontoer kan også auto­matisk kopiere endringer du gjør på telefonen, ti
     <string name="data_usage_cycle_editor_subtitle">Dato hver måned:</string>
     <string name="data_usage_cycle_editor_title">Tilbakestillingsdato for brukssyklus</string>
     <string name="data_usage_data_limit">Angi datagrense</string>
+    <string name="data_usage_description">Databruk måles av telefonen din. Det kan hende at operatøren regner bruken forskjellig. Angi startdatoen slik at den samsvarer med perioden på regningen.</string>
     <string name="data_usage_disable_3g_limit">Angi datagrense for 2G/3G</string>
     <string name="data_usage_disable_4g_limit">Angi datagrense for 4G</string>
     <string name="data_usage_disable_mobile">Vil du slå av mobildata?</string>
@@ -1331,6 +1354,7 @@ Noen kontoer kan også auto­matisk kopiere endringer du gjør på telefonen, ti
     <string name="data_usage_forground_label">Forgrunn:</string>
     <string name="data_usage_label_background">Bakgrunn</string>
     <string name="data_usage_label_foreground">Forgrunn</string>
+    <string name="data_usage_less_than_value">Mindre enn 0,01</string>
     <string name="data_usage_limit_dialog_mobile">"Mobildata slås av når du har brukt mengden du har angitt.
 
 Siden databruken måles av telefonen og operatøren din kan beregne bruken annerledes, kan det være lurt å angi en lav grense."</string>
@@ -1386,6 +1410,9 @@ Denne innstillingen påvirker alle brukerne på denne telefonen."</string>
     <string name="data_usage_total_during_range_mobile">%2$s: omtrentlig forbruk på %1$s, målt av telefonen. Operatørens måling kan avvike.</string>
     <string name="data_usage_uninstalled_apps">Fjernede apper</string>
     <string name="data_usage_uninstalled_apps_users">Fjernede apper og brukere</string>
+    <string name="data_usage_unit_gb">GB</string>
+    <string name="data_usage_unit_mb">MB</string>
+    <string name="data_usage_video_call_title">Videoanrop</string>
     <string name="data_usage_warning_editor_title">Angi advarsel for databruk</string>
     <string name="data_usage_wifi_format">^1 brukt på Wi‑Fi</string>
     <string name="data_usage_wifi_title">Wi‑Fi-data</string>
@@ -1497,6 +1524,11 @@ For å forsøke å løse problemet kan du stoppe %1$s og forhindre at den kjøre
 Du kan løse problemet ved å slå av posisjon for denne appen."</string>
     <string name="dialog_location_ok">Slå av</string>
     <string name="dialog_location_title">Vil du slå av posisjon?</string>
+    <string name="dialog_mhs_error">Vent mens det bekreftes..</string>
+    <string name="dialog_open_network_cancel">avbryt</string>
+    <string name="dialog_open_network_connect">Koble til</string>
+    <string name="dialog_open_network_title">Du kobler til det usikre (åpne) Wi-Fi-nettverket</string>
+    <string name="dialog_open_network_title_info">Informasjon som sendes, er ikke kryptert og kan være synlig for andre. Vil du fremdeles koble til?</string>
     <string name="dialog_stop_message">"Telefonen kan ikke styre batteriet som normalt fordi %1$s holder telefonen aktiv.
 
 For å forsøke å løse problemet kan du stoppe appen.
@@ -1509,6 +1541,11 @@ For å forsøke å løse problemet kan du stoppe %1$s.
 Hvis problemet vedvarer, må du kanskje avinstallere appen for å få bedre batteriytelse."</string>
     <string name="dialog_stop_ok">Stopp appen</string>
     <string name="dialog_stop_title">Vil du stoppe appen?</string>
+    <string name="dialog_usb_tether_cancel">avbryt</string>
+    <string name="dialog_usb_tether_ok">ok</string>
+    <string name="dialog_usb_tether_title">USB-tilknytning og Wi-Fi kan ikke være på samtidig. Slå av Wi-Fi?</string>
+    <string name="dialog_wrong_password">Wi-Fi-passordet ble ikke godtatt. Sjekk passordet, og prøv på nytt.</string>
+    <string name="dialog_wrong_password_ok">ok</string>
     <string name="direct_boot_unaware_dialog_message">Merk: Hvis du starter telefonen på nytt og har en skjermlås angitt, kan ikke denne appen starte før du låser opp telefonen</string>
     <string name="disable_doze_summary">Slumring reduserer strømforbruket ved å utsette CPU- og nettverksaktivitet når enheten er ubrukt i lange tidsperioder</string>
     <string name="disable_doze_title">Slumremodus</string>
@@ -1601,7 +1638,7 @@ Hvis problemet vedvarer, må du kanskje avinstallere appen for å få bedre batt
     <string name="doze_always_on_summary">Vis klokkeslett, varselikoner og annen informasjon. Økt batteribruk.</string>
     <string name="doze_always_on_title">Alltid på</string>
     <string name="doze_summary">Vekk skjermen når du mottar varslinger.</string>
-    <string name="doze_title">Ambient display</string>
+    <string name="doze_title">Omgivelsesvisning</string>
     <string name="draw_overlay">Vis over andre apper</string>
     <string name="dsds_dialog_cancel">Avbryt</string>
     <string name="dsds_dialog_confirm">Start på nytt</string>
@@ -1612,6 +1649,21 @@ Hvis problemet vedvarer, må du kanskje avinstallere appen for å få bedre batt
     <string name="dual_cdma_sim_warning_notification_channel_title">Kombinasjon av SIM-kort</string>
     <string name="dual_cdma_sim_warning_notification_summary">Funksjonaliteten kan begrenses hvis du bruker %1$s. Trykk for å finne ut mer.</string>
     <string name="eab_provisioned_switch_string">EAB/Presence er klargjort</string>
+    <string name="earphone_function_control_click_left">Dobbeltklikk på venstre ørepropp</string>
+    <string name="earphone_function_control_click_right">Dobbeltklikk på høyre ørepropp</string>
+    <string name="earphone_function_control_last_song">Forrige spor</string>
+    <string name="earphone_function_control_next_song">Neste spor</string>
+    <string name="earphone_function_control_play_pause">Spill/pause</string>
+    <string name="earphone_function_introduction">Funksjonsbeskrivelse</string>
+    <string name="earphone_function_listening_breeno">Taleassistent</string>
+    <string name="earphone_support_battery_dot">;</string>
+    <string name="earphone_support_battery_info_box">OnePlus Buds Case: %1$s</string>
+    <string name="earphone_support_battery_info_left">V: %1$s</string>
+    <string name="earphone_support_battery_info_right">H: %1$s</string>
+    <string name="earphone_support_current_version">Gjeldende versjon:</string>
+    <string name="earphone_support_update_ota">Automatisk oppdatering av fastvare</string>
+    <string name="earphone_support_wifi_data">Tillat automatiske oppdateringer ved bruk av mobildata</string>
+    <string name="earphone_usage_guide_complete">Ferdig</string>
     <string name="edge_to_edge_navigation_summary">For å gå til startsiden, sveip opp fra bunnen av skjermen. For å bytte app, sveip opp fra bunnen, hold og slipp. For å gå tilbake, sveip fra enten venstre eller høyre kant.</string>
     <string name="edge_to_edge_navigation_title">Navigasjon med bevegelser</string>
     <string name="emergency_address_summary">Brukes som posisjonen din når du gjør et nødanrop over Wi-Fi</string>
@@ -1755,6 +1807,7 @@ Ta kontakt med administratoren for organisasjonen for mer informasjon."</string>
     <string name="expand_button_title">Avansert</string>
     <string name="experimental_category_title">På forsøksstadiet</string>
     <string name="experimental_preference">(Eksperimentell)</string>
+    <string name="extended_title">Nettverksforlengere</string>
     <string name="external_code_size_label">USB-lagring for app</string>
     <string name="external_data_size_label">USB-lagringsvolum for data</string>
     <string name="external_source_switch_title">Tillat fra denne kilden</string>
@@ -1796,6 +1849,8 @@ Ta kontakt med administratoren for organisasjonen for mer informasjon."</string>
     <string name="filter_personal_apps">Personlig</string>
     <string name="filter_work_apps">Jobb</string>
     <string name="filter_write_settings_apps">Kan endre systeminnstillingene</string>
+    <string name="find_my_bluetooth_earphone">Finn mine Buds</string>
+    <string name="find_my_bluetooth_earphone_summary">Spill lyder for å finne øreproppene når de er innen rekkevidden, eller vis siste posisjon når utenfor rekkevidden.</string>
     <string name="fingerprint_add_fingerprint">Legge til fingeravtrykk</string>
     <string name="fingerprint_add_fingerprint_summary">Plasser fingeren din på tasten og løft den av etter at du kjenner en vibrasjon.</string>
     <string name="fingerprint_add_max">Du kan legge til opptil %d fingeravtrykk</string>
@@ -1842,7 +1897,7 @@ Ta kontakt med administratoren for organisasjonen for mer informasjon."</string>
     <string name="fingerprint_usage_category_title">Bruk fingeravtrykk for</string>
     <string name="fingerprint_wizard_add_button_label">Legge til</string>
     <string name="fingerprint_wizard_cancel_button_label">Avbryt</string>
-    <string name="fingerprint_wizard_finish_button_label">Avslutt</string>
+    <string name="fingerprint_wizard_finish_button_label">Fullført</string>
     <string name="fingerprint_wizard_next_button_label">Neste</string>
     <string name="firmware_version">Android-versjon</string>
     <string name="font_size_make_larger_desc">Gjør større</string>
@@ -1968,6 +2023,11 @@ Du kan endre dette senere fra Innstillinger > Apper og varsler."</string>
     <string name="homepage_all_settings">Alle innstillinger</string>
     <string name="homepage_condition_footer_content_description">Skjul</string>
     <string name="homepage_personal_settings">Forslag</string>
+    <string name="hotspot_tip_message" formatted="false">"Hotspot deler dine mobildata med andre Wi-Fi-kapable enheter. For å koble til ditt hotspot: \u0009 
+ 1: Skru på Wi-Fi på den andre enheten. 
+ 2: Velg %s fra listen over tilgjengelige Wi-Fi nettverk. 
+ 3: Hvis passord kreves, tast inn %s For å spare batteri, ha telefonen plugget i når du bruker hotspot. "</string>
+    <string name="hotspot_tip_title">Hotspot</string>
     <string name="hwui_force_dark_summary">Overstyrer tving mørk-funksjonen til å være alltid på</string>
     <string name="hwui_force_dark_title">Overstyr tving mørk</string>
     <string name="icon_attributions">Ikonpakker</string>
@@ -2040,7 +2100,7 @@ Du kan endre dette senere fra Innstillinger > Apper og varsler."</string>
     <string name="keyboard_settings_title">Android-tastatur</string>
     <string name="keyboard_shortcuts_helper">Hurtigtasthjelp</string>
     <string name="keyboard_shortcuts_helper_summary">Vis tilgjengelige hurtigtaster</string>
-    <string name="keyguard_wallpaper_settings_title">Bakgrunn til låseskjerm</string>
+    <string name="keyguard_wallpaper_settings_title">Bakgrunn for låst skjerm</string>
     <string name="keywords_accounts">konto</string>
     <string name="keywords_add_an_account">jobbprofil</string>
     <string name="keywords_all_apps">apper, last ned, apper, system</string>
@@ -2144,6 +2204,8 @@ Du kan endre dette senere fra Innstillinger > Apper og varsler."</string>
     <string name="language_picker_title">Språk</string>
     <string name="language_picker_title_o2">Språk (land/region)</string>
     <string name="language_settings">Språk og inndata</string>
+    <string name="last_factory_reset">Siste tilbakestilling av fabrikkinnstillinger</string>
+    <string name="last_factory_reset_none">Ingen</string>
     <string name="last_synced">Sist synkronisert %1$s</string>
     <string name="last_time_used_label">Sist brukt</string>
     <string name="launch_by_default">Åpne som standard</string>
@@ -2407,6 +2469,7 @@ Du kan endre dette senere fra Innstillinger > Apper og varsler."</string>
     <string name="lockscreen_remote_input">Når enheten er låst, kan man ikke skrive svar eller annen tekst i varsler</string>
     <string name="lockscreen_settings_title">Dette vises på låseskjermen</string>
     <string name="lockscreen_settings_what_to_show_category">Dette skal vises</string>
+    <string name="long_press_power_button">Trykk og hold strømknappen</string>
     <string name="lost_internet_access_cancel">Bli værende på Wi‑Fi</string>
     <string name="lost_internet_access_persist">Ikke vis igjen</string>
     <string name="lost_internet_access_switch">Buytt til mobilnettverk</string>
@@ -2542,7 +2605,10 @@ Det er andre brukere tilstede på denne enheten.
     <string name="menu_stats_refresh">Oppdater</string>
     <string name="menu_stats_total">Total bruk</string>
     <string name="menu_stats_unplugged">%1$s siden strømmen ble frakoblet</string>
+    <string name="menu_uninstallapps">Avinstaller</string>
     <string name="menu_use_uss">Bruk Uss</string>
+    <string name="mhs_app">Åpne Min Verizon</string>
+    <string name="mhs_call_back_error">Datatilkobling er ikke tilgjengelig.</string>
     <string name="misc_files">Diverse filer</string>
     <string name="misc_files_selected_count">du har valgt %1$d av %2$d</string>
     <string name="misc_files_selected_count_bytes">%1$s av totalt %2$s</string>
@@ -2558,6 +2624,11 @@ Det er andre brukere tilstede på denne enheten.
     <string name="mobile_data_settings_summary_auto_switch">Telefonen bytter automatisk til denne operatøren når den er innen rekkevidde</string>
     <string name="mobile_data_settings_title">Mobildata</string>
     <string name="mobile_data_usage_title">Databruk av apper</string>
+    <string name="mobile_hotspot_airplane_off_error">Skru av flymodus for å slå på hotspot</string>
+    <string name="mobile_hotspot_authoration_error">"For å bruke hotspot må du abonnere på hotspot-tjenester.
+
+For å abonnere på hotspot besøk My Verizon eller ring kundeservice på +1 (800) 922–0204."</string>
+    <string name="mobile_hotspot_data_off_error">Skru på mobildata for å slå på hotspot</string>
     <string name="mobile_insert_sim_card">Sett inn SIM-kortet og start enheten på nytt</string>
     <string name="mobile_network_active_esim">Aktiv / nedlastet SIM-kort</string>
     <string name="mobile_network_active_sim">Aktiv / SIM-kort</string>
@@ -2695,6 +2766,8 @@ Hvis du bytter til %1$s, kanselleres ikke %2$s-tjenesten din."</string>
     <string name="nfc_quick_toggle_title">NFC</string>
     <string name="nfc_secure_settings_title">Beskytt NFC</string>
     <string name="nfc_secure_toggle_summary">Bare tillat NFC-betalinger og bruk av Kollektivtrafikk når skjermen er låst opp</string>
+    <string name="nfc_uicc_sim1">SIM 1</string>
+    <string name="nfc_uicc_sim2">SIM 2</string>
     <string name="night_display_activation_off_custom">Slå av til kl. %1$s</string>
     <string name="night_display_activation_off_manual">Slå av nå</string>
     <string name="night_display_activation_off_twilight">Slå av til solnedgang</string>
@@ -2738,6 +2811,7 @@ Hvis du bytter til %1$s, kanselleres ikke %2$s-tjenesten din."</string>
     <string name="no_internet_access_text">Dette nettverket har ikke Internett-tilgang. Vil du fortsette å være koblet til nettverket?</string>
     <string name="no_memory_use_summary">Ikke noe minne brukt i løpet av de siste tre timene</string>
     <string name="no_network">Ingen nettverkstjeneste</string>
+    <string name="no_network_extenders">Ingen nettverksforlengere</string>
     <string name="no_notification_assistant">Nei</string>
     <string name="no_notification_listeners">Ingen installerte apper har bedt om tilgang til varsler.</string>
     <string name="no_running_services">Ingenting kjører.</string>
@@ -2748,6 +2822,7 @@ Hvis du bytter til %1$s, kanselleres ikke %2$s-tjenesten din."</string>
     <string name="no_vr_listeners">Ingen av de installerte appene har bedt om å bli kjørt som hjelpetjeneste for VR.</string>
     <string name="not_allowed">SIM-kortet ditt tillater ingen tilkobling til dette nettverket.</string>
     <string name="not_battery_optimizing">Bruker ikke funksjonen for batterioptimalisering</string>
+    <string name="not_connected_to_the_verizon_network">Ikke koblet til Verizon-nettverket</string>
     <string name="not_installed">Ikke installert for brukeren</string>
     <string name="not_optimize_summery">Kan påvirke batteriytelsen</string>
     <string name="not_optimized_apps">Apper som ikke er optimaliserte</string>
@@ -2775,7 +2850,7 @@ Dette gir også appen muligheten til å slå Ikke forstyrr av eller på samt end
     <string name="notification_channels_other">Annet</string>
     <string name="notification_content_block_summary">Vis aldri varlser i panelet eller på eksterne enheter</string>
     <string name="notification_content_block_title">Vis varsler</string>
-    <string name="notification_for_work_life">Varsler for arbeids- og livsmodus</string>
+    <string name="notification_for_work_life">Varslinger for Arbeids- og fritidsmodus</string>
     <string name="notification_for_work_life_disabled">Trykk for å aktivere denne funksjonen.</string>
     <string name="notification_group_title">Varselkategorigruppe</string>
     <string name="notification_importance_blocked">Vis aldri varsler</string>
@@ -2893,6 +2968,7 @@ Dette gir også appen muligheten til å slå Ikke forstyrr av eller på samt end
     <string name="oneplus_aod_smart_display_calendar_event">Kalenderhendelse</string>
     <string name="oneplus_aod_smart_display_music_info">Mediespiller</string>
     <string name="oneplus_aod_smart_display_title">Kontekstuell informasjon</string>
+    <string name="oneplus_ap_chanel">AP-kanal</string>
     <string name="oneplus_app_alipay">Alipay</string>
     <string name="oneplus_app_display_compatibility">Kompatibilitetsmodus</string>
     <string name="oneplus_app_display_fullscreen">Fullskjermsmodus</string>
@@ -2917,7 +2993,7 @@ Dette gir også appen muligheten til å slå Ikke forstyrr av eller på samt end
     <string name="oneplus_applock_at_least_four_points">Tegn og inkluder minst 4 punkter</string>
     <string name="oneplus_applock_lockpassword_confirm_your_pin_header">Angi PIN-koden</string>
     <string name="oneplus_applock_need_to_unlock_wrong">Feil PIN-kode</string>
-    <string name="oneplus_applock_pattern_header">Tegn mønsteret</string>
+    <string name="oneplus_applock_pattern_header">Tegn mønster</string>
     <string name="oneplus_applock_wrong_pattern_header">Feil mønster</string>
     <string name="oneplus_apps_notifications">Apps &amp; varsler</string>
     <string name="oneplus_apps_title">Apper</string>
@@ -2949,6 +3025,9 @@ Dette gir også appen muligheten til å slå Ikke forstyrr av eller på samt end
 
 Batterisparing slås automatisk av når enheten lader."</string>
     <string name="oneplus_battery_saver_summary">Denne funksjonen fungerer ikke for noen spill</string>
+    <string name="oneplus_bed_time_mode_summary">Bruke OnePlus Warp Wireless Charger stille</string>
+    <string name="oneplus_bed_time_mode_title">Sengetid-modus</string>
+    <string name="oneplus_bed_time_mode_wall_text">Ved lydreduksjon av OnePlus Warp Wireless Charger, bremses ladehastigheten også ned. Telefonen må plasseres på laderen for at Sengetid-modus skal kunne tre i kraft.</string>
     <string name="oneplus_bg_data_condition_turn_off">SLÅ AV DATASPARING</string>
     <string name="oneplus_black_screen_gestures_settings_title">Bevegelser for avslått skjerm</string>
     <string name="oneplus_block_all_notifications">Blokker alle varsler</string>
@@ -2970,7 +3049,7 @@ Batterisparing slås automatisk av når enheten lader."</string>
     <string name="oneplus_buttons_settings">Innstillingene for knapper</string>
     <string name="oneplus_buttons_settings_summary">Navigasjonsbevegelse</string>
     <string name="oneplus_call_information_broadcast">Si oppringer-ID</string>
-    <string name="oneplus_call_information_broadcast_summary">Innkommende anroper-ID vil bli kunngjort via de tilkoblede øretelefonene</string>
+    <string name="oneplus_call_information_broadcast_summary">Innkommende anroper-ID blir kunngjort via de tilkoblede øretelefonene</string>
     <string name="oneplus_calls">Anrop</string>
     <string name="oneplus_calls_and_vibration">Telefonringetone og vibrasjon</string>
     <string name="oneplus_camera">KAMERA</string>
@@ -3004,6 +3083,7 @@ Batterisparing slås automatisk av når enheten lader."</string>
     <string name="oneplus_connected_devices_dashboard_summary">NFC, cast, utskrift</string>
     <string name="oneplus_connected_devices_dashboard_title">Bluetooth &amp; enhetstilkobling</string>
     <string name="oneplus_cpu">PROSESSOR</string>
+    <string name="oneplus_custom_drop_title">Forkaste endringer？</string>
     <string name="oneplus_custom_time">Egendefinert tidsperiode</string>
     <string name="oneplus_customization">Tilpasning av navigasjonslinjen</string>
     <string name="oneplus_customization_summary">Trykk lenge, trykk to ganger</string>
@@ -3028,7 +3108,7 @@ Batterisparing slås automatisk av når enheten lader."</string>
     <string name="oneplus_device_name">Når du bruker Wi-Fi Direct eller Bluetooth, vil telefonnavnet være synlig.</string>
     <string name="oneplus_device_start_date">Startdato</string>
     <string name="oneplus_device_warranty_expried_date">Utløpsdato for garanti</string>
-    <string name="oneplus_disable_aosp_face_lock_message">Aktivering av OnePlus ansiktsgjenkjennelse vil deaktivere det ansiktet som gjenkjennes av smartlåsen. Vil du virkelig fortsette?</string>
+    <string name="oneplus_disable_aosp_face_lock_message">Aktivering av OnePlus ansiktsgjenkjennelse vil deaktivere det ansiktet som gjenkjennes av smartlåsen. Vil du fortsette?</string>
     <string name="oneplus_disconnected">Koble fra</string>
     <string name="oneplus_display_dashboard_no_theme_summary">Statuslinje, ambient display, bakgrunner</string>
     <string name="oneplus_display_dashboard_no_theme_summary_801">Statuslinje, ambient display, nattmodus, lesemodus</string>
@@ -3045,14 +3125,16 @@ Batterisparing slås automatisk av når enheten lader."</string>
     <string name="oneplus_do_not_disturb_answer_call_by_speaker_summary">Send innkommende anrop til høyttaler når spillmodus er aktivert</string>
     <string name="oneplus_do_not_disturb_answer_call_by_speaker_title">Svar anrop gjennom høyttaler</string>
     <string name="oneplus_do_not_disturb_settings">Innstillinger</string>
-    <string name="oneplus_donot_silence_or_block">Tillatt varsler</string>
+    <string name="oneplus_donot_silence_or_block">Tillat varslinger</string>
     <string name="oneplus_donot_silence_or_block_summary">Tillat alle typer varsler</string>
     <string name="oneplus_double_tap_power_gesture">Klikk to ganger på strømknappen for å</string>
     <string name="oneplus_double_tap_power_gesture_app">VELG FUNKSJONEN</string>
     <string name="oneplus_double_tap_power_gesture_camera">Kamera</string>
     <string name="oneplus_double_tap_power_gesture_wallet">Sveip kort (lommebok)</string>
+    <string name="oneplus_double_tap_power_none">Ingen</string>
     <string name="oneplus_doze_summary_801">Vis klokken og annen informasjon på standby-skjermen</string>
-    <string name="oneplus_doze_title">Ambient display</string>
+    <string name="oneplus_doze_summary_new">Vis tid, dato og varslinger på skjermen</string>
+    <string name="oneplus_doze_title">Omgivelsesvisning</string>
     <string name="oneplus_doze_title_801">Ambient display</string>
     <string name="oneplus_draw_gesture_start_none">Ingen</string>
     <string name="oneplus_draw_m_start_app">Tegn en M</string>
@@ -3081,8 +3163,8 @@ Batterisparing slås automatisk av når enheten lader."</string>
     <string name="oneplus_enroll_fingerprint_tips_title">Fingeravtrykk installasjonsprogramspørsmål</string>
     <string name="oneplus_enter_your_fingerprint">· registrere fingeravtrykk</string>
     <string name="oneplus_erase_system_data">SLETT SYSTEMDATA</string>
-    <string name="oneplus_erase_system_data_summary">Systemdata inkludert kontoinfo, kontakter og appdata vil bli slettet. Du kan ikke angre denne handlingen.</string>
-    <string name="oneplus_erase_system_data_title">Slett Systemdata?</string>
+    <string name="oneplus_erase_system_data_summary">Systemdata inkludert kontoinformasjon, kontakter og appdata blir slettet. Du kan ikke angre denne handlingen.</string>
+    <string name="oneplus_erase_system_data_title">Slette systemdata?</string>
     <string name="oneplus_esportmode_introduction_summary">For å aktivere Esports-modus trykk på vekslingen på spillemodus-panelet.</string>
     <string name="oneplus_experience_improvement_programs">Opplev forbedringsprogrammer</string>
     <string name="oneplus_face_auto_unlock_while_screen_on_sumary">Lås opp med ansiktet når skjermen slås på uten å sveipe først.</string>
@@ -3147,13 +3229,13 @@ Forsiktig: Ansiktsgjenkjenning er mindre sikkert enn fingeravtrykk og passord"</
     <string name="oneplus_fnatic_mode_disturb_introduction_summary">Blokkere alle varslinger og samtaler (unntatt varslingen om lavt batterinivå, alarm og timer). Tapte anrop kan ikke lagres i anropsloggene.</string>
     <string name="oneplus_fnatic_mode_disturb_introduction_title">Avansert DND</string>
     <string name="oneplus_fnatic_mode_enable_introduction_title">Spillmodus må aktiveres først for å kunne bruke Fnatisk modus</string>
-    <string name="oneplus_fnatic_mode_network_introduction_dual4g_summary">Primære signalstyrke for SIM-kortet prioriteres for å minimere interferens for lav latens spill. Resultatet er at det sekundære SIM-kortet deaktiveres og samtaler eller meldinger mottas ikke.</string>
+    <string name="oneplus_fnatic_mode_network_introduction_dual4g_summary">Signalstyrken til hoved-SIM-kortet prioriteres for å redusere forstyrrelser for spilling med lav latens. Som et resultat blir det sekundære SIM-kortet deaktivert, og samtaler og meldinger blir ikke mottatt.</string>
     <string name="oneplus_fnatic_mode_network_introduction_summary">Forbedre stabiliteten til nettverkstilkoblingen</string>
     <string name="oneplus_fnatic_mode_network_introduction_title">Nettverk ekstrautstyr</string>
-    <string name="oneplus_fnatic_mode_summary">Superlad din spillerfaring</string>
+    <string name="oneplus_fnatic_mode_summary">Optimaliser din spillopplevelse</string>
     <string name="oneplus_fnatic_mode_summary_2">En avansert spillmodus opprettet av esports-pionerer</string>
     <string name="oneplus_fnatic_mode_title">Fnatic-modus</string>
-    <string name="oneplus_fnatic_mode_unlock_wallpapers">You har låst opp %1$s spesielle bakgrunner</string>
+    <string name="oneplus_fnatic_mode_unlock_wallpapers">Du har låst opp %1$s spesielle bakgrunner</string>
     <string name="oneplus_fnatic_mode_view_in_wallpapers">Vis i bakgrunner</string>
     <string name="oneplus_fnatic_mode_wallpapers_added">%1$s bakgrunner lagt til</string>
     <string name="oneplus_font_preview_summary">Del den beste teknologien med verden, hånd-i-hånd med deg</string>
@@ -3162,6 +3244,9 @@ Forsiktig: Ansiktsgjenkjenning er mindre sikkert enn fingeravtrykk og passord"</
     <string name="oneplus_force_factory_reset_summary">Passord ved oppstart aktivert, intern lagring vil bli slettet</string>
     <string name="oneplus_forum_award_summary">Dette fellesskapet er ditt eget. Bare du kan definere din egen framgangsmåte. Sammen vil vi definere og raffinere. Bryte ned versjoner og skrive kode. Dette er for deg. Takk for at du drømmer med oss!</string>
     <string name="oneplus_forum_award_title">Pris</string>
+    <string name="oneplus_front_camera_app_display_fullscreen_summary">Hvis innholdet i appen blir avbrutt av visningsområdet for frontkameraet, bytt til standardmodus</string>
+    <string name="oneplus_front_camera_display_choose_title">Velg om du ønsker å skjule frontkameraet</string>
+    <string name="oneplus_front_camera_display_title">Frontkameraet sitt visningsområde</string>
     <string name="oneplus_fullscreen_back_guide_summary">Sveip innover fra nederst venstre eller høyre kant av skjermen</string>
     <string name="oneplus_fullscreen_back_guide_summary_deprecated">Sveip opp fra venstre eller høyre siden nederst på skjermen</string>
     <string name="oneplus_fullscreen_back_guide_title">Tilbake</string>
@@ -3183,10 +3268,10 @@ For å gå til hjemskjermen når du måtte ønske det, sveip oppover fra midten 
     <string name="oneplus_fullscreen_landscape_guide_title">Liggende</string>
     <string name="oneplus_fullscreen_mode_summary">Tillat at fullskjermapper bruker hakkområdet</string>
     <string name="oneplus_fullscreen_mode_title">Fullskjermsmodus</string>
-    <string name="oneplus_fullscreen_previous_app_guide_summary">Sveip til venstre eller høyre i det nederste bjelkeområdet</string>
-    <string name="oneplus_fullscreen_previous_app_guide_summary_deprecated">Sveip opp fra midten av skjermen nederst og opp til høyre side, og deretter slipper fingeren</string>
+    <string name="oneplus_fullscreen_previous_app_guide_summary">Sveip til venstre eller høyre i det nederste indikatorfeltet</string>
+    <string name="oneplus_fullscreen_previous_app_guide_summary_deprecated">Sveip opp fra midten av den nedre kanten av skjermen og opp til høyre, og slipp deretter fingeren</string>
     <string name="oneplus_fullscreen_previous_app_guide_title">Bytt mellom nylige apper</string>
-    <string name="oneplus_fullscreen_previous_app_no_bar_guide_summary">Sveip opp fra nederste kant av skjermen og kast den til venstre eller høyre</string>
+    <string name="oneplus_fullscreen_previous_app_no_bar_guide_summary">Sveip opp fra nederste kant av skjermen, og kast den til venstre eller høyre</string>
     <string name="oneplus_fullscreen_previous_app_no_bar_guide_title">Bytt mellom nylige apper</string>
     <string name="oneplus_fullscreen_recent_guide_summary">Sveip opp fra nedre kanten av skjermen og pause</string>
     <string name="oneplus_fullscreen_recent_guide_summary_deprecated">Sveip opp fra nedre kanten på midten av skjermen og pause</string>
@@ -3195,9 +3280,9 @@ For å gå til hjemskjermen når du måtte ønske det, sveip oppover fra midten 
     <string name="oneplus_game_haptic_feedback_summary">Legg til haptic-tilbakemelding for å gjøre spilleopplevelsen mer levende, Bluetooth-hodetelefon støttes ikke ennå.</string>
     <string name="oneplus_game_mode_ad_summary">Forsterk detaljer i lyse og mørke deler av spillvisningen</string>
     <string name="oneplus_game_mode_ad_title">Forbedring av spillvisning</string>
-    <string name="oneplus_game_mode_app_list">App-liste for Spillmodus</string>
+    <string name="oneplus_game_mode_app_list">App-liste for spillmodus</string>
     <string name="oneplus_gaming_mode">Spillmodus</string>
-    <string name="oneplus_gaming_mode_add_apps">Legg apper til Spillmodusen</string>
+    <string name="oneplus_gaming_mode_add_apps">Legg apper til spillmodusen</string>
     <string name="oneplus_gaming_mode_close_automatic_brightness">Deaktiver automatisk lysstyrke</string>
     <string name="oneplus_gaming_mode_close_automatic_brightness_summary">Lås skjermlysstyrke når spillmodus er aktivert</string>
     <string name="oneplus_gaming_mode_game_battery_saver">Batterisparing for spill</string>
@@ -3208,11 +3293,11 @@ For å gå til hjemskjermen når du måtte ønske det, sveip oppover fra midten 
     <string name="oneplus_gaming_mode_game_battery_saver_light_summary">Oppløsningen på spill vil være begrenset</string>
     <string name="oneplus_gaming_mode_game_battery_saver_summary">Anbefalt til spill som er ikke trenger å være så jevne, som uformelle spill</string>
     <string name="oneplus_gaming_mode_network_acceleration">Nettverks-boost</string>
-    <string name="oneplus_gaming_mode_network_acceleration_summary">Begrens andre apper sin bruk av nettverket når Spillmodus er aktivert</string>
+    <string name="oneplus_gaming_mode_network_acceleration_summary">Begrens andre apper sin bruk av nettverket når spillmodus er aktivert</string>
     <string name="oneplus_gaming_mode_summary">Spillmodusen slås på automatisk når disse appene åpnes og slås av når appene lukkes.</string>
     <string name="oneplus_gaming_toast_title">Bare ett alternativ kan slås av.</string>
     <string name="oneplus_gesture_hidden_bar_summary">Kast til venstre eller høyre etter sveiping for å bytte app</string>
-    <string name="oneplus_gesture_hidden_bar_title">Skjul den nederste bar</string>
+    <string name="oneplus_gesture_hidden_bar_title">Skjul det nederste indikatorfeltet</string>
     <string name="oneplus_gesture_navigation_bar_summary">Bruk bevegelser til å erstatte navigasjonsfelt</string>
     <string name="oneplus_gesture_navigation_bar_summary_for_bottom">Sveip oppover fra den nedre kanten for å gå tilbake</string>
     <string name="oneplus_gesture_navigation_bar_summary_for_deprecated">Sveip innover fra venstre eller høyre kant for å gå tilbake</string>
@@ -3238,6 +3323,10 @@ For å gå til hjemskjermen når du måtte ønske det, sveip oppover fra midten 
     <string name="oneplus_gestures_open_shelf">Åpne Shelf</string>
     <string name="oneplus_gestures_take_video">Spill inn en video</string>
     <string name="oneplus_getlog_title">Hent logger</string>
+    <string name="oneplus_global_dark_mode_description">Gjør at apper som ikke støtter mørkt tema, også vises som mørk tone. Noen apper fungerer muligens ikke som forventet. Du kan deaktivere dem i listen nedenfor.</string>
+    <string name="oneplus_global_dark_mode_only_valid_in_dark_mode">Denne funksjonen er bare tilgjengelig under mørk tone</string>
+    <string name="oneplus_global_dark_mode_summary">Gjør at flere apper som ikke tilpasser seg mørk modus, blir automatisk mørke når mørk tone er slått på</string>
+    <string name="oneplus_global_dark_mode_title">Aktiver mørk tone i flere apper</string>
     <string name="oneplus_google_tts">Google TTS-stemmedata</string>
     <string name="oneplus_gps_using">bruker GPS</string>
     <string name="oneplus_h2_contributors">Bidragsytere til HydrogenOS</string>
@@ -3253,6 +3342,8 @@ For å gå til hjemskjermen når du måtte ønske det, sveip oppover fra midten 
     <string name="oneplus_hardware_keys_action_split_screen">Åpne/lukk delt skjerm</string>
     <string name="oneplus_health_safety_information">Helse &amp; Sikkerhetsinformasjon</string>
     <string name="oneplus_hearing_aid">Kompatibilitet med høreapparat</string>
+    <string name="oneplus_hide_front_camera_display_summary">Ingen innhold kan vises i dette området</string>
+    <string name="oneplus_hide_front_camera_display_title">Skjul frontkameraet</string>
     <string name="oneplus_hide_navigation_bar">Skjul navigasjonsfelt</string>
     <string name="oneplus_hide_navkeys">Skjul navigasjonslinjen</string>
     <string name="oneplus_hide_navkeys_summary">Legg til en knapp for å skjule eller vise navigeringslinjen</string>
@@ -3273,12 +3364,12 @@ Merk: Fingeravtrykket kan være mindre sikkert enn et sterkt mønster eller PIN-
     <string name="oneplus_is_turn_on_feature">Er du sikker på at du vil slå på denne funksjonen?</string>
     <string name="oneplus_is_turn_on_feature_summary">"Når den er slått på, kan følgende situasjoner oppstå av og til:
 1.Noen områder på skjermen er unormale
-2.Adaptiv lysstyrke vil ikke fungere ordentlig"</string>
+2.Tilpasset lysstyrke vil ikke fungere ordentlig"</string>
     <string name="oneplus_lab_dislike">Misliker</string>
     <string name="oneplus_lab_features">LAB-FUNKSJONER</string>
     <string name="oneplus_lab_feedback_toast">Takk for tilbakemeldingen!</string>
     <string name="oneplus_lab_is_like">Liker du denne funksjonen?</string>
-    <string name="oneplus_lab_like">Liker</string>
+    <string name="oneplus_lab_like">Lik</string>
     <string name="oneplus_laboratory">OnePlus-laboratorium</string>
     <string name="oneplus_laboratory_activite_feature">Aktiver</string>
     <string name="oneplus_laboratory_community_rating">Vurdering</string>
@@ -3299,9 +3390,9 @@ Merk: Fingeravtrykket kan være mindre sikkert enn et sterkt mønster eller PIN-
     <string name="oneplus_lock_buttons_summary">Lås kapasitivtaster når spillmodus er aktivert</string>
     <string name="oneplus_lock_screen_intro_skip_dialog_text">Hvis du velger å hoppe over opptak av ansiktsdata, får du forslag om å aktivere en annen metode, som fingeravtrykk eller pin-kode, for å beskytte enheten og personlig informasjon. I visse programmer kan du også lage et passord. For å aktivere beskyttelsen, gå til \"Innstillinger\" og \"Sikkerhet og låsskjerm\".</string>
     <string name="oneplus_lock_screen_notifications_summary_hide">Vis privat innhold bare når du er ulåst</string>
-    <string name="oneplus_lock_screen_notifs_show_alerting">Vise viktig varsling kun fra nedtrekkbar skygge</string>
-    <string name="oneplus_lock_screen_notifs_show_all">Vis viktige og andre varsler</string>
-    <string name="oneplus_lock_screen_notifs_title">Varsler på låse skjerm</string>
+    <string name="oneplus_lock_screen_notifs_show_alerting">Vise kun viktige varslinger</string>
+    <string name="oneplus_lock_screen_notifs_show_all">Vis viktige og andre varslinger</string>
+    <string name="oneplus_lock_screen_notifs_title">Varslinger på låseskjermen</string>
     <string name="oneplus_lockdown_settings_summary">Vis strømknappvalg som kan slå av Smart-lås, opplåsing med fingeravtrykk og varsler på låseskjermen</string>
     <string name="oneplus_lockpassword_choose_your_password_header_for_fingerprint">Angi et passord hvis du bruker ansiktsopplåsing eller fingeravtrykk</string>
     <string name="oneplus_lockpassword_choose_your_pattern_header_for_fingerprint">Angi et mønster hvis du bruker ansiktsopplåsing eller fingeravtrykk</string>
@@ -3311,6 +3402,22 @@ Merk: Fingeravtrykket kan være mindre sikkert enn et sterkt mønster eller PIN-
     <string name="oneplus_lockscreen_settings_title">Låseskjermpreferanser</string>
     <string name="oneplus_max_shortcuts_tips">Du kan legge til opptil 6 snarveier</string>
     <string name="oneplus_media_ring_summary">Demp mediavolum</string>
+    <string name="oneplus_memc_close">Av</string>
+    <string name="oneplus_memc_game">Kompensasjon av spillbevegelse</string>
+    <string name="oneplus_memc_game_summary">For å slå på spillets bevegelseskompensasjon må du bytte oppløsning til FHD+</string>
+    <string name="oneplus_memc_more_support_apps">Flere støttede apper</string>
+    <string name="oneplus_memc_notice">I denne modusen vil video-bildefrekvensen for å redusere uskarp bevegelsesgrafikk som gjør den klarere og jevnere. Kun effektiv under avspilling på fullskjerm.</string>
+    <string name="oneplus_memc_open">På</string>
+    <string name="oneplus_memc_support_apps">Støttede apper</string>
+    <string name="oneplus_memc_support_no_apps">Ingen støttede apps installert</string>
+    <string name="oneplus_memc_video">Utjevning av bevegelsesgrafikk</string>
+    <string name="oneplus_memc_video_effect">Kompensasjonseffekt</string>
+    <string name="oneplus_memc_video_extreme">Ekstremt</string>
+    <string name="oneplus_memc_video_nosupport_extreme_summary">For å slå på ekstrem må du bytte oppløsning til FHD+</string>
+    <string name="oneplus_memc_video_nosupport_extreme_text">Hvis du bytter til QHD+ oppløsning, er kompensasjon av bevegelsesgrafikken begrenset</string>
+    <string name="oneplus_memc_video_smooth">Smooth</string>
+    <string name="oneplus_memc_video_theacme_summary">Video-bildefrekvensen vil øke til 120 fps for en ekstremt jevn grafikk og kan føre til ekstra strømbruk. QHD+ oppløsning støttes ikke midlertidig.</string>
+    <string name="oneplus_memc_video_theacme_title">Utjevning av hyperbevegelser</string>
     <string name="oneplus_mobile_device_name_title">Telefonnavn</string>
     <string name="oneplus_mode_choose">Modusvalg</string>
     <string name="oneplus_mode_settings">Innstillinger for Alert slider</string>
@@ -3339,7 +3446,7 @@ Merk: Fingeravtrykket kan være mindre sikkert enn et sterkt mønster eller PIN-
     <string name="oneplus_night_mode_brightness_strong">Mørkeste</string>
     <string name="oneplus_night_mode_color_temperature">Fargetemperatur</string>
     <string name="oneplus_night_mode_enabled_op">Nattmodus</string>
-    <string name="oneplus_night_mode_enabled_op_summary">Slå på Nattmodus manuelt</string>
+    <string name="oneplus_night_mode_enabled_op_summary">Slå på nattmodus manuelt</string>
     <string name="oneplus_night_mode_manual_open">Manual</string>
     <string name="oneplus_night_mode_open_tip">Slå på nattmodus først</string>
     <string name="oneplus_night_mode_sensor_summary">Avhengig av lysforholdene i rommet vil nattmodus automatisk tilpasse fargetemperaturen for skjermen for å passe med omgivelsene. Dette kan redusere tretthet og belastning på øynene og bidra til bedre søvn.</string>
@@ -3365,10 +3472,10 @@ Merk: Fingeravtrykket kan være mindre sikkert enn et sterkt mønster eller PIN-
     <string name="oneplus_notch_display_area">Hakk</string>
     <string name="oneplus_notch_display_choose_title">Velg hvordan hakkområdet vises</string>
     <string name="oneplus_notch_display_title">Skjermleppe</string>
-    <string name="oneplus_notice_vibrate_intensity">Varsler</string>
+    <string name="oneplus_notice_vibrate_intensity">Varslinger</string>
     <string name="oneplus_notification_advance_settings">Avanserte innstillinger for varsling</string>
     <string name="oneplus_notification_alert_title">Viktig</string>
-    <string name="oneplus_notification_channel_summary_low">Mindre viktige de uten lyd eller vibrasjoner</string>
+    <string name="oneplus_notification_channel_summary_low">Mindre viktige uten lyd eller vibrasjon</string>
     <string name="oneplus_notification_dialog_never_mode">Aldri</string>
     <string name="oneplus_notification_dialog_ringtone">Varselringetone</string>
     <string name="oneplus_notification_dialog_ringtone_mode">Only in ring mode</string>
@@ -3382,21 +3489,25 @@ Merk: Fingeravtrykket kan være mindre sikkert enn et sterkt mønster eller PIN-
     <string name="oneplus_notification_silence_title">Annet</string>
     <string name="oneplus_notification_sound_default">Standardmelding</string>
     <string name="oneplus_notification_ways">Visningsmodus</string>
-    <string name="oneplus_notification_ways_title">Slik vises varsler</string>
-    <string name="oneplus_notifications">Varsler</string>
-    <string name="oneplus_notifications_3rd_calls">Varsler for tredjeparts samtaler</string>
+    <string name="oneplus_notification_ways_title">Hvordan vise varslinger</string>
+    <string name="oneplus_notifications">Varslinger</string>
+    <string name="oneplus_notifications_3rd_calls">Varslinger for tredjepartssamtaler</string>
     <string name="oneplus_notifications_3rd_calls_summary">Tale- eller videosamtaler fra sosiale apper vises som varsler</string>
     <string name="oneplus_notifications_and_vibration">Varslingslyd og vibrasjon</string>
     <string name="oneplus_notifications_free">Gratis</string>
     <string name="oneplus_notifications_meet">Meet</string>
     <string name="oneplus_o2_contributors">Bidragsytere til OxygenOS</string>
+    <string name="oneplus_open_bed_time_mode_schedule_summary">Slå på en tilpasset tidsperiode</string>
+    <string name="oneplus_open_bed_time_mode_schedule_title">Tidsplan</string>
+    <string name="oneplus_open_bed_time_mode_summary">Du kan slå på Sengetid-modus manuelt</string>
+    <string name="oneplus_open_bed_time_mode_title">Sengetid-modus</string>
     <string name="oneplus_opfinger_input_completed_comfirm">Bekreft</string>
     <string name="oneplus_opfinger_input_completed_sub">Fingeravtrykkoppsett fullført. Trykk på \"bekreft\" for å fortsette</string>
     <string name="oneplus_opfinger_input_completed_title">Registrering fullført</string>
     <string name="oneplus_opfinger_input_failed_sub">Registreringen av fingeravtrykk mislyktes. Trykk sakte på avtrykkleseren for å bekrefte vellykket registrering</string>
     <string name="oneplus_opfinger_input_failed_title">Mislykket</string>
     <string name="oneplus_opfinger_input_only_space">Skriv inn navnet</string>
-    <string name="oneplus_opfinger_input_recognize_continue_sub">Fortsett å justere posisjonen av din fingeren for å få informasjon om fingeravtrykk</string>
+    <string name="oneplus_opfinger_input_recognize_continue_sub">Fortsett å justere posisjonen av din fingeren for å få informasjon om kanten av fingeravtrykket</string>
     <string name="oneplus_opfinger_input_recognize_continue_title">Avlesning av fingertupp</string>
     <string name="oneplus_opfinger_input_recognize_sub">Løft fingeren etter hver vibrasjon og repeter inntil sirkelen er full</string>
     <string name="oneplus_opfinger_input_recognize_title">Fingeravtrykkgjenkjenning</string>
@@ -3432,7 +3543,8 @@ Merk: Fingeravtrykket kan være mindre sikkert enn et sterkt mønster eller PIN-
     <string name="oneplus_preference_settings_turn_on">Slå på Ikke forstyrr</string>
     <string name="oneplus_preference_settings_turn_on_time">Fra</string>
     <string name="oneplus_prior_to_use_you_need_to">Før bruk må du：</string>
-    <string name="oneplus_privacy_policy">Personvern</string>
+    <string name="oneplus_privacy_policy">Personvernerklæring</string>
+    <string name="oneplus_privacy_protection_title">Kryptert rom</string>
     <string name="oneplus_product_info_introduce">Enhetsinformasjon &amp; garantikort</string>
     <string name="oneplus_product_info_summary">Garantikort, liste over forhåndsinstallerte</string>
     <string name="oneplus_proximity_summary_disable">Utilgjengelig fordi ambient display er på</string>
@@ -3470,6 +3582,7 @@ Merk: Fingeravtrykket kan være mindre sikkert enn et sterkt mønster eller PIN-
     <string name="oneplus_quickpay_way_alipay_scanning">Alipay-skanning</string>
     <string name="oneplus_quickpay_way_paytm">Paytm</string>
     <string name="oneplus_quickpay_way_wecaht_qrcode">WeChat QR-kode</string>
+    <string name="oneplus_quickpay_way_wecaht_ridecode">WeChat transitt QR-kode</string>
     <string name="oneplus_quickpay_way_wecaht_scanning">WeChat-skanning</string>
     <string name="oneplus_ramboost_description">Ved å lære hvordan du bruker telefonen, kan RAM-forsterker forutse hvilke apper du ønsker å åpne og hvilke data du vil laste inn, slik at RAM-kapasiteten blir fult utnyttet for å øke ytelseshastigheten i din daglige bruk.</string>
     <string name="oneplus_ramboost_switch_summary">Øk RAM-bruken i henhold til din bruk</string>
@@ -3490,7 +3603,7 @@ Merk: Fingeravtrykket kan være mindre sikkert enn et sterkt mønster eller PIN-
     <string name="oneplus_reading_mode_mono">Monoeffekt</string>
     <string name="oneplus_reading_mode_select_effect">Velg effekt</string>
     <string name="oneplus_reading_mode_select_effect_for_app">Velg effekt for \"%1$s\"</string>
-    <string name="oneplus_reading_mode_summary">Avhengig av lysforholdene i rommet vil lesemodusen automatisk justere fargetemperaturen på skjermen og sørge for optimalisert kalibrering tilpasset omgivelsene, noe som vil forbedre leseopplevelsen din.</string>
+    <string name="oneplus_reading_mode_summary">Avhengig av lysforholdene i rommet vil lesemodus automatisk justere fargetemperaturen på skjermen og sørge for optimalisert kalibrering av tekstlesing tilpasset omgivelsene, noe som vil forbedre leseopplevelsen din.</string>
     <string name="oneplus_reading_mode_summary_no_sensor">Lesemodus optimaliserer skjerm og tekst, slik at leseopplevelsen blir like komfortabel som med et lesebrett.</string>
     <string name="oneplus_reading_mode_tips">Monoeffekt gjør deg mer oppmerksom på ord; Kromatisk effekt gir mer behagelige farger når du skal lese</string>
     <string name="oneplus_reading_mode_turn_on">Slå på lesemodus</string>
@@ -3503,7 +3616,7 @@ Merk: Fingeravtrykket kan være mindre sikkert enn et sterkt mønster eller PIN-
     <string name="oneplus_recognized_bluetooth_car_kits">Gjenkjente Bluetooth til kjøretøy</string>
     <string name="oneplus_recognized_bluetooth_car_kits_no_devices">Ingen Bluetooth i kjøretøy. Du kan legge til nye enheter nedenfor manuelt</string>
     <string name="oneplus_recommended_opening">Anbefalt</string>
-    <string name="oneplus_reenroll_fingerprint_tips">Vennligst Tast inn igjen din fingeravtrykk etter utskifting beskyttelses filmen til mobil telefon for å sikre nøyaktigheten av fingeravtrykket</string>
+    <string name="oneplus_reenroll_fingerprint_tips">Legg inn igjen ditt fingeravtrykk etter utskifting beskyttelsesfilmen til mobiltelefon for å sikre nøyaktig fingeravtrykk</string>
     <string name="oneplus_regulatory_information">Bekreftelse</string>
     <string name="oneplus_remove">FJERN</string>
     <string name="oneplus_rename_fingerprint_list">Endre navn på fingeravtrykk</string>
@@ -3516,7 +3629,7 @@ Merk: Fingeravtrykket kan være mindre sikkert enn et sterkt mønster eller PIN-
     <string name="oneplus_ringtones_oneplus_tune">OnePlus-melodi</string>
     <string name="oneplus_rotation_silent_enable_summary">Vend enheten ved innkommende anrop for å slå på lydløs</string>
     <string name="oneplus_rotation_silent_enable_title">Vend for å slå på lydløs</string>
-    <string name="oneplus_scene_mode">SCENER</string>
+    <string name="oneplus_scene_mode">MOTIVER</string>
     <string name="oneplus_schedule">Tidsplan</string>
     <string name="oneplus_screen">SKJERM</string>
     <string name="oneplus_screen_better_cold">Kald</string>
@@ -3578,7 +3691,7 @@ Merk: Fingeravtrykket kan være mindre sikkert enn et sterkt mønster eller PIN-
     <string name="oneplus_search_keyword_sounds_and_notifications_interruptions">ikke ’t forstyrre, avbryte, avbrytelse, brudd, modus</string>
     <string name="oneplus_search_keyword_swap_navkeys">bytt knapper</string>
     <string name="oneplus_search_keyword_switch">overføring,dataoverføring</string>
-    <string name="oneplus_search_keyword_theme_settings">TILPASNING AV LÅSESKJERMEN, bakgrunner, klokkestil, animasjon med fingeravtrykk, Horizon Light, TILPASNING AV SYSTEMET, aksentfarge, form, font, tone, ikonpakke, Nyanserte mørke, vibrerende fargetoner</string>
+    <string name="oneplus_search_keyword_theme_settings">TILPASNING AV LÅSESKJERMEN, bakgrunner, klokkestil, animasjon med fingeravtrykk, Horizon Light, TILPASNING AV SYSTEMET, aksentfarge, form, font, tone, ikonpakke, lysende lys, nyansert mørke, levende fargetoner</string>
     <string name="oneplus_search_keyword_theme_settings_mcl">TILPASNING AV LÅSESKJERMEN, bakgrunner, klokkestil, animasjon med fingeravtrykk, Horizon light, TILPASNING AV SYSTEMET, aksentfarge, form, font, tone, ikonpakke, Nyanserte mørke, vibrerende fargetoner, McLaren</string>
     <string name="oneplus_search_keyword_three_screenshots">skjermbilde</string>
     <string name="oneplus_search_keyword_timer_boot" />
@@ -3608,6 +3721,7 @@ Merk:
     <string name="oneplus_select_fingerprint_animation_effect_2">Bølge</string>
     <string name="oneplus_select_fingerprint_animation_effect_3">Stripe</string>
     <string name="oneplus_select_fingerprint_animation_effect_4">Krusninger</string>
+    <string name="oneplus_select_fingerprint_animation_effect_6">Strøm</string>
     <string name="oneplus_select_fingerprint_animation_effect_mcl">McLaren</string>
     <string name="oneplus_select_fingerprint_animation_effect_none">Ingen</string>
     <string name="oneplus_select_fingerprint_animation_effect_title">Velg animasjonseffekt for fingerantrykk</string>
@@ -3627,6 +3741,8 @@ Merk:
     <string name="oneplus_shortcuts_preview">Forhåndsvisning av snarveier</string>
     <string name="oneplus_shortcuts_settings">Snarveinnstillinger</string>
     <string name="oneplus_shortcuts_title">Snarveier</string>
+    <string name="oneplus_show_front_camera_display_summary">Tillat å vise innhold i dette området</string>
+    <string name="oneplus_show_front_camera_display_title">Vis frontkameraet</string>
     <string name="oneplus_show_notch_display_summary">Tillat at apper bruker hakkområdet</string>
     <string name="oneplus_show_notch_display_title">Vis hakkområdet</string>
     <string name="oneplus_show_pattern_and_password">Vis passord eller mønster</string>
@@ -3637,6 +3753,7 @@ Merk:
     <string name="oneplus_sim1_ringtone_switch">SIM-kort 1</string>
     <string name="oneplus_sim2_ringtone_switch">SIM-kort 2</string>
     <string name="oneplus_simcard_title">SIM</string>
+    <string name="oneplus_sla_down_load_app_summary">Nedlastningsakselerasjon vil være utilgjengelig mens hotspot eller Wi‑Fi direct er på</string>
     <string name="oneplus_sleep_standby_summary">Optimaliser batterilevetiden (f. eks. deaktivere nettverketstilkobling) når du sover. Dette gjør at apper eventuelt ikke kan motta varsler i tide.</string>
     <string name="oneplus_sleep_standby_title">Optimalisering av søvnventemodus</string>
     <string name="oneplus_smart_background_management_title">Aggressiv slumring &amp; dvalemodus</string>
@@ -3646,11 +3763,13 @@ Merk:
     <string name="oneplus_snooze_options_title">Slå av varsler fra varslings skjermen</string>
     <string name="oneplus_sound_and_vibrate">Lyd &amp; vibrering</string>
     <string name="oneplus_sound_settings_summary">Ikke forstyrr, øretelefonmodus</string>
-    <string name="oneplus_sound_tuner">Dolby Atmos</string>
+    <string name="oneplus_sound_tuner">Dolby Atoms</string>
     <string name="oneplus_status_summary">Telefonnummer, signal osv</string>
     <string name="oneplus_stop_run">Tving avslutning</string>
     <string name="oneplus_storage">Lagring</string>
     <string name="oneplus_sunrise_sunset">Aktiver automatisk fra solnedgang til soloppgang</string>
+    <string name="oneplus_support_summary">Tips og ofte stilte spørsmål om bruk av enhet</string>
+    <string name="oneplus_support_title">Tips &amp; brukerstøtte</string>
     <string name="oneplus_supported_apps">Støttede apper</string>
     <string name="oneplus_suspension_notice">Heads-up</string>
     <string name="oneplus_suspension_notice_summary">Tillat apper å vise heads-up-varsling</string>
@@ -3676,7 +3795,7 @@ Merk:
     <string name="oneplus_theme_clock">Klokkestil</string>
     <string name="oneplus_theme_clock_snake_action">SLÅ PÅ AMBIENT DISPLAY</string>
     <string name="oneplus_theme_clock_snake_tip">Denne funksjonen er tilgjengelig når ambient display er på</string>
-    <string name="oneplus_theme_colorpicker_colorvalue">FARGE KODE</string>
+    <string name="oneplus_theme_colorpicker_colorvalue">FARGEKODE</string>
     <string name="oneplus_theme_drop_summary">Forkast endringer?</string>
     <string name="oneplus_theme_drop_title">Avslutt redigeringsmodus</string>
     <string name="oneplus_theme_entrance_summary">Bakgrunner, aksentfage, font, tone</string>
@@ -3734,6 +3853,7 @@ Merk:
     <string name="oneplus_top_level_security_summary">Fingeravtrykk, ansiktsgjenkjenning, nødhjelp</string>
     <string name="oneplus_top_level_sound_summary">Ikke forstyrr, øretelefonmodus, ringetone</string>
     <string name="oneplus_top_level_system_summary">Språk &amp; tastatur, klokkeslett, tilbakestill, systemoppdateringer</string>
+    <string name="oneplus_top_level_system_summary_verizon">Språk &amp; tastatur, tid, tilbakestilling</string>
     <string name="oneplus_touch_vibrate">Berøringsvibrasjon</string>
     <string name="oneplus_turn_off_time">Til</string>
     <string name="oneplus_turn_on_feature_cancel">AVBRYT</string>
@@ -3762,12 +3882,17 @@ Merk: Ansiktsgjenkjenning kan være mindre sikkert enn fingeravtrykk, PIN eller 
     <string name="oneplus_video_enhancer">Vibrerende fargeeffekt</string>
     <string name="oneplus_video_enhancer_footer">Forbedrer fargene under videoavspilling</string>
     <string name="oneplus_video_enhancer_summary">Forbedrer fargene under videoavspilling</string>
+    <string name="oneplus_voice_assistant">Taleassistent</string>
     <string name="oneplus_volume_keys_adjust">Bruk volumknappene til å justere</string>
     <string name="oneplus_volume_keys_adjust_media">Mediavolum</string>
     <string name="oneplus_volume_keys_adjust_ringtones">Ringetonevolum</string>
     <string name="oneplus_weak_text_reminding">Bare tekst</string>
     <string name="oneplus_weak_text_reminding_summary">Tillat apper å vise heads-up-varsling</string>
     <string name="oneplus_wellbeing_grayscale_open_tip">Nattmodus er i øyeblikket ikke tilgjengelig fordi \"Gråskala\"-funksjonen er slått av</string>
+    <string name="oneplus_wifi_6_standard_hotspot_cancel">AVBRYT</string>
+    <string name="oneplus_wifi_6_standard_hotspot_enable">AKTIVER</string>
+    <string name="oneplus_wifi_6_standard_hotspot_title">Wi‑Fi 6 standard hotspot</string>
+    <string name="oneplus_wifi_6_standard_hotspot_warning">Det kan være at noen enheter som kobles til ikke støtter Wi‑Fi 6 standard. Fortsette å aktivere den?</string>
     <string name="oneplus_wifi_ap_error">Sett inn SIM-kortet</string>
     <string name="oneplus_wifi_hidden_network_warning">"Hvis ruteren din deaktiverer kringkasting av SSID, skal du velge «Ja» for å koble til det skjulte nettverket.
 
@@ -3777,7 +3902,7 @@ Skjuling av nettverket vil ikke endre ruterinnstillingene dine."</string>
     <string name="oneplus_wifi_ipv6_surport_summary">Deaktivering av IPv6 kan føre til at man unngår problemer med visse Wi-Fi-rutere.</string>
     <string name="oneplus_wifi_ipv6_surport_title">IPv6-support</string>
     <string name="oneplus_wifi_list">Wi‑Fi-liste</string>
-    <string name="oneplus_wifi_name">Mobilt hotspot-navn</string>
+    <string name="oneplus_wifi_name">Hotspot-navn</string>
     <string name="oneplus_wifi_name_dialog_message">Hvis du slår av alternativet Kringkast nettverksnavn (SSID), vil telefonen ikke være synlig for andre enheter og vises ikke i listen over tilgjengelige Wi-Fi-nettverk. Andre enheter kan fortsatt kobles til ditt hotspot ved å angi nettverksnavnet manuelt.</string>
     <string name="oneplus_wifi_name_dialog_title">Ditt hotspot er ikke synlig nå</string>
     <string name="oneplus_wifi_scan_always_available">Skannefunksjon alltid tilgjengelig</string>
@@ -3788,6 +3913,8 @@ Skjuling av nettverket vil ikke endre ruterinnstillingene dine."</string>
     <string name="oneplus_zen_mode_automation_settings_title">Slå på automatisk</string>
     <string name="oneplus_zen_mode_duration_settings_title">Varighet</string>
     <string name="oneplus_zen_mode_duration_summary_always_prompt">Spør hver gang (med mindre den slås på automatisk)</string>
+    <string name="oneplus_zen_mode_duration_summary_forever">Til du slår av (med mindre den slås på automatisk)</string>
+    <string name="oneplus_zen_mode_duration_summary_time_minutes">%d minutter (med mindre den slås på automatisk)</string>
     <string name="oneplus_zen_mode_footer_info">Når ikke forstyrr er på, vil lyd og bli deaktivert, bortsett fra tilfeller du tillate ovenfor</string>
     <string name="oneplus_zen_mode_mode_manual_switch_summary">Du kan slå på Ikke forstyrr manuelt</string>
     <string name="oneplus_zen_mode_settings">Atferd</string>
@@ -3801,12 +3928,16 @@ Skjuling av nettverket vil ikke endre ruterinnstillingene dine."</string>
     <string name="op_android_mode_cannot_change_color_accent">Standardtema kan bare benytte systemets fargetema</string>
     <string name="op_app_already_uninstalled">Avinstallert</string>
     <string name="op_audio_settings">Lydtuner</string>
+    <string name="op_auto_power_saving">Automatisk strømsparing</string>
+    <string name="op_auto_power_saving_summary">Bytt automatisk til egnet oppløsning uten å lade ut batteriet</string>
+    <string name="op_charging_optimization">Optimalisert lading</string>
+    <string name="op_charging_optimization_summary">Optimaliser lademønsteret i samsvar med bruksvanene dine</string>
     <string name="op_china_mobile">CMCC</string>
     <string name="op_china_telecom">CTCC</string>
     <string name="op_china_unicom">CUCC</string>
     <string name="op_choose_lock_generic_title">Velg en sikkerhetskopilås først</string>
     <string name="op_cloud_service_summary">Synkroniser kontakter, notater, bilder osv.</string>
-    <string name="op_cloud_service_title">Cloud Service</string>
+    <string name="op_cloud_service_title">Skytjeneste</string>
     <string name="op_confirm_enable_oem_unlock_text">ADVARSEL: Enhetens beskyttelses- og verifiseringsfunksjonene, f.eks. fingeravtrykksbetaling og avansert DRM-tast fungerer ikke mens OEM er ulåst.</string>
     <string name="op_custom_color_value">Fargeverdi</string>
     <string name="op_custom_color_value_edit">Angi en fargeverdi</string>
@@ -3819,7 +3950,7 @@ Skjuling av nettverket vil ikke endre ruterinnstillingene dine."</string>
     <string name="op_face_unlock_set_unlock_password">Ansiktsgjenkjenning + passord</string>
     <string name="op_face_unlock_set_unlock_pattern">Ansiktsgjenkjenning + mønster</string>
     <string name="op_face_unlock_set_unlock_pin">Ansiktsgjenkjenning + PIN-kode</string>
-    <string name="op_face_unlock_skip_face">Fortsett uten ansiktet opplåsing</string>
+    <string name="op_face_unlock_skip_face">Fortsett uten ansiktsgjenkjenning</string>
     <string name="op_failed_to_get_data">Kunne ikke hente data</string>
     <string name="op_fetch_data_in_process">Laster inn</string>
     <string name="op_fragment">Kort</string>
@@ -3832,7 +3963,7 @@ Skjuling av nettverket vil ikke endre ruterinnstillingene dine."</string>
     <string name="op_lockpassword_choose_your_pattern_header_for_face">å bruke ansikt slåsing, sett mønster</string>
     <string name="op_lockpassword_choose_your_pin_header_for_face">å bruke ansikt slåsing, sett PIN-kode</string>
     <string name="op_member_description">Bind enheten din for å få eksklusive fordeler</string>
-    <string name="op_member_title">Logg inn på OnePlus-konto</string>
+    <string name="op_member_title">Logg inn på OnePlus-kontoen</string>
     <string name="op_not_disturb">Ikke forstyrr-innstillinger</string>
     <string name="op_not_disturb_summary">Demp anrop og varslinger, og skru av vibrasjon, bortsett fra alarmer</string>
     <string name="op_oneplus_roaming_summary">Gi globale internettjenester</string>
@@ -3880,6 +4011,7 @@ Skjuling av nettverket vil ikke endre ruterinnstillingene dine."</string>
     <string name="op_wifi_display_summary">Cast</string>
     <string name="op_wifi_verbose_multi_broadcast_summary">I standby-modus vil WLAN Multi/Broadcasting-innstillingene for apper vekke WLAN og forbruke systemressurser hvis ikke filteret er aktivert. Dette fører til et høyt batteriforbruk.</string>
     <string name="op_wifi_verbose_multi_broadcast_title">App WLAN Multi/Broadcasting-filter</string>
+    <string name="open_hotspot_warning_message">"Med åpen sikkerhet kan enheter bruke ditt hotspot uten å legge inn passord. Velg WPA2-sikkerhet i stedet, hvis du vil kreve passord. "</string>
     <string name="openid_dialog_reset">TILBAKESTILL</string>
     <string name="openid_dialog_summary">Identifikatoren skiftes ut med nytt tilfeldig nummer</string>
     <string name="openid_dialog_title">Er du sikker på at du vil tilbakestille identifikatoren?</string>
@@ -3964,6 +4096,9 @@ Skjuling av nettverket vil ikke endre ruterinnstillingene dine."</string>
     <string name="power_discharging_duration_enhanced">Omtrent %1$s gjenstår basert på bruken din (%2$s)</string>
     <string name="power_flashlight">Lommelykt</string>
     <string name="power_idle">Telefonen ikke i bruk</string>
+    <string name="power_menu">Slå på meny</string>
+    <string name="power_off">Slå av</string>
+    <string name="power_off_summary">Enheten slår av</string>
     <string name="power_overcounted">Overberegnet</string>
     <string name="power_phone">Telefonsamtaler</string>
     <string name="power_remaining_charging_duration_only">%1$s til det er fulladet</string>
@@ -4252,6 +4387,19 @@ Start enheten din å nytt og prøv igjen."</string>
     <string name="reset_network_title">Tilbakestill Wi-Fi, mobil og Bluetooth</string>
     <string name="reset_shortcut_manager_throttling">Tilbakestill kallgrense for ShortcutManager API</string>
     <string name="reset_shortcut_manager_throttling_complete">Frekvensberegning for ShortcutManager er tilbakestilt</string>
+    <string name="reset_system_settings_button_text">Tilbakestill innstillinger</string>
+    <string name="reset_system_settings_complete_toast">Systeminnstillingene har blitt tilbakestilt</string>
+    <string name="reset_system_settings_desc">"Hvis du har endret noen av systemets innstillinger, vil \"Tilbakestill innstillinger\" tilbakestille telefonen din slik den opprinnelig fungerte. 
+
+ Det vil ikke påvirke noen nedlastede apper, dine personlige data eller følgende beskyttede innstillinger: 
+
+ "<li> Sikkerhetsinnstillinger </li>"
+"<li> Språkinnstillinger</li>"
+"<li>Kontoinnstillinger </li></string>
+    <string name="reset_system_settings_dialog_message">"Tilbakestilling av systeminnstillinger vil endre noen av tilpasningene du kan ha gjort, slik som ringetone, skjermens lysstyrke og hvordan tastaturet fungerer. 
+ Vil du tilbakestille systeminnstillingene? Du kan ikke angre denne handlingen"</string>
+    <string name="reset_system_settings_dialog_title">Advarsel</string>
+    <string name="reset_system_settings_title">Tilbakestill innstillinger</string>
     <string name="restore_default_apn">Gjenoppretter standard APN-innstillinger.</string>
     <string name="restore_default_apn_completed">Tilbakestilling av standard APN-innstillinger er fullført.</string>
     <string name="restr_pin_enter_admin_pin">Skriv inn PIN-koden for administrator</string>
@@ -4281,6 +4429,7 @@ Start enheten din å nytt og prøv igjen."</string>
     <string name="retail_demo_reset_next">Neste</string>
     <string name="retail_demo_reset_title">Passord er obligatorisk</string>
     <string name="retry">Prøv på nytt</string>
+    <string name="reverse_wireless_charging_category">Trådløs lading</string>
     <string name="ring_volume_option_title">Ringevolum</string>
     <string name="ring_volume_title">Ringevolum</string>
     <string name="ringtone_title">Telefonringelyd</string>
@@ -4328,6 +4477,7 @@ Denne innstillingen påvirker alle brukerne på denne telefonen."</string>
     <string name="safety_and_regulatory_info">Håndbok for sikkerhet og regelverk</string>
     <string name="saturation_option_title">Fargebalanse</string>
     <string name="save">Lagre</string>
+    <string name="save_changes">Lagre endringer</string>
     <string name="saved_network">Lagret av %1$s</string>
     <string name="scanning_status_text_wifi_off_ble_off">Både Wi‑Fi- og Bluetooth-skanning er av</string>
     <string name="scanning_status_text_wifi_off_ble_on">Bluetooth-søking er på, Wi-Fi-søking er av</string>
@@ -4422,6 +4572,7 @@ Slik bruker du én-appsmodus:
     <string name="search_bar_account_avatar_content_description" />
     <string name="search_menu">Søk i innstillingene</string>
     <string name="search_menu_title">Søk</string>
+    <string name="search_network_extenders">Søker etter nettverksforlengere</string>
     <string name="search_results_title">Innstillinger</string>
     <string name="search_settings">Søk</string>
     <string name="secure_lock_encryption_warning">Fordi du har slått på en tilgjengelighetstjeneste, bruker ikke enheten skjermlåsen til å forbedre datakryptering.</string>
@@ -4541,6 +4692,7 @@ Merk: Du kan ikke bruke fingeravtrykk til å låse opp denne enheten. Ta kontakt
     <string name="select_automatically">Velg nettverk automatisk</string>
     <string name="select_day">Velg måned og dag</string>
     <string name="select_device_admin_msg">Apper for enhetsadministrator</string>
+    <string name="select_function">Velg funksjonen</string>
     <string name="select_hours">Velg timer</string>
     <string name="select_logd_size_dialog_title">Velg loggstørrelse per loggbuffer</string>
     <string name="select_logd_size_title">Bufferstørrelser for logg</string>
@@ -4562,6 +4714,9 @@ Merk: Du kan ikke bruke fingeravtrykk til å låse opp denne enheten. Ta kontakt
     <string name="select_year">Velg år</string>
     <string name="sensors_off_quick_settings_title">Sensorene er av</string>
     <string name="service_background_processes">%1$s ledig</string>
+    <string name="service_does_not_exists_in_this_area">Tjeneste finnes ikke på dette området</string>
+    <string name="service_exists_in_this_area_and_is_capable_of_being_used">Tjeneste finnes på dette området og kan brukes</string>
+    <string name="service_exists_in_this_area_but_is_not_capable_of_being_used">Tjeneste finnes på dette området, men kan ikke brukes</string>
     <string name="service_foreground_processes">%1$s brukt</string>
     <string name="service_manage">Innstillinger</string>
     <string name="service_manage_description">%1$s: er i bruk for øyeblikket. Trykk på Innstillinger for å gjøre endringer.</string>
@@ -4635,6 +4790,8 @@ Merk: Du kan ikke bruke fingeravtrykk til å låse opp denne enheten. Ta kontakt
     <string name="show_screen_updates_summary">Fremhev hele vindusoverflater når de oppdateres</string>
     <string name="show_touches">Vis trykk</string>
     <string name="show_touches_summary">Vis visuell tilbakemelding for trykk</string>
+    <string name="show_wifi_popup">Vis Wi-Fi-popups</string>
+    <string name="show_wifi_popup_summary">Fortell meg når Wi-Fi er tilgjengelig, når appene åpnes</string>
     <string name="sim_bad_pin">Feil personlig kode</string>
     <string name="sim_call_back_title">Ring tilbake fra standard SIM-kort</string>
     <string name="sim_calls_always_use">Bruk alltid dette for samtaler</string>
@@ -4672,7 +4829,7 @@ Muligens feil kode."</string>
     <string name="sim_enabler_need_switch_data_service">Dette vil deaktivere den og bytte til SIM%1$s for datatjenester. Er du sikker?</string>
     <string name="sim_enabler_not_allow_disable_data_sim">Deaktivering av data-SIM er ikke tillatt</string>
     <string name="sim_enabler_summary">SIM er %1$s</string>
-    <string name="sim_enabler_summary_new_marshmallow">" er %1$s"</string>
+    <string name="sim_enabler_summary_new_marshmallow">" is %1$s"</string>
     <string name="sim_enabler_title">SIM-verktøy</string>
     <string name="sim_enabler_will_disable_sim_title">Merk</string>
     <string name="sim_enter_cancel">Avbryt</string>
@@ -4741,7 +4898,9 @@ Varsler kan bli forsinket for disse appene."</string>
     <string name="sms_messages_title">Tekstmeldinger</string>
     <string name="sms_preference">SMS-preferanse</string>
     <string name="snooze_options_title">Tillat slumring av varsler</string>
+    <string name="softap_tethering_footer_info">Bruk hotspot og tilknytning for å gi andre enheter tilgang til Internett via dine mobildata eller Wi-Fi-tilkobling. Apper kan også opprette et hotspot for å dele innhold med enheter i nærheten.</string>
     <string name="sometimes_running">Kjører noen ganger (%s)</string>
+    <string name="sort_apps_by_date">Sorter etter dato</string>
     <string name="sort_avg_use">Sortér etter gjennomsnittlig bruk</string>
     <string name="sort_max_use">Sortér etter maks. bruk</string>
     <string name="sort_order_alpha">Sortér etter navn</string>
@@ -5080,10 +5239,11 @@ Synkroniser på Google-måten, slik at du har tilgang til kontaktene dine, avtal
     <string name="system_app">(System)</string>
     <string name="system_dashboard_summary">Språk, bevegelser, klokkeslett, sikkerhetskopi</string>
     <string name="system_default_app">(Systemstandard)</string>
-    <string name="system_is_up_to_date">Systemet er oppdatert</string>
+    <string name="system_is_up_to_date">Ditt system er oppdatert</string>
     <string name="system_navigation_title">Systemnavigasjon</string>
     <string name="system_package">Systemoppdateringer kan ikke installeres på eksterne medier.</string>
     <string name="system_ui_settings">Vis SystemUI Tuner</string>
+    <string name="system_update">Systemoppdatering</string>
     <string name="system_update_settings_list_item_summary" />
     <string name="system_update_settings_list_item_title">Systemoppdateringer</string>
     <string name="system_update_uss_title">Last ned og installer</string>
@@ -5097,10 +5257,10 @@ Synkroniser på Google-måten, slik at du har tilgang til kontaktene dine, avtal
     <string name="testing">Testing</string>
     <string name="testing_phone_info">Telefoninformasjon</string>
     <string name="testing_usage_stats">Bruksstatistikk</string>
-    <string name="tether_error_item_default">Tethering</string>
+    <string name="tether_error_item_default">Tilknytning</string>
     <string name="tether_error_message">Du abonnerer ikke på %1$s.</string>
     <string name="tether_error_title">%1$s feil</string>
-    <string name="tether_no_sim_message">Sett inn et SIM-kort for å bruke mobilt hotspot og andre tethering-alternativer</string>
+    <string name="tether_no_sim_message">Sett inn et SIM-kort for å bruke hotspot og andre tilknytningsalternativer</string>
     <string name="tether_no_sim_title">Ingen SIM-kort</string>
     <string name="tether_settings_disabled_on_data_saver">Kan ikke bruke internettdeling eller flyttbare Wi-Fi-soner mens Datasparing er på</string>
     <string name="tether_settings_summary_hotspot_off_tether_on">Internettdeling</string>
@@ -5153,7 +5313,7 @@ Synkroniser på Google-måten, slik at du har tilgang til kontaktene dine, avtal
     <string name="touchscreen_camera_gesture_summary">Tegn en O for å åpne kameraet</string>
     <string name="touchscreen_camera_gesture_title">Åpne kamera</string>
     <string name="touchscreen_double_tap_to_wake_gesture_summary">Trykk på skjermen to ganger for å vekke enheten</string>
-    <string name="touchscreen_double_tap_to_wake_gesture_title">Dobbelttrykk for å vekke</string>
+    <string name="touchscreen_double_tap_to_wake_gesture_title">Dobbeltrykk for å vekke</string>
     <string name="touchscreen_flashlight_gesture_summary">Tegn en V for å slå lommelykt av/på</string>
     <string name="touchscreen_flashlight_gesture_title">Slå av/på lommelykt</string>
     <string name="touchscreen_music_gesture_summary">Tegn || med to fingre for å spille av eller sette musikken på pause. Tegn &lt; eller > for forrige eller neste spor</string>
@@ -5217,6 +5377,7 @@ Synkroniser på Google-måten, slik at du har tilgang til kontaktene dine, avtal
     <string name="tts_status_title">Status for standardspråk</string>
     <string name="tx_link_speed">%1$d Mbps</string>
     <string name="tx_wifi_speed">Overføringshastighet for sending</string>
+    <string name="uicc_alert_message">UICC er nødvendig for å logge på Wi-Fi-nettverket med SSID-VerizonWiFiAccess</string>
     <string name="uicc_all_lock_summary">Enheten din er låst av Spring eller internasjonale SIM-kort</string>
     <string name="uicc_lock_summary">Enheten er låst med kun Sprint SIM-er</string>
     <string name="uicc_unlock">UICC-opplåsing</string>
@@ -5238,10 +5399,16 @@ Synkroniser på Google-måten, slik at du har tilgang til kontaktene dine, avtal
     <string name="uninstall_failed_device_policy_manager">Kunne ikke avinstallere fordi pakken er en aktiv enhetsadministrator.</string>
     <string name="uninstall_failed_device_policy_manager_of_user">Kunne ikke avinstallere fordi pakken er en aktiv enhetsadministrator for bruker %1$s.</string>
     <string name="uninstall_failure_notification_channel">Avinstallasjoner mislyktes</string>
+    <string name="uninstall_multiple_apps">Masseoperasjoner</string>
     <string name="uninstall_text">Avinstaller</string>
     <string name="uninstall_update_text">Vil du erstatte appen med fabrikkversjonen? All data vil bli fjernet.</string>
     <string name="uninstall_update_text_multiuser">Vil du erstatte appen med fabrikkversjonen? All data vil bli fjernet. Dette berører alle brukere, inkludert de med jobbprofiler.</string>
     <string name="uninstall_update_title">Avinstaller uppdatering</string>
+    <string name="uninstallapps_confirm">Bekreft</string>
+    <string name="uninstallapps_confirm_dialog_body">Alle valgte programmer og filer tilknyttet programpakken blir slettet.</string>
+    <string name="uninstallapps_confirm_dialog_title">Fjerne valgte apper?</string>
+    <string name="uninstallapps_selected">valgt</string>
+    <string name="uninstallapps_toast_message">apper har blitt fjernet</string>
     <string name="uninstalling">Avinstallerer…</string>
     <string name="uninstalling_notification_channel">Kjører avinstallasjoner</string>
     <string name="unknown">Ukjent</string>
@@ -5323,6 +5490,12 @@ De lagrede fingeravtrykkene dine fjernes også fra denne profilen, og du kommer 
     <string name="unsupported_setting_summary">Innstillingen støttes ikke på denne telefonen</string>
     <string name="update_prl">Oppdater PRL</string>
     <string name="update_profile">Oppdater profil</string>
+    <string name="upstream_type_auto">Autobryter</string>
+    <string name="upstream_type_auto_summary">Bytt automatisk til mobildatatilkobling når Wi-Fi frakobles</string>
+    <string name="upstream_type_cell">Deler bare mobildata</string>
+    <string name="upstream_type_cell_summary">Når mobildata er deaktivert eller frakoblet, er deling deaktivert</string>
+    <string name="upstream_type_wifi">Deler bare Wi-Fi</string>
+    <string name="upstream_type_wifi_summary">Når Wi-Fi er tilkoblet, er deling deaktivert</string>
     <string name="usage">Bruk</string>
     <string name="usage_access">Brukstilgang</string>
     <string name="usage_access_description">Med brukstilgang kan apper spore hvilke andre apper du bruker og hvor ofte du bruker dem. Også operatør, språkinnstillinger og annen informasjon kan spores med brukstilgang.</string>
@@ -5508,6 +5681,9 @@ Alle brukere kan oppdatere apper for alle andre brukere."</string>
     <string name="v7_preference_on">PÅ</string>
     <string name="verify_apps_over_usb_summary">Sjekk apper som er installert via ADB/ADT, for skadelig atferd.</string>
     <string name="verify_apps_over_usb_title">Bekreft apper via USB</string>
+    <string name="verizon_store_demo_mode_hint">Tast inn passord</string>
+    <string name="verizon_store_demo_mode_title">Verizon Store Demo Mode</string>
+    <string name="verizon_wifi_tether_band_warning">Endring av hvordan hotspot settes opp, kobler fra enheter som for øyeblikket er koblet til hotspot.</string>
     <string name="version_text">versjon %1$s</string>
     <string name="vibrate_in_silent_title">Vibrer ved stille modus</string>
     <string name="vibrate_input_devices">Viderekoble vibrering</string>
@@ -5521,7 +5697,7 @@ Alle brukere kan oppdatere apper for alle andre brukere."</string>
     <string name="vision_settings_description">Du kan tilpasse denne enheten etter egne behov. Tilgjengelighetsfunksjonene kan du endre senere i Innstillinger.</string>
     <string name="vision_settings_suggestion_title">Endre skriftstørrelse</string>
     <string name="vision_settings_title">Synsinnstillinger</string>
-    <string name="vn_wfc_summary">Bruk Wi-Fi-nettverk ved taleanrop.</string>
+    <string name="vn_wfc_summary">Bruk Wi-Fi-nettver ved taleanrop.</string>
     <string name="voice_input_output_settings">Tale (inn/ut)</string>
     <string name="voice_input_output_settings_title">Innstillinger for talekommando og -styring</string>
     <string name="voice_input_settings">Innstillinger for taleinndata</string>
@@ -5624,6 +5800,8 @@ Alle brukere kan oppdatere apper for alle andre brukere."</string>
     <string name="wallpaper_settings_title">Bakgrunnsbilde</string>
     <string name="wallpaper_suggestion_summary">Gi skjermen et personlig preg</string>
     <string name="wallpaper_suggestion_title">Endre bakgrunn</string>
+    <string name="warning_title">Advarsel</string>
+    <string name="warranty_date_code">Garanti Dato</string>
     <string name="web_action_enable_summary">Åpne linker i apper – selv om appene ikke er installert</string>
     <string name="web_action_enable_title">Instant-apper</string>
     <string name="web_action_section_title">Instant-apper</string>
@@ -5938,8 +6116,17 @@ Vil du tillate dette for alle apper som prøver å skanne?"</string>
     <string name="wifi_tether_custom_auto_turn_off_always_summary">Alltid på</string>
     <string name="wifi_tether_enabled_subtext">%1$s er aktiv</string>
     <string name="wifi_tether_failed_subtext">Feil med flyttbar Wi-Fi-sone</string>
+    <string name="wifi_tether_passphrase_warning">Minst 8 tegn, må inneholde 1 bokstav, 1 siffer og 1 symbol</string>
     <string name="wifi_tether_starting">Slår på Wi-Fi-sone …</string>
     <string name="wifi_tether_stopping">Slår av trådløs sone …</string>
+    <string name="wifi_tether_upstream_network_type_config">Deler innstillinger</string>
+    <string name="wifi_tether_upstream_network_type_title">Deler innstillinger</string>
+    <string name="wifi_tether_verizon_custom_auto_turn_off_10_min_summary">Etter 10 minutter uten aktivitet</string>
+    <string name="wifi_tether_verizon_custom_auto_turn_off_20_min_summary">Etter 20 minutter uten aktivitet</string>
+    <string name="wifi_tether_verizon_custom_auto_turn_off_30_min_summary">Etter 30 minutter uten aktivitet</string>
+    <string name="wifi_tether_verizon_custom_auto_turn_off_5_min_summary">Etter 5 minutter uten aktivitet</string>
+    <string name="wifi_tether_verizon_custom_auto_turn_off_60_min_summary">Etter 60 minutter uten aktivitet</string>
+    <string name="wifi_tether_verizon_custom_auto_turn_off_always_summary">Alltid på</string>
     <string name="wifi_turned_on_message">Wi-Fi er slått på</string>
     <string name="wifi_unchanged">(uendret)</string>
     <string name="wifi_unmetered_label">Uten datamåling</string>
@@ -5957,7 +6144,7 @@ Vil du tillate dette for alle apper som prøver å skanne?"</string>
     <string name="wifi_wapi_cert_create_subdir">Opprett mappe</string>
     <string name="wifi_wapi_cert_delet_subdir">Velg et passende sertifikat</string>
     <string name="wifi_wapi_cert_install">Installer WAPI-sertifikat</string>
-    <string name="wifi_wapi_cert_install_button">Installer</string>
+    <string name="wifi_wapi_cert_install_button">Installere</string>
     <string name="wifi_wapi_cert_mgmt_as_dont_exist">SD-kortet og internminnet har ikke AS sertifikat. Undersøk dette!</string>
     <string name="wifi_wapi_cert_mgmt_as_format_is_wrong">Formatet til AS sertifikatet er feil! Installer korrekt AS sertifikat</string>
     <string name="wifi_wapi_cert_mgmt_as_name_is_empty">Skriv inn AS sertifikatnavnet</string>
@@ -5982,8 +6169,8 @@ Vil du tillate dette for alle apper som prøver å skanne?"</string>
     <string name="wizard_finish">Fullfør</string>
     <string name="wizard_next">Neste</string>
     <string name="work_alarm_ringtone_title">Standard alarmlyd for jobb</string>
-    <string name="work_life_balance">Arbeids liv Balanse</string>
-    <string name="work_life_disabled_toast">Funksjonen Arbeidslivsbalanse er deaktivert.</string>
+    <string name="work_life_balance">Work-Life Balance</string>
+    <string name="work_life_disabled_toast">Funksjonen Work-Life Balance er deaktivert.</string>
     <string name="work_mode_label">Jobbprofil</string>
     <string name="work_mode_off_summary">Apper og varsler er slått av</string>
     <string name="work_mode_on_summary">Administreres av organisasjonen din</string>

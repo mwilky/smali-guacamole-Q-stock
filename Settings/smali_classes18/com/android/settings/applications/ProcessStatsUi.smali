@@ -169,7 +169,7 @@
 .method public getHelpResource()I
     .locals 1
 
-    const v0, 0x7f1207b1
+    const v0, 0x7f1207e9
 
     return v0
 .end method
@@ -227,7 +227,7 @@
 
     const/4 v1, 0x1
 
-    const v2, 0x7f12140b
+    const v2, 0x7f1214cf
 
     invoke-interface {p1, v0, v1, v0, v2}, Landroid/view/Menu;->add(IIII)Landroid/view/MenuItem;
 
@@ -237,7 +237,7 @@
 
     const/4 v1, 0x2
 
-    const v2, 0x7f12140c
+    const v2, 0x7f1214d0
 
     invoke-interface {p1, v0, v1, v0, v2}, Landroid/view/Menu;->add(IIII)Landroid/view/MenuItem;
 
@@ -357,12 +357,12 @@
 
     if-eqz v2, :cond_0
 
-    const v2, 0x7f120a02
+    const v2, 0x7f120a3f
 
     goto :goto_0
 
     :cond_0
-    const v2, 0x7f120206
+    const v2, 0x7f120216
 
     :goto_0
     invoke-virtual {v1, v2}, Landroidx/preference/PreferenceGroup;->setTitle(I)V

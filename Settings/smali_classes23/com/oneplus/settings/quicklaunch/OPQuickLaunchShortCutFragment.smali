@@ -89,7 +89,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0300c6
+    const v1, 0x7f0300c9
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getStringArray(I)[Ljava/lang/String;
 
@@ -159,7 +159,7 @@
 .end method
 
 .method private createDefaultAppList()Ljava/util/List;
-    .locals 10
+    .locals 17
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
@@ -169,266 +169,318 @@
         }
     .end annotation
 
-    iget-object v0, p0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchShortCutFragment;->mDefaultpayAppList:Ljava/util/List;
+    move-object/from16 v0, p0
 
-    invoke-interface {v0}, Ljava/util/List;->clear()V
+    iget-object v1, v0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchShortCutFragment;->mDefaultpayAppList:Ljava/util/List;
 
-    iget-object v0, p0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchShortCutFragment;->mContext:Landroid/content/Context;
+    invoke-interface {v1}, Ljava/util/List;->clear()V
 
-    const-string v1, "com.tencent.mm"
+    iget-object v1, v0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchShortCutFragment;->mContext:Landroid/content/Context;
 
-    invoke-static {v0, v1}, Lcom/oneplus/settings/utils/OPUtils;->isAppExist(Landroid/content/Context;Ljava/lang/String;)Z
+    const-string v2, "com.tencent.mm"
 
-    move-result v0
-
-    const/4 v1, 0x2
-
-    if-eqz v0, :cond_0
-
-    new-instance v0, Lcom/oneplus/settings/better/OPAppModel;
-
-    iget-object v2, p0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchShortCutFragment;->mPayWaysName:[Ljava/lang/String;
-
-    const/4 v8, 0x0
-
-    aget-object v4, v2, v8
-
-    invoke-static {v8}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
-
-    move-result-object v5
-
-    const/4 v6, 0x0
-
-    const/4 v7, 0x0
-
-    const-string v3, "com.tencent.mm"
-
-    move-object v2, v0
-
-    invoke-direct/range {v2 .. v7}, Lcom/oneplus/settings/better/OPAppModel;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IZ)V
-
-    invoke-virtual {v0, v1}, Lcom/oneplus/settings/better/OPAppModel;->setType(I)V
-
-    iget-object v2, p0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchShortCutFragment;->mContext:Landroid/content/Context;
-
-    invoke-static {v2, v8}, Lcom/oneplus/settings/utils/OPUtils;->getQuickPayIconByType(Landroid/content/Context;I)Landroid/graphics/drawable/Drawable;
-
-    move-result-object v2
-
-    invoke-virtual {v0, v2}, Lcom/oneplus/settings/better/OPAppModel;->setAppIcon(Landroid/graphics/drawable/Drawable;)V
-
-    iget-object v2, p0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchShortCutFragment;->mContext:Landroid/content/Context;
-
-    invoke-static {v2, v0}, Lcom/oneplus/settings/utils/OPUtils;->isInQuickLaunchList(Landroid/content/Context;Lcom/oneplus/settings/better/OPAppModel;)Z
-
-    move-result v2
-
-    invoke-virtual {v0, v2}, Lcom/oneplus/settings/better/OPAppModel;->setSelected(Z)V
-
-    new-instance v2, Lcom/oneplus/settings/better/OPAppModel;
-
-    iget-object v3, p0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchShortCutFragment;->mPayWaysName:[Ljava/lang/String;
-
-    const/4 v9, 0x1
-
-    aget-object v5, v3, v9
-
-    invoke-static {v9}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
-
-    move-result-object v6
-
-    const-string v4, "com.tencent.mm"
-
-    move-object v3, v2
-
-    invoke-direct/range {v3 .. v8}, Lcom/oneplus/settings/better/OPAppModel;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IZ)V
-
-    invoke-virtual {v2, v1}, Lcom/oneplus/settings/better/OPAppModel;->setType(I)V
-
-    iget-object v3, p0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchShortCutFragment;->mContext:Landroid/content/Context;
-
-    invoke-static {v3, v9}, Lcom/oneplus/settings/utils/OPUtils;->getQuickPayIconByType(Landroid/content/Context;I)Landroid/graphics/drawable/Drawable;
-
-    move-result-object v3
-
-    invoke-virtual {v2, v3}, Lcom/oneplus/settings/better/OPAppModel;->setAppIcon(Landroid/graphics/drawable/Drawable;)V
-
-    iget-object v3, p0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchShortCutFragment;->mContext:Landroid/content/Context;
-
-    invoke-static {v3, v2}, Lcom/oneplus/settings/utils/OPUtils;->isInQuickLaunchList(Landroid/content/Context;Lcom/oneplus/settings/better/OPAppModel;)Z
-
-    move-result v3
-
-    invoke-virtual {v2, v3}, Lcom/oneplus/settings/better/OPAppModel;->setSelected(Z)V
-
-    iget-object v3, p0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchShortCutFragment;->mDefaultpayAppList:Ljava/util/List;
-
-    invoke-interface {v3, v0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
-
-    iget-object v3, p0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchShortCutFragment;->mDefaultpayAppList:Ljava/util/List;
-
-    invoke-interface {v3, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
-
-    :cond_0
-    iget-object v0, p0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchShortCutFragment;->mContext:Landroid/content/Context;
-
-    const-string v2, "com.eg.android.AlipayGphone"
-
-    invoke-static {v0, v2}, Lcom/oneplus/settings/utils/OPUtils;->isAppExist(Landroid/content/Context;Ljava/lang/String;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_1
-
-    new-instance v0, Lcom/oneplus/settings/better/OPAppModel;
-
-    iget-object v2, p0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchShortCutFragment;->mPayWaysName:[Ljava/lang/String;
-
-    aget-object v4, v2, v1
-
-    invoke-static {v1}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
-
-    move-result-object v5
-
-    const/4 v6, 0x0
-
-    const/4 v7, 0x0
-
-    const-string v3, "com.eg.android.AlipayGphone"
-
-    move-object v2, v0
-
-    invoke-direct/range {v2 .. v7}, Lcom/oneplus/settings/better/OPAppModel;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IZ)V
-
-    invoke-virtual {v0, v1}, Lcom/oneplus/settings/better/OPAppModel;->setType(I)V
-
-    iget-object v2, p0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchShortCutFragment;->mContext:Landroid/content/Context;
-
-    invoke-static {v2, v1}, Lcom/oneplus/settings/utils/OPUtils;->getQuickPayIconByType(Landroid/content/Context;I)Landroid/graphics/drawable/Drawable;
-
-    move-result-object v2
-
-    invoke-virtual {v0, v2}, Lcom/oneplus/settings/better/OPAppModel;->setAppIcon(Landroid/graphics/drawable/Drawable;)V
-
-    iget-object v2, p0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchShortCutFragment;->mContext:Landroid/content/Context;
-
-    invoke-static {v2, v0}, Lcom/oneplus/settings/utils/OPUtils;->isInQuickLaunchList(Landroid/content/Context;Lcom/oneplus/settings/better/OPAppModel;)Z
-
-    move-result v2
-
-    invoke-virtual {v0, v2}, Lcom/oneplus/settings/better/OPAppModel;->setSelected(Z)V
-
-    new-instance v2, Lcom/oneplus/settings/better/OPAppModel;
-
-    iget-object v3, p0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchShortCutFragment;->mPayWaysName:[Ljava/lang/String;
-
-    const/4 v9, 0x3
-
-    aget-object v5, v3, v9
-
-    invoke-static {v9}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
-
-    move-result-object v6
-
-    const/4 v8, 0x0
-
-    const-string v4, "com.eg.android.AlipayGphone"
-
-    move-object v3, v2
-
-    invoke-direct/range {v3 .. v8}, Lcom/oneplus/settings/better/OPAppModel;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IZ)V
-
-    invoke-virtual {v2, v1}, Lcom/oneplus/settings/better/OPAppModel;->setType(I)V
-
-    iget-object v3, p0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchShortCutFragment;->mContext:Landroid/content/Context;
-
-    invoke-static {v3, v9}, Lcom/oneplus/settings/utils/OPUtils;->getQuickPayIconByType(Landroid/content/Context;I)Landroid/graphics/drawable/Drawable;
-
-    move-result-object v3
-
-    invoke-virtual {v2, v3}, Lcom/oneplus/settings/better/OPAppModel;->setAppIcon(Landroid/graphics/drawable/Drawable;)V
-
-    iget-object v3, p0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchShortCutFragment;->mContext:Landroid/content/Context;
-
-    invoke-static {v3, v2}, Lcom/oneplus/settings/utils/OPUtils;->isInQuickLaunchList(Landroid/content/Context;Lcom/oneplus/settings/better/OPAppModel;)Z
-
-    move-result v3
-
-    invoke-virtual {v2, v3}, Lcom/oneplus/settings/better/OPAppModel;->setSelected(Z)V
-
-    iget-object v3, p0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchShortCutFragment;->mDefaultpayAppList:Ljava/util/List;
-
-    invoke-interface {v3, v0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
-
-    iget-object v3, p0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchShortCutFragment;->mDefaultpayAppList:Ljava/util/List;
-
-    invoke-interface {v3, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
-
-    :cond_1
-    iget-object v0, p0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchShortCutFragment;->mContext:Landroid/content/Context;
-
-    const-string v2, "net.one97.paytm"
-
-    invoke-static {v0, v2}, Lcom/oneplus/settings/utils/OPUtils;->isAppExist(Landroid/content/Context;Ljava/lang/String;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_2
-
-    new-instance v0, Lcom/oneplus/settings/better/OPAppModel;
-
-    iget-object v3, p0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchShortCutFragment;->mPayWaysName:[Ljava/lang/String;
-
-    const/4 v4, 0x4
-
-    aget-object v5, v3, v4
-
-    invoke-static {v4}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
-
-    move-result-object v6
-
-    const/4 v7, 0x0
-
-    const/4 v8, 0x0
-
-    const-string v4, "net.one97.paytm"
-
-    move-object v3, v0
-
-    invoke-direct/range {v3 .. v8}, Lcom/oneplus/settings/better/OPAppModel;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IZ)V
-
-    invoke-virtual {v0, v1}, Lcom/oneplus/settings/better/OPAppModel;->setType(I)V
-
-    iget-object v1, p0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchShortCutFragment;->mContext:Landroid/content/Context;
-
-    invoke-static {v1, v2}, Lcom/oneplus/settings/utils/OPUtils;->getAppIcon(Landroid/content/Context;Ljava/lang/String;)Landroid/graphics/drawable/Drawable;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Lcom/oneplus/settings/better/OPAppModel;->setAppIcon(Landroid/graphics/drawable/Drawable;)V
-
-    iget-object v1, p0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchShortCutFragment;->mContext:Landroid/content/Context;
-
-    invoke-static {v1, v0}, Lcom/oneplus/settings/utils/OPUtils;->isInQuickLaunchList(Landroid/content/Context;Lcom/oneplus/settings/better/OPAppModel;)Z
+    invoke-static {v1, v2}, Lcom/oneplus/settings/utils/OPUtils;->isAppExist(Landroid/content/Context;Ljava/lang/String;)Z
 
     move-result v1
 
-    invoke-virtual {v0, v1}, Lcom/oneplus/settings/better/OPAppModel;->setSelected(Z)V
+    const/4 v2, 0x3
 
-    iget-object v1, p0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchShortCutFragment;->mDefaultpayAppList:Ljava/util/List;
+    const/4 v3, 0x2
 
-    invoke-interface {v1, v0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    if-eqz v1, :cond_0
+
+    new-instance v1, Lcom/oneplus/settings/better/OPAppModel;
+
+    iget-object v4, v0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchShortCutFragment;->mPayWaysName:[Ljava/lang/String;
+
+    const/4 v10, 0x0
+
+    aget-object v6, v4, v10
+
+    invoke-static {v10}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
+
+    move-result-object v7
+
+    const/4 v8, 0x0
+
+    const/4 v9, 0x0
+
+    const-string v5, "com.tencent.mm"
+
+    move-object v4, v1
+
+    invoke-direct/range {v4 .. v9}, Lcom/oneplus/settings/better/OPAppModel;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IZ)V
+
+    invoke-virtual {v1, v3}, Lcom/oneplus/settings/better/OPAppModel;->setType(I)V
+
+    iget-object v4, v0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchShortCutFragment;->mContext:Landroid/content/Context;
+
+    invoke-static {v4, v10}, Lcom/oneplus/settings/utils/OPUtils;->getQuickPayIconByType(Landroid/content/Context;I)Landroid/graphics/drawable/Drawable;
+
+    move-result-object v4
+
+    invoke-virtual {v1, v4}, Lcom/oneplus/settings/better/OPAppModel;->setAppIcon(Landroid/graphics/drawable/Drawable;)V
+
+    iget-object v4, v0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchShortCutFragment;->mContext:Landroid/content/Context;
+
+    invoke-static {v4, v1}, Lcom/oneplus/settings/utils/OPUtils;->isInQuickLaunchList(Landroid/content/Context;Lcom/oneplus/settings/better/OPAppModel;)Z
+
+    move-result v4
+
+    invoke-virtual {v1, v4}, Lcom/oneplus/settings/better/OPAppModel;->setSelected(Z)V
+
+    new-instance v4, Lcom/oneplus/settings/better/OPAppModel;
+
+    iget-object v5, v0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchShortCutFragment;->mPayWaysName:[Ljava/lang/String;
+
+    const/4 v6, 0x1
+
+    aget-object v13, v5, v6
+
+    invoke-static {v6}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
+
+    move-result-object v14
+
+    const/4 v15, 0x0
+
+    const/16 v16, 0x0
+
+    const-string v12, "com.tencent.mm"
+
+    move-object v11, v4
+
+    invoke-direct/range {v11 .. v16}, Lcom/oneplus/settings/better/OPAppModel;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IZ)V
+
+    invoke-virtual {v4, v3}, Lcom/oneplus/settings/better/OPAppModel;->setType(I)V
+
+    iget-object v5, v0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchShortCutFragment;->mContext:Landroid/content/Context;
+
+    invoke-static {v5, v6}, Lcom/oneplus/settings/utils/OPUtils;->getQuickPayIconByType(Landroid/content/Context;I)Landroid/graphics/drawable/Drawable;
+
+    move-result-object v5
+
+    invoke-virtual {v4, v5}, Lcom/oneplus/settings/better/OPAppModel;->setAppIcon(Landroid/graphics/drawable/Drawable;)V
+
+    iget-object v5, v0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchShortCutFragment;->mContext:Landroid/content/Context;
+
+    invoke-static {v5, v4}, Lcom/oneplus/settings/utils/OPUtils;->isInQuickLaunchList(Landroid/content/Context;Lcom/oneplus/settings/better/OPAppModel;)Z
+
+    move-result v5
+
+    invoke-virtual {v4, v5}, Lcom/oneplus/settings/better/OPAppModel;->setSelected(Z)V
+
+    new-instance v5, Lcom/oneplus/settings/better/OPAppModel;
+
+    iget-object v6, v0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchShortCutFragment;->mPayWaysName:[Ljava/lang/String;
+
+    aget-object v13, v6, v3
+
+    invoke-static {v10}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
+
+    move-result-object v14
+
+    const-string v12, "com.tencent.mm"
+
+    move-object v11, v5
+
+    invoke-direct/range {v11 .. v16}, Lcom/oneplus/settings/better/OPAppModel;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IZ)V
+
+    invoke-virtual {v5, v2}, Lcom/oneplus/settings/better/OPAppModel;->setType(I)V
+
+    iget-object v6, v0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchShortCutFragment;->mContext:Landroid/content/Context;
+
+    invoke-static {v6, v10}, Lcom/oneplus/settings/utils/OPUtils;->getQuickMiniProgrameconByType(Landroid/content/Context;I)Landroid/graphics/drawable/Drawable;
+
+    move-result-object v6
+
+    invoke-virtual {v5, v6}, Lcom/oneplus/settings/better/OPAppModel;->setAppIcon(Landroid/graphics/drawable/Drawable;)V
+
+    iget-object v6, v0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchShortCutFragment;->mContext:Landroid/content/Context;
+
+    invoke-static {v6, v5}, Lcom/oneplus/settings/utils/OPUtils;->isInQuickLaunchList(Landroid/content/Context;Lcom/oneplus/settings/better/OPAppModel;)Z
+
+    move-result v6
+
+    invoke-virtual {v5, v6}, Lcom/oneplus/settings/better/OPAppModel;->setSelected(Z)V
+
+    iget-object v6, v0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchShortCutFragment;->mDefaultpayAppList:Ljava/util/List;
+
+    invoke-interface {v6, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    iget-object v6, v0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchShortCutFragment;->mDefaultpayAppList:Ljava/util/List;
+
+    invoke-interface {v6, v4}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    invoke-static {}, Lcom/oneplus/settings/utils/OPUtils;->isO2()Z
+
+    move-result v6
+
+    if-nez v6, :cond_0
+
+    iget-object v6, v0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchShortCutFragment;->mDefaultpayAppList:Ljava/util/List;
+
+    invoke-interface {v6, v5}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    :cond_0
+    iget-object v1, v0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchShortCutFragment;->mContext:Landroid/content/Context;
+
+    const-string v4, "com.eg.android.AlipayGphone"
+
+    invoke-static {v1, v4}, Lcom/oneplus/settings/utils/OPUtils;->isAppExist(Landroid/content/Context;Ljava/lang/String;)Z
+
+    move-result v1
+
+    const/4 v4, 0x4
+
+    if-eqz v1, :cond_1
+
+    new-instance v1, Lcom/oneplus/settings/better/OPAppModel;
+
+    iget-object v5, v0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchShortCutFragment;->mPayWaysName:[Ljava/lang/String;
+
+    aget-object v7, v5, v2
+
+    invoke-static {v3}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
+
+    move-result-object v8
+
+    const/4 v9, 0x0
+
+    const/4 v10, 0x0
+
+    const-string v6, "com.eg.android.AlipayGphone"
+
+    move-object v5, v1
+
+    invoke-direct/range {v5 .. v10}, Lcom/oneplus/settings/better/OPAppModel;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IZ)V
+
+    invoke-virtual {v1, v3}, Lcom/oneplus/settings/better/OPAppModel;->setType(I)V
+
+    iget-object v5, v0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchShortCutFragment;->mContext:Landroid/content/Context;
+
+    invoke-static {v5, v3}, Lcom/oneplus/settings/utils/OPUtils;->getQuickPayIconByType(Landroid/content/Context;I)Landroid/graphics/drawable/Drawable;
+
+    move-result-object v5
+
+    invoke-virtual {v1, v5}, Lcom/oneplus/settings/better/OPAppModel;->setAppIcon(Landroid/graphics/drawable/Drawable;)V
+
+    iget-object v5, v0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchShortCutFragment;->mContext:Landroid/content/Context;
+
+    invoke-static {v5, v1}, Lcom/oneplus/settings/utils/OPUtils;->isInQuickLaunchList(Landroid/content/Context;Lcom/oneplus/settings/better/OPAppModel;)Z
+
+    move-result v5
+
+    invoke-virtual {v1, v5}, Lcom/oneplus/settings/better/OPAppModel;->setSelected(Z)V
+
+    new-instance v5, Lcom/oneplus/settings/better/OPAppModel;
+
+    iget-object v6, v0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchShortCutFragment;->mPayWaysName:[Ljava/lang/String;
+
+    aget-object v8, v6, v4
+
+    invoke-static {v2}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
+
+    move-result-object v9
+
+    const/4 v11, 0x0
+
+    const-string v7, "com.eg.android.AlipayGphone"
+
+    move-object v6, v5
+
+    invoke-direct/range {v6 .. v11}, Lcom/oneplus/settings/better/OPAppModel;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IZ)V
+
+    invoke-virtual {v5, v3}, Lcom/oneplus/settings/better/OPAppModel;->setType(I)V
+
+    iget-object v6, v0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchShortCutFragment;->mContext:Landroid/content/Context;
+
+    invoke-static {v6, v2}, Lcom/oneplus/settings/utils/OPUtils;->getQuickPayIconByType(Landroid/content/Context;I)Landroid/graphics/drawable/Drawable;
+
+    move-result-object v2
+
+    invoke-virtual {v5, v2}, Lcom/oneplus/settings/better/OPAppModel;->setAppIcon(Landroid/graphics/drawable/Drawable;)V
+
+    iget-object v2, v0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchShortCutFragment;->mContext:Landroid/content/Context;
+
+    invoke-static {v2, v5}, Lcom/oneplus/settings/utils/OPUtils;->isInQuickLaunchList(Landroid/content/Context;Lcom/oneplus/settings/better/OPAppModel;)Z
+
+    move-result v2
+
+    invoke-virtual {v5, v2}, Lcom/oneplus/settings/better/OPAppModel;->setSelected(Z)V
+
+    iget-object v2, v0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchShortCutFragment;->mDefaultpayAppList:Ljava/util/List;
+
+    invoke-interface {v2, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    iget-object v2, v0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchShortCutFragment;->mDefaultpayAppList:Ljava/util/List;
+
+    invoke-interface {v2, v5}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    :cond_1
+    iget-object v1, v0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchShortCutFragment;->mContext:Landroid/content/Context;
+
+    const-string v2, "net.one97.paytm"
+
+    invoke-static {v1, v2}, Lcom/oneplus/settings/utils/OPUtils;->isAppExist(Landroid/content/Context;Ljava/lang/String;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_2
+
+    new-instance v1, Lcom/oneplus/settings/better/OPAppModel;
+
+    iget-object v5, v0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchShortCutFragment;->mPayWaysName:[Ljava/lang/String;
+
+    const/4 v6, 0x5
+
+    aget-object v7, v5, v6
+
+    invoke-static {v4}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
+
+    move-result-object v8
+
+    const/4 v9, 0x0
+
+    const/4 v10, 0x0
+
+    const-string v6, "net.one97.paytm"
+
+    move-object v5, v1
+
+    invoke-direct/range {v5 .. v10}, Lcom/oneplus/settings/better/OPAppModel;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IZ)V
+
+    invoke-virtual {v1, v3}, Lcom/oneplus/settings/better/OPAppModel;->setType(I)V
+
+    iget-object v3, v0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchShortCutFragment;->mContext:Landroid/content/Context;
+
+    invoke-static {v3, v2}, Lcom/oneplus/settings/utils/OPUtils;->getAppIcon(Landroid/content/Context;Ljava/lang/String;)Landroid/graphics/drawable/Drawable;
+
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, Lcom/oneplus/settings/better/OPAppModel;->setAppIcon(Landroid/graphics/drawable/Drawable;)V
+
+    iget-object v2, v0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchShortCutFragment;->mContext:Landroid/content/Context;
+
+    invoke-static {v2, v1}, Lcom/oneplus/settings/utils/OPUtils;->isInQuickLaunchList(Landroid/content/Context;Lcom/oneplus/settings/better/OPAppModel;)Z
+
+    move-result v2
+
+    invoke-virtual {v1, v2}, Lcom/oneplus/settings/better/OPAppModel;->setSelected(Z)V
+
+    iget-object v2, v0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchShortCutFragment;->mDefaultpayAppList:Ljava/util/List;
+
+    invoke-interface {v2, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     :cond_2
-    iget-object v0, p0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchShortCutFragment;->mDefaultpayAppList:Ljava/util/List;
+    iget-object v1, v0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchShortCutFragment;->mDefaultpayAppList:Ljava/util/List;
 
-    return-object v0
+    return-object v1
 .end method
 
 .method private initViews(Landroid/view/View;)V
     .locals 3
 
-    const v0, 0x7f0a0485
+    const v0, 0x7f0a0482
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -458,7 +510,7 @@
 
     invoke-virtual {v0, p0}, Landroid/widget/ListView;->setOnItemClickListener(Landroid/widget/AdapterView$OnItemClickListener;)V
 
-    const v0, 0x7f0a03a6
+    const v0, 0x7f0a03ab
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -466,7 +518,7 @@
 
     iput-object v0, p0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchShortCutFragment;->mLoadingContainer:Landroid/view/View;
 
-    const v0, 0x7f0a048f
+    const v0, 0x7f0a048c
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -604,7 +656,7 @@
 
     iget-object v1, p0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchShortCutFragment;->mContext:Landroid/content/Context;
 
-    const v2, 0x7f120d9f
+    const v2, 0x7f120e06
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -657,14 +709,28 @@
 
     move-result-object v3
 
+    goto :goto_0
+
     :cond_1
-    if-eqz v0, :cond_2
+    invoke-static {v1}, Lcom/oneplus/settings/utils/OPUtils;->isWeChatMiniProgrameModel(Lcom/oneplus/settings/better/OPAppModel;)Z
+
+    move-result v4
+
+    if-eqz v4, :cond_2
+
+    invoke-static {v1}, Lcom/oneplus/settings/utils/OPUtils;->getQuickMiniProgrameString(Lcom/oneplus/settings/better/OPAppModel;)Ljava/lang/String;
+
+    move-result-object v3
+
+    :cond_2
+    :goto_0
+    if-eqz v0, :cond_3
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    goto :goto_0
+    goto :goto_1
 
-    :cond_2
+    :cond_3
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->indexOf(Ljava/lang/String;)I
 
     move-result v4
@@ -677,7 +743,7 @@
 
     invoke-virtual {v2, v4, v5}, Ljava/lang/StringBuilder;->delete(II)Ljava/lang/StringBuilder;
 
-    :goto_0
+    :goto_1
     iget-object v4, p0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchShortCutFragment;->mContext:Landroid/content/Context;
 
     invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;

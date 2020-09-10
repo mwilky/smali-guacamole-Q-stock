@@ -141,7 +141,7 @@
 
     if-eqz v0, :cond_0
 
-    const v0, 0x7f120bfb
+    const v0, 0x7f120c46
 
     invoke-virtual {p0, v0}, Lcom/oneplus/settings/carcharger/OPCarChargerSettings;->getString(I)Ljava/lang/String;
 
@@ -152,7 +152,7 @@
     goto :goto_0
 
     :cond_0
-    const v0, 0x7f120bfa
+    const v0, 0x7f120c45
 
     invoke-virtual {p0, v0}, Lcom/oneplus/settings/carcharger/OPCarChargerSettings;->getString(I)Ljava/lang/String;
 

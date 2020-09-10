@@ -371,7 +371,7 @@
 
     iget-object v1, p0, Lcom/android/settings/wifi/savedaccesspoints/SavedAccessPointsPreferenceController;->mPreferenceGroup:Landroidx/preference/PreferenceGroup;
 
-    const v4, 0x7f0d025b
+    const v4, 0x7f0d025c
 
     invoke-virtual {v1, v4}, Landroidx/preference/PreferenceGroup;->setLayoutResource(I)V
 

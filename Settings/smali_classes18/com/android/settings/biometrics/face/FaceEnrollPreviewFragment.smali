@@ -528,7 +528,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0a06d1
+    const v1, 0x7f0a06d2
 
     invoke-virtual {v0, v1}, Landroidx/fragment/app/FragmentActivity;->findViewById(I)Landroid/view/View;
 

@@ -73,7 +73,7 @@
 
     iget-object v2, p0, Lcom/android/settings/development/autofill/AutofillResetOptionsPreferenceController;->mContext:Landroid/content/Context;
 
-    const v3, 0x7f1201f6
+    const v3, 0x7f120206
 
     invoke-static {v2, v3, v1}, Landroid/widget/Toast;->makeText(Landroid/content/Context;II)Landroid/widget/Toast;
 

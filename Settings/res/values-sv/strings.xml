@@ -256,13 +256,23 @@ Administratören kan övervaka och hantera inställningar, åtkomst, appar och d
     <string name="advanced_apps">Avancerat</string>
     <string name="advanced_battery_graph_subtext">Uppskattad återstående batteritid baseras på enhetsanvändningen</string>
     <string name="advanced_battery_title">Batteriförbrukning</string>
+    <string name="advanced_calling_summary">HD-röst, videosamtal</string>
+    <string name="advanced_calling_title">Avancerade samtal</string>
     <string name="advanced_reboot_summary">När den är upplåst kommer omstart att erbjuda alternativ att starta om normalt, till återställning eller snabb omstart</string>
     <string name="advanced_reboot_title">Avancerad omstart</string>
     <string name="advanced_section_header">Avancerat</string>
     <string name="advanced_security_title">Avancerat</string>
     <string name="advanced_settings">Avancerade inställningar</string>
     <string name="advanced_settings_summary">Aktivera fler inställningsalternativ</string>
+    <string name="advanced_wificall_summary">Använd Wi-Fi när mobilnätverket inte är tillgängligt</string>
     <string name="airplane_mode">Flygplansläge</string>
+    <string name="airplane_mode_description">Flygplansläge stänger av alla nätverksanslutningar, inklusive, samtal, textmeddelanden, internetåtkomst, Wi-Fi och Bluetooth.</string>
+    <string name="airplane_mode_enable_dialog_message">"När flygplansläget är aktiverat kan du inte använda internet, e-post eller andra appar som kräver en dataanslutning såvida du inte använder Wi-Fi.
+
+Vill du slå på flygplansläget?"</string>
+    <string name="airplane_mode_enable_dialog_message_wifi_volte">"När flygplansläget är aktiverat kan du inte använda internet, e-post, samtal via Wi-Fi eller andra appar som kräver en dataanslutning såvida du inte använder Wi-Fi.
+
+Vill du slå på flygplansläget?"</string>
     <string name="alarm_ringtone_title">Standardljud för alarm</string>
     <string name="alarm_template">kl. %1$s</string>
     <string name="alarm_template_far">på %1$s</string>
@@ -274,6 +284,7 @@ Administratören kan övervaka och hantera inställningar, åtkomst, appar och d
     <string name="alert_slider_silent_title">Tysta inställningar</string>
     <string name="alertslider_settings">Alert slider</string>
     <string name="alertslider_settings_soc_tri_state">Alert slider</string>
+    <string name="alertslider_settings_soc_tri_state_summary">Tyst, vibration, ring</string>
     <string name="all_volume_title">Volymer</string>
     <string name="allow">Tillåt</string>
     <string name="allow_bind_app_widget_activity_allow_bind">När du har skapat widgeten kan %1$s komma åt alla data som visas.</string>
@@ -314,19 +325,26 @@ Håll bara enheterna mot varandra (oftast baksida mot baksida) och tryck sedan p
     <string name="angle_enabled_app_set">ANGLE-kompatibel app: %1$s</string>
     <string name="animator_duration_scale_title">Längdskala för Animator</string>
     <string name="another_migration_already_in_progress">Det pågår redan en annan migrering.</string>
-    <string name="aod_clock_analog">Analog</string>
+    <string name="aod_clock_analog">Analog 1</string>
+    <string name="aod_clock_analog_1">Analog 2</string>
+    <string name="aod_clock_analog_2">Analog 3</string>
+    <string name="aod_clock_bold">Fetstil</string>
     <string name="aod_clock_default">Standard</string>
+    <string name="aod_clock_digital">Digital 1</string>
+    <string name="aod_clock_digital_1">Digital 2</string>
     <string name="aod_clock_mcl">McLaren</string>
-    <string name="aod_clock_minimalism">Minimalism</string>
+    <string name="aod_clock_minimalism">Minimalism 1</string>
+    <string name="aod_clock_minimalism_1">Minimalism 2</string>
     <string name="aod_clock_none">Ingen</string>
-    <string name="aod_clock_select_style_text">Välj klockstil</string>
+    <string name="aod_clock_select_style_text">Välj klockstilen</string>
+    <string name="aod_clock_text_clock">Text clock</string>
     <string name="aod_horizon_light_effect_1">Blå</string>
     <string name="aod_horizon_light_effect_2">Röd</string>
     <string name="aod_horizon_light_effect_3">Lila</string>
     <string name="aod_horizon_light_effect_4">Guldfärgad</string>
     <string name="aod_horizon_light_effect_5">McLaren</string>
     <string name="aod_horizon_light_select">VÄLJ FÄRG</string>
-    <string name="aod_horizon_light_snake_action">SLÅ PÅ</string>
+    <string name="aod_horizon_light_snake_action">SÄTT PÅ</string>
     <string name="aod_horizon_light_snake_tip">Den här funktionen är tillgänglig när ”Nya aviseringar” är på</string>
     <string name="apn_apn">APN</string>
     <string name="apn_auth_type">Autentiseringstyp</string>
@@ -408,7 +426,7 @@ Håll bara enheterna mot varandra (oftast baksida mot baksida) och tryck sedan p
     <string name="app_notifications_off_desc">På din begäran blockeras appens aviseringar av Android och visas inte på enheten</string>
     <string name="app_notifications_switch_label">Visa meddelanden</string>
     <string name="app_notifications_title">Appaviseringar</string>
-    <string name="app_ops_last_used_prefix_new">Senast använd</string>
+    <string name="app_ops_last_used_prefix_new">Senast använda</string>
     <string name="app_ops_never_used">(Har aldrig använts)</string>
     <string name="app_ops_never_used_new">Har aldrig använts</string>
     <string name="app_ops_running">Kör</string>
@@ -967,7 +985,7 @@ Val"</string>
     <string name="bugreport_in_power">Genväg till felrapport</string>
     <string name="bugreport_in_power_summary">Visa en knapp för felrapportering i extramenyn</string>
     <string name="build_number">Version</string>
-    <string name="built_in_app_updates_summary">Tillåt att OnePlus kontrollerar efter och pushar uppdateringar av inbyggda appar för att förbättra appstabiliteten</string>
+    <string name="built_in_app_updates_summary">Tillåt att OnePlus söker efter och pushar uppdateringar av inbyggda appar för att förbättra appstabiliteten</string>
     <string name="built_in_app_updates_title">Inbyggda appuppdateringar</string>
     <string name="builtin_keyboard_settings_summary">Inställningar för fysiskt tangentbord</string>
     <string name="builtin_keyboard_settings_title">Fysiskt tangentbord</string>
@@ -1065,6 +1083,7 @@ Val"</string>
     <string name="charge_length_format">för %1$s sedan</string>
     <string name="charging_sounds_title">Laddningsljud- och vibration</string>
     <string name="checkbox_notification_same_as_incoming_call">Använd volymen för inkommande samtal vid avisering</string>
+    <string name="checkbox_usb_tether_donot_show_again">Visa inte igen</string>
     <string name="checking_decryption">Kontrollerar …</string>
     <string name="choose_network_title">Välj nätverk</string>
     <string name="choose_profile">Välj profil</string>
@@ -1172,6 +1191,8 @@ Val"</string>
     <string name="connected_devices_dashboard_no_nfc_summary">Bluetooth, körläge</string>
     <string name="connected_devices_dashboard_summary">Bluetooth, körläge, NFC</string>
     <string name="connected_devices_dashboard_title">Anslutna enheter</string>
+    <string name="connected_to_the_verizon_network">Ansluten till Verizon-nätverket</string>
+    <string name="connected_to_the_verizon_network_but_data_connection_unavailable">Ansluten till Verizon-nätverket, men ingen dataanslutning är tillgänglig</string>
     <string name="connected_via_app">Anslutet via %1$s</string>
     <string name="connected_via_carrier">Anslutet via %1$s</string>
     <string name="connected_via_network_scorer">Automatiskt ansluten via %1$s</string>
@@ -1187,6 +1208,7 @@ Val"</string>
     <string name="contextual_card_feedback_send">Skicka feedback</string>
     <string name="contextual_card_removed_message">Förslaget har tagits bort</string>
     <string name="contextual_card_undo_dismissal_text">Ångra</string>
+    <string name="continue_anyway">Fortsätt ändå</string>
     <string name="contributors_title">Medarbetare</string>
     <string name="controls_label">Kontroller</string>
     <string name="controls_subtitle">Justera strömförbrukningen</string>
@@ -1318,6 +1340,7 @@ För vissa konton kopieras även alla ändringar som görs på mobilen automatis
     <string name="data_usage_cycle_editor_subtitle">Datum i varje månad:</string>
     <string name="data_usage_cycle_editor_title">Återställningsdag för användningscykel</string>
     <string name="data_usage_data_limit">Ange datagräns</string>
+    <string name="data_usage_description">Dataanvändningen mäts av din telefon. Din operatör kan mäta användning på annat sätt. Ställ in startdatumet så att det överensstämmer med perioden på din faktura.</string>
     <string name="data_usage_disable_3g_limit">Ange gräns för data via 2G-3G</string>
     <string name="data_usage_disable_4g_limit">Ange gräns för data via 4G</string>
     <string name="data_usage_disable_mobile">Vill du inaktivera mobildatan?</string>
@@ -1331,6 +1354,7 @@ För vissa konton kopieras även alla ändringar som görs på mobilen automatis
     <string name="data_usage_forground_label">Förgrund:</string>
     <string name="data_usage_label_background">Bakgrund</string>
     <string name="data_usage_label_foreground">Förgrund</string>
+    <string name="data_usage_less_than_value">Mindre än 0.01</string>
     <string name="data_usage_limit_dialog_mobile">"När mobildatan når den gräns du har angett inaktiveras den av mobilen.
 
 Vi föreslår att du anger en något lägre gräns eftersom dataanvändningen mäts med din mobil och din leverantör kan mäta användningen på ett annat sätt."</string>
@@ -1386,6 +1410,9 @@ Alla användare på den här mobilen påverkas av inställningen."</string>
     <string name="data_usage_total_during_range_mobile">%2$s: ca %1$s har använts enligt mobilens mätning. Resultatet kan skilja sig från operatörens beräkning av dataanvändningen.</string>
     <string name="data_usage_uninstalled_apps">Borttagna appar</string>
     <string name="data_usage_uninstalled_apps_users">Borttagna appar och användare</string>
+    <string name="data_usage_unit_gb">GB</string>
+    <string name="data_usage_unit_mb">MB</string>
+    <string name="data_usage_video_call_title">Videosamtal</string>
     <string name="data_usage_warning_editor_title">Ange varning för dataanvändning</string>
     <string name="data_usage_wifi_format">^1 används via Wi‑Fi</string>
     <string name="data_usage_wifi_title">Wi‑Fi-data</string>
@@ -1497,6 +1524,11 @@ Du kan testa att lösa problemet genom att stänga av %1$s och förhindra att de
 Lös problemet genom att inaktivera plats för appen."</string>
     <string name="dialog_location_ok">Inaktivera</string>
     <string name="dialog_location_title">Vill du inaktivera plats?</string>
+    <string name="dialog_mhs_error">Vänta tills verifieringen avslutas...</string>
+    <string name="dialog_open_network_cancel">avbryt</string>
+    <string name="dialog_open_network_connect">Anslut</string>
+    <string name="dialog_open_network_title">Du ansluter till det osäkrade (öppna) Wi-Fi-nätverket</string>
+    <string name="dialog_open_network_title_info">Information som skickas är inte krypterad och kan vara synlig för andra. Vill du fortfarande ansluta?</string>
     <string name="dialog_stop_message">"Batterihanteringen på mobilen fungerar inte som den ska eftersom %1$s håller mobilen aktiv.
 
 Du kan testa att lösa problemet genom att stänga av appen.
@@ -1509,6 +1541,11 @@ Du kan testa att lösa problemet genom att stänga av %1$s.
 Om problemet kvarstår kan det hända att du måste avinstallera appen för att förbättra batteritiden."</string>
     <string name="dialog_stop_ok">Stoppa appen</string>
     <string name="dialog_stop_title">Vill du stoppa appen?</string>
+    <string name="dialog_usb_tether_cancel">avbryt</string>
+    <string name="dialog_usb_tether_ok">ok</string>
+    <string name="dialog_usb_tether_title">USB-internetdelning och Wi-Fi kan inte vara på samtidigt. Vill du stänga av Wi-Fi?</string>
+    <string name="dialog_wrong_password">Wi-Fi-lösenordet accepterades inte. Kontrollera lösenordet och försök igen.</string>
+    <string name="dialog_wrong_password_ok">ok</string>
     <string name="direct_boot_unaware_dialog_message">Obs! Om du startar om mobilen och har ställt in ett skärmlås kan appen inte startas förrän du låser upp mobilen.</string>
     <string name="disable_doze_summary">Strömsparläge reducerar batterianänvändning genom skjuta upp bakgrunds-CPU och nätverksaktivitet för appar, när enheten inte används under långa perioder</string>
     <string name="disable_doze_title">Strömsparläge</string>
@@ -1612,6 +1649,21 @@ Om problemet kvarstår kan det hända att du måste avinstallera appen för att 
     <string name="dual_cdma_sim_warning_notification_channel_title">SIM-kombination</string>
     <string name="dual_cdma_sim_warning_notification_summary">Om du använder %1$s kan funktionerna begränsas. Tryck för att läsa mer.</string>
     <string name="eab_provisioned_switch_string">EAB/Presence tillhandahålls</string>
+    <string name="earphone_function_control_click_left">Dubbelklicka på den vänstra öronsnäckan</string>
+    <string name="earphone_function_control_click_right">Dubbelklicka på den högra öronsnäckan</string>
+    <string name="earphone_function_control_last_song">Föregående låt</string>
+    <string name="earphone_function_control_next_song">Nästa låt</string>
+    <string name="earphone_function_control_play_pause">Spela upp/pausa</string>
+    <string name="earphone_function_introduction">Funktionsbeskrivning</string>
+    <string name="earphone_function_listening_breeno">Röstassistent</string>
+    <string name="earphone_support_battery_dot">;</string>
+    <string name="earphone_support_battery_info_box">"OnePlus Buds Case:  %1$s"</string>
+    <string name="earphone_support_battery_info_left">L: %1$s</string>
+    <string name="earphone_support_battery_info_right">R: %1$s</string>
+    <string name="earphone_support_current_version">Aktuell version:</string>
+    <string name="earphone_support_update_ota">Uppdatera den inbyggda programvaran automatiskt</string>
+    <string name="earphone_support_wifi_data">Tillåt automatiska uppdateringar vid användning av mobildata</string>
+    <string name="earphone_usage_guide_complete">Klart</string>
     <string name="edge_to_edge_navigation_summary">Du öppnar startskärmen genom att svepa uppåt från skärmens nederkant, Byt app genom att svepa uppåt från nederkanten, hålla stilla och sedan släppa. Gå tillbaka genom att svepa från skärmens höger- eller vänsterkant.</string>
     <string name="edge_to_edge_navigation_title">Navigering med rörelser</string>
     <string name="emergency_address_summary">Används som din plats om du ringer nödsamtal via Wi‑Fi</string>
@@ -1755,6 +1807,7 @@ Kontakta organisationens administratör om du vill veta mer."</string>
     <string name="expand_button_title">Avancerat</string>
     <string name="experimental_category_title">Experimentella</string>
     <string name="experimental_preference">(experimentellt)</string>
+    <string name="extended_title">Nätverksförlängare</string>
     <string name="external_code_size_label">Data på USB-lagringsenhet</string>
     <string name="external_data_size_label">Data på USB-lagringsenhet</string>
     <string name="external_source_switch_title">Tillåt från den här källan</string>
@@ -1796,6 +1849,8 @@ Kontakta organisationens administratör om du vill veta mer."</string>
     <string name="filter_personal_apps">Personligt</string>
     <string name="filter_work_apps">Arbetet</string>
     <string name="filter_write_settings_apps">Kan ändra systeminställningar</string>
+    <string name="find_my_bluetooth_earphone">Hitta mina Buds</string>
+    <string name="find_my_bluetooth_earphone_summary">Spela upp ljud som hjälper mig hitta mina öronsnäckor om de är inom räckhåll eller visa den senaste plats där de befann sig utom räckhåll</string>
     <string name="fingerprint_add_fingerprint">Lägg till ett fingeravtryck</string>
     <string name="fingerprint_add_fingerprint_summary">Placera ditt finger på sensorn och lyft efter att du känner en vibration.</string>
     <string name="fingerprint_add_max">Du kan lägga till upp till %d fingeravtryck</string>
@@ -1805,7 +1860,7 @@ Kontakta organisationens administratör om du vill veta mer."</string>
     <string name="fingerprint_delete">Ta bort fingeravtrycket</string>
     <string name="fingerprint_delete_message">Vill du radera det här fingeravtrycket?</string>
     <string name="fingerprint_delete_summary">Vill du ta bort fingeravtrycket nu?</string>
-    <string name="fingerprint_delete_title">Ta bort</string>
+    <string name="fingerprint_delete_title">Radera</string>
     <string name="fingerprint_duplicated">Du har redan registrerat det här fingeravtrycket. Använd ett annat finger.</string>
     <string name="fingerprint_enable_keyguard_toggle_title">skärmlås</string>
     <string name="fingerprint_enroll_button_add">Lägg till ett till</string>
@@ -1968,6 +2023,11 @@ Du kan ändra detta senare under Inställningar > Appar och aviseringar."</strin
     <string name="homepage_all_settings">Alla inställningar</string>
     <string name="homepage_condition_footer_content_description">Komprimera</string>
     <string name="homepage_personal_settings">Förslag</string>
+    <string name="hotspot_tip_message" formatted="false">"Trådlös surfzon delar dina mobildata med andra Wi-Fi-aktiverade enheter. Så här ansluter du till din trådlösa surfzon: \u0009
+1: Alå på Wi-Fi på den andra enheten.
+2: Välj %s i listan över tillgängliga Wi-Fi-nätverk. 
+3: Om ett lösenord krävs, ange %s För att spara batteritid kan du ha telefonen inkopplad när du använder trådlös surfzon. "</string>
+    <string name="hotspot_tip_title">Trådlös surfzon</string>
     <string name="hwui_force_dark_summary">Åsidosätter funktionen som tvingar mörkt läge att alltid vara aktiverat</string>
     <string name="hwui_force_dark_title">Åsidosätter tvingat mörkt läge</string>
     <string name="icon_attributions">Ikonpaket</string>
@@ -2040,7 +2100,7 @@ Du kan ändra detta senare under Inställningar > Appar och aviseringar."</strin
     <string name="keyboard_settings_title">Android-tangentbordet</string>
     <string name="keyboard_shortcuts_helper">Hjälp med kortkommandon</string>
     <string name="keyboard_shortcuts_helper_summary">Visa tillgängliga genvägar</string>
-    <string name="keyguard_wallpaper_settings_title">Låsskärmsbakgrund</string>
+    <string name="keyguard_wallpaper_settings_title">Låsskärmens bakgrund</string>
     <string name="keywords_accounts">konto</string>
     <string name="keywords_add_an_account">jobbprofil</string>
     <string name="keywords_all_apps">appar, ladda ned, appar, system</string>
@@ -2144,6 +2204,8 @@ Du kan ändra detta senare under Inställningar > Appar och aviseringar."</strin
     <string name="language_picker_title">Språk</string>
     <string name="language_picker_title_o2">Språk (land/region)</string>
     <string name="language_settings">Språk och inmatning</string>
+    <string name="last_factory_reset">Senaste fabriksåterställning</string>
+    <string name="last_factory_reset_none">Ingen</string>
     <string name="last_synced">Synkroniserades senast %1$s</string>
     <string name="last_time_used_label">Användes senast</string>
     <string name="launch_by_default">Öppna som standard</string>
@@ -2407,6 +2469,7 @@ Du kan ändra detta senare under Inställningar > Appar och aviseringar."</strin
     <string name="lockscreen_remote_input">Gör aviseringar skrivskyddade när enheten är låst så att det inte går att skriva svar eller liknande</string>
     <string name="lockscreen_settings_title">Visning på låsskärm</string>
     <string name="lockscreen_settings_what_to_show_category">Vad som ska visas</string>
+    <string name="long_press_power_button">Håll strömbrytaren nedtryckt</string>
     <string name="lost_internet_access_cancel">Fortsätt på Wi‑Fi</string>
     <string name="lost_internet_access_persist">Visa aldrig igen</string>
     <string name="lost_internet_access_switch">Växla till mobilnätverk</string>
@@ -2542,7 +2605,10 @@ Det finns andra användare på enheten.
     <string name="menu_stats_refresh">Uppdatera</string>
     <string name="menu_stats_total">Total förbrukning</string>
     <string name="menu_stats_unplugged">%1$s sedan bortkoppling</string>
+    <string name="menu_uninstallapps">Avinstallera</string>
     <string name="menu_use_uss">Använd USS</string>
+    <string name="mhs_app">Öppna My Verizon</string>
+    <string name="mhs_call_back_error">Dataanslutningen är inte tillgänglig.</string>
     <string name="misc_files">Misc-filer</string>
     <string name="misc_files_selected_count">%1$d av %2$d har valts</string>
     <string name="misc_files_selected_count_bytes">%1$s av %2$s</string>
@@ -2558,6 +2624,11 @@ Det finns andra användare på enheten.
     <string name="mobile_data_settings_summary_auto_switch">Mobilen byter automatiskt till den här operatören när den är inom räckvidd</string>
     <string name="mobile_data_settings_title">Mobildata</string>
     <string name="mobile_data_usage_title">Appars dataanvändning</string>
+    <string name="mobile_hotspot_airplane_off_error">Stäng av flygplansläge för att sätta på trådlös surfzon</string>
+    <string name="mobile_hotspot_authoration_error">"För att använda trådlös surfzon måste du prenumerera på tjänster för trådlös surfzon.
+
+Besök My Verizon eller ring kundtjänst på (800) 922–0204 för att prenumerera på trådlös surfzon."</string>
+    <string name="mobile_hotspot_data_off_error">Sätt på mobildata för att sätta på trådlös surfzon</string>
     <string name="mobile_insert_sim_card">För in SIM-kortet och starta om</string>
     <string name="mobile_network_active_esim">Aktiva/nedladdade SIM-kort</string>
     <string name="mobile_network_active_sim">Aktiva/SIM-kort</string>
@@ -2695,6 +2766,8 @@ Om du byter till %1$s avslutas inte tjänsten hos %2$s."</string>
     <string name="nfc_quick_toggle_title">NFC</string>
     <string name="nfc_secure_settings_title">Säker NFC</string>
     <string name="nfc_secure_toggle_summary">Tillåt endast betalningar och överföringar via NFC när skärmen är upplåst</string>
+    <string name="nfc_uicc_sim1">SIM 1</string>
+    <string name="nfc_uicc_sim2">SIM 2</string>
     <string name="night_display_activation_off_custom">Inaktivera till %1$s</string>
     <string name="night_display_activation_off_manual">Inaktivera nu</string>
     <string name="night_display_activation_off_twilight">Inaktivera till solnedgången</string>
@@ -2738,6 +2811,7 @@ Om du byter till %1$s avslutas inte tjänsten hos %2$s."</string>
     <string name="no_internet_access_text">Nätverket är inte anslutet till internet. Vill du fortsätta använda nätverket?</string>
     <string name="no_memory_use_summary">Inget minne har använts de senaste 3 timmarna</string>
     <string name="no_network">Ingen nätverkstjänst</string>
+    <string name="no_network_extenders">Inga nätverksförlängare</string>
     <string name="no_notification_assistant">Inga</string>
     <string name="no_notification_listeners">Inga installerade appar har begärt åtkomst till aviseringar</string>
     <string name="no_running_services">Inget körs.</string>
@@ -2748,6 +2822,7 @@ Om du byter till %1$s avslutas inte tjänsten hos %2$s."</string>
     <string name="no_vr_listeners">Inga installerade appar har begärt att få köras som hjälptjänster för VR.</string>
     <string name="not_allowed">Ditt SIM-kort tillåter inte anslutning till detta nätverk.</string>
     <string name="not_battery_optimizing">Batterioptimering används inte</string>
+    <string name="not_connected_to_the_verizon_network">Inte ansluten till Verizon-nätverket</string>
     <string name="not_installed">Ej installerad för användaren</string>
     <string name="not_optimize_summery">Kan påverka batteriets prestanda</string>
     <string name="not_optimized_apps">Ej optimerade appar</string>
@@ -2893,6 +2968,7 @@ Appen kan också aktivera eller inaktivera Stör ej och ändra relaterade instä
     <string name="oneplus_aod_smart_display_calendar_event">Kalenderhändelse</string>
     <string name="oneplus_aod_smart_display_music_info">Ljudspelare</string>
     <string name="oneplus_aod_smart_display_title">Sammanhangsinformation</string>
+    <string name="oneplus_ap_chanel">AP-kanal</string>
     <string name="oneplus_app_alipay">Alipay</string>
     <string name="oneplus_app_display_compatibility">Kompatibilitetsläge</string>
     <string name="oneplus_app_display_fullscreen">Helskärmsläge</string>
@@ -2949,6 +3025,9 @@ Appen kan också aktivera eller inaktivera Stör ej och ändra relaterade instä
 
 Batteribesparing stängs av automatiskt när enheten laddar."</string>
     <string name="oneplus_battery_saver_summary">Funktionen kanske inte fungerar för vissa spel</string>
+    <string name="oneplus_bed_time_mode_summary">Använda OnePlus Warp Wireless Charger tyst</string>
+    <string name="oneplus_bed_time_mode_title">Sovtidsläge</string>
+    <string name="oneplus_bed_time_mode_wall_text">När ljudnivån på OnePlus Warp Wireless Charger sänks, saktas även laddningshastigheten ner. Telefonen måste placeras på laddaren för att kunna gå in i läggdagsläget.</string>
     <string name="oneplus_bg_data_condition_turn_off">SLÅ AV DATASPARARE</string>
     <string name="oneplus_black_screen_gestures_settings_title">Gester för skärm av</string>
     <string name="oneplus_block_all_notifications">Blockera alla meddelanden</string>
@@ -2999,11 +3078,12 @@ Batteribesparing stängs av automatiskt när enheten laddar."</string>
     <string name="oneplus_condition_night_mode_turn_off">SLÅ AV NATTLÄGE</string>
     <string name="oneplus_condition_ota_summary">Ny version detekterad för uppdatering</string>
     <string name="oneplus_connected_device_count">Det finns %1$s enhet ansluten</string>
-    <string name="oneplus_connected_device_management_title">Enhetshanteraren är ansluten</string>
+    <string name="oneplus_connected_device_management_title">Ansluten enhetshanterare</string>
     <string name="oneplus_connected_devices_count">Det finns %1$s enheter anslutna</string>
     <string name="oneplus_connected_devices_dashboard_summary">NFC, sändning, utskrift</string>
     <string name="oneplus_connected_devices_dashboard_title">Bluetooth- och enhetsanslutning</string>
     <string name="oneplus_cpu">PROCESSOR</string>
+    <string name="oneplus_custom_drop_title">Vill du bortse från ändringarna？</string>
     <string name="oneplus_custom_time">Anpassa tidsintervall</string>
     <string name="oneplus_customization">Anpassning av navigeringsfältet</string>
     <string name="oneplus_customization_summary">Långt tryck, dubbeltryck</string>
@@ -3045,13 +3125,15 @@ Batteribesparing stängs av automatiskt när enheten laddar."</string>
     <string name="oneplus_do_not_disturb_answer_call_by_speaker_summary">Dirigera inkommande samtal till högtalaren när spelläget är aktiverat</string>
     <string name="oneplus_do_not_disturb_answer_call_by_speaker_title">Svara på samtal i högtalaren</string>
     <string name="oneplus_do_not_disturb_settings">Inställningar</string>
-    <string name="oneplus_donot_silence_or_block">Tillåt meddelanden</string>
+    <string name="oneplus_donot_silence_or_block">Tillåt aviseringar</string>
     <string name="oneplus_donot_silence_or_block_summary">Tillåt alla typer av aviseringar</string>
     <string name="oneplus_double_tap_power_gesture">Dubbelklicka på strömknappen för</string>
     <string name="oneplus_double_tap_power_gesture_app">VÄLJ FUNKTION</string>
     <string name="oneplus_double_tap_power_gesture_camera">Kamera</string>
     <string name="oneplus_double_tap_power_gesture_wallet">Svepa kort (Plånbok)</string>
+    <string name="oneplus_double_tap_power_none">Ingen</string>
     <string name="oneplus_doze_summary_801">Visa klockan och annan information på skärmen för vänteläge</string>
+    <string name="oneplus_doze_summary_new">Visa tid, datum och aviseringar på skärmen</string>
     <string name="oneplus_doze_title">Aktiv låsskärm</string>
     <string name="oneplus_doze_title_801">Omgivande display</string>
     <string name="oneplus_draw_gesture_start_none">Ingen</string>
@@ -3141,7 +3223,7 @@ Var försiktig: Ansiktsupplåsning är mindre säkert än fingeravtryck och lös
     <string name="oneplus_fixed_navigation_bar_o2">Tillbaka, hem, senaste</string>
     <string name="oneplus_fixed_navigation_bar_title">Fast navigeringsfält</string>
     <string name="oneplus_floating_keyboard">Flytande tangentbord</string>
-    <string name="oneplus_fnatic_mode_add_to_wallpapers">Lägga till i bakgrundsbilder</string>
+    <string name="oneplus_fnatic_mode_add_to_wallpapers">Lägg till i bakgrundsbilder</string>
     <string name="oneplus_fnatic_mode_background_introduction_summary">Fokusera prestanda nästan helt mot spelandet. Detta kan resultera i glapp i vissa appar.</string>
     <string name="oneplus_fnatic_mode_background_introduction_title">Förbättra processregulatorn</string>
     <string name="oneplus_fnatic_mode_disturb_introduction_summary">Blockera alla meddelanden och samtal (med undantag för meddelande om låg batterinivå, alarm och timer). Missade samtal kanske inte sparas i samtalsloggar.</string>
@@ -3162,6 +3244,9 @@ Var försiktig: Ansiktsupplåsning är mindre säkert än fingeravtryck och lös
     <string name="oneplus_force_factory_reset_summary">Lösenord för autostart har aktiverats. Intern lagring kommer att raderas</string>
     <string name="oneplus_forum_award_summary">Denna gemenskap är er. Bara ni kan definiera vår väg. Tillsammans definierar och förfinar vi den. Bryta vägen och skriva koder. Detta är för dig. Tack för att du drömmer med oss!</string>
     <string name="oneplus_forum_award_title">Pris</string>
+    <string name="oneplus_front_camera_app_display_fullscreen_summary">Om appens innehåll döljs av den främre kamerans visningsområde ska du växla till standardläget</string>
+    <string name="oneplus_front_camera_display_choose_title">Välj om du vill dölja den främre kameran</string>
+    <string name="oneplus_front_camera_display_title">Främre kamerans visningsområde</string>
     <string name="oneplus_fullscreen_back_guide_summary">Svep inåt från vänster eller höger nedre kant på skärmen</string>
     <string name="oneplus_fullscreen_back_guide_summary_deprecated">Svep upp från vänster eller höger sida på botten av skärmen</string>
     <string name="oneplus_fullscreen_back_guide_title">Bakåt</string>
@@ -3233,11 +3318,15 @@ Svep uppåt från botten av skärmen för att gå till startsidan."</string>
     <string name="oneplus_gestures_fast_entrance">Genvägar</string>
     <string name="oneplus_gestures_open_apps">Öppna applikationer</string>
     <string name="oneplus_gestures_open_camera">Öppna kameran</string>
-    <string name="oneplus_gestures_open_flashlight">Slå på/av ficklampan</string>
+    <string name="oneplus_gestures_open_flashlight">Slå på/av ficklampa</string>
     <string name="oneplus_gestures_open_front_camera">Öppna främre kameran</string>
     <string name="oneplus_gestures_open_shelf">Öppna Shelf</string>
     <string name="oneplus_gestures_take_video">Spela in en video</string>
     <string name="oneplus_getlog_title">Hämta loggar</string>
+    <string name="oneplus_global_dark_mode_description">Gör att appar som inte har stöd för mörkt tema också visas med mörk ton. Vissa appar kanske inte fungerar som väntat, och du kan inaktivera dem i listan nedan.</string>
+    <string name="oneplus_global_dark_mode_only_valid_in_dark_mode">Den här funktionen är endast tillgänglig under mörk ton</string>
+    <string name="oneplus_global_dark_mode_summary">Gör att fler appar som inte anpassas till mörkt läge automatiskt blir mörka när mörk ton är aktiverad</string>
+    <string name="oneplus_global_dark_mode_title">Aktivera mörk ton i fler appar</string>
     <string name="oneplus_google_tts">Google TTS-röstdata</string>
     <string name="oneplus_gps_using">använder GPS</string>
     <string name="oneplus_h2_contributors">HydrogenOS-bidragsgivare</string>
@@ -3253,6 +3342,8 @@ Svep uppåt från botten av skärmen för att gå till startsidan."</string>
     <string name="oneplus_hardware_keys_action_split_screen">Öppna/stäng delad skärm</string>
     <string name="oneplus_health_safety_information">Hälso- och säkerhetsinformation</string>
     <string name="oneplus_hearing_aid">Kompatibilitet med hörapparat</string>
+    <string name="oneplus_hide_front_camera_display_summary">Inget innehåll kan visas i det här området</string>
+    <string name="oneplus_hide_front_camera_display_title">Dölj den främre kameran</string>
     <string name="oneplus_hide_navigation_bar">Dölja navigeringsfältet</string>
     <string name="oneplus_hide_navkeys">Dölj navigeringsfältet</string>
     <string name="oneplus_hide_navkeys_summary">Lägg till en knapp för att dölja eller visa navigeringsfältet</string>
@@ -3311,6 +3402,22 @@ Obs! Ditt fingeravtryck kan vara mindre säkert än ett starkt mönster eller en
     <string name="oneplus_lockscreen_settings_title">Preferenser för låsskärm</string>
     <string name="oneplus_max_shortcuts_tips">Du kan lägga till upp till 6 genvägar</string>
     <string name="oneplus_media_ring_summary">Stäng av mediavolym</string>
+    <string name="oneplus_memc_close">Av</string>
+    <string name="oneplus_memc_game">Kompensation för spelrörelser</string>
+    <string name="oneplus_memc_game_summary">Du måste växla upplösning till FHD+ för att slå på kompensation för spelrörelser</string>
+    <string name="oneplus_memc_more_support_apps">Fler appar som stöds</string>
+    <string name="oneplus_memc_notice">I detta läge höjs hastigheten för videobildfrekvensen, vilket minskar suddighet vid rörelser och gör grafiken tydligare och smidigare. Fungerar endast under helskärmsuppspelning.</string>
+    <string name="oneplus_memc_open">På</string>
+    <string name="oneplus_memc_support_apps">Appar som stöds</string>
+    <string name="oneplus_memc_support_no_apps">Det finns inga appar som stöds installerade</string>
+    <string name="oneplus_memc_video">Utjämning av rörelsegrafik</string>
+    <string name="oneplus_memc_video_effect">Kompensationseffekt</string>
+    <string name="oneplus_memc_video_extreme">Extremt</string>
+    <string name="oneplus_memc_video_nosupport_extreme_summary">Du måste växla upplösning till FHD+ för att slå på extrem</string>
+    <string name="oneplus_memc_video_nosupport_extreme_text">Växlar till QHD+ upplösning. Kompensation för rörelsegrafik är begränsad.</string>
+    <string name="oneplus_memc_video_smooth">Ljuv</string>
+    <string name="oneplus_memc_video_theacme_summary">Videobildfrekvensen höjs till 120 fps för extremt smidig grafik, vilket kan orsaka högre strömförbrukning. QHD+ upplösning stöds tillfälligt inte.</string>
+    <string name="oneplus_memc_video_theacme_title">Hyperrörelseutjämning</string>
     <string name="oneplus_mobile_device_name_title">Telefonnamn</string>
     <string name="oneplus_mode_choose">Välja läge</string>
     <string name="oneplus_mode_settings">Inställningar för växlingsknapp</string>
@@ -3382,7 +3489,7 @@ Obs! Ditt fingeravtryck kan vara mindre säkert än ett starkt mönster eller en
     <string name="oneplus_notification_silence_title">Annan</string>
     <string name="oneplus_notification_sound_default">Standardmeddelanden</string>
     <string name="oneplus_notification_ways">Visningsläge</string>
-    <string name="oneplus_notification_ways_title">Så visar du aviseringar</string>
+    <string name="oneplus_notification_ways_title">Så här visar du aviseringar</string>
     <string name="oneplus_notifications">Meddelanden</string>
     <string name="oneplus_notifications_3rd_calls">Aviseringar för samtal från tredje part</string>
     <string name="oneplus_notifications_3rd_calls_summary">Röst- eller videosamtal från sociala appar visas som aviseringar</string>
@@ -3390,6 +3497,10 @@ Obs! Ditt fingeravtryck kan vara mindre säkert än ett starkt mönster eller en
     <string name="oneplus_notifications_free">Gratis</string>
     <string name="oneplus_notifications_meet">Träffa</string>
     <string name="oneplus_o2_contributors">OxygenOS-bidragsgivare</string>
+    <string name="oneplus_open_bed_time_mode_schedule_summary">Slå på vid ett anpassat tidsintervall</string>
+    <string name="oneplus_open_bed_time_mode_schedule_title">Schemalägg</string>
+    <string name="oneplus_open_bed_time_mode_summary">Du kan slå på sovtidsläget manuellt</string>
+    <string name="oneplus_open_bed_time_mode_title">Sovtidsläge</string>
     <string name="oneplus_opfinger_input_completed_comfirm">Bekräfta</string>
     <string name="oneplus_opfinger_input_completed_sub">Installation av fingeravtrycket har slutförts. Tryck på \"bekräfta\" för att fortsätta</string>
     <string name="oneplus_opfinger_input_completed_title">Registreringen har slutförts</string>
@@ -3433,6 +3544,7 @@ Obs! Ditt fingeravtryck kan vara mindre säkert än ett starkt mönster eller en
     <string name="oneplus_preference_settings_turn_on_time">Från</string>
     <string name="oneplus_prior_to_use_you_need_to">Före användning måste du :</string>
     <string name="oneplus_privacy_policy">Sekretesspolicy</string>
+    <string name="oneplus_privacy_protection_title">Krypterat utrymme</string>
     <string name="oneplus_product_info_introduce">Information om enheten &amp; garantikort</string>
     <string name="oneplus_product_info_summary">Garantikort, förinstallerad lista</string>
     <string name="oneplus_proximity_summary_disable">Otillgängligt eftersom omgivningsskärm är avstängd</string>
@@ -3470,6 +3582,7 @@ Obs! Ditt fingeravtryck kan vara mindre säkert än ett starkt mönster eller en
     <string name="oneplus_quickpay_way_alipay_scanning">Alipay-skanning</string>
     <string name="oneplus_quickpay_way_paytm">Paytm</string>
     <string name="oneplus_quickpay_way_wecaht_qrcode">QR-kod för WeChat</string>
+    <string name="oneplus_quickpay_way_wecaht_ridecode">QR-kod för transport genom WeChat</string>
     <string name="oneplus_quickpay_way_wecaht_scanning">WeChat-skanning</string>
     <string name="oneplus_ramboost_description">Genom att lära dig hur du använder din telefon kan RAM-förstärkning förutsäga appar som du vill ska köras och data som ska läsas in, genom att använda RAM-kapaciteten helt för att göra prestandan för daglig användning snabbare.</string>
     <string name="oneplus_ramboost_switch_summary">Öka RAM-användning i enlighet med din användning</string>
@@ -3517,7 +3630,7 @@ Obs! Ditt fingeravtryck kan vara mindre säkert än ett starkt mönster eller en
     <string name="oneplus_rotation_silent_enable_summary">Vänd på enheten för att slå av ljudet vid inkommande samtal</string>
     <string name="oneplus_rotation_silent_enable_title">Vänd för ljud av</string>
     <string name="oneplus_scene_mode">SCENER</string>
-    <string name="oneplus_schedule">Planera</string>
+    <string name="oneplus_schedule">Schemalägg</string>
     <string name="oneplus_screen">SKÄRM</string>
     <string name="oneplus_screen_better_cold">Kall</string>
     <string name="oneplus_screen_better_nature">Naturlig</string>
@@ -3608,6 +3721,7 @@ Obs!
     <string name="oneplus_select_fingerprint_animation_effect_2">Våg</string>
     <string name="oneplus_select_fingerprint_animation_effect_3">Rand</string>
     <string name="oneplus_select_fingerprint_animation_effect_4">Ripple</string>
+    <string name="oneplus_select_fingerprint_animation_effect_6">Energi</string>
     <string name="oneplus_select_fingerprint_animation_effect_mcl">McLaren</string>
     <string name="oneplus_select_fingerprint_animation_effect_none">Ingen</string>
     <string name="oneplus_select_fingerprint_animation_effect_title">Välj animeringseffekt för fingeravtryck</string>
@@ -3627,6 +3741,8 @@ Obs!
     <string name="oneplus_shortcuts_preview">Förhandsvisning av genvägar</string>
     <string name="oneplus_shortcuts_settings">Genvägsinställningar</string>
     <string name="oneplus_shortcuts_title">Genvägar</string>
+    <string name="oneplus_show_front_camera_display_summary">Tillåt att innehåll visas i det här området</string>
+    <string name="oneplus_show_front_camera_display_title">Visa den främre kameran</string>
     <string name="oneplus_show_notch_display_summary">Tillåt att appar använder flärpområdet</string>
     <string name="oneplus_show_notch_display_title">Visa flärpområdet</string>
     <string name="oneplus_show_pattern_and_password">Visa lösenord eller mönster</string>
@@ -3637,6 +3753,7 @@ Obs!
     <string name="oneplus_sim1_ringtone_switch">SIM-kort 1</string>
     <string name="oneplus_sim2_ringtone_switch">SIM-kort 2</string>
     <string name="oneplus_simcard_title">SIM</string>
+    <string name="oneplus_sla_down_load_app_summary">Nedladdningsacceleration är inte tillgängligt medan trådlös surfpunkt eller Wi‑Fi direct är på</string>
     <string name="oneplus_sleep_standby_summary">Optimera batteritiden (dvs. inaktivera nätverksanslutningar) medan du sover. Detta kan göra att appar inte kan ta emot meddelanden under tiden.</string>
     <string name="oneplus_sleep_standby_title">Optimering av standbyviloläge</string>
     <string name="oneplus_smart_background_management_title">Aggressivt strömsparläge &amp; och app-viloläge</string>
@@ -3651,8 +3768,10 @@ Obs!
     <string name="oneplus_stop_run">Tvinga avsluta</string>
     <string name="oneplus_storage">LAGRING</string>
     <string name="oneplus_sunrise_sunset">Aktivera från solnedgång till soluppgång automatiskt</string>
+    <string name="oneplus_support_summary">Tips och vanliga frågor om enhetsanvändning</string>
+    <string name="oneplus_support_title">Tips och support</string>
     <string name="oneplus_supported_apps">Appar som stöds</string>
-    <string name="oneplus_suspension_notice">Heads up</string>
+    <string name="oneplus_suspension_notice">Förhandsinfo</string>
     <string name="oneplus_suspension_notice_summary">Låter apparna visa heads up-meddelanden</string>
     <string name="oneplus_switch">OnePlus Switch</string>
     <string name="oneplus_switch_resolution_kill_process_confirm">Switch</string>
@@ -3734,10 +3853,11 @@ Obs!
     <string name="oneplus_top_level_security_summary">Fingeravtryck, Ansiktsupplåsning, nödfallsräddning</string>
     <string name="oneplus_top_level_sound_summary">Stör inte, hörlursläge, ringsignal</string>
     <string name="oneplus_top_level_system_summary">Språk och tangentbord, tid, återställa, systemuppdateringar</string>
+    <string name="oneplus_top_level_system_summary_verizon">Språk &amp; tangentbord, tid, återställ</string>
     <string name="oneplus_touch_vibrate">Vibrera vi pekning</string>
     <string name="oneplus_turn_off_time">Till</string>
     <string name="oneplus_turn_on_feature_cancel">AVBRYT</string>
-    <string name="oneplus_turn_on_feature_ok">SLÅ PÅ</string>
+    <string name="oneplus_turn_on_feature_ok">SÄTT PÅ</string>
     <string name="oneplus_turn_on_time">Från</string>
     <string name="oneplus_uninstatll_multi_app_msg">Alla data i den parallella appen kommer att tas bort under avinstallationen. Vill du verkligen avinstallera?</string>
     <string name="oneplus_uninstatll_multi_app_title">Parallell %1$s</string>
@@ -3762,12 +3882,17 @@ Obs! Ansiktsupplåsning kan vara mindre säkert än fingeravtryck, PIN-kod eller
     <string name="oneplus_video_enhancer">Levande färgeffekt</string>
     <string name="oneplus_video_enhancer_footer">Förbättra färgen när du spelar upp videoklipp</string>
     <string name="oneplus_video_enhancer_summary">Förbättra färgen när du spelar upp videoklipp</string>
+    <string name="oneplus_voice_assistant">Röstassistent</string>
     <string name="oneplus_volume_keys_adjust">Använd volymknapparna för att justera</string>
     <string name="oneplus_volume_keys_adjust_media">Mediavolym</string>
     <string name="oneplus_volume_keys_adjust_ringtones">Volym för ringsignal</string>
     <string name="oneplus_weak_text_reminding">Endast text</string>
     <string name="oneplus_weak_text_reminding_summary">Låter apparna visa heads up-meddelanden</string>
     <string name="oneplus_wellbeing_grayscale_open_tip">Nattläge är för tillfället inte tillgängligt eftersom funktionen ”Gråskala” är aktiverad</string>
+    <string name="oneplus_wifi_6_standard_hotspot_cancel">AVBRYT</string>
+    <string name="oneplus_wifi_6_standard_hotspot_enable">AKTIVERA</string>
+    <string name="oneplus_wifi_6_standard_hotspot_title">Wi‑Fi 6 trådlös standardsurfzon</string>
+    <string name="oneplus_wifi_6_standard_hotspot_warning">Vissa enheter som ska anslutas har eventuellt inte stöd för standarden Wi‑Fi 6. Vill du fortsätta att aktivera den?</string>
     <string name="oneplus_wifi_ap_error">Sätt i SIM-kortet</string>
     <string name="oneplus_wifi_hidden_network_warning">"Om din router avaktiverar SSID-sändningen ska du välja ”Ja” för att ansluta till det dolda nätverket.
 
@@ -3788,6 +3913,8 @@ Att ställa in nätverket som dolt ändrar inte routerns inställningar."</strin
     <string name="oneplus_zen_mode_automation_settings_title">Sätt på automatiskt</string>
     <string name="oneplus_zen_mode_duration_settings_title">Längd</string>
     <string name="oneplus_zen_mode_duration_summary_always_prompt">Fråga alltid (om inte funktionen är automatiskt aktiverad)</string>
+    <string name="oneplus_zen_mode_duration_summary_forever">Tills du stänger av det (om det inte stängs av automatiskt)</string>
+    <string name="oneplus_zen_mode_duration_summary_time_minutes">%d minuter (om det inte slås på automatiskt)</string>
     <string name="oneplus_zen_mode_footer_info">När Stör ej är aktiverat kommer ljud och vibrationer att stängas av, utom i de fall som du tillåter ovan</string>
     <string name="oneplus_zen_mode_mode_manual_switch_summary">Du kan slå på Stör ej manuellt</string>
     <string name="oneplus_zen_mode_settings">Beteende</string>
@@ -3801,6 +3928,10 @@ Att ställa in nätverket som dolt ändrar inte routerns inställningar."</strin
     <string name="op_android_mode_cannot_change_color_accent">Standardtemat kan enbart använda systemets färgtema</string>
     <string name="op_app_already_uninstalled">Avinstallerad</string>
     <string name="op_audio_settings">Stämmare</string>
+    <string name="op_auto_power_saving">Automatiskt energisparläge</string>
+    <string name="op_auto_power_saving_summary">Växla automatiskt till rätt upplösning utan batteriurladdning</string>
+    <string name="op_charging_optimization">Optimerad laddning</string>
+    <string name="op_charging_optimization_summary">Optimera laddningsmönstret enligt dina användarvanor</string>
     <string name="op_china_mobile">CMCC</string>
     <string name="op_china_telecom">CTCC</string>
     <string name="op_china_unicom">CUCC</string>
@@ -3880,6 +4011,7 @@ Att ställa in nätverket som dolt ändrar inte routerns inställningar."</strin
     <string name="op_wifi_display_summary">Sändning</string>
     <string name="op_wifi_verbose_multi_broadcast_summary">I standbyläge kommer apparnas specifikationer för flera sändningar på WLAN att göra så att WLAN använder systemresurser om filtret inte stängs av, vilket resulterar i överdriven batterianvändning.</string>
     <string name="op_wifi_verbose_multi_broadcast_title">Appfilter för flera sändningar på WLAN</string>
+    <string name="open_hotspot_warning_message">Med öppen säkerhet kan enheter använda din trådlösa surfzon utan att ange ett lösenord. Välj WPA2-säkerhet istället om du vill använda ett lösenord.</string>
     <string name="openid_dialog_reset">ÅTERSTÄLL</string>
     <string name="openid_dialog_summary">Detta ersätter identifieraren med ett slumpmässigt nummer</string>
     <string name="openid_dialog_title">Är du säker på att du vill nollställa identifieraren?</string>
@@ -3964,6 +4096,9 @@ Att ställa in nätverket som dolt ändrar inte routerns inställningar."</strin
     <string name="power_discharging_duration_enhanced">Cirka %1$s kvar utifrån din användning (%2$s)</string>
     <string name="power_flashlight">Ficklampa</string>
     <string name="power_idle">Telefonen är inaktiv</string>
+    <string name="power_menu">Energi-meny</string>
+    <string name="power_off">Stäng av</string>
+    <string name="power_off_summary">Din enhet stängs av</string>
     <string name="power_overcounted">För högt räknad</string>
     <string name="power_phone">Röstsamtal</string>
     <string name="power_remaining_charging_duration_only">Batteriet är fulladdat om %1$s</string>
@@ -4254,6 +4389,19 @@ Starta om enheten och försök igen."</string>
     <string name="reset_network_title">Återställ Wi-Fi, mobildata och Bluetooth</string>
     <string name="reset_shortcut_manager_throttling">Återställ anropsbegränsning för ShortcutManager</string>
     <string name="reset_shortcut_manager_throttling_complete">Anropsbegränsningen för ShortcutManager har återställts</string>
+    <string name="reset_system_settings_button_text">Återställ inställningar</string>
+    <string name="reset_system_settings_complete_toast">Systeminställningarna har återställts</string>
+    <string name="reset_system_settings_desc">"Om du har ändrat systeminställningar kan du med \"Återställ inställningar\" återställa telefonen till dess ursprungliga beteende.
+
+Detta påverkar inte nedladdade appar, dina personliga data eller följande skyddade inställningar:
+
+"<li>Säkerhetsinställningar</li>"
+"<li>Språkinställningar</li>"
+"<li>Kontoinställningar</li></string>
+    <string name="reset_system_settings_dialog_message">"Återställning av systeminställningar ändrar en del eventuella anpassningar som du har gjort, till exempel din ringsignal, skärmens ljusstyrka och tangentbordets beteende.
+Vill du återställa systeminställningarna? Du kan inte ångra den här åtgärden."</string>
+    <string name="reset_system_settings_dialog_title">Varning</string>
+    <string name="reset_system_settings_title">Återställ inställningar</string>
     <string name="restore_default_apn">Återställer standardinställningar för APN.</string>
     <string name="restore_default_apn_completed">Återställning av standardinställningar för APN har slutförts.</string>
     <string name="restr_pin_enter_admin_pin">Ange administratörens pinkod:</string>
@@ -4283,6 +4431,7 @@ Starta om enheten och försök igen."</string>
     <string name="retail_demo_reset_next">Nästa</string>
     <string name="retail_demo_reset_title">Lösenord krävs</string>
     <string name="retry">Försök igen</string>
+    <string name="reverse_wireless_charging_category">Trådlös laddning</string>
     <string name="ring_volume_option_title">Ringvolym</string>
     <string name="ring_volume_title">Ringvolym</string>
     <string name="ringtone_title">Ringsignal</string>
@@ -4330,6 +4479,7 @@ Den här inställningen påverkar samtliga användare."</string>
     <string name="safety_and_regulatory_info">Säkerhet och föreskrifter</string>
     <string name="saturation_option_title">Färgbalans</string>
     <string name="save">Spara</string>
+    <string name="save_changes">Spara ändringar</string>
     <string name="saved_network">Sparades av %1$s</string>
     <string name="scanning_status_text_wifi_off_ble_off">Både Wi‑Fi-sökning och Bluetooth-sökning har inaktiverats</string>
     <string name="scanning_status_text_wifi_off_ble_on">Bluetooth-sökning har aktiverats. Wi-Fi-sökning har inaktiverats</string>
@@ -4338,7 +4488,7 @@ Den här inställningen påverkar samtliga användare."</string>
     <string name="schedule_reminders">Händelsepåminnelser</string>
     <string name="screen_color_mode_advanced">Avancerat</string>
     <string name="screen_color_mode_advanced_settings">Avancerade inställningar</string>
-    <string name="screen_color_mode_vivid">Tydlig</string>
+    <string name="screen_color_mode_vivid">Livlig</string>
     <string name="screen_compatibility_label">Skärmkompatibilitet</string>
     <string name="screen_compatibility_text">Det är inte säkert att den här appen har skapats för din skärm. Här kan du välja hur den ska anpassas till skärmen.</string>
     <string name="screen_locking_sounds_title">Ljud vid skärmlåsning</string>
@@ -4424,6 +4574,7 @@ Så här fäster du skärmen:
     <string name="search_bar_account_avatar_content_description" />
     <string name="search_menu">Sökinställningar</string>
     <string name="search_menu_title">Sök</string>
+    <string name="search_network_extenders">Söker efter nätverksförlängare</string>
     <string name="search_results_title">Inställningar</string>
     <string name="search_settings">Sök</string>
     <string name="secure_lock_encryption_warning">Eftersom du har aktiverat en tillgänglighetstjänst används inte skärmlåset för att förbättra datakryptering på enheten.</string>
@@ -4543,6 +4694,7 @@ Obs! Du kan inte använda fingeravtrycket för att låsa upp den här enheten. K
     <string name="select_automatically">Välj nätverk automatiskt</string>
     <string name="select_day">Välj månad och dag</string>
     <string name="select_device_admin_msg">Enhetsadministratörsappar</string>
+    <string name="select_function">Välj funktionen</string>
     <string name="select_hours">Välj timmar</string>
     <string name="select_logd_size_dialog_title">Välj loggstorlekar per loggbuffert</string>
     <string name="select_logd_size_title">Buffertstorlekar för logg</string>
@@ -4564,6 +4716,9 @@ Obs! Du kan inte använda fingeravtrycket för att låsa upp den här enheten. K
     <string name="select_year">Välj år</string>
     <string name="sensors_off_quick_settings_title">Sensorer är inaktiverade</string>
     <string name="service_background_processes">%1$s led.</string>
+    <string name="service_does_not_exists_in_this_area">Tjänsten finns inte i det här området</string>
+    <string name="service_exists_in_this_area_and_is_capable_of_being_used">Tjänsten finns i det här området och kan användas</string>
+    <string name="service_exists_in_this_area_but_is_not_capable_of_being_used">Tjänsten finns i det här området men kan inte användas</string>
     <string name="service_foreground_processes">%1$s anv.</string>
     <string name="service_manage">Inställningar</string>
     <string name="service_manage_description">%1$s används just nu. Tryck på Inställningar om du vill styra tjänsten.</string>
@@ -4637,6 +4792,8 @@ Obs! Du kan inte använda fingeravtrycket för att låsa upp den här enheten. K
     <string name="show_screen_updates_summary">Hela fönstret blinkar vid uppdatering</string>
     <string name="show_touches">Visa tryck</string>
     <string name="show_touches_summary">Visa visuell feedback för tryck</string>
+    <string name="show_wifi_popup">Visa Wi-Fi-popupmeddelanden</string>
+    <string name="show_wifi_popup_summary">Meddela när Wi-Fi är tillgängligt när jag öppnar appar</string>
     <string name="sim_bad_pin">Fel PIN-kod</string>
     <string name="sim_call_back_title">Ring upp från standard-SIM-kort</string>
     <string name="sim_calls_always_use">Använd alltid för samtal</string>
@@ -4668,15 +4825,15 @@ Obs! Du kan inte använda fingeravtrycket för att låsa upp den här enheten. K
     <string name="sim_enabler_both_inactive">Fel. Det går inte att inaktivera alla SIM-kort</string>
     <string name="sim_enabler_disabling">Inaktiverar...</string>
     <string name="sim_enabler_enabling">Aktiverar...</string>
-    <string name="sim_enabler_in_call">FEL, i samtal!</string>
+    <string name="sim_enabler_in_call">FEL, under samtal!</string>
     <string name="sim_enabler_need_disable_sim">Inaktiverar SIM-kortet. Är du säker?</string>
     <string name="sim_enabler_need_enable_sim">Aktiverar SIM-kortet. Är du säker?</string>
-    <string name="sim_enabler_need_switch_data_service">Kommer att inaktivera det och ändra till SIM%1$s för datatjänster, ä du säker?</string>
+    <string name="sim_enabler_need_switch_data_service">Kommer inaktivera det och ändra till SIM%1$s för datatjänster. Är du säker?</string>
     <string name="sim_enabler_not_allow_disable_data_sim">Det är inte tillåtet att inaktivera data på SIM-kortet</string>
     <string name="sim_enabler_summary">SIM-kortet är %1$s</string>
     <string name="sim_enabler_summary_new_marshmallow">" är %1$s"</string>
     <string name="sim_enabler_title">SIM-verktyg</string>
-    <string name="sim_enabler_will_disable_sim_title">Obs</string>
+    <string name="sim_enabler_will_disable_sim_title">Obs!</string>
     <string name="sim_enter_cancel">Avbryt</string>
     <string name="sim_enter_new">Ny PIN-kod för SIM-kort</string>
     <string name="sim_enter_ok">OK</string>
@@ -4743,7 +4900,9 @@ Aviseringar från dessa appar kan fördröjas."</string>
     <string name="sms_messages_title">Sms</string>
     <string name="sms_preference">Angiven för sms</string>
     <string name="snooze_options_title">Tillåt att aviseringar snoozas</string>
+    <string name="softap_tethering_footer_info">Använd hotspot och internetdelning för att tillhandahålla internet till andra enheter via din mobildata eller WiFi-anslutning. Appar kan också skapa en hotspot för att dela innehåll med enheter i närheten.</string>
     <string name="sometimes_running">Körs ibland (%s)</string>
+    <string name="sort_apps_by_date">Sortera efter datum</string>
     <string name="sort_avg_use">Sortera efter genomsnittsanvändning</string>
     <string name="sort_max_use">Sortera efter maximal användning</string>
     <string name="sort_order_alpha">Sortera efter namn</string>
@@ -5086,6 +5245,7 @@ En funktion i Google som du kan använda om du vill synkronisera så att du komm
     <string name="system_navigation_title">Systemnavigering</string>
     <string name="system_package">Det går inte att installera systemuppdateringar på externa media.</string>
     <string name="system_ui_settings">Visa inställningar för systemgränssnitt</string>
+    <string name="system_update">Systemuppdatering</string>
     <string name="system_update_settings_list_item_summary" />
     <string name="system_update_settings_list_item_title">Systemuppdateringar</string>
     <string name="system_update_uss_title">Ladda ned och installera</string>
@@ -5142,7 +5302,7 @@ En funktion i Google som du kan använda om du vill synkronisera så att du komm
     <string name="timepower_edit_title">Ställ in tid för att sätta på/stänga av</string>
     <string name="timepower_power_off">Stäng av</string>
     <string name="timepower_power_off_title">Schemaläggning för att stänga av</string>
-    <string name="timepower_power_on">Sätt på</string>
+    <string name="timepower_power_on">Påslagen</string>
     <string name="timepower_power_on_title">Schemaläggning för att sätta på</string>
     <string name="timepower_time_duplicate">Upprepad tidsinställning. Försök igen!</string>
     <string name="timer_shutdown_startup_settings_title">Schemalagd tid för att sätta på/stänga av</string>
@@ -5155,7 +5315,7 @@ En funktion i Google som du kan använda om du vill synkronisera så att du komm
     <string name="touchscreen_camera_gesture_summary">Rita ett O för att öppna kameran</string>
     <string name="touchscreen_camera_gesture_title">Öppna kameran</string>
     <string name="touchscreen_double_tap_to_wake_gesture_summary">Tryck på skärmen två gånger för att väcka enheten</string>
-    <string name="touchscreen_double_tap_to_wake_gesture_title">Dubbeltryck för väckning</string>
+    <string name="touchscreen_double_tap_to_wake_gesture_title">Dubbeltryck för att väcka</string>
     <string name="touchscreen_flashlight_gesture_summary">Rita ett V för att växla ficklampan</string>
     <string name="touchscreen_flashlight_gesture_title">Växla ficklampan</string>
     <string name="touchscreen_music_gesture_summary">Rita || med två fingrar för att spela upp eller pausa musiken. Rita &lt; eller > för föregående eller nästa spår</string>
@@ -5219,6 +5379,7 @@ En funktion i Google som du kan använda om du vill synkronisera så att du komm
     <string name="tts_status_title">Status för standardspråk</string>
     <string name="tx_link_speed">%1$d Mbit/s</string>
     <string name="tx_wifi_speed">Hastighet för sändlänk</string>
+    <string name="uicc_alert_message">UICC krävs för inloggning i WiFi-nätverket med SSID VerizonWiFiAccess</string>
     <string name="uicc_all_lock_summary">Enheten är låst av Sprint eller internationella SIM-kort</string>
     <string name="uicc_lock_summary">Din enhet är spärrad för endast SIM-kort från Sprint</string>
     <string name="uicc_unlock">UICC-upplåsning</string>
@@ -5240,10 +5401,16 @@ En funktion i Google som du kan använda om du vill synkronisera så att du komm
     <string name="uninstall_failed_device_policy_manager">Det gick inte att avinstallera eftersom det här paketet är en aktiv enhetsadministratör.</string>
     <string name="uninstall_failed_device_policy_manager_of_user">Det gick inte att avinstallera eftersom det här paketet är en aktiv enhetsadministratör för användaren %1$s.</string>
     <string name="uninstall_failure_notification_channel">Avinstallationer misslyckades</string>
+    <string name="uninstall_multiple_apps">Massåtgärder</string>
     <string name="uninstall_text">Avinstallera</string>
     <string name="uninstall_update_text">Vill du ersätta den här appen med fabriksversionen? Alla data kommer att tas bort.</string>
     <string name="uninstall_update_text_multiuser">Vill du ersätta den här appen med fabriksversionen? Alla data kommer att tas bort. Detta påverkar alla användare av den här enheten, inklusive jobbprofiler.</string>
     <string name="uninstall_update_title">Avinstallera uppdateringen</string>
+    <string name="uninstallapps_confirm">Bekräfta</string>
+    <string name="uninstallapps_confirm_dialog_body">Alla valda applikationer och alla filer som är associerade med applikationspaketet kommer att tas bort.</string>
+    <string name="uninstallapps_confirm_dialog_title">Ta bort valda appar?</string>
+    <string name="uninstallapps_selected">valda</string>
+    <string name="uninstallapps_toast_message">appar har tagits bort</string>
     <string name="uninstalling">Avinstallerar…</string>
     <string name="uninstalling_notification_channel">Kör avinstallationer</string>
     <string name="unknown">Okänd</string>
@@ -5325,6 +5492,12 @@ Sparade fingeravtryck tas också bort från enheten och kan inte användas för 
     <string name="unsupported_setting_summary">Inställningen stöds inte på den här mobilen</string>
     <string name="update_prl">Uppdatera PRL</string>
     <string name="update_profile">Uppdatera profil</string>
+    <string name="upstream_type_auto">Automatisk växling</string>
+    <string name="upstream_type_auto_summary">Växla automatiskt till mobildataanslutning när Wi-Fi kopplas från</string>
+    <string name="upstream_type_cell">Delar endast mobildata</string>
+    <string name="upstream_type_cell_summary">Delning är inaktiverat när mobildata är inaktiverat eller frånkopplat</string>
+    <string name="upstream_type_wifi">Delar endast Wi-Fi</string>
+    <string name="upstream_type_wifi_summary">Delning är inaktiverat när Wi-Fi är frånkopplat</string>
     <string name="usage">Användning</string>
     <string name="usage_access">Åtkomst till användningsdata</string>
     <string name="usage_access_description">Med åtkomst till användningsdata kan en app spåra vilka andra appar du använder och hur ofta, samt vilken operatör du har, språkinställningar och andra uppgifter.</string>
@@ -5510,6 +5683,9 @@ Alla användare kan uppdatera appar för samtliga användares räkning."</string
     <string name="v7_preference_on">PÅ</string>
     <string name="verify_apps_over_usb_summary">Kontrollera om appar som installeras via ADB/ADT kan vara skadliga.</string>
     <string name="verify_apps_over_usb_title">Verifiera appar via USB</string>
+    <string name="verizon_store_demo_mode_hint">Ange lösenordet</string>
+    <string name="verizon_store_demo_mode_title">Verizon Store Demo Mode</string>
+    <string name="verizon_wifi_tether_band_warning">Om du ändrar konfigurationen för trådlös surfzon frånkopplas enheter som för närvarande är anslutna till trådlös surfzon.</string>
     <string name="version_text">version %1$s</string>
     <string name="vibrate_in_silent_title">Vibrera vid tyst</string>
     <string name="vibrate_input_devices">Omdirigera vibration</string>
@@ -5626,6 +5802,8 @@ Alla användare kan uppdatera appar för samtliga användares räkning."</string
     <string name="wallpaper_settings_title">Bakgrund</string>
     <string name="wallpaper_suggestion_summary">Anpassa skärmen</string>
     <string name="wallpaper_suggestion_title">Ändra bakgrund</string>
+    <string name="warning_title">Varning</string>
+    <string name="warranty_date_code">Garantidatum</string>
     <string name="web_action_enable_summary">Öppna länkar i appar, även om de inte har installerats</string>
     <string name="web_action_enable_title">Snabbappar</string>
     <string name="web_action_section_title">Snabbappar</string>
@@ -5940,8 +6118,17 @@ Vill du tillåta detta för alla appar som vill söka efter nätverk?"</string>
     <string name="wifi_tether_custom_auto_turn_off_always_summary">Alltid på</string>
     <string name="wifi_tether_enabled_subtext">%1$s är aktiv</string>
     <string name="wifi_tether_failed_subtext">Fel på mobil Wi-Fi-surfzon</string>
+    <string name="wifi_tether_passphrase_warning">Minst 8 tecken, inklusive 1 alfanumeriskt, 1 numeriskt och 1 symbol</string>
     <string name="wifi_tether_starting">Aktiverar surfzon ...</string>
     <string name="wifi_tether_stopping">Surfzon inaktiveras ...</string>
+    <string name="wifi_tether_upstream_network_type_config">Delar inställningar</string>
+    <string name="wifi_tether_upstream_network_type_title">Delar inställningar</string>
+    <string name="wifi_tether_verizon_custom_auto_turn_off_10_min_summary">Efter 10 minuters inaktivitet</string>
+    <string name="wifi_tether_verizon_custom_auto_turn_off_20_min_summary">Efter 20 minuters inaktivitet</string>
+    <string name="wifi_tether_verizon_custom_auto_turn_off_30_min_summary">Efter 30 minuters inaktivitet</string>
+    <string name="wifi_tether_verizon_custom_auto_turn_off_5_min_summary">Efter 5 minuters inaktivitet</string>
+    <string name="wifi_tether_verizon_custom_auto_turn_off_60_min_summary">Efter 60 minuters inaktivitet</string>
+    <string name="wifi_tether_verizon_custom_auto_turn_off_always_summary">Alltid på</string>
     <string name="wifi_turned_on_message">Wi-Fi har aktiverats</string>
     <string name="wifi_unchanged">(oförändrat)</string>
     <string name="wifi_unmetered_label">Utan datapriser</string>
@@ -5985,7 +6172,7 @@ Vill du tillåta detta för alla appar som vill söka efter nätverk?"</string>
     <string name="wizard_next">Nästa</string>
     <string name="work_alarm_ringtone_title">Standardljud för jobbalarm</string>
     <string name="work_life_balance">Balans mellan arbete och privatliv</string>
-    <string name="work_life_disabled_toast">Funktionen Balans mellan arbete och privatliv är aktiverad.</string>
+    <string name="work_life_disabled_toast">Funktionen Balans mellan arbete och privatliv är inaktiverad.</string>
     <string name="work_mode_label">Jobbprofil</string>
     <string name="work_mode_off_summary">Appar och aviseringar är inaktiverade</string>
     <string name="work_mode_on_summary">Hanteras av organisationen</string>

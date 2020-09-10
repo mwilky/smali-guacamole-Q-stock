@@ -233,7 +233,7 @@
 
     iget-object v0, p0, Lcom/android/settings/accessibility/ToggleScreenMagnificationPreferenceFragment;->mConfigWarningPreference:Landroidx/preference/Preference;
 
-    const v2, 0x7f080393
+    const v2, 0x7f08039c
 
     invoke-virtual {v0, v2}, Landroidx/preference/Preference;->setIcon(I)V
 
@@ -481,7 +481,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0a0757
+    const v1, 0x7f0a0758
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

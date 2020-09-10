@@ -256,13 +256,23 @@
     <string name="advanced_apps">ขั้นสูง</string>
     <string name="advanced_battery_graph_subtext">ค่าประมาณแบตเตอรี่ที่เหลืออิงตามการใช้งานอุปกรณ์ของคุณ</string>
     <string name="advanced_battery_title">การใช้งานแบตเตอรี่</string>
+    <string name="advanced_calling_summary">วิดีโอ HD, วิดีโอคอล</string>
+    <string name="advanced_calling_title">การโทรขั้นสูง</string>
     <string name="advanced_reboot_summary">เมื่อปลดล็อค การรีบูตจะมีตัวเลือกให้เลือกในการที่จะรีบูตปกติ เข้าสู่รีคัฟเวอรี่ หรือ รีบูตแบบด่วน</string>
     <string name="advanced_reboot_title">เริ่มระบบใหม่แบบขั้นสูง</string>
     <string name="advanced_section_header">ขั้นสูง</string>
     <string name="advanced_security_title">ขั้นสูง</string>
     <string name="advanced_settings">การตั้งค่าขั้นสูง</string>
     <string name="advanced_settings_summary">เปิดใช้งานตัวเลือกการตั้งค่าเพิ่มเติม</string>
+    <string name="advanced_wificall_summary">ใช้ Wi-Fi เมื่อเครือข่ายมือถือไม่พร้อมใช้งาน</string>
     <string name="airplane_mode">โหมดบนเครื่องบิน</string>
+    <string name="airplane_mode_description">โหมดเครื่องบินจะปิดการเชื่อมต่อเครือข่ายทั้งหมด ได้แก่ การโทร การส่งข้อความ การเข้าถึงอินเทอร์เน็ต Wi-Fi และบลูทูธ</string>
+    <string name="airplane_mode_enable_dialog_message">"เมื่อโหมดเครื่องบินเปิดอยู่ คุณจะไม่สามารถใช้อินเทอร์เน็ต อีเมล หรือแอปอื่นๆ ที่ต้องการการเชื่อมต่อข้อมูลได้ เว้นแต่ว่าคุณจะใช้ Wi-Fi
+
+เปิดโหมดเครื่องบินหรือไม่"</string>
+    <string name="airplane_mode_enable_dialog_message_wifi_volte">"เมื่อโหมดเครื่องบินเปิดอยู่ คุณจะไม่สามารถใช้อินเทอร์เน็ต อีเมล การโทรผ่าน Wi-Fi หรือแอปอื่นๆ ที่ต้องการการเชื่อมต่อข้อมูลได้ เว้นแต่ว่าคุณจะใช้ Wi-Fi
+
+เปิดโหมดเครื่องบินหรือไม่"</string>
     <string name="alarm_ringtone_title">เสียงปลุกเริ่มต้น</string>
     <string name="alarm_template">เวลา %1$s</string>
     <string name="alarm_template_far">วัน%1$s</string>
@@ -274,6 +284,7 @@
     <string name="alert_slider_silent_title">การตั้งค่าเสียงเงียบ</string>
     <string name="alertslider_settings">แถบเลื่อนการเตือน</string>
     <string name="alertslider_settings_soc_tri_state">Alert Slider</string>
+    <string name="alertslider_settings_soc_tri_state_summary">เงียบ, การสั่น, ส่งเสียง</string>
     <string name="all_volume_title">ระดับเสียง</string>
     <string name="allow">อนุญาต</string>
     <string name="allow_bind_app_widget_activity_allow_bind">เมื่อสร้างวิดเจ็ตแล้ว %1$s จะสามารถเข้าถึงข้อมูลทั้งหมดที่วิดเจ็ตแสดงได้</string>
@@ -314,12 +325,19 @@
     <string name="angle_enabled_app_set">แอปพลิเคชันที่พร้อมใช้งาน ANGLE: %1$s</string>
     <string name="animator_duration_scale_title">อัตราความเร็วตามตัวสร้างภาพเคลื่อนไหว</string>
     <string name="another_migration_already_in_progress">กำลังย้ายข้อมูลอื่นอยู่</string>
-    <string name="aod_clock_analog">แอนะล็อก</string>
+    <string name="aod_clock_analog">แอนะล็อก 1</string>
+    <string name="aod_clock_analog_1">แอนะล็อก 2</string>
+    <string name="aod_clock_analog_2">แอนะล็อก 3</string>
+    <string name="aod_clock_bold">ตัวหนา</string>
     <string name="aod_clock_default">ค่าเริ่มต้น</string>
+    <string name="aod_clock_digital">ดิจิทัล 1</string>
+    <string name="aod_clock_digital_1">ดิจิทัล 2</string>
     <string name="aod_clock_mcl">McLaren</string>
-    <string name="aod_clock_minimalism">เรียบง่าย</string>
+    <string name="aod_clock_minimalism">เรียบง่าย 1</string>
+    <string name="aod_clock_minimalism_1">เรียบง่าย 2</string>
     <string name="aod_clock_none">ไม่มีเลย</string>
     <string name="aod_clock_select_style_text">เลือกรูปแบบนาฬิกา</string>
+    <string name="aod_clock_text_clock">นาฬิกาข้อความ</string>
     <string name="aod_horizon_light_effect_1">สีฟ้า</string>
     <string name="aod_horizon_light_effect_2">สีแดง</string>
     <string name="aod_horizon_light_effect_3">สีม่วง</string>
@@ -353,7 +371,7 @@
     <string name="apn_settings_not_available">การตั้งค่าจุดเข้าใช้งานไม่สามารถใช้ได้สำหรับผู้ใช้รายนี้</string>
     <string name="apn_type">ประเภท APN</string>
     <string name="apn_user">ชื่อผู้ใช้</string>
-    <string name="app2sd_alert_continue">ดำเนินการต่อไป</string>
+    <string name="app2sd_alert_continue">ดำเนินการต่อ</string>
     <string name="app2sd_alert_message">คำเตือน</string>
     <string name="app2sd_alert_title">เมื่อใช้งานแอปที่เก็บไว้ในการ์ด SD คุณต้องถอดการต่อเชื่อมก่อนที่จะถอดถาด SD ออกเพื่อหลีกเลี่ยงพฤติกรรมที่ไม่คาดคิด ดำเนินการต่อหรือไม่?</string>
     <string name="app_and_notification_dashboard_summary">แอปล่าสุด แอปเริ่มต้น</string>
@@ -1065,6 +1083,7 @@
     <string name="charge_length_format">%1$sที่ผ่านมา</string>
     <string name="charging_sounds_title">เสียงชาร์จและการสั่น</string>
     <string name="checkbox_notification_same_as_incoming_call">ใช้ระดับเสียงของสายเรียกเข้าเพื่อแจ้งเตือน</string>
+    <string name="checkbox_usb_tether_donot_show_again">ไม่ต้องแสดงอีก</string>
     <string name="checking_decryption">กำลังตรวจสอบ…</string>
     <string name="choose_network_title">เลือกเครือข่าย</string>
     <string name="choose_profile">เลือกโปรไฟล์</string>
@@ -1172,6 +1191,8 @@
     <string name="connected_devices_dashboard_no_nfc_summary">บลูทูธ, โหมดขับรถ</string>
     <string name="connected_devices_dashboard_summary">บลูทูธ, โหมดขับรถ, NFC</string>
     <string name="connected_devices_dashboard_title">อุปกรณ์ที่เชื่อมต่อ</string>
+    <string name="connected_to_the_verizon_network">เชื่อมต่อกับเครือข่าย Verizon แล้ว</string>
+    <string name="connected_to_the_verizon_network_but_data_connection_unavailable">เชื่อมต่อกับเครือข่าย Verizon แล้ว แต่การเชื่อมต่อข้อมูลไม่พร้อมใช้งาน</string>
     <string name="connected_via_app">เชื่อมต่อแล้วผ่าน %1$s</string>
     <string name="connected_via_carrier">เชื่อมต่อผ่าน %1$s แล้ว</string>
     <string name="connected_via_network_scorer">เชื่อมต่ออัตโนมัติผ่าน %1$s แล้ว</string>
@@ -1187,6 +1208,7 @@
     <string name="contextual_card_feedback_send">ส่งความคิดเห็น</string>
     <string name="contextual_card_removed_message">นำคำแนะนำออกแล้ว</string>
     <string name="contextual_card_undo_dismissal_text">เลิกทำ</string>
+    <string name="continue_anyway">ยืนยันที่จะดำเนินการต่อ</string>
     <string name="contributors_title">ผู้ร่วมให้ข้อมูล</string>
     <string name="controls_label">การควบคุม</string>
     <string name="controls_subtitle">ปรับการใช้พลังงาน</string>
@@ -1318,6 +1340,7 @@
     <string name="data_usage_cycle_editor_subtitle">วันที่ของแต่ละเดือน:</string>
     <string name="data_usage_cycle_editor_title">วันที่รีเซ็ตรอบการใช้</string>
     <string name="data_usage_data_limit">ตั้งค่าขีดจำกัดข้อมูล</string>
+    <string name="data_usage_description">โทรศัพท์ของคุณจะทำการวัดการใช้งานข้อมูล วิธีคำนวณการใช้งานอาจแตกต่างกันไปขึ้นอยู่กับผู้ให้บริการ กำหนดวันที่เริ่มต้นให้ตรงกับระยะเวลาบนบิลของคุณ</string>
     <string name="data_usage_disable_3g_limit">ตั้งค่าขีดจำกัดข้อมูลของ 2G-3G</string>
     <string name="data_usage_disable_4g_limit">ตั้งค่าขีดจำกัดข้อมูลของ 4G</string>
     <string name="data_usage_disable_mobile">ปิดอินเทอร์เน็ตมือถือไหม</string>
@@ -1331,6 +1354,7 @@
     <string name="data_usage_forground_label">พื้นหน้า:</string>
     <string name="data_usage_label_background">พื้นหลัง</string>
     <string name="data_usage_label_foreground">พื้นหน้า</string>
+    <string name="data_usage_less_than_value">น้อยกว่า 0.01</string>
     <string name="data_usage_limit_dialog_mobile">"โทรศัพท์ของคุณจะปิดอินเทอร์เน็ตมือถือเมื่อถึงขีดจำกัดที่คุณตั้งไว้
 
 เนื่องจากว่าปริมาณการใช้อินเทอร์เน็ตนั้นวัดโดยโทรศัพท์ของคุณ ผู้ให้บริการอาจมีวิธีบันทึกการใช้ที่แตกต่างออกไป ดังนั้น โปรดกำหนดขีดจำกัดอย่างระมัดระวัง"</string>
@@ -1386,6 +1410,9 @@
     <string name="data_usage_total_during_range_mobile">%2$s: ใช้แล้วประมาณ %1$s ตามที่โทรศัพท์วัดได้ ผู้ให้บริการอาจมีรายละเอียดการใช้ต่างจากนี้</string>
     <string name="data_usage_uninstalled_apps">แอปพลิเคชันที่นำออก</string>
     <string name="data_usage_uninstalled_apps_users">แอปพลิเคชันและผู้ใช้ที่นำออก</string>
+    <string name="data_usage_unit_gb">GB</string>
+    <string name="data_usage_unit_mb">MB</string>
+    <string name="data_usage_video_call_title">วิดีโอคอล</string>
     <string name="data_usage_warning_editor_title">ตั้งค่าเตือนการใช้อินเทอร์เน็ต</string>
     <string name="data_usage_wifi_format">ใช้ไป ^1 จาก Wi‑Fi</string>
     <string name="data_usage_wifi_title">อินเทอร์เน็ตจาก Wi‑Fi</string>
@@ -1497,6 +1524,11 @@
 คุณสามารถปิดตำแหน่งสำหรับแอปนี้เพื่อแก้ปัญหานี้"</string>
     <string name="dialog_location_ok">ปิด</string>
     <string name="dialog_location_title">ปิดตำแหน่งไหม</string>
+    <string name="dialog_mhs_error">กำลังรอในขณะที่ยืนยัน..</string>
+    <string name="dialog_open_network_cancel">ยกเลิก</string>
+    <string name="dialog_open_network_connect">เชื่อมต่อ</string>
+    <string name="dialog_open_network_title">คุณกำลังเชื่อมต่อกับเครือข่าย Wi-Fi (แบบเปิด) ที่ไม่ปลอดภัย</string>
+    <string name="dialog_open_network_title_info">ข้อมูลที่ส่งไปไม่ถูกเข้ารหัสและผู้อื่นอาจสามารถมองเห็นได้ คุณยังต้องการเชื่อมต่อหรือไม่</string>
     <string name="dialog_stop_message">"โทรศัพท์ไม่สามารถจัดการแบตเตอรี่ได้ตามปกติเนื่องจาก %1$s ปลุกให้โทรศัพท์ตื่นอยู่ตลอด
 
 คุณสามารถหยุดแอปเพื่อลองแก้ปัญหานี้
@@ -1509,6 +1541,11 @@
 หากปัญหายังคงอยู่ คุณอาจต้องถอนการติดตั้งแอปเพื่อปรับปรุงประสิทธิภาพของแบตเตอรี่"</string>
     <string name="dialog_stop_ok">หยุดแอป</string>
     <string name="dialog_stop_title">หยุดแอปไหม</string>
+    <string name="dialog_usb_tether_cancel">ยกเลิก</string>
+    <string name="dialog_usb_tether_ok">ตกลง</string>
+    <string name="dialog_usb_tether_title">การกระจายสัญญาณผ่าน USB และ Wi-Fi ไม่สามารถเปิดพร้อมกันได้ ปิด Wi-Fi หรือไม่</string>
+    <string name="dialog_wrong_password">รหัสผ่าน Wi-Fi ไม่ถูกเข้ารหัส กรุณาตรวจสอบรหัสผ่านและลองอีกครั้ง</string>
+    <string name="dialog_wrong_password_ok">ตกลง</string>
     <string name="direct_boot_unaware_dialog_message">หมายเหตุ: หากคุณรีสตาร์ทโทรศัพท์และตั้งการล็อกหน้าจอไว้ แอปนี้จะเริ่มทำงานไม่ได้จนกว่าคุณจะปลดล็อกโทรศัพท์</string>
     <string name="disable_doze_summary">Doze จะลดการใช้แบตเตอรี่ด้วยการลดการใช้งาน CPU และเน็ตเวิร์กของแอปในเบื้องหลังเวลาที่ไม่ได้ใช้เครื่องเป็นเวลานานระยะหนึ่ง</string>
     <string name="disable_doze_title">โหมด Doze</string>
@@ -1612,6 +1649,21 @@
     <string name="dual_cdma_sim_warning_notification_channel_title">การรวมซิม</string>
     <string name="dual_cdma_sim_warning_notification_summary">การใช้ %1$s อาจจำกัดฟังก์ชัน แตะเพื่อดูข้อมูลเพิ่มเติม</string>
     <string name="eab_provisioned_switch_string">จัดสรร EAB/Presence แล้ว</string>
+    <string name="earphone_function_control_click_left">ดับเบิลคลิกที่หูฟังข้างซ้าย</string>
+    <string name="earphone_function_control_click_right">ดับเบิลคลิกที่หูฟังข้างขวา</string>
+    <string name="earphone_function_control_last_song">แทร็กก่อนหน้า</string>
+    <string name="earphone_function_control_next_song">แทร็กต่อไป</string>
+    <string name="earphone_function_control_play_pause">เล่น/หยุด</string>
+    <string name="earphone_function_introduction">คำอธิบายฟังก์ชั่น</string>
+    <string name="earphone_function_listening_breeno">ผู้ช่วยเสียง</string>
+    <string name="earphone_support_battery_dot">;</string>
+    <string name="earphone_support_battery_info_box">เคส OnePlus Buds: %1$s</string>
+    <string name="earphone_support_battery_info_left">ซ้าย: %1$s</string>
+    <string name="earphone_support_battery_info_right">ขวา: %1$s</string>
+    <string name="earphone_support_current_version">รุ่นปัจจุบัน:</string>
+    <string name="earphone_support_update_ota">อัพเดตเฟิร์มแวร์อัตโนมัติ</string>
+    <string name="earphone_support_wifi_data">อนุญาตการอัปเดตอัตโนมัติโดยใช้ดาต้าของมือถือ</string>
+    <string name="earphone_usage_guide_complete">เสร็จสิ้น</string>
     <string name="edge_to_edge_navigation_summary">ไปที่หน้าแรกโดยเลื่อนขึ้นจากด้านล่างของหน้าจอ สลับแอปโดยเลื่อนขึ้นจากด้านล่างค้างไว้แล้วปล่อย กลับโดยเลื่อนจากขอบด้านซ้ายหรือขวา</string>
     <string name="edge_to_edge_navigation_title">การนำทางด้วยท่าทางสัมผัส</string>
     <string name="emergency_address_summary">ใช้เป็นตำแหน่งของคุณเมื่อโทรหาหมายเลขฉุกเฉินผ่าน Wi-Fi</string>
@@ -1651,7 +1703,7 @@
     <string name="enable_terminal_title">เทอร์มินัลในตัวเครื่อง</string>
     <string name="enable_text">เปิดใช้งาน</string>
     <string name="enabled_by_admin">เปิดใช้โดยผู้ดูแลระบบ</string>
-    <string name="enabled_fingerprint_unlock">เปิดใช้งานการปลดล็อคด้วยลายนิ้วมือ</string>
+    <string name="enabled_fingerprint_unlock">เปิดใช้งานการปลดล็อกด้วยลายนิ้วมือ</string>
     <string name="enabled_fingerprint_unlock_summary_disabled">การปลดล็อคลายนิ้วมือสามารถเปิดใช้งานได้หลังจากที่คุณได้ตั้งค่าล็อคหน้าจอหลักแล้วเท่านั้น</string>
     <string name="enabled_fingerprint_unlock_summary_enabled">ใช้ลายนิ้วมือเพื่อปลดล็อคอุปกรณ์</string>
     <string name="encrypt_talkback_dialog_message_password">เมื่อคุณป้อนรหัสผ่านเพื่อเริ่มใช้งานอุปกรณ์นี้ บริการความสามารถในการเข้าถึงอย่างเช่น %1$s จะยังไม่พร้อมใช้งาน</string>
@@ -1755,6 +1807,7 @@
     <string name="expand_button_title">ขั้นสูง</string>
     <string name="experimental_category_title">ทดสอบ</string>
     <string name="experimental_preference">(ทดลอง)</string>
+    <string name="extended_title">อุปกรณ์ขยายสัญญาณเครือข่าย</string>
     <string name="external_code_size_label">แอปสำหรับจัดเก็บข้อมูล USB</string>
     <string name="external_data_size_label">ข้อมูลที่จัดเก็บใน USB</string>
     <string name="external_source_switch_title">อนุญาตจากแหล่งที่มานี้</string>
@@ -1774,7 +1827,7 @@
     <string name="failed_to_open_app_settings_toast">ไม่สามารถเปิดการตั้งค่าสำหรับ %1$s</string>
     <string name="fcc_equipment_id">รหัสอุปกรณ์</string>
     <string name="feature_flags_dashboard_title">แฟล็กฟีเจอร์</string>
-    <string name="feature_not_support_split_screen">ฟังก์ชันนี้ไม่รองรับหน้าจอแยก</string>
+    <string name="feature_not_support_split_screen">การทำงานนี้ไม่รองรับหน้าจอแยก</string>
     <string name="filter">ตัวกรอง</string>
     <string name="filter_all_apps">แอปทั้งหมด</string>
     <string name="filter_apps_all">แอปทั้งหมด</string>
@@ -1796,6 +1849,8 @@
     <string name="filter_personal_apps">ส่วนตัว</string>
     <string name="filter_work_apps">งาน</string>
     <string name="filter_write_settings_apps">สามารถแก้ไขการตั้งค่าระบบได้</string>
+    <string name="find_my_bluetooth_earphone">ค้นหาหูฟังของฉัน</string>
+    <string name="find_my_bluetooth_earphone_summary">เล่นเสียงเพื่อค้นหาหูฟังเมื่ออยู่ในระยะ หรือดูตำแหน่งสุดท้ายเมื่ออยู่นอกระยะ</string>
     <string name="fingerprint_add_fingerprint">เพิ่มลายนิ้วมือ</string>
     <string name="fingerprint_add_fingerprint_summary">วางนิ้วของคุณบนเซ็นเซอร์แล้วยกขึ้นหลังจากรู้สึกถึงการสั่น</string>
     <string name="fingerprint_add_max">คุณสามารถเพิ่มลายนิ้วมือได้ถึง %d ลาย</string>
@@ -1968,6 +2023,11 @@
     <string name="homepage_all_settings">การตั้งค่าทั้งหมด</string>
     <string name="homepage_condition_footer_content_description">ยุบ</string>
     <string name="homepage_personal_settings">คำแนะนำ</string>
+    <string name="hotspot_tip_message" formatted="false">"ฮอตสปอตมือถือแบ่งปันข้อมูลมือถือของคุณกับอุปกรณ์อื่นที่สามารถใช้งาน Wi-Fi ได้ ในการเชื่อมต่อกับฮอตสปอตมือถือ: \u0009
+ 1: เปิด Wi-Fi บนอุปกรณ์อื่น
+ 2: เลือก %s ในรายการเครือข่าย Wi-Fi ที่พร้อมใช้งาน 
+ 3: หากจำเป็นต้องใช้รหัสผ่าน ให้ป้อน %s ในการประหยัดแบตเตอรี่ ให้เสียบชาร์จโทรศัพท์ของคุณไว้ตลอดเวลาในขณะที่ใช้งานฮอตสปอตมือถือ "</string>
+    <string name="hotspot_tip_title">ฮอตสปอตมือถือ</string>
     <string name="hwui_force_dark_summary">ลบล้างฟีเจอร์บังคับใช้โหมดมืดให้เปิดตลอดเวลา</string>
     <string name="hwui_force_dark_title">ลบล้างฟีเจอร์บังคับใช้โหมดมืด</string>
     <string name="icon_attributions">ชุดไอคอน</string>
@@ -2144,6 +2204,8 @@
     <string name="language_picker_title">ภาษา</string>
     <string name="language_picker_title_o2">ภาษา (ประเทศ/ภูมิภาค)</string>
     <string name="language_settings">ภาษาและการป้อนข้อมูล</string>
+    <string name="last_factory_reset">การรีเซ็ตเป็นค่าจากโรงงานล่าสุด</string>
+    <string name="last_factory_reset_none">ไม่มี</string>
     <string name="last_synced">ซิงค์ล่าสุดเมื่อ %1$s</string>
     <string name="last_time_used_label">ครั้งสุดท้ายที่ใช้</string>
     <string name="launch_by_default">เปิดโดยค่าเริ่มต้น</string>
@@ -2407,6 +2469,7 @@
     <string name="lockscreen_remote_input">หากอุปกรณ์ล็อกอยู่ จะป้องกันไม่ให้มีการพิมพ์คำตอบหรือข้อความอื่นๆ ในการแจ้งเตือน</string>
     <string name="lockscreen_settings_title">การแสดงผลบนหน้าจอล็อก</string>
     <string name="lockscreen_settings_what_to_show_category">สิ่งที่จะแสดง</string>
+    <string name="long_press_power_button">กดปุ่มเปิด/ปิดเครื่องค้างไว้</string>
     <string name="lost_internet_access_cancel">ใช้ Wi-Fi ต่อไป</string>
     <string name="lost_internet_access_persist">ไม่ต้องแสดงอีก</string>
     <string name="lost_internet_access_switch">สลับไปใช้อินเทอร์เน็ตมือถือ</string>
@@ -2542,7 +2605,10 @@
     <string name="menu_stats_refresh">รีเฟรช</string>
     <string name="menu_stats_total">ยอดใช้งานรวม</string>
     <string name="menu_stats_unplugged">%1$s ตั้งแต่ถอดปลั๊ก</string>
+    <string name="menu_uninstallapps">ถอนการติดตั้ง</string>
     <string name="menu_use_uss">ใช้ Uss</string>
+    <string name="mhs_app">เปิด My Verizon</string>
+    <string name="mhs_call_back_error">การเชื่อมต่อข้อมูลไม่พร้อมใช้งาน</string>
     <string name="misc_files">ไฟล์เบ็ดเตล็ด</string>
     <string name="misc_files_selected_count">เลือก %1$d จาก %2$d</string>
     <string name="misc_files_selected_count_bytes">%1$s จาก %2$s</string>
@@ -2558,6 +2624,11 @@
     <string name="mobile_data_settings_summary_auto_switch">โทรศัพท์จะเปลี่ยนไปใช้ผู้ให้บริการรายนี้โดยอัตโนมัติเมื่ออยู่ในพื้นที่ให้บริการ</string>
     <string name="mobile_data_settings_title">เน็ตมือถือ</string>
     <string name="mobile_data_usage_title">ปริมาณการใช้อินเทอร์เน็ตของแอป</string>
+    <string name="mobile_hotspot_airplane_off_error">เพื่อเปิดฮอตสปอต กรุณาปิดโหมดเครื่องบิน</string>
+    <string name="mobile_hotspot_authoration_error">"เพื่อใช้ฮอตสปอตมือถือ คุณจะต้องสมัครใช้งานบริการฮอตสปอตมือถือ
+
+เพื่อสมัครใช้งานฮอตสปอตมือถือ ให้เยี่ยมชม My Verizon หรือโทรหาฝ่ายดูแลลูกค้าที่ (800) 922–0204"</string>
+    <string name="mobile_hotspot_data_off_error">เพื่อเปิดฮอตสปอต กรุณาเปิดข้อมูลมือถือ</string>
     <string name="mobile_insert_sim_card">โปรดใส่ซิมการ์ดและรีสตาร์ท</string>
     <string name="mobile_network_active_esim">ใช้งานอยู่/ซิมที่ดาวน์โหลด</string>
     <string name="mobile_network_active_sim">ใช้งานอยู่/ซิม</string>
@@ -2695,6 +2766,8 @@
     <string name="nfc_quick_toggle_title">NFC</string>
     <string name="nfc_secure_settings_title">รักษาความปลอดภัยของ NFC</string>
     <string name="nfc_secure_toggle_summary">อนุญาตการใช้การชำระเงินผ่าน NFC และขนส่งสาธารณะเฉพาะเวลาที่ไม่ได้ล็อกหน้าจอเท่านั้น</string>
+    <string name="nfc_uicc_sim1">ซิม 1</string>
+    <string name="nfc_uicc_sim2">ซิม 2</string>
     <string name="night_display_activation_off_custom">ปิดจนถึง %1$s</string>
     <string name="night_display_activation_off_manual">ปิดเลย</string>
     <string name="night_display_activation_off_twilight">ปิดจนถึงพระอาทิตย์ตกดิน</string>
@@ -2738,6 +2811,7 @@
     <string name="no_internet_access_text">เครือข่ายนี้ไม่มีการเข้าถึงอินเทอร์เน็ต ยังต้องการเชื่อมต่ออยู่ไหม</string>
     <string name="no_memory_use_summary">ไม่มีหน่วยความจำที่ใช้ใน 3 ชั่วโมงล่าสุด</string>
     <string name="no_network">ไม่มีบริการเน็ตเวิร์ก</string>
+    <string name="no_network_extenders">ไม่มีอุปกรณ์ขยายสัญญาณเครือข่าย</string>
     <string name="no_notification_assistant">ไม่มี</string>
     <string name="no_notification_listeners">ไม่มีแอปใดที่ติดตั้งไว้ขอเข้าถึงการแจ้งเตือน</string>
     <string name="no_running_services">ไม่มีอะไรทำงานอยู่</string>
@@ -2748,6 +2822,7 @@
     <string name="no_vr_listeners">แอปที่ติดตั้งอยู่ไม่ได้ขอให้เรียกใช้เป็นบริการตัวช่วย VR</string>
     <string name="not_allowed">ซิมการ์ดของคุณไม่อนุญาตให้เชื่อมต่อกับเครือข่ายนี้</string>
     <string name="not_battery_optimizing">ไม่ได้ใช้การเพิ่มประสิทธิภาพแบตเตอรี่</string>
+    <string name="not_connected_to_the_verizon_network">ไม่ได้เชื่อมต่อกับเครือข่าย Verizon</string>
     <string name="not_installed">ไม่ได้ติดตั้งสำหรับผู้ใช้นี้</string>
     <string name="not_optimize_summery">อาจส่งผลกระทบกับประสิทธิภาพแบตเตอรี่</string>
     <string name="not_optimized_apps">แอปที่ไม่ได้ปรับให้เหมาะสมที่สุด</string>
@@ -2893,6 +2968,7 @@
     <string name="oneplus_aod_smart_display_calendar_event">กิจกรรมในปฏิทิน</string>
     <string name="oneplus_aod_smart_display_music_info">โปรแกรมเล่นสื่อ</string>
     <string name="oneplus_aod_smart_display_title">ข้อมูลเชิงบริบท</string>
+    <string name="oneplus_ap_chanel">ช่อง AP</string>
     <string name="oneplus_app_alipay">Alipay</string>
     <string name="oneplus_app_display_compatibility">โหมดความเข้ากันได้</string>
     <string name="oneplus_app_display_fullscreen">โหมดเต็มหน้าจอ</string>
@@ -2906,7 +2982,7 @@
     <string name="oneplus_app_locker_summary">เลือกแอปที่จะเข้ารหัส</string>
     <string name="oneplus_app_locker_switch">ซ่อนเนื้อหาการแจ้งเตือน</string>
     <string name="oneplus_app_locker_switch_summary">เนื้อหาการแจ้งเตือนจะถูกซ่อนจากแอปที่เปิดใช้งานตัวล็อคแอป</string>
-    <string name="oneplus_app_locker_title">ตัวล็อคแอป</string>
+    <string name="oneplus_app_locker_title">ล็อกเกอร์แอป</string>
     <string name="oneplus_app_network_settings">ควบคุมการใช้ดาต้า</string>
     <string name="oneplus_app_notification_allow_led">เปิดไฟ LED</string>
     <string name="oneplus_app_notification_not_allow_led">ปิดไฟ LED</string>
@@ -2949,8 +3025,11 @@
 
 ตัวช่วยประหยัดพลังงานแบตเตอรี่จะปิดโดยอัตโนมัติเวลาที่เครื่องของคุณกำลังชาร์จ"</string>
     <string name="oneplus_battery_saver_summary">คุณสมบัตินี้อาจใช้งานไม่ได้สำหรับบางเกม</string>
+    <string name="oneplus_bed_time_mode_summary">ใช้ OnePlus Warp Wireless Charger โดยไม่ส่งเสียง</string>
+    <string name="oneplus_bed_time_mode_title">โหมดเวลาเข้านอน</string>
+    <string name="oneplus_bed_time_mode_wall_text">สำหรับการลดเสียงของเครื่องชาร์จไร้สาย OnePlus Warp ความเร็วในการชาร์จจะลดลงเช่นกัน ต้องวางโทรศัพท์ไว้บนเครื่องชาร์จเพื่อเข้าสู่โหมดนอนหลับ</string>
     <string name="oneplus_bg_data_condition_turn_off">ปิดตัวประหยัดแบตเตอรี่</string>
-    <string name="oneplus_black_screen_gestures_settings_title">เจสเชอร์ปิดหน้าจอ</string>
+    <string name="oneplus_black_screen_gestures_settings_title">ท่าทางปิดหน้าจอ</string>
     <string name="oneplus_block_all_notifications">ปิดกั้นการแจ้งเตือนทั้งหมด</string>
     <string name="oneplus_block_all_notifications_summary">ปิดกั้นการแจ้งเตือนทั้งหมดจากแอป</string>
     <string name="oneplus_block_notifications">ปิดกั้นการแจ้งเตือน</string>
@@ -3004,6 +3083,7 @@
     <string name="oneplus_connected_devices_dashboard_summary">NFC, แคสต์, การพิมพ์</string>
     <string name="oneplus_connected_devices_dashboard_title">บลูทูธ &amp; การเชื่อมต่ออุปกรณ์</string>
     <string name="oneplus_cpu">ตัวประมวลผล</string>
+    <string name="oneplus_custom_drop_title">ละทิ้งการเปลี่ยนแปลงหรือไม่</string>
     <string name="oneplus_custom_time">ช่วงเวลาที่กำหนดเอง</string>
     <string name="oneplus_customization">การปรับแต่งแถบนำทาง</string>
     <string name="oneplus_customization_summary">กดค้าง, แตะสองครั้ง</string>
@@ -3028,7 +3108,7 @@
     <string name="oneplus_device_name">เมื่อใช้ Wi-Fi Direct หรือบลูทูธ จะสามารถมองเห็นชื่อโทรศัพท์ได้</string>
     <string name="oneplus_device_start_date">วันเริ่มต้น</string>
     <string name="oneplus_device_warranty_expried_date">วันหมดอายุประกัน</string>
-    <string name="oneplus_disable_aosp_face_lock_message">การเปิดใช้งานการปลดล็อคด้วยใบหน้า OnePlus จะไปปิดใช้งานใบหน้าที่เชื่อถือได้ของ Smart Lock คุณต้องการดำเนินการต่อหรือไม่?</string>
+    <string name="oneplus_disable_aosp_face_lock_message">การเปิดใช้งานการปลดล็อคด้วยใบหน้า OnePlus จะปิดใช้งานใบหน้าที่เชื่อถือได้ของ Smart Lock คุณต้องการดำเนินการต่อหรือไม่</string>
     <string name="oneplus_disconnected">ตัดการเชื่อมต่อ</string>
     <string name="oneplus_display_dashboard_no_theme_summary">แถบสถานะ, การแจ้งเตือนอัตโนมัติเมื่อหยิบเครื่อง, ภาพพื้นหลัง</string>
     <string name="oneplus_display_dashboard_no_theme_summary_801">แถบสถานะ, การแจ้งเตือนอัตโนมัติเมื่อหยิบเครื่อง, โหมดกลางคืน, โหมดการอ่าน</string>
@@ -3051,7 +3131,9 @@
     <string name="oneplus_double_tap_power_gesture_app">เลือกฟังก์ชัน</string>
     <string name="oneplus_double_tap_power_gesture_camera">กล้อง</string>
     <string name="oneplus_double_tap_power_gesture_wallet">รูดการ์ด (กระเป๋าสตางค์)</string>
+    <string name="oneplus_double_tap_power_none">ไม่มีเลย</string>
     <string name="oneplus_doze_summary_801">แสดงนาฬิกาและข้อมูลอื่น ๆ บนหน้าจอสแตนด์บาย</string>
+    <string name="oneplus_doze_summary_new">แสดงเวลา วันที่ และการแจ้งเตือนบนหน้าจอ</string>
     <string name="oneplus_doze_title">การแสดงการแจ้งเตือนโดยไม่ต้องเปิดหน้าจอ</string>
     <string name="oneplus_doze_title_801">การแจ้งเตือนอัตโนมัติเมื่อหยิบเครื่อง</string>
     <string name="oneplus_draw_gesture_start_none">ไม่มีเลย</string>
@@ -3153,15 +3235,18 @@
     <string name="oneplus_fnatic_mode_summary">ยกประดับประสบการณ์การเล่นเกมของคุณ</string>
     <string name="oneplus_fnatic_mode_summary_2">โหมดการเล่นเกมขั้นสูง สร้างโดยบรรดาผู้บุกเบิก Esports</string>
     <string name="oneplus_fnatic_mode_title">โหมด Fnatic</string>
-    <string name="oneplus_fnatic_mode_unlock_wallpapers">คุณได้ปลดล็อคภาพพื้นหลังพิเศษ %1$s</string>
+    <string name="oneplus_fnatic_mode_unlock_wallpapers">คุณได้ปลดล็อค %1$s ภาพพื้นหลังพิเศษ</string>
     <string name="oneplus_fnatic_mode_view_in_wallpapers">ดูในภาพพื้นหลัง</string>
-    <string name="oneplus_fnatic_mode_wallpapers_added">เพิ่มภาพพื้นหลัง %1$s แล้ว</string>
+    <string name="oneplus_fnatic_mode_wallpapers_added">%1$s เพิ่มภาพพื้นหลังแล้ว</string>
     <string name="oneplus_font_preview_summary">แบ่งปันเทคโนโลยีที่ดีที่สุดกับโลกไปพร้อมกับคุณ</string>
     <string name="oneplus_font_style">ฟอนต์</string>
     <string name="oneplus_font_switch">เปลี่ยนฟอนต์</string>
     <string name="oneplus_force_factory_reset_summary">เปิดใช้งานรหัสผ่านตอนเปิดเครื่องอยู่ ที่เก็บข้อมูลภายในจะถูกลบทิ้ง</string>
     <string name="oneplus_forum_award_summary">ชุมชนนี้เป็นของคุณ คุณเท่านั้นที่สามารถนิยามเส้นทางของเราได้ เมื่อทำงานร่วมกัน เราจะกำหนดและปรับปรุงไปพร้อมกัน การแบ่งออกเป็นบิลด์และการเขียนโค้ด ทั้งหมดนี้เพื่อคุณ ขอบคุณที่ร่วมตามความฝันไปกับเรา!</string>
     <string name="oneplus_forum_award_title">รางวัล</string>
+    <string name="oneplus_front_camera_app_display_fullscreen_summary">หากเนื้อหาของแอปถูกพื้นที่แสดงผลกล้องหน้าตัดออก กรุณาสลับไปเป็นโหมดค่าเริ่มต้น</string>
+    <string name="oneplus_front_camera_display_choose_title">เลือกว่าจะซ่อนกล้องหน้าหรือไม่</string>
+    <string name="oneplus_front_camera_display_title">พื้นที่แสดงผลกล้องหน้า</string>
     <string name="oneplus_fullscreen_back_guide_summary">ปัดนิ้วเข้าด้านในจากขอบซ้ายล่างหรือขวาล่างของหน้าจอ</string>
     <string name="oneplus_fullscreen_back_guide_summary_deprecated">ปัดขึ้นจากด้านซ้ายหรือขวาของด้านล่างหน้าจอ</string>
     <string name="oneplus_fullscreen_back_guide_title">ย้อนกลับ</string>
@@ -3196,7 +3281,7 @@
     <string name="oneplus_game_mode_ad_summary">เพิ่มรายละเอียดส่วนที่สว่างและมืดของจอแสดงผลเกม</string>
     <string name="oneplus_game_mode_ad_title">การเพิ่มประสิทธิภาพการแสดงผลเกม</string>
     <string name="oneplus_game_mode_app_list">รายการแอปโหมดเกม</string>
-    <string name="oneplus_gaming_mode">โหมดกำลังเล่นเกม</string>
+    <string name="oneplus_gaming_mode">โหมดการเล่นเกม</string>
     <string name="oneplus_gaming_mode_add_apps">เพิ่มแอปสำหรับโหมด กำลังเล่นเกม</string>
     <string name="oneplus_gaming_mode_close_automatic_brightness">ปิดการปรับความสว่างอัตโนมัติ</string>
     <string name="oneplus_gaming_mode_close_automatic_brightness_summary">ล็อคความสว่างหน้าจอเมื่อโหมด กำลังเล่นเกม เปิดอยู่</string>
@@ -3216,7 +3301,7 @@
     <string name="oneplus_gesture_navigation_bar_summary">ใช้รูปแบบเพื่อแทนที่แถบนำทาง</string>
     <string name="oneplus_gesture_navigation_bar_summary_for_bottom">ปัดนิ้วขึ้นด้านบนจากขอบด้านล่างสุดเพื่อย้อนกลับ</string>
     <string name="oneplus_gesture_navigation_bar_summary_for_deprecated">ปัดนิ้วเข้าด้านในจากขอบซ้ายหรือขวาเพื่อย้อนกลับ</string>
-    <string name="oneplus_gesture_navigation_bar_title">รูปแบบการนำทาง</string>
+    <string name="oneplus_gesture_navigation_bar_title">ท่าทางการนำทาง</string>
     <string name="oneplus_gesture_navigation_bar_title_for_bottom">ท่าทางการนำทาง (ด้านล่างสุด)</string>
     <string name="oneplus_gesture_navigation_bar_title_for_deprecated">ท่าทางการนำทาง (ซ้ายและขวา)</string>
     <string name="oneplus_gesture_of_answer_call_info">เมื่อมีสายเรียกเข้า คุณสามารถรับสายได้โดยการยกโทรศัพท์ขึ้นแนบหู</string>
@@ -3238,6 +3323,10 @@
     <string name="oneplus_gestures_open_shelf">เปิด Shelf</string>
     <string name="oneplus_gestures_take_video">อัดวิดีโอ</string>
     <string name="oneplus_getlog_title">นำล็อกมา</string>
+    <string name="oneplus_global_dark_mode_description">ทำให้แอปที่ไม่รองรับธีมสีเข้มเป็นสีเข้มด้วย แอปอื่นอาจไม่ทำงานตามที่คาดไว้ คุณสามารถปิดใช้งานได้ในรายการด้านล่าง</string>
+    <string name="oneplus_global_dark_mode_only_valid_in_dark_mode">ฟีเจอร์นี้พร้อมใช้งานภายใต้โทนสีเข้มเท่านั้น</string>
+    <string name="oneplus_global_dark_mode_summary">ทำให้แอปอื่นที่ไม่ปรับให้เข้ากับโหมดสีมืดปรับสีให้เข้มขึ้นโดยอัตโนมัติเมื่อเปิดใช้งานโทนสีเข้มอยู่</string>
+    <string name="oneplus_global_dark_mode_title">เปิดใช้งานโทนสีเข้มในแอปอื่นเพิ่มเติม</string>
     <string name="oneplus_google_tts">ข้อมูลเสียง Google TTS</string>
     <string name="oneplus_gps_using">กำลังใช้ GPS</string>
     <string name="oneplus_h2_contributors">ผู้สนับสนุน HydrogenOS</string>
@@ -3253,6 +3342,8 @@
     <string name="oneplus_hardware_keys_action_split_screen">ปิด/เปิด การแยกหน้าจอ</string>
     <string name="oneplus_health_safety_information">ข้อมูลสุขภาพ &amp; ความปลอดภัย</string>
     <string name="oneplus_hearing_aid">ความเข้ากันได้กับการช่วยฟัง</string>
+    <string name="oneplus_hide_front_camera_display_summary">ไม่มีเนื้อหาที่สามารถแสดงผลในพื้นที่นี้ได้</string>
+    <string name="oneplus_hide_front_camera_display_title">ซ่อนกล้องหน้า</string>
     <string name="oneplus_hide_navigation_bar">ซ่อนแถบนำทาง</string>
     <string name="oneplus_hide_navkeys">ซ่อนแถบนำทาง</string>
     <string name="oneplus_hide_navkeys_summary">เพิ่มปุ่มเพื่อซ่อนหรือแสดงแถบนำทาง</string>
@@ -3278,7 +3369,7 @@
     <string name="oneplus_lab_features">ฟีเจอร์ห้องปฏิบัติการ</string>
     <string name="oneplus_lab_feedback_toast">ขอขอบคุณสำหรับข้อเสนอแนะของคุณ!</string>
     <string name="oneplus_lab_is_like">คุณชอบฟีเจอร์นี้หรือไม่</string>
-    <string name="oneplus_lab_like">ชอบ</string>
+    <string name="oneplus_lab_like">ถูกใจ</string>
     <string name="oneplus_laboratory">ห้องปฏิบัติการ OnePlus</string>
     <string name="oneplus_laboratory_activite_feature">เปิดใช้งาน</string>
     <string name="oneplus_laboratory_community_rating">การจัดอันดับ</string>
@@ -3311,6 +3402,22 @@
     <string name="oneplus_lockscreen_settings_title">การกำหนดหน้าจอล็อค</string>
     <string name="oneplus_max_shortcuts_tips">คุณสามารถเพิ่มทางลัดได้สูงสุด 6 รายการ</string>
     <string name="oneplus_media_ring_summary">ปิดเสียงสื่อต่าง ๆ</string>
+    <string name="oneplus_memc_close">ปิด</string>
+    <string name="oneplus_memc_game">การชดเชยภาพเคลื่อนไหวในเกม</string>
+    <string name="oneplus_memc_game_summary">การเปิดการชดเชยภาพเคลื่อนไหวในเกมต้องการสลับความละเอียดไปเป็น FHD+</string>
+    <string name="oneplus_memc_more_support_apps">แอปที่รองรับเพิ่มเติม</string>
+    <string name="oneplus_memc_notice">ในโหมดนี้ อัตราเฟรมวิดีโอจะเพิ่มขึ้น ลดอาการเบลอในภาพเคลื่อนไหวของกราฟิก ช่วยให้คมชัดขึ้นและราบรื่นขึ้น มีผลเฉพาะในระหว่างการเล่นเต็มหน้าจอเท่านั้น</string>
+    <string name="oneplus_memc_open">เปิด</string>
+    <string name="oneplus_memc_support_apps">แอปที่รองรับ</string>
+    <string name="oneplus_memc_support_no_apps">ไม่มีการติดตั้งแอปที่รองรับ</string>
+    <string name="oneplus_memc_video">การปรับกราฟิกภาพเคลื่อนไหวให้ราบรื่น</string>
+    <string name="oneplus_memc_video_effect">เอฟเฟ็กต์การชดเชย</string>
+    <string name="oneplus_memc_video_extreme">รุนแรง</string>
+    <string name="oneplus_memc_video_nosupport_extreme_summary">การเปิดคุณภาพสูงสุดต้องการสลับความละเอียดไปเป็น FHD+</string>
+    <string name="oneplus_memc_video_nosupport_extreme_text">กำลังสลับไปเป็นความละเอียด QHD+ การชดเชยกราฟิกภาพเคลื่อนไหวถูกจำกัด</string>
+    <string name="oneplus_memc_video_smooth">ราบรื่น</string>
+    <string name="oneplus_memc_video_theacme_summary">อัตราเฟรมวิดีโอจะเพิ่มขึ้นเป็น 120 fps เพื่อให้ได้กราฟิกที่ราบรื่นที่สุด โดยอาจเป็นสาเหตุให้เกิดการสิ้นเปลืองพลังงานเพิ่มเติม ส่วนความละเอียด QHD+ ยังไม่รองรับเป็นการชั่วคราว</string>
+    <string name="oneplus_memc_video_theacme_title">การปรับภาพเคลื่อนไหวขั้นสูงให้ราบรื่น</string>
     <string name="oneplus_mobile_device_name_title">ชื่อโทรศัพท์</string>
     <string name="oneplus_mode_choose">การเลือกโหมด</string>
     <string name="oneplus_mode_settings">การตั้งค่าแถบเลื่อนการเตือน</string>
@@ -3359,7 +3466,7 @@
     <string name="oneplus_none_default_gallery">ไม่มีแกลเลอรี่เริ่มต้น</string>
     <string name="oneplus_none_default_music">ไม่มีตัวเล่นเพลงเริ่มต้น</string>
     <string name="oneplus_normal_clear_way">ล้างธรรมดา</string>
-    <string name="oneplus_normal_clear_way_summary">ล้างรายการงานและแคชโดยไม่ล้างการประมวลผลในเบื้องหลัง</string>
+    <string name="oneplus_normal_clear_way_summary">ล้างรายการงานและแคชโดยไม่ต้องล้างการประมวลผลเบื้องหลัง</string>
     <string name="oneplus_not_disturb_on">ห้ามรบกวน เปิดอยู่</string>
     <string name="oneplus_not_show">ไม่ต้องแสดงอีก</string>
     <string name="oneplus_notch_display_area">บาก</string>
@@ -3379,7 +3486,7 @@
     <string name="oneplus_notification_ringtone_mode">เฉพาะในโหมดเสียงเรียกเข้า</string>
     <string name="oneplus_notification_ringtone_silent_mode">ตลอดเวลา</string>
     <string name="oneplus_notification_ringtone_title">เสียงเรียกเข้าการแจ้งเตือนในหูฟัง</string>
-    <string name="oneplus_notification_silence_title">อื่น ๆ</string>
+    <string name="oneplus_notification_silence_title">อื่นๆ</string>
     <string name="oneplus_notification_sound_default">การแจ้งเตือนเริ่มต้น</string>
     <string name="oneplus_notification_ways">โหมดการแสดงผล</string>
     <string name="oneplus_notification_ways_title">วิธีการแสดงการแจ้งเตือน</string>
@@ -3390,6 +3497,10 @@
     <string name="oneplus_notifications_free">ฟรี</string>
     <string name="oneplus_notifications_meet">ครบ</string>
     <string name="oneplus_o2_contributors">ผู้สนับสนุน OxygenOS</string>
+    <string name="oneplus_open_bed_time_mode_schedule_summary">เปิดในช่วงเวลาที่กำหนดเอง</string>
+    <string name="oneplus_open_bed_time_mode_schedule_title">กำหนดเวลา</string>
+    <string name="oneplus_open_bed_time_mode_summary">คุณสามารถเปิดโหมดเวลาเข้านอนได้ด้วยตนเอง</string>
+    <string name="oneplus_open_bed_time_mode_title">โหมดเวลาเข้านอน</string>
     <string name="oneplus_opfinger_input_completed_comfirm">ยืนยัน</string>
     <string name="oneplus_opfinger_input_completed_sub">การติดตั้งลายนิ้วมือเสร็จสมบูรณ์ คลิก \"ยืนยัน\" เพื่อดำเนินต่อ</string>
     <string name="oneplus_opfinger_input_completed_title">การลงทะเบียนเสร็จสมบูรณ์</string>
@@ -3433,6 +3544,7 @@
     <string name="oneplus_preference_settings_turn_on_time">ตั้งแต่</string>
     <string name="oneplus_prior_to_use_you_need_to">ก่อนใช้งานคุณจำเป็นต้อง:</string>
     <string name="oneplus_privacy_policy">นโยบายความเป็นส่วนตัว</string>
+    <string name="oneplus_privacy_protection_title">พื้นที่ที่เข้ารหัสไว้</string>
     <string name="oneplus_product_info_introduce">ข้อมูลของอุปกรณ์ &amp; บัตรรับประกัน</string>
     <string name="oneplus_product_info_summary">บัตรรับประกัน, รายการที่ติดตั้งไว้ล่วงหน้า</string>
     <string name="oneplus_proximity_summary_disable">ไม่พร้อมใช้งานเนื่องจากการแสดงการแจ้งเตือนโดยไม่ต้องเปิดหน้าจอปิดอยู่</string>
@@ -3470,6 +3582,7 @@
     <string name="oneplus_quickpay_way_alipay_scanning">การสแกน Alipay</string>
     <string name="oneplus_quickpay_way_paytm">Paytm</string>
     <string name="oneplus_quickpay_way_wecaht_qrcode">รหัส QR ของ WeChat</string>
+    <string name="oneplus_quickpay_way_wecaht_ridecode">QR code ไปยัง WeChat</string>
     <string name="oneplus_quickpay_way_wecaht_scanning">การสแกน WeChat</string>
     <string name="oneplus_ramboost_description">ด้วยการเรียนรู้วิธีการใช้งานโทรศัพท์ของคุณ การบูสต์แรม RAM สามารถคาดการณ์แอปที่คุณต้องการเปิดใช้และข้อมูลที่คุณต้องการโหลดได้ และใช้ประโยชน์จากความจุ RAM อย่างเต็มที่เพิ่มประสิทธิภาพการใช้งานประจำวันของคุณ</string>
     <string name="oneplus_ramboost_switch_summary">เพิ่มการใช้งาน RAM ตามการใช้งานของคุณ</string>
@@ -3497,7 +3610,7 @@
     <string name="oneplus_reading_mode_turn_on_chromatic">เปิดเอฟเฟกต์สี</string>
     <string name="oneplus_reading_mode_turn_on_mono">เปิดเอฟเฟกต์ขาวดำ</string>
     <string name="oneplus_reading_mode_turn_on_tips">เมื่อคุณเปิดโหมดการอ่านด้วยตัวเอง จะมีการปฏิบัติตามกฎข้างต้น ยกเว้นในขณะที่เปิดอัตโนมัติโดยแอปที่ระบุ</string>
-    <string name="oneplus_receive_notifications">การแจ้งเตือน OnePlus</string>
+    <string name="oneplus_receive_notifications">การแจ้งเตือนจาก OnePlus</string>
     <string name="oneplus_receive_notifications_agree">รับข่าวสารจาก OnePlus</string>
     <string name="oneplus_receive_notifications_summary">ประสงค์จะรับข่าวสารอย่างเป็นทางการ, ข้อมูลผลิตภัณฑ์, แบบสอบถาม และคำแนะนำการซื้อ/ข้อมูลคูปองจาก OnePlus</string>
     <string name="oneplus_recognized_bluetooth_car_kits">รู้จักบลูทูธบนยานพาหนะ</string>
@@ -3505,7 +3618,7 @@
     <string name="oneplus_recommended_opening">แนะนำ</string>
     <string name="oneplus_reenroll_fingerprint_tips">กรุณาป้อนลายนิ้วมือของคุณอีกครั้งหลังเปลี่ยนฟิล์มป้องกันโทรศัพท์มือถือ เพื่อรับประกันความแม่นยำของลายนิ้วมือ</string>
     <string name="oneplus_regulatory_information">การตรวจสอบ</string>
-    <string name="oneplus_remove">ลบ</string>
+    <string name="oneplus_remove">เอาออก</string>
     <string name="oneplus_rename_fingerprint_list">เปลี่ยนชื่อลายนิ้วมือ</string>
     <string name="oneplus_reset_all_data">รีเซ็ตข้อมูลทั้งหมด</string>
     <string name="oneplus_reset_network">กำลังรีเซ็ตการตั้งค่าเน็ตเวิร์ก กรุณารอสักครู่...</string>
@@ -3608,11 +3721,12 @@
     <string name="oneplus_select_fingerprint_animation_effect_2">คลื่น</string>
     <string name="oneplus_select_fingerprint_animation_effect_3">ลายแถบ</string>
     <string name="oneplus_select_fingerprint_animation_effect_4">ระลอก</string>
+    <string name="oneplus_select_fingerprint_animation_effect_6">พลังงาน</string>
     <string name="oneplus_select_fingerprint_animation_effect_mcl">McLaren</string>
     <string name="oneplus_select_fingerprint_animation_effect_none">ไม่มีเลย</string>
     <string name="oneplus_select_fingerprint_animation_effect_title">เลือกเอฟเฟ็กต์ภาพเคลื่อนไหวลายนิ้วมือ</string>
     <string name="oneplus_service_messaging_summary">อนุญาตให้ OnePlus ส่งพร้อมท์บริการการส่งข้อความบนคลาวด์ให้กับคุณเพื่อให้มั่นใจได้ว่าคุณจะได้รับประสบการณ์ที่ดีที่สุดในการใช้งานผลิตภัณฑ์</string>
-    <string name="oneplus_service_messaging_title">การส่งข้อความเกี่ยวกับบริการของ OnePlus</string>
+    <string name="oneplus_service_messaging_title">การส่งข้อความบริการ OnePlus</string>
     <string name="oneplus_set_time">โหมดกลางคืนที่กำหนดเวลาไว้</string>
     <string name="oneplus_setting_ringtone">ตั้งเสียงเรียกเข้า</string>
     <string name="oneplus_setting_sim_ringtone_switch">ตั้งเสียงเรียกเข้าสำหรับแต่ละซิมการ์ด</string>
@@ -3627,6 +3741,8 @@
     <string name="oneplus_shortcuts_preview">ตัวอย่างทางลัด</string>
     <string name="oneplus_shortcuts_settings">การตั้งค่าทางลัด</string>
     <string name="oneplus_shortcuts_title">ทางลัด</string>
+    <string name="oneplus_show_front_camera_display_summary">อนุญาตให้แสดงผลเนื้อหาในพื้นที่นี้</string>
+    <string name="oneplus_show_front_camera_display_title">แสดงกล้องหน้า</string>
     <string name="oneplus_show_notch_display_summary">อนุญาตให้แอปใช้พื้นที่รอยบาก</string>
     <string name="oneplus_show_notch_display_title">แสดงพื้นที่รอยบาก</string>
     <string name="oneplus_show_pattern_and_password">แสดงรหัสผ่านหรือรูปแบบ</string>
@@ -3637,6 +3753,7 @@
     <string name="oneplus_sim1_ringtone_switch">ซิมการ์ด 1</string>
     <string name="oneplus_sim2_ringtone_switch">ซิมการ์ด 2</string>
     <string name="oneplus_simcard_title">ซิม</string>
+    <string name="oneplus_sla_down_load_app_summary">การเร่งความเร็วการดาวน์โหลดจะไม่พร้อมใช้งานในขณะที่ฮอตสปอตหรือ Wi‑Fi Direct เปิดอยู่</string>
     <string name="oneplus_sleep_standby_summary">ปรับประสิทธิภาพของอายุแบตเตอรี่ให้เหมาะสมที่สุด (เช่น การปิดใช้งานการเชื่อมต่อเครือข่าย) ในขณะที่คุณนอนหลับ ซึ่งจะทำให้แอปต่าง ๆ ไม่สามารถรับการแจ้งเตือนได้ในเวลาที่เหมาะสม</string>
     <string name="oneplus_sleep_standby_title">การปรับการสแตนด์บายขณะนอนหลับให้เหมาะสมที่สุด</string>
     <string name="oneplus_smart_background_management_title">Aggressive doze และการไฮเบอร์เนตแอป</string>
@@ -3646,13 +3763,15 @@
     <string name="oneplus_snooze_options_title">เลื่อนการแจ้งเตือนจากแถบการแจ้งเตือน</string>
     <string name="oneplus_sound_and_vibrate">เสียงและการสั่น</string>
     <string name="oneplus_sound_settings_summary">ห้ามรบกวน, โหมดหูฟัง</string>
-    <string name="oneplus_sound_tuner">Dolby Atmos</string>
+    <string name="oneplus_sound_tuner">Dolby Atoms</string>
     <string name="oneplus_status_summary">หมายเลขโทรศัพท์, สัญญาณ และอื่น ๆ</string>
     <string name="oneplus_stop_run">บังคับให้หยุด</string>
     <string name="oneplus_storage">ที่เก็บข้อมูล</string>
     <string name="oneplus_sunrise_sunset">เปิดใช้งานอัตโนมัติตั้งแต่ดวงอาทิตย์ตกจนถึงดวงอาทิตย์ขึ้น</string>
+    <string name="oneplus_support_summary">เคล็ดลับและคำถามที่พบบ่อยเกี่ยวกับการใช้งานอุปกรณ์</string>
+    <string name="oneplus_support_title">เคล็ดลับและการสนับสนุน</string>
     <string name="oneplus_supported_apps">แอปที่รองรับ</string>
-    <string name="oneplus_suspension_notice">การแจ้งเตือนล่วงหน้า</string>
+    <string name="oneplus_suspension_notice">การเตือนแจ้งล่วงหน้า</string>
     <string name="oneplus_suspension_notice_summary">อนุญาตให้แอปแสดงการแจ้งเตือนล่วงหน้า</string>
     <string name="oneplus_switch">OnePlus Switch</string>
     <string name="oneplus_switch_resolution_kill_process_confirm">สวิตช์</string>
@@ -3734,6 +3853,7 @@
     <string name="oneplus_top_level_security_summary">ลายนิ้วมือ, การปลดล็อคด้วยใบหน้า, การกู้ภัยฉุกเฉิน</string>
     <string name="oneplus_top_level_sound_summary">ห้ามรบกวน, โหมดหูฟัง, เสียงเรียกเข้า</string>
     <string name="oneplus_top_level_system_summary">ภาษาและแป้นพิมพ์, เวลา, รีเซ็ต, การอัปเดตระบบ</string>
+    <string name="oneplus_top_level_system_summary_verizon">ภาษาและแป้นพิมพ์, เวลา, รีเซ็ต</string>
     <string name="oneplus_touch_vibrate">การสั่นขณะสัมผัส</string>
     <string name="oneplus_turn_off_time">ถึง</string>
     <string name="oneplus_turn_on_feature_cancel">ยกเลิก</string>
@@ -3762,12 +3882,17 @@
     <string name="oneplus_video_enhancer">เอฟเฟกต์สีสันสดใส</string>
     <string name="oneplus_video_enhancer_footer">เสริมคุณภาพสีในขณะที่เล่นวิดีโอ</string>
     <string name="oneplus_video_enhancer_summary">เสริมคุณภาพสีในขณะที่เล่นวิดีโอ</string>
+    <string name="oneplus_voice_assistant">ผู้ช่วยเสียง</string>
     <string name="oneplus_volume_keys_adjust">ใช้ปุ่มระดับเสียงเพื่อปรับ</string>
     <string name="oneplus_volume_keys_adjust_media">ระดับเสียงสื่อต่าง ๆ</string>
     <string name="oneplus_volume_keys_adjust_ringtones">ระดับเสียงเรียกเข้า</string>
     <string name="oneplus_weak_text_reminding">ข้อความเท่านั้น</string>
     <string name="oneplus_weak_text_reminding_summary">อนุญาตให้แอปแสดงการแจ้งเตือนล่วงหน้า</string>
     <string name="oneplus_wellbeing_grayscale_open_tip">โหมดกลางคืนไม่พร้อมใช้งานในขณะนี้เนื่องจากฟีเจอร์ \"โทนสีเทา\" ถูกเปิดใช้งานอยู่</string>
+    <string name="oneplus_wifi_6_standard_hotspot_cancel">ยกเลิก</string>
+    <string name="oneplus_wifi_6_standard_hotspot_enable">เปิดใช้งาน</string>
+    <string name="oneplus_wifi_6_standard_hotspot_title">ฮอตสปอตมาตรฐาน Wi‑Fi 6</string>
+    <string name="oneplus_wifi_6_standard_hotspot_warning">อุปกรณ์บางรายการที่จะเชื่อมต่ออาจไม่รองรับมาตรฐาน Wi‑Fi 6 ดำเนินการเปิดใช้งานต่อไปหรือไม่</string>
     <string name="oneplus_wifi_ap_error">กรุณาใส่ซิมการ์ด</string>
     <string name="oneplus_wifi_hidden_network_warning">"หากเราเตอร์ของคุณปิดใช้งานการกระจายข้อมูล SSID คุณควรเลือก \"ใช่\" เพื่อเชื่อมต่อเครือข่ายที่ซ่อนอยู่
 
@@ -3788,6 +3913,8 @@
     <string name="oneplus_zen_mode_automation_settings_title">เปิดโดยอัตโนมัติ</string>
     <string name="oneplus_zen_mode_duration_settings_title">ระยะเวลา</string>
     <string name="oneplus_zen_mode_duration_summary_always_prompt">ถามทุกครั้ง (นอกจากจะเปิดไว้โดยอัตโนมัติ)</string>
+    <string name="oneplus_zen_mode_duration_summary_forever">จนกว่าคุณจะปิด (เว้นแต่จะถูกเปิดขึ้นโดยอัตโนมัติ)</string>
+    <string name="oneplus_zen_mode_duration_summary_time_minutes">%d (เว้นแต่จะถูกเปิดขึ้นโดยอัตโนมัติ)</string>
     <string name="oneplus_zen_mode_footer_info">เมื่อ ห้ามรบกวน เปิดอยู่ เสียงและการสั่นจะถูกปิด ยกเว้นกรณีที่คุณอนุญาตในข้างต้น</string>
     <string name="oneplus_zen_mode_mode_manual_switch_summary">คุณสามารถเปิดโหมดห้ามรบกวนได้ด้วยตนเอง</string>
     <string name="oneplus_zen_mode_settings">พฤติกรรม</string>
@@ -3801,6 +3928,10 @@
     <string name="op_android_mode_cannot_change_color_accent">ธีมเริ่มต้นสามารถใช้ธีมสีของระบบได้เท่านั้น</string>
     <string name="op_app_already_uninstalled">ถอนการติดตั้ง</string>
     <string name="op_audio_settings">เครื่องรับสัญญาณเสียง</string>
+    <string name="op_auto_power_saving">การประหยัดพลังงานอัตโนมัติ</string>
+    <string name="op_auto_power_saving_summary">สลับไปเป็นความละเอียดที่เหมาะสมอัตโนมัติโดยไม่ต้องสิ้นเปลืองแบตเตอรี่</string>
+    <string name="op_charging_optimization">การชาร์จที่ปรับให้เหมาะสม</string>
+    <string name="op_charging_optimization_summary">ปรับรูปแบบการชาร์จให้เหมาะสมตามพฤติกรรมการใช้งานของคุณ</string>
     <string name="op_china_mobile">CMCC</string>
     <string name="op_china_telecom">CTCC</string>
     <string name="op_china_unicom">CUCC</string>
@@ -3880,6 +4011,7 @@
     <string name="op_wifi_display_summary">แคสต์</string>
     <string name="op_wifi_verbose_multi_broadcast_summary">เมื่ออยู่ในโหมดสแตนด์บาย คุณสมบัติจำเพาะ WLAN Multi/Broadcasting สำหรับแอปจะปลุก WLAN ขึ้นแล้วใช้ทรัพยากรระบบหากตัวกรองไม่ได้เปิด ซึ่งจะส่งผลให้ใช้งานแบตเตอรี่เกินความจำเป็น</string>
     <string name="op_wifi_verbose_multi_broadcast_title">แอปตัวกรอง WLAN Multi/Broadcasting</string>
+    <string name="open_hotspot_warning_message">"ด้วยความปลอดภัยแบบเปิด อุปกรณ์จะสามารถใช้ฮอตสปอตมือถือได้โดยไม่ต้องมีการป้อนรหัสผ่าน ให้เลือกความปลอดภัยแบบ WPA2 แทนหากคุณต้องการที่จะใช้รหัสผ่าน "</string>
     <string name="openid_dialog_reset">รีเซ็ต</string>
     <string name="openid_dialog_summary">การดำเนินการนี้จะแทนที่ตัวระบุของคุณด้วยหมายเลขใหม่แบบสุ่ม</string>
     <string name="openid_dialog_title">คุณแน่ใจหรือไม่ว่าคุณต้องการรีเซ็ตตัวระบุ</string>
@@ -3911,7 +4043,7 @@
     <string name="owner_info_settings_summary">ไม่มี</string>
     <string name="owner_info_settings_title">ข้อความบนหน้าจอล็อก</string>
     <string name="oxygen_version">รุ่น OxygenOS</string>
-    <string name="oxygen_version_default">ไม่ทราบสภาพ</string>
+    <string name="oxygen_version_default">ไม่​รู้จัก</string>
     <string name="packages_subtitle">แพ็คเก็จที่รวมมาด้วย</string>
     <string name="page_tab_title_summary">ทั้งหมด</string>
     <string name="page_tab_title_support">เคล็ดลับและการสนับสนุน</string>
@@ -3964,6 +4096,9 @@
     <string name="power_discharging_duration_enhanced">เหลืออีกประมาณ %1$s ขึ้นอยู่กับการใช้งานของคุณ (%2$s)</string>
     <string name="power_flashlight">ไฟฉาย</string>
     <string name="power_idle">ไม่มีการใช้งานโทรศัพท์</string>
+    <string name="power_menu">เมนูเปิด/ปิดเครื่อง</string>
+    <string name="power_off">ปิด</string>
+    <string name="power_off_summary">อุปกรณ์ของคุณจะปิดเครื่อง</string>
     <string name="power_overcounted">คำนวณมากเกินไป</string>
     <string name="power_phone">การโทรด้วยเสียง</string>
     <string name="power_remaining_charging_duration_only">อีก %1$s จึงจะชาร์จเต็ม</string>
@@ -4254,6 +4389,19 @@
     <string name="reset_network_title">รีเซ็ต Wi-Fi, เน็ตมือถือ และบลูทูธ</string>
     <string name="reset_shortcut_manager_throttling">รีเซ็ตการจำกัดอัตราของ ShortcutManager</string>
     <string name="reset_shortcut_manager_throttling_complete">รีเซ็ตการจำกัดอัตราของ ShortcutManager แล้ว</string>
+    <string name="reset_system_settings_button_text">รีเซ็ตการตั้งค่า</string>
+    <string name="reset_system_settings_complete_toast">การตั้งค่าระบบถูกรีเซ็ตแล้ว</string>
+    <string name="reset_system_settings_desc">"หากคุณได้ทำการเปลี่ยนการตั้งค่าระบบใดๆ ไปแล้ว \"รีเซ็ตการตั้งค่า\" จะย้อนการทำงานของโทรศัพท์คุณให้กลับไปใช้วิธีการทำงานในรูปแบบเดิม
+
+โดยจะไม่ส่งผลกระทบใดๆ ต่อแอปที่คุณดาวน์โหลดไว้ ข้อมูลส่วนบุคคลของคุณ หรือการตั้งค่าที่ได้รับการป้องกันไว้ดังต่อไปนี้:
+
+"<li>การตั้งค่าความปลอดภัย</li>"
+"<li>การตั้งค่าภาษา</li>"
+"<li>การตั้งค่าบัญชี</li></string>
+    <string name="reset_system_settings_dialog_message">"การรีเซ็ตการตั้งค่าระบบจะเปลี่ยนการปรับแต่งบางประการที่คุณอาจได้ทำไว้ เช่น เสียงเรียกเข้าของคุณ ความสว่างหน้าจอ และวิธีการทำงานของแป้นพิมพ์
+คุณต้องการรีเซ็ตการตั้งค่าระบบหรือไม่ คุณไม่สามารถเลิกทำการดำเนินการนี้ได้"</string>
+    <string name="reset_system_settings_dialog_title">คำเตือน</string>
+    <string name="reset_system_settings_title">รีเซ็ตการตั้งค่า</string>
     <string name="restore_default_apn">กำลังเรียกคืนการตั้งค่า APN เริ่มต้น</string>
     <string name="restore_default_apn_completed">รีเซ็ตการตั้งค่า APN กลับเป็นค่าเริ่มต้นเรียบร้อยแล้ว</string>
     <string name="restr_pin_enter_admin_pin">ป้อน PIN ผู้ดูแลระบบ</string>
@@ -4283,6 +4431,7 @@
     <string name="retail_demo_reset_next">ถัดไป</string>
     <string name="retail_demo_reset_title">ต้องป้อนรหัสผ่าน</string>
     <string name="retry">ลองอีกครั้ง</string>
+    <string name="reverse_wireless_charging_category">การชาร์จไร้สาย</string>
     <string name="ring_volume_option_title">ระดับเสียงเรียกเข้า</string>
     <string name="ring_volume_title">ระดับเสียงเรียกเข้า</string>
     <string name="ringtone_title">เสียงเรียกเข้า</string>
@@ -4330,6 +4479,7 @@
     <string name="safety_and_regulatory_info">คู่มือความปลอดภัยและกฎข้อบังคับ</string>
     <string name="saturation_option_title">สมดุลสี</string>
     <string name="save">บันทึก</string>
+    <string name="save_changes">บันทึกการเปลี่ยนแปลง</string>
     <string name="saved_network">บันทึกโดย %1$s แล้ว</string>
     <string name="scanning_status_text_wifi_off_ble_off">การสแกนหาทั้ง Wi-Fi และบลูทูธปิดอยู่</string>
     <string name="scanning_status_text_wifi_off_ble_on">การสแกนหาบลูทูธเปิดอยู่ การสแกนหา Wi‑Fi ปิดอยู่</string>
@@ -4424,6 +4574,7 @@
     <string name="search_bar_account_avatar_content_description" />
     <string name="search_menu">ค้นหาการตั้งค่า</string>
     <string name="search_menu_title">ค้นหา</string>
+    <string name="search_network_extenders">กำลังค้นหาอุปกรณ์ขยายสัญญาณเครือข่าย</string>
     <string name="search_results_title">การตั้งค่า</string>
     <string name="search_settings">ค้นหา</string>
     <string name="secure_lock_encryption_warning">เนื่องจากคุณเปิดบริการความสามารถในการเข้าถึง อุปกรณ์ของคุณจะไม่ใช้ล็อกหน้าจอเพื่อปรับปรุงการเข้ารหัสข้อมูล</string>
@@ -4543,6 +4694,7 @@
     <string name="select_automatically">เลือกเครือข่ายโดยอัตโนมัติ</string>
     <string name="select_day">เลือกเดือนและวัน</string>
     <string name="select_device_admin_msg">แอปดูแลอุปกรณ์</string>
+    <string name="select_function">เลือกฟังก์ชัน</string>
     <string name="select_hours">เลือกชั่วโมง</string>
     <string name="select_logd_size_dialog_title">เลือกขนาด Logger ต่อบัฟเฟอร์ไฟล์บันทึก</string>
     <string name="select_logd_size_title">ขนาดบัฟเฟอร์ของตัวบันทึก</string>
@@ -4564,6 +4716,9 @@
     <string name="select_year">เลือกปี</string>
     <string name="sensors_off_quick_settings_title">ปิดเซ็นเซอร์</string>
     <string name="service_background_processes">%1$s ว่าง</string>
+    <string name="service_does_not_exists_in_this_area">บริการไม่มีอยู่ในพื้นที่นี้</string>
+    <string name="service_exists_in_this_area_and_is_capable_of_being_used">สามารถใช้บริการที่มีอยู่ในพื้นที่นี้ได้</string>
+    <string name="service_exists_in_this_area_but_is_not_capable_of_being_used">มีบริการอยู่ในพื้นที่นี้แต่ไม่สามารถใช้ได้</string>
     <string name="service_foreground_processes">ใช้งาน %1$s</string>
     <string name="service_manage">การตั้งค่า</string>
     <string name="service_manage_description">%1$s: ใช้งานอยู่ในขณะนี้ แตะการตั้งค่าเพื่อควบคุมบริการนี้</string>
@@ -4637,6 +4792,8 @@
     <string name="show_screen_updates_summary">กะพริบหน้าต่างทั้งหมดเมื่อมีการอัปเดต</string>
     <string name="show_touches">แสดงการแตะ</string>
     <string name="show_touches_summary">แสดงผลตอบสนองแบบภาพเมื่อแตะ</string>
+    <string name="show_wifi_popup">แสดงป็อบอัพ Wi-Fi</string>
+    <string name="show_wifi_popup_summary">เมื่อเปิดแอป แจ้งให้ฉันทราบเมื่อมี Wi-Fi พร้อมใช้งาน</string>
     <string name="sim_bad_pin">PIN ไม่ถูกต้อง</string>
     <string name="sim_call_back_title">โทรกลับจากซิมเริ่มต้น</string>
     <string name="sim_calls_always_use">ใช้ในการโทรทุกครั้ง</string>
@@ -4743,7 +4900,9 @@ PIN อาจไม่ถูกต้อง"</string>
     <string name="sms_messages_title">ข้อความ SMS</string>
     <string name="sms_preference">ค่ากำหนด SMS</string>
     <string name="snooze_options_title">อนุญาตให้ใช้เลื่อนการแจ้งเตือน</string>
+    <string name="softap_tethering_footer_info">ใช้ฮอตสปอตและการกระจายสัญญาณเพื่อจ่ายสัญญาณอินเทอร์เน็ตให้กับอุปกรณ์อื่นผ่านทางข้อมูลมือถือหรือการเชื่อมต่อ Wi-Fi นอกจากนี้แอปยังสามารถสร้างฮอตสปอตเพื่อแบ่งปันเนื้อหากับอุปกรณ์ใกล้เคียงได้</string>
     <string name="sometimes_running">ทำงานบางครั้ง (%s)</string>
+    <string name="sort_apps_by_date">เรียงลำดับตามวันที่</string>
     <string name="sort_avg_use">จัดเรียงตามการใช้งานโดยเฉลี่ย</string>
     <string name="sort_max_use">จัดเรียงตามการใช้งานสูงสุด</string>
     <string name="sort_order_alpha">จัดเรียงตามชื่อ</string>
@@ -5082,10 +5241,11 @@ PIN อาจไม่ถูกต้อง"</string>
     <string name="system_app">(ระบบ)</string>
     <string name="system_dashboard_summary">ภาษา ท่าทางสัมผัส เวลา การสำรองข้อมูล</string>
     <string name="system_default_app">(ค่าเริ่มต้นของระบบ)</string>
-    <string name="system_is_up_to_date">ระบบของคุณเป็นปัจจุบันแล้ว</string>
+    <string name="system_is_up_to_date">ระบบของคุณใหม่ล่าสุดแล้ว</string>
     <string name="system_navigation_title">การนำทางของระบบ</string>
     <string name="system_package">ติดตั้งการอัปเดตระบบบนสื่อภายนอกไม่ได้</string>
     <string name="system_ui_settings">แสดงตัวรับสัญญาณ SystemUI</string>
+    <string name="system_update">การอัปเดตระบบ</string>
     <string name="system_update_settings_list_item_summary" />
     <string name="system_update_settings_list_item_title">การอัปเดตระบบ</string>
     <string name="system_update_uss_title">ดาวน์โหลดและติดตั้ง</string>
@@ -5155,7 +5315,7 @@ PIN อาจไม่ถูกต้อง"</string>
     <string name="touchscreen_camera_gesture_summary">วาด O เพื่อเปิดกล้อง</string>
     <string name="touchscreen_camera_gesture_title">เปิดกล้อง</string>
     <string name="touchscreen_double_tap_to_wake_gesture_summary">แตะหน้าจอสองครั้งเพื่อปลุกอุปกรณ์</string>
-    <string name="touchscreen_double_tap_to_wake_gesture_title">แตะสองครั้งเพื่อเปิดขึ้น</string>
+    <string name="touchscreen_double_tap_to_wake_gesture_title">แตะสองครั้งเพื่อปลุก</string>
     <string name="touchscreen_flashlight_gesture_summary">วาด V เพื่อเปิดปิดไฟแฟลช</string>
     <string name="touchscreen_flashlight_gesture_title">เปิดปิดไฟแฟลช</string>
     <string name="touchscreen_music_gesture_summary">วาด || ด้วยสองนิ้วเพื่อเล่นหรือหยุดเพลง วาด &lt; หรือ > สำหรับแทร็กก่อนหน้าหรือถัดไป</string>
@@ -5219,6 +5379,7 @@ PIN อาจไม่ถูกต้อง"</string>
     <string name="tts_status_title">สถานะของภาษาเริ่มต้น</string>
     <string name="tx_link_speed">%1$d Mbps</string>
     <string name="tx_wifi_speed">ความเร็วในการส่งลิงก์</string>
+    <string name="uicc_alert_message">จำเป็นต้องใช้ UICC ในการเข้าสู่ระบบเครือข่าย Wi-Fi ด้วย SSID VerizonWiFiAccess</string>
     <string name="uicc_all_lock_summary">อุปกรณ์ของคุณถูกล็อคโดย Sprint หรือซิมระหว่างประเทศ</string>
     <string name="uicc_lock_summary">อุปกรณ์ของคูณถูกล็อคจากการใช้ซิม Sprint เท่านั้น</string>
     <string name="uicc_unlock">การปลดล็อค UICC</string>
@@ -5240,10 +5401,16 @@ PIN อาจไม่ถูกต้อง"</string>
     <string name="uninstall_failed_device_policy_manager">ไม่สามารถถอนการติดตั้งได้เนื่องจากแพคเกจนี้ เป็นตัวจัดการอุปกรณ์ที่ใช้งานอยู่</string>
     <string name="uninstall_failed_device_policy_manager_of_user">ไม่สามารถถอนการติดตั้งได้เนื่องจากแพคเกจนี้ เป็นตัวจัดการอุปกรณ์ที่ใช้งานอยู่สำหรับผู้ใช้งาน %1$s</string>
     <string name="uninstall_failure_notification_channel">การถอนการติดตั้งล้มเหลว</string>
+    <string name="uninstall_multiple_apps">การดำเนินการในปริมาณมาก</string>
     <string name="uninstall_text">ถอนการติดตั้ง</string>
     <string name="uninstall_update_text">แทนที่แอปนี้ด้วยรุ่นจากโรงงานหรือไม่? ข้อมูลทั้งหมดจะถูกลบ</string>
     <string name="uninstall_update_text_multiuser">แทนที่แอปนี้ด้วยรุ่นจากโรงงานหรือไม่? ข้อมูลทั้งหมดจะถูกลบ จะส่งผลถึงผู้ใช้งานทุกคนบนเครื่องนี้รวมทั้งผู้ที่มีโปรไฟล์งานด้วย</string>
     <string name="uninstall_update_title">ถอนการติดตั้งอัปเดต</string>
+    <string name="uninstallapps_confirm">ยืนยัน</string>
+    <string name="uninstallapps_confirm_dialog_body">แอปพลิเคชันทั้งหมดที่เลือกและไฟล์ทั้งหมดที่เกี่ยวข้องกับแพคเกจแอปพลิเคชันจะถูกลบ</string>
+    <string name="uninstallapps_confirm_dialog_title">ลบแอปที่เลือกหรือไม่</string>
+    <string name="uninstallapps_selected">เลือกแล้ว</string>
+    <string name="uninstallapps_toast_message">แอปถูกลบแล้ว</string>
     <string name="uninstalling">กำลังถอนการติดตั้ง…</string>
     <string name="uninstalling_notification_channel">กำลังใช้งานการถอนการติดตั้ง</string>
     <string name="unknown">ไม่ทราบ</string>
@@ -5325,6 +5492,12 @@ PIN อาจไม่ถูกต้อง"</string>
     <string name="unsupported_setting_summary">ไม่รองรับการตั้งค่าในโทรศัพท์นี้</string>
     <string name="update_prl">อัปเดต PRL</string>
     <string name="update_profile">อัปเดตโปรไฟล์</string>
+    <string name="upstream_type_auto">สลับอัตโนมัติ</string>
+    <string name="upstream_type_auto_summary">สลับไปเป็นการเชื่อมต่อข้อมูลมือถือโดยอัตโนมัติเมื่อ Wi-Fi ถูกตัดการเชื่อมต่อ</string>
+    <string name="upstream_type_cell">การแบ่งปันข้อมูลมือถือเท่านั้น</string>
+    <string name="upstream_type_cell_summary">เมื่อมีการปิดใช้งานหรือตัดการเชื่อมต่อข้อมูลมือถือ การแบ่งปันจะถูกปิดใช้งาน</string>
+    <string name="upstream_type_wifi">การแบ่งปัน Wi-Fi เท่านั้น</string>
+    <string name="upstream_type_wifi_summary">เมื่อมีการตัดการเชื่อมต่อ Wi-Fi การแบ่งปันจะถูกปิดใช้งาน</string>
     <string name="usage">การใช้งาน</string>
     <string name="usage_access">การเข้าถึงการใช้งาน</string>
     <string name="usage_access_description">การเข้าถึงการใช้งานทำให้แอปสามารถติดตามว่าคุณกำลังใช้แอปอื่นใดอยู่ ความถี่ในการใช้ รวมทั้งผู้ให้บริการ การตั้งค่าภาษา และรายละเอียดอื่นๆ</string>
@@ -5510,6 +5683,9 @@ PIN อาจไม่ถูกต้อง"</string>
     <string name="v7_preference_on">เปิด</string>
     <string name="verify_apps_over_usb_summary">ตรวจสอบแอปที่ติดตั้งผ่าน ADB/ADT เพื่อตรวจดูพฤติกรรมที่เป็นอันตราย</string>
     <string name="verify_apps_over_usb_title">ยืนยันแอปผ่าน USB</string>
+    <string name="verizon_store_demo_mode_hint">ป้อนรหัสผ่าน</string>
+    <string name="verizon_store_demo_mode_title">Verizon Store Demo Mode</string>
+    <string name="verizon_wifi_tether_band_warning">การเปลี่ยนวิธีการตั้งค่าฮอตสปอตมือถือจะตัดการเชื่อมต่ออุปกรณ์ใดๆ ก็ตามที่เชื่อมต่อกับฮอตสปอตมือถืออยู่ในขณะนี้</string>
     <string name="version_text">เวอร์ชัน %1$s</string>
     <string name="vibrate_in_silent_title">สั่นเตือนเมื่อปิดเสียง</string>
     <string name="vibrate_input_devices">เปลี่ยนเส้นทางการสั่น</string>
@@ -5626,6 +5802,8 @@ PIN อาจไม่ถูกต้อง"</string>
     <string name="wallpaper_settings_title">วอลเปเปอร์</string>
     <string name="wallpaper_suggestion_summary">ปรับเปลี่ยนหน้าจอในแบบของคุณ</string>
     <string name="wallpaper_suggestion_title">เปลี่ยนวอลเปเปอร์</string>
+    <string name="warning_title">คำเตือน</string>
+    <string name="warranty_date_code">วันที่รับประกัน</string>
     <string name="web_action_enable_summary">เปิดลิงก์ในแอป แม้ไม่ได้ติดตั้งแอปไว้</string>
     <string name="web_action_enable_title">Instant Apps</string>
     <string name="web_action_section_title">Instant Apps</string>
@@ -5940,8 +6118,17 @@ PIN อาจไม่ถูกต้อง"</string>
     <string name="wifi_tether_custom_auto_turn_off_always_summary">เปิดอยู่เสมอ</string>
     <string name="wifi_tether_enabled_subtext">%1$s ใช้งานอยู่</string>
     <string name="wifi_tether_failed_subtext">ข้อผิดพลาดของ WiFi ฮอตสปอตแบบพกพา</string>
+    <string name="wifi_tether_passphrase_warning">อย่างน้อย 8 อักขระ รวมถึงตัวอักษร 1 ตัวตัวเลข 1 ตัวและสัญลักษณ์ 1 ตัว</string>
     <string name="wifi_tether_starting">กำลังเปิดฮอตสปอต…</string>
     <string name="wifi_tether_stopping">กำลังปิดฮอตสปอต…</string>
+    <string name="wifi_tether_upstream_network_type_config">การตั้งค่าการแบ่งปัน</string>
+    <string name="wifi_tether_upstream_network_type_title">การตั้งค่าการแบ่งปัน</string>
+    <string name="wifi_tether_verizon_custom_auto_turn_off_10_min_summary">หลังจากไม่ได้ใช้งานเป็นเวลา 10 นาที</string>
+    <string name="wifi_tether_verizon_custom_auto_turn_off_20_min_summary">หลังจากไม่ได้ใช้งานเป็นเวลา 20 นาที</string>
+    <string name="wifi_tether_verizon_custom_auto_turn_off_30_min_summary">หลังจากไม่ได้ใช้งานเป็นเวลา 30 นาที</string>
+    <string name="wifi_tether_verizon_custom_auto_turn_off_5_min_summary">หลังจากไม่ได้ใช้งานเป็นเวลา 5 นาที</string>
+    <string name="wifi_tether_verizon_custom_auto_turn_off_60_min_summary">หลังจากไม่ได้ใช้งานเป็นเวลา 60 นาที</string>
+    <string name="wifi_tether_verizon_custom_auto_turn_off_always_summary">เปิดอยู่เสมอ</string>
     <string name="wifi_turned_on_message">เปิด Wi-Fi แล้ว</string>
     <string name="wifi_unchanged">(ไม่เปลี่ยน)</string>
     <string name="wifi_unmetered_label">ไม่มีการวัดปริมาณอินเทอร์เน็ต</string>
@@ -5984,8 +6171,8 @@ PIN อาจไม่ถูกต้อง"</string>
     <string name="wizard_finish">เสร็จสิ้น</string>
     <string name="wizard_next">ถัดไป</string>
     <string name="work_alarm_ringtone_title">เสียงปลุกเริ่มต้นของงาน</string>
-    <string name="work_life_balance">สมดุลงานและการใช้ชีวิต</string>
-    <string name="work_life_disabled_toast">ฟีเจอร์สมดุลงานและการใช้ชีวิตถูกปิดใช้งาน</string>
+    <string name="work_life_balance">Work-Life Balance</string>
+    <string name="work_life_disabled_toast">ฟีเจอร์ Work Life Balance ถูกปิดใช้งาน</string>
     <string name="work_mode_label">โปรไฟล์งาน</string>
     <string name="work_mode_off_summary">แอปและการแจ้งเตือนปิดอยู่</string>
     <string name="work_mode_on_summary">จัดการโดยองค์กร</string>

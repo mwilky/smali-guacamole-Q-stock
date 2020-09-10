@@ -224,7 +224,7 @@
 
     move-result v2
 
-    const v3, 0x7f0a03cf
+    const v3, 0x7f0a03d4
 
     const v4, 0x7f0d009d
 
@@ -259,7 +259,7 @@
 
     check-cast v2, Landroid/widget/TextView;
 
-    const v3, 0x7f121177
+    const v3, 0x7f121226
 
     invoke-virtual {v2, v3}, Landroid/widget/TextView;->setText(I)V
 
@@ -343,7 +343,7 @@
 
     check-cast v2, Landroid/widget/TextView;
 
-    const v3, 0x7f12116e
+    const v3, 0x7f12121d
 
     invoke-virtual {v2, v3}, Landroid/widget/TextView;->setText(I)V
 
@@ -568,7 +568,7 @@
 
     invoke-virtual {p2, v0, p1}, Landroid/view/MenuInflater;->inflate(ILandroid/view/Menu;)V
 
-    const v0, 0x7f0a055b
+    const v0, 0x7f0a055c
 
     invoke-interface {p1, v0}, Landroid/view/Menu;->findItem(I)Landroid/view/MenuItem;
 
@@ -590,7 +590,7 @@
     invoke-interface {p1, v0}, Landroid/view/Menu;->removeItem(I)V
 
     :goto_0
-    const v0, 0x7f0a055d
+    const v0, 0x7f0a055e
 
     invoke-interface {p1, v0}, Landroid/view/Menu;->findItem(I)Landroid/view/MenuItem;
 
@@ -612,7 +612,7 @@
     invoke-interface {p1, v0}, Landroid/view/Menu;->removeItem(I)V
 
     :goto_1
-    const v0, 0x7f0a055c
+    const v0, 0x7f0a055d
 
     invoke-interface {p1, v0}, Landroid/view/Menu;->findItem(I)Landroid/view/MenuItem;
 

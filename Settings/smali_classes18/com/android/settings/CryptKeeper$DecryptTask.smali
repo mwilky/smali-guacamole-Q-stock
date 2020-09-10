@@ -174,7 +174,7 @@
     :cond_0
     iget-object v0, p0, Lcom/android/settings/CryptKeeper$DecryptTask;->this$0:Lcom/android/settings/CryptKeeper;
 
-    const v1, 0x7f0a0660
+    const v1, 0x7f0a0661
 
     invoke-virtual {v0, v1}, Lcom/android/settings/CryptKeeper;->findViewById(I)Landroid/view/View;
 
@@ -182,23 +182,23 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    const v1, 0x7f12142d
+    const v1, 0x7f1214f1
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
 
-    const v1, 0x7f0a0513
+    const v1, 0x7f0a0510
 
     invoke-direct {p0, v1}, Lcom/android/settings/CryptKeeper$DecryptTask;->hide(I)V
 
-    const v1, 0x7f0a06a6
+    const v1, 0x7f0a06a7
 
     invoke-direct {p0, v1}, Lcom/android/settings/CryptKeeper$DecryptTask;->hide(I)V
 
-    const v1, 0x7f0a03aa
+    const v1, 0x7f0a03af
 
     invoke-direct {p0, v1}, Lcom/android/settings/CryptKeeper$DecryptTask;->hide(I)V
 
-    const v1, 0x7f0a04fb
+    const v1, 0x7f0a04f8
 
     invoke-direct {p0, v1}, Lcom/android/settings/CryptKeeper$DecryptTask;->hide(I)V
 

@@ -58,7 +58,7 @@
 
     const-string v4, "oneplus.intent.action.ONEPLUS_LAB_FEATURE"
 
-    const v5, 0x7f120d74
+    const v5, 0x7f120dd9
 
     invoke-virtual {v1, v5}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 

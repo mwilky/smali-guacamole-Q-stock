@@ -161,7 +161,7 @@
     :cond_0
     iget-object v0, p0, Lcom/android/settings/connecteddevice/AddDevicePreferenceController;->mContext:Landroid/content/Context;
 
-    const v1, 0x7f120494
+    const v1, 0x7f1204a8
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

@@ -278,6 +278,10 @@
         <item quantity="other">Încercați din nou în %d secunde.</item>
         <item quantity="one">Încercați din nou în %d secundă.</item>
     </plurals>
+    <plurals name="oneplus_zen_mode_duration_summary_time_hours">
+        <item quantity="other">%d de ore (dacă nu se activează automat)</item>
+        <item quantity="one">1 oră (dacă nu se activează automat)</item>
+    </plurals>
     <plurals name="permission_bar_chart_label">
         <item quantity="other">%s de aplicații</item>
         <item quantity="one">O aplicație</item>

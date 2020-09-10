@@ -110,10 +110,10 @@
 
     :array_0
     .array-data 4
-        0x7f120a33
-        0x7f120a34
-        0x7f120a31
-        0x7f120a32
+        0x7f120a70
+        0x7f120a71
+        0x7f120a6e
+        0x7f120a6f
     .end array-data
 .end method
 
@@ -178,7 +178,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f120a2b
+    const v2, 0x7f120a68
 
     invoke-virtual {v1, v2}, Lcom/android/settings/core/SubSettingLauncher;->setTitleRes(I)Lcom/android/settings/core/SubSettingLauncher;
 

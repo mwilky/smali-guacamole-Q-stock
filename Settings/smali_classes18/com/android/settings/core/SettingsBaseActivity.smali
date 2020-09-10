@@ -322,7 +322,7 @@
     invoke-virtual {p0, v5}, Lcom/android/settings/core/SettingsBaseActivity;->setTheme(I)V
 
     :cond_2
-    const v5, 0x7f0d02b9
+    const v5, 0x7f0d02ba
 
     invoke-super {p0, v5}, Landroidx/fragment/app/FragmentActivity;->setContentView(I)V
 

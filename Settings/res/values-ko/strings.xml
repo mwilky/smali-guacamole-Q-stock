@@ -256,13 +256,23 @@
     <string name="advanced_apps">고급</string>
     <string name="advanced_battery_graph_subtext">예상 잔여 배터리 소모 시간은 기기 사용량을 기반으로 표시됩니다.</string>
     <string name="advanced_battery_title">배터리 사용량</string>
+    <string name="advanced_calling_summary">HD Voice, 화상 통화</string>
+    <string name="advanced_calling_title">고급 통화</string>
     <string name="advanced_reboot_summary">잠금 해제시, 기본 재시작, 리커버리 모드로 재시작, 패스트 부팅 중에 재시작 옵션을 선택할 수 있습니다.</string>
     <string name="advanced_reboot_title">고급 재시작</string>
     <string name="advanced_section_header">고급</string>
     <string name="advanced_security_title">고급</string>
     <string name="advanced_settings">고급 설정</string>
     <string name="advanced_settings_summary">기타 설정 옵션을 사용하도록 설정합니다.</string>
+    <string name="advanced_wificall_summary">모바일 네트워크를 사용할 수 없는 경우 Wi-Fi 사용</string>
     <string name="airplane_mode">비행기 모드</string>
+    <string name="airplane_mode_description">비행기 모드는 전화, 문자 메시지, 인터넷 액세스, Wi-Fi 및 Bluetooth를 포함한 모든 네트워크 연결을 끕니다.</string>
+    <string name="airplane_mode_enable_dialog_message">"비행기 모드가 켜져 있는 경우, Wi-Fi를 사용하지 않으면 인터넷, 이메일 또는 데이터 연결이 필요한 기타 앱을 사용할 수 없습니다.
+
+비행기 모드를 켜시겠습니까?"</string>
+    <string name="airplane_mode_enable_dialog_message_wifi_volte">"비행기 모드가 켜져 있는 경우, Wi-Fi를 사용하지 않으면 인터넷, 이메일, Wi-Fi 전화 또는 데이터 연결이 필요한 기타 앱을 사용할 수 없습니다.
+
+비행기 모드를 켜시겠습니까?"</string>
     <string name="alarm_ringtone_title">기본 알람 소리</string>
     <string name="alarm_template">시간: %1$s</string>
     <string name="alarm_template_far">일시: %1$s</string>
@@ -274,6 +284,7 @@
     <string name="alert_slider_silent_title">무음 설정</string>
     <string name="alertslider_settings">알림 슬라이더</string>
     <string name="alertslider_settings_soc_tri_state">알림 슬라이더</string>
+    <string name="alertslider_settings_soc_tri_state_summary">무음, 진동, 벨소리</string>
     <string name="all_volume_title">볼륨</string>
     <string name="allow">허용</string>
     <string name="allow_bind_app_widget_activity_allow_bind">위젯을 만든 다음에는 %1$s에서 위젯이 표시하는 모든 데이터에 액세스할 수 있습니다.</string>
@@ -314,12 +325,19 @@
     <string name="angle_enabled_app_set">ANGLE 사용 애플리케이션: %1$s</string>
     <string name="animator_duration_scale_title">Animator 길이 배율</string>
     <string name="another_migration_already_in_progress">또 다른 이전이 이미 진행 중입니다.</string>
-    <string name="aod_clock_analog">아날로그</string>
+    <string name="aod_clock_analog">아날로그 1</string>
+    <string name="aod_clock_analog_1">아날로그 2</string>
+    <string name="aod_clock_analog_2">아날로그 3</string>
+    <string name="aod_clock_bold">굵게</string>
     <string name="aod_clock_default">기본</string>
+    <string name="aod_clock_digital">디지털 1</string>
+    <string name="aod_clock_digital_1">디지털 2</string>
     <string name="aod_clock_mcl">McLaren</string>
-    <string name="aod_clock_minimalism">미니멀리즘</string>
+    <string name="aod_clock_minimalism">미니멀리즘 1</string>
+    <string name="aod_clock_minimalism_1">미니멀리즘 2</string>
     <string name="aod_clock_none">없음</string>
     <string name="aod_clock_select_style_text">시계 스타일 선택</string>
+    <string name="aod_clock_text_clock">텍스트 시계</string>
     <string name="aod_horizon_light_effect_1">파랑</string>
     <string name="aod_horizon_light_effect_2">빨강</string>
     <string name="aod_horizon_light_effect_3">보라</string>
@@ -408,7 +426,7 @@
     <string name="app_notifications_off_desc">사용자의 요청에 따라 Android에서 기기에 이 앱의 알림이 표시되지 않도록 차단하고 있습니다</string>
     <string name="app_notifications_switch_label">알림 표시</string>
     <string name="app_notifications_title">앱 알림</string>
-    <string name="app_ops_last_used_prefix_new">마지막으로 사용된</string>
+    <string name="app_ops_last_used_prefix_new">마지막으로 사용</string>
     <string name="app_ops_never_used">(사용 안 함)</string>
     <string name="app_ops_never_used_new">사용된 적 없음</string>
     <string name="app_ops_running">실행 중</string>
@@ -1065,6 +1083,7 @@
     <string name="charge_length_format">%1$s 전</string>
     <string name="charging_sounds_title">충전 소리 및 진동</string>
     <string name="checkbox_notification_same_as_incoming_call">전화 벨소리와 알림을 같은 볼륨으로</string>
+    <string name="checkbox_usb_tether_donot_show_again">다시 표시 안 함</string>
     <string name="checking_decryption">확인 중...</string>
     <string name="choose_network_title">네트워크 선택</string>
     <string name="choose_profile">프로필 선택</string>
@@ -1100,7 +1119,7 @@
     <string name="color_picker_accent_color_message">테마 컬러 선택</string>
     <string name="color_picker_default">기본</string>
     <string name="color_picker_led_color_message">LED 색상 선택</string>
-    <string name="color_picker_message_default">원하는 색상을 선택하세요.</string>
+    <string name="color_picker_message_default">원하는 색상을 선택해 주세요.</string>
     <string name="color_picker_unknown_label">알 수 없음</string>
     <string name="color_purple">보라색</string>
     <string name="color_red">빨간색</string>
@@ -1172,6 +1191,8 @@
     <string name="connected_devices_dashboard_no_nfc_summary">블루투스, 운전 모드</string>
     <string name="connected_devices_dashboard_summary">블루투스, 운전 모드, NFC</string>
     <string name="connected_devices_dashboard_title">연결된 기기</string>
+    <string name="connected_to_the_verizon_network">Verizon 네트워크에 연결됨</string>
+    <string name="connected_to_the_verizon_network_but_data_connection_unavailable">Verizon 네트워크에 연결되었지만 데이터 연결을 사용할 수 없습니다.</string>
     <string name="connected_via_app">%1$s을(를) 통해 연결됨</string>
     <string name="connected_via_carrier">%1$s을(를) 통해 연결됨</string>
     <string name="connected_via_network_scorer">%1$s을(를) 통해 자동으로 연결됨</string>
@@ -1187,6 +1208,7 @@
     <string name="contextual_card_feedback_send">의견 보내기</string>
     <string name="contextual_card_removed_message">추천 항목 삭제됨</string>
     <string name="contextual_card_undo_dismissal_text">실행취소</string>
+    <string name="continue_anyway">무시하고 계속</string>
     <string name="contributors_title">도움을 주신 분들</string>
     <string name="controls_label">제어</string>
     <string name="controls_subtitle">전원 사용 조절</string>
@@ -1318,6 +1340,7 @@
     <string name="data_usage_cycle_editor_subtitle">날짜:</string>
     <string name="data_usage_cycle_editor_title">사용 주기 재설정</string>
     <string name="data_usage_data_limit">데이터 한도 설정</string>
+    <string name="data_usage_description">데이터 사용량은 휴대폰으로 측정됩니다. 통신사는 사용량을 다르게 계산할 수 있습니다. 청구서의 기간과 일치하도록 시작 날짜를 설정하세요.</string>
     <string name="data_usage_disable_3g_limit">2G-3G 데이터 제한 설정</string>
     <string name="data_usage_disable_4g_limit">4G 데이터 제한 설정</string>
     <string name="data_usage_disable_mobile">모바일 데이터를 사용 중지하시겠습니까?</string>
@@ -1331,6 +1354,7 @@
     <string name="data_usage_forground_label">포그라운드:</string>
     <string name="data_usage_label_background">백그라운드</string>
     <string name="data_usage_label_foreground">포그라운드</string>
+    <string name="data_usage_less_than_value">0.01 미만</string>
     <string name="data_usage_limit_dialog_mobile">"설정한 모바일 데이터 한도에 도달하면 휴대전화에서 모바일 데이터를 사용 중지합니다.
 
 데이터 사용량은 휴대전화에서 측정되며 이동통신사에서 사용량을 다르게 계산할 수 있으므로 한도를 낮게 설정해 보세요."</string>
@@ -1386,6 +1410,9 @@
     <string name="data_usage_total_during_range_mobile">%2$s: 약 %1$s 사용됨 - 휴대전화를 기준으로 측정된 데이터 사용량이며 이동통신사에서는 사용량을 다르게 계산할 수 있습니다.</string>
     <string name="data_usage_uninstalled_apps">삭제된 앱</string>
     <string name="data_usage_uninstalled_apps_users">삭제된 앱 및 사용자</string>
+    <string name="data_usage_unit_gb">GB</string>
+    <string name="data_usage_unit_mb">MB</string>
+    <string name="data_usage_video_call_title">화상 통화</string>
     <string name="data_usage_warning_editor_title">데이터 사용 경고 설정</string>
     <string name="data_usage_wifi_format">Wi-Fi 데이터 사용량: ^1</string>
     <string name="data_usage_wifi_title">Wi‑Fi 데이터</string>
@@ -1412,7 +1439,7 @@
     <string name="date_time_set_time_title">시간</string>
     <string name="date_time_set_timezone">표준시간대 선택</string>
     <string name="date_time_set_timezone_title">시간대</string>
-    <string name="ddr_memory_capacity_title">저장소</string>
+    <string name="ddr_memory_capacity_title">저장 공간</string>
     <string name="debug_app">디버깅할 앱 선택</string>
     <string name="debug_app_not_set">디버깅할 애플리케이션이 설정되지 않음</string>
     <string name="debug_app_set">디버깅할 애플리케이션: %1$s</string>
@@ -1497,6 +1524,11 @@
 문제를 해결하려면 이 앱에서 위치 사용을 중지하세요."</string>
     <string name="dialog_location_ok">사용 중지</string>
     <string name="dialog_location_title">위치를 사용 중지하시겠습니까?</string>
+    <string name="dialog_mhs_error">확인하는 동안 기다려 주세요..</string>
+    <string name="dialog_open_network_cancel">취소</string>
+    <string name="dialog_open_network_connect">연결</string>
+    <string name="dialog_open_network_title">보안되지 않은 (공개) Wi-Fi 네트워크에 연결하려 합니다.</string>
+    <string name="dialog_open_network_title_info">전송된 정보는 암호화되지 않으며 다른 사람이 볼 수 있습니다. 그래도 연결하시겠습니까?</string>
     <string name="dialog_stop_message">"%1$s에서 휴대전화를 작동 상태로 유지하고 있어 휴대전화에서 배터리를 정상적으로 관리할 수 없습니다.
 
 문제를 해결하려면 앱을 종료하세요.
@@ -1509,6 +1541,11 @@
 문제가 계속되는 경우 앱을 제거하고 배터리 성능을 개선해야 할 수도 있습니다."</string>
     <string name="dialog_stop_ok">앱 종료</string>
     <string name="dialog_stop_title">앱을 종료하시겠습니까?</string>
+    <string name="dialog_usb_tether_cancel">취소</string>
+    <string name="dialog_usb_tether_ok">확인</string>
+    <string name="dialog_usb_tether_title">USB 테더링과 Wi-Fi는 동시에 켤 수 없습니다. Wi-Fi를 끄시겠습니까?</string>
+    <string name="dialog_wrong_password">Wi-Fi 비밀번호가 승인되지 않았습니다. 비밀번호를 확인한 후 다시 시도하세요.</string>
+    <string name="dialog_wrong_password_ok">확인</string>
     <string name="direct_boot_unaware_dialog_message">참고: 화면 잠금이 설정되어 있다면 휴대전화를 다시 시작한 후 이 앱을 시작하려면 휴대전화를 잠금 해제해야 합니다.</string>
     <string name="disable_doze_summary">Doze는 장치가 장시간 사용되지 않는 경우 앱의 백그라운드 CPU 및 네트워크 활동을 지연시켜 배터리 소모를 줄입니다.</string>
     <string name="disable_doze_title">Doze 모드</string>
@@ -1612,6 +1649,21 @@
     <string name="dual_cdma_sim_warning_notification_channel_title">SIM 조합</string>
     <string name="dual_cdma_sim_warning_notification_summary">%1$s 사용 시 기능이 제한될 수 있습니다. 자세한 내용을 보려면 탭하세요.</string>
     <string name="eab_provisioned_switch_string">EAB/상태 프로비저닝됨</string>
+    <string name="earphone_function_control_click_left">왼쪽 이어버드를 두 번 클릭</string>
+    <string name="earphone_function_control_click_right">오른쪽 이어버드를 두 번 클릭</string>
+    <string name="earphone_function_control_last_song">이전 트랙</string>
+    <string name="earphone_function_control_next_song">다음 트랙</string>
+    <string name="earphone_function_control_play_pause">재생/일시 중지</string>
+    <string name="earphone_function_introduction">기능 설명</string>
+    <string name="earphone_function_listening_breeno">음성 도우미</string>
+    <string name="earphone_support_battery_dot">,</string>
+    <string name="earphone_support_battery_info_box">OnePlus Buds Case: %1$s</string>
+    <string name="earphone_support_battery_info_left">L: %1$s</string>
+    <string name="earphone_support_battery_info_right">R: %1$s</string>
+    <string name="earphone_support_current_version">현재 버전:</string>
+    <string name="earphone_support_update_ota">펌웨어 자동 업데이트</string>
+    <string name="earphone_support_wifi_data">모바일 데이터를 사용한 자동 업데이트 허용</string>
+    <string name="earphone_usage_guide_complete">완료</string>
     <string name="edge_to_edge_navigation_summary">홈으로 이동하려면 화면 하단에서 위로 스와이프합니다. 앱을 전환하려면 아래에서 위로 스와이프하고 잠시 기다린 다음 손가락을 뗍니다. 뒤로 돌아가려면 왼쪽 또는 오른쪽 가장자리에서 스와이프합니다.</string>
     <string name="edge_to_edge_navigation_title">동작 탐색</string>
     <string name="emergency_address_summary">Wi‑Fi를 통해 긴급 전화를 걸 때 내 위치로 사용됨</string>
@@ -1755,6 +1807,7 @@
     <string name="expand_button_title">고급</string>
     <string name="experimental_category_title">실험</string>
     <string name="experimental_preference">(베타)</string>
+    <string name="extended_title">네트워크 확장기</string>
     <string name="external_code_size_label">USB 저장소 애플리케이션</string>
     <string name="external_data_size_label">USB 저장소 데이터</string>
     <string name="external_source_switch_title">이 소스에서 가져온 앱 설치 허용</string>
@@ -1796,6 +1849,8 @@
     <string name="filter_personal_apps">개인</string>
     <string name="filter_work_apps">직장</string>
     <string name="filter_write_settings_apps">시스템 설정 수정 가능</string>
+    <string name="find_my_bluetooth_earphone">내 버드 찾기</string>
+    <string name="find_my_bluetooth_earphone_summary">범위 내에 있는 경우 소리를 재생하여 이어버드를 찾거나, 범위에서 벗어난 경우 마지막 위치 확인</string>
     <string name="fingerprint_add_fingerprint">지문 추가하기</string>
     <string name="fingerprint_add_fingerprint_summary">센서 위에 손가락을 올려 놓고, 진동이 느껴진 후 손가락을 떼어 주세요.</string>
     <string name="fingerprint_add_max">지문을 %d개까지 추가할 수 있습니다.</string>
@@ -1968,6 +2023,11 @@
     <string name="homepage_all_settings">모든 설정</string>
     <string name="homepage_condition_footer_content_description">접기</string>
     <string name="homepage_personal_settings">추천</string>
+    <string name="hotspot_tip_message" formatted="false">"모바일 핫스팟은 모바일 데이터를 다른 Wi-Fi 지원 장치와 공유합니다. 모바일 핫스팟 연결 방법은 다음과 같습니다. \u0009 
+ 1: 다른 장치에서 Wi-Fi를 켭니다.
+ 2: 사용 가능한 Wi-Fi 네트워크 목록에서 %s을(를) 선택합니다. 
+ 3: 비밀번호가 필요한 경우 %s을(를) 입력합니다. 배터리를 절약하려면 모바일 핫스팟을 사용할 때 휴대폰을 전원에 연결한 상태로 유지하세요. "</string>
+    <string name="hotspot_tip_title">모바일 핫스팟</string>
     <string name="hwui_force_dark_summary">강제로 어둡게 기능을 항상 사용하도록 재정의</string>
     <string name="hwui_force_dark_title">강제로 어둡게 재정의</string>
     <string name="icon_attributions">아이콘 팩</string>
@@ -2068,7 +2128,7 @@
     <string name="keywords_date_and_time">시계, 군사</string>
     <string name="keywords_default_apps">앱, 기본</string>
     <string name="keywords_default_browser">기본, 기본 브라우저</string>
-    <string name="keywords_default_links">기본 테마</string>
+    <string name="keywords_default_links">기본</string>
     <string name="keywords_default_payment_app">결제, 기본</string>
     <string name="keywords_default_phone_app">전화, 다이얼러, 기본</string>
     <string name="keywords_device_feedback">버그</string>
@@ -2144,6 +2204,8 @@
     <string name="language_picker_title">언어</string>
     <string name="language_picker_title_o2">언어(국가/지역)</string>
     <string name="language_settings">언어 및 입력</string>
+    <string name="last_factory_reset">마지막 공장 초기화</string>
+    <string name="last_factory_reset_none">없음</string>
     <string name="last_synced">마지막 동기화 시간: %1$s</string>
     <string name="last_time_used_label">최근 사용</string>
     <string name="launch_by_default">기본적으로 열기</string>
@@ -2407,6 +2469,7 @@
     <string name="lockscreen_remote_input">기기가 잠기면 알림에 답장이나 다른 텍스트를 입력하지 못하게 합니다.</string>
     <string name="lockscreen_settings_title">잠금 화면 표시</string>
     <string name="lockscreen_settings_what_to_show_category">표시 내용</string>
+    <string name="long_press_power_button">전원 버튼을 길게 누르기</string>
     <string name="lost_internet_access_cancel">Wi‑Fi 계속 사용</string>
     <string name="lost_internet_access_persist">다시 표시하지 않음</string>
     <string name="lost_internet_access_switch">모바일로 전환</string>
@@ -2542,7 +2605,10 @@
     <string name="menu_stats_refresh">새로고침</string>
     <string name="menu_stats_total">총 사용량</string>
     <string name="menu_stats_unplugged">플러그를 뽑은 후 %1$s</string>
+    <string name="menu_uninstallapps">제거</string>
     <string name="menu_use_uss">USS(Unique Set Size) 사용</string>
+    <string name="mhs_app">My Verizon 열기</string>
+    <string name="mhs_call_back_error">데이터 연결을 사용할 수 없습니다.</string>
     <string name="misc_files">기타 파일</string>
     <string name="misc_files_selected_count">%2$d개 중 %1$d개가 선택됨</string>
     <string name="misc_files_selected_count_bytes">%1$s/%2$s</string>
@@ -2558,6 +2624,11 @@
     <string name="mobile_data_settings_summary_auto_switch">범위 안에 들어오면 휴대전화가 이 이동통신사로 자동 전환됩니다.</string>
     <string name="mobile_data_settings_title">모바일 데이터</string>
     <string name="mobile_data_usage_title">앱 데이터 사용량</string>
+    <string name="mobile_hotspot_airplane_off_error">핫스팟을 켜려면 비행기 모드를 끄세요.</string>
+    <string name="mobile_hotspot_authoration_error">"모바일 핫스팟을 사용하려면 모바일 핫스팟 서비스에 가입해야 합니다.
+
+모바일 핫스팟에 가입하려면 My Verizon을 방문하거나 고객 지원 센터 (800) 922–0204로 문의하세요."</string>
+    <string name="mobile_hotspot_data_off_error">핫스팟을 켜려면 모바일 데이터를 켜세요.</string>
     <string name="mobile_insert_sim_card">SIM 카드를 삽입하고 다시 시작하세요.</string>
     <string name="mobile_network_active_esim">활성/다운로드한 SIM</string>
     <string name="mobile_network_active_sim">활성/SIM</string>
@@ -2695,6 +2766,8 @@
     <string name="nfc_quick_toggle_title">NFC</string>
     <string name="nfc_secure_settings_title">안전한 NFC</string>
     <string name="nfc_secure_toggle_summary">화면 잠금이 해제된 상태에서만 NFC 결제 및 교통카드 기능 허용</string>
+    <string name="nfc_uicc_sim1">SIM 1</string>
+    <string name="nfc_uicc_sim2">SIM 2</string>
     <string name="night_display_activation_off_custom">%1$s까지 끄기</string>
     <string name="night_display_activation_off_manual">지금 끄기</string>
     <string name="night_display_activation_off_twilight">일몰 시간까지 끄기</string>
@@ -2738,6 +2811,7 @@
     <string name="no_internet_access_text">이 네트워크에는 인터넷이 연결되어 있지 않습니다. 연결 상태를 유지하시겠습니까?</string>
     <string name="no_memory_use_summary">지난 3시간 동안 메모리 사용량: 없음</string>
     <string name="no_network">네트워크 서비스 없음</string>
+    <string name="no_network_extenders">네트워크 확장기 없음</string>
     <string name="no_notification_assistant">없음</string>
     <string name="no_notification_listeners">설치된 앱 중에서 알림 액세스를 요청한 앱이 없습니다.</string>
     <string name="no_running_services">실행 중인 서비스가 없습니다.</string>
@@ -2748,6 +2822,7 @@
     <string name="no_vr_listeners">설치된 앱 중에서 VR 도우미 서비스로 실행되도록 요청한 앱이 없습니다.</string>
     <string name="not_allowed">SIM 카드에서 이 네트워크에 연결할 수 없습니다.</string>
     <string name="not_battery_optimizing">배터리 최적화를 사용하지 않음</string>
+    <string name="not_connected_to_the_verizon_network">Verizon 네트워크에 연결되지 않음</string>
     <string name="not_installed">이 사용자에게 설치되지 않음</string>
     <string name="not_optimize_summery">배터리 성능에 영향을 미칠 수 있음</string>
     <string name="not_optimized_apps">최적화되지 않은 앱</string>
@@ -2893,6 +2968,7 @@
     <string name="oneplus_aod_smart_display_calendar_event">달력 이벤트</string>
     <string name="oneplus_aod_smart_display_music_info">미디어 플레이어</string>
     <string name="oneplus_aod_smart_display_title">상황별 정보</string>
+    <string name="oneplus_ap_chanel">AP 채널</string>
     <string name="oneplus_app_alipay">Alipay</string>
     <string name="oneplus_app_display_compatibility">호환성 모드</string>
     <string name="oneplus_app_display_fullscreen">전체 화면 모드</string>
@@ -2949,6 +3025,9 @@
 
 장치가 충전되는 동안 배터리 절약 모드는 자동으로 꺼집니다."</string>
     <string name="oneplus_battery_saver_summary">이 기능은 일부 게임에서 작동하지 않을 수 있습니다.</string>
+    <string name="oneplus_bed_time_mode_summary">OnePlus Warp Wireless Charger를 조용히 사용</string>
+    <string name="oneplus_bed_time_mode_title">취침 모드</string>
+    <string name="oneplus_bed_time_mode_wall_text">OnePlus Warp Wireless Charger의 소리 감소를 위해 충전 속도도 느려집니다. 취침 모드를 적용하려면 휴대폰을 충전기에 놓아야 합니다.</string>
     <string name="oneplus_bg_data_condition_turn_off">데이터 세이버 끄기</string>
     <string name="oneplus_black_screen_gestures_settings_title">화면 끄기 제스처</string>
     <string name="oneplus_block_all_notifications">모든 알림 차단</string>
@@ -3004,6 +3083,7 @@
     <string name="oneplus_connected_devices_dashboard_summary">NFC, 캐스트, 인쇄</string>
     <string name="oneplus_connected_devices_dashboard_title">Bluetooth 및 장치 연결</string>
     <string name="oneplus_cpu">프로세서</string>
+    <string name="oneplus_custom_drop_title">변경 내용을 취소하시겠습니까?</string>
     <string name="oneplus_custom_time">사용자 지정 시간 범위</string>
     <string name="oneplus_customization">탐색 표시줄 사용자 지정</string>
     <string name="oneplus_customization_summary">길게 누르기, 두 번 탭</string>
@@ -3051,7 +3131,9 @@
     <string name="oneplus_double_tap_power_gesture_app">기능 선택</string>
     <string name="oneplus_double_tap_power_gesture_camera">카메라</string>
     <string name="oneplus_double_tap_power_gesture_wallet">카드 스와이프(지갑)</string>
+    <string name="oneplus_double_tap_power_none">없음</string>
     <string name="oneplus_doze_summary_801">대기 화면에 시계 및 기타 정보 표시</string>
+    <string name="oneplus_doze_summary_new">화면에 시간, 날짜 및 알림 표시</string>
     <string name="oneplus_doze_title">앰비언트 디스플레이</string>
     <string name="oneplus_doze_title_801">앰비언트 디스플레이</string>
     <string name="oneplus_draw_gesture_start_none">없음</string>
@@ -3153,7 +3235,7 @@
     <string name="oneplus_fnatic_mode_summary">게임 경험의 극적인 향상</string>
     <string name="oneplus_fnatic_mode_summary_2">e스포츠 개척자가 만든 고급 게임 모드</string>
     <string name="oneplus_fnatic_mode_title">Fnatic 모드</string>
-    <string name="oneplus_fnatic_mode_unlock_wallpapers">%1$s 특별 배경 화면의 잠금을 해제했습니다</string>
+    <string name="oneplus_fnatic_mode_unlock_wallpapers">%1$s 특별 배경 화면의 잠금을 해제했습니다.</string>
     <string name="oneplus_fnatic_mode_view_in_wallpapers">배경 화면에서 보기</string>
     <string name="oneplus_fnatic_mode_wallpapers_added">%1$s 배경 화면 추가됨</string>
     <string name="oneplus_font_preview_summary">함께 힘을 합쳐 최고의 기술을 세계와 공유</string>
@@ -3162,9 +3244,12 @@
     <string name="oneplus_force_factory_reset_summary">시작 시 암호가 사용됩니다. 내부 저장소가 지워집니다.</string>
     <string name="oneplus_forum_award_summary">이 커뮤니티는 귀하의 것입니다. 귀하만이 저희 진로를 결정할 수 있습니다. 저희는 함께 정의하고 개선합니다. 빌드를 부수고 코드를 작성합니다. 이는 귀하를 위한 것입니다. 함께 꿈을 꿔주셔서 감사합니다!</string>
     <string name="oneplus_forum_award_title">상</string>
+    <string name="oneplus_front_camera_app_display_fullscreen_summary">전면 카메라 표시 영역이 앱의 콘텐츠를 가리는 경우 기본 모드로 전환하세요.</string>
+    <string name="oneplus_front_camera_display_choose_title">전면 카메라를 숨길지 선택</string>
+    <string name="oneplus_front_camera_display_title">전면 카메라 표시 영역</string>
     <string name="oneplus_fullscreen_back_guide_summary">화면의 왼쪽 하단 또는 오른쪽 하단 가장자리에서 안쪽으로 살짝 밉니다.</string>
     <string name="oneplus_fullscreen_back_guide_summary_deprecated">화면 하단의 왼쪽 또는 오른쪽에서 위로 살짝 밉니다.</string>
-    <string name="oneplus_fullscreen_back_guide_title">뒤로가기</string>
+    <string name="oneplus_fullscreen_back_guide_title">뒤로</string>
     <string name="oneplus_fullscreen_disable_this_feature">탐색 제스처를 사용하는 경우 이 기능을 사용할 수 없습니다.</string>
     <string name="oneplus_fullscreen_gesture_guide_back">"뒤로 버튼을 대체하는 제스처를 사용해 보세요.
 화면 하단의 왼쪽 또는 오른쪽에서 위로 살짝 미세요."</string>
@@ -3238,6 +3323,10 @@
     <string name="oneplus_gestures_open_shelf">Shelf 열기</string>
     <string name="oneplus_gestures_take_video">동영상 녹화</string>
     <string name="oneplus_getlog_title">로그 가져오기</string>
+    <string name="oneplus_global_dark_mode_description">어두운 테마를 지원하지 않는 앱도 어두운 톤으로 표시합니다. 일부 앱은 예상대로 작동하지 않을 수 있습니다. 해당 앱은 아래 목록에서 사용하지 않도록 할 수 있습니다.</string>
+    <string name="oneplus_global_dark_mode_only_valid_in_dark_mode">이 기능은 어두운 톤에서만 사용할 수 있습니다.</string>
+    <string name="oneplus_global_dark_mode_summary">어두운 톤을 켜면 어두운 모드에 맞춰 조정되지 않는 더 많은 앱을 자동으로 어둡게 설정</string>
+    <string name="oneplus_global_dark_mode_title">더 많은 앱에서 어두운 톤 사용</string>
     <string name="oneplus_google_tts">Google TTS 음성 데이터</string>
     <string name="oneplus_gps_using">GPS 사용 중</string>
     <string name="oneplus_h2_contributors">HydrogenOS 참가자</string>
@@ -3253,6 +3342,8 @@
     <string name="oneplus_hardware_keys_action_split_screen">화면 분할 열기/닫기</string>
     <string name="oneplus_health_safety_information">보건 및 안전 정보</string>
     <string name="oneplus_hearing_aid">보청기 호환성</string>
+    <string name="oneplus_hide_front_camera_display_summary">이 영역에 콘텐츠가 표시되지 않습니다.</string>
+    <string name="oneplus_hide_front_camera_display_title">전면 카메라 숨기기</string>
     <string name="oneplus_hide_navigation_bar">탐색 표시줄 숨기기</string>
     <string name="oneplus_hide_navkeys">탐색 표시줄 숨기기</string>
     <string name="oneplus_hide_navkeys_summary">탐색 표시줄을 숨기거나 표시할 버튼을 추가합니다</string>
@@ -3311,6 +3402,22 @@
     <string name="oneplus_lockscreen_settings_title">잠금 화면 기본 설정</string>
     <string name="oneplus_max_shortcuts_tips">바로 가기를 최대 6개까지 추가할 수 있습니다</string>
     <string name="oneplus_media_ring_summary">미디어 볼륨 음소거</string>
+    <string name="oneplus_memc_close">끄기</string>
+    <string name="oneplus_memc_game">게임 모션 보정</string>
+    <string name="oneplus_memc_game_summary">게임 모션 보정을 켜려면 해상도를 FHD+로 전환해야 합니다.</string>
+    <string name="oneplus_memc_more_support_apps">지원되는 앱 더 보기</string>
+    <string name="oneplus_memc_notice">이 모드에서는 동영상 프레임 속도가 높아져 그래픽의 모션 블러가 줄어들어 더욱 선명하고 부드러워집니다. 전체 화면 재생 중에만 유효합니다.</string>
+    <string name="oneplus_memc_open">켬</string>
+    <string name="oneplus_memc_support_apps">지원되는 앱</string>
+    <string name="oneplus_memc_support_no_apps">지원되는 앱이 설치되어 있지 않습니다.</string>
+    <string name="oneplus_memc_video">모션 그래픽 스무딩</string>
+    <string name="oneplus_memc_video_effect">보정 효과</string>
+    <string name="oneplus_memc_video_extreme">매우 높음</string>
+    <string name="oneplus_memc_video_nosupport_extreme_summary">\"매우 높음\"을 켜려면 해상도를 FHD+로 전환해야 합니다.</string>
+    <string name="oneplus_memc_video_nosupport_extreme_text">QHD+ 해상도로 전환합니다. 모션 그래픽 보정은 제한됩니다.</string>
+    <string name="oneplus_memc_video_smooth">부드러움</string>
+    <string name="oneplus_memc_video_theacme_summary">매우 부드러운 그래픽을 위해 동영상 프레임 속도가 120fps로 높아지고 추가 전력 소비가 발생할 수 있습니다. QHD+ 해상도는 일시적으로 지원되지 않습니다.</string>
+    <string name="oneplus_memc_video_theacme_title">하이퍼 모션 스무딩</string>
     <string name="oneplus_mobile_device_name_title">휴대폰 이름</string>
     <string name="oneplus_mode_choose">모드 선택</string>
     <string name="oneplus_mode_settings">슬라이더 설정 변경</string>
@@ -3390,6 +3497,10 @@
     <string name="oneplus_notifications_free">무료</string>
     <string name="oneplus_notifications_meet">충족</string>
     <string name="oneplus_o2_contributors">OxygenOS 참가자</string>
+    <string name="oneplus_open_bed_time_mode_schedule_summary">사용자 지정 시간 범위에서 켜기</string>
+    <string name="oneplus_open_bed_time_mode_schedule_title">일정</string>
+    <string name="oneplus_open_bed_time_mode_summary">취침 모드를 수동으로 켤 수 있습니다.</string>
+    <string name="oneplus_open_bed_time_mode_title">취침 모드</string>
     <string name="oneplus_opfinger_input_completed_comfirm">확인</string>
     <string name="oneplus_opfinger_input_completed_sub">지문 설정이 완료되었습니다. \"확인\"을 눌러 계속합니다</string>
     <string name="oneplus_opfinger_input_completed_title">등록 완료</string>
@@ -3433,6 +3544,7 @@
     <string name="oneplus_preference_settings_turn_on_time">시작</string>
     <string name="oneplus_prior_to_use_you_need_to">사용 전에 다음을 수행해야 합니다.</string>
     <string name="oneplus_privacy_policy">개인 정보 보호 정책</string>
+    <string name="oneplus_privacy_protection_title">암호화된 공간</string>
     <string name="oneplus_product_info_introduce">장치 정보 및 보증 카드</string>
     <string name="oneplus_product_info_summary">보증 카드, 사전 설치 목록</string>
     <string name="oneplus_proximity_summary_disable">앰비언트 디스플레이가 꺼져 있기 때문에 사용할 수 없음</string>
@@ -3470,6 +3582,7 @@
     <string name="oneplus_quickpay_way_alipay_scanning">Alipay 스캔</string>
     <string name="oneplus_quickpay_way_paytm">Paytm</string>
     <string name="oneplus_quickpay_way_wecaht_qrcode">WeChat QR 코드</string>
+    <string name="oneplus_quickpay_way_wecaht_ridecode">WeChat 교통 QR 코드</string>
     <string name="oneplus_quickpay_way_wecaht_scanning">WeChat 스캔</string>
     <string name="oneplus_ramboost_description">RAM 향상은 휴대폰 사용 방식을 학습하여 사용자가 실행하고 싶어 하는 앱과 로드할 데이터를 예측할 수 있어 RAM 용량을 최대한 활용해 일일 사용량의 성능을 높일 수 있습니다.</string>
     <string name="oneplus_ramboost_switch_summary">사용량에 따라 RAM 사용률 증대</string>
@@ -3517,7 +3630,7 @@
     <string name="oneplus_rotation_silent_enable_summary">전화가 걸러올 때 장치를 플리핑하여 음소거</string>
     <string name="oneplus_rotation_silent_enable_title">플리핑하여 음소거</string>
     <string name="oneplus_scene_mode">장면</string>
-    <string name="oneplus_schedule">예약</string>
+    <string name="oneplus_schedule">일정</string>
     <string name="oneplus_screen">화면</string>
     <string name="oneplus_screen_better_cold">추움</string>
     <string name="oneplus_screen_better_nature">자연</string>
@@ -3607,6 +3720,7 @@
     <string name="oneplus_select_fingerprint_animation_effect_2">웨이브</string>
     <string name="oneplus_select_fingerprint_animation_effect_3">스트라이프</string>
     <string name="oneplus_select_fingerprint_animation_effect_4">잔물결</string>
+    <string name="oneplus_select_fingerprint_animation_effect_6">에너지</string>
     <string name="oneplus_select_fingerprint_animation_effect_mcl">McLaren</string>
     <string name="oneplus_select_fingerprint_animation_effect_none">없음</string>
     <string name="oneplus_select_fingerprint_animation_effect_title">지문 애니메이션 효과 선택</string>
@@ -3626,6 +3740,8 @@
     <string name="oneplus_shortcuts_preview">바로 가기 미리 보기</string>
     <string name="oneplus_shortcuts_settings">바로 가기 설정</string>
     <string name="oneplus_shortcuts_title">바로 가기</string>
+    <string name="oneplus_show_front_camera_display_summary">이 영역에서 콘텐츠 표시 허용</string>
+    <string name="oneplus_show_front_camera_display_title">전면 카메라 표시</string>
     <string name="oneplus_show_notch_display_summary">앱이 노치 영역을 사용하도록 허용합니다.</string>
     <string name="oneplus_show_notch_display_title">노치 영역 표시</string>
     <string name="oneplus_show_pattern_and_password">암호 또는 패턴 표시</string>
@@ -3636,6 +3752,7 @@
     <string name="oneplus_sim1_ringtone_switch">SIM 카드 1</string>
     <string name="oneplus_sim2_ringtone_switch">SIM 카드 2</string>
     <string name="oneplus_simcard_title">SIM</string>
+    <string name="oneplus_sla_down_load_app_summary">핫스팟 또는 Wi‑Fi Direct가 켜져 있는 동안 다운로드 가속을 사용할 수 없습니다.</string>
     <string name="oneplus_sleep_standby_summary">수면 중에 배터리 수명을 최적화합니다(예: 네트워크 연결 중지를 통해). 이 기능을 사용하면 앱이 적시에 알림을 받지 못할 수 있습니다.</string>
     <string name="oneplus_sleep_standby_title">수면 대기 최적화</string>
     <string name="oneplus_smart_background_management_title">어그레시브 도즈 &amp; 앱 최대 절전 모드</string>
@@ -3650,6 +3767,8 @@
     <string name="oneplus_stop_run">강제로 중지</string>
     <string name="oneplus_storage">저장소</string>
     <string name="oneplus_sunrise_sunset">일몰에서 일출까지 자동으로 사용</string>
+    <string name="oneplus_support_summary">장치 사용에 대한 팁 및 FAQ</string>
+    <string name="oneplus_support_title">팁 및 지원</string>
     <string name="oneplus_supported_apps">지원되는 앱</string>
     <string name="oneplus_suspension_notice">헤즈업</string>
     <string name="oneplus_suspension_notice_summary">앱이 헤즈업 알림을 표시하도록 허용합니다.</string>
@@ -3733,6 +3852,7 @@
     <string name="oneplus_top_level_security_summary">지문, 얼굴 잠금 해제, 긴급 구조</string>
     <string name="oneplus_top_level_sound_summary">방해 금지, 이어폰 모드, 벨소리</string>
     <string name="oneplus_top_level_system_summary">언어 및 키보드, 시간, 재설정, 시스템 업데이트</string>
+    <string name="oneplus_top_level_system_summary_verizon">언어 및 키보드, 시간, 재설정</string>
     <string name="oneplus_touch_vibrate">터치 진동</string>
     <string name="oneplus_turn_off_time">종료</string>
     <string name="oneplus_turn_on_feature_cancel">취소</string>
@@ -3761,12 +3881,17 @@
     <string name="oneplus_video_enhancer">강렬한 색상 효과</string>
     <string name="oneplus_video_enhancer_footer">동영상을 재생하는 동안 색상 향상</string>
     <string name="oneplus_video_enhancer_summary">동영상을 재생하는 동안 색상 향상</string>
+    <string name="oneplus_voice_assistant">음성 도우미</string>
     <string name="oneplus_volume_keys_adjust">볼륨 버튼을 사용하여 조정하세요.</string>
     <string name="oneplus_volume_keys_adjust_media">미디어 볼륨</string>
     <string name="oneplus_volume_keys_adjust_ringtones">벨소리 볼륨</string>
     <string name="oneplus_weak_text_reminding">텍스트 전용</string>
     <string name="oneplus_weak_text_reminding_summary">앱이 헤즈업 알림을 표시하도록 허용합니다.</string>
     <string name="oneplus_wellbeing_grayscale_open_tip">\"그레이스케일\" 기능이 켜져 있기 때문에 현재 야간 모드를 사용할 수 없습니다</string>
+    <string name="oneplus_wifi_6_standard_hotspot_cancel">취소</string>
+    <string name="oneplus_wifi_6_standard_hotspot_enable">활성화</string>
+    <string name="oneplus_wifi_6_standard_hotspot_title">Wi‑Fi 6 표준 핫스팟</string>
+    <string name="oneplus_wifi_6_standard_hotspot_warning">연결할 일부 장치는 Wi‑Fi 6 표준을 지원하지 않을 수 있습니다. 계속 사용하시겠습니까?</string>
     <string name="oneplus_wifi_ap_error">SIM 카드를 삽입하세요.</string>
     <string name="oneplus_wifi_hidden_network_warning">"라우터가 SSID 브로드캐스트를 비활성화하는 경우 숨겨진 네트워크에 연결하려면 \"예\"를 선택해야 합니다.
 
@@ -3787,6 +3912,8 @@
     <string name="oneplus_zen_mode_automation_settings_title">자동으로 켜기</string>
     <string name="oneplus_zen_mode_duration_settings_title">기간</string>
     <string name="oneplus_zen_mode_duration_summary_always_prompt">항상 물어보기(자동으로 켜진 경우 제외)</string>
+    <string name="oneplus_zen_mode_duration_summary_forever">끌 때까지(자동으로 켠 경우 제외)</string>
+    <string name="oneplus_zen_mode_duration_summary_time_minutes">%d분(자동으로 켠 경우 제외)</string>
     <string name="oneplus_zen_mode_footer_info">방해 금지가 켜져 있으면 위에서 허용한 경우를 제외하고 소리 및 진동이 꺼집니다.</string>
     <string name="oneplus_zen_mode_mode_manual_switch_summary">방해 금지를 수동으로 켤 수 있습니다.</string>
     <string name="oneplus_zen_mode_settings">동작</string>
@@ -3800,6 +3927,10 @@
     <string name="op_android_mode_cannot_change_color_accent">기본 테마는 시스템 컬러 테마만 사용할 수 있습니다.</string>
     <string name="op_app_already_uninstalled">제거됨</string>
     <string name="op_audio_settings">오디오 튜너</string>
+    <string name="op_auto_power_saving">자동 절전</string>
+    <string name="op_auto_power_saving_summary">배터리 소모 없이 적절한 해상도로 자동 전환</string>
+    <string name="op_charging_optimization">충전 최적화</string>
+    <string name="op_charging_optimization_summary">사용 습관에 따라 충전 패턴 최적화</string>
     <string name="op_china_mobile">CMCC</string>
     <string name="op_china_telecom">CTCC</string>
     <string name="op_china_unicom">CUCC</string>
@@ -3847,7 +3978,7 @@
     <string name="op_primary_royal_blue_label">로열 블루</string>
     <string name="op_primary_sky_blue_label">청록</string>
     <string name="op_primary_vigour_red_label">분홍</string>
-    <string name="op_reset">초기화</string>
+    <string name="op_reset">재설정</string>
     <string name="op_reset_options_summary">공장 초기화, 앱 및 네트워크 초기화</string>
     <string name="op_screenshot">스크린샷 소리</string>
     <string name="op_security_lock_settings_title">보안 및 잠금 화면</string>
@@ -3879,6 +4010,7 @@
     <string name="op_wifi_display_summary">캐스트</string>
     <string name="op_wifi_verbose_multi_broadcast_summary">대기 중인 동안, 필터가 켜져 있지 않으면 앱에 대한 WLAN 멀티/브로드캐스팅 사양이 WLAN을 작동시키고 시스템 리소스를 소모하므로, 과도한 배터리 소모가 발생합니다.</string>
     <string name="op_wifi_verbose_multi_broadcast_title">앱 WLAN 멀티/브로드캐스팅 필터</string>
+    <string name="open_hotspot_warning_message">"공개 보안을 사용하면 장치는 비밀번호를 입력하지 않고도 귀하의 모바일 핫스팟을 사용할 수 있습니다. 비밀번호를 요구하려면 WPA2 보안을 대신 선택하세요. "</string>
     <string name="openid_dialog_reset">초기화</string>
     <string name="openid_dialog_summary">이 작업은 식별자를 새로운 난수로 대체합니다.</string>
     <string name="openid_dialog_title">식별자를 재설정할까요?</string>
@@ -3963,6 +4095,9 @@
     <string name="power_discharging_duration_enhanced">내 사용량(%2$s)을 기준으로 약 %1$s 남음</string>
     <string name="power_flashlight">손전등</string>
     <string name="power_idle">휴대전화 유휴 상태</string>
+    <string name="power_menu">전원 메뉴</string>
+    <string name="power_off">전원 끄기</string>
+    <string name="power_off_summary">장치의 전원이 꺼집니다.</string>
     <string name="power_overcounted">과다 산정됨</string>
     <string name="power_phone">음성 통화</string>
     <string name="power_remaining_charging_duration_only">충전 완료까지 %1$s 남음</string>
@@ -4253,6 +4388,19 @@ UT 인터페이스: %5$s"</string>
     <string name="reset_network_title">Wi-Fi, 모바일, 블루투스 초기화</string>
     <string name="reset_shortcut_manager_throttling">ShortcutManager 대역 제한 기능 재설정</string>
     <string name="reset_shortcut_manager_throttling_complete">ShortcutManager 대역 제한 기능이 재설정되었습니다.</string>
+    <string name="reset_system_settings_button_text">설정 초기화</string>
+    <string name="reset_system_settings_complete_toast">시스템 설정이 초기화되었습니다.</string>
+    <string name="reset_system_settings_desc">"시스템 설정을 변경한 경우 \"설정 초기화\"는 휴대폰을 원래의 동작 방식으로 되돌립니다.
+
+다운로드한 앱, 개인 데이터 또는 다음과 같은 보호된 설정에는 영향을 미치지 않습니다.
+
+"<li>보안 설정</li>"
+"<li>언어 설정</li>"
+"<li>계정 설정</li></string>
+    <string name="reset_system_settings_dialog_message">"시스템 설정을 초기화하면 벨소리, 화면 밝기 및 키보드 동작 방식 등의 일부 사용자 지정 설정이 변경됩니다.
+시스템 설정을 초기화하시겠습니까? 이 작업은 취소할 수 없습니다."</string>
+    <string name="reset_system_settings_dialog_title">경고</string>
+    <string name="reset_system_settings_title">설정 초기화</string>
     <string name="restore_default_apn">기본 APN 설정 복원 중</string>
     <string name="restore_default_apn_completed">기본 APN 설정을 초기화했습니다.</string>
     <string name="restr_pin_enter_admin_pin">관리자 PIN 입력</string>
@@ -4282,6 +4430,7 @@ UT 인터페이스: %5$s"</string>
     <string name="retail_demo_reset_next">다음</string>
     <string name="retail_demo_reset_title">비밀번호 입력 필요</string>
     <string name="retry">재시도</string>
+    <string name="reverse_wireless_charging_category">무선 충전</string>
     <string name="ring_volume_option_title">벨소리 볼륨</string>
     <string name="ring_volume_title">벨소리 볼륨</string>
     <string name="ringtone_title">전화 벨소리</string>
@@ -4329,6 +4478,7 @@ UT 인터페이스: %5$s"</string>
     <string name="safety_and_regulatory_info">안전 및 규제 설명서</string>
     <string name="saturation_option_title">컬러 밸런스</string>
     <string name="save">저장</string>
+    <string name="save_changes">변경 내용 저장</string>
     <string name="saved_network">%1$s(으)로 저장됨</string>
     <string name="scanning_status_text_wifi_off_ble_off">Wi‑Fi와 블루투스 검색 모두 꺼짐</string>
     <string name="scanning_status_text_wifi_off_ble_on">블루투스 검색 켜짐, Wi‑Fi 검색 꺼짐</string>
@@ -4423,6 +4573,7 @@ UT 인터페이스: %5$s"</string>
     <string name="search_bar_account_avatar_content_description" />
     <string name="search_menu">설정 검색</string>
     <string name="search_menu_title">검색</string>
+    <string name="search_network_extenders">네트워크 확장기 검색 중</string>
     <string name="search_results_title">설정</string>
     <string name="search_settings">검색</string>
     <string name="secure_lock_encryption_warning">접근성 서비스를 사용 설정했으므로 기기에서 데이터 암호화를 개선하기 위해 화면 잠금을 사용하지 않습니다.</string>
@@ -4542,6 +4693,7 @@ UT 인터페이스: %5$s"</string>
     <string name="select_automatically">네트워크 자동 선택</string>
     <string name="select_day">월과 일 선택</string>
     <string name="select_device_admin_msg">기기 관리자 앱</string>
+    <string name="select_function">기능 선택</string>
     <string name="select_hours">시간 선택</string>
     <string name="select_logd_size_dialog_title">로그 버퍼당 로거 크기 선택</string>
     <string name="select_logd_size_title">로거 버퍼 크기</string>
@@ -4563,6 +4715,9 @@ UT 인터페이스: %5$s"</string>
     <string name="select_year">연도 선택</string>
     <string name="sensors_off_quick_settings_title">센서 사용 안함</string>
     <string name="service_background_processes">%1$s 남음</string>
+    <string name="service_does_not_exists_in_this_area">이 지역에 서비스가 없습니다.</string>
+    <string name="service_exists_in_this_area_and_is_capable_of_being_used">이 지역에 서비스가 있으며 사용할 수 있습니다.</string>
+    <string name="service_exists_in_this_area_but_is_not_capable_of_being_used">이 지역에 서비스가 있지만 사용할 수 없습니다.</string>
     <string name="service_foreground_processes">%1$s 사용됨</string>
     <string name="service_manage">설정</string>
     <string name="service_manage_description">%1$s: 현재 사용 중입니다. 변경하려면 설정을 탭하세요.</string>
@@ -4636,6 +4791,8 @@ UT 인터페이스: %5$s"</string>
     <string name="show_screen_updates_summary">전체 창 화면이 업데이트되었을 때 플래시 처리</string>
     <string name="show_touches">탭한 항목 표시</string>
     <string name="show_touches_summary">탭한 항목에 대해 시각적인 피드백 표시</string>
+    <string name="show_wifi_popup">Wi-Fi 팝업 표시</string>
+    <string name="show_wifi_popup_summary">앱을 열 때 Wi-Fi를 사용할 수 있는 경우 알림 표시</string>
     <string name="sim_bad_pin">잘못된 PIN</string>
     <string name="sim_call_back_title">기본 SIM에서 다시 전화하기</string>
     <string name="sim_calls_always_use">통화에 항상 사용</string>
@@ -4690,7 +4847,7 @@ PIN이 잘못된 것 같습니다."</string>
     <string name="sim_lock_settings_summary_off">사용 안함</string>
     <string name="sim_lock_settings_summary_on">잠김</string>
     <string name="sim_lock_settings_title">SIM 카드 잠금</string>
-    <string name="sim_missing">찾을 수 없거나 오류입니다</string>
+    <string name="sim_missing">찾을 수 없거나 오류입니다.</string>
     <string name="sim_multi_sims_summary">모바일 데이터에 우선 사용할 SIM을 선택하세요.</string>
     <string name="sim_multi_sims_title">여러 개의 SIM이 있음</string>
     <string name="sim_name_hint">SIM 이름 입력</string>
@@ -4742,7 +4899,9 @@ PIN이 잘못된 것 같습니다."</string>
     <string name="sms_messages_title">SMS 메시지</string>
     <string name="sms_preference">SMS 환경설정</string>
     <string name="snooze_options_title">알림 일시 중지 허용</string>
+    <string name="softap_tethering_footer_info">핫스팟과 테더링을 사용하여 모바일 데이터 또는 Wi-Fi 연결을 통해 다른 장치에 인터넷을 제공합니다. 앱은 핫스팟을 생성하여 근처 장치와 콘텐츠를 공유할 수도 있습니다.</string>
     <string name="sometimes_running">가끔 실행(%s)</string>
+    <string name="sort_apps_by_date">날짜로 정렬</string>
     <string name="sort_avg_use">평균 사용량 기준 정렬</string>
     <string name="sort_max_use">최대 사용량 기준 정렬</string>
     <string name="sort_order_alpha">이름순 정렬</string>
@@ -5085,6 +5244,7 @@ Google 동기화는 사용자가 어디에서든지 연락처, 일정 등에 액
     <string name="system_navigation_title">시스템 탐색</string>
     <string name="system_package">외부 장치에 시스템 업데이트를 설치할 수 없습니다.</string>
     <string name="system_ui_settings">SystemUI 튜너 표시</string>
+    <string name="system_update">시스템 업데이트</string>
     <string name="system_update_settings_list_item_summary" />
     <string name="system_update_settings_list_item_title">시스템 업데이트</string>
     <string name="system_update_uss_title">다운로드 및 설치</string>
@@ -5101,7 +5261,7 @@ Google 동기화는 사용자가 어디에서든지 연락처, 일정 등에 액
     <string name="tether_error_item_default">테더링</string>
     <string name="tether_error_message">%1$s에 가입하지 않았습니다.</string>
     <string name="tether_error_title">%1$s 오류</string>
-    <string name="tether_no_sim_message">모바일 핫스팟 및 기타 테더링 옵션을 사용하려면 SIM 카드를 삽입하세요</string>
+    <string name="tether_no_sim_message">모바일 핫스팟 및 기타 테더링 옵션을 사용하려면 SIM 카드를 삽입하세요.</string>
     <string name="tether_no_sim_title">SIM 카드 없음</string>
     <string name="tether_settings_disabled_on_data_saver">데이터 절약 모드가 켜져 있으면 테더링하거나 휴대용 핫스팟을 사용할 수 없습니다.</string>
     <string name="tether_settings_summary_hotspot_off_tether_on">테더링</string>
@@ -5126,7 +5286,7 @@ Google 동기화는 사용자가 어디에서든지 연락처, 일정 등에 액
     <string name="theme_switch_dark">다크</string>
     <string name="theme_switch_dark_mode_summary">시스템 전체에서 다크 모드 사용</string>
     <string name="theme_switch_dark_mode_title">야간 모드</string>
-    <string name="theme_switch_default">기본 테마</string>
+    <string name="theme_switch_default">기본</string>
     <string name="theme_switch_description">테마를 %1$s로 변경하려고 합니다</string>
     <string name="theme_switch_dialog_title">시스템 테마 변경</string>
     <string name="time_format_category_title">시간 형식</string>
@@ -5218,6 +5378,7 @@ Google 동기화는 사용자가 어디에서든지 연락처, 일정 등에 액
     <string name="tts_status_title">기본 언어 상태</string>
     <string name="tx_link_speed">%1$dMbps</string>
     <string name="tx_wifi_speed">전송 링크 속도</string>
+    <string name="uicc_alert_message">SSID VerizonWiFiAccess로 WiFi 네트워크에 로그인하려면 UICC가 필요합니다.</string>
     <string name="uicc_all_lock_summary">Sprint 또는 국제 SIM에 의해 장치가 잠겼습니다</string>
     <string name="uicc_lock_summary">장치가 Sprint SIM에 의해서만 잠겨 있습니다</string>
     <string name="uicc_unlock">UICC 잠금 해제</string>
@@ -5239,10 +5400,16 @@ Google 동기화는 사용자가 어디에서든지 연락처, 일정 등에 액
     <string name="uninstall_failed_device_policy_manager">이 패키지는 활성 장치 관리자이기 때문에 제거할 수 없습니다.</string>
     <string name="uninstall_failed_device_policy_manager_of_user">이 패키지는 사용자 %1$s에 대한 활성 장치 관리자이기 때문에 제거할 수 없습니다.</string>
     <string name="uninstall_failure_notification_channel">제거 실패</string>
+    <string name="uninstall_multiple_apps">일괄 작업</string>
     <string name="uninstall_text">설치 제거</string>
     <string name="uninstall_update_text">이 앱을 공장 출고 버전으로 바꾸시겠습니까? 모든 데이터가 제거됩니다.</string>
     <string name="uninstall_update_text_multiuser">이 앱을 공장 출고 버전으로 바꾸시겠습니까? 모든 데이터가 제거됩니다. 그러면 작업 프로필이 있는 사용자를 포함하여 이 장치의 모든 사용자에게 영향을 줍니다.</string>
     <string name="uninstall_update_title">업데이트 제거</string>
+    <string name="uninstallapps_confirm">확인</string>
+    <string name="uninstallapps_confirm_dialog_body">선택한 모든 응용 프로그램 및 응용 프로그램 패키지와 관련된 모든 파일이 제거됩니다.</string>
+    <string name="uninstallapps_confirm_dialog_title">선택한 앱을 제거하시겠습니까?</string>
+    <string name="uninstallapps_selected">선택됨</string>
+    <string name="uninstallapps_toast_message">앱이 제거되었습니다.</string>
     <string name="uninstalling">제거 중…</string>
     <string name="uninstalling_notification_channel">제거 실행 중</string>
     <string name="unknown">알 수 없음</string>
@@ -5324,6 +5491,12 @@ Google 동기화는 사용자가 어디에서든지 연락처, 일정 등에 액
     <string name="unsupported_setting_summary">휴대전화에서 지원되지 않는 설정</string>
     <string name="update_prl">PRL 업데이트</string>
     <string name="update_profile">프로필 업데이트</string>
+    <string name="upstream_type_auto">자동 전환</string>
+    <string name="upstream_type_auto_summary">Wi-Fi 연결이 끊어지면 모바일 데이터 연결로 자동 전환</string>
+    <string name="upstream_type_cell">모바일 데이터 공유만</string>
+    <string name="upstream_type_cell_summary">모바일 데이터가 비활성화되거나 연결이 끊어지면 공유가 비활성화됩니다.</string>
+    <string name="upstream_type_wifi">Wi-Fi 공유만</string>
+    <string name="upstream_type_wifi_summary">Wi-Fi 연결이 끊어지면 공유가 비활성화됩니다.</string>
     <string name="usage">사용량</string>
     <string name="usage_access">사용 기록 액세스</string>
     <string name="usage_access_description">앱에서 사용 기록에 액세스할 수 있도록 허용하면 사용 중인 다른 앱의 종류와 사용 빈도, 이동통신사, 언어 설정, 기타 세부정보를 추적할 수 있게 됩니다.</string>
@@ -5509,6 +5682,9 @@ Google 동기화는 사용자가 어디에서든지 연락처, 일정 등에 액
     <string name="v7_preference_on">사용</string>
     <string name="verify_apps_over_usb_summary">ADB/ADT를 통해 설치된 앱에 유해한 동작이 있는지 확인</string>
     <string name="verify_apps_over_usb_title">USB를 통해 설치된 앱 확인</string>
+    <string name="verizon_store_demo_mode_hint">암호 입력</string>
+    <string name="verizon_store_demo_mode_title">Verizon Store Demo Mode</string>
+    <string name="verizon_wifi_tether_band_warning">모바일 핫스팟 설정 방법을 변경하면 현재 모바일 핫스팟에 연결된 모든 장치의 연결이 끊어집니다.</string>
     <string name="version_text">버전 %1$s</string>
     <string name="vibrate_in_silent_title">무음 시 진동</string>
     <string name="vibrate_input_devices">진동 리디렉션</string>
@@ -5625,6 +5801,8 @@ Google 동기화는 사용자가 어디에서든지 연락처, 일정 등에 액
     <string name="wallpaper_settings_title">배경화면</string>
     <string name="wallpaper_suggestion_summary">화면 맞춤설정</string>
     <string name="wallpaper_suggestion_title">배경화면 변경</string>
+    <string name="warning_title">경고</string>
+    <string name="warranty_date_code">보증 날짜</string>
     <string name="web_action_enable_summary">앱이 설치되어 있지 않아도 앱에서 링크 열기</string>
     <string name="web_action_enable_title">인스턴트 앱</string>
     <string name="web_action_section_title">인스턴트 앱</string>
@@ -5939,8 +6117,17 @@ Google 동기화는 사용자가 어디에서든지 연락처, 일정 등에 액
     <string name="wifi_tether_custom_auto_turn_off_always_summary">항상 켜기</string>
     <string name="wifi_tether_enabled_subtext">%1$s이(가) 활성화됨</string>
     <string name="wifi_tether_failed_subtext">휴대용 Wi-Fi 핫스팟 오류</string>
+    <string name="wifi_tether_passphrase_warning">1개의 알파벳, 1개의 숫자, 1개의 기호를 포함하여 8자 이상</string>
     <string name="wifi_tether_starting">핫스팟 켜는 중…</string>
     <string name="wifi_tether_stopping">핫스팟 끄는 중…</string>
+    <string name="wifi_tether_upstream_network_type_config">공유 설정</string>
+    <string name="wifi_tether_upstream_network_type_title">공유 설정</string>
+    <string name="wifi_tether_verizon_custom_auto_turn_off_10_min_summary">비활성 상태 10분 후</string>
+    <string name="wifi_tether_verizon_custom_auto_turn_off_20_min_summary">비활성 상태 20분 후</string>
+    <string name="wifi_tether_verizon_custom_auto_turn_off_30_min_summary">비활성 상태 30분 후</string>
+    <string name="wifi_tether_verizon_custom_auto_turn_off_5_min_summary">비활성 상태 5분 후</string>
+    <string name="wifi_tether_verizon_custom_auto_turn_off_60_min_summary">비활성 상태 60분 후</string>
+    <string name="wifi_tether_verizon_custom_auto_turn_off_always_summary">항상 켜기</string>
     <string name="wifi_turned_on_message">Wi-Fi 사용 설정됨</string>
     <string name="wifi_unchanged">(변경 안함)</string>
     <string name="wifi_unmetered_label">무제한 네트워크</string>
@@ -5983,8 +6170,8 @@ Google 동기화는 사용자가 어디에서든지 연락처, 일정 등에 액
     <string name="wizard_finish">완료</string>
     <string name="wizard_next">다음</string>
     <string name="work_alarm_ringtone_title">기본 직장 알람 소리</string>
-    <string name="work_life_balance">워크-라이프 밸런스</string>
-    <string name="work_life_disabled_toast">워크 라이프 밸런스 기능은 사용하지 않도록 설정되어 있습니다.</string>
+    <string name="work_life_balance">Work-Life Balance</string>
+    <string name="work_life_disabled_toast">Work Life Balance 기능은 사용하지 않도록 설정되어 있습니다.</string>
     <string name="work_mode_label">직장 프로필</string>
     <string name="work_mode_off_summary">앱 및 알림 사용 중지됨</string>
     <string name="work_mode_on_summary">조직에서 관리</string>

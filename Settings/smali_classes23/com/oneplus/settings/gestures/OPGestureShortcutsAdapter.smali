@@ -142,7 +142,7 @@
 
     iget-object v2, p0, Lcom/oneplus/settings/gestures/OPGestureShortcutsAdapter;->mInflater:Landroid/view/LayoutInflater;
 
-    const v3, 0x7f0d01c9
+    const v3, 0x7f0d01ca
 
     const/4 v4, 0x0
 
@@ -156,7 +156,7 @@
 
     move-object v0, v2
 
-    const v2, 0x7f0a050f
+    const v2, 0x7f0a050c
 
     invoke-virtual {p2, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -166,7 +166,7 @@
 
     iput-object v2, v0, Lcom/oneplus/settings/gestures/OPGestureShortcutsAdapter$ItemViewHolder;->parent:Landroid/widget/RelativeLayout;
 
-    const v2, 0x7f0a0720
+    const v2, 0x7f0a0721
 
     invoke-virtual {p2, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -176,7 +176,7 @@
 
     iput-object v2, v0, Lcom/oneplus/settings/gestures/OPGestureShortcutsAdapter$ItemViewHolder;->titleTv:Landroid/widget/TextView;
 
-    const v2, 0x7f0a02f0
+    const v2, 0x7f0a02f5
 
     invoke-virtual {p2, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -186,7 +186,7 @@
 
     iput-object v2, v0, Lcom/oneplus/settings/gestures/OPGestureShortcutsAdapter$ItemViewHolder;->appIconIv:Landroid/widget/ImageView;
 
-    const v2, 0x7f0a0421
+    const v2, 0x7f0a0426
 
     invoke-virtual {p2, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -204,7 +204,7 @@
 
     iput-object v2, v0, Lcom/oneplus/settings/gestures/OPGestureShortcutsAdapter$ItemViewHolder;->bottomLine:Landroid/view/View;
 
-    const v2, 0x7f0a02ab
+    const v2, 0x7f0a02b0
 
     invoke-virtual {p2, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -212,7 +212,7 @@
 
     iput-object v2, v0, Lcom/oneplus/settings/gestures/OPGestureShortcutsAdapter$ItemViewHolder;->groupDivider:Landroid/view/View;
 
-    const v2, 0x7f0a058c
+    const v2, 0x7f0a058d
 
     invoke-virtual {p2, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -250,7 +250,7 @@
 
     iget-object v5, v0, Lcom/oneplus/settings/gestures/OPGestureShortcutsAdapter$ItemViewHolder;->titleTv:Landroid/widget/TextView;
 
-    const v6, 0x7f120d41
+    const v6, 0x7f120d9d
 
     invoke-virtual {v5, v6}, Landroid/widget/TextView;->setText(I)V
 

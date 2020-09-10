@@ -53,7 +53,7 @@
 
     if-lt v1, v0, :cond_0
 
-    const v2, 0x7f1206d2
+    const v2, 0x7f120708
 
     return v2
 
@@ -65,7 +65,7 @@
     return v0
 
     :cond_1
-    const v0, 0x7f1206d3
+    const v0, 0x7f120709
 
     return v0
 .end method
@@ -106,7 +106,7 @@
 .method protected getConfirmLockTitleResId()I
     .locals 1
 
-    const v0, 0x7f1212ff
+    const v0, 0x7f1213bb
 
     return v0
 .end method
@@ -114,7 +114,7 @@
 .method protected getDescriptionResDisabledByAdmin()I
     .locals 1
 
-    const v0, 0x7f1212f9
+    const v0, 0x7f1213b5
 
     return v0
 .end method
@@ -162,7 +162,7 @@
 .method protected getHeaderResDefault()I
     .locals 1
 
-    const v0, 0x7f1212fa
+    const v0, 0x7f1213b6
 
     return v0
 .end method
@@ -170,7 +170,7 @@
 .method protected getHeaderResDisabledByAdmin()I
     .locals 1
 
-    const v0, 0x7f1212fb
+    const v0, 0x7f1213b7
 
     return v0
 .end method
@@ -304,7 +304,7 @@
 
     iget-object v0, p0, Lcom/android/settings/biometrics/face/FaceEnrollIntroduction;->mBtnCancel:Lcom/oneplus/lib/widget/button/OPButton;
 
-    const v1, 0x7f1213f5
+    const v1, 0x7f1214b7
 
     invoke-virtual {v0, v1}, Lcom/oneplus/lib/widget/button/OPButton;->setText(I)V
 
@@ -321,7 +321,7 @@
     :cond_0
     iget-object v0, p0, Lcom/android/settings/biometrics/face/FaceEnrollIntroduction;->mBtnCancel:Lcom/oneplus/lib/widget/button/OPButton;
 
-    const v1, 0x7f1212f3
+    const v1, 0x7f1213af
 
     invoke-virtual {v0, v1}, Lcom/oneplus/lib/widget/button/OPButton;->setText(I)V
 

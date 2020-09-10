@@ -42,6 +42,14 @@
 
 .field public static final FILTER_APPS_POWER_WHITELIST_ALL:I = 0x1
 
+.field public static final FILTER_APPS_READING_MODE_EFFECT_SELECT_ALL:I = 0x16
+
+.field public static final FILTER_APPS_READING_MODE_EFFECT_SELECT_AVAILABLE:I = 0x19
+
+.field public static final FILTER_APPS_READING_MODE_EFFECT_SELECT_CHROMATIC:I = 0x17
+
+.field public static final FILTER_APPS_READING_MODE_EFFECT_SELECT_MONO:I = 0x18
+
 .field public static final FILTER_APPS_RECENT:I = 0x6
 
 .field public static final FILTER_APPS_USAGE_ACCESS:I = 0xa
@@ -67,7 +75,7 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    const/16 v0, 0x16
+    const/16 v0, 0x1a
 
     new-array v0, v0, [Lcom/android/settings/applications/manageapplications/AppFilterItem;
 
@@ -87,7 +95,7 @@
 
     const/4 v3, 0x0
 
-    const v4, 0x7f1207fb
+    const v4, 0x7f120833
 
     invoke-direct {v1, v2, v3, v4}, Lcom/android/settings/applications/manageapplications/AppFilterItem;-><init>(Lcom/android/settingslib/applications/ApplicationsState$AppFilter;II)V
 
@@ -107,7 +115,7 @@
 
     const/4 v3, 0x1
 
-    const v4, 0x7f1206df
+    const v4, 0x7f120715
 
     invoke-direct {v1, v2, v3, v4}, Lcom/android/settings/applications/manageapplications/AppFilterItem;-><init>(Lcom/android/settingslib/applications/ApplicationsState$AppFilter;II)V
 
@@ -133,7 +141,7 @@
 
     const/4 v3, 0x3
 
-    const v5, 0x7f1206e6
+    const v5, 0x7f12071c
 
     invoke-direct {v1, v2, v3, v5}, Lcom/android/settings/applications/manageapplications/AppFilterItem;-><init>(Lcom/android/settingslib/applications/ApplicationsState$AppFilter;II)V
 
@@ -147,7 +155,7 @@
 
     const/4 v3, 0x5
 
-    const v5, 0x7f1206e1
+    const v5, 0x7f120717
 
     invoke-direct {v1, v2, v3, v5}, Lcom/android/settings/applications/manageapplications/AppFilterItem;-><init>(Lcom/android/settingslib/applications/ApplicationsState$AppFilter;II)V
 
@@ -161,7 +169,7 @@
 
     const/4 v3, 0x4
 
-    const v5, 0x7f1206e8
+    const v5, 0x7f12071e
 
     invoke-direct {v1, v2, v3, v5}, Lcom/android/settings/applications/manageapplications/AppFilterItem;-><init>(Lcom/android/settingslib/applications/ApplicationsState$AppFilter;II)V
 
@@ -175,7 +183,7 @@
 
     const/4 v3, 0x6
 
-    const v5, 0x7f12140f
+    const v5, 0x7f1214d3
 
     invoke-direct {v1, v2, v3, v5}, Lcom/android/settings/applications/manageapplications/AppFilterItem;-><init>(Lcom/android/settingslib/applications/ApplicationsState$AppFilter;II)V
 
@@ -189,7 +197,7 @@
 
     const/4 v3, 0x7
 
-    const v5, 0x7f12140e
+    const v5, 0x7f1214d2
 
     invoke-direct {v1, v2, v3, v5}, Lcom/android/settings/applications/manageapplications/AppFilterItem;-><init>(Lcom/android/settingslib/applications/ApplicationsState$AppFilter;II)V
 
@@ -203,7 +211,7 @@
 
     const/16 v3, 0x8
 
-    const v5, 0x7f1206f0
+    const v5, 0x7f120726
 
     invoke-direct {v1, v2, v3, v5}, Lcom/android/settings/applications/manageapplications/AppFilterItem;-><init>(Lcom/android/settingslib/applications/ApplicationsState$AppFilter;II)V
 
@@ -217,7 +225,7 @@
 
     const/16 v3, 0x9
 
-    const v5, 0x7f1206f1
+    const v5, 0x7f120727
 
     invoke-direct {v1, v2, v3, v5}, Lcom/android/settings/applications/manageapplications/AppFilterItem;-><init>(Lcom/android/settingslib/applications/ApplicationsState$AppFilter;II)V
 
@@ -243,7 +251,7 @@
 
     const/16 v3, 0xb
 
-    const v5, 0x7f1206ef
+    const v5, 0x7f120725
 
     invoke-direct {v1, v2, v3, v5}, Lcom/android/settings/applications/manageapplications/AppFilterItem;-><init>(Lcom/android/settingslib/applications/ApplicationsState$AppFilter;II)V
 
@@ -255,7 +263,7 @@
 
     sget-object v2, Lcom/android/settings/applications/AppStateWriteSettingsBridge;->FILTER_WRITE_SETTINGS:Lcom/android/settingslib/applications/ApplicationsState$AppFilter;
 
-    const v3, 0x7f1206f2
+    const v3, 0x7f120728
 
     const/16 v5, 0xc
 
@@ -271,7 +279,7 @@
 
     const/16 v5, 0xd
 
-    const v6, 0x7f1206e7
+    const v6, 0x7f12071d
 
     invoke-direct {v1, v2, v5, v6}, Lcom/android/settings/applications/manageapplications/AppFilterItem;-><init>(Lcom/android/settingslib/applications/ApplicationsState$AppFilter;II)V
 
@@ -301,7 +309,7 @@
 
     const/16 v3, 0x10
 
-    const v5, 0x7f1206ea
+    const v5, 0x7f120720
 
     invoke-direct {v1, v2, v3, v5}, Lcom/android/settings/applications/manageapplications/AppFilterItem;-><init>(Lcom/android/settingslib/applications/ApplicationsState$AppFilter;II)V
 
@@ -343,7 +351,7 @@
     :goto_0
     const/16 v3, 0x12
 
-    const v5, 0x7f120bc1
+    const v5, 0x7f120c0c
 
     invoke-direct {v1, v2, v3, v5}, Lcom/android/settings/applications/manageapplications/AppFilterItem;-><init>(Lcom/android/settingslib/applications/ApplicationsState$AppFilter;II)V
 
@@ -379,12 +387,12 @@
 
     if-nez v6, :cond_2
 
-    const v6, 0x7f120bc0
+    const v6, 0x7f120c0b
 
     goto :goto_2
 
     :cond_2
-    const v6, 0x7f1205ab
+    const v6, 0x7f1205c7
 
     :goto_2
     invoke-direct {v2, v3, v5, v6}, Lcom/android/settings/applications/manageapplications/AppFilterItem;-><init>(Lcom/android/settingslib/applications/ApplicationsState$AppFilter;II)V
@@ -413,9 +421,71 @@
 
     sget-object v3, Lcom/oneplus/settings/backgroundoptimize/AppBgOptimizeBridge;->FILTER_APP_BG_NOT_OPTIMIZE:Lcom/android/settingslib/applications/ApplicationsState$AppFilter;
 
-    const/16 v4, 0x15
+    const/16 v5, 0x15
 
-    const v5, 0x7f120b23
+    const v6, 0x7f120b6a
+
+    invoke-direct {v2, v3, v5, v6}, Lcom/android/settings/applications/manageapplications/AppFilterItem;-><init>(Lcom/android/settingslib/applications/ApplicationsState$AppFilter;II)V
+
+    aput-object v2, v0, v1
+
+    iget-object v0, p0, Lcom/android/settings/applications/manageapplications/AppFilterRegistry;->mFilters:[Lcom/android/settings/applications/manageapplications/AppFilterItem;
+
+    const/16 v1, 0x16
+
+    new-instance v2, Lcom/android/settings/applications/manageapplications/AppFilterItem;
+
+    sget-object v3, Lcom/oneplus/settings/better/ReadingModeEffectSelectBridge;->FILTER_ALL:Lcom/android/settingslib/applications/ApplicationsState$AppFilter;
+
+    const/16 v5, 0x16
+
+    invoke-direct {v2, v3, v5, v4}, Lcom/android/settings/applications/manageapplications/AppFilterItem;-><init>(Lcom/android/settingslib/applications/ApplicationsState$AppFilter;II)V
+
+    aput-object v2, v0, v1
+
+    iget-object v0, p0, Lcom/android/settings/applications/manageapplications/AppFilterRegistry;->mFilters:[Lcom/android/settings/applications/manageapplications/AppFilterItem;
+
+    const/16 v1, 0x17
+
+    new-instance v2, Lcom/android/settings/applications/manageapplications/AppFilterItem;
+
+    sget-object v3, Lcom/oneplus/settings/better/ReadingModeEffectSelectBridge;->FILTER_CHROMATIC:Lcom/android/settingslib/applications/ApplicationsState$AppFilter;
+
+    const/16 v4, 0x17
+
+    const v5, 0x7f120f08
+
+    invoke-direct {v2, v3, v4, v5}, Lcom/android/settings/applications/manageapplications/AppFilterItem;-><init>(Lcom/android/settingslib/applications/ApplicationsState$AppFilter;II)V
+
+    aput-object v2, v0, v1
+
+    iget-object v0, p0, Lcom/android/settings/applications/manageapplications/AppFilterRegistry;->mFilters:[Lcom/android/settings/applications/manageapplications/AppFilterItem;
+
+    const/16 v1, 0x18
+
+    new-instance v2, Lcom/android/settings/applications/manageapplications/AppFilterItem;
+
+    sget-object v3, Lcom/oneplus/settings/better/ReadingModeEffectSelectBridge;->FILTER_MONO:Lcom/android/settingslib/applications/ApplicationsState$AppFilter;
+
+    const/16 v4, 0x18
+
+    const v5, 0x7f120f0c
+
+    invoke-direct {v2, v3, v4, v5}, Lcom/android/settings/applications/manageapplications/AppFilterItem;-><init>(Lcom/android/settingslib/applications/ApplicationsState$AppFilter;II)V
+
+    aput-object v2, v0, v1
+
+    iget-object v0, p0, Lcom/android/settings/applications/manageapplications/AppFilterRegistry;->mFilters:[Lcom/android/settings/applications/manageapplications/AppFilterItem;
+
+    const/16 v1, 0x19
+
+    new-instance v2, Lcom/android/settings/applications/manageapplications/AppFilterItem;
+
+    sget-object v3, Lcom/oneplus/settings/better/ReadingModeEffectSelectBridge;->FILTER_AVAILABLE:Lcom/android/settingslib/applications/ApplicationsState$AppFilter;
+
+    const/16 v4, 0x19
+
+    const v5, 0x7f120f06
 
     invoke-direct {v2, v3, v4, v5}, Lcom/android/settings/applications/manageapplications/AppFilterItem;-><init>(Lcom/android/settingslib/applications/ApplicationsState$AppFilter;II)V
 

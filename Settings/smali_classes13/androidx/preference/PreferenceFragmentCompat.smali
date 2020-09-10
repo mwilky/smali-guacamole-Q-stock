@@ -65,7 +65,7 @@
 
     iput-object v0, p0, Landroidx/preference/PreferenceFragmentCompat;->mDividerDecoration:Landroidx/preference/PreferenceFragmentCompat$DividerDecoration;
 
-    const v0, 0x7f0d0267
+    const v0, 0x7f0d0268
 
     iput v0, p0, Landroidx/preference/PreferenceFragmentCompat;->mLayoutResId:I
 
@@ -454,7 +454,7 @@
 
     if-eqz v0, :cond_0
 
-    const v0, 0x7f0a0592
+    const v0, 0x7f0a0593
 
     invoke-virtual {p2, v0}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
 
@@ -467,7 +467,7 @@
     return-object v0
 
     :cond_0
-    const v0, 0x7f0d026d
+    const v0, 0x7f0d026e
 
     const/4 v1, 0x0
 

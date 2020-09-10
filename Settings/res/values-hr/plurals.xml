@@ -278,6 +278,10 @@
         <item quantity="other">Pokušajte ponovno za %d sekundi.</item>
         <item quantity="one">Pokušajte ponovno za %d sekundi.</item>
     </plurals>
+    <plurals name="oneplus_zen_mode_duration_summary_time_hours">
+        <item quantity="other">%d h (osim ako se ne uključuje automatski)</item>
+        <item quantity="one">1 h (osim ako se ne uključuje automatski)</item>
+    </plurals>
     <plurals name="permission_bar_chart_label">
         <item quantity="other">%s aplikacija</item>
         <item quantity="one">%s aplikacija</item>

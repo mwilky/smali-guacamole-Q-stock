@@ -49,7 +49,7 @@
 .method private initViews()V
     .locals 1
 
-    const v0, 0x7f0d027d
+    const v0, 0x7f0d027e
 
     invoke-virtual {p0, v0}, Lcom/oneplus/settings/ringtone/OPRadioButtonPreference;->setWidgetLayoutResource(I)V
 

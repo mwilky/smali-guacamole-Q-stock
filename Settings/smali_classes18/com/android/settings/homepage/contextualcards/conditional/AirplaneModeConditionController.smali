@@ -110,7 +110,7 @@
 
     iget-object v1, p0, Lcom/android/settings/homepage/contextualcards/conditional/AirplaneModeConditionController;->mAppContext:Landroid/content/Context;
 
-    const v2, 0x7f120c35
+    const v2, 0x7f120c85
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
@@ -138,7 +138,7 @@
 
     iget-object v2, p0, Lcom/android/settings/homepage/contextualcards/conditional/AirplaneModeConditionController;->mAppContext:Landroid/content/Context;
 
-    const v3, 0x7f120452
+    const v3, 0x7f120466
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
@@ -170,7 +170,7 @@
 
     iget-object v1, p0, Lcom/android/settings/homepage/contextualcards/conditional/AirplaneModeConditionController;->mAppContext:Landroid/content/Context;
 
-    const v2, 0x7f120451
+    const v2, 0x7f120465
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
@@ -186,7 +186,7 @@
 
     iget-object v1, p0, Lcom/android/settings/homepage/contextualcards/conditional/AirplaneModeConditionController;->mAppContext:Landroid/content/Context;
 
-    const v2, 0x7f080198
+    const v2, 0x7f0801a1
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 

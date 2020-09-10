@@ -107,7 +107,7 @@
 
     if-nez v1, :cond_0
 
-    const v1, 0x7f0a05d3
+    const v1, 0x7f0a05d4
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -375,7 +375,7 @@
 
     iget-object v0, p0, Lcom/android/settings/password/SetupChooseLockPattern$SetupChooseLockPatternFragment;->mSkipOrClearButton:Lcom/oneplus/lib/widget/button/OPButton;
 
-    const v1, 0x7f1213f5
+    const v1, 0x7f1214b7
 
     invoke-virtual {v0, v1}, Lcom/oneplus/lib/widget/button/OPButton;->setText(I)V
 

@@ -208,7 +208,7 @@
 
     iput-boolean v2, p0, Landroidx/preference/Preference;->mShouldDisableView:Z
 
-    const v3, 0x7f0d0252
+    const v3, 0x7f0d0253
 
     iput v3, p0, Landroidx/preference/Preference;->mLayoutResId:I
 
@@ -2004,7 +2004,7 @@
 
     :cond_a
     :goto_3
-    const v8, 0x7f0a02f2
+    const v8, 0x7f0a02f7
 
     invoke-virtual {p1, v8}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 

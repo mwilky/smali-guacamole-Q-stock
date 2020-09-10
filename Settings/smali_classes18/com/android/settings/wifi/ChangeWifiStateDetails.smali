@@ -40,12 +40,12 @@
 
     if-eqz v0, :cond_0
 
-    const v0, 0x7f120197
+    const v0, 0x7f1201a7
 
     goto :goto_0
 
     :cond_0
-    const v0, 0x7f120198
+    const v0, 0x7f1201a8
 
     :goto_0
     invoke-virtual {p0, v0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
@@ -247,7 +247,7 @@
 
     iget-object v1, p0, Lcom/android/settings/wifi/ChangeWifiStateDetails;->mSwitchPref:Landroidx/preference/SwitchPreference;
 
-    const v2, 0x7f120415
+    const v2, 0x7f120428
 
     invoke-virtual {v1, v2}, Landroidx/preference/SwitchPreference;->setTitle(I)V
 

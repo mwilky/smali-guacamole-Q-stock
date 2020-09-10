@@ -224,6 +224,10 @@
         <item quantity="other">Subukin muli sa %d mga segundo.</item>
         <item quantity="one">Subukin muli sa %d segundo.</item>
     </plurals>
+    <plurals name="oneplus_zen_mode_duration_summary_time_hours">
+        <item quantity="other">%d (na) oras (maliban na lang kung awtomatikong nag-o-on)</item>
+        <item quantity="one">1 oras (maliban na lang kung awtomatikong nag-o-on)</item>
+    </plurals>
     <plurals name="permission_bar_chart_label">
         <item quantity="other">%s na app</item>
         <item quantity="one">%s app</item>

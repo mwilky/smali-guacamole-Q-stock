@@ -75,7 +75,7 @@
 
     iget-object v0, p0, Lcom/android/settings/dashboard/profileselector/UserAdapter;->mInflater:Landroid/view/LayoutInflater;
 
-    const v1, 0x7f0d0342
+    const v1, 0x7f0d0343
 
     const/4 v2, 0x0
 
@@ -224,13 +224,13 @@
     goto :goto_0
 
     :cond_0
-    const v1, 0x7f1203fe
+    const v1, 0x7f120411
 
     return v1
 
     :cond_1
     :goto_0
-    const v1, 0x7f1203fd
+    const v1, 0x7f120410
 
     return v1
 .end method

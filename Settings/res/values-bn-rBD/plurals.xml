@@ -8,4 +8,8 @@
         <item quantity="other">%d সেকেন্ডের মধ্যে আবার চেষ্টা করুন।</item>
         <item quantity="one">%d সেকেন্ডের মধ্যে আবার চেষ্টা করুন।</item>
     </plurals>
+    <plurals name="oneplus_zen_mode_duration_summary_time_hours">
+        <item quantity="other">1 ঘন্টা (স্বয়ংক্রিয়ভাবে চালু না হলে) %d ঘন্টা (স্বয়ংক্রিয়ভাবে চালু না হলে)</item>
+        <item quantity="one">1 ঘন্টা (স্বয়ংক্রিয়ভাবে চালু না হলে) %d ঘন্টা (স্বয়ংক্রিয়ভাবে চালু না হলে)</item>
+    </plurals>
 </resources>

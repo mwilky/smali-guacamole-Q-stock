@@ -166,7 +166,7 @@
 
     if-ne p1, v0, :cond_0
 
-    const v0, 0x7f120937
+    const v0, 0x7f120973
 
     return v0
 
@@ -192,12 +192,12 @@
     throw v0
 
     :cond_1
-    const v0, 0x7f120936
+    const v0, 0x7f120972
 
     return v0
 
     :cond_2
-    const v0, 0x7f120934
+    const v0, 0x7f120970
 
     return v0
 .end method
@@ -271,7 +271,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0a03b6
+    const v1, 0x7f0a03bb
 
     invoke-virtual {v0, v1}, Landroidx/fragment/app/FragmentActivity;->findViewById(I)Landroid/view/View;
 
@@ -310,7 +310,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0806b6
+    const v3, 0x7f0806c9
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -1136,7 +1136,7 @@
 
     move-result-object v1
 
-    const v4, 0x7f120933
+    const v4, 0x7f12096f
 
     const/4 v5, 0x2
 
@@ -1184,7 +1184,7 @@
 
     move-result-object v3
 
-    const v6, 0x7f120939
+    const v6, 0x7f120975
 
     invoke-virtual {v3, v6}, Landroidx/fragment/app/FragmentActivity;->getString(I)Ljava/lang/String;
 
@@ -1207,7 +1207,7 @@
 
     const/4 v6, 0x0
 
-    const v7, 0x7f120935
+    const v7, 0x7f120971
 
     invoke-static {v4, v6, v2, v7, v3}, Lcom/android/settings/password/ConfirmDeviceCredentialBaseFragment$LastTryDialog;->show(Landroidx/fragment/app/FragmentManager;Ljava/lang/String;IIZ)Z
 

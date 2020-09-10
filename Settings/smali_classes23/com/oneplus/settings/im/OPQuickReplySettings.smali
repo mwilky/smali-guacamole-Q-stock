@@ -263,7 +263,7 @@
 
     const/4 v3, 0x0
 
-    const v4, 0x7f120e67
+    const v4, 0x7f120ee4
 
     aput v4, v2, v3
 
@@ -279,7 +279,7 @@
 
     new-array v1, v1, [I
 
-    const v2, 0x7f120e69
+    const v2, 0x7f120ee6
 
     aput v2, v1, v3
 
@@ -292,7 +292,7 @@
 
     new-array v1, v1, [I
 
-    const v2, 0x7f120e68
+    const v2, 0x7f120ee5
 
     aput v2, v1, v3
 

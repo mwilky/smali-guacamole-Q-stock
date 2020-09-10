@@ -79,7 +79,7 @@
 
     iget-object v0, p0, Lcom/oneplus/settings/opfinger/OPFingerPrintEnrollView;->mView:Landroid/view/View;
 
-    const v1, 0x7f0a0499
+    const v1, 0x7f0a0496
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -91,7 +91,7 @@
 
     iget-object v0, p0, Lcom/oneplus/settings/opfinger/OPFingerPrintEnrollView;->mView:Landroid/view/View;
 
-    const v1, 0x7f0a049e
+    const v1, 0x7f0a049b
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -103,7 +103,7 @@
 
     iget-object v0, p0, Lcom/oneplus/settings/opfinger/OPFingerPrintEnrollView;->mView:Landroid/view/View;
 
-    const v1, 0x7f0a049b
+    const v1, 0x7f0a0498
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -121,7 +121,7 @@
 
     iget-object v0, p0, Lcom/oneplus/settings/opfinger/OPFingerPrintEnrollView;->mView:Landroid/view/View;
 
-    const v1, 0x7f0a049c
+    const v1, 0x7f0a0499
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -134,7 +134,7 @@
     :cond_0
     iget-object v0, p0, Lcom/oneplus/settings/opfinger/OPFingerPrintEnrollView;->mView:Landroid/view/View;
 
-    const v1, 0x7f0a04ed
+    const v1, 0x7f0a04ea
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -146,7 +146,7 @@
 
     iget-object v0, p0, Lcom/oneplus/settings/opfinger/OPFingerPrintEnrollView;->mView:Landroid/view/View;
 
-    const v1, 0x7f0a04ec
+    const v1, 0x7f0a04e9
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -158,7 +158,7 @@
 
     iget-object v0, p0, Lcom/oneplus/settings/opfinger/OPFingerPrintEnrollView;->mView:Landroid/view/View;
 
-    const v1, 0x7f0a04ee
+    const v1, 0x7f0a04eb
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -170,7 +170,7 @@
 
     iget-object v0, p0, Lcom/oneplus/settings/opfinger/OPFingerPrintEnrollView;->mView:Landroid/view/View;
 
-    const v1, 0x7f0a04eb
+    const v1, 0x7f0a04e8
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -188,7 +188,7 @@
 
     invoke-virtual {v0, v1}, Lcom/oneplus/lib/widget/button/OPButton;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const v0, 0x7f0a04ea
+    const v0, 0x7f0a04e7
 
     invoke-virtual {p0, v0}, Lcom/oneplus/settings/opfinger/OPFingerPrintEnrollView;->findViewById(I)Landroid/view/View;
 
@@ -271,7 +271,7 @@
 
     iget-object v1, p0, Lcom/oneplus/settings/opfinger/OPFingerPrintEnrollView;->mOPFingerInputTipsSubTitle:Landroid/widget/TextView;
 
-    const v2, 0x7f120cd3
+    const v2, 0x7f120d2c
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(I)V
 
@@ -317,13 +317,13 @@
 
     iget-object v0, p0, Lcom/oneplus/settings/opfinger/OPFingerPrintEnrollView;->mOPFingerInputTipsTitle:Landroid/widget/TextView;
 
-    const v1, 0x7f120e29
+    const v1, 0x7f120ea5
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
 
     iget-object v0, p0, Lcom/oneplus/settings/opfinger/OPFingerPrintEnrollView;->mOPFingerInputTipsSubTitle:Landroid/widget/TextView;
 
-    const v1, 0x7f120e28
+    const v1, 0x7f120ea4
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
 
@@ -379,7 +379,7 @@
 .method public hideHeaderView()V
     .locals 5
 
-    const v0, 0x7f0a0613
+    const v0, 0x7f0a0614
 
     invoke-virtual {p0, v0}, Lcom/oneplus/settings/opfinger/OPFingerPrintEnrollView;->findViewById(I)Landroid/view/View;
 
@@ -387,7 +387,7 @@
 
     check-cast v0, Landroid/widget/ImageView;
 
-    const v1, 0x7f0a0614
+    const v1, 0x7f0a0615
 
     invoke-virtual {p0, v1}, Lcom/oneplus/settings/opfinger/OPFingerPrintEnrollView;->findViewById(I)Landroid/view/View;
 
@@ -397,7 +397,7 @@
 
     iget-object v2, p0, Lcom/oneplus/settings/opfinger/OPFingerPrintEnrollView;->mView:Landroid/view/View;
 
-    const v3, 0x7f0a04ed
+    const v3, 0x7f0a04ea
 
     invoke-virtual {v2, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -407,7 +407,7 @@
 
     iget-object v3, p0, Lcom/oneplus/settings/opfinger/OPFingerPrintEnrollView;->mView:Landroid/view/View;
 
-    const v4, 0x7f0a04ec
+    const v4, 0x7f0a04e9
 
     invoke-virtual {v3, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -563,7 +563,7 @@
 
     if-eqz v0, :cond_0
 
-    const v1, 0x7f120e33
+    const v1, 0x7f120eaf
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
 
@@ -578,7 +578,7 @@
 
     if-eqz v0, :cond_1
 
-    const v0, 0x7f120cd3
+    const v0, 0x7f120d2c
 
     goto :goto_0
 
@@ -591,12 +591,12 @@
 
     if-eqz v0, :cond_2
 
-    const v0, 0x7f120e31
+    const v0, 0x7f120ead
 
     goto :goto_0
 
     :cond_2
-    const v0, 0x7f120e32
+    const v0, 0x7f120eae
 
     :goto_0
     iget-object v1, p0, Lcom/oneplus/settings/opfinger/OPFingerPrintEnrollView;->mOPFingerInputTipsSubTitle:Landroid/widget/TextView;
@@ -895,13 +895,13 @@
 
     iget-object v0, p0, Lcom/oneplus/settings/opfinger/OPFingerPrintEnrollView;->mOPFingerInputTipsTitle:Landroid/widget/TextView;
 
-    const v1, 0x7f120e27
+    const v1, 0x7f120ea3
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
 
     iget-object v0, p0, Lcom/oneplus/settings/opfinger/OPFingerPrintEnrollView;->mOPFingerInputTipsSubTitle:Landroid/widget/TextView;
 
-    const v1, 0x7f120e26
+    const v1, 0x7f120ea2
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
 
@@ -919,13 +919,13 @@
 
     iget-object v0, p0, Lcom/oneplus/settings/opfinger/OPFingerPrintEnrollView;->mOPFingerInputTipsTitle:Landroid/widget/TextView;
 
-    const v1, 0x7f120e2c
+    const v1, 0x7f120ea8
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
 
     iget-object v0, p0, Lcom/oneplus/settings/opfinger/OPFingerPrintEnrollView;->mOPFingerInputTipsSubTitle:Landroid/widget/TextView;
 
-    const v1, 0x7f120e2b
+    const v1, 0x7f120ea7
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
 
@@ -949,13 +949,13 @@
 
     iget-object v1, p0, Lcom/oneplus/settings/opfinger/OPFingerPrintEnrollView;->mOPFingerInputTipsTitle:Landroid/widget/TextView;
 
-    const v2, 0x7f120e2c
+    const v2, 0x7f120ea8
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(I)V
 
     iget-object v1, p0, Lcom/oneplus/settings/opfinger/OPFingerPrintEnrollView;->mOPFingerInputTipsSubTitle:Landroid/widget/TextView;
 
-    const v2, 0x7f120e2b
+    const v2, 0x7f120ea7
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(I)V
 
@@ -972,13 +972,13 @@
 
     iget-object v1, p0, Lcom/oneplus/settings/opfinger/OPFingerPrintEnrollView;->mOPFingerInputTipsTitle:Landroid/widget/TextView;
 
-    const v2, 0x7f120e30
+    const v2, 0x7f120eac
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(I)V
 
     iget-object v1, p0, Lcom/oneplus/settings/opfinger/OPFingerPrintEnrollView;->mOPFingerInputTipsSubTitle:Landroid/widget/TextView;
 
-    const v2, 0x7f120e2f
+    const v2, 0x7f120eab
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(I)V
 
@@ -991,13 +991,13 @@
     :cond_1
     iget-object v1, p0, Lcom/oneplus/settings/opfinger/OPFingerPrintEnrollView;->mOPFingerInputTipsTitle:Landroid/widget/TextView;
 
-    const v2, 0x7f120e2e
+    const v2, 0x7f120eaa
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(I)V
 
     iget-object v1, p0, Lcom/oneplus/settings/opfinger/OPFingerPrintEnrollView;->mOPFingerInputTipsSubTitle:Landroid/widget/TextView;
 
-    const v2, 0x7f120e2d
+    const v2, 0x7f120ea9
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(I)V
 
@@ -1025,13 +1025,13 @@
     :cond_0
     iget-object v0, p0, Lcom/oneplus/settings/opfinger/OPFingerPrintEnrollView;->mOPFingerInputTipsTitle:Landroid/widget/TextView;
 
-    const v1, 0x7f120e35
+    const v1, 0x7f120eb1
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
 
     iget-object v0, p0, Lcom/oneplus/settings/opfinger/OPFingerPrintEnrollView;->mOPFingerInputTipsSubTitle:Landroid/widget/TextView;
 
-    const v1, 0x7f120e34
+    const v1, 0x7f120eb0
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
 
@@ -1040,13 +1040,13 @@
     :cond_1
     iget-object v0, p0, Lcom/oneplus/settings/opfinger/OPFingerPrintEnrollView;->mOPFingerInputTipsTitle:Landroid/widget/TextView;
 
-    const v1, 0x7f120e33
+    const v1, 0x7f120eaf
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
 
     iget-object v0, p0, Lcom/oneplus/settings/opfinger/OPFingerPrintEnrollView;->mOPFingerInputTipsSubTitle:Landroid/widget/TextView;
 
-    const v1, 0x7f120e32
+    const v1, 0x7f120eae
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
 

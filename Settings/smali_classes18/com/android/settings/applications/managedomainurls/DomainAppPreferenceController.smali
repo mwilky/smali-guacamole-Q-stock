@@ -333,7 +333,7 @@
 
     const-class v1, Lcom/android/settings/applications/AppLaunchSettings;
 
-    const v2, 0x7f1201e3
+    const v2, 0x7f1201f3
 
     iget-object v3, v0, Lcom/android/settingslib/applications/ApplicationsState$AppEntry;->info:Landroid/content/pm/ApplicationInfo;
 

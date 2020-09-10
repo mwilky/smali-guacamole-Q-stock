@@ -102,7 +102,7 @@
     :goto_0
     iget-object v1, p0, Lcom/android/settings/deviceinfo/PhoneNumberPreferenceController;->mContext:Landroid/content/Context;
 
-    const v2, 0x7f1205cc
+    const v2, 0x7f1205e8
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
@@ -122,7 +122,7 @@
 
     iget-object v1, p0, Lcom/android/settings/deviceinfo/PhoneNumberPreferenceController;->mContext:Landroid/content/Context;
 
-    const v2, 0x7f1205cc
+    const v2, 0x7f1205e8
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
@@ -153,7 +153,7 @@
 
     iget-object v0, p0, Lcom/android/settings/deviceinfo/PhoneNumberPreferenceController;->mContext:Landroid/content/Context;
 
-    const v2, 0x7f12144f
+    const v2, 0x7f121513
 
     new-array v1, v1, [Ljava/lang/Object;
 
@@ -176,7 +176,7 @@
     :cond_0
     iget-object v0, p0, Lcom/android/settings/deviceinfo/PhoneNumberPreferenceController;->mContext:Landroid/content/Context;
 
-    const v1, 0x7f12144e
+    const v1, 0x7f121512
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -221,7 +221,7 @@
 
     iget-object v3, p0, Lcom/android/settings/deviceinfo/PhoneNumberPreferenceController;->mContext:Landroid/content/Context;
 
-    const v4, 0x7f12144e
+    const v4, 0x7f121512
 
     invoke-virtual {v3, v4}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
@@ -231,7 +231,7 @@
 
     aput-object v3, v2, v4
 
-    const v3, 0x7f1204ba
+    const v3, 0x7f1204d1
 
     invoke-virtual {v1, v3, v2}, Landroid/content/Context;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -375,7 +375,7 @@
 
     iget-object v1, p0, Lcom/android/settings/deviceinfo/PhoneNumberPreferenceController;->mContext:Landroid/content/Context;
 
-    const v2, 0x7f1205cc
+    const v2, 0x7f1205e8
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

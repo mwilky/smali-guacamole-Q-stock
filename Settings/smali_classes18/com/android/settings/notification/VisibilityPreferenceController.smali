@@ -337,7 +337,7 @@
 
     iget-object v3, p0, Lcom/android/settings/notification/VisibilityPreferenceController;->mContext:Landroid/content/Context;
 
-    const v5, 0x7f12094d
+    const v5, 0x7f120989
 
     invoke-virtual {v3, v5}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -366,7 +366,7 @@
 
     iget-object v3, p0, Lcom/android/settings/notification/VisibilityPreferenceController;->mContext:Landroid/content/Context;
 
-    const v5, 0x7f120d8a
+    const v5, 0x7f120df0
 
     invoke-virtual {v3, v5}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -389,7 +389,7 @@
     :cond_1
     iget-object v3, p0, Lcom/android/settings/notification/VisibilityPreferenceController;->mContext:Landroid/content/Context;
 
-    const v5, 0x7f12094a
+    const v5, 0x7f120986
 
     invoke-virtual {v3, v5}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

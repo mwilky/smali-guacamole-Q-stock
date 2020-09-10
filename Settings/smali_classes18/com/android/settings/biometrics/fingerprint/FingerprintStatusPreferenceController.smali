@@ -97,7 +97,7 @@
 
     aput-object v3, v2, v4
 
-    const v3, 0x7f100042
+    const v3, 0x7f100043
 
     invoke-virtual {v1, v3, v0, v2}, Landroid/content/res/Resources;->getQuantityString(II[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -111,7 +111,7 @@
 
     iget-object v0, p0, Lcom/android/settings/biometrics/fingerprint/FingerprintStatusPreferenceController;->mContext:Landroid/content/Context;
 
-    const v1, 0x7f121331
+    const v1, 0x7f1213ed
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

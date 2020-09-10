@@ -181,7 +181,7 @@
 .method private resetLaunchDefaultsUi(Landroid/widget/TextView;)V
     .locals 2
 
-    const v0, 0x7f1201e1
+    const v0, 0x7f1201f1
 
     invoke-virtual {p1, v0}, Landroid/widget/TextView;->setText(I)V
 
@@ -334,14 +334,14 @@
     :goto_2
     if-eqz v1, :cond_4
 
-    const v8, 0x7f1201e4
+    const v8, 0x7f1201f4
 
     invoke-virtual {v2, v8}, Landroid/widget/TextView;->setText(I)V
 
     goto :goto_3
 
     :cond_4
-    const v8, 0x7f1201e3
+    const v8, 0x7f1201f3
 
     invoke-virtual {v2, v8}, Landroid/widget/TextView;->setText(I)V
 
@@ -368,7 +368,7 @@
 
     if-eqz v4, :cond_7
 
-    const v15, 0x7f1201e2
+    const v15, 0x7f1201f2
 
     invoke-virtual {v8, v15}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
@@ -436,7 +436,7 @@
     :cond_7
     if-eqz v1, :cond_a
 
-    const v5, 0x7f120115
+    const v5, 0x7f12011e
 
     invoke-virtual {v8, v5}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 

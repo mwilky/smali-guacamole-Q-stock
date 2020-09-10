@@ -222,7 +222,7 @@
 
     aput-object v4, v3, v5
 
-    const v4, 0x7f12012b
+    const v4, 0x7f120134
 
     invoke-virtual {v1, v4, v3}, Landroid/content/Context;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -281,7 +281,7 @@
     :cond_0
     iget-object v0, p0, Lcom/android/settings/system/SystemUpdatePreferenceController;->mContext:Landroid/content/Context;
 
-    const v2, 0x7f12012a
+    const v2, 0x7f120133
 
     invoke-virtual {v0, v2}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 

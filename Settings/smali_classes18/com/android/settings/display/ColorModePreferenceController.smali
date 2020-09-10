@@ -100,7 +100,7 @@
 
     iget-object v1, p0, Lcom/android/settings/display/ColorModePreferenceController;->mContext:Landroid/content/Context;
 
-    const v2, 0x7f120439
+    const v2, 0x7f12044d
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
@@ -115,7 +115,7 @@
 
     iget-object v1, p0, Lcom/android/settings/display/ColorModePreferenceController;->mContext:Landroid/content/Context;
 
-    const v2, 0x7f12043c
+    const v2, 0x7f120450
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
@@ -130,7 +130,7 @@
 
     iget-object v1, p0, Lcom/android/settings/display/ColorModePreferenceController;->mContext:Landroid/content/Context;
 
-    const v2, 0x7f12043a
+    const v2, 0x7f12044e
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
@@ -141,7 +141,7 @@
     :cond_2
     iget-object v1, p0, Lcom/android/settings/display/ColorModePreferenceController;->mContext:Landroid/content/Context;
 
-    const v2, 0x7f12043b
+    const v2, 0x7f12044f
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 

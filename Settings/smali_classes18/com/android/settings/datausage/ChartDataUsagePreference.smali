@@ -102,7 +102,7 @@
 
     iget-wide v7, p2, Landroid/net/NetworkPolicy;->limitBytes:J
 
-    const v4, 0x7f120560
+    const v4, 0x7f120579
 
     iget v9, p0, Lcom/android/settings/datausage/ChartDataUsagePreference;->mLimitColor:I
 
@@ -151,7 +151,7 @@
 
     iget-wide v6, p2, Landroid/net/NetworkPolicy;->warningBytes:J
 
-    const v8, 0x7f120561
+    const v8, 0x7f12057a
 
     iget v9, p0, Lcom/android/settings/datausage/ChartDataUsagePreference;->mWarningColor:I
 

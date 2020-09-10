@@ -45,7 +45,7 @@
 
     iput-object p1, p0, Lcom/oneplus/settings/ui/OPPreferenceHeaderMargin;->mContext:Landroid/content/Context;
 
-    const v0, 0x7f0d01f0
+    const v0, 0x7f0d01f1
 
     invoke-virtual {p0, v0}, Lcom/oneplus/settings/ui/OPPreferenceHeaderMargin;->setLayoutResource(I)V
 

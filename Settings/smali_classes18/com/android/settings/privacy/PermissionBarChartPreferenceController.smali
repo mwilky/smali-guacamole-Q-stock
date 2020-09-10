@@ -226,7 +226,7 @@
 
     move-result-object v3
 
-    const v5, 0x7f100038
+    const v5, 0x7f100039
 
     const/4 v6, 0x1
 
@@ -554,19 +554,19 @@
 
     invoke-direct {v0}, Lcom/android/settingslib/widget/BarChartInfo$Builder;-><init>()V
 
-    const v1, 0x7f1210dd
+    const v1, 0x7f121189
 
     invoke-virtual {v0, v1}, Lcom/android/settingslib/widget/BarChartInfo$Builder;->setTitle(I)Lcom/android/settingslib/widget/BarChartInfo$Builder;
 
     move-result-object v0
 
-    const v1, 0x7f1210db
+    const v1, 0x7f121187
 
     invoke-virtual {v0, v1}, Lcom/android/settingslib/widget/BarChartInfo$Builder;->setDetails(I)Lcom/android/settingslib/widget/BarChartInfo$Builder;
 
     move-result-object v0
 
-    const v1, 0x7f1210dc
+    const v1, 0x7f121188
 
     invoke-virtual {v0, v1}, Lcom/android/settingslib/widget/BarChartInfo$Builder;->setEmptyText(I)Lcom/android/settingslib/widget/BarChartInfo$Builder;
 

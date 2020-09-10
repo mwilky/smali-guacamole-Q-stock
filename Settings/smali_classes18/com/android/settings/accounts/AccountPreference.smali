@@ -208,7 +208,7 @@
 
     if-eq p1, v0, :cond_2
 
-    const v0, 0x7f08037b
+    const v0, 0x7f080384
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -231,17 +231,17 @@
     goto :goto_0
 
     :cond_0
-    const v0, 0x7f08037b
+    const v0, 0x7f080384
 
     goto :goto_0
 
     :cond_1
-    const v0, 0x7f080379
+    const v0, 0x7f080382
 
     goto :goto_0
 
     :cond_2
-    const v0, 0x7f080359
+    const v0, 0x7f080362
 
     nop
 
@@ -266,7 +266,7 @@
 
     if-eq p1, v0, :cond_0
 
-    const v0, 0x7f121520
+    const v0, 0x7f1215e4    # 1.9418095E38f
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -289,22 +289,22 @@
     goto :goto_0
 
     :cond_0
-    const v0, 0x7f121523
+    const v0, 0x7f1215e7
 
     goto :goto_0
 
     :cond_1
-    const v0, 0x7f121520
+    const v0, 0x7f1215e4    # 1.9418095E38f
 
     goto :goto_0
 
     :cond_2
-    const v0, 0x7f12151e
+    const v0, 0x7f1215e2
 
     goto :goto_0
 
     :cond_3
-    const v0, 0x7f12151f
+    const v0, 0x7f1215e3
 
     nop
 

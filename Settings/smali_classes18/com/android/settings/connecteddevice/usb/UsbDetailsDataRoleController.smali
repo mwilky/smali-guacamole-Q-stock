@@ -84,7 +84,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f121648
+    const v1, 0x7f12171a
 
     invoke-direct {p0, v0, v1}, Lcom/android/settings/connecteddevice/usb/UsbDetailsDataRoleController;->makeRadioPreference(Ljava/lang/String;I)Lcom/android/settings/widget/RadioButtonPreference;
 
@@ -98,7 +98,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f121647
+    const v1, 0x7f121719
 
     invoke-direct {p0, v0, v1}, Lcom/android/settings/connecteddevice/usb/UsbDetailsDataRoleController;->makeRadioPreference(Ljava/lang/String;I)Lcom/android/settings/widget/RadioButtonPreference;
 
@@ -132,7 +132,7 @@
 
     if-eqz v0, :cond_0
 
-    const v1, 0x7f12165f
+    const v1, 0x7f121731
 
     invoke-virtual {v0, v1}, Lcom/android/settings/widget/RadioButtonPreference;->setSummary(I)V
 
@@ -179,7 +179,7 @@
 
     iput-object p1, p0, Lcom/android/settings/connecteddevice/usb/UsbDetailsDataRoleController;->mNextRolePref:Lcom/android/settings/widget/RadioButtonPreference;
 
-    const v1, 0x7f12165e
+    const v1, 0x7f121730
 
     invoke-virtual {p1, v1}, Lcom/android/settings/widget/RadioButtonPreference;->setSummary(I)V
 
@@ -302,7 +302,7 @@
     :cond_4
     iget-object v0, p0, Lcom/android/settings/connecteddevice/usb/UsbDetailsDataRoleController;->mNextRolePref:Lcom/android/settings/widget/RadioButtonPreference;
 
-    const v1, 0x7f12165f
+    const v1, 0x7f121731
 
     invoke-virtual {v0, v1}, Lcom/android/settings/widget/RadioButtonPreference;->setSummary(I)V
 

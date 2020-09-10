@@ -163,7 +163,7 @@
 
     if-nez v7, :cond_0
 
-    const v7, 0x7f1215cf
+    const v7, 0x7f121695    # 1.9418454E38f
 
     new-array v8, v5, [Ljava/lang/Object;
 
@@ -218,7 +218,7 @@
 
     if-eqz v5, :cond_2
 
-    const v5, 0x7f1215e2
+    const v5, 0x7f1216a9
 
     invoke-virtual {p0, v5}, Lcom/oneplus/settings/packageuninstaller/UninstallAlertFragment;->getString(I)Ljava/lang/String;
 
@@ -229,7 +229,7 @@
     goto :goto_1
 
     :cond_2
-    const v5, 0x7f1215e3
+    const v5, 0x7f1216aa
 
     invoke-virtual {p0, v5}, Lcom/oneplus/settings/packageuninstaller/UninstallAlertFragment;->getString(I)Ljava/lang/String;
 
@@ -250,7 +250,7 @@
 
     if-nez v8, :cond_4
 
-    const v5, 0x7f1215d3
+    const v5, 0x7f121699
 
     invoke-virtual {p0, v5}, Lcom/oneplus/settings/packageuninstaller/UninstallAlertFragment;->getString(I)Ljava/lang/String;
 
@@ -283,7 +283,7 @@
 
     move-result-object v8
 
-    const v9, 0x7f1215d4
+    const v9, 0x7f12169a
 
     new-array v5, v5, [Ljava/lang/Object;
 
@@ -300,7 +300,7 @@
     goto :goto_1
 
     :cond_5
-    const v5, 0x7f1215d2
+    const v5, 0x7f121698
 
     invoke-virtual {p0, v5}, Lcom/oneplus/settings/packageuninstaller/UninstallAlertFragment;->getString(I)Ljava/lang/String;
 

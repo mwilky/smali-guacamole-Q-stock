@@ -184,7 +184,7 @@
 
     iget-object v0, p1, Lcom/android/settingslib/users/AppRestrictionsHelper$SelectableAppInfo;->packageName:Ljava/lang/String;
 
-    const v1, 0x7f08031a
+    const v1, 0x7f080323
 
     invoke-virtual {p2, v1}, Lcom/android/settings/users/AppRestrictionsFragment$AppRestrictionsPreference;->setIcon(I)V
 
@@ -343,7 +343,7 @@
 
     if-eqz v0, :cond_0
 
-    const v0, 0x7f1201a0
+    const v0, 0x7f1201b0
 
     new-array v2, v2, [Ljava/lang/Object;
 
@@ -360,7 +360,7 @@
     return-object v0
 
     :cond_0
-    const v0, 0x7f1216c7
+    const v0, 0x7f121799
 
     new-array v2, v2, [Ljava/lang/Object;
 
@@ -381,7 +381,7 @@
 
     if-eqz v0, :cond_2
 
-    const v0, 0x7f12019f
+    const v0, 0x7f1201af
 
     invoke-virtual {p0, v0}, Lcom/android/settings/users/AppRestrictionsFragment;->getString(I)Ljava/lang/String;
 
@@ -908,7 +908,7 @@
 
     invoke-virtual {v4, p0}, Landroidx/preference/Preference;->setOnPreferenceChangeListener(Landroidx/preference/Preference$OnPreferenceChangeListener;)V
 
-    const v3, 0x7f08016b
+    const v3, 0x7f080174
 
     invoke-virtual {v4, v3}, Landroidx/preference/Preference;->setIcon(I)V
 

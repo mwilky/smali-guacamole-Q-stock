@@ -374,7 +374,7 @@
 
     iget-object v1, p0, Lcom/android/settings/notification/BubblePreferenceController;->mContext:Landroid/content/Context;
 
-    const v4, 0x7f1203a9
+    const v4, 0x7f1203bc
 
     new-array v3, v3, [Ljava/lang/Object;
 

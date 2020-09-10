@@ -34,7 +34,7 @@
 
     iget-object v0, p0, Lcom/android/settings/development/CoolColorTemperaturePreferenceController;->mContext:Landroid/content/Context;
 
-    const v1, 0x7f12044b
+    const v1, 0x7f12045f
 
     const/4 v2, 0x1
 

@@ -103,7 +103,7 @@
 
     invoke-super {p0}, Lcom/android/settings/biometrics/fingerprint/FingerprintEnrollFindSensor;->initViews()V
 
-    const v0, 0x7f0a068b
+    const v0, 0x7f0a068c
 
     invoke-virtual {p0, v0}, Lcom/android/settings/biometrics/fingerprint/SetupFingerprintEnrollFindSensor;->findViewById(I)Landroid/view/View;
 
@@ -111,7 +111,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    const v1, 0x7f0a067f
+    const v1, 0x7f0a0680
 
     invoke-virtual {p0, v1}, Lcom/android/settings/biometrics/fingerprint/SetupFingerprintEnrollFindSensor;->findViewById(I)Landroid/view/View;
 
@@ -119,7 +119,7 @@
 
     check-cast v1, Landroid/widget/TextView;
 
-    const v2, 0x7f0a0432
+    const v2, 0x7f0a0437
 
     invoke-virtual {p0, v2}, Lcom/android/settings/biometrics/fingerprint/SetupFingerprintEnrollFindSensor;->findViewById(I)Landroid/view/View;
 
@@ -269,7 +269,7 @@
 
     if-eqz v0, :cond_5
 
-    const v0, 0x7f0a049f
+    const v0, 0x7f0a049c
 
     invoke-virtual {p0, v0}, Lcom/android/settings/biometrics/fingerprint/SetupFingerprintEnrollFindSensor;->findViewById(I)Landroid/view/View;
 

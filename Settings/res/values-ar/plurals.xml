@@ -440,6 +440,10 @@
         <item quantity="other">حاول مرة أخرى في غضون %d ثانية (ثواني).</item>
         <item quantity="one">حاول مرة أخرى في غضون %d ثانية (ثواني).</item>
     </plurals>
+    <plurals name="oneplus_zen_mode_duration_summary_time_hours">
+        <item quantity="other">%d من الساعات (ما لم يتم إيقاف تشغيله تلقائيًا)</item>
+        <item quantity="one">ساعة واحدة (ما لم يتم إيقاف تشغيله تلقائيًا)</item>
+    </plurals>
     <plurals name="permission_bar_chart_label">
         <item quantity="other">%s تطبيق</item>
         <item quantity="zero">%s تطبيق</item>

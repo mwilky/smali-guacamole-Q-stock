@@ -691,7 +691,7 @@
 .method private setupPasswordRequirementsView(Landroid/view/View;)V
     .locals 3
 
-    const v0, 0x7f0a0518
+    const v0, 0x7f0a0515
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -865,7 +865,7 @@
 
     if-lez v1, :cond_0
 
-    const v1, 0x7f120993
+    const v1, 0x7f1209cf
 
     invoke-virtual {p0, v1}, Lcom/android/settings/password/ChooseLockPassword$ChooseLockPasswordFragment;->getString(I)Ljava/lang/String;
 
@@ -878,7 +878,7 @@
 
     if-lez v1, :cond_1
 
-    const v1, 0x7f12099e
+    const v1, 0x7f1209da
 
     invoke-virtual {p0, v1}, Lcom/android/settings/password/ChooseLockPassword$ChooseLockPasswordFragment;->getString(I)Ljava/lang/String;
 
@@ -1135,7 +1135,7 @@
 
     if-lez v1, :cond_c
 
-    const v1, 0x7f12099f
+    const v1, 0x7f1209db
 
     invoke-virtual {p0, v1}, Lcom/android/settings/password/ChooseLockPassword$ChooseLockPasswordFragment;->getString(I)Ljava/lang/String;
 
@@ -1152,12 +1152,12 @@
 
     if-eqz v1, :cond_d
 
-    const v1, 0x7f120997
+    const v1, 0x7f1209d3
 
     goto :goto_2
 
     :cond_d
-    const v1, 0x7f1209a0
+    const v1, 0x7f1209dc
 
     :goto_2
     invoke-virtual {p0, v1}, Lcom/android/settings/password/ChooseLockPassword$ChooseLockPasswordFragment;->getString(I)Ljava/lang/String;
@@ -1883,7 +1883,7 @@
 
     invoke-virtual {v0, v1}, Landroidx/fragment/app/FragmentActivity;->setTitle(Ljava/lang/CharSequence;)V
 
-    const v0, 0x7f0a0514
+    const v0, 0x7f0a0511
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1935,7 +1935,7 @@
 
     invoke-virtual {v2, v3}, Lcom/oneplus/lib/widget/button/OPButton;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const v2, 0x7f0a068b
+    const v2, 0x7f0a068c
 
     invoke-virtual {p1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1955,7 +1955,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f080302
+    const v4, 0x7f08030b
 
     invoke-virtual {v3, v4}, Landroidx/fragment/app/FragmentActivity;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -1976,7 +1976,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0804c7
+    const v4, 0x7f0804d0
 
     invoke-virtual {v3, v4}, Landroidx/fragment/app/FragmentActivity;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -2060,7 +2060,7 @@
 
     invoke-virtual {v2, v4}, Landroidx/recyclerview/widget/RecyclerView;->setLayoutManager(Landroidx/recyclerview/widget/RecyclerView$LayoutManager;)V
 
-    const v2, 0x7f0a0515
+    const v2, 0x7f0a0512
 
     invoke-virtual {p1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2186,7 +2186,7 @@
 
     const/16 v8, 0x3a
 
-    const v9, 0x7f12160d
+    const v9, 0x7f1216d9
 
     invoke-virtual {p0, v9}, Lcom/android/settings/password/ChooseLockPassword$ChooseLockPasswordFragment;->getString(I)Ljava/lang/String;
 

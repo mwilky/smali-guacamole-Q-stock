@@ -158,7 +158,7 @@
 
     check-cast v0, Lcom/android/settingslib/widget/LayoutPreference;
 
-    const v1, 0x7f0a06a3
+    const v1, 0x7f0a06a4
 
     invoke-virtual {v0, v1}, Lcom/android/settingslib/widget/LayoutPreference;->findViewById(I)Landroid/view/View;
 
@@ -170,9 +170,9 @@
 
     iget-object v1, p0, Lcom/android/settings/network/telephony/MobileNetworkSwitchController;->mSwitchBar:Lcom/android/settings/widget/SwitchBar;
 
-    const v2, 0x7f120a70
+    const v2, 0x7f120ab3
 
-    const v3, 0x7f120a6f
+    const v3, 0x7f120ab2
 
     invoke-virtual {v1, v2, v3}, Lcom/android/settings/widget/SwitchBar;->setSwitchBarText(II)V
 

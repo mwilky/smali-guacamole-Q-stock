@@ -271,7 +271,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f1217be
+    const v2, 0x7f121895
 
     invoke-virtual {v1, v2}, Lcom/android/settings/core/SubSettingLauncher;->setTitleRes(I)Lcom/android/settings/core/SubSettingLauncher;
 
@@ -331,12 +331,12 @@
 
     if-eqz v2, :cond_0
 
-    const v2, 0x7f1203f4
+    const v2, 0x7f120407
 
     goto :goto_1
 
     :cond_0
-    const v2, 0x7f120b0b
+    const v2, 0x7f120b50
 
     goto :goto_1
 
@@ -345,12 +345,12 @@
 
     if-eqz v2, :cond_2
 
-    const v2, 0x7f1203f5
+    const v2, 0x7f120408
 
     goto :goto_0
 
     :cond_2
-    const v2, 0x7f120b0c
+    const v2, 0x7f120b51
 
     :goto_0
     nop
@@ -473,7 +473,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f1202b2
+    const v2, 0x7f1202c2
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -498,7 +498,7 @@
 
     move-result-object v1
 
-    const v3, 0x7f1202b1
+    const v3, 0x7f1202c1
 
     invoke-virtual {v1, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -607,7 +607,7 @@
 
     move-result-object v6
 
-    const v7, 0x7f120571
+    const v7, 0x7f12058d
 
     invoke-virtual {v6, v7}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
@@ -633,7 +633,7 @@
 
     nop
 
-    const v9, 0x7f0a0742
+    const v9, 0x7f0a0743
 
     invoke-virtual {v1, v9}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 
@@ -685,7 +685,7 @@
 
     move-result-object v10
 
-    const v11, 0x7f12050b
+    const v11, 0x7f120522
 
     invoke-virtual {v10, v11}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
@@ -738,7 +738,7 @@
 
     move-result-object v10
 
-    const v13, 0x7f12050a
+    const v13, 0x7f120521
 
     invoke-virtual {v10, v13}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
@@ -867,7 +867,7 @@
 
     iget-boolean v1, p0, Lcom/android/settings/datausage/DataUsageSummaryPreference;->mChartEnabled:Z
 
-    const v2, 0x7f0a0355
+    const v2, 0x7f0a035a
 
     const/4 v3, 0x0
 
@@ -948,7 +948,7 @@
     :goto_0
     invoke-direct {p0, p1}, Lcom/android/settings/datausage/DataUsageSummaryPreference;->updateDataUsageLabels(Landroidx/preference/PreferenceViewHolder;)V
 
-    const v1, 0x7f0a0744
+    const v1, 0x7f0a0745
 
     invoke-virtual {p1, v1}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 
@@ -964,7 +964,7 @@
 
     check-cast v2, Landroid/widget/TextView;
 
-    const v5, 0x7f0a0367
+    const v5, 0x7f0a036c
 
     invoke-virtual {p1, v5}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 
@@ -1020,7 +1020,7 @@
 
     if-eqz v7, :cond_5
 
-    const v7, 0x7f12056f
+    const v7, 0x7f12058b
 
     invoke-virtual {v1, v7}, Landroid/widget/TextView;->setText(I)V
 
@@ -1064,7 +1064,7 @@
     invoke-virtual {v5, v3}, Landroid/widget/Button;->setEnabled(Z)V
 
     :goto_1
-    const v4, 0x7f1208cb
+    const v4, 0x7f120907
 
     invoke-virtual {v5, v4}, Landroid/widget/Button;->setText(I)V
 

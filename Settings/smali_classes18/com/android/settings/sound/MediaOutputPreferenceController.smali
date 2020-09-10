@@ -155,7 +155,7 @@
 
     iget-object v0, p0, Lcom/android/settings/sound/MediaOutputPreferenceController;->mContext:Landroid/content/Context;
 
-    const v1, 0x7f120a04
+    const v1, 0x7f120a41
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
@@ -221,7 +221,7 @@
 
     iget-object v5, p0, Lcom/android/settings/sound/MediaOutputPreferenceController;->mContext:Landroid/content/Context;
 
-    const v6, 0x7f120a05
+    const v6, 0x7f120a42
 
     invoke-virtual {v5, v6}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 

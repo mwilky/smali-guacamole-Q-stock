@@ -1,5 +1,5 @@
 .class public Lcom/oneplus/settings/SettingsBaseApplication;
-.super Landroid/app/Application;
+.super Lcom/oneplus/lib/app/OneplusApplication;
 .source "SettingsBaseApplication.java"
 
 
@@ -45,7 +45,7 @@
 .method public constructor <init>()V
     .locals 0
 
-    invoke-direct {p0}, Landroid/app/Application;-><init>()V
+    invoke-direct {p0}, Lcom/oneplus/lib/app/OneplusApplication;-><init>()V
 
     return-void
 .end method
@@ -194,7 +194,7 @@
 .method public onCreate()V
     .locals 1
 
-    invoke-super {p0}, Landroid/app/Application;->onCreate()V
+    invoke-super {p0}, Lcom/oneplus/lib/app/OneplusApplication;->onCreate()V
 
     sput-object p0, Lcom/oneplus/settings/SettingsBaseApplication;->mApplication:Landroid/app/Application;
 

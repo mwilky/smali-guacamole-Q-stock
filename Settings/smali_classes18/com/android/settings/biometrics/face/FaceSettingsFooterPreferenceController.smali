@@ -45,7 +45,7 @@
 
     iget-object v1, p0, Lcom/android/settings/biometrics/face/FaceSettingsFooterPreferenceController;->mContext:Landroid/content/Context;
 
-    const v2, 0x7f1207cf
+    const v2, 0x7f120807
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -73,7 +73,7 @@
 
     iget-object v2, p0, Lcom/android/settings/biometrics/face/FaceSettingsFooterPreferenceController;->mContext:Landroid/content/Context;
 
-    const v3, 0x7f121301
+    const v3, 0x7f1213bd
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 

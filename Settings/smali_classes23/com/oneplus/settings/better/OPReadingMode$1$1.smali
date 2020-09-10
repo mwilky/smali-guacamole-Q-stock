@@ -67,7 +67,7 @@
 
     iget-object v0, v0, Lcom/oneplus/settings/better/OPReadingMode$1;->this$0:Lcom/oneplus/settings/better/OPReadingMode;
 
-    invoke-static {v0}, Lcom/oneplus/settings/better/OPReadingMode;->access$400(Lcom/oneplus/settings/better/OPReadingMode;)Landroid/app/AppOpsManager;
+    invoke-static {v0}, Lcom/oneplus/settings/better/OPReadingMode;->access$500(Lcom/oneplus/settings/better/OPReadingMode;)Landroid/app/AppOpsManager;
 
     move-result-object v0
 
@@ -85,7 +85,7 @@
 
     const/16 v3, 0x3eb
 
-    const/4 v4, 0x1
+    const/4 v4, 0x3
 
     invoke-virtual {v0, v3, v1, v2, v4}, Landroid/app/AppOpsManager;->setMode(IILjava/lang/String;I)V
 

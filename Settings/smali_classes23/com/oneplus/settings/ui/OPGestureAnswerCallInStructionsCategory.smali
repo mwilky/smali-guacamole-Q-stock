@@ -17,7 +17,7 @@
 
     invoke-direct {p0, p1}, Landroidx/preference/Preference;-><init>(Landroid/content/Context;)V
 
-    const v0, 0x7f0d01c8
+    const v0, 0x7f0d01c9
 
     iput v0, p0, Lcom/oneplus/settings/ui/OPGestureAnswerCallInStructionsCategory;->mLayoutResId:I
 
@@ -31,7 +31,7 @@
 
     invoke-direct {p0, p1, p2}, Landroidx/preference/Preference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
-    const v0, 0x7f0d01c8
+    const v0, 0x7f0d01c9
 
     iput v0, p0, Lcom/oneplus/settings/ui/OPGestureAnswerCallInStructionsCategory;->mLayoutResId:I
 
@@ -45,7 +45,7 @@
 
     invoke-direct {p0, p1, p2, p3}, Landroidx/preference/Preference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
-    const v0, 0x7f0d01c8
+    const v0, 0x7f0d01c9
 
     iput v0, p0, Lcom/oneplus/settings/ui/OPGestureAnswerCallInStructionsCategory;->mLayoutResId:I
 
@@ -83,7 +83,7 @@
 
     if-nez v0, :cond_0
 
-    const v0, 0x7f0a04a0
+    const v0, 0x7f0a049d
 
     invoke-virtual {p1, v0}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 
@@ -93,7 +93,7 @@
 
     if-eqz v0, :cond_0
 
-    const v1, 0x7f120d36
+    const v1, 0x7f120d92
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
 

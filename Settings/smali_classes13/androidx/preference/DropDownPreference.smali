@@ -185,7 +185,7 @@
 
     iget-object v0, p1, Landroidx/preference/PreferenceViewHolder;->itemView:Landroid/view/View;
 
-    const v1, 0x7f0a064e
+    const v1, 0x7f0a064f
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

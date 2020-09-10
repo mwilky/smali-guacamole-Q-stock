@@ -149,7 +149,7 @@
 .method public getHelpResource()I
     .locals 1
 
-    const v0, 0x7f1207d1
+    const v0, 0x7f120809
 
     return v0
 .end method
@@ -199,7 +199,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f03007b
+    const v2, 0x7f03007c
 
     invoke-virtual {v0, v2}, Landroid/content/res/Resources;->getStringArray(I)[Ljava/lang/String;
 
@@ -207,7 +207,7 @@
 
     iput-object v2, p0, Lcom/android/settings/display/ToggleFontSizePreferenceFragment;->mEntries:[Ljava/lang/String;
 
-    const v2, 0x7f03007c
+    const v2, 0x7f03007d
 
     invoke-virtual {v0, v2}, Landroid/content/res/Resources;->getStringArray(I)[Ljava/lang/String;
 
@@ -261,7 +261,7 @@
 
     move-result-object v4
 
-    const v5, 0x7f121582
+    const v5, 0x7f121647
 
     invoke-virtual {v4, v5}, Landroidx/fragment/app/FragmentActivity;->setTitle(I)V
 

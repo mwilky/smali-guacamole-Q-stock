@@ -1,5 +1,5 @@
 .class Lcom/oneplus/settings/better/OPReadingMode$2;
-.super Landroid/database/ContentObserver;
+.super Lcom/android/settings/search/BaseSearchIndexProvider;
 .source "OPReadingMode.java"
 
 
@@ -14,63 +14,69 @@
 .end annotation
 
 
-# instance fields
-.field final synthetic this$0:Lcom/oneplus/settings/better/OPReadingMode;
-
-
 # direct methods
-.method constructor <init>(Lcom/oneplus/settings/better/OPReadingMode;Landroid/os/Handler;)V
+.method constructor <init>()V
     .locals 0
 
-    iput-object p1, p0, Lcom/oneplus/settings/better/OPReadingMode$2;->this$0:Lcom/oneplus/settings/better/OPReadingMode;
-
-    invoke-direct {p0, p2}, Landroid/database/ContentObserver;-><init>(Landroid/os/Handler;)V
+    invoke-direct {p0}, Lcom/android/settings/search/BaseSearchIndexProvider;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public onChange(ZLandroid/net/Uri;)V
-    .locals 4
+.method public getNonIndexableKeys(Landroid/content/Context;)Ljava/util/List;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Landroid/content/Context;",
+            ")",
+            "Ljava/util/List<",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
 
-    iget-object v0, p0, Lcom/oneplus/settings/better/OPReadingMode$2;->this$0:Lcom/oneplus/settings/better/OPReadingMode;
+    new-instance v0, Ljava/util/ArrayList;
 
-    invoke-static {v0}, Lcom/oneplus/settings/better/OPReadingMode;->access$600(Lcom/oneplus/settings/better/OPReadingMode;)Landroid/content/ContentResolver;
+    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    move-result-object v0
+    return-object v0
+.end method
 
-    const/4 v1, 0x0
+.method public getXmlResourcesToIndex(Landroid/content/Context;Z)Ljava/util/List;
+    .locals 3
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Landroid/content/Context;",
+            "Z)",
+            "Ljava/util/List<",
+            "Landroid/provider/SearchIndexableResource;",
+            ">;"
+        }
+    .end annotation
 
-    const-string v2, "reading_mode_status"
+    new-instance v0, Landroid/provider/SearchIndexableResource;
 
-    const/4 v3, -0x2
+    invoke-direct {v0, p1}, Landroid/provider/SearchIndexableResource;-><init>(Landroid/content/Context;)V
 
-    invoke-static {v0, v2, v1, v3}, Landroid/provider/Settings$System;->getIntForUser(Landroid/content/ContentResolver;Ljava/lang/String;II)I
+    const v1, 0x7f1600af
 
-    move-result v0
-
-    iget-object v2, p0, Lcom/oneplus/settings/better/OPReadingMode$2;->this$0:Lcom/oneplus/settings/better/OPReadingMode;
-
-    invoke-static {v2}, Lcom/oneplus/settings/better/OPReadingMode;->access$700(Lcom/oneplus/settings/better/OPReadingMode;)Landroidx/preference/SwitchPreference;
-
-    move-result-object v2
-
-    if-eqz v2, :cond_1
-
-    iget-object v2, p0, Lcom/oneplus/settings/better/OPReadingMode$2;->this$0:Lcom/oneplus/settings/better/OPReadingMode;
-
-    invoke-static {v2}, Lcom/oneplus/settings/better/OPReadingMode;->access$700(Lcom/oneplus/settings/better/OPReadingMode;)Landroidx/preference/SwitchPreference;
-
-    move-result-object v2
-
-    if-eqz v0, :cond_0
+    iput v1, v0, Landroid/provider/SearchIndexableResource;->xmlResId:I
 
     const/4 v1, 0x1
 
-    :cond_0
-    invoke-virtual {v2, v1}, Landroidx/preference/SwitchPreference;->setChecked(Z)V
+    new-array v1, v1, [Landroid/provider/SearchIndexableResource;
 
-    :cond_1
-    return-void
+    const/4 v2, 0x0
+
+    aput-object v0, v1, v2
+
+    invoke-static {v1}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
+
+    move-result-object v1
+
+    return-object v1
 .end method

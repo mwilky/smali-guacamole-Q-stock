@@ -188,7 +188,7 @@
 
     iget-object v4, p0, Lcom/android/settings/wifi/dpp/WifiDppQrCodeScannerFragment$1;->this$0:Lcom/android/settings/wifi/dpp/WifiDppQrCodeScannerFragment;
 
-    const v5, 0x7f1217ee
+    const v5, 0x7f1218c5
 
     invoke-static {v4, v5}, Lcom/android/settings/wifi/dpp/WifiDppQrCodeScannerFragment;->access$1000(Lcom/android/settings/wifi/dpp/WifiDppQrCodeScannerFragment;I)V
 

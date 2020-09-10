@@ -92,7 +92,7 @@
 
     iget-object v0, p0, Lcom/android/settings/development/SystemServerHeapDumpPreferenceController;->mContext:Landroid/content/Context;
 
-    const v2, 0x7f1203f2
+    const v2, 0x7f120405
 
     invoke-static {v0, v2, v1}, Landroid/widget/Toast;->makeText(Landroid/content/Context;II)Landroid/widget/Toast;
 
@@ -133,7 +133,7 @@
 
     iget-object v2, p0, Lcom/android/settings/development/SystemServerHeapDumpPreferenceController;->mContext:Landroid/content/Context;
 
-    const v3, 0x7f1206b9
+    const v3, 0x7f1206ee
 
     invoke-static {v2, v3, v1}, Landroid/widget/Toast;->makeText(Landroid/content/Context;II)Landroid/widget/Toast;
 

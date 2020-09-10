@@ -44,7 +44,7 @@
 
     new-instance v0, Lcom/android/settings/password/ChooseLockPattern$ChooseLockPatternFragment$LeftButtonMode;
 
-    const v1, 0x7f1209b5
+    const v1, 0x7f1209f1
 
     const/4 v2, 0x1
 

@@ -275,7 +275,7 @@
 
     iput-object v0, p0, Lcom/android/settings/applications/manageapplications/ManageApplications$ApplicationsAdapter;->mExtraInfoBridge:Lcom/android/settings/applications/AppStateBaseBridge;
 
-    goto :goto_0
+    goto/16 :goto_0
 
     :cond_3
     iget-object v0, p0, Lcom/android/settings/applications/manageapplications/ManageApplications$ApplicationsAdapter;->mManageApplications:Lcom/android/settings/applications/manageapplications/ManageApplications;
@@ -383,12 +383,33 @@
     goto :goto_0
 
     :cond_8
+    iget-object v0, p0, Lcom/android/settings/applications/manageapplications/ManageApplications$ApplicationsAdapter;->mManageApplications:Lcom/android/settings/applications/manageapplications/ManageApplications;
+
+    iget v0, v0, Lcom/android/settings/applications/manageapplications/ManageApplications;->mListType:I
+
+    const/16 v1, 0x10
+
+    if-ne v0, v1, :cond_9
+
+    new-instance v0, Lcom/oneplus/settings/better/ReadingModeEffectSelectBridge;
+
+    iget-object v1, p0, Lcom/android/settings/applications/manageapplications/ManageApplications$ApplicationsAdapter;->mContext:Landroid/content/Context;
+
+    iget-object v2, p0, Lcom/android/settings/applications/manageapplications/ManageApplications$ApplicationsAdapter;->mState:Lcom/android/settingslib/applications/ApplicationsState;
+
+    invoke-direct {v0, v1, v2, p0}, Lcom/oneplus/settings/better/ReadingModeEffectSelectBridge;-><init>(Landroid/content/Context;Lcom/android/settingslib/applications/ApplicationsState;Lcom/android/settings/applications/AppStateBaseBridge$Callback;)V
+
+    iput-object v0, p0, Lcom/android/settings/applications/manageapplications/ManageApplications$ApplicationsAdapter;->mExtraInfoBridge:Lcom/android/settings/applications/AppStateBaseBridge;
+
+    goto :goto_0
+
+    :cond_9
     const/4 v0, 0x0
 
     iput-object v0, p0, Lcom/android/settings/applications/manageapplications/ManageApplications$ApplicationsAdapter;->mExtraInfoBridge:Lcom/android/settings/applications/AppStateBaseBridge;
 
     :goto_0
-    if-eqz p4, :cond_9
+    if-eqz p4, :cond_a
 
     const-string v0, "state_last_scroll_index"
 
@@ -398,7 +419,7 @@
 
     iput v0, p0, Lcom/android/settings/applications/manageapplications/ManageApplications$ApplicationsAdapter;->mLastIndex:I
 
-    :cond_9
+    :cond_a
     return-void
 .end method
 
@@ -860,7 +881,7 @@
     :pswitch_0
     iget-object v0, p0, Lcom/android/settings/applications/manageapplications/ManageApplications$ApplicationsAdapter;->mContext:Landroid/content/Context;
 
-    invoke-static {v0, p2}, Lcom/android/settings/applications/AppInfoBase;->getSummary(Landroid/content/Context;Lcom/android/settingslib/applications/ApplicationsState$AppEntry;)Ljava/lang/CharSequence;
+    invoke-static {v0, p2}, Lcom/oneplus/settings/better/ReadingModeEffectDetail;->getSummary(Landroid/content/Context;Lcom/android/settingslib/applications/ApplicationsState$AppEntry;)Ljava/lang/CharSequence;
 
     move-result-object v0
 
@@ -871,7 +892,7 @@
     :pswitch_1
     iget-object v0, p0, Lcom/android/settings/applications/manageapplications/ManageApplications$ApplicationsAdapter;->mContext:Landroid/content/Context;
 
-    invoke-static {v0, p2}, Lcom/oneplus/settings/displaysizeadaption/DisplaySizeAdaptionDetail;->getSummary(Landroid/content/Context;Lcom/android/settingslib/applications/ApplicationsState$AppEntry;)Ljava/lang/CharSequence;
+    invoke-static {v0, p2}, Lcom/android/settings/applications/AppInfoBase;->getSummary(Landroid/content/Context;Lcom/android/settingslib/applications/ApplicationsState$AppEntry;)Ljava/lang/CharSequence;
 
     move-result-object v0
 
@@ -882,7 +903,7 @@
     :pswitch_2
     iget-object v0, p0, Lcom/android/settings/applications/manageapplications/ManageApplications$ApplicationsAdapter;->mContext:Landroid/content/Context;
 
-    invoke-static {v0, p2}, Lcom/android/settings/wifi/ChangeWifiStateDetails;->getSummary(Landroid/content/Context;Lcom/android/settingslib/applications/ApplicationsState$AppEntry;)Ljava/lang/CharSequence;
+    invoke-static {v0, p2}, Lcom/oneplus/settings/displaysizeadaption/DisplaySizeAdaptionDetail;->getSummary(Landroid/content/Context;Lcom/android/settingslib/applications/ApplicationsState$AppEntry;)Ljava/lang/CharSequence;
 
     move-result-object v0
 
@@ -893,7 +914,7 @@
     :pswitch_3
     iget-object v0, p0, Lcom/android/settings/applications/manageapplications/ManageApplications$ApplicationsAdapter;->mContext:Landroid/content/Context;
 
-    invoke-static {v0, p2}, Lcom/android/settings/applications/appinfo/ExternalSourcesDetails;->getPreferenceSummary(Landroid/content/Context;Lcom/android/settingslib/applications/ApplicationsState$AppEntry;)Ljava/lang/CharSequence;
+    invoke-static {v0, p2}, Lcom/android/settings/wifi/ChangeWifiStateDetails;->getSummary(Landroid/content/Context;Lcom/android/settingslib/applications/ApplicationsState$AppEntry;)Ljava/lang/CharSequence;
 
     move-result-object v0
 
@@ -904,7 +925,7 @@
     :pswitch_4
     iget-object v0, p0, Lcom/android/settings/applications/manageapplications/ManageApplications$ApplicationsAdapter;->mContext:Landroid/content/Context;
 
-    invoke-static {v0, p2}, Lcom/android/settings/applications/appinfo/WriteSettingsDetails;->getSummary(Landroid/content/Context;Lcom/android/settingslib/applications/ApplicationsState$AppEntry;)Ljava/lang/CharSequence;
+    invoke-static {v0, p2}, Lcom/android/settings/applications/appinfo/ExternalSourcesDetails;->getPreferenceSummary(Landroid/content/Context;Lcom/android/settingslib/applications/ApplicationsState$AppEntry;)Ljava/lang/CharSequence;
 
     move-result-object v0
 
@@ -915,6 +936,17 @@
     :pswitch_5
     iget-object v0, p0, Lcom/android/settings/applications/manageapplications/ManageApplications$ApplicationsAdapter;->mContext:Landroid/content/Context;
 
+    invoke-static {v0, p2}, Lcom/android/settings/applications/appinfo/WriteSettingsDetails;->getSummary(Landroid/content/Context;Lcom/android/settingslib/applications/ApplicationsState$AppEntry;)Ljava/lang/CharSequence;
+
+    move-result-object v0
+
+    invoke-virtual {p1, v0}, Lcom/android/settings/applications/manageapplications/ApplicationViewHolder;->setSummary(Ljava/lang/CharSequence;)V
+
+    goto/16 :goto_2
+
+    :pswitch_6
+    iget-object v0, p0, Lcom/android/settings/applications/manageapplications/ManageApplications$ApplicationsAdapter;->mContext:Landroid/content/Context;
+
     invoke-static {v0, p2}, Lcom/android/settings/applications/appinfo/DrawOverlayDetails;->getSummary(Landroid/content/Context;Lcom/android/settingslib/applications/ApplicationsState$AppEntry;)Ljava/lang/CharSequence;
 
     move-result-object v0
@@ -923,7 +955,7 @@
 
     goto :goto_2
 
-    :pswitch_6
+    :pswitch_7
     iget-object v0, p0, Lcom/android/settings/applications/manageapplications/ManageApplications$ApplicationsAdapter;->mContext:Landroid/content/Context;
 
     invoke-static {v0, p2}, Lcom/android/settings/fuelgauge/HighPowerDetail;->getSummary(Landroid/content/Context;Lcom/android/settingslib/applications/ApplicationsState$AppEntry;)Ljava/lang/CharSequence;
@@ -934,7 +966,7 @@
 
     goto :goto_2
 
-    :pswitch_7
+    :pswitch_8
     iget-object v0, p2, Lcom/android/settingslib/applications/ApplicationsState$AppEntry;->extraInfo:Ljava/lang/Object;
 
     if-eqz v0, :cond_1
@@ -956,12 +988,12 @@
 
     if-eqz v0, :cond_0
 
-    const v0, 0x7f120197
+    const v0, 0x7f1201a7
 
     goto :goto_0
 
     :cond_0
-    const v0, 0x7f120198
+    const v0, 0x7f1201a8
 
     :goto_0
     invoke-virtual {p1, v0}, Lcom/android/settings/applications/manageapplications/ApplicationViewHolder;->setSummary(I)V
@@ -1039,19 +1071,18 @@
     :goto_2
     return-void
 
-    nop
-
     :pswitch_data_0
     .packed-switch 0x4
+        :pswitch_8
         :pswitch_7
         :pswitch_6
         :pswitch_5
         :pswitch_4
-        :pswitch_3
     .end packed-switch
 
     :pswitch_data_1
     .packed-switch 0xd
+        :pswitch_3
         :pswitch_2
         :pswitch_1
         :pswitch_0
@@ -1526,7 +1557,7 @@
 
     iget v0, p0, Lcom/android/settings/applications/manageapplications/ManageApplications$ApplicationsAdapter;->mLastSortMode:I
 
-    const v1, 0x7f0a0648
+    const v1, 0x7f0a0649
 
     if-ne v0, v1, :cond_0
 
@@ -2477,7 +2508,7 @@
     nop
 
     :pswitch_data_0
-    .packed-switch 0x7f0a0646
+    .packed-switch 0x7f0a0647
         :pswitch_2
         :pswitch_1
         :pswitch_0
@@ -2594,7 +2625,7 @@
 
     if-ne v1, v0, :cond_0
 
-    const v0, 0x7f0a0646
+    const v0, 0x7f0a0647
 
     invoke-virtual {p0, v0}, Lcom/android/settings/applications/manageapplications/ManageApplications$ApplicationsAdapter;->rebuild(I)V
 
@@ -2609,7 +2640,7 @@
 
     if-ne v0, v1, :cond_1
 
-    const v0, 0x7f0a0647
+    const v0, 0x7f0a0648
 
     invoke-virtual {p0, v0}, Lcom/android/settings/applications/manageapplications/ManageApplications$ApplicationsAdapter;->rebuild(I)V
 
@@ -2624,7 +2655,7 @@
 
     if-ne v0, v1, :cond_2
 
-    const v0, 0x7f0a0645
+    const v0, 0x7f0a0646
 
     invoke-virtual {p0, v0}, Lcom/android/settings/applications/manageapplications/ManageApplications$ApplicationsAdapter;->rebuild(I)V
 

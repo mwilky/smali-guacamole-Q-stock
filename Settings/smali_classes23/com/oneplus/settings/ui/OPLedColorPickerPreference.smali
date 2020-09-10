@@ -87,7 +87,7 @@
 
     iput-boolean v0, p0, Lcom/oneplus/settings/ui/OPLedColorPickerPreference;->mVisibility:Z
 
-    const v1, 0x7f0d01d3
+    const v1, 0x7f0d01d4
 
     invoke-virtual {p0, v1}, Lcom/oneplus/settings/ui/OPLedColorPickerPreference;->setLayoutResource(I)V
 
@@ -173,7 +173,7 @@
 
     invoke-virtual {v1}, Landroid/content/res/TypedArray;->recycle()V
 
-    const v2, 0x7f120443
+    const v2, 0x7f120457
 
     invoke-virtual {p0, v2}, Lcom/oneplus/settings/ui/OPLedColorPickerPreference;->setNeutralButtonText(I)V
 
@@ -185,7 +185,7 @@
 
     invoke-virtual {p0, v2}, Lcom/oneplus/settings/ui/OPLedColorPickerPreference;->setPositiveButtonText(I)V
 
-    const v2, 0x7f0d01d4
+    const v2, 0x7f0d01d5
 
     invoke-virtual {p0, v2}, Lcom/oneplus/settings/ui/OPLedColorPickerPreference;->setDialogLayoutResource(I)V
 
@@ -377,7 +377,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f120446
+    const v2, 0x7f12045a
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -405,7 +405,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f120c31
+    const v2, 0x7f120c81
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -428,7 +428,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f121072
+    const v2, 0x7f12111c
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -657,7 +657,7 @@
     goto :goto_0
 
     :cond_2
-    const v2, 0x7f0a03cf
+    const v2, 0x7f0a03d4
 
     invoke-virtual {p1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -676,7 +676,7 @@
     goto :goto_2
 
     :cond_3
-    const v2, 0x7f120445
+    const v2, 0x7f120459
 
     invoke-virtual {p0, v2}, Lcom/oneplus/settings/ui/OPLedColorPickerPreference;->setMessage(I)V
 
@@ -707,7 +707,7 @@
 
     nop
 
-    const v0, 0x7f0a05ef
+    const v0, 0x7f0a05f0
 
     invoke-virtual {p1, v0}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 

@@ -105,7 +105,7 @@
     :cond_0
     iget-object v1, p0, Lcom/android/settings/network/telephony/gsm/OpenNetworkSelectPagePreferenceController;->mContext:Landroid/content/Context;
 
-    const v2, 0x7f120abc
+    const v2, 0x7f120aff
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -163,7 +163,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f120421
+    const v2, 0x7f120435
 
     invoke-virtual {v1, v2}, Lcom/android/settings/core/SubSettingLauncher;->setTitleRes(I)Lcom/android/settings/core/SubSettingLauncher;
 

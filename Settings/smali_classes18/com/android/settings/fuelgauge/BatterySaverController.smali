@@ -161,7 +161,7 @@
 
     iget-object v2, p0, Lcom/android/settings/fuelgauge/BatterySaverController;->mContext:Landroid/content/Context;
 
-    const v5, 0x7f12026e
+    const v5, 0x7f12027e
 
     invoke-virtual {v2, v5}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -176,7 +176,7 @@
 
     iget-object v5, p0, Lcom/android/settings/fuelgauge/BatterySaverController;->mContext:Landroid/content/Context;
 
-    const v6, 0x7f12026c
+    const v6, 0x7f12027c
 
     const/4 v7, 0x1
 
@@ -197,7 +197,7 @@
     :cond_1
     iget-object v2, p0, Lcom/android/settings/fuelgauge/BatterySaverController;->mContext:Landroid/content/Context;
 
-    const v5, 0x7f12026d
+    const v5, 0x7f12027d
 
     invoke-virtual {v2, v5}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -208,7 +208,7 @@
     :cond_2
     iget-object v2, p0, Lcom/android/settings/fuelgauge/BatterySaverController;->mContext:Landroid/content/Context;
 
-    const v5, 0x7f120266
+    const v5, 0x7f120276
 
     invoke-virtual {v2, v5}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

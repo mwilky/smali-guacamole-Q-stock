@@ -369,7 +369,7 @@
 
     move-result-object v5
 
-    const v6, 0x7f12092c
+    const v6, 0x7f120968
 
     invoke-direct {v4, p0, v5, v6}, Lcom/android/settings/accounts/AccountTypePreferenceLoader$FragmentStarter;-><init>(Lcom/android/settings/accounts/AccountTypePreferenceLoader;Ljava/lang/String;I)V
 

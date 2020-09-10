@@ -127,7 +127,7 @@
 
     iget-object v1, p0, Lcom/android/settings/development/WebViewAppPreferenceController;->mPreference:Landroidx/preference/Preference;
 
-    const v2, 0x7f120173
+    const v2, 0x7f120183
 
     invoke-virtual {v1, v2}, Landroidx/preference/Preference;->setSummary(I)V
 

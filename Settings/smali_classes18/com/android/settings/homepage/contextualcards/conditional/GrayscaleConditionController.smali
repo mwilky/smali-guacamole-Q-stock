@@ -154,7 +154,7 @@
 
     iget-object v1, p0, Lcom/android/settings/homepage/contextualcards/conditional/GrayscaleConditionController;->mAppContext:Landroid/content/Context;
 
-    const v2, 0x7f12046a
+    const v2, 0x7f12047e
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
@@ -182,7 +182,7 @@
 
     iget-object v2, p0, Lcom/android/settings/homepage/contextualcards/conditional/GrayscaleConditionController;->mAppContext:Landroid/content/Context;
 
-    const v3, 0x7f120464
+    const v3, 0x7f120478
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
@@ -214,7 +214,7 @@
 
     iget-object v1, p0, Lcom/android/settings/homepage/contextualcards/conditional/GrayscaleConditionController;->mAppContext:Landroid/content/Context;
 
-    const v2, 0x7f120463
+    const v2, 0x7f120477
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
@@ -230,7 +230,7 @@
 
     iget-object v1, p0, Lcom/android/settings/homepage/contextualcards/conditional/GrayscaleConditionController;->mAppContext:Landroid/content/Context;
 
-    const v2, 0x7f0801ef
+    const v2, 0x7f0801f8
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -269,7 +269,7 @@
     :try_start_0
     iget-object v0, p0, Lcom/android/settings/homepage/contextualcards/conditional/GrayscaleConditionController;->mAppContext:Landroid/content/Context;
 
-    const v1, 0x7f12047d
+    const v1, 0x7f120491
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

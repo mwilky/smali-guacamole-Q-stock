@@ -125,7 +125,7 @@
 
     iget-object v0, p0, Lcom/android/settings/homepage/contextualcards/ContextualCardFeedbackDialog;->mAlertParams:Lcom/android/internal/app/AlertController$AlertParams;
 
-    const v1, 0x7f1204ae
+    const v1, 0x7f1204c4
 
     invoke-virtual {p0, v1}, Lcom/android/settings/homepage/contextualcards/ContextualCardFeedbackDialog;->getText(I)Ljava/lang/CharSequence;
 
@@ -133,7 +133,7 @@
 
     iput-object v1, v0, Lcom/android/internal/app/AlertController$AlertParams;->mMessage:Ljava/lang/CharSequence;
 
-    const v1, 0x7f1204af
+    const v1, 0x7f1204c5
 
     invoke-virtual {p0, v1}, Lcom/android/settings/homepage/contextualcards/ContextualCardFeedbackDialog;->getText(I)Ljava/lang/CharSequence;
 
@@ -143,7 +143,7 @@
 
     iput-object p0, v0, Lcom/android/internal/app/AlertController$AlertParams;->mPositiveButtonListener:Landroid/content/DialogInterface$OnClickListener;
 
-    const v1, 0x7f1213f5
+    const v1, 0x7f1214b7
 
     invoke-virtual {p0, v1}, Lcom/android/settings/homepage/contextualcards/ContextualCardFeedbackDialog;->getText(I)Ljava/lang/CharSequence;
 

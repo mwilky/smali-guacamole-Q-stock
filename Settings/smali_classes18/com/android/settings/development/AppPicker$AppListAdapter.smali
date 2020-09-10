@@ -256,7 +256,7 @@
 
     invoke-direct {v2, p1}, Lcom/android/settings/development/AppPicker$MyApplicationInfo;-><init>(Lcom/android/settings/development/AppPicker;)V
 
-    const v3, 0x7f120b07
+    const v3, 0x7f120b4c
 
     invoke-virtual {p2, v3}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 

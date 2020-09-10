@@ -146,7 +146,7 @@
 
     if-eqz v2, :cond_1
 
-    const v2, 0x7f12015e
+    const v2, 0x7f12016e
 
     invoke-virtual {v1, v2}, Lcom/android/settings/core/SubSettingLauncher;->setTitleRes(I)Lcom/android/settings/core/SubSettingLauncher;
 
@@ -186,7 +186,7 @@
 
     if-eqz v1, :cond_0
 
-    const v1, 0x7f12015e
+    const v1, 0x7f12016e
 
     invoke-virtual {p0, v1}, Lcom/android/settings/datausage/DataUsagePreference;->setTitle(I)V
 
@@ -207,7 +207,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f120567
+    const v4, 0x7f120580
 
     const/4 v5, 0x2
 

@@ -27,7 +27,7 @@
 
     iget-object v0, p0, Lcom/android/settings/security/TopLevelSecurityEntryPreferenceController;->mContext:Landroid/content/Context;
 
-    const v1, 0x7f120fb3
+    const v1, 0x7f12103c
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

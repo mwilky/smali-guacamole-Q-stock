@@ -139,7 +139,7 @@
 
     move-object v0, v2
 
-    const v2, 0x7f0a050f
+    const v2, 0x7f0a050c
 
     invoke-virtual {p2, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -149,7 +149,7 @@
 
     iput-object v2, v0, Lcom/oneplus/settings/carcharger/OPCarChargerOpenAppAdapter$ItemViewHolder;->parent:Landroid/widget/RelativeLayout;
 
-    const v2, 0x7f0a0720
+    const v2, 0x7f0a0721
 
     invoke-virtual {p2, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -159,7 +159,7 @@
 
     iput-object v2, v0, Lcom/oneplus/settings/carcharger/OPCarChargerOpenAppAdapter$ItemViewHolder;->titleTv:Landroid/widget/TextView;
 
-    const v2, 0x7f0a02f0
+    const v2, 0x7f0a02f5
 
     invoke-virtual {p2, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -169,7 +169,7 @@
 
     iput-object v2, v0, Lcom/oneplus/settings/carcharger/OPCarChargerOpenAppAdapter$ItemViewHolder;->appIconIv:Landroid/widget/ImageView;
 
-    const v2, 0x7f0a0421
+    const v2, 0x7f0a0426
 
     invoke-virtual {p2, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -187,7 +187,7 @@
 
     iput-object v2, v0, Lcom/oneplus/settings/carcharger/OPCarChargerOpenAppAdapter$ItemViewHolder;->bottomLine:Landroid/view/View;
 
-    const v2, 0x7f0a02ab
+    const v2, 0x7f0a02b0
 
     invoke-virtual {p2, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -195,7 +195,7 @@
 
     iput-object v2, v0, Lcom/oneplus/settings/carcharger/OPCarChargerOpenAppAdapter$ItemViewHolder;->groupDivider:Landroid/view/View;
 
-    const v2, 0x7f0a058c
+    const v2, 0x7f0a058d
 
     invoke-virtual {p2, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -233,7 +233,7 @@
 
     iget-object v5, v0, Lcom/oneplus/settings/carcharger/OPCarChargerOpenAppAdapter$ItemViewHolder;->titleTv:Landroid/widget/TextView;
 
-    const v6, 0x7f120bf3
+    const v6, 0x7f120c3e
 
     invoke-virtual {v5, v6}, Landroid/widget/TextView;->setText(I)V
 
@@ -248,7 +248,7 @@
 
     iget-object v5, v0, Lcom/oneplus/settings/carcharger/OPCarChargerOpenAppAdapter$ItemViewHolder;->titleTv:Landroid/widget/TextView;
 
-    const v6, 0x7f120bf2
+    const v6, 0x7f120c3d
 
     invoke-virtual {v5, v6}, Landroid/widget/TextView;->setText(I)V
 

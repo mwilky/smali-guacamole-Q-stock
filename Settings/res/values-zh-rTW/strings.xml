@@ -256,6 +256,7 @@
     <string name="advanced_security_title">進階</string>
     <string name="advanced_settings">進階設定</string>
     <string name="advanced_settings_summary">啟用更多設定選項</string>
+    <string name="advanced_wificall_summary">當移動不可用時使用Wi-Fi</string>
     <string name="airplane_mode">飛航模式</string>
     <string name="alarm_ringtone_title">預設鬧鐘音效</string>
     <string name="alarm_template">時間：%1$s</string>
@@ -266,6 +267,7 @@
     <string name="alert_dialog_cancel">取消</string>
     <string name="alertslider_settings">三段式開關和勿擾</string>
     <string name="alertslider_settings_soc_tri_state">三段式開關</string>
+    <string name="alertslider_settings_soc_tri_state_summary">靜音、震動、響鈴</string>
     <string name="all_volume_title">音量</string>
     <string name="allow">允許</string>
     <string name="allow_bind_app_widget_activity_allow_bind">建立小工具後，%1$s 即可存取所顯示的所有資料。</string>
@@ -309,19 +311,26 @@
     <string name="angle_enabled_app_set">已啟用 ANGLE 的應用程式：%1$s</string>
     <string name="animator_duration_scale_title">動畫影片長度比例</string>
     <string name="another_migration_already_in_progress">目前已在執行另一項遷移作業。</string>
-    <string name="aod_clock_analog">類比</string>
-    <string name="aod_clock_default">默認</string>
+    <string name="aod_clock_analog">經典 1</string>
+    <string name="aod_clock_analog_1">經典 2</string>
+    <string name="aod_clock_analog_2">經典 3</string>
+    <string name="aod_clock_bold">躍動</string>
+    <string name="aod_clock_default">預設</string>
+    <string name="aod_clock_digital">數字 1</string>
+    <string name="aod_clock_digital_1">數字 2</string>
     <string name="aod_clock_mcl">麥拉倫</string>
-    <string name="aod_clock_minimalism">極簡</string>
-    <string name="aod_clock_none">無</string>
+    <string name="aod_clock_minimalism">極簡 1</string>
+    <string name="aod_clock_minimalism_1">極簡 2</string>
+    <string name="aod_clock_none">不顯示</string>
     <string name="aod_clock_select_style_text">選擇時鐘樣式</string>
+    <string name="aod_clock_text_clock">文字時鐘</string>
     <string name="aod_horizon_light">通知光效</string>
     <string name="aod_horizon_light_effect_1">藍色</string>
     <string name="aod_horizon_light_effect_2">紅色</string>
     <string name="aod_horizon_light_effect_3">紫色</string>
     <string name="aod_horizon_light_effect_4">金色</string>
     <string name="aod_horizon_light_effect_5">麥拉倫</string>
-    <string name="aod_horizon_light_select">選擇顏⾊</string>
+    <string name="aod_horizon_light_select">選擇顏色</string>
     <string name="aod_horizon_light_snake_action">去開啟</string>
     <string name="aod_horizon_light_snake_tip">此功能在啟用“新通知提醒”後即可使用</string>
     <string name="apn_apn">APN</string>
@@ -1476,6 +1485,7 @@
 請關閉這個應用程式的定位功能，以解決這個問題。"</string>
     <string name="dialog_location_ok">關閉</string>
     <string name="dialog_location_title">要關閉定位功能嗎？</string>
+    <string name="dialog_mhs_error">請稍候，正在驗證中。</string>
     <string name="dialog_stop_message">"由於「%1$s」一直讓你的手機保持喚醒狀態，因此手機無法正常管理電池。
 
 你可以停止這個應用程式來解決此問題。
@@ -1591,6 +1601,21 @@
     <string name="dual_cdma_sim_warning_notification_channel_title">SIM 卡組合</string>
     <string name="dual_cdma_sim_warning_notification_summary">如果你的電信業者為「%1$s」，這項功能可能會有所限制。輕觸即可瞭解詳情。</string>
     <string name="eab_provisioned_switch_string">EAB/顯示狀態：已啟用</string>
+    <string name="earphone_function_control_click_left">按兩下左耳機</string>
+    <string name="earphone_function_control_click_right">按兩下右耳機</string>
+    <string name="earphone_function_control_last_song">上一首</string>
+    <string name="earphone_function_control_next_song">下一首</string>
+    <string name="earphone_function_control_play_pause">播放/暫停</string>
+    <string name="earphone_function_introduction">功能介紹</string>
+    <string name="earphone_function_listening_breeno">語音助理</string>
+    <string name="earphone_support_battery_dot">；</string>
+    <string name="earphone_support_battery_info_box">耳機盒：%1$s</string>
+    <string name="earphone_support_battery_info_left">左：%1$s</string>
+    <string name="earphone_support_battery_info_right">右：%1$s</string>
+    <string name="earphone_support_current_version">目前版本：</string>
+    <string name="earphone_support_update_ota">自動更新</string>
+    <string name="earphone_support_wifi_data">允許在行動網路下自動更新</string>
+    <string name="earphone_usage_guide_complete">完成</string>
     <string name="edge_to_edge_navigation_summary">從螢幕底部向上滑動即可前往主螢幕。從螢幕底部向上滑動並按住，然後再放開可切換應用程式。從左側或右側邊緣向另一側滑動可返回上一個畫面。</string>
     <string name="edge_to_edge_navigation_title">透過手勢操作系統</string>
     <string name="emergency_address_summary">當你透過 Wi‑Fi 網路撥打緊急電話時，系統會判定你位於這個地址</string>
@@ -1729,6 +1754,7 @@
     <string name="expand_button_title">進階</string>
     <string name="experimental_category_title">實驗性</string>
     <string name="experimental_preference">(實驗性)</string>
+    <string name="extended_title">网络扩展</string>
     <string name="external_code_size_label">USB 儲存裝置應用程式</string>
     <string name="external_data_size_label">USB 儲存裝置資料</string>
     <string name="external_source_switch_title">允許這個來源的應用程式</string>
@@ -1770,6 +1796,8 @@
     <string name="filter_personal_apps">個人</string>
     <string name="filter_work_apps">工作</string>
     <string name="filter_write_settings_apps">可以修改系統設定</string>
+    <string name="find_my_bluetooth_earphone">尋找耳機</string>
+    <string name="find_my_bluetooth_earphone_summary">耳機在附近時，可播放聲音確定位置；不在附近時可查看最後位置</string>
     <string name="fingerprint_add_max">你最多可以新增 %d 個指紋</string>
     <string name="fingerprint_add_title">新增指紋</string>
     <string name="fingerprint_delete_message">要刪除這個指紋嗎？</string>
@@ -1869,12 +1897,12 @@
     <string name="hardware_info">型號與硬體</string>
     <string name="hardware_keys_action_assist">搜索助手</string>
     <string name="hardware_keys_action_camera">打開相機</string>
-    <string name="hardware_keys_action_last_app">打開最近使用的應用程序</string>
+    <string name="hardware_keys_action_last_app">打開最近使用的應用程式</string>
     <string name="hardware_keys_action_menu">選單鍵</string>
     <string name="hardware_keys_action_nothing">無動作</string>
     <string name="hardware_keys_action_notification_center">打開/關閉 通知中心</string>
     <string name="hardware_keys_action_recents">最近</string>
-    <string name="hardware_keys_action_shelf">打開氫視窗</string>
+    <string name="hardware_keys_action_shelf">打開儲櫃</string>
     <string name="hardware_keys_action_turn_off_screen">關閉螢幕</string>
     <string name="hardware_keys_action_voice_search">語音搜索</string>
     <string name="hardware_keys_back_key_title">後退按鍵</string>
@@ -2352,6 +2380,7 @@
     <string name="lockscreen_remote_input">裝置處於鎖定狀態時，禁止在通知中輸入回覆內容或其他文字</string>
     <string name="lockscreen_settings_title">螢幕鎖定顯示畫面</string>
     <string name="lockscreen_settings_what_to_show_category">要顯示的項目</string>
+    <string name="long_press_power_button">長按電源鍵</string>
     <string name="lost_internet_access_cancel">保持開啟 Wi‑Fi</string>
     <string name="lost_internet_access_persist">不要再顯示</string>
     <string name="lost_internet_access_switch">切換到行動網路</string>
@@ -2485,6 +2514,8 @@
     <string name="menu_stats_total">電池整體使用狀況</string>
     <string name="menu_stats_unplugged">拔除插頭後已過了 %1$s</string>
     <string name="menu_use_uss">使用 Uss</string>
+    <string name="mhs_app">打開我的Verizon</string>
+    <string name="mhs_call_back_error">數據連接不可用。</string>
     <string name="misc_files">其他檔案</string>
     <string name="misc_files_selected_count">已選取 %1$d 個，共 %2$d 個</string>
     <string name="misc_files_selected_count_bytes">%1$s，總共 %2$s</string>
@@ -2500,6 +2531,11 @@
     <string name="mobile_data_settings_summary_auto_switch">手機會在進入有效範圍時，自動切換至這個電信業者</string>
     <string name="mobile_data_settings_title">行動數據</string>
     <string name="mobile_data_usage_title">應用程式數據用量</string>
+    <string name="mobile_hotspot_airplane_off_error">打開熱點前，請先關閉飛行模式</string>
+    <string name="mobile_hotspot_authoration_error">"若要使用移動熱點，您需要訂閱移動熱點服務。
+
+若要訂閱移動熱點，請訪問my verizon或致電（800）922–0204聯系客戶服務"</string>
+    <string name="mobile_hotspot_data_off_error">打開熱點前，請打開移動資料業務</string>
     <string name="mobile_insert_sim_card">請插入 SIM 卡，並重新啟動裝置</string>
     <string name="mobile_network_active_esim">已啟用/已下載的 SIM 卡</string>
     <string name="mobile_network_active_sim">已啟用/SIM 卡</string>
@@ -2638,6 +2674,8 @@
     <string name="nfc_quick_toggle_title">NFC</string>
     <string name="nfc_secure_settings_title">確保 NFC 安全</string>
     <string name="nfc_secure_toggle_summary">只有螢幕處於解鎖狀態時，才允許進行 NFC 付款及使用大眾運輸服務</string>
+    <string name="nfc_uicc_sim1">SIM卡 1</string>
+    <string name="nfc_uicc_sim2">SIM卡 2</string>
     <string name="night_display_activation_off_custom">保持關閉狀態，直到%1$s</string>
     <string name="night_display_activation_off_manual">立即關閉</string>
     <string name="night_display_activation_off_twilight">保持關閉狀態，直到日落</string>
@@ -2681,6 +2719,7 @@
     <string name="no_internet_access_text">這個網路沒有網際網路連線。要繼續保持連線嗎？</string>
     <string name="no_memory_use_summary">過去 3 小時未使用任何記憶體</string>
     <string name="no_network">請連接網路</string>
+    <string name="no_network_extenders">没有网络扩展</string>
     <string name="no_notification_assistant">無</string>
     <string name="no_notification_listeners">最近沒有已安裝的應用程式要求「通知」存取權。</string>
     <string name="no_running_services">沒有正在執行中的服務。</string>
@@ -2692,7 +2731,7 @@
     <string name="not_allowed">你的 SIM 卡無法連上這個網路。</string>
     <string name="not_battery_optimizing">未使用電池效能最佳化功能</string>
     <string name="not_installed">這位使用者並未安裝</string>
-    <string name="not_optimize_summery">可能會影響電池續航</string>
+    <string name="not_optimize_summery">對應用的後臺活動不做限制，電池電量會更快耗盡</string>
     <string name="not_optimized_apps">未優化應用</string>
     <string name="not_set">未設定</string>
     <string name="notification_alert_title">快訊</string>
@@ -2846,15 +2885,15 @@
     <string name="oneplus_app_locker_add_apps">添加應用</string>
     <string name="oneplus_app_locker_catagory">隱私</string>
     <string name="oneplus_app_locker_open_apps">應用鎖列表</string>
-    <string name="oneplus_app_locker_summary">選擇您要加密的應用程序</string>
+    <string name="oneplus_app_locker_summary">選擇您要加密的應用程式</string>
     <string name="oneplus_app_locker_switch">通知內容隱藏</string>
     <string name="oneplus_app_locker_switch_summary">開啟了應用鎖的應用，不會顯示其通知內容</string>
     <string name="oneplus_app_locker_title">應用鎖</string>
     <string name="oneplus_app_network_settings">聯網控制</string>
     <string name="oneplus_app_notification_allow_led">允許呼吸燈的應用</string>
-    <string name="oneplus_app_notification_led_enabled_summary">顯示此應用程序的通知呼吸燈</string>
+    <string name="oneplus_app_notification_led_enabled_summary">顯示此應用程式的通知呼吸燈</string>
     <string name="oneplus_app_notification_led_enabled_title">呼吸燈通知</string>
-    <string name="oneplus_app_notification_no_ongoing_on_keyguard_summary">從不在螢幕鎖定界面上顯示此應用程序的持久性通知</string>
+    <string name="oneplus_app_notification_no_ongoing_on_keyguard_summary">從不在螢幕鎖定界面上顯示此應用程式的持久性通知</string>
     <string name="oneplus_app_notification_no_ongoing_on_keyguard_title">禁用螢幕鎖定界面上的持久性通知</string>
     <string name="oneplus_app_notification_not_allow_led">不允許呼吸燈的應用</string>
     <string name="oneplus_app_notification_show_on_keyguard_summary">在螢幕鎖定界面顯示來自此應用的通知</string>
@@ -2885,8 +2924,8 @@
     <string name="oneplus_auto_open_specified_app">自動開啟指定應用</string>
     <string name="oneplus_auto_play">自動播放音樂</string>
     <string name="oneplus_auto_play_summary">連接耳機後自動播放暫停的音樂</string>
-    <string name="oneplus_auto_switch_mobile_data">自動切換行動網路</string>
-    <string name="oneplus_auto_switch_mobile_data_summary">Wi‑Fi 網路訊號差且行動數據開關開啟時，自動切換至行動網路</string>
+    <string name="oneplus_auto_switch_mobile_data">智能網路連線</string>
+    <string name="oneplus_auto_switch_mobile_data_summary">網路狀態不佳時，同時使用 Wi‑Fi 和移動數據以保持連線通暢，提升網路穩定性</string>
     <string name="oneplus_auto_turn_on_apps">指定應用自動開啟</string>
     <string name="oneplus_auto_turn_on_car_charger_info_h2">開啟上方開關後，在連線了一加車載Warp車充時即可自動開啟智能車載</string>
     <string name="oneplus_auto_turn_on_car_charger_info_o2">透過上方設定，在連線了一加車載Warp車充時即可自動開啟勿擾模式和指定應用</string>
@@ -2902,6 +2941,9 @@
 
 省電模式會在設備充電時自動關閉。"</string>
     <string name="oneplus_battery_saver_summary">此功能對於部分遊戲可能沒有效果</string>
+    <string name="oneplus_bed_time_mode_summary">讓 OnePlus Warp 無線閃充以更舒緩的方式執行</string>
+    <string name="oneplus_bed_time_mode_title">舒眠模式</string>
+    <string name="oneplus_bed_time_mode_wall_text">夜深人靜時，OnePlus Warp無線充電底座會自動降低風扇轉速。 你也可自行調節時間或者關閉此功能</string>
     <string name="oneplus_bg_data_condition_turn_off">關閉數據節省模式</string>
     <string name="oneplus_black_screen_gestures_settings_title">黑屏手勢</string>
     <string name="oneplus_block_all_notifications">遮罩通知</string>
@@ -2946,7 +2988,7 @@
     <string name="oneplus_compatibility_mode_summary">全屏應用無法使用凹形區域</string>
     <string name="oneplus_compatibility_mode_title">兼容模式</string>
     <string name="oneplus_condition_airplane_mode_turn_off">關閉飛航模式</string>
-    <string name="oneplus_condition_battery_summary">節約耗電量模式會停用部分裝置功能，并限制應用程式</string>
+    <string name="oneplus_condition_battery_summary">節約耗電量模式會停用部分裝置功能，並限制應用程式</string>
     <string name="oneplus_condition_battery_turn_off">關閉節約耗電量模式</string>
     <string name="oneplus_condition_bg_data_summary">你必須連上 Wi-Fi 才能使用背景資料功能。如果無法連上 Wi-Fi ，部分應用程式或服務可能會受到影響</string>
     <string name="oneplus_condition_bg_data_title">「數據節省模式」已開啟</string>
@@ -2959,6 +3001,7 @@
     <string name="oneplus_connected_devices_dashboard_summary">NFC、投射、打印</string>
     <string name="oneplus_connected_devices_dashboard_title">藍牙和設備連接</string>
     <string name="oneplus_cpu">處理器</string>
+    <string name="oneplus_custom_drop_title">要放棄當前修改嗎？</string>
     <string name="oneplus_custom_time">自定義時間開啟</string>
     <string name="oneplus_customization">虛擬按鍵自定義設定</string>
     <string name="oneplus_customization_summary">長按、雙擊</string>
@@ -2970,7 +3013,7 @@
     <string name="oneplus_dc_dimming_summary">開啟 DC 調光後，將採用改變電路功率的方式，對螢幕亮度進行調節。該功能可以降低低亮度下的螢幕頻閃，但在某些情況下可能存在色彩顯示異常。</string>
     <string name="oneplus_dc_dimming_title">DC 調光</string>
     <string name="oneplus_deep_clear_way">深度清除</string>
-    <string name="oneplus_deep_clear_way_summary">會清除相關的背景程序，這可能會導致一些問題。例如有一些第三方應用會無法收到通知，直到你再次打開它。</string>
+    <string name="oneplus_deep_clear_way_summary">會清除相關的背景程式，這可能會導致一些問題。例如有一些第三方應用會無法收到通知，直到你再次打開它。</string>
     <string name="oneplus_deep_optimization">深度優化</string>
     <string name="oneplus_deep_optimization_summary">關閉深度優化後，裝置的耗電量會大大增加，將影響到您的正常使用。</string>
     <string name="oneplus_deep_optimization_title">要關閉深度優化功能嗎？</string>
@@ -3008,12 +3051,14 @@
     <string name="oneplus_donot_silence_or_block_summary">允許所有類型的通知</string>
     <string name="oneplus_double_click_light_screen_summary">螢幕關閉時在螢幕雙擊即可喚醒螢幕</string>
     <string name="oneplus_double_click_light_screen_title">雙擊喚醒螢幕</string>
-    <string name="oneplus_double_tap_power_gesture">雙擊電源鍵快速開啟</string>
+    <string name="oneplus_double_tap_power_gesture">雙擊電源鍵</string>
     <string name="oneplus_double_tap_power_gesture_app">功能選擇</string>
     <string name="oneplus_double_tap_power_gesture_camera">相機</string>
     <string name="oneplus_double_tap_power_gesture_wallet">刷卡（錢包）</string>
+    <string name="oneplus_double_tap_power_none">無</string>
     <string name="oneplus_doze_summary">收到通知時喚醒螢幕</string>
     <string name="oneplus_doze_summary_801">在息屏狀態下顯示時鐘及其他信息</string>
+    <string name="oneplus_doze_summary_new">息屏後，可在屏幕上顯示時鐘、日期、通知</string>
     <string name="oneplus_doze_title">主動顯示</string>
     <string name="oneplus_doze_title_801">息屏顯示</string>
     <string name="oneplus_draw_gesture_start_none">無動作</string>
@@ -3076,7 +3121,7 @@
     <string name="oneplus_faceunlock_introduction_risk_warning">風險提示：人臉識別的安全性低於指紋和密碼。 因此，此功能不適用於支付或是應用鎖。</string>
     <string name="oneplus_faceunlock_introduction_title">當攝像頭升起時，將開始進行人臉識別</string>
     <string name="oneplus_favourite_contacts">收藏聯絡人設置</string>
-    <string name="oneplus_file_not_exist">文件不存在!</string>
+    <string name="oneplus_file_not_exist">檔案不存在!</string>
     <string name="oneplus_finger_input_error_tips">指紋錄入錯誤，請返回重試</string>
     <string name="oneplus_finger_input_fail_tips">錄入失敗，請調整姿勢重新錄入</string>
     <string name="oneplus_finger_print_anim_save">保存</string>
@@ -3134,6 +3179,9 @@
     <string name="oneplus_force_factory_reset_summary">由於開機密碼功能開啟，此選項必須勾選</string>
     <string name="oneplus_forum_award_summary">6 年前，我們一起從社群出發。正是你們，提供了改進產品的寶貴建言，才使得 OnePlus 越來越好。謝謝你，加油。而繼續努力，則是我們表達謝意的最好方式。</string>
     <string name="oneplus_forum_award_title">功勳牆</string>
+    <string name="oneplus_front_camera_app_display_fullscreen_summary">當應用內容被攝像頭頂部區域遮擋時，請切換到預設模式</string>
+    <string name="oneplus_front_camera_display_choose_title">選擇攝像頭區域顯示方式</string>
+    <string name="oneplus_front_camera_display_title">攝像頭頂部區域</string>
     <string name="oneplus_fullscreen_back_guide_summary">從螢幕左側或右側的下方區域邊緣，向內滑動</string>
     <string name="oneplus_fullscreen_back_guide_summary_deprecated">從螢幕底部邊緣的左側或右側，向上滑動</string>
     <string name="oneplus_fullscreen_back_guide_title">返回上一層</string>
@@ -3156,7 +3204,7 @@
     <string name="oneplus_fullscreen_mode_summary">允許全屏應用使用凹形區域</string>
     <string name="oneplus_fullscreen_mode_title">全屏模式</string>
     <string name="oneplus_fullscreen_previous_app_guide_summary">在底部橫條區域向左或向右劃動</string>
-    <string name="oneplus_fullscreen_previous_app_guide_summary_deprecated">从屏幕底部边缘的中间向上再向右划动，然后松开手指</string>
+    <string name="oneplus_fullscreen_previous_app_guide_summary_deprecated">從螢幕底部邊緣的中間向上再向右划動，然後鬆開手指</string>
     <string name="oneplus_fullscreen_previous_app_guide_title">切換最近使用的應用程式</string>
     <string name="oneplus_fullscreen_previous_app_no_bar_guide_summary">從螢幕底部邊緣上劃後，再向左側或右側丟擲</string>
     <string name="oneplus_fullscreen_previous_app_no_bar_guide_title">切換最近使用的應用程式</string>
@@ -3210,11 +3258,15 @@
     <string name="oneplus_gestures_open_shelf">打開Shelf</string>
     <string name="oneplus_gestures_take_video">拍攝影片</string>
     <string name="oneplus_getlog_title">抓取日誌</string>
+    <string name="oneplus_global_dark_mode_description">使尚未支援暗色主題的應用也顯示為暗色調。部分應用可能無法呈現預期的效果，可在下方列表中關閉。</string>
+    <string name="oneplus_global_dark_mode_only_valid_in_dark_mode">該功能僅在使用暗色調時可用</string>
+    <string name="oneplus_global_dark_mode_summary">在開啟暗色調時，支援更多未主動適配暗色的應用程式自動變為暗色調</string>
+    <string name="oneplus_global_dark_mode_title">在更多應用程式中開啟暗色調</string>
     <string name="oneplus_google_tts">Google TTS 語音資料</string>
     <string name="oneplus_gps_using">正在使用GPS定位</string>
     <string name="oneplus_h2_contributors">氫OS貢獻者名單</string>
     <string name="oneplus_hand_up_proximity_summary">拿起手機時喚醒螢幕</string>
-    <string name="oneplus_hand_up_proximity_title">抬手亮屏</string>
+    <string name="oneplus_hand_up_proximity_title">抬手喚醒螢幕</string>
     <string name="oneplus_hand_up_to_show">拿起手機顯示</string>
     <string name="oneplus_haptic_feedback_no_app">未安裝所支持的遊戲</string>
     <string name="oneplus_haptic_feedback_no_app_tip">您可以安裝 PUBG Mobile、狂野飆車 9</string>
@@ -3225,6 +3277,8 @@
     <string name="oneplus_hardware_keys_action_split_screen">開啓/關閉 分屏</string>
     <string name="oneplus_health_safety_information">健康與安全資訊</string>
     <string name="oneplus_hearing_aid">助聽器兼容模式</string>
+    <string name="oneplus_hide_front_camera_display_summary">所有應用都不能使用該區域</string>
+    <string name="oneplus_hide_front_camera_display_title">隱藏攝像頭區域</string>
     <string name="oneplus_hide_navkeys">一鍵隱藏</string>
     <string name="oneplus_hide_navkeys_summary">在虛擬按鍵左側增加按鈕，用來隱藏虛擬按鍵</string>
     <string name="oneplus_hide_notch_display_summary">所有應用都不能使用凹形區域</string>
@@ -3263,7 +3317,7 @@
     <string name="oneplus_legal_notices">法律聲明</string>
     <string name="oneplus_legal_summary">隱私政策、許可等</string>
     <string name="oneplus_levels">優先順序</string>
-    <string name="oneplus_lift_up_display">熄屏顯示、抬手亮屏，及新通知亮屏</string>
+    <string name="oneplus_lift_up_display">關閉螢幕顯示、抬手喚醒螢幕，及新通知喚醒螢幕</string>
     <string name="oneplus_light">輕度</string>
     <string name="oneplus_load_app_list">正在加載應用...</string>
     <string name="oneplus_local_ringtone">本地鈴聲</string>
@@ -3293,6 +3347,22 @@
     <string name="oneplus_max_shortcuts_tips">最多僅能新增6個快捷方式</string>
     <string name="oneplus_media_ring">媒體音量歸零</string>
     <string name="oneplus_media_ring_summary">切換到靜音模式時，將媒體音量暫時設為0</string>
+    <string name="oneplus_memc_close">關</string>
+    <string name="oneplus_memc_game">遊戲運動補償</string>
+    <string name="oneplus_memc_game_summary">開啟遊戲運動補償需要將解析度切換為 FHD+</string>
+    <string name="oneplus_memc_more_support_apps">更多支援的應用</string>
+    <string name="oneplus_memc_notice">在該模式下，視頻播放的幀率將會提升，同時減少畫面的運動模糊，使其更加清晰、流暢。僅在全屏播放時生效。</string>
+    <string name="oneplus_memc_open">開</string>
+    <string name="oneplus_memc_support_apps">支援的應用</string>
+    <string name="oneplus_memc_support_no_apps">未安裝所支援的應用</string>
+    <string name="oneplus_memc_video">視頻高幀率模式</string>
+    <string name="oneplus_memc_video_effect">補償效果</string>
+    <string name="oneplus_memc_video_extreme">極致</string>
+    <string name="oneplus_memc_video_nosupport_extreme_summary">開啟極限需要將解析度切換為 FHD+</string>
+    <string name="oneplus_memc_video_nosupport_extreme_text">切換到 QHD+ 解析度，MEMC 運動畫面補償功能受到限制</string>
+    <string name="oneplus_memc_video_smooth">平滑</string>
+    <string name="oneplus_memc_video_theacme_summary">開啟後，視頻播放的幀率將會提升至 120 幀，畫面極致順滑，但可能會引起額外的耗電。此功能暫不支援 QHD+ 解析度。</string>
+    <string name="oneplus_memc_video_theacme_title">視頻極限高幀率</string>
     <string name="oneplus_mobile_device_name_title">手機名稱</string>
     <string name="oneplus_mode_choose">模式選擇</string>
     <string name="oneplus_mode_settings">模式設置</string>
@@ -3346,7 +3416,7 @@
     <string name="oneplus_no_assistant_app_dialog">您還未安裝任何小幫手應用程式</string>
     <string name="oneplus_no_choice">未選擇</string>
     <string name="oneplus_no_device_connected">無設備連入</string>
-    <string name="oneplus_no_file_tips">暫無鈴聲文件</string>
+    <string name="oneplus_no_file_tips">暫無鈴聲檔案</string>
     <string name="oneplus_no_ringtone">無</string>
     <string name="oneplus_no_supported_apps">尚未安裝支援此功能的程式</string>
     <string name="oneplus_noise_tips">靜音時震動</string>
@@ -3355,7 +3425,7 @@
     <string name="oneplus_none_default_gallery">沒有預設圖庫應用</string>
     <string name="oneplus_none_default_music">沒有預設音樂播放機</string>
     <string name="oneplus_normal_clear_way">普通清除</string>
-    <string name="oneplus_normal_clear_way_summary">僅清除最近任務列表和緩存，不會清除背景程序</string>
+    <string name="oneplus_normal_clear_way_summary">僅清除最近任務列表和緩存，不會清除背景程式</string>
     <string name="oneplus_normal_notification_summary">"螢幕鎖定時不顯示通知，狀態欄顯示為數值，
 通知中心提示下置，無聲音和呼吸燈提示"</string>
     <string name="oneplus_normal_notification_title">正常通知</string>
@@ -3390,6 +3460,10 @@
     <string name="oneplus_notifications_free">隨意</string>
     <string name="oneplus_notifications_meet">遇見</string>
     <string name="oneplus_o2_contributors">氧OS貢獻者名單</string>
+    <string name="oneplus_open_bed_time_mode_schedule_summary">在設定的時間開啟</string>
+    <string name="oneplus_open_bed_time_mode_schedule_title">定時開啟</string>
+    <string name="oneplus_open_bed_time_mode_summary">您可以手動開啟殊眠模式</string>
+    <string name="oneplus_open_bed_time_mode_title">舒眠模式</string>
     <string name="oneplus_open_light_device_summary">螢幕關閉時在螢幕畫V，打開手電筒</string>
     <string name="oneplus_open_light_device_title">畫V打開手電筒</string>
     <string name="oneplus_opfinger_input_completed_comfirm">完成</string>
@@ -3441,7 +3515,7 @@
     <string name="oneplus_preference_settings_turn_on_time">開始時間</string>
     <string name="oneplus_prior_to_use_you_need_to">在使用之前，您需要：</string>
     <string name="oneplus_privacy_policy">隱私政策</string>
-    <string name="oneplus_product_info">操作說明</string>
+    <string name="oneplus_product_info">保修與預裝</string>
     <string name="oneplus_product_info_introduce">產品重要信息與保修卡</string>
     <string name="oneplus_product_info_summary">保修卡、預裝清單</string>
     <string name="oneplus_proximity_summary">從口袋拿出手機或掃過距離感應器時喚醒螢幕</string>
@@ -3473,15 +3547,16 @@
     <string name="oneplus_quickpay_confirm_changehomebutton">將長按主頁鍵由 『%1$s』 改為 『快捷支付』，確定改變此操作嗎？</string>
     <string name="oneplus_quickpay_entry_summary">@string/oneplus_quickpay_unlock_swtch_summary</string>
     <string name="oneplus_quickpay_instructions">使用說明</string>
-    <string name="oneplus_quickpay_lock_swtch_summary">螢幕關閉或鎖定時，使用指纹解锁後繼續長按主頁鍵，可以直接打開支付界面</string>
+    <string name="oneplus_quickpay_lock_swtch_summary">螢幕關閉或鎖定時，使用指紋解鎖後繼續長按主頁鍵，可以直接打開支付界面</string>
     <string name="oneplus_quickpay_lock_swtch_title">螢幕鎖定狀態快捷支付</string>
     <string name="oneplus_quickpay_select_default_way">選擇預設支付方式</string>
     <string name="oneplus_quickpay_unlock_swtch_summary">長按主頁鍵啟動快捷支付</string>
-    <string name="oneplus_quickpay_unlock_swtch_title">解锁狀態快捷支付</string>
+    <string name="oneplus_quickpay_unlock_swtch_title">解鎖狀態快捷支付</string>
     <string name="oneplus_quickpay_way_alipay_qrcode">支付寶付款碼</string>
     <string name="oneplus_quickpay_way_alipay_scanning">支付寶掃碼</string>
     <string name="oneplus_quickpay_way_paytm">Paytm</string>
     <string name="oneplus_quickpay_way_wecaht_qrcode">WeChat 付款碼</string>
+    <string name="oneplus_quickpay_way_wecaht_ridecode">微信乘車碼</string>
     <string name="oneplus_quickpay_way_wecaht_scanning">WeChat 掃碼</string>
     <string name="oneplus_ramboost_description">通過學習你的手機使用習慣，RAM Boost 可預測你需要啟動的應用和要載入的資料，充分利用記憶體的容量優勢來提升日常使用中的效能表現。</string>
     <string name="oneplus_ramboost_switch_summary">根據你的使用習慣提升記憶體的利用效率</string>
@@ -3491,24 +3566,25 @@
     <string name="oneplus_reading_mode">閱讀模式</string>
     <string name="oneplus_reading_mode_activate_manual">手動開啟</string>
     <string name="oneplus_reading_mode_add_apps">添加閱讀模式應用</string>
-    <string name="oneplus_reading_mode_ask" />
+    <string name="oneplus_reading_mode_ask">每次都詢問</string>
     <string name="oneplus_reading_mode_auto_summary">打開列表中的應用時自動開啟閱讀模式，退出時會自動關閉閱讀模式</string>
-    <string name="oneplus_reading_mode_available" />
+    <string name="oneplus_reading_mode_available">未添加</string>
     <string name="oneplus_reading_mode_block_peek_notifications">屏蔽懸浮通知</string>
-    <string name="oneplus_reading_mode_chromatic" />
-    <string name="oneplus_reading_mode_default_state" />
+    <string name="oneplus_reading_mode_chromatic">彩色效果</string>
+    <string name="oneplus_reading_mode_default_state">預設狀態</string>
     <string name="oneplus_reading_mode_manual_settings">手動開啟設定</string>
     <string name="oneplus_reading_mode_mode_setting">模式設定</string>
-    <string name="oneplus_reading_mode_mono" />
-    <string name="oneplus_reading_mode_select_effect" />
-    <string name="oneplus_reading_mode_select_effect_for_app" />
+    <string name="oneplus_reading_mode_mono">黑白效果</string>
+    <string name="oneplus_reading_mode_select_effect">效果選擇</string>
+    <string name="oneplus_reading_mode_select_effect_for_app">選擇“%1$s”的閱讀效果</string>
     <string name="oneplus_reading_mode_summary">根據不同的光線環境，自動將螢幕的色彩及文字效果調節至所處環境相適合的效果，使閱讀體驗如電子書閱讀器般舒適易讀。</string>
     <string name="oneplus_reading_mode_summary_no_sensor">閱讀模式會優化螢幕和文字的顯示效果，使閱讀體驗如電子書閱讀器般舒適。</string>
-    <string name="oneplus_reading_mode_tips" />
+    <string name="oneplus_reading_mode_tips">黑白效果讓你在文字的世界中更加沉浸；彩色效果為你提供更舒適的彩色閱讀體驗</string>
     <string name="oneplus_reading_mode_turn_on">立即開啟閱讀模式</string>
-    <string name="oneplus_reading_mode_turn_on_chromatic" />
-    <string name="oneplus_reading_mode_turn_on_mono" />
-    <string name="oneplus_reading_mode_turn_on_tips" />
+    <string name="oneplus_reading_mode_turn_on_chromatic">開啟彩色效果</string>
+    <string name="oneplus_reading_mode_turn_on_mono">開啟黑白效果</string>
+    <string name="oneplus_reading_mode_turn_on_tips">"手動開啟閱讀模式時，將遵循上方規則
+（通過指定應用自動開啟時除外）"</string>
     <string name="oneplus_receive_notifications">一加推送訊息</string>
     <string name="oneplus_receive_notifications_agree">接收一加推送訊息</string>
     <string name="oneplus_receive_notifications_summary">允許一加推送新聞、用戶問卷、互動資訊與產品銷售資訊</string>
@@ -3527,7 +3603,7 @@
     <string name="oneplus_ring_pattern">響鈴模式</string>
     <string name="oneplus_ring_pattern_soc_tri_state_summary">允許聲音和震動</string>
     <string name="oneplus_ring_pattern_summary">允許來電和通知發出聲音</string>
-    <string name="oneplus_ringtone_and_vibrate">鈴聲和振動</string>
+    <string name="oneplus_ringtone_and_vibrate">鈴聲和震動</string>
     <string name="oneplus_ringtones_oneplus_tune">OnePlus音調</string>
     <string name="oneplus_rotation_silent_enable_summary">來電後，翻轉手機，手機靜音</string>
     <string name="oneplus_rotation_silent_enable_title">翻轉靜音</string>
@@ -3556,8 +3632,8 @@
     <string name="oneplus_screen_resolution_adjust">螢幕解析度</string>
     <string name="oneplus_screen_resolution_adjust_1080p_summary">2340×1080 高清畫質，有助於節省電量</string>
     <string name="oneplus_screen_resolution_adjust_intelligent_switch">智能切換</string>
-    <string name="oneplus_screen_resolution_adjust_intelligent_switch_summary">根據場景自動切換螢幕分辨率</string>
-    <string name="oneplus_screen_resolution_adjust_other_summary">3120×1440 超清畫質，顯示效果更加細膩</string>
+    <string name="oneplus_screen_resolution_adjust_intelligent_switch_summary">根據場景自動切換螢幕解析度</string>
+    <string name="oneplus_screen_resolution_adjust_other_summary">3120×1440 超清畫質，將略微增加耗電</string>
     <string name="oneplus_screen_timeout">螢幕已關閉</string>
     <string name="oneplus_screen_turnoff">優先通知喚醒螢幕</string>
     <string name="oneplus_screen_turnoff_summary">收到優先通知時自動喚醒螢幕</string>
@@ -3614,8 +3690,8 @@
     <string name="oneplus_search_keyword_wifi_display_settings_screen">投屏, 投射螢幕</string>
     <string name="oneplus_security_dashboard_summary">指紋、人臉解鎖、定位</string>
     <string name="oneplus_security_dashboard_summary_no_faceunlock">指紋、位置信息</string>
-    <string name="oneplus_security_detection_summary">對未知來源應用進行安全檢測</string>
-    <string name="oneplus_security_detection_title">一加安全檢測</string>
+    <string name="oneplus_security_detection_summary">对未知来源应用进行安全检测</string>
+    <string name="oneplus_security_detection_title">一加安全检测</string>
     <string name="oneplus_security_lock_settings_summary">解鎖選項，位置資訊，應用鎖</string>
     <string name="oneplus_security_lock_settings_title">安全和隱私</string>
     <string name="oneplus_security_settings_fingerprint_enroll_error_dialog_title">錄入失敗</string>
@@ -3634,6 +3710,7 @@
     <string name="oneplus_select_fingerprint_animation_effect_2">波紋</string>
     <string name="oneplus_select_fingerprint_animation_effect_3">霓裳</string>
     <string name="oneplus_select_fingerprint_animation_effect_4">漣漪</string>
+    <string name="oneplus_select_fingerprint_animation_effect_6">力量</string>
     <string name="oneplus_select_fingerprint_animation_effect_mcl">麥拉倫</string>
     <string name="oneplus_select_fingerprint_animation_effect_none">無動畫</string>
     <string name="oneplus_select_fingerprint_animation_effect_title">選擇指紋動畫效果</string>
@@ -3654,6 +3731,8 @@
     <string name="oneplus_shortcuts_preview">快捷方式預覽</string>
     <string name="oneplus_shortcuts_settings">快捷方式設定</string>
     <string name="oneplus_shortcuts_title">快捷方式</string>
+    <string name="oneplus_show_front_camera_display_summary">讓全屏應用可以鋪滿使用該區域</string>
+    <string name="oneplus_show_front_camera_display_title">顯示攝像頭區域</string>
     <string name="oneplus_show_notch_display_summary">讓全屏應用可以鋪滿使用凹形區域</string>
     <string name="oneplus_show_notch_display_title">顯示凹形區域</string>
     <string name="oneplus_show_pattern_and_password">顯示密碼或圖案</string>
@@ -3666,6 +3745,7 @@
     <string name="oneplus_sim1_ringtone_switch">SIM卡1來電鈴聲</string>
     <string name="oneplus_sim2_ringtone_switch">SIM卡2來電鈴聲</string>
     <string name="oneplus_simcard_title">SIM 卡</string>
+    <string name="oneplus_sla_down_load_app_summary">無線基地台或 Wi‑Fi 直連開啟情況下，暫不支持雙通道下載加速</string>
     <string name="oneplus_slate_font">一加瑩黑™</string>
     <string name="oneplus_sleep_standby_summary">當識別到用戶進入睡眠時，通過關閉網絡等方式進一步降低待機功耗。這會導致應用無法及時收到通知。</string>
     <string name="oneplus_sleep_standby_title">睡眠待機優化</string>
@@ -3685,6 +3765,8 @@
     <string name="oneplus_storage">儲存信息</string>
     <string name="oneplus_storage_settings_title">儲存</string>
     <string name="oneplus_sunrise_sunset">根據日出日落開啟</string>
+    <string name="oneplus_support_summary">快速上手、使用幫助、常見問題</string>
+    <string name="oneplus_support_title">提示和幫助</string>
     <string name="oneplus_supported_apps">支援程式</string>
     <string name="oneplus_suspend_notification">允許懸浮通知</string>
     <string name="oneplus_suspension_notice">懸浮通知</string>
@@ -3700,10 +3782,10 @@
     <string name="oneplus_system_settings_summary">無障礙，日期和時間，語言和輸入法</string>
     <string name="oneplus_system_settings_title">系統設定</string>
     <string name="oneplus_system_stability_add">加入系統穩定改進方案</string>
-    <string name="oneplus_system_stability_summary">允許一加用匿名方式在系統發生錯誤時取回系統日誌，用於分析問題并改善系統穩定性</string>
+    <string name="oneplus_system_stability_summary">允許一加用匿名方式在系統發生錯誤時取回系統日誌，用於分析問題並改善系統穩定性</string>
     <string name="oneplus_system_stability_title">系統穩定改進方案</string>
-    <string name="oneplus_system_vibrate">系統振動</string>
-    <string name="oneplus_theme_accent_color">輔⾊</string>
+    <string name="oneplus_system_vibrate">系統震動</string>
+    <string name="oneplus_theme_accent_color">輔色</string>
     <string name="oneplus_theme_accent_color_customization">自定義</string>
     <string name="oneplus_theme_accent_color_presetcolor">選擇預設顏色</string>
     <string name="oneplus_theme_accent_color_select">選擇輔色</string>
@@ -3722,7 +3804,7 @@
     <string name="oneplus_theme_fingerprint_snake_tip">此功能在啟⽤指紋後即可使⽤</string>
     <string name="oneplus_theme_font">字體</string>
     <string name="oneplus_theme_font_content">與世界分享品質科技</string>
-    <string name="oneplus_theme_icon_pack">圖示套件</string>
+    <string name="oneplus_theme_icon_pack">應用程式圖示</string>
     <string name="oneplus_theme_lock_screen_customization">鎖屏個性化</string>
     <string name="oneplus_theme_preset">預設主題</string>
     <string name="oneplus_theme_preset_color">活潑</string>
@@ -3731,18 +3813,18 @@
     <string name="oneplus_theme_preset_mcl">麥拉倫</string>
     <string name="oneplus_theme_preset_summary">為你提供成整套的全局主題，包括強調色、色調等內容</string>
     <string name="oneplus_theme_preset_summary_tmp">為你提供成整套的全局主題，包括桌布、強調色、色調等內容</string>
-    <string name="oneplus_theme_shape">形狀</string>
+    <string name="oneplus_theme_shape">系統圖示</string>
     <string name="oneplus_theme_shape_effect_round">圓形</string>
     <string name="oneplus_theme_shape_effect_round_rectangle">圓方形</string>
     <string name="oneplus_theme_shape_effect_square">方形</string>
     <string name="oneplus_theme_shape_effect_teardrop">淚珠形</string>
     <string name="oneplus_theme_shape_effect_title">選擇形狀</string>
     <string name="oneplus_theme_system_customization">系統個性化</string>
-    <string name="oneplus_theme_tone">⾊調</string>
-    <string name="oneplus_theme_tone_effect_color">彩⾊</string>
-    <string name="oneplus_theme_tone_effect_dark">暗⾊</string>
-    <string name="oneplus_theme_tone_effect_light">⽩⾊</string>
-    <string name="oneplus_theme_tone_effect_title">選擇⾊調</string>
+    <string name="oneplus_theme_tone">色調</string>
+    <string name="oneplus_theme_tone_effect_color">彩色</string>
+    <string name="oneplus_theme_tone_effect_dark">暗色</string>
+    <string name="oneplus_theme_tone_effect_light">白色</string>
+    <string name="oneplus_theme_tone_effect_title">選擇色調</string>
     <string name="oneplus_theme_wallpaper">桌布</string>
     <string name="oneplus_three_screenshots_enable_summary">三指上/下滑動，截取螢幕</string>
     <string name="oneplus_three_screenshots_enable_title">三指截屏</string>
@@ -3762,7 +3844,7 @@
     <string name="oneplus_tools_summary_no_gamingmode">應用鎖、應用雙開</string>
     <string name="oneplus_tools_title">工具箱</string>
     <string name="oneplus_top_level_accounts_summary">一加帳號、其他帳號</string>
-    <string name="oneplus_top_level_apps_and_notifs_summary">預設應用程式、權限</string>
+    <string name="oneplus_top_level_apps_and_notifs_summary">預設應用程式、通知、權限</string>
     <string name="oneplus_top_level_buttons_and_gestures_summary">三段式開關、虛擬按鍵和全屏手勢、快捷手勢</string>
     <string name="oneplus_top_level_cloud_h2_summary">與雲端同步數據、找回手機</string>
     <string name="oneplus_top_level_cloud_o2_summary">與雲端同步數據</string>
@@ -3803,9 +3885,10 @@
     <string name="oneplus_vibration_settings_soc_tri_state">震動模式</string>
     <string name="oneplus_vibration_settings_soc_tri_state_summary">禁止來電和通知發出聲音，但允許震動（鬧鐘除外）</string>
     <string name="oneplus_vibration_summary">鬧鐘始終會響鈴</string>
-    <string name="oneplus_video_enhancer">視頻顯示增強</string>
-    <string name="oneplus_video_enhancer_footer">在播放視頻時，使畫面色彩更加生動、鮮豔</string>
+    <string name="oneplus_video_enhancer">鮮明視覺效果</string>
+    <string name="oneplus_video_enhancer_footer">在播放視頻時，增強引擎會根據畫面動態優化效果，使其更加生動，鮮活</string>
     <string name="oneplus_video_enhancer_summary">在播放視頻時，使色彩更加生動和鮮豔</string>
+    <string name="oneplus_voice_assistant">語音助理</string>
     <string name="oneplus_voice_assistant_title" />
     <string name="oneplus_volume_keys_adjust">音量鍵默認調節</string>
     <string name="oneplus_volume_keys_adjust_media">媒體音量</string>
@@ -3814,6 +3897,10 @@
     <string name="oneplus_wallpaper_settings_title_lockscreen">螢幕鎖定壁紙</string>
     <string name="oneplus_weak_text_reminding">文字提示</string>
     <string name="oneplus_weak_text_reminding_summary">通知將以文字的形式顯示，以減少打擾</string>
+    <string name="oneplus_wifi_6_standard_hotspot_cancel">取消</string>
+    <string name="oneplus_wifi_6_standard_hotspot_enable">開啟</string>
+    <string name="oneplus_wifi_6_standard_hotspot_title">使用 Wi‑Fi 6 標準無線基地台</string>
+    <string name="oneplus_wifi_6_standard_hotspot_warning">部分接收裝置可能不相容 Wi‑Fi 6 標準無線基地台，是否確認開啟？</string>
     <string name="oneplus_wifi_ap_error">請插入SIM卡</string>
     <string name="oneplus_wifi_display_settings_title">投射螢幕</string>
     <string name="oneplus_wifi_hidden_network_warning">"如果您的路由器設定為不廣播SSID，您需要在此選擇\"是\"才能成功連線到該隱藏網路。
@@ -3836,13 +3923,15 @@
     <string name="oneplus_zen_mode_automation_settings_title">自動開啟設定</string>
     <string name="oneplus_zen_mode_duration_settings_title">勿擾時間長度</string>
     <string name="oneplus_zen_mode_duration_summary_always_prompt">每次都詢問 (除非自動開啟)</string>
+    <string name="oneplus_zen_mode_duration_summary_forever">直到你關閉為止 (除非自動開啟)</string>
+    <string name="oneplus_zen_mode_duration_summary_time_minutes">%d 分鐘 (除非自動開啟)</string>
     <string name="oneplus_zen_mode_footer_info">開啟勿擾模式時，系統會將音效和震動設為靜音（你在上方設定的例外狀況除外）</string>
     <string name="oneplus_zen_mode_mode_manual_switch_summary">你可以手動開啟勿擾模式</string>
     <string name="oneplus_zen_mode_settings">模式設定</string>
     <string name="oneplus_zen_mode_switch">立即開啟勿擾模式</string>
     <string name="oneplus_zen_mode_walloftext">開啟勿擾模式時，系統將會將音效和震動設為靜音（你在下方設定的例外狀況除外）</string>
     <string name="oneplus_zen_sound_title">其他音效</string>
-    <string name="onplus_hardware_version_info">硬件版本</string>
+    <string name="onplus_hardware_version_info">硬體版本</string>
     <string name="onplus_software_version_info">軟件版本</string>
     <string name="onscreen_keyboard_settings_summary">螢幕鍵盤設定</string>
     <string name="op_accessibility_quick_settings_page">第 %1$d 頁，共 %2$d 頁</string>
@@ -3851,23 +3940,25 @@
     <string name="op_android_mode_cannot_change_color_accent">Android 主題下只能使用系統色</string>
     <string name="op_android_mode_title">Android主題</string>
     <string name="op_app_already_uninstalled">該程式已解除安裝</string>
-    <string name="op_app_security_check_text_legal_oppo">相關雲中飛隱私政策可參閱：</string>
-    <string name="op_app_security_check_text_legal_oppo_link">雲中飛隱私政策</string>
-    <string name="op_app_security_check_text_legal_tencent">相關騰訊隱私政策可參閱：</string>
-    <string name="op_app_security_check_text_legal_tencent_link">騰訊隱私政策</string>
-    <string name="op_app_security_check_text_summary1_1">一加安全檢測功能開啟後，會在您安裝應用程式時對安裝包進行安全掃描，為您提供更好的裝置安全性保障。</string>
-    <string name="op_app_security_check_text_summary1_2">當安全檢測結果存在病毒、廣告等風險或其他未知風險，以及商店內有更高的正式版本時，將推薦您到一加商店安裝官方正式的安全版本。</string>
-    <string name="op_app_security_check_text_summary2_1">一加安全檢測功能由騰訊科技（深圳）有限公司（以下統稱“騰訊“）和深圳市雲中飛網路科技有限公司及其關係企業（以下統稱“雲中飛”）提供技術支援。</string>
-    <string name="op_app_security_check_text_summary2_2">"為實現此功能：
-騰訊需採集您的 UUID、手機型號、Android 版本號、所在地區，以方便解決您在產品的使用過程中所遇到的問題；
-雲中飛需採集您的機型、IMEI、Android 版本號、運營商資訊、所在地區，以便更高效地運營以及為您提供最佳的產品體驗；
-一加在使用過程中不會收集您的個人資料，僅需要獲取您的裝置聯網許可權。"</string>
-    <string name="op_app_security_check_text_summary2_3">您可以隨時通過關閉按鈕停止使用一加安全檢測功能，路徑： 設定>安全和鎖屏 ，選擇關閉“一加安全檢測”即可。</string>
-    <string name="op_app_security_check_text_title">我們為您提供更好的裝置安全性保障</string>
-    <string name="op_app_security_check_text_title1">一．瞭解一加安全檢測</string>
-    <string name="op_app_security_check_text_title2">二．利用資料資訊打造更好的服務</string>
-    <string name="op_apps">應用程序</string>
+    <string name="op_app_security_check_text_legal_oppo">相关欢太隐私政策可参阅：</string>
+    <string name="op_app_security_check_text_legal_oppo_link">欢太隐私政策</string>
+    <string name="op_app_security_check_text_legal_tencent">相关腾讯隐私政策可参阅：</string>
+    <string name="op_app_security_check_text_legal_tencent_link">腾讯隐私政策</string>
+    <string name="op_app_security_check_text_summary1_1">一加安全检测功能开启后，会在您安装应用程序时对安装包进行安全扫描，为您提供更好的设备安全性保障。</string>
+    <string name="op_app_security_check_text_summary1_2">当安全检测结果存在病毒、广告等风险或其他未知风险，以及商店内有更高的正式版本时，将推荐您到一加商店安装官方正式的安全版本。</string>
+    <string name="op_app_security_check_text_summary2_1">一加安全检测功能由腾讯科技（深圳）有限公司（以下统称“腾讯”）和广东欢太科技有限公司及其关联公司（以下简称“欢太”）提供技术支持。</string>
+    <string name="op_app_security_check_text_summary2_2">"为实现此功能：
+腾讯需采集您的 UUID、手机型号、Android 版本号、所在地区，以方便解决您在产品的使用过程中所遇到的问题；
+欢太需采集您的机型、IMEI、Android 版本号，以便更高效地运营以及为您提供最佳的产品体验；
+一加在使用过程中不会收集您的个人数据，仅需要获取您的设备联网权限。"</string>
+    <string name="op_app_security_check_text_summary2_3">您可以随时通过关闭按钮停止使用一加安全检测功能，路径： 设置>安全和锁屏 ，选择关闭 “一加安全检测” 即可。</string>
+    <string name="op_app_security_check_text_title">我们为您提供更好的设备安全性保障</string>
+    <string name="op_app_security_check_text_title1">一．了解一加安全检测</string>
+    <string name="op_app_security_check_text_title2">二．利用数据信息打造更好的服务</string>
+    <string name="op_apps">應用程式</string>
     <string name="op_audio_settings">耳機音效調節</string>
+    <string name="op_auto_power_saving">智慧型省電</string>
+    <string name="op_auto_power_saving_summary">根據場景自動切換解析度，更省電</string>
     <string name="op_battery_info_awake_battery">電池的清醒時間：</string>
     <string name="op_battery_info_awake_plugged">充電時的清醒時間：</string>
     <string name="op_battery_info_health_cold">冷</string>
@@ -3906,7 +3997,7 @@
     <string name="op_battery_info_voltage_units">mV</string>
     <string name="op_buttons_settings">按鍵</string>
     <string name="op_charging_optimization">充電優化</string>
-    <string name="op_charging_optimization_summary">根據你的使用習慣優化充電方式</string>
+    <string name="op_charging_optimization_summary">根據你的使用習慣優化充電方式，降低電池的負載，以延長電池壽命</string>
     <string name="op_choose_lock_generic_title">請先選擇備用解鎖方式</string>
     <string name="op_cloud_service_summary">同步你的聯絡人，便籤，照片等</string>
     <string name="op_cloud_service_title">雲端服務</string>
@@ -3982,7 +4073,7 @@
     <string name="op_sms_ringtone">簡訊鈴聲</string>
     <string name="op_sound_settings">聲音</string>
     <string name="op_starwar_mode_cannot_change_color_accent">Star Wars 主題下只能使用系統色</string>
-    <string name="op_starwar_mode_title">Star Wars 主题</string>
+    <string name="op_starwar_mode_title">Star Wars 主題</string>
     <string name="op_storage">儲存和記憶體</string>
     <string name="op_system">系統</string>
     <string name="op_system_dashboard_summary">語言、時間、重設、更新</string>
@@ -4008,7 +4099,7 @@
     <string name="openid_reset">重設識別碼</string>
     <string name="opening_paragraph_delete_profile_unknown_company">這個工作資料夾是由下列應用程式管理：</string>
     <string name="operator_warning">電信業者與裝置的數據計算方式可能有所不同</string>
-    <string name="optimize_summery">控制背景行為，優化電池續航</string>
+    <string name="optimize_summery">限制應用後臺活動，以延長裝置續航時間，應用通知，定位等功能可能受影響</string>
     <string name="orb_search_action">搜尋動作</string>
     <string name="osu_completing_sign_up">正在完成註冊程序…</string>
     <string name="osu_connect_failed">無法連線</string>
@@ -4082,6 +4173,9 @@
     <string name="power_discharging_duration_enhanced">根據你的使用情形，目前電量為 %2$s，還能使用約 %1$s</string>
     <string name="power_flashlight">手電筒</string>
     <string name="power_idle">手機閒置</string>
+    <string name="power_menu">關機選單</string>
+    <string name="power_off">關機</string>
+    <string name="power_off_summary">你的裝置將會被關閉</string>
     <string name="power_overcounted">估計過高</string>
     <string name="power_phone">語音通話</string>
     <string name="power_remaining_charging_duration_only">再過 %1$s就能完成充電</string>
@@ -4395,6 +4489,7 @@ UT 介面：%5$s"</string>
     <string name="retail_demo_reset_next">下一步</string>
     <string name="retail_demo_reset_title">請輸入密碼</string>
     <string name="retry">重試</string>
+    <string name="reverse_wireless_charging_category">無線充電</string>
     <string name="ring_volume_option_title">鈴聲音量</string>
     <string name="ring_volume_title">鈴聲音量</string>
     <string name="ringtone_title">電話鈴聲</string>
@@ -4535,6 +4630,7 @@ UT 介面：%5$s"</string>
     <string name="search_bar_account_avatar_content_description" />
     <string name="search_menu">搜尋設定</string>
     <string name="search_menu_title">搜尋</string>
+    <string name="search_network_extenders">寻找网络扩展</string>
     <string name="search_results_title">設定</string>
     <string name="search_settings">搜尋</string>
     <string name="searchview_description_clear">清除查詢</string>
@@ -4549,7 +4645,7 @@ UT 介面：%5$s"</string>
     <string name="security_enable_widgets_title">啟用小工具</string>
     <string name="security_passwords_title">隱私</string>
     <string name="security_patch">Android 安全性修補程式等級</string>
-    <string name="security_patch_level">安全補丁程序級別：%s</string>
+    <string name="security_patch_level">安全補丁程式級別：%s</string>
     <string name="security_settings_face_enroll_dialog_ok">確定</string>
     <string name="security_settings_face_enroll_done">完成</string>
     <string name="security_settings_face_enroll_education_message" />
@@ -4654,6 +4750,7 @@ UT 介面：%5$s"</string>
     <string name="select_automatically">自動選取網路</string>
     <string name="select_day">選取月份和日期</string>
     <string name="select_device_admin_msg">裝置管理員應用程式</string>
+    <string name="select_function">功能選擇</string>
     <string name="select_hours">選取小時數</string>
     <string name="select_logd_size_dialog_title">選取每個記錄緩衝區的記錄器空間</string>
     <string name="select_logd_size_title">記錄器緩衝區空間</string>
@@ -4827,7 +4924,7 @@ PIN 碼可能不正確。"</string>
     <string name="smart_battery_manager_title">智慧電池管理</string>
     <string name="smart_battery_summary">針對不常使用的應用程式限制電池用量</string>
     <string name="smart_battery_title">使用智慧電池管理</string>
-    <string name="smart_control_summery">依據程式的特點和你的使用習慣自動調整背景耗電策略，以獲得平衡的體驗。</string>
+    <string name="smart_control_summery">依據程式的特點和你的使用習慣自動調整背景耗電策略，以獲得平衡的體驗</string>
     <string name="smart_control_title">智慧控制</string>
     <string name="smart_notifications_title">自動調整通知</string>
     <string name="sms_access_restriction_enabled">限制簡訊和通話記錄存取權</string>
@@ -4839,6 +4936,7 @@ PIN 碼可能不正確。"</string>
     <string name="sms_messages_title">簡訊</string>
     <string name="sms_preference">簡訊偏好設定</string>
     <string name="snooze_options_title">允許顯示通知延後選項</string>
+    <string name="softap_tethering_footer_info">使用熱點和網路共享功能，讓其他設備能通過您的行動數據或者 Wi-Fi 網路連接到互聯網。應用還可以通過創建熱點，與附近的設備共享內容</string>
     <string name="sometimes_running">有時執行 (%s)</string>
     <string name="sort_avg_use">依平均用量排序</string>
     <string name="sort_max_use">依最高用量排序</string>
@@ -5405,7 +5503,13 @@ PIN 碼可能不正確。"</string>
     <string name="unrestricted_data_saver">數據用量不受限</string>
     <string name="unsupported_setting_summary">這支手機不支援這項設定</string>
     <string name="update_prl">更新 PRL</string>
-    <string name="update_profile">更新配置文件</string>
+    <string name="update_profile">更新配置檔案</string>
+    <string name="upstream_type_auto">自動切換</string>
+    <string name="upstream_type_auto_summary">Wi-Fi 連接斷開後將自動切換至行動數據分享</string>
+    <string name="upstream_type_cell">僅行動數據共享</string>
+    <string name="upstream_type_cell_summary">行動數據連接斷開後，分享斷開</string>
+    <string name="upstream_type_wifi">僅 Wi-Fi 共享</string>
+    <string name="upstream_type_wifi_summary">Wi-Fi 連接斷開後，分享斷開</string>
     <string name="usage">使用情況</string>
     <string name="usage_access">使用記錄存取權</string>
     <string name="usage_access_description">具有使用記錄存取權的應用程式可以追蹤你使用的其他應用程式與頻率，以及你的電信業者、語言設定和其他詳細資料。</string>
@@ -5704,6 +5808,7 @@ PIN 碼可能不正確。"</string>
     <string name="wallpaper_settings_title">桌布</string>
     <string name="wallpaper_suggestion_summary">設定個人化螢幕</string>
     <string name="wallpaper_suggestion_title">變更桌布</string>
+    <string name="warranty_date_code">保修日期代码</string>
     <string name="web_action_enable_summary">即使未安裝應用程式，也能在當中開啟連結</string>
     <string name="web_action_enable_title">免安裝應用程式</string>
     <string name="web_action_section_title">免安裝應用程式</string>
@@ -6015,6 +6120,8 @@ PIN 碼可能不正確。"</string>
     <string name="wifi_tether_failed_subtext">可攜式 Wi-Fi 無線基地台發生錯誤</string>
     <string name="wifi_tether_starting">正在開啟無線基地台…</string>
     <string name="wifi_tether_stopping">正在關閉無線基地台…</string>
+    <string name="wifi_tether_upstream_network_type_config">共享設置</string>
+    <string name="wifi_tether_upstream_network_type_title">共享設置</string>
     <string name="wifi_turned_on_message">Wi‑Fi 已開啟</string>
     <string name="wifi_unchanged">(未變更)</string>
     <string name="wifi_unmetered_label">非計量付費</string>

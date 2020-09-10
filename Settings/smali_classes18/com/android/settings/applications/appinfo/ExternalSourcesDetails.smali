@@ -66,7 +66,7 @@
 
     if-eqz v3, :cond_0
 
-    const v3, 0x7f1205ef
+    const v3, 0x7f120615
 
     invoke-virtual {p0, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -77,7 +77,7 @@
     :cond_0
     if-eqz v2, :cond_1
 
-    const v3, 0x7f1205ed
+    const v3, 0x7f120613
 
     invoke-virtual {p0, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -110,12 +110,12 @@
 
     if-eqz v4, :cond_2
 
-    const v4, 0x7f120197
+    const v4, 0x7f1201a7
 
     goto :goto_0
 
     :cond_2
-    const v4, 0x7f120198
+    const v4, 0x7f1201a8
 
     :goto_0
     invoke-virtual {p0, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
@@ -346,7 +346,7 @@
 
     iget-object v0, p0, Lcom/android/settings/applications/appinfo/ExternalSourcesDetails;->mSwitchPref:Lcom/android/settingslib/RestrictedSwitchPreference;
 
-    const v3, 0x7f1205ed
+    const v3, 0x7f120613
 
     invoke-virtual {v0, v3}, Lcom/android/settingslib/RestrictedSwitchPreference;->setSummary(I)V
 

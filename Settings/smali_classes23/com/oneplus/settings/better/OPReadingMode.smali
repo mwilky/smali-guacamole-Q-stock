@@ -1,5 +1,5 @@
 .class public Lcom/oneplus/settings/better/OPReadingMode;
-.super Lcom/android/settings/SettingsPreferenceFragment;
+.super Lcom/android/settings/dashboard/DashboardFragment;
 .source "OPReadingMode.java"
 
 # interfaces
@@ -15,8 +15,6 @@
 
 .field private static final KEY_READING_MODE_ADD_APPS:Ljava/lang/String; = "reading_mode_add_apps"
 
-.field private static final KEY_READING_MODE_SUMMARY:Ljava/lang/String; = "reading_mode_summary"
-
 .field private static final KEY_READING_MODE_TURN_ON:Ljava/lang/String; = "reading_mode_turn_on"
 
 .field public static final READING_MODE_STATUS:Ljava/lang/String; = "reading_mode_status"
@@ -28,6 +26,8 @@
 .field public static final SEARCH_INDEX_DATA_PROVIDER:Lcom/android/settings/search/BaseSearchIndexProvider;
 
 .field private static final TAG:Ljava/lang/String; = "OPReadingMode"
+
+.field private static mReadingModeEffectManager:Lcom/oneplus/settings/better/ReadingModeEffectManager;
 
 
 # instance fields
@@ -47,8 +47,6 @@
 
 .field private mBlockPeekNotificationsPreference:Landroidx/preference/SwitchPreference;
 
-.field private mContentObserver:Landroid/database/ContentObserver;
-
 .field private mContext:Landroid/content/Context;
 
 .field private mHandler:Landroid/os/Handler;
@@ -57,20 +55,16 @@
 
 .field private mPackageManager:Landroid/content/pm/PackageManager;
 
-.field private mReadingModSummary:Lcom/android/settings/fuelgauge/WallOfTextPreference;
-
 .field private mReadingModeAddAppsPreference:Landroidx/preference/Preference;
-
-.field private mReadingModeTurnOnPreference:Landroidx/preference/SwitchPreference;
 
 
 # direct methods
 .method static constructor <clinit>()V
     .locals 1
 
-    new-instance v0, Lcom/oneplus/settings/better/OPReadingMode$3;
+    new-instance v0, Lcom/oneplus/settings/better/OPReadingMode$2;
 
-    invoke-direct {v0}, Lcom/oneplus/settings/better/OPReadingMode$3;-><init>()V
+    invoke-direct {v0}, Lcom/oneplus/settings/better/OPReadingMode$2;-><init>()V
 
     sput-object v0, Lcom/oneplus/settings/better/OPReadingMode;->SEARCH_INDEX_DATA_PROVIDER:Lcom/android/settings/search/BaseSearchIndexProvider;
 
@@ -80,7 +74,7 @@
 .method public constructor <init>()V
     .locals 2
 
-    invoke-direct {p0}, Lcom/android/settings/SettingsPreferenceFragment;-><init>()V
+    invoke-direct {p0}, Lcom/android/settings/dashboard/DashboardFragment;-><init>()V
 
     new-instance v0, Ljava/util/ArrayList;
 
@@ -97,16 +91,6 @@
     invoke-direct {v0, p0, v1}, Lcom/oneplus/settings/better/OPReadingMode$1;-><init>(Lcom/oneplus/settings/better/OPReadingMode;Landroid/os/Looper;)V
 
     iput-object v0, p0, Lcom/oneplus/settings/better/OPReadingMode;->mHandler:Landroid/os/Handler;
-
-    new-instance v0, Lcom/oneplus/settings/better/OPReadingMode$2;
-
-    new-instance v1, Landroid/os/Handler;
-
-    invoke-direct {v1}, Landroid/os/Handler;-><init>()V
-
-    invoke-direct {v0, p0, v1}, Lcom/oneplus/settings/better/OPReadingMode$2;-><init>(Lcom/oneplus/settings/better/OPReadingMode;Landroid/os/Handler;)V
-
-    iput-object v0, p0, Lcom/oneplus/settings/better/OPReadingMode;->mContentObserver:Landroid/database/ContentObserver;
 
     return-void
 .end method
@@ -143,20 +127,18 @@
     return-object v0
 .end method
 
-.method static synthetic access$400(Lcom/oneplus/settings/better/OPReadingMode;)Landroid/app/AppOpsManager;
+.method static synthetic access$400()Lcom/oneplus/settings/better/ReadingModeEffectManager;
     .locals 1
 
-    iget-object v0, p0, Lcom/oneplus/settings/better/OPReadingMode;->mAppOpsManager:Landroid/app/AppOpsManager;
+    sget-object v0, Lcom/oneplus/settings/better/OPReadingMode;->mReadingModeEffectManager:Lcom/oneplus/settings/better/ReadingModeEffectManager;
 
     return-object v0
 .end method
 
-.method static synthetic access$500(Lcom/oneplus/settings/better/OPReadingMode;)Landroid/content/ContentResolver;
+.method static synthetic access$500(Lcom/oneplus/settings/better/OPReadingMode;)Landroid/app/AppOpsManager;
     .locals 1
 
-    invoke-virtual {p0}, Lcom/oneplus/settings/better/OPReadingMode;->getContentResolver()Landroid/content/ContentResolver;
-
-    move-result-object v0
+    iget-object v0, p0, Lcom/oneplus/settings/better/OPReadingMode;->mAppOpsManager:Landroid/app/AppOpsManager;
 
     return-object v0
 .end method
@@ -167,14 +149,6 @@
     invoke-virtual {p0}, Lcom/oneplus/settings/better/OPReadingMode;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
-
-    return-object v0
-.end method
-
-.method static synthetic access$700(Lcom/oneplus/settings/better/OPReadingMode;)Landroidx/preference/SwitchPreference;
-    .locals 1
-
-    iget-object v0, p0, Lcom/oneplus/settings/better/OPReadingMode;->mReadingModeTurnOnPreference:Landroidx/preference/SwitchPreference;
 
     return-object v0
 .end method
@@ -210,6 +184,50 @@
 
 
 # virtual methods
+.method protected createPreferenceControllers(Landroid/content/Context;)Ljava/util/List;
+    .locals 3
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Landroid/content/Context;",
+            ")",
+            "Ljava/util/List<",
+            "Lcom/android/settingslib/core/AbstractPreferenceController;",
+            ">;"
+        }
+    .end annotation
+
+    new-instance v0, Ljava/util/ArrayList;
+
+    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
+
+    new-instance v1, Lcom/oneplus/settings/better/OPReadingModeTurnOnPreferenceController;
+
+    invoke-virtual {p0}, Lcom/oneplus/settings/better/OPReadingMode;->getSettingsLifecycle()Lcom/android/settingslib/core/lifecycle/Lifecycle;
+
+    move-result-object v2
+
+    invoke-direct {v1, p1, v2}, Lcom/oneplus/settings/better/OPReadingModeTurnOnPreferenceController;-><init>(Landroid/content/Context;Lcom/android/settingslib/core/lifecycle/Lifecycle;)V
+
+    invoke-virtual {p0}, Lcom/oneplus/settings/better/OPReadingMode;->getSettingsLifecycle()Lcom/android/settingslib/core/lifecycle/Lifecycle;
+
+    move-result-object v2
+
+    invoke-virtual {v2, v1}, Lcom/android/settingslib/core/lifecycle/Lifecycle;->addObserver(Landroidx/lifecycle/LifecycleObserver;)V
+
+    invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    return-object v0
+.end method
+
+.method protected getLogTag()Ljava/lang/String;
+    .locals 1
+
+    const-string v0, "OPReadingMode"
+
+    return-object v0
+.end method
+
 .method public getMetricsCategory()I
     .locals 1
 
@@ -218,14 +236,18 @@
     return v0
 .end method
 
-.method public onCreate(Landroid/os/Bundle;)V
-    .locals 4
-
-    invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
+.method protected getPreferenceScreenResId()I
+    .locals 1
 
     const v0, 0x7f1600af
 
-    invoke-virtual {p0, v0}, Lcom/oneplus/settings/better/OPReadingMode;->addPreferencesFromResource(I)V
+    return v0
+.end method
+
+.method public onCreate(Landroid/os/Bundle;)V
+    .locals 4
+
+    invoke-super {p0, p1}, Lcom/android/settings/dashboard/DashboardFragment;->onCreate(Landroid/os/Bundle;)V
 
     invoke-virtual {p0}, Lcom/oneplus/settings/better/OPReadingMode;->getActivity()Landroidx/fragment/app/FragmentActivity;
 
@@ -261,23 +283,6 @@
 
     iput-object v0, p0, Lcom/oneplus/settings/better/OPReadingMode;->mOPApplicationLoader:Lcom/oneplus/settings/apploader/OPApplicationLoader;
 
-    const-string v0, "reading_mode_turn_on"
-
-    invoke-virtual {p0, v0}, Lcom/oneplus/settings/better/OPReadingMode;->findPreference(Ljava/lang/CharSequence;)Landroidx/preference/Preference;
-
-    move-result-object v0
-
-    check-cast v0, Landroidx/preference/SwitchPreference;
-
-    iput-object v0, p0, Lcom/oneplus/settings/better/OPReadingMode;->mReadingModeTurnOnPreference:Landroidx/preference/SwitchPreference;
-
-    iget-object v0, p0, Lcom/oneplus/settings/better/OPReadingMode;->mReadingModeTurnOnPreference:Landroidx/preference/SwitchPreference;
-
-    if-eqz v0, :cond_0
-
-    invoke-virtual {v0, p0}, Landroidx/preference/SwitchPreference;->setOnPreferenceChangeListener(Landroidx/preference/Preference$OnPreferenceChangeListener;)V
-
-    :cond_0
     const-string v0, "auto_turn_on_apps"
 
     invoke-virtual {p0, v0}, Lcom/oneplus/settings/better/OPReadingMode;->findPreference(Ljava/lang/CharSequence;)Landroidx/preference/Preference;
@@ -298,11 +303,11 @@
 
     iget-object v0, p0, Lcom/oneplus/settings/better/OPReadingMode;->mReadingModeAddAppsPreference:Landroidx/preference/Preference;
 
-    if-eqz v0, :cond_1
+    if-eqz v0, :cond_0
 
     invoke-virtual {v0, p0}, Landroidx/preference/Preference;->setOnPreferenceClickListener(Landroidx/preference/Preference$OnPreferenceClickListener;)V
 
-    :cond_1
+    :cond_0
     const-string v0, "block_peek_notifications"
 
     invoke-virtual {p0, v0}, Lcom/oneplus/settings/better/OPReadingMode;->findPreference(Ljava/lang/CharSequence;)Landroidx/preference/Preference;
@@ -315,120 +320,36 @@
 
     iget-object v0, p0, Lcom/oneplus/settings/better/OPReadingMode;->mBlockPeekNotificationsPreference:Landroidx/preference/SwitchPreference;
 
-    if-eqz v0, :cond_2
+    if-eqz v0, :cond_1
 
     invoke-virtual {v0, p0}, Landroidx/preference/SwitchPreference;->setOnPreferenceChangeListener(Landroidx/preference/Preference$OnPreferenceChangeListener;)V
 
-    :cond_2
-    const-string v0, "reading_mode_summary"
-
-    invoke-virtual {p0, v0}, Lcom/oneplus/settings/better/OPReadingMode;->findPreference(Ljava/lang/CharSequence;)Landroidx/preference/Preference;
-
-    move-result-object v0
-
-    check-cast v0, Lcom/android/settings/fuelgauge/WallOfTextPreference;
-
-    iput-object v0, p0, Lcom/oneplus/settings/better/OPReadingMode;->mReadingModSummary:Lcom/android/settings/fuelgauge/WallOfTextPreference;
-
-    invoke-static {}, Lcom/oneplus/settings/utils/OPUtils;->isSupportMMDisplayColorScreenMode()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_3
-
-    iget-object v1, p0, Lcom/oneplus/settings/better/OPReadingMode;->mReadingModSummary:Lcom/android/settings/fuelgauge/WallOfTextPreference;
-
-    sget-object v2, Lcom/oneplus/settings/SettingsBaseApplication;->mApplication:Landroid/app/Application;
-
-    const v3, 0x7f120e92
-
-    invoke-virtual {v2, v3}, Landroid/app/Application;->getText(I)Ljava/lang/CharSequence;
-
-    move-result-object v2
-
-    invoke-virtual {v1, v2}, Lcom/android/settings/fuelgauge/WallOfTextPreference;->setSummary(Ljava/lang/CharSequence;)V
-
-    :cond_3
+    :cond_1
     return-void
 .end method
 
 .method public onPause()V
-    .locals 2
+    .locals 0
 
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onPause()V
-
-    invoke-virtual {p0}, Lcom/oneplus/settings/better/OPReadingMode;->getContentResolver()Landroid/content/ContentResolver;
-
-    move-result-object v0
-
-    iget-object v1, p0, Lcom/oneplus/settings/better/OPReadingMode;->mContentObserver:Landroid/database/ContentObserver;
-
-    invoke-virtual {v0, v1}, Landroid/content/ContentResolver;->unregisterContentObserver(Landroid/database/ContentObserver;)V
+    invoke-super {p0}, Lcom/android/settings/dashboard/DashboardFragment;->onPause()V
 
     return-void
 .end method
 
 .method public onPreferenceChange(Landroidx/preference/Preference;Ljava/lang/Object;)Z
-    .locals 6
+    .locals 5
 
     invoke-virtual {p1}, Landroidx/preference/Preference;->getKey()Ljava/lang/String;
 
     move-result-object v0
 
-    const-string v1, "reading_mode_turn_on"
-
-    invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v1
-
-    const/4 v2, -0x2
-
-    if-eqz v1, :cond_1
-
-    move-object v1, p2
-
-    check-cast v1, Ljava/lang/Boolean;
-
-    invoke-virtual {v1}, Ljava/lang/Boolean;->booleanValue()Z
-
-    move-result v1
-
-    const-string v3, "reading_mode_status_manual"
-
-    if-eqz v1, :cond_0
-
-    invoke-virtual {p0}, Lcom/oneplus/settings/better/OPReadingMode;->getContentResolver()Landroid/content/ContentResolver;
-
-    move-result-object v4
-
-    const-string v5, "force-on"
-
-    invoke-static {v4, v3, v5, v2}, Landroid/provider/Settings$System;->putStringForUser(Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;I)Z
-
-    goto :goto_0
-
-    :cond_0
-    invoke-virtual {p0}, Lcom/oneplus/settings/better/OPReadingMode;->getContentResolver()Landroid/content/ContentResolver;
-
-    move-result-object v4
-
-    const-string v5, "force-off"
-
-    invoke-static {v4, v3, v5, v2}, Landroid/provider/Settings$System;->putStringForUser(Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;I)Z
-
-    :goto_0
-    invoke-static {}, Lcom/oneplus/settings/utils/OPUtils;->sendAppTrackerForReadingMode()V
-
-    goto :goto_1
-
-    :cond_1
     const-string v1, "block_peek_notifications"
 
     invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v1
 
-    if-eqz v1, :cond_2
+    if-eqz v1, :cond_0
 
     move-object v1, p2
 
@@ -440,28 +361,24 @@
 
     invoke-virtual {p0}, Lcom/oneplus/settings/better/OPReadingMode;->getContentResolver()Landroid/content/ContentResolver;
 
-    move-result-object v3
+    move-result-object v2
+
+    const/4 v3, -0x2
 
     const-string v4, "reading_mode_block_notification"
 
-    invoke-static {v3, v4, v1, v2}, Landroid/provider/Settings$System;->putIntForUser(Landroid/content/ContentResolver;Ljava/lang/String;II)Z
+    invoke-static {v2, v4, v1, v3}, Landroid/provider/Settings$System;->putIntForUser(Landroid/content/ContentResolver;Ljava/lang/String;II)Z
 
     invoke-static {}, Lcom/oneplus/settings/utils/OPUtils;->sendAppTrackerForReadingModeNotification()V
 
-    goto :goto_2
-
-    :cond_2
-    :goto_1
-    nop
-
-    :goto_2
+    :cond_0
     const/4 v1, 0x1
 
     return v1
 .end method
 
 .method public onPreferenceClick(Landroidx/preference/Preference;)Z
-    .locals 3
+    .locals 4
 
     invoke-virtual {p1}, Landroidx/preference/Preference;->getKey()Ljava/lang/String;
 
@@ -475,28 +392,57 @@
 
     if-eqz v0, :cond_0
 
-    const-string v0, "OPReadingMode"
+    const/4 v0, 0x0
 
-    const-string v1, "KEY_READING_MODE_ADD_APPS"
+    :try_start_0
+    new-instance v1, Landroid/content/Intent;
 
-    invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    const-string v2, "com.android.settings.action.READINGMODE_EFFECT_SELECT"
 
-    new-instance v0, Landroid/content/Intent;
+    invoke-direct {v1, v2}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    const-string v1, "oneplus.intent.action.ONEPLUS_GAME_READ_APP_LIST_ACTION"
+    move-object v0, v1
 
-    invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
+    const-string v1, "classname"
 
-    const/16 v1, 0x3eb
+    const-class v2, Lcom/android/settings/Settings$ReadingModeAppListActivity;
 
-    const-string v2, "op_load_app_tyep"
+    invoke-virtual {v2}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
-    invoke-virtual {v0, v2, v1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
+    move-result-object v2
+
+    invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
     iget-object v1, p0, Lcom/oneplus/settings/better/OPReadingMode;->mContext:Landroid/content/Context;
 
     invoke-virtual {v1, v0}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
+    :try_end_0
+    .catch Landroid/content/ActivityNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 
+    goto :goto_0
+
+    :catch_0
+    move-exception v1
+
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v3, "No activity found for "
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    const-string v3, "OPReadingMode"
+
+    invoke-static {v3, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    :goto_0
     const/4 v1, 0x1
 
     return v1
@@ -508,9 +454,21 @@
 .end method
 
 .method public onResume()V
-    .locals 7
+    .locals 4
 
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onResume()V
+    invoke-super {p0}, Lcom/android/settings/dashboard/DashboardFragment;->onResume()V
+
+    iget-object v0, p0, Lcom/oneplus/settings/better/OPReadingMode;->mContext:Landroid/content/Context;
+
+    invoke-static {v0}, Lcom/oneplus/settings/better/ReadingModeEffectManager;->getInstance(Landroid/content/Context;)Lcom/oneplus/settings/better/ReadingModeEffectManager;
+
+    move-result-object v0
+
+    sput-object v0, Lcom/oneplus/settings/better/OPReadingMode;->mReadingModeEffectManager:Lcom/oneplus/settings/better/ReadingModeEffectManager;
+
+    sget-object v0, Lcom/oneplus/settings/better/OPReadingMode;->mReadingModeEffectManager:Lcom/oneplus/settings/better/ReadingModeEffectManager;
+
+    invoke-virtual {v0}, Lcom/oneplus/settings/better/ReadingModeEffectManager;->loadAppMap()Ljava/util/Map;
 
     invoke-direct {p0}, Lcom/oneplus/settings/better/OPReadingMode;->updateListData()V
 
@@ -518,68 +476,27 @@
 
     move-result-object v0
 
-    const-string v1, "reading_mode_status"
+    const/4 v1, 0x0
 
-    const/4 v2, -0x2
+    const-string v2, "reading_mode_block_notification"
 
-    const/4 v3, 0x0
+    const/4 v3, -0x2
 
-    invoke-static {v0, v1, v3, v2}, Landroid/provider/Settings$System;->getIntForUser(Landroid/content/ContentResolver;Ljava/lang/String;II)I
+    invoke-static {v0, v2, v1, v3}, Landroid/provider/Settings$System;->getIntForUser(Landroid/content/ContentResolver;Ljava/lang/String;II)I
 
     move-result v0
 
-    iget-object v4, p0, Lcom/oneplus/settings/better/OPReadingMode;->mReadingModeTurnOnPreference:Landroidx/preference/SwitchPreference;
+    iget-object v2, p0, Lcom/oneplus/settings/better/OPReadingMode;->mBlockPeekNotificationsPreference:Landroidx/preference/SwitchPreference;
 
-    const/4 v5, 0x1
-
-    if-eqz v4, :cond_1
+    if-eqz v2, :cond_1
 
     if-eqz v0, :cond_0
 
-    move v6, v5
-
-    goto :goto_0
+    const/4 v1, 0x1
 
     :cond_0
-    move v6, v3
-
-    :goto_0
-    invoke-virtual {v4, v6}, Landroidx/preference/SwitchPreference;->setChecked(Z)V
+    invoke-virtual {v2, v1}, Landroidx/preference/SwitchPreference;->setChecked(Z)V
 
     :cond_1
-    invoke-virtual {p0}, Lcom/oneplus/settings/better/OPReadingMode;->getContentResolver()Landroid/content/ContentResolver;
-
-    move-result-object v4
-
-    const-string v6, "reading_mode_block_notification"
-
-    invoke-static {v4, v6, v3, v2}, Landroid/provider/Settings$System;->getIntForUser(Landroid/content/ContentResolver;Ljava/lang/String;II)I
-
-    move-result v0
-
-    iget-object v4, p0, Lcom/oneplus/settings/better/OPReadingMode;->mBlockPeekNotificationsPreference:Landroidx/preference/SwitchPreference;
-
-    if-eqz v4, :cond_3
-
-    if-eqz v0, :cond_2
-
-    move v3, v5
-
-    :cond_2
-    invoke-virtual {v4, v3}, Landroidx/preference/SwitchPreference;->setChecked(Z)V
-
-    :cond_3
-    invoke-virtual {p0}, Lcom/oneplus/settings/better/OPReadingMode;->getContentResolver()Landroid/content/ContentResolver;
-
-    move-result-object v3
-
-    invoke-static {v1}, Landroid/provider/Settings$System;->getUriFor(Ljava/lang/String;)Landroid/net/Uri;
-
-    move-result-object v1
-
-    iget-object v4, p0, Lcom/oneplus/settings/better/OPReadingMode;->mContentObserver:Landroid/database/ContentObserver;
-
-    invoke-virtual {v3, v1, v5, v4, v2}, Landroid/content/ContentResolver;->registerContentObserver(Landroid/net/Uri;ZLandroid/database/ContentObserver;I)V
-
     return-void
 .end method

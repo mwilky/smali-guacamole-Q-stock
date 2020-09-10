@@ -93,22 +93,22 @@
 
     if-eq p0, v0, :cond_0
 
-    const v0, 0x7f1212b2
+    const v0, 0x7f12136d
 
     return v0
 
     :cond_0
-    const v0, 0x7f1212b0
+    const v0, 0x7f12136b
 
     return v0
 
     :cond_1
-    const v0, 0x7f1212af
+    const v0, 0x7f12136a
 
     return v0
 
     :cond_2
-    const v0, 0x7f1212b4
+    const v0, 0x7f12136f
 
     return v0
 .end method
@@ -261,7 +261,7 @@
 
     if-nez v0, :cond_0
 
-    const v0, 0x7f1212b3
+    const v0, 0x7f12136e
 
     invoke-virtual {p1, v0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -316,7 +316,7 @@
 .method public getHelpResource()I
     .locals 1
 
-    const v0, 0x7f1207e1
+    const v0, 0x7f120819
 
     return v0
 .end method

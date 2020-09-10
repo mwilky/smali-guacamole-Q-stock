@@ -256,13 +256,23 @@ L'administrador pot supervisar i gestionar la configuració, l'accés, les aplic
     <string name="advanced_apps">Configuració avançada</string>
     <string name="advanced_battery_graph_subtext">"L'estimació de la bateria restant es basa en l'ús del teu dispositiu"</string>
     <string name="advanced_battery_title">Ús de la bateria</string>
+    <string name="advanced_calling_summary">Veu HD, Trucades de vídeo</string>
+    <string name="advanced_calling_title">Trucades avançades</string>
     <string name="advanced_reboot_summary">Quan estigui desbloquejat, el reinici us oferirà les opcions de reiniciar-se normalment, amb recuperació o reinici ràpid</string>
     <string name="advanced_reboot_title">Reinici avançat</string>
     <string name="advanced_section_header">Configuració avançada</string>
     <string name="advanced_security_title">Configuració avançada</string>
     <string name="advanced_settings">Configuració avançada</string>
     <string name="advanced_settings_summary">Activa més opcions de configuració</string>
+    <string name="advanced_wificall_summary">Utilitza la Wi-Fi quan la xarxa mòbil no està disponible</string>
     <string name="airplane_mode">"Mode d'avió"</string>
+    <string name="airplane_mode_description">El mode avió desactiva totes les connexions de xarxa, incloent-hi les trucades, missatges de text, accés a Internet, Wi-Fi i Bluetooth.</string>
+    <string name="airplane_mode_enable_dialog_message">"Quan el mode avió està activat, no podreu utilitzar Internet, el Correu electrònic o altres aplicacions que requereixin una connexió de dades tret que utilitzeu la Wi-Fi.
+
+Voleu activar el mode avió?"</string>
+    <string name="airplane_mode_enable_dialog_message_wifi_volte">"Quan el mode avió està activat, no podreu utilitzar Internet, el Correu electrònic, les trucades amb Wi-Fi o altres aplicacions que necessitin una connexió de dades tret que utilitzeu la Wi-Fi.
+
+Voleu activar el mode avió?"</string>
     <string name="alarm_ringtone_title">"So d'alarma predeterminat"</string>
     <string name="alarm_template">Hora: %1$s</string>
     <string name="alarm_template_far">Data: %1$s</string>
@@ -274,6 +284,7 @@ L'administrador pot supervisar i gestionar la configuració, l'accés, les aplic
     <string name="alert_slider_silent_title">Paràmetres de silenci</string>
     <string name="alertslider_settings">Alert slider</string>
     <string name="alertslider_settings_soc_tri_state">Alert slider</string>
+    <string name="alertslider_settings_soc_tri_state_summary">Silenci, vibració, so</string>
     <string name="all_volume_title">Volum</string>
     <string name="allow">Permet</string>
     <string name="allow_bind_app_widget_activity_allow_bind">Després de crear el widget, %1$s podrà accedir a totes les dades que mostri.</string>
@@ -314,12 +325,19 @@ Col·loca els dispositius a prop (normalment encarant-los per la part posterior)
     <string name="angle_enabled_app_set">Aplicació compatible amb ANGLE: %1$s</string>
     <string name="animator_duration_scale_title">"Escala de durada d'animació"</string>
     <string name="another_migration_already_in_progress">Ja hi ha una migració en curs.</string>
-    <string name="aod_clock_analog">Analògic</string>
-    <string name="aod_clock_default">Predeterminat</string>
+    <string name="aod_clock_analog">Analògic 1</string>
+    <string name="aod_clock_analog_1">Analògic 2</string>
+    <string name="aod_clock_analog_2">Analògic 3</string>
+    <string name="aod_clock_bold">Negreta</string>
+    <string name="aod_clock_default">Per defecte</string>
+    <string name="aod_clock_digital">Digital 1</string>
+    <string name="aod_clock_digital_1">Digital 2</string>
     <string name="aod_clock_mcl">McLaren</string>
-    <string name="aod_clock_minimalism">Minimalisme</string>
+    <string name="aod_clock_minimalism">Minimalisme 1</string>
+    <string name="aod_clock_minimalism_1">Minimalisme 2</string>
     <string name="aod_clock_none">Cap</string>
-    <string name="aod_clock_select_style_text">"Selecciona l'estil de rellotge"</string>
+    <string name="aod_clock_select_style_text">"Seleccioneu l'estil de rellotge"</string>
+    <string name="aod_clock_text_clock">Rellotge de text</string>
     <string name="aod_horizon_light_effect_1">Blau</string>
     <string name="aod_horizon_light_effect_2">Vermell</string>
     <string name="aod_horizon_light_effect_3">Porpra</string>
@@ -420,7 +438,7 @@ Col·loca els dispositius a prop (normalment encarant-los per la part posterior)
     <string name="app_permissions">Gestor de permisos</string>
     <string name="app_permissions_summary">Aplicacions que utilitzen %1$s</string>
     <string name="app_permissions_warning_message">Desactivar els permisos pot fer que una aplicació no funcioni correctament. Continueu amb precaució.</string>
-    <string name="app_permissions_warning_title">Avís</string>
+    <string name="app_permissions_warning_title">Advertència</string>
     <string name="app_process_limit_title">Límit de processos en segon pla</string>
     <string name="app_restrictions_custom_label">"Defineix les restriccions d'aplicacions"</string>
     <string name="app_sees_restricted_accounts">Aquesta aplicació pot accedir als teus comptes</string>
@@ -1065,6 +1083,7 @@ Selecció"</string>
     <string name="charge_length_format">Fa %1$s</string>
     <string name="charging_sounds_title">Sons de càrrega i vibració</string>
     <string name="checkbox_notification_same_as_incoming_call">Utilitza el volum de trucada entrant per a les notificacions</string>
+    <string name="checkbox_usb_tether_donot_show_again">"No m'ho tornis a mostrar"</string>
     <string name="checking_decryption">"S'està comprovant..."</string>
     <string name="choose_network_title">Tria una xarxa</string>
     <string name="choose_profile">Tria un perfil</string>
@@ -1098,7 +1117,7 @@ Selecció"</string>
     <string name="color_none">Cap</string>
     <string name="color_orange">Taronja</string>
     <string name="color_picker_accent_color_message">"Seleccioneu un color d'accent"</string>
-    <string name="color_picker_default">Predeterminat</string>
+    <string name="color_picker_default">Per defecte</string>
     <string name="color_picker_led_color_message">Seleccioneu el color del LED</string>
     <string name="color_picker_message_default">Trieu el vostre color preferit.</string>
     <string name="color_picker_unknown_label">Desconegut</string>
@@ -1172,6 +1191,8 @@ Selecció"</string>
     <string name="connected_devices_dashboard_no_nfc_summary">Bluetooth, mode de conducció</string>
     <string name="connected_devices_dashboard_summary">Bluetooth, mode de conducció, NFC</string>
     <string name="connected_devices_dashboard_title">Dispositius connectats</string>
+    <string name="connected_to_the_verizon_network">Connectat a la xarxa Verizon</string>
+    <string name="connected_to_the_verizon_network_but_data_connection_unavailable">Connectat a la xarxa Verizon, però la connexió de dades no està disponible</string>
     <string name="connected_via_app">Connectat mitjançant %1$s</string>
     <string name="connected_via_carrier">Connectat mitjançant %1$s</string>
     <string name="connected_via_network_scorer">Connectada automàticament a través de: %1$s</string>
@@ -1187,6 +1208,7 @@ Selecció"</string>
     <string name="contextual_card_feedback_send">Envia suggeriments</string>
     <string name="contextual_card_removed_message">"S'ha suprimit el suggeriment"</string>
     <string name="contextual_card_undo_dismissal_text">Desfés</string>
+    <string name="continue_anyway">Continua de totes maneres</string>
     <string name="contributors_title">Col·laboradors</string>
     <string name="controls_label">Controls</string>
     <string name="controls_subtitle">Redueix el consum de la bateria</string>
@@ -1318,6 +1340,7 @@ Pots trobar més controls d'ús de dades adequats a la configuració disponible 
     <string name="data_usage_cycle_editor_subtitle">Data de cada mes:</string>
     <string name="data_usage_cycle_editor_title">"Data de restabliment del cicle d'ús"</string>
     <string name="data_usage_data_limit">Definir un límit de dades</string>
+    <string name="data_usage_description">"L'ús de dades es mesura amb el vostre telèfon. El vostre operador pot comptabilitzar l'ús de manera diferent. Configureu la data d'inici perquè coincideixi amb el període a la vostra factura."</string>
     <string name="data_usage_disable_3g_limit">Estableix límit de dades 2G-3G</string>
     <string name="data_usage_disable_4g_limit">Estableix el límit de dades 4G</string>
     <string name="data_usage_disable_mobile">Vols desactivar les dades mòbils?</string>
@@ -1331,6 +1354,7 @@ Pots trobar més controls d'ús de dades adequats a la configuració disponible 
     <string name="data_usage_forground_label">En primer pla:</string>
     <string name="data_usage_label_background">Segon pla</string>
     <string name="data_usage_label_foreground">Primer pla</string>
+    <string name="data_usage_less_than_value">Menys de 0,01</string>
     <string name="data_usage_limit_dialog_mobile">"Es desactivaran les dades mòbils del telèfon quan s'arribi al límit que has establert.
 
 Com que el telèfon mesura l'ús de dades i és possible que l'operador de telefonia mòbil en faci un recompte diferent, et recomanem que estableixis un límit prudent."</string>
@@ -1386,6 +1410,9 @@ Aquesta configuració afecta tots els usuaris del telèfon."</string>
     <string name="data_usage_total_during_range_mobile">"%2$s: %1$s, ús aproximat segons el telèfon. L'operador pot fer un càlcul diferent."</string>
     <string name="data_usage_uninstalled_apps">Aplicacions eliminades</string>
     <string name="data_usage_uninstalled_apps_users">Aplicacions i usuaris eliminats</string>
+    <string name="data_usage_unit_gb">GB</string>
+    <string name="data_usage_unit_mb">MB</string>
+    <string name="data_usage_video_call_title">Trucada de vídeo</string>
     <string name="data_usage_warning_editor_title">"Estableix un advertiment d'ús de dades"</string>
     <string name="data_usage_wifi_format">^1 amb Wi-Fi</string>
     <string name="data_usage_wifi_title">Dades Wi‑Fi</string>
@@ -1497,6 +1524,11 @@ Per solucionar el problema, pots aturar %1$s per evitar que s'executi en segon p
 Per solucionar el problema, pots desactivar la ubicació per a aquesta aplicació."</string>
     <string name="dialog_location_ok">Desactiva</string>
     <string name="dialog_location_title">Vols desactivar la ubicació?</string>
+    <string name="dialog_mhs_error">Espereu mentre es fa la verificació..</string>
+    <string name="dialog_open_network_cancel">cancel·la</string>
+    <string name="dialog_open_network_connect">Connecta</string>
+    <string name="dialog_open_network_title">Esteu connectat a la xarxa Wi-Fi no segura (oberta)</string>
+    <string name="dialog_open_network_title_info">La informació enviada no està xifrada i altres la poden veure. Encara voleu connectar-vos?</string>
     <string name="dialog_stop_message">"El telèfon no pot gestionar el consum de la bateria amb normalitat perquè %1$s el manté actiu.
 
 Per solucionar el problema, pots aturar l'aplicació.
@@ -1509,6 +1541,11 @@ Per solucionar el problema, pots aturar %1$s.
 Si el problema persisteix, pot ser que hagis de desinstal·lar l'aplicació per millorar el rendiment de la bateria."</string>
     <string name="dialog_stop_ok">"Atura l'aplicació"</string>
     <string name="dialog_stop_title">"Vols aturar l'aplicació?"</string>
+    <string name="dialog_usb_tether_cancel">cancel·la</string>
+    <string name="dialog_usb_tether_ok">"d'acord"</string>
+    <string name="dialog_usb_tether_title">La compartició de xarxa amb USB i la Wi-Fi no poden estar activades alhora. Voleu desactivar la Wi-Fi?</string>
+    <string name="dialog_wrong_password">"La contrasenya de la Wi-Fi no s'ha acceptat,comproveu la contrasenya i torneu-ho a provar."</string>
+    <string name="dialog_wrong_password_ok">"d'acord"</string>
     <string name="direct_boot_unaware_dialog_message">"Nota: si reinicies el telèfon i has definit un bloqueig de pantalla, l'aplicació no s'iniciarà fins que no desbloquegis el telèfon"</string>
     <string name="disable_doze_summary">"El mode Doze redueix el consum de bateria en ajornar l'activitat de la CPU i de la xarxa en segon pla per a les aplicacions quan el dispositiu no es fa servir durant llargs períodes de temps"</string>
     <string name="disable_doze_title">Mode Doze</string>
@@ -1612,6 +1649,21 @@ Si el problema persisteix, pot ser que hagis de desinstal·lar l'aplicació per 
     <string name="dual_cdma_sim_warning_notification_channel_title">Combinació de SIM</string>
     <string name="dual_cdma_sim_warning_notification_summary">"L'ús de %1$s pot limitar les funcions. Toca per obtenir més informació."</string>
     <string name="eab_provisioned_switch_string">EAB/presència proporcionats</string>
+    <string name="earphone_function_control_click_left">"Feu doble clic a l'auricular esquerre"</string>
+    <string name="earphone_function_control_click_right">"Feu doble clic a l'auricular dret"</string>
+    <string name="earphone_function_control_last_song">Pista anterior</string>
+    <string name="earphone_function_control_next_song">Pista següent</string>
+    <string name="earphone_function_control_play_pause">Reprodueix/Posa en pausa</string>
+    <string name="earphone_function_introduction">Descripció de funcions</string>
+    <string name="earphone_function_listening_breeno">Assistent per veu</string>
+    <string name="earphone_support_battery_dot">;</string>
+    <string name="earphone_support_battery_info_box">OnePlus Buds Case: %1$s</string>
+    <string name="earphone_support_battery_info_left">Esquerre: %1$s</string>
+    <string name="earphone_support_battery_info_right">Dret: %1$s</string>
+    <string name="earphone_support_current_version">Versió actual:</string>
+    <string name="earphone_support_update_ota">Actualitza automàticament el microprogramari</string>
+    <string name="earphone_support_wifi_data">Permet les actualitzacions automàtiques amb dades mòbils</string>
+    <string name="earphone_usage_guide_complete">Fet</string>
     <string name="edge_to_edge_navigation_summary">"Per anar a la pantalla d'inici, llisca cap amunt des de la part inferior de la pantalla. Per canviar d'aplicació, llisca cap amunt des de la part inferior, mantén premut i deixa anar. Per tornar enrere, llisca des de la vora esquerra o dreta."</string>
     <string name="edge_to_edge_navigation_title">Navegació amb gestos</string>
     <string name="emergency_address_summary">"S'utilitza com la teva ubicació si fas una trucada d'emergència per Wi-Fi"</string>
@@ -1651,7 +1703,7 @@ Si el problema persisteix, pot ser que hagis de desinstal·lar l'aplicació per 
     <string name="enable_terminal_title">Terminal local</string>
     <string name="enable_text">Activa</string>
     <string name="enabled_by_admin">"Activat per l'administrador"</string>
-    <string name="enabled_fingerprint_unlock">Activa el desbloqueig per empremta digital</string>
+    <string name="enabled_fingerprint_unlock">Habilita el desbloqueig per empremta digital</string>
     <string name="enabled_fingerprint_unlock_summary_disabled">"El desbloqueig per empremta digital només es pot activar quan s'ha configurat un bloqueig de la pantalla principal"</string>
     <string name="enabled_fingerprint_unlock_summary_enabled">"Feu servir l'empremta digital per desbloquejar el dispositiu"</string>
     <string name="encrypt_talkback_dialog_message_password">"Quan introdueixis la teva contrasenya per iniciar aquest dispositiu, els serveis d'accessibilitat com ara %1$s encara no estaran disponibles."</string>
@@ -1755,6 +1807,7 @@ Per obtenir més informació, contacta amb l'administrador de la teva organitzac
     <string name="expand_button_title">Opcions avançades</string>
     <string name="experimental_category_title">Experimental</string>
     <string name="experimental_preference">(Experimental)</string>
+    <string name="extended_title">Amplificadors de xarxa</string>
     <string name="external_code_size_label">En emmagatzematge USB</string>
     <string name="external_data_size_label">"Dades de l'emmagatzematge USB"</string>
     <string name="external_source_switch_title">"Permet baixades d'aquesta font"</string>
@@ -1796,6 +1849,8 @@ Per obtenir més informació, contacta amb l'administrador de la teva organitzac
     <string name="filter_personal_apps">Personals</string>
     <string name="filter_work_apps">Professionals</string>
     <string name="filter_write_settings_apps">Pot modificar configuració del sistema</string>
+    <string name="find_my_bluetooth_earphone">Cerca els meus auriculars</string>
+    <string name="find_my_bluetooth_earphone_summary">"Reproduïu sons per localitzar els auriculars dins del radi d'abast, o veieu la darrera ubicació quan no estiguin dins del radi d'abast"</string>
     <string name="fingerprint_add_fingerprint">Afegeix empremta digital</string>
     <string name="fingerprint_add_fingerprint_summary">Poseu el dit sobre el sensor i aixequeu-lo quan noteu una vibració.</string>
     <string name="fingerprint_add_max">Pots afegir un màxim de %d empremtes digitals</string>
@@ -1918,7 +1973,7 @@ Quan activis les còpies de seguretat automàtiques, les dades dels dispositius 
     <string name="hardkeyboard_category">Configuració del teclat físic</string>
     <string name="hardware_info">Model i maquinari</string>
     <string name="hardware_keys_action_assist">Assistent de cerca</string>
-    <string name="hardware_keys_action_camera">Obre la càmera</string>
+    <string name="hardware_keys_action_camera">Obre càmera</string>
     <string name="hardware_keys_action_last_app">"Obre l'última app utilitzada"</string>
     <string name="hardware_keys_action_menu">Obre/tanca menú</string>
     <string name="hardware_keys_action_nothing">Cap acció</string>
@@ -1968,6 +2023,11 @@ Pots canviar-ho més tard a Configuració > Aplicacions i notificacions."</strin
     <string name="homepage_all_settings">Tota la configuració</string>
     <string name="homepage_condition_footer_content_description">Replega</string>
     <string name="homepage_personal_settings">Suggeriments</string>
+    <string name="hotspot_tip_message" formatted="false">"La zona Wi-Fi mòbil comparteix les vostres dades mòbils amb altres dispositius amb connexió Wi-Fi. Per connectar-vos a la vostra zona Wi-Fi: \u0009 
+ 1: Activeu la Wi-Fi del altre dispositiu.
+ 2: Seleccioneu %s a la llista de xarxes Wi-Fi disponibles. 
+ 3: Si es requereix una contrasenya, introduïu %s Per estalviar bateria, manteniu el telèfon endollat quan utilitzeu la zona Wi-Fi mòbil. "</string>
+    <string name="hotspot_tip_title">Zona Wi-Fi mòbil</string>
     <string name="hwui_force_dark_summary">Substitueix la funció forçar el mode fosc perquè estigui sempre activada</string>
     <string name="hwui_force_dark_title">Substitueix forçar el mode fosc</string>
     <string name="icon_attributions">"Paquets d'icones"</string>
@@ -2144,6 +2204,8 @@ Pots canviar-ho més tard a Configuració > Aplicacions i notificacions."</strin
     <string name="language_picker_title">Idiomes</string>
     <string name="language_picker_title_o2">Idiomes (país/regió)</string>
     <string name="language_settings">Idiomes i introducció de text</string>
+    <string name="last_factory_reset">Darrer restabliment de fàbrica</string>
+    <string name="last_factory_reset_none">Cap</string>
     <string name="last_synced">Última sincronització: %1$s</string>
     <string name="last_time_used_label">Darrer ús</string>
     <string name="launch_by_default">Obre de manera determinada</string>
@@ -2407,6 +2469,7 @@ Pots canviar-ho més tard a Configuració > Aplicacions i notificacions."</strin
     <string name="lockscreen_remote_input">"Si el dispositiu està bloquejat, impedeix que s'escriguin respostes o altres textos a les notificacions"</string>
     <string name="lockscreen_settings_title">Pantalla de bloqueig</string>
     <string name="lockscreen_settings_what_to_show_category">Què es mostra</string>
+    <string name="long_press_power_button">"Mantingueu premut el botó d'engegada"</string>
     <string name="lost_internet_access_cancel">Mantén la connexió a la Wi‑Fi</string>
     <string name="lost_internet_access_persist">No ho mostris mai més</string>
     <string name="lost_internet_access_switch">Canvia a la xarxa mòbil</string>
@@ -2542,7 +2605,10 @@ En aquest dispositiu hi ha altres usuaris.
     <string name="menu_stats_refresh">Actualitza</string>
     <string name="menu_stats_total">"Totals d'ús"</string>
     <string name="menu_stats_unplugged">%1$s des de la desconnexió</string>
+    <string name="menu_uninstallapps">Desinstal·la</string>
     <string name="menu_use_uss">Fes servir Uss</string>
+    <string name="mhs_app">Obre My Verizon</string>
+    <string name="mhs_call_back_error">La connexió de dades no està disponible.</string>
     <string name="misc_files">Fitxers diversos</string>
     <string name="misc_files_selected_count">"s'han seleccionat %1$d de %2$d"</string>
     <string name="misc_files_selected_count_bytes">%1$s de %2$s</string>
@@ -2558,6 +2624,11 @@ En aquest dispositiu hi ha altres usuaris.
     <string name="mobile_data_settings_summary_auto_switch">El telèfon canviarà de manera automàtica a aquest operador de telefonia mòbil quan estigui dins del seu abast</string>
     <string name="mobile_data_settings_title">Dades mòbils</string>
     <string name="mobile_data_usage_title">"Ús de dades de l'aplicació"</string>
+    <string name="mobile_hotspot_airplane_off_error">Per activar la zona Wi-Fi, desactiveu el mode avió</string>
+    <string name="mobile_hotspot_authoration_error">"Per utilitzar la zona Wi-Fi mòbil, haureu de subscrivir-vos als Serveis de la zona Wi-Fi mòbil.
+
+Per subscriure-us a la zona Wi-Fi mòbil, visiteu my verizon o truqueu a atenció al client al número de telèfon (800) 922–0204."</string>
+    <string name="mobile_hotspot_data_off_error">Per activar la zona Wi-Fi, activeu les dades mòbils</string>
     <string name="mobile_insert_sim_card">Insereix la targeta SIM i reinicia</string>
     <string name="mobile_network_active_esim">Actiu / SIM baixada</string>
     <string name="mobile_network_active_sim">Actiu / SIM</string>
@@ -2695,6 +2766,8 @@ Si canvies a %1$s, el teu servei %2$s no es cancel·larà."</string>
     <string name="nfc_quick_toggle_title">NFC</string>
     <string name="nfc_secure_settings_title">Protegeix NFC</string>
     <string name="nfc_secure_toggle_summary">"Permet el pagament amb NFC i l'ús en transport públic només quan la pantalla estigui desbloquejada"</string>
+    <string name="nfc_uicc_sim1">SIM 1</string>
+    <string name="nfc_uicc_sim2">SIM 2</string>
     <string name="night_display_activation_off_custom">Desactiva fins a les %1$s</string>
     <string name="night_display_activation_off_manual">Desactiva ara</string>
     <string name="night_display_activation_off_twilight">Desactiva fins al vespre</string>
@@ -2738,6 +2811,7 @@ Si canvies a %1$s, el teu servei %2$s no es cancel·larà."</string>
     <string name="no_internet_access_text">Aquesta xarxa no té accés a Internet. Vols mantenir-hi la connexió?</string>
     <string name="no_memory_use_summary">"No s'ha utilitzat memòria durant les darreres 3 hores"</string>
     <string name="no_network">Cap servei de xarxa</string>
+    <string name="no_network_extenders">No hi ha cap amplificador de xarxa</string>
     <string name="no_notification_assistant">Cap</string>
     <string name="no_notification_listeners">Cap aplicació instal·lada no ha sol·licitat accés a les notificacions.</string>
     <string name="no_running_services">"No s'executa cap servei."</string>
@@ -2748,6 +2822,7 @@ Si canvies a %1$s, el teu servei %2$s no es cancel·larà."</string>
     <string name="no_vr_listeners">"Cap aplicació instal·lada no ha sol·licitat que s'executi com un servei d'ajuda per a RV."</string>
     <string name="not_allowed">La targeta SIM no et permet connectar-te a aquesta xarxa.</string>
     <string name="not_battery_optimizing">"No s'està fent servir l'optimització de la bateria"</string>
+    <string name="not_connected_to_the_verizon_network">No connectat a la xarxa Verizon</string>
     <string name="not_installed">"No instal·lada per a l'usuari"</string>
     <string name="not_optimize_summery">Pot afectar el rendiment de la bateria</string>
     <string name="not_optimized_apps">Aplicacions no optimitzades</string>
@@ -2893,6 +2968,7 @@ L'aplicació també podrà activar i desactivar el mode No molestis i canviar la
     <string name="oneplus_aod_smart_display_calendar_event">Esdeveniment de calendari</string>
     <string name="oneplus_aod_smart_display_music_info">Reproductor multimèdia</string>
     <string name="oneplus_aod_smart_display_title">Informació contextual</string>
+    <string name="oneplus_ap_chanel">Canal AP</string>
     <string name="oneplus_app_alipay">Alipay</string>
     <string name="oneplus_app_display_compatibility">Mode de compatibilitat</string>
     <string name="oneplus_app_display_fullscreen">Mode de pantalla completa</string>
@@ -2949,6 +3025,9 @@ L'aplicació també podrà activar i desactivar el mode No molestis i canviar la
 
 L'estalviador de bateria es desactiva automàticament quan el dispositiu s'està carregant."</string>
     <string name="oneplus_battery_saver_summary">És possible que aquesta funció no funcioni en alguns jocs</string>
+    <string name="oneplus_bed_time_mode_summary">"S'està utilitzant OnePlus Warp Wireless Charger en silenci"</string>
+    <string name="oneplus_bed_time_mode_title">"Mode de l'hora d''anar a dormir"</string>
+    <string name="oneplus_bed_time_mode_wall_text">"Per a la reducció del so del OnePlus Warp Wireless Charger, la velocitat de càrrega també s'ha reduït. El telèfon s'ha de col·locar al carregador perquè el Mode de l'hora d'anar a dormir sigui efectiu."</string>
     <string name="oneplus_bg_data_condition_turn_off">"DESACTIVA L'ESTALVIADOR DE BATERIA"</string>
     <string name="oneplus_black_screen_gestures_settings_title">"Gestos d'activació de pantalla"</string>
     <string name="oneplus_block_all_notifications">Bloqueja totes les notificacions</string>
@@ -3004,6 +3083,7 @@ L'estalviador de bateria es desactiva automàticament quan el dispositiu s'està
     <string name="oneplus_connected_devices_dashboard_summary">NFC, emissió, impressió</string>
     <string name="oneplus_connected_devices_dashboard_title">Connexió Bluetooth i de dispositius</string>
     <string name="oneplus_cpu">PROCESSADOR</string>
+    <string name="oneplus_custom_drop_title">Voleu descartar els canvis？</string>
     <string name="oneplus_custom_time">Interval de temps personalitzat</string>
     <string name="oneplus_customization">Personalització de la barra de navegació</string>
     <string name="oneplus_customization_summary">Manteniu premut, toqueu dos cops</string>
@@ -3051,7 +3131,9 @@ L'estalviador de bateria es desactiva automàticament quan el dispositiu s'està
     <string name="oneplus_double_tap_power_gesture_app">SELECCIONEU LA FUNCIÓ</string>
     <string name="oneplus_double_tap_power_gesture_camera">Càmera</string>
     <string name="oneplus_double_tap_power_gesture_wallet">Feu lliscar les targetes (Cartera)</string>
+    <string name="oneplus_double_tap_power_none">Cap</string>
     <string name="oneplus_doze_summary_801">"Mostra el rellotge i altra informació a la pantalla d'espera"</string>
+    <string name="oneplus_doze_summary_new">"Mostra l'hora, la data i les notificacions a la pantalla"</string>
     <string name="oneplus_doze_title">Pantalla ambiental</string>
     <string name="oneplus_doze_title_801">Pantalla ambiental</string>
     <string name="oneplus_draw_gesture_start_none">Cap</string>
@@ -3066,7 +3148,7 @@ L'estalviador de bateria es desactiva automàticament quan el dispositiu s'està
     <string name="oneplus_e_sports_mode_disturb_introduction_title">Mode Avançat No molesteu</string>
     <string name="oneplus_e_sports_mode_enable_introduction_title">"És necessari habilitar el Mode de joc per utilitzar el Mode d'esports."</string>
     <string name="oneplus_e_sports_mode_network_introduction_dual4g_summary">Quan utilitzeu xarxes 4G duals, aquest mode atura la SIM secundària per millorar el rendiment de xarxa de la SIM primària. No podreu rebre trucades o missatges SMS a la SIM secundària mentre aquest mode estigui activat.</string>
-    <string name="oneplus_e_sports_mode_network_introduction_summary">"Millorar l'estabilitat de la connexió de xarxa"</string>
+    <string name="oneplus_e_sports_mode_network_introduction_summary">"Millora l'estabilitat de la connexió de xarxa"</string>
     <string name="oneplus_e_sports_mode_network_introduction_title">Millora de xarxa</string>
     <string name="oneplus_e_sports_mode_summary">Elimineu les interrupcions i convertiu el vostre telèfon en un dispositiu destinat als jocs</string>
     <string name="oneplus_e_sports_mode_title">"Mode d'esports"</string>
@@ -3148,7 +3230,7 @@ Consell de seguretat: el desbloqueig facial és menys segur que l'empremta digit
     <string name="oneplus_fnatic_mode_disturb_introduction_title">DND avançada</string>
     <string name="oneplus_fnatic_mode_enable_introduction_title">Primer és necessari habilitar el Mode de joc per utilitzar el Mode Fnatic</string>
     <string name="oneplus_fnatic_mode_network_introduction_dual4g_summary">"Es prioritza la força del senyal de la targeta SIM principal per minimitzar la interferència amb els jocs de baixa latència. Com a resultat, s'inhabilitarà la targeta SIM secundària, i no es rebran trucades o missatges."</string>
-    <string name="oneplus_fnatic_mode_network_introduction_summary">"Millorar l'estabilitat de la connexió de xarxa"</string>
+    <string name="oneplus_fnatic_mode_network_introduction_summary">"Millora l'estabilitat de la connexió de xarxa"</string>
     <string name="oneplus_fnatic_mode_network_introduction_title">Millora de xarxa</string>
     <string name="oneplus_fnatic_mode_summary">Potencieu la vostra experiència de joc</string>
     <string name="oneplus_fnatic_mode_summary_2">Un mode de joc avançat, creat per pioners de jocs</string>
@@ -3162,6 +3244,9 @@ Consell de seguretat: el desbloqueig facial és menys segur que l'empremta digit
     <string name="oneplus_force_factory_reset_summary">"La contrasenya a l'iniciar està habilitada. S'esborrarà l'emmagatzematge intern"</string>
     <string name="oneplus_forum_award_summary">Aquesta comunitat és vostra. Només podeu definir el nostre curs. Junts, podem definir i refinar. Suprimint versions de software i escrivint codis. Això és per a vós. Gràcies per somiar amb nosaltres!</string>
     <string name="oneplus_forum_award_title">Premi</string>
+    <string name="oneplus_front_camera_app_display_fullscreen_summary">"Si el contingut de l'aplicació està cobert per l'àrea de visualització de la càmera frontal, canvieu al mode predeterminat"</string>
+    <string name="oneplus_front_camera_display_choose_title">Escolliu si voleu ocultar la càmera frontal</string>
+    <string name="oneplus_front_camera_display_title">Àrea de visualització de la càmera frontal</string>
     <string name="oneplus_fullscreen_back_guide_summary">Feu lliscar el dit cap a dins des de la vora inferior esquerra o dreta de la pantalla</string>
     <string name="oneplus_fullscreen_back_guide_summary_deprecated">Feu lliscar el dit des del costat esquerre o dret de la part inferior de la pantalla</string>
     <string name="oneplus_fullscreen_back_guide_title">Enrere</string>
@@ -3196,7 +3281,7 @@ Per anar a la pantalla d'inici en qualsevol moment, feu lliscar el dit cap amunt
     <string name="oneplus_game_mode_ad_summary">Millora els detalls de llum i la part obscura de la visualització de jocs</string>
     <string name="oneplus_game_mode_ad_title">Millora de la visualització de jocs</string>
     <string name="oneplus_game_mode_app_list">"Llista d'aplicacions en mode joc"</string>
-    <string name="oneplus_gaming_mode">Mode joc</string>
+    <string name="oneplus_gaming_mode">Mode de joc</string>
     <string name="oneplus_gaming_mode_add_apps">Afegeix aplicacions per al mode joc</string>
     <string name="oneplus_gaming_mode_close_automatic_brightness">Desactiva la brillantor automàtica</string>
     <string name="oneplus_gaming_mode_close_automatic_brightness_summary">Bloqueja la brillantor de pantalla quan el mode joc està activat</string>
@@ -3232,12 +3317,16 @@ Per anar a la pantalla d'inici en qualsevol moment, feu lliscar el dit cap amunt
     <string name="oneplus_gesture_to_route_audio_title">Acosteu-vos el telèfon per canviar</string>
     <string name="oneplus_gestures_fast_entrance">Dreceres</string>
     <string name="oneplus_gestures_open_apps">Obre aplicacions</string>
-    <string name="oneplus_gestures_open_camera">Obre la càmera</string>
-    <string name="oneplus_gestures_open_flashlight">Encendre/apagar la llanterna</string>
+    <string name="oneplus_gestures_open_camera">Obre càmera</string>
+    <string name="oneplus_gestures_open_flashlight">Apagar/encendre la llanterna</string>
     <string name="oneplus_gestures_open_front_camera">Obre la càmera frontal</string>
     <string name="oneplus_gestures_open_shelf">Obre Shelf</string>
     <string name="oneplus_gestures_take_video">Fes un vídeo</string>
     <string name="oneplus_getlog_title">Obtenir registres</string>
+    <string name="oneplus_global_dark_mode_description">Fes que les aplicacions que no són compatibles amb el tema fosc també apareguin amb un to fosc. Algunes aplicacions poden no funcionar de la manera esperada, podeu inhabilitar-les a la llista següent.</string>
+    <string name="oneplus_global_dark_mode_only_valid_in_dark_mode">Aquesta funció només està disponible amb el to fosc</string>
+    <string name="oneplus_global_dark_mode_summary">"Fes que més aplicacions que no s'adapten al mode fosc es facin fosques automàticament quan el to fosc està activat"</string>
+    <string name="oneplus_global_dark_mode_title">Permet el to fosc en més aplicacions</string>
     <string name="oneplus_google_tts">Dades de veu de Google TTS</string>
     <string name="oneplus_gps_using">està utilitzant el GPS</string>
     <string name="oneplus_h2_contributors">"Col·laboradors d'HydrogenOS"</string>
@@ -3253,6 +3342,8 @@ Per anar a la pantalla d'inici en qualsevol moment, feu lliscar el dit cap amunt
     <string name="oneplus_hardware_keys_action_split_screen">Obre/tanca la pantalla dividida</string>
     <string name="oneplus_health_safety_information">Informació de salut i seguretat</string>
     <string name="oneplus_hearing_aid">Compatibilitat audiòfon</string>
+    <string name="oneplus_hide_front_camera_display_summary">No es pot mostrar contingut en aquesta àrea</string>
+    <string name="oneplus_hide_front_camera_display_title">Oculta la càmera frontal</string>
     <string name="oneplus_hide_navigation_bar">Oculta la barra de navegació</string>
     <string name="oneplus_hide_navkeys">Amaga la barra de navegació</string>
     <string name="oneplus_hide_navkeys_summary">Afegeix un botó per amagar o mostrar la barra de navegació</string>
@@ -3293,7 +3384,7 @@ Nota: L'empremta digital pot ser menys segura que un patró o un PIN fort"</stri
     <string name="oneplus_lift_up_display">Pantalla sempre activada, Pantalla activada en aixecar</string>
     <string name="oneplus_light">Suau</string>
     <string name="oneplus_local_ringtone">"To de trucada de l'emmagatzematge intern"</string>
-    <string name="oneplus_location_information">Descripció dels Serveis basats en la ubicació</string>
+    <string name="oneplus_location_information">Descripció dels Serveis Basats en la Ubicació</string>
     <string name="oneplus_lock_after_timeout">Bloqueig automàtic després del repòs</string>
     <string name="oneplus_lock_buttons">Bloqueja els botons</string>
     <string name="oneplus_lock_buttons_summary">Bloqueja els botons capacitatius quan el mode joc estigui activat</string>
@@ -3311,6 +3402,22 @@ Nota: L'empremta digital pot ser menys segura que un patró o un PIN fort"</stri
     <string name="oneplus_lockscreen_settings_title">Preferències de la pantalla de bloqueig</string>
     <string name="oneplus_max_shortcuts_tips">Podeu afegir fins a 6 dreceres</string>
     <string name="oneplus_media_ring_summary">Silencia el volum multimèdia</string>
+    <string name="oneplus_memc_close">Off</string>
+    <string name="oneplus_memc_game">Compensació de moviment dels jocs</string>
+    <string name="oneplus_memc_game_summary">"L'activació de la compensació de moviment dels jocs requereix canviar la resolució a FHD+"</string>
+    <string name="oneplus_memc_more_support_apps">Més aplicacions compatibles</string>
+    <string name="oneplus_memc_notice">"En aquest mode, s'augmentarà la velocitat de fotogrames i es reduirà el desenfocament del moviment dels gràfics, fent-lo més clar i suau. Només és efectiu durant la reproducció amb pantalla completa."</string>
+    <string name="oneplus_memc_open">Activat</string>
+    <string name="oneplus_memc_support_apps">Aplicacions admeses</string>
+    <string name="oneplus_memc_support_no_apps">No hi ha instal·lat cap aplicació compatible</string>
+    <string name="oneplus_memc_video">Suavitat dels gràfics de moviment</string>
+    <string name="oneplus_memc_video_effect">Efecte de compensació</string>
+    <string name="oneplus_memc_video_extreme">Extrem</string>
+    <string name="oneplus_memc_video_nosupport_extreme_summary">"L'activació de l'extrem requereix canviar la resolució a FHD+"</string>
+    <string name="oneplus_memc_video_nosupport_extreme_text">"S'està canviant a la resolució QHD+, la compensació dels gràfics del moviment està limitada"</string>
+    <string name="oneplus_memc_video_smooth">Suau</string>
+    <string name="oneplus_memc_video_theacme_summary">"La velocitat de fotogrames s'augmentarà a 120 fps per als gràfics molt suaus i pot provocar un consum d'energia addicional. Resolució QHD+ no admesa temporalment."</string>
+    <string name="oneplus_memc_video_theacme_title">Suavitat de moviment màxima</string>
     <string name="oneplus_mobile_device_name_title">Nom del telèfon</string>
     <string name="oneplus_mode_choose">Selecció de mode</string>
     <string name="oneplus_mode_settings">"Configuració d'Alert Slider"</string>
@@ -3390,6 +3497,10 @@ Nota: L'empremta digital pot ser menys segura que un patró o un PIN fort"</stri
     <string name="oneplus_notifications_free">Gratuït</string>
     <string name="oneplus_notifications_meet">Coneix</string>
     <string name="oneplus_o2_contributors">"Col·laboradors d'OxygenOS"</string>
+    <string name="oneplus_open_bed_time_mode_schedule_summary">Activa-ho en un interval de temps personalitzat</string>
+    <string name="oneplus_open_bed_time_mode_schedule_title">Programa</string>
+    <string name="oneplus_open_bed_time_mode_summary">"Podeu activar manualment el Mode de l'hora d'anar a dormir"</string>
+    <string name="oneplus_open_bed_time_mode_title">"Mode de l'hora d''anar a dormir"</string>
     <string name="oneplus_opfinger_input_completed_comfirm">Confirma</string>
     <string name="oneplus_opfinger_input_completed_sub">"Configuració d'empremta digital completada. Feu clic a \"confirmar\" per continuar"</string>
     <string name="oneplus_opfinger_input_completed_title">Registre complet</string>
@@ -3430,9 +3541,10 @@ Nota: L'empremta digital pot ser menys segura que un patró o un PIN fort"</stri
     <string name="oneplus_preference_settings_manual_open">Estat</string>
     <string name="oneplus_preference_settings_turn_off_time">Fins a les</string>
     <string name="oneplus_preference_settings_turn_on">Activa No molesteu</string>
-    <string name="oneplus_preference_settings_turn_on_time">De</string>
+    <string name="oneplus_preference_settings_turn_on_time">Des de les</string>
     <string name="oneplus_prior_to_use_you_need_to">Abans de fer-ho servir, heu de:</string>
     <string name="oneplus_privacy_policy">Política de privacitat</string>
+    <string name="oneplus_privacy_protection_title">Espai xifrat</string>
     <string name="oneplus_product_info_introduce">Informació del dispositiu &amp; Targeta de garantia</string>
     <string name="oneplus_product_info_summary">Targeta de garantia, llista de preinstal·lades</string>
     <string name="oneplus_proximity_summary_disable">No està disponible perquè la pantalla ambiental està desactivada</string>
@@ -3470,6 +3582,7 @@ Nota: L'empremta digital pot ser menys segura que un patró o un PIN fort"</stri
     <string name="oneplus_quickpay_way_alipay_scanning">Escaneig Alipay</string>
     <string name="oneplus_quickpay_way_paytm">Paytm</string>
     <string name="oneplus_quickpay_way_wecaht_qrcode">Codi QR WeChat</string>
+    <string name="oneplus_quickpay_way_wecaht_ridecode">Codi QR de trànsit de WeChat</string>
     <string name="oneplus_quickpay_way_wecaht_scanning">Escaneig WeChat</string>
     <string name="oneplus_ramboost_description">"Mitjançant la memorització de com utilitzeu el vostre telèfon, l'augment de la RAM pot predir les aplicacions que voleu activar i les dades que voleu carregar, aprofitant completament la capacitat de la RAM per agilitzar el rendiment del vostre ús diari."</string>
     <string name="oneplus_ramboost_switch_summary">Incrementa la utilització de la RAM en funció del vostre ús</string>
@@ -3517,7 +3630,7 @@ Nota: L'empremta digital pot ser menys segura que un patró o un PIN fort"</stri
     <string name="oneplus_rotation_silent_enable_summary">Gireu el dispositiu en rebre una trucada per silenciar-lo</string>
     <string name="oneplus_rotation_silent_enable_title">Gireu per silenciar</string>
     <string name="oneplus_scene_mode">ESCENES</string>
-    <string name="oneplus_schedule">Horari</string>
+    <string name="oneplus_schedule">Programa</string>
     <string name="oneplus_screen">PANTALLA</string>
     <string name="oneplus_screen_better_cold">Fred</string>
     <string name="oneplus_screen_better_nature">Natural</string>
@@ -3608,6 +3721,7 @@ Nota:
     <string name="oneplus_select_fingerprint_animation_effect_2">Ona</string>
     <string name="oneplus_select_fingerprint_animation_effect_3">Ratlla</string>
     <string name="oneplus_select_fingerprint_animation_effect_4">Ondulació</string>
+    <string name="oneplus_select_fingerprint_animation_effect_6">Energia</string>
     <string name="oneplus_select_fingerprint_animation_effect_mcl">McLaren</string>
     <string name="oneplus_select_fingerprint_animation_effect_none">Cap</string>
     <string name="oneplus_select_fingerprint_animation_effect_title">"Seleccioneu l'efecte d'animació d'empremta digital"</string>
@@ -3621,12 +3735,14 @@ Nota:
     <string name="oneplus_setup_an_alternate_way_to_0unlock">· Establir una manera alternativa de desbloquejar la pantalla</string>
     <string name="oneplus_share_this_wifi">Amplia la cobertura Wi-Fi</string>
     <string name="oneplus_share_wifi_title">Compartint Wi‑Fi</string>
-    <string name="oneplus_shielding_notification">Boqueja</string>
+    <string name="oneplus_shielding_notification">Bloqueja</string>
     <string name="oneplus_shielding_notification_summary">Es bloquejaran les notificacions (excepte les trucades i alarmes)</string>
     <string name="oneplus_shortcuts_add">Afegeix dreceres</string>
     <string name="oneplus_shortcuts_preview">Vista prèvia de dreceres</string>
     <string name="oneplus_shortcuts_settings">Configuració de dreceres</string>
     <string name="oneplus_shortcuts_title">Dreceres</string>
+    <string name="oneplus_show_front_camera_display_summary">Permet que es visualitzi contingut en aquesta àrea</string>
+    <string name="oneplus_show_front_camera_display_title">Mostra la càmera frontal</string>
     <string name="oneplus_show_notch_display_summary">Permet que les aplicacions utilitzin la zona de la clivella</string>
     <string name="oneplus_show_notch_display_title">Mostra la zona de la clivella</string>
     <string name="oneplus_show_pattern_and_password">Mostra la contrasenya o el patró</string>
@@ -3637,6 +3753,7 @@ Nota:
     <string name="oneplus_sim1_ringtone_switch">Targeta SIM 1</string>
     <string name="oneplus_sim2_ringtone_switch">Targeta SIM 2</string>
     <string name="oneplus_simcard_title">SIM</string>
+    <string name="oneplus_sla_down_load_app_summary">"L'acceleració de baixada no estarà disponible mentre la zona Wi-Fi o Wi‑Fi Direct estiguin activades"</string>
     <string name="oneplus_sleep_standby_summary">Optimitzeu la durada de la bateria (p. ex.: inhabilitant les connexions de xarxa) mentre dormiu. Això pot impedir que les aplicacions reben notificacions de mnera oportuna.</string>
     <string name="oneplus_sleep_standby_title">"Optimització del mode d'espera en repòs"</string>
     <string name="oneplus_smart_background_management_title">"Hibernació de l'aplicació Doze &amp; agressiu"</string>
@@ -3651,6 +3768,8 @@ Nota:
     <string name="oneplus_stop_run">"Força l'aturada"</string>
     <string name="oneplus_storage">EMMAGATZEMATGE</string>
     <string name="oneplus_sunrise_sunset">"Activa'l automàticament des de la posta de sol fins a l'alba"</string>
+    <string name="oneplus_support_summary">"Consells i preguntes més freqüents sobre l'ús del dispositiu"</string>
+    <string name="oneplus_support_title">Consells &amp; assistència</string>
     <string name="oneplus_supported_apps">Aplicacions admeses</string>
     <string name="oneplus_suspension_notice">Avís</string>
     <string name="oneplus_suspension_notice_summary">Permet que les aplicacions mostrin notificacions amb avisos</string>
@@ -3662,7 +3781,7 @@ Nota:
     <string name="oneplus_system_data_title">Dades del sistema</string>
     <string name="oneplus_system_ringtone">Sons del sistema</string>
     <string name="oneplus_system_settings_summary">Accessibilitat, data i hora, idiomes i entrada de text</string>
-    <string name="oneplus_system_settings_title">Configuració del sistema</string>
+    <string name="oneplus_system_settings_title">Paràmetres del sistema</string>
     <string name="oneplus_system_stability_add">"Participa en el programa de millora d'estabilitat del sistema"</string>
     <string name="oneplus_system_stability_summary">"Permeteu que OnePlus accedeixi anònimament als registres del sistema. En cas d'error, permeteu que s'enviï un informe d'errors amb registres. Els registres s'utilitzaran només per a l'anàlisi d'errors del sistema i per a les millores d'estabilitat"</string>
     <string name="oneplus_system_stability_title">"Programa d'estabilitat del sistema"</string>
@@ -3734,11 +3853,12 @@ Nota:
     <string name="oneplus_top_level_security_summary">"Empremta digital, Desbloqueig facial, rescat d'emergència"</string>
     <string name="oneplus_top_level_sound_summary">"No molesteu, mode d'auriculars, to de trucada"</string>
     <string name="oneplus_top_level_system_summary">Idioma i teclat, hora, reiniciar, actualitzacions del sistema</string>
+    <string name="oneplus_top_level_system_summary_verizon">Idioma &amp; teclat, hora, restabliment</string>
     <string name="oneplus_touch_vibrate">Vibració en tocar</string>
     <string name="oneplus_turn_off_time">Fins a les</string>
     <string name="oneplus_turn_on_feature_cancel">CANCEL·LA</string>
     <string name="oneplus_turn_on_feature_ok">ACTIVA</string>
-    <string name="oneplus_turn_on_time">De</string>
+    <string name="oneplus_turn_on_time">Des de les</string>
     <string name="oneplus_uninstatll_multi_app_msg">"S'esborraran totes les dades de l'aplicació paral·lela si la desinstal·leu. Segur que la voleu desinstal·lar?"</string>
     <string name="oneplus_uninstatll_multi_app_title">%1$s paral·lel</string>
     <string name="oneplus_uninstatll_multi_main_app_msg">"S'esborraran totes les dades d'aquesta aplicació i de l'aplicació paral·lela associada si la desinstal·leu. Segur que la voleu desinstal·lar?"</string>
@@ -3762,12 +3882,17 @@ Nota: el desbloqueig facial pot ser menys segur que el d'empremta digital, PIN o
     <string name="oneplus_video_enhancer">Efecte de color vibrant</string>
     <string name="oneplus_video_enhancer_footer">Millora el color durant la reproducció de vídeos</string>
     <string name="oneplus_video_enhancer_summary">Millora el color durant la reproducció de vídeos</string>
+    <string name="oneplus_voice_assistant">Assistent per veu</string>
     <string name="oneplus_volume_keys_adjust">Utilitzeu els botons de volum per ajustar-lo</string>
     <string name="oneplus_volume_keys_adjust_media">Volum multimèdia</string>
     <string name="oneplus_volume_keys_adjust_ringtones">Volum del to de trucada</string>
     <string name="oneplus_weak_text_reminding">Només text</string>
     <string name="oneplus_weak_text_reminding_summary">Permet que les aplicacions mostrin notificacions amb avisos</string>
     <string name="oneplus_wellbeing_grayscale_open_tip">El mode noctur no està disponible actualment perquè la funció \"Escala de grisos\" està activada</string>
+    <string name="oneplus_wifi_6_standard_hotspot_cancel">CANCEL·LA</string>
+    <string name="oneplus_wifi_6_standard_hotspot_enable">HABILITA-HO</string>
+    <string name="oneplus_wifi_6_standard_hotspot_title">Zona Wi‑Fi estàndard 6</string>
+    <string name="oneplus_wifi_6_standard_hotspot_warning">"Potser alguns dispositius que es connectaran no siguin compatibles amb l'estàndard Wi‑Fi 6. Voleu continuar amb l'habilitació?"</string>
     <string name="oneplus_wifi_ap_error">Introduïu la targeta SIM</string>
     <string name="oneplus_wifi_hidden_network_warning">"Si el vostre encaminador inhabilita la difusió SSID, hauríeu de seleccionar \"Sí\" per connectar-vos a la xarxa oculta.
 
@@ -3788,6 +3913,8 @@ La configuració de la xarxa com a oculta no canviarà la configuració del vost
     <string name="oneplus_zen_mode_automation_settings_title">Activació automàtica</string>
     <string name="oneplus_zen_mode_duration_settings_title">Durada</string>
     <string name="oneplus_zen_mode_duration_summary_always_prompt">"Demana cada vegada (excepte si s'activa automàticament)"</string>
+    <string name="oneplus_zen_mode_duration_summary_forever">"Fins que ho desactiveu (tret que s'activi automàticament)"</string>
+    <string name="oneplus_zen_mode_duration_summary_time_minutes">"%d minuts (tret que s'activi automàticament)"</string>
     <string name="oneplus_zen_mode_footer_info">Quan No molesteu estigui activat, es desactivaran el so i la vibració, excepte en els casos que hàgiu permès anteriorment</string>
     <string name="oneplus_zen_mode_mode_manual_switch_summary">Podeu activar manualment No Molesteu</string>
     <string name="oneplus_zen_mode_settings">Comportament</string>
@@ -3801,6 +3928,10 @@ La configuració de la xarxa com a oculta no canviarà la configuració del vost
     <string name="op_android_mode_cannot_change_color_accent">El tema predeterminat només pot utilitzar el tema de color del sistema</string>
     <string name="op_app_already_uninstalled">Desinstal·lada</string>
     <string name="op_audio_settings">"Sintonitzador d'àudio"</string>
+    <string name="op_auto_power_saving">"Estalvi d'energia automàtic"</string>
+    <string name="op_auto_power_saving_summary">Canvia automàticament a la resolució adequada sense esgotar la bateria</string>
+    <string name="op_charging_optimization">Càrrega optimitzada</string>
+    <string name="op_charging_optimization_summary">"Optimitzeu el patró de càrrega en funció dels vostre hàbits d'ús"</string>
     <string name="op_china_mobile">CMCC</string>
     <string name="op_china_telecom">CTCC</string>
     <string name="op_china_unicom">CCUC</string>
@@ -3823,11 +3954,11 @@ La configuració de la xarxa com a oculta no canviarà la configuració del vost
     <string name="op_failed_to_get_data">"No s'han pogut recuperar les dades"</string>
     <string name="op_fetch_data_in_process">Carregant</string>
     <string name="op_fragment">Curt</string>
-    <string name="op_gamespace">Espai de joc</string>
+    <string name="op_gamespace">Espai de lloc</string>
     <string name="op_high_power_app_manager">"Aplicacions d'alt comsum de bateria"</string>
     <string name="op_light_mode_title">Llum</string>
     <string name="op_linked_launch_summary">"Gestió d'aplicacions que es poden executar en segon pla"</string>
-    <string name="op_linked_launch_title">"Execució automàtica d'apps"</string>
+    <string name="op_linked_launch_title">"Execució automàtica d'aplicacions"</string>
     <string name="op_lockpassword_choose_your_password_header_for_face">Per utilitzar el Desbloqueig facial, configureu una contrasenya</string>
     <string name="op_lockpassword_choose_your_pattern_header_for_face">Per utilitzar el Desbloqueig facial, configureu un patró</string>
     <string name="op_lockpassword_choose_your_pin_header_for_face">Per utilitzar el Desbloqueig facial, configureu un PIN</string>
@@ -3848,17 +3979,17 @@ La configuració de la xarxa com a oculta no canviarà la configuració del vost
     <string name="op_primary_royal_blue_label">Blau reial</string>
     <string name="op_primary_sky_blue_label">Cian</string>
     <string name="op_primary_vigour_red_label">Rosa</string>
-    <string name="op_reset">Reinicia</string>
+    <string name="op_reset">Restableix</string>
     <string name="op_reset_options_summary">"Restabliment de fàbrica, restabliment d'aplicacions i de xarxa"</string>
     <string name="op_screenshot">So de captura de pantalla</string>
     <string name="op_security_lock_settings_title">Seguretat &amp; pantalla de bloqueig</string>
     <string name="op_security_settings_back_fingerprint_enroll_find_sensor_message">El trobareu a la part posterior del telèfon</string>
     <string name="op_security_settings_fingerprint_enroll_find_sensor_message">"Ubica el sensor d'empremta digital al botó d'inici"</string>
     <string name="op_security_settings_title">Seguretat &amp; empremta digital</string>
-    <string name="op_sim_card_with_slotid">"SIM  %1$s "</string>
+    <string name="op_sim_card_with_slotid">"SIM %1$s "</string>
     <string name="op_sim_cord">SIM &amp; xarxa</string>
     <string name="op_sim_cord_summary">"Targeta SIM predeterminada, ús de l'amplada de banda"</string>
-    <string name="op_sim_name_with_prefix">  (%1$s)</string>
+    <string name="op_sim_name_with_prefix">(%1$s)</string>
     <string name="op_sms_ringtone">"To de trucada d'SMS"</string>
     <string name="op_starwar_mode_cannot_change_color_accent">El tema Star Wars només pot utilitzar el tema de color del sistema</string>
     <string name="op_starwar_mode_title">Star Wars</string>
@@ -3880,6 +4011,7 @@ La configuració de la xarxa com a oculta no canviarà la configuració del vost
     <string name="op_wifi_display_summary">Emet pantalla</string>
     <string name="op_wifi_verbose_multi_broadcast_summary">"En mode d'espera, les especificacions WLAN multidifusió per a aplicacions activen el WLAN i consumeixen recursos si el filtre no està activat, i això provoca un consum de bateria excessiu."</string>
     <string name="op_wifi_verbose_multi_broadcast_title">Filtre multidifusió WLAN per a aplicacions</string>
+    <string name="open_hotspot_warning_message">"Amb seguretat oberta, els dispositius podran utilitzar la vostra zona Wi-Fi mòbil sense introduir cap contrasenya. En canvi, seleccioneu seguretat WPA2 si voleu exigir una contrasenya. "</string>
     <string name="openid_dialog_reset">RESTABLIR</string>
     <string name="openid_dialog_summary">El vostre identificador se substituirà per un número aleatori</string>
     <string name="openid_dialog_title">"Segur que voleu restablir l'identificador?"</string>
@@ -3964,6 +4096,9 @@ La configuració de la xarxa com a oculta no canviarà la configuració del vost
     <string name="power_discharging_duration_enhanced">"Temps restant aproximat segons l'ús que en fas: %1$s (%2$s)"</string>
     <string name="power_flashlight">Llanterna</string>
     <string name="power_idle">Telèfon inactiu</string>
+    <string name="power_menu">Encén el menú</string>
+    <string name="power_off">Apaga</string>
+    <string name="power_off_summary">"El vostre dispositiu s'apagarà"</string>
     <string name="power_overcounted">"Comptabilitzada més d'una vegada"</string>
     <string name="power_phone">Trucades de veu</string>
     <string name="power_remaining_charging_duration_only">%1$s per completar la càrrega</string>
@@ -4254,6 +4389,19 @@ Reinicia el dispositiu i torna-ho a provar."</string>
     <string name="reset_network_title">Restableix Wi-Fi, dades mòbils i Bluetooth</string>
     <string name="reset_shortcut_manager_throttling">Restableix la limitació de freqüència de ShortcutManager</string>
     <string name="reset_shortcut_manager_throttling_complete">"S'ha restablert la limitació de freqüència de ShortcutManager"</string>
+    <string name="reset_system_settings_button_text">Restableix la configuració</string>
+    <string name="reset_system_settings_complete_toast">"S'ha restablert la configuració del sistema"</string>
+    <string name="reset_system_settings_desc">"Si heu canviat qualsevol de les configuracions del sistema, \"Restableix les configuracions\" torna el vostre telèfon a la manera en la que es comportava originalment.
+
+No afectarà a cap de les vostres aplicacions baixades, les vostres dades o les següents configuracions protegides:
+
+"<li>Configuració de seguretat</li>"
+"<li>"Configuració d'idioma"</li>"
+"<li>Configuració de compte</li></string>
+    <string name="reset_system_settings_dialog_message">"Restablir la configuració del sistema canviarà algunes de les personalitzacions que podeu haver fet, com ara el vostre to de trucada, la brillantor de la pantalla i com es comporta el teclat.
+Voleu restablir la configuració del sistema? No podeu desfer aquesta acció"</string>
+    <string name="reset_system_settings_dialog_title">Advertència</string>
+    <string name="reset_system_settings_title">Restableix la configuració</string>
     <string name="restore_default_apn">"S'està restaurant la configuració predeterminada d'APN."</string>
     <string name="restore_default_apn_completed">"S'ha restablert la configuració predeterminada d'APN."</string>
     <string name="restr_pin_enter_admin_pin">"Introdueix el PIN d'administrador"</string>
@@ -4283,6 +4431,7 @@ Reinicia el dispositiu i torna-ho a provar."</string>
     <string name="retail_demo_reset_next">Següent</string>
     <string name="retail_demo_reset_title">Contrasenya obligatòria</string>
     <string name="retry">Torna-ho a provar</string>
+    <string name="reverse_wireless_charging_category">Càrrega sense fils</string>
     <string name="ring_volume_option_title">Volum del to</string>
     <string name="ring_volume_title">Volum del to</string>
     <string name="ringtone_title">So de trucada</string>
@@ -4330,6 +4479,7 @@ Aquesta configuració afecta tots els usuaris del telèfon."</string>
     <string name="safety_and_regulatory_info">Manual de seguretat i normativa</string>
     <string name="saturation_option_title">Balanç de color</string>
     <string name="save">Desa</string>
+    <string name="save_changes">Desa els canvis</string>
     <string name="saved_network">Desada per %1$s</string>
     <string name="scanning_status_text_wifi_off_ble_off">Tant la cerca de xarxes Wi‑Fi com la de dispositius Bluetooth estan desactivades</string>
     <string name="scanning_status_text_wifi_off_ble_on">La cerca de dispositius Bluetooth està activada i la cerca de xarxes Wi‑Fi està desactivada</string>
@@ -4424,6 +4574,7 @@ Per fer-ho:
     <string name="search_bar_account_avatar_content_description" />
     <string name="search_menu">Cerca a la configuració</string>
     <string name="search_menu_title">Cerca</string>
+    <string name="search_network_extenders">"S'estan cercant amplificadors de xarxa"</string>
     <string name="search_results_title">Configuració</string>
     <string name="search_settings">Cerca</string>
     <string name="secure_lock_encryption_warning">"Com que has activat un servei d'accessibilitat, el teu dispositiu no farà servir el bloqueig de pantalla per millorar l'encriptació de dades."</string>
@@ -4543,6 +4694,7 @@ Nota: no pots fer servir l'empremta digital per desbloquejar aquest dispositiu. 
     <string name="select_automatically">Selecciona la xarxa automàticament</string>
     <string name="select_day">Seleccioneu el mes i el dia</string>
     <string name="select_device_admin_msg">"Aplicacions d'administració del dispositiu"</string>
+    <string name="select_function">Seleccioneu la funció</string>
     <string name="select_hours">Seleccioneu les hores</string>
     <string name="select_logd_size_dialog_title">Selecciona la mida de la memòria intermèdia del registre</string>
     <string name="select_logd_size_title">Mides de la mem. intermèdia del registrador</string>
@@ -4564,6 +4716,9 @@ Nota: no pots fer servir l'empremta digital per desbloquejar aquest dispositiu. 
     <string name="select_year">"Seleccioneu l'any"</string>
     <string name="sensors_off_quick_settings_title">Sensors desactivats</string>
     <string name="service_background_processes">%1$s lliure</string>
+    <string name="service_does_not_exists_in_this_area">El servei no existeix en aquesta àrea</string>
+    <string name="service_exists_in_this_area_and_is_capable_of_being_used">El servei existeix en aquesta àrea i es pot utilitzar</string>
+    <string name="service_exists_in_this_area_but_is_not_capable_of_being_used">El servei existeix en aquesta àrea, però no es pot utilitzar</string>
     <string name="service_foreground_processes">%1$s utilitzat</string>
     <string name="service_manage">Configuració</string>
     <string name="service_manage_description">%1$s: actualment en ús. Toca Configuració per controlar-ho.</string>
@@ -4637,6 +4792,8 @@ Nota: no pots fer servir l'empremta digital per desbloquejar aquest dispositiu. 
     <string name="show_screen_updates_summary">Il·lumina superfícies de finestres en actualitzar-se</string>
     <string name="show_touches">Mostra els tocs</string>
     <string name="show_touches_summary">Mostra la ubicació visual dels tocs</string>
+    <string name="show_wifi_popup">Mostra finestres emergents de la Wi-Fi</string>
+    <string name="show_wifi_popup_summary">En obrir aplicacions, dis-me quan hi hagi disponible una xarxa Wi-Fi</string>
     <string name="sim_bad_pin">PIN incorrecte</string>
     <string name="sim_call_back_title">Torna la trucada des de la SIM predeterminada</string>
     <string name="sim_calls_always_use">Utilitza sempre per a les trucades</string>
@@ -4656,7 +4813,7 @@ Nota: no pots fer servir l'empremta digital per desbloquejar aquest dispositiu. 
     <string name="sim_change_succeeded">PIN de la SIM canviat correctament</string>
     <string name="sim_combination_warning_notification_title">Hi ha un problema amb la combinació de les SIM</string>
     <string name="sim_disable_sim_lock">Desbloqueja la targeta SIM</string>
-    <string name="sim_disabled">desactivada</string>
+    <string name="sim_disabled">deshabilitada</string>
     <string name="sim_editor_carrier">Operador</string>
     <string name="sim_editor_color">Color de la SIM</string>
     <string name="sim_editor_name">Nom de la SIM</string>
@@ -4666,8 +4823,8 @@ Nota: no pots fer servir l'empremta digital per desbloquejar aquest dispositiu. 
     <string name="sim_enabled">activada</string>
     <string name="sim_enabler_airplane_on">ERROR: el mode avió està activat!</string>
     <string name="sim_enabler_both_inactive">Error. No es poden desactivar totes les SIM</string>
-    <string name="sim_enabler_disabling">Desactivació...</string>
-    <string name="sim_enabler_enabling">Activació...</string>
+    <string name="sim_enabler_disabling">"S'està desactivant..."</string>
+    <string name="sim_enabler_enabling">"S'està activant..."</string>
     <string name="sim_enabler_in_call">ERROR: en trucada!</string>
     <string name="sim_enabler_need_disable_sim">"S'està desactivant la SIM. N'esteu segur?"</string>
     <string name="sim_enabler_need_enable_sim">"S'està activant la SIM. N'esteu segur?"</string>
@@ -4743,7 +4900,9 @@ Nota: no pots fer servir l'empremta digital per desbloquejar aquest dispositiu. 
     <string name="sms_messages_title">Missatges SMS</string>
     <string name="sms_preference">"Preferència d'SMS"</string>
     <string name="snooze_options_title">Permet posposar les notificacions</string>
+    <string name="softap_tethering_footer_info">Utilitzeu la zona Wi-Fi i la compartició de xarxa per proporcionar internet a altres dispositius mitjançant les vostres dades mòbils o la connexió Wi-Fi. Les aplicacions també poden crear una zona Wi-Fi per compartir contingut amb dispositius propers.</string>
     <string name="sometimes_running">De vegades en execució (%s)</string>
+    <string name="sort_apps_by_date">Ordena per data</string>
     <string name="sort_avg_use">Ordena per ús mitjà</string>
     <string name="sort_max_use">Ordena per ús màxim</string>
     <string name="sort_order_alpha">Ordena per nom</string>
@@ -5056,7 +5215,7 @@ Prova un altre suport (^3) més ràpid o fes servir aquest (^4) com a emmagatzem
     <string name="swipe_up_to_switch_apps_title">Navegació amb 2 botons</string>
     <string name="switch_off_text">Desactivat</string>
     <string name="switch_on_text">Activat</string>
-    <string name="switch_skin_doing">Canviant tema...</string>
+    <string name="switch_skin_doing">"S'està canviant el tema..."</string>
     <string name="switch_theme_has_success">Completa</string>
     <string name="sync_active">Sincronització activa</string>
     <string name="sync_automatically">Sincronitza dades aplicacions autom.</string>
@@ -5086,6 +5245,7 @@ La sincronització de dades que ha ideat Google per permetre l'accés als contac
     <string name="system_navigation_title">Navegació del sistema</string>
     <string name="system_package">No es poden instal·lar actualitzacions del sistema en suports externs.</string>
     <string name="system_ui_settings">Mostra SystemUI Tuner</string>
+    <string name="system_update">Actualització del sistema</string>
     <string name="system_update_settings_list_item_summary" />
     <string name="system_update_settings_list_item_title">Actualitzacions del sistema</string>
     <string name="system_update_uss_title">Descarrega i instal·la</string>
@@ -5153,9 +5313,9 @@ La sincronització de dades que ha ideat Google per permetre l'accés als contac
     <string name="touch_filtered_warning">Com que hi ha una aplicació que oculta una sol·licitud de permís, no es pot verificar la teva resposta des de la configuració.</string>
     <string name="touch_sounds_title">Sons en tocar</string>
     <string name="touchscreen_camera_gesture_summary">Dibuixeu una O per obrir la càmera</string>
-    <string name="touchscreen_camera_gesture_title">Obre la càmera</string>
+    <string name="touchscreen_camera_gesture_title">Obre càmera</string>
     <string name="touchscreen_double_tap_to_wake_gesture_summary">Doneu dos tocs a la pantalla per reactivar el dispositiu</string>
-    <string name="touchscreen_double_tap_to_wake_gesture_title">Doble toc per reactivar</string>
+    <string name="touchscreen_double_tap_to_wake_gesture_title">Doble toc per despertar</string>
     <string name="touchscreen_flashlight_gesture_summary">Dibuixeu una V per encendre/apagar la lot</string>
     <string name="touchscreen_flashlight_gesture_title">Encén/apaga la lot</string>
     <string name="touchscreen_music_gesture_summary">Dibuixeu || amb dos dits per reproduir o pausar la música. Dibuixeu &lt; o > per la pista anterior o següent</string>
@@ -5219,6 +5379,7 @@ La sincronització de dades que ha ideat Google per permetre l'accés als contac
     <string name="tts_status_title">"Estat de l'idioma predeterminat"</string>
     <string name="tx_link_speed">%1$d Mbps</string>
     <string name="tx_wifi_speed">"Transmet la velocitat de l'enllaç"</string>
+    <string name="uicc_alert_message">Es requereix la UICC per iniciar sessió a la xarxa Wi-Fi amb VerizonWiFiAccess SSID</string>
     <string name="uicc_all_lock_summary">"El dispositiu està bloquejat per Sprint SIM o SIM d'operadors internacionals"</string>
     <string name="uicc_lock_summary">El vostre dispositiu només es bloqueja per Sprint SIM</string>
     <string name="uicc_unlock">Desbloqueig UICC</string>
@@ -5240,10 +5401,16 @@ La sincronització de dades que ha ideat Google per permetre l'accés als contac
     <string name="uninstall_failed_device_policy_manager">No es pot desinstal·lar perquè aquest paquet és un administrador actiu del dispositiu.</string>
     <string name="uninstall_failed_device_policy_manager_of_user">"No es pot desinstal·lar perquè aquest paquet és un administrador actiu del dispositiu de l'usuari %1$s."</string>
     <string name="uninstall_failure_notification_channel">Desintal·lacions incorrectes</string>
+    <string name="uninstall_multiple_apps">Operacions massives</string>
     <string name="uninstall_text">Desinstal·la</string>
     <string name="uninstall_update_text">"Voleu substituir aquesta aplicació per la versió de fàbrica? S'eliminaran totes les dades."</string>
     <string name="uninstall_update_text_multiuser">"Voleu substituir aquesta aplicació per la versió de fàbrica? S'eliminaran totes les dades. Això afecta tots els usuaris d'aquest dispositiu, fins i tot els que tenen perfils de treball."</string>
     <string name="uninstall_update_title">Actualització de la desinstal·lació</string>
+    <string name="uninstallapps_confirm">Confirma</string>
+    <string name="uninstallapps_confirm_dialog_body">"S'eliminaran totes les aplicacions seleccionades i tots els fitxers associats amb el paquet d'aplicacions."</string>
+    <string name="uninstallapps_confirm_dialog_title">Voleu eliminar les aplicacions seleccionades?</string>
+    <string name="uninstallapps_selected">seleccionat</string>
+    <string name="uninstallapps_toast_message">"les aplicacions s'han eliminat"</string>
     <string name="uninstalling">Desinstal·lant…</string>
     <string name="uninstalling_notification_channel">"S'estan executant desintal·lacions"</string>
     <string name="unknown">Desconegut</string>
@@ -5325,6 +5492,12 @@ Les empremtes digitals que hagis desat també se suprimiran d'aquest perfil i no
     <string name="unsupported_setting_summary">"L'opció de configuració no és compatible amb aquest telèfon"</string>
     <string name="update_prl">Actualitza el PRL</string>
     <string name="update_profile">Actualitza el perfil</string>
+    <string name="upstream_type_auto">Canvi automàtic</string>
+    <string name="upstream_type_auto_summary">Canvia automàticament a la connexió de dades mòbils quan es desconnecti la Wi-Fi</string>
+    <string name="upstream_type_cell">"Només s'estan compartint les dades mòbils"</string>
+    <string name="upstream_type_cell_summary">"Quan les dades mòbils estan inhabilitades o desconnectades, l'ús compartit està inhabilitat"</string>
+    <string name="upstream_type_wifi">"Només s'està compartint la Wi-Fi"</string>
+    <string name="upstream_type_wifi_summary">"Quan la Wi-Fi està desconnectada, l'ús compartit està inhabilitat"</string>
     <string name="usage">Ús</string>
     <string name="usage_access">"Accés a dades d'ús"</string>
     <string name="usage_access_description">"L'accés a dades d'ús permet que una aplicació pugui fer un seguiment de les altres aplicacions que utilitzes i la freqüència amb què ho fas, així com del teu operador de telefonia mòbil i de la configuració d'idioma, entre d'altres."</string>
@@ -5510,6 +5683,9 @@ Qualsevol usuari pot actualitzar les aplicacions dels altres usuaris."</string>
     <string name="v7_preference_on">ACTIVAT</string>
     <string name="verify_apps_over_usb_summary">Comprova les aplicacions instal·lades mitjançant ADB/ADT per detectar comportaments perillosos</string>
     <string name="verify_apps_over_usb_title">Verifica aplicacions per USB</string>
+    <string name="verizon_store_demo_mode_hint">Introduïu la contrasenya</string>
+    <string name="verizon_store_demo_mode_title">Verizon Store Demo Mode</string>
+    <string name="verizon_wifi_tether_band_warning">Canviar la configuració de la zona Wi-Fi mòbil desconectarà qualsevol dispositiu connectat actualment a la zona Wi-Fi mòbil.</string>
     <string name="version_text">versió %1$s</string>
     <string name="vibrate_in_silent_title">Vibra quan estigui en silenci</string>
     <string name="vibrate_input_devices">Redirigeix la vibració</string>
@@ -5626,6 +5802,8 @@ Qualsevol usuari pot actualitzar les aplicacions dels altres usuaris."</string>
     <string name="wallpaper_settings_title">Fons de pantalla</string>
     <string name="wallpaper_suggestion_summary">Personalitza la pantalla</string>
     <string name="wallpaper_suggestion_title">Canvia el fons de pantalla</string>
+    <string name="warning_title">Advertència</string>
+    <string name="warranty_date_code">Data de garantia</string>
     <string name="web_action_enable_summary">Obre enllaços en aplicacions, encara que no estiguin instal·lades</string>
     <string name="web_action_enable_title">Aplicacions instantànies</string>
     <string name="web_action_section_title">Aplicacions instantànies</string>
@@ -5940,8 +6118,17 @@ Vols permetre-ho per a totes les aplicacions que vulguin cercar xarxes?"</string
     <string name="wifi_tether_custom_auto_turn_off_always_summary">Sempre activada</string>
     <string name="wifi_tether_enabled_subtext">%1$s està actiu</string>
     <string name="wifi_tether_failed_subtext">"Error de punt d'accés Wi-Fi"</string>
+    <string name="wifi_tether_passphrase_warning">8 caràcters com a mínim, incloent-hi 1 alfa, 1 numèric i 1 símbol</string>
     <string name="wifi_tether_starting">"S'està activant el punt d'accés Wi-Fi…"</string>
     <string name="wifi_tether_stopping">"S'està desactivant el punt d'accés Wi-Fi…"</string>
+    <string name="wifi_tether_upstream_network_type_config">"Configuració de l'ús compartit"</string>
+    <string name="wifi_tether_upstream_network_type_title">"Configuració de l'ús compartit"</string>
+    <string name="wifi_tether_verizon_custom_auto_turn_off_10_min_summary">"Després de 10 minuts d'inactivitat"</string>
+    <string name="wifi_tether_verizon_custom_auto_turn_off_20_min_summary">"Després de 20 minuts d'inactivitat"</string>
+    <string name="wifi_tether_verizon_custom_auto_turn_off_30_min_summary">"Després de 30 minuts d'inactivitat"</string>
+    <string name="wifi_tether_verizon_custom_auto_turn_off_5_min_summary">"Després de 5 minuts d'inactivitat"</string>
+    <string name="wifi_tether_verizon_custom_auto_turn_off_60_min_summary">"Després de 60 minuts d'inactivitat"</string>
+    <string name="wifi_tether_verizon_custom_auto_turn_off_always_summary">Sempre activada</string>
     <string name="wifi_turned_on_message">La xarxa Wi‑Fi està activada</string>
     <string name="wifi_unchanged">(sense canvis)</string>
     <string name="wifi_unmetered_label">"D'ús no mesurat"</string>
@@ -5984,8 +6171,8 @@ Vols permetre-ho per a totes les aplicacions que vulguin cercar xarxes?"</string
     <string name="wizard_finish">Finalitza</string>
     <string name="wizard_next">Següent</string>
     <string name="work_alarm_ringtone_title">"So d'alarma de la feina predeterminat"</string>
-    <string name="work_life_balance">Balanç treball-vida</string>
-    <string name="work_life_disabled_toast">"La funció d'Equilibri treball-vida està inhabilitada."</string>
+    <string name="work_life_balance">Work-Life Balance</string>
+    <string name="work_life_disabled_toast">La funció Work Life Balance està inhabilitada.</string>
     <string name="work_mode_label">Perfil professional</string>
     <string name="work_mode_off_summary">Les aplicacions i les notificacions estan desactivades</string>
     <string name="work_mode_on_summary">Gestionat per la teva organització</string>

@@ -194,7 +194,7 @@
 
     move-object v0, v2
 
-    const v2, 0x7f0a050f
+    const v2, 0x7f0a050c
 
     invoke-virtual {p2, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -204,7 +204,7 @@
 
     iput-object v2, v0, Lcom/oneplus/settings/quicklaunch/OPShortcutListAdapter$ItemViewHolder;->parent:Landroid/widget/RelativeLayout;
 
-    const v2, 0x7f0a0720
+    const v2, 0x7f0a0721
 
     invoke-virtual {p2, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -224,7 +224,7 @@
 
     iput-object v2, v0, Lcom/oneplus/settings/quicklaunch/OPShortcutListAdapter$ItemViewHolder;->appIconIv:Landroid/widget/ImageView;
 
-    const v2, 0x7f0a063b
+    const v2, 0x7f0a063c
 
     invoke-virtual {p2, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -234,7 +234,7 @@
 
     iput-object v2, v0, Lcom/oneplus/settings/quicklaunch/OPShortcutListAdapter$ItemViewHolder;->smallAppIconIv:Landroid/widget/ImageView;
 
-    const v2, 0x7f0a0421
+    const v2, 0x7f0a0426
 
     invoke-virtual {p2, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -244,7 +244,7 @@
 
     iput-object v2, v0, Lcom/oneplus/settings/quicklaunch/OPShortcutListAdapter$ItemViewHolder;->appNameTv:Landroid/widget/TextView;
 
-    const v2, 0x7f0a0698
+    const v2, 0x7f0a0699
 
     invoke-virtual {p2, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -262,7 +262,7 @@
 
     iput-object v2, v0, Lcom/oneplus/settings/quicklaunch/OPShortcutListAdapter$ItemViewHolder;->bottomLine:Landroid/view/View;
 
-    const v2, 0x7f0a02ab
+    const v2, 0x7f0a02b0
 
     invoke-virtual {p2, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -320,16 +320,16 @@
 
     invoke-virtual {v5, v6}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    goto :goto_2
+    goto :goto_3
 
     :cond_1
     iget-object v5, v0, Lcom/oneplus/settings/quicklaunch/OPShortcutListAdapter$ItemViewHolder;->titleTv:Landroid/widget/TextView;
 
-    const v6, 0x7f120e70
+    const v6, 0x7f120eed
 
     invoke-virtual {v5, v6}, Landroid/widget/TextView;->setText(I)V
 
-    goto :goto_2
+    goto :goto_3
 
     :cond_2
     invoke-virtual {v1}, Lcom/oneplus/settings/better/OPAppModel;->getType()I
@@ -338,11 +338,15 @@
 
     const/4 v6, 0x2
 
+    if-eq v5, v6, :cond_6
+
+    invoke-virtual {v1}, Lcom/oneplus/settings/better/OPAppModel;->getType()I
+
+    move-result v5
+
+    const/4 v6, 0x3
+
     if-ne v5, v6, :cond_3
-
-    iget-object v5, v0, Lcom/oneplus/settings/quicklaunch/OPShortcutListAdapter$ItemViewHolder;->titleTv:Landroid/widget/TextView;
-
-    invoke-virtual {v5, v2}, Landroid/widget/TextView;->setVisibility(I)V
 
     goto :goto_2
 
@@ -398,7 +402,7 @@
 
     invoke-virtual {v5, v2}, Landroid/widget/TextView;->setVisibility(I)V
 
-    goto :goto_2
+    goto :goto_3
 
     :cond_5
     :goto_1
@@ -414,12 +418,20 @@
 
     invoke-virtual {v5, v6}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
+    goto :goto_3
+
+    :cond_6
     :goto_2
+    iget-object v5, v0, Lcom/oneplus/settings/quicklaunch/OPShortcutListAdapter$ItemViewHolder;->titleTv:Landroid/widget/TextView;
+
+    invoke-virtual {v5, v2}, Landroid/widget/TextView;->setVisibility(I)V
+
+    :goto_3
     invoke-virtual {v1}, Lcom/oneplus/settings/better/OPAppModel;->getType()I
 
     move-result v5
 
-    if-ne v5, v4, :cond_6
+    if-ne v5, v4, :cond_7
 
     iget-object v5, v0, Lcom/oneplus/settings/quicklaunch/OPShortcutListAdapter$ItemViewHolder;->appIconIv:Landroid/widget/ImageView;
 
@@ -441,9 +453,9 @@
 
     invoke-virtual {v5, v6}, Landroid/widget/ImageView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
 
-    goto :goto_3
+    goto :goto_4
 
-    :cond_6
+    :cond_7
     iget-object v5, v0, Lcom/oneplus/settings/quicklaunch/OPShortcutListAdapter$ItemViewHolder;->appIconIv:Landroid/widget/ImageView;
 
     invoke-virtual {v1}, Lcom/oneplus/settings/better/OPAppModel;->getAppIcon()Landroid/graphics/drawable/Drawable;
@@ -456,7 +468,7 @@
 
     invoke-virtual {v5, v2}, Landroid/widget/ImageView;->setVisibility(I)V
 
-    :goto_3
+    :goto_4
     iget-object v5, v0, Lcom/oneplus/settings/quicklaunch/OPShortcutListAdapter$ItemViewHolder;->appNameTv:Landroid/widget/TextView;
 
     invoke-virtual {v1}, Lcom/oneplus/settings/better/OPAppModel;->getLabel()Ljava/lang/String;
@@ -473,20 +485,20 @@
 
     move-result v2
 
-    if-eqz v2, :cond_7
+    if-eqz v2, :cond_8
 
     iget-object v2, v0, Lcom/oneplus/settings/quicklaunch/OPShortcutListAdapter$ItemViewHolder;->checkBox:Landroid/widget/CheckBox;
 
     invoke-virtual {v2, v4}, Landroid/widget/CheckBox;->setChecked(Z)V
 
-    goto :goto_4
+    goto :goto_5
 
-    :cond_7
+    :cond_8
     iget-object v2, v0, Lcom/oneplus/settings/quicklaunch/OPShortcutListAdapter$ItemViewHolder;->checkBox:Landroid/widget/CheckBox;
 
     invoke-virtual {v2, v3}, Landroid/widget/CheckBox;->setChecked(Z)V
 
-    :goto_4
+    :goto_5
     return-object p2
 .end method
 

@@ -71,7 +71,7 @@
 
     if-nez v0, :cond_1
 
-    const v1, 0x7f1206b1
+    const v1, 0x7f1206e6
 
     invoke-virtual {p1, v1}, Landroidx/preference/Preference;->setSummary(I)V
 
@@ -84,7 +84,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f1206b2
+    const v2, 0x7f1206e7
 
     const/4 v3, 0x1
 

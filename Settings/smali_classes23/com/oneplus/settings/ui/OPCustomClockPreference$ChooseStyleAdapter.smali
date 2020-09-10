@@ -74,7 +74,9 @@
 
     iget v0, v0, Lcom/oneplus/settings/ui/OPCustomClockPreference$ItemEntity;->type:I
 
-    const/4 v1, 0x1
+    const/4 v1, 0x4
+
+    const/4 v2, 0x1
 
     if-nez v0, :cond_0
 
@@ -84,9 +86,9 @@
 
     move-result-object v0
 
-    const v2, 0x7f0805f0
+    const v3, 0x7f0805fd
 
-    invoke-virtual {v0, v2}, Landroid/widget/ImageView;->setImageResource(I)V
+    invoke-virtual {v0, v3}, Landroid/widget/ImageView;->setBackgroundResource(I)V
 
     goto/16 :goto_0
 
@@ -105,9 +107,9 @@
 
     iget v0, v0, Lcom/oneplus/settings/ui/OPCustomClockPreference$ItemEntity;->type:I
 
-    const/4 v2, 0x2
+    const/16 v3, 0x9
 
-    if-ne v0, v2, :cond_1
+    if-ne v0, v3, :cond_1
 
     iget-object v0, p0, Lcom/oneplus/settings/ui/OPCustomClockPreference$ChooseStyleAdapter;->this$0:Lcom/oneplus/settings/ui/OPCustomClockPreference;
 
@@ -115,11 +117,11 @@
 
     move-result-object v0
 
-    const v2, 0x7f0805f2
+    const v3, 0x7f080602
 
-    invoke-virtual {v0, v2}, Landroid/widget/ImageView;->setImageResource(I)V
+    invoke-virtual {v0, v3}, Landroid/widget/ImageView;->setBackgroundResource(I)V
 
-    goto :goto_0
+    goto/16 :goto_0
 
     :cond_1
     iget-object v0, p0, Lcom/oneplus/settings/ui/OPCustomClockPreference$ChooseStyleAdapter;->this$0:Lcom/oneplus/settings/ui/OPCustomClockPreference;
@@ -136,7 +138,9 @@
 
     iget v0, v0, Lcom/oneplus/settings/ui/OPCustomClockPreference$ItemEntity;->type:I
 
-    if-ne v0, v1, :cond_2
+    const/4 v3, 0x6
+
+    if-ne v0, v3, :cond_2
 
     iget-object v0, p0, Lcom/oneplus/settings/ui/OPCustomClockPreference$ChooseStyleAdapter;->this$0:Lcom/oneplus/settings/ui/OPCustomClockPreference;
 
@@ -144,11 +148,11 @@
 
     move-result-object v0
 
-    const v2, 0x7f0805ef
+    const v3, 0x7f0805f9
 
-    invoke-virtual {v0, v2}, Landroid/widget/ImageView;->setImageResource(I)V
+    invoke-virtual {v0, v3}, Landroid/widget/ImageView;->setBackgroundResource(I)V
 
-    goto :goto_0
+    goto/16 :goto_0
 
     :cond_2
     iget-object v0, p0, Lcom/oneplus/settings/ui/OPCustomClockPreference$ChooseStyleAdapter;->this$0:Lcom/oneplus/settings/ui/OPCustomClockPreference;
@@ -165,8 +169,6 @@
 
     iget v0, v0, Lcom/oneplus/settings/ui/OPCustomClockPreference$ItemEntity;->type:I
 
-    const/4 v2, 0x3
-
     if-ne v0, v2, :cond_3
 
     iget-object v0, p0, Lcom/oneplus/settings/ui/OPCustomClockPreference$ChooseStyleAdapter;->this$0:Lcom/oneplus/settings/ui/OPCustomClockPreference;
@@ -175,11 +177,11 @@
 
     move-result-object v0
 
-    const v2, 0x7f0805f3
+    const v3, 0x7f080604
 
-    invoke-virtual {v0, v2}, Landroid/widget/ImageView;->setImageResource(I)V
+    invoke-virtual {v0, v3}, Landroid/widget/ImageView;->setBackgroundResource(I)V
 
-    goto :goto_0
+    goto/16 :goto_0
 
     :cond_3
     iget-object v0, p0, Lcom/oneplus/settings/ui/OPCustomClockPreference$ChooseStyleAdapter;->this$0:Lcom/oneplus/settings/ui/OPCustomClockPreference;
@@ -196,9 +198,9 @@
 
     iget v0, v0, Lcom/oneplus/settings/ui/OPCustomClockPreference$ItemEntity;->type:I
 
-    const/16 v2, 0xa
+    const/16 v3, 0x28
 
-    if-ne v0, v2, :cond_4
+    if-ne v0, v3, :cond_4
 
     iget-object v0, p0, Lcom/oneplus/settings/ui/OPCustomClockPreference$ChooseStyleAdapter;->this$0:Lcom/oneplus/settings/ui/OPCustomClockPreference;
 
@@ -206,11 +208,226 @@
 
     move-result-object v0
 
-    const v2, 0x7f0805f1
+    const v3, 0x7f080600
 
-    invoke-virtual {v0, v2}, Landroid/widget/ImageView;->setImageResource(I)V
+    invoke-virtual {v0, v3}, Landroid/widget/ImageView;->setBackgroundResource(I)V
+
+    goto/16 :goto_0
 
     :cond_4
+    iget-object v0, p0, Lcom/oneplus/settings/ui/OPCustomClockPreference$ChooseStyleAdapter;->this$0:Lcom/oneplus/settings/ui/OPCustomClockPreference;
+
+    invoke-static {v0}, Lcom/oneplus/settings/ui/OPCustomClockPreference;->access$000(Lcom/oneplus/settings/ui/OPCustomClockPreference;)Ljava/util/List;
+
+    move-result-object v0
+
+    invoke-interface {v0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/oneplus/settings/ui/OPCustomClockPreference$ItemEntity;
+
+    iget v0, v0, Lcom/oneplus/settings/ui/OPCustomClockPreference$ItemEntity;->type:I
+
+    const/16 v3, 0xa
+
+    if-ne v0, v3, :cond_5
+
+    iget-object v0, p0, Lcom/oneplus/settings/ui/OPCustomClockPreference$ChooseStyleAdapter;->this$0:Lcom/oneplus/settings/ui/OPCustomClockPreference;
+
+    invoke-static {v0}, Lcom/oneplus/settings/ui/OPCustomClockPreference;->access$200(Lcom/oneplus/settings/ui/OPCustomClockPreference;)Landroid/widget/ImageView;
+
+    move-result-object v0
+
+    const v3, 0x7f080603
+
+    invoke-virtual {v0, v3}, Landroid/widget/ImageView;->setBackgroundResource(I)V
+
+    goto/16 :goto_0
+
+    :cond_5
+    iget-object v0, p0, Lcom/oneplus/settings/ui/OPCustomClockPreference$ChooseStyleAdapter;->this$0:Lcom/oneplus/settings/ui/OPCustomClockPreference;
+
+    invoke-static {v0}, Lcom/oneplus/settings/ui/OPCustomClockPreference;->access$000(Lcom/oneplus/settings/ui/OPCustomClockPreference;)Ljava/util/List;
+
+    move-result-object v0
+
+    invoke-interface {v0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/oneplus/settings/ui/OPCustomClockPreference$ItemEntity;
+
+    iget v0, v0, Lcom/oneplus/settings/ui/OPCustomClockPreference$ItemEntity;->type:I
+
+    const/4 v3, 0x2
+
+    if-ne v0, v3, :cond_6
+
+    iget-object v0, p0, Lcom/oneplus/settings/ui/OPCustomClockPreference$ChooseStyleAdapter;->this$0:Lcom/oneplus/settings/ui/OPCustomClockPreference;
+
+    invoke-static {v0}, Lcom/oneplus/settings/ui/OPCustomClockPreference;->access$200(Lcom/oneplus/settings/ui/OPCustomClockPreference;)Landroid/widget/ImageView;
+
+    move-result-object v0
+
+    const v3, 0x7f0805fe
+
+    invoke-virtual {v0, v3}, Landroid/widget/ImageView;->setBackgroundResource(I)V
+
+    goto/16 :goto_0
+
+    :cond_6
+    iget-object v0, p0, Lcom/oneplus/settings/ui/OPCustomClockPreference$ChooseStyleAdapter;->this$0:Lcom/oneplus/settings/ui/OPCustomClockPreference;
+
+    invoke-static {v0}, Lcom/oneplus/settings/ui/OPCustomClockPreference;->access$000(Lcom/oneplus/settings/ui/OPCustomClockPreference;)Ljava/util/List;
+
+    move-result-object v0
+
+    invoke-interface {v0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/oneplus/settings/ui/OPCustomClockPreference$ItemEntity;
+
+    iget v0, v0, Lcom/oneplus/settings/ui/OPCustomClockPreference$ItemEntity;->type:I
+
+    const/4 v3, 0x3
+
+    if-ne v0, v3, :cond_7
+
+    iget-object v0, p0, Lcom/oneplus/settings/ui/OPCustomClockPreference$ChooseStyleAdapter;->this$0:Lcom/oneplus/settings/ui/OPCustomClockPreference;
+
+    invoke-static {v0}, Lcom/oneplus/settings/ui/OPCustomClockPreference;->access$200(Lcom/oneplus/settings/ui/OPCustomClockPreference;)Landroid/widget/ImageView;
+
+    move-result-object v0
+
+    const v3, 0x7f0805ff
+
+    invoke-virtual {v0, v3}, Landroid/widget/ImageView;->setBackgroundResource(I)V
+
+    goto/16 :goto_0
+
+    :cond_7
+    iget-object v0, p0, Lcom/oneplus/settings/ui/OPCustomClockPreference$ChooseStyleAdapter;->this$0:Lcom/oneplus/settings/ui/OPCustomClockPreference;
+
+    invoke-static {v0}, Lcom/oneplus/settings/ui/OPCustomClockPreference;->access$000(Lcom/oneplus/settings/ui/OPCustomClockPreference;)Ljava/util/List;
+
+    move-result-object v0
+
+    invoke-interface {v0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/oneplus/settings/ui/OPCustomClockPreference$ItemEntity;
+
+    iget v0, v0, Lcom/oneplus/settings/ui/OPCustomClockPreference$ItemEntity;->type:I
+
+    if-ne v0, v1, :cond_8
+
+    iget-object v0, p0, Lcom/oneplus/settings/ui/OPCustomClockPreference$ChooseStyleAdapter;->this$0:Lcom/oneplus/settings/ui/OPCustomClockPreference;
+
+    invoke-static {v0}, Lcom/oneplus/settings/ui/OPCustomClockPreference;->access$200(Lcom/oneplus/settings/ui/OPCustomClockPreference;)Landroid/widget/ImageView;
+
+    move-result-object v0
+
+    const v3, 0x7f080605
+
+    invoke-virtual {v0, v3}, Landroid/widget/ImageView;->setBackgroundResource(I)V
+
+    goto :goto_0
+
+    :cond_8
+    iget-object v0, p0, Lcom/oneplus/settings/ui/OPCustomClockPreference$ChooseStyleAdapter;->this$0:Lcom/oneplus/settings/ui/OPCustomClockPreference;
+
+    invoke-static {v0}, Lcom/oneplus/settings/ui/OPCustomClockPreference;->access$000(Lcom/oneplus/settings/ui/OPCustomClockPreference;)Ljava/util/List;
+
+    move-result-object v0
+
+    invoke-interface {v0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/oneplus/settings/ui/OPCustomClockPreference$ItemEntity;
+
+    iget v0, v0, Lcom/oneplus/settings/ui/OPCustomClockPreference$ItemEntity;->type:I
+
+    const/4 v3, 0x7
+
+    if-ne v0, v3, :cond_9
+
+    iget-object v0, p0, Lcom/oneplus/settings/ui/OPCustomClockPreference$ChooseStyleAdapter;->this$0:Lcom/oneplus/settings/ui/OPCustomClockPreference;
+
+    invoke-static {v0}, Lcom/oneplus/settings/ui/OPCustomClockPreference;->access$200(Lcom/oneplus/settings/ui/OPCustomClockPreference;)Landroid/widget/ImageView;
+
+    move-result-object v0
+
+    const v3, 0x7f0805fa
+
+    invoke-virtual {v0, v3}, Landroid/widget/ImageView;->setBackgroundResource(I)V
+
+    goto :goto_0
+
+    :cond_9
+    iget-object v0, p0, Lcom/oneplus/settings/ui/OPCustomClockPreference$ChooseStyleAdapter;->this$0:Lcom/oneplus/settings/ui/OPCustomClockPreference;
+
+    invoke-static {v0}, Lcom/oneplus/settings/ui/OPCustomClockPreference;->access$000(Lcom/oneplus/settings/ui/OPCustomClockPreference;)Ljava/util/List;
+
+    move-result-object v0
+
+    invoke-interface {v0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/oneplus/settings/ui/OPCustomClockPreference$ItemEntity;
+
+    iget v0, v0, Lcom/oneplus/settings/ui/OPCustomClockPreference$ItemEntity;->type:I
+
+    const/16 v3, 0x8
+
+    if-ne v0, v3, :cond_a
+
+    iget-object v0, p0, Lcom/oneplus/settings/ui/OPCustomClockPreference$ChooseStyleAdapter;->this$0:Lcom/oneplus/settings/ui/OPCustomClockPreference;
+
+    invoke-static {v0}, Lcom/oneplus/settings/ui/OPCustomClockPreference;->access$200(Lcom/oneplus/settings/ui/OPCustomClockPreference;)Landroid/widget/ImageView;
+
+    move-result-object v0
+
+    const v3, 0x7f0805fb
+
+    invoke-virtual {v0, v3}, Landroid/widget/ImageView;->setBackgroundResource(I)V
+
+    goto :goto_0
+
+    :cond_a
+    iget-object v0, p0, Lcom/oneplus/settings/ui/OPCustomClockPreference$ChooseStyleAdapter;->this$0:Lcom/oneplus/settings/ui/OPCustomClockPreference;
+
+    invoke-static {v0}, Lcom/oneplus/settings/ui/OPCustomClockPreference;->access$000(Lcom/oneplus/settings/ui/OPCustomClockPreference;)Ljava/util/List;
+
+    move-result-object v0
+
+    invoke-interface {v0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/oneplus/settings/ui/OPCustomClockPreference$ItemEntity;
+
+    iget v0, v0, Lcom/oneplus/settings/ui/OPCustomClockPreference$ItemEntity;->type:I
+
+    const/4 v3, 0x5
+
+    if-ne v0, v3, :cond_b
+
+    iget-object v0, p0, Lcom/oneplus/settings/ui/OPCustomClockPreference$ChooseStyleAdapter;->this$0:Lcom/oneplus/settings/ui/OPCustomClockPreference;
+
+    invoke-static {v0}, Lcom/oneplus/settings/ui/OPCustomClockPreference;->access$200(Lcom/oneplus/settings/ui/OPCustomClockPreference;)Landroid/widget/ImageView;
+
+    move-result-object v0
+
+    const v3, 0x7f0805fc
+
+    invoke-virtual {v0, v3}, Landroid/widget/ImageView;->setBackgroundResource(I)V
+
+    :cond_b
     :goto_0
     iget-object v0, p0, Lcom/oneplus/settings/ui/OPCustomClockPreference$ChooseStyleAdapter;->this$0:Lcom/oneplus/settings/ui/OPCustomClockPreference;
 
@@ -218,7 +435,7 @@
 
     move-result-object v0
 
-    if-eqz v0, :cond_5
+    if-eqz v0, :cond_c
 
     iget-object v0, p0, Lcom/oneplus/settings/ui/OPCustomClockPreference$ChooseStyleAdapter;->this$0:Lcom/oneplus/settings/ui/OPCustomClockPreference;
 
@@ -228,7 +445,7 @@
 
     iget-object v0, v0, Lcom/oneplus/settings/ui/OPCustomClockPreference$ClockViewHolder;->imageViewMask:Lcom/oneplus/settings/ui/RadiusImageView;
 
-    if-eqz v0, :cond_5
+    if-eqz v0, :cond_c
 
     iget-object v0, p0, Lcom/oneplus/settings/ui/OPCustomClockPreference$ChooseStyleAdapter;->this$0:Lcom/oneplus/settings/ui/OPCustomClockPreference;
 
@@ -238,16 +455,14 @@
 
     iget-object v0, v0, Lcom/oneplus/settings/ui/OPCustomClockPreference$ClockViewHolder;->imageViewMask:Lcom/oneplus/settings/ui/RadiusImageView;
 
-    const/4 v2, 0x4
+    invoke-virtual {v0, v1}, Lcom/oneplus/settings/ui/RadiusImageView;->setVisibility(I)V
 
-    invoke-virtual {v0, v2}, Lcom/oneplus/settings/ui/RadiusImageView;->setVisibility(I)V
-
-    :cond_5
+    :cond_c
     iget-object v0, p2, Lcom/oneplus/settings/ui/OPCustomClockPreference$ClockViewHolder;->imageViewMask:Lcom/oneplus/settings/ui/RadiusImageView;
 
-    const/4 v2, 0x0
+    const/4 v1, 0x0
 
-    invoke-virtual {v0, v2}, Lcom/oneplus/settings/ui/RadiusImageView;->setVisibility(I)V
+    invoke-virtual {v0, v1}, Lcom/oneplus/settings/ui/RadiusImageView;->setVisibility(I)V
 
     iget-object v0, p0, Lcom/oneplus/settings/ui/OPCustomClockPreference$ChooseStyleAdapter;->this$0:Lcom/oneplus/settings/ui/OPCustomClockPreference;
 
@@ -266,7 +481,7 @@
 
     move-result v3
 
-    if-ge v0, v3, :cond_7
+    if-ge v0, v3, :cond_e
 
     iget-object v3, p0, Lcom/oneplus/settings/ui/OPCustomClockPreference$ChooseStyleAdapter;->this$0:Lcom/oneplus/settings/ui/OPCustomClockPreference;
 
@@ -280,14 +495,14 @@
 
     check-cast v3, Lcom/oneplus/settings/ui/OPCustomClockPreference$ItemEntity;
 
-    if-ne p1, v0, :cond_6
+    if-ne p1, v0, :cond_d
 
-    move v4, v1
+    move v4, v2
 
     goto :goto_2
 
-    :cond_6
-    move v4, v2
+    :cond_d
+    move v4, v1
 
     :goto_2
     iput-boolean v4, v3, Lcom/oneplus/settings/ui/OPCustomClockPreference$ItemEntity;->selected:Z
@@ -296,7 +511,7 @@
 
     goto :goto_1
 
-    :cond_7
+    :cond_e
     return-void
 .end method
 
@@ -335,7 +550,7 @@
 
     iget v2, v0, Lcom/oneplus/settings/ui/OPCustomClockPreference$ItemEntity;->resId:I
 
-    invoke-virtual {v1, v2}, Lcom/oneplus/settings/ui/RadiusImageView;->setImageResource(I)V
+    invoke-virtual {v1, v2}, Lcom/oneplus/settings/ui/RadiusImageView;->setBackgroundResource(I)V
 
     iget-boolean v1, v0, Lcom/oneplus/settings/ui/OPCustomClockPreference$ItemEntity;->selected:Z
 

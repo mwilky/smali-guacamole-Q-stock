@@ -190,7 +190,7 @@
 
     if-eqz v6, :cond_3
 
-    const v6, 0x7f0805cc
+    const v6, 0x7f0805d5
 
     invoke-virtual {v5, v6}, Lcom/android/settingslib/RestrictedPreference;->setIcon(I)V
 
@@ -225,7 +225,7 @@
 
     invoke-virtual {v5, v6}, Lcom/android/settingslib/RestrictedPreference;->setEnabled(Z)V
 
-    const v6, 0x7f1205ee
+    const v6, 0x7f120614
 
     invoke-virtual {v5, v6}, Lcom/android/settingslib/RestrictedPreference;->setSummary(I)V
 

@@ -61,7 +61,7 @@
 
     iget-object v3, p0, Lcom/android/settings/deviceinfo/BrandNamePreferenceController;->mContext:Landroid/content/Context;
 
-    const v4, 0x7f1205ce
+    const v4, 0x7f1205ea
 
     invoke-virtual {v3, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

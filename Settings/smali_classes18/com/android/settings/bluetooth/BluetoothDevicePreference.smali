@@ -30,6 +30,10 @@
 
 .field private final mShowDevicesWithoutNames:Z
 
+.field private mTwsAddress:Z
+
+.field private mTwsBatteryInfo:Ljava/lang/String;
+
 .field private final mUserManager:Landroid/os/UserManager;
 
 
@@ -152,14 +156,14 @@
 
     if-eqz v2, :cond_0
 
-    const v2, 0x7f1202de
+    const v2, 0x7f1202ef
 
     invoke-virtual {v0, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
     :cond_0
-    const v2, 0x7f1202f9
+    const v2, 0x7f12030c
 
     const/4 v3, 0x1
 
@@ -173,7 +177,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f1202ff
+    const v3, 0x7f120312
 
     invoke-virtual {v0, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -219,7 +223,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f120342
+    const v2, 0x7f120355
 
     invoke-static {v0, v1, v2}, Lcom/android/settings/bluetooth/Utils;->showError(Landroid/content/Context;Ljava/lang/String;I)V
 
@@ -322,7 +326,7 @@
 .method protected getSecondTargetResId()I
     .locals 1
 
-    const v0, 0x7f0d0278
+    const v0, 0x7f0d0279
 
     return v0
 .end method
@@ -371,7 +375,7 @@
 
     if-ne v0, v1, :cond_1
 
-    const v0, 0x7f0a060a
+    const v0, 0x7f0a060b
 
     invoke-virtual {p1, v0}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 
@@ -538,8 +542,64 @@
 
     move-result-object v0
 
+    invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    iget-object v0, p0, Lcom/android/settings/bluetooth/BluetoothDevicePreference;->mTwsBatteryInfo:Ljava/lang/String;
+
+    invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    iget-object v0, p0, Lcom/android/settings/bluetooth/BluetoothDevicePreference;->mTwsBatteryInfo:Ljava/lang/String;
+
     invoke-virtual {p0, v0}, Lcom/android/settings/bluetooth/BluetoothDevicePreference;->setSummary(Ljava/lang/CharSequence;)V
 
+    goto :goto_0
+
+    :cond_0
+    iget-boolean v0, p0, Lcom/android/settings/bluetooth/BluetoothDevicePreference;->mTwsAddress:Z
+
+    if-eqz v0, :cond_1
+
+    iget-object v0, p0, Lcom/android/settings/bluetooth/BluetoothDevicePreference;->mCachedDevice:Lcom/android/settingslib/bluetooth/CachedBluetoothDevice;
+
+    invoke-virtual {v0}, Lcom/android/settingslib/bluetooth/CachedBluetoothDevice;->getConnectionSummary()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_2
+
+    iget-object v0, p0, Lcom/android/settings/bluetooth/BluetoothDevicePreference;->mCachedDevice:Lcom/android/settingslib/bluetooth/CachedBluetoothDevice;
+
+    invoke-virtual {v0}, Lcom/android/settingslib/bluetooth/CachedBluetoothDevice;->getConnectionSummary()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-virtual {p0, v0}, Lcom/android/settings/bluetooth/BluetoothDevicePreference;->setSummary(Ljava/lang/CharSequence;)V
+
+    goto :goto_0
+
+    :cond_1
+    iget-object v0, p0, Lcom/android/settings/bluetooth/BluetoothDevicePreference;->mCachedDevice:Lcom/android/settingslib/bluetooth/CachedBluetoothDevice;
+
+    invoke-virtual {v0}, Lcom/android/settingslib/bluetooth/CachedBluetoothDevice;->getConnectionSummary()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-virtual {p0, v0}, Lcom/android/settings/bluetooth/BluetoothDevicePreference;->setSummary(Ljava/lang/CharSequence;)V
+
+    :cond_2
+    :goto_0
     nop
 
     invoke-virtual {p0}, Lcom/android/settings/bluetooth/BluetoothDevicePreference;->getContext()Landroid/content/Context;
@@ -554,7 +614,7 @@
 
     iget-object v1, v0, Landroid/util/Pair;->first:Ljava/lang/Object;
 
-    if-eqz v1, :cond_0
+    if-eqz v1, :cond_3
 
     iget-object v1, v0, Landroid/util/Pair;->first:Ljava/lang/Object;
 
@@ -584,7 +644,7 @@
 
     iput-object v1, p0, Lcom/android/settings/bluetooth/BluetoothDevicePreference;->contentDescription:Ljava/lang/String;
 
-    :cond_0
+    :cond_3
     iget-object v1, p0, Lcom/android/settings/bluetooth/BluetoothDevicePreference;->mCachedDevice:Lcom/android/settingslib/bluetooth/CachedBluetoothDevice;
 
     invoke-virtual {v1}, Lcom/android/settingslib/bluetooth/CachedBluetoothDevice;->isBusy()Z
@@ -599,7 +659,7 @@
 
     iget-boolean v1, p0, Lcom/android/settings/bluetooth/BluetoothDevicePreference;->mShowDevicesWithoutNames:Z
 
-    if-nez v1, :cond_2
+    if-nez v1, :cond_5
 
     iget-object v1, p0, Lcom/android/settings/bluetooth/BluetoothDevicePreference;->mCachedDevice:Lcom/android/settingslib/bluetooth/CachedBluetoothDevice;
 
@@ -607,24 +667,24 @@
 
     move-result v1
 
-    if-eqz v1, :cond_1
+    if-eqz v1, :cond_4
 
-    goto :goto_0
+    goto :goto_1
 
-    :cond_1
+    :cond_4
     const/4 v2, 0x0
 
-    :cond_2
-    :goto_0
+    :cond_5
+    :goto_1
     invoke-virtual {p0, v2}, Lcom/android/settings/bluetooth/BluetoothDevicePreference;->setVisible(Z)V
 
     iget-boolean v1, p0, Lcom/android/settings/bluetooth/BluetoothDevicePreference;->mNeedNotifyHierarchyChanged:Z
 
-    if-eqz v1, :cond_3
+    if-eqz v1, :cond_6
 
     invoke-virtual {p0}, Lcom/android/settings/bluetooth/BluetoothDevicePreference;->notifyHierarchyChanged()V
 
-    :cond_3
+    :cond_6
     return-void
 .end method
 
@@ -655,6 +715,22 @@
     .locals 0
 
     iput-boolean p1, p0, Lcom/android/settings/bluetooth/BluetoothDevicePreference;->mNeedNotifyHierarchyChanged:Z
+
+    return-void
+.end method
+
+.method public setTwsAddress(Z)V
+    .locals 0
+
+    iput-boolean p1, p0, Lcom/android/settings/bluetooth/BluetoothDevicePreference;->mTwsAddress:Z
+
+    return-void
+.end method
+
+.method public setTwsBattery(Ljava/lang/String;)V
+    .locals 0
+
+    iput-object p1, p0, Lcom/android/settings/bluetooth/BluetoothDevicePreference;->mTwsBatteryInfo:Ljava/lang/String;
 
     return-void
 .end method

@@ -1,11 +1,11 @@
-.class Lcom/oneplus/settings/better/OPReadingMode$3;
+.class Lcom/oneplus/settings/better/OPReadingModeTurnOnSettings$1;
 .super Lcom/android/settings/search/BaseSearchIndexProvider;
-.source "OPReadingMode.java"
+.source "OPReadingModeTurnOnSettings.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/oneplus/settings/better/OPReadingMode;
+    value = Lcom/oneplus/settings/better/OPReadingModeTurnOnSettings;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -62,7 +62,7 @@
 
     invoke-direct {v0, p1}, Landroid/provider/SearchIndexableResource;-><init>(Landroid/content/Context;)V
 
-    const v1, 0x7f1600af
+    const v1, 0x7f1600b0
 
     iput v1, v0, Landroid/provider/SearchIndexableResource;->xmlResId:I
 

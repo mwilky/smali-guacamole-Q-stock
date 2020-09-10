@@ -1225,6 +1225,12 @@
 
     if-eqz v8, :cond_4
 
+    invoke-static {}, Lcom/oneplus/settings/utils/OPUtils;->isO2()Z
+
+    move-result v8
+
+    if-nez v8, :cond_4
+
     new-instance v8, Ljava/lang/StringBuilder;
 
     invoke-direct {v8}, Ljava/lang/StringBuilder;-><init>()V
@@ -1270,7 +1276,7 @@
 
     const-string v9, "Chromebook"
 
-    const v11, 0x7f080610
+    const v11, 0x7f080622
 
     const-string v12, "privacy_google_autofill"
 
@@ -1307,7 +1313,7 @@
 
     if-eqz v10, :cond_8
 
-    const v10, 0x7f080580
+    const v10, 0x7f080589
 
     invoke-virtual {v8, v10}, Landroidx/preference/Preference;->setIcon(I)V
 
@@ -1436,7 +1442,7 @@
 
     if-eqz v8, :cond_c
 
-    const v8, 0x7f080580
+    const v8, 0x7f080589
 
     invoke-virtual {v15, v8}, Landroidx/preference/Preference;->setIcon(I)V
 

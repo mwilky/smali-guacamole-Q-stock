@@ -256,13 +256,23 @@ Administratorul poate să monitorizeze și să gestioneze setările, accesul, ap
     <string name="advanced_apps">Avansate</string>
     <string name="advanced_battery_graph_subtext">Estimarea bateriei rămase se bazează pe utilizarea dispozitivului</string>
     <string name="advanced_battery_title">Utilizarea bateriei</string>
+    <string name="advanced_calling_summary">Voce HD, apeluri video</string>
+    <string name="advanced_calling_title">Funcții de apelare avansate</string>
     <string name="advanced_reboot_summary">Când deblocați, reinițializarea va oferi opțiuni de reinițializare normală, cu recuperare sau reinițializare rapidă</string>
     <string name="advanced_reboot_title">Reinițializare avansată</string>
     <string name="advanced_section_header">Avansate</string>
     <string name="advanced_security_title">Avansate</string>
     <string name="advanced_settings">Setări avansate</string>
     <string name="advanced_settings_summary">Activați mai multe opțiuni pentru setări</string>
+    <string name="advanced_wificall_summary">Când rețeaua mobilă nu este disponibilă, se folosește Wi-Fi</string>
     <string name="airplane_mode">Mod Avion</string>
+    <string name="airplane_mode_description">Modul avion dezactivează toate conexiunile de rețea, inclusiv apelurile, SMS-urile, accesul la internet, conexiunile Wi-Fi și Bluetooth.</string>
+    <string name="airplane_mode_enable_dialog_message">"Dacă modul Avion este activat, nu puteți folosi internetul, e-mailul sau alte aplicații care necesită o conexiune de date, decât prin Wi-Fi.
+
+Activați modul Avion?"</string>
+    <string name="airplane_mode_enable_dialog_message_wifi_volte">"Dacă modul Avion este activat, nu puteți folosi internetul, e-mailul, apelurile prin Wi-Fi sau alte aplicații care necesită o conexiune de date, decât prin Wi-Fi.
+
+Activați modul Avion?"</string>
     <string name="alarm_ringtone_title">Sunet de alarmă prestabilit</string>
     <string name="alarm_template">la %1$s</string>
     <string name="alarm_template_far">%1$s</string>
@@ -274,6 +284,7 @@ Administratorul poate să monitorizeze și să gestioneze setările, accesul, ap
     <string name="alert_slider_silent_title">Setări silențios</string>
     <string name="alertslider_settings">Alert slider</string>
     <string name="alertslider_settings_soc_tri_state">Cursor de alertă</string>
+    <string name="alertslider_settings_soc_tri_state_summary">Silențios, vibrații, sunet</string>
     <string name="all_volume_title">Volume</string>
     <string name="allow">Permiteți</string>
     <string name="allow_bind_app_widget_activity_allow_bind">După ce creați widgetul, %1$s poate accesa toate datele pe care acesta le afișează.</string>
@@ -314,12 +325,19 @@ Nu trebuie decât să apropiați cele două dispozitive (de obicei, așezându-l
     <string name="angle_enabled_app_set">Aplicație compatibilă cu ANGLE: %1$s</string>
     <string name="animator_duration_scale_title">Scară durată Animator</string>
     <string name="another_migration_already_in_progress">Altă migrare este deja în desfășurare.</string>
-    <string name="aod_clock_analog">Analogic</string>
+    <string name="aod_clock_analog">Analogic 1</string>
+    <string name="aod_clock_analog_1">Analogic 2</string>
+    <string name="aod_clock_analog_2">Analogic 3</string>
+    <string name="aod_clock_bold">Bold</string>
     <string name="aod_clock_default">Implicit</string>
+    <string name="aod_clock_digital">Digital 1</string>
+    <string name="aod_clock_digital_1">Digital 2</string>
     <string name="aod_clock_mcl">McLaren</string>
-    <string name="aod_clock_minimalism">Minimalism</string>
+    <string name="aod_clock_minimalism">Minimalism 1</string>
+    <string name="aod_clock_minimalism_1">Minimalism 2</string>
     <string name="aod_clock_none">Niciuna</string>
     <string name="aod_clock_select_style_text">Selectați stilul ceasului</string>
+    <string name="aod_clock_text_clock">Ceas text</string>
     <string name="aod_horizon_light_effect_1">Albastru</string>
     <string name="aod_horizon_light_effect_2">Roșu</string>
     <string name="aod_horizon_light_effect_3">Violet</string>
@@ -967,7 +985,7 @@ Selecție"</string>
     <string name="bugreport_in_power">Comandă rapidă pentru raportul de erori</string>
     <string name="bugreport_in_power_summary">Afișați un buton în meniul de pornire pentru a realiza un raport de erori</string>
     <string name="build_number">Numărul versiunii</string>
-    <string name="built_in_app_updates_summary">Permiteți OnePlus să caute și să notifice actualizări ale aplicațiilor integrate pentru a îmbunătăți stabilitatea aplicației</string>
+    <string name="built_in_app_updates_summary">Permiteți OnePlus să caute și să anunțe actualizările aplicațiilor integrate pentru a îmbunătăți stabilitatea</string>
     <string name="built_in_app_updates_title">Actualizări ale aplicațiilor de sistem</string>
     <string name="builtin_keyboard_settings_summary">Setări pentru tastatura fizică</string>
     <string name="builtin_keyboard_settings_title">Tastatură fizică</string>
@@ -1065,6 +1083,7 @@ Selecție"</string>
     <string name="charge_length_format">Acum %1$s</string>
     <string name="charging_sounds_title">Sunete și vibrații pentru încărcare</string>
     <string name="checkbox_notification_same_as_incoming_call">Utilizați volumul apelurilor de intrare pentru notificări</string>
+    <string name="checkbox_usb_tether_donot_show_again">Nu afișa din nou</string>
     <string name="checking_decryption">Se verifică...</string>
     <string name="choose_network_title">Alegeți o rețea</string>
     <string name="choose_profile">Alegeți un profil</string>
@@ -1172,6 +1191,8 @@ Selecție"</string>
     <string name="connected_devices_dashboard_no_nfc_summary">Bluetooth, modul Cu mașina</string>
     <string name="connected_devices_dashboard_summary">Bluetooth, modul Cu mașina, NFC</string>
     <string name="connected_devices_dashboard_title">Dispozitive conectate</string>
+    <string name="connected_to_the_verizon_network">Conectat la rețeaua Verizon</string>
+    <string name="connected_to_the_verizon_network_but_data_connection_unavailable">Conectat la rețeaua Verizon, dar nu este disponibilă conexiunea de date</string>
     <string name="connected_via_app">Conectat prin %1$s</string>
     <string name="connected_via_carrier">Conectată prin %1$s</string>
     <string name="connected_via_network_scorer">Conectată automat prin %1$s</string>
@@ -1187,6 +1208,7 @@ Selecție"</string>
     <string name="contextual_card_feedback_send">Trimiteți feedback</string>
     <string name="contextual_card_removed_message">Sugestia a fost eliminată</string>
     <string name="contextual_card_undo_dismissal_text">Anulați</string>
+    <string name="continue_anyway">Continuați oricum</string>
     <string name="contributors_title">Colaboratori</string>
     <string name="controls_label">Comenzi</string>
     <string name="controls_subtitle">Ajustați utilizarea de energie</string>
@@ -1318,6 +1340,7 @@ Unele conturi pot să copieze automat pe web toate modificările de pe telefon. 
     <string name="data_usage_cycle_editor_subtitle">Data din fiecare lună:</string>
     <string name="data_usage_cycle_editor_title">Data de resetare a ciclului de utilizare</string>
     <string name="data_usage_data_limit">Setați limita de date</string>
+    <string name="data_usage_description">Utilizarea traficului de date este măsurată de telefon. Este posibil ca operatorul să contorizeze altfel utilizarea. Setați data de începere astfel încât să coincidă cu data de facturare.</string>
     <string name="data_usage_disable_3g_limit">Setați limita de date 2G-3G</string>
     <string name="data_usage_disable_4g_limit">Setați limita de date 4G</string>
     <string name="data_usage_disable_mobile">Dezactivați datele mobile?</string>
@@ -1331,6 +1354,7 @@ Unele conturi pot să copieze automat pe web toate modificările de pe telefon. 
     <string name="data_usage_forground_label">În prim-plan:</string>
     <string name="data_usage_label_background">Fundal</string>
     <string name="data_usage_label_foreground">Prim-plan</string>
+    <string name="data_usage_less_than_value">Sub 0,01</string>
     <string name="data_usage_limit_dialog_mobile">"Telefonul va dezactiva datele mobile când se atinge limita specificată.
 
 Deoarece utilizarea datelor este măsurată de telefon, iar operatorul poate contoriza în mod diferit utilizarea, vă recomandăm să stabiliți o limită prudentă."</string>
@@ -1386,6 +1410,9 @@ Această setare afectează toți utilizatorii de pe acest telefon."</string>
     <string name="data_usage_total_during_range_mobile">%2$s: aprox. %1$s utilizați, conform tel. Contabilizarea operatorului dvs. poate diferi.</string>
     <string name="data_usage_uninstalled_apps">Aplicații eliminate</string>
     <string name="data_usage_uninstalled_apps_users">Aplicații și utilizatori eliminați</string>
+    <string name="data_usage_unit_gb">GB</string>
+    <string name="data_usage_unit_mb">MB</string>
+    <string name="data_usage_video_call_title">Apel video</string>
     <string name="data_usage_warning_editor_title">Setați un avertisment de utilizare a datelor</string>
     <string name="data_usage_wifi_format">Date utilizate prin Wi-Fi: ^1</string>
     <string name="data_usage_wifi_title">Date Wi‑Fi</string>
@@ -1497,6 +1524,11 @@ Ca să remediați problema, puteți să opriți aplicația %1$s și să o împie
 Ca să remediați problema, puteți să dezactivați locația pentru această aplicație."</string>
     <string name="dialog_location_ok">Dezactivați</string>
     <string name="dialog_location_title">Dezactivați locația?</string>
+    <string name="dialog_mhs_error">Așteptați, se fac verificări...</string>
+    <string name="dialog_open_network_cancel">anulare</string>
+    <string name="dialog_open_network_connect">Conectare</string>
+    <string name="dialog_open_network_title">Vă conectați la o rețea Wi-Fi nesecurizată (deschisă)</string>
+    <string name="dialog_open_network_title_info">Informațiile se trimit fără criptare și pot fi văzute de alții. Sigur doriți să vă conectați?</string>
     <string name="dialog_stop_message">"Telefonul dvs. nu poate gestiona în mod normal bateria, deoarece %1$s păstrează telefonul activ.
 
 Ca să remediați problema, puteți să opriți aplicația.
@@ -1509,6 +1541,11 @@ Ca să remediați problema, puteți să opriți aplicația.%1$s
 Dacă problema persistă, poate fi necesar să dezinstalați aplicația pentru a îmbunătăți performanța bateriei."</string>
     <string name="dialog_stop_ok">Opriți aplicația</string>
     <string name="dialog_stop_title">Opriți aplicația?</string>
+    <string name="dialog_usb_tether_cancel">anulare</string>
+    <string name="dialog_usb_tether_ok">ok</string>
+    <string name="dialog_usb_tether_title">Partajarea conexiunii prin USB și Wi-Fi nu pot fi active simultan. Dezactivați Wi-Fi?</string>
+    <string name="dialog_wrong_password">Parola Wi-Fi nu a fost acceptată, verificați dacă este corectă și încercați din nou.</string>
+    <string name="dialog_wrong_password_ok">ok</string>
     <string name="direct_boot_unaware_dialog_message">Notă: dacă reporniți telefonul și aveți activată blocarea ecranului, această aplicație nu poate porni până nu deblocați telefonul.</string>
     <string name="disable_doze_summary">Dozarea reduce consumul bateriei prin amânarea activității CPU de fundal și a activității de rețea pentru aplicații atunci când aparatul este nefolosit pe perioade lungi de timp</string>
     <string name="disable_doze_title">Mod dozare</string>
@@ -1612,6 +1649,21 @@ Dacă problema persistă, poate fi necesar să dezinstalați aplicația pentru a
     <string name="dual_cdma_sim_warning_notification_channel_title">Combinație de SIM</string>
     <string name="dual_cdma_sim_warning_notification_summary">Folosirea operatorului %1$s poate limita funcționalitatea. Atingeți ca să aflați mai multe.</string>
     <string name="eab_provisioned_switch_string">Setări configurate pentru EAB/prezență</string>
+    <string name="earphone_function_control_click_left">Dublu clic pe casca din stânga</string>
+    <string name="earphone_function_control_click_right">Dublu clic pe casca din dreapta</string>
+    <string name="earphone_function_control_last_song">Piesa anterioară</string>
+    <string name="earphone_function_control_next_song">Piesa următoare</string>
+    <string name="earphone_function_control_play_pause">Redare/Pauză</string>
+    <string name="earphone_function_introduction">Descrierea funcției</string>
+    <string name="earphone_function_listening_breeno">Asistent voce</string>
+    <string name="earphone_support_battery_dot">;</string>
+    <string name="earphone_support_battery_info_box">OnePlus Buds Case: %1$s</string>
+    <string name="earphone_support_battery_info_left">S: %1$s</string>
+    <string name="earphone_support_battery_info_right">D: %1$s</string>
+    <string name="earphone_support_current_version">Versiunea curentă:</string>
+    <string name="earphone_support_update_ota">Actualizare automată firmware</string>
+    <string name="earphone_support_wifi_data">Se permit actualizările automate prin rețeaua mobilă</string>
+    <string name="earphone_usage_guide_complete">Efectuat</string>
     <string name="edge_to_edge_navigation_summary">Pentru a merge la ecranul de pornire, glisați în sus din partea de jos a ecranului. Pentru a schimba aplicațiile, glisați în sus din partea de jos, țineți, apoi eliberați. Pentru a reveni, glisați din partea stângă sau dreaptă.</string>
     <string name="edge_to_edge_navigation_title">Navigare prin gesturi</string>
     <string name="emergency_address_summary">Folosită ca locație când efectuați un apel de urgență prin Wi-Fi</string>
@@ -1755,6 +1807,7 @@ Pentru mai multe detalii, contactați administratorul organizației."</string>
     <string name="expand_button_title">Avansat</string>
     <string name="experimental_category_title">Experimentale</string>
     <string name="experimental_preference">(Experimental)</string>
+    <string name="extended_title">Extendere de rețea</string>
     <string name="external_code_size_label">Stocare aplicație pe USB</string>
     <string name="external_data_size_label">Stocare date pe USB</string>
     <string name="external_source_switch_title">Permiteți din această sursă</string>
@@ -1796,6 +1849,8 @@ Pentru mai multe detalii, contactați administratorul organizației."</string>
     <string name="filter_personal_apps">Personale</string>
     <string name="filter_work_apps">Serviciu</string>
     <string name="filter_write_settings_apps">Pot modifica setările de sistem</string>
+    <string name="find_my_bluetooth_earphone">Căutare căști</string>
+    <string name="find_my_bluetooth_earphone_summary">Când căștile sunt în raza de acțiune, se redau sunete, când nu, se afișează ultima locație</string>
     <string name="fingerprint_add_fingerprint">Adăugare amprentă</string>
     <string name="fingerprint_add_fingerprint_summary">Așezați degetul pe senzor și apoi ridicați-l după ce simțiți o vibrație.</string>
     <string name="fingerprint_add_max">"Puteți să adăugați până la %d   amprente"</string>
@@ -1968,6 +2023,11 @@ Puteți modifica opțiunea ulterior din Setări > Aplicații și notificări."</
     <string name="homepage_all_settings">Toate setările</string>
     <string name="homepage_condition_footer_content_description">Restrângeți</string>
     <string name="homepage_personal_settings">Sugestii</string>
+    <string name="hotspot_tip_message" formatted="false">"Punctul de acces mobil partajează conexiunea de date mobilă cu alte dispozitive care au Wi-Fi. Pentru a vă conecta la Punctul de acces mobil: \u0009 
+ 1: Activați Wi-Fi pe celălalt dispozitiv.
+ 2: Selectați %s din lista rețelelor Wi-Fi disponibile. 
+ 3: Dacă vi se cere o parolă, introduceți %s Pentru a nu epuiza bateria, țineți telefonul conectat la încărcător cât timp folosiți Punctul de acces mobil. "</string>
+    <string name="hotspot_tip_title">Punct de acces mobil</string>
     <string name="hwui_force_dark_summary">Modifică funcția Force-Dark să fie activată mereu</string>
     <string name="hwui_force_dark_title">Modificați funcția Force-Dark</string>
     <string name="icon_attributions">Pachete pictograme</string>
@@ -2144,6 +2204,8 @@ Puteți modifica opțiunea ulterior din Setări > Aplicații și notificări."</
     <string name="language_picker_title">Limbi</string>
     <string name="language_picker_title_o2">Limbi (țară/regiune)</string>
     <string name="language_settings">Limbi și introducerea textului</string>
+    <string name="last_factory_reset">Ultima resetare la setările din fabrică</string>
+    <string name="last_factory_reset_none">Niciuna</string>
     <string name="last_synced">Ultima sincronizare: %1$s</string>
     <string name="last_time_used_label">Ultima utilizare</string>
     <string name="launch_by_default">Deschide în mod prestabilit</string>
@@ -2407,6 +2469,7 @@ Puteți modifica opțiunea ulterior din Setări > Aplicații și notificări."</
     <string name="lockscreen_remote_input">Dacă dispozitivul este blocat, nu permiteți scrierea răspunsurilor sau a altui text în notificări</string>
     <string name="lockscreen_settings_title">Afișajul ecranului de blocare</string>
     <string name="lockscreen_settings_what_to_show_category">Ce se afișează</string>
+    <string name="long_press_power_button">Țineți apăsat butonul de pornire</string>
     <string name="lost_internet_access_cancel">Rămâneți pe Wi-Fi</string>
     <string name="lost_internet_access_persist">Nu afișa din nou</string>
     <string name="lost_internet_access_switch">Comutați la rețeaua mobilă</string>
@@ -2542,7 +2605,10 @@ Pe acest dispozitiv sunt prezenți și alți utilizatori.
     <string name="menu_stats_refresh">Actualizați</string>
     <string name="menu_stats_total">Totaluri privind utilizarea</string>
     <string name="menu_stats_unplugged">%1$s de la deconectare</string>
+    <string name="menu_uninstallapps">Dezinstalare</string>
     <string name="menu_use_uss">Utilizați Uss</string>
+    <string name="mhs_app">Deschidere My Verizon</string>
+    <string name="mhs_call_back_error">Conexiunea de date nu este disponibilă.</string>
     <string name="misc_files">Fișiere diverse</string>
     <string name="misc_files_selected_count">au fost selectate %1$d din %2$d</string>
     <string name="misc_files_selected_count_bytes">%1$s din %2$s</string>
@@ -2558,6 +2624,11 @@ Pe acest dispozitiv sunt prezenți și alți utilizatori.
     <string name="mobile_data_settings_summary_auto_switch">Telefonul va comuta automat la acest operator când se află în aria de acoperire</string>
     <string name="mobile_data_settings_title">Date mobile</string>
     <string name="mobile_data_usage_title">Utilizarea datelor în aplicație</string>
+    <string name="mobile_hotspot_airplane_off_error">Pentru a putea activa Punctul de acces, dezactivați modul avion</string>
+    <string name="mobile_hotspot_authoration_error">"Pentru a putea folosi Punctul de acces, trebuie să vă abonați la Servicii punct de acces.
+
+Pentru a vă abona la Punct de acces, accesați my verizon sau sunați la Asistență clienți, la numărul (800) 922–0204."</string>
+    <string name="mobile_hotspot_data_off_error">Pentru a putea activa Punctul de acces, activați datele mobile</string>
     <string name="mobile_insert_sim_card">Introduceți cardul SIM și reporniți</string>
     <string name="mobile_network_active_esim">Activ/SIM-ul descărcat</string>
     <string name="mobile_network_active_sim">Activ/SIM</string>
@@ -2631,7 +2702,7 @@ Când comutați la %1$s nu anulați serviciul %2$s."</string>
     <string name="mr_system_route_name">Sistem</string>
     <string name="mr_user_route_category_name">Dispozitive</string>
     <string name="mtp_ptp_mode_summary">Funcția MTP sau PTP este activă</string>
-    <string name="multi_app_label_badge">%1$s paralelă</string>
+    <string name="multi_app_label_badge">Aplicație %1$s paralelă</string>
     <string name="music_application_title">Aplicație muzică</string>
     <string name="musicfx_title">Efecte muzicale</string>
     <string name="mvno_match_data">Valoare MVNO</string>
@@ -2695,6 +2766,8 @@ Când comutați la %1$s nu anulați serviciul %2$s."</string>
     <string name="nfc_quick_toggle_title">NFC</string>
     <string name="nfc_secure_settings_title">Securizați NFC</string>
     <string name="nfc_secure_toggle_summary">Permiteți folosirea plății NFC și Transit doar când ecranul este deblocat</string>
+    <string name="nfc_uicc_sim1">SIM 1</string>
+    <string name="nfc_uicc_sim2">SIM 2</string>
     <string name="night_display_activation_off_custom">Dezactivați până la %1$s</string>
     <string name="night_display_activation_off_manual">Dezactivați acum</string>
     <string name="night_display_activation_off_twilight">Dezactivați până la apus</string>
@@ -2738,6 +2811,7 @@ Când comutați la %1$s nu anulați serviciul %2$s."</string>
     <string name="no_internet_access_text">Această rețea nu are acces la internet. Mențineți conexiunea?</string>
     <string name="no_memory_use_summary">În ultimele 3 ore memoria nu a fost folosită deloc</string>
     <string name="no_network">Nu există serviciu de rețea</string>
+    <string name="no_network_extenders">Niciun extender de rețea</string>
     <string name="no_notification_assistant">Fără</string>
     <string name="no_notification_listeners">Nicio aplicație instalată nu a solicitat accesul la notificări.</string>
     <string name="no_running_services">Nu rulează niciun serv.</string>
@@ -2748,6 +2822,7 @@ Când comutați la %1$s nu anulați serviciul %2$s."</string>
     <string name="no_vr_listeners">Nicio aplicație instalată nu a solicitat să fie rulată ca un serviciu de ajutor pentru RV.</string>
     <string name="not_allowed">Cardul dvs. SIM nu permite conexiunea la această rețea.</string>
     <string name="not_battery_optimizing">Nu se folosește optimizarea bateriei</string>
+    <string name="not_connected_to_the_verizon_network">Nu există conexiune la rețeaua Verizon</string>
     <string name="not_installed">Nu este instal. pt. utilizator</string>
     <string name="not_optimize_summery">Poate afecta performanța bateriei</string>
     <string name="not_optimized_apps">Aplicații neoptimizate</string>
@@ -2893,6 +2968,7 @@ Astfel, aplicația va putea să activeze sau să dezactiveze starea Nu deranja �
     <string name="oneplus_aod_smart_display_calendar_event">Eveniment din calendar</string>
     <string name="oneplus_aod_smart_display_music_info">Player media</string>
     <string name="oneplus_aod_smart_display_title">Informații contextuale</string>
+    <string name="oneplus_ap_chanel">Canal AP</string>
     <string name="oneplus_app_alipay">AliPay</string>
     <string name="oneplus_app_display_compatibility">Mod compatibilitate</string>
     <string name="oneplus_app_display_fullscreen">Mod ecran complet</string>
@@ -2906,7 +2982,7 @@ Astfel, aplicația va putea să activeze sau să dezactiveze starea Nu deranja �
     <string name="oneplus_app_locker_summary">Selectare aplicații pentru criptare</string>
     <string name="oneplus_app_locker_switch">Ascundere conținut notificare</string>
     <string name="oneplus_app_locker_switch_summary">Conținutul notificării va fi ascuns pentru aplicațiile activate de App locker</string>
-    <string name="oneplus_app_locker_title">App locker</string>
+    <string name="oneplus_app_locker_title">Dulap de aplicații</string>
     <string name="oneplus_app_network_settings">Control utilizare date</string>
     <string name="oneplus_app_notification_allow_led">LED aprins</string>
     <string name="oneplus_app_notification_not_allow_led">LED stins</string>
@@ -2949,6 +3025,9 @@ Astfel, aplicația va putea să activeze sau să dezactiveze starea Nu deranja �
 
 Economizorul de baterie se oprește automat când aparatul se încarcă."</string>
     <string name="oneplus_battery_saver_summary">Este posibil ca această caracteristică să nu funcționeze pentru unele jocuri</string>
+    <string name="oneplus_bed_time_mode_summary">Utilizarea OnePlus Warp Wireless Charger în mod silențios</string>
+    <string name="oneplus_bed_time_mode_title">Mod stingere</string>
+    <string name="oneplus_bed_time_mode_wall_text">Dacă se amortizează sunetele de OnePlus Warp Wireless Charger, încărcarea va fi mai înceată. Telefonul trebuie așezat pe încărcător ca să intre în modul Stingere.</string>
     <string name="oneplus_bg_data_condition_turn_off">DEZACTIVARE ECONOMIZOR DATE</string>
     <string name="oneplus_black_screen_gestures_settings_title">Gesturi ecran oprit</string>
     <string name="oneplus_block_all_notifications">Blocare toate notificările</string>
@@ -3004,6 +3083,7 @@ Economizorul de baterie se oprește automat când aparatul se încarcă."</strin
     <string name="oneplus_connected_devices_dashboard_summary">NFC, distribuție, imprimare</string>
     <string name="oneplus_connected_devices_dashboard_title">Bluetooth &amp; conexiune dispozitiv</string>
     <string name="oneplus_cpu">PROCESOR</string>
+    <string name="oneplus_custom_drop_title">Renunțați la modificări？</string>
     <string name="oneplus_custom_time">Interval de timp personalizat</string>
     <string name="oneplus_customization">Personalizare bară de navigare</string>
     <string name="oneplus_customization_summary">Apăsare lungă, atingere dublă</string>
@@ -3051,7 +3131,9 @@ Economizorul de baterie se oprește automat când aparatul se încarcă."</strin
     <string name="oneplus_double_tap_power_gesture_app">SELECTARE FUNCȚIE</string>
     <string name="oneplus_double_tap_power_gesture_camera">Cameră</string>
     <string name="oneplus_double_tap_power_gesture_wallet">Glisați carduri (Portofel)</string>
+    <string name="oneplus_double_tap_power_none">Niciuna</string>
     <string name="oneplus_doze_summary_801">Afișați ceasul și alte informații pe ecranul de așteptare</string>
+    <string name="oneplus_doze_summary_new">Afișarea orei, a datei și a notificărilor pe ecran</string>
     <string name="oneplus_doze_title">Afișaj ambiant</string>
     <string name="oneplus_doze_title_801">Afișaj ambiant</string>
     <string name="oneplus_draw_gesture_start_none">Niciunul</string>
@@ -3084,7 +3166,7 @@ Economizorul de baterie se oprește automat când aparatul se încarcă."</strin
     <string name="oneplus_erase_system_data_summary">Se vor șterge datele de sistem, inclusiv cele din cont, despre contacte și din aplicații. Această acțiune nu se poate anula.</string>
     <string name="oneplus_erase_system_data_title">Ștergeți datele de sistem?</string>
     <string name="oneplus_esportmode_introduction_summary">Pentru a activa modul Esports, atingeți butonul din panoul modului de joc.</string>
-    <string name="oneplus_experience_improvement_programs">Programe de îmbunătățire a experienței</string>
+    <string name="oneplus_experience_improvement_programs">Programe de îmbunatățire a experienței</string>
     <string name="oneplus_face_auto_unlock_while_screen_on_sumary">Deblocați-vă telefonul cu fața imediat ce ecranul pornește fără să alunecați cu degetele pe ecran mai întâi.</string>
     <string name="oneplus_face_auto_unlock_while_screen_on_title">Deblocare automată după ce ecranul este pornit</string>
     <string name="oneplus_face_setup_unlock_settings_summary">"Deblocarea facială este o modalitate rapidă de a debloca telefonul. Tot ce trebuie să faceți este să activați telefonul și să îl priviți, apoi îl veți putea utiliza.
@@ -3141,7 +3223,7 @@ Atenție: Deblocarea facială este mai puțin sigură decât amprenta sau o paro
     <string name="oneplus_fixed_navigation_bar_o2">Înapoi, Pagina principală, Recente</string>
     <string name="oneplus_fixed_navigation_bar_title">Bară de navigare fixă</string>
     <string name="oneplus_floating_keyboard">Tastatură flotantă</string>
-    <string name="oneplus_fnatic_mode_add_to_wallpapers">Adăugare wallpaper-uri</string>
+    <string name="oneplus_fnatic_mode_add_to_wallpapers">Adăugare la wallpaperuri</string>
     <string name="oneplus_fnatic_mode_background_introduction_summary">Performanța se concentrează în întregime asupra jocului. Acest lucru poate provoca erori în unele aplicații.</string>
     <string name="oneplus_fnatic_mode_background_introduction_title">Îmbunătățiți controlul procesului</string>
     <string name="oneplus_fnatic_mode_disturb_introduction_summary">Blochează toate apelurile și notificările (cu excepția notificărilor privind bateriile descărcate, a alarmei și a temporizatorului). Apelurile nepreluate nu pot fi salvate în jurnalele de apeluri.</string>
@@ -3153,15 +3235,18 @@ Atenție: Deblocarea facială este mai puțin sigură decât amprenta sau o paro
     <string name="oneplus_fnatic_mode_summary">Îmbunătățiți-vă experiența de joc</string>
     <string name="oneplus_fnatic_mode_summary_2">Mod avansat de joc creat de pionierii Esports</string>
     <string name="oneplus_fnatic_mode_title">Modul Fnatic</string>
-    <string name="oneplus_fnatic_mode_unlock_wallpapers">Ați deblocat %1$s wallpaper-uri speciale</string>
-    <string name="oneplus_fnatic_mode_view_in_wallpapers">Vizualizare în wallpaper-uri</string>
-    <string name="oneplus_fnatic_mode_wallpapers_added">%1$s wallpaper-uri adăugate</string>
+    <string name="oneplus_fnatic_mode_unlock_wallpapers">Ați deblocat %1$s wallpaperuri speciale</string>
+    <string name="oneplus_fnatic_mode_view_in_wallpapers">Vizualizare în wallpaperuri</string>
+    <string name="oneplus_fnatic_mode_wallpapers_added">%1$s wallpaperuri adăugate</string>
     <string name="oneplus_font_preview_summary">Cea mai bună tehnologie din lume, pentru toți</string>
     <string name="oneplus_font_style">Font</string>
     <string name="oneplus_font_switch">Comutare font</string>
     <string name="oneplus_force_factory_reset_summary">Parola de inițializare este activată, stocarea internă va fi ștearsă</string>
     <string name="oneplus_forum_award_summary">Această comunitate este a dvs. Numai dvs. ne puteți defini traiectoria. Împreună definim și perfecționăm. Eliminăm stilurile și scriem coduri. Aceasta este pentru dvs. Vă mulțumim că visați cu noi!</string>
     <string name="oneplus_forum_award_title">Premiu</string>
+    <string name="oneplus_front_camera_app_display_fullscreen_summary">Dacă conținutul aplicației este acoperit de zona de afișare a camerei frontale, puteți trece în modul implicit</string>
+    <string name="oneplus_front_camera_display_choose_title">Stabiliți dacă ascundeți camera frontală</string>
+    <string name="oneplus_front_camera_display_title">Zonă de afișare cameră frontală</string>
     <string name="oneplus_fullscreen_back_guide_summary">Glisați cu degetul spre interior din marginea stângă sau dreaptă inferioară a ecranului</string>
     <string name="oneplus_fullscreen_back_guide_summary_deprecated">Glisați cu degetul în sus de pe partea stângă sau dreaptă din partea de jos a ecranului</string>
     <string name="oneplus_fullscreen_back_guide_title">Înapoi</string>
@@ -3238,6 +3323,10 @@ Pentru a accesa ecranul principal în orice moment, glosați cu degetul în sus 
     <string name="oneplus_gestures_open_shelf">Deschidere Shelf</string>
     <string name="oneplus_gestures_take_video">Înregistrarea unui videoclip</string>
     <string name="oneplus_getlog_title">Obținere jurnale</string>
+    <string name="oneplus_global_dark_mode_description">Setați și aplicațiile care nu acceptă tema întunecată să apară în nuanțe închise. Este posibil ca unele aplicații să nu funcționeze perfect, le puteți dezactiva în lista de mai jos.</string>
+    <string name="oneplus_global_dark_mode_only_valid_in_dark_mode">Această funcție este disponibilă numai în modul cu nuanțe închise</string>
+    <string name="oneplus_global_dark_mode_summary">Setați mai multe aplicații care nu se adaptează la modul întunecat să se întunece automat la activarea nuanțelor închise</string>
+    <string name="oneplus_global_dark_mode_title">Activarea nuanțelor închise în mai multe aplicații</string>
     <string name="oneplus_google_tts">Date vocale Google TTS</string>
     <string name="oneplus_gps_using">utilizează GPS</string>
     <string name="oneplus_h2_contributors">HydrogenOS Contributor</string>
@@ -3253,6 +3342,8 @@ Pentru a accesa ecranul principal în orice moment, glosați cu degetul în sus 
     <string name="oneplus_hardware_keys_action_split_screen">Închide/Deschide ecran divizat</string>
     <string name="oneplus_health_safety_information">Informații despre Sănătate &amp; Siguranță</string>
     <string name="oneplus_hearing_aid">Compatibilitate aparat auditiv</string>
+    <string name="oneplus_hide_front_camera_display_summary">Nu se permite afișarea de conținut în această zonă</string>
+    <string name="oneplus_hide_front_camera_display_title">Ascundere cameră frontală</string>
     <string name="oneplus_hide_navigation_bar">Ascunde bara de navigare</string>
     <string name="oneplus_hide_navkeys">Ascundere bară de navigare</string>
     <string name="oneplus_hide_navkeys_summary">Adăugați un buton pentru a ascunde sau a afișa bara de navigare</string>
@@ -3311,6 +3402,22 @@ Notă: Amprenta dvs. poate fi mai puțin sigură decât un model dificil sau PIN
     <string name="oneplus_lockscreen_settings_title">Preferințe ecran de blocat</string>
     <string name="oneplus_max_shortcuts_tips">Puteți să adăugați până la 6 comenzi rapide</string>
     <string name="oneplus_media_ring_summary">Volum media oprit</string>
+    <string name="oneplus_memc_close">Dezactivat</string>
+    <string name="oneplus_memc_game">Compensare mișcare în jocuri</string>
+    <string name="oneplus_memc_game_summary">Activarea compensării mișcărilor în jocuri presupune trecerea la rezoluția FHD+</string>
+    <string name="oneplus_memc_more_support_apps">Mai multe aplicații compatibile</string>
+    <string name="oneplus_memc_notice">În acest mod se lucrează cu o rată de cadre video mai mare, se reduce neclaritatea imaginilor în mișcare, care devin mai clare și mai curate. Are efect numai în timpul redării pe ecran întreg.</string>
+    <string name="oneplus_memc_open">Activare</string>
+    <string name="oneplus_memc_support_apps">Aplicații acceptate</string>
+    <string name="oneplus_memc_support_no_apps">Nu este instalată nicio aplicație compatibilă</string>
+    <string name="oneplus_memc_video">Netezire grafică în mișcare</string>
+    <string name="oneplus_memc_video_effect">Efect de compensare</string>
+    <string name="oneplus_memc_video_extreme">Extrem</string>
+    <string name="oneplus_memc_video_nosupport_extreme_summary">Activarea modului Extrem presupune trecerea la rezoluția FHD+</string>
+    <string name="oneplus_memc_video_nosupport_extreme_text">Se trece la rezoluția QHD+, compensarea mișcărilor este limitată</string>
+    <string name="oneplus_memc_video_smooth">Neted</string>
+    <string name="oneplus_memc_video_theacme_summary">Rata de cadre video crește la 120 cadre pe secundă pentru imagini foarte fluide, care pot crește consumul de energie. Temporar nu se acceptă rezoluția QHD+.</string>
+    <string name="oneplus_memc_video_theacme_title">Hipernetezire imagini în mișcare</string>
     <string name="oneplus_mobile_device_name_title">Nume telefon</string>
     <string name="oneplus_mode_choose">Selectare mod</string>
     <string name="oneplus_mode_settings">Setări Alert slider</string>
@@ -3379,7 +3486,7 @@ Notă: Amprenta dvs. poate fi mai puțin sigură decât un model dificil sau PIN
     <string name="oneplus_notification_ringtone_mode">Numai în modul ton de apel</string>
     <string name="oneplus_notification_ringtone_silent_mode">Întotdeauna</string>
     <string name="oneplus_notification_ringtone_title">Ton de apel notificare în căști</string>
-    <string name="oneplus_notification_silence_title">Altul</string>
+    <string name="oneplus_notification_silence_title">Altele</string>
     <string name="oneplus_notification_sound_default">Notificare implicită</string>
     <string name="oneplus_notification_ways">Mod afișare</string>
     <string name="oneplus_notification_ways_title">Modul de afișare a notificărilor</string>
@@ -3390,6 +3497,10 @@ Notă: Amprenta dvs. poate fi mai puțin sigură decât un model dificil sau PIN
     <string name="oneplus_notifications_free">Fără restricții</string>
     <string name="oneplus_notifications_meet">Întâlnire</string>
     <string name="oneplus_o2_contributors">OxygenOS Contributor</string>
+    <string name="oneplus_open_bed_time_mode_schedule_summary">Activare într-perioadă personalizată</string>
+    <string name="oneplus_open_bed_time_mode_schedule_title">Program</string>
+    <string name="oneplus_open_bed_time_mode_summary">Puteți activa manual Modul stingere</string>
+    <string name="oneplus_open_bed_time_mode_title">Mod stingere</string>
     <string name="oneplus_opfinger_input_completed_comfirm">Confirmare</string>
     <string name="oneplus_opfinger_input_completed_sub">Configurarea amprentelor este încheiată. Dați clic pe „confirmare‟ pentru a continua</string>
     <string name="oneplus_opfinger_input_completed_title">Înregistrare încheiată</string>
@@ -3428,11 +3539,12 @@ Notă: Amprenta dvs. poate fi mai puțin sigură decât un model dificil sau PIN
     <string name="oneplus_preference_settings_behavior">Preferințe</string>
     <string name="oneplus_preference_settings_custom_time">Comutare automată</string>
     <string name="oneplus_preference_settings_manual_open">Stare</string>
-    <string name="oneplus_preference_settings_turn_off_time">Până la</string>
+    <string name="oneplus_preference_settings_turn_off_time">La</string>
     <string name="oneplus_preference_settings_turn_on">Activați Nu deranjați</string>
     <string name="oneplus_preference_settings_turn_on_time">De la</string>
     <string name="oneplus_prior_to_use_you_need_to">Înainte de utilizare, trebuie să:</string>
     <string name="oneplus_privacy_policy">Politica de confidențialitate</string>
+    <string name="oneplus_privacy_protection_title">Spațiu criptat</string>
     <string name="oneplus_product_info_introduce">Informații dispozitiv &amp; Card de garanție</string>
     <string name="oneplus_product_info_summary">Card de garanție, listă preinstalată</string>
     <string name="oneplus_proximity_summary_disable">Indisponibil pentru că afișajul ambiant este dezactivat</string>
@@ -3470,6 +3582,7 @@ Notă: Amprenta dvs. poate fi mai puțin sigură decât un model dificil sau PIN
     <string name="oneplus_quickpay_way_alipay_scanning">Scanare Alipay</string>
     <string name="oneplus_quickpay_way_paytm">Paytm</string>
     <string name="oneplus_quickpay_way_wecaht_qrcode">Cod QR WeChat</string>
+    <string name="oneplus_quickpay_way_wecaht_ridecode">Cod QR pentru tranzit WeChat</string>
     <string name="oneplus_quickpay_way_wecaht_scanning">Scanare WeChat</string>
     <string name="oneplus_ramboost_description">Îmbunătățirea RAM învață cum vă folosiți telefonul, apoi prognozează ce aplicații lansați și ce date încărcați, profitând la maximum de capacitatea RAM pentru a crește viteza în utilizarea zilnică.</string>
     <string name="oneplus_ramboost_switch_summary">Adaptează utilizarea memoriei RAM la obiceiurile dvs.</string>
@@ -3517,7 +3630,7 @@ Notă: Amprenta dvs. poate fi mai puțin sigură decât un model dificil sau PIN
     <string name="oneplus_rotation_silent_enable_summary">Loviți ușor dispozitivul la apelul primit pentru a opri sunetul</string>
     <string name="oneplus_rotation_silent_enable_title">Loviți ușor pentru a închide sunetul</string>
     <string name="oneplus_scene_mode">SCENE</string>
-    <string name="oneplus_schedule">Programare</string>
+    <string name="oneplus_schedule">Program</string>
     <string name="oneplus_screen">ECRAN</string>
     <string name="oneplus_screen_better_cold">Frig</string>
     <string name="oneplus_screen_better_nature">Natural</string>
@@ -3608,6 +3721,7 @@ Notă:
     <string name="oneplus_select_fingerprint_animation_effect_2">Undă</string>
     <string name="oneplus_select_fingerprint_animation_effect_3">Dungă</string>
     <string name="oneplus_select_fingerprint_animation_effect_4">Ondulație</string>
+    <string name="oneplus_select_fingerprint_animation_effect_6">Energie</string>
     <string name="oneplus_select_fingerprint_animation_effect_mcl">McLaren</string>
     <string name="oneplus_select_fingerprint_animation_effect_none">Niciuna</string>
     <string name="oneplus_select_fingerprint_animation_effect_title">Selectarea efectului de animație al amprentei</string>
@@ -3627,6 +3741,8 @@ Notă:
     <string name="oneplus_shortcuts_preview">Previzualizare comenzi rapide</string>
     <string name="oneplus_shortcuts_settings">Setări comenzi rapide</string>
     <string name="oneplus_shortcuts_title">Comenzi rapide</string>
+    <string name="oneplus_show_front_camera_display_summary">Se permite afișarea de conținut în această zonă</string>
+    <string name="oneplus_show_front_camera_display_title">Afișare cameră frontală</string>
     <string name="oneplus_show_notch_display_summary">Permiteți aplicațiilor să folosească zona cu gradație</string>
     <string name="oneplus_show_notch_display_title">Afișare zonă de gradație</string>
     <string name="oneplus_show_pattern_and_password">Afișare parolă sau cale</string>
@@ -3637,6 +3753,7 @@ Notă:
     <string name="oneplus_sim1_ringtone_switch">Cartelă SIM 1</string>
     <string name="oneplus_sim2_ringtone_switch">Cartelă SIM 2</string>
     <string name="oneplus_simcard_title">SIM</string>
+    <string name="oneplus_sla_down_load_app_summary">Descărcările nu se pot accelera cât timp este activat punctul de acces mobil sau Wi‑Fi Direct</string>
     <string name="oneplus_sleep_standby_summary">Optimizarea duratei de funcționare a bateriei (de ex., dezactivarea conexiunilor de rețea) atunci când dormiți. Astfel, aplicațiile ar putea să nu primească notificările la timp.</string>
     <string name="oneplus_sleep_standby_title">Optimizare Sleep în Standby</string>
     <string name="oneplus_smart_background_management_title">Dozare agresivă hibernare aplicație &amp;</string>
@@ -3651,6 +3768,8 @@ Notă:
     <string name="oneplus_stop_run">Forțare oprire</string>
     <string name="oneplus_storage">STOCARE</string>
     <string name="oneplus_sunrise_sunset">Activare automată de la apus la răsărit</string>
+    <string name="oneplus_support_summary">Sfaturi și întrebări frecvente despre utilizarea dispozitivului</string>
+    <string name="oneplus_support_title">Sfaturi și asistență</string>
     <string name="oneplus_supported_apps">Aplicații acceptate</string>
     <string name="oneplus_suspension_notice">Atenționare</string>
     <string name="oneplus_suspension_notice_summary">Permiteți aplicațiilor să afișeze notificările de atenționare</string>
@@ -3734,13 +3853,14 @@ Notă:
     <string name="oneplus_top_level_security_summary">Amprentă, Deblocare facială, Salvare de urgență</string>
     <string name="oneplus_top_level_sound_summary">Nu deranjați, mod cască, ton de apel</string>
     <string name="oneplus_top_level_system_summary">Limbă și tastatură, oră, resetare, actualizări de sistem</string>
+    <string name="oneplus_top_level_system_summary_verizon">Limbă și tastatură, oră, resetare</string>
     <string name="oneplus_touch_vibrate">Vibrații la atingere</string>
-    <string name="oneplus_turn_off_time">Până la</string>
+    <string name="oneplus_turn_off_time">La</string>
     <string name="oneplus_turn_on_feature_cancel">ANULARE</string>
     <string name="oneplus_turn_on_feature_ok">ACTIVARE</string>
     <string name="oneplus_turn_on_time">De la</string>
     <string name="oneplus_uninstatll_multi_app_msg">Toate datele din aplicația paralelă vor fi șterse la dezinstalare. Sigur doriți să dezinstalați?</string>
-    <string name="oneplus_uninstatll_multi_app_title">%1$s paralelă</string>
+    <string name="oneplus_uninstatll_multi_app_title">Aplicație %1$s paralelă</string>
     <string name="oneplus_uninstatll_multi_main_app_msg">Toate datele din această aplicație și din aplicația paralelă asociată vor fi șterse la dezinstalare. Sigur doriți să dezinstalați?</string>
     <string name="oneplus_unknown_ringtone">Ton de apel necunoscut</string>
     <string name="oneplus_use_faceunlock_and_fingerprint_settings_summary">"Utilizați Deblocare facială împreună cu amprenta pentru o experiență de deblocare mai rapidă și mai ușoară. Tot ce trebuie să faceți este să vă porniți telefonul și să vă uitați la el, apoi veți putea utiliza această funcție.
@@ -3762,12 +3882,17 @@ Notă: Deblocarea facială poate fi mai puțin sigură decât amprenta, PIN-ul s
     <string name="oneplus_video_enhancer">Efect culori vii</string>
     <string name="oneplus_video_enhancer_footer">Îmbunătățiți culoarea în timpul redării materialelor video</string>
     <string name="oneplus_video_enhancer_summary">Îmbunătățiți culoarea în timpul redării materialelor video</string>
+    <string name="oneplus_voice_assistant">Asistent voce</string>
     <string name="oneplus_volume_keys_adjust">Utilizați butoanele de volum pentru ajustare</string>
     <string name="oneplus_volume_keys_adjust_media">Volum media</string>
     <string name="oneplus_volume_keys_adjust_ringtones">Volum ton de apel</string>
     <string name="oneplus_weak_text_reminding">Doar text</string>
     <string name="oneplus_weak_text_reminding_summary">Permiteți aplicațiilor să afișeze notificările de atenționare</string>
     <string name="oneplus_wellbeing_grayscale_open_tip">Modul de noapte nu este disponibil momentan deoarece funcția „Grayscale” este activată</string>
+    <string name="oneplus_wifi_6_standard_hotspot_cancel">ANULARE</string>
+    <string name="oneplus_wifi_6_standard_hotspot_enable">ACTIVARE</string>
+    <string name="oneplus_wifi_6_standard_hotspot_title">Punct de acces standard Wi‑Fi 6</string>
+    <string name="oneplus_wifi_6_standard_hotspot_warning">Este posibil ca unele dispozitive de conectat să nu accepte standardul Wi‑Fi 6. Continuați activarea?</string>
     <string name="oneplus_wifi_ap_error">Vă rugăm să introduceți cartela SIM</string>
     <string name="oneplus_wifi_hidden_network_warning">"Dacă routerul dezactivează difuzarea SSID, trebuie să selectați „Da” pentru a vă conecta la rețeaua ascunsă.
 
@@ -3788,6 +3913,8 @@ Setarea rețelei drept ascunsă nu modifică setările routerului."</string>
     <string name="oneplus_zen_mode_automation_settings_title">Activare automată</string>
     <string name="oneplus_zen_mode_duration_settings_title">Durată</string>
     <string name="oneplus_zen_mode_duration_summary_always_prompt">Întreabă de fiecare dată (dacă nu se activează automat)</string>
+    <string name="oneplus_zen_mode_duration_summary_forever">Până când dezactivați (dacă nu se activează automat)</string>
+    <string name="oneplus_zen_mode_duration_summary_time_minutes">%d minute (dacă nu se activează automat)</string>
     <string name="oneplus_zen_mode_footer_info">Când este activat Nu deranjați, sunetul și vibrațiile vor fi dezactivate, cu excepția cazurilor în care permiteți anterior</string>
     <string name="oneplus_zen_mode_mode_manual_switch_summary">Puteți activa manual funcția Nu deranjați</string>
     <string name="oneplus_zen_mode_settings">Comportament</string>
@@ -3801,6 +3928,10 @@ Setarea rețelei drept ascunsă nu modifică setările routerului."</string>
     <string name="op_android_mode_cannot_change_color_accent">Tema implicită poate utiliza numai tema de culoare a sistemului</string>
     <string name="op_app_already_uninstalled">Dezinstalat</string>
     <string name="op_audio_settings">Tuner audio</string>
+    <string name="op_auto_power_saving">Economisirea automată a energiei</string>
+    <string name="op_auto_power_saving_summary">Trecere automată la rezoluția corespunzătoare, fără a epuiza bateria</string>
+    <string name="op_charging_optimization">Încărcare optimizată</string>
+    <string name="op_charging_optimization_summary">Optimizați modelul de încărcare în funcție de obiceiurile dvs.</string>
     <string name="op_china_mobile">CMCC</string>
     <string name="op_china_telecom">CTCC</string>
     <string name="op_china_unicom">CUCC</string>
@@ -3880,6 +4011,7 @@ Setarea rețelei drept ascunsă nu modifică setările routerului."</string>
     <string name="op_wifi_display_summary">Distribuție</string>
     <string name="op_wifi_verbose_multi_broadcast_summary">În standby, specificațiile WLAN Multi/de difuzare pentru aplicații vor activa WLAN și resursele sistemului se vor consuma dacă filtrul nu este activat, ceea ce duce la consumarea excesivă a bateriei.</string>
     <string name="op_wifi_verbose_multi_broadcast_title">Aplicație WLAN Multi/Filtru de difuzare</string>
+    <string name="open_hotspot_warning_message">"Dacă securitatea este deschisă, dispozitivele vor putea folosi Punctul de acces mobil fără a introduce o parolă. Dacă doriți să impuneți o parolă, selectați WPA2. "</string>
     <string name="openid_dialog_reset">RESETARE</string>
     <string name="openid_dialog_summary">Această acțiune înlocuiește identificatorul dvs. cu un număr nou aleatoriu</string>
     <string name="openid_dialog_title">Sigur doriți să resetați identificatorul?</string>
@@ -3964,6 +4096,9 @@ Setarea rețelei drept ascunsă nu modifică setările routerului."</string>
     <string name="power_discharging_duration_enhanced">În baza utilizării, timpul rămas este de aproximativ %1$s (%2$s)</string>
     <string name="power_flashlight">Lanternă</string>
     <string name="power_idle">Telefon inactiv</string>
+    <string name="power_menu">Meniu de pornire</string>
+    <string name="power_off">Oprire</string>
+    <string name="power_off_summary">Dispozitivul se va închide</string>
     <string name="power_overcounted">Supraevaluat</string>
     <string name="power_phone">Apeluri vocale</string>
     <string name="power_remaining_charging_duration_only">Timp rămas până la încărcarea completă: %1$s</string>
@@ -4254,6 +4389,19 @@ Reporniți dispozitivul și încercați din nou."</string>
     <string name="reset_network_title">Resetați Wi-Fi, date mobile și Bluetooth</string>
     <string name="reset_shortcut_manager_throttling">Resetați limitarea frecvenței pentru ShortcutManager</string>
     <string name="reset_shortcut_manager_throttling_complete">Limitarea frecvenței pentru ShortcutManager a fost resetată</string>
+    <string name="reset_system_settings_button_text">Resetarea configurărilor</string>
+    <string name="reset_system_settings_complete_toast">Configurările de sistem au fost resetate</string>
+    <string name="reset_system_settings_desc">"Dacă ați modificat vreuna dintre setările de sistem, „Resetarea configurărilor” readuce telefonul în starea originală.
+
+Nu va afecta niciuna dintre aplicațiile descărcate, nici datele personale, nici setările protejate enumerate mai jos:
+
+"<li>Setări de securitate</li>"
+"<li>Setări de limbă</li>"
+"<li>Setări de cont</li></string>
+    <string name="reset_system_settings_dialog_message">"Resetarea configurărilor de sistem va modifica o parte din personalizările făcute, cum ar fi tonurile de apel, luminozitatea ecranului și comportamentul tastaturii.
+Resetați configurările de sistem? Această acțiune nu se poate anula ulterior"</string>
+    <string name="reset_system_settings_dialog_title">Avertisment</string>
+    <string name="reset_system_settings_title">Resetarea configurărilor</string>
     <string name="restore_default_apn">Se restabilesc setările APN prestabilite.</string>
     <string name="restore_default_apn_completed">Resetarea setărilor APN prestabilite a fost finalizată.</string>
     <string name="restr_pin_enter_admin_pin">Introduceți codul PIN de administrator</string>
@@ -4283,6 +4431,7 @@ Reporniți dispozitivul și încercați din nou."</string>
     <string name="retail_demo_reset_next">Înainte</string>
     <string name="retail_demo_reset_title">Trebuie să introduceți o parolă</string>
     <string name="retry">Încercați din nou</string>
+    <string name="reverse_wireless_charging_category">Încărcare fără fir</string>
     <string name="ring_volume_option_title">Volumul soneriei</string>
     <string name="ring_volume_title">Volumul soneriei</string>
     <string name="ringtone_title">Ton de sonerie al telefonului</string>
@@ -4330,6 +4479,7 @@ Această setare afectează toți utilizatorii de pe acest telefon."</string>
     <string name="safety_and_regulatory_info">Manual despre siguranță și reglementări</string>
     <string name="saturation_option_title">Balans de culoare</string>
     <string name="save">Salvați</string>
+    <string name="save_changes">Salvare modificări</string>
     <string name="saved_network">Salvată de %1$s</string>
     <string name="scanning_status_text_wifi_off_ble_off">Atât scanarea Wi-Fi, cât și scanarea Bluetooth sunt dezactivate</string>
     <string name="scanning_status_text_wifi_off_ble_on">Căutarea Bluetooth este pornită, căutare de rețele Wi-Fi este oprită</string>
@@ -4424,6 +4574,7 @@ Ca să folosiți fixarea pe ecran:
     <string name="search_bar_account_avatar_content_description" />
     <string name="search_menu">Căutați în setări</string>
     <string name="search_menu_title">Căutați</string>
+    <string name="search_network_extenders">Căutare extendere de rețea</string>
     <string name="search_results_title">Setări</string>
     <string name="search_settings">Căutați</string>
     <string name="secure_lock_encryption_warning">Pentru că ați activat un serviciu de accesibilitate, dispozitivul nu va utiliza blocarea ecranului pentru a îmbunătăți criptarea datelor.</string>
@@ -4543,6 +4694,7 @@ Notă: nu vă puteți folosi amprenta ca să deblocați acest dispozitiv. Pentru
     <string name="select_automatically">Selectează automat rețeaua</string>
     <string name="select_day">Selectați luna și ziua</string>
     <string name="select_device_admin_msg">Aplicații pentru admin. dispozitivului</string>
+    <string name="select_function">Selectați funcția</string>
     <string name="select_hours">Selectați orele</string>
     <string name="select_logd_size_dialog_title">Dimensiuni jurnal / mem. temp. jurnal</string>
     <string name="select_logd_size_title">Dimensiunile memoriei temporare a jurnalului</string>
@@ -4564,6 +4716,9 @@ Notă: nu vă puteți folosi amprenta ca să deblocați acest dispozitiv. Pentru
     <string name="select_year">Selectați anul</string>
     <string name="sensors_off_quick_settings_title">Senzori dezactivați</string>
     <string name="service_background_processes">%1$s liberi</string>
+    <string name="service_does_not_exists_in_this_area">În această zonă nu există semnal</string>
+    <string name="service_exists_in_this_area_and_is_capable_of_being_used">În această zonă există semnal și se poate utiliza</string>
+    <string name="service_exists_in_this_area_but_is_not_capable_of_being_used">În această zonă există semnal, dar nu se poate utiliza</string>
     <string name="service_foreground_processes">%1$s utilizați</string>
     <string name="service_manage">Setări</string>
     <string name="service_manage_description">%1$s: este folosit momentan. Atingeți Setări pentru a-l controla.</string>
@@ -4637,6 +4792,8 @@ Notă: nu vă puteți folosi amprenta ca să deblocați acest dispozitiv. Pentru
     <string name="show_screen_updates_summary">Iluminarea întregii fereastre la actualizare</string>
     <string name="show_touches">Afișați atingerile</string>
     <string name="show_touches_summary">Afișați feedbackul vizual pentru atingeri</string>
+    <string name="show_wifi_popup">Afișare pop-up Wi-Fi</string>
+    <string name="show_wifi_popup_summary">La deschiderea aplicațiilor se afișează mesaje despre disponibilitatea Wi-Fi</string>
     <string name="sim_bad_pin">Cod PIN incorect</string>
     <string name="sim_call_back_title">Apelați de pe cardul SIM implicit</string>
     <string name="sim_calls_always_use">Utilizați întotdeauna pentru apeluri</string>
@@ -4743,7 +4900,9 @@ Notificările de la aceste aplicații se pot primi cu întârziere."</string>
     <string name="sms_messages_title">Mesaje SMS</string>
     <string name="sms_preference">Preferințe pentru SMS</string>
     <string name="snooze_options_title">Permiteți amânarea notificărilor</string>
+    <string name="softap_tethering_footer_info">Utilizați punctul de acces mobil și partajarea conexiunii pentru a oferi acces la internet altor dispozitive, prin conexiunea de date mobile sau Wi-Fi. De asemenea, aplicațiile pot crea puncte de acces mobil pentru a partaja conținut cu dispozitivele din apropiere.</string>
     <string name="sometimes_running">Rulează uneori (%s)</string>
+    <string name="sort_apps_by_date">Sortare după dată</string>
     <string name="sort_avg_use">Sortați după utilizarea medie</string>
     <string name="sort_max_use">Sortați după utilizarea maximă</string>
     <string name="sort_order_alpha">Sortați după nume</string>
@@ -5086,6 +5245,7 @@ O abordare Google asupra sincronizării datelor, care vă permite accesul la age
     <string name="system_navigation_title">Navigarea sistemului</string>
     <string name="system_package">Actualizările de sistem nu pot fi instalate pe suportul extern.</string>
     <string name="system_ui_settings">Afișați Tunerul SystemUI</string>
+    <string name="system_update">Actualizare sistem</string>
     <string name="system_update_settings_list_item_summary" />
     <string name="system_update_settings_list_item_title">Actualizări de sistem</string>
     <string name="system_update_uss_title">Descărcare și instalare</string>
@@ -5219,6 +5379,7 @@ O abordare Google asupra sincronizării datelor, care vă permite accesul la age
     <string name="tts_status_title">Starea limbii prestabilite</string>
     <string name="tx_link_speed">%1$d Mbps</string>
     <string name="tx_wifi_speed">Viteză conectare la transfer</string>
+    <string name="uicc_alert_message">Conectarea la rețeaua WiFi cu SSID VerizonWiFiAccess necesită UICC</string>
     <string name="uicc_all_lock_summary">Dispozitivul dvs. este blocat pentru cartele SIM internaționale sau Sprint</string>
     <string name="uicc_lock_summary">Dispozitivul dvs. este blocat numai pentru cartele SIM Sprint</string>
     <string name="uicc_unlock">Deblocare UICC</string>
@@ -5240,10 +5401,16 @@ O abordare Google asupra sincronizării datelor, care vă permite accesul la age
     <string name="uninstall_failed_device_policy_manager">Nu se poate dezinstala deoarece acest pachet este un administrator de dispozitiv activ.</string>
     <string name="uninstall_failed_device_policy_manager_of_user">Nu se poate dezinstala deoarece acest pachet este un administrator de dispozitiv activ pentru utilizatorul %1$s.</string>
     <string name="uninstall_failure_notification_channel">Dezinstalările nu au reușit</string>
+    <string name="uninstall_multiple_apps">Operații în grup</string>
     <string name="uninstall_text">Dezinstalați</string>
     <string name="uninstall_update_text">Înlocuiți această aplicație cu versiunea din fabrică? Toate datele vor fi șterse.</string>
     <string name="uninstall_update_text_multiuser">Înlocuiți această aplicație cu versiunea din fabrică? Toate datele vor fi șterse. Acest lucru afectează toți utilizatorii acestui dispozitiv, inclusiv pe cei cu profiluri de lucru.</string>
     <string name="uninstall_update_title">Dezinstalare actualizare</string>
+    <string name="uninstallapps_confirm">Confirmare</string>
+    <string name="uninstallapps_confirm_dialog_body">Se vor șterge toate aplicațiile selectate și toate fișierele asociate cu pachetul de aplicație.</string>
+    <string name="uninstallapps_confirm_dialog_title">Eliminați aplicațiile selectate?</string>
+    <string name="uninstallapps_selected">selectat</string>
+    <string name="uninstallapps_toast_message">aplicații au fost eliminate</string>
     <string name="uninstalling">Dezinstalare…</string>
     <string name="uninstalling_notification_channel">Se efectuează dezinstalările</string>
     <string name="unknown">Necunoscut</string>
@@ -5325,6 +5492,12 @@ De asemenea, amprentele salvate vor fi eliminate din acest profil și nu le veț
     <string name="unsupported_setting_summary">Setarea nu este acceptată pe telefon</string>
     <string name="update_prl">Actualizare PRL</string>
     <string name="update_profile">Actualizare profil</string>
+    <string name="upstream_type_auto">Comutare automată</string>
+    <string name="upstream_type_auto_summary">Trecerea automată la conexiunea de date mobile la deconectarea Wi-Fi</string>
+    <string name="upstream_type_cell">Se partajează numai conexiunea de date mobile</string>
+    <string name="upstream_type_cell_summary">Partajarea se dezactivează când datele mobile sunt deconectate</string>
+    <string name="upstream_type_wifi">Se partajează doar Wi-Fi</string>
+    <string name="upstream_type_wifi_summary">Partajarea se dezactivează când Wi-Fi este deconectat</string>
     <string name="usage">Utilizare</string>
     <string name="usage_access">Acces la datele de utilizare</string>
     <string name="usage_access_description">Accesul la datele de utilizare permite unei aplicații să înregistreze ce alte aplicații folosiți și cât de des le folosiți, precum și operatorul, setările de limbă și alte detalii.</string>
@@ -5468,7 +5641,7 @@ Orice utilizator poate actualiza aplicațiile pentru toți ceilalți utilizatori
     <string name="user_exit_guest_confirm_title">Ștergeți invitatul?</string>
     <string name="user_exit_guest_dialog_remove">Ștergeți</string>
     <string name="user_exit_guest_title">Ștergeți invitatul</string>
-    <string name="user_experience">Program de experiențe pentru utilizator</string>
+    <string name="user_experience">Programul de experiențe pentru utilizator</string>
     <string name="user_experience_description">Permiteți OnePlus să analizeze anonim datele statistice generale despre modul de utilizare a telefonului dvs. pentru a ne ajuta să îmbunătățim designul produsului și experiența utilizatorului</string>
     <string name="user_guest">Invitat</string>
     <string name="user_image_choose_photo">Alegeți o imagine</string>
@@ -5510,6 +5683,9 @@ Orice utilizator poate actualiza aplicațiile pentru toți ceilalți utilizatori
     <string name="v7_preference_on">ACTIVAT</string>
     <string name="verify_apps_over_usb_summary">Verificați aplicațiile instalate utilizând ADB/ADT, pentru a detecta un comportament dăunător.</string>
     <string name="verify_apps_over_usb_title">Verificați aplicațiile prin USB</string>
+    <string name="verizon_store_demo_mode_hint">Introduceți parola</string>
+    <string name="verizon_store_demo_mode_title">Verizon Store Demo Mode</string>
+    <string name="verizon_wifi_tether_band_warning">Dacă schimbați configurația Punctului de acces mobil, dispozitivele conectate la acesta vor fi deconectate.</string>
     <string name="version_text">versiunea %1$s</string>
     <string name="vibrate_in_silent_title">Vibrează la profilul Silențios</string>
     <string name="vibrate_input_devices">Redirecționați vibrațiile</string>
@@ -5530,7 +5706,7 @@ Orice utilizator poate actualiza aplicațiile pentru toți ceilalți utilizatori
     <string name="voice_input_settings_title">Intrare vocală</string>
     <string name="voice_interaction_security_warning">Acest serviciu de introducere vocală va putea să asigure în permanență monitorizarea vocală și să controleze aplicațiile cu comenzi vocale în locul dvs. Acesta provine din aplicația %s. Activați utilizarea acestui serviciu?</string>
     <string name="voice_interactor_preference_summary">Expresie de activare și interacțiune complete</string>
-    <string name="voice_network_title">Rețea de voce</string>
+    <string name="voice_network_title">Rețele de voce</string>
     <string name="voice_recognizer_preference_summary">Transformare simplă a vorbirii în text</string>
     <string name="voice_search_settings_title">Căutare vocală</string>
     <string name="voice_service_preference_section_title">Servicii de intrare vocală</string>
@@ -5626,6 +5802,8 @@ Orice utilizator poate actualiza aplicațiile pentru toți ceilalți utilizatori
     <string name="wallpaper_settings_title">Imagine de fundal</string>
     <string name="wallpaper_suggestion_summary">Personalizați ecranul</string>
     <string name="wallpaper_suggestion_title">Schimbați imaginea de fundal</string>
+    <string name="warning_title">Avertizare</string>
+    <string name="warranty_date_code">Dată de garanție</string>
     <string name="web_action_enable_summary">Deschideți linkuri în aplicații, chiar dacă acestea nu sunt instalate</string>
     <string name="web_action_enable_title">Aplicații instantanee</string>
     <string name="web_action_section_title">Aplicații instantanee</string>
@@ -5940,8 +6118,17 @@ Permiteți acest lucru pentru toate aplicațiile care solicită scanarea?"</stri
     <string name="wifi_tether_custom_auto_turn_off_always_summary">Întotdeauna activat</string>
     <string name="wifi_tether_enabled_subtext">%1$s este activ</string>
     <string name="wifi_tether_failed_subtext">Eroare de hotspot Wi-Fi portabil</string>
+    <string name="wifi_tether_passphrase_warning">Cel puțin 8 caractere, inclusiv 1 literă, 1 cifră și 1 simbol</string>
     <string name="wifi_tether_starting">Se activează hotspotul...</string>
     <string name="wifi_tether_stopping">Se dezactivează hotspotul...</string>
+    <string name="wifi_tether_upstream_network_type_config">Setări de partajare</string>
+    <string name="wifi_tether_upstream_network_type_title">Setări de partajare</string>
+    <string name="wifi_tether_verizon_custom_auto_turn_off_10_min_summary">După 10 min. de inactivitate</string>
+    <string name="wifi_tether_verizon_custom_auto_turn_off_20_min_summary">După 20 de minute de inactivitate</string>
+    <string name="wifi_tether_verizon_custom_auto_turn_off_30_min_summary">După 30 de minute de inactivitate</string>
+    <string name="wifi_tether_verizon_custom_auto_turn_off_5_min_summary">După 5 min. de inactivitate</string>
+    <string name="wifi_tether_verizon_custom_auto_turn_off_60_min_summary">După 60 de minute de inactivitate</string>
+    <string name="wifi_tether_verizon_custom_auto_turn_off_always_summary">Întotdeauna activat</string>
     <string name="wifi_turned_on_message">Conexiunea prin Wi-Fi este activată</string>
     <string name="wifi_unchanged">(nu s-a schimbat)</string>
     <string name="wifi_unmetered_label">Necontorizată</string>
@@ -5984,8 +6171,8 @@ Permiteți acest lucru pentru toate aplicațiile care solicită scanarea?"</stri
     <string name="wizard_finish">Finalizați</string>
     <string name="wizard_next">Înainte</string>
     <string name="work_alarm_ringtone_title">Sunet prestabilit pentru alarma de serviciu</string>
-    <string name="work_life_balance">Echilibrul muncă-viață</string>
-    <string name="work_life_disabled_toast">Funcția Echilibrul muncă-viață este dezactivată.</string>
+    <string name="work_life_balance">Work-Life Balance</string>
+    <string name="work_life_disabled_toast">Funcția Work-Life Balance este dezactivată.</string>
     <string name="work_mode_label">Profil de serviciu</string>
     <string name="work_mode_off_summary">Aplicațiile și notificările sunt dezactivate</string>
     <string name="work_mode_on_summary">Gestionat de organizația dvs.</string>

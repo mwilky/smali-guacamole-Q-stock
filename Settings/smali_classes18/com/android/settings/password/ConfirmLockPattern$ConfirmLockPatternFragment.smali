@@ -201,7 +201,7 @@
 
     if-ne v0, v1, :cond_0
 
-    const v0, 0x7f0a036d
+    const v0, 0x7f0a0372
 
     invoke-virtual {p2, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -456,7 +456,7 @@
 
     if-eqz v0, :cond_0
 
-    const v0, 0x7f120986
+    const v0, 0x7f1209c2
 
     return v0
 
@@ -483,12 +483,12 @@
 
     if-eqz v0, :cond_1
 
-    const v1, 0x7f1209a6
+    const v1, 0x7f1209e2
 
     goto :goto_0
 
     :cond_1
-    const v1, 0x7f120988
+    const v1, 0x7f1209c4
 
     :goto_0
     return v1
@@ -496,12 +496,12 @@
     :cond_2
     if-eqz v0, :cond_3
 
-    const v1, 0x7f1209a3
+    const v1, 0x7f1209df
 
     goto :goto_1
 
     :cond_3
-    const v1, 0x7f120987
+    const v1, 0x7f1209c3
 
     :goto_1
     return v1
@@ -514,12 +514,12 @@
 
     if-eqz v0, :cond_0
 
-    const v0, 0x7f12098a
+    const v0, 0x7f1209c6
 
     goto :goto_0
 
     :cond_0
-    const v0, 0x7f120989
+    const v0, 0x7f1209c5
 
     :goto_0
     return v0
@@ -782,7 +782,7 @@
     goto :goto_2
 
     :cond_1
-    const v0, 0x7f1209ad
+    const v0, 0x7f1209e9
 
     const-wide/16 v3, 0xbb8
 
@@ -1042,7 +1042,7 @@
 
     if-ne p1, v0, :cond_0
 
-    const v0, 0x7f12093f
+    const v0, 0x7f12097b
 
     return v0
 
@@ -1068,12 +1068,12 @@
     throw v0
 
     :cond_1
-    const v0, 0x7f12093e
+    const v0, 0x7f12097a
 
     return v0
 
     :cond_2
-    const v0, 0x7f12093d
+    const v0, 0x7f120979
 
     return v0
 .end method
@@ -1165,7 +1165,7 @@
     move-result-object v4
 
     :goto_2
-    const v5, 0x7f0a02d0
+    const v5, 0x7f0a02d5
 
     invoke-virtual {v4, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1202,7 +1202,7 @@
     invoke-virtual {v5, v6}, Landroid/widget/TextView;->setTextColor(I)V
 
     :cond_3
-    const v5, 0x7f0a03aa
+    const v5, 0x7f0a03af
 
     invoke-virtual {v4, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1212,7 +1212,7 @@
 
     iput-object v5, v0, Lcom/android/settings/password/ConfirmLockPattern$ConfirmLockPatternFragment;->mLockPatternView:Lcom/android/internal/widget/LockPatternView;
 
-    const v5, 0x7f0a068b
+    const v5, 0x7f0a068c
 
     invoke-virtual {v4, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1232,7 +1232,7 @@
 
     iput-object v5, v0, Lcom/android/settings/password/ConfirmLockPattern$ConfirmLockPatternFragment;->mErrorTextView:Landroid/widget/TextView;
 
-    const v5, 0x7f0a0393
+    const v5, 0x7f0a0398
 
     invoke-virtual {v4, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1240,7 +1240,7 @@
 
     iput-object v5, v0, Lcom/android/settings/password/ConfirmLockPattern$ConfirmLockPatternFragment;->mLeftSpacerLandscape:Landroid/view/View;
 
-    const v5, 0x7f0a05b1
+    const v5, 0x7f0a05b2
 
     invoke-virtual {v4, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1248,7 +1248,7 @@
 
     iput-object v5, v0, Lcom/android/settings/password/ConfirmLockPattern$ConfirmLockPatternFragment;->mRightSpacerLandscape:Landroid/view/View;
 
-    const v5, 0x7f0a0708
+    const v5, 0x7f0a0709
 
     invoke-virtual {v4, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

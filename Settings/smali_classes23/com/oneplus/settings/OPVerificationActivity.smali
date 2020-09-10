@@ -45,15 +45,15 @@
 
     move-result-object v0
 
-    const v1, 0x7f12120f
+    const v1, 0x7f1212be
 
     invoke-virtual {v0, v1}, Landroid/app/ActionBar;->setTitle(I)V
 
-    const v0, 0x7f0d0209
+    const v0, 0x7f0d020a
 
     invoke-virtual {p0, v0}, Lcom/oneplus/settings/OPVerificationActivity;->setContentView(I)V
 
-    const v0, 0x7f0a059b
+    const v0, 0x7f0a059c
 
     invoke-virtual {p0, v0}, Lcom/oneplus/settings/OPVerificationActivity;->findViewById(I)Landroid/view/View;
 
@@ -75,7 +75,7 @@
 
     iget-object v0, p0, Lcom/oneplus/settings/OPVerificationActivity;->mRegulatoryInfoImage:Landroid/widget/ImageView;
 
-    const v1, 0x7f08059b
+    const v1, 0x7f0805a4
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -94,7 +94,7 @@
 
     iget-object v0, p0, Lcom/oneplus/settings/OPVerificationActivity;->mRegulatoryInfoImage:Landroid/widget/ImageView;
 
-    const v1, 0x7f08059c
+    const v1, 0x7f0805a5
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -113,7 +113,7 @@
 
     iget-object v0, p0, Lcom/oneplus/settings/OPVerificationActivity;->mRegulatoryInfoImage:Landroid/widget/ImageView;
 
-    const v1, 0x7f08059d
+    const v1, 0x7f0805a6
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -132,7 +132,7 @@
 
     iget-object v0, p0, Lcom/oneplus/settings/OPVerificationActivity;->mRegulatoryInfoImage:Landroid/widget/ImageView;
 
-    const v1, 0x7f08059e
+    const v1, 0x7f0805a7
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -141,7 +141,7 @@
     :cond_3
     sget-object v0, Landroid/os/Build;->MODEL:Ljava/lang/String;
 
-    const v1, 0x7f120db2
+    const v1, 0x7f120e29
 
     invoke-virtual {p0, v1}, Lcom/oneplus/settings/OPVerificationActivity;->getString(I)Ljava/lang/String;
 
@@ -155,7 +155,7 @@
 
     sget-object v0, Landroid/os/Build;->MODEL:Ljava/lang/String;
 
-    const v1, 0x7f120db3
+    const v1, 0x7f120e2a
 
     invoke-virtual {p0, v1}, Lcom/oneplus/settings/OPVerificationActivity;->getString(I)Ljava/lang/String;
 
@@ -172,7 +172,7 @@
     :cond_4
     iget-object v0, p0, Lcom/oneplus/settings/OPVerificationActivity;->mRegulatoryInfoImage:Landroid/widget/ImageView;
 
-    const v1, 0x7f0805a6
+    const v1, 0x7f0805af
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -182,7 +182,7 @@
     :goto_0
     iget-object v0, p0, Lcom/oneplus/settings/OPVerificationActivity;->mRegulatoryInfoImage:Landroid/widget/ImageView;
 
-    const v1, 0x7f0805a3
+    const v1, 0x7f0805ac
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageResource(I)V
 

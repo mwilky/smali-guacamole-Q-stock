@@ -730,7 +730,7 @@
 
     const v0, 0x7f0a0225
 
-    const v1, 0x7f120a6a
+    const v1, 0x7f120aad
 
     const/4 v2, 0x0
 

@@ -256,7 +256,7 @@
 
     iget-object v0, p0, Lcom/android/settings/ResetNetworkConfirm$ResetNetworkTask;->mContext:Landroid/content/Context;
 
-    const v1, 0x7f121226
+    const v1, 0x7f1212d5
 
     const/4 v2, 0x0
 
@@ -277,13 +277,13 @@
 
     invoke-direct {v1, v2}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v2, 0x7f121223
+    const v2, 0x7f1212d2
 
     invoke-virtual {v1, v2}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
     move-result-object v1
 
-    const v2, 0x7f121222
+    const v2, 0x7f1212d1
 
     invoke-virtual {v1, v2}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
 

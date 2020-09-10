@@ -585,7 +585,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f121660
+    const v1, 0x7f121732
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -600,7 +600,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f120394
+    const v1, 0x7f1203a7
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -715,7 +715,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f121543
+    const v3, 0x7f121608
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -732,7 +732,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f121545
+    const v4, 0x7f12160a
 
     new-array v5, v0, [Ljava/lang/Object;
 
@@ -748,7 +748,7 @@
 
     move-result-object v4
 
-    const v5, 0x7f121544
+    const v5, 0x7f121609
 
     new-array v0, v0, [Ljava/lang/Object;
 
@@ -779,7 +779,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f121547
+    const v3, 0x7f12160c
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -789,7 +789,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f121546
+    const v4, 0x7f12160b
 
     invoke-virtual {v3, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1276,7 +1276,7 @@
 .method public getHelpResource()I
     .locals 1
 
-    const v0, 0x7f1207e6
+    const v0, 0x7f12081e
 
     return v0
 .end method
@@ -1328,7 +1328,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f121551
+    const v1, 0x7f121616
 
     invoke-virtual {v0, v1}, Lcom/oneplus/settings/widget/OPFooterPreference;->setTitle(I)V
 
@@ -1733,7 +1733,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f121555
+    const v1, 0x7f12161a
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
 

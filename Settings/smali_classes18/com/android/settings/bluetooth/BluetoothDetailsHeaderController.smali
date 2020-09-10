@@ -14,12 +14,35 @@
 
 .field private mLocalManager:Lcom/android/settingslib/bluetooth/LocalBluetoothManager;
 
+.field private mTwsAddress:Z
+
+.field private mTwsBatteryInfo:Ljava/util/HashMap;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/HashMap<",
+            "Ljava/lang/String;",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+.end field
+
 
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroidx/preference/PreferenceFragmentCompat;Lcom/android/settingslib/bluetooth/CachedBluetoothDevice;Lcom/android/settingslib/core/lifecycle/Lifecycle;Lcom/android/settingslib/bluetooth/LocalBluetoothManager;)V
     .locals 1
 
     invoke-direct {p0, p1, p2, p3, p4}, Lcom/android/settings/bluetooth/BluetoothDetailsController;-><init>(Landroid/content/Context;Landroidx/preference/PreferenceFragmentCompat;Lcom/android/settingslib/bluetooth/CachedBluetoothDevice;Lcom/android/settingslib/core/lifecycle/Lifecycle;)V
+
+    new-instance v0, Ljava/util/HashMap;
+
+    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
+
+    iput-object v0, p0, Lcom/android/settings/bluetooth/BluetoothDetailsHeaderController;->mTwsBatteryInfo:Ljava/util/HashMap;
+
+    const/4 v0, 0x0
+
+    iput-boolean v0, p0, Lcom/android/settings/bluetooth/BluetoothDetailsHeaderController;->mTwsAddress:Z
 
     iput-object p5, p0, Lcom/android/settings/bluetooth/BluetoothDetailsHeaderController;->mLocalManager:Lcom/android/settingslib/bluetooth/LocalBluetoothManager;
 
@@ -152,7 +175,7 @@
 .end method
 
 .method protected setHeaderProperties()V
-    .locals 5
+    .locals 6
 
     iget-object v0, p0, Lcom/android/settings/bluetooth/BluetoothDetailsHeaderController;->mContext:Landroid/content/Context;
 
@@ -162,53 +185,144 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/bluetooth/BluetoothDetailsHeaderController;->mCachedDevice:Lcom/android/settingslib/bluetooth/CachedBluetoothDevice;
+    iget-object v1, p0, Lcom/android/settings/bluetooth/BluetoothDetailsHeaderController;->mTwsBatteryInfo:Ljava/util/HashMap;
 
-    invoke-virtual {v1}, Lcom/android/settingslib/bluetooth/CachedBluetoothDevice;->getConnectionSummary()Ljava/lang/String;
+    iget-object v2, p0, Lcom/android/settings/bluetooth/BluetoothDetailsHeaderController;->mCachedDevice:Lcom/android/settingslib/bluetooth/CachedBluetoothDevice;
+
+    invoke-virtual {v2}, Lcom/android/settingslib/bluetooth/CachedBluetoothDevice;->getAddress()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/android/settings/bluetooth/BluetoothDetailsHeaderController;->mHeaderController:Lcom/android/settings/widget/EntityHeaderController;
+    check-cast v1, Ljava/lang/String;
 
-    iget-object v3, p0, Lcom/android/settings/bluetooth/BluetoothDetailsHeaderController;->mDeviceManager:Lcom/android/settingslib/bluetooth/CachedBluetoothDeviceManager;
+    iget-object v2, p0, Lcom/android/settings/bluetooth/BluetoothDetailsHeaderController;->mCachedDevice:Lcom/android/settingslib/bluetooth/CachedBluetoothDevice;
+
+    invoke-virtual {v2}, Lcom/android/settingslib/bluetooth/CachedBluetoothDevice;->getConnectionSummary()Ljava/lang/String;
+
+    move-result-object v2
+
+    iget-object v3, p0, Lcom/android/settings/bluetooth/BluetoothDetailsHeaderController;->mHeaderController:Lcom/android/settings/widget/EntityHeaderController;
+
+    iget-object v4, p0, Lcom/android/settings/bluetooth/BluetoothDetailsHeaderController;->mDeviceManager:Lcom/android/settingslib/bluetooth/CachedBluetoothDeviceManager;
+
+    iget-object v5, p0, Lcom/android/settings/bluetooth/BluetoothDetailsHeaderController;->mCachedDevice:Lcom/android/settingslib/bluetooth/CachedBluetoothDevice;
+
+    invoke-virtual {v4, v5}, Lcom/android/settingslib/bluetooth/CachedBluetoothDeviceManager;->getSubDeviceSummary(Lcom/android/settingslib/bluetooth/CachedBluetoothDevice;)Ljava/lang/String;
+
+    move-result-object v4
+
+    invoke-virtual {v3, v4}, Lcom/android/settings/widget/EntityHeaderController;->setSecondSummary(Ljava/lang/CharSequence;)Lcom/android/settings/widget/EntityHeaderController;
+
+    iget-object v3, p0, Lcom/android/settings/bluetooth/BluetoothDetailsHeaderController;->mHeaderController:Lcom/android/settings/widget/EntityHeaderController;
 
     iget-object v4, p0, Lcom/android/settings/bluetooth/BluetoothDetailsHeaderController;->mCachedDevice:Lcom/android/settingslib/bluetooth/CachedBluetoothDevice;
 
-    invoke-virtual {v3, v4}, Lcom/android/settingslib/bluetooth/CachedBluetoothDeviceManager;->getSubDeviceSummary(Lcom/android/settingslib/bluetooth/CachedBluetoothDevice;)Ljava/lang/String;
+    invoke-virtual {v4}, Lcom/android/settingslib/bluetooth/CachedBluetoothDevice;->getName()Ljava/lang/String;
 
-    move-result-object v3
+    move-result-object v4
 
-    invoke-virtual {v2, v3}, Lcom/android/settings/widget/EntityHeaderController;->setSecondSummary(Ljava/lang/CharSequence;)Lcom/android/settings/widget/EntityHeaderController;
+    invoke-virtual {v3, v4}, Lcom/android/settings/widget/EntityHeaderController;->setLabel(Ljava/lang/CharSequence;)Lcom/android/settings/widget/EntityHeaderController;
 
-    iget-object v2, p0, Lcom/android/settings/bluetooth/BluetoothDetailsHeaderController;->mHeaderController:Lcom/android/settings/widget/EntityHeaderController;
+    iget-object v3, p0, Lcom/android/settings/bluetooth/BluetoothDetailsHeaderController;->mHeaderController:Lcom/android/settings/widget/EntityHeaderController;
 
-    iget-object v3, p0, Lcom/android/settings/bluetooth/BluetoothDetailsHeaderController;->mCachedDevice:Lcom/android/settingslib/bluetooth/CachedBluetoothDevice;
+    iget-object v4, v0, Landroid/util/Pair;->first:Ljava/lang/Object;
 
-    invoke-virtual {v3}, Lcom/android/settingslib/bluetooth/CachedBluetoothDevice;->getName()Ljava/lang/String;
+    check-cast v4, Landroid/graphics/drawable/Drawable;
 
-    move-result-object v3
+    invoke-virtual {v3, v4}, Lcom/android/settings/widget/EntityHeaderController;->setIcon(Landroid/graphics/drawable/Drawable;)Lcom/android/settings/widget/EntityHeaderController;
 
-    invoke-virtual {v2, v3}, Lcom/android/settings/widget/EntityHeaderController;->setLabel(Ljava/lang/CharSequence;)Lcom/android/settings/widget/EntityHeaderController;
+    iget-object v3, p0, Lcom/android/settings/bluetooth/BluetoothDetailsHeaderController;->mHeaderController:Lcom/android/settings/widget/EntityHeaderController;
 
-    iget-object v2, p0, Lcom/android/settings/bluetooth/BluetoothDetailsHeaderController;->mHeaderController:Lcom/android/settings/widget/EntityHeaderController;
+    iget-object v4, v0, Landroid/util/Pair;->second:Ljava/lang/Object;
 
-    iget-object v3, v0, Landroid/util/Pair;->first:Ljava/lang/Object;
+    check-cast v4, Ljava/lang/String;
 
-    check-cast v3, Landroid/graphics/drawable/Drawable;
+    invoke-virtual {v3, v4}, Lcom/android/settings/widget/EntityHeaderController;->setIconContentDescription(Ljava/lang/String;)Lcom/android/settings/widget/EntityHeaderController;
 
-    invoke-virtual {v2, v3}, Lcom/android/settings/widget/EntityHeaderController;->setIcon(Landroid/graphics/drawable/Drawable;)Lcom/android/settings/widget/EntityHeaderController;
+    invoke-static {v1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
-    iget-object v2, p0, Lcom/android/settings/bluetooth/BluetoothDetailsHeaderController;->mHeaderController:Lcom/android/settings/widget/EntityHeaderController;
+    move-result v3
 
-    iget-object v3, v0, Landroid/util/Pair;->second:Ljava/lang/Object;
+    if-nez v3, :cond_0
 
-    check-cast v3, Ljava/lang/String;
+    invoke-static {v2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
-    invoke-virtual {v2, v3}, Lcom/android/settings/widget/EntityHeaderController;->setIconContentDescription(Ljava/lang/String;)Lcom/android/settings/widget/EntityHeaderController;
+    move-result v3
 
-    iget-object v2, p0, Lcom/android/settings/bluetooth/BluetoothDetailsHeaderController;->mHeaderController:Lcom/android/settings/widget/EntityHeaderController;
+    if-nez v3, :cond_0
 
-    invoke-virtual {v2, v1}, Lcom/android/settings/widget/EntityHeaderController;->setSummary(Ljava/lang/CharSequence;)Lcom/android/settings/widget/EntityHeaderController;
+    iget-object v3, p0, Lcom/android/settings/bluetooth/BluetoothDetailsHeaderController;->mHeaderController:Lcom/android/settings/widget/EntityHeaderController;
 
+    invoke-virtual {v3, v1}, Lcom/android/settings/widget/EntityHeaderController;->setSummary(Ljava/lang/CharSequence;)Lcom/android/settings/widget/EntityHeaderController;
+
+    goto :goto_0
+
+    :cond_0
+    iget-boolean v3, p0, Lcom/android/settings/bluetooth/BluetoothDetailsHeaderController;->mTwsAddress:Z
+
+    if-eqz v3, :cond_1
+
+    invoke-static {v2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+
+    move-result v3
+
+    if-eqz v3, :cond_2
+
+    iget-object v3, p0, Lcom/android/settings/bluetooth/BluetoothDetailsHeaderController;->mHeaderController:Lcom/android/settings/widget/EntityHeaderController;
+
+    invoke-virtual {v3, v2}, Lcom/android/settings/widget/EntityHeaderController;->setSummary(Ljava/lang/CharSequence;)Lcom/android/settings/widget/EntityHeaderController;
+
+    goto :goto_0
+
+    :cond_1
+    iget-object v3, p0, Lcom/android/settings/bluetooth/BluetoothDetailsHeaderController;->mHeaderController:Lcom/android/settings/widget/EntityHeaderController;
+
+    invoke-virtual {v3, v2}, Lcom/android/settings/widget/EntityHeaderController;->setSummary(Ljava/lang/CharSequence;)Lcom/android/settings/widget/EntityHeaderController;
+
+    :cond_2
+    :goto_0
+    return-void
+.end method
+
+.method public setTwsAddress(Z)V
+    .locals 0
+
+    iput-boolean p1, p0, Lcom/android/settings/bluetooth/BluetoothDetailsHeaderController;->mTwsAddress:Z
+
+    return-void
+.end method
+
+.method public updateSumary(Ljava/lang/String;Ljava/lang/String;)V
+    .locals 3
+
+    iget-object v0, p0, Lcom/android/settings/bluetooth/BluetoothDetailsHeaderController;->mHeaderController:Lcom/android/settings/widget/EntityHeaderController;
+
+    if-eqz v0, :cond_0
+
+    iget-object v0, p0, Lcom/android/settings/bluetooth/BluetoothDetailsHeaderController;->mTwsBatteryInfo:Ljava/util/HashMap;
+
+    invoke-virtual {v0, p1, p2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    iget-object v0, p0, Lcom/android/settings/bluetooth/BluetoothDetailsHeaderController;->mHeaderController:Lcom/android/settings/widget/EntityHeaderController;
+
+    invoke-virtual {v0, p2}, Lcom/android/settings/widget/EntityHeaderController;->setSummary(Ljava/lang/CharSequence;)Lcom/android/settings/widget/EntityHeaderController;
+
+    iget-object v0, p0, Lcom/android/settings/bluetooth/BluetoothDetailsHeaderController;->mHeaderController:Lcom/android/settings/widget/EntityHeaderController;
+
+    iget-object v1, p0, Lcom/android/settings/bluetooth/BluetoothDetailsHeaderController;->mFragment:Landroidx/preference/PreferenceFragmentCompat;
+
+    invoke-virtual {v1}, Landroidx/preference/PreferenceFragmentCompat;->getActivity()Landroidx/fragment/app/FragmentActivity;
+
+    move-result-object v1
+
+    const/4 v2, 0x1
+
+    invoke-virtual {v0, v1, v2}, Lcom/android/settings/widget/EntityHeaderController;->done(Landroid/app/Activity;Z)Landroid/view/View;
+
+    :cond_0
     return-void
 .end method

@@ -476,7 +476,7 @@
     add-int/lit8 v1, v0, -0x1
 
     :goto_0
-    if-ltz v1, :cond_4
+    if-ltz v1, :cond_5
 
     iget-object v2, p0, Lcom/oneplus/settings/quicklaunch/OPAppDragAndDropAdapter;->mAppItemList:Ljava/util/List;
 
@@ -490,7 +490,7 @@
 
     move-result v2
 
-    if-eqz v2, :cond_3
+    if-eqz v2, :cond_4
 
     iget-object v2, p0, Lcom/oneplus/settings/quicklaunch/OPAppDragAndDropAdapter;->mAppItemList:Ljava/util/List;
 
@@ -559,7 +559,7 @@
 
     invoke-virtual {v3, v5, v6}, Ljava/lang/StringBuilder;->delete(II)Ljava/lang/StringBuilder;
 
-    goto :goto_1
+    goto :goto_2
 
     :cond_1
     invoke-virtual {v2}, Lcom/oneplus/settings/better/OPAppModel;->getType()I
@@ -586,9 +586,36 @@
 
     invoke-virtual {v3, v5, v6}, Ljava/lang/StringBuilder;->delete(II)Ljava/lang/StringBuilder;
 
-    goto :goto_2
+    goto :goto_1
 
     :cond_2
+    invoke-virtual {v2}, Lcom/oneplus/settings/better/OPAppModel;->getType()I
+
+    move-result v4
+
+    const/4 v5, 0x3
+
+    if-ne v4, v5, :cond_3
+
+    invoke-static {v2}, Lcom/oneplus/settings/utils/OPUtils;->getQuickMiniProgrameString(Lcom/oneplus/settings/better/OPAppModel;)Ljava/lang/String;
+
+    move-result-object v4
+
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->indexOf(Ljava/lang/String;)I
+
+    move-result v5
+
+    invoke-virtual {v4}, Ljava/lang/String;->length()I
+
+    move-result v6
+
+    add-int/2addr v6, v5
+
+    invoke-virtual {v3, v5, v6}, Ljava/lang/StringBuilder;->delete(II)Ljava/lang/StringBuilder;
+
+    goto :goto_2
+
+    :cond_3
     :goto_1
     nop
 
@@ -605,12 +632,12 @@
 
     invoke-interface {v4, v1}, Ljava/util/List;->remove(I)Ljava/lang/Object;
 
-    :cond_3
+    :cond_4
     add-int/lit8 v1, v1, -0x1
 
-    goto :goto_0
+    goto/16 :goto_0
 
-    :cond_4
+    :cond_5
     invoke-virtual {p0}, Lcom/oneplus/settings/quicklaunch/OPAppDragAndDropAdapter;->notifyDataSetChanged()V
 
     invoke-virtual {p0}, Lcom/oneplus/settings/quicklaunch/OPAppDragAndDropAdapter;->doTheUpdate()V
@@ -627,11 +654,11 @@
 
     move-result v0
 
-    if-ltz p1, :cond_4
+    if-ltz p1, :cond_5
 
     if-lt p1, v0, :cond_0
 
-    goto :goto_2
+    goto/16 :goto_2
 
     :cond_0
     iget-object v1, p0, Lcom/oneplus/settings/quicklaunch/OPAppDragAndDropAdapter;->mAppItemList:Ljava/util/List;
@@ -701,7 +728,7 @@
 
     invoke-virtual {v2, v4, v5}, Ljava/lang/StringBuilder;->delete(II)Ljava/lang/StringBuilder;
 
-    goto :goto_0
+    goto :goto_1
 
     :cond_2
     invoke-virtual {v1}, Lcom/oneplus/settings/better/OPAppModel;->getType()I
@@ -728,9 +755,36 @@
 
     invoke-virtual {v2, v4, v5}, Ljava/lang/StringBuilder;->delete(II)Ljava/lang/StringBuilder;
 
-    goto :goto_1
+    goto :goto_0
 
     :cond_3
+    invoke-virtual {v1}, Lcom/oneplus/settings/better/OPAppModel;->getType()I
+
+    move-result v3
+
+    const/4 v4, 0x3
+
+    if-ne v3, v4, :cond_4
+
+    invoke-static {v1}, Lcom/oneplus/settings/utils/OPUtils;->getQuickMiniProgrameString(Lcom/oneplus/settings/better/OPAppModel;)Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->indexOf(Ljava/lang/String;)I
+
+    move-result v4
+
+    invoke-virtual {v3}, Ljava/lang/String;->length()I
+
+    move-result v5
+
+    add-int/2addr v5, v4
+
+    invoke-virtual {v2, v4, v5}, Ljava/lang/StringBuilder;->delete(II)Ljava/lang/StringBuilder;
+
+    goto :goto_1
+
+    :cond_4
     :goto_0
     nop
 
@@ -751,7 +805,7 @@
 
     return-void
 
-    :cond_4
+    :cond_5
     :goto_2
     return-void
 .end method

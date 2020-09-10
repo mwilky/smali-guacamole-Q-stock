@@ -8,4 +8,8 @@
         <item quantity="other">Mēģiniet atkal pēc %d sekundēm.</item>
         <item quantity="one">Mēģiniet atkal pēc %d sekundes.</item>
     </plurals>
+    <plurals name="oneplus_zen_mode_duration_summary_time_hours">
+        <item quantity="other">%d stundas (ja netiek veikta automātiska ieslēgšana)</item>
+        <item quantity="one">1 stunda (ja netiek veikta automātiska ieslēgšana)</item>
+    </plurals>
 </resources>

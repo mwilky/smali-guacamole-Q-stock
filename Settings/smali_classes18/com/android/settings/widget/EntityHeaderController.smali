@@ -110,7 +110,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d02bc
+    const v1, 0x7f0d02bd
 
     const/4 v2, 0x0
 
@@ -433,7 +433,7 @@
 
     if-eqz v1, :cond_1
 
-    const v1, 0x7f0a0325
+    const v1, 0x7f0a032a
 
     iget-object v2, p0, Lcom/android/settings/widget/EntityHeaderController;->mHeader:Landroid/view/View;
 
@@ -441,7 +441,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f120836
+    const v3, 0x7f120870
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 

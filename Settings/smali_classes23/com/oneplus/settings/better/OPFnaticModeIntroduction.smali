@@ -269,7 +269,7 @@
 
     invoke-virtual {p0, v0}, Lcom/oneplus/settings/better/OPFnaticModeIntroduction;->setContentView(I)V
 
-    const v0, 0x7f0a04a1
+    const v0, 0x7f0a049e
 
     invoke-virtual {p0, v0}, Lcom/oneplus/settings/better/OPFnaticModeIntroduction;->findViewById(I)Landroid/view/View;
 
@@ -287,7 +287,7 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const v0, 0x7f0a04a3
+    const v0, 0x7f0a04a0
 
     invoke-virtual {p0, v0}, Lcom/oneplus/settings/better/OPFnaticModeIntroduction;->findViewById(I)Landroid/view/View;
 

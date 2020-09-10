@@ -224,6 +224,10 @@
         <item quantity="other">%d सेकंड्स में दुबारा कोशिश करें।</item>
         <item quantity="one">%d सेकंड में दुबारा कोशिश करें।</item>
     </plurals>
+    <plurals name="oneplus_zen_mode_duration_summary_time_hours">
+        <item quantity="other">घंटे (जब तक कि अपने आप से चालू न हो)</item>
+        <item quantity="one">1 घंटे (जब तक कि अपने आप से चालू न हो)</item>
+    </plurals>
     <plurals name="permission_bar_chart_label">
         <item quantity="other">%s ऐप्लिकेशन</item>
         <item quantity="one">%s ऐप्लिकेशन</item>

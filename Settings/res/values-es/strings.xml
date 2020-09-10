@@ -256,13 +256,23 @@ El administrador puede supervisar y administrar los ajustes, el acceso, las apli
     <string name="advanced_apps">Ajustes avanzados</string>
     <string name="advanced_battery_graph_subtext">La estimación de la batería restante se basa en el uso de tu dispositivo</string>
     <string name="advanced_battery_title">Uso de la batería</string>
+    <string name="advanced_calling_summary">Voz HD, videollamada</string>
+    <string name="advanced_calling_title">Llamadas avanzadas</string>
     <string name="advanced_reboot_summary">Cuando está desbloqueado, el elemento de reinicio mostrará un diálogo para elegir el reinicio: normal, recuperación o reinicio rápido.</string>
     <string name="advanced_reboot_title">Reinicio avanzado</string>
     <string name="advanced_section_header">Ajustes avanzados</string>
     <string name="advanced_security_title">Ajustes avanzados</string>
     <string name="advanced_settings">Ajustes avanzados</string>
     <string name="advanced_settings_summary">Habilitar más opciones de configuración</string>
+    <string name="advanced_wificall_summary">Usar Wi-Fi si la red móvil no está disponible</string>
     <string name="airplane_mode">Modo avión</string>
+    <string name="airplane_mode_description">El modo avión desactiva todas las conexiones de red, incluyendo las llamadas, los mensajes de texto, el acceso a Internet, Wi-Fi y Bluetooth.</string>
+    <string name="airplane_mode_enable_dialog_message">"Cuando el modo avión está activado, no podrás utilizar Internet, el correo electrónico u otras aplicaciones que requieren una conexión de datos, a menos que utilices una red Wi-Fi.
+
+¿Activar el modo avión?"</string>
+    <string name="airplane_mode_enable_dialog_message_wifi_volte">"Cuando el modo avión está activado, no podrás utilizar Internet, el correo electrónico, las llamadas Wi-Fi u otras aplicaciones que requieren una conexión de datos, a menos que utilices una red Wi-Fi.
+
+¿Activar el modo avión?"</string>
     <string name="alarm_ringtone_title">Sonido de alarma predeterminado</string>
     <string name="alarm_template">Hora: %1$s</string>
     <string name="alarm_template_far">Fecha: %1$s</string>
@@ -274,6 +284,7 @@ El administrador puede supervisar y administrar los ajustes, el acceso, las apli
     <string name="alert_slider_silent_title">Ajustes de silencio</string>
     <string name="alertslider_settings">Alert Slider</string>
     <string name="alertslider_settings_soc_tri_state">Alert Slider</string>
+    <string name="alertslider_settings_soc_tri_state_summary">Silencio, vibración, sonido</string>
     <string name="all_volume_title">Volumen</string>
     <string name="allow">Permitir</string>
     <string name="allow_bind_app_widget_activity_allow_bind">Después de crear el widget, %1$s podrá acceder a todos los datos que muestre.</string>
@@ -314,12 +325,19 @@ Solo tienes que juntar los dispositivos (normalmente, por la parte de atrás) y 
     <string name="angle_enabled_app_set">Aplicación para usar ANGLE: %1$s</string>
     <string name="animator_duration_scale_title">Escala de duración de animación</string>
     <string name="another_migration_already_in_progress">Hay otra migración en curso.</string>
-    <string name="aod_clock_analog">Analógico</string>
+    <string name="aod_clock_analog">Analógico 1</string>
+    <string name="aod_clock_analog_1">Analógico 2</string>
+    <string name="aod_clock_analog_2">Analógico 3</string>
+    <string name="aod_clock_bold">Negrita</string>
     <string name="aod_clock_default">Predeterminado</string>
+    <string name="aod_clock_digital">Digital 1</string>
+    <string name="aod_clock_digital_1">Digital 2</string>
     <string name="aod_clock_mcl">McLaren</string>
-    <string name="aod_clock_minimalism">Minimalista</string>
+    <string name="aod_clock_minimalism">Minimalista 1</string>
+    <string name="aod_clock_minimalism_1">Minimalista 2</string>
     <string name="aod_clock_none">Ninguno</string>
     <string name="aod_clock_select_style_text">Seleccionar estilo del reloj</string>
+    <string name="aod_clock_text_clock">Reloj de texto</string>
     <string name="aod_horizon_light_effect_1">Azul</string>
     <string name="aod_horizon_light_effect_2">Rojo</string>
     <string name="aod_horizon_light_effect_3">Morado</string>
@@ -408,7 +426,7 @@ Solo tienes que juntar los dispositivos (normalmente, por la parte de atrás) y 
     <string name="app_notifications_off_desc">Como solicitaste, Android está bloqueando las notificaciones de esta aplicación para que no aparezcan en el dispositivo</string>
     <string name="app_notifications_switch_label">Mostrar notificaciones</string>
     <string name="app_notifications_title">Notificaciones de aplicaciones</string>
-    <string name="app_ops_last_used_prefix_new">Último uso</string>
+    <string name="app_ops_last_used_prefix_new">Utilizada por última vez</string>
     <string name="app_ops_never_used">(Sin utilizar)</string>
     <string name="app_ops_never_used_new">Nunca usado</string>
     <string name="app_ops_running">En curso</string>
@@ -1065,6 +1083,7 @@ Selección"</string>
     <string name="charge_length_format">Hace %1$s</string>
     <string name="charging_sounds_title">Vibración y sonidos de carga</string>
     <string name="checkbox_notification_same_as_incoming_call">Utilizar volumen de llamada entrante para notificaciones</string>
+    <string name="checkbox_usb_tether_donot_show_again">No volver a mostrar</string>
     <string name="checking_decryption">Comprobando...</string>
     <string name="choose_network_title">Elegir red</string>
     <string name="choose_profile">Seleccionar perfil</string>
@@ -1081,7 +1100,7 @@ Selección"</string>
     <string name="clear_instant_app_data">Borrar aplicación</string>
     <string name="clear_uri_btn_text">Permitir acceso</string>
     <string name="clear_user_data_text">Borrar almacenamiento</string>
-    <string name="close_dialog">OK</string>
+    <string name="close_dialog">ACEPTAR</string>
     <string name="color_black">Negro</string>
     <string name="color_blue">Azul</string>
     <string name="color_cyan">Cian</string>
@@ -1172,6 +1191,8 @@ Selección"</string>
     <string name="connected_devices_dashboard_no_nfc_summary">Bluetooth, modo de conducción</string>
     <string name="connected_devices_dashboard_summary">Bluetooth, modo de conducción, NFC</string>
     <string name="connected_devices_dashboard_title">Dispositivos conectados</string>
+    <string name="connected_to_the_verizon_network">Conectado a la red Verizon</string>
+    <string name="connected_to_the_verizon_network_but_data_connection_unavailable">Conectado a la red Verizon, pero la conexión de datos no está disponible</string>
     <string name="connected_via_app">Conectado a través de %1$s</string>
     <string name="connected_via_carrier">Conectado a través de %1$s</string>
     <string name="connected_via_network_scorer">Conectada automáticamente a través de %1$s</string>
@@ -1187,6 +1208,7 @@ Selección"</string>
     <string name="contextual_card_feedback_send">Enviar comentarios</string>
     <string name="contextual_card_removed_message">Sugerencia eliminada</string>
     <string name="contextual_card_undo_dismissal_text">Deshacer</string>
+    <string name="continue_anyway">Continuar de todos modos</string>
     <string name="contributors_title">Contribuidores</string>
     <string name="controls_label">Controles</string>
     <string name="controls_subtitle">Cómo reducir el uso de la batería</string>
@@ -1318,6 +1340,7 @@ Es posible que algunas cuentas copien también en la Web los cambios que hagas e
     <string name="data_usage_cycle_editor_subtitle">Día de cada mes:</string>
     <string name="data_usage_cycle_editor_title">Elige el día en el que empezará cada ciclo</string>
     <string name="data_usage_data_limit">Establecer límite de datos</string>
+    <string name="data_usage_description">El uso de datos lo mide el teléfono. Es posible que tu operador calcule el uso de una forma distinta. Establece la fecha de inicio de modo que coincida con el periodo de facturación.</string>
     <string name="data_usage_disable_3g_limit">Limitar datos 2G-3G</string>
     <string name="data_usage_disable_4g_limit">Limitar datos 4G</string>
     <string name="data_usage_disable_mobile">¿Desactivar los datos móviles?</string>
@@ -1331,6 +1354,7 @@ Es posible que algunas cuentas copien también en la Web los cambios que hagas e
     <string name="data_usage_forground_label">Primer plano:</string>
     <string name="data_usage_label_background">Segundo plano</string>
     <string name="data_usage_label_foreground">Primer plano</string>
+    <string name="data_usage_less_than_value">Menos de 0,01</string>
     <string name="data_usage_limit_dialog_mobile">"El teléfono desactivará los datos móviles cuando se alcance el límite establecido.
 
 Se tiene en cuenta el uso de datos medido por el teléfono, aunque tu operador podría registrarlo de forma diferente. Por tanto, debes ser prudente al establecer un límite."</string>
@@ -1386,6 +1410,9 @@ Esta configuración afecta a todos los usuarios del teléfono."</string>
     <string name="data_usage_total_during_range_mobile">%2$s: unos %1$s usados (según el cálculo del teléfono). El cálculo del uso de datos del operador puede variar.</string>
     <string name="data_usage_uninstalled_apps">Aplicaciones eliminadas</string>
     <string name="data_usage_uninstalled_apps_users">Usuarios y aplicaciones eliminados</string>
+    <string name="data_usage_unit_gb">GB</string>
+    <string name="data_usage_unit_mb">MB</string>
+    <string name="data_usage_video_call_title">Videollamada</string>
     <string name="data_usage_warning_editor_title">Establecer advertencia de uso de datos</string>
     <string name="data_usage_wifi_format">Uso de datos con Wi‑Fi: ^1</string>
     <string name="data_usage_wifi_title">Datos Wi‑Fi</string>
@@ -1412,7 +1439,7 @@ Esta configuración afecta a todos los usuarios del teléfono."</string>
     <string name="date_time_set_time_title">Hora</string>
     <string name="date_time_set_timezone">Elegir zona horaria</string>
     <string name="date_time_set_timezone_title">Zona horaria</string>
-    <string name="ddr_memory_capacity_title">Memoria</string>
+    <string name="ddr_memory_capacity_title">Almacenamiento</string>
     <string name="debug_app">Elegir aplicación de depuración</string>
     <string name="debug_app_not_set">Aplicación de depuración no configurada</string>
     <string name="debug_app_set">Aplicación de depuración: %1$s</string>
@@ -1497,6 +1524,11 @@ Para solucionarlo, puedes detener %1$s y evitar que se ejecute en segundo plano.
 Para solucionarlo, puedes desactivar la ubicación de esta aplicación."</string>
     <string name="dialog_location_ok">Desactivar</string>
     <string name="dialog_location_title">¿Desactivar la ubicación?</string>
+    <string name="dialog_mhs_error">Espera mientras comprobamos..</string>
+    <string name="dialog_open_network_cancel">cancelar</string>
+    <string name="dialog_open_network_connect">Conectar</string>
+    <string name="dialog_open_network_title">Te estás conectando a una red Wi-Fi no segura (abierta)</string>
+    <string name="dialog_open_network_title_info">La información enviada no está cifrada y puede que sea visible para otros. ¿Quieres conectar de todos modos?</string>
     <string name="dialog_stop_message">"Tu teléfono no puede administrar el uso de la batería con normalidad porque %1$s lo mantiene activo.
 
 Para solucionarlo, detén la aplicación.
@@ -1509,6 +1541,11 @@ Para solucionarlo, detén %1$s.
 Si el problema persiste, desinstala la aplicación para mejorar el rendimiento de la batería."</string>
     <string name="dialog_stop_ok">Detener aplicación</string>
     <string name="dialog_stop_title">¿Detener la aplicación?</string>
+    <string name="dialog_usb_tether_cancel">cancelar</string>
+    <string name="dialog_usb_tether_ok">aceptar</string>
+    <string name="dialog_usb_tether_title">El tethering vía USB y Wi-Fi no pueden estar activados simultáneamente. ¿Desactivar Wi-Fi?</string>
+    <string name="dialog_wrong_password">No se ha aceptado la contraseña de Wi-Fi. Comprueba la contraseña e inténtalo de nuevo.</string>
+    <string name="dialog_wrong_password_ok">aceptar</string>
     <string name="direct_boot_unaware_dialog_message">Nota: Si reinicias el teléfono y has definido un bloqueo de pantalla, esta aplicación no se podrá iniciar hasta que desbloquees el teléfono</string>
     <string name="disable_doze_summary">El modo agresivo reduce el consumo de batería aplazando la CPU en segundo plano y la actividad de la red para las aplicaciones cuando el dispositivo no se usa durante largos periodos de tiempo</string>
     <string name="disable_doze_title">Modo agresivo</string>
@@ -1612,6 +1649,21 @@ Si el problema persiste, desinstala la aplicación para mejorar el rendimiento d
     <string name="dual_cdma_sim_warning_notification_channel_title">Combinación de SIM</string>
     <string name="dual_cdma_sim_warning_notification_summary">Es posible que se limiten las funciones si usas %1$s. Toca para obtener más información.</string>
     <string name="eab_provisioned_switch_string">EAB/Presence asignados</string>
+    <string name="earphone_function_control_click_left">Haz doble clic en el auricular izquierdo</string>
+    <string name="earphone_function_control_click_right">Haz doble clic en el auricular derecho</string>
+    <string name="earphone_function_control_last_song">Pista anterior</string>
+    <string name="earphone_function_control_next_song">Pista siguiente</string>
+    <string name="earphone_function_control_play_pause">Reproducir/Pausar</string>
+    <string name="earphone_function_introduction">Descripción de la función</string>
+    <string name="earphone_function_listening_breeno">Asistente de voz</string>
+    <string name="earphone_support_battery_dot">;</string>
+    <string name="earphone_support_battery_info_box">Caja de auriculares OnePlus: %1$s</string>
+    <string name="earphone_support_battery_info_left">I: %1$s</string>
+    <string name="earphone_support_battery_info_right">D: %1$s</string>
+    <string name="earphone_support_current_version">Versión actual:</string>
+    <string name="earphone_support_update_ota">Actualizar firmware automáticamente</string>
+    <string name="earphone_support_wifi_data">Permitir actualizaciones automáticas usando datos móviles</string>
+    <string name="earphone_usage_guide_complete">Hecho</string>
     <string name="edge_to_edge_navigation_summary">Para ir a la pantalla de inicio, desliza el dedo hacia arriba desde la parte inferior de la pantalla. Para cambiar de aplicación, desliza el dedo hacia arriba desde la parte inferior de la pantalla, mantenla pulsada y levanta el dedo. Para ir atrás, desliza el dedo desde el borde izquierdo o el derecho.</string>
     <string name="edge_to_edge_navigation_title">Navegación por gestos</string>
     <string name="emergency_address_summary">Se utiliza como tu ubicación al hacer una llamada de emergencia por Wi‑Fi</string>
@@ -1755,6 +1807,7 @@ Para obtener más información, ponte en contacto con el administrador de tu org
     <string name="expand_button_title">Avanzado</string>
     <string name="experimental_category_title">Experimental</string>
     <string name="experimental_preference">(Experimental)</string>
+    <string name="extended_title">Extensores de red</string>
     <string name="external_code_size_label">En almacenamiento USB</string>
     <string name="external_data_size_label">Datos en USB</string>
     <string name="external_source_switch_title">Autorizar descargas de esta fuente</string>
@@ -1774,7 +1827,7 @@ Para obtener más información, ponte en contacto con el administrador de tu org
     <string name="failed_to_open_app_settings_toast">Error al abrir los ajustes de %1$s</string>
     <string name="fcc_equipment_id">ID de equipo</string>
     <string name="feature_flags_dashboard_title">Flags de funciones</string>
-    <string name="feature_not_support_split_screen">No se admite esta función en pantalla dividida.</string>
+    <string name="feature_not_support_split_screen">No se admite esta función en la pantalla de división.</string>
     <string name="filter">Filtrar</string>
     <string name="filter_all_apps">Todas las aplicaciones</string>
     <string name="filter_apps_all">Todas las aplicaciones</string>
@@ -1796,6 +1849,8 @@ Para obtener más información, ponte en contacto con el administrador de tu org
     <string name="filter_personal_apps">Personales</string>
     <string name="filter_work_apps">Trabajo</string>
     <string name="filter_write_settings_apps">Puede modificar los ajustes del sistema</string>
+    <string name="find_my_bluetooth_earphone">Encontrar mis auriculares</string>
+    <string name="find_my_bluetooth_earphone_summary">Reproducir sonidos para localizar los auriculares cuando estén en el radio de alcance o ver la última localización cuando estén fuera del radio de alcance</string>
     <string name="fingerprint_add_fingerprint">Añadir huella digital</string>
     <string name="fingerprint_add_fingerprint_summary">Coloca el dedo en el sensor y levántalo despues de haber sentido la vibración.</string>
     <string name="fingerprint_add_max">Puedes añadir hasta %d huellas digitales</string>
@@ -1968,6 +2023,11 @@ Puedes cambiar esta opción en cualquier momento en Ajustes > Aplicaciones y not
     <string name="homepage_all_settings">Todos los ajustes</string>
     <string name="homepage_condition_footer_content_description">Ocultar</string>
     <string name="homepage_personal_settings">Sugerencias</string>
+    <string name="hotspot_tip_message" formatted="false">"El punto de acceso móvil comparte tus datos móviles con otros dispositivos compatibles con Wi-Fi. Para la conexión al punto de acceso móvil: \u0009 
+ 1. Activa Wi-Fi en el otro dispositivo.
+ 2. Selecciona %s en la lista de redes Wi-Fi disponibles. 
+ 3. Si se solicita una contraseña, introduce %s. Para ahorrar batería, mantén el teléfono enchufado durante el uso del punto de acceso móvil. "</string>
+    <string name="hotspot_tip_title">Punto de acceso móvil</string>
     <string name="hwui_force_dark_summary">Forzar el modo oscuro para que esté siempre activo</string>
     <string name="hwui_force_dark_title">Forzar el modo oscuro</string>
     <string name="icon_attributions">Paquetes de iconos</string>
@@ -2144,6 +2204,8 @@ Puedes cambiar esta opción en cualquier momento en Ajustes > Aplicaciones y not
     <string name="language_picker_title">Idiomas</string>
     <string name="language_picker_title_o2">Idiomas (país/región)</string>
     <string name="language_settings">Idiomas e introducción de texto</string>
+    <string name="last_factory_reset">Último restablecimiento de fábrica</string>
+    <string name="last_factory_reset_none">Ninguno</string>
     <string name="last_synced">Última sincronización: %1$s</string>
     <string name="last_time_used_label">Último uso</string>
     <string name="launch_by_default">Abrir de forma predeterminada</string>
@@ -2407,6 +2469,7 @@ Puedes cambiar esta opción en cualquier momento en Ajustes > Aplicaciones y not
     <string name="lockscreen_remote_input">Si el dispositivo está bloqueado, evitar que se escriban respuestas u otros textos en las notificaciones</string>
     <string name="lockscreen_settings_title">Pantalla de bloqueo</string>
     <string name="lockscreen_settings_what_to_show_category">Qué mostrar</string>
+    <string name="long_press_power_button">Mantén pulsado el botón de encendido</string>
     <string name="lost_internet_access_cancel">Mantener conexión Wi‑Fi</string>
     <string name="lost_internet_access_persist">No volver a mostrar</string>
     <string name="lost_internet_access_switch">Cambiar a datos móviles</string>
@@ -2542,7 +2605,10 @@ Hay otros usuarios presentes en este dispositivo.
     <string name="menu_stats_refresh">Actualizar</string>
     <string name="menu_stats_total">Total de consumo</string>
     <string name="menu_stats_unplugged">%1$s desde que se desenchufó</string>
+    <string name="menu_uninstallapps">Desinstalar</string>
     <string name="menu_use_uss">Usar USS</string>
+    <string name="mhs_app">Abrir Mi Verizon</string>
+    <string name="mhs_call_back_error">Conexión de datos no disponible.</string>
     <string name="misc_files">Archivos variados</string>
     <string name="misc_files_selected_count">Has seleccionado %1$d de %2$d.</string>
     <string name="misc_files_selected_count_bytes">%1$s de %2$s</string>
@@ -2558,6 +2624,11 @@ Hay otros usuarios presentes en este dispositivo.
     <string name="mobile_data_settings_summary_auto_switch">El teléfono cambiará automáticamente a este operador cuando esté en su rango</string>
     <string name="mobile_data_settings_title">Datos móviles</string>
     <string name="mobile_data_usage_title">Uso de datos de la aplicación</string>
+    <string name="mobile_hotspot_airplane_off_error">Para activar el punto de acceso, desactiva el modo avión</string>
+    <string name="mobile_hotspot_authoration_error">"Para usar el punto de acceso móvil, tienes que suscribirte a los servicios de acceso móvil.
+
+Para suscribirte al punto de acceso móvil, visita Mi Verizon o llama al servicio de atención al cliente en (800) 922–0204."</string>
+    <string name="mobile_hotspot_data_off_error">Para activar el punto de acceso, activa los datos móviles</string>
     <string name="mobile_insert_sim_card">Inserta la tarjeta SIM y reinicia el dispositivo</string>
     <string name="mobile_network_active_esim">Activa / SIM descargada</string>
     <string name="mobile_network_active_sim">Activo / SIM</string>
@@ -2695,6 +2766,8 @@ Cambiar a %1$s no cancelará tu servicio de %2$s."</string>
     <string name="nfc_quick_toggle_title">NFC</string>
     <string name="nfc_secure_settings_title">Proteger NFC</string>
     <string name="nfc_secure_toggle_summary">Permitir uso de NFC en pagos y transporte público solo con la pantalla desbloqueada</string>
+    <string name="nfc_uicc_sim1">SIM 1</string>
+    <string name="nfc_uicc_sim2">SIM 2</string>
     <string name="night_display_activation_off_custom">Desactivar hasta las %1$s</string>
     <string name="night_display_activation_off_manual">Desactivar ahora</string>
     <string name="night_display_activation_off_twilight">Desactivar hasta el anochecer</string>
@@ -2738,6 +2811,7 @@ Cambiar a %1$s no cancelará tu servicio de %2$s."</string>
     <string name="no_internet_access_text">Esta red no tiene acceso a Internet. ¿Quieres mantener la conexión?</string>
     <string name="no_memory_use_summary">No se ha usado memoria durante las últimas 3 horas</string>
     <string name="no_network">Sin servicio de red</string>
+    <string name="no_network_extenders">Sin extensores de red</string>
     <string name="no_notification_assistant">Nada</string>
     <string name="no_notification_listeners">Ninguna aplicación instalada ha solicitado acceso a las notificaciones.</string>
     <string name="no_running_services">No hay nada en ejecución.</string>
@@ -2748,6 +2822,7 @@ Cambiar a %1$s no cancelará tu servicio de %2$s."</string>
     <string name="no_vr_listeners">Ninguna aplicación instalada ha solicitado ejecutarse como servicios de ayuda de RV.</string>
     <string name="not_allowed">La tarjeta SIM no permite establecer conexión con esta red.</string>
     <string name="not_battery_optimizing">No se está utilizando la optimización de la batería</string>
+    <string name="not_connected_to_the_verizon_network">No conectado a la red Verizon</string>
     <string name="not_installed">No instalada para este usuario</string>
     <string name="not_optimize_summery">Puede afectar al rendimiento de la batería</string>
     <string name="not_optimized_apps">Aplicaciones no optimizadas</string>
@@ -2893,6 +2968,7 @@ También concede a la aplicación la capacidad de activar o desactivar el modo N
     <string name="oneplus_aod_smart_display_calendar_event">Evento de calendario</string>
     <string name="oneplus_aod_smart_display_music_info">Reproductor multimedia</string>
     <string name="oneplus_aod_smart_display_title">Información contextual</string>
+    <string name="oneplus_ap_chanel">Canal AP</string>
     <string name="oneplus_app_alipay">Alipay</string>
     <string name="oneplus_app_display_compatibility">Modo de compatibilidad</string>
     <string name="oneplus_app_display_fullscreen">Modo de pantalla completa</string>
@@ -2949,8 +3025,11 @@ También concede a la aplicación la capacidad de activar o desactivar el modo N
 
 El modo Ahorro de batería se desactiva automáticamente cuando cargas tu dispositivo."</string>
     <string name="oneplus_battery_saver_summary">Puede que esta función no funcione en algunos juegos</string>
+    <string name="oneplus_bed_time_mode_summary">Cómo usar el OnePlus Warp Wireless Charger de forma silenciosa</string>
+    <string name="oneplus_bed_time_mode_title">Modo descanso</string>
+    <string name="oneplus_bed_time_mode_wall_text">Con la reducción del sonido de OnePlus Warp Wireless Charger, la velocidad de carga también es más lenta. Debe ponerse el teléfono en el cargador para que el modo Descanso surta efecto.</string>
     <string name="oneplus_bg_data_condition_turn_off">DESACTIVAR AHORRO DE DATOS</string>
-    <string name="oneplus_black_screen_gestures_settings_title">Pantalla de gestos</string>
+    <string name="oneplus_black_screen_gestures_settings_title">Gestos de pantalla apagada</string>
     <string name="oneplus_block_all_notifications">Bloquear todas las notificaciones</string>
     <string name="oneplus_block_all_notifications_summary">Bloquear todas las notificaciones de la aplicación</string>
     <string name="oneplus_block_notifications">Bloquear notificaciones</string>
@@ -3004,6 +3083,7 @@ El modo Ahorro de batería se desactiva automáticamente cuando cargas tu dispos
     <string name="oneplus_connected_devices_dashboard_summary">NFC, transmisión, impresión</string>
     <string name="oneplus_connected_devices_dashboard_title">Bluetooth y conexión de dispositivos</string>
     <string name="oneplus_cpu">PROCESADOR</string>
+    <string name="oneplus_custom_drop_title">¿Descartar los cambios?</string>
     <string name="oneplus_custom_time">Intervalo de tiempo personalizado</string>
     <string name="oneplus_customization">Personalización de la barra de navegación</string>
     <string name="oneplus_customization_summary">Pulsación larga, doble toque</string>
@@ -3045,13 +3125,15 @@ El modo Ahorro de batería se desactiva automáticamente cuando cargas tu dispos
     <string name="oneplus_do_not_disturb_answer_call_by_speaker_summary">Direccionar las llamadas entrantes hacia el altavoz cuando el modo juego esté activado</string>
     <string name="oneplus_do_not_disturb_answer_call_by_speaker_title">Responder llamadas a través del altavoz</string>
     <string name="oneplus_do_not_disturb_settings">Ajustes</string>
-    <string name="oneplus_donot_silence_or_block">Permite las notificaciones</string>
+    <string name="oneplus_donot_silence_or_block">Permitir notificaciones</string>
     <string name="oneplus_donot_silence_or_block_summary">Permitir todo tipo de notificaciones</string>
     <string name="oneplus_double_tap_power_gesture">Haz doble clic en el botón de encendido para</string>
     <string name="oneplus_double_tap_power_gesture_app">SELECCIONAR FUNCIÓN</string>
     <string name="oneplus_double_tap_power_gesture_camera">Cámara</string>
     <string name="oneplus_double_tap_power_gesture_wallet">Deslizar tarjetas (Cartera)</string>
+    <string name="oneplus_double_tap_power_none">Ninguno</string>
     <string name="oneplus_doze_summary_801">Mostrar el reloj y otra información en la pantalla de espera</string>
+    <string name="oneplus_doze_summary_new">Mostrar la hora, la fecha y las notificaciones en la pantalla</string>
     <string name="oneplus_doze_title">Pantalla ambiente</string>
     <string name="oneplus_doze_title_801">Pantalla ambiente</string>
     <string name="oneplus_draw_gesture_start_none">Ninguno</string>
@@ -3153,7 +3235,7 @@ Precaución: El Desbloqueo facial es menos seguro que el uso de la huella digita
     <string name="oneplus_fnatic_mode_summary">Potencia tu experiencia de juego</string>
     <string name="oneplus_fnatic_mode_summary_2">Un modo de juego avanzado, creado por los pioneros de los deportes electrónicos</string>
     <string name="oneplus_fnatic_mode_title">Modo Fnatic</string>
-    <string name="oneplus_fnatic_mode_unlock_wallpapers">Has desbloqueado fondos de pantalla especiales de %1$s</string>
+    <string name="oneplus_fnatic_mode_unlock_wallpapers">Has desbloqueado %1$s fondos de pantalla</string>
     <string name="oneplus_fnatic_mode_view_in_wallpapers">Ver en fondos de pantalla</string>
     <string name="oneplus_fnatic_mode_wallpapers_added">Se han añadido %1$s fondos de pantalla</string>
     <string name="oneplus_font_preview_summary">Comparte la mejor tecnología con todo el mundo, siempre a tu lado</string>
@@ -3162,6 +3244,9 @@ Precaución: El Desbloqueo facial es menos seguro que el uso de la huella digita
     <string name="oneplus_force_factory_reset_summary">La contraseña está activada en la inicialización, se borrará el almacenamiento interno</string>
     <string name="oneplus_forum_award_summary">Perteneces a esta comunidad y solo tú puedes definir nuestro camino. Juntos, definimos y mejoramos, implementamos versiones y escribimos código. Todo es para ti. ¡Gracias por soñar con nosotros!</string>
     <string name="oneplus_forum_award_title">Premio</string>
+    <string name="oneplus_front_camera_app_display_fullscreen_summary">Si el área de visualización de la cámara frontal corta el contenido de la aplicación, cambia al modo predeterminado</string>
+    <string name="oneplus_front_camera_display_choose_title">Seleccionar si se oculta la cámara frontal</string>
+    <string name="oneplus_front_camera_display_title">Área de visualización de la cámara frontal</string>
     <string name="oneplus_fullscreen_back_guide_summary">Desliza el dedo hacia adentro desde el borde inferior derecho o izquierdo de la pantalla</string>
     <string name="oneplus_fullscreen_back_guide_summary_deprecated">Desliza el dedo hacia arriba desde la parte inferior derecha o la izquierda de la pantalla</string>
     <string name="oneplus_fullscreen_back_guide_title">Atrás</string>
@@ -3238,6 +3323,10 @@ Para ir a la pantalla de inicio en cualquier momento, desliza hacia arriba desde
     <string name="oneplus_gestures_open_shelf">Abrir Shelf</string>
     <string name="oneplus_gestures_take_video">Hacer un vídeo</string>
     <string name="oneplus_getlog_title">Obtener registros</string>
+    <string name="oneplus_global_dark_mode_description">Hacer que las aplicaciones no compatibles con el tema oscuro también se muestren en tono oscuro. Es posible que algunas aplicaciones no funcionen según lo previsto. Puedes desactivarlas en la lista siguiente.</string>
+    <string name="oneplus_global_dark_mode_only_valid_in_dark_mode">Esta función solo está disponible en el tono oscuro</string>
+    <string name="oneplus_global_dark_mode_summary">Hacer que más aplicaciones que no se adaptan al modo oscuro se oscurezcan automáticamente cuando el tono oscuro está activado</string>
+    <string name="oneplus_global_dark_mode_title">Activar tono oscuro en más aplicaciones</string>
     <string name="oneplus_google_tts">Datos de voz de Google TTS</string>
     <string name="oneplus_gps_using">está utilizando el GPS</string>
     <string name="oneplus_h2_contributors">Contribuidores de HydrogenOS</string>
@@ -3253,6 +3342,8 @@ Para ir a la pantalla de inicio en cualquier momento, desliza hacia arriba desde
     <string name="oneplus_hardware_keys_action_split_screen">Abrir/Cerrar pantalla dividida</string>
     <string name="oneplus_health_safety_information">Información sobre salud y seguridad</string>
     <string name="oneplus_hearing_aid">Compatibilidad con audífono</string>
+    <string name="oneplus_hide_front_camera_display_summary">No se puede mostrar contenido en esta área</string>
+    <string name="oneplus_hide_front_camera_display_title">Ocultar la cámara frontal</string>
     <string name="oneplus_hide_navigation_bar">Ocultar la barra de navegación</string>
     <string name="oneplus_hide_navkeys">Ocultar la barra de navegación</string>
     <string name="oneplus_hide_navkeys_summary">Añadir un botón para ocultar o mostrar la barra de navegación</string>
@@ -3262,7 +3353,7 @@ Para ir a la pantalla de inicio en cualquier momento, desliza hacia arriba desde
 
 Nota: La huella digital puede ser menos segura que un PIN o patrón seguros."</string>
     <string name="oneplus_how_to_use_fingerprint_summary_no_note">Cuando el patrón de huella digital aparece en la parte inferior de la pantalla, solo tienes que presionar el dedo sobre la zona de identificación de huellas digitales para utilizar la función de huella digital, con la que puedes desbloquear el teléfono, autorizar compras o iniciar sesión en aplicaciones.</string>
-    <string name="oneplus_hydrogen_version">Versión H₂OS</string>
+    <string name="oneplus_hydrogen_version">Versión de H₂OS</string>
     <string name="oneplus_incoming_call_vibrate_intensity">Llamada entrante</string>
     <string name="oneplus_incoming_call_vibrate_mode">Patrón de vibración de la llamada entrante</string>
     <string name="oneplus_init_finger_input">Inicializando huella digital</string>
@@ -3287,13 +3378,13 @@ Nota: La huella digital puede ser menos segura que un PIN o patrón seguros."</s
     <string name="oneplus_laboratory_community_rating_summary">Siempre hemos intentado ser atrevidos a la hora de ofrecer funciones nuevas e interesantes a nuestros usuarios y esperamos que tus comentarios nos ayuden a ser todavía más atrevidos y audaces para poder mejorar la experiencia del usuario. Dinos qué te parecen estas funciones. Siempre estamos dispuestos a escucharte.</string>
     <string name="oneplus_laboratory_description">Descripción</string>
     <string name="oneplus_led_support">Permitir luz de notificación por pulsos</string>
-    <string name="oneplus_legal_notices">Avisos legales</string>
+    <string name="oneplus_legal_notices">Noticias legales</string>
     <string name="oneplus_legal_summary">Política de privacidad, acuerdos, etc.</string>
     <string name="oneplus_levels">Niveles</string>
     <string name="oneplus_lift_up_display">Pantalla siempre activada o pantalla activada al levantar</string>
     <string name="oneplus_light">Suave</string>
     <string name="oneplus_local_ringtone">Tono de almacenamiento interno</string>
-    <string name="oneplus_location_information">Descripción de los Servicios basados en la ubicación</string>
+    <string name="oneplus_location_information">Descripción de los servicios basados en la ubicación</string>
     <string name="oneplus_lock_after_timeout">Bloquear automáticamente cuando esté en suspensión</string>
     <string name="oneplus_lock_buttons">Bloquear botones</string>
     <string name="oneplus_lock_buttons_summary">Bloquear los botones capacitivos cuando está activado el modo juego</string>
@@ -3311,6 +3402,22 @@ Nota: La huella digital puede ser menos segura que un PIN o patrón seguros."</s
     <string name="oneplus_lockscreen_settings_title">Preferencias de la pantalla de bloqueo</string>
     <string name="oneplus_max_shortcuts_tips">Puedes añadir hasta 6 accesos directos</string>
     <string name="oneplus_media_ring_summary">Silenciar el volumen multimedia</string>
+    <string name="oneplus_memc_close">Apagado</string>
+    <string name="oneplus_memc_game">Compensación de movimiento en juegos</string>
+    <string name="oneplus_memc_game_summary">Para activar la compensación de movimiento en juegos, es necesario cambiar la resolución a FHD+</string>
+    <string name="oneplus_memc_more_support_apps">Más aplicaciones compatibles</string>
+    <string name="oneplus_memc_notice">En este modo, se incrementa la velocidad de fotogramas de vídeo, lo que reduce el efecto de movimiento desenfocado de los gráficos y aumenta su nitidez y uniformidad. Solo es efectivo durante la reproducción a pantalla completa.</string>
+    <string name="oneplus_memc_open">Activar</string>
+    <string name="oneplus_memc_support_apps">Aplicaciones admitidas</string>
+    <string name="oneplus_memc_support_no_apps">No hay ninguna aplicación compatible instalada</string>
+    <string name="oneplus_memc_video">Suavizado de gráficos en movimiento</string>
+    <string name="oneplus_memc_video_effect">Efecto de compensación</string>
+    <string name="oneplus_memc_video_extreme">Extremo</string>
+    <string name="oneplus_memc_video_nosupport_extreme_summary">Para activar Extremo, es necesario cambiar la resolución a FHD+</string>
+    <string name="oneplus_memc_video_nosupport_extreme_text">Al cambiar a la resolución QHD+, la compensación de gráficos en movimiento es limitada</string>
+    <string name="oneplus_memc_video_smooth">Suave</string>
+    <string name="oneplus_memc_video_theacme_summary">La velocidad de fotogramas de vídeo se aumentará a 120 fps para ofrecer gráficos extremadamente uniformes. Puede provocar un consumo de energía adicional. La resolución QHD+ no es compatible temporalmente.</string>
+    <string name="oneplus_memc_video_theacme_title">Ultrasuavizado de movimiento</string>
     <string name="oneplus_mobile_device_name_title">Nombre del teléfono</string>
     <string name="oneplus_mode_choose">Selección de modo</string>
     <string name="oneplus_mode_settings">Ajustes de Alert Slider</string>
@@ -3390,6 +3497,10 @@ Nota: La huella digital puede ser menos segura que un PIN o patrón seguros."</s
     <string name="oneplus_notifications_free">Gratis</string>
     <string name="oneplus_notifications_meet">Reunión</string>
     <string name="oneplus_o2_contributors">Contribuidores de OxygenOS</string>
+    <string name="oneplus_open_bed_time_mode_schedule_summary">Activar en un intervalo de tiempo personalizado</string>
+    <string name="oneplus_open_bed_time_mode_schedule_title">Programación</string>
+    <string name="oneplus_open_bed_time_mode_summary">Puedes activar manualmente el Modo descanso</string>
+    <string name="oneplus_open_bed_time_mode_title">Modo descanso</string>
     <string name="oneplus_opfinger_input_completed_comfirm">Confirmar</string>
     <string name="oneplus_opfinger_input_completed_sub">Configuración completa de la huella digital. Haz clic en \"Confirmar\" para continuar</string>
     <string name="oneplus_opfinger_input_completed_title">Registro completo</string>
@@ -3433,6 +3544,7 @@ Quedan%dintentos."</string>
     <string name="oneplus_preference_settings_turn_on_time">Desde las</string>
     <string name="oneplus_prior_to_use_you_need_to">Antes de usar, debes:</string>
     <string name="oneplus_privacy_policy">Política de privacidad</string>
+    <string name="oneplus_privacy_protection_title">Espacio cifrado</string>
     <string name="oneplus_product_info_introduce">Tarjeta de garantía e información del dispositivo</string>
     <string name="oneplus_product_info_summary">Tarjeta de garantía, lista instalada previamente</string>
     <string name="oneplus_proximity_summary_disable">No está disponible porque la pantalla ambiente está desactivada</string>
@@ -3470,6 +3582,7 @@ Quedan%dintentos."</string>
     <string name="oneplus_quickpay_way_alipay_scanning">Escaneo Alipay</string>
     <string name="oneplus_quickpay_way_paytm">Paytm</string>
     <string name="oneplus_quickpay_way_wecaht_qrcode">Código QR WeChat</string>
+    <string name="oneplus_quickpay_way_wecaht_ridecode">Código QR de tránsito de WeChat</string>
     <string name="oneplus_quickpay_way_wecaht_scanning">Escaneo WeChat</string>
     <string name="oneplus_ramboost_description">Al aprender cómo utilizas el teléfono, la función Aceleración de RAM puede prever las aplicaciones que quieres iniciar y los datos que quieres cargar, lo que permite aprovechar al máximo la capacidad de la RAM para mejorar el rendimiento del uso diario.</string>
     <string name="oneplus_ramboost_switch_summary">Aumentar la utilización de la RAM en función del uso</string>
@@ -3479,7 +3592,7 @@ Quedan%dintentos."</string>
     <string name="oneplus_reading_mode">Modo lectura</string>
     <string name="oneplus_reading_mode_activate_manual">Activar manualmente</string>
     <string name="oneplus_reading_mode_add_apps">Añadir aplicaciones para el modo lectura</string>
-    <string name="oneplus_reading_mode_ask">Pregunta cada vez</string>
+    <string name="oneplus_reading_mode_ask">Preguntar cada vez</string>
     <string name="oneplus_reading_mode_auto_summary">El modo lectura se activará automáticamente cuando se abran estas aplicaciones y se desactivará cuando se cierren</string>
     <string name="oneplus_reading_mode_available">Sin efecto</string>
     <string name="oneplus_reading_mode_block_peek_notifications">Bloquear las notificaciones peek</string>
@@ -3497,7 +3610,7 @@ Quedan%dintentos."</string>
     <string name="oneplus_reading_mode_turn_on_chromatic">Activar efecto cromático</string>
     <string name="oneplus_reading_mode_turn_on_mono">Activar efecto monocromático</string>
     <string name="oneplus_reading_mode_turn_on_tips">Las reglas anteriores se aplicarán al activar el modo lectura manualmente, excepto cuando las aplicaciones especificadas lo activen automáticamente</string>
-    <string name="oneplus_receive_notifications">Notificaciones OnePlus</string>
+    <string name="oneplus_receive_notifications">Notificaciones de OnePlus</string>
     <string name="oneplus_receive_notifications_agree">Recibir noticias de OnePlus</string>
     <string name="oneplus_receive_notifications_summary">Aceptar recibir noticias oficiales de OnePlus, información sobre productos, cuestionarios y recomendaciones de compra/información sobre cupones</string>
     <string name="oneplus_recognized_bluetooth_car_kits">Bluetooth para coche reconocido</string>
@@ -3608,6 +3721,7 @@ Nota:
     <string name="oneplus_select_fingerprint_animation_effect_2">Onda</string>
     <string name="oneplus_select_fingerprint_animation_effect_3">Raya</string>
     <string name="oneplus_select_fingerprint_animation_effect_4">Onda</string>
+    <string name="oneplus_select_fingerprint_animation_effect_6">Energía</string>
     <string name="oneplus_select_fingerprint_animation_effect_mcl">McLaren</string>
     <string name="oneplus_select_fingerprint_animation_effect_none">Ninguno</string>
     <string name="oneplus_select_fingerprint_animation_effect_title">Selecciona el efecto de animación de huella digital</string>
@@ -3627,6 +3741,8 @@ Nota:
     <string name="oneplus_shortcuts_preview">Vista previa de accesos directos</string>
     <string name="oneplus_shortcuts_settings">Ajustes de accesos directos</string>
     <string name="oneplus_shortcuts_title">Accesos directos</string>
+    <string name="oneplus_show_front_camera_display_summary">Permitir que se muestre contenido en esta área</string>
+    <string name="oneplus_show_front_camera_display_title">Mostrar la cámara frontal</string>
     <string name="oneplus_show_notch_display_summary">Permitir que las aplicaciones utilicen la zona de la muesca</string>
     <string name="oneplus_show_notch_display_title">Mostrar la zona de la muesca</string>
     <string name="oneplus_show_pattern_and_password">Mostrar la contraseña o el patrón</string>
@@ -3637,6 +3753,7 @@ Nota:
     <string name="oneplus_sim1_ringtone_switch">Tarjeta SIM 1</string>
     <string name="oneplus_sim2_ringtone_switch">Tarjeta SIM 2</string>
     <string name="oneplus_simcard_title">SIM</string>
+    <string name="oneplus_sla_down_load_app_summary">La aceleración de descarga no estará disponible mientras el punto de acceso o Wi‑Fi Direct esté activado</string>
     <string name="oneplus_sleep_standby_summary">Optimizar la duración de la batería (por ejemplo, desactivando las conexiones de red) cuando estás durmiendo. Puede que esto haga que las aplicaciones no puedan recibir notificaciones de forma oportuna.</string>
     <string name="oneplus_sleep_standby_title">Optimización de espera en reposo</string>
     <string name="oneplus_smart_background_management_title">Hibernación de la aplicación &amp; con suspensión agresiva</string>
@@ -3651,6 +3768,8 @@ Nota:
     <string name="oneplus_stop_run">Forzar parada</string>
     <string name="oneplus_storage">ALMACENAMIENTO</string>
     <string name="oneplus_sunrise_sunset">Activar automáticamente desde la puesta del sol hasta el amanecer</string>
+    <string name="oneplus_support_summary">Consejos y preguntas frecuentes sobre el uso del dispositivo</string>
+    <string name="oneplus_support_title">Consejos y soporte</string>
     <string name="oneplus_supported_apps">Aplicaciones admitidas</string>
     <string name="oneplus_suspension_notice">Aviso</string>
     <string name="oneplus_suspension_notice_summary">Permitir que las aplicaciones muestren notificaciones de aviso</string>
@@ -3673,7 +3792,7 @@ Nota:
     <string name="oneplus_theme_accent_color_select">SELECCIONAR COLOR DE ACENTO</string>
     <string name="oneplus_theme_apply_summary">Si aplicas este tema, se anularán tus opciones de personalización</string>
     <string name="oneplus_theme_apply_title">¿Quieres aplicar este tema?</string>
-    <string name="oneplus_theme_clock">Estilo del reloj</string>
+    <string name="oneplus_theme_clock">Estilo de reloj</string>
     <string name="oneplus_theme_clock_snake_action">ACTIVAR PANTALLA AMBIENTE</string>
     <string name="oneplus_theme_clock_snake_tip">Esta función estará disponible cuando la pantalla ambiente esté activada</string>
     <string name="oneplus_theme_colorpicker_colorvalue">CÓDIGO DE COLOR</string>
@@ -3734,6 +3853,7 @@ Nota:
     <string name="oneplus_top_level_security_summary">Huella digital, Desbloqueo facial, rescate de emergencia</string>
     <string name="oneplus_top_level_sound_summary">No molestar, modo auricular, tono</string>
     <string name="oneplus_top_level_system_summary">Idioma y teclado, hora, restablecer, actualizaciones de sistema</string>
+    <string name="oneplus_top_level_system_summary_verizon">Idioma y teclado, hora, restablecer</string>
     <string name="oneplus_touch_vibrate">Vibración al tocar</string>
     <string name="oneplus_turn_off_time">Para</string>
     <string name="oneplus_turn_on_feature_cancel">CANCELAR</string>
@@ -3762,12 +3882,17 @@ Nota: El Desbloqueo facial puede ser menos seguro que la huella digital, el PIN 
     <string name="oneplus_video_enhancer">Efecto de color intenso</string>
     <string name="oneplus_video_enhancer_footer">Mejora el color durante la reproducción de videos</string>
     <string name="oneplus_video_enhancer_summary">Mejora el color durante la reproducción de videos</string>
+    <string name="oneplus_voice_assistant">Asistente de voz</string>
     <string name="oneplus_volume_keys_adjust">Utilizar los botones de volumen para ajustar</string>
     <string name="oneplus_volume_keys_adjust_media">Volumen multimedia</string>
     <string name="oneplus_volume_keys_adjust_ringtones">Volumen de tono</string>
     <string name="oneplus_weak_text_reminding">Solo texto</string>
     <string name="oneplus_weak_text_reminding_summary">Permitir que las aplicaciones muestren notificaciones de aviso</string>
     <string name="oneplus_wellbeing_grayscale_open_tip">El modo nocturno no está disponible actualmente porque la función \"Escala de grises\" está activada</string>
+    <string name="oneplus_wifi_6_standard_hotspot_cancel">CANCELAR</string>
+    <string name="oneplus_wifi_6_standard_hotspot_enable">ACTIVAR</string>
+    <string name="oneplus_wifi_6_standard_hotspot_title">Punto de acceso con el estándar Wi‑Fi 6</string>
+    <string name="oneplus_wifi_6_standard_hotspot_warning">Es posible que algunos de los dispositivos que se conecten no sean compatibles con el estándar Wi‑Fi 6. ¿Continuar para activarlo?</string>
     <string name="oneplus_wifi_ap_error">Introduzca la targeta SIM</string>
     <string name="oneplus_wifi_hidden_network_warning">"Si el router desactiva la difusión de SSID, debes seleccionar “Sí” para conectar a la red oculta.
 
@@ -3788,6 +3913,8 @@ Configurar la red como oculta no cambiará la configuración del router."</strin
     <string name="oneplus_zen_mode_automation_settings_title">Activar automáticamente</string>
     <string name="oneplus_zen_mode_duration_settings_title">Duración</string>
     <string name="oneplus_zen_mode_duration_summary_always_prompt">Preguntar cada vez (excepto si se activa automáticamente)</string>
+    <string name="oneplus_zen_mode_duration_summary_forever">Hasta que lo desactives (excepto si se activa automáticamente)</string>
+    <string name="oneplus_zen_mode_duration_summary_time_minutes">%d minutos (excepto si se activa automáticamente)</string>
     <string name="oneplus_zen_mode_footer_info">Cuando No molestar está activado, se desactivarán el sonido y la vibración, excepto en los casos que hayas permitido anteriormente</string>
     <string name="oneplus_zen_mode_mode_manual_switch_summary">Puedes activar No molestar manualmente</string>
     <string name="oneplus_zen_mode_settings">Comportamiento</string>
@@ -3801,6 +3928,10 @@ Configurar la red como oculta no cambiará la configuración del router."</strin
     <string name="op_android_mode_cannot_change_color_accent">El tema predeterminado solo puede usar el tema de color del sistema</string>
     <string name="op_app_already_uninstalled">Desinstalado</string>
     <string name="op_audio_settings">Sintonizador de audio</string>
+    <string name="op_auto_power_saving">Ahorro de energía automático</string>
+    <string name="op_auto_power_saving_summary">Cambiar automáticamente a la resolución adecuada sin agotar la batería</string>
+    <string name="op_charging_optimization">Carga optimizada</string>
+    <string name="op_charging_optimization_summary">Optimizar el patrón de carga según tus hábitos de uso</string>
     <string name="op_china_mobile">CMCC</string>
     <string name="op_china_telecom">CTCC</string>
     <string name="op_china_unicom">CUCC</string>
@@ -3880,6 +4011,7 @@ Configurar la red como oculta no cambiará la configuración del router."</strin
     <string name="op_wifi_display_summary">Transmisión</string>
     <string name="op_wifi_verbose_multi_broadcast_summary">En el modo de espera, las especificaciones de multidifusión Wi-Fi para aplicaciones activarán la Wi-Fi y consumirán recursos del sistema si el filtro no está activado, provocando un consumo de batería excesivo.</string>
     <string name="op_wifi_verbose_multi_broadcast_title">Filtro multidifusión Wi-Fi para aplicaciones</string>
+    <string name="open_hotspot_warning_message">"Con la seguridad abierta, los dispositivos podrán utilizar tu punto de acceso móvil sin introducir ninguna contraseña. Si quieres que sea necesario introducir una contraseña, selecciona la seguridad WPA2. "</string>
     <string name="openid_dialog_reset">RESTABLECER</string>
     <string name="openid_dialog_summary">Esta acción sustituirá tu identificador por un nuevo número aleatorio</string>
     <string name="openid_dialog_title">¿Seguro que quieres restablecer el identificador?</string>
@@ -3964,6 +4096,9 @@ Configurar la red como oculta no cambiará la configuración del router."</strin
     <string name="power_discharging_duration_enhanced">Tiempo restante aproximado según tu uso: %1$s (%2$s)</string>
     <string name="power_flashlight">Linterna</string>
     <string name="power_idle">Teléfono inactivo</string>
+    <string name="power_menu">Menú de apagado</string>
+    <string name="power_off">Apagar</string>
+    <string name="power_off_summary">El dispositivo se apagará</string>
     <string name="power_overcounted">Sobrecalculada</string>
     <string name="power_phone">Llamadas de voz</string>
     <string name="power_remaining_charging_duration_only">Tiempo restante hasta carga completa: %1$s</string>
@@ -4254,6 +4389,19 @@ Reinicia el dispositivo y vuelve a intentarlo."</string>
     <string name="reset_network_title">Recuperar Wi-Fi, red móvil y Bluetooth</string>
     <string name="reset_shortcut_manager_throttling">Restablecer límite de frecuencia de ShortcutManager</string>
     <string name="reset_shortcut_manager_throttling_complete">Se ha restablecido el límite de frecuencia de ShortcutManager</string>
+    <string name="reset_system_settings_button_text">Restablecer ajustes</string>
+    <string name="reset_system_settings_complete_toast">Los ajustes del sistema se han restablecido</string>
+    <string name="reset_system_settings_desc">"Si has modificado cualquiera de los ajustes del sistema, Restablecer ajustes devuelve el teléfono a su comportamiento original.
+
+Esto no tendrá ningún efecto sobre las aplicaciones descargadas, los datos personales o los siguientes ajustes protegidos:
+
+"<li>Ajustes de seguridad</li>"
+"<li>Ajustes de idioma</li>"
+"<li>Ajustes de cuenta</li></string>
+    <string name="reset_system_settings_dialog_message">"Al restablecer los ajustes del sistema, se cambiarán algunas de las personalizaciones que has aplicado, como el tono de llamada, el brillo de la pantalla y el comportamiento del teclado.
+¿Quieres restablecer los ajustes del sistema? Esta acción no se puede deshacer"</string>
+    <string name="reset_system_settings_dialog_title">Advertencia</string>
+    <string name="reset_system_settings_title">Restablecer ajustes</string>
     <string name="restore_default_apn">Restaurando la configuración de APN predeterminada</string>
     <string name="restore_default_apn_completed">Se ha restablecido la configuración predeterminada de APN.</string>
     <string name="restr_pin_enter_admin_pin">Introducir el PIN del administrador</string>
@@ -4283,6 +4431,7 @@ Reinicia el dispositivo y vuelve a intentarlo."</string>
     <string name="retail_demo_reset_next">Siguiente</string>
     <string name="retail_demo_reset_title">Contraseña obligatoria</string>
     <string name="retry">Reintentar</string>
+    <string name="reverse_wireless_charging_category">Carga inalámbrica</string>
     <string name="ring_volume_option_title">Volumen del tono</string>
     <string name="ring_volume_title">Volumen del tono</string>
     <string name="ringtone_title">Tono del teléfono</string>
@@ -4330,6 +4479,7 @@ Esta configuración afecta a todos los usuarios de este teléfono."</string>
     <string name="safety_and_regulatory_info">Manual de seguridad y normativas</string>
     <string name="saturation_option_title">Balance de color</string>
     <string name="save">Guardar</string>
+    <string name="save_changes">Guardar cambios</string>
     <string name="saved_network">Guardada por %1$s</string>
     <string name="scanning_status_text_wifi_off_ble_off">Las redes Wi‑Fi y las conexiones Bluetooth tienen la búsqueda desactivada</string>
     <string name="scanning_status_text_wifi_off_ble_on">La búsqueda de conexiones Bluetooth está activada y la de redes Wi‑Fi, desactivada</string>
@@ -4424,6 +4574,7 @@ Para usar esta opción:
     <string name="search_bar_account_avatar_content_description" />
     <string name="search_menu">Buscar ajustes</string>
     <string name="search_menu_title">Buscar</string>
+    <string name="search_network_extenders">Buscando extensores de red</string>
     <string name="search_results_title">Ajustes</string>
     <string name="search_settings">Búsqueda</string>
     <string name="secure_lock_encryption_warning">Has activado un servicio de accesibilidad, por lo que el dispositivo no utilizará el bloqueo de pantalla para mejorar el cifrado de datos.</string>
@@ -4543,6 +4694,7 @@ Nota: No puedes utilizar tu huella digital para desbloquear este dispositivo. Si
     <string name="select_automatically">Seleccionar una red automáticamente</string>
     <string name="select_day">Seleccionar mes y día</string>
     <string name="select_device_admin_msg">Aplicaciones de admin. de dispositivos</string>
+    <string name="select_function">Selecciona la función</string>
     <string name="select_hours">Seleccionar hora</string>
     <string name="select_logd_size_dialog_title">Elige el tamaño del Logger por búfer</string>
     <string name="select_logd_size_title">Tamaños del búfer para registrar</string>
@@ -4564,6 +4716,9 @@ Nota: No puedes utilizar tu huella digital para desbloquear este dispositivo. Si
     <string name="select_year">Seleccionar año</string>
     <string name="sensors_off_quick_settings_title">Sensores desactivados</string>
     <string name="service_background_processes">%1$s libre</string>
+    <string name="service_does_not_exists_in_this_area">El servicio no existe en esta área</string>
+    <string name="service_exists_in_this_area_and_is_capable_of_being_used">El servicio existe en esta área y se puede utilizar</string>
+    <string name="service_exists_in_this_area_but_is_not_capable_of_being_used">El servicio existe en esta área, pero no se puede utilizar</string>
     <string name="service_foreground_processes">%1$s usado</string>
     <string name="service_manage">Ajustes</string>
     <string name="service_manage_description">%1$s: actualmente en uso. Toca Ajustes para controlarlo.</string>
@@ -4590,7 +4745,7 @@ Nota: No puedes utilizar tu huella digital para desbloquear este dispositivo. Si
     <string name="settings_safetylegal_activity_unreachable">No tienes conexión de datos. Para ver esta información, accede a %s desde cualquier ordenador conectado a Internet.</string>
     <string name="settings_safetylegal_title">Información de seguridad</string>
     <string name="settings_shortcut">Acceso a Ajustes</string>
-    <string name="settings_switch_user_storage_insufficient">El almacenamiento está lleno, no se puede cambiar de usuario</string>
+    <string name="settings_switch_user_storage_insufficient">El almacenamiento está lleno, no se puede cambiar el usuario</string>
     <string name="setup_fingerprint_enroll_enrolling_skip_message">Has decidido utilizar tu huella digital para desbloquear el teléfono. Si te saltas este paso ahora, tendrás que configurarlo más tarde (este proceso tarda aproximadamente un minuto).</string>
     <string name="setup_fingerprint_enroll_enrolling_skip_title">¿Saltar la configuración de huella digital?</string>
     <string name="setup_fingerprint_enroll_skip_after_adding_lock_text">Solo tardarás un par de minutos en configurar la huella digital. Si te saltas este paso, puedes añadir tu huella digital en otro momento desde los ajustes.</string>
@@ -4637,6 +4792,8 @@ Nota: No puedes utilizar tu huella digital para desbloquear este dispositivo. Si
     <string name="show_screen_updates_summary">Parpadear todas las superficies de la ventana cuando se actualizan</string>
     <string name="show_touches">Mostrar toques</string>
     <string name="show_touches_summary">Mostrar la ubicación de los toques en la pantalla</string>
+    <string name="show_wifi_popup">Mostrar mensajes emergentes de Wi-Fi</string>
+    <string name="show_wifi_popup_summary">Al abrir las aplicaciones, notificarme cuando Wi-Fi esté disponible</string>
     <string name="sim_bad_pin">PIN incorrecto</string>
     <string name="sim_call_back_title">Volver a llamar desde SIM predeterminada</string>
     <string name="sim_calls_always_use">Usar siempre esta para llamadas</string>
@@ -4743,7 +4900,9 @@ Es posible que las notificaciones de estas aplicaciones te lleguen con retraso."
     <string name="sms_messages_title">Mensajes SMS</string>
     <string name="sms_preference">Preferencia de SMS</string>
     <string name="snooze_options_title">Permitir que se pospongan las notificaciones</string>
+    <string name="softap_tethering_footer_info">Utiliza el punto de acceso y el tethering para proporcionar Internet a otros dispositivos a través de tu conexión de datos móviles o Wi-Fi. Las aplicaciones también pueden crear un punto de acceso para compartir contenido con dispositivos cercanos.</string>
     <string name="sometimes_running">A veces en ejecución (%s)</string>
+    <string name="sort_apps_by_date">Ordenar por fecha</string>
     <string name="sort_avg_use">Ordenar por uso medio</string>
     <string name="sort_max_use">Ordenar por uso máximo</string>
     <string name="sort_order_alpha">Ordenar por nombre</string>
@@ -5086,6 +5245,7 @@ un servicio de Google que te permite sincronizar datos para que puedas acceder a
     <string name="system_navigation_title">Navegación del sistema</string>
     <string name="system_package">Las actualizaciones del sistema no se pueden instalar en ubicaciones externas.</string>
     <string name="system_ui_settings">Mostrar SystemUI Tuner</string>
+    <string name="system_update">Actualización del sistema</string>
     <string name="system_update_settings_list_item_summary" />
     <string name="system_update_settings_list_item_title">Actualizaciones del sistema</string>
     <string name="system_update_uss_title">Descargar e instalar</string>
@@ -5219,6 +5379,7 @@ un servicio de Google que te permite sincronizar datos para que puedas acceder a
     <string name="tts_status_title">Estado del idioma predeterminado</string>
     <string name="tx_link_speed">%1$d Mbps</string>
     <string name="tx_wifi_speed">Transmitir velocidad de enlace</string>
+    <string name="uicc_alert_message">Se requiere una tarjeta UICC para iniciar sesión en la red Wi-Fi con el SSID de VerizonWiFiAccess</string>
     <string name="uicc_all_lock_summary">El dispositivo está bloqueado para utilizar solo tarjetas SIM de Sprint o internacionales</string>
     <string name="uicc_lock_summary">El dispositivo está bloqueado para utilizar solo tarjetas SIM de Sprint</string>
     <string name="uicc_unlock">Desbloqueo UICC</string>
@@ -5240,10 +5401,16 @@ un servicio de Google que te permite sincronizar datos para que puedas acceder a
     <string name="uninstall_failed_device_policy_manager">No se puede desinstalar porque este paquete es un administrador activo del dispositivo.</string>
     <string name="uninstall_failed_device_policy_manager_of_user">No se puede desinstalar porque este paquete es un administrador activo del dispositivo del usuario %1$s.</string>
     <string name="uninstall_failure_notification_channel">Errores de desinstalación</string>
+    <string name="uninstall_multiple_apps">Operaciones masivas</string>
     <string name="uninstall_text">Desinstalar</string>
     <string name="uninstall_update_text">¿Quieres sustituir esta aplicación por la versión de fábrica? Se eliminarán todos los datos.</string>
     <string name="uninstall_update_text_multiuser">¿Quieres sustituir esta aplicación por la versión de fábrica? Se eliminarán todos los datos. Esto afecta a todos los usuarios de este dispositivo, incluso a los que tienen perfiles de trabajo.</string>
     <string name="uninstall_update_title">Actualización de la desinstalación</string>
+    <string name="uninstallapps_confirm">Confirmar</string>
+    <string name="uninstallapps_confirm_dialog_body">Se eliminarán todas las aplicaciones seleccionadas y todos los archivos asociados al paquete de aplicación.</string>
+    <string name="uninstallapps_confirm_dialog_title">¿Eliminar las aplicaciones seleccionadas?</string>
+    <string name="uninstallapps_selected">seleccionado</string>
+    <string name="uninstallapps_toast_message">Las aplicaciones se han eliminado</string>
     <string name="uninstalling">Desinstalando…</string>
     <string name="uninstalling_notification_channel">Ejecutando desinstalaciones</string>
     <string name="unknown">Desconocido</string>
@@ -5325,6 +5492,12 @@ Las huellas digitales guardadas también se eliminarán del perfil y no podrás 
     <string name="unsupported_setting_summary">El teléfono no admite esta opción</string>
     <string name="update_prl">Actualizar PRL</string>
     <string name="update_profile">Actualizar perfil</string>
+    <string name="upstream_type_auto">Cambio automático</string>
+    <string name="upstream_type_auto_summary">Cambiar automáticamente a la conexión de datos móviles cuando la red Wi-Fi se desconecte</string>
+    <string name="upstream_type_cell">Uso compartido solo de datos móviles</string>
+    <string name="upstream_type_cell_summary">Cuando los datos móviles se desactivan o desconectan, el uso compartido se desactiva</string>
+    <string name="upstream_type_wifi">Uso compartido solo de Wi-Fi</string>
+    <string name="upstream_type_wifi_summary">Cuando la red Wi-Fi se desconecta, el uso compartido se desactiva</string>
     <string name="usage">Uso</string>
     <string name="usage_access">Acceso al uso</string>
     <string name="usage_access_description">El acceso a los datos de uso permite que una aplicación controle qué otras aplicaciones utilizas y con qué frecuencia, así como tu operador, los ajustes de idioma y otros detalles.</string>
@@ -5510,6 +5683,9 @@ Cualquier usuario puede actualizar las aplicaciones del resto de usuarios."</str
     <string name="v7_preference_on">ACTIVADO</string>
     <string name="verify_apps_over_usb_summary">Comprobar las aplicaciones instaladas mediante ADB/ADT para detectar comportamientos dañinos</string>
     <string name="verify_apps_over_usb_title">Verificar aplicaciones por USB</string>
+    <string name="verizon_store_demo_mode_hint">Introduce la contraseña</string>
+    <string name="verizon_store_demo_mode_title">Verizon Store Demo Mode</string>
+    <string name="verizon_wifi_tether_band_warning">Al cambiar la configuración del punto de acceso móvil, se desconectarán todos los dispositivos que estén conectados a él en este momento.</string>
     <string name="version_text">versión %1$s</string>
     <string name="vibrate_in_silent_title">Vibrar en modo silencio</string>
     <string name="vibrate_input_devices">Redirigir vibración</string>
@@ -5626,6 +5802,8 @@ Cualquier usuario puede actualizar las aplicaciones del resto de usuarios."</str
     <string name="wallpaper_settings_title">Fondo de pantalla</string>
     <string name="wallpaper_suggestion_summary">Personaliza la pantalla</string>
     <string name="wallpaper_suggestion_title">Cambiar el fondo de pantalla</string>
+    <string name="warning_title">Advertencia</string>
+    <string name="warranty_date_code">Fecha de garantía</string>
     <string name="web_action_enable_summary">Abre enlaces en aplicaciones aunque no estén instaladas</string>
     <string name="web_action_enable_title">Aplicaciones instantáneas</string>
     <string name="web_action_section_title">Aplicaciones instantáneas</string>
@@ -5940,8 +6118,17 @@ Configurar la red como oculta no cambiará la configuración del router."</strin
     <string name="wifi_tether_custom_auto_turn_off_always_summary">Siempre activado</string>
     <string name="wifi_tether_enabled_subtext">%1$s está activa</string>
     <string name="wifi_tether_failed_subtext">Error del punto de acceso Wi-Fi</string>
+    <string name="wifi_tether_passphrase_warning">Al menos 8 caracteres, incluyendo uno alfabético, uno numérico y un símbolo</string>
     <string name="wifi_tether_starting">Activando zona Wi-Fi…</string>
     <string name="wifi_tether_stopping">Desactivando zona Wi-Fi…</string>
+    <string name="wifi_tether_upstream_network_type_config">Ajustes de uso compartido</string>
+    <string name="wifi_tether_upstream_network_type_title">Ajustes de uso compartido</string>
+    <string name="wifi_tether_verizon_custom_auto_turn_off_10_min_summary">Después de 10 minutos de inactividad</string>
+    <string name="wifi_tether_verizon_custom_auto_turn_off_20_min_summary">Después de 20 minutos de inactividad</string>
+    <string name="wifi_tether_verizon_custom_auto_turn_off_30_min_summary">Después de 30 minutos de inactividad</string>
+    <string name="wifi_tether_verizon_custom_auto_turn_off_5_min_summary">Después de 5 minutos de inactividad</string>
+    <string name="wifi_tether_verizon_custom_auto_turn_off_60_min_summary">Después de 60 minutos de inactividad</string>
+    <string name="wifi_tether_verizon_custom_auto_turn_off_always_summary">Siempre activado</string>
     <string name="wifi_turned_on_message">Red Wi‑Fi activada</string>
     <string name="wifi_unchanged">(no modificada)</string>
     <string name="wifi_unmetered_label">No medida</string>
@@ -5984,7 +6171,7 @@ Configurar la red como oculta no cambiará la configuración del router."</strin
     <string name="wizard_finish">Finalizar</string>
     <string name="wizard_next">Siguiente</string>
     <string name="work_alarm_ringtone_title">Sonido de alarma de trabajo predeterminado</string>
-    <string name="work_life_balance">Equilibrio entre el trabajo y la vida personal</string>
+    <string name="work_life_balance">Equilibrio entre trabajo y vida personal</string>
     <string name="work_life_disabled_toast">La función Equilibrio entre trabajo y vida personal está desactivada.</string>
     <string name="work_mode_label">Perfil de trabajo</string>
     <string name="work_mode_off_summary">Las aplicaciones y las notificaciones están desactivadas</string>

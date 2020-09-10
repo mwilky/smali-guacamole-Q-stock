@@ -152,22 +152,22 @@
 
     if-nez v2, :cond_1
 
-    const v2, 0x7f120523
+    const v2, 0x7f12053a
 
     invoke-virtual {v1, v2}, Landroidx/appcompat/app/AlertDialog$Builder;->setTitle(I)Landroidx/appcompat/app/AlertDialog$Builder;
 
-    const v2, 0x7f120522
+    const v2, 0x7f120539
 
     invoke-virtual {v1, v2}, Landroidx/appcompat/app/AlertDialog$Builder;->setMessage(I)Landroidx/appcompat/app/AlertDialog$Builder;
 
     goto :goto_0
 
     :cond_1
-    const v2, 0x7f120525
+    const v2, 0x7f12053c
 
     invoke-virtual {v1, v2}, Landroidx/appcompat/app/AlertDialog$Builder;->setTitle(I)Landroidx/appcompat/app/AlertDialog$Builder;
 
-    const v2, 0x7f120524
+    const v2, 0x7f12053b
 
     invoke-virtual {v1, v2}, Landroidx/appcompat/app/AlertDialog$Builder;->setMessage(I)Landroidx/appcompat/app/AlertDialog$Builder;
 

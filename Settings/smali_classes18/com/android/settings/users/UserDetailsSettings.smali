@@ -360,7 +360,7 @@
 
     iget-object v2, p0, Lcom/android/settings/users/UserDetailsSettings;->mPhonePref:Landroidx/preference/SwitchPreference;
 
-    const v4, 0x7f1216a7
+    const v4, 0x7f121779
 
     invoke-virtual {v2, v4}, Landroidx/preference/SwitchPreference;->setTitle(I)V
 

@@ -194,6 +194,8 @@
 
 .field public static final OPEN_TAKE_VIDEO:Ljava/lang/String; = "TakeVideo"
 
+.field public static final OPEN_WECHAAT_MINI_PROGRAME:Ljava/lang/String; = "OpenWxMiniProgram:"
+
 .field public static final OPLEVEL_BLOCK:I = 0x2
 
 .field public static final OPLEVEL_DENOISE:I = 0x1
@@ -332,6 +334,8 @@
 
 .field public static final QUICK_LAUNCH_QUICK_PAY:I = 0x2
 
+.field public static final QUICK_LAUNCH_QUICK_WECHAAT_MINI_PROGRAME:I = 0x3
+
 .field public static final QUICK_LAUNCH_SHORTCUT:I = 0x1
 
 .field public static final QUICK_LAUNCH_SHORTCUTS:Ljava/lang/String; = "quick_launch_shortcuts"
@@ -395,6 +399,8 @@
 .field public static final TYPE_NEVER:I = 0x0
 
 .field public static final TYPE_ROAMING_ONLY:I = 0x2
+
+.field public static final WECHAT_MINI_PROGRAME_RIDECODE_TYPE:I = 0x0
 
 .field public static final WECHAT_QRCODE_TYPE:I = 0x0
 

@@ -510,7 +510,7 @@
 
     iget-object v5, p0, Lcom/android/settings/applications/appinfo/AppBatteryPreferenceController;->mContext:Landroid/content/Context;
 
-    const v6, 0x7f120292
+    const v6, 0x7f1202a2
 
     new-array v1, v1, [Ljava/lang/Object;
 
@@ -531,7 +531,7 @@
 
     iget-object v1, p0, Lcom/android/settings/applications/appinfo/AppBatteryPreferenceController;->mContext:Landroid/content/Context;
 
-    const v2, 0x7f120b09
+    const v2, 0x7f120b4e
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

@@ -116,7 +116,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0a0291
+    const v3, 0x7f0a0296
 
     invoke-virtual {v2, v3, v0, v1}, Landroidx/fragment/app/FragmentTransaction;->replace(ILandroidx/fragment/app/Fragment;Ljava/lang/String;)Landroidx/fragment/app/FragmentTransaction;
 
@@ -192,7 +192,7 @@
     invoke-virtual {p0, v0}, Lcom/android/settings/wifi/dpp/WifiDppEnrolleeActivity;->setTheme(I)V
 
     :cond_0
-    const v0, 0x7f0d0355
+    const v0, 0x7f0d0356
 
     invoke-virtual {p0, v0}, Lcom/android/settings/wifi/dpp/WifiDppEnrolleeActivity;->setContentView(I)V
 

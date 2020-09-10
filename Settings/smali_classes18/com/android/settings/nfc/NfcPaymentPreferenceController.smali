@@ -225,7 +225,7 @@
     :cond_0
     iget-object v1, p0, Lcom/android/settings/nfc/NfcPaymentPreferenceController;->mContext:Landroid/content/Context;
 
-    const v2, 0x7f120adc
+    const v2, 0x7f120b1f
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
@@ -237,7 +237,7 @@
 .method public onBindViewHolder(Landroidx/preference/PreferenceViewHolder;)V
     .locals 1
 
-    const v0, 0x7f0a060a
+    const v0, 0x7f0a060b
 
     invoke-virtual {p1, v0}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 

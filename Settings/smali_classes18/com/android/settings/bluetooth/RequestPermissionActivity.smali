@@ -134,7 +134,7 @@
 
     if-eq v1, v2, :cond_1
 
-    const v1, 0x7f120398
+    const v1, 0x7f1203ab
 
     invoke-virtual {p0, v1}, Lcom/android/settings/bluetooth/RequestPermissionActivity;->getString(I)Ljava/lang/String;
 
@@ -145,7 +145,7 @@
     goto :goto_0
 
     :cond_1
-    const v1, 0x7f120399
+    const v1, 0x7f1203ac
 
     invoke-virtual {p0, v1}, Lcom/android/settings/bluetooth/RequestPermissionActivity;->getString(I)Ljava/lang/String;
 
@@ -169,7 +169,7 @@
 
     if-eqz v1, :cond_3
 
-    const v2, 0x7f1202c6
+    const v2, 0x7f1202d7
 
     new-array v4, v4, [Ljava/lang/Object;
 
@@ -182,7 +182,7 @@
     goto :goto_1
 
     :cond_3
-    const v1, 0x7f1202c7
+    const v1, 0x7f1202d8
 
     invoke-virtual {p0, v1}, Lcom/android/settings/bluetooth/RequestPermissionActivity;->getString(I)Ljava/lang/String;
 
@@ -200,7 +200,7 @@
 
     if-eqz v5, :cond_5
 
-    const v6, 0x7f1202be
+    const v6, 0x7f1202cf
 
     new-array v2, v2, [Ljava/lang/Object;
 
@@ -219,7 +219,7 @@
     goto :goto_2
 
     :cond_5
-    const v2, 0x7f1202bf
+    const v2, 0x7f1202d0
 
     new-array v4, v4, [Ljava/lang/Object;
 
@@ -239,7 +239,7 @@
     invoke-virtual {v0, v1}, Landroidx/appcompat/app/AlertDialog$Builder;->setMessage(Ljava/lang/CharSequence;)Landroidx/appcompat/app/AlertDialog$Builder;
 
     :goto_3
-    const v1, 0x7f12010b
+    const v1, 0x7f120114
 
     invoke-virtual {p0, v1}, Lcom/android/settings/bluetooth/RequestPermissionActivity;->getString(I)Ljava/lang/String;
 
@@ -247,7 +247,7 @@
 
     invoke-virtual {v0, v1, p0}, Landroidx/appcompat/app/AlertDialog$Builder;->setPositiveButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroidx/appcompat/app/AlertDialog$Builder;
 
-    const v1, 0x7f1205b9
+    const v1, 0x7f1205d5
 
     invoke-virtual {p0, v1}, Lcom/android/settings/bluetooth/RequestPermissionActivity;->getString(I)Ljava/lang/String;
 

@@ -60,7 +60,7 @@
 
     iget-object v3, p0, Lcom/android/settings/bluetooth/BluetoothSummaryUpdater;->mContext:Landroid/content/Context;
 
-    const v4, 0x7f1202f7
+    const v4, 0x7f12030a
 
     invoke-virtual {v3, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -73,7 +73,7 @@
 
     move-result v4
 
-    const v5, 0x7f1205ff
+    const v5, 0x7f120625
 
     if-eqz v4, :cond_1
 
@@ -225,7 +225,7 @@
 
     iget-object v3, p0, Lcom/android/settings/bluetooth/BluetoothSummaryUpdater;->mContext:Landroid/content/Context;
 
-    const v4, 0x7f1202d0
+    const v4, 0x7f1202e1
 
     invoke-virtual {v3, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -236,7 +236,7 @@
     :cond_6
     iget-object v3, p0, Lcom/android/settings/bluetooth/BluetoothSummaryUpdater;->mContext:Landroid/content/Context;
 
-    const v4, 0x7f1202d8
+    const v4, 0x7f1202e9
 
     new-array v5, v7, [Ljava/lang/Object;
 
@@ -288,7 +288,7 @@
 
     iget-object v0, p0, Lcom/android/settings/bluetooth/BluetoothSummaryUpdater;->mContext:Landroid/content/Context;
 
-    const v1, 0x7f1205ff
+    const v1, 0x7f120625
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -299,7 +299,7 @@
     :cond_1
     iget-object v0, p0, Lcom/android/settings/bluetooth/BluetoothSummaryUpdater;->mContext:Landroid/content/Context;
 
-    const v1, 0x7f120301
+    const v1, 0x7f120314
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -317,7 +317,7 @@
     :cond_3
     iget-object v0, p0, Lcom/android/settings/bluetooth/BluetoothSummaryUpdater;->mContext:Landroid/content/Context;
 
-    const v1, 0x7f1202d9
+    const v1, 0x7f1202ea
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -329,7 +329,7 @@
     :goto_0
     iget-object v0, p0, Lcom/android/settings/bluetooth/BluetoothSummaryUpdater;->mContext:Landroid/content/Context;
 
-    const v1, 0x7f1202f7
+    const v1, 0x7f12030a
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

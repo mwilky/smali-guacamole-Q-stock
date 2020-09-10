@@ -81,13 +81,13 @@
 
     if-eqz v0, :cond_0
 
-    const v0, 0x7f120f77
+    const v0, 0x7f121000
 
-    const v1, 0x7f120f76
+    const v1, 0x7f120fff
 
-    const v2, 0x7f12127b
+    const v2, 0x7f121335
 
-    const v3, 0x7f120a2f
+    const v3, 0x7f120a6c
 
     invoke-virtual {p0, v0, v1, v2, v3}, Lcom/oneplus/settings/OPQuitConfirmFragment;->showWarningDialog(IIII)V
 

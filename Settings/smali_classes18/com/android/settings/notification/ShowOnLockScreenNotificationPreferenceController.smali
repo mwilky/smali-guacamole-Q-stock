@@ -183,7 +183,7 @@
 
     iget-object v0, p0, Lcom/android/settings/notification/ShowOnLockScreenNotificationPreferenceController;->mContext:Landroid/content/Context;
 
-    const v1, 0x7f120d8b
+    const v1, 0x7f120df1
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -194,7 +194,7 @@
     :cond_1
     iget-object v0, p0, Lcom/android/settings/notification/ShowOnLockScreenNotificationPreferenceController;->mContext:Landroid/content/Context;
 
-    const v1, 0x7f120d8c
+    const v1, 0x7f120df2
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -206,7 +206,7 @@
     :goto_0
     iget-object v0, p0, Lcom/android/settings/notification/ShowOnLockScreenNotificationPreferenceController;->mContext:Landroid/content/Context;
 
-    const v1, 0x7f120956
+    const v1, 0x7f120992
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -238,7 +238,7 @@
 
     const/4 v2, 0x1
 
-    const v3, 0x7f120956
+    const v3, 0x7f120992
 
     if-eq v0, v3, :cond_0
 
@@ -250,7 +250,7 @@
     move v3, v1
 
     :goto_0
-    const v4, 0x7f120d8c
+    const v4, 0x7f120df2
 
     if-ne v0, v4, :cond_1
 
@@ -331,7 +331,7 @@
 
     iget-object v3, p0, Lcom/android/settings/notification/ShowOnLockScreenNotificationPreferenceController;->mContext:Landroid/content/Context;
 
-    const v4, 0x7f120d8c
+    const v4, 0x7f120df2
 
     invoke-virtual {v3, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -353,7 +353,7 @@
 
     iget-object v7, p0, Lcom/android/settings/notification/ShowOnLockScreenNotificationPreferenceController;->mContext:Landroid/content/Context;
 
-    const v8, 0x7f120d8b
+    const v8, 0x7f120df1
 
     invoke-virtual {v7, v8}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -371,7 +371,7 @@
 
     iget-object v6, p0, Lcom/android/settings/notification/ShowOnLockScreenNotificationPreferenceController;->mContext:Landroid/content/Context;
 
-    const v10, 0x7f120956
+    const v10, 0x7f120992
 
     invoke-virtual {v6, v10}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

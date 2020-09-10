@@ -224,6 +224,10 @@
         <item quantity="other">%d സെക്കന്‍ഡുകള്‍ക്കുള്ളില്‍ വീണ്ടും ശ്രമിക്കുക.</item>
         <item quantity="one">%d സെക്കന്‍ഡിനുള്ളില്‍ വീണ്ടും ശ്രമിക്കുക.</item>
     </plurals>
+    <plurals name="oneplus_zen_mode_duration_summary_time_hours">
+        <item quantity="other">%d മണിക്കൂർ (സ്വയമേവ ഓണാക്കിയതല്ലാത്ത പക്ഷം)</item>
+        <item quantity="one">ഒരു മണിക്കൂർ (സ്വയമേവ ഓണാക്കിയതല്ലാത്ത പക്ഷം)</item>
+    </plurals>
     <plurals name="permission_bar_chart_label">
         <item quantity="other">%s ആപ്പുകൾ</item>
         <item quantity="one">ഒരു ആപ്പ്</item>

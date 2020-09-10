@@ -154,7 +154,7 @@
 
     if-eqz v1, :cond_1
 
-    const v1, 0x7f12040a
+    const v1, 0x7f12041d
 
     iput v1, p0, Lcom/android/settings/datausage/DataUsageSummaryPreferenceController;->mDataUsageTemplate:I
 
@@ -167,14 +167,14 @@
 
     if-eqz v1, :cond_2
 
-    const v1, 0x7f1217bd
+    const v1, 0x7f121894
 
     iput v1, p0, Lcom/android/settings/datausage/DataUsageSummaryPreferenceController;->mDataUsageTemplate:I
 
     goto :goto_1
 
     :cond_2
-    const v1, 0x7f1206c2
+    const v1, 0x7f1206f7
 
     iput v1, p0, Lcom/android/settings/datausage/DataUsageSummaryPreferenceController;->mDataUsageTemplate:I
 
@@ -755,7 +755,7 @@
 
     iget-object v0, p0, Lcom/android/settings/datausage/DataUsageSummaryPreferenceController;->mContext:Landroid/content/Context;
 
-    const v1, 0x7f12040c
+    const v1, 0x7f12041f
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
@@ -802,7 +802,7 @@
 
     iget-object v0, p0, Lcom/android/settings/datausage/DataUsageSummaryPreferenceController;->mContext:Landroid/content/Context;
 
-    const v1, 0x7f12040b
+    const v1, 0x7f12041e
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
@@ -837,7 +837,7 @@
 
     iget-object v0, p0, Lcom/android/settings/datausage/DataUsageSummaryPreferenceController;->mContext:Landroid/content/Context;
 
-    const v1, 0x7f120409
+    const v1, 0x7f12041c
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 

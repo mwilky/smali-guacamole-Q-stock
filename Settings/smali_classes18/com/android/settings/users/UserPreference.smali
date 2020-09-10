@@ -8,7 +8,7 @@
 
 .field private static final ALPHA_ENABLED:I = 0xff
 
-.field static final DELETE_ID:I = 0x7f0a0719
+.field static final DELETE_ID:I = 0x7f0a071a
 
 .field public static final SERIAL_NUMBER_COMPARATOR:Ljava/util/Comparator;
     .annotation system Ldalvik/annotation/Signature;
@@ -20,7 +20,7 @@
     .end annotation
 .end field
 
-.field static final SETTINGS_ID:I = 0x7f0a03bb
+.field static final SETTINGS_ID:I = 0x7f0a03c0
 
 .field public static final USERID_GUEST_DEFAULTS:I = -0xb
 
@@ -86,7 +86,7 @@
     if-eqz p4, :cond_1
 
     :cond_0
-    const v0, 0x7f0d029f
+    const v0, 0x7f0d02a0
 
     invoke-virtual {p0, v0}, Lcom/android/settings/users/UserPreference;->setWidgetLayoutResource(I)V
 
@@ -304,7 +304,7 @@
 
     invoke-direct {p0, v0}, Lcom/android/settings/users/UserPreference;->dimIcon(Z)V
 
-    const v1, 0x7f0a0748
+    const v1, 0x7f0a0749
 
     invoke-virtual {p1, v1}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 
@@ -343,7 +343,7 @@
 
     move-result-object v5
 
-    const v6, 0x7f0a0719
+    const v6, 0x7f0a071a
 
     invoke-virtual {p1, v6}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 
@@ -376,7 +376,7 @@
 
     :cond_3
     :goto_1
-    const v7, 0x7f0a03bb
+    const v7, 0x7f0a03c0
 
     invoke-virtual {p1, v7}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 

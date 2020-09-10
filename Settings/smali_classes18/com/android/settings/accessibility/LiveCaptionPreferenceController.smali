@@ -46,11 +46,46 @@
 
 # virtual methods
 .method public getAvailabilityStatus()I
-    .locals 1
+    .locals 4
 
-    const/4 v0, 0x3
+    invoke-static {}, Lcom/oneplus/settings/utils/OPUtils;->isO2()Z
 
-    return v0
+    move-result v0
+
+    const/4 v1, 0x3
+
+    if-eqz v0, :cond_1
+
+    iget-object v0, p0, Lcom/android/settings/accessibility/LiveCaptionPreferenceController;->mPackageManager:Landroid/content/pm/PackageManager;
+
+    sget-object v2, Lcom/android/settings/accessibility/LiveCaptionPreferenceController;->LIVE_CAPTION_INTENT:Landroid/content/Intent;
+
+    const/4 v3, 0x0
+
+    invoke-virtual {v0, v2, v3}, Landroid/content/pm/PackageManager;->queryIntentActivities(Landroid/content/Intent;I)Ljava/util/List;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_0
+
+    invoke-interface {v0}, Ljava/util/List;->isEmpty()Z
+
+    move-result v2
+
+    if-nez v2, :cond_0
+
+    move v1, v3
+
+    goto :goto_0
+
+    :cond_0
+    nop
+
+    :goto_0
+    return v1
+
+    :cond_1
+    return v1
 .end method
 
 .method public updateState(Landroidx/preference/Preference;)V

@@ -82,7 +82,7 @@
 
     invoke-direct {v1, v2}, Landroidx/appcompat/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v2, 0x7f120709
+    const v2, 0x7f120741
 
     invoke-virtual {v1, v2}, Landroidx/appcompat/app/AlertDialog$Builder;->setTitle(I)Landroidx/appcompat/app/AlertDialog$Builder;
 
@@ -90,19 +90,19 @@
 
     if-eqz v0, :cond_0
 
-    const v2, 0x7f120708
+    const v2, 0x7f120740
 
     goto :goto_0
 
     :cond_0
-    const v2, 0x7f120707
+    const v2, 0x7f12073f
 
     :goto_0
     invoke-virtual {v1, v2}, Landroidx/appcompat/app/AlertDialog$Builder;->setMessage(I)Landroidx/appcompat/app/AlertDialog$Builder;
 
     move-result-object v1
 
-    const v2, 0x7f120706
+    const v2, 0x7f12073e
 
     new-instance v3, Lcom/android/settings/biometrics/fingerprint/FingerprintSettings$FingerprintSettingsFragment$ConfirmLastDeleteDialog$2;
 
@@ -112,7 +112,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f1203d8
+    const v2, 0x7f1203eb
 
     new-instance v3, Lcom/android/settings/biometrics/fingerprint/FingerprintSettings$FingerprintSettingsFragment$ConfirmLastDeleteDialog$1;
 

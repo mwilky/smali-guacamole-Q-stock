@@ -99,7 +99,7 @@
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 2
 
-    const v0, 0x7f0d0224
+    const v0, 0x7f0d0225
 
     const/4 v1, 0x0
 
@@ -274,7 +274,7 @@
 
     if-eqz v3, :cond_2
 
-    const v6, 0x7f0a05d3
+    const v6, 0x7f0a05d4
 
     invoke-virtual {p1, v6}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -387,7 +387,7 @@
 
     iget-object v0, p0, Lcom/android/settings/password/SetupChooseLockPassword$SetupChooseLockPasswordFragment;->mSkipOrClearButton:Lcom/oneplus/lib/widget/button/OPButton;
 
-    const v1, 0x7f1213f5
+    const v1, 0x7f1214b7
 
     invoke-virtual {v0, v1}, Lcom/oneplus/lib/widget/button/OPButton;->setText(I)V
 
@@ -400,7 +400,7 @@
     :cond_0
     iget-object v0, p0, Lcom/android/settings/password/SetupChooseLockPassword$SetupChooseLockPasswordFragment;->mSkipOrClearButton:Lcom/oneplus/lib/widget/button/OPButton;
 
-    const v1, 0x7f12097d
+    const v1, 0x7f1209b9
 
     invoke-virtual {v0, v1}, Lcom/oneplus/lib/widget/button/OPButton;->setText(I)V
 

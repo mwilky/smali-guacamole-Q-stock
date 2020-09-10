@@ -256,13 +256,23 @@ Je beheerder kan instellingen, toegang, apps en gegevens van deze gebruiker bijh
     <string name="advanced_apps">Geavanceerd</string>
     <string name="advanced_battery_graph_subtext">Schatting van resterende batterijduur is gebaseerd op je apparaatgebruik</string>
     <string name="advanced_battery_title">Batterijgebruik</string>
+    <string name="advanced_calling_summary">HD-spraak, videobellen</string>
+    <string name="advanced_calling_title">Geavanceerd bellen</string>
     <string name="advanced_reboot_summary">Wanneer ontgrendeld, toont herstarten de mogelijkheden normaal herstarten, in herstel of snel heropstarten</string>
     <string name="advanced_reboot_title">Geavanceerd herstarten</string>
     <string name="advanced_section_header">Geavanceerd</string>
     <string name="advanced_security_title">Geavanceerd</string>
     <string name="advanced_settings">Geavanceerde instellingen</string>
     <string name="advanced_settings_summary">Meer opties voor instellingen inschakelen</string>
+    <string name="advanced_wificall_summary">Gebruik wifi als het mobiele netwerk niet beschikbaar is</string>
     <string name="airplane_mode">Vliegtuigmodus</string>
+    <string name="airplane_mode_description">"Vliegtuigmodus schakelt alle netwerkverbindingen uit, inclusief bellen, sms'en, internettoegang, wifi en Bluetooth."</string>
+    <string name="airplane_mode_enable_dialog_message">"Wanneer vliegtuigmodus is ingeschakeld, kunt u geen gebruik maken van internet, e-mail en andere apps die een dataverbinding vereisen, tenzij u wifi gebruikt.
+
+Vliegtuigmodus inschakelen?"</string>
+    <string name="airplane_mode_enable_dialog_message_wifi_volte">"Wanneer vliegtuigmodus is ingeschakeld, kunt u geen gebruik maken van internet, e-mail, bellen via wifi en andere apps die een dataverbinding nodig hebben, tenzij u wifi gebruikt.
+
+Vliegtuigmodus inschakelen?"</string>
     <string name="alarm_ringtone_title">Standaard alarmgeluid</string>
     <string name="alarm_template">om %1$s</string>
     <string name="alarm_template_far">op %1$s</string>
@@ -274,6 +284,7 @@ Je beheerder kan instellingen, toegang, apps en gegevens van deze gebruiker bijh
     <string name="alert_slider_silent_title">Stil instellingen</string>
     <string name="alertslider_settings">Alert slider</string>
     <string name="alertslider_settings_soc_tri_state">Alert slider</string>
+    <string name="alertslider_settings_soc_tri_state_summary">Stil, trillen, beltoon</string>
     <string name="all_volume_title">Volumes</string>
     <string name="allow">Toestaan</string>
     <string name="allow_bind_app_widget_activity_allow_bind">Nadat je de widget hebt gemaakt, heeft %1$s toegang tot alle gegevens die de widget weergeeft.</string>
@@ -314,12 +325,19 @@ Houd de apparaten bij elkaar (meestal met de achterkanten tegen elkaar aan) en t
     <string name="angle_enabled_app_set">App met ANGLE-functionaliteit: %1$s</string>
     <string name="animator_duration_scale_title">Duur van animatieschaal</string>
     <string name="another_migration_already_in_progress">Er wordt al een andere migratie uitgevoerd.</string>
-    <string name="aod_clock_analog">Analoog</string>
+    <string name="aod_clock_analog">Analoog 1</string>
+    <string name="aod_clock_analog_1">Analoog 2</string>
+    <string name="aod_clock_analog_2">Analoog 3</string>
+    <string name="aod_clock_bold">Vetgedrukt</string>
     <string name="aod_clock_default">Standaard</string>
+    <string name="aod_clock_digital">Digitaal 1</string>
+    <string name="aod_clock_digital_1">Digitaal 2</string>
     <string name="aod_clock_mcl">McLaren</string>
-    <string name="aod_clock_minimalism">Minimalisme</string>
+    <string name="aod_clock_minimalism">Minimalisme 1</string>
+    <string name="aod_clock_minimalism_1">Minimalisme 2</string>
     <string name="aod_clock_none">Geen</string>
     <string name="aod_clock_select_style_text">Selecteer de klokstijl</string>
+    <string name="aod_clock_text_clock">Tekstklok</string>
     <string name="aod_horizon_light_effect_1">Blauw</string>
     <string name="aod_horizon_light_effect_2">Rood</string>
     <string name="aod_horizon_light_effect_3">Paars</string>
@@ -353,7 +371,7 @@ Houd de apparaten bij elkaar (meestal met de achterkanten tegen elkaar aan) en t
     <string name="apn_settings_not_available">Instellingen voor toegangspuntnamen zijn niet beschikbaar voor deze gebruiker</string>
     <string name="apn_type">APN-type</string>
     <string name="apn_user">Gebruikersnaam</string>
-    <string name="app2sd_alert_continue">GA VERDER</string>
+    <string name="app2sd_alert_continue">DOORGAAN</string>
     <string name="app2sd_alert_message">WAARSCHUWING</string>
     <string name="app2sd_alert_title">Bij gebruik van een app opgeslagen op de SD-kaart, dient u deze te verwijderen alvorens het SD-slot te openen om ongewenst gedrag te vermijden. Verder gaan?</string>
     <string name="app_and_notification_dashboard_summary">Recente apps, standaard-apps</string>
@@ -1065,6 +1083,7 @@ Selectie"</string>
     <string name="charge_length_format">%1$s geleden</string>
     <string name="charging_sounds_title">Oplaadgeluiden en -trillingen</string>
     <string name="checkbox_notification_same_as_incoming_call">Volume van inkomende gesprekken gebruiken voor meldingen</string>
+    <string name="checkbox_usb_tether_donot_show_again">Niet opnieuw weergeven</string>
     <string name="checking_decryption">Controleren…</string>
     <string name="choose_network_title">Netwerk kiezen</string>
     <string name="choose_profile">Profiel kiezen</string>
@@ -1172,6 +1191,8 @@ Selectie"</string>
     <string name="connected_devices_dashboard_no_nfc_summary">Bluetooth, rijmodus</string>
     <string name="connected_devices_dashboard_summary">Bluetooth, rijmodus, NFC</string>
     <string name="connected_devices_dashboard_title">Verbonden apparaten</string>
+    <string name="connected_to_the_verizon_network">Verbonden met het Verizon-netwerk</string>
+    <string name="connected_to_the_verizon_network_but_data_connection_unavailable">Verbonden met het Verizon-netwerk, maar dataverbinding niet beschikbaar</string>
     <string name="connected_via_app">Verbonden via %1$s</string>
     <string name="connected_via_carrier">Verbonden via %1$s</string>
     <string name="connected_via_network_scorer">Automatisch verbonden via %1$s</string>
@@ -1187,6 +1208,7 @@ Selectie"</string>
     <string name="contextual_card_feedback_send">Feedback verzenden</string>
     <string name="contextual_card_removed_message">Suggestie verwijderd</string>
     <string name="contextual_card_undo_dismissal_text">Ongedaan maken</string>
+    <string name="continue_anyway">Toch doorgaan</string>
     <string name="contributors_title">Bijdragers</string>
     <string name="controls_label">Bedieningselementen</string>
     <string name="controls_subtitle">Energieverbruik aanpassen</string>
@@ -1318,6 +1340,7 @@ Bij sommige accounts worden mogelijk ook de wijzigingen die je op de telefoon aa
     <string name="data_usage_cycle_editor_subtitle">Datum van elke maand:</string>
     <string name="data_usage_cycle_editor_title">Datum voor resetten gebruikscyclus</string>
     <string name="data_usage_data_limit">Gegevenslimiet instellen</string>
+    <string name="data_usage_description">Dataverbruik wordt gemeten door uw telefoon. Uw provider kan het verbruik anders berekenen. Stel de startdatum in zodat deze overeenkomt met de periode op uw factuur.</string>
     <string name="data_usage_disable_3g_limit">2G-3G-gegevenslimiet instellen</string>
     <string name="data_usage_disable_4g_limit">4G-gegevenslimiet instellen</string>
     <string name="data_usage_disable_mobile">Mobiele data uitschakelen?</string>
@@ -1331,6 +1354,7 @@ Bij sommige accounts worden mogelijk ook de wijzigingen die je op de telefoon aa
     <string name="data_usage_forground_label">Voorgrond:</string>
     <string name="data_usage_label_background">Achtergrond</string>
     <string name="data_usage_label_foreground">Voorgrond</string>
+    <string name="data_usage_less_than_value">Minder dan 0,01</string>
     <string name="data_usage_limit_dialog_mobile">"Je telefoon schakelt mobiele data uit zodra je de ingestelde limiet bereikt.
 
 Aangezien het datagebruik wordt gemeten door je telefoon, en je provider het gebruik afwijkend kan berekenen, kun je overwegen een conservatieve limiet in te stellen."</string>
@@ -1386,6 +1410,9 @@ Deze instelling is van toepassing op alle gebruikers van deze telefoon."</string
     <string name="data_usage_total_during_range_mobile">%2$s: ongeveer %1$s gebruikt volgens je telefoon. Je provider kan dit anders berekenen.</string>
     <string name="data_usage_uninstalled_apps">Verwijderde apps</string>
     <string name="data_usage_uninstalled_apps_users">Verwijderde apps en gebruikers</string>
+    <string name="data_usage_unit_gb">GB</string>
+    <string name="data_usage_unit_mb">MB</string>
+    <string name="data_usage_video_call_title">Video-oproep</string>
     <string name="data_usage_warning_editor_title">Waarschuwing voor datagebruik instellen</string>
     <string name="data_usage_wifi_format">^1 gebruikt via wifi</string>
     <string name="data_usage_wifi_title">Wifi-gegevens</string>
@@ -1497,6 +1524,11 @@ Als je dit probleem wilt verhelpen, kun je %1$s stoppen en voorkomen dat deze ap
 Als je dit probleem wilt verhelpen, kun je locatie uitschakelen voor deze app."</string>
     <string name="dialog_location_ok">Uitschakelen</string>
     <string name="dialog_location_title">Locatie uitschakelen?</string>
+    <string name="dialog_mhs_error">Even geduld tijdens het verifiëren..</string>
+    <string name="dialog_open_network_cancel">annuleren</string>
+    <string name="dialog_open_network_connect">Verbinding maken</string>
+    <string name="dialog_open_network_title">U maakt verbinding met het onbeveiligde (open) wifi-netwerk</string>
+    <string name="dialog_open_network_title_info">Verzonden informatie is niet versleuteld en kan zichtbaar zijn voor anderen. Weet u zeker dat u verbinding wilt maken?</string>
     <string name="dialog_stop_message">"Je telefoon kan de batterij niet normaal beheren omdat %1$s je telefoon ingeschakeld houdt.
 
 Als je dit probleem wilt verhelpen, kun je de app stoppen.
@@ -1509,6 +1541,11 @@ Als je dit probleem wilt verhelpen, kun je %1$s stoppen.
 Als dit blijft gebeuren, moet je de app mogelijk verwijderen om de prestaties van de batterij te verbeteren."</string>
     <string name="dialog_stop_ok">App stoppen</string>
     <string name="dialog_stop_title">App stoppen?</string>
+    <string name="dialog_usb_tether_cancel">annuleren</string>
+    <string name="dialog_usb_tether_ok">ok</string>
+    <string name="dialog_usb_tether_title">USB-tethering en wifi kunnen niet tegelijkertijd zijn ingeschakeld. Wifi uitschakelen?</string>
+    <string name="dialog_wrong_password">Het wifi-wachtwoord is niet geaccepteerd. Controleer het wachtwoord en probeer het opnieuw.</string>
+    <string name="dialog_wrong_password_ok">ok</string>
     <string name="direct_boot_unaware_dialog_message">Opmerking: Als je de telefoon opnieuw opstart en een schermvergrendeling hebt ingesteld, kan deze app pas worden gestart nadat je de telefoon hebt ontgrendeld</string>
     <string name="disable_doze_summary">Sluimeren vermindert het batterijverbruik door CPU- en netwerkactiviteit op de achtergrond uit te stellen voor apps wanneer het toestel voor lange tijd niet gebruikt wordt</string>
     <string name="disable_doze_title">Sluimermodus</string>
@@ -1612,6 +1649,21 @@ Als dit blijft gebeuren, moet je de app mogelijk verwijderen om de prestaties va
     <string name="dual_cdma_sim_warning_notification_channel_title">Sim-combinatie</string>
     <string name="dual_cdma_sim_warning_notification_summary">Als je %1$s gebruikt, kan de functionaliteit worden beperkt. Tik voor meer informatie.</string>
     <string name="eab_provisioned_switch_string">EAB/aanwezigheid geregistreerd</string>
+    <string name="earphone_function_control_click_left">Dubbelklik op het linkeroortje</string>
+    <string name="earphone_function_control_click_right">Dubbelklik op het rechteroortje</string>
+    <string name="earphone_function_control_last_song">Vorig nummer</string>
+    <string name="earphone_function_control_next_song">Volgend nummer</string>
+    <string name="earphone_function_control_play_pause">Afspelen/Pauzeren</string>
+    <string name="earphone_function_introduction">Functiebeschrijving</string>
+    <string name="earphone_function_listening_breeno">Spraakassistent</string>
+    <string name="earphone_support_battery_dot">;</string>
+    <string name="earphone_support_battery_info_box">OnePlus Buds-doosje: %1$s</string>
+    <string name="earphone_support_battery_info_left">L: %1$s</string>
+    <string name="earphone_support_battery_info_right">R: %1$s</string>
+    <string name="earphone_support_current_version">Huidige versie:</string>
+    <string name="earphone_support_update_ota">Firmware automatisch updaten</string>
+    <string name="earphone_support_wifi_data">Automatische updates met mobiele data toestaan</string>
+    <string name="earphone_usage_guide_complete">Gereed</string>
     <string name="edge_to_edge_navigation_summary">Als je naar het startscherm wilt gaan, veeg je omhoog vanaf de onderkant van het scherm. Om tussen apps te schakelen veeg je omhoog vanaf de onderkant, houd vast en laat los. Om terug te gaan veeg je vanaf de linker- of rechterrand.</string>
     <string name="edge_to_edge_navigation_title">Navigatie met gebaren</string>
     <string name="emergency_address_summary">Dit adres wordt gebruikt als je locatie wanneer je het noodnummer belt via wifi</string>
@@ -1755,6 +1807,7 @@ Neem contact op met de beheerder van je organisatie voor meer informatie."</stri
     <string name="expand_button_title">Geavanceerd</string>
     <string name="experimental_category_title">Experimenteel</string>
     <string name="experimental_preference">(Experimenteel)</string>
+    <string name="extended_title">Netwerkextenders</string>
     <string name="external_code_size_label">USB-opslagapp</string>
     <string name="external_data_size_label">USB-opslaggegevens</string>
     <string name="external_source_switch_title">Toestaan van deze bron</string>
@@ -1796,6 +1849,8 @@ Neem contact op met de beheerder van je organisatie voor meer informatie."</stri
     <string name="filter_personal_apps">Persoonlijk</string>
     <string name="filter_work_apps">Werk</string>
     <string name="filter_write_settings_apps">Kan systeeminstellingen aanpassen</string>
+    <string name="find_my_bluetooth_earphone">Zoek mijn Buds</string>
+    <string name="find_my_bluetooth_earphone_summary">Geluid afspelen om oortjes te vinden als ze binnen bereik zijn of laatste locatie weergeven als ze buiten bereik zijn</string>
     <string name="fingerprint_add_fingerprint">Vingerafdruk toevoegen</string>
     <string name="fingerprint_add_fingerprint_summary">Plaats uw vinger op de toets en hef op wanneer u een vibratie voelt.</string>
     <string name="fingerprint_add_max">Je kunt maximaal %d vingerafdrukken toevoegen</string>
@@ -1918,7 +1973,7 @@ Als je de functie voor automatische back-ups inschakelt, worden apparaat- en app
     <string name="hardkeyboard_category">Instellingen voor vast toetsenbord</string>
     <string name="hardware_info">Model en hardware</string>
     <string name="hardware_keys_action_assist">Zoekassistent</string>
-    <string name="hardware_keys_action_camera">Open camera</string>
+    <string name="hardware_keys_action_camera">Camera openen</string>
     <string name="hardware_keys_action_last_app">Open laatst gebruikte app</string>
     <string name="hardware_keys_action_menu">Menu openen/sluiten</string>
     <string name="hardware_keys_action_nothing">Geen actie</string>
@@ -1968,6 +2023,11 @@ Je kunt dit later wijzigen via Instellingen > Apps en meldingen."</string>
     <string name="homepage_all_settings">Alle instellingen</string>
     <string name="homepage_condition_footer_content_description">Samenvouwen</string>
     <string name="homepage_personal_settings">Suggesties</string>
+    <string name="hotspot_tip_message" formatted="false">"Mobiele hotspot deelt uw mobiele data met andere wifi-apparaten. Verbinding maken met uw Mobiele hotspot: \u0009 
+ 1: Schakel wifi in op het andere apparaat.
+ 2: Selecteer %s in de lijst met beschikbare wifi-netwerken. 
+ 3: Als er een wachtwoord vereist is, voer dan %s in. Houd uw telefoon tijdens het gebruik van Mobiele hotspot aangesloten op de oplader om de batterij te sparen. "</string>
+    <string name="hotspot_tip_title">Mobiele hotspot</string>
     <string name="hwui_force_dark_summary">Overschrijft de functie voor gedwongen donker maken zodat deze altijd aan is</string>
     <string name="hwui_force_dark_title">Gedwongen donker maken negeren</string>
     <string name="icon_attributions">Pictogrampakketten</string>
@@ -2144,6 +2204,8 @@ Je kunt dit later wijzigen via Instellingen > Apps en meldingen."</string>
     <string name="language_picker_title">Talen</string>
     <string name="language_picker_title_o2">Talen (land/regio)</string>
     <string name="language_settings">Talen en invoer</string>
+    <string name="last_factory_reset">Laatste fabrieksreset</string>
+    <string name="last_factory_reset_none">Geen</string>
     <string name="last_synced">Laatst gesynchroniseerd: %1$s</string>
     <string name="last_time_used_label">Laatst gebruikt</string>
     <string name="launch_by_default">Standaard openen</string>
@@ -2407,6 +2469,7 @@ Je kunt dit later wijzigen via Instellingen > Apps en meldingen."</string>
     <string name="lockscreen_remote_input">Het typen van reacties of andere tekst in meldingen blokkeren als het apparaat is vergrendeld</string>
     <string name="lockscreen_settings_title">Weergave op vergrendelingsscherm</string>
     <string name="lockscreen_settings_what_to_show_category">Wat wordt weergegeven</string>
+    <string name="long_press_power_button">Houd de aan-uitknop ingedrukt</string>
     <string name="lost_internet_access_cancel">Wifi blijven gebruiken</string>
     <string name="lost_internet_access_persist">Nooit meer laten zien</string>
     <string name="lost_internet_access_switch">Overschakelen naar mobiel</string>
@@ -2542,7 +2605,10 @@ Er zijn andere gebruikers aanwezig op dit apparaat.
     <string name="menu_stats_refresh">Vernieuwen</string>
     <string name="menu_stats_total">Gebruikstotalen</string>
     <string name="menu_stats_unplugged">%1$s sinds losgekoppeld</string>
+    <string name="menu_uninstallapps">Verwijderen</string>
     <string name="menu_use_uss">USS gebruiken</string>
+    <string name="mhs_app">Mijn Verizon openen</string>
+    <string name="mhs_call_back_error">Gegevensverbinding is niet beschikbaar.</string>
     <string name="misc_files">Diverse bestanden</string>
     <string name="misc_files_selected_count">%1$d van %2$d geselecteerd</string>
     <string name="misc_files_selected_count_bytes">%1$s van %2$s</string>
@@ -2558,6 +2624,11 @@ Er zijn andere gebruikers aanwezig op dit apparaat.
     <string name="mobile_data_settings_summary_auto_switch">Telefoon schakelt automatisch over naar deze provider als deze binnen bereik is</string>
     <string name="mobile_data_settings_title">Mobiele data</string>
     <string name="mobile_data_usage_title">Datagebruik van app</string>
+    <string name="mobile_hotspot_airplane_off_error">Schakel de vliegtuigmodus uit om de hotspot in te schakelen</string>
+    <string name="mobile_hotspot_authoration_error">"Als u Mobiele hotspot wilt gebruiken, moet u zich abonneren op de Mobiele hotspot-diensten.
+
+Als u zich wilt abonneren op Mobiele hotspot, bezoekt u mijn Verizon of belt u de klantenservice op (800) 922-0204."</string>
+    <string name="mobile_hotspot_data_off_error">Schakel de mobiele gegevens in om de hotspot in te schakelen</string>
     <string name="mobile_insert_sim_card">Plaats een simkaart en start het apparaat opnieuw</string>
     <string name="mobile_network_active_esim">Actief, gedownloade simkaart</string>
     <string name="mobile_network_active_sim">Actief/simkaart</string>
@@ -2695,6 +2766,8 @@ Als je overschakelt naar %1$s, wordt de service van %2$s niet geannuleerd."</str
     <string name="nfc_quick_toggle_title">NFC</string>
     <string name="nfc_secure_settings_title">NFC beveiligen</string>
     <string name="nfc_secure_toggle_summary">Alleen betaling en overdracht via NFC toestaan als het scherm is ontgrendeld</string>
+    <string name="nfc_uicc_sim1">Sim 1</string>
+    <string name="nfc_uicc_sim2">Sim 2</string>
     <string name="night_display_activation_off_custom">Uitschakelen tot %1$s</string>
     <string name="night_display_activation_off_manual">Nu uitschakelen</string>
     <string name="night_display_activation_off_twilight">Uitschakelen tot zonsondergang</string>
@@ -2738,6 +2811,7 @@ Als je overschakelt naar %1$s, wordt de service van %2$s niet geannuleerd."</str
     <string name="no_internet_access_text">Dit netwerk heeft geen internettoegang. Verbonden blijven?</string>
     <string name="no_memory_use_summary">Geen geheugen gebruikt in de afgelopen drie uur</string>
     <string name="no_network">Geen netwerkservice</string>
+    <string name="no_network_extenders">Geen netwerkextenders</string>
     <string name="no_notification_assistant">Geen</string>
     <string name="no_notification_listeners">Er zijn geen geïnstalleerde apps die toegang tot meldingen hebben aangevraagd.</string>
     <string name="no_running_services">Niets wordt uitgevoerd.</string>
@@ -2748,6 +2822,7 @@ Als je overschakelt naar %1$s, wordt de service van %2$s niet geannuleerd."</str
     <string name="no_vr_listeners">Er zijn geen geïnstalleerde apps die hebben gevraagd om te worden uitgevoerd als VR-helperservices.</string>
     <string name="not_allowed">Je simkaart staat geen verbinding met dit netwerk toe.</string>
     <string name="not_battery_optimizing">Batterijoptimalisatie wordt niet gebruikt</string>
+    <string name="not_connected_to_the_verizon_network">Niet verbonden met het Verizon-netwerk</string>
     <string name="not_installed">Niet geïnstalleerd voor deze gebruiker</string>
     <string name="not_optimize_summery">Kan prestatie batterij beïnvloeden</string>
     <string name="not_optimized_apps">Niet geoptimaliseerde Apps</string>
@@ -2893,6 +2968,7 @@ Hierdoor kan de app ook 'Niet storen' in- of uitschakelen en gerelateerde instel
     <string name="oneplus_aod_smart_display_calendar_event">Agendagebeurtenis</string>
     <string name="oneplus_aod_smart_display_music_info">Mediaspeler</string>
     <string name="oneplus_aod_smart_display_title">Contextuele informatie</string>
+    <string name="oneplus_ap_chanel">AP-kanaal</string>
     <string name="oneplus_app_alipay">Alipay</string>
     <string name="oneplus_app_display_compatibility">Compatibiliteitsmodus</string>
     <string name="oneplus_app_display_fullscreen">Modus volledig scherm</string>
@@ -2906,7 +2982,7 @@ Hierdoor kan de app ook 'Niet storen' in- of uitschakelen en gerelateerde instel
     <string name="oneplus_app_locker_summary">Apps selecteren voor codering</string>
     <string name="oneplus_app_locker_switch">Inhoud meldingen verbergen</string>
     <string name="oneplus_app_locker_switch_summary">Inhoud van meldingen wordt verborgen voor App vergrendeling-apps</string>
-    <string name="oneplus_app_locker_title">App vergrendeling</string>
+    <string name="oneplus_app_locker_title">App-vergrendeling</string>
     <string name="oneplus_app_network_settings">Controle dataverbruik</string>
     <string name="oneplus_app_notification_allow_led">LED Aan</string>
     <string name="oneplus_app_notification_not_allow_led">LED Uit</string>
@@ -2949,8 +3025,11 @@ Hierdoor kan de app ook 'Niet storen' in- of uitschakelen en gerelateerde instel
 
 Batterij sparen schakelt automatisch uit wanneer het toestel oplaadt."</string>
     <string name="oneplus_battery_saver_summary">Deze functie werkt mogelijk niet voor sommige spelletjes</string>
+    <string name="oneplus_bed_time_mode_summary">Maakt stil gebruik van de OnePlus Warp Wireless Charger</string>
+    <string name="oneplus_bed_time_mode_title">Bedtijdmodus</string>
+    <string name="oneplus_bed_time_mode_wall_text">Voor geluidsreductie van de OnePlus Warp draadloze oplader wordt ook de laadsnelheid vertraagd. De telefoon moet op de oplader worden geplaatst om de bedtijdmodus te activeren.</string>
     <string name="oneplus_bg_data_condition_turn_off">DATABESPARING UITSCHAKELEN</string>
-    <string name="oneplus_black_screen_gestures_settings_title">Scherm uit bewegingen</string>
+    <string name="oneplus_black_screen_gestures_settings_title">Gebaren bij uitgeschakeld scherm</string>
     <string name="oneplus_block_all_notifications">Alle meldingen blokkeren</string>
     <string name="oneplus_block_all_notifications_summary">Alle meldingen van de app blokkeren</string>
     <string name="oneplus_block_notifications">Meldingen blokkeren</string>
@@ -2982,7 +3061,7 @@ Batterij sparen schakelt automatisch uit wanneer het toestel oplaadt."</string>
     <string name="oneplus_choose_lock_method_before_face_fingerprint_unlock">Kies een schermvergrendelingsmethode voordat u gezichtsontgrendeling of ontgrendelen met vingerafdrukken instelt</string>
     <string name="oneplus_choose_navigation_bar">Navigatiebalk kiezen</string>
     <string name="oneplus_choose_screen_lock_method">Kies schermvergrendelingsmethode</string>
-    <string name="oneplus_clean_storage">Opruimen</string>
+    <string name="oneplus_clean_storage">Opschonen</string>
     <string name="oneplus_clear_intenal_storage_data_summary">"Inclusief muziek, foto's, video's en andere persoonlijke gegevens"</string>
     <string name="oneplus_clear_intenal_storage_data_title">Interne opslag wissen</string>
     <string name="oneplus_colorful_mode_cannot_change_color_accent">Kleurrijke toon kan alleen de systeemkleur gebruiken</string>
@@ -3004,6 +3083,7 @@ Batterij sparen schakelt automatisch uit wanneer het toestel oplaadt."</string>
     <string name="oneplus_connected_devices_dashboard_summary">NFC, casten, afdrukken</string>
     <string name="oneplus_connected_devices_dashboard_title">Bluetooth &amp; apparaatverbinding</string>
     <string name="oneplus_cpu">PROCESSOR</string>
+    <string name="oneplus_custom_drop_title">Wijzigingen negeren?</string>
     <string name="oneplus_custom_time">Aangepaste periode</string>
     <string name="oneplus_customization">Navigatiebalk aanpassen</string>
     <string name="oneplus_customization_summary">Lang drukken, dubbeltikken</string>
@@ -3045,13 +3125,15 @@ Batterij sparen schakelt automatisch uit wanneer het toestel oplaadt."</string>
     <string name="oneplus_do_not_disturb_answer_call_by_speaker_summary">Leid inkomende oproepen om naar luidspreker wanneer Spelmodus ingeschakeld is</string>
     <string name="oneplus_do_not_disturb_answer_call_by_speaker_title">Oproepen beantwoorden via luidspreker</string>
     <string name="oneplus_do_not_disturb_settings">Instellingen</string>
-    <string name="oneplus_donot_silence_or_block">Notificaties toestaan</string>
+    <string name="oneplus_donot_silence_or_block">Meldingen toestaan</string>
     <string name="oneplus_donot_silence_or_block_summary">Alle soorten meldingen toelaten</string>
     <string name="oneplus_double_tap_power_gesture">Dubbelklik op de aan-uitknop voor</string>
     <string name="oneplus_double_tap_power_gesture_app">DE FUNCTIE SELECTEREN</string>
     <string name="oneplus_double_tap_power_gesture_camera">Camera</string>
     <string name="oneplus_double_tap_power_gesture_wallet">Kaarten doorhalen (Portemonnee)</string>
+    <string name="oneplus_double_tap_power_none">Geen</string>
     <string name="oneplus_doze_summary_801">Klok en andere informatie weergeven op het stand-byscherm</string>
+    <string name="oneplus_doze_summary_new">Tijd, datum en meldingen weergeven op het scherm</string>
     <string name="oneplus_doze_title">Ambient display</string>
     <string name="oneplus_doze_title_801">Ambient display</string>
     <string name="oneplus_draw_gesture_start_none">Geen</string>
@@ -3084,7 +3166,7 @@ Batterij sparen schakelt automatisch uit wanneer het toestel oplaadt."</string>
     <string name="oneplus_erase_system_data_summary">Systeemgegevens inclusief accountinfo, contacten en app-gegevens worden verwijderd. U kunt deze actie niet ongedaan maken.</string>
     <string name="oneplus_erase_system_data_title">Systeemgegevens wissen?</string>
     <string name="oneplus_esportmode_introduction_summary">Tik op de schakelaar op het Spelmoduspaneel om Esports-modus te activeren.</string>
-    <string name="oneplus_experience_improvement_programs">"Programma's voor betere gebruikerservaring"</string>
+    <string name="oneplus_experience_improvement_programs">"Programma's voor een betere gebruikerservaring"</string>
     <string name="oneplus_face_auto_unlock_while_screen_on_sumary">Ontgrendel uw telefoon met uw gezicht van zodra het scherm aan is zonder eerst te vegen.</string>
     <string name="oneplus_face_auto_unlock_while_screen_on_title">Automatisch ontgrendelen wanneer het scherm aan is</string>
     <string name="oneplus_face_setup_unlock_settings_summary">"Gezichtsontgrendeling is een snelle manier om uw telefoon te ontgrendelen. Het enige wat u hoeft te doen is uw telefoon uit de slaapstand halen en ernaar kijken. Daarna kunt u uw telefoon gebruiken.
@@ -3153,18 +3235,21 @@ Let op: Gezichtsontgrendeling is minder veilig dan het gebruik van een vingerafd
     <string name="oneplus_fnatic_mode_summary">Verbeter uw game-ervaring</string>
     <string name="oneplus_fnatic_mode_summary_2">Een geavanceerde gamingmodus, gecreëerd door e-sports-pioniers</string>
     <string name="oneplus_fnatic_mode_title">Fnatic-modus</string>
-    <string name="oneplus_fnatic_mode_unlock_wallpapers">U hebt speciale %1$s-achtergronden ontgrendeld</string>
+    <string name="oneplus_fnatic_mode_unlock_wallpapers">U hebt %1$s speciale achtergronden ontgrendeld</string>
     <string name="oneplus_fnatic_mode_view_in_wallpapers">Bekijken in achtergronden</string>
-    <string name="oneplus_fnatic_mode_wallpapers_added">%1$s-achtergronden toegevoegd</string>
+    <string name="oneplus_fnatic_mode_wallpapers_added">%1$s achtergronden toegevoegd</string>
     <string name="oneplus_font_preview_summary">Deel de beste technologie met de wereld, hand in hand met u</string>
     <string name="oneplus_font_style">Lettertype</string>
     <string name="oneplus_font_switch">Lettertype Wisselen</string>
     <string name="oneplus_force_factory_reset_summary">Wachtwoord bij opstarten is ingeschakeld, interne opslag wordt gewist</string>
     <string name="oneplus_forum_award_summary">Deze community is van jou. Alleen jij bepaalt waar we naartoe gaan. Samen definiëren en verfijnen we hem. Door codes te herstructureren en te schrijven. Dit is voor jou. Bedankt om samen met ons te dromen!</string>
     <string name="oneplus_forum_award_title">Award</string>
+    <string name="oneplus_front_camera_app_display_fullscreen_summary">Als de inhoud van de app wordt bedekt door het weergavegebied van de camera aan de voorzijde, schakel dan over naar de standaardmodus</string>
+    <string name="oneplus_front_camera_display_choose_title">Kies of u de camera aan de voorzijde wilt verbergen</string>
+    <string name="oneplus_front_camera_display_title">Weergavegebied van camera aan de voorzijde</string>
     <string name="oneplus_fullscreen_back_guide_summary">Veeg naar binnen vanaf de linkeronder- of rechteronderrand van het scherm</string>
     <string name="oneplus_fullscreen_back_guide_summary_deprecated">Veeg aan de onderzijde van het scherm aan de linker- of rechterzijde omhoog</string>
-    <string name="oneplus_fullscreen_back_guide_title">Vorige</string>
+    <string name="oneplus_fullscreen_back_guide_title">Terug</string>
     <string name="oneplus_fullscreen_disable_this_feature">Deze functie kan niet worden gebruikt wanneer navigatiegebaren zijn ingeschakeld.</string>
     <string name="oneplus_fullscreen_gesture_guide_back">"Laat ons het gebaar proberen dat de knop terug vervangt.
 Veeg omhoog van de linker- of rechterzijde van de bodem van het scherm."</string>
@@ -3177,7 +3262,7 @@ Om op elk moment naar het Home-scherm te gaan, veeg omhoog vanaf de onderste cen
     <string name="oneplus_fullscreen_gesture_guide_will_enable">Navigatiegebaren worden ingeschakeld</string>
     <string name="oneplus_fullscreen_home_guide_summary">Veeg omhoog vanaf de onderrand van het scherm</string>
     <string name="oneplus_fullscreen_home_guide_summary_deprecated">Veeg omhoog vanaf de onderste centrale rand van het scherm</string>
-    <string name="oneplus_fullscreen_home_guide_title">Home</string>
+    <string name="oneplus_fullscreen_home_guide_title">Start</string>
     <string name="oneplus_fullscreen_landscape_guide_summary">Navigatiegebaren kunnen nog steeds vanaf de onderrand van het scherm worden geactiveerd, veeg van de linker- of rechterrand om terug te gaan</string>
     <string name="oneplus_fullscreen_landscape_guide_summary_deprecated">Net als bij portret gebruikt u navigatiegebaren nog steeds vanaf de onderzijde van het apparaat</string>
     <string name="oneplus_fullscreen_landscape_guide_title">Liggend</string>
@@ -3196,7 +3281,7 @@ Om op elk moment naar het Home-scherm te gaan, veeg omhoog vanaf de onderste cen
     <string name="oneplus_game_mode_ad_summary">Verbeter de details van lichte en donkere delen van de gaming-weergave</string>
     <string name="oneplus_game_mode_ad_title">Verbeterde weergave voor gaming</string>
     <string name="oneplus_game_mode_app_list">Gamemodus app-lijst</string>
-    <string name="oneplus_gaming_mode">Spelmodus</string>
+    <string name="oneplus_gaming_mode">Gamemodus</string>
     <string name="oneplus_gaming_mode_add_apps">Apps toevoegen voor Spelmodus</string>
     <string name="oneplus_gaming_mode_close_automatic_brightness">Automatische helderheid uitschakelen</string>
     <string name="oneplus_gaming_mode_close_automatic_brightness_summary">Vergrendel helderheid van het scherm wanneer Spelmodus ingeschakeld is</string>
@@ -3232,12 +3317,16 @@ Om op elk moment naar het Home-scherm te gaan, veeg omhoog vanaf de onderste cen
     <string name="oneplus_gesture_to_route_audio_title">Optillen om over te schakelen</string>
     <string name="oneplus_gestures_fast_entrance">Snelkoppelingen</string>
     <string name="oneplus_gestures_open_apps">Open Applicaties</string>
-    <string name="oneplus_gestures_open_camera">Open camera</string>
+    <string name="oneplus_gestures_open_camera">Camera openen</string>
     <string name="oneplus_gestures_open_flashlight">Zaklamp in-/uitschakelen</string>
     <string name="oneplus_gestures_open_front_camera">Open camera voorzijde</string>
     <string name="oneplus_gestures_open_shelf">Open Shelf</string>
     <string name="oneplus_gestures_take_video">Neem een video op</string>
     <string name="oneplus_getlog_title">Logbestanden ontvangen</string>
+    <string name="oneplus_global_dark_mode_description">Zorg dat apps die geen donker thema ondersteunen ook met donkere tinten worden weergegeven. Sommige apps werken mogelijk niet zoals verwacht, u kunt ze uitschakelen in de onderstaande lijst.</string>
+    <string name="oneplus_global_dark_mode_only_valid_in_dark_mode">Deze functie is alleen beschikbaar onder donkere tint</string>
+    <string name="oneplus_global_dark_mode_summary">Zorgt ervoor dat meer apps die zich niet aanpassen aan donkere modus automatisch donker worden wanneer donkere tint is ingeschakeld</string>
+    <string name="oneplus_global_dark_mode_title">Donkere tint in meer apps inschakelen</string>
     <string name="oneplus_google_tts">Google TTS spraakgegevens</string>
     <string name="oneplus_gps_using">gebruikt GPS</string>
     <string name="oneplus_h2_contributors">HydrogenOS Contributors</string>
@@ -3253,6 +3342,8 @@ Om op elk moment naar het Home-scherm te gaan, veeg omhoog vanaf de onderste cen
     <string name="oneplus_hardware_keys_action_split_screen">Gesplitst scherm openen/sluiten</string>
     <string name="oneplus_health_safety_information">Gezondheids- en veiligheidsinformatie</string>
     <string name="oneplus_hearing_aid">Compatibiliteit Hoorapparaat</string>
+    <string name="oneplus_hide_front_camera_display_summary">Er kan geen inhoud worden weergegeven in dit gebied</string>
+    <string name="oneplus_hide_front_camera_display_title">De camera aan de voorzijde verbergen</string>
     <string name="oneplus_hide_navigation_bar">Navigatiebalk altijd verbergen</string>
     <string name="oneplus_hide_navkeys">Navigatiebalk verbergen</string>
     <string name="oneplus_hide_navkeys_summary">Voeg een knop toe om de navigatiebalk te verbergen of weer te geven</string>
@@ -3262,7 +3353,7 @@ Om op elk moment naar het Home-scherm te gaan, veeg omhoog vanaf de onderste cen
 
 Opmerking: uw vingerafdruk kan minder veilig zijn dan een sterk patroon of een pincode"</string>
     <string name="oneplus_how_to_use_fingerprint_summary_no_note">Wanneer het vingerafdrukpatroon onderaan het scherm verschijnt, drukt u met uw vinger op het gebied van de vingerafdrukidentificatie om de vingerafdrukfunctie te gebruiken om uw telefoon te wekken of te ontgrendelen, aankopen te autoriseren of u aan te melden bij apps.</string>
-    <string name="oneplus_hydrogen_version">H₂OS versie</string>
+    <string name="oneplus_hydrogen_version">H₂OS-versie</string>
     <string name="oneplus_incoming_call_vibrate_intensity">Inkomende oproep</string>
     <string name="oneplus_incoming_call_vibrate_mode">Vibratiepatroon inkomende oproepen</string>
     <string name="oneplus_init_finger_input">Vingerafdruk wordt geïnitialiseerd</string>
@@ -3278,7 +3369,7 @@ Opmerking: uw vingerafdruk kan minder veilig zijn dan een sterk patroon of een p
     <string name="oneplus_lab_features">LABFUNCTIES</string>
     <string name="oneplus_lab_feedback_toast">Bedankt voor uw feedback!</string>
     <string name="oneplus_lab_is_like">Vindt u dit een fijne functie?</string>
-    <string name="oneplus_lab_like">Ja</string>
+    <string name="oneplus_lab_like">Vind ik leuk</string>
     <string name="oneplus_laboratory">OnePlus Laboratorium</string>
     <string name="oneplus_laboratory_activite_feature">Activeren</string>
     <string name="oneplus_laboratory_community_rating">Beoordeling</string>
@@ -3311,6 +3402,22 @@ Opmerking: uw vingerafdruk kan minder veilig zijn dan een sterk patroon of een p
     <string name="oneplus_lockscreen_settings_title">Voorkeuren voor vergrendelscherm</string>
     <string name="oneplus_max_shortcuts_tips">U kunt maximaal 6 snelkoppelingen toevoegen</string>
     <string name="oneplus_media_ring_summary">Mediavolume dempen</string>
+    <string name="oneplus_memc_close">Uit</string>
+    <string name="oneplus_memc_game">Bewegingscompensatie voor games</string>
+    <string name="oneplus_memc_game_summary">Het inschakelen van bewegingscompensatie voor games vereist overschakelen naar de resolutie FHD+</string>
+    <string name="oneplus_memc_more_support_apps">Meer ondersteunde apps</string>
+    <string name="oneplus_memc_notice">In deze modus wordt de videoframesnelheid verhoogd, waardoor de bewegingsonscherpte van het beeld wordt verminderd en de weergave duidelijker en vloeiender wordt. Alleen effectief tijdens weergave op volledig scherm.</string>
+    <string name="oneplus_memc_open">Aan</string>
+    <string name="oneplus_memc_support_apps">Ondersteunde apps</string>
+    <string name="oneplus_memc_support_no_apps">Geen ondersteunde apps geïnstalleerd</string>
+    <string name="oneplus_memc_video">Bewegende beelden vloeiend maken</string>
+    <string name="oneplus_memc_video_effect">Compensatie-effect</string>
+    <string name="oneplus_memc_video_extreme">Extreem</string>
+    <string name="oneplus_memc_video_nosupport_extreme_summary">Het inschakelen van extreem vereist overschakelen naar de resolutie FHD+</string>
+    <string name="oneplus_memc_video_nosupport_extreme_text">Overschakelen naar de resolutie QHD+, bewegingscompensatie voor grafische weergave is beperkt</string>
+    <string name="oneplus_memc_video_smooth">Soepel</string>
+    <string name="oneplus_memc_video_theacme_summary">De videoframesnelheid wordt verhoogd tot 120 fps voor extreem vloeiende beelden, wat kan leiden tot extra energieverbruik. De QHD+-resolutie wordt tijdelijk niet ondersteund.</string>
+    <string name="oneplus_memc_video_theacme_title">Bewegende beelden hypervloeiend maken</string>
     <string name="oneplus_mobile_device_name_title">Naam telefoon</string>
     <string name="oneplus_mode_choose">Modusselectie</string>
     <string name="oneplus_mode_settings">Alert slider-instellingen</string>
@@ -3365,7 +3472,7 @@ Opmerking: uw vingerafdruk kan minder veilig zijn dan een sterk patroon of een p
     <string name="oneplus_notch_display_area">Notch</string>
     <string name="oneplus_notch_display_choose_title">Selecteer hoe het notchgebied wordt weergegeven</string>
     <string name="oneplus_notch_display_title">Weergave notch</string>
-    <string name="oneplus_notice_vibrate_intensity">Notificaties</string>
+    <string name="oneplus_notice_vibrate_intensity">Meldingen</string>
     <string name="oneplus_notification_advance_settings">Melding geavanceerde instellingen</string>
     <string name="oneplus_notification_alert_title">Belangrijk</string>
     <string name="oneplus_notification_channel_summary_low">Minder belangrijke zonder geluid of trillingen</string>
@@ -3382,14 +3489,18 @@ Opmerking: uw vingerafdruk kan minder veilig zijn dan een sterk patroon of een p
     <string name="oneplus_notification_silence_title">Andere</string>
     <string name="oneplus_notification_sound_default">Standaard melding</string>
     <string name="oneplus_notification_ways">Weergavemodus</string>
-    <string name="oneplus_notification_ways_title">Hoe worden meldingen getoond</string>
-    <string name="oneplus_notifications">Notificaties</string>
+    <string name="oneplus_notification_ways_title">Meldingen weergeven</string>
+    <string name="oneplus_notifications">Meldingen</string>
     <string name="oneplus_notifications_3rd_calls">Meldingen voor oproepen van derden</string>
     <string name="oneplus_notifications_3rd_calls_summary">De spraak- of video-oproepen van socialemedia-apps worden getoond als meldingen</string>
     <string name="oneplus_notifications_and_vibration">Geluid en trilling bij melding</string>
     <string name="oneplus_notifications_free">Vrij</string>
     <string name="oneplus_notifications_meet">Meet</string>
     <string name="oneplus_o2_contributors">OxygenOS Contributors</string>
+    <string name="oneplus_open_bed_time_mode_schedule_summary">Op een aangepaste periode inschakelen</string>
+    <string name="oneplus_open_bed_time_mode_schedule_title">Planning</string>
+    <string name="oneplus_open_bed_time_mode_summary">U kunt de bedtijdmodus handmatig inschakelen</string>
+    <string name="oneplus_open_bed_time_mode_title">Bedtijdmodus</string>
     <string name="oneplus_opfinger_input_completed_comfirm">Bevestigen</string>
     <string name="oneplus_opfinger_input_completed_sub">Installatie vingerafdruk voltooid. Klik op \"bevestigen\"om verder te gaan</string>
     <string name="oneplus_opfinger_input_completed_title">Registratie voltooid</string>
@@ -3433,6 +3544,7 @@ Opmerking: uw vingerafdruk kan minder veilig zijn dan een sterk patroon of een p
     <string name="oneplus_preference_settings_turn_on_time">Van</string>
     <string name="oneplus_prior_to_use_you_need_to">Voor het gebruik, dient u</string>
     <string name="oneplus_privacy_policy">Privacybeleid</string>
+    <string name="oneplus_privacy_protection_title">Versleutelde ruimte</string>
     <string name="oneplus_product_info_introduce">Apparaatgegevens en garantiekaart</string>
     <string name="oneplus_product_info_summary">Garantiekaart, vooraf geïnstalleerde lijst</string>
     <string name="oneplus_proximity_summary_disable">Niet beschikbaar omdat ambient display uit is</string>
@@ -3470,6 +3582,7 @@ Opmerking: uw vingerafdruk kan minder veilig zijn dan een sterk patroon of een p
     <string name="oneplus_quickpay_way_alipay_scanning">Alipay scan</string>
     <string name="oneplus_quickpay_way_paytm">Paytm</string>
     <string name="oneplus_quickpay_way_wecaht_qrcode">WeChat QR-code</string>
+    <string name="oneplus_quickpay_way_wecaht_ridecode">WeChat-doorvoer QR-code</string>
     <string name="oneplus_quickpay_way_wecaht_scanning">WeChat scan</string>
     <string name="oneplus_ramboost_description">RAM Boost leert hoe u uw telefoon gebruikt en kan zo voorspellen welke apps u wilt starten en welke gegevens u wilt laden. De RAM-capaciteit wordt optimaal benut om de prestaties tijdens uw dagelijks gebruik te verhogen.</string>
     <string name="oneplus_ramboost_switch_summary">Verhoog RAM-gebruik op basis van uw gebruik</string>
@@ -3479,7 +3592,7 @@ Opmerking: uw vingerafdruk kan minder veilig zijn dan een sterk patroon of een p
     <string name="oneplus_reading_mode">Leesmodus</string>
     <string name="oneplus_reading_mode_activate_manual">Handmatig activeren</string>
     <string name="oneplus_reading_mode_add_apps">Apps toevoegen voor Leesmodus</string>
-    <string name="oneplus_reading_mode_ask">Vraag elke keer</string>
+    <string name="oneplus_reading_mode_ask">Elke keer vragen</string>
     <string name="oneplus_reading_mode_auto_summary">Leesmodus wordt automatisch ingeschakeld wanneer deze apps worden geopend en uitgeschakeld wanneer ze gesloten worden</string>
     <string name="oneplus_reading_mode_available">Geen effect</string>
     <string name="oneplus_reading_mode_block_peek_notifications">Voorbeeldmeldingen blokkeren</string>
@@ -3497,7 +3610,7 @@ Opmerking: uw vingerafdruk kan minder veilig zijn dan een sterk patroon of een p
     <string name="oneplus_reading_mode_turn_on_chromatic">Chromatisch effect inschakelen</string>
     <string name="oneplus_reading_mode_turn_on_mono">Mono-effect inschakelen</string>
     <string name="oneplus_reading_mode_turn_on_tips">De bovenstaande regels worden gevolgd wanneer u Leesmodus handmatig inschakelt, maar niet wanneer het automatisch wordt ingeschakeld door opgegeven apps</string>
-    <string name="oneplus_receive_notifications">OnePlus Notificaties</string>
+    <string name="oneplus_receive_notifications">OnePlus-meldingen</string>
     <string name="oneplus_receive_notifications_agree">Ontvang nieuws van OnePlus</string>
     <string name="oneplus_receive_notifications_summary">Bereid om officieel nieuws, productinformatie, enquêtes en informatie over koopadvies/waardebonnen van OnePlus te ontvangen</string>
     <string name="oneplus_recognized_bluetooth_car_kits">Bluetooth-carkit is herkend</string>
@@ -3608,11 +3721,12 @@ Opmerking:
     <string name="oneplus_select_fingerprint_animation_effect_2">Golf</string>
     <string name="oneplus_select_fingerprint_animation_effect_3">Streep</string>
     <string name="oneplus_select_fingerprint_animation_effect_4">Ripple</string>
+    <string name="oneplus_select_fingerprint_animation_effect_6">Energie</string>
     <string name="oneplus_select_fingerprint_animation_effect_mcl">McLaren</string>
     <string name="oneplus_select_fingerprint_animation_effect_none">Geen</string>
     <string name="oneplus_select_fingerprint_animation_effect_title">Vingerafdruk animatie-effect selecteren</string>
-    <string name="oneplus_service_messaging_summary">Toestaan dat OnePlus u voorziet van snelle cloudberichtservices om te zorgen voor een optimale productervaring</string>
-    <string name="oneplus_service_messaging_title">OnePlus Serviceberichten</string>
+    <string name="oneplus_service_messaging_summary">Toestaan dat OnePlus u voorziet van snelle cloudberichtservices om een optimale productervaring te garanderen</string>
+    <string name="oneplus_service_messaging_title">OnePlus-serviceberichten</string>
     <string name="oneplus_set_time">Geplande Nachtmodus</string>
     <string name="oneplus_setting_ringtone">Beltoon instellen</string>
     <string name="oneplus_setting_sim_ringtone_switch">Beltoon instellen voor elke simkaart</string>
@@ -3627,6 +3741,8 @@ Opmerking:
     <string name="oneplus_shortcuts_preview">Snelkoppelingen preview</string>
     <string name="oneplus_shortcuts_settings">Instellingen voor snelkoppelingen</string>
     <string name="oneplus_shortcuts_title">Snelkoppelingen</string>
+    <string name="oneplus_show_front_camera_display_summary">Toestaan dat er in dit gebied inhoud wordt weergegeven</string>
+    <string name="oneplus_show_front_camera_display_title">De camera aan de voorzijde weergeven</string>
     <string name="oneplus_show_notch_display_summary">Toestaan dat apps het notchgebied gebruiken</string>
     <string name="oneplus_show_notch_display_title">Het notchgebied tonen</string>
     <string name="oneplus_show_pattern_and_password">Wachtwoord of patroon tonen</string>
@@ -3637,11 +3753,12 @@ Opmerking:
     <string name="oneplus_sim1_ringtone_switch">Simkaart 1</string>
     <string name="oneplus_sim2_ringtone_switch">Simkaart 2</string>
     <string name="oneplus_simcard_title">Sim</string>
+    <string name="oneplus_sla_down_load_app_summary">Downloadversnelling is niet beschikbaar wanneer hotspot of wifi is ingeschakeld</string>
     <string name="oneplus_sleep_standby_summary">Optimaliseer de levensduur van de batterij (bijvoorbeeld door netwerkverbindingen uit te schakelen) terwijl u slaapt. Het is mogelijk dat apps hierdoor niet tijdig meldingen kunnen ontvangen.</string>
     <string name="oneplus_sleep_standby_title">Slaap standby-optimalisatie</string>
     <string name="oneplus_smart_background_management_title">Agressief sluimeren &amp; slaapstand apps</string>
     <string name="oneplus_smart_wifi_connection">slimme Wi‑Fi-verbinding</string>
-    <string name="oneplus_sms">Sms</string>
+    <string name="oneplus_sms">SMS</string>
     <string name="oneplus_sms_and_vibration">Beltoon en trilling bij sms</string>
     <string name="oneplus_snooze_options_title">Meldingen uitstellen vanuit het meldingsscherm</string>
     <string name="oneplus_sound_and_vibrate">Geluid &amp; vibratie</string>
@@ -3651,8 +3768,10 @@ Opmerking:
     <string name="oneplus_stop_run">Afsluiten forceren</string>
     <string name="oneplus_storage">OPSLAG</string>
     <string name="oneplus_sunrise_sunset">Automatisch inschakelen van zonsondergang tot zonsopgang</string>
+    <string name="oneplus_support_summary">Tips en veelgestelde vragen over apparaatgebruik</string>
+    <string name="oneplus_support_title">Tips en ondersteuning</string>
     <string name="oneplus_supported_apps">Ondersteunde apps</string>
-    <string name="oneplus_suspension_notice">Mededeling</string>
+    <string name="oneplus_suspension_notice">Aankondiging</string>
     <string name="oneplus_suspension_notice_summary">Apps toestaan aankondigingsmeldingen te tonen</string>
     <string name="oneplus_switch">OnePlus Switch</string>
     <string name="oneplus_switch_resolution_kill_process_confirm">Switch</string>
@@ -3665,7 +3784,7 @@ Opmerking:
     <string name="oneplus_system_settings_title">Systeeminstellingen</string>
     <string name="oneplus_system_stability_add">Deelnemen aan systeemprogramma voor de verbetering van de stabiliteit</string>
     <string name="oneplus_system_stability_summary">Toestaan dat OnePlus anoniem toegang heeft tot systeemlogboeken. Sta in het geval van een fout toe dat er een foutrapport met logboeken wordt verzonden. Logboeken worden uitsluitend gebruikt bij analyse van systeemfouten en verbetering van de stabiliteit</string>
-    <string name="oneplus_system_stability_title">Systeemstabiliteitsprogramma</string>
+    <string name="oneplus_system_stability_title">Programma voor een betere systeemstabiliteit</string>
     <string name="oneplus_system_vibrate">Systeemtrillingen</string>
     <string name="oneplus_theme_accent_color">Accentkleur</string>
     <string name="oneplus_theme_accent_color_customization">AANPASSING</string>
@@ -3673,7 +3792,7 @@ Opmerking:
     <string name="oneplus_theme_accent_color_select">ACCENTKLEUR SELECTEREN</string>
     <string name="oneplus_theme_apply_summary">Nadat u dit thema hebt toegepast, worden uw aanpassingsopties overschreven</string>
     <string name="oneplus_theme_apply_title">Wilt u dit thema toepassen?</string>
-    <string name="oneplus_theme_clock">Klokstijl</string>
+    <string name="oneplus_theme_clock">Klok stijl</string>
     <string name="oneplus_theme_clock_snake_action">AMBIENT DISPLAY INSCHAKELEN</string>
     <string name="oneplus_theme_clock_snake_tip">Deze functie is beschikbaar wanneer ambient display is ingeschakeld</string>
     <string name="oneplus_theme_colorpicker_colorvalue">KLEURCODE</string>
@@ -3734,6 +3853,7 @@ Opmerking:
     <string name="oneplus_top_level_security_summary">Vingerafdruk, Gezichtsontgrendeling, noodhulp</string>
     <string name="oneplus_top_level_sound_summary">Niet storen, hoofdtelefoonmodus, beltoon</string>
     <string name="oneplus_top_level_system_summary">Taal en toetsenbord, tijd, resetten, systeemupdates</string>
+    <string name="oneplus_top_level_system_summary_verizon">Taal en toetsenbord, tijd, resetten</string>
     <string name="oneplus_touch_vibrate">Trilling bij aanraken</string>
     <string name="oneplus_turn_off_time">Aan</string>
     <string name="oneplus_turn_on_feature_cancel">ANNULEREN</string>
@@ -3750,7 +3870,7 @@ Let op: gezichtontgrendeling kan minder veilig zijn dan vingerafdruk-, PIN- of a
     <string name="oneplus_use_fingerprint_to_unlock">Gebruik uw vingerafdruk om te ontgrendelen</string>
     <string name="oneplus_user_agreement">Licentieovereenkomst Eindgebruiker</string>
     <string name="oneplus_user_enjoy_plan_title">Deelnemen aan programma voor betere gebruikerservaring</string>
-    <string name="oneplus_vibrate">Vibratie</string>
+    <string name="oneplus_vibrate">Trilling</string>
     <string name="oneplus_vibrate_dynamic_mode">Dynamisch</string>
     <string name="oneplus_vibrate_intensity">Intensiteit vibratie</string>
     <string name="oneplus_vibrate_on_touch_intensity">Vibreren bij aanraken</string>
@@ -3762,12 +3882,17 @@ Let op: gezichtontgrendeling kan minder veilig zijn dan vingerafdruk-, PIN- of a
     <string name="oneplus_video_enhancer">Levendig kleureffect</string>
     <string name="oneplus_video_enhancer_footer">"Verbeter de kleuren tijdens het afspelen van video's"</string>
     <string name="oneplus_video_enhancer_summary">"Verbeter de kleuren tijdens het afspelen van video's"</string>
+    <string name="oneplus_voice_assistant">Spraakassistent</string>
     <string name="oneplus_volume_keys_adjust">Gebruik volumeknoppen om aan te passen</string>
     <string name="oneplus_volume_keys_adjust_media">Volume media</string>
     <string name="oneplus_volume_keys_adjust_ringtones">Volume beltoon</string>
     <string name="oneplus_weak_text_reminding">Alleen tekst</string>
     <string name="oneplus_weak_text_reminding_summary">Apps toestaan aankondigingsmeldingen te tonen</string>
     <string name="oneplus_wellbeing_grayscale_open_tip">Nachtmodus is momenteel niet beschikbaar, omdat de functie \"Grijstinten\" is ingeschakeld</string>
+    <string name="oneplus_wifi_6_standard_hotspot_cancel">ANNULEREN</string>
+    <string name="oneplus_wifi_6_standard_hotspot_enable">INSCHAKELEN</string>
+    <string name="oneplus_wifi_6_standard_hotspot_title">Wifi 6-hotspot</string>
+    <string name="oneplus_wifi_6_standard_hotspot_warning">Sommige apparaten die verbinding maken ondersteunen de wifi 6-standaard mogelijk niet. Doorgaan met inschakelen?</string>
     <string name="oneplus_wifi_ap_error">Plaats de simkaart</string>
     <string name="oneplus_wifi_hidden_network_warning">"Als uw router het uitzenden van de SSID uitschakelt, moet u 'Ja' selecteren om verbinding te maken met het verborgen netwerk.
 
@@ -3788,6 +3913,8 @@ De instellingen van uw router worden niet gewijzigd als u het netwerk als verbor
     <string name="oneplus_zen_mode_automation_settings_title">Automatisch inschakelen</string>
     <string name="oneplus_zen_mode_duration_settings_title">Duur</string>
     <string name="oneplus_zen_mode_duration_summary_always_prompt">Elke keer vragen (tenzij automatisch ingeschakeld)</string>
+    <string name="oneplus_zen_mode_duration_summary_forever">Totdat u uitschakelt (tenzij automatisch ingeschakeld)</string>
+    <string name="oneplus_zen_mode_duration_summary_time_minutes">%d minuten (tenzij automatisch ingeschakeld)</string>
     <string name="oneplus_zen_mode_footer_info">Wanneer Niet storen is ingeschakeld, worden geluiden en trillingen uitgeschakeld, behalve in de gevallen die u hierboven toestaat</string>
     <string name="oneplus_zen_mode_mode_manual_switch_summary">U kunt Niet storen handmatig inschakelen</string>
     <string name="oneplus_zen_mode_settings">Gedrag</string>
@@ -3801,6 +3928,10 @@ De instellingen van uw router worden niet gewijzigd als u het netwerk als verbor
     <string name="op_android_mode_cannot_change_color_accent">Standaard thema kan enkel het kleurenthema van het systeem gebruiken</string>
     <string name="op_app_already_uninstalled">Verwijderd</string>
     <string name="op_audio_settings">Audio Tuner</string>
+    <string name="op_auto_power_saving">Automatische energiebesparing</string>
+    <string name="op_auto_power_saving_summary">Schakel automatisch over naar de geschikte resolutie zonder dat dit ten koste van het batterijverbruik gaat</string>
+    <string name="op_charging_optimization">Geoptimaliseerd opladen</string>
+    <string name="op_charging_optimization_summary">Optimaliseer het oplaadpatroon op basis van uw gebruiksgewoonten</string>
     <string name="op_china_mobile">CMCC</string>
     <string name="op_china_telecom">CTCC</string>
     <string name="op_china_unicom">CUCC</string>
@@ -3847,7 +3978,7 @@ De instellingen van uw router worden niet gewijzigd als u het netwerk als verbor
     <string name="op_primary_red_label">Rood</string>
     <string name="op_primary_royal_blue_label">Koningsblauw</string>
     <string name="op_primary_sky_blue_label">Cyaan</string>
-    <string name="op_primary_vigour_red_label">Roos</string>
+    <string name="op_primary_vigour_red_label">Roze</string>
     <string name="op_reset">Resetten</string>
     <string name="op_reset_options_summary">Fabrieksinstellingen resetten, apps &amp; netwerk resetten</string>
     <string name="op_screenshot">Geluid schermafdruk</string>
@@ -3880,6 +4011,7 @@ De instellingen van uw router worden niet gewijzigd als u het netwerk als verbor
     <string name="op_wifi_display_summary">Casten</string>
     <string name="op_wifi_verbose_multi_broadcast_summary">Wanneer in stand-by, wekken de Wi-Fi Multi/Broadcasting specificaties voor apps WLAN, en verbruiken ze systeembronnen indien de filter niet ingeschakeld is, wat resulteert in een extreem batterijverbruik.</string>
     <string name="op_wifi_verbose_multi_broadcast_title">App Filter Wi-Fi Multi/Broadcasting</string>
+    <string name="open_hotspot_warning_message">Met open beveiliging kunnen apparaten uw Mobiele hotspot gebruiken zonder een wachtwoord in te voeren. Selecteer als u gebruik wilt maken van een wachtwoord in plaats daarvan WPA2-beveiliging.</string>
     <string name="openid_dialog_reset">RESETTEN</string>
     <string name="openid_dialog_summary">Dit vervangt uw id door een nieuw willekeurig nummer</string>
     <string name="openid_dialog_title">Weet u zeker dat u de id wilt resetten?</string>
@@ -3910,7 +4042,7 @@ De instellingen van uw router worden niet gewijzigd als u het netwerk als verbor
     <string name="owner_info_settings_status">%1$d/%2$d</string>
     <string name="owner_info_settings_summary">Geen</string>
     <string name="owner_info_settings_title">Bericht schermvergrendeling</string>
-    <string name="oxygen_version">OxygenOS versie</string>
+    <string name="oxygen_version">OxygenOS-versie</string>
     <string name="oxygen_version_default">Onbekend</string>
     <string name="packages_subtitle">Bijgeleverde pakketten</string>
     <string name="page_tab_title_summary">Alle</string>
@@ -3964,6 +4096,9 @@ De instellingen van uw router worden niet gewijzigd als u het netwerk als verbor
     <string name="power_discharging_duration_enhanced">Nog ongeveer %1$s op basis van je gebruik (%2$s)</string>
     <string name="power_flashlight">Zaklamp</string>
     <string name="power_idle">Telefoon inactief</string>
+    <string name="power_menu">Uitschakelmenu</string>
+    <string name="power_off">Uitschakelen</string>
+    <string name="power_off_summary">Uw apparaat wordt uitgeschakeld</string>
     <string name="power_overcounted">Te hoog berekend</string>
     <string name="power_phone">Audiogesprekken</string>
     <string name="power_remaining_charging_duration_only">Nog %1$s tot volledig opgeladen</string>
@@ -4254,6 +4389,19 @@ Start je apparaat opnieuw en probeer het nogmaals."</string>
     <string name="reset_network_title">Wifi, mobiel en Bluetooth resetten</string>
     <string name="reset_shortcut_manager_throttling">Rate limiting van ShortcutManager resetten</string>
     <string name="reset_shortcut_manager_throttling_complete">De rate limiting van ShortcutManager is gereset.</string>
+    <string name="reset_system_settings_button_text">Instellingen resetten</string>
+    <string name="reset_system_settings_complete_toast">De systeeminstellingen zijn gereset</string>
+    <string name="reset_system_settings_desc">"Als u systeeminstellingen hebt gewijzigd, kunt u met 'Reset instellingen' het oorspronkelijke gedrag van uw telefoon herstellen.
+
+Dit heeft geen invloed op uw gedownloade apps, uw persoonlijke gegevens of de volgende beveiligde instellingen::
+
+"<li>Beveiligingsinstellingen</li>"
+"<li>Taalinstellingen</li>"
+"<li>Accountinstellingen</li></string>
+    <string name="reset_system_settings_dialog_message">"Het resetten van de systeeminstellingen wijzigt sommige aanpassingen die u mogelijk hebt gemaakt, zoals uw beltoon, de helderheid van het scherm en het gedrag van uw toetsenbord.
+Wilt u de systeeminstellingen resetten? U kunt deze actie niet ongedaan maken"</string>
+    <string name="reset_system_settings_dialog_title">Waarschuwing</string>
+    <string name="reset_system_settings_title">Instellingen resetten</string>
     <string name="restore_default_apn">Standaard-APN-instellingen herstellen.</string>
     <string name="restore_default_apn_completed">Herstellen van standaard-APN-instellingen voltooid.</string>
     <string name="restr_pin_enter_admin_pin">Beheerderspincode invoeren</string>
@@ -4283,6 +4431,7 @@ Start je apparaat opnieuw en probeer het nogmaals."</string>
     <string name="retail_demo_reset_next">Volgende</string>
     <string name="retail_demo_reset_title">Wachtwoord vereist</string>
     <string name="retry">Opnieuw proberen</string>
+    <string name="reverse_wireless_charging_category">Draadloos opladen</string>
     <string name="ring_volume_option_title">Ringtonevolume</string>
     <string name="ring_volume_title">Ringtonevolume</string>
     <string name="ringtone_title">Ringtone</string>
@@ -4330,6 +4479,7 @@ Deze instelling is van invloed op alle gebruikers van deze telefoon."</string>
     <string name="safety_and_regulatory_info">Handleiding voor veiligheid/regelgeving</string>
     <string name="saturation_option_title">Kleurbalans</string>
     <string name="save">Opslaan</string>
+    <string name="save_changes">Wijzigingen opslaan</string>
     <string name="saved_network">"Opgeslagen door '%1$s'"</string>
     <string name="scanning_status_text_wifi_off_ble_off">Zowel wifi-scannen als Bluetooth-scannen zijn uitgeschakeld</string>
     <string name="scanning_status_text_wifi_off_ble_on">Bluetooth-scannen is ingeschakeld en wifi-scannen is uitgeschakeld</string>
@@ -4424,6 +4574,7 @@ Zo zet je je scherm vast:
     <string name="search_bar_account_avatar_content_description" />
     <string name="search_menu">Zoeken in de instellingen</string>
     <string name="search_menu_title">Zoeken</string>
+    <string name="search_network_extenders">Netwerkextenders zoeken</string>
     <string name="search_results_title">Instellingen</string>
     <string name="search_settings">Zoeken</string>
     <string name="secure_lock_encryption_warning">Omdat je een toegankelijkheidsservice hebt ingeschakeld, maakt je apparaat geen gebruik van schermvergrendeling om de gegevensversleuteling te verbeteren.</string>
@@ -4543,6 +4694,7 @@ Opmerking: Je kunt je vingerafdruk niet gebruiken om dit apparaat te ontgrendele
     <string name="select_automatically">Netwerk automatisch selecteren</string>
     <string name="select_day">Maand en dag selecteren</string>
     <string name="select_device_admin_msg">Apparaatbeheer-apps</string>
+    <string name="select_function">Selecteer de functie</string>
     <string name="select_hours">Uren selecteren</string>
     <string name="select_logd_size_dialog_title">Kies Logger-grootten per logbuffer</string>
     <string name="select_logd_size_title">Logger-buffergrootten</string>
@@ -4564,6 +4716,9 @@ Opmerking: Je kunt je vingerafdruk niet gebruiken om dit apparaat te ontgrendele
     <string name="select_year">Jaar selecteren</string>
     <string name="sensors_off_quick_settings_title">Sensoren uit</string>
     <string name="service_background_processes">%1$s vrij</string>
+    <string name="service_does_not_exists_in_this_area">Service bestaat niet in dit gebied</string>
+    <string name="service_exists_in_this_area_and_is_capable_of_being_used">Service bestaat in dit gebied en kan worden gebruikt</string>
+    <string name="service_exists_in_this_area_but_is_not_capable_of_being_used">Service bestaat in dit gebied, maar kan niet worden gebruikt</string>
     <string name="service_foreground_processes">%1$s gebr.</string>
     <string name="service_manage">Instellingen</string>
     <string name="service_manage_description">%1$s: momenteel in gebruik. Tik op Instellingen om dit te bedienen.</string>
@@ -4637,6 +4792,8 @@ Opmerking: Je kunt je vingerafdruk niet gebruiken om dit apparaat te ontgrendele
     <string name="show_screen_updates_summary">Volledige vensteroppervlakken flashen bij updates</string>
     <string name="show_touches">Tikken weergeven</string>
     <string name="show_touches_summary">Visuele feedback weergeven voor tikken</string>
+    <string name="show_wifi_popup">Wifi-pop-ups weergeven</string>
+    <string name="show_wifi_popup_summary">Vertel me bij het openen van apps wanneer wifi beschikbaar is</string>
     <string name="sim_bad_pin">Onjuiste pincode</string>
     <string name="sim_call_back_title">Terugbellen via standaard-simkaart</string>
     <string name="sim_calls_always_use">Altijd gebruiken voor gesprekken</string>
@@ -4743,7 +4900,9 @@ Meldingen kunnen worden vertraagd voor deze apps."</string>
     <string name="sms_messages_title">"Sms'jes"</string>
     <string name="sms_preference">Sms-voorkeuren</string>
     <string name="snooze_options_title">Snoozen van meldingen toestaan</string>
+    <string name="softap_tethering_footer_info">Gebruik hotspot en tethering om andere apparaten via uw mobiele data- of wifi-verbinding van internet te voorzien. Apps kunnen ook een hotspot maken om inhoud te delen met apparaten in de buurt.</string>
     <string name="sometimes_running">Soms actief (%s)</string>
+    <string name="sort_apps_by_date">Sorteren op datum</string>
     <string name="sort_avg_use">Sorteren op gem. gebruik</string>
     <string name="sort_max_use">Sorteren op max. gebruik</string>
     <string name="sort_order_alpha">Sorteren op naam</string>
@@ -5086,6 +5245,7 @@ Een benadering van Google voor de synchronisatie van gegevens, zodat je altijd e
     <string name="system_navigation_title">Systeemnavigatie</string>
     <string name="system_package">Systeemupdates kunnen niet worden geïnstalleerd op externe media.</string>
     <string name="system_ui_settings">SystemUI Tuner weergeven</string>
+    <string name="system_update">Systeemupdate</string>
     <string name="system_update_settings_list_item_summary" />
     <string name="system_update_settings_list_item_title">Systeemupdates</string>
     <string name="system_update_uss_title">Downloaden en installeren</string>
@@ -5153,13 +5313,13 @@ Een benadering van Google voor de synchronisatie van gegevens, zodat je altijd e
     <string name="touch_filtered_warning">Aangezien een app een toestemmingsverzoek afdekt, kan Instellingen je reactie niet verifiëren.</string>
     <string name="touch_sounds_title">Aanraakgeluiden</string>
     <string name="touchscreen_camera_gesture_summary">Teken een O om de camera te openen</string>
-    <string name="touchscreen_camera_gesture_title">Open camera</string>
+    <string name="touchscreen_camera_gesture_title">Camera openen</string>
     <string name="touchscreen_double_tap_to_wake_gesture_summary">Tap tweemaal op het scherm om het toestel te doen ontwaken</string>
-    <string name="touchscreen_double_tap_to_wake_gesture_title">Dubbeltap om te ontwaken</string>
+    <string name="touchscreen_double_tap_to_wake_gesture_title">Dubbeltik om te activeren</string>
     <string name="touchscreen_flashlight_gesture_summary">Teken een V om de zaklamp aan of uit te schakelen</string>
     <string name="touchscreen_flashlight_gesture_title">Zaklamp gebruiken</string>
     <string name="touchscreen_music_gesture_summary">Tekenen || met twee vingers om muziek te spelen of te pauzeren. teken &lt; of > voor het vorige of volgende nummer</string>
-    <string name="touchscreen_music_gesture_title">Muziek regelen</string>
+    <string name="touchscreen_music_gesture_title">Muziek bedienen</string>
     <string name="track_frame_time">HWUI-weergave van profiel</string>
     <string name="transition_animation_scale_title">Overgangs­animatieschaal</string>
     <string name="trigger_carrier_provisioning">Providerregistratie activeren</string>
@@ -5219,6 +5379,7 @@ Een benadering van Google voor de synchronisatie van gegevens, zodat je altijd e
     <string name="tts_status_title">Status van standaardtaal</string>
     <string name="tx_link_speed">%1$d Mbps</string>
     <string name="tx_wifi_speed">Linksnelheid voor verzenden</string>
+    <string name="uicc_alert_message">UICC is vereist om aan te melden bij het wifi-netwerk met het SSID VerizonWiFiAccess</string>
     <string name="uicc_all_lock_summary">Uw apparaat is vergrendeld door Sprint of internationale simkaarten</string>
     <string name="uicc_lock_summary">Uw apparaat wordt alleen vergrendeld door simkaarten van Sprint</string>
     <string name="uicc_unlock">UICC ontgrendelen</string>
@@ -5240,10 +5401,16 @@ Een benadering van Google voor de synchronisatie van gegevens, zodat je altijd e
     <string name="uninstall_failed_device_policy_manager">Kan niet verwijderen omdat dit pakket een actieve beheerder is van het toestel.</string>
     <string name="uninstall_failed_device_policy_manager_of_user">Kan niet verwijderen omdat dit pakket een actieve beheerder is van het toestel voor de gebruiker %1$s.</string>
     <string name="uninstall_failure_notification_channel">Mislukte verwijderingen</string>
+    <string name="uninstall_multiple_apps">Bulkbewerkingen</string>
     <string name="uninstall_text">Verwijderen</string>
     <string name="uninstall_update_text">Deze app vervangen met de fabrieksversie? Alle gegevens worden verwijderd.</string>
     <string name="uninstall_update_text_multiuser">Deze app met de fabrieksversie vervangen? Alle gegevens worden verwijderd. Dit beïnvloedt alle gebruikers van dit toestel, inclusief deze met werkprofielen.</string>
     <string name="uninstall_update_title">Update verwijderen</string>
+    <string name="uninstallapps_confirm">Bevestigen</string>
+    <string name="uninstallapps_confirm_dialog_body">Alle geselecteerde apps en alle aan het app-pakket gekoppelde bestanden worden verwijderd.</string>
+    <string name="uninstallapps_confirm_dialog_title">Geselecteerde apps verwijderen?</string>
+    <string name="uninstallapps_selected">geselecteerd</string>
+    <string name="uninstallapps_toast_message">apps zijn verwijderd</string>
     <string name="uninstalling">Verwijderen…</string>
     <string name="uninstalling_notification_channel">Verwijderingen uitvoeren</string>
     <string name="unknown">Onbekend</string>
@@ -5325,6 +5492,12 @@ Je opgeslagen vingerafdrukken worden ook verwijderd uit dit profiel. Het is dan 
     <string name="unsupported_setting_summary">Instelling wordt niet ondersteund op deze telefoon</string>
     <string name="update_prl">PRL bijwerken</string>
     <string name="update_profile">Profiel bijwerken</string>
+    <string name="upstream_type_auto">Automatisch overschakelen</string>
+    <string name="upstream_type_auto_summary">Automatisch overschakelen naar de mobiele dataverbinding wanneer de wifi-verbinding wordt verbroken</string>
+    <string name="upstream_type_cell">Alleen mobiele data wordt gedeeld</string>
+    <string name="upstream_type_cell_summary">Wanneer mobiele data is uitgeschakeld of de mobiele dataverbinding wordt verbroken, wordt delen uitgeschakeld</string>
+    <string name="upstream_type_wifi">Alleen wifi wordt gedeeld</string>
+    <string name="upstream_type_wifi_summary">Wanneer de wifi-verbinding wordt verbroken, wordt delen uitgeschakeld</string>
     <string name="usage">Gebruik</string>
     <string name="usage_access">Gebruikstoegang</string>
     <string name="usage_access_description">Met gebruikstoegang kan een app bijhouden welke andere apps je gebruikt (en hoe vaak), welke provider je hebt, je taalinstellingen en andere details.</string>
@@ -5468,7 +5641,7 @@ Elke gebruiker kan apps updaten voor alle andere gebruikers."</string>
     <string name="user_exit_guest_confirm_title">Gast verwijderen?</string>
     <string name="user_exit_guest_dialog_remove">Verwijderen</string>
     <string name="user_exit_guest_title">Gast verwijderen</string>
-    <string name="user_experience">Programma voor betere gebruikerservaring</string>
+    <string name="user_experience">Programma voor een betere gebruikerservaring</string>
     <string name="user_experience_description">Toestaan dat OnePlus anoniem algemene statistische gegevens analyseert over hoe u uw telefoon gebruikt om ons te helpen het productontwerp en de gebruikerservaring te verbeteren</string>
     <string name="user_guest">Gast</string>
     <string name="user_image_choose_photo">Een afbeelding kiezen</string>
@@ -5510,6 +5683,9 @@ Elke gebruiker kan apps updaten voor alle andere gebruikers."</string>
     <string name="v7_preference_on">AAN</string>
     <string name="verify_apps_over_usb_summary">Apps die zijn geïnstalleerd via ADB/ADT, controleren op schadelijk gedrag</string>
     <string name="verify_apps_over_usb_title">Apps verifiëren via USB</string>
+    <string name="verizon_store_demo_mode_hint">Voer het wachtwoord in</string>
+    <string name="verizon_store_demo_mode_title">Verizon Store Demo Mode</string>
+    <string name="verizon_wifi_tether_band_warning">Als u de instellingen van Mobiele hotspot wijzigt, wordt de verbinding met alle apparaten die momenteel zijn verbonden met de Mobiele hotspot verbroken.</string>
     <string name="version_text">versie %1$s</string>
     <string name="vibrate_in_silent_title">Trillen indien stil</string>
     <string name="vibrate_input_devices">Trilling omleiden</string>
@@ -5626,6 +5802,8 @@ Elke gebruiker kan apps updaten voor alle andere gebruikers."</string>
     <string name="wallpaper_settings_title">Achtergrond</string>
     <string name="wallpaper_suggestion_summary">Je scherm personaliseren</string>
     <string name="wallpaper_suggestion_title">Achtergrond wijzigen</string>
+    <string name="warning_title">Waarschuwing</string>
+    <string name="warranty_date_code">Garantiedatum</string>
     <string name="web_action_enable_summary">Links openen in apps, zelfs als deze niet zijn geïnstalleerd</string>
     <string name="web_action_enable_title">Instant-apps</string>
     <string name="web_action_section_title">Instant-apps</string>
@@ -5940,8 +6118,17 @@ Dit toestaan voor alle apps die willen scannen?"</string>
     <string name="wifi_tether_custom_auto_turn_off_always_summary">Altijd aan</string>
     <string name="wifi_tether_enabled_subtext">%1$s is actief</string>
     <string name="wifi_tether_failed_subtext">Fout met draagbare wifi-hotspot</string>
+    <string name="wifi_tether_passphrase_warning">Ten minste 8 tekens en moet minimaal 1 letter, 1 cijfer en 1 symbool bevatten</string>
     <string name="wifi_tether_starting">Hotspot inschakelen…</string>
     <string name="wifi_tether_stopping">Hotspot uitschakelen…</string>
+    <string name="wifi_tether_upstream_network_type_config">Instellingen voor delen</string>
+    <string name="wifi_tether_upstream_network_type_title">Instellingen voor delen</string>
+    <string name="wifi_tether_verizon_custom_auto_turn_off_10_min_summary">Na 10 minuten van inactiviteit</string>
+    <string name="wifi_tether_verizon_custom_auto_turn_off_20_min_summary">Na 20 minuten inactiviteit</string>
+    <string name="wifi_tether_verizon_custom_auto_turn_off_30_min_summary">Na 30 minuten inactiviteit</string>
+    <string name="wifi_tether_verizon_custom_auto_turn_off_5_min_summary">Na 5 minuten van inactiviteit</string>
+    <string name="wifi_tether_verizon_custom_auto_turn_off_60_min_summary">Na 60 minuten inactiviteit</string>
+    <string name="wifi_tether_verizon_custom_auto_turn_off_always_summary">Altijd aan</string>
     <string name="wifi_turned_on_message">Wifi ingeschakeld</string>
     <string name="wifi_unchanged">(ongewijzigd)</string>
     <string name="wifi_unmetered_label">Gratis</string>
@@ -5984,8 +6171,8 @@ Dit toestaan voor alle apps die willen scannen?"</string>
     <string name="wizard_finish">Voltooien</string>
     <string name="wizard_next">Volgende</string>
     <string name="work_alarm_ringtone_title">Standaard alarmgeluid voor werk</string>
-    <string name="work_life_balance">Balans werk-privé</string>
-    <string name="work_life_disabled_toast">De functie Balans werk-privé is uitgeschakeld.</string>
+    <string name="work_life_balance">Werk-privébalans</string>
+    <string name="work_life_disabled_toast">De functie Werk-privébalans is uitgeschakeld.</string>
     <string name="work_mode_label">Werkprofiel</string>
     <string name="work_mode_off_summary">Apps en meldingen zijn uitgeschakeld</string>
     <string name="work_mode_on_summary">Beheerd door je organisatie</string>

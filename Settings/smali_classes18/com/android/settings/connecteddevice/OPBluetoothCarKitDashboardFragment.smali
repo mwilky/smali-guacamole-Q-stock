@@ -141,7 +141,7 @@
     .annotation build Landroid/support/annotation/VisibleForTesting;
     .end annotation
 
-    const v0, 0x7f120bb2
+    const v0, 0x7f120bfc
 
     invoke-virtual {p1, v0}, Landroidx/preference/Preference;->setTitle(I)V
 

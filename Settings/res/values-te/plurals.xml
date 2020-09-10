@@ -224,6 +224,10 @@
         <item quantity="other">%d సెకండ్లలో తిరిగి ప్రయత్నించండి.</item>
         <item quantity="one">%d సెకండ్లో తిరిగి ప్రయత్నించండి.</item>
     </plurals>
+    <plurals name="oneplus_zen_mode_duration_summary_time_hours">
+        <item quantity="other">%d గంటలు (ఆటోమేటిక్‌గా ఆన్ అయితే మినహా)</item>
+        <item quantity="one">1 గంట (ఆటోమేటిక్‌గా ఆన్ అయితే మినహా)</item>
+    </plurals>
     <plurals name="permission_bar_chart_label">
         <item quantity="other">%s యాప్‌లు</item>
         <item quantity="one">1 యాప్</item>

@@ -78,7 +78,7 @@
     :cond_0
     iget-object v1, p0, Lcom/android/settings/backup/ConfigureAccountPreferenceController;->mContext:Landroid/content/Context;
 
-    const v2, 0x7f12021a
+    const v2, 0x7f12022a
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 

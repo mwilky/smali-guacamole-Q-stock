@@ -69,7 +69,7 @@
 
     iget-object v0, p0, Lcom/android/settings/ResetNetwork;->mContentView:Landroid/view/View;
 
-    const v1, 0x7f0a05a6
+    const v1, 0x7f0a05a7
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -384,7 +384,7 @@
     :goto_2
     iget-object v0, p0, Lcom/android/settings/ResetNetwork;->mContentView:Landroid/view/View;
 
-    const v1, 0x7f0a031c
+    const v1, 0x7f0a0321
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -452,7 +452,7 @@
 
     invoke-direct {v1, v2, p0}, Lcom/android/settings/password/ChooseLockSettingsHelper;-><init>(Landroid/app/Activity;Landroidx/fragment/app/Fragment;)V
 
-    const v2, 0x7f12122c
+    const v2, 0x7f1212db
 
     invoke-virtual {v0, v2}, Landroid/content/res/Resources;->getText(I)Ljava/lang/CharSequence;
 
@@ -574,7 +574,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f12122c
+    const v1, 0x7f1212db
 
     invoke-virtual {v0, v1}, Landroidx/fragment/app/FragmentActivity;->setTitle(I)V
 
@@ -668,7 +668,7 @@
     return-object v2
 
     :cond_1
-    const v2, 0x7f0d0298
+    const v2, 0x7f0d0299
 
     invoke-virtual {p1, v2, v4}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;)Landroid/view/View;
 
@@ -785,7 +785,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f121227
+    const v2, 0x7f1212d6
 
     invoke-virtual {v1, v2}, Lcom/android/settings/core/SubSettingLauncher;->setTitleRes(I)Lcom/android/settings/core/SubSettingLauncher;
 

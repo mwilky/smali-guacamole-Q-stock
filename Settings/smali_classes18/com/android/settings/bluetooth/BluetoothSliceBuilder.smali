@@ -73,7 +73,7 @@
 .method public static getIntent(Landroid/content/Context;)Landroid/content/Intent;
     .locals 5
 
-    const v0, 0x7f120388
+    const v0, 0x7f12039b
 
     invoke-virtual {p0, v0}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
@@ -155,7 +155,7 @@
 
     move-result v0
 
-    const v1, 0x7f120386
+    const v1, 0x7f120399
 
     invoke-virtual {p0, v1}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 

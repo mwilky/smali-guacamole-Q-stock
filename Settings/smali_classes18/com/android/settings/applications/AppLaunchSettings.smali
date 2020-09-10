@@ -122,7 +122,7 @@
 
     new-array v4, v3, [Ljava/lang/CharSequence;
 
-    const v5, 0x7f12016f
+    const v5, 0x7f12017f
 
     invoke-virtual {p0, v5}, Lcom/android/settings/applications/AppLaunchSettings;->getString(I)Ljava/lang/String;
 
@@ -130,7 +130,7 @@
 
     aput-object v5, v4, v2
 
-    const v5, 0x7f120170
+    const v5, 0x7f120180
 
     invoke-virtual {p0, v5}, Lcom/android/settings/applications/AppLaunchSettings;->getString(I)Ljava/lang/String;
 
@@ -138,7 +138,7 @@
 
     aput-object v5, v4, v1
 
-    const v5, 0x7f120171
+    const v5, 0x7f120181
 
     invoke-virtual {p0, v5}, Lcom/android/settings/applications/AppLaunchSettings;->getString(I)Ljava/lang/String;
 

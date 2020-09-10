@@ -675,7 +675,7 @@
 
     const/4 v7, 0x4
 
-    const v8, 0x7f1212ff
+    const v8, 0x7f1213bb
 
     invoke-virtual {p0, v8}, Lcom/android/settings/biometrics/face/FaceSettings;->getString(I)Ljava/lang/String;
 

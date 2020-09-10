@@ -79,7 +79,7 @@
 .method protected getLayout()Lcom/google/android/setupdesign/GlifLayout;
     .locals 1
 
-    const v0, 0x7f0a0615
+    const v0, 0x7f0a0616
 
     invoke-virtual {p0, v0}, Lcom/android/settings/biometrics/face/FingerprintEnrollBase;->findViewById(I)Landroid/view/View;
 
@@ -93,7 +93,7 @@
 .method protected getNextButton()Lcom/oneplus/lib/widget/button/OPButton;
     .locals 1
 
-    const v0, 0x7f0a0432
+    const v0, 0x7f0a0437
 
     invoke-virtual {p0, v0}, Lcom/android/settings/biometrics/face/FingerprintEnrollBase;->findViewById(I)Landroid/view/View;
 

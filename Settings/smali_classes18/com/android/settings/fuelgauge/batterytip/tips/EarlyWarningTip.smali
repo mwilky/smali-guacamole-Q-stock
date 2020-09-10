@@ -63,12 +63,12 @@
 
     if-ne v0, v1, :cond_0
 
-    const v0, 0x7f0801ab
+    const v0, 0x7f0801b4
 
     goto :goto_0
 
     :cond_0
-    const v0, 0x7f0801a9
+    const v0, 0x7f0801b2
 
     :goto_0
     return v0
@@ -105,12 +105,12 @@
 
     if-ne v0, v1, :cond_0
 
-    const v0, 0x7f120296
+    const v0, 0x7f1202a6
 
     goto :goto_0
 
     :cond_0
-    const v0, 0x7f120298
+    const v0, 0x7f1202a8
 
     :goto_0
     invoke-virtual {p1, v0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
@@ -131,12 +131,12 @@
 
     if-ne v0, v1, :cond_0
 
-    const v0, 0x7f120297
+    const v0, 0x7f1202a7
 
     goto :goto_0
 
     :cond_0
-    const v0, 0x7f120299
+    const v0, 0x7f1202a9
 
     :goto_0
     invoke-virtual {p1, v0}, Landroid/content/Context;->getString(I)Ljava/lang/String;

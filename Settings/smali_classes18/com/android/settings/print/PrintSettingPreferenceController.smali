@@ -191,7 +191,7 @@
 
     move-result-object v4
 
-    const v5, 0x7f10003c
+    const v5, 0x7f10003d
 
     new-array v3, v3, [Ljava/lang/Object;
 
@@ -235,7 +235,7 @@
 
     move-result-object v6
 
-    const v7, 0x7f10003d
+    const v7, 0x7f10003e
 
     new-array v3, v3, [Ljava/lang/Object;
 
@@ -255,7 +255,7 @@
     :goto_1
     iget-object v2, p0, Lcom/android/settings/print/PrintSettingPreferenceController;->mContext:Landroid/content/Context;
 
-    const v3, 0x7f121179
+    const v3, 0x7f121228
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 

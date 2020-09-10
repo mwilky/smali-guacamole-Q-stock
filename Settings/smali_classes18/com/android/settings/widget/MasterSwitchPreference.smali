@@ -25,7 +25,7 @@
 
     iput-boolean v0, p0, Lcom/android/settings/widget/MasterSwitchPreference;->mEnableSwitch:Z
 
-    const v0, 0x7f0d01fd
+    const v0, 0x7f0d01fe
 
     invoke-virtual {p0, v0}, Lcom/android/settings/widget/MasterSwitchPreference;->setLayoutResource(I)V
 
@@ -58,7 +58,7 @@
 
     iput-boolean v0, p0, Lcom/android/settings/widget/MasterSwitchPreference;->mEnableSwitch:Z
 
-    const v0, 0x7f0d01fd
+    const v0, 0x7f0d01fe
 
     invoke-virtual {p0, v0}, Lcom/android/settings/widget/MasterSwitchPreference;->setLayoutResource(I)V
 
@@ -91,7 +91,7 @@
 
     iput-boolean v0, p0, Lcom/android/settings/widget/MasterSwitchPreference;->mEnableSwitch:Z
 
-    const v0, 0x7f0d01fd
+    const v0, 0x7f0d01fe
 
     invoke-virtual {p0, v0}, Lcom/android/settings/widget/MasterSwitchPreference;->setLayoutResource(I)V
 
@@ -124,7 +124,7 @@
 
     iput-boolean v0, p0, Lcom/android/settings/widget/MasterSwitchPreference;->mEnableSwitch:Z
 
-    const v0, 0x7f0d01fd
+    const v0, 0x7f0d01fe
 
     invoke-virtual {p0, v0}, Lcom/android/settings/widget/MasterSwitchPreference;->setLayoutResource(I)V
 
@@ -179,7 +179,7 @@
 .method protected getSecondTargetResId()I
     .locals 1
 
-    const v0, 0x7f0d027c
+    const v0, 0x7f0d027d
 
     return v0
 .end method
@@ -234,7 +234,7 @@
     invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     :cond_0
-    const v1, 0x7f0a06a2
+    const v1, 0x7f0a06a3
 
     invoke-virtual {p1, v1}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 

@@ -586,8 +586,13 @@
     <item type="id" name="fnatic_wallpaper_layout" />
     <item type="id" name="fnatic_wallpapers_ScrollView" />
     <item type="id" name="fnatic_wallpapers_viewpager" />
+    <item type="id" name="font" />
+    <item type="id" name="font_content" />
+    <item type="id" name="font_flag" />
     <item type="id" name="font_label" />
+    <item type="id" name="font_style_recyclerview" />
     <item type="id" name="font_switch" />
+    <item type="id" name="font_title" />
     <item type="id" name="footer" />
     <item type="id" name="footerLeftButton" />
     <item type="id" name="footerRightButton" />
@@ -1017,10 +1022,6 @@
     <item type="id" name="notification_group" />
     <item type="id" name="notification_main_column" />
     <item type="id" name="notification_main_column_container" />
-    <item type="id" name="notofont" />
-    <item type="id" name="notofont_content" />
-    <item type="id" name="notofont_flag" />
-    <item type="id" name="notofont_title" />
     <item type="id" name="number" />
     <item type="id" name="numberPicker" />
     <item type="id" name="number_label" />
@@ -1053,10 +1054,6 @@
     <item type="id" name="oneplus_theme_preset_dark" />
     <item type="id" name="oneplus_theme_preset_light" />
     <item type="id" name="oneplus_theme_preset_mcl" />
-    <item type="id" name="oneplusfont" />
-    <item type="id" name="oneplusfont_content" />
-    <item type="id" name="oneplusfont_flag" />
-    <item type="id" name="oneplusfont_title" />
     <item type="id" name="oos_headers_title" />
     <item type="id" name="op_advanced_dnd_container" />
     <item type="id" name="op_app_entities_header" />
@@ -1239,6 +1236,10 @@
     <item type="id" name="preview_container" />
     <item type="id" name="preview_pager" />
     <item type="id" name="preview_text" />
+    <item type="id" name="preview_text1" />
+    <item type="id" name="preview_text2" />
+    <item type="id" name="preview_text3" />
+    <item type="id" name="preview_text4" />
     <item type="id" name="preview_title" />
     <item type="id" name="preview_view" />
     <item type="id" name="preview_viewpager" />

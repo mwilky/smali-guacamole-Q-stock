@@ -89,7 +89,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f12095f
+    const v2, 0x7f12099b
 
     invoke-virtual {v1, v2}, Lcom/android/settings/core/SubSettingLauncher;->setTitleRes(I)Lcom/android/settings/core/SubSettingLauncher;
 
@@ -220,7 +220,7 @@
 
     iget-object v0, p0, Lcom/android/settings/security/ChangeProfileScreenLockPreferenceController;->mContext:Landroid/content/Context;
 
-    const v1, 0x7f120969
+    const v1, 0x7f1209a5
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

@@ -2648,7 +2648,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f120156
+    const v1, 0x7f120166
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
 
@@ -2923,7 +2923,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f12122f
+    const v2, 0x7f1212e4
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -2966,7 +2966,7 @@
 
     move-result-object v0
 
-    const v2, 0x7f120a36
+    const v2, 0x7f120a73
 
     invoke-virtual {v0, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -2978,7 +2978,7 @@
 
     move-result-object v0
 
-    const v3, 0x7f080196
+    const v3, 0x7f08019f
 
     invoke-interface {v0, v3}, Landroid/view/MenuItem;->setIcon(I)Landroid/view/MenuItem;
 
@@ -2993,7 +2993,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f120a3c
+    const v3, 0x7f120a79
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 

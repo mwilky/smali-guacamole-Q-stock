@@ -65,7 +65,7 @@
 
     iget-object v0, p0, Landroidx/preference/PreferenceViewHolder;->mCachedViews:Landroid/util/SparseArray;
 
-    const v1, 0x7f0a02f2
+    const v1, 0x7f0a02f7
 
     invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

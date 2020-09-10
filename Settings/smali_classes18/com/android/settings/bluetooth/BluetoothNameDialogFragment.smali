@@ -339,7 +339,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f12036e
+    const v2, 0x7f120381
 
     new-instance v3, Lcom/android/settings/bluetooth/-$$Lambda$BluetoothNameDialogFragment$pGuotXbZkr5ej_7pdbB840goZcw;
 

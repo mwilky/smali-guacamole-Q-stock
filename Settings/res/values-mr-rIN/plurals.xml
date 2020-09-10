@@ -8,4 +8,8 @@
         <item quantity="other">%d सेकंदांमध्ये पुन्हा प्रयत्न करा.</item>
         <item quantity="one">%d सेकंदात पुन्हा प्रयत्न करा.</item>
     </plurals>
+    <plurals name="oneplus_zen_mode_duration_summary_time_hours">
+        <item quantity="other">1 तास (स्वयंचलितपणे चालू केल्याशिवाय)</item>
+        <item quantity="one">1 तास (स्वयंचलितपणे चालू केल्याशिवाय)</item>
+    </plurals>
 </resources>
