@@ -4,6 +4,6 @@
 
 
 # static fields
-.field public static final colorControlHighlight:I = 0x7f040093
+.field public static final colorControlHighlight:I = 0x7f040094
 
-.field public static final sliceViewStyle:I = 0x7f04034f
+.field public static final sliceViewStyle:I = 0x7f040354

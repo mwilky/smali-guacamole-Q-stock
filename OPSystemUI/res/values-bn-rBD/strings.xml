@@ -13,6 +13,9 @@
     <string name="accessibility_quick_settings_night_mode_changed_on">রাত্রি মোড চালু আছে।</string>
     <string name="accessibility_quick_settings_power_saving_changed_off">ব্যাটারি সেভার মোড বন্ধ আছে।</string>
     <string name="accessibility_quick_settings_power_saving_changed_on">ব্যাটারি সেভার মোড চালু আছে।</string>
+    <string name="accessibility_work_life_balance_mode">ওয়ার্ক লাইফ ব্যালেন্স</string>
+    <string name="accessibility_work_life_balance_mode_off">ওয়ার্ক লাইফ ব্যালেন্স মোড বন্ধ আছে।</string>
+    <string name="accessibility_work_life_balance_mode_on">ওয়ার্ক লাইফ ব্যালেন্স মোড চালু আছে।</string>
     <string name="activity_not_available">অ্যাপ উপলব্ধ নয়</string>
     <string name="allow_notification">বিজ্ঞপ্তির অনুমতি দিন</string>
     <string name="battery_low_warning">%s বাকি আছে, ব্যবহার বাড়াতে ব্যাটারি সেভার চালু করুন</string>
@@ -43,8 +46,8 @@
     <string name="hotspot_operator_dialog_othererror_msg">আপনি Wifi টেদারিং এ সাবস্ক্রাইব করেননি</string>
     <string name="hotspot_operator_dialog_othererror_title">Wifi টেদারিং ত্রুটি</string>
     <string name="interruption_level_game">গেম</string>
-    <string name="interruption_level_movie">চলচ্চিত্র</string>
-    <string name="interruption_level_music">সঙ্গীত</string>
+    <string name="interruption_level_movie">মুভি</string>
+    <string name="interruption_level_music">মিউজিক</string>
     <string name="keyguard_fingerprint_unlock">আনলক করতে আঙ্গুলের ছাপ ব্যবহার করুন</string>
     <string name="keyguard_indication_charging_time_fast_vooc">(সম্পূর্ণ হতে %s)</string>
     <string name="keyguard_plugged_in_charging_warp">%s • Warp চার্জিং</string>
@@ -91,6 +94,7 @@
     <string name="op_notification_channel_summary_low">কম গুরুত্বপূর্ণ বিজ্ঞপ্তিগুলি কোনও শব্দ বা কম্পন ছাড়া।</string>
     <string name="op_notification_section_header_gentle">অন্যান্য বিজ্ঞপ্তি</string>
     <string name="op_notification_silence_title">অন্যান্য</string>
+    <string name="op_qs_dark_mode_tile_label">অন্ধকার মোড</string>
     <string name="op_quick_settings_night_display_label">রাত্রি মোড</string>
     <string name="op_quick_settings_night_display_summary_off">নাইট মোড বন্ধ, চালু করতে আলতো চাপুন</string>
     <string name="op_quick_settings_night_display_summary_on">নাইট মোড চালু, বন্ধ করতে আলতো চাপুন</string>
@@ -115,6 +119,10 @@
     <string name="prevent_view_top_tag_numbuer1">"1. "</string>
     <string name="prevent_view_top_tag_numbuer2">"2. "</string>
     <string name="qs_edit">সম্পাদনা করুন</string>
+    <string name="qs_panel_life_mode">জীবন</string>
+    <string name="qs_panel_none">কোনোটিই নয়</string>
+    <string name="qs_panel_set_up">সেট আপ করুন</string>
+    <string name="qs_panel_work_mode">কাজ</string>
     <string name="quick_launch_exit">প্রস্থান করুন</string>
     <string name="quick_launch_exit_hint">প্রস্থান করতে স্ক্রীনে আঙুল দিয়ে বন্ধ করুন</string>
     <string name="quick_reply">উত্তর দিন</string>
@@ -145,7 +153,7 @@
     <string name="quick_settings_read_mode_label">পঠন মোড</string>
     <string name="quick_settings_read_mode_summary_off">পঠন মোড বন্ধ, চালু করতে আলতো চাপুন</string>
     <string name="quick_settings_read_mode_summary_on">পঠন মোড চালু, বন্ধ করতে আলতো চাপুন</string>
-    <string name="quick_settings_switch_user_storage_insufficient">সঞ্চয়স্থান পূর্ণ আছে, ব্যবহারকারী পাল্টানো যাবে না</string>
+    <string name="quick_settings_switch_user_storage_insufficient">সঞ্চয়স্থান পূর্ণ হয়েছে, ব্যবহারকারী পাল্টানো যাবে না</string>
     <string name="recents_deep_clean_button_text">গভীর স্ক্যান</string>
     <string name="recents_deep_clean_description">ব্যাকগ্রাউন্ড প্রক্রিয়া সাফ করে দেয় যা অনভিপ্রেত ফলাফল দিতে পারে। কিছু অ্যাপ কাজ করা থামাতে পারে এবং আপনি সেগুলি আবার শুরু না করা পর্যন্ত হয়তো বিজ্ঞপ্তি পাবেন না।</string>
     <string name="recents_deep_clean_dialog_checkbox_text">পুনরায় প্রদর্শন করবেন না</string>
@@ -166,7 +174,7 @@
     <string name="select_hours">ঘণ্টা বেছে নিন</string>
     <string name="select_minutes">মিনিট বেছে নিন</string>
     <string name="select_year">বছর বেছে নিন</string>
-    <string name="sim_status_uss_network_roam">রোম</string>
+    <string name="sim_status_uss_network_roam">রোমিং</string>
     <string name="time_picker_header_text">সময় সেট করুন</string>
     <string name="time_picker_hour_label">ঘণ্টা</string>
     <string name="time_picker_input_error">সঠিক সময় লিখুন</string>
@@ -180,6 +188,7 @@
     <string name="volume_footer_slient">নিঃশব্দ করুন</string>
     <string name="volume_footer_vibrate">নীরব (কম্পন)</string>
     <string name="volume_vibrate">কম্পন</string>
+    <string name="work_life_balance_mode">Work-Life Balance</string>
     <string name="zen_important_interruptions">অগ্রাধিকারের বিজ্ঞপ্তি</string>
     <string name="zen_interruption_level_all">সমস্ত বিজ্ঞপ্তি</string>
     <string name="zen_no_interruptions">নিঃশব্দ করুন</string>

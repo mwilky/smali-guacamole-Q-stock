@@ -835,6 +835,8 @@
 
     if-eq v0, p1, :cond_0
 
+    invoke-super {p0, p1}, Lcom/android/settingslib/graph/BatteryMeterDrawableBase;->setPowerSave(Z)V
+
     iput-boolean p1, p0, Lcom/oneplus/battery/OpBatteryMeterDrawable;->mPowerSaveEnabled:Z
 
     invoke-direct {p0}, Lcom/oneplus/battery/OpBatteryMeterDrawable;->updateViews()V

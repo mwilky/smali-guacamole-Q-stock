@@ -1501,9 +1501,25 @@
 
     const/4 v3, 0x5
 
+    if-eq v1, v3, :cond_a
+
+    invoke-static {}, Lcom/oneplus/plugin/OpLsState;->getInstance()Lcom/oneplus/plugin/OpLsState;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Lcom/oneplus/plugin/OpLsState;->getBiometricUnlockController()Lcom/android/systemui/statusbar/phone/BiometricUnlockController;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Lcom/android/systemui/statusbar/phone/BiometricUnlockController;->getMode()I
+
+    move-result v1
+
+    const/4 v3, 0x2
+
     if-ne v1, v3, :cond_3
 
-    return v2
+    goto/16 :goto_0
 
     :cond_3
     iget-object v1, p0, Landroid/widget/FrameLayout;->mContext:Landroid/content/Context;
@@ -1637,6 +1653,10 @@
 
     :cond_9
     return v1
+
+    :cond_a
+    :goto_0
+    return v2
 .end method
 
 .method public onScrimVisibilityChanged(I)V

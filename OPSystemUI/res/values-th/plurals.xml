@@ -17,7 +17,7 @@
         <item quantity="one">โปรดป้อน PIN ของซิม คุณพยายามได้อีก %d ครั้งก่อนที่จะต้องติดต่อผู้ให้บริการเพื่อปลดล็อกอุปกรณ์</item>
     </plurals>
     <plurals name="kg_password_default_pin_message_multi_sim">
-        <item quantity="other">ป้อน PIN ของซิม%1$d คุณลองได้อีก %2$d ครั้งก่อนที่คุณจะต้องติดต่อผู้ให้บริการเพื่อปลดล็อคอุปกรณ์ ป้อน PIN ของซิม%3$d คุณลองได้อีก %4$d ครั้ง</item>
+        <item quantity="other">ป้อน PIN ของซิม%1$d คุณลองได้อีก %2$d ครั้งก่อนที่คุณจะต้องติดต่อผู้ให้บริการเพื่อปลดล็อคอุปกรณ์</item>
         <item quantity="one">Enter SIM%1$d PIN, you have %2$d remaining attempt before you must contact your carrier to unlock your device.</item>
     </plurals>
     <plurals name="kg_password_default_puk_message">
@@ -29,7 +29,7 @@
         <item quantity="one">รหัส PIN ของซิมไม่ถูกต้อง คุณพยายามได้อีก %d ครั้งก่อนที่จะต้องติดต่อผู้ให้บริการเพื่อปลดล็อกอุปกรณ์ของคุณ</item>
     </plurals>
     <plurals name="kg_password_wrong_pin_code_multi_sim">
-        <item quantity="other">รหัส PIN ซิม %1$d ไม่ถูกต้อง คุณลองได้อีก %2$d ครั้งก่อนที่คุณจะต้องติดต่อผู้ให้บริการเพื่อปลดล็อคอุปกรณ์ รหัส PIN ซิม%3$d ไม่ถูกต้อง คุณลองได้อีก %4$d ครั้ง</item>
+        <item quantity="other">รหัส PIN ซิม %1$d ไม่ถูกต้อง คุณลองได้อีก %2$d ครั้งก่อนที่คุณจะต้องติดต่อผู้ให้บริการเพื่อปลดล็อคอุปกรณ์</item>
         <item quantity="one">Incorrect SIM%1$d PIN code, you have %2$d remaining attempt before you must contact your carrier to unlock your device.</item>
     </plurals>
     <plurals name="kg_password_wrong_puk_code">

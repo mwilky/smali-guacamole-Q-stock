@@ -259,6 +259,9 @@
     <string name="accessibility_wimax_signal_full">WiMAX: pełna moc sygnału</string>
     <string name="accessibility_wimax_three_bars">WiMAX: trzy paski</string>
     <string name="accessibility_wimax_two_bars">WiMAX: dwa paski</string>
+    <string name="accessibility_work_life_balance_mode">Równowaga praca-życie osobiste</string>
+    <string name="accessibility_work_life_balance_mode_off">Tryb Równowaga praca-życie osobiste jest wyłączony.</string>
+    <string name="accessibility_work_life_balance_mode_on">Tryb Równowaga praca-życie osobiste jest włączony.</string>
     <string name="accessibility_zero_bars">Zero pasków.</string>
     <string name="active_input_method_subtypes">Aktywne metody wprowadzania</string>
     <string name="activity_launch_on_secondary_display_failed_text">Aplikacja nie obsługuje uruchamiania na dodatkowych ekranach.</string>
@@ -1099,7 +1102,7 @@ Aby dowiedzieć się więcej, skontaktuj się z administratorem.
     <string name="ongoing_privacy_dialog_separator">", "</string>
     <string name="op_earphone_connect">Parowanie...</string>
     <string name="op_earphone_connected_fail">Nie udało się sparować. Możesz sprawdzić status słuchawek i Bluetooth.</string>
-    <string name="op_earphone_connected_success">Sparowano. Dotknij, aby ustawić więcej opcji.</string>
+    <string name="op_earphone_connected_success">Sparowano. Dotknij, aby ustawić więcej.</string>
     <string name="op_earphone_device">DOTKNIJ, ABY SPAROWAĆ</string>
     <string name="op_earphone_title">OnePlus Bullets Wireless</string>
     <string name="op_emergency_indicator_hint_text">Przesuń w dół, aby skontaktować się ze służbami ratunkowymi</string>
@@ -1112,6 +1115,7 @@ Aby dowiedzieć się więcej, skontaktuj się z administratorem.
     <string name="op_notification_channel_summary_low">Mniej ważne powiadomienia bez jakiegokolwiek dźwięku lub wibracji.</string>
     <string name="op_notification_section_header_gentle">Inne powiadomienia</string>
     <string name="op_notification_silence_title">Inne</string>
+    <string name="op_qs_dark_mode_tile_label">Ciemny tryb</string>
     <string name="op_quick_settings_night_display_label">Tryb nocny</string>
     <string name="op_quick_settings_night_display_summary_off">Tryb nocny jest wyłączony. Dotknij, aby włączyć</string>
     <string name="op_quick_settings_night_display_summary_on">Tryb nocny jest włączony. Dotknij, aby wyłączyć</string>
@@ -1137,8 +1141,8 @@ Aby dowiedzieć się więcej, skontaktuj się z administratorem.
 2.Wyłączenie hotspotu
 3.Wyłączenie latarki"</string>
     <string name="overheat_dialog_purple_button">Wyłącz teraz</string>
-    <string name="overheat_dialog_purple_message">Telefon zostanie wyłączony po 5 sekundach</string>
-    <string name="overheat_dialog_red_message">Procesy aplikacji zostaną wyczyszczone, aby obniżyć temperaturę</string>
+    <string name="overheat_dialog_purple_message">Telefon wyłączy się po 5 sekundach</string>
+    <string name="overheat_dialog_red_message">Procesy aplikacji zostaną wyczyszczone, aby obniżyć temperaturę telefonu</string>
     <string name="overheat_dialog_title">Temperatura telefonu jest zbyt wysoka</string>
     <string name="overheat_notification_alert">Temperatura telefonu jest zbyt wysoka. Aby obniżyć temperaturę, wyłączono funkcje wysokiego zużycia energii</string>
     <string name="overheat_notification_resume">Prawidłowa temperatura telefonu została przywrócona i możesz normalnie z niego korzystać</string>
@@ -1241,6 +1245,10 @@ Aby dowiedzieć się więcej, skontaktuj się z administratorem.
     <string name="qs_dnd_replace">Zastąp</string>
     <string name="qs_dnd_until">Do: %s</string>
     <string name="qs_edit">Edytuj</string>
+    <string name="qs_panel_life_mode">Życie osobiste</string>
+    <string name="qs_panel_none">Brak</string>
+    <string name="qs_panel_set_up">Skonfiguruj</string>
+    <string name="qs_panel_work_mode">Praca</string>
     <string name="qs_rearrange">Uporządkuj Szybkie ustawienia</string>
     <string name="qs_status_phone_muted">Telefon jest wyciszony</string>
     <string name="qs_status_phone_vibrate">Włączone wibracje</string>
@@ -1382,7 +1390,7 @@ Oszczędzanie baterii"</string>
     <string name="recents_deep_clean_option">Głębokie czyszczenie</string>
     <string name="recents_empty_no_apps_open">Brak otwartych aplikacji</string>
     <string name="recents_empty_recently_closed">Ostatnio zamknięte aplikacje</string>
-    <string name="recents_normal_clean_description">Czyszczenie listy zadań i pamięci podręcznej bez czyszczenia procesów w tle.</string>
+    <string name="recents_normal_clean_description">Wyczyść listę zadań i pamięć podręczną bez czyszczenia procesów w tle.</string>
     <string name="recents_normal_clean_option">Zwykłe czyszczenie</string>
     <string name="recents_option_note">Możesz zmienić to w Ustawieniach -> Zaawansowane.</string>
     <string name="recents_option_title">Jaki sposób wolisz</string>
@@ -1732,6 +1740,7 @@ Każdy użytkownik może aktualizować aplikacje wszystkich innych użytkownikó
     <string name="wifi_verbose_logging">Szczegółowy dziennik Wi-Fi</string>
     <string name="wifi_verbose_logging_summary">Zwiększ poziom rejestrowania Wi‑Fi, pokazuj według RSSI SSID w selektorze Wi‑Fi</string>
     <string name="window_animation_scale_title">Skala animacji okna</string>
+    <string name="work_life_balance_mode">Równowaga praca-życie osobiste</string>
     <string name="yes_bubbles">Zezwól</string>
     <string name="zen_alarm_warning">Nie usłyszysz swojego następnego alarmu %1$s</string>
     <string name="zen_alarm_warning_indef">Nie usłyszysz swojego następnego alarmu (%1$s), jeśli nie wyłączysz do tego czasu tej funkcji</string>

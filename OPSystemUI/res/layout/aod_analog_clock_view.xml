@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <com.oneplus.aod.OpAnalogClock android:id="@id/analog_clock_view" android:visibility="gone" android:layout_width="@dimen/clock_analog_size" android:layout_height="@dimen/clock_analog_size"
   xmlns:android="http://schemas.android.com/apk/res/android">
-    <View android:id="@id/analog_background" android:background="@drawable/analog_background" android:layout_width="fill_parent" android:layout_height="fill_parent" />
-    <View android:id="@id/analog_min" android:background="@drawable/analog_min" android:layout_width="fill_parent" android:layout_height="fill_parent" />
-    <View android:id="@id/analog_hour" android:background="@drawable/analog_hour" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageView android:layout_gravity="center" android:id="@id/analog_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:adjustViewBounds="true" />
+    <RelativeLayout android:layout_gravity="center_vertical" android:id="@id/analog_date_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layoutDirection="ltr">
+        <TextView android:textSize="@dimen/aod_clock_analog_min2_date_size" android:textColor="#fffafafa" android:id="@id/analog_date_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/aod_clock_min2_date_left" />
+    </RelativeLayout>
+    <View android:id="@id/analog_hour" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <View android:id="@id/analog_min" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <View android:id="@id/analog_sec" android:layout_width="fill_parent" android:layout_height="fill_parent" />
     <View android:id="@id/analog_dot" android:layout_width="fill_parent" android:layout_height="fill_parent" />
     <View android:id="@id/analog_outer" android:layout_width="fill_parent" android:layout_height="fill_parent" />
 </com.oneplus.aod.OpAnalogClock>

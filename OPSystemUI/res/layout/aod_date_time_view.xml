@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <com.oneplus.aod.OpDateTimeView android:orientation="vertical" android:id="@id/date_time_view" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:systemui="http://schemas.android.com/apk/res-auto">
     <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/keyguard_clock_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
         <com.oneplus.aod.OpTextClock android:id="@id/clock_view" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:format12Hour="@string/keyguard_widget_12_hours_format" android:format24Hour="@string/keyguard_widget_24_hours_format" />
         <include layout="@layout/aod_analog_clock_view" />
-        <include layout="@layout/aod_minimalism_clock_view" />
+        <com.oneplus.aod.OpCustomTextClock android:id="@id/custom_clock_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/oneplus_aod_font" android:textAlignment="viewStart" systemui:colorBottom="@color/oneplus_contorl_text_color_primary_dark" systemui:colorTop="@color/op_aod_textclock_top" systemui:gradientEndColor="@color/op_aod_digitalclock_gradient_end" systemui:gradientStartColor="@color/op_aod_digitalclock_gradient_start" systemui:gradientStyle="vertical" systemui:textClockStringTemplate="@string/textclock_template" />
+        <com.oneplus.aod.OpOneRedStyleClock android:textColor="@color/clock_ten_digit_white" android:gravity="center_horizontal" android:id="@id/red_clock_view" android:paddingBottom="@dimen/title_clock_padding" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:format12Hour="@string/keyguard_widget_12_hours_format" android:format24Hour="@string/keyguard_widget_24_hours_format" android:elegantTextHeight="false" android:letterSpacing="0.02" systemui:specialColor="#ffeb0028" style="@style/op_widget_big" />
         <include layout="@layout/aod_keyguard_status_area" />
     </LinearLayout>
 </com.oneplus.aod.OpDateTimeView>

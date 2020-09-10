@@ -104,11 +104,46 @@
 
     invoke-static {v0, v1}, Lcom/oneplus/systemui/biometrics/OpQLController;->access$402(Lcom/oneplus/systemui/biometrics/OpQLController;Ljava/lang/String;)Ljava/lang/String;
 
-    invoke-static {}, Lcom/oneplus/systemui/biometrics/OpQLController;->access$300()Z
+    const-string v0, "debug.ql.wx.mini.program"
+
+    const/4 v1, 0x0
+
+    invoke-static {v0, v1}, Landroid/os/SystemProperties;->getInt(Ljava/lang/String;I)I
 
     move-result v0
 
     if-eqz v0, :cond_0
+
+    iget-object v0, p0, Lcom/oneplus/systemui/biometrics/OpQLController$QLContentObserver;->this$0:Lcom/oneplus/systemui/biometrics/OpQLController;
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    iget-object v2, p0, Lcom/oneplus/systemui/biometrics/OpQLController$QLContentObserver;->this$0:Lcom/oneplus/systemui/biometrics/OpQLController;
+
+    invoke-static {v2}, Lcom/oneplus/systemui/biometrics/OpQLController;->access$400(Lcom/oneplus/systemui/biometrics/OpQLController;)Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v2, "OpenWxMiniProgram:com.tencent.mm;0,"
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-static {v0, v1}, Lcom/oneplus/systemui/biometrics/OpQLController;->access$402(Lcom/oneplus/systemui/biometrics/OpQLController;Ljava/lang/String;)Ljava/lang/String;
+
+    :cond_0
+    invoke-static {}, Lcom/oneplus/systemui/biometrics/OpQLController;->access$300()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -134,7 +169,7 @@
 
     invoke-static {v0, p0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    :cond_0
+    :cond_1
     return-void
 .end method
 

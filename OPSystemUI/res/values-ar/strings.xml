@@ -259,6 +259,9 @@
     <string name="accessibility_wimax_signal_full">‏إشارة WiMAX كاملة.</string>
     <string name="accessibility_wimax_three_bars">‏أشرطة WiMAX الثلاثة.</string>
     <string name="accessibility_wimax_two_bars">‏شريطا WiMAX.</string>
+    <string name="accessibility_work_life_balance_mode">التوازن بين العمل والحياة</string>
+    <string name="accessibility_work_life_balance_mode_off">تم إيقاف تشغيل وضع التوازن بين الحياة والعمل.</string>
+    <string name="accessibility_work_life_balance_mode_on">تم تشغيل وضع التوازن بين الحياة والعمل.</string>
     <string name="accessibility_zero_bars">ليست هناك أشرطة.</string>
     <string name="active_input_method_subtypes">طرق الإدخال النشطة</string>
     <string name="activity_launch_on_secondary_display_failed_text">لا يمكن تشغيل التطبيق على شاشات عرض ثانوية.</string>
@@ -274,7 +277,7 @@
     <string name="alarm_template_far">يوم %1$s</string>
     <string name="allow_mock_location">السماح بمواقع وهمية</string>
     <string name="allow_mock_location_summary">السماح بمواقع وهمية</string>
-    <string name="allow_notification">سماح بالإخطارات</string>
+    <string name="allow_notification">السماح بالإشعارات</string>
     <string name="always_use_accessory">فتح تطبيق %1$s دائمًا عند توصيل %2$s</string>
     <string name="always_use_device">فتح تطبيق %1$s دائمًا عند توصيل %2$s</string>
     <string name="animator_duration_scale_title">طول مدة الرسوم المتحركة</string>
@@ -1030,7 +1033,7 @@
     <string name="music_controls_no_title">بلا عنوان</string>
     <string name="nav_bar">شريط التنقل</string>
     <string name="nav_bar_default">(تلقائي)</string>
-    <string name="nav_bar_guide_positive">فهمت ذلك</string>
+    <string name="nav_bar_guide_positive">حسنًا</string>
     <string name="nav_bar_guide_title">اسحب لأعلى من أسفل لإظهار شريط التنقل. لإيقاف إخفاء التنقل، يُرجى النقر هنا.</string>
     <string name="nav_bar_layout">التنسيق</string>
     <string name="no_application">لا شيء</string>
@@ -1098,7 +1101,7 @@
     <string name="ongoing_privacy_chip_content_single_app">التطبيق %1$s يستخدم %2$s.</string>
     <string name="ongoing_privacy_dialog_last_separator">" و "</string>
     <string name="ongoing_privacy_dialog_separator">"، "</string>
-    <string name="op_earphone_connect">اقتران...</string>
+    <string name="op_earphone_connect">جارِ الاقتران...</string>
     <string name="op_earphone_connected_fail">فشل الاقتران. يمكنك التحقق من حالة سماعة الرأس والبلوتوث.</string>
     <string name="op_earphone_connected_success">مقترن. اضغط لتعيين المزيد.</string>
     <string name="op_earphone_device">اضغط للاقتران</string>
@@ -1113,6 +1116,7 @@
     <string name="op_notification_channel_summary_low">الإشعارات الأقل أهمية دون إصدار صوت أو اهتزاز.</string>
     <string name="op_notification_section_header_gentle">إشعارات أخرى</string>
     <string name="op_notification_silence_title">أخرى</string>
+    <string name="op_qs_dark_mode_tile_label">الوضع الليلي</string>
     <string name="op_quick_settings_night_display_label">الوضع الليلي</string>
     <string name="op_quick_settings_night_display_summary_off">الوضع الليلي قيد إيقاف التشغيل، المس للتشغيل</string>
     <string name="op_quick_settings_night_display_summary_on">الوضع الليلي قيد التشغيل، المس لإيقاف التشغيل</string>
@@ -1135,13 +1139,13 @@
     <string name="overheat_dialog_orange_button">تنفيذ الآن</string>
     <string name="overheat_dialog_orange_message">"سيتم تنفيذ العمليات التالية لخفض درجة الحرارة
 1.تقليل السطوع
-2.إيقاف تشغيل نقطة الاتصال
+2.إيقاف تشغيل نقطة الاتصال 
 3.إيقاف تشغيل المصباح"</string>
-    <string name="overheat_dialog_purple_button">إيقاف التشغيل الآن</string>
-    <string name="overheat_dialog_purple_message">سيتم إيقاف تشغيل الهاتف بعد 5 ثوانٍ</string>
+    <string name="overheat_dialog_purple_button">إيقاف الآن</string>
+    <string name="overheat_dialog_purple_message">سيتم إيقاف الهاتف بعد 5 ثوانٍ</string>
     <string name="overheat_dialog_red_message">ستمسح كافة عمليات التطبيقات لتقليل درجة الحرارة</string>
     <string name="overheat_dialog_title">درجة حرارة هاتفك مرتفعة للغاية</string>
-    <string name="overheat_notification_alert">درجة حرارة هاتفك مرتفعة للغاية، وقد تم إيقاف تشغيل الوظائف ذات الاستهلاك العالي للطاقة لخفض درجة الحرارة</string>
+    <string name="overheat_notification_alert">درجة حرارة هاتفك مرتفعة للغاية، وتم إيقاف تشغيل الوظائف ذات الاستهلاك العالي للطاقة لخفض درجة الحرارة</string>
     <string name="overheat_notification_resume">تمت استعادة درجة حرارة الهاتف ويمكن استخدامه الآن بشكل طبيعي</string>
     <string name="overheat_notification_title_resume">تمت استعادة درجة حرارة الهاتف</string>
     <string name="overheat_toast_content">درجة حرارة هاتفك مرتفعة للغاية، وقد تم إيقاف تشغيل الوظائف مرتفعة الاستهلاك للطاقة لخفض درجة الحرارة</string>
@@ -1242,6 +1246,10 @@
     <string name="qs_dnd_replace">استبدال</string>
     <string name="qs_dnd_until">حتى %s</string>
     <string name="qs_edit">تعديل</string>
+    <string name="qs_panel_life_mode">الحياة</string>
+    <string name="qs_panel_none">لا شيء</string>
+    <string name="qs_panel_set_up">إعداد</string>
+    <string name="qs_panel_work_mode">العمل</string>
     <string name="qs_rearrange">إعادة ترتيب الإعدادات السريعة</string>
     <string name="qs_status_phone_muted">تم كتم الهاتف.</string>
     <string name="qs_status_phone_vibrate">الهاتف في وضع الاهتزاز</string>
@@ -1383,7 +1391,7 @@
     <string name="recents_deep_clean_option">مسح عميق</string>
     <string name="recents_empty_no_apps_open">لا توجد تطبيقات مفتوحة</string>
     <string name="recents_empty_recently_closed">التطبيقات المغلقة مؤخرًا</string>
-    <string name="recents_normal_clean_description">مسح قائمة المهام والذاكرة الخاصة بها دون مسح العمليات التي تتم في الخلفية.</string>
+    <string name="recents_normal_clean_description">مسح قائمة المهام وذاكرة التخزين المؤقت دون مسح عمليات الخلفية.</string>
     <string name="recents_normal_clean_option">المسح العادي</string>
     <string name="recents_option_note">يمكنك تغيير هذا الإعداد في--> خيارات متقدمة.</string>
     <string name="recents_option_title">ما الطريقة التي تفضلها</string>
@@ -1733,6 +1741,7 @@
     <string name="wifi_verbose_logging">‏تفعيل تسجيل Wi‑Fi Verbose</string>
     <string name="wifi_verbose_logging_summary">‏زيادة مستوى تسجيل Wi-Fi، وعرض لكل SSID RSSI في منتقي Wi-Fi</string>
     <string name="window_animation_scale_title">حجم الرسوم المتحركة للنافذة</string>
+    <string name="work_life_balance_mode">Work-Life Balance</string>
     <string name="yes_bubbles">سماح</string>
     <string name="zen_alarm_warning">لن تسمع المنبّه القادم في %1$s</string>
     <string name="zen_alarm_warning_indef">لن تسمع المنبّه القادم في %1$s إلا إذا أوقفت هذا قبل الموعد</string>

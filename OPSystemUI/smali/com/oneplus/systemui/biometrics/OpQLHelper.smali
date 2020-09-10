@@ -40,10 +40,20 @@
     .end annotation
 .end field
 
+.field private mWxMiniProgramAppsName:Ljava/util/ArrayList;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/ArrayList<",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+.end field
+
 
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
-    .locals 2
+    .locals 3
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -70,6 +80,26 @@
     move-result-object v0
 
     iput-object v0, p0, Lcom/oneplus/systemui/biometrics/OpQLHelper;->mPackageManager:Landroid/content/pm/PackageManager;
+
+    new-instance v0, Ljava/util/ArrayList;
+
+    invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v1
+
+    sget v2, Lcom/android/systemui/R$array;->op_wx_mini_program_strings:I
+
+    invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getStringArray(I)[Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-static {v1}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
+
+    move-result-object v1
+
+    invoke-direct {v0, v1}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
+
+    iput-object v0, p0, Lcom/oneplus/systemui/biometrics/OpQLHelper;->mWxMiniProgramAppsName:Ljava/util/ArrayList;
 
     new-instance v0, Ljava/util/ArrayList;
 
@@ -398,6 +428,26 @@
 
     :cond_3
     sget p1, Lcom/android/systemui/R$drawable;->ic_wechat_qrcode:I
+
+    invoke-direct {p0, v0, p1}, Lcom/oneplus/systemui/biometrics/OpQLHelper;->getDrawable(Landroid/content/res/Resources;I)Landroid/graphics/drawable/Drawable;
+
+    move-result-object v0
+
+    :goto_0
+    return-object v0
+.end method
+
+.method private getWxMiniProgramApplicationIcon(I)Landroid/graphics/drawable/Drawable;
+    .locals 1
+
+    const/4 v0, 0x0
+
+    if-eqz p1, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    sget p1, Lcom/android/systemui/R$drawable;->ic_wechat_mini_program_bus:I
 
     invoke-direct {p0, v0, p1}, Lcom/oneplus/systemui/biometrics/OpQLHelper;->getDrawable(Landroid/content/res/Resources;I)Landroid/graphics/drawable/Drawable;
 
@@ -900,7 +950,7 @@
 
     move-result v0
 
-    if-ge v5, v0, :cond_d
+    if-ge v5, v0, :cond_e
 
     invoke-interface {p1, v5}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -1005,7 +1055,7 @@
 
     move-result p1
 
-    if-eqz p1, :cond_d
+    if-eqz p1, :cond_e
 
     aget-object p1, v4, v0
 
@@ -1132,7 +1182,52 @@
     :goto_3
     iput-object p0, v1, Lcom/oneplus/systemui/biometrics/OpQLAdapter$ActionInfo;->mLabel:Ljava/lang/String;
 
+    goto :goto_4
+
     :cond_d
+    aget-object p1, v4, v5
+
+    const-string v2, "OpenWxMiniProgram"
+
+    invoke-virtual {v2, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_e
+
+    aget-object p1, v4, v0
+
+    invoke-static {p1}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
+
+    move-result p1
+
+    iget-object v0, v1, Lcom/oneplus/systemui/biometrics/OpQLAdapter$ActionInfo;->mPackageName:Ljava/lang/String;
+
+    invoke-direct {p0, v0}, Lcom/oneplus/systemui/biometrics/OpQLHelper;->isPackageAvailable(Ljava/lang/String;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_e
+
+    iput p1, v1, Lcom/oneplus/systemui/biometrics/OpQLAdapter$ActionInfo;->mWxMiniProgramWhich:I
+
+    invoke-direct {p0, p1}, Lcom/oneplus/systemui/biometrics/OpQLHelper;->getWxMiniProgramApplicationIcon(I)Landroid/graphics/drawable/Drawable;
+
+    move-result-object v0
+
+    iput-object v0, v1, Lcom/oneplus/systemui/biometrics/OpQLAdapter$ActionInfo;->mAppIcon:Landroid/graphics/drawable/Drawable;
+
+    iget-object p0, p0, Lcom/oneplus/systemui/biometrics/OpQLHelper;->mWxMiniProgramAppsName:Ljava/util/ArrayList;
+
+    invoke-virtual {p0, p1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+
+    move-result-object p0
+
+    check-cast p0, Ljava/lang/String;
+
+    iput-object p0, v1, Lcom/oneplus/systemui/biometrics/OpQLAdapter$ActionInfo;->mLabel:Ljava/lang/String;
+
+    :cond_e
     :goto_4
     return-object v1
 .end method
@@ -1857,7 +1952,7 @@
     :cond_8
     iget-object p0, p0, Lcom/oneplus/systemui/biometrics/OpQLHelper;->mContext:Landroid/content/Context;
 
-    const p1, 0x50d00b4
+    const p1, 0x50d00bc
 
     invoke-static {p0, p1, v2}, Landroid/widget/Toast;->makeText(Landroid/content/Context;II)Landroid/widget/Toast;
 
@@ -1965,6 +2060,27 @@
     invoke-static {p4, p1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
     return p0
+.end method
+
+.method public startWxMiniProgram(I)V
+    .locals 0
+
+    iget-object p0, p0, Lcom/oneplus/systemui/biometrics/OpQLHelper;->mContext:Landroid/content/Context;
+
+    const-class p1, Lcom/android/systemui/statusbar/phone/StatusBar;
+
+    invoke-static {p0, p1}, Lcom/android/systemui/SysUiServiceProvider;->getComponent(Landroid/content/Context;Ljava/lang/Class;)Ljava/lang/Object;
+
+    move-result-object p0
+
+    check-cast p0, Lcom/android/systemui/statusbar/phone/StatusBar;
+
+    if-eqz p0, :cond_0
+
+    invoke-virtual {p0}, Lcom/android/systemui/statusbar/phone/StatusBar;->toggleWxBus()V
+
+    :cond_0
+    return-void
 .end method
 
 .method updateQuickPayIfNeed(ILorg/json/JSONObject;)V

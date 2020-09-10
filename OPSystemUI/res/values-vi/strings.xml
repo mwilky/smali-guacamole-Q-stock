@@ -259,6 +259,9 @@
     <string name="accessibility_wimax_signal_full">Tín hiệu WiMAX đầy đủ.</string>
     <string name="accessibility_wimax_three_bars">WiMAX ba vạch.</string>
     <string name="accessibility_wimax_two_bars">WiMAX hai vạch.</string>
+    <string name="accessibility_work_life_balance_mode">Work-Life Balance</string>
+    <string name="accessibility_work_life_balance_mode_off">Chế độ Work-Life Balance đã tắt.</string>
+    <string name="accessibility_work_life_balance_mode_on">Chế độ Work-Life Balance đã bật.</string>
     <string name="accessibility_zero_bars">0 vạch.</string>
     <string name="active_input_method_subtypes">Phương thức nhập đang hoạt động</string>
     <string name="activity_launch_on_secondary_display_failed_text">Ứng dụng không hỗ trợ khởi chạy trên màn hình phụ.</string>
@@ -1113,6 +1116,7 @@ Bạn cũng được kết nối với VPN. Dịch vụ này có thể giám sá
     <string name="op_notification_channel_summary_low">Những thông báo ít quan trọng hơn không có âm thanh hoặc rung.</string>
     <string name="op_notification_section_header_gentle">Thông báo khác</string>
     <string name="op_notification_silence_title">Khác</string>
+    <string name="op_qs_dark_mode_tile_label">Chế độ tối</string>
     <string name="op_quick_settings_night_display_label">Chế độ ban đêm</string>
     <string name="op_quick_settings_night_display_summary_off">Chế độ Ban đêm đang tắt, chạm để bật</string>
     <string name="op_quick_settings_night_display_summary_on">Chế độ Ban đêm đang bật, chạm để tắt</string>
@@ -1242,6 +1246,10 @@ Bạn cũng được kết nối với VPN. Dịch vụ này có thể giám sá
     <string name="qs_dnd_replace">Thay thế</string>
     <string name="qs_dnd_until">Cho tới %s</string>
     <string name="qs_edit">Chỉnh sửa</string>
+    <string name="qs_panel_life_mode">Cuộc sống</string>
+    <string name="qs_panel_none">Không có</string>
+    <string name="qs_panel_set_up">Thiết lập</string>
+    <string name="qs_panel_work_mode">Công việc</string>
     <string name="qs_rearrange">Sắp xếp lại Cài đặt nhanh</string>
     <string name="qs_status_phone_muted">Điện thoại đang ở chế độ yên lặng</string>
     <string name="qs_status_phone_vibrate">Điện thoại đang ở chế độ rung</string>
@@ -1312,7 +1320,7 @@ Bạn cũng được kết nối với VPN. Dịch vụ này có thể giám sá
     <string name="quick_settings_game_mode_demo_all">các thông báo sẽ bị chặn và các nút điện dung sẽ bị khóa</string>
     <string name="quick_settings_game_mode_demo_button">các nút điện dung sẽ bị khóa</string>
     <string name="quick_settings_game_mode_demo_notification">các thông báo sẽ bị chặn</string>
-    <string name="quick_settings_game_mode_label">Chế độ Chơi Game</string>
+    <string name="quick_settings_game_mode_label">Chế độ chơi game</string>
     <string name="quick_settings_game_mode_summary_off">Chế độ chơi game đang tắt, chạm để bật</string>
     <string name="quick_settings_game_mode_summary_on">Chế độ chơi game đang bật, chạm để tắt</string>
     <string name="quick_settings_header_onboarding_text">Chạm và giữ các biểu tượng để xem thêm tùy chọn khác</string>
@@ -1733,6 +1741,7 @@ Mọi người dùng đều có thể cập nhật ứng dụng cho tất cả n
     <string name="wifi_verbose_logging">Bật ghi nhật ký chi tiết Wi‑Fi</string>
     <string name="wifi_verbose_logging_summary">Tăng mức ghi nhật ký Wi‑Fi, hiển thị mỗi SSID RSSI trong bộ chọn Wi‑Fi</string>
     <string name="window_animation_scale_title">Tỷ lệ hình động của cửa sổ</string>
+    <string name="work_life_balance_mode">Work-Life Balance</string>
     <string name="yes_bubbles">Cho phép</string>
     <string name="zen_alarm_warning">Bạn sẽ không nghe thấy báo thức tiếp theo lúc %1$s của mình</string>
     <string name="zen_alarm_warning_indef">Bạn sẽ không nghe thấy báo thức tiếp theo lúc %1$s của mình trừ khi bạn tắt chức năng này trước</string>

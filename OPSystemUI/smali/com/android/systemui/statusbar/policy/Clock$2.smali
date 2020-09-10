@@ -248,24 +248,13 @@
 
     :cond_4
     :goto_0
-    iget-object p2, p0, Lcom/android/systemui/statusbar/policy/Clock$2;->this$0:Lcom/android/systemui/statusbar/policy/Clock;
-
-    invoke-virtual {p2}, Landroid/widget/TextView;->getHandler()Landroid/os/Handler;
-
-    move-result-object p2
-
-    if-nez p2, :cond_5
-
-    return-void
-
-    :cond_5
     const-string p2, "android.intent.action.TIME_TICK"
 
     invoke-virtual {p1, p2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result p1
 
-    if-eqz p1, :cond_7
+    if-eqz p1, :cond_6
 
     iget-object p1, p0, Lcom/android/systemui/statusbar/policy/Clock$2;->this$0:Lcom/android/systemui/statusbar/policy/Clock;
 
@@ -273,7 +262,7 @@
 
     move-result p1
 
-    if-nez p1, :cond_7
+    if-nez p1, :cond_6
 
     iget-object p1, p0, Lcom/android/systemui/statusbar/policy/Clock$2;->this$0:Lcom/android/systemui/statusbar/policy/Clock;
 
@@ -281,7 +270,7 @@
 
     move-result-object p1
 
-    if-eqz p1, :cond_7
+    if-eqz p1, :cond_6
 
     iget-object p1, p0, Lcom/android/systemui/statusbar/policy/Clock$2;->this$0:Lcom/android/systemui/statusbar/policy/Clock;
 
@@ -299,7 +288,7 @@
 
     move-result p1
 
-    if-eqz p1, :cond_7
+    if-eqz p1, :cond_6
 
     iget-object p1, p0, Lcom/android/systemui/statusbar/policy/Clock$2;->this$0:Lcom/android/systemui/statusbar/policy/Clock;
 
@@ -309,7 +298,7 @@
 
     const/4 p2, 0x3
 
-    if-le p1, p2, :cond_6
+    if-le p1, p2, :cond_5
 
     invoke-static {}, Lcom/android/systemui/statusbar/policy/Clock;->access$100()Ljava/lang/String;
 
@@ -335,7 +324,7 @@
 
     goto :goto_1
 
-    :cond_6
+    :cond_5
     iget-object p1, p0, Lcom/android/systemui/statusbar/policy/Clock$2;->this$0:Lcom/android/systemui/statusbar/policy/Clock;
 
     invoke-static {p1}, Lcom/android/systemui/statusbar/policy/Clock;->access$508(Lcom/android/systemui/statusbar/policy/Clock;)I
@@ -366,8 +355,16 @@
 
     invoke-static {p1, p2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    :cond_7
+    :cond_6
     :goto_1
+    iget-object p1, p0, Lcom/android/systemui/statusbar/policy/Clock$2;->this$0:Lcom/android/systemui/statusbar/policy/Clock;
+
+    invoke-virtual {p1}, Landroid/widget/TextView;->getHandler()Landroid/os/Handler;
+
+    move-result-object p1
+
+    if-eqz p1, :cond_7
+
     iget-object p1, p0, Lcom/android/systemui/statusbar/policy/Clock$2;->this$0:Lcom/android/systemui/statusbar/policy/Clock;
 
     invoke-virtual {p1}, Landroid/widget/TextView;->getHandler()Landroid/os/Handler;
@@ -380,5 +377,6 @@
 
     invoke-virtual {p1, p2}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 
+    :cond_7
     return-void
 .end method

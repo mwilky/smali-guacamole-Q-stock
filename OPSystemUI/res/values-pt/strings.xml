@@ -259,6 +259,9 @@
     <string name="accessibility_wimax_signal_full">Sinal WiMAX completo.</string>
     <string name="accessibility_wimax_three_bars">Três barras do WiMAX.</string>
     <string name="accessibility_wimax_two_bars">Duas barras do WiMAX.</string>
+    <string name="accessibility_work_life_balance_mode">Equilíbrio entre a vida social e o trabalho</string>
+    <string name="accessibility_work_life_balance_mode_off">Modo de Equlíbrio entre a vida social e o trabalho desativado.</string>
+    <string name="accessibility_work_life_balance_mode_on">Modo de Equilíbrio entre a vida social e o trabalho ativado.</string>
     <string name="accessibility_zero_bars">Nenhuma barra.</string>
     <string name="active_input_method_subtypes">Métodos ativos de entrada</string>
     <string name="activity_launch_on_secondary_display_failed_text">O app não é compatível com a inicialização em telas secundárias.</string>
@@ -608,7 +611,7 @@ Se retomar o uso de dados, o serviço poderá ser cobrado."</string>
     <string name="face_unlock_timeout">Muitas tentativas falhadas. Tente novamente mais tarde.</string>
     <string name="failed_to_open_app_settings_toast">Falha ao abrir as configurações de %1$s</string>
     <string name="fingerprint_dialog_touch_sensor">Toque no sensor de impressão digital</string>
-    <string name="fingerprint_not_found">Tentar novamente</string>
+    <string name="fingerprint_not_found">Tente novamente</string>
     <string name="force_allow_on_external">Forçar permissão de apps em armazenamento externo</string>
     <string name="force_allow_on_external_summary">Qualificar apps para gravação em armazenamento externo, independentemente de valores de manifestos</string>
     <string name="force_msaa">Forçar 4x MSAA</string>
@@ -1030,7 +1033,7 @@ Você também está conectado a uma VPN, que pode monitorar sua atividade de red
     <string name="music_controls_no_title">Sem título</string>
     <string name="nav_bar">Barra de navegação</string>
     <string name="nav_bar_default">(padrão)</string>
-    <string name="nav_bar_guide_positive">ENTENDI</string>
+    <string name="nav_bar_guide_positive">PERCEBI</string>
     <string name="nav_bar_guide_title">Deslize para cima a partir de baixo para mostrar a barra de navegação. Para parar de ocultar a barra de navegação, toque aqui.</string>
     <string name="nav_bar_layout">Layout</string>
     <string name="no_application">Nada</string>
@@ -1113,6 +1116,7 @@ Você também está conectado a uma VPN, que pode monitorar sua atividade de red
     <string name="op_notification_channel_summary_low">Notificações menos importantes sem qualquer som ou vibração.</string>
     <string name="op_notification_section_header_gentle">Outras notificações</string>
     <string name="op_notification_silence_title">Outros</string>
+    <string name="op_qs_dark_mode_tile_label">Modo escuro</string>
     <string name="op_quick_settings_night_display_label">Modo noturno</string>
     <string name="op_quick_settings_night_display_summary_off">Modo noturno desativado, toque para ativar</string>
     <string name="op_quick_settings_night_display_summary_on">Modo noturno ativado, toque para desativar</string>
@@ -1242,6 +1246,10 @@ Você também está conectado a uma VPN, que pode monitorar sua atividade de red
     <string name="qs_dnd_replace">Substituir</string>
     <string name="qs_dnd_until">Até %s</string>
     <string name="qs_edit">Editar</string>
+    <string name="qs_panel_life_mode">Vida pessoal</string>
+    <string name="qs_panel_none">Nenhum</string>
+    <string name="qs_panel_set_up">Configurar</string>
+    <string name="qs_panel_work_mode">Trabalho</string>
     <string name="qs_rearrange">Reorganizar \"Configurações rápidas\"</string>
     <string name="qs_status_phone_muted">Smartphone silenciado</string>
     <string name="qs_status_phone_vibrate">Smartphone no modo de vibração</string>
@@ -1356,7 +1364,7 @@ Você também está conectado a uma VPN, que pode monitorar sua atividade de red
     <string name="quick_settings_rssi_label">RSSI</string>
     <string name="quick_settings_secondary_label_until">Até %s</string>
     <string name="quick_settings_settings_label">Configurações</string>
-    <string name="quick_settings_switch_user_storage_insufficient">Armazenamento cheio, não é posível mudar de utilizador</string>
+    <string name="quick_settings_switch_user_storage_insufficient">Armazenamento cheio, não é possível mudar de utilizador</string>
     <string name="quick_settings_tethering_label">Tethering</string>
     <string name="quick_settings_time_label">Hora</string>
     <string name="quick_settings_ui_mode_night_label">Tema escuro</string>
@@ -1733,6 +1741,7 @@ Qualquer usuário pode atualizar apps para os demais usuários."</string>
     <string name="wifi_verbose_logging">Ativar registro detalhado de Wi-Fi</string>
     <string name="wifi_verbose_logging_summary">Aumentar o nível de registro de Wi-Fi; mostrar conforme o RSSI do SSID no seletor de Wi-Fi</string>
     <string name="window_animation_scale_title">Escala de animação da janela</string>
+    <string name="work_life_balance_mode">Equilíbrio trabalho/vida pessoal</string>
     <string name="yes_bubbles">Permitir</string>
     <string name="zen_alarm_warning">Você não ouvirá o próximo alarme às %1$s</string>
     <string name="zen_alarm_warning_indef">Você não ouvirá o próximo alarme às %1$s, a menos que desative essa opção antes desse horário</string>

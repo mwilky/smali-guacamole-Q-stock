@@ -259,6 +259,9 @@
     <string name="accessibility_wimax_signal_full">WiMAX-signalen är full.</string>
     <string name="accessibility_wimax_three_bars">WiMAX: tre staplar.</string>
     <string name="accessibility_wimax_two_bars">WiMAX: två staplar.</string>
+    <string name="accessibility_work_life_balance_mode">Balans mellan arbete och privatliv</string>
+    <string name="accessibility_work_life_balance_mode_off">Läget Balans mellan arbete och privatliv av.</string>
+    <string name="accessibility_work_life_balance_mode_on">Läget Balans mellan arbete och privatliv på.</string>
     <string name="accessibility_zero_bars">Inga staplar.</string>
     <string name="active_input_method_subtypes">Aktiva inmatningsmetoder</string>
     <string name="activity_launch_on_secondary_display_failed_text">Appen kan inte köras på en sekundär skärm.</string>
@@ -274,7 +277,7 @@
     <string name="alarm_template_far">kl. %1$s</string>
     <string name="allow_mock_location">Tillåt skenplatser</string>
     <string name="allow_mock_location_summary">Tillåt skenplatser</string>
-    <string name="allow_notification">Tillåt meddelanden</string>
+    <string name="allow_notification">Tillåt aviseringar</string>
     <string name="always_use_accessory">Öppna alltid %1$s när %2$s är ansluten</string>
     <string name="always_use_device">Öppna alltid %1$s när %2$s är ansluten</string>
     <string name="animator_duration_scale_title">Längdskala för Animator</string>
@@ -530,7 +533,7 @@ Om du fortsätter kan avgifter för dataanvändning tillkomma."</string>
     <string name="debug_monitoring_category">Övervakning</string>
     <string name="debug_networking_category">Nätverk</string>
     <string name="debug_view_attributes">Aktivera inspektion av visningsattribut</string>
-    <string name="delete">Ta bort</string>
+    <string name="delete">Radera</string>
     <string name="demo_mode">Demoläge för systemgränssnitt</string>
     <string name="denoise_notification">Lågprioritetsmeddelande</string>
     <string name="description_direction_left">Dra åt vänster för %s .</string>
@@ -1113,6 +1116,7 @@ Du är även ansluten till ett VPN som kan övervaka nätverksaktivitet."</strin
     <string name="op_notification_channel_summary_low">Mindre viktiga aviseringar utan ljud eller vibration.</string>
     <string name="op_notification_section_header_gentle">Övriga aviseringar</string>
     <string name="op_notification_silence_title">Annan</string>
+    <string name="op_qs_dark_mode_tile_label">Mörkt läge</string>
     <string name="op_quick_settings_night_display_label">Nattläge</string>
     <string name="op_quick_settings_night_display_summary_off">Nattläge är av. Tryck för att sätta på</string>
     <string name="op_quick_settings_night_display_summary_on">Nattläge är på. Tryck för att stänga av</string>
@@ -1242,6 +1246,10 @@ Du är även ansluten till ett VPN som kan övervaka nätverksaktivitet."</strin
     <string name="qs_dnd_replace">Ersätt</string>
     <string name="qs_dnd_until">Till %s</string>
     <string name="qs_edit">Redigera</string>
+    <string name="qs_panel_life_mode">Privatliv</string>
+    <string name="qs_panel_none">Ingen</string>
+    <string name="qs_panel_set_up">Konfigurera</string>
+    <string name="qs_panel_work_mode">Arbete</string>
     <string name="qs_rearrange">Ordna snabbinställningarna</string>
     <string name="qs_status_phone_muted">Ljudet är av på mobilen</string>
     <string name="qs_status_phone_vibrate">Mobilen är inställd på vibration</string>
@@ -1733,6 +1741,7 @@ Alla användare kan uppdatera appar för samtliga användares räkning."</string
     <string name="wifi_verbose_logging">Aktivera utförlig loggning för Wi-Fi</string>
     <string name="wifi_verbose_logging_summary">Öka loggningsnivån för Wi-Fi, visa per SSID RSSI i Wi‑Fi Picker</string>
     <string name="window_animation_scale_title">Skala – fönsteranimering</string>
+    <string name="work_life_balance_mode">Balans mellan arbete och privatliv</string>
     <string name="yes_bubbles">Tillåt</string>
     <string name="zen_alarm_warning">Nästa alarm, kl. %1$s, kommer inte att höras</string>
     <string name="zen_alarm_warning_indef">Nästa alarm, kl. %1$s, kommer inte att höras om du inte inaktiverar detta innan dess</string>

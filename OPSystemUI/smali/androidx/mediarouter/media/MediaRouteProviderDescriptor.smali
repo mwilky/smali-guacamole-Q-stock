@@ -112,7 +112,7 @@
     move-object v0, v3
 
     :cond_2
-    const-string v1, "supportsDynamicGroupRoute"
+    const-string/jumbo v1, "supportsDynamicGroupRoute"
 
     invoke-virtual {p0, v1, v2}, Landroid/os/Bundle;->getBoolean(Ljava/lang/String;Z)Z
 

@@ -4,14 +4,14 @@
 
 
 # static fields
-.field public static final kg_password_default_pin_message:I = 0x7f0f0003
+.field public static final kg_password_default_pin_message:I = 0x7f100003
 
-.field public static final kg_password_default_pin_message_multi_sim:I = 0x7f0f0004
+.field public static final kg_password_default_pin_message_multi_sim:I = 0x7f100004
 
-.field public static final kg_password_default_puk_message:I = 0x7f0f0005
+.field public static final kg_password_default_puk_message:I = 0x7f100005
 
-.field public static final kg_password_wrong_pin_code:I = 0x7f0f0006
+.field public static final kg_password_wrong_pin_code:I = 0x7f100006
 
-.field public static final kg_password_wrong_pin_code_multi_sim:I = 0x7f0f0007
+.field public static final kg_password_wrong_pin_code_multi_sim:I = 0x7f100007
 
-.field public static final kg_password_wrong_puk_code:I = 0x7f0f0008
+.field public static final kg_password_wrong_puk_code:I = 0x7f100008

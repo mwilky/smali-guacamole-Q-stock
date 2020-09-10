@@ -1371,6 +1371,43 @@
     return-void
 .end method
 
+.method public onStartedWakingUp()V
+    .locals 2
+
+    invoke-virtual {p0}, Lcom/oneplus/systemui/statusbar/phone/OpBiometricUnlockController;->isFingerprintAuthenticating()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    iget-boolean v0, p0, Lcom/oneplus/systemui/statusbar/phone/OpBiometricUnlockController;->mIsScreenOffUnlock:Z
+
+    if-nez v0, :cond_0
+
+    invoke-static {}, Lcom/oneplus/util/OpUtils;->isCustomFingerprint()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    const-string v0, "OpBiometricUnlockController"
+
+    const-string v1, "reset panel and fp state due to waking up during fingerprint authenticating"
+
+    invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    const/4 v0, 0x1
+
+    invoke-virtual {p0, v0, v0}, Lcom/oneplus/systemui/statusbar/phone/OpBiometricUnlockController;->changePanelVisibilityByAlpha(IZ)V
+
+    const/4 v0, 0x0
+
+    invoke-virtual {p0, v0, v0}, Lcom/oneplus/systemui/statusbar/phone/OpBiometricUnlockController;->setFingerprintState(ZI)V
+
+    :cond_0
+    return-void
+.end method
+
 .method protected opIsBiometricUnlock()Z
     .locals 2
 

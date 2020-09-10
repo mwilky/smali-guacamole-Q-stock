@@ -1202,7 +1202,7 @@
 .method public stopScreenPinning()V
     .locals 3
 
-    const-string v0, "stopScreenPinning"
+    const-string/jumbo v0, "stopScreenPinning"
 
     invoke-direct {p0, v0}, Lcom/android/systemui/recents/OverviewProxyService$1;->verifyCaller(Ljava/lang/String;)Z
 

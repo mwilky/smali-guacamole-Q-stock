@@ -5641,7 +5641,7 @@
     :goto_1
     packed-switch p1, :pswitch_data_0
 
-    const-string p1, "subscription"
+    const-string/jumbo p1, "subscription"
 
     invoke-virtual {p2, p1, v2}, Landroid/content/Intent;->getIntExtra(Ljava/lang/String;I)I
 
@@ -5923,6 +5923,8 @@
     :cond_9
     :goto_3
     return-void
+
+    nop
 
     :sswitch_data_0
     .sparse-switch

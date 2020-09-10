@@ -259,6 +259,9 @@
     <string name="accessibility_wimax_signal_full">"WiMAX-signaal  is op volle sterkte."</string>
     <string name="accessibility_wimax_three_bars">WiMAX: drie streepjes.</string>
     <string name="accessibility_wimax_two_bars">WiMAX: twee streepjes.</string>
+    <string name="accessibility_work_life_balance_mode">Balans werk-privé</string>
+    <string name="accessibility_work_life_balance_mode_off">Balansmodus werk-privé uitgeschakeld.</string>
+    <string name="accessibility_work_life_balance_mode_on">Balansmodus werk-privé ingeschakeld.</string>
     <string name="accessibility_zero_bars">Geen streepjes.</string>
     <string name="active_input_method_subtypes">Actieve invoermethoden</string>
     <string name="activity_launch_on_secondary_display_failed_text">App kan niet op secundaire displays worden gestart.</string>
@@ -274,7 +277,7 @@
     <string name="alarm_template_far">op %1$s</string>
     <string name="allow_mock_location">Neplocaties toestaan</string>
     <string name="allow_mock_location_summary">Neplocaties toestaan</string>
-    <string name="allow_notification">Notificaties toestaan</string>
+    <string name="allow_notification">Meldingen toestaan</string>
     <string name="always_use_accessory">%1$s altijd openen wanneer %2$s is verbonden</string>
     <string name="always_use_device">%1$s altijd openen wanneer %2$s is verbonden</string>
     <string name="animator_duration_scale_title">Duur van animatieschaal</string>
@@ -1113,6 +1116,7 @@ Je bent ook verbonden met een VPN, waarmee je netwerkactiviteit kan worden gecon
     <string name="op_notification_channel_summary_low">Minder belangrijke meldingen zonder geluid of trillingen.</string>
     <string name="op_notification_section_header_gentle">Overige meldingen</string>
     <string name="op_notification_silence_title">Andere</string>
+    <string name="op_qs_dark_mode_tile_label">Donkere modus</string>
     <string name="op_quick_settings_night_display_label">Nachtmodus</string>
     <string name="op_quick_settings_night_display_summary_off">Nachtmodus uit, tap om in te schakelen</string>
     <string name="op_quick_settings_night_display_summary_on">Nachtmodus aan, tap om uit te schakelen</string>
@@ -1242,6 +1246,10 @@ Je bent ook verbonden met een VPN, waarmee je netwerkactiviteit kan worden gecon
     <string name="qs_dnd_replace">Vervangen</string>
     <string name="qs_dnd_until">Tot %s</string>
     <string name="qs_edit">Bewerken</string>
+    <string name="qs_panel_life_mode">Privé</string>
+    <string name="qs_panel_none">Geen</string>
+    <string name="qs_panel_set_up">Instellen</string>
+    <string name="qs_panel_work_mode">Werk</string>
     <string name="qs_rearrange">Snelle instellingen opnieuw indelen</string>
     <string name="qs_status_phone_muted">Telefoon gedempt</string>
     <string name="qs_status_phone_vibrate">Telefoon op trillen</string>
@@ -1312,7 +1320,7 @@ Je bent ook verbonden met een VPN, waarmee je netwerkactiviteit kan worden gecon
     <string name="quick_settings_game_mode_demo_all">meldingen worden geblokkeerd en capacitieve knoppen wordt vergrendeld</string>
     <string name="quick_settings_game_mode_demo_button">capacitieve knoppen wordt vergrendeld</string>
     <string name="quick_settings_game_mode_demo_notification">meldingen worden geblokkeerd</string>
-    <string name="quick_settings_game_mode_label">Spelmodus</string>
+    <string name="quick_settings_game_mode_label">Gamemodus</string>
     <string name="quick_settings_game_mode_summary_off">Gamemodus uitgeschakeld, tik aan om in te schakelen</string>
     <string name="quick_settings_game_mode_summary_on">Gamemodus ingeschakeld, tik aan om uit te schakelen</string>
     <string name="quick_settings_header_onboarding_text">Tik op pictogrammen en houd ze vast voor meer opties</string>
@@ -1696,7 +1704,7 @@ Elke gebruiker kan apps updaten voor alle andere gebruikers."</string>
     <string name="volume_stream_content_description_vibrate">%1$s. Tik om in te stellen op trillen. Toegankelijkheidsservices kunnen zijn gedempt.</string>
     <string name="volume_stream_content_description_vibrate_a11y">%1$s. Tik om in te stellen op trillen.</string>
     <string name="volume_up_silent">"'Niet storen' afsluiten bij volume omhoog"</string>
-    <string name="volume_vibrate">Vibreren</string>
+    <string name="volume_vibrate">Trillen</string>
     <string name="volume_zen_end_now">Nu uitschakelen</string>
     <string name="vpn_footer">Netwerk kan worden gecontroleerd</string>
     <string name="vpn_settings_not_available">Instellingen voor VPN zijn niet beschikbaar voor deze gebruiker</string>
@@ -1733,6 +1741,7 @@ Elke gebruiker kan apps updaten voor alle andere gebruikers."</string>
     <string name="wifi_verbose_logging">Uitgebreide wifi-logregistratie insch.</string>
     <string name="wifi_verbose_logging_summary">Logniveau voor wifi verhogen, weergeven per SSID RSSI in wifi-kiezer</string>
     <string name="window_animation_scale_title">Venster­animatieschaal</string>
+    <string name="work_life_balance_mode">Werk-privébalans</string>
     <string name="yes_bubbles">Toestaan</string>
     <string name="zen_alarm_warning">Je hoort je volgende wekker niet %1$s</string>
     <string name="zen_alarm_warning_indef">Je hoort je volgende wekker niet %1$s tenzij je dit voor die tijd uitschakelt</string>

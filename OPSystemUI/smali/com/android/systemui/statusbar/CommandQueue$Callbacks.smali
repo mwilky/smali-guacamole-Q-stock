@@ -356,3 +356,9 @@
 
     return-void
 .end method
+
+.method public toggleWxBus()V
+    .locals 0
+
+    return-void
+.end method

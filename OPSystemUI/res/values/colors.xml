@@ -751,6 +751,9 @@
     <color name="oneplus_tab_indicator_color_dark">@color/oneplus_red_color</color>
     <color name="oneplus_tab_indicator_color_light">@color/oneplus_red_color</color>
     <color name="oneplus_white_color">#ffffffff</color>
+    <color name="op_aod_digitalclock_gradient_end">#ff525252</color>
+    <color name="op_aod_digitalclock_gradient_start">#ffbac0cf</color>
+    <color name="op_aod_textclock_top">#ffe8e8e8</color>
     <color name="op_btn_volume_media_icon_bg_dark">#33ffffff</color>
     <color name="op_btn_volume_media_icon_bg_light">@color/oneplus_contorl_bg_color_cardview_light</color>
     <color name="op_button_material_disable_dark">#28ffffff</color>

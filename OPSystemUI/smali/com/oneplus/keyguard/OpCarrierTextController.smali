@@ -881,7 +881,7 @@
 
     const-string v1, "com.android.systemui"
 
-    const-string v4, "string"
+    const-string/jumbo v4, "string"
 
     if-eqz p2, :cond_0
 

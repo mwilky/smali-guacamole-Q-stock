@@ -259,6 +259,9 @@
     <string name="accessibility_wimax_signal_full">Plný signál siete WiMAX.</string>
     <string name="accessibility_wimax_three_bars">Tri stĺpce signálu siete WiMAX.</string>
     <string name="accessibility_wimax_two_bars">Dva stĺpce signálu siete WiMAX.</string>
+    <string name="accessibility_work_life_balance_mode">Rovnováha medzi prácou a súkromím</string>
+    <string name="accessibility_work_life_balance_mode_off">Režim rovnováhy medzi prácou a súkromím je vypnutý.</string>
+    <string name="accessibility_work_life_balance_mode_on">Režim rovnováhy medzi prácou a súkromím je zapnutý.</string>
     <string name="accessibility_zero_bars">Žiadna čiarka.</string>
     <string name="active_input_method_subtypes">Aktívne metódy vstupu</string>
     <string name="activity_launch_on_secondary_display_failed_text">Aplikácia nepodporuje spúšťanie na sekundárnych obrazovkách.</string>
@@ -530,7 +533,7 @@ Ak ho znovu zapnete, môžu vám byť účtované poplatky za spotrebu dát."</s
     <string name="debug_monitoring_category">Monitorovanie</string>
     <string name="debug_networking_category">Siete</string>
     <string name="debug_view_attributes">Kontrola atribútov zobrazenia</string>
-    <string name="delete">Vymazať</string>
+    <string name="delete">Odstrániť</string>
     <string name="demo_mode">Ukážka používateľského rozhrania systému</string>
     <string name="denoise_notification">Upozornenie s nízkou prioritou</string>
     <string name="description_direction_left">Prejdite prstom doľava: %s.</string>
@@ -1113,6 +1116,7 @@ Máte tiež aktívne pripojenie k sieti VPN, ktorá môže sledovať vašu akti
     <string name="op_notification_channel_summary_low">Menej dôležité oznámenia bez zvuku alebo vibrácie.</string>
     <string name="op_notification_section_header_gentle">Ostatné oznámenia</string>
     <string name="op_notification_silence_title">Ostatné</string>
+    <string name="op_qs_dark_mode_tile_label">Tmavý režim</string>
     <string name="op_quick_settings_night_display_label">Nočný režim</string>
     <string name="op_quick_settings_night_display_summary_off">Nočný režim je vypnutý, ťuknutím sa zapne</string>
     <string name="op_quick_settings_night_display_summary_on">Nočný režim je zapnutý, ťuknutím sa vypne</string>
@@ -1242,6 +1246,10 @@ Máte tiež aktívne pripojenie k sieti VPN, ktorá môže sledovať vašu akti
     <string name="qs_dnd_replace">Nahradiť</string>
     <string name="qs_dnd_until">Do %s</string>
     <string name="qs_edit">Upraviť</string>
+    <string name="qs_panel_life_mode">Súkromie</string>
+    <string name="qs_panel_none">Žiadne</string>
+    <string name="qs_panel_set_up">Nastaviť</string>
+    <string name="qs_panel_work_mode">Práca</string>
     <string name="qs_rearrange">Zmeniť usporiadanie rýchlych nastavení</string>
     <string name="qs_status_phone_muted">Telefón má vypnutý zvuk</string>
     <string name="qs_status_phone_vibrate">Telefón má zapnuté vibrovanie</string>
@@ -1383,7 +1391,7 @@ Máte tiež aktívne pripojenie k sieti VPN, ktorá môže sledovať vašu akti
     <string name="recents_deep_clean_option">Dôkladné vyčistenie</string>
     <string name="recents_empty_no_apps_open">Nie sú otvorené žiadne aplikácie</string>
     <string name="recents_empty_recently_closed">Naposledy zatvorené aplikácie</string>
-    <string name="recents_normal_clean_description">Vymaže zoznam úloh a medzipamäť, bez vyčistenia procesov na pozadí.</string>
+    <string name="recents_normal_clean_description">Vymaže zoznam úloh a pamäť cache, bez vyčistenia procesov na pozadí.</string>
     <string name="recents_normal_clean_option">Normálne vyčistenie</string>
     <string name="recents_option_note">Toto môžete zmeniť prejdením do ponuky Nastavenia -> Rozšírené.</string>
     <string name="recents_option_title">Aký spôsob preferujete?</string>
@@ -1733,6 +1741,7 @@ Ktorýkoľvek používateľ môže aktualizovať aplikácie všetkých ostatnýc
     <string name="wifi_verbose_logging">Podrobné denníky Wi‑Fi</string>
     <string name="wifi_verbose_logging_summary">Zvýšiť úroveň denníkov Wi‑Fi, zobrazovať podľa SSID RSSI pri výbere siete Wi‑Fi</string>
     <string name="window_animation_scale_title">Mierka animácie okna</string>
+    <string name="work_life_balance_mode">Work-Life Balance</string>
     <string name="yes_bubbles">Povoliť</string>
     <string name="zen_alarm_warning">Váš budík o %1$s sa nespustí</string>
     <string name="zen_alarm_warning_indef">Pokiaľ toto nastavenie nevypnete, váš budík o %1$s sa nespustí</string>

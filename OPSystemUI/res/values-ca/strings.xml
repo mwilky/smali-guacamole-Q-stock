@@ -259,6 +259,9 @@
     <string name="accessibility_wimax_signal_full">Senyal de WiMAX plena.</string>
     <string name="accessibility_wimax_three_bars">Tres barres de WiMAX.</string>
     <string name="accessibility_wimax_two_bars">Dues barres de WiMAX.</string>
+    <string name="accessibility_work_life_balance_mode">Equilibri treball-vida</string>
+    <string name="accessibility_work_life_balance_mode_off">"El mode d'equilibri treball-vida està desactivat."</string>
+    <string name="accessibility_work_life_balance_mode_on">"El mode d'equilibri treball-vida està activat."</string>
     <string name="accessibility_zero_bars">Cap barra.</string>
     <string name="active_input_method_subtypes">"Mètodes d'introducció actius"</string>
     <string name="activity_launch_on_secondary_display_failed_text">"L'aplicació no es pot obrir en pantalles secundàries."</string>
@@ -1113,6 +1116,7 @@ A més, estàs connectat a una VPN, que també pot supervisar la teva activitat 
     <string name="op_notification_channel_summary_low">Notificacions menys importants sense so o vibració.</string>
     <string name="op_notification_section_header_gentle">Altres notificacions</string>
     <string name="op_notification_silence_title">Altres</string>
+    <string name="op_qs_dark_mode_tile_label">Mode fosc</string>
     <string name="op_quick_settings_night_display_label">Mode nocturn</string>
     <string name="op_quick_settings_night_display_summary_off">Mode nocturn desactivat. Toqueu per activar</string>
     <string name="op_quick_settings_night_display_summary_on">Mode nocturn activat. Toqueu per desactivar</string>
@@ -1134,15 +1138,15 @@ A més, estàs connectat a una VPN, que també pot supervisar la teva activitat 
     <string name="output_title">Sortida de contingut multimèdia</string>
     <string name="overheat_dialog_orange_button">Executa ara</string>
     <string name="overheat_dialog_orange_message">"Es realitzaran aquestes accions per reduir la temperatura
-1. Reduir la brillantor
-2. Desactivar el punt de connexió
-3. Apagar la llanterna"</string>
+1. Redueix la brillantor
+2. Desactiva el punt de connexió
+3. Apaga la llanterna"</string>
     <string name="overheat_dialog_purple_button">Apaga ara</string>
     <string name="overheat_dialog_purple_message">"El telèfon s'apagarà després de 5 segons"</string>
     <string name="overheat_dialog_red_message">"Esborrarà tots els processos d'aplicacions per reduir la temperatura"</string>
-    <string name="overheat_dialog_title">La temperatura del telèfon és massa alta</string>
+    <string name="overheat_dialog_title">La temperatura del vostre telèfon és massa alta</string>
     <string name="overheat_notification_alert">"La temperatura del vostre telèfon és massa alta, i s'han desactivat les funcions de consum d'energia alt per reduir la temperatura"</string>
-    <string name="overheat_notification_resume">"La temperatura del telèfon s'ha restaurat i ja es pot utilitzar amb normalitat"</string>
+    <string name="overheat_notification_resume">"La temperatura del telèfon s'ha restaurat i el telèfon es pot utilitzar amb normalitat"</string>
     <string name="overheat_notification_title_resume">"La temperatura del telèfon s'ha restaurat"</string>
     <string name="overheat_toast_content">"La temperatura del vostre telèfon és massa alta, i s'han desactivat les funcions de consum d'energia alt per reduir la temperatura"</string>
     <string name="overlay_display_devices_title">Simula pantalles secundàries</string>
@@ -1242,6 +1246,10 @@ A més, estàs connectat a una VPN, que també pot supervisar la teva activitat 
     <string name="qs_dnd_replace">Substitueix</string>
     <string name="qs_dnd_until">Fins a les %s</string>
     <string name="qs_edit">Edita</string>
+    <string name="qs_panel_life_mode">Vida</string>
+    <string name="qs_panel_none">Cap</string>
+    <string name="qs_panel_set_up">Configura</string>
+    <string name="qs_panel_work_mode">Treball</string>
     <string name="qs_rearrange">Reorganitza la configuració ràpida</string>
     <string name="qs_status_phone_muted">Telèfon silenciat</string>
     <string name="qs_status_phone_vibrate">Telèfon en mode de vibració</string>
@@ -1312,7 +1320,7 @@ A més, estàs connectat a una VPN, que també pot supervisar la teva activitat 
     <string name="quick_settings_game_mode_demo_all">les notificacions es bloquejaran i els botons capacitius també es bloquejaran</string>
     <string name="quick_settings_game_mode_demo_button">el botons capacitius es bloquejaran</string>
     <string name="quick_settings_game_mode_demo_notification">les notificacions es bloquejaran</string>
-    <string name="quick_settings_game_mode_label">Mode joc</string>
+    <string name="quick_settings_game_mode_label">Mode de joc</string>
     <string name="quick_settings_game_mode_summary_off">Mode de joc desactivat, toqueu per activar-lo</string>
     <string name="quick_settings_game_mode_summary_on">Mode de joc activat, toqueu per desactivar-lo</string>
     <string name="quick_settings_header_onboarding_text">Mantén premudes les icones per veure més opcions</string>
@@ -1696,7 +1704,7 @@ Qualsevol usuari pot actualitzar les aplicacions de la resta d'usuaris."</string
     <string name="volume_stream_content_description_vibrate">"%1$s. Toca per activar la vibració. Pot ser que els serveis d'accessibilitat se silenciïn."</string>
     <string name="volume_stream_content_description_vibrate_a11y">%1$s. Toca per activar la vibració.</string>
     <string name="volume_up_silent">Surt del mode No molestis apujant el volum</string>
-    <string name="volume_vibrate">Vibra</string>
+    <string name="volume_vibrate">Vibració</string>
     <string name="volume_zen_end_now">Desactiva ara</string>
     <string name="vpn_footer">És possible que la xarxa estigui supervisada.</string>
     <string name="vpn_settings_not_available">La configuració de la VPN no està disponible per a aquest usuari.</string>
@@ -1733,6 +1741,7 @@ Qualsevol usuari pot actualitzar les aplicacions de la resta d'usuaris."</string
     <string name="wifi_verbose_logging">Activa el registre Wi‑Fi detallat</string>
     <string name="wifi_verbose_logging_summary">"Augmenta nivell de registre Wi‑Fi, mostra'l per SSID RSSI al selector de Wi‑Fi"</string>
     <string name="window_animation_scale_title">"Escala d'animació finestra"</string>
+    <string name="work_life_balance_mode">Work-Life Balance</string>
     <string name="yes_bubbles">Permet</string>
     <string name="zen_alarm_warning">%1$s no sentiràs la pròxima alarma</string>
     <string name="zen_alarm_warning_indef">Si no desactives aquesta opció abans, no sentiràs la pròxima alarma (%1$s)</string>

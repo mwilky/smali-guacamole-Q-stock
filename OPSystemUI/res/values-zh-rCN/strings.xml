@@ -1097,7 +1097,9 @@
     <string name="op_notification_channel_summary_low">不会发出提示音或振动，可让你保持专注</string>
     <string name="op_notification_section_header_gentle">次要通知</string>
     <string name="op_notification_silence_title">次要</string>
+    <string name="op_qs_dark_mode_tile_label">暗色模式</string>
     <string name="op_quick_settings_night_display_label">夜间模式</string>
+    <string name="op_wx_mini_program_wx_transit">微信乘车码</string>
     <string name="open_saver_setting_action">设置</string>
     <string name="orb_search_action">搜索操作</string>
     <string name="osu_completing_sign_up">正在完成注册…</string>

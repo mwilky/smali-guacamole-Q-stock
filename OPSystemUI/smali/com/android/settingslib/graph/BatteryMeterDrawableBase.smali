@@ -2021,3 +2021,13 @@
 
     return-void
 .end method
+
+.method public setPowerSave(Z)V
+    .locals 0
+
+    iput-boolean p1, p0, Lcom/android/settingslib/graph/BatteryMeterDrawableBase;->mPowerSaveEnabled:Z
+
+    invoke-virtual {p0}, Lcom/android/settingslib/graph/BatteryMeterDrawableBase;->postInvalidate()V
+
+    return-void
+.end method

@@ -259,6 +259,9 @@
     <string name="accessibility_wimax_signal_full">Poln signal WiMAX.</string>
     <string name="accessibility_wimax_three_bars">Signal WiMAX: tri črtice.</string>
     <string name="accessibility_wimax_two_bars">Signal WiMAX: dve črtici.</string>
+    <string name="accessibility_work_life_balance_mode">Ravnovesje med delom in zasebnim življenjem</string>
+    <string name="accessibility_work_life_balance_mode_off">Način ravnovesja med delom in zasebnim življenjem je izključen.</string>
+    <string name="accessibility_work_life_balance_mode_on">Način ravnovesja med delom in zasebnim življenjem je vključen.</string>
     <string name="accessibility_zero_bars">Nič črtic.</string>
     <string name="active_input_method_subtypes">Aktivni načini vnosa</string>
     <string name="activity_launch_on_secondary_display_failed_text">Aplikacija ne podpira zagona na sekundarnih zaslonih.</string>
@@ -608,7 +611,7 @@ Izbor"</string>
     <string name="face_unlock_timeout">Število dovoljenih poskusov je preseženo. Poskusite znova pozneje.</string>
     <string name="failed_to_open_app_settings_toast">Ni mogoče odpreti nastavitev za %1$s</string>
     <string name="fingerprint_dialog_touch_sensor">Dotaknite se tipala prstnih odtisov</string>
-    <string name="fingerprint_not_found">Poskusi znova</string>
+    <string name="fingerprint_not_found">Poskusite znova</string>
     <string name="force_allow_on_external">Vsili omogočanje aplikacij v zunanji shrambi</string>
     <string name="force_allow_on_external_summary">Poskrbi, da je ne glede na vrednosti v manifestu mogoče vsako aplikacijo zapisati v zunanjo shrambo</string>
     <string name="force_msaa">Vsili 4x MSAA</string>
@@ -695,7 +698,7 @@ Ali želite, da se še naprej prikazujejo?"</string>
     <string name="interruption_level_alarms_twoline">"Samo
 alarmi"</string>
     <string name="interruption_level_game">Igre</string>
-    <string name="interruption_level_movie">Filmi</string>
+    <string name="interruption_level_movie">Film</string>
     <string name="interruption_level_music">Glasba</string>
     <string name="interruption_level_none">Popolna tišina</string>
     <string name="interruption_level_none_twoline">"Popolna
@@ -1113,6 +1116,7 @@ Povezani ste tudi z omrežjem VPN, ki lahko nadzira vašo omrežno dejavnost."</
     <string name="op_notification_channel_summary_low">Manj pomembna obvestila brez zvoka ali vibriranja.</string>
     <string name="op_notification_section_header_gentle">Druga obvestila</string>
     <string name="op_notification_silence_title">Drugo</string>
+    <string name="op_qs_dark_mode_tile_label">Zatemnjeni način</string>
     <string name="op_quick_settings_night_display_label">Nočni način</string>
     <string name="op_quick_settings_night_display_summary_off">Izključen nočni način, tapnite za vklop</string>
     <string name="op_quick_settings_night_display_summary_on">Vključen nočni način, tapnite za izklop</string>
@@ -1242,6 +1246,10 @@ Povezani ste tudi z omrežjem VPN, ki lahko nadzira vašo omrežno dejavnost."</
     <string name="qs_dnd_replace">Zamenjaj</string>
     <string name="qs_dnd_until">Do %s</string>
     <string name="qs_edit">Uredi</string>
+    <string name="qs_panel_life_mode">Zasebno življenje</string>
+    <string name="qs_panel_none">Brez</string>
+    <string name="qs_panel_set_up">Namestitev</string>
+    <string name="qs_panel_work_mode">Delo</string>
     <string name="qs_rearrange">Preuredi hitre nastavitve</string>
     <string name="qs_status_phone_muted">Zvok telefona je izklopljen</string>
     <string name="qs_status_phone_vibrate">Vibriranje telefona je vklopljeno</string>
@@ -1696,7 +1704,7 @@ Vsak uporabnik lahko posodobi aplikacije za vse druge uporabnike."</string>
     <string name="volume_stream_content_description_vibrate">%1$s. Dotaknite se, če želite nastaviti vibriranje. V storitvah za ljudi s posebnimi potrebami bo morda izklopljen zvok.</string>
     <string name="volume_stream_content_description_vibrate_a11y">%1$s. Dotaknite se, če želite nastaviti vibriranje.</string>
     <string name="volume_up_silent">Zapustitev načina »ne moti« pri povečanju glasnosti</string>
-    <string name="volume_vibrate">Vibriraj</string>
+    <string name="volume_vibrate">Vibriranje</string>
     <string name="volume_zen_end_now">Izklopi</string>
     <string name="vpn_footer">Omrežje je lahko nadzorovano</string>
     <string name="vpn_settings_not_available">Nastavitve VPN niso na voljo za tega uporabnika</string>
@@ -1733,11 +1741,12 @@ Vsak uporabnik lahko posodobi aplikacije za vse druge uporabnike."</string>
     <string name="wifi_verbose_logging">Omogoči podrobno zapisovanje dnevnika za Wi-Fi</string>
     <string name="wifi_verbose_logging_summary">Povečaj raven zapisovanja dnevnika za Wi-Fi; v izbirniku Wi‑Fi-ja pokaži glede na SSID RSSI</string>
     <string name="window_animation_scale_title">Merilo animacije okna</string>
+    <string name="work_life_balance_mode">Work-Life Balance</string>
     <string name="yes_bubbles">Dovoli</string>
     <string name="zen_alarm_warning">Naslednjega alarma ob %1$s ne boste slišali</string>
     <string name="zen_alarm_warning_indef">Naslednjega alarma ob %1$s ne boste slišali, razen če prej te nastavitve ne izklopite</string>
     <string name="zen_alarms_introduction">Ne bodo vas motili zvoki ali vibriranje, razen v primeru alarmov. Še vedno pa boste slišali vse, kar se boste odločili predvajati, vključno z glasbo, videoposnetki in igrami.</string>
-    <string name="zen_important_interruptions">Pomembna obvestila</string>
+    <string name="zen_important_interruptions">Samo pomembna obvestila</string>
     <string name="zen_interruption_level_all">Vsa obvestila</string>
     <string name="zen_interruption_level_priority">Samo prednostno</string>
     <string name="zen_mode_and_condition">%1$s. %2$s</string>

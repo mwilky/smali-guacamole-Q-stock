@@ -8265,7 +8265,7 @@
 
     const-string v0, "StatusBar"
 
-    const-string v1, "stopTracing"
+    const-string/jumbo v1, "stopTracing"
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
@@ -14832,6 +14832,176 @@
 
     :cond_5
     return v2
+.end method
+
+.method public toggleWxBus()V
+    .locals 10
+
+    const-string v0, "StatusBar"
+
+    const-string/jumbo v1, "toggleWxBus"
+
+    invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
+
+    const/4 v1, 0x1
+
+    const/4 v2, 0x0
+
+    :try_start_0
+    const-string/jumbo v3, "wxaf96fb8d548f8cb7"
+
+    const-string v4, "com.tencent.mm.opensdk.modelbiz.WXLaunchMiniProgram$Req"
+
+    invoke-static {v4}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
+
+    move-result-object v4
+
+    invoke-virtual {v4}, Ljava/lang/Class;->newInstance()Ljava/lang/Object;
+
+    move-result-object v5
+
+    const-string/jumbo v6, "userName"
+
+    const-string v7, "gh_3cf62f4f1d52"
+
+    invoke-static {v4, v5, v6, v7}, Lcom/oneplus/util/OpReflectionUtils;->setValue(Ljava/lang/Class;Ljava/lang/Object;Ljava/lang/String;Ljava/lang/Object;)V
+
+    const-string v6, "path"
+
+    const-string v7, "pages/qrcode/index?noback=1&attach=02_app_yijia&channel=app_yijia"
+
+    invoke-static {v4, v5, v6, v7}, Lcom/oneplus/util/OpReflectionUtils;->setValue(Ljava/lang/Class;Ljava/lang/Object;Ljava/lang/String;Ljava/lang/Object;)V
+
+    const-string v6, "miniprogramType"
+
+    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v7
+
+    invoke-static {v4, v5, v6, v7}, Lcom/oneplus/util/OpReflectionUtils;->setValue(Ljava/lang/Class;Ljava/lang/Object;Ljava/lang/String;Ljava/lang/Object;)V
+
+    const-string v4, "com.tencent.mm.opensdk.openapi.WXAPIFactory"
+
+    invoke-static {v4}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
+
+    move-result-object v4
+
+    const-string v6, "createWXAPI"
+
+    const/4 v7, 0x2
+
+    new-array v8, v7, [Ljava/lang/Class;
+
+    const-class v9, Landroid/content/Context;
+
+    aput-object v9, v8, v2
+
+    const-class v9, Ljava/lang/String;
+
+    aput-object v9, v8, v1
+
+    invoke-static {v4, v6, v8}, Lcom/oneplus/util/OpReflectionUtils;->getMethodWithParams(Ljava/lang/Class;Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+
+    move-result-object v4
+
+    const/4 v6, 0x0
+
+    new-array v7, v7, [Ljava/lang/Object;
+
+    iget-object p0, p0, Lcom/android/systemui/SystemUI;->mContext:Landroid/content/Context;
+
+    aput-object p0, v7, v2
+
+    aput-object v3, v7, v1
+
+    invoke-static {v6, v4, v7}, Lcom/oneplus/util/OpReflectionUtils;->methodInvokeWithArgs(Ljava/lang/Object;Ljava/lang/reflect/Method;[Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p0
+
+    const-string v3, "com.tencent.mm.opensdk.openapi.IWXAPI"
+
+    invoke-static {v3}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
+
+    move-result-object v3
+
+    const-string v4, "sendReq"
+
+    new-array v6, v1, [Ljava/lang/Class;
+
+    invoke-virtual {v5}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    move-result-object v7
+
+    invoke-virtual {v7}, Ljava/lang/Class;->getSuperclass()Ljava/lang/Class;
+
+    move-result-object v7
+
+    aput-object v7, v6, v2
+
+    invoke-static {v3, v4, v6}, Lcom/oneplus/util/OpReflectionUtils;->getMethodWithParams(Ljava/lang/Class;Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+
+    move-result-object v3
+
+    new-array v4, v1, [Ljava/lang/Object;
+
+    aput-object v5, v4, v2
+
+    invoke-static {p0, v3, v4}, Lcom/oneplus/util/OpReflectionUtils;->methodInvokeWithArgs(Ljava/lang/Object;Ljava/lang/reflect/Method;[Ljava/lang/Object;)Ljava/lang/Object;
+    :try_end_0
+    .catch Ljava/lang/ClassNotFoundException; {:try_start_0 .. :try_end_0} :catch_3
+    .catch Ljava/lang/IllegalArgumentException; {:try_start_0 .. :try_end_0} :catch_2
+    .catch Ljava/lang/InstantiationException; {:try_start_0 .. :try_end_0} :catch_1
+    .catch Ljava/lang/IllegalAccessException; {:try_start_0 .. :try_end_0} :catch_0
+
+    goto :goto_1
+
+    :catch_0
+    move-exception p0
+
+    invoke-virtual {p0}, Ljava/lang/IllegalAccessException;->printStackTrace()V
+
+    goto :goto_0
+
+    :catch_1
+    move-exception p0
+
+    invoke-virtual {p0}, Ljava/lang/InstantiationException;->printStackTrace()V
+
+    goto :goto_0
+
+    :catch_2
+    move-exception p0
+
+    invoke-virtual {p0}, Ljava/lang/IllegalArgumentException;->printStackTrace()V
+
+    goto :goto_0
+
+    :catch_3
+    move-exception p0
+
+    invoke-virtual {p0}, Ljava/lang/ClassNotFoundException;->printStackTrace()V
+
+    :goto_0
+    move v1, v2
+
+    :goto_1
+    new-instance p0, Ljava/lang/StringBuilder;
+
+    invoke-direct {p0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v2, "toggleWxBus, isSuccessGetJarAndCall:"
+
+    invoke-virtual {p0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p0
+
+    invoke-static {v0, p0}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
+
+    return-void
 .end method
 
 .method public updateAreThereNotifications()V

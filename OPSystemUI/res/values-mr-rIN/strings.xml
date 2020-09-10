@@ -13,6 +13,9 @@
     <string name="accessibility_quick_settings_night_mode_changed_on">रात्र स्वरूप सुरू केले आहे.</string>
     <string name="accessibility_quick_settings_power_saving_changed_off">बॅटरी सेव्हर स्वरूप बंद आहे.</string>
     <string name="accessibility_quick_settings_power_saving_changed_on">बॅटरी सेव्हर स्वरूप चालू आहे.</string>
+    <string name="accessibility_work_life_balance_mode">कार्य जीवनातील संतुलन</string>
+    <string name="accessibility_work_life_balance_mode_off">कार्य जीवनातील संतुलन मोड बंद केला आहे.</string>
+    <string name="accessibility_work_life_balance_mode_on">कार्य जीवनातील संतुलन मोड सुरू केला आहे.</string>
     <string name="activity_not_available">अॅप उपलब्ध नाही</string>
     <string name="allow_notification">सूचनांना परवानगी द्या</string>
     <string name="battery_low_warning">%s शिल्लक, वापर वाढवण्यासाठी बॅटरी सेव्हर चालू करा</string>
@@ -78,7 +81,7 @@
     <string name="oneplus_threekey_navigation_vibration">फक्‍त कंपन</string>
     <string name="op_earphone_connect">जोडत आहे...</string>
     <string name="op_earphone_connected_fail">जोडणी करण्यास अयशस्वी. आपण हेडसेट आणि ब्ल्यूटूथची स्थिती तपासू शकता.</string>
-    <string name="op_earphone_connected_success">जोडले. आणखी सेट करण्यासाठी टॅप करा.</string>
+    <string name="op_earphone_connected_success">जोडणी केली. अधिक सेट करण्यासाठी टॅप करा.</string>
     <string name="op_earphone_device">जोडण्यासाठी टॅप करा</string>
     <string name="op_earphone_title">OnePlus वायरलेस बुलेट्स</string>
     <string name="op_emergency_indicator_hint_text">आपत्कालीन सेवांसाठी खाली स्‍वाइप करा</string>
@@ -91,6 +94,7 @@
     <string name="op_notification_channel_summary_low">कोणताही ध्‍वनी किंवा कंपनाशिवाय कमी महत्‍त्‍वाच्‍या सूचना.</string>
     <string name="op_notification_section_header_gentle">इतर सूचना</string>
     <string name="op_notification_silence_title">इतर</string>
+    <string name="op_qs_dark_mode_tile_label">डार्क मोड</string>
     <string name="op_quick_settings_night_display_label">रात्र स्वरूप</string>
     <string name="op_quick_settings_night_display_summary_off">रात्र स्वरूप बंद आहे, चालू करण्यासाठी टॅप करा</string>
     <string name="op_quick_settings_night_display_summary_on">रात्र स्वरूप चालू आहे, बंद करण्यासाठी टॅप करा</string>
@@ -103,8 +107,8 @@
     <string name="overheat_dialog_purple_button">आता बंद करा</string>
     <string name="overheat_dialog_purple_message">फोन 5 सेकंदांनंतर बंद होईल</string>
     <string name="overheat_dialog_red_message">तापमान कमी करण्‍यासाठी सर्व अनुप्रयोगांच्या प्रक्रिया बंद केल्‍या जातील</string>
-    <string name="overheat_dialog_title">आपला फोन खूपच गरम झाला आहे</string>
-    <string name="overheat_notification_alert">आपल्या फोनचे तापमान खूप जास्त आहे आणि तापमान कमी करण्यासाठी उच्च उर्जेेेेचा वापर करणारी कार्ये बंद केली जातात</string>
+    <string name="overheat_dialog_title">तुमच्‍या फोनचे तापमान खूपच जास्‍त आहे</string>
+    <string name="overheat_notification_alert">तुमच्‍या फोनचे तापमान खूपच जास्‍त आहे आणि तापमान कमी करण्यासाठी उच्च पॉवर वापर फंक्शन्स बंद केले आहेत</string>
     <string name="overheat_notification_resume">फोनचे तापमान पुन: संग्रहित करण्‍यात आले आहे आणि फोन सामान्‍यपणे वापरता येऊ शकतो</string>
     <string name="overheat_notification_title_resume">फोनचे तापमान पूर्ववत करण्‍यात आले आहे</string>
     <string name="overheat_toast_content">तुमच्‍या फोनचे तापमान खूपच जास्‍त आहे आणि तापमान कमी करण्यासाठी उच्च पॉवर वापर फंक्शन्स बंद केले आहेत</string>
@@ -115,6 +119,10 @@
     <string name="prevent_view_top_tag_numbuer1">"1. "</string>
     <string name="prevent_view_top_tag_numbuer2">"2. "</string>
     <string name="qs_edit">संपादित करा</string>
+    <string name="qs_panel_life_mode">जीवन</string>
+    <string name="qs_panel_none">कोणताही नाही</string>
+    <string name="qs_panel_set_up">सेटअप</string>
+    <string name="qs_panel_work_mode">काम</string>
     <string name="quick_launch_exit">बाहेर पडा</string>
     <string name="quick_launch_exit_hint">निर्गमन करण्यासाठी स्क्रीनवरून बोट दूर करा</string>
     <string name="quick_reply">प्रत्युत्तर द्या</string>
@@ -130,7 +138,7 @@
     <string name="quick_settings_game_mode_demo_all">अधिसूचना ब्लॉक केल्या जातील आणि कॅपासिटिव्ह बटण लॉक केले जातील</string>
     <string name="quick_settings_game_mode_demo_button">कॅपासिटिव्ह बटण लॉक केले जातील</string>
     <string name="quick_settings_game_mode_demo_notification">अधिसूचना ब्लॉक केल्या जातील</string>
-    <string name="quick_settings_game_mode_label">गेमिंग स्वरूप</string>
+    <string name="quick_settings_game_mode_label">गेमिंग मोड</string>
     <string name="quick_settings_game_mode_summary_off">गेमिंग मोड बंद आहे, चालू करण्यासाठी टॅप करा</string>
     <string name="quick_settings_game_mode_summary_on">गेमिंग मोड चालू आहे, बंद करण्यासाठी टॅप करा</string>
     <string name="quick_settings_hotspot_no_password">खुले नेटवर्क</string>
@@ -155,7 +163,7 @@
     <string name="recents_deep_clean_option">खोलवर साफ करा</string>
     <string name="recents_empty_no_apps_open">कोणतेही अनुप्रयोग उघडलेले नाहीत</string>
     <string name="recents_empty_recently_closed">अलीकडे बंद केलेली अॅप्स</string>
-    <string name="recents_normal_clean_description">पार्श्वभूमी प्रक्रिया साफ न करता कार्य सूची आणि कॅशे साफ करा.</string>
+    <string name="recents_normal_clean_description">बॅकग्राउंड प्रक्रिया साफ न करता कार्य सूची आणि कॅशे साफ करा.</string>
     <string name="recents_normal_clean_option">सर्वसाधारणपणे साफ करत आहे</string>
     <string name="recents_option_note">आपण हे सेटिंग्स - > प्रगत मध्ये बदलू शकता.</string>
     <string name="recents_option_title">आपण कोणत्या मार्गास प्राधान्य द्याल</string>
@@ -179,7 +187,8 @@
     <string name="volume_footer_ring">रिंग</string>
     <string name="volume_footer_slient">सायलंट</string>
     <string name="volume_footer_vibrate">सायलंट (कंपन)</string>
-    <string name="volume_vibrate">कंप</string>
+    <string name="volume_vibrate">कंपन</string>
+    <string name="work_life_balance_mode">Work-Life Balance</string>
     <string name="zen_important_interruptions">प्राधान्य सूचना</string>
     <string name="zen_interruption_level_all">सर्व सूचना</string>
     <string name="zen_no_interruptions">सायलंट</string>

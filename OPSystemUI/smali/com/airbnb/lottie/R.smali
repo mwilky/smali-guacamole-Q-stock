@@ -19,6 +19,7 @@
         Lcom/airbnb/lottie/R$integer;,
         Lcom/airbnb/lottie/R$id;,
         Lcom/airbnb/lottie/R$fraction;,
+        Lcom/airbnb/lottie/R$font;,
         Lcom/airbnb/lottie/R$drawable;,
         Lcom/airbnb/lottie/R$dimen;,
         Lcom/airbnb/lottie/R$color;,

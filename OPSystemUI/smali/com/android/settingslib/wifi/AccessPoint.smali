@@ -2196,7 +2196,7 @@
 
     const-string p2, "network_available_sign_in"
 
-    const-string p3, "string"
+    const-string/jumbo p3, "string"
 
     const-string p4, "android"
 

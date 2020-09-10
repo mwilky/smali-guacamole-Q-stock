@@ -91,7 +91,7 @@
 
     iput-object v0, p0, Landroidx/slice/SliceItem;->mFormat:Ljava/lang/String;
 
-    const-string v0, "subtype"
+    const-string/jumbo v0, "subtype"
 
     invoke-virtual {p1, v0}, Landroid/os/Bundle;->getString(Ljava/lang/String;)Ljava/lang/String;
 
@@ -1427,7 +1427,7 @@
 
     iget-object v1, p0, Landroidx/slice/SliceItem;->mSubType:Ljava/lang/String;
 
-    const-string v2, "subtype"
+    const-string/jumbo v2, "subtype"
 
     invoke-virtual {v0, v2, v1}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 

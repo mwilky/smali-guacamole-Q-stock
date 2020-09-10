@@ -959,7 +959,7 @@
 
     move-result-object v0
 
-    if-eqz v0, :cond_4
+    if-eqz v0, :cond_5
 
     iget-object v1, p0, Lcom/oneplus/systemui/biometrics/OpQLRecyclerView;->mPerfLock:Lcom/oneplus/sdk/utils/OpBoostFramework;
 
@@ -1115,7 +1115,26 @@
 
     invoke-virtual {p0, v0, v1}, Lcom/oneplus/systemui/biometrics/OpQLHelper;->startQuickPay(II)V
 
+    goto :goto_1
+
     :cond_4
+    iget-object v0, v1, Lcom/oneplus/systemui/biometrics/OpQLAdapter$ActionInfo;->mActionName:Ljava/lang/String;
+
+    const-string v2, "OpenWxMiniProgram"
+
+    invoke-virtual {v0, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_5
+
+    iget-object p0, p0, Lcom/oneplus/systemui/biometrics/OpQLRecyclerView;->mHelper:Lcom/oneplus/systemui/biometrics/OpQLHelper;
+
+    iget v0, v1, Lcom/oneplus/systemui/biometrics/OpQLAdapter$ActionInfo;->mWxMiniProgramWhich:I
+
+    invoke-virtual {p0, v0}, Lcom/oneplus/systemui/biometrics/OpQLHelper;->startWxMiniProgram(I)V
+
+    :cond_5
     :goto_1
     return-void
 .end method

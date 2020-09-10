@@ -32,8 +32,14 @@
 
 .field public static final op_light_start_animation:I = 0x7f030047
 
-.field public static final qs_theme_colors:I = 0x7f03004e
+.field public static final op_wx_mini_program_strings:I = 0x7f030048
 
-.field public static final recents_onboarding_blacklisted_packages:I = 0x7f03004f
+.field public static final qs_theme_colors:I = 0x7f03004f
 
-.field public static final tv_pip_settings_class_name:I = 0x7f030136
+.field public static final recents_onboarding_blacklisted_packages:I = 0x7f030050
+
+.field public static final tv_pip_settings_class_name:I = 0x7f030137
+
+.field public static final type_clock_hours:I = 0x7f030138
+
+.field public static final type_clock_minutes:I = 0x7f030139

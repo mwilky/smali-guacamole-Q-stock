@@ -33,6 +33,8 @@
 
 .field mUid:I
 
+.field mWxMiniProgramWhich:I
+
 
 # direct methods
 .method public constructor <init>()V

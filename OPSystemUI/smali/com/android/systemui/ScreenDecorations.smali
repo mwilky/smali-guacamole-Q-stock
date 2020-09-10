@@ -963,7 +963,7 @@
 
     const/4 p0, 0x0
 
-    if-eqz p1, :cond_1
+    if-eqz p1, :cond_2
 
     invoke-virtual {p1}, Landroid/graphics/Bitmap;->isRecycled()Z
 
@@ -996,13 +996,28 @@
 
     invoke-static/range {v2 .. v8}, Landroid/graphics/Bitmap;->createBitmap(Landroid/graphics/Bitmap;IIIILandroid/graphics/Matrix;Z)Landroid/graphics/Bitmap;
 
-    move-result-object p0
+    move-result-object v0
 
-    if-eq p0, p1, :cond_1
+    if-eq v0, p1, :cond_1
 
     invoke-virtual {p1}, Landroid/graphics/Bitmap;->recycle()V
 
+    invoke-virtual {v0}, Landroid/graphics/Bitmap;->isRecycled()Z
+
+    move-result p1
+
+    if-eqz p1, :cond_1
+
+    const-string p1, "Error: the returned resizedBitmap is already recycled !!!"
+
+    invoke-static {v1, p1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    return-object p0
+
     :cond_1
+    move-object p0, v0
+
+    :cond_2
     return-object p0
 .end method
 

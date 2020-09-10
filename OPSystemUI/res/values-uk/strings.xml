@@ -259,6 +259,9 @@
     <string name="accessibility_wimax_signal_full">Максимальний сигнал WiMAX.</string>
     <string name="accessibility_wimax_three_bars">Три смужки сигналу WiMAX.</string>
     <string name="accessibility_wimax_two_bars">Дві смужки сигналу WiMAX.</string>
+    <string name="accessibility_work_life_balance_mode">Баланс роботи й особистого життя</string>
+    <string name="accessibility_work_life_balance_mode_off">Режим балансу роботи й особистого життя вимкнено.</string>
+    <string name="accessibility_work_life_balance_mode_on">Режим балансу роботи й особистого життя ввімкнено.</string>
     <string name="accessibility_zero_bars">Нуль смужок сигналу.</string>
     <string name="active_input_method_subtypes">Активні методи введення</string>
     <string name="activity_launch_on_secondary_display_failed_text">Додаток не підтримує запуск на додаткових екранах.</string>
@@ -608,7 +611,7 @@
     <string name="face_unlock_timeout">Забагато невдалих спроб. Повторіть спробу пізніше.</string>
     <string name="failed_to_open_app_settings_toast">Не вдалося відкрити налаштування для програми %1$s</string>
     <string name="fingerprint_dialog_touch_sensor">Торкніться сканера відбитків пальців</string>
-    <string name="fingerprint_not_found">Повторити</string>
+    <string name="fingerprint_not_found">Повторіть спробу</string>
     <string name="force_allow_on_external">Примусово записувати додатки в зовнішню пам’ять</string>
     <string name="force_allow_on_external_summary">Можна записувати додатки в зовнішню пам’ять, незалежно від значень у маніфесті</string>
     <string name="force_msaa">Примус. запустити 4x MSAA</string>
@@ -655,7 +658,7 @@
     <string name="high_temp_title">Телефон нагрівається</string>
     <string name="home">Головний екран налаштувань</string>
     <string name="hotspot_apm_message">"Увімкнений режим польоту блокує можливість встановлення з'єднання з мобільними мережами. Вимкніть режим польоту та повторіть спробу."</string>
-    <string name="hotspot_operator_dialog_nosim_msg">Вставте SIM-картку, щоб скористатися мобільною точкою доступу та іншими функціями модема</string>
+    <string name="hotspot_operator_dialog_nosim_msg">Вставте SIM-карту, щоб скористатися мобільною точкою доступу та іншими функціями модема</string>
     <string name="hotspot_operator_dialog_nosim_title">Відсутня SIM-картка</string>
     <string name="hotspot_operator_dialog_othererror_msg">Ви не оформили передплату на послугу модема через Wi-Fi</string>
     <string name="hotspot_operator_dialog_othererror_title">Помилка послуги модема через Wi-Fi</string>
@@ -695,7 +698,7 @@
     <string name="interruption_level_alarms_twoline">"Лише
 сигнали"</string>
     <string name="interruption_level_game">Гра</string>
-    <string name="interruption_level_movie">Відео</string>
+    <string name="interruption_level_movie">Фільм</string>
     <string name="interruption_level_music">Музика</string>
     <string name="interruption_level_none">Без сигналів</string>
     <string name="interruption_level_none_twoline">"Без
@@ -1098,10 +1101,10 @@
     <string name="ongoing_privacy_chip_content_single_app">Додаток %1$s використовує %2$s.</string>
     <string name="ongoing_privacy_dialog_last_separator">" і "</string>
     <string name="ongoing_privacy_dialog_separator">", "</string>
-    <string name="op_earphone_connect">Об’єднання в пару…</string>
+    <string name="op_earphone_connect">Створення пари…</string>
     <string name="op_earphone_connected_fail">Не вдалося створити пару. Перевірте гарнітуру та статус Bluetooth.</string>
-    <string name="op_earphone_connected_success">Пристрої об’єднано в пару. Торкніться, щоб переглянути додаткові налаштування.</string>
-    <string name="op_earphone_device">ТОРКНІТЬСЯ, ЩОБ ОБ’ЄДНАТИ В ПАРУ</string>
+    <string name="op_earphone_connected_success">Пару створено. Торкніться, щоб виконати інші налаштування.</string>
+    <string name="op_earphone_device">ТОРКНІТЬСЯ, ЩОБ СТВОРИТИ ПАРУ</string>
     <string name="op_earphone_title">OnePlus Bullets Wireless</string>
     <string name="op_emergency_indicator_hint_text">Проведіть пальцем униз, щоб перейти до екстрених служб</string>
     <string name="op_keyguard_indication_face_unlocked">Розблоковано за допомогою Face Unlock</string>
@@ -1113,6 +1116,7 @@
     <string name="op_notification_channel_summary_low">Менш важливі сповіщення без звуку й вібрації</string>
     <string name="op_notification_section_header_gentle">Інші сповіщення</string>
     <string name="op_notification_silence_title">Інше</string>
+    <string name="op_qs_dark_mode_tile_label">Темний режим</string>
     <string name="op_quick_settings_night_display_label">Нічний режим</string>
     <string name="op_quick_settings_night_display_summary_off">Нічний режим вимкнено. Торкніться, щоб увімкнути</string>
     <string name="op_quick_settings_night_display_summary_on">Нічний режим увімкнено. Торкніться, щоб вимкнути</string>
@@ -1242,6 +1246,10 @@
     <string name="qs_dnd_replace">Замінити</string>
     <string name="qs_dnd_until">До %s</string>
     <string name="qs_edit">Редагувати</string>
+    <string name="qs_panel_life_mode">Особисте життя</string>
+    <string name="qs_panel_none">Ні</string>
+    <string name="qs_panel_set_up">Налаштувати</string>
+    <string name="qs_panel_work_mode">Робота</string>
     <string name="qs_rearrange">Упорядкувати швидкі налаштування</string>
     <string name="qs_status_phone_muted">Звук на телефоні вимкнено</string>
     <string name="qs_status_phone_vibrate">На телефоні ввімкнено вібрацію</string>
@@ -1312,7 +1320,7 @@
     <string name="quick_settings_game_mode_demo_all">сповіщення та ємнісні кнопки буде заблоковано</string>
     <string name="quick_settings_game_mode_demo_button">ємнісні кнопки буде заблоковано</string>
     <string name="quick_settings_game_mode_demo_notification">сповіщення буде заблоковано</string>
-    <string name="quick_settings_game_mode_label">Режим гри</string>
+    <string name="quick_settings_game_mode_label">Ігровий режим</string>
     <string name="quick_settings_game_mode_summary_off">Ігровий режим вимкнено. Торкніться, щоб увімкнути.</string>
     <string name="quick_settings_game_mode_summary_on">Ігровий режим увімкнено. Торкніться, щоб вимкнути.</string>
     <string name="quick_settings_header_onboarding_text">Утримуйте значки, щоб переглянути більше опцій</string>
@@ -1383,7 +1391,7 @@
     <string name="recents_deep_clean_option">Глибоке очищення</string>
     <string name="recents_empty_no_apps_open">Немає відкритих додатків</string>
     <string name="recents_empty_recently_closed">Нещодавно закриті додатки</string>
-    <string name="recents_normal_clean_description">Очистити список завдань і кеш, не завершуючи фонові процеси</string>
+    <string name="recents_normal_clean_description">Очистьте список завдань і кеш, не скасовуючи процеси, запущені у фоновому режимі.</string>
     <string name="recents_normal_clean_option">Звичайне очищення</string>
     <string name="recents_option_note">Ви можете змінити це в Налаштуваннях -> Розширені.</string>
     <string name="recents_option_title">Який спосіб ви бажаєте обрати?</string>
@@ -1733,6 +1741,7 @@
     <string name="wifi_verbose_logging">Докладний запис у журнал Wi-Fi</string>
     <string name="wifi_verbose_logging_summary">Показувати в журналі RSSI для кожного SSID під час вибору Wi-Fi</string>
     <string name="window_animation_scale_title">Анімація вікон</string>
+    <string name="work_life_balance_mode">Work-Life Balance</string>
     <string name="yes_bubbles">Дозволити</string>
     <string name="zen_alarm_warning">Наступний сигнал о %1$s не пролунає</string>
     <string name="zen_alarm_warning_indef">Наступний сигнал о %1$s не пролунає, якщо ви до того часу не вимкнете цю функцію</string>

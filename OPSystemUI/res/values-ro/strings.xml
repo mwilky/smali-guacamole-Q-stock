@@ -259,6 +259,9 @@
     <string name="accessibility_wimax_signal_full">WiMAX semnal complet.</string>
     <string name="accessibility_wimax_three_bars">WiMAX trei bare.</string>
     <string name="accessibility_wimax_two_bars">WiMAX două bare.</string>
+    <string name="accessibility_work_life_balance_mode">Work Life Balance</string>
+    <string name="accessibility_work_life_balance_mode_off">Modul Work-Life Balance a fost dezactivat.</string>
+    <string name="accessibility_work_life_balance_mode_on">Modul Work-Life Balance a fost activat.</string>
     <string name="accessibility_zero_bars">Nicio bară.</string>
     <string name="active_input_method_subtypes">Metode active de introducere de text</string>
     <string name="activity_launch_on_secondary_display_failed_text">Aplicația nu acceptă lansare pe ecrane secundare.</string>
@@ -1112,7 +1115,8 @@ De asemenea, sunteți conectat(ă) la o rețea VPN care vă poate monitoriza act
     <string name="op_notification_alert_title">Important</string>
     <string name="op_notification_channel_summary_low">Notificările mai puțin importante fără sunet sau vibrații.</string>
     <string name="op_notification_section_header_gentle">Alte notificări</string>
-    <string name="op_notification_silence_title">Altul</string>
+    <string name="op_notification_silence_title">Altele</string>
+    <string name="op_qs_dark_mode_tile_label">Mod întunecat</string>
     <string name="op_quick_settings_night_display_label">Mod noapte</string>
     <string name="op_quick_settings_night_display_summary_off">Modul noapte este dezactivat, atingeți pentru a îl activa</string>
     <string name="op_quick_settings_night_display_summary_on">Modul noapte este activat, atingeți pentru a îl dezactiva</string>
@@ -1133,16 +1137,16 @@ De asemenea, sunteți conectat(ă) la o rețea VPN care vă poate monitoriza act
     <string name="output_service_wifi">Wi-Fi</string>
     <string name="output_title">Ieșire media</string>
     <string name="overheat_dialog_orange_button">Execută acum</string>
-    <string name="overheat_dialog_orange_message">"Se vor lua următoarele măsuri pentru a reduce temperatura
+    <string name="overheat_dialog_orange_message">"Operațiunile următoarele vor fi efectuate pentru a reduce temperatura
 1. Reduceți luminozitatea
 2. Dezactivați punctul de acces
 3. Dezactivați lanterna"</string>
     <string name="overheat_dialog_purple_button">Oprire acum</string>
     <string name="overheat_dialog_purple_message">Telefonul va fi oprit după 5 secunde</string>
-    <string name="overheat_dialog_red_message">Toate procesele de aplicație vor fi închise pentru a reduce temperatura</string>
-    <string name="overheat_dialog_title">Temperatura telefonului este prea mare</string>
+    <string name="overheat_dialog_red_message">Toate procesele aplicației vor fi eliminate pentru a scădea temperatura</string>
+    <string name="overheat_dialog_title">Temperatura telefonului dvs. este prea mare</string>
     <string name="overheat_notification_alert">Temperatura telefonului este prea mare, funcțiile cu consum mare de energie sunt dezactivate pentru a reduce temperatura</string>
-    <string name="overheat_notification_resume">Temperatura normală a fost restabilită, telefonul poate fi utilizat în mod normal</string>
+    <string name="overheat_notification_resume">Temperatura telefonului a fost restabilită, iar telefonul poate fi utilizat în mod normal</string>
     <string name="overheat_notification_title_resume">Temperatura telefonului a fost restabilită</string>
     <string name="overheat_toast_content">Temperatura telefonului dvs. este prea mare, iar funcțiile cu consum mare de energie sunt dezactivate pentru a reduce temperatura</string>
     <string name="overlay_display_devices_title">Simulați afișaje secundare</string>
@@ -1242,6 +1246,10 @@ De asemenea, sunteți conectat(ă) la o rețea VPN care vă poate monitoriza act
     <string name="qs_dnd_replace">Înlocuiți</string>
     <string name="qs_dnd_until">Până la %s</string>
     <string name="qs_edit">Editați</string>
+    <string name="qs_panel_life_mode">Viață</string>
+    <string name="qs_panel_none">Niciuna</string>
+    <string name="qs_panel_set_up">Setare</string>
+    <string name="qs_panel_work_mode">Muncă</string>
     <string name="qs_rearrange">Rearanjați Setările rapide</string>
     <string name="qs_status_phone_muted">Sunetul telefonului este dezactivat</string>
     <string name="qs_status_phone_vibrate">Telefonul vibrează</string>
@@ -1733,6 +1741,7 @@ Orice utilizator poate actualiza aplicațiile pentru toți ceilalți utilizatori
     <string name="wifi_verbose_logging">Înregistrare prin Wi-Fi de volume mari de date</string>
     <string name="wifi_verbose_logging_summary">Măriți niv. de înr. prin Wi‑Fi, afișați în fcț. de SSID RSSI în Selectorul Wi‑Fi</string>
     <string name="window_animation_scale_title">Scară animație fereastră</string>
+    <string name="work_life_balance_mode">Work-Life Balance</string>
     <string name="yes_bubbles">Permiteți</string>
     <string name="zen_alarm_warning">Nu veți auzi următoarea alarmă %1$s</string>
     <string name="zen_alarm_warning_indef">Dacă nu dezactivați această opțiune înainte, nu veți auzi următoarea alarmă %1$s</string>

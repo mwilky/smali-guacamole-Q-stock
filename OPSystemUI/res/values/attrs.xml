@@ -190,6 +190,7 @@
     <attr name="color" format="color" />
     <attr name="colorAccent" format="color" />
     <attr name="colorBackgroundFloating" format="color" />
+    <attr name="colorBottom" format="color" />
     <attr name="colorButtonNormal" format="color" />
     <attr name="colorControlActivated" format="color" />
     <attr name="colorControlHighlight" format="color" />
@@ -199,6 +200,7 @@
     <attr name="colorPrimaryDark" format="color" />
     <attr name="colorSecondary" format="color" />
     <attr name="colorSwitchThumbNormal" format="color" />
+    <attr name="colorTop" format="color" />
     <attr name="columnCount" format="integer" />
     <attr name="columnWidth" format="dimension">
         <enum name="wrap_content" value="-2" />
@@ -362,6 +364,13 @@
     <attr name="frameWidth" format="dimension" />
     <attr name="gapBetweenBars" format="dimension" />
     <attr name="goIcon" format="reference" />
+    <attr name="gradientEndColor" format="color" />
+    <attr name="gradientStartColor" format="color" />
+    <attr name="gradientStyle">
+        <enum name="hotizontal" value="2" />
+        <enum name="none" value="0" />
+        <enum name="vertical" value="1" />
+    </attr>
     <attr name="gridBottomPadding" format="dimension" />
     <attr name="gridSubtitleSize" format="dimension" />
     <attr name="gridTextVerticalPadding" format="dimension" />
@@ -1190,6 +1199,7 @@
     <attr name="sliceViewStyle" format="reference" />
     <attr name="spacing" format="dimension" />
     <attr name="spanCount" format="integer" />
+    <attr name="specialColor" format="color" />
     <attr name="spinBars" format="boolean" />
     <attr name="spinnerDropDownItemStyle" format="reference" />
     <attr name="spinnerStyle" format="reference" />
@@ -1234,6 +1244,11 @@
     <attr name="textAppearanceSearchResultSubtitle" format="reference" />
     <attr name="textAppearanceSearchResultTitle" format="reference" />
     <attr name="textAppearanceSmallPopupMenu" format="reference" />
+    <attr name="textClockStringTemplate" format="reference" />
+    <attr name="textClockStyle">
+        <enum name="digital" value="0" />
+        <enum name="typographic" value="1" />
+    </attr>
     <attr name="textColorAlertDialogListItem" format="reference|color" />
     <attr name="textColorSearchUrl" format="reference|color" />
     <attr name="textLocale" format="string" />

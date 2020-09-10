@@ -19,7 +19,7 @@
 
     const-string/jumbo v2, "w"
 
-    const-string v3, "style"
+    const-string/jumbo v3, "style"
 
     const-string v4, "fFamily"
 

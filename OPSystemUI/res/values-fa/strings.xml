@@ -259,6 +259,9 @@
     <string name="accessibility_wimax_signal_full">‏قدرت سیگنال WiMAX کامل است.</string>
     <string name="accessibility_wimax_three_bars">‏WiMAX سه نوار دارد.</string>
     <string name="accessibility_wimax_two_bars">‏WiMAX دو نوار دارد.</string>
+    <string name="accessibility_work_life_balance_mode">Work Life Balance</string>
+    <string name="accessibility_work_life_balance_mode_off">حالت «Work Life Balance» خاموش شد.</string>
+    <string name="accessibility_work_life_balance_mode_on">حالت «Work Life Balance» روشن شد.</string>
     <string name="accessibility_zero_bars">بدون میله.</string>
     <string name="active_input_method_subtypes">روش‌های ورودی فعال</string>
     <string name="activity_launch_on_secondary_display_failed_text">برنامه از راه‌اندازی در نمایشگرهای ثانویه پشتیبانی نمی‌کند.</string>
@@ -530,9 +533,9 @@
     <string name="debug_monitoring_category">نظارت</string>
     <string name="debug_networking_category">شبکه</string>
     <string name="debug_view_attributes">فعال کردن نمایش بازبینی ویژگی</string>
-    <string name="delete">حذف کن</string>
+    <string name="delete">حذف</string>
     <string name="demo_mode">حالت نمایشی رابط کاربری سیستم</string>
-    <string name="denoise_notification">اخطار کم اولویت</string>
+    <string name="denoise_notification">اعلان با اولویت پایین</string>
     <string name="description_direction_left">لغزاندن به چپ برای %s.</string>
     <string name="description_direction_up">لغزاندن به بالا برای %s.</string>
     <string name="description_target_search">جستجو</string>
@@ -608,7 +611,7 @@
     <string name="face_unlock_timeout">تلاش های ناموفق زیاد، بعداً دوباره سعی کنید.</string>
     <string name="failed_to_open_app_settings_toast">تنظیمات %1$s بازنشد</string>
     <string name="fingerprint_dialog_touch_sensor">حسگر اثر انگشت را لمس کنید</string>
-    <string name="fingerprint_not_found">تلاش مجدد</string>
+    <string name="fingerprint_not_found">مجدداً سعی کنید</string>
     <string name="force_allow_on_external">اجازه اجباری به برنامه‌های دستگاه ذخیره خارجی</string>
     <string name="force_allow_on_external_summary">بدون توجه به مقادیر آشکار، هر برنامه‌ای را برای نوشتن در حافظه خارجی واجد شرایط می‌کند</string>
     <string name="force_msaa">‏اجبار 4x MSAA</string>
@@ -655,7 +658,7 @@
     <string name="high_temp_title">تلفن درحال گرم شدن است</string>
     <string name="home">صفحه اصلی تنظیمات</string>
     <string name="hotspot_apm_message">وقتی حالت هواپیما فعال است، اتصال به شبکه‌های تلفن همراه مقدور نیست. ابتدا حالت هواپیما را غیرفعال و سپس دوباره تلاش کنید.</string>
-    <string name="hotspot_operator_dialog_nosim_msg">برای استفاده از نقطۀ دسترسی تلفن همراه و دیگر گزینه‌های به اشتراک گذاشتن اتصال اینترنت، یک سیم‌کارت وارد کنید</string>
+    <string name="hotspot_operator_dialog_nosim_msg">برای استفاده از «نقطۀ اتصال همراه» و دیگر گزینه‌های اشتراک‌گذاری اینترنت، یک سیم‌کارت وارد کنید</string>
     <string name="hotspot_operator_dialog_nosim_title">بدون سیم‌کارت</string>
     <string name="hotspot_operator_dialog_othererror_msg">شما مشترک قابلیت اشتراک‌گذاری WiFi نیستید</string>
     <string name="hotspot_operator_dialog_othererror_title">خطا در اشتراک‌گذاری WiFi</string>
@@ -1086,7 +1089,7 @@
     <string name="ok">تأیید</string>
     <string name="okay">تأیید</string>
     <string name="oneplus_laboratory_added_toast">تبریک! آزمایشگاه OnePlus به تنظیمات اضافه شده است</string>
-    <string name="oneplus_screen_features_not_available_toast">وقتی روشن باشد، ویژگی‌هایی مانند تنظیم صفحه‌نمایش دردسترس نخواهد بود</string>
+    <string name="oneplus_screen_features_not_available_toast">در صورت روشن بودن، قابلیت‌هایی مانند کالیبراسیون صفحۀ نمایش در دسترس نخواهد بود</string>
     <string name="oneplus_threekey_navigation_disturb_changed">«بدون مزاحمت» تغییر کرده است!</string>
     <string name="oneplus_threekey_navigation_next">بعدی</string>
     <string name="oneplus_threekey_navigation_silence">کل مدت سکوت</string>
@@ -1112,7 +1115,8 @@
     <string name="op_notification_alert_title">مهم</string>
     <string name="op_notification_channel_summary_low">اعلان‌های کم‌اهمیت‌تر بدون صدا یا لرزش خواهد بود.</string>
     <string name="op_notification_section_header_gentle">سایر اعلان‌ها</string>
-    <string name="op_notification_silence_title">دیگر</string>
+    <string name="op_notification_silence_title">سایر موارد</string>
+    <string name="op_qs_dark_mode_tile_label">حالت تاریک</string>
     <string name="op_quick_settings_night_display_label">حالت شب</string>
     <string name="op_quick_settings_night_display_summary_off">حالت شب خاموش است؛ برای روشن کردن، ضربه بزنید</string>
     <string name="op_quick_settings_night_display_summary_on">حالت شب روشن است؛ برای خاموش کردن، ضربه بزنید</string>
@@ -1133,14 +1137,14 @@
     <string name="output_service_wifi">Wi-Fi</string>
     <string name="output_title">خروجی رسانه</string>
     <string name="overheat_dialog_orange_button">الآن اجرا شود</string>
-    <string name="overheat_dialog_orange_message">"اقدامات زیر برای کاهش دما انجام خواهد شد
+    <string name="overheat_dialog_orange_message">"عملیات زیر برای کاهش دما انجام خواهند شد
 1.کاهش روشنایی
 2.خاموش کردن نقطۀ اتصال
 3.خاموش کردن چراغ‌قوه"</string>
     <string name="overheat_dialog_purple_button">الآن خاموش شود</string>
     <string name="overheat_dialog_purple_message">تلفن پس از 5 ثانیه خاموش خواهد شد</string>
     <string name="overheat_dialog_red_message">برای کاهش دما، تمام فرآیندهای برنامه‌ها پاک خواهد شد</string>
-    <string name="overheat_dialog_title">دمای تلفن بیش از حد بالاست</string>
+    <string name="overheat_dialog_title">دمای تلفن شما بیش از حد بالاست</string>
     <string name="overheat_notification_alert">دمای تلفن شما بیش از حد بالاست و عملکردهایی که مصرف نیروی زیادی دارند خاموش شده‌اند تا دما کاهش یابد</string>
     <string name="overheat_notification_resume">دمای تلفن به حالت عادی برگشته و تلفن به صورت عادی قابل استفاده است</string>
     <string name="overheat_notification_title_resume">دمای تلفن به حالت عادی برگشته است</string>
@@ -1242,6 +1246,10 @@
     <string name="qs_dnd_replace">جایگزین کردن</string>
     <string name="qs_dnd_until">تا %s</string>
     <string name="qs_edit">ویرایش</string>
+    <string name="qs_panel_life_mode">زندگی</string>
+    <string name="qs_panel_none">هیچ کدام</string>
+    <string name="qs_panel_set_up">تنظیم</string>
+    <string name="qs_panel_work_mode">کار</string>
     <string name="qs_rearrange">ترتیب مجدد در تنظیمات سریع</string>
     <string name="qs_status_phone_muted">تلفن بی‌صدا است</string>
     <string name="qs_status_phone_vibrate">تلفن در حالت لرزش است</string>
@@ -1312,7 +1320,7 @@
     <string name="quick_settings_game_mode_demo_all">اعلان‌ها مسدود و دکمه‌های خازنی قفل خواهد شد</string>
     <string name="quick_settings_game_mode_demo_button">دکمه‌های خازنی قفل خواهد شد</string>
     <string name="quick_settings_game_mode_demo_notification">اعلان‌ها مسدود خواهد شد</string>
-    <string name="quick_settings_game_mode_label">حالت بازی</string>
+    <string name="quick_settings_game_mode_label">«حالت بازی»</string>
     <string name="quick_settings_game_mode_summary_off">«حالت بازی» خاموش است؛ برای روشن کردن، ضربه بزنید</string>
     <string name="quick_settings_game_mode_summary_on">«حالت بازی» روشن است؛ برای خاموش کردن، ضربه بزنید</string>
     <string name="quick_settings_header_onboarding_text">برای گزینه‌های بیشتر، نمادها را لمس کنید و نگه‌دارید</string>
@@ -1356,7 +1364,7 @@
     <string name="quick_settings_rssi_label">RSSI</string>
     <string name="quick_settings_secondary_label_until">تا %s</string>
     <string name="quick_settings_settings_label">تنظیمات</string>
-    <string name="quick_settings_switch_user_storage_insufficient">حافظه پر است، نمی تواند کاربر را تغییر دهد</string>
+    <string name="quick_settings_switch_user_storage_insufficient">حافظه پر شده است؛ تغییر کاربر امکان‌پذیر نیست</string>
     <string name="quick_settings_tethering_label">اشتراک‌گذاری اینترنت</string>
     <string name="quick_settings_time_label">زمان</string>
     <string name="quick_settings_ui_mode_night_label">طرح زمینه تیره</string>
@@ -1383,7 +1391,7 @@
     <string name="recents_deep_clean_option">پاکسازی عمیق</string>
     <string name="recents_empty_no_apps_open">برنامه‌ای باز نیست</string>
     <string name="recents_empty_recently_closed">آخرین برنامه‌های بسته شده</string>
-    <string name="recents_normal_clean_description">بدون پاک کردن فرآیندهای پس‌زمینه، فهرست وظایف و حافظۀ پنهان پاک می‌شود.</string>
+    <string name="recents_normal_clean_description">بدون پاک کردن فرآیندهای پس‌زمینه، فهرست کارها و حافظه پنهان را پاک کنید.</string>
     <string name="recents_normal_clean_option">پاکسازی عادی</string>
     <string name="recents_option_note">می‌توانید این مورد را در بخش «تنظیمات > پیشرفته» تغییر دهید.</string>
     <string name="recents_option_title">کدام روش را ترجیح می‌دهید</string>
@@ -1733,11 +1741,12 @@
     <string name="wifi_verbose_logging">‏فعال کردن گزارش‌گیری طولانی Wi‑Fi</string>
     <string name="wifi_verbose_logging_summary">‏افزایش سطح گزارش‌گیری Wi‑Fi، نمایش به ازای SSID RSSI در انتخاب‌کننده Wi‑Fi</string>
     <string name="window_animation_scale_title">مقیاس پویانمایی پنجره</string>
+    <string name="work_life_balance_mode">Work-Life Balance</string>
     <string name="yes_bubbles">اجازه دادن</string>
     <string name="zen_alarm_warning">در ساعت %1$s، دیگر صدای زنگ ساعت را نمی‌شنوید</string>
     <string name="zen_alarm_warning_indef">در ساعت %1$s صدای زنگ ساعت بعدی‌تان را نمی‌شنوید، مگر اینکه قبل از آن، این تنظیم را خاموش کنید</string>
     <string name="zen_alarms_introduction">به‌جز هشدارها، هیچ صدا و لرزشی نخواهید داشت. همچنان صدای مواردی را که پخش می‌کنید می‌شنوید (ازجمله صدای موسیقی، ویدیو و بازی).</string>
-    <string name="zen_important_interruptions">اخطارهای بااولویت</string>
+    <string name="zen_important_interruptions">اعلان‌های اولویت‌دار</string>
     <string name="zen_interruption_level_all">همه اعلان‌ها</string>
     <string name="zen_interruption_level_priority">فقط اولویت‌دار</string>
     <string name="zen_mode_and_condition">%1$s. ‏%2$s</string>

@@ -13,6 +13,9 @@
     <string name="accessibility_quick_settings_night_mode_changed_on">Nakties režimas įjungtas.</string>
     <string name="accessibility_quick_settings_power_saving_changed_off">Energijos taupymo režimas išjungtas.</string>
     <string name="accessibility_quick_settings_power_saving_changed_on">Įjungtas energijos taupymo režimas.</string>
+    <string name="accessibility_work_life_balance_mode">Darbo ir laisvalaikio balansas</string>
+    <string name="accessibility_work_life_balance_mode_off">Darbo ir laisvalaikio balanso režimas išjungtas.</string>
+    <string name="accessibility_work_life_balance_mode_on">Darbo ir laisvalaikio balanso režimas įjungtas.</string>
     <string name="activity_not_available">Programa nepasiekiama</string>
     <string name="allow_notification">Leisti pranešimus</string>
     <string name="battery_low_warning">Liko %s; įjunkite energijos taupymą, kad prailgintumėte darbo laiką</string>
@@ -91,6 +94,7 @@
     <string name="op_notification_channel_summary_low">Mažiau svarbūs pranešimai be jokio garso ar vibracijos.</string>
     <string name="op_notification_section_header_gentle">Kiti pranešimai</string>
     <string name="op_notification_silence_title">Kita</string>
+    <string name="op_qs_dark_mode_tile_label">Tamsusis režimas</string>
     <string name="op_quick_settings_night_display_label">Nakties režimas</string>
     <string name="op_quick_settings_night_display_summary_off">Nakties režimas išjungtas, bakstelėkite, kad įjungtumėte</string>
     <string name="op_quick_settings_night_display_summary_on">Nakties režimas įjungtas, bakstelėkite, kad išjungtumėte</string>
@@ -105,8 +109,8 @@
     <string name="overheat_dialog_red_message">Kad temperatūra sumažėtų, bus išjungti visi programėlių procesai</string>
     <string name="overheat_dialog_title">Jūsų telefono temperatūra per aukšta</string>
     <string name="overheat_notification_alert">Jūsų telefono temperatūra per aukšta, todėl temperatūrai sumažinti išjungtos daug energijos vartojančios funkcijos</string>
-    <string name="overheat_notification_resume">Telefono temperatūra atkurta, o telefoną dabar galima naudoti įprastai</string>
-    <string name="overheat_notification_title_resume">Telefono temperatūra atkurta</string>
+    <string name="overheat_notification_resume">Telefono temperatūra atstatyta ir telefoną dabar galima naudoti įprastai</string>
+    <string name="overheat_notification_title_resume">Telefono temperatūra atstatyta</string>
     <string name="overheat_toast_content">Jūsų telefono temperatūra per aukšta, todėl temperatūrai sumažinti išjungtos daug energijos vartojančios funkcijos</string>
     <string name="prevent_view_title">Įjungtas kišeninis režimas</string>
     <string name="prevent_view_title_cancel">Kad suaktyvintumėte savo telefoną:</string>
@@ -115,6 +119,10 @@
     <string name="prevent_view_top_tag_numbuer1">"1. "</string>
     <string name="prevent_view_top_tag_numbuer2">"2. "</string>
     <string name="qs_edit">Redaguoti</string>
+    <string name="qs_panel_life_mode">Laisvalaikis</string>
+    <string name="qs_panel_none">Nenurodyta</string>
+    <string name="qs_panel_set_up">Nustatyti</string>
+    <string name="qs_panel_work_mode">Darbas</string>
     <string name="quick_launch_exit">Išeiti</string>
     <string name="quick_launch_exit_hint">Pirštas nuo ekrano, kad išeitumėte</string>
     <string name="quick_reply">ATSAKYTI</string>
@@ -155,7 +163,7 @@
     <string name="recents_deep_clean_option">Gilus išvalymas</string>
     <string name="recents_empty_no_apps_open">Nėra atidarytų programėlių</string>
     <string name="recents_empty_recently_closed">Neseniai uždarytos programėlės</string>
-    <string name="recents_normal_clean_description">Išvalykite užduočių sąrašą ir talpyklą neišvalant fone veikiančių procesų.</string>
+    <string name="recents_normal_clean_description">Išvalyti užduočių sąrašą ir podėlį, neišjungiant foninių procesų.</string>
     <string name="recents_normal_clean_option">Įprastas valymas</string>
     <string name="recents_option_note">Šį parametrą galite pakeisti išplėstinių -> parametrų lange.</string>
     <string name="recents_option_title">Kaip norite elgtis?</string>
@@ -180,6 +188,7 @@
     <string name="volume_footer_slient">Tylus</string>
     <string name="volume_footer_vibrate">Tylus (vibruoti)</string>
     <string name="volume_vibrate">Vibruoti</string>
+    <string name="work_life_balance_mode">„Work-Life Balance“</string>
     <string name="zen_important_interruptions">Prioritetiniai pranešimai</string>
     <string name="zen_interruption_level_all">Visi pranešimai</string>
     <string name="zen_no_interruptions">Tylus</string>

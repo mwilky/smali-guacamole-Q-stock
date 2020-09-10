@@ -13,6 +13,9 @@
     <string name="accessibility_quick_settings_night_mode_changed_on">Mod malam dihidupkan.</string>
     <string name="accessibility_quick_settings_power_saving_changed_off">Mod Penjimat Bateri dipadamkan.</string>
     <string name="accessibility_quick_settings_power_saving_changed_on">Mod Penjimat Bateri dihidupkan.</string>
+    <string name="accessibility_work_life_balance_mode">Keseimbangan Kerja-Kehidupan</string>
+    <string name="accessibility_work_life_balance_mode_off">Mod Keseimbangan Kerja-Kehidupan dimatikan.</string>
+    <string name="accessibility_work_life_balance_mode_on">Mod Keseimbangan Kerja-Kehidupan dihidupkan.</string>
     <string name="activity_not_available">Aplikasi tidak tersedia</string>
     <string name="allow_notification">Benarkan pemberitahuan</string>
     <string name="battery_low_warning">Tinggal %s, hidupkan Penjimat Bateri untuk melanjutkan penggunaan</string>
@@ -91,6 +94,7 @@
     <string name="op_notification_channel_summary_low">Pemberitahuan yang kurang penting tanpa apa-apa bunyi atau getaran.</string>
     <string name="op_notification_section_header_gentle">Pemberitahuan lain</string>
     <string name="op_notification_silence_title">Lain-lain</string>
+    <string name="op_qs_dark_mode_tile_label">Mod gelap</string>
     <string name="op_quick_settings_night_display_label">Mod malam</string>
     <string name="op_quick_settings_night_display_summary_off">Mod Malam dipadam, ketik untuk menghidupkan</string>
     <string name="op_quick_settings_night_display_summary_on">Mod malam dihidupkan, ketik untuk memadamkan</string>
@@ -115,6 +119,10 @@
     <string name="prevent_view_top_tag_numbuer1">"1. "</string>
     <string name="prevent_view_top_tag_numbuer2">"2. "</string>
     <string name="qs_edit">Sunting</string>
+    <string name="qs_panel_life_mode">Kehidupan</string>
+    <string name="qs_panel_none">Tiada</string>
+    <string name="qs_panel_set_up">Sediakan</string>
+    <string name="qs_panel_work_mode">Kerja</string>
     <string name="quick_launch_exit">Keluar</string>
     <string name="quick_launch_exit_hint">Angkat jari dari skrin untuk keluar</string>
     <string name="quick_reply">BALAS</string>
@@ -155,7 +163,7 @@
     <string name="recents_deep_clean_option">Pembersihan dalam</string>
     <string name="recents_empty_no_apps_open">Tiada aplikasi terbuka</string>
     <string name="recents_empty_recently_closed">Aplikasi yang baru ditutup</string>
-    <string name="recents_normal_clean_description">Padamkan senarai tugas dan cache, tanpa memadamkan proses latar belakang.</string>
+    <string name="recents_normal_clean_description">Padamkan senarai tugas dan cache, tanpa proses memadamkan latar belakang.</string>
     <string name="recents_normal_clean_option">Pembersihan biasa</string>
     <string name="recents_option_note">Anda boleh ubah ini di Seting-> Lanjutan.</string>
     <string name="recents_option_title">Cara mana yang anda suka</string>
@@ -180,6 +188,7 @@
     <string name="volume_footer_slient">Senyap</string>
     <string name="volume_footer_vibrate">Senyap (Bergetar)</string>
     <string name="volume_vibrate">Bergetar</string>
+    <string name="work_life_balance_mode">Work-Life Balance</string>
     <string name="zen_important_interruptions">Pemberitahuan keutamaan</string>
     <string name="zen_interruption_level_all">Semua pemberitahuan</string>
     <string name="zen_no_interruptions">Senyap</string>

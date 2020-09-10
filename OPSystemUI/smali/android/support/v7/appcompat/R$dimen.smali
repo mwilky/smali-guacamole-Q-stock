@@ -14,10 +14,10 @@
 
 .field public static final abc_search_view_preferred_width:I = 0x7f07003c
 
-.field public static final tooltip_precise_anchor_extra_offset:I = 0x7f070757
+.field public static final tooltip_precise_anchor_extra_offset:I = 0x7f070768
 
-.field public static final tooltip_precise_anchor_threshold:I = 0x7f070758
+.field public static final tooltip_precise_anchor_threshold:I = 0x7f070769
 
-.field public static final tooltip_y_offset_non_touch:I = 0x7f07075a
+.field public static final tooltip_y_offset_non_touch:I = 0x7f07076b
 
-.field public static final tooltip_y_offset_touch:I = 0x7f07075b
+.field public static final tooltip_y_offset_touch:I = 0x7f07076c

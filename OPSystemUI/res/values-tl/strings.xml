@@ -259,6 +259,9 @@
     <string name="accessibility_wimax_signal_full">Puno ang signal ng WiMAX.</string>
     <string name="accessibility_wimax_three_bars">WiMAX na tatlong bar.</string>
     <string name="accessibility_wimax_two_bars">WiMAX na dalawang bar.</string>
+    <string name="accessibility_work_life_balance_mode">Work Life Balance</string>
+    <string name="accessibility_work_life_balance_mode_off">Naka-off ang Work Life Balance mode.</string>
+    <string name="accessibility_work_life_balance_mode_on">Naka-off ang Work Life Balance mode.</string>
     <string name="accessibility_zero_bars">Walang mga bar.</string>
     <string name="active_input_method_subtypes">Mga aktibong paraan ng pag-input</string>
     <string name="activity_launch_on_secondary_display_failed_text">Hindi sinusuportahan ng app ang paglulunsad sa mga pangalawang display.</string>
@@ -274,7 +277,7 @@
     <string name="alarm_template_far">sa %1$s</string>
     <string name="allow_mock_location">Payagan ang mga kunwaring lokasyon</string>
     <string name="allow_mock_location_summary">Payagan ang mga kunwaring lokasyon</string>
-    <string name="allow_notification">Payagan ang mga paunawa</string>
+    <string name="allow_notification">Payagan ang mga notification</string>
     <string name="always_use_accessory">Palaging buksan ang %1$s kapag nakakonekta ang %2$s</string>
     <string name="always_use_device">Palaging buksan ang %1$s kapag nakakonekta ang %2$s</string>
     <string name="animator_duration_scale_title">Scale ng tagal ng animator</string>
@@ -530,7 +533,7 @@ Kung magpapatuloy ka, maaaring may mga singil sa paggamit ng data."</string>
     <string name="debug_monitoring_category">Pagsubaybay</string>
     <string name="debug_networking_category">Networking</string>
     <string name="debug_view_attributes">I-enable ang pagsisiyasat sa attribute na view</string>
-    <string name="delete">Burahin</string>
+    <string name="delete">I-delete</string>
     <string name="demo_mode">Demo mode ng System UI</string>
     <string name="denoise_notification">Mga notipikasyong mababa ang prayoridad</string>
     <string name="description_direction_left">Mag-slide pakaliwa para sa %s.</string>
@@ -608,7 +611,7 @@ Kung magpapatuloy ka, maaaring may mga singil sa paggamit ng data."</string>
     <string name="face_unlock_timeout">Masyadong maraming bigong pagtatangka. Subukin muli mamaya.</string>
     <string name="failed_to_open_app_settings_toast">Nabigong buksan ang mga setting para sa %1$s</string>
     <string name="fingerprint_dialog_touch_sensor">Pindutin ang fingerprint sensor</string>
-    <string name="fingerprint_not_found">Subukang muli</string>
+    <string name="fingerprint_not_found">Subuking muli</string>
     <string name="force_allow_on_external">Puwersahang payagan ang mga app sa external</string>
     <string name="force_allow_on_external_summary">Ginagawang kwalipikado ang anumang app na mailagay sa external na storage, anuman ang mga value ng manifest</string>
     <string name="force_msaa">Puwersahin ang 4x MSAA</string>
@@ -655,7 +658,7 @@ Kapag nakapag-cool down na ang iyong telepono, gagana na ito nang normal."</stri
     <string name="high_temp_title">Umiinit ang telepono</string>
     <string name="home">Home ng Mga Setting</string>
     <string name="hotspot_apm_message">Hindi makakonekta sa mga mobile na network habang ang pamamaraang Airplane ay gumagana. Huwag paganahin ang pamamaraang Airplane at subukin muli.</string>
-    <string name="hotspot_operator_dialog_nosim_msg">Magkabit ng isang SIM card para magamit ang Mobile Hotspot at iba pang opsyon sa pag-tether</string>
+    <string name="hotspot_operator_dialog_nosim_msg">Maglagay ng SIM card para magamit ang Mobile Hotspot at ang iba pang opsyon sa pag-tether</string>
     <string name="hotspot_operator_dialog_nosim_title">Walang SIM card</string>
     <string name="hotspot_operator_dialog_othererror_msg">Hindi ka naka-subscribe sa pag-tether ng Wi-Fi</string>
     <string name="hotspot_operator_dialog_othererror_title">Nagka-error sa pag-tether ng Wi-Fi</string>
@@ -1030,7 +1033,7 @@ Nakakonekta ka rin sa isang VPN, na may kakayahang subaybayan ang iyong aktibida
     <string name="music_controls_no_title">Walang pamagat</string>
     <string name="nav_bar">Navigation bar</string>
     <string name="nav_bar_default">(default)</string>
-    <string name="nav_bar_guide_positive">NAKUHA KO</string>
+    <string name="nav_bar_guide_positive">OK</string>
     <string name="nav_bar_guide_title">Mag-swipe pataas mula sa ibaba para ipakita ang navigation bar. Para ihinto ang pagtatago sa navigation, paki-tap dito.</string>
     <string name="nav_bar_layout">Layout</string>
     <string name="no_application">Wala</string>
@@ -1100,7 +1103,7 @@ Nakakonekta ka rin sa isang VPN, na may kakayahang subaybayan ang iyong aktibida
     <string name="ongoing_privacy_dialog_separator">", "</string>
     <string name="op_earphone_connect">Pinapares...</string>
     <string name="op_earphone_connected_fail">Hindi napares. Maaari mong tingnan ang status ng headset at Bluetooth.</string>
-    <string name="op_earphone_connected_success">Napares na. I-tap upang magtakda pa.</string>
+    <string name="op_earphone_connected_success">Napares na. I-tap para magtakda pa.</string>
     <string name="op_earphone_device">I-TAP PARA IPARES</string>
     <string name="op_earphone_title">OnePlus Bullets Wireless</string>
     <string name="op_emergency_indicator_hint_text">Mag-swipe pababa para sa emergency service</string>
@@ -1113,6 +1116,7 @@ Nakakonekta ka rin sa isang VPN, na may kakayahang subaybayan ang iyong aktibida
     <string name="op_notification_channel_summary_low">Mga hindi gaanong mahalagang notification na walang anumang tunog o pag-vibrate.</string>
     <string name="op_notification_section_header_gentle">Iba pang notification</string>
     <string name="op_notification_silence_title">Iba pa</string>
+    <string name="op_qs_dark_mode_tile_label">Dark mode</string>
     <string name="op_quick_settings_night_display_label">Mode sa gabi</string>
     <string name="op_quick_settings_night_display_summary_off">Ang Mode sa Gabi ay hindi gumagana, i-tap upang buksan ito</string>
     <string name="op_quick_settings_night_display_summary_on">Ang Mode sa Gabi ay gumagana, i-tap upang patayin ito</string>
@@ -1132,18 +1136,18 @@ Nakakonekta ka rin sa isang VPN, na may kakayahang subaybayan ang iyong aktibida
     <string name="output_service_bt_wifi">Bluetooth at Wi-Fi</string>
     <string name="output_service_wifi">Wi-Fi</string>
     <string name="output_title">Output ng media</string>
-    <string name="overheat_dialog_orange_button">Isakatuparan ngayon</string>
-    <string name="overheat_dialog_orange_message">"Isasagawa ang mga sumusunod na hakbang para mapababa ang temperatura
-1. Babawasan ang liwanag
-2.Io-off ang hotspot
-3.Io-off ang flashlight"</string>
+    <string name="overheat_dialog_orange_button">I-execute ngayon</string>
+    <string name="overheat_dialog_orange_message">"Isasagawa ang mga sumusunod na operasyon para bumaba ang temperatura
+1.Bawasan ang liwanag
+2.I-off ang hotspot
+3.I-off ang flashlight"</string>
     <string name="overheat_dialog_purple_button">I-off ngayon</string>
-    <string name="overheat_dialog_purple_message">Io-off ang telepono pagkatapos ng 5 segundo</string>
-    <string name="overheat_dialog_red_message">Buburahin ang lahat ng proseso para mapababa ang temperatura</string>
-    <string name="overheat_dialog_title">Masyadong mataas ang temperatura ng iyong telepono</string>
-    <string name="overheat_notification_alert">Masyadong mataas ang temperatura ng iyong telepono, at na-off ang mga function na malakas sa paggamit ng power para mapababa ang temperatura</string>
-    <string name="overheat_notification_resume">Naitama na ang temperatura ng telepono at magagamit na ito nang normal</string>
-    <string name="overheat_notification_title_resume">Naitama na ang temperatura ng telepono</string>
+    <string name="overheat_dialog_purple_message">Io-off ang telepono pagkalipas ng 5 segundo</string>
+    <string name="overheat_dialog_red_message">Iki-clear ang lahat ng proseso ng application upang mapababa ang temperatura</string>
+    <string name="overheat_dialog_title">Napakataas ng temperatura ng telepono mo</string>
+    <string name="overheat_notification_alert">Masyadong mataas ang temperatura ng iyong telepono, at ini-off ang mga function na malakas kumonsumo ng baterya para pababain ang temperatura</string>
+    <string name="overheat_notification_resume">Naibalik ang temperatura ng telepono at magagamit nang normal ang telepono</string>
+    <string name="overheat_notification_title_resume">Naibalik ang temperatura ng telepono</string>
     <string name="overheat_toast_content">Napakataas ng temperatura ng telepono mo, at ini-off ang mga function na malakas kumain ng baterya para mapababa ang temperatura</string>
     <string name="overlay_display_devices_title">I-simulate, ika-2 display</string>
     <string name="overview">Pangkalahatang-ideya</string>
@@ -1242,6 +1246,10 @@ Nakakonekta ka rin sa isang VPN, na may kakayahang subaybayan ang iyong aktibida
     <string name="qs_dnd_replace">Palitan</string>
     <string name="qs_dnd_until">Hanggang %s</string>
     <string name="qs_edit">I-edit</string>
+    <string name="qs_panel_life_mode">Buhay</string>
+    <string name="qs_panel_none">Wala</string>
+    <string name="qs_panel_set_up">I-set up</string>
+    <string name="qs_panel_work_mode">Trabaho</string>
     <string name="qs_rearrange">Ayusing Muli ang Mga Mabilisang Setting</string>
     <string name="qs_status_phone_muted">Naka-mute ang telepono</string>
     <string name="qs_status_phone_vibrate">Naka-vibrate ang telepono</string>
@@ -1312,7 +1320,7 @@ Nakakonekta ka rin sa isang VPN, na may kakayahang subaybayan ang iyong aktibida
     <string name="quick_settings_game_mode_demo_all">maba-block ang mga notification at mala-lock ang mga capacitive na button</string>
     <string name="quick_settings_game_mode_demo_button">mala-lock ang mga capacitive na button</string>
     <string name="quick_settings_game_mode_demo_notification">maba-block ang mga notification</string>
-    <string name="quick_settings_game_mode_label">Mode sa Gaming</string>
+    <string name="quick_settings_game_mode_label">Gaming mode</string>
     <string name="quick_settings_game_mode_summary_off">Naka-off ang Gaming mode, i-tap upang i-on</string>
     <string name="quick_settings_game_mode_summary_on">Naka-on ang Gaming mode, i-tap upang i-off</string>
     <string name="quick_settings_header_onboarding_text">Pindutin nang matagal ang mga icon para sa higit pang opsyon</string>
@@ -1383,7 +1391,7 @@ Pangtipid sa baterya"</string>
     <string name="recents_deep_clean_option">Malalim na paglinis</string>
     <string name="recents_empty_no_apps_open">Walang bukas na aplikasyon</string>
     <string name="recents_empty_recently_closed">Kamakailan na sinaran na apps</string>
-    <string name="recents_normal_clean_description">I-clear ang listahan ng gawain at cache nang hindi kini-clear ang mga proseso sa background.</string>
+    <string name="recents_normal_clean_description">I-clear ang listahan ng task at cache nang hindi kini-clear ang mga proseso sa background.</string>
     <string name="recents_normal_clean_option">Normal na pag-clear</string>
     <string name="recents_option_note">Maaari mo itong baguhin sa Pantugma -> Pasulong.</string>
     <string name="recents_option_title">Aling paraan ang mas nais mo</string>
@@ -1733,6 +1741,7 @@ Ang sinumang user ay maaaring mag-update ng mga app para sa lahat ng iba pang us
     <string name="wifi_verbose_logging">I-enable ang Pagla-log sa Wi‑Fi Verbose</string>
     <string name="wifi_verbose_logging_summary">Pataasin ang antas ng Wi‑Fi logging, ipakita sa bawat SSID RSSI sa Wi‑Fi Picker</string>
     <string name="window_animation_scale_title">Scale ng window animation</string>
+    <string name="work_life_balance_mode">Work-Life Balance</string>
     <string name="yes_bubbles">Payagan</string>
     <string name="zen_alarm_warning">Hindi mo maririnig ang iyong susunod na alarm ng %1$s</string>
     <string name="zen_alarm_warning_indef">Hindi mo maririnig ang iyong susunod na alarm ng %1$s maliban kung io-off mo ito bago pa dumating ang oras na iyon</string>

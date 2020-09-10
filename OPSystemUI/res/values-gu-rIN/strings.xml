@@ -13,8 +13,11 @@
     <string name="accessibility_quick_settings_night_mode_changed_on">રાત્રી મોડ ચાલુ કરવામાં આવ્યો છે.</string>
     <string name="accessibility_quick_settings_power_saving_changed_off">બેટરી સેવર મોડ બંધ છે.</string>
     <string name="accessibility_quick_settings_power_saving_changed_on">બેટરી સેવર મોડ ચાલુ છે.</string>
+    <string name="accessibility_work_life_balance_mode">કાર્ય-જીવનનું સંતુલન</string>
+    <string name="accessibility_work_life_balance_mode_off">કાર્ય-જીવનનું સંતુલન મોડ બંધ કરેલું છે.</string>
+    <string name="accessibility_work_life_balance_mode_on">કાર્ય-જીવનનું સંતુલન મોડ ચાલુ કરેલું છે.</string>
     <string name="activity_not_available">એપ ઉપલબ્ધ નથી</string>
-    <string name="allow_notification">સૂચનો માટે પરવાનગી આપો</string>
+    <string name="allow_notification">સૂચનોની અનુમતિ આપો</string>
     <string name="battery_low_warning">%s બાકી છે, વપરાશ વધારવા માટે બૅટરી સેવર ચાલુ કરો</string>
     <string name="battery_usage_extanded">તમારા વપરાશના આધારે બૅટરી સેવર વપરાશને લગભગ %s સુધી વિસ્તારીત કરી શકે છે</string>
     <string name="battery_usage_remaining_time">%s બાકી</string>
@@ -22,7 +25,7 @@
     <string name="clear_process_warning_checkbox">સમજાઈ ગયું, કૃપા કરી ફરી ના બતાવતા</string>
     <string name="clear_process_warning_message">આ તમામ બેકગ્રાઉન્ડમાં ચાલતી પ્રક્રિયાઓ સાફ કરશે, જે અનપેક્ષિત પરિણામો આપી શકે છે. અમુક એપ્લિકેશન કામ કરવાનું બંધ કરી શકે અને તેમને રીસ્ટાર્ટ કરવાની જરૂર પડી શકે. તમે ચાલુ રાખવા માગો છો?</string>
     <string name="clear_process_warning_title">સાવધાની</string>
-    <string name="delete">ડિલીટ કરો</string>
+    <string name="delete">હટાવો</string>
     <string name="denoise_notification">નિમ્ન પ્રાધાન્યતા સૂચના</string>
     <string name="drag_to_add_tiles">ટાઈલ ઉમેરવા માટે ખેંચો</string>
     <string name="edit_mode_hint">ટાઇલ્સ ફરીથી ગોઠવવા માટે ડ્રેગ કરો. બતાવવા અથવા છુપાવવા માટે ટેપ કરો.</string>
@@ -70,7 +73,7 @@
     <string name="oneplus_laboratory_added_toast">અભિનંદન! OnePlus લેબોરેટરી સેટિંગ્સ માટે ઉમેરાઈ ગયેલ છે</string>
     <string name="oneplus_screen_features_not_available_toast">ચાલુ હોય ત્યારે, સ્ક્રીન કૅલિબ્રેશન જેવી સુવિધાઓ ઉપલબ્ધ હશે નહીં</string>
     <string name="oneplus_threekey_navigation_disturb_changed">"'ખલેલ પહોંચાડશો નહીં' બદલાયું છે."</string>
-    <string name="oneplus_threekey_navigation_next">આગળ જાઓ</string>
+    <string name="oneplus_threekey_navigation_next">આગળ</string>
     <string name="oneplus_threekey_navigation_silence">સંંપૂર્ણ શાંતિ</string>
     <string name="oneplus_threekey_navigation_slider_has_changed">ચેતવણી સ્લાઇડર બદલાયું છે!</string>
     <string name="oneplus_threekey_navigation_sound">તમામ ધ્વનિઓને મંજૂરી છે</string>
@@ -91,6 +94,7 @@
     <string name="op_notification_channel_summary_low">ઓછી મહત્વપૂર્ણ સૂચનાઓ કોઈપણ ધ્વનિ અથવા વાઇબ્રેશન વિના.</string>
     <string name="op_notification_section_header_gentle">અન્ય સૂચનાઓ</string>
     <string name="op_notification_silence_title">અન્ય</string>
+    <string name="op_qs_dark_mode_tile_label">અંધકારમય પ્રકારમાં છે</string>
     <string name="op_quick_settings_night_display_label">રાત્રી મોડ</string>
     <string name="op_quick_settings_night_display_summary_off">રાત્રિ મોડ ચાલુ છે, ચાલુ કરવા માટે ટેપ કરો</string>
     <string name="op_quick_settings_night_display_summary_on">રાત્રિ મોડ ચાલુ છે, બંધ કરવા માટે ટેપ કરો</string>
@@ -103,7 +107,7 @@
     <string name="overheat_dialog_purple_button">હવે પાવર બંધ કરો</string>
     <string name="overheat_dialog_purple_message">ફોન 5 સેકન્ડ પછી બંધ થઈ જશે</string>
     <string name="overheat_dialog_red_message">તાપમાન ઓછું કરવા બધી એપ્લિકેશનની પ્રક્રિયાઓ સાફ કરશે</string>
-    <string name="overheat_dialog_title">તમારા ફોનનું તાપમાન ખૂબ વધારે છે</string>
+    <string name="overheat_dialog_title">તમારા ફોનનું તાપમાન ખૂબ જ વધારે છે</string>
     <string name="overheat_notification_alert">તમારા ફોનનું તાપમાન ખૂબ વધારે છે અને તાપમાનને ઘટાડવા માટે ઉચ્ચ વાપરતા કાર્યો બંધ કરવામાં આવ્યા છે</string>
     <string name="overheat_notification_resume">ફોનનું તાપમાન પુનઃસ્થાપિત કરવામાં આવેલ છે અને ફોનનો સામાન્યની જેમ ઉપયોગ કરી શકાય છે</string>
     <string name="overheat_notification_title_resume">ફોનનું તાપમાન પુનઃસ્થાપિત કરવામાં આવેલ છે</string>
@@ -115,6 +119,10 @@
     <string name="prevent_view_top_tag_numbuer1">"1. "</string>
     <string name="prevent_view_top_tag_numbuer2">"2. "</string>
     <string name="qs_edit">સંપાદિત કરો</string>
+    <string name="qs_panel_life_mode">જીવન</string>
+    <string name="qs_panel_none">કોઈ નહી</string>
+    <string name="qs_panel_set_up">સેટ અપ કરો</string>
+    <string name="qs_panel_work_mode">કાર્ય</string>
     <string name="quick_launch_exit">બહાર નીકળો</string>
     <string name="quick_launch_exit_hint">બહાર નીકળવા માટે સ્ક્રીનથી આંગળી દૂર કરો</string>
     <string name="quick_reply">જવાબ આપો</string>
@@ -130,7 +138,7 @@
     <string name="quick_settings_game_mode_demo_all">સૂચના અવરોધિત કરવામાં આવશે અને કેપેસિટીવ બટનનોને લૉક કરવામાં આવશે</string>
     <string name="quick_settings_game_mode_demo_button">કેપેસિટીવ બટનો લૉક કરવામાં આવશે</string>
     <string name="quick_settings_game_mode_demo_notification">સૂચનાઓ અવરોધિત કરવામાં આવશે</string>
-    <string name="quick_settings_game_mode_label">ગેમિંગ મોડ</string>
+    <string name="quick_settings_game_mode_label">રમત મોડ</string>
     <string name="quick_settings_game_mode_summary_off">રમત મોડ બંધ છે, ચાલુ કરવા માટે ટેપ કરો</string>
     <string name="quick_settings_game_mode_summary_on">રમત મોડ ચાલુ છે, બંધ કરવા માટે ટેપ કરો</string>
     <string name="quick_settings_hotspot_no_password">નેટવર્ક ખોલો</string>
@@ -152,7 +160,7 @@
     <string name="recents_deep_clean_dialog_message">ડીપ ક્લીન તમામ બેકગ્રાઉન્ડમાં ચાલતી પ્રક્રિયાઓ સાફ કરશે, જે અનપેક્ષિત પરિણામો આપી શકે છે. કેટલીક એપ્લિકેશન કામ કરવાનું બંધ કરી શકે છે અને જ્યાં સુધી તમે તેને રીસ્ટાર્ટ ન કરો ત્યાં સુધી સુચનાઓ મળશે નહીં. કૃપા કરીને પુષ્ટિ કરો.</string>
     <string name="recents_deep_clean_dialog_title">સાવધાની</string>
     <string name="recents_deep_clean_message">તમામ એપ્લિકેશન છોડો</string>
-    <string name="recents_deep_clean_option">ડીપ ક્લીયર</string>
+    <string name="recents_deep_clean_option">ડીપ ક્લીન</string>
     <string name="recents_empty_no_apps_open">કોઈ એપ્લિકેશન ખુલી નથી</string>
     <string name="recents_empty_recently_closed">તાજેતરમાં બંધ કરેલી એપ્લિકેશન્સ</string>
     <string name="recents_normal_clean_description">પૃષ્ઠભૂમિ પ્રક્રિયાઓ સાફ કર્યા વગર કાર્ય સૂચી અને કેશ સાફ કરો.</string>
@@ -166,7 +174,7 @@
     <string name="select_hours">કલાક પસંદ કરો</string>
     <string name="select_minutes">મિનિટ પસંદ કરો</string>
     <string name="select_year">વર્ષ પસંદ કરો</string>
-    <string name="sim_status_uss_network_roam">રોમિંગ</string>
+    <string name="sim_status_uss_network_roam">રોમ</string>
     <string name="time_picker_header_text">સમય સેટ કરો</string>
     <string name="time_picker_hour_label">કલાક</string>
     <string name="time_picker_input_error">માન્ય સમય દાખલ કરો</string>
@@ -180,6 +188,7 @@
     <string name="volume_footer_slient">સાઈલેંટ</string>
     <string name="volume_footer_vibrate">સાઇલેન્ટ (વાયબ્રેટ)</string>
     <string name="volume_vibrate">વાઈબ્રેટ</string>
+    <string name="work_life_balance_mode">Work-Life Balance</string>
     <string name="zen_important_interruptions">પ્રાથમિક સૂચનાઓ</string>
     <string name="zen_interruption_level_all">બધી સૂચનાઓ</string>
     <string name="zen_no_interruptions">સાઈલેંટ</string>

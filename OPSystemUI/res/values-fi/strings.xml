@@ -259,6 +259,9 @@
     <string name="accessibility_wimax_signal_full">Vahva WiMAX-signaali.</string>
     <string name="accessibility_wimax_three_bars">WiMAX: kolme palkkia.</string>
     <string name="accessibility_wimax_two_bars">WiMAX: kaksi palkkia.</string>
+    <string name="accessibility_work_life_balance_mode">Työn ja vapaa-ajan tasapaino</string>
+    <string name="accessibility_work_life_balance_mode_off">Työ- ja yksityiselämän tasapainotila pois käytöstä.</string>
+    <string name="accessibility_work_life_balance_mode_on">Työ- ja yksityiselämän tasapainotila on päällä.</string>
     <string name="accessibility_zero_bars">Nolla palkkia.</string>
     <string name="active_input_method_subtypes">Aktiiviset syöttötavat</string>
     <string name="activity_launch_on_secondary_display_failed_text">Sovellus ei tue käynnistämistä toissijaisilla näytöillä.</string>
@@ -655,7 +658,7 @@ Kun puhelin on jäähtynyt, se toimii normaalisti."</string>
     <string name="high_temp_title">Puhelin lämpenee</string>
     <string name="home">Asetusten etusivu</string>
     <string name="hotspot_apm_message">Mobiiliverkkoihin ei voi yhdistää, kun lentotila on käytössä. Ota lentotila pois käytöstä ja yritä uudelleen.</string>
-    <string name="hotspot_operator_dialog_nosim_msg">Asenna SIM-kortti käyttääksesi mobiilihotspotia ja muita Internet-yhteyden jakamisvaihtoehtoja</string>
+    <string name="hotspot_operator_dialog_nosim_msg">Asenna SIM-kortti käyttääksesi mobiili-hotspotia ja muita Internet-yhteyden jakamisvaihtoehtoja</string>
     <string name="hotspot_operator_dialog_nosim_title">Ei SIM-korttia</string>
     <string name="hotspot_operator_dialog_othererror_msg">Et ole tilannut Wi-Fi-yhteyden jakamista</string>
     <string name="hotspot_operator_dialog_othererror_title">Wi-Fi-yhteyden jakamisvirhe</string>
@@ -1113,6 +1116,7 @@ Olet myös yhteydessä VPN:ään, joka voi valvoa toimintaasi verkossa."</string
     <string name="op_notification_channel_summary_low">Vähemmän tärkeät ilmoitukset ilman ääntä tai värinää.</string>
     <string name="op_notification_section_header_gentle">Muut ilmoitukset</string>
     <string name="op_notification_silence_title">Muut</string>
+    <string name="op_qs_dark_mode_tile_label">Pimeä tila</string>
     <string name="op_quick_settings_night_display_label">Yötila</string>
     <string name="op_quick_settings_night_display_summary_off">Yötila on pois käytöstä, ota käyttöön napauttamalla</string>
     <string name="op_quick_settings_night_display_summary_on">Yötila on käytössä, poista käytöstä napauttamalla</string>
@@ -1242,10 +1246,14 @@ Olet myös yhteydessä VPN:ään, joka voi valvoa toimintaasi verkossa."</string
     <string name="qs_dnd_replace">Korvaa</string>
     <string name="qs_dnd_until">%s asti</string>
     <string name="qs_edit">Muokkaa</string>
+    <string name="qs_panel_life_mode">Yksityiselämä</string>
+    <string name="qs_panel_none">Ei mitään</string>
+    <string name="qs_panel_set_up">Asetukset</string>
+    <string name="qs_panel_work_mode">Työ</string>
     <string name="qs_rearrange">Järjestä pika-asetukset uudelleen</string>
     <string name="qs_status_phone_muted">Puhelin mykistetty</string>
     <string name="qs_status_phone_vibrate">Puhelin värinätilassa</string>
-    <string name="quick_launch_exit">Lopeta</string>
+    <string name="quick_launch_exit">Poistu</string>
     <string name="quick_launch_exit_hint">Poistu nostamalla sormi näytöltä</string>
     <string name="quick_reply">VASTAA</string>
     <string name="quick_settings">Pika-asetukset</string>
@@ -1696,7 +1704,7 @@ Kaikki käyttäjät voivat päivittää sovelluksia muille käyttäjille."</stri
     <string name="volume_stream_content_description_vibrate">%1$s. Siirry värinätilaan koskettamalla. Myös esteettömyyspalvelut saattavat mykistyä.</string>
     <string name="volume_stream_content_description_vibrate_a11y">%1$s. Siirry värinätilaan napauttamalla.</string>
     <string name="volume_up_silent">Poistu Älä häiritse -tilasta, kun äänenvoimakkuus nousee</string>
-    <string name="volume_vibrate">Värinä</string>
+    <string name="volume_vibrate">Värise</string>
     <string name="volume_zen_end_now">Sammuta nyt</string>
     <string name="vpn_footer">Verkkoa saatetaan valvoa</string>
     <string name="vpn_settings_not_available">Tämä käyttäjä ei voi käyttää VPN-asetuksia</string>
@@ -1733,6 +1741,7 @@ Kaikki käyttäjät voivat päivittää sovelluksia muille käyttäjille."</stri
     <string name="wifi_verbose_logging">Käytä Wi-Fin laajennettua lokikirjausta</string>
     <string name="wifi_verbose_logging_summary">Lisää Wi‑Fin lokikirjaustasoa, näytä SSID RSSI -kohtaisesti Wi‑Fi-valitsimessa.</string>
     <string name="window_animation_scale_title">Ikkuna</string>
+    <string name="work_life_balance_mode">Työn ja vapaa-ajan tasapaino</string>
     <string name="yes_bubbles">Salli</string>
     <string name="zen_alarm_warning">Et kuule seuraavaa hälytystäsi (%1$s).</string>
     <string name="zen_alarm_warning_indef">Et kuule seuraavaa hälytystäsi (%1$s), ellet poista tätä tilaa käytöstä ennen sitä.</string>

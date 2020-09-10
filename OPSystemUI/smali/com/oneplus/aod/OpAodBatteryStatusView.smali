@@ -394,7 +394,7 @@
 .end method
 
 .method protected onFinishInflate()V
-    .locals 2
+    .locals 1
 
     invoke-super {p0}, Landroid/widget/LinearLayout;->onFinishInflate()V
 
@@ -408,25 +408,6 @@
 
     iput-object v0, p0, Lcom/oneplus/aod/OpAodBatteryStatusView;->mPercentage:Landroid/widget/TextView;
 
-    invoke-static {}, Lcom/oneplus/util/OpUtils;->isMCLVersion()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    const/4 v0, 0x3
-
-    invoke-static {v0}, Lcom/oneplus/util/OpUtils;->getMclTypeface(I)Landroid/graphics/Typeface;
-
-    move-result-object v0
-
-    if-eqz v0, :cond_0
-
-    iget-object v1, p0, Lcom/oneplus/aod/OpAodBatteryStatusView;->mPercentage:Landroid/widget/TextView;
-
-    invoke-virtual {v1, v0}, Landroid/widget/TextView;->setTypeface(Landroid/graphics/Typeface;)V
-
-    :cond_0
     sget v0, Lcom/android/systemui/R$id;->battery:I
 
     invoke-virtual {p0, v0}, Landroid/widget/LinearLayout;->findViewById(I)Landroid/view/View;
@@ -455,5 +436,61 @@
 
     iput-object v0, p0, Lcom/oneplus/aod/OpAodBatteryStatusView;->mChargeView:Landroid/widget/ImageView;
 
+    return-void
+.end method
+
+.method public setClockStyle(I)V
+    .locals 2
+
+    const/4 v0, 0x4
+
+    if-ne p1, v0, :cond_0
+
+    invoke-virtual {p0}, Landroid/widget/LinearLayout;->getContext()Landroid/content/Context;
+
+    move-result-object p1
+
+    sget v0, Lcom/android/systemui/R$font;->oneplus_aod_font:I
+
+    invoke-static {p1, v0}, Landroid/support/v4/content/res/ResourcesCompat;->getFont(Landroid/content/Context;I)Landroid/graphics/Typeface;
+
+    move-result-object p1
+
+    const/16 v0, 0x190
+
+    const/4 v1, 0x0
+
+    invoke-static {p1, v0, v1}, Landroid/graphics/Typeface;->create(Landroid/graphics/Typeface;IZ)Landroid/graphics/Typeface;
+
+    move-result-object p1
+
+    goto :goto_0
+
+    :cond_0
+    invoke-static {}, Lcom/oneplus/util/OpUtils;->isMCLVersion()Z
+
+    move-result p1
+
+    if-eqz p1, :cond_1
+
+    const/4 p1, 0x3
+
+    invoke-static {p1}, Lcom/oneplus/util/OpUtils;->getMclTypeface(I)Landroid/graphics/Typeface;
+
+    move-result-object p1
+
+    goto :goto_0
+
+    :cond_1
+    sget-object p1, Landroid/graphics/Typeface;->DEFAULT:Landroid/graphics/Typeface;
+
+    :goto_0
+    if-eqz p1, :cond_2
+
+    iget-object p0, p0, Lcom/oneplus/aod/OpAodBatteryStatusView;->mPercentage:Landroid/widget/TextView;
+
+    invoke-virtual {p0, p1}, Landroid/widget/TextView;->setTypeface(Landroid/graphics/Typeface;)V
+
+    :cond_2
     return-void
 .end method

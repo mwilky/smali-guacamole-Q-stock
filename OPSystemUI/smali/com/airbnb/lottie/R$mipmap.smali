@@ -15,9 +15,9 @@
 
 
 # static fields
-.field public static final ic_daydreams:I = 0x7f0e0000
+.field public static final ic_daydreams:I = 0x7f0f0000
 
-.field public static final ic_launcher_dreams:I = 0x7f0e0001
+.field public static final ic_launcher_dreams:I = 0x7f0f0001
 
 
 # direct methods

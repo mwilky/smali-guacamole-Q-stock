@@ -4,8 +4,8 @@
 
 
 # static fields
-.field public static final charging:I = 0x7f100000
+.field public static final charging:I = 0x7f110000
 
-.field public static final image_wallpaper_fragment_shader:I = 0x7f100001
+.field public static final image_wallpaper_fragment_shader:I = 0x7f110001
 
-.field public static final image_wallpaper_vertex_shader:I = 0x7f100002
+.field public static final image_wallpaper_vertex_shader:I = 0x7f110002

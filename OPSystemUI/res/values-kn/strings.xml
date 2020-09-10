@@ -259,6 +259,9 @@
     <string name="accessibility_wimax_signal_full">WiMAX ಸಿಗ್ನಲ್‌ ಪೂರ್ತಿ ಇದೆ.</string>
     <string name="accessibility_wimax_three_bars">WiMAX ಮೂರು ಪಟ್ಟಿಗಳು.</string>
     <string name="accessibility_wimax_two_bars">WiMAX ಎರಡು ಪಟ್ಟಿಗಳು.</string>
+    <string name="accessibility_work_life_balance_mode">ಕೆಲಸ ಜೀವನದ ಸಮತೋಲನ</string>
+    <string name="accessibility_work_life_balance_mode_off">ಕೆಲಸ ಜೀವನದ ಸಮತೋಲನ ಮೋಡ್ ಆಫ್ ಮಾಡಲಾಗಿದೆ.</string>
+    <string name="accessibility_work_life_balance_mode_on">ಕೆಲಸ ಜೀವನದ ಸಮತೋಲನ ಮೋಡ್ ಆನ್ ಮಾಡಲಾಗಿದೆ.</string>
     <string name="accessibility_zero_bars">ಶೂನ್ಯ ಪಟ್ಟಿಗಳು.</string>
     <string name="active_input_method_subtypes">ಸಕ್ರಿಯ ಇನ್‌ಪುಟ್ ವಿಧಾನಗಳು</string>
     <string name="activity_launch_on_secondary_display_failed_text">ಸೆಕೆಂಡರಿ ಡಿಸ್‌ಪ್ಲೇಗಳಲ್ಲಿ ಪ್ರಾರಂಭಿಸುವಿಕೆಯನ್ನು ಅಪ್ಲಿಕೇಶನ್ ಬೆಂಬಲಿಸುವುದಿಲ್ಲ.</string>
@@ -695,8 +698,8 @@
     <string name="interruption_level_alarms_twoline">"ಅಲಾರಮ್‌ಗಳು
 ಮಾತ್ರ"</string>
     <string name="interruption_level_game">ಗೇಮ್</string>
-    <string name="interruption_level_movie">ಮೂವೀ</string>
-    <string name="interruption_level_music">ಮ್ಯೂಸಿಕ್</string>
+    <string name="interruption_level_movie">ಚಲನಚಿತ್ರ</string>
+    <string name="interruption_level_music">ಸಂಗೀತ</string>
     <string name="interruption_level_none">ಸಂಪೂರ್ಣ ನಿಶ್ಯಬ್ಧ</string>
     <string name="interruption_level_none_twoline">"ಸಂಪೂರ್ಣ
 ನಿಶ್ಯಬ್ಧ"</string>
@@ -1030,7 +1033,7 @@
     <string name="music_controls_no_title">ಯಾವುದೇ ಶೀರ್ಷಿಕೆಯಿಲ್ಲ</string>
     <string name="nav_bar">ನ್ಯಾವಿಗೇಷನ್ ಬಾರ್</string>
     <string name="nav_bar_default">(ಡಿಫಾಲ್ಟ್‌)</string>
-    <string name="nav_bar_guide_positive">ತಿಳಿಯಿತು</string>
+    <string name="nav_bar_guide_positive">ಅರ್ಥವಾಯಿತು</string>
     <string name="nav_bar_guide_title">ನೇವಿಗೇಶನ್ ಬಾರ್ ತೋರಿಸಲು ಕೆಳಗಿನಿಂದ ಮೇಲಕ್ಕೆ ಸ್ವೈಪ್ ಮಾಡಿ. ನೇವಿಗೇಶನ್ ಬಚ್ಚಿಡುವಿಕೆ ನಿಲ್ಲಿಸಲು, ದಯವಿಟ್ಟು ಇಲ್ಲಿ ಟ್ಯಾಪ್ ಮಾಡಿ.</string>
     <string name="nav_bar_layout">ಲೇಔಟ್</string>
     <string name="no_application">ಏನೂ ಇಲ್ಲ</string>
@@ -1088,7 +1091,7 @@
     <string name="oneplus_laboratory_added_toast">ಅಭಿನಂದನೆಗಳು! OnePlus ಲ್ಯಾಬೊರೇಟರಿಯನ್ನು ಸೆಟ್ಟಿಂಗ್ಸ್‌ಗೆ ಸೇರಿಸಲಾಗಿದೆ</string>
     <string name="oneplus_screen_features_not_available_toast">ಆನ್ ಆಗಿರುವಾಗ, ಪರದೆ ಮಾಪನದಂತಹ ವೈಶಿಷ್ಟ್ಯಗಳು ಲಭ್ಯವಿರುವುದಿಲ್ಲ</string>
     <string name="oneplus_threekey_navigation_disturb_changed">"'ಅಡಚಣೆ ಮಾಡಬೇಡಿ' ಮೋಡ್ ಬದಲಾಗಿದೆ!"</string>
-    <string name="oneplus_threekey_navigation_next">ಮುಂದಿನದು</string>
+    <string name="oneplus_threekey_navigation_next">ಮುಂದಿನ</string>
     <string name="oneplus_threekey_navigation_silence">ಪೂರ್ಣ ನಿಶ್ಯಬ್ಧ</string>
     <string name="oneplus_threekey_navigation_slider_has_changed">ಎಚ್ಚರಿಕೆ ಸ್ಲೈಡರ್ ಬದಲಾಗಿದೆ!</string>
     <string name="oneplus_threekey_navigation_sound">ಎಲ್ಲಾ ಧ್ವನಿಗಳನ್ನು ಅನುಮತಿಸಲಾಗಿದೆ</string>
@@ -1113,6 +1116,7 @@
     <string name="op_notification_channel_summary_low">ಯಾವುದೇ ಶಬ್ಧ ಅಥವಾ ಕಂಪನವಿಲ್ಲದೆಯೇ ಕಡಿಮೆ ಪ್ರಾಮುಖ್ಯತೆಯುಳ್ಳ ಅಧಿಸೂಚನೆಗಳು.</string>
     <string name="op_notification_section_header_gentle">ಇತರೆ ಅಧಿಸೂಚನೆಗಳು</string>
     <string name="op_notification_silence_title">ಇತರೆ</string>
+    <string name="op_qs_dark_mode_tile_label">ಡಾರ್ಕ್ ಮೋಡ್</string>
     <string name="op_quick_settings_night_display_label">ನೈಟ್ ಮೋಡ್</string>
     <string name="op_quick_settings_night_display_summary_off">ನೈಟ್ ಮೋಡ್ ಆಫ್ ಆಗಿದೆ. ಟರ್ನ್ ಆನ್ ಮಾಡಲು ಟ್ಯಾಪ್ ಮಾಡಿ</string>
     <string name="op_quick_settings_night_display_summary_on">ನೈಟ್ ಮೋಡ್ ಆನ್ ಆಗಿದೆ. ಟರ್ನ್ ಆಫ್ ಮಾಡಲು ಟ್ಯಾಪ್ ಮಾಡಿ</string>
@@ -1140,7 +1144,7 @@
     <string name="overheat_dialog_purple_button">ಈಗಲೇ ಪವರ್ ಆಫ್ ಮಾಡಿ</string>
     <string name="overheat_dialog_purple_message">ಫೋನ್ 5 ಸೆಕೆಂಡುಗಳ ನಂತರ ಪವರ್ ಆಫ್ ಆಗುತ್ತದೆ</string>
     <string name="overheat_dialog_red_message">ಉಷ್ಣತೆಯನ್ನು ಕಡಿಮೆ ಮಾಡಲು ಎಲ್ಲಾ ಅಪ್ಲಿಕೇಶನ್ ಪ್ರಕ್ರಿಯೆಗಳನ್ನು ತೆರವುಗೊಳಿಸಲಾಗುತ್ತದೆ</string>
-    <string name="overheat_dialog_title">ಫೋನ್‌ನ ಉಷ್ಣತೆಯು ತುಂಬಾ ಹೆಚ್ಚಾಗಿದೆ</string>
+    <string name="overheat_dialog_title">ನಿಮ್ಮ ಫೋನ್‌ನ ಉಷ್ಣತೆಯು ತುಂಬಾ ಹೆಚ್ಚಾಗಿದೆ</string>
     <string name="overheat_notification_alert">ನಿಮ್ಮ ಫೋನ್‌ನ ತಾಪಮಾನ ತುಂಬಾ ಹೆಚ್ಚಿದೆ ಮತ್ತು ತಾಪಮಾನವನ್ನು ಕಡಿಮೆ ಮಾಡಲು ಹೆಚ್ಚು ಶಕ್ತಿಯನ್ನು ಬಳಸುವ ಕಾರ್ಯಗಳನ್ನು ಆಫ್ ಮಾಡಲಾಗಿದೆ</string>
     <string name="overheat_notification_resume">ಫೋನ್‌ನ ಉಷ್ಣತೆಯು ಸಹಜ ಸ್ಥಿತಿಗೆ ಬಂದಿದೆ ಮತ್ತು ಫೋನ್ ಅನ್ನು ಸಾಮಾನ್ಯ ರೀತಿಯಲ್ಲಿ ಬಳಸಬಹುದಾಗಿದೆ</string>
     <string name="overheat_notification_title_resume">ಫೋನ್‌ನ ಉಷ್ಣತೆಯು ಸಹಜ ಸ್ಥಿತಿಗೆ ಬಂದಿದೆ</string>
@@ -1242,6 +1246,10 @@
     <string name="qs_dnd_replace">ಬದಲಿಸಿ</string>
     <string name="qs_dnd_until">%s ತನಕ</string>
     <string name="qs_edit">ಎಡಿಟ್</string>
+    <string name="qs_panel_life_mode">ಜೀವನ</string>
+    <string name="qs_panel_none">ಯಾವುದೂ ಇಲ್ಲ</string>
+    <string name="qs_panel_set_up">ಹೊಂದಿಸಿ</string>
+    <string name="qs_panel_work_mode">ಕೆಲಸ</string>
     <string name="qs_rearrange">ತ್ವರಿತ ಸೆಟ್ಟಿಂಗ್‌‌ಗಳನ್ನು ಮರುಹೊಂದಿಸಿ</string>
     <string name="qs_status_phone_muted">ಫೋನ್ ಅನ್ನು ಮ್ಯೂಟ್ ಮಾಡಲಾಗಿದೆ</string>
     <string name="qs_status_phone_vibrate">ಫೋನ್ ವೈಬ್ರೇಟ್‌ನಲ್ಲಿದೆ</string>
@@ -1383,7 +1391,7 @@
     <string name="recents_deep_clean_option">ಆಳ ತೆರವು</string>
     <string name="recents_empty_no_apps_open">ಯಾವುದೇ ಅಪ್ಲಿಕೇಶನ್‌ಗಳು ತೆರೆದಿಲ್ಲ</string>
     <string name="recents_empty_recently_closed">ಇತ್ತೀಚೆಗೆ ಮುಚ್ಚಿದ ಆಪ್‌ಗಳು</string>
-    <string name="recents_normal_clean_description">ಹಿನ್ನೆಲೆ ಪ್ರಕ್ರಿಯೆಗಳನ್ನು ತೆರವುಗೊಳಿಸದೆಯೇ, ಕಾರ್ಯ ಪಟ್ಟಿ ಮತ್ತು ಕ್ಯಾಶ್‌ ತೆರವುಗೊಳಿಸಿ.</string>
+    <string name="recents_normal_clean_description">ಹಿನ್ನೆಲೆ ಪ್ರಕ್ರಿಯೆಗಳನ್ನು ತೆರವುಗೊಳಿಸದೆ, ಕಾರ್ಯ ಪಟ್ಟಿ ಮತ್ತು ಕ್ಯಾಶ್‌ ತೆರವುಗೊಳಿಸಿ.</string>
     <string name="recents_normal_clean_option">ಸಾಮಾನ್ಯ ತೆರವು</string>
     <string name="recents_option_note">ನೀವು ಸೆಟ್ಟಿಂಗ್ -> ಮುಂದುವರಿಕೆಯಲ್ಲಿ ಬದಲಾಯಿಸಬಹುದು.</string>
     <string name="recents_option_title">ನೀವು ಯಾವ ಮಾರ್ಗಕ್ಕೆ ಆದ್ಯತೆ ನೀಡುವಿರಿ</string>
@@ -1733,6 +1741,7 @@
     <string name="wifi_verbose_logging">Wi‑Fi ವೆರ್ಬೋಸ್ ಲಾಗಿಂಗ್ ಸಕ್ರಿಯಗೊಳಿಸಿ</string>
     <string name="wifi_verbose_logging_summary">Wi‑Fi ಲಾಗಿಂಗ್ ಮಟ್ಟನ್ನು ಹೆಚ್ಚಿಸಿ, Wi‑Fi ಆಯ್ಕೆಯಲ್ಲಿ ಪ್ರತಿಯೊಂದು SSID RSSI ತೋರಿಸಿ</string>
     <string name="window_animation_scale_title">Window ಅನಿಮೇಶನ್ ಸ್ಕೇಲ್‌</string>
+    <string name="work_life_balance_mode">Work-Life Balance</string>
     <string name="yes_bubbles">ಅನುಮತಿಸಿ</string>
     <string name="zen_alarm_warning">ನಿಮ್ಮ ಮುಂದಿನ %1$s ಅಲಾರಮ್ ಅನ್ನು ನೀವು ಆಲಿಸುವುದಿಲ್ಲ</string>
     <string name="zen_alarm_warning_indef">ನೀವು ಈ ಅಲಾರಮ್ ಆಫ್ ಮಾಡುವವರೆಗೆ ನಿಮ್ಮ ಮುಂದಿನ %1$s ಅಲಾರಮ್ ಅನ್ನು ನೀವು ಆಲಿಸುವುದಿಲ್ಲ</string>

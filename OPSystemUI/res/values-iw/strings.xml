@@ -259,6 +259,9 @@
     <string name="accessibility_wimax_signal_full">‏אות ה-WiMAX מלא.</string>
     <string name="accessibility_wimax_three_bars">‏שלושה פסים של WiMAX.</string>
     <string name="accessibility_wimax_two_bars">‏שני פסים של WiMAX.</string>
+    <string name="accessibility_work_life_balance_mode">איזון בין החיים לעבודה</string>
+    <string name="accessibility_work_life_balance_mode_off">מצב איזון בין החיים לעבודה כבוי.</string>
+    <string name="accessibility_work_life_balance_mode_on">מצב איזון בין החיים לעבודה פועל.</string>
     <string name="accessibility_zero_bars">אפס פסים.</string>
     <string name="active_input_method_subtypes">שיטות קלט פעילות</string>
     <string name="activity_launch_on_secondary_display_failed_text">האפליקציה אינה תומכת בהפעלה במסכים משניים.</string>
@@ -1113,6 +1116,7 @@
     <string name="op_notification_channel_summary_low">הודעות חשובות פחות ללא צליל או רטט.</string>
     <string name="op_notification_section_header_gentle">הודעות אחרות</string>
     <string name="op_notification_silence_title">אחר</string>
+    <string name="op_qs_dark_mode_tile_label">מצב כהה</string>
     <string name="op_quick_settings_night_display_label">מצב לילה</string>
     <string name="op_quick_settings_night_display_summary_off">מצב לילה כבוי, לחץ כדי להפעיל</string>
     <string name="op_quick_settings_night_display_summary_on">מצב לילה פועל, לחץ כדי להפסיק</string>
@@ -1242,6 +1246,10 @@
     <string name="qs_dnd_replace">החלף</string>
     <string name="qs_dnd_until">עד %s</string>
     <string name="qs_edit">עריכה</string>
+    <string name="qs_panel_life_mode">חיים</string>
+    <string name="qs_panel_none">ללא</string>
+    <string name="qs_panel_set_up">הגדר כ-</string>
+    <string name="qs_panel_work_mode">עבודה</string>
     <string name="qs_rearrange">סידור מחדש של הגדרות מהירות</string>
     <string name="qs_status_phone_muted">הטלפון מושתק</string>
     <string name="qs_status_phone_vibrate">הטלפון במצב רטט</string>
@@ -1380,7 +1388,7 @@
     <string name="recents_deep_clean_dialog_message">סריקה עמוקה תנקה את כל תהליכי הרקע, דבר שעשוי להוביל לתוצאות לא מכוונות. יישומים מסוימים עשויים להפסיק לפעול וייתכן שלא תקבל התראות עד שתפעיל אותם מחדש. אנא אשר.</string>
     <string name="recents_deep_clean_dialog_title">זהירות</string>
     <string name="recents_deep_clean_message">צא מכל היישומים</string>
-    <string name="recents_deep_clean_option">ניקוי עמוק</string>
+    <string name="recents_deep_clean_option">סריקה עמוקה</string>
     <string name="recents_empty_no_apps_open">אין יישומים פתוחים</string>
     <string name="recents_empty_recently_closed">יישומים שנסגרו לאחרונה</string>
     <string name="recents_normal_clean_description">נקה את רשימת המשימות ואת המטמון מבלי לנקות תהליכים ברקע.</string>
@@ -1733,11 +1741,12 @@
     <string name="wifi_verbose_logging">‏הפעלת רישום מפורט של Wi‑Fi ביומן</string>
     <string name="wifi_verbose_logging_summary">‏העלה את רמת הרישום של Wi‑Fi ביומן, הצג לכל SSID RSSI ב-Wi‑Fi Picker</string>
     <string name="window_animation_scale_title">קנה מידה לאנימציה של חלון</string>
+    <string name="work_life_balance_mode">Work-Life Balance</string>
     <string name="yes_bubbles">כן, זה בסדר</string>
     <string name="zen_alarm_warning">לא תשמע את ההתראה הבאה שלך %1$s</string>
     <string name="zen_alarm_warning_indef">לא תשמע את ההתראה הבאה שלך %1$s, אלא אם תשבית קודם את ההגדרה הזו</string>
     <string name="zen_alarms_introduction">כדי לא להפריע לך, המכשיר לא ירטוט ולא ישמיע שום צליל, חוץ מהתראות. המצב הזה לא ישפיע על צלילים שהם חלק מתוכן שבחרת להפעיל, כמו מוזיקה, סרטונים ומשחקים.</string>
-    <string name="zen_important_interruptions">התראות עדיפות</string>
+    <string name="zen_important_interruptions">עדיפות התראות</string>
     <string name="zen_interruption_level_all">כל ההתראות</string>
     <string name="zen_interruption_level_priority">עדיפות בלבד</string>
     <string name="zen_mode_and_condition">%1$s‏. %2$s</string>

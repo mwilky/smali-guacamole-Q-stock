@@ -261,6 +261,16 @@
 
     invoke-virtual {p1, p0}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
+    iget-object p1, p0, Lcom/android/systemui/usb/UsbContaminantActivity;->mEnableUsb:Landroid/widget/TextView;
+
+    const/16 v0, 0x8
+
+    invoke-virtual {p1, v0}, Landroid/widget/TextView;->setVisibility(I)V
+
+    iget-object p0, p0, Lcom/android/systemui/usb/UsbContaminantActivity;->mLearnMore:Landroid/widget/TextView;
+
+    invoke-virtual {p0, v0}, Landroid/widget/TextView;->setVisibility(I)V
+
     return-void
 .end method
 

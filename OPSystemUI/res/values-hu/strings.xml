@@ -259,6 +259,9 @@
     <string name="accessibility_wimax_signal_full">WiMAX-jel: teljes.</string>
     <string name="accessibility_wimax_three_bars">WiMAX-jel: három sáv.</string>
     <string name="accessibility_wimax_two_bars">WiMAX-jel: két sáv.</string>
+    <string name="accessibility_work_life_balance_mode">Work-Life Balance</string>
+    <string name="accessibility_work_life_balance_mode_off">Work-Life Balance üzemmód kikapcsolva.</string>
+    <string name="accessibility_work_life_balance_mode_on">Work-Life Balance üzemmód bekapcsolva.</string>
     <string name="accessibility_zero_bars">Nincs sáv.</string>
     <string name="active_input_method_subtypes">Aktív beviteli módok</string>
     <string name="activity_launch_on_secondary_display_failed_text">Az alkalmazást nem lehet másodlagos kijelzőn elindítani.</string>
@@ -1086,7 +1089,7 @@ VPN-hez is kapcsolódik, amely szintén figyelheti hálózati tevékenységét."
     <string name="ok">OK</string>
     <string name="okay">OK</string>
     <string name="oneplus_laboratory_added_toast">Gratulálunk! Az OnePlus laboratórium bekerült a Beállításokba</string>
-    <string name="oneplus_screen_features_not_available_toast">Ha be van kapcsolva, bizonyos funkciók, mint például a képernyő kalibrálása, nem lesznek elérhetők</string>
+    <string name="oneplus_screen_features_not_available_toast">Bekapcsolt állapotban olyan funkciók, mint a képernyő-kalibrálás, nem lesznek elérhetők</string>
     <string name="oneplus_threekey_navigation_disturb_changed">A \"Ne zavarj\" megváltozott!</string>
     <string name="oneplus_threekey_navigation_next">KÖVETKEZŐ</string>
     <string name="oneplus_threekey_navigation_silence">Teljes csend</string>
@@ -1113,6 +1116,7 @@ VPN-hez is kapcsolódik, amely szintén figyelheti hálózati tevékenységét."
     <string name="op_notification_channel_summary_low">Kevésbé fontos értesítések hang és rezgés nélkül.</string>
     <string name="op_notification_section_header_gentle">Egyéb értesítések</string>
     <string name="op_notification_silence_title">Egyéb</string>
+    <string name="op_qs_dark_mode_tile_label">Sötét mód</string>
     <string name="op_quick_settings_night_display_label">Éjszakai mód</string>
     <string name="op_quick_settings_night_display_summary_off">Éjszakai mód nem aktív, koppintásra bekapcsol</string>
     <string name="op_quick_settings_night_display_summary_on">Éjszakai mód aktív, koppintásra kikapcsol</string>
@@ -1242,6 +1246,10 @@ VPN-hez is kapcsolódik, amely szintén figyelheti hálózati tevékenységét."
     <string name="qs_dnd_replace">Csere</string>
     <string name="qs_dnd_until">Eddig: %s</string>
     <string name="qs_edit">Szerkesztés</string>
+    <string name="qs_panel_life_mode">Élet</string>
+    <string name="qs_panel_none">Nincs</string>
+    <string name="qs_panel_set_up">Beállítás</string>
+    <string name="qs_panel_work_mode">Munka</string>
     <string name="qs_rearrange">Gyorsbeállítások átrendezése</string>
     <string name="qs_status_phone_muted">A telefon le van némítva</string>
     <string name="qs_status_phone_vibrate">A telefon rezgő módra van állítva</string>
@@ -1733,11 +1741,12 @@ Bármely felhasználó frissítheti az alkalmazásokat valamennyi felhasználó 
     <string name="wifi_verbose_logging">Részletes Wi-Fi-naplózás engedélyezése</string>
     <string name="wifi_verbose_logging_summary">Wi‑Fi-naplózási szint növelése, RSSI/SSID megjelenítése a Wi‑Fi-választóban</string>
     <string name="window_animation_scale_title">Ablakanimáció tempója</string>
+    <string name="work_life_balance_mode">Work-Life Balance</string>
     <string name="yes_bubbles">Engedélyezés</string>
     <string name="zen_alarm_warning">Nem fogja hallani az ébresztést ekkor: %1$s</string>
     <string name="zen_alarm_warning_indef">Nem fogja hallani a következő ébresztést ekkor: %1$s, ha előbb ezt nem kapcsolja ki</string>
     <string name="zen_alarms_introduction">Az ébresztéseken kívül nem fogja Önt más hang és rezgés megzavarni. Továbbra is lesz hangjuk azoknak a tartalmaknak, amelyeket Ön elindít, például zenék, videók és játékok.</string>
-    <string name="zen_important_interruptions">Magas prioritású értesítések</string>
+    <string name="zen_important_interruptions">Magas prioritású üzenetek</string>
     <string name="zen_interruption_level_all">Minden értesítés</string>
     <string name="zen_interruption_level_priority">Csak prioritásos</string>
     <string name="zen_mode_and_condition">%1$s. %2$s</string>

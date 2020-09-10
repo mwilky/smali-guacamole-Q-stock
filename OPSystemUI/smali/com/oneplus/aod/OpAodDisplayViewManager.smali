@@ -283,7 +283,15 @@
     return-object p0
 .end method
 
-.method static synthetic access$600(Lcom/oneplus/aod/OpAodDisplayViewManager;)Z
+.method static synthetic access$600(Lcom/oneplus/aod/OpAodDisplayViewManager;)Landroid/os/Handler;
+    .locals 0
+
+    iget-object p0, p0, Lcom/oneplus/aod/OpAodDisplayViewManager;->mHandler:Landroid/os/Handler;
+
+    return-object p0
+.end method
+
+.method static synthetic access$700(Lcom/oneplus/aod/OpAodDisplayViewManager;)Z
     .locals 0
 
     invoke-direct {p0}, Lcom/oneplus/aod/OpAodDisplayViewManager;->isAodMode()Z
@@ -293,7 +301,7 @@
     return p0
 .end method
 
-.method static synthetic access$700(Lcom/oneplus/aod/OpAodDisplayViewManager;)Landroid/content/Context;
+.method static synthetic access$800(Lcom/oneplus/aod/OpAodDisplayViewManager;)Landroid/content/Context;
     .locals 0
 
     iget-object p0, p0, Lcom/oneplus/aod/OpAodDisplayViewManager;->mContext:Landroid/content/Context;
@@ -301,7 +309,7 @@
     return-object p0
 .end method
 
-.method static synthetic access$800(Lcom/oneplus/aod/OpAodDisplayViewManager;)Lcom/oneplus/aod/OpAodLightEffectContainer;
+.method static synthetic access$900(Lcom/oneplus/aod/OpAodDisplayViewManager;)Lcom/oneplus/aod/OpAodLightEffectContainer;
     .locals 0
 
     iget-object p0, p0, Lcom/oneplus/aod/OpAodDisplayViewManager;->mLightEffectContainer:Lcom/oneplus/aod/OpAodLightEffectContainer;

@@ -259,6 +259,9 @@
     <string name="accessibility_wimax_signal_full">Надежный сигнал WiMAX.</string>
     <string name="accessibility_wimax_three_bars">Сигнал WiMAX: три деления.</string>
     <string name="accessibility_wimax_two_bars">Сигнал WiMAX: два деления.</string>
+    <string name="accessibility_work_life_balance_mode">Баланс работы и личной жизни</string>
+    <string name="accessibility_work_life_balance_mode_off">Режим баланса работы и личной жизни отключен.</string>
+    <string name="accessibility_work_life_balance_mode_on">Режим баланса работы и личной жизни включен.</string>
     <string name="accessibility_zero_bars">Нет сигнала</string>
     <string name="active_input_method_subtypes">Активные способы ввода</string>
     <string name="activity_launch_on_secondary_display_failed_text">Приложение не поддерживает запуск на дополнительных экранах</string>
@@ -608,7 +611,7 @@
     <string name="face_unlock_timeout">Слишком много неудачных попыток. Попробуйте позже.</string>
     <string name="failed_to_open_app_settings_toast">Не удалось открыть настройки приложения \"%1$s\"</string>
     <string name="fingerprint_dialog_touch_sensor">Прикоснитесь к сканеру отпечатков пальцев.</string>
-    <string name="fingerprint_not_found">Попробуйте еще раз</string>
+    <string name="fingerprint_not_found">Попробуйте снова</string>
     <string name="force_allow_on_external">Разрешить сохранение на внешние накопители</string>
     <string name="force_allow_on_external_summary">Разрешить сохранение приложений на внешних накопителях (независимо от значений в манифесте)</string>
     <string name="force_msaa">Включить 4x MSAA</string>
@@ -655,7 +658,7 @@
     <string name="high_temp_title">Телефон нагревается</string>
     <string name="home">Настройки</string>
     <string name="hotspot_apm_message">Не удается подключиться к мобильным сетям при включенном самолетном режиме. Выключите самолетный режим и повторите попытку.</string>
-    <string name="hotspot_operator_dialog_nosim_msg">Вставьте SIM-карту, чтобы использовать мобильную точку доступа и другие варианты режима модема</string>
+    <string name="hotspot_operator_dialog_nosim_msg">Вставьте SIM-карту, чтобы использовать мобильную точку доступа и другие функции модема</string>
     <string name="hotspot_operator_dialog_nosim_title">Нет SIM-карты</string>
     <string name="hotspot_operator_dialog_othererror_msg">Вы не подписаны на услугу Wi-Fi модема</string>
     <string name="hotspot_operator_dialog_othererror_title">Ошибка режима Wi-Fi модема</string>
@@ -793,7 +796,7 @@
     <string name="keyguard_plugged_in">Идет зарядка (%s)</string>
     <string name="keyguard_plugged_in_charging_fast">Идет быстрая зарядка (%s)</string>
     <string name="keyguard_plugged_in_charging_slowly">Идет медленная зарядка (%s)</string>
-    <string name="keyguard_plugged_in_charging_warp">%s • Зарядка Warp</string>
+    <string name="keyguard_plugged_in_charging_warp">%s • Зарядка Warp Charge</string>
     <string name="keyguard_plugged_in_wireless">%s • Беспроводная зарядка</string>
     <string name="keyguard_sim_error_message_short">Ошибка SIM-карты.</string>
     <string name="keyguard_sim_locked_message">SIM-карта заблокирована.</string>
@@ -1113,6 +1116,7 @@
     <string name="op_notification_channel_summary_low">Менее важные уведомления без звука и вибрации.</string>
     <string name="op_notification_section_header_gentle">Другие уведомления</string>
     <string name="op_notification_silence_title">Другое</string>
+    <string name="op_qs_dark_mode_tile_label">Темный режим</string>
     <string name="op_quick_settings_night_display_label">Ночной режим</string>
     <string name="op_quick_settings_night_display_summary_off">Ночной режим выключен, коснитесь для включения</string>
     <string name="op_quick_settings_night_display_summary_on">Ночной режим включен, коснитесь для выключения</string>
@@ -1242,6 +1246,10 @@
     <string name="qs_dnd_replace">Заменить</string>
     <string name="qs_dnd_until">До %s</string>
     <string name="qs_edit">Изменить</string>
+    <string name="qs_panel_life_mode">Нерабочее время</string>
+    <string name="qs_panel_none">Нет</string>
+    <string name="qs_panel_set_up">Настроить</string>
+    <string name="qs_panel_work_mode">Рабочее время</string>
     <string name="qs_rearrange">Изменить порядок Быстрых настроек</string>
     <string name="qs_status_phone_muted">Звук выключен</string>
     <string name="qs_status_phone_vibrate">Включена вибрация</string>
@@ -1733,6 +1741,7 @@
     <string name="wifi_verbose_logging">Подробный журнал Wi‑Fi</string>
     <string name="wifi_verbose_logging_summary">Вести подробный журнал, показывать RSSI для каждого SSID при выборе сети</string>
     <string name="window_animation_scale_title">Анимация окон</string>
+    <string name="work_life_balance_mode">Баланс рабочего времени</string>
     <string name="yes_bubbles">Разрешить</string>
     <string name="zen_alarm_warning">Следующий будильник: %1$s. Звук отключен.</string>
     <string name="zen_alarm_warning_indef">Следующий будильник: %1$s. Чтобы услышать сигнал, включите звук.</string>

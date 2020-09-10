@@ -14,15 +14,12 @@
     <dimen name="battery_icon_width">25.0px</dimen>
     <dimen name="battery_percentage_text_size">59.5px</dimen>
     <dimen name="battery_status_view_margin_left_with_date_text">37.0px</dimen>
-    <dimen name="clock_analog_size">542.5px</dimen>
     <dimen name="clock_minimalism_size">612.5px</dimen>
     <dimen name="clock_view_default_font_base_line1_y">181.0px</dimen>
     <dimen name="clock_view_default_font_base_line2_y">406.0px</dimen>
     <dimen name="clock_view_default_font_size">238.0px</dimen>
-    <dimen name="date_time_view_analog_marginTop">321.5px</dimen>
     <dimen name="date_time_view_default_marginTop">335.5px</dimen>
     <dimen name="date_time_view_minimalism_marginTop">321.5px</dimen>
-    <dimen name="date_view_analog_marginTop">123.0px</dimen>
     <dimen name="date_view_default_font_size">59.5px</dimen>
     <dimen name="date_view_default_marginTop">24.5px</dimen>
     <dimen name="date_view_font_base_line_y">63.0px</dimen>
@@ -62,7 +59,6 @@
     <dimen name="notification_footer_button_height">138.0px</dimen>
     <dimen name="notification_footer_button_text_size">43.0px</dimen>
     <dimen name="notification_footer_padding">0.0px</dimen>
-    <dimen name="notification_icon_analog_empty_view_height">118.0px</dimen>
     <dimen name="notification_icon_default_empty_view_height">118.0px</dimen>
     <dimen name="op_biometric_animation_view_ss_y">2035.0px</dimen>
     <dimen name="op_biometric_animation_view_y">2361.5px</dimen>
@@ -194,7 +190,6 @@
     <dimen name="op_warp_charging_anim_info_wrap_view_margin_top">40.0px</dimen>
     <dimen name="op_warp_charging_text_image_height">112.0px</dimen>
     <dimen name="op_warp_charging_text_image_width">266.0px</dimen>
-    <dimen name="owner_info_analog_marginTop">119.0px</dimen>
     <dimen name="owner_info_default_marginTop">119.0px</dimen>
     <dimen name="owner_view_text_size">45.5px</dimen>
     <dimen name="qs_carrier_text_padding">70.0px</dimen>

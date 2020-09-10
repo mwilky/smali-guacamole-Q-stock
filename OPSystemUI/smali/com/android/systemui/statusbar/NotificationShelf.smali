@@ -636,7 +636,7 @@
 
     move-result v2
 
-    if-eqz v1, :cond_d
+    if-eqz v1, :cond_e
 
     div-float/2addr v2, v7
 
@@ -761,15 +761,15 @@
     :cond_b
     invoke-virtual {p0}, Lcom/android/systemui/statusbar/notification/row/ActivatableNotificationView;->getBackgroundColorWithoutTint()I
 
-    move-result p0
+    move-result p2
 
-    invoke-virtual {v0, p0}, Lcom/android/systemui/statusbar/StatusBarIconView;->getContrastedStaticDrawableColor(I)I
+    invoke-virtual {v0, p2}, Lcom/android/systemui/statusbar/StatusBarIconView;->getContrastedStaticDrawableColor(I)I
 
-    move-result p0
+    move-result p2
 
-    if-nez v3, :cond_c
+    if-nez v3, :cond_d
 
-    if-eqz p0, :cond_c
+    if-eqz p2, :cond_d
 
     invoke-virtual {p1}, Lcom/android/systemui/statusbar/notification/row/ExpandableNotificationRow;->getVisibleNotificationHeader()Landroid/view/NotificationHeaderView;
 
@@ -779,16 +779,36 @@
 
     move-result p1
 
-    iget p2, v1, Lcom/android/systemui/statusbar/phone/NotificationIconContainer$IconState;->iconAppearAmount:F
+    invoke-virtual {p0}, Landroid/widget/FrameLayout;->getContext()Landroid/content/Context;
 
-    invoke-static {p1, p0, p2}, Lcom/android/systemui/statusbar/notification/NotificationUtils;->interpolateColors(IIF)I
+    move-result-object p0
+
+    invoke-static {p0}, Lcom/oneplus/util/OpUtils;->isGlobalROM(Landroid/content/Context;)Z
 
     move-result p0
 
+    if-nez p0, :cond_c
+
+    if-ne p1, v6, :cond_c
+
+    goto :goto_6
+
     :cond_c
-    iput p0, v1, Lcom/android/systemui/statusbar/phone/NotificationIconContainer$IconState;->iconColor:I
+    iget p0, v1, Lcom/android/systemui/statusbar/phone/NotificationIconContainer$IconState;->iconAppearAmount:F
+
+    invoke-static {p1, p2, p0}, Lcom/android/systemui/statusbar/notification/NotificationUtils;->interpolateColors(IIF)I
+
+    move-result v5
+
+    goto :goto_6
 
     :cond_d
+    move v5, p2
+
+    :goto_6
+    iput v5, v1, Lcom/android/systemui/statusbar/phone/NotificationIconContainer$IconState;->iconColor:I
+
+    :cond_e
     return-void
 .end method
 

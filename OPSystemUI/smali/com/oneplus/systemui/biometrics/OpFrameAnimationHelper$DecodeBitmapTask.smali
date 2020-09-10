@@ -39,11 +39,11 @@
 
 # virtual methods
 .method public run()V
-    .locals 4
+    .locals 5
 
     iget-object v0, p0, Lcom/oneplus/systemui/biometrics/OpFrameAnimationHelper$DecodeBitmapTask;->mHelper:Lcom/oneplus/systemui/biometrics/OpFrameAnimationHelper;
 
-    if-eqz v0, :cond_6
+    if-eqz v0, :cond_7
 
     sget-boolean v0, Landroid/os/Build;->DEBUG_ONEPLUS:Z
 
@@ -81,7 +81,7 @@
     :cond_1
     iget-object v0, v0, Lcom/oneplus/systemui/biometrics/OpFrameAnimationHelper;->mExecutorService:Ljava/util/concurrent/ExecutorService;
 
-    if-eqz v0, :cond_6
+    if-eqz v0, :cond_7
 
     invoke-interface {v0}, Ljava/util/concurrent/ExecutorService;->isShutdown()Z
 
@@ -89,7 +89,7 @@
 
     if-eqz v0, :cond_2
 
-    goto :goto_0
+    goto/16 :goto_1
 
     :cond_2
     iget-object v0, p0, Lcom/oneplus/systemui/biometrics/OpFrameAnimationHelper$DecodeBitmapTask;->mHelper:Lcom/oneplus/systemui/biometrics/OpFrameAnimationHelper;
@@ -113,34 +113,40 @@
     :cond_3
     iget-object v0, p0, Lcom/oneplus/systemui/biometrics/OpFrameAnimationHelper$DecodeBitmapTask;->mHelper:Lcom/oneplus/systemui/biometrics/OpFrameAnimationHelper;
 
-    iget v1, v0, Lcom/oneplus/systemui/biometrics/OpFrameAnimationHelper;->mStartFrameIndex:I
+    iget v2, v0, Lcom/oneplus/systemui/biometrics/OpFrameAnimationHelper;->mStartFrameIndex:I
 
-    iget v2, v0, Lcom/oneplus/systemui/biometrics/OpFrameAnimationHelper;->mPlayFrameNum:I
+    iget v3, v0, Lcom/oneplus/systemui/biometrics/OpFrameAnimationHelper;->mPlayFrameNum:I
 
-    add-int/2addr v2, v1
+    add-int/2addr v3, v2
 
-    iget v3, p0, Lcom/oneplus/systemui/biometrics/OpFrameAnimationHelper$DecodeBitmapTask;->mIndex:I
+    iget v4, p0, Lcom/oneplus/systemui/biometrics/OpFrameAnimationHelper$DecodeBitmapTask;->mIndex:I
 
-    add-int/2addr v3, v1
+    add-int/2addr v4, v2
 
-    if-lt v3, v2, :cond_4
+    if-lt v4, v3, :cond_4
 
     return-void
 
     :cond_4
     iget-object v0, v0, Lcom/oneplus/systemui/biometrics/OpFrameAnimationHelper;->mAnimationView:Landroid/widget/ImageView;
 
-    if-eqz v0, :cond_5
+    if-eqz v0, :cond_6
 
     invoke-virtual {v0}, Landroid/widget/ImageView;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/oneplus/systemui/biometrics/OpFrameAnimationHelper$DecodeBitmapTask;->mHelper:Lcom/oneplus/systemui/biometrics/OpFrameAnimationHelper;
+    iget-object v2, p0, Lcom/oneplus/systemui/biometrics/OpFrameAnimationHelper$DecodeBitmapTask;->mHelper:Lcom/oneplus/systemui/biometrics/OpFrameAnimationHelper;
 
-    iget-object v1, v1, Lcom/oneplus/systemui/biometrics/OpFrameAnimationHelper;->mFrames:[I
+    iget-object v2, v2, Lcom/oneplus/systemui/biometrics/OpFrameAnimationHelper;->mFrames:[I
 
-    aget v1, v1, v3
+    if-eqz v2, :cond_5
+
+    array-length v3, v2
+
+    if-ge v4, v3, :cond_5
+
+    aget v1, v2, v4
 
     invoke-static {v0, v1}, Landroid/graphics/BitmapFactory;->decodeResource(Landroid/content/res/Resources;I)Landroid/graphics/Bitmap;
 
@@ -150,13 +156,49 @@
 
     iget-object v1, v1, Lcom/oneplus/systemui/biometrics/OpFrameAnimationHelper;->mBitmapArray:[Landroid/graphics/Bitmap;
 
-    if-eqz v1, :cond_5
+    if-eqz v1, :cond_6
 
     iget p0, p0, Lcom/oneplus/systemui/biometrics/OpFrameAnimationHelper$DecodeBitmapTask;->mIndex:I
 
+    array-length v2, v1
+
+    if-ge p0, v2, :cond_6
+
     aput-object v0, v1, p0
 
+    goto :goto_0
+
     :cond_5
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v2, "decodeBitmap index= "
+
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0, v4}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    const-string v2, ", mFrames lenght= "
+
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object p0, p0, Lcom/oneplus/systemui/biometrics/OpFrameAnimationHelper$DecodeBitmapTask;->mHelper:Lcom/oneplus/systemui/biometrics/OpFrameAnimationHelper;
+
+    iget-object p0, p0, Lcom/oneplus/systemui/biometrics/OpFrameAnimationHelper;->mFrames:[I
+
+    array-length p0, p0
+
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p0
+
+    invoke-static {v1, p0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    :cond_6
+    :goto_0
     :try_start_0
     sget-object p0, Ljava/util/concurrent/TimeUnit;->MILLISECONDS:Ljava/util/concurrent/TimeUnit;
 
@@ -166,7 +208,7 @@
     :try_end_0
     .catch Ljava/lang/InterruptedException; {:try_start_0 .. :try_end_0} :catch_0
 
-    goto :goto_0
+    goto :goto_1
 
     :catch_0
     move-exception p0
@@ -175,7 +217,7 @@
 
     nop
 
-    :cond_6
-    :goto_0
+    :cond_7
+    :goto_1
     return-void
 .end method

@@ -259,6 +259,9 @@
     <string name="accessibility_wimax_signal_full">สัญญาณ WiMAX เต็ม</string>
     <string name="accessibility_wimax_three_bars">สัญญาณ WiMAX สามขีด</string>
     <string name="accessibility_wimax_two_bars">สัญญาณ WiMAX สองขีด</string>
+    <string name="accessibility_work_life_balance_mode">สมดุลงานและการใช้ชีวิต</string>
+    <string name="accessibility_work_life_balance_mode_off">โหมดสมดุลงานและการใช้ชีวิตปิดอยู่</string>
+    <string name="accessibility_work_life_balance_mode_on">โหมดสมดุลงานและการใช้ชีวิตเปิดอยู่</string>
     <string name="accessibility_zero_bars">ศูนย์ขีด</string>
     <string name="active_input_method_subtypes">วิธีการป้อนข้อมูลที่ใช้งาน</string>
     <string name="activity_launch_on_secondary_display_failed_text">แอปไม่รองรับการเรียกใช้ในจอแสดงผลรอง</string>
@@ -1112,7 +1115,8 @@
     <string name="op_notification_alert_title">สำคัญ</string>
     <string name="op_notification_channel_summary_low">การแจ้งเตือนที่สำคัญน้อยกว่าไม่มีเสียงหรือการสั่น</string>
     <string name="op_notification_section_header_gentle">การแจ้งเตือนอื่นๆ</string>
-    <string name="op_notification_silence_title">อื่น ๆ</string>
+    <string name="op_notification_silence_title">อื่นๆ</string>
+    <string name="op_qs_dark_mode_tile_label">โหมดมืด</string>
     <string name="op_quick_settings_night_display_label">โหมดกลางคืน</string>
     <string name="op_quick_settings_night_display_summary_off">โหมดกลางคืนปิด แตะเพื่อเปิด</string>
     <string name="op_quick_settings_night_display_summary_on">โหมดกลางคืนเปิด แตะเพื่อปิด</string>
@@ -1140,7 +1144,7 @@
     <string name="overheat_dialog_purple_button">ปิดเครื่องทันที</string>
     <string name="overheat_dialog_purple_message">โทรศัพท์จะปิดเครื่องหลังจากผ่านไป 5 วินาที</string>
     <string name="overheat_dialog_red_message">จะมีการล้างการประมวลผลแอปพลิเคชันเพื่อลดอุณหภูมิ</string>
-    <string name="overheat_dialog_title">อุณหภูมิโทรศัพท์ของคุณสูงมาก</string>
+    <string name="overheat_dialog_title">โทรศัพท์ของคุณมีอุณหภูมิสูงมาก</string>
     <string name="overheat_notification_alert">โทรศัพท์ของคุณมีอุณหภูมิสูงมาก และฟังก์ชันต่างๆ ที่ใช้พลังงานสูงจะถูกปิดเพื่อลดอุณหภูมิ</string>
     <string name="overheat_notification_resume">อุณหภูมิของโทรศัพท์กลับสู่สถานะปกติและสามารถใช้โทรศัพท์ได้ตามปกติแล้ว</string>
     <string name="overheat_notification_title_resume">อุณหภูมิของโทรศัพท์กลับสู่สถานะปกติ</string>
@@ -1242,6 +1246,10 @@
     <string name="qs_dnd_replace">แทนที่</string>
     <string name="qs_dnd_until">จนถึง %s</string>
     <string name="qs_edit">แก้ไข</string>
+    <string name="qs_panel_life_mode">การใช้ชีวิต</string>
+    <string name="qs_panel_none">ไม่มีเลย</string>
+    <string name="qs_panel_set_up">ตั้งค่า</string>
+    <string name="qs_panel_work_mode">การทำงาน</string>
     <string name="qs_rearrange">จัดเรียงการตั้งค่าด่วนใหม่</string>
     <string name="qs_status_phone_muted">โทรศัพท์ปิดเสียงอยู่</string>
     <string name="qs_status_phone_vibrate">โทรศัพท์เปิดระบบสั่นอยู่</string>
@@ -1312,12 +1320,12 @@
     <string name="quick_settings_game_mode_demo_all">การแจ้งเตือนจะถูกปิดกั้นและปุ่มสัมผัสจะถูกล็อค</string>
     <string name="quick_settings_game_mode_demo_button">ปุ่มสัมผัสจะถูกล็อค</string>
     <string name="quick_settings_game_mode_demo_notification">การแจ้งเตือนจะถูกปิดกั้น</string>
-    <string name="quick_settings_game_mode_label">โหมดกำลังเล่นเกม</string>
+    <string name="quick_settings_game_mode_label">โหมดการเล่นเกม</string>
     <string name="quick_settings_game_mode_summary_off">โหมดการเล่นเกมปิด แตะเพื่อเปิด</string>
     <string name="quick_settings_game_mode_summary_on">โหมดการเล่นเกมเปิด แตะเพื่อปิด</string>
     <string name="quick_settings_header_onboarding_text">แตะไอคอนค้างไว้เพื่อดูตัวเลือกอื่นๆ</string>
     <string name="quick_settings_hotspot_label">ฮอตสปอต</string>
-    <string name="quick_settings_hotspot_no_password">เปิดเน็ตเวิร์ก</string>
+    <string name="quick_settings_hotspot_no_password">เปิดเครือข่าย</string>
     <string name="quick_settings_hotspot_password">รหัสผ่าน</string>
     <string name="quick_settings_hotspot_secondary_label_data_saver_enabled">เปิดประหยัดเน็ตอยู่</string>
     <string name="quick_settings_hotspot_secondary_label_transient">กำลังเปิด...</string>
@@ -1343,8 +1351,8 @@
     <string name="quick_settings_op_car_mode_dnd_summary_on">โหมด DND รถยนต์เปิดอยู่ แตะเพื่อปิด</string>
     <string name="quick_settings_power_saving_label">ตัวประหยัดแบตเตอรี่</string>
     <string name="quick_settings_read_mode_label">โหมดการอ่าน</string>
-    <string name="quick_settings_read_mode_summary_off">Reading Mode ปิด แตะเพื่อเปิด</string>
-    <string name="quick_settings_read_mode_summary_on">Reading Mode เปิด แตะเพื่อปิด</string>
+    <string name="quick_settings_read_mode_summary_off">โหมดการอ่านปิด แตะเพื่อเปิด</string>
+    <string name="quick_settings_read_mode_summary_on">โหมดการอ่านเปิด แตะเพื่อปิด</string>
     <string name="quick_settings_reset_confirmation_button">ซ่อน</string>
     <string name="quick_settings_reset_confirmation_message">จะปรากฏอีกครั้งเมื่อคุณเปิดใช้ในการตั้งค่าครั้งถัดไป</string>
     <string name="quick_settings_reset_confirmation_title">ซ่อน %1$s ไหม</string>
@@ -1383,7 +1391,7 @@
     <string name="recents_deep_clean_option">ล้างแบบ Deep</string>
     <string name="recents_empty_no_apps_open">ไม่มีแอปพลิเคชั่นเปิดอยู่</string>
     <string name="recents_empty_recently_closed">แอปที่ปิดไปล่าสุด</string>
-    <string name="recents_normal_clean_description">ล้างรายการงานและแคชโดยไม่ล้างการประมวลผลในเบื้องหลัง</string>
+    <string name="recents_normal_clean_description">ล้างรายการงานและแคชโดยไม่ต้องล้างการประมวลผลเบื้องหลัง</string>
     <string name="recents_normal_clean_option">การล้างปกติ</string>
     <string name="recents_option_note">คุณสามารถเปลี่ยนแปลงได้ใน การตั้งค่า -> ขั้นสูง</string>
     <string name="recents_option_title">คุณชอบวิธีใดมากกว่า</string>
@@ -1443,7 +1451,7 @@
     <string name="screenrecord_start_label">เริ่มต้นการบันทึก</string>
     <string name="screenrecord_stop_label">หยุด</string>
     <string name="screenrecord_taps_label">แสดงการแตะ</string>
-    <string name="screenshot_delete_confirmation">ลบภาพหน้าจอแล้ว</string>
+    <string name="screenshot_delete_confirmation">ลบสกรีนช็อตแล้ว</string>
     <string name="screenshot_failed_title">บันทึกภาพหน้าจอไม่ได้</string>
     <string name="screenshot_failed_to_capture_text">แอปหรือองค์กรของคุณไม่อนุญาตให้จับภาพหน้าจอ</string>
     <string name="screenshot_failed_to_save_text">บันทึกภาพหน้าจอไม่ได้เนื่องจากพื้นที่เก็บข้อมูลมีจำกัด</string>
@@ -1677,7 +1685,7 @@
     <string name="volume_dialog_title">ตัวควบคุมระดับเสียง %s</string>
     <string name="volume_dnd_silent">ทางลัดปุ่มปรับระดับเสียง</string>
     <string name="volume_footer_no_disturb">ห้ามรบกวน</string>
-    <string name="volume_footer_ring">เสียงเข้า</string>
+    <string name="volume_footer_ring">เสียง</string>
     <string name="volume_footer_slient">เงียบ</string>
     <string name="volume_footer_vibrate">ไม่มีเสียง (สั่น)</string>
     <string name="volume_odi_captions_content_description">การวางซ้อนคำบรรยายภาพ</string>
@@ -1733,6 +1741,7 @@
     <string name="wifi_verbose_logging">เปิดใช้การบันทึกรายละเอียด Wi-Fi</string>
     <string name="wifi_verbose_logging_summary">เพิ่มระดับการบันทึก Wi‑Fi แสดงต่อ SSID RSSI ในตัวเลือก Wi‑Fi</string>
     <string name="window_animation_scale_title">อัตราการเคลื่อนไหวของหน้าต่าง</string>
+    <string name="work_life_balance_mode">Work-Life Balance</string>
     <string name="yes_bubbles">อนุญาต</string>
     <string name="zen_alarm_warning">คุณจะไม่ได้ยินเสียงปลุกครั้งถัดไปในเวลา %1$s</string>
     <string name="zen_alarm_warning_indef">คุณจะไม่ได้ยินเสียงปลุกครั้งถัดไปในเวลา %1$s เว้นแต่คุณจะปิดการปลุกนี้ไปก่อนแล้ว</string>

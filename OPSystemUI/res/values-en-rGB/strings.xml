@@ -259,6 +259,9 @@
     <string name="accessibility_wimax_signal_full">WiMAX signal full.</string>
     <string name="accessibility_wimax_three_bars">WiMAX three bars.</string>
     <string name="accessibility_wimax_two_bars">WiMAX two bars.</string>
+    <string name="accessibility_work_life_balance_mode">Work Life Balance</string>
+    <string name="accessibility_work_life_balance_mode_off">Work-Life Balance mode turned off.</string>
+    <string name="accessibility_work_life_balance_mode_on">Work-Life Balance mode turned on.</string>
     <string name="accessibility_zero_bars">Zero bars.</string>
     <string name="active_input_method_subtypes">Active input methods</string>
     <string name="activity_launch_on_secondary_display_failed_text">App does not support launch on secondary displays.</string>
@@ -1113,6 +1116,7 @@ You're also connected to a VPN, which can monitor your network activity."</strin
     <string name="op_notification_channel_summary_low">Less important notifications without any sound or vibration.</string>
     <string name="op_notification_section_header_gentle">Other notifications</string>
     <string name="op_notification_silence_title">Other</string>
+    <string name="op_qs_dark_mode_tile_label">Dark mode</string>
     <string name="op_quick_settings_night_display_label">Night mode</string>
     <string name="op_quick_settings_night_display_summary_off">Night mode off. Tap to turn on</string>
     <string name="op_quick_settings_night_display_summary_on">Night mode on. Tap to turn off</string>
@@ -1141,7 +1145,7 @@ You're also connected to a VPN, which can monitor your network activity."</strin
     <string name="overheat_dialog_purple_message">The phone will be powered off after 5 seconds</string>
     <string name="overheat_dialog_red_message">All application processes will be cleared to lower the temperature</string>
     <string name="overheat_dialog_title">The temperature of your phone is too high</string>
-    <string name="overheat_notification_alert">The temperature of your phone is too high. High power consuming functions are turned off to lower the temperature</string>
+    <string name="overheat_notification_alert">The temperature of your phone is too high and high power-consuming functions are turned off to lower the temperature</string>
     <string name="overheat_notification_resume">"The phone's temperature has been restored and the phone can be used normally"</string>
     <string name="overheat_notification_title_resume">"The phone's temperature has been restored"</string>
     <string name="overheat_toast_content">The temperature of your phone is too high. High power consumption functions have been turned off to lower the temperature</string>
@@ -1242,6 +1246,10 @@ You're also connected to a VPN, which can monitor your network activity."</strin
     <string name="qs_dnd_replace">Replace</string>
     <string name="qs_dnd_until">Until %s</string>
     <string name="qs_edit">Edit</string>
+    <string name="qs_panel_life_mode">Life</string>
+    <string name="qs_panel_none">None</string>
+    <string name="qs_panel_set_up">Set up</string>
+    <string name="qs_panel_work_mode">Work</string>
     <string name="qs_rearrange">Rearrange Quick Settings</string>
     <string name="qs_status_phone_muted">Phone muted</string>
     <string name="qs_status_phone_vibrate">Phone on vibrate</string>
@@ -1733,6 +1741,7 @@ Any user can update apps for all other users."</string>
     <string name="wifi_verbose_logging">Enable Wi‑Fi verbose logging</string>
     <string name="wifi_verbose_logging_summary">Increase Wi‑Fi logging level, show per SSID RSSI in Wi‑Fi Picker</string>
     <string name="window_animation_scale_title">Window animation scale</string>
+    <string name="work_life_balance_mode">Work-Life Balance</string>
     <string name="yes_bubbles">Allow</string>
     <string name="zen_alarm_warning">"You won't hear your next alarm %1$s"</string>
     <string name="zen_alarm_warning_indef">"You won't hear your next alarm %1$s unless you turn this off before then"</string>

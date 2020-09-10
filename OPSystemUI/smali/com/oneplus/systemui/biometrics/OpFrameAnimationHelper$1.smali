@@ -49,7 +49,7 @@
 
     const/4 v3, 0x0
 
-    if-ge v0, v2, :cond_2
+    if-ge v0, v2, :cond_3
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -121,18 +121,29 @@
 
     iget-object v0, p0, Lcom/oneplus/systemui/biometrics/OpFrameAnimationHelper$1;->this$0:Lcom/oneplus/systemui/biometrics/OpFrameAnimationHelper;
 
-    iget-object v3, v0, Lcom/oneplus/systemui/biometrics/OpFrameAnimationHelper;->mAnimationView:Landroid/widget/ImageView;
-
-    iget-object v4, v0, Lcom/oneplus/systemui/biometrics/OpFrameAnimationHelper;->mBitmapArray:[Landroid/graphics/Bitmap;
-
     invoke-static {v0}, Lcom/oneplus/systemui/biometrics/OpFrameAnimationHelper;->access$000(Lcom/oneplus/systemui/biometrics/OpFrameAnimationHelper;)I
 
     move-result v0
 
-    aget-object v0, v4, v0
+    iget-object v3, p0, Lcom/oneplus/systemui/biometrics/OpFrameAnimationHelper$1;->this$0:Lcom/oneplus/systemui/biometrics/OpFrameAnimationHelper;
 
-    invoke-virtual {v3, v0}, Landroid/widget/ImageView;->setImageBitmap(Landroid/graphics/Bitmap;)V
+    iget-object v4, v3, Lcom/oneplus/systemui/biometrics/OpFrameAnimationHelper;->mBitmapArray:[Landroid/graphics/Bitmap;
 
+    array-length v5, v4
+
+    if-ge v0, v5, :cond_2
+
+    iget-object v0, v3, Lcom/oneplus/systemui/biometrics/OpFrameAnimationHelper;->mAnimationView:Landroid/widget/ImageView;
+
+    invoke-static {v3}, Lcom/oneplus/systemui/biometrics/OpFrameAnimationHelper;->access$000(Lcom/oneplus/systemui/biometrics/OpFrameAnimationHelper;)I
+
+    move-result v3
+
+    aget-object v3, v4, v3
+
+    invoke-virtual {v0, v3}, Landroid/widget/ImageView;->setImageBitmap(Landroid/graphics/Bitmap;)V
+
+    :cond_2
     iget-object v0, p0, Lcom/oneplus/systemui/biometrics/OpFrameAnimationHelper$1;->this$0:Lcom/oneplus/systemui/biometrics/OpFrameAnimationHelper;
 
     iget-object v3, v0, Lcom/oneplus/systemui/biometrics/OpFrameAnimationHelper;->mAnimationView:Landroid/widget/ImageView;
@@ -157,12 +168,12 @@
 
     goto :goto_0
 
-    :cond_2
+    :cond_3
     invoke-static {v1}, Lcom/oneplus/systemui/biometrics/OpFrameAnimationHelper;->access$300(Lcom/oneplus/systemui/biometrics/OpFrameAnimationHelper;)Z
 
     move-result v0
 
-    if-eqz v0, :cond_3
+    if-eqz v0, :cond_4
 
     iget-object v0, p0, Lcom/oneplus/systemui/biometrics/OpFrameAnimationHelper$1;->this$0:Lcom/oneplus/systemui/biometrics/OpFrameAnimationHelper;
 
@@ -174,13 +185,13 @@
 
     iget v2, v1, Lcom/oneplus/systemui/biometrics/OpFrameAnimationHelper;->mPlayFrameNum:I
 
-    if-ne v0, v2, :cond_3
+    if-ne v0, v2, :cond_4
 
     invoke-static {v1}, Lcom/oneplus/systemui/biometrics/OpFrameAnimationHelper;->access$400(Lcom/oneplus/systemui/biometrics/OpFrameAnimationHelper;)Lcom/oneplus/systemui/biometrics/OpFrameAnimationHelper$Callbacks;
 
     move-result-object v0
 
-    if-eqz v0, :cond_3
+    if-eqz v0, :cond_4
 
     iget-object v0, p0, Lcom/oneplus/systemui/biometrics/OpFrameAnimationHelper$1;->this$0:Lcom/oneplus/systemui/biometrics/OpFrameAnimationHelper;
 
@@ -202,14 +213,14 @@
 
     goto :goto_0
 
-    :cond_3
+    :cond_4
     iget-object v0, p0, Lcom/oneplus/systemui/biometrics/OpFrameAnimationHelper$1;->this$0:Lcom/oneplus/systemui/biometrics/OpFrameAnimationHelper;
 
     invoke-static {v0}, Lcom/oneplus/systemui/biometrics/OpFrameAnimationHelper;->access$300(Lcom/oneplus/systemui/biometrics/OpFrameAnimationHelper;)Z
 
     move-result v0
 
-    if-eqz v0, :cond_4
+    if-eqz v0, :cond_5
 
     iget-object p0, p0, Lcom/oneplus/systemui/biometrics/OpFrameAnimationHelper$1;->this$0:Lcom/oneplus/systemui/biometrics/OpFrameAnimationHelper;
 
@@ -219,18 +230,18 @@
 
     goto :goto_0
 
-    :cond_4
+    :cond_5
     iget-object p0, p0, Lcom/oneplus/systemui/biometrics/OpFrameAnimationHelper$1;->this$0:Lcom/oneplus/systemui/biometrics/OpFrameAnimationHelper;
 
     iget-object p0, p0, Lcom/oneplus/systemui/biometrics/OpFrameAnimationHelper;->mAnimationView:Landroid/widget/ImageView;
 
-    if-eqz p0, :cond_5
+    if-eqz p0, :cond_6
 
     const/4 v0, 0x4
 
     invoke-virtual {p0, v0}, Landroid/widget/ImageView;->setVisibility(I)V
 
-    :cond_5
+    :cond_6
     :goto_0
     return-void
 .end method

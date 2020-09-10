@@ -40,6 +40,48 @@
     return-object p0
 .end method
 
+.method public static getFont(Landroid/content/Context;I)Landroid/graphics/Typeface;
+    .locals 7
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Landroid/content/res/Resources$NotFoundException;
+        }
+    .end annotation
+
+    invoke-virtual {p0}, Landroid/content/Context;->isRestricted()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    const/4 p0, 0x0
+
+    return-object p0
+
+    :cond_0
+    new-instance v2, Landroid/util/TypedValue;
+
+    invoke-direct {v2}, Landroid/util/TypedValue;-><init>()V
+
+    const/4 v3, 0x0
+
+    const/4 v4, 0x0
+
+    const/4 v5, 0x0
+
+    const/4 v6, 0x0
+
+    move-object v0, p0
+
+    move v1, p1
+
+    invoke-static/range {v0 .. v6}, Landroid/support/v4/content/res/ResourcesCompat;->loadFont(Landroid/content/Context;ILandroid/util/TypedValue;ILandroid/support/v4/content/res/ResourcesCompat$FontCallback;Landroid/os/Handler;Z)Landroid/graphics/Typeface;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
 .method public static getFont(Landroid/content/Context;ILandroid/util/TypedValue;ILandroid/support/v4/content/res/ResourcesCompat$FontCallback;)Landroid/graphics/Typeface;
     .locals 7
     .annotation system Ldalvik/annotation/Throws;

@@ -109,7 +109,7 @@
 
     new-instance v0, Landroidx/slice/SliceItem;
 
-    const-string v1, "summary"
+    const-string/jumbo v1, "summary"
 
     filled-new-array {v1}, [Ljava/lang/String;
 

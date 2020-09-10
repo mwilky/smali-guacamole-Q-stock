@@ -333,7 +333,7 @@
 
     if-eqz v1, :cond_0
 
-    const-string p0, "supportedList is null"
+    const-string/jumbo p0, "supportedList is null"
 
     invoke-static {v2, p0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 

@@ -178,7 +178,7 @@
 
     if-nez p1, :cond_2
 
-    const-string p1, "suppress_auto_battery_saver_suggestion"
+    const-string/jumbo p1, "suppress_auto_battery_saver_suggestion"
 
     invoke-static {v1, p1, v5}, Landroid/provider/Settings$Secure;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
 
@@ -229,7 +229,7 @@
 
     move-result-object p0
 
-    const-string v0, "suppress_auto_battery_saver_suggestion"
+    const-string/jumbo v0, "suppress_auto_battery_saver_suggestion"
 
     const/4 v1, 0x1
 

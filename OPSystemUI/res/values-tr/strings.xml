@@ -259,6 +259,9 @@
     <string name="accessibility_wimax_signal_full">WiMAX sinyali tam.</string>
     <string name="accessibility_wimax_three_bars">WiMAX üç çubuk.</string>
     <string name="accessibility_wimax_two_bars">WiMAX iki çubuk.</string>
+    <string name="accessibility_work_life_balance_mode">Work-Life Balance</string>
+    <string name="accessibility_work_life_balance_mode_off">Work-Life Balance modu kapalı.</string>
+    <string name="accessibility_work_life_balance_mode_on">Work-Life Balance modu açık.</string>
     <string name="accessibility_zero_bars">Sıfır çubuk.</string>
     <string name="active_input_method_subtypes">Etkin giriş yöntemleri</string>
     <string name="activity_launch_on_secondary_display_failed_text">Uygulama ikincil ekranlarda başlatılmayı desteklemiyor.</string>
@@ -1088,7 +1091,7 @@ Ayrıca, ağ etkinliğinizi izleyebilen bir VPN'ye de bağlısınız."</string>
     <string name="oneplus_laboratory_added_toast">Tebrikler! OnePlus Laboratuvar Ayarlara eklendi</string>
     <string name="oneplus_screen_features_not_available_toast">Açık durumdayken, ekran ayarlama gibi özellikler kullanılamaz</string>
     <string name="oneplus_threekey_navigation_disturb_changed">"'Rahatsız Etmeyin' değişti!"</string>
-    <string name="oneplus_threekey_navigation_next">İLERİ</string>
+    <string name="oneplus_threekey_navigation_next">SONRAKİ</string>
     <string name="oneplus_threekey_navigation_silence">Tam sessizlik</string>
     <string name="oneplus_threekey_navigation_slider_has_changed">Alert Slider değişti!</string>
     <string name="oneplus_threekey_navigation_sound">Tüm seslere izin var</string>
@@ -1113,6 +1116,7 @@ Ayrıca, ağ etkinliğinizi izleyebilen bir VPN'ye de bağlısınız."</string>
     <string name="op_notification_channel_summary_low">Ses veya titreşim vermeyen daha az önemli bildirimler.</string>
     <string name="op_notification_section_header_gentle">Diğer bildirimler</string>
     <string name="op_notification_silence_title">Diğer</string>
+    <string name="op_qs_dark_mode_tile_label">Koyu mod</string>
     <string name="op_quick_settings_night_display_label">Gece modu</string>
     <string name="op_quick_settings_night_display_summary_off">Gece modu devre dışı, etkinleştirmek için dokunun</string>
     <string name="op_quick_settings_night_display_summary_on">Gece modu etkin, devre dışı bırakmak için dokunun</string>
@@ -1133,9 +1137,9 @@ Ayrıca, ağ etkinliğinizi izleyebilen bir VPN'ye de bağlısınız."</string>
     <string name="output_service_wifi">Kablosuz</string>
     <string name="output_title">Medya çıkışı</string>
     <string name="overheat_dialog_orange_button">Şimdi uygula</string>
-    <string name="overheat_dialog_orange_message">"Sıcaklığı düşürmek için şu işlemler uygulanacak
+    <string name="overheat_dialog_orange_message">"Sıcaklığı düşürmek için aşağıdaki işlemler uygulanacak
 1.Parlaklığı azalt
-2.Ortak erişim noktasını kapat
+2.Etkin noktayı kapat
 3.El fenerini kapat"</string>
     <string name="overheat_dialog_purple_button">Şimdi kapat</string>
     <string name="overheat_dialog_purple_message">Telefon 5 saniye sonra kapatılacak</string>
@@ -1242,12 +1246,16 @@ Ayrıca, ağ etkinliğinizi izleyebilen bir VPN'ye de bağlısınız."</string>
     <string name="qs_dnd_replace">Değiştir</string>
     <string name="qs_dnd_until">Bitiş: %s</string>
     <string name="qs_edit">Düzenle</string>
+    <string name="qs_panel_life_mode">Yaşam</string>
+    <string name="qs_panel_none">Hiçbiri</string>
+    <string name="qs_panel_set_up">Ayarla</string>
+    <string name="qs_panel_work_mode">İş</string>
     <string name="qs_rearrange">"Hızlı Ayarlar'ı Yeniden Düzenle"</string>
     <string name="qs_status_phone_muted">Telefonun sesi kapalı</string>
     <string name="qs_status_phone_vibrate">Telefonun titreşimi açık</string>
-    <string name="quick_launch_exit">Çıkış</string>
+    <string name="quick_launch_exit">Çık</string>
     <string name="quick_launch_exit_hint">Çıkmak için parmağınızı ekrandan kaldırın</string>
-    <string name="quick_reply">YANITLA</string>
+    <string name="quick_reply">YANIT</string>
     <string name="quick_settings">Hızlı Ayarlar</string>
     <string name="quick_settings_bluetooth_detail_empty_text">Kullanılabilir eşlenmiş cihaz yok</string>
     <string name="quick_settings_bluetooth_label">Bluetooth</string>
@@ -1318,7 +1326,7 @@ Ayrıca, ağ etkinliğinizi izleyebilen bir VPN'ye de bağlısınız."</string>
     <string name="quick_settings_header_onboarding_text">Daha fazla seçenek için simgelere dokunun ve basılı tutun</string>
     <string name="quick_settings_hotspot_label">Hotspot</string>
     <string name="quick_settings_hotspot_no_password">Açık ağ</string>
-    <string name="quick_settings_hotspot_password">Şifre</string>
+    <string name="quick_settings_hotspot_password">Parola</string>
     <string name="quick_settings_hotspot_secondary_label_data_saver_enabled">Veri Tasarrufu açık</string>
     <string name="quick_settings_hotspot_secondary_label_transient">Açılıyor…</string>
     <string name="quick_settings_hotspot_secure_lock">Parolanızı görmek için cihaz kilidini açın</string>
@@ -1383,7 +1391,7 @@ Pil tasarrufu"</string>
     <string name="recents_deep_clean_option">Derin temizlik</string>
     <string name="recents_empty_no_apps_open">Hiç açık uygulama yok</string>
     <string name="recents_empty_recently_closed">En son kapatılan uygulamalar</string>
-    <string name="recents_normal_clean_description">Arka plan işlemlerini silmeden görev listesini ve önbelleği temizleyin.</string>
+    <string name="recents_normal_clean_description">Arka plan işlemlerini temizlemeden görev listesini ve önbelleği temizleyin.</string>
     <string name="recents_normal_clean_option">Normal temizleme</string>
     <string name="recents_option_note">Bu özelliği Ayarlar -> Gelişmiş seçeneklerini kullanarak değiştirebilirsiniz.</string>
     <string name="recents_option_title">Hangi yolu tercih edersiniz?</string>
@@ -1733,6 +1741,7 @@ Herhangi bir kullanıcı, diğer tüm kullanıcılar için uygulamaları güncel
     <string name="wifi_verbose_logging">Kablosuz Ayrıntılı Günlük Kaydını etkinleştir</string>
     <string name="wifi_verbose_logging_summary">"Kablosuz günlük kaydı seviyesini artır. Kablosuz Seçici'de her bir SSID RSSI için göster."</string>
     <string name="window_animation_scale_title">Pencere animasyonu ölçeği</string>
+    <string name="work_life_balance_mode">Work-Life Balance</string>
     <string name="yes_bubbles">İzin Ver</string>
     <string name="zen_alarm_warning">%1$s olarak ayarlanmış bir sonraki alarmınızı duymayacaksınız</string>
     <string name="zen_alarm_warning_indef">%1$s olarak ayarlanmış bir sonraki alarmınızdan önce bu işlevi kapatmazsanız alarmı duymayacaksınız</string>

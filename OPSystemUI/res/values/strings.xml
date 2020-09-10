@@ -1243,9 +1243,11 @@ You're also connected to a VPN, which can monitor your network activity."</strin
     <string name="op_path_password_eye_mask_strike_through">M2,4.27 L19.73,22 L22.27,19.46 L4.54,1.73 L4.54,1 L23,1 L23,23 L1,23 L1,4.27 Z</string>
     <string name="op_path_password_eye_mask_visible">M2,4.27 L2,4.27 L4.54,1.73 L4.54,1.73 L4.54,1 L23,1 L23,23 L1,23 L1,4.27 Z</string>
     <string name="op_path_password_strike_through">M3.27,4.27 L19.74,20.74</string>
+    <string name="op_qs_dark_mode_tile_label">Dark mode</string>
     <string name="op_quick_settings_night_display_label">Night mode</string>
     <string name="op_quick_settings_night_display_summary_off">Night mode off, tap to turn on</string>
     <string name="op_quick_settings_night_display_summary_on">Night mode on, tap to turn off</string>
+    <string name="op_wx_mini_program_wx_transit">WeChat transit QR code</string>
     <string name="open_saver_setting_action">Settings</string>
     <string name="orb_search_action">Search Action</string>
     <string name="osu_completing_sign_up">Completing sign-up…</string>
@@ -1506,10 +1508,10 @@ You're also connected to a VPN, which can monitor your network activity."</strin
     <string name="quick_settings_switch_user_storage_insufficient">Storage is full, cannot switch user</string>
     <string name="quick_settings_tethering_label">Tethering</string>
     <string name="quick_settings_tiles">default</string>
-    <string name="quick_settings_tiles_default">wifi,cell,bt,flashlight,rotation,battery,airplane,night,location,dataswitch,dnd,nfc,custom(com.android.phone/com.android.wificalling.OPWifiCallingTitle),game,read,hotspot,custom(com.oneplus.brickmode/.service.BreathModeTileService),custom(com.oneplus.screenrecord/.core.SystemUITileService),custom(com.heytap.speechassist/.skill.drivingmode.internal.DrivingModeTileService)</string>
+    <string name="quick_settings_tiles_default">wifi,cell,bt,flashlight,rotation,battery,airplane,night,location,dataswitch,dnd,nfc,custom(com.android.phone/com.android.wificalling.OPWifiCallingTitle),game,read,dark,hotspot,custom(com.oneplus.brickmode/.service.BreathModeTileService),custom(com.oneplus.screenrecord/.core.SystemUITileService),custom(com.heytap.speechassist/.skill.drivingmode.internal.DrivingModeTileService)</string>
     <string name="quick_settings_tiles_guest">wifi,bt,flashlight,rotation,powersaving,airplane,night,location,game,nfc,hotspot,saver</string>
-    <string name="quick_settings_tiles_retail_mode">wifi,cell,bt,flashlight,rotation,battery,airplane,night,location,dataswitch,dnd,nfc,custom(com.android.phone/com.android.wificalling.OPWifiCallingTitle),game,read,hotspot,custom(com.oneplus.brickmode/.service.BreathModeTileService),custom(com.oneplus.screenrecord/.service.SystemUITileService),custom(com.heytap.speechassist/.skill.drivingmode.internal.DrivingModeTileService)</string>
-    <string name="quick_settings_tiles_stock">wifi,cell,battery,bt,rotation,flashlight,airplane,night,location,hotspot,nfc,read,game,otg,dnd,cast,saver,vpn,inversion,dark,work,dataswitch</string>
+    <string name="quick_settings_tiles_retail_mode">wifi,cell,bt,flashlight,rotation,battery,airplane,night,location,dataswitch,dnd,nfc,custom(com.android.phone/com.android.wificalling.OPWifiCallingTitle),game,read,dark,hotspot,custom(com.oneplus.brickmode/.service.BreathModeTileService),custom(com.oneplus.screenrecord/.service.SystemUITileService),custom(com.heytap.speechassist/.skill.drivingmode.internal.DrivingModeTileService)</string>
+    <string name="quick_settings_tiles_stock">wifi,cell,battery,bt,rotation,flashlight,airplane,night,location,hotspot,nfc,read,dark,game,otg,dnd,cast,saver,vpn,inversion,dark,work,dataswitch</string>
     <string name="quick_settings_time_label">Time</string>
     <string name="quick_settings_ui_mode_night_label">Dark theme</string>
     <string name="quick_settings_ui_mode_night_label_battery_saver">"Dark theme
@@ -1724,6 +1726,9 @@ be monitored"</string>
     <string name="tethering_hardware_offload">Tethering hardware acceleration</string>
     <string name="tethering_hardware_offload_summary">Use tethering hardware acceleration if available</string>
     <string name="tethering_settings_not_available">Tethering settings are not available for this user</string>
+    <string name="textclock_template"><annotation id="color">"It's"</annotation>"
+"<annotation id="bold"><annotation id="line-height1">^1</annotation>"
+"<annotation id="line-height2">^2</annotation></annotation></string>
     <string name="theme">Theme</string>
     <string name="themepicker_overlayable_package">com.android.wallpaper</string>
     <string name="thermal_shutdown_dialog_message">"Your phone was too hot, so it turned off to cool down. Your phone is now running normally.

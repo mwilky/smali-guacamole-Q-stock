@@ -255,7 +255,7 @@
 .method public toString()Ljava/lang/String;
     .locals 3
 
-    const/4 v0, 0x3
+    const/4 v0, 0x4
 
     new-array v0, v0, [Ljava/lang/Object;
 
@@ -277,17 +277,29 @@
 
     invoke-virtual {p0}, Landroid/widget/FrameLayout;->isAttachedToWindow()Z
 
+    move-result v1
+
+    invoke-static {v1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object v1
+
+    const/4 v2, 0x2
+
+    aput-object v1, v0, v2
+
+    invoke-virtual {p0}, Landroid/widget/FrameLayout;->getVisibility()I
+
     move-result p0
 
-    invoke-static {p0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+    invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p0
 
-    const/4 v1, 0x2
+    const/4 v1, 0x3
 
     aput-object p0, v0, v1
 
-    const-string p0, "([%s]: mShowingRequest: %b, isAttachedToWindow: %b)"
+    const-string p0, "([%s]: mShowingRequest: %b, isAttachedToWindow: %b, visibility: %d)"
 
     invoke-static {p0, v0}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
 

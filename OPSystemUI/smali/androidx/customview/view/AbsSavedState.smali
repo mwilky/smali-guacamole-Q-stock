@@ -109,7 +109,7 @@
     :cond_1
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
-    const-string p1, "superState must not be null"
+    const-string/jumbo p1, "superState must not be null"
 
     invoke-direct {p0, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 

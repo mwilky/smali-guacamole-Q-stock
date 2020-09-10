@@ -259,6 +259,9 @@
     <string name="accessibility_wimax_signal_full">Massimo segnale WiMAX.</string>
     <string name="accessibility_wimax_three_bars">WiMAX: tre barre.</string>
     <string name="accessibility_wimax_two_bars">WiMAX: due barre.</string>
+    <string name="accessibility_work_life_balance_mode">Equilibrio vita privata/lavoro</string>
+    <string name="accessibility_work_life_balance_mode_off">Modalità Equilibrio vita privata/lavoro disattivata.</string>
+    <string name="accessibility_work_life_balance_mode_on">Modalità Equilibrio vita privata/lavoro attivata.</string>
     <string name="accessibility_zero_bars">Nessuna barra.</string>
     <string name="active_input_method_subtypes">Metodi di immissione attivi</string>
     <string name="activity_launch_on_secondary_display_failed_text">"L'app non supporta l'avvio su display secondari."</string>
@@ -655,7 +658,7 @@ Una volta raffreddato, il telefono funzionerà normalmente."</string>
     <string name="high_temp_title">Il telefono si sta scaldando</string>
     <string name="home">Home page Impostazioni</string>
     <string name="hotspot_apm_message">Impossibile connettersi alle reti mobili quando la modalità Aereo è attivata. Disattiva la modalità Aereo e riprova.</string>
-    <string name="hotspot_operator_dialog_nosim_msg">Inserisci una scheda SIM per utilizzare Mobile Hotspot e altre opzioni di tethering</string>
+    <string name="hotspot_operator_dialog_nosim_msg">Inserisci una scheda SIM per utilizzare Hotspot mobile e altre opzioni di tethering</string>
     <string name="hotspot_operator_dialog_nosim_title">Nessuna scheda SIM</string>
     <string name="hotspot_operator_dialog_othererror_msg">Non sei abbonato al tethering Wi-Fi</string>
     <string name="hotspot_operator_dialog_othererror_title">Errore di tethering Wi-Fi</string>
@@ -1113,6 +1116,7 @@ Sei inoltre connesso a una VPN, da cui è possibile monitorare la tua attività 
     <string name="op_notification_channel_summary_low">Notifiche meno importanti senza suono o vibrazione.</string>
     <string name="op_notification_section_header_gentle">Altre notifiche</string>
     <string name="op_notification_silence_title">Altro</string>
+    <string name="op_qs_dark_mode_tile_label">Modalità dark</string>
     <string name="op_quick_settings_night_display_label">Modalità Notturna</string>
     <string name="op_quick_settings_night_display_summary_off">Modalità notturna disattiva. Tocca per attivare</string>
     <string name="op_quick_settings_night_display_summary_on">Modalità notturna attiva. Tocca per disattivare</string>
@@ -1138,7 +1142,7 @@ Sei inoltre connesso a una VPN, da cui è possibile monitorare la tua attività 
 2.Disattivazione dell'hotspot
 3.Spegnimento della torcia"</string>
     <string name="overheat_dialog_purple_button">Spegni ora</string>
-    <string name="overheat_dialog_purple_message">Il telefono si spegnerà dopo 5 secondi</string>
+    <string name="overheat_dialog_purple_message">Il telefono verrà spento dopo 5 secondi</string>
     <string name="overheat_dialog_red_message">Si annulleranno tutti i processi applicativi per abbassare la temperatura</string>
     <string name="overheat_dialog_title">La temperatura del telefono è troppo alta</string>
     <string name="overheat_notification_alert">La temperatura del telefono è troppo alta, pertanto le funzioni ad alto consumo energetico saranno disattivate per abbassare la temperatura</string>
@@ -1242,6 +1246,10 @@ Sei inoltre connesso a una VPN, da cui è possibile monitorare la tua attività 
     <string name="qs_dnd_replace">Sostituisci</string>
     <string name="qs_dnd_until">Fino alle ore %s</string>
     <string name="qs_edit">Modifica</string>
+    <string name="qs_panel_life_mode">Vita privata</string>
+    <string name="qs_panel_none">Nessuno</string>
+    <string name="qs_panel_set_up">Imposta</string>
+    <string name="qs_panel_work_mode">Lavoro</string>
     <string name="qs_rearrange">Riorganizza Impostazioni rapide</string>
     <string name="qs_status_phone_muted">Audio del telefono disattivato</string>
     <string name="qs_status_phone_vibrate">Vibrazione attiva sul telefono</string>
@@ -1733,6 +1741,7 @@ Qualsiasi utente può aggiornare le app per tutti gli altri."</string>
     <string name="wifi_verbose_logging">Attiva logging dettagliato Wi-Fi</string>
     <string name="wifi_verbose_logging_summary">Aumenta livello di logging Wi-Fi, mostra SSID RSSI nel selettore Wi-Fi</string>
     <string name="window_animation_scale_title">Scala animazione finestra</string>
+    <string name="work_life_balance_mode">Equilibrio vita privata/lavoro</string>
     <string name="yes_bubbles">Consenti</string>
     <string name="zen_alarm_warning">Non sentirai la tua prossima sveglia %1$s</string>
     <string name="zen_alarm_warning_indef">Non sentirai la tua prossima sveglia %1$s se non disattivi questa impostazione prima della sveglia</string>

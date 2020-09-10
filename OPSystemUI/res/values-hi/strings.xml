@@ -259,6 +259,9 @@
     <string name="accessibility_wimax_signal_full">WiMAX सि‍ग्‍नल पूरा है.</string>
     <string name="accessibility_wimax_three_bars">WiMAX तीन बार.</string>
     <string name="accessibility_wimax_two_bars">WiMAX दो बार.</string>
+    <string name="accessibility_work_life_balance_mode">कार्य-जीवन संतुलन</string>
+    <string name="accessibility_work_life_balance_mode_off">कार्य-जीवन संतुलन मोड बंद ‍किया गया।</string>
+    <string name="accessibility_work_life_balance_mode_on">कार्य-जीवन संतुलन मोड चालू ‍किया गया।</string>
     <string name="accessibility_zero_bars">शून्य बार.</string>
     <string name="active_input_method_subtypes">टाइप करने की सक्रीय पद्धतियां</string>
     <string name="activity_launch_on_secondary_display_failed_text">प्राइमरी (मुख्य) डिस्प्ले के अलावा बाकी दूसरे डिस्प्ले पर ऐप लॉन्च नहीं किया जा सकता.</string>
@@ -695,8 +698,8 @@
     <string name="interruption_level_alarms_twoline">"केवल
 अलार्म"</string>
     <string name="interruption_level_game">गेम</string>
-    <string name="interruption_level_movie">मूवी</string>
-    <string name="interruption_level_music">म्यूज़िक</string>
+    <string name="interruption_level_movie">फ़िल्में</string>
+    <string name="interruption_level_music">संगीत</string>
     <string name="interruption_level_none">पूरी तरह शांत</string>
     <string name="interruption_level_none_twoline">"पूरी तरह
 शांत"</string>
@@ -1113,6 +1116,7 @@
     <string name="op_notification_channel_summary_low">बिना किसी ध्वनि या कंपन के कम महत्वपूर्ण वाले नोटिफ़िकेशंस</string>
     <string name="op_notification_section_header_gentle">अन्य नोटिफिकेशंस</string>
     <string name="op_notification_silence_title">अन्य</string>
+    <string name="op_qs_dark_mode_tile_label">डार्क मोड</string>
     <string name="op_quick_settings_night_display_label">रात्रि मोड</string>
     <string name="op_quick_settings_night_display_summary_off">रात्रि मोड ऑफ़ है, ऑन करने के लिए टैप करें</string>
     <string name="op_quick_settings_night_display_summary_on">रात्रि मोड ऑन है, ऑफ़ करने के लिए टैप करें</string>
@@ -1242,6 +1246,10 @@
     <string name="qs_dnd_replace">बदलें</string>
     <string name="qs_dnd_until">%s तक</string>
     <string name="qs_edit">बदलाव करें</string>
+    <string name="qs_panel_life_mode">जीवन</string>
+    <string name="qs_panel_none">कोई नहीं</string>
+    <string name="qs_panel_set_up">सेट अप करें</string>
+    <string name="qs_panel_work_mode">कार्य</string>
     <string name="qs_rearrange">त्वरित सेटिंग को फिर से व्यवस्थित करें</string>
     <string name="qs_status_phone_muted">फ़ोन म्यूट किया गया है</string>
     <string name="qs_status_phone_vibrate">फ़ोन के वाइब्रेट होने की सेटिंग चालू है</string>
@@ -1733,11 +1741,12 @@
     <string name="wifi_verbose_logging">वाई-फ़ाई वर्बोस लॉगिंग चालू करें</string>
     <string name="wifi_verbose_logging_summary">वाई-फ़ाई लॉगिंग का स्तर बढ़ाएं, वाई-फ़ाई पिकर में प्रति SSID RSSI दिखाएं</string>
     <string name="window_animation_scale_title">विंडो एनिमेशन स्‍केल</string>
+    <string name="work_life_balance_mode">Work-Life Balance</string>
     <string name="yes_bubbles">अनुमति दें</string>
     <string name="zen_alarm_warning">आपको %1$s पर अपना अगला अलार्म नहीं सुनाई देगा</string>
     <string name="zen_alarm_warning_indef">आपको %1$s पर अपना अगला अलार्म तब तक सुनाई नहीं देगा जब तक कि आप अलार्म को इस समय से पहले बंद नहीं कर देते</string>
     <string name="zen_alarms_introduction">आपको अलार्म छोड़कर दूसरी आवाज़ों और कंपनों से परेशान नहीं किया जाएगा. आपको अब भी संगीत, वीडियो और गेम सहित वह सब कुछ सुनाई देगा जो आपने चलाने के लिए चुना है.</string>
-    <string name="zen_important_interruptions">प्राथमिकता वाली सूचनाएँ</string>
+    <string name="zen_important_interruptions">प्राथमिकता सूचनाएँ</string>
     <string name="zen_interruption_level_all">सभी नोटिफिकेशंस</string>
     <string name="zen_interruption_level_priority">सिर्फ़ ज़रूरी</string>
     <string name="zen_mode_and_condition">%1$s. %2$s</string>

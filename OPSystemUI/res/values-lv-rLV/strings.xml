@@ -13,6 +13,9 @@
     <string name="accessibility_quick_settings_night_mode_changed_on">Nakts režīms ieslēgts.</string>
     <string name="accessibility_quick_settings_power_saving_changed_off">Enerģijas taupīšanas režīms ir izslēgts.</string>
     <string name="accessibility_quick_settings_power_saving_changed_on">Enerģijas taupīšanas režīms ir ieslēgts.</string>
+    <string name="accessibility_work_life_balance_mode">Darba un privātās dzīves līdzsvarošanas režīms</string>
+    <string name="accessibility_work_life_balance_mode_off">Darba un privātās dzīves līdzsvarošanas režīms ir izslēgts.</string>
+    <string name="accessibility_work_life_balance_mode_on">Darba un privātās dzīves līdzsvarošanas režīms ir ieslēgts.</string>
     <string name="activity_not_available">Lietotne nav pieejama</string>
     <string name="allow_notification">Atļaut paziņojumus</string>
     <string name="battery_low_warning">Atlikuši %s, aktivizējiet enerģijas taupīšanas režīmu, lai paildzinātu lietošanas laiku</string>
@@ -91,6 +94,7 @@
     <string name="op_notification_channel_summary_low">Mazāk svarīgiem paziņojumiem netiek lietota ne skaņa, ne vibrācija.</string>
     <string name="op_notification_section_header_gentle">Citi paziņojumi</string>
     <string name="op_notification_silence_title">Cits</string>
+    <string name="op_qs_dark_mode_tile_label">Tumšais režīms</string>
     <string name="op_quick_settings_night_display_label">Nakts režīms</string>
     <string name="op_quick_settings_night_display_summary_off">Nakts režīms ir izslēgts, pieskarieties, lai to aktivizētu</string>
     <string name="op_quick_settings_night_display_summary_on">Nakts režīms ir aktivizēts, pieskarieties, lai to izslēgtu</string>
@@ -103,7 +107,7 @@
     <string name="overheat_dialog_purple_button">Izslēgt tagad</string>
     <string name="overheat_dialog_purple_message">Tālrunis tiks izslēgts pēc 5 sekundēm</string>
     <string name="overheat_dialog_red_message">Lai samazinātu temperatūru, tiks pārtrauktas visas lietotņu darbības</string>
-    <string name="overheat_dialog_title">Jūsu tālruņa temperatūra ir pārāk augsta</string>
+    <string name="overheat_dialog_title">Tālruņa temperatūra ir pārāk augsta</string>
     <string name="overheat_notification_alert">Tālruņa temperatūra ir pārāk augsta, tādēļ daudz enerģijas patērējošās funkcijas tika izslēgtas, lai samazinātu temperatūru</string>
     <string name="overheat_notification_resume">Tālrunim ir atjaunota normāla temperatūra, un to atkal var izmantot kā parasti</string>
     <string name="overheat_notification_title_resume">Tālrunim ir atjaunota normāla temperatūra</string>
@@ -115,6 +119,10 @@
     <string name="prevent_view_top_tag_numbuer1">"1. "</string>
     <string name="prevent_view_top_tag_numbuer2">"2. "</string>
     <string name="qs_edit">Rediģēt</string>
+    <string name="qs_panel_life_mode">Ikdiena</string>
+    <string name="qs_panel_none">Neviens</string>
+    <string name="qs_panel_set_up">Iestatīt</string>
+    <string name="qs_panel_work_mode">Darbs</string>
     <string name="quick_launch_exit">Iziet</string>
     <string name="quick_launch_exit_hint">Noņemiet pirkstu no ekrāna, lai izietu</string>
     <string name="quick_reply">ATBILDĒT</string>
@@ -180,6 +188,7 @@
     <string name="volume_footer_slient">Klusums</string>
     <string name="volume_footer_vibrate">Klusums (vibrēt)</string>
     <string name="volume_vibrate">Vibrēt</string>
+    <string name="work_life_balance_mode">Work-Life Balance</string>
     <string name="zen_important_interruptions">Svarīgie paziņojumi</string>
     <string name="zen_interruption_level_all">Visi paziņojumi</string>
     <string name="zen_no_interruptions">Klusums</string>

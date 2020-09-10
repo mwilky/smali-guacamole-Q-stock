@@ -630,6 +630,12 @@
 
     iput p1, p0, Lcom/android/systemui/fragments/FragmentHostManager;->mLastScreenHeightDp:I
 
+    const-string p1, "FragmentHostManager"
+
+    const-string v0, "onConfigChange: calling reload fragments."
+
+    invoke-static {p1, v0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
     invoke-virtual {p0}, Lcom/android/systemui/fragments/FragmentHostManager;->reloadFragments()V
 
     :goto_5
@@ -658,6 +664,10 @@
     return-void
 
     :cond_0
+    iget-object v0, p0, Lcom/android/systemui/fragments/FragmentHostManager;->mContext:Landroid/content/Context;
+
+    invoke-static {v0}, Lcom/oneplus/util/ThemeColorUtils;->init(Landroid/content/Context;)V
+
     invoke-direct {p0}, Lcom/android/systemui/fragments/FragmentHostManager;->destroyFragmentHost()Landroid/os/Parcelable;
 
     move-result-object v0

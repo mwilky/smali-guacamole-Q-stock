@@ -259,10 +259,13 @@
     <string name="accessibility_wimax_signal_full">Fullt WiMAX-signal.</string>
     <string name="accessibility_wimax_three_bars">WiMAX – tre stolper.</string>
     <string name="accessibility_wimax_two_bars">WiMAX – to stolper.</string>
+    <string name="accessibility_work_life_balance_mode">Balanse mellom arbeid og fritid</string>
+    <string name="accessibility_work_life_balance_mode_off">Modusen Work-Life Balance er slått av.</string>
+    <string name="accessibility_work_life_balance_mode_on">Modusen Work-Life Balance er slått på.</string>
     <string name="accessibility_zero_bars">Ingen stolper.</string>
     <string name="active_input_method_subtypes">Aktive inndatametoder</string>
     <string name="activity_launch_on_secondary_display_failed_text">Appen kan ikke kjøres på sekundære skjermer.</string>
-    <string name="activity_not_available">App er ikke tilgjengelig</string>
+    <string name="activity_not_available">Appen er ikke tilgjengelig</string>
     <string name="activity_not_found">Appen er ikke installert på enheten din</string>
     <string name="adb_keys_warning_message">Vil du oppheve tilgangen til USB-feilsøking fra alle datamaskiner du tidligere har autorisert?</string>
     <string name="adb_warning_message">USB-feilsøking er bare ment for utviklingsformål. Bruk det til å kopiere data mellom datamaskinen og enheten, installere apper på enheten uten varsel og lese loggdata.</string>
@@ -274,7 +277,7 @@
     <string name="alarm_template_far">%1$s</string>
     <string name="allow_mock_location">Tillat simulert posisjon</string>
     <string name="allow_mock_location_summary">Tillat bruk av simulerte GPS-koordinater</string>
-    <string name="allow_notification">Tillatt varsler</string>
+    <string name="allow_notification">Tillat varslinger</string>
     <string name="always_use_accessory">Åpne alltid %1$s når %2$s er koblet til</string>
     <string name="always_use_device">Åpne alltid %1$s når %2$s er koblet til</string>
     <string name="animator_duration_scale_title">Varighetsskala for animasjoner</string>
@@ -654,11 +657,11 @@ Telefonen kommer til å kjøre som normalt, når den har kjølt seg ned."</strin
     <string name="high_temp_notif_message">Enkelte funksjoner er begrenset mens telefonen kjøles ned</string>
     <string name="high_temp_title">Telefonen begynner å bli varm</string>
     <string name="home">Innstillinger for startsiden</string>
-    <string name="hotspot_apm_message">Kan ikke koble til mobilnettverk mens flymodus er aktivert. Deaktiver flymodus, og prøv igjen.</string>
-    <string name="hotspot_operator_dialog_nosim_msg">Sett inn et SIM-kort for å bruke mobilt hotspot og andre tethering-alternativer</string>
+    <string name="hotspot_apm_message">Kan ikke koble til mobilnettet mens flymodus er aktivert. Deaktiver flymodus, og prøv på nytt.</string>
+    <string name="hotspot_operator_dialog_nosim_msg">Sett inn et SIM-kort for å bruke hotspot og andre tilknytningsalternativer</string>
     <string name="hotspot_operator_dialog_nosim_title">Ingen SIM-kort</string>
-    <string name="hotspot_operator_dialog_othererror_msg">Du har ikke abonnert på Wifi-tethering</string>
-    <string name="hotspot_operator_dialog_othererror_title">Wifi-tetheringfeil</string>
+    <string name="hotspot_operator_dialog_othererror_msg">Du har ikke abonnert på Wifi-tilknytning</string>
+    <string name="hotspot_operator_dialog_othererror_title">Wifi-tilknytningsfeil</string>
     <string name="ime_security_warning">Denne inndatametoden har tilgang til all tekst du skriver, blant annet personlige opplysninger som for eksempel passord og kredittkortnumre. Den kommer fra appen %1$s. Vil du bruke denne inndatametoden?</string>
     <string name="immediately_destroy_activities">Ikke behold aktiviteter</string>
     <string name="immediately_destroy_activities_summary">Fjern hver aktivitet så fort brukeren forlater den</string>
@@ -1113,6 +1116,7 @@ Du er også tilkoblet en VPN som kan overvåke nettverksaktiviteten din."</strin
     <string name="op_notification_channel_summary_low">Mindre viktige varsler uten noe lyd eller vibrasjon.</string>
     <string name="op_notification_section_header_gentle">Andre varsler</string>
     <string name="op_notification_silence_title">Annet</string>
+    <string name="op_qs_dark_mode_tile_label">Mørk modus</string>
     <string name="op_quick_settings_night_display_label">Nattmodus</string>
     <string name="op_quick_settings_night_display_summary_off">Nattmodus er av, trykk for å slå på</string>
     <string name="op_quick_settings_night_display_summary_on">Nattmodus er på, trykk for å slå av</string>
@@ -1141,7 +1145,7 @@ Du er også tilkoblet en VPN som kan overvåke nettverksaktiviteten din."</strin
     <string name="overheat_dialog_purple_message">Telefonen vil slås av etter 5 sekunder</string>
     <string name="overheat_dialog_red_message">Fjerner alle programprosesser for å senke temperaturen</string>
     <string name="overheat_dialog_title">Temperaturen i telefonen er for høy</string>
-    <string name="overheat_notification_alert">de Temperaturen på telefonen er for høy, og høye strøm for brukende funksjoner er slått av for å senke temperaturen</string>
+    <string name="overheat_notification_alert">Temperaturen på telefonen er for høy, og funksjoner med høy strømforbruk slås av for å senke temperaturen</string>
     <string name="overheat_notification_resume">Telefonens temperatur har blitt gjenopprettet, og telefonen kan brukes normalt</string>
     <string name="overheat_notification_title_resume">Telefonens temperatur er gjenopprettet</string>
     <string name="overheat_toast_content">Temperaturen i telefonen er for høy og funksjonen med høy strømforbruk slås av for å senke temperaturen</string>
@@ -1222,7 +1226,7 @@ Du er også tilkoblet en VPN som kan overvåke nettverksaktiviteten din."</strin
     <string name="prevent_view_title">Lommemodus er på</string>
     <string name="prevent_view_title_cancel">For å aktivere telefonen:</string>
     <string name="prevent_view_top_tag_cancel">Ikke dekk til det blå området på telefonen din, og fjern skitt og støv.</string>
-    <string name="prevent_view_top_tag_cancel2">Følg sirklene på skjermen og trykk på dem for å avslutte lommemodus</string>
+    <string name="prevent_view_top_tag_cancel2">Følg sirklene på skjermen, og trykk på dem for å avslutte lommemodus</string>
     <string name="prevent_view_top_tag_numbuer1">"1. "</string>
     <string name="prevent_view_top_tag_numbuer2">"2. "</string>
     <string name="privacy_type_camera">kamera</string>
@@ -1242,6 +1246,10 @@ Du er også tilkoblet en VPN som kan overvåke nettverksaktiviteten din."</strin
     <string name="qs_dnd_replace">Erstatt</string>
     <string name="qs_dnd_until">Til %s</string>
     <string name="qs_edit">Endre</string>
+    <string name="qs_panel_life_mode">Fritid</string>
+    <string name="qs_panel_none">Ingen</string>
+    <string name="qs_panel_set_up">Oppsett</string>
+    <string name="qs_panel_work_mode">Arbeid</string>
     <string name="qs_rearrange">Omorganiser hurtiginnstillingene</string>
     <string name="qs_status_phone_muted">Lyden på telefonen er slått av</string>
     <string name="qs_status_phone_vibrate">Telefonen er satt til vibrering</string>
@@ -1379,7 +1387,7 @@ Batterisparing"</string>
     <string name="recents_deep_clean_dialog_checkbox_text">Ikke vis igjen</string>
     <string name="recents_deep_clean_dialog_message">Grundig opprydding vil fjerne alle prosesser i bakgrunnen, noe som kan føre til utilsiktede resultater. Noen apper kan slutte å virke og vil ikke motta varsler før de startes på nytt. Vennligst bekreft.</string>
     <string name="recents_deep_clean_dialog_title">Forsiktig</string>
-    <string name="recents_deep_clean_message">Avslutt alle applikasjoner</string>
+    <string name="recents_deep_clean_message">Avslutt alle programmer</string>
     <string name="recents_deep_clean_option">Grundig opprydding</string>
     <string name="recents_empty_no_apps_open">Ingen åpne programmer</string>
     <string name="recents_empty_recently_closed">Nylig lukkede apper</string>
@@ -1733,6 +1741,7 @@ Alle brukere kan oppdatere apper for alle andre brukere."</string>
     <string name="wifi_verbose_logging">Slå på detaljert Wi-Fi-loggføring</string>
     <string name="wifi_verbose_logging_summary">Øk Wi-Fi-loggenivå – vis per SSID RSSI i Wi-Fi-velgeren</string>
     <string name="window_animation_scale_title">Animasjonsskala for vindu</string>
+    <string name="work_life_balance_mode">Work-Life Balance</string>
     <string name="yes_bubbles">Tillat</string>
     <string name="zen_alarm_warning">Du hører ikke neste innstilte alarm %1$s</string>
     <string name="zen_alarm_warning_indef">Du hører ikke neste innstilte alarm %1$s med mindre du slår dette av i forkant</string>

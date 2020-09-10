@@ -6,11 +6,15 @@
 # instance fields
 .field private mAnalogClockView:Lcom/oneplus/aod/OpAnalogClock;
 
+.field private mAodBatteryStatusView:Lcom/oneplus/aod/OpAodBatteryStatusView;
+
 .field private mClockStyle:I
 
 .field private mClockView:Lcom/oneplus/aod/OpTextClock;
 
 .field private final mContext:Landroid/content/Context;
+
+.field private mCustomTextClockView:Lcom/oneplus/aod/OpCustomTextClock;
 
 .field private mDateTimeView:Lcom/oneplus/aod/OpDateTimeView;
 
@@ -20,9 +24,9 @@
 
 .field private mDreaming:Z
 
-.field private mMiniClockView:Lcom/oneplus/aod/OpMinimalismClock;
-
 .field private mOwnerInfo:Landroid/widget/TextView;
+
+.field private mRedClockView:Lcom/oneplus/aod/OpOneRedStyleClock;
 
 .field private mUserId:I
 
@@ -59,37 +63,39 @@
 
     iget v0, p0, Lcom/oneplus/aod/OpClockViewCtrl;->mClockStyle:I
 
-    if-eqz v0, :cond_2
+    if-eqz v0, :cond_1
 
-    const/4 v1, 0x1
-
-    if-eq v0, v1, :cond_1
-
-    const/4 v1, 0x2
+    const/16 v1, 0x28
 
     if-eq v0, v1, :cond_0
 
-    const/16 v1, 0xa
+    packed-switch v0, :pswitch_data_0
 
-    if-eq v0, v1, :cond_1
+    goto :goto_0
+
+    :pswitch_0
+    iget-object p0, p0, Lcom/oneplus/aod/OpClockViewCtrl;->mCustomTextClockView:Lcom/oneplus/aod/OpCustomTextClock;
+
+    invoke-virtual {p0}, Lcom/oneplus/aod/OpCustomTextClock;->onTimeChanged()V
+
+    goto :goto_0
+
+    :pswitch_1
+    iget-object p0, p0, Lcom/oneplus/aod/OpClockViewCtrl;->mRedClockView:Lcom/oneplus/aod/OpOneRedStyleClock;
+
+    invoke-virtual {p0}, Lcom/oneplus/aod/OpOneRedStyleClock;->onTimeChanged()V
 
     goto :goto_0
 
     :cond_0
-    iget-object p0, p0, Lcom/oneplus/aod/OpClockViewCtrl;->mMiniClockView:Lcom/oneplus/aod/OpMinimalismClock;
-
-    invoke-virtual {p0}, Lcom/oneplus/aod/OpMinimalismClock;->refreshTime()V
-
-    goto :goto_0
-
-    :cond_1
+    :pswitch_2
     iget-object p0, p0, Lcom/oneplus/aod/OpClockViewCtrl;->mAnalogClockView:Lcom/oneplus/aod/OpAnalogClock;
 
     invoke-virtual {p0}, Lcom/oneplus/aod/OpAnalogClock;->refreshTime()V
 
     goto :goto_0
 
-    :cond_2
+    :cond_1
     iget-object v0, p0, Lcom/oneplus/aod/OpClockViewCtrl;->mClockView:Lcom/oneplus/aod/OpTextClock;
 
     sget-object v1, Lcom/oneplus/aod/OpDateTimeView$Patterns;->clockView12:Ljava/lang/String;
@@ -104,6 +110,21 @@
 
     :goto_0
     return-void
+
+    nop
+
+    :pswitch_data_0
+    .packed-switch 0x2
+        :pswitch_1
+        :pswitch_0
+        :pswitch_0
+        :pswitch_2
+        :pswitch_2
+        :pswitch_2
+        :pswitch_2
+        :pswitch_2
+        :pswitch_2
+    .end packed-switch
 .end method
 
 .method private updateClockVisibility()V
@@ -137,13 +158,13 @@
 
     if-nez v0, :cond_0
 
-    iget-object v0, p0, Lcom/oneplus/aod/OpClockViewCtrl;->mMiniClockView:Lcom/oneplus/aod/OpMinimalismClock;
-
-    invoke-virtual {v0, v2}, Landroid/widget/RelativeLayout;->setVisibility(I)V
-
     iget-object v0, p0, Lcom/oneplus/aod/OpClockViewCtrl;->mAnalogClockView:Lcom/oneplus/aod/OpAnalogClock;
 
     invoke-virtual {v0, v2}, Landroid/widget/FrameLayout;->setVisibility(I)V
+
+    iget-object v0, p0, Lcom/oneplus/aod/OpClockViewCtrl;->mCustomTextClockView:Lcom/oneplus/aod/OpCustomTextClock;
+
+    invoke-virtual {v0, v2}, Landroid/widget/TextView;->setVisibility(I)V
 
     iget-object v0, p0, Lcom/oneplus/aod/OpClockViewCtrl;->mClockView:Lcom/oneplus/aod/OpTextClock;
 
@@ -153,75 +174,50 @@
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
 
-    goto :goto_1
+    iget-object v0, p0, Lcom/oneplus/aod/OpClockViewCtrl;->mRedClockView:Lcom/oneplus/aod/OpOneRedStyleClock;
+
+    invoke-virtual {v0, v2}, Landroid/widget/TextView;->setVisibility(I)V
+
+    goto/16 :goto_2
 
     :cond_0
-    const/4 v3, 0x1
+    const/4 v3, 0x6
 
-    if-eq v0, v3, :cond_3
+    if-eq v0, v3, :cond_6
+
+    const/4 v3, 0x7
+
+    if-eq v0, v3, :cond_6
 
     const/16 v3, 0xa
 
+    if-eq v0, v3, :cond_6
+
+    const/16 v3, 0x9
+
+    if-eq v0, v3, :cond_6
+
+    if-eq v0, v2, :cond_6
+
+    const/4 v3, 0x5
+
     if-ne v0, v3, :cond_1
 
-    goto :goto_0
+    goto/16 :goto_1
 
     :cond_1
-    const/4 v3, 0x2
+    const/16 v3, 0x28
 
     if-ne v0, v3, :cond_2
-
-    iget-object v0, p0, Lcom/oneplus/aod/OpClockViewCtrl;->mMiniClockView:Lcom/oneplus/aod/OpMinimalismClock;
-
-    invoke-virtual {v0, v1}, Landroid/widget/RelativeLayout;->setVisibility(I)V
-
-    iget-object v0, p0, Lcom/oneplus/aod/OpClockViewCtrl;->mAnalogClockView:Lcom/oneplus/aod/OpAnalogClock;
-
-    invoke-virtual {v0, v2}, Landroid/widget/FrameLayout;->setVisibility(I)V
-
-    iget-object v0, p0, Lcom/oneplus/aod/OpClockViewCtrl;->mClockView:Lcom/oneplus/aod/OpTextClock;
-
-    invoke-virtual {v0, v2}, Landroid/view/View;->setVisibility(I)V
-
-    iget-object v0, p0, Lcom/oneplus/aod/OpClockViewCtrl;->mDateView:Lcom/oneplus/aod/OpTextDate;
-
-    invoke-virtual {v0, v2}, Landroid/view/View;->setVisibility(I)V
-
-    goto :goto_1
-
-    :cond_2
-    const/4 v1, 0x3
-
-    if-ne v0, v1, :cond_4
-
-    iget-object v0, p0, Lcom/oneplus/aod/OpClockViewCtrl;->mMiniClockView:Lcom/oneplus/aod/OpMinimalismClock;
-
-    invoke-virtual {v0, v2}, Landroid/widget/RelativeLayout;->setVisibility(I)V
-
-    iget-object v0, p0, Lcom/oneplus/aod/OpClockViewCtrl;->mAnalogClockView:Lcom/oneplus/aod/OpAnalogClock;
-
-    invoke-virtual {v0, v2}, Landroid/widget/FrameLayout;->setVisibility(I)V
-
-    iget-object v0, p0, Lcom/oneplus/aod/OpClockViewCtrl;->mClockView:Lcom/oneplus/aod/OpTextClock;
-
-    invoke-virtual {v0, v2}, Landroid/view/View;->setVisibility(I)V
-
-    iget-object v0, p0, Lcom/oneplus/aod/OpClockViewCtrl;->mDateView:Lcom/oneplus/aod/OpTextDate;
-
-    invoke-virtual {v0, v2}, Landroid/view/View;->setVisibility(I)V
-
-    goto :goto_1
-
-    :cond_3
-    :goto_0
-    iget-object v0, p0, Lcom/oneplus/aod/OpClockViewCtrl;->mMiniClockView:Lcom/oneplus/aod/OpMinimalismClock;
-
-    invoke-virtual {v0, v2}, Landroid/widget/RelativeLayout;->setVisibility(I)V
 
     iget-object v0, p0, Lcom/oneplus/aod/OpClockViewCtrl;->mAnalogClockView:Lcom/oneplus/aod/OpAnalogClock;
 
     invoke-virtual {v0, v1}, Landroid/widget/FrameLayout;->setVisibility(I)V
 
+    iget-object v0, p0, Lcom/oneplus/aod/OpClockViewCtrl;->mCustomTextClockView:Lcom/oneplus/aod/OpCustomTextClock;
+
+    invoke-virtual {v0, v2}, Landroid/widget/TextView;->setVisibility(I)V
+
     iget-object v0, p0, Lcom/oneplus/aod/OpClockViewCtrl;->mClockView:Lcom/oneplus/aod/OpTextClock;
 
     invoke-virtual {v0, v2}, Landroid/view/View;->setVisibility(I)V
@@ -230,8 +226,125 @@
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
 
+    iget-object v0, p0, Lcom/oneplus/aod/OpClockViewCtrl;->mRedClockView:Lcom/oneplus/aod/OpOneRedStyleClock;
+
+    invoke-virtual {v0, v2}, Landroid/widget/TextView;->setVisibility(I)V
+
+    goto/16 :goto_2
+
+    :cond_2
+    const/4 v3, 0x1
+
+    if-ne v0, v3, :cond_3
+
+    iget-object v0, p0, Lcom/oneplus/aod/OpClockViewCtrl;->mAnalogClockView:Lcom/oneplus/aod/OpAnalogClock;
+
+    invoke-virtual {v0, v2}, Landroid/widget/FrameLayout;->setVisibility(I)V
+
+    iget-object v0, p0, Lcom/oneplus/aod/OpClockViewCtrl;->mCustomTextClockView:Lcom/oneplus/aod/OpCustomTextClock;
+
+    invoke-virtual {v0, v2}, Landroid/widget/TextView;->setVisibility(I)V
+
+    iget-object v0, p0, Lcom/oneplus/aod/OpClockViewCtrl;->mClockView:Lcom/oneplus/aod/OpTextClock;
+
+    invoke-virtual {v0, v2}, Landroid/view/View;->setVisibility(I)V
+
+    iget-object v0, p0, Lcom/oneplus/aod/OpClockViewCtrl;->mDateView:Lcom/oneplus/aod/OpTextDate;
+
+    invoke-virtual {v0, v2}, Landroid/view/View;->setVisibility(I)V
+
+    iget-object v0, p0, Lcom/oneplus/aod/OpClockViewCtrl;->mRedClockView:Lcom/oneplus/aod/OpOneRedStyleClock;
+
+    invoke-virtual {v0, v2}, Landroid/widget/TextView;->setVisibility(I)V
+
+    goto :goto_2
+
+    :cond_3
+    const/4 v3, 0x3
+
+    if-eq v0, v3, :cond_5
+
+    const/4 v3, 0x4
+
+    if-ne v0, v3, :cond_4
+
+    goto :goto_0
+
     :cond_4
+    const/4 v3, 0x2
+
+    if-ne v0, v3, :cond_7
+
+    iget-object v0, p0, Lcom/oneplus/aod/OpClockViewCtrl;->mCustomTextClockView:Lcom/oneplus/aod/OpCustomTextClock;
+
+    invoke-virtual {v0, v2}, Landroid/widget/TextView;->setVisibility(I)V
+
+    iget-object v0, p0, Lcom/oneplus/aod/OpClockViewCtrl;->mAnalogClockView:Lcom/oneplus/aod/OpAnalogClock;
+
+    invoke-virtual {v0, v2}, Landroid/widget/FrameLayout;->setVisibility(I)V
+
+    iget-object v0, p0, Lcom/oneplus/aod/OpClockViewCtrl;->mClockView:Lcom/oneplus/aod/OpTextClock;
+
+    invoke-virtual {v0, v2}, Landroid/view/View;->setVisibility(I)V
+
+    iget-object v0, p0, Lcom/oneplus/aod/OpClockViewCtrl;->mDateView:Lcom/oneplus/aod/OpTextDate;
+
+    invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
+
+    iget-object v0, p0, Lcom/oneplus/aod/OpClockViewCtrl;->mRedClockView:Lcom/oneplus/aod/OpOneRedStyleClock;
+
+    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setVisibility(I)V
+
+    goto :goto_2
+
+    :cond_5
+    :goto_0
+    iget-object v0, p0, Lcom/oneplus/aod/OpClockViewCtrl;->mCustomTextClockView:Lcom/oneplus/aod/OpCustomTextClock;
+
+    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setVisibility(I)V
+
+    iget-object v0, p0, Lcom/oneplus/aod/OpClockViewCtrl;->mAnalogClockView:Lcom/oneplus/aod/OpAnalogClock;
+
+    invoke-virtual {v0, v2}, Landroid/widget/FrameLayout;->setVisibility(I)V
+
+    iget-object v0, p0, Lcom/oneplus/aod/OpClockViewCtrl;->mClockView:Lcom/oneplus/aod/OpTextClock;
+
+    invoke-virtual {v0, v2}, Landroid/view/View;->setVisibility(I)V
+
+    iget-object v0, p0, Lcom/oneplus/aod/OpClockViewCtrl;->mDateView:Lcom/oneplus/aod/OpTextDate;
+
+    invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
+
+    iget-object v0, p0, Lcom/oneplus/aod/OpClockViewCtrl;->mRedClockView:Lcom/oneplus/aod/OpOneRedStyleClock;
+
+    invoke-virtual {v0, v2}, Landroid/widget/TextView;->setVisibility(I)V
+
+    goto :goto_2
+
+    :cond_6
     :goto_1
+    iget-object v0, p0, Lcom/oneplus/aod/OpClockViewCtrl;->mAnalogClockView:Lcom/oneplus/aod/OpAnalogClock;
+
+    invoke-virtual {v0, v1}, Landroid/widget/FrameLayout;->setVisibility(I)V
+
+    iget-object v0, p0, Lcom/oneplus/aod/OpClockViewCtrl;->mCustomTextClockView:Lcom/oneplus/aod/OpCustomTextClock;
+
+    invoke-virtual {v0, v2}, Landroid/widget/TextView;->setVisibility(I)V
+
+    iget-object v0, p0, Lcom/oneplus/aod/OpClockViewCtrl;->mClockView:Lcom/oneplus/aod/OpTextClock;
+
+    invoke-virtual {v0, v2}, Landroid/view/View;->setVisibility(I)V
+
+    iget-object v0, p0, Lcom/oneplus/aod/OpClockViewCtrl;->mDateView:Lcom/oneplus/aod/OpTextDate;
+
+    invoke-virtual {v0, v2}, Landroid/view/View;->setVisibility(I)V
+
+    iget-object v0, p0, Lcom/oneplus/aod/OpClockViewCtrl;->mRedClockView:Lcom/oneplus/aod/OpOneRedStyleClock;
+
+    invoke-virtual {v0, v2}, Landroid/widget/TextView;->setVisibility(I)V
+
+    :cond_7
+    :goto_2
     iget-object v0, p0, Lcom/oneplus/aod/OpClockViewCtrl;->mClockView:Lcom/oneplus/aod/OpTextClock;
 
     iget v1, p0, Lcom/oneplus/aod/OpClockViewCtrl;->mClockStyle:I
@@ -246,74 +359,72 @@
 
     iget-object v0, p0, Lcom/oneplus/aod/OpClockViewCtrl;->mDateTimeView:Lcom/oneplus/aod/OpDateTimeView;
 
+    iget v1, p0, Lcom/oneplus/aod/OpClockViewCtrl;->mClockStyle:I
+
+    invoke-virtual {v0, v1}, Lcom/oneplus/aod/OpDateTimeView;->setClockStyle(I)V
+
+    iget-object v0, p0, Lcom/oneplus/aod/OpClockViewCtrl;->mAodBatteryStatusView:Lcom/oneplus/aod/OpAodBatteryStatusView;
+
     iget p0, p0, Lcom/oneplus/aod/OpClockViewCtrl;->mClockStyle:I
 
-    invoke-virtual {v0, p0}, Lcom/oneplus/aod/OpDateTimeView;->setClockStyle(I)V
+    invoke-virtual {v0, p0}, Lcom/oneplus/aod/OpAodBatteryStatusView;->setClockStyle(I)V
 
     return-void
 .end method
 
-.method private updateLayout()V
+.method private updateOwnerInfoTypeface()V
     .locals 3
 
-    iget-object v0, p0, Lcom/oneplus/aod/OpClockViewCtrl;->mOwnerInfo:Landroid/widget/TextView;
+    iget v0, p0, Lcom/oneplus/aod/OpClockViewCtrl;->mClockStyle:I
 
-    invoke-virtual {v0}, Landroid/widget/TextView;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
+    const/4 v1, 0x4
+
+    if-ne v0, v1, :cond_0
+
+    iget-object v0, p0, Lcom/oneplus/aod/OpClockViewCtrl;->mContext:Landroid/content/Context;
+
+    sget v1, Lcom/android/systemui/R$font;->oneplus_aod_font:I
+
+    invoke-static {v0, v1}, Landroid/support/v4/content/res/ResourcesCompat;->getFont(Landroid/content/Context;I)Landroid/graphics/Typeface;
 
     move-result-object v0
 
-    check-cast v0, Landroid/view/ViewGroup$MarginLayoutParams;
+    const/16 v1, 0x190
 
-    iget v1, p0, Lcom/oneplus/aod/OpClockViewCtrl;->mClockStyle:I
+    const/4 v2, 0x0
 
-    if-nez v1, :cond_0
+    invoke-static {v0, v1, v2}, Landroid/graphics/Typeface;->create(Landroid/graphics/Typeface;IZ)Landroid/graphics/Typeface;
 
-    iget-object v1, p0, Lcom/oneplus/aod/OpClockViewCtrl;->mContext:Landroid/content/Context;
-
-    invoke-virtual {v1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
-
-    move-result-object v1
-
-    sget v2, Lcom/android/systemui/R$dimen;->owner_info_default_marginTop:I
-
-    invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
-
-    move-result v1
-
-    iput v1, v0, Landroid/view/ViewGroup$MarginLayoutParams;->topMargin:I
+    move-result-object v0
 
     goto :goto_0
 
     :cond_0
-    const/4 v2, 0x1
+    invoke-static {}, Lcom/oneplus/util/OpUtils;->isMCLVersion()Z
 
-    if-eq v1, v2, :cond_1
+    move-result v0
 
-    const/16 v2, 0xa
+    if-eqz v0, :cond_1
 
-    if-ne v1, v2, :cond_2
+    const/4 v0, 0x3
+
+    invoke-static {v0}, Lcom/oneplus/util/OpUtils;->getMclTypeface(I)Landroid/graphics/Typeface;
+
+    move-result-object v0
+
+    goto :goto_0
 
     :cond_1
-    iget-object v1, p0, Lcom/oneplus/aod/OpClockViewCtrl;->mContext:Landroid/content/Context;
+    sget-object v0, Landroid/graphics/Typeface;->DEFAULT:Landroid/graphics/Typeface;
 
-    invoke-virtual {v1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
-
-    move-result-object v1
-
-    sget v2, Lcom/android/systemui/R$dimen;->owner_info_analog_marginTop:I
-
-    invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
-
-    move-result v1
-
-    iput v1, v0, Landroid/view/ViewGroup$MarginLayoutParams;->topMargin:I
-
-    :cond_2
     :goto_0
+    if-eqz v0, :cond_2
+
     iget-object p0, p0, Lcom/oneplus/aod/OpClockViewCtrl;->mOwnerInfo:Landroid/widget/TextView;
 
-    invoke-virtual {p0, v0}, Landroid/widget/TextView;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
+    invoke-virtual {p0, v0}, Landroid/widget/TextView;->setTypeface(Landroid/graphics/Typeface;)V
 
+    :cond_2
     return-void
 .end method
 
@@ -376,25 +487,45 @@
 
     iput-object v0, p0, Lcom/oneplus/aod/OpClockViewCtrl;->mAnalogClockView:Lcom/oneplus/aod/OpAnalogClock;
 
-    sget v0, Lcom/android/systemui/R$id;->minimalism_clock_view:I
+    sget v0, Lcom/android/systemui/R$id;->custom_clock_view:I
 
     invoke-virtual {p1, v0}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
-    check-cast v0, Lcom/oneplus/aod/OpMinimalismClock;
+    check-cast v0, Lcom/oneplus/aod/OpCustomTextClock;
 
-    iput-object v0, p0, Lcom/oneplus/aod/OpClockViewCtrl;->mMiniClockView:Lcom/oneplus/aod/OpMinimalismClock;
+    iput-object v0, p0, Lcom/oneplus/aod/OpClockViewCtrl;->mCustomTextClockView:Lcom/oneplus/aod/OpCustomTextClock;
+
+    sget v0, Lcom/android/systemui/R$id;->red_clock_view:I
+
+    invoke-virtual {p1, v0}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/oneplus/aod/OpOneRedStyleClock;
+
+    iput-object v0, p0, Lcom/oneplus/aod/OpClockViewCtrl;->mRedClockView:Lcom/oneplus/aod/OpOneRedStyleClock;
 
     sget v0, Lcom/android/systemui/R$id;->owner_info:I
 
     invoke-virtual {p1, v0}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
 
+    move-result-object v0
+
+    check-cast v0, Landroid/widget/TextView;
+
+    iput-object v0, p0, Lcom/oneplus/aod/OpClockViewCtrl;->mOwnerInfo:Landroid/widget/TextView;
+
+    sget v0, Lcom/android/systemui/R$id;->battery_container:I
+
+    invoke-virtual {p1, v0}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
+
     move-result-object p1
 
-    check-cast p1, Landroid/widget/TextView;
+    check-cast p1, Lcom/oneplus/aod/OpAodBatteryStatusView;
 
-    iput-object p1, p0, Lcom/oneplus/aod/OpClockViewCtrl;->mOwnerInfo:Landroid/widget/TextView;
+    iput-object p1, p0, Lcom/oneplus/aod/OpClockViewCtrl;->mAodBatteryStatusView:Lcom/oneplus/aod/OpAodBatteryStatusView;
 
     invoke-virtual {p0}, Lcom/oneplus/aod/OpClockViewCtrl;->updateClockDB()V
 
@@ -411,12 +542,50 @@
     return-void
 .end method
 
-.method public onScreenTurnedOn()V
-    .locals 1
+.method public onScreenTurnedOff()V
+    .locals 2
 
     iget-boolean v0, p0, Lcom/oneplus/aod/OpClockViewCtrl;->mDreaming:Z
 
-    if-eqz v0, :cond_0
+    if-eqz v0, :cond_1
+
+    iget v0, p0, Lcom/oneplus/aod/OpClockViewCtrl;->mClockStyle:I
+
+    const/4 v1, 0x6
+
+    if-eq v0, v1, :cond_0
+
+    const/4 v1, 0x7
+
+    if-eq v0, v1, :cond_0
+
+    const/16 v1, 0x9
+
+    if-eq v0, v1, :cond_0
+
+    const/16 v1, 0x8
+
+    if-eq v0, v1, :cond_0
+
+    const/4 v1, 0x5
+
+    if-ne v0, v1, :cond_1
+
+    :cond_0
+    iget-object p0, p0, Lcom/oneplus/aod/OpClockViewCtrl;->mAnalogClockView:Lcom/oneplus/aod/OpAnalogClock;
+
+    invoke-virtual {p0}, Lcom/oneplus/aod/OpAnalogClock;->endSchedule()V
+
+    :cond_1
+    return-void
+.end method
+
+.method public onScreenTurnedOn()V
+    .locals 2
+
+    iget-boolean v0, p0, Lcom/oneplus/aod/OpClockViewCtrl;->mDreaming:Z
+
+    if-eqz v0, :cond_1
 
     iget-object v0, p0, Lcom/oneplus/aod/OpClockViewCtrl;->mDateTimeView:Lcom/oneplus/aod/OpDateTimeView;
 
@@ -424,7 +593,34 @@
 
     invoke-direct {p0}, Lcom/oneplus/aod/OpClockViewCtrl;->refreshTime()V
 
+    iget v0, p0, Lcom/oneplus/aod/OpClockViewCtrl;->mClockStyle:I
+
+    const/4 v1, 0x6
+
+    if-eq v0, v1, :cond_0
+
+    const/4 v1, 0x7
+
+    if-eq v0, v1, :cond_0
+
+    const/16 v1, 0x9
+
+    if-eq v0, v1, :cond_0
+
+    const/16 v1, 0x8
+
+    if-eq v0, v1, :cond_0
+
+    const/4 v1, 0x5
+
+    if-ne v0, v1, :cond_1
+
     :cond_0
+    iget-object p0, p0, Lcom/oneplus/aod/OpClockViewCtrl;->mAnalogClockView:Lcom/oneplus/aod/OpAnalogClock;
+
+    invoke-virtual {p0}, Lcom/oneplus/aod/OpAnalogClock;->startSchedule()V
+
+    :cond_1
     return-void
 .end method
 
@@ -507,7 +703,7 @@
 
     if-nez v1, :cond_0
 
-    const/16 v1, 0xa
+    const/16 v1, 0x28
 
     if-ne v0, v1, :cond_0
 
@@ -538,11 +734,25 @@
 
     invoke-virtual {v0, v1}, Lcom/oneplus/aod/OpAnalogClock;->setClockStyle(I)V
 
+    iget-object v0, p0, Lcom/oneplus/aod/OpClockViewCtrl;->mCustomTextClockView:Lcom/oneplus/aod/OpCustomTextClock;
+
+    iget v1, p0, Lcom/oneplus/aod/OpClockViewCtrl;->mClockStyle:I
+
+    invoke-virtual {v0, v1}, Lcom/oneplus/aod/OpCustomTextClock;->setClockStyle(I)V
+
     iget-object v0, p0, Lcom/oneplus/aod/OpClockViewCtrl;->mDateTimeView:Lcom/oneplus/aod/OpDateTimeView;
 
     iget v1, p0, Lcom/oneplus/aod/OpClockViewCtrl;->mClockStyle:I
 
     invoke-virtual {v0, v1}, Lcom/oneplus/aod/OpDateTimeView;->setClockStyle(I)V
+
+    iget-object v0, p0, Lcom/oneplus/aod/OpClockViewCtrl;->mAodBatteryStatusView:Lcom/oneplus/aod/OpAodBatteryStatusView;
+
+    iget v1, p0, Lcom/oneplus/aod/OpClockViewCtrl;->mClockStyle:I
+
+    invoke-virtual {v0, v1}, Lcom/oneplus/aod/OpAodBatteryStatusView;->setClockStyle(I)V
+
+    invoke-direct {p0}, Lcom/oneplus/aod/OpClockViewCtrl;->updateOwnerInfoTypeface()V
 
     iget-object v0, p0, Lcom/oneplus/aod/OpClockViewCtrl;->mContext:Landroid/content/Context;
 
@@ -550,7 +760,7 @@
 
     invoke-static {v0, v2, v1}, Lcom/oneplus/aod/OpDateTimeView$Patterns;->update(Landroid/content/Context;ZI)V
 
-    invoke-direct {p0}, Lcom/oneplus/aod/OpClockViewCtrl;->updateLayout()V
+    invoke-virtual {p0}, Lcom/oneplus/aod/OpClockViewCtrl;->updateLayout()V
 
     invoke-direct {p0}, Lcom/oneplus/aod/OpClockViewCtrl;->updateClockVisibility()V
 
@@ -633,6 +843,110 @@
     return-void
 .end method
 
+.method public updateLayout()V
+    .locals 3
+
+    iget-object v0, p0, Lcom/oneplus/aod/OpClockViewCtrl;->mOwnerInfo:Landroid/widget/TextView;
+
+    invoke-virtual {v0}, Landroid/widget/TextView;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/view/ViewGroup$MarginLayoutParams;
+
+    iget v1, p0, Lcom/oneplus/aod/OpClockViewCtrl;->mClockStyle:I
+
+    if-nez v1, :cond_0
+
+    iget-object v1, p0, Lcom/oneplus/aod/OpClockViewCtrl;->mContext:Landroid/content/Context;
+
+    invoke-virtual {v1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v1
+
+    sget v2, Lcom/android/systemui/R$dimen;->owner_info_default_marginTop:I
+
+    invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+
+    move-result v1
+
+    iput v1, v0, Landroid/view/ViewGroup$MarginLayoutParams;->topMargin:I
+
+    goto :goto_0
+
+    :cond_0
+    iget-object v1, p0, Lcom/oneplus/aod/OpClockViewCtrl;->mContext:Landroid/content/Context;
+
+    invoke-virtual {v1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v1
+
+    sget v2, Lcom/android/systemui/R$dimen;->owner_info_analog_marginTop:I
+
+    invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getDimension(I)F
+
+    move-result v1
+
+    invoke-static {v1}, Lcom/oneplus/util/OpUtils;->convertDpToFixedPx(F)I
+
+    move-result v1
+
+    iput v1, v0, Landroid/view/ViewGroup$MarginLayoutParams;->topMargin:I
+
+    :goto_0
+    iget v1, p0, Lcom/oneplus/aod/OpClockViewCtrl;->mClockStyle:I
+
+    const/4 v2, 0x4
+
+    if-ne v1, v2, :cond_1
+
+    iget-object v1, p0, Lcom/oneplus/aod/OpClockViewCtrl;->mContext:Landroid/content/Context;
+
+    invoke-virtual {v1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v1
+
+    sget v2, Lcom/android/systemui/R$dimen;->aod_clock_typographic_margin_start_end:I
+
+    invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getDimension(I)F
+
+    move-result v1
+
+    invoke-static {v1}, Lcom/oneplus/util/OpUtils;->convertDpToFixedPx(F)I
+
+    move-result v1
+
+    goto :goto_1
+
+    :cond_1
+    iget-object v1, p0, Lcom/oneplus/aod/OpClockViewCtrl;->mContext:Landroid/content/Context;
+
+    invoke-virtual {v1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v1
+
+    sget v2, Lcom/android/systemui/R$dimen;->main_view_horizontal_margin:I
+
+    invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getDimension(I)F
+
+    move-result v1
+
+    invoke-static {v1}, Lcom/oneplus/util/OpUtils;->convertDpToFixedPx(F)I
+
+    move-result v1
+
+    :goto_1
+    invoke-virtual {v0, v1}, Landroid/view/ViewGroup$MarginLayoutParams;->setMarginStart(I)V
+
+    invoke-virtual {v0, v1}, Landroid/view/ViewGroup$MarginLayoutParams;->setMarginEnd(I)V
+
+    iget-object p0, p0, Lcom/oneplus/aod/OpClockViewCtrl;->mOwnerInfo:Landroid/widget/TextView;
+
+    invoke-virtual {p0, v0}, Landroid/widget/TextView;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
+
+    return-void
+.end method
+
 .method public updateOwnerInfo()V
     .locals 3
 
@@ -651,13 +965,17 @@
     :cond_0
     iget v0, p0, Lcom/oneplus/aod/OpClockViewCtrl;->mClockStyle:I
 
-    const/4 v1, 0x2
+    const/4 v1, 0x1
 
     const/16 v2, 0x8
 
     if-eq v0, v1, :cond_3
 
     const/4 v1, 0x3
+
+    if-eq v0, v1, :cond_3
+
+    const/4 v1, 0x7
 
     if-ne v0, v1, :cond_1
 

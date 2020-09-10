@@ -259,6 +259,9 @@
     <string name="accessibility_wimax_signal_full">Signal WiMAX potpun je.</string>
     <string name="accessibility_wimax_three_bars">WiMAX s tri stupca.</string>
     <string name="accessibility_wimax_two_bars">WiMAX s dva stupca.</string>
+    <string name="accessibility_work_life_balance_mode">Ravnoteža života i posla</string>
+    <string name="accessibility_work_life_balance_mode_off">Način Ravnoteža života i posla je isključen.</string>
+    <string name="accessibility_work_life_balance_mode_on">Način Ravnoteža života i posla je uključen.</string>
     <string name="accessibility_zero_bars">Nijedan stupac.</string>
     <string name="active_input_method_subtypes">Aktivni načini unosa</string>
     <string name="activity_launch_on_secondary_display_failed_text">Aplikacija ne podržava pokretanje na sekundarnim zaslonima.</string>
@@ -1113,6 +1116,7 @@ Povezani ste i s VPN-om koji može nadzirati vašu mrežnu aktivnost."</string>
     <string name="op_notification_channel_summary_low">Manje važne obavijesti bez zvuka ili vibracija.</string>
     <string name="op_notification_section_header_gentle">Druge obavijesti</string>
     <string name="op_notification_silence_title">Drugo</string>
+    <string name="op_qs_dark_mode_tile_label">Tamni način</string>
     <string name="op_quick_settings_night_display_label">Noćni način rada</string>
     <string name="op_quick_settings_night_display_summary_off">Noćni način rada isključen, dodirnite kako biste ga uključili</string>
     <string name="op_quick_settings_night_display_summary_on">Noćni način rada uključen, dodirnite kako biste ga isključili</string>
@@ -1242,6 +1246,10 @@ Povezani ste i s VPN-om koji može nadzirati vašu mrežnu aktivnost."</string>
     <string name="qs_dnd_replace">Zamijeni</string>
     <string name="qs_dnd_until">Do %s</string>
     <string name="qs_edit">Uredi</string>
+    <string name="qs_panel_life_mode">Slobodno vrijeme</string>
+    <string name="qs_panel_none">Ništa</string>
+    <string name="qs_panel_set_up">Postavljanje</string>
+    <string name="qs_panel_work_mode">Posao</string>
     <string name="qs_rearrange">Promijeni raspored Brzih postavki</string>
     <string name="qs_status_phone_muted">Na telefonu je isključen zvuk</string>
     <string name="qs_status_phone_vibrate">Telefon je postavljen na vibriranje</string>
@@ -1733,6 +1741,7 @@ Bilo koji korisnik može ažurirati aplikacije za sve ostale korisnike."</string
     <string name="wifi_verbose_logging">Omogući opširnu prijavu na Wi-Fi</string>
     <string name="wifi_verbose_logging_summary">Povećana razina prijave na Wi‑Fi, prikaz po SSID RSSI-ju u Biraču Wi‑Fi-ja</string>
     <string name="window_animation_scale_title">Brzina animacije prozora</string>
+    <string name="work_life_balance_mode">Work-Life Balance</string>
     <string name="yes_bubbles">Dopusti</string>
     <string name="zen_alarm_warning">Nećete čuti sljedeći alarm %1$s</string>
     <string name="zen_alarm_warning_indef">Nećete čuti sljedeći alarm %1$s ako to ne isključite prije njega</string>

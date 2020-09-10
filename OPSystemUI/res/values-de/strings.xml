@@ -257,6 +257,9 @@
     <string name="accessibility_wimax_signal_full">Volle WiMAX-Signalstärke</string>
     <string name="accessibility_wimax_three_bars">WiMAX - drei Balken</string>
     <string name="accessibility_wimax_two_bars">WiMAX - zwei Balken</string>
+    <string name="accessibility_work_life_balance_mode">Work Life Balance</string>
+    <string name="accessibility_work_life_balance_mode_off">Work-Life-Balance-Modus deaktiviert.</string>
+    <string name="accessibility_work_life_balance_mode_on">Work-Life-Balance-Modus aktiviert.</string>
     <string name="accessibility_zero_bars">Kein Balken</string>
     <string name="active_input_method_subtypes">Aktive Eingabemethoden</string>
     <string name="activity_launch_on_secondary_display_failed_text">Die App unterstützt den Start auf sekundären Displays nicht.</string>
@@ -1028,7 +1031,7 @@ Außerdem bist du mit einem VPN verbunden, das deine Netzwerkaktivitäten erfass
     <string name="music_controls_no_title">Kein Titel</string>
     <string name="nav_bar">Navigationsleiste</string>
     <string name="nav_bar_default">(Standard)</string>
-    <string name="nav_bar_guide_positive">OK</string>
+    <string name="nav_bar_guide_positive">VERSTANDEN</string>
     <string name="nav_bar_guide_title">Wischen Sie von unten nach oben, um die Navigationsleiste anzuzeigen. Tippen Sie hier, um das Ausblenden der Navigation zu beenden.</string>
     <string name="nav_bar_layout">Layout</string>
     <string name="no_application">Keine</string>
@@ -1110,7 +1113,8 @@ Außerdem bist du mit einem VPN verbunden, das deine Netzwerkaktivitäten erfass
     <string name="op_notification_alert_title">Wichtig</string>
     <string name="op_notification_channel_summary_low">Weniger wichtige Benachrichtigungen ohne Ton oder Vibration.</string>
     <string name="op_notification_section_header_gentle">Sonstige Benachrichtigungen</string>
-    <string name="op_notification_silence_title">Andere</string>
+    <string name="op_notification_silence_title">Sonstige</string>
+    <string name="op_qs_dark_mode_tile_label">Modus Dunkel</string>
     <string name="op_quick_settings_night_display_label">Nachtmodus</string>
     <string name="op_quick_settings_night_display_summary_off">Nacht-Modus deaktiviert, zum Aktivieren tippen</string>
     <string name="op_quick_settings_night_display_summary_on">Nacht-Modus aktiviert, zum Deaktivieren tippen</string>
@@ -1137,7 +1141,7 @@ Außerdem bist du mit einem VPN verbunden, das deine Netzwerkaktivitäten erfass
 3. Die Taschenlampe ausschalten"</string>
     <string name="overheat_dialog_purple_button">Jetzt ausschalten</string>
     <string name="overheat_dialog_purple_message">Das Telefon wird nach 5 Sekunden ausgeschaltet</string>
-    <string name="overheat_dialog_red_message">Zum Senken der Temperatur werden alle Anwendungsprozesse gelöscht</string>
+    <string name="overheat_dialog_red_message">Zum Senken der Temperatur alle Anwendungsprozesse löschen</string>
     <string name="overheat_dialog_title">Die Temperatur Ihres Telefons ist zu hoch</string>
     <string name="overheat_notification_alert">Die Temperatur Ihres Telefons ist zu hoch und zum Senken der Temperatur werden Funktionen mit hohem Stromverbrauch deaktiviert</string>
     <string name="overheat_notification_resume">Die Temperatur des Telefons wurde wiederhergestellt und das Telefon kann normal verwendet werden</string>
@@ -1240,6 +1244,10 @@ Außerdem bist du mit einem VPN verbunden, das deine Netzwerkaktivitäten erfass
     <string name="qs_dnd_replace">Ersetzen</string>
     <string name="qs_dnd_until">Bis %s</string>
     <string name="qs_edit">Bearbeiten</string>
+    <string name="qs_panel_life_mode">Life</string>
+    <string name="qs_panel_none">Keine</string>
+    <string name="qs_panel_set_up">Einrichten</string>
+    <string name="qs_panel_work_mode">Work</string>
     <string name="qs_rearrange">Schnelleinstellungen neu anordnen</string>
     <string name="qs_status_phone_muted">Smartphone stummgeschaltet</string>
     <string name="qs_status_phone_vibrate">Vibrationsmodus aktiviert</string>
@@ -1381,7 +1389,7 @@ Energiesparmodus"</string>
     <string name="recents_deep_clean_option">Tiefenbereinigung</string>
     <string name="recents_empty_no_apps_open">Keine Anwendung geöffnet</string>
     <string name="recents_empty_recently_closed">Zuletzt geschlossene Apps</string>
-    <string name="recents_normal_clean_description">Aufgabenliste und Cache löschen, ohne Hintergrundprozesse zu löschen.</string>
+    <string name="recents_normal_clean_description">Aufgabenliste und Cache bereinigen, ohne Hintergrundprozesse zu bereinigen.</string>
     <string name="recents_normal_clean_option">Normales Bereinigen</string>
     <string name="recents_option_note">Das können Sie in den Einstellungen -> Erweitert ändern.</string>
     <string name="recents_option_title">Welche Methode bevorzugen Sie</string>
@@ -1731,6 +1739,7 @@ Jeder Nutzer kann Apps für alle anderen Nutzer aktualisieren."</string>
     <string name="wifi_verbose_logging">Ausführliche WLAN-Protokollierung aktivieren</string>
     <string name="wifi_verbose_logging_summary">WLAN-Protokollierungsebene erhöhen, pro SSID RSSI in WiFi Picker anzeigen</string>
     <string name="window_animation_scale_title">Fensteranimationsfaktor</string>
+    <string name="work_life_balance_mode">Work-Life Balance</string>
     <string name="yes_bubbles">Zulassen</string>
     <string name="zen_alarm_warning">Lautloser Weckruf %1$s</string>
     <string name="zen_alarm_warning_indef">Du erhältst einen lautlosen Weckruf %1$s, wenn du ihn nicht vorher ausschaltest.</string>

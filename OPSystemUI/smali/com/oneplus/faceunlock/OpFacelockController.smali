@@ -227,7 +227,7 @@
 
     new-array v2, v2, [I
 
-    const/16 v3, 0xb8
+    const/16 v3, 0xb9
 
     aput v3, v2, v0
 

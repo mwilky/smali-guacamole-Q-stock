@@ -317,7 +317,7 @@
 
     const/4 v1, -0x1
 
-    const-string v2, "strokeLineCap"
+    const-string/jumbo v2, "strokeLineCap"
 
     invoke-static {p1, p2, v2, v0, v1}, Lcom/oneplus/support/core/content/res/TypedArrayUtils;->getNamedInt(Landroid/content/res/TypedArray;Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;II)I
 
@@ -333,7 +333,7 @@
 
     const/16 v0, 0x9
 
-    const-string v2, "strokeLineJoin"
+    const-string/jumbo v2, "strokeLineJoin"
 
     invoke-static {p1, p2, v2, v0, v1}, Lcom/oneplus/support/core/content/res/TypedArrayUtils;->getNamedInt(Landroid/content/res/TypedArray;Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;II)I
 
@@ -351,7 +351,7 @@
 
     iget v1, p0, Lcom/oneplus/support/vectordrawable/graphics/drawable/VectorDrawableCompat$VFullPath;->mStrokeMiterlimit:F
 
-    const-string v2, "strokeMiterLimit"
+    const-string/jumbo v2, "strokeMiterLimit"
 
     invoke-static {p1, p2, v2, v0, v1}, Lcom/oneplus/support/core/content/res/TypedArrayUtils;->getNamedFloat(Landroid/content/res/TypedArray;Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;IF)F
 
@@ -363,7 +363,7 @@
 
     iget v1, p0, Lcom/oneplus/support/vectordrawable/graphics/drawable/VectorDrawableCompat$VFullPath;->mStrokeColor:I
 
-    const-string v2, "strokeColor"
+    const-string/jumbo v2, "strokeColor"
 
     invoke-static {p1, p2, v2, v0, v1}, Lcom/oneplus/support/core/content/res/TypedArrayUtils;->getNamedColor(Landroid/content/res/TypedArray;Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;II)I
 
@@ -375,7 +375,7 @@
 
     iget v1, p0, Lcom/oneplus/support/vectordrawable/graphics/drawable/VectorDrawableCompat$VFullPath;->mStrokeAlpha:F
 
-    const-string v2, "strokeAlpha"
+    const-string/jumbo v2, "strokeAlpha"
 
     invoke-static {p1, p2, v2, v0, v1}, Lcom/oneplus/support/core/content/res/TypedArrayUtils;->getNamedFloat(Landroid/content/res/TypedArray;Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;IF)F
 
@@ -387,7 +387,7 @@
 
     iget v1, p0, Lcom/oneplus/support/vectordrawable/graphics/drawable/VectorDrawableCompat$VFullPath;->mStrokeWidth:F
 
-    const-string v2, "strokeWidth"
+    const-string/jumbo v2, "strokeWidth"
 
     invoke-static {p1, p2, v2, v0, v1}, Lcom/oneplus/support/core/content/res/TypedArrayUtils;->getNamedFloat(Landroid/content/res/TypedArray;Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;IF)F
 

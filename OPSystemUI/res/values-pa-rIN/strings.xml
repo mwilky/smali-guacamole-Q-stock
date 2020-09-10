@@ -13,6 +13,9 @@
     <string name="accessibility_quick_settings_night_mode_changed_on">ਰਾਤਰੀ ਮੋਡ ਚਾਲੂ ਕੀਤਾ ਗਿਆ।</string>
     <string name="accessibility_quick_settings_power_saving_changed_off">ਬੈਟਰੀ ਬੱਚਤਕਰਤਾ ਮੋਡ ਬੰਦ ਹੈ।</string>
     <string name="accessibility_quick_settings_power_saving_changed_on">ਬੈਟਰੀ ਬੱਚਤਕਰਤਾ ਮੋਡ ਚਾਲੂ ਹੈ।</string>
+    <string name="accessibility_work_life_balance_mode">ਕਾਰਜ-ਜੀਵਨ ਦਾ ਸੰਤੁਲਨ</string>
+    <string name="accessibility_work_life_balance_mode_off">ਕਾਰਜ-ਜੀਵਨ ਦਾ ਸੰਤੁਲਨ ਮੋਡ ਬੰਦ ਕੀਤਾ ਗਿਆ।</string>
+    <string name="accessibility_work_life_balance_mode_on">ਕਾਰਜ-ਜੀਵਨ ਦਾ ਸੰਤੁਲਨ ਮੋਡ ਚਾਲੂ ਕੀਤਾ ਗਿਆ।</string>
     <string name="activity_not_available">ਐਪ ਉਪਲਬਧ ਨਹੀਂ ਹੈ</string>
     <string name="allow_notification">ਸੂਚਨਾਵਾਂ ਨੂੰ ਇਜਾਜ਼ਤ ਦਿਓ</string>
     <string name="battery_low_warning">%s ਬਾਕੀ ਹੈ, ਵੱਧ ਸਮੇਂ ਤੱਕ ਵਰਤਣ ਲਈ ਬੈਟਰੀ ਸੇਵਰ ਨੂੰ ਚਾਲੂ ਕਰੋ</string>
@@ -36,14 +39,14 @@
     <string name="face_unlock_retry_other">ਚਿਹਰਾ ਅਣਲੌਕ ਅਸਫਲ ਹੋ ਗਿਆ, ਅਣਲੌਕ ਕਰਨ ਦੀ ਹੋਰ ਤਰੀਕੇ ਵਰਤੋ</string>
     <string name="face_unlock_tap_to_retry">ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰਨ ਲਈ ਇੱਥੇ ਟੈਪ ਕਰੋ।</string>
     <string name="face_unlock_timeout">ਬਹੁਤ ਸਾਰੀਆਂ ਅਸਫਲ ਕੋਸ਼ਿਸ਼ਾਂ। ਬਾਅਦ ਵਿੱਚ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।</string>
-    <string name="fingerprint_not_found">ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ</string>
+    <string name="fingerprint_not_found">ਮੁੜ ਕੋਸ਼ਿਸ਼ ਕਰੋ</string>
     <string name="hotspot_apm_message">"ਹਵਾਈ ਜਹਾਜ਼ ਮੋਡ ਸਮਰੱਥ ਹੋਣ ਦੌਰਾਨ ਮੋਬਾਈਲ ਨੈੱਟਵਰਕਾਂ 'ਤੇ ਕਨੈਕਟ ਕਰਨ ਵਿੱਚ ਅਸਮਰੱਥ। ਹਵਾਈ ਜਹਾਜ਼ ਮੋਡ ਅਸਮਰੱਥ ਕਰੋ ਅਤੇ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।"</string>
-    <string name="hotspot_operator_dialog_nosim_msg">ਮੋਬਾਈਲ ਹੌਟਸਪੌਟ ਅਤੇ ਹੋਰ ਟੈਦਰਿੰਗ ਵਿਕਲਪਾਂ ਨੂੰ ਵਰਤਣ ਲਈ SIM ਕਾਰਡ ਪਾਓ</string>
+    <string name="hotspot_operator_dialog_nosim_msg">ਮੋਬਾਇਲ ਹਾੱਟਸਪਾੱਟ ਅਤੇ ਹੋਰ ਟੀਥਰਿੰਗ ਵਿਕਲਪਾਂ ਦਾ ਪ੍ਰਯੋਗ ਕਰਨ ਲਈ SIM ਕਾਰਡ ਪਾਓ</string>
     <string name="hotspot_operator_dialog_nosim_title">ਕੋਈ SIM ਕਾਰਡ ਨਹੀਂ</string>
     <string name="hotspot_operator_dialog_othererror_msg">ਤੁਸੀਂ Wifi ਟੀਥਰਿੰਗ ਦੀ ਸੇਵਾ ਨਹੀਂ ਲਈ ਹੋਈ ਹੈ</string>
     <string name="hotspot_operator_dialog_othererror_title">Wifi ਟਿਥਰਿੰਗ ਦੀ ਭੁਲ</string>
     <string name="interruption_level_game">ਗੇਮ</string>
-    <string name="interruption_level_movie">ਫਿਲਮ</string>
+    <string name="interruption_level_movie">ਮੂਵੀ</string>
     <string name="interruption_level_music">ਸੰਗੀਤ</string>
     <string name="keyguard_fingerprint_unlock">ਅਨਲੌਕ ਕਰਨ ਲਈ ਫਿੰਗਰਪ੍ਰਿੰਟ ਵਰਤੋ</string>
     <string name="keyguard_indication_charging_time_fast_vooc">(%s ਪੂਰਾ ਹੋਣ ਤੱਕ)</string>
@@ -59,7 +62,7 @@
     <string name="maxxaudio_disable">ਅਸਮਰੱਥ ਕਰੋ</string>
     <string name="maxxaudio_enable">ਸਮਰੱਥ ਕਰੋ</string>
     <string name="mobile263">OnePlus ਰੋਮਿੰਗ</string>
-    <string name="nav_bar_guide_positive">ਸਮਝ ਲਿਆ</string>
+    <string name="nav_bar_guide_positive">ਸਮਝ ਗਿਆ</string>
     <string name="nav_bar_guide_title">ਨੈਵੀਗੇਸ਼ਨ ਪੱਟੀ ਦਿਖਾਉਣ ਲਈ ਥੱਲੋਂ ਉੱਤੇ ਵੱਲ ਸਵਾਈਪ ਕਰੋ। ਨੈਵੀਗੇਸ਼ਨ ਪੱਟੀ ਨੂੰ ਲੁਕਾਉਣਾ ਬੰਦ ਕਰਨ ਲਈ, ਕਿਰਪਾ ਕਰਕੇ ਇੱਥੇ ਟੈਪ ਕਰੋ।</string>
     <string name="non_op_earphone_notification_content">"OnePlus ਤੁਹਾਡੇ ਹੈੱਡਸੈੱਟ ਲਈ ਕੁਝ ਨਵੀਆਂ ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ ਦੀ ਪੇਸ਼ਕਸ਼ ਕਰਦਾ ਹੈ। ਉਸ ਨੂੰ ਅਜ਼ਮਾਉਣ ਲਈ ਸੂਚਨਾ 'ਤੇ ਕਲਿੱਕ ਕਰੋ।"</string>
     <string name="non_op_earphone_notification_title">ਨੁਕਤੇ</string>
@@ -70,7 +73,7 @@
     <string name="oneplus_laboratory_added_toast">ਵਧਾਈਆਂ! OnePlus ਲੈਬੋਰੇਟਰੀ ਨੂੰ ਸੈਟਿੰਗਾਂ ਵਿੱਚ ਜੋੜ ਦਿੱਤਾ ਗਿਆ ਹੈ</string>
     <string name="oneplus_screen_features_not_available_toast">"ਚਾਲੂ ਕੀਤੇ ਹੋਣ 'ਤੇ, ਸਕ੍ਰੀਨ ਕੈਲੀਬ੍ਰੇਸ਼ਨ ਵਰਗੀਆਂ ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ ਉਪਲਬਧ ਨਹੀਂ ਹੋਣਗੀਆਂ"</string>
     <string name="oneplus_threekey_navigation_disturb_changed">"'ਪਰੇਸ਼ਾਨ ਨਾ ਕਰੋ' ਨੂੰ ਬਦਲ ਦਿੱਤਾ ਗਿਆ ਹੈ!"</string>
-    <string name="oneplus_threekey_navigation_next">ਅਗਲਾ</string>
+    <string name="oneplus_threekey_navigation_next">ਅੱਗੇ</string>
     <string name="oneplus_threekey_navigation_silence">ਪੂਰੀ ਤਰ੍ਹਾਂ ਸ਼ਾਂਤ</string>
     <string name="oneplus_threekey_navigation_slider_has_changed">ਚਿਤਾਵਨੀ ਸਲਾਈਡ ਨੂੰ ਬਦਲ ਦਿੱਤਾ ਗਿਆ ਹੈ!</string>
     <string name="oneplus_threekey_navigation_sound">ਸਾਰੀਆਂ ਧੁਨੀਆਂ ਦੀ ਇਜਾਜ਼ਤ ਹੈ</string>
@@ -91,6 +94,7 @@
     <string name="op_notification_channel_summary_low">ਬਿਨਾਂ ਕਿਸੇ ਧੁਨੀ ਜਾਂ ਕੰਪਨ ਦੇ ਘੱਟ ਮਹੱਤਵਪੂਰਨ ਸੂਚਨਾਵਾਂ।</string>
     <string name="op_notification_section_header_gentle">ਹੋਰ ਸੂਚਨਾਵਾਂ</string>
     <string name="op_notification_silence_title">ਹੋਰ</string>
+    <string name="op_qs_dark_mode_tile_label">ਹਨੇਰਾ ਮੋਡ</string>
     <string name="op_quick_settings_night_display_label">ਰਾਤਰੀ ਮੋਡ</string>
     <string name="op_quick_settings_night_display_summary_off">ਰਾਤਰੀ ਮੋਡ ਬੰਦ ਹੈ, ਚਾਲੂ ਕਰਨ ਲਈ ਟੈਪ ਕਰੋ</string>
     <string name="op_quick_settings_night_display_summary_on">ਰਾਤਰੀ ਮੋਡ ਚਾਲੂ ਹੈ, ਬੰਦ ਕਰਨ ਲਈ ਟੈਪ ਕਰੋ</string>
@@ -104,7 +108,7 @@
     <string name="overheat_dialog_purple_message">ਫ਼ੋਨ 5 ਸਕਿੰਟਾਂ ਬਾਅਦ ਬੰਦ ਹੋ ਜਾਵੇਗਾ</string>
     <string name="overheat_dialog_red_message">ਤਾਪਮਾਨ ਨੂੰ ਘੱਟ ਕਰਨ ਲਈ ਸਾਰੀਆਂ ਐਪਲੀਕੇਸ਼ਨ ਪ੍ਰਕਿਰਿਆਵਾਂ ਨੂੰ ਹਟਾ ਦਿੱਤਾ ਜਾਵੇਗਾ</string>
     <string name="overheat_dialog_title">ਤੁਹਾਡੇ ਫੋਨ ਦਾ ਤਾਪਮਾਨ ਬਹੁਤ ਜ਼ਿਆਦਾ ਹੈ</string>
-    <string name="overheat_notification_alert">ਤੁਹਾਡੇ ਫੋਨ ਦਾ ਤਾਪਮਾਨ ਬਹੁਤ ਜ਼ਿਆਦਾ ਹੈ, ਅਤੇ ਤਾਪਮਾਨ ਨੂੰ ਘੱਟ ਕਰਨ ਲਈ ਜ਼ਿਆਦਾ ਬਿਜਲੀ ਉਪ੍ਯੋਗੀ ਸਾਰੇ ਫੰਕਸ਼ਨ ਬੰਦ ਕਰ ਦਿਤੇ ਹਨ।</string>
+    <string name="overheat_notification_alert">ਤੁਹਾਡੇ ਫੋਨ ਦਾ ਤਾਪਮਾਨ ਬਹੁਤ ਜ਼ਿਆਦਾ ਹੈ, ਅਤੇ ਤਾਪਮਾਨ ਨੂੰ ਘੱਟ ਕਰਨ ਲਈ ਜ਼ਿਆਦਾ ਬਿਜਲੀ ਖਪਤ ਕਰਨ ਵਾਲੇ ਸਾਰੇ ਫੰਕਸ਼ਨ ਬੰਦ ਕਰ ਦਿਤੇ ਹਨ।</string>
     <string name="overheat_notification_resume">ਫ਼ੋਨ ਦੇ ਤਾਪਮਾਨ ਨੂੰ ਮੁੜ-ਬਹਾਲ ਕੀਤਾ ਗਿਆ ਹੈ ਅਤੇ ਫ਼ੋਨ ਨੂੰ ਸਧਾਰਨ ਰੂਪ ਵਿੱਚ ਵਰਤਿਆ ਜਾ ਸਕਦਾ ਹੈ</string>
     <string name="overheat_notification_title_resume">ਫ਼ੋਨ ਦੇ ਤਾਪਮਾਨ ਨੂੰ ਮੁੜ-ਬਹਾਲ ਕੀਤਾ ਗਿਆ ਹੈ</string>
     <string name="overheat_toast_content">ਤੁਹਾਡੇ ਫੋਨ ਦਾ ਤਾਪਮਾਨ ਬਹੁਤ ਜ਼ਿਆਦਾ ਹੈ, ਅਤੇ ਤਾਪਮਾਨ ਨੂੰ ਘੱਟ ਕਰਨ ਲਈ ਜ਼ਿਆਦਾ ਬਿਜਲੀ ਦੀ ਖਪਤ ਕਰਨ ਵਾਲੇ ਸਾਰੇ ਫੰਕਸ਼ਨ ਬੰਦ ਕਰ ਦਿਤੇ ਹਨ।</string>
@@ -115,6 +119,10 @@
     <string name="prevent_view_top_tag_numbuer1">"1. "</string>
     <string name="prevent_view_top_tag_numbuer2">"2. "</string>
     <string name="qs_edit">ਸੰਪਾਦਿਤ ਕਰੋ</string>
+    <string name="qs_panel_life_mode">ਜੀਵਨ</string>
+    <string name="qs_panel_none">ਕੋਈ ਨਹੀਂ</string>
+    <string name="qs_panel_set_up">ਸੈੱਟ ਅੱਪ ਕਰੋ</string>
+    <string name="qs_panel_work_mode">ਕਾਰਜ</string>
     <string name="quick_launch_exit">ਬਾਹਰ ਜਾਓ</string>
     <string name="quick_launch_exit_hint">ਬਾਹਰ ਜਾਣ ਲਈ ਸਕ੍ਰੀਨ ਤੋਂ ਉਂਗਲੀ ਉਠਾਓ</string>
     <string name="quick_reply">ਜਵਾਬ ਦਿਓ</string>
@@ -166,7 +174,7 @@
     <string name="select_hours">ਘੰਟੇ ਚੁਣੋ</string>
     <string name="select_minutes">ਮਿੰਟ ਚੁਣੋ</string>
     <string name="select_year">ਸਾਲ ਚੁਣੋ</string>
-    <string name="sim_status_uss_network_roam">ਰੌਮ</string>
+    <string name="sim_status_uss_network_roam">ਰੋਮ</string>
     <string name="time_picker_header_text">ਸਮਾਂ ਸੈੱਟ ਕਰੋ</string>
     <string name="time_picker_hour_label">ਘੰਟਾ</string>
     <string name="time_picker_input_error">ਵੈਧ ਸਮਾਂ ਦਰਜ ਕਰੋ</string>
@@ -179,7 +187,8 @@
     <string name="volume_footer_ring">ਰਿੰਗ</string>
     <string name="volume_footer_slient">ਸਾਇਲੈਂਟ</string>
     <string name="volume_footer_vibrate">ਸਾਇਲੈਂਟ (ਵਾਈਬ੍ਰੇਟ)</string>
-    <string name="volume_vibrate">ਵਾਈਬ੍ਰੇਟ</string>
+    <string name="volume_vibrate">ਕੰਪਨ</string>
+    <string name="work_life_balance_mode">Work-Life Balance</string>
     <string name="zen_important_interruptions">ਤਰਜੀਹੀ ਸੂਚਨਾਵਾਂ</string>
     <string name="zen_interruption_level_all">ਸਾਰੀਆਂ ਸੂਚਨਾਵਾਂ</string>
     <string name="zen_no_interruptions">ਸਾਇਲੈਂਟ</string>

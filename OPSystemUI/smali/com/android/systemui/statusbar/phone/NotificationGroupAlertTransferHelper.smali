@@ -506,7 +506,7 @@
 
     move-result v2
 
-    if-eqz v2, :cond_4
+    if-eqz v2, :cond_5
 
     invoke-virtual {v0}, Landroid/service/notification/StatusBarNotification;->getKey()Ljava/lang/String;
 
@@ -516,11 +516,11 @@
 
     move-result v0
 
-    if-eqz v0, :cond_4
+    if-eqz v0, :cond_5
 
     if-nez v1, :cond_0
 
-    goto :goto_0
+    goto :goto_1
 
     :cond_0
     iget-object v0, v1, Lcom/android/systemui/statusbar/phone/NotificationGroupAlertTransferHelper$GroupAlertEntry;->mGroup:Lcom/android/systemui/statusbar/phone/NotificationGroupManager$NotificationGroup;
@@ -542,6 +542,13 @@
 
     move-result-object v0
 
+    if-nez v0, :cond_2
+
+    const/4 v0, 0x0
+
+    goto :goto_0
+
+    :cond_2
     invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
     move-result-object v0
@@ -552,7 +559,8 @@
 
     check-cast v0, Lcom/android/systemui/statusbar/notification/collection/NotificationEntry;
 
-    if-eqz v0, :cond_4
+    :goto_0
+    if-eqz v0, :cond_5
 
     invoke-virtual {v0}, Lcom/android/systemui/statusbar/notification/collection/NotificationEntry;->getRow()Lcom/android/systemui/statusbar/notification/row/ExpandableNotificationRow;
 
@@ -562,36 +570,36 @@
 
     move-result v2
 
-    if-nez v2, :cond_4
+    if-nez v2, :cond_5
 
     invoke-virtual {v0}, Lcom/android/systemui/statusbar/notification/collection/NotificationEntry;->isRowRemoved()Z
 
     move-result v2
 
-    if-nez v2, :cond_4
+    if-nez v2, :cond_5
 
     invoke-virtual {v0}, Lcom/android/systemui/statusbar/notification/collection/NotificationEntry;->isRowDismissed()Z
 
     move-result v2
 
-    if-eqz v2, :cond_2
+    if-eqz v2, :cond_3
 
-    goto :goto_0
+    goto :goto_1
 
-    :cond_2
+    :cond_3
     iget-object v2, v0, Lcom/android/systemui/statusbar/notification/collection/NotificationEntry;->key:Ljava/lang/String;
 
     invoke-virtual {p2, v2}, Lcom/android/systemui/statusbar/AlertingNotificationManager;->isAlerting(Ljava/lang/String;)Z
 
     move-result v2
 
-    if-nez v2, :cond_3
+    if-nez v2, :cond_4
 
     invoke-direct {p0, p1}, Lcom/android/systemui/statusbar/phone/NotificationGroupAlertTransferHelper;->onlySummaryAlerts(Lcom/android/systemui/statusbar/notification/collection/NotificationEntry;)Z
 
     move-result v2
 
-    if-eqz v2, :cond_3
+    if-eqz v2, :cond_4
 
     invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
 
@@ -599,13 +607,13 @@
 
     iput-wide v2, v1, Lcom/android/systemui/statusbar/phone/NotificationGroupAlertTransferHelper$GroupAlertEntry;->mLastAlertTransferTime:J
 
-    :cond_3
+    :cond_4
     invoke-direct {p0, p1, v0, p2}, Lcom/android/systemui/statusbar/phone/NotificationGroupAlertTransferHelper;->transferAlertState(Lcom/android/systemui/statusbar/notification/collection/NotificationEntry;Lcom/android/systemui/statusbar/notification/collection/NotificationEntry;Lcom/android/systemui/statusbar/AlertingNotificationManager;)V
 
     nop
 
-    :cond_4
-    :goto_0
+    :cond_5
+    :goto_1
     return-void
 .end method
 

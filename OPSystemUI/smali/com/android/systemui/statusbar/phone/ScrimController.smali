@@ -11,6 +11,7 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
+        Lcom/android/systemui/statusbar/phone/ScrimController$BrightnessObserver;,
         Lcom/android/systemui/statusbar/phone/ScrimController$KeyguardVisibilityCallback;,
         Lcom/android/systemui/statusbar/phone/ScrimController$Callback;
     }
@@ -28,6 +29,14 @@
 
 .field private static final TAG_START_ALPHA:I
 
+.field private static mCurrentBacklight:F
+
+.field private static mDefaultBacklight:F
+
+.field private static mMaximumBacklight:F
+
+.field private static mMidBacklight:F
+
 
 # instance fields
 .field protected mAnimateChange:Z
@@ -39,6 +48,8 @@
 .field private mBlankScreen:Z
 
 .field private mBlankingTransitionRunnable:Ljava/lang/Runnable;
+
+.field private mBrightnessObserver:Lcom/android/systemui/statusbar/phone/ScrimController$BrightnessObserver;
 
 .field private mCallback:Lcom/android/systemui/statusbar/phone/ScrimController$Callback;
 
@@ -369,6 +380,74 @@
 
     sput p1, Lcom/android/systemui/statusbar/phone/ScrimController;->ONEPLUS_GRADIENT_SCRIM_ALPHA_BUSY:F
 
+    iget-object p1, p0, Lcom/android/systemui/statusbar/phone/ScrimController;->mContext:Landroid/content/Context;
+
+    const-class p2, Landroid/os/PowerManager;
+
+    invoke-virtual {p1, p2}, Landroid/content/Context;->getSystemService(Ljava/lang/Class;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Landroid/os/PowerManager;
+
+    invoke-virtual {p1}, Landroid/os/PowerManager;->getMaximumScreenBrightnessSetting()I
+
+    move-result p2
+
+    int-to-float p2, p2
+
+    sput p2, Lcom/android/systemui/statusbar/phone/ScrimController;->mMaximumBacklight:F
+
+    invoke-virtual {p1}, Landroid/os/PowerManager;->getDefaultScreenBrightnessSetting()I
+
+    move-result p1
+
+    int-to-float p1, p1
+
+    sput p1, Lcom/android/systemui/statusbar/phone/ScrimController;->mDefaultBacklight:F
+
+    sget p1, Lcom/android/systemui/statusbar/phone/ScrimController;->mMaximumBacklight:F
+
+    const p2, 0x3e19999a    # 0.15f
+
+    mul-float/2addr p1, p2
+
+    sput p1, Lcom/android/systemui/statusbar/phone/ScrimController;->mMidBacklight:F
+
+    iget-object p1, p0, Lcom/android/systemui/statusbar/phone/ScrimController;->mContext:Landroid/content/Context;
+
+    invoke-virtual {p1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object p1
+
+    sget p2, Lcom/android/systemui/statusbar/phone/ScrimController;->mDefaultBacklight:F
+
+    float-to-int p2, p2
+
+    const/4 p3, -0x2
+
+    const-string p4, "screen_brightness"
+
+    invoke-static {p1, p4, p2, p3}, Landroid/provider/Settings$System;->getIntForUser(Landroid/content/ContentResolver;Ljava/lang/String;II)I
+
+    move-result p1
+
+    int-to-float p1, p1
+
+    sput p1, Lcom/android/systemui/statusbar/phone/ScrimController;->mCurrentBacklight:F
+
+    new-instance p1, Lcom/android/systemui/statusbar/phone/ScrimController$BrightnessObserver;
+
+    iget-object p2, p0, Lcom/android/systemui/statusbar/phone/ScrimController;->mHandler:Landroid/os/Handler;
+
+    invoke-direct {p1, p0, p2}, Lcom/android/systemui/statusbar/phone/ScrimController$BrightnessObserver;-><init>(Lcom/android/systemui/statusbar/phone/ScrimController;Landroid/os/Handler;)V
+
+    iput-object p1, p0, Lcom/android/systemui/statusbar/phone/ScrimController;->mBrightnessObserver:Lcom/android/systemui/statusbar/phone/ScrimController$BrightnessObserver;
+
+    iget-object p1, p0, Lcom/android/systemui/statusbar/phone/ScrimController;->mBrightnessObserver:Lcom/android/systemui/statusbar/phone/ScrimController$BrightnessObserver;
+
+    invoke-virtual {p1}, Lcom/android/systemui/statusbar/phone/ScrimController$BrightnessObserver;->startObserving()V
+
     invoke-static {}, Lcom/android/systemui/statusbar/phone/ScrimState;->values()[Lcom/android/systemui/statusbar/phone/ScrimState;
 
     move-result-object p1
@@ -426,6 +505,38 @@
     iget-object p0, p0, Lcom/android/systemui/statusbar/phone/ScrimController;->mCallback:Lcom/android/systemui/statusbar/phone/ScrimController$Callback;
 
     return-object p0
+.end method
+
+.method static synthetic access$1000()F
+    .locals 1
+
+    sget v0, Lcom/android/systemui/statusbar/phone/ScrimController;->mDefaultBacklight:F
+
+    return v0
+.end method
+
+.method static synthetic access$1100()F
+    .locals 1
+
+    sget v0, Lcom/android/systemui/statusbar/phone/ScrimController;->mMidBacklight:F
+
+    return v0
+.end method
+
+.method static synthetic access$1200()F
+    .locals 1
+
+    sget v0, Lcom/android/systemui/statusbar/phone/ScrimController;->mMaximumBacklight:F
+
+    return v0
+.end method
+
+.method static synthetic access$1300(Lcom/android/systemui/statusbar/phone/ScrimController;)V
+    .locals 0
+
+    invoke-direct {p0}, Lcom/android/systemui/statusbar/phone/ScrimController;->applyExpansionToAlpha()V
+
+    return-void
 .end method
 
 .method static synthetic access$200(Lcom/android/systemui/statusbar/phone/ScrimController;)Z
@@ -490,6 +601,30 @@
     iput-boolean p1, p0, Lcom/android/systemui/statusbar/phone/ScrimController;->mNeedsDrawableColorUpdate:Z
 
     return p1
+.end method
+
+.method static synthetic access$800()F
+    .locals 1
+
+    sget v0, Lcom/android/systemui/statusbar/phone/ScrimController;->mCurrentBacklight:F
+
+    return v0
+.end method
+
+.method static synthetic access$802(F)F
+    .locals 0
+
+    sput p0, Lcom/android/systemui/statusbar/phone/ScrimController;->mCurrentBacklight:F
+
+    return p0
+.end method
+
+.method static synthetic access$900(Lcom/android/systemui/statusbar/phone/ScrimController;)Landroid/content/Context;
+    .locals 0
+
+    iget-object p0, p0, Lcom/android/systemui/statusbar/phone/ScrimController;->mContext:Landroid/content/Context;
+
+    return-object p0
 .end method
 
 .method private applyExpansionToAlpha()V

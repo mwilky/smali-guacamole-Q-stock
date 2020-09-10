@@ -139,9 +139,26 @@
     <dimen name="aod_battery_icon_margin_bottom">0.5dip</dimen>
     <dimen name="aod_battery_icon_margin_start">4.799988dip</dimen>
     <dimen name="aod_battery_icon_width">9.0dip</dimen>
+    <dimen name="aod_clock_analog_min2_battery_top">47.0dip</dimen>
+    <dimen name="aod_clock_analog_min2_date_size">13.0dip</dimen>
+    <dimen name="aod_clock_analog_min2_size">246.0dip</dimen>
+    <dimen name="aod_clock_analog_min2_top">113.0dip</dimen>
+    <dimen name="aod_clock_analog_numeral_size">235.0dip</dimen>
+    <dimen name="aod_clock_digital2_battery_top">21.0dip</dimen>
+    <dimen name="aod_clock_digital2_margin_top">145.0dip</dimen>
+    <dimen name="aod_clock_digital_date_margin_top">-16.0dip</dimen>
+    <dimen name="aod_clock_digital_font_size">170.0dip</dimen>
+    <dimen name="aod_clock_digital_margin_top">186.0dip</dimen>
     <dimen name="aod_clock_inner_layout_margin">42.0px</dimen>
+    <dimen name="aod_clock_min2_date_left">46.0dip</dimen>
     <dimen name="aod_clock_preview_thumb_edge">486.0px</dimen>
     <dimen name="aod_clock_select_height">79.0px</dimen>
+    <dimen name="aod_clock_typographic_battery_margin_top">98.0dip</dimen>
+    <dimen name="aod_clock_typographic_date_margin_top">15.0dip</dimen>
+    <dimen name="aod_clock_typographic_font_line_space">5.0dip</dimen>
+    <dimen name="aod_clock_typographic_font_size">44.0dip</dimen>
+    <dimen name="aod_clock_typographic_margin_start_end">50.0dip</dimen>
+    <dimen name="aod_clock_typographic_margin_top">175.0dip</dimen>
     <dimen name="aod_fp_indication_margingBottom">412.0px</dimen>
     <dimen name="aod_fp_indication_margingBottom_1080p">407.0px</dimen>
     <dimen name="aod_fp_indication_margingBottom_2k">530.0px</dimen>
@@ -261,7 +278,7 @@
     <dimen name="charging_dash_margin_top">23.0px</dimen>
     <dimen name="circle_avatar_size">40.0dip</dimen>
     <dimen name="clear_all_padding_top">12.0dip</dimen>
-    <dimen name="clock_analog_size">155.0dip</dimen>
+    <dimen name="clock_analog_size">219.0dip</dimen>
     <dimen name="clock_collapsed_bottom_margin">10.0dip</dimen>
     <dimen name="clock_collapsed_bottom_margin_large_text">6.0dip</dimen>
     <dimen name="clock_expanded_bottom_margin">20.0dip</dimen>
@@ -313,11 +330,11 @@
     <dimen name="date_time_view_17801_additional_marginTop">189.0px</dimen>
     <dimen name="date_time_view_17819_additional_marginTop">220.0px</dimen>
     <dimen name="date_time_view_additional_marginTop">60.0dip</dimen>
-    <dimen name="date_time_view_analog_marginTop">91.849976dip</dimen>
+    <dimen name="date_time_view_analog_marginTop">128.0dip</dimen>
     <dimen name="date_time_view_default_marginTop">95.849976dip</dimen>
     <dimen name="date_time_view_digital_marginTop">220.0px</dimen>
     <dimen name="date_time_view_minimalism_marginTop">91.849976dip</dimen>
-    <dimen name="date_view_analog_marginTop">35.139984dip</dimen>
+    <dimen name="date_view_analog_marginTop">60.0dip</dimen>
     <dimen name="date_view_analog_mcl_marginTop">35.0dip</dimen>
     <dimen name="date_view_default_font_size">17.0dip</dimen>
     <dimen name="date_view_default_marginTop">7.0dip</dimen>
@@ -918,7 +935,7 @@
     <dimen name="notification_guts_option_vertical_margin">6.0dip</dimen>
     <dimen name="notification_guts_option_vertical_padding">16.0dip</dimen>
     <dimen name="notification_header_height">53.0dip</dimen>
-    <dimen name="notification_icon_analog_empty_view_height">33.69998dip</dimen>
+    <item type="dimen" name="notification_icon_analog_empty_view_height">@dimen/oneplus_contorl_layout_margin_bottom2</item>
     <dimen name="notification_icon_appear_padding">15.0dip</dimen>
     <dimen name="notification_icon_default_empty_view_height">33.69998dip</dimen>
     <dimen name="notification_icon_empty_view_height">22.5dip</dimen>
@@ -1475,7 +1492,7 @@
     <dimen name="opgridview_margin">8.0dip</dimen>
     <dimen name="overflow_dot_radius">2.0dip</dimen>
     <dimen name="overflow_icon_dot_padding">3.0dip</dimen>
-    <dimen name="owner_info_analog_marginTop">34.0dip</dimen>
+    <item type="dimen" name="owner_info_analog_marginTop">@dimen/oneplus_contorl_layout_margin_bottom2</item>
     <dimen name="owner_info_default_marginTop">34.0dip</dimen>
     <dimen name="owner_info_marginTop">0.0px</dimen>
     <dimen name="owner_view_text_size">13.0dip</dimen>

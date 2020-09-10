@@ -6,6 +6,8 @@
 # instance fields
 .field private final mContext:Landroid/content/Context;
 
+.field private mFirstTimeUpdate:Z
+
 .field private final mHandler:Landroid/os/Handler;
 
 .field private final mPagedTileLayout:Lcom/android/systemui/qs/PagedTileLayout;
@@ -42,6 +44,10 @@
     invoke-direct {v0}, Landroid/os/Handler;-><init>()V
 
     iput-object v0, p0, Lcom/android/systemui/qs/QSTileRevealController;->mHandler:Landroid/os/Handler;
+
+    const/4 v0, 0x1
+
+    iput-boolean v0, p0, Lcom/android/systemui/qs/QSTileRevealController;->mFirstTimeUpdate:Z
 
     new-instance v0, Lcom/android/systemui/qs/QSTileRevealController$1;
 
@@ -207,11 +213,58 @@
 
     move-result-object p1
 
+    sget-boolean v1, Landroid/os/Build;->DEBUG_ONEPLUS:Z
+
+    if-eqz v1, :cond_1
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v2, "revealedTiles mFirstTimeUpdate:"
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-boolean v2, p0, Lcom/android/systemui/qs/QSTileRevealController;->mFirstTimeUpdate:Z
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    const-string v2, " revealedTiles isEmpty:"
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-interface {p1}, Ljava/util/Set;->isEmpty()Z
+
+    move-result v2
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    const-string v2, " isShowingCustomize:"
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object v2, p0, Lcom/android/systemui/qs/QSTileRevealController;->mQSPanel:Lcom/android/systemui/qs/QSPanel;
+
+    invoke-virtual {v2}, Lcom/android/systemui/qs/QSPanel;->isShowingCustomize()Z
+
+    move-result v2
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    const-string v2, "QSTileRevealController"
+
+    invoke-static {v2, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    :cond_1
     invoke-interface {p1}, Ljava/util/Set;->isEmpty()Z
 
     move-result v1
 
-    if-nez v1, :cond_2
+    if-nez v1, :cond_3
 
     iget-object v1, p0, Lcom/android/systemui/qs/QSTileRevealController;->mQSPanel:Lcom/android/systemui/qs/QSPanel;
 
@@ -219,23 +272,31 @@
 
     move-result v1
 
-    if-eqz v1, :cond_1
+    if-nez v1, :cond_3
+
+    iget-boolean v1, p0, Lcom/android/systemui/qs/QSTileRevealController;->mFirstTimeUpdate:Z
+
+    if-eqz v1, :cond_2
 
     goto :goto_1
 
-    :cond_1
+    :cond_2
     invoke-virtual {v0, p1}, Landroid/util/ArraySet;->removeAll(Ljava/util/Collection;)Z
 
-    iget-object p0, p0, Lcom/android/systemui/qs/QSTileRevealController;->mTilesToReveal:Landroid/util/ArraySet;
+    iget-object p1, p0, Lcom/android/systemui/qs/QSTileRevealController;->mTilesToReveal:Landroid/util/ArraySet;
 
-    invoke-virtual {p0, v0}, Landroid/util/ArraySet;->addAll(Landroid/util/ArraySet;)V
+    invoke-virtual {p1, v0}, Landroid/util/ArraySet;->addAll(Landroid/util/ArraySet;)V
 
     goto :goto_2
 
-    :cond_2
+    :cond_3
     :goto_1
     invoke-direct {p0, v0}, Lcom/android/systemui/qs/QSTileRevealController;->addTileSpecsToRevealed(Landroid/util/ArraySet;)V
 
     :goto_2
+    const/4 p1, 0x0
+
+    iput-boolean p1, p0, Lcom/android/systemui/qs/QSTileRevealController;->mFirstTimeUpdate:Z
+
     return-void
 .end method

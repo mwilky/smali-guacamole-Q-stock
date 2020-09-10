@@ -100,54 +100,54 @@
 
 .field public static final oneplus_contorl_text_color_secondary_light:I = 0x7f06030b
 
-.field public static final op_btn_volume_media_icon_bg_dark:I = 0x7f06032a
+.field public static final op_btn_volume_media_icon_bg_dark:I = 0x7f06032d
 
-.field public static final op_btn_volume_media_icon_bg_light:I = 0x7f06032b
+.field public static final op_btn_volume_media_icon_bg_light:I = 0x7f06032e
 
-.field public static final op_home_handle_dark_color:I = 0x7f060341
+.field public static final op_home_handle_dark_color:I = 0x7f060344
 
-.field public static final op_home_handle_light_color:I = 0x7f060342
+.field public static final op_home_handle_light_color:I = 0x7f060345
 
-.field public static final op_nav_bar_background_dark:I = 0x7f060349
+.field public static final op_nav_bar_background_dark:I = 0x7f06034c
 
-.field public static final op_nav_bar_background_light:I = 0x7f06034a
+.field public static final op_nav_bar_background_light:I = 0x7f06034d
 
-.field public static final op_nav_bar_background_transparent:I = 0x7f06034b
+.field public static final op_nav_bar_background_transparent:I = 0x7f06034e
 
-.field public static final op_nav_bar_key_dark:I = 0x7f06034c
+.field public static final op_nav_bar_key_dark:I = 0x7f06034f
 
-.field public static final op_nav_bar_key_light:I = 0x7f06034d
+.field public static final op_nav_bar_key_light:I = 0x7f060350
 
-.field public static final op_nav_bar_key_transparent:I = 0x7f06034e
+.field public static final op_nav_bar_key_transparent:I = 0x7f060351
 
-.field public static final op_notification_info_secondary_color:I = 0x7f060350
+.field public static final op_notification_info_secondary_color:I = 0x7f060353
 
-.field public static final op_volume_dialog_row_icon_color_dark:I = 0x7f060382
+.field public static final op_volume_dialog_row_icon_color_dark:I = 0x7f060385
 
-.field public static final op_volume_dialog_row_icon_color_light:I = 0x7f060383
+.field public static final op_volume_dialog_row_icon_color_light:I = 0x7f060386
 
-.field public static final qs_detail_button_white:I = 0x7f0603dd
+.field public static final qs_detail_button_white:I = 0x7f0603e0
 
-.field public static final qs_tile_disabled_color:I = 0x7f0603e2
+.field public static final qs_tile_disabled_color:I = 0x7f0603e5
 
-.field public static final qs_tile_icon:I = 0x7f0603e4
+.field public static final qs_tile_icon:I = 0x7f0603e7
 
-.field public static final remote_input_hint:I = 0x7f060414
+.field public static final remote_input_hint:I = 0x7f060417
 
-.field public static final remote_input_text_enabled:I = 0x7f060417
+.field public static final remote_input_text_enabled:I = 0x7f06041a
 
-.field public static final screen_pinning_request_window_bg:I = 0x7f06041b
+.field public static final screen_pinning_request_window_bg:I = 0x7f06041e
 
-.field public static final smart_reply_button_background:I = 0x7f060438
+.field public static final smart_reply_button_background:I = 0x7f06043b
 
-.field public static final smart_reply_button_stroke:I = 0x7f060439
+.field public static final smart_reply_button_stroke:I = 0x7f06043c
 
-.field public static final smart_reply_button_text:I = 0x7f06043a
+.field public static final smart_reply_button_text:I = 0x7f06043d
 
-.field public static final smart_reply_button_text_dark_bg:I = 0x7f06043b
+.field public static final smart_reply_button_text_dark_bg:I = 0x7f06043e
 
-.field public static final system_bar_background_opaque:I = 0x7f060451
+.field public static final system_bar_background_opaque:I = 0x7f060454
 
-.field public static final system_bar_background_transparent:I = 0x7f060452
+.field public static final system_bar_background_transparent:I = 0x7f060455
 
-.field public static final transparent:I = 0x7f060496
+.field public static final transparent:I = 0x7f060499

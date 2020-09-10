@@ -326,7 +326,7 @@
 .end method
 
 .method private checkIfThemeChanged()V
-    .locals 7
+    .locals 8
 
     iget-object v0, p0, Lcom/android/systemui/SystemUI;->mContext:Landroid/content/Context;
 
@@ -390,9 +390,9 @@
 
     move-result-object v5
 
-    const/4 v6, 0x3
+    const/4 v7, 0x3
 
-    aput-object v5, v4, v6
+    aput-object v5, v4, v7
 
     iget-boolean v5, p0, Lcom/oneplus/systemui/statusbar/phone/OpStatusBar;->mSpecialTheme:Z
 
@@ -400,17 +400,17 @@
 
     move-result-object v5
 
-    const/4 v6, 0x4
+    const/4 v7, 0x4
 
-    aput-object v5, v4, v6
+    aput-object v5, v4, v7
 
     invoke-static {v2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object v5
 
-    const/4 v6, 0x5
+    const/4 v7, 0x5
 
-    aput-object v5, v4, v6
+    aput-object v5, v4, v7
 
     iget-boolean v5, p0, Lcom/oneplus/systemui/statusbar/phone/OpStatusBar;->mGoogleDarkTheme:Z
 
@@ -418,17 +418,17 @@
 
     move-result-object v5
 
-    const/4 v6, 0x6
+    const/4 v7, 0x6
 
-    aput-object v5, v4, v6
+    aput-object v5, v4, v7
 
     invoke-static {v3}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object v5
 
-    const/4 v6, 0x7
+    const/4 v7, 0x7
 
-    aput-object v5, v4, v6
+    aput-object v5, v4, v7
 
     const-string v5, "mThemeColor=0x%x -> 0x%x, mAccentColor=0x%x -> 0x%x, mSpecialTheme=%b -> %b, mGoogleDarkTheme=%b -> %b"
 
@@ -440,58 +440,73 @@
 
     invoke-static {v5, v4}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    iget v4, p0, Lcom/oneplus/systemui/statusbar/phone/OpStatusBar;->mThemeColor:I
-
-    if-ne v4, v0, :cond_0
-
-    iget v4, p0, Lcom/oneplus/systemui/statusbar/phone/OpStatusBar;->mAccentColor:I
-
-    if-ne v4, v1, :cond_0
-
     iget-boolean v4, p0, Lcom/oneplus/systemui/statusbar/phone/OpStatusBar;->mSpecialTheme:Z
 
-    if-ne v4, v2, :cond_0
+    if-ne v4, v2, :cond_1
 
-    iget-boolean v4, p0, Lcom/oneplus/systemui/statusbar/phone/OpStatusBar;->mGoogleDarkTheme:Z
+    iget v4, p0, Lcom/oneplus/systemui/statusbar/phone/OpStatusBar;->mThemeColor:I
 
-    if-eq v4, v3, :cond_3
+    if-ne v4, v6, :cond_0
+
+    if-eqz v0, :cond_1
 
     :cond_0
+    iget v4, p0, Lcom/oneplus/systemui/statusbar/phone/OpStatusBar;->mThemeColor:I
+
+    if-nez v4, :cond_4
+
+    if-ne v0, v6, :cond_4
+
+    :cond_1
     iput v0, p0, Lcom/oneplus/systemui/statusbar/phone/OpStatusBar;->mThemeColor:I
 
     iput v1, p0, Lcom/oneplus/systemui/statusbar/phone/OpStatusBar;->mAccentColor:I
 
     iput-boolean v2, p0, Lcom/oneplus/systemui/statusbar/phone/OpStatusBar;->mSpecialTheme:Z
 
-    iget-object v0, p0, Lcom/android/systemui/SystemUI;->mContext:Landroid/content/Context;
+    const-string v1, "checkIfThemeChanged: handle theme change #1"
 
-    invoke-static {v0}, Lcom/oneplus/util/ThemeColorUtils;->init(Landroid/content/Context;)V
+    invoke-static {v5, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    iget-boolean v0, p0, Lcom/oneplus/systemui/statusbar/phone/OpStatusBar;->mGoogleDarkTheme:Z
+    iget-object v1, p0, Lcom/android/systemui/SystemUI;->mContext:Landroid/content/Context;
 
-    if-ne v0, v3, :cond_1
+    invoke-static {v1}, Lcom/oneplus/util/ThemeColorUtils;->init(Landroid/content/Context;)V
+
+    const-string v1, "checkIfThemeChanged: handle theme change #2"
+
+    invoke-static {v5, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    iget-boolean v1, p0, Lcom/oneplus/systemui/statusbar/phone/OpStatusBar;->mGoogleDarkTheme:Z
+
+    if-ne v1, v3, :cond_2
 
     invoke-direct {p0}, Lcom/oneplus/systemui/statusbar/phone/OpStatusBar;->getStatusBarWindow()Lcom/android/systemui/statusbar/phone/StatusBarWindowView;
 
-    move-result-object v0
+    move-result-object v1
 
-    invoke-static {v0}, Lcom/android/systemui/fragments/FragmentHostManager;->get(Landroid/view/View;)Lcom/android/systemui/fragments/FragmentHostManager;
+    invoke-static {v1}, Lcom/android/systemui/fragments/FragmentHostManager;->get(Landroid/view/View;)Lcom/android/systemui/fragments/FragmentHostManager;
 
-    move-result-object v0
+    move-result-object v1
 
-    invoke-virtual {v0}, Lcom/android/systemui/fragments/FragmentHostManager;->reloadFragments()V
-
-    :cond_1
-    iget-object v0, p0, Lcom/oneplus/systemui/statusbar/phone/OpStatusBar;->mOpFacelockController:Lcom/oneplus/faceunlock/OpFacelockController;
-
-    if-eqz v0, :cond_2
-
-    invoke-virtual {v0}, Lcom/oneplus/faceunlock/OpFacelockController;->onThemeColorUpdate()V
+    invoke-virtual {v1}, Lcom/android/systemui/fragments/FragmentHostManager;->reloadFragments()V
 
     :cond_2
-    iput-boolean v3, p0, Lcom/oneplus/systemui/statusbar/phone/OpStatusBar;->mGoogleDarkTheme:Z
+    iget-object v1, p0, Lcom/oneplus/systemui/statusbar/phone/OpStatusBar;->mOpFacelockController:Lcom/oneplus/faceunlock/OpFacelockController;
+
+    if-eqz v1, :cond_3
+
+    invoke-virtual {v1}, Lcom/oneplus/faceunlock/OpFacelockController;->onThemeColorUpdate()V
 
     :cond_3
+    const-string v1, "checkIfThemeChanged: handle theme change #3"
+
+    invoke-static {v5, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    iput-boolean v3, p0, Lcom/oneplus/systemui/statusbar/phone/OpStatusBar;->mGoogleDarkTheme:Z
+
+    :cond_4
+    iput v0, p0, Lcom/oneplus/systemui/statusbar/phone/OpStatusBar;->mThemeColor:I
+
     return-void
 .end method
 

@@ -259,6 +259,9 @@
     <string name="accessibility_wimax_signal_full">WiMAX മികച്ച സിഗ്‌നൽ.</string>
     <string name="accessibility_wimax_three_bars">WiMAX മൂന്ന് ബാറുകൾ.</string>
     <string name="accessibility_wimax_two_bars">WiMAX രണ്ട് ബാറുകൾ.</string>
+    <string name="accessibility_work_life_balance_mode">വർക്ക് ലൈഫ് ബാലൻസ്</string>
+    <string name="accessibility_work_life_balance_mode_off">വർക്ക് ലൈഫ് ബാലൻസ് മോഡ് ഓഫുചെയ്‌തു.</string>
+    <string name="accessibility_work_life_balance_mode_on">വർക്ക് ലൈഫ് ബാലൻസ് മോഡ് ഓണാക്കി.</string>
     <string name="accessibility_zero_bars">ബാറുകളൊന്നുമില്ല.</string>
     <string name="active_input_method_subtypes">സജീവ ടൈപ്പുചെയ്യൽ രീതികൾ</string>
     <string name="activity_launch_on_secondary_display_failed_text">രണ്ടാം ഡിസ്‌പ്ലേകളിൽ സമാരംഭിക്കുന്നതിനെ ആപ്പ് അനുവദിക്കുന്നില്ല.</string>
@@ -655,7 +658,7 @@ Selection ട്രിഗ്ഗര്‍ ചെയ്യുക"</string>
     <string name="high_temp_title">ഫോൺ ചൂടായിക്കൊണ്ടിരിക്കുന്നു</string>
     <string name="home">ക്രമീകരണ ഹോം</string>
     <string name="hotspot_apm_message">എയര്‍പ്ലെയിന്‍ മോഡ് പ്രാപ്തമാക്കിയിരിക്കുമ്പോള്‍ മൊബൈല്‍ നൈറ്റ്‍വര്‍ക്കുകളിലേക്ക് ബന്ധിപ്പിക്കാന്‍ സാധിക്കില്ല. എയര്‍പ്ലെയിന്‍ മോഡ് അപ്രാപ്തമാക്കുകയും വീണ്ടും ശ്രമിക്കുകയും ചെയ്യുക.</string>
-    <string name="hotspot_operator_dialog_nosim_msg">മൊബൈൽ ഹോട്ട്‌സ്പോട്ടും മറ്റ് ടെതറിംഗ് ഓപ്ഷനുകളും ഉപയോഗിക്കുന്നതിനായി ഒരു SIM കാർഡ് ചേർക്കുക</string>
+    <string name="hotspot_operator_dialog_nosim_msg">മൊബൈൽ ഹോട്ട്‌സ്പോട്ടും മറ്റ് ടെതറിംഗ് ഓപ്ഷനുകളും ഉപയോഗിക്കുന്നതിന് ഒരു SIM കാർഡ് ഇടുക</string>
     <string name="hotspot_operator_dialog_nosim_title">SIM കാര്‍ഡൊന്നും ഇല്ല</string>
     <string name="hotspot_operator_dialog_othererror_msg">Wifi ടെതറിംഗ് സബ്‌സ്ക്രൈബ് ചെയ്തിട്ടില്ല</string>
     <string name="hotspot_operator_dialog_othererror_title">Wifi ടെതറിംഗ് പിശക്</string>
@@ -926,7 +929,7 @@ Selection ട്രിഗ്ഗര്‍ ചെയ്യുക"</string>
     <string name="manage_notifications_text">മാനേജ് ചെയ്യുക</string>
     <string name="managed_user_title">എല്ലാ ഔദ്യോഗിക ആപ്‌സും</string>
     <string name="maxxaudio_disable">അപ്രാപ്തമാക്കുക</string>
-    <string name="maxxaudio_enable">പ്രാപ്തമാക്കുക</string>
+    <string name="maxxaudio_enable">Habilita</string>
     <string name="media_category">മീഡിയ</string>
     <string name="media_projection_action_text">ഇപ്പോൾ ആരംഭിക്കുക</string>
     <string name="media_projection_dialog_service_text">റെക്കോർഡ് അല്ലെങ്കിൽ കാസ്‌റ്റ് ചെയ്യുന്നതിനിടെ, ഈ പ്രവർത്തനത്തിനാവശ്യമായ സേവനത്തിന്, നിങ്ങളുടെ സ്ക്രീനിൽ ദൃശ്യമാകുന്നതോ ഉപകരണത്തിൽ നിന്ന് പ്ലേ ചെയ്‌തതോ ആയ ഓഡിയോ, പാസ്‌വേഡുകൾ, പേയ്മെന്റ് വിവരം, ഫോട്ടോകൾ, സന്ദേശങ്ങൾ എന്നിവ ഉൾപ്പെടെയുള്ള തന്ത്രപ്രധാന വിവരങ്ങൾ ക്യാപ്‌ചർ ചെയ്യാനാവും.</string>
@@ -1086,7 +1089,7 @@ Selection ട്രിഗ്ഗര്‍ ചെയ്യുക"</string>
     <string name="ok">ശരി</string>
     <string name="okay">ശരി</string>
     <string name="oneplus_laboratory_added_toast">അഭിനന്ദനങ്ങള്‍! OnePlus ലബോറട്ടറി ക്രമീകരണങ്ങളിലേക്ക് ചേര്‍ത്തു</string>
-    <string name="oneplus_screen_features_not_available_toast">ഓണായിരിക്കുമ്പോൾ, സ്‌ക്രീൻ കാലിബറേഷൻ പോലുള്ള ഫീച്ചറുകൾ ലഭ്യമായിരിക്കില്ല</string>
+    <string name="oneplus_screen_features_not_available_toast">ഓണായിരിക്കുമ്പോൾ, സ്‌ക്രീൻ കാലിബ്രേഷൻ പോലുള്ള ഫീച്ചറുകൾ ലഭ്യമായിരിക്കില്ല</string>
     <string name="oneplus_threekey_navigation_disturb_changed">"'ശല്യപ്പെടുത്തരുത്' മാറിയിരിക്കുന്നു!"</string>
     <string name="oneplus_threekey_navigation_next">അടുത്തത്</string>
     <string name="oneplus_threekey_navigation_silence">പൂർണ്ണ നിശബ്ദത</string>
@@ -1100,7 +1103,7 @@ Selection ട്രിഗ്ഗര്‍ ചെയ്യുക"</string>
     <string name="ongoing_privacy_dialog_separator">", "</string>
     <string name="op_earphone_connect">ജോടിയാക്കുന്നു...</string>
     <string name="op_earphone_connected_fail">ജോടിയാക്കുന്നതിൽ പരാജയപ്പെട്ടു. ഹെഡ്‌സെറ്റ്, Bluetooth സ്റ്റാറ്റസ് നിങ്ങൾക്ക് പരിശോധിക്കാം.</string>
-    <string name="op_earphone_connected_success">ജോടിയാക്കി. കൂടുതൽ സജ്ജമാക്കാൻ ടാപ്പുചെയ്യുക.</string>
+    <string name="op_earphone_connected_success">ജോടിയാക്കി. കൂടുതൽ ക്രമീകരിക്കാൻ ടാപ്പുചെയ്യുക.</string>
     <string name="op_earphone_device">ജോടിയാക്കാൻ ടാപ്പുചെയ്യുക</string>
     <string name="op_earphone_title">OnePlus Bullets Wireless</string>
     <string name="op_emergency_indicator_hint_text">എമർജൻസി സേവനങ്ങൾക്കായി താഴേയ്ക്ക് സ്വൈപ്പ് ചെയ്യുക</string>
@@ -1113,6 +1116,7 @@ Selection ട്രിഗ്ഗര്‍ ചെയ്യുക"</string>
     <string name="op_notification_channel_summary_low">ശബ്ദമോ വൈബ്രേഷനോ ഇല്ലാത്ത പ്രാധാന്യം കുറഞ്ഞ അറിയിപ്പുകൾ.</string>
     <string name="op_notification_section_header_gentle">മറ്റ് അറിയിപ്പുകള്‍</string>
     <string name="op_notification_silence_title">മറ്റുള്ളവ</string>
+    <string name="op_qs_dark_mode_tile_label">ഡാർക്ക് മോഡ്</string>
     <string name="op_quick_settings_night_display_label">നൈറ്റ് മോഡ്</string>
     <string name="op_quick_settings_night_display_summary_off">നൈറ്റ് മോഡ് ഓഫാണ്, ഓണ്‍ ചെയ്യാന്‍ ടാപ് ചെയ്യുക</string>
     <string name="op_quick_settings_night_display_summary_on">നൈറ്റ് മോഡ് ഓണാണ്, ഓഫ് ചെയ്യാന്‍ ടാപ് ചെയ്യുക</string>
@@ -1141,7 +1145,7 @@ Selection ട്രിഗ്ഗര്‍ ചെയ്യുക"</string>
     <string name="overheat_dialog_purple_message">5 നിമിഷങ്ങൾക്ക് ശേഷം ഫോൺ ഓഫ് ചെയ്യും</string>
     <string name="overheat_dialog_red_message">താപനില കുറയ്ക്കാൻ എല്ലാ ആപ്ലിക്കേഷൻ പ്രോസസ്സുകളും മായ്ക്കും</string>
     <string name="overheat_dialog_title">നിങ്ങളുടെ ഫോണിൻ്റെ താപനില വളരെ ഉയർന്നതാണ്</string>
-    <string name="overheat_notification_alert">നിങ്ങളുടെ ഫോണിന്റെ താപനില വളരെ ഉയർന്നതാണ്, താപനില കുറയ്ക്കുന്നതിനായി പവർ കൂടുതൽ ഉപയോഗിക്കുന്ന പ്രവർത്തനങ്ങൾ ഓഫാക്കിയിരിക്കുന്നു</string>
+    <string name="overheat_notification_alert">നിങ്ങളുടെ ഫോണിന്റെ താപനില വളരെ കൂടുതലാണ്, താപനില കുറയ്ക്കുന്നതിനായി പവർ കൂടുതൽ ഉപയോഗിക്കുന്ന ഫംഗ്‌ഷനുകൾ ഓഫാക്കിയിരിക്കുന്നു</string>
     <string name="overheat_notification_resume">ഫോണിൻ്റെ താപനില പുനഃസ്ഥാപിക്കപ്പെട്ടു, ഫോൺ സാധാരണരീതിയിൽ ഉപയോഗിക്കാം</string>
     <string name="overheat_notification_title_resume">ഫോണിൻ്റെ താപനില പുനഃസ്ഥാപിക്കപ്പെട്ടു</string>
     <string name="overheat_toast_content">നിങ്ങളുടെ ഫോണിന്റെ താപനില വളരെ ഉയർന്നതാണ്, താപനില കുറയ്ക്കുന്നതിനായി പവർ കൂടുതൽ ഉപയോഗിക്കുന്ന പ്രവർത്തനങ്ങൾ ഓഫാക്കിയിരിക്കുന്നു</string>
@@ -1242,10 +1246,14 @@ Selection ട്രിഗ്ഗര്‍ ചെയ്യുക"</string>
     <string name="qs_dnd_replace">മാറ്റിസ്ഥാപിക്കുക</string>
     <string name="qs_dnd_until">%s വരെ</string>
     <string name="qs_edit">എഡിറ്റുചെയ്യുക</string>
+    <string name="qs_panel_life_mode">ലൈഫ്</string>
+    <string name="qs_panel_none">ഒന്നുമില്ല</string>
+    <string name="qs_panel_set_up">ക്രമീകരിക്കുക</string>
+    <string name="qs_panel_work_mode">വർക്ക്</string>
     <string name="qs_rearrange">ദ്രുത ക്രമീകരണം പുനഃസജ്ജീകരിക്കുക</string>
     <string name="qs_status_phone_muted">ഫോൺ മ്യൂട്ട് ചെയ്‌തു</string>
     <string name="qs_status_phone_vibrate">ഫോൺ വൈബ്രേഷൻ മോഡിലാണ്</string>
-    <string name="quick_launch_exit">പുറത്ത് കടക്കുക</string>
+    <string name="quick_launch_exit">പുറത്തുകടക്കുക</string>
     <string name="quick_launch_exit_hint">പുറത്തുകടക്കാൻ സ്ക്രീനിലെ ഫിംഗർ ഓഫ് ചെയ്യുക</string>
     <string name="quick_reply">മറുപടി നൽകുക</string>
     <string name="quick_settings">ദ്രുത ക്രമീകരണം</string>
@@ -1312,7 +1320,7 @@ Selection ട്രിഗ്ഗര്‍ ചെയ്യുക"</string>
     <string name="quick_settings_game_mode_demo_all">അറിയിപ്പുകൾ തടയുകയും കപ്പാസിറ്റീവ് ബട്ടണുകൾ ലോക്കുചെയ്യുകയും ചെയ്യും</string>
     <string name="quick_settings_game_mode_demo_button">കപ്പാസിറ്റീവ് ബട്ടണുകൾ ലോക്കുചെയ്യും</string>
     <string name="quick_settings_game_mode_demo_notification">അറിയിപ്പുകൾ തടയപ്പെടും</string>
-    <string name="quick_settings_game_mode_label">ഗെയിമിങ്ങ് മോഡ്</string>
+    <string name="quick_settings_game_mode_label">ഗെയിമിംഗ് മോഡ്</string>
     <string name="quick_settings_game_mode_summary_off">ഗെയിമിംഗ് മോഡ് ഓഫാണ്, ഓണ്‍ ചെയ്യാന്‍ ടാപ്പ് ചെയ്യുക</string>
     <string name="quick_settings_game_mode_summary_on">ഗെയിമിംഗ് മോഡ് ഓണാണ്, ഓഫ് ചെയ്യാന്‍ ടാപ്പ് ചെയ്യുക</string>
     <string name="quick_settings_header_onboarding_text">കൂടുതൽ ഓപ്ഷനുകൾക്കായി ഐക്കണുകൾ സ്‌പർശിച്ച് പിടിക്കുക</string>
@@ -1733,6 +1741,7 @@ Selection ട്രിഗ്ഗര്‍ ചെയ്യുക"</string>
     <string name="wifi_verbose_logging">വൈഫൈ വെർബോസ് ലോഗിംഗ് പ്രവർത്തനക്ഷമമാക്കുക</string>
     <string name="wifi_verbose_logging_summary">വൈഫൈ പിക്കറിൽ ഓരോ SSID RSSI പ്രകാരം കാണിക്കാൻ വൈഫൈ ലോഗിംഗ് നില വർദ്ധിപ്പിക്കുക</string>
     <string name="window_animation_scale_title">വിൻഡോ ആനിമേഷൻ സ്‌കെയിൽ</string>
+    <string name="work_life_balance_mode">Work-Life Balance</string>
     <string name="yes_bubbles">അനുവദിക്കുക</string>
     <string name="zen_alarm_warning">%1$s-നുള്ള നിങ്ങളുടെ അടുത്ത അലാറം കേൾക്കില്ല</string>
     <string name="zen_alarm_warning_indef">നിങ്ങൾ ഇത് ഓഫാക്കുന്നില്ലെങ്കിൽ %1$s-നുള്ള അടുത്ത അലാറം കേൾക്കില്ല</string>

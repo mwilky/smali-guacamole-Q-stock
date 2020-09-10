@@ -74,9 +74,7 @@
     goto :goto_1
 
     :cond_1
-    const/4 v0, 0x3
-
-    if-eq v4, v0, :cond_2
+    if-eq v4, v2, :cond_2
 
     move v1, v2
 

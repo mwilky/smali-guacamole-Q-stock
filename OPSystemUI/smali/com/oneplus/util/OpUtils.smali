@@ -1153,7 +1153,7 @@
 
     new-array v0, v1, [I
 
-    const/16 v3, 0xf4
+    const/16 v3, 0xf5
 
     aput v3, v0, v2
 
@@ -1736,7 +1736,7 @@
 
     const/4 v1, 0x0
 
-    const/16 v2, 0xd6
+    const/16 v2, 0xd7
 
     aput v2, v0, v1
 
@@ -2112,6 +2112,53 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
+    return-void
+.end method
+
+.method public static updateScreenResolutionManually(Landroid/content/Context;)V
+    .locals 2
+
+    if-eqz p0, :cond_0
+
+    invoke-virtual {p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object p0
+
+    const/4 v0, 0x2
+
+    const-string v1, "oneplus_screen_resolution_adjust"
+
+    invoke-static {p0, v1, v0}, Landroid/provider/Settings$Global;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
+
+    move-result p0
+
+    sput p0, Lcom/oneplus/util/OpUtils;->mScreenResolution:I
+
+    sget-boolean p0, Lcom/oneplus/util/OpUtils;->DEBUG_ONEPLUS:Z
+
+    if-eqz p0, :cond_0
+
+    new-instance p0, Ljava/lang/StringBuilder;
+
+    invoke-direct {p0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v0, "updateScreenResolutionManually ="
+
+    invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    sget v0, Lcom/oneplus/util/OpUtils;->mScreenResolution:I
+
+    invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p0
+
+    const-string v0, "OpUtils"
+
+    invoke-static {v0, p0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    :cond_0
     return-void
 .end method
 

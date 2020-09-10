@@ -259,6 +259,9 @@
     <string name="accessibility_wimax_signal_full">Plný signál sítě WiMAX.</string>
     <string name="accessibility_wimax_three_bars">Tři čárky signálu sítě WiMAX.</string>
     <string name="accessibility_wimax_two_bars">Dvě čárky signálu sítě WiMAX.</string>
+    <string name="accessibility_work_life_balance_mode">Rovnováha mezi pracovním a soukromým životem</string>
+    <string name="accessibility_work_life_balance_mode_off">Režim Rovnováha mezi pracovním a soukromým životem je vypnutý.</string>
+    <string name="accessibility_work_life_balance_mode_on">Režim Rovnováha mezi pracovním a soukromým životem je zapnutý.</string>
     <string name="accessibility_zero_bars">Žádná čárka.</string>
     <string name="active_input_method_subtypes">Aktivní metody zadávání</string>
     <string name="activity_launch_on_secondary_display_failed_text">Aplikace nepodporuje spuštění na sekundárních displejích.</string>
@@ -655,7 +658,7 @@ Až telefon vychladne, bude fungovat normálně."</string>
     <string name="high_temp_title">Telefon se zahřívá</string>
     <string name="home">Domovská stránka Nastavení</string>
     <string name="hotspot_apm_message">Při povolení režimu letadlo se nelze připojit k žádné mobilní síti. Vypněte režim letadlo a opakujte akci.</string>
-    <string name="hotspot_operator_dialog_nosim_msg">Vložte kartu SIM, abyste mohli používat Mobilní hotspot a další možnosti sdílení internetového připojení</string>
+    <string name="hotspot_operator_dialog_nosim_msg">Vložte kartu SIM, abyste mohli používat mobilní hotspot a další možnosti sdílení internetového připojení</string>
     <string name="hotspot_operator_dialog_nosim_title">Žádná karta SIM</string>
     <string name="hotspot_operator_dialog_othererror_msg">Nejste přihlášeni ke sdílení Wi-Fi</string>
     <string name="hotspot_operator_dialog_othererror_title">Chyba sdílení Wi-Fi</string>
@@ -1121,6 +1124,7 @@ Jste také připojeni k síti VPN, která může sledovat vaši aktivitu v sí
     <string name="op_notification_channel_summary_low">Méně důležitá oznámení beze zvuku a vibrací.</string>
     <string name="op_notification_section_header_gentle">Ostatní oznámení</string>
     <string name="op_notification_silence_title">Ostatní</string>
+    <string name="op_qs_dark_mode_tile_label">Tmavý režim</string>
     <string name="op_quick_settings_night_display_label">Noční režim</string>
     <string name="op_quick_settings_night_display_summary_off">Noční režim vypnut, klepnutím zapnete</string>
     <string name="op_quick_settings_night_display_summary_on">Noční režim zapnut, klepnutím vypnete</string>
@@ -1140,8 +1144,8 @@ Jste také připojeni k síti VPN, která může sledovat vaši aktivitu v sí
     <string name="output_service_bt_wifi">Bluetooth a Wi-Fi</string>
     <string name="output_service_wifi">Wi-Fi</string>
     <string name="output_title">Výstup médií</string>
-    <string name="overheat_dialog_orange_button">Provést nyní</string>
-    <string name="overheat_dialog_orange_message">"Ke snížení teploty provedeme tyto akce
+    <string name="overheat_dialog_orange_button">Spustit nyní</string>
+    <string name="overheat_dialog_orange_message">"Ke snížení teploty provedeme tyto operace:
 1. Snížení jasu
 2. Vypnutí hotspotu
 3. Vypnutí svítilny"</string>
@@ -1250,6 +1254,10 @@ Jste také připojeni k síti VPN, která může sledovat vaši aktivitu v sí
     <string name="qs_dnd_replace">Nahradit</string>
     <string name="qs_dnd_until">Do %s</string>
     <string name="qs_edit">Upravit</string>
+    <string name="qs_panel_life_mode">Soukromý život</string>
+    <string name="qs_panel_none">Žádný</string>
+    <string name="qs_panel_set_up">Nastavit</string>
+    <string name="qs_panel_work_mode">Pracovní život</string>
     <string name="qs_rearrange">Změnit uspořádání Rychlého nastavení</string>
     <string name="qs_status_phone_muted">Telefon je ztlumen</string>
     <string name="qs_status_phone_vibrate">Telefon je nastaven na vibrace</string>
@@ -1741,6 +1749,7 @@ Jakýkoli uživatel může aktualizovat aplikace všech ostatních uživatelů."
     <string name="wifi_verbose_logging">Podrobné protokolování Wi‑Fi</string>
     <string name="wifi_verbose_logging_summary">Zvýšit úroveň protokolování Wi‑Fi zobrazenou v SSID a RSSI při výběru sítě Wi‑Fi.</string>
     <string name="window_animation_scale_title">Měřítko animace okna</string>
+    <string name="work_life_balance_mode">Work-Life Balance</string>
     <string name="yes_bubbles">Povolit</string>
     <string name="zen_alarm_warning">Svůj další budík %1$s neuslyšíte</string>
     <string name="zen_alarm_warning_indef">Pokud tento režim nevypnete, svůj další budík %1$s neuslyšíte</string>

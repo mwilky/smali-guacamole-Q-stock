@@ -1106,7 +1106,7 @@
 
     new-array v4, v1, [I
 
-    const/16 v5, 0xd8
+    const/16 v5, 0xd9
 
     aput v5, v4, v2
 

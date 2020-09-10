@@ -13,6 +13,9 @@
     <string name="accessibility_quick_settings_night_mode_changed_on">Öörežiim on sisse lülitatud.</string>
     <string name="accessibility_quick_settings_power_saving_changed_off">Akusäästjarežiim on välja lülitatud.</string>
     <string name="accessibility_quick_settings_power_saving_changed_on">Akusäästurežiim on sisse lülitatud.</string>
+    <string name="accessibility_work_life_balance_mode">Töö- ja eraelu tasakaal</string>
+    <string name="accessibility_work_life_balance_mode_off">Töö- ja eraelu tasakaalu režiim on välja lülitatud.</string>
+    <string name="accessibility_work_life_balance_mode_on">Töö- ja eraelu tasakaalu režiim on sisse lülitatud.</string>
     <string name="activity_not_available">Rakendus ei ole saadaval</string>
     <string name="allow_notification">Luba teavitused</string>
     <string name="battery_low_warning">%s on jäänud, lülitage akusäästja kasutusaja pikendamiseks sisse</string>
@@ -36,9 +39,9 @@
     <string name="face_unlock_retry_other">Näotuvastusega avamine nurjus. Proovige mõnel muul viisil avada</string>
     <string name="face_unlock_tap_to_retry">Uuesti proovimiseks puudutage siin.</string>
     <string name="face_unlock_timeout">Liiga palju nurjunud kaitseid. Proovige hiljem uuesti.</string>
-    <string name="fingerprint_not_found">Proovige uuesti</string>
+    <string name="fingerprint_not_found">Proovi uuesti</string>
     <string name="hotspot_apm_message">Kui lennurežiim on aktiivne, ei saa mobiilsidevõrkudega ühendust luua. Keelake lennurežiim ja proovige uuesti.</string>
-    <string name="hotspot_operator_dialog_nosim_msg">Sisestage SIM-kaart, et kasutada Mobile Hotspoti ja muid sidumisvalikuid</string>
+    <string name="hotspot_operator_dialog_nosim_msg">Sisestage SIM-kaart, et kasutada mobiilset kuumpunkti ja muid sidumisvalikuid</string>
     <string name="hotspot_operator_dialog_nosim_title">SIM-kaart puudub</string>
     <string name="hotspot_operator_dialog_othererror_msg">Te pole Wi-Fi sidumist tellinud</string>
     <string name="hotspot_operator_dialog_othererror_title">Wi-Fi sidumisviga</string>
@@ -59,7 +62,7 @@
     <string name="maxxaudio_disable">Keela</string>
     <string name="maxxaudio_enable">Luba</string>
     <string name="mobile263">OnePlus rändlus</string>
-    <string name="nav_bar_guide_positive">SAIN ARU</string>
+    <string name="nav_bar_guide_positive">SELGE</string>
     <string name="nav_bar_guide_title">Navigatsiooniriba kuvamiseks nipsake alt üles. Kui soovite navigatsiooniriba peitmise lõpetada, puudutage siin.</string>
     <string name="non_op_earphone_notification_content">OnePlus pakub peakomplektile uusi funktsioone. Proovimiseks klõpsake teadet.</string>
     <string name="non_op_earphone_notification_title">Soovitused</string>
@@ -91,6 +94,7 @@
     <string name="op_notification_channel_summary_low">Vähem olulised teavitused ilma heli või vibratsioonita.</string>
     <string name="op_notification_section_header_gentle">Muud teavitused</string>
     <string name="op_notification_silence_title">Muu</string>
+    <string name="op_qs_dark_mode_tile_label">Tume režiim</string>
     <string name="op_quick_settings_night_display_label">Öörežiim</string>
     <string name="op_quick_settings_night_display_summary_off">Öörežiim on väljas, sisse lülitamiseks toksake</string>
     <string name="op_quick_settings_night_display_summary_on">Öörežiim on sees, välja lülitamiseks toksake</string>
@@ -102,11 +106,11 @@
 3.Taskulambi väljalülitamine"</string>
     <string name="overheat_dialog_purple_button">Lülita kohe välja</string>
     <string name="overheat_dialog_purple_message">Telefon lülitatakse viie sekundi pärast välja</string>
-    <string name="overheat_dialog_red_message">Temperatuuri alandamiseks lõpetatakse rakenduste toimingud</string>
+    <string name="overheat_dialog_red_message">Temperatuuri alandamiseks rakenduse protsessid lõpetatakse</string>
     <string name="overheat_dialog_title">Telefon on liiga kuum</string>
     <string name="overheat_notification_alert">Telefon on liiga kuum ning temperatuuri alandamiseks lülitatakse suure energiatarbega funktsioonid välja</string>
-    <string name="overheat_notification_resume">Telefoni temperatuur on nüüd normikohane ja telefoni saab jälle tavapäraselt kasutada</string>
-    <string name="overheat_notification_title_resume">Telefoni temperatuur on normikohane</string>
+    <string name="overheat_notification_resume">Telefoni temperatuur on taastunud ja seda saab jälle normaalselt kasutada</string>
+    <string name="overheat_notification_title_resume">Telefoni temperatuur on taastunud</string>
     <string name="overheat_toast_content">Telefon on liiga kuum ning temperatuuri alandamiseks lülitatakse suure energiatarbega funktsioonid välja</string>
     <string name="prevent_view_title">Taskurežiim on sees</string>
     <string name="prevent_view_title_cancel">Telefoni aktiveerimiseks toimige järgmiselt.</string>
@@ -115,6 +119,10 @@
     <string name="prevent_view_top_tag_numbuer1">"1. "</string>
     <string name="prevent_view_top_tag_numbuer2">"2. "</string>
     <string name="qs_edit">Muuda</string>
+    <string name="qs_panel_life_mode">Eraelu</string>
+    <string name="qs_panel_none">Puudub</string>
+    <string name="qs_panel_set_up">Seadista</string>
+    <string name="qs_panel_work_mode">Töö</string>
     <string name="quick_launch_exit">Välju</string>
     <string name="quick_launch_exit_hint">Väljumiseks võtke sõrm ekraanilt</string>
     <string name="quick_reply">VASTA</string>
@@ -180,6 +188,7 @@
     <string name="volume_footer_slient">Hääletu</string>
     <string name="volume_footer_vibrate">Hääletu (vibreeri)</string>
     <string name="volume_vibrate">Vibreeri</string>
+    <string name="work_life_balance_mode">Work-Life Balance</string>
     <string name="zen_important_interruptions">Tähtsad teated</string>
     <string name="zen_interruption_level_all">Kõik teated</string>
     <string name="zen_no_interruptions">Hääletu</string>

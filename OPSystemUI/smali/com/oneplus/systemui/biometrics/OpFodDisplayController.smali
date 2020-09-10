@@ -348,7 +348,7 @@
 
     iget-object v0, p0, Lcom/oneplus/systemui/biometrics/OpFodDisplayController;->mDimControl:Lcom/oneplus/systemui/biometrics/OpFodDimControl;
 
-    const-string v1, "suspend"
+    const-string/jumbo v1, "suspend"
 
     invoke-virtual {v0, v1}, Lcom/oneplus/systemui/biometrics/OpFodDimControl;->disable(Ljava/lang/String;)Z
 

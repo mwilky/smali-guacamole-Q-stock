@@ -793,7 +793,7 @@
 
     iget-object v6, p0, Landroidx/slice/widget/RowContent;->mTitleItem:Landroidx/slice/SliceItem;
 
-    const-string v7, "summary"
+    const-string/jumbo v7, "summary"
 
     if-eqz v6, :cond_7
 

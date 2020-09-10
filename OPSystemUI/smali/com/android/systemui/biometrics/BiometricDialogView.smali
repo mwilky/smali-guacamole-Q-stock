@@ -1406,7 +1406,7 @@
 
     iget-object v0, p0, Lcom/android/systemui/biometrics/BiometricDialogView;->mBundle:Landroid/os/Bundle;
 
-    const-string v2, "subtitle"
+    const-string/jumbo v2, "subtitle"
 
     invoke-virtual {v0, v2}, Landroid/os/Bundle;->getCharSequence(Ljava/lang/String;)Ljava/lang/CharSequence;
 

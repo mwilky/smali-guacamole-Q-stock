@@ -259,6 +259,9 @@
     <string name="accessibility_wimax_signal_full">WiMAX-signal er fuldt.</string>
     <string name="accessibility_wimax_three_bars">WiMAX tre bjælker.</string>
     <string name="accessibility_wimax_two_bars">WiMAX to bjælker.</string>
+    <string name="accessibility_work_life_balance_mode">Balance mellem arbejde og fritid</string>
+    <string name="accessibility_work_life_balance_mode_off">Tilstand for balance mellem arbejde og fritid slået fra.</string>
+    <string name="accessibility_work_life_balance_mode_on">Tilstand for balance mellem arbejde og fritid slået til.</string>
     <string name="accessibility_zero_bars">Nul bjælker.</string>
     <string name="active_input_method_subtypes">Aktive inputmetoder</string>
     <string name="activity_launch_on_secondary_display_failed_text">Appen kan ikke åbnes på sekundære skærme.</string>
@@ -1086,7 +1089,7 @@ Du har også forbindelse til et VPN, som kan overvåge din netværksaktivitet."<
     <string name="ok">OK</string>
     <string name="okay">OK</string>
     <string name="oneplus_laboratory_added_toast">Tillykke! OnePlus-laboratoriet er blevet føjet til Indstillinger</string>
-    <string name="oneplus_screen_features_not_available_toast">Når slået til vil funktioner som skærmkalibrering ikke være tilgængelig</string>
+    <string name="oneplus_screen_features_not_available_toast">Når de er slået til, vil funktioner som skærmkalibrering ikke være tilgængelige</string>
     <string name="oneplus_threekey_navigation_disturb_changed">"'Må ikke forstyrres' er ændret!"</string>
     <string name="oneplus_threekey_navigation_next">NÆSTE</string>
     <string name="oneplus_threekey_navigation_silence">Total stilhed</string>
@@ -1113,6 +1116,7 @@ Du har også forbindelse til et VPN, som kan overvåge din netværksaktivitet."<
     <string name="op_notification_channel_summary_low">Mindre vigtige meddelelser uden lyd eller vibration.</string>
     <string name="op_notification_section_header_gentle">Andre meddelelser</string>
     <string name="op_notification_silence_title">Andet</string>
+    <string name="op_qs_dark_mode_tile_label">Mørk tilstand</string>
     <string name="op_quick_settings_night_display_label">Nattetilstand</string>
     <string name="op_quick_settings_night_display_summary_off">Nattetilstand slået fra, tryk for at slå til</string>
     <string name="op_quick_settings_night_display_summary_on">Nattetilstand slået til, tryk for at slå fra</string>
@@ -1242,6 +1246,10 @@ Du har også forbindelse til et VPN, som kan overvåge din netværksaktivitet."<
     <string name="qs_dnd_replace">Erstat</string>
     <string name="qs_dnd_until">Indtil %s</string>
     <string name="qs_edit">Rediger</string>
+    <string name="qs_panel_life_mode">Fritid</string>
+    <string name="qs_panel_none">Ingen</string>
+    <string name="qs_panel_set_up">Konfigurer</string>
+    <string name="qs_panel_work_mode">Arbejde</string>
     <string name="qs_rearrange">Omarranger Hurtige indstillinger</string>
     <string name="qs_status_phone_muted">Telefonen er på lydløs</string>
     <string name="qs_status_phone_vibrate">Telefonen er i vibrationstilstand</string>
@@ -1380,7 +1388,7 @@ Batterisparefunktion"</string>
     <string name="recents_deep_clean_dialog_message">Dybdegående rengøring sletter alle baggrundsprocesser, som kan føre til utilsigtede resultater. Nogle apps vil muligvis holde op med at fungere og vil ikke modtage meddelelser, til du genstarter dem. Du bedes bekræfte.</string>
     <string name="recents_deep_clean_dialog_title">Forsigtig</string>
     <string name="recents_deep_clean_message">Afslut alle programmer</string>
-    <string name="recents_deep_clean_option">Dybdegående sletning</string>
+    <string name="recents_deep_clean_option">Dybdegående rengøring</string>
     <string name="recents_empty_no_apps_open">Ingen åbne applikationer</string>
     <string name="recents_empty_recently_closed">Nyligt lukkede apps</string>
     <string name="recents_normal_clean_description">Ryd opgavelisten og cachen uden at slette baggrundsprocesser.</string>
@@ -1733,6 +1741,7 @@ Enhver bruger kan opdatere apps for alle andre brugere."</string>
     <string name="wifi_verbose_logging">Aktivér detaljeret Wi-Fi-logføring</string>
     <string name="wifi_verbose_logging_summary">Øg mængden af Wi‑Fi-logføring. Vis opdelt efter SSID RSSI i Wi‑Fi-vælgeren</string>
     <string name="window_animation_scale_title">Animationsskala for vindue</string>
+    <string name="work_life_balance_mode">Work-Life Balance</string>
     <string name="yes_bubbles">Tillad</string>
     <string name="zen_alarm_warning">Du vil ikke kunne høre din næste alarm %1$s</string>
     <string name="zen_alarm_warning_indef">Du vil ikke kunne høre din næste alarm %1$s, medmindre du slår funktionen fra inden da</string>

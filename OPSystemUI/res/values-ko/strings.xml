@@ -259,6 +259,9 @@
     <string name="accessibility_wimax_signal_full">WiMAX 신호가 강합니다.</string>
     <string name="accessibility_wimax_three_bars">WiMAX 신호 막대가 세 개입니다.</string>
     <string name="accessibility_wimax_two_bars">WiMAX 신호 막대가 두 개입니다.</string>
+    <string name="accessibility_work_life_balance_mode">워크 라이프 밸런스</string>
+    <string name="accessibility_work_life_balance_mode_off">워크 라이프 밸런스 모드가 꺼졌습니다.</string>
+    <string name="accessibility_work_life_balance_mode_on">워크 라이프 밸런스 모드가 켜졌습니다.</string>
     <string name="accessibility_zero_bars">신호 막대가 없습니다.</string>
     <string name="active_input_method_subtypes">입력 방법</string>
     <string name="activity_launch_on_secondary_display_failed_text">앱이 보조 디스플레이에서의 실행을 지원하지 않습니다.</string>
@@ -655,7 +658,7 @@
     <string name="high_temp_title">휴대전화 온도가 높음</string>
     <string name="home">설정 홈</string>
     <string name="hotspot_apm_message">비행기 모드가 활성화된 동안 모바일 네트워크에 연결할 수 없습니다. 비행기 모드를 비활성화하고 다시 시도하십시오.</string>
-    <string name="hotspot_operator_dialog_nosim_msg">모바일 핫스팟 및 기타 테더링 옵션을 사용하려면 SIM 카드를 삽입하세요</string>
+    <string name="hotspot_operator_dialog_nosim_msg">모바일 핫스팟 및 기타 테더링 옵션을 사용하려면 SIM 카드를 삽입하세요.</string>
     <string name="hotspot_operator_dialog_nosim_title">SIM 카드 없음</string>
     <string name="hotspot_operator_dialog_othererror_msg">귀하는 Wi-Fi 테더링에 가입하지 않았습니다.</string>
     <string name="hotspot_operator_dialog_othererror_title">Wi-Fi 테더링 오류</string>
@@ -1113,6 +1116,7 @@
     <string name="op_notification_channel_summary_low">소리 또는 진동이 없는 덜 중요한 알림.</string>
     <string name="op_notification_section_header_gentle">기타 알림</string>
     <string name="op_notification_silence_title">기타</string>
+    <string name="op_qs_dark_mode_tile_label">다크 모드</string>
     <string name="op_quick_settings_night_display_label">야간 모드</string>
     <string name="op_quick_settings_night_display_summary_off">야간 모드 꺼짐, 탭하여 켜기</string>
     <string name="op_quick_settings_night_display_summary_on">야간 모드 켜짐, 탭하여 끄기</string>
@@ -1140,10 +1144,10 @@
     <string name="overheat_dialog_purple_button">지금 전원 끄기</string>
     <string name="overheat_dialog_purple_message">5초 후에 휴대폰 전원이 꺼집니다.</string>
     <string name="overheat_dialog_red_message">온도를 낮추기 위해 모든 응용 프로그램 프로세스를 취소합니다.</string>
-    <string name="overheat_dialog_title">휴대폰의 온도가 너무 높습니다.</string>
+    <string name="overheat_dialog_title">휴대폰의 온도가 너무 높습니다</string>
     <string name="overheat_notification_alert">휴대폰의 온도가 너무 높습니다. 온도를 낮추기 위해 전력 소비량이 높은 기능이 꺼집니다.</string>
     <string name="overheat_notification_resume">휴대폰의 온도가 정상으로 돌아왔습니다. 휴대폰을 정상적으로 사용할 수 있습니다.</string>
-    <string name="overheat_notification_title_resume">휴대폰의 온도가 정상으로 돌아왔습니다.</string>
+    <string name="overheat_notification_title_resume">휴대폰의 온도가 정상으로 돌아왔습니다</string>
     <string name="overheat_toast_content">휴대폰의 온도가 너무 높습니다. 온도를 낮추기 위해 전력 소비량이 높은 기능이 꺼집니다.</string>
     <string name="overlay_display_devices_title">보조 디스플레이 시뮬레이션</string>
     <string name="overview">최근 사용</string>
@@ -1242,6 +1246,10 @@
     <string name="qs_dnd_replace">바꾸기</string>
     <string name="qs_dnd_until">%s까지</string>
     <string name="qs_edit">수정</string>
+    <string name="qs_panel_life_mode">라이프</string>
+    <string name="qs_panel_none">없음</string>
+    <string name="qs_panel_set_up">설정</string>
+    <string name="qs_panel_work_mode">워크</string>
     <string name="qs_rearrange">빠른 설정 재정렬</string>
     <string name="qs_status_phone_muted">휴대전화 음소거됨</string>
     <string name="qs_status_phone_vibrate">휴대전화 진동 모드</string>
@@ -1733,6 +1741,7 @@ USB 포트를 다시 안전하게 사용할 수 있게 되면 알려 드리겠�
     <string name="wifi_verbose_logging">Wi-Fi 상세 로깅 사용</string>
     <string name="wifi_verbose_logging_summary">Wi‑Fi 로깅 수준을 높이고, Wi‑Fi 선택도구에서 SSID RSSI당 값을 표시</string>
     <string name="window_animation_scale_title">창 애니메이션 배율</string>
+    <string name="work_life_balance_mode">Work-Life Balance</string>
     <string name="yes_bubbles">허용</string>
     <string name="zen_alarm_warning">%1$s에 다음 알람을 들을 수 없습니다.</string>
     <string name="zen_alarm_warning_indef">그때까지 알림 일시중지 상태를 유지하면 %1$s에 다음 알람을 들을 수 없습니다.</string>

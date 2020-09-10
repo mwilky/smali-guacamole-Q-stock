@@ -259,6 +259,9 @@
     <string name="accessibility_wimax_signal_full">WiMAX電波状態:フル</string>
     <string name="accessibility_wimax_three_bars">WiMAX電波状態:レベル3</string>
     <string name="accessibility_wimax_two_bars">WiMAX電波状態:レベル2</string>
+    <string name="accessibility_work_life_balance_mode">仕事とプライベートのバランス</string>
+    <string name="accessibility_work_life_balance_mode_off">Work-Life Balance モードがオフになりました。</string>
+    <string name="accessibility_work_life_balance_mode_on">Work-Life Balance モードがオンになりました。</string>
     <string name="accessibility_zero_bars">レベル0</string>
     <string name="active_input_method_subtypes">有効な入力方法</string>
     <string name="activity_launch_on_secondary_display_failed_text">アプリはセカンダリ ディスプレイでの起動に対応していません。</string>
@@ -655,7 +658,7 @@
     <string name="high_temp_title">スマートフォンの温度が上昇中</string>
     <string name="home">設定のホーム</string>
     <string name="hotspot_apm_message">機内モード有効時はモバイルネットワークに接続できません。機能モードを無効にして、もう一度やり直してください。</string>
-    <string name="hotspot_operator_dialog_nosim_msg">モバイルホットスポットや他のテザリングオプションを使用するには、SIM カードを挿入してください</string>
+    <string name="hotspot_operator_dialog_nosim_msg">SIM カードを挿入して、モバイルホットスポットと他のテザリングオプションを使用</string>
     <string name="hotspot_operator_dialog_nosim_title">SIM カードはありません</string>
     <string name="hotspot_operator_dialog_othererror_msg">WiFi テザリングにサブスクライブされていません</string>
     <string name="hotspot_operator_dialog_othererror_title">WiFi テザリングエラー</string>
@@ -1113,6 +1116,7 @@
     <string name="op_notification_channel_summary_low">重要性の低い通知は、サウンドまたはバイブを使用しません。</string>
     <string name="op_notification_section_header_gentle">その他の通知</string>
     <string name="op_notification_silence_title">その他</string>
+    <string name="op_qs_dark_mode_tile_label">ダークモード</string>
     <string name="op_quick_settings_night_display_label">おやすみモード</string>
     <string name="op_quick_settings_night_display_summary_off">おやすみモードがオフになっています。タップしてオンにします。</string>
     <string name="op_quick_settings_night_display_summary_on">おやすみモードがオンになっています。タップしてオフにします。</string>
@@ -1242,6 +1246,10 @@
     <string name="qs_dnd_replace">設定を変更</string>
     <string name="qs_dnd_until">終了時間: %s</string>
     <string name="qs_edit">編集</string>
+    <string name="qs_panel_life_mode">プライベート</string>
+    <string name="qs_panel_none">なし</string>
+    <string name="qs_panel_set_up">セットアップ</string>
+    <string name="qs_panel_work_mode">仕事</string>
     <string name="qs_rearrange">クイック設定を並べ替え</string>
     <string name="qs_status_phone_muted">スマートフォンをミュートに設定</string>
     <string name="qs_status_phone_vibrate">スマートフォンのバイブレーションは ON です</string>
@@ -1383,7 +1391,7 @@
     <string name="recents_deep_clean_option">ディープクリア</string>
     <string name="recents_empty_no_apps_open">最近開いたアプリケーションはありません</string>
     <string name="recents_empty_recently_closed">最近閉じたアプリ</string>
-    <string name="recents_normal_clean_description">バックグラウンド処理を消去しないでタスクリストとキャッシュを消去します。</string>
+    <string name="recents_normal_clean_description">バックグランドプロセスを終了することなく、タスクリストとキャッシュを消去します。</string>
     <string name="recents_normal_clean_option">通常のクリア</string>
     <string name="recents_option_note">これは、設定 -> 詳細設定で変更することができます。</string>
     <string name="recents_option_title">お好きな方法をお選びください</string>
@@ -1491,7 +1499,7 @@
     <string name="show_silently">通知をポップアップで知らせる</string>
     <string name="show_touches">タップを表示</string>
     <string name="show_touches_summary">タップを視覚表示する</string>
-    <string name="sim_status_uss_network_roam">ローミング</string>
+    <string name="sim_status_uss_network_roam">ローム</string>
     <string name="simulate_color_space">色空間シミュレート</string>
     <string name="slice_permission_allow">許可</string>
     <string name="slice_permission_checkbox">すべてのアプリのスライスを表示することを「%1$s」に許可する</string>
@@ -1733,6 +1741,7 @@ USB ポートを再び安全に使用できるようになりましたらお知�
     <string name="wifi_verbose_logging">Wi-Fi詳細ログの有効化</string>
     <string name="wifi_verbose_logging_summary">Wi-Fiログレベルを上げて、Wi-Fi選択ツールでSSID RSSIごとに表示します</string>
     <string name="window_animation_scale_title">ウィンドウアニメスケール</string>
+    <string name="work_life_balance_mode">Work-Life Balance</string>
     <string name="yes_bubbles">許可</string>
     <string name="zen_alarm_warning">次回のアラーム（%1$s）は鳴りません</string>
     <string name="zen_alarm_warning_indef">この設定をOFFにしないと次回のアラーム（%1$s）は鳴りません</string>
