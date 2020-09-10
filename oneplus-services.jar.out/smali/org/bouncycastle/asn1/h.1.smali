@@ -38,7 +38,7 @@
 
 
 # virtual methods
-.method Dg()I
+.method Cg()I
     .locals 2
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -56,7 +56,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lorg/bouncycastle/asn1/vdb;->Dg()I
+    invoke-virtual {v0}, Lorg/bouncycastle/asn1/vdb;->Cg()I
 
     move-result v0
 
@@ -127,7 +127,7 @@
 
     move-result-object p0
 
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/vdb;->Eg()Lorg/bouncycastle/asn1/vdb;
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/vdb;->Dg()Lorg/bouncycastle/asn1/vdb;
 
     move-result-object p0
 
@@ -179,7 +179,7 @@
 
     check-cast v0, Lorg/bouncycastle/asn1/ivd;
 
-    invoke-virtual {v0}, Lorg/bouncycastle/asn1/ivd;->Sg()Ljava/util/Enumeration;
+    invoke-virtual {v0}, Lorg/bouncycastle/asn1/ivd;->Rg()Ljava/util/Enumeration;
 
     move-result-object p0
 
@@ -196,7 +196,7 @@
 
     invoke-direct {p0, v0}, Lorg/bouncycastle/asn1/ivd;-><init>([B)V
 
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/ivd;->Sg()Ljava/util/Enumeration;
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/ivd;->Rg()Ljava/util/Enumeration;
 
     move-result-object p0
 
@@ -209,7 +209,7 @@
 
     check-cast v0, Lorg/bouncycastle/asn1/obl;
 
-    invoke-virtual {v0}, Lorg/bouncycastle/asn1/obl;->Sg()Ljava/util/Enumeration;
+    invoke-virtual {v0}, Lorg/bouncycastle/asn1/obl;->Rg()Ljava/util/Enumeration;
 
     move-result-object p0
 
@@ -222,7 +222,7 @@
 
     check-cast v0, Lorg/bouncycastle/asn1/ear;
 
-    invoke-virtual {v0}, Lorg/bouncycastle/asn1/ear;->Sg()Ljava/util/Enumeration;
+    invoke-virtual {v0}, Lorg/bouncycastle/asn1/ear;->Rg()Ljava/util/Enumeration;
 
     move-result-object p0
 

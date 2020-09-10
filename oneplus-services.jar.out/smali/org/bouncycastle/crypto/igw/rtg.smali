@@ -440,7 +440,7 @@
 
     iget-object v0, p0, Lorg/bouncycastle/crypto/igw/rtg;->padding:Lorg/bouncycastle/crypto/igw/zta;
 
-    invoke-virtual {p2}, Lorg/bouncycastle/crypto/wtn/hmo;->hj()Ljava/security/SecureRandom;
+    invoke-virtual {p2}, Lorg/bouncycastle/crypto/wtn/hmo;->gj()Ljava/security/SecureRandom;
 
     move-result-object v1
 

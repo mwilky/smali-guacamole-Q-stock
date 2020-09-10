@@ -253,7 +253,7 @@
     return p0
 .end method
 
-.method private st()[Ljava/lang/String;
+.method private rt()[Ljava/lang/String;
     .locals 2
 
     iget-object v0, p0, Lcom/oneplus/server/kth;->mAudioManager:Landroid/media/AudioManager;
@@ -279,10 +279,10 @@
     return-object p0
 .end method
 
-.method private tt()V
+.method private st()V
     .locals 4
 
-    invoke-direct {p0}, Lcom/oneplus/server/kth;->st()[Ljava/lang/String;
+    invoke-direct {p0}, Lcom/oneplus/server/kth;->rt()[Ljava/lang/String;
 
     move-result-object v0
 
@@ -399,6 +399,32 @@
     return-void
 .end method
 
+.method private xn()[Ljava/lang/String;
+    .locals 2
+
+    iget-object v0, p0, Lcom/oneplus/server/kth;->mAudioManager:Landroid/media/AudioManager;
+
+    if-eqz v0, :cond_0
+
+    const-string v1, "get_uid"
+
+    invoke-virtual {v0, v1}, Landroid/media/AudioManager;->getParameters(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
+
+    goto :goto_0
+
+    :cond_0
+    const-string v0, ":0"
+
+    :goto_0
+    invoke-direct {p0, v0}, Lcom/oneplus/server/kth;->Pc(Ljava/lang/String;)[Ljava/lang/String;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
 .method private yc(I)Z
     .locals 4
 
@@ -496,32 +522,6 @@
     const/4 p0, 0x0
 
     return p0
-.end method
-
-.method private yn()[Ljava/lang/String;
-    .locals 2
-
-    iget-object v0, p0, Lcom/oneplus/server/kth;->mAudioManager:Landroid/media/AudioManager;
-
-    if-eqz v0, :cond_0
-
-    const-string v1, "get_uid"
-
-    invoke-virtual {v0, v1}, Landroid/media/AudioManager;->getParameters(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v0
-
-    goto :goto_0
-
-    :cond_0
-    const-string v0, ":0"
-
-    :goto_0
-    invoke-direct {p0, v0}, Lcom/oneplus/server/kth;->Pc(Ljava/lang/String;)[Ljava/lang/String;
-
-    move-result-object p0
-
-    return-object p0
 .end method
 
 .method private you(Landroid/content/Context;Lcom/android/server/am/ActivityManagerService;)V
@@ -666,7 +666,7 @@
 .method static synthetic zta(Lcom/oneplus/server/kth;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/oneplus/server/kth;->tt()V
+    invoke-direct {p0}, Lcom/oneplus/server/kth;->st()V
 
     return-void
 .end method

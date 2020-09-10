@@ -56,7 +56,7 @@
 
 
 # virtual methods
-.method public Zf()Z
+.method public Yf()Z
     .locals 0
 
     iget-boolean p0, p0, Lcom/android/server/ivd;->Boa:Z

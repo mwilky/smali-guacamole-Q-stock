@@ -123,7 +123,7 @@
     .locals 1
 
     :try_start_0
-    invoke-virtual {p1}, Lorg/bouncycastle/asn1/x509/c;->xh()Lorg/bouncycastle/asn1/vdb;
+    invoke-virtual {p1}, Lorg/bouncycastle/asn1/x509/c;->wh()Lorg/bouncycastle/asn1/vdb;
 
     move-result-object v0
 

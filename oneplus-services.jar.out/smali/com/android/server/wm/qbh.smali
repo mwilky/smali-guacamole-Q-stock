@@ -499,7 +499,7 @@
     :goto_4
     invoke-static {v12, v4}, Landroid/util/Slog;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    invoke-static {}, Lcom/android/server/wm/ywr;->ke()Lcom/android/server/wm/AppWindowToken;
+    invoke-static {}, Lcom/android/server/wm/ywr;->je()Lcom/android/server/wm/AppWindowToken;
 
     move-result-object v4
 
@@ -513,7 +513,7 @@
 
     invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-static {}, Lcom/android/server/wm/ywr;->ke()Lcom/android/server/wm/AppWindowToken;
+    invoke-static {}, Lcom/android/server/wm/ywr;->je()Lcom/android/server/wm/AppWindowToken;
 
     move-result-object v5
 
@@ -531,7 +531,7 @@
     :goto_5
     invoke-static {v12, v4}, Landroid/util/Slog;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    invoke-static {}, Lcom/android/server/wm/ywr;->le()Lcom/android/server/wm/AppWindowToken;
+    invoke-static {}, Lcom/android/server/wm/ywr;->ke()Lcom/android/server/wm/AppWindowToken;
 
     move-result-object v4
 
@@ -545,7 +545,7 @@
 
     invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-static {}, Lcom/android/server/wm/ywr;->le()Lcom/android/server/wm/AppWindowToken;
+    invoke-static {}, Lcom/android/server/wm/ywr;->ke()Lcom/android/server/wm/AppWindowToken;
 
     move-result-object v5
 

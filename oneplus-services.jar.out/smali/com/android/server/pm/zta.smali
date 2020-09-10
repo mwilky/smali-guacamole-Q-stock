@@ -22,18 +22,28 @@
 
 .field public static final TAG:Ljava/lang/String; = "OPDOM"
 
-.field private static aE:Z = false
+.field private static _D:Z = false
 
-.field private static final bE:Ljava/lang/String; = "/data/system/opdom"
+.field private static final aE:Ljava/lang/String; = "/data/system/opdom"
 
-.field private static final cE:I = 0x1
+.field private static final bE:I = 0x1
 
-.field private static final dE:I = 0x2
+.field private static final cE:I = 0x2
 
 .field private static mInstance:Lcom/android/server/pm/zta;
 
 
 # instance fields
+.field private VD:Ljava/util/ArrayList;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/ArrayList<",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+.end field
+
 .field private WD:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -54,19 +64,9 @@
     .end annotation
 .end field
 
-.field private YD:Ljava/util/ArrayList;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/ArrayList<",
-            "Ljava/lang/String;",
-            ">;"
-        }
-    .end annotation
-.end field
+.field private YD:Z
 
-.field private ZD:Z
-
-.field private volatile _D:Ljava/lang/String;
+.field private volatile ZD:Ljava/lang/String;
 
 .field final mHandler:Lcom/android/server/pm/zta$zta;
 
@@ -85,7 +85,7 @@
 
     const/4 v0, 0x1
 
-    sput-boolean v0, Lcom/android/server/pm/zta;->aE:Z
+    sput-boolean v0, Lcom/android/server/pm/zta;->_D:Z
 
     const/4 v0, 0x0
 
@@ -103,6 +103,12 @@
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
+    iput-object v0, p0, Lcom/android/server/pm/zta;->VD:Ljava/util/ArrayList;
+
+    new-instance v0, Ljava/util/ArrayList;
+
+    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
+
     iput-object v0, p0, Lcom/android/server/pm/zta;->WD:Ljava/util/ArrayList;
 
     new-instance v0, Ljava/util/ArrayList;
@@ -111,21 +117,15 @@
 
     iput-object v0, p0, Lcom/android/server/pm/zta;->XD:Ljava/util/ArrayList;
 
-    new-instance v0, Ljava/util/ArrayList;
-
-    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
-
-    iput-object v0, p0, Lcom/android/server/pm/zta;->YD:Ljava/util/ArrayList;
-
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/android/server/pm/zta;->ZD:Z
+    iput-boolean v0, p0, Lcom/android/server/pm/zta;->YD:Z
 
     const-string v0, "unlocked"
 
-    iput-object v0, p0, Lcom/android/server/pm/zta;->_D:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/server/pm/zta;->ZD:Ljava/lang/String;
 
-    sget-boolean v0, Lcom/android/server/pm/zta;->aE:Z
+    sget-boolean v0, Lcom/android/server/pm/zta;->_D:Z
 
     const-string v1, "persist.sys.opdom.enable"
 
@@ -133,9 +133,9 @@
 
     move-result v0
 
-    sput-boolean v0, Lcom/android/server/pm/zta;->aE:Z
+    sput-boolean v0, Lcom/android/server/pm/zta;->_D:Z
 
-    sget-boolean v0, Lcom/android/server/pm/zta;->aE:Z
+    sget-boolean v0, Lcom/android/server/pm/zta;->_D:Z
 
     if-eqz v0, :cond_0
 
@@ -174,19 +174,19 @@
 
     iput-object v0, p0, Lcom/android/server/pm/zta;->mHandler:Lcom/android/server/pm/zta$zta;
 
-    iget-object v0, p0, Lcom/android/server/pm/zta;->WD:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/server/pm/zta;->VD:Ljava/util/ArrayList;
 
     const-string v1, "com.android.packageinstaller"
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    iget-object v0, p0, Lcom/android/server/pm/zta;->WD:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/server/pm/zta;->VD:Ljava/util/ArrayList;
 
     const-string v1, "com.android.permissioncontroller"
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    iget-object p0, p0, Lcom/android/server/pm/zta;->WD:Ljava/util/ArrayList;
+    iget-object p0, p0, Lcom/android/server/pm/zta;->VD:Ljava/util/ArrayList;
 
     const-string v0, "SCREEN OFF"
 
@@ -195,10 +195,137 @@
     return-void
 .end method
 
+.method private declared-synchronized Xn()V
+    .locals 3
+
+    monitor-enter p0
+
+    :try_start_0
+    const-string v0, "OPDOM"
+
+    const-string v1, "Flush to storage"
+
+    invoke-static {v0, v1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    iget-object v0, p0, Lcom/android/server/pm/zta;->WD:Ljava/util/ArrayList;
+
+    invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
+
+    move-result v0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    if-gtz v0, :cond_0
+
+    monitor-exit p0
+
+    return-void
+
+    :cond_0
+    :try_start_1
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    const/16 v1, 0x40
+
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(I)V
+
+    const/4 v1, 0x0
+
+    :goto_0
+    iget-object v2, p0, Lcom/android/server/pm/zta;->WD:Ljava/util/ArrayList;
+
+    invoke-virtual {v2}, Ljava/util/ArrayList;->size()I
+
+    move-result v2
+
+    if-ge v1, v2, :cond_1
+
+    iget-object v2, p0, Lcom/android/server/pm/zta;->WD:Ljava/util/ArrayList;
+
+    invoke-virtual {v2, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Ljava/lang/String;
+
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v2, "#"
+
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    add-int/lit8 v1, v1, 0x1
+
+    goto :goto_0
+
+    :cond_1
+    const-string v1, "/data/system/opdom"
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {v1, v0}, Landroid/os/FileUtils;->stringToFile(Ljava/lang/String;Ljava/lang/String;)V
+
+    sget-boolean v0, Lcom/android/server/pm/zta;->DEBUG:Z
+
+    if-eqz v0, :cond_2
+
+    const-string v0, "OPDOM"
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v2, "After flush mAllDexOptLists # "
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object v2, p0, Lcom/android/server/pm/zta;->WD:Ljava/util/ArrayList;
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-static {v0, v1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+    :try_end_1
+    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    goto :goto_1
+
+    :catch_0
+    move-exception v0
+
+    :try_start_2
+    const-string v1, "OPDOM"
+
+    const-string v2, "opdom flush failed"
+
+    invoke-static {v1, v2, v0}, Landroid/util/Slog;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
+    :try_end_2
+    .catchall {:try_start_2 .. :try_end_2} :catchall_0
+
+    :cond_2
+    :goto_1
+    monitor-exit p0
+
+    return-void
+
+    :catchall_0
+    move-exception v0
+
+    monitor-exit p0
+
+    throw v0
+.end method
+
 .method private Yb(Ljava/lang/String;)Z
     .locals 9
 
-    sget-boolean v0, Lcom/android/server/pm/zta;->aE:Z
+    sget-boolean v0, Lcom/android/server/pm/zta;->_D:Z
 
     if-eqz v0, :cond_2
 
@@ -259,157 +386,11 @@
     return p0
 .end method
 
-.method private declared-synchronized Yn()V
-    .locals 3
-
-    monitor-enter p0
-
-    :try_start_0
-    const-string v0, "OPDOM"
-
-    const-string v1, "Flush to storage"
-
-    invoke-static {v0, v1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    iget-object v0, p0, Lcom/android/server/pm/zta;->XD:Ljava/util/ArrayList;
-
-    invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
-
-    move-result v0
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    if-gtz v0, :cond_0
-
-    monitor-exit p0
-
-    return-void
-
-    :cond_0
-    :try_start_1
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    const/16 v1, 0x40
-
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(I)V
-
-    const/4 v1, 0x0
-
-    :goto_0
-    iget-object v2, p0, Lcom/android/server/pm/zta;->XD:Ljava/util/ArrayList;
-
-    invoke-virtual {v2}, Ljava/util/ArrayList;->size()I
-
-    move-result v2
-
-    if-ge v1, v2, :cond_1
-
-    iget-object v2, p0, Lcom/android/server/pm/zta;->XD:Ljava/util/ArrayList;
-
-    invoke-virtual {v2, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
-
-    move-result-object v2
-
-    check-cast v2, Ljava/lang/String;
-
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string v2, "#"
-
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    add-int/lit8 v1, v1, 0x1
-
-    goto :goto_0
-
-    :cond_1
-    const-string v1, "/data/system/opdom"
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-static {v1, v0}, Landroid/os/FileUtils;->stringToFile(Ljava/lang/String;Ljava/lang/String;)V
-
-    sget-boolean v0, Lcom/android/server/pm/zta;->DEBUG:Z
-
-    if-eqz v0, :cond_2
-
-    const-string v0, "OPDOM"
-
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v2, "After flush mAllDexOptLists # "
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget-object v2, p0, Lcom/android/server/pm/zta;->XD:Ljava/util/ArrayList;
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-static {v0, v1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
-    :try_end_1
-    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
-    goto :goto_1
-
-    :catch_0
-    move-exception v0
-
-    :try_start_2
-    const-string v1, "OPDOM"
-
-    const-string v2, "opdom flush failed"
-
-    invoke-static {v1, v2, v0}, Landroid/util/Slog;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
-    :try_end_2
-    .catchall {:try_start_2 .. :try_end_2} :catchall_0
-
-    :cond_2
-    :goto_1
-    monitor-exit p0
-
-    return-void
-
-    :catchall_0
-    move-exception v0
-
-    monitor-exit p0
-
-    throw v0
-.end method
-
-.method public static getInstance()Lcom/android/server/pm/zta;
-    .locals 1
-
-    sget-object v0, Lcom/android/server/pm/zta;->mInstance:Lcom/android/server/pm/zta;
-
-    if-nez v0, :cond_0
-
-    new-instance v0, Lcom/android/server/pm/zta;
-
-    invoke-direct {v0}, Lcom/android/server/pm/zta;-><init>()V
-
-    sput-object v0, Lcom/android/server/pm/zta;->mInstance:Lcom/android/server/pm/zta;
-
-    :cond_0
-    sget-object v0, Lcom/android/server/pm/zta;->mInstance:Lcom/android/server/pm/zta;
-
-    return-object v0
-.end method
-
-.method private ho()V
+.method private fo()V
     .locals 5
 
     :try_start_0
-    iget-object v0, p0, Lcom/android/server/pm/zta;->XD:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/server/pm/zta;->WD:Ljava/util/ArrayList;
 
     monitor-enter v0
     :try_end_0
@@ -447,7 +428,7 @@
 
     if-ge v3, v2, :cond_0
 
-    iget-object v2, p0, Lcom/android/server/pm/zta;->XD:Ljava/util/ArrayList;
+    iget-object v2, p0, Lcom/android/server/pm/zta;->WD:Ljava/util/ArrayList;
 
     aget-object v4, v1, v3
 
@@ -460,7 +441,7 @@
     :cond_0
     const/4 v1, 0x1
 
-    iput-boolean v1, p0, Lcom/android/server/pm/zta;->ZD:Z
+    iput-boolean v1, p0, Lcom/android/server/pm/zta;->YD:Z
 
     sget-boolean v1, Lcom/android/server/pm/zta;->DEBUG:Z
 
@@ -476,7 +457,7 @@
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object p0, p0, Lcom/android/server/pm/zta;->XD:Ljava/util/ArrayList;
+    iget-object p0, p0, Lcom/android/server/pm/zta;->WD:Ljava/util/ArrayList;
 
     invoke-virtual {v2, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -512,10 +493,29 @@
     return-void
 .end method
 
+.method public static getInstance()Lcom/android/server/pm/zta;
+    .locals 1
+
+    sget-object v0, Lcom/android/server/pm/zta;->mInstance:Lcom/android/server/pm/zta;
+
+    if-nez v0, :cond_0
+
+    new-instance v0, Lcom/android/server/pm/zta;
+
+    invoke-direct {v0}, Lcom/android/server/pm/zta;-><init>()V
+
+    sput-object v0, Lcom/android/server/pm/zta;->mInstance:Lcom/android/server/pm/zta;
+
+    :cond_0
+    sget-object v0, Lcom/android/server/pm/zta;->mInstance:Lcom/android/server/pm/zta;
+
+    return-object v0
+.end method
+
 .method static synthetic sis(Lcom/android/server/pm/zta;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/pm/zta;->ho()V
+    invoke-direct {p0}, Lcom/android/server/pm/zta;->fo()V
 
     return-void
 .end method
@@ -591,7 +591,7 @@
 .method static synthetic you(Lcom/android/server/pm/zta;)Ljava/lang/String;
     .locals 0
 
-    iget-object p0, p0, Lcom/android/server/pm/zta;->_D:Ljava/lang/String;
+    iget-object p0, p0, Lcom/android/server/pm/zta;->ZD:Ljava/lang/String;
 
     return-object p0
 .end method
@@ -609,7 +609,7 @@
 .method static synthetic zta(Lcom/android/server/pm/zta;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
 
-    iput-object p1, p0, Lcom/android/server/pm/zta;->_D:Ljava/lang/String;
+    iput-object p1, p0, Lcom/android/server/pm/zta;->ZD:Ljava/lang/String;
 
     return-object p1
 .end method
@@ -617,7 +617,7 @@
 .method static synthetic zta(Lcom/android/server/pm/zta;)Ljava/util/ArrayList;
     .locals 0
 
-    iget-object p0, p0, Lcom/android/server/pm/zta;->XD:Ljava/util/ArrayList;
+    iget-object p0, p0, Lcom/android/server/pm/zta;->WD:Ljava/util/ArrayList;
 
     return-object p0
 .end method
@@ -629,7 +629,7 @@
 
     invoke-virtual {p1}, Ljava/io/PrintWriter;->println()V
 
-    sget-boolean v0, Lcom/android/server/pm/zta;->aE:Z
+    sget-boolean v0, Lcom/android/server/pm/zta;->_D:Z
 
     if-eqz v0, :cond_0
 
@@ -646,7 +646,7 @@
     :try_start_0
     new-instance v0, Ljava/util/ArrayList;
 
-    iget-object p0, p0, Lcom/android/server/pm/zta;->XD:Ljava/util/ArrayList;
+    iget-object p0, p0, Lcom/android/server/pm/zta;->WD:Ljava/util/ArrayList;
 
     invoke-direct {v0, p0}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
 
@@ -727,7 +727,7 @@
 .method public frontPackageChanged(Ljava/lang/String;IILjava/lang/String;II)V
     .locals 0
 
-    sget-boolean p2, Lcom/android/server/pm/zta;->aE:Z
+    sget-boolean p2, Lcom/android/server/pm/zta;->_D:Z
 
     if-eqz p2, :cond_4
 
@@ -738,7 +738,7 @@
     goto :goto_0
 
     :cond_0
-    iget-object p2, p0, Lcom/android/server/pm/zta;->WD:Ljava/util/ArrayList;
+    iget-object p2, p0, Lcom/android/server/pm/zta;->VD:Ljava/util/ArrayList;
 
     invoke-virtual {p2, p1}, Ljava/util/ArrayList;->contains(Ljava/lang/Object;)Z
 
@@ -749,12 +749,12 @@
     return-void
 
     :cond_1
-    iget-object p1, p0, Lcom/android/server/pm/zta;->YD:Ljava/util/ArrayList;
+    iget-object p1, p0, Lcom/android/server/pm/zta;->XD:Ljava/util/ArrayList;
 
     monitor-enter p1
 
     :try_start_0
-    iget-object p2, p0, Lcom/android/server/pm/zta;->YD:Ljava/util/ArrayList;
+    iget-object p2, p0, Lcom/android/server/pm/zta;->XD:Ljava/util/ArrayList;
 
     invoke-virtual {p2, p4}, Ljava/util/ArrayList;->contains(Ljava/lang/Object;)Z
 
@@ -762,7 +762,7 @@
 
     if-nez p2, :cond_2
 
-    iget-object p0, p0, Lcom/android/server/pm/zta;->YD:Ljava/util/ArrayList;
+    iget-object p0, p0, Lcom/android/server/pm/zta;->XD:Ljava/util/ArrayList;
 
     invoke-virtual {p0, p4}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
@@ -793,7 +793,7 @@
 
     invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object p2, p0, Lcom/android/server/pm/zta;->YD:Ljava/util/ArrayList;
+    iget-object p2, p0, Lcom/android/server/pm/zta;->XD:Ljava/util/ArrayList;
 
     invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -838,7 +838,7 @@
 
     iput-object p1, p0, Lcom/android/server/pm/zta;->mPms:Lcom/android/server/pm/PackageManagerService;
 
-    iget-boolean p1, p0, Lcom/android/server/pm/zta;->ZD:Z
+    iget-boolean p1, p0, Lcom/android/server/pm/zta;->YD:Z
 
     if-nez p1, :cond_0
 
@@ -869,7 +869,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sget-boolean v1, Lcom/android/server/pm/zta;->aE:Z
+    sget-boolean v1, Lcom/android/server/pm/zta;->_D:Z
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -887,14 +887,14 @@
 
     invoke-static {v1, v0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    sget-boolean v0, Lcom/android/server/pm/zta;->aE:Z
+    sget-boolean v0, Lcom/android/server/pm/zta;->_D:Z
 
     if-ne v0, p1, :cond_0
 
     return-void
 
     :cond_0
-    sput-boolean p1, Lcom/android/server/pm/zta;->aE:Z
+    sput-boolean p1, Lcom/android/server/pm/zta;->_D:Z
 
     invoke-static {}, Lcom/android/server/OnePlusUtil$zta;->getInstance()Lcom/android/server/OnePlusUtil$zta;
 
@@ -924,7 +924,7 @@
 .method public shutdown()V
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/pm/zta;->Yn()V
+    invoke-direct {p0}, Lcom/android/server/pm/zta;->Xn()V
 
     return-void
 .end method

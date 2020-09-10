@@ -865,7 +865,7 @@
     return p0
 .end method
 
-.method private sm()Ljava/lang/String;
+.method private rm()Ljava/lang/String;
     .locals 2
 
     new-instance v0, Ljava/util/ArrayList;
@@ -1409,7 +1409,7 @@
 
     move-result-object v0
 
-    invoke-direct {p0}, Lcom/android/server/am/oxb;->sm()Ljava/lang/String;
+    invoke-direct {p0}, Lcom/android/server/am/oxb;->rm()Ljava/lang/String;
 
     move-result-object v1
 

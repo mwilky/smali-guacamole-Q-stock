@@ -244,7 +244,7 @@
     goto :goto_1
 
     :cond_2
-    invoke-virtual {v2}, Lcom/android/server/am/v$bio;->rc()[B
+    invoke-virtual {v2}, Lcom/android/server/am/v$bio;->qc()[B
 
     move-result-object v2
 

@@ -66,7 +66,7 @@
     return-object p0
 .end method
 
-.method public sj()Ljava/math/BigInteger;
+.method public rj()Ljava/math/BigInteger;
     .locals 0
 
     iget-object p0, p0, Lorg/bouncycastle/crypto/wtn/cgv;->oDa:Ljava/math/BigInteger;
@@ -74,7 +74,7 @@
     return-object p0
 .end method
 
-.method public tj()Ljava/math/BigInteger;
+.method public sj()Ljava/math/BigInteger;
     .locals 0
 
     iget-object p0, p0, Lorg/bouncycastle/crypto/wtn/cgv;->pDa:Ljava/math/BigInteger;
@@ -82,7 +82,7 @@
     return-object p0
 .end method
 
-.method public uj()Ljava/math/BigInteger;
+.method public tj()Ljava/math/BigInteger;
     .locals 0
 
     iget-object p0, p0, Lorg/bouncycastle/crypto/wtn/cgv;->qDa:Ljava/math/BigInteger;

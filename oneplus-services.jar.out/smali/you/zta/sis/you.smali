@@ -874,11 +874,11 @@
 
     move-result-object v8
 
-    invoke-virtual {v2}, Lyou/zta/sis/you$you;->Uj()[B
+    invoke-virtual {v2}, Lyou/zta/sis/you$you;->Tj()[B
 
     move-result-object v9
 
-    invoke-virtual {v2}, Lyou/zta/sis/you$you;->Tj()I
+    invoke-virtual {v2}, Lyou/zta/sis/you$you;->Sj()I
 
     move-result v2
 

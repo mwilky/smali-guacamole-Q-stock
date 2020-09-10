@@ -111,7 +111,7 @@
 
     invoke-direct {p0}, Lorg/bouncycastle/asn1/oif;-><init>()V
 
-    invoke-virtual {p1}, Lorg/bouncycastle/asn1/obl;->Sg()Ljava/util/Enumeration;
+    invoke-virtual {p1}, Lorg/bouncycastle/asn1/obl;->Rg()Ljava/util/Enumeration;
 
     move-result-object p1
 
@@ -274,7 +274,7 @@
 
     if-eqz p2, :cond_3
 
-    invoke-virtual {p2}, Lorg/bouncycastle/asn1/ear;->Sg()Ljava/util/Enumeration;
+    invoke-virtual {p2}, Lorg/bouncycastle/asn1/ear;->Rg()Ljava/util/Enumeration;
 
     move-result-object p2
 
@@ -361,7 +361,7 @@
     :cond_5
     if-eqz p3, :cond_7
 
-    invoke-virtual {p3}, Lorg/bouncycastle/asn1/ear;->Sg()Ljava/util/Enumeration;
+    invoke-virtual {p3}, Lorg/bouncycastle/asn1/ear;->Rg()Ljava/util/Enumeration;
 
     move-result-object p2
 
@@ -439,7 +439,7 @@
 .method private zta(Lorg/bouncycastle/asn1/ear;)Z
     .locals 1
 
-    invoke-virtual {p1}, Lorg/bouncycastle/asn1/ear;->Sg()Ljava/util/Enumeration;
+    invoke-virtual {p1}, Lorg/bouncycastle/asn1/ear;->Rg()Ljava/util/Enumeration;
 
     move-result-object p0
 
@@ -486,7 +486,7 @@
 
 
 # virtual methods
-.method public bh()Lorg/bouncycastle/asn1/ear;
+.method public ah()Lorg/bouncycastle/asn1/ear;
     .locals 0
 
     iget-object p0, p0, Lorg/bouncycastle/asn1/you/igw;->Bsa:Lorg/bouncycastle/asn1/ear;
@@ -494,7 +494,7 @@
     return-object p0
 .end method
 
-.method public ch()Lorg/bouncycastle/asn1/ear;
+.method public bh()Lorg/bouncycastle/asn1/ear;
     .locals 0
 
     iget-object p0, p0, Lorg/bouncycastle/asn1/you/igw;->zsa:Lorg/bouncycastle/asn1/ear;
@@ -502,7 +502,7 @@
     return-object p0
 .end method
 
-.method public dh()Lorg/bouncycastle/asn1/you/cno;
+.method public ch()Lorg/bouncycastle/asn1/you/cno;
     .locals 0
 
     iget-object p0, p0, Lorg/bouncycastle/asn1/you/igw;->Asa:Lorg/bouncycastle/asn1/you/cno;

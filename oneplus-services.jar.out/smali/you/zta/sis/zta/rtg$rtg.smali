@@ -151,7 +151,7 @@
 
 
 # virtual methods
-.method protected Vj()Lyou/zta/sis/zta/rtg;
+.method protected Uj()Lyou/zta/sis/zta/rtg;
     .locals 8
 
     new-instance v7, Lyou/zta/sis/zta/rtg$rtg;
@@ -184,7 +184,7 @@
 
     if-eq p0, v0, :cond_1
 
-    invoke-virtual {p0}, Lyou/zta/sis/zta/rtg;->Zj()I
+    invoke-virtual {p0}, Lyou/zta/sis/zta/rtg;->Yj()I
 
     move-result v0
 
@@ -192,7 +192,7 @@
 
     if-ne v0, v1, :cond_1
 
-    invoke-virtual {p1}, Lyou/zta/sis/zta/wtn;->Bk()Z
+    invoke-virtual {p1}, Lyou/zta/sis/zta/wtn;->Ak()Z
 
     move-result v0
 
@@ -202,7 +202,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lyou/zta/sis/zta/rtg;->Zj()I
+    invoke-virtual {v0}, Lyou/zta/sis/zta/rtg;->Yj()I
 
     move-result v0
 

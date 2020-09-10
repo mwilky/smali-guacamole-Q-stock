@@ -22,19 +22,29 @@
 
 .field private static final da:I = 0x3
 
-.field private static final uH:I = 0xc8
+.field private static final tH:I = 0xc8
 
-.field private static final vH:I = 0x5
+.field private static final uH:I = 0x5
 
-.field private static final wH:I = 0x1f4
+.field private static final vH:I = 0x1f4
 
 
 # instance fields
-.field private gH:Z
+.field private fH:Z
+
+.field private gH:I
 
 .field private hH:I
 
-.field private iH:I
+.field private iH:Ljava/util/ArrayList;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/ArrayList<",
+            "Landroid/graphics/Point;",
+            ">;"
+        }
+    .end annotation
+.end field
 
 .field private jH:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
@@ -56,15 +66,7 @@
     .end annotation
 .end field
 
-.field private lH:Ljava/util/ArrayList;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/ArrayList<",
-            "Landroid/graphics/Point;",
-            ">;"
-        }
-    .end annotation
-.end field
+.field private lH:Z
 
 .field private mActivityManager:Landroid/app/ActivityManager;
 
@@ -78,19 +80,17 @@
 
 .field private mScreenWidth:I
 
-.field private nH:Z
+.field private nH:I
 
-.field private oH:I
+.field private oH:Landroid/graphics/Point;
 
 .field private pH:Landroid/graphics/Point;
 
-.field private qH:Landroid/graphics/Point;
+.field private qH:Z
 
-.field private rH:Z
+.field rH:I
 
 .field sH:I
-
-.field tH:I
 
 
 # direct methods
@@ -113,6 +113,12 @@
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
+    iput-object v0, p0, Lcom/android/server/policy/bud;->iH:Ljava/util/ArrayList;
+
+    new-instance v0, Ljava/util/ArrayList;
+
+    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
+
     iput-object v0, p0, Lcom/android/server/policy/bud;->jH:Ljava/util/ArrayList;
 
     new-instance v0, Ljava/util/ArrayList;
@@ -121,19 +127,13 @@
 
     iput-object v0, p0, Lcom/android/server/policy/bud;->kH:Ljava/util/ArrayList;
 
-    new-instance v0, Ljava/util/ArrayList;
-
-    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
-
-    iput-object v0, p0, Lcom/android/server/policy/bud;->lH:Ljava/util/ArrayList;
-
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/android/server/policy/bud;->nH:Z
+    iput-boolean v0, p0, Lcom/android/server/policy/bud;->lH:Z
 
     const/4 v1, -0x1
 
-    iput v1, p0, Lcom/android/server/policy/bud;->oH:I
+    iput v1, p0, Lcom/android/server/policy/bud;->nH:I
 
     iput v1, p0, Lcom/android/server/policy/bud;->mScreenHeight:I
 
@@ -141,11 +141,11 @@
 
     iput v0, p0, Lcom/android/server/policy/bud;->mCurrentUserId:I
 
-    iput-boolean v0, p0, Lcom/android/server/policy/bud;->rH:Z
+    iput-boolean v0, p0, Lcom/android/server/policy/bud;->qH:Z
+
+    iput v1, p0, Lcom/android/server/policy/bud;->rH:I
 
     iput v1, p0, Lcom/android/server/policy/bud;->sH:I
-
-    iput v1, p0, Lcom/android/server/policy/bud;->tH:I
 
     iput-object p1, p0, Lcom/android/server/policy/bud;->mContext:Landroid/content/Context;
 
@@ -191,7 +191,7 @@
 
     div-int/lit8 p1, p1, 0x3
 
-    iput p1, p0, Lcom/android/server/policy/bud;->sH:I
+    iput p1, p0, Lcom/android/server/policy/bud;->rH:I
 
     iget p1, p2, Landroid/util/DisplayMetrics;->widthPixels:I
 
@@ -203,7 +203,7 @@
 
     div-int/lit8 p1, p1, 0x3
 
-    iput p1, p0, Lcom/android/server/policy/bud;->tH:I
+    iput p1, p0, Lcom/android/server/policy/bud;->sH:I
 
     iget p1, p2, Landroid/util/DisplayMetrics;->widthPixels:I
 
@@ -248,39 +248,10 @@
     return-void
 .end method
 
-.method private Ao()I
-    .locals 2
-
-    iget-object v0, p0, Lcom/android/server/policy/bud;->mContext:Landroid/content/Context;
-
-    invoke-virtual {v0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Landroid/content/res/Resources;->getConfiguration()Landroid/content/res/Configuration;
-
-    move-result-object v0
-
-    iget v0, v0, Landroid/content/res/Configuration;->orientation:I
-
-    const/4 v1, 0x2
-
-    if-ne v1, v0, :cond_0
-
-    iget p0, p0, Lcom/android/server/policy/bud;->sH:I
-
-    return p0
-
-    :cond_0
-    iget p0, p0, Lcom/android/server/policy/bud;->tH:I
-
-    return p0
-.end method
-
-.method private Bo()Z
+.method private Ao()Z
     .locals 5
 
-    iget-object v0, p0, Lcom/android/server/policy/bud;->jH:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/server/policy/bud;->iH:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -292,7 +263,7 @@
 
     if-lez v0, :cond_2
 
-    iget-object v0, p0, Lcom/android/server/policy/bud;->jH:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/server/policy/bud;->iH:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -318,7 +289,7 @@
     move v0, v2
 
     :goto_1
-    iget-object v4, p0, Lcom/android/server/policy/bud;->jH:Ljava/util/ArrayList;
+    iget-object v4, p0, Lcom/android/server/policy/bud;->iH:Ljava/util/ArrayList;
 
     invoke-virtual {v4, v3}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -326,9 +297,9 @@
 
     check-cast v3, Landroid/graphics/Point;
 
-    iput-object v3, p0, Lcom/android/server/policy/bud;->pH:Landroid/graphics/Point;
+    iput-object v3, p0, Lcom/android/server/policy/bud;->oH:Landroid/graphics/Point;
 
-    iget-object v3, p0, Lcom/android/server/policy/bud;->jH:Ljava/util/ArrayList;
+    iget-object v3, p0, Lcom/android/server/policy/bud;->iH:Ljava/util/ArrayList;
 
     invoke-virtual {v3, v0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -336,10 +307,10 @@
 
     check-cast v0, Landroid/graphics/Point;
 
-    iput-object v0, p0, Lcom/android/server/policy/bud;->qH:Landroid/graphics/Point;
+    iput-object v0, p0, Lcom/android/server/policy/bud;->pH:Landroid/graphics/Point;
 
     :cond_2
-    invoke-direct {p0}, Lcom/android/server/policy/bud;->yo()I
+    invoke-direct {p0}, Lcom/android/server/policy/bud;->xo()I
 
     move-result v0
 
@@ -350,6 +321,14 @@
     return v2
 
     :cond_3
+    iget-object v0, p0, Lcom/android/server/policy/bud;->iH:Ljava/util/ArrayList;
+
+    invoke-direct {p0, v0}, Lcom/android/server/policy/bud;->dma(Ljava/util/ArrayList;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_4
+
     iget-object v0, p0, Lcom/android/server/policy/bud;->jH:Ljava/util/ArrayList;
 
     invoke-direct {p0, v0}, Lcom/android/server/policy/bud;->dma(Ljava/util/ArrayList;)Z
@@ -359,14 +338,6 @@
     if-eqz v0, :cond_4
 
     iget-object v0, p0, Lcom/android/server/policy/bud;->kH:Ljava/util/ArrayList;
-
-    invoke-direct {p0, v0}, Lcom/android/server/policy/bud;->dma(Ljava/util/ArrayList;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_4
-
-    iget-object v0, p0, Lcom/android/server/policy/bud;->lH:Ljava/util/ArrayList;
 
     invoke-direct {p0, v0}, Lcom/android/server/policy/bud;->dma(Ljava/util/ArrayList;)Z
 
@@ -577,7 +548,7 @@
 
     move-result p1
 
-    invoke-direct {p0}, Lcom/android/server/policy/bud;->zo()I
+    invoke-direct {p0}, Lcom/android/server/policy/bud;->yo()I
 
     move-result v0
 
@@ -595,7 +566,7 @@
 
     move-result p1
 
-    invoke-direct {p0}, Lcom/android/server/policy/bud;->Ao()I
+    invoke-direct {p0}, Lcom/android/server/policy/bud;->zo()I
 
     move-result p0
 
@@ -754,22 +725,22 @@
     return v0
 .end method
 
-.method private yo()I
+.method private xo()I
     .locals 4
 
-    iget-object v0, p0, Lcom/android/server/policy/bud;->jH:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/server/policy/bud;->iH:Ljava/util/ArrayList;
 
     invoke-direct {p0, v0}, Lcom/android/server/policy/bud;->gck(Ljava/util/ArrayList;)I
 
     move-result v0
 
-    iget-object v1, p0, Lcom/android/server/policy/bud;->kH:Ljava/util/ArrayList;
+    iget-object v1, p0, Lcom/android/server/policy/bud;->jH:Ljava/util/ArrayList;
 
     invoke-direct {p0, v1}, Lcom/android/server/policy/bud;->gck(Ljava/util/ArrayList;)I
 
     move-result v1
 
-    iget-object v2, p0, Lcom/android/server/policy/bud;->lH:Ljava/util/ArrayList;
+    iget-object v2, p0, Lcom/android/server/policy/bud;->kH:Ljava/util/ArrayList;
 
     invoke-direct {p0, v2}, Lcom/android/server/policy/bud;->gck(Ljava/util/ArrayList;)I
 
@@ -800,6 +771,35 @@
     return p0
 .end method
 
+.method private yo()I
+    .locals 2
+
+    iget-object v0, p0, Lcom/android/server/policy/bud;->mContext:Landroid/content/Context;
+
+    invoke-virtual {v0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Landroid/content/res/Resources;->getConfiguration()Landroid/content/res/Configuration;
+
+    move-result-object v0
+
+    iget v0, v0, Landroid/content/res/Configuration;->orientation:I
+
+    const/4 v1, 0x2
+
+    if-ne v1, v0, :cond_0
+
+    iget p0, p0, Lcom/android/server/policy/bud;->sH:I
+
+    return p0
+
+    :cond_0
+    iget p0, p0, Lcom/android/server/policy/bud;->rH:I
+
+    return p0
+.end method
+
 .method private zo()I
     .locals 2
 
@@ -819,7 +819,7 @@
 
     if-ne v1, v0, :cond_0
 
-    iget p0, p0, Lcom/android/server/policy/bud;->tH:I
+    iget p0, p0, Lcom/android/server/policy/bud;->rH:I
 
     return p0
 
@@ -882,7 +882,7 @@
 
     iput p1, p3, Landroid/graphics/Point;->y:I
 
-    iget-object p1, p0, Lcom/android/server/policy/bud;->jH:Ljava/util/ArrayList;
+    iget-object p1, p0, Lcom/android/server/policy/bud;->iH:Ljava/util/ArrayList;
 
     invoke-virtual {p1}, Ljava/util/ArrayList;->size()I
 
@@ -890,12 +890,12 @@
 
     if-le p1, v2, :cond_0
 
-    iget-object p1, p0, Lcom/android/server/policy/bud;->jH:Ljava/util/ArrayList;
+    iget-object p1, p0, Lcom/android/server/policy/bud;->iH:Ljava/util/ArrayList;
 
     invoke-virtual {p1, v1}, Ljava/util/ArrayList;->remove(I)Ljava/lang/Object;
 
     :cond_0
-    iget-object p0, p0, Lcom/android/server/policy/bud;->jH:Ljava/util/ArrayList;
+    iget-object p0, p0, Lcom/android/server/policy/bud;->iH:Ljava/util/ArrayList;
 
     :goto_0
     invoke-virtual {p0, p3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
@@ -923,7 +923,7 @@
 
     iput p1, p3, Landroid/graphics/Point;->y:I
 
-    iget-object p1, p0, Lcom/android/server/policy/bud;->kH:Ljava/util/ArrayList;
+    iget-object p1, p0, Lcom/android/server/policy/bud;->jH:Ljava/util/ArrayList;
 
     invoke-virtual {p1}, Ljava/util/ArrayList;->size()I
 
@@ -931,12 +931,12 @@
 
     if-le p1, v2, :cond_2
 
-    iget-object p1, p0, Lcom/android/server/policy/bud;->kH:Ljava/util/ArrayList;
+    iget-object p1, p0, Lcom/android/server/policy/bud;->jH:Ljava/util/ArrayList;
 
     invoke-virtual {p1, v1}, Ljava/util/ArrayList;->remove(I)Ljava/lang/Object;
 
     :cond_2
-    iget-object p0, p0, Lcom/android/server/policy/bud;->kH:Ljava/util/ArrayList;
+    iget-object p0, p0, Lcom/android/server/policy/bud;->jH:Ljava/util/ArrayList;
 
     goto :goto_0
 
@@ -961,7 +961,7 @@
 
     iput p1, p3, Landroid/graphics/Point;->y:I
 
-    iget-object p1, p0, Lcom/android/server/policy/bud;->lH:Ljava/util/ArrayList;
+    iget-object p1, p0, Lcom/android/server/policy/bud;->kH:Ljava/util/ArrayList;
 
     invoke-virtual {p1}, Ljava/util/ArrayList;->size()I
 
@@ -969,12 +969,12 @@
 
     if-le p1, v2, :cond_4
 
-    iget-object p1, p0, Lcom/android/server/policy/bud;->lH:Ljava/util/ArrayList;
+    iget-object p1, p0, Lcom/android/server/policy/bud;->kH:Ljava/util/ArrayList;
 
     invoke-virtual {p1, v1}, Ljava/util/ArrayList;->remove(I)Ljava/lang/Object;
 
     :cond_4
-    iget-object p0, p0, Lcom/android/server/policy/bud;->lH:Ljava/util/ArrayList;
+    iget-object p0, p0, Lcom/android/server/policy/bud;->kH:Ljava/util/ArrayList;
 
     goto :goto_0
 
@@ -988,7 +988,7 @@
 .method public f(Z)V
     .locals 0
 
-    iput-boolean p1, p0, Lcom/android/server/policy/bud;->nH:Z
+    iput-boolean p1, p0, Lcom/android/server/policy/bud;->lH:Z
 
     return-void
 .end method
@@ -1003,7 +1003,7 @@
     return-void
 
     :cond_0
-    iget-boolean v0, p0, Lcom/android/server/policy/bud;->nH:Z
+    iget-boolean v0, p0, Lcom/android/server/policy/bud;->lH:Z
 
     if-nez v0, :cond_1
 
@@ -1031,11 +1031,15 @@
     :cond_2
     if-nez v0, :cond_3
 
-    iput-boolean v3, p0, Lcom/android/server/policy/bud;->gH:Z
+    iput-boolean v3, p0, Lcom/android/server/policy/bud;->fH:Z
+
+    iput v2, p0, Lcom/android/server/policy/bud;->gH:I
 
     iput v2, p0, Lcom/android/server/policy/bud;->hH:I
 
-    iput v2, p0, Lcom/android/server/policy/bud;->iH:I
+    iget-object v4, p0, Lcom/android/server/policy/bud;->iH:Ljava/util/ArrayList;
+
+    invoke-virtual {v4}, Ljava/util/ArrayList;->clear()V
 
     iget-object v4, p0, Lcom/android/server/policy/bud;->jH:Ljava/util/ArrayList;
 
@@ -1045,22 +1049,18 @@
 
     invoke-virtual {v4}, Ljava/util/ArrayList;->clear()V
 
-    iget-object v4, p0, Lcom/android/server/policy/bud;->lH:Ljava/util/ArrayList;
-
-    invoke-virtual {v4}, Ljava/util/ArrayList;->clear()V
-
     :cond_3
-    iget v4, p0, Lcom/android/server/policy/bud;->hH:I
+    iget v4, p0, Lcom/android/server/policy/bud;->gH:I
 
     add-int/2addr v4, v3
 
-    iput v4, p0, Lcom/android/server/policy/bud;->hH:I
+    iput v4, p0, Lcom/android/server/policy/bud;->gH:I
 
-    iget v4, p0, Lcom/android/server/policy/bud;->hH:I
+    iget v4, p0, Lcom/android/server/policy/bud;->gH:I
 
     if-ne v4, v1, :cond_6
 
-    iget v4, p0, Lcom/android/server/policy/bud;->oH:I
+    iget v4, p0, Lcom/android/server/policy/bud;->nH:I
 
     const/4 v5, -0x1
 
@@ -1072,7 +1072,7 @@
 
     float-to-int v4, v4
 
-    iput v4, p0, Lcom/android/server/policy/bud;->oH:I
+    iput v4, p0, Lcom/android/server/policy/bud;->nH:I
 
     :cond_4
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getEventTime()J
@@ -1099,16 +1099,16 @@
     move v4, v2
 
     :goto_0
-    iput-boolean v4, p0, Lcom/android/server/policy/bud;->rH:Z
+    iput-boolean v4, p0, Lcom/android/server/policy/bud;->qH:Z
 
     :cond_6
-    iget v4, p0, Lcom/android/server/policy/bud;->iH:I
+    iget v4, p0, Lcom/android/server/policy/bud;->hH:I
 
-    iget v5, p0, Lcom/android/server/policy/bud;->hH:I
+    iget v5, p0, Lcom/android/server/policy/bud;->gH:I
 
     if-ge v4, v5, :cond_7
 
-    iput v5, p0, Lcom/android/server/policy/bud;->iH:I
+    iput v5, p0, Lcom/android/server/policy/bud;->hH:I
 
     :cond_7
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getPointerCount()I
@@ -1120,7 +1120,7 @@
     :goto_1
     if-ge v5, v4, :cond_8
 
-    iget v6, p0, Lcom/android/server/policy/bud;->iH:I
+    iget v6, p0, Lcom/android/server/policy/bud;->hH:I
 
     invoke-direct {p0, p1, v5, v6}, Lcom/android/server/policy/bud;->zta(Landroid/view/MotionEvent;II)V
 
@@ -1147,15 +1147,15 @@
     goto :goto_2
 
     :cond_a
-    iget p1, p0, Lcom/android/server/policy/bud;->hH:I
+    iget p1, p0, Lcom/android/server/policy/bud;->gH:I
 
     if-ne p1, v1, :cond_b
 
-    iget-boolean p1, p0, Lcom/android/server/policy/bud;->rH:Z
+    iget-boolean p1, p0, Lcom/android/server/policy/bud;->qH:Z
 
     if-eqz p1, :cond_b
 
-    invoke-direct {p0}, Lcom/android/server/policy/bud;->Bo()Z
+    invoke-direct {p0}, Lcom/android/server/policy/bud;->Ao()Z
 
     move-result p1
 
@@ -1166,21 +1166,21 @@
     invoke-virtual {p1, v1}, Landroid/os/Handler;->sendEmptyMessage(I)Z
 
     :cond_b
-    iget p1, p0, Lcom/android/server/policy/bud;->hH:I
+    iget p1, p0, Lcom/android/server/policy/bud;->gH:I
 
     sub-int/2addr p1, v3
 
-    iput p1, p0, Lcom/android/server/policy/bud;->hH:I
+    iput p1, p0, Lcom/android/server/policy/bud;->gH:I
+
+    iget-object p1, p0, Lcom/android/server/policy/bud;->iH:Ljava/util/ArrayList;
+
+    invoke-virtual {p1}, Ljava/util/ArrayList;->clear()V
 
     iget-object p1, p0, Lcom/android/server/policy/bud;->jH:Ljava/util/ArrayList;
 
     invoke-virtual {p1}, Ljava/util/ArrayList;->clear()V
 
-    iget-object p1, p0, Lcom/android/server/policy/bud;->kH:Ljava/util/ArrayList;
-
-    invoke-virtual {p1}, Ljava/util/ArrayList;->clear()V
-
-    iget-object p0, p0, Lcom/android/server/policy/bud;->lH:Ljava/util/ArrayList;
+    iget-object p0, p0, Lcom/android/server/policy/bud;->kH:Ljava/util/ArrayList;
 
     invoke-virtual {p0}, Ljava/util/ArrayList;->clear()V
 
@@ -1188,9 +1188,9 @@
 
     :cond_c
     :goto_2
-    iput-boolean v2, p0, Lcom/android/server/policy/bud;->gH:Z
+    iput-boolean v2, p0, Lcom/android/server/policy/bud;->fH:Z
 
-    iput v2, p0, Lcom/android/server/policy/bud;->hH:I
+    iput v2, p0, Lcom/android/server/policy/bud;->gH:I
 
     :cond_d
     :goto_3

@@ -36,7 +36,7 @@
 .method public zta(J[B)V
     .locals 5
 
-    invoke-static {}, Lorg/bouncycastle/crypto/bio/zta/tsu;->pj()[J
+    invoke-static {}, Lorg/bouncycastle/crypto/bio/zta/tsu;->oj()[J
 
     move-result-object v0
 

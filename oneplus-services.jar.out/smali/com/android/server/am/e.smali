@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/server/am/OnePlusHighPowerDetector;->xl()V
+    value = Lcom/android/server/am/OnePlusHighPowerDetector;->wl()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;

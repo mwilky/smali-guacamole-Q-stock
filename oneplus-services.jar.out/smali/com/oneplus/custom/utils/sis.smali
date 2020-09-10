@@ -18,7 +18,7 @@
 
 
 # virtual methods
-.method protected Jf()J
+.method protected If()J
     .locals 4
 
     :try_start_0
@@ -57,7 +57,7 @@
     return-wide v0
 .end method
 
-.method protected Kf()Lcom/oneplus/custom/utils/OpCustomizeSettings$CUSTOM_BACK_COVER_TYPE;
+.method protected Jf()Lcom/oneplus/custom/utils/OpCustomizeSettings$CUSTOM_BACK_COVER_TYPE;
     .locals 2
 
     sget-object p0, Lcom/oneplus/custom/utils/OpCustomizeSettings$CUSTOM_BACK_COVER_TYPE;->NONE:Lcom/oneplus/custom/utils/OpCustomizeSettings$CUSTOM_BACK_COVER_TYPE;
@@ -355,12 +355,12 @@
     .end packed-switch
 .end method
 
-.method protected Mf()Lcom/oneplus/custom/utils/OpCustomizeSettings$SW_TYPE;
+.method protected Lf()Lcom/oneplus/custom/utils/OpCustomizeSettings$SW_TYPE;
     .locals 2
 
     sget-object p0, Lcom/oneplus/custom/utils/OpCustomizeSettings$SW_TYPE;->DEFAULT:Lcom/oneplus/custom/utils/OpCustomizeSettings$SW_TYPE;
 
-    invoke-static {}, Lcom/oneplus/custom/utils/rtg;->Pf()I
+    invoke-static {}, Lcom/oneplus/custom/utils/rtg;->Of()I
 
     move-result v0
 
@@ -541,7 +541,7 @@
     goto :goto_0
 
     :cond_1
-    invoke-static {}, Lcom/oneplus/custom/utils/rtg;->Of()[B
+    invoke-static {}, Lcom/oneplus/custom/utils/rtg;->Nf()[B
 
     move-result-object p0
 

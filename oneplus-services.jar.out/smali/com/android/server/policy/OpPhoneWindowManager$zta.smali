@@ -85,7 +85,7 @@
     invoke-static {p2, p1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_0
-    sget-object p1, Lcom/android/server/policy/gck;->fG:[I
+    sget-object p1, Lcom/android/server/policy/gck;->eG:[I
 
     sget-object p2, Lcom/android/server/policy/OpPhoneWindowManager;->mKeyLockMode:Lcom/android/server/policy/OpPhoneWindowManager$KeyLockMode;
 

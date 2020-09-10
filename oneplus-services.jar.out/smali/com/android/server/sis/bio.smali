@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/server/sis/vdb;->ae()V
+    value = Lcom/android/server/sis/vdb;->_d()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -400,7 +400,7 @@
 
     move-result-object v2
 
-    const v5, 0x50d007e
+    const v5, 0x50d0086
 
     invoke-virtual {v2, v5}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -452,7 +452,7 @@
 
     move-result-object v2
 
-    const v5, 0x50d007d
+    const v5, 0x50d0085
 
     invoke-virtual {v2, v5}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 

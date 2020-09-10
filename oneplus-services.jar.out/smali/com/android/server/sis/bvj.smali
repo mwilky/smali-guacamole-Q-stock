@@ -36,7 +36,7 @@
 
     iget-object p0, p0, Lcom/android/server/sis/bvj;->this$0:Lcom/android/server/sis/vdb;
 
-    invoke-virtual {p0}, Lcom/android/server/sis/vdb;->_d()V
+    invoke-virtual {p0}, Lcom/android/server/sis/vdb;->Zd()V
 
     return-void
 .end method

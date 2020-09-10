@@ -234,14 +234,14 @@
 
     iget-object p0, p0, Lyou/zta/sis/zta/cno$sis;->x:Lyou/zta/sis/zta/ibl;
 
-    invoke-virtual {p0}, Lyou/zta/sis/zta/ibl;->Lk()I
+    invoke-virtual {p0}, Lyou/zta/sis/zta/ibl;->Kk()I
 
     move-result p0
 
     return p0
 .end method
 
-.method public ck()I
+.method public bk()I
     .locals 1
 
     iget-object p0, p0, Lyou/zta/sis/zta/cno$sis;->PGa:[I
@@ -253,7 +253,7 @@
     return p0
 .end method
 
-.method public dk()I
+.method public ck()I
     .locals 2
 
     iget-object p0, p0, Lyou/zta/sis/zta/cno$sis;->PGa:[I
@@ -277,7 +277,7 @@
     return p0
 .end method
 
-.method public ek()I
+.method public dk()I
     .locals 2
 
     iget-object p0, p0, Lyou/zta/sis/zta/cno$sis;->PGa:[I
@@ -363,6 +363,26 @@
     return v0
 .end method
 
+.method public fk()Lyou/zta/sis/zta/cno;
+    .locals 3
+
+    new-instance v0, Lyou/zta/sis/zta/cno$sis;
+
+    iget v1, p0, Lyou/zta/sis/zta/cno$sis;->yra:I
+
+    iget-object v2, p0, Lyou/zta/sis/zta/cno$sis;->PGa:[I
+
+    iget-object p0, p0, Lyou/zta/sis/zta/cno$sis;->x:Lyou/zta/sis/zta/ibl;
+
+    invoke-virtual {p0}, Lyou/zta/sis/zta/ibl;->fk()Lyou/zta/sis/zta/ibl;
+
+    move-result-object p0
+
+    invoke-direct {v0, v1, v2, p0}, Lyou/zta/sis/zta/cno$sis;-><init>(I[ILyou/zta/sis/zta/ibl;)V
+
+    return-object v0
+.end method
+
 .method public getFieldSize()I
     .locals 0
 
@@ -379,24 +399,12 @@
     return p0
 .end method
 
-.method public gk()Lyou/zta/sis/zta/cno;
-    .locals 3
+.method public gk()Ljava/lang/String;
+    .locals 0
 
-    new-instance v0, Lyou/zta/sis/zta/cno$sis;
+    const-string p0, "F2m"
 
-    iget v1, p0, Lyou/zta/sis/zta/cno$sis;->yra:I
-
-    iget-object v2, p0, Lyou/zta/sis/zta/cno$sis;->PGa:[I
-
-    iget-object p0, p0, Lyou/zta/sis/zta/cno$sis;->x:Lyou/zta/sis/zta/ibl;
-
-    invoke-virtual {p0}, Lyou/zta/sis/zta/ibl;->gk()Lyou/zta/sis/zta/ibl;
-
-    move-result-object p0
-
-    invoke-direct {v0, v1, v2, p0}, Lyou/zta/sis/zta/cno$sis;-><init>(I[ILyou/zta/sis/zta/ibl;)V
-
-    return-object v0
+    return-object p0
 .end method
 
 .method public hashCode()I
@@ -423,24 +431,51 @@
     return p0
 .end method
 
-.method public hk()Ljava/lang/String;
-    .locals 0
-
-    const-string p0, "F2m"
-
-    return-object p0
-.end method
-
-.method public ik()Z
+.method public hk()Z
     .locals 0
 
     iget-object p0, p0, Lyou/zta/sis/zta/cno$sis;->x:Lyou/zta/sis/zta/ibl;
 
-    invoke-virtual {p0}, Lyou/zta/sis/zta/ibl;->ik()Z
+    invoke-virtual {p0}, Lyou/zta/sis/zta/ibl;->hk()Z
 
     move-result p0
 
     return p0
+.end method
+
+.method public ik()Lyou/zta/sis/zta/cno;
+    .locals 1
+
+    iget-object v0, p0, Lyou/zta/sis/zta/cno$sis;->x:Lyou/zta/sis/zta/ibl;
+
+    invoke-virtual {v0}, Lyou/zta/sis/zta/ibl;->isZero()Z
+
+    move-result v0
+
+    if-nez v0, :cond_1
+
+    iget-object v0, p0, Lyou/zta/sis/zta/cno$sis;->x:Lyou/zta/sis/zta/ibl;
+
+    invoke-virtual {v0}, Lyou/zta/sis/zta/ibl;->hk()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    iget v0, p0, Lyou/zta/sis/zta/cno$sis;->yra:I
+
+    add-int/lit8 v0, v0, -0x1
+
+    invoke-virtual {p0, v0}, Lyou/zta/sis/zta/cno$sis;->ra(I)Lyou/zta/sis/zta/cno;
+
+    move-result-object p0
+
+    :cond_1
+    :goto_0
+    return-object p0
 .end method
 
 .method public invert()Lyou/zta/sis/zta/cno;
@@ -475,49 +510,22 @@
     return p0
 .end method
 
-.method public jk()Lyou/zta/sis/zta/cno;
-    .locals 1
-
-    iget-object v0, p0, Lyou/zta/sis/zta/cno$sis;->x:Lyou/zta/sis/zta/ibl;
-
-    invoke-virtual {v0}, Lyou/zta/sis/zta/ibl;->isZero()Z
-
-    move-result v0
-
-    if-nez v0, :cond_1
-
-    iget-object v0, p0, Lyou/zta/sis/zta/cno$sis;->x:Lyou/zta/sis/zta/ibl;
-
-    invoke-virtual {v0}, Lyou/zta/sis/zta/ibl;->ik()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    goto :goto_0
-
-    :cond_0
-    iget v0, p0, Lyou/zta/sis/zta/cno$sis;->yra:I
-
-    add-int/lit8 v0, v0, -0x1
-
-    invoke-virtual {p0, v0}, Lyou/zta/sis/zta/cno$sis;->ra(I)Lyou/zta/sis/zta/cno;
-
-    move-result-object p0
-
-    :cond_1
-    :goto_0
-    return-object p0
-.end method
-
-.method public kk()Z
+.method public jk()Z
     .locals 0
 
     iget-object p0, p0, Lyou/zta/sis/zta/cno$sis;->x:Lyou/zta/sis/zta/ibl;
 
-    invoke-virtual {p0}, Lyou/zta/sis/zta/ibl;->kk()Z
+    invoke-virtual {p0}, Lyou/zta/sis/zta/ibl;->jk()Z
 
     move-result p0
+
+    return p0
+.end method
+
+.method public mk()I
+    .locals 0
+
+    iget p0, p0, Lyou/zta/sis/zta/cno$sis;->OGa:I
 
     return p0
 .end method
@@ -526,14 +534,6 @@
     .locals 0
 
     return-object p0
-.end method
-
-.method public nk()I
-    .locals 0
-
-    iget p0, p0, Lyou/zta/sis/zta/cno$sis;->OGa:I
-
-    return p0
 .end method
 
 .method public ra(I)Lyou/zta/sis/zta/cno;

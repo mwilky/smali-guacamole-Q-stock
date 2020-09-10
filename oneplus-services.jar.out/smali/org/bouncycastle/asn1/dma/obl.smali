@@ -71,7 +71,7 @@
 
     iput-object v0, p0, Lorg/bouncycastle/asn1/dma/obl;->tta:Lorg/bouncycastle/asn1/obl;
 
-    invoke-virtual {p1}, Lorg/bouncycastle/asn1/obl;->Sg()Ljava/util/Enumeration;
+    invoke-virtual {p1}, Lorg/bouncycastle/asn1/obl;->Rg()Ljava/util/Enumeration;
 
     move-result-object p1
 
@@ -274,7 +274,7 @@
 
 
 # virtual methods
-.method public Bh()Ljava/math/BigInteger;
+.method public Ah()Ljava/math/BigInteger;
     .locals 0
 
     iget-object p0, p0, Lorg/bouncycastle/asn1/dma/obl;->sta:Ljava/math/BigInteger;
@@ -282,7 +282,7 @@
     return-object p0
 .end method
 
-.method public Ch()Ljava/math/BigInteger;
+.method public Bh()Ljava/math/BigInteger;
     .locals 0
 
     iget-object p0, p0, Lorg/bouncycastle/asn1/dma/obl;->qta:Ljava/math/BigInteger;
@@ -290,7 +290,7 @@
     return-object p0
 .end method
 
-.method public Dh()Ljava/math/BigInteger;
+.method public Ch()Ljava/math/BigInteger;
     .locals 0
 
     iget-object p0, p0, Lorg/bouncycastle/asn1/dma/obl;->rta:Ljava/math/BigInteger;
@@ -298,7 +298,7 @@
     return-object p0
 .end method
 
-.method public Eh()Ljava/math/BigInteger;
+.method public Dh()Ljava/math/BigInteger;
     .locals 0
 
     iget-object p0, p0, Lorg/bouncycastle/asn1/dma/obl;->ota:Ljava/math/BigInteger;
@@ -306,7 +306,7 @@
     return-object p0
 .end method
 
-.method public Fh()Ljava/math/BigInteger;
+.method public Eh()Ljava/math/BigInteger;
     .locals 0
 
     iget-object p0, p0, Lorg/bouncycastle/asn1/dma/obl;->pta:Ljava/math/BigInteger;
@@ -393,6 +393,16 @@
 
     new-instance v1, Lorg/bouncycastle/asn1/ywr;
 
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/dma/obl;->Dh()Ljava/math/BigInteger;
+
+    move-result-object v2
+
+    invoke-direct {v1, v2}, Lorg/bouncycastle/asn1/ywr;-><init>(Ljava/math/BigInteger;)V
+
+    invoke-virtual {v0, v1}, Lorg/bouncycastle/asn1/cno;->you(Lorg/bouncycastle/asn1/ssp;)V
+
+    new-instance v1, Lorg/bouncycastle/asn1/ywr;
+
     invoke-virtual {p0}, Lorg/bouncycastle/asn1/dma/obl;->Eh()Ljava/math/BigInteger;
 
     move-result-object v2
@@ -403,7 +413,7 @@
 
     new-instance v1, Lorg/bouncycastle/asn1/ywr;
 
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/dma/obl;->Fh()Ljava/math/BigInteger;
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/dma/obl;->Bh()Ljava/math/BigInteger;
 
     move-result-object v2
 
@@ -423,17 +433,7 @@
 
     new-instance v1, Lorg/bouncycastle/asn1/ywr;
 
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/dma/obl;->Dh()Ljava/math/BigInteger;
-
-    move-result-object v2
-
-    invoke-direct {v1, v2}, Lorg/bouncycastle/asn1/ywr;-><init>(Ljava/math/BigInteger;)V
-
-    invoke-virtual {v0, v1}, Lorg/bouncycastle/asn1/cno;->you(Lorg/bouncycastle/asn1/ssp;)V
-
-    new-instance v1, Lorg/bouncycastle/asn1/ywr;
-
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/dma/obl;->Bh()Ljava/math/BigInteger;
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/dma/obl;->Ah()Ljava/math/BigInteger;
 
     move-result-object v2
 

@@ -71,7 +71,7 @@
 
 
 # virtual methods
-.method public Bj()Lorg/bouncycastle/jcajce/wtn;
+.method public Aj()Lorg/bouncycastle/jcajce/wtn;
     .locals 0
 
     iget-object p0, p0, Lorg/bouncycastle/jcajce/bio;->pEa:Lorg/bouncycastle/jcajce/wtn;
@@ -93,7 +93,7 @@
     return p0
 .end method
 
-.method public mg()Ljava/util/Set;
+.method public lg()Ljava/util/Set;
     .locals 0
 
     iget-object p0, p0, Lorg/bouncycastle/jcajce/bio;->jqa:Ljava/util/Set;

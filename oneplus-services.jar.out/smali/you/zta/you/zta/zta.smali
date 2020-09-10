@@ -40,7 +40,7 @@
 
     invoke-direct {p2}, Lorg/bouncycastle/asn1/cno;-><init>()V
 
-    invoke-direct {p0}, Lyou/zta/you/zta/zta;->Lt()Lorg/bouncycastle/asn1/vdb;
+    invoke-direct {p0}, Lyou/zta/you/zta/zta;->Kt()Lorg/bouncycastle/asn1/vdb;
 
     move-result-object p3
 
@@ -300,7 +300,7 @@
     return-void
 .end method
 
-.method private Lt()Lorg/bouncycastle/asn1/vdb;
+.method private Kt()Lorg/bouncycastle/asn1/vdb;
     .locals 2
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -396,7 +396,7 @@
     return-void
 .end method
 
-.method public Vi()Ljava/lang/String;
+.method public Ui()Ljava/lang/String;
     .locals 0
 
     iget-object p0, p0, Lyou/zta/you/zta/zta;->qxa:Ljava/lang/String;
@@ -404,7 +404,7 @@
     return-object p0
 .end method
 
-.method public Wi()Lorg/bouncycastle/asn1/x509/zta;
+.method public Vi()Lorg/bouncycastle/asn1/x509/zta;
     .locals 0
 
     iget-object p0, p0, Lyou/zta/you/zta/zta;->pxa:Lorg/bouncycastle/asn1/x509/zta;
@@ -412,7 +412,7 @@
     return-object p0
 .end method
 
-.method public Xi()Lorg/bouncycastle/asn1/x509/zta;
+.method public Wi()Lorg/bouncycastle/asn1/x509/zta;
     .locals 0
 
     iget-object p0, p0, Lyou/zta/you/zta/zta;->oxa:Lorg/bouncycastle/asn1/x509/zta;
@@ -456,7 +456,7 @@
     invoke-direct {v1}, Lorg/bouncycastle/asn1/cno;-><init>()V
 
     :try_start_0
-    invoke-direct {p0}, Lyou/zta/you/zta/zta;->Lt()Lorg/bouncycastle/asn1/vdb;
+    invoke-direct {p0}, Lyou/zta/you/zta/zta;->Kt()Lorg/bouncycastle/asn1/vdb;
 
     move-result-object v2
 
@@ -628,7 +628,7 @@
 
     invoke-direct {p1}, Lorg/bouncycastle/asn1/cno;-><init>()V
 
-    invoke-direct {p0}, Lyou/zta/you/zta/zta;->Lt()Lorg/bouncycastle/asn1/vdb;
+    invoke-direct {p0}, Lyou/zta/you/zta/zta;->Kt()Lorg/bouncycastle/asn1/vdb;
 
     move-result-object p2
 

@@ -109,7 +109,7 @@
     throw p0
 .end method
 
-.method private Vt()V
+.method private Ut()V
     .locals 1
 
     iget-boolean v0, p0, Lorg/bouncycastle/crypto/bio/ssp;->Woa:Z
@@ -141,7 +141,7 @@
     return-void
 .end method
 
-.method private Wt()V
+.method private Vt()V
     .locals 9
 
     iget-wide v0, p0, Lorg/bouncycastle/crypto/bio/ssp;->hDa:J
@@ -519,7 +519,7 @@
 
     if-nez v0, :cond_0
 
-    invoke-direct {p0}, Lorg/bouncycastle/crypto/bio/ssp;->Wt()V
+    invoke-direct {p0}, Lorg/bouncycastle/crypto/bio/ssp;->Vt()V
 
     :cond_0
     new-array v2, v1, [B
@@ -599,7 +599,7 @@
         }
     .end annotation
 
-    invoke-direct {p0}, Lorg/bouncycastle/crypto/bio/ssp;->Vt()V
+    invoke-direct {p0}, Lorg/bouncycastle/crypto/bio/ssp;->Ut()V
 
     iget-wide v0, p0, Lorg/bouncycastle/crypto/bio/ssp;->eDa:J
 
@@ -609,7 +609,7 @@
 
     if-nez v0, :cond_0
 
-    invoke-direct {p0}, Lorg/bouncycastle/crypto/bio/ssp;->Wt()V
+    invoke-direct {p0}, Lorg/bouncycastle/crypto/bio/ssp;->Vt()V
 
     :cond_0
     iget v0, p0, Lorg/bouncycastle/crypto/bio/ssp;->oza:I
@@ -937,7 +937,7 @@
 .method public sis([BII)V
     .locals 6
 
-    invoke-direct {p0}, Lorg/bouncycastle/crypto/bio/ssp;->Vt()V
+    invoke-direct {p0}, Lorg/bouncycastle/crypto/bio/ssp;->Ut()V
 
     invoke-direct {p0, p3}, Lorg/bouncycastle/crypto/bio/ssp;->dd(I)J
 
@@ -1070,7 +1070,7 @@
         }
     .end annotation
 
-    invoke-direct {p0}, Lorg/bouncycastle/crypto/bio/ssp;->Vt()V
+    invoke-direct {p0}, Lorg/bouncycastle/crypto/bio/ssp;->Ut()V
 
     const/4 v0, 0x1
 
@@ -1147,7 +1147,7 @@
         }
     .end annotation
 
-    invoke-direct {p0}, Lorg/bouncycastle/crypto/bio/ssp;->Vt()V
+    invoke-direct {p0}, Lorg/bouncycastle/crypto/bio/ssp;->Ut()V
 
     invoke-direct {p0, p3}, Lorg/bouncycastle/crypto/bio/ssp;->dd(I)J
 
@@ -1318,7 +1318,7 @@
 .method public zta(B)V
     .locals 5
 
-    invoke-direct {p0}, Lorg/bouncycastle/crypto/bio/ssp;->Vt()V
+    invoke-direct {p0}, Lorg/bouncycastle/crypto/bio/ssp;->Ut()V
 
     const/4 v0, 0x1
 
@@ -1407,7 +1407,7 @@
 
     move-result-object v2
 
-    invoke-virtual {p2}, Lorg/bouncycastle/crypto/wtn/zta;->rj()[B
+    invoke-virtual {p2}, Lorg/bouncycastle/crypto/wtn/zta;->qj()[B
 
     move-result-object v5
 

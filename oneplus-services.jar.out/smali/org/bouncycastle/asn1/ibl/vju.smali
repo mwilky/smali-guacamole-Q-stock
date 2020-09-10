@@ -431,7 +431,7 @@
 
 
 # virtual methods
-.method public Ni()Lorg/bouncycastle/asn1/ibl/les;
+.method public Mi()Lorg/bouncycastle/asn1/ibl/les;
     .locals 0
 
     iget-object p0, p0, Lorg/bouncycastle/asn1/ibl/vju;->g:Lorg/bouncycastle/asn1/ibl/les;
@@ -439,7 +439,7 @@
     return-object p0
 .end method
 
-.method public Oi()Lorg/bouncycastle/asn1/ibl/cgv;
+.method public Ni()Lorg/bouncycastle/asn1/ibl/cgv;
     .locals 2
 
     new-instance v0, Lorg/bouncycastle/asn1/ibl/cgv;
@@ -453,7 +453,7 @@
     return-object v0
 .end method
 
-.method public Pi()Lorg/bouncycastle/asn1/ibl/vdw;
+.method public Oi()Lorg/bouncycastle/asn1/ibl/vdw;
     .locals 0
 
     iget-object p0, p0, Lorg/bouncycastle/asn1/ibl/vju;->nxa:Lorg/bouncycastle/asn1/ibl/vdw;
@@ -461,7 +461,7 @@
     return-object p0
 .end method
 
-.method public Qi()Ljava/math/BigInteger;
+.method public Pi()Ljava/math/BigInteger;
     .locals 0
 
     iget-object p0, p0, Lorg/bouncycastle/asn1/ibl/vju;->h:Ljava/math/BigInteger;
@@ -469,7 +469,7 @@
     return-object p0
 .end method
 
-.method public Ri()Ljava/math/BigInteger;
+.method public Qi()Ljava/math/BigInteger;
     .locals 0
 
     iget-object p0, p0, Lorg/bouncycastle/asn1/ibl/vju;->n:Ljava/math/BigInteger;
@@ -490,7 +490,7 @@
 
     iget-object p0, p0, Lorg/bouncycastle/asn1/ibl/vju;->g:Lorg/bouncycastle/asn1/ibl/les;
 
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/ibl/les;->Si()Lyou/zta/sis/zta/wtn;
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/ibl/les;->Ri()Lyou/zta/sis/zta/wtn;
 
     move-result-object p0
 

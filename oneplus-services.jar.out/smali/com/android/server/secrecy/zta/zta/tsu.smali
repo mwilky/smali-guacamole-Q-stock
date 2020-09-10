@@ -32,27 +32,27 @@
     return-void
 .end method
 
-.method public static Rd()Z
+.method public static Qd()Z
     .locals 1
 
-    invoke-static {}, Lcom/android/server/secrecy/zta/zta/sis;->Rd()Z
+    invoke-static {}, Lcom/android/server/secrecy/zta/zta/sis;->Qd()Z
 
     move-result v0
 
     return v0
 .end method
 
-.method public static Sd()Ljava/lang/String;
+.method public static Rd()Ljava/lang/String;
     .locals 1
 
-    invoke-static {}, Lcom/android/server/secrecy/zta/zta/sis;->Qd()Ljava/lang/String;
+    invoke-static {}, Lcom/android/server/secrecy/zta/zta/sis;->Pd()Ljava/lang/String;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method private static Wo()Ljava/lang/String;
+.method private static Vo()Ljava/lang/String;
     .locals 1
 
     const-string v0, "none"
@@ -60,7 +60,7 @@
     return-object v0
 .end method
 
-.method private static Xo()Z
+.method private static Wo()Z
     .locals 2
 
     sget-object v0, Landroid/os/Build;->HARDWARE:Ljava/lang/String;

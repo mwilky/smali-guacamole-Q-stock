@@ -30,7 +30,7 @@
 
 
 # virtual methods
-.method Dg()I
+.method Cg()I
     .locals 2
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -48,11 +48,11 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lorg/bouncycastle/asn1/vdb;->Fg()Lorg/bouncycastle/asn1/vdb;
+    invoke-virtual {v0}, Lorg/bouncycastle/asn1/vdb;->Eg()Lorg/bouncycastle/asn1/vdb;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lorg/bouncycastle/asn1/vdb;->Dg()I
+    invoke-virtual {v0}, Lorg/bouncycastle/asn1/vdb;->Cg()I
 
     move-result v0
 
@@ -123,7 +123,7 @@
 
     move-result-object p0
 
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/vdb;->Fg()Lorg/bouncycastle/asn1/vdb;
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/vdb;->Eg()Lorg/bouncycastle/asn1/vdb;
 
     move-result-object p0
 
@@ -157,7 +157,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lorg/bouncycastle/asn1/vdb;->Fg()Lorg/bouncycastle/asn1/vdb;
+    invoke-virtual {v0}, Lorg/bouncycastle/asn1/vdb;->Eg()Lorg/bouncycastle/asn1/vdb;
 
     move-result-object v0
 
@@ -169,7 +169,7 @@
 
     invoke-virtual {p1, v1, p0}, Lorg/bouncycastle/asn1/ugm;->writeTag(II)V
 
-    invoke-virtual {v0}, Lorg/bouncycastle/asn1/vdb;->Dg()I
+    invoke-virtual {v0}, Lorg/bouncycastle/asn1/vdb;->Cg()I
 
     move-result p0
 

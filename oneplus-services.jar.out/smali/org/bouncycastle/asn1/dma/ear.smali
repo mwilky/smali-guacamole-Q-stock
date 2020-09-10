@@ -365,7 +365,7 @@
     return-object p0
 .end method
 
-.method public yh()Lorg/bouncycastle/asn1/x509/zta;
+.method public xh()Lorg/bouncycastle/asn1/x509/zta;
     .locals 0
 
     iget-object p0, p0, Lorg/bouncycastle/asn1/dma/ear;->ita:Lorg/bouncycastle/asn1/x509/zta;
@@ -373,7 +373,7 @@
     return-object p0
 .end method
 
-.method public zh()Lorg/bouncycastle/asn1/x509/zta;
+.method public yh()Lorg/bouncycastle/asn1/x509/zta;
     .locals 0
 
     iget-object p0, p0, Lorg/bouncycastle/asn1/dma/ear;->jta:Lorg/bouncycastle/asn1/x509/zta;

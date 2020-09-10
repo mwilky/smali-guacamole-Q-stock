@@ -90,7 +90,7 @@
 .method public initOemSceneModeActivityStack(Lcom/android/server/wm/ActivityStack;Lcom/android/server/wm/ActivityStackSupervisor;)V
     .locals 1
 
-    invoke-static {}, Lcom/android/server/wm/wtn;->fe()Lcom/android/server/wm/wtn$zta;
+    invoke-static {}, Lcom/android/server/wm/wtn;->ee()Lcom/android/server/wm/wtn$zta;
 
     move-result-object v0
 

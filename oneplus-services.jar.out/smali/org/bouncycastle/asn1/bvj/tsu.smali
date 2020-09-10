@@ -84,7 +84,7 @@
 
     iput-object p1, p0, Lorg/bouncycastle/asn1/bvj/tsu;->Dta:[Lorg/bouncycastle/asn1/bvj/sis;
 
-    invoke-virtual {p2}, Lorg/bouncycastle/asn1/obl;->Sg()Ljava/util/Enumeration;
+    invoke-virtual {p2}, Lorg/bouncycastle/asn1/obl;->Rg()Ljava/util/Enumeration;
 
     move-result-object p1
 
@@ -155,7 +155,7 @@
     return-void
 .end method
 
-.method public static Mh()Lorg/bouncycastle/asn1/bvj/ssp;
+.method public static Lh()Lorg/bouncycastle/asn1/bvj/ssp;
     .locals 1
 
     sget-object v0, Lorg/bouncycastle/asn1/bvj/tsu;->Eta:Lorg/bouncycastle/asn1/bvj/ssp;
@@ -280,7 +280,7 @@
 
 
 # virtual methods
-.method public Lh()[Lorg/bouncycastle/asn1/bvj;
+.method public Kh()[Lorg/bouncycastle/asn1/bvj;
     .locals 8
 
     const/4 v0, 0x0
@@ -324,13 +324,13 @@
 
     aget-object v4, v4, v2
 
-    invoke-virtual {v4}, Lorg/bouncycastle/asn1/bvj/sis;->Kh()Z
+    invoke-virtual {v4}, Lorg/bouncycastle/asn1/bvj/sis;->Jh()Z
 
     move-result v5
 
     if-eqz v5, :cond_1
 
-    invoke-virtual {v4}, Lorg/bouncycastle/asn1/bvj/sis;->Jh()[Lorg/bouncycastle/asn1/bvj/zta;
+    invoke-virtual {v4}, Lorg/bouncycastle/asn1/bvj/sis;->Ih()[Lorg/bouncycastle/asn1/bvj/zta;
 
     move-result-object v4
 
@@ -390,7 +390,7 @@
     return-object v1
 .end method
 
-.method public Nh()[Lorg/bouncycastle/asn1/bvj/sis;
+.method public Mh()[Lorg/bouncycastle/asn1/bvj/sis;
     .locals 3
 
     iget-object p0, p0, Lorg/bouncycastle/asn1/bvj/tsu;->Dta:[Lorg/bouncycastle/asn1/bvj/sis;
@@ -534,13 +534,13 @@
 
     aget-object v4, v4, v2
 
-    invoke-virtual {v4}, Lorg/bouncycastle/asn1/bvj/sis;->Kh()Z
+    invoke-virtual {v4}, Lorg/bouncycastle/asn1/bvj/sis;->Jh()Z
 
     move-result v5
 
     if-eqz v5, :cond_1
 
-    invoke-virtual {v4}, Lorg/bouncycastle/asn1/bvj/sis;->Jh()[Lorg/bouncycastle/asn1/bvj/zta;
+    invoke-virtual {v4}, Lorg/bouncycastle/asn1/bvj/sis;->Ih()[Lorg/bouncycastle/asn1/bvj/zta;
 
     move-result-object v5
 

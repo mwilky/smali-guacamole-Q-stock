@@ -86,7 +86,7 @@
 
 
 # virtual methods
-.method public kh()Lorg/bouncycastle/asn1/bvj;
+.method public jh()Lorg/bouncycastle/asn1/bvj;
     .locals 0
 
     iget-object p0, p0, Lorg/bouncycastle/asn1/dma/sis;->Psa:Lorg/bouncycastle/asn1/bvj;
@@ -94,7 +94,7 @@
     return-object p0
 .end method
 
-.method public lh()Lorg/bouncycastle/asn1/ssp;
+.method public kh()Lorg/bouncycastle/asn1/ssp;
     .locals 0
 
     iget-object p0, p0, Lorg/bouncycastle/asn1/dma/sis;->Qsa:Lorg/bouncycastle/asn1/ssp;

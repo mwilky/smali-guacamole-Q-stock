@@ -62,13 +62,13 @@
 .method public zta(Lcom/android/server/am/v$you;Lcom/android/server/am/v$you;)I
     .locals 0
 
-    iget-wide p0, p1, Lcom/android/server/am/v$you;->Gx:D
+    iget-wide p0, p1, Lcom/android/server/am/v$you;->Fx:D
 
     invoke-static {p0, p1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
 
     move-result-object p0
 
-    iget-wide p1, p2, Lcom/android/server/am/v$you;->Gx:D
+    iget-wide p1, p2, Lcom/android/server/am/v$you;->Fx:D
 
     invoke-static {p1, p2}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
 

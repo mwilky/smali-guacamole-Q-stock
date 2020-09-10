@@ -48,7 +48,7 @@
     return-object p0
 .end method
 
-.method public wg()[B
+.method public vg()[B
     .locals 0
 
     iget-object p0, p0, Lorg/bouncycastle/jcajce/sis/zta;->Ara:[B
@@ -60,7 +60,7 @@
     return-object p0
 .end method
 
-.method public xg()I
+.method public wg()I
     .locals 0
 
     iget p0, p0, Lorg/bouncycastle/jcajce/sis/zta;->Bra:I

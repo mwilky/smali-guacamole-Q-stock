@@ -59,7 +59,7 @@
 
 
 # virtual methods
-.method Dg()I
+.method Cg()I
     .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -88,15 +88,32 @@
     return v0
 
     :cond_0
-    invoke-super {p0}, Lorg/bouncycastle/asn1/obl;->Fg()Lorg/bouncycastle/asn1/vdb;
+    invoke-super {p0}, Lorg/bouncycastle/asn1/obl;->Eg()Lorg/bouncycastle/asn1/vdb;
 
     move-result-object p0
 
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/vdb;->Dg()I
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/vdb;->Cg()I
 
     move-result p0
 
     return p0
+.end method
+
+.method Dg()Lorg/bouncycastle/asn1/vdb;
+    .locals 1
+
+    iget-object v0, p0, Lorg/bouncycastle/asn1/fa;->encoded:[B
+
+    if-eqz v0, :cond_0
+
+    invoke-direct {p0}, Lorg/bouncycastle/asn1/fa;->parse()V
+
+    :cond_0
+    invoke-super {p0}, Lorg/bouncycastle/asn1/obl;->Dg()Lorg/bouncycastle/asn1/vdb;
+
+    move-result-object p0
+
+    return-object p0
 .end method
 
 .method Eg()Lorg/bouncycastle/asn1/vdb;
@@ -116,24 +133,7 @@
     return-object p0
 .end method
 
-.method Fg()Lorg/bouncycastle/asn1/vdb;
-    .locals 1
-
-    iget-object v0, p0, Lorg/bouncycastle/asn1/fa;->encoded:[B
-
-    if-eqz v0, :cond_0
-
-    invoke-direct {p0}, Lorg/bouncycastle/asn1/fa;->parse()V
-
-    :cond_0
-    invoke-super {p0}, Lorg/bouncycastle/asn1/obl;->Fg()Lorg/bouncycastle/asn1/vdb;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public declared-synchronized Sg()Ljava/util/Enumeration;
+.method public declared-synchronized Rg()Ljava/util/Enumeration;
     .locals 2
 
     monitor-enter p0
@@ -143,7 +143,7 @@
 
     if-nez v0, :cond_0
 
-    invoke-super {p0}, Lorg/bouncycastle/asn1/obl;->Sg()Ljava/util/Enumeration;
+    invoke-super {p0}, Lorg/bouncycastle/asn1/obl;->Rg()Ljava/util/Enumeration;
 
     move-result-object v0
     :try_end_0
@@ -256,7 +256,7 @@
     goto :goto_0
 
     :cond_0
-    invoke-super {p0}, Lorg/bouncycastle/asn1/obl;->Fg()Lorg/bouncycastle/asn1/vdb;
+    invoke-super {p0}, Lorg/bouncycastle/asn1/obl;->Eg()Lorg/bouncycastle/asn1/vdb;
 
     move-result-object p0
 

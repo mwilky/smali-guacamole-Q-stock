@@ -104,7 +104,7 @@
 
 
 # virtual methods
-.method public Jh()[Lorg/bouncycastle/asn1/bvj/zta;
+.method public Ih()[Lorg/bouncycastle/asn1/bvj/zta;
     .locals 3
 
     iget-object v0, p0, Lorg/bouncycastle/asn1/bvj/sis;->values:Lorg/bouncycastle/asn1/ear;
@@ -142,7 +142,7 @@
     return-object v0
 .end method
 
-.method public Kh()Z
+.method public Jh()Z
     .locals 1
 
     iget-object p0, p0, Lorg/bouncycastle/asn1/bvj/sis;->values:Lorg/bouncycastle/asn1/ear;

@@ -127,7 +127,7 @@
 
 
 # virtual methods
-.method public _g()Lorg/bouncycastle/asn1/x509/zta;
+.method public Zg()Lorg/bouncycastle/asn1/x509/zta;
     .locals 0
 
     iget-object p0, p0, Lorg/bouncycastle/asn1/x509/l;->Usa:Lorg/bouncycastle/asn1/x509/zta;
@@ -223,12 +223,12 @@
     return p0
 .end method
 
-.method public ph()Lorg/bouncycastle/asn1/x509/c;
+.method public oh()Lorg/bouncycastle/asn1/x509/c;
     .locals 0
 
     iget-object p0, p0, Lorg/bouncycastle/asn1/x509/l;->Uta:Lorg/bouncycastle/asn1/x509/g;
 
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/x509/g;->ph()Lorg/bouncycastle/asn1/x509/c;
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/x509/g;->oh()Lorg/bouncycastle/asn1/x509/c;
 
     move-result-object p0
 

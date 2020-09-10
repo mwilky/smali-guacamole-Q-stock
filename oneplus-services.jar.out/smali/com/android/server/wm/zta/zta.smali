@@ -275,12 +275,12 @@
     goto :goto_0
 
     :cond_1
-    invoke-direct {p0}, Lcom/android/server/wm/zta/zta;->sl()V
+    invoke-direct {p0}, Lcom/android/server/wm/zta/zta;->rl()V
 
     return-void
 .end method
 
-.method private sl()V
+.method private rl()V
     .locals 6
 
     iget-object v0, p0, Lcom/android/server/wm/zta/zta;->zb:Landroid/graphics/Rect;

@@ -126,7 +126,7 @@
 
     move-result-object p0
 
-    invoke-virtual {p0}, Lyou/zta/sis/zta/wtn;->Bk()Z
+    invoke-virtual {p0}, Lyou/zta/sis/zta/wtn;->Ak()Z
 
     move-result p1
 
@@ -170,7 +170,7 @@
 
 
 # virtual methods
-.method public Qi()Ljava/math/BigInteger;
+.method public Pi()Ljava/math/BigInteger;
     .locals 0
 
     iget-object p0, p0, Lorg/bouncycastle/crypto/wtn/ibl;->h:Ljava/math/BigInteger;
@@ -178,7 +178,7 @@
     return-object p0
 .end method
 
-.method public Ri()Ljava/math/BigInteger;
+.method public Qi()Ljava/math/BigInteger;
     .locals 0
 
     iget-object p0, p0, Lorg/bouncycastle/crypto/wtn/ibl;->n:Ljava/math/BigInteger;
@@ -326,7 +326,7 @@
     return p0
 .end method
 
-.method public declared-synchronized yj()Ljava/math/BigInteger;
+.method public declared-synchronized xj()Ljava/math/BigInteger;
     .locals 2
 
     monitor-enter p0

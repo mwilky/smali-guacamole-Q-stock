@@ -135,10 +135,18 @@
 
 
 # virtual methods
-.method public th()Lorg/bouncycastle/asn1/dma/cno;
+.method public sh()Lorg/bouncycastle/asn1/dma/cno;
     .locals 0
 
     iget-object p0, p0, Lorg/bouncycastle/asn1/dma/ugm;->Asa:Lorg/bouncycastle/asn1/dma/cno;
+
+    return-object p0
+.end method
+
+.method public th()Lorg/bouncycastle/asn1/dma/ywr;
+    .locals 0
+
+    iget-object p0, p0, Lorg/bouncycastle/asn1/dma/ugm;->fta:Lorg/bouncycastle/asn1/dma/ywr;
 
     return-object p0
 .end method
@@ -172,14 +180,6 @@
     new-instance p0, Lorg/bouncycastle/asn1/d;
 
     invoke-direct {p0, v0}, Lorg/bouncycastle/asn1/d;-><init>(Lorg/bouncycastle/asn1/cno;)V
-
-    return-object p0
-.end method
-
-.method public uh()Lorg/bouncycastle/asn1/dma/ywr;
-    .locals 0
-
-    iget-object p0, p0, Lorg/bouncycastle/asn1/dma/ugm;->fta:Lorg/bouncycastle/asn1/dma/ywr;
 
     return-object p0
 .end method

@@ -167,7 +167,7 @@
 
     invoke-virtual {v1, v0, v2, v3}, Landroid/os/Handler;->sendMessageDelayed(Landroid/os/Message;J)Z
 
-    invoke-direct {p0}, Lcom/android/server/ugm;->xl()V
+    invoke-direct {p0}, Lcom/android/server/ugm;->wl()V
 
     invoke-static {}, Lcom/android/server/OnePlusUtil$zta;->getInstance()Lcom/android/server/OnePlusUtil$zta;
 
@@ -299,7 +299,7 @@
     return p0
 .end method
 
-.method private xl()V
+.method private wl()V
     .locals 2
 
     new-instance v0, Landroid/content/IntentFilter;

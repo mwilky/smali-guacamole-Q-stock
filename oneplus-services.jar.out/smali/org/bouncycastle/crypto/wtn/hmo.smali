@@ -16,7 +16,7 @@
 .method public constructor <init>(Lorg/bouncycastle/crypto/kth;)V
     .locals 1
 
-    invoke-static {}, Lorg/bouncycastle/crypto/igw;->gj()Ljava/security/SecureRandom;
+    invoke-static {}, Lorg/bouncycastle/crypto/igw;->fj()Ljava/security/SecureRandom;
 
     move-result-object v0
 
@@ -47,7 +47,7 @@
     return-object p0
 .end method
 
-.method public hj()Ljava/security/SecureRandom;
+.method public gj()Ljava/security/SecureRandom;
     .locals 0
 
     iget-object p0, p0, Lorg/bouncycastle/crypto/wtn/hmo;->Moa:Ljava/security/SecureRandom;

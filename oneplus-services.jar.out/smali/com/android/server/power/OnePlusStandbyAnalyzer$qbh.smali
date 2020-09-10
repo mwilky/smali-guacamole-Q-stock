@@ -19,11 +19,11 @@
 
 .field public mType:Lcom/android/server/power/OnePlusStandbyAnalyzer$TELEPHONY_TYPE;
 
+.field public qI:I
+
 .field public rI:I
 
-.field public sI:I
-
-.field public tI:[I
+.field public sI:[I
 
 
 # direct methods
@@ -34,15 +34,15 @@
 
     const/4 v0, 0x0
 
-    iput v0, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$qbh;->rI:I
+    iput v0, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$qbh;->qI:I
 
-    iput v0, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$qbh;->sI:I
+    iput v0, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$qbh;->rI:I
 
     iput v0, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$qbh;->mCurrent:I
 
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$qbh;->tI:[I
+    iput-object v0, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$qbh;->sI:[I
 
     iput-object p1, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$qbh;->mType:Lcom/android/server/power/OnePlusStandbyAnalyzer$TELEPHONY_TYPE;
 
@@ -54,7 +54,7 @@
 
     new-array p1, p1, [I
 
-    iput-object p1, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$qbh;->tI:[I
+    iput-object p1, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$qbh;->sI:[I
 
     return-void
 .end method
@@ -72,12 +72,12 @@
 
     if-eq v0, v1, :cond_0
 
-    iput v2, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$qbh;->rI:I
+    iput v2, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$qbh;->qI:I
 
     goto :goto_0
 
     :cond_0
-    iget-object v0, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$qbh;->tI:[I
+    iget-object v0, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$qbh;->sI:[I
 
     sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$SIM_ID;->Mna:Lcom/android/server/power/OnePlusStandbyAnalyzer$SIM_ID;
 
@@ -87,7 +87,7 @@
 
     aput v2, v0, v1
 
-    iget-object v0, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$qbh;->tI:[I
+    iget-object v0, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$qbh;->sI:[I
 
     sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$SIM_ID;->Nna:Lcom/android/server/power/OnePlusStandbyAnalyzer$SIM_ID;
 
@@ -98,12 +98,12 @@
     aput v2, v0, v1
 
     :goto_0
-    iput v2, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$qbh;->sI:I
+    iput v2, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$qbh;->rI:I
 
     return-void
 .end method
 
-.method public fd()Ljava/lang/String;
+.method public ed()Ljava/lang/String;
     .locals 6
 
     iget-object v0, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$qbh;->mType:Lcom/android/server/power/OnePlusStandbyAnalyzer$TELEPHONY_TYPE;
@@ -142,13 +142,13 @@
 
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget v1, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$qbh;->rI:I
+    iget v1, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$qbh;->qI:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     invoke-virtual {v0, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget p0, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$qbh;->sI:I
+    iget p0, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$qbh;->rI:I
 
     :goto_0
     invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
@@ -186,7 +186,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v3, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$qbh;->tI:[I
+    iget-object v3, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$qbh;->sI:[I
 
     sget-object v4, Lcom/android/server/power/OnePlusStandbyAnalyzer$SIM_ID;->Mna:Lcom/android/server/power/OnePlusStandbyAnalyzer$SIM_ID;
 
@@ -206,7 +206,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object p0, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$qbh;->tI:[I
+    iget-object p0, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$qbh;->sI:[I
 
     sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$SIM_ID;->Nna:Lcom/android/server/power/OnePlusStandbyAnalyzer$SIM_ID;
 
@@ -234,17 +234,17 @@
 
     iput p1, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$qbh;->mCurrent:I
 
-    iget p2, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$qbh;->rI:I
+    iget p2, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$qbh;->qI:I
 
     add-int/2addr p2, v1
 
-    iput p2, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$qbh;->rI:I
+    iput p2, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$qbh;->qI:I
 
-    iget p2, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$qbh;->sI:I
+    iget p2, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$qbh;->rI:I
 
     add-int/2addr p2, p1
 
-    iput p2, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$qbh;->sI:I
+    iput p2, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$qbh;->rI:I
 
     goto :goto_1
 
@@ -255,7 +255,7 @@
 
     if-eqz p1, :cond_3
 
-    sget-object p2, Lcom/android/server/power/kth;->FH:[I
+    sget-object p2, Lcom/android/server/power/kth;->EH:[I
 
     invoke-virtual {p1}, Ljava/lang/Enum;->ordinal()I
 
@@ -272,7 +272,7 @@
     goto :goto_1
 
     :cond_1
-    iget-object p1, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$qbh;->tI:[I
+    iget-object p1, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$qbh;->sI:[I
 
     sget-object p2, Lcom/android/server/power/OnePlusStandbyAnalyzer$SIM_ID;->Nna:Lcom/android/server/power/OnePlusStandbyAnalyzer$SIM_ID;
 
@@ -289,7 +289,7 @@
     goto :goto_0
 
     :cond_2
-    iget-object p1, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$qbh;->tI:[I
+    iget-object p1, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$qbh;->sI:[I
 
     sget-object p2, Lcom/android/server/power/OnePlusStandbyAnalyzer$SIM_ID;->Mna:Lcom/android/server/power/OnePlusStandbyAnalyzer$SIM_ID;
 
@@ -304,11 +304,11 @@
     aput v0, p1, p2
 
     :goto_0
-    iget p1, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$qbh;->sI:I
+    iget p1, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$qbh;->rI:I
 
     add-int/2addr p1, v1
 
-    iput p1, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$qbh;->sI:I
+    iput p1, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$qbh;->rI:I
 
     :cond_3
     :goto_1
@@ -348,13 +348,13 @@
 
     invoke-virtual {v0, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget v1, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$qbh;->rI:I
+    iget v1, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$qbh;->qI:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget p0, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$qbh;->sI:I
+    iget p0, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$qbh;->rI:I
 
     :goto_0
     invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
@@ -392,7 +392,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v4, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$qbh;->tI:[I
+    iget-object v4, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$qbh;->sI:[I
 
     sget-object v5, Lcom/android/server/power/OnePlusStandbyAnalyzer$SIM_ID;->Mna:Lcom/android/server/power/OnePlusStandbyAnalyzer$SIM_ID;
 
@@ -412,7 +412,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object p0, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$qbh;->tI:[I
+    iget-object p0, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$qbh;->sI:[I
 
     sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$SIM_ID;->Nna:Lcom/android/server/power/OnePlusStandbyAnalyzer$SIM_ID;
 

@@ -82,7 +82,7 @@
     return-void
 .end method
 
-.method private Rt()Lorg/bouncycastle/crypto/wtn/ywr;
+.method private Qt()Lorg/bouncycastle/crypto/wtn/ywr;
     .locals 15
 
     const/16 v0, 0x14
@@ -332,7 +332,7 @@
     throw p0
 .end method
 
-.method private St()Lorg/bouncycastle/crypto/wtn/ywr;
+.method private Rt()Lorg/bouncycastle/crypto/wtn/ywr;
     .locals 14
 
     iget-object v0, p0, Lorg/bouncycastle/crypto/ssp/kth;->digest:Lorg/bouncycastle/crypto/qbh;
@@ -827,14 +827,14 @@
 
     if-eqz v0, :cond_0
 
-    invoke-direct {p0}, Lorg/bouncycastle/crypto/ssp/kth;->St()Lorg/bouncycastle/crypto/wtn/ywr;
+    invoke-direct {p0}, Lorg/bouncycastle/crypto/ssp/kth;->Rt()Lorg/bouncycastle/crypto/wtn/ywr;
 
     move-result-object p0
 
     goto :goto_0
 
     :cond_0
-    invoke-direct {p0}, Lorg/bouncycastle/crypto/ssp/kth;->Rt()Lorg/bouncycastle/crypto/wtn/ywr;
+    invoke-direct {p0}, Lorg/bouncycastle/crypto/ssp/kth;->Qt()Lorg/bouncycastle/crypto/wtn/ywr;
 
     move-result-object p0
 
@@ -891,7 +891,7 @@
 
     move-result v0
 
-    invoke-virtual {p1}, Lorg/bouncycastle/crypto/wtn/dma;->Ri()I
+    invoke-virtual {p1}, Lorg/bouncycastle/crypto/wtn/dma;->Qi()I
 
     move-result v1
 
@@ -1006,7 +1006,7 @@
 
     iput v0, p0, Lorg/bouncycastle/crypto/ssp/kth;->bta:I
 
-    invoke-virtual {p1}, Lorg/bouncycastle/crypto/wtn/dma;->hj()Ljava/security/SecureRandom;
+    invoke-virtual {p1}, Lorg/bouncycastle/crypto/wtn/dma;->gj()Ljava/security/SecureRandom;
 
     move-result-object v0
 
@@ -1014,7 +1014,7 @@
 
     iput-boolean v2, p0, Lorg/bouncycastle/crypto/ssp/kth;->ECa:Z
 
-    invoke-virtual {p1}, Lorg/bouncycastle/crypto/wtn/dma;->xj()I
+    invoke-virtual {p1}, Lorg/bouncycastle/crypto/wtn/dma;->wj()I
 
     move-result p1
 

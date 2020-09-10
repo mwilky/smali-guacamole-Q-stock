@@ -39,7 +39,7 @@
 
 
 # virtual methods
-.method public Gf()I
+.method public Ff()I
     .locals 0
 
     iget p0, p0, Lcom/oneplus/android/server/scene/OemSceneXLinearVibrationMotorController$zta;->Aia:I

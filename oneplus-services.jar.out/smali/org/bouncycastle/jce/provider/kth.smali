@@ -25,7 +25,7 @@
 
 
 # virtual methods
-.method public Oj()Z
+.method public Nj()Z
     .locals 0
 
     iget-boolean p0, p0, Lorg/bouncycastle/jce/provider/kth;->VFa:Z

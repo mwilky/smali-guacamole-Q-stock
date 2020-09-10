@@ -288,7 +288,7 @@
 .method public static igw([I[I)V
     .locals 1
 
-    invoke-static {}, Lyou/zta/sis/sis/sis;->jl()[I
+    invoke-static {}, Lyou/zta/sis/sis/sis;->il()[I
 
     move-result-object v0
 
@@ -475,7 +475,7 @@
 .method public static tsu([I[I[I)V
     .locals 1
 
-    invoke-static {}, Lyou/zta/sis/sis/sis;->jl()[I
+    invoke-static {}, Lyou/zta/sis/sis/sis;->il()[I
 
     move-result-object v0
 
@@ -563,7 +563,7 @@
 .method public static zta([II[I)V
     .locals 1
 
-    invoke-static {}, Lyou/zta/sis/sis/sis;->jl()[I
+    invoke-static {}, Lyou/zta/sis/sis/sis;->il()[I
 
     move-result-object v0
 

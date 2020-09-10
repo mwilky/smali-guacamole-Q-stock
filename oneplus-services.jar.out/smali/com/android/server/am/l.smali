@@ -16,7 +16,7 @@
 
 
 # static fields
-.field private static final Kw:Ljava/lang/String; = "DoFrameInBG"
+.field private static final Jw:Ljava/lang/String; = "DoFrameInBG"
 
 .field private static final MSG_GET_ONLINECONFIG:I = 0x1
 
@@ -28,7 +28,7 @@
 
 
 # instance fields
-.field private Jw:Landroid/os/HandlerThread;
+.field private Iw:Landroid/os/HandlerThread;
 
 .field private mConfigObserver:Lcom/oneplus/config/ConfigObserver;
 
@@ -53,7 +53,7 @@
 
     iput-object v0, p0, Lcom/android/server/am/l;->mHandler:Landroid/os/Handler;
 
-    iput-object v0, p0, Lcom/android/server/am/l;->Jw:Landroid/os/HandlerThread;
+    iput-object v0, p0, Lcom/android/server/am/l;->Iw:Landroid/os/HandlerThread;
 
     new-instance v0, Lcom/android/server/am/l$you;
 

@@ -48,10 +48,10 @@
     return-void
 .end method
 
-.method private Js()V
+.method private Is()V
     .locals 1
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/scene/OemSceneAudioController;->yn()[Ljava/lang/String;
+    invoke-direct {p0}, Lcom/oneplus/android/server/scene/OemSceneAudioController;->xn()[Ljava/lang/String;
 
     move-result-object v0
 
@@ -223,7 +223,7 @@
     return-object p0
 .end method
 
-.method private yn()[Ljava/lang/String;
+.method private xn()[Ljava/lang/String;
     .locals 2
 
     iget-object v0, p0, Lcom/oneplus/android/server/scene/OemSceneAudioController;->mAudioManager:Landroid/media/AudioManager;
@@ -269,14 +269,14 @@
 .method static synthetic zta(Lcom/oneplus/android/server/scene/OemSceneAudioController;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/scene/OemSceneAudioController;->Js()V
+    invoke-direct {p0}, Lcom/oneplus/android/server/scene/OemSceneAudioController;->Is()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public nf()Lcom/oneplus/android/server/scene/OemSceneAudioController$AudioProcessesController;
+.method public mf()Lcom/oneplus/android/server/scene/OemSceneAudioController$AudioProcessesController;
     .locals 1
 
     iget-object v0, p0, Lcom/oneplus/android/server/scene/OemSceneAudioController;->tga:Lcom/oneplus/android/server/scene/OemSceneAudioController$AudioProcessesController;

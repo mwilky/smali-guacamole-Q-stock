@@ -284,7 +284,7 @@
 
 
 # virtual methods
-.method public Fi()Lorg/bouncycastle/asn1/n;
+.method public Ei()Lorg/bouncycastle/asn1/n;
     .locals 0
 
     iget-object p0, p0, Lorg/bouncycastle/asn1/x509/g;->_va:Lorg/bouncycastle/asn1/n;
@@ -292,7 +292,7 @@
     return-object p0
 .end method
 
-.method public Gi()Lorg/bouncycastle/asn1/n;
+.method public Fi()Lorg/bouncycastle/asn1/n;
     .locals 0
 
     iget-object p0, p0, Lorg/bouncycastle/asn1/x509/g;->awa:Lorg/bouncycastle/asn1/n;
@@ -300,7 +300,7 @@
     return-object p0
 .end method
 
-.method public Yh()Lorg/bouncycastle/asn1/ywr;
+.method public Xh()Lorg/bouncycastle/asn1/ywr;
     .locals 0
 
     iget-object p0, p0, Lorg/bouncycastle/asn1/x509/g;->version:Lorg/bouncycastle/asn1/ywr;
@@ -382,7 +382,7 @@
     return p0
 .end method
 
-.method public ph()Lorg/bouncycastle/asn1/x509/c;
+.method public oh()Lorg/bouncycastle/asn1/x509/c;
     .locals 0
 
     iget-object p0, p0, Lorg/bouncycastle/asn1/x509/g;->Zva:Lorg/bouncycastle/asn1/x509/c;

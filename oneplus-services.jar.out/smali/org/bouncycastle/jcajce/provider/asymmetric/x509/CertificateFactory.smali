@@ -96,7 +96,7 @@
     return-void
 .end method
 
-.method private Et()Ljava/security/cert/CRL;
+.method private Dt()Ljava/security/cert/CRL;
     .locals 3
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -308,13 +308,13 @@
 
     move-result-object p1
 
-    invoke-virtual {p1}, Lorg/bouncycastle/asn1/dma/hmo;->bh()Lorg/bouncycastle/asn1/ear;
+    invoke-virtual {p1}, Lorg/bouncycastle/asn1/dma/hmo;->ah()Lorg/bouncycastle/asn1/ear;
 
     move-result-object p1
 
     iput-object p1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/x509/CertificateFactory;->Spa:Lorg/bouncycastle/asn1/ear;
 
-    invoke-direct {p0}, Lorg/bouncycastle/jcajce/provider/asymmetric/x509/CertificateFactory;->Et()Ljava/security/cert/CRL;
+    invoke-direct {p0}, Lorg/bouncycastle/jcajce/provider/asymmetric/x509/CertificateFactory;->Dt()Ljava/security/cert/CRL;
 
     move-result-object p0
 
@@ -514,7 +514,7 @@
 
     if-eq p1, v0, :cond_2
 
-    invoke-direct {p0}, Lorg/bouncycastle/jcajce/provider/asymmetric/x509/CertificateFactory;->Et()Ljava/security/cert/CRL;
+    invoke-direct {p0}, Lorg/bouncycastle/jcajce/provider/asymmetric/x509/CertificateFactory;->Dt()Ljava/security/cert/CRL;
 
     move-result-object p0
 

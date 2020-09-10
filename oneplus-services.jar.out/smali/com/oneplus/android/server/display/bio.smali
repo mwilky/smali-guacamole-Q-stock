@@ -79,7 +79,7 @@
 
 
 # virtual methods
-.method public Ie()Lsis/you/you/zta/zta/zta;
+.method public He()Lsis/you/you/zta/zta/zta;
     .locals 0
 
     iget-object p0, p0, Lcom/oneplus/android/server/display/bio;->oca:Lsis/you/you/zta/zta/zta;

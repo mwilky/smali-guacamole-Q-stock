@@ -122,7 +122,7 @@
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/dma/ear;->yh()Lorg/bouncycastle/asn1/x509/zta;
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/dma/ear;->xh()Lorg/bouncycastle/asn1/x509/zta;
 
     move-result-object p0
 

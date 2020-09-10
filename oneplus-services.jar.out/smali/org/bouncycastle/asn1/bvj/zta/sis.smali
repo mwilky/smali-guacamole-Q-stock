@@ -1180,7 +1180,7 @@
 
     invoke-direct {v0}, Ljava/lang/StringBuffer;-><init>()V
 
-    invoke-virtual {p1}, Lorg/bouncycastle/asn1/bvj/tsu;->Nh()[Lorg/bouncycastle/asn1/bvj/sis;
+    invoke-virtual {p1}, Lorg/bouncycastle/asn1/bvj/tsu;->Mh()[Lorg/bouncycastle/asn1/bvj/sis;
 
     move-result-object p1
 

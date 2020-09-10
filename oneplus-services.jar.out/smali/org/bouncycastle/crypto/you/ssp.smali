@@ -146,7 +146,7 @@
     :cond_0
     invoke-virtual {p0, v0, v1}, Lorg/bouncycastle/crypto/you/ssp;->cjf(J)V
 
-    invoke-virtual {p0}, Lorg/bouncycastle/crypto/you/ssp;->jj()V
+    invoke-virtual {p0}, Lorg/bouncycastle/crypto/you/ssp;->ij()V
 
     return-void
 .end method
@@ -159,7 +159,7 @@
     return p0
 .end method
 
-.method protected abstract jj()V
+.method protected abstract ij()V
 .end method
 
 .method public reset()V

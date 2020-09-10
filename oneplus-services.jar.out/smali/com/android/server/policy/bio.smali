@@ -6,7 +6,7 @@
 # static fields
 .field private static final TAG:Ljava/lang/String; = "FileUtils"
 
-.field private static final eG:I = 0x200
+.field private static final dG:I = 0x200
 
 
 # direct methods

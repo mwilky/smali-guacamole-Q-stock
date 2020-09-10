@@ -178,20 +178,20 @@
     return-void
 .end method
 
+.method public yd()Ljava/lang/Integer;
+    .locals 0
+
+    iget-object p0, p0, Lcom/android/server/power/zta/zta;->dM:Ljava/lang/Integer;
+
+    return-object p0
+.end method
+
 .method public you(Ljava/lang/Integer;)V
     .locals 0
 
     iput-object p1, p0, Lcom/android/server/power/zta/zta;->eM:Ljava/lang/Integer;
 
     return-void
-.end method
-
-.method public zd()Ljava/lang/Integer;
-    .locals 0
-
-    iget-object p0, p0, Lcom/android/server/power/zta/zta;->dM:Ljava/lang/Integer;
-
-    return-object p0
 .end method
 
 .method public zta(Ljava/lang/Integer;)V

@@ -263,7 +263,7 @@
 
     invoke-virtual {p0, v0}, Lorg/bouncycastle/jcajce/you/sis/zta/zta;->zta(Ljava/io/OutputStream;)V
 
-    invoke-virtual {p1}, Lorg/bouncycastle/crypto/cno/you;->Tf()[B
+    invoke-virtual {p1}, Lorg/bouncycastle/crypto/cno/you;->Sf()[B
 
     move-result-object p0
 

@@ -79,7 +79,7 @@
     :cond_2
     new-array p1, v1, [I
 
-    const/16 v2, 0xcd
+    const/16 v2, 0xce
 
     const/4 v3, 0x0
 
@@ -131,7 +131,7 @@
     :cond_4
     new-array p1, v1, [I
 
-    const/16 v1, 0xf9
+    const/16 v1, 0xfa
 
     aput v1, p1, v3
 

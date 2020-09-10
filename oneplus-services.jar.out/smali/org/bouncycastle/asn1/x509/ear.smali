@@ -212,7 +212,7 @@
     return-object p0
 .end method
 
-.method public mi()Lorg/bouncycastle/asn1/n;
+.method public li()Lorg/bouncycastle/asn1/n;
     .locals 0
 
     iget-object p0, p0, Lorg/bouncycastle/asn1/x509/ear;->Qua:Lorg/bouncycastle/asn1/n;

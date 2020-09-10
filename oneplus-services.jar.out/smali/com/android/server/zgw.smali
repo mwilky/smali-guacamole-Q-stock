@@ -481,7 +481,7 @@
     return-object v0
 .end method
 
-.method private yl()V
+.method private xl()V
     .locals 4
 
     sget-boolean v0, Lcom/android/server/zgw;->DEBUG_ONEPLUS:Z
@@ -532,31 +532,7 @@
     return-void
 .end method
 
-.method static synthetic you(Lcom/android/server/zgw;I)I
-    .locals 0
-
-    iput p1, p0, Lcom/android/server/zgw;->Rc:I
-
-    return p1
-.end method
-
-.method static synthetic you(Lcom/android/server/zgw;J)J
-    .locals 0
-
-    iput-wide p1, p0, Lcom/android/server/zgw;->Sc:J
-
-    return-wide p1
-.end method
-
-.method static synthetic you(Lcom/android/server/zgw;)V
-    .locals 0
-
-    invoke-direct {p0}, Lcom/android/server/zgw;->dump()V
-
-    return-void
-.end method
-
-.method private zl()V
+.method private yl()V
     .locals 8
 
     invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
@@ -723,7 +699,7 @@
     goto :goto_1
 
     :cond_5
-    invoke-direct {p0}, Lcom/android/server/zgw;->yl()V
+    invoke-direct {p0}, Lcom/android/server/zgw;->xl()V
 
     :goto_1
     return-void
@@ -739,6 +715,30 @@
     throw p0
 .end method
 
+.method static synthetic you(Lcom/android/server/zgw;I)I
+    .locals 0
+
+    iput p1, p0, Lcom/android/server/zgw;->Rc:I
+
+    return p1
+.end method
+
+.method static synthetic you(Lcom/android/server/zgw;J)J
+    .locals 0
+
+    iput-wide p1, p0, Lcom/android/server/zgw;->Sc:J
+
+    return-wide p1
+.end method
+
+.method static synthetic you(Lcom/android/server/zgw;)V
+    .locals 0
+
+    invoke-direct {p0}, Lcom/android/server/zgw;->dump()V
+
+    return-void
+.end method
+
 .method static synthetic zta(Lcom/android/server/zgw;I)I
     .locals 0
 
@@ -750,7 +750,7 @@
 .method static synthetic zta(Lcom/android/server/zgw;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/zgw;->zl()V
+    invoke-direct {p0}, Lcom/android/server/zgw;->yl()V
 
     return-void
 .end method

@@ -76,7 +76,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v2}, Lorg/bouncycastle/asn1/tsu;->Ig()Z
+    invoke-virtual {v2}, Lorg/bouncycastle/asn1/tsu;->Hg()Z
 
     move-result v2
 
@@ -98,7 +98,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v2}, Lorg/bouncycastle/asn1/tsu;->Ig()Z
+    invoke-virtual {v2}, Lorg/bouncycastle/asn1/tsu;->Hg()Z
 
     move-result v2
 
@@ -124,7 +124,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v2}, Lorg/bouncycastle/asn1/tsu;->Ig()Z
+    invoke-virtual {v2}, Lorg/bouncycastle/asn1/tsu;->Hg()Z
 
     move-result v2
 
@@ -137,7 +137,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v2}, Lorg/bouncycastle/asn1/tsu;->Ig()Z
+    invoke-virtual {v2}, Lorg/bouncycastle/asn1/tsu;->Hg()Z
 
     move-result v2
 
@@ -383,7 +383,7 @@
 
 
 # virtual methods
-.method public bi()Lorg/bouncycastle/asn1/x509/bvj;
+.method public ai()Lorg/bouncycastle/asn1/x509/bvj;
     .locals 0
 
     iget-object p0, p0, Lorg/bouncycastle/asn1/x509/ire;->Wta:Lorg/bouncycastle/asn1/x509/bvj;
@@ -391,7 +391,7 @@
     return-object p0
 .end method
 
-.method public oi()Lorg/bouncycastle/asn1/x509/a;
+.method public mi()Lorg/bouncycastle/asn1/x509/a;
     .locals 0
 
     iget-object p0, p0, Lorg/bouncycastle/asn1/x509/ire;->Tua:Lorg/bouncycastle/asn1/x509/a;
@@ -399,7 +399,7 @@
     return-object p0
 .end method
 
-.method public pi()Z
+.method public oi()Z
     .locals 0
 
     iget-boolean p0, p0, Lorg/bouncycastle/asn1/x509/ire;->Uua:Z
@@ -407,7 +407,7 @@
     return p0
 .end method
 
-.method public qi()Z
+.method public pi()Z
     .locals 0
 
     iget-boolean p0, p0, Lorg/bouncycastle/asn1/x509/ire;->Vua:Z
@@ -415,7 +415,7 @@
     return p0
 .end method
 
-.method public ri()Z
+.method public qi()Z
     .locals 0
 
     iget-boolean p0, p0, Lorg/bouncycastle/asn1/x509/ire;->Sua:Z
@@ -423,7 +423,7 @@
     return p0
 .end method
 
-.method public si()Z
+.method public ri()Z
     .locals 0
 
     iget-boolean p0, p0, Lorg/bouncycastle/asn1/x509/ire;->Rua:Z

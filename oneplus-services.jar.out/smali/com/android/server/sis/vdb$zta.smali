@@ -84,7 +84,7 @@
 
     iget-object p0, p0, Lcom/android/server/sis/vdb$zta;->this$0:Lcom/android/server/sis/vdb;
 
-    invoke-virtual {p0}, Lcom/android/server/sis/vdb;->be()V
+    invoke-virtual {p0}, Lcom/android/server/sis/vdb;->ae()V
 
     goto/16 :goto_2
 
@@ -122,7 +122,7 @@
 
     iget-object p1, p0, Lcom/android/server/sis/vdb$zta;->this$0:Lcom/android/server/sis/vdb;
 
-    invoke-virtual {p1}, Lcom/android/server/sis/vdb;->de()V
+    invoke-virtual {p1}, Lcom/android/server/sis/vdb;->ce()V
 
     goto :goto_1
 
@@ -138,7 +138,7 @@
 
     iget-object p0, p0, Lcom/android/server/sis/vdb$zta;->this$0:Lcom/android/server/sis/vdb;
 
-    invoke-virtual {p0}, Lcom/android/server/sis/vdb;->Zd()V
+    invoke-virtual {p0}, Lcom/android/server/sis/vdb;->Yd()V
 
     goto/16 :goto_2
 
@@ -164,7 +164,7 @@
 
     iget-object p0, p0, Lcom/android/server/sis/vdb$zta;->this$0:Lcom/android/server/sis/vdb;
 
-    invoke-virtual {p0}, Lcom/android/server/sis/vdb;->ce()V
+    invoke-virtual {p0}, Lcom/android/server/sis/vdb;->be()V
 
     goto :goto_2
 
@@ -175,7 +175,7 @@
 
     iget-object p0, p0, Lcom/android/server/sis/vdb$zta;->this$0:Lcom/android/server/sis/vdb;
 
-    invoke-virtual {p0}, Lcom/android/server/sis/vdb;->ae()V
+    invoke-virtual {p0}, Lcom/android/server/sis/vdb;->_d()V
 
     goto :goto_2
 
@@ -187,7 +187,7 @@
     :goto_1
     iget-object p0, p0, Lcom/android/server/sis/vdb$zta;->this$0:Lcom/android/server/sis/vdb;
 
-    invoke-virtual {p0}, Lcom/android/server/sis/vdb;->_d()V
+    invoke-virtual {p0}, Lcom/android/server/sis/vdb;->Zd()V
 
     goto :goto_2
 
@@ -208,7 +208,7 @@
 
     iget-object p0, p0, Lcom/android/server/sis/vdb$zta;->this$0:Lcom/android/server/sis/vdb;
 
-    invoke-virtual {p0}, Lcom/android/server/sis/vdb;->de()V
+    invoke-virtual {p0}, Lcom/android/server/sis/vdb;->ce()V
 
     goto :goto_2
 

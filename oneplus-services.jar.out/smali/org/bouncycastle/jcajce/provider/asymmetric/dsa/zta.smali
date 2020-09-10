@@ -55,7 +55,7 @@
 
     if-nez v2, :cond_1
 
-    invoke-static {}, Lorg/bouncycastle/crypto/igw;->gj()Ljava/security/SecureRandom;
+    invoke-static {}, Lorg/bouncycastle/crypto/igw;->fj()Ljava/security/SecureRandom;
 
     move-result-object v2
 

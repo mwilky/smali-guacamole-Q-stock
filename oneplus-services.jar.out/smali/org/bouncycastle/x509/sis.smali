@@ -87,7 +87,7 @@
 
     move-result-object v1
 
-    invoke-virtual {p0}, Lorg/bouncycastle/x509/tsu;->hg()Lorg/bouncycastle/util/dma;
+    invoke-virtual {p0}, Lorg/bouncycastle/x509/tsu;->gg()Lorg/bouncycastle/util/dma;
 
     move-result-object v2
 
@@ -121,7 +121,7 @@
     return p0
 .end method
 
-.method public mg()Ljava/util/Set;
+.method public lg()Ljava/util/Set;
     .locals 0
 
     iget-object p0, p0, Lorg/bouncycastle/x509/sis;->jqa:Ljava/util/Set;

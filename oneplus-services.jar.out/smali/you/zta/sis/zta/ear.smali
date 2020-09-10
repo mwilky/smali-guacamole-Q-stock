@@ -33,7 +33,7 @@
 
 
 # virtual methods
-.method public Vk()[Lyou/zta/sis/zta/wtn;
+.method public Uk()[Lyou/zta/sis/zta/wtn;
     .locals 0
 
     iget-object p0, p0, Lyou/zta/sis/zta/ear;->uHa:[Lyou/zta/sis/zta/wtn;
@@ -41,7 +41,7 @@
     return-object p0
 .end method
 
-.method public Wk()[Lyou/zta/sis/zta/wtn;
+.method public Vk()[Lyou/zta/sis/zta/wtn;
     .locals 0
 
     iget-object p0, p0, Lyou/zta/sis/zta/ear;->vHa:[Lyou/zta/sis/zta/wtn;
@@ -49,7 +49,7 @@
     return-object p0
 .end method
 
-.method public Xk()Lyou/zta/sis/zta/wtn;
+.method public Wk()Lyou/zta/sis/zta/wtn;
     .locals 0
 
     iget-object p0, p0, Lyou/zta/sis/zta/ear;->wHa:Lyou/zta/sis/zta/wtn;

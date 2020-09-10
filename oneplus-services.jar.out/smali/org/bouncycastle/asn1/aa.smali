@@ -29,7 +29,7 @@
 
     sput-object v0, Lorg/bouncycastle/asn1/aa;->zxa:Ljava/util/Map;
 
-    invoke-static {}, Lorg/bouncycastle/asn1/aa;->Mt()Ljava/util/Locale;
+    invoke-static {}, Lorg/bouncycastle/asn1/aa;->Lt()Ljava/util/Locale;
 
     move-result-object v0
 
@@ -46,7 +46,7 @@
     return-void
 .end method
 
-.method private static Mt()Ljava/util/Locale;
+.method private static Lt()Ljava/util/Locale;
     .locals 4
 
     invoke-static {}, Ljava/util/Locale;->getDefault()Ljava/util/Locale;

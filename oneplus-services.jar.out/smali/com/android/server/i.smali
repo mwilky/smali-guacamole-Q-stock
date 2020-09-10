@@ -232,7 +232,7 @@
     return-void
 .end method
 
-.method private Ml()Ljava/lang/String;
+.method private Ll()Ljava/lang/String;
     .locals 3
 
     iget-object p0, p0, Lcom/android/server/i;->mImm:Landroid/view/inputmethod/InputMethodManager;
@@ -302,7 +302,7 @@
     return-object p0
 .end method
 
-.method private Nl()Ljava/lang/String;
+.method private Ml()Ljava/lang/String;
     .locals 2
 
     new-instance v0, Landroid/content/Intent;
@@ -330,7 +330,7 @@
     return-object p0
 .end method
 
-.method private Ol()Ljava/lang/String;
+.method private Nl()Ljava/lang/String;
     .locals 3
 
     const/4 v0, 0x0
@@ -386,7 +386,7 @@
     return-object v0
 .end method
 
-.method private Pl()V
+.method private Ol()V
     .locals 1
 
     iget-object v0, p0, Lcom/android/server/i;->mAppWidgetManager:Landroid/appwidget/AppWidgetManager;
@@ -422,7 +422,7 @@
     return-void
 .end method
 
-.method private Ql()V
+.method private Pl()V
     .locals 5
 
     invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
@@ -474,7 +474,7 @@
     move-object v0, v1
 
     :goto_1
-    invoke-direct {p0}, Lcom/android/server/i;->Ml()Ljava/lang/String;
+    invoke-direct {p0}, Lcom/android/server/i;->Ll()Ljava/lang/String;
 
     move-result-object v2
 
@@ -487,7 +487,7 @@
     invoke-virtual {v0, v2}, Landroid/util/TimingLogger;->addSplit(Ljava/lang/String;)V
 
     :cond_3
-    invoke-direct {p0}, Lcom/android/server/i;->Nl()Ljava/lang/String;
+    invoke-direct {p0}, Lcom/android/server/i;->Ml()Ljava/lang/String;
 
     move-result-object v2
 
@@ -500,7 +500,7 @@
     invoke-virtual {v0, v2}, Landroid/util/TimingLogger;->addSplit(Ljava/lang/String;)V
 
     :cond_4
-    invoke-direct {p0}, Lcom/android/server/i;->Ol()Ljava/lang/String;
+    invoke-direct {p0}, Lcom/android/server/i;->Nl()Ljava/lang/String;
 
     move-result-object v2
 
@@ -581,7 +581,7 @@
     invoke-virtual {v0, v1}, Landroid/util/TimingLogger;->addSplit(Ljava/lang/String;)V
 
     :cond_8
-    invoke-direct {p0}, Lcom/android/server/i;->Pl()V
+    invoke-direct {p0}, Lcom/android/server/i;->Ol()V
 
     if-eqz v0, :cond_9
 
@@ -595,7 +595,7 @@
     return-void
 .end method
 
-.method private Rl()V
+.method private Ql()V
     .locals 2
 
     new-instance v0, Landroid/content/Intent;
@@ -620,7 +620,7 @@
     return-void
 .end method
 
-.method private Sl()V
+.method private Rl()V
     .locals 3
 
     iget-object v0, p0, Lcom/android/server/i;->Gf:Landroid/util/ArrayMap;
@@ -854,7 +854,7 @@
 
     if-nez v0, :cond_0
 
-    invoke-direct {p0}, Lcom/android/server/i;->Ml()Ljava/lang/String;
+    invoke-direct {p0}, Lcom/android/server/i;->Ll()Ljava/lang/String;
 
     move-result-object v0
 
@@ -865,7 +865,7 @@
 
     if-nez v0, :cond_1
 
-    invoke-direct {p0}, Lcom/android/server/i;->Nl()Ljava/lang/String;
+    invoke-direct {p0}, Lcom/android/server/i;->Ml()Ljava/lang/String;
 
     move-result-object v0
 
@@ -876,7 +876,7 @@
 
     if-nez v0, :cond_2
 
-    invoke-direct {p0}, Lcom/android/server/i;->Ol()Ljava/lang/String;
+    invoke-direct {p0}, Lcom/android/server/i;->Nl()Ljava/lang/String;
 
     move-result-object v0
 
@@ -1457,7 +1457,7 @@
 .method static synthetic zta(Lcom/android/server/i;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/i;->Sl()V
+    invoke-direct {p0}, Lcom/android/server/i;->Rl()V
 
     return-void
 .end method
@@ -2076,7 +2076,7 @@
 
     if-eqz v0, :cond_2
 
-    invoke-direct {p0}, Lcom/android/server/i;->Ql()V
+    invoke-direct {p0}, Lcom/android/server/i;->Pl()V
 
     invoke-direct {p0, p1}, Lcom/android/server/i;->eb(Ljava/lang/String;)Z
 
@@ -2445,7 +2445,7 @@
 
     invoke-virtual {p0}, Lcom/android/server/i;->W()V
 
-    invoke-direct {p0}, Lcom/android/server/i;->Sl()V
+    invoke-direct {p0}, Lcom/android/server/i;->Rl()V
 
     iget-object v0, p0, Lcom/android/server/i;->mContext:Landroid/content/Context;
 
@@ -2818,7 +2818,7 @@
     :try_start_0
     iput-object p1, p0, Lcom/android/server/i;->Lf:[I
 
-    invoke-direct {p0}, Lcom/android/server/i;->Sl()V
+    invoke-direct {p0}, Lcom/android/server/i;->Rl()V
 
     monitor-exit p0
 
@@ -2905,7 +2905,7 @@
 .method public sis(Ljava/io/PrintWriter;)V
     .locals 3
 
-    invoke-direct {p0}, Lcom/android/server/i;->Ql()V
+    invoke-direct {p0}, Lcom/android/server/i;->Pl()V
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -3255,11 +3255,11 @@
     :goto_0
     if-eqz p2, :cond_3
 
-    invoke-direct {p0}, Lcom/android/server/i;->Sl()V
+    invoke-direct {p0}, Lcom/android/server/i;->Rl()V
 
     invoke-virtual {p0}, Lcom/android/server/i;->writeConfigFileLocked()V
 
-    invoke-direct {p0}, Lcom/android/server/i;->Rl()V
+    invoke-direct {p0}, Lcom/android/server/i;->Ql()V
 
     :cond_3
     sget-boolean p0, Lcom/android/server/i;->DEBUG_ONEPLUS:Z

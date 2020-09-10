@@ -981,7 +981,7 @@
 
     if-nez v0, :cond_1d
 
-    invoke-static {}, Lcom/android/server/am/OnePlusHighPowerDetector;->Yb()Lcom/android/server/am/ActivityManagerService;
+    invoke-static {}, Lcom/android/server/am/OnePlusHighPowerDetector;->access$2200()Lcom/android/server/am/ActivityManagerService;
 
     move-result-object v1
 

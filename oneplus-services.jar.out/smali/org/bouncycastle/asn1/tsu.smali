@@ -363,7 +363,7 @@
 
 
 # virtual methods
-.method Dg()I
+.method Cg()I
     .locals 0
 
     const/4 p0, 0x3
@@ -371,7 +371,7 @@
     return p0
 .end method
 
-.method public Ig()Z
+.method public Hg()Z
     .locals 1
 
     iget-object p0, p0, Lorg/bouncycastle/asn1/tsu;->value:[B

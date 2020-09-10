@@ -616,7 +616,7 @@
     return-object p0
 
     :cond_0
-    invoke-static {}, Lcom/android/server/engineer/rtg;->Ic()[B
+    invoke-static {}, Lcom/android/server/engineer/rtg;->Hc()[B
 
     move-result-object p0
 
@@ -863,7 +863,7 @@
     return p0
 
     :cond_0
-    invoke-static {}, Lcom/android/server/engineer/rtg;->Hc()Z
+    invoke-static {}, Lcom/android/server/engineer/rtg;->Gc()Z
 
     move-result p0
 
@@ -953,7 +953,7 @@
     return p0
 
     :cond_0
-    invoke-static {}, Lcom/android/server/engineer/rtg;->Jc()Z
+    invoke-static {}, Lcom/android/server/engineer/rtg;->Ic()Z
 
     move-result p0
 

@@ -160,7 +160,7 @@
     return-void
 .end method
 
-.method private Ot()V
+.method private Nt()V
     .locals 3
 
     iget-object v0, p0, Lorg/bouncycastle/crypto/bio/kth;->Kza:[B
@@ -593,7 +593,7 @@
 
     invoke-direct {p0, v1}, Lorg/bouncycastle/crypto/bio/kth;->Hc(I)V
 
-    invoke-direct {p0}, Lorg/bouncycastle/crypto/bio/kth;->Ot()V
+    invoke-direct {p0}, Lorg/bouncycastle/crypto/bio/kth;->Nt()V
 
     :cond_1
     return p1
@@ -604,7 +604,7 @@
 
     invoke-direct {p0, p1, p2}, Lorg/bouncycastle/crypto/bio/kth;->e(J)V
 
-    invoke-direct {p0}, Lorg/bouncycastle/crypto/bio/kth;->Ot()V
+    invoke-direct {p0}, Lorg/bouncycastle/crypto/bio/kth;->Nt()V
 
     iget-object v0, p0, Lorg/bouncycastle/crypto/bio/kth;->Gpa:Lorg/bouncycastle/crypto/rtg;
 

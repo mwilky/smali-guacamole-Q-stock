@@ -540,7 +540,7 @@
 
     iput-boolean p1, p0, Lcom/oneplus/android/server/scene/OemSceneXLinearVibrationMotorController;->mLastEnableAwinic:Z
 
-    const/16 v0, 0xde
+    const/16 v0, 0xdf
 
     const-string v1, "enableXLinearVibrator: "
 

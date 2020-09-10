@@ -97,7 +97,7 @@
 
 
 # virtual methods
-.method public Qi()Ljava/math/BigInteger;
+.method public Pi()Ljava/math/BigInteger;
     .locals 0
 
     iget-object p0, p0, Lyou/zta/you/you/rtg;->h:Ljava/math/BigInteger;
@@ -105,7 +105,7 @@
     return-object p0
 .end method
 
-.method public Ri()Ljava/math/BigInteger;
+.method public Qi()Ljava/math/BigInteger;
     .locals 0
 
     iget-object p0, p0, Lyou/zta/you/you/rtg;->n:Ljava/math/BigInteger;

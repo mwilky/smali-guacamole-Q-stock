@@ -15,44 +15,55 @@
 
 
 # static fields
-.field public static final AE:I = 0x47
+.field public static final AE:I = 0x46
 
-.field public static final DE:I = 0x46
+.field public static final DE:I = 0xf
 
 .field private static final DEBUG:Z
 
-.field public static final EE:I = 0xf
+.field public static final EE:I = 0x1e8
 
-.field public static final GE:I = 0x1e8
+.field public static final GE:I = 0xe6
 
 .field public static final GPU_OUT_OF_MEMORY:I = 0xa8
 
-.field public static final JE:I = 0xe6
+.field public static final JE:I = 0x50
 
-.field public static final KE:I = 0x50
+.field public static final KE:I = 0x2
 
-.field public static final LE:I = 0x2
+.field public static final LE:I = 0x1d7
 
-.field public static final ME:I = 0x1d7
+.field public static final ME:I = 0x1e6
 
-.field public static final NE:I = 0x1e6
+.field public static final NE:I = 0x14c
 
-.field public static final OE:I = 0x14c
+.field public static final OE:I = 0x166
 
-.field public static final QE:I = 0x166
+.field private static final QD:Ljava/lang/String; = "compatibility_config_values"
 
-.field private static final RD:Ljava/lang/String; = "compatibility_config_values"
+.field public static final QE:I = 0x186
 
-.field public static final RE:I = 0x186
+.field private static final RD:Ljava/lang/String; = "/data/system/oneplus_cpt_list.xml"
 
-.field private static final SD:Ljava/lang/String; = "/data/system/oneplus_cpt_list.xml"
-
-.field private static final SE:Ljava/util/Map;
+.field private static final RE:Ljava/util/Map;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Map<",
             "Ljava/lang/String;",
             "Ljava/lang/Integer;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private static final SD:Ljava/lang/String; = "/system/etc/oneplus_cpt_list.xml"
+
+.field private static final SE:Ljava/util/Map;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/Map<",
+            "Ljava/lang/Integer;",
+            "Ljava/lang/String;",
             ">;"
         }
     .end annotation
@@ -60,62 +71,51 @@
 
 .field private static final TAG:Ljava/lang/String; = "OpCompatibilityHelper"
 
-.field private static final TD:Ljava/lang/String; = "/system/etc/oneplus_cpt_list.xml"
+.field private static final iE:Ljava/lang/String; = "/data/system/install_warning_list.xml"
 
-.field private static final TE:Ljava/util/Map;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/Map<",
-            "Ljava/lang/Integer;",
-            "Ljava/lang/String;",
-            ">;"
-        }
-    .end annotation
-.end field
+.field private static final jE:Ljava/lang/String; = "/system/etc/install_warning_list.xml"
 
-.field private static final jE:Ljava/lang/String; = "/data/system/install_warning_list.xml"
+.field private static final kE:Ljava/lang/String; = "CompatConfigList"
 
-.field private static final kE:Ljava/lang/String; = "/system/etc/install_warning_list.xml"
-
-.field private static final lE:Ljava/lang/String; = "CompatConfigList"
+.field private static final lE:Ljava/lang/String; = "disable.install.warning"
 
 .field private static mContext:Landroid/content/Context; = null
 
-.field private static final mE:Ljava/lang/String; = "disable.install.warning"
+.field public static final mE:I = 0x0
 
 .field private static mTotalCount:I = 0x0
 
-.field public static final nE:I = 0x0
+.field public static final nE:I = 0x1
 
-.field public static final oE:I = 0x1
+.field public static final oE:I = 0x14b
 
-.field public static final pE:I = 0x14b
+.field public static final pE:I = 0x6b
 
-.field public static final qE:I = 0x6b
+.field public static final qE:I = 0x5f
 
-.field public static final rE:I = 0x5f
+.field public static final rE:I = 0x1bb
 
 .field private static sConfigLock:Ljava/lang/Object; = null
 
-.field public static final sE:I = 0x1bb
+.field public static final sE:I = 0x1bc
 
-.field public static final tE:I = 0x1bc
+.field public static final tE:I = 0x1bd
 
-.field public static final uE:I = 0x1bd
+.field public static final uE:I = 0x6f
 
-.field public static final vE:I = 0x6f
+.field public static final vE:I = 0x55
 
-.field public static final wE:I = 0x55
+.field public static final wE:I = 0x68
 
-.field public static final xE:I = 0x68
+.field public static final xE:I = 0x4e
 
-.field public static final yE:I = 0x4e
+.field public static final yE:I = 0xd3
 
-.field public static final zE:I = 0xd3
+.field public static final zE:I = 0x47
 
 
 # instance fields
-.field private gE:Landroid/util/SparseArray;
+.field private fE:Landroid/util/SparseArray;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Landroid/util/SparseArray<",
@@ -126,7 +126,7 @@
     .end annotation
 .end field
 
-.field private hE:Ljava/util/Map;
+.field private gE:Ljava/util/Map;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Map<",
@@ -137,7 +137,7 @@
     .end annotation
 .end field
 
-.field private iE:Lcom/oneplus/config/ConfigObserver;
+.field private hE:Lcom/oneplus/config/ConfigObserver;
 
 
 # direct methods
@@ -168,9 +168,9 @@
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    sput-object v0, Lcom/android/server/pm/sis;->SE:Ljava/util/Map;
+    sput-object v0, Lcom/android/server/pm/sis;->RE:Ljava/util/Map;
 
-    sget-object v0, Lcom/android/server/pm/sis;->SE:Ljava/util/Map;
+    sget-object v0, Lcom/android/server/pm/sis;->RE:Ljava/util/Map;
 
     const/4 v1, 0x2
 
@@ -182,7 +182,7 @@
 
     invoke-interface {v0, v3, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    sget-object v0, Lcom/android/server/pm/sis;->SE:Ljava/util/Map;
+    sget-object v0, Lcom/android/server/pm/sis;->RE:Ljava/util/Map;
 
     const/4 v4, 0x1
 
@@ -194,7 +194,7 @@
 
     invoke-interface {v0, v5, v4}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    sget-object v0, Lcom/android/server/pm/sis;->SE:Ljava/util/Map;
+    sget-object v0, Lcom/android/server/pm/sis;->RE:Ljava/util/Map;
 
     const-string v6, "arm64-v8a"
 
@@ -204,17 +204,17 @@
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    sput-object v0, Lcom/android/server/pm/sis;->TE:Ljava/util/Map;
+    sput-object v0, Lcom/android/server/pm/sis;->SE:Ljava/util/Map;
 
-    sget-object v0, Lcom/android/server/pm/sis;->TE:Ljava/util/Map;
+    sget-object v0, Lcom/android/server/pm/sis;->SE:Ljava/util/Map;
 
     invoke-interface {v0, v1, v3}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    sget-object v0, Lcom/android/server/pm/sis;->TE:Ljava/util/Map;
+    sget-object v0, Lcom/android/server/pm/sis;->SE:Ljava/util/Map;
 
     invoke-interface {v0, v4, v5}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    sget-object v0, Lcom/android/server/pm/sis;->TE:Ljava/util/Map;
+    sget-object v0, Lcom/android/server/pm/sis;->SE:Ljava/util/Map;
 
     invoke-interface {v0, v2, v6}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -230,13 +230,13 @@
 
     invoke-direct {v0}, Landroid/util/SparseArray;-><init>()V
 
-    iput-object v0, p0, Lcom/android/server/pm/sis;->gE:Landroid/util/SparseArray;
+    iput-object v0, p0, Lcom/android/server/pm/sis;->fE:Landroid/util/SparseArray;
 
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    iput-object v0, p0, Lcom/android/server/pm/sis;->hE:Ljava/util/Map;
+    iput-object v0, p0, Lcom/android/server/pm/sis;->gE:Ljava/util/Map;
 
     return-void
 .end method
@@ -310,7 +310,7 @@
 
     if-eqz v3, :cond_3
 
-    iget-object p1, p0, Lcom/android/server/pm/sis;->hE:Ljava/util/Map;
+    iget-object p1, p0, Lcom/android/server/pm/sis;->gE:Ljava/util/Map;
 
     invoke-interface {p1, v1}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
 
@@ -318,7 +318,7 @@
 
     if-eqz p1, :cond_2
 
-    iget-object p0, p0, Lcom/android/server/pm/sis;->hE:Ljava/util/Map;
+    iget-object p0, p0, Lcom/android/server/pm/sis;->gE:Ljava/util/Map;
 
     invoke-interface {p0, v1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -343,7 +343,7 @@
     return v0
 
     :cond_3
-    iget-object v3, p0, Lcom/android/server/pm/sis;->hE:Ljava/util/Map;
+    iget-object v3, p0, Lcom/android/server/pm/sis;->gE:Ljava/util/Map;
 
     invoke-interface {v3, v1}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
 
@@ -351,7 +351,7 @@
 
     if-eqz v3, :cond_4
 
-    iget-object v3, p0, Lcom/android/server/pm/sis;->hE:Ljava/util/Map;
+    iget-object v3, p0, Lcom/android/server/pm/sis;->gE:Ljava/util/Map;
 
     invoke-interface {v3, v1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -393,7 +393,7 @@
 
     move-result-object v3
 
-    iget-object v4, p0, Lcom/android/server/pm/sis;->hE:Ljava/util/Map;
+    iget-object v4, p0, Lcom/android/server/pm/sis;->gE:Ljava/util/Map;
 
     invoke-interface {v4, v3}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
 
@@ -414,7 +414,7 @@
 
     move-result-wide v4
 
-    iget-object p0, p0, Lcom/android/server/pm/sis;->hE:Ljava/util/Map;
+    iget-object p0, p0, Lcom/android/server/pm/sis;->gE:Ljava/util/Map;
 
     invoke-interface {p0, v3}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -565,7 +565,7 @@
 
     if-lez v6, :cond_2
 
-    iget-object v6, p0, Lcom/android/server/pm/sis;->hE:Ljava/util/Map;
+    iget-object v6, p0, Lcom/android/server/pm/sis;->gE:Ljava/util/Map;
 
     invoke-static {v9, v10}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
@@ -778,7 +778,7 @@
 
     move-result-object v3
 
-    iget-object v4, p0, Lcom/android/server/pm/sis;->hE:Ljava/util/Map;
+    iget-object v4, p0, Lcom/android/server/pm/sis;->gE:Ljava/util/Map;
 
     invoke-interface {v4, v3}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
 
@@ -799,7 +799,7 @@
 
     move-result-wide v4
 
-    iget-object p0, p0, Lcom/android/server/pm/sis;->hE:Ljava/util/Map;
+    iget-object p0, p0, Lcom/android/server/pm/sis;->gE:Ljava/util/Map;
 
     invoke-interface {p0, v3}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -871,12 +871,12 @@
 
     move-result-wide v1
 
-    iget-object p1, p0, Lcom/android/server/pm/sis;->hE:Ljava/util/Map;
+    iget-object p1, p0, Lcom/android/server/pm/sis;->gE:Ljava/util/Map;
 
     monitor-enter p1
 
     :try_start_0
-    iget-object p0, p0, Lcom/android/server/pm/sis;->hE:Ljava/util/Map;
+    iget-object p0, p0, Lcom/android/server/pm/sis;->gE:Ljava/util/Map;
 
     invoke-static {v1, v2}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
@@ -926,6 +926,391 @@
     add-int/2addr v0, p0
 
     return v0
+.end method
+
+.method private ho()V
+    .locals 8
+
+    new-instance v0, Ljava/io/File;
+
+    const-string v1, "/data/system/oneplus_cpt_list.xml"
+
+    invoke-direct {v0, v1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v0}, Ljava/io/File;->exists()Z
+
+    move-result v1
+
+    const/4 v2, 0x1
+
+    if-nez v1, :cond_1
+
+    new-instance v0, Ljava/io/File;
+
+    const-string v1, "/system/etc/oneplus_cpt_list.xml"
+
+    invoke-direct {v0, v1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v0}, Ljava/io/File;->exists()Z
+
+    move-result v1
+
+    if-nez v1, :cond_0
+
+    return-void
+
+    :cond_0
+    move v1, v2
+
+    goto :goto_0
+
+    :cond_1
+    const/4 v1, 0x0
+
+    :goto_0
+    invoke-direct {p0, v0}, Lcom/android/server/pm/sis;->readFromFile(Ljava/io/File;)Ljava/lang/String;
+
+    move-result-object v0
+
+    if-nez v0, :cond_2
+
+    return-void
+
+    :cond_2
+    sget-object v3, Lcom/android/server/pm/sis;->sConfigLock:Ljava/lang/Object;
+
+    monitor-enter v3
+
+    const/4 v4, 0x0
+
+    :try_start_0
+    iget-object v5, p0, Lcom/android/server/pm/sis;->fE:Landroid/util/SparseArray;
+
+    invoke-virtual {v5}, Landroid/util/SparseArray;->clear()V
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_3
+
+    :try_start_1
+    invoke-static {}, Landroid/util/Xml;->newPullParser()Lorg/xmlpull/v1/XmlPullParser;
+
+    move-result-object v5
+
+    new-instance v6, Ljava/io/StringReader;
+
+    invoke-direct {v6, v0}, Ljava/io/StringReader;-><init>(Ljava/lang/String;)V
+    :try_end_1
+    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_2
+    .catchall {:try_start_1 .. :try_end_1} :catchall_2
+
+    :try_start_2
+    invoke-interface {v5, v6}, Lorg/xmlpull/v1/XmlPullParser;->setInput(Ljava/io/Reader;)V
+
+    invoke-interface {v5}, Lorg/xmlpull/v1/XmlPullParser;->getEventType()I
+
+    move-result v0
+
+    :goto_1
+    if-eq v0, v2, :cond_8
+
+    if-eqz v0, :cond_7
+
+    const/4 v4, 0x2
+
+    if-eq v0, v4, :cond_3
+
+    const/4 v4, 0x3
+
+    goto :goto_3
+
+    :cond_3
+    invoke-interface {v5}, Lorg/xmlpull/v1/XmlPullParser;->getName()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
+
+    move-result-object v0
+
+    invoke-interface {v5}, Lorg/xmlpull/v1/XmlPullParser;->next()I
+
+    array-length v7, v0
+
+    if-eq v7, v4, :cond_4
+
+    goto :goto_3
+
+    :cond_4
+    invoke-direct {p0, v0}, Lcom/android/server/pm/sis;->cno([C)I
+
+    move-result v0
+
+    if-gez v0, :cond_5
+
+    goto :goto_3
+
+    :cond_5
+    iget-object v4, p0, Lcom/android/server/pm/sis;->fE:Landroid/util/SparseArray;
+
+    invoke-virtual {v4, v0}, Landroid/util/SparseArray;->get(I)Ljava/lang/Object;
+
+    move-result-object v4
+
+    check-cast v4, Ljava/util/ArrayList;
+
+    if-nez v4, :cond_6
+
+    new-instance v4, Ljava/util/ArrayList;
+
+    invoke-direct {v4}, Ljava/util/ArrayList;-><init>()V
+
+    invoke-interface {v5}, Lorg/xmlpull/v1/XmlPullParser;->getText()Ljava/lang/String;
+
+    move-result-object v7
+
+    invoke-virtual {v4, v7}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    iget-object v7, p0, Lcom/android/server/pm/sis;->fE:Landroid/util/SparseArray;
+
+    invoke-virtual {v7, v0, v4}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
+
+    goto :goto_2
+
+    :cond_6
+    invoke-interface {v5}, Lorg/xmlpull/v1/XmlPullParser;->getText()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-virtual {v4, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    :goto_2
+    sget v0, Lcom/android/server/pm/sis;->mTotalCount:I
+
+    add-int/2addr v0, v2
+
+    sput v0, Lcom/android/server/pm/sis;->mTotalCount:I
+
+    :cond_7
+    :goto_3
+    invoke-interface {v5}, Lorg/xmlpull/v1/XmlPullParser;->next()I
+
+    move-result v0
+    :try_end_2
+    .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_1
+    .catchall {:try_start_2 .. :try_end_2} :catchall_1
+
+    goto :goto_1
+
+    :cond_8
+    :try_start_3
+    invoke-virtual {v6}, Ljava/io/StringReader;->close()V
+    :try_end_3
+    .catch Ljava/io/IOException; {:try_start_3 .. :try_end_3} :catch_0
+    .catchall {:try_start_3 .. :try_end_3} :catchall_3
+
+    goto :goto_4
+
+    :catch_0
+    move-exception v0
+
+    :try_start_4
+    const-string v2, "OpCompatibilityHelper"
+
+    new-instance v4, Ljava/lang/StringBuilder;
+
+    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v5, "Got execption close permReader. "
+
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/io/IOException;->getMessage()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {v2, v0}, Landroid/util/Slog;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    :goto_4
+    monitor-exit v3
+    :try_end_4
+    .catchall {:try_start_4 .. :try_end_4} :catchall_3
+
+    if-eqz v1, :cond_9
+
+    sget-object v0, Lcom/android/server/pm/sis;->sConfigLock:Ljava/lang/Object;
+
+    monitor-enter v0
+
+    :try_start_5
+    const-string v1, "/data/system/oneplus_cpt_list.xml"
+
+    iget-object v2, p0, Lcom/android/server/pm/sis;->fE:Landroid/util/SparseArray;
+
+    invoke-direct {p0, v1, v2}, Lcom/android/server/pm/sis;->zta(Ljava/lang/String;Landroid/util/SparseArray;)V
+
+    monitor-exit v0
+
+    goto :goto_5
+
+    :catchall_0
+    move-exception p0
+
+    monitor-exit v0
+    :try_end_5
+    .catchall {:try_start_5 .. :try_end_5} :catchall_0
+
+    throw p0
+
+    :cond_9
+    :goto_5
+    return-void
+
+    :catchall_1
+    move-exception p0
+
+    goto :goto_8
+
+    :catch_1
+    move-exception p0
+
+    move-object v4, v6
+
+    goto :goto_6
+
+    :catchall_2
+    move-exception p0
+
+    move-object v6, v4
+
+    goto :goto_8
+
+    :catch_2
+    move-exception p0
+
+    :goto_6
+    :try_start_6
+    const-string v0, "OpCompatibilityHelper"
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v2, "Got execption parsing permissions. "
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p0}, Ljava/lang/Exception;->getMessage()Ljava/lang/String;
+
+    move-result-object p0
+
+    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p0
+
+    invoke-static {v0, p0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+    :try_end_6
+    .catchall {:try_start_6 .. :try_end_6} :catchall_2
+
+    if-eqz v4, :cond_a
+
+    :try_start_7
+    invoke-virtual {v4}, Ljava/io/StringReader;->close()V
+    :try_end_7
+    .catch Ljava/io/IOException; {:try_start_7 .. :try_end_7} :catch_3
+    .catchall {:try_start_7 .. :try_end_7} :catchall_3
+
+    goto :goto_7
+
+    :catch_3
+    move-exception p0
+
+    :try_start_8
+    const-string v0, "OpCompatibilityHelper"
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v2, "Got execption close permReader. "
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p0}, Ljava/io/IOException;->getMessage()Ljava/lang/String;
+
+    move-result-object p0
+
+    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p0
+
+    invoke-static {v0, p0}, Landroid/util/Slog;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    :cond_a
+    :goto_7
+    monitor-exit v3
+    :try_end_8
+    .catchall {:try_start_8 .. :try_end_8} :catchall_3
+
+    return-void
+
+    :goto_8
+    if-eqz v6, :cond_b
+
+    :try_start_9
+    invoke-virtual {v6}, Ljava/io/StringReader;->close()V
+    :try_end_9
+    .catch Ljava/io/IOException; {:try_start_9 .. :try_end_9} :catch_4
+    .catchall {:try_start_9 .. :try_end_9} :catchall_3
+
+    goto :goto_9
+
+    :catch_4
+    move-exception v0
+
+    :try_start_a
+    const-string v1, "OpCompatibilityHelper"
+
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v4, "Got execption close permReader. "
+
+    invoke-virtual {v2, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/io/IOException;->getMessage()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {v1, v0}, Landroid/util/Slog;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    :cond_b
+    :goto_9
+    throw p0
+
+    :catchall_3
+    move-exception p0
+
+    monitor-exit v3
+    :try_end_a
+    .catchall {:try_start_a .. :try_end_a} :catchall_3
+
+    throw p0
 .end method
 
 .method private igw(Lorg/json/JSONArray;)V
@@ -1164,7 +1549,7 @@
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
     :try_start_1
-    iput-object v0, p0, Lcom/android/server/pm/sis;->gE:Landroid/util/SparseArray;
+    iput-object v0, p0, Lcom/android/server/pm/sis;->fE:Landroid/util/SparseArray;
 
     sput v4, Lcom/android/server/pm/sis;->mTotalCount:I
 
@@ -1186,7 +1571,7 @@
     :goto_5
     if-eqz v5, :cond_d
 
-    invoke-direct {p0}, Lcom/android/server/pm/sis;->ko()V
+    invoke-direct {p0}, Lcom/android/server/pm/sis;->jo()V
     :try_end_2
     .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_0
 
@@ -1223,394 +1608,9 @@
 .end method
 
 .method private io()V
-    .locals 8
-
-    new-instance v0, Ljava/io/File;
-
-    const-string v1, "/data/system/oneplus_cpt_list.xml"
-
-    invoke-direct {v0, v1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
-
-    invoke-virtual {v0}, Ljava/io/File;->exists()Z
-
-    move-result v1
-
-    const/4 v2, 0x1
-
-    if-nez v1, :cond_1
-
-    new-instance v0, Ljava/io/File;
-
-    const-string v1, "/system/etc/oneplus_cpt_list.xml"
-
-    invoke-direct {v0, v1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
-
-    invoke-virtual {v0}, Ljava/io/File;->exists()Z
-
-    move-result v1
-
-    if-nez v1, :cond_0
-
-    return-void
-
-    :cond_0
-    move v1, v2
-
-    goto :goto_0
-
-    :cond_1
-    const/4 v1, 0x0
-
-    :goto_0
-    invoke-direct {p0, v0}, Lcom/android/server/pm/sis;->readFromFile(Ljava/io/File;)Ljava/lang/String;
-
-    move-result-object v0
-
-    if-nez v0, :cond_2
-
-    return-void
-
-    :cond_2
-    sget-object v3, Lcom/android/server/pm/sis;->sConfigLock:Ljava/lang/Object;
-
-    monitor-enter v3
-
-    const/4 v4, 0x0
-
-    :try_start_0
-    iget-object v5, p0, Lcom/android/server/pm/sis;->gE:Landroid/util/SparseArray;
-
-    invoke-virtual {v5}, Landroid/util/SparseArray;->clear()V
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_3
-
-    :try_start_1
-    invoke-static {}, Landroid/util/Xml;->newPullParser()Lorg/xmlpull/v1/XmlPullParser;
-
-    move-result-object v5
-
-    new-instance v6, Ljava/io/StringReader;
-
-    invoke-direct {v6, v0}, Ljava/io/StringReader;-><init>(Ljava/lang/String;)V
-    :try_end_1
-    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_2
-    .catchall {:try_start_1 .. :try_end_1} :catchall_2
-
-    :try_start_2
-    invoke-interface {v5, v6}, Lorg/xmlpull/v1/XmlPullParser;->setInput(Ljava/io/Reader;)V
-
-    invoke-interface {v5}, Lorg/xmlpull/v1/XmlPullParser;->getEventType()I
-
-    move-result v0
-
-    :goto_1
-    if-eq v0, v2, :cond_8
-
-    if-eqz v0, :cond_7
-
-    const/4 v4, 0x2
-
-    if-eq v0, v4, :cond_3
-
-    const/4 v4, 0x3
-
-    goto :goto_3
-
-    :cond_3
-    invoke-interface {v5}, Lorg/xmlpull/v1/XmlPullParser;->getName()Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
-
-    move-result-object v0
-
-    invoke-interface {v5}, Lorg/xmlpull/v1/XmlPullParser;->next()I
-
-    array-length v7, v0
-
-    if-eq v7, v4, :cond_4
-
-    goto :goto_3
-
-    :cond_4
-    invoke-direct {p0, v0}, Lcom/android/server/pm/sis;->cno([C)I
-
-    move-result v0
-
-    if-gez v0, :cond_5
-
-    goto :goto_3
-
-    :cond_5
-    iget-object v4, p0, Lcom/android/server/pm/sis;->gE:Landroid/util/SparseArray;
-
-    invoke-virtual {v4, v0}, Landroid/util/SparseArray;->get(I)Ljava/lang/Object;
-
-    move-result-object v4
-
-    check-cast v4, Ljava/util/ArrayList;
-
-    if-nez v4, :cond_6
-
-    new-instance v4, Ljava/util/ArrayList;
-
-    invoke-direct {v4}, Ljava/util/ArrayList;-><init>()V
-
-    invoke-interface {v5}, Lorg/xmlpull/v1/XmlPullParser;->getText()Ljava/lang/String;
-
-    move-result-object v7
-
-    invoke-virtual {v4, v7}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    iget-object v7, p0, Lcom/android/server/pm/sis;->gE:Landroid/util/SparseArray;
-
-    invoke-virtual {v7, v0, v4}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
-
-    goto :goto_2
-
-    :cond_6
-    invoke-interface {v5}, Lorg/xmlpull/v1/XmlPullParser;->getText()Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-virtual {v4, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    :goto_2
-    sget v0, Lcom/android/server/pm/sis;->mTotalCount:I
-
-    add-int/2addr v0, v2
-
-    sput v0, Lcom/android/server/pm/sis;->mTotalCount:I
-
-    :cond_7
-    :goto_3
-    invoke-interface {v5}, Lorg/xmlpull/v1/XmlPullParser;->next()I
-
-    move-result v0
-    :try_end_2
-    .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_1
-    .catchall {:try_start_2 .. :try_end_2} :catchall_1
-
-    goto :goto_1
-
-    :cond_8
-    :try_start_3
-    invoke-virtual {v6}, Ljava/io/StringReader;->close()V
-    :try_end_3
-    .catch Ljava/io/IOException; {:try_start_3 .. :try_end_3} :catch_0
-    .catchall {:try_start_3 .. :try_end_3} :catchall_3
-
-    goto :goto_4
-
-    :catch_0
-    move-exception v0
-
-    :try_start_4
-    const-string v2, "OpCompatibilityHelper"
-
-    new-instance v4, Ljava/lang/StringBuilder;
-
-    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v5, "Got execption close permReader. "
-
-    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0}, Ljava/io/IOException;->getMessage()Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-static {v2, v0}, Landroid/util/Slog;->e(Ljava/lang/String;Ljava/lang/String;)I
-
-    :goto_4
-    monitor-exit v3
-    :try_end_4
-    .catchall {:try_start_4 .. :try_end_4} :catchall_3
-
-    if-eqz v1, :cond_9
-
-    sget-object v0, Lcom/android/server/pm/sis;->sConfigLock:Ljava/lang/Object;
-
-    monitor-enter v0
-
-    :try_start_5
-    const-string v1, "/data/system/oneplus_cpt_list.xml"
-
-    iget-object v2, p0, Lcom/android/server/pm/sis;->gE:Landroid/util/SparseArray;
-
-    invoke-direct {p0, v1, v2}, Lcom/android/server/pm/sis;->zta(Ljava/lang/String;Landroid/util/SparseArray;)V
-
-    monitor-exit v0
-
-    goto :goto_5
-
-    :catchall_0
-    move-exception p0
-
-    monitor-exit v0
-    :try_end_5
-    .catchall {:try_start_5 .. :try_end_5} :catchall_0
-
-    throw p0
-
-    :cond_9
-    :goto_5
-    return-void
-
-    :catchall_1
-    move-exception p0
-
-    goto :goto_8
-
-    :catch_1
-    move-exception p0
-
-    move-object v4, v6
-
-    goto :goto_6
-
-    :catchall_2
-    move-exception p0
-
-    move-object v6, v4
-
-    goto :goto_8
-
-    :catch_2
-    move-exception p0
-
-    :goto_6
-    :try_start_6
-    const-string v0, "OpCompatibilityHelper"
-
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v2, "Got execption parsing permissions. "
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p0}, Ljava/lang/Exception;->getMessage()Ljava/lang/String;
-
-    move-result-object p0
-
-    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p0
-
-    invoke-static {v0, p0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
-    :try_end_6
-    .catchall {:try_start_6 .. :try_end_6} :catchall_2
-
-    if-eqz v4, :cond_a
-
-    :try_start_7
-    invoke-virtual {v4}, Ljava/io/StringReader;->close()V
-    :try_end_7
-    .catch Ljava/io/IOException; {:try_start_7 .. :try_end_7} :catch_3
-    .catchall {:try_start_7 .. :try_end_7} :catchall_3
-
-    goto :goto_7
-
-    :catch_3
-    move-exception p0
-
-    :try_start_8
-    const-string v0, "OpCompatibilityHelper"
-
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v2, "Got execption close permReader. "
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p0}, Ljava/io/IOException;->getMessage()Ljava/lang/String;
-
-    move-result-object p0
-
-    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p0
-
-    invoke-static {v0, p0}, Landroid/util/Slog;->e(Ljava/lang/String;Ljava/lang/String;)I
-
-    :cond_a
-    :goto_7
-    monitor-exit v3
-    :try_end_8
-    .catchall {:try_start_8 .. :try_end_8} :catchall_3
-
-    return-void
-
-    :goto_8
-    if-eqz v6, :cond_b
-
-    :try_start_9
-    invoke-virtual {v6}, Ljava/io/StringReader;->close()V
-    :try_end_9
-    .catch Ljava/io/IOException; {:try_start_9 .. :try_end_9} :catch_4
-    .catchall {:try_start_9 .. :try_end_9} :catchall_3
-
-    goto :goto_9
-
-    :catch_4
-    move-exception v0
-
-    :try_start_a
-    const-string v1, "OpCompatibilityHelper"
-
-    new-instance v2, Ljava/lang/StringBuilder;
-
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v4, "Got execption close permReader. "
-
-    invoke-virtual {v2, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0}, Ljava/io/IOException;->getMessage()Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-static {v1, v0}, Landroid/util/Slog;->e(Ljava/lang/String;Ljava/lang/String;)I
-
-    :cond_b
-    :goto_9
-    throw p0
-
-    :catchall_3
-    move-exception p0
-
-    monitor-exit v3
-    :try_end_a
-    .catchall {:try_start_a .. :try_end_a} :catchall_3
-
-    throw p0
-.end method
-
-.method private jo()V
     .locals 2
 
-    iget-object v0, p0, Lcom/android/server/pm/sis;->hE:Ljava/util/Map;
+    iget-object v0, p0, Lcom/android/server/pm/sis;->gE:Ljava/util/Map;
 
     invoke-interface {v0}, Ljava/util/Map;->clear()V
 
@@ -1648,13 +1648,13 @@
 
     if-nez v0, :cond_0
 
-    invoke-direct {p0}, Lcom/android/server/pm/sis;->ko()V
+    invoke-direct {p0}, Lcom/android/server/pm/sis;->jo()V
 
     :cond_0
     return-void
 .end method
 
-.method private ko()V
+.method private jo()V
     .locals 8
 
     invoke-static {}, Landroid/util/Xml;->newSerializer()Lorg/xmlpull/v1/XmlSerializer;
@@ -1710,7 +1710,7 @@
 
     invoke-interface {v0, v3}, Lorg/xmlpull/v1/XmlSerializer;->text(Ljava/lang/String;)Lorg/xmlpull/v1/XmlSerializer;
 
-    iget-object v3, p0, Lcom/android/server/pm/sis;->hE:Ljava/util/Map;
+    iget-object v3, p0, Lcom/android/server/pm/sis;->gE:Ljava/util/Map;
 
     monitor-enter v3
     :try_end_0
@@ -1718,7 +1718,7 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_2
 
     :try_start_1
-    iget-object p0, p0, Lcom/android/server/pm/sis;->hE:Ljava/util/Map;
+    iget-object p0, p0, Lcom/android/server/pm/sis;->gE:Ljava/util/Map;
 
     invoke-interface {p0}, Ljava/util/Map;->entrySet()Ljava/util/Set;
 
@@ -2779,7 +2779,7 @@
 .method public O(Ljava/lang/String;)I
     .locals 0
 
-    sget-object p0, Lcom/android/server/pm/sis;->SE:Ljava/util/Map;
+    sget-object p0, Lcom/android/server/pm/sis;->RE:Ljava/util/Map;
 
     invoke-interface {p0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -2922,7 +2922,7 @@
 
     :goto_0
     :try_start_0
-    iget-object v4, p0, Lcom/android/server/pm/sis;->gE:Landroid/util/SparseArray;
+    iget-object v4, p0, Lcom/android/server/pm/sis;->fE:Landroid/util/SparseArray;
 
     invoke-virtual {v4}, Landroid/util/SparseArray;->size()I
 
@@ -2930,7 +2930,7 @@
 
     if-ge v3, v4, :cond_0
 
-    iget-object v4, p0, Lcom/android/server/pm/sis;->gE:Landroid/util/SparseArray;
+    iget-object v4, p0, Lcom/android/server/pm/sis;->fE:Landroid/util/SparseArray;
 
     invoke-virtual {v4, v3}, Landroid/util/SparseArray;->keyAt(I)I
 
@@ -2952,7 +2952,7 @@
 
     invoke-virtual {v0, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v5, p0, Lcom/android/server/pm/sis;->gE:Landroid/util/SparseArray;
+    iget-object v5, p0, Lcom/android/server/pm/sis;->fE:Landroid/util/SparseArray;
 
     invoke-virtual {v5, v4}, Landroid/util/SparseArray;->get(I)Ljava/lang/Object;
 
@@ -2989,12 +2989,12 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
-    iget-object v3, p0, Lcom/android/server/pm/sis;->hE:Ljava/util/Map;
+    iget-object v3, p0, Lcom/android/server/pm/sis;->gE:Ljava/util/Map;
 
     monitor-enter v3
 
     :try_start_1
-    iget-object v1, p0, Lcom/android/server/pm/sis;->hE:Ljava/util/Map;
+    iget-object v1, p0, Lcom/android/server/pm/sis;->gE:Ljava/util/Map;
 
     invoke-interface {v1}, Ljava/util/Map;->size()I
 
@@ -3006,7 +3006,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object p0, p0, Lcom/android/server/pm/sis;->hE:Ljava/util/Map;
+    iget-object p0, p0, Lcom/android/server/pm/sis;->gE:Ljava/util/Map;
 
     invoke-interface {p0}, Ljava/util/Map;->entrySet()Ljava/util/Set;
 
@@ -3161,7 +3161,7 @@
     monitor-enter v1
 
     :try_start_0
-    iget-object v2, p0, Lcom/android/server/pm/sis;->gE:Landroid/util/SparseArray;
+    iget-object v2, p0, Lcom/android/server/pm/sis;->fE:Landroid/util/SparseArray;
 
     invoke-virtual {v2, p1}, Landroid/util/SparseArray;->indexOfKey(I)I
 
@@ -3169,7 +3169,7 @@
 
     if-ltz v2, :cond_3
 
-    iget-object p0, p0, Lcom/android/server/pm/sis;->gE:Landroid/util/SparseArray;
+    iget-object p0, p0, Lcom/android/server/pm/sis;->fE:Landroid/util/SparseArray;
 
     invoke-virtual {p0, p1}, Landroid/util/SparseArray;->get(I)Ljava/lang/Object;
 
@@ -3249,9 +3249,9 @@
 
     invoke-direct {v0, v1, v3, v2, v4}, Lcom/oneplus/config/ConfigObserver;-><init>(Landroid/content/Context;Landroid/os/Handler;Lcom/oneplus/config/ConfigObserver$ConfigUpdater;Ljava/lang/String;)V
 
-    iput-object v0, p0, Lcom/android/server/pm/sis;->iE:Lcom/oneplus/config/ConfigObserver;
+    iput-object v0, p0, Lcom/android/server/pm/sis;->hE:Lcom/oneplus/config/ConfigObserver;
 
-    iget-object p0, p0, Lcom/android/server/pm/sis;->iE:Lcom/oneplus/config/ConfigObserver;
+    iget-object p0, p0, Lcom/android/server/pm/sis;->hE:Lcom/oneplus/config/ConfigObserver;
 
     invoke-virtual {p0}, Lcom/oneplus/config/ConfigObserver;->register()V
 
@@ -3263,7 +3263,7 @@
 
     sput-object p1, Lcom/android/server/pm/sis;->mContext:Landroid/content/Context;
 
-    invoke-direct {p0}, Lcom/android/server/pm/sis;->io()V
+    invoke-direct {p0}, Lcom/android/server/pm/sis;->ho()V
 
     const/4 p1, 0x1
 
@@ -3279,7 +3279,7 @@
 
     if-eqz p1, :cond_0
 
-    invoke-direct {p0}, Lcom/android/server/pm/sis;->jo()V
+    invoke-direct {p0}, Lcom/android/server/pm/sis;->io()V
 
     :cond_0
     sget-boolean p1, Lcom/android/server/pm/sis;->DEBUG:Z
@@ -3317,7 +3317,7 @@
     monitor-enter v0
 
     :try_start_0
-    iget-object v1, p0, Lcom/android/server/pm/sis;->gE:Landroid/util/SparseArray;
+    iget-object v1, p0, Lcom/android/server/pm/sis;->fE:Landroid/util/SparseArray;
 
     invoke-virtual {v1, p1}, Landroid/util/SparseArray;->indexOfKey(I)I
 
@@ -3325,7 +3325,7 @@
 
     if-ltz v1, :cond_1
 
-    iget-object p0, p0, Lcom/android/server/pm/sis;->gE:Landroid/util/SparseArray;
+    iget-object p0, p0, Lcom/android/server/pm/sis;->fE:Landroid/util/SparseArray;
 
     invoke-virtual {p0, p1}, Landroid/util/SparseArray;->get(I)Ljava/lang/Object;
 
@@ -3365,7 +3365,7 @@
 .method public u(I)Ljava/lang/String;
     .locals 0
 
-    sget-object p0, Lcom/android/server/pm/sis;->TE:Ljava/util/Map;
+    sget-object p0, Lcom/android/server/pm/sis;->SE:Ljava/util/Map;
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 

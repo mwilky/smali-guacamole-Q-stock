@@ -86,7 +86,7 @@
 .method public zta(Lorg/bouncycastle/crypto/bvj;)V
     .locals 3
 
-    invoke-virtual {p1}, Lorg/bouncycastle/crypto/bvj;->hj()Ljava/security/SecureRandom;
+    invoke-virtual {p1}, Lorg/bouncycastle/crypto/bvj;->gj()Ljava/security/SecureRandom;
 
     move-result-object v0
 

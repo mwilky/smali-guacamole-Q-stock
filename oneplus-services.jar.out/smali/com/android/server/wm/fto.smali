@@ -18,9 +18,9 @@
 
 
 # instance fields
-.field private KG:I
+.field private JG:I
 
-.field private MG:F
+.field private LG:F
 
 .field final synthetic this$0:Lcom/android/server/wm/cgv;
 
@@ -74,13 +74,13 @@
     :cond_0
     iget-object p1, p0, Lcom/android/server/wm/fto;->this$0:Lcom/android/server/wm/cgv;
 
-    iget v0, p0, Lcom/android/server/wm/fto;->KG:I
+    iget v0, p0, Lcom/android/server/wm/fto;->JG:I
 
     invoke-virtual {p2}, Landroid/view/MotionEvent;->getRawX()F
 
     move-result p2
 
-    iget v2, p0, Lcom/android/server/wm/fto;->MG:F
+    iget v2, p0, Lcom/android/server/wm/fto;->LG:F
 
     sub-float/2addr p2, v2
 
@@ -226,13 +226,13 @@
 
     invoke-static {p1, v0}, Lcom/android/server/wm/cgv;->sis(Lcom/android/server/wm/cgv;I)I
 
-    iput v0, p0, Lcom/android/server/wm/fto;->KG:I
+    iput v0, p0, Lcom/android/server/wm/fto;->JG:I
 
     invoke-virtual {p2}, Landroid/view/MotionEvent;->getRawX()F
 
     move-result p1
 
-    iput p1, p0, Lcom/android/server/wm/fto;->MG:F
+    iput p1, p0, Lcom/android/server/wm/fto;->LG:F
 
     return v1
 .end method

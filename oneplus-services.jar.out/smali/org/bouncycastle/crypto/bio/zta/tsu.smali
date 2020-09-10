@@ -240,7 +240,7 @@
     return-void
 .end method
 
-.method public static nj()[B
+.method public static mj()[B
     .locals 3
 
     const/16 v0, 0x10
@@ -252,6 +252,22 @@
     const/16 v2, -0x80
 
     aput-byte v2, v0, v1
+
+    return-object v0
+.end method
+
+.method public static nj()[I
+    .locals 3
+
+    const/4 v0, 0x4
+
+    new-array v0, v0, [I
+
+    const/4 v1, 0x0
+
+    const/high16 v2, -0x80000000
+
+    aput v2, v0, v1
 
     return-object v0
 .end method
@@ -270,18 +286,18 @@
     return-object v0
 .end method
 
-.method public static oj()[I
-    .locals 3
+.method public static oj()[J
+    .locals 4
 
-    const/4 v0, 0x4
+    const/4 v0, 0x2
 
-    new-array v0, v0, [I
+    new-array v0, v0, [J
 
     const/4 v1, 0x0
 
-    const/high16 v2, -0x80000000
+    const-wide/high16 v2, -0x8000000000000000L
 
-    aput v2, v0, v1
+    aput-wide v2, v0, v1
 
     return-object v0
 .end method
@@ -295,7 +311,7 @@
 
     const/4 v1, 0x0
 
-    const-wide/high16 v2, -0x8000000000000000L
+    const-wide/high16 v2, 0x4000000000000000L    # 2.0
 
     aput-wide v2, v0, v1
 
@@ -312,22 +328,6 @@
     const/4 v1, 0x0
 
     invoke-static {p0, v1, v0}, Lorg/bouncycastle/util/igw;->zta([BI[I)V
-
-    return-object v0
-.end method
-
-.method public static qj()[J
-    .locals 4
-
-    const/4 v0, 0x2
-
-    new-array v0, v0, [J
-
-    const/4 v1, 0x0
-
-    const-wide/high16 v2, 0x4000000000000000L    # 2.0
-
-    aput-wide v2, v0, v1
 
     return-object v0
 .end method

@@ -121,7 +121,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     :try_start_0
-    invoke-virtual {p1}, Lorg/bouncycastle/asn1/x509/c;->xh()Lorg/bouncycastle/asn1/vdb;
+    invoke-virtual {p1}, Lorg/bouncycastle/asn1/x509/c;->wh()Lorg/bouncycastle/asn1/vdb;
 
     move-result-object v0
 
@@ -410,7 +410,7 @@
 
 
 # virtual methods
-.method Gj()Lorg/bouncycastle/crypto/wtn/oif;
+.method Fj()Lorg/bouncycastle/crypto/wtn/oif;
     .locals 0
 
     iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dsa/BCDSAPublicKey;->CEa:Lorg/bouncycastle/crypto/wtn/oif;

@@ -28,7 +28,7 @@
 
 
 # virtual methods
-.method Zi()Lorg/bouncycastle/asn1/ugm;
+.method Yi()Lorg/bouncycastle/asn1/ugm;
     .locals 1
 
     new-instance v0, Lorg/bouncycastle/asn1/E;
@@ -40,7 +40,7 @@
     return-object v0
 .end method
 
-.method _i()Lorg/bouncycastle/asn1/ugm;
+.method Zi()Lorg/bouncycastle/asn1/ugm;
     .locals 1
 
     new-instance v0, Lorg/bouncycastle/asn1/W;
@@ -52,7 +52,7 @@
     return-object v0
 .end method
 
-.method protected aj()V
+.method protected _i()V
     .locals 2
     .annotation system Ldalvik/annotation/Throws;
         value = {

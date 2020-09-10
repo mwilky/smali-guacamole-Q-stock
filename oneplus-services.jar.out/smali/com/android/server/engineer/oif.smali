@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/server/engineer/bvj;->Sc()V
+    value = Lcom/android/server/engineer/bvj;->Rc()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -52,7 +52,7 @@
 
     iget-object v0, p0, Lcom/android/server/engineer/oif;->this$0:Lcom/android/server/engineer/bvj;
 
-    invoke-virtual {v0}, Lcom/android/server/engineer/bvj;->Qc()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/android/server/engineer/bvj;->Pc()Ljava/lang/String;
 
     move-result-object v0
 
@@ -98,7 +98,7 @@
 
     iget-object p0, p0, Lcom/android/server/engineer/oif;->this$0:Lcom/android/server/engineer/bvj;
 
-    invoke-virtual {p0}, Lcom/android/server/engineer/bvj;->Rc()V
+    invoke-virtual {p0}, Lcom/android/server/engineer/bvj;->Qc()V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 

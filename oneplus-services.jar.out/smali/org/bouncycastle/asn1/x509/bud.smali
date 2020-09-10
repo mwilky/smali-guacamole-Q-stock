@@ -2077,7 +2077,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lorg/bouncycastle/asn1/x509/vju;->zi()Lorg/bouncycastle/asn1/bvj;
+    invoke-virtual {v0}, Lorg/bouncycastle/asn1/x509/vju;->yi()Lorg/bouncycastle/asn1/bvj;
 
     move-result-object v1
 

@@ -649,7 +649,7 @@
     return-void
 .end method
 
-.method private Tl()Z
+.method private Sl()Z
     .locals 7
 
     const/4 v0, 0x1
@@ -1527,7 +1527,7 @@
 .method static synthetic you(Lcom/android/server/l;)Z
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/l;->Tl()Z
+    invoke-direct {p0}, Lcom/android/server/l;->Sl()Z
 
     move-result p0
 
@@ -3747,7 +3747,7 @@
 
     iget-object p1, p0, Lcom/android/server/l;->Ig:Lcom/android/server/power/you;
 
-    invoke-virtual {p1}, Lcom/android/server/power/you;->Xc()V
+    invoke-virtual {p1}, Lcom/android/server/power/you;->Wc()V
 
     iget-object p1, p0, Lcom/android/server/l;->mContext:Landroid/content/Context;
 

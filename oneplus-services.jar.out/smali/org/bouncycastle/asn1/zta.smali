@@ -266,7 +266,7 @@
 
 
 # virtual methods
-.method Dg()I
+.method Cg()I
     .locals 2
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -299,7 +299,7 @@
     return v0
 .end method
 
-.method public Gg()I
+.method public Fg()I
     .locals 0
 
     iget p0, p0, Lorg/bouncycastle/asn1/zta;->tag:I
@@ -445,7 +445,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
 
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/zta;->Gg()I
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/zta;->Fg()I
 
     move-result v1
 

@@ -53,11 +53,11 @@
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lyou/zta/sis/zta/ear;->Vk()[Lyou/zta/sis/zta/wtn;
+    invoke-virtual {v1}, Lyou/zta/sis/zta/ear;->Uk()[Lyou/zta/sis/zta/wtn;
 
     move-result-object v2
 
-    invoke-virtual {v1}, Lyou/zta/sis/zta/ear;->Wk()[Lyou/zta/sis/zta/wtn;
+    invoke-virtual {v1}, Lyou/zta/sis/zta/ear;->Vk()[Lyou/zta/sis/zta/wtn;
 
     move-result-object v1
 

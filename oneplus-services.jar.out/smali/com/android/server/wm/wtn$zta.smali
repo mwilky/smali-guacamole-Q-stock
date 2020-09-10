@@ -493,7 +493,7 @@
 
 
 # virtual methods
-.method public ee()V
+.method public de()V
     .locals 2
 
     iget-object v0, p0, Lcom/android/server/wm/wtn$zta;->dR:Ljava/util/ArrayList;
@@ -669,7 +669,7 @@
 
     const/4 v0, 0x1
 
-    const v1, 0x50d0099
+    const v1, 0x50d00a1
 
     if-eq p1, v0, :cond_1
 
@@ -684,7 +684,7 @@
     :cond_0
     iget-object p1, p0, Lcom/android/server/wm/wtn$zta;->mContext:Landroid/content/Context;
 
-    const v0, 0x50d0094
+    const v0, 0x50d009c    # 6.6299E-36f
 
     invoke-virtual {p1, v0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -933,7 +933,7 @@
     return-void
 
     :cond_1
-    invoke-static {}, Lcom/oneplus/android/server/scene/ivd;->wf()Ljava/lang/String;
+    invoke-static {}, Lcom/oneplus/android/server/scene/ivd;->vf()Ljava/lang/String;
 
     move-result-object v4
 
@@ -1112,7 +1112,7 @@
     :cond_4
     iget-object v4, p0, Lcom/android/server/wm/wtn$zta;->mContext:Landroid/content/Context;
 
-    const v6, 0x50d0066
+    const v6, 0x50d006e
 
     new-array v7, v2, [Ljava/lang/Object;
 
@@ -1162,7 +1162,7 @@
 
     iget-object v9, p0, Lcom/android/server/wm/wtn$zta;->mContext:Landroid/content/Context;
 
-    const v11, 0x50d0064
+    const v11, 0x50d006c
 
     invoke-virtual {v9, v11}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1208,7 +1208,7 @@
 
     iget-object v7, p0, Lcom/android/server/wm/wtn$zta;->mContext:Landroid/content/Context;
 
-    const v8, 0x50d0065
+    const v8, 0x50d006d
 
     invoke-virtual {v7, v8}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1230,7 +1230,7 @@
 
     iget-object v7, p0, Lcom/android/server/wm/wtn$zta;->mContext:Landroid/content/Context;
 
-    const v8, 0x50d0067
+    const v8, 0x50d006f
 
     invoke-virtual {v7, v8}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1320,7 +1320,7 @@
 .end method
 
 .method public startEvaluateGameMode(Lcom/android/server/wm/ActivityRecord;Lcom/android/server/wm/ActivityRecord;)V
-    .locals 6
+    .locals 7
 
     iget-object p1, p0, Lcom/android/server/wm/wtn$zta;->ZQ:Lcom/android/server/wm/ActivityStackSupervisor;
 
@@ -1362,7 +1362,23 @@
 
     iget-object v3, p0, Lcom/android/server/wm/wtn$zta;->dR:Ljava/util/ArrayList;
 
-    iget-object v4, p2, Lcom/android/server/wm/ActivityRecord;->packageName:Ljava/lang/String;
+    new-instance v4, Ljava/lang/StringBuilder;
+
+    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
+
+    iget-object v5, p2, Lcom/android/server/wm/ActivityRecord;->packageName:Ljava/lang/String;
+
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object v5, p2, Lcom/android/server/wm/ActivityRecord;->appInfo:Landroid/content/pm/ApplicationInfo;
+
+    iget v5, v5, Landroid/content/pm/ApplicationInfo;->uid:I
+
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v4
 
     invoke-virtual {v3, v4}, Ljava/util/ArrayList;->contains(Ljava/lang/Object;)Z
 
@@ -1372,7 +1388,23 @@
 
     iget-object v3, p0, Lcom/android/server/wm/wtn$zta;->dR:Ljava/util/ArrayList;
 
-    iget-object v4, p2, Lcom/android/server/wm/ActivityRecord;->packageName:Ljava/lang/String;
+    new-instance v4, Ljava/lang/StringBuilder;
+
+    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
+
+    iget-object v5, p2, Lcom/android/server/wm/ActivityRecord;->packageName:Ljava/lang/String;
+
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object v5, p2, Lcom/android/server/wm/ActivityRecord;->appInfo:Landroid/content/pm/ApplicationInfo;
+
+    iget v5, v5, Landroid/content/pm/ApplicationInfo;->uid:I
+
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v4
 
     invoke-virtual {v3, v4}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
@@ -1399,7 +1431,23 @@
     :cond_3
     iget-object v3, p0, Lcom/android/server/wm/wtn$zta;->dR:Ljava/util/ArrayList;
 
-    iget-object v4, p2, Lcom/android/server/wm/ActivityRecord;->packageName:Ljava/lang/String;
+    new-instance v4, Ljava/lang/StringBuilder;
+
+    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
+
+    iget-object v5, p2, Lcom/android/server/wm/ActivityRecord;->packageName:Ljava/lang/String;
+
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object v5, p2, Lcom/android/server/wm/ActivityRecord;->appInfo:Landroid/content/pm/ApplicationInfo;
+
+    iget v5, v5, Landroid/content/pm/ApplicationInfo;->uid:I
+
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v4
 
     invoke-virtual {v3, v4}, Ljava/util/ArrayList;->remove(Ljava/lang/Object;)Z
 
@@ -1424,7 +1472,23 @@
 
     iget-object v4, p0, Lcom/android/server/wm/wtn$zta;->eR:Ljava/util/ArrayList;
 
-    iget-object v5, p2, Lcom/android/server/wm/ActivityRecord;->packageName:Ljava/lang/String;
+    new-instance v5, Ljava/lang/StringBuilder;
+
+    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
+
+    iget-object v6, p2, Lcom/android/server/wm/ActivityRecord;->packageName:Ljava/lang/String;
+
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object v6, p2, Lcom/android/server/wm/ActivityRecord;->appInfo:Landroid/content/pm/ApplicationInfo;
+
+    iget v6, v6, Landroid/content/pm/ApplicationInfo;->uid:I
+
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v5
 
     invoke-virtual {v4, v5}, Ljava/util/ArrayList;->contains(Ljava/lang/Object;)Z
 
@@ -1434,7 +1498,23 @@
 
     iget-object v4, p0, Lcom/android/server/wm/wtn$zta;->eR:Ljava/util/ArrayList;
 
-    iget-object v5, p2, Lcom/android/server/wm/ActivityRecord;->packageName:Ljava/lang/String;
+    new-instance v5, Ljava/lang/StringBuilder;
+
+    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
+
+    iget-object v6, p2, Lcom/android/server/wm/ActivityRecord;->packageName:Ljava/lang/String;
+
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object v6, p2, Lcom/android/server/wm/ActivityRecord;->appInfo:Landroid/content/pm/ApplicationInfo;
+
+    iget v6, v6, Landroid/content/pm/ApplicationInfo;->uid:I
+
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v5
 
     invoke-virtual {v4, v5}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
@@ -1443,7 +1523,23 @@
     :cond_5
     iget-object v4, p0, Lcom/android/server/wm/wtn$zta;->eR:Ljava/util/ArrayList;
 
-    iget-object v5, p2, Lcom/android/server/wm/ActivityRecord;->packageName:Ljava/lang/String;
+    new-instance v5, Ljava/lang/StringBuilder;
+
+    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
+
+    iget-object v6, p2, Lcom/android/server/wm/ActivityRecord;->packageName:Ljava/lang/String;
+
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object v6, p2, Lcom/android/server/wm/ActivityRecord;->appInfo:Landroid/content/pm/ApplicationInfo;
+
+    iget v6, v6, Landroid/content/pm/ApplicationInfo;->uid:I
+
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v5
 
     invoke-virtual {v4, v5}, Ljava/util/ArrayList;->remove(Ljava/lang/Object;)Z
 
@@ -1472,7 +1568,23 @@
     :goto_4
     if-eqz p1, :cond_9
 
-    iget-object v0, p2, Lcom/android/server/wm/ActivityRecord;->packageName:Ljava/lang/String;
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    iget-object v2, p2, Lcom/android/server/wm/ActivityRecord;->packageName:Ljava/lang/String;
+
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object v2, p2, Lcom/android/server/wm/ActivityRecord;->appInfo:Landroid/content/pm/ApplicationInfo;
+
+    iget v2, v2, Landroid/content/pm/ApplicationInfo;->uid:I
+
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
 
     iput-object v0, p0, Lcom/android/server/wm/wtn$zta;->aR:Ljava/lang/String;
 
@@ -1722,7 +1834,7 @@
 
     if-ne p1, v1, :cond_3
 
-    invoke-static {}, Lcom/oneplus/android/server/scene/ivd;->wf()Ljava/lang/String;
+    invoke-static {}, Lcom/oneplus/android/server/scene/ivd;->vf()Ljava/lang/String;
 
     move-result-object v1
 

@@ -263,7 +263,7 @@
 
 
 # virtual methods
-.method Dg()I
+.method Cg()I
     .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -280,7 +280,7 @@
     return p0
 .end method
 
-.method Eg()Lorg/bouncycastle/asn1/vdb;
+.method Dg()Lorg/bouncycastle/asn1/vdb;
     .locals 7
 
     instance-of v0, p0, Lorg/bouncycastle/asn1/r;
@@ -309,7 +309,7 @@
     return-object v0
 .end method
 
-.method public Jg()Lorg/bouncycastle/asn1/vdb;
+.method public Ig()Lorg/bouncycastle/asn1/vdb;
     .locals 0
 
     iget-object p0, p0, Lorg/bouncycastle/asn1/igw;->fsa:Lorg/bouncycastle/asn1/vdb;
@@ -317,7 +317,7 @@
     return-object p0
 .end method
 
-.method public Kg()Lorg/bouncycastle/asn1/bvj;
+.method public Jg()Lorg/bouncycastle/asn1/bvj;
     .locals 0
 
     iget-object p0, p0, Lorg/bouncycastle/asn1/igw;->dsa:Lorg/bouncycastle/asn1/bvj;
@@ -325,7 +325,7 @@
     return-object p0
 .end method
 
-.method public Lg()Lorg/bouncycastle/asn1/vdb;
+.method public Kg()Lorg/bouncycastle/asn1/vdb;
     .locals 0
 
     iget-object p0, p0, Lorg/bouncycastle/asn1/igw;->gsa:Lorg/bouncycastle/asn1/vdb;
@@ -333,7 +333,7 @@
     return-object p0
 .end method
 
-.method public Mg()Lorg/bouncycastle/asn1/ywr;
+.method public Lg()Lorg/bouncycastle/asn1/ywr;
     .locals 0
 
     iget-object p0, p0, Lorg/bouncycastle/asn1/igw;->esa:Lorg/bouncycastle/asn1/ywr;

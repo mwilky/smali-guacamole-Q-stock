@@ -94,12 +94,12 @@
 
     invoke-virtual {p1}, Lcom/android/server/ServiceThread;->start()V
 
-    invoke-direct {p0}, Lcom/android/server/secrecy/SecrecyService;->Zl()V
+    invoke-direct {p0}, Lcom/android/server/secrecy/SecrecyService;->Yl()V
 
     return-void
 .end method
 
-.method private Zl()V
+.method private Yl()V
     .locals 2
 
     new-instance v0, Lcom/android/server/secrecy/you/you;
@@ -211,7 +211,7 @@
 
     iget-object p3, p0, Lcom/android/server/secrecy/SecrecyService;->mPolicyManager:Lcom/android/server/secrecy/zta/sis;
 
-    invoke-virtual {p3}, Lcom/android/server/secrecy/zta/sis;->Fd()Lcom/android/server/secrecy/zta/zta;
+    invoke-virtual {p3}, Lcom/android/server/secrecy/zta/sis;->Ed()Lcom/android/server/secrecy/zta/zta;
 
     move-result-object p3
 
@@ -276,7 +276,7 @@
 
     iget-object p0, p0, Lcom/android/server/secrecy/SecrecyService;->mPolicyManager:Lcom/android/server/secrecy/zta/sis;
 
-    invoke-virtual {p0}, Lcom/android/server/secrecy/zta/sis;->Fd()Lcom/android/server/secrecy/zta/zta;
+    invoke-virtual {p0}, Lcom/android/server/secrecy/zta/sis;->Ed()Lcom/android/server/secrecy/zta/zta;
 
     move-result-object p0
 
@@ -293,7 +293,7 @@
 
     iget-object p0, p0, Lcom/android/server/secrecy/SecrecyService;->mPolicyManager:Lcom/android/server/secrecy/zta/sis;
 
-    invoke-virtual {p0}, Lcom/android/server/secrecy/zta/sis;->Fd()Lcom/android/server/secrecy/zta/zta;
+    invoke-virtual {p0}, Lcom/android/server/secrecy/zta/sis;->Ed()Lcom/android/server/secrecy/zta/zta;
 
     move-result-object p0
 

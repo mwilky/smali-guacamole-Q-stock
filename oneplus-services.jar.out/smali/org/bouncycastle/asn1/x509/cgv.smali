@@ -244,7 +244,7 @@
     return-object p0
 .end method
 
-.method public wi()Lorg/bouncycastle/asn1/bio;
+.method public vi()Lorg/bouncycastle/asn1/bio;
     .locals 0
 
     iget-object p0, p0, Lorg/bouncycastle/asn1/x509/cgv;->Fva:Lorg/bouncycastle/asn1/bio;
@@ -252,7 +252,7 @@
     return-object p0
 .end method
 
-.method public xi()Lorg/bouncycastle/asn1/n;
+.method public wi()Lorg/bouncycastle/asn1/n;
     .locals 0
 
     iget-object p0, p0, Lorg/bouncycastle/asn1/x509/cgv;->Hva:Lorg/bouncycastle/asn1/n;
@@ -260,7 +260,7 @@
     return-object p0
 .end method
 
-.method public yi()Lorg/bouncycastle/asn1/bvj;
+.method public xi()Lorg/bouncycastle/asn1/bvj;
     .locals 0
 
     iget-object p0, p0, Lorg/bouncycastle/asn1/x509/cgv;->Gva:Lorg/bouncycastle/asn1/bvj;

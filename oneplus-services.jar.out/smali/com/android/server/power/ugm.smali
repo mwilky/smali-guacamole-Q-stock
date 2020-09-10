@@ -33,9 +33,11 @@
 
 .field private static final Td:Ljava/lang/String; = "ProcessManagement"
 
+.field private static final YL:Z = false
+
 .field private static final ZL:Z = false
 
-.field private static final _L:Z = false
+.field private static _L:Z = false
 
 .field private static final aM:I = 0x1
 
@@ -51,7 +53,7 @@
 
 
 # instance fields
-.field private FL:Ljava/util/HashMap;
+.field private EL:Ljava/util/HashMap;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/HashMap<",
@@ -63,9 +65,9 @@
     .end annotation
 .end field
 
-.field private GL:Z
+.field private FL:Z
 
-.field private HL:Ljava/util/HashMap;
+.field private GL:Ljava/util/HashMap;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/HashMap<",
@@ -77,9 +79,9 @@
     .end annotation
 .end field
 
-.field private IL:Z
+.field private HL:Z
 
-.field private final KL:Ljava/util/ArrayList;
+.field private final IL:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/ArrayList<",
@@ -89,7 +91,7 @@
     .end annotation
 .end field
 
-.field private LL:Ljava/util/List;
+.field private KL:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
@@ -99,11 +101,11 @@
     .end annotation
 .end field
 
-.field private ML:Lcom/oneplus/config/ConfigObserver;
+.field private LL:Lcom/oneplus/config/ConfigObserver;
 
-.field private NL:Z
+.field private ML:Z
 
-.field private OL:Ljava/util/List;
+.field private NL:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
@@ -113,7 +115,7 @@
     .end annotation
 .end field
 
-.field private final PL:Ljava/util/HashMap;
+.field private final OL:Ljava/util/HashMap;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/HashMap<",
@@ -125,15 +127,15 @@
     .end annotation
 .end field
 
-.field private QL:I
+.field private PL:I
 
-.field RL:[I
+.field QL:[I
 
-.field private SL:Z
+.field private RL:Z
 
-.field TL:Ljava/lang/String;
+.field SL:Ljava/lang/String;
 
-.field private UL:Ljava/util/List;
+.field private TL:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
@@ -143,7 +145,7 @@
     .end annotation
 .end field
 
-.field private VL:Ljava/util/HashMap;
+.field private UL:Ljava/util/HashMap;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/HashMap<",
@@ -155,9 +157,9 @@
     .end annotation
 .end field
 
-.field private WL:Z
+.field private VL:Z
 
-.field private XL:Ljava/util/List;
+.field private WL:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
@@ -167,7 +169,7 @@
     .end annotation
 .end field
 
-.field private YL:Ljava/util/List;
+.field private XL:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
@@ -194,11 +196,25 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 1
+    .locals 3
 
     sget-boolean v0, Landroid/os/Build;->DEBUG_ONEPLUS:Z
 
     sput-boolean v0, Lcom/android/server/power/ugm;->DEBUG_ONEPLUS:Z
+
+    const/4 v0, 0x1
+
+    new-array v1, v0, [I
+
+    const/4 v2, 0x0
+
+    aput v0, v1, v2
+
+    invoke-static {v1}, Landroid/util/OpFeatures;->isSupport([I)Z
+
+    move-result v0
+
+    sput-boolean v0, Lcom/android/server/power/ugm;->_L:Z
 
     invoke-static {}, Lcom/android/server/OnePlusUtil$you;->getInstance()Lcom/android/server/OnePlusUtil$you;
 
@@ -226,17 +242,17 @@
 
     invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v1, p0, Lcom/android/server/power/ugm;->KL:Ljava/util/ArrayList;
+    iput-object v1, p0, Lcom/android/server/power/ugm;->IL:Ljava/util/ArrayList;
 
     new-instance v1, Ljava/util/HashMap;
 
     invoke-direct {v1}, Ljava/util/HashMap;-><init>()V
 
-    iput-object v1, p0, Lcom/android/server/power/ugm;->PL:Ljava/util/HashMap;
+    iput-object v1, p0, Lcom/android/server/power/ugm;->OL:Ljava/util/HashMap;
 
     new-array v1, v0, [I
 
-    iput-object v1, p0, Lcom/android/server/power/ugm;->RL:[I
+    iput-object v1, p0, Lcom/android/server/power/ugm;->QL:[I
 
     new-array v0, v0, [I
 
@@ -244,11 +260,11 @@
 
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/android/server/power/ugm;->TL:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/server/power/ugm;->SL:Ljava/lang/String;
 
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/android/server/power/ugm;->WL:Z
+    iput-boolean v0, p0, Lcom/android/server/power/ugm;->VL:Z
 
     return-void
 .end method
@@ -260,7 +276,7 @@
 
     move-result-object p1
 
-    iget-object p0, p0, Lcom/android/server/power/ugm;->LL:Ljava/util/List;
+    iget-object p0, p0, Lcom/android/server/power/ugm;->KL:Ljava/util/List;
 
     invoke-interface {p0, p1}, Ljava/util/List;->contains(Ljava/lang/Object;)Z
 
@@ -313,7 +329,7 @@
 
     if-eqz v1, :cond_4
 
-    iget-object v1, p0, Lcom/android/server/power/ugm;->RL:[I
+    iget-object v1, p0, Lcom/android/server/power/ugm;->QL:[I
 
     invoke-static {v1, p1}, Ljava/util/Arrays;->binarySearch([II)I
 
@@ -457,7 +473,7 @@
     return-object p0
 .end method
 
-.method private Po()V
+.method private Oo()V
     .locals 9
 
     iget-object v0, p0, Lcom/android/server/power/ugm;->mPmsInner:Lcom/android/server/power/PowerManagerService$PmsInner;
@@ -621,7 +637,7 @@
     invoke-static {v1, p2}, Landroid/util/Slog;->v(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_3
-    iget-object p0, p0, Lcom/android/server/power/ugm;->KL:Ljava/util/ArrayList;
+    iget-object p0, p0, Lcom/android/server/power/ugm;->IL:Ljava/util/ArrayList;
 
     new-instance p2, Ljava/lang/Integer;
 
@@ -641,7 +657,7 @@
     invoke-static {v1, p1}, Landroid/util/Slog;->v(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_5
-    iget-object p0, p0, Lcom/android/server/power/ugm;->KL:Ljava/util/ArrayList;
+    iget-object p0, p0, Lcom/android/server/power/ugm;->IL:Ljava/util/ArrayList;
 
     invoke-virtual {p0}, Ljava/util/ArrayList;->clear()V
 
@@ -654,7 +670,7 @@
 .method private cjf(Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
 
-    iget-object v0, p0, Lcom/android/server/power/ugm;->VL:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/android/server/power/ugm;->UL:Ljava/util/HashMap;
 
     invoke-virtual {v0, p1}, Ljava/util/HashMap;->containsKey(Ljava/lang/Object;)Z
 
@@ -662,7 +678,7 @@
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/android/server/power/ugm;->VL:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/android/server/power/ugm;->UL:Ljava/util/HashMap;
 
     invoke-virtual {v0, p1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -680,7 +696,7 @@
     :goto_0
     invoke-virtual {v0, p2}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
-    iget-object p0, p0, Lcom/android/server/power/ugm;->VL:Ljava/util/HashMap;
+    iget-object p0, p0, Lcom/android/server/power/ugm;->UL:Ljava/util/HashMap;
 
     invoke-virtual {p0, p1, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -696,7 +712,7 @@
 
     if-eqz v0, :cond_1
 
-    iget-object p0, p0, Lcom/android/server/power/ugm;->PL:Ljava/util/HashMap;
+    iget-object p0, p0, Lcom/android/server/power/ugm;->OL:Ljava/util/HashMap;
 
     iget-object v0, p1, Lcom/android/server/power/PowerManagerService$WakeLock;->mPackageName:Ljava/lang/String;
 
@@ -758,7 +774,7 @@
 
     if-eqz p1, :cond_2
 
-    iget-object v0, p0, Lcom/android/server/power/ugm;->PL:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/android/server/power/ugm;->OL:Ljava/util/HashMap;
 
     invoke-virtual {v0}, Ljava/util/HashMap;->clear()V
 
@@ -802,7 +818,7 @@
 
     aget-object v0, v0, v2
 
-    iget-object v2, p0, Lcom/android/server/power/ugm;->PL:Ljava/util/HashMap;
+    iget-object v2, p0, Lcom/android/server/power/ugm;->OL:Ljava/util/HashMap;
 
     invoke-virtual {v2, v1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -818,7 +834,7 @@
 
     invoke-virtual {v2, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    iget-object v3, p0, Lcom/android/server/power/ugm;->PL:Ljava/util/HashMap;
+    iget-object v3, p0, Lcom/android/server/power/ugm;->OL:Ljava/util/HashMap;
 
     invoke-virtual {v3, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -875,7 +891,7 @@
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v0, p0, Lcom/android/server/power/ugm;->LL:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/server/power/ugm;->KL:Ljava/util/List;
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -895,7 +911,7 @@
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v0, p0, Lcom/android/server/power/ugm;->OL:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/server/power/ugm;->NL:Ljava/util/List;
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -915,7 +931,7 @@
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v0, p0, Lcom/android/server/power/ugm;->XL:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/server/power/ugm;->WL:Ljava/util/List;
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -935,7 +951,7 @@
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v0, p0, Lcom/android/server/power/ugm;->YL:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/server/power/ugm;->XL:Ljava/util/List;
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -955,7 +971,7 @@
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object p0, p0, Lcom/android/server/power/ugm;->UL:Ljava/util/List;
+    iget-object p0, p0, Lcom/android/server/power/ugm;->TL:Ljava/util/List;
 
     invoke-virtual {p1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -1006,14 +1022,14 @@
 
     move-result-object v3
 
-    iget-object v4, p0, Lcom/android/server/power/ugm;->LL:Ljava/util/List;
+    iget-object v4, p0, Lcom/android/server/power/ugm;->KL:Ljava/util/List;
 
     monitor-enter v4
     :try_end_0
     .catch Lorg/json/JSONException; {:try_start_0 .. :try_end_0} :catch_0
 
     :try_start_1
-    iget-object v5, p0, Lcom/android/server/power/ugm;->LL:Ljava/util/List;
+    iget-object v5, p0, Lcom/android/server/power/ugm;->KL:Ljava/util/List;
 
     invoke-interface {v5}, Ljava/util/List;->clear()V
 
@@ -1026,7 +1042,7 @@
 
     if-ge v5, v6, :cond_1
 
-    iget-object v6, p0, Lcom/android/server/power/ugm;->LL:Ljava/util/List;
+    iget-object v6, p0, Lcom/android/server/power/ugm;->KL:Ljava/util/List;
 
     invoke-virtual {v3, v5}, Lorg/json/JSONArray;->getString(I)Ljava/lang/String;
 
@@ -1074,14 +1090,14 @@
 
     move-result-object v3
 
-    iget-object v4, p0, Lcom/android/server/power/ugm;->OL:Ljava/util/List;
+    iget-object v4, p0, Lcom/android/server/power/ugm;->NL:Ljava/util/List;
 
     monitor-enter v4
     :try_end_2
     .catch Lorg/json/JSONException; {:try_start_2 .. :try_end_2} :catch_0
 
     :try_start_3
-    iget-object v5, p0, Lcom/android/server/power/ugm;->OL:Ljava/util/List;
+    iget-object v5, p0, Lcom/android/server/power/ugm;->NL:Ljava/util/List;
 
     invoke-interface {v5}, Ljava/util/List;->clear()V
 
@@ -1094,7 +1110,7 @@
 
     if-ge v5, v6, :cond_3
 
-    iget-object v6, p0, Lcom/android/server/power/ugm;->OL:Ljava/util/List;
+    iget-object v6, p0, Lcom/android/server/power/ugm;->NL:Ljava/util/List;
 
     invoke-virtual {v3, v5}, Lorg/json/JSONArray;->getString(I)Ljava/lang/String;
 
@@ -1107,7 +1123,7 @@
     goto :goto_2
 
     :cond_3
-    iget-object v3, p0, Lcom/android/server/power/ugm;->OL:Ljava/util/List;
+    iget-object v3, p0, Lcom/android/server/power/ugm;->NL:Ljava/util/List;
 
     invoke-direct {p0, v3}, Lcom/android/server/power/ugm;->ear(Ljava/util/List;)V
 
@@ -1146,14 +1162,14 @@
 
     move-result-object v3
 
-    iget-object v4, p0, Lcom/android/server/power/ugm;->XL:Ljava/util/List;
+    iget-object v4, p0, Lcom/android/server/power/ugm;->WL:Ljava/util/List;
 
     monitor-enter v4
     :try_end_4
     .catch Lorg/json/JSONException; {:try_start_4 .. :try_end_4} :catch_0
 
     :try_start_5
-    iget-object v5, p0, Lcom/android/server/power/ugm;->XL:Ljava/util/List;
+    iget-object v5, p0, Lcom/android/server/power/ugm;->WL:Ljava/util/List;
 
     invoke-interface {v5}, Ljava/util/List;->clear()V
 
@@ -1166,7 +1182,7 @@
 
     if-ge v5, v6, :cond_5
 
-    iget-object v6, p0, Lcom/android/server/power/ugm;->XL:Ljava/util/List;
+    iget-object v6, p0, Lcom/android/server/power/ugm;->WL:Ljava/util/List;
 
     invoke-virtual {v3, v5}, Lorg/json/JSONArray;->getString(I)Ljava/lang/String;
 
@@ -1214,14 +1230,14 @@
 
     move-result-object v3
 
-    iget-object v4, p0, Lcom/android/server/power/ugm;->YL:Ljava/util/List;
+    iget-object v4, p0, Lcom/android/server/power/ugm;->XL:Ljava/util/List;
 
     monitor-enter v4
     :try_end_6
     .catch Lorg/json/JSONException; {:try_start_6 .. :try_end_6} :catch_0
 
     :try_start_7
-    iget-object v5, p0, Lcom/android/server/power/ugm;->YL:Ljava/util/List;
+    iget-object v5, p0, Lcom/android/server/power/ugm;->XL:Ljava/util/List;
 
     invoke-interface {v5}, Ljava/util/List;->clear()V
 
@@ -1234,7 +1250,7 @@
 
     if-ge v5, v6, :cond_7
 
-    iget-object v6, p0, Lcom/android/server/power/ugm;->YL:Ljava/util/List;
+    iget-object v6, p0, Lcom/android/server/power/ugm;->XL:Ljava/util/List;
 
     invoke-virtual {v3, v5}, Lorg/json/JSONArray;->getString(I)Ljava/lang/String;
 
@@ -1282,14 +1298,14 @@
 
     move-result-object v3
 
-    iget-object v4, p0, Lcom/android/server/power/ugm;->UL:Ljava/util/List;
+    iget-object v4, p0, Lcom/android/server/power/ugm;->TL:Ljava/util/List;
 
     monitor-enter v4
     :try_end_8
     .catch Lorg/json/JSONException; {:try_start_8 .. :try_end_8} :catch_0
 
     :try_start_9
-    iget-object v5, p0, Lcom/android/server/power/ugm;->UL:Ljava/util/List;
+    iget-object v5, p0, Lcom/android/server/power/ugm;->TL:Ljava/util/List;
 
     invoke-interface {v5}, Ljava/util/List;->clear()V
 
@@ -1302,7 +1318,7 @@
 
     if-ge v5, v6, :cond_9
 
-    iget-object v6, p0, Lcom/android/server/power/ugm;->UL:Ljava/util/List;
+    iget-object v6, p0, Lcom/android/server/power/ugm;->TL:Ljava/util/List;
 
     invoke-virtual {v3, v5}, Lorg/json/JSONArray;->getString(I)Ljava/lang/String;
 
@@ -1345,7 +1361,7 @@
 
     if-eqz v3, :cond_c
 
-    iget-object v3, p0, Lcom/android/server/power/ugm;->VL:Ljava/util/HashMap;
+    iget-object v3, p0, Lcom/android/server/power/ugm;->UL:Ljava/util/HashMap;
 
     invoke-virtual {v3}, Ljava/util/HashMap;->clear()V
 
@@ -1425,7 +1441,7 @@
 
     move-result v2
 
-    iput-boolean v2, p0, Lcom/android/server/power/ugm;->WL:Z
+    iput-boolean v2, p0, Lcom/android/server/power/ugm;->VL:Z
 
     :cond_d
     add-int/lit8 v1, v1, 0x1
@@ -1443,7 +1459,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lcom/android/server/power/ugm;->LL:Ljava/util/List;
+    iget-object v1, p0, Lcom/android/server/power/ugm;->KL:Ljava/util/List;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -1463,7 +1479,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lcom/android/server/power/ugm;->OL:Ljava/util/List;
+    iget-object v1, p0, Lcom/android/server/power/ugm;->NL:Ljava/util/List;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -1483,7 +1499,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lcom/android/server/power/ugm;->XL:Ljava/util/List;
+    iget-object v1, p0, Lcom/android/server/power/ugm;->WL:Ljava/util/List;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -1503,7 +1519,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lcom/android/server/power/ugm;->YL:Ljava/util/List;
+    iget-object v1, p0, Lcom/android/server/power/ugm;->XL:Ljava/util/List;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -1523,7 +1539,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object p0, p0, Lcom/android/server/power/ugm;->UL:Ljava/util/List;
+    iget-object p0, p0, Lcom/android/server/power/ugm;->TL:Ljava/util/List;
 
     invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -1611,12 +1627,12 @@
 .method private hc(Ljava/lang/String;)Z
     .locals 3
 
-    iget-object v0, p0, Lcom/android/server/power/ugm;->UL:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/server/power/ugm;->TL:Ljava/util/List;
 
     monitor-enter v0
 
     :try_start_0
-    iget-object p0, p0, Lcom/android/server/power/ugm;->UL:Ljava/util/List;
+    iget-object p0, p0, Lcom/android/server/power/ugm;->TL:Ljava/util/List;
 
     invoke-interface {p0, p1}, Ljava/util/List;->contains(Ljava/lang/Object;)Z
 
@@ -1772,12 +1788,12 @@
 .method private jc(Ljava/lang/String;)Z
     .locals 3
 
-    iget-object v0, p0, Lcom/android/server/power/ugm;->XL:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/server/power/ugm;->WL:Ljava/util/List;
 
     monitor-enter v0
 
     :try_start_0
-    iget-object p0, p0, Lcom/android/server/power/ugm;->XL:Ljava/util/List;
+    iget-object p0, p0, Lcom/android/server/power/ugm;->WL:Ljava/util/List;
 
     invoke-interface {p0, p1}, Ljava/util/List;->contains(Ljava/lang/Object;)Z
 
@@ -1829,7 +1845,7 @@
 .method private kc(Ljava/lang/String;)Z
     .locals 4
 
-    iget-object v0, p0, Lcom/android/server/power/ugm;->YL:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/server/power/ugm;->XL:Ljava/util/List;
 
     monitor-enter v0
 
@@ -1839,7 +1855,7 @@
 
     :goto_0
     :try_start_0
-    iget-object v3, p0, Lcom/android/server/power/ugm;->YL:Ljava/util/List;
+    iget-object v3, p0, Lcom/android/server/power/ugm;->XL:Ljava/util/List;
 
     invoke-interface {v3}, Ljava/util/List;->size()I
 
@@ -1847,7 +1863,7 @@
 
     if-ge v2, v3, :cond_1
 
-    iget-object v3, p0, Lcom/android/server/power/ugm;->YL:Ljava/util/List;
+    iget-object v3, p0, Lcom/android/server/power/ugm;->XL:Ljava/util/List;
 
     invoke-interface {v3, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -1908,7 +1924,7 @@
 .method private kth(Lcom/android/server/power/PowerManagerService$WakeLock;)Z
     .locals 7
 
-    iget-boolean v0, p0, Lcom/android/server/power/ugm;->WL:Z
+    iget-boolean v0, p0, Lcom/android/server/power/ugm;->VL:Z
 
     const/4 v1, 0x0
 
@@ -1918,7 +1934,7 @@
 
     if-eqz v0, :cond_2
 
-    iget-object v0, p0, Lcom/android/server/power/ugm;->VL:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/android/server/power/ugm;->UL:Ljava/util/HashMap;
 
     iget-object v2, p1, Lcom/android/server/power/PowerManagerService$WakeLock;->mPackageName:Ljava/lang/String;
 
@@ -1930,7 +1946,7 @@
 
     if-eqz v0, :cond_0
 
-    iget-object p0, p0, Lcom/android/server/power/ugm;->VL:Ljava/util/HashMap;
+    iget-object p0, p0, Lcom/android/server/power/ugm;->UL:Ljava/util/HashMap;
 
     iget-object v0, p1, Lcom/android/server/power/PowerManagerService$WakeLock;->mPackageName:Ljava/lang/String;
 
@@ -2004,7 +2020,7 @@
 
     move-result-object v4
 
-    iget-object v5, p0, Lcom/android/server/power/ugm;->VL:Ljava/util/HashMap;
+    iget-object v5, p0, Lcom/android/server/power/ugm;->UL:Ljava/util/HashMap;
 
     invoke-virtual {v5, v4}, Ljava/util/HashMap;->containsKey(Ljava/lang/Object;)Z
 
@@ -2012,7 +2028,7 @@
 
     if-eqz v5, :cond_1
 
-    iget-object v5, p0, Lcom/android/server/power/ugm;->VL:Ljava/util/HashMap;
+    iget-object v5, p0, Lcom/android/server/power/ugm;->UL:Ljava/util/HashMap;
 
     invoke-virtual {v5, v4}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -2074,7 +2090,7 @@
 
     if-ge v1, v2, :cond_1
 
-    iget-object v2, p0, Lcom/android/server/power/ugm;->KL:Ljava/util/ArrayList;
+    iget-object v2, p0, Lcom/android/server/power/ugm;->IL:Ljava/util/ArrayList;
 
     iget-object v3, p1, Lcom/android/server/power/PowerManagerService$WakeLock;->mWorkSource:Landroid/os/WorkSource;
 
@@ -2111,7 +2127,7 @@
 .method private sis(Lcom/android/server/power/PowerManagerService$WakeLock;)Z
     .locals 7
 
-    invoke-direct {p0}, Lcom/android/server/power/ugm;->yn()[Ljava/lang/String;
+    invoke-direct {p0}, Lcom/android/server/power/ugm;->xn()[Ljava/lang/String;
 
     move-result-object p0
 
@@ -2202,7 +2218,7 @@
 .method private ssp(Lcom/android/server/power/PowerManagerService$WakeLock;)Z
     .locals 2
 
-    iget-object v0, p0, Lcom/android/server/power/ugm;->KL:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/server/power/ugm;->IL:Ljava/util/ArrayList;
 
     iget v1, p1, Lcom/android/server/power/PowerManagerService$WakeLock;->mOwnerUid:I
 
@@ -2271,7 +2287,7 @@
     return p0
 .end method
 
-.method private yn()[Ljava/lang/String;
+.method private xn()[Ljava/lang/String;
     .locals 2
 
     iget-object v0, p0, Lcom/android/server/power/ugm;->mAudioManager:Landroid/media/AudioManager;
@@ -2331,7 +2347,7 @@
 .method public CheckWakeUpOrDoze(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 4
 
-    iget v0, p0, Lcom/android/server/power/ugm;->QL:I
+    iget v0, p0, Lcom/android/server/power/ugm;->PL:I
 
     const/4 v1, 0x5
 
@@ -2383,7 +2399,7 @@
 
     if-eqz p1, :cond_2
 
-    iget-object p1, p0, Lcom/android/server/power/ugm;->TL:Ljava/lang/String;
+    iget-object p1, p0, Lcom/android/server/power/ugm;->SL:Ljava/lang/String;
 
     if-eqz p1, :cond_3
 
@@ -2401,7 +2417,7 @@
 
     invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object p2, p0, Lcom/android/server/power/ugm;->TL:Ljava/lang/String;
+    iget-object p2, p0, Lcom/android/server/power/ugm;->SL:Ljava/lang/String;
 
     invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -2413,7 +2429,7 @@
 
     const/4 p1, 0x0
 
-    iput-object p1, p0, Lcom/android/server/power/ugm;->TL:Ljava/lang/String;
+    iput-object p1, p0, Lcom/android/server/power/ugm;->SL:Ljava/lang/String;
 
     return v1
 
@@ -2549,9 +2565,9 @@
 
     invoke-direct {p0, p1}, Lcom/android/server/power/ugm;->tsu(Lcom/android/server/power/PowerManagerService$WakeLock;)Z
 
-    move-result v0
+    move-result p3
 
-    if-eqz v0, :cond_3
+    if-eqz p3, :cond_3
 
     iget p1, p1, Lcom/android/server/power/PowerManagerService$WakeLock;->mOwnerUid:I
 
@@ -2580,8 +2596,6 @@
 
     :cond_2
     if-nez p2, :cond_3
-
-    if-nez p3, :cond_3
 
     return v3
 
@@ -2618,7 +2632,7 @@
 .method public flushExclusiveWakeLock()V
     .locals 0
 
-    invoke-virtual {p0}, Lcom/android/server/power/ugm;->yd()V
+    invoke-virtual {p0}, Lcom/android/server/power/ugm;->xd()V
 
     return-void
 .end method
@@ -2638,12 +2652,12 @@
 
     if-eqz p1, :cond_0
 
-    iget-object p0, p0, Lcom/android/server/power/ugm;->HL:Ljava/util/HashMap;
+    iget-object p0, p0, Lcom/android/server/power/ugm;->GL:Ljava/util/HashMap;
 
     return-object p0
 
     :cond_0
-    iget-object p0, p0, Lcom/android/server/power/ugm;->FL:Ljava/util/HashMap;
+    iget-object p0, p0, Lcom/android/server/power/ugm;->EL:Ljava/util/HashMap;
 
     return-object p0
 .end method
@@ -2702,7 +2716,7 @@
 
     invoke-static {v0, v1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    invoke-direct {p0}, Lcom/android/server/power/ugm;->Po()V
+    invoke-direct {p0}, Lcom/android/server/power/ugm;->Oo()V
 
     :cond_0
     iget-object p0, p0, Lcom/android/server/power/ugm;->mPmsInner:Lcom/android/server/power/PowerManagerService$PmsInner;
@@ -2759,7 +2773,7 @@
 
     const/4 v0, 0x0
 
-    iput v0, p0, Lcom/android/server/power/ugm;->QL:I
+    iput v0, p0, Lcom/android/server/power/ugm;->PL:I
 
     new-instance v1, Ljava/util/ArrayList;
 
@@ -2775,7 +2789,7 @@
 
     invoke-direct {v1, v2}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
 
-    iput-object v1, p0, Lcom/android/server/power/ugm;->OL:Ljava/util/List;
+    iput-object v1, p0, Lcom/android/server/power/ugm;->NL:Ljava/util/List;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -2785,7 +2799,7 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v2, p0, Lcom/android/server/power/ugm;->OL:Ljava/util/List;
+    iget-object v2, p0, Lcom/android/server/power/ugm;->NL:Ljava/util/List;
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -2797,7 +2811,7 @@
 
     invoke-static {v2, v1}, Landroid/util/Slog;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    iget-object v1, p0, Lcom/android/server/power/ugm;->OL:Ljava/util/List;
+    iget-object v1, p0, Lcom/android/server/power/ugm;->NL:Ljava/util/List;
 
     invoke-direct {p0, v1}, Lcom/android/server/power/ugm;->ear(Ljava/util/List;)V
 
@@ -2815,7 +2829,7 @@
 
     invoke-direct {v1, p1}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
 
-    iput-object v1, p0, Lcom/android/server/power/ugm;->LL:Ljava/util/List;
+    iput-object v1, p0, Lcom/android/server/power/ugm;->KL:Ljava/util/List;
 
     new-instance p1, Ljava/lang/StringBuilder;
 
@@ -2825,7 +2839,7 @@
 
     invoke-virtual {p1, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lcom/android/server/power/ugm;->LL:Ljava/util/List;
+    iget-object v1, p0, Lcom/android/server/power/ugm;->KL:Ljava/util/List;
 
     invoke-virtual {p1, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -2859,9 +2873,9 @@
 
     invoke-direct {p1, v1, v3, v4, v5}, Lcom/oneplus/config/ConfigObserver;-><init>(Landroid/content/Context;Landroid/os/Handler;Lcom/oneplus/config/ConfigObserver$ConfigUpdater;Ljava/lang/String;)V
 
-    iput-object p1, p0, Lcom/android/server/power/ugm;->ML:Lcom/oneplus/config/ConfigObserver;
+    iput-object p1, p0, Lcom/android/server/power/ugm;->LL:Lcom/oneplus/config/ConfigObserver;
 
-    iget-object p1, p0, Lcom/android/server/power/ugm;->ML:Lcom/oneplus/config/ConfigObserver;
+    iget-object p1, p0, Lcom/android/server/power/ugm;->LL:Lcom/oneplus/config/ConfigObserver;
 
     invoke-virtual {p1}, Lcom/oneplus/config/ConfigObserver;->register()V
 
@@ -2891,39 +2905,39 @@
 
     invoke-direct {p1}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object p1, p0, Lcom/android/server/power/ugm;->XL:Ljava/util/List;
+    iput-object p1, p0, Lcom/android/server/power/ugm;->WL:Ljava/util/List;
 
-    iget-object p1, p0, Lcom/android/server/power/ugm;->XL:Ljava/util/List;
+    iget-object p1, p0, Lcom/android/server/power/ugm;->WL:Ljava/util/List;
 
     const-string v1, "com.moblie.bestapps.inlike"
 
     invoke-interface {p1, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    iget-object p1, p0, Lcom/android/server/power/ugm;->XL:Ljava/util/List;
+    iget-object p1, p0, Lcom/android/server/power/ugm;->WL:Ljava/util/List;
 
     const-string v1, "com.ifeng.news2"
 
     invoke-interface {p1, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    iget-object p1, p0, Lcom/android/server/power/ugm;->XL:Ljava/util/List;
+    iget-object p1, p0, Lcom/android/server/power/ugm;->WL:Ljava/util/List;
 
     const-string v1, "com.tencent.mtt"
 
     invoke-interface {p1, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    iget-object p1, p0, Lcom/android/server/power/ugm;->XL:Ljava/util/List;
+    iget-object p1, p0, Lcom/android/server/power/ugm;->WL:Ljava/util/List;
 
     const-string v1, "com.ijinshan.browser_fast"
 
     invoke-interface {p1, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    iget-object p1, p0, Lcom/android/server/power/ugm;->XL:Ljava/util/List;
+    iget-object p1, p0, Lcom/android/server/power/ugm;->WL:Ljava/util/List;
 
     const-string v1, "com.netease.cloudmusic"
 
     invoke-interface {p1, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    iget-object p1, p0, Lcom/android/server/power/ugm;->XL:Ljava/util/List;
+    iget-object p1, p0, Lcom/android/server/power/ugm;->WL:Ljava/util/List;
 
     const-string v1, "com.taobao.trip"
 
@@ -2934,6 +2948,36 @@
     invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
 
     const-string v1, "mOemDisableWakeLockPackage = "
+
+    invoke-virtual {p1, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object v1, p0, Lcom/android/server/power/ugm;->WL:Ljava/util/List;
+
+    invoke-virtual {p1, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-static {v2, p1}, Landroid/util/Slog;->v(Ljava/lang/String;Ljava/lang/String;)I
+
+    new-instance p1, Ljava/util/ArrayList;
+
+    invoke-direct {p1}, Ljava/util/ArrayList;-><init>()V
+
+    iput-object p1, p0, Lcom/android/server/power/ugm;->XL:Ljava/util/List;
+
+    iget-object p1, p0, Lcom/android/server/power/ugm;->XL:Ljava/util/List;
+
+    const-string v1, "com.appboy.push"
+
+    invoke-interface {p1, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    new-instance p1, Ljava/lang/StringBuilder;
+
+    invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v1, "mOemDisableWakeLockReason = "
 
     invoke-virtual {p1, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -2951,39 +2995,9 @@
 
     invoke-direct {p1}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object p1, p0, Lcom/android/server/power/ugm;->YL:Ljava/util/List;
+    iput-object p1, p0, Lcom/android/server/power/ugm;->TL:Ljava/util/List;
 
-    iget-object p1, p0, Lcom/android/server/power/ugm;->YL:Ljava/util/List;
-
-    const-string v1, "com.appboy.push"
-
-    invoke-interface {p1, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
-
-    new-instance p1, Ljava/lang/StringBuilder;
-
-    invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v1, "mOemDisableWakeLockReason = "
-
-    invoke-virtual {p1, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget-object v1, p0, Lcom/android/server/power/ugm;->YL:Ljava/util/List;
-
-    invoke-virtual {p1, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p1
-
-    invoke-static {v2, p1}, Landroid/util/Slog;->v(Ljava/lang/String;Ljava/lang/String;)I
-
-    new-instance p1, Ljava/util/ArrayList;
-
-    invoke-direct {p1}, Ljava/util/ArrayList;-><init>()V
-
-    iput-object p1, p0, Lcom/android/server/power/ugm;->UL:Ljava/util/List;
-
-    iget-object p1, p0, Lcom/android/server/power/ugm;->UL:Ljava/util/List;
+    iget-object p1, p0, Lcom/android/server/power/ugm;->TL:Ljava/util/List;
 
     const-string v1, "com.joym.armorhero.sj360"
 
@@ -2993,23 +3007,23 @@
 
     invoke-direct {p1}, Ljava/util/HashMap;-><init>()V
 
-    iput-object p1, p0, Lcom/android/server/power/ugm;->FL:Ljava/util/HashMap;
+    iput-object p1, p0, Lcom/android/server/power/ugm;->EL:Ljava/util/HashMap;
 
-    iput-boolean v0, p0, Lcom/android/server/power/ugm;->GL:Z
-
-    new-instance p1, Ljava/util/HashMap;
-
-    invoke-direct {p1}, Ljava/util/HashMap;-><init>()V
-
-    iput-object p1, p0, Lcom/android/server/power/ugm;->HL:Ljava/util/HashMap;
-
-    iput-boolean v0, p0, Lcom/android/server/power/ugm;->IL:Z
+    iput-boolean v0, p0, Lcom/android/server/power/ugm;->FL:Z
 
     new-instance p1, Ljava/util/HashMap;
 
     invoke-direct {p1}, Ljava/util/HashMap;-><init>()V
 
-    iput-object p1, p0, Lcom/android/server/power/ugm;->VL:Ljava/util/HashMap;
+    iput-object p1, p0, Lcom/android/server/power/ugm;->GL:Ljava/util/HashMap;
+
+    iput-boolean v0, p0, Lcom/android/server/power/ugm;->HL:Z
+
+    new-instance p1, Ljava/util/HashMap;
+
+    invoke-direct {p1}, Ljava/util/HashMap;-><init>()V
+
+    iput-object p1, p0, Lcom/android/server/power/ugm;->UL:Ljava/util/HashMap;
 
     const-string p1, "com.google.android.googlequicksearchbox"
 
@@ -3067,12 +3081,12 @@
 
     if-eqz p1, :cond_0
 
-    iget-object p0, p0, Lcom/android/server/power/ugm;->HL:Ljava/util/HashMap;
+    iget-object p0, p0, Lcom/android/server/power/ugm;->GL:Ljava/util/HashMap;
 
     goto :goto_0
 
     :cond_0
-    iget-object p0, p0, Lcom/android/server/power/ugm;->FL:Ljava/util/HashMap;
+    iget-object p0, p0, Lcom/android/server/power/ugm;->EL:Ljava/util/HashMap;
 
     :goto_0
     invoke-virtual {p0}, Ljava/util/HashMap;->clear()V
@@ -3119,12 +3133,12 @@
 
     if-eqz p1, :cond_1
 
-    iput-boolean v1, p0, Lcom/android/server/power/ugm;->IL:Z
+    iput-boolean v1, p0, Lcom/android/server/power/ugm;->HL:Z
 
     goto :goto_0
 
     :cond_1
-    iput-boolean v1, p0, Lcom/android/server/power/ugm;->GL:Z
+    iput-boolean v1, p0, Lcom/android/server/power/ugm;->FL:Z
 
     :goto_0
     iget-object p0, p0, Lcom/android/server/power/ugm;->mPmsInner:Lcom/android/server/power/PowerManagerService$PmsInner;
@@ -3184,12 +3198,12 @@
 
     if-eqz p1, :cond_1
 
-    iput-boolean v1, p0, Lcom/android/server/power/ugm;->IL:Z
+    iput-boolean v1, p0, Lcom/android/server/power/ugm;->HL:Z
 
     goto :goto_0
 
     :cond_1
-    iput-boolean v1, p0, Lcom/android/server/power/ugm;->GL:Z
+    iput-boolean v1, p0, Lcom/android/server/power/ugm;->FL:Z
 
     :goto_0
     iget-object p0, p0, Lcom/android/server/power/ugm;->mPmsInner:Lcom/android/server/power/PowerManagerService$PmsInner;
@@ -3245,7 +3259,7 @@
     invoke-static {v1, v2}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_0
-    iget-boolean v1, p0, Lcom/android/server/power/ugm;->SL:Z
+    iget-boolean v1, p0, Lcom/android/server/power/ugm;->RL:Z
 
     if-ne v1, p1, :cond_1
 
@@ -3256,7 +3270,7 @@
     return p0
 
     :cond_1
-    iput-boolean p1, p0, Lcom/android/server/power/ugm;->SL:Z
+    iput-boolean p1, p0, Lcom/android/server/power/ugm;->RL:Z
 
     iget-object p0, p0, Lcom/android/server/power/ugm;->mPmsInner:Lcom/android/server/power/PowerManagerService$PmsInner;
 
@@ -3443,7 +3457,7 @@
 .method public setDeviceIdleAggressive(Z)V
     .locals 0
 
-    iput-boolean p1, p0, Lcom/android/server/power/ugm;->NL:Z
+    iput-boolean p1, p0, Lcom/android/server/power/ugm;->ML:Z
 
     return-void
 .end method
@@ -3460,7 +3474,7 @@
     monitor-enter v0
 
     :try_start_0
-    iput p1, p0, Lcom/android/server/power/ugm;->QL:I
+    iput p1, p0, Lcom/android/server/power/ugm;->PL:I
 
     const/4 v1, 0x5
 
@@ -3521,7 +3535,7 @@
 
     const/4 v5, 0x1
 
-    if-ne v3, v5, :cond_17
+    if-ne v3, v5, :cond_18
 
     iget v3, p1, Lcom/android/server/power/PowerManagerService$WakeLock;->mOwnerUid:I
 
@@ -3535,7 +3549,7 @@
 
     const-string v8, "OpPowerManager"
 
-    if-lt v3, v6, :cond_c
+    if-lt v3, v6, :cond_d
 
     iget-object v6, p0, Lcom/android/server/power/ugm;->mPmsInner:Lcom/android/server/power/PowerManagerService$PmsInner;
 
@@ -3576,7 +3590,7 @@
     :goto_0
     const/4 v6, 0x5
 
-    if-eqz v0, :cond_6
+    if-eqz v0, :cond_7
 
     iget-boolean v10, p1, Lcom/android/server/power/PowerManagerService$WakeLock;->mNotifiedLong:Z
 
@@ -3593,63 +3607,81 @@
 
     move-result v11
 
-    if-eqz v11, :cond_6
+    if-eqz v11, :cond_7
 
     iget v11, v10, Lcom/android/server/power/PowerManagerService$UidState;->mProcState:I
 
-    if-eq v11, v9, :cond_6
+    if-eq v11, v9, :cond_7
 
     if-le v11, v6, :cond_3
 
     move v2, v5
 
     :cond_3
-    iget-boolean v11, p0, Lcom/android/server/power/ugm;->NL:Z
+    iget-boolean v11, p0, Lcom/android/server/power/ugm;->ML:Z
 
     if-eqz v11, :cond_4
 
-    iget v10, v10, Lcom/android/server/power/PowerManagerService$UidState;->mProcState:I
+    iget v11, v10, Lcom/android/server/power/PowerManagerService$UidState;->mProcState:I
 
-    if-ne v10, v6, :cond_4
+    if-ne v11, v6, :cond_4
 
     invoke-direct {p0, p1}, Lcom/android/server/power/ugm;->sis(Lcom/android/server/power/PowerManagerService$WakeLock;)Z
 
-    move-result v10
+    move-result v11
 
-    if-nez v10, :cond_4
+    if-nez v11, :cond_4
 
     move v2, v5
 
     :cond_4
-    iget-boolean v10, p0, Lcom/android/server/power/ugm;->mIsDeepSleep:Z
+    iget-boolean v11, p0, Lcom/android/server/power/ugm;->mIsDeepSleep:Z
 
-    if-eqz v10, :cond_5
+    if-eqz v11, :cond_5
 
     move v2, v5
 
     :cond_5
-    iget-boolean v10, p1, Lcom/android/server/power/PowerManagerService$WakeLock;->mLongBeforeIdle:Z
+    iget-boolean v11, p1, Lcom/android/server/power/PowerManagerService$WakeLock;->mLongBeforeIdle:Z
 
-    if-eqz v10, :cond_6
+    if-eqz v11, :cond_7
 
     invoke-direct {p0, p1}, Lcom/android/server/power/ugm;->sis(Lcom/android/server/power/PowerManagerService$WakeLock;)Z
 
-    move-result v10
+    move-result v11
 
-    if-nez v10, :cond_6
+    if-nez v11, :cond_7
+
+    sget-boolean v11, Lcom/android/server/power/ugm;->_L:Z
+
+    if-eqz v11, :cond_6
+
+    iget v10, v10, Lcom/android/server/power/PowerManagerService$UidState;->mProcState:I
+
+    if-gt v10, v6, :cond_6
+
+    move v10, v5
+
+    goto :goto_1
+
+    :cond_6
+    move v10, v4
+
+    :goto_1
+    if-nez v10, :cond_7
 
     move v2, v5
 
-    :cond_6
-    iget-boolean v10, p0, Lcom/android/server/power/ugm;->SL:Z
+    :cond_7
+    iget-boolean v10, p0, Lcom/android/server/power/ugm;->RL:Z
 
-    if-eqz v10, :cond_9
+    if-eqz v10, :cond_a
 
     invoke-direct {p0, p1}, Lcom/android/server/power/ugm;->sis(Lcom/android/server/power/PowerManagerService$WakeLock;)Z
 
     move-result v10
 
-    if-nez v10, :cond_9
+    if-nez v10, :cond_a
 
     iget-object v10, p1, Lcom/android/server/power/PowerManagerService$WakeLock;->mUidState:Lcom/android/server/power/PowerManagerService$UidState;
 
@@ -3663,7 +3695,7 @@
 
     move-result v11
 
-    if-gez v11, :cond_9
+    if-gez v11, :cond_a
 
     iget-object v11, p0, Lcom/android/server/power/ugm;->mPmsInner:Lcom/android/server/power/PowerManagerService$PmsInner;
 
@@ -3675,35 +3707,35 @@
 
     move-result v3
 
-    if-gez v3, :cond_9
+    if-gez v3, :cond_a
 
     iget v3, v10, Lcom/android/server/power/PowerManagerService$UidState;->mProcState:I
 
-    if-eq v3, v9, :cond_9
+    if-eq v3, v9, :cond_a
 
-    if-le v3, v6, :cond_7
+    if-le v3, v6, :cond_8
 
     move v2, v5
 
-    :cond_7
+    :cond_8
     iget v3, v10, Lcom/android/server/power/PowerManagerService$UidState;->mProcState:I
 
-    if-ne v3, v6, :cond_8
+    if-ne v3, v6, :cond_9
 
     invoke-direct {p0, p1}, Lcom/android/server/power/ugm;->sis(Lcom/android/server/power/PowerManagerService$WakeLock;)Z
 
     move-result v3
 
-    if-nez v3, :cond_8
+    if-nez v3, :cond_9
 
     move v2, v5
 
-    :cond_8
-    if-eqz v2, :cond_9
+    :cond_9
+    if-eqz v2, :cond_a
 
     sget-boolean v3, Lcom/android/server/power/ugm;->DEBUG_ONEPLUS:Z
 
-    if-eqz v3, :cond_9
+    if-eqz v3, :cond_a
 
     new-instance v3, Ljava/lang/StringBuilder;
 
@@ -3723,44 +3755,44 @@
 
     invoke-static {v8, v3}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    :cond_9
-    if-nez v2, :cond_b
-
-    if-nez v1, :cond_a
-
-    if-eqz v0, :cond_b
-
     :cond_a
+    if-nez v2, :cond_c
+
+    if-nez v1, :cond_b
+
+    if-eqz v0, :cond_c
+
+    :cond_b
     invoke-direct {p0, p1}, Lcom/android/server/power/ugm;->cno(Lcom/android/server/power/PowerManagerService$WakeLock;)Z
 
     move-result v1
 
-    goto :goto_1
-
-    :cond_b
-    move v1, v2
-
-    goto :goto_1
+    goto :goto_2
 
     :cond_c
+    move v1, v2
+
+    goto :goto_2
+
+    :cond_d
     move v1, v4
 
-    :goto_1
-    iget-boolean v2, p0, Lcom/android/server/power/ugm;->GL:Z
+    :goto_2
+    iget-boolean v2, p0, Lcom/android/server/power/ugm;->FL:Z
 
-    if-eqz v2, :cond_e
+    if-eqz v2, :cond_f
 
-    if-nez v1, :cond_e
+    if-nez v1, :cond_f
 
     invoke-virtual {p0, p1}, Lcom/android/server/power/ugm;->zta(Lcom/android/server/power/PowerManagerService$WakeLock;)Z
 
     move-result v2
 
-    if-eqz v2, :cond_e
+    if-eqz v2, :cond_f
 
     sget-boolean v1, Lcom/android/server/power/ugm;->DEBUG_ONEPLUS:Z
 
-    if-eqz v1, :cond_d
+    if-eqz v1, :cond_e
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -3780,25 +3812,25 @@
 
     invoke-static {v8, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    :cond_d
+    :cond_e
     move v1, v5
 
-    :cond_e
-    iget-boolean v2, p0, Lcom/android/server/power/ugm;->IL:Z
+    :cond_f
+    iget-boolean v2, p0, Lcom/android/server/power/ugm;->HL:Z
 
-    if-eqz v2, :cond_10
+    if-eqz v2, :cond_11
 
-    if-nez v1, :cond_10
+    if-nez v1, :cond_11
 
     invoke-virtual {p0, p1}, Lcom/android/server/power/ugm;->you(Lcom/android/server/power/PowerManagerService$WakeLock;)Z
 
     move-result v2
 
-    if-eqz v2, :cond_10
+    if-eqz v2, :cond_11
 
     sget-boolean v1, Lcom/android/server/power/ugm;->DEBUG_ONEPLUS:Z
 
-    if-eqz v1, :cond_f
+    if-eqz v1, :cond_10
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -3818,21 +3850,21 @@
 
     invoke-static {v8, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    :cond_f
+    :cond_10
     move v1, v5
 
-    :cond_10
-    if-nez v1, :cond_12
+    :cond_11
+    if-nez v1, :cond_13
 
     invoke-direct {p0, p1}, Lcom/android/server/power/ugm;->ssp(Lcom/android/server/power/PowerManagerService$WakeLock;)Z
 
     move-result v2
 
-    if-eqz v2, :cond_12
+    if-eqz v2, :cond_13
 
     sget-boolean v1, Lcom/android/server/power/ugm;->DEBUG_ONEPLUS:Z
 
-    if-eqz v1, :cond_11
+    if-eqz v1, :cond_12
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -3852,17 +3884,17 @@
 
     invoke-static {v8, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    :cond_11
+    :cond_12
     move v1, v5
 
-    :cond_12
-    if-eqz v0, :cond_14
+    :cond_13
+    if-eqz v0, :cond_15
 
-    if-nez v1, :cond_14
+    if-nez v1, :cond_15
 
     iget-object v0, p1, Lcom/android/server/power/PowerManagerService$WakeLock;->mWorkSource:Landroid/os/WorkSource;
 
-    if-eqz v0, :cond_14
+    if-eqz v0, :cond_15
 
     invoke-virtual {v0}, Landroid/os/WorkSource;->size()I
 
@@ -3870,8 +3902,8 @@
 
     move v2, v4
 
-    :goto_2
-    if-ge v2, v0, :cond_14
+    :goto_3
+    if-ge v2, v0, :cond_15
 
     iget-object v3, p1, Lcom/android/server/power/PowerManagerService$WakeLock;->mWorkSource:Landroid/os/WorkSource;
 
@@ -3883,13 +3915,13 @@
 
     move-result v6
 
-    if-eqz v6, :cond_13
+    if-eqz v6, :cond_14
 
     invoke-direct {p0, p1}, Lcom/android/server/power/ugm;->sis(Lcom/android/server/power/PowerManagerService$WakeLock;)Z
 
     move-result v6
 
-    if-eqz v6, :cond_13
+    if-eqz v6, :cond_14
 
     invoke-direct {p0, v3}, Lcom/android/server/power/ugm;->getPackageNameForUid(I)Ljava/lang/String;
 
@@ -3897,34 +3929,34 @@
 
     invoke-direct {p0, v0}, Lcom/android/server/power/ugm;->ic(Ljava/lang/String;)Z
 
-    goto :goto_3
-
-    :cond_13
-    add-int/lit8 v2, v2, 0x1
-
-    goto :goto_2
+    goto :goto_4
 
     :cond_14
-    :goto_3
-    iget p0, p0, Lcom/android/server/power/ugm;->QL:I
+    add-int/lit8 v2, v2, 0x1
 
-    if-eqz p0, :cond_15
-
-    if-ne p0, v5, :cond_16
+    goto :goto_3
 
     :cond_15
-    iput-boolean v4, p1, Lcom/android/server/power/PowerManagerService$WakeLock;->mLongBeforeIdle:Z
+    :goto_4
+    iget p0, p0, Lcom/android/server/power/ugm;->PL:I
+
+    if-eqz p0, :cond_16
+
+    if-ne p0, v5, :cond_17
 
     :cond_16
+    iput-boolean v4, p1, Lcom/android/server/power/PowerManagerService$WakeLock;->mLongBeforeIdle:Z
+
+    :cond_17
     iget-boolean p0, p1, Lcom/android/server/power/PowerManagerService$WakeLock;->mDisabled:Z
 
-    if-eq p0, v1, :cond_17
+    if-eq p0, v1, :cond_18
 
     iput-boolean v1, p1, Lcom/android/server/power/PowerManagerService$WakeLock;->mDisabled:Z
 
     return v5
 
-    :cond_17
+    :cond_18
     return v4
 .end method
 
@@ -3967,7 +3999,7 @@
     throw p0
 .end method
 
-.method yd()V
+.method xd()V
     .locals 3
 
     iget-object v0, p0, Lcom/android/server/power/ugm;->mPmsInner:Lcom/android/server/power/PowerManagerService$PmsInner;
@@ -4011,11 +4043,11 @@
 .method you(Lcom/android/server/power/PowerManagerService$WakeLock;)Z
     .locals 2
 
-    iget-boolean v0, p0, Lcom/android/server/power/ugm;->IL:Z
+    iget-boolean v0, p0, Lcom/android/server/power/ugm;->HL:Z
 
     if-eqz v0, :cond_1
 
-    iget-object v0, p0, Lcom/android/server/power/ugm;->HL:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/android/server/power/ugm;->GL:Ljava/util/HashMap;
 
     iget-object v1, p1, Lcom/android/server/power/PowerManagerService$WakeLock;->mPackageName:Ljava/lang/String;
 
@@ -4025,7 +4057,7 @@
 
     if-eqz v0, :cond_1
 
-    iget-object p0, p0, Lcom/android/server/power/ugm;->HL:Ljava/util/HashMap;
+    iget-object p0, p0, Lcom/android/server/power/ugm;->GL:Ljava/util/HashMap;
 
     iget-object v0, p1, Lcom/android/server/power/PowerManagerService$WakeLock;->mPackageName:Ljava/lang/String;
 
@@ -4253,12 +4285,12 @@
 
     if-eqz p3, :cond_0
 
-    iget-object p0, p0, Lcom/android/server/power/ugm;->HL:Ljava/util/HashMap;
+    iget-object p0, p0, Lcom/android/server/power/ugm;->GL:Ljava/util/HashMap;
 
     goto :goto_0
 
     :cond_0
-    iget-object p0, p0, Lcom/android/server/power/ugm;->FL:Ljava/util/HashMap;
+    iget-object p0, p0, Lcom/android/server/power/ugm;->EL:Ljava/util/HashMap;
 
     :goto_0
     invoke-virtual {p0, p1}, Ljava/util/HashMap;->containsKey(Ljava/lang/Object;)Z
@@ -4438,7 +4470,7 @@
     monitor-enter v0
 
     :try_start_0
-    iput-object p1, p0, Lcom/android/server/power/ugm;->RL:[I
+    iput-object p1, p0, Lcom/android/server/power/ugm;->QL:[I
 
     iget-boolean p1, p0, Lcom/android/server/power/ugm;->mDeviceIdleMode:Z
 
@@ -4466,11 +4498,11 @@
 .method zta(Lcom/android/server/power/PowerManagerService$WakeLock;)Z
     .locals 2
 
-    iget-boolean v0, p0, Lcom/android/server/power/ugm;->GL:Z
+    iget-boolean v0, p0, Lcom/android/server/power/ugm;->FL:Z
 
     if-eqz v0, :cond_1
 
-    iget-object v0, p0, Lcom/android/server/power/ugm;->FL:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/android/server/power/ugm;->EL:Ljava/util/HashMap;
 
     iget-object v1, p1, Lcom/android/server/power/PowerManagerService$WakeLock;->mPackageName:Ljava/lang/String;
 
@@ -4480,7 +4512,7 @@
 
     if-eqz v0, :cond_1
 
-    iget-object p0, p0, Lcom/android/server/power/ugm;->FL:Ljava/util/HashMap;
+    iget-object p0, p0, Lcom/android/server/power/ugm;->EL:Ljava/util/HashMap;
 
     iget-object v0, p1, Lcom/android/server/power/PowerManagerService$WakeLock;->mPackageName:Ljava/lang/String;
 

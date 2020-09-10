@@ -82,7 +82,7 @@
     return-void
 .end method
 
-.method private Qo()V
+.method private Po()V
     .locals 13
 
     new-instance v0, Landroid/util/ArrayMap;
@@ -129,7 +129,7 @@
 
     if-eqz v1, :cond_0
 
-    invoke-static {}, Lcom/android/server/secrecy/zta/zta/tsu;->Rd()Z
+    invoke-static {}, Lcom/android/server/secrecy/zta/zta/tsu;->Qd()Z
 
     move-result v1
 
@@ -148,7 +148,7 @@
     return-void
 
     :cond_0
-    invoke-direct {p0}, Lcom/android/server/secrecy/sis;->Ro()Ljava/lang/String;
+    invoke-direct {p0}, Lcom/android/server/secrecy/sis;->Qo()Ljava/lang/String;
 
     move-result-object v1
 
@@ -159,7 +159,7 @@
     :cond_1
     iget-object v6, p0, Lcom/android/server/secrecy/sis;->mPolicyManager:Lcom/android/server/secrecy/zta/sis;
 
-    invoke-virtual {v6}, Lcom/android/server/secrecy/zta/sis;->Gd()Z
+    invoke-virtual {v6}, Lcom/android/server/secrecy/zta/sis;->Fd()Z
 
     move-result v6
 
@@ -404,7 +404,7 @@
     return-void
 .end method
 
-.method private Ro()Ljava/lang/String;
+.method private Qo()Ljava/lang/String;
     .locals 4
 
     new-instance p0, Ljava/io/File;
@@ -532,7 +532,7 @@
     throw p0
 .end method
 
-.method private So()V
+.method private Ro()V
     .locals 10
 
     iget-object v0, p0, Lcom/android/server/secrecy/sis;->tM:[B
@@ -589,7 +589,7 @@
 
     iget-object v6, p0, Lcom/android/server/secrecy/sis;->mPolicyManager:Lcom/android/server/secrecy/zta/sis;
 
-    invoke-virtual {v6}, Lcom/android/server/secrecy/zta/sis;->Bd()Ljava/lang/Long;
+    invoke-virtual {v6}, Lcom/android/server/secrecy/zta/sis;->Ad()Ljava/lang/Long;
 
     move-result-object v6
 
@@ -862,7 +862,7 @@
 .method static synthetic sis(Lcom/android/server/secrecy/sis;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/secrecy/sis;->So()V
+    invoke-direct {p0}, Lcom/android/server/secrecy/sis;->Ro()V
 
     return-void
 .end method
@@ -878,7 +878,7 @@
 .method static synthetic zta(Lcom/android/server/secrecy/sis;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/secrecy/sis;->Qo()V
+    invoke-direct {p0}, Lcom/android/server/secrecy/sis;->Po()V
 
     return-void
 .end method

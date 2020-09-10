@@ -299,7 +299,7 @@
     return-void
 .end method
 
-.method private Cl()V
+.method private Bl()V
     .locals 6
 
     iget-object v0, p0, Lcom/android/server/fto;->mContext:Landroid/content/Context;
@@ -324,7 +324,7 @@
 
     new-array v3, v1, [I
 
-    const/16 v4, 0xcd
+    const/16 v4, 0xce
 
     const/4 v5, 0x0
 
@@ -372,7 +372,7 @@
     :cond_1
     new-array v1, v1, [I
 
-    const/16 v3, 0xf9
+    const/16 v3, 0xfa
 
     aput v3, v1, v5
 
@@ -417,7 +417,7 @@
     return-void
 .end method
 
-.method private Dl()Z
+.method private Cl()Z
     .locals 3
 
     iget-object p0, p0, Lcom/android/server/fto;->mContext:Landroid/content/Context;
@@ -444,7 +444,7 @@
     return v0
 .end method
 
-.method private El()Z
+.method private Dl()Z
     .locals 4
 
     iget-object p0, p0, Lcom/android/server/fto;->mContext:Landroid/content/Context;
@@ -491,7 +491,7 @@
     return p0
 .end method
 
-.method private Fl()Z
+.method private El()Z
     .locals 2
 
     iget-object p0, p0, Lcom/android/server/fto;->mContext:Landroid/content/Context;
@@ -517,7 +517,7 @@
     return p0
 .end method
 
-.method private declared-synchronized Gl()V
+.method private declared-synchronized Fl()V
     .locals 6
 
     monitor-enter p0
@@ -1612,7 +1612,7 @@
 .method static synthetic zta(Lcom/android/server/fto;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/fto;->Gl()V
+    invoke-direct {p0}, Lcom/android/server/fto;->Fl()V
 
     return-void
 .end method
@@ -1643,7 +1643,7 @@
     monitor-enter p2
 
     :try_start_0
-    invoke-direct {p0}, Lcom/android/server/fto;->Dl()Z
+    invoke-direct {p0}, Lcom/android/server/fto;->Cl()Z
 
     move-result p3
 
@@ -1670,7 +1670,7 @@
 
     new-array p5, p3, [I
 
-    const/16 p6, 0xcd
+    const/16 p6, 0xce
 
     const/4 v0, 0x0
 
@@ -1682,7 +1682,7 @@
 
     if-eqz p5, :cond_2
 
-    invoke-direct {p0}, Lcom/android/server/fto;->Fl()Z
+    invoke-direct {p0}, Lcom/android/server/fto;->El()Z
 
     move-result p5
 
@@ -1796,7 +1796,7 @@
     :cond_7
     new-array p3, p3, [I
 
-    const/16 p4, 0xf9
+    const/16 p4, 0xfa
 
     aput p4, p3, v0
 
@@ -1883,7 +1883,7 @@
     :try_start_0
     new-array v1, v0, [I
 
-    const/16 v2, 0xcd
+    const/16 v2, 0xce
 
     const/4 v3, 0x0
 
@@ -1895,7 +1895,7 @@
 
     if-eqz v1, :cond_2
 
-    invoke-direct {p0}, Lcom/android/server/fto;->Fl()Z
+    invoke-direct {p0}, Lcom/android/server/fto;->El()Z
 
     move-result v1
 
@@ -2083,7 +2083,7 @@
 
     invoke-virtual {p1, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    invoke-direct {p0}, Lcom/android/server/fto;->Gl()V
+    invoke-direct {p0}, Lcom/android/server/fto;->Fl()V
 
     new-instance p1, Lcom/android/server/fto$tsu;
 
@@ -2134,7 +2134,7 @@
     :cond_6
     new-array p1, v0, [I
 
-    const/16 v0, 0xf9
+    const/16 v0, 0xfa
 
     aput v0, p1, v3
 
@@ -2176,7 +2176,7 @@
     invoke-virtual {p1}, Lcom/oneplus/config/ConfigObserver;->register()V
 
     :cond_8
-    invoke-direct {p0}, Lcom/android/server/fto;->Cl()V
+    invoke-direct {p0}, Lcom/android/server/fto;->Bl()V
 
     return-void
 

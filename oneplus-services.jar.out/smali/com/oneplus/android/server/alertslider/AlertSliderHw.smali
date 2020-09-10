@@ -644,7 +644,7 @@
 
 
 # virtual methods
-.method public Ge()Z
+.method public Fe()Z
     .locals 4
 
     sget-boolean p0, Lcom/oneplus/android/server/alertslider/AlertSliderHw;->DEBUG:Z
@@ -711,7 +711,7 @@
 
     if-eqz v0, :cond_6
 
-    invoke-virtual {p0}, Lcom/oneplus/android/server/alertslider/AlertSliderHw;->Ge()Z
+    invoke-virtual {p0}, Lcom/oneplus/android/server/alertslider/AlertSliderHw;->Fe()Z
 
     move-result v0
 

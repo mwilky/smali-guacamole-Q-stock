@@ -184,7 +184,7 @@
     return-void
 .end method
 
-.method private Yo()Ljava/lang/String;
+.method private Xo()Ljava/lang/String;
     .locals 0
 
     iget-object p0, p0, Lcom/android/server/you/tsu;->QN:Ljava/lang/String;
@@ -203,7 +203,7 @@
 .method static synthetic cno(Lcom/android/server/you/tsu;)Ljava/lang/String;
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/you/tsu;->Yo()Ljava/lang/String;
+    invoke-direct {p0}, Lcom/android/server/you/tsu;->Xo()Ljava/lang/String;
 
     move-result-object p0
 

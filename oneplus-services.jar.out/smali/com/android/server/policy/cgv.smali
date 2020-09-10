@@ -9,37 +9,37 @@
 # static fields
 .field private static final TAG:Ljava/lang/String; = "OpScreenshotImprovement"
 
-.field private static final dH:J = 0x2bcL
+.field private static final cH:J = 0x2bcL
 
-.field private static final eH:J = 0x1f4L
+.field private static final dH:J = 0x1f4L
 
-.field private static final fH:J = 0x7d0L
+.field private static final eH:J = 0x7d0L
 
 
 # instance fields
 .field private final FLAG_INTERACTIVE:I
 
-.field private TG:Lcom/android/server/policy/OpPhoneWindowManager;
+.field private SG:Lcom/android/server/policy/OpPhoneWindowManager;
+
+.field private TG:Z
 
 .field private UG:Z
 
-.field private VG:Z
+.field private VG:J
 
 .field private WG:J
 
-.field private XG:J
+.field private XG:Z
 
 .field private YG:Z
 
-.field private ZG:Z
+.field private ZG:J
 
-.field private _G:J
+.field private _G:Z
 
-.field private aH:Z
+.field private aH:J
 
 .field private bH:J
-
-.field private cH:J
 
 .field private mContext:Landroid/content/Context;
 
@@ -56,7 +56,7 @@
 
     const-wide/16 v0, 0x0
 
-    iput-wide v0, p0, Lcom/android/server/policy/cgv;->cH:J
+    iput-wide v0, p0, Lcom/android/server/policy/cgv;->bH:J
 
     iput-object p1, p0, Lcom/android/server/policy/cgv;->mContext:Landroid/content/Context;
 
@@ -74,7 +74,7 @@
 
     check-cast v0, Lcom/android/server/policy/OpPhoneWindowManager;
 
-    iput-object v0, p0, Lcom/android/server/policy/cgv;->TG:Lcom/android/server/policy/OpPhoneWindowManager;
+    iput-object v0, p0, Lcom/android/server/policy/cgv;->SG:Lcom/android/server/policy/OpPhoneWindowManager;
 
     sget-boolean p0, Landroid/os/Build;->DEBUG_ONEPLUS:Z
 
@@ -95,15 +95,15 @@
 
     if-eqz p1, :cond_0
 
-    iget-boolean p1, p0, Lcom/android/server/policy/cgv;->UG:Z
+    iget-boolean p1, p0, Lcom/android/server/policy/cgv;->TG:Z
 
     if-eqz p1, :cond_0
 
-    iget-boolean p1, p0, Lcom/android/server/policy/cgv;->ZG:Z
+    iget-boolean p1, p0, Lcom/android/server/policy/cgv;->YG:Z
 
     if-eqz p1, :cond_0
 
-    iget-boolean p1, p0, Lcom/android/server/policy/cgv;->aH:Z
+    iget-boolean p1, p0, Lcom/android/server/policy/cgv;->_G:Z
 
     if-nez p1, :cond_0
 
@@ -111,7 +111,7 @@
 
     move-result-wide v0
 
-    iget-wide v2, p0, Lcom/android/server/policy/cgv;->WG:J
+    iget-wide v2, p0, Lcom/android/server/policy/cgv;->VG:J
 
     const-wide/16 v4, 0x2bc
 
@@ -121,7 +121,7 @@
 
     if-gtz p1, :cond_0
 
-    iget-wide v2, p0, Lcom/android/server/policy/cgv;->_G:J
+    iget-wide v2, p0, Lcom/android/server/policy/cgv;->ZG:J
 
     add-long/2addr v2, v4
 
@@ -131,7 +131,7 @@
 
     const/4 p1, 0x1
 
-    iput-boolean p1, p0, Lcom/android/server/policy/cgv;->YG:Z
+    iput-boolean p1, p0, Lcom/android/server/policy/cgv;->XG:Z
 
     :cond_0
     return-void
@@ -173,7 +173,7 @@
     const/4 v4, 0x0
 
     :goto_0
-    iget-boolean v6, v0, Lcom/android/server/policy/cgv;->UG:Z
+    iget-boolean v6, v0, Lcom/android/server/policy/cgv;->TG:Z
 
     const-wide/16 v7, 0x64
 
@@ -185,15 +185,15 @@
 
     if-eqz v6, :cond_3
 
-    iget-boolean v6, v0, Lcom/android/server/policy/cgv;->aH:Z
+    iget-boolean v6, v0, Lcom/android/server/policy/cgv;->_G:Z
 
     if-nez v6, :cond_3
 
-    iget-wide v5, v0, Lcom/android/server/policy/cgv;->WG:J
+    iget-wide v5, v0, Lcom/android/server/policy/cgv;->VG:J
 
     move v15, v3
 
-    iget-wide v2, v0, Lcom/android/server/policy/cgv;->cH:J
+    iget-wide v2, v0, Lcom/android/server/policy/cgv;->bH:J
 
     sub-long/2addr v5, v2
 
@@ -212,7 +212,7 @@
 
     move-result-wide v2
 
-    iget-wide v5, v0, Lcom/android/server/policy/cgv;->WG:J
+    iget-wide v5, v0, Lcom/android/server/policy/cgv;->VG:J
 
     add-long/2addr v5, v9
 
@@ -236,17 +236,17 @@
 
     if-ne v3, v2, :cond_6
 
-    iget-boolean v5, v0, Lcom/android/server/policy/cgv;->YG:Z
+    iget-boolean v5, v0, Lcom/android/server/policy/cgv;->XG:Z
 
     if-eqz v5, :cond_6
 
     if-nez v4, :cond_5
 
-    iput-wide v13, v0, Lcom/android/server/policy/cgv;->cH:J
+    iput-wide v13, v0, Lcom/android/server/policy/cgv;->bH:J
 
     const/4 v1, 0x0
 
-    iput-boolean v1, v0, Lcom/android/server/policy/cgv;->YG:Z
+    iput-boolean v1, v0, Lcom/android/server/policy/cgv;->XG:Z
 
     :cond_5
     new-instance v0, Ljava/lang/Long;
@@ -258,19 +258,19 @@
     return-object v0
 
     :cond_6
-    iget-boolean v5, v0, Lcom/android/server/policy/cgv;->VG:Z
+    iget-boolean v5, v0, Lcom/android/server/policy/cgv;->UG:Z
 
     if-eqz v5, :cond_8
 
-    iget-boolean v5, v0, Lcom/android/server/policy/cgv;->aH:Z
+    iget-boolean v5, v0, Lcom/android/server/policy/cgv;->_G:Z
 
     if-nez v5, :cond_8
 
-    iget-wide v5, v0, Lcom/android/server/policy/cgv;->XG:J
+    iget-wide v5, v0, Lcom/android/server/policy/cgv;->WG:J
 
     move/from16 v16, v3
 
-    iget-wide v2, v0, Lcom/android/server/policy/cgv;->cH:J
+    iget-wide v2, v0, Lcom/android/server/policy/cgv;->bH:J
 
     sub-long/2addr v5, v2
 
@@ -289,7 +289,7 @@
 
     move-result-wide v2
 
-    iget-wide v5, v0, Lcom/android/server/policy/cgv;->XG:J
+    iget-wide v5, v0, Lcom/android/server/policy/cgv;->WG:J
 
     add-long/2addr v5, v9
 
@@ -317,7 +317,7 @@
 
     if-ne v1, v2, :cond_a
 
-    iget-boolean v1, v0, Lcom/android/server/policy/cgv;->YG:Z
+    iget-boolean v1, v0, Lcom/android/server/policy/cgv;->XG:Z
 
     if-eqz v1, :cond_a
 
@@ -325,7 +325,7 @@
 
     const/4 v1, 0x0
 
-    iput-boolean v1, v0, Lcom/android/server/policy/cgv;->YG:Z
+    iput-boolean v1, v0, Lcom/android/server/policy/cgv;->XG:Z
 
     :cond_a
     const/4 v0, 0x0
@@ -380,7 +380,7 @@
 
     if-eqz p2, :cond_5
 
-    iget-boolean p2, p0, Lcom/android/server/policy/cgv;->UG:Z
+    iget-boolean p2, p0, Lcom/android/server/policy/cgv;->TG:Z
 
     if-nez p2, :cond_5
 
@@ -392,17 +392,17 @@
 
     if-nez p2, :cond_5
 
-    iput-boolean v0, p0, Lcom/android/server/policy/cgv;->UG:Z
+    iput-boolean v0, p0, Lcom/android/server/policy/cgv;->TG:Z
 
     invoke-virtual {p1}, Landroid/view/KeyEvent;->getDownTime()J
 
     move-result-wide p1
 
-    iput-wide p1, p0, Lcom/android/server/policy/cgv;->WG:J
+    iput-wide p1, p0, Lcom/android/server/policy/cgv;->VG:J
 
-    iput-boolean v1, p0, Lcom/android/server/policy/cgv;->YG:Z
+    iput-boolean v1, p0, Lcom/android/server/policy/cgv;->XG:Z
 
-    iget-boolean p1, p0, Lcom/android/server/policy/cgv;->YG:Z
+    iget-boolean p1, p0, Lcom/android/server/policy/cgv;->XG:Z
 
     if-eqz p1, :cond_5
 
@@ -411,14 +411,14 @@
     goto :goto_2
 
     :cond_2
-    iput-boolean v1, p0, Lcom/android/server/policy/cgv;->UG:Z
+    iput-boolean v1, p0, Lcom/android/server/policy/cgv;->TG:Z
 
     invoke-virtual {p1}, Landroid/view/KeyEvent;->getEventTime()J
 
     move-result-wide p1
 
     :goto_2
-    iput-wide p1, p0, Lcom/android/server/policy/cgv;->cH:J
+    iput-wide p1, p0, Lcom/android/server/policy/cgv;->bH:J
 
     goto :goto_3
 
@@ -431,7 +431,7 @@
 
     if-eqz p2, :cond_5
 
-    iget-boolean p2, p0, Lcom/android/server/policy/cgv;->ZG:Z
+    iget-boolean p2, p0, Lcom/android/server/policy/cgv;->YG:Z
 
     if-nez p2, :cond_5
 
@@ -443,28 +443,28 @@
 
     if-nez p2, :cond_5
 
-    iput-boolean v0, p0, Lcom/android/server/policy/cgv;->ZG:Z
+    iput-boolean v0, p0, Lcom/android/server/policy/cgv;->YG:Z
 
     invoke-virtual {p1}, Landroid/view/KeyEvent;->getDownTime()J
 
     move-result-wide v1
 
-    iput-wide v1, p0, Lcom/android/server/policy/cgv;->_G:J
+    iput-wide v1, p0, Lcom/android/server/policy/cgv;->ZG:J
 
-    iput-boolean v0, p0, Lcom/android/server/policy/cgv;->VG:Z
+    iput-boolean v0, p0, Lcom/android/server/policy/cgv;->UG:Z
 
     invoke-virtual {p1}, Landroid/view/KeyEvent;->getDownTime()J
 
     move-result-wide p1
 
-    iput-wide p1, p0, Lcom/android/server/policy/cgv;->XG:J
+    iput-wide p1, p0, Lcom/android/server/policy/cgv;->WG:J
 
     goto :goto_3
 
     :cond_4
-    iput-boolean v1, p0, Lcom/android/server/policy/cgv;->ZG:Z
+    iput-boolean v1, p0, Lcom/android/server/policy/cgv;->YG:Z
 
-    iput-boolean v1, p0, Lcom/android/server/policy/cgv;->VG:Z
+    iput-boolean v1, p0, Lcom/android/server/policy/cgv;->UG:Z
 
     invoke-virtual {p1}, Landroid/view/KeyEvent;->getDownTime()J
 
@@ -482,7 +482,7 @@
 
     if-eqz p2, :cond_0
 
-    iget-boolean p2, p0, Lcom/android/server/policy/cgv;->aH:Z
+    iget-boolean p2, p0, Lcom/android/server/policy/cgv;->_G:Z
 
     if-nez p2, :cond_0
 
@@ -496,13 +496,13 @@
 
     const/4 p2, 0x1
 
-    iput-boolean p2, p0, Lcom/android/server/policy/cgv;->aH:Z
+    iput-boolean p2, p0, Lcom/android/server/policy/cgv;->_G:Z
 
     invoke-virtual {p1}, Landroid/view/KeyEvent;->getDownTime()J
 
     move-result-wide p1
 
-    iput-wide p1, p0, Lcom/android/server/policy/cgv;->bH:J
+    iput-wide p1, p0, Lcom/android/server/policy/cgv;->aH:J
 
     :cond_0
     return-void
@@ -513,7 +513,7 @@
 
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/android/server/policy/cgv;->aH:Z
+    iput-boolean v0, p0, Lcom/android/server/policy/cgv;->_G:Z
 
     return-void
 .end method
@@ -521,21 +521,21 @@
 .method public interceptScreenshotChord()V
     .locals 7
 
-    iget-boolean v0, p0, Lcom/android/server/policy/cgv;->aH:Z
+    iget-boolean v0, p0, Lcom/android/server/policy/cgv;->_G:Z
 
     if-eqz v0, :cond_3
 
     const/4 v0, 0x0
 
-    iget-boolean v1, p0, Lcom/android/server/policy/cgv;->UG:Z
+    iget-boolean v1, p0, Lcom/android/server/policy/cgv;->TG:Z
 
     const/4 v2, 0x1
 
     if-eqz v1, :cond_1
 
-    iget-wide v3, p0, Lcom/android/server/policy/cgv;->WG:J
+    iget-wide v3, p0, Lcom/android/server/policy/cgv;->VG:J
 
-    iget-wide v5, p0, Lcom/android/server/policy/cgv;->bH:J
+    iget-wide v5, p0, Lcom/android/server/policy/cgv;->aH:J
 
     cmp-long v1, v3, v5
 
@@ -555,9 +555,9 @@
     goto :goto_1
 
     :cond_0
-    iget-wide v3, p0, Lcom/android/server/policy/cgv;->bH:J
+    iget-wide v3, p0, Lcom/android/server/policy/cgv;->aH:J
 
-    iget-wide v5, p0, Lcom/android/server/policy/cgv;->WG:J
+    iget-wide v5, p0, Lcom/android/server/policy/cgv;->VG:J
 
     cmp-long v1, v3, v5
 
@@ -577,14 +577,14 @@
     :goto_1
     if-eqz v0, :cond_3
 
-    iget-boolean v0, p0, Lcom/android/server/policy/cgv;->UG:Z
+    iget-boolean v0, p0, Lcom/android/server/policy/cgv;->TG:Z
 
     if-eqz v0, :cond_2
 
-    iput-boolean v2, p0, Lcom/android/server/policy/cgv;->YG:Z
+    iput-boolean v2, p0, Lcom/android/server/policy/cgv;->XG:Z
 
     :cond_2
-    iget-object p0, p0, Lcom/android/server/policy/cgv;->TG:Lcom/android/server/policy/OpPhoneWindowManager;
+    iget-object p0, p0, Lcom/android/server/policy/cgv;->SG:Lcom/android/server/policy/OpPhoneWindowManager;
 
     invoke-virtual {p0}, Lcom/android/server/policy/OpPhoneWindowManager;->postScreenshotRunnable()V
 

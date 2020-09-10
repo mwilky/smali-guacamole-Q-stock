@@ -37,7 +37,7 @@
 
 
 # virtual methods
-.method Pk()Z
+.method Ok()Z
     .locals 0
 
     iget-boolean p0, p0, Lyou/zta/sis/zta/oxb;->sHa:Z
@@ -45,7 +45,7 @@
     return p0
 .end method
 
-.method Qk()Z
+.method Pk()Z
     .locals 0
 
     iget-boolean p0, p0, Lyou/zta/sis/zta/oxb;->rHa:Z
@@ -53,7 +53,7 @@
     return p0
 .end method
 
-.method Rk()Z
+.method Qk()Z
     .locals 0
 
     iget-boolean p0, p0, Lyou/zta/sis/zta/oxb;->tHa:Z
@@ -61,7 +61,7 @@
     return p0
 .end method
 
-.method Sk()V
+.method Rk()V
     .locals 1
 
     const/4 v0, 0x1
@@ -71,7 +71,7 @@
     return-void
 .end method
 
-.method Tk()V
+.method Sk()V
     .locals 1
 
     const/4 v0, 0x1
@@ -81,7 +81,7 @@
     return-void
 .end method
 
-.method Uk()V
+.method Tk()V
     .locals 1
 
     const/4 v0, 0x1

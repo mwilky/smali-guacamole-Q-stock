@@ -255,7 +255,7 @@
     return-object p0
 .end method
 
-.method private wl()Z
+.method private vl()Z
     .locals 2
 
     iget-object v0, p0, Lcom/android/server/qbh;->mLocationManager:Landroid/location/LocationManager;

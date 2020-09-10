@@ -635,7 +635,7 @@
 
     check-cast p1, Lorg/bouncycastle/jcajce/provider/symmetric/util/BCPBEKey;
 
-    invoke-virtual {p1}, Lorg/bouncycastle/jcajce/provider/symmetric/util/BCPBEKey;->he()Lorg/bouncycastle/crypto/kth;
+    invoke-virtual {p1}, Lorg/bouncycastle/jcajce/provider/symmetric/util/BCPBEKey;->ge()Lorg/bouncycastle/crypto/kth;
 
     move-result-object p0
 
@@ -1389,7 +1389,7 @@
 
     check-cast v5, Lorg/bouncycastle/jcajce/provider/symmetric/util/BCPBEKey;
 
-    invoke-virtual {v5}, Lorg/bouncycastle/jcajce/provider/symmetric/util/BCPBEKey;->he()Lorg/bouncycastle/crypto/kth;
+    invoke-virtual {v5}, Lorg/bouncycastle/jcajce/provider/symmetric/util/BCPBEKey;->ge()Lorg/bouncycastle/crypto/kth;
 
     move-result-object v5
 
@@ -1477,13 +1477,13 @@
 
     check-cast v5, Lorg/bouncycastle/jcajce/provider/symmetric/util/BCPBEKey;
 
-    invoke-virtual {v5}, Lorg/bouncycastle/jcajce/provider/symmetric/util/BCPBEKey;->Yi()Lorg/bouncycastle/asn1/bvj;
+    invoke-virtual {v5}, Lorg/bouncycastle/jcajce/provider/symmetric/util/BCPBEKey;->Xi()Lorg/bouncycastle/asn1/bvj;
 
     move-result-object v7
 
     if-eqz v7, :cond_e
 
-    invoke-virtual {v5}, Lorg/bouncycastle/jcajce/provider/symmetric/util/BCPBEKey;->Yi()Lorg/bouncycastle/asn1/bvj;
+    invoke-virtual {v5}, Lorg/bouncycastle/jcajce/provider/symmetric/util/BCPBEKey;->Xi()Lorg/bouncycastle/asn1/bvj;
 
     move-result-object v7
 
@@ -1501,13 +1501,13 @@
     :goto_4
     iput-object v7, v0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis;->ara:Ljava/lang/String;
 
-    invoke-virtual {v5}, Lorg/bouncycastle/jcajce/provider/symmetric/util/BCPBEKey;->he()Lorg/bouncycastle/crypto/kth;
+    invoke-virtual {v5}, Lorg/bouncycastle/jcajce/provider/symmetric/util/BCPBEKey;->ge()Lorg/bouncycastle/crypto/kth;
 
     move-result-object v7
 
     if-eqz v7, :cond_f
 
-    invoke-virtual {v5}, Lorg/bouncycastle/jcajce/provider/symmetric/util/BCPBEKey;->he()Lorg/bouncycastle/crypto/kth;
+    invoke-virtual {v5}, Lorg/bouncycastle/jcajce/provider/symmetric/util/BCPBEKey;->ge()Lorg/bouncycastle/crypto/kth;
 
     move-result-object v5
 
@@ -1552,7 +1552,7 @@
 
     move-result-object v11
 
-    invoke-virtual {v5}, Lorg/bouncycastle/jcajce/provider/symmetric/util/BCPBEKey;->Yi()Lorg/bouncycastle/asn1/bvj;
+    invoke-virtual {v5}, Lorg/bouncycastle/jcajce/provider/symmetric/util/BCPBEKey;->Xi()Lorg/bouncycastle/asn1/bvj;
 
     move-result-object v12
 
@@ -1560,7 +1560,7 @@
 
     move-result v13
 
-    invoke-virtual {v5}, Lorg/bouncycastle/jcajce/provider/symmetric/util/BCPBEKey;->Tf()I
+    invoke-virtual {v5}, Lorg/bouncycastle/jcajce/provider/symmetric/util/BCPBEKey;->Sf()I
 
     move-result v14
 
@@ -1568,7 +1568,7 @@
 
     move-result v15
 
-    invoke-virtual {v5}, Lorg/bouncycastle/jcajce/provider/symmetric/util/BCPBEKey;->Jj()I
+    invoke-virtual {v5}, Lorg/bouncycastle/jcajce/provider/symmetric/util/BCPBEKey;->Ij()I
 
     move-result v16
 
@@ -1793,7 +1793,7 @@
 
     new-instance v6, Lorg/bouncycastle/crypto/wtn/zta;
 
-    invoke-virtual {v3}, Lorg/bouncycastle/jcajce/sis/zta;->xg()I
+    invoke-virtual {v3}, Lorg/bouncycastle/jcajce/sis/zta;->wg()I
 
     move-result v8
 
@@ -1801,7 +1801,7 @@
 
     move-result-object v9
 
-    invoke-virtual {v3}, Lorg/bouncycastle/jcajce/sis/zta;->wg()[B
+    invoke-virtual {v3}, Lorg/bouncycastle/jcajce/sis/zta;->vg()[B
 
     move-result-object v3
 
@@ -2084,7 +2084,7 @@
 
     if-nez v4, :cond_26
 
-    invoke-static {}, Lorg/bouncycastle/crypto/igw;->gj()Ljava/security/SecureRandom;
+    invoke-static {}, Lorg/bouncycastle/crypto/igw;->fj()Ljava/security/SecureRandom;
 
     move-result-object v3
 

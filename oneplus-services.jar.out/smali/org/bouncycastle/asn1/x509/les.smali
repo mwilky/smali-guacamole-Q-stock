@@ -152,14 +152,6 @@
 .method public Ai()Ljava/math/BigInteger;
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/asn1/x509/les;->Mva:Ljava/math/BigInteger;
-
-    return-object p0
-.end method
-
-.method public Bi()Ljava/math/BigInteger;
-    .locals 0
-
     iget-object p0, p0, Lorg/bouncycastle/asn1/x509/les;->Lva:Ljava/math/BigInteger;
 
     return-object p0
@@ -209,6 +201,14 @@
     new-instance p0, Lorg/bouncycastle/asn1/G;
 
     invoke-direct {p0, v0}, Lorg/bouncycastle/asn1/G;-><init>(Lorg/bouncycastle/asn1/cno;)V
+
+    return-object p0
+.end method
+
+.method public zi()Ljava/math/BigInteger;
+    .locals 0
+
+    iget-object p0, p0, Lorg/bouncycastle/asn1/x509/les;->Mva:Ljava/math/BigInteger;
 
     return-object p0
 .end method

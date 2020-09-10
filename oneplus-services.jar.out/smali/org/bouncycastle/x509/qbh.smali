@@ -45,15 +45,15 @@
     iput-object p1, p0, Lorg/bouncycastle/x509/qbh;->PIa:Lorg/bouncycastle/asn1/x509/rtg;
 
     :try_start_0
-    invoke-virtual {p1}, Lorg/bouncycastle/asn1/x509/rtg;->Qh()Lorg/bouncycastle/asn1/x509/ssp;
+    invoke-virtual {p1}, Lorg/bouncycastle/asn1/x509/rtg;->Ph()Lorg/bouncycastle/asn1/x509/ssp;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lorg/bouncycastle/asn1/x509/ssp;->Sh()Lorg/bouncycastle/asn1/x509/sis;
+    invoke-virtual {v0}, Lorg/bouncycastle/asn1/x509/ssp;->Rh()Lorg/bouncycastle/asn1/x509/sis;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lorg/bouncycastle/asn1/x509/sis;->Oh()Lorg/bouncycastle/asn1/wtn;
+    invoke-virtual {v0}, Lorg/bouncycastle/asn1/x509/sis;->Nh()Lorg/bouncycastle/asn1/wtn;
 
     move-result-object v0
 
@@ -63,15 +63,15 @@
 
     iput-object v0, p0, Lorg/bouncycastle/x509/qbh;->RIa:Ljava/util/Date;
 
-    invoke-virtual {p1}, Lorg/bouncycastle/asn1/x509/rtg;->Qh()Lorg/bouncycastle/asn1/x509/ssp;
+    invoke-virtual {p1}, Lorg/bouncycastle/asn1/x509/rtg;->Ph()Lorg/bouncycastle/asn1/x509/ssp;
 
     move-result-object p1
 
-    invoke-virtual {p1}, Lorg/bouncycastle/asn1/x509/ssp;->Sh()Lorg/bouncycastle/asn1/x509/sis;
+    invoke-virtual {p1}, Lorg/bouncycastle/asn1/x509/ssp;->Rh()Lorg/bouncycastle/asn1/x509/sis;
 
     move-result-object p1
 
-    invoke-virtual {p1}, Lorg/bouncycastle/asn1/x509/sis;->Ph()Lorg/bouncycastle/asn1/wtn;
+    invoke-virtual {p1}, Lorg/bouncycastle/asn1/x509/sis;->Oh()Lorg/bouncycastle/asn1/wtn;
 
     move-result-object p1
 
@@ -117,7 +117,7 @@
 
     iget-object p0, p0, Lorg/bouncycastle/x509/qbh;->PIa:Lorg/bouncycastle/asn1/x509/rtg;
 
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/x509/rtg;->Qh()Lorg/bouncycastle/asn1/x509/ssp;
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/x509/rtg;->Ph()Lorg/bouncycastle/asn1/x509/ssp;
 
     move-result-object p0
 
@@ -131,7 +131,7 @@
 
     invoke-direct {v0}, Ljava/util/HashSet;-><init>()V
 
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/x509/ugm;->ii()Ljava/util/Enumeration;
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/x509/ugm;->hi()Ljava/util/Enumeration;
 
     move-result-object v1
 
@@ -384,7 +384,7 @@
 
     iget-object p0, p0, Lorg/bouncycastle/x509/qbh;->PIa:Lorg/bouncycastle/asn1/x509/rtg;
 
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/x509/rtg;->Qh()Lorg/bouncycastle/asn1/x509/ssp;
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/x509/rtg;->Ph()Lorg/bouncycastle/asn1/x509/ssp;
 
     move-result-object p0
 
@@ -430,7 +430,7 @@
 
     iget-object p0, p0, Lorg/bouncycastle/x509/qbh;->PIa:Lorg/bouncycastle/asn1/x509/rtg;
 
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/x509/rtg;->Qh()Lorg/bouncycastle/asn1/x509/ssp;
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/x509/rtg;->Ph()Lorg/bouncycastle/asn1/x509/ssp;
 
     move-result-object p0
 
@@ -459,7 +459,7 @@
 
     invoke-direct {v2, v3}, Lorg/bouncycastle/x509/ssp;-><init>(Lorg/bouncycastle/asn1/ssp;)V
 
-    invoke-virtual {v2}, Lorg/bouncycastle/x509/ssp;->Yi()Ljava/lang/String;
+    invoke-virtual {v2}, Lorg/bouncycastle/x509/ssp;->Xi()Ljava/lang/String;
 
     move-result-object v3
 
@@ -537,7 +537,7 @@
 
     iget-object p0, p0, Lorg/bouncycastle/x509/qbh;->PIa:Lorg/bouncycastle/asn1/x509/rtg;
 
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/x509/rtg;->Qh()Lorg/bouncycastle/asn1/x509/ssp;
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/x509/rtg;->Ph()Lorg/bouncycastle/asn1/x509/ssp;
 
     move-result-object p0
 
@@ -558,7 +558,7 @@
     if-eqz p0, :cond_0
 
     :try_start_0
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/x509/gwm;->fi()Lorg/bouncycastle/asn1/ibl;
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/x509/gwm;->ei()Lorg/bouncycastle/asn1/ibl;
 
     move-result-object p0
 
@@ -612,7 +612,7 @@
 
     iget-object p0, p0, Lorg/bouncycastle/x509/qbh;->PIa:Lorg/bouncycastle/asn1/x509/rtg;
 
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/x509/rtg;->Qh()Lorg/bouncycastle/asn1/x509/ssp;
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/x509/rtg;->Ph()Lorg/bouncycastle/asn1/x509/ssp;
 
     move-result-object p0
 
@@ -638,7 +638,7 @@
 
     iget-object p0, p0, Lorg/bouncycastle/x509/qbh;->PIa:Lorg/bouncycastle/asn1/x509/rtg;
 
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/x509/rtg;->Qh()Lorg/bouncycastle/asn1/x509/ssp;
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/x509/rtg;->Ph()Lorg/bouncycastle/asn1/x509/ssp;
 
     move-result-object p0
 
@@ -656,7 +656,7 @@
 
     iget-object p0, p0, Lorg/bouncycastle/x509/qbh;->PIa:Lorg/bouncycastle/asn1/x509/rtg;
 
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/x509/rtg;->Qh()Lorg/bouncycastle/asn1/x509/ssp;
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/x509/rtg;->Ph()Lorg/bouncycastle/asn1/x509/ssp;
 
     move-result-object p0
 
@@ -674,7 +674,7 @@
 
     mul-int/lit8 v1, v1, 0x8
 
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/sis;->Hg()I
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/sis;->Gg()I
 
     move-result p0
 
@@ -761,7 +761,7 @@
 
     iget-object p0, p0, Lorg/bouncycastle/x509/qbh;->PIa:Lorg/bouncycastle/asn1/x509/rtg;
 
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/x509/rtg;->Qh()Lorg/bouncycastle/asn1/x509/ssp;
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/x509/rtg;->Ph()Lorg/bouncycastle/asn1/x509/ssp;
 
     move-result-object p0
 
@@ -781,7 +781,7 @@
 
     iget-object p0, p0, Lorg/bouncycastle/x509/qbh;->PIa:Lorg/bouncycastle/asn1/x509/rtg;
 
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/x509/rtg;->Rh()Lorg/bouncycastle/asn1/n;
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/x509/rtg;->Qh()Lorg/bouncycastle/asn1/n;
 
     move-result-object p0
 
@@ -797,7 +797,7 @@
 
     iget-object p0, p0, Lorg/bouncycastle/x509/qbh;->PIa:Lorg/bouncycastle/asn1/x509/rtg;
 
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/x509/rtg;->Qh()Lorg/bouncycastle/asn1/x509/ssp;
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/x509/rtg;->Ph()Lorg/bouncycastle/asn1/x509/ssp;
 
     move-result-object p0
 
@@ -880,13 +880,13 @@
 
     iget-object v0, p0, Lorg/bouncycastle/x509/qbh;->PIa:Lorg/bouncycastle/asn1/x509/rtg;
 
-    invoke-virtual {v0}, Lorg/bouncycastle/asn1/x509/rtg;->_g()Lorg/bouncycastle/asn1/x509/zta;
+    invoke-virtual {v0}, Lorg/bouncycastle/asn1/x509/rtg;->Zg()Lorg/bouncycastle/asn1/x509/zta;
 
     move-result-object v0
 
     iget-object v1, p0, Lorg/bouncycastle/x509/qbh;->PIa:Lorg/bouncycastle/asn1/x509/rtg;
 
-    invoke-virtual {v1}, Lorg/bouncycastle/asn1/x509/rtg;->Qh()Lorg/bouncycastle/asn1/x509/ssp;
+    invoke-virtual {v1}, Lorg/bouncycastle/asn1/x509/rtg;->Ph()Lorg/bouncycastle/asn1/x509/ssp;
 
     move-result-object v1
 
@@ -902,7 +902,7 @@
 
     iget-object v0, p0, Lorg/bouncycastle/x509/qbh;->PIa:Lorg/bouncycastle/asn1/x509/rtg;
 
-    invoke-virtual {v0}, Lorg/bouncycastle/asn1/x509/rtg;->_g()Lorg/bouncycastle/asn1/x509/zta;
+    invoke-virtual {v0}, Lorg/bouncycastle/asn1/x509/rtg;->Zg()Lorg/bouncycastle/asn1/x509/zta;
 
     move-result-object v0
 
@@ -923,7 +923,7 @@
     :try_start_0
     iget-object p1, p0, Lorg/bouncycastle/x509/qbh;->PIa:Lorg/bouncycastle/asn1/x509/rtg;
 
-    invoke-virtual {p1}, Lorg/bouncycastle/asn1/x509/rtg;->Qh()Lorg/bouncycastle/asn1/x509/ssp;
+    invoke-virtual {p1}, Lorg/bouncycastle/asn1/x509/rtg;->Ph()Lorg/bouncycastle/asn1/x509/ssp;
 
     move-result-object p1
 

@@ -15,7 +15,7 @@
 
 
 # static fields
-.field private static final Ew:Ljava/lang/String; = "motor_socket"
+.field private static final Dw:Ljava/lang/String; = "motor_socket"
 
 .field private static final Joa:Ljava/lang/String; = "MotorSocketServer"
 
@@ -234,7 +234,7 @@
 
 
 # virtual methods
-.method public _f()V
+.method public Zf()V
     .locals 1
 
     const/4 v0, 0x0

@@ -1548,7 +1548,7 @@
 
     aget-object v3, v0, v2
 
-    invoke-virtual {v3}, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->Vf()I
+    invoke-virtual {v3}, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->Uf()I
 
     move-result v4
 
@@ -1583,7 +1583,7 @@
 
     aget-object v3, v0, v2
 
-    invoke-virtual {v3}, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->Wf()Ljava/lang/String;
+    invoke-virtual {v3}, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->Vf()Ljava/lang/String;
 
     move-result-object v4
 
@@ -1650,17 +1650,17 @@
 
     aget-object v3, v0, v2
 
-    invoke-virtual {v3}, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->Vf()I
+    invoke-virtual {v3}, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->Uf()I
 
     move-result v4
 
-    invoke-virtual {p0}, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->Vf()I
+    invoke-virtual {p0}, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->Uf()I
 
     move-result v5
 
     if-ne v4, v5, :cond_0
 
-    invoke-virtual {v3}, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->Wf()Ljava/lang/String;
+    invoke-virtual {v3}, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->Vf()Ljava/lang/String;
 
     move-result-object p0
 
@@ -1693,17 +1693,17 @@
 
     aget-object v3, v0, v2
 
-    invoke-virtual {v3}, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->Vf()I
+    invoke-virtual {v3}, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->Uf()I
 
     move-result v4
 
-    invoke-virtual {p0}, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->Vf()I
+    invoke-virtual {p0}, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->Uf()I
 
     move-result v5
 
     if-ne v4, v5, :cond_0
 
-    invoke-virtual {v3}, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->Vf()I
+    invoke-virtual {v3}, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->Uf()I
 
     move-result p0
 
@@ -1722,7 +1722,7 @@
 
 
 # virtual methods
-.method public Vf()I
+.method public Uf()I
     .locals 0
 
     iget p0, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->knownUID:I
@@ -1730,7 +1730,7 @@
     return p0
 .end method
 
-.method public Wf()Ljava/lang/String;
+.method public Vf()Ljava/lang/String;
     .locals 0
 
     iget p0, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->knownUID:I

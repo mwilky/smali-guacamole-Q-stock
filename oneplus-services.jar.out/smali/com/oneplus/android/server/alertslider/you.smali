@@ -137,7 +137,7 @@
     return-void
 .end method
 
-.method private Ur()V
+.method private Tr()V
     .locals 4
 
     iget-object v0, p0, Lcom/oneplus/android/server/alertslider/you;->mAudioManager:Landroid/media/AudioManager;
@@ -159,7 +159,7 @@
     return-void
 .end method
 
-.method private Vr()V
+.method private Ur()V
     .locals 6
 
     iget-object v0, p0, Lcom/oneplus/android/server/alertslider/you;->mAudioService:Lcom/android/server/audio/AudioService;
@@ -179,7 +179,7 @@
     return-void
 .end method
 
-.method private Wr()V
+.method private Vr()V
     .locals 6
 
     iget-object v0, p0, Lcom/oneplus/android/server/alertslider/you;->mAudioService:Lcom/android/server/audio/AudioService;
@@ -210,7 +210,7 @@
 .method static synthetic rtg(Lcom/oneplus/android/server/alertslider/you;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/alertslider/you;->Wr()V
+    invoke-direct {p0}, Lcom/oneplus/android/server/alertslider/you;->Vr()V
 
     return-void
 .end method
@@ -226,7 +226,7 @@
 .method static synthetic tsu(Lcom/oneplus/android/server/alertslider/you;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/alertslider/you;->Vr()V
+    invoke-direct {p0}, Lcom/oneplus/android/server/alertslider/you;->Ur()V
 
     return-void
 .end method
@@ -320,7 +320,7 @@
 
     if-eqz v1, :cond_0
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/alertslider/you;->Vr()V
+    invoke-direct {p0}, Lcom/oneplus/android/server/alertslider/you;->Ur()V
 
     :cond_0
     const/4 v1, 0x2
@@ -347,7 +347,7 @@
 
     new-array v1, v1, [I
 
-    const/16 v2, 0xf0
+    const/16 v2, 0xf1
 
     aput v2, v1, v3
 
@@ -398,7 +398,7 @@
     monitor-enter v0
 
     :try_start_0
-    invoke-direct {p0}, Lcom/oneplus/android/server/alertslider/you;->Wr()V
+    invoke-direct {p0}, Lcom/oneplus/android/server/alertslider/you;->Vr()V
 
     const/4 v1, 0x2
 
@@ -428,7 +428,7 @@
 
     new-array v2, v2, [I
 
-    const/16 v3, 0xf0
+    const/16 v3, 0xf1
 
     aput v3, v2, v1
 
@@ -491,7 +491,7 @@
     monitor-enter v0
 
     :try_start_0
-    invoke-direct {p0}, Lcom/oneplus/android/server/alertslider/you;->Wr()V
+    invoke-direct {p0}, Lcom/oneplus/android/server/alertslider/you;->Vr()V
 
     const/4 v1, 0x2
 
@@ -517,7 +517,7 @@
 
     const/4 v2, 0x0
 
-    const/16 v3, 0xf0
+    const/16 v3, 0xf1
 
     aput v3, v1, v2
 

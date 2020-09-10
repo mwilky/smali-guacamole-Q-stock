@@ -52,7 +52,7 @@
     return-void
 .end method
 
-.method private _t()Lorg/bouncycastle/asn1/x509/f;
+.method private Zt()Lorg/bouncycastle/asn1/x509/f;
     .locals 2
 
     iget-object v0, p0, Lorg/bouncycastle/x509/oif;->SIa:Lorg/bouncycastle/asn1/x509/p;
@@ -252,10 +252,10 @@
     return-object p0
 .end method
 
-.method public ql()Ljava/util/Iterator;
+.method public pl()Ljava/util/Iterator;
     .locals 0
 
-    invoke-static {}, Lorg/bouncycastle/x509/dma;->pl()Ljava/util/Iterator;
+    invoke-static {}, Lorg/bouncycastle/x509/dma;->ol()Ljava/util/Iterator;
 
     move-result-object p0
 
@@ -696,7 +696,7 @@
         }
     .end annotation
 
-    invoke-direct {p0}, Lorg/bouncycastle/x509/oif;->_t()Lorg/bouncycastle/asn1/x509/f;
+    invoke-direct {p0}, Lorg/bouncycastle/x509/oif;->Zt()Lorg/bouncycastle/asn1/x509/f;
 
     move-result-object v0
 
@@ -790,7 +790,7 @@
         }
     .end annotation
 
-    invoke-direct {p0}, Lorg/bouncycastle/x509/oif;->_t()Lorg/bouncycastle/asn1/x509/f;
+    invoke-direct {p0}, Lorg/bouncycastle/x509/oif;->Zt()Lorg/bouncycastle/asn1/x509/f;
 
     move-result-object v6
 

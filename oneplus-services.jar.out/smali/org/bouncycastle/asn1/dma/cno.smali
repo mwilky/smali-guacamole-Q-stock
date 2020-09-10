@@ -40,7 +40,7 @@
 
     iput-boolean v0, p0, Lorg/bouncycastle/asn1/dma/cno;->Osa:Z
 
-    invoke-virtual {p1}, Lorg/bouncycastle/asn1/obl;->Sg()Ljava/util/Enumeration;
+    invoke-virtual {p1}, Lorg/bouncycastle/asn1/obl;->Rg()Ljava/util/Enumeration;
 
     move-result-object v0
 

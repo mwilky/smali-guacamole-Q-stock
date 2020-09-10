@@ -31,7 +31,7 @@
 
 .field static final synthetic IH:[I
 
-.field static final synthetic JH:[I
+.field static final synthetic zH:[I
 
 
 # direct methods
@@ -46,12 +46,12 @@
 
     new-array v0, v0, [I
 
-    sput-object v0, Lcom/android/server/power/kth;->JH:[I
+    sput-object v0, Lcom/android/server/power/kth;->IH:[I
 
     const/4 v0, 0x1
 
     :try_start_0
-    sget-object v1, Lcom/android/server/power/kth;->JH:[I
+    sget-object v1, Lcom/android/server/power/kth;->IH:[I
 
     sget-object v2, Lcom/android/server/power/OnePlusStandbyAnalyzer$PACKET_TYPE;->NETWORK_MOBILE_RX_DATA:Lcom/android/server/power/OnePlusStandbyAnalyzer$PACKET_TYPE;
 
@@ -67,7 +67,7 @@
     const/4 v1, 0x2
 
     :try_start_1
-    sget-object v2, Lcom/android/server/power/kth;->JH:[I
+    sget-object v2, Lcom/android/server/power/kth;->IH:[I
 
     sget-object v3, Lcom/android/server/power/OnePlusStandbyAnalyzer$PACKET_TYPE;->NETWORK_MOBILE_TX_DATA:Lcom/android/server/power/OnePlusStandbyAnalyzer$PACKET_TYPE;
 
@@ -83,7 +83,7 @@
     const/4 v2, 0x3
 
     :try_start_2
-    sget-object v3, Lcom/android/server/power/kth;->JH:[I
+    sget-object v3, Lcom/android/server/power/kth;->IH:[I
 
     sget-object v4, Lcom/android/server/power/OnePlusStandbyAnalyzer$PACKET_TYPE;->NETWORK_WIFI_RX_DATA:Lcom/android/server/power/OnePlusStandbyAnalyzer$PACKET_TYPE;
 
@@ -99,7 +99,7 @@
     const/4 v3, 0x4
 
     :try_start_3
-    sget-object v4, Lcom/android/server/power/kth;->JH:[I
+    sget-object v4, Lcom/android/server/power/kth;->IH:[I
 
     sget-object v5, Lcom/android/server/power/OnePlusStandbyAnalyzer$PACKET_TYPE;->NETWORK_WIFI_TX_DATA:Lcom/android/server/power/OnePlusStandbyAnalyzer$PACKET_TYPE;
 
@@ -120,10 +120,10 @@
 
     new-array v4, v4, [I
 
-    sput-object v4, Lcom/android/server/power/kth;->IH:[I
+    sput-object v4, Lcom/android/server/power/kth;->HH:[I
 
     :try_start_4
-    sget-object v4, Lcom/android/server/power/kth;->IH:[I
+    sget-object v4, Lcom/android/server/power/kth;->HH:[I
 
     sget-object v5, Lcom/android/server/power/OnePlusStandbyAnalyzer$KERNEL_WAKEUP_TYPE;->oma:Lcom/android/server/power/OnePlusStandbyAnalyzer$KERNEL_WAKEUP_TYPE;
 
@@ -137,7 +137,7 @@
 
     :catch_4
     :try_start_5
-    sget-object v4, Lcom/android/server/power/kth;->IH:[I
+    sget-object v4, Lcom/android/server/power/kth;->HH:[I
 
     sget-object v5, Lcom/android/server/power/OnePlusStandbyAnalyzer$KERNEL_WAKEUP_TYPE;->pma:Lcom/android/server/power/OnePlusStandbyAnalyzer$KERNEL_WAKEUP_TYPE;
 
@@ -151,7 +151,7 @@
 
     :catch_5
     :try_start_6
-    sget-object v4, Lcom/android/server/power/kth;->IH:[I
+    sget-object v4, Lcom/android/server/power/kth;->HH:[I
 
     sget-object v5, Lcom/android/server/power/OnePlusStandbyAnalyzer$KERNEL_WAKEUP_TYPE;->modem:Lcom/android/server/power/OnePlusStandbyAnalyzer$KERNEL_WAKEUP_TYPE;
 
@@ -172,10 +172,10 @@
 
     new-array v4, v4, [I
 
-    sput-object v4, Lcom/android/server/power/kth;->HH:[I
+    sput-object v4, Lcom/android/server/power/kth;->GH:[I
 
     :try_start_7
-    sget-object v4, Lcom/android/server/power/kth;->HH:[I
+    sget-object v4, Lcom/android/server/power/kth;->GH:[I
 
     sget-object v5, Lcom/android/server/power/OnePlusStandbyAnalyzer$TRIGGER_QXDM_REASON;->sna:Lcom/android/server/power/OnePlusStandbyAnalyzer$TRIGGER_QXDM_REASON;
 
@@ -189,7 +189,7 @@
 
     :catch_7
     :try_start_8
-    sget-object v4, Lcom/android/server/power/kth;->HH:[I
+    sget-object v4, Lcom/android/server/power/kth;->GH:[I
 
     sget-object v5, Lcom/android/server/power/OnePlusStandbyAnalyzer$TRIGGER_QXDM_REASON;->tna:Lcom/android/server/power/OnePlusStandbyAnalyzer$TRIGGER_QXDM_REASON;
 
@@ -210,10 +210,10 @@
 
     new-array v4, v4, [I
 
-    sput-object v4, Lcom/android/server/power/kth;->GH:[I
+    sput-object v4, Lcom/android/server/power/kth;->FH:[I
 
     :try_start_9
-    sget-object v4, Lcom/android/server/power/kth;->GH:[I
+    sget-object v4, Lcom/android/server/power/kth;->FH:[I
 
     sget-object v5, Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_MODE_TYPE;->Ina:Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_MODE_TYPE;
 
@@ -227,7 +227,7 @@
 
     :catch_9
     :try_start_a
-    sget-object v4, Lcom/android/server/power/kth;->GH:[I
+    sget-object v4, Lcom/android/server/power/kth;->FH:[I
 
     sget-object v5, Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_MODE_TYPE;->Lna:Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_MODE_TYPE;
 
@@ -241,7 +241,7 @@
 
     :catch_a
     :try_start_b
-    sget-object v4, Lcom/android/server/power/kth;->GH:[I
+    sget-object v4, Lcom/android/server/power/kth;->FH:[I
 
     sget-object v5, Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_MODE_TYPE;->Jna:Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_MODE_TYPE;
 
@@ -255,7 +255,7 @@
 
     :catch_b
     :try_start_c
-    sget-object v4, Lcom/android/server/power/kth;->GH:[I
+    sget-object v4, Lcom/android/server/power/kth;->FH:[I
 
     sget-object v5, Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_MODE_TYPE;->Kna:Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_MODE_TYPE;
 
@@ -276,10 +276,10 @@
 
     new-array v4, v4, [I
 
-    sput-object v4, Lcom/android/server/power/kth;->FH:[I
+    sput-object v4, Lcom/android/server/power/kth;->EH:[I
 
     :try_start_d
-    sget-object v4, Lcom/android/server/power/kth;->FH:[I
+    sget-object v4, Lcom/android/server/power/kth;->EH:[I
 
     sget-object v5, Lcom/android/server/power/OnePlusStandbyAnalyzer$SIM_ID;->Mna:Lcom/android/server/power/OnePlusStandbyAnalyzer$SIM_ID;
 
@@ -293,7 +293,7 @@
 
     :catch_d
     :try_start_e
-    sget-object v4, Lcom/android/server/power/kth;->FH:[I
+    sget-object v4, Lcom/android/server/power/kth;->EH:[I
 
     sget-object v5, Lcom/android/server/power/OnePlusStandbyAnalyzer$SIM_ID;->Nna:Lcom/android/server/power/OnePlusStandbyAnalyzer$SIM_ID;
 
@@ -314,10 +314,10 @@
 
     new-array v4, v4, [I
 
-    sput-object v4, Lcom/android/server/power/kth;->EH:[I
+    sput-object v4, Lcom/android/server/power/kth;->DH:[I
 
     :try_start_f
-    sget-object v4, Lcom/android/server/power/kth;->EH:[I
+    sget-object v4, Lcom/android/server/power/kth;->DH:[I
 
     sget-object v5, Lcom/android/server/power/OnePlusStandbyAnalyzer$SNAPSHOT_TYPE;->START:Lcom/android/server/power/OnePlusStandbyAnalyzer$SNAPSHOT_TYPE;
 
@@ -331,7 +331,7 @@
 
     :catch_f
     :try_start_10
-    sget-object v4, Lcom/android/server/power/kth;->EH:[I
+    sget-object v4, Lcom/android/server/power/kth;->DH:[I
 
     sget-object v5, Lcom/android/server/power/OnePlusStandbyAnalyzer$SNAPSHOT_TYPE;->END:Lcom/android/server/power/OnePlusStandbyAnalyzer$SNAPSHOT_TYPE;
 
@@ -345,7 +345,7 @@
 
     :catch_10
     :try_start_11
-    sget-object v4, Lcom/android/server/power/kth;->EH:[I
+    sget-object v4, Lcom/android/server/power/kth;->DH:[I
 
     sget-object v5, Lcom/android/server/power/OnePlusStandbyAnalyzer$SNAPSHOT_TYPE;->hla:Lcom/android/server/power/OnePlusStandbyAnalyzer$SNAPSHOT_TYPE;
 
@@ -366,10 +366,10 @@
 
     new-array v4, v4, [I
 
-    sput-object v4, Lcom/android/server/power/kth;->DH:[I
+    sput-object v4, Lcom/android/server/power/kth;->CH:[I
 
     :try_start_12
-    sget-object v4, Lcom/android/server/power/kth;->DH:[I
+    sget-object v4, Lcom/android/server/power/kth;->CH:[I
 
     sget-object v5, Lcom/android/server/power/OnePlusStandbyAnalyzer$CRITERIA_TYPE;->nla:Lcom/android/server/power/OnePlusStandbyAnalyzer$CRITERIA_TYPE;
 
@@ -383,7 +383,7 @@
 
     :catch_12
     :try_start_13
-    sget-object v4, Lcom/android/server/power/kth;->DH:[I
+    sget-object v4, Lcom/android/server/power/kth;->CH:[I
 
     sget-object v5, Lcom/android/server/power/OnePlusStandbyAnalyzer$CRITERIA_TYPE;->Rla:Lcom/android/server/power/OnePlusStandbyAnalyzer$CRITERIA_TYPE;
 
@@ -397,7 +397,7 @@
 
     :catch_13
     :try_start_14
-    sget-object v4, Lcom/android/server/power/kth;->DH:[I
+    sget-object v4, Lcom/android/server/power/kth;->CH:[I
 
     sget-object v5, Lcom/android/server/power/OnePlusStandbyAnalyzer$CRITERIA_TYPE;->ola:Lcom/android/server/power/OnePlusStandbyAnalyzer$CRITERIA_TYPE;
 
@@ -411,7 +411,7 @@
 
     :catch_14
     :try_start_15
-    sget-object v4, Lcom/android/server/power/kth;->DH:[I
+    sget-object v4, Lcom/android/server/power/kth;->CH:[I
 
     sget-object v5, Lcom/android/server/power/OnePlusStandbyAnalyzer$CRITERIA_TYPE;->Sla:Lcom/android/server/power/OnePlusStandbyAnalyzer$CRITERIA_TYPE;
 
@@ -427,7 +427,7 @@
     const/4 v4, 0x5
 
     :try_start_16
-    sget-object v5, Lcom/android/server/power/kth;->DH:[I
+    sget-object v5, Lcom/android/server/power/kth;->CH:[I
 
     sget-object v6, Lcom/android/server/power/OnePlusStandbyAnalyzer$CRITERIA_TYPE;->pla:Lcom/android/server/power/OnePlusStandbyAnalyzer$CRITERIA_TYPE;
 
@@ -443,7 +443,7 @@
     const/4 v5, 0x6
 
     :try_start_17
-    sget-object v6, Lcom/android/server/power/kth;->DH:[I
+    sget-object v6, Lcom/android/server/power/kth;->CH:[I
 
     sget-object v7, Lcom/android/server/power/OnePlusStandbyAnalyzer$CRITERIA_TYPE;->Tla:Lcom/android/server/power/OnePlusStandbyAnalyzer$CRITERIA_TYPE;
 
@@ -457,7 +457,7 @@
 
     :catch_17
     :try_start_18
-    sget-object v6, Lcom/android/server/power/kth;->DH:[I
+    sget-object v6, Lcom/android/server/power/kth;->CH:[I
 
     sget-object v7, Lcom/android/server/power/OnePlusStandbyAnalyzer$CRITERIA_TYPE;->qla:Lcom/android/server/power/OnePlusStandbyAnalyzer$CRITERIA_TYPE;
 
@@ -473,7 +473,7 @@
 
     :catch_18
     :try_start_19
-    sget-object v6, Lcom/android/server/power/kth;->DH:[I
+    sget-object v6, Lcom/android/server/power/kth;->CH:[I
 
     sget-object v7, Lcom/android/server/power/OnePlusStandbyAnalyzer$CRITERIA_TYPE;->Ula:Lcom/android/server/power/OnePlusStandbyAnalyzer$CRITERIA_TYPE;
 
@@ -489,7 +489,7 @@
 
     :catch_19
     :try_start_1a
-    sget-object v6, Lcom/android/server/power/kth;->DH:[I
+    sget-object v6, Lcom/android/server/power/kth;->CH:[I
 
     sget-object v7, Lcom/android/server/power/OnePlusStandbyAnalyzer$CRITERIA_TYPE;->_la:Lcom/android/server/power/OnePlusStandbyAnalyzer$CRITERIA_TYPE;
 
@@ -505,7 +505,7 @@
 
     :catch_1a
     :try_start_1b
-    sget-object v6, Lcom/android/server/power/kth;->DH:[I
+    sget-object v6, Lcom/android/server/power/kth;->CH:[I
 
     sget-object v7, Lcom/android/server/power/OnePlusStandbyAnalyzer$CRITERIA_TYPE;->ama:Lcom/android/server/power/OnePlusStandbyAnalyzer$CRITERIA_TYPE;
 
@@ -521,7 +521,7 @@
 
     :catch_1b
     :try_start_1c
-    sget-object v6, Lcom/android/server/power/kth;->DH:[I
+    sget-object v6, Lcom/android/server/power/kth;->CH:[I
 
     sget-object v7, Lcom/android/server/power/OnePlusStandbyAnalyzer$CRITERIA_TYPE;->rla:Lcom/android/server/power/OnePlusStandbyAnalyzer$CRITERIA_TYPE;
 
@@ -537,7 +537,7 @@
 
     :catch_1c
     :try_start_1d
-    sget-object v6, Lcom/android/server/power/kth;->DH:[I
+    sget-object v6, Lcom/android/server/power/kth;->CH:[I
 
     sget-object v7, Lcom/android/server/power/OnePlusStandbyAnalyzer$CRITERIA_TYPE;->Vla:Lcom/android/server/power/OnePlusStandbyAnalyzer$CRITERIA_TYPE;
 
@@ -553,7 +553,7 @@
 
     :catch_1d
     :try_start_1e
-    sget-object v6, Lcom/android/server/power/kth;->DH:[I
+    sget-object v6, Lcom/android/server/power/kth;->CH:[I
 
     sget-object v7, Lcom/android/server/power/OnePlusStandbyAnalyzer$CRITERIA_TYPE;->Wla:Lcom/android/server/power/OnePlusStandbyAnalyzer$CRITERIA_TYPE;
 
@@ -569,7 +569,7 @@
 
     :catch_1e
     :try_start_1f
-    sget-object v6, Lcom/android/server/power/kth;->DH:[I
+    sget-object v6, Lcom/android/server/power/kth;->CH:[I
 
     sget-object v7, Lcom/android/server/power/OnePlusStandbyAnalyzer$CRITERIA_TYPE;->Xla:Lcom/android/server/power/OnePlusStandbyAnalyzer$CRITERIA_TYPE;
 
@@ -585,7 +585,7 @@
 
     :catch_1f
     :try_start_20
-    sget-object v6, Lcom/android/server/power/kth;->DH:[I
+    sget-object v6, Lcom/android/server/power/kth;->CH:[I
 
     sget-object v7, Lcom/android/server/power/OnePlusStandbyAnalyzer$CRITERIA_TYPE;->Yla:Lcom/android/server/power/OnePlusStandbyAnalyzer$CRITERIA_TYPE;
 
@@ -601,7 +601,7 @@
 
     :catch_20
     :try_start_21
-    sget-object v6, Lcom/android/server/power/kth;->DH:[I
+    sget-object v6, Lcom/android/server/power/kth;->CH:[I
 
     sget-object v7, Lcom/android/server/power/OnePlusStandbyAnalyzer$CRITERIA_TYPE;->Zla:Lcom/android/server/power/OnePlusStandbyAnalyzer$CRITERIA_TYPE;
 
@@ -624,10 +624,10 @@
 
     new-array v6, v6, [I
 
-    sput-object v6, Lcom/android/server/power/kth;->CH:[I
+    sput-object v6, Lcom/android/server/power/kth;->BH:[I
 
     :try_start_22
-    sget-object v6, Lcom/android/server/power/kth;->CH:[I
+    sget-object v6, Lcom/android/server/power/kth;->BH:[I
 
     sget-object v7, Lcom/android/server/power/OnePlusStandbyAnalyzer$QXDM_REASON;->sna:Lcom/android/server/power/OnePlusStandbyAnalyzer$QXDM_REASON;
 
@@ -641,7 +641,7 @@
 
     :catch_22
     :try_start_23
-    sget-object v6, Lcom/android/server/power/kth;->CH:[I
+    sget-object v6, Lcom/android/server/power/kth;->BH:[I
 
     sget-object v7, Lcom/android/server/power/OnePlusStandbyAnalyzer$QXDM_REASON;->tna:Lcom/android/server/power/OnePlusStandbyAnalyzer$QXDM_REASON;
 
@@ -655,7 +655,7 @@
 
     :catch_23
     :try_start_24
-    sget-object v6, Lcom/android/server/power/kth;->CH:[I
+    sget-object v6, Lcom/android/server/power/kth;->BH:[I
 
     sget-object v7, Lcom/android/server/power/OnePlusStandbyAnalyzer$QXDM_REASON;->una:Lcom/android/server/power/OnePlusStandbyAnalyzer$QXDM_REASON;
 
@@ -669,7 +669,7 @@
 
     :catch_24
     :try_start_25
-    sget-object v6, Lcom/android/server/power/kth;->CH:[I
+    sget-object v6, Lcom/android/server/power/kth;->BH:[I
 
     sget-object v7, Lcom/android/server/power/OnePlusStandbyAnalyzer$QXDM_REASON;->vna:Lcom/android/server/power/OnePlusStandbyAnalyzer$QXDM_REASON;
 
@@ -683,7 +683,7 @@
 
     :catch_25
     :try_start_26
-    sget-object v6, Lcom/android/server/power/kth;->CH:[I
+    sget-object v6, Lcom/android/server/power/kth;->BH:[I
 
     sget-object v7, Lcom/android/server/power/OnePlusStandbyAnalyzer$QXDM_REASON;->wna:Lcom/android/server/power/OnePlusStandbyAnalyzer$QXDM_REASON;
 
@@ -704,10 +704,10 @@
 
     new-array v6, v6, [I
 
-    sput-object v6, Lcom/android/server/power/kth;->BH:[I
+    sput-object v6, Lcom/android/server/power/kth;->zH:[I
 
     :try_start_27
-    sget-object v6, Lcom/android/server/power/kth;->BH:[I
+    sget-object v6, Lcom/android/server/power/kth;->zH:[I
 
     sget-object v7, Lcom/android/server/power/OnePlusStandbyAnalyzer$TELEPHONY_TYPE;->Sna:Lcom/android/server/power/OnePlusStandbyAnalyzer$TELEPHONY_TYPE;
 
@@ -721,7 +721,7 @@
 
     :catch_27
     :try_start_28
-    sget-object v0, Lcom/android/server/power/kth;->BH:[I
+    sget-object v0, Lcom/android/server/power/kth;->zH:[I
 
     sget-object v6, Lcom/android/server/power/OnePlusStandbyAnalyzer$TELEPHONY_TYPE;->Tna:Lcom/android/server/power/OnePlusStandbyAnalyzer$TELEPHONY_TYPE;
 
@@ -735,7 +735,7 @@
 
     :catch_28
     :try_start_29
-    sget-object v0, Lcom/android/server/power/kth;->BH:[I
+    sget-object v0, Lcom/android/server/power/kth;->zH:[I
 
     sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$TELEPHONY_TYPE;->Una:Lcom/android/server/power/OnePlusStandbyAnalyzer$TELEPHONY_TYPE;
 
@@ -749,7 +749,7 @@
 
     :catch_29
     :try_start_2a
-    sget-object v0, Lcom/android/server/power/kth;->BH:[I
+    sget-object v0, Lcom/android/server/power/kth;->zH:[I
 
     sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$TELEPHONY_TYPE;->Vna:Lcom/android/server/power/OnePlusStandbyAnalyzer$TELEPHONY_TYPE;
 
@@ -763,7 +763,7 @@
 
     :catch_2a
     :try_start_2b
-    sget-object v0, Lcom/android/server/power/kth;->BH:[I
+    sget-object v0, Lcom/android/server/power/kth;->zH:[I
 
     sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$TELEPHONY_TYPE;->Wna:Lcom/android/server/power/OnePlusStandbyAnalyzer$TELEPHONY_TYPE;
 
@@ -777,7 +777,7 @@
 
     :catch_2b
     :try_start_2c
-    sget-object v0, Lcom/android/server/power/kth;->BH:[I
+    sget-object v0, Lcom/android/server/power/kth;->zH:[I
 
     sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$TELEPHONY_TYPE;->Xna:Lcom/android/server/power/OnePlusStandbyAnalyzer$TELEPHONY_TYPE;
 

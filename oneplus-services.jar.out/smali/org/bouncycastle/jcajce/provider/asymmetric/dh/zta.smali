@@ -56,7 +56,7 @@
     :cond_0
     iget v2, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dh/zta;->strength:I
 
-    invoke-static {}, Lorg/bouncycastle/crypto/igw;->gj()Ljava/security/SecureRandom;
+    invoke-static {}, Lorg/bouncycastle/crypto/igw;->fj()Ljava/security/SecureRandom;
 
     move-result-object v3
 

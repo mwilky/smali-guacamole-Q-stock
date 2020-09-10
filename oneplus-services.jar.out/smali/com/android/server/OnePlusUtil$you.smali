@@ -102,7 +102,7 @@
     return-void
 .end method
 
-.method private Bl()Z
+.method private Al()Z
     .locals 11
 
     invoke-static {}, Lcom/android/server/OnePlusUtil;->access$000()Z
@@ -1183,7 +1183,7 @@
     monitor-enter v0
 
     :try_start_0
-    invoke-direct {p0}, Lcom/android/server/OnePlusUtil$you;->Bl()Z
+    invoke-direct {p0}, Lcom/android/server/OnePlusUtil$you;->Al()Z
 
     move-result p0
 

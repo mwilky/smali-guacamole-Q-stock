@@ -77,12 +77,12 @@
 
     iput-object p2, p0, Lcom/android/server/secrecy/zta/tsu;->mPolicyManager:Lcom/android/server/secrecy/zta/sis;
 
-    invoke-direct {p0}, Lcom/android/server/secrecy/zta/tsu;->Vo()V
+    invoke-direct {p0}, Lcom/android/server/secrecy/zta/tsu;->Uo()V
 
     return-void
 .end method
 
-.method private Vo()V
+.method private Uo()V
     .locals 4
 
     new-instance v0, Lcom/android/server/secrecy/zta/tsu$zta;
@@ -154,7 +154,7 @@
 
 
 # virtual methods
-.method public Jd()Lcom/android/server/secrecy/zta/sis;
+.method public Id()Lcom/android/server/secrecy/zta/sis;
     .locals 0
 
     iget-object p0, p0, Lcom/android/server/secrecy/zta/tsu;->mPolicyManager:Lcom/android/server/secrecy/zta/sis;

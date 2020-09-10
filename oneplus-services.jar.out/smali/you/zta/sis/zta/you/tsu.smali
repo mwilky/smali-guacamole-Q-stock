@@ -123,7 +123,7 @@
 
 
 # virtual methods
-.method public Yk()Ljava/math/BigInteger;
+.method public Xk()Ljava/math/BigInteger;
     .locals 0
 
     iget-object p0, p0, Lyou/zta/sis/zta/you/tsu;->RHa:Ljava/math/BigInteger;
@@ -131,7 +131,7 @@
     return-object p0
 .end method
 
-.method public Zk()I
+.method public Yk()I
     .locals 0
 
     iget p0, p0, Lyou/zta/sis/zta/you/tsu;->BDa:I
@@ -139,7 +139,7 @@
     return p0
 .end method
 
-.method public _k()Ljava/math/BigInteger;
+.method public Zk()Ljava/math/BigInteger;
     .locals 0
 
     iget-object p0, p0, Lyou/zta/sis/zta/you/tsu;->XHa:Ljava/math/BigInteger;
@@ -147,7 +147,7 @@
     return-object p0
 .end method
 
-.method public al()Ljava/math/BigInteger;
+.method public _k()Ljava/math/BigInteger;
     .locals 0
 
     iget-object p0, p0, Lyou/zta/sis/zta/you/tsu;->YHa:Ljava/math/BigInteger;
@@ -155,7 +155,7 @@
     return-object p0
 .end method
 
-.method public bl()Ljava/math/BigInteger;
+.method public al()Ljava/math/BigInteger;
     .locals 0
 
     iget-object p0, p0, Lyou/zta/sis/zta/you/tsu;->SHa:Ljava/math/BigInteger;
@@ -163,7 +163,7 @@
     return-object p0
 .end method
 
-.method public cl()[Ljava/math/BigInteger;
+.method public bl()[Ljava/math/BigInteger;
     .locals 3
 
     const/4 v0, 0x2
@@ -185,7 +185,7 @@
     return-object v0
 .end method
 
-.method public dl()Ljava/math/BigInteger;
+.method public cl()Ljava/math/BigInteger;
     .locals 0
 
     iget-object p0, p0, Lyou/zta/sis/zta/you/tsu;->THa:Ljava/math/BigInteger;
@@ -193,7 +193,7 @@
     return-object p0
 .end method
 
-.method public el()Ljava/math/BigInteger;
+.method public dl()Ljava/math/BigInteger;
     .locals 0
 
     iget-object p0, p0, Lyou/zta/sis/zta/you/tsu;->UHa:Ljava/math/BigInteger;
@@ -201,7 +201,7 @@
     return-object p0
 .end method
 
-.method public fl()[Ljava/math/BigInteger;
+.method public el()[Ljava/math/BigInteger;
     .locals 3
 
     const/4 v0, 0x2
@@ -223,7 +223,7 @@
     return-object v0
 .end method
 
-.method public gl()Ljava/math/BigInteger;
+.method public fl()Ljava/math/BigInteger;
     .locals 0
 
     iget-object p0, p0, Lyou/zta/sis/zta/you/tsu;->VHa:Ljava/math/BigInteger;
@@ -231,7 +231,7 @@
     return-object p0
 .end method
 
-.method public hl()Ljava/math/BigInteger;
+.method public gl()Ljava/math/BigInteger;
     .locals 0
 
     iget-object p0, p0, Lyou/zta/sis/zta/you/tsu;->WHa:Ljava/math/BigInteger;

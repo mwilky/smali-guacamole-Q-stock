@@ -307,7 +307,7 @@
     return p0
 .end method
 
-.method public ji()Lorg/bouncycastle/asn1/x509/ear;
+.method public ii()Lorg/bouncycastle/asn1/x509/ear;
     .locals 0
 
     iget-object p0, p0, Lorg/bouncycastle/asn1/x509/cjf;->Lua:Lorg/bouncycastle/asn1/x509/ear;
@@ -315,7 +315,7 @@
     return-object p0
 .end method
 
-.method public ki()Lorg/bouncycastle/asn1/x509/obl;
+.method public ji()Lorg/bouncycastle/asn1/x509/obl;
     .locals 0
 
     iget-object p0, p0, Lorg/bouncycastle/asn1/x509/cjf;->Mua:Lorg/bouncycastle/asn1/x509/obl;
@@ -323,7 +323,7 @@
     return-object p0
 .end method
 
-.method public li()Lorg/bouncycastle/asn1/x509/cgv;
+.method public ki()Lorg/bouncycastle/asn1/x509/cgv;
     .locals 0
 
     iget-object p0, p0, Lorg/bouncycastle/asn1/x509/cjf;->Nua:Lorg/bouncycastle/asn1/x509/cgv;

@@ -21,7 +21,7 @@
 
     invoke-direct {p0}, Lorg/bouncycastle/asn1/oif;-><init>()V
 
-    invoke-virtual {p1}, Lorg/bouncycastle/asn1/obl;->Sg()Ljava/util/Enumeration;
+    invoke-virtual {p1}, Lorg/bouncycastle/asn1/obl;->Rg()Ljava/util/Enumeration;
 
     move-result-object p1
 
@@ -400,7 +400,7 @@
     return-object p0
 .end method
 
-.method public vh()Lorg/bouncycastle/asn1/sis;
+.method public uh()Lorg/bouncycastle/asn1/sis;
     .locals 0
 
     iget-object p0, p0, Lorg/bouncycastle/asn1/dma/vdb;->publicKey:Lorg/bouncycastle/asn1/sis;
@@ -408,7 +408,7 @@
     return-object p0
 .end method
 
-.method public wh()Z
+.method public vh()Z
     .locals 0
 
     iget-object p0, p0, Lorg/bouncycastle/asn1/dma/vdb;->publicKey:Lorg/bouncycastle/asn1/sis;
@@ -426,7 +426,7 @@
     return p0
 .end method
 
-.method public xh()Lorg/bouncycastle/asn1/ssp;
+.method public wh()Lorg/bouncycastle/asn1/ssp;
     .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {

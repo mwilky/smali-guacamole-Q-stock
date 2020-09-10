@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/server/wm/cgv;->yq()V
+    value = Lcom/android/server/wm/cgv;->xq()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;

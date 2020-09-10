@@ -298,7 +298,7 @@
 
 
 # virtual methods
-.method public declared-synchronized Yc()V
+.method public declared-synchronized Xc()V
     .locals 4
 
     monitor-enter p0
@@ -416,7 +416,7 @@
     monitor-enter p0
 
     :try_start_0
-    invoke-static {}, Lcom/android/server/wm/OpPowerConsumpStats;->me()Z
+    invoke-static {}, Lcom/android/server/wm/OpPowerConsumpStats;->le()Z
 
     move-result v0
 
@@ -493,7 +493,7 @@
 
     :cond_0
     :try_start_1
-    invoke-static {}, Lcom/android/server/wm/OpPowerConsumpStats;->me()Z
+    invoke-static {}, Lcom/android/server/wm/OpPowerConsumpStats;->le()Z
 
     move-result v0
 
@@ -578,7 +578,7 @@
 
     iput-wide v0, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->mTime:J
 
-    invoke-static {}, Lcom/android/server/wm/OpPowerConsumpStats;->me()Z
+    invoke-static {}, Lcom/android/server/wm/OpPowerConsumpStats;->le()Z
 
     move-result v0
 

@@ -51,14 +51,14 @@
 
     move-result-object p0
 
-    invoke-virtual {p0}, Lorg/bouncycastle/crypto/wtn/ibl;->Ri()Ljava/math/BigInteger;
+    invoke-virtual {p0}, Lorg/bouncycastle/crypto/wtn/ibl;->Qi()Ljava/math/BigInteger;
 
     move-result-object p0
 
     return-object p0
 .end method
 
-.method protected lj()Lyou/zta/sis/zta/bio;
+.method protected kj()Lyou/zta/sis/zta/bio;
     .locals 0
 
     new-instance p0, Lyou/zta/sis/zta/dma;
@@ -106,7 +106,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lorg/bouncycastle/crypto/wtn/ibl;->Ri()Ljava/math/BigInteger;
+    invoke-virtual {v0}, Lorg/bouncycastle/crypto/wtn/ibl;->Qi()Ljava/math/BigInteger;
 
     move-result-object v1
 
@@ -144,7 +144,7 @@
     invoke-interface {p1, v1, v4}, Lorg/bouncycastle/crypto/gck/you;->zta(Ljava/math/BigInteger;Ljava/security/SecureRandom;)V
 
     :goto_0
-    invoke-virtual {p0}, Lorg/bouncycastle/crypto/gck/tsu;->lj()Lyou/zta/sis/zta/bio;
+    invoke-virtual {p0}, Lorg/bouncycastle/crypto/gck/tsu;->kj()Lyou/zta/sis/zta/bio;
 
     move-result-object p1
 
@@ -167,7 +167,7 @@
 
     move-result-object v5
 
-    invoke-virtual {v5}, Lyou/zta/sis/zta/wtn;->pk()Lyou/zta/sis/zta/cno;
+    invoke-virtual {v5}, Lyou/zta/sis/zta/wtn;->ok()Lyou/zta/sis/zta/cno;
 
     move-result-object v5
 
@@ -245,7 +245,7 @@
     goto :goto_0
 
     :cond_1
-    invoke-static {}, Lorg/bouncycastle/crypto/igw;->gj()Ljava/security/SecureRandom;
+    invoke-static {}, Lorg/bouncycastle/crypto/igw;->fj()Ljava/security/SecureRandom;
 
     move-result-object p2
 
@@ -324,7 +324,7 @@
 
     iput-object v0, p0, Lorg/bouncycastle/crypto/gck/tsu;->key:Lorg/bouncycastle/crypto/wtn/ugm;
 
-    invoke-virtual {p2}, Lorg/bouncycastle/crypto/wtn/hmo;->hj()Ljava/security/SecureRandom;
+    invoke-virtual {p2}, Lorg/bouncycastle/crypto/wtn/hmo;->gj()Ljava/security/SecureRandom;
 
     move-result-object p2
 
@@ -380,7 +380,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lorg/bouncycastle/crypto/wtn/ibl;->Ri()Ljava/math/BigInteger;
+    invoke-virtual {v0}, Lorg/bouncycastle/crypto/wtn/ibl;->Qi()Ljava/math/BigInteger;
 
     move-result-object v1
 
@@ -460,7 +460,7 @@
 
     move-result-object p1
 
-    invoke-virtual {p1}, Lyou/zta/sis/zta/wtn;->Bk()Z
+    invoke-virtual {p1}, Lyou/zta/sis/zta/wtn;->Ak()Z
 
     move-result p3
 
@@ -489,7 +489,7 @@
 
     if-gtz v0, :cond_5
 
-    invoke-virtual {p3}, Lyou/zta/sis/zta/rtg;->Zj()I
+    invoke-virtual {p3}, Lyou/zta/sis/zta/rtg;->Yj()I
 
     move-result v0
 
@@ -505,7 +505,7 @@
 
     if-nez v0, :cond_5
 
-    invoke-virtual {p1}, Lyou/zta/sis/zta/wtn;->xk()Lyou/zta/sis/zta/cno;
+    invoke-virtual {p1}, Lyou/zta/sis/zta/wtn;->wk()Lyou/zta/sis/zta/cno;
 
     move-result-object p1
 
@@ -549,7 +549,7 @@
 
     move-result-object p0
 
-    invoke-virtual {p0}, Lyou/zta/sis/zta/wtn;->pk()Lyou/zta/sis/zta/cno;
+    invoke-virtual {p0}, Lyou/zta/sis/zta/wtn;->ok()Lyou/zta/sis/zta/cno;
 
     move-result-object p0
 

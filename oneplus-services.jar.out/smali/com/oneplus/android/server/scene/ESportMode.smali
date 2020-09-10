@@ -907,7 +907,7 @@
 
     if-eqz p2, :cond_4
 
-    invoke-static {}, Lcom/android/server/wm/wtn;->fe()Lcom/android/server/wm/wtn$zta;
+    invoke-static {}, Lcom/android/server/wm/wtn;->ee()Lcom/android/server/wm/wtn$zta;
 
     move-result-object p1
 

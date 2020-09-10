@@ -100,12 +100,12 @@
 
 
 # virtual methods
-.method public Hg()I
+.method public Gg()I
     .locals 0
 
     iget-object p0, p0, Lorg/bouncycastle/asn1/x509/fto;->uva:Lorg/bouncycastle/asn1/n;
 
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/sis;->Hg()I
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/sis;->Gg()I
 
     move-result p0
 

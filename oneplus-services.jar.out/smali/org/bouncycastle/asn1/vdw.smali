@@ -67,44 +67,6 @@
 
 
 # virtual methods
-.method protected Ag()V
-    .locals 2
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
-
-    iget-object v0, p0, Lorg/bouncycastle/asn1/gck;->Fra:Ljava/io/OutputStream;
-
-    const/4 v1, 0x0
-
-    invoke-virtual {v0, v1}, Ljava/io/OutputStream;->write(I)V
-
-    iget-object v0, p0, Lorg/bouncycastle/asn1/gck;->Fra:Ljava/io/OutputStream;
-
-    invoke-virtual {v0, v1}, Ljava/io/OutputStream;->write(I)V
-
-    iget-boolean v0, p0, Lorg/bouncycastle/asn1/vdw;->Gra:Z
-
-    if-eqz v0, :cond_0
-
-    iget-boolean v0, p0, Lorg/bouncycastle/asn1/vdw;->Hra:Z
-
-    if-eqz v0, :cond_0
-
-    iget-object v0, p0, Lorg/bouncycastle/asn1/gck;->Fra:Ljava/io/OutputStream;
-
-    invoke-virtual {v0, v1}, Ljava/io/OutputStream;->write(I)V
-
-    iget-object p0, p0, Lorg/bouncycastle/asn1/gck;->Fra:Ljava/io/OutputStream;
-
-    invoke-virtual {p0, v1}, Ljava/io/OutputStream;->write(I)V
-
-    :cond_0
-    return-void
-.end method
-
 .method protected ca(I)V
     .locals 2
     .annotation system Ldalvik/annotation/Throws;
@@ -159,4 +121,42 @@
     iget-object p0, p0, Lorg/bouncycastle/asn1/gck;->Fra:Ljava/io/OutputStream;
 
     return-object p0
+.end method
+
+.method protected zg()V
+    .locals 2
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    iget-object v0, p0, Lorg/bouncycastle/asn1/gck;->Fra:Ljava/io/OutputStream;
+
+    const/4 v1, 0x0
+
+    invoke-virtual {v0, v1}, Ljava/io/OutputStream;->write(I)V
+
+    iget-object v0, p0, Lorg/bouncycastle/asn1/gck;->Fra:Ljava/io/OutputStream;
+
+    invoke-virtual {v0, v1}, Ljava/io/OutputStream;->write(I)V
+
+    iget-boolean v0, p0, Lorg/bouncycastle/asn1/vdw;->Gra:Z
+
+    if-eqz v0, :cond_0
+
+    iget-boolean v0, p0, Lorg/bouncycastle/asn1/vdw;->Hra:Z
+
+    if-eqz v0, :cond_0
+
+    iget-object v0, p0, Lorg/bouncycastle/asn1/gck;->Fra:Ljava/io/OutputStream;
+
+    invoke-virtual {v0, v1}, Ljava/io/OutputStream;->write(I)V
+
+    iget-object p0, p0, Lorg/bouncycastle/asn1/gck;->Fra:Ljava/io/OutputStream;
+
+    invoke-virtual {p0, v1}, Ljava/io/OutputStream;->write(I)V
+
+    :cond_0
+    return-void
 .end method

@@ -199,7 +199,7 @@
 
     move-result-object p1
 
-    invoke-virtual {p1}, Lorg/bouncycastle/asn1/dma/zgw;->zh()Lorg/bouncycastle/asn1/x509/zta;
+    invoke-virtual {p1}, Lorg/bouncycastle/asn1/dma/zgw;->yh()Lorg/bouncycastle/asn1/x509/zta;
 
     move-result-object v1
 
@@ -217,7 +217,7 @@
 
     new-instance v1, Ljavax/crypto/spec/OAEPParameterSpec;
 
-    invoke-virtual {p1}, Lorg/bouncycastle/asn1/dma/zgw;->yh()Lorg/bouncycastle/asn1/x509/zta;
+    invoke-virtual {p1}, Lorg/bouncycastle/asn1/dma/zgw;->xh()Lorg/bouncycastle/asn1/x509/zta;
 
     move-result-object v2
 
@@ -237,7 +237,7 @@
 
     new-instance v4, Ljava/security/spec/MGF1ParameterSpec;
 
-    invoke-virtual {p1}, Lorg/bouncycastle/asn1/dma/zgw;->zh()Lorg/bouncycastle/asn1/x509/zta;
+    invoke-virtual {p1}, Lorg/bouncycastle/asn1/dma/zgw;->yh()Lorg/bouncycastle/asn1/x509/zta;
 
     move-result-object v5
 
@@ -261,7 +261,7 @@
 
     new-instance v5, Ljavax/crypto/spec/PSource$PSpecified;
 
-    invoke-virtual {p1}, Lorg/bouncycastle/asn1/dma/zgw;->Ah()Lorg/bouncycastle/asn1/x509/zta;
+    invoke-virtual {p1}, Lorg/bouncycastle/asn1/dma/zgw;->zh()Lorg/bouncycastle/asn1/x509/zta;
 
     move-result-object p1
 
@@ -296,7 +296,7 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p1}, Lorg/bouncycastle/asn1/dma/zgw;->zh()Lorg/bouncycastle/asn1/x509/zta;
+    invoke-virtual {p1}, Lorg/bouncycastle/asn1/dma/zgw;->yh()Lorg/bouncycastle/asn1/x509/zta;
 
     move-result-object p1
 

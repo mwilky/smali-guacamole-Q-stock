@@ -81,7 +81,7 @@
     return-void
 .end method
 
-.method private Jm()Lcom/android/server/am/irq$you;
+.method private Im()Lcom/android/server/am/irq$you;
     .locals 4
 
     monitor-enter p0
@@ -285,7 +285,7 @@
     goto :goto_1
 
     :cond_1
-    invoke-direct {p0}, Lcom/android/server/am/irq$kth;->Jm()Lcom/android/server/am/irq$you;
+    invoke-direct {p0}, Lcom/android/server/am/irq$kth;->Im()Lcom/android/server/am/irq$you;
 
     move-result-object v0
 

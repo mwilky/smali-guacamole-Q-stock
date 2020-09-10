@@ -35,7 +35,7 @@
 
 
 # virtual methods
-.method public Kk()Lyou/zta/sis/zta/kth;
+.method public Jk()Lyou/zta/sis/zta/kth;
     .locals 0
 
     iget-object p0, p0, Lyou/zta/sis/zta/ywr;->ZGa:Lyou/zta/sis/zta/kth;

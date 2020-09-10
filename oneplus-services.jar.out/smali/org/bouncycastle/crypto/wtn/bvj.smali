@@ -104,7 +104,7 @@
     return p0
 .end method
 
-.method public wj()I
+.method public vj()I
     .locals 0
 
     iget p0, p0, Lorg/bouncycastle/crypto/wtn/bvj;->counter:I
@@ -112,7 +112,7 @@
     return p0
 .end method
 
-.method public xj()I
+.method public wj()I
     .locals 0
 
     iget p0, p0, Lorg/bouncycastle/crypto/wtn/bvj;->FCa:I

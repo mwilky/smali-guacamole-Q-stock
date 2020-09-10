@@ -40,11 +40,11 @@
 
     iget-object p1, p0, Lcom/android/server/sis/ugm;->this$0:Lcom/android/server/sis/vdb;
 
-    invoke-virtual {p1}, Lcom/android/server/sis/vdb;->de()V
+    invoke-virtual {p1}, Lcom/android/server/sis/vdb;->ce()V
 
     iget-object p0, p0, Lcom/android/server/sis/ugm;->this$0:Lcom/android/server/sis/vdb;
 
-    invoke-virtual {p0}, Lcom/android/server/sis/vdb;->_d()V
+    invoke-virtual {p0}, Lcom/android/server/sis/vdb;->Zd()V
 
     return-void
 .end method

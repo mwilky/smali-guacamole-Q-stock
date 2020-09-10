@@ -35,7 +35,7 @@
     return-void
 .end method
 
-.method private ep()V
+.method private dp()V
     .locals 2
 
     iget-object v0, p0, Lcom/android/server/sis/sis;->mCm:Landroid/net/ConnectivityManager;
@@ -58,7 +58,7 @@
     return-void
 .end method
 
-.method private fp()V
+.method private ep()V
     .locals 2
 
     new-instance v0, Landroid/content/IntentFilter;
@@ -107,7 +107,7 @@
 .method static synthetic zta(Lcom/android/server/sis/sis;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/sis/sis;->ep()V
+    invoke-direct {p0}, Lcom/android/server/sis/sis;->dp()V
 
     return-void
 .end method
@@ -153,7 +153,7 @@
 
     iput-object p1, p0, Lcom/android/server/sis/sis;->xO:Lcom/android/server/sis/vdb;
 
-    invoke-direct {p0}, Lcom/android/server/sis/sis;->fp()V
+    invoke-direct {p0}, Lcom/android/server/sis/sis;->ep()V
 
     return-void
 .end method

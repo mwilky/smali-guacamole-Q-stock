@@ -209,7 +209,7 @@
     return-void
 
     :cond_0
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/ear;->Sg()Ljava/util/Enumeration;
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/ear;->Rg()Ljava/util/Enumeration;
 
     move-result-object p0
 
@@ -229,7 +229,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lorg/bouncycastle/asn1/dma/zta;->Wg()Lorg/bouncycastle/asn1/bvj;
+    invoke-virtual {v0}, Lorg/bouncycastle/asn1/dma/zta;->Vg()Lorg/bouncycastle/asn1/bvj;
 
     move-result-object v1
 
@@ -241,7 +241,7 @@
 
     if-eqz v1, :cond_1
 
-    invoke-virtual {v0}, Lorg/bouncycastle/asn1/dma/zta;->Xg()Lorg/bouncycastle/asn1/ear;
+    invoke-virtual {v0}, Lorg/bouncycastle/asn1/dma/zta;->Wg()Lorg/bouncycastle/asn1/ear;
 
     move-result-object v0
 
@@ -294,7 +294,7 @@
     return-object p0
 .end method
 
-.method public ph()Lorg/bouncycastle/asn1/x509/c;
+.method public oh()Lorg/bouncycastle/asn1/x509/c;
     .locals 0
 
     iget-object p0, p0, Lorg/bouncycastle/asn1/dma/ssp;->Zsa:Lorg/bouncycastle/asn1/x509/c;

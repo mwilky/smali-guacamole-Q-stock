@@ -26,7 +26,7 @@
 
     new-instance v0, Lyou/zta/sis/zta/vdb;
 
-    invoke-virtual {p2}, Lyou/zta/sis/zta/you/tsu;->Yk()Ljava/math/BigInteger;
+    invoke-virtual {p2}, Lyou/zta/sis/zta/you/tsu;->Xk()Ljava/math/BigInteger;
 
     move-result-object p2
 
@@ -118,13 +118,13 @@
 
     iget-object v0, p0, Lyou/zta/sis/zta/you/sis;->parameters:Lyou/zta/sis/zta/you/tsu;
 
-    invoke-virtual {v0}, Lyou/zta/sis/zta/you/tsu;->Zk()I
+    invoke-virtual {v0}, Lyou/zta/sis/zta/you/tsu;->Yk()I
 
     move-result v0
 
     iget-object v1, p0, Lyou/zta/sis/zta/you/sis;->parameters:Lyou/zta/sis/zta/you/tsu;
 
-    invoke-virtual {v1}, Lyou/zta/sis/zta/you/tsu;->_k()Ljava/math/BigInteger;
+    invoke-virtual {v1}, Lyou/zta/sis/zta/you/tsu;->Zk()Ljava/math/BigInteger;
 
     move-result-object v1
 
@@ -134,7 +134,7 @@
 
     iget-object v2, p0, Lyou/zta/sis/zta/you/sis;->parameters:Lyou/zta/sis/zta/you/tsu;
 
-    invoke-virtual {v2}, Lyou/zta/sis/zta/you/tsu;->al()Ljava/math/BigInteger;
+    invoke-virtual {v2}, Lyou/zta/sis/zta/you/tsu;->_k()Ljava/math/BigInteger;
 
     move-result-object v2
 
@@ -144,7 +144,7 @@
 
     iget-object p0, p0, Lyou/zta/sis/zta/you/sis;->parameters:Lyou/zta/sis/zta/you/tsu;
 
-    invoke-virtual {p0}, Lyou/zta/sis/zta/you/tsu;->dl()Ljava/math/BigInteger;
+    invoke-virtual {p0}, Lyou/zta/sis/zta/you/tsu;->cl()Ljava/math/BigInteger;
 
     move-result-object v2
 
@@ -152,7 +152,7 @@
 
     move-result-object v2
 
-    invoke-virtual {p0}, Lyou/zta/sis/zta/you/tsu;->gl()Ljava/math/BigInteger;
+    invoke-virtual {p0}, Lyou/zta/sis/zta/you/tsu;->fl()Ljava/math/BigInteger;
 
     move-result-object v3
 
@@ -168,7 +168,7 @@
 
     move-result-object p1
 
-    invoke-virtual {p0}, Lyou/zta/sis/zta/you/tsu;->el()Ljava/math/BigInteger;
+    invoke-virtual {p0}, Lyou/zta/sis/zta/you/tsu;->dl()Ljava/math/BigInteger;
 
     move-result-object v2
 
@@ -176,7 +176,7 @@
 
     move-result-object v1
 
-    invoke-virtual {p0}, Lyou/zta/sis/zta/you/tsu;->hl()Ljava/math/BigInteger;
+    invoke-virtual {p0}, Lyou/zta/sis/zta/you/tsu;->gl()Ljava/math/BigInteger;
 
     move-result-object p0
 

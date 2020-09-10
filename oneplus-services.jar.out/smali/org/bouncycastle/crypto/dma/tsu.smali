@@ -251,7 +251,7 @@
 .method private static zta(Lorg/bouncycastle/asn1/x509/c;Ljava/lang/Object;I)[B
     .locals 0
 
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/x509/c;->vh()Lorg/bouncycastle/asn1/n;
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/x509/c;->uh()Lorg/bouncycastle/asn1/n;
 
     move-result-object p0
 

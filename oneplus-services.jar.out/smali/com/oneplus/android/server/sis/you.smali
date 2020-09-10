@@ -167,7 +167,7 @@
     return-void
 .end method
 
-.method private it()V
+.method private ht()V
     .locals 4
 
     iget-object v0, p0, Lcom/oneplus/android/server/sis/you;->Gia:Ljava/util/List;
@@ -233,7 +233,7 @@
     throw p0
 .end method
 
-.method private jt()V
+.method private it()V
     .locals 4
 
     sget-object v0, Lcom/oneplus/android/server/sis/you;->Lia:Ljava/lang/Object;
@@ -253,7 +253,7 @@
 
     invoke-interface {v1, v2, v3}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/sis/you;->lt()V
+    invoke-direct {p0}, Lcom/oneplus/android/server/sis/you;->kt()V
 
     monitor-exit v0
 
@@ -269,7 +269,7 @@
     throw p0
 .end method
 
-.method private kt()V
+.method private jt()V
     .locals 4
 
     sget-object v0, Lcom/oneplus/android/server/sis/you;->Lia:Ljava/lang/Object;
@@ -365,7 +365,7 @@
     throw p0
 .end method
 
-.method private lt()V
+.method private kt()V
     .locals 5
 
     sget-boolean v0, Landroid/os/Build;->DEBUG_ONEPLUS:Z
@@ -851,7 +851,7 @@
     goto :goto_5
 
     :cond_c
-    invoke-direct {p0}, Lcom/oneplus/android/server/sis/you;->lt()V
+    invoke-direct {p0}, Lcom/oneplus/android/server/sis/you;->kt()V
 
     monitor-exit v3
 
@@ -1425,11 +1425,11 @@
 .method public init()V
     .locals 0
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/sis/you;->kt()V
-
     invoke-direct {p0}, Lcom/oneplus/android/server/sis/you;->jt()V
 
     invoke-direct {p0}, Lcom/oneplus/android/server/sis/you;->it()V
+
+    invoke-direct {p0}, Lcom/oneplus/android/server/sis/you;->ht()V
 
     invoke-virtual {p0}, Lcom/oneplus/android/server/sis/you;->initOnlineConfig()V
 

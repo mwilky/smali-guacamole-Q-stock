@@ -33,7 +33,7 @@
 
 
 # virtual methods
-.method protected Ek()Z
+.method protected Dk()Z
     .locals 7
 
     iget-object v0, p0, Lyou/zta/sis/zta/wtn;->x:Lyou/zta/sis/zta/cno;
@@ -56,7 +56,7 @@
 
     move-result-object v1
 
-    invoke-virtual {p0}, Lyou/zta/sis/zta/wtn;->sk()I
+    invoke-virtual {p0}, Lyou/zta/sis/zta/wtn;->rk()I
 
     move-result v4
 
@@ -97,7 +97,7 @@
 
     aget-object p0, p0, v6
 
-    invoke-virtual {p0}, Lyou/zta/sis/zta/cno;->ik()Z
+    invoke-virtual {p0}, Lyou/zta/sis/zta/cno;->hk()Z
 
     move-result v4
 
@@ -130,7 +130,7 @@
 
     aget-object p0, p0, v6
 
-    invoke-virtual {p0}, Lyou/zta/sis/zta/cno;->ik()Z
+    invoke-virtual {p0}, Lyou/zta/sis/zta/cno;->hk()Z
 
     move-result v4
 
@@ -184,7 +184,7 @@
 .method public igw(Lyou/zta/sis/zta/wtn;)Lyou/zta/sis/zta/wtn;
     .locals 1
 
-    invoke-virtual {p1}, Lyou/zta/sis/zta/wtn;->Bk()Z
+    invoke-virtual {p1}, Lyou/zta/sis/zta/wtn;->Ak()Z
 
     move-result v0
 
@@ -204,14 +204,14 @@
     return-object p0
 .end method
 
-.method protected rk()Z
+.method protected qk()Z
     .locals 0
 
-    invoke-virtual {p0}, Lyou/zta/sis/zta/wtn;->qk()Lyou/zta/sis/zta/cno;
+    invoke-virtual {p0}, Lyou/zta/sis/zta/wtn;->pk()Lyou/zta/sis/zta/cno;
 
     move-result-object p0
 
-    invoke-virtual {p0}, Lyou/zta/sis/zta/cno;->kk()Z
+    invoke-virtual {p0}, Lyou/zta/sis/zta/cno;->jk()Z
 
     move-result p0
 

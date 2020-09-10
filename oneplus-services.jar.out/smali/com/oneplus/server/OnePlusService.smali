@@ -22,7 +22,7 @@
 # instance fields
 .field private mContext:Landroid/content/Context;
 
-.field private mOnePlusThemeController:Lcom/oneplus/server/zta/sis;
+.field private mOnePlusThemeController:Lcom/oneplus/server/theme/ssp;
 
 .field private mOpCommonFrontMonitor:Lcom/android/server/fto;
 
@@ -85,6 +85,25 @@
 
 
 # virtual methods
+.method public changeFont(II)V
+    .locals 1
+
+    invoke-static {}, Landroid/os/Binder;->getCallingUid()I
+
+    move-result p0
+
+    const/16 v0, 0x3e8
+
+    if-eq p0, v0, :cond_0
+
+    return-void
+
+    :cond_0
+    invoke-static {p1, p2}, Lcom/android/server/am/OpFontControlInjector;->changeFontForUser(II)V
+
+    return-void
+.end method
+
 .method public disableTheme(Ljava/lang/String;)V
     .locals 2
 
@@ -99,9 +118,9 @@
     return-void
 
     :cond_0
-    iget-object p0, p0, Lcom/oneplus/server/OnePlusService;->mOnePlusThemeController:Lcom/oneplus/server/zta/sis;
+    iget-object p0, p0, Lcom/oneplus/server/OnePlusService;->mOnePlusThemeController:Lcom/oneplus/server/theme/ssp;
 
-    invoke-virtual {p0, p1}, Lcom/oneplus/server/zta/sis;->disableTheme(Ljava/lang/String;)V
+    invoke-virtual {p0, p1}, Lcom/oneplus/server/theme/ssp;->disableTheme(Ljava/lang/String;)V
 
     return-void
 .end method
@@ -120,9 +139,9 @@
     return-void
 
     :cond_0
-    iget-object p0, p0, Lcom/oneplus/server/OnePlusService;->mOnePlusThemeController:Lcom/oneplus/server/zta/sis;
+    iget-object p0, p0, Lcom/oneplus/server/OnePlusService;->mOnePlusThemeController:Lcom/oneplus/server/theme/ssp;
 
-    invoke-virtual {p0, p1}, Lcom/oneplus/server/zta/sis;->enableTheme(Ljava/lang/String;)V
+    invoke-virtual {p0, p1}, Lcom/oneplus/server/theme/ssp;->enableTheme(Ljava/lang/String;)V
 
     return-void
 .end method
@@ -377,9 +396,9 @@
     return-void
 
     :cond_0
-    iget-object p0, p0, Lcom/oneplus/server/OnePlusService;->mOnePlusThemeController:Lcom/oneplus/server/zta/sis;
+    iget-object p0, p0, Lcom/oneplus/server/OnePlusService;->mOnePlusThemeController:Lcom/oneplus/server/theme/ssp;
 
-    invoke-virtual {p0, p1, p2}, Lcom/oneplus/server/zta/sis;->processDisableThemeCategory(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {p0, p1, p2}, Lcom/oneplus/server/theme/ssp;->processDisableThemeCategory(Ljava/lang/String;Ljava/lang/String;)V
 
     return-void
 .end method
@@ -398,9 +417,9 @@
     return-void
 
     :cond_0
-    iget-object p0, p0, Lcom/oneplus/server/OnePlusService;->mOnePlusThemeController:Lcom/oneplus/server/zta/sis;
+    iget-object p0, p0, Lcom/oneplus/server/OnePlusService;->mOnePlusThemeController:Lcom/oneplus/server/theme/ssp;
 
-    invoke-virtual {p0, p1, p2}, Lcom/oneplus/server/zta/sis;->processEnableThemeCategory(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {p0, p1, p2}, Lcom/oneplus/server/theme/ssp;->processEnableThemeCategory(Ljava/lang/String;Ljava/lang/String;)V
 
     return-void
 .end method
@@ -517,7 +536,7 @@
 .end method
 
 .method public systemReady()V
-    .locals 2
+    .locals 3
 
     iget-object v0, p0, Lcom/oneplus/server/OnePlusService;->mContext:Landroid/content/Context;
 
@@ -529,15 +548,15 @@
 
     iget-object v0, p0, Lcom/oneplus/server/OnePlusService;->mContext:Landroid/content/Context;
 
-    invoke-static {v0}, Lcom/oneplus/server/zta/sis;->getInstance(Landroid/content/Context;)Lcom/oneplus/server/zta/sis;
+    invoke-static {v0}, Lcom/oneplus/server/theme/ssp;->getInstance(Landroid/content/Context;)Lcom/oneplus/server/theme/ssp;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/oneplus/server/OnePlusService;->mOnePlusThemeController:Lcom/oneplus/server/zta/sis;
+    iput-object v0, p0, Lcom/oneplus/server/OnePlusService;->mOnePlusThemeController:Lcom/oneplus/server/theme/ssp;
 
-    iget-object v0, p0, Lcom/oneplus/server/OnePlusService;->mOnePlusThemeController:Lcom/oneplus/server/zta/sis;
+    iget-object v0, p0, Lcom/oneplus/server/OnePlusService;->mOnePlusThemeController:Lcom/oneplus/server/theme/ssp;
 
-    invoke-virtual {v0}, Lcom/oneplus/server/zta/sis;->Qf()V
+    invoke-virtual {v0}, Lcom/oneplus/server/theme/ssp;->Pf()V
 
     invoke-static {}, Lcom/android/server/fto;->getInstance()Lcom/android/server/fto;
 
@@ -564,11 +583,52 @@
 
     move-result-object v0
 
-    iget-object p0, p0, Lcom/oneplus/server/OnePlusService;->mContext:Landroid/content/Context;
+    iget-object v1, p0, Lcom/oneplus/server/OnePlusService;->mContext:Landroid/content/Context;
 
-    invoke-virtual {v0, p0}, Lcom/oneplus/server/DynamicVsyncManager;->initEnv(Landroid/content/Context;)V
+    invoke-virtual {v0, v1}, Lcom/oneplus/server/DynamicVsyncManager;->initEnv(Landroid/content/Context;)V
 
     :cond_1
+    sget-boolean v0, Lcom/oneplus/theme/OpFontHelperInjector;->sFeatureEnable:Z
+
+    if-eqz v0, :cond_2
+
+    iget-object p0, p0, Lcom/oneplus/server/OnePlusService;->mContext:Landroid/content/Context;
+
+    invoke-static {p0}, Lcom/android/server/am/OpFontControlInjector;->initForFontCtrl(Landroid/content/Context;)V
+
+    goto :goto_0
+
+    :cond_2
+    invoke-static {}, Lcom/android/server/am/OpFontControlInjector;->resetAllFontLinkToDefault()Z
+
+    const/4 v0, 0x1
+
+    const-string v1, "persist.sys.font"
+
+    invoke-static {v1, v0}, Landroid/os/SystemProperties;->getInt(Ljava/lang/String;I)I
+
+    move-result v1
+
+    if-eq v1, v0, :cond_3
+
+    const/4 v2, 0x2
+
+    if-eq v1, v2, :cond_3
+
+    const-string v1, "OPDFont"
+
+    const-string v2, "Force Reset To Default Font"
+
+    invoke-static {v1, v2}, Landroid/util/Slog;->i(Ljava/lang/String;Ljava/lang/String;)I
+
+    invoke-static {}, Landroid/os/UserHandle;->myUserId()I
+
+    move-result v1
+
+    invoke-virtual {p0, v1, v0}, Lcom/oneplus/server/OnePlusService;->changeFont(II)V
+
+    :cond_3
+    :goto_0
     return-void
 .end method
 

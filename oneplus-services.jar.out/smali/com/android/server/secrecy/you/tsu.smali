@@ -30,7 +30,7 @@
 
 
 # virtual methods
-.method public Vd()Z
+.method public Ud()Z
     .locals 0
 
     const/4 p0, 0x1

@@ -132,7 +132,7 @@
     return-void
 .end method
 
-.method private Ft()[B
+.method private Et()[B
     .locals 5
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -147,7 +147,7 @@
 
     iget-object v2, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->Lqa:Lorg/bouncycastle/jcajce/provider/asymmetric/util/sis$zta;
 
-    invoke-virtual {v2}, Lorg/bouncycastle/jcajce/provider/asymmetric/util/sis$zta;->Uf()[B
+    invoke-virtual {v2}, Lorg/bouncycastle/jcajce/provider/asymmetric/util/sis$zta;->Tf()[B
 
     move-result-object v2
 
@@ -359,7 +359,7 @@
     if-gt p1, p3, :cond_4
 
     :goto_0
-    invoke-direct {p0}, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->Ft()[B
+    invoke-direct {p0}, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->Et()[B
 
     move-result-object p0
 
@@ -467,7 +467,7 @@
     if-gt p1, p3, :cond_3
 
     :goto_0
-    invoke-direct {p0}, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->Ft()[B
+    invoke-direct {p0}, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->Et()[B
 
     move-result-object p0
 
@@ -1022,7 +1022,7 @@
     goto :goto_6
 
     :cond_d
-    invoke-static {}, Lorg/bouncycastle/crypto/igw;->gj()Ljava/security/SecureRandom;
+    invoke-static {}, Lorg/bouncycastle/crypto/igw;->fj()Ljava/security/SecureRandom;
 
     move-result-object p4
 

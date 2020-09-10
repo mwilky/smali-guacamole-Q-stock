@@ -214,7 +214,7 @@
 
     iput-object p1, p0, Lorg/bouncycastle/crypto/rtg/wtn;->key:Lorg/bouncycastle/crypto/wtn/veq;
 
-    invoke-virtual {p2}, Lorg/bouncycastle/crypto/wtn/hmo;->hj()Ljava/security/SecureRandom;
+    invoke-virtual {p2}, Lorg/bouncycastle/crypto/wtn/hmo;->gj()Ljava/security/SecureRandom;
 
     move-result-object p1
 
@@ -225,7 +225,7 @@
 
     iput-object p2, p0, Lorg/bouncycastle/crypto/rtg/wtn;->key:Lorg/bouncycastle/crypto/wtn/veq;
 
-    invoke-static {}, Lorg/bouncycastle/crypto/igw;->gj()Ljava/security/SecureRandom;
+    invoke-static {}, Lorg/bouncycastle/crypto/igw;->fj()Ljava/security/SecureRandom;
 
     move-result-object p1
 

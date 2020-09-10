@@ -368,7 +368,7 @@
     return p0
 .end method
 
-.method private Yr()V
+.method private Xr()V
     .locals 2
 
     iget-object v0, p0, Lcom/oneplus/android/server/zta/sis;->mContext:Landroid/content/Context;
@@ -735,7 +735,7 @@
     :cond_0
     iput-object p1, p0, Lcom/oneplus/android/server/zta/sis;->mContext:Landroid/content/Context;
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/zta/sis;->Yr()V
+    invoke-direct {p0}, Lcom/oneplus/android/server/zta/sis;->Xr()V
 
     invoke-static {}, Lcom/android/server/OnePlusUtil$zta;->getInstance()Lcom/android/server/OnePlusUtil$zta;
 

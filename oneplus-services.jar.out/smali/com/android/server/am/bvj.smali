@@ -95,7 +95,7 @@
     return-void
 .end method
 
-.method private jm()V
+.method private im()V
     .locals 4
 
     iget-object v0, p0, Lcom/android/server/am/bvj;->mHelper:Lcom/android/server/am/dma;
@@ -194,7 +194,7 @@
 
     if-eqz v0, :cond_0
 
-    invoke-direct {p0}, Lcom/android/server/am/bvj;->jm()V
+    invoke-direct {p0}, Lcom/android/server/am/bvj;->im()V
 
     :cond_0
     iget-boolean p0, p0, Lcom/android/server/am/bvj;->Oi:Z
@@ -439,7 +439,7 @@
 
     if-eqz v0, :cond_0
 
-    invoke-direct {p0}, Lcom/android/server/am/bvj;->jm()V
+    invoke-direct {p0}, Lcom/android/server/am/bvj;->im()V
 
     :cond_0
     iget-object p0, p0, Lcom/android/server/am/bvj;->info:Landroid/content/pm/ApplicationInfo;

@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field private QI:Z
+.field private OI:Z
 
 
 # direct methods
@@ -40,7 +40,7 @@
 
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/oneplus/android/server/you/zta;->QI:Z
+    iput-boolean v0, p0, Lcom/oneplus/android/server/you/zta;->OI:Z
 
     return-void
 .end method
@@ -91,7 +91,7 @@
 
     new-instance v0, Lcom/android/server/power/OnePlusStandbyAnalyzer;
 
-    iget-boolean p0, p0, Lcom/oneplus/android/server/you/zta;->QI:Z
+    iget-boolean p0, p0, Lcom/oneplus/android/server/you/zta;->OI:Z
 
     invoke-direct {v0, p1, p0}, Lcom/android/server/power/OnePlusStandbyAnalyzer;-><init>(Lcom/android/server/DeviceIdleController;Z)V
 

@@ -75,7 +75,7 @@
 
     iput-object p1, p0, Lorg/bouncycastle/asn1/x509/ibl;->seq:Lorg/bouncycastle/asn1/obl;
 
-    invoke-virtual {p1}, Lorg/bouncycastle/asn1/obl;->Sg()Ljava/util/Enumeration;
+    invoke-virtual {p1}, Lorg/bouncycastle/asn1/obl;->Rg()Ljava/util/Enumeration;
 
     move-result-object p1
 
@@ -253,7 +253,7 @@
 
 
 # virtual methods
-.method public di()[Lorg/bouncycastle/asn1/x509/hmo;
+.method public ci()[Lorg/bouncycastle/asn1/x509/hmo;
     .locals 4
 
     iget-object v0, p0, Lorg/bouncycastle/asn1/x509/ibl;->seq:Lorg/bouncycastle/asn1/obl;
@@ -266,7 +266,7 @@
 
     iget-object p0, p0, Lorg/bouncycastle/asn1/x509/ibl;->seq:Lorg/bouncycastle/asn1/obl;
 
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/obl;->Sg()Ljava/util/Enumeration;
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/obl;->Rg()Ljava/util/Enumeration;
 
     move-result-object p0
 

@@ -327,7 +327,7 @@
 .method private static sis(Lyou/zta/sis/zta/rtg;Lyou/zta/sis/zta/you/tsu;)Lyou/zta/sis/zta/rtg;
     .locals 2
 
-    invoke-virtual {p0}, Lyou/zta/sis/zta/rtg;->Wj()Lyou/zta/sis/zta/rtg$sis;
+    invoke-virtual {p0}, Lyou/zta/sis/zta/rtg;->Vj()Lyou/zta/sis/zta/rtg$sis;
 
     move-result-object v0
 

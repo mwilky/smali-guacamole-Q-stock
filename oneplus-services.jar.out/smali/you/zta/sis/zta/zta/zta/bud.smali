@@ -123,19 +123,7 @@
     return p0
 .end method
 
-.method public getFieldSize()I
-    .locals 0
-
-    sget-object p0, Lyou/zta/sis/zta/zta/zta/bud;->Q:Ljava/math/BigInteger;
-
-    invoke-virtual {p0}, Ljava/math/BigInteger;->bitLength()I
-
-    move-result p0
-
-    return p0
-.end method
-
-.method public gk()Lyou/zta/sis/zta/cno;
+.method public fk()Lyou/zta/sis/zta/cno;
     .locals 1
 
     const/16 v0, 0xc
@@ -151,6 +139,26 @@
     new-instance p0, Lyou/zta/sis/zta/zta/zta/bud;
 
     invoke-direct {p0, v0}, Lyou/zta/sis/zta/zta/zta/bud;-><init>([I)V
+
+    return-object p0
+.end method
+
+.method public getFieldSize()I
+    .locals 0
+
+    sget-object p0, Lyou/zta/sis/zta/zta/zta/bud;->Q:Ljava/math/BigInteger;
+
+    invoke-virtual {p0}, Ljava/math/BigInteger;->bitLength()I
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public gk()Ljava/lang/String;
+    .locals 0
+
+    const-string p0, "SecP384R1Field"
 
     return-object p0
 .end method
@@ -179,15 +187,7 @@
     return p0
 .end method
 
-.method public hk()Ljava/lang/String;
-    .locals 0
-
-    const-string p0, "SecP384R1Field"
-
-    return-object p0
-.end method
-
-.method public ik()Z
+.method public hk()Z
     .locals 1
 
     iget-object p0, p0, Lyou/zta/sis/zta/zta/zta/bud;->x:[I
@@ -201,43 +201,7 @@
     return p0
 .end method
 
-.method public invert()Lyou/zta/sis/zta/cno;
-    .locals 2
-
-    const/16 v0, 0xc
-
-    invoke-static {v0}, Lyou/zta/sis/sis/kth;->create(I)[I
-
-    move-result-object v0
-
-    sget-object v1, Lyou/zta/sis/zta/zta/zta/vju;->P:[I
-
-    iget-object p0, p0, Lyou/zta/sis/zta/zta/zta/bud;->x:[I
-
-    invoke-static {v1, p0, v0}, Lyou/zta/sis/sis/you;->bio([I[I[I)V
-
-    new-instance p0, Lyou/zta/sis/zta/zta/zta/bud;
-
-    invoke-direct {p0, v0}, Lyou/zta/sis/zta/zta/zta/bud;-><init>([I)V
-
-    return-object p0
-.end method
-
-.method public isZero()Z
-    .locals 1
-
-    iget-object p0, p0, Lyou/zta/sis/zta/zta/zta/bud;->x:[I
-
-    const/16 v0, 0xc
-
-    invoke-static {v0, p0}, Lyou/zta/sis/sis/kth;->dma(I[I)Z
-
-    move-result p0
-
-    return p0
-.end method
-
-.method public jk()Lyou/zta/sis/zta/cno;
+.method public ik()Lyou/zta/sis/zta/cno;
     .locals 7
 
     iget-object v0, p0, Lyou/zta/sis/zta/zta/zta/bud;->x:[I
@@ -372,7 +336,43 @@
     return-object p0
 .end method
 
-.method public kk()Z
+.method public invert()Lyou/zta/sis/zta/cno;
+    .locals 2
+
+    const/16 v0, 0xc
+
+    invoke-static {v0}, Lyou/zta/sis/sis/kth;->create(I)[I
+
+    move-result-object v0
+
+    sget-object v1, Lyou/zta/sis/zta/zta/zta/vju;->P:[I
+
+    iget-object p0, p0, Lyou/zta/sis/zta/zta/zta/bud;->x:[I
+
+    invoke-static {v1, p0, v0}, Lyou/zta/sis/sis/you;->bio([I[I[I)V
+
+    new-instance p0, Lyou/zta/sis/zta/zta/zta/bud;
+
+    invoke-direct {p0, v0}, Lyou/zta/sis/zta/zta/zta/bud;-><init>([I)V
+
+    return-object p0
+.end method
+
+.method public isZero()Z
+    .locals 1
+
+    iget-object p0, p0, Lyou/zta/sis/zta/zta/zta/bud;->x:[I
+
+    const/16 v0, 0xc
+
+    invoke-static {v0, p0}, Lyou/zta/sis/sis/kth;->dma(I[I)Z
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public jk()Z
     .locals 2
 
     iget-object p0, p0, Lyou/zta/sis/zta/zta/zta/bud;->x:[I

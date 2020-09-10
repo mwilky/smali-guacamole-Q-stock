@@ -302,7 +302,7 @@
 
 
 # virtual methods
-.method public Yh()I
+.method public Xh()I
     .locals 1
 
     iget-object p0, p0, Lorg/bouncycastle/asn1/x509/e;->version:Lorg/bouncycastle/asn1/ywr;
@@ -327,7 +327,7 @@
     return p0
 .end method
 
-.method public Zh()Ljava/util/Enumeration;
+.method public Yh()Ljava/util/Enumeration;
     .locals 2
 
     iget-object v0, p0, Lorg/bouncycastle/asn1/x509/e;->Vva:Lorg/bouncycastle/asn1/obl;
@@ -345,7 +345,7 @@
     :cond_0
     new-instance v1, Lorg/bouncycastle/asn1/x509/e$sis;
 
-    invoke-virtual {v0}, Lorg/bouncycastle/asn1/obl;->Sg()Ljava/util/Enumeration;
+    invoke-virtual {v0}, Lorg/bouncycastle/asn1/obl;->Rg()Ljava/util/Enumeration;
 
     move-result-object v0
 

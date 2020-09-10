@@ -333,7 +333,7 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    invoke-virtual {p1}, Lorg/bouncycastle/asn1/tsu;->Ig()Z
+    invoke-virtual {p1}, Lorg/bouncycastle/asn1/tsu;->Hg()Z
 
     move-result p1
 
@@ -451,20 +451,20 @@
     return v1
 .end method
 
-.method public getValue()Lorg/bouncycastle/asn1/ibl;
-    .locals 0
-
-    iget-object p0, p0, Lorg/bouncycastle/asn1/x509/n;->value:Lorg/bouncycastle/asn1/ibl;
-
-    return-object p0
-.end method
-
-.method public gi()Lorg/bouncycastle/asn1/ssp;
+.method public fi()Lorg/bouncycastle/asn1/ssp;
     .locals 0
 
     invoke-static {p0}, Lorg/bouncycastle/asn1/x509/n;->zta(Lorg/bouncycastle/asn1/x509/n;)Lorg/bouncycastle/asn1/vdb;
 
     move-result-object p0
+
+    return-object p0
+.end method
+
+.method public getValue()Lorg/bouncycastle/asn1/ibl;
+    .locals 0
+
+    iget-object p0, p0, Lorg/bouncycastle/asn1/x509/n;->value:Lorg/bouncycastle/asn1/ibl;
 
     return-object p0
 .end method

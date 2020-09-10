@@ -84,7 +84,7 @@
 
     check-cast p0, Lorg/bouncycastle/asn1/x509/j;
 
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/x509/j;->Hi()Lorg/bouncycastle/asn1/x509/obl;
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/x509/j;->Gi()Lorg/bouncycastle/asn1/x509/obl;
 
     move-result-object p0
 
@@ -396,13 +396,13 @@
 
     check-cast v0, Lorg/bouncycastle/asn1/x509/j;
 
-    invoke-virtual {v0}, Lorg/bouncycastle/asn1/x509/j;->ji()Lorg/bouncycastle/asn1/x509/ear;
+    invoke-virtual {v0}, Lorg/bouncycastle/asn1/x509/j;->ii()Lorg/bouncycastle/asn1/x509/ear;
 
     move-result-object v2
 
     if-eqz v2, :cond_2
 
-    invoke-virtual {v0}, Lorg/bouncycastle/asn1/x509/j;->ji()Lorg/bouncycastle/asn1/x509/ear;
+    invoke-virtual {v0}, Lorg/bouncycastle/asn1/x509/j;->ii()Lorg/bouncycastle/asn1/x509/ear;
 
     move-result-object v2
 
@@ -428,7 +428,7 @@
 
     move-result-object p1
 
-    invoke-virtual {v0}, Lorg/bouncycastle/asn1/x509/j;->ji()Lorg/bouncycastle/asn1/x509/ear;
+    invoke-virtual {v0}, Lorg/bouncycastle/asn1/x509/j;->ii()Lorg/bouncycastle/asn1/x509/ear;
 
     move-result-object v0
 
@@ -448,7 +448,7 @@
     return v1
 
     :cond_2
-    invoke-virtual {v0}, Lorg/bouncycastle/asn1/x509/j;->Hi()Lorg/bouncycastle/asn1/x509/obl;
+    invoke-virtual {v0}, Lorg/bouncycastle/asn1/x509/j;->Gi()Lorg/bouncycastle/asn1/x509/obl;
 
     move-result-object v0
 

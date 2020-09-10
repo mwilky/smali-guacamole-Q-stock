@@ -240,7 +240,7 @@
 
     check-cast p1, Lorg/bouncycastle/jcajce/sis/sis;
 
-    invoke-virtual {p1}, Lorg/bouncycastle/jcajce/sis/sis;->yg()Lorg/bouncycastle/asn1/x509/zta;
+    invoke-virtual {p1}, Lorg/bouncycastle/jcajce/sis/sis;->xg()Lorg/bouncycastle/asn1/x509/zta;
 
     move-result-object p1
 

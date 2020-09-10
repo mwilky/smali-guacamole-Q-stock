@@ -439,7 +439,7 @@
 
     invoke-direct {v0}, Landroid/content/ContentValues;-><init>()V
 
-    invoke-virtual {p1}, Lcom/android/server/power/zta/zta;->zd()Ljava/lang/Integer;
+    invoke-virtual {p1}, Lcom/android/server/power/zta/zta;->yd()Ljava/lang/Integer;
 
     move-result-object v1
 
@@ -449,7 +449,7 @@
 
     if-eqz v1, :cond_1
 
-    invoke-virtual {p1}, Lcom/android/server/power/zta/zta;->zd()Ljava/lang/Integer;
+    invoke-virtual {p1}, Lcom/android/server/power/zta/zta;->yd()Ljava/lang/Integer;
 
     move-result-object v1
 

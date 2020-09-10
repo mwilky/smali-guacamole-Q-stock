@@ -61,7 +61,7 @@
     return-void
 .end method
 
-.method public static ke()Lcom/android/server/wm/AppWindowToken;
+.method public static je()Lcom/android/server/wm/AppWindowToken;
     .locals 1
 
     sget-object v0, Lcom/android/server/wm/ywr;->zR:Lcom/android/server/wm/AppWindowToken;
@@ -69,7 +69,7 @@
     return-object v0
 .end method
 
-.method public static le()Lcom/android/server/wm/AppWindowToken;
+.method public static ke()Lcom/android/server/wm/AppWindowToken;
     .locals 1
 
     sget-object v0, Lcom/android/server/wm/ywr;->AR:Lcom/android/server/wm/AppWindowToken;

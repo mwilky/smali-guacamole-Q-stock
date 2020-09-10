@@ -43,7 +43,7 @@
     return-object p0
 .end method
 
-.method ol()Ljava/lang/Object;
+.method nl()Ljava/lang/Object;
     .locals 0
 
     iget-object p0, p0, Lorg/bouncycastle/x509/dma$zta;->Voa:Ljava/lang/Object;

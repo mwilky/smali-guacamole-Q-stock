@@ -125,7 +125,7 @@
 
 
 # virtual methods
-.method public Gh()Lorg/bouncycastle/asn1/ear;
+.method public Fh()Lorg/bouncycastle/asn1/ear;
     .locals 0
 
     iget-object p0, p0, Lorg/bouncycastle/asn1/dma/ire;->Ata:Lorg/bouncycastle/asn1/ear;
@@ -133,7 +133,7 @@
     return-object p0
 .end method
 
-.method public Hh()Lorg/bouncycastle/asn1/bvj;
+.method public Gh()Lorg/bouncycastle/asn1/bvj;
     .locals 0
 
     iget-object p0, p0, Lorg/bouncycastle/asn1/dma/ire;->xta:Lorg/bouncycastle/asn1/bvj;
@@ -141,7 +141,7 @@
     return-object p0
 .end method
 
-.method public Ih()Lorg/bouncycastle/asn1/ssp;
+.method public Hh()Lorg/bouncycastle/asn1/ssp;
     .locals 0
 
     iget-object p0, p0, Lorg/bouncycastle/asn1/dma/ire;->yta:Lorg/bouncycastle/asn1/ssp;

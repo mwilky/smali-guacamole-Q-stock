@@ -47,7 +47,7 @@
 
 
 # virtual methods
-.method public Tj()I
+.method public Sj()I
     .locals 0
 
     iget p0, p0, Lyou/zta/sis/you$you;->eGa:I
@@ -55,7 +55,7 @@
     return p0
 .end method
 
-.method public Uj()[B
+.method public Tj()[B
     .locals 0
 
     iget-object p0, p0, Lyou/zta/sis/you$you;->dGa:[B

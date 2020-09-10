@@ -38,7 +38,7 @@
 
     iput-object v0, p0, Lorg/bouncycastle/util/encoders/you;->nIa:[B
 
-    invoke-virtual {p0}, Lorg/bouncycastle/util/encoders/you;->ml()V
+    invoke-virtual {p0}, Lorg/bouncycastle/util/encoders/you;->ll()V
 
     return-void
 
@@ -342,7 +342,7 @@
 
 
 # virtual methods
-.method protected ml()V
+.method protected ll()V
     .locals 4
 
     const/4 v0, 0x0

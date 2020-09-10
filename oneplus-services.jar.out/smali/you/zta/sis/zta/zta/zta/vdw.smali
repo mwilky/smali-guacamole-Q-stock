@@ -112,7 +112,7 @@
 
 
 # virtual methods
-.method protected Vj()Lyou/zta/sis/zta/rtg;
+.method protected Uj()Lyou/zta/sis/zta/rtg;
     .locals 0
 
     new-instance p0, Lyou/zta/sis/zta/zta/zta/vdw;
@@ -199,7 +199,7 @@
 
     aget-object v4, p1, v4
 
-    invoke-virtual {v4}, Lyou/zta/sis/zta/wtn;->uk()Lyou/zta/sis/zta/cno;
+    invoke-virtual {v4}, Lyou/zta/sis/zta/wtn;->tk()Lyou/zta/sis/zta/cno;
 
     move-result-object v5
 
@@ -213,7 +213,7 @@
 
     add-int/2addr v3, v6
 
-    invoke-virtual {v4}, Lyou/zta/sis/zta/wtn;->vk()Lyou/zta/sis/zta/cno;
+    invoke-virtual {v4}, Lyou/zta/sis/zta/wtn;->uk()Lyou/zta/sis/zta/cno;
 
     move-result-object v4
 

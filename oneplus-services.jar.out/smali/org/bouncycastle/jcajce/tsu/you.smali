@@ -11,7 +11,7 @@
 .method public constructor <init>()V
     .locals 1
 
-    invoke-static {}, Lorg/bouncycastle/jcajce/tsu/you;->Xt()Ljava/security/Provider;
+    invoke-static {}, Lorg/bouncycastle/jcajce/tsu/you;->Wt()Ljava/security/Provider;
 
     move-result-object v0
 
@@ -20,7 +20,7 @@
     return-void
 .end method
 
-.method private static declared-synchronized Xt()Ljava/security/Provider;
+.method private static declared-synchronized Wt()Ljava/security/Provider;
     .locals 2
 
     const-class v0, Lorg/bouncycastle/jcajce/tsu/you;

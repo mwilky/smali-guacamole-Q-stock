@@ -25,7 +25,7 @@
 
 
 # virtual methods
-.method protected fj()Lorg/bouncycastle/asn1/ibl/vju;
+.method protected ej()Lorg/bouncycastle/asn1/ibl/vju;
     .locals 11
 
     const-string p0, "003088250CA6E7C7FE649CE85820F7"

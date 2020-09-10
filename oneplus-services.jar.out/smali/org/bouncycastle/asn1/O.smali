@@ -168,7 +168,7 @@
 
 
 # virtual methods
-.method Dg()I
+.method Cg()I
     .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {

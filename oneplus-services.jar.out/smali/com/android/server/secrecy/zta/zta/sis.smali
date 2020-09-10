@@ -52,7 +52,7 @@
     return-void
 .end method
 
-.method public static Qd()Ljava/lang/String;
+.method public static Pd()Ljava/lang/String;
     .locals 7
 
     const-string v0, "ParamReader"
@@ -198,7 +198,7 @@
     return-object v1
 .end method
 
-.method public static Rd()Z
+.method public static Qd()Z
     .locals 7
 
     const-string v0, "ParamReader"

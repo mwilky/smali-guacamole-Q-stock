@@ -163,7 +163,7 @@
     return p0
 .end method
 
-.method public vj()Lorg/bouncycastle/crypto/wtn/bvj;
+.method public uj()Lorg/bouncycastle/crypto/wtn/bvj;
     .locals 0
 
     iget-object p0, p0, Lorg/bouncycastle/crypto/wtn/ywr;->rDa:Lorg/bouncycastle/crypto/wtn/bvj;

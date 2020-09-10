@@ -106,7 +106,7 @@
     return-object p0
 .end method
 
-.method public sh()Ljava/math/BigInteger;
+.method public rh()Ljava/math/BigInteger;
     .locals 0
 
     iget-object p0, p0, Lorg/bouncycastle/asn1/dma/ibl;->bta:Lorg/bouncycastle/asn1/ywr;

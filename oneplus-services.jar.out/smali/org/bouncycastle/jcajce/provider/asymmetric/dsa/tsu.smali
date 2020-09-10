@@ -203,7 +203,7 @@
 
     check-cast p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dsa/BCDSAPublicKey;
 
-    invoke-virtual {p0}, Lorg/bouncycastle/jcajce/provider/asymmetric/dsa/BCDSAPublicKey;->Gj()Lorg/bouncycastle/crypto/wtn/oif;
+    invoke-virtual {p0}, Lorg/bouncycastle/jcajce/provider/asymmetric/dsa/BCDSAPublicKey;->Fj()Lorg/bouncycastle/crypto/wtn/oif;
 
     move-result-object p0
 
@@ -220,7 +220,7 @@
 
     invoke-direct {v0, p0}, Lorg/bouncycastle/jcajce/provider/asymmetric/dsa/BCDSAPublicKey;-><init>(Ljava/security/interfaces/DSAPublicKey;)V
 
-    invoke-virtual {v0}, Lorg/bouncycastle/jcajce/provider/asymmetric/dsa/BCDSAPublicKey;->Gj()Lorg/bouncycastle/crypto/wtn/oif;
+    invoke-virtual {v0}, Lorg/bouncycastle/jcajce/provider/asymmetric/dsa/BCDSAPublicKey;->Fj()Lorg/bouncycastle/crypto/wtn/oif;
 
     move-result-object p0
 
@@ -240,7 +240,7 @@
 
     invoke-direct {v1, v0}, Lorg/bouncycastle/jcajce/provider/asymmetric/dsa/BCDSAPublicKey;-><init>(Lorg/bouncycastle/asn1/x509/c;)V
 
-    invoke-virtual {v1}, Lorg/bouncycastle/jcajce/provider/asymmetric/dsa/BCDSAPublicKey;->Gj()Lorg/bouncycastle/crypto/wtn/oif;
+    invoke-virtual {v1}, Lorg/bouncycastle/jcajce/provider/asymmetric/dsa/BCDSAPublicKey;->Fj()Lorg/bouncycastle/crypto/wtn/oif;
 
     move-result-object p0
     :try_end_0

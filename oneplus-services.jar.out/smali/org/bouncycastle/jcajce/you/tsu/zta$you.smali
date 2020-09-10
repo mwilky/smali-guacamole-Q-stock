@@ -113,7 +113,7 @@
 
     move-result-object v1
 
-    invoke-virtual {p1}, Lorg/bouncycastle/jcajce/sis/zta;->xg()I
+    invoke-virtual {p1}, Lorg/bouncycastle/jcajce/sis/zta;->wg()I
 
     move-result p1
 
@@ -248,7 +248,7 @@
 
     iget-object p0, p0, Lorg/bouncycastle/jcajce/you/tsu/zta$you;->Qoa:Lorg/bouncycastle/asn1/you/kth;
 
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/you/kth;->ah()I
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/you/kth;->_g()I
 
     move-result p0
 
@@ -302,7 +302,7 @@
 
     :cond_3
     :goto_0
-    invoke-static {}, Lorg/bouncycastle/jcajce/you/tsu/cno;->Ij()Z
+    invoke-static {}, Lorg/bouncycastle/jcajce/you/tsu/cno;->Hj()Z
 
     move-result p1
 
@@ -331,7 +331,7 @@
 
     iget-object p0, p0, Lorg/bouncycastle/jcajce/you/tsu/zta$you;->Qoa:Lorg/bouncycastle/asn1/you/kth;
 
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/you/kth;->ah()I
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/you/kth;->_g()I
 
     move-result p0
 

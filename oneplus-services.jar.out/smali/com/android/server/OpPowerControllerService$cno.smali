@@ -92,7 +92,7 @@
 
     move-result-object p0
 
-    invoke-virtual {p0}, Lcom/android/server/am/j;->fc()V
+    invoke-virtual {p0}, Lcom/android/server/am/j;->ec()V
 
     goto/16 :goto_7
 

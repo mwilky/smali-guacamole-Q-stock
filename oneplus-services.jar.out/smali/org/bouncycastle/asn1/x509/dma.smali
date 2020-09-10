@@ -125,31 +125,31 @@
 
 
 # virtual methods
-.method public Yh()I
+.method public Xh()I
     .locals 0
 
     iget-object p0, p0, Lorg/bouncycastle/asn1/x509/dma;->Vta:Lorg/bouncycastle/asn1/x509/e;
 
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/x509/e;->Yh()I
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/x509/e;->Xh()I
 
     move-result p0
 
     return p0
 .end method
 
-.method public Zh()Ljava/util/Enumeration;
+.method public Yh()Ljava/util/Enumeration;
     .locals 0
 
     iget-object p0, p0, Lorg/bouncycastle/asn1/x509/dma;->Vta:Lorg/bouncycastle/asn1/x509/e;
 
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/x509/e;->Zh()Ljava/util/Enumeration;
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/x509/e;->Yh()Ljava/util/Enumeration;
 
     move-result-object p0
 
     return-object p0
 .end method
 
-.method public _g()Lorg/bouncycastle/asn1/x509/zta;
+.method public Zg()Lorg/bouncycastle/asn1/x509/zta;
     .locals 0
 
     iget-object p0, p0, Lorg/bouncycastle/asn1/x509/dma;->Usa:Lorg/bouncycastle/asn1/x509/zta;

@@ -51,7 +51,7 @@
 
     iget-object v0, p0, Lyou/zta/sis/zta/ire;->xHa:Lyou/zta/sis/zta/ear;
 
-    invoke-virtual {v0}, Lyou/zta/sis/zta/ear;->Xk()Lyou/zta/sis/zta/wtn;
+    invoke-virtual {v0}, Lyou/zta/sis/zta/ear;->Wk()Lyou/zta/sis/zta/wtn;
 
     move-result-object v0
 
@@ -68,7 +68,7 @@
     :cond_0
     iget-object v0, p0, Lyou/zta/sis/zta/ire;->xHa:Lyou/zta/sis/zta/ear;
 
-    invoke-virtual {v0}, Lyou/zta/sis/zta/ear;->Vk()[Lyou/zta/sis/zta/wtn;
+    invoke-virtual {v0}, Lyou/zta/sis/zta/ear;->Uk()[Lyou/zta/sis/zta/wtn;
 
     move-result-object v0
 

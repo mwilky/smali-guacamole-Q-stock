@@ -335,7 +335,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lyou/zta/sis/zta/wtn;->pk()Lyou/zta/sis/zta/cno;
+    invoke-virtual {v1}, Lyou/zta/sis/zta/wtn;->ok()Lyou/zta/sis/zta/cno;
 
     move-result-object v1
 
@@ -347,7 +347,7 @@
 
     move-result-object p2
 
-    invoke-virtual {p2}, Lyou/zta/sis/zta/wtn;->qk()Lyou/zta/sis/zta/cno;
+    invoke-virtual {p2}, Lyou/zta/sis/zta/wtn;->pk()Lyou/zta/sis/zta/cno;
 
     move-result-object p2
 
@@ -454,7 +454,7 @@
 
     iput-object v2, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/ec/BCECPublicKey;->ecSpec:Ljava/security/spec/ECParameterSpec;
 
-    invoke-virtual {p1}, Lorg/bouncycastle/asn1/x509/c;->vh()Lorg/bouncycastle/asn1/n;
+    invoke-virtual {p1}, Lorg/bouncycastle/asn1/x509/c;->uh()Lorg/bouncycastle/asn1/n;
 
     move-result-object p1
 
@@ -541,7 +541,7 @@
 
     new-instance v1, Lorg/bouncycastle/crypto/wtn/obl;
 
-    invoke-virtual {p1}, Lorg/bouncycastle/asn1/ibl/les;->Si()Lyou/zta/sis/zta/wtn;
+    invoke-virtual {p1}, Lorg/bouncycastle/asn1/ibl/les;->Ri()Lyou/zta/sis/zta/wtn;
 
     move-result-object p1
 
@@ -624,11 +624,11 @@
 
     move-result-object v0
 
-    invoke-virtual {p2}, Lorg/bouncycastle/crypto/wtn/ibl;->Ri()Ljava/math/BigInteger;
+    invoke-virtual {p2}, Lorg/bouncycastle/crypto/wtn/ibl;->Qi()Ljava/math/BigInteger;
 
     move-result-object v1
 
-    invoke-virtual {p2}, Lorg/bouncycastle/crypto/wtn/ibl;->Qi()Ljava/math/BigInteger;
+    invoke-virtual {p2}, Lorg/bouncycastle/crypto/wtn/ibl;->Pi()Ljava/math/BigInteger;
 
     move-result-object p2
 
@@ -643,7 +643,7 @@
 
 
 # virtual methods
-.method Gj()Lorg/bouncycastle/crypto/wtn/obl;
+.method Fj()Lorg/bouncycastle/crypto/wtn/obl;
     .locals 0
 
     iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/ec/BCECPublicKey;->EEa:Lorg/bouncycastle/crypto/wtn/obl;
@@ -651,7 +651,7 @@
     return-object p0
 .end method
 
-.method Hj()Lyou/zta/you/you/rtg;
+.method Gj()Lyou/zta/you/you/rtg;
     .locals 1
 
     iget-object v0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/ec/BCECPublicKey;->ecSpec:Ljava/security/spec/ECParameterSpec;
@@ -708,11 +708,11 @@
 
     if-eqz v0, :cond_1
 
-    invoke-virtual {p0}, Lorg/bouncycastle/jcajce/provider/asymmetric/ec/BCECPublicKey;->Hj()Lyou/zta/you/you/rtg;
+    invoke-virtual {p0}, Lorg/bouncycastle/jcajce/provider/asymmetric/ec/BCECPublicKey;->Gj()Lyou/zta/you/you/rtg;
 
     move-result-object p0
 
-    invoke-virtual {p1}, Lorg/bouncycastle/jcajce/provider/asymmetric/ec/BCECPublicKey;->Hj()Lyou/zta/you/you/rtg;
+    invoke-virtual {p1}, Lorg/bouncycastle/jcajce/provider/asymmetric/ec/BCECPublicKey;->Gj()Lyou/zta/you/you/rtg;
 
     move-result-object p1
 
@@ -854,7 +854,7 @@
 
     if-nez p0, :cond_0
 
-    invoke-virtual {v0}, Lyou/zta/sis/zta/wtn;->tk()Lyou/zta/sis/zta/wtn;
+    invoke-virtual {v0}, Lyou/zta/sis/zta/wtn;->sk()Lyou/zta/sis/zta/wtn;
 
     move-result-object p0
 
@@ -893,7 +893,7 @@
 
     move-result v0
 
-    invoke-virtual {p0}, Lorg/bouncycastle/jcajce/provider/asymmetric/ec/BCECPublicKey;->Hj()Lyou/zta/you/you/rtg;
+    invoke-virtual {p0}, Lorg/bouncycastle/jcajce/provider/asymmetric/ec/BCECPublicKey;->Gj()Lyou/zta/you/you/rtg;
 
     move-result-object p0
 
@@ -915,7 +915,7 @@
 
     move-result-object v0
 
-    invoke-virtual {p0}, Lorg/bouncycastle/jcajce/provider/asymmetric/ec/BCECPublicKey;->Hj()Lyou/zta/you/you/rtg;
+    invoke-virtual {p0}, Lorg/bouncycastle/jcajce/provider/asymmetric/ec/BCECPublicKey;->Gj()Lyou/zta/you/you/rtg;
 
     move-result-object p0
 

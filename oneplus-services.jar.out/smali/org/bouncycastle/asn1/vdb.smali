@@ -60,7 +60,7 @@
 
 
 # virtual methods
-.method abstract Dg()I
+.method abstract Cg()I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -68,13 +68,13 @@
     .end annotation
 .end method
 
-.method Eg()Lorg/bouncycastle/asn1/vdb;
+.method Dg()Lorg/bouncycastle/asn1/vdb;
     .locals 0
 
     return-object p0
 .end method
 
-.method Fg()Lorg/bouncycastle/asn1/vdb;
+.method Eg()Lorg/bouncycastle/asn1/vdb;
     .locals 0
 
     return-object p0

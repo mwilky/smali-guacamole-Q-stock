@@ -47,7 +47,7 @@
     goto :goto_0
 
     :cond_0
-    invoke-static {}, Lorg/bouncycastle/crypto/igw;->gj()Ljava/security/SecureRandom;
+    invoke-static {}, Lorg/bouncycastle/crypto/igw;->fj()Ljava/security/SecureRandom;
 
     move-result-object p2
 
@@ -265,7 +265,7 @@
     goto :goto_0
 
     :cond_1
-    invoke-static {}, Lorg/bouncycastle/crypto/igw;->gj()Ljava/security/SecureRandom;
+    invoke-static {}, Lorg/bouncycastle/crypto/igw;->fj()Ljava/security/SecureRandom;
 
     move-result-object p2
 
@@ -292,7 +292,7 @@
 
     iput-object v0, p0, Lorg/bouncycastle/crypto/gck/sis;->key:Lorg/bouncycastle/crypto/wtn/gck;
 
-    invoke-virtual {p2}, Lorg/bouncycastle/crypto/wtn/hmo;->hj()Ljava/security/SecureRandom;
+    invoke-virtual {p2}, Lorg/bouncycastle/crypto/wtn/hmo;->gj()Ljava/security/SecureRandom;
 
     move-result-object p2
 

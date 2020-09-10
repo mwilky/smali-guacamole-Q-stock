@@ -74,6 +74,8 @@
 
 .field public static sInUsing:Z
 
+.field private static sKillLeakProcess:Z
+
 .field private static sLogcatLineNum:I
 
 .field private static sMdm:Z
@@ -115,6 +117,17 @@
 
 .field private mLastReportTime:J
 
+.field private mLeakProcessKillMap:Ljava/util/HashMap;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/HashMap<",
+            "Ljava/lang/String;",
+            "Ljava/lang/Long;",
+            ">;"
+        }
+    .end annotation
+.end field
+
 .field private mLruApps:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -143,7 +156,7 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 16
+    .locals 17
 
     const-string v0, "persist.sys.opmt.debugmode"
 
@@ -173,37 +186,37 @@
 
     sput-boolean v0, Lcom/android/server/am/OnePlusMemoryTracker;->sReport:Z
 
-    const-string v1, "Native"
+    const-string v2, "Native"
 
-    const-string v2, "System"
+    const-string v3, "System"
 
-    const-string v3, "Persistent"
+    const-string v4, "Persistent"
 
-    const-string v4, "Persistent Service"
+    const-string v5, "Persistent Service"
 
-    const-string v5, "Foreground"
+    const-string v6, "Foreground"
 
-    const-string v6, "Visible"
+    const-string v7, "Visible"
 
-    const-string v7, "Perceptible"
+    const-string v8, "Perceptible"
 
-    const-string v8, "Perceptible Low"
+    const-string v9, "Perceptible Low"
 
-    const-string v9, "Heavy Weight"
+    const-string v10, "Heavy Weight"
 
-    const-string v10, "Backup"
+    const-string v11, "Backup"
 
-    const-string v11, "A Services"
+    const-string v12, "A Services"
 
-    const-string v12, "Home"
+    const-string v13, "Home"
 
-    const-string v13, "Previous"
+    const-string v14, "Previous"
 
-    const-string v14, "B Services"
+    const-string v15, "B Services"
 
-    const-string v15, "Cached"
+    const-string v16, "Cached"
 
-    filled-new-array/range {v1 .. v15}, [Ljava/lang/String;
+    filled-new-array/range {v2 .. v16}, [Ljava/lang/String;
 
     move-result-object v0
 
@@ -225,23 +238,25 @@
 
     sput v0, Lcom/android/server/am/OnePlusMemoryTracker;->sLogcatLineNum:I
 
-    const-wide/32 v0, 0x493e0
+    const-wide/32 v2, 0x493e0
 
-    sput-wide v0, Lcom/android/server/am/OnePlusMemoryTracker;->sSwitchBackgroundTimeount:J
+    sput-wide v2, Lcom/android/server/am/OnePlusMemoryTracker;->sSwitchBackgroundTimeount:J
 
     sget-boolean v0, Lcom/android/server/am/OnePlusMemoryTracker;->DEBUG_MODE:Z
 
     if-eqz v0, :cond_0
 
-    const-wide/32 v0, 0xea60
+    const-wide/32 v2, 0xea60
 
     goto :goto_0
 
     :cond_0
-    const-wide/32 v0, 0xa4cb80
+    const-wide/32 v2, 0xa4cb80
 
     :goto_0
-    sput-wide v0, Lcom/android/server/am/OnePlusMemoryTracker;->sReportInterval:J
+    sput-wide v2, Lcom/android/server/am/OnePlusMemoryTracker;->sReportInterval:J
+
+    sput-boolean v1, Lcom/android/server/am/OnePlusMemoryTracker;->sKillLeakProcess:Z
 
     return-void
 
@@ -299,6 +314,12 @@
     invoke-direct {p1}, Ljava/util/ArrayList;-><init>()V
 
     iput-object p1, p0, Lcom/android/server/am/OnePlusMemoryTracker;->mLruApps:Ljava/util/ArrayList;
+
+    new-instance p1, Ljava/util/HashMap;
+
+    invoke-direct {p1}, Ljava/util/HashMap;-><init>()V
+
+    iput-object p1, p0, Lcom/android/server/am/OnePlusMemoryTracker;->mLeakProcessKillMap:Ljava/util/HashMap;
 
     new-instance p1, Lcom/android/server/am/i;
 
@@ -526,7 +547,39 @@
     return p0
 .end method
 
-.method static synthetic access$2200(Lcom/android/server/am/OnePlusMemoryTracker;I)Ljava/util/ArrayList;
+.method static synthetic access$2200()Z
+    .locals 1
+
+    sget-boolean v0, Lcom/android/server/am/OnePlusMemoryTracker;->sKillLeakProcess:Z
+
+    return v0
+.end method
+
+.method static synthetic access$2202(Z)Z
+    .locals 0
+
+    sput-boolean p0, Lcom/android/server/am/OnePlusMemoryTracker;->sKillLeakProcess:Z
+
+    return p0
+.end method
+
+.method static synthetic access$2300(Lcom/android/server/am/OnePlusMemoryTracker;)Ljava/util/HashMap;
+    .locals 0
+
+    iget-object p0, p0, Lcom/android/server/am/OnePlusMemoryTracker;->mLeakProcessKillMap:Ljava/util/HashMap;
+
+    return-object p0
+.end method
+
+.method static synthetic access$2400(Lcom/android/server/am/OnePlusMemoryTracker;Ljava/util/HashMap;Lorg/json/JSONArray;)V
+    .locals 0
+
+    invoke-direct {p0, p1, p2}, Lcom/android/server/am/OnePlusMemoryTracker;->updateLeakShreshold(Ljava/util/HashMap;Lorg/json/JSONArray;)V
+
+    return-void
+.end method
+
+.method static synthetic access$2500(Lcom/android/server/am/OnePlusMemoryTracker;I)Ljava/util/ArrayList;
     .locals 0
 
     invoke-direct {p0, p1}, Lcom/android/server/am/OnePlusMemoryTracker;->getCommand(I)Ljava/util/ArrayList;
@@ -536,7 +589,7 @@
     return-object p0
 .end method
 
-.method static synthetic access$2300(Lcom/android/server/am/OnePlusMemoryTracker;)V
+.method static synthetic access$2600(Lcom/android/server/am/OnePlusMemoryTracker;)V
     .locals 0
 
     invoke-direct {p0}, Lcom/android/server/am/OnePlusMemoryTracker;->getLruApps()V
@@ -544,7 +597,7 @@
     return-void
 .end method
 
-.method static synthetic access$2400(Lcom/android/server/am/OnePlusMemoryTracker;Z)Ljava/lang/String;
+.method static synthetic access$2700(Lcom/android/server/am/OnePlusMemoryTracker;Z)Ljava/lang/String;
     .locals 0
 
     invoke-direct {p0, p1}, Lcom/android/server/am/OnePlusMemoryTracker;->getMemoryInfo(Z)Ljava/lang/String;
@@ -616,6 +669,172 @@
     sget-boolean v0, Lcom/android/server/am/OnePlusMemoryTracker;->sMdm:Z
 
     return v0
+.end method
+
+.method private canBeKilled(Lcom/android/server/am/ProcessRecord;)Z
+    .locals 7
+
+    iget-object p0, p0, Lcom/android/server/am/OnePlusMemoryTracker;->mActivityManager:Lcom/android/server/am/ActivityManagerService;
+
+    invoke-virtual {p0}, Lcom/android/server/am/ActivityManagerService;->getTopAppLocked()Lcom/android/server/am/ProcessRecord;
+
+    move-result-object p0
+
+    if-eqz p0, :cond_6
+
+    iget-object v0, p1, Lcom/android/server/am/ProcessRecord;->processName:Ljava/lang/String;
+
+    iget-object v1, p0, Lcom/android/server/am/ProcessRecord;->processName:Ljava/lang/String;
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    const/4 v1, 0x0
+
+    if-eqz v0, :cond_0
+
+    return v1
+
+    :cond_0
+    iget-object v0, p1, Lcom/android/server/am/ProcessRecord;->services:Landroid/util/ArraySet;
+
+    invoke-virtual {v0}, Landroid/util/ArraySet;->size()I
+
+    move-result v0
+
+    if-lez v0, :cond_4
+
+    move v0, v1
+
+    :goto_0
+    iget-object v2, p1, Lcom/android/server/am/ProcessRecord;->services:Landroid/util/ArraySet;
+
+    invoke-virtual {v2}, Landroid/util/ArraySet;->size()I
+
+    move-result v2
+
+    if-ge v0, v2, :cond_4
+
+    iget-object v2, p1, Lcom/android/server/am/ProcessRecord;->services:Landroid/util/ArraySet;
+
+    invoke-virtual {v2, v0}, Landroid/util/ArraySet;->valueAt(I)Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Lcom/android/server/am/ServiceRecord;
+
+    move v3, v1
+
+    :goto_1
+    iget-object v4, v2, Lcom/android/server/am/ServiceRecord;->bindings:Landroid/util/ArrayMap;
+
+    invoke-virtual {v4}, Landroid/util/ArrayMap;->size()I
+
+    move-result v4
+
+    if-ge v3, v4, :cond_3
+
+    iget-object v4, v2, Lcom/android/server/am/ServiceRecord;->bindings:Landroid/util/ArrayMap;
+
+    invoke-virtual {v4, v3}, Landroid/util/ArrayMap;->valueAt(I)Ljava/lang/Object;
+
+    move-result-object v4
+
+    check-cast v4, Lcom/android/server/am/IntentBindRecord;
+
+    :cond_1
+    iget-object v5, v4, Lcom/android/server/am/IntentBindRecord;->apps:Landroid/util/ArrayMap;
+
+    invoke-virtual {v5}, Landroid/util/ArrayMap;->size()I
+
+    move-result v5
+
+    if-ge v0, v5, :cond_2
+
+    iget-object v5, v4, Lcom/android/server/am/IntentBindRecord;->apps:Landroid/util/ArrayMap;
+
+    invoke-virtual {v5, v0}, Landroid/util/ArrayMap;->valueAt(I)Ljava/lang/Object;
+
+    move-result-object v5
+
+    check-cast v5, Lcom/android/server/am/AppBindRecord;
+
+    iget-object v5, v5, Lcom/android/server/am/AppBindRecord;->client:Lcom/android/server/am/ProcessRecord;
+
+    iget-object v5, v5, Lcom/android/server/am/ProcessRecord;->processName:Ljava/lang/String;
+
+    iget-object v6, p0, Lcom/android/server/am/ProcessRecord;->processName:Ljava/lang/String;
+
+    invoke-virtual {v5, v6}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v5
+
+    if-eqz v5, :cond_1
+
+    return v1
+
+    :cond_2
+    add-int/lit8 v3, v3, 0x1
+
+    goto :goto_1
+
+    :cond_3
+    add-int/lit8 v0, v0, 0x1
+
+    goto :goto_0
+
+    :cond_4
+    iget-object v0, p1, Lcom/android/server/am/ProcessRecord;->conProviders:Ljava/util/ArrayList;
+
+    invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
+
+    move-result v0
+
+    if-lez v0, :cond_6
+
+    move v0, v1
+
+    :goto_2
+    iget-object v2, p1, Lcom/android/server/am/ProcessRecord;->conProviders:Ljava/util/ArrayList;
+
+    invoke-virtual {v2}, Ljava/util/ArrayList;->size()I
+
+    move-result v2
+
+    if-ge v0, v2, :cond_6
+
+    iget-object v2, p1, Lcom/android/server/am/ProcessRecord;->conProviders:Ljava/util/ArrayList;
+
+    invoke-virtual {v2, v0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Lcom/android/server/am/ContentProviderConnection;
+
+    iget-object v2, v2, Lcom/android/server/am/ContentProviderConnection;->client:Lcom/android/server/am/ProcessRecord;
+
+    iget-object v2, v2, Lcom/android/server/am/ProcessRecord;->processName:Ljava/lang/String;
+
+    iget-object v3, p0, Lcom/android/server/am/ProcessRecord;->processName:Ljava/lang/String;
+
+    invoke-virtual {v2, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_5
+
+    return v1
+
+    :cond_5
+    add-int/lit8 v0, v0, 0x1
+
+    goto :goto_2
+
+    :cond_6
+    const/4 p0, 0x1
+
+    return p0
 .end method
 
 .method private doWriteLogToDropbox(Lcom/android/server/am/OnePlusMemoryTracker$zta;)V
@@ -2427,6 +2646,125 @@
     return-void
 .end method
 
+.method private updateLeakShreshold(Ljava/util/HashMap;Lorg/json/JSONArray;)V
+    .locals 6
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/HashMap<",
+            "Ljava/lang/String;",
+            "Ljava/lang/Long;",
+            ">;",
+            "Lorg/json/JSONArray;",
+            ")V"
+        }
+    .end annotation
+
+    const-string v0, "OPMT"
+
+    :try_start_0
+    const-string v1, "[OnlineConfig] Update leak process list"
+
+    invoke-static {v0, v1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    invoke-virtual {p1}, Ljava/util/HashMap;->clear()V
+
+    const/4 v1, 0x0
+
+    :goto_0
+    invoke-virtual {p2}, Lorg/json/JSONArray;->length()I
+
+    move-result v2
+
+    if-ge v1, v2, :cond_0
+
+    invoke-virtual {p2, v1}, Lorg/json/JSONArray;->getJSONObject(I)Lorg/json/JSONObject;
+
+    move-result-object v2
+
+    const-string v3, "proc"
+
+    invoke-virtual {v2, v3}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v3
+
+    const-string v4, "pss"
+
+    invoke-virtual {v2, v4}, Lorg/json/JSONObject;->getLong(Ljava/lang/String;)J
+
+    move-result-wide v4
+
+    invoke-static {v4, v5}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+
+    move-result-object v2
+
+    invoke-virtual {p1, v3, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    add-int/lit8 v1, v1, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    iget-object p1, p0, Lcom/android/server/am/OnePlusMemoryTracker;->mLeakProcessKillMap:Ljava/util/HashMap;
+
+    invoke-virtual {p1}, Ljava/util/HashMap;->keySet()Ljava/util/Set;
+
+    move-result-object p1
+
+    invoke-interface {p1}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
+
+    move-result-object p1
+
+    :goto_1
+    invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result p2
+
+    if-eqz p2, :cond_1
+
+    invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object p2
+
+    check-cast p2, Ljava/lang/String;
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    invoke-virtual {v1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v2, ", pss shreshold : "
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object v2, p0, Lcom/android/server/am/OnePlusMemoryTracker;->mLeakProcessKillMap:Ljava/util/HashMap;
+
+    invoke-virtual {v2, p2}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p2
+
+    invoke-virtual {v1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p2
+
+    invoke-static {v0, p2}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    goto :goto_1
+
+    :catch_0
+    move-exception p0
+
+    invoke-virtual {p0}, Ljava/lang/Exception;->printStackTrace()V
+
+    :cond_1
+    return-void
+.end method
+
 .method private updateLogcatLineNumber(I)V
     .locals 0
 
@@ -3067,7 +3405,7 @@
     return-void
 
     :cond_4
-    invoke-virtual {v1}, Lcom/android/server/am/OnePlusMemoryTracker$rtg;->dc()Z
+    invoke-virtual {v1}, Lcom/android/server/am/OnePlusMemoryTracker$rtg;->cc()Z
 
     move-result v0
 
@@ -3112,6 +3450,107 @@
     return-void
 .end method
 
+.method public checkLeakProcess(Lcom/android/server/am/ProcessRecord;)V
+    .locals 5
+
+    sget-boolean v0, Lcom/android/server/am/OnePlusMemoryTracker;->sKillLeakProcess:Z
+
+    if-eqz v0, :cond_1
+
+    iget-object v0, p0, Lcom/android/server/am/OnePlusMemoryTracker;->mLeakProcessKillMap:Ljava/util/HashMap;
+
+    invoke-virtual {v0}, Ljava/util/HashMap;->isEmpty()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    iget-object v0, p0, Lcom/android/server/am/OnePlusMemoryTracker;->mLeakProcessKillMap:Ljava/util/HashMap;
+
+    iget-object v1, p1, Lcom/android/server/am/ProcessRecord;->processName:Ljava/lang/String;
+
+    invoke-virtual {v0, v1}, Ljava/util/HashMap;->containsKey(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    iget-object v0, p0, Lcom/android/server/am/OnePlusMemoryTracker;->mLeakProcessKillMap:Ljava/util/HashMap;
+
+    iget-object v1, p1, Lcom/android/server/am/ProcessRecord;->processName:Ljava/lang/String;
+
+    invoke-virtual {v0, v1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Ljava/lang/Long;
+
+    iget-wide v1, p1, Lcom/android/server/am/ProcessRecord;->lastPss:J
+
+    invoke-virtual {v0}, Ljava/lang/Long;->longValue()J
+
+    move-result-wide v3
+
+    cmp-long v1, v1, v3
+
+    if-lez v1, :cond_1
+
+    invoke-direct {p0, p1}, Lcom/android/server/am/OnePlusMemoryTracker;->canBeKilled(Lcom/android/server/am/ProcessRecord;)Z
+
+    move-result p0
+
+    if-eqz p0, :cond_1
+
+    new-instance p0, Ljava/lang/StringBuilder;
+
+    invoke-direct {p0}, Ljava/lang/StringBuilder;-><init>()V
+
+    iget-object v1, p1, Lcom/android/server/am/ProcessRecord;->processName:Ljava/lang/String;
+
+    invoke-virtual {p0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v1, " is leak process that uses "
+
+    invoke-virtual {p0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-wide v1, p1, Lcom/android/server/am/ProcessRecord;->lastPss:J
+
+    invoke-virtual {p0, v1, v2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
+    const-string v1, ", threshold : "
+
+    invoke-virtual {p0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    const-string v0, ", pid : "
+
+    invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget v0, p1, Lcom/android/server/am/ProcessRecord;->pid:I
+
+    invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p0
+
+    const-string v0, "OPMT"
+
+    invoke-static {v0, p0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    iget p0, p1, Lcom/android/server/am/ProcessRecord;->pid:I
+
+    invoke-static {p0}, Landroid/os/Process;->killProcess(I)V
+
+    :cond_1
+    :goto_0
+    return-void
+.end method
+
 .method public frontPackageChanged(Ljava/lang/String;IILjava/lang/String;II)V
     .locals 0
 
@@ -3150,7 +3589,7 @@
     goto :goto_0
 
     :cond_1
-    invoke-virtual {p3}, Lcom/android/server/am/OnePlusMemoryTracker$rtg;->ec()V
+    invoke-virtual {p3}, Lcom/android/server/am/OnePlusMemoryTracker$rtg;->dc()V
 
     :goto_0
     iget-object p0, p0, Lcom/android/server/am/OnePlusMemoryTracker;->mRecentFrontUids:Ljava/util/HashMap;

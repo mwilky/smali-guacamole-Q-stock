@@ -1511,7 +1511,7 @@
 
     iget-object p0, p0, Lcom/android/server/wm/OnePlusPerfManager;->currentSPI:Lcom/android/server/wm/OnePlusPerfManager$rtg;
 
-    invoke-virtual {p0}, Lcom/android/server/wm/OnePlusPerfManager$rtg;->ie()V
+    invoke-virtual {p0}, Lcom/android/server/wm/OnePlusPerfManager$rtg;->he()V
 
     monitor-exit v0
 
@@ -1604,7 +1604,7 @@
 
     iget-object p0, p0, Lcom/android/server/wm/OnePlusPerfManager;->currentSPI:Lcom/android/server/wm/OnePlusPerfManager$rtg;
 
-    invoke-virtual {p0}, Lcom/android/server/wm/OnePlusPerfManager$rtg;->ie()V
+    invoke-virtual {p0}, Lcom/android/server/wm/OnePlusPerfManager$rtg;->he()V
 
     monitor-exit v0
 
@@ -1804,7 +1804,7 @@
     :try_start_2
     iget-object p2, p0, Lcom/android/server/wm/OnePlusPerfManager;->mPerfBoost:Landroid/util/BoostFramework;
 
-    invoke-virtual {v1}, Lcom/android/server/wm/OnePlusPerfManager$sis;->he()[I
+    invoke-virtual {v1}, Lcom/android/server/wm/OnePlusPerfManager$sis;->ge()[I
 
     move-result-object v1
 

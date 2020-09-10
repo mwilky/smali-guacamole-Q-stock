@@ -49,7 +49,7 @@
 
     check-cast v0, Lyou/zta/sis/zta/cgv;
 
-    invoke-virtual {v0}, Lyou/zta/sis/zta/cgv;->Vk()[Lyou/zta/sis/zta/wtn$zta;
+    invoke-virtual {v0}, Lyou/zta/sis/zta/cgv;->Uk()[Lyou/zta/sis/zta/wtn$zta;
 
     move-result-object v0
 
@@ -235,7 +235,7 @@
 
     move-result v8
 
-    invoke-virtual {v0}, Lyou/zta/sis/zta/rtg$zta;->ak()[Ljava/math/BigInteger;
+    invoke-virtual {v0}, Lyou/zta/sis/zta/rtg$zta;->_j()[Ljava/math/BigInteger;
 
     move-result-object v4
 

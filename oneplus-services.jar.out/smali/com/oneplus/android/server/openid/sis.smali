@@ -342,7 +342,7 @@
 
     iget-object v0, p0, Lcom/oneplus/android/server/openid/sis;->mfa:Lcom/oneplus/android/server/openid/kth;
 
-    invoke-virtual {v0}, Lcom/oneplus/android/server/openid/kth;->kf()V
+    invoke-virtual {v0}, Lcom/oneplus/android/server/openid/kth;->jf()V
 
     iget-object p0, p0, Lcom/oneplus/android/server/openid/sis;->mSettingsObserver:Lcom/oneplus/android/server/openid/sis$zta;
 

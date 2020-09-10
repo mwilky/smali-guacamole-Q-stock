@@ -364,7 +364,7 @@
 
 
 # virtual methods
-.method Eg()Lorg/bouncycastle/asn1/vdb;
+.method Dg()Lorg/bouncycastle/asn1/vdb;
     .locals 2
 
     new-instance v0, Lorg/bouncycastle/asn1/n;
@@ -378,7 +378,7 @@
     return-object v0
 .end method
 
-.method Fg()Lorg/bouncycastle/asn1/vdb;
+.method Eg()Lorg/bouncycastle/asn1/vdb;
     .locals 2
 
     new-instance v0, Lorg/bouncycastle/asn1/U;
@@ -392,7 +392,7 @@
     return-object v0
 .end method
 
-.method public Hg()I
+.method public Gg()I
     .locals 0
 
     iget p0, p0, Lorg/bouncycastle/asn1/sis;->Kra:I

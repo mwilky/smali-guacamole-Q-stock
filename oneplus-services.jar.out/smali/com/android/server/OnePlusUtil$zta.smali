@@ -98,7 +98,26 @@
     return-void
 .end method
 
-.method private Al()V
+.method public static getInstance()Lcom/android/server/OnePlusUtil$zta;
+    .locals 1
+
+    sget-object v0, Lcom/android/server/OnePlusUtil$zta;->sInstance:Lcom/android/server/OnePlusUtil$zta;
+
+    if-nez v0, :cond_0
+
+    new-instance v0, Lcom/android/server/OnePlusUtil$zta;
+
+    invoke-direct {v0}, Lcom/android/server/OnePlusUtil$zta;-><init>()V
+
+    sput-object v0, Lcom/android/server/OnePlusUtil$zta;->sInstance:Lcom/android/server/OnePlusUtil$zta;
+
+    :cond_0
+    sget-object v0, Lcom/android/server/OnePlusUtil$zta;->sInstance:Lcom/android/server/OnePlusUtil$zta;
+
+    return-object v0
+.end method
+
+.method private zl()V
     .locals 3
 
     iget-object v0, p0, Lcom/android/server/OnePlusUtil$zta;->ad:Ljava/util/ArrayList;
@@ -128,25 +147,6 @@
 
     :cond_0
     return-void
-.end method
-
-.method public static getInstance()Lcom/android/server/OnePlusUtil$zta;
-    .locals 1
-
-    sget-object v0, Lcom/android/server/OnePlusUtil$zta;->sInstance:Lcom/android/server/OnePlusUtil$zta;
-
-    if-nez v0, :cond_0
-
-    new-instance v0, Lcom/android/server/OnePlusUtil$zta;
-
-    invoke-direct {v0}, Lcom/android/server/OnePlusUtil$zta;-><init>()V
-
-    sput-object v0, Lcom/android/server/OnePlusUtil$zta;->sInstance:Lcom/android/server/OnePlusUtil$zta;
-
-    :cond_0
-    sget-object v0, Lcom/android/server/OnePlusUtil$zta;->sInstance:Lcom/android/server/OnePlusUtil$zta;
-
-    return-object v0
 .end method
 
 .method private zta(Ljava/lang/String;IILjava/lang/String;II)V
@@ -341,7 +341,7 @@
     iput p4, p0, Lcom/android/server/OnePlusUtil$zta;->mPid:I
 
     :cond_0
-    invoke-direct {p0}, Lcom/android/server/OnePlusUtil$zta;->Al()V
+    invoke-direct {p0}, Lcom/android/server/OnePlusUtil$zta;->zl()V
 
     monitor-exit v0
     :try_end_0

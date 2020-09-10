@@ -104,7 +104,7 @@
 
     if-gt v0, v1, :cond_2
 
-    invoke-virtual {p1}, Lorg/bouncycastle/asn1/obl;->Sg()Ljava/util/Enumeration;
+    invoke-virtual {p1}, Lorg/bouncycastle/asn1/obl;->Rg()Ljava/util/Enumeration;
 
     move-result-object p1
 
@@ -351,7 +351,7 @@
 
 
 # virtual methods
-.method public Ii()Lorg/bouncycastle/asn1/ibl/sis;
+.method public Hi()Lorg/bouncycastle/asn1/ibl/sis;
     .locals 0
 
     iget-object p0, p0, Lorg/bouncycastle/asn1/ibl/zta;->ixa:Lorg/bouncycastle/asn1/ibl/sis;
@@ -423,7 +423,7 @@
     return-object p0
 .end method
 
-.method public vg()Lorg/bouncycastle/asn1/ywr;
+.method public ug()Lorg/bouncycastle/asn1/ywr;
     .locals 0
 
     iget-object p0, p0, Lorg/bouncycastle/asn1/ibl/zta;->xra:Lorg/bouncycastle/asn1/ywr;

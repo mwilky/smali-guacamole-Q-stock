@@ -25,7 +25,7 @@
 
     iput-object v0, p0, Lorg/bouncycastle/asn1/x509/cno;->Pta:Lorg/bouncycastle/asn1/ywr;
 
-    invoke-virtual {p1}, Lorg/bouncycastle/asn1/obl;->Sg()Ljava/util/Enumeration;
+    invoke-virtual {p1}, Lorg/bouncycastle/asn1/obl;->Rg()Ljava/util/Enumeration;
 
     move-result-object p1
 
@@ -122,7 +122,7 @@
 
     new-array v1, v1, [B
 
-    invoke-virtual {p1}, Lorg/bouncycastle/asn1/x509/c;->vh()Lorg/bouncycastle/asn1/n;
+    invoke-virtual {p1}, Lorg/bouncycastle/asn1/x509/c;->uh()Lorg/bouncycastle/asn1/n;
 
     move-result-object p1
 
@@ -170,7 +170,7 @@
 
     new-array v1, v1, [B
 
-    invoke-virtual {p1}, Lorg/bouncycastle/asn1/x509/c;->vh()Lorg/bouncycastle/asn1/n;
+    invoke-virtual {p1}, Lorg/bouncycastle/asn1/x509/c;->uh()Lorg/bouncycastle/asn1/n;
 
     move-result-object p1
 
@@ -334,7 +334,7 @@
 
 
 # virtual methods
-.method public Th()Lorg/bouncycastle/asn1/x509/obl;
+.method public Sh()Lorg/bouncycastle/asn1/x509/obl;
     .locals 0
 
     iget-object p0, p0, Lorg/bouncycastle/asn1/x509/cno;->Ota:Lorg/bouncycastle/asn1/x509/obl;
@@ -342,7 +342,7 @@
     return-object p0
 .end method
 
-.method public Uh()Ljava/math/BigInteger;
+.method public Th()Ljava/math/BigInteger;
     .locals 0
 
     iget-object p0, p0, Lorg/bouncycastle/asn1/x509/cno;->Pta:Lorg/bouncycastle/asn1/ywr;

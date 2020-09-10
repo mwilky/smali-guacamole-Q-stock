@@ -119,7 +119,7 @@
 
 
 # virtual methods
-.method public Oh()Lorg/bouncycastle/asn1/wtn;
+.method public Nh()Lorg/bouncycastle/asn1/wtn;
     .locals 0
 
     iget-object p0, p0, Lorg/bouncycastle/asn1/x509/sis;->Hta:Lorg/bouncycastle/asn1/wtn;
@@ -127,7 +127,7 @@
     return-object p0
 .end method
 
-.method public Ph()Lorg/bouncycastle/asn1/wtn;
+.method public Oh()Lorg/bouncycastle/asn1/wtn;
     .locals 0
 
     iget-object p0, p0, Lorg/bouncycastle/asn1/x509/sis;->Gta:Lorg/bouncycastle/asn1/wtn;

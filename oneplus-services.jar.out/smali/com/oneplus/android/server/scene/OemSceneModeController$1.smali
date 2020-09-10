@@ -39,7 +39,7 @@
         }
     .end annotation
 
-    invoke-static {}, Lcom/android/server/wm/wtn;->ee()V
+    invoke-static {}, Lcom/android/server/wm/wtn;->de()V
 
     return-void
 .end method

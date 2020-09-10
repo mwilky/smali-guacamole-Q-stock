@@ -32,7 +32,7 @@
     return p0
 .end method
 
-.method public hj()Ljava/security/SecureRandom;
+.method public gj()Ljava/security/SecureRandom;
     .locals 0
 
     iget-object p0, p0, Lorg/bouncycastle/crypto/bvj;->Moa:Ljava/security/SecureRandom;

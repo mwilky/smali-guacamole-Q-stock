@@ -548,7 +548,7 @@
 .method public static you(Lyou/zta/sis/zta/rtg$zta;)[Ljava/math/BigInteger;
     .locals 5
 
-    invoke-virtual {p0}, Lyou/zta/sis/zta/rtg$zta;->bk()Z
+    invoke-virtual {p0}, Lyou/zta/sis/zta/rtg$zta;->ak()Z
 
     move-result v0
 
@@ -686,7 +686,7 @@
 .method public static zta(Lyou/zta/sis/zta/rtg$zta;)B
     .locals 1
 
-    invoke-virtual {p0}, Lyou/zta/sis/zta/rtg$zta;->bk()Z
+    invoke-virtual {p0}, Lyou/zta/sis/zta/rtg$zta;->ak()Z
 
     move-result v0
 
@@ -1013,11 +1013,11 @@
 
     :cond_1
     :goto_0
-    invoke-virtual {p0}, Lyou/zta/sis/zta/zgw;->Ok()Ljava/math/BigInteger;
+    invoke-virtual {p0}, Lyou/zta/sis/zta/zgw;->Nk()Ljava/math/BigInteger;
 
     move-result-object v2
 
-    invoke-virtual {p1}, Lyou/zta/sis/zta/zgw;->Ok()Ljava/math/BigInteger;
+    invoke-virtual {p1}, Lyou/zta/sis/zta/zgw;->Nk()Ljava/math/BigInteger;
 
     move-result-object v3
 
@@ -1204,7 +1204,7 @@
 .method public static zta(Lyou/zta/sis/zta/wtn$zta;)Lyou/zta/sis/zta/wtn$zta;
     .locals 0
 
-    invoke-virtual {p0}, Lyou/zta/sis/zta/wtn$zta;->Ik()Lyou/zta/sis/zta/wtn$zta;
+    invoke-virtual {p0}, Lyou/zta/sis/zta/wtn$zta;->Hk()Lyou/zta/sis/zta/wtn$zta;
 
     move-result-object p0
 
@@ -1240,7 +1240,7 @@
 
     move-result v5
 
-    invoke-virtual {v0}, Lyou/zta/sis/zta/rtg$zta;->ak()[Ljava/math/BigInteger;
+    invoke-virtual {v0}, Lyou/zta/sis/zta/rtg$zta;->_j()[Ljava/math/BigInteger;
 
     move-result-object v4
 

@@ -145,12 +145,24 @@
     return-void
 .end method
 
-.method public cg()Ljava/util/List;
+.method public bg()Ljava/util/List;
     .locals 0
 
     iget-object p0, p0, Lorg/bouncycastle/x509/tsu;->_pa:Ljava/util/List;
 
     invoke-static {p0}, Ljava/util/Collections;->unmodifiableList(Ljava/util/List;)Ljava/util/List;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public cg()Ljava/util/Set;
+    .locals 0
+
+    iget-object p0, p0, Lorg/bouncycastle/x509/tsu;->dqa:Ljava/util/Set;
+
+    invoke-static {p0}, Ljava/util/Collections;->unmodifiableSet(Ljava/util/Set;)Ljava/util/Set;
 
     move-result-object p0
 
@@ -247,7 +259,7 @@
 .method public dg()Ljava/util/Set;
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/x509/tsu;->dqa:Ljava/util/Set;
+    iget-object p0, p0, Lorg/bouncycastle/x509/tsu;->bqa:Ljava/util/Set;
 
     invoke-static {p0}, Ljava/util/Collections;->unmodifiableSet(Ljava/util/Set;)Ljava/util/Set;
 
@@ -259,18 +271,6 @@
 .method public eg()Ljava/util/Set;
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/x509/tsu;->bqa:Ljava/util/Set;
-
-    invoke-static {p0}, Ljava/util/Collections;->unmodifiableSet(Ljava/util/Set;)Ljava/util/Set;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public fg()Ljava/util/Set;
-    .locals 0
-
     iget-object p0, p0, Lorg/bouncycastle/x509/tsu;->cqa:Ljava/util/Set;
 
     invoke-static {p0}, Ljava/util/Collections;->unmodifiableSet(Ljava/util/Set;)Ljava/util/Set;
@@ -280,7 +280,7 @@
     return-object p0
 .end method
 
-.method public gg()Ljava/util/List;
+.method public fg()Ljava/util/List;
     .locals 1
 
     new-instance v0, Ljava/util/ArrayList;
@@ -296,7 +296,7 @@
     return-object p0
 .end method
 
-.method public hg()Lorg/bouncycastle/util/dma;
+.method public gg()Lorg/bouncycastle/util/dma;
     .locals 0
 
     iget-object p0, p0, Lorg/bouncycastle/x509/tsu;->selector:Lorg/bouncycastle/util/dma;
@@ -317,7 +317,7 @@
     return-object p0
 .end method
 
-.method public ig()Ljava/util/Set;
+.method public hg()Ljava/util/Set;
     .locals 0
 
     iget-object p0, p0, Lorg/bouncycastle/x509/tsu;->aqa:Ljava/util/Set;
@@ -329,7 +329,7 @@
     return-object p0
 .end method
 
-.method public jg()I
+.method public ig()I
     .locals 0
 
     iget p0, p0, Lorg/bouncycastle/x509/tsu;->eqa:I
@@ -337,7 +337,7 @@
     return p0
 .end method
 
-.method public kg()Z
+.method public jg()Z
     .locals 0
 
     iget-boolean p0, p0, Lorg/bouncycastle/x509/tsu;->Zpa:Z
@@ -345,7 +345,7 @@
     return p0
 .end method
 
-.method public lg()Z
+.method public kg()Z
     .locals 0
 
     iget-boolean p0, p0, Lorg/bouncycastle/x509/tsu;->fqa:Z

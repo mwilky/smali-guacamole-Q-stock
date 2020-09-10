@@ -1111,7 +1111,7 @@
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/dma/ear;->yh()Lorg/bouncycastle/asn1/x509/zta;
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/dma/ear;->xh()Lorg/bouncycastle/asn1/x509/zta;
 
     move-result-object p0
 
@@ -1322,7 +1322,7 @@
 
     iget-object p0, p0, Lorg/bouncycastle/asn1/dma/rtg;->Tsa:Lorg/bouncycastle/asn1/dma/ssp;
 
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/dma/ssp;->ph()Lorg/bouncycastle/asn1/x509/c;
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/dma/ssp;->oh()Lorg/bouncycastle/asn1/x509/c;
 
     move-result-object p0
 

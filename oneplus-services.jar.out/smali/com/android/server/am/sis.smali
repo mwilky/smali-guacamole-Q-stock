@@ -249,7 +249,7 @@
     return-void
 .end method
 
-.method private _l()Lorg/json/JSONObject;
+.method private Zl()Lorg/json/JSONObject;
     .locals 4
 
     new-instance v0, Lorg/json/JSONObject;
@@ -308,7 +308,7 @@
     return-object v0
 .end method
 
-.method private static am()Ljava/lang/String;
+.method private static _l()Ljava/lang/String;
     .locals 3
 
     new-instance v0, Ljava/util/Date;
@@ -328,7 +328,7 @@
     return-object v0
 .end method
 
-.method private bm()V
+.method private am()V
     .locals 8
 
     const-string v0, "array"
@@ -602,6 +602,14 @@
     return-void
 .end method
 
+.method private bm()Z
+    .locals 0
+
+    sget-boolean p0, Lcom/android/server/am/sis;->Wh:Z
+
+    return p0
+.end method
+
 .method private static deleteFile(Ljava/lang/String;)V
     .locals 1
 
@@ -631,21 +639,13 @@
 .end method
 
 .method private dm()Z
-    .locals 0
-
-    sget-boolean p0, Lcom/android/server/am/sis;->Wh:Z
-
-    return p0
-.end method
-
-.method private em()Z
     .locals 3
 
     new-instance v0, Lorg/json/JSONObject;
 
     invoke-direct {v0}, Lorg/json/JSONObject;-><init>()V
 
-    invoke-direct {p0}, Lcom/android/server/am/sis;->_l()Lorg/json/JSONObject;
+    invoke-direct {p0}, Lcom/android/server/am/sis;->Zl()Lorg/json/JSONObject;
 
     move-result-object p0
 
@@ -690,7 +690,7 @@
     return v0
 .end method
 
-.method private fm()V
+.method private em()V
     .locals 1
 
     new-instance v0, Lorg/json/JSONArray;
@@ -713,6 +713,66 @@
 
     invoke-static {p0, v0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
+    return-void
+.end method
+
+.method private fm()V
+    .locals 5
+
+    sget-boolean v0, Lcom/android/server/am/ire;->im:Z
+
+    if-eqz v0, :cond_1
+
+    new-instance v0, Ljava/util/HashMap;
+
+    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
+
+    new-instance v1, Ljava/util/HashMap;
+
+    invoke-direct {v1}, Ljava/util/HashMap;-><init>()V
+
+    new-instance v2, Lorg/json/JSONObject;
+
+    invoke-direct {v2}, Lorg/json/JSONObject;-><init>()V
+
+    invoke-direct {p0}, Lcom/android/server/am/sis;->Zl()Lorg/json/JSONObject;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Lorg/json/JSONObject;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    const-string v3, "data"
+
+    invoke-virtual {v1, v3, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    const-string v2, "appid"
+
+    const-string v3, "NYNCG4I0TI"
+
+    invoke-virtual {v0, v2, v3}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    invoke-static {}, Lnet/oneplus/odm/OpDeviceManagerInjector;->getInstance()Lnet/oneplus/odm/OpDeviceManagerInjector;
+
+    move-result-object v2
+
+    if-eqz v2, :cond_0
+
+    invoke-static {}, Lnet/oneplus/odm/OpDeviceManagerInjector;->getInstance()Lnet/oneplus/odm/OpDeviceManagerInjector;
+
+    move-result-object v2
+
+    iget-object v3, p0, Lcom/android/server/am/sis;->mContext:Landroid/content/Context;
+
+    const-string v4, "appkill"
+
+    invoke-virtual {v2, v3, v4, v1, v0}, Lnet/oneplus/odm/OpDeviceManagerInjector;->preserveOsData(Landroid/content/Context;Ljava/lang/String;Ljava/util/Map;Ljava/util/Map;)V
+
+    :cond_0
+    invoke-direct {p0}, Lcom/android/server/am/sis;->em()V
+
+    :cond_1
     return-void
 .end method
 
@@ -788,66 +848,6 @@
 
     :catchall_0
     return-wide v0
-.end method
-
-.method private gm()V
-    .locals 5
-
-    sget-boolean v0, Lcom/android/server/am/ire;->im:Z
-
-    if-eqz v0, :cond_1
-
-    new-instance v0, Ljava/util/HashMap;
-
-    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
-
-    new-instance v1, Ljava/util/HashMap;
-
-    invoke-direct {v1}, Ljava/util/HashMap;-><init>()V
-
-    new-instance v2, Lorg/json/JSONObject;
-
-    invoke-direct {v2}, Lorg/json/JSONObject;-><init>()V
-
-    invoke-direct {p0}, Lcom/android/server/am/sis;->_l()Lorg/json/JSONObject;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Lorg/json/JSONObject;->toString()Ljava/lang/String;
-
-    move-result-object v2
-
-    const-string v3, "data"
-
-    invoke-virtual {v1, v3, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    const-string v2, "appid"
-
-    const-string v3, "NYNCG4I0TI"
-
-    invoke-virtual {v0, v2, v3}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    invoke-static {}, Lnet/oneplus/odm/OpDeviceManagerInjector;->getInstance()Lnet/oneplus/odm/OpDeviceManagerInjector;
-
-    move-result-object v2
-
-    if-eqz v2, :cond_0
-
-    invoke-static {}, Lnet/oneplus/odm/OpDeviceManagerInjector;->getInstance()Lnet/oneplus/odm/OpDeviceManagerInjector;
-
-    move-result-object v2
-
-    iget-object v3, p0, Lcom/android/server/am/sis;->mContext:Landroid/content/Context;
-
-    const-string v4, "appkill"
-
-    invoke-virtual {v2, v3, v4, v1, v0}, Lnet/oneplus/odm/OpDeviceManagerInjector;->preserveOsData(Landroid/content/Context;Ljava/lang/String;Ljava/util/Map;Ljava/util/Map;)V
-
-    :cond_0
-    invoke-direct {p0}, Lcom/android/server/am/sis;->fm()V
-
-    :cond_1
-    return-void
 .end method
 
 .method private ib(Ljava/lang/String;)V
@@ -1521,7 +1521,7 @@
 .method static synthetic rtg(Lcom/android/server/am/sis;)Z
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/am/sis;->em()Z
+    invoke-direct {p0}, Lcom/android/server/am/sis;->dm()Z
 
     move-result p0
 
@@ -1724,7 +1724,7 @@
 .method static synthetic tsu(Lcom/android/server/am/sis;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/am/sis;->gm()V
+    invoke-direct {p0}, Lcom/android/server/am/sis;->fm()V
 
     return-void
 .end method
@@ -1953,7 +1953,7 @@
 
     const-wide/16 v3, 0x3e8
 
-    invoke-direct {p0}, Lcom/android/server/am/sis;->dm()Z
+    invoke-direct {p0}, Lcom/android/server/am/sis;->bm()Z
 
     move-result v1
 
@@ -1988,7 +1988,7 @@
 
     const-wide/16 v3, 0x3e8
 
-    invoke-direct {p0}, Lcom/android/server/am/sis;->dm()Z
+    invoke-direct {p0}, Lcom/android/server/am/sis;->bm()Z
 
     move-result p1
 
@@ -2024,7 +2024,7 @@
 
     iput-wide v0, p0, Lcom/android/server/am/sis;->Oh:J
 
-    invoke-direct {p0}, Lcom/android/server/am/sis;->bm()V
+    invoke-direct {p0}, Lcom/android/server/am/sis;->am()V
 
     return-void
 .end method

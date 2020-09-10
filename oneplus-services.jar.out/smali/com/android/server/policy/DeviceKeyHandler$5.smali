@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/server/policy/kth;->ro()V
+    value = Lcom/android/server/policy/kth;->qo()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;

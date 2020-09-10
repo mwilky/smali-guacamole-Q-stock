@@ -102,7 +102,7 @@
     :goto_0
     iget-object v4, p0, Lcom/android/server/power/wtn;->this$0:Lcom/android/server/power/OnePlusStandbyAnalyzer;
 
-    iget-object v4, v4, Lcom/android/server/power/OnePlusStandbyAnalyzer;->MJ:Ljava/util/List;
+    iget-object v4, v4, Lcom/android/server/power/OnePlusStandbyAnalyzer;->LJ:Ljava/util/List;
 
     invoke-interface {v4}, Ljava/util/List;->size()I
 
@@ -112,7 +112,7 @@
 
     iget-object v4, p0, Lcom/android/server/power/wtn;->this$0:Lcom/android/server/power/OnePlusStandbyAnalyzer;
 
-    iget-object v4, v4, Lcom/android/server/power/OnePlusStandbyAnalyzer;->MJ:Ljava/util/List;
+    iget-object v4, v4, Lcom/android/server/power/OnePlusStandbyAnalyzer;->LJ:Ljava/util/List;
 
     invoke-interface {v4, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -126,7 +126,7 @@
 
     iget-object v4, p0, Lcom/android/server/power/wtn;->this$0:Lcom/android/server/power/OnePlusStandbyAnalyzer;
 
-    iget-object v4, v4, Lcom/android/server/power/OnePlusStandbyAnalyzer;->MJ:Ljava/util/List;
+    iget-object v4, v4, Lcom/android/server/power/OnePlusStandbyAnalyzer;->LJ:Ljava/util/List;
 
     invoke-interface {v4, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -150,7 +150,7 @@
     goto :goto_0
 
     :cond_1
-    sget-object p1, Lcom/android/server/power/kth;->BH:[I
+    sget-object p1, Lcom/android/server/power/kth;->zH:[I
 
     invoke-virtual {v0}, Ljava/lang/Enum;->ordinal()I
 

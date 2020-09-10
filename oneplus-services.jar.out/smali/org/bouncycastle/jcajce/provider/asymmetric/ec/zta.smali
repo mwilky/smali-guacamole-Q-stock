@@ -97,11 +97,11 @@
 
     move-result-object v2
 
-    invoke-virtual {p0}, Lyou/zta/you/you/rtg;->Ri()Ljava/math/BigInteger;
+    invoke-virtual {p0}, Lyou/zta/you/you/rtg;->Qi()Ljava/math/BigInteger;
 
     move-result-object v3
 
-    invoke-virtual {p0}, Lyou/zta/you/you/rtg;->Qi()Ljava/math/BigInteger;
+    invoke-virtual {p0}, Lyou/zta/you/you/rtg;->Pi()Ljava/math/BigInteger;
 
     move-result-object v4
 
@@ -463,7 +463,7 @@
 
     move-result-object p2
 
-    invoke-virtual {p1}, Lorg/bouncycastle/asn1/ibl/veq;->Mi()Z
+    invoke-virtual {p1}, Lorg/bouncycastle/asn1/ibl/veq;->Li()Z
 
     move-result v0
 

@@ -522,7 +522,7 @@
 
     iput-object v0, p0, Lorg/bouncycastle/asn1/x509/o;->ordering:Ljava/util/Vector;
 
-    invoke-virtual {p1}, Lorg/bouncycastle/asn1/obl;->Sg()Ljava/util/Enumeration;
+    invoke-virtual {p1}, Lorg/bouncycastle/asn1/obl;->Rg()Ljava/util/Enumeration;
 
     move-result-object p1
 
@@ -873,7 +873,7 @@
     return-object p0
 .end method
 
-.method public hi()[Lorg/bouncycastle/asn1/bvj;
+.method public gi()[Lorg/bouncycastle/asn1/bvj;
     .locals 1
 
     iget-object v0, p0, Lorg/bouncycastle/asn1/x509/o;->ordering:Ljava/util/Vector;
@@ -885,7 +885,7 @@
     return-object p0
 .end method
 
-.method public ii()Ljava/util/Enumeration;
+.method public hi()Ljava/util/Enumeration;
     .locals 0
 
     iget-object p0, p0, Lorg/bouncycastle/asn1/x509/o;->ordering:Ljava/util/Vector;

@@ -174,7 +174,7 @@
 
 
 # virtual methods
-.method public Li()Z
+.method public Ki()Z
     .locals 0
 
     iget-object p0, p0, Lorg/bouncycastle/asn1/ibl/veq;->params:Lorg/bouncycastle/asn1/vdb;
@@ -184,7 +184,7 @@
     return p0
 .end method
 
-.method public Mi()Z
+.method public Li()Z
     .locals 0
 
     iget-object p0, p0, Lorg/bouncycastle/asn1/ibl/veq;->params:Lorg/bouncycastle/asn1/vdb;

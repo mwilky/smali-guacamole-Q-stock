@@ -1262,7 +1262,7 @@
 
     move-result v1
 
-    invoke-virtual {p0}, Lorg/bouncycastle/jcajce/provider/asymmetric/util/zta;->tg()[B
+    invoke-virtual {p0}, Lorg/bouncycastle/jcajce/provider/asymmetric/util/zta;->sg()[B
 
     move-result-object v2
 
@@ -1304,7 +1304,7 @@
 
     if-eqz v0, :cond_0
 
-    invoke-virtual {p0}, Lorg/bouncycastle/jcajce/provider/asymmetric/util/zta;->tg()[B
+    invoke-virtual {p0}, Lorg/bouncycastle/jcajce/provider/asymmetric/util/zta;->sg()[B
 
     move-result-object v0
 
@@ -1337,12 +1337,12 @@
     throw v0
 
     :cond_0
-    invoke-virtual {p0}, Lorg/bouncycastle/jcajce/provider/asymmetric/util/zta;->tg()[B
+    invoke-virtual {p0}, Lorg/bouncycastle/jcajce/provider/asymmetric/util/zta;->sg()[B
 
     move-result-object p0
 
     return-object p0
 .end method
 
-.method protected abstract tg()[B
+.method protected abstract sg()[B
 .end method

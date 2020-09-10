@@ -184,7 +184,7 @@
 
 
 # virtual methods
-.method Eg()Lorg/bouncycastle/asn1/vdb;
+.method Dg()Lorg/bouncycastle/asn1/vdb;
     .locals 1
 
     new-instance v0, Lorg/bouncycastle/asn1/C;
@@ -196,7 +196,7 @@
     return-object v0
 .end method
 
-.method Fg()Lorg/bouncycastle/asn1/vdb;
+.method Eg()Lorg/bouncycastle/asn1/vdb;
     .locals 1
 
     new-instance v0, Lorg/bouncycastle/asn1/C;

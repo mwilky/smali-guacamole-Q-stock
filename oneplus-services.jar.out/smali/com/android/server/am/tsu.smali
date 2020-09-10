@@ -226,7 +226,7 @@
     return-void
 .end method
 
-.method private hm()V
+.method private gm()V
     .locals 2
 
     new-instance v0, Ljava/lang/StringBuilder;
@@ -269,7 +269,7 @@
     return-void
 .end method
 
-.method private im()V
+.method private hm()V
     .locals 2
 
     new-instance v0, Ljava/lang/StringBuilder;
@@ -420,7 +420,7 @@
 
     if-ne p1, v0, :cond_0
 
-    invoke-direct {p0}, Lcom/android/server/am/tsu;->hm()V
+    invoke-direct {p0}, Lcom/android/server/am/tsu;->gm()V
 
     goto :goto_0
 
@@ -437,7 +437,7 @@
 
     if-nez p1, :cond_1
 
-    invoke-direct {p0}, Lcom/android/server/am/tsu;->im()V
+    invoke-direct {p0}, Lcom/android/server/am/tsu;->hm()V
 
     :cond_1
     :goto_0
@@ -1543,7 +1543,7 @@
 
     check-cast v3, Lcom/android/server/am/w;
 
-    iget-object v5, v3, Lcom/android/server/am/w;->bz:Ljava/lang/String;
+    iget-object v5, v3, Lcom/android/server/am/w;->az:Ljava/lang/String;
 
     const/4 v6, 0x0
 

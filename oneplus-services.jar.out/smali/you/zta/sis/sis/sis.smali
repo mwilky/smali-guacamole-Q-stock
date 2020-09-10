@@ -33,7 +33,7 @@
 
     if-gt v0, v1, :cond_1
 
-    invoke-static {}, Lyou/zta/sis/sis/sis;->il()[J
+    invoke-static {}, Lyou/zta/sis/sis/sis;->hl()[J
 
     move-result-object v0
 
@@ -833,6 +833,16 @@
     return p0
 .end method
 
+.method public static hl()[J
+    .locals 1
+
+    const/4 v0, 0x3
+
+    new-array v0, v0, [J
+
+    return-object v0
+.end method
+
 .method public static igw([I[I[I)I
     .locals 10
 
@@ -1573,17 +1583,7 @@
     goto/16 :goto_0
 .end method
 
-.method public static il()[J
-    .locals 1
-
-    const/4 v0, 0x3
-
-    new-array v0, v0, [J
-
-    return-object v0
-.end method
-
-.method public static jl()[I
+.method public static il()[I
     .locals 1
 
     const/16 v0, 0xc
@@ -1593,7 +1593,7 @@
     return-object v0
 .end method
 
-.method public static kl()[J
+.method public static jl()[J
     .locals 1
 
     const/4 v0, 0x6

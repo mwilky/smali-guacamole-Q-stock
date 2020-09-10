@@ -44,35 +44,35 @@
     return-void
 .end method
 
-.method public static Hf()J
+.method public static Gf()J
     .locals 2
 
     invoke-static {}, Lcom/oneplus/custom/utils/OpCustomizeSettings;->getInstance()Lcom/oneplus/custom/utils/OpCustomizeSettings;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/oneplus/custom/utils/OpCustomizeSettings;->Jf()J
+    invoke-virtual {v0}, Lcom/oneplus/custom/utils/OpCustomizeSettings;->If()J
 
     move-result-wide v0
 
     return-wide v0
 .end method
 
-.method public static If()Lcom/oneplus/custom/utils/OpCustomizeSettings$CUSTOM_BACK_COVER_TYPE;
+.method public static Hf()Lcom/oneplus/custom/utils/OpCustomizeSettings$CUSTOM_BACK_COVER_TYPE;
     .locals 1
 
     invoke-static {}, Lcom/oneplus/custom/utils/OpCustomizeSettings;->getInstance()Lcom/oneplus/custom/utils/OpCustomizeSettings;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/oneplus/custom/utils/OpCustomizeSettings;->Kf()Lcom/oneplus/custom/utils/OpCustomizeSettings$CUSTOM_BACK_COVER_TYPE;
+    invoke-virtual {v0}, Lcom/oneplus/custom/utils/OpCustomizeSettings;->Jf()Lcom/oneplus/custom/utils/OpCustomizeSettings$CUSTOM_BACK_COVER_TYPE;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public static Lf()Lcom/oneplus/custom/utils/OpCustomizeSettings$CUSTOM_TYPE;
+.method public static Kf()Lcom/oneplus/custom/utils/OpCustomizeSettings$CUSTOM_TYPE;
     .locals 1
 
     invoke-static {}, Lcom/oneplus/custom/utils/OpCustomizeSettings;->getInstance()Lcom/oneplus/custom/utils/OpCustomizeSettings;
@@ -86,14 +86,14 @@
     return-object v0
 .end method
 
-.method public static Nf()Lcom/oneplus/custom/utils/OpCustomizeSettings$SW_TYPE;
+.method public static Mf()Lcom/oneplus/custom/utils/OpCustomizeSettings$SW_TYPE;
     .locals 1
 
     invoke-static {}, Lcom/oneplus/custom/utils/OpCustomizeSettings;->getInstance()Lcom/oneplus/custom/utils/OpCustomizeSettings;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/oneplus/custom/utils/OpCustomizeSettings;->Mf()Lcom/oneplus/custom/utils/OpCustomizeSettings$SW_TYPE;
+    invoke-virtual {v0}, Lcom/oneplus/custom/utils/OpCustomizeSettings;->Lf()Lcom/oneplus/custom/utils/OpCustomizeSettings$SW_TYPE;
 
     move-result-object v0
 
@@ -218,7 +218,7 @@
 
 
 # virtual methods
-.method protected Jf()J
+.method protected If()J
     .locals 2
 
     const-wide/16 v0, 0x0
@@ -226,7 +226,7 @@
     return-wide v0
 .end method
 
-.method protected Kf()Lcom/oneplus/custom/utils/OpCustomizeSettings$CUSTOM_BACK_COVER_TYPE;
+.method protected Jf()Lcom/oneplus/custom/utils/OpCustomizeSettings$CUSTOM_BACK_COVER_TYPE;
     .locals 0
 
     sget-object p0, Lcom/oneplus/custom/utils/OpCustomizeSettings$CUSTOM_BACK_COVER_TYPE;->NONE:Lcom/oneplus/custom/utils/OpCustomizeSettings$CUSTOM_BACK_COVER_TYPE;
@@ -234,7 +234,7 @@
     return-object p0
 .end method
 
-.method protected Mf()Lcom/oneplus/custom/utils/OpCustomizeSettings$SW_TYPE;
+.method protected Lf()Lcom/oneplus/custom/utils/OpCustomizeSettings$SW_TYPE;
     .locals 0
 
     sget-object p0, Lcom/oneplus/custom/utils/OpCustomizeSettings$SW_TYPE;->DEFAULT:Lcom/oneplus/custom/utils/OpCustomizeSettings$SW_TYPE;

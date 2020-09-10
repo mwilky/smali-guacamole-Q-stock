@@ -32,7 +32,7 @@
     return-void
 .end method
 
-.method static Ij()Z
+.method static Hj()Z
     .locals 1
 
     sget-object v0, Lorg/bouncycastle/jcajce/you/tsu/cno;->cra:Ljava/lang/Class;
@@ -87,7 +87,7 @@
 
     new-array v1, v1, [Ljava/lang/Object;
 
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/you/kth;->ah()I
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/you/kth;->_g()I
 
     move-result v2
 

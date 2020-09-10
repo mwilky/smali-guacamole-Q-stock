@@ -565,7 +565,7 @@
 
 
 # virtual methods
-.method public of()Lcom/oneplus/android/server/scene/OemSceneFloatingWindowController$FloatingWindowController;
+.method public nf()Lcom/oneplus/android/server/scene/OemSceneFloatingWindowController$FloatingWindowController;
     .locals 1
 
     iget-object v0, p0, Lcom/oneplus/android/server/scene/OemSceneFloatingWindowController;->Bga:Lcom/oneplus/android/server/scene/OemSceneFloatingWindowController$FloatingWindowController;

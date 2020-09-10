@@ -15,11 +15,11 @@
 # static fields
 .field private static final DEBUG:Z
 
-.field private static final RD:Ljava/lang/String; = "openid_config_values"
+.field private static final QD:Ljava/lang/String; = "openid_config_values"
+
+.field private static final RD:Ljava/lang/String; = "/data/heytap-id"
 
 .field private static final Rfa:Ljava/lang/String; = "OpenIdConfigList"
-
-.field private static final SD:Ljava/lang/String; = "/data/heytap-id"
 
 .field private static final STATE_ON:Ljava/lang/String; = "1"
 
@@ -146,20 +146,20 @@
 
     iput-object p2, p0, Lcom/oneplus/android/server/openid/kth;->mCallback:Lcom/oneplus/android/server/openid/kth$zta;
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/openid/kth;->Fs()Ljava/io/File;
+    invoke-direct {p0}, Lcom/oneplus/android/server/openid/kth;->Es()Ljava/io/File;
 
     iget-object p1, p0, Lcom/oneplus/android/server/openid/kth;->Mfa:Ljava/lang/Object;
 
     monitor-enter p1
 
     :try_start_0
-    invoke-direct {p0}, Lcom/oneplus/android/server/openid/kth;->Hs()V
+    invoke-direct {p0}, Lcom/oneplus/android/server/openid/kth;->Gs()V
 
     iget-boolean p2, p0, Lcom/oneplus/android/server/openid/kth;->Nfa:Z
 
     if-nez p2, :cond_0
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/openid/kth;->Gs()V
+    invoke-direct {p0}, Lcom/oneplus/android/server/openid/kth;->Fs()V
 
     :cond_0
     monitor-exit p1
@@ -176,7 +176,7 @@
     throw p0
 .end method
 
-.method private Fs()Ljava/io/File;
+.method private Es()Ljava/io/File;
     .locals 2
 
     :try_start_0
@@ -221,7 +221,7 @@
     return-object p0
 .end method
 
-.method private Gs()V
+.method private Fs()V
     .locals 12
 
     const-string v0, "OpenIdManager"
@@ -443,7 +443,7 @@
     return-void
 .end method
 
-.method private Hs()V
+.method private Gs()V
     .locals 7
 
     const-string v0, "OpenIdManager"
@@ -460,7 +460,7 @@
 
     invoke-virtual {v1}, Ljava/util/ArrayList;->clear()V
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/openid/kth;->Fs()Ljava/io/File;
+    invoke-direct {p0}, Lcom/oneplus/android/server/openid/kth;->Es()Ljava/io/File;
 
     move-result-object v1
 
@@ -1489,7 +1489,7 @@
 
     invoke-interface {v4}, Lorg/xmlpull/v1/XmlSerializer;->endDocument()V
 
-    invoke-direct/range {p0 .. p0}, Lcom/oneplus/android/server/openid/kth;->Fs()Ljava/io/File;
+    invoke-direct/range {p0 .. p0}, Lcom/oneplus/android/server/openid/kth;->Es()Ljava/io/File;
 
     move-result-object v0
 
@@ -1713,7 +1713,7 @@
 
 
 # virtual methods
-.method public kf()V
+.method public jf()V
     .locals 5
 
     new-instance v0, Lcom/oneplus/config/ConfigObserver;

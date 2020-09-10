@@ -62,7 +62,7 @@
 
 
 # virtual methods
-.method public Ri()I
+.method public Qi()I
     .locals 0
 
     iget p0, p0, Lorg/bouncycastle/crypto/wtn/dma;->n:I
@@ -86,7 +86,7 @@
     return p0
 .end method
 
-.method public hj()Ljava/security/SecureRandom;
+.method public gj()Ljava/security/SecureRandom;
     .locals 0
 
     iget-object p0, p0, Lorg/bouncycastle/crypto/wtn/dma;->Moa:Ljava/security/SecureRandom;
@@ -94,7 +94,7 @@
     return-object p0
 .end method
 
-.method public xj()I
+.method public wj()I
     .locals 0
 
     iget p0, p0, Lorg/bouncycastle/crypto/wtn/dma;->FCa:I

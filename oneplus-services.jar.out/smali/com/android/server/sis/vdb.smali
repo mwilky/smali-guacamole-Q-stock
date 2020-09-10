@@ -767,11 +767,11 @@
 
     invoke-direct {p0}, Lcom/android/server/sis/vdb;->registerSettingsCallbacks()V
 
+    invoke-direct {p0}, Lcom/android/server/sis/vdb;->mp()V
+
     invoke-direct {p0}, Lcom/android/server/sis/vdb;->np()V
 
-    invoke-direct {p0}, Lcom/android/server/sis/vdb;->op()V
-
-    invoke-direct {p0}, Lcom/android/server/sis/vdb;->fp()V
+    invoke-direct {p0}, Lcom/android/server/sis/vdb;->ep()V
 
     invoke-direct {p0, p1}, Lcom/android/server/sis/vdb;->zta(Landroid/os/HandlerThread;)V
 
@@ -828,7 +828,7 @@
 
     invoke-virtual {p1, p2}, Landroid/os/Handler;->sendEmptyMessage(I)Z
 
-    invoke-direct {p0}, Lcom/android/server/sis/vdb;->vp()V
+    invoke-direct {p0}, Lcom/android/server/sis/vdb;->tp()V
 
     return-void
 .end method
@@ -1110,7 +1110,7 @@
 .method static synthetic bvj(Lcom/android/server/sis/vdb;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/sis/vdb;->vp()V
+    invoke-direct {p0}, Lcom/android/server/sis/vdb;->tp()V
 
     return-void
 .end method
@@ -1383,15 +1383,7 @@
     return p0
 .end method
 
-.method static synthetic ear(Lcom/android/server/sis/vdb;)Lcom/android/server/sis/vdb$sis;
-    .locals 0
-
-    iget-object p0, p0, Lcom/android/server/sis/vdb;->mCallback:Lcom/android/server/sis/vdb$sis;
-
-    return-object p0
-.end method
-
-.method private ep()V
+.method private dp()V
     .locals 2
 
     iget-object v0, p0, Lcom/android/server/sis/vdb;->mCm:Landroid/net/ConnectivityManager;
@@ -1414,7 +1406,15 @@
     return-void
 .end method
 
-.method private fp()V
+.method static synthetic ear(Lcom/android/server/sis/vdb;)Lcom/android/server/sis/vdb$sis;
+    .locals 0
+
+    iget-object p0, p0, Lcom/android/server/sis/vdb;->mCallback:Lcom/android/server/sis/vdb$sis;
+
+    return-object p0
+.end method
+
+.method private ep()V
     .locals 4
 
     new-instance v0, Landroid/content/IntentFilter;
@@ -1474,70 +1474,7 @@
     return-void
 .end method
 
-.method static synthetic fto(Lcom/android/server/sis/vdb;)Z
-    .locals 0
-
-    invoke-direct {p0}, Lcom/android/server/sis/vdb;->rp()Z
-
-    move-result p0
-
-    return p0
-.end method
-
-.method static synthetic gck(Lcom/android/server/sis/vdb;)Z
-    .locals 0
-
-    iget-boolean p0, p0, Lcom/android/server/sis/vdb;->SO:Z
-
-    return p0
-.end method
-
-.method private getTopActivity()Landroid/content/ComponentName;
-    .locals 2
-
-    iget-object p0, p0, Lcom/android/server/sis/vdb;->mActivityManager:Landroid/app/ActivityManager;
-
-    const/4 v0, 0x1
-
-    invoke-virtual {p0, v0}, Landroid/app/ActivityManager;->getRunningTasks(I)Ljava/util/List;
-
-    move-result-object p0
-
-    const/4 v0, 0x0
-
-    if-eqz p0, :cond_0
-
-    const/4 v1, 0x0
-
-    :try_start_0
-    invoke-interface {p0, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
-
-    move-result-object p0
-
-    check-cast p0, Landroid/app/ActivityManager$RunningTaskInfo;
-    :try_end_0
-    .catch Ljava/lang/IndexOutOfBoundsException; {:try_start_0 .. :try_end_0} :catch_0
-
-    goto :goto_0
-
-    :catch_0
-    return-object v0
-
-    :cond_0
-    move-object p0, v0
-
-    :goto_0
-    if-eqz p0, :cond_1
-
-    iget-object p0, p0, Landroid/app/ActivityManager$RunningTaskInfo;->topActivity:Landroid/content/ComponentName;
-
-    return-object p0
-
-    :cond_1
-    return-object v0
-.end method
-
-.method private gp()V
+.method private fp()V
     .locals 3
 
     new-instance v0, Ljava/lang/StringBuilder;
@@ -1601,65 +1538,7 @@
     return-void
 .end method
 
-.method static synthetic gwm(Lcom/android/server/sis/vdb;)Landroid/service/notification/NotificationListenerService;
-    .locals 0
-
-    iget-object p0, p0, Lcom/android/server/sis/vdb;->hP:Landroid/service/notification/NotificationListenerService;
-
-    return-object p0
-.end method
-
-.method private gwm(Ljava/lang/String;I)V
-    .locals 4
-
-    iget-object v0, p0, Lcom/android/server/sis/vdb;->mContext:Landroid/content/Context;
-
-    const/4 v1, 0x1
-
-    invoke-static {v0, p1, v1}, Landroid/widget/Toast;->makeText(Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;
-
-    move-result-object p1
-
-    new-instance v0, Ljava/util/Timer;
-
-    invoke-direct {v0}, Ljava/util/Timer;-><init>()V
-
-    new-instance v1, Lcom/android/server/sis/igw;
-
-    invoke-direct {v1, p0, p1}, Lcom/android/server/sis/igw;-><init>(Lcom/android/server/sis/vdb;Landroid/widget/Toast;)V
-
-    const-wide/16 v2, 0x0
-
-    invoke-virtual {v0, v1, v2, v3}, Ljava/util/Timer;->schedule(Ljava/util/TimerTask;J)V
-
-    new-instance v0, Ljava/util/Timer;
-
-    invoke-direct {v0}, Ljava/util/Timer;-><init>()V
-
-    new-instance v1, Lcom/android/server/sis/wtn;
-
-    invoke-direct {v1, p0, p1}, Lcom/android/server/sis/wtn;-><init>(Lcom/android/server/sis/vdb;Landroid/widget/Toast;)V
-
-    int-to-long p0, p2
-
-    invoke-virtual {v0, v1, p0, p1}, Ljava/util/Timer;->schedule(Ljava/util/TimerTask;J)V
-
-    return-void
-.end method
-
-.method private gwm([I)Z
-    .locals 1
-
-    const/16 v0, 0x1a
-
-    invoke-direct {p0, v0, p1}, Lcom/android/server/sis/vdb;->zta(S[I)Z
-
-    move-result p0
-
-    return p0
-.end method
-
-.method static synthetic hmo(Lcom/android/server/sis/vdb;)Z
+.method static synthetic fto(Lcom/android/server/sis/vdb;)Z
     .locals 0
 
     invoke-direct {p0}, Lcom/android/server/sis/vdb;->qp()Z
@@ -1669,7 +1548,60 @@
     return p0
 .end method
 
-.method private hp()V
+.method static synthetic gck(Lcom/android/server/sis/vdb;)Z
+    .locals 0
+
+    iget-boolean p0, p0, Lcom/android/server/sis/vdb;->SO:Z
+
+    return p0
+.end method
+
+.method private getTopActivity()Landroid/content/ComponentName;
+    .locals 2
+
+    iget-object p0, p0, Lcom/android/server/sis/vdb;->mActivityManager:Landroid/app/ActivityManager;
+
+    const/4 v0, 0x1
+
+    invoke-virtual {p0, v0}, Landroid/app/ActivityManager;->getRunningTasks(I)Ljava/util/List;
+
+    move-result-object p0
+
+    const/4 v0, 0x0
+
+    if-eqz p0, :cond_0
+
+    const/4 v1, 0x0
+
+    :try_start_0
+    invoke-interface {p0, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object p0
+
+    check-cast p0, Landroid/app/ActivityManager$RunningTaskInfo;
+    :try_end_0
+    .catch Ljava/lang/IndexOutOfBoundsException; {:try_start_0 .. :try_end_0} :catch_0
+
+    goto :goto_0
+
+    :catch_0
+    return-object v0
+
+    :cond_0
+    move-object p0, v0
+
+    :goto_0
+    if-eqz p0, :cond_1
+
+    iget-object p0, p0, Landroid/app/ActivityManager$RunningTaskInfo;->topActivity:Landroid/content/ComponentName;
+
+    return-object p0
+
+    :cond_1
+    return-object v0
+.end method
+
+.method private gp()V
     .locals 6
 
     invoke-direct {p0}, Lcom/android/server/sis/vdb;->getTopActivity()Landroid/content/ComponentName;
@@ -1784,15 +1716,65 @@
     return-void
 .end method
 
-.method static synthetic ibl(Lcom/android/server/sis/vdb;)Landroid/net/Network;
+.method static synthetic gwm(Lcom/android/server/sis/vdb;)Landroid/service/notification/NotificationListenerService;
     .locals 0
 
-    iget-object p0, p0, Lcom/android/server/sis/vdb;->GO:Landroid/net/Network;
+    iget-object p0, p0, Lcom/android/server/sis/vdb;->hP:Landroid/service/notification/NotificationListenerService;
 
     return-object p0
 .end method
 
-.method static synthetic igw(Lcom/android/server/sis/vdb;)Z
+.method private gwm(Ljava/lang/String;I)V
+    .locals 4
+
+    iget-object v0, p0, Lcom/android/server/sis/vdb;->mContext:Landroid/content/Context;
+
+    const/4 v1, 0x1
+
+    invoke-static {v0, p1, v1}, Landroid/widget/Toast;->makeText(Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;
+
+    move-result-object p1
+
+    new-instance v0, Ljava/util/Timer;
+
+    invoke-direct {v0}, Ljava/util/Timer;-><init>()V
+
+    new-instance v1, Lcom/android/server/sis/igw;
+
+    invoke-direct {v1, p0, p1}, Lcom/android/server/sis/igw;-><init>(Lcom/android/server/sis/vdb;Landroid/widget/Toast;)V
+
+    const-wide/16 v2, 0x0
+
+    invoke-virtual {v0, v1, v2, v3}, Ljava/util/Timer;->schedule(Ljava/util/TimerTask;J)V
+
+    new-instance v0, Ljava/util/Timer;
+
+    invoke-direct {v0}, Ljava/util/Timer;-><init>()V
+
+    new-instance v1, Lcom/android/server/sis/wtn;
+
+    invoke-direct {v1, p0, p1}, Lcom/android/server/sis/wtn;-><init>(Lcom/android/server/sis/vdb;Landroid/widget/Toast;)V
+
+    int-to-long p0, p2
+
+    invoke-virtual {v0, v1, p0, p1}, Ljava/util/Timer;->schedule(Ljava/util/TimerTask;J)V
+
+    return-void
+.end method
+
+.method private gwm([I)Z
+    .locals 1
+
+    const/16 v0, 0x1a
+
+    invoke-direct {p0, v0, p1}, Lcom/android/server/sis/vdb;->zta(S[I)Z
+
+    move-result p0
+
+    return p0
+.end method
+
+.method static synthetic hmo(Lcom/android/server/sis/vdb;)Z
     .locals 0
 
     invoke-direct {p0}, Lcom/android/server/sis/vdb;->pp()Z
@@ -1802,7 +1784,7 @@
     return p0
 .end method
 
-.method private ip()V
+.method private hp()V
     .locals 2
 
     iget-object p0, p0, Lcom/android/server/sis/vdb;->mNotificationManager:Landroid/app/NotificationManager;
@@ -1819,58 +1801,25 @@
     return-void
 .end method
 
-.method static synthetic ire(Lcom/android/server/sis/vdb;)Landroid/os/Handler;
+.method static synthetic ibl(Lcom/android/server/sis/vdb;)Landroid/net/Network;
     .locals 0
 
-    iget-object p0, p0, Lcom/android/server/sis/vdb;->mHandler:Landroid/os/Handler;
+    iget-object p0, p0, Lcom/android/server/sis/vdb;->GO:Landroid/net/Network;
 
     return-object p0
 .end method
 
-.method private isThisUserAProfileOfCurrentUser(I)Z
-    .locals 4
+.method static synthetic igw(Lcom/android/server/sis/vdb;)Z
+    .locals 0
 
-    iget-object v0, p0, Lcom/android/server/sis/vdb;->mProfiles:Ljava/util/List;
+    invoke-direct {p0}, Lcom/android/server/sis/vdb;->op()Z
 
-    invoke-interface {v0}, Ljava/util/List;->size()I
-
-    move-result v0
-
-    const/4 v1, 0x0
-
-    move v2, v1
-
-    :goto_0
-    if-ge v2, v0, :cond_1
-
-    iget-object v3, p0, Lcom/android/server/sis/vdb;->mProfiles:Ljava/util/List;
-
-    invoke-interface {v3, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
-
-    move-result-object v3
-
-    check-cast v3, Landroid/os/UserHandle;
-
-    invoke-virtual {v3}, Landroid/os/UserHandle;->getIdentifier()I
-
-    move-result v3
-
-    if-ne v3, p1, :cond_0
-
-    const/4 p0, 0x1
+    move-result p0
 
     return p0
-
-    :cond_0
-    add-int/lit8 v2, v2, 0x1
-
-    goto :goto_0
-
-    :cond_1
-    return v1
 .end method
 
-.method private jp()V
+.method private ip()V
     .locals 8
 
     iget-object v0, p0, Lcom/android/server/sis/vdb;->gP:Ljava/util/HashMap;
@@ -2011,7 +1960,58 @@
     throw p0
 .end method
 
-.method private kp()Z
+.method static synthetic ire(Lcom/android/server/sis/vdb;)Landroid/os/Handler;
+    .locals 0
+
+    iget-object p0, p0, Lcom/android/server/sis/vdb;->mHandler:Landroid/os/Handler;
+
+    return-object p0
+.end method
+
+.method private isThisUserAProfileOfCurrentUser(I)Z
+    .locals 4
+
+    iget-object v0, p0, Lcom/android/server/sis/vdb;->mProfiles:Ljava/util/List;
+
+    invoke-interface {v0}, Ljava/util/List;->size()I
+
+    move-result v0
+
+    const/4 v1, 0x0
+
+    move v2, v1
+
+    :goto_0
+    if-ge v2, v0, :cond_1
+
+    iget-object v3, p0, Lcom/android/server/sis/vdb;->mProfiles:Ljava/util/List;
+
+    invoke-interface {v3, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v3
+
+    check-cast v3, Landroid/os/UserHandle;
+
+    invoke-virtual {v3}, Landroid/os/UserHandle;->getIdentifier()I
+
+    move-result v3
+
+    if-ne v3, p1, :cond_0
+
+    const/4 p0, 0x1
+
+    return p0
+
+    :cond_0
+    add-int/lit8 v2, v2, 0x1
+
+    goto :goto_0
+
+    :cond_1
+    return v1
+.end method
+
+.method private jp()Z
     .locals 2
 
     iget-object p0, p0, Lcom/android/server/sis/vdb;->mContext:Landroid/content/Context;
@@ -2038,23 +2038,7 @@
     return v0
 .end method
 
-.method static synthetic kth(Lcom/android/server/sis/vdb;)I
-    .locals 0
-
-    iget p0, p0, Lcom/android/server/sis/vdb;->HO:I
-
-    return p0
-.end method
-
-.method static synthetic kth(Lcom/android/server/sis/vdb;I)I
-    .locals 0
-
-    iput p1, p0, Lcom/android/server/sis/vdb;->KO:I
-
-    return p1
-.end method
-
-.method private lp()Ljava/lang/String;
+.method private kp()Ljava/lang/String;
     .locals 0
 
     invoke-direct {p0}, Lcom/android/server/sis/vdb;->getTopActivity()Landroid/content/ComponentName;
@@ -2076,17 +2060,23 @@
     return-object p0
 .end method
 
-.method static synthetic lqr(Lcom/android/server/sis/vdb;)I
+.method static synthetic kth(Lcom/android/server/sis/vdb;)I
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/sis/vdb;->mp()I
-
-    move-result p0
+    iget p0, p0, Lcom/android/server/sis/vdb;->HO:I
 
     return p0
 .end method
 
-.method private mp()I
+.method static synthetic kth(Lcom/android/server/sis/vdb;I)I
+    .locals 0
+
+    iput p1, p0, Lcom/android/server/sis/vdb;->KO:I
+
+    return p1
+.end method
+
+.method private lp()I
     .locals 1
 
     invoke-direct {p0}, Lcom/android/server/sis/vdb;->getTopActivity()Landroid/content/ComponentName;
@@ -2100,7 +2090,17 @@
     return p0
 .end method
 
-.method private np()V
+.method static synthetic lqr(Lcom/android/server/sis/vdb;)I
+    .locals 0
+
+    invoke-direct {p0}, Lcom/android/server/sis/vdb;->lp()I
+
+    move-result p0
+
+    return p0
+.end method
+
+.method private mp()V
     .locals 1
 
     new-instance v0, Lcom/android/server/sis/rtg;
@@ -2120,23 +2120,7 @@
     return-void
 .end method
 
-.method static synthetic obl(Lcom/android/server/sis/vdb;)Ljava/util/HashMap;
-    .locals 0
-
-    iget-object p0, p0, Lcom/android/server/sis/vdb;->fP:Ljava/util/HashMap;
-
-    return-object p0
-.end method
-
-.method static synthetic oif(Lcom/android/server/sis/vdb;)Z
-    .locals 0
-
-    iget-boolean p0, p0, Lcom/android/server/sis/vdb;->mScreenOn:Z
-
-    return p0
-.end method
-
-.method private op()V
+.method private np()V
     .locals 2
 
     iget-object v0, p0, Lcom/android/server/sis/vdb;->mTelephonyManager:Landroid/telephony/TelephonyManager;
@@ -2176,6 +2160,46 @@
     return-void
 .end method
 
+.method static synthetic obl(Lcom/android/server/sis/vdb;)Ljava/util/HashMap;
+    .locals 0
+
+    iget-object p0, p0, Lcom/android/server/sis/vdb;->fP:Ljava/util/HashMap;
+
+    return-object p0
+.end method
+
+.method static synthetic oif(Lcom/android/server/sis/vdb;)Z
+    .locals 0
+
+    iget-boolean p0, p0, Lcom/android/server/sis/vdb;->mScreenOn:Z
+
+    return p0
+.end method
+
+.method private op()Z
+    .locals 0
+
+    iget-object p0, p0, Lcom/android/server/sis/vdb;->mServiceState:Landroid/telephony/ServiceState;
+
+    if-eqz p0, :cond_0
+
+    invoke-virtual {p0}, Landroid/telephony/ServiceState;->getDataRoaming()Z
+
+    move-result p0
+
+    if-eqz p0, :cond_0
+
+    const/4 p0, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 p0, 0x0
+
+    :goto_0
+    return p0
+.end method
+
 .method static synthetic oxb(Lcom/android/server/sis/vdb;)Ljava/util/ArrayList;
     .locals 0
 
@@ -2185,13 +2209,21 @@
 .end method
 
 .method private pp()Z
-    .locals 0
+    .locals 2
 
-    iget-object p0, p0, Lcom/android/server/sis/vdb;->mServiceState:Landroid/telephony/ServiceState;
+    invoke-direct {p0}, Lcom/android/server/sis/vdb;->getTopActivity()Landroid/content/ComponentName;
 
-    if-eqz p0, :cond_0
+    move-result-object v0
 
-    invoke-virtual {p0}, Landroid/telephony/ServiceState;->getDataRoaming()Z
+    invoke-direct {p0, v0}, Lcom/android/server/sis/vdb;->rtg(Landroid/content/ComponentName;)I
+
+    move-result v0
+
+    const/16 v1, 0x3e8
+
+    if-le v0, v1, :cond_0
+
+    invoke-direct {p0, v0}, Lcom/android/server/sis/vdb;->Mb(I)Z
 
     move-result p0
 
@@ -2231,7 +2263,7 @@
 
     if-le v0, v1, :cond_0
 
-    invoke-direct {p0, v0}, Lcom/android/server/sis/vdb;->Mb(I)Z
+    invoke-direct {p0, v0}, Lcom/android/server/sis/vdb;->Nb(I)Z
 
     move-result p0
 
@@ -2392,36 +2424,43 @@
     return-void
 .end method
 
-.method private rp()Z
+.method private rp()V
     .locals 2
 
-    invoke-direct {p0}, Lcom/android/server/sis/vdb;->getTopActivity()Landroid/content/ComponentName;
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v1, "maybeDisableSla mSlaEnableState:"
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget v1, p0, Lcom/android/server/sis/vdb;->KO:I
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v0
 
-    invoke-direct {p0, v0}, Lcom/android/server/sis/vdb;->rtg(Landroid/content/ComponentName;)I
+    const-string v1, "OpSlaNetlinkHelper"
 
-    move-result v0
+    invoke-static {v1, v0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    const/16 v1, 0x3e8
+    iget v0, p0, Lcom/android/server/sis/vdb;->KO:I
 
-    if-le v0, v1, :cond_0
+    const/4 v1, 0x1
 
-    invoke-direct {p0, v0}, Lcom/android/server/sis/vdb;->Nb(I)Z
+    if-ne v0, v1, :cond_0
 
-    move-result p0
+    invoke-direct {p0}, Lcom/android/server/sis/vdb;->hp()V
 
-    if-eqz p0, :cond_0
+    invoke-direct {p0}, Lcom/android/server/sis/vdb;->fp()V
 
-    const/4 p0, 0x1
-
-    goto :goto_0
+    invoke-direct {p0}, Lcom/android/server/sis/vdb;->setOPSlaDisable()V
 
     :cond_0
-    const/4 p0, 0x0
-
-    :goto_0
-    return p0
+    return-void
 .end method
 
 .method private rtg(Landroid/content/ComponentName;)I
@@ -2475,6 +2514,14 @@
     iput-boolean p1, p0, Lcom/android/server/sis/vdb;->UO:Z
 
     return p1
+.end method
+
+.method static synthetic sc()Ljava/util/ArrayList;
+    .locals 1
+
+    sget-object v0, Lcom/android/server/sis/vdb;->OQ:Ljava/util/ArrayList;
+
+    return-object v0
 .end method
 
 .method private setOPSlaDisable()V
@@ -2544,7 +2591,7 @@
     :cond_0
     iget-object p0, p0, Lcom/android/server/sis/vdb;->mCallback:Lcom/android/server/sis/vdb$sis;
 
-    invoke-virtual {p0}, Lcom/android/server/sis/vdb$sis;->Wd()V
+    invoke-virtual {p0}, Lcom/android/server/sis/vdb$sis;->Vd()V
 
     :cond_1
     return-void
@@ -2751,80 +2798,9 @@
 .end method
 
 .method private sp()V
-    .locals 2
-
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v1, "maybeDisableSla mSlaEnableState:"
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget v1, p0, Lcom/android/server/sis/vdb;->KO:I
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    const-string v1, "OpSlaNetlinkHelper"
-
-    invoke-static {v1, v0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    iget v0, p0, Lcom/android/server/sis/vdb;->KO:I
-
-    const/4 v1, 0x1
-
-    if-ne v0, v1, :cond_0
-
-    invoke-direct {p0}, Lcom/android/server/sis/vdb;->ip()V
-
-    invoke-direct {p0}, Lcom/android/server/sis/vdb;->gp()V
-
-    invoke-direct {p0}, Lcom/android/server/sis/vdb;->setOPSlaDisable()V
-
-    :cond_0
-    return-void
-.end method
-
-.method static synthetic ssp(Lcom/android/server/sis/vdb;I)I
-    .locals 0
-
-    iput p1, p0, Lcom/android/server/sis/vdb;->JO:I
-
-    return p1
-.end method
-
-.method static synthetic ssp(Lcom/android/server/sis/vdb;)V
-    .locals 0
-
-    invoke-direct {p0}, Lcom/android/server/sis/vdb;->jp()V
-
-    return-void
-.end method
-
-.method static synthetic ssp(Lcom/android/server/sis/vdb;Z)Z
-    .locals 0
-
-    iput-boolean p1, p0, Lcom/android/server/sis/vdb;->mScreenOn:Z
-
-    return p1
-.end method
-
-.method static synthetic tc()Ljava/util/ArrayList;
-    .locals 1
-
-    sget-object v0, Lcom/android/server/sis/vdb;->OQ:Ljava/util/ArrayList;
-
-    return-object v0
-.end method
-
-.method private tp()V
     .locals 8
 
-    invoke-direct {p0}, Lcom/android/server/sis/vdb;->kp()Z
+    invoke-direct {p0}, Lcom/android/server/sis/vdb;->jp()Z
 
     move-result v0
 
@@ -2880,17 +2856,17 @@
     move v2, v3
 
     :goto_2
-    invoke-direct {p0}, Lcom/android/server/sis/vdb;->pp()Z
+    invoke-direct {p0}, Lcom/android/server/sis/vdb;->op()Z
 
     move-result v3
 
-    invoke-direct {p0}, Lcom/android/server/sis/vdb;->qp()Z
+    invoke-direct {p0}, Lcom/android/server/sis/vdb;->pp()Z
 
     move-result v5
 
     iput-boolean v5, p0, Lcom/android/server/sis/vdb;->QO:Z
 
-    invoke-direct {p0}, Lcom/android/server/sis/vdb;->rp()Z
+    invoke-direct {p0}, Lcom/android/server/sis/vdb;->qp()Z
 
     move-result v5
 
@@ -3087,155 +3063,40 @@
     :goto_3
     iget-object p0, p0, Lcom/android/server/sis/vdb;->mCallback:Lcom/android/server/sis/vdb$sis;
 
-    invoke-virtual {p0}, Lcom/android/server/sis/vdb$sis;->Xd()V
+    invoke-virtual {p0}, Lcom/android/server/sis/vdb$sis;->Wd()V
 
     :cond_5
     return-void
 .end method
 
-.method private tsu(Landroid/content/Context;Ljava/lang/String;)Landroid/app/Notification$Builder;
-    .locals 1
-
-    new-instance p0, Landroid/app/Notification$Builder;
-
-    sget-object v0, Lcom/android/internal/notification/SystemNotificationChannels;->NETWORK_ALERTS:Ljava/lang/String;
-
-    invoke-direct {p0, p1, v0}, Landroid/app/Notification$Builder;-><init>(Landroid/content/Context;Ljava/lang/String;)V
-
-    const p1, 0x108054c
-
-    invoke-virtual {p0, p1}, Landroid/app/Notification$Builder;->setSmallIcon(I)Landroid/app/Notification$Builder;
-
-    move-result-object p0
-
-    const-string p1, "SLA ENABLE"
-
-    invoke-virtual {p0, p1}, Landroid/app/Notification$Builder;->setContentTitle(Ljava/lang/CharSequence;)Landroid/app/Notification$Builder;
-
-    move-result-object p0
-
-    invoke-virtual {p0, p2}, Landroid/app/Notification$Builder;->setContentText(Ljava/lang/CharSequence;)Landroid/app/Notification$Builder;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method private tsu(S)Ljava/lang/String;
-    .locals 2
-
-    const/16 p0, 0x11
-
-    if-lt p1, p0, :cond_1
-
-    add-int/lit8 p0, p1, -0x11
-
-    sget-object v0, Lcom/android/server/sis/vdb;->NQ:[Ljava/lang/String;
-
-    array-length v1, v0
-
-    if-le p0, v1, :cond_0
-
-    goto :goto_0
-
-    :cond_0
-    aget-object p0, v0, p0
-
-    return-object p0
-
-    :cond_1
-    :goto_0
-    new-instance p0, Ljava/lang/StringBuilder;
-
-    invoke-direct {p0}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v0, "invalid message:"
-
-    invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method static synthetic tsu(Lcom/android/server/sis/vdb;)Z
+.method static synthetic ssp(Lcom/android/server/sis/vdb;I)I
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/sis/vdb;->kp()Z
-
-    move-result p0
-
-    return p0
-.end method
-
-.method static synthetic tsu(Lcom/android/server/sis/vdb;I)Z
-    .locals 0
-
-    invoke-direct {p0, p1}, Lcom/android/server/sis/vdb;->Nb(I)Z
-
-    move-result p0
-
-    return p0
-.end method
-
-.method static synthetic tsu(Lcom/android/server/sis/vdb;Z)Z
-    .locals 0
-
-    iput-boolean p1, p0, Lcom/android/server/sis/vdb;->QO:Z
+    iput p1, p0, Lcom/android/server/sis/vdb;->JO:I
 
     return p1
 .end method
 
-.method static synthetic ugm(Lcom/android/server/sis/vdb;)V
+.method static synthetic ssp(Lcom/android/server/sis/vdb;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/sis/vdb;->ep()V
+    invoke-direct {p0}, Lcom/android/server/sis/vdb;->ip()V
 
     return-void
 .end method
 
-.method private ugm([I)V
-    .locals 1
-
-    const/16 v0, 0x33
-
-    invoke-direct {p0, v0, p1}, Lcom/android/server/sis/vdb;->zta(S[I)Z
-
-    return-void
-.end method
-
-.method static synthetic vdb(Lcom/android/server/sis/vdb;)Landroid/net/NetworkRequest;
+.method static synthetic ssp(Lcom/android/server/sis/vdb;Z)Z
     .locals 0
 
-    iget-object p0, p0, Lcom/android/server/sis/vdb;->CO:Landroid/net/NetworkRequest;
+    iput-boolean p1, p0, Lcom/android/server/sis/vdb;->mScreenOn:Z
 
-    return-object p0
+    return p1
 .end method
 
-.method static synthetic veq(Lcom/android/server/sis/vdb;)Z
-    .locals 0
-
-    iget-boolean p0, p0, Lcom/android/server/sis/vdb;->LO:Z
-
-    return p0
-.end method
-
-.method static synthetic vju(Lcom/android/server/sis/vdb;)V
-    .locals 0
-
-    invoke-direct {p0}, Lcom/android/server/sis/vdb;->sp()V
-
-    return-void
-.end method
-
-.method private vp()V
+.method private tp()V
     .locals 10
 
-    invoke-virtual {p0}, Lcom/android/server/sis/vdb;->Yd()Ljava/util/Map;
+    invoke-virtual {p0}, Lcom/android/server/sis/vdb;->Xd()Ljava/util/Map;
 
     move-result-object v0
 
@@ -3463,6 +3324,145 @@
     throw p0
 .end method
 
+.method private tsu(Landroid/content/Context;Ljava/lang/String;)Landroid/app/Notification$Builder;
+    .locals 1
+
+    new-instance p0, Landroid/app/Notification$Builder;
+
+    sget-object v0, Lcom/android/internal/notification/SystemNotificationChannels;->NETWORK_ALERTS:Ljava/lang/String;
+
+    invoke-direct {p0, p1, v0}, Landroid/app/Notification$Builder;-><init>(Landroid/content/Context;Ljava/lang/String;)V
+
+    const p1, 0x108054c
+
+    invoke-virtual {p0, p1}, Landroid/app/Notification$Builder;->setSmallIcon(I)Landroid/app/Notification$Builder;
+
+    move-result-object p0
+
+    const-string p1, "SLA ENABLE"
+
+    invoke-virtual {p0, p1}, Landroid/app/Notification$Builder;->setContentTitle(Ljava/lang/CharSequence;)Landroid/app/Notification$Builder;
+
+    move-result-object p0
+
+    invoke-virtual {p0, p2}, Landroid/app/Notification$Builder;->setContentText(Ljava/lang/CharSequence;)Landroid/app/Notification$Builder;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method private tsu(S)Ljava/lang/String;
+    .locals 2
+
+    const/16 p0, 0x11
+
+    if-lt p1, p0, :cond_1
+
+    add-int/lit8 p0, p1, -0x11
+
+    sget-object v0, Lcom/android/server/sis/vdb;->NQ:[Ljava/lang/String;
+
+    array-length v1, v0
+
+    if-le p0, v1, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    aget-object p0, v0, p0
+
+    return-object p0
+
+    :cond_1
+    :goto_0
+    new-instance p0, Ljava/lang/StringBuilder;
+
+    invoke-direct {p0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v0, "invalid message:"
+
+    invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method static synthetic tsu(Lcom/android/server/sis/vdb;)Z
+    .locals 0
+
+    invoke-direct {p0}, Lcom/android/server/sis/vdb;->jp()Z
+
+    move-result p0
+
+    return p0
+.end method
+
+.method static synthetic tsu(Lcom/android/server/sis/vdb;I)Z
+    .locals 0
+
+    invoke-direct {p0, p1}, Lcom/android/server/sis/vdb;->Nb(I)Z
+
+    move-result p0
+
+    return p0
+.end method
+
+.method static synthetic tsu(Lcom/android/server/sis/vdb;Z)Z
+    .locals 0
+
+    iput-boolean p1, p0, Lcom/android/server/sis/vdb;->QO:Z
+
+    return p1
+.end method
+
+.method static synthetic ugm(Lcom/android/server/sis/vdb;)V
+    .locals 0
+
+    invoke-direct {p0}, Lcom/android/server/sis/vdb;->dp()V
+
+    return-void
+.end method
+
+.method private ugm([I)V
+    .locals 1
+
+    const/16 v0, 0x33
+
+    invoke-direct {p0, v0, p1}, Lcom/android/server/sis/vdb;->zta(S[I)Z
+
+    return-void
+.end method
+
+.method static synthetic vdb(Lcom/android/server/sis/vdb;)Landroid/net/NetworkRequest;
+    .locals 0
+
+    iget-object p0, p0, Lcom/android/server/sis/vdb;->CO:Landroid/net/NetworkRequest;
+
+    return-object p0
+.end method
+
+.method static synthetic veq(Lcom/android/server/sis/vdb;)Z
+    .locals 0
+
+    iget-boolean p0, p0, Lcom/android/server/sis/vdb;->LO:Z
+
+    return p0
+.end method
+
+.method static synthetic vju(Lcom/android/server/sis/vdb;)V
+    .locals 0
+
+    invoke-direct {p0}, Lcom/android/server/sis/vdb;->rp()V
+
+    return-void
+.end method
+
 .method static synthetic wtn(Lcom/android/server/sis/vdb;)Z
     .locals 0
 
@@ -3506,7 +3506,7 @@
 .method static synthetic ywr(Lcom/android/server/sis/vdb;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/sis/vdb;->tp()V
+    invoke-direct {p0}, Lcom/android/server/sis/vdb;->sp()V
 
     return-void
 .end method
@@ -3971,7 +3971,7 @@
 
 
 # virtual methods
-.method public Yd()Ljava/util/Map;
+.method public Xd()Ljava/util/Map;
     .locals 8
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -4128,7 +4128,7 @@
     return-object v1
 .end method
 
-.method public Zd()V
+.method public Yd()V
     .locals 3
 
     iget-object v0, p0, Lcom/android/server/sis/vdb;->mTelephonyManager:Landroid/telephony/TelephonyManager;
@@ -4203,14 +4203,14 @@
     return-void
 .end method
 
-.method public _d()V
+.method public Zd()V
     .locals 11
 
     iget-object v0, p0, Lcom/android/server/sis/vdb;->DO:Lcom/android/server/pm/PackageManagerService;
 
     if-eqz v0, :cond_a
 
-    invoke-virtual {p0}, Lcom/android/server/sis/vdb;->Yd()Ljava/util/Map;
+    invoke-virtual {p0}, Lcom/android/server/sis/vdb;->Xd()Ljava/util/Map;
 
     move-result-object v0
 
@@ -4592,7 +4592,7 @@
     return-void
 .end method
 
-.method public ae()V
+.method public _d()V
     .locals 1
 
     sget-object v0, Lcom/android/server/sis/vdb;->kP:Ljava/io/FileDescriptor;
@@ -4629,16 +4629,16 @@
     return-void
 .end method
 
-.method public be()V
+.method public ae()V
     .locals 0
 
     return-void
 .end method
 
-.method public ce()V
+.method public be()V
     .locals 3
 
-    invoke-direct {p0}, Lcom/android/server/sis/vdb;->kp()Z
+    invoke-direct {p0}, Lcom/android/server/sis/vdb;->jp()Z
 
     move-result v0
 
@@ -4675,7 +4675,7 @@
     return-void
 .end method
 
-.method public de()V
+.method public ce()V
     .locals 10
 
     sget-object v0, Lcom/android/server/sis/vdb;->kP:Ljava/io/FileDescriptor;
@@ -5236,12 +5236,12 @@
 
     invoke-virtual {p1, v0}, Landroid/os/Handler;->sendEmptyMessage(I)Z
 
-    invoke-direct {p0}, Lcom/android/server/sis/vdb;->tp()V
+    invoke-direct {p0}, Lcom/android/server/sis/vdb;->sp()V
 
     goto :goto_1
 
     :cond_1
-    invoke-direct {p0}, Lcom/android/server/sis/vdb;->sp()V
+    invoke-direct {p0}, Lcom/android/server/sis/vdb;->rp()V
 
     :cond_2
     :goto_1
@@ -5288,7 +5288,7 @@
     if-nez v0, :cond_1
 
     :cond_0
-    invoke-virtual {p0}, Lcom/android/server/sis/vdb;->ae()V
+    invoke-virtual {p0}, Lcom/android/server/sis/vdb;->_d()V
 
     :cond_1
     iput-boolean p1, p0, Lcom/android/server/sis/vdb;->PO:Z
@@ -5311,7 +5311,7 @@
 
     check-cast p1, Ljava/lang/String;
 
-    invoke-direct {p0}, Lcom/android/server/sis/vdb;->lp()Ljava/lang/String;
+    invoke-direct {p0}, Lcom/android/server/sis/vdb;->kp()Ljava/lang/String;
 
     move-result-object v1
 
@@ -5331,7 +5331,7 @@
 
     check-cast p1, Ljava/lang/String;
 
-    invoke-direct {p0}, Lcom/android/server/sis/vdb;->lp()Ljava/lang/String;
+    invoke-direct {p0}, Lcom/android/server/sis/vdb;->kp()Ljava/lang/String;
 
     move-result-object v1
 
@@ -5346,12 +5346,12 @@
     if-eqz p1, :cond_3
 
     :cond_2
-    invoke-direct {p0}, Lcom/android/server/sis/vdb;->tp()V
+    invoke-direct {p0}, Lcom/android/server/sis/vdb;->sp()V
 
     :cond_3
-    invoke-direct {p0}, Lcom/android/server/sis/vdb;->vp()V
+    invoke-direct {p0}, Lcom/android/server/sis/vdb;->tp()V
 
-    invoke-direct {p0}, Lcom/android/server/sis/vdb;->jp()V
+    invoke-direct {p0}, Lcom/android/server/sis/vdb;->ip()V
 
     iget-object p1, p0, Lcom/android/server/sis/vdb;->mContext:Landroid/content/Context;
 
@@ -5404,7 +5404,7 @@
 
     iput-boolean p1, p0, Lcom/android/server/sis/vdb;->PO:Z
 
-    invoke-direct {p0}, Lcom/android/server/sis/vdb;->sp()V
+    invoke-direct {p0}, Lcom/android/server/sis/vdb;->rp()V
 
     :cond_6
     :goto_1
@@ -5499,7 +5499,7 @@
     if-nez p1, :cond_2
 
     :cond_1
-    invoke-virtual {p0}, Lcom/android/server/sis/vdb;->ae()V
+    invoke-virtual {p0}, Lcom/android/server/sis/vdb;->_d()V
 
     :cond_2
     sget-object p1, Lcom/android/server/sis/vdb;->PQ:Ljava/util/ArrayList;
@@ -5518,7 +5518,7 @@
 
     check-cast p1, Ljava/lang/String;
 
-    invoke-direct {p0}, Lcom/android/server/sis/vdb;->lp()Ljava/lang/String;
+    invoke-direct {p0}, Lcom/android/server/sis/vdb;->kp()Ljava/lang/String;
 
     move-result-object v0
 
@@ -5538,7 +5538,7 @@
 
     check-cast p1, Ljava/lang/String;
 
-    invoke-direct {p0}, Lcom/android/server/sis/vdb;->lp()Ljava/lang/String;
+    invoke-direct {p0}, Lcom/android/server/sis/vdb;->kp()Ljava/lang/String;
 
     move-result-object v0
 
@@ -5553,12 +5553,12 @@
     if-eqz p1, :cond_5
 
     :cond_3
-    invoke-direct {p0}, Lcom/android/server/sis/vdb;->tp()V
+    invoke-direct {p0}, Lcom/android/server/sis/vdb;->sp()V
 
     goto :goto_1
 
     :cond_4
-    invoke-direct {p0}, Lcom/android/server/sis/vdb;->sp()V
+    invoke-direct {p0}, Lcom/android/server/sis/vdb;->rp()V
 
     :cond_5
     :goto_1

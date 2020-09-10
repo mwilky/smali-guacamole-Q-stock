@@ -617,7 +617,7 @@
     throw p0
 .end method
 
-.method static pl()Ljava/util/Iterator;
+.method static ol()Ljava/util/Iterator;
     .locals 3
 
     sget-object v0, Lorg/bouncycastle/x509/dma;->Wsa:Ljava/util/Hashtable;

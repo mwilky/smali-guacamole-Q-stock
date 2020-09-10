@@ -225,7 +225,7 @@
     return-void
 .end method
 
-.method private Im()V
+.method private Hm()V
     .locals 4
 
     monitor-enter p0
@@ -266,7 +266,7 @@
     monitor-enter p0
 
     :try_start_0
-    invoke-direct {p0}, Lcom/android/server/am/irq$you;->Im()V
+    invoke-direct {p0}, Lcom/android/server/am/irq$you;->Hm()V
 
     iput p1, p0, Lcom/android/server/am/irq$you;->Mn:I
 
@@ -341,7 +341,7 @@
 .method static synthetic zta(Lcom/android/server/am/irq$you;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/am/irq$you;->Im()V
+    invoke-direct {p0}, Lcom/android/server/am/irq$you;->Hm()V
 
     return-void
 .end method
@@ -396,14 +396,14 @@
 
     if-nez v0, :cond_0
 
-    invoke-direct {p0}, Lcom/android/server/am/irq$you;->Im()V
+    invoke-direct {p0}, Lcom/android/server/am/irq$you;->Hm()V
 
     :cond_0
     iget v0, p1, Lcom/android/server/am/irq$you;->Mn:I
 
     if-nez v0, :cond_1
 
-    invoke-direct {p1}, Lcom/android/server/am/irq$you;->Im()V
+    invoke-direct {p1}, Lcom/android/server/am/irq$you;->Hm()V
 
     :cond_1
     iget-wide v0, p0, Lcom/android/server/am/irq$you;->Ln:J

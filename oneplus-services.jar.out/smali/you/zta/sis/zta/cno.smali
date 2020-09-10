@@ -42,6 +42,9 @@
     return p0
 .end method
 
+.method public abstract fk()Lyou/zta/sis/zta/cno;
+.end method
+
 .method public getEncoded()[B
     .locals 1
 
@@ -67,13 +70,10 @@
 .method public abstract getFieldSize()I
 .end method
 
-.method public abstract gk()Lyou/zta/sis/zta/cno;
+.method public abstract gk()Ljava/lang/String;
 .end method
 
-.method public abstract hk()Ljava/lang/String;
-.end method
-
-.method public ik()Z
+.method public hk()Z
     .locals 1
 
     invoke-virtual {p0}, Lyou/zta/sis/zta/cno;->bitLength()I
@@ -91,6 +91,9 @@
 
     :goto_0
     return v0
+.end method
+
+.method public abstract ik()Lyou/zta/sis/zta/cno;
 .end method
 
 .method public abstract invert()Lyou/zta/sis/zta/cno;
@@ -120,10 +123,7 @@
     return p0
 .end method
 
-.method public abstract jk()Lyou/zta/sis/zta/cno;
-.end method
-
-.method public kk()Z
+.method public jk()Z
     .locals 1
 
     invoke-virtual {p0}, Lyou/zta/sis/zta/cno;->toBigInteger()Ljava/math/BigInteger;

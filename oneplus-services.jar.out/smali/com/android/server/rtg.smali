@@ -310,7 +310,7 @@
 .method static synthetic cno(Lcom/android/server/rtg;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/rtg;->vl()V
+    invoke-direct {p0}, Lcom/android/server/rtg;->ul()V
 
     return-void
 .end method
@@ -335,15 +335,7 @@
     return v0
 .end method
 
-.method static synthetic ssp(Lcom/android/server/rtg;)V
-    .locals 0
-
-    invoke-direct {p0}, Lcom/android/server/rtg;->ul()V
-
-    return-void
-.end method
-
-.method private tl()V
+.method private sl()V
     .locals 4
 
     sget-boolean v0, Lcom/android/server/rtg;->_b:Z
@@ -405,15 +397,15 @@
     return-void
 .end method
 
-.method static synthetic tsu(Lcom/android/server/rtg;)Ljava/util/HashMap;
+.method static synthetic ssp(Lcom/android/server/rtg;)V
     .locals 0
 
-    iget-object p0, p0, Lcom/android/server/rtg;->Vb:Ljava/util/HashMap;
+    invoke-direct {p0}, Lcom/android/server/rtg;->tl()V
 
-    return-object p0
+    return-void
 .end method
 
-.method private ul()V
+.method private tl()V
     .locals 4
 
     sget-boolean v0, Lcom/android/server/rtg;->_b:Z
@@ -499,7 +491,15 @@
     return-void
 .end method
 
-.method private vl()V
+.method static synthetic tsu(Lcom/android/server/rtg;)Ljava/util/HashMap;
+    .locals 0
+
+    iget-object p0, p0, Lcom/android/server/rtg;->Vb:Ljava/util/HashMap;
+
+    return-object p0
+.end method
+
+.method private ul()V
     .locals 6
 
     const-string p0, "installAPKs: wait internalSD ready for totally "
@@ -899,7 +899,7 @@
     const/4 v0, 0x0
 
     :try_start_0
-    invoke-direct {p0}, Lcom/android/server/rtg;->tl()V
+    invoke-direct {p0}, Lcom/android/server/rtg;->sl()V
 
     iget v2, p0, Lcom/android/server/rtg;->Yb:I
 

@@ -967,7 +967,7 @@
 
     iget-object p0, p0, Lcom/android/server/am/oif;->zi:Lcom/android/server/am/B;
 
-    invoke-virtual {p0}, Lcom/android/server/am/B;->uc()V
+    invoke-virtual {p0}, Lcom/android/server/am/B;->tc()V
 
     :cond_3
     return v2

@@ -298,7 +298,7 @@
 
 
 # virtual methods
-.method public Ff()Lcom/oneplus/android/server/scene/OemSceneVibrationController$AllowWhiteVibration;
+.method public Ef()Lcom/oneplus/android/server/scene/OemSceneVibrationController$AllowWhiteVibration;
     .locals 1
 
     sget-object v0, Lcom/oneplus/android/server/scene/OemSceneVibrationController;->xia:Lcom/oneplus/android/server/scene/OemSceneVibrationController$AllowWhiteVibration;

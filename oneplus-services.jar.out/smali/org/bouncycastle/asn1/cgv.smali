@@ -273,7 +273,7 @@
 
 
 # virtual methods
-.method Dg()I
+.method Cg()I
     .locals 1
 
     iget-object p0, p0, Lorg/bouncycastle/asn1/cgv;->time:[B
@@ -291,7 +291,7 @@
     return v0
 .end method
 
-.method public Ug()Ljava/util/Date;
+.method public Tg()Ljava/util/Date;
     .locals 4
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -317,7 +317,7 @@
 
     invoke-virtual {v0, v1}, Ljava/text/SimpleDateFormat;->setTimeZone(Ljava/util/TimeZone;)V
 
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/cgv;->Vg()Ljava/lang/String;
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/cgv;->Ug()Ljava/lang/String;
 
     move-result-object p0
 
@@ -332,7 +332,7 @@
     return-object p0
 .end method
 
-.method public Vg()Ljava/lang/String;
+.method public Ug()Ljava/lang/String;
     .locals 2
 
     invoke-virtual {p0}, Lorg/bouncycastle/asn1/cgv;->getTime()Ljava/lang/String;

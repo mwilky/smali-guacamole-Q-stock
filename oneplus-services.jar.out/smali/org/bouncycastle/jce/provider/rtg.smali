@@ -34,7 +34,7 @@
 
 
 # virtual methods
-.method public Mj()I
+.method public Lj()I
     .locals 0
 
     iget p0, p0, Lorg/bouncycastle/jce/provider/rtg;->QFa:I

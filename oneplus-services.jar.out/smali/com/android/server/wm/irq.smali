@@ -150,7 +150,7 @@
     return-void
 .end method
 
-.method private Lq()Landroid/graphics/Bitmap;
+.method private Kq()Landroid/graphics/Bitmap;
     .locals 12
 
     iget-object v0, p0, Lcom/android/server/wm/irq;->mContext:Landroid/content/Context;
@@ -375,7 +375,7 @@
     return-object v4
 .end method
 
-.method private Mq()V
+.method private Lq()V
     .locals 3
 
     iget-boolean v0, p0, Lcom/android/server/wm/irq;->dX:Z
@@ -425,7 +425,7 @@
     return-void
 .end method
 
-.method private Nq()Landroid/view/WindowManager$LayoutParams;
+.method private Mq()Landroid/view/WindowManager$LayoutParams;
     .locals 7
 
     new-instance v6, Landroid/view/WindowManager$LayoutParams;
@@ -515,16 +515,16 @@
     return-object v6
 .end method
 
-.method private Oq()V
+.method private Nq()V
     .locals 2
 
-    invoke-direct {p0}, Lcom/android/server/wm/irq;->Pq()V
+    invoke-direct {p0}, Lcom/android/server/wm/irq;->Oq()V
 
     iget-object v0, p0, Lcom/android/server/wm/irq;->mWindowManager:Landroid/view/WindowManager;
 
     iget-object v1, p0, Lcom/android/server/wm/irq;->XW:Landroid/view/View;
 
-    invoke-direct {p0}, Lcom/android/server/wm/irq;->Nq()Landroid/view/WindowManager$LayoutParams;
+    invoke-direct {p0}, Lcom/android/server/wm/irq;->Mq()Landroid/view/WindowManager$LayoutParams;
 
     move-result-object p0
 
@@ -533,7 +533,7 @@
     return-void
 .end method
 
-.method private Pq()V
+.method private Oq()V
     .locals 3
 
     iget-object v0, p0, Lcom/android/server/wm/irq;->mDisplayManager:Landroid/hardware/display/DisplayManager;
@@ -677,7 +677,7 @@
 .method private setup()V
     .locals 3
 
-    invoke-virtual {p0}, Lcom/android/server/wm/irq;->ne()V
+    invoke-virtual {p0}, Lcom/android/server/wm/irq;->me()V
 
     new-instance v0, Landroid/graphics/drawable/BitmapDrawable;
 
@@ -733,13 +733,13 @@
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setAlpha(F)V
 
-    invoke-direct {p0}, Lcom/android/server/wm/irq;->Pq()V
+    invoke-direct {p0}, Lcom/android/server/wm/irq;->Oq()V
 
     iget-object v0, p0, Lcom/android/server/wm/irq;->mWindowManager:Landroid/view/WindowManager;
 
     iget-object v1, p0, Lcom/android/server/wm/irq;->XW:Landroid/view/View;
 
-    invoke-direct {p0}, Lcom/android/server/wm/irq;->Nq()Landroid/view/WindowManager$LayoutParams;
+    invoke-direct {p0}, Lcom/android/server/wm/irq;->Mq()Landroid/view/WindowManager$LayoutParams;
 
     move-result-object v2
 
@@ -759,7 +759,7 @@
 .method static synthetic sis(Lcom/android/server/wm/irq;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/wm/irq;->Mq()V
+    invoke-direct {p0}, Lcom/android/server/wm/irq;->Lq()V
 
     return-void
 .end method
@@ -767,7 +767,7 @@
 .method static synthetic you(Lcom/android/server/wm/irq;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/wm/irq;->Oq()V
+    invoke-direct {p0}, Lcom/android/server/wm/irq;->Nq()V
 
     return-void
 .end method
@@ -848,7 +848,7 @@
     return-void
 .end method
 
-.method ne()V
+.method me()V
     .locals 4
 
     new-instance v0, Landroid/view/DisplayInfo;
@@ -945,7 +945,7 @@
 
     iput v2, p0, Lcom/android/server/wm/irq;->fX:I
 
-    invoke-direct {p0}, Lcom/android/server/wm/irq;->Lq()Landroid/graphics/Bitmap;
+    invoke-direct {p0}, Lcom/android/server/wm/irq;->Kq()Landroid/graphics/Bitmap;
 
     move-result-object v0
 
@@ -1007,7 +1007,7 @@
     invoke-static {v0, v1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_0
-    invoke-virtual {p0}, Lcom/android/server/wm/irq;->ne()V
+    invoke-virtual {p0}, Lcom/android/server/wm/irq;->me()V
 
     iget-object v0, p0, Lcom/android/server/wm/irq;->mHandler:Lcom/android/server/wm/irq$zta;
 

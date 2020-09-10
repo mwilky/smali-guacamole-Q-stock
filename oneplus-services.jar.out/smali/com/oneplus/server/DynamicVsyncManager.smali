@@ -67,7 +67,7 @@
     .end annotation
 .end field
 
-.field private Sz:Lcom/oneplus/server/DynamicVsyncManager$DockDividerVisibilityListener;
+.field private Rz:Lcom/oneplus/server/DynamicVsyncManager$DockDividerVisibilityListener;
 
 .field private Yia:Z
 
@@ -181,7 +181,7 @@
 
     const/4 v2, 0x0
 
-    const/16 v3, 0xfd
+    const/16 v3, 0xfe
 
     aput v3, v1, v2
 
@@ -193,7 +193,7 @@
 
     new-array v0, v0, [I
 
-    const/16 v1, 0xfe
+    const/16 v1, 0xff
 
     aput v1, v0, v2
 
@@ -1152,7 +1152,7 @@
 .method static synthetic gck(Lcom/oneplus/server/DynamicVsyncManager;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/oneplus/server/DynamicVsyncManager;->rt()V
+    invoke-direct {p0}, Lcom/oneplus/server/DynamicVsyncManager;->qt()V
 
     return-void
 .end method
@@ -1290,7 +1290,7 @@
     return-void
 .end method
 
-.method private mt()V
+.method private lt()V
     .locals 1
 
     iget v0, p0, Lcom/oneplus/server/DynamicVsyncManager;->dja:I
@@ -1300,20 +1300,7 @@
     return-void
 .end method
 
-.method private myLog(ZLjava/lang/String;)V
-    .locals 0
-
-    if-eqz p1, :cond_0
-
-    const-string p0, "DynamicVsyncManager"
-
-    invoke-static {p0, p2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    :cond_0
-    return-void
-.end method
-
-.method private nt()I
+.method private mt()I
     .locals 3
 
     iget-boolean v0, p0, Lcom/oneplus/server/DynamicVsyncManager;->mDebug:Z
@@ -1439,7 +1426,20 @@
     return v1
 .end method
 
-.method private ot()I
+.method private myLog(ZLjava/lang/String;)V
+    .locals 0
+
+    if-eqz p1, :cond_0
+
+    const-string p0, "DynamicVsyncManager"
+
+    invoke-static {p0, p2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    :cond_0
+    return-void
+.end method
+
+.method private nt()I
     .locals 2
 
     iget p0, p0, Lcom/oneplus/server/DynamicVsyncManager;->mScreenRateSettings:I
@@ -1470,7 +1470,7 @@
     return v0
 .end method
 
-.method private pt()Z
+.method private ot()Z
     .locals 2
 
     iget-object v0, p0, Lcom/oneplus/server/DynamicVsyncManager;->tja:Ljava/lang/Object;
@@ -1504,7 +1504,7 @@
     throw p0
 .end method
 
-.method private qt()V
+.method private pt()V
     .locals 5
 
     invoke-direct {p0}, Lcom/oneplus/server/DynamicVsyncManager;->getSurfaceFlinger()V
@@ -1632,6 +1632,111 @@
     return-void
 .end method
 
+.method private qt()V
+    .locals 4
+
+    invoke-direct {p0}, Lcom/oneplus/server/DynamicVsyncManager;->ot()Z
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    return-void
+
+    :cond_0
+    invoke-direct {p0}, Lcom/oneplus/server/DynamicVsyncManager;->mt()I
+
+    move-result v0
+
+    iget v1, p0, Lcom/oneplus/server/DynamicVsyncManager;->xja:I
+
+    if-ne v1, v0, :cond_1
+
+    return-void
+
+    :cond_1
+    iput v0, p0, Lcom/oneplus/server/DynamicVsyncManager;->xja:I
+
+    iget-boolean v1, p0, Lcom/oneplus/server/DynamicVsyncManager;->mDebug:Z
+
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v3, "updateUserSetModeLocked to "
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget v3, p0, Lcom/oneplus/server/DynamicVsyncManager;->xja:I
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-direct {p0, v1, v2}, Lcom/oneplus/server/DynamicVsyncManager;->myLog(ZLjava/lang/String;)V
+
+    invoke-direct {p0}, Lcom/oneplus/server/DynamicVsyncManager;->getSurfaceFlinger()V
+
+    iget-object v1, p0, Lcom/oneplus/server/DynamicVsyncManager;->mSurfaceFlinger:Landroid/os/IBinder;
+
+    if-eqz v1, :cond_2
+
+    invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
+
+    move-result-object v1
+
+    const-string v2, "android.ui.ISurfaceComposer"
+
+    invoke-virtual {v1, v2}, Landroid/os/Parcel;->writeInterfaceToken(Ljava/lang/String;)V
+
+    invoke-virtual {v1, v0}, Landroid/os/Parcel;->writeInt(I)V
+
+    :try_start_0
+    iget-object p0, p0, Lcom/oneplus/server/DynamicVsyncManager;->mSurfaceFlinger:Landroid/os/IBinder;
+
+    const/16 v0, 0x4e2a
+
+    const/4 v2, 0x0
+
+    const/4 v3, 0x0
+
+    invoke-interface {p0, v0, v1, v2, v3}, Landroid/os/IBinder;->transact(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    :goto_0
+    invoke-virtual {v1}, Landroid/os/Parcel;->recycle()V
+
+    goto :goto_2
+
+    :catchall_0
+    move-exception p0
+
+    goto :goto_1
+
+    :catch_0
+    move-exception p0
+
+    :try_start_1
+    invoke-virtual {p0}, Ljava/lang/Exception;->printStackTrace()V
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    goto :goto_0
+
+    :goto_1
+    invoke-virtual {v1}, Landroid/os/Parcel;->recycle()V
+
+    throw p0
+
+    :cond_2
+    :goto_2
+    return-void
+.end method
+
 .method private registerOnlineConfig()V
     .locals 5
 
@@ -1742,7 +1847,7 @@
 
     if-nez v4, :cond_1
 
-    invoke-direct {p0}, Lcom/oneplus/server/DynamicVsyncManager;->mt()V
+    invoke-direct {p0}, Lcom/oneplus/server/DynamicVsyncManager;->lt()V
 
     :cond_1
     iget-boolean v4, p0, Lcom/oneplus/server/DynamicVsyncManager;->Yia:Z
@@ -2397,7 +2502,7 @@
     :cond_f
     if-eqz v2, :cond_10
 
-    invoke-direct {p0}, Lcom/oneplus/server/DynamicVsyncManager;->qt()V
+    invoke-direct {p0}, Lcom/oneplus/server/DynamicVsyncManager;->pt()V
     :try_end_16
     .catch Ljava/lang/Exception; {:try_start_16 .. :try_end_16} :catch_0
 
@@ -2426,111 +2531,6 @@
 
     :cond_10
     :goto_c
-    return-void
-.end method
-
-.method private rt()V
-    .locals 4
-
-    invoke-direct {p0}, Lcom/oneplus/server/DynamicVsyncManager;->pt()Z
-
-    move-result v0
-
-    if-nez v0, :cond_0
-
-    return-void
-
-    :cond_0
-    invoke-direct {p0}, Lcom/oneplus/server/DynamicVsyncManager;->nt()I
-
-    move-result v0
-
-    iget v1, p0, Lcom/oneplus/server/DynamicVsyncManager;->xja:I
-
-    if-ne v1, v0, :cond_1
-
-    return-void
-
-    :cond_1
-    iput v0, p0, Lcom/oneplus/server/DynamicVsyncManager;->xja:I
-
-    iget-boolean v1, p0, Lcom/oneplus/server/DynamicVsyncManager;->mDebug:Z
-
-    new-instance v2, Ljava/lang/StringBuilder;
-
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v3, "updateUserSetModeLocked to "
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget v3, p0, Lcom/oneplus/server/DynamicVsyncManager;->xja:I
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-direct {p0, v1, v2}, Lcom/oneplus/server/DynamicVsyncManager;->myLog(ZLjava/lang/String;)V
-
-    invoke-direct {p0}, Lcom/oneplus/server/DynamicVsyncManager;->getSurfaceFlinger()V
-
-    iget-object v1, p0, Lcom/oneplus/server/DynamicVsyncManager;->mSurfaceFlinger:Landroid/os/IBinder;
-
-    if-eqz v1, :cond_2
-
-    invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
-
-    move-result-object v1
-
-    const-string v2, "android.ui.ISurfaceComposer"
-
-    invoke-virtual {v1, v2}, Landroid/os/Parcel;->writeInterfaceToken(Ljava/lang/String;)V
-
-    invoke-virtual {v1, v0}, Landroid/os/Parcel;->writeInt(I)V
-
-    :try_start_0
-    iget-object p0, p0, Lcom/oneplus/server/DynamicVsyncManager;->mSurfaceFlinger:Landroid/os/IBinder;
-
-    const/16 v0, 0x4e2a
-
-    const/4 v2, 0x0
-
-    const/4 v3, 0x0
-
-    invoke-interface {p0, v0, v1, v2, v3}, Landroid/os/IBinder;->transact(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    :goto_0
-    invoke-virtual {v1}, Landroid/os/Parcel;->recycle()V
-
-    goto :goto_2
-
-    :catchall_0
-    move-exception p0
-
-    goto :goto_1
-
-    :catch_0
-    move-exception p0
-
-    :try_start_1
-    invoke-virtual {p0}, Ljava/lang/Exception;->printStackTrace()V
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
-    goto :goto_0
-
-    :goto_1
-    invoke-virtual {v1}, Landroid/os/Parcel;->recycle()V
-
-    throw p0
-
-    :cond_2
-    :goto_2
     return-void
 .end method
 
@@ -2690,7 +2690,7 @@
 .method private tc(I)V
     .locals 3
 
-    invoke-direct {p0}, Lcom/oneplus/server/DynamicVsyncManager;->pt()Z
+    invoke-direct {p0}, Lcom/oneplus/server/DynamicVsyncManager;->ot()Z
 
     move-result v0
 
@@ -3319,7 +3319,7 @@
 .method static synthetic you(Lcom/oneplus/server/DynamicVsyncManager;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/oneplus/server/DynamicVsyncManager;->mt()V
+    invoke-direct {p0}, Lcom/oneplus/server/DynamicVsyncManager;->lt()V
 
     return-void
 .end method
@@ -3571,7 +3571,7 @@
 
     if-nez p1, :cond_1
 
-    invoke-direct {p0}, Lcom/oneplus/server/DynamicVsyncManager;->mt()V
+    invoke-direct {p0}, Lcom/oneplus/server/DynamicVsyncManager;->lt()V
 
     :cond_1
     :goto_0
@@ -3588,7 +3588,7 @@
     :try_start_0
     iput-boolean p1, p0, Lcom/oneplus/server/DynamicVsyncManager;->Cja:Z
 
-    invoke-direct {p0}, Lcom/oneplus/server/DynamicVsyncManager;->rt()V
+    invoke-direct {p0}, Lcom/oneplus/server/DynamicVsyncManager;->qt()V
 
     monitor-exit v0
 
@@ -3671,7 +3671,7 @@
     return-void
 
     :cond_1
-    invoke-direct/range {p0 .. p0}, Lcom/oneplus/server/DynamicVsyncManager;->pt()Z
+    invoke-direct/range {p0 .. p0}, Lcom/oneplus/server/DynamicVsyncManager;->ot()Z
 
     move-result v1
 
@@ -3979,7 +3979,7 @@
 
     iput p2, p0, Lcom/oneplus/server/DynamicVsyncManager;->yja:I
 
-    invoke-direct {p0}, Lcom/oneplus/server/DynamicVsyncManager;->rt()V
+    invoke-direct {p0}, Lcom/oneplus/server/DynamicVsyncManager;->qt()V
 
     monitor-exit p3
 
@@ -4050,14 +4050,14 @@
 
     invoke-direct {p1, p0}, Lcom/oneplus/server/DynamicVsyncManager$DockDividerVisibilityListener;-><init>(Lcom/oneplus/server/DynamicVsyncManager;)V
 
-    iput-object p1, p0, Lcom/oneplus/server/DynamicVsyncManager;->Sz:Lcom/oneplus/server/DynamicVsyncManager$DockDividerVisibilityListener;
+    iput-object p1, p0, Lcom/oneplus/server/DynamicVsyncManager;->Rz:Lcom/oneplus/server/DynamicVsyncManager$DockDividerVisibilityListener;
 
     :try_start_0
     invoke-static {}, Landroid/view/WindowManagerGlobal;->getWindowManagerService()Landroid/view/IWindowManager;
 
     move-result-object p1
 
-    iget-object v0, p0, Lcom/oneplus/server/DynamicVsyncManager;->Sz:Lcom/oneplus/server/DynamicVsyncManager$DockDividerVisibilityListener;
+    iget-object v0, p0, Lcom/oneplus/server/DynamicVsyncManager;->Rz:Lcom/oneplus/server/DynamicVsyncManager$DockDividerVisibilityListener;
 
     invoke-interface {p1, v0}, Landroid/view/IWindowManager;->registerDockedStackListener(Landroid/view/IDockedStackListener;)V
     :try_end_0
@@ -4226,7 +4226,7 @@
     goto :goto_0
 
     :cond_1
-    invoke-direct {p0}, Lcom/oneplus/server/DynamicVsyncManager;->mt()V
+    invoke-direct {p0}, Lcom/oneplus/server/DynamicVsyncManager;->lt()V
 
     :cond_2
     :goto_0
@@ -4269,7 +4269,7 @@
     goto :goto_0
 
     :cond_0
-    invoke-direct {p0}, Lcom/oneplus/server/DynamicVsyncManager;->mt()V
+    invoke-direct {p0}, Lcom/oneplus/server/DynamicVsyncManager;->lt()V
 
     :goto_0
     iget-object p1, p0, Lcom/oneplus/server/DynamicVsyncManager;->mLock:Ljava/lang/Object;
@@ -4395,7 +4395,7 @@
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     :try_start_2
-    invoke-direct {p0}, Lcom/oneplus/server/DynamicVsyncManager;->qt()V
+    invoke-direct {p0}, Lcom/oneplus/server/DynamicVsyncManager;->pt()V
     :try_end_2
     .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_0
 
@@ -4476,7 +4476,7 @@
     .catchall {:try_start_5 .. :try_end_5} :catchall_1
 
     :try_start_6
-    invoke-direct {p0}, Lcom/oneplus/server/DynamicVsyncManager;->qt()V
+    invoke-direct {p0}, Lcom/oneplus/server/DynamicVsyncManager;->pt()V
     :try_end_6
     .catch Ljava/lang/Exception; {:try_start_6 .. :try_end_6} :catch_0
 
@@ -4524,7 +4524,7 @@
     .catchall {:try_start_9 .. :try_end_9} :catchall_2
 
     :try_start_a
-    invoke-direct {p0}, Lcom/oneplus/server/DynamicVsyncManager;->qt()V
+    invoke-direct {p0}, Lcom/oneplus/server/DynamicVsyncManager;->pt()V
     :try_end_a
     .catch Ljava/lang/Exception; {:try_start_a .. :try_end_a} :catch_0
 

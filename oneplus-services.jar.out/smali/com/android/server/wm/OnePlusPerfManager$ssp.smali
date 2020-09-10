@@ -175,14 +175,14 @@
     if-eqz p1, :cond_2
 
     :try_start_4
-    invoke-virtual {v3}, Lcom/android/server/wm/OnePlusPerfManager$cno;->he()Ljava/lang/String;
+    invoke-virtual {v3}, Lcom/android/server/wm/OnePlusPerfManager$cno;->ge()Ljava/lang/String;
 
     move-result-object v1
 
     goto :goto_2
 
     :cond_2
-    invoke-virtual {v3}, Lcom/android/server/wm/OnePlusPerfManager$cno;->je()Ljava/lang/String;
+    invoke-virtual {v3}, Lcom/android/server/wm/OnePlusPerfManager$cno;->ie()Ljava/lang/String;
 
     move-result-object v1
 

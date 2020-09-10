@@ -201,7 +201,7 @@
 
     sget-object p0, Lcom/oneplus/server/ssp;->Vja:Lcom/oneplus/android/server/scene/qbh;
 
-    invoke-virtual {p0}, Lcom/oneplus/android/server/scene/qbh;->mf()V
+    invoke-virtual {p0}, Lcom/oneplus/android/server/scene/qbh;->lf()V
 
     sget-object p0, Lcom/oneplus/server/ssp;->Vja:Lcom/oneplus/android/server/scene/qbh;
 
@@ -279,7 +279,7 @@
 
     sget-object p0, Lcom/oneplus/server/ssp;->Vja:Lcom/oneplus/android/server/scene/qbh;
 
-    invoke-virtual {p0}, Lcom/oneplus/android/server/scene/qbh;->mf()V
+    invoke-virtual {p0}, Lcom/oneplus/android/server/scene/qbh;->lf()V
 
     sget-object p0, Lcom/oneplus/server/ssp;->Vja:Lcom/oneplus/android/server/scene/qbh;
 
@@ -412,7 +412,7 @@
 
     sget-object v1, Lcom/oneplus/server/ssp;->Qja:Lcom/oneplus/android/server/scene/OemSceneActivityController;
 
-    invoke-virtual {v1}, Lcom/oneplus/android/server/scene/OemSceneActivityController;->lf()Lcom/oneplus/android/server/scene/OemSceneActivityController$AllowWhiteActivity;
+    invoke-virtual {v1}, Lcom/oneplus/android/server/scene/OemSceneActivityController;->kf()Lcom/oneplus/android/server/scene/OemSceneActivityController$AllowWhiteActivity;
 
     move-result-object v1
 
@@ -433,7 +433,7 @@
 
     sget-object v1, Lcom/oneplus/server/ssp;->Pja:Lcom/oneplus/android/server/scene/OemSceneVibrationController;
 
-    invoke-virtual {v1}, Lcom/oneplus/android/server/scene/OemSceneVibrationController;->Ff()Lcom/oneplus/android/server/scene/OemSceneVibrationController$AllowWhiteVibration;
+    invoke-virtual {v1}, Lcom/oneplus/android/server/scene/OemSceneVibrationController;->Ef()Lcom/oneplus/android/server/scene/OemSceneVibrationController$AllowWhiteVibration;
 
     move-result-object v1
 
@@ -454,7 +454,7 @@
 
     sget-object v1, Lcom/oneplus/server/ssp;->Rja:Lcom/oneplus/android/server/scene/OemSceneLightsController;
 
-    invoke-virtual {v1}, Lcom/oneplus/android/server/scene/OemSceneLightsController;->vf()Lcom/oneplus/android/server/scene/OemSceneLightsController$ZenModeLedController;
+    invoke-virtual {v1}, Lcom/oneplus/android/server/scene/OemSceneLightsController;->uf()Lcom/oneplus/android/server/scene/OemSceneLightsController$ZenModeLedController;
 
     move-result-object v1
 
@@ -475,7 +475,7 @@
 
     sget-object v1, Lcom/oneplus/server/ssp;->Sja:Lcom/oneplus/android/server/scene/OemSceneFloatingWindowController;
 
-    invoke-virtual {v1}, Lcom/oneplus/android/server/scene/OemSceneFloatingWindowController;->of()Lcom/oneplus/android/server/scene/OemSceneFloatingWindowController$FloatingWindowController;
+    invoke-virtual {v1}, Lcom/oneplus/android/server/scene/OemSceneFloatingWindowController;->nf()Lcom/oneplus/android/server/scene/OemSceneFloatingWindowController$FloatingWindowController;
 
     move-result-object v1
 
@@ -496,7 +496,7 @@
 
     sget-object v1, Lcom/oneplus/server/ssp;->Tja:Lcom/oneplus/android/server/scene/OemSceneAudioController;
 
-    invoke-virtual {v1}, Lcom/oneplus/android/server/scene/OemSceneAudioController;->nf()Lcom/oneplus/android/server/scene/OemSceneAudioController$AudioProcessesController;
+    invoke-virtual {v1}, Lcom/oneplus/android/server/scene/OemSceneAudioController;->mf()Lcom/oneplus/android/server/scene/OemSceneAudioController$AudioProcessesController;
 
     move-result-object v1
 

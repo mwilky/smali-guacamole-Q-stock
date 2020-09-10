@@ -35,7 +35,7 @@
     iput-object p1, p0, Lorg/bouncycastle/jce/provider/gwm;->c:Lorg/bouncycastle/asn1/x509/dma;
 
     :try_start_0
-    invoke-virtual {p1}, Lorg/bouncycastle/asn1/x509/dma;->_g()Lorg/bouncycastle/asn1/x509/zta;
+    invoke-virtual {p1}, Lorg/bouncycastle/asn1/x509/dma;->Zg()Lorg/bouncycastle/asn1/x509/zta;
 
     move-result-object v0
 
@@ -45,7 +45,7 @@
 
     iput-object v0, p0, Lorg/bouncycastle/jce/provider/gwm;->Ipa:Ljava/lang/String;
 
-    invoke-virtual {p1}, Lorg/bouncycastle/asn1/x509/dma;->_g()Lorg/bouncycastle/asn1/x509/zta;
+    invoke-virtual {p1}, Lorg/bouncycastle/asn1/x509/dma;->Zg()Lorg/bouncycastle/asn1/x509/zta;
 
     move-result-object v0
 
@@ -55,7 +55,7 @@
 
     if-eqz v0, :cond_0
 
-    invoke-virtual {p1}, Lorg/bouncycastle/asn1/x509/dma;->_g()Lorg/bouncycastle/asn1/x509/zta;
+    invoke-virtual {p1}, Lorg/bouncycastle/asn1/x509/dma;->Zg()Lorg/bouncycastle/asn1/x509/zta;
 
     move-result-object p1
 
@@ -117,7 +117,7 @@
     throw p1
 .end method
 
-.method private Ct()Ljava/util/Set;
+.method private Bt()Ljava/util/Set;
     .locals 6
 
     new-instance v0, Ljava/util/HashSet;
@@ -126,7 +126,7 @@
 
     iget-object v1, p0, Lorg/bouncycastle/jce/provider/gwm;->c:Lorg/bouncycastle/asn1/x509/dma;
 
-    invoke-virtual {v1}, Lorg/bouncycastle/asn1/x509/dma;->Zh()Ljava/util/Enumeration;
+    invoke-virtual {v1}, Lorg/bouncycastle/asn1/x509/dma;->Yh()Ljava/util/Enumeration;
 
     move-result-object v1
 
@@ -176,7 +176,7 @@
 
     if-eqz v3, :cond_0
 
-    invoke-virtual {v3}, Lorg/bouncycastle/asn1/x509/gwm;->gi()Lorg/bouncycastle/asn1/ssp;
+    invoke-virtual {v3}, Lorg/bouncycastle/asn1/x509/gwm;->fi()Lorg/bouncycastle/asn1/ssp;
 
     move-result-object v2
 
@@ -233,7 +233,7 @@
 
     invoke-direct {v0}, Ljava/util/HashSet;-><init>()V
 
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/x509/ugm;->ii()Ljava/util/Enumeration;
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/x509/ugm;->hi()Ljava/util/Enumeration;
 
     move-result-object v1
 
@@ -291,7 +291,7 @@
 
     iget-object v0, p0, Lorg/bouncycastle/jce/provider/gwm;->c:Lorg/bouncycastle/asn1/x509/dma;
 
-    invoke-virtual {v0}, Lorg/bouncycastle/asn1/x509/dma;->_g()Lorg/bouncycastle/asn1/x509/zta;
+    invoke-virtual {v0}, Lorg/bouncycastle/asn1/x509/dma;->Zg()Lorg/bouncycastle/asn1/x509/zta;
 
     move-result-object v0
 
@@ -383,7 +383,7 @@
 
     move-result-object p0
 
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/x509/ire;->pi()Z
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/x509/ire;->oi()Z
 
     move-result p0
     :try_end_0
@@ -548,7 +548,7 @@
     if-eqz p0, :cond_0
 
     :try_start_0
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/x509/gwm;->fi()Lorg/bouncycastle/asn1/ibl;
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/x509/gwm;->ei()Lorg/bouncycastle/asn1/ibl;
 
     move-result-object p0
 
@@ -695,7 +695,7 @@
 
     iget-object v0, p0, Lorg/bouncycastle/jce/provider/gwm;->c:Lorg/bouncycastle/asn1/x509/dma;
 
-    invoke-virtual {v0}, Lorg/bouncycastle/asn1/x509/dma;->Zh()Ljava/util/Enumeration;
+    invoke-virtual {v0}, Lorg/bouncycastle/asn1/x509/dma;->Yh()Ljava/util/Enumeration;
 
     move-result-object v0
 
@@ -717,7 +717,7 @@
 
     check-cast v3, Lorg/bouncycastle/asn1/x509/e$zta;
 
-    invoke-virtual {v3}, Lorg/bouncycastle/asn1/x509/e$zta;->Ei()Lorg/bouncycastle/asn1/ywr;
+    invoke-virtual {v3}, Lorg/bouncycastle/asn1/x509/e$zta;->Di()Lorg/bouncycastle/asn1/ywr;
 
     move-result-object v4
 
@@ -762,7 +762,7 @@
 
     if-eqz v3, :cond_0
 
-    invoke-virtual {v3}, Lorg/bouncycastle/asn1/x509/gwm;->gi()Lorg/bouncycastle/asn1/ssp;
+    invoke-virtual {v3}, Lorg/bouncycastle/asn1/x509/gwm;->fi()Lorg/bouncycastle/asn1/ssp;
 
     move-result-object v2
 
@@ -795,7 +795,7 @@
 .method public getRevokedCertificates()Ljava/util/Set;
     .locals 1
 
-    invoke-direct {p0}, Lorg/bouncycastle/jce/provider/gwm;->Ct()Ljava/util/Set;
+    invoke-direct {p0}, Lorg/bouncycastle/jce/provider/gwm;->Bt()Ljava/util/Set;
 
     move-result-object p0
 
@@ -830,7 +830,7 @@
 
     iget-object p0, p0, Lorg/bouncycastle/jce/provider/gwm;->c:Lorg/bouncycastle/asn1/x509/dma;
 
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/x509/dma;->_g()Lorg/bouncycastle/asn1/x509/zta;
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/x509/dma;->Zg()Lorg/bouncycastle/asn1/x509/zta;
 
     move-result-object p0
 
@@ -946,7 +946,7 @@
 
     iget-object p0, p0, Lorg/bouncycastle/jce/provider/gwm;->c:Lorg/bouncycastle/asn1/x509/dma;
 
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/x509/dma;->Yh()I
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/x509/dma;->Xh()I
 
     move-result p0
 
@@ -1024,7 +1024,7 @@
 
     iget-object v0, p0, Lorg/bouncycastle/jce/provider/gwm;->c:Lorg/bouncycastle/asn1/x509/dma;
 
-    invoke-virtual {v0}, Lorg/bouncycastle/asn1/x509/dma;->Zh()Ljava/util/Enumeration;
+    invoke-virtual {v0}, Lorg/bouncycastle/asn1/x509/dma;->Yh()Ljava/util/Enumeration;
 
     move-result-object v0
 
@@ -1083,7 +1083,7 @@
 
     if-eqz v6, :cond_1
 
-    invoke-virtual {v6}, Lorg/bouncycastle/asn1/x509/gwm;->gi()Lorg/bouncycastle/asn1/ssp;
+    invoke-virtual {v6}, Lorg/bouncycastle/asn1/x509/gwm;->fi()Lorg/bouncycastle/asn1/ssp;
 
     move-result-object v1
 
@@ -1106,7 +1106,7 @@
     move-result-object v1
 
     :cond_1
-    invoke-virtual {v5}, Lorg/bouncycastle/asn1/x509/e$zta;->Ei()Lorg/bouncycastle/asn1/ywr;
+    invoke-virtual {v5}, Lorg/bouncycastle/asn1/x509/e$zta;->Di()Lorg/bouncycastle/asn1/ywr;
 
     move-result-object v5
 
@@ -1349,7 +1349,7 @@
 
     if-eqz v3, :cond_9
 
-    invoke-virtual {v3}, Lorg/bouncycastle/asn1/x509/ugm;->ii()Ljava/util/Enumeration;
+    invoke-virtual {v3}, Lorg/bouncycastle/asn1/x509/ugm;->hi()Ljava/util/Enumeration;
 
     move-result-object v4
 
@@ -1385,13 +1385,13 @@
 
     move-result-object v6
 
-    invoke-virtual {v6}, Lorg/bouncycastle/asn1/x509/gwm;->fi()Lorg/bouncycastle/asn1/ibl;
+    invoke-virtual {v6}, Lorg/bouncycastle/asn1/x509/gwm;->ei()Lorg/bouncycastle/asn1/ibl;
 
     move-result-object v7
 
     if-eqz v7, :cond_2
 
-    invoke-virtual {v6}, Lorg/bouncycastle/asn1/x509/gwm;->fi()Lorg/bouncycastle/asn1/ibl;
+    invoke-virtual {v6}, Lorg/bouncycastle/asn1/x509/gwm;->ei()Lorg/bouncycastle/asn1/ibl;
 
     move-result-object v7
 
@@ -1436,7 +1436,7 @@
 
     move-result-object v7
 
-    invoke-virtual {v7}, Lorg/bouncycastle/asn1/ywr;->Rg()Ljava/math/BigInteger;
+    invoke-virtual {v7}, Lorg/bouncycastle/asn1/ywr;->Qg()Ljava/math/BigInteger;
 
     move-result-object v7
 
@@ -1477,7 +1477,7 @@
 
     move-result-object v8
 
-    invoke-virtual {v8}, Lorg/bouncycastle/asn1/ywr;->Rg()Ljava/math/BigInteger;
+    invoke-virtual {v8}, Lorg/bouncycastle/asn1/ywr;->Qg()Ljava/math/BigInteger;
 
     move-result-object v8
 

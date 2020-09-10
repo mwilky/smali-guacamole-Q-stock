@@ -78,7 +78,7 @@
     :cond_0
     iget-object p0, p0, Lorg/bouncycastle/asn1/a$zta;->this$0:Lorg/bouncycastle/asn1/a;
 
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/vdw;->Ag()V
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/vdw;->zg()V
 
     return-void
 .end method

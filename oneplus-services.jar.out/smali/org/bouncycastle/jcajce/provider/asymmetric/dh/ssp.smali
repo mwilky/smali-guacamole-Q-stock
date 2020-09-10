@@ -57,7 +57,7 @@
 
     iput v0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dh/ssp;->strength:I
 
-    invoke-static {}, Lorg/bouncycastle/crypto/igw;->gj()Ljava/security/SecureRandom;
+    invoke-static {}, Lorg/bouncycastle/crypto/igw;->fj()Ljava/security/SecureRandom;
 
     move-result-object v0
 

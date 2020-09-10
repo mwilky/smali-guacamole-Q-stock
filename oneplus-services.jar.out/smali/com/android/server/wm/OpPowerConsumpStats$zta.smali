@@ -80,7 +80,7 @@
 .method static synthetic sis(Lcom/android/server/wm/OpPowerConsumpStats$zta;)Z
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/wm/OpPowerConsumpStats$zta;->xp()Z
+    invoke-direct {p0}, Lcom/android/server/wm/OpPowerConsumpStats$zta;->wp()Z
 
     move-result p0
 
@@ -90,12 +90,12 @@
 .method static synthetic tsu(Lcom/android/server/wm/OpPowerConsumpStats$zta;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/wm/OpPowerConsumpStats$zta;->yp()V
+    invoke-direct {p0}, Lcom/android/server/wm/OpPowerConsumpStats$zta;->xp()V
 
     return-void
 .end method
 
-.method private wp()Ljava/util/HashMap;
+.method private vp()Ljava/util/HashMap;
     .locals 17
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -358,7 +358,7 @@
     goto :goto_4
 .end method
 
-.method private xp()Z
+.method private wp()Z
     .locals 19
 
     move-object/from16 v0, p0
@@ -624,17 +624,7 @@
     throw v0
 .end method
 
-.method static synthetic you(Lcom/android/server/wm/OpPowerConsumpStats$zta;)Z
-    .locals 0
-
-    invoke-direct {p0}, Lcom/android/server/wm/OpPowerConsumpStats$zta;->zp()Z
-
-    move-result p0
-
-    return p0
-.end method
-
-.method private yp()V
+.method private xp()V
     .locals 2
 
     iget-object v0, p0, Lcom/android/server/wm/OpPowerConsumpStats$zta;->lock:Ljava/lang/Object;
@@ -676,7 +666,17 @@
     throw p0
 .end method
 
-.method private zp()Z
+.method static synthetic you(Lcom/android/server/wm/OpPowerConsumpStats$zta;)Z
+    .locals 0
+
+    invoke-direct {p0}, Lcom/android/server/wm/OpPowerConsumpStats$zta;->yp()Z
+
+    move-result p0
+
+    return p0
+.end method
+
+.method private yp()Z
     .locals 7
 
     iget-object v0, p0, Lcom/android/server/wm/OpPowerConsumpStats$zta;->lock:Ljava/lang/Object;
@@ -772,7 +772,7 @@
 .method static synthetic zta(Lcom/android/server/wm/OpPowerConsumpStats$zta;)Ljava/util/HashMap;
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/wm/OpPowerConsumpStats$zta;->wp()Ljava/util/HashMap;
+    invoke-direct {p0}, Lcom/android/server/wm/OpPowerConsumpStats$zta;->vp()Ljava/util/HashMap;
 
     move-result-object p0
 

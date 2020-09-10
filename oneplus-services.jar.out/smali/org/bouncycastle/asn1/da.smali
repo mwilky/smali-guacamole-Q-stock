@@ -48,7 +48,7 @@
 
     if-ltz p1, :cond_0
 
-    invoke-direct {p0}, Lorg/bouncycastle/asn1/da;->At()Z
+    invoke-direct {p0}, Lorg/bouncycastle/asn1/da;->zt()Z
 
     return-void
 
@@ -60,7 +60,7 @@
     throw p0
 .end method
 
-.method private At()Z
+.method private zt()Z
     .locals 1
 
     iget-boolean v0, p0, Lorg/bouncycastle/asn1/da;->Hka:Z
@@ -98,7 +98,7 @@
 
     iput-boolean p1, p0, Lorg/bouncycastle/asn1/da;->Ika:Z
 
-    invoke-direct {p0}, Lorg/bouncycastle/asn1/da;->At()Z
+    invoke-direct {p0}, Lorg/bouncycastle/asn1/da;->zt()Z
 
     return-void
 .end method
@@ -111,7 +111,7 @@
         }
     .end annotation
 
-    invoke-direct {p0}, Lorg/bouncycastle/asn1/da;->At()Z
+    invoke-direct {p0}, Lorg/bouncycastle/asn1/da;->zt()Z
 
     move-result v0
 

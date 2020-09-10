@@ -23,7 +23,7 @@
 
     if-ne v0, v1, :cond_0
 
-    invoke-virtual {p1}, Lorg/bouncycastle/asn1/obl;->Sg()Ljava/util/Enumeration;
+    invoke-virtual {p1}, Lorg/bouncycastle/asn1/obl;->Rg()Ljava/util/Enumeration;
 
     move-result-object p1
 
@@ -158,7 +158,7 @@
 
 
 # virtual methods
-.method public _h()Lorg/bouncycastle/asn1/x509/zta;
+.method public Zh()Lorg/bouncycastle/asn1/x509/zta;
     .locals 0
 
     iget-object p0, p0, Lorg/bouncycastle/asn1/x509/c;->Hpa:Lorg/bouncycastle/asn1/x509/zta;
@@ -217,7 +217,7 @@
     return-object p0
 .end method
 
-.method public vh()Lorg/bouncycastle/asn1/n;
+.method public uh()Lorg/bouncycastle/asn1/n;
     .locals 0
 
     iget-object p0, p0, Lorg/bouncycastle/asn1/x509/c;->Rva:Lorg/bouncycastle/asn1/n;
@@ -225,7 +225,7 @@
     return-object p0
 .end method
 
-.method public xh()Lorg/bouncycastle/asn1/vdb;
+.method public wh()Lorg/bouncycastle/asn1/vdb;
     .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {

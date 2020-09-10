@@ -333,7 +333,7 @@
     return p1
 .end method
 
-.method public mj()Lorg/bouncycastle/crypto/qbh;
+.method public lj()Lorg/bouncycastle/crypto/qbh;
     .locals 0
 
     iget-object p0, p0, Lorg/bouncycastle/crypto/kth/you;->digest:Lorg/bouncycastle/crypto/qbh;

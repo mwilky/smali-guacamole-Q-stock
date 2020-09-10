@@ -283,15 +283,15 @@
 
     move-result-object v1
 
-    invoke-virtual {v0}, Lorg/bouncycastle/crypto/wtn/cgv;->sj()Ljava/math/BigInteger;
+    invoke-virtual {v0}, Lorg/bouncycastle/crypto/wtn/cgv;->rj()Ljava/math/BigInteger;
 
     move-result-object v2
 
-    invoke-virtual {v0}, Lorg/bouncycastle/crypto/wtn/cgv;->tj()Ljava/math/BigInteger;
+    invoke-virtual {v0}, Lorg/bouncycastle/crypto/wtn/cgv;->sj()Ljava/math/BigInteger;
 
     move-result-object v3
 
-    invoke-virtual {v0}, Lorg/bouncycastle/crypto/wtn/cgv;->uj()Ljava/math/BigInteger;
+    invoke-virtual {v0}, Lorg/bouncycastle/crypto/wtn/cgv;->tj()Ljava/math/BigInteger;
 
     move-result-object v0
 

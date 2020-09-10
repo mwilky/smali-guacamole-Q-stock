@@ -392,7 +392,7 @@
     return-object p0
 .end method
 
-.method public static gj()Ljava/security/SecureRandom;
+.method public static fj()Ljava/security/SecureRandom;
     .locals 1
 
     sget-object v0, Lorg/bouncycastle/crypto/igw;->Cza:Ljava/security/SecureRandom;
@@ -692,7 +692,7 @@
 
     new-instance v8, Lorg/bouncycastle/crypto/wtn/igw;
 
-    invoke-virtual {p0}, Lorg/bouncycastle/crypto/wtn/ywr;->vj()Lorg/bouncycastle/crypto/wtn/bvj;
+    invoke-virtual {p0}, Lorg/bouncycastle/crypto/wtn/ywr;->uj()Lorg/bouncycastle/crypto/wtn/bvj;
 
     move-result-object v1
 
@@ -700,11 +700,11 @@
 
     move-result-object v1
 
-    invoke-virtual {p0}, Lorg/bouncycastle/crypto/wtn/ywr;->vj()Lorg/bouncycastle/crypto/wtn/bvj;
+    invoke-virtual {p0}, Lorg/bouncycastle/crypto/wtn/ywr;->uj()Lorg/bouncycastle/crypto/wtn/bvj;
 
     move-result-object p0
 
-    invoke-virtual {p0}, Lorg/bouncycastle/crypto/wtn/bvj;->wj()I
+    invoke-virtual {p0}, Lorg/bouncycastle/crypto/wtn/bvj;->vj()I
 
     move-result p0
 

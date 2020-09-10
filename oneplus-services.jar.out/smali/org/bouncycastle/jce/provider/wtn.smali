@@ -45,7 +45,7 @@
 
     check-cast p1, Lorg/bouncycastle/x509/sis;
 
-    invoke-virtual {p1}, Lorg/bouncycastle/x509/tsu;->cg()Ljava/util/List;
+    invoke-virtual {p1}, Lorg/bouncycastle/x509/tsu;->bg()Ljava/util/List;
 
     move-result-object v1
 
@@ -79,7 +79,7 @@
 
     invoke-direct {v1, v0}, Lorg/bouncycastle/jcajce/bio$zta;-><init>(Lorg/bouncycastle/jcajce/wtn;)V
 
-    invoke-virtual {p1}, Lorg/bouncycastle/x509/sis;->mg()Ljava/util/Set;
+    invoke-virtual {p1}, Lorg/bouncycastle/x509/sis;->lg()Ljava/util/Set;
 
     move-result-object v0
 
@@ -119,20 +119,20 @@
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    invoke-virtual {p1}, Lorg/bouncycastle/jcajce/bio;->Bj()Lorg/bouncycastle/jcajce/wtn;
+    invoke-virtual {p1}, Lorg/bouncycastle/jcajce/bio;->Aj()Lorg/bouncycastle/jcajce/wtn;
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lorg/bouncycastle/jcajce/wtn;->hg()Lorg/bouncycastle/jcajce/cno;
+    invoke-virtual {v1}, Lorg/bouncycastle/jcajce/wtn;->gg()Lorg/bouncycastle/jcajce/cno;
 
     move-result-object v1
 
     :try_start_0
-    invoke-virtual {p1}, Lorg/bouncycastle/jcajce/bio;->Bj()Lorg/bouncycastle/jcajce/wtn;
+    invoke-virtual {p1}, Lorg/bouncycastle/jcajce/bio;->Aj()Lorg/bouncycastle/jcajce/wtn;
 
     move-result-object v2
 
-    invoke-virtual {v2}, Lorg/bouncycastle/jcajce/wtn;->Dj()Ljava/util/List;
+    invoke-virtual {v2}, Lorg/bouncycastle/jcajce/wtn;->Cj()Ljava/util/List;
 
     move-result-object v2
 
@@ -140,7 +140,7 @@
 
     move-result-object v2
 
-    invoke-virtual {p1}, Lorg/bouncycastle/jcajce/bio;->Bj()Lorg/bouncycastle/jcajce/wtn;
+    invoke-virtual {p1}, Lorg/bouncycastle/jcajce/bio;->Aj()Lorg/bouncycastle/jcajce/wtn;
 
     move-result-object v3
 
@@ -325,7 +325,7 @@
     return-object v1
 
     :cond_0
-    invoke-virtual {p2}, Lorg/bouncycastle/jcajce/bio;->mg()Ljava/util/Set;
+    invoke-virtual {p2}, Lorg/bouncycastle/jcajce/bio;->lg()Ljava/util/Set;
 
     move-result-object v0
 
@@ -375,7 +375,7 @@
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_5
 
     :try_start_1
-    invoke-virtual {p2}, Lorg/bouncycastle/jcajce/bio;->Bj()Lorg/bouncycastle/jcajce/wtn;
+    invoke-virtual {p2}, Lorg/bouncycastle/jcajce/bio;->Aj()Lorg/bouncycastle/jcajce/wtn;
 
     move-result-object v3
 
@@ -383,7 +383,7 @@
 
     move-result-object v3
 
-    invoke-virtual {p2}, Lorg/bouncycastle/jcajce/bio;->Bj()Lorg/bouncycastle/jcajce/wtn;
+    invoke-virtual {p2}, Lorg/bouncycastle/jcajce/bio;->Aj()Lorg/bouncycastle/jcajce/wtn;
 
     move-result-object v4
 
@@ -461,11 +461,11 @@
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    invoke-virtual {p2}, Lorg/bouncycastle/jcajce/bio;->Bj()Lorg/bouncycastle/jcajce/wtn;
+    invoke-virtual {p2}, Lorg/bouncycastle/jcajce/bio;->Aj()Lorg/bouncycastle/jcajce/wtn;
 
     move-result-object v2
 
-    invoke-virtual {v2}, Lorg/bouncycastle/jcajce/wtn;->Dj()Ljava/util/List;
+    invoke-virtual {v2}, Lorg/bouncycastle/jcajce/wtn;->Cj()Ljava/util/List;
 
     move-result-object v2
 
@@ -484,11 +484,11 @@
 
     move-result-object v2
 
-    invoke-virtual {p2}, Lorg/bouncycastle/jcajce/bio;->Bj()Lorg/bouncycastle/jcajce/wtn;
+    invoke-virtual {p2}, Lorg/bouncycastle/jcajce/bio;->Aj()Lorg/bouncycastle/jcajce/wtn;
 
     move-result-object v3
 
-    invoke-virtual {v3}, Lorg/bouncycastle/jcajce/wtn;->Fj()Ljava/util/Map;
+    invoke-virtual {v3}, Lorg/bouncycastle/jcajce/wtn;->Ej()Ljava/util/Map;
 
     move-result-object v3
 
@@ -509,7 +509,7 @@
     .catch Lorg/bouncycastle/jce/provider/AnnotatedException; {:try_start_6 .. :try_end_6} :catch_4
 
     :try_start_7
-    invoke-virtual {p2}, Lorg/bouncycastle/jcajce/bio;->Bj()Lorg/bouncycastle/jcajce/wtn;
+    invoke-virtual {p2}, Lorg/bouncycastle/jcajce/bio;->Aj()Lorg/bouncycastle/jcajce/wtn;
 
     move-result-object v3
 

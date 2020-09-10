@@ -247,7 +247,7 @@
 
     move-result-object p1
 
-    invoke-virtual {p1}, Lorg/bouncycastle/asn1/obl;->Sg()Ljava/util/Enumeration;
+    invoke-virtual {p1}, Lorg/bouncycastle/asn1/obl;->Rg()Ljava/util/Enumeration;
 
     move-result-object p1
 
@@ -371,7 +371,7 @@
 
     iget-object p1, p0, Lorg/bouncycastle/jcajce/you/tsu/gck$zta;->params:Lorg/bouncycastle/asn1/dma/oif;
 
-    invoke-virtual {p1}, Lorg/bouncycastle/asn1/dma/oif;->rh()Lorg/bouncycastle/asn1/dma/dma;
+    invoke-virtual {p1}, Lorg/bouncycastle/asn1/dma/oif;->qh()Lorg/bouncycastle/asn1/dma/dma;
 
     move-result-object p1
 
@@ -383,7 +383,7 @@
 
     iget-object p0, p0, Lorg/bouncycastle/jcajce/you/tsu/gck$zta;->params:Lorg/bouncycastle/asn1/dma/oif;
 
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/dma/oif;->qh()Lorg/bouncycastle/asn1/dma/wtn;
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/dma/oif;->ph()Lorg/bouncycastle/asn1/dma/wtn;
 
     move-result-object p0
 

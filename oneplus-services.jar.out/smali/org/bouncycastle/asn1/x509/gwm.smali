@@ -471,7 +471,7 @@
 .method public constructor <init>(Lorg/bouncycastle/asn1/bvj;Lorg/bouncycastle/asn1/tsu;Lorg/bouncycastle/asn1/ibl;)V
     .locals 0
 
-    invoke-virtual {p2}, Lorg/bouncycastle/asn1/tsu;->Ig()Z
+    invoke-virtual {p2}, Lorg/bouncycastle/asn1/tsu;->Hg()Z
 
     move-result p2
 
@@ -575,7 +575,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lorg/bouncycastle/asn1/tsu;->Ig()Z
+    invoke-virtual {v0}, Lorg/bouncycastle/asn1/tsu;->Hg()Z
 
     move-result v0
 
@@ -655,7 +655,7 @@
     .end annotation
 
     :try_start_0
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/x509/gwm;->fi()Lorg/bouncycastle/asn1/ibl;
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/x509/gwm;->ei()Lorg/bouncycastle/asn1/ibl;
 
     move-result-object p0
 
@@ -697,10 +697,18 @@
 
 
 # virtual methods
-.method public ei()Lorg/bouncycastle/asn1/bvj;
+.method public di()Lorg/bouncycastle/asn1/bvj;
     .locals 0
 
     iget-object p0, p0, Lorg/bouncycastle/asn1/x509/gwm;->bua:Lorg/bouncycastle/asn1/bvj;
+
+    return-object p0
+.end method
+
+.method public ei()Lorg/bouncycastle/asn1/ibl;
+    .locals 0
+
+    iget-object p0, p0, Lorg/bouncycastle/asn1/x509/gwm;->value:Lorg/bouncycastle/asn1/ibl;
 
     return-object p0
 .end method
@@ -719,11 +727,11 @@
     :cond_0
     check-cast p1, Lorg/bouncycastle/asn1/x509/gwm;
 
-    invoke-virtual {p1}, Lorg/bouncycastle/asn1/x509/gwm;->ei()Lorg/bouncycastle/asn1/bvj;
+    invoke-virtual {p1}, Lorg/bouncycastle/asn1/x509/gwm;->di()Lorg/bouncycastle/asn1/bvj;
 
     move-result-object v0
 
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/x509/gwm;->ei()Lorg/bouncycastle/asn1/bvj;
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/x509/gwm;->di()Lorg/bouncycastle/asn1/bvj;
 
     move-result-object v2
 
@@ -733,11 +741,11 @@
 
     if-eqz v0, :cond_1
 
-    invoke-virtual {p1}, Lorg/bouncycastle/asn1/x509/gwm;->fi()Lorg/bouncycastle/asn1/ibl;
+    invoke-virtual {p1}, Lorg/bouncycastle/asn1/x509/gwm;->ei()Lorg/bouncycastle/asn1/ibl;
 
     move-result-object v0
 
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/x509/gwm;->fi()Lorg/bouncycastle/asn1/ibl;
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/x509/gwm;->ei()Lorg/bouncycastle/asn1/ibl;
 
     move-result-object v2
 
@@ -763,15 +771,7 @@
     return v1
 .end method
 
-.method public fi()Lorg/bouncycastle/asn1/ibl;
-    .locals 0
-
-    iget-object p0, p0, Lorg/bouncycastle/asn1/x509/gwm;->value:Lorg/bouncycastle/asn1/ibl;
-
-    return-object p0
-.end method
-
-.method public gi()Lorg/bouncycastle/asn1/ssp;
+.method public fi()Lorg/bouncycastle/asn1/ssp;
     .locals 0
 
     invoke-static {p0}, Lorg/bouncycastle/asn1/x509/gwm;->you(Lorg/bouncycastle/asn1/x509/gwm;)Lorg/bouncycastle/asn1/vdb;
@@ -790,7 +790,7 @@
 
     if-eqz v0, :cond_0
 
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/x509/gwm;->fi()Lorg/bouncycastle/asn1/ibl;
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/x509/gwm;->ei()Lorg/bouncycastle/asn1/ibl;
 
     move-result-object v0
 
@@ -798,7 +798,7 @@
 
     move-result v0
 
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/x509/gwm;->ei()Lorg/bouncycastle/asn1/bvj;
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/x509/gwm;->di()Lorg/bouncycastle/asn1/bvj;
 
     move-result-object p0
 
@@ -811,7 +811,7 @@
     return p0
 
     :cond_0
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/x509/gwm;->fi()Lorg/bouncycastle/asn1/ibl;
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/x509/gwm;->ei()Lorg/bouncycastle/asn1/ibl;
 
     move-result-object v0
 
@@ -819,7 +819,7 @@
 
     move-result v0
 
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/x509/gwm;->ei()Lorg/bouncycastle/asn1/bvj;
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/x509/gwm;->di()Lorg/bouncycastle/asn1/bvj;
 
     move-result-object p0
 

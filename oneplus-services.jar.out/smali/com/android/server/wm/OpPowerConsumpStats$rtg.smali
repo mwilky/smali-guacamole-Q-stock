@@ -69,7 +69,7 @@
     return-void
 .end method
 
-.method private Bp()Lcom/android/server/wm/OpPowerConsumpStats$tsu;
+.method private Ap()Lcom/android/server/wm/OpPowerConsumpStats$tsu;
     .locals 6
 
     iget-object v0, p0, Lcom/android/server/wm/OpPowerConsumpStats$rtg;->lock:Ljava/lang/Object;
@@ -258,7 +258,7 @@
     throw p0
 .end method
 
-.method private Cp()V
+.method private Bp()V
     .locals 2
 
     iget-object v0, p0, Lcom/android/server/wm/OpPowerConsumpStats$rtg;->lock:Ljava/lang/Object;
@@ -289,7 +289,7 @@
     throw p0
 .end method
 
-.method private Dp()V
+.method private Cp()V
     .locals 2
 
     iget-object v0, p0, Lcom/android/server/wm/OpPowerConsumpStats$rtg;->lock:Ljava/lang/Object;
@@ -320,7 +320,7 @@
     throw p0
 .end method
 
-.method private Ep()Z
+.method private Dp()Z
     .locals 6
 
     iget-object v0, p0, Lcom/android/server/wm/OpPowerConsumpStats$rtg;->lock:Ljava/lang/Object;
@@ -469,7 +469,7 @@
     throw p0
 .end method
 
-.method private Fp()Z
+.method private Ep()Z
     .locals 7
 
     iget-object v0, p0, Lcom/android/server/wm/OpPowerConsumpStats$rtg;->lock:Ljava/lang/Object;
@@ -551,7 +551,7 @@
     throw p0
 .end method
 
-.method private Gp()Z
+.method private Fp()Z
     .locals 2
 
     iget-object v0, p0, Lcom/android/server/wm/OpPowerConsumpStats$rtg;->lock:Ljava/lang/Object;
@@ -804,7 +804,7 @@
 .method static synthetic cno(Lcom/android/server/wm/OpPowerConsumpStats$rtg;)Lcom/android/server/wm/OpPowerConsumpStats$tsu;
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/wm/OpPowerConsumpStats$rtg;->Bp()Lcom/android/server/wm/OpPowerConsumpStats$tsu;
+    invoke-direct {p0}, Lcom/android/server/wm/OpPowerConsumpStats$rtg;->Ap()Lcom/android/server/wm/OpPowerConsumpStats$tsu;
 
     move-result-object p0
 
@@ -814,7 +814,7 @@
 .method static synthetic rtg(Lcom/android/server/wm/OpPowerConsumpStats$rtg;)Z
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/wm/OpPowerConsumpStats$rtg;->Fp()Z
+    invoke-direct {p0}, Lcom/android/server/wm/OpPowerConsumpStats$rtg;->Ep()Z
 
     move-result p0
 
@@ -824,7 +824,7 @@
 .method static synthetic sis(Lcom/android/server/wm/OpPowerConsumpStats$rtg;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/wm/OpPowerConsumpStats$rtg;->Cp()V
+    invoke-direct {p0}, Lcom/android/server/wm/OpPowerConsumpStats$rtg;->Bp()V
 
     return-void
 .end method
@@ -840,7 +840,7 @@
 .method static synthetic tsu(Lcom/android/server/wm/OpPowerConsumpStats$rtg;)Z
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/wm/OpPowerConsumpStats$rtg;->Gp()Z
+    invoke-direct {p0}, Lcom/android/server/wm/OpPowerConsumpStats$rtg;->Fp()Z
 
     move-result p0
 
@@ -850,7 +850,7 @@
 .method static synthetic you(Lcom/android/server/wm/OpPowerConsumpStats$rtg;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/wm/OpPowerConsumpStats$rtg;->Dp()V
+    invoke-direct {p0}, Lcom/android/server/wm/OpPowerConsumpStats$rtg;->Cp()V
 
     return-void
 .end method
@@ -858,7 +858,7 @@
 .method static synthetic zta(Lcom/android/server/wm/OpPowerConsumpStats$rtg;)Z
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/wm/OpPowerConsumpStats$rtg;->Ep()Z
+    invoke-direct {p0}, Lcom/android/server/wm/OpPowerConsumpStats$rtg;->Dp()Z
 
     move-result p0
 

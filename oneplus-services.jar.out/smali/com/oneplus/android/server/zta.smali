@@ -120,16 +120,16 @@
 
     iput-object v0, p0, Lcom/oneplus/android/server/zta;->zX:Ljava/util/List;
 
+    invoke-direct {p0}, Lcom/oneplus/android/server/zta;->Qq()V
+
     invoke-direct {p0}, Lcom/oneplus/android/server/zta;->Rq()V
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/zta;->Sq()V
-
-    invoke-direct {p0}, Lcom/oneplus/android/server/zta;->Qq()V
+    invoke-direct {p0}, Lcom/oneplus/android/server/zta;->Pq()V
 
     return-void
 .end method
 
-.method private declared-synchronized Qq()V
+.method private declared-synchronized Pq()V
     .locals 6
 
     monitor-enter p0
@@ -431,7 +431,7 @@
     throw v0
 .end method
 
-.method private Rq()V
+.method private Qq()V
     .locals 6
 
     sget-boolean v0, Lcom/oneplus/android/server/zta;->DBG:Z
@@ -663,7 +663,7 @@
     throw p0
 .end method
 
-.method private declared-synchronized Sq()V
+.method private declared-synchronized Rq()V
     .locals 6
 
     monitor-enter p0

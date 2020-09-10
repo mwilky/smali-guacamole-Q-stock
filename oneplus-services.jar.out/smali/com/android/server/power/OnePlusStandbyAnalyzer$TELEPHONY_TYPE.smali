@@ -218,7 +218,7 @@
 .method static zta(Lcom/android/server/power/OnePlusStandbyAnalyzer$TELEPHONY_TYPE;Z)Ljava/lang/String;
     .locals 1
 
-    sget-object v0, Lcom/android/server/power/kth;->BH:[I
+    sget-object v0, Lcom/android/server/power/kth;->zH:[I
 
     invoke-virtual {p0}, Ljava/lang/Enum;->ordinal()I
 

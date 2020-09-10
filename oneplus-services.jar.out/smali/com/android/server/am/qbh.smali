@@ -62,7 +62,7 @@
 
     move-result-object p1
 
-    invoke-virtual {p1}, Lcom/android/server/am/B;->vc()V
+    invoke-virtual {p1}, Lcom/android/server/am/B;->uc()V
 
     iget-object p1, p0, Lcom/android/server/am/qbh;->this$0:Lcom/android/server/am/oif;
 
@@ -70,7 +70,7 @@
 
     move-result-object p1
 
-    invoke-virtual {p1}, Lcom/android/server/am/B;->wc()V
+    invoke-virtual {p1}, Lcom/android/server/am/B;->vc()V
 
     invoke-static {}, Lcom/android/server/am/oif;->access$500()Landroid/content/Context;
 

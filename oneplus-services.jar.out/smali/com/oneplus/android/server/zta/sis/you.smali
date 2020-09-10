@@ -51,6 +51,8 @@
 
 .field private static final MSG_GET_ONLINECONFIG:I = 0x2
 
+.field private static final MSG_INIT_ONLINECONFIG:I = 0x1
+
 .field private static Mba:I = 0x1e
 
 .field private static Nba:I = 0x1e
@@ -95,8 +97,6 @@
 .field private static final aca:I = 0x5
 
 .field private static final bca:I = 0x6
-
-.field private static final qw:I = 0x1
 
 .field private static final sba:Ljava/lang/String; = "PDJE7FI1KD"
 
@@ -696,21 +696,13 @@
     return-void
 .end method
 
-.method private _r()V
+.method private Zr()V
     .locals 0
 
     return-void
 .end method
 
-.method static synthetic access$200()Ljava/util/HashMap;
-    .locals 1
-
-    sget-object v0, Lcom/oneplus/android/server/zta/sis/you;->Wba:Ljava/util/HashMap;
-
-    return-object v0
-.end method
-
-.method private static am()Ljava/lang/String;
+.method private static _l()Ljava/lang/String;
     .locals 3
 
     new-instance v0, Ljava/util/Date;
@@ -730,7 +722,7 @@
     return-object v0
 .end method
 
-.method private as()Z
+.method private _r()Z
     .locals 0
 
     sget-boolean p0, Lcom/oneplus/android/server/zta/sis/you;->Bba:Z
@@ -738,7 +730,15 @@
     return p0
 .end method
 
-.method private cs()Z
+.method static synthetic access$200()Ljava/util/HashMap;
+    .locals 1
+
+    sget-object v0, Lcom/oneplus/android/server/zta/sis/you;->Wba:Ljava/util/HashMap;
+
+    return-object v0
+.end method
+
+.method private as()Z
     .locals 0
 
     sget-boolean p0, Lcom/oneplus/android/server/zta/sis/you;->Dba:Z
@@ -746,35 +746,7 @@
     return p0
 .end method
 
-.method private static deleteFile(Ljava/lang/String;)V
-    .locals 1
-
-    new-instance v0, Ljava/io/File;
-
-    invoke-direct {v0, p0}, Ljava/io/File;-><init>(Ljava/lang/String;)V
-
-    invoke-virtual {v0}, Ljava/io/File;->exists()Z
-
-    move-result p0
-
-    if-nez p0, :cond_0
-
-    return-void
-
-    :cond_0
-    invoke-virtual {v0}, Ljava/io/File;->isFile()Z
-
-    move-result p0
-
-    if-eqz p0, :cond_1
-
-    invoke-virtual {v0}, Ljava/io/File;->delete()Z
-
-    :cond_1
-    return-void
-.end method
-
-.method private dm()Z
+.method private bm()Z
     .locals 0
 
     sget-boolean p0, Lcom/oneplus/android/server/zta/sis/you;->Eba:Z
@@ -782,7 +754,7 @@
     return p0
 .end method
 
-.method private ds()V
+.method private cs()V
     .locals 5
 
     sget-boolean p0, Lcom/oneplus/android/server/zta/sis/you;->Aba:Z
@@ -920,7 +892,35 @@
     return-void
 .end method
 
-.method private es()V
+.method private static deleteFile(Ljava/lang/String;)V
+    .locals 1
+
+    new-instance v0, Ljava/io/File;
+
+    invoke-direct {v0, p0}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v0}, Ljava/io/File;->exists()Z
+
+    move-result p0
+
+    if-nez p0, :cond_0
+
+    return-void
+
+    :cond_0
+    invoke-virtual {v0}, Ljava/io/File;->isFile()Z
+
+    move-result p0
+
+    if-eqz p0, :cond_1
+
+    invoke-virtual {v0}, Ljava/io/File;->delete()Z
+
+    :cond_1
+    return-void
+.end method
+
+.method private ds()V
     .locals 3
 
     sget-boolean v0, Lcom/oneplus/android/server/zta/sis/you;->Aba:Z
@@ -934,7 +934,7 @@
     invoke-static {v1, v0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_0
-    invoke-direct {p0}, Lcom/oneplus/android/server/zta/sis/you;->_r()V
+    invoke-direct {p0}, Lcom/oneplus/android/server/zta/sis/you;->Zr()V
 
     :try_start_0
     iget-object v0, p0, Lcom/oneplus/android/server/zta/sis/you;->mba:Lcom/oneplus/os/IOnePlusExService;
@@ -981,7 +981,7 @@
     return-void
 .end method
 
-.method private fs()V
+.method private es()V
     .locals 2
 
     sget-boolean v0, Lcom/oneplus/android/server/zta/sis/you;->Aba:Z
@@ -1029,235 +1029,7 @@
     return-void
 .end method
 
-.method private static fto(Ljava/lang/String;Ljava/lang/String;)Z
-    .locals 6
-
-    const/4 v0, 0x0
-
-    if-eqz p0, :cond_4
-
-    if-nez p1, :cond_0
-
-    goto/16 :goto_5
-
-    :cond_0
-    new-instance v1, Ljava/io/File;
-
-    invoke-direct {v1, p1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
-
-    invoke-virtual {v1}, Ljava/io/File;->getParentFile()Ljava/io/File;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Ljava/io/File;->exists()Z
-
-    move-result v3
-
-    if-nez v3, :cond_1
-
-    invoke-virtual {v2}, Ljava/io/File;->mkdirs()Z
-
-    :cond_1
-    :try_start_0
-    invoke-virtual {v1}, Ljava/io/File;->length()J
-
-    move-result-wide v2
-
-    const-wide/32 v4, 0x200000
-
-    cmp-long v2, v2, v4
-
-    const/4 v3, 0x1
-
-    if-gez v2, :cond_2
-
-    new-instance p1, Ljava/io/FileOutputStream;
-
-    invoke-direct {p1, v1, v3}, Ljava/io/FileOutputStream;-><init>(Ljava/io/File;Z)V
-
-    goto :goto_0
-
-    :cond_2
-    new-instance v2, Ljava/io/File;
-
-    new-instance v4, Ljava/lang/StringBuilder;
-
-    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
-
-    invoke-virtual {v4, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string p1, "."
-
-    invoke-virtual {v4, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-static {}, Lcom/oneplus/android/server/zta/sis/you;->am()Ljava/lang/String;
-
-    move-result-object p1
-
-    invoke-virtual {v4, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p1
-
-    invoke-direct {v2, p1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
-
-    invoke-virtual {v1}, Ljava/io/File;->exists()Z
-
-    move-result p1
-
-    if-eqz p1, :cond_3
-
-    invoke-virtual {v2}, Ljava/io/File;->delete()Z
-
-    invoke-virtual {v1, v2}, Ljava/io/File;->renameTo(Ljava/io/File;)Z
-
-    :cond_3
-    new-instance p1, Ljava/io/FileOutputStream;
-
-    invoke-direct {p1, v1}, Ljava/io/FileOutputStream;-><init>(Ljava/io/File;)V
-    :try_end_0
-    .catch Ljava/io/FileNotFoundException; {:try_start_0 .. :try_end_0} :catch_4
-
-    :goto_0
-    :try_start_1
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
-
-    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string p0, "\r\n"
-
-    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p0
-
-    invoke-virtual {p0}, Ljava/lang/String;->getBytes()[B
-
-    move-result-object p0
-
-    invoke-virtual {p1, p0}, Ljava/io/FileOutputStream;->write([B)V
-    :try_end_1
-    .catch Ljava/io/IOException; {:try_start_1 .. :try_end_1} :catch_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
-    :try_start_2
-    invoke-virtual {p1}, Ljava/io/FileOutputStream;->close()V
-    :try_end_2
-    .catch Ljava/io/IOException; {:try_start_2 .. :try_end_2} :catch_0
-
-    goto :goto_1
-
-    :catch_0
-    move-exception p0
-
-    invoke-virtual {p0}, Ljava/io/IOException;->printStackTrace()V
-
-    :goto_1
-    return v3
-
-    :catchall_0
-    move-exception p0
-
-    goto :goto_3
-
-    :catch_1
-    move-exception p0
-
-    :try_start_3
-    invoke-virtual {p0}, Ljava/io/IOException;->printStackTrace()V
-    :try_end_3
-    .catchall {:try_start_3 .. :try_end_3} :catchall_0
-
-    :try_start_4
-    invoke-virtual {p1}, Ljava/io/FileOutputStream;->close()V
-    :try_end_4
-    .catch Ljava/io/IOException; {:try_start_4 .. :try_end_4} :catch_2
-
-    goto :goto_2
-
-    :catch_2
-    move-exception p0
-
-    invoke-virtual {p0}, Ljava/io/IOException;->printStackTrace()V
-
-    :goto_2
-    return v0
-
-    :goto_3
-    :try_start_5
-    invoke-virtual {p1}, Ljava/io/FileOutputStream;->close()V
-    :try_end_5
-    .catch Ljava/io/IOException; {:try_start_5 .. :try_end_5} :catch_3
-
-    goto :goto_4
-
-    :catch_3
-    move-exception p1
-
-    invoke-virtual {p1}, Ljava/io/IOException;->printStackTrace()V
-
-    :goto_4
-    throw p0
-
-    :catch_4
-    move-exception p0
-
-    invoke-virtual {p0}, Ljava/io/FileNotFoundException;->printStackTrace()V
-
-    :cond_4
-    :goto_5
-    return v0
-.end method
-
-.method private getUidForPackage(Ljava/lang/String;)I
-    .locals 3
-
-    invoke-static {}, Landroid/os/Binder;->clearCallingIdentity()J
-
-    move-result-wide v0
-
-    :try_start_0
-    iget-object p0, p0, Lcom/oneplus/android/server/zta/sis/you;->mContext:Landroid/content/Context;
-
-    invoke-virtual {p0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
-
-    move-result-object p0
-
-    const/high16 v2, 0x400000
-
-    invoke-virtual {p0, p1, v2}, Landroid/content/pm/PackageManager;->getApplicationInfo(Ljava/lang/String;I)Landroid/content/pm/ApplicationInfo;
-
-    move-result-object p0
-
-    iget p0, p0, Landroid/content/pm/ApplicationInfo;->uid:I
-    :try_end_0
-    .catch Landroid/content/pm/PackageManager$NameNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    invoke-static {v0, v1}, Landroid/os/Binder;->restoreCallingIdentity(J)V
-
-    return p0
-
-    :catchall_0
-    move-exception p0
-
-    invoke-static {v0, v1}, Landroid/os/Binder;->restoreCallingIdentity(J)V
-
-    throw p0
-
-    :catch_0
-    const/4 p0, -0x1
-
-    invoke-static {v0, v1}, Landroid/os/Binder;->restoreCallingIdentity(J)V
-
-    return p0
-.end method
-
-.method private gm()V
+.method private fm()V
     .locals 7
 
     sget-boolean v0, Lcom/oneplus/android/server/zta/sis/you;->Aba:Z
@@ -1551,7 +1323,7 @@
     return-void
 .end method
 
-.method private gs()V
+.method private fs()V
     .locals 2
 
     sget-boolean v0, Lcom/oneplus/android/server/zta/sis/you;->Aba:Z
@@ -1565,36 +1337,242 @@
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_0
-    invoke-direct {p0}, Lcom/oneplus/android/server/zta/sis/you;->hs()V
+    invoke-direct {p0}, Lcom/oneplus/android/server/zta/sis/you;->gs()V
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/zta/sis/you;->es()V
+    invoke-direct {p0}, Lcom/oneplus/android/server/zta/sis/you;->ds()V
 
     return-void
 .end method
 
-.method private static hmo(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-    .locals 1
+.method private static fto(Ljava/lang/String;Ljava/lang/String;)Z
+    .locals 6
 
-    new-instance v0, Ljava/lang/StringBuilder;
+    const/4 v0, 0x0
 
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+    if-eqz p0, :cond_4
 
-    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    if-nez p1, :cond_0
 
-    const-string p0, "-times:"
+    goto/16 :goto_5
 
-    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    :cond_0
+    new-instance v1, Ljava/io/File;
 
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-direct {v1, p1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v1}, Ljava/io/File;->getParentFile()Ljava/io/File;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Ljava/io/File;->exists()Z
+
+    move-result v3
+
+    if-nez v3, :cond_1
+
+    invoke-virtual {v2}, Ljava/io/File;->mkdirs()Z
+
+    :cond_1
+    :try_start_0
+    invoke-virtual {v1}, Ljava/io/File;->length()J
+
+    move-result-wide v2
+
+    const-wide/32 v4, 0x200000
+
+    cmp-long v2, v2, v4
+
+    const/4 v3, 0x1
+
+    if-gez v2, :cond_2
+
+    new-instance p1, Ljava/io/FileOutputStream;
+
+    invoke-direct {p1, v1, v3}, Ljava/io/FileOutputStream;-><init>(Ljava/io/File;Z)V
+
+    goto :goto_0
+
+    :cond_2
+    new-instance v2, Ljava/io/File;
+
+    new-instance v4, Ljava/lang/StringBuilder;
+
+    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
+
+    invoke-virtual {v4, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string p1, "."
+
+    invoke-virtual {v4, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-static {}, Lcom/oneplus/android/server/zta/sis/you;->_l()Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-virtual {v4, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-direct {v2, p1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v1}, Ljava/io/File;->exists()Z
+
+    move-result p1
+
+    if-eqz p1, :cond_3
+
+    invoke-virtual {v2}, Ljava/io/File;->delete()Z
+
+    invoke-virtual {v1, v2}, Ljava/io/File;->renameTo(Ljava/io/File;)Z
+
+    :cond_3
+    new-instance p1, Ljava/io/FileOutputStream;
+
+    invoke-direct {p1, v1}, Ljava/io/FileOutputStream;-><init>(Ljava/io/File;)V
+    :try_end_0
+    .catch Ljava/io/FileNotFoundException; {:try_start_0 .. :try_end_0} :catch_4
+
+    :goto_0
+    :try_start_1
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string p0, "\r\n"
+
+    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p0
 
-    return-object p0
+    invoke-virtual {p0}, Ljava/lang/String;->getBytes()[B
+
+    move-result-object p0
+
+    invoke-virtual {p1, p0}, Ljava/io/FileOutputStream;->write([B)V
+    :try_end_1
+    .catch Ljava/io/IOException; {:try_start_1 .. :try_end_1} :catch_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    :try_start_2
+    invoke-virtual {p1}, Ljava/io/FileOutputStream;->close()V
+    :try_end_2
+    .catch Ljava/io/IOException; {:try_start_2 .. :try_end_2} :catch_0
+
+    goto :goto_1
+
+    :catch_0
+    move-exception p0
+
+    invoke-virtual {p0}, Ljava/io/IOException;->printStackTrace()V
+
+    :goto_1
+    return v3
+
+    :catchall_0
+    move-exception p0
+
+    goto :goto_3
+
+    :catch_1
+    move-exception p0
+
+    :try_start_3
+    invoke-virtual {p0}, Ljava/io/IOException;->printStackTrace()V
+    :try_end_3
+    .catchall {:try_start_3 .. :try_end_3} :catchall_0
+
+    :try_start_4
+    invoke-virtual {p1}, Ljava/io/FileOutputStream;->close()V
+    :try_end_4
+    .catch Ljava/io/IOException; {:try_start_4 .. :try_end_4} :catch_2
+
+    goto :goto_2
+
+    :catch_2
+    move-exception p0
+
+    invoke-virtual {p0}, Ljava/io/IOException;->printStackTrace()V
+
+    :goto_2
+    return v0
+
+    :goto_3
+    :try_start_5
+    invoke-virtual {p1}, Ljava/io/FileOutputStream;->close()V
+    :try_end_5
+    .catch Ljava/io/IOException; {:try_start_5 .. :try_end_5} :catch_3
+
+    goto :goto_4
+
+    :catch_3
+    move-exception p1
+
+    invoke-virtual {p1}, Ljava/io/IOException;->printStackTrace()V
+
+    :goto_4
+    throw p0
+
+    :catch_4
+    move-exception p0
+
+    invoke-virtual {p0}, Ljava/io/FileNotFoundException;->printStackTrace()V
+
+    :cond_4
+    :goto_5
+    return v0
 .end method
 
-.method private hs()V
+.method private getUidForPackage(Ljava/lang/String;)I
+    .locals 3
+
+    invoke-static {}, Landroid/os/Binder;->clearCallingIdentity()J
+
+    move-result-wide v0
+
+    :try_start_0
+    iget-object p0, p0, Lcom/oneplus/android/server/zta/sis/you;->mContext:Landroid/content/Context;
+
+    invoke-virtual {p0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
+
+    move-result-object p0
+
+    const/high16 v2, 0x400000
+
+    invoke-virtual {p0, p1, v2}, Landroid/content/pm/PackageManager;->getApplicationInfo(Ljava/lang/String;I)Landroid/content/pm/ApplicationInfo;
+
+    move-result-object p0
+
+    iget p0, p0, Landroid/content/pm/ApplicationInfo;->uid:I
+    :try_end_0
+    .catch Landroid/content/pm/PackageManager$NameNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    invoke-static {v0, v1}, Landroid/os/Binder;->restoreCallingIdentity(J)V
+
+    return p0
+
+    :catchall_0
+    move-exception p0
+
+    invoke-static {v0, v1}, Landroid/os/Binder;->restoreCallingIdentity(J)V
+
+    throw p0
+
+    :catch_0
+    const/4 p0, -0x1
+
+    invoke-static {v0, v1}, Landroid/os/Binder;->restoreCallingIdentity(J)V
+
+    return p0
+.end method
+
+.method private gs()V
     .locals 3
 
     sget-boolean v0, Lcom/oneplus/android/server/zta/sis/you;->Aba:Z
@@ -1652,6 +1630,28 @@
     invoke-virtual {p0, v0, v1, v2}, Landroid/os/Handler;->sendMessageDelayed(Landroid/os/Message;J)Z
 
     return-void
+.end method
+
+.method private static hmo(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    .locals 1
+
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string p0, "-times:"
+
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p0
+
+    return-object p0
 .end method
 
 .method private static ire(Ljava/lang/String;Ljava/lang/String;)Lcom/oneplus/android/server/zta/sis/you$zta;
@@ -2574,7 +2574,7 @@
 .method static synthetic rtg(Lcom/oneplus/android/server/zta/sis/you;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/zta/sis/you;->ds()V
+    invoke-direct {p0}, Lcom/oneplus/android/server/zta/sis/you;->cs()V
 
     return-void
 .end method
@@ -2693,7 +2693,7 @@
 .method static synthetic sis(Lcom/oneplus/android/server/zta/sis/you;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/zta/sis/you;->gs()V
+    invoke-direct {p0}, Lcom/oneplus/android/server/zta/sis/you;->fs()V
 
     return-void
 .end method
@@ -2760,7 +2760,7 @@
 
     invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-static {}, Lcom/oneplus/android/server/zta/sis/you;->am()Ljava/lang/String;
+    invoke-static {}, Lcom/oneplus/android/server/zta/sis/you;->_l()Ljava/lang/String;
 
     move-result-object p1
 
@@ -2893,7 +2893,7 @@
     iput-boolean v0, p0, Lcom/oneplus/android/server/zta/sis/you;->pba:Z
 
     :cond_8
-    invoke-direct {p0}, Lcom/oneplus/android/server/zta/sis/you;->as()Z
+    invoke-direct {p0}, Lcom/oneplus/android/server/zta/sis/you;->_r()Z
 
     move-result v0
 
@@ -3040,7 +3040,7 @@
 
     move-result-object v7
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/zta/sis/you;->dm()Z
+    invoke-direct {p0}, Lcom/oneplus/android/server/zta/sis/you;->bm()Z
 
     move-result v1
 
@@ -3082,7 +3082,7 @@
 
     const/4 v2, 0x2
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/zta/sis/you;->dm()Z
+    invoke-direct {p0}, Lcom/oneplus/android/server/zta/sis/you;->bm()Z
 
     move-result p1
 
@@ -3186,7 +3186,7 @@
 .method static synthetic you(Lcom/oneplus/android/server/zta/sis/you;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/zta/sis/you;->gm()V
+    invoke-direct {p0}, Lcom/oneplus/android/server/zta/sis/you;->fm()V
 
     return-void
 .end method
@@ -3202,7 +3202,7 @@
 .method private you(Ljava/lang/String;Ljava/lang/String;II)V
     .locals 4
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/zta/sis/you;->cs()Z
+    invoke-direct {p0}, Lcom/oneplus/android/server/zta/sis/you;->as()Z
 
     move-result v0
 
@@ -3240,7 +3240,7 @@
 
     if-nez v0, :cond_0
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/zta/sis/you;->fs()V
+    invoke-direct {p0}, Lcom/oneplus/android/server/zta/sis/you;->es()V
 
     iget-object v0, p0, Lcom/oneplus/android/server/zta/sis/you;->lba:Lcom/oneplus/android/server/zta/sis/you$you;
 

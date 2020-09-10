@@ -110,13 +110,13 @@
 
     check-cast v1, Lorg/bouncycastle/x509/tsu;
 
-    invoke-virtual {v1}, Lorg/bouncycastle/x509/tsu;->lg()Z
+    invoke-virtual {v1}, Lorg/bouncycastle/x509/tsu;->kg()Z
 
     move-result v3
 
     invoke-virtual {v2, v3}, Lorg/bouncycastle/jcajce/wtn$zta;->W(Z)Lorg/bouncycastle/jcajce/wtn$zta;
 
-    invoke-virtual {v1}, Lorg/bouncycastle/x509/tsu;->jg()I
+    invoke-virtual {v1}, Lorg/bouncycastle/x509/tsu;->ig()I
 
     move-result v1
 
@@ -136,7 +136,7 @@
 
     check-cast v1, Lorg/bouncycastle/jcajce/bio;
 
-    invoke-virtual {v1}, Lorg/bouncycastle/jcajce/bio;->Bj()Lorg/bouncycastle/jcajce/wtn;
+    invoke-virtual {v1}, Lorg/bouncycastle/jcajce/bio;->Aj()Lorg/bouncycastle/jcajce/wtn;
 
     move-result-object v1
 
@@ -437,13 +437,13 @@
 
     invoke-virtual {v3}, Lorg/bouncycastle/asn1/x509/zta;->getParameters()Lorg/bouncycastle/asn1/ssp;
 
-    invoke-virtual/range {v16 .. v16}, Lorg/bouncycastle/jcajce/wtn;->hg()Lorg/bouncycastle/jcajce/cno;
+    invoke-virtual/range {v16 .. v16}, Lorg/bouncycastle/jcajce/wtn;->gg()Lorg/bouncycastle/jcajce/cno;
 
     move-result-object v3
 
     if-eqz v3, :cond_b
 
-    invoke-virtual/range {v16 .. v16}, Lorg/bouncycastle/jcajce/wtn;->hg()Lorg/bouncycastle/jcajce/cno;
+    invoke-virtual/range {v16 .. v16}, Lorg/bouncycastle/jcajce/wtn;->gg()Lorg/bouncycastle/jcajce/cno;
 
     move-result-object v3
 
@@ -906,7 +906,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v1}, Lorg/bouncycastle/jce/provider/AnnotatedException;->ag()Ljava/lang/Throwable;
+    invoke-virtual {v1}, Lorg/bouncycastle/jce/provider/AnnotatedException;->_f()Ljava/lang/Throwable;
 
     move-result-object v1
 
@@ -1150,7 +1150,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v0}, Lorg/bouncycastle/jce/provider/AnnotatedException;->ag()Ljava/lang/Throwable;
+    invoke-virtual {v0}, Lorg/bouncycastle/jce/provider/AnnotatedException;->_f()Ljava/lang/Throwable;
 
     move-result-object v0
 

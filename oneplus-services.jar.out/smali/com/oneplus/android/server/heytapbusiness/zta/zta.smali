@@ -61,7 +61,7 @@
 .method public abstract dump(Ljava/io/PrintWriter;)V
 .end method
 
-.method public abstract if()Ljava/lang/String;
+.method public abstract hf()Ljava/lang/String;
 .end method
 
 .method public abstract rtg(Ljava/lang/Object;)Ljava/lang/Object;

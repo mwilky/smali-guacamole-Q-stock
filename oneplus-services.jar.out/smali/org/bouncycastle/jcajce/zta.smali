@@ -63,14 +63,6 @@
 
 
 # virtual methods
-.method public Aj()Z
-    .locals 0
-
-    iget-boolean p0, p0, Lorg/bouncycastle/jcajce/zta;->nEa:Z
-
-    return p0
-.end method
-
 .method public getOutputStream()Ljava/io/OutputStream;
     .locals 0
 
@@ -85,4 +77,12 @@
     iget-object p0, p0, Lorg/bouncycastle/jcajce/zta;->mEa:Ljava/security/KeyStore$ProtectionParameter;
 
     return-object p0
+.end method
+
+.method public zj()Z
+    .locals 0
+
+    iget-boolean p0, p0, Lorg/bouncycastle/jcajce/zta;->nEa:Z
+
+    return p0
 .end method

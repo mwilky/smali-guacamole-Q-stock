@@ -96,7 +96,7 @@
 
     check-cast p1, Lorg/bouncycastle/jcajce/provider/asymmetric/dh/BCDHPrivateKey;
 
-    invoke-virtual {p1}, Lorg/bouncycastle/jcajce/provider/asymmetric/dh/BCDHPrivateKey;->Gj()Lorg/bouncycastle/crypto/wtn/kth;
+    invoke-virtual {p1}, Lorg/bouncycastle/jcajce/provider/asymmetric/dh/BCDHPrivateKey;->Fj()Lorg/bouncycastle/crypto/wtn/kth;
 
     move-result-object p0
 
@@ -165,7 +165,7 @@
 
     check-cast p1, Lorg/bouncycastle/jcajce/provider/asymmetric/dh/BCDHPublicKey;
 
-    invoke-virtual {p1}, Lorg/bouncycastle/jcajce/provider/asymmetric/dh/BCDHPublicKey;->Gj()Lorg/bouncycastle/crypto/wtn/bio;
+    invoke-virtual {p1}, Lorg/bouncycastle/jcajce/provider/asymmetric/dh/BCDHPublicKey;->Fj()Lorg/bouncycastle/crypto/wtn/bio;
 
     move-result-object p0
 
@@ -190,7 +190,7 @@
 
     check-cast p0, Lorg/bouncycastle/jcajce/sis/you;
 
-    invoke-virtual {p0}, Lorg/bouncycastle/jcajce/sis/you;->ug()Lorg/bouncycastle/crypto/wtn/cno;
+    invoke-virtual {p0}, Lorg/bouncycastle/jcajce/sis/you;->tg()Lorg/bouncycastle/crypto/wtn/cno;
 
     move-result-object p0
 
@@ -642,7 +642,7 @@
 
     check-cast p2, Lorg/bouncycastle/jcajce/sis/tsu;
 
-    invoke-virtual {p2}, Lorg/bouncycastle/jcajce/sis/tsu;->Lj()[B
+    invoke-virtual {p2}, Lorg/bouncycastle/jcajce/sis/tsu;->Kj()[B
 
     move-result-object p2
 
@@ -714,7 +714,7 @@
     throw p0
 .end method
 
-.method protected tg()[B
+.method protected sg()[B
     .locals 0
 
     iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dh/tsu;->result:[B

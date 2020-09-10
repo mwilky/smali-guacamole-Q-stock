@@ -116,7 +116,7 @@
 
 
 # virtual methods
-.method public ah()I
+.method public _g()I
     .locals 0
 
     iget p0, p0, Lorg/bouncycastle/asn1/you/kth;->ysa:I

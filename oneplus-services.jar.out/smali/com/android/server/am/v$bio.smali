@@ -15,23 +15,23 @@
 
 
 # instance fields
+.field private Jx:J
+
 .field private Kx:J
 
 .field private Lx:J
 
-.field private Mx:J
+.field public Qx:D
 
 .field public Rx:D
 
 .field public Sx:D
 
-.field public Tx:D
+.field public Tx:I
 
-.field public Ux:I
+.field private Ux:J
 
-.field private Vx:J
-
-.field private Wx:Ljava/util/ArrayList;
+.field private Vx:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/ArrayList<",
@@ -41,13 +41,13 @@
     .end annotation
 .end field
 
-.field private Xx:I
+.field private Wx:I
 
-.field private Yx:J
+.field private Xx:J
+
+.field private Yx:Z
 
 .field private Zx:Z
-
-.field private _x:Z
 
 .field private mPackageName:Ljava/lang/String;
 
@@ -62,17 +62,17 @@
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/android/server/am/v$bio;->Wx:Ljava/util/ArrayList;
+    iput-object v0, p0, Lcom/android/server/am/v$bio;->Vx:Ljava/util/ArrayList;
 
     const/4 v0, 0x0
 
-    iput v0, p0, Lcom/android/server/am/v$bio;->Xx:I
+    iput v0, p0, Lcom/android/server/am/v$bio;->Wx:I
 
     const/4 v1, 0x1
 
-    iput-boolean v1, p0, Lcom/android/server/am/v$bio;->Zx:Z
+    iput-boolean v1, p0, Lcom/android/server/am/v$bio;->Yx:Z
 
-    iput-boolean v0, p0, Lcom/android/server/am/v$bio;->_x:Z
+    iput-boolean v0, p0, Lcom/android/server/am/v$bio;->Zx:Z
 
     iput-object p1, p0, Lcom/android/server/am/v$bio;->mPackageName:Ljava/lang/String;
 
@@ -88,7 +88,7 @@
 
     sub-long/2addr v2, v4
 
-    iput-wide v2, p0, Lcom/android/server/am/v$bio;->Vx:J
+    iput-wide v2, p0, Lcom/android/server/am/v$bio;->Ux:J
 
     if-eqz p2, :cond_0
 
@@ -107,7 +107,7 @@
 
     invoke-direct {p1, p2}, Lcom/android/server/am/v$cno;-><init>(Ljava/lang/String;)V
 
-    iget-object p2, p0, Lcom/android/server/am/v$bio;->Wx:Ljava/util/ArrayList;
+    iget-object p2, p0, Lcom/android/server/am/v$bio;->Vx:Ljava/util/ArrayList;
 
     invoke-virtual {p2, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
@@ -124,11 +124,11 @@
 
     invoke-direct {p1, p2}, Lcom/android/server/am/v$cno;-><init>(Ljava/lang/String;)V
 
-    iget-wide p2, p0, Lcom/android/server/am/v$bio;->Vx:J
+    iget-wide p2, p0, Lcom/android/server/am/v$bio;->Ux:J
 
     invoke-static {p1, p2, p3}, Lcom/android/server/am/v$cno;->sis(Lcom/android/server/am/v$cno;J)J
 
-    iget-object p0, p0, Lcom/android/server/am/v$bio;->Wx:Ljava/util/ArrayList;
+    iget-object p0, p0, Lcom/android/server/am/v$bio;->Vx:Ljava/util/ArrayList;
 
     invoke-virtual {p0, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
@@ -139,7 +139,7 @@
 .method static synthetic cno(Lcom/android/server/am/v$bio;)Ljava/util/ArrayList;
     .locals 0
 
-    iget-object p0, p0, Lcom/android/server/am/v$bio;->Wx:Ljava/util/ArrayList;
+    iget-object p0, p0, Lcom/android/server/am/v$bio;->Vx:Ljava/util/ArrayList;
 
     return-object p0
 .end method
@@ -147,11 +147,11 @@
 .method private irq(J)I
     .locals 9
 
-    iget-object v0, p0, Lcom/android/server/am/v$bio;->Wx:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/server/am/v$bio;->Vx:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
-    iget-wide v0, p0, Lcom/android/server/am/v$bio;->Vx:J
+    iget-wide v0, p0, Lcom/android/server/am/v$bio;->Ux:J
 
     sub-long/2addr p1, v0
 
@@ -161,7 +161,7 @@
 
     div-long/2addr p1, v0
 
-    iget-object v0, p0, Lcom/android/server/am/v$bio;->Wx:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/server/am/v$bio;->Vx:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -180,7 +180,7 @@
     :goto_0
     if-ge v2, v0, :cond_0
 
-    iget-object v3, p0, Lcom/android/server/am/v$bio;->Wx:Ljava/util/ArrayList;
+    iget-object v3, p0, Lcom/android/server/am/v$bio;->Vx:Ljava/util/ArrayList;
 
     invoke-virtual {v3, v1}, Ljava/util/ArrayList;->remove(I)Ljava/lang/Object;
 
@@ -210,7 +210,7 @@
 
     invoke-direct {v2, v3}, Lcom/android/server/am/v$cno;-><init>(Ljava/lang/String;)V
 
-    iget-wide v3, p0, Lcom/android/server/am/v$bio;->Vx:J
+    iget-wide v3, p0, Lcom/android/server/am/v$bio;->Ux:J
 
     invoke-static {}, Lcom/android/server/am/v;->Cb()J
 
@@ -226,7 +226,7 @@
 
     invoke-static {v2, v3, v4}, Lcom/android/server/am/v$cno;->sis(Lcom/android/server/am/v$cno;J)J
 
-    iget-object v3, p0, Lcom/android/server/am/v$bio;->Wx:Ljava/util/ArrayList;
+    iget-object v3, p0, Lcom/android/server/am/v$bio;->Vx:Ljava/util/ArrayList;
 
     invoke-virtual {v3}, Ljava/util/ArrayList;->size()I
 
@@ -238,19 +238,19 @@
 
     if-lt v3, v4, :cond_1
 
-    iget-object v3, p0, Lcom/android/server/am/v$bio;->Wx:Ljava/util/ArrayList;
+    iget-object v3, p0, Lcom/android/server/am/v$bio;->Vx:Ljava/util/ArrayList;
 
     invoke-virtual {v3, v1}, Ljava/util/ArrayList;->remove(I)Ljava/lang/Object;
 
     :cond_1
-    iget-object v3, p0, Lcom/android/server/am/v$bio;->Wx:Ljava/util/ArrayList;
+    iget-object v3, p0, Lcom/android/server/am/v$bio;->Vx:Ljava/util/ArrayList;
 
     invoke-virtual {v3, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     goto :goto_1
 
     :cond_2
-    iget-object p1, p0, Lcom/android/server/am/v$bio;->Wx:Ljava/util/ArrayList;
+    iget-object p1, p0, Lcom/android/server/am/v$bio;->Vx:Ljava/util/ArrayList;
 
     invoke-virtual {p1}, Ljava/util/ArrayList;->size()I
 
@@ -268,9 +268,9 @@
 
     move-result-wide p1
 
-    iput-wide p1, p0, Lcom/android/server/am/v$bio;->Vx:J
+    iput-wide p1, p0, Lcom/android/server/am/v$bio;->Ux:J
 
-    iget-object p1, p0, Lcom/android/server/am/v$bio;->Wx:Ljava/util/ArrayList;
+    iget-object p1, p0, Lcom/android/server/am/v$bio;->Vx:Ljava/util/ArrayList;
 
     invoke-virtual {p1}, Ljava/util/ArrayList;->size()I
 
@@ -278,13 +278,13 @@
 
     add-int/lit8 p1, p1, -0x1
 
-    iput p1, p0, Lcom/android/server/am/v$bio;->Xx:I
+    iput p1, p0, Lcom/android/server/am/v$bio;->Wx:I
 
     invoke-static {}, Lcom/android/server/am/v;->access$3300()I
 
     move-result p1
 
-    iget-object p2, p0, Lcom/android/server/am/v$bio;->Wx:Ljava/util/ArrayList;
+    iget-object p2, p0, Lcom/android/server/am/v$bio;->Vx:Ljava/util/ArrayList;
 
     invoke-virtual {p2}, Ljava/util/ArrayList;->size()I
 
@@ -292,7 +292,7 @@
 
     if-ge p1, p2, :cond_3
 
-    iget-object p1, p0, Lcom/android/server/am/v$bio;->Wx:Ljava/util/ArrayList;
+    iget-object p1, p0, Lcom/android/server/am/v$bio;->Vx:Ljava/util/ArrayList;
 
     invoke-virtual {p1}, Ljava/util/ArrayList;->size()I
 
@@ -301,7 +301,7 @@
     invoke-static {p1}, Lcom/android/server/am/v;->o(I)I
 
     :cond_3
-    iget p0, p0, Lcom/android/server/am/v$bio;->Xx:I
+    iget p0, p0, Lcom/android/server/am/v$bio;->Wx:I
 
     return p0
 .end method
@@ -309,7 +309,7 @@
 .method static synthetic rtg(Lcom/android/server/am/v$bio;)J
     .locals 2
 
-    iget-wide v0, p0, Lcom/android/server/am/v$bio;->Kx:J
+    iget-wide v0, p0, Lcom/android/server/am/v$bio;->Jx:J
 
     return-wide v0
 .end method
@@ -317,11 +317,11 @@
 .method static synthetic sis(Lcom/android/server/am/v$bio;J)J
     .locals 2
 
-    iget-wide v0, p0, Lcom/android/server/am/v$bio;->Kx:J
+    iget-wide v0, p0, Lcom/android/server/am/v$bio;->Jx:J
 
     add-long/2addr v0, p1
 
-    iput-wide v0, p0, Lcom/android/server/am/v$bio;->Kx:J
+    iput-wide v0, p0, Lcom/android/server/am/v$bio;->Jx:J
 
     return-wide v0
 .end method
@@ -337,7 +337,7 @@
 .method static synthetic ssp(Lcom/android/server/am/v$bio;)J
     .locals 2
 
-    iget-wide v0, p0, Lcom/android/server/am/v$bio;->Mx:J
+    iget-wide v0, p0, Lcom/android/server/am/v$bio;->Lx:J
 
     return-wide v0
 .end method
@@ -345,11 +345,11 @@
 .method static synthetic tsu(Lcom/android/server/am/v$bio;J)J
     .locals 2
 
-    iget-wide v0, p0, Lcom/android/server/am/v$bio;->Mx:J
+    iget-wide v0, p0, Lcom/android/server/am/v$bio;->Lx:J
 
     add-long/2addr v0, p1
 
-    iput-wide v0, p0, Lcom/android/server/am/v$bio;->Mx:J
+    iput-wide v0, p0, Lcom/android/server/am/v$bio;->Lx:J
 
     return-wide v0
 .end method
@@ -357,7 +357,7 @@
 .method static synthetic tsu(Lcom/android/server/am/v$bio;)Z
     .locals 0
 
-    iget-boolean p0, p0, Lcom/android/server/am/v$bio;->Zx:Z
+    iget-boolean p0, p0, Lcom/android/server/am/v$bio;->Yx:Z
 
     return p0
 .end method
@@ -365,7 +365,7 @@
 .method static synthetic you(Lcom/android/server/am/v$bio;)J
     .locals 2
 
-    iget-wide v0, p0, Lcom/android/server/am/v$bio;->Lx:J
+    iget-wide v0, p0, Lcom/android/server/am/v$bio;->Kx:J
 
     return-wide v0
 .end method
@@ -373,7 +373,7 @@
 .method static synthetic you(Lcom/android/server/am/v$bio;J)J
     .locals 0
 
-    iput-wide p1, p0, Lcom/android/server/am/v$bio;->Lx:J
+    iput-wide p1, p0, Lcom/android/server/am/v$bio;->Kx:J
 
     return-wide p1
 .end method
@@ -381,7 +381,7 @@
 .method static synthetic zta(Lcom/android/server/am/v$bio;J)J
     .locals 0
 
-    iput-wide p1, p0, Lcom/android/server/am/v$bio;->Vx:J
+    iput-wide p1, p0, Lcom/android/server/am/v$bio;->Ux:J
 
     return-wide p1
 .end method
@@ -389,7 +389,7 @@
 .method static synthetic zta(Lcom/android/server/am/v$bio;Z)Z
     .locals 0
 
-    iput-boolean p1, p0, Lcom/android/server/am/v$bio;->Zx:Z
+    iput-boolean p1, p0, Lcom/android/server/am/v$bio;->Yx:Z
 
     return p1
 .end method
@@ -399,7 +399,7 @@
 .method public dma(J)V
     .locals 0
 
-    iput-wide p1, p0, Lcom/android/server/am/v$bio;->Mx:J
+    iput-wide p1, p0, Lcom/android/server/am/v$bio;->Lx:J
 
     return-void
 .end method
@@ -419,7 +419,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-wide v1, p0, Lcom/android/server/am/v$bio;->Rx:D
+    iget-wide v1, p0, Lcom/android/server/am/v$bio;->Qx:D
 
     invoke-virtual {v0, v1, v2}, Ljava/lang/StringBuilder;->append(D)Ljava/lang/StringBuilder;
 
@@ -427,7 +427,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-wide v1, p0, Lcom/android/server/am/v$bio;->Sx:D
+    iget-wide v1, p0, Lcom/android/server/am/v$bio;->Rx:D
 
     invoke-virtual {v0, v1, v2}, Ljava/lang/StringBuilder;->append(D)Ljava/lang/StringBuilder;
 
@@ -435,7 +435,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-wide v1, p0, Lcom/android/server/am/v$bio;->Tx:D
+    iget-wide v1, p0, Lcom/android/server/am/v$bio;->Sx:D
 
     invoke-virtual {v0, v1, v2}, Ljava/lang/StringBuilder;->append(D)Ljava/lang/StringBuilder;
 
@@ -461,7 +461,7 @@
 .method public n(I)V
     .locals 0
 
-    iput p1, p0, Lcom/android/server/am/v$bio;->Ux:I
+    iput p1, p0, Lcom/android/server/am/v$bio;->Tx:I
 
     return-void
 .end method
@@ -469,7 +469,7 @@
 .method public oif(J)Z
     .locals 11
 
-    iget-wide v0, p0, Lcom/android/server/am/v$bio;->Vx:J
+    iget-wide v0, p0, Lcom/android/server/am/v$bio;->Ux:J
 
     sub-long/2addr p1, v0
 
@@ -479,7 +479,7 @@
 
     div-long/2addr p1, v0
 
-    iget-object v0, p0, Lcom/android/server/am/v$bio;->Wx:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/server/am/v$bio;->Vx:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -498,7 +498,7 @@
     :goto_0
     if-ge v2, v0, :cond_0
 
-    iget-object v3, p0, Lcom/android/server/am/v$bio;->Wx:Ljava/util/ArrayList;
+    iget-object v3, p0, Lcom/android/server/am/v$bio;->Vx:Ljava/util/ArrayList;
 
     invoke-virtual {v3, v1}, Ljava/util/ArrayList;->remove(I)Ljava/lang/Object;
 
@@ -564,7 +564,7 @@
 
     invoke-direct {v4, v5}, Lcom/android/server/am/v$cno;-><init>(Ljava/lang/String;)V
 
-    iget-wide v5, p0, Lcom/android/server/am/v$bio;->Vx:J
+    iget-wide v5, p0, Lcom/android/server/am/v$bio;->Ux:J
 
     invoke-static {}, Lcom/android/server/am/v;->Cb()J
 
@@ -580,7 +580,7 @@
 
     invoke-static {v4, v5, v6}, Lcom/android/server/am/v$cno;->sis(Lcom/android/server/am/v$cno;J)J
 
-    iget-object v5, p0, Lcom/android/server/am/v$bio;->Wx:Ljava/util/ArrayList;
+    iget-object v5, p0, Lcom/android/server/am/v$bio;->Vx:Ljava/util/ArrayList;
 
     invoke-virtual {v5}, Ljava/util/ArrayList;->size()I
 
@@ -592,12 +592,12 @@
 
     if-lt v5, v6, :cond_1
 
-    iget-object v5, p0, Lcom/android/server/am/v$bio;->Wx:Ljava/util/ArrayList;
+    iget-object v5, p0, Lcom/android/server/am/v$bio;->Vx:Ljava/util/ArrayList;
 
     invoke-virtual {v5, v1}, Ljava/util/ArrayList;->remove(I)Ljava/lang/Object;
 
     :cond_1
-    iget-object v5, p0, Lcom/android/server/am/v$bio;->Wx:Ljava/util/ArrayList;
+    iget-object v5, p0, Lcom/android/server/am/v$bio;->Vx:Ljava/util/ArrayList;
 
     invoke-virtual {v5, v4}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
@@ -608,7 +608,7 @@
 
     move-result p1
 
-    iget-object p2, p0, Lcom/android/server/am/v$bio;->Wx:Ljava/util/ArrayList;
+    iget-object p2, p0, Lcom/android/server/am/v$bio;->Vx:Ljava/util/ArrayList;
 
     invoke-virtual {p2}, Ljava/util/ArrayList;->size()I
 
@@ -632,7 +632,7 @@
 
     invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object p2, p0, Lcom/android/server/am/v$bio;->Wx:Ljava/util/ArrayList;
+    iget-object p2, p0, Lcom/android/server/am/v$bio;->Vx:Ljava/util/ArrayList;
 
     invoke-virtual {p2}, Ljava/util/ArrayList;->size()I
 
@@ -658,7 +658,7 @@
 
     move-result p1
 
-    iget-object p2, p0, Lcom/android/server/am/v$bio;->Wx:Ljava/util/ArrayList;
+    iget-object p2, p0, Lcom/android/server/am/v$bio;->Vx:Ljava/util/ArrayList;
 
     invoke-virtual {p2}, Ljava/util/ArrayList;->size()I
 
@@ -677,7 +677,7 @@
 
     invoke-direct {v0, v2}, Lcom/android/server/am/v$cno;-><init>(Ljava/lang/String;)V
 
-    iget-object v2, p0, Lcom/android/server/am/v$bio;->Wx:Ljava/util/ArrayList;
+    iget-object v2, p0, Lcom/android/server/am/v$bio;->Vx:Ljava/util/ArrayList;
 
     invoke-virtual {v2, p2, v0}, Ljava/util/ArrayList;->add(ILjava/lang/Object;)V
 
@@ -686,7 +686,7 @@
     goto :goto_2
 
     :cond_3
-    iget-object p1, p0, Lcom/android/server/am/v$bio;->Wx:Ljava/util/ArrayList;
+    iget-object p1, p0, Lcom/android/server/am/v$bio;->Vx:Ljava/util/ArrayList;
 
     invoke-virtual {p1}, Ljava/util/ArrayList;->size()I
 
@@ -706,9 +706,9 @@
 
     move-result-wide p1
 
-    iput-wide p1, p0, Lcom/android/server/am/v$bio;->Vx:J
+    iput-wide p1, p0, Lcom/android/server/am/v$bio;->Ux:J
 
-    iget-object p1, p0, Lcom/android/server/am/v$bio;->Wx:Ljava/util/ArrayList;
+    iget-object p1, p0, Lcom/android/server/am/v$bio;->Vx:Ljava/util/ArrayList;
 
     invoke-virtual {p1}, Ljava/util/ArrayList;->size()I
 
@@ -716,13 +716,13 @@
 
     sub-int/2addr p1, v0
 
-    iput p1, p0, Lcom/android/server/am/v$bio;->Xx:I
+    iput p1, p0, Lcom/android/server/am/v$bio;->Wx:I
 
     invoke-static {}, Lcom/android/server/am/v;->access$3300()I
 
     move-result p1
 
-    iget-object p2, p0, Lcom/android/server/am/v$bio;->Wx:Ljava/util/ArrayList;
+    iget-object p2, p0, Lcom/android/server/am/v$bio;->Vx:Ljava/util/ArrayList;
 
     invoke-virtual {p2}, Ljava/util/ArrayList;->size()I
 
@@ -730,7 +730,7 @@
 
     if-ge p1, p2, :cond_4
 
-    iget-object p1, p0, Lcom/android/server/am/v$bio;->Wx:Ljava/util/ArrayList;
+    iget-object p1, p0, Lcom/android/server/am/v$bio;->Vx:Ljava/util/ArrayList;
 
     invoke-virtual {p1}, Ljava/util/ArrayList;->size()I
 
@@ -760,7 +760,7 @@
 
     invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object p0, p0, Lcom/android/server/am/v$bio;->Wx:Ljava/util/ArrayList;
+    iget-object p0, p0, Lcom/android/server/am/v$bio;->Vx:Ljava/util/ArrayList;
 
     invoke-virtual {p0}, Ljava/util/ArrayList;->size()I
 
@@ -777,20 +777,34 @@
     return v0
 .end method
 
+.method public pc()V
+    .locals 2
+
+    const-wide/16 v0, 0x0
+
+    iput-wide v0, p0, Lcom/android/server/am/v$bio;->Qx:D
+
+    iput-wide v0, p0, Lcom/android/server/am/v$bio;->Rx:D
+
+    iput-wide v0, p0, Lcom/android/server/am/v$bio;->Sx:D
+
+    return-void
+.end method
+
 .method public qbh(J)V
     .locals 2
 
-    iget-wide v0, p0, Lcom/android/server/am/v$bio;->Lx:J
+    iget-wide v0, p0, Lcom/android/server/am/v$bio;->Kx:J
 
-    iput-wide v0, p0, Lcom/android/server/am/v$bio;->Yx:J
+    iput-wide v0, p0, Lcom/android/server/am/v$bio;->Xx:J
 
-    iput-wide p1, p0, Lcom/android/server/am/v$bio;->Lx:J
+    iput-wide p1, p0, Lcom/android/server/am/v$bio;->Kx:J
 
     invoke-virtual {p0, p1, p2}, Lcom/android/server/am/v$bio;->oif(J)Z
 
-    iget-object v0, p0, Lcom/android/server/am/v$bio;->Wx:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/server/am/v$bio;->Vx:Ljava/util/ArrayList;
 
-    iget p0, p0, Lcom/android/server/am/v$bio;->Xx:I
+    iget p0, p0, Lcom/android/server/am/v$bio;->Wx:I
 
     invoke-virtual {v0, p0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -803,21 +817,7 @@
     return-void
 .end method
 
-.method public qc()V
-    .locals 2
-
-    const-wide/16 v0, 0x0
-
-    iput-wide v0, p0, Lcom/android/server/am/v$bio;->Rx:D
-
-    iput-wide v0, p0, Lcom/android/server/am/v$bio;->Sx:D
-
-    iput-wide v0, p0, Lcom/android/server/am/v$bio;->Tx:D
-
-    return-void
-.end method
-
-.method public rc()[B
+.method public qc()[B
     .locals 3
 
     new-instance v0, Ljava/lang/StringBuilder;
@@ -846,7 +846,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object p0, p0, Lcom/android/server/am/v$bio;->Wx:Ljava/util/ArrayList;
+    iget-object p0, p0, Lcom/android/server/am/v$bio;->Vx:Ljava/util/ArrayList;
 
     invoke-virtual {p0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
@@ -865,7 +865,7 @@
 
     check-cast v1, Lcom/android/server/am/v$cno;
 
-    invoke-virtual {v1}, Lcom/android/server/am/v$cno;->rc()Ljava/lang/String;
+    invoke-virtual {v1}, Lcom/android/server/am/v$cno;->qc()Ljava/lang/String;
 
     move-result-object v1
 
@@ -885,14 +885,14 @@
     return-object p0
 .end method
 
-.method public sc()V
+.method public rc()V
     .locals 2
 
     const-wide/16 v0, 0x0
 
-    iput-wide v0, p0, Lcom/android/server/am/v$bio;->Mx:J
+    iput-wide v0, p0, Lcom/android/server/am/v$bio;->Lx:J
 
-    iput-wide v0, p0, Lcom/android/server/am/v$bio;->Kx:J
+    iput-wide v0, p0, Lcom/android/server/am/v$bio;->Jx:J
 
     return-void
 .end method
@@ -900,9 +900,9 @@
 .method public v(Ljava/lang/String;)V
     .locals 3
 
-    iget-object v0, p0, Lcom/android/server/am/v$bio;->Wx:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/server/am/v$bio;->Vx:Ljava/util/ArrayList;
 
-    iget v1, p0, Lcom/android/server/am/v$bio;->Xx:I
+    iget v1, p0, Lcom/android/server/am/v$bio;->Wx:I
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -910,11 +910,11 @@
 
     check-cast v0, Lcom/android/server/am/v$cno;
 
-    invoke-virtual {v0}, Lcom/android/server/am/v$cno;->pc()V
+    invoke-virtual {v0}, Lcom/android/server/am/v$cno;->oc()V
 
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/android/server/am/v$bio;->_x:Z
+    iput-boolean v0, p0, Lcom/android/server/am/v$bio;->Zx:Z
 
     invoke-static {}, Lcom/android/server/am/v;->access$1000()Z
 
@@ -936,9 +936,9 @@
 
     invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object p1, p0, Lcom/android/server/am/v$bio;->Wx:Ljava/util/ArrayList;
+    iget-object p1, p0, Lcom/android/server/am/v$bio;->Vx:Ljava/util/ArrayList;
 
-    iget v1, p0, Lcom/android/server/am/v$bio;->Xx:I
+    iget v1, p0, Lcom/android/server/am/v$bio;->Wx:I
 
     invoke-virtual {p1, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -956,7 +956,7 @@
 
     invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget p0, p0, Lcom/android/server/am/v$bio;->Xx:I
+    iget p0, p0, Lcom/android/server/am/v$bio;->Wx:I
 
     invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -991,11 +991,11 @@
 
     const-wide/16 v2, 0x0
 
+    iput-wide v2, p0, Lcom/android/server/am/v$bio;->Qx:D
+
     iput-wide v2, p0, Lcom/android/server/am/v$bio;->Rx:D
 
     iput-wide v2, p0, Lcom/android/server/am/v$bio;->Sx:D
-
-    iput-wide v2, p0, Lcom/android/server/am/v$bio;->Tx:D
 
     invoke-static {}, Lcom/android/server/am/v;->Cb()J
 
@@ -1005,15 +1005,15 @@
 
     sub-long/2addr p1, v2
 
-    iput-wide p1, p0, Lcom/android/server/am/v$bio;->Vx:J
+    iput-wide p1, p0, Lcom/android/server/am/v$bio;->Ux:J
 
     const-wide/16 p1, 0x0
 
-    iput-wide p1, p0, Lcom/android/server/am/v$bio;->Mx:J
+    iput-wide p1, p0, Lcom/android/server/am/v$bio;->Lx:J
 
-    iput-wide p1, p0, Lcom/android/server/am/v$bio;->Kx:J
+    iput-wide p1, p0, Lcom/android/server/am/v$bio;->Jx:J
 
-    iget-object v2, p0, Lcom/android/server/am/v$bio;->Wx:Ljava/util/ArrayList;
+    iget-object v2, p0, Lcom/android/server/am/v$bio;->Vx:Ljava/util/ArrayList;
 
     invoke-virtual {v2}, Ljava/util/ArrayList;->clear()V
 
@@ -1023,21 +1023,21 @@
 
     invoke-direct {v2, v3}, Lcom/android/server/am/v$cno;-><init>(Ljava/lang/String;)V
 
-    iget-wide v3, p0, Lcom/android/server/am/v$bio;->Vx:J
+    iget-wide v3, p0, Lcom/android/server/am/v$bio;->Ux:J
 
     invoke-static {v2, v3, v4}, Lcom/android/server/am/v$cno;->sis(Lcom/android/server/am/v$cno;J)J
 
-    iget-object v3, p0, Lcom/android/server/am/v$bio;->Wx:Ljava/util/ArrayList;
+    iget-object v3, p0, Lcom/android/server/am/v$bio;->Vx:Ljava/util/ArrayList;
 
     invoke-virtual {v3, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    iput v1, p0, Lcom/android/server/am/v$bio;->Xx:I
+    iput v1, p0, Lcom/android/server/am/v$bio;->Wx:I
 
-    iput-wide p1, p0, Lcom/android/server/am/v$bio;->Lx:J
+    iput-wide p1, p0, Lcom/android/server/am/v$bio;->Kx:J
 
-    iput-wide p1, p0, Lcom/android/server/am/v$bio;->Yx:J
+    iput-wide p1, p0, Lcom/android/server/am/v$bio;->Xx:J
 
-    iput-boolean v0, p0, Lcom/android/server/am/v$bio;->Zx:Z
+    iput-boolean v0, p0, Lcom/android/server/am/v$bio;->Yx:Z
 
     return-void
 .end method
@@ -1045,7 +1045,7 @@
 .method public zta(Landroid/content/Context;J)V
     .locals 9
 
-    iget-wide v0, p0, Lcom/android/server/am/v$bio;->Lx:J
+    iget-wide v0, p0, Lcom/android/server/am/v$bio;->Kx:J
 
     sub-long v0, p2, v0
 
@@ -1055,7 +1055,7 @@
 
     iget-object v4, p0, Lcom/android/server/am/v$bio;->mPackageName:Ljava/lang/String;
 
-    iget-wide v5, p0, Lcom/android/server/am/v$bio;->Lx:J
+    iget-wide v5, p0, Lcom/android/server/am/v$bio;->Kx:J
 
     move-object v3, p1
 
@@ -1063,7 +1063,7 @@
 
     invoke-virtual/range {v2 .. v8}, Lnet/oneplus/odm/OpDeviceManagerInjector;->preserveStopActivity(Landroid/content/Context;Ljava/lang/String;JJ)V
 
-    invoke-static {}, Lcom/android/server/am/v;->tc()J
+    invoke-static {}, Lcom/android/server/am/v;->sc()J
 
     move-result-wide p1
 
@@ -1101,13 +1101,13 @@
 
     invoke-static {p3, p1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    iget-wide v0, p0, Lcom/android/server/am/v$bio;->Yx:J
+    iget-wide v0, p0, Lcom/android/server/am/v$bio;->Xx:J
 
-    iput-wide v0, p0, Lcom/android/server/am/v$bio;->Lx:J
+    iput-wide v0, p0, Lcom/android/server/am/v$bio;->Kx:J
 
-    iget-object p1, p0, Lcom/android/server/am/v$bio;->Wx:Ljava/util/ArrayList;
+    iget-object p1, p0, Lcom/android/server/am/v$bio;->Vx:Ljava/util/ArrayList;
 
-    iget p3, p0, Lcom/android/server/am/v$bio;->Xx:I
+    iget p3, p0, Lcom/android/server/am/v$bio;->Wx:I
 
     invoke-virtual {p1, p3}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -1123,9 +1123,9 @@
 
     if-lez p1, :cond_0
 
-    iget-object p1, p0, Lcom/android/server/am/v$bio;->Wx:Ljava/util/ArrayList;
+    iget-object p1, p0, Lcom/android/server/am/v$bio;->Vx:Ljava/util/ArrayList;
 
-    iget p3, p0, Lcom/android/server/am/v$bio;->Xx:I
+    iget p3, p0, Lcom/android/server/am/v$bio;->Wx:I
 
     invoke-virtual {p1, p3}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -1133,16 +1133,16 @@
 
     check-cast p1, Lcom/android/server/am/v$cno;
 
-    iget-wide v0, p0, Lcom/android/server/am/v$bio;->Yx:J
+    iget-wide v0, p0, Lcom/android/server/am/v$bio;->Xx:J
 
     invoke-static {p1, v0, v1}, Lcom/android/server/am/v$cno;->zta(Lcom/android/server/am/v$cno;J)J
 
     goto :goto_0
 
     :cond_0
-    iget-object p1, p0, Lcom/android/server/am/v$bio;->Wx:Ljava/util/ArrayList;
+    iget-object p1, p0, Lcom/android/server/am/v$bio;->Vx:Ljava/util/ArrayList;
 
-    iget p3, p0, Lcom/android/server/am/v$bio;->Xx:I
+    iget p3, p0, Lcom/android/server/am/v$bio;->Wx:I
 
     invoke-virtual {p1, p3}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -1153,13 +1153,13 @@
     invoke-static {p1, v2, v3}, Lcom/android/server/am/v$cno;->zta(Lcom/android/server/am/v$cno;J)J
 
     :goto_0
-    iget-boolean p1, p0, Lcom/android/server/am/v$bio;->_x:Z
+    iget-boolean p1, p0, Lcom/android/server/am/v$bio;->Zx:Z
 
     if-eqz p1, :cond_1
 
-    iget-object p1, p0, Lcom/android/server/am/v$bio;->Wx:Ljava/util/ArrayList;
+    iget-object p1, p0, Lcom/android/server/am/v$bio;->Vx:Ljava/util/ArrayList;
 
-    iget p3, p0, Lcom/android/server/am/v$bio;->Xx:I
+    iget p3, p0, Lcom/android/server/am/v$bio;->Wx:I
 
     invoke-virtual {p1, p3}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -1167,27 +1167,27 @@
 
     check-cast p1, Lcom/android/server/am/v$cno;
 
-    invoke-virtual {p1}, Lcom/android/server/am/v$cno;->oc()V
+    invoke-virtual {p1}, Lcom/android/server/am/v$cno;->nc()V
 
     const-string p1, ""
 
     invoke-static {p1}, Lcom/android/server/am/v;->x(Ljava/lang/String;)Ljava/lang/String;
 
     :cond_1
-    iput-boolean p2, p0, Lcom/android/server/am/v$bio;->_x:Z
+    iput-boolean p2, p0, Lcom/android/server/am/v$bio;->Zx:Z
 
     return-void
 
     :cond_2
-    iget-wide v4, p0, Lcom/android/server/am/v$bio;->Lx:J
+    iget-wide v4, p0, Lcom/android/server/am/v$bio;->Kx:J
 
     cmp-long p1, v4, v2
 
     if-eqz p1, :cond_3
 
-    iget-object p1, p0, Lcom/android/server/am/v$bio;->Wx:Ljava/util/ArrayList;
+    iget-object p1, p0, Lcom/android/server/am/v$bio;->Vx:Ljava/util/ArrayList;
 
-    iget p3, p0, Lcom/android/server/am/v$bio;->Xx:I
+    iget p3, p0, Lcom/android/server/am/v$bio;->Wx:I
 
     invoke-virtual {p1, p3}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -1200,7 +1200,7 @@
     invoke-virtual {p1, v0, v1, p3}, Lcom/android/server/am/v$cno;->you(JLjava/lang/String;)V
 
     :cond_3
-    iput-boolean p2, p0, Lcom/android/server/am/v$bio;->_x:Z
+    iput-boolean p2, p0, Lcom/android/server/am/v$bio;->Zx:Z
 
     return-void
 .end method

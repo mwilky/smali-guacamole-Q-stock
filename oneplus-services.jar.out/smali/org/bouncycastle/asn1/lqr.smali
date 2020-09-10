@@ -189,7 +189,7 @@
 
 
 # virtual methods
-.method Eg()Lorg/bouncycastle/asn1/vdb;
+.method Dg()Lorg/bouncycastle/asn1/vdb;
     .locals 3
 
     new-instance v0, Lorg/bouncycastle/asn1/L;
@@ -205,7 +205,7 @@
     return-object v0
 .end method
 
-.method Fg()Lorg/bouncycastle/asn1/vdb;
+.method Eg()Lorg/bouncycastle/asn1/vdb;
     .locals 3
 
     new-instance v0, Lorg/bouncycastle/asn1/Z;
@@ -221,7 +221,7 @@
     return-object v0
 .end method
 
-.method public Tg()Z
+.method public Sg()Z
     .locals 0
 
     iget-boolean p0, p0, Lorg/bouncycastle/asn1/lqr;->tsa:Z

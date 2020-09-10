@@ -128,7 +128,7 @@
     return-object p0
 .end method
 
-.method public zi()Lorg/bouncycastle/asn1/bvj;
+.method public yi()Lorg/bouncycastle/asn1/bvj;
     .locals 0
 
     iget-object p0, p0, Lorg/bouncycastle/asn1/x509/vju;->Kva:Lorg/bouncycastle/asn1/bvj;

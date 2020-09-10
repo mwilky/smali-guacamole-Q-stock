@@ -155,7 +155,7 @@
 
 
 # virtual methods
-.method public Ji()Lorg/bouncycastle/asn1/ywr;
+.method public Ii()Lorg/bouncycastle/asn1/ywr;
     .locals 0
 
     iget-object p0, p0, Lorg/bouncycastle/asn1/ibl/sis;->kxa:Lorg/bouncycastle/asn1/ywr;

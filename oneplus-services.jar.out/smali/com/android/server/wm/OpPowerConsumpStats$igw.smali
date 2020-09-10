@@ -51,7 +51,7 @@
     return-void
 .end method
 
-.method private Kp()V
+.method private Jp()V
     .locals 3
 
     iget-object v0, p0, Lcom/android/server/wm/OpPowerConsumpStats$igw;->lock:Ljava/lang/Object;
@@ -105,7 +105,7 @@
     throw p0
 .end method
 
-.method private Lp()V
+.method private Kp()V
     .locals 3
 
     iget-object v0, p0, Lcom/android/server/wm/OpPowerConsumpStats$igw;->lock:Ljava/lang/Object;
@@ -159,7 +159,7 @@
     throw p0
 .end method
 
-.method private Mp()I
+.method private Lp()I
     .locals 3
 
     iget-object v0, p0, Lcom/android/server/wm/OpPowerConsumpStats$igw;->lock:Ljava/lang/Object;
@@ -314,7 +314,7 @@
 .method static synthetic sis(Lcom/android/server/wm/OpPowerConsumpStats$igw;)I
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/wm/OpPowerConsumpStats$igw;->Mp()I
+    invoke-direct {p0}, Lcom/android/server/wm/OpPowerConsumpStats$igw;->Lp()I
 
     move-result p0
 
@@ -332,7 +332,7 @@
 .method static synthetic zta(Lcom/android/server/wm/OpPowerConsumpStats$igw;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/wm/OpPowerConsumpStats$igw;->Kp()V
+    invoke-direct {p0}, Lcom/android/server/wm/OpPowerConsumpStats$igw;->Jp()V
 
     return-void
 .end method

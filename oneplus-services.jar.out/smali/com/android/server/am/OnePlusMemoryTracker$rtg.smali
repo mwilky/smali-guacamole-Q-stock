@@ -32,14 +32,14 @@
 
     iput p2, p0, Lcom/android/server/am/OnePlusMemoryTracker$rtg;->mUid:I
 
-    invoke-virtual {p0}, Lcom/android/server/am/OnePlusMemoryTracker$rtg;->ec()V
+    invoke-virtual {p0}, Lcom/android/server/am/OnePlusMemoryTracker$rtg;->dc()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public dc()Z
+.method public cc()Z
     .locals 4
 
     invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
@@ -69,7 +69,7 @@
     return p0
 .end method
 
-.method public ec()V
+.method public dc()V
     .locals 2
 
     invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J

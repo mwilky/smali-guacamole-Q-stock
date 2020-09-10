@@ -105,7 +105,7 @@
 
     move-result-object v3
 
-    invoke-virtual {v3}, Lcom/android/server/backlight/zta;->Ec()I
+    invoke-virtual {v3}, Lcom/android/server/backlight/zta;->Dc()I
 
     move-result v3
 
@@ -119,11 +119,11 @@
 
     move-result-object v5
 
-    invoke-virtual {v1}, Lcom/android/server/backlight/zta$zta;->yc()D
+    invoke-virtual {v1}, Lcom/android/server/backlight/zta$zta;->xc()D
 
     move-result-wide v6
 
-    invoke-virtual {v1}, Lcom/android/server/backlight/zta$zta;->Ac()I
+    invoke-virtual {v1}, Lcom/android/server/backlight/zta$zta;->zc()I
 
     move-result v8
 
@@ -190,7 +190,7 @@
 
     move-result-object v3
 
-    invoke-virtual {v3}, Lcom/android/server/backlight/zta;->Ec()I
+    invoke-virtual {v3}, Lcom/android/server/backlight/zta;->Dc()I
 
     move-result v3
 
@@ -204,11 +204,11 @@
 
     move-result-object v4
 
-    invoke-virtual {v1}, Lcom/android/server/backlight/zta$zta;->Cc()D
+    invoke-virtual {v1}, Lcom/android/server/backlight/zta$zta;->Bc()D
 
     move-result-wide v5
 
-    invoke-virtual {v1}, Lcom/android/server/backlight/zta$zta;->Bc()I
+    invoke-virtual {v1}, Lcom/android/server/backlight/zta$zta;->Ac()I
 
     move-result v7
 
@@ -271,7 +271,7 @@
     goto :goto_0
 
     :cond_2
-    invoke-virtual {v1}, Lcom/android/server/backlight/zta$zta;->Cc()D
+    invoke-virtual {v1}, Lcom/android/server/backlight/zta$zta;->Bc()D
 
     move-result-wide v2
 
@@ -293,7 +293,7 @@
 
     const-wide/high16 v4, 0x3ff0000000000000L    # 1.0
 
-    invoke-virtual {v1}, Lcom/android/server/backlight/zta$zta;->Bc()I
+    invoke-virtual {v1}, Lcom/android/server/backlight/zta$zta;->Ac()I
 
     move-result v6
 

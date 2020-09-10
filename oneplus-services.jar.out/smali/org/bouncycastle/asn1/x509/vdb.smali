@@ -195,7 +195,7 @@
 
     iget-object v0, p0, Lorg/bouncycastle/asn1/x509/vdb;->extensions:Ljava/util/Hashtable;
 
-    invoke-virtual {p1}, Lorg/bouncycastle/asn1/x509/gwm;->ei()Lorg/bouncycastle/asn1/bvj;
+    invoke-virtual {p1}, Lorg/bouncycastle/asn1/x509/gwm;->di()Lorg/bouncycastle/asn1/bvj;
 
     move-result-object v1
 
@@ -207,7 +207,7 @@
 
     iget-object v0, p0, Lorg/bouncycastle/asn1/x509/vdb;->Xya:Ljava/util/Vector;
 
-    invoke-virtual {p1}, Lorg/bouncycastle/asn1/x509/gwm;->ei()Lorg/bouncycastle/asn1/bvj;
+    invoke-virtual {p1}, Lorg/bouncycastle/asn1/x509/gwm;->di()Lorg/bouncycastle/asn1/bvj;
 
     move-result-object v1
 
@@ -215,7 +215,7 @@
 
     iget-object p0, p0, Lorg/bouncycastle/asn1/x509/vdb;->extensions:Ljava/util/Hashtable;
 
-    invoke-virtual {p1}, Lorg/bouncycastle/asn1/x509/gwm;->ei()Lorg/bouncycastle/asn1/bvj;
+    invoke-virtual {p1}, Lorg/bouncycastle/asn1/x509/gwm;->di()Lorg/bouncycastle/asn1/bvj;
 
     move-result-object v0
 
@@ -234,7 +234,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p1}, Lorg/bouncycastle/asn1/x509/gwm;->ei()Lorg/bouncycastle/asn1/bvj;
+    invoke-virtual {p1}, Lorg/bouncycastle/asn1/x509/gwm;->di()Lorg/bouncycastle/asn1/bvj;
 
     move-result-object p1
 

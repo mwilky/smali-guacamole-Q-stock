@@ -53,6 +53,14 @@
 
 
 # virtual methods
+.method public ge()Ljava/lang/String;
+    .locals 0
+
+    iget-object p0, p0, Lcom/android/server/wm/OnePlusPerfManager$cno;->mParam:Ljava/lang/String;
+
+    return-object p0
+.end method
+
 .method public getPath()Ljava/lang/String;
     .locals 0
 
@@ -61,15 +69,7 @@
     return-object p0
 .end method
 
-.method public he()Ljava/lang/String;
-    .locals 0
-
-    iget-object p0, p0, Lcom/android/server/wm/OnePlusPerfManager$cno;->mParam:Ljava/lang/String;
-
-    return-object p0
-.end method
-
-.method public je()Ljava/lang/String;
+.method public ie()Ljava/lang/String;
     .locals 0
 
     iget-object p0, p0, Lcom/android/server/wm/OnePlusPerfManager$cno;->wR:Ljava/lang/String;

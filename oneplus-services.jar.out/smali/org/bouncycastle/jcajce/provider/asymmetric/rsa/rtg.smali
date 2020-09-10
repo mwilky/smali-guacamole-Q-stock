@@ -45,7 +45,7 @@
 
     sget-object v1, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/rtg;->Zoa:Ljava/math/BigInteger;
 
-    invoke-static {}, Lorg/bouncycastle/crypto/igw;->gj()Ljava/security/SecureRandom;
+    invoke-static {}, Lorg/bouncycastle/crypto/igw;->fj()Ljava/security/SecureRandom;
 
     move-result-object v2
 

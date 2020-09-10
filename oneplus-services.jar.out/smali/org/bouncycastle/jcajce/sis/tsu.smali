@@ -27,7 +27,7 @@
 
 
 # virtual methods
-.method public Lj()[B
+.method public Kj()[B
     .locals 0
 
     iget-object p0, p0, Lorg/bouncycastle/jcajce/sis/tsu;->gFa:[B

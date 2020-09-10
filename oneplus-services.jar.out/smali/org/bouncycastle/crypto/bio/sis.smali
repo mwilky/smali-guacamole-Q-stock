@@ -84,7 +84,7 @@
     throw p0
 .end method
 
-.method private Tt()I
+.method private St()I
     .locals 1
 
     iget-object v0, p0, Lorg/bouncycastle/crypto/bio/sis;->VCa:Lorg/bouncycastle/crypto/bio/sis$zta;
@@ -110,10 +110,10 @@
     return v0
 .end method
 
-.method private Ut()Z
+.method private Tt()Z
     .locals 0
 
-    invoke-direct {p0}, Lorg/bouncycastle/crypto/bio/sis;->Tt()I
+    invoke-direct {p0}, Lorg/bouncycastle/crypto/bio/sis;->St()I
 
     move-result p0
 
@@ -151,7 +151,7 @@
 
     new-array v2, v1, [B
 
-    invoke-direct {p0}, Lorg/bouncycastle/crypto/bio/sis;->Ut()Z
+    invoke-direct {p0}, Lorg/bouncycastle/crypto/bio/sis;->Tt()Z
 
     move-result v3
 
@@ -242,13 +242,13 @@
 
     invoke-interface {v0, v2, v4, v3}, Lorg/bouncycastle/crypto/ibl;->update([BII)V
 
-    invoke-direct {p0}, Lorg/bouncycastle/crypto/bio/sis;->Ut()Z
+    invoke-direct {p0}, Lorg/bouncycastle/crypto/bio/sis;->Tt()Z
 
     move-result v2
 
     if-eqz v2, :cond_5
 
-    invoke-direct {p0}, Lorg/bouncycastle/crypto/bio/sis;->Tt()I
+    invoke-direct {p0}, Lorg/bouncycastle/crypto/bio/sis;->St()I
 
     move-result v2
 
@@ -948,7 +948,7 @@
 
     iput-object p1, p0, Lorg/bouncycastle/crypto/bio/sis;->nonce:[B
 
-    invoke-virtual {p2}, Lorg/bouncycastle/crypto/wtn/zta;->rj()[B
+    invoke-virtual {p2}, Lorg/bouncycastle/crypto/wtn/zta;->qj()[B
 
     move-result-object p1
 

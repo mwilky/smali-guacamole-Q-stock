@@ -216,14 +216,6 @@
 
 
 # virtual methods
-.method public Ah()Lorg/bouncycastle/asn1/x509/zta;
-    .locals 0
-
-    iget-object p0, p0, Lorg/bouncycastle/asn1/dma/zgw;->kta:Lorg/bouncycastle/asn1/x509/zta;
-
-    return-object p0
-.end method
-
 .method public toASN1Primitive()Lorg/bouncycastle/asn1/vdb;
     .locals 5
 
@@ -301,7 +293,7 @@
     return-object p0
 .end method
 
-.method public yh()Lorg/bouncycastle/asn1/x509/zta;
+.method public xh()Lorg/bouncycastle/asn1/x509/zta;
     .locals 0
 
     iget-object p0, p0, Lorg/bouncycastle/asn1/dma/zgw;->ita:Lorg/bouncycastle/asn1/x509/zta;
@@ -309,10 +301,18 @@
     return-object p0
 .end method
 
-.method public zh()Lorg/bouncycastle/asn1/x509/zta;
+.method public yh()Lorg/bouncycastle/asn1/x509/zta;
     .locals 0
 
     iget-object p0, p0, Lorg/bouncycastle/asn1/dma/zgw;->jta:Lorg/bouncycastle/asn1/x509/zta;
+
+    return-object p0
+.end method
+
+.method public zh()Lorg/bouncycastle/asn1/x509/zta;
+    .locals 0
+
+    iget-object p0, p0, Lorg/bouncycastle/asn1/dma/zgw;->kta:Lorg/bouncycastle/asn1/x509/zta;
 
     return-object p0
 .end method

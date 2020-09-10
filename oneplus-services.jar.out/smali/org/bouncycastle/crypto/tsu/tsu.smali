@@ -48,7 +48,7 @@
 
     iput-object p1, p0, Lorg/bouncycastle/crypto/tsu/tsu;->Voa:Lorg/bouncycastle/crypto/zta;
 
-    invoke-direct {p0}, Lorg/bouncycastle/crypto/tsu/tsu;->Qt()Z
+    invoke-direct {p0}, Lorg/bouncycastle/crypto/tsu/tsu;->Pt()Z
 
     move-result p1
 
@@ -72,7 +72,7 @@
 
     iput-object p1, p0, Lorg/bouncycastle/crypto/tsu/tsu;->Voa:Lorg/bouncycastle/crypto/zta;
 
-    invoke-direct {p0}, Lorg/bouncycastle/crypto/tsu/tsu;->Qt()Z
+    invoke-direct {p0}, Lorg/bouncycastle/crypto/tsu/tsu;->Pt()Z
 
     move-result p1
 
@@ -98,7 +98,7 @@
 
     iput-object p1, p0, Lorg/bouncycastle/crypto/tsu/tsu;->Voa:Lorg/bouncycastle/crypto/zta;
 
-    invoke-direct {p0}, Lorg/bouncycastle/crypto/tsu/tsu;->Qt()Z
+    invoke-direct {p0}, Lorg/bouncycastle/crypto/tsu/tsu;->Pt()Z
 
     move-result p1
 
@@ -113,7 +113,7 @@
     return-void
 .end method
 
-.method private Qt()Z
+.method private Pt()Z
     .locals 3
 
     new-instance v0, Lorg/bouncycastle/crypto/tsu/you;
@@ -832,7 +832,7 @@
 
     check-cast v0, Lorg/bouncycastle/crypto/wtn/hmo;
 
-    invoke-virtual {v0}, Lorg/bouncycastle/crypto/wtn/hmo;->hj()Ljava/security/SecureRandom;
+    invoke-virtual {v0}, Lorg/bouncycastle/crypto/wtn/hmo;->gj()Ljava/security/SecureRandom;
 
     move-result-object v1
 
@@ -859,7 +859,7 @@
 
     if-eqz p1, :cond_1
 
-    invoke-static {}, Lorg/bouncycastle/crypto/igw;->gj()Ljava/security/SecureRandom;
+    invoke-static {}, Lorg/bouncycastle/crypto/igw;->fj()Ljava/security/SecureRandom;
 
     move-result-object v1
 

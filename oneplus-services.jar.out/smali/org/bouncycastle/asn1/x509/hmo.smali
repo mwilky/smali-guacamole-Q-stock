@@ -468,7 +468,7 @@
     return-object p0
 .end method
 
-.method public ti()Lorg/bouncycastle/asn1/bvj;
+.method public si()Lorg/bouncycastle/asn1/bvj;
     .locals 0
 
     iget-object p0, p0, Lorg/bouncycastle/asn1/x509/hmo;->id:Lorg/bouncycastle/asn1/bvj;

@@ -19,31 +19,31 @@
 
 
 # static fields
-.field private static final Aw:I = 0xc
+.field private static final Aw:I = 0xd
 
-.field private static final Bw:I = 0xd
+.field private static final Bw:I = 0xe
 
 .field private static final CONFIG_NAME:Ljava/lang/String; = "RamBoost"
 
-.field private static final Cw:I = 0xe
+.field private static final Cw:I = 0x10
 
-.field private static final Dw:I = 0x10
+.field private static final Dw:Ljava/lang/String; = "ramboost"
 
 .field private static final Ew:Ljava/lang/String; = "ramboost"
 
-.field private static final Fw:Ljava/lang/String; = "ramboost"
+.field private static final Fw:Ljava/lang/String; = "hotcount"
 
-.field private static final Gw:Ljava/lang/String; = "hotcount"
+.field private static final Gw:Ljava/lang/String; = "ioppreload"
 
-.field private static final Hw:Ljava/lang/String; = "ioppreload"
+.field private static final Hw:Ljava/lang/String; = "iop"
 
 .field public static final IN_USING:Z
-
-.field private static final Iw:Ljava/lang/String; = "iop"
 
 .field private static Lv:Z = false
 
 .field private static final MSG_GET_ONLINECONFIG:I = 0x1
+
+.field private static final MSG_INIT_ONLINECONFIG:I = 0x2
 
 .field private static Mv:Z = false
 
@@ -119,31 +119,31 @@
 
 .field private static ow:Ljava/lang/String; = null
 
-.field private static final qw:I = 0x2
+.field private static final qw:I = 0x3
 
-.field private static final rw:I = 0x3
+.field private static final rw:I = 0x4
 
 .field private static sDebug:Z = false
 
 .field private static sEnable:Z = false
 
-.field private static final sw:I = 0x4
+.field private static final sw:I = 0x5
 
-.field private static final tw:I = 0x5
+.field private static final tw:I = 0x6
 
-.field private static final uw:I = 0x6
+.field private static final uw:I = 0x7
 
 .field private static final vk:J = 0x5265c00L
 
-.field private static final vw:I = 0x7
+.field private static final vw:I = 0x8
 
-.field private static final ww:I = 0x8
+.field private static final ww:I = 0x9
 
-.field private static final xw:I = 0x9
+.field private static final xw:I = 0xa
 
-.field private static final yw:I = 0xa
+.field private static final yw:I = 0xb
 
-.field private static final zw:I = 0xb
+.field private static final zw:I = 0xc
 
 
 # instance fields
@@ -428,7 +428,7 @@
     return-void
 .end method
 
-.method private Bn()Landroid/net/LocalSocket;
+.method private An()Landroid/net/LocalSocket;
     .locals 2
 
     :try_start_0
@@ -480,7 +480,7 @@
     return-object p0
 .end method
 
-.method private Cn()V
+.method private Bn()V
     .locals 4
 
     sget-boolean v0, Lcom/android/server/am/j;->sDebug:Z
@@ -563,7 +563,7 @@
     throw p0
 .end method
 
-.method private Dn()Ljava/lang/String;
+.method private Cn()Ljava/lang/String;
     .locals 3
 
     new-instance v0, Ljava/lang/StringBuilder;
@@ -651,7 +651,7 @@
     throw p0
 .end method
 
-.method private En()Z
+.method private Dn()Z
     .locals 2
 
     iget-object p0, p0, Lcom/android/server/am/j;->mResolver:Landroid/content/ContentResolver;
@@ -674,7 +674,7 @@
     return v0
 .end method
 
-.method private Fn()I
+.method private En()I
     .locals 10
 
     sget-boolean v0, Lcom/android/server/am/j;->sDebug:Z
@@ -1005,7 +1005,7 @@
     return v2
 .end method
 
-.method private Gn()I
+.method private Fn()I
     .locals 7
 
     sget-boolean v0, Lcom/android/server/am/j;->Lv:Z
@@ -1017,7 +1017,7 @@
     return v1
 
     :cond_0
-    invoke-direct {p0}, Lcom/android/server/am/j;->Dn()Ljava/lang/String;
+    invoke-direct {p0}, Lcom/android/server/am/j;->Cn()Ljava/lang/String;
 
     move-result-object v0
 
@@ -1030,7 +1030,7 @@
 
     move-result-object v2
 
-    invoke-direct {p0}, Lcom/android/server/am/j;->Bn()Landroid/net/LocalSocket;
+    invoke-direct {p0}, Lcom/android/server/am/j;->An()Landroid/net/LocalSocket;
 
     move-result-object p0
 
@@ -1281,7 +1281,7 @@
 
     move-result-object v0
 
-    invoke-direct {p0}, Lcom/android/server/am/j;->Bn()Landroid/net/LocalSocket;
+    invoke-direct {p0}, Lcom/android/server/am/j;->An()Landroid/net/LocalSocket;
 
     move-result-object p0
 
@@ -1803,7 +1803,7 @@
     throw p0
 .end method
 
-.method private nm()V
+.method private mm()V
     .locals 3
 
     new-instance v0, Ljava/lang/StringBuilder;
@@ -2811,7 +2811,7 @@
 .method static synthetic rtg(Lcom/android/server/am/j;)I
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/am/j;->Fn()I
+    invoke-direct {p0}, Lcom/android/server/am/j;->En()I
 
     move-result p0
 
@@ -2880,7 +2880,7 @@
 .method static synthetic sis(Lcom/android/server/am/j;)I
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/am/j;->Gn()I
+    invoke-direct {p0}, Lcom/android/server/am/j;->Fn()I
 
     move-result p0
 
@@ -2918,7 +2918,7 @@
 .method static synthetic tsu(Lcom/android/server/am/j;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/am/j;->Cn()V
+    invoke-direct {p0}, Lcom/android/server/am/j;->Bn()V
 
     return-void
 .end method
@@ -3320,7 +3320,7 @@
     return-void
 
     :cond_0
-    invoke-direct {p0}, Lcom/android/server/am/j;->En()Z
+    invoke-direct {p0}, Lcom/android/server/am/j;->Dn()Z
 
     move-result v0
 
@@ -3330,7 +3330,7 @@
 
     if-nez v0, :cond_1
 
-    invoke-direct {p0}, Lcom/android/server/am/j;->Cn()V
+    invoke-direct {p0}, Lcom/android/server/am/j;->Bn()V
 
     :cond_1
     const/4 v0, 0x1
@@ -3611,7 +3611,7 @@
 
     move-result-object p3
 
-    invoke-direct {p0}, Lcom/android/server/am/j;->Bn()Landroid/net/LocalSocket;
+    invoke-direct {p0}, Lcom/android/server/am/j;->An()Landroid/net/LocalSocket;
 
     move-result-object v0
 
@@ -3943,7 +3943,7 @@
 
 
 # virtual methods
-.method public fc()V
+.method public ec()V
     .locals 4
 
     sget-boolean v0, Lcom/android/server/am/j;->Mv:Z

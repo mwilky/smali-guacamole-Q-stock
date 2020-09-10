@@ -166,7 +166,7 @@
 
     iput v1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/ec/rtg$zta;->strength:I
 
-    invoke-static {}, Lorg/bouncycastle/crypto/igw;->gj()Ljava/security/SecureRandom;
+    invoke-static {}, Lorg/bouncycastle/crypto/igw;->fj()Ljava/security/SecureRandom;
 
     move-result-object v1
 
@@ -204,7 +204,7 @@
 
     iput v0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/ec/rtg$zta;->strength:I
 
-    invoke-static {}, Lorg/bouncycastle/crypto/igw;->gj()Ljava/security/SecureRandom;
+    invoke-static {}, Lorg/bouncycastle/crypto/igw;->fj()Ljava/security/SecureRandom;
 
     move-result-object v0
 
@@ -631,11 +631,11 @@
 
     move-result-object v4
 
-    invoke-virtual {v0}, Lorg/bouncycastle/asn1/ibl/vju;->Ri()Ljava/math/BigInteger;
+    invoke-virtual {v0}, Lorg/bouncycastle/asn1/ibl/vju;->Qi()Ljava/math/BigInteger;
 
     move-result-object v5
 
-    invoke-virtual {v0}, Lorg/bouncycastle/asn1/ibl/vju;->Qi()Ljava/math/BigInteger;
+    invoke-virtual {v0}, Lorg/bouncycastle/asn1/ibl/vju;->Pi()Ljava/math/BigInteger;
 
     move-result-object v6
 
@@ -709,11 +709,11 @@
 
     move-result-object v2
 
-    invoke-virtual {p1}, Lyou/zta/you/you/rtg;->Ri()Ljava/math/BigInteger;
+    invoke-virtual {p1}, Lyou/zta/you/you/rtg;->Qi()Ljava/math/BigInteger;
 
     move-result-object v3
 
-    invoke-virtual {p1}, Lyou/zta/you/you/rtg;->Qi()Ljava/math/BigInteger;
+    invoke-virtual {p1}, Lyou/zta/you/you/rtg;->Pi()Ljava/math/BigInteger;
 
     move-result-object p1
 

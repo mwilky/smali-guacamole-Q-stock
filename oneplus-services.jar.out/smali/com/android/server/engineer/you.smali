@@ -13,17 +13,17 @@
 
 
 # static fields
-.field private static final RD:Ljava/lang/String; = "sys_engineer_config_list"
+.field private static final QD:Ljava/lang/String; = "sys_engineer_config_list"
 
-.field private static final SD:Ljava/lang/String; = "/data/engineermode/sys_engineer_config_list.xml"
+.field private static final RD:Ljava/lang/String; = "/data/engineermode/sys_engineer_config_list.xml"
+
+.field private static final SD:Ljava/lang/String; = "/system/etc/sys_engineer_config_list.xml"
 
 .field private static final TAG:Ljava/lang/String; = "you"
 
-.field private static final TD:Ljava/lang/String; = "/system/etc/sys_engineer_config_list.xml"
-
 
 # instance fields
-.field private final kD:Lcom/android/server/engineer/you$zta;
+.field private final jD:Lcom/android/server/engineer/you$zta;
 
 
 # direct methods
@@ -54,7 +54,7 @@
 
     invoke-virtual {p0, p1, v0}, Lcom/android/server/engineer/bvj;->zta(Lcom/android/server/engineer/bvj$zta;Lcom/android/server/engineer/bvj$zta;)V
 
-    iput-object p2, p0, Lcom/android/server/engineer/you;->kD:Lcom/android/server/engineer/you$zta;
+    iput-object p2, p0, Lcom/android/server/engineer/you;->jD:Lcom/android/server/engineer/you$zta;
 
     :try_start_0
     invoke-virtual {p0}, Lcom/android/server/engineer/bvj;->init()V
@@ -118,7 +118,7 @@
     return p0
 .end method
 
-.method Pc()Z
+.method Oc()Z
     .locals 1
 
     const/4 v0, 0x1
@@ -129,19 +129,19 @@
 
     check-cast p0, Lcom/android/server/engineer/you$you;
 
-    invoke-virtual {p0}, Lcom/android/server/engineer/you$you;->Pc()Z
+    invoke-virtual {p0}, Lcom/android/server/engineer/you$you;->Oc()Z
 
     move-result p0
 
     return p0
 .end method
 
-.method public Rc()V
+.method public Qc()V
     .locals 1
 
-    invoke-super {p0}, Lcom/android/server/engineer/bvj;->Rc()V
+    invoke-super {p0}, Lcom/android/server/engineer/bvj;->Qc()V
 
-    iget-object p0, p0, Lcom/android/server/engineer/you;->kD:Lcom/android/server/engineer/you$zta;
+    iget-object p0, p0, Lcom/android/server/engineer/you;->jD:Lcom/android/server/engineer/you$zta;
 
     if-eqz p0, :cond_0
 

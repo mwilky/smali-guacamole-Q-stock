@@ -90,7 +90,7 @@
     return p0
 .end method
 
-.method public wj()I
+.method public vj()I
     .locals 0
 
     iget p0, p0, Lorg/bouncycastle/crypto/wtn/igw;->counter:I

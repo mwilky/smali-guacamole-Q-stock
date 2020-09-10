@@ -74,7 +74,7 @@
 
 
 # virtual methods
-.method public Nk()Ljava/math/BigInteger;
+.method public Mk()Ljava/math/BigInteger;
     .locals 1
 
     iget-object v0, p0, Lyou/zta/sis/zta/zgw;->iHa:Ljava/math/BigInteger;
@@ -88,7 +88,7 @@
     return-object p0
 .end method
 
-.method public Ok()Ljava/math/BigInteger;
+.method public Nk()Ljava/math/BigInteger;
     .locals 3
 
     new-instance v0, Lyou/zta/sis/zta/zgw;
@@ -109,7 +109,7 @@
 
     move-result-object p0
 
-    invoke-virtual {p0}, Lyou/zta/sis/zta/zgw;->Nk()Ljava/math/BigInteger;
+    invoke-virtual {p0}, Lyou/zta/sis/zta/zgw;->Mk()Ljava/math/BigInteger;
 
     move-result-object p0
 
@@ -249,7 +249,7 @@
 .method public intValue()I
     .locals 0
 
-    invoke-virtual {p0}, Lyou/zta/sis/zta/zgw;->Nk()Ljava/math/BigInteger;
+    invoke-virtual {p0}, Lyou/zta/sis/zta/zgw;->Mk()Ljava/math/BigInteger;
 
     move-result-object p0
 
@@ -263,7 +263,7 @@
 .method public longValue()J
     .locals 2
 
-    invoke-virtual {p0}, Lyou/zta/sis/zta/zgw;->Nk()Ljava/math/BigInteger;
+    invoke-virtual {p0}, Lyou/zta/sis/zta/zgw;->Mk()Ljava/math/BigInteger;
 
     move-result-object p0
 
@@ -410,7 +410,7 @@
     return-object p0
 
     :cond_0
-    invoke-virtual {p0}, Lyou/zta/sis/zta/zgw;->Nk()Ljava/math/BigInteger;
+    invoke-virtual {p0}, Lyou/zta/sis/zta/zgw;->Mk()Ljava/math/BigInteger;
 
     move-result-object v0
 

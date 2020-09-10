@@ -104,7 +104,7 @@
 
 
 # virtual methods
-.method public Ei()Lorg/bouncycastle/asn1/ywr;
+.method public Di()Lorg/bouncycastle/asn1/ywr;
     .locals 1
 
     iget-object p0, p0, Lorg/bouncycastle/asn1/x509/e$zta;->seq:Lorg/bouncycastle/asn1/obl;

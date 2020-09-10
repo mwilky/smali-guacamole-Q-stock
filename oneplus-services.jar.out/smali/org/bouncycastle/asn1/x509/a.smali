@@ -65,7 +65,7 @@
 
     move-result-object v0
 
-    invoke-virtual {p1}, Lorg/bouncycastle/asn1/sis;->Hg()I
+    invoke-virtual {p1}, Lorg/bouncycastle/asn1/sis;->Gg()I
 
     move-result p1
 

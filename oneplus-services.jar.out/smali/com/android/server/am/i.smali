@@ -268,7 +268,7 @@
 
     const/16 p2, 0x400
 
-    invoke-static {p0, p2}, Lcom/android/server/am/OnePlusMemoryTracker;->access$2200(Lcom/android/server/am/OnePlusMemoryTracker;I)Ljava/util/ArrayList;
+    invoke-static {p0, p2}, Lcom/android/server/am/OnePlusMemoryTracker;->access$2500(Lcom/android/server/am/OnePlusMemoryTracker;I)Ljava/util/ArrayList;
 
     move-result-object p0
 
@@ -302,11 +302,11 @@
 
     iget-object v2, p0, Lcom/android/server/am/i;->this$0:Lcom/android/server/am/OnePlusMemoryTracker;
 
-    invoke-static {v2}, Lcom/android/server/am/OnePlusMemoryTracker;->access$2300(Lcom/android/server/am/OnePlusMemoryTracker;)V
+    invoke-static {v2}, Lcom/android/server/am/OnePlusMemoryTracker;->access$2600(Lcom/android/server/am/OnePlusMemoryTracker;)V
 
     iget-object p0, p0, Lcom/android/server/am/i;->this$0:Lcom/android/server/am/OnePlusMemoryTracker;
 
-    invoke-static {p0, v0}, Lcom/android/server/am/OnePlusMemoryTracker;->access$2400(Lcom/android/server/am/OnePlusMemoryTracker;Z)Ljava/lang/String;
+    invoke-static {p0, v0}, Lcom/android/server/am/OnePlusMemoryTracker;->access$2700(Lcom/android/server/am/OnePlusMemoryTracker;Z)Ljava/lang/String;
 
     const-string p0, "============================="
 

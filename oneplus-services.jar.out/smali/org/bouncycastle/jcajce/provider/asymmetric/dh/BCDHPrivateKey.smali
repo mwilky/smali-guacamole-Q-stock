@@ -280,7 +280,7 @@
 
     move-result-object v3
 
-    invoke-virtual {p1}, Lorg/bouncycastle/asn1/ibl/tsu;->vg()Ljava/math/BigInteger;
+    invoke-virtual {p1}, Lorg/bouncycastle/asn1/ibl/tsu;->ug()Ljava/math/BigInteger;
 
     move-result-object v4
 
@@ -310,7 +310,7 @@
 
     move-result-object v5
 
-    invoke-virtual {p1}, Lorg/bouncycastle/asn1/ibl/tsu;->vg()Ljava/math/BigInteger;
+    invoke-virtual {p1}, Lorg/bouncycastle/asn1/ibl/tsu;->ug()Ljava/math/BigInteger;
 
     move-result-object v6
 
@@ -464,7 +464,7 @@
 
 
 # virtual methods
-.method Gj()Lorg/bouncycastle/crypto/wtn/kth;
+.method Fj()Lorg/bouncycastle/crypto/wtn/kth;
     .locals 6
 
     iget-object v0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dh/BCDHPrivateKey;->AEa:Lorg/bouncycastle/crypto/wtn/kth;
@@ -486,7 +486,7 @@
 
     check-cast v0, Lorg/bouncycastle/jcajce/sis/you;
 
-    invoke-virtual {v0}, Lorg/bouncycastle/jcajce/sis/you;->ug()Lorg/bouncycastle/crypto/wtn/cno;
+    invoke-virtual {v0}, Lorg/bouncycastle/jcajce/sis/you;->tg()Lorg/bouncycastle/crypto/wtn/cno;
 
     move-result-object v0
 
@@ -674,11 +674,11 @@
 
     check-cast v1, Lorg/bouncycastle/jcajce/sis/you;
 
-    invoke-virtual {v1}, Lorg/bouncycastle/jcajce/sis/you;->ug()Lorg/bouncycastle/crypto/wtn/cno;
+    invoke-virtual {v1}, Lorg/bouncycastle/jcajce/sis/you;->tg()Lorg/bouncycastle/crypto/wtn/cno;
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lorg/bouncycastle/crypto/wtn/cno;->vj()Lorg/bouncycastle/crypto/wtn/igw;
+    invoke-virtual {v1}, Lorg/bouncycastle/crypto/wtn/cno;->uj()Lorg/bouncycastle/crypto/wtn/igw;
 
     move-result-object v3
 
@@ -690,7 +690,7 @@
 
     move-result-object v5
 
-    invoke-virtual {v3}, Lorg/bouncycastle/crypto/wtn/igw;->wj()I
+    invoke-virtual {v3}, Lorg/bouncycastle/crypto/wtn/igw;->vj()I
 
     move-result v3
 
@@ -724,7 +724,7 @@
 
     move-result-object v9
 
-    invoke-virtual {v1}, Lorg/bouncycastle/crypto/wtn/cno;->vg()Ljava/math/BigInteger;
+    invoke-virtual {v1}, Lorg/bouncycastle/crypto/wtn/cno;->ug()Ljava/math/BigInteger;
 
     move-result-object v10
 

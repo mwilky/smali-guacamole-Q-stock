@@ -38,7 +38,7 @@
 
 
 # virtual methods
-.method Dg()I
+.method Cg()I
     .locals 0
 
     const/4 p0, 0x2

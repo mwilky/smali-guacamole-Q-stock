@@ -11,7 +11,7 @@
 .method public constructor <init>(Lorg/bouncycastle/crypto/wtn/ibl;Ljava/security/SecureRandom;)V
     .locals 1
 
-    invoke-virtual {p1}, Lorg/bouncycastle/crypto/wtn/ibl;->Ri()Ljava/math/BigInteger;
+    invoke-virtual {p1}, Lorg/bouncycastle/crypto/wtn/ibl;->Qi()Ljava/math/BigInteger;
 
     move-result-object v0
 
@@ -28,7 +28,7 @@
 
 
 # virtual methods
-.method public ug()Lorg/bouncycastle/crypto/wtn/ibl;
+.method public tg()Lorg/bouncycastle/crypto/wtn/ibl;
     .locals 0
 
     iget-object p0, p0, Lorg/bouncycastle/crypto/wtn/gwm;->Dza:Lorg/bouncycastle/crypto/wtn/ibl;

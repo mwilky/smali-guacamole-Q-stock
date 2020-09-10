@@ -3638,7 +3638,7 @@
 
 
 # virtual methods
-.method public Lk()I
+.method public Kk()I
     .locals 5
 
     iget-object v0, p0, Lyou/zta/sis/zta/ibl;->aHa:[J
@@ -3676,7 +3676,7 @@
     return p0
 .end method
 
-.method public Mk()I
+.method public Lk()I
     .locals 1
 
     iget-object v0, p0, Lyou/zta/sis/zta/ibl;->aHa:[J
@@ -3734,11 +3734,11 @@
     :cond_0
     check-cast p1, Lyou/zta/sis/zta/ibl;
 
-    invoke-virtual {p0}, Lyou/zta/sis/zta/ibl;->Mk()I
+    invoke-virtual {p0}, Lyou/zta/sis/zta/ibl;->Lk()I
 
     move-result v0
 
-    invoke-virtual {p1}, Lyou/zta/sis/zta/ibl;->Mk()I
+    invoke-virtual {p1}, Lyou/zta/sis/zta/ibl;->Lk()I
 
     move-result v2
 
@@ -3777,17 +3777,7 @@
     return p0
 .end method
 
-.method public getLength()I
-    .locals 0
-
-    iget-object p0, p0, Lyou/zta/sis/zta/ibl;->aHa:[J
-
-    array-length p0, p0
-
-    return p0
-.end method
-
-.method public gk()Lyou/zta/sis/zta/ibl;
+.method public fk()Lyou/zta/sis/zta/ibl;
     .locals 6
 
     iget-object v0, p0, Lyou/zta/sis/zta/ibl;->aHa:[J
@@ -3813,7 +3803,7 @@
     return-object p0
 
     :cond_0
-    invoke-virtual {p0}, Lyou/zta/sis/zta/ibl;->Mk()I
+    invoke-virtual {p0}, Lyou/zta/sis/zta/ibl;->Lk()I
 
     move-result v0
 
@@ -3838,10 +3828,20 @@
     return-object v0
 .end method
 
+.method public getLength()I
+    .locals 0
+
+    iget-object p0, p0, Lyou/zta/sis/zta/ibl;->aHa:[J
+
+    array-length p0, p0
+
+    return p0
+.end method
+
 .method public hashCode()I
     .locals 6
 
-    invoke-virtual {p0}, Lyou/zta/sis/zta/ibl;->Mk()I
+    invoke-virtual {p0}, Lyou/zta/sis/zta/ibl;->Lk()I
 
     move-result v0
 
@@ -3880,7 +3880,7 @@
     return v1
 .end method
 
-.method public ik()Z
+.method public hk()Z
     .locals 7
 
     iget-object p0, p0, Lyou/zta/sis/zta/ibl;->aHa:[J
@@ -3961,7 +3961,7 @@
     return p0
 .end method
 
-.method public kk()Z
+.method public jk()Z
     .locals 6
 
     iget-object p0, p0, Lyou/zta/sis/zta/ibl;->aHa:[J
@@ -3993,7 +3993,7 @@
 .method public rtg(I[I)Lyou/zta/sis/zta/ibl;
     .locals 7
 
-    invoke-virtual {p0}, Lyou/zta/sis/zta/ibl;->Mk()I
+    invoke-virtual {p0}, Lyou/zta/sis/zta/ibl;->Lk()I
 
     move-result p1
 
@@ -4058,7 +4058,7 @@
 .method public sis(I[I)Lyou/zta/sis/zta/ibl;
     .locals 9
 
-    invoke-virtual {p0}, Lyou/zta/sis/zta/ibl;->Mk()I
+    invoke-virtual {p0}, Lyou/zta/sis/zta/ibl;->Lk()I
 
     move-result v0
 
@@ -4131,7 +4131,7 @@
 
     move-object/from16 v1, p3
 
-    invoke-virtual/range {p0 .. p0}, Lyou/zta/sis/zta/ibl;->Lk()I
+    invoke-virtual/range {p0 .. p0}, Lyou/zta/sis/zta/ibl;->Kk()I
 
     move-result v2
 
@@ -4140,7 +4140,7 @@
     return-object p0
 
     :cond_0
-    invoke-virtual/range {p1 .. p1}, Lyou/zta/sis/zta/ibl;->Lk()I
+    invoke-virtual/range {p1 .. p1}, Lyou/zta/sis/zta/ibl;->Kk()I
 
     move-result v3
 
@@ -4464,7 +4464,7 @@
 .method public toBigInteger()Ljava/math/BigInteger;
     .locals 14
 
-    invoke-virtual {p0}, Lyou/zta/sis/zta/ibl;->Mk()I
+    invoke-virtual {p0}, Lyou/zta/sis/zta/ibl;->Lk()I
 
     move-result v0
 
@@ -4593,7 +4593,7 @@
 .method public toString()Ljava/lang/String;
     .locals 5
 
-    invoke-virtual {p0}, Lyou/zta/sis/zta/ibl;->Mk()I
+    invoke-virtual {p0}, Lyou/zta/sis/zta/ibl;->Lk()I
 
     move-result v0
 
@@ -4663,7 +4663,7 @@
 .method public tsu(Lyou/zta/sis/zta/ibl;I[I)Lyou/zta/sis/zta/ibl;
     .locals 22
 
-    invoke-virtual/range {p0 .. p0}, Lyou/zta/sis/zta/ibl;->Lk()I
+    invoke-virtual/range {p0 .. p0}, Lyou/zta/sis/zta/ibl;->Kk()I
 
     move-result v0
 
@@ -4672,7 +4672,7 @@
     return-object p0
 
     :cond_0
-    invoke-virtual/range {p1 .. p1}, Lyou/zta/sis/zta/ibl;->Lk()I
+    invoke-virtual/range {p1 .. p1}, Lyou/zta/sis/zta/ibl;->Kk()I
 
     move-result v1
 
@@ -5073,7 +5073,7 @@
 
     move-object/from16 v1, p3
 
-    invoke-virtual/range {p0 .. p0}, Lyou/zta/sis/zta/ibl;->Lk()I
+    invoke-virtual/range {p0 .. p0}, Lyou/zta/sis/zta/ibl;->Kk()I
 
     move-result v2
 
@@ -5082,7 +5082,7 @@
     return-object p0
 
     :cond_0
-    invoke-virtual/range {p1 .. p1}, Lyou/zta/sis/zta/ibl;->Lk()I
+    invoke-virtual/range {p1 .. p1}, Lyou/zta/sis/zta/ibl;->Kk()I
 
     move-result v3
 
@@ -5424,7 +5424,7 @@
 .method public zta(II[I)Lyou/zta/sis/zta/ibl;
     .locals 3
 
-    invoke-virtual {p0}, Lyou/zta/sis/zta/ibl;->Mk()I
+    invoke-virtual {p0}, Lyou/zta/sis/zta/ibl;->Lk()I
 
     move-result v0
 
@@ -5473,7 +5473,7 @@
 .method public zta(I[I)Lyou/zta/sis/zta/ibl;
     .locals 10
 
-    invoke-virtual {p0}, Lyou/zta/sis/zta/ibl;->Lk()I
+    invoke-virtual {p0}, Lyou/zta/sis/zta/ibl;->Kk()I
 
     move-result v0
 
@@ -5657,7 +5657,7 @@
 
     move-object/from16 v1, p3
 
-    invoke-virtual/range {p0 .. p0}, Lyou/zta/sis/zta/ibl;->Lk()I
+    invoke-virtual/range {p0 .. p0}, Lyou/zta/sis/zta/ibl;->Kk()I
 
     move-result v2
 
@@ -5666,7 +5666,7 @@
     return-object p0
 
     :cond_0
-    invoke-virtual/range {p1 .. p1}, Lyou/zta/sis/zta/ibl;->Lk()I
+    invoke-virtual/range {p1 .. p1}, Lyou/zta/sis/zta/ibl;->Kk()I
 
     move-result v3
 
@@ -5947,7 +5947,7 @@
 .method public zta(Lyou/zta/sis/zta/ibl;I)V
     .locals 3
 
-    invoke-virtual {p1}, Lyou/zta/sis/zta/ibl;->Mk()I
+    invoke-virtual {p1}, Lyou/zta/sis/zta/ibl;->Lk()I
 
     move-result v0
 

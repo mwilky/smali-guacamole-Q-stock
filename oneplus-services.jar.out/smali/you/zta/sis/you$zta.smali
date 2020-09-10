@@ -33,7 +33,7 @@
     return-void
 .end method
 
-.method private static Yt()Lyou/zta/sis/you$zta;
+.method private static Xt()Lyou/zta/sis/you$zta;
     .locals 3
 
     new-instance v0, Lyou/zta/sis/you$zta;
@@ -47,7 +47,7 @@
     return-object v0
 .end method
 
-.method private static Zt()Lyou/zta/sis/you$zta;
+.method private static Yt()Lyou/zta/sis/you$zta;
     .locals 3
 
     new-instance v0, Lyou/zta/sis/you$zta;
@@ -64,7 +64,7 @@
 .method static synthetic access$000()Lyou/zta/sis/you$zta;
     .locals 1
 
-    invoke-static {}, Lyou/zta/sis/you$zta;->Yt()Lyou/zta/sis/you$zta;
+    invoke-static {}, Lyou/zta/sis/you$zta;->Xt()Lyou/zta/sis/you$zta;
 
     move-result-object v0
 
@@ -74,7 +74,7 @@
 .method static synthetic access$200()Lyou/zta/sis/you$zta;
     .locals 1
 
-    invoke-static {}, Lyou/zta/sis/you$zta;->Zt()Lyou/zta/sis/you$zta;
+    invoke-static {}, Lyou/zta/sis/you$zta;->Yt()Lyou/zta/sis/you$zta;
 
     move-result-object v0
 
@@ -105,7 +105,7 @@
 
 
 # virtual methods
-.method public Qj()Ljava/math/BigInteger;
+.method public Pj()Ljava/math/BigInteger;
     .locals 0
 
     iget-object p0, p0, Lyou/zta/sis/you$zta;->factor:Ljava/math/BigInteger;
@@ -113,7 +113,7 @@
     return-object p0
 .end method
 
-.method public Rj()Z
+.method public Qj()Z
     .locals 1
 
     iget-boolean v0, p0, Lyou/zta/sis/you$zta;->bGa:Z
@@ -135,7 +135,7 @@
     return p0
 .end method
 
-.method public Sj()Z
+.method public Rj()Z
     .locals 0
 
     iget-boolean p0, p0, Lyou/zta/sis/you$zta;->bGa:Z

@@ -49,7 +49,7 @@
 
     new-instance v1, Lorg/bouncycastle/crypto/bvj;
 
-    invoke-static {}, Lorg/bouncycastle/crypto/igw;->gj()Ljava/security/SecureRandom;
+    invoke-static {}, Lorg/bouncycastle/crypto/igw;->fj()Ljava/security/SecureRandom;
 
     move-result-object v2
 
@@ -85,7 +85,7 @@
     if-nez p2, :cond_0
 
     :try_start_0
-    invoke-static {}, Lorg/bouncycastle/crypto/igw;->gj()Ljava/security/SecureRandom;
+    invoke-static {}, Lorg/bouncycastle/crypto/igw;->fj()Ljava/security/SecureRandom;
 
     move-result-object p2
 

@@ -62,7 +62,7 @@
 
 
 # virtual methods
-.method Pj()Z
+.method Oj()Z
     .locals 1
 
     iget p0, p0, Lorg/bouncycastle/jce/provider/bvj;->ZFa:I
@@ -84,7 +84,7 @@
     return p0
 .end method
 
-.method ci()I
+.method bi()I
     .locals 0
 
     iget p0, p0, Lorg/bouncycastle/jce/provider/bvj;->ZFa:I
@@ -103,7 +103,7 @@
 
     iget p0, p0, Lorg/bouncycastle/jce/provider/bvj;->ZFa:I
 
-    invoke-virtual {p1}, Lorg/bouncycastle/jce/provider/bvj;->ci()I
+    invoke-virtual {p1}, Lorg/bouncycastle/jce/provider/bvj;->bi()I
 
     move-result p1
 
@@ -121,7 +121,7 @@
 
     iget v0, p0, Lorg/bouncycastle/jce/provider/bvj;->ZFa:I
 
-    invoke-virtual {p1}, Lorg/bouncycastle/jce/provider/bvj;->ci()I
+    invoke-virtual {p1}, Lorg/bouncycastle/jce/provider/bvj;->bi()I
 
     move-result p1
 
@@ -149,7 +149,7 @@
 
     iget v0, p0, Lorg/bouncycastle/jce/provider/bvj;->ZFa:I
 
-    invoke-virtual {p1}, Lorg/bouncycastle/jce/provider/bvj;->ci()I
+    invoke-virtual {p1}, Lorg/bouncycastle/jce/provider/bvj;->bi()I
 
     move-result p1
 

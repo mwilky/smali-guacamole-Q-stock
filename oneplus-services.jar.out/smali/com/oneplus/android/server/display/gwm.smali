@@ -173,7 +173,7 @@
 
     const/4 v1, 0x0
 
-    const/16 v2, 0xdd
+    const/16 v2, 0xde
 
     aput v2, v0, v1
 
@@ -1902,7 +1902,7 @@
     return-object v0
 .end method
 
-.method public _e()[I
+.method public Ze()[I
     .locals 0
 
     sget-object p0, Lcom/oneplus/android/server/display/gwm;->Hea:[I
@@ -1910,7 +1910,7 @@
     return-object p0
 .end method
 
-.method public af()I
+.method public _e()I
     .locals 0
 
     sget p0, Lcom/oneplus/android/server/display/gwm;->Eea:I
@@ -1918,7 +1918,7 @@
     return p0
 .end method
 
-.method public bf()I
+.method public af()I
     .locals 0
 
     sget p0, Lcom/oneplus/android/server/display/gwm;->Dea:I
@@ -1926,7 +1926,7 @@
     return p0
 .end method
 
-.method public cf()[[I
+.method public bf()[[I
     .locals 10
 
     const/4 p0, 0x6
@@ -2068,6 +2068,106 @@
     return-object v0
 .end method
 
+.method public cf()[[I
+    .locals 3
+
+    const/4 p0, 0x6
+
+    new-array p0, p0, [[I
+
+    const/4 v0, 0x3
+
+    new-array v1, v0, [I
+
+    fill-array-data v1, :array_0
+
+    const/4 v2, 0x0
+
+    aput-object v1, p0, v2
+
+    new-array v1, v0, [I
+
+    fill-array-data v1, :array_1
+
+    const/4 v2, 0x1
+
+    aput-object v1, p0, v2
+
+    new-array v1, v0, [I
+
+    fill-array-data v1, :array_2
+
+    const/4 v2, 0x2
+
+    aput-object v1, p0, v2
+
+    new-array v1, v0, [I
+
+    fill-array-data v1, :array_3
+
+    aput-object v1, p0, v0
+
+    new-array v1, v0, [I
+
+    fill-array-data v1, :array_4
+
+    const/4 v2, 0x4
+
+    aput-object v1, p0, v2
+
+    new-array v0, v0, [I
+
+    fill-array-data v0, :array_5
+
+    const/4 v1, 0x5
+
+    aput-object v0, p0, v1
+
+    return-object p0
+
+    :array_0
+    .array-data 4
+        0xff
+        0x0
+        0x0
+    .end array-data
+
+    :array_1
+    .array-data 4
+        0x0
+        0xff
+        0x0
+    .end array-data
+
+    :array_2
+    .array-data 4
+        0x0
+        0x0
+        0xff
+    .end array-data
+
+    :array_3
+    .array-data 4
+        0x0
+        0xff
+        0xff
+    .end array-data
+
+    :array_4
+    .array-data 4
+        0xff
+        0x0
+        0xff
+    .end array-data
+
+    :array_5
+    .array-data 4
+        0xff
+        0xff
+        0x0
+    .end array-data
+.end method
+
 .method public df()[[I
     .locals 3
 
@@ -2168,107 +2268,7 @@
     .end array-data
 .end method
 
-.method public ef()[[I
-    .locals 3
-
-    const/4 p0, 0x6
-
-    new-array p0, p0, [[I
-
-    const/4 v0, 0x3
-
-    new-array v1, v0, [I
-
-    fill-array-data v1, :array_0
-
-    const/4 v2, 0x0
-
-    aput-object v1, p0, v2
-
-    new-array v1, v0, [I
-
-    fill-array-data v1, :array_1
-
-    const/4 v2, 0x1
-
-    aput-object v1, p0, v2
-
-    new-array v1, v0, [I
-
-    fill-array-data v1, :array_2
-
-    const/4 v2, 0x2
-
-    aput-object v1, p0, v2
-
-    new-array v1, v0, [I
-
-    fill-array-data v1, :array_3
-
-    aput-object v1, p0, v0
-
-    new-array v1, v0, [I
-
-    fill-array-data v1, :array_4
-
-    const/4 v2, 0x4
-
-    aput-object v1, p0, v2
-
-    new-array v0, v0, [I
-
-    fill-array-data v0, :array_5
-
-    const/4 v1, 0x5
-
-    aput-object v0, p0, v1
-
-    return-object p0
-
-    :array_0
-    .array-data 4
-        0xff
-        0x0
-        0x0
-    .end array-data
-
-    :array_1
-    .array-data 4
-        0x0
-        0xff
-        0x0
-    .end array-data
-
-    :array_2
-    .array-data 4
-        0x0
-        0x0
-        0xff
-    .end array-data
-
-    :array_3
-    .array-data 4
-        0x0
-        0xff
-        0xff
-    .end array-data
-
-    :array_4
-    .array-data 4
-        0xff
-        0x0
-        0xff
-    .end array-data
-
-    :array_5
-    .array-data 4
-        0xff
-        0xff
-        0x0
-    .end array-data
-.end method
-
-.method public ff()[I
+.method public ef()[I
     .locals 0
 
     sget-object p0, Lcom/oneplus/android/server/display/gwm;->Gea:[I
@@ -2276,7 +2276,7 @@
     return-object p0
 .end method
 
-.method public gf()[[I
+.method public ff()[[I
     .locals 3
 
     const/4 p0, 0x6

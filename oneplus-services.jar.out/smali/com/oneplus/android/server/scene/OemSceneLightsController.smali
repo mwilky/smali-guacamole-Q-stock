@@ -338,7 +338,7 @@
 
 
 # virtual methods
-.method public vf()Lcom/oneplus/android/server/scene/OemSceneLightsController$ZenModeLedController;
+.method public uf()Lcom/oneplus/android/server/scene/OemSceneLightsController$ZenModeLedController;
     .locals 1
 
     iget-object v0, p0, Lcom/oneplus/android/server/scene/OemSceneLightsController;->Tga:Lcom/oneplus/android/server/scene/OemSceneLightsController$ZenModeLedController;

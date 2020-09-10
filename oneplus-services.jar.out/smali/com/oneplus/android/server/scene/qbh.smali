@@ -52,7 +52,7 @@
     return-void
 .end method
 
-.method private Is()V
+.method private Hs()V
     .locals 1
 
     iget-boolean v0, p0, Lcom/oneplus/android/server/scene/qbh;->qga:Z
@@ -191,7 +191,7 @@
     return-void
 .end method
 
-.method public mf()V
+.method public lf()V
     .locals 4
 
     new-instance v0, Ljava/lang/StringBuilder;
@@ -214,7 +214,7 @@
 
     invoke-direct {p0, v0}, Lcom/oneplus/android/server/scene/qbh;->logd(Ljava/lang/String;)V
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/scene/qbh;->Is()V
+    invoke-direct {p0}, Lcom/oneplus/android/server/scene/qbh;->Hs()V
 
     const/4 v0, 0x1
 

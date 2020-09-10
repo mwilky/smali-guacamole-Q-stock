@@ -184,7 +184,7 @@
     :cond_4
     new-array v2, v0, [I
 
-    const/16 v4, 0xfb
+    const/16 v4, 0xfc
 
     aput v4, v2, v3
 
@@ -535,7 +535,7 @@
     :cond_f
     new-array v2, v0, [I
 
-    const/16 v4, 0xc2
+    const/16 v4, 0xc3
 
     aput v4, v2, v3
 
@@ -568,7 +568,7 @@
 
     new-array v2, v0, [I
 
-    const/16 v4, 0xac
+    const/16 v4, 0xad
 
     aput v4, v2, v3
 
@@ -591,7 +591,7 @@
     :cond_11
     new-array v2, v0, [I
 
-    const/16 v4, 0xb2
+    const/16 v4, 0xb3
 
     aput v4, v2, v3
 
@@ -660,7 +660,7 @@
     :cond_14
     new-array v2, v0, [I
 
-    const/16 v4, 0xb0
+    const/16 v4, 0xb1
 
     aput v4, v2, v3
 
@@ -739,7 +739,7 @@
     :cond_17
     new-array v2, v0, [I
 
-    const/16 v4, 0xb1
+    const/16 v4, 0xb2
 
     aput v4, v2, v3
 
@@ -796,7 +796,7 @@
     :cond_1a
     new-array v1, v0, [I
 
-    const/16 v2, 0xb3
+    const/16 v2, 0xb4
 
     aput v2, v1, v3
 
@@ -819,7 +819,7 @@
     :cond_1b
     new-array v1, v0, [I
 
-    const/16 v2, 0xb4
+    const/16 v2, 0xb5
 
     aput v2, v1, v3
 
@@ -842,7 +842,7 @@
     :cond_1c
     new-array v1, v0, [I
 
-    const/16 v2, 0xb5
+    const/16 v2, 0xb6
 
     aput v2, v1, v3
 
@@ -865,7 +865,7 @@
     :cond_1d
     new-array v1, v0, [I
 
-    const/16 v2, 0xb6
+    const/16 v2, 0xb7
 
     aput v2, v1, v3
 
@@ -990,7 +990,7 @@
     :cond_22
     new-array v1, v0, [I
 
-    const/16 v2, 0xb7
+    const/16 v2, 0xb8
 
     aput v2, v1, v3
 
@@ -1036,7 +1036,7 @@
     :cond_24
     new-array v1, v0, [I
 
-    const/16 v2, 0xc0
+    const/16 v2, 0xc1
 
     aput v2, v1, v3
 
@@ -1093,7 +1093,7 @@
 
     new-array v1, v0, [I
 
-    const/16 v2, 0xc1
+    const/16 v2, 0xc2
 
     aput v2, v1, v3
 
@@ -1116,7 +1116,7 @@
     :cond_26
     new-array v1, v0, [I
 
-    const/16 v2, 0xc3
+    const/16 v2, 0xc4
 
     aput v2, v1, v3
 
@@ -1139,7 +1139,7 @@
     :cond_27
     new-array v1, v0, [I
 
-    const/16 v2, 0xc5
+    const/16 v2, 0xc6
 
     aput v2, v1, v3
 
@@ -1182,7 +1182,7 @@
 
     new-array v1, v0, [I
 
-    const/16 v2, 0xc4
+    const/16 v2, 0xc5
 
     aput v2, v1, v3
 
@@ -1247,7 +1247,7 @@
     :cond_2b
     new-array v1, v0, [I
 
-    const/16 v2, 0xc6
+    const/16 v2, 0xc7
 
     aput v2, v1, v3
 
@@ -1349,7 +1349,7 @@
 
     new-array v1, v0, [I
 
-    const/16 v2, 0xd5
+    const/16 v2, 0xd6
 
     aput v2, v1, v3
 
@@ -1395,7 +1395,7 @@
     :cond_31
     new-array v1, v0, [I
 
-    const/16 v2, 0xd1
+    const/16 v2, 0xd2
 
     aput v2, v1, v3
 
@@ -1490,7 +1490,7 @@
 
     new-array v0, v0, [I
 
-    const/16 v1, 0xff
+    const/16 v1, 0x100
 
     aput v1, v0, v3
 
@@ -1500,17 +1500,32 @@
 
     if-eqz v0, :cond_33
 
-    iget-object p0, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->cca:Landroid/util/ArrayMap;
+    iget-object v0, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->cca:Landroid/util/ArrayMap;
 
-    sget-object v0, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_batterystats_service:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
+    sget-object v1, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_batterystats_service:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
-    new-instance v1, Lcom/android/server/am/s;
+    new-instance v2, Lcom/android/server/am/s;
 
-    invoke-direct {v1, p1}, Lcom/android/server/am/s;-><init>(Landroid/content/Context;)V
+    invoke-direct {v2, p1}, Lcom/android/server/am/s;-><init>(Landroid/content/Context;)V
 
-    invoke-virtual {p0, v0, v1}, Landroid/util/ArrayMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v1, v2}, Landroid/util/ArrayMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     :cond_33
+    sget-boolean p1, Lcom/oneplus/theme/OpFontHelperInjector;->sFeatureEnable:Z
+
+    if-eqz p1, :cond_34
+
+    iget-object p0, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->cca:Landroid/util/ArrayMap;
+
+    sget-object p1, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_font_controller:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
+
+    new-instance v0, Lcom/oneplus/server/theme/OnePlusFontController;
+
+    invoke-direct {v0}, Lcom/oneplus/server/theme/OnePlusFontController;-><init>()V
+
+    invoke-virtual {p0, p1, v0}, Landroid/util/ArrayMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    :cond_34
     return-void
 .end method
 
@@ -1955,7 +1970,7 @@
     :cond_8
     new-array v1, p1, [I
 
-    const/16 v2, 0xac
+    const/16 v2, 0xad
 
     aput v2, v1, v3
 
@@ -1984,7 +1999,7 @@
     :cond_9
     new-array p1, p1, [I
 
-    const/16 v1, 0xfb
+    const/16 v1, 0xfc
 
     aput v1, p1, v3
 
@@ -2183,7 +2198,7 @@
     :cond_3
     new-array v1, v0, [I
 
-    const/16 v2, 0xfb
+    const/16 v2, 0xfc
 
     aput v2, v1, v3
 
@@ -2297,7 +2312,7 @@
     :cond_9
     new-array v1, v0, [I
 
-    const/16 v2, 0xb5
+    const/16 v2, 0xb6
 
     aput v2, v1, v3
 
@@ -2414,7 +2429,7 @@
     :cond_e
     new-array v1, v0, [I
 
-    const/16 v2, 0x103
+    const/16 v2, 0x105
 
     aput v2, v1, v3
 
@@ -2452,7 +2467,7 @@
     :cond_10
     new-array v0, v0, [I
 
-    const/16 v1, 0xb0
+    const/16 v1, 0xb1
 
     aput v1, v0, v3
 

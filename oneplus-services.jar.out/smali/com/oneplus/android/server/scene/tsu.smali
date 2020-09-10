@@ -348,7 +348,7 @@
 
     iget-object v0, p0, Lcom/oneplus/android/server/scene/tsu;->jga:Lcom/oneplus/android/server/scene/cgv;
 
-    invoke-virtual {v0}, Lcom/oneplus/android/server/scene/cgv;->qf()V
+    invoke-virtual {v0}, Lcom/oneplus/android/server/scene/cgv;->pf()V
 
     :cond_0
     iget-object v0, p0, Lcom/oneplus/android/server/scene/tsu;->mWindowManager:Landroid/view/WindowManager;

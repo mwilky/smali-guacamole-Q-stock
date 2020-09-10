@@ -585,7 +585,7 @@
     throw p0
 .end method
 
-.method private Yc()V
+.method private Xc()V
     .locals 3
 
     const-string p0, "OnePlusDuallteManager"
@@ -876,16 +876,16 @@
 .method private init()V
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/am/ivd;->nn()V
+    invoke-direct {p0}, Lcom/android/server/am/ivd;->mn()V
 
     invoke-virtual {p0}, Lcom/android/server/am/ivd;->initOnlineConfig()V
 
-    invoke-direct {p0}, Lcom/android/server/am/ivd;->on()V
+    invoke-direct {p0}, Lcom/android/server/am/ivd;->nn()V
 
     return-void
 .end method
 
-.method private ln()V
+.method private kn()V
     .locals 7
 
     sget-object v0, Lcom/android/server/am/ivd;->Fr:Ljava/lang/Object;
@@ -982,7 +982,7 @@
     throw p0
 .end method
 
-.method private mn()V
+.method private ln()V
     .locals 2
 
     sget v0, Lcom/android/server/am/ivd;->Pr:I
@@ -1021,7 +1021,7 @@
     return-void
 .end method
 
-.method private nn()V
+.method private mn()V
     .locals 3
 
     sget-object v0, Lcom/android/server/am/ivd;->Fr:Ljava/lang/Object;
@@ -1199,7 +1199,7 @@
     throw p0
 .end method
 
-.method private on()V
+.method private nn()V
     .locals 7
 
     const-string v0, "persist.radio.duallte.operated"
@@ -1286,7 +1286,7 @@
     return-void
 .end method
 
-.method private pn()Z
+.method private on()Z
     .locals 0
 
     sget-boolean p0, Lcom/android/server/am/ivd;->Rr:Z
@@ -1308,7 +1308,7 @@
     return p0
 .end method
 
-.method private qn()V
+.method private pn()V
     .locals 4
 
     sget-boolean v0, Lcom/android/server/am/ivd;->DBG:Z
@@ -1380,6 +1380,216 @@
     invoke-virtual {p0, v0}, Landroid/os/Handler;->sendMessage(Landroid/os/Message;)Z
 
     :cond_2
+    return-void
+.end method
+
+.method private qn()V
+    .locals 9
+
+    sget-boolean p0, Lcom/android/server/am/ivd;->DBG:Z
+
+    const-string v0, "OnePlusDuallteManager"
+
+    if-eqz p0, :cond_0
+
+    const-string p0, "setDuallteTest"
+
+    invoke-static {v0, p0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    :cond_0
+    const-string p0, "org.codeaurora.internal.IExtTelephony"
+
+    :try_start_0
+    invoke-static {p0}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
+
+    move-result-object p0
+
+    invoke-virtual {p0}, Ljava/lang/Class;->getMethods()[Ljava/lang/reflect/Method;
+
+    move-result-object v1
+
+    array-length v2, v1
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    const/4 v3, 0x0
+
+    move v4, v3
+
+    :goto_0
+    const-string v5, ", "
+
+    if-ge v4, v2, :cond_1
+
+    :try_start_1
+    aget-object v6, v1, v4
+
+    new-instance v7, Ljava/lang/StringBuilder;
+
+    invoke-direct {v7}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v8, "getMethods:"
+
+    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v6}, Ljava/lang/reflect/Method;->getName()Ljava/lang/String;
+
+    move-result-object v6
+
+    invoke-virtual {v7, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v7, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v7}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v5
+
+    invoke-static {v0, v5}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    add-int/lit8 v4, v4, 0x1
+
+    goto :goto_0
+
+    :cond_1
+    invoke-virtual {p0}, Ljava/lang/Class;->getDeclaredMethods()[Ljava/lang/reflect/Method;
+
+    move-result-object v1
+
+    array-length v2, v1
+
+    move v4, v3
+
+    :goto_1
+    if-ge v4, v2, :cond_2
+
+    aget-object v6, v1, v4
+
+    new-instance v7, Ljava/lang/StringBuilder;
+
+    invoke-direct {v7}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v8, "getDeclaredMethods:"
+
+    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v6}, Ljava/lang/reflect/Method;->getName()Ljava/lang/String;
+
+    move-result-object v6
+
+    invoke-virtual {v7, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v7, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v7}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v6
+
+    invoke-static {v0, v6}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    add-int/lit8 v4, v4, 0x1
+
+    goto :goto_1
+
+    :cond_2
+    const-string v1, "extphone"
+
+    invoke-static {v1}, Landroid/os/ServiceManager;->getService(Ljava/lang/String;)Landroid/os/IBinder;
+
+    move-result-object v1
+    :try_end_1
+    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
+
+    const-string v2, "org.codeaurora.internal.IExtTelephony$Stub"
+
+    :try_start_2
+    invoke-static {v2}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
+
+    move-result-object v2
+
+    const-string v4, "asInterface"
+
+    const/4 v5, 0x1
+
+    new-array v6, v5, [Ljava/lang/Class;
+
+    const-class v7, Landroid/os/IBinder;
+
+    aput-object v7, v6, v3
+
+    invoke-virtual {v2, v4, v6}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+
+    move-result-object v2
+
+    const/4 v4, 0x0
+
+    new-array v6, v5, [Ljava/lang/Object;
+
+    aput-object v1, v6, v3
+
+    invoke-virtual {v2, v4, v6}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v1
+
+    const-string v2, "generalSetter"
+
+    const/4 v4, 0x2
+
+    new-array v6, v4, [Ljava/lang/Class;
+
+    const-class v7, Ljava/lang/String;
+
+    aput-object v7, v6, v3
+
+    const-class v7, Landroid/os/Bundle;
+
+    aput-object v7, v6, v5
+
+    invoke-virtual {p0, v2, v6}, Ljava/lang/Class;->getDeclaredMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+
+    move-result-object p0
+
+    invoke-virtual {p0, v5}, Ljava/lang/reflect/Method;->setAccessible(Z)V
+
+    new-array v2, v4, [Ljava/lang/Object;
+
+    const-string v4, "oemDualLteSwitch"
+
+    aput-object v4, v2, v3
+
+    new-instance v3, Landroid/os/Bundle;
+
+    invoke-direct {v3}, Landroid/os/Bundle;-><init>()V
+
+    aput-object v3, v2, v5
+
+    invoke-virtual {p0, v1, v2}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+    :try_end_2
+    .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_0
+
+    goto :goto_2
+
+    :catch_0
+    move-exception p0
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v2, "setDuallteTest() exception: "
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-static {v0, v1}, Landroid/util/Slog;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    invoke-virtual {p0}, Ljava/lang/Exception;->printStackTrace()V
+
+    :goto_2
     return-void
 .end method
 
@@ -1881,220 +2091,10 @@
     throw p1
 .end method
 
-.method private rn()V
-    .locals 9
-
-    sget-boolean p0, Lcom/android/server/am/ivd;->DBG:Z
-
-    const-string v0, "OnePlusDuallteManager"
-
-    if-eqz p0, :cond_0
-
-    const-string p0, "setDuallteTest"
-
-    invoke-static {v0, p0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    :cond_0
-    const-string p0, "org.codeaurora.internal.IExtTelephony"
-
-    :try_start_0
-    invoke-static {p0}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
-
-    move-result-object p0
-
-    invoke-virtual {p0}, Ljava/lang/Class;->getMethods()[Ljava/lang/reflect/Method;
-
-    move-result-object v1
-
-    array-length v2, v1
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
-
-    const/4 v3, 0x0
-
-    move v4, v3
-
-    :goto_0
-    const-string v5, ", "
-
-    if-ge v4, v2, :cond_1
-
-    :try_start_1
-    aget-object v6, v1, v4
-
-    new-instance v7, Ljava/lang/StringBuilder;
-
-    invoke-direct {v7}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v8, "getMethods:"
-
-    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v6}, Ljava/lang/reflect/Method;->getName()Ljava/lang/String;
-
-    move-result-object v6
-
-    invoke-virtual {v7, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v7, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v7}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v5
-
-    invoke-static {v0, v5}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    add-int/lit8 v4, v4, 0x1
-
-    goto :goto_0
-
-    :cond_1
-    invoke-virtual {p0}, Ljava/lang/Class;->getDeclaredMethods()[Ljava/lang/reflect/Method;
-
-    move-result-object v1
-
-    array-length v2, v1
-
-    move v4, v3
-
-    :goto_1
-    if-ge v4, v2, :cond_2
-
-    aget-object v6, v1, v4
-
-    new-instance v7, Ljava/lang/StringBuilder;
-
-    invoke-direct {v7}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v8, "getDeclaredMethods:"
-
-    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v6}, Ljava/lang/reflect/Method;->getName()Ljava/lang/String;
-
-    move-result-object v6
-
-    invoke-virtual {v7, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v7, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v7}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v6
-
-    invoke-static {v0, v6}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    add-int/lit8 v4, v4, 0x1
-
-    goto :goto_1
-
-    :cond_2
-    const-string v1, "extphone"
-
-    invoke-static {v1}, Landroid/os/ServiceManager;->getService(Ljava/lang/String;)Landroid/os/IBinder;
-
-    move-result-object v1
-    :try_end_1
-    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
-
-    const-string v2, "org.codeaurora.internal.IExtTelephony$Stub"
-
-    :try_start_2
-    invoke-static {v2}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
-
-    move-result-object v2
-
-    const-string v4, "asInterface"
-
-    const/4 v5, 0x1
-
-    new-array v6, v5, [Ljava/lang/Class;
-
-    const-class v7, Landroid/os/IBinder;
-
-    aput-object v7, v6, v3
-
-    invoke-virtual {v2, v4, v6}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
-
-    move-result-object v2
-
-    const/4 v4, 0x0
-
-    new-array v6, v5, [Ljava/lang/Object;
-
-    aput-object v1, v6, v3
-
-    invoke-virtual {v2, v4, v6}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v1
-
-    const-string v2, "generalSetter"
-
-    const/4 v4, 0x2
-
-    new-array v6, v4, [Ljava/lang/Class;
-
-    const-class v7, Ljava/lang/String;
-
-    aput-object v7, v6, v3
-
-    const-class v7, Landroid/os/Bundle;
-
-    aput-object v7, v6, v5
-
-    invoke-virtual {p0, v2, v6}, Ljava/lang/Class;->getDeclaredMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
-
-    move-result-object p0
-
-    invoke-virtual {p0, v5}, Ljava/lang/reflect/Method;->setAccessible(Z)V
-
-    new-array v2, v4, [Ljava/lang/Object;
-
-    const-string v4, "oemDualLteSwitch"
-
-    aput-object v4, v2, v3
-
-    new-instance v3, Landroid/os/Bundle;
-
-    invoke-direct {v3}, Landroid/os/Bundle;-><init>()V
-
-    aput-object v3, v2, v5
-
-    invoke-virtual {p0, v1, v2}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
-    :try_end_2
-    .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_0
-
-    goto :goto_2
-
-    :catch_0
-    move-exception p0
-
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v2, "setDuallteTest() exception: "
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-static {v0, v1}, Landroid/util/Slog;->e(Ljava/lang/String;Ljava/lang/String;)I
-
-    invoke-virtual {p0}, Ljava/lang/Exception;->printStackTrace()V
-
-    :goto_2
-    return-void
-.end method
-
 .method static synthetic rtg(Lcom/android/server/am/ivd;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/am/ivd;->rn()V
+    invoke-direct {p0}, Lcom/android/server/am/ivd;->qn()V
 
     return-void
 .end method
@@ -2170,7 +2170,7 @@
 .method static synthetic sis(Lcom/android/server/am/ivd;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/am/ivd;->Yc()V
+    invoke-direct {p0}, Lcom/android/server/am/ivd;->Xc()V
 
     return-void
 .end method
@@ -2186,7 +2186,7 @@
 .method static synthetic tsu(Lcom/android/server/am/ivd;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/am/ivd;->ln()V
+    invoke-direct {p0}, Lcom/android/server/am/ivd;->kn()V
 
     return-void
 .end method
@@ -2417,7 +2417,7 @@
     goto :goto_0
 
     :cond_1
-    invoke-direct {p0}, Lcom/android/server/am/ivd;->qn()V
+    invoke-direct {p0}, Lcom/android/server/am/ivd;->pn()V
 
     :cond_2
     :goto_0
@@ -2435,7 +2435,7 @@
 .method static synthetic zta(Lcom/android/server/am/ivd;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/am/ivd;->mn()V
+    invoke-direct {p0}, Lcom/android/server/am/ivd;->ln()V
 
     return-void
 .end method
@@ -2539,7 +2539,7 @@
     goto :goto_0
 
     :cond_1
-    invoke-direct {p0}, Lcom/android/server/am/ivd;->qn()V
+    invoke-direct {p0}, Lcom/android/server/am/ivd;->pn()V
 
     :cond_2
     :goto_0
@@ -2709,7 +2709,7 @@
     return-void
 
     :cond_3
-    invoke-direct {p0}, Lcom/android/server/am/ivd;->pn()Z
+    invoke-direct {p0}, Lcom/android/server/am/ivd;->on()Z
 
     move-result v0
 

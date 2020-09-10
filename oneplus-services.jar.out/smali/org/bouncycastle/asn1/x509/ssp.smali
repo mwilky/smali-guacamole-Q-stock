@@ -279,7 +279,7 @@
 
 
 # virtual methods
-.method public Sh()Lorg/bouncycastle/asn1/x509/sis;
+.method public Rh()Lorg/bouncycastle/asn1/x509/sis;
     .locals 0
 
     iget-object p0, p0, Lorg/bouncycastle/asn1/x509/ssp;->Lta:Lorg/bouncycastle/asn1/x509/sis;

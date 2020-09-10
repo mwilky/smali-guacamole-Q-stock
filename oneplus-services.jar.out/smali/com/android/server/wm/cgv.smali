@@ -180,6 +180,8 @@
     .end annotation
 .end field
 
+.field private Yw:Lcom/android/server/am/ActivityManagerService;
+
 .field private ZV:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -189,8 +191,6 @@
         }
     .end annotation
 .end field
-
-.field private Zw:Lcom/android/server/am/ActivityManagerService;
 
 .field private _V:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
@@ -480,41 +480,7 @@
     return-void
 .end method
 
-.method private Aq()V
-    .locals 2
-
-    const-string v0, "OpQuickReply"
-
-    const-string v1, "dismissInputMethod"
-
-    invoke-static {v0, v1}, Landroid/util/Slog;->i(Ljava/lang/String;Ljava/lang/String;)I
-
-    iget-object v0, p0, Lcom/android/server/wm/cgv;->mInputMethodManagerInternal:Lcom/android/server/inputmethod/InputMethodManagerInternal;
-
-    if-nez v0, :cond_0
-
-    const-class v0, Lcom/android/server/inputmethod/InputMethodManagerInternal;
-
-    invoke-static {v0}, Lcom/android/server/LocalServices;->getService(Ljava/lang/Class;)Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Lcom/android/server/inputmethod/InputMethodManagerInternal;
-
-    iput-object v0, p0, Lcom/android/server/wm/cgv;->mInputMethodManagerInternal:Lcom/android/server/inputmethod/InputMethodManagerInternal;
-
-    :cond_0
-    iget-object p0, p0, Lcom/android/server/wm/cgv;->mInputMethodManagerInternal:Lcom/android/server/inputmethod/InputMethodManagerInternal;
-
-    if-eqz p0, :cond_1
-
-    invoke-virtual {p0}, Lcom/android/server/inputmethod/InputMethodManagerInternal;->hideCurrentInputMethod()V
-
-    :cond_1
-    return-void
-.end method
-
-.method private Bq()Ljava/lang/String;
+.method private Aq()Ljava/lang/String;
     .locals 1
 
     iget-object v0, p0, Lcom/android/server/wm/cgv;->FV:Lcom/android/server/wm/WindowManagerService;
@@ -548,7 +514,7 @@
     return-object p0
 .end method
 
-.method private Cq()V
+.method private Bq()V
     .locals 7
 
     iget-object v0, p0, Lcom/android/server/wm/cgv;->RV:Lcom/android/internal/view/IInputMethodManager;
@@ -607,7 +573,7 @@
 
     iget-object v3, v3, Lcom/android/server/wm/DisplayContent;->mFocusedApp:Lcom/android/server/wm/AppWindowToken;
 
-    invoke-direct {p0}, Lcom/android/server/wm/cgv;->xq()V
+    invoke-direct {p0}, Lcom/android/server/wm/cgv;->wq()V
 
     sget-boolean v4, Landroid/os/Build;->DEBUG_ONEPLUS:Z
 
@@ -618,7 +584,7 @@
     invoke-static {v1, v4}, Landroid/util/Slog;->w(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_3
-    invoke-direct {p0}, Lcom/android/server/wm/cgv;->zq()V
+    invoke-direct {p0}, Lcom/android/server/wm/cgv;->yq()V
 
     invoke-direct {p0, v2}, Lcom/android/server/wm/cgv;->yc(Ljava/lang/String;)Z
 
@@ -639,7 +605,7 @@
     :cond_4
     invoke-direct {p0, v0}, Lcom/android/server/wm/cgv;->Yb(I)V
 
-    iget-object v4, p0, Lcom/android/server/wm/cgv;->Zw:Lcom/android/server/am/ActivityManagerService;
+    iget-object v4, p0, Lcom/android/server/wm/cgv;->Yw:Lcom/android/server/am/ActivityManagerService;
 
     invoke-virtual {v4, v2, v0}, Lcom/android/server/am/ActivityManagerService;->killApplicationProcess(Ljava/lang/String;I)V
 
@@ -729,7 +695,7 @@
 
     invoke-direct {p0, v6}, Lcom/android/server/wm/cgv;->Yb(I)V
 
-    iget-object v6, p0, Lcom/android/server/wm/cgv;->Zw:Lcom/android/server/am/ActivityManagerService;
+    iget-object v6, p0, Lcom/android/server/wm/cgv;->Yw:Lcom/android/server/am/ActivityManagerService;
 
     iget v4, v4, Landroid/content/pm/ApplicationInfo;->uid:I
 
@@ -766,7 +732,7 @@
     return-void
 .end method
 
-.method private Dq()V
+.method private Cq()V
     .locals 9
 
     iget-object v0, p0, Lcom/android/server/wm/cgv;->mContext:Landroid/content/Context;
@@ -874,10 +840,10 @@
     return-void
 .end method
 
-.method private Eq()V
+.method private Dq()V
     .locals 3
 
-    invoke-direct {p0}, Lcom/android/server/wm/cgv;->Fq()V
+    invoke-direct {p0}, Lcom/android/server/wm/cgv;->Eq()V
 
     iget-object v0, p0, Lcom/android/server/wm/cgv;->aW:Landroid/view/View;
 
@@ -950,7 +916,7 @@
     return-void
 .end method
 
-.method private Fq()V
+.method private Eq()V
     .locals 2
 
     iget-object v0, p0, Lcom/android/server/wm/cgv;->MV:Lcom/android/server/wm/cgv$zta;
@@ -986,7 +952,7 @@
     return-void
 .end method
 
-.method private Gq()V
+.method private Fq()V
     .locals 2
 
     iget-object v0, p0, Lcom/android/server/wm/cgv;->KV:Landroid/view/WindowManager$LayoutParams;
@@ -1019,7 +985,7 @@
     return-void
 .end method
 
-.method private Hq()V
+.method private Gq()V
     .locals 11
 
     new-instance v0, Landroid/util/DisplayMetrics;
@@ -1440,12 +1406,12 @@
 
     invoke-virtual {v0, v1}, Landroid/view/WindowManager$LayoutParams;->setTitle(Ljava/lang/CharSequence;)V
 
-    invoke-direct {p0}, Lcom/android/server/wm/cgv;->Jq()V
+    invoke-direct {p0}, Lcom/android/server/wm/cgv;->Iq()V
 
     return-void
 .end method
 
-.method private Iq()V
+.method private Hq()V
     .locals 5
 
     invoke-direct {p0}, Lcom/android/server/wm/cgv;->getAppBounds()Landroid/graphics/Rect;
@@ -1643,7 +1609,7 @@
     return-void
 .end method
 
-.method private Jq()V
+.method private Iq()V
     .locals 6
 
     iget-object v0, p0, Lcom/android/server/wm/cgv;->mDisplayFrames:Lcom/android/server/wm/DisplayFrames;
@@ -1897,7 +1863,7 @@
     return-void
 .end method
 
-.method private Kq()V
+.method private Jq()V
     .locals 4
 
     :try_start_0
@@ -1921,7 +1887,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/server/wm/cgv;->Zw:Lcom/android/server/am/ActivityManagerService;
+    iget-object v1, p0, Lcom/android/server/wm/cgv;->Yw:Lcom/android/server/am/ActivityManagerService;
 
     iget v0, v0, Lcom/android/server/wm/TaskRecord;->taskId:I
 
@@ -1934,9 +1900,9 @@
     invoke-virtual {v1, v0, v2, v3}, Lcom/android/server/am/ActivityManagerService;->resizeTask(ILandroid/graphics/Rect;I)V
 
     :cond_0
-    invoke-direct {p0}, Lcom/android/server/wm/cgv;->Jq()V
-
     invoke-direct {p0}, Lcom/android/server/wm/cgv;->Iq()V
+
+    invoke-direct {p0}, Lcom/android/server/wm/cgv;->Hq()V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -2150,7 +2116,7 @@
 
     iget-object p1, p0, Lcom/android/server/wm/cgv;->bW:Landroid/view/View;
 
-    invoke-direct {p0}, Lcom/android/server/wm/cgv;->Jq()V
+    invoke-direct {p0}, Lcom/android/server/wm/cgv;->Iq()V
 
     if-nez p1, :cond_1
 
@@ -2320,7 +2286,7 @@
 .method static synthetic bio(Lcom/android/server/wm/cgv;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/wm/cgv;->Gq()V
+    invoke-direct {p0}, Lcom/android/server/wm/cgv;->Fq()V
 
     return-void
 .end method
@@ -2336,7 +2302,7 @@
 .method static synthetic cno(Lcom/android/server/wm/cgv;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/wm/cgv;->Eq()V
+    invoke-direct {p0}, Lcom/android/server/wm/cgv;->Dq()V
 
     return-void
 .end method
@@ -2344,7 +2310,7 @@
 .method static synthetic dma(Lcom/android/server/wm/cgv;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/wm/cgv;->xq()V
+    invoke-direct {p0}, Lcom/android/server/wm/cgv;->wq()V
 
     return-void
 .end method
@@ -2352,7 +2318,7 @@
 .method static synthetic gck(Lcom/android/server/wm/cgv;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/wm/cgv;->Hq()V
+    invoke-direct {p0}, Lcom/android/server/wm/cgv;->Gq()V
 
     return-void
 .end method
@@ -2360,7 +2326,7 @@
 .method private getAppBounds()Landroid/graphics/Rect;
     .locals 0
 
-    iget-object p0, p0, Lcom/android/server/wm/cgv;->Zw:Lcom/android/server/am/ActivityManagerService;
+    iget-object p0, p0, Lcom/android/server/wm/cgv;->Yw:Lcom/android/server/am/ActivityManagerService;
 
     iget-object p0, p0, Lcom/android/server/am/ActivityManagerService;->mActivityTaskManager:Lcom/android/server/wm/ActivityTaskManagerService;
 
@@ -2464,7 +2430,7 @@
 .method static synthetic igw(Lcom/android/server/wm/cgv;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/wm/cgv;->Kq()V
+    invoke-direct {p0}, Lcom/android/server/wm/cgv;->Jq()V
 
     return-void
 .end method
@@ -2512,7 +2478,7 @@
 
     iput-object v0, p0, Lcom/android/server/wm/cgv;->mSettingsObserver:Lcom/android/server/wm/cgv$sis;
 
-    invoke-direct {p0}, Lcom/android/server/wm/cgv;->Hq()V
+    invoke-direct {p0}, Lcom/android/server/wm/cgv;->Gq()V
 
     return-void
 .end method
@@ -2520,7 +2486,7 @@
 .method static synthetic kth(Lcom/android/server/wm/cgv;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/wm/cgv;->Fq()V
+    invoke-direct {p0}, Lcom/android/server/wm/cgv;->Eq()V
 
     return-void
 .end method
@@ -2536,7 +2502,7 @@
 .method static synthetic qbh(Lcom/android/server/wm/cgv;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/wm/cgv;->Cq()V
+    invoke-direct {p0}, Lcom/android/server/wm/cgv;->Bq()V
 
     return-void
 .end method
@@ -2544,7 +2510,7 @@
 .method static synthetic rtg(Lcom/android/server/wm/cgv;)Lcom/android/server/am/ActivityManagerService;
     .locals 0
 
-    iget-object p0, p0, Lcom/android/server/wm/cgv;->Zw:Lcom/android/server/am/ActivityManagerService;
+    iget-object p0, p0, Lcom/android/server/wm/cgv;->Yw:Lcom/android/server/am/ActivityManagerService;
 
     return-object p0
 .end method
@@ -2560,7 +2526,7 @@
 .method static synthetic sis(Lcom/android/server/wm/cgv;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/wm/cgv;->Jq()V
+    invoke-direct {p0}, Lcom/android/server/wm/cgv;->Iq()V
 
     return-void
 .end method
@@ -2568,7 +2534,7 @@
 .method static synthetic ssp(Lcom/android/server/wm/cgv;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/wm/cgv;->yq()V
+    invoke-direct {p0}, Lcom/android/server/wm/cgv;->xq()V
 
     return-void
 .end method
@@ -2622,7 +2588,7 @@
 
     iput-boolean v1, p0, Lcom/android/server/wm/cgv;->QV:Z
 
-    invoke-direct {p0}, Lcom/android/server/wm/cgv;->Cq()V
+    invoke-direct {p0}, Lcom/android/server/wm/cgv;->Bq()V
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -2696,15 +2662,7 @@
     return p0
 .end method
 
-.method static synthetic wtn(Lcom/android/server/wm/cgv;)V
-    .locals 0
-
-    invoke-direct {p0}, Lcom/android/server/wm/cgv;->Aq()V
-
-    return-void
-.end method
-
-.method private xq()V
+.method private wq()V
     .locals 2
 
     iget-object v0, p0, Lcom/android/server/wm/cgv;->mPerfLock:Lcom/oneplus/sdk/utils/OpBoostFramework;
@@ -2729,35 +2687,15 @@
     return-void
 .end method
 
-.method private yc(Ljava/lang/String;)Z
+.method static synthetic wtn(Lcom/android/server/wm/cgv;)V
     .locals 0
 
-    sget-object p0, Lcom/android/server/wm/cgv;->PW:Ljava/util/List;
-
-    invoke-interface {p0, p1}, Ljava/util/List;->contains(Ljava/lang/Object;)Z
-
-    move-result p0
-
-    return p0
-.end method
-
-.method static synthetic you(Lcom/android/server/wm/cgv;)Landroid/util/ArrayMap;
-    .locals 0
-
-    iget-object p0, p0, Lcom/android/server/wm/cgv;->YV:Landroid/util/ArrayMap;
-
-    return-object p0
-.end method
-
-.method static synthetic you(Lcom/android/server/wm/cgv;I)V
-    .locals 0
-
-    invoke-direct {p0, p1}, Lcom/android/server/wm/cgv;->Zb(I)V
+    invoke-direct {p0}, Lcom/android/server/wm/cgv;->zq()V
 
     return-void
 .end method
 
-.method private yq()V
+.method private xq()V
     .locals 5
 
     iget-object v0, p0, Lcom/android/server/wm/cgv;->aW:Landroid/view/View;
@@ -2772,7 +2710,7 @@
 
     iput v1, v0, Landroid/view/WindowManager$LayoutParams;->alpha:F
 
-    invoke-direct {p0}, Lcom/android/server/wm/cgv;->Iq()V
+    invoke-direct {p0}, Lcom/android/server/wm/cgv;->Hq()V
 
     iget-object v0, p0, Lcom/android/server/wm/cgv;->mContext:Landroid/content/Context;
 
@@ -2827,7 +2765,7 @@
 
     iput v1, v0, Landroid/view/WindowManager$LayoutParams;->alpha:F
 
-    invoke-direct {p0}, Lcom/android/server/wm/cgv;->Iq()V
+    invoke-direct {p0}, Lcom/android/server/wm/cgv;->Hq()V
 
     iget-object v0, p0, Lcom/android/server/wm/cgv;->mContext:Landroid/content/Context;
 
@@ -2866,7 +2804,7 @@
 
     if-nez v0, :cond_2
 
-    invoke-direct {p0}, Lcom/android/server/wm/cgv;->Iq()V
+    invoke-direct {p0}, Lcom/android/server/wm/cgv;->Hq()V
 
     iget-object v0, p0, Lcom/android/server/wm/cgv;->mContext:Landroid/content/Context;
 
@@ -2901,6 +2839,44 @@
     invoke-interface {v0, v1, p0}, Landroid/view/WindowManager;->addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
 
     :cond_2
+    return-void
+.end method
+
+.method private yc(Ljava/lang/String;)Z
+    .locals 0
+
+    sget-object p0, Lcom/android/server/wm/cgv;->PW:Ljava/util/List;
+
+    invoke-interface {p0, p1}, Ljava/util/List;->contains(Ljava/lang/Object;)Z
+
+    move-result p0
+
+    return p0
+.end method
+
+.method static synthetic you(Lcom/android/server/wm/cgv;)Landroid/util/ArrayMap;
+    .locals 0
+
+    iget-object p0, p0, Lcom/android/server/wm/cgv;->YV:Landroid/util/ArrayMap;
+
+    return-object p0
+.end method
+
+.method static synthetic you(Lcom/android/server/wm/cgv;I)V
+    .locals 0
+
+    invoke-direct {p0, p1}, Lcom/android/server/wm/cgv;->Zb(I)V
+
+    return-void
+.end method
+
+.method private yq()V
+    .locals 0
+
+    iget-object p0, p0, Lcom/android/server/wm/cgv;->ZV:Ljava/util/ArrayList;
+
+    invoke-virtual {p0}, Ljava/util/ArrayList;->clear()V
+
     return-void
 .end method
 
@@ -3185,12 +3161,36 @@
 .end method
 
 .method private zq()V
-    .locals 0
+    .locals 2
 
-    iget-object p0, p0, Lcom/android/server/wm/cgv;->ZV:Ljava/util/ArrayList;
+    const-string v0, "OpQuickReply"
 
-    invoke-virtual {p0}, Ljava/util/ArrayList;->clear()V
+    const-string v1, "dismissInputMethod"
 
+    invoke-static {v0, v1}, Landroid/util/Slog;->i(Ljava/lang/String;Ljava/lang/String;)I
+
+    iget-object v0, p0, Lcom/android/server/wm/cgv;->mInputMethodManagerInternal:Lcom/android/server/inputmethod/InputMethodManagerInternal;
+
+    if-nez v0, :cond_0
+
+    const-class v0, Lcom/android/server/inputmethod/InputMethodManagerInternal;
+
+    invoke-static {v0}, Lcom/android/server/LocalServices;->getService(Ljava/lang/Class;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/android/server/inputmethod/InputMethodManagerInternal;
+
+    iput-object v0, p0, Lcom/android/server/wm/cgv;->mInputMethodManagerInternal:Lcom/android/server/inputmethod/InputMethodManagerInternal;
+
+    :cond_0
+    iget-object p0, p0, Lcom/android/server/wm/cgv;->mInputMethodManagerInternal:Lcom/android/server/inputmethod/InputMethodManagerInternal;
+
+    if-eqz p0, :cond_1
+
+    invoke-virtual {p0}, Lcom/android/server/inputmethod/InputMethodManagerInternal;->hideCurrentInputMethod()V
+
+    :cond_1
     return-void
 .end method
 
@@ -3434,7 +3434,7 @@
     if-eqz v3, :cond_0
 
     :cond_3
-    iget-object v3, p0, Lcom/android/server/wm/cgv;->Zw:Lcom/android/server/am/ActivityManagerService;
+    iget-object v3, p0, Lcom/android/server/wm/cgv;->Yw:Lcom/android/server/am/ActivityManagerService;
 
     iget-object v3, v3, Lcom/android/server/am/ActivityManagerService;->mActivityTaskManager:Lcom/android/server/wm/ActivityTaskManagerService;
 
@@ -3982,7 +3982,7 @@
 
     if-eqz p2, :cond_1
 
-    invoke-direct {p0}, Lcom/android/server/wm/cgv;->Bq()Ljava/lang/String;
+    invoke-direct {p0}, Lcom/android/server/wm/cgv;->Aq()Ljava/lang/String;
 
     move-result-object p1
 
@@ -4712,7 +4712,7 @@
 
     if-eqz p1, :cond_2
 
-    invoke-direct {p0}, Lcom/android/server/wm/cgv;->Bq()Ljava/lang/String;
+    invoke-direct {p0}, Lcom/android/server/wm/cgv;->Aq()Ljava/lang/String;
 
     move-result-object p1
 
@@ -4810,7 +4810,7 @@
 .method public setAMandWM(Lcom/android/server/am/ActivityManagerService;Lcom/android/server/wm/WindowManagerService;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/android/server/wm/cgv;->Zw:Lcom/android/server/am/ActivityManagerService;
+    iput-object p1, p0, Lcom/android/server/wm/cgv;->Yw:Lcom/android/server/am/ActivityManagerService;
 
     iput-object p2, p0, Lcom/android/server/wm/cgv;->FV:Lcom/android/server/wm/WindowManagerService;
 
@@ -4843,7 +4843,7 @@
 
     if-eqz p1, :cond_0
 
-    iget-object p1, p0, Lcom/android/server/wm/cgv;->Zw:Lcom/android/server/am/ActivityManagerService;
+    iget-object p1, p0, Lcom/android/server/wm/cgv;->Yw:Lcom/android/server/am/ActivityManagerService;
 
     iget-object v2, p0, Lcom/android/server/wm/cgv;->OV:Lcom/android/server/wm/ActivityRecord;
 
@@ -5107,7 +5107,7 @@
 
     sput v0, Lcom/android/server/wm/cgv;->lW:I
 
-    invoke-direct {p0}, Lcom/android/server/wm/cgv;->Dq()V
+    invoke-direct {p0}, Lcom/android/server/wm/cgv;->Cq()V
 
     return-void
 .end method

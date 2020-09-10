@@ -25,7 +25,7 @@
 
 
 # virtual methods
-.method public Vk()[Lyou/zta/sis/zta/wtn$zta;
+.method public Uk()[Lyou/zta/sis/zta/wtn$zta;
     .locals 0
 
     iget-object p0, p0, Lyou/zta/sis/zta/cgv;->uHa:[Lyou/zta/sis/zta/wtn$zta;

@@ -75,7 +75,7 @@
 
 
 # virtual methods
-.method bj()Lorg/bouncycastle/asn1/cno;
+.method aj()Lorg/bouncycastle/asn1/cno;
     .locals 3
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -599,7 +599,7 @@
     return-object p1
 
     :cond_0
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/hmo;->bj()Lorg/bouncycastle/asn1/cno;
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/hmo;->aj()Lorg/bouncycastle/asn1/cno;
 
     move-result-object p1
 

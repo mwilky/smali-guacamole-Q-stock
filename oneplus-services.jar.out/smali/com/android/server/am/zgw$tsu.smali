@@ -126,7 +126,7 @@
     return-void
 .end method
 
-.method private km()Z
+.method private jm()Z
     .locals 2
 
     iget-object v0, p0, Lcom/android/server/am/zgw$tsu;->wj:Ljava/util/ArrayList;
@@ -257,7 +257,7 @@
 .method static synthetic zta(Lcom/android/server/am/zgw$tsu;)Z
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/am/zgw$tsu;->km()Z
+    invoke-direct {p0}, Lcom/android/server/am/zgw$tsu;->jm()Z
 
     move-result p0
 

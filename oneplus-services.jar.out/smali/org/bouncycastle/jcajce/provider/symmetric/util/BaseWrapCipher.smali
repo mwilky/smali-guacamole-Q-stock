@@ -176,7 +176,7 @@
 
     iget-object p3, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/BaseWrapCipher;->Qqa:Lorg/bouncycastle/jcajce/provider/symmetric/util/BaseWrapCipher$zta;
 
-    invoke-virtual {p3}, Lorg/bouncycastle/jcajce/provider/symmetric/util/BaseWrapCipher$zta;->Uf()[B
+    invoke-virtual {p3}, Lorg/bouncycastle/jcajce/provider/symmetric/util/BaseWrapCipher$zta;->Tf()[B
 
     move-result-object p3
 
@@ -217,7 +217,7 @@
 
     iget-object p3, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/BaseWrapCipher;->Qqa:Lorg/bouncycastle/jcajce/provider/symmetric/util/BaseWrapCipher$zta;
 
-    invoke-virtual {p3}, Lorg/bouncycastle/jcajce/provider/symmetric/util/BaseWrapCipher$zta;->Uf()[B
+    invoke-virtual {p3}, Lorg/bouncycastle/jcajce/provider/symmetric/util/BaseWrapCipher$zta;->Tf()[B
 
     move-result-object p3
 
@@ -331,7 +331,7 @@
 
     iget-object p3, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/BaseWrapCipher;->Qqa:Lorg/bouncycastle/jcajce/provider/symmetric/util/BaseWrapCipher$zta;
 
-    invoke-virtual {p3}, Lorg/bouncycastle/jcajce/provider/symmetric/util/BaseWrapCipher$zta;->Uf()[B
+    invoke-virtual {p3}, Lorg/bouncycastle/jcajce/provider/symmetric/util/BaseWrapCipher$zta;->Tf()[B
 
     move-result-object p3
 
@@ -377,7 +377,7 @@
 
     iget-object p3, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/BaseWrapCipher;->Qqa:Lorg/bouncycastle/jcajce/provider/symmetric/util/BaseWrapCipher$zta;
 
-    invoke-virtual {p3}, Lorg/bouncycastle/jcajce/provider/symmetric/util/BaseWrapCipher$zta;->Uf()[B
+    invoke-virtual {p3}, Lorg/bouncycastle/jcajce/provider/symmetric/util/BaseWrapCipher$zta;->Tf()[B
 
     move-result-object p3
 
@@ -691,13 +691,13 @@
     goto :goto_0
 
     :cond_0
-    invoke-virtual {p2}, Lorg/bouncycastle/jcajce/provider/symmetric/util/BCPBEKey;->he()Lorg/bouncycastle/crypto/kth;
+    invoke-virtual {p2}, Lorg/bouncycastle/jcajce/provider/symmetric/util/BCPBEKey;->ge()Lorg/bouncycastle/crypto/kth;
 
     move-result-object v0
 
     if-eqz v0, :cond_1
 
-    invoke-virtual {p2}, Lorg/bouncycastle/jcajce/provider/symmetric/util/BCPBEKey;->he()Lorg/bouncycastle/crypto/kth;
+    invoke-virtual {p2}, Lorg/bouncycastle/jcajce/provider/symmetric/util/BCPBEKey;->ge()Lorg/bouncycastle/crypto/kth;
 
     move-result-object p2
 

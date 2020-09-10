@@ -195,7 +195,7 @@
 
     move-result-object p1
 
-    invoke-virtual {p1}, Lorg/bouncycastle/asn1/dma/ear;->zh()Lorg/bouncycastle/asn1/x509/zta;
+    invoke-virtual {p1}, Lorg/bouncycastle/asn1/dma/ear;->yh()Lorg/bouncycastle/asn1/x509/zta;
 
     move-result-object v1
 
@@ -213,7 +213,7 @@
 
     new-instance v1, Ljava/security/spec/PSSParameterSpec;
 
-    invoke-virtual {p1}, Lorg/bouncycastle/asn1/dma/ear;->yh()Lorg/bouncycastle/asn1/x509/zta;
+    invoke-virtual {p1}, Lorg/bouncycastle/asn1/dma/ear;->xh()Lorg/bouncycastle/asn1/x509/zta;
 
     move-result-object v2
 
@@ -233,7 +233,7 @@
 
     new-instance v5, Ljava/security/spec/MGF1ParameterSpec;
 
-    invoke-virtual {p1}, Lorg/bouncycastle/asn1/dma/ear;->zh()Lorg/bouncycastle/asn1/x509/zta;
+    invoke-virtual {p1}, Lorg/bouncycastle/asn1/dma/ear;->yh()Lorg/bouncycastle/asn1/x509/zta;
 
     move-result-object v2
 
@@ -290,7 +290,7 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p1}, Lorg/bouncycastle/asn1/dma/ear;->zh()Lorg/bouncycastle/asn1/x509/zta;
+    invoke-virtual {p1}, Lorg/bouncycastle/asn1/dma/ear;->yh()Lorg/bouncycastle/asn1/x509/zta;
 
     move-result-object p1
 

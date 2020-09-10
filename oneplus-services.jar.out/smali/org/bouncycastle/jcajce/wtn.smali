@@ -271,7 +271,7 @@
 
 
 # virtual methods
-.method public Cj()Ljava/util/List;
+.method public Bj()Ljava/util/List;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -287,7 +287,7 @@
     return-object p0
 .end method
 
-.method public Dj()Ljava/util/List;
+.method public Cj()Ljava/util/List;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -303,7 +303,7 @@
     return-object p0
 .end method
 
-.method public Ej()Ljava/util/Map;
+.method public Dj()Ljava/util/Map;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -320,7 +320,7 @@
     return-object p0
 .end method
 
-.method public Fj()Ljava/util/Map;
+.method public Ej()Ljava/util/Map;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -435,12 +435,20 @@
     return-object p0
 .end method
 
-.method public hg()Lorg/bouncycastle/jcajce/cno;
+.method public gg()Lorg/bouncycastle/jcajce/cno;
     .locals 0
 
     iget-object p0, p0, Lorg/bouncycastle/jcajce/wtn;->qEa:Lorg/bouncycastle/jcajce/cno;
 
     return-object p0
+.end method
+
+.method public ig()I
+    .locals 0
+
+    iget p0, p0, Lorg/bouncycastle/jcajce/wtn;->eqa:I
+
+    return p0
 .end method
 
 .method public isAnyPolicyInhibited()Z
@@ -487,15 +495,7 @@
     return p0
 .end method
 
-.method public jg()I
-    .locals 0
-
-    iget p0, p0, Lorg/bouncycastle/jcajce/wtn;->eqa:I
-
-    return p0
-.end method
-
-.method public lg()Z
+.method public kg()Z
     .locals 0
 
     iget-boolean p0, p0, Lorg/bouncycastle/jcajce/wtn;->fqa:Z

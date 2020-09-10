@@ -95,7 +95,7 @@
 .method public ire()[B
     .locals 1
 
-    invoke-virtual {p0}, Lorg/bouncycastle/crypto/you/cno;->kj()I
+    invoke-virtual {p0}, Lorg/bouncycastle/crypto/you/cno;->jj()I
 
     move-result v0
 

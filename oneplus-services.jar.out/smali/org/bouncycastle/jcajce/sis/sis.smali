@@ -40,7 +40,7 @@
 
 
 # virtual methods
-.method public yg()Lorg/bouncycastle/asn1/x509/zta;
+.method public xg()Lorg/bouncycastle/asn1/x509/zta;
     .locals 0
 
     iget-object p0, p0, Lorg/bouncycastle/jcajce/sis/sis;->Cra:Lorg/bouncycastle/asn1/x509/zta;
@@ -48,7 +48,7 @@
     return-object p0
 .end method
 
-.method public zg()Z
+.method public yg()Z
     .locals 1
 
     sget-object v0, Lorg/bouncycastle/jcajce/sis/sis;->Dra:Lorg/bouncycastle/asn1/x509/zta;

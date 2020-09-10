@@ -141,7 +141,7 @@
 
 
 # virtual methods
-.method public Ci()Lorg/bouncycastle/asn1/bvj;
+.method public Bi()Lorg/bouncycastle/asn1/bvj;
     .locals 0
 
     iget-object p0, p0, Lorg/bouncycastle/asn1/x509/irq;->Nva:Lorg/bouncycastle/asn1/bvj;

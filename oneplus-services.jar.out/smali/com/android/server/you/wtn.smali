@@ -227,7 +227,7 @@
     return-void
 .end method
 
-.method private Zo()V
+.method private Yo()V
     .locals 2
 
     iget-object v0, p0, Lcom/android/server/you/wtn;->lO:Landroid/animation/AnimatorSet;
@@ -263,7 +263,7 @@
     return-void
 .end method
 
-.method private _o()V
+.method private Zo()V
     .locals 2
 
     iget-object v0, p0, Lcom/android/server/you/wtn;->kO:Landroid/animation/AnimatorSet;
@@ -299,15 +299,7 @@
     return-void
 .end method
 
-.method static synthetic access$200()Z
-    .locals 1
-
-    sget-boolean v0, Lcom/android/server/you/wtn;->DEBUG:Z
-
-    return v0
-.end method
-
-.method private ap()V
+.method private _o()V
     .locals 4
 
     sget-boolean v0, Lcom/android/server/you/wtn;->DEBUG:Z
@@ -401,15 +393,15 @@
     return-void
 .end method
 
-.method public static synthetic bio(Lcom/android/server/you/wtn;)V
-    .locals 0
+.method static synthetic access$200()Z
+    .locals 1
 
-    invoke-direct {p0}, Lcom/android/server/you/wtn;->ap()V
+    sget-boolean v0, Lcom/android/server/you/wtn;->DEBUG:Z
 
-    return-void
+    return v0
 .end method
 
-.method private bp()V
+.method private ap()V
     .locals 12
 
     const-string v0, "alpha"
@@ -615,15 +607,15 @@
     return-void
 .end method
 
-.method static synthetic cno(Lcom/android/server/you/wtn;)Z
+.method public static synthetic bio(Lcom/android/server/you/wtn;)V
     .locals 0
 
-    iget-boolean p0, p0, Lcom/android/server/you/wtn;->nO:Z
+    invoke-direct {p0}, Lcom/android/server/you/wtn;->_o()V
 
-    return p0
+    return-void
 .end method
 
-.method private cp()V
+.method private bp()V
     .locals 4
 
     invoke-virtual {p0}, Lcom/android/server/you/wtn;->isShowing()Z
@@ -739,7 +731,15 @@
     return-void
 .end method
 
-.method private dp()V
+.method static synthetic cno(Lcom/android/server/you/wtn;)Z
+    .locals 0
+
+    iget-boolean p0, p0, Lcom/android/server/you/wtn;->nO:Z
+
+    return p0
+.end method
+
+.method private cp()V
     .locals 17
 
     move-object/from16 v0, p0
@@ -1001,7 +1001,7 @@
 .method static synthetic kth(Lcom/android/server/you/wtn;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/you/wtn;->ap()V
+    invoke-direct {p0}, Lcom/android/server/you/wtn;->_o()V
 
     return-void
 .end method
@@ -1025,7 +1025,7 @@
 .method static synthetic ssp(Lcom/android/server/you/wtn;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/you/wtn;->cp()V
+    invoke-direct {p0}, Lcom/android/server/you/wtn;->bp()V
 
     return-void
 .end method
@@ -1231,7 +1231,7 @@
 .method public dismiss()V
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/you/wtn;->bp()V
+    invoke-direct {p0}, Lcom/android/server/you/wtn;->ap()V
 
     return-void
 .end method
@@ -1290,9 +1290,9 @@
 
     if-eqz v0, :cond_0
 
-    invoke-direct {p0}, Lcom/android/server/you/wtn;->_o()V
+    invoke-direct {p0}, Lcom/android/server/you/wtn;->Zo()V
 
-    invoke-direct {p0}, Lcom/android/server/you/wtn;->bp()V
+    invoke-direct {p0}, Lcom/android/server/you/wtn;->ap()V
 
     goto :goto_0
 
@@ -1377,7 +1377,7 @@
 
     if-eqz p2, :cond_0
 
-    invoke-direct {p0}, Lcom/android/server/you/wtn;->Zo()V
+    invoke-direct {p0}, Lcom/android/server/you/wtn;->Yo()V
 
     iget-object p2, p0, Lcom/android/server/you/wtn;->mDecor:Landroid/view/View;
 
@@ -1387,9 +1387,9 @@
 
     invoke-virtual {p0, p1}, Lcom/android/server/you/wtn;->ha(Ljava/lang/String;)V
 
-    invoke-direct {p0}, Lcom/android/server/you/wtn;->cp()V
+    invoke-direct {p0}, Lcom/android/server/you/wtn;->bp()V
 
-    invoke-direct {p0}, Lcom/android/server/you/wtn;->dp()V
+    invoke-direct {p0}, Lcom/android/server/you/wtn;->cp()V
 
     :cond_0
     return-void
@@ -1466,7 +1466,7 @@
 
     iput-boolean p1, p0, Lcom/android/server/you/wtn;->iO:Z
 
-    invoke-direct {p0}, Lcom/android/server/you/wtn;->dp()V
+    invoke-direct {p0}, Lcom/android/server/you/wtn;->cp()V
 
     return-void
 .end method

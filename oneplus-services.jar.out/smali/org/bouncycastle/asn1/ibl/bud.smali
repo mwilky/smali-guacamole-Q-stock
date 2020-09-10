@@ -18,7 +18,7 @@
 
 
 # virtual methods
-.method protected abstract fj()Lorg/bouncycastle/asn1/ibl/vju;
+.method protected abstract ej()Lorg/bouncycastle/asn1/ibl/vju;
 .end method
 
 .method public declared-synchronized getParameters()Lorg/bouncycastle/asn1/ibl/vju;
@@ -31,7 +31,7 @@
 
     if-nez v0, :cond_0
 
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/ibl/bud;->fj()Lorg/bouncycastle/asn1/ibl/vju;
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/ibl/bud;->ej()Lorg/bouncycastle/asn1/ibl/vju;
 
     move-result-object v0
 

@@ -449,7 +449,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    invoke-direct {p0}, Lcom/android/server/am/irq$bio;->Um()V
+    invoke-direct {p0}, Lcom/android/server/am/irq$bio;->Tm()V
 
     return-void
 
@@ -490,7 +490,7 @@
 
     if-eqz v0, :cond_1
 
-    invoke-direct {p0}, Lcom/android/server/am/irq$bio;->Km()Z
+    invoke-direct {p0}, Lcom/android/server/am/irq$bio;->Jm()Z
 
     move-result p1
 
@@ -567,7 +567,7 @@
 
     if-nez v0, :cond_3
 
-    invoke-direct {p0}, Lcom/android/server/am/irq$bio;->Km()Z
+    invoke-direct {p0}, Lcom/android/server/am/irq$bio;->Jm()Z
 
     move-result p1
 
@@ -660,7 +660,7 @@
 
     if-nez v0, :cond_5
 
-    invoke-direct {p0}, Lcom/android/server/am/irq$bio;->Km()Z
+    invoke-direct {p0}, Lcom/android/server/am/irq$bio;->Jm()Z
 
     move-result v0
 
@@ -682,7 +682,7 @@
     if-lez v0, :cond_7
 
     :cond_6
-    invoke-direct {p0}, Lcom/android/server/am/irq$bio;->Km()Z
+    invoke-direct {p0}, Lcom/android/server/am/irq$bio;->Jm()Z
 
     move-result v0
 
@@ -719,7 +719,7 @@
 
     if-nez v2, :cond_9
 
-    invoke-direct {p0}, Lcom/android/server/am/irq$bio;->Km()Z
+    invoke-direct {p0}, Lcom/android/server/am/irq$bio;->Jm()Z
 
     move-result v2
 
@@ -800,7 +800,7 @@
 
     invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-direct {p0}, Lcom/android/server/am/irq$bio;->Km()Z
+    invoke-direct {p0}, Lcom/android/server/am/irq$bio;->Jm()Z
 
     move-result v1
 
@@ -1268,7 +1268,7 @@
     throw v0
 
     :cond_b
-    invoke-direct {p0}, Lcom/android/server/am/irq$bio;->Sm()V
+    invoke-direct {p0}, Lcom/android/server/am/irq$bio;->Rm()V
     :try_end_4
     .catch Ljava/lang/Exception; {:try_start_4 .. :try_end_4} :catch_0
 
@@ -1418,7 +1418,7 @@
     return-void
 .end method
 
-.method private Km()Z
+.method private Jm()Z
     .locals 1
 
     monitor-enter p0
@@ -1440,7 +1440,7 @@
     throw v0
 .end method
 
-.method private Lm()Ljava/util/HashSet;
+.method private Km()Ljava/util/HashSet;
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -1476,7 +1476,7 @@
     throw v0
 .end method
 
-.method private Mm()Ljava/util/HashSet;
+.method private Lm()Ljava/util/HashSet;
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -1512,7 +1512,7 @@
     throw v0
 .end method
 
-.method private Nm()Z
+.method private Mm()Z
     .locals 8
 
     invoke-direct {p0}, Lcom/android/server/am/irq$bio;->isEmbryo()Z
@@ -1580,7 +1580,7 @@
     throw v0
 .end method
 
-.method private Om()Z
+.method private Nm()Z
     .locals 4
 
     iget-object v0, p0, Lcom/android/server/am/irq$bio;->Sn:Ljava/util/HashMap;
@@ -1658,7 +1658,7 @@
     return p0
 .end method
 
-.method private Pm()Z
+.method private Om()Z
     .locals 3
 
     const/4 v0, -0x1
@@ -1696,7 +1696,7 @@
 
     if-eqz v2, :cond_0
 
-    invoke-direct {v2}, Lcom/android/server/am/irq$bio;->Km()Z
+    invoke-direct {v2}, Lcom/android/server/am/irq$bio;->Jm()Z
 
     move-result v2
 
@@ -1714,7 +1714,7 @@
     return p0
 .end method
 
-.method private Qm()I
+.method private Pm()I
     .locals 9
 
     const/4 v0, -0x1
@@ -1751,7 +1751,7 @@
 
     invoke-static {v7, v8, v4}, Landroid/os/Trace;->traceBegin(JLjava/lang/String;)V
 
-    invoke-direct {p0}, Lcom/android/server/am/irq$bio;->Pm()Z
+    invoke-direct {p0}, Lcom/android/server/am/irq$bio;->Om()Z
 
     move-result v4
 
@@ -1796,7 +1796,7 @@
 
     invoke-static {v7, v8, v4}, Landroid/os/Trace;->traceBegin(JLjava/lang/String;)V
 
-    invoke-direct {p0}, Lcom/android/server/am/irq$bio;->Om()Z
+    invoke-direct {p0}, Lcom/android/server/am/irq$bio;->Nm()Z
 
     move-result v4
 
@@ -1816,7 +1816,7 @@
 
     invoke-static {v7, v8, v4}, Landroid/os/Trace;->traceBegin(JLjava/lang/String;)V
 
-    invoke-direct {p0}, Lcom/android/server/am/irq$bio;->Om()Z
+    invoke-direct {p0}, Lcom/android/server/am/irq$bio;->Nm()Z
 
     move-result v4
 
@@ -1837,7 +1837,7 @@
 
     invoke-static {v7, v8, v4}, Landroid/os/Trace;->traceBegin(JLjava/lang/String;)V
 
-    invoke-direct {p0}, Lcom/android/server/am/irq$bio;->Pm()Z
+    invoke-direct {p0}, Lcom/android/server/am/irq$bio;->Om()Z
 
     move-result v4
 
@@ -1957,7 +1957,7 @@
     return v3
 .end method
 
-.method private Rm()V
+.method private Qm()V
     .locals 4
 
     monitor-enter p0
@@ -1996,7 +1996,7 @@
     throw v0
 .end method
 
-.method private Sm()V
+.method private Rm()V
     .locals 1
 
     monitor-enter p0
@@ -2020,7 +2020,7 @@
     throw v0
 .end method
 
-.method private Tm()V
+.method private Sm()V
     .locals 1
 
     monitor-enter p0
@@ -2044,7 +2044,7 @@
     throw v0
 .end method
 
-.method private Um()V
+.method private Tm()V
     .locals 4
 
     new-instance v0, Ljava/util/HashSet;
@@ -2560,7 +2560,7 @@
 
     if-eqz v0, :cond_0
 
-    invoke-direct {v0}, Lcom/android/server/am/irq$bio;->Km()Z
+    invoke-direct {v0}, Lcom/android/server/am/irq$bio;->Jm()Z
 
     move-result v1
 
@@ -2616,7 +2616,7 @@
 
     if-eqz p2, :cond_3
 
-    invoke-direct {p2}, Lcom/android/server/am/irq$bio;->Km()Z
+    invoke-direct {p2}, Lcom/android/server/am/irq$bio;->Jm()Z
 
     move-result v0
 
@@ -2956,7 +2956,7 @@
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-direct {v0}, Lcom/android/server/am/irq$bio;->Km()Z
+    invoke-direct {v0}, Lcom/android/server/am/irq$bio;->Jm()Z
 
     move-result v0
 
@@ -4470,7 +4470,7 @@
 .method static synthetic rtg(Lcom/android/server/am/irq$bio;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/am/irq$bio;->Rm()V
+    invoke-direct {p0}, Lcom/android/server/am/irq$bio;->Qm()V
 
     return-void
 .end method
@@ -4701,7 +4701,7 @@
 
     invoke-direct {v9, v11}, Lcom/android/server/am/irq$bio;->Ya(I)V
 
-    invoke-direct {v9}, Lcom/android/server/am/irq$bio;->Nm()Z
+    invoke-direct {v9}, Lcom/android/server/am/irq$bio;->Mm()Z
 
     move-result v11
 
@@ -5540,7 +5540,7 @@
 .method static synthetic sis(Lcom/android/server/am/irq$bio;)Ljava/util/HashSet;
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/am/irq$bio;->Mm()Ljava/util/HashSet;
+    invoke-direct {p0}, Lcom/android/server/am/irq$bio;->Lm()Ljava/util/HashSet;
 
     move-result-object p0
 
@@ -5588,7 +5588,7 @@
     return-void
 
     :cond_0
-    invoke-direct {p0}, Lcom/android/server/am/irq$bio;->Km()Z
+    invoke-direct {p0}, Lcom/android/server/am/irq$bio;->Jm()Z
 
     move-result v0
 
@@ -5710,7 +5710,7 @@
 .method static synthetic tsu(Lcom/android/server/am/irq$bio;)Z
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/am/irq$bio;->Km()Z
+    invoke-direct {p0}, Lcom/android/server/am/irq$bio;->Jm()Z
 
     move-result p0
 
@@ -5896,7 +5896,7 @@
 
     invoke-direct {v8, v10}, Lcom/android/server/am/irq$bio;->Ya(I)V
 
-    invoke-direct {v8}, Lcom/android/server/am/irq$bio;->Nm()Z
+    invoke-direct {v8}, Lcom/android/server/am/irq$bio;->Mm()Z
 
     move-result v10
 
@@ -6246,7 +6246,7 @@
 .method static synthetic you(Lcom/android/server/am/irq$bio;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/am/irq$bio;->Tm()V
+    invoke-direct {p0}, Lcom/android/server/am/irq$bio;->Sm()V
 
     return-void
 .end method
@@ -6286,7 +6286,7 @@
 .method static synthetic zta(Lcom/android/server/am/irq$bio;)I
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/am/irq$bio;->Qm()I
+    invoke-direct {p0}, Lcom/android/server/am/irq$bio;->Pm()I
 
     move-result p0
 
@@ -6515,7 +6515,7 @@
 .method private zta(Ljava/lang/Boolean;Ljava/lang/String;)V
     .locals 5
 
-    invoke-direct {p0}, Lcom/android/server/am/irq$bio;->Lm()Ljava/util/HashSet;
+    invoke-direct {p0}, Lcom/android/server/am/irq$bio;->Km()Ljava/util/HashSet;
 
     move-result-object v0
 

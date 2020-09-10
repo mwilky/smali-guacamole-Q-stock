@@ -688,7 +688,7 @@
 
 
 # virtual methods
-.method Rf()Lorg/bouncycastle/asn1/cno;
+.method Qf()Lorg/bouncycastle/asn1/cno;
     .locals 2
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -715,7 +715,7 @@
     return-object v0
 .end method
 
-.method protected Sf()I
+.method protected Rf()I
     .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -816,7 +816,7 @@
     const/4 v2, 0x0
 
     :goto_0
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/dma;->Sf()I
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/dma;->Rf()I
 
     move-result v4
 
@@ -1168,7 +1168,7 @@
 
     invoke-direct {p0, p1}, Lorg/bouncycastle/asn1/dma;-><init>(Ljava/io/InputStream;)V
 
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/dma;->Rf()Lorg/bouncycastle/asn1/cno;
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/dma;->Qf()Lorg/bouncycastle/asn1/cno;
 
     move-result-object p0
 

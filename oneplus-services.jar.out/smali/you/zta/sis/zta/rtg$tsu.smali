@@ -203,7 +203,7 @@
 
 
 # virtual methods
-.method protected Vj()Lyou/zta/sis/zta/rtg;
+.method protected Uj()Lyou/zta/sis/zta/rtg;
     .locals 10
 
     new-instance v9, Lyou/zta/sis/zta/rtg$tsu;
@@ -231,10 +231,10 @@
     return-object v9
 .end method
 
-.method protected Xj()Lyou/zta/sis/zta/bio;
+.method protected Wj()Lyou/zta/sis/zta/bio;
     .locals 1
 
-    invoke-virtual {p0}, Lyou/zta/sis/zta/rtg$zta;->bk()Z
+    invoke-virtual {p0}, Lyou/zta/sis/zta/rtg$zta;->ak()Z
 
     move-result v0
 
@@ -247,14 +247,14 @@
     return-object p0
 
     :cond_0
-    invoke-super {p0}, Lyou/zta/sis/zta/rtg;->Xj()Lyou/zta/sis/zta/bio;
+    invoke-super {p0}, Lyou/zta/sis/zta/rtg;->Wj()Lyou/zta/sis/zta/bio;
 
     move-result-object p0
 
     return-object p0
 .end method
 
-.method public ck()I
+.method public bk()I
     .locals 0
 
     iget p0, p0, Lyou/zta/sis/zta/rtg$tsu;->AGa:I
@@ -262,10 +262,18 @@
     return p0
 .end method
 
-.method public dk()I
+.method public ck()I
     .locals 0
 
     iget p0, p0, Lyou/zta/sis/zta/rtg$tsu;->BGa:I
+
+    return p0
+.end method
+
+.method public dk()I
+    .locals 0
+
+    iget p0, p0, Lyou/zta/sis/zta/rtg$tsu;->CGa:I
 
     return p0
 .end method
@@ -292,15 +300,7 @@
     return-object v6
 .end method
 
-.method public ek()I
-    .locals 0
-
-    iget p0, p0, Lyou/zta/sis/zta/rtg$tsu;->CGa:I
-
-    return p0
-.end method
-
-.method public fk()Z
+.method public ek()Z
     .locals 1
 
     iget v0, p0, Lyou/zta/sis/zta/rtg$tsu;->BGa:I
@@ -374,7 +374,7 @@
 
     ushr-int/lit8 v4, v0, 0x6
 
-    invoke-virtual {p0}, Lyou/zta/sis/zta/rtg$tsu;->fk()Z
+    invoke-virtual {p0}, Lyou/zta/sis/zta/rtg$tsu;->ek()Z
 
     move-result v0
 
@@ -429,7 +429,7 @@
 
     aget-object v1, p1, v1
 
-    invoke-virtual {v1}, Lyou/zta/sis/zta/wtn;->uk()Lyou/zta/sis/zta/cno;
+    invoke-virtual {v1}, Lyou/zta/sis/zta/wtn;->tk()Lyou/zta/sis/zta/cno;
 
     move-result-object v2
 
@@ -441,7 +441,7 @@
 
     add-int/2addr v0, v4
 
-    invoke-virtual {v1}, Lyou/zta/sis/zta/wtn;->vk()Lyou/zta/sis/zta/cno;
+    invoke-virtual {v1}, Lyou/zta/sis/zta/wtn;->uk()Lyou/zta/sis/zta/cno;
 
     move-result-object v1
 

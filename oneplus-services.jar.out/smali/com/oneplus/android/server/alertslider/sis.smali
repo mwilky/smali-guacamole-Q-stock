@@ -38,20 +38,7 @@
 
 
 # virtual methods
-.method public F(I)V
-    .locals 1
-
-    iget v0, p0, Lcom/oneplus/android/server/alertslider/sis;->Baa:I
-
-    if-eq v0, p1, :cond_0
-
-    invoke-virtual {p0, p1}, Lcom/oneplus/android/server/alertslider/sis;->G(I)V
-
-    :cond_0
-    return-void
-.end method
-
-.method public Fe()Z
+.method public Ee()Z
     .locals 1
 
     iget p0, p0, Lcom/oneplus/android/server/alertslider/sis;->Baa:I
@@ -69,6 +56,19 @@
 
     :goto_0
     return p0
+.end method
+
+.method public F(I)V
+    .locals 1
+
+    iget v0, p0, Lcom/oneplus/android/server/alertslider/sis;->Baa:I
+
+    if-eq v0, p1, :cond_0
+
+    invoke-virtual {p0, p1}, Lcom/oneplus/android/server/alertslider/sis;->G(I)V
+
+    :cond_0
+    return-void
 .end method
 
 .method protected G(I)V

@@ -265,7 +265,7 @@
 
 
 # virtual methods
-.method public Vh()Ljava/math/BigInteger;
+.method public Uh()Ljava/math/BigInteger;
     .locals 0
 
     iget-object p0, p0, Lorg/bouncycastle/asn1/x509/kth;->Rta:Lorg/bouncycastle/asn1/ywr;
@@ -291,7 +291,7 @@
 
     if-eqz p0, :cond_0
 
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/tsu;->Ig()Z
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/tsu;->Hg()Z
 
     move-result p0
 

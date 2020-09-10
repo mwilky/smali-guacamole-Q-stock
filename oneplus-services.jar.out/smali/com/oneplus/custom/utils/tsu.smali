@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/oneplus/custom/utils/rtg;->Of()[B
+    value = Lcom/oneplus/custom/utils/rtg;->Nf()[B
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;

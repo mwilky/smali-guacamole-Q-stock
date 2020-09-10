@@ -60,7 +60,7 @@
     return-void
 .end method
 
-.method public static Of()[B
+.method public static Nf()[B
     .locals 6
 
     const-string v0, "ParamReader"
@@ -199,7 +199,7 @@
     return-object v2
 .end method
 
-.method public static Pf()I
+.method public static Of()I
     .locals 9
 
     const-string v0, "ParamReader"

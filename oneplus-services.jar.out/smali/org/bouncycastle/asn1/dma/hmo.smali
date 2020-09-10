@@ -26,7 +26,7 @@
 
     invoke-direct {p0}, Lorg/bouncycastle/asn1/oif;-><init>()V
 
-    invoke-virtual {p1}, Lorg/bouncycastle/asn1/obl;->Sg()Ljava/util/Enumeration;
+    invoke-virtual {p1}, Lorg/bouncycastle/asn1/obl;->Rg()Ljava/util/Enumeration;
 
     move-result-object p1
 
@@ -192,7 +192,7 @@
 
 
 # virtual methods
-.method public bh()Lorg/bouncycastle/asn1/ear;
+.method public ah()Lorg/bouncycastle/asn1/ear;
     .locals 0
 
     iget-object p0, p0, Lorg/bouncycastle/asn1/dma/hmo;->Bsa:Lorg/bouncycastle/asn1/ear;
@@ -200,7 +200,7 @@
     return-object p0
 .end method
 
-.method public ch()Lorg/bouncycastle/asn1/ear;
+.method public bh()Lorg/bouncycastle/asn1/ear;
     .locals 0
 
     iget-object p0, p0, Lorg/bouncycastle/asn1/dma/hmo;->zsa:Lorg/bouncycastle/asn1/ear;

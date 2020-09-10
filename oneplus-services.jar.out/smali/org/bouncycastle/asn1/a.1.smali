@@ -48,7 +48,7 @@
 
 
 # virtual methods
-.method public Bg()Ljava/io/OutputStream;
+.method public Ag()Ljava/io/OutputStream;
     .locals 1
 
     const/16 v0, 0x3e8

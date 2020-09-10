@@ -152,10 +152,10 @@
     return-object p0
 .end method
 
-.method public ql()Ljava/util/Iterator;
+.method public pl()Ljava/util/Iterator;
     .locals 0
 
-    invoke-static {}, Lorg/bouncycastle/x509/dma;->pl()Ljava/util/Iterator;
+    invoke-static {}, Lorg/bouncycastle/x509/dma;->ol()Ljava/util/Iterator;
 
     move-result-object p0
 

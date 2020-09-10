@@ -45,7 +45,7 @@
 .method private static native nativeSetPanelMode(IZ)V
 .end method
 
-.method private os()V
+.method private ns()V
     .locals 1
 
     const/4 p0, 0x0
@@ -267,7 +267,7 @@
     goto :goto_0
 
     :pswitch_1
-    invoke-direct {p0}, Lcom/oneplus/android/server/display/OpColorModeManager;->os()V
+    invoke-direct {p0}, Lcom/oneplus/android/server/display/OpColorModeManager;->ns()V
 
     :goto_0
     invoke-static {p1, p2}, Lcom/oneplus/android/server/display/OpColorModeManager;->nativeSetPanelMode(IZ)V

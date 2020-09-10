@@ -13,17 +13,17 @@
 
 
 # static fields
-.field public static final RD:Ljava/lang/String; = "sys_secrecy_switch_list"
+.field public static final QD:Ljava/lang/String; = "sys_secrecy_switch_list"
 
-.field private static final SD:Ljava/lang/String; = "data/system/sys_secrecy_switch_list.xml"
+.field private static final RD:Ljava/lang/String; = "data/system/sys_secrecy_switch_list.xml"
 
-.field private static final TD:Ljava/lang/String; = "system/etc/sys_secrecy_switch_list.xml"
+.field private static final SD:Ljava/lang/String; = "system/etc/sys_secrecy_switch_list.xml"
 
 
 # instance fields
 .field private final TAG:Ljava/lang/String;
 
-.field private final kD:Lcom/android/server/secrecy/zta/rtg$zta;
+.field private final jD:Lcom/android/server/secrecy/zta/rtg$zta;
 
 .field private vN:Lcom/android/server/secrecy/zta/rtg$you;
 
@@ -52,7 +52,7 @@
 
     iput-object p1, p0, Lcom/android/server/secrecy/zta/rtg;->vN:Lcom/android/server/secrecy/zta/rtg$you;
 
-    iput-object p2, p0, Lcom/android/server/secrecy/zta/rtg;->kD:Lcom/android/server/secrecy/zta/rtg$zta;
+    iput-object p2, p0, Lcom/android/server/secrecy/zta/rtg;->jD:Lcom/android/server/secrecy/zta/rtg$zta;
 
     :try_start_0
     iget-object p0, p0, Lcom/android/server/secrecy/zta/rtg;->vN:Lcom/android/server/secrecy/zta/rtg$you;
@@ -84,6 +84,18 @@
 
 
 # virtual methods
+.method public Jd()Z
+    .locals 0
+
+    iget-object p0, p0, Lcom/android/server/secrecy/zta/rtg;->vN:Lcom/android/server/secrecy/zta/rtg$you;
+
+    invoke-virtual {p0}, Lcom/android/server/secrecy/zta/rtg$you;->Jd()Z
+
+    move-result p0
+
+    return p0
+.end method
+
 .method public Kd()Z
     .locals 0
 
@@ -96,70 +108,58 @@
     return p0
 .end method
 
-.method public Ld()Z
-    .locals 0
-
-    iget-object p0, p0, Lcom/android/server/secrecy/zta/rtg;->vN:Lcom/android/server/secrecy/zta/rtg$you;
-
-    invoke-virtual {p0}, Lcom/android/server/secrecy/zta/rtg$you;->Ld()Z
-
-    move-result p0
-
-    return p0
-.end method
-
-.method public Md()J
+.method public Ld()J
     .locals 2
 
     iget-object p0, p0, Lcom/android/server/secrecy/zta/rtg;->vN:Lcom/android/server/secrecy/zta/rtg$you;
 
-    invoke-virtual {p0}, Lcom/android/server/secrecy/zta/rtg$you;->Md()J
+    invoke-virtual {p0}, Lcom/android/server/secrecy/zta/rtg$you;->Ld()J
 
     move-result-wide v0
 
     return-wide v0
 .end method
 
-.method public Nd()Z
+.method public Md()Z
     .locals 0
 
     iget-object p0, p0, Lcom/android/server/secrecy/zta/rtg;->vN:Lcom/android/server/secrecy/zta/rtg$you;
 
-    invoke-virtual {p0}, Lcom/android/server/secrecy/zta/rtg$you;->Nd()Z
+    invoke-virtual {p0}, Lcom/android/server/secrecy/zta/rtg$you;->Md()Z
 
     move-result p0
 
     return p0
 .end method
 
-.method public Od()J
+.method public Nd()J
     .locals 2
 
     iget-object p0, p0, Lcom/android/server/secrecy/zta/rtg;->vN:Lcom/android/server/secrecy/zta/rtg$you;
 
-    invoke-virtual {p0}, Lcom/android/server/secrecy/zta/rtg$you;->Od()J
+    invoke-virtual {p0}, Lcom/android/server/secrecy/zta/rtg$you;->Nd()J
 
     move-result-wide v0
 
     return-wide v0
 .end method
 
-.method public Pd()Z
+.method public Od()Z
     .locals 0
 
     iget-object p0, p0, Lcom/android/server/secrecy/zta/rtg;->vN:Lcom/android/server/secrecy/zta/rtg$you;
 
-    invoke-virtual {p0}, Lcom/android/server/secrecy/zta/rtg$you;->Pd()Z
+    invoke-virtual {p0}, Lcom/android/server/secrecy/zta/rtg$you;->Od()Z
 
     move-result p0
 
     return p0
 .end method
 
-.method public Rc()V
+.method public Qc()V
     .locals 1
 
-    iget-object p0, p0, Lcom/android/server/secrecy/zta/rtg;->kD:Lcom/android/server/secrecy/zta/rtg$zta;
+    iget-object p0, p0, Lcom/android/server/secrecy/zta/rtg;->jD:Lcom/android/server/secrecy/zta/rtg$zta;
 
     if-eqz p0, :cond_0
 
@@ -220,7 +220,7 @@
 
     invoke-virtual {p3, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p0}, Lcom/android/server/secrecy/zta/rtg;->Pd()Z
+    invoke-virtual {p0}, Lcom/android/server/secrecy/zta/rtg;->Od()Z
 
     move-result v0
 
@@ -242,7 +242,7 @@
 
     invoke-virtual {p3, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p0}, Lcom/android/server/secrecy/zta/rtg;->Kd()Z
+    invoke-virtual {p0}, Lcom/android/server/secrecy/zta/rtg;->Jd()Z
 
     move-result v0
 
@@ -264,7 +264,7 @@
 
     invoke-virtual {p3, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p0}, Lcom/android/server/secrecy/zta/rtg;->Nd()Z
+    invoke-virtual {p0}, Lcom/android/server/secrecy/zta/rtg;->Md()Z
 
     move-result v0
 
@@ -286,7 +286,7 @@
 
     invoke-virtual {p3, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p0}, Lcom/android/server/secrecy/zta/rtg;->Ld()Z
+    invoke-virtual {p0}, Lcom/android/server/secrecy/zta/rtg;->Kd()Z
 
     move-result v0
 
@@ -308,7 +308,7 @@
 
     invoke-virtual {p3, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p0}, Lcom/android/server/secrecy/zta/rtg;->Od()J
+    invoke-virtual {p0}, Lcom/android/server/secrecy/zta/rtg;->Nd()J
 
     move-result-wide v0
 
@@ -330,7 +330,7 @@
 
     invoke-virtual {p1, p3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p0}, Lcom/android/server/secrecy/zta/rtg;->Md()J
+    invoke-virtual {p0}, Lcom/android/server/secrecy/zta/rtg;->Ld()J
 
     move-result-wide v0
 

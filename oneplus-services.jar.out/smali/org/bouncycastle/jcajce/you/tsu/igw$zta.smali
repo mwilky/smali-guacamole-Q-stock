@@ -213,7 +213,7 @@
 
     iget-object p0, p0, Lorg/bouncycastle/jcajce/you/tsu/igw$zta;->params:Lorg/bouncycastle/asn1/dma/ibl;
 
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/dma/ibl;->sh()Ljava/math/BigInteger;
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/dma/ibl;->rh()Ljava/math/BigInteger;
 
     move-result-object p0
 

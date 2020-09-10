@@ -378,13 +378,13 @@
 
     check-cast v0, Lorg/bouncycastle/jcajce/provider/symmetric/util/BCPBEKey;
 
-    invoke-virtual {v0}, Lorg/bouncycastle/jcajce/provider/symmetric/util/BCPBEKey;->he()Lorg/bouncycastle/crypto/kth;
+    invoke-virtual {v0}, Lorg/bouncycastle/jcajce/provider/symmetric/util/BCPBEKey;->ge()Lorg/bouncycastle/crypto/kth;
 
     move-result-object v1
 
     if-eqz v1, :cond_7
 
-    invoke-virtual {v0}, Lorg/bouncycastle/jcajce/provider/symmetric/util/BCPBEKey;->he()Lorg/bouncycastle/crypto/kth;
+    invoke-virtual {v0}, Lorg/bouncycastle/jcajce/provider/symmetric/util/BCPBEKey;->ge()Lorg/bouncycastle/crypto/kth;
 
     move-result-object v0
 
@@ -454,7 +454,7 @@
 
     new-instance v0, Lorg/bouncycastle/crypto/wtn/zta;
 
-    invoke-virtual {p2}, Lorg/bouncycastle/jcajce/sis/zta;->xg()I
+    invoke-virtual {p2}, Lorg/bouncycastle/jcajce/sis/zta;->wg()I
 
     move-result p1
 
@@ -462,7 +462,7 @@
 
     move-result-object v2
 
-    invoke-virtual {p2}, Lorg/bouncycastle/jcajce/sis/zta;->wg()[B
+    invoke-virtual {p2}, Lorg/bouncycastle/jcajce/sis/zta;->vg()[B
 
     move-result-object p2
 

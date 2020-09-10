@@ -61,7 +61,7 @@
 
 
 # virtual methods
-.method public ie()V
+.method public he()V
     .locals 1
 
     const-string v0, ""

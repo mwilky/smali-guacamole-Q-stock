@@ -25,7 +25,7 @@
 
     invoke-direct {p0}, Lorg/bouncycastle/asn1/oif;-><init>()V
 
-    invoke-virtual {p1}, Lorg/bouncycastle/asn1/obl;->Sg()Ljava/util/Enumeration;
+    invoke-virtual {p1}, Lorg/bouncycastle/asn1/obl;->Rg()Ljava/util/Enumeration;
 
     move-result-object p1
 
@@ -135,7 +135,7 @@
 
     invoke-direct {p0}, Lorg/bouncycastle/asn1/oif;-><init>()V
 
-    invoke-virtual {p1}, Lorg/bouncycastle/asn1/you/wtn;->eh()Z
+    invoke-virtual {p1}, Lorg/bouncycastle/asn1/you/wtn;->dh()Z
 
     move-result v0
 
@@ -179,7 +179,7 @@
 
     invoke-direct {p0}, Lorg/bouncycastle/asn1/oif;-><init>()V
 
-    invoke-virtual {p1}, Lorg/bouncycastle/asn1/you/wtn;->eh()Z
+    invoke-virtual {p1}, Lorg/bouncycastle/asn1/you/wtn;->dh()Z
 
     move-result v0
 
@@ -263,10 +263,18 @@
 
 
 # virtual methods
-.method public fh()Lorg/bouncycastle/asn1/ear;
+.method public eh()Lorg/bouncycastle/asn1/ear;
     .locals 0
 
     iget-object p0, p0, Lorg/bouncycastle/asn1/you/gck;->Ksa:Lorg/bouncycastle/asn1/ear;
+
+    return-object p0
+.end method
+
+.method public fh()Lorg/bouncycastle/asn1/x509/zta;
+    .locals 0
+
+    iget-object p0, p0, Lorg/bouncycastle/asn1/you/gck;->Lsa:Lorg/bouncycastle/asn1/x509/zta;
 
     return-object p0
 .end method
@@ -287,15 +295,7 @@
     return-object p0
 .end method
 
-.method public gh()Lorg/bouncycastle/asn1/x509/zta;
-    .locals 0
-
-    iget-object p0, p0, Lorg/bouncycastle/asn1/you/gck;->Lsa:Lorg/bouncycastle/asn1/x509/zta;
-
-    return-object p0
-.end method
-
-.method public hh()Lorg/bouncycastle/asn1/ibl;
+.method public gh()Lorg/bouncycastle/asn1/ibl;
     .locals 0
 
     iget-object p0, p0, Lorg/bouncycastle/asn1/you/gck;->Msa:Lorg/bouncycastle/asn1/ibl;
@@ -303,7 +303,7 @@
     return-object p0
 .end method
 
-.method public ih()Lorg/bouncycastle/asn1/you/wtn;
+.method public hh()Lorg/bouncycastle/asn1/you/wtn;
     .locals 0
 
     iget-object p0, p0, Lorg/bouncycastle/asn1/you/gck;->Isa:Lorg/bouncycastle/asn1/you/wtn;
@@ -311,7 +311,7 @@
     return-object p0
 .end method
 
-.method public jh()Lorg/bouncycastle/asn1/ear;
+.method public ih()Lorg/bouncycastle/asn1/ear;
     .locals 0
 
     iget-object p0, p0, Lorg/bouncycastle/asn1/you/gck;->Nsa:Lorg/bouncycastle/asn1/ear;

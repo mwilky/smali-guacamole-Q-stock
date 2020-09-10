@@ -169,7 +169,7 @@
 
     iget-object p0, p0, Lorg/bouncycastle/asn1/ywr/zta;->seq:Lorg/bouncycastle/asn1/obl;
 
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/obl;->Sg()Ljava/util/Enumeration;
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/obl;->Rg()Ljava/util/Enumeration;
 
     move-result-object p0
 

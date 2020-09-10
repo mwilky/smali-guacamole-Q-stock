@@ -20,7 +20,7 @@
 
 
 # virtual methods
-.method public Tf()Lorg/bouncycastle/crypto/qbh;
+.method public Sf()Lorg/bouncycastle/crypto/qbh;
     .locals 0
 
     iget-object p0, p0, Lorg/bouncycastle/crypto/cno/zta;->digest:Lorg/bouncycastle/crypto/qbh;

@@ -86,7 +86,7 @@
     return-void
 .end method
 
-.method private Hl()I
+.method private Gl()I
     .locals 6
 
     const-string p0, "getFastChargeType io close exception :"
@@ -325,7 +325,7 @@
     throw v1
 .end method
 
-.method private Il()Z
+.method private Hl()Z
     .locals 6
 
     const-string p0, "Failure in reading charger type"
@@ -389,7 +389,7 @@
     return v2
 .end method
 
-.method private Jl()V
+.method private Il()V
     .locals 4
 
     sget-object p0, Lcom/android/server/irq;->mContext:Landroid/content/Context;
@@ -463,14 +463,14 @@
     return-void
 .end method
 
-.method private Kl()V
+.method private Jl()V
     .locals 2
 
     iget-boolean v0, p0, Lcom/android/server/irq;->if:Z
 
     if-eqz v0, :cond_0
 
-    invoke-direct {p0}, Lcom/android/server/irq;->Il()Z
+    invoke-direct {p0}, Lcom/android/server/irq;->Hl()Z
 
     move-result v0
 
@@ -537,7 +537,7 @@
 .method static synthetic cno(Lcom/android/server/irq;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/irq;->Jl()V
+    invoke-direct {p0}, Lcom/android/server/irq;->Il()V
 
     return-void
 .end method
@@ -625,7 +625,7 @@
 
     if-ne v0, v1, :cond_0
 
-    invoke-direct {p0}, Lcom/android/server/irq;->Hl()I
+    invoke-direct {p0}, Lcom/android/server/irq;->Gl()I
 
     move-result v0
 
@@ -902,7 +902,7 @@
 
     invoke-virtual {p2, v2, v0, v1, v3}, Landroid/content/ContentResolver;->registerContentObserver(Landroid/net/Uri;ZLandroid/database/ContentObserver;I)V
 
-    invoke-direct {p0}, Lcom/android/server/irq;->Jl()V
+    invoke-direct {p0}, Lcom/android/server/irq;->Il()V
 
     monitor-exit p1
 
@@ -973,7 +973,7 @@
 
     iput p1, p0, Lcom/android/server/irq;->mBatteryStatus:I
 
-    invoke-direct {p0}, Lcom/android/server/irq;->Kl()V
+    invoke-direct {p0}, Lcom/android/server/irq;->Jl()V
 
     return-void
 .end method

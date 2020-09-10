@@ -45,13 +45,13 @@
 
     iget-object v1, p0, Lcom/android/server/pm/cno;->this$0:Lcom/android/server/pm/OpLauncherAppsService;
 
-    const v2, 0x50d0088
+    const v2, 0x50d0090
 
-    const v3, 0x50d0087
+    const v3, 0x50d008f
 
-    const v4, 0x50d0086
+    const v4, 0x50d008e
 
-    const v5, 0x50d0081
+    const v5, 0x50d0089
 
     new-instance v6, Lcom/android/server/pm/tsu;
 
@@ -69,13 +69,13 @@
 
     iget-object v1, p0, Lcom/android/server/pm/cno;->this$0:Lcom/android/server/pm/OpLauncherAppsService;
 
-    const v2, 0x50d0084
+    const v2, 0x50d008c
 
-    const v3, 0x50d0082
+    const v3, 0x50d008a
 
-    const v4, 0x50d0083
+    const v4, 0x50d008b
 
-    const v5, 0x50d0081
+    const v5, 0x50d0089
 
     new-instance v6, Lcom/android/server/pm/ssp;
 

@@ -83,7 +83,7 @@
     return-void
 .end method
 
-.method private us()Ljava/lang/String;
+.method private ts()Ljava/lang/String;
     .locals 2
 
     iget p0, p0, Lcom/oneplus/android/server/heytapbusiness/sis;->Zea:I
@@ -107,7 +107,7 @@
     return-object p0
 .end method
 
-.method private vs()Lcom/oneplus/os/IParamService;
+.method private us()Lcom/oneplus/os/IParamService;
     .locals 3
 
     const-string p0, "OpHeytapBusiness"
@@ -167,13 +167,13 @@
     return-object p0
 .end method
 
-.method private ws()V
+.method private vs()V
     .locals 3
 
     const-string v0, "OpHeytapBusiness"
 
     :try_start_0
-    invoke-direct {p0}, Lcom/oneplus/android/server/heytapbusiness/sis;->vs()Lcom/oneplus/os/IParamService;
+    invoke-direct {p0}, Lcom/oneplus/android/server/heytapbusiness/sis;->us()Lcom/oneplus/os/IParamService;
 
     move-result-object v1
 
@@ -203,7 +203,7 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/heytapbusiness/sis;->us()Ljava/lang/String;
+    invoke-direct {p0}, Lcom/oneplus/android/server/heytapbusiness/sis;->ts()Ljava/lang/String;
 
     move-result-object p0
 
@@ -250,7 +250,7 @@
 .method static synthetic you(Lcom/oneplus/android/server/heytapbusiness/sis;)Ljava/lang/String;
     .locals 0
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/heytapbusiness/sis;->us()Ljava/lang/String;
+    invoke-direct {p0}, Lcom/oneplus/android/server/heytapbusiness/sis;->ts()Ljava/lang/String;
 
     move-result-object p0
 
@@ -267,10 +267,10 @@
 
 
 # virtual methods
-.method public synthetic hf()V
+.method public synthetic gf()V
     .locals 0
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/heytapbusiness/sis;->us()Ljava/lang/String;
+    invoke-direct {p0}, Lcom/oneplus/android/server/heytapbusiness/sis;->ts()Ljava/lang/String;
 
     move-result-object p0
 
@@ -284,7 +284,7 @@
 
     const-string v0, "OpHeytapBusiness"
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/heytapbusiness/sis;->ws()V
+    invoke-direct {p0}, Lcom/oneplus/android/server/heytapbusiness/sis;->vs()V
 
     new-instance v1, Landroid/os/HandlerThread;
 

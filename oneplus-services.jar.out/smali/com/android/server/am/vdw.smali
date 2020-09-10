@@ -145,7 +145,7 @@
 .method private Mb()V
     .locals 1
 
-    invoke-direct {p0}, Lcom/android/server/am/vdw;->kn()V
+    invoke-direct {p0}, Lcom/android/server/am/vdw;->jn()V
 
     invoke-static {}, Lcom/android/server/am/vdw$zta;->Mb()V
 
@@ -293,7 +293,7 @@
     return-void
 .end method
 
-.method private kn()V
+.method private jn()V
     .locals 3
 
     const-string v0, "BFP"

@@ -191,7 +191,7 @@
     return-void
 .end method
 
-.method private Pt()V
+.method private Ot()V
     .locals 8
 
     iget-wide v0, p0, Lorg/bouncycastle/crypto/you/cno;->zAa:J
@@ -509,7 +509,7 @@
 .method public finish()V
     .locals 5
 
-    invoke-direct {p0}, Lorg/bouncycastle/crypto/you/cno;->Pt()V
+    invoke-direct {p0}, Lorg/bouncycastle/crypto/you/cno;->Ot()V
 
     iget-wide v0, p0, Lorg/bouncycastle/crypto/you/cno;->zAa:J
 
@@ -535,7 +535,7 @@
     :cond_0
     invoke-virtual {p0, v0, v1, v2, v3}, Lorg/bouncycastle/crypto/you/cno;->sis(JJ)V
 
-    invoke-virtual {p0}, Lorg/bouncycastle/crypto/you/cno;->jj()V
+    invoke-virtual {p0}, Lorg/bouncycastle/crypto/you/cno;->ij()V
 
     return-void
 .end method
@@ -548,12 +548,12 @@
     return p0
 .end method
 
-.method protected jj()V
+.method protected ij()V
     .locals 34
 
     move-object/from16 v7, p0
 
-    invoke-direct/range {p0 .. p0}, Lorg/bouncycastle/crypto/you/cno;->Pt()V
+    invoke-direct/range {p0 .. p0}, Lorg/bouncycastle/crypto/you/cno;->Ot()V
 
     const/16 v0, 0x10
 
@@ -1248,7 +1248,7 @@
     return-void
 .end method
 
-.method protected kj()I
+.method protected jj()I
     .locals 0
 
     iget p0, p0, Lorg/bouncycastle/crypto/you/cno;->CAa:I
@@ -1331,7 +1331,7 @@
 
     if-ne p1, p2, :cond_0
 
-    invoke-virtual {p0}, Lorg/bouncycastle/crypto/you/cno;->jj()V
+    invoke-virtual {p0}, Lorg/bouncycastle/crypto/you/cno;->ij()V
 
     :cond_0
     return-void
@@ -1346,7 +1346,7 @@
 
     if-le v0, v1, :cond_0
 
-    invoke-virtual {p0}, Lorg/bouncycastle/crypto/you/cno;->jj()V
+    invoke-virtual {p0}, Lorg/bouncycastle/crypto/you/cno;->ij()V
 
     :cond_0
     iget-object p0, p0, Lorg/bouncycastle/crypto/you/cno;->BAa:[J

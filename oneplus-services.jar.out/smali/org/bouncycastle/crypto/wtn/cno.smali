@@ -377,7 +377,7 @@
     return p0
 .end method
 
-.method public vg()Ljava/math/BigInteger;
+.method public ug()Ljava/math/BigInteger;
     .locals 0
 
     iget-object p0, p0, Lorg/bouncycastle/crypto/wtn/cno;->xra:Ljava/math/BigInteger;
@@ -385,7 +385,7 @@
     return-object p0
 .end method
 
-.method public vj()Lorg/bouncycastle/crypto/wtn/igw;
+.method public uj()Lorg/bouncycastle/crypto/wtn/igw;
     .locals 0
 
     iget-object p0, p0, Lorg/bouncycastle/crypto/wtn/cno;->rDa:Lorg/bouncycastle/crypto/wtn/igw;

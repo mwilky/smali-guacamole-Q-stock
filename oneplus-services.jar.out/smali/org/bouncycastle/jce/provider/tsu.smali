@@ -437,7 +437,7 @@
 
     invoke-direct {v2, v1}, Lorg/bouncycastle/asn1/ugm;-><init>(Ljava/io/OutputStream;)V
 
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/obl;->Sg()Ljava/util/Enumeration;
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/obl;->Rg()Ljava/util/Enumeration;
 
     move-result-object p0
 
@@ -1142,7 +1142,7 @@
 
     const-string v0, "Date of cert gen extension could not be read."
 
-    invoke-virtual {p0}, Lorg/bouncycastle/jcajce/wtn;->jg()I
+    invoke-virtual {p0}, Lorg/bouncycastle/jcajce/wtn;->ig()I
 
     move-result v1
 
@@ -1286,7 +1286,7 @@
     if-eqz p0, :cond_3
 
     :try_start_0
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/x509/bio;->Wh()[Lorg/bouncycastle/asn1/x509/oif;
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/x509/bio;->Vh()[Lorg/bouncycastle/asn1/x509/oif;
 
     move-result-object p0
     :try_end_0
@@ -1307,7 +1307,7 @@
 
     aget-object v3, p0, v2
 
-    invoke-virtual {v3}, Lorg/bouncycastle/asn1/x509/oif;->bi()Lorg/bouncycastle/asn1/x509/bvj;
+    invoke-virtual {v3}, Lorg/bouncycastle/asn1/x509/oif;->ai()Lorg/bouncycastle/asn1/x509/bvj;
 
     move-result-object v3
 
@@ -1511,7 +1511,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lorg/bouncycastle/asn1/ywr;->Rg()Ljava/math/BigInteger;
+    invoke-virtual {v1}, Lorg/bouncycastle/asn1/ywr;->Qg()Ljava/math/BigInteger;
 
     move-result-object v1
     :try_end_1
@@ -1710,7 +1710,7 @@
 
     move-result-object v1
 
-    invoke-virtual {p3}, Lorg/bouncycastle/jcajce/wtn;->Cj()Ljava/util/List;
+    invoke-virtual {p3}, Lorg/bouncycastle/jcajce/wtn;->Bj()Ljava/util/List;
 
     move-result-object p3
 
@@ -2003,7 +2003,7 @@
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_2
 
-    invoke-virtual {v3}, Lorg/bouncycastle/asn1/obl;->Sg()Ljava/util/Enumeration;
+    invoke-virtual {v3}, Lorg/bouncycastle/asn1/obl;->Rg()Ljava/util/Enumeration;
 
     move-result-object v3
 
@@ -2025,7 +2025,7 @@
     :try_end_1
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_1
 
-    invoke-virtual {v5}, Lorg/bouncycastle/asn1/x509/irq;->Ci()Lorg/bouncycastle/asn1/bvj;
+    invoke-virtual {v5}, Lorg/bouncycastle/asn1/x509/irq;->Bi()Lorg/bouncycastle/asn1/bvj;
 
     move-result-object v6
 
@@ -2526,13 +2526,13 @@
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/x509/oif;->ai()Lorg/bouncycastle/asn1/x509/obl;
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/x509/oif;->_h()Lorg/bouncycastle/asn1/x509/obl;
 
     move-result-object v1
 
     if-eqz v1, :cond_1
 
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/x509/oif;->ai()Lorg/bouncycastle/asn1/x509/obl;
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/x509/oif;->_h()Lorg/bouncycastle/asn1/x509/obl;
 
     move-result-object p0
 
@@ -2600,7 +2600,7 @@
     goto :goto_0
 
     :cond_1
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/x509/oif;->bi()Lorg/bouncycastle/asn1/x509/bvj;
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/x509/oif;->ai()Lorg/bouncycastle/asn1/x509/bvj;
 
     move-result-object p0
 

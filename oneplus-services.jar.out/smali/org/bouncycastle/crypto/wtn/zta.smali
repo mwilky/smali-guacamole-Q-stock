@@ -73,7 +73,7 @@
     return-object p0
 .end method
 
-.method public rj()[B
+.method public qj()[B
     .locals 0
 
     iget-object p0, p0, Lorg/bouncycastle/crypto/wtn/zta;->VCa:[B

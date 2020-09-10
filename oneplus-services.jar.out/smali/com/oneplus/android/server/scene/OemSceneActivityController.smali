@@ -320,7 +320,7 @@
 
 
 # virtual methods
-.method public lf()Lcom/oneplus/android/server/scene/OemSceneActivityController$AllowWhiteActivity;
+.method public kf()Lcom/oneplus/android/server/scene/OemSceneActivityController$AllowWhiteActivity;
     .locals 1
 
     sget-object v0, Lcom/oneplus/android/server/scene/OemSceneActivityController;->nga:Lcom/oneplus/android/server/scene/OemSceneActivityController$AllowWhiteActivity;

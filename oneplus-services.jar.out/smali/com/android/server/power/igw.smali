@@ -18,9 +18,9 @@
 
 
 # instance fields
-.field final synthetic KH:I
+.field final synthetic JH:I
 
-.field final synthetic LH:F
+.field final synthetic KH:F
 
 .field final synthetic this$0:Lcom/android/server/power/OnePlusStandbyAnalyzer;
 
@@ -31,9 +31,9 @@
 
     iput-object p1, p0, Lcom/android/server/power/igw;->this$0:Lcom/android/server/power/OnePlusStandbyAnalyzer;
 
-    iput p2, p0, Lcom/android/server/power/igw;->KH:I
+    iput p2, p0, Lcom/android/server/power/igw;->JH:I
 
-    iput p3, p0, Lcom/android/server/power/igw;->LH:F
+    iput p3, p0, Lcom/android/server/power/igw;->KH:F
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -95,9 +95,9 @@
 
     sget-object v4, Lcom/android/server/power/OnePlusStandbyAnalyzer$STATISTIC_TYPE;->Rna:Lcom/android/server/power/OnePlusStandbyAnalyzer$STATISTIC_TYPE;
 
-    iget v5, p0, Lcom/android/server/power/igw;->KH:I
+    iget v5, p0, Lcom/android/server/power/igw;->JH:I
 
-    iget v6, p0, Lcom/android/server/power/igw;->LH:F
+    iget v6, p0, Lcom/android/server/power/igw;->KH:F
 
     iget-object v0, p0, Lcom/android/server/power/igw;->this$0:Lcom/android/server/power/OnePlusStandbyAnalyzer;
 

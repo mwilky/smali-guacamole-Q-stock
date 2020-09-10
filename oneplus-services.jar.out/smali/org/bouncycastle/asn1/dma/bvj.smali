@@ -39,7 +39,7 @@
 
     invoke-direct {p0}, Lorg/bouncycastle/asn1/oif;-><init>()V
 
-    invoke-virtual {p1}, Lorg/bouncycastle/asn1/obl;->Sg()Ljava/util/Enumeration;
+    invoke-virtual {p1}, Lorg/bouncycastle/asn1/obl;->Rg()Ljava/util/Enumeration;
 
     move-result-object p1
 
@@ -319,7 +319,7 @@
     return-object p0
 .end method
 
-.method public yg()Lorg/bouncycastle/asn1/x509/zta;
+.method public xg()Lorg/bouncycastle/asn1/x509/zta;
     .locals 0
 
     iget-object p0, p0, Lorg/bouncycastle/asn1/dma/bvj;->Cra:Lorg/bouncycastle/asn1/x509/zta;
@@ -334,7 +334,7 @@
     return-object p0
 .end method
 
-.method public zg()Z
+.method public yg()Z
     .locals 1
 
     iget-object p0, p0, Lorg/bouncycastle/asn1/dma/bvj;->Cra:Lorg/bouncycastle/asn1/x509/zta;

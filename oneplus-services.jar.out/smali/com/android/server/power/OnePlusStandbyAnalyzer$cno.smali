@@ -39,7 +39,7 @@
 
 
 # virtual methods
-.method public Xf()V
+.method public Wf()V
     .locals 1
 
     iget-object v0, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$cno;->mInstance:Lcom/android/server/power/OnePlusStandbyAnalyzer$cno;
@@ -58,7 +58,7 @@
     return-void
 .end method
 
-.method public Yf()V
+.method public Xf()V
     .locals 2
 
     iget-object v0, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$cno;->mInstance:Lcom/android/server/power/OnePlusStandbyAnalyzer$cno;

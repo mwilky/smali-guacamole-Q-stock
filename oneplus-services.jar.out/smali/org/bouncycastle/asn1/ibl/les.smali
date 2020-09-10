@@ -80,7 +80,7 @@
 
 
 # virtual methods
-.method public declared-synchronized Si()Lyou/zta/sis/zta/wtn;
+.method public declared-synchronized Ri()Lyou/zta/sis/zta/wtn;
     .locals 2
 
     monitor-enter p0
@@ -125,7 +125,7 @@
     throw v0
 .end method
 
-.method public Ti()[B
+.method public Si()[B
     .locals 0
 
     iget-object p0, p0, Lorg/bouncycastle/asn1/ibl/les;->encoding:Lorg/bouncycastle/asn1/ibl;
@@ -141,7 +141,7 @@
     return-object p0
 .end method
 
-.method public Ui()Z
+.method public Ti()Z
     .locals 3
 
     iget-object p0, p0, Lorg/bouncycastle/asn1/ibl/les;->encoding:Lorg/bouncycastle/asn1/ibl;

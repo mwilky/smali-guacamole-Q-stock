@@ -1700,7 +1700,7 @@
     goto/16 :goto_0
 .end method
 
-.method public static jl()[I
+.method public static il()[I
     .locals 1
 
     const/16 v0, 0xe

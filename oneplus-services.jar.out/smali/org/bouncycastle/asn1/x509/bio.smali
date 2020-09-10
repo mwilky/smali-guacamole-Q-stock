@@ -122,7 +122,7 @@
 
 
 # virtual methods
-.method public Wh()[Lorg/bouncycastle/asn1/x509/oif;
+.method public Vh()[Lorg/bouncycastle/asn1/x509/oif;
     .locals 3
 
     iget-object v0, p0, Lorg/bouncycastle/asn1/x509/bio;->seq:Lorg/bouncycastle/asn1/obl;
@@ -189,7 +189,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
 
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/x509/bio;->Wh()[Lorg/bouncycastle/asn1/x509/oif;
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/x509/bio;->Vh()[Lorg/bouncycastle/asn1/x509/oif;
 
     move-result-object p0
 

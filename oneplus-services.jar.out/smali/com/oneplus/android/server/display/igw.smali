@@ -32,6 +32,14 @@
     return-void
 .end method
 
+.method public Ie()I
+    .locals 0
+
+    iget p0, p0, Lcom/oneplus/android/server/display/igw;->mFrom:I
+
+    return p0
+.end method
+
 .method public J(I)V
     .locals 0
 
@@ -43,20 +51,12 @@
 .method public Je()I
     .locals 0
 
-    iget p0, p0, Lcom/oneplus/android/server/display/igw;->mFrom:I
-
-    return p0
-.end method
-
-.method public Ke()I
-    .locals 0
-
     iget p0, p0, Lcom/oneplus/android/server/display/igw;->mTo:I
 
     return p0
 .end method
 
-.method public Le()Z
+.method public Ke()Z
     .locals 0
 
     iget-object p0, p0, Lcom/oneplus/android/server/display/igw;->mAnimator:Landroid/animation/ValueAnimator;

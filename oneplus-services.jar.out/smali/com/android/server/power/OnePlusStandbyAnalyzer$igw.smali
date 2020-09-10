@@ -15,9 +15,9 @@
 
 
 # instance fields
-.field public bI:J
+.field public aI:J
 
-.field public cI:Z
+.field public bI:Z
 
 .field public mCount:I
 
@@ -44,9 +44,9 @@
 
     const-wide/16 v1, 0x0
 
-    iput-wide v1, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$igw;->bI:J
+    iput-wide v1, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$igw;->aI:J
 
-    iput-boolean v0, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$igw;->cI:Z
+    iput-boolean v0, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$igw;->bI:Z
 
     iput-object p1, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$igw;->mType:Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_MODE_TYPE;
 
@@ -63,7 +63,7 @@
     :cond_0
     const/4 p1, 0x1
 
-    iput-boolean p1, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$igw;->cI:Z
+    iput-boolean p1, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$igw;->bI:Z
 
     :cond_1
     return-void
@@ -84,9 +84,9 @@
 
     const-wide/16 v1, 0x0
 
-    iput-wide v1, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$igw;->bI:J
+    iput-wide v1, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$igw;->aI:J
 
-    iput-boolean v0, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$igw;->cI:Z
+    iput-boolean v0, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$igw;->bI:Z
 
     iput-object p1, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$igw;->mType:Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_MODE_TYPE;
 
@@ -107,7 +107,7 @@
     :cond_0
     const/4 p1, 0x1
 
-    iput-boolean p1, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$igw;->cI:Z
+    iput-boolean p1, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$igw;->bI:Z
 
     :cond_1
     return-void
@@ -128,9 +128,9 @@
 
     const-wide/16 v1, 0x0
 
-    iput-wide v1, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$igw;->bI:J
+    iput-wide v1, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$igw;->aI:J
 
-    iput-boolean v0, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$igw;->cI:Z
+    iput-boolean v0, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$igw;->bI:Z
 
     iput-object p1, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$igw;->mType:Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_MODE_TYPE;
 
@@ -144,7 +144,7 @@
 
     move-result-wide p2
 
-    iput-wide p2, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$igw;->bI:J
+    iput-wide p2, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$igw;->aI:J
 
     sget-object p2, Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_MODE_TYPE;->Jna:Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_MODE_TYPE;
 
@@ -157,7 +157,7 @@
     :cond_0
     const/4 p1, 0x1
 
-    iput-boolean p1, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$igw;->cI:Z
+    iput-boolean p1, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$igw;->bI:Z
 
     :cond_1
     return-void
@@ -165,10 +165,10 @@
 
 
 # virtual methods
-.method public ad()Z
+.method public _c()Z
     .locals 4
 
-    sget-object v0, Lcom/android/server/power/kth;->GH:[I
+    sget-object v0, Lcom/android/server/power/kth;->FH:[I
 
     iget-object v1, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$igw;->mType:Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_MODE_TYPE;
 
@@ -189,7 +189,7 @@
     goto :goto_0
 
     :cond_0
-    iget-wide v0, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$igw;->bI:J
+    iget-wide v0, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$igw;->aI:J
 
     invoke-static {}, Lcom/android/server/power/OnePlusStandbyAnalyzer;->Ib()J
 
@@ -211,10 +211,10 @@
     return p0
 .end method
 
-.method public bd()Z
+.method public ad()Z
     .locals 3
 
-    sget-object v0, Lcom/android/server/power/kth;->GH:[I
+    sget-object v0, Lcom/android/server/power/kth;->FH:[I
 
     iget-object v1, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$igw;->mType:Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_MODE_TYPE;
 
@@ -249,18 +249,18 @@
     return v1
 .end method
 
-.method public cd()Z
+.method public bd()Z
     .locals 0
 
-    iget-boolean p0, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$igw;->cI:Z
+    iget-boolean p0, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$igw;->bI:Z
 
     return p0
 .end method
 
-.method public dd()Z
+.method public cd()Z
     .locals 2
 
-    sget-object v0, Lcom/android/server/power/kth;->GH:[I
+    sget-object v0, Lcom/android/server/power/kth;->FH:[I
 
     iget-object v1, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$igw;->mType:Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_MODE_TYPE;
 
@@ -318,7 +318,7 @@
 
     move-result-wide p1
 
-    iput-wide p1, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$igw;->bI:J
+    iput-wide p1, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$igw;->aI:J
 
     return-void
 .end method
@@ -346,7 +346,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-wide v2, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$igw;->bI:J
+    iget-wide v2, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$igw;->aI:J
 
     invoke-virtual {v0, v2, v3}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 

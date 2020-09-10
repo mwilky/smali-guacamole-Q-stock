@@ -2445,7 +2445,7 @@
 
     iget-object v1, p0, Lcom/android/server/OpPowerControllerService;->mContext:Landroid/content/Context;
 
-    const v2, 0x50d0080
+    const v2, 0x50d0088
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -2453,7 +2453,7 @@
 
     iget-object v2, p0, Lcom/android/server/OpPowerControllerService;->mContext:Landroid/content/Context;
 
-    const v3, 0x50d007f
+    const v3, 0x50d0087
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -6439,7 +6439,7 @@
     :pswitch_0
     new-array v5, v8, [I
 
-    const/16 v6, 0xf3
+    const/16 v6, 0xf4
 
     aput v6, v5, v2
 
@@ -6589,7 +6589,7 @@
 
     check-cast v2, Ljava/net/HttpURLConnection;
     :try_end_0
-    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_1
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_1
     .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
     const/16 v1, 0x2710
@@ -6673,7 +6673,7 @@
 
     invoke-static {v0, v1}, Landroid/util/Slog;->v(Ljava/lang/String;Ljava/lang/String;)I
     :try_end_1
-    .catch Ljava/io/IOException; {:try_start_1 .. :try_end_1} :catch_0
+    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     const/16 p1, 0xcc
@@ -6792,11 +6792,11 @@
     .catch Ljava/lang/InterruptedException; {:try_start_0 .. :try_end_0} :catch_1
     .catch Ljava/lang/ArrayIndexOutOfBoundsException; {:try_start_0 .. :try_end_0} :catch_0
 
-    invoke-virtual {v2}, Lcom/android/server/ivd;->Zf()Z
+    invoke-virtual {v2}, Lcom/android/server/ivd;->Yf()Z
 
     move-result p0
 
-    invoke-virtual {v4}, Lcom/android/server/ivd;->Zf()Z
+    invoke-virtual {v4}, Lcom/android/server/ivd;->Yf()Z
 
     move-result v1
 
@@ -7329,7 +7329,7 @@
 
     const/4 v2, 0x0
 
-    const/16 v3, 0xf3
+    const/16 v3, 0xf4
 
     aput v3, v1, v2
 
@@ -13497,7 +13497,7 @@
     :cond_70
     new-array v1, v3, [I
 
-    const/16 v3, 0xf3
+    const/16 v3, 0xf4
 
     aput v3, v1, v4
 

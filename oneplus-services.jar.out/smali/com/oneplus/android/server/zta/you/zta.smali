@@ -49,7 +49,7 @@
     return-void
 .end method
 
-.method private Zr()Z
+.method private Yr()Z
     .locals 0
 
     iget-object p0, p0, Lcom/oneplus/android/server/zta/you/zta;->gba:Lcom/android/server/am/OnePlusHighPowerDetector;
@@ -72,7 +72,7 @@
 .method public beginCpuStatistics()V
     .locals 1
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/zta/you/zta;->Zr()Z
+    invoke-direct {p0}, Lcom/oneplus/android/server/zta/you/zta;->Yr()Z
 
     move-result v0
 
@@ -89,7 +89,7 @@
 .method public cancelBgDetectNotificationIfNeeded()V
     .locals 1
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/zta/you/zta;->Zr()Z
+    invoke-direct {p0}, Lcom/oneplus/android/server/zta/you/zta;->Yr()Z
 
     move-result v0
 
@@ -106,7 +106,7 @@
 .method public doCpuStatistics(Lcom/android/internal/os/ProcessCpuTracker$Stats;)V
     .locals 1
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/zta/you/zta;->Zr()Z
+    invoke-direct {p0}, Lcom/oneplus/android/server/zta/you/zta;->Yr()Z
 
     move-result v0
 
@@ -123,7 +123,7 @@
 .method public dumpBGCStats(Ljava/io/PrintWriter;)V
     .locals 1
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/zta/you/zta;->Zr()Z
+    invoke-direct {p0}, Lcom/oneplus/android/server/zta/you/zta;->Yr()Z
 
     move-result v0
 
@@ -140,7 +140,7 @@
 .method public enableAggressive(ZLcom/oneplus/android/server/am/highpower/IHighPowerDetector$RestrictType;)V
     .locals 1
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/zta/you/zta;->Zr()Z
+    invoke-direct {p0}, Lcom/oneplus/android/server/zta/you/zta;->Yr()Z
 
     move-result v0
 
@@ -157,7 +157,7 @@
 .method public finishCpuStatistics()V
     .locals 1
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/zta/you/zta;->Zr()Z
+    invoke-direct {p0}, Lcom/oneplus/android/server/zta/you/zta;->Yr()Z
 
     move-result v0
 
@@ -174,7 +174,7 @@
 .method public forceUpdateOnlineConfig()V
     .locals 1
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/zta/you/zta;->Zr()Z
+    invoke-direct {p0}, Lcom/oneplus/android/server/zta/you/zta;->Yr()Z
 
     move-result v0
 
@@ -199,7 +199,7 @@
         }
     .end annotation
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/zta/you/zta;->Zr()Z
+    invoke-direct {p0}, Lcom/oneplus/android/server/zta/you/zta;->Yr()Z
 
     move-result v0
 
@@ -234,7 +234,7 @@
 .method public informPkgRemoved(Ljava/lang/String;I)V
     .locals 1
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/zta/you/zta;->Zr()Z
+    invoke-direct {p0}, Lcom/oneplus/android/server/zta/you/zta;->Yr()Z
 
     move-result v0
 
@@ -271,7 +271,7 @@
 
     if-eqz v0, :cond_0
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/zta/you/zta;->Zr()Z
+    invoke-direct {p0}, Lcom/oneplus/android/server/zta/you/zta;->Yr()Z
 
     move-result v0
 
@@ -290,7 +290,7 @@
 .method public postProcessOfForceStop(Ljava/lang/String;I)V
     .locals 1
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/zta/you/zta;->Zr()Z
+    invoke-direct {p0}, Lcom/oneplus/android/server/zta/you/zta;->Yr()Z
 
     move-result v0
 
@@ -307,7 +307,7 @@
 .method public shellCommand(Ljava/lang/String;I[Ljava/lang/String;)Z
     .locals 1
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/zta/you/zta;->Zr()Z
+    invoke-direct {p0}, Lcom/oneplus/android/server/zta/you/zta;->Yr()Z
 
     move-result v0
 
@@ -330,7 +330,7 @@
 .method public startMonitor()V
     .locals 1
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/zta/you/zta;->Zr()Z
+    invoke-direct {p0}, Lcom/oneplus/android/server/zta/you/zta;->Yr()Z
 
     move-result v0
 
@@ -347,7 +347,7 @@
 .method public stopBgPowerHungryApp(Ljava/lang/String;I)V
     .locals 1
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/zta/you/zta;->Zr()Z
+    invoke-direct {p0}, Lcom/oneplus/android/server/zta/you/zta;->Yr()Z
 
     move-result v0
 
@@ -364,7 +364,7 @@
 .method public updateWidgetPackage(Ljava/lang/String;Z)V
     .locals 1
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/zta/you/zta;->Zr()Z
+    invoke-direct {p0}, Lcom/oneplus/android/server/zta/you/zta;->Yr()Z
 
     move-result v0
 
@@ -389,7 +389,7 @@
         }
     .end annotation
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/zta/you/zta;->Zr()Z
+    invoke-direct {p0}, Lcom/oneplus/android/server/zta/you/zta;->Yr()Z
 
     move-result v0
 

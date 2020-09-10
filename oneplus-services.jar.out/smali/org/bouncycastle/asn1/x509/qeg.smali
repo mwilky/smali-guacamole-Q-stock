@@ -133,7 +133,7 @@
 
 
 # virtual methods
-.method public Di()Lorg/bouncycastle/asn1/ssp;
+.method public Ci()Lorg/bouncycastle/asn1/ssp;
     .locals 0
 
     iget-object p0, p0, Lorg/bouncycastle/asn1/x509/qeg;->Qva:Lorg/bouncycastle/asn1/ssp;

@@ -368,12 +368,12 @@
 
     iput-object p1, p0, Lorg/bouncycastle/asn1/ibl/cgv;->jxa:[B
 
-    invoke-direct {p0}, Lorg/bouncycastle/asn1/ibl/cgv;->Kt()V
+    invoke-direct {p0}, Lorg/bouncycastle/asn1/ibl/cgv;->Jt()V
 
     return-void
 .end method
 
-.method private Kt()V
+.method private Jt()V
     .locals 1
 
     iget-object v0, p0, Lorg/bouncycastle/asn1/ibl/cgv;->curve:Lyou/zta/sis/zta/rtg;

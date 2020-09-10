@@ -126,7 +126,7 @@
 
     check-cast p2, Lorg/bouncycastle/jcajce/sis/tsu;
 
-    invoke-virtual {p2}, Lorg/bouncycastle/jcajce/sis/tsu;->Lj()[B
+    invoke-virtual {p2}, Lorg/bouncycastle/jcajce/sis/tsu;->Kj()[B
 
     move-result-object p2
 
@@ -403,7 +403,7 @@
     return-void
 .end method
 
-.method protected tg()[B
+.method protected sg()[B
     .locals 0
 
     iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/ec/sis;->result:[B

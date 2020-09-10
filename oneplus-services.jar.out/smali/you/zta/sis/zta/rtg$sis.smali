@@ -58,7 +58,7 @@
 
     iget-object v0, p0, Lyou/zta/sis/zta/rtg$sis;->this$0:Lyou/zta/sis/zta/rtg;
 
-    invoke-virtual {v0}, Lyou/zta/sis/zta/rtg;->Vj()Lyou/zta/sis/zta/rtg;
+    invoke-virtual {v0}, Lyou/zta/sis/zta/rtg;->Uj()Lyou/zta/sis/zta/rtg;
 
     move-result-object v0
 

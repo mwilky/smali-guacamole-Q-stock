@@ -232,7 +232,7 @@
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
     :cond_1
-    invoke-virtual {p0}, Lorg/bouncycastle/x509/kth;->rg()Z
+    invoke-virtual {p0}, Lorg/bouncycastle/x509/kth;->qg()Z
 
     move-result v2
 
@@ -243,7 +243,7 @@
     return v1
 
     :cond_2
-    invoke-virtual {p0}, Lorg/bouncycastle/x509/kth;->qg()Z
+    invoke-virtual {p0}, Lorg/bouncycastle/x509/kth;->pg()Z
 
     move-result v2
 
@@ -260,7 +260,7 @@
 
     if-eqz v2, :cond_4
 
-    invoke-virtual {v0}, Lorg/bouncycastle/asn1/ywr;->Rg()Ljava/math/BigInteger;
+    invoke-virtual {v0}, Lorg/bouncycastle/asn1/ywr;->Qg()Ljava/math/BigInteger;
 
     move-result-object v0
 
@@ -329,7 +329,7 @@
     return p0
 .end method
 
-.method public ng()Lorg/bouncycastle/x509/cno;
+.method public mg()Lorg/bouncycastle/x509/cno;
     .locals 0
 
     iget-object p0, p0, Lorg/bouncycastle/x509/kth;->rqa:Lorg/bouncycastle/x509/cno;
@@ -337,7 +337,7 @@
     return-object p0
 .end method
 
-.method public og()[B
+.method public ng()[B
     .locals 0
 
     iget-object p0, p0, Lorg/bouncycastle/x509/kth;->pqa:[B
@@ -349,7 +349,7 @@
     return-object p0
 .end method
 
-.method public pg()Ljava/math/BigInteger;
+.method public og()Ljava/math/BigInteger;
     .locals 0
 
     iget-object p0, p0, Lorg/bouncycastle/x509/kth;->oqa:Ljava/math/BigInteger;
@@ -357,7 +357,7 @@
     return-object p0
 .end method
 
-.method public qg()Z
+.method public pg()Z
     .locals 0
 
     iget-boolean p0, p0, Lorg/bouncycastle/x509/kth;->nqa:Z
@@ -365,7 +365,7 @@
     return p0
 .end method
 
-.method public rg()Z
+.method public qg()Z
     .locals 0
 
     iget-boolean p0, p0, Lorg/bouncycastle/x509/kth;->mqa:Z
@@ -373,7 +373,7 @@
     return p0
 .end method
 
-.method public sg()Z
+.method public rg()Z
     .locals 0
 
     iget-boolean p0, p0, Lorg/bouncycastle/x509/kth;->qqa:Z

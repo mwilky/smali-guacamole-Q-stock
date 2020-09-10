@@ -1,4 +1,4 @@
-.class public Lcom/oneplus/server/zta/sis;
+.class public Lcom/oneplus/server/theme/ssp;
 .super Ljava/lang/Object;
 .source ""
 
@@ -44,7 +44,7 @@
 
 .field private static final lka:Ljava/lang/String; = "persist.sys.theme_first_launch"
 
-.field private static mInstance:Lcom/oneplus/server/zta/sis; = null
+.field private static mInstance:Lcom/oneplus/server/theme/ssp; = null
 
 .field private static final mka:Ljava/lang/String; = "persist.sys.theme_version"
 
@@ -97,15 +97,15 @@
 
     sget-boolean v0, Landroid/os/Build;->DEBUG_ONEPLUS:Z
 
-    sput-boolean v0, Lcom/oneplus/server/zta/sis;->DEBUG:Z
+    sput-boolean v0, Lcom/oneplus/server/theme/ssp;->DEBUG:Z
 
     const/4 v0, 0x0
 
-    sput-object v0, Lcom/oneplus/server/zta/sis;->mInstance:Lcom/oneplus/server/zta/sis;
+    sput-object v0, Lcom/oneplus/server/theme/ssp;->mInstance:Lcom/oneplus/server/theme/ssp;
 
     const/4 v0, 0x0
 
-    sput-boolean v0, Lcom/oneplus/server/zta/sis;->uka:Z
+    sput-boolean v0, Lcom/oneplus/server/theme/ssp;->uka:Z
 
     return-void
 .end method
@@ -117,9 +117,9 @@
 
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/oneplus/server/zta/sis;->mSystemAppList:Ljava/util/ArrayList;
+    iput-object v0, p0, Lcom/oneplus/server/theme/ssp;->mSystemAppList:Ljava/util/ArrayList;
 
-    sget-boolean v0, Lcom/oneplus/server/zta/sis;->DEBUG:Z
+    sget-boolean v0, Lcom/oneplus/server/theme/ssp;->DEBUG:Z
 
     if-eqz v0, :cond_0
 
@@ -130,9 +130,9 @@
     invoke-static {v0, v1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_0
-    iput-object p1, p0, Lcom/oneplus/server/zta/sis;->mContext:Landroid/content/Context;
+    iput-object p1, p0, Lcom/oneplus/server/theme/ssp;->mContext:Landroid/content/Context;
 
-    invoke-direct {p0}, Lcom/oneplus/server/zta/sis;->initHandler()V
+    invoke-direct {p0}, Lcom/oneplus/server/theme/ssp;->initHandler()V
 
     const-string p1, "user"
 
@@ -144,7 +144,7 @@
 
     move-result-object p1
 
-    iput-object p1, p0, Lcom/oneplus/server/zta/sis;->aka:Landroid/os/IUserManager;
+    iput-object p1, p0, Lcom/oneplus/server/theme/ssp;->aka:Landroid/os/IUserManager;
 
     const-string p1, "overlay"
 
@@ -156,7 +156,7 @@
 
     move-result-object p1
 
-    iput-object p1, p0, Lcom/oneplus/server/zta/sis;->Zja:Landroid/content/om/IOverlayManager;
+    iput-object p1, p0, Lcom/oneplus/server/theme/ssp;->Zja:Landroid/content/om/IOverlayManager;
 
     const-string p1, "uimode"
 
@@ -168,7 +168,7 @@
 
     move-result-object p1
 
-    iput-object p1, p0, Lcom/oneplus/server/zta/sis;->_ja:Landroid/app/IUiModeManager;
+    iput-object p1, p0, Lcom/oneplus/server/theme/ssp;->_ja:Landroid/app/IUiModeManager;
 
     const/4 p1, 0x1
 
@@ -186,7 +186,7 @@
 
     new-instance p1, Ljava/util/ArrayList;
 
-    iget-object v0, p0, Lcom/oneplus/server/zta/sis;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/oneplus/server/theme/ssp;->mContext:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -209,7 +209,7 @@
     :cond_1
     new-instance p1, Ljava/util/ArrayList;
 
-    iget-object v0, p0, Lcom/oneplus/server/zta/sis;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/oneplus/server/theme/ssp;->mContext:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -228,7 +228,7 @@
     invoke-direct {p1, v0}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
 
     :goto_0
-    iput-object p1, p0, Lcom/oneplus/server/zta/sis;->mSystemAppList:Ljava/util/ArrayList;
+    iput-object p1, p0, Lcom/oneplus/server/theme/ssp;->mSystemAppList:Ljava/util/ArrayList;
 
     return-void
 .end method
@@ -240,11 +240,21 @@
 
     invoke-direct {p0}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v0, "changeFont:"
+    const-string v0, "changeFont. FontID "
 
     invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v0, ", User "
+
+    invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-static {}, Landroid/app/ActivityManager;->getCurrentUser()I
+
+    move-result v0
+
+    invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -255,6 +265,23 @@
     invoke-static {v0, p0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     :try_start_0
+    sget-boolean p0, Lcom/oneplus/theme/OpFontHelperInjector;->sFeatureEnable:Z
+
+    if-eqz p0, :cond_0
+
+    invoke-static {}, Landroid/app/ActivityManager;->getCurrentUser()I
+
+    move-result p0
+
+    invoke-static {p1}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
+
+    move-result p1
+
+    invoke-static {p0, p1}, Lcom/android/server/am/OpFontControlInjector;->changeFontForUser(II)V
+
+    return-void
+
+    :cond_0
     const-string p0, "persist.sys.font"
 
     invoke-static {p1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
@@ -318,7 +345,7 @@
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     :try_start_0
-    iget-object p0, p0, Lcom/oneplus/server/zta/sis;->Zja:Landroid/content/om/IOverlayManager;
+    iget-object p0, p0, Lcom/oneplus/server/theme/ssp;->Zja:Landroid/content/om/IOverlayManager;
 
     const/4 v1, 0x0
 
@@ -409,7 +436,7 @@
 
     invoke-direct {v0, p1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    iget-object p0, p0, Lcom/oneplus/server/zta/sis;->mContext:Landroid/content/Context;
+    iget-object p0, p0, Lcom/oneplus/server/theme/ssp;->mContext:Landroid/content/Context;
 
     invoke-virtual {p0, v0}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V
 
@@ -419,26 +446,26 @@
 .method static synthetic bud(Z)Z
     .locals 0
 
-    sput-boolean p0, Lcom/oneplus/server/zta/sis;->uka:Z
+    sput-boolean p0, Lcom/oneplus/server/theme/ssp;->uka:Z
 
     return p0
 .end method
 
-.method public static getInstance(Landroid/content/Context;)Lcom/oneplus/server/zta/sis;
+.method public static getInstance(Landroid/content/Context;)Lcom/oneplus/server/theme/ssp;
     .locals 1
 
-    sget-object v0, Lcom/oneplus/server/zta/sis;->mInstance:Lcom/oneplus/server/zta/sis;
+    sget-object v0, Lcom/oneplus/server/theme/ssp;->mInstance:Lcom/oneplus/server/theme/ssp;
 
     if-nez v0, :cond_0
 
-    new-instance v0, Lcom/oneplus/server/zta/sis;
+    new-instance v0, Lcom/oneplus/server/theme/ssp;
 
-    invoke-direct {v0, p0}, Lcom/oneplus/server/zta/sis;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, p0}, Lcom/oneplus/server/theme/ssp;-><init>(Landroid/content/Context;)V
 
-    sput-object v0, Lcom/oneplus/server/zta/sis;->mInstance:Lcom/oneplus/server/zta/sis;
+    sput-object v0, Lcom/oneplus/server/theme/ssp;->mInstance:Lcom/oneplus/server/theme/ssp;
 
     :cond_0
-    sget-object p0, Lcom/oneplus/server/zta/sis;->mInstance:Lcom/oneplus/server/zta/sis;
+    sget-object p0, Lcom/oneplus/server/theme/ssp;->mInstance:Lcom/oneplus/server/theme/ssp;
 
     return-object p0
 .end method
@@ -452,44 +479,44 @@
 
     invoke-direct {v0, v1}, Landroid/os/HandlerThread;-><init>(Ljava/lang/String;)V
 
-    iput-object v0, p0, Lcom/oneplus/server/zta/sis;->mHandlerThread:Landroid/os/HandlerThread;
+    iput-object v0, p0, Lcom/oneplus/server/theme/ssp;->mHandlerThread:Landroid/os/HandlerThread;
 
-    iget-object v0, p0, Lcom/oneplus/server/zta/sis;->mHandlerThread:Landroid/os/HandlerThread;
+    iget-object v0, p0, Lcom/oneplus/server/theme/ssp;->mHandlerThread:Landroid/os/HandlerThread;
 
     invoke-virtual {v0}, Landroid/os/HandlerThread;->start()V
 
-    new-instance v0, Lcom/oneplus/server/zta/zta;
+    new-instance v0, Lcom/oneplus/server/theme/tsu;
 
-    iget-object v1, p0, Lcom/oneplus/server/zta/sis;->mHandlerThread:Landroid/os/HandlerThread;
+    iget-object v1, p0, Lcom/oneplus/server/theme/ssp;->mHandlerThread:Landroid/os/HandlerThread;
 
     invoke-virtual {v1}, Landroid/os/HandlerThread;->getLooper()Landroid/os/Looper;
 
     move-result-object v1
 
-    invoke-direct {v0, p0, v1}, Lcom/oneplus/server/zta/zta;-><init>(Lcom/oneplus/server/zta/sis;Landroid/os/Looper;)V
+    invoke-direct {v0, p0, v1}, Lcom/oneplus/server/theme/tsu;-><init>(Lcom/oneplus/server/theme/ssp;Landroid/os/Looper;)V
 
-    iput-object v0, p0, Lcom/oneplus/server/zta/sis;->mHandler:Landroid/os/Handler;
+    iput-object v0, p0, Lcom/oneplus/server/theme/ssp;->mHandler:Landroid/os/Handler;
 
     return-void
 .end method
 
-.method static synthetic sis(Lcom/oneplus/server/zta/sis;)Landroid/content/Context;
+.method static synthetic sis(Lcom/oneplus/server/theme/ssp;)Landroid/content/Context;
     .locals 0
 
-    iget-object p0, p0, Lcom/oneplus/server/zta/sis;->mContext:Landroid/content/Context;
+    iget-object p0, p0, Lcom/oneplus/server/theme/ssp;->mContext:Landroid/content/Context;
 
     return-object p0
 .end method
 
-.method static synthetic tsu(Lcom/oneplus/server/zta/sis;)Landroid/content/om/IOverlayManager;
+.method static synthetic tsu(Lcom/oneplus/server/theme/ssp;)Landroid/content/om/IOverlayManager;
     .locals 0
 
-    iget-object p0, p0, Lcom/oneplus/server/zta/sis;->Zja:Landroid/content/om/IOverlayManager;
+    iget-object p0, p0, Lcom/oneplus/server/theme/ssp;->Zja:Landroid/content/om/IOverlayManager;
 
     return-object p0
 .end method
 
-.method private ut()V
+.method private tt()V
     .locals 3
 
     const-string p0, "OnePlusThemeController"
@@ -545,6 +572,37 @@
     return-void
 .end method
 
+.method private ut()V
+    .locals 5
+
+    sget-boolean v0, Lcom/oneplus/server/theme/ssp;->uka:Z
+
+    if-nez v0, :cond_0
+
+    iget-object v0, p0, Lcom/oneplus/server/theme/ssp;->mHandler:Landroid/os/Handler;
+
+    const/4 v1, 0x1
+
+    invoke-virtual {v0, v1}, Landroid/os/Handler;->obtainMessage(I)Landroid/os/Message;
+
+    move-result-object v2
+
+    const-wide/16 v3, 0x7d0
+
+    invoke-virtual {v0, v2, v3, v4}, Landroid/os/Handler;->sendMessageDelayed(Landroid/os/Message;J)Z
+
+    sput-boolean v1, Lcom/oneplus/server/theme/ssp;->uka:Z
+
+    const-string v0, "android.settings.oneplus_theme_ready"
+
+    const-string v1, "com.android.settings"
+
+    invoke-direct {p0, v0, v1}, Lcom/oneplus/server/theme/ssp;->vju(Ljava/lang/String;Ljava/lang/String;)V
+
+    :cond_0
+    return-void
+.end method
+
 .method private vju(Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
 
@@ -558,51 +616,20 @@
 
     invoke-virtual {v0, p1}, Landroid/content/Intent;->setFlags(I)Landroid/content/Intent;
 
-    iget-object p0, p0, Lcom/oneplus/server/zta/sis;->mContext:Landroid/content/Context;
+    iget-object p0, p0, Lcom/oneplus/server/theme/ssp;->mContext:Landroid/content/Context;
 
     invoke-virtual {p0, v0}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V
 
     return-void
 .end method
 
-.method private vt()V
-    .locals 5
-
-    sget-boolean v0, Lcom/oneplus/server/zta/sis;->uka:Z
-
-    if-nez v0, :cond_0
-
-    iget-object v0, p0, Lcom/oneplus/server/zta/sis;->mHandler:Landroid/os/Handler;
-
-    const/4 v1, 0x1
-
-    invoke-virtual {v0, v1}, Landroid/os/Handler;->obtainMessage(I)Landroid/os/Message;
-
-    move-result-object v2
-
-    const-wide/16 v3, 0x7d0
-
-    invoke-virtual {v0, v2, v3, v4}, Landroid/os/Handler;->sendMessageDelayed(Landroid/os/Message;J)Z
-
-    sput-boolean v1, Lcom/oneplus/server/zta/sis;->uka:Z
-
-    const-string v0, "android.settings.oneplus_theme_ready"
-
-    const-string v1, "com.android.settings"
-
-    invoke-direct {p0, v0, v1}, Lcom/oneplus/server/zta/sis;->vju(Ljava/lang/String;Ljava/lang/String;)V
-
-    :cond_0
-    return-void
-.end method
-
-.method private wt()I
+.method private vt()I
     .locals 2
 
     const/4 v0, 0x0
 
     :try_start_0
-    iget-object p0, p0, Lcom/oneplus/server/zta/sis;->mContext:Landroid/content/Context;
+    iget-object p0, p0, Lcom/oneplus/server/theme/ssp;->mContext:Landroid/content/Context;
 
     invoke-virtual {p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -633,10 +660,10 @@
     return v0
 .end method
 
-.method private xt()V
+.method private wt()V
     .locals 3
 
-    sget-boolean v0, Lcom/oneplus/server/zta/sis;->DEBUG:Z
+    sget-boolean v0, Lcom/oneplus/server/theme/ssp;->DEBUG:Z
 
     if-eqz v0, :cond_0
 
@@ -647,11 +674,11 @@
     invoke-static {v0, v1}, Landroid/util/Slog;->v(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_0
-    new-instance v0, Lcom/oneplus/server/zta/you;
+    new-instance v0, Lcom/oneplus/server/theme/rtg;
 
-    invoke-direct {v0, p0}, Lcom/oneplus/server/zta/you;-><init>(Lcom/oneplus/server/zta/sis;)V
+    invoke-direct {v0, p0}, Lcom/oneplus/server/theme/rtg;-><init>(Lcom/oneplus/server/theme/ssp;)V
 
-    iput-object v0, p0, Lcom/oneplus/server/zta/sis;->bka:Landroid/content/BroadcastReceiver;
+    iput-object v0, p0, Lcom/oneplus/server/theme/ssp;->bka:Landroid/content/BroadcastReceiver;
 
     new-instance v0, Landroid/content/IntentFilter;
 
@@ -685,9 +712,9 @@
 
     invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
-    iget-object v1, p0, Lcom/oneplus/server/zta/sis;->mContext:Landroid/content/Context;
+    iget-object v1, p0, Lcom/oneplus/server/theme/ssp;->mContext:Landroid/content/Context;
 
-    iget-object v2, p0, Lcom/oneplus/server/zta/sis;->bka:Landroid/content/BroadcastReceiver;
+    iget-object v2, p0, Lcom/oneplus/server/theme/ssp;->bka:Landroid/content/BroadcastReceiver;
 
     invoke-virtual {v1, v2, v0}, Landroid/content/Context;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
 
@@ -707,24 +734,16 @@
 
     invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addDataScheme(Ljava/lang/String;)V
 
-    iget-object v1, p0, Lcom/oneplus/server/zta/sis;->mContext:Landroid/content/Context;
+    iget-object v1, p0, Lcom/oneplus/server/theme/ssp;->mContext:Landroid/content/Context;
 
-    iget-object p0, p0, Lcom/oneplus/server/zta/sis;->bka:Landroid/content/BroadcastReceiver;
+    iget-object p0, p0, Lcom/oneplus/server/theme/ssp;->bka:Landroid/content/BroadcastReceiver;
 
     invoke-virtual {v1, p0, v0}, Landroid/content/Context;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
 
     return-void
 .end method
 
-.method static synthetic you(Lcom/oneplus/server/zta/sis;)Landroid/app/IUiModeManager;
-    .locals 0
-
-    iget-object p0, p0, Lcom/oneplus/server/zta/sis;->_ja:Landroid/app/IUiModeManager;
-
-    return-object p0
-.end method
-
-.method private yt()Z
+.method private xt()Z
     .locals 3
 
     const-string p0, ""
@@ -769,7 +788,15 @@
     return p0
 .end method
 
-.method private zt()Z
+.method static synthetic you(Lcom/oneplus/server/theme/ssp;)Landroid/app/IUiModeManager;
+    .locals 0
+
+    iget-object p0, p0, Lcom/oneplus/server/theme/ssp;->_ja:Landroid/app/IUiModeManager;
+
+    return-object p0
+.end method
+
+.method private yt()Z
     .locals 5
 
     const-string v0, "OnePlusThemeController"
@@ -777,7 +804,7 @@
     const/4 v1, 0x0
 
     :try_start_0
-    iget-object v2, p0, Lcom/oneplus/server/zta/sis;->aka:Landroid/os/IUserManager;
+    iget-object v2, p0, Lcom/oneplus/server/theme/ssp;->aka:Landroid/os/IUserManager;
 
     const/16 v3, 0x3e7
 
@@ -793,7 +820,7 @@
 
     invoke-virtual {v2, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object p0, p0, Lcom/oneplus/server/zta/sis;->aka:Landroid/os/IUserManager;
+    iget-object p0, p0, Lcom/oneplus/server/theme/ssp;->aka:Landroid/os/IUserManager;
 
     invoke-interface {p0, v3}, Landroid/os/IUserManager;->isUserRunning(I)Z
 
@@ -824,10 +851,10 @@
     return v1
 .end method
 
-.method static synthetic zta(Lcom/oneplus/server/zta/sis;)I
+.method static synthetic zta(Lcom/oneplus/server/theme/ssp;)I
     .locals 0
 
-    invoke-direct {p0}, Lcom/oneplus/server/zta/sis;->wt()I
+    invoke-direct {p0}, Lcom/oneplus/server/theme/ssp;->vt()I
 
     move-result p0
 
@@ -836,7 +863,7 @@
 
 
 # virtual methods
-.method public Qf()V
+.method public Pf()V
     .locals 4
 
     const-string v0, "OnePlusThemeController"
@@ -845,7 +872,7 @@
 
     invoke-static {v0, v1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    invoke-direct {p0}, Lcom/oneplus/server/zta/sis;->xt()V
+    invoke-direct {p0}, Lcom/oneplus/server/theme/ssp;->wt()V
 
     const-string v1, "persist.sys.theme_first_launch"
 
@@ -870,14 +897,14 @@
     invoke-static {v1, v2}, Landroid/os/SystemProperties;->set(Ljava/lang/String;Ljava/lang/String;)V
 
     :cond_0
-    invoke-direct {p0}, Lcom/oneplus/server/zta/sis;->yt()Z
+    invoke-direct {p0}, Lcom/oneplus/server/theme/ssp;->xt()Z
 
     move-result v1
 
     if-eqz v1, :cond_3
 
     :try_start_0
-    invoke-direct {p0}, Lcom/oneplus/server/zta/sis;->wt()I
+    invoke-direct {p0}, Lcom/oneplus/server/theme/ssp;->vt()I
 
     move-result v1
 
@@ -901,7 +928,7 @@
 
     const-string v1, "oneplus_basiccolor_white"
 
-    invoke-virtual {p0, v1}, Lcom/oneplus/server/zta/sis;->enableTheme(Ljava/lang/String;)V
+    invoke-virtual {p0, v1}, Lcom/oneplus/server/theme/ssp;->enableTheme(Ljava/lang/String;)V
 
     goto :goto_0
 
@@ -910,7 +937,7 @@
 
     if-ne v1, v2, :cond_2
 
-    iget-object p0, p0, Lcom/oneplus/server/zta/sis;->_ja:Landroid/app/IUiModeManager;
+    iget-object p0, p0, Lcom/oneplus/server/theme/ssp;->_ja:Landroid/app/IUiModeManager;
 
     const/4 v1, 0x2
 
@@ -962,7 +989,7 @@
 
     invoke-static {v1, v0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    invoke-direct {p0, p1}, Lcom/oneplus/server/zta/sis;->Rc(Ljava/lang/String;)Ljava/util/ArrayList;
+    invoke-direct {p0, p1}, Lcom/oneplus/server/theme/ssp;->Rc(Ljava/lang/String;)Ljava/util/ArrayList;
 
     move-result-object p1
 
@@ -984,7 +1011,7 @@
 
     check-cast v0, Ljava/lang/String;
 
-    sget-boolean v2, Lcom/oneplus/server/zta/sis;->DEBUG:Z
+    sget-boolean v2, Lcom/oneplus/server/theme/ssp;->DEBUG:Z
 
     if-eqz v2, :cond_1
 
@@ -1014,7 +1041,7 @@
     if-eqz v0, :cond_0
 
     :try_start_0
-    iget-object v2, p0, Lcom/oneplus/server/zta/sis;->Zja:Landroid/content/om/IOverlayManager;
+    iget-object v2, p0, Lcom/oneplus/server/theme/ssp;->Zja:Landroid/content/om/IOverlayManager;
 
     const/4 v3, 0x0
 
@@ -1060,7 +1087,7 @@
 
     invoke-static {v1, v0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    invoke-direct {p0, p1}, Lcom/oneplus/server/zta/sis;->Rc(Ljava/lang/String;)Ljava/util/ArrayList;
+    invoke-direct {p0, p1}, Lcom/oneplus/server/theme/ssp;->Rc(Ljava/lang/String;)Ljava/util/ArrayList;
 
     move-result-object p1
 
@@ -1082,7 +1109,7 @@
 
     check-cast v0, Ljava/lang/String;
 
-    sget-boolean v2, Lcom/oneplus/server/zta/sis;->DEBUG:Z
+    sget-boolean v2, Lcom/oneplus/server/theme/ssp;->DEBUG:Z
 
     if-eqz v2, :cond_1
 
@@ -1106,7 +1133,7 @@
     if-eqz v0, :cond_0
 
     :try_start_0
-    iget-object v2, p0, Lcom/oneplus/server/zta/sis;->Zja:Landroid/content/om/IOverlayManager;
+    iget-object v2, p0, Lcom/oneplus/server/theme/ssp;->Zja:Landroid/content/om/IOverlayManager;
 
     const/4 v3, 0x0
 
@@ -1156,7 +1183,7 @@
 
     invoke-static {v1, v0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    invoke-direct {p0, p1}, Lcom/oneplus/server/zta/sis;->Rc(Ljava/lang/String;)Ljava/util/ArrayList;
+    invoke-direct {p0, p1}, Lcom/oneplus/server/theme/ssp;->Rc(Ljava/lang/String;)Ljava/util/ArrayList;
 
     move-result-object p1
 
@@ -1182,7 +1209,7 @@
 
     check-cast v2, Ljava/lang/String;
 
-    sget-boolean v3, Lcom/oneplus/server/zta/sis;->DEBUG:Z
+    sget-boolean v3, Lcom/oneplus/server/theme/ssp;->DEBUG:Z
 
     if-eqz v3, :cond_1
 
@@ -1212,7 +1239,7 @@
     if-eqz v2, :cond_0
 
     :try_start_0
-    iget-object v3, p0, Lcom/oneplus/server/zta/sis;->Zja:Landroid/content/om/IOverlayManager;
+    iget-object v3, p0, Lcom/oneplus/server/theme/ssp;->Zja:Landroid/content/om/IOverlayManager;
 
     const/4 v4, 0x1
 
@@ -1258,7 +1285,7 @@
 
     invoke-static {v1, v0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    invoke-direct {p0, p1}, Lcom/oneplus/server/zta/sis;->Rc(Ljava/lang/String;)Ljava/util/ArrayList;
+    invoke-direct {p0, p1}, Lcom/oneplus/server/theme/ssp;->Rc(Ljava/lang/String;)Ljava/util/ArrayList;
 
     move-result-object p1
 
@@ -1280,7 +1307,7 @@
 
     check-cast v0, Ljava/lang/String;
 
-    sget-boolean v2, Lcom/oneplus/server/zta/sis;->DEBUG:Z
+    sget-boolean v2, Lcom/oneplus/server/theme/ssp;->DEBUG:Z
 
     if-eqz v2, :cond_1
 
@@ -1310,7 +1337,7 @@
     if-eqz v0, :cond_0
 
     :try_start_0
-    iget-object v2, p0, Lcom/oneplus/server/zta/sis;->Zja:Landroid/content/om/IOverlayManager;
+    iget-object v2, p0, Lcom/oneplus/server/theme/ssp;->Zja:Landroid/content/om/IOverlayManager;
 
     const/4 v3, 0x1
 
@@ -1369,7 +1396,7 @@
 
     if-eqz v0, :cond_2
 
-    invoke-direct {p0}, Lcom/oneplus/server/zta/sis;->ut()V
+    invoke-direct {p0}, Lcom/oneplus/server/theme/ssp;->tt()V
 
     goto :goto_1
 
@@ -1382,7 +1409,7 @@
 
     if-eqz v0, :cond_3
 
-    invoke-direct {p0, p2}, Lcom/oneplus/server/zta/sis;->Qc(Ljava/lang/String;)V
+    invoke-direct {p0, p2}, Lcom/oneplus/server/theme/ssp;->Qc(Ljava/lang/String;)V
 
     goto :goto_1
 
@@ -1403,7 +1430,7 @@
 
     move-result-object v0
 
-    invoke-virtual {p0, v0}, Lcom/oneplus/server/zta/sis;->disableTheme(Ljava/lang/String;)V
+    invoke-virtual {p0, v0}, Lcom/oneplus/server/theme/ssp;->disableTheme(Ljava/lang/String;)V
 
     const-string v0, "oneplus_basiccolor"
 
@@ -1429,9 +1456,9 @@
 
     const/16 p2, 0x3e7
 
-    invoke-virtual {p0, p1, p2}, Lcom/oneplus/server/zta/sis;->bio(Ljava/lang/String;I)V
+    invoke-virtual {p0, p1, p2}, Lcom/oneplus/server/theme/ssp;->bio(Ljava/lang/String;I)V
 
-    iget-object p1, p0, Lcom/oneplus/server/zta/sis;->mContext:Landroid/content/Context;
+    iget-object p1, p0, Lcom/oneplus/server/theme/ssp;->mContext:Landroid/content/Context;
 
     invoke-virtual {p1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -1443,7 +1470,7 @@
 
     invoke-static {p1, v0, p2}, Landroid/provider/Settings$Secure;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
-    iget-object p1, p0, Lcom/oneplus/server/zta/sis;->mContext:Landroid/content/Context;
+    iget-object p1, p0, Lcom/oneplus/server/theme/ssp;->mContext:Landroid/content/Context;
 
     invoke-virtual {p1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -1455,7 +1482,7 @@
 
     :cond_4
     :goto_1
-    invoke-direct {p0}, Lcom/oneplus/server/zta/sis;->vt()V
+    invoke-direct {p0}, Lcom/oneplus/server/theme/ssp;->ut()V
 
     return-void
 .end method
@@ -1494,7 +1521,7 @@
 
     if-eqz v0, :cond_2
 
-    invoke-direct {p0}, Lcom/oneplus/server/zta/sis;->ut()V
+    invoke-direct {p0}, Lcom/oneplus/server/theme/ssp;->tt()V
 
     goto :goto_1
 
@@ -1507,7 +1534,7 @@
 
     if-eqz v0, :cond_3
 
-    invoke-direct {p0, p2}, Lcom/oneplus/server/zta/sis;->Qc(Ljava/lang/String;)V
+    invoke-direct {p0, p2}, Lcom/oneplus/server/theme/ssp;->Qc(Ljava/lang/String;)V
 
     goto :goto_1
 
@@ -1528,7 +1555,7 @@
 
     move-result-object v0
 
-    invoke-virtual {p0, v0}, Lcom/oneplus/server/zta/sis;->enableTheme(Ljava/lang/String;)V
+    invoke-virtual {p0, v0}, Lcom/oneplus/server/theme/ssp;->enableTheme(Ljava/lang/String;)V
 
     const-string v0, "oneplus_basiccolor"
 
@@ -1554,15 +1581,15 @@
 
     const/16 p2, 0x3e7
 
-    invoke-virtual {p0, p1, p2}, Lcom/oneplus/server/zta/sis;->igw(Ljava/lang/String;I)V
+    invoke-virtual {p0, p1, p2}, Lcom/oneplus/server/theme/ssp;->igw(Ljava/lang/String;I)V
 
     const-string p1, "android.settings.oneplus_basiccolor_ready"
 
-    invoke-direct {p0, p1}, Lcom/oneplus/server/zta/sis;->Sc(Ljava/lang/String;)V
+    invoke-direct {p0, p1}, Lcom/oneplus/server/theme/ssp;->Sc(Ljava/lang/String;)V
 
     :cond_4
     :goto_1
-    invoke-direct {p0}, Lcom/oneplus/server/zta/sis;->vt()V
+    invoke-direct {p0}, Lcom/oneplus/server/theme/ssp;->ut()V
 
     return-void
 .end method

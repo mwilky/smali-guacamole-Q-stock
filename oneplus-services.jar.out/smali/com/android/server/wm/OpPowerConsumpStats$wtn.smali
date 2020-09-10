@@ -390,12 +390,12 @@
 .method static synthetic sis(Lcom/android/server/wm/OpPowerConsumpStats$wtn;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/wm/OpPowerConsumpStats$wtn;->yp()V
+    invoke-direct {p0}, Lcom/android/server/wm/OpPowerConsumpStats$wtn;->xp()V
 
     return-void
 .end method
 
-.method private wp()J
+.method private vp()J
     .locals 8
 
     iget-object v0, p0, Lcom/android/server/wm/OpPowerConsumpStats$wtn;->lock:Ljava/lang/Object;
@@ -506,7 +506,7 @@
     throw p0
 .end method
 
-.method private xp()Z
+.method private wp()Z
     .locals 7
 
     iget-object v0, p0, Lcom/android/server/wm/OpPowerConsumpStats$wtn;->lock:Ljava/lang/Object;
@@ -605,27 +605,7 @@
     throw p0
 .end method
 
-.method static synthetic you(Lcom/android/server/wm/OpPowerConsumpStats$wtn;J)J
-    .locals 0
-
-    invoke-direct {p0, p1, p2}, Lcom/android/server/wm/OpPowerConsumpStats$wtn;->ivd(J)J
-
-    move-result-wide p0
-
-    return-wide p0
-.end method
-
-.method static synthetic you(Lcom/android/server/wm/OpPowerConsumpStats$wtn;)Z
-    .locals 0
-
-    invoke-direct {p0}, Lcom/android/server/wm/OpPowerConsumpStats$wtn;->zp()Z
-
-    move-result p0
-
-    return p0
-.end method
-
-.method private yp()V
+.method private xp()V
     .locals 3
 
     iget-object v0, p0, Lcom/android/server/wm/OpPowerConsumpStats$wtn;->lock:Ljava/lang/Object;
@@ -677,7 +657,27 @@
     throw p0
 .end method
 
-.method private zp()Z
+.method static synthetic you(Lcom/android/server/wm/OpPowerConsumpStats$wtn;J)J
+    .locals 0
+
+    invoke-direct {p0, p1, p2}, Lcom/android/server/wm/OpPowerConsumpStats$wtn;->ivd(J)J
+
+    move-result-wide p0
+
+    return-wide p0
+.end method
+
+.method static synthetic you(Lcom/android/server/wm/OpPowerConsumpStats$wtn;)Z
+    .locals 0
+
+    invoke-direct {p0}, Lcom/android/server/wm/OpPowerConsumpStats$wtn;->yp()Z
+
+    move-result p0
+
+    return p0
+.end method
+
+.method private yp()Z
     .locals 5
 
     iget-object v0, p0, Lcom/android/server/wm/OpPowerConsumpStats$wtn;->lock:Ljava/lang/Object;
@@ -759,7 +759,7 @@
 .method static synthetic zta(Lcom/android/server/wm/OpPowerConsumpStats$wtn;)Z
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/wm/OpPowerConsumpStats$wtn;->xp()Z
+    invoke-direct {p0}, Lcom/android/server/wm/OpPowerConsumpStats$wtn;->wp()Z
 
     move-result p0
 
