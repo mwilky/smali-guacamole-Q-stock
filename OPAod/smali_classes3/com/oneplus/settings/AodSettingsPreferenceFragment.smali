@@ -8,7 +8,7 @@
 
 
 # static fields
-.field private static final AOD_NONE_CLOCK_STYLE:I = 0x3
+.field private static final AOD_NONE_CLOCK_STYLE:I = 0x1
 
 .field private static final KEY_AOD_CLOCK_STYLE:Ljava/lang/String; = "aod_clock_style"
 
@@ -362,9 +362,9 @@
 
     iget-boolean v0, p0, Lcom/oneplus/settings/AodSettingsPreferenceFragment;->mAodEnabled:Z
 
-    const/4 v1, 0x1
+    const/4 v1, 0x0
 
-    const/4 v2, 0x0
+    const/4 v2, 0x1
 
     if-nez v0, :cond_1
 
@@ -385,13 +385,13 @@
 
     if-nez v4, :cond_2
 
-    iput-boolean v2, p0, Lcom/oneplus/settings/AodSettingsPreferenceFragment;->mDozeEnalbe:Z
+    iput-boolean v1, p0, Lcom/oneplus/settings/AodSettingsPreferenceFragment;->mDozeEnalbe:Z
 
     goto :goto_1
 
     :cond_1
     :goto_0
-    iput-boolean v1, p0, Lcom/oneplus/settings/AodSettingsPreferenceFragment;->mDozeEnalbe:Z
+    iput-boolean v2, p0, Lcom/oneplus/settings/AodSettingsPreferenceFragment;->mDozeEnalbe:Z
 
     :cond_2
     :goto_1
@@ -403,23 +403,21 @@
 
     if-nez v0, :cond_3
 
-    iput-boolean v2, p0, Lcom/oneplus/settings/AodSettingsPreferenceFragment;->mSmartDisplayEnabled:Z
+    iput-boolean v1, p0, Lcom/oneplus/settings/AodSettingsPreferenceFragment;->mSmartDisplayEnabled:Z
 
     goto :goto_2
 
     :cond_3
     iget v0, p0, Lcom/oneplus/settings/AodSettingsPreferenceFragment;->mAodClockStyle:I
 
-    const/4 v3, 0x3
+    if-eq v0, v2, :cond_4
 
-    if-eq v0, v3, :cond_4
-
-    iput-boolean v1, p0, Lcom/oneplus/settings/AodSettingsPreferenceFragment;->mSmartDisplayEnabled:Z
+    iput-boolean v2, p0, Lcom/oneplus/settings/AodSettingsPreferenceFragment;->mSmartDisplayEnabled:Z
 
     goto :goto_2
 
     :cond_4
-    iput-boolean v2, p0, Lcom/oneplus/settings/AodSettingsPreferenceFragment;->mSmartDisplayEnabled:Z
+    iput-boolean v1, p0, Lcom/oneplus/settings/AodSettingsPreferenceFragment;->mSmartDisplayEnabled:Z
 
     :goto_2
     new-instance v0, Ljava/lang/StringBuilder;
