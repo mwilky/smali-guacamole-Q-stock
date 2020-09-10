@@ -6787,7 +6787,7 @@
     :goto_1
     new-array v4, v12, [I
 
-    const/16 v5, 0xfb
+    const/16 v5, 0xfc
 
     aput v5, v4, v11
 

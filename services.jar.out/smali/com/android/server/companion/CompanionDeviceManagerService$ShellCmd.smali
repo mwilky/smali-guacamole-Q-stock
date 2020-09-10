@@ -23,20 +23,22 @@
 
 
 # direct methods
-.method private constructor <init>(Lcom/android/server/companion/CompanionDeviceManagerService;)V
-    .locals 0
+.method constructor <init>(Lcom/android/server/companion/CompanionDeviceManagerService;)V
+    .locals 2
 
     iput-object p1, p0, Lcom/android/server/companion/CompanionDeviceManagerService$ShellCmd;->this$0:Lcom/android/server/companion/CompanionDeviceManagerService;
 
     invoke-direct {p0}, Landroid/os/ShellCommand;-><init>()V
 
-    return-void
-.end method
+    invoke-virtual {p1}, Lcom/android/server/companion/CompanionDeviceManagerService;->getContext()Landroid/content/Context;
 
-.method synthetic constructor <init>(Lcom/android/server/companion/CompanionDeviceManagerService;Lcom/android/server/companion/CompanionDeviceManagerService$1;)V
-    .locals 0
+    move-result-object p1
 
-    invoke-direct {p0, p1}, Lcom/android/server/companion/CompanionDeviceManagerService$ShellCmd;-><init>(Lcom/android/server/companion/CompanionDeviceManagerService;)V
+    const-string v0, "android.permission.MANAGE_COMPANION_DEVICES"
+
+    const-string v1, "ShellCmd"
+
+    invoke-virtual {p1, v0, v1}, Landroid/content/Context;->enforceCallingOrSelfPermission(Ljava/lang/String;Ljava/lang/String;)V
 
     return-void
 .end method
@@ -222,7 +224,7 @@
 
     move-result v1
 
-    invoke-static {v0, v1}, Lcom/android/server/companion/CompanionDeviceManagerService;->access$1600(Lcom/android/server/companion/CompanionDeviceManagerService;I)Ljava/util/Set;
+    invoke-static {v0, v1}, Lcom/android/server/companion/CompanionDeviceManagerService;->access$1500(Lcom/android/server/companion/CompanionDeviceManagerService;I)Ljava/util/Set;
 
     move-result-object v0
 

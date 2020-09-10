@@ -19,7 +19,7 @@
 
     const/4 v1, 0x0
 
-    const/16 v2, 0xb2
+    const/16 v2, 0xb3
 
     aput v2, v0, v1
 
@@ -483,6 +483,8 @@
 .method public static setFront(Ljava/lang/String;Ljava/lang/String;II)V
     .locals 1
 
+    invoke-static {p0, p1, p2, p3}, Lcom/oneplus/houston/apkserver/bridge/HoustonInjector;->setFront(Ljava/lang/String;Ljava/lang/String;II)V
+
     sget-boolean v0, Lcom/android/server/wm/OpUtilInjector;->ENABLED:Z
 
     if-nez v0, :cond_0
@@ -495,12 +497,6 @@
     sget-object v0, Lcom/android/server/wm/OpUtilInjector;->sOpUtil:Lcom/android/server/wm/IOpUtil;
 
     invoke-interface {v0, p0, p1, p2, p3}, Lcom/android/server/wm/IOpUtil;->setFront(Ljava/lang/String;Ljava/lang/String;II)V
-
-    invoke-static {}, Lcom/oneplus/houston/apkserver/bridge/HoustonProcessManager;->getInstance()Lcom/oneplus/houston/apkserver/bridge/HoustonProcessManager;
-
-    move-result-object v0
-
-    invoke-virtual {v0, p0, p1, p2, p3}, Lcom/oneplus/houston/apkserver/bridge/HoustonProcessManager;->setFront(Ljava/lang/String;Ljava/lang/String;II)V
 
     return-void
 .end method

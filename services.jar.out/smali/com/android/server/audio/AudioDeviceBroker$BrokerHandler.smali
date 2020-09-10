@@ -1003,7 +1003,7 @@
     :pswitch_12
     new-array v0, v2, [I
 
-    const/16 v2, 0xa4
+    const/16 v2, 0xa5
 
     aput v2, v0, v1
 

@@ -28,6 +28,12 @@
 
 
 # static fields
+.field private static final AOD_CLOCK_DEFAULT:I = 0x0
+
+.field private static final AOD_CLOCK_NONE:I = 0x1
+
+.field private static final AOD_CLOCK_STYLE:Ljava/lang/String; = "aod_clock_style"
+
 .field private static final CANCEL_TIMEOUT_LIMIT:J = 0xbb8L
 
 .field private static final CLEANUP_UNKNOWN_TEMPLATES:Z = true
@@ -1308,6 +1314,19 @@
 .method protected addLockoutResetCallback(Landroid/hardware/biometrics/IBiometricServiceLockoutResetCallback;)V
     .locals 2
 
+    if-nez p1, :cond_0
+
+    invoke-virtual {p0}, Lcom/android/server/biometrics/BiometricServiceBase;->getTag()Ljava/lang/String;
+
+    move-result-object v0
+
+    const-string v1, "add lock reset callback fail, because callback is null"
+
+    invoke-static {v0, v1}, Landroid/util/Slog;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    return-void
+
+    :cond_0
     iget-object v0, p0, Lcom/android/server/biometrics/BiometricServiceBase;->mHandler:Lcom/android/server/biometrics/BiometricServiceBase$H;
 
     new-instance v1, Lcom/android/server/biometrics/-$$Lambda$BiometricServiceBase$XAcKFVHrxFAE_DeiO9UcSMHwbi4;
@@ -2386,7 +2405,7 @@
 .end method
 
 .method protected handleRemoved(Landroid/hardware/biometrics/BiometricAuthenticator$Identifier;I)V
-    .locals 5
+    .locals 7
 
     invoke-virtual {p0}, Lcom/android/server/biometrics/BiometricServiceBase;->getTag()Ljava/lang/String;
 
@@ -2465,14 +2484,6 @@
 
     invoke-virtual {p0, v1, v2}, Lcom/android/server/biometrics/BiometricServiceBase;->updateActiveGroup(ILjava/lang/String;)V
 
-    invoke-virtual {p0}, Lcom/android/server/biometrics/BiometricServiceBase;->getTag()Ljava/lang/String;
-
-    move-result-object v2
-
-    const-string v3, "force reset aod clock type as default due to no remained fingerprint"
-
-    invoke-static {v2, v3}, Landroid/util/Slog;->i(Ljava/lang/String;Ljava/lang/String;)I
-
     iget-object v2, p0, Lcom/android/server/biometrics/BiometricServiceBase;->mContext:Landroid/content/Context;
 
     invoke-virtual {v2}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
@@ -2483,7 +2494,29 @@
 
     const-string v4, "aod_clock_style"
 
-    invoke-static {v2, v4, v3, v1}, Landroid/provider/Settings$Secure;->putIntForUser(Landroid/content/ContentResolver;Ljava/lang/String;II)Z
+    invoke-static {v2, v4, v3, v1}, Landroid/provider/Settings$Secure;->getIntForUser(Landroid/content/ContentResolver;Ljava/lang/String;II)I
+
+    move-result v2
+
+    const/4 v5, 0x1
+
+    if-ne v2, v5, :cond_1
+
+    invoke-virtual {p0}, Lcom/android/server/biometrics/BiometricServiceBase;->getTag()Ljava/lang/String;
+
+    move-result-object v5
+
+    const-string v6, "force reset aod clock type as default due to no remained fingerprint"
+
+    invoke-static {v5, v6}, Landroid/util/Slog;->i(Ljava/lang/String;Ljava/lang/String;)I
+
+    iget-object v5, p0, Lcom/android/server/biometrics/BiometricServiceBase;->mContext:Landroid/content/Context;
+
+    invoke-virtual {v5}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object v5
+
+    invoke-static {v5, v4, v3, v1}, Landroid/provider/Settings$Secure;->putIntForUser(Landroid/content/ContentResolver;Ljava/lang/String;II)Z
 
     :cond_1
     instance-of v1, v0, Lcom/android/server/biometrics/BiometricServiceBase$InternalRemovalClient;

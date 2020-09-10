@@ -28,11 +28,29 @@
 
 .field private static final MSG_UPDATE_PORTS:I = 0x1
 
+.field private static final MSG_USB_CONTAMINANT_DETECTED:I = 0x3
+
+.field private static final MSG_USB_CONTAMINANT_RECOVERED:I = 0x4
+
 .field private static final PORT_INFO:Ljava/lang/String; = "port_info"
 
 .field private static final TAG:Ljava/lang/String; = "UsbPortManager"
 
+.field private static final USB_FILE_PATH:Ljava/lang/String; = "/sys/class/power_supply/battery/connect_disable"
+
 .field private static final USB_HAL_DEATH_COOKIE:I = 0x3e8
+
+.field private static is_vbus_connected:Z
+
+.field private static originPortInfo:Ljava/util/ArrayList;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/ArrayList<",
+            "Lcom/android/server/usb/UsbPortManager$RawPortInfo;",
+            ">;"
+        }
+    .end annotation
+.end field
 
 
 # instance fields
@@ -107,6 +125,12 @@
 .method static constructor <clinit>()V
     .locals 3
 
+    new-instance v0, Ljava/util/ArrayList;
+
+    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
+
+    sput-object v0, Lcom/android/server/usb/UsbPortManager;->originPortInfo:Ljava/util/ArrayList;
+
     nop
 
     const/4 v0, 0x1
@@ -138,6 +162,10 @@
     move-result v0
 
     sput v0, Lcom/android/server/usb/UsbPortManager;->COMBO_SINK_DEVICE:I
+
+    const/4 v0, 0x0
+
+    sput-boolean v0, Lcom/android/server/usb/UsbPortManager;->is_vbus_connected:Z
 
     return-void
 .end method
@@ -261,7 +289,47 @@
     return-void
 .end method
 
-.method static synthetic access$200(Lcom/android/server/usb/UsbPortManager;)Landroid/os/Handler;
+.method static synthetic access$1000(Lcom/android/server/usb/UsbPortManager;)Landroid/content/Context;
+    .locals 1
+
+    iget-object v0, p0, Lcom/android/server/usb/UsbPortManager;->mContext:Landroid/content/Context;
+
+    return-object v0
+.end method
+
+.method static synthetic access$1100(Lcom/android/server/usb/UsbPortManager;Ljava/lang/String;IIIZIZIZZIZILcom/android/internal/util/IndentingPrintWriter;)V
+    .locals 0
+
+    invoke-direct/range {p0 .. p14}, Lcom/android/server/usb/UsbPortManager;->addOrUpdatePortLocked(Ljava/lang/String;IIIZIZIZZIZILcom/android/internal/util/IndentingPrintWriter;)V
+
+    return-void
+.end method
+
+.method static synthetic access$200()Ljava/util/ArrayList;
+    .locals 1
+
+    sget-object v0, Lcom/android/server/usb/UsbPortManager;->originPortInfo:Ljava/util/ArrayList;
+
+    return-object v0
+.end method
+
+.method static synthetic access$300()Z
+    .locals 1
+
+    sget-boolean v0, Lcom/android/server/usb/UsbPortManager;->is_vbus_connected:Z
+
+    return v0
+.end method
+
+.method static synthetic access$302(Z)Z
+    .locals 0
+
+    sput-boolean p0, Lcom/android/server/usb/UsbPortManager;->is_vbus_connected:Z
+
+    return p0
+.end method
+
+.method static synthetic access$400(Lcom/android/server/usb/UsbPortManager;)Landroid/os/Handler;
     .locals 1
 
     iget-object v0, p0, Lcom/android/server/usb/UsbPortManager;->mHandler:Landroid/os/Handler;
@@ -269,7 +337,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$300(Lcom/android/server/usb/UsbPortManager;)Ljava/lang/Object;
+.method static synthetic access$500(Lcom/android/server/usb/UsbPortManager;)Ljava/lang/Object;
     .locals 1
 
     iget-object v0, p0, Lcom/android/server/usb/UsbPortManager;->mLock:Ljava/lang/Object;
@@ -277,7 +345,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$402(Lcom/android/server/usb/UsbPortManager;Landroid/hardware/usb/V1_0/IUsb;)Landroid/hardware/usb/V1_0/IUsb;
+.method static synthetic access$602(Lcom/android/server/usb/UsbPortManager;Landroid/hardware/usb/V1_0/IUsb;)Landroid/hardware/usb/V1_0/IUsb;
     .locals 0
 
     iput-object p1, p0, Lcom/android/server/usb/UsbPortManager;->mProxy:Landroid/hardware/usb/V1_0/IUsb;
@@ -285,7 +353,7 @@
     return-object p1
 .end method
 
-.method static synthetic access$500(Lcom/android/server/usb/UsbPortManager;Lcom/android/internal/util/IndentingPrintWriter;)V
+.method static synthetic access$700(Lcom/android/server/usb/UsbPortManager;Lcom/android/internal/util/IndentingPrintWriter;)V
     .locals 0
 
     invoke-direct {p0, p1}, Lcom/android/server/usb/UsbPortManager;->connectToProxy(Lcom/android/internal/util/IndentingPrintWriter;)V
@@ -293,7 +361,7 @@
     return-void
 .end method
 
-.method static synthetic access$600(Lcom/android/server/usb/UsbPortManager;Lcom/android/internal/util/IndentingPrintWriter;Ljava/util/ArrayList;)V
+.method static synthetic access$800(Lcom/android/server/usb/UsbPortManager;Lcom/android/internal/util/IndentingPrintWriter;Ljava/util/ArrayList;)V
     .locals 0
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/usb/UsbPortManager;->updatePortsLocked(Lcom/android/internal/util/IndentingPrintWriter;Ljava/util/ArrayList;)V
@@ -301,20 +369,12 @@
     return-void
 .end method
 
-.method static synthetic access$702(Lcom/android/server/usb/UsbPortManager;Landroid/app/NotificationManager;)Landroid/app/NotificationManager;
+.method static synthetic access$902(Lcom/android/server/usb/UsbPortManager;Landroid/app/NotificationManager;)Landroid/app/NotificationManager;
     .locals 0
 
     iput-object p1, p0, Lcom/android/server/usb/UsbPortManager;->mNotificationManager:Landroid/app/NotificationManager;
 
     return-object p1
-.end method
-
-.method static synthetic access$800(Lcom/android/server/usb/UsbPortManager;)Landroid/content/Context;
-    .locals 1
-
-    iget-object v0, p0, Lcom/android/server/usb/UsbPortManager;->mContext:Landroid/content/Context;
-
-    return-object v0
 .end method
 
 .method private addOrUpdatePortLocked(Ljava/lang/String;IIIZIZIZZIZILcom/android/internal/util/IndentingPrintWriter;)V

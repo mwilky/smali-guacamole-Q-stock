@@ -52,7 +52,7 @@
     :try_start_0
     iget-object v1, p0, Lcom/oneplus/houston/common/client/EventManager$ServerDeathRecipient;->this$0:Lcom/oneplus/houston/common/client/EventManager;
 
-    invoke-static {v1}, Lcom/oneplus/houston/common/client/EventManager;->access$1000(Lcom/oneplus/houston/common/client/EventManager;)Lcom/oneplus/houston/common/client/IEvent;
+    invoke-static {v1}, Lcom/oneplus/houston/common/client/EventManager;->access$900(Lcom/oneplus/houston/common/client/EventManager;)Lcom/oneplus/houston/common/client/IEvent;
 
     move-result-object v1
 
@@ -68,15 +68,15 @@
 
     const/4 v3, 0x0
 
-    invoke-static {v1, v3}, Lcom/oneplus/houston/common/client/EventManager;->access$1002(Lcom/oneplus/houston/common/client/EventManager;Lcom/oneplus/houston/common/client/IEvent;)Lcom/oneplus/houston/common/client/IEvent;
+    invoke-static {v1, v3}, Lcom/oneplus/houston/common/client/EventManager;->access$902(Lcom/oneplus/houston/common/client/EventManager;Lcom/oneplus/houston/common/client/IEvent;)Lcom/oneplus/houston/common/client/IEvent;
 
     iget-object v1, p0, Lcom/oneplus/houston/common/client/EventManager$ServerDeathRecipient;->this$0:Lcom/oneplus/houston/common/client/EventManager;
 
-    invoke-static {v1, v2}, Lcom/oneplus/houston/common/client/EventManager;->access$302(Lcom/oneplus/houston/common/client/EventManager;Z)Z
+    invoke-static {v1, v2}, Lcom/oneplus/houston/common/client/EventManager;->access$202(Lcom/oneplus/houston/common/client/EventManager;Z)Z
 
     iget-object v1, p0, Lcom/oneplus/houston/common/client/EventManager$ServerDeathRecipient;->this$0:Lcom/oneplus/houston/common/client/EventManager;
 
-    invoke-static {v1}, Lcom/oneplus/houston/common/client/EventManager;->access$500(Lcom/oneplus/houston/common/client/EventManager;)Landroid/os/Handler;
+    invoke-static {v1}, Lcom/oneplus/houston/common/client/EventManager;->access$400(Lcom/oneplus/houston/common/client/EventManager;)Landroid/os/Handler;
 
     move-result-object v1
 
@@ -86,7 +86,7 @@
 
     iget-object v1, p0, Lcom/oneplus/houston/common/client/EventManager$ServerDeathRecipient;->this$0:Lcom/oneplus/houston/common/client/EventManager;
 
-    invoke-static {v1}, Lcom/oneplus/houston/common/client/EventManager;->access$500(Lcom/oneplus/houston/common/client/EventManager;)Landroid/os/Handler;
+    invoke-static {v1}, Lcom/oneplus/houston/common/client/EventManager;->access$400(Lcom/oneplus/houston/common/client/EventManager;)Landroid/os/Handler;
 
     move-result-object v1
 

@@ -24,11 +24,21 @@
 
 .field private static final TAG:Ljava/lang/String; = "OpAutoBrightnessHelper"
 
+.field public static final UPDATE_STATICS_INTERVAL:J = 0x927c0L
+
 .field private static sOpAutoBrightnessHelper:Lcom/android/server/display/OpAutoBrightnessHelper;
 
 
 # instance fields
+.field private final BRIGHTNESS_STATIC_FILE:Ljava/lang/String;
+
+.field private final MSG_LOAD_BRIGHTNESS_CONF:I
+
+.field private final MSG_STORE_BRIGHTNESS_CONF:I
+
 .field private mAdjustedBrightnessLevel:I
+
+.field private mBrightnessUsageBean:Lcom/android/server/display/BrightnessStaticBeans;
 
 .field private mContext:Landroid/content/Context;
 
@@ -81,24 +91,58 @@
 
     iput v0, p0, Lcom/android/server/display/OpAutoBrightnessHelper;->mOptFuncOn:I
 
+    const/4 v0, 0x1
+
+    iput v0, p0, Lcom/android/server/display/OpAutoBrightnessHelper;->MSG_LOAD_BRIGHTNESS_CONF:I
+
+    const/4 v1, 0x2
+
+    iput v1, p0, Lcom/android/server/display/OpAutoBrightnessHelper;->MSG_STORE_BRIGHTNESS_CONF:I
+
+    const-string v1, "/mnt/vendor/persist/display/BrightnessStatics"
+
+    iput-object v1, p0, Lcom/android/server/display/OpAutoBrightnessHelper;->BRIGHTNESS_STATIC_FILE:Ljava/lang/String;
+
     iput-object p1, p0, Lcom/android/server/display/OpAutoBrightnessHelper;->mContext:Landroid/content/Context;
 
-    new-instance v0, Landroid/text/format/Time;
+    new-instance v1, Landroid/text/format/Time;
 
-    invoke-direct {v0}, Landroid/text/format/Time;-><init>()V
+    invoke-direct {v1}, Landroid/text/format/Time;-><init>()V
 
-    iput-object v0, p0, Lcom/android/server/display/OpAutoBrightnessHelper;->mTime:Landroid/text/format/Time;
+    iput-object v1, p0, Lcom/android/server/display/OpAutoBrightnessHelper;->mTime:Landroid/text/format/Time;
 
-    new-instance v0, Landroid/text/format/Time;
+    new-instance v1, Landroid/text/format/Time;
 
-    invoke-direct {v0}, Landroid/text/format/Time;-><init>()V
+    invoke-direct {v1}, Landroid/text/format/Time;-><init>()V
 
-    iput-object v0, p0, Lcom/android/server/display/OpAutoBrightnessHelper;->mEnterTime:Landroid/text/format/Time;
+    iput-object v1, p0, Lcom/android/server/display/OpAutoBrightnessHelper;->mEnterTime:Landroid/text/format/Time;
+
+    invoke-direct {p0}, Lcom/android/server/display/OpAutoBrightnessHelper;->getHandler()Landroid/os/Handler;
+
+    move-result-object v1
+
+    invoke-virtual {v1, v0}, Landroid/os/Handler;->sendEmptyMessage(I)Z
 
     return-void
 .end method
 
-.method static synthetic access$000(Lcom/android/server/display/OpAutoBrightnessHelper;)I
+.method static synthetic access$000(Lcom/android/server/display/OpAutoBrightnessHelper;)Lcom/android/server/display/BrightnessStaticBeans;
+    .locals 1
+
+    iget-object v0, p0, Lcom/android/server/display/OpAutoBrightnessHelper;->mBrightnessUsageBean:Lcom/android/server/display/BrightnessStaticBeans;
+
+    return-object v0
+.end method
+
+.method static synthetic access$002(Lcom/android/server/display/OpAutoBrightnessHelper;Lcom/android/server/display/BrightnessStaticBeans;)Lcom/android/server/display/BrightnessStaticBeans;
+    .locals 0
+
+    iput-object p1, p0, Lcom/android/server/display/OpAutoBrightnessHelper;->mBrightnessUsageBean:Lcom/android/server/display/BrightnessStaticBeans;
+
+    return-object p1
+.end method
+
+.method static synthetic access$100(Lcom/android/server/display/OpAutoBrightnessHelper;)I
     .locals 1
 
     invoke-direct {p0}, Lcom/android/server/display/OpAutoBrightnessHelper;->currentHour()I
@@ -108,7 +152,7 @@
     return v0
 .end method
 
-.method static synthetic access$100(Lcom/android/server/display/OpAutoBrightnessHelper;)Z
+.method static synthetic access$200(Lcom/android/server/display/OpAutoBrightnessHelper;)Z
     .locals 1
 
     invoke-direct {p0}, Lcom/android/server/display/OpAutoBrightnessHelper;->nightModeEnabled()Z
@@ -118,7 +162,7 @@
     return v0
 .end method
 
-.method static synthetic access$200(Lcom/android/server/display/OpAutoBrightnessHelper;)I
+.method static synthetic access$300(Lcom/android/server/display/OpAutoBrightnessHelper;)I
     .locals 1
 
     invoke-direct {p0}, Lcom/android/server/display/OpAutoBrightnessHelper;->nightModeCct()I
@@ -128,7 +172,7 @@
     return v0
 .end method
 
-.method static synthetic access$300(Lcom/android/server/display/OpAutoBrightnessHelper;)I
+.method static synthetic access$400(Lcom/android/server/display/OpAutoBrightnessHelper;)I
     .locals 1
 
     invoke-direct {p0}, Lcom/android/server/display/OpAutoBrightnessHelper;->nightModeBrightness()I
@@ -138,7 +182,7 @@
     return v0
 .end method
 
-.method static synthetic access$400(Lcom/android/server/display/OpAutoBrightnessHelper;)Z
+.method static synthetic access$500(Lcom/android/server/display/OpAutoBrightnessHelper;)Z
     .locals 1
 
     invoke-direct {p0}, Lcom/android/server/display/OpAutoBrightnessHelper;->darkThemeEnabled()Z
@@ -148,7 +192,7 @@
     return v0
 .end method
 
-.method static synthetic access$500(Lcom/android/server/display/OpAutoBrightnessHelper;)I
+.method static synthetic access$600(Lcom/android/server/display/OpAutoBrightnessHelper;)I
     .locals 1
 
     iget v0, p0, Lcom/android/server/display/OpAutoBrightnessHelper;->mOptFuncOn:I
@@ -156,7 +200,7 @@
     return v0
 .end method
 
-.method static synthetic access$600(Lcom/android/server/display/OpAutoBrightnessHelper;)Landroid/content/Context;
+.method static synthetic access$700(Lcom/android/server/display/OpAutoBrightnessHelper;)Landroid/content/Context;
     .locals 1
 
     iget-object v0, p0, Lcom/android/server/display/OpAutoBrightnessHelper;->mContext:Landroid/content/Context;
@@ -266,7 +310,7 @@
 
     invoke-virtual {v0}, Landroid/os/HandlerThread;->start()V
 
-    new-instance v0, Landroid/os/Handler;
+    new-instance v0, Lcom/android/server/display/OpAutoBrightnessHelper$1;
 
     iget-object v1, p0, Lcom/android/server/display/OpAutoBrightnessHelper;->sHandlerThread:Landroid/os/HandlerThread;
 
@@ -274,7 +318,7 @@
 
     move-result-object v1
 
-    invoke-direct {v0, v1}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
+    invoke-direct {v0, p0, v1}, Lcom/android/server/display/OpAutoBrightnessHelper$1;-><init>(Lcom/android/server/display/OpAutoBrightnessHelper;Landroid/os/Looper;)V
 
     iput-object v0, p0, Lcom/android/server/display/OpAutoBrightnessHelper;->sHandler:Landroid/os/Handler;
 
@@ -495,7 +539,7 @@
 
     move-result-object v0
 
-    new-instance v8, Lcom/android/server/display/OpAutoBrightnessHelper$1;
+    new-instance v8, Lcom/android/server/display/OpAutoBrightnessHelper$2;
 
     move-object v1, v8
 
@@ -511,7 +555,7 @@
 
     move v7, p5
 
-    invoke-direct/range {v1 .. v7}, Lcom/android/server/display/OpAutoBrightnessHelper$1;-><init>(Lcom/android/server/display/OpAutoBrightnessHelper;Ljava/lang/String;Ljava/lang/String;FII)V
+    invoke-direct/range {v1 .. v7}, Lcom/android/server/display/OpAutoBrightnessHelper$2;-><init>(Lcom/android/server/display/OpAutoBrightnessHelper;Ljava/lang/String;Ljava/lang/String;FII)V
 
     invoke-virtual {v0, v8}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 
@@ -536,6 +580,63 @@
 
 
 # virtual methods
+.method public addRecord(JJ)V
+    .locals 7
+
+    const-wide/16 v5, 0x0
+
+    move-object v0, p0
+
+    move-wide v1, p1
+
+    move-wide v3, p3
+
+    invoke-virtual/range {v0 .. v6}, Lcom/android/server/display/OpAutoBrightnessHelper;->addRecord(JJJ)V
+
+    return-void
+.end method
+
+.method public addRecord(JJJ)V
+    .locals 4
+
+    const-string v0, "OpAutoBrightnessHelper"
+
+    const-string v1, "addRecord() get called."
+
+    invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    sub-long v0, p3, p1
+
+    const-wide/32 v2, 0x927c0
+
+    cmp-long v0, v0, v2
+
+    if-lez v0, :cond_0
+
+    add-long p3, p1, v2
+
+    :cond_0
+    iget-object v0, p0, Lcom/android/server/display/OpAutoBrightnessHelper;->mBrightnessUsageBean:Lcom/android/server/display/BrightnessStaticBeans;
+
+    invoke-virtual {v0, p1, p2, p3, p4}, Lcom/android/server/display/BrightnessStaticBeans;->addRecord(JJ)V
+
+    invoke-direct {p0}, Lcom/android/server/display/OpAutoBrightnessHelper;->getHandler()Landroid/os/Handler;
+
+    move-result-object v0
+
+    const/4 v1, 0x2
+
+    invoke-virtual {v0, v1}, Landroid/os/Handler;->removeMessages(I)V
+
+    invoke-direct {p0}, Lcom/android/server/display/OpAutoBrightnessHelper;->getHandler()Landroid/os/Handler;
+
+    move-result-object v0
+
+    invoke-virtual {v0, v1, p5, p6}, Landroid/os/Handler;->sendEmptyMessageDelayed(IJ)Z
+
+    return-void
+.end method
+
 .method public adjustBrightness(FII)V
     .locals 6
 
@@ -874,6 +975,74 @@
     iget v0, p0, Lcom/android/server/display/OpAutoBrightnessHelper;->mExtremeState:I
 
     return v0
+.end method
+
+.method getStaticsFile()Ljava/io/File;
+    .locals 6
+
+    const-string v0, "OpAutoBrightnessHelper"
+
+    new-instance v1, Ljava/io/File;
+
+    const-string v2, "/mnt/vendor/persist/display/BrightnessStatics"
+
+    invoke-direct {v1, v2}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v1}, Ljava/io/File;->exists()Z
+
+    move-result v2
+
+    if-nez v2, :cond_1
+
+    const/4 v2, 0x0
+
+    :try_start_0
+    invoke-virtual {v1}, Ljava/io/File;->createNewFile()Z
+
+    move-result v3
+    :try_end_0
+    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
+
+    nop
+
+    if-nez v3, :cond_0
+
+    const-string v4, "Failed to create brightness statics file."
+
+    invoke-static {v0, v4}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    return-object v2
+
+    :cond_0
+    return-object v1
+
+    :catch_0
+    move-exception v3
+
+    new-instance v4, Ljava/lang/StringBuilder;
+
+    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v5, "Failed to create brightness statics file: "
+
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v3}, Ljava/io/IOException;->toString()Ljava/lang/String;
+
+    move-result-object v5
+
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v4
+
+    invoke-static {v0, v4}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    return-object v2
+
+    :cond_1
+    return-object v1
 .end method
 
 .method public setFontPackageName(Ljava/lang/String;)V

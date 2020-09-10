@@ -90,7 +90,7 @@
 
     const/4 v0, 0x0
 
-    const/16 v1, 0xfa
+    const/16 v1, 0xfb
 
     aput v1, p2, v0
 

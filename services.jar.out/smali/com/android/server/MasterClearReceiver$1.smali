@@ -55,6 +55,8 @@
     const-string v1, "MasterClear"
 
     :try_start_0
+    invoke-static {}, Lcom/oneplus/theme/OpFontHelperInjector;->handleFactoryReset()V
+
     iget-object v2, p0, Lcom/android/server/MasterClearReceiver$1;->val$context:Landroid/content/Context;
 
     iget-boolean v3, p0, Lcom/android/server/MasterClearReceiver$1;->val$shutdown:Z

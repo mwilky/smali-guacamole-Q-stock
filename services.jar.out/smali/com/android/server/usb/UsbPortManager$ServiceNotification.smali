@@ -62,7 +62,7 @@
 
     iget-object v0, p0, Lcom/android/server/usb/UsbPortManager$ServiceNotification;->this$0:Lcom/android/server/usb/UsbPortManager;
 
-    invoke-static {v0, v1}, Lcom/android/server/usb/UsbPortManager;->access$500(Lcom/android/server/usb/UsbPortManager;Lcom/android/internal/util/IndentingPrintWriter;)V
+    invoke-static {v0, v1}, Lcom/android/server/usb/UsbPortManager;->access$700(Lcom/android/server/usb/UsbPortManager;Lcom/android/internal/util/IndentingPrintWriter;)V
 
     return-void
 .end method

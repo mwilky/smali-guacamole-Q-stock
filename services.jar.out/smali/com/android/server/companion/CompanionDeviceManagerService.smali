@@ -182,7 +182,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$1400(Lcom/android/server/companion/CompanionDeviceManagerService;)Landroid/companion/ICompanionDeviceDiscoveryServiceCallback$Stub;
+.method static synthetic access$1300(Lcom/android/server/companion/CompanionDeviceManagerService;)Landroid/companion/ICompanionDeviceDiscoveryServiceCallback$Stub;
     .locals 1
 
     invoke-direct {p0}, Lcom/android/server/companion/CompanionDeviceManagerService;->getServiceCallback()Landroid/companion/ICompanionDeviceDiscoveryServiceCallback$Stub;
@@ -192,7 +192,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$1600(Lcom/android/server/companion/CompanionDeviceManagerService;I)Ljava/util/Set;
+.method static synthetic access$1500(Lcom/android/server/companion/CompanionDeviceManagerService;I)Ljava/util/Set;
     .locals 1
 
     invoke-direct {p0, p1}, Lcom/android/server/companion/CompanionDeviceManagerService;->readAllAssociations(I)Ljava/util/Set;

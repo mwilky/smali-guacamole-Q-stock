@@ -361,7 +361,11 @@
     iput-wide v3, p0, Lcom/android/server/audio/AudioService$VolumeController;->mNextLongPress:J
 
     :cond_1
-    const/4 v0, 0x1
+    and-int/lit8 p2, p2, -0x5
+
+    and-int/lit8 p2, p2, -0x11
+
+    const/4 v0, 0x0
 
     goto :goto_0
 

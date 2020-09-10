@@ -14906,7 +14906,7 @@
 .end method
 
 .method public isFODAndKeyguard()Z
-    .locals 1
+    .locals 2
 
     sget-boolean v0, Lcom/android/server/policy/PhoneWindowManager;->mIsCustomFP:Z
 
@@ -14930,9 +14930,17 @@
 
     if-eqz v0, :cond_0
 
-    const/4 v0, 0x1
+    iget-object v0, p0, Lcom/android/server/policy/PhoneWindowManager;->mDefaultDisplayPolicy:Lcom/android/server/wm/DisplayPolicy;
 
-    return v0
+    invoke-virtual {v0}, Lcom/android/server/wm/DisplayPolicy;->getFocusedAppOrientation()I
+
+    move-result v0
+
+    const/4 v1, 0x1
+
+    if-eq v0, v1, :cond_0
+
+    return v1
 
     :cond_0
     const/4 v0, 0x0

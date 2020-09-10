@@ -103,7 +103,7 @@
 
     iget-object v4, p0, Lcom/android/server/companion/CompanionDeviceManagerService$2;->this$0:Lcom/android/server/companion/CompanionDeviceManagerService;
 
-    invoke-static {v4}, Lcom/android/server/companion/CompanionDeviceManagerService;->access$1400(Lcom/android/server/companion/CompanionDeviceManagerService;)Landroid/companion/ICompanionDeviceDiscoveryServiceCallback$Stub;
+    invoke-static {v4}, Lcom/android/server/companion/CompanionDeviceManagerService;->access$1300(Lcom/android/server/companion/CompanionDeviceManagerService;)Landroid/companion/ICompanionDeviceDiscoveryServiceCallback$Stub;
 
     move-result-object v4
 

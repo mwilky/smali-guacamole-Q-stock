@@ -147,7 +147,7 @@
     return p1
 .end method
 
-.method static synthetic access$2400(Lcom/android/server/wm/ActivityMetricsLogger$WindowingModeTransitionInfo;)Z
+.method static synthetic access$2200(Lcom/android/server/wm/ActivityMetricsLogger$WindowingModeTransitionInfo;)Z
     .locals 1
 
     iget-boolean v0, p0, Lcom/android/server/wm/ActivityMetricsLogger$WindowingModeTransitionInfo;->launchTraceActive:Z
@@ -155,7 +155,7 @@
     return v0
 .end method
 
-.method static synthetic access$2402(Lcom/android/server/wm/ActivityMetricsLogger$WindowingModeTransitionInfo;Z)Z
+.method static synthetic access$2202(Lcom/android/server/wm/ActivityMetricsLogger$WindowingModeTransitionInfo;Z)Z
     .locals 0
 
     iput-boolean p1, p0, Lcom/android/server/wm/ActivityMetricsLogger$WindowingModeTransitionInfo;->launchTraceActive:Z

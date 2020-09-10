@@ -286,7 +286,7 @@
 
 .field final rootVoiceInteraction:Z
 
-.field final shortComponentName:Ljava/lang/String;
+.field public final shortComponentName:Ljava/lang/String;
 
 .field sleeping:Z
 
@@ -10554,12 +10554,6 @@
     const/4 v4, 0x1
 
     iput-boolean v4, v2, Lcom/android/server/wm/TaskRecord;->hasBeenVisible:Z
-
-    const/4 v2, 0x2
-
-    iget-object v4, p0, Lcom/android/server/wm/ActivityRecord;->shortComponentName:Ljava/lang/String;
-
-    invoke-static {v2, v4}, Lcom/oneplus/houston/apkserver/bridge/HoustonInjector;->reportOnDrawnTime(ILjava/lang/String;)V
 
     :cond_3
     monitor-exit v0

@@ -26,9 +26,11 @@
 # instance fields
 .field private mATMService:Lcom/android/server/wm/ActivityTaskManagerService;
 
-.field private mContentResolver:Landroid/content/ContentResolver;
-
 .field private mContext:Landroid/content/Context;
+
+.field private mHandler:Landroid/os/Handler;
+
+.field private mLock:Ljava/lang/Object;
 
 .field private mLockedTasksContentObserver:Lcom/android/server/wm/RecentTasksInjector$LockedTasksContentObserver;
 
@@ -45,6 +47,8 @@
 .field private mNumObservedLockedTasks:I
 
 .field private mStartToMonitorUserSwitching:Z
+
+.field private mStartingOberveLockedTasks:Z
 
 
 # direct methods
@@ -77,34 +81,70 @@
 
     iput-boolean v0, p0, Lcom/android/server/wm/RecentTasksInjector;->mStartToMonitorUserSwitching:Z
 
-    const/4 v0, 0x0
+    iput-boolean v0, p0, Lcom/android/server/wm/RecentTasksInjector;->mStartingOberveLockedTasks:Z
 
-    iput-object v0, p0, Lcom/android/server/wm/RecentTasksInjector;->mContentResolver:Landroid/content/ContentResolver;
+    new-instance v0, Ljava/util/ArrayList;
 
-    new-instance v1, Ljava/util/ArrayList;
+    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
+    iput-object v0, p0, Lcom/android/server/wm/RecentTasksInjector;->mLockedTasksList:Ljava/util/List;
 
-    iput-object v1, p0, Lcom/android/server/wm/RecentTasksInjector;->mLockedTasksList:Ljava/util/List;
+    new-instance v0, Ljava/lang/Object;
 
-    iget-object v1, p1, Lcom/android/server/wm/ActivityTaskManagerService;->mContext:Landroid/content/Context;
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
-    iput-object v1, p0, Lcom/android/server/wm/RecentTasksInjector;->mContext:Landroid/content/Context;
+    iput-object v0, p0, Lcom/android/server/wm/RecentTasksInjector;->mLock:Ljava/lang/Object;
 
-    new-instance v1, Lcom/android/server/wm/RecentTasksInjector$LockedTasksContentObserver;
+    new-instance v0, Landroid/os/Handler;
 
-    iget-object v2, p0, Lcom/android/server/wm/RecentTasksInjector;->mContext:Landroid/content/Context;
+    invoke-direct {v0}, Landroid/os/Handler;-><init>()V
 
-    invoke-direct {v1, p0, v2, v0}, Lcom/android/server/wm/RecentTasksInjector$LockedTasksContentObserver;-><init>(Lcom/android/server/wm/RecentTasksInjector;Landroid/content/Context;Landroid/os/Handler;)V
+    iput-object v0, p0, Lcom/android/server/wm/RecentTasksInjector;->mHandler:Landroid/os/Handler;
 
-    iput-object v1, p0, Lcom/android/server/wm/RecentTasksInjector;->mLockedTasksContentObserver:Lcom/android/server/wm/RecentTasksInjector$LockedTasksContentObserver;
+    iget-object v0, p1, Lcom/android/server/wm/ActivityTaskManagerService;->mContext:Landroid/content/Context;
+
+    iput-object v0, p0, Lcom/android/server/wm/RecentTasksInjector;->mContext:Landroid/content/Context;
+
+    new-instance v0, Lcom/android/server/wm/RecentTasksInjector$LockedTasksContentObserver;
+
+    iget-object v1, p0, Lcom/android/server/wm/RecentTasksInjector;->mContext:Landroid/content/Context;
+
+    const/4 v2, 0x0
+
+    invoke-direct {v0, p0, v1, v2}, Lcom/android/server/wm/RecentTasksInjector$LockedTasksContentObserver;-><init>(Lcom/android/server/wm/RecentTasksInjector;Landroid/content/Context;Landroid/os/Handler;)V
+
+    iput-object v0, p0, Lcom/android/server/wm/RecentTasksInjector;->mLockedTasksContentObserver:Lcom/android/server/wm/RecentTasksInjector$LockedTasksContentObserver;
 
     iput-object p1, p0, Lcom/android/server/wm/RecentTasksInjector;->mATMService:Lcom/android/server/wm/ActivityTaskManagerService;
 
     return-void
 .end method
 
-.method static synthetic access$000(Lcom/android/server/wm/RecentTasksInjector;)V
+.method static synthetic access$000()Landroid/net/Uri;
+    .locals 1
+
+    sget-object v0, Lcom/android/server/wm/RecentTasksInjector;->URI_RECENT_TASK_LOCKED_LISTL:Landroid/net/Uri;
+
+    return-object v0
+.end method
+
+.method static synthetic access$100(Lcom/android/server/wm/RecentTasksInjector;)Lcom/android/server/wm/RecentTasksInjector$LockedTasksContentObserver;
+    .locals 1
+
+    iget-object v0, p0, Lcom/android/server/wm/RecentTasksInjector;->mLockedTasksContentObserver:Lcom/android/server/wm/RecentTasksInjector$LockedTasksContentObserver;
+
+    return-object v0
+.end method
+
+.method static synthetic access$200(Lcom/android/server/wm/RecentTasksInjector;)Landroid/content/Context;
+    .locals 1
+
+    iget-object v0, p0, Lcom/android/server/wm/RecentTasksInjector;->mContext:Landroid/content/Context;
+
+    return-object v0
+.end method
+
+.method static synthetic access$300(Lcom/android/server/wm/RecentTasksInjector;)V
     .locals 0
 
     invoke-direct {p0}, Lcom/android/server/wm/RecentTasksInjector;->updateLockedTaskInfoLocked()V
@@ -256,7 +296,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/server/wm/RecentTasksInjector;->mLockedTasksList:Ljava/util/List;
+    iget-object v1, p0, Lcom/android/server/wm/RecentTasksInjector;->mLock:Ljava/lang/Object;
 
     monitor-enter v1
 
@@ -338,35 +378,27 @@
 .end method
 
 .method ensureAndUpdateLockedTasksInfoObserver()V
-    .locals 5
+    .locals 2
 
-    iget-object v0, p0, Lcom/android/server/wm/RecentTasksInjector;->mContentResolver:Landroid/content/ContentResolver;
+    iget-boolean v0, p0, Lcom/android/server/wm/RecentTasksInjector;->mStartingOberveLockedTasks:Z
 
     if-nez v0, :cond_0
 
-    iget-object v0, p0, Lcom/android/server/wm/RecentTasksInjector;->mContext:Landroid/content/Context;
+    const/4 v0, 0x1
 
-    invoke-virtual {v0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+    iput-boolean v0, p0, Lcom/android/server/wm/RecentTasksInjector;->mStartingOberveLockedTasks:Z
 
-    move-result-object v0
+    iget-object v0, p0, Lcom/android/server/wm/RecentTasksInjector;->mHandler:Landroid/os/Handler;
 
-    iput-object v0, p0, Lcom/android/server/wm/RecentTasksInjector;->mContentResolver:Landroid/content/ContentResolver;
+    new-instance v1, Lcom/android/server/wm/RecentTasksInjector$1;
 
-    iget-object v0, p0, Lcom/android/server/wm/RecentTasksInjector;->mContentResolver:Landroid/content/ContentResolver;
+    invoke-direct {v1, p0}, Lcom/android/server/wm/RecentTasksInjector$1;-><init>(Lcom/android/server/wm/RecentTasksInjector;)V
 
-    sget-object v1, Lcom/android/server/wm/RecentTasksInjector;->URI_RECENT_TASK_LOCKED_LISTL:Landroid/net/Uri;
-
-    const/4 v2, 0x0
-
-    iget-object v3, p0, Lcom/android/server/wm/RecentTasksInjector;->mLockedTasksContentObserver:Lcom/android/server/wm/RecentTasksInjector$LockedTasksContentObserver;
-
-    const/4 v4, -0x1
-
-    invoke-virtual {v0, v1, v2, v3, v4}, Landroid/content/ContentResolver;->registerContentObserver(Landroid/net/Uri;ZLandroid/database/ContentObserver;I)V
-
-    invoke-direct {p0}, Lcom/android/server/wm/RecentTasksInjector;->updateLockedTaskInfoLocked()V
+    invoke-virtual {v0, v1}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 
     :cond_0
+    invoke-direct {p0}, Lcom/android/server/wm/RecentTasksInjector;->updateLockedTaskInfoLocked()V
+
     return-void
 .end method
 
@@ -388,9 +420,9 @@
 
     iget-object v0, v0, Lcom/android/server/wm/ActivityTaskManagerService;->mService:Lcom/android/server/am/ActivityManagerService;
 
-    new-instance v1, Lcom/android/server/wm/RecentTasksInjector$1;
+    new-instance v1, Lcom/android/server/wm/RecentTasksInjector$2;
 
-    invoke-direct {v1, p0}, Lcom/android/server/wm/RecentTasksInjector$1;-><init>(Lcom/android/server/wm/RecentTasksInjector;)V
+    invoke-direct {v1, p0}, Lcom/android/server/wm/RecentTasksInjector$2;-><init>(Lcom/android/server/wm/RecentTasksInjector;)V
 
     const-class v2, Lcom/android/server/wm/RecentTasksInjector;
 
@@ -429,7 +461,7 @@
 .method getLockedRecentsCount()I
     .locals 2
 
-    iget-object v0, p0, Lcom/android/server/wm/RecentTasksInjector;->mLockedTasksList:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/server/wm/RecentTasksInjector;->mLock:Ljava/lang/Object;
 
     monitor-enter v0
 
@@ -466,26 +498,47 @@
     .locals 4
 
     :try_start_0
-    invoke-virtual {p0, p1}, Lcom/android/server/wm/RecentTasksInjector;->isRecentTaskLocked(Lcom/android/server/wm/TaskRecord;)Z
+    iget-object v0, p0, Lcom/android/server/wm/RecentTasksInjector;->mLock:Ljava/lang/Object;
 
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    iget v0, p0, Lcom/android/server/wm/RecentTasksInjector;->mNumObservedLockedTasks:I
-
-    const/4 v1, 0x1
-
-    add-int/2addr v0, v1
-
-    iput v0, p0, Lcom/android/server/wm/RecentTasksInjector;->mNumObservedLockedTasks:I
+    monitor-enter v0
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    return v1
+    :try_start_1
+    invoke-virtual {p0, p1}, Lcom/android/server/wm/RecentTasksInjector;->isRecentTaskLocked(Lcom/android/server/wm/TaskRecord;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_0
+
+    iget v1, p0, Lcom/android/server/wm/RecentTasksInjector;->mNumObservedLockedTasks:I
+
+    const/4 v2, 0x1
+
+    add-int/2addr v1, v2
+
+    iput v1, p0, Lcom/android/server/wm/RecentTasksInjector;->mNumObservedLockedTasks:I
+
+    monitor-exit v0
+
+    return v2
 
     :cond_0
+    monitor-exit v0
+
     goto :goto_0
+
+    :catchall_0
+    move-exception v1
+
+    monitor-exit v0
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    :try_start_2
+    throw v1
+    :try_end_2
+    .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_0
 
     :catch_0
     move-exception v0

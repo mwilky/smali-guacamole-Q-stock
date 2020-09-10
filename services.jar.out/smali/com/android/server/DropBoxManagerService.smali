@@ -2132,7 +2132,7 @@
 
     new-array v0, v0, [I
 
-    const/16 v14, 0xcf
+    const/16 v14, 0xd0
 
     const/4 v15, 0x0
 

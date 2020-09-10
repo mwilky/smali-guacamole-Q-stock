@@ -591,7 +591,7 @@
 
     new-array v10, v10, [I
 
-    const/16 v11, 0xfc
+    const/16 v11, 0xfd
 
     aput v11, v10, v0
 

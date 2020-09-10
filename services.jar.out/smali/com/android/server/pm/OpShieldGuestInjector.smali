@@ -17,7 +17,7 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 4
+    .locals 5
 
     new-instance v0, Ljava/util/ArrayList;
 
@@ -27,7 +27,9 @@
 
     const-string v3, "com.oneplus.speechassist"
 
-    filled-new-array {v1, v2, v3}, [Ljava/lang/String;
+    const-string v4, "com.heytap.cloud"
+
+    filled-new-array {v1, v2, v3, v4}, [Ljava/lang/String;
 
     move-result-object v1
 

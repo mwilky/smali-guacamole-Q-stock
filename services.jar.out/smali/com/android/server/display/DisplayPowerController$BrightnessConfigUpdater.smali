@@ -45,7 +45,7 @@
 
     iget-object v0, p0, Lcom/android/server/display/DisplayPowerController$BrightnessConfigUpdater;->this$0:Lcom/android/server/display/DisplayPowerController;
 
-    invoke-static {v0, p1}, Lcom/android/server/display/DisplayPowerController;->access$1300(Lcom/android/server/display/DisplayPowerController;Lorg/json/JSONArray;)V
+    invoke-static {v0, p1}, Lcom/android/server/display/DisplayPowerController;->access$1400(Lcom/android/server/display/DisplayPowerController;Lorg/json/JSONArray;)V
 
     return-void
 .end method

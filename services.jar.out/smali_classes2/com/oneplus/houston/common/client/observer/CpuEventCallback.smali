@@ -6,9 +6,11 @@
 .implements Lcom/oneplus/houston/common/client/observer/IListener;
 
 
-# instance fields
-.field private TAG:Ljava/lang/String;
+# static fields
+.field private static final TAG:Ljava/lang/String; = "Houston_CpuEventCallback"
 
+
+# instance fields
 .field private mBgThreshold:I
 
 .field private mFgThreshold:I
@@ -23,10 +25,6 @@
     .locals 1
 
     invoke-direct {p0}, Lcom/oneplus/houston/common/client/AbsEventCallback;-><init>()V
-
-    const-string v0, "Houston_CpuEventCallback"
-
-    iput-object v0, p0, Lcom/oneplus/houston/common/client/observer/CpuEventCallback;->TAG:Ljava/lang/String;
 
     const/16 v0, 0x7530
 
@@ -51,10 +49,6 @@
     .locals 1
 
     invoke-direct {p0, p1, p2, p3}, Lcom/oneplus/houston/common/client/AbsEventCallback;-><init>(ILandroid/os/Bundle;Ljava/lang/String;)V
-
-    const-string v0, "Houston_CpuEventCallback"
-
-    iput-object v0, p0, Lcom/oneplus/houston/common/client/observer/CpuEventCallback;->TAG:Ljava/lang/String;
 
     const/16 v0, 0x7530
 
@@ -115,7 +109,7 @@
 
     :cond_1
     :goto_0
-    iget-object v0, p0, Lcom/oneplus/houston/common/client/observer/CpuEventCallback;->TAG:Ljava/lang/String;
+    const-string v0, "Houston_CpuEventCallback"
 
     const-string v1, "Invalid callback args!"
 
@@ -282,7 +276,7 @@
 .end method
 
 .method public isReachThreshold(Lcom/oneplus/houston/common/client/Event;)Z
-    .locals 5
+    .locals 4
 
     const/4 v0, 0x0
 
@@ -316,23 +310,23 @@
     const/4 v0, 0x1
 
     :cond_1
-    iget-object v2, p0, Lcom/oneplus/houston/common/client/observer/CpuEventCallback;->TAG:Ljava/lang/String;
+    new-instance v2, Ljava/lang/StringBuilder;
 
-    new-instance v3, Ljava/lang/StringBuilder;
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
+    const-string v3, "isReachThreshold:"
 
-    const-string v4, "isReachThreshold:"
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v2
 
-    move-result-object v3
+    const-string v3, "Houston_CpuEventCallback"
 
-    invoke-static {v2, v3}, Lcom/oneplus/houston/common/client/utils/Logger;->d(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v3, v2}, Lcom/oneplus/houston/common/client/utils/Logger;->d(Ljava/lang/String;Ljava/lang/String;)V
 
     return v0
 .end method

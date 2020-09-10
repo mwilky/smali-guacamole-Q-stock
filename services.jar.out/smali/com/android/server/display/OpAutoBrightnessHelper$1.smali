@@ -1,14 +1,11 @@
 .class Lcom/android/server/display/OpAutoBrightnessHelper$1;
-.super Ljava/lang/Object;
+.super Landroid/os/Handler;
 .source "OpAutoBrightnessHelper.java"
-
-# interfaces
-.implements Ljava/lang/Runnable;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/server/display/OpAutoBrightnessHelper;->reportAdjustEvent(Ljava/lang/String;Ljava/lang/String;FII)V
+    value = Lcom/android/server/display/OpAutoBrightnessHelper;->getHandler()Landroid/os/Handler;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -20,202 +17,211 @@
 # instance fields
 .field final synthetic this$0:Lcom/android/server/display/OpAutoBrightnessHelper;
 
-.field final synthetic val$after:I
-
-.field final synthetic val$before:I
-
-.field final synthetic val$lux:F
-
-.field final synthetic val$pkg:Ljava/lang/String;
-
-.field final synthetic val$rgb:Ljava/lang/String;
-
 
 # direct methods
-.method constructor <init>(Lcom/android/server/display/OpAutoBrightnessHelper;Ljava/lang/String;Ljava/lang/String;FII)V
+.method constructor <init>(Lcom/android/server/display/OpAutoBrightnessHelper;Landroid/os/Looper;)V
     .locals 0
 
     iput-object p1, p0, Lcom/android/server/display/OpAutoBrightnessHelper$1;->this$0:Lcom/android/server/display/OpAutoBrightnessHelper;
 
-    iput-object p2, p0, Lcom/android/server/display/OpAutoBrightnessHelper$1;->val$pkg:Ljava/lang/String;
-
-    iput-object p3, p0, Lcom/android/server/display/OpAutoBrightnessHelper$1;->val$rgb:Ljava/lang/String;
-
-    iput p4, p0, Lcom/android/server/display/OpAutoBrightnessHelper$1;->val$lux:F
-
-    iput p5, p0, Lcom/android/server/display/OpAutoBrightnessHelper$1;->val$before:I
-
-    iput p6, p0, Lcom/android/server/display/OpAutoBrightnessHelper$1;->val$after:I
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0, p2}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public run()V
-    .locals 5
+.method public handleMessage(Landroid/os/Message;)V
+    .locals 8
 
-    const-string v0, "OpAutoBrightnessHelper"
+    invoke-super {p0, p1}, Landroid/os/Handler;->handleMessage(Landroid/os/Message;)V
 
-    const-string v1, "Report adjustment event."
+    iget v0, p1, Landroid/os/Message;->what:I
 
-    invoke-static {v0, v1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+    const/4 v1, 0x1
 
-    new-instance v0, Ljava/util/HashMap;
+    const/4 v2, 0x0
 
-    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
+    const-string v3, "OpAutoBrightnessHelper"
 
-    const-string v1, "appid"
+    if-eq v0, v1, :cond_1
 
-    const-string v2, "52WW0MUAGI"
+    const/4 v1, 0x2
 
-    invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    if-eq v0, v1, :cond_0
 
-    new-instance v1, Ljava/util/HashMap;
+    goto/16 :goto_2
 
-    invoke-direct {v1}, Ljava/util/HashMap;-><init>()V
+    :cond_0
+    :try_start_0
+    const-string v0, "Store brightness statics file."
 
-    iget-object v2, p0, Lcom/android/server/display/OpAutoBrightnessHelper$1;->this$0:Lcom/android/server/display/OpAutoBrightnessHelper;
+    invoke-static {v3, v0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    invoke-static {v2}, Lcom/android/server/display/OpAutoBrightnessHelper;->access$000(Lcom/android/server/display/OpAutoBrightnessHelper;)I
+    new-instance v0, Ljava/io/FileOutputStream;
 
-    move-result v2
+    iget-object v1, p0, Lcom/android/server/display/OpAutoBrightnessHelper$1;->this$0:Lcom/android/server/display/OpAutoBrightnessHelper;
 
-    invoke-static {v2}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
+    invoke-virtual {v1}, Lcom/android/server/display/OpAutoBrightnessHelper;->getStaticsFile()Ljava/io/File;
 
-    move-result-object v2
+    move-result-object v1
 
-    const-string v3, "hour"
+    invoke-direct {v0, v1}, Ljava/io/FileOutputStream;-><init>(Ljava/io/File;)V
 
-    invoke-virtual {v1, v3, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    iget-object v1, p0, Lcom/android/server/display/OpAutoBrightnessHelper$1;->this$0:Lcom/android/server/display/OpAutoBrightnessHelper;
 
-    iget-object v2, p0, Lcom/android/server/display/OpAutoBrightnessHelper$1;->val$pkg:Ljava/lang/String;
+    invoke-static {v1}, Lcom/android/server/display/OpAutoBrightnessHelper;->access$000(Lcom/android/server/display/OpAutoBrightnessHelper;)Lcom/android/server/display/BrightnessStaticBeans;
 
-    const-string v3, "front_package"
+    move-result-object v1
 
-    invoke-virtual {v1, v3, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1}, Lcom/android/server/display/BrightnessStaticBeans;->toString()Ljava/lang/String;
 
-    iget-object v2, p0, Lcom/android/server/display/OpAutoBrightnessHelper$1;->val$rgb:Ljava/lang/String;
+    move-result-object v1
 
-    const-string/jumbo v3, "rgb_value"
+    invoke-virtual {v1}, Ljava/lang/String;->getBytes()[B
 
-    invoke-virtual {v1, v3, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    move-result-object v1
 
-    iget v2, p0, Lcom/android/server/display/OpAutoBrightnessHelper$1;->val$lux:F
+    iget-object v4, p0, Lcom/android/server/display/OpAutoBrightnessHelper$1;->this$0:Lcom/android/server/display/OpAutoBrightnessHelper;
 
-    invoke-static {v2}, Ljava/lang/String;->valueOf(F)Ljava/lang/String;
+    invoke-static {v4}, Lcom/android/server/display/OpAutoBrightnessHelper;->access$000(Lcom/android/server/display/OpAutoBrightnessHelper;)Lcom/android/server/display/BrightnessStaticBeans;
 
-    move-result-object v2
+    move-result-object v4
 
-    const-string/jumbo v3, "lux_value"
+    invoke-virtual {v4}, Lcom/android/server/display/BrightnessStaticBeans;->toString()Ljava/lang/String;
 
-    invoke-virtual {v1, v3, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    move-result-object v4
 
-    iget v2, p0, Lcom/android/server/display/OpAutoBrightnessHelper$1;->val$before:I
+    invoke-virtual {v4}, Ljava/lang/String;->length()I
 
-    invoke-static {v2}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
+    move-result v4
 
-    move-result-object v2
+    invoke-virtual {v0, v1, v2, v4}, Ljava/io/FileOutputStream;->write([BII)V
 
-    const-string/jumbo v3, "level_before_adjustment"
+    invoke-virtual {v0}, Ljava/io/FileOutputStream;->flush()V
 
-    invoke-virtual {v1, v3, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0}, Ljava/io/FileOutputStream;->close()V
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    iget v2, p0, Lcom/android/server/display/OpAutoBrightnessHelper$1;->val$after:I
+    goto/16 :goto_2
 
-    invoke-static {v2}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
+    :catch_0
+    move-exception v0
 
-    move-result-object v2
+    new-instance v1, Ljava/lang/StringBuilder;
 
-    const-string/jumbo v3, "level_after_adjustment"
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    invoke-virtual {v1, v3, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    const-string v2, "Failed to store brightness statics: "
 
-    iget-object v2, p0, Lcom/android/server/display/OpAutoBrightnessHelper$1;->this$0:Lcom/android/server/display/OpAutoBrightnessHelper;
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-static {v2}, Lcom/android/server/display/OpAutoBrightnessHelper;->access$100(Lcom/android/server/display/OpAutoBrightnessHelper;)Z
-
-    move-result v2
-
-    invoke-static {v2}, Ljava/lang/String;->valueOf(Z)Ljava/lang/String;
-
-    move-result-object v2
-
-    const-string/jumbo v3, "nightmode_on"
-
-    invoke-virtual {v1, v3, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    iget-object v2, p0, Lcom/android/server/display/OpAutoBrightnessHelper$1;->this$0:Lcom/android/server/display/OpAutoBrightnessHelper;
-
-    invoke-static {v2}, Lcom/android/server/display/OpAutoBrightnessHelper;->access$200(Lcom/android/server/display/OpAutoBrightnessHelper;)I
-
-    move-result v2
-
-    invoke-static {v2}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
 
     move-result-object v2
 
-    const-string/jumbo v3, "nightmode_cct"
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v1, v3, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    iget-object v2, p0, Lcom/android/server/display/OpAutoBrightnessHelper$1;->this$0:Lcom/android/server/display/OpAutoBrightnessHelper;
+    move-result-object v1
 
-    invoke-static {v2}, Lcom/android/server/display/OpAutoBrightnessHelper;->access$300(Lcom/android/server/display/OpAutoBrightnessHelper;)I
+    invoke-static {v3, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    move-result v2
+    goto :goto_2
 
-    invoke-static {v2}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
+    :cond_1
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    const-string v1, ""
+
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    :try_start_1
+    new-instance v4, Ljava/io/FileInputStream;
+
+    iget-object v5, p0, Lcom/android/server/display/OpAutoBrightnessHelper$1;->this$0:Lcom/android/server/display/OpAutoBrightnessHelper;
+
+    invoke-virtual {v5}, Lcom/android/server/display/OpAutoBrightnessHelper;->getStaticsFile()Ljava/io/File;
+
+    move-result-object v5
+
+    invoke-direct {v4, v5}, Ljava/io/FileInputStream;-><init>(Ljava/io/File;)V
+
+    const/16 v5, 0x400
+
+    new-array v5, v5, [B
+
+    move v6, v2
+
+    :goto_0
+    invoke-virtual {v4, v5}, Ljava/io/FileInputStream;->read([B)I
+
+    move-result v7
+
+    move v6, v7
+
+    if-lez v7, :cond_2
+
+    new-instance v7, Ljava/lang/String;
+
+    invoke-direct {v7, v5, v2, v6}, Ljava/lang/String;-><init>([BII)V
+
+    invoke-virtual {v0, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    goto :goto_0
+
+    :cond_2
+    invoke-virtual {v4}, Ljava/io/FileInputStream;->close()V
+    :try_end_1
+    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_1
+
+    goto :goto_1
+
+    :catch_1
+    move-exception v2
+
+    const-string v4, "Failed to read data from brightness statics file."
+
+    invoke-static {v3, v4}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    :goto_1
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v2
 
-    const-string/jumbo v3, "nightmode_brightness"
+    invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    invoke-virtual {v1, v3, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    move-result v1
 
-    iget-object v2, p0, Lcom/android/server/display/OpAutoBrightnessHelper$1;->this$0:Lcom/android/server/display/OpAutoBrightnessHelper;
+    if-eqz v1, :cond_3
 
-    invoke-static {v2}, Lcom/android/server/display/OpAutoBrightnessHelper;->access$400(Lcom/android/server/display/OpAutoBrightnessHelper;)Z
+    iget-object v1, p0, Lcom/android/server/display/OpAutoBrightnessHelper$1;->this$0:Lcom/android/server/display/OpAutoBrightnessHelper;
 
-    move-result v2
+    new-instance v2, Lcom/android/server/display/BrightnessStaticBeans;
 
-    invoke-static {v2}, Ljava/lang/String;->valueOf(Z)Ljava/lang/String;
+    invoke-direct {v2}, Lcom/android/server/display/BrightnessStaticBeans;-><init>()V
 
-    move-result-object v2
+    invoke-static {v1, v2}, Lcom/android/server/display/OpAutoBrightnessHelper;->access$002(Lcom/android/server/display/OpAutoBrightnessHelper;Lcom/android/server/display/BrightnessStaticBeans;)Lcom/android/server/display/BrightnessStaticBeans;
 
-    const-string v3, "dark_theme_on"
+    goto :goto_2
 
-    invoke-virtual {v1, v3, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    :cond_3
+    iget-object v1, p0, Lcom/android/server/display/OpAutoBrightnessHelper$1;->this$0:Lcom/android/server/display/OpAutoBrightnessHelper;
 
-    iget-object v2, p0, Lcom/android/server/display/OpAutoBrightnessHelper$1;->this$0:Lcom/android/server/display/OpAutoBrightnessHelper;
+    new-instance v2, Lcom/android/server/display/BrightnessStaticBeans;
 
-    invoke-static {v2}, Lcom/android/server/display/OpAutoBrightnessHelper;->access$500(Lcom/android/server/display/OpAutoBrightnessHelper;)I
-
-    move-result v2
-
-    invoke-static {v2}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
-
-    move-result-object v2
-
-    const-string/jumbo v3, "opt_func_on"
-
-    invoke-virtual {v1, v3, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    invoke-static {}, Lnet/oneplus/odm/OpDeviceManagerInjector;->getInstance()Lnet/oneplus/odm/OpDeviceManagerInjector;
-
-    move-result-object v2
-
-    iget-object v3, p0, Lcom/android/server/display/OpAutoBrightnessHelper$1;->this$0:Lcom/android/server/display/OpAutoBrightnessHelper;
-
-    invoke-static {v3}, Lcom/android/server/display/OpAutoBrightnessHelper;->access$600(Lcom/android/server/display/OpAutoBrightnessHelper;)Landroid/content/Context;
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v3
 
-    const-string/jumbo v4, "manual_adjust_info"
+    invoke-direct {v2, v3}, Lcom/android/server/display/BrightnessStaticBeans;-><init>(Ljava/lang/String;)V
 
-    invoke-virtual {v2, v3, v4, v1, v0}, Lnet/oneplus/odm/OpDeviceManagerInjector;->preserveOsData(Landroid/content/Context;Ljava/lang/String;Ljava/util/Map;Ljava/util/Map;)V
+    invoke-static {v1, v2}, Lcom/android/server/display/OpAutoBrightnessHelper;->access$002(Lcom/android/server/display/OpAutoBrightnessHelper;Lcom/android/server/display/BrightnessStaticBeans;)Lcom/android/server/display/BrightnessStaticBeans;
 
+    nop
+
+    :goto_2
     return-void
 .end method

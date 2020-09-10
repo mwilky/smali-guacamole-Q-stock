@@ -891,7 +891,7 @@
 .end method
 
 .method private logAppDisplayed(Lcom/android/server/wm/ActivityMetricsLogger$WindowingModeTransitionInfoSnapshot;)V
-    .locals 12
+    .locals 9
 
     iget v0, p1, Lcom/android/server/wm/ActivityMetricsLogger$WindowingModeTransitionInfoSnapshot;->type:I
 
@@ -974,17 +974,17 @@
 
     invoke-static {v1, v2, v0}, Landroid/util/TimeUtils;->formatDuration(JLjava/lang/StringBuilder;)V
 
-    const/4 v6, 0x1
+    iget-object v1, p1, Lcom/android/server/wm/ActivityMetricsLogger$WindowingModeTransitionInfoSnapshot;->packageName:Ljava/lang/String;
 
-    const-wide/16 v7, 0x0
+    iget-object v2, p1, Lcom/android/server/wm/ActivityMetricsLogger$WindowingModeTransitionInfoSnapshot;->processName:Ljava/lang/String;
 
-    iget v1, p1, Lcom/android/server/wm/ActivityMetricsLogger$WindowingModeTransitionInfoSnapshot;->windowsDrawnDelayMs:I
+    iget v6, p1, Lcom/android/server/wm/ActivityMetricsLogger$WindowingModeTransitionInfoSnapshot;->bindApplicationDelayMs:I
 
-    int-to-long v9, v1
+    iget v7, p1, Lcom/android/server/wm/ActivityMetricsLogger$WindowingModeTransitionInfoSnapshot;->windowsDrawnDelayMs:I
 
-    iget-object v11, p1, Lcom/android/server/wm/ActivityMetricsLogger$WindowingModeTransitionInfoSnapshot;->launchedActivityShortComponentName:Ljava/lang/String;
+    iget-object v8, p1, Lcom/android/server/wm/ActivityMetricsLogger$WindowingModeTransitionInfoSnapshot;->launchedActivityShortComponentName:Ljava/lang/String;
 
-    invoke-static/range {v6 .. v11}, Lcom/oneplus/houston/apkserver/bridge/HoustonInjector;->reportStartTime(IJJLjava/lang/String;)V
+    invoke-static {v1, v2, v6, v7, v8}, Lcom/oneplus/houston/apkserver/bridge/HoustonInjector;->reportActivityDisplayed(Ljava/lang/String;Ljava/lang/String;IILjava/lang/String;)V
 
     sget-object v1, Lcom/android/server/wm/ActivityMetricsLogger;->mUxPerf:Landroid/util/BoostFramework;
 
@@ -1132,73 +1132,67 @@
 .end method
 
 .method private logAppStartMemoryStateCapture(Lcom/android/server/wm/ActivityMetricsLogger$WindowingModeTransitionInfoSnapshot;)V
-    .locals 20
+    .locals 19
 
-    invoke-static/range {p1 .. p1}, Lcom/android/server/wm/ActivityMetricsLogger$WindowingModeTransitionInfoSnapshot;->access$2200(Lcom/android/server/wm/ActivityMetricsLogger$WindowingModeTransitionInfoSnapshot;)Lcom/android/server/wm/WindowProcessController;
+    move-object/from16 v0, p1
 
-    move-result-object v0
+    invoke-static/range {p1 .. p1}, Lcom/android/server/wm/ActivityMetricsLogger$WindowingModeTransitionInfoSnapshot;->access$2100(Lcom/android/server/wm/ActivityMetricsLogger$WindowingModeTransitionInfoSnapshot;)Lcom/android/server/wm/WindowProcessController;
 
-    if-nez v0, :cond_0
+    move-result-object v1
+
+    if-nez v1, :cond_0
 
     return-void
 
     :cond_0
-    invoke-static/range {p1 .. p1}, Lcom/android/server/wm/ActivityMetricsLogger$WindowingModeTransitionInfoSnapshot;->access$2200(Lcom/android/server/wm/ActivityMetricsLogger$WindowingModeTransitionInfoSnapshot;)Lcom/android/server/wm/WindowProcessController;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Lcom/android/server/wm/WindowProcessController;->getPid()I
-
-    move-result v0
-
-    invoke-static/range {p1 .. p1}, Lcom/android/server/wm/ActivityMetricsLogger$WindowingModeTransitionInfoSnapshot;->access$1400(Lcom/android/server/wm/ActivityMetricsLogger$WindowingModeTransitionInfoSnapshot;)Landroid/content/pm/ApplicationInfo;
+    invoke-static/range {p1 .. p1}, Lcom/android/server/wm/ActivityMetricsLogger$WindowingModeTransitionInfoSnapshot;->access$2100(Lcom/android/server/wm/ActivityMetricsLogger$WindowingModeTransitionInfoSnapshot;)Lcom/android/server/wm/WindowProcessController;
 
     move-result-object v1
 
-    iget v1, v1, Landroid/content/pm/ApplicationInfo;->uid:I
+    invoke-virtual {v1}, Lcom/android/server/wm/WindowProcessController;->getPid()I
 
-    invoke-static {v1, v0}, Lcom/android/server/am/MemoryStatUtil;->readMemoryStatFromFilesystem(II)Lcom/android/server/am/MemoryStatUtil$MemoryStat;
+    move-result v1
 
-    move-result-object v14
+    invoke-static/range {p1 .. p1}, Lcom/android/server/wm/ActivityMetricsLogger$WindowingModeTransitionInfoSnapshot;->access$1400(Lcom/android/server/wm/ActivityMetricsLogger$WindowingModeTransitionInfoSnapshot;)Landroid/content/pm/ApplicationInfo;
 
-    if-nez v14, :cond_1
+    move-result-object v2
+
+    iget v2, v2, Landroid/content/pm/ApplicationInfo;->uid:I
+
+    invoke-static {v2, v1}, Lcom/android/server/am/MemoryStatUtil;->readMemoryStatFromFilesystem(II)Lcom/android/server/am/MemoryStatUtil$MemoryStat;
+
+    move-result-object v15
+
+    if-nez v15, :cond_1
 
     return-void
 
     :cond_1
-    const/16 v2, 0x37
+    const/16 v3, 0x37
 
-    invoke-static/range {p1 .. p1}, Lcom/android/server/wm/ActivityMetricsLogger$WindowingModeTransitionInfoSnapshot;->access$2300(Lcom/android/server/wm/ActivityMetricsLogger$WindowingModeTransitionInfoSnapshot;)Ljava/lang/String;
+    iget-object v5, v0, Lcom/android/server/wm/ActivityMetricsLogger$WindowingModeTransitionInfoSnapshot;->processName:Ljava/lang/String;
 
-    move-result-object v4
+    iget-object v6, v0, Lcom/android/server/wm/ActivityMetricsLogger$WindowingModeTransitionInfoSnapshot;->launchedActivityName:Ljava/lang/String;
 
-    move-object/from16 v15, p1
+    iget-wide v7, v15, Lcom/android/server/am/MemoryStatUtil$MemoryStat;->pgfault:J
 
-    iget-object v5, v15, Lcom/android/server/wm/ActivityMetricsLogger$WindowingModeTransitionInfoSnapshot;->launchedActivityName:Ljava/lang/String;
+    iget-wide v9, v15, Lcom/android/server/am/MemoryStatUtil$MemoryStat;->pgmajfault:J
 
-    iget-wide v6, v14, Lcom/android/server/am/MemoryStatUtil$MemoryStat;->pgfault:J
+    iget-wide v11, v15, Lcom/android/server/am/MemoryStatUtil$MemoryStat;->rssInBytes:J
 
-    iget-wide v8, v14, Lcom/android/server/am/MemoryStatUtil$MemoryStat;->pgmajfault:J
+    iget-wide v13, v15, Lcom/android/server/am/MemoryStatUtil$MemoryStat;->cacheInBytes:J
 
-    iget-wide v10, v14, Lcom/android/server/am/MemoryStatUtil$MemoryStat;->rssInBytes:J
+    move/from16 v17, v1
 
-    iget-wide v12, v14, Lcom/android/server/am/MemoryStatUtil$MemoryStat;->cacheInBytes:J
+    iget-wide v0, v15, Lcom/android/server/am/MemoryStatUtil$MemoryStat;->swapInBytes:J
 
-    move-wide/from16 v16, v12
+    move v4, v2
 
-    iget-wide v12, v14, Lcom/android/server/am/MemoryStatUtil$MemoryStat;->swapInBytes:J
+    move-object/from16 v18, v15
 
-    move v3, v1
+    move-wide v15, v0
 
-    move-wide/from16 v18, v12
-
-    move-wide/from16 v12, v16
-
-    move-object/from16 v16, v14
-
-    move-wide/from16 v14, v18
-
-    invoke-static/range {v2 .. v15}, Landroid/util/StatsLog;->write(IILjava/lang/String;Ljava/lang/String;JJJJJ)I
+    invoke-static/range {v3 .. v16}, Landroid/util/StatsLog;->write(IILjava/lang/String;Ljava/lang/String;JJJJJ)I
 
     return-void
 .end method
@@ -1315,17 +1309,13 @@
     invoke-virtual {v2, v4, v6}, Landroid/metrics/LogMaker;->addTaggedData(ILjava/lang/Object;)Landroid/metrics/LogMaker;
 
     :cond_2
-    invoke-static/range {p3 .. p3}, Lcom/android/server/wm/ActivityMetricsLogger$WindowingModeTransitionInfoSnapshot;->access$1900(Lcom/android/server/wm/ActivityMetricsLogger$WindowingModeTransitionInfoSnapshot;)I
-
-    move-result v4
+    iget v4, v1, Lcom/android/server/wm/ActivityMetricsLogger$WindowingModeTransitionInfoSnapshot;->bindApplicationDelayMs:I
 
     if-eq v4, v5, :cond_3
 
     const/16 v4, 0x3b1
 
-    invoke-static/range {p3 .. p3}, Lcom/android/server/wm/ActivityMetricsLogger$WindowingModeTransitionInfoSnapshot;->access$1900(Lcom/android/server/wm/ActivityMetricsLogger$WindowingModeTransitionInfoSnapshot;)I
-
-    move-result v5
+    iget v5, v1, Lcom/android/server/wm/ActivityMetricsLogger$WindowingModeTransitionInfoSnapshot;->bindApplicationDelayMs:I
 
     invoke-static {v5}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1350,7 +1340,7 @@
 
     if-eqz v10, :cond_5
 
-    invoke-static/range {p3 .. p3}, Lcom/android/server/wm/ActivityMetricsLogger$WindowingModeTransitionInfoSnapshot;->access$2000(Lcom/android/server/wm/ActivityMetricsLogger$WindowingModeTransitionInfoSnapshot;)Ljava/lang/String;
+    invoke-static/range {p3 .. p3}, Lcom/android/server/wm/ActivityMetricsLogger$WindowingModeTransitionInfoSnapshot;->access$1900(Lcom/android/server/wm/ActivityMetricsLogger$WindowingModeTransitionInfoSnapshot;)Ljava/lang/String;
 
     move-result-object v4
 
@@ -1365,7 +1355,7 @@
 
     move-result-object v4
 
-    invoke-static/range {p3 .. p3}, Lcom/android/server/wm/ActivityMetricsLogger$WindowingModeTransitionInfoSnapshot;->access$2000(Lcom/android/server/wm/ActivityMetricsLogger$WindowingModeTransitionInfoSnapshot;)Ljava/lang/String;
+    invoke-static/range {p3 .. p3}, Lcom/android/server/wm/ActivityMetricsLogger$WindowingModeTransitionInfoSnapshot;->access$1900(Lcom/android/server/wm/ActivityMetricsLogger$WindowingModeTransitionInfoSnapshot;)Ljava/lang/String;
 
     move-result-object v5
 
@@ -1450,9 +1440,9 @@
 
     move/from16 v15, v16
 
-    invoke-static/range {p3 .. p3}, Lcom/android/server/wm/ActivityMetricsLogger$WindowingModeTransitionInfoSnapshot;->access$1900(Lcom/android/server/wm/ActivityMetricsLogger$WindowingModeTransitionInfoSnapshot;)I
+    iget v4, v1, Lcom/android/server/wm/ActivityMetricsLogger$WindowingModeTransitionInfoSnapshot;->bindApplicationDelayMs:I
 
-    move-result v16
+    move/from16 v16, v4
 
     iget v4, v1, Lcom/android/server/wm/ActivityMetricsLogger$WindowingModeTransitionInfoSnapshot;->windowsDrawnDelayMs:I
 
@@ -1857,7 +1847,7 @@
 
     if-eqz p1, :cond_1
 
-    invoke-static {p1}, Lcom/android/server/wm/ActivityMetricsLogger$WindowingModeTransitionInfo;->access$2400(Lcom/android/server/wm/ActivityMetricsLogger$WindowingModeTransitionInfo;)Z
+    invoke-static {p1}, Lcom/android/server/wm/ActivityMetricsLogger$WindowingModeTransitionInfo;->access$2200(Lcom/android/server/wm/ActivityMetricsLogger$WindowingModeTransitionInfo;)Z
 
     move-result v2
 
@@ -1892,7 +1882,7 @@
 
     const/4 v0, 0x1
 
-    invoke-static {p1, v0}, Lcom/android/server/wm/ActivityMetricsLogger$WindowingModeTransitionInfo;->access$2402(Lcom/android/server/wm/ActivityMetricsLogger$WindowingModeTransitionInfo;Z)Z
+    invoke-static {p1, v0}, Lcom/android/server/wm/ActivityMetricsLogger$WindowingModeTransitionInfo;->access$2202(Lcom/android/server/wm/ActivityMetricsLogger$WindowingModeTransitionInfo;Z)Z
 
     return-void
 
@@ -1909,7 +1899,7 @@
     return-void
 
     :cond_0
-    invoke-static {p1}, Lcom/android/server/wm/ActivityMetricsLogger$WindowingModeTransitionInfo;->access$2400(Lcom/android/server/wm/ActivityMetricsLogger$WindowingModeTransitionInfo;)Z
+    invoke-static {p1}, Lcom/android/server/wm/ActivityMetricsLogger$WindowingModeTransitionInfo;->access$2200(Lcom/android/server/wm/ActivityMetricsLogger$WindowingModeTransitionInfo;)Z
 
     move-result v0
 
@@ -1941,7 +1931,7 @@
 
     invoke-static {v0, v1, v2, v3}, Landroid/os/Trace;->asyncTraceEnd(JLjava/lang/String;I)V
 
-    invoke-static {p1, v3}, Lcom/android/server/wm/ActivityMetricsLogger$WindowingModeTransitionInfo;->access$2402(Lcom/android/server/wm/ActivityMetricsLogger$WindowingModeTransitionInfo;Z)Z
+    invoke-static {p1, v3}, Lcom/android/server/wm/ActivityMetricsLogger$WindowingModeTransitionInfo;->access$2202(Lcom/android/server/wm/ActivityMetricsLogger$WindowingModeTransitionInfo;Z)Z
 
     :cond_1
     return-void

@@ -4,26 +4,20 @@
 
 
 # static fields
-.field private static TAG:Ljava/lang/String;
+.field private static mAddServiceMethod:Ljava/lang/reflect/Method;
 
-.field private static addService_Method:Ljava/lang/reflect/Method;
-
-.field private static checkService_Method:Ljava/lang/reflect/Method;
+.field private static mCheckServiceMethd:Ljava/lang/reflect/Method;
 
 
 # direct methods
 .method static constructor <clinit>()V
     .locals 1
 
-    const-string v0, "Huston"
-
-    sput-object v0, Lcom/oneplus/houston/common/client/ServiceManager;->TAG:Ljava/lang/String;
-
     const/4 v0, 0x0
 
-    sput-object v0, Lcom/oneplus/houston/common/client/ServiceManager;->checkService_Method:Ljava/lang/reflect/Method;
+    sput-object v0, Lcom/oneplus/houston/common/client/ServiceManager;->mCheckServiceMethd:Ljava/lang/reflect/Method;
 
-    sput-object v0, Lcom/oneplus/houston/common/client/ServiceManager;->addService_Method:Ljava/lang/reflect/Method;
+    sput-object v0, Lcom/oneplus/houston/common/client/ServiceManager;->mAddServiceMethod:Ljava/lang/reflect/Method;
 
     return-void
 .end method
@@ -40,7 +34,7 @@
     .locals 7
 
     :try_start_0
-    sget-object v0, Lcom/oneplus/houston/common/client/ServiceManager;->addService_Method:Ljava/lang/reflect/Method;
+    sget-object v0, Lcom/oneplus/houston/common/client/ServiceManager;->mAddServiceMethod:Ljava/lang/reflect/Method;
 
     const/4 v1, 0x1
 
@@ -72,10 +66,10 @@
 
     move-result-object v4
 
-    sput-object v4, Lcom/oneplus/houston/common/client/ServiceManager;->addService_Method:Ljava/lang/reflect/Method;
+    sput-object v4, Lcom/oneplus/houston/common/client/ServiceManager;->mAddServiceMethod:Ljava/lang/reflect/Method;
 
     :cond_0
-    sget-object v0, Lcom/oneplus/houston/common/client/ServiceManager;->addService_Method:Ljava/lang/reflect/Method;
+    sget-object v0, Lcom/oneplus/houston/common/client/ServiceManager;->mAddServiceMethod:Ljava/lang/reflect/Method;
 
     const/4 v4, 0x0
 
@@ -94,23 +88,7 @@
     :catch_0
     move-exception v0
 
-    sget-object v1, Lcom/oneplus/houston/common/client/ServiceManager;->TAG:Ljava/lang/String;
-
-    new-instance v2, Ljava/lang/StringBuilder;
-
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v3, ""
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-static {v1, v2}, Lcom/oneplus/houston/common/client/utils/Logger;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v0}, Ljava/lang/Exception;->printStackTrace()V
 
     :goto_0
     return-void
@@ -122,7 +100,7 @@
     const/4 v0, 0x0
 
     :try_start_0
-    sget-object v1, Lcom/oneplus/houston/common/client/ServiceManager;->checkService_Method:Ljava/lang/reflect/Method;
+    sget-object v1, Lcom/oneplus/houston/common/client/ServiceManager;->mCheckServiceMethd:Ljava/lang/reflect/Method;
 
     const/4 v2, 0x0
 
@@ -148,10 +126,10 @@
 
     move-result-object v4
 
-    sput-object v4, Lcom/oneplus/houston/common/client/ServiceManager;->checkService_Method:Ljava/lang/reflect/Method;
+    sput-object v4, Lcom/oneplus/houston/common/client/ServiceManager;->mCheckServiceMethd:Ljava/lang/reflect/Method;
 
     :cond_0
-    sget-object v1, Lcom/oneplus/houston/common/client/ServiceManager;->checkService_Method:Ljava/lang/reflect/Method;
+    sget-object v1, Lcom/oneplus/houston/common/client/ServiceManager;->mCheckServiceMethd:Ljava/lang/reflect/Method;
 
     new-array v3, v3, [Ljava/lang/Object;
 
@@ -170,23 +148,7 @@
     :catch_0
     move-exception v1
 
-    sget-object v2, Lcom/oneplus/houston/common/client/ServiceManager;->TAG:Ljava/lang/String;
-
-    new-instance v3, Ljava/lang/StringBuilder;
-
-    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v4, ""
-
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v3, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v3
-
-    invoke-static {v2, v3}, Lcom/oneplus/houston/common/client/utils/Logger;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v1}, Ljava/lang/Exception;->printStackTrace()V
 
     return-object v0
 .end method

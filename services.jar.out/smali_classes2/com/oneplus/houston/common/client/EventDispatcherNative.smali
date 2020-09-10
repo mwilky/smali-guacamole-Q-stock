@@ -203,6 +203,8 @@
     :catch_0
     move-exception v3
 
+    invoke-virtual {v3}, Ljava/io/IOException;->printStackTrace()V
+
     goto :goto_1
 
     :catchall_0
@@ -217,6 +219,8 @@
 
     :catch_1
     move-exception v3
+
+    invoke-virtual {v3}, Ljava/io/IOException;->printStackTrace()V
 
     :goto_0
     throw v1

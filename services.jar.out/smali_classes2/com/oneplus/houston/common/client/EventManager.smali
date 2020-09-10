@@ -22,12 +22,12 @@
 
 .field private static final HOUSTON:Ljava/lang/String; = "com.oneplus.houston.Houston"
 
+.field private static final TAG:Ljava/lang/String; = "EventManager"
+
 .field private static sInstance:Lcom/oneplus/houston/common/client/EventManager;
 
 
 # instance fields
-.field private TAG:Ljava/lang/String;
-
 .field private mClient:Lcom/oneplus/houston/common/client/EventManager$HoustonAppClient;
 
 .field private final mContext:Landroid/content/Context;
@@ -71,10 +71,6 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    const-string v0, "EventManager"
-
-    iput-object v0, p0, Lcom/oneplus/houston/common/client/EventManager;->TAG:Ljava/lang/String;
-
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
@@ -115,15 +111,7 @@
     return-void
 .end method
 
-.method static synthetic access$000(Lcom/oneplus/houston/common/client/EventManager;)Ljava/lang/String;
-    .locals 1
-
-    iget-object v0, p0, Lcom/oneplus/houston/common/client/EventManager;->TAG:Ljava/lang/String;
-
-    return-object v0
-.end method
-
-.method static synthetic access$100(Lcom/oneplus/houston/common/client/EventManager;)Ljava/util/ArrayList;
+.method static synthetic access$000(Lcom/oneplus/houston/common/client/EventManager;)Ljava/util/ArrayList;
     .locals 1
 
     iget-object v0, p0, Lcom/oneplus/houston/common/client/EventManager;->mObserverCallback:Ljava/util/ArrayList;
@@ -131,23 +119,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$1000(Lcom/oneplus/houston/common/client/EventManager;)Lcom/oneplus/houston/common/client/IEvent;
-    .locals 1
-
-    iget-object v0, p0, Lcom/oneplus/houston/common/client/EventManager;->mEventListener:Lcom/oneplus/houston/common/client/IEvent;
-
-    return-object v0
-.end method
-
-.method static synthetic access$1002(Lcom/oneplus/houston/common/client/EventManager;Lcom/oneplus/houston/common/client/IEvent;)Lcom/oneplus/houston/common/client/IEvent;
-    .locals 0
-
-    iput-object p1, p0, Lcom/oneplus/houston/common/client/EventManager;->mEventListener:Lcom/oneplus/houston/common/client/IEvent;
-
-    return-object p1
-.end method
-
-.method static synthetic access$200(Lcom/oneplus/houston/common/client/EventManager;Lcom/oneplus/houston/common/client/AbsEventCallback;Lcom/oneplus/houston/common/client/Event;)Z
+.method static synthetic access$100(Lcom/oneplus/houston/common/client/EventManager;Lcom/oneplus/houston/common/client/AbsEventCallback;Lcom/oneplus/houston/common/client/Event;)Z
     .locals 1
 
     invoke-direct {p0, p1, p2}, Lcom/oneplus/houston/common/client/EventManager;->isReachThreshold(Lcom/oneplus/houston/common/client/AbsEventCallback;Lcom/oneplus/houston/common/client/Event;)Z
@@ -157,7 +129,7 @@
     return v0
 .end method
 
-.method static synthetic access$300(Lcom/oneplus/houston/common/client/EventManager;)Z
+.method static synthetic access$200(Lcom/oneplus/houston/common/client/EventManager;)Z
     .locals 1
 
     iget-boolean v0, p0, Lcom/oneplus/houston/common/client/EventManager;->mInitialized:Z
@@ -165,7 +137,7 @@
     return v0
 .end method
 
-.method static synthetic access$302(Lcom/oneplus/houston/common/client/EventManager;Z)Z
+.method static synthetic access$202(Lcom/oneplus/houston/common/client/EventManager;Z)Z
     .locals 0
 
     iput-boolean p1, p0, Lcom/oneplus/houston/common/client/EventManager;->mInitialized:Z
@@ -173,7 +145,7 @@
     return p1
 .end method
 
-.method static synthetic access$400(Lcom/oneplus/houston/common/client/EventManager;)I
+.method static synthetic access$300(Lcom/oneplus/houston/common/client/EventManager;)I
     .locals 1
 
     iget v0, p0, Lcom/oneplus/houston/common/client/EventManager;->mRetryCount:I
@@ -181,7 +153,7 @@
     return v0
 .end method
 
-.method static synthetic access$402(Lcom/oneplus/houston/common/client/EventManager;I)I
+.method static synthetic access$302(Lcom/oneplus/houston/common/client/EventManager;I)I
     .locals 0
 
     iput p1, p0, Lcom/oneplus/houston/common/client/EventManager;->mRetryCount:I
@@ -189,7 +161,7 @@
     return p1
 .end method
 
-.method static synthetic access$404(Lcom/oneplus/houston/common/client/EventManager;)I
+.method static synthetic access$304(Lcom/oneplus/houston/common/client/EventManager;)I
     .locals 1
 
     iget v0, p0, Lcom/oneplus/houston/common/client/EventManager;->mRetryCount:I
@@ -201,7 +173,7 @@
     return v0
 .end method
 
-.method static synthetic access$500(Lcom/oneplus/houston/common/client/EventManager;)Landroid/os/Handler;
+.method static synthetic access$400(Lcom/oneplus/houston/common/client/EventManager;)Landroid/os/Handler;
     .locals 1
 
     iget-object v0, p0, Lcom/oneplus/houston/common/client/EventManager;->mHandler:Landroid/os/Handler;
@@ -209,7 +181,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$602(Lcom/oneplus/houston/common/client/EventManager;Lcom/oneplus/houston/common/client/AbsEventCallback;)Lcom/oneplus/houston/common/client/AbsEventCallback;
+.method static synthetic access$502(Lcom/oneplus/houston/common/client/EventManager;Lcom/oneplus/houston/common/client/AbsEventCallback;)Lcom/oneplus/houston/common/client/AbsEventCallback;
     .locals 0
 
     iput-object p1, p0, Lcom/oneplus/houston/common/client/EventManager;->mWaitingCallback:Lcom/oneplus/houston/common/client/AbsEventCallback;
@@ -217,12 +189,28 @@
     return-object p1
 .end method
 
-.method static synthetic access$700(Lcom/oneplus/houston/common/client/EventManager;)V
+.method static synthetic access$600(Lcom/oneplus/houston/common/client/EventManager;)V
     .locals 0
 
     invoke-direct {p0}, Lcom/oneplus/houston/common/client/EventManager;->bindServiceIfNeeded()V
 
     return-void
+.end method
+
+.method static synthetic access$900(Lcom/oneplus/houston/common/client/EventManager;)Lcom/oneplus/houston/common/client/IEvent;
+    .locals 1
+
+    iget-object v0, p0, Lcom/oneplus/houston/common/client/EventManager;->mEventListener:Lcom/oneplus/houston/common/client/IEvent;
+
+    return-object v0
+.end method
+
+.method static synthetic access$902(Lcom/oneplus/houston/common/client/EventManager;Lcom/oneplus/houston/common/client/IEvent;)Lcom/oneplus/houston/common/client/IEvent;
+    .locals 0
+
+    iput-object p1, p0, Lcom/oneplus/houston/common/client/EventManager;->mEventListener:Lcom/oneplus/houston/common/client/IEvent;
+
+    return-object p1
 .end method
 
 .method private addAppCallback(Lcom/oneplus/houston/common/client/AbsEventCallback;)Z
@@ -268,7 +256,7 @@
     return v0
 
     :cond_0
-    iget-object v0, p0, Lcom/oneplus/houston/common/client/EventManager;->TAG:Ljava/lang/String;
+    const-string v0, "EventManager"
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -327,7 +315,7 @@
 
     invoke-virtual {v0, v1}, Landroid/content/Intent;->setPackage(Ljava/lang/String;)Landroid/content/Intent;
 
-    iget-object v1, p0, Lcom/oneplus/houston/common/client/EventManager;->TAG:Ljava/lang/String;
+    const-string v1, "EventManager"
 
     const-string v2, "begin bind houston event server!"
 
@@ -432,7 +420,7 @@
 
     if-nez v0, :cond_1
 
-    iget-object v0, p0, Lcom/oneplus/houston/common/client/EventManager;->TAG:Ljava/lang/String;
+    const-string v0, "EventManager"
 
     const-string v1, "can\'t find houston_server!, return"
 
@@ -532,89 +520,92 @@
 .method private isReachThreshold(Lcom/oneplus/houston/common/client/AbsEventCallback;Lcom/oneplus/houston/common/client/Event;)Z
     .locals 5
 
-    iget-object v0, p0, Lcom/oneplus/houston/common/client/EventManager;->TAG:Ljava/lang/String;
+    const-string v0, "EventManager"
 
     const-string v1, "isReachThreshold"
 
     invoke-static {v0, v1}, Lcom/oneplus/houston/common/client/utils/Logger;->d(Ljava/lang/String;Ljava/lang/String;)V
 
-    const/4 v0, 0x0
+    const/4 v1, 0x0
 
     invoke-virtual {p2}, Lcom/oneplus/houston/common/client/Event;->getType()I
 
-    move-result v1
-
-    iget v2, p1, Lcom/oneplus/houston/common/client/AbsEventCallback;->mIndex:I
-
-    const/4 v3, 0x0
-
-    if-eq v1, v2, :cond_0
-
-    iget-object v2, p0, Lcom/oneplus/houston/common/client/EventManager;->TAG:Ljava/lang/String;
-
-    const-string v4, "Callback and event don\'t match!"
-
-    invoke-static {v2, v4}, Lcom/oneplus/houston/common/client/utils/Logger;->e(Ljava/lang/String;Ljava/lang/String;)V
-
-    return v3
-
-    :cond_0
-    invoke-static {v1}, Lcom/oneplus/houston/common/client/AbsEventCallback;->isValidIndex(I)Z
-
     move-result v2
 
-    if-nez v2, :cond_1
+    iget v3, p1, Lcom/oneplus/houston/common/client/AbsEventCallback;->mIndex:I
 
-    iget-object v2, p0, Lcom/oneplus/houston/common/client/EventManager;->TAG:Ljava/lang/String;
+    const/4 v4, 0x0
 
-    const-string v4, "Invalid event type!"
+    if-eq v2, v3, :cond_0
 
-    invoke-static {v2, v4}, Lcom/oneplus/houston/common/client/utils/Logger;->e(Ljava/lang/String;Ljava/lang/String;)V
+    const-string v3, "Callback and event don\'t match!"
 
-    return v3
+    invoke-static {v0, v3}, Lcom/oneplus/houston/common/client/utils/Logger;->e(Ljava/lang/String;Ljava/lang/String;)V
+
+    return v4
+
+    :cond_0
+    invoke-static {v2}, Lcom/oneplus/houston/common/client/AbsEventCallback;->isValidIndex(I)Z
+
+    move-result v3
+
+    if-nez v3, :cond_1
+
+    const-string v3, "Invalid event type!"
+
+    invoke-static {v0, v3}, Lcom/oneplus/houston/common/client/utils/Logger;->e(Ljava/lang/String;Ljava/lang/String;)V
+
+    return v4
 
     :cond_1
-    const/4 v2, 0x1
+    const/4 v0, 0x1
 
-    if-eq v1, v2, :cond_2
+    if-eq v2, v0, :cond_3
+
+    const/4 v0, 0x2
+
+    if-eq v2, v0, :cond_2
 
     goto :goto_0
 
     :cond_2
+    goto :goto_0
+
+    :cond_3
     nop
 
-    move-object v2, p1
+    move-object v0, p1
 
-    check-cast v2, Lcom/oneplus/houston/common/client/observer/CpuEventCallback;
+    check-cast v0, Lcom/oneplus/houston/common/client/observer/CpuEventCallback;
 
-    invoke-virtual {v2, p2}, Lcom/oneplus/houston/common/client/observer/CpuEventCallback;->isReachThreshold(Lcom/oneplus/houston/common/client/Event;)Z
+    invoke-virtual {v0, p2}, Lcom/oneplus/houston/common/client/observer/CpuEventCallback;->isReachThreshold(Lcom/oneplus/houston/common/client/Event;)Z
 
-    move-result v0
+    move-result v1
 
     :goto_0
-    return v0
+    return v1
 .end method
 
 .method private registerEventObserverDelayed(Lcom/oneplus/houston/common/client/AbsEventCallback;)V
     .locals 5
 
-    iget-object v0, p0, Lcom/oneplus/houston/common/client/EventManager;->TAG:Ljava/lang/String;
+    new-instance v0, Ljava/lang/StringBuilder;
 
-    new-instance v1, Ljava/lang/StringBuilder;
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+    const-string v1, "registerEventObserverDelayed callback :"
 
-    const-string v2, "registerEventObserverDelayed callback :"
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v0
 
-    move-result-object v1
+    const-string v1, "EventManager"
 
-    invoke-static {v0, v1}, Lcom/oneplus/houston/common/client/utils/Logger;->i(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v0}, Lcom/oneplus/houston/common/client/utils/Logger;->i(Ljava/lang/String;Ljava/lang/String;)V
 
     iget-boolean v0, p0, Lcom/oneplus/houston/common/client/EventManager;->mInitialized:Z
 
@@ -645,7 +636,7 @@
 
     iput-object v0, p0, Lcom/oneplus/houston/common/client/EventManager;->mClient:Lcom/oneplus/houston/common/client/EventManager$HoustonAppClient;
 
-    iget-object v0, p0, Lcom/oneplus/houston/common/client/EventManager;->TAG:Ljava/lang/String;
+    const-string v0, "EventManager"
 
     const-string v2, " real add addClient "
 
@@ -670,27 +661,27 @@
     :catch_0
     move-exception v0
 
-    iget-object v2, p0, Lcom/oneplus/houston/common/client/EventManager;->TAG:Ljava/lang/String;
+    new-instance v2, Ljava/lang/StringBuilder;
 
-    new-instance v3, Ljava/lang/StringBuilder;
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
+    const-string v3, ""
 
-    const-string v4, ""
-
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     invoke-virtual {v0}, Landroid/os/RemoteException;->getMessage()Ljava/lang/String;
 
-    move-result-object v4
-
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
     move-result-object v3
 
-    invoke-static {v2, v3}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    const-string v3, "EventManager"
+
+    invoke-static {v3, v2}, Lcom/oneplus/houston/common/client/utils/Logger;->e(Ljava/lang/String;Ljava/lang/String;)V
 
     :cond_0
     :goto_0
@@ -742,7 +733,7 @@
 
     if-eqz v0, :cond_2
 
-    iget-object v1, p0, Lcom/oneplus/houston/common/client/EventManager;->TAG:Ljava/lang/String;
+    const-string v1, "EventManager"
 
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -778,27 +769,27 @@
     :catch_1
     move-exception v0
 
-    iget-object v1, p0, Lcom/oneplus/houston/common/client/EventManager;->TAG:Ljava/lang/String;
+    new-instance v1, Ljava/lang/StringBuilder;
 
-    new-instance v2, Ljava/lang/StringBuilder;
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+    const-string v2, "registerReceiver exception "
 
-    const-string v3, "registerReceiver exception "
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     invoke-virtual {v0}, Ljava/lang/Exception;->getMessage()Ljava/lang/String;
 
-    move-result-object v3
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
     move-result-object v2
 
-    invoke-static {v1, v2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    const-string v2, "EventManager"
+
+    invoke-static {v2, v1}, Lcom/oneplus/houston/common/client/utils/Logger;->e(Ljava/lang/String;Ljava/lang/String;)V
 
     invoke-direct {p0, p1}, Lcom/oneplus/houston/common/client/EventManager;->removeAppCallback(Lcom/oneplus/houston/common/client/AbsEventCallback;)V
 
@@ -850,7 +841,7 @@
 
     iput v1, p0, Lcom/oneplus/houston/common/client/EventManager;->mPid:I
 
-    iget-object v1, p0, Lcom/oneplus/houston/common/client/EventManager;->TAG:Ljava/lang/String;
+    const-string v1, "EventManager"
 
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -917,7 +908,7 @@
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/oneplus/houston/common/client/EventManager;->TAG:Ljava/lang/String;
+    const-string v0, "EventManager"
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -947,7 +938,7 @@
 
     iput-object v0, p0, Lcom/oneplus/houston/common/client/EventManager;->mWaitingCallback:Lcom/oneplus/houston/common/client/AbsEventCallback;
 
-    iget-object v0, p0, Lcom/oneplus/houston/common/client/EventManager;->TAG:Ljava/lang/String;
+    const-string v0, "EventManager"
 
     const-string v1, "Houston server force died as Houston app has exited!"
 
@@ -974,7 +965,7 @@
     monitor-enter p0
 
     :try_start_0
-    iget-object v0, p0, Lcom/oneplus/houston/common/client/EventManager;->TAG:Ljava/lang/String;
+    const-string v0, "EventManager"
 
     new-instance v1, Ljava/lang/StringBuilder;
 

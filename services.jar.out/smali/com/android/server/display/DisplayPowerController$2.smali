@@ -3,7 +3,7 @@
 .source "DisplayPowerController.java"
 
 # interfaces
-.implements Lcom/android/server/display/RampAnimator$Listener;
+.implements Landroid/animation/Animator$AnimatorListener;
 
 
 # annotations
@@ -34,111 +34,30 @@
 
 
 # virtual methods
-.method public onAnimationEnd()V
-    .locals 2
-
-    iget-object v0, p0, Lcom/android/server/display/DisplayPowerController$2;->this$0:Lcom/android/server/display/DisplayPowerController;
-
-    iget-object v0, v0, Lcom/android/server/display/DisplayPowerController;->mScreenBrightnessRampAnimator:Lcom/android/server/display/RampAnimator;
-
-    invoke-virtual {v0}, Lcom/android/server/display/RampAnimator;->getBrightnessValue()I
-
-    move-result v0
-
-    const/16 v1, 0x6e
-
-    if-ge v0, v1, :cond_0
-
-    iget-object v0, p0, Lcom/android/server/display/DisplayPowerController$2;->this$0:Lcom/android/server/display/DisplayPowerController;
-
-    invoke-static {v0}, Lcom/android/server/display/DisplayPowerController;->access$200(Lcom/android/server/display/DisplayPowerController;)Z
-
-    move-result v0
-
-    if-nez v0, :cond_0
-
-    iget-object v0, p0, Lcom/android/server/display/DisplayPowerController$2;->this$0:Lcom/android/server/display/DisplayPowerController;
-
-    invoke-static {v0}, Lcom/android/server/display/DisplayPowerController;->access$300(Lcom/android/server/display/DisplayPowerController;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    iget-object v0, p0, Lcom/android/server/display/DisplayPowerController$2;->this$0:Lcom/android/server/display/DisplayPowerController;
-
-    invoke-static {v0}, Lcom/android/server/display/DisplayPowerController;->access$400(Lcom/android/server/display/DisplayPowerController;)Lcom/android/server/display/AutomaticBrightnessController;
-
-    move-result-object v0
-
-    const/16 v1, 0x7d0
-
-    invoke-virtual {v0, v1}, Lcom/android/server/display/AutomaticBrightnessController;->adjustBrightenDebounceTime(I)V
-
-    goto :goto_0
-
-    :cond_0
-    iget-object v0, p0, Lcom/android/server/display/DisplayPowerController$2;->this$0:Lcom/android/server/display/DisplayPowerController;
-
-    invoke-static {v0}, Lcom/android/server/display/DisplayPowerController;->access$400(Lcom/android/server/display/DisplayPowerController;)Lcom/android/server/display/AutomaticBrightnessController;
-
-    move-result-object v0
-
-    const/16 v1, 0xfa0
-
-    invoke-virtual {v0, v1}, Lcom/android/server/display/AutomaticBrightnessController;->adjustBrightenDebounceTime(I)V
-
-    :goto_0
-    iget-object v0, p0, Lcom/android/server/display/DisplayPowerController$2;->this$0:Lcom/android/server/display/DisplayPowerController;
-
-    invoke-static {v0}, Lcom/android/server/display/DisplayPowerController;->access$100(Lcom/android/server/display/DisplayPowerController;)V
+.method public onAnimationCancel(Landroid/animation/Animator;)V
+    .locals 0
 
     return-void
 .end method
 
-.method public setDimmingSpeed(II)V
-    .locals 4
+.method public onAnimationEnd(Landroid/animation/Animator;)V
+    .locals 1
 
     iget-object v0, p0, Lcom/android/server/display/DisplayPowerController$2;->this$0:Lcom/android/server/display/DisplayPowerController;
 
-    invoke-static {v0}, Lcom/android/server/display/DisplayPowerController;->access$500(Lcom/android/server/display/DisplayPowerController;)Z
+    invoke-static {v0}, Lcom/android/server/display/DisplayPowerController;->access$300(Lcom/android/server/display/DisplayPowerController;)V
 
-    move-result v0
+    return-void
+.end method
 
-    if-eqz v0, :cond_0
+.method public onAnimationRepeat(Landroid/animation/Animator;)V
+    .locals 0
 
-    iget-object v0, p0, Lcom/android/server/display/DisplayPowerController$2;->this$0:Lcom/android/server/display/DisplayPowerController;
+    return-void
+.end method
 
-    invoke-static {v0}, Lcom/android/server/display/DisplayPowerController;->access$600(Lcom/android/server/display/DisplayPowerController;)Lcom/android/server/display/DisplayPowerController$DisplayControllerHandler;
+.method public onAnimationStart(Landroid/animation/Animator;)V
+    .locals 0
 
-    move-result-object v0
-
-    const/4 v1, 0x0
-
-    const/16 v2, 0x58
-
-    invoke-virtual {v0, v2, p1, v1}, Lcom/android/server/display/DisplayPowerController$DisplayControllerHandler;->obtainMessage(III)Landroid/os/Message;
-
-    move-result-object v0
-
-    iget-object v1, p0, Lcom/android/server/display/DisplayPowerController$2;->this$0:Lcom/android/server/display/DisplayPowerController;
-
-    invoke-static {v1}, Lcom/android/server/display/DisplayPowerController;->access$600(Lcom/android/server/display/DisplayPowerController;)Lcom/android/server/display/DisplayPowerController$DisplayControllerHandler;
-
-    move-result-object v1
-
-    invoke-virtual {v1, v2}, Lcom/android/server/display/DisplayPowerController$DisplayControllerHandler;->removeMessages(I)V
-
-    iget-object v1, p0, Lcom/android/server/display/DisplayPowerController$2;->this$0:Lcom/android/server/display/DisplayPowerController;
-
-    invoke-static {v1}, Lcom/android/server/display/DisplayPowerController;->access$600(Lcom/android/server/display/DisplayPowerController;)Lcom/android/server/display/DisplayPowerController$DisplayControllerHandler;
-
-    move-result-object v1
-
-    int-to-long v2, p2
-
-    invoke-virtual {v1, v0, v2, v3}, Lcom/android/server/display/DisplayPowerController$DisplayControllerHandler;->sendMessageDelayed(Landroid/os/Message;J)Z
-
-    :cond_0
     return-void
 .end method

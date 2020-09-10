@@ -1,11 +1,14 @@
 .class Lcom/android/server/wm/RecentTasksInjector$1;
-.super Landroid/app/UserSwitchObserver;
+.super Ljava/lang/Object;
 .source "RecentTasksInjector.java"
+
+# interfaces
+.implements Ljava/lang/Runnable;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/server/wm/RecentTasksInjector;->ensureUserSwitchingObserved()V
+    value = Lcom/android/server/wm/RecentTasksInjector;->ensureAndUpdateLockedTasksInfoObserver()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -24,24 +27,41 @@
 
     iput-object p1, p0, Lcom/android/server/wm/RecentTasksInjector$1;->this$0:Lcom/android/server/wm/RecentTasksInjector;
 
-    invoke-direct {p0}, Landroid/app/UserSwitchObserver;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public onUserSwitchComplete(I)V
-    .locals 1
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Landroid/os/RemoteException;
-        }
-    .end annotation
+.method public run()V
+    .locals 5
 
     iget-object v0, p0, Lcom/android/server/wm/RecentTasksInjector$1;->this$0:Lcom/android/server/wm/RecentTasksInjector;
 
-    invoke-static {v0}, Lcom/android/server/wm/RecentTasksInjector;->access$000(Lcom/android/server/wm/RecentTasksInjector;)V
+    invoke-static {v0}, Lcom/android/server/wm/RecentTasksInjector;->access$200(Lcom/android/server/wm/RecentTasksInjector;)Landroid/content/Context;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object v0
+
+    invoke-static {}, Lcom/android/server/wm/RecentTasksInjector;->access$000()Landroid/net/Uri;
+
+    move-result-object v1
+
+    iget-object v2, p0, Lcom/android/server/wm/RecentTasksInjector$1;->this$0:Lcom/android/server/wm/RecentTasksInjector;
+
+    invoke-static {v2}, Lcom/android/server/wm/RecentTasksInjector;->access$100(Lcom/android/server/wm/RecentTasksInjector;)Lcom/android/server/wm/RecentTasksInjector$LockedTasksContentObserver;
+
+    move-result-object v2
+
+    const/4 v3, 0x0
+
+    const/4 v4, -0x1
+
+    invoke-virtual {v0, v1, v3, v2, v4}, Landroid/content/ContentResolver;->registerContentObserver(Landroid/net/Uri;ZLandroid/database/ContentObserver;I)V
 
     return-void
 .end method

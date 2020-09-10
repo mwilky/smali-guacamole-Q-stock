@@ -19,7 +19,7 @@
 
 .field private final applicationInfo:Landroid/content/pm/ApplicationInfo;
 
-.field private final bindApplicationDelayMs:I
+.field final bindApplicationDelayMs:I
 
 .field private final launchedActivityAppRecordRequiredAbi:Ljava/lang/String;
 
@@ -33,7 +33,7 @@
 
 .field final packageName:Ljava/lang/String;
 
-.field private final processName:Ljava/lang/String;
+.field final processName:Ljava/lang/String;
 
 .field private final processRecord:Lcom/android/server/wm/WindowProcessController;
 
@@ -239,15 +239,7 @@
     return v0
 .end method
 
-.method static synthetic access$1900(Lcom/android/server/wm/ActivityMetricsLogger$WindowingModeTransitionInfoSnapshot;)I
-    .locals 1
-
-    iget v0, p0, Lcom/android/server/wm/ActivityMetricsLogger$WindowingModeTransitionInfoSnapshot;->bindApplicationDelayMs:I
-
-    return v0
-.end method
-
-.method static synthetic access$2000(Lcom/android/server/wm/ActivityMetricsLogger$WindowingModeTransitionInfoSnapshot;)Ljava/lang/String;
+.method static synthetic access$1900(Lcom/android/server/wm/ActivityMetricsLogger$WindowingModeTransitionInfoSnapshot;)Ljava/lang/String;
     .locals 1
 
     iget-object v0, p0, Lcom/android/server/wm/ActivityMetricsLogger$WindowingModeTransitionInfoSnapshot;->launchedActivityAppRecordRequiredAbi:Ljava/lang/String;
@@ -255,18 +247,10 @@
     return-object v0
 .end method
 
-.method static synthetic access$2200(Lcom/android/server/wm/ActivityMetricsLogger$WindowingModeTransitionInfoSnapshot;)Lcom/android/server/wm/WindowProcessController;
+.method static synthetic access$2100(Lcom/android/server/wm/ActivityMetricsLogger$WindowingModeTransitionInfoSnapshot;)Lcom/android/server/wm/WindowProcessController;
     .locals 1
 
     iget-object v0, p0, Lcom/android/server/wm/ActivityMetricsLogger$WindowingModeTransitionInfoSnapshot;->processRecord:Lcom/android/server/wm/WindowProcessController;
-
-    return-object v0
-.end method
-
-.method static synthetic access$2300(Lcom/android/server/wm/ActivityMetricsLogger$WindowingModeTransitionInfoSnapshot;)Ljava/lang/String;
-    .locals 1
-
-    iget-object v0, p0, Lcom/android/server/wm/ActivityMetricsLogger$WindowingModeTransitionInfoSnapshot;->processName:Ljava/lang/String;
 
     return-object v0
 .end method

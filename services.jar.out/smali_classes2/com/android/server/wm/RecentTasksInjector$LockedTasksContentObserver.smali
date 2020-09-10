@@ -36,7 +36,7 @@
 
     iget-object v0, p0, Lcom/android/server/wm/RecentTasksInjector$LockedTasksContentObserver;->this$0:Lcom/android/server/wm/RecentTasksInjector;
 
-    invoke-static {v0}, Lcom/android/server/wm/RecentTasksInjector;->access$000(Lcom/android/server/wm/RecentTasksInjector;)V
+    invoke-static {v0}, Lcom/android/server/wm/RecentTasksInjector;->access$300(Lcom/android/server/wm/RecentTasksInjector;)V
 
     return-void
 .end method

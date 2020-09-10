@@ -5048,7 +5048,7 @@
 
     move-object/from16 v21, v0
 
-    const-string v0, "isOrphaned"
+    const-string/jumbo v0, "isOrphaned"
 
     invoke-interface {v13, v14, v0}, Lorg/xmlpull/v1/XmlPullParser;->getAttributeValue(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
@@ -24670,7 +24670,7 @@
 
     if-eqz v2, :cond_9
 
-    const-string v2, "isOrphaned"
+    const-string/jumbo v2, "isOrphaned"
 
     invoke-interface {p1, v1, v2, v3}, Lorg/xmlpull/v1/XmlSerializer;->attribute(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lorg/xmlpull/v1/XmlSerializer;
 

@@ -92,6 +92,28 @@
     return-void
 .end method
 
+.method public static checkLeakProcess(Lcom/android/server/am/ProcessRecord;)V
+    .locals 1
+
+    sget-boolean v0, Lcom/android/server/am/OpMemoryTrackerInjector;->ENABLED:Z
+
+    if-nez v0, :cond_0
+
+    return-void
+
+    :cond_0
+    invoke-static {}, Lcom/android/server/am/OpMemoryTrackerInjector;->initialization()V
+
+    sget-object v0, Lcom/android/server/am/OpMemoryTrackerInjector;->sOpMemoryTracker:Lcom/android/server/am/IOpMemoryTracker;
+
+    if-eqz v0, :cond_1
+
+    invoke-interface {v0, p0}, Lcom/android/server/am/IOpMemoryTracker;->checkLeakProcess(Lcom/android/server/am/ProcessRecord;)V
+
+    :cond_1
+    return-void
+.end method
+
 .method public static initAms(Lcom/android/server/am/ActivityManagerService;)V
     .locals 1
 

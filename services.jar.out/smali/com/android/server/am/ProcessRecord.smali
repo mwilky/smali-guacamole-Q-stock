@@ -5136,7 +5136,7 @@
 
     iget-object v1, p0, Lcom/android/server/am/ProcessRecord;->thread:Landroid/app/IApplicationThread;
 
-    if-nez v1, :cond_5
+    if-nez v1, :cond_4
 
     iget-object v1, p0, Lcom/android/server/am/ProcessRecord;->baseProcessTracker:Lcom/android/internal/app/procstats/ProcessState;
 
@@ -5301,17 +5301,6 @@
     goto :goto_1
 
     :cond_4
-    iget-object v2, p0, Lcom/android/server/am/ProcessRecord;->info:Landroid/content/pm/ApplicationInfo;
-
-    iget-object v3, p0, Lcom/android/server/am/ProcessRecord;->processName:Ljava/lang/String;
-
-    iget v4, p0, Lcom/android/server/am/ProcessRecord;->pid:I
-
-    iget-object v5, p0, Lcom/android/server/am/ProcessRecord;->createReason:Ljava/lang/String;
-
-    invoke-static {v2, v3, v4, v5}, Lcom/oneplus/houston/apkserver/bridge/HoustonInjector;->addProcess(Landroid/content/pm/ApplicationInfo;Ljava/lang/String;ILjava/lang/String;)V
-
-    :cond_5
     iput-object p1, p0, Lcom/android/server/am/ProcessRecord;->thread:Landroid/app/IApplicationThread;
 
     iget-object v1, p0, Lcom/android/server/am/ProcessRecord;->mWindowProcessController:Lcom/android/server/wm/WindowProcessController;

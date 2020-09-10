@@ -222,7 +222,7 @@
 
     new-array v1, v1, [I
 
-    const/16 v4, 0xa4
+    const/16 v4, 0xa5
 
     aput v4, v1, v3
 
@@ -538,7 +538,7 @@
     :cond_12
     new-array v4, v1, [I
 
-    const/16 v5, 0xa4
+    const/16 v5, 0xa5
 
     aput v5, v4, v3
 

@@ -8069,6 +8069,33 @@
     return v0
 .end method
 
+.method public getFocusedAppOrientation()I
+    .locals 1
+
+    iget-object v0, p0, Lcom/android/server/wm/DisplayPolicy;->mDisplayContent:Lcom/android/server/wm/DisplayContent;
+
+    if-eqz v0, :cond_0
+
+    iget-object v0, v0, Lcom/android/server/wm/DisplayContent;->mFocusedApp:Lcom/android/server/wm/AppWindowToken;
+
+    if-eqz v0, :cond_0
+
+    iget-object v0, p0, Lcom/android/server/wm/DisplayPolicy;->mDisplayContent:Lcom/android/server/wm/DisplayContent;
+
+    iget-object v0, v0, Lcom/android/server/wm/DisplayContent;->mFocusedApp:Lcom/android/server/wm/AppWindowToken;
+
+    invoke-virtual {v0}, Lcom/android/server/wm/AppWindowToken;->getOrientationIgnoreVisibility()I
+
+    move-result v0
+
+    return v0
+
+    :cond_0
+    const/4 v0, -0x1
+
+    return v0
+.end method
+
 .method public getFocusedWindowState()Lcom/android/server/wm/WindowState;
     .locals 1
 

@@ -12,13 +12,13 @@
 
 .field public static final INFO:I = 0x4
 
-.field public static LEVEL:I = 0x0
-
 .field private static final TAG:Ljava/lang/String; = "===> "
 
 .field public static final VERBOSE:I = 0x2
 
 .field public static final WARN:I = 0x5
+
+.field public static mLogLevel:I
 
 
 # direct methods
@@ -27,7 +27,7 @@
 
     const/4 v0, 0x4
 
-    sput v0, Lcom/oneplus/houston/common/client/utils/Logger;->LEVEL:I
+    sput v0, Lcom/oneplus/houston/common/client/utils/Logger;->mLogLevel:I
 
     return-void
 .end method
@@ -43,7 +43,7 @@
 .method public static a(Ljava/lang/String;Ljava/lang/String;)V
     .locals 2
 
-    sget v0, Lcom/oneplus/houston/common/client/utils/Logger;->LEVEL:I
+    sget v0, Lcom/oneplus/houston/common/client/utils/Logger;->mLogLevel:I
 
     const/4 v1, 0x7
 
@@ -72,7 +72,7 @@
 .method public static d(Ljava/lang/String;Ljava/lang/String;)V
     .locals 2
 
-    sget v0, Lcom/oneplus/houston/common/client/utils/Logger;->LEVEL:I
+    sget v0, Lcom/oneplus/houston/common/client/utils/Logger;->mLogLevel:I
 
     const/4 v1, 0x3
 
@@ -101,7 +101,7 @@
 .method public static e(Ljava/lang/String;Ljava/lang/String;)V
     .locals 2
 
-    sget v0, Lcom/oneplus/houston/common/client/utils/Logger;->LEVEL:I
+    sget v0, Lcom/oneplus/houston/common/client/utils/Logger;->mLogLevel:I
 
     const/4 v1, 0x6
 
@@ -130,7 +130,7 @@
 .method public static i(Ljava/lang/String;Ljava/lang/String;)V
     .locals 2
 
-    sget v0, Lcom/oneplus/houston/common/client/utils/Logger;->LEVEL:I
+    sget v0, Lcom/oneplus/houston/common/client/utils/Logger;->mLogLevel:I
 
     const/4 v1, 0x4
 
@@ -159,7 +159,7 @@
 .method public static v(Ljava/lang/String;Ljava/lang/String;)V
     .locals 2
 
-    sget v0, Lcom/oneplus/houston/common/client/utils/Logger;->LEVEL:I
+    sget v0, Lcom/oneplus/houston/common/client/utils/Logger;->mLogLevel:I
 
     const/4 v1, 0x2
 
@@ -188,7 +188,7 @@
 .method public static w(Ljava/lang/String;Ljava/lang/String;)V
     .locals 2
 
-    sget v0, Lcom/oneplus/houston/common/client/utils/Logger;->LEVEL:I
+    sget v0, Lcom/oneplus/houston/common/client/utils/Logger;->mLogLevel:I
 
     const/4 v1, 0x5
 

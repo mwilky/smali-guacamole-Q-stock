@@ -52,14 +52,14 @@
     :cond_0
     iget-object v0, p0, Lcom/oneplus/houston/common/client/EventManager$1;->this$0:Lcom/oneplus/houston/common/client/EventManager;
 
-    invoke-static {v0}, Lcom/oneplus/houston/common/client/EventManager;->access$700(Lcom/oneplus/houston/common/client/EventManager;)V
+    invoke-static {v0}, Lcom/oneplus/houston/common/client/EventManager;->access$600(Lcom/oneplus/houston/common/client/EventManager;)V
 
     goto/16 :goto_2
 
     :cond_1
     iget-object v0, p0, Lcom/oneplus/houston/common/client/EventManager$1;->this$0:Lcom/oneplus/houston/common/client/EventManager;
 
-    invoke-static {v0}, Lcom/oneplus/houston/common/client/EventManager;->access$100(Lcom/oneplus/houston/common/client/EventManager;)Ljava/util/ArrayList;
+    invoke-static {v0}, Lcom/oneplus/houston/common/client/EventManager;->access$000(Lcom/oneplus/houston/common/client/EventManager;)Ljava/util/ArrayList;
 
     move-result-object v0
 
@@ -70,7 +70,7 @@
     :try_start_1
     iget-object v2, p0, Lcom/oneplus/houston/common/client/EventManager$1;->this$0:Lcom/oneplus/houston/common/client/EventManager;
 
-    invoke-static {v2}, Lcom/oneplus/houston/common/client/EventManager;->access$100(Lcom/oneplus/houston/common/client/EventManager;)Ljava/util/ArrayList;
+    invoke-static {v2}, Lcom/oneplus/houston/common/client/EventManager;->access$000(Lcom/oneplus/houston/common/client/EventManager;)Ljava/util/ArrayList;
 
     move-result-object v2
 
@@ -93,15 +93,11 @@
 
     :cond_2
     :try_start_3
-    iget-object v2, p0, Lcom/oneplus/houston/common/client/EventManager$1;->this$0:Lcom/oneplus/houston/common/client/EventManager;
-
-    invoke-static {v2}, Lcom/oneplus/houston/common/client/EventManager;->access$000(Lcom/oneplus/houston/common/client/EventManager;)Ljava/lang/String;
-
-    move-result-object v2
+    const-string v2, "EventManager"
 
     const-string v3, "Binder died, register all again!"
 
-    invoke-static {v2, v3}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {v2, v3}, Lcom/oneplus/houston/common/client/utils/Logger;->w(Ljava/lang/String;Ljava/lang/String;)V
 
     const/4 v2, 0x0
 
@@ -110,7 +106,7 @@
     :goto_0
     iget-object v4, p0, Lcom/oneplus/houston/common/client/EventManager$1;->this$0:Lcom/oneplus/houston/common/client/EventManager;
 
-    invoke-static {v4}, Lcom/oneplus/houston/common/client/EventManager;->access$100(Lcom/oneplus/houston/common/client/EventManager;)Ljava/util/ArrayList;
+    invoke-static {v4}, Lcom/oneplus/houston/common/client/EventManager;->access$000(Lcom/oneplus/houston/common/client/EventManager;)Ljava/util/ArrayList;
 
     move-result-object v4
 
@@ -124,7 +120,7 @@
 
     iget-object v5, p0, Lcom/oneplus/houston/common/client/EventManager$1;->this$0:Lcom/oneplus/houston/common/client/EventManager;
 
-    invoke-static {v5}, Lcom/oneplus/houston/common/client/EventManager;->access$100(Lcom/oneplus/houston/common/client/EventManager;)Ljava/util/ArrayList;
+    invoke-static {v5}, Lcom/oneplus/houston/common/client/EventManager;->access$000(Lcom/oneplus/houston/common/client/EventManager;)Ljava/util/ArrayList;
 
     move-result-object v5
 
@@ -143,17 +139,13 @@
     :cond_3
     iget-object v3, p0, Lcom/oneplus/houston/common/client/EventManager$1;->this$0:Lcom/oneplus/houston/common/client/EventManager;
 
-    invoke-static {v3}, Lcom/oneplus/houston/common/client/EventManager;->access$300(Lcom/oneplus/houston/common/client/EventManager;)Z
+    invoke-static {v3}, Lcom/oneplus/houston/common/client/EventManager;->access$200(Lcom/oneplus/houston/common/client/EventManager;)Z
 
     move-result v3
 
     if-nez v3, :cond_5
 
-    iget-object v3, p0, Lcom/oneplus/houston/common/client/EventManager$1;->this$0:Lcom/oneplus/houston/common/client/EventManager;
-
-    invoke-static {v3}, Lcom/oneplus/houston/common/client/EventManager;->access$000(Lcom/oneplus/houston/common/client/EventManager;)Ljava/lang/String;
-
-    move-result-object v3
+    const-string v3, "EventManager"
 
     new-instance v4, Ljava/lang/StringBuilder;
 
@@ -165,7 +157,7 @@
 
     iget-object v5, p0, Lcom/oneplus/houston/common/client/EventManager$1;->this$0:Lcom/oneplus/houston/common/client/EventManager;
 
-    invoke-static {v5}, Lcom/oneplus/houston/common/client/EventManager;->access$404(Lcom/oneplus/houston/common/client/EventManager;)I
+    invoke-static {v5}, Lcom/oneplus/houston/common/client/EventManager;->access$304(Lcom/oneplus/houston/common/client/EventManager;)I
 
     move-result v5
 
@@ -175,11 +167,11 @@
 
     move-result-object v4
 
-    invoke-static {v3, v4}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {v3, v4}, Lcom/oneplus/houston/common/client/utils/Logger;->w(Ljava/lang/String;Ljava/lang/String;)V
 
     iget-object v3, p0, Lcom/oneplus/houston/common/client/EventManager$1;->this$0:Lcom/oneplus/houston/common/client/EventManager;
 
-    invoke-static {v3}, Lcom/oneplus/houston/common/client/EventManager;->access$400(Lcom/oneplus/houston/common/client/EventManager;)I
+    invoke-static {v3}, Lcom/oneplus/houston/common/client/EventManager;->access$300(Lcom/oneplus/houston/common/client/EventManager;)I
 
     move-result v3
 
@@ -189,7 +181,7 @@
 
     iget-object v2, p0, Lcom/oneplus/houston/common/client/EventManager$1;->this$0:Lcom/oneplus/houston/common/client/EventManager;
 
-    invoke-static {v2}, Lcom/oneplus/houston/common/client/EventManager;->access$500(Lcom/oneplus/houston/common/client/EventManager;)Landroid/os/Handler;
+    invoke-static {v2}, Lcom/oneplus/houston/common/client/EventManager;->access$400(Lcom/oneplus/houston/common/client/EventManager;)Landroid/os/Handler;
 
     move-result-object v2
 
@@ -197,7 +189,7 @@
 
     iget-object v2, p0, Lcom/oneplus/houston/common/client/EventManager$1;->this$0:Lcom/oneplus/houston/common/client/EventManager;
 
-    invoke-static {v2}, Lcom/oneplus/houston/common/client/EventManager;->access$500(Lcom/oneplus/houston/common/client/EventManager;)Landroid/os/Handler;
+    invoke-static {v2}, Lcom/oneplus/houston/common/client/EventManager;->access$400(Lcom/oneplus/houston/common/client/EventManager;)Landroid/os/Handler;
 
     move-result-object v2
 
@@ -208,11 +200,7 @@
     goto :goto_1
 
     :cond_4
-    iget-object v1, p0, Lcom/oneplus/houston/common/client/EventManager$1;->this$0:Lcom/oneplus/houston/common/client/EventManager;
-
-    invoke-static {v1}, Lcom/oneplus/houston/common/client/EventManager;->access$000(Lcom/oneplus/houston/common/client/EventManager;)Ljava/lang/String;
-
-    move-result-object v1
+    const-string v1, "EventManager"
 
     new-instance v3, Ljava/lang/StringBuilder;
 
@@ -224,7 +212,7 @@
 
     iget-object v4, p0, Lcom/oneplus/houston/common/client/EventManager$1;->this$0:Lcom/oneplus/houston/common/client/EventManager;
 
-    invoke-static {v4}, Lcom/oneplus/houston/common/client/EventManager;->access$100(Lcom/oneplus/houston/common/client/EventManager;)Ljava/util/ArrayList;
+    invoke-static {v4}, Lcom/oneplus/houston/common/client/EventManager;->access$000(Lcom/oneplus/houston/common/client/EventManager;)Ljava/util/ArrayList;
 
     move-result-object v4
 
@@ -238,11 +226,11 @@
 
     move-result-object v3
 
-    invoke-static {v1, v3}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {v1, v3}, Lcom/oneplus/houston/common/client/utils/Logger;->e(Ljava/lang/String;Ljava/lang/String;)V
 
     iget-object v1, p0, Lcom/oneplus/houston/common/client/EventManager$1;->this$0:Lcom/oneplus/houston/common/client/EventManager;
 
-    invoke-static {v1}, Lcom/oneplus/houston/common/client/EventManager;->access$100(Lcom/oneplus/houston/common/client/EventManager;)Ljava/util/ArrayList;
+    invoke-static {v1}, Lcom/oneplus/houston/common/client/EventManager;->access$000(Lcom/oneplus/houston/common/client/EventManager;)Ljava/util/ArrayList;
 
     move-result-object v1
 
@@ -250,18 +238,18 @@
 
     iget-object v1, p0, Lcom/oneplus/houston/common/client/EventManager$1;->this$0:Lcom/oneplus/houston/common/client/EventManager;
 
-    invoke-static {v1, v2}, Lcom/oneplus/houston/common/client/EventManager;->access$402(Lcom/oneplus/houston/common/client/EventManager;I)I
+    invoke-static {v1, v2}, Lcom/oneplus/houston/common/client/EventManager;->access$302(Lcom/oneplus/houston/common/client/EventManager;I)I
 
     goto :goto_1
 
     :cond_5
     iget-object v1, p0, Lcom/oneplus/houston/common/client/EventManager$1;->this$0:Lcom/oneplus/houston/common/client/EventManager;
 
-    invoke-static {v1, v2}, Lcom/oneplus/houston/common/client/EventManager;->access$402(Lcom/oneplus/houston/common/client/EventManager;I)I
+    invoke-static {v1, v2}, Lcom/oneplus/houston/common/client/EventManager;->access$302(Lcom/oneplus/houston/common/client/EventManager;I)I
 
     iget-object v1, p0, Lcom/oneplus/houston/common/client/EventManager$1;->this$0:Lcom/oneplus/houston/common/client/EventManager;
 
-    invoke-static {v1}, Lcom/oneplus/houston/common/client/EventManager;->access$100(Lcom/oneplus/houston/common/client/EventManager;)Ljava/util/ArrayList;
+    invoke-static {v1}, Lcom/oneplus/houston/common/client/EventManager;->access$000(Lcom/oneplus/houston/common/client/EventManager;)Ljava/util/ArrayList;
 
     move-result-object v1
 
@@ -271,7 +259,7 @@
 
     const/4 v2, 0x0
 
-    invoke-static {v1, v2}, Lcom/oneplus/houston/common/client/EventManager;->access$602(Lcom/oneplus/houston/common/client/EventManager;Lcom/oneplus/houston/common/client/AbsEventCallback;)Lcom/oneplus/houston/common/client/AbsEventCallback;
+    invoke-static {v1, v2}, Lcom/oneplus/houston/common/client/EventManager;->access$502(Lcom/oneplus/houston/common/client/EventManager;Lcom/oneplus/houston/common/client/AbsEventCallback;)Lcom/oneplus/houston/common/client/AbsEventCallback;
 
     :goto_1
     monitor-exit v0

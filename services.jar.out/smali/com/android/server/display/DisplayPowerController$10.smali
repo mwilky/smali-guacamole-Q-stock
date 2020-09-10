@@ -1,11 +1,14 @@
 .class Lcom/android/server/display/DisplayPowerController$10;
-.super Landroid/os/Handler;
+.super Ljava/lang/Object;
 .source "DisplayPowerController.java"
+
+# interfaces
+.implements Ljava/lang/Runnable;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/server/display/DisplayPowerController;->initOnlineConfig()Z
+    value = Lcom/android/server/display/DisplayPowerController;->dump(Ljava/io/PrintWriter;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -17,58 +20,32 @@
 # instance fields
 .field final synthetic this$0:Lcom/android/server/display/DisplayPowerController;
 
+.field final synthetic val$pw:Ljava/io/PrintWriter;
+
 
 # direct methods
-.method constructor <init>(Lcom/android/server/display/DisplayPowerController;Landroid/os/Looper;)V
+.method constructor <init>(Lcom/android/server/display/DisplayPowerController;Ljava/io/PrintWriter;)V
     .locals 0
 
     iput-object p1, p0, Lcom/android/server/display/DisplayPowerController$10;->this$0:Lcom/android/server/display/DisplayPowerController;
 
-    invoke-direct {p0, p2}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
+    iput-object p2, p0, Lcom/android/server/display/DisplayPowerController$10;->val$pw:Ljava/io/PrintWriter;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public handleMessage(Landroid/os/Message;)V
-    .locals 3
+.method public run()V
+    .locals 2
 
-    iget v0, p1, Landroid/os/Message;->what:I
+    iget-object v0, p0, Lcom/android/server/display/DisplayPowerController$10;->this$0:Lcom/android/server/display/DisplayPowerController;
 
-    const/4 v1, 0x1
+    iget-object v1, p0, Lcom/android/server/display/DisplayPowerController$10;->val$pw:Ljava/io/PrintWriter;
 
-    if-eq v0, v1, :cond_0
+    invoke-static {v0, v1}, Lcom/android/server/display/DisplayPowerController;->access$1200(Lcom/android/server/display/DisplayPowerController;Ljava/io/PrintWriter;)V
 
-    goto :goto_0
-
-    :cond_0
-    new-instance v0, Lcom/oneplus/config/ConfigGrabber;
-
-    iget-object v1, p0, Lcom/android/server/display/DisplayPowerController$10;->this$0:Lcom/android/server/display/DisplayPowerController;
-
-    invoke-static {v1}, Lcom/android/server/display/DisplayPowerController;->access$1100(Lcom/android/server/display/DisplayPowerController;)Landroid/content/Context;
-
-    move-result-object v1
-
-    invoke-static {}, Lcom/android/server/display/DisplayPowerController;->access$1200()Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-direct {v0, v1, v2}, Lcom/oneplus/config/ConfigGrabber;-><init>(Landroid/content/Context;Ljava/lang/String;)V
-
-    nop
-
-    invoke-virtual {v0}, Lcom/oneplus/config/ConfigGrabber;->grabConfig()Lorg/json/JSONArray;
-
-    move-result-object v1
-
-    iget-object v2, p0, Lcom/android/server/display/DisplayPowerController$10;->this$0:Lcom/android/server/display/DisplayPowerController;
-
-    invoke-static {v2, v1}, Lcom/android/server/display/DisplayPowerController;->access$1300(Lcom/android/server/display/DisplayPowerController;Lorg/json/JSONArray;)V
-
-    nop
-
-    :goto_0
     return-void
 .end method

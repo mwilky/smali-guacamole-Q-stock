@@ -380,7 +380,7 @@
 
     new-array v0, v1, [I
 
-    const/16 v4, 0xce
+    const/16 v4, 0xcf
 
     aput v4, v0, v3
 

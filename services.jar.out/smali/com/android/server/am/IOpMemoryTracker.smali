@@ -10,5 +10,8 @@
 .method public abstract checkIfNeedReport(Lcom/android/server/am/ProcessRecord;)V
 .end method
 
+.method public abstract checkLeakProcess(Lcom/android/server/am/ProcessRecord;)V
+.end method
+
 .method public abstract initAms(Lcom/android/server/am/ActivityManagerService;)V
 .end method

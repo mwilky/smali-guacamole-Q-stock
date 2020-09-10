@@ -1146,7 +1146,7 @@
 .end method
 
 .method private commitUidPendingStateLocked(Lcom/android/server/appop/AppOpsService$UidState;)V
-    .locals 24
+    .locals 20
 
     move-object/from16 v6, p0
 
@@ -1154,7 +1154,7 @@
 
     iget-boolean v0, v7, Lcom/android/server/appop/AppOpsService$UidState;->hasForegroundWatchers:Z
 
-    if-eqz v0, :cond_e
+    if-eqz v0, :cond_c
 
     iget-object v0, v7, Lcom/android/server/appop/AppOpsService$UidState;->foregroundOps:Landroid/util/SparseBooleanArray;
 
@@ -1169,7 +1169,7 @@
     move v9, v0
 
     :goto_0
-    if-ltz v9, :cond_e
+    if-ltz v9, :cond_c
 
     iget-object v0, v7, Lcom/android/server/appop/AppOpsService$UidState;->foregroundOps:Landroid/util/SparseBooleanArray;
 
@@ -1179,7 +1179,7 @@
 
     if-nez v0, :cond_0
 
-    goto/16 :goto_9
+    goto/16 :goto_6
 
     :cond_0
     iget-object v0, v7, Lcom/android/server/appop/AppOpsService$UidState;->foregroundOps:Landroid/util/SparseBooleanArray;
@@ -1200,7 +1200,7 @@
 
     cmp-long v0, v0, v11
 
-    const/4 v13, 0x0
+    const/4 v1, 0x0
 
     if-gtz v0, :cond_1
 
@@ -1209,34 +1209,78 @@
     goto :goto_1
 
     :cond_1
-    move v0, v13
+    move v0, v1
 
     :goto_1
-    move v14, v0
+    move v13, v0
 
     iget v0, v7, Lcom/android/server/appop/AppOpsService$UidState;->pendingState:I
 
-    int-to-long v0, v0
+    int-to-long v2, v0
 
-    cmp-long v0, v0, v11
+    cmp-long v0, v2, v11
 
     if-gtz v0, :cond_2
 
-    move v0, v8
-
-    goto :goto_2
+    move v1, v8
 
     :cond_2
-    move v0, v13
+    move v14, v1
 
-    :goto_2
-    move v15, v0
+    if-ne v13, v14, :cond_3
 
-    if-ne v14, v15, :cond_3
-
-    goto/16 :goto_9
+    goto/16 :goto_6
 
     :cond_3
+    iget-object v0, v7, Lcom/android/server/appop/AppOpsService$UidState;->opModes:Landroid/util/SparseIntArray;
+
+    const/4 v15, 0x4
+
+    if-eqz v0, :cond_4
+
+    iget-object v0, v7, Lcom/android/server/appop/AppOpsService$UidState;->opModes:Landroid/util/SparseIntArray;
+
+    invoke-virtual {v0, v10}, Landroid/util/SparseIntArray;->indexOfKey(I)I
+
+    move-result v0
+
+    if-ltz v0, :cond_4
+
+    iget-object v0, v7, Lcom/android/server/appop/AppOpsService$UidState;->opModes:Landroid/util/SparseIntArray;
+
+    invoke-virtual {v0, v10}, Landroid/util/SparseIntArray;->get(I)I
+
+    move-result v0
+
+    if-ne v0, v15, :cond_4
+
+    iget-object v0, v6, Lcom/android/server/appop/AppOpsService;->mHandler:Landroid/os/Handler;
+
+    sget-object v1, Lcom/android/server/appop/-$$Lambda$AppOpsService$u9c0eEYUUm25QC1meV06FHffZE0;->INSTANCE:Lcom/android/server/appop/-$$Lambda$AppOpsService$u9c0eEYUUm25QC1meV06FHffZE0;
+
+    invoke-static {v10}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v2
+
+    iget v3, v7, Lcom/android/server/appop/AppOpsService$UidState;->uid:I
+
+    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v3
+
+    invoke-static {v8}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object v4
+
+    invoke-static {v1, v6, v2, v3, v4}, Lcom/android/internal/util/function/pooled/PooledLambda;->obtainMessage(Lcom/android/internal/util/function/QuadConsumer;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Landroid/os/Message;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Landroid/os/Handler;->sendMessage(Landroid/os/Message;)Z
+
+    goto/16 :goto_6
+
+    :cond_4
     iget-object v0, v6, Lcom/android/server/appop/AppOpsService;->mOpModeWatchers:Landroid/util/SparseArray;
 
     invoke-virtual {v0, v10}, Landroid/util/SparseArray;->get(I)Ljava/lang/Object;
@@ -1247,7 +1291,7 @@
 
     check-cast v5, Landroid/util/ArraySet;
 
-    if-eqz v5, :cond_d
+    if-eqz v5, :cond_b
 
     invoke-virtual {v5}, Landroid/util/ArraySet;->size()I
 
@@ -1257,8 +1301,8 @@
 
     move v4, v0
 
-    :goto_3
-    if-ltz v4, :cond_c
+    :goto_2
+    if-ltz v4, :cond_a
 
     invoke-virtual {v5, v4}, Landroid/util/ArraySet;->valueAt(I)Ljava/lang/Object;
 
@@ -1272,7 +1316,7 @@
 
     and-int/2addr v0, v8
 
-    if-eqz v0, :cond_b
+    if-eqz v0, :cond_9
 
     iget v0, v7, Lcom/android/server/appop/AppOpsService$UidState;->uid:I
 
@@ -1280,51 +1324,15 @@
 
     move-result v0
 
-    if-nez v0, :cond_4
+    if-nez v0, :cond_5
 
-    move/from16 v19, v4
+    move/from16 v17, v4
 
-    move-object/from16 v21, v5
+    move-object v8, v5
 
-    goto/16 :goto_8
-
-    :cond_4
-    iget-object v0, v7, Lcom/android/server/appop/AppOpsService$UidState;->opModes:Landroid/util/SparseIntArray;
-
-    const/4 v2, 0x4
-
-    if-eqz v0, :cond_5
-
-    iget-object v0, v7, Lcom/android/server/appop/AppOpsService$UidState;->opModes:Landroid/util/SparseIntArray;
-
-    invoke-virtual {v0, v10}, Landroid/util/SparseIntArray;->indexOfKey(I)I
-
-    move-result v0
-
-    if-ltz v0, :cond_5
-
-    iget-object v0, v7, Lcom/android/server/appop/AppOpsService$UidState;->opModes:Landroid/util/SparseIntArray;
-
-    invoke-virtual {v0, v10}, Landroid/util/SparseIntArray;->get(I)I
-
-    move-result v0
-
-    if-ne v0, v2, :cond_5
-
-    move v0, v8
-
-    goto :goto_4
+    goto/16 :goto_5
 
     :cond_5
-    move v0, v13
-
-    :goto_4
-    move/from16 v16, v0
-
-    iget-object v0, v7, Lcom/android/server/appop/AppOpsService$UidState;->pkgOps:Landroid/util/ArrayMap;
-
-    if-eqz v0, :cond_a
-
     iget-object v0, v7, Lcom/android/server/appop/AppOpsService$UidState;->pkgOps:Landroid/util/ArrayMap;
 
     invoke-virtual {v0}, Landroid/util/ArrayMap;->size()I
@@ -1333,14 +1341,14 @@
 
     sub-int/2addr v0, v8
 
-    move v1, v0
+    move v2, v0
 
-    :goto_5
-    if-ltz v1, :cond_9
+    :goto_3
+    if-ltz v2, :cond_8
 
     iget-object v0, v7, Lcom/android/server/appop/AppOpsService$UidState;->pkgOps:Landroid/util/ArrayMap;
 
-    invoke-virtual {v0, v1}, Landroid/util/ArrayMap;->valueAt(I)Ljava/lang/Object;
+    invoke-virtual {v0, v2}, Landroid/util/ArrayMap;->valueAt(I)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -1350,175 +1358,156 @@
 
     move-result-object v0
 
-    move-object/from16 v17, v0
+    move-object/from16 v16, v0
 
-    check-cast v17, Lcom/android/server/appop/AppOpsService$Op;
+    check-cast v16, Lcom/android/server/appop/AppOpsService$Op;
 
-    if-nez v17, :cond_6
+    if-nez v16, :cond_6
 
-    move/from16 v18, v1
+    move/from16 v18, v2
 
-    move/from16 v20, v2
+    move-object/from16 v19, v3
 
-    move-object/from16 v23, v3
+    move/from16 v17, v4
 
-    move/from16 v19, v4
+    move-object v8, v5
 
-    move-object/from16 v21, v5
-
-    goto :goto_7
+    goto :goto_4
 
     :cond_6
-    if-nez v16, :cond_8
-
-    invoke-static/range {v17 .. v17}, Lcom/android/server/appop/AppOpsService$Op;->access$100(Lcom/android/server/appop/AppOpsService$Op;)I
+    invoke-static/range {v16 .. v16}, Lcom/android/server/appop/AppOpsService$Op;->access$100(Lcom/android/server/appop/AppOpsService$Op;)I
 
     move-result v0
 
-    if-ne v0, v2, :cond_7
+    if-ne v0, v15, :cond_7
 
-    goto :goto_6
+    iget-object v1, v6, Lcom/android/server/appop/AppOpsService;->mHandler:Landroid/os/Handler;
 
-    :cond_7
-    move/from16 v18, v1
-
-    move/from16 v20, v2
-
-    move-object/from16 v23, v3
-
-    move/from16 v19, v4
-
-    move-object/from16 v21, v5
-
-    goto :goto_7
-
-    :cond_8
-    :goto_6
-    iget-object v0, v6, Lcom/android/server/appop/AppOpsService;->mHandler:Landroid/os/Handler;
-
-    sget-object v18, Lcom/android/server/appop/-$$Lambda$AppOpsService$FYLTtxqrHmv8Y5UdZ9ybXKsSJhs;->INSTANCE:Lcom/android/server/appop/-$$Lambda$AppOpsService$FYLTtxqrHmv8Y5UdZ9ybXKsSJhs;
+    sget-object v0, Lcom/android/server/appop/-$$Lambda$AppOpsService$FYLTtxqrHmv8Y5UdZ9ybXKsSJhs;->INSTANCE:Lcom/android/server/appop/-$$Lambda$AppOpsService$FYLTtxqrHmv8Y5UdZ9ybXKsSJhs;
 
     invoke-static {v10}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    move-result-object v19
+    move-result-object v17
 
-    iget v2, v7, Lcom/android/server/appop/AppOpsService$UidState;->uid:I
+    iget v8, v7, Lcom/android/server/appop/AppOpsService$UidState;->uid:I
 
-    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    invoke-static {v8}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    move-result-object v21
+    move-result-object v8
 
-    iget-object v2, v7, Lcom/android/server/appop/AppOpsService$UidState;->pkgOps:Landroid/util/ArrayMap;
+    iget-object v15, v7, Lcom/android/server/appop/AppOpsService$UidState;->pkgOps:Landroid/util/ArrayMap;
 
-    invoke-virtual {v2, v1}, Landroid/util/ArrayMap;->keyAt(I)Ljava/lang/Object;
+    invoke-virtual {v15, v2}, Landroid/util/ArrayMap;->keyAt(I)Ljava/lang/Object;
 
-    move-result-object v2
+    move-result-object v15
 
-    move-object/from16 v22, v2
+    check-cast v15, Ljava/lang/String;
 
-    check-cast v22, Ljava/lang/String;
-
-    move-object v2, v0
-
-    move-object/from16 v0, v18
-
-    move/from16 v18, v1
+    move-object v6, v1
 
     move-object/from16 v1, p0
 
-    move-object v8, v2
-
-    const/16 v20, 0x4
+    move/from16 v18, v2
 
     move-object v2, v3
 
-    move-object/from16 v23, v3
+    move-object/from16 v19, v3
 
-    move-object/from16 v3, v19
+    move-object/from16 v3, v17
 
-    move/from16 v19, v4
+    move/from16 v17, v4
 
-    move-object/from16 v4, v21
+    move-object v4, v8
 
-    move-object/from16 v21, v5
+    move-object v8, v5
 
-    move-object/from16 v5, v22
+    move-object v5, v15
 
     invoke-static/range {v0 .. v5}, Lcom/android/internal/util/function/pooled/PooledLambda;->obtainMessage(Lcom/android/internal/util/function/QuintConsumer;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Landroid/os/Message;
 
     move-result-object v0
 
-    invoke-virtual {v8, v0}, Landroid/os/Handler;->sendMessage(Landroid/os/Message;)Z
+    invoke-virtual {v6, v0}, Landroid/os/Handler;->sendMessage(Landroid/os/Message;)Z
 
-    :goto_7
-    add-int/lit8 v1, v18, -0x1
+    goto :goto_4
 
-    move/from16 v4, v19
+    :cond_7
+    move/from16 v18, v2
 
-    move/from16 v2, v20
+    move-object/from16 v19, v3
 
-    move-object/from16 v5, v21
+    move/from16 v17, v4
 
-    move-object/from16 v3, v23
+    move-object v8, v5
+
+    :goto_4
+    add-int/lit8 v2, v18, -0x1
+
+    const/4 v15, 0x4
+
+    move-object/from16 v6, p0
+
+    move-object v5, v8
+
+    move/from16 v4, v17
+
+    move-object/from16 v3, v19
 
     const/4 v8, 0x1
+
+    goto :goto_3
+
+    :cond_8
+    move/from16 v18, v2
+
+    move-object/from16 v19, v3
+
+    move/from16 v17, v4
+
+    move-object v8, v5
 
     goto :goto_5
 
     :cond_9
-    move/from16 v18, v1
+    move-object/from16 v19, v3
 
-    move-object/from16 v23, v3
+    move/from16 v17, v4
 
-    move/from16 v19, v4
+    move-object v8, v5
 
-    move-object/from16 v21, v5
+    :goto_5
+    add-int/lit8 v4, v17, -0x1
 
-    goto :goto_8
+    const/4 v15, 0x4
 
-    :cond_a
-    move-object/from16 v23, v3
+    move-object/from16 v6, p0
 
-    move/from16 v19, v4
-
-    move-object/from16 v21, v5
-
-    goto :goto_8
-
-    :cond_b
-    move-object/from16 v23, v3
-
-    move/from16 v19, v4
-
-    move-object/from16 v21, v5
-
-    :goto_8
-    add-int/lit8 v4, v19, -0x1
-
-    move-object/from16 v5, v21
+    move-object v5, v8
 
     const/4 v8, 0x1
 
-    goto/16 :goto_3
+    goto/16 :goto_2
 
-    :cond_c
-    move/from16 v19, v4
+    :cond_a
+    move/from16 v17, v4
 
-    move-object/from16 v21, v5
+    move-object v8, v5
 
-    goto :goto_9
+    goto :goto_6
 
-    :cond_d
-    move-object/from16 v21, v5
+    :cond_b
+    move-object v8, v5
 
-    :goto_9
+    :goto_6
     add-int/lit8 v9, v9, -0x1
 
     const/4 v8, 0x1
 
+    move-object/from16 v6, p0
+
     goto/16 :goto_0
 
-    :cond_e
+    :cond_c
     iget v0, v7, Lcom/android/server/appop/AppOpsService$UidState;->pendingState:I
 
     iput v0, v7, Lcom/android/server/appop/AppOpsService$UidState;->state:I
@@ -2640,7 +2629,7 @@
 .end method
 
 .method private getUidStateLocked(IZ)Lcom/android/server/appop/AppOpsService$UidState;
-    .locals 5
+    .locals 2
 
     iget-object v0, p0, Lcom/android/server/appop/AppOpsService;->mUidStates:Landroid/util/SparseArray;
 
@@ -2672,44 +2661,8 @@
     goto :goto_0
 
     :cond_1
-    iget-wide v1, v0, Lcom/android/server/appop/AppOpsService$UidState;->pendingStateCommitTime:J
+    invoke-direct {p0, v0}, Lcom/android/server/appop/AppOpsService;->updatePendingStateIfNeededLocked(Lcom/android/server/appop/AppOpsService$UidState;)V
 
-    const-wide/16 v3, 0x0
-
-    cmp-long v1, v1, v3
-
-    if-eqz v1, :cond_3
-
-    iget-wide v1, v0, Lcom/android/server/appop/AppOpsService$UidState;->pendingStateCommitTime:J
-
-    iget-wide v3, p0, Lcom/android/server/appop/AppOpsService;->mLastRealtime:J
-
-    cmp-long v1, v1, v3
-
-    if-gez v1, :cond_2
-
-    invoke-direct {p0, v0}, Lcom/android/server/appop/AppOpsService;->commitUidPendingStateLocked(Lcom/android/server/appop/AppOpsService$UidState;)V
-
-    goto :goto_0
-
-    :cond_2
-    invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
-
-    move-result-wide v1
-
-    iput-wide v1, p0, Lcom/android/server/appop/AppOpsService;->mLastRealtime:J
-
-    iget-wide v1, v0, Lcom/android/server/appop/AppOpsService$UidState;->pendingStateCommitTime:J
-
-    iget-wide v3, p0, Lcom/android/server/appop/AppOpsService;->mLastRealtime:J
-
-    cmp-long v1, v1, v3
-
-    if-gez v1, :cond_3
-
-    invoke-direct {p0, v0}, Lcom/android/server/appop/AppOpsService;->commitUidPendingStateLocked(Lcom/android/server/appop/AppOpsService$UidState;)V
-
-    :cond_3
     :goto_0
     return-object v0
 .end method
@@ -2895,6 +2848,14 @@
     return-void
 .end method
 
+.method public static synthetic lambda$CVMS-lLMRyZYA1tmqvyuOloKBu0(Lcom/android/server/appop/AppOpsService;JI)V
+    .locals 0
+
+    invoke-direct {p0, p1, p2, p3}, Lcom/android/server/appop/AppOpsService;->updatePendingState(JI)V
+
+    return-void
+.end method
+
 .method public static synthetic lambda$FYLTtxqrHmv8Y5UdZ9ybXKsSJhs(Lcom/android/server/appop/AppOpsService;Lcom/android/server/appop/AppOpsService$ModeCallback;IILjava/lang/String;)V
     .locals 0
 
@@ -2955,6 +2916,14 @@
     move-result p0
 
     return p0
+.end method
+
+.method public static synthetic lambda$u9c0eEYUUm25QC1meV06FHffZE0(Lcom/android/server/appop/AppOpsService;IIZ)V
+    .locals 0
+
+    invoke-direct {p0, p1, p2, p3}, Lcom/android/server/appop/AppOpsService;->notifyOpChangedForAllPkgsInUid(IIZ)V
+
+    return-void
 .end method
 
 .method private noteOperationImpl(IILjava/lang/String;)I
@@ -3569,6 +3538,393 @@
     nop
 
     return-void
+.end method
+
+.method private notifyOpChangedForAllPkgsInUid(IIZ)V
+    .locals 17
+
+    move-object/from16 v7, p0
+
+    invoke-static/range {p2 .. p2}, Lcom/android/server/appop/AppOpsService;->getPackagesForUid(I)[Ljava/lang/String;
+
+    move-result-object v8
+
+    const/4 v1, 0x0
+
+    monitor-enter p0
+
+    :try_start_0
+    iget-object v0, v7, Lcom/android/server/appop/AppOpsService;->mOpModeWatchers:Landroid/util/SparseArray;
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_5
+
+    move/from16 v9, p1
+
+    :try_start_1
+    invoke-virtual {v0, v9}, Landroid/util/SparseArray;->get(I)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/util/ArraySet;
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_4
+
+    if-eqz v0, :cond_2
+
+    :try_start_2
+    invoke-virtual {v0}, Landroid/util/ArraySet;->size()I
+
+    move-result v2
+
+    const/4 v3, 0x0
+
+    :goto_0
+    if-ge v3, v2, :cond_2
+
+    invoke-virtual {v0, v3}, Landroid/util/ArraySet;->valueAt(I)Ljava/lang/Object;
+
+    move-result-object v4
+
+    check-cast v4, Lcom/android/server/appop/AppOpsService$ModeCallback;
+
+    if-eqz p3, :cond_0
+
+    iget v5, v4, Lcom/android/server/appop/AppOpsService$ModeCallback;->mFlags:I
+
+    and-int/lit8 v5, v5, 0x1
+
+    if-nez v5, :cond_0
+
+    goto :goto_1
+
+    :cond_0
+    new-instance v5, Landroid/util/ArraySet;
+
+    invoke-direct {v5}, Landroid/util/ArraySet;-><init>()V
+
+    invoke-static {v5, v8}, Ljava/util/Collections;->addAll(Ljava/util/Collection;[Ljava/lang/Object;)Z
+
+    if-nez v1, :cond_1
+
+    new-instance v6, Landroid/util/ArrayMap;
+
+    invoke-direct {v6}, Landroid/util/ArrayMap;-><init>()V
+
+    move-object v1, v6
+
+    :cond_1
+    invoke-virtual {v1, v4, v5}, Landroid/util/ArrayMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    :try_end_2
+    .catchall {:try_start_2 .. :try_end_2} :catchall_0
+
+    :goto_1
+    add-int/lit8 v3, v3, 0x1
+
+    goto :goto_0
+
+    :catchall_0
+    move-exception v0
+
+    move-object/from16 v16, v8
+
+    goto/16 :goto_a
+
+    :cond_2
+    :try_start_3
+    array-length v2, v8
+    :try_end_3
+    .catchall {:try_start_3 .. :try_end_3} :catchall_4
+
+    const/4 v3, 0x0
+
+    move-object v10, v1
+
+    :goto_2
+    if-ge v3, v2, :cond_8
+
+    :try_start_4
+    aget-object v1, v8, v3
+
+    iget-object v4, v7, Lcom/android/server/appop/AppOpsService;->mPackageModeWatchers:Landroid/util/ArrayMap;
+
+    invoke-virtual {v4, v1}, Landroid/util/ArrayMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v4
+
+    check-cast v4, Landroid/util/ArraySet;
+
+    move-object v0, v4
+
+    if-eqz v0, :cond_7
+
+    if-nez v10, :cond_3
+
+    new-instance v4, Landroid/util/ArrayMap;
+
+    invoke-direct {v4}, Landroid/util/ArrayMap;-><init>()V
+    :try_end_4
+    .catchall {:try_start_4 .. :try_end_4} :catchall_2
+
+    goto :goto_3
+
+    :cond_3
+    move-object v4, v10
+
+    :goto_3
+    :try_start_5
+    invoke-virtual {v0}, Landroid/util/ArraySet;->size()I
+
+    move-result v5
+
+    const/4 v6, 0x0
+
+    :goto_4
+    if-ge v6, v5, :cond_6
+
+    invoke-virtual {v0, v6}, Landroid/util/ArraySet;->valueAt(I)Ljava/lang/Object;
+
+    move-result-object v10
+
+    check-cast v10, Lcom/android/server/appop/AppOpsService$ModeCallback;
+
+    if-eqz p3, :cond_4
+
+    iget v11, v10, Lcom/android/server/appop/AppOpsService$ModeCallback;->mFlags:I
+
+    and-int/lit8 v11, v11, 0x1
+
+    if-nez v11, :cond_4
+
+    goto :goto_5
+
+    :cond_4
+    invoke-virtual {v4, v10}, Landroid/util/ArrayMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v11
+
+    check-cast v11, Landroid/util/ArraySet;
+
+    if-nez v11, :cond_5
+
+    new-instance v12, Landroid/util/ArraySet;
+
+    invoke-direct {v12}, Landroid/util/ArraySet;-><init>()V
+
+    move-object v11, v12
+
+    invoke-virtual {v4, v10, v11}, Landroid/util/ArrayMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    :cond_5
+    invoke-virtual {v11, v1}, Landroid/util/ArraySet;->add(Ljava/lang/Object;)Z
+    :try_end_5
+    .catchall {:try_start_5 .. :try_end_5} :catchall_1
+
+    :goto_5
+    add-int/lit8 v6, v6, 0x1
+
+    goto :goto_4
+
+    :cond_6
+    move-object v10, v4
+
+    goto :goto_6
+
+    :catchall_1
+    move-exception v0
+
+    move-object v1, v4
+
+    move-object/from16 v16, v8
+
+    goto/16 :goto_a
+
+    :cond_7
+    :goto_6
+    add-int/lit8 v3, v3, 0x1
+
+    goto :goto_2
+
+    :catchall_2
+    move-exception v0
+
+    move-object/from16 v16, v8
+
+    move-object v1, v10
+
+    goto/16 :goto_a
+
+    :cond_8
+    :try_start_6
+    monitor-exit p0
+    :try_end_6
+    .catchall {:try_start_6 .. :try_end_6} :catchall_3
+
+    if-nez v10, :cond_9
+
+    return-void
+
+    :cond_9
+    const/4 v0, 0x0
+
+    :goto_7
+    invoke-virtual {v10}, Landroid/util/ArrayMap;->size()I
+
+    move-result v1
+
+    if-ge v0, v1, :cond_c
+
+    invoke-virtual {v10, v0}, Landroid/util/ArrayMap;->keyAt(I)Ljava/lang/Object;
+
+    move-result-object v1
+
+    move-object v11, v1
+
+    check-cast v11, Lcom/android/server/appop/AppOpsService$ModeCallback;
+
+    invoke-virtual {v10, v0}, Landroid/util/ArrayMap;->valueAt(I)Ljava/lang/Object;
+
+    move-result-object v1
+
+    move-object v12, v1
+
+    check-cast v12, Landroid/util/ArraySet;
+
+    if-nez v12, :cond_a
+
+    iget-object v13, v7, Lcom/android/server/appop/AppOpsService;->mHandler:Landroid/os/Handler;
+
+    sget-object v1, Lcom/android/server/appop/-$$Lambda$AppOpsService$FYLTtxqrHmv8Y5UdZ9ybXKsSJhs;->INSTANCE:Lcom/android/server/appop/-$$Lambda$AppOpsService$FYLTtxqrHmv8Y5UdZ9ybXKsSJhs;
+
+    invoke-static/range {p1 .. p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v4
+
+    invoke-static/range {p2 .. p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v5
+
+    const/4 v2, 0x0
+
+    move-object v6, v2
+
+    check-cast v6, Ljava/lang/String;
+
+    move-object/from16 v2, p0
+
+    move-object v3, v11
+
+    invoke-static/range {v1 .. v6}, Lcom/android/internal/util/function/pooled/PooledLambda;->obtainMessage(Lcom/android/internal/util/function/QuintConsumer;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Landroid/os/Message;
+
+    move-result-object v1
+
+    invoke-virtual {v13, v1}, Landroid/os/Handler;->sendMessage(Landroid/os/Message;)Z
+
+    move-object/from16 v16, v8
+
+    goto :goto_9
+
+    :cond_a
+    invoke-virtual {v12}, Landroid/util/ArraySet;->size()I
+
+    move-result v13
+
+    const/4 v1, 0x0
+
+    move v14, v1
+
+    :goto_8
+    if-ge v14, v13, :cond_b
+
+    invoke-virtual {v12, v14}, Landroid/util/ArraySet;->valueAt(I)Ljava/lang/Object;
+
+    move-result-object v1
+
+    move-object v15, v1
+
+    check-cast v15, Ljava/lang/String;
+
+    iget-object v6, v7, Lcom/android/server/appop/AppOpsService;->mHandler:Landroid/os/Handler;
+
+    sget-object v1, Lcom/android/server/appop/-$$Lambda$AppOpsService$FYLTtxqrHmv8Y5UdZ9ybXKsSJhs;->INSTANCE:Lcom/android/server/appop/-$$Lambda$AppOpsService$FYLTtxqrHmv8Y5UdZ9ybXKsSJhs;
+
+    invoke-static/range {p1 .. p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v4
+
+    invoke-static/range {p2 .. p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v5
+
+    move-object/from16 v2, p0
+
+    move-object v3, v11
+
+    move-object/from16 v16, v8
+
+    move-object v8, v6
+
+    move-object v6, v15
+
+    invoke-static/range {v1 .. v6}, Lcom/android/internal/util/function/pooled/PooledLambda;->obtainMessage(Lcom/android/internal/util/function/QuintConsumer;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Landroid/os/Message;
+
+    move-result-object v1
+
+    invoke-virtual {v8, v1}, Landroid/os/Handler;->sendMessage(Landroid/os/Message;)Z
+
+    add-int/lit8 v14, v14, 0x1
+
+    move-object/from16 v8, v16
+
+    goto :goto_8
+
+    :cond_b
+    move-object/from16 v16, v8
+
+    :goto_9
+    add-int/lit8 v0, v0, 0x1
+
+    move-object/from16 v8, v16
+
+    goto :goto_7
+
+    :cond_c
+    return-void
+
+    :catchall_3
+    move-exception v0
+
+    move-object/from16 v16, v8
+
+    move-object v1, v10
+
+    goto :goto_a
+
+    :catchall_4
+    move-exception v0
+
+    move-object/from16 v16, v8
+
+    goto :goto_a
+
+    :catchall_5
+    move-exception v0
+
+    move/from16 v9, p1
+
+    move-object/from16 v16, v8
+
+    :goto_a
+    :try_start_7
+    monitor-exit p0
+    :try_end_7
+    .catchall {:try_start_7 .. :try_end_7} :catchall_6
+
+    throw v0
+
+    :catchall_6
+    move-exception v0
+
+    goto :goto_a
 .end method
 
 .method private notifyOpChangedSync(IILjava/lang/String;I)V
@@ -6470,6 +6826,91 @@
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
     throw v0
+.end method
+
+.method private updatePendingState(JI)V
+    .locals 2
+
+    monitor-enter p0
+
+    :try_start_0
+    iget-wide v0, p0, Lcom/android/server/appop/AppOpsService;->mLastRealtime:J
+
+    invoke-static {p1, p2, v0, v1}, Ljava/lang/Long;->max(JJ)J
+
+    move-result-wide v0
+
+    iput-wide v0, p0, Lcom/android/server/appop/AppOpsService;->mLastRealtime:J
+
+    iget-object v0, p0, Lcom/android/server/appop/AppOpsService;->mUidStates:Landroid/util/SparseArray;
+
+    invoke-virtual {v0, p3}, Landroid/util/SparseArray;->get(I)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/android/server/appop/AppOpsService$UidState;
+
+    invoke-direct {p0, v0}, Lcom/android/server/appop/AppOpsService;->updatePendingStateIfNeededLocked(Lcom/android/server/appop/AppOpsService$UidState;)V
+
+    monitor-exit p0
+
+    return-void
+
+    :catchall_0
+    move-exception v0
+
+    monitor-exit p0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    throw v0
+.end method
+
+.method private updatePendingStateIfNeededLocked(Lcom/android/server/appop/AppOpsService$UidState;)V
+    .locals 4
+
+    if-eqz p1, :cond_1
+
+    iget-wide v0, p1, Lcom/android/server/appop/AppOpsService$UidState;->pendingStateCommitTime:J
+
+    const-wide/16 v2, 0x0
+
+    cmp-long v0, v0, v2
+
+    if-eqz v0, :cond_1
+
+    iget-wide v0, p1, Lcom/android/server/appop/AppOpsService$UidState;->pendingStateCommitTime:J
+
+    iget-wide v2, p0, Lcom/android/server/appop/AppOpsService;->mLastRealtime:J
+
+    cmp-long v0, v0, v2
+
+    if-gez v0, :cond_0
+
+    invoke-direct {p0, p1}, Lcom/android/server/appop/AppOpsService;->commitUidPendingStateLocked(Lcom/android/server/appop/AppOpsService$UidState;)V
+
+    goto :goto_0
+
+    :cond_0
+    invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
+
+    move-result-wide v0
+
+    iput-wide v0, p0, Lcom/android/server/appop/AppOpsService;->mLastRealtime:J
+
+    iget-wide v0, p1, Lcom/android/server/appop/AppOpsService$UidState;->pendingStateCommitTime:J
+
+    iget-wide v2, p0, Lcom/android/server/appop/AppOpsService;->mLastRealtime:J
+
+    cmp-long v0, v0, v2
+
+    if-gez v0, :cond_1
+
+    invoke-direct {p0, p1}, Lcom/android/server/appop/AppOpsService;->commitUidPendingStateLocked(Lcom/android/server/appop/AppOpsService$UidState;)V
+
+    :cond_1
+    :goto_0
+    return-void
 .end method
 
 .method private upgradeLocked(I)V
@@ -13945,13 +14386,7 @@
 .end method
 
 .method public setUidMode(III)V
-    .locals 19
-
-    move-object/from16 v7, p0
-
-    move/from16 v8, p2
-
-    move/from16 v9, p3
+    .locals 5
 
     sget-boolean v0, Landroid/os/Build;->DEBUG_ONEPLUS:Z
 
@@ -13965,13 +14400,13 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0, v8}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, p2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     const-string v1, " OP_"
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-static/range {p1 .. p1}, Landroid/app/AppOpsManager;->opToName(I)Ljava/lang/String;
+    invoke-static {p1}, Landroid/app/AppOpsManager;->opToName(I)Ljava/lang/String;
 
     move-result-object v1
 
@@ -13981,7 +14416,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-static/range {p3 .. p3}, Landroid/app/AppOpsManager;->modeToName(I)Ljava/lang/String;
+    invoke-static {p3}, Landroid/app/AppOpsManager;->modeToName(I)Ljava/lang/String;
 
     move-result-object v1
 
@@ -14014,451 +14449,155 @@
 
     move-result v1
 
-    invoke-direct {v7, v0, v1, v8}, Lcom/android/server/appop/AppOpsService;->enforceManageAppOpsModes(III)V
+    invoke-direct {p0, v0, v1, p2}, Lcom/android/server/appop/AppOpsService;->enforceManageAppOpsModes(III)V
 
-    invoke-direct/range {p0 .. p1}, Lcom/android/server/appop/AppOpsService;->verifyIncomingOp(I)V
+    invoke-direct {p0, p1}, Lcom/android/server/appop/AppOpsService;->verifyIncomingOp(I)V
 
-    invoke-static/range {p1 .. p1}, Landroid/app/AppOpsManager;->opToSwitch(I)I
+    invoke-static {p1}, Landroid/app/AppOpsManager;->opToSwitch(I)I
 
-    move-result v10
+    move-result p1
 
     monitor-enter p0
 
     :try_start_0
-    invoke-static {v10}, Landroid/app/AppOpsManager;->opToDefaultMode(I)I
+    invoke-static {p1}, Landroid/app/AppOpsManager;->opToDefaultMode(I)I
 
     move-result v0
 
     const/4 v1, 0x0
 
-    invoke-direct {v7, v8, v1}, Lcom/android/server/appop/AppOpsService;->getUidStateLocked(IZ)Lcom/android/server/appop/AppOpsService$UidState;
+    invoke-direct {p0, p2, v1}, Lcom/android/server/appop/AppOpsService;->getUidStateLocked(IZ)Lcom/android/server/appop/AppOpsService$UidState;
 
     move-result-object v2
 
-    const/4 v11, 0x0
+    const/4 v3, 0x0
 
     if-nez v2, :cond_2
 
-    if-ne v9, v0, :cond_1
+    if-ne p3, v0, :cond_1
 
     monitor-exit p0
 
     return-void
 
     :cond_1
-    new-instance v3, Lcom/android/server/appop/AppOpsService$UidState;
+    new-instance v4, Lcom/android/server/appop/AppOpsService$UidState;
 
-    invoke-direct {v3, v8}, Lcom/android/server/appop/AppOpsService$UidState;-><init>(I)V
+    invoke-direct {v4, p2}, Lcom/android/server/appop/AppOpsService$UidState;-><init>(I)V
 
-    move-object v2, v3
+    move-object v2, v4
 
-    new-instance v3, Landroid/util/SparseIntArray;
+    new-instance v4, Landroid/util/SparseIntArray;
 
-    invoke-direct {v3}, Landroid/util/SparseIntArray;-><init>()V
+    invoke-direct {v4}, Landroid/util/SparseIntArray;-><init>()V
 
-    iput-object v3, v2, Lcom/android/server/appop/AppOpsService$UidState;->opModes:Landroid/util/SparseIntArray;
+    iput-object v4, v2, Lcom/android/server/appop/AppOpsService$UidState;->opModes:Landroid/util/SparseIntArray;
 
-    iget-object v3, v2, Lcom/android/server/appop/AppOpsService$UidState;->opModes:Landroid/util/SparseIntArray;
+    iget-object v4, v2, Lcom/android/server/appop/AppOpsService$UidState;->opModes:Landroid/util/SparseIntArray;
 
-    invoke-virtual {v3, v10, v9}, Landroid/util/SparseIntArray;->put(II)V
+    invoke-virtual {v4, p1, p3}, Landroid/util/SparseIntArray;->put(II)V
 
-    iget-object v3, v7, Lcom/android/server/appop/AppOpsService;->mUidStates:Landroid/util/SparseArray;
+    iget-object v4, p0, Lcom/android/server/appop/AppOpsService;->mUidStates:Landroid/util/SparseArray;
 
-    invoke-virtual {v3, v8, v2}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
+    invoke-virtual {v4, p2, v2}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
 
-    invoke-direct/range {p0 .. p0}, Lcom/android/server/appop/AppOpsService;->scheduleWriteLocked()V
+    invoke-direct {p0}, Lcom/android/server/appop/AppOpsService;->scheduleWriteLocked()V
 
     goto :goto_1
 
     :cond_2
-    iget-object v3, v2, Lcom/android/server/appop/AppOpsService$UidState;->opModes:Landroid/util/SparseIntArray;
+    iget-object v4, v2, Lcom/android/server/appop/AppOpsService$UidState;->opModes:Landroid/util/SparseIntArray;
 
-    if-nez v3, :cond_3
+    if-nez v4, :cond_3
 
-    if-eq v9, v0, :cond_7
+    if-eq p3, v0, :cond_7
 
-    new-instance v3, Landroid/util/SparseIntArray;
+    new-instance v4, Landroid/util/SparseIntArray;
 
-    invoke-direct {v3}, Landroid/util/SparseIntArray;-><init>()V
+    invoke-direct {v4}, Landroid/util/SparseIntArray;-><init>()V
 
-    iput-object v3, v2, Lcom/android/server/appop/AppOpsService$UidState;->opModes:Landroid/util/SparseIntArray;
+    iput-object v4, v2, Lcom/android/server/appop/AppOpsService$UidState;->opModes:Landroid/util/SparseIntArray;
 
-    iget-object v3, v2, Lcom/android/server/appop/AppOpsService$UidState;->opModes:Landroid/util/SparseIntArray;
+    iget-object v4, v2, Lcom/android/server/appop/AppOpsService$UidState;->opModes:Landroid/util/SparseIntArray;
 
-    invoke-virtual {v3, v10, v9}, Landroid/util/SparseIntArray;->put(II)V
+    invoke-virtual {v4, p1, p3}, Landroid/util/SparseIntArray;->put(II)V
 
-    invoke-direct/range {p0 .. p0}, Lcom/android/server/appop/AppOpsService;->scheduleWriteLocked()V
+    invoke-direct {p0}, Lcom/android/server/appop/AppOpsService;->scheduleWriteLocked()V
 
     goto :goto_1
 
     :cond_3
-    iget-object v3, v2, Lcom/android/server/appop/AppOpsService$UidState;->opModes:Landroid/util/SparseIntArray;
+    iget-object v4, v2, Lcom/android/server/appop/AppOpsService$UidState;->opModes:Landroid/util/SparseIntArray;
 
-    invoke-virtual {v3, v10}, Landroid/util/SparseIntArray;->indexOfKey(I)I
+    invoke-virtual {v4, p1}, Landroid/util/SparseIntArray;->indexOfKey(I)I
 
-    move-result v3
+    move-result v4
 
-    if-ltz v3, :cond_4
+    if-ltz v4, :cond_4
 
-    iget-object v3, v2, Lcom/android/server/appop/AppOpsService$UidState;->opModes:Landroid/util/SparseIntArray;
+    iget-object v4, v2, Lcom/android/server/appop/AppOpsService$UidState;->opModes:Landroid/util/SparseIntArray;
 
-    invoke-virtual {v3, v10}, Landroid/util/SparseIntArray;->get(I)I
+    invoke-virtual {v4, p1}, Landroid/util/SparseIntArray;->get(I)I
 
-    move-result v3
+    move-result v4
 
-    if-ne v3, v9, :cond_4
+    if-ne v4, p3, :cond_4
 
     monitor-exit p0
 
     return-void
 
     :cond_4
-    if-ne v9, v0, :cond_5
+    if-ne p3, v0, :cond_5
 
-    iget-object v3, v2, Lcom/android/server/appop/AppOpsService$UidState;->opModes:Landroid/util/SparseIntArray;
+    iget-object v4, v2, Lcom/android/server/appop/AppOpsService$UidState;->opModes:Landroid/util/SparseIntArray;
 
-    invoke-virtual {v3, v10}, Landroid/util/SparseIntArray;->delete(I)V
+    invoke-virtual {v4, p1}, Landroid/util/SparseIntArray;->delete(I)V
 
-    iget-object v3, v2, Lcom/android/server/appop/AppOpsService$UidState;->opModes:Landroid/util/SparseIntArray;
+    iget-object v4, v2, Lcom/android/server/appop/AppOpsService$UidState;->opModes:Landroid/util/SparseIntArray;
 
-    invoke-virtual {v3}, Landroid/util/SparseIntArray;->size()I
+    invoke-virtual {v4}, Landroid/util/SparseIntArray;->size()I
 
-    move-result v3
+    move-result v4
 
-    if-gtz v3, :cond_6
+    if-gtz v4, :cond_6
 
-    iput-object v11, v2, Lcom/android/server/appop/AppOpsService$UidState;->opModes:Landroid/util/SparseIntArray;
+    iput-object v3, v2, Lcom/android/server/appop/AppOpsService$UidState;->opModes:Landroid/util/SparseIntArray;
 
     goto :goto_0
 
     :cond_5
-    iget-object v3, v2, Lcom/android/server/appop/AppOpsService$UidState;->opModes:Landroid/util/SparseIntArray;
+    iget-object v4, v2, Lcom/android/server/appop/AppOpsService$UidState;->opModes:Landroid/util/SparseIntArray;
 
-    invoke-virtual {v3, v10, v9}, Landroid/util/SparseIntArray;->put(II)V
+    invoke-virtual {v4, p1, p3}, Landroid/util/SparseIntArray;->put(II)V
 
     :cond_6
     :goto_0
-    invoke-direct/range {p0 .. p0}, Lcom/android/server/appop/AppOpsService;->scheduleWriteLocked()V
+    invoke-direct {p0}, Lcom/android/server/appop/AppOpsService;->scheduleWriteLocked()V
 
     :cond_7
     :goto_1
-    iget-object v3, v7, Lcom/android/server/appop/AppOpsService;->mOpModeWatchers:Landroid/util/SparseArray;
+    iget-object v4, p0, Lcom/android/server/appop/AppOpsService;->mOpModeWatchers:Landroid/util/SparseArray;
 
-    invoke-virtual {v2, v3}, Lcom/android/server/appop/AppOpsService$UidState;->evalForegroundOps(Landroid/util/SparseArray;)V
+    invoke-virtual {v2, v4}, Lcom/android/server/appop/AppOpsService$UidState;->evalForegroundOps(Landroid/util/SparseArray;)V
 
     monitor-exit p0
     :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_2
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    invoke-static/range {p2 .. p2}, Lcom/android/server/appop/AppOpsService;->getPackagesForUid(I)[Ljava/lang/String;
+    invoke-direct {p0, p1, p2, v1}, Lcom/android/server/appop/AppOpsService;->notifyOpChangedForAllPkgsInUid(IIZ)V
 
-    move-result-object v12
-
-    const/4 v2, 0x0
-
-    monitor-enter p0
-
-    :try_start_1
-    iget-object v0, v7, Lcom/android/server/appop/AppOpsService;->mOpModeWatchers:Landroid/util/SparseArray;
-
-    invoke-virtual {v0, v10}, Landroid/util/SparseArray;->get(I)Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Landroid/util/ArraySet;
-
-    if-eqz v0, :cond_9
-
-    invoke-virtual {v0}, Landroid/util/ArraySet;->size()I
-
-    move-result v3
-
-    const/4 v4, 0x0
-
-    :goto_2
-    if-ge v4, v3, :cond_9
-
-    invoke-virtual {v0, v4}, Landroid/util/ArraySet;->valueAt(I)Ljava/lang/Object;
-
-    move-result-object v5
-
-    check-cast v5, Lcom/android/server/appop/AppOpsService$ModeCallback;
-
-    new-instance v6, Landroid/util/ArraySet;
-
-    invoke-direct {v6}, Landroid/util/ArraySet;-><init>()V
-
-    invoke-static {v6, v12}, Ljava/util/Collections;->addAll(Ljava/util/Collection;[Ljava/lang/Object;)Z
-
-    if-nez v2, :cond_8
-
-    new-instance v13, Landroid/util/ArrayMap;
-
-    invoke-direct {v13}, Landroid/util/ArrayMap;-><init>()V
-
-    move-object v2, v13
-
-    :cond_8
-    invoke-virtual {v2, v5, v6}, Landroid/util/ArrayMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    nop
-
-    add-int/lit8 v4, v4, 0x1
-
-    goto :goto_2
-
-    :cond_9
-    array-length v3, v12
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_1
-
-    move-object v13, v2
-
-    :goto_3
-    if-ge v1, v3, :cond_d
-
-    :try_start_2
-    aget-object v2, v12, v1
-
-    iget-object v4, v7, Lcom/android/server/appop/AppOpsService;->mPackageModeWatchers:Landroid/util/ArrayMap;
-
-    invoke-virtual {v4, v2}, Landroid/util/ArrayMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v4
-
-    check-cast v4, Landroid/util/ArraySet;
-
-    move-object v0, v4
-
-    if-eqz v0, :cond_c
-
-    if-nez v13, :cond_a
-
-    new-instance v4, Landroid/util/ArrayMap;
-
-    invoke-direct {v4}, Landroid/util/ArrayMap;-><init>()V
-
-    move-object v13, v4
-
-    :cond_a
-    invoke-virtual {v0}, Landroid/util/ArraySet;->size()I
-
-    move-result v4
-
-    const/4 v5, 0x0
-
-    :goto_4
-    if-ge v5, v4, :cond_c
-
-    invoke-virtual {v0, v5}, Landroid/util/ArraySet;->valueAt(I)Ljava/lang/Object;
-
-    move-result-object v6
-
-    check-cast v6, Lcom/android/server/appop/AppOpsService$ModeCallback;
-
-    invoke-virtual {v13, v6}, Landroid/util/ArrayMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v14
-
-    check-cast v14, Landroid/util/ArraySet;
-
-    if-nez v14, :cond_b
-
-    new-instance v15, Landroid/util/ArraySet;
-
-    invoke-direct {v15}, Landroid/util/ArraySet;-><init>()V
-
-    move-object v14, v15
-
-    invoke-virtual {v13, v6, v14}, Landroid/util/ArrayMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    :cond_b
-    invoke-virtual {v14, v2}, Landroid/util/ArraySet;->add(Ljava/lang/Object;)Z
-
-    nop
-
-    add-int/lit8 v5, v5, 0x1
-
-    goto :goto_4
-
-    :cond_c
-    add-int/lit8 v1, v1, 0x1
-
-    goto :goto_3
-
-    :cond_d
-    monitor-exit p0
-    :try_end_2
-    .catchall {:try_start_2 .. :try_end_2} :catchall_0
-
-    if-nez v13, :cond_e
-
-    invoke-direct {v7, v10, v8, v11, v9}, Lcom/android/server/appop/AppOpsService;->notifyOpChangedSync(IILjava/lang/String;I)V
-
-    return-void
-
-    :cond_e
-    const/4 v0, 0x0
-
-    :goto_5
-    invoke-virtual {v13}, Landroid/util/ArrayMap;->size()I
-
-    move-result v1
-
-    if-ge v0, v1, :cond_11
-
-    invoke-virtual {v13, v0}, Landroid/util/ArrayMap;->keyAt(I)Ljava/lang/Object;
-
-    move-result-object v1
-
-    move-object v14, v1
-
-    check-cast v14, Lcom/android/server/appop/AppOpsService$ModeCallback;
-
-    invoke-virtual {v13, v0}, Landroid/util/ArrayMap;->valueAt(I)Ljava/lang/Object;
-
-    move-result-object v1
-
-    move-object v15, v1
-
-    check-cast v15, Landroid/util/ArraySet;
-
-    if-nez v15, :cond_f
-
-    iget-object v6, v7, Lcom/android/server/appop/AppOpsService;->mHandler:Landroid/os/Handler;
-
-    sget-object v1, Lcom/android/server/appop/-$$Lambda$AppOpsService$FYLTtxqrHmv8Y5UdZ9ybXKsSJhs;->INSTANCE:Lcom/android/server/appop/-$$Lambda$AppOpsService$FYLTtxqrHmv8Y5UdZ9ybXKsSJhs;
-
-    invoke-static {v10}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v4
-
-    invoke-static/range {p2 .. p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v5
-
-    move-object/from16 v16, v11
-
-    check-cast v16, Ljava/lang/String;
-
-    move-object/from16 v2, p0
-
-    move-object v3, v14
-
-    move-object v11, v6
-
-    move-object/from16 v6, v16
-
-    invoke-static/range {v1 .. v6}, Lcom/android/internal/util/function/pooled/PooledLambda;->obtainMessage(Lcom/android/internal/util/function/QuintConsumer;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Landroid/os/Message;
-
-    move-result-object v1
-
-    invoke-virtual {v11, v1}, Landroid/os/Handler;->sendMessage(Landroid/os/Message;)Z
-
-    goto :goto_7
-
-    :cond_f
-    invoke-virtual {v15}, Landroid/util/ArraySet;->size()I
-
-    move-result v11
-
-    const/4 v1, 0x0
-
-    move v6, v1
-
-    :goto_6
-    if-ge v6, v11, :cond_10
-
-    invoke-virtual {v15, v6}, Landroid/util/ArraySet;->valueAt(I)Ljava/lang/Object;
-
-    move-result-object v1
-
-    move-object/from16 v16, v1
-
-    check-cast v16, Ljava/lang/String;
-
-    iget-object v5, v7, Lcom/android/server/appop/AppOpsService;->mHandler:Landroid/os/Handler;
-
-    sget-object v1, Lcom/android/server/appop/-$$Lambda$AppOpsService$FYLTtxqrHmv8Y5UdZ9ybXKsSJhs;->INSTANCE:Lcom/android/server/appop/-$$Lambda$AppOpsService$FYLTtxqrHmv8Y5UdZ9ybXKsSJhs;
-
-    invoke-static {v10}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v4
-
-    invoke-static/range {p2 .. p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v17
-
-    move-object/from16 v2, p0
-
-    move-object v3, v14
-
-    move/from16 v18, v11
-
-    move-object v11, v5
-
-    move-object/from16 v5, v17
-
-    move/from16 v17, v6
-
-    move-object/from16 v6, v16
-
-    invoke-static/range {v1 .. v6}, Lcom/android/internal/util/function/pooled/PooledLambda;->obtainMessage(Lcom/android/internal/util/function/QuintConsumer;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Landroid/os/Message;
-
-    move-result-object v1
-
-    invoke-virtual {v11, v1}, Landroid/os/Handler;->sendMessage(Landroid/os/Message;)Z
-
-    add-int/lit8 v6, v17, 0x1
-
-    move/from16 v11, v18
-
-    goto :goto_6
-
-    :cond_10
-    move/from16 v17, v6
-
-    move/from16 v18, v11
-
-    :goto_7
-    add-int/lit8 v0, v0, 0x1
-
-    const/4 v11, 0x0
-
-    goto :goto_5
-
-    :cond_11
-    const/4 v0, 0x0
-
-    invoke-direct {v7, v10, v8, v0, v9}, Lcom/android/server/appop/AppOpsService;->notifyOpChangedSync(IILjava/lang/String;I)V
+    invoke-direct {p0, p1, p2, v3, p3}, Lcom/android/server/appop/AppOpsService;->notifyOpChangedSync(IILjava/lang/String;I)V
 
     return-void
 
     :catchall_0
     move-exception v0
 
-    move-object v2, v13
-
-    goto :goto_8
-
-    :catchall_1
-    move-exception v0
-
-    :goto_8
-    :try_start_3
+    :try_start_1
     monitor-exit p0
-    :try_end_3
-    .catchall {:try_start_3 .. :try_end_3} :catchall_1
-
-    throw v0
-
-    :catchall_2
-    move-exception v0
-
-    :try_start_4
-    monitor-exit p0
-    :try_end_4
-    .catchall {:try_start_4 .. :try_end_4} :catchall_2
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     throw v0
 .end method
@@ -16272,6 +16411,30 @@
     add-long/2addr v7, v5
 
     iput-wide v7, v3, Lcom/android/server/appop/AppOpsService$UidState;->pendingStateCommitTime:J
+
+    iget-object v9, v1, Lcom/android/server/appop/AppOpsService;->mHandler:Landroid/os/Handler;
+
+    sget-object v11, Lcom/android/server/appop/-$$Lambda$AppOpsService$CVMS-lLMRyZYA1tmqvyuOloKBu0;->INSTANCE:Lcom/android/server/appop/-$$Lambda$AppOpsService$CVMS-lLMRyZYA1tmqvyuOloKBu0;
+
+    const-wide/16 v12, 0x1
+
+    add-long v14, v7, v12
+
+    invoke-static {v14, v15}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+
+    move-result-object v14
+
+    invoke-static/range {p1 .. p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v15
+
+    invoke-static {v11, v1, v14, v15}, Lcom/android/internal/util/function/pooled/PooledLambda;->obtainMessage(Lcom/android/internal/util/function/TriConsumer;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Landroid/os/Message;
+
+    move-result-object v11
+
+    add-long/2addr v12, v5
+
+    invoke-virtual {v9, v11, v12, v13}, Landroid/os/Handler;->sendMessageDelayed(Landroid/os/Message;J)Z
 
     goto :goto_2
 

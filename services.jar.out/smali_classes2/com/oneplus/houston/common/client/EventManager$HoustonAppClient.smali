@@ -47,11 +47,7 @@
         }
     .end annotation
 
-    iget-object v0, p0, Lcom/oneplus/houston/common/client/EventManager$HoustonAppClient;->this$0:Lcom/oneplus/houston/common/client/EventManager;
-
-    invoke-static {v0}, Lcom/oneplus/houston/common/client/EventManager;->access$000(Lcom/oneplus/houston/common/client/EventManager;)Ljava/lang/String;
-
-    move-result-object v0
+    const-string v0, "EventManager"
 
     const-string v1, "onResult Event, return back "
 
@@ -59,7 +55,7 @@
 
     iget-object v0, p0, Lcom/oneplus/houston/common/client/EventManager$HoustonAppClient;->this$0:Lcom/oneplus/houston/common/client/EventManager;
 
-    invoke-static {v0}, Lcom/oneplus/houston/common/client/EventManager;->access$100(Lcom/oneplus/houston/common/client/EventManager;)Ljava/util/ArrayList;
+    invoke-static {v0}, Lcom/oneplus/houston/common/client/EventManager;->access$000(Lcom/oneplus/houston/common/client/EventManager;)Ljava/util/ArrayList;
 
     move-result-object v0
 
@@ -71,7 +67,7 @@
     :try_start_0
     iget-object v2, p0, Lcom/oneplus/houston/common/client/EventManager$HoustonAppClient;->this$0:Lcom/oneplus/houston/common/client/EventManager;
 
-    invoke-static {v2}, Lcom/oneplus/houston/common/client/EventManager;->access$100(Lcom/oneplus/houston/common/client/EventManager;)Ljava/util/ArrayList;
+    invoke-static {v2}, Lcom/oneplus/houston/common/client/EventManager;->access$000(Lcom/oneplus/houston/common/client/EventManager;)Ljava/util/ArrayList;
 
     move-result-object v2
 
@@ -83,7 +79,7 @@
 
     iget-object v2, p0, Lcom/oneplus/houston/common/client/EventManager$HoustonAppClient;->this$0:Lcom/oneplus/houston/common/client/EventManager;
 
-    invoke-static {v2}, Lcom/oneplus/houston/common/client/EventManager;->access$100(Lcom/oneplus/houston/common/client/EventManager;)Ljava/util/ArrayList;
+    invoke-static {v2}, Lcom/oneplus/houston/common/client/EventManager;->access$000(Lcom/oneplus/houston/common/client/EventManager;)Ljava/util/ArrayList;
 
     move-result-object v2
 
@@ -97,7 +93,7 @@
 
     iget-object v3, p0, Lcom/oneplus/houston/common/client/EventManager$HoustonAppClient;->this$0:Lcom/oneplus/houston/common/client/EventManager;
 
-    invoke-static {v3, v2, p1}, Lcom/oneplus/houston/common/client/EventManager;->access$200(Lcom/oneplus/houston/common/client/EventManager;Lcom/oneplus/houston/common/client/AbsEventCallback;Lcom/oneplus/houston/common/client/Event;)Z
+    invoke-static {v3, v2, p1}, Lcom/oneplus/houston/common/client/EventManager;->access$100(Lcom/oneplus/houston/common/client/EventManager;Lcom/oneplus/houston/common/client/AbsEventCallback;Lcom/oneplus/houston/common/client/Event;)Z
 
     move-result v3
 
@@ -110,11 +106,7 @@
     goto :goto_1
 
     :cond_0
-    iget-object v4, p0, Lcom/oneplus/houston/common/client/EventManager$HoustonAppClient;->this$0:Lcom/oneplus/houston/common/client/EventManager;
-
-    invoke-static {v4}, Lcom/oneplus/houston/common/client/EventManager;->access$000(Lcom/oneplus/houston/common/client/EventManager;)Ljava/lang/String;
-
-    move-result-object v4
+    const-string v4, "EventManager"
 
     const-string v5, "Have not reached the threshold"
 
@@ -171,11 +163,7 @@
         }
     .end annotation
 
-    iget-object v0, p0, Lcom/oneplus/houston/common/client/EventManager$HoustonAppClient;->this$0:Lcom/oneplus/houston/common/client/EventManager;
-
-    invoke-static {v0}, Lcom/oneplus/houston/common/client/EventManager;->access$000(Lcom/oneplus/houston/common/client/EventManager;)Ljava/lang/String;
-
-    move-result-object v0
+    const-string v0, "EventManager"
 
     const-string v1, "sendCommand data, return back "
 
