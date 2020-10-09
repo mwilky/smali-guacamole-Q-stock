@@ -43,7 +43,7 @@
 
     if-nez v0, :cond_1
 
-    sget-boolean v0, Lcom/oneplus/server/DynamicVsyncManager;->Gja:Z
+    sget-boolean v0, Lcom/oneplus/server/DynamicVsyncManager;->Rja:Z
 
     if-nez v0, :cond_0
 

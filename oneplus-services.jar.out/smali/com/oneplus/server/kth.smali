@@ -10,9 +10,9 @@
 
 .field public static final TAG:Ljava/lang/String; = "DozeManager"
 
-.field private static Xja:Landroid/app/PendingIntent; = null
+.field private static hka:Landroid/app/PendingIntent; = null
 
-.field private static final Yja:Ljava/lang/String; = "com.oneplus.android.screenOffCheckProcessState"
+.field private static final ika:Ljava/lang/String; = "com.oneplus.android.screenOffCheckProcessState"
 
 .field private static mAlarmManager:Landroid/app/AlarmManager; = null
 
@@ -20,13 +20,13 @@
 
 .field private static mScreenOffIntent:Landroid/content/Intent; = null
 
-.field private static final qp:Ljava/lang/String; = "deviceidle"
+.field private static screenOffCheckDelayTime:J = 0x0L
 
-.field private static screenOffCheckDelayTime:J
+.field private static final zp:Ljava/lang/String; = "deviceidle"
 
 
 # instance fields
-.field Bd:Landroid/content/BroadcastReceiver;
+.field Hd:Landroid/content/BroadcastReceiver;
 
 .field private mActivityManager:Lcom/android/server/am/ActivityManagerService;
 
@@ -63,7 +63,7 @@
 
     invoke-direct {v0, p0}, Lcom/oneplus/server/cno;-><init>(Lcom/oneplus/server/kth;)V
 
-    iput-object v0, p0, Lcom/oneplus/server/kth;->Bd:Landroid/content/BroadcastReceiver;
+    iput-object v0, p0, Lcom/oneplus/server/kth;->Hd:Landroid/content/BroadcastReceiver;
 
     const-string v0, "deviceidle"
 
@@ -78,6 +78,194 @@
     iput-object v0, p0, Lcom/oneplus/server/kth;->mDeviceIdleService:Landroid/os/IDeviceIdleController;
 
     return-void
+.end method
+
+.method private Ac(I)Z
+    .locals 4
+
+    const-string v0, "DozeManager"
+
+    :try_start_0
+    iget-object v1, p0, Lcom/oneplus/server/kth;->mDeviceIdleService:Landroid/os/IDeviceIdleController;
+
+    if-eqz v1, :cond_1
+
+    iget-object v1, p0, Lcom/oneplus/server/kth;->mDeviceIdleService:Landroid/os/IDeviceIdleController;
+
+    invoke-interface {v1}, Landroid/os/IDeviceIdleController;->getAppIdUserWhitelist()[I
+
+    move-result-object v1
+
+    invoke-static {v1, p1}, Ljava/util/Arrays;->binarySearch([II)I
+
+    move-result v1
+    :try_end_0
+    .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
+
+    const/4 v2, 0x1
+
+    const-string v3, "checkWhiteUid uid="
+
+    if-ltz v1, :cond_0
+
+    :try_start_1
+    new-instance p0, Ljava/lang/StringBuilder;
+
+    invoke-direct {p0}, Ljava/lang/StringBuilder;-><init>()V
+
+    invoke-virtual {p0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    const-string p1, " is in whiteList!"
+
+    invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p0
+
+    invoke-static {v0, p0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    return v2
+
+    :cond_0
+    iget-object p0, p0, Lcom/oneplus/server/kth;->mDeviceIdleService:Landroid/os/IDeviceIdleController;
+
+    invoke-interface {p0}, Landroid/os/IDeviceIdleController;->getAppIdTempWhitelist()[I
+
+    move-result-object p0
+
+    invoke-static {p0, p1}, Ljava/util/Arrays;->binarySearch([II)I
+
+    move-result p0
+
+    if-ltz p0, :cond_1
+
+    new-instance p0, Ljava/lang/StringBuilder;
+
+    invoke-direct {p0}, Ljava/lang/StringBuilder;-><init>()V
+
+    invoke-virtual {p0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    const-string p1, " is in tempWhiteList!"
+
+    invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p0
+
+    invoke-static {v0, p0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+    :try_end_1
+    .catch Landroid/os/RemoteException; {:try_start_1 .. :try_end_1} :catch_0
+
+    return v2
+
+    :catch_0
+    move-exception p0
+
+    invoke-virtual {p0}, Landroid/os/RemoteException;->getMessage()Ljava/lang/String;
+
+    move-result-object p0
+
+    invoke-static {v0, p0}, Landroid/util/Slog;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    :cond_1
+    const/4 p0, 0x0
+
+    return p0
+.end method
+
+.method private An()[Ljava/lang/String;
+    .locals 2
+
+    iget-object v0, p0, Lcom/oneplus/server/kth;->mAudioManager:Landroid/media/AudioManager;
+
+    if-eqz v0, :cond_0
+
+    const-string v1, "get_uid"
+
+    invoke-virtual {v0, v1}, Landroid/media/AudioManager;->getParameters(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
+
+    goto :goto_0
+
+    :cond_0
+    const-string v0, ":0"
+
+    :goto_0
+    invoke-direct {p0, v0}, Lcom/oneplus/server/kth;->Pc(Ljava/lang/String;)[Ljava/lang/String;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method private Bc(I)V
+    .locals 5
+
+    iget-object v0, p0, Lcom/oneplus/server/kth;->mActivityManager:Lcom/android/server/am/ActivityManagerService;
+
+    if-nez v0, :cond_0
+
+    return-void
+
+    :cond_0
+    invoke-static {p1}, Lcom/android/server/am/AppRecordManager;->getPackageNameFromUid(I)Ljava/lang/String;
+
+    move-result-object v0
+
+    iget-object v1, p0, Lcom/oneplus/server/kth;->mActivityManager:Lcom/android/server/am/ActivityManagerService;
+
+    monitor-enter v1
+
+    :try_start_0
+    const-string v2, "DozeManager"
+
+    new-instance v3, Ljava/lang/StringBuilder;
+
+    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v4, "forceStopApplication: silent="
+
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v3, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    const-string p1, ", "
+
+    invoke-virtual {v3, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-static {v2, p1}, Landroid/util/Slog;->i(Ljava/lang/String;Ljava/lang/String;)I
+
+    iget-object p0, p0, Lcom/oneplus/server/kth;->mActivityManager:Lcom/android/server/am/ActivityManagerService;
+
+    const/4 p1, 0x0
+
+    invoke-virtual {p0, v0, p1}, Lcom/android/server/am/ActivityManagerService;->forceStopPackage(Ljava/lang/String;I)V
+
+    monitor-exit v1
+
+    return-void
+
+    :catchall_0
+    move-exception p0
+
+    monitor-exit v1
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    throw p0
 .end method
 
 .method private Pc(Ljava/lang/String;)[Ljava/lang/String;
@@ -150,7 +338,7 @@
 .method static synthetic access$100()Landroid/app/PendingIntent;
     .locals 1
 
-    sget-object v0, Lcom/oneplus/server/kth;->Xja:Landroid/app/PendingIntent;
+    sget-object v0, Lcom/oneplus/server/kth;->hka:Landroid/app/PendingIntent;
 
     return-object v0
 .end method
@@ -253,7 +441,7 @@
     return p0
 .end method
 
-.method private rt()[Ljava/lang/String;
+.method private tt()[Ljava/lang/String;
     .locals 2
 
     iget-object v0, p0, Lcom/oneplus/server/kth;->mAudioManager:Landroid/media/AudioManager;
@@ -279,10 +467,10 @@
     return-object p0
 .end method
 
-.method private st()V
+.method private ut()V
     .locals 4
 
-    invoke-direct {p0}, Lcom/oneplus/server/kth;->rt()[Ljava/lang/String;
+    invoke-direct {p0}, Lcom/oneplus/server/kth;->tt()[Ljava/lang/String;
 
     move-result-object v0
 
@@ -375,7 +563,7 @@
 
     if-lt v2, v3, :cond_2
 
-    invoke-direct {p0, v2}, Lcom/oneplus/server/kth;->yc(I)Z
+    invoke-direct {p0, v2}, Lcom/oneplus/server/kth;->Ac(I)Z
 
     move-result v3
 
@@ -387,7 +575,7 @@
 
     if-nez v3, :cond_2
 
-    invoke-direct {p0, v2}, Lcom/oneplus/server/kth;->zc(I)V
+    invoke-direct {p0, v2}, Lcom/oneplus/server/kth;->Bc(I)V
 
     :cond_2
     :goto_1
@@ -397,131 +585,6 @@
 
     :cond_3
     return-void
-.end method
-
-.method private xn()[Ljava/lang/String;
-    .locals 2
-
-    iget-object v0, p0, Lcom/oneplus/server/kth;->mAudioManager:Landroid/media/AudioManager;
-
-    if-eqz v0, :cond_0
-
-    const-string v1, "get_uid"
-
-    invoke-virtual {v0, v1}, Landroid/media/AudioManager;->getParameters(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v0
-
-    goto :goto_0
-
-    :cond_0
-    const-string v0, ":0"
-
-    :goto_0
-    invoke-direct {p0, v0}, Lcom/oneplus/server/kth;->Pc(Ljava/lang/String;)[Ljava/lang/String;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method private yc(I)Z
-    .locals 4
-
-    const-string v0, "DozeManager"
-
-    :try_start_0
-    iget-object v1, p0, Lcom/oneplus/server/kth;->mDeviceIdleService:Landroid/os/IDeviceIdleController;
-
-    if-eqz v1, :cond_1
-
-    iget-object v1, p0, Lcom/oneplus/server/kth;->mDeviceIdleService:Landroid/os/IDeviceIdleController;
-
-    invoke-interface {v1}, Landroid/os/IDeviceIdleController;->getAppIdUserWhitelist()[I
-
-    move-result-object v1
-
-    invoke-static {v1, p1}, Ljava/util/Arrays;->binarySearch([II)I
-
-    move-result v1
-    :try_end_0
-    .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
-
-    const/4 v2, 0x1
-
-    const-string v3, "checkWhiteUid uid="
-
-    if-ltz v1, :cond_0
-
-    :try_start_1
-    new-instance p0, Ljava/lang/StringBuilder;
-
-    invoke-direct {p0}, Ljava/lang/StringBuilder;-><init>()V
-
-    invoke-virtual {p0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    const-string p1, " is in whiteList!"
-
-    invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p0
-
-    invoke-static {v0, p0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    return v2
-
-    :cond_0
-    iget-object p0, p0, Lcom/oneplus/server/kth;->mDeviceIdleService:Landroid/os/IDeviceIdleController;
-
-    invoke-interface {p0}, Landroid/os/IDeviceIdleController;->getAppIdTempWhitelist()[I
-
-    move-result-object p0
-
-    invoke-static {p0, p1}, Ljava/util/Arrays;->binarySearch([II)I
-
-    move-result p0
-
-    if-ltz p0, :cond_1
-
-    new-instance p0, Ljava/lang/StringBuilder;
-
-    invoke-direct {p0}, Ljava/lang/StringBuilder;-><init>()V
-
-    invoke-virtual {p0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    const-string p1, " is in tempWhiteList!"
-
-    invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p0
-
-    invoke-static {v0, p0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
-    :try_end_1
-    .catch Landroid/os/RemoteException; {:try_start_1 .. :try_end_1} :catch_0
-
-    return v2
-
-    :catch_0
-    move-exception p0
-
-    invoke-virtual {p0}, Landroid/os/RemoteException;->getMessage()Ljava/lang/String;
-
-    move-result-object p0
-
-    invoke-static {v0, p0}, Landroid/util/Slog;->e(Ljava/lang/String;Ljava/lang/String;)I
-
-    :cond_1
-    const/4 p0, 0x0
-
-    return p0
 .end method
 
 .method private you(Landroid/content/Context;Lcom/android/server/am/ActivityManagerService;)V
@@ -577,78 +640,15 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/oneplus/server/kth;->Xja:Landroid/app/PendingIntent;
+    sput-object v0, Lcom/oneplus/server/kth;->hka:Landroid/app/PendingIntent;
 
     invoke-virtual {p2, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
-    iget-object p0, p0, Lcom/oneplus/server/kth;->Bd:Landroid/content/BroadcastReceiver;
+    iget-object p0, p0, Lcom/oneplus/server/kth;->Hd:Landroid/content/BroadcastReceiver;
 
     invoke-virtual {p1, p0, p2}, Landroid/content/Context;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
 
     return-void
-.end method
-
-.method private zc(I)V
-    .locals 5
-
-    iget-object v0, p0, Lcom/oneplus/server/kth;->mActivityManager:Lcom/android/server/am/ActivityManagerService;
-
-    if-nez v0, :cond_0
-
-    return-void
-
-    :cond_0
-    invoke-static {p1}, Lcom/android/server/am/AppRecordManager;->getPackageNameFromUid(I)Ljava/lang/String;
-
-    move-result-object v0
-
-    iget-object v1, p0, Lcom/oneplus/server/kth;->mActivityManager:Lcom/android/server/am/ActivityManagerService;
-
-    monitor-enter v1
-
-    :try_start_0
-    const-string v2, "DozeManager"
-
-    new-instance v3, Ljava/lang/StringBuilder;
-
-    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v4, "forceStopApplication: silent="
-
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v3, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    const-string p1, ", "
-
-    invoke-virtual {v3, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p1
-
-    invoke-static {v2, p1}, Landroid/util/Slog;->i(Ljava/lang/String;Ljava/lang/String;)I
-
-    iget-object p0, p0, Lcom/oneplus/server/kth;->mActivityManager:Lcom/android/server/am/ActivityManagerService;
-
-    const/4 p1, 0x0
-
-    invoke-virtual {p0, v0, p1}, Lcom/android/server/am/ActivityManagerService;->forceStopPackage(Ljava/lang/String;I)V
-
-    monitor-exit v1
-
-    return-void
-
-    :catchall_0
-    move-exception p0
-
-    monitor-exit v1
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    throw p0
 .end method
 
 .method public static zta(Landroid/content/Context;Lcom/android/server/am/ActivityManagerService;)V
@@ -666,7 +666,7 @@
 .method static synthetic zta(Lcom/oneplus/server/kth;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/oneplus/server/kth;->st()V
+    invoke-direct {p0}, Lcom/oneplus/server/kth;->ut()V
 
     return-void
 .end method

@@ -92,7 +92,7 @@
 
     if-eqz v0, :cond_0
 
-    invoke-virtual {p1}, Lcom/oneplus/android/server/display/bio;->He()Lsis/you/you/zta/zta/zta;
+    invoke-virtual {p1}, Lcom/oneplus/android/server/display/bio;->Je()Lsis/you/you/zta/zta/zta;
 
     move-result-object v0
 
@@ -108,7 +108,7 @@
 
     iget-object p0, p0, Lcom/oneplus/android/server/display/ibl;->mClient:Lsis/you/you/zta/zta/you;
 
-    invoke-virtual {p1}, Lcom/oneplus/android/server/display/bio;->He()Lsis/you/you/zta/zta/zta;
+    invoke-virtual {p1}, Lcom/oneplus/android/server/display/bio;->Je()Lsis/you/you/zta/zta/zta;
 
     move-result-object p1
 

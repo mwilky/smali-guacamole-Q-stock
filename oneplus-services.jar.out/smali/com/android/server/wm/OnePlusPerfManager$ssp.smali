@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field private vR:Ljava/util/HashSet;
+.field private JR:Ljava/util/HashSet;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/HashSet<",
@@ -36,7 +36,7 @@
 
     invoke-direct {v0}, Ljava/util/HashSet;-><init>()V
 
-    iput-object v0, p0, Lcom/android/server/wm/OnePlusPerfManager$ssp;->vR:Ljava/util/HashSet;
+    iput-object v0, p0, Lcom/android/server/wm/OnePlusPerfManager$ssp;->JR:Ljava/util/HashSet;
 
     return-void
 .end method
@@ -49,7 +49,7 @@
     const/4 v1, 0x0
 
     :try_start_0
-    iget-object v2, p0, Lcom/android/server/wm/OnePlusPerfManager$ssp;->vR:Ljava/util/HashSet;
+    iget-object v2, p0, Lcom/android/server/wm/OnePlusPerfManager$ssp;->JR:Ljava/util/HashSet;
 
     monitor-enter v2
     :try_end_0
@@ -57,7 +57,7 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_2
 
     :try_start_1
-    iget-object p0, p0, Lcom/android/server/wm/OnePlusPerfManager$ssp;->vR:Ljava/util/HashSet;
+    iget-object p0, p0, Lcom/android/server/wm/OnePlusPerfManager$ssp;->JR:Ljava/util/HashSet;
 
     invoke-virtual {p0}, Ljava/util/HashSet;->iterator()Ljava/util/Iterator;
 
@@ -175,14 +175,14 @@
     if-eqz p1, :cond_2
 
     :try_start_4
-    invoke-virtual {v3}, Lcom/android/server/wm/OnePlusPerfManager$cno;->ge()Ljava/lang/String;
+    invoke-virtual {v3}, Lcom/android/server/wm/OnePlusPerfManager$cno;->he()Ljava/lang/String;
 
     move-result-object v1
 
     goto :goto_2
 
     :cond_2
-    invoke-virtual {v3}, Lcom/android/server/wm/OnePlusPerfManager$cno;->ie()Ljava/lang/String;
+    invoke-virtual {v3}, Lcom/android/server/wm/OnePlusPerfManager$cno;->je()Ljava/lang/String;
 
     move-result-object v1
 
@@ -450,12 +450,12 @@
 .method public zta(Lcom/android/server/wm/OnePlusPerfManager$cno;)V
     .locals 1
 
-    iget-object v0, p0, Lcom/android/server/wm/OnePlusPerfManager$ssp;->vR:Ljava/util/HashSet;
+    iget-object v0, p0, Lcom/android/server/wm/OnePlusPerfManager$ssp;->JR:Ljava/util/HashSet;
 
     monitor-enter v0
 
     :try_start_0
-    iget-object p0, p0, Lcom/android/server/wm/OnePlusPerfManager$ssp;->vR:Ljava/util/HashSet;
+    iget-object p0, p0, Lcom/android/server/wm/OnePlusPerfManager$ssp;->JR:Ljava/util/HashSet;
 
     invoke-virtual {p0, p1}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 

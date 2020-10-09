@@ -13,7 +13,7 @@
 
 
 # instance fields
-.field private Ax:Ljava/util/HashSet;
+.field private Jx:Ljava/util/HashSet;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/HashSet<",
@@ -23,7 +23,7 @@
     .end annotation
 .end field
 
-.field private Bx:Ljava/util/HashSet;
+.field private Kx:Ljava/util/HashSet;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/HashSet<",
@@ -58,7 +58,7 @@
 .method public forForeground(Ljava/lang/String;I)I
     .locals 0
 
-    iget-object p0, p0, Lcom/android/server/am/t;->Bx:Ljava/util/HashSet;
+    iget-object p0, p0, Lcom/android/server/am/t;->Kx:Ljava/util/HashSet;
 
     if-eqz p0, :cond_0
 
@@ -81,7 +81,7 @@
 .method public forImportant(Ljava/lang/String;I)I
     .locals 0
 
-    iget-object p0, p0, Lcom/android/server/am/t;->Ax:Ljava/util/HashSet;
+    iget-object p0, p0, Lcom/android/server/am/t;->Jx:Ljava/util/HashSet;
 
     if-eqz p0, :cond_0
 
@@ -133,7 +133,7 @@
 
     invoke-direct {v0, v2}, Ljava/util/HashSet;-><init>(Ljava/util/Collection;)V
 
-    iput-object v0, p0, Lcom/android/server/am/t;->Ax:Ljava/util/HashSet;
+    iput-object v0, p0, Lcom/android/server/am/t;->Jx:Ljava/util/HashSet;
 
     new-instance v0, Ljava/util/HashSet;
 
@@ -153,13 +153,13 @@
 
     invoke-direct {v0, p1}, Ljava/util/HashSet;-><init>(Ljava/util/Collection;)V
 
-    iput-object v0, p0, Lcom/android/server/am/t;->Bx:Ljava/util/HashSet;
+    iput-object v0, p0, Lcom/android/server/am/t;->Kx:Ljava/util/HashSet;
 
     sget-boolean p1, Lcom/android/server/am/t;->DEBUG_ONEPLUS:Z
 
     if-eqz p1, :cond_3
 
-    iget-object p1, p0, Lcom/android/server/am/t;->Ax:Ljava/util/HashSet;
+    iget-object p1, p0, Lcom/android/server/am/t;->Jx:Ljava/util/HashSet;
 
     invoke-virtual {p1}, Ljava/util/HashSet;->iterator()Ljava/util/Iterator;
 
@@ -207,7 +207,7 @@
 
     invoke-static {v1, p1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    iget-object p0, p0, Lcom/android/server/am/t;->Bx:Ljava/util/HashSet;
+    iget-object p0, p0, Lcom/android/server/am/t;->Kx:Ljava/util/HashSet;
 
     invoke-virtual {p0}, Ljava/util/HashSet;->iterator()Ljava/util/Iterator;
 

@@ -149,7 +149,7 @@
 .method public flingEvent(Ljava/lang/String;I)V
     .locals 0
 
-    sget-boolean p0, Lcom/oneplus/server/DynamicVsyncManager;->Gja:Z
+    sget-boolean p0, Lcom/oneplus/server/DynamicVsyncManager;->Rja:Z
 
     if-eqz p0, :cond_0
 
@@ -247,7 +247,7 @@
 .method public getDynamicVsyncConfig(Ljava/lang/String;)I
     .locals 0
 
-    sget-boolean p0, Lcom/oneplus/server/DynamicVsyncManager;->Gja:Z
+    sget-boolean p0, Lcom/oneplus/server/DynamicVsyncManager;->Rja:Z
 
     if-eqz p0, :cond_0
 
@@ -474,7 +474,7 @@
 .method public resume(Ljava/lang/String;)V
     .locals 0
 
-    sget-boolean p0, Lcom/oneplus/server/DynamicVsyncManager;->Gja:Z
+    sget-boolean p0, Lcom/oneplus/server/DynamicVsyncManager;->Rja:Z
 
     if-eqz p0, :cond_0
 
@@ -556,7 +556,7 @@
 
     iget-object v0, p0, Lcom/oneplus/server/OnePlusService;->mOnePlusThemeController:Lcom/oneplus/server/theme/ssp;
 
-    invoke-virtual {v0}, Lcom/oneplus/server/theme/ssp;->Pf()V
+    invoke-virtual {v0}, Lcom/oneplus/server/theme/ssp;->Rf()V
 
     invoke-static {}, Lcom/android/server/fto;->getInstance()Lcom/android/server/fto;
 
@@ -570,7 +570,7 @@
 
     invoke-virtual {v0, v1}, Lcom/android/server/fto;->init(Landroid/content/Context;)V
 
-    sget-boolean v0, Lcom/oneplus/server/DynamicVsyncManager;->Gja:Z
+    sget-boolean v0, Lcom/oneplus/server/DynamicVsyncManager;->Rja:Z
 
     if-nez v0, :cond_0
 
@@ -635,7 +635,7 @@
 .method public updateVelocity(Ljava/lang/String;FD)V
     .locals 0
 
-    sget-boolean p0, Lcom/oneplus/server/DynamicVsyncManager;->Gja:Z
+    sget-boolean p0, Lcom/oneplus/server/DynamicVsyncManager;->Rja:Z
 
     if-eqz p0, :cond_0
 

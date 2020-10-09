@@ -1,11 +1,14 @@
 .class Lcom/android/server/wm/bio;
-.super Landroid/content/BroadcastReceiver;
+.super Ljava/lang/Object;
 .source ""
+
+# interfaces
+.implements Landroid/content/DialogInterface$OnClickListener;
 
 
 # annotations
-.annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/server/wm/wtn$zta;
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/android/server/wm/igw;->onReceive(Landroid/content/Context;Landroid/content/Intent;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,279 +18,48 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/server/wm/wtn$zta;
+.field final synthetic this$1:Lcom/android/server/wm/igw;
+
+.field final synthetic val$packageName:Ljava/lang/String;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/server/wm/wtn$zta;)V
+.method constructor <init>(Lcom/android/server/wm/igw;Ljava/lang/String;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/android/server/wm/bio;->this$0:Lcom/android/server/wm/wtn$zta;
+    iput-object p1, p0, Lcom/android/server/wm/bio;->this$1:Lcom/android/server/wm/igw;
 
-    invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
+    iput-object p2, p0, Lcom/android/server/wm/bio;->val$packageName:Ljava/lang/String;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
-    .locals 6
+.method public onClick(Landroid/content/DialogInterface;I)V
+    .locals 0
 
-    new-instance v0, Ljava/lang/StringBuilder;
+    new-instance p1, Ljava/lang/StringBuilder;
 
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v1, "ReadMode2: onReceive: "
+    const-string p2, "ReadMode2: dialog cancelled pkg="
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
+    iget-object p0, p0, Lcom/android/server/wm/bio;->val$packageName:Ljava/lang/String;
 
-    move-result-object v1
+    invoke-virtual {p1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    const-string v1, "OemSceneModeActivityStack"
-
-    invoke-static {v1, v0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    iget-object v0, p0, Lcom/android/server/wm/bio;->this$0:Lcom/android/server/wm/wtn$zta;
-
-    invoke-static {v0}, Lcom/android/server/wm/wtn$zta;->sis(Lcom/android/server/wm/wtn$zta;)Landroid/app/AlertDialog;
-
-    move-result-object v0
-
-    if-eqz v0, :cond_0
-
-    iget-object v0, p0, Lcom/android/server/wm/bio;->this$0:Lcom/android/server/wm/wtn$zta;
-
-    invoke-static {v0}, Lcom/android/server/wm/wtn$zta;->sis(Lcom/android/server/wm/wtn$zta;)Landroid/app/AlertDialog;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Landroid/app/AlertDialog;->dismiss()V
-
-    :cond_0
-    invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
-
-    move-result-object v0
-
-    const-string v1, "com.oem.intent.action.ENABLE_READ_MODE_NOW"
-
-    invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v0
-
-    const-string v1, "uid"
-
-    const-string v2, "packageName"
-
-    const/4 v3, 0x0
-
-    if-eqz v0, :cond_4
-
-    invoke-virtual {p2, v2}, Landroid/content/Intent;->getStringExtra(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-virtual {p2, v1, v3}, Landroid/content/Intent;->getIntExtra(Ljava/lang/String;I)I
-
-    move-result p2
-
-    if-nez v0, :cond_1
-
-    return-void
-
-    :cond_1
-    iget-object v1, p0, Lcom/android/server/wm/bio;->this$0:Lcom/android/server/wm/wtn$zta;
-
-    invoke-static {v1, v0, p2}, Lcom/android/server/wm/wtn$zta;->zta(Lcom/android/server/wm/wtn$zta;Ljava/lang/String;I)V
-
-    iget-object v1, p0, Lcom/android/server/wm/bio;->this$0:Lcom/android/server/wm/wtn$zta;
-
-    invoke-static {v1}, Lcom/android/server/wm/wtn$zta;->zta(Lcom/android/server/wm/wtn$zta;)Landroid/content/Context;
-
-    move-result-object v1
-
-    invoke-virtual {v1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
-
-    move-result-object v1
-
-    const/4 v2, -0x2
-
-    const-string v4, "reading_mode_option_manual"
-
-    invoke-static {v1, v4, v3, v2}, Landroid/provider/Settings$System;->getIntForUser(Landroid/content/ContentResolver;Ljava/lang/String;II)I
-
-    move-result v1
-
-    const/4 v2, 0x1
-
-    const/4 v4, 0x2
-
-    if-nez v1, :cond_2
-
-    new-array v1, v4, [Ljava/lang/String;
-
-    iget-object v4, p0, Lcom/android/server/wm/bio;->this$0:Lcom/android/server/wm/wtn$zta;
-
-    invoke-static {v4}, Lcom/android/server/wm/wtn$zta;->zta(Lcom/android/server/wm/wtn$zta;)Landroid/content/Context;
-
-    move-result-object v4
-
-    const v5, 0x50d006a
-
-    invoke-virtual {v4, v5}, Landroid/content/Context;->getString(I)Ljava/lang/String;
-
-    move-result-object v4
-
-    aput-object v4, v1, v3
-
-    iget-object v3, p0, Lcom/android/server/wm/bio;->this$0:Lcom/android/server/wm/wtn$zta;
-
-    invoke-static {v3}, Lcom/android/server/wm/wtn$zta;->zta(Lcom/android/server/wm/wtn$zta;)Landroid/content/Context;
-
-    move-result-object v3
-
-    const v4, 0x50d0069
-
-    invoke-virtual {v3, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
-
-    move-result-object v3
-
-    aput-object v3, v1, v2
-
-    iget-object v2, p0, Lcom/android/server/wm/bio;->this$0:Lcom/android/server/wm/wtn$zta;
-
-    new-instance v3, Landroid/app/AlertDialog$Builder;
-
-    const v4, 0x50e0019
-
-    invoke-direct {v3, p1, v4}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;I)V
-
-    iget-object p1, p0, Lcom/android/server/wm/bio;->this$0:Lcom/android/server/wm/wtn$zta;
-
-    invoke-static {p1}, Lcom/android/server/wm/wtn$zta;->zta(Lcom/android/server/wm/wtn$zta;)Landroid/content/Context;
-
-    move-result-object p1
-
-    const v4, 0x50d006b
-
-    invoke-virtual {p1, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
-
-    move-result-object p1
-
-    invoke-virtual {v3, p1}, Landroid/app/AlertDialog$Builder;->setTitle(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
-
-    move-result-object p1
-
-    const/high16 v3, 0x1040000
-
-    new-instance v4, Lcom/android/server/wm/kth;
-
-    invoke-direct {v4, p0, v0}, Lcom/android/server/wm/kth;-><init>(Lcom/android/server/wm/bio;Ljava/lang/String;)V
-
-    invoke-virtual {p1, v3, v4}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
-
-    move-result-object p1
-
-    new-instance v3, Lcom/android/server/wm/cno;
-
-    invoke-direct {v3, p0, v0, p2}, Lcom/android/server/wm/cno;-><init>(Lcom/android/server/wm/bio;Ljava/lang/String;I)V
-
-    invoke-virtual {p1, v1, v3}, Landroid/app/AlertDialog$Builder;->setItems([Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
-
-    move-result-object p1
-
-    invoke-virtual {p1}, Landroid/app/AlertDialog$Builder;->create()Landroid/app/AlertDialog;
-
-    move-result-object p1
-
-    invoke-static {v2, p1}, Lcom/android/server/wm/wtn$zta;->zta(Lcom/android/server/wm/wtn$zta;Landroid/app/AlertDialog;)Landroid/app/AlertDialog;
-
-    iget-object p1, p0, Lcom/android/server/wm/bio;->this$0:Lcom/android/server/wm/wtn$zta;
-
-    invoke-static {p1}, Lcom/android/server/wm/wtn$zta;->sis(Lcom/android/server/wm/wtn$zta;)Landroid/app/AlertDialog;
-
-    move-result-object p1
-
-    invoke-virtual {p1}, Landroid/app/AlertDialog;->getWindow()Landroid/view/Window;
-
-    move-result-object p1
-
-    const/16 p2, 0x7d8
-
-    invoke-virtual {p1, p2}, Landroid/view/Window;->setType(I)V
-
-    iget-object p0, p0, Lcom/android/server/wm/bio;->this$0:Lcom/android/server/wm/wtn$zta;
-
-    invoke-static {p0}, Lcom/android/server/wm/wtn$zta;->sis(Lcom/android/server/wm/wtn$zta;)Landroid/app/AlertDialog;
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p0
 
-    invoke-virtual {p0}, Landroid/app/AlertDialog;->show()V
+    const-string p1, "OemSceneModeActivityStack"
 
-    goto :goto_0
+    invoke-static {p1, p0}, Landroid/util/Slog;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    :cond_2
-    if-ne v1, v2, :cond_3
-
-    iget-object p0, p0, Lcom/android/server/wm/bio;->this$0:Lcom/android/server/wm/wtn$zta;
-
-    invoke-static {p0, v3, v0, p2}, Lcom/android/server/wm/wtn$zta;->zta(Lcom/android/server/wm/wtn$zta;ILjava/lang/String;I)V
-
-    goto :goto_0
-
-    :cond_3
-    if-ne v1, v4, :cond_5
-
-    iget-object p0, p0, Lcom/android/server/wm/bio;->this$0:Lcom/android/server/wm/wtn$zta;
-
-    invoke-static {p0, v4, v0, p2}, Lcom/android/server/wm/wtn$zta;->zta(Lcom/android/server/wm/wtn$zta;ILjava/lang/String;I)V
-
-    goto :goto_0
-
-    :cond_4
-    invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
-
-    move-result-object v0
-
-    const-string v4, "com.oem.intent.action.GO_READ_MODE_SETTINGS"
-
-    invoke-virtual {v4, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_5
-
-    iget-object v0, p0, Lcom/android/server/wm/bio;->this$0:Lcom/android/server/wm/wtn$zta;
-
-    invoke-virtual {p2, v2}, Landroid/content/Intent;->getStringExtra(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-virtual {p2, v1, v3}, Landroid/content/Intent;->getIntExtra(Ljava/lang/String;I)I
-
-    move-result p2
-
-    invoke-static {v0, v2, p2}, Lcom/android/server/wm/wtn$zta;->zta(Lcom/android/server/wm/wtn$zta;Ljava/lang/String;I)V
-
-    iget-object p0, p0, Lcom/android/server/wm/bio;->this$0:Lcom/android/server/wm/wtn$zta;
-
-    invoke-static {p0}, Lcom/android/server/wm/wtn$zta;->tsu(Lcom/android/server/wm/wtn$zta;)Landroid/content/Intent;
-
-    move-result-object p0
-
-    sget-object p2, Landroid/os/UserHandle;->CURRENT:Landroid/os/UserHandle;
-
-    invoke-virtual {p1, p0, p2}, Landroid/content/Context;->startActivityAsUser(Landroid/content/Intent;Landroid/os/UserHandle;)V
-
-    :cond_5
-    :goto_0
     return-void
 .end method

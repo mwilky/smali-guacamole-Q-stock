@@ -15,27 +15,27 @@
 
 
 # static fields
+.field public static final G:I = 0x101d9
+
+.field public static final H:I = 0x101da
+
 .field public static final MSG_INIT:I = 0x101d0
 
-.field public static final irq:I = 0x101d1
+.field public static final ivd:I = 0x101d2
 
-.field public static final ivd:I = 0x101d4
+.field public static final j:I = 0x101d3
 
-.field public static final j:I = 0x101d5
+.field public static final k:I = 0x101d4
 
-.field public static final k:I = 0x101d6
+.field public static final m:I = 0x101d5
 
-.field public static final m:I = 0x101d7
+.field public static final o:I = 0x101d6
 
-.field public static final o:I = 0x101d8
+.field public static final qeg:I = 0x101d1
 
-.field public static final qeg:I = 0x101d3
+.field public static final u:I = 0x101d7
 
-.field public static final u:I = 0x101d9
-
-.field public static final v:I = 0x101da
-
-.field public static final vdw:I = 0x101d2
+.field public static final v:I = 0x101d8
 
 
 # instance fields

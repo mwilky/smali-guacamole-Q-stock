@@ -15,17 +15,17 @@
 
 
 # instance fields
-.field private AY:Landroid/view/View;
+.field private KY:Landroid/view/View;
 
-.field private BY:Landroid/view/View;
+.field private LY:Landroid/view/View;
+
+.field private MY:Landroid/view/View;
 
 .field private mLayoutParams:Landroid/view/WindowManager$LayoutParams;
 
 .field private mWm:Landroid/view/WindowManager;
 
 .field final synthetic this$0:Lcom/oneplus/android/server/vdb;
-
-.field private zY:Landroid/view/View;
 
 
 # direct methods
@@ -196,7 +196,7 @@
 .method static synthetic you(Lcom/oneplus/android/server/vdb$tsu;)Landroid/view/View;
     .locals 0
 
-    iget-object p0, p0, Lcom/oneplus/android/server/vdb$tsu;->zY:Landroid/view/View;
+    iget-object p0, p0, Lcom/oneplus/android/server/vdb$tsu;->KY:Landroid/view/View;
 
     return-object p0
 .end method
@@ -204,7 +204,7 @@
 .method static synthetic zta(Lcom/oneplus/android/server/vdb$tsu;)Landroid/view/View;
     .locals 0
 
-    iget-object p0, p0, Lcom/oneplus/android/server/vdb$tsu;->AY:Landroid/view/View;
+    iget-object p0, p0, Lcom/oneplus/android/server/vdb$tsu;->LY:Landroid/view/View;
 
     return-object p0
 .end method
@@ -280,7 +280,7 @@
 
     iput p1, v0, Landroid/view/WindowManager$LayoutParams;->y:I
 
-    iget-object p1, p0, Lcom/oneplus/android/server/vdb$tsu;->zY:Landroid/view/View;
+    iget-object p1, p0, Lcom/oneplus/android/server/vdb$tsu;->KY:Landroid/view/View;
 
     if-eqz p1, :cond_2
 
@@ -292,7 +292,7 @@
 
     iget-object p1, p0, Lcom/oneplus/android/server/vdb$tsu;->mWm:Landroid/view/WindowManager;
 
-    iget-object v0, p0, Lcom/oneplus/android/server/vdb$tsu;->zY:Landroid/view/View;
+    iget-object v0, p0, Lcom/oneplus/android/server/vdb$tsu;->KY:Landroid/view/View;
 
     iget-object v1, p0, Lcom/oneplus/android/server/vdb$tsu;->mLayoutParams:Landroid/view/WindowManager$LayoutParams;
 
@@ -313,14 +313,14 @@
 
     :cond_3
     :goto_0
-    iget-object p1, p0, Lcom/oneplus/android/server/vdb$tsu;->BY:Landroid/view/View;
+    iget-object p1, p0, Lcom/oneplus/android/server/vdb$tsu;->MY:Landroid/view/View;
 
     invoke-direct {p0, p1}, Lcom/oneplus/android/server/vdb$tsu;->rtg(Landroid/view/View;)V
 
     goto :goto_1
 
     :cond_4
-    iget-object p1, p0, Lcom/oneplus/android/server/vdb$tsu;->BY:Landroid/view/View;
+    iget-object p1, p0, Lcom/oneplus/android/server/vdb$tsu;->MY:Landroid/view/View;
 
     invoke-direct {p0, p1}, Lcom/oneplus/android/server/vdb$tsu;->sis(Landroid/view/View;)V
 
@@ -349,9 +349,9 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/oneplus/android/server/vdb$tsu;->zY:Landroid/view/View;
+    iput-object v0, p0, Lcom/oneplus/android/server/vdb$tsu;->KY:Landroid/view/View;
 
-    iget-object v0, p0, Lcom/oneplus/android/server/vdb$tsu;->zY:Landroid/view/View;
+    iget-object v0, p0, Lcom/oneplus/android/server/vdb$tsu;->KY:Landroid/view/View;
 
     const v1, 0x5070067
 
@@ -359,9 +359,9 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/oneplus/android/server/vdb$tsu;->AY:Landroid/view/View;
+    iput-object v0, p0, Lcom/oneplus/android/server/vdb$tsu;->LY:Landroid/view/View;
 
-    iget-object v0, p0, Lcom/oneplus/android/server/vdb$tsu;->zY:Landroid/view/View;
+    iget-object v0, p0, Lcom/oneplus/android/server/vdb$tsu;->KY:Landroid/view/View;
 
     const v1, 0x5070068
 
@@ -369,9 +369,9 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/oneplus/android/server/vdb$tsu;->BY:Landroid/view/View;
+    iput-object v0, p0, Lcom/oneplus/android/server/vdb$tsu;->MY:Landroid/view/View;
 
-    iget-object v0, p0, Lcom/oneplus/android/server/vdb$tsu;->AY:Landroid/view/View;
+    iget-object v0, p0, Lcom/oneplus/android/server/vdb$tsu;->LY:Landroid/view/View;
 
     new-instance v1, Lcom/oneplus/android/server/zgw;
 

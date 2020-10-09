@@ -18,13 +18,13 @@
 
 
 # instance fields
+.field final synthetic Fxa:Lorg/bouncycastle/asn1/ear;
+
 .field private index:I
 
 .field private final max:I
 
 .field final synthetic this$0:Lorg/bouncycastle/asn1/ear;
-
-.field final synthetic uxa:Lorg/bouncycastle/asn1/ear;
 
 
 # direct methods
@@ -33,7 +33,7 @@
 
     iput-object p1, p0, Lorg/bouncycastle/asn1/cjf;->this$0:Lorg/bouncycastle/asn1/ear;
 
-    iput-object p2, p0, Lorg/bouncycastle/asn1/cjf;->uxa:Lorg/bouncycastle/asn1/ear;
+    iput-object p2, p0, Lorg/bouncycastle/asn1/cjf;->Fxa:Lorg/bouncycastle/asn1/ear;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -53,7 +53,7 @@
 .method public cno()Lorg/bouncycastle/asn1/vdb;
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/asn1/cjf;->uxa:Lorg/bouncycastle/asn1/ear;
+    iget-object p0, p0, Lorg/bouncycastle/asn1/cjf;->Fxa:Lorg/bouncycastle/asn1/ear;
 
     return-object p0
 .end method
@@ -117,7 +117,7 @@
 .method public toASN1Primitive()Lorg/bouncycastle/asn1/vdb;
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/asn1/cjf;->uxa:Lorg/bouncycastle/asn1/ear;
+    iget-object p0, p0, Lorg/bouncycastle/asn1/cjf;->Fxa:Lorg/bouncycastle/asn1/ear;
 
     return-object p0
 .end method

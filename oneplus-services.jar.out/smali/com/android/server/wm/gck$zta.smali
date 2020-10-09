@@ -1,11 +1,11 @@
-.class public Lcom/android/server/wm/wtn$zta;
+.class public Lcom/android/server/wm/gck$zta;
 .super Ljava/lang/Object;
 .source ""
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/server/wm/wtn;
+    value = Lcom/android/server/wm/gck;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,6 +15,8 @@
 
 
 # static fields
+.field private static final AR:I = 0x1f4
+
 .field private static final ARG_DISABLE_SCENE_SCREEN_EFFECT_ALL:I = 0x1
 
 .field private static final ARG_DISABLE_SCENE_SCREEN_EFFECT_IGNORE:I = -0x1
@@ -26,6 +28,10 @@
 .field public static final ARG_SCENE_MODE_OFF:I = 0x0
 
 .field public static final ARG_SCENE_MODE_ON:I = 0x1
+
+.field private static BR:Lcom/android/server/wm/ActivityRecord; = null
+
+.field private static DR:Lcom/android/server/wm/ActivityRecord; = null
 
 .field private static final EVALUATE_GAME_MODE_MSG:I = 0x6d
 
@@ -47,65 +53,31 @@
 
 .field private static final VALUE_ON:Ljava/lang/String; = "1"
 
-.field private static final fR:Ljava/lang/String; = "force-off"
-
-.field private static final gR:Ljava/lang/String; = "force-on"
-
-.field private static final hR:Ljava/lang/String; = "force-on-color"
-
-.field private static final iR:Ljava/lang/String; = "com.oneplus.camera"
-
-.field private static final jR:Ljava/lang/String; = "com.oneplus.gallery"
-
-.field private static final kR:Ljava/lang/String; = "com.amazon.avod.thirdpartyclient"
-
-.field private static final lR:Ljava/lang/String; = "com.netflix.mediaclient"
-
 .field private static mNotificationManager:Landroid/app/NotificationManager; = null
 
 .field private static mStatusBarService:Lcom/android/internal/statusbar/IStatusBarService; = null
 
-.field private static final nR:I = 0x1f4
+.field private static final tR:Ljava/lang/String; = "force-off"
 
-.field private static oR:Lcom/android/server/wm/ActivityRecord;
+.field private static final uR:Ljava/lang/String; = "force-on"
 
-.field private static pR:Lcom/android/server/wm/ActivityRecord;
+.field private static final vR:Ljava/lang/String; = "force-on-color"
+
+.field private static final wR:Ljava/lang/String; = "com.oneplus.camera"
+
+.field private static final xR:Ljava/lang/String; = "com.oneplus.gallery"
+
+.field private static final yR:Ljava/lang/String; = "com.amazon.avod.thirdpartyclient"
+
+.field private static final zR:Ljava/lang/String; = "com.netflix.mediaclient"
 
 
 # instance fields
-.field private XQ:Landroid/app/AlertDialog;
+.field private jR:Landroid/app/AlertDialog;
 
-.field private YQ:Landroid/content/Intent;
+.field private kR:Landroid/content/Intent;
 
-.field private ZQ:Lcom/android/server/wm/ActivityStackSupervisor;
-
-.field _Q:I
-
-.field private aR:Ljava/lang/String;
-
-.field private bR:Z
-
-.field private cR:Ljava/lang/String;
-
-.field private dR:Ljava/util/ArrayList;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/ArrayList<",
-            "Ljava/lang/String;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private eR:Ljava/util/ArrayList;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/ArrayList<",
-            "Ljava/lang/String;",
-            ">;"
-        }
-    .end annotation
-.end field
+.field private lR:Lcom/android/server/wm/ActivityStackSupervisor;
 
 .field private mActivityStack:Lcom/android/server/wm/ActivityStack;
 
@@ -114,6 +86,34 @@
 .field private mContext:Landroid/content/Context;
 
 .field private mNotificationTag:Ljava/lang/String;
+
+.field nR:I
+
+.field private oR:Ljava/lang/String;
+
+.field private pR:Z
+
+.field private qR:Ljava/lang/String;
+
+.field private rR:Ljava/util/ArrayList;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/ArrayList<",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private sR:Ljava/util/ArrayList;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/ArrayList<",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+.end field
 
 
 # direct methods
@@ -130,33 +130,33 @@
 
     const/4 v0, 0x0
 
-    iput v0, p0, Lcom/android/server/wm/wtn$zta;->_Q:I
+    iput v0, p0, Lcom/android/server/wm/gck$zta;->nR:I
 
     const/4 v1, 0x0
 
-    iput-object v1, p0, Lcom/android/server/wm/wtn$zta;->aR:Ljava/lang/String;
+    iput-object v1, p0, Lcom/android/server/wm/gck$zta;->oR:Ljava/lang/String;
 
-    iput-boolean v0, p0, Lcom/android/server/wm/wtn$zta;->bR:Z
+    iput-boolean v0, p0, Lcom/android/server/wm/gck$zta;->pR:Z
 
-    iput-object v1, p0, Lcom/android/server/wm/wtn$zta;->cR:Ljava/lang/String;
-
-    new-instance v0, Ljava/util/ArrayList;
-
-    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
-
-    iput-object v0, p0, Lcom/android/server/wm/wtn$zta;->dR:Ljava/util/ArrayList;
+    iput-object v1, p0, Lcom/android/server/wm/gck$zta;->qR:Ljava/lang/String;
 
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/android/server/wm/wtn$zta;->eR:Ljava/util/ArrayList;
+    iput-object v0, p0, Lcom/android/server/wm/gck$zta;->rR:Ljava/util/ArrayList;
 
-    new-instance v0, Lcom/android/server/wm/bio;
+    new-instance v0, Ljava/util/ArrayList;
 
-    invoke-direct {v0, p0}, Lcom/android/server/wm/bio;-><init>(Lcom/android/server/wm/wtn$zta;)V
+    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/android/server/wm/wtn$zta;->mBroadcastReceiver:Landroid/content/BroadcastReceiver;
+    iput-object v0, p0, Lcom/android/server/wm/gck$zta;->sR:Ljava/util/ArrayList;
+
+    new-instance v0, Lcom/android/server/wm/igw;
+
+    invoke-direct {v0, p0}, Lcom/android/server/wm/igw;-><init>(Lcom/android/server/wm/gck$zta;)V
+
+    iput-object v0, p0, Lcom/android/server/wm/gck$zta;->mBroadcastReceiver:Landroid/content/BroadcastReceiver;
 
     return-void
 .end method
@@ -164,7 +164,7 @@
 .method static synthetic access$300()Landroid/app/NotificationManager;
     .locals 1
 
-    sget-object v0, Lcom/android/server/wm/wtn$zta;->mNotificationManager:Landroid/app/NotificationManager;
+    sget-object v0, Lcom/android/server/wm/gck$zta;->mNotificationManager:Landroid/app/NotificationManager;
 
     return-object v0
 .end method
@@ -172,11 +172,11 @@
 .method private nc(Ljava/lang/String;)V
     .locals 2
 
-    sget-object v0, Lcom/android/server/wm/wtn$zta;->mNotificationManager:Landroid/app/NotificationManager;
+    sget-object v0, Lcom/android/server/wm/gck$zta;->mNotificationManager:Landroid/app/NotificationManager;
 
     if-nez v0, :cond_0
 
-    iget-object v0, p0, Lcom/android/server/wm/wtn$zta;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/server/wm/gck$zta;->mContext:Landroid/content/Context;
 
     const-string v1, "notification"
 
@@ -186,12 +186,12 @@
 
     check-cast v0, Landroid/app/NotificationManager;
 
-    sput-object v0, Lcom/android/server/wm/wtn$zta;->mNotificationManager:Landroid/app/NotificationManager;
+    sput-object v0, Lcom/android/server/wm/gck$zta;->mNotificationManager:Landroid/app/NotificationManager;
 
     :cond_0
-    sget-object v0, Lcom/android/server/wm/wtn$zta;->mNotificationManager:Landroid/app/NotificationManager;
+    sget-object v0, Lcom/android/server/wm/gck$zta;->mNotificationManager:Landroid/app/NotificationManager;
 
-    iget-object v1, p0, Lcom/android/server/wm/wtn$zta;->mNotificationTag:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/server/wm/gck$zta;->mNotificationTag:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Landroid/app/NotificationManager;->getNotificationChannel(Ljava/lang/String;)Landroid/app/NotificationChannel;
 
@@ -218,7 +218,7 @@
 
     new-instance v0, Landroid/app/NotificationChannel;
 
-    iget-object p0, p0, Lcom/android/server/wm/wtn$zta;->mNotificationTag:Ljava/lang/String;
+    iget-object p0, p0, Lcom/android/server/wm/gck$zta;->mNotificationTag:Ljava/lang/String;
 
     const/4 v1, 0x4
 
@@ -232,33 +232,33 @@
 
     invoke-virtual {v0, p0, p0}, Landroid/app/NotificationChannel;->setSound(Landroid/net/Uri;Landroid/media/AudioAttributes;)V
 
-    sget-object p0, Lcom/android/server/wm/wtn$zta;->mNotificationManager:Landroid/app/NotificationManager;
+    sget-object p0, Lcom/android/server/wm/gck$zta;->mNotificationManager:Landroid/app/NotificationManager;
 
     invoke-virtual {p0, v0}, Landroid/app/NotificationManager;->createNotificationChannel(Landroid/app/NotificationChannel;)V
 
     return-void
 .end method
 
-.method static synthetic rtg(Lcom/android/server/wm/wtn$zta;)Lcom/android/server/wm/ActivityStack;
+.method static synthetic rtg(Lcom/android/server/wm/gck$zta;)Lcom/android/server/wm/ActivityStack;
     .locals 0
 
-    iget-object p0, p0, Lcom/android/server/wm/wtn$zta;->mActivityStack:Lcom/android/server/wm/ActivityStack;
+    iget-object p0, p0, Lcom/android/server/wm/gck$zta;->mActivityStack:Lcom/android/server/wm/ActivityStack;
 
     return-object p0
 .end method
 
-.method static synthetic sis(Lcom/android/server/wm/wtn$zta;)Landroid/app/AlertDialog;
+.method static synthetic sis(Lcom/android/server/wm/gck$zta;)Landroid/app/AlertDialog;
     .locals 0
 
-    iget-object p0, p0, Lcom/android/server/wm/wtn$zta;->XQ:Landroid/app/AlertDialog;
+    iget-object p0, p0, Lcom/android/server/wm/gck$zta;->jR:Landroid/app/AlertDialog;
 
     return-object p0
 .end method
 
-.method static synthetic tsu(Lcom/android/server/wm/wtn$zta;)Landroid/content/Intent;
+.method static synthetic tsu(Lcom/android/server/wm/gck$zta;)Landroid/content/Intent;
     .locals 0
 
-    iget-object p0, p0, Lcom/android/server/wm/wtn$zta;->YQ:Landroid/content/Intent;
+    iget-object p0, p0, Lcom/android/server/wm/gck$zta;->kR:Landroid/content/Intent;
 
     return-object p0
 .end method
@@ -290,7 +290,7 @@
 
     invoke-static {v0, p0}, Landroid/util/Slog;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    sget-object p0, Lcom/android/server/wm/wtn$zta;->mStatusBarService:Lcom/android/internal/statusbar/IStatusBarService;
+    sget-object p0, Lcom/android/server/wm/gck$zta;->mStatusBarService:Lcom/android/internal/statusbar/IStatusBarService;
 
     if-nez p0, :cond_0
 
@@ -304,11 +304,11 @@
 
     move-result-object p0
 
-    sput-object p0, Lcom/android/server/wm/wtn$zta;->mStatusBarService:Lcom/android/internal/statusbar/IStatusBarService;
+    sput-object p0, Lcom/android/server/wm/gck$zta;->mStatusBarService:Lcom/android/internal/statusbar/IStatusBarService;
 
     :cond_0
     :try_start_0
-    sget-object p0, Lcom/android/server/wm/wtn$zta;->mStatusBarService:Lcom/android/internal/statusbar/IStatusBarService;
+    sget-object p0, Lcom/android/server/wm/gck$zta;->mStatusBarService:Lcom/android/internal/statusbar/IStatusBarService;
 
     invoke-interface {p0}, Lcom/android/internal/statusbar/IStatusBarService;->collapsePanels()V
     :try_end_0
@@ -336,7 +336,7 @@
     invoke-static {v0, p0}, Landroid/util/Slog;->w(Ljava/lang/String;Ljava/lang/String;)I
 
     :goto_0
-    sget-object p0, Lcom/android/server/wm/wtn$zta;->mNotificationManager:Landroid/app/NotificationManager;
+    sget-object p0, Lcom/android/server/wm/gck$zta;->mNotificationManager:Landroid/app/NotificationManager;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -363,10 +363,10 @@
     return-void
 .end method
 
-.method static synthetic you(Lcom/android/server/wm/wtn$zta;)Ljava/lang/String;
+.method static synthetic you(Lcom/android/server/wm/gck$zta;)Ljava/lang/String;
     .locals 0
 
-    iget-object p0, p0, Lcom/android/server/wm/wtn$zta;->mNotificationTag:Ljava/lang/String;
+    iget-object p0, p0, Lcom/android/server/wm/gck$zta;->mNotificationTag:Ljava/lang/String;
 
     return-object p0
 .end method
@@ -398,7 +398,7 @@
 
     invoke-static {v1, v0}, Landroid/util/Slog;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    iget-object v0, p0, Lcom/android/server/wm/wtn$zta;->ZQ:Lcom/android/server/wm/ActivityStackSupervisor;
+    iget-object v0, p0, Lcom/android/server/wm/gck$zta;->lR:Lcom/android/server/wm/ActivityStackSupervisor;
 
     iget-object v0, v0, Lcom/android/server/wm/ActivityStackSupervisor;->mService:Lcom/android/server/wm/ActivityTaskManagerService;
 
@@ -414,9 +414,9 @@
 
     const/4 p1, 0x0
 
-    sput-object p1, Lcom/android/server/wm/wtn$zta;->pR:Lcom/android/server/wm/ActivityRecord;
+    sput-object p1, Lcom/android/server/wm/gck$zta;->DR:Lcom/android/server/wm/ActivityRecord;
 
-    invoke-virtual {p0, p1, v1}, Lcom/android/server/wm/wtn$zta;->startEvaluateSceneModes(Lcom/android/server/wm/ActivityRecord;Lcom/android/server/wm/ActivityRecord;)V
+    invoke-virtual {p0, p1, v1}, Lcom/android/server/wm/gck$zta;->startEvaluateSceneModes(Lcom/android/server/wm/ActivityRecord;Lcom/android/server/wm/ActivityRecord;)V
 
     return-void
 .end method
@@ -459,64 +459,64 @@
     return p0
 .end method
 
-.method static synthetic zta(Lcom/android/server/wm/wtn$zta;Landroid/app/AlertDialog;)Landroid/app/AlertDialog;
+.method static synthetic zta(Lcom/android/server/wm/gck$zta;Landroid/app/AlertDialog;)Landroid/app/AlertDialog;
     .locals 0
 
-    iput-object p1, p0, Lcom/android/server/wm/wtn$zta;->XQ:Landroid/app/AlertDialog;
+    iput-object p1, p0, Lcom/android/server/wm/gck$zta;->jR:Landroid/app/AlertDialog;
 
     return-object p1
 .end method
 
-.method static synthetic zta(Lcom/android/server/wm/wtn$zta;)Landroid/content/Context;
+.method static synthetic zta(Lcom/android/server/wm/gck$zta;)Landroid/content/Context;
     .locals 0
 
-    iget-object p0, p0, Lcom/android/server/wm/wtn$zta;->mContext:Landroid/content/Context;
+    iget-object p0, p0, Lcom/android/server/wm/gck$zta;->mContext:Landroid/content/Context;
 
     return-object p0
 .end method
 
-.method static synthetic zta(Lcom/android/server/wm/wtn$zta;ILjava/lang/String;I)V
+.method static synthetic zta(Lcom/android/server/wm/gck$zta;ILjava/lang/String;I)V
     .locals 0
 
-    invoke-direct {p0, p1, p2, p3}, Lcom/android/server/wm/wtn$zta;->you(ILjava/lang/String;I)V
+    invoke-direct {p0, p1, p2, p3}, Lcom/android/server/wm/gck$zta;->you(ILjava/lang/String;I)V
 
     return-void
 .end method
 
-.method static synthetic zta(Lcom/android/server/wm/wtn$zta;Ljava/lang/String;I)V
+.method static synthetic zta(Lcom/android/server/wm/gck$zta;Ljava/lang/String;I)V
     .locals 0
 
-    invoke-direct {p0, p1, p2}, Lcom/android/server/wm/wtn$zta;->ugm(Ljava/lang/String;I)V
+    invoke-direct {p0, p1, p2}, Lcom/android/server/wm/gck$zta;->ugm(Ljava/lang/String;I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public de()V
+.method public ee()V
     .locals 2
 
-    iget-object v0, p0, Lcom/android/server/wm/wtn$zta;->dR:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/server/wm/gck$zta;->rR:Ljava/util/ArrayList;
 
-    iget-object v1, p0, Lcom/android/server/wm/wtn$zta;->aR:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/server/wm/gck$zta;->oR:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->remove(Ljava/lang/Object;)Z
 
-    iget-object v0, p0, Lcom/android/server/wm/wtn$zta;->eR:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/server/wm/gck$zta;->sR:Ljava/util/ArrayList;
 
-    iget-object v1, p0, Lcom/android/server/wm/wtn$zta;->aR:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/server/wm/gck$zta;->oR:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->remove(Ljava/lang/Object;)Z
 
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/android/server/wm/wtn$zta;->aR:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/server/wm/gck$zta;->oR:Ljava/lang/String;
 
     const/4 v1, 0x0
 
-    iput-boolean v1, p0, Lcom/android/server/wm/wtn$zta;->bR:Z
+    iput-boolean v1, p0, Lcom/android/server/wm/gck$zta;->pR:Z
 
-    iput-object v0, p0, Lcom/android/server/wm/wtn$zta;->cR:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/server/wm/gck$zta;->qR:Ljava/lang/String;
 
     return-void
 .end method
@@ -524,7 +524,7 @@
 .method public handleEvaluateGameMode(ZZ)V
     .locals 4
 
-    iget-object v0, p0, Lcom/android/server/wm/wtn$zta;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/server/wm/gck$zta;->mContext:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -546,7 +546,7 @@
 
     invoke-static {v0, v3, v1, v2}, Landroid/provider/Settings$System;->putStringForUser(Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;I)Z
 
-    iget-object p0, p0, Lcom/android/server/wm/wtn$zta;->mContext:Landroid/content/Context;
+    iget-object p0, p0, Lcom/android/server/wm/gck$zta;->mContext:Landroid/content/Context;
 
     invoke-static {p0}, Lcom/oneplus/android/server/scene/ESportMode;->getInstance(Landroid/content/Context;)Lcom/oneplus/android/server/scene/ESportMode;
 
@@ -556,7 +556,7 @@
 
     invoke-virtual {p0, p2, v0}, Lcom/oneplus/android/server/scene/ESportMode;->setEnable(ZZ)V
 
-    sget-boolean p0, Lcom/android/server/wm/wtn;->DBG:Z
+    sget-boolean p0, Lcom/android/server/wm/gck;->DBG:Z
 
     if-eqz p0, :cond_1
 
@@ -585,7 +585,7 @@
 .method public handleEvaluateReadMode(I)V
     .locals 2
 
-    iget-object p0, p0, Lcom/android/server/wm/wtn$zta;->mContext:Landroid/content/Context;
+    iget-object p0, p0, Lcom/android/server/wm/gck$zta;->mContext:Landroid/content/Context;
 
     invoke-virtual {p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -598,7 +598,7 @@
     goto :goto_0
 
     :cond_0
-    sget-boolean v0, Lcom/oneplus/android/server/scene/ivd;->nia:Z
+    sget-boolean v0, Lcom/oneplus/android/server/scene/ivd;->yia:Z
 
     if-eqz v0, :cond_1
 
@@ -620,7 +620,7 @@
 
     invoke-static {p0, v1, p1, v0}, Landroid/provider/Settings$System;->putStringForUser(Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;I)Z
 
-    sget-boolean p0, Lcom/android/server/wm/wtn;->DBG:Z
+    sget-boolean p0, Lcom/android/server/wm/gck;->DBG:Z
 
     if-eqz p0, :cond_2
 
@@ -649,17 +649,17 @@
 .method public init(Lcom/android/server/wm/ActivityStack;Lcom/android/server/wm/ActivityStackSupervisor;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/android/server/wm/wtn$zta;->mActivityStack:Lcom/android/server/wm/ActivityStack;
+    iput-object p1, p0, Lcom/android/server/wm/gck$zta;->mActivityStack:Lcom/android/server/wm/ActivityStack;
 
-    iput-object p2, p0, Lcom/android/server/wm/wtn$zta;->ZQ:Lcom/android/server/wm/ActivityStackSupervisor;
+    iput-object p2, p0, Lcom/android/server/wm/gck$zta;->lR:Lcom/android/server/wm/ActivityStackSupervisor;
 
-    iget-object p1, p0, Lcom/android/server/wm/wtn$zta;->ZQ:Lcom/android/server/wm/ActivityStackSupervisor;
+    iget-object p1, p0, Lcom/android/server/wm/gck$zta;->lR:Lcom/android/server/wm/ActivityStackSupervisor;
 
     iget-object p1, p1, Lcom/android/server/wm/ActivityStackSupervisor;->mService:Lcom/android/server/wm/ActivityTaskManagerService;
 
     iget-object p1, p1, Lcom/android/server/wm/ActivityTaskManagerService;->mContext:Landroid/content/Context;
 
-    iput-object p1, p0, Lcom/android/server/wm/wtn$zta;->mContext:Landroid/content/Context;
+    iput-object p1, p0, Lcom/android/server/wm/gck$zta;->mContext:Landroid/content/Context;
 
     return-void
 .end method
@@ -682,7 +682,7 @@
     goto :goto_0
 
     :cond_0
-    iget-object p1, p0, Lcom/android/server/wm/wtn$zta;->mContext:Landroid/content/Context;
+    iget-object p1, p0, Lcom/android/server/wm/gck$zta;->mContext:Landroid/content/Context;
 
     const v0, 0x50d009c    # 6.6299E-36f
 
@@ -693,7 +693,7 @@
     if-nez p2, :cond_2
 
     :cond_1
-    iget-object p1, p0, Lcom/android/server/wm/wtn$zta;->mContext:Landroid/content/Context;
+    iget-object p1, p0, Lcom/android/server/wm/gck$zta;->mContext:Landroid/content/Context;
 
     invoke-virtual {p1, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -701,13 +701,13 @@
 
     :cond_2
     :goto_0
-    iget-object p2, p0, Lcom/android/server/wm/wtn$zta;->mActivityStack:Lcom/android/server/wm/ActivityStack;
+    iget-object p2, p0, Lcom/android/server/wm/gck$zta;->mActivityStack:Lcom/android/server/wm/ActivityStack;
 
     iget-object p2, p2, Lcom/android/server/wm/ActivityStack;->mHandler:Landroid/os/Handler;
 
-    new-instance v0, Lcom/android/server/wm/igw;
+    new-instance v0, Lcom/android/server/wm/wtn;
 
-    invoke-direct {v0, p0, p1}, Lcom/android/server/wm/igw;-><init>(Lcom/android/server/wm/wtn$zta;Ljava/lang/String;)V
+    invoke-direct {v0, p0, p1}, Lcom/android/server/wm/wtn;-><init>(Lcom/android/server/wm/gck$zta;Ljava/lang/String;)V
 
     invoke-virtual {p2, v0}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 
@@ -717,11 +717,11 @@
 .method public packageChanged(Ljava/lang/String;I)V
     .locals 2
 
-    sget-boolean p0, Lcom/oneplus/android/server/scene/ivd;->nia:Z
+    sget-boolean p0, Lcom/oneplus/android/server/scene/ivd;->yia:Z
 
     if-eqz p0, :cond_1
 
-    sget-object p0, Lcom/android/server/wm/wtn$zta;->mNotificationManager:Landroid/app/NotificationManager;
+    sget-object p0, Lcom/android/server/wm/gck$zta;->mNotificationManager:Landroid/app/NotificationManager;
 
     if-nez p0, :cond_0
 
@@ -752,7 +752,7 @@
 
     invoke-static {v0, p0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    sget-object p0, Lcom/android/server/wm/wtn$zta;->mNotificationManager:Landroid/app/NotificationManager;
+    sget-object p0, Lcom/android/server/wm/gck$zta;->mNotificationManager:Landroid/app/NotificationManager;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -784,7 +784,7 @@
 .method public putSceneMode(Lcom/android/server/wm/ActivityRecord;Lcom/android/server/wm/ActivityRecord;)V
     .locals 4
 
-    iget-object p2, p0, Lcom/android/server/wm/wtn$zta;->mContext:Landroid/content/Context;
+    iget-object p2, p0, Lcom/android/server/wm/gck$zta;->mContext:Landroid/content/Context;
 
     invoke-virtual {p2}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -816,19 +816,19 @@
 
     if-ne p2, v1, :cond_0
 
-    iput-boolean v1, p0, Lcom/android/server/wm/wtn$zta;->bR:Z
+    iput-boolean v1, p0, Lcom/android/server/wm/gck$zta;->pR:Z
 
     iget-object p1, p1, Lcom/android/server/wm/ActivityRecord;->packageName:Ljava/lang/String;
 
-    iput-object p1, p0, Lcom/android/server/wm/wtn$zta;->cR:Ljava/lang/String;
+    iput-object p1, p0, Lcom/android/server/wm/gck$zta;->qR:Ljava/lang/String;
 
     goto :goto_1
 
     :cond_0
     :goto_0
-    iput-boolean v0, p0, Lcom/android/server/wm/wtn$zta;->bR:Z
+    iput-boolean v0, p0, Lcom/android/server/wm/gck$zta;->pR:Z
 
-    iput-object v3, p0, Lcom/android/server/wm/wtn$zta;->cR:Ljava/lang/String;
+    iput-object v3, p0, Lcom/android/server/wm/gck$zta;->qR:Ljava/lang/String;
 
     goto :goto_1
 
@@ -844,11 +844,11 @@
     goto :goto_1
 
     :cond_2
-    iget-boolean p2, p0, Lcom/android/server/wm/wtn$zta;->bR:Z
+    iget-boolean p2, p0, Lcom/android/server/wm/gck$zta;->pR:Z
 
     if-eqz p2, :cond_3
 
-    iget-object p2, p0, Lcom/android/server/wm/wtn$zta;->cR:Ljava/lang/String;
+    iget-object p2, p0, Lcom/android/server/wm/gck$zta;->qR:Ljava/lang/String;
 
     if-eqz p2, :cond_0
 
@@ -860,7 +860,7 @@
 
     if-nez p2, :cond_3
 
-    iget-object p2, p0, Lcom/android/server/wm/wtn$zta;->cR:Ljava/lang/String;
+    iget-object p2, p0, Lcom/android/server/wm/gck$zta;->qR:Ljava/lang/String;
 
     iget-object p1, p1, Lcom/android/server/wm/ActivityRecord;->launchedFromPackage:Ljava/lang/String;
 
@@ -880,14 +880,14 @@
 .method public sendReadModeNotification(Lcom/android/server/wm/ActivityRecord;)V
     .locals 12
 
-    sget-boolean v0, Lcom/oneplus/android/server/scene/ivd;->nia:Z
+    sget-boolean v0, Lcom/oneplus/android/server/scene/ivd;->yia:Z
 
     if-nez v0, :cond_0
 
     return-void
 
     :cond_0
-    iget-object v0, p0, Lcom/android/server/wm/wtn$zta;->ZQ:Lcom/android/server/wm/ActivityStackSupervisor;
+    iget-object v0, p0, Lcom/android/server/wm/gck$zta;->lR:Lcom/android/server/wm/ActivityStackSupervisor;
 
     iget-object v0, v0, Lcom/android/server/wm/ActivityStackSupervisor;->mService:Lcom/android/server/wm/ActivityTaskManagerService;
 
@@ -933,7 +933,7 @@
     return-void
 
     :cond_1
-    invoke-static {}, Lcom/oneplus/android/server/scene/ivd;->vf()Ljava/lang/String;
+    invoke-static {}, Lcom/oneplus/android/server/scene/ivd;->xf()Ljava/lang/String;
 
     move-result-object v4
 
@@ -974,7 +974,7 @@
 
     invoke-static {v1, v4}, Landroid/util/Slog;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    iget-object v4, p0, Lcom/android/server/wm/wtn$zta;->ZQ:Lcom/android/server/wm/ActivityStackSupervisor;
+    iget-object v4, p0, Lcom/android/server/wm/gck$zta;->lR:Lcom/android/server/wm/ActivityStackSupervisor;
 
     iget-object v4, v4, Lcom/android/server/wm/ActivityStackSupervisor;->mService:Lcom/android/server/wm/ActivityTaskManagerService;
 
@@ -1014,7 +1014,7 @@
 
     move-result-object v3
 
-    iput-object v3, p0, Lcom/android/server/wm/wtn$zta;->mNotificationTag:Ljava/lang/String;
+    iput-object v3, p0, Lcom/android/server/wm/gck$zta;->mNotificationTag:Ljava/lang/String;
 
     new-instance v3, Landroid/content/Intent;
 
@@ -1022,15 +1022,15 @@
 
     invoke-direct {v3, v4}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    iput-object v3, p0, Lcom/android/server/wm/wtn$zta;->YQ:Landroid/content/Intent;
+    iput-object v3, p0, Lcom/android/server/wm/gck$zta;->kR:Landroid/content/Intent;
 
-    iget-object v3, p0, Lcom/android/server/wm/wtn$zta;->YQ:Landroid/content/Intent;
+    iget-object v3, p0, Lcom/android/server/wm/gck$zta;->kR:Landroid/content/Intent;
 
     const v4, 0x10008000
 
     invoke-virtual {v3, v4}, Landroid/content/Intent;->setFlags(I)Landroid/content/Intent;
 
-    iget-object v3, p0, Lcom/android/server/wm/wtn$zta;->mContext:Landroid/content/Context;
+    iget-object v3, p0, Lcom/android/server/wm/gck$zta;->mContext:Landroid/content/Context;
 
     invoke-virtual {v3}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
@@ -1097,7 +1097,7 @@
 
     if-ne v4, v6, :cond_4
 
-    iget-object v4, p0, Lcom/android/server/wm/wtn$zta;->mContext:Landroid/content/Context;
+    iget-object v4, p0, Lcom/android/server/wm/gck$zta;->mContext:Landroid/content/Context;
 
     const v6, 0x50d0058
 
@@ -1110,7 +1110,7 @@
     move-result-object v3
 
     :cond_4
-    iget-object v4, p0, Lcom/android/server/wm/wtn$zta;->mContext:Landroid/content/Context;
+    iget-object v4, p0, Lcom/android/server/wm/gck$zta;->mContext:Landroid/content/Context;
 
     const v6, 0x50d006e
 
@@ -1122,7 +1122,7 @@
 
     move-result-object v4
 
-    invoke-direct {p0, v3}, Lcom/android/server/wm/wtn$zta;->nc(Ljava/lang/String;)V
+    invoke-direct {p0, v3}, Lcom/android/server/wm/gck$zta;->nc(Ljava/lang/String;)V
 
     new-instance v3, Landroid/content/Intent;
 
@@ -1144,7 +1144,7 @@
 
     invoke-virtual {v3, v8, v6}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
-    iget-object v6, p0, Lcom/android/server/wm/wtn$zta;->mContext:Landroid/content/Context;
+    iget-object v6, p0, Lcom/android/server/wm/gck$zta;->mContext:Landroid/content/Context;
 
     sget v9, Lcom/oneplus/android/server/scene/ivd;->sNextRequestCode:I
 
@@ -1160,7 +1160,7 @@
 
     new-instance v6, Landroid/app/Notification$Action$Builder;
 
-    iget-object v9, p0, Lcom/android/server/wm/wtn$zta;->mContext:Landroid/content/Context;
+    iget-object v9, p0, Lcom/android/server/wm/gck$zta;->mContext:Landroid/content/Context;
 
     const v11, 0x50d006c
 
@@ -1192,7 +1192,7 @@
 
     invoke-virtual {v6, v8, p1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
-    iget-object p1, p0, Lcom/android/server/wm/wtn$zta;->mContext:Landroid/content/Context;
+    iget-object p1, p0, Lcom/android/server/wm/gck$zta;->mContext:Landroid/content/Context;
 
     sget v7, Lcom/oneplus/android/server/scene/ivd;->sNextRequestCode:I
 
@@ -1206,7 +1206,7 @@
 
     new-instance v6, Landroid/app/Notification$Action$Builder;
 
-    iget-object v7, p0, Lcom/android/server/wm/wtn$zta;->mContext:Landroid/content/Context;
+    iget-object v7, p0, Lcom/android/server/wm/gck$zta;->mContext:Landroid/content/Context;
 
     const v8, 0x50d006d
 
@@ -1222,13 +1222,13 @@
 
     new-instance v6, Landroid/app/Notification$Builder;
 
-    iget-object v7, p0, Lcom/android/server/wm/wtn$zta;->mContext:Landroid/content/Context;
+    iget-object v7, p0, Lcom/android/server/wm/gck$zta;->mContext:Landroid/content/Context;
 
-    iget-object v8, p0, Lcom/android/server/wm/wtn$zta;->mNotificationTag:Ljava/lang/String;
+    iget-object v8, p0, Lcom/android/server/wm/gck$zta;->mNotificationTag:Ljava/lang/String;
 
     invoke-direct {v6, v7, v8}, Landroid/app/Notification$Builder;-><init>(Landroid/content/Context;Ljava/lang/String;)V
 
-    iget-object v7, p0, Lcom/android/server/wm/wtn$zta;->mContext:Landroid/content/Context;
+    iget-object v7, p0, Lcom/android/server/wm/gck$zta;->mContext:Landroid/content/Context;
 
     const v8, 0x50d006f
 
@@ -1250,7 +1250,7 @@
 
     move-result-object v6
 
-    iget-object v7, p0, Lcom/android/server/wm/wtn$zta;->mContext:Landroid/content/Context;
+    iget-object v7, p0, Lcom/android/server/wm/gck$zta;->mContext:Landroid/content/Context;
 
     const v8, 0x106001c
 
@@ -1286,9 +1286,9 @@
 
     move-result-object p1
 
-    iget-object v2, p0, Lcom/android/server/wm/wtn$zta;->mContext:Landroid/content/Context;
+    iget-object v2, p0, Lcom/android/server/wm/gck$zta;->mContext:Landroid/content/Context;
 
-    iget-object v3, p0, Lcom/android/server/wm/wtn$zta;->YQ:Landroid/content/Intent;
+    iget-object v3, p0, Lcom/android/server/wm/gck$zta;->kR:Landroid/content/Intent;
 
     const/high16 v4, 0x10000000
 
@@ -1300,13 +1300,13 @@
 
     move-result-object p1
 
-    iget-object v2, p0, Lcom/android/server/wm/wtn$zta;->mActivityStack:Lcom/android/server/wm/ActivityStack;
+    iget-object v2, p0, Lcom/android/server/wm/gck$zta;->mActivityStack:Lcom/android/server/wm/ActivityStack;
 
     iget-object v2, v2, Lcom/android/server/wm/ActivityStack;->mHandler:Landroid/os/Handler;
 
-    new-instance v3, Lcom/android/server/wm/ssp;
+    new-instance v3, Lcom/android/server/wm/cno;
 
-    invoke-direct {v3, p0, p1}, Lcom/android/server/wm/ssp;-><init>(Lcom/android/server/wm/wtn$zta;Landroid/app/Notification$Builder;)V
+    invoke-direct {v3, p0, p1}, Lcom/android/server/wm/cno;-><init>(Lcom/android/server/wm/gck$zta;Landroid/app/Notification$Builder;)V
 
     invoke-virtual {v2, v3}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 
@@ -1322,7 +1322,7 @@
 .method public startEvaluateGameMode(Lcom/android/server/wm/ActivityRecord;Lcom/android/server/wm/ActivityRecord;)V
     .locals 7
 
-    iget-object p1, p0, Lcom/android/server/wm/wtn$zta;->ZQ:Lcom/android/server/wm/ActivityStackSupervisor;
+    iget-object p1, p0, Lcom/android/server/wm/gck$zta;->lR:Lcom/android/server/wm/ActivityStackSupervisor;
 
     iget-object p1, p1, Lcom/android/server/wm/ActivityStackSupervisor;->mService:Lcom/android/server/wm/ActivityTaskManagerService;
 
@@ -1360,7 +1360,7 @@
 
     if-eqz p1, :cond_1
 
-    iget-object v3, p0, Lcom/android/server/wm/wtn$zta;->dR:Ljava/util/ArrayList;
+    iget-object v3, p0, Lcom/android/server/wm/gck$zta;->rR:Ljava/util/ArrayList;
 
     new-instance v4, Ljava/lang/StringBuilder;
 
@@ -1386,7 +1386,7 @@
 
     if-nez v3, :cond_4
 
-    iget-object v3, p0, Lcom/android/server/wm/wtn$zta;->dR:Ljava/util/ArrayList;
+    iget-object v3, p0, Lcom/android/server/wm/gck$zta;->rR:Ljava/util/ArrayList;
 
     new-instance v4, Ljava/lang/StringBuilder;
 
@@ -1424,12 +1424,12 @@
     if-eqz v3, :cond_3
 
     :cond_2
-    iput-boolean v0, p0, Lcom/android/server/wm/wtn$zta;->bR:Z
+    iput-boolean v0, p0, Lcom/android/server/wm/gck$zta;->pR:Z
 
-    iput-object v2, p0, Lcom/android/server/wm/wtn$zta;->cR:Ljava/lang/String;
+    iput-object v2, p0, Lcom/android/server/wm/gck$zta;->qR:Ljava/lang/String;
 
     :cond_3
-    iget-object v3, p0, Lcom/android/server/wm/wtn$zta;->dR:Ljava/util/ArrayList;
+    iget-object v3, p0, Lcom/android/server/wm/gck$zta;->rR:Ljava/util/ArrayList;
 
     new-instance v4, Ljava/lang/StringBuilder;
 
@@ -1466,11 +1466,11 @@
     :goto_2
     if-eqz p1, :cond_5
 
-    iget-boolean v4, p0, Lcom/android/server/wm/wtn$zta;->bR:Z
+    iget-boolean v4, p0, Lcom/android/server/wm/gck$zta;->pR:Z
 
     if-eqz v4, :cond_5
 
-    iget-object v4, p0, Lcom/android/server/wm/wtn$zta;->eR:Ljava/util/ArrayList;
+    iget-object v4, p0, Lcom/android/server/wm/gck$zta;->sR:Ljava/util/ArrayList;
 
     new-instance v5, Ljava/lang/StringBuilder;
 
@@ -1496,7 +1496,7 @@
 
     if-nez v4, :cond_6
 
-    iget-object v4, p0, Lcom/android/server/wm/wtn$zta;->eR:Ljava/util/ArrayList;
+    iget-object v4, p0, Lcom/android/server/wm/gck$zta;->sR:Ljava/util/ArrayList;
 
     new-instance v5, Ljava/lang/StringBuilder;
 
@@ -1521,7 +1521,7 @@
     goto :goto_3
 
     :cond_5
-    iget-object v4, p0, Lcom/android/server/wm/wtn$zta;->eR:Ljava/util/ArrayList;
+    iget-object v4, p0, Lcom/android/server/wm/gck$zta;->sR:Ljava/util/ArrayList;
 
     new-instance v5, Ljava/lang/StringBuilder;
 
@@ -1555,14 +1555,14 @@
 
     if-eqz v0, :cond_7
 
-    invoke-virtual {p0, v4, p1}, Lcom/android/server/wm/wtn$zta;->oif(IZ)V
+    invoke-virtual {p0, v4, p1}, Lcom/android/server/wm/gck$zta;->oif(IZ)V
 
     goto :goto_4
 
     :cond_7
     if-eqz v3, :cond_8
 
-    invoke-virtual {p0, v1, p1}, Lcom/android/server/wm/wtn$zta;->oif(IZ)V
+    invoke-virtual {p0, v1, p1}, Lcom/android/server/wm/gck$zta;->oif(IZ)V
 
     :cond_8
     :goto_4
@@ -1586,15 +1586,15 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/server/wm/wtn$zta;->aR:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/server/wm/gck$zta;->oR:Ljava/lang/String;
 
     goto :goto_5
 
     :cond_9
-    iput-object v2, p0, Lcom/android/server/wm/wtn$zta;->aR:Ljava/lang/String;
+    iput-object v2, p0, Lcom/android/server/wm/gck$zta;->oR:Ljava/lang/String;
 
     :goto_5
-    iget-object v0, p0, Lcom/android/server/wm/wtn$zta;->mActivityStack:Lcom/android/server/wm/ActivityStack;
+    iget-object v0, p0, Lcom/android/server/wm/gck$zta;->mActivityStack:Lcom/android/server/wm/ActivityStack;
 
     iget-object v0, v0, Lcom/android/server/wm/ActivityStack;->mHandler:Landroid/os/Handler;
 
@@ -1620,7 +1620,7 @@
 
     invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    sget-boolean v2, Lcom/android/server/wm/wtn;->DBG:Z
+    sget-boolean v2, Lcom/android/server/wm/gck;->DBG:Z
 
     const-string v3, "OemSceneModeActivityStack"
 
@@ -1645,7 +1645,7 @@
     :cond_a
     iput p1, v0, Landroid/os/Message;->arg1:I
 
-    iget-boolean v2, p0, Lcom/android/server/wm/wtn$zta;->bR:Z
+    iget-boolean v2, p0, Lcom/android/server/wm/gck$zta;->pR:Z
 
     if-eqz v2, :cond_b
 
@@ -1680,7 +1680,7 @@
 
     invoke-static {v3, v1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    iget-object p0, p0, Lcom/android/server/wm/wtn$zta;->mActivityStack:Lcom/android/server/wm/ActivityStack;
+    iget-object p0, p0, Lcom/android/server/wm/gck$zta;->mActivityStack:Lcom/android/server/wm/ActivityStack;
 
     iget-object p0, p0, Lcom/android/server/wm/ActivityStack;->mHandler:Landroid/os/Handler;
 
@@ -1688,7 +1688,7 @@
 
     invoke-virtual {p0, v0, v1, v2}, Landroid/os/Handler;->sendMessageDelayed(Landroid/os/Message;J)Z
 
-    sget-boolean p0, Lcom/android/server/wm/wtn;->DBG:Z
+    sget-boolean p0, Lcom/android/server/wm/gck;->DBG:Z
 
     if-eqz p0, :cond_c
 
@@ -1723,11 +1723,11 @@
 .method public startEvaluateReadingMode(Lcom/android/server/wm/ActivityRecord;Lcom/android/server/wm/ActivityRecord;)V
     .locals 5
 
-    iget-object p1, p0, Lcom/android/server/wm/wtn$zta;->ZQ:Lcom/android/server/wm/ActivityStackSupervisor;
+    iget-object p1, p0, Lcom/android/server/wm/gck$zta;->lR:Lcom/android/server/wm/ActivityStackSupervisor;
 
     iget-object p1, p1, Lcom/android/server/wm/ActivityStackSupervisor;->mService:Lcom/android/server/wm/ActivityTaskManagerService;
 
-    invoke-static {p1, p2}, Lcom/android/server/wm/wtn;->shouldIgnoreSceneEvaluation(Lcom/android/server/wm/ActivityTaskManagerService;Lcom/android/server/wm/ActivityRecord;)Z
+    invoke-static {p1, p2}, Lcom/android/server/wm/gck;->shouldIgnoreSceneEvaluation(Lcom/android/server/wm/ActivityTaskManagerService;Lcom/android/server/wm/ActivityRecord;)Z
 
     move-result p1
 
@@ -1735,7 +1735,7 @@
 
     if-eqz p1, :cond_1
 
-    sget-boolean p0, Lcom/android/server/wm/wtn;->DBG:Z
+    sget-boolean p0, Lcom/android/server/wm/gck;->DBG:Z
 
     if-eqz p0, :cond_0
 
@@ -1761,7 +1761,7 @@
     return-void
 
     :cond_1
-    iget-object p1, p0, Lcom/android/server/wm/wtn$zta;->ZQ:Lcom/android/server/wm/ActivityStackSupervisor;
+    iget-object p1, p0, Lcom/android/server/wm/gck$zta;->lR:Lcom/android/server/wm/ActivityStackSupervisor;
 
     iget-object p1, p1, Lcom/android/server/wm/ActivityStackSupervisor;->mService:Lcom/android/server/wm/ActivityTaskManagerService;
 
@@ -1781,7 +1781,7 @@
 
     move-result p1
 
-    iget-object v1, p0, Lcom/android/server/wm/wtn$zta;->mActivityStack:Lcom/android/server/wm/ActivityStack;
+    iget-object v1, p0, Lcom/android/server/wm/gck$zta;->mActivityStack:Lcom/android/server/wm/ActivityStack;
 
     iget-object v1, v1, Lcom/android/server/wm/ActivityStack;->mHandler:Landroid/os/Handler;
 
@@ -1793,7 +1793,7 @@
 
     iput p1, v1, Landroid/os/Message;->arg1:I
 
-    iget-object v2, p0, Lcom/android/server/wm/wtn$zta;->mActivityStack:Lcom/android/server/wm/ActivityStack;
+    iget-object v2, p0, Lcom/android/server/wm/gck$zta;->mActivityStack:Lcom/android/server/wm/ActivityStack;
 
     iget-object v2, v2, Lcom/android/server/wm/ActivityStack;->mHandler:Landroid/os/Handler;
 
@@ -1801,11 +1801,11 @@
 
     invoke-virtual {v2, v1, v3, v4}, Landroid/os/Handler;->sendMessageDelayed(Landroid/os/Message;J)Z
 
-    sget-boolean v1, Lcom/oneplus/android/server/scene/ivd;->nia:Z
+    sget-boolean v1, Lcom/oneplus/android/server/scene/ivd;->yia:Z
 
     if-eqz v1, :cond_3
 
-    sget-object v1, Lcom/oneplus/android/server/scene/ivd;->via:Ljava/lang/String;
+    sget-object v1, Lcom/oneplus/android/server/scene/ivd;->Gia:Ljava/lang/String;
 
     if-eqz v1, :cond_2
 
@@ -1820,9 +1820,9 @@
     :cond_2
     iget-object v1, p2, Lcom/android/server/wm/ActivityRecord;->packageName:Ljava/lang/String;
 
-    sput-object v1, Lcom/oneplus/android/server/scene/ivd;->via:Ljava/lang/String;
+    sput-object v1, Lcom/oneplus/android/server/scene/ivd;->Gia:Ljava/lang/String;
 
-    iget-object v1, p0, Lcom/android/server/wm/wtn$zta;->mActivityStack:Lcom/android/server/wm/ActivityStack;
+    iget-object v1, p0, Lcom/android/server/wm/gck$zta;->mActivityStack:Lcom/android/server/wm/ActivityStack;
 
     iget-object v1, v1, Lcom/android/server/wm/ActivityStack;->mHandler:Landroid/os/Handler;
 
@@ -1834,7 +1834,7 @@
 
     if-ne p1, v1, :cond_3
 
-    invoke-static {}, Lcom/oneplus/android/server/scene/ivd;->vf()Ljava/lang/String;
+    invoke-static {}, Lcom/oneplus/android/server/scene/ivd;->xf()Ljava/lang/String;
 
     move-result-object v1
 
@@ -1844,7 +1844,7 @@
 
     if-nez v1, :cond_3
 
-    sget-object v1, Lcom/oneplus/android/server/scene/ivd;->oia:Ljava/util/ArrayList;
+    sget-object v1, Lcom/oneplus/android/server/scene/ivd;->zia:Ljava/util/ArrayList;
 
     iget-object v3, p2, Lcom/android/server/wm/ActivityRecord;->packageName:Ljava/lang/String;
 
@@ -1872,7 +1872,7 @@
 
     invoke-static {v0, v1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    iget-object p0, p0, Lcom/android/server/wm/wtn$zta;->mActivityStack:Lcom/android/server/wm/ActivityStack;
+    iget-object p0, p0, Lcom/android/server/wm/gck$zta;->mActivityStack:Lcom/android/server/wm/ActivityStack;
 
     iget-object p0, p0, Lcom/android/server/wm/ActivityStack;->mHandler:Landroid/os/Handler;
 
@@ -1880,14 +1880,14 @@
 
     move-result-object v1
 
-    sget v2, Lcom/oneplus/android/server/scene/ivd;->ria:I
+    sget v2, Lcom/oneplus/android/server/scene/ivd;->Cia:I
 
     int-to-long v2, v2
 
     invoke-virtual {p0, v1, v2, v3}, Landroid/os/Handler;->sendMessageDelayed(Landroid/os/Message;J)Z
 
     :cond_3
-    sget-boolean p0, Lcom/android/server/wm/wtn;->DBG:Z
+    sget-boolean p0, Lcom/android/server/wm/gck;->DBG:Z
 
     if-eqz p0, :cond_4
 
@@ -1913,7 +1913,7 @@
 
     invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sget-object p1, Lcom/oneplus/android/server/scene/ivd;->via:Ljava/lang/String;
+    sget-object p1, Lcom/oneplus/android/server/scene/ivd;->Gia:Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -1930,7 +1930,7 @@
 .method public startEvaluateSceneModes(Lcom/android/server/wm/ActivityRecord;Lcom/android/server/wm/ActivityRecord;)V
     .locals 3
 
-    invoke-static {}, Lcom/android/server/wm/wtn;->access$000()Z
+    invoke-static {}, Lcom/android/server/wm/gck;->access$000()Z
 
     move-result v0
 
@@ -1944,13 +1944,13 @@
     return-void
 
     :cond_1
-    iget-object v0, p0, Lcom/android/server/wm/wtn$zta;->ZQ:Lcom/android/server/wm/ActivityStackSupervisor;
+    iget-object v0, p0, Lcom/android/server/wm/gck$zta;->lR:Lcom/android/server/wm/ActivityStackSupervisor;
 
     invoke-virtual {v0}, Lcom/android/server/wm/ActivityStackSupervisor;->getKeyguardController()Lcom/android/server/wm/KeyguardController;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/server/wm/wtn$zta;->mActivityStack:Lcom/android/server/wm/ActivityStack;
+    iget-object v1, p0, Lcom/android/server/wm/gck$zta;->mActivityStack:Lcom/android/server/wm/ActivityStack;
 
     iget v1, v1, Lcom/android/server/wm/ActivityStack;->mDisplayId:I
 
@@ -1970,7 +1970,7 @@
 
     if-eqz v0, :cond_4
 
-    sget-boolean p0, Lcom/android/server/wm/wtn;->DBG:Z
+    sget-boolean p0, Lcom/android/server/wm/gck;->DBG:Z
 
     if-eqz p0, :cond_3
 
@@ -1984,7 +1984,7 @@
     return-void
 
     :cond_4
-    sget-boolean v0, Lcom/android/server/wm/wtn;->DBG:Z
+    sget-boolean v0, Lcom/android/server/wm/gck;->DBG:Z
 
     if-eqz v0, :cond_5
 
@@ -2008,7 +2008,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sget-object v1, Lcom/android/server/wm/wtn$zta;->oR:Lcom/android/server/wm/ActivityRecord;
+    sget-object v1, Lcom/android/server/wm/gck$zta;->BR:Lcom/android/server/wm/ActivityRecord;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -2016,7 +2016,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sget-object v1, Lcom/android/server/wm/wtn$zta;->pR:Lcom/android/server/wm/ActivityRecord;
+    sget-object v1, Lcom/android/server/wm/gck$zta;->DR:Lcom/android/server/wm/ActivityRecord;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -2031,17 +2031,17 @@
     :cond_5
     if-eq p1, p2, :cond_7
 
-    invoke-direct {p0, p1, p2}, Lcom/android/server/wm/wtn$zta;->you(Lcom/android/server/wm/ActivityRecord;Lcom/android/server/wm/ActivityRecord;)Z
+    invoke-direct {p0, p1, p2}, Lcom/android/server/wm/gck$zta;->you(Lcom/android/server/wm/ActivityRecord;Lcom/android/server/wm/ActivityRecord;)Z
 
     move-result v0
 
     if-eqz v0, :cond_7
 
-    sget-object v0, Lcom/android/server/wm/wtn$zta;->oR:Lcom/android/server/wm/ActivityRecord;
+    sget-object v0, Lcom/android/server/wm/gck$zta;->BR:Lcom/android/server/wm/ActivityRecord;
 
     if-eq p1, v0, :cond_7
 
-    sget-boolean p0, Lcom/android/server/wm/wtn;->DBG:Z
+    sget-boolean p0, Lcom/android/server/wm/gck;->DBG:Z
 
     if-eqz p0, :cond_6
 
@@ -2055,7 +2055,7 @@
     return-void
 
     :cond_7
-    iget-object v0, p0, Lcom/android/server/wm/wtn$zta;->ZQ:Lcom/android/server/wm/ActivityStackSupervisor;
+    iget-object v0, p0, Lcom/android/server/wm/gck$zta;->lR:Lcom/android/server/wm/ActivityStackSupervisor;
 
     iget-object v0, v0, Lcom/android/server/wm/ActivityStackSupervisor;->mService:Lcom/android/server/wm/ActivityTaskManagerService;
 
@@ -2064,7 +2064,7 @@
     monitor-enter v0
 
     :try_start_0
-    iget-object v1, p0, Lcom/android/server/wm/wtn$zta;->ZQ:Lcom/android/server/wm/ActivityStackSupervisor;
+    iget-object v1, p0, Lcom/android/server/wm/gck$zta;->lR:Lcom/android/server/wm/ActivityStackSupervisor;
 
     iget-object v1, v1, Lcom/android/server/wm/ActivityStackSupervisor;->mService:Lcom/android/server/wm/ActivityTaskManagerService;
 
@@ -2074,7 +2074,7 @@
 
     if-eqz v1, :cond_9
 
-    iget-object v1, p0, Lcom/android/server/wm/wtn$zta;->ZQ:Lcom/android/server/wm/ActivityStackSupervisor;
+    iget-object v1, p0, Lcom/android/server/wm/gck$zta;->lR:Lcom/android/server/wm/ActivityStackSupervisor;
 
     iget-object v1, v1, Lcom/android/server/wm/ActivityStackSupervisor;->mService:Lcom/android/server/wm/ActivityTaskManagerService;
 
@@ -2086,7 +2086,7 @@
 
     if-nez v1, :cond_9
 
-    sget-boolean p0, Lcom/android/server/wm/wtn;->DBG:Z
+    sget-boolean p0, Lcom/android/server/wm/gck;->DBG:Z
 
     if-eqz p0, :cond_8
 
@@ -2106,19 +2106,19 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    sget-object v0, Lcom/android/server/wm/wtn$zta;->pR:Lcom/android/server/wm/ActivityRecord;
+    sget-object v0, Lcom/android/server/wm/gck$zta;->DR:Lcom/android/server/wm/ActivityRecord;
 
-    sget-object v1, Lcom/android/server/wm/wtn$zta;->oR:Lcom/android/server/wm/ActivityRecord;
+    sget-object v1, Lcom/android/server/wm/gck$zta;->BR:Lcom/android/server/wm/ActivityRecord;
 
     if-eq v0, v1, :cond_b
 
-    invoke-direct {p0, v0, p2}, Lcom/android/server/wm/wtn$zta;->you(Lcom/android/server/wm/ActivityRecord;Lcom/android/server/wm/ActivityRecord;)Z
+    invoke-direct {p0, v0, p2}, Lcom/android/server/wm/gck$zta;->you(Lcom/android/server/wm/ActivityRecord;Lcom/android/server/wm/ActivityRecord;)Z
 
     move-result v0
 
     if-eqz v0, :cond_b
 
-    sget-boolean p0, Lcom/android/server/wm/wtn;->DBG:Z
+    sget-boolean p0, Lcom/android/server/wm/gck;->DBG:Z
 
     if-eqz p0, :cond_a
 
@@ -2138,7 +2138,7 @@
 
     if-eqz v0, :cond_d
 
-    sget-boolean p0, Lcom/android/server/wm/wtn;->DBG:Z
+    sget-boolean p0, Lcom/android/server/wm/gck;->DBG:Z
 
     if-eqz p0, :cond_c
 
@@ -2152,13 +2152,13 @@
     return-void
 
     :cond_d
-    sput-object p2, Lcom/android/server/wm/wtn$zta;->pR:Lcom/android/server/wm/ActivityRecord;
+    sput-object p2, Lcom/android/server/wm/gck$zta;->DR:Lcom/android/server/wm/ActivityRecord;
 
-    invoke-virtual {p0, p1, p2}, Lcom/android/server/wm/wtn$zta;->startEvaluateGameMode(Lcom/android/server/wm/ActivityRecord;Lcom/android/server/wm/ActivityRecord;)V
+    invoke-virtual {p0, p1, p2}, Lcom/android/server/wm/gck$zta;->startEvaluateGameMode(Lcom/android/server/wm/ActivityRecord;Lcom/android/server/wm/ActivityRecord;)V
 
-    invoke-virtual {p0, p1, p2}, Lcom/android/server/wm/wtn$zta;->startEvaluateReadingMode(Lcom/android/server/wm/ActivityRecord;Lcom/android/server/wm/ActivityRecord;)V
+    invoke-virtual {p0, p1, p2}, Lcom/android/server/wm/gck$zta;->startEvaluateReadingMode(Lcom/android/server/wm/ActivityRecord;Lcom/android/server/wm/ActivityRecord;)V
 
-    invoke-virtual {p0, p1, p2}, Lcom/android/server/wm/wtn$zta;->zta(Lcom/android/server/wm/ActivityRecord;Lcom/android/server/wm/ActivityRecord;)V
+    invoke-virtual {p0, p1, p2}, Lcom/android/server/wm/gck$zta;->zta(Lcom/android/server/wm/ActivityRecord;Lcom/android/server/wm/ActivityRecord;)V
 
     return-void
 
@@ -2176,7 +2176,7 @@
 .method public stopEvaluateSceneModes(Lcom/android/server/wm/ActivityRecord;Lcom/android/server/wm/ActivityRecord;)V
     .locals 3
 
-    invoke-static {}, Lcom/android/server/wm/wtn;->access$000()Z
+    invoke-static {}, Lcom/android/server/wm/gck;->access$000()Z
 
     move-result v0
 
@@ -2185,7 +2185,7 @@
     return-void
 
     :cond_0
-    sget-boolean v0, Lcom/android/server/wm/wtn;->DBG:Z
+    sget-boolean v0, Lcom/android/server/wm/gck;->DBG:Z
 
     const-string v1, "OemSceneModeActivityStack"
 
@@ -2220,21 +2220,21 @@
 
     if-nez p2, :cond_2
 
-    sput-object p1, Lcom/android/server/wm/wtn$zta;->oR:Lcom/android/server/wm/ActivityRecord;
+    sput-object p1, Lcom/android/server/wm/gck$zta;->BR:Lcom/android/server/wm/ActivityRecord;
 
     goto :goto_0
 
     :cond_2
-    sput-object v0, Lcom/android/server/wm/wtn$zta;->oR:Lcom/android/server/wm/ActivityRecord;
+    sput-object v0, Lcom/android/server/wm/gck$zta;->BR:Lcom/android/server/wm/ActivityRecord;
 
     :goto_0
-    invoke-direct {p0, p1, p2}, Lcom/android/server/wm/wtn$zta;->you(Lcom/android/server/wm/ActivityRecord;Lcom/android/server/wm/ActivityRecord;)Z
+    invoke-direct {p0, p1, p2}, Lcom/android/server/wm/gck$zta;->you(Lcom/android/server/wm/ActivityRecord;Lcom/android/server/wm/ActivityRecord;)Z
 
     move-result p1
 
     if-eqz p1, :cond_4
 
-    sget-boolean p0, Lcom/android/server/wm/wtn;->DBG:Z
+    sget-boolean p0, Lcom/android/server/wm/gck;->DBG:Z
 
     if-eqz p0, :cond_3
 
@@ -2246,7 +2246,7 @@
     return-void
 
     :cond_4
-    iget-object p1, p0, Lcom/android/server/wm/wtn$zta;->mActivityStack:Lcom/android/server/wm/ActivityStack;
+    iget-object p1, p0, Lcom/android/server/wm/gck$zta;->mActivityStack:Lcom/android/server/wm/ActivityStack;
 
     iget-object p1, p1, Lcom/android/server/wm/ActivityStack;->mHandler:Landroid/os/Handler;
 
@@ -2258,16 +2258,16 @@
 
     if-eqz p1, :cond_5
 
-    iget-object p1, p0, Lcom/android/server/wm/wtn$zta;->mActivityStack:Lcom/android/server/wm/ActivityStack;
+    iget-object p1, p0, Lcom/android/server/wm/gck$zta;->mActivityStack:Lcom/android/server/wm/ActivityStack;
 
     iget-object p1, p1, Lcom/android/server/wm/ActivityStack;->mHandler:Landroid/os/Handler;
 
     invoke-virtual {p1, p2}, Landroid/os/Handler;->removeMessages(I)V
 
-    sput-object v0, Lcom/android/server/wm/wtn$zta;->pR:Lcom/android/server/wm/ActivityRecord;
+    sput-object v0, Lcom/android/server/wm/gck$zta;->DR:Lcom/android/server/wm/ActivityRecord;
 
     :cond_5
-    iget-object p1, p0, Lcom/android/server/wm/wtn$zta;->mActivityStack:Lcom/android/server/wm/ActivityStack;
+    iget-object p1, p0, Lcom/android/server/wm/gck$zta;->mActivityStack:Lcom/android/server/wm/ActivityStack;
 
     iget-object p1, p1, Lcom/android/server/wm/ActivityStack;->mHandler:Landroid/os/Handler;
 
@@ -2279,13 +2279,13 @@
 
     if-eqz p1, :cond_6
 
-    iget-object p0, p0, Lcom/android/server/wm/wtn$zta;->mActivityStack:Lcom/android/server/wm/ActivityStack;
+    iget-object p0, p0, Lcom/android/server/wm/gck$zta;->mActivityStack:Lcom/android/server/wm/ActivityStack;
 
     iget-object p0, p0, Lcom/android/server/wm/ActivityStack;->mHandler:Landroid/os/Handler;
 
     invoke-virtual {p0, p2}, Landroid/os/Handler;->removeMessages(I)V
 
-    sput-object v0, Lcom/android/server/wm/wtn$zta;->pR:Lcom/android/server/wm/ActivityRecord;
+    sput-object v0, Lcom/android/server/wm/gck$zta;->DR:Lcom/android/server/wm/ActivityRecord;
 
     :cond_6
     return-void
@@ -2294,7 +2294,7 @@
 .method public updateDisableSceneScreenEffectFlag(I)V
     .locals 2
 
-    iget-object p0, p0, Lcom/android/server/wm/wtn$zta;->mContext:Landroid/content/Context;
+    iget-object p0, p0, Lcom/android/server/wm/gck$zta;->mContext:Landroid/content/Context;
 
     invoke-virtual {p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -2306,7 +2306,7 @@
 
     invoke-static {p0, v0, p1, v1}, Landroid/provider/Settings$System;->putIntForUser(Landroid/content/ContentResolver;Ljava/lang/String;II)Z
 
-    sget-boolean p0, Lcom/android/server/wm/wtn;->DBG:Z
+    sget-boolean p0, Lcom/android/server/wm/gck;->DBG:Z
 
     if-eqz p0, :cond_0
 
@@ -2335,7 +2335,7 @@
 .method public updateSceneScreenEffectFlag(I)V
     .locals 2
 
-    iget-object v0, p0, Lcom/android/server/wm/wtn$zta;->mActivityStack:Lcom/android/server/wm/ActivityStack;
+    iget-object v0, p0, Lcom/android/server/wm/gck$zta;->mActivityStack:Lcom/android/server/wm/ActivityStack;
 
     iget-object v0, v0, Lcom/android/server/wm/ActivityStack;->mHandler:Landroid/os/Handler;
 
@@ -2347,7 +2347,7 @@
 
     iput p1, v0, Landroid/os/Message;->arg1:I
 
-    iget-object p0, p0, Lcom/android/server/wm/wtn$zta;->mActivityStack:Lcom/android/server/wm/ActivityStack;
+    iget-object p0, p0, Lcom/android/server/wm/gck$zta;->mActivityStack:Lcom/android/server/wm/ActivityStack;
 
     iget-object p0, p0, Lcom/android/server/wm/ActivityStack;->mHandler:Landroid/os/Handler;
 
@@ -2359,7 +2359,7 @@
 .method public updateSceneScreenEffectFlag(Lcom/android/server/am/ActivityManagerService;Lcom/android/server/wm/ActivityRecord;)V
     .locals 7
 
-    invoke-static {}, Lcom/android/server/wm/wtn;->access$000()Z
+    invoke-static {}, Lcom/android/server/wm/gck;->access$000()Z
 
     move-result v0
 
@@ -2476,13 +2476,13 @@
     :goto_2
     iget-object p1, p1, Lcom/android/server/am/ActivityManagerService;->mActivityTaskManager:Lcom/android/server/wm/ActivityTaskManagerService;
 
-    invoke-static {p1, p2}, Lcom/android/server/wm/wtn;->shouldIgnoreSceneEvaluation(Lcom/android/server/wm/ActivityTaskManagerService;Lcom/android/server/wm/ActivityRecord;)Z
+    invoke-static {p1, p2}, Lcom/android/server/wm/gck;->shouldIgnoreSceneEvaluation(Lcom/android/server/wm/ActivityTaskManagerService;Lcom/android/server/wm/ActivityRecord;)Z
 
     move-result p1
 
     if-eqz p1, :cond_7
 
-    sget-boolean p0, Lcom/android/server/wm/wtn;->DBG:Z
+    sget-boolean p0, Lcom/android/server/wm/gck;->DBG:Z
 
     if-eqz p0, :cond_6
 
@@ -2498,7 +2498,7 @@
     :cond_7
     if-eq v2, v4, :cond_8
 
-    invoke-virtual {p0, v2}, Lcom/android/server/wm/wtn$zta;->updateSceneScreenEffectFlag(I)V
+    invoke-virtual {p0, v2}, Lcom/android/server/wm/gck$zta;->updateSceneScreenEffectFlag(I)V
 
     :cond_8
     return-void
@@ -2519,9 +2519,9 @@
 
     if-eqz p1, :cond_0
 
-    iget-object p1, p0, Lcom/android/server/wm/wtn$zta;->eR:Ljava/util/ArrayList;
+    iget-object p1, p0, Lcom/android/server/wm/gck$zta;->sR:Ljava/util/ArrayList;
 
-    iget-object v0, p0, Lcom/android/server/wm/wtn$zta;->aR:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/server/wm/gck$zta;->oR:Ljava/lang/String;
 
     invoke-virtual {p1, v0}, Ljava/util/ArrayList;->contains(Ljava/lang/Object;)Z
 
@@ -2529,35 +2529,35 @@
 
     if-nez p1, :cond_1
 
-    iget-object p1, p0, Lcom/android/server/wm/wtn$zta;->eR:Ljava/util/ArrayList;
+    iget-object p1, p0, Lcom/android/server/wm/gck$zta;->sR:Ljava/util/ArrayList;
 
-    iget-object v0, p0, Lcom/android/server/wm/wtn$zta;->aR:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/server/wm/gck$zta;->oR:Ljava/lang/String;
 
     invoke-virtual {p1, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     const/4 p1, 0x1
 
-    iput-boolean p1, p0, Lcom/android/server/wm/wtn$zta;->bR:Z
+    iput-boolean p1, p0, Lcom/android/server/wm/gck$zta;->pR:Z
 
-    iget-object p1, p0, Lcom/android/server/wm/wtn$zta;->aR:Ljava/lang/String;
+    iget-object p1, p0, Lcom/android/server/wm/gck$zta;->oR:Ljava/lang/String;
 
     goto :goto_0
 
     :cond_0
-    iget-object p1, p0, Lcom/android/server/wm/wtn$zta;->eR:Ljava/util/ArrayList;
+    iget-object p1, p0, Lcom/android/server/wm/gck$zta;->sR:Ljava/util/ArrayList;
 
-    iget-object v0, p0, Lcom/android/server/wm/wtn$zta;->aR:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/server/wm/gck$zta;->oR:Ljava/lang/String;
 
     invoke-virtual {p1, v0}, Ljava/util/ArrayList;->remove(Ljava/lang/Object;)Z
 
     const/4 p1, 0x0
 
-    iput-boolean p1, p0, Lcom/android/server/wm/wtn$zta;->bR:Z
+    iput-boolean p1, p0, Lcom/android/server/wm/gck$zta;->pR:Z
 
     const/4 p1, 0x0
 
     :goto_0
-    iput-object p1, p0, Lcom/android/server/wm/wtn$zta;->cR:Ljava/lang/String;
+    iput-object p1, p0, Lcom/android/server/wm/gck$zta;->qR:Ljava/lang/String;
 
     :cond_1
     return-void
@@ -2566,7 +2566,7 @@
 .method public zta(Lcom/android/server/wm/ActivityRecord;Lcom/android/server/wm/ActivityRecord;)V
     .locals 5
 
-    iget-object p1, p0, Lcom/android/server/wm/wtn$zta;->ZQ:Lcom/android/server/wm/ActivityStackSupervisor;
+    iget-object p1, p0, Lcom/android/server/wm/gck$zta;->lR:Lcom/android/server/wm/ActivityStackSupervisor;
 
     iget-object p1, p1, Lcom/android/server/wm/ActivityStackSupervisor;->mService:Lcom/android/server/wm/ActivityTaskManagerService;
 
@@ -2606,7 +2606,7 @@
 
     if-eqz p1, :cond_1
 
-    iget-object p0, p0, Lcom/android/server/wm/wtn$zta;->mContext:Landroid/content/Context;
+    iget-object p0, p0, Lcom/android/server/wm/gck$zta;->mContext:Landroid/content/Context;
 
     invoke-virtual {p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -2617,7 +2617,7 @@
     goto :goto_2
 
     :cond_1
-    iget-object v4, p0, Lcom/android/server/wm/wtn$zta;->mContext:Landroid/content/Context;
+    iget-object v4, p0, Lcom/android/server/wm/gck$zta;->mContext:Landroid/content/Context;
 
     invoke-virtual {v4}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -2635,7 +2635,7 @@
     move v1, v4
 
     :goto_1
-    iget-object p0, p0, Lcom/android/server/wm/wtn$zta;->mContext:Landroid/content/Context;
+    iget-object p0, p0, Lcom/android/server/wm/gck$zta;->mContext:Landroid/content/Context;
 
     invoke-virtual {p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -2644,7 +2644,7 @@
     invoke-static {p0, v3, v1, v2}, Landroid/provider/Settings$Secure;->putIntForUser(Landroid/content/ContentResolver;Ljava/lang/String;II)Z
 
     :goto_2
-    sget-boolean p0, Lcom/android/server/wm/wtn;->DBG:Z
+    sget-boolean p0, Lcom/android/server/wm/gck;->DBG:Z
 
     if-eqz p0, :cond_3
 

@@ -11,9 +11,9 @@
 
 
 # instance fields
-.field private fba:Landroid/app/prediction/AppPredictor;
-
 .field private mContext:Landroid/content/Context;
+
+.field private qba:Landroid/app/prediction/AppPredictor;
 
 
 # direct methods
@@ -24,7 +24,7 @@
 
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/oneplus/android/server/zta/zta/zta;->fba:Landroid/app/prediction/AppPredictor;
+    iput-object v0, p0, Lcom/oneplus/android/server/zta/zta/zta;->qba:Landroid/app/prediction/AppPredictor;
 
     return-void
 .end method
@@ -59,7 +59,7 @@
     return-void
 
     :cond_2
-    iget-object p0, p0, Lcom/oneplus/android/server/zta/zta/zta;->fba:Landroid/app/prediction/AppPredictor;
+    iget-object p0, p0, Lcom/oneplus/android/server/zta/zta/zta;->qba:Landroid/app/prediction/AppPredictor;
 
     if-eqz p0, :cond_3
 
@@ -119,7 +119,7 @@
     return-void
 
     :cond_0
-    iget-object p0, p0, Lcom/oneplus/android/server/zta/zta/zta;->fba:Landroid/app/prediction/AppPredictor;
+    iget-object p0, p0, Lcom/oneplus/android/server/zta/zta/zta;->qba:Landroid/app/prediction/AppPredictor;
 
     if-eqz p0, :cond_1
 
@@ -202,7 +202,7 @@
 
     move-result-object p1
 
-    iput-object p1, p0, Lcom/oneplus/android/server/zta/zta/zta;->fba:Landroid/app/prediction/AppPredictor;
+    iput-object p1, p0, Lcom/oneplus/android/server/zta/zta/zta;->qba:Landroid/app/prediction/AppPredictor;
 
     return-void
 .end method

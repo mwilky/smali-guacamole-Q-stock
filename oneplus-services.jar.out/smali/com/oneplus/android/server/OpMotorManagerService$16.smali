@@ -46,13 +46,13 @@
 .method public onProcessDied(II)V
     .locals 2
 
-    invoke-static {}, Lcom/oneplus/android/server/vdb;->access$2300()I
+    invoke-static {}, Lcom/oneplus/android/server/vdb;->we()I
 
     move-result v0
 
     if-eqz v0, :cond_1
 
-    invoke-static {}, Lcom/oneplus/android/server/vdb;->access$2300()I
+    invoke-static {}, Lcom/oneplus/android/server/vdb;->we()I
 
     move-result v0
 

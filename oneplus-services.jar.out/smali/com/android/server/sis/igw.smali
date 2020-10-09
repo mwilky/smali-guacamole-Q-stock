@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field final synthetic Eqa:Landroid/widget/Toast;
+.field final synthetic Pqa:Landroid/widget/Toast;
 
 .field final synthetic this$0:Lcom/android/server/sis/vdb;
 
@@ -26,7 +26,7 @@
 
     iput-object p1, p0, Lcom/android/server/sis/igw;->this$0:Lcom/android/server/sis/vdb;
 
-    iput-object p2, p0, Lcom/android/server/sis/igw;->Eqa:Landroid/widget/Toast;
+    iput-object p2, p0, Lcom/android/server/sis/igw;->Pqa:Landroid/widget/Toast;
 
     invoke-direct {p0}, Ljava/util/TimerTask;-><init>()V
 
@@ -38,7 +38,7 @@
 .method public run()V
     .locals 0
 
-    iget-object p0, p0, Lcom/android/server/sis/igw;->Eqa:Landroid/widget/Toast;
+    iget-object p0, p0, Lcom/android/server/sis/igw;->Pqa:Landroid/widget/Toast;
 
     invoke-virtual {p0}, Landroid/widget/Toast;->show()V
 

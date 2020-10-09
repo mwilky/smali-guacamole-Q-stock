@@ -17,7 +17,7 @@
 # static fields
 .field public static final GET_ONLINECONFIG:I = 0x0
 
-.field public static final lqr:I = 0xea60
+.field public static final cgv:I = 0xea60
 
 
 # instance fields

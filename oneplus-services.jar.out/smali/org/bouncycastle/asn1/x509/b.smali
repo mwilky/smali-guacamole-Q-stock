@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field private Nta:[B
+.field private Yta:[B
 
 
 # direct methods
@@ -29,7 +29,7 @@
 
     move-result-object p1
 
-    iput-object p1, p0, Lorg/bouncycastle/asn1/x509/b;->Nta:[B
+    iput-object p1, p0, Lorg/bouncycastle/asn1/x509/b;->Yta:[B
 
     return-void
 .end method
@@ -81,7 +81,7 @@
 .method public static zta(Lorg/bouncycastle/asn1/x509/ugm;)Lorg/bouncycastle/asn1/x509/b;
     .locals 1
 
-    sget-object v0, Lorg/bouncycastle/asn1/x509/gwm;->dua:Lorg/bouncycastle/asn1/bvj;
+    sget-object v0, Lorg/bouncycastle/asn1/x509/gwm;->oua:Lorg/bouncycastle/asn1/bvj;
 
     invoke-virtual {p0, v0}, Lorg/bouncycastle/asn1/x509/ugm;->cno(Lorg/bouncycastle/asn1/bvj;)Lorg/bouncycastle/asn1/ssp;
 
@@ -99,7 +99,7 @@
 .method public getKeyIdentifier()[B
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/asn1/x509/b;->Nta:[B
+    iget-object p0, p0, Lorg/bouncycastle/asn1/x509/b;->Yta:[B
 
     invoke-static {p0}, Lorg/bouncycastle/util/zta;->vdb([B)[B
 

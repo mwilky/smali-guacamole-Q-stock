@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/server/wm/OPAppSwitchManagerService;->handleActivityResumed(Lcom/android/server/wm/ActivityRecord;)V
+    value = Lcom/android/server/wm/OPAppSwitchManagerService;->handleActivityPaused(Lcom/android/server/wm/ActivityRecord;Lcom/android/server/wm/ActivityRecord;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,7 +18,9 @@
 
 
 # instance fields
-.field final synthetic UQ:Z
+.field final synthetic eR:Lcom/android/server/wm/ActivityRecord;
+
+.field final synthetic fR:Z
 
 .field final synthetic this$0:Lcom/android/server/wm/OPAppSwitchManagerService;
 
@@ -26,14 +28,16 @@
 
 
 # direct methods
-.method constructor <init>(Lcom/android/server/wm/OPAppSwitchManagerService;Lcom/android/server/wm/ActivityRecord;Z)V
+.method constructor <init>(Lcom/android/server/wm/OPAppSwitchManagerService;Lcom/android/server/wm/ActivityRecord;Lcom/android/server/wm/ActivityRecord;Z)V
     .locals 0
 
     iput-object p1, p0, Lcom/android/server/wm/rtg;->this$0:Lcom/android/server/wm/OPAppSwitchManagerService;
 
     iput-object p2, p0, Lcom/android/server/wm/rtg;->val$r:Lcom/android/server/wm/ActivityRecord;
 
-    iput-boolean p3, p0, Lcom/android/server/wm/rtg;->UQ:Z
+    iput-object p3, p0, Lcom/android/server/wm/rtg;->eR:Lcom/android/server/wm/ActivityRecord;
+
+    iput-boolean p4, p0, Lcom/android/server/wm/rtg;->fR:Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -43,20 +47,32 @@
 
 # virtual methods
 .method public run()V
-    .locals 2
+    .locals 3
 
     :try_start_0
     iget-object v0, p0, Lcom/android/server/wm/rtg;->this$0:Lcom/android/server/wm/OPAppSwitchManagerService;
 
     iget-object v1, p0, Lcom/android/server/wm/rtg;->val$r:Lcom/android/server/wm/ActivityRecord;
 
-    iget-boolean p0, p0, Lcom/android/server/wm/rtg;->UQ:Z
+    iget-object v2, p0, Lcom/android/server/wm/rtg;->eR:Lcom/android/server/wm/ActivityRecord;
 
-    invoke-static {v0, v1, p0}, Lcom/android/server/wm/OPAppSwitchManagerService;->access$800(Lcom/android/server/wm/OPAppSwitchManagerService;Lcom/android/server/wm/ActivityRecord;Z)V
+    iget-boolean p0, p0, Lcom/android/server/wm/rtg;->fR:Z
+
+    if-nez p0, :cond_0
+
+    const/4 p0, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 p0, 0x0
+
+    :goto_0
+    invoke-static {v0, v1, v2, p0}, Lcom/android/server/wm/OPAppSwitchManagerService;->access$700(Lcom/android/server/wm/OPAppSwitchManagerService;Lcom/android/server/wm/ActivityRecord;Lcom/android/server/wm/ActivityRecord;Z)V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    goto :goto_0
+    goto :goto_1
 
     :catch_0
     move-exception p0
@@ -65,10 +81,10 @@
 
     const-string p0, "OPAppSwitchManagerService"
 
-    const-string v0, " onActivityResumed error."
+    const-string v0, " onActivityPaused error."
 
     invoke-static {p0, v0}, Landroid/util/Slog;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    :goto_0
+    :goto_1
     return-void
 .end method

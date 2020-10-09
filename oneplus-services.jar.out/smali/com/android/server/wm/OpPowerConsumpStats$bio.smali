@@ -27,6 +27,8 @@
 
 
 # instance fields
+.field CS:Ljava/text/DecimalFormat;
+
 .field public audioPowerMah:D
 
 .field public bluetoothPowerMah:D
@@ -42,8 +44,6 @@
 .field public gpsPowerMah:D
 
 .field public mobileRadioPowerMah:D
-
-.field pS:Ljava/text/DecimalFormat;
 
 .field public pkgName:Ljava/lang/String;
 
@@ -128,7 +128,7 @@
 
     invoke-direct {p1, v0}, Ljava/text/DecimalFormat;-><init>(Ljava/lang/String;)V
 
-    iput-object p1, p0, Lcom/android/server/wm/OpPowerConsumpStats$bio;->pS:Ljava/text/DecimalFormat;
+    iput-object p1, p0, Lcom/android/server/wm/OpPowerConsumpStats$bio;->CS:Ljava/text/DecimalFormat;
 
     return-void
 .end method
@@ -192,16 +192,16 @@
 
     invoke-direct {p1, v0}, Ljava/text/DecimalFormat;-><init>(Ljava/lang/String;)V
 
-    iput-object p1, p0, Lcom/android/server/wm/OpPowerConsumpStats$bio;->pS:Ljava/text/DecimalFormat;
+    iput-object p1, p0, Lcom/android/server/wm/OpPowerConsumpStats$bio;->CS:Ljava/text/DecimalFormat;
 
     iput-object p2, p0, Lcom/android/server/wm/OpPowerConsumpStats$bio;->uid:Ljava/lang/Integer;
 
-    invoke-direct {p0}, Lcom/android/server/wm/OpPowerConsumpStats$bio;->Hp()V
+    invoke-direct {p0}, Lcom/android/server/wm/OpPowerConsumpStats$bio;->Lp()V
 
     return-void
 .end method
 
-.method private Hp()V
+.method private Lp()V
     .locals 2
 
     iget-object v0, p0, Lcom/android/server/wm/OpPowerConsumpStats$bio;->uid:Ljava/lang/Integer;
@@ -246,7 +246,7 @@
     return-void
 .end method
 
-.method private Ip()Z
+.method private Mp()Z
     .locals 5
 
     iget-object v0, p0, Lcom/android/server/wm/OpPowerConsumpStats$bio;->uid:Ljava/lang/Integer;
@@ -1177,7 +1177,7 @@
 .method static synthetic zta(Lcom/android/server/wm/OpPowerConsumpStats$bio;)Z
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/wm/OpPowerConsumpStats$bio;->Ip()Z
+    invoke-direct {p0}, Lcom/android/server/wm/OpPowerConsumpStats$bio;->Mp()Z
 
     move-result p0
 

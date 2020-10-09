@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field Moa:Ljava/security/SecureRandom;
+.field Xoa:Ljava/security/SecureRandom;
 
 
 # direct methods
@@ -18,7 +18,7 @@
 
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lorg/bouncycastle/crypto/igw/cno;->Moa:Ljava/security/SecureRandom;
+    iput-object v0, p0, Lorg/bouncycastle/crypto/igw/cno;->Xoa:Ljava/security/SecureRandom;
 
     return-void
 .end method
@@ -41,7 +41,7 @@
         }
     .end annotation
 
-    iput-object p1, p0, Lorg/bouncycastle/crypto/igw/cno;->Moa:Ljava/security/SecureRandom;
+    iput-object p1, p0, Lorg/bouncycastle/crypto/igw/cno;->Xoa:Ljava/security/SecureRandom;
 
     return-void
 .end method
@@ -94,7 +94,7 @@
 
     if-ge p2, v1, :cond_1
 
-    iget-object v1, p0, Lorg/bouncycastle/crypto/igw/cno;->Moa:Ljava/security/SecureRandom;
+    iget-object v1, p0, Lorg/bouncycastle/crypto/igw/cno;->Xoa:Ljava/security/SecureRandom;
 
     if-nez v1, :cond_0
 

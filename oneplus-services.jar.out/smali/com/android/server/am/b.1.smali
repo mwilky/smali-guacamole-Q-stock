@@ -20,9 +20,9 @@
 
 .field private static final TAG:Ljava/lang/String; = "OnePlusGameShakeController"
 
-.field private static final Vr:Ljava/lang/String; = "GameShakeConfig"
+.field private static final ds:Ljava/lang/String; = "GameShakeConfig"
 
-.field private static Wr:Ljava/util/HashMap; = null
+.field private static es:Ljava/util/HashMap; = null
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/HashMap<",
@@ -33,7 +33,7 @@
     .end annotation
 .end field
 
-.field private static final Xr:Ljava/lang/String; = "GameMultiTouchConfig"
+.field private static final fs:Ljava/lang/String; = "GameMultiTouchConfig"
 
 .field private static sInstance:Lcom/android/server/am/b;
 
@@ -49,7 +49,7 @@
 
 
 # instance fields
-.field private Ur:Lcom/oneplus/config/ConfigObserver;
+.field private cs:Lcom/oneplus/config/ConfigObserver;
 
 .field private mConfigObserver:Lcom/oneplus/config/ConfigObserver;
 
@@ -66,7 +66,7 @@
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    sput-object v0, Lcom/android/server/am/b;->Wr:Ljava/util/HashMap;
+    sput-object v0, Lcom/android/server/am/b;->es:Ljava/util/HashMap;
 
     const-string v1, "com.tencent.tmgp.sgame"
 
@@ -188,7 +188,7 @@
 
     if-eqz v2, :cond_2
 
-    sget-object v2, Lcom/android/server/am/b;->Wr:Ljava/util/HashMap;
+    sget-object v2, Lcom/android/server/am/b;->es:Ljava/util/HashMap;
 
     monitor-enter v2
     :try_end_0
@@ -197,7 +197,7 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_2
 
     :try_start_1
-    sget-object v3, Lcom/android/server/am/b;->Wr:Ljava/util/HashMap;
+    sget-object v3, Lcom/android/server/am/b;->es:Ljava/util/HashMap;
 
     invoke-virtual {v3}, Ljava/util/HashMap;->clear()V
 
@@ -232,7 +232,7 @@
 
     move-result-object v4
 
-    sget-object v6, Lcom/android/server/am/b;->Wr:Ljava/util/HashMap;
+    sget-object v6, Lcom/android/server/am/b;->es:Ljava/util/HashMap;
 
     invoke-virtual {v6, v5, v4}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -509,7 +509,7 @@
 .method public getGameShakeConfig(Ljava/lang/String;)Ljava/lang/String;
     .locals 0
 
-    sget-object p0, Lcom/android/server/am/b;->Wr:Ljava/util/HashMap;
+    sget-object p0, Lcom/android/server/am/b;->es:Ljava/util/HashMap;
 
     if-eqz p0, :cond_0
 
@@ -566,9 +566,9 @@
 
     invoke-direct {v0, v1, v2, v3, v4}, Lcom/oneplus/config/ConfigObserver;-><init>(Landroid/content/Context;Landroid/os/Handler;Lcom/oneplus/config/ConfigObserver$ConfigUpdater;Ljava/lang/String;)V
 
-    iput-object v0, p0, Lcom/android/server/am/b;->Ur:Lcom/oneplus/config/ConfigObserver;
+    iput-object v0, p0, Lcom/android/server/am/b;->cs:Lcom/oneplus/config/ConfigObserver;
 
-    iget-object v0, p0, Lcom/android/server/am/b;->Ur:Lcom/oneplus/config/ConfigObserver;
+    iget-object v0, p0, Lcom/android/server/am/b;->cs:Lcom/oneplus/config/ConfigObserver;
 
     invoke-virtual {v0}, Lcom/oneplus/config/ConfigObserver;->register()V
 

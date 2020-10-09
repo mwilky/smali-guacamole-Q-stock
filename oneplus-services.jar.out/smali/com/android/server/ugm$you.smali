@@ -17,15 +17,15 @@
 # static fields
 .field public static final GET_ONLINECONFIG:I = 0x6
 
-.field public static final ear:I = 0x1
+.field public static final cgv:I = 0xea60
 
-.field public static final fto:I = 0x5
+.field public static final fto:I = 0x3
 
-.field public static final hmo:I = 0x4
+.field public static final hmo:I = 0x1
 
-.field public static final ire:I = 0x3
+.field public static final lqr:I = 0x4
 
-.field public static final lqr:I = 0xea60
+.field public static final veq:I = 0x5
 
 
 # instance fields

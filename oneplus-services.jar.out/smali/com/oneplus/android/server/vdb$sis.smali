@@ -15,19 +15,19 @@
 
 
 # static fields
-.field private static final Dw:Ljava/lang/String; = "motor_socket"
+.field private static final Mw:Ljava/lang/String; = "motor_socket"
 
-.field private static final Joa:Ljava/lang/String; = "MotorSocketServer"
+.field private static final Uoa:Ljava/lang/String; = "MotorSocketServer"
 
-.field private static final Koa:I = 0x400
+.field private static final Voa:I = 0x400
 
-.field private static final Loa:I = 0x3
+.field private static final Woa:I = 0x3
 
 
 # instance fields
-.field private Hoa:Z
+.field private Soa:Z
 
-.field private Ioa:Landroid/net/LocalServerSocket;
+.field private Toa:Landroid/net/LocalServerSocket;
 
 .field private final mService:Lcom/oneplus/android/server/vdb;
 
@@ -44,7 +44,7 @@
 
     const/4 p1, 0x1
 
-    iput-boolean p1, p0, Lcom/oneplus/android/server/vdb$sis;->Hoa:Z
+    iput-boolean p1, p0, Lcom/oneplus/android/server/vdb$sis;->Soa:Z
 
     iput-object p2, p0, Lcom/oneplus/android/server/vdb$sis;->mService:Lcom/oneplus/android/server/vdb;
 
@@ -234,12 +234,12 @@
 
 
 # virtual methods
-.method public Zf()V
+.method public ag()V
     .locals 1
 
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/oneplus/android/server/vdb$sis;->Hoa:Z
+    iput-boolean v0, p0, Lcom/oneplus/android/server/vdb$sis;->Soa:Z
 
     return-void
 .end method
@@ -271,15 +271,15 @@
 
     invoke-direct {v0, v2}, Landroid/net/LocalServerSocket;-><init>(Ljava/lang/String;)V
 
-    iput-object v0, p0, Lcom/oneplus/android/server/vdb$sis;->Ioa:Landroid/net/LocalServerSocket;
+    iput-object v0, p0, Lcom/oneplus/android/server/vdb$sis;->Toa:Landroid/net/LocalServerSocket;
 
     :cond_1
     :goto_0
-    iget-boolean v0, p0, Lcom/oneplus/android/server/vdb$sis;->Hoa:Z
+    iget-boolean v0, p0, Lcom/oneplus/android/server/vdb$sis;->Soa:Z
 
     if-eqz v0, :cond_4
 
-    iget-object v0, p0, Lcom/oneplus/android/server/vdb$sis;->Ioa:Landroid/net/LocalServerSocket;
+    iget-object v0, p0, Lcom/oneplus/android/server/vdb$sis;->Toa:Landroid/net/LocalServerSocket;
 
     if-eqz v0, :cond_4
 
@@ -294,13 +294,13 @@
     invoke-static {v1, v0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_2
-    iget-object v0, p0, Lcom/oneplus/android/server/vdb$sis;->Ioa:Landroid/net/LocalServerSocket;
+    iget-object v0, p0, Lcom/oneplus/android/server/vdb$sis;->Toa:Landroid/net/LocalServerSocket;
 
     invoke-virtual {v0}, Landroid/net/LocalServerSocket;->accept()Landroid/net/LocalSocket;
 
     move-result-object v0
 
-    iget-boolean v2, p0, Lcom/oneplus/android/server/vdb$sis;->Hoa:Z
+    iget-boolean v2, p0, Lcom/oneplus/android/server/vdb$sis;->Soa:Z
 
     if-eqz v2, :cond_1
 
@@ -324,11 +324,11 @@
 
     :cond_4
     :try_start_2
-    iget-object v0, p0, Lcom/oneplus/android/server/vdb$sis;->Ioa:Landroid/net/LocalServerSocket;
+    iget-object v0, p0, Lcom/oneplus/android/server/vdb$sis;->Toa:Landroid/net/LocalServerSocket;
 
     if-eqz v0, :cond_5
 
-    iget-object p0, p0, Lcom/oneplus/android/server/vdb$sis;->Ioa:Landroid/net/LocalServerSocket;
+    iget-object p0, p0, Lcom/oneplus/android/server/vdb$sis;->Toa:Landroid/net/LocalServerSocket;
 
     invoke-virtual {p0}, Landroid/net/LocalServerSocket;->close()V
     :try_end_2
@@ -350,11 +350,11 @@
     .catchall {:try_start_3 .. :try_end_3} :catchall_0
 
     :try_start_4
-    iget-object v0, p0, Lcom/oneplus/android/server/vdb$sis;->Ioa:Landroid/net/LocalServerSocket;
+    iget-object v0, p0, Lcom/oneplus/android/server/vdb$sis;->Toa:Landroid/net/LocalServerSocket;
 
     if-eqz v0, :cond_5
 
-    iget-object p0, p0, Lcom/oneplus/android/server/vdb$sis;->Ioa:Landroid/net/LocalServerSocket;
+    iget-object p0, p0, Lcom/oneplus/android/server/vdb$sis;->Toa:Landroid/net/LocalServerSocket;
 
     invoke-virtual {p0}, Landroid/net/LocalServerSocket;->close()V
     :try_end_4
@@ -373,11 +373,11 @@
 
     :goto_2
     :try_start_5
-    iget-object v1, p0, Lcom/oneplus/android/server/vdb$sis;->Ioa:Landroid/net/LocalServerSocket;
+    iget-object v1, p0, Lcom/oneplus/android/server/vdb$sis;->Toa:Landroid/net/LocalServerSocket;
 
     if-eqz v1, :cond_6
 
-    iget-object p0, p0, Lcom/oneplus/android/server/vdb$sis;->Ioa:Landroid/net/LocalServerSocket;
+    iget-object p0, p0, Lcom/oneplus/android/server/vdb$sis;->Toa:Landroid/net/LocalServerSocket;
 
     invoke-virtual {p0}, Landroid/net/LocalServerSocket;->close()V
     :try_end_5

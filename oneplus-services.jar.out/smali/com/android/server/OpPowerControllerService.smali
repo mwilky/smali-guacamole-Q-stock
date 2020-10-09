@@ -1775,7 +1775,7 @@
 
     check-cast v7, Lcom/android/server/OpPowerControllerService$sis;
 
-    iput-boolean v5, v7, Lcom/android/server/OpPowerControllerService$sis;->sf:Z
+    iput-boolean v5, v7, Lcom/android/server/OpPowerControllerService$sis;->yf:Z
 
     iget-object v7, p0, Lcom/android/server/OpPowerControllerService;->mNetworkManagementService:Landroid/os/INetworkManagementService;
 
@@ -1900,7 +1900,7 @@
 
     check-cast v7, Lcom/android/server/OpPowerControllerService$sis;
 
-    iget-boolean v7, v7, Lcom/android/server/OpPowerControllerService$sis;->sf:Z
+    iget-boolean v7, v7, Lcom/android/server/OpPowerControllerService$sis;->yf:Z
 
     if-eqz v7, :cond_b
 
@@ -1912,7 +1912,7 @@
 
     check-cast v7, Lcom/android/server/OpPowerControllerService$sis;
 
-    iput-boolean v6, v7, Lcom/android/server/OpPowerControllerService$sis;->sf:Z
+    iput-boolean v6, v7, Lcom/android/server/OpPowerControllerService$sis;->yf:Z
 
     iget-object v7, p0, Lcom/android/server/OpPowerControllerService;->mContext:Landroid/content/Context;
 
@@ -6792,11 +6792,11 @@
     .catch Ljava/lang/InterruptedException; {:try_start_0 .. :try_end_0} :catch_1
     .catch Ljava/lang/ArrayIndexOutOfBoundsException; {:try_start_0 .. :try_end_0} :catch_0
 
-    invoke-virtual {v2}, Lcom/android/server/ivd;->Yf()Z
+    invoke-virtual {v2}, Lcom/android/server/ivd;->_f()Z
 
     move-result p0
 
-    invoke-virtual {v4}, Lcom/android/server/ivd;->Yf()Z
+    invoke-virtual {v4}, Lcom/android/server/ivd;->_f()Z
 
     move-result v1
 
@@ -10540,7 +10540,7 @@
 
     sput-boolean v3, Lcom/android/server/OpPowerControllerService;->mDebugOneplus:Z
 
-    sput-boolean v3, Lcom/android/server/you$zta;->Rb:Z
+    sput-boolean v3, Lcom/android/server/you$zta;->Xb:Z
 
     const-string p1, "log is on"
 
@@ -10560,7 +10560,7 @@
 
     sput-boolean v4, Lcom/android/server/OpPowerControllerService;->mDebugOneplus:Z
 
-    sput-boolean v4, Lcom/android/server/you$zta;->Rb:Z
+    sput-boolean v4, Lcom/android/server/you$zta;->Xb:Z
 
     const-string p1, "log is off"
 

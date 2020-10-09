@@ -202,7 +202,7 @@
         }
     .end annotation
 
-    iget-boolean v0, p0, Lorg/bouncycastle/asn1/zta;->Jra:Z
+    iget-boolean v0, p0, Lorg/bouncycastle/asn1/zta;->Ura:Z
 
     if-eqz v0, :cond_0
 

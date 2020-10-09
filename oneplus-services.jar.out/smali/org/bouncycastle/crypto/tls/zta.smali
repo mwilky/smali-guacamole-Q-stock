@@ -4,11 +4,11 @@
 
 
 # static fields
-.field public static final GDa:S = 0x0s
+.field public static final RDa:S = 0x0s
 
-.field public static final HDa:S = 0x1s
+.field public static final SDa:S = 0x1s
 
-.field public static final IDa:S = 0x2s
+.field public static final TDa:S = 0x2s
 
 
 # direct methods

@@ -18,13 +18,13 @@
 
 
 # instance fields
-.field private rm:Lcom/android/server/am/OnePlusBGController$SnapshotType;
-
-.field private sm:I
-
 .field final synthetic this$0:Lcom/android/server/am/OnePlusBGController;
 
-.field private tm:F
+.field private xm:Lcom/android/server/am/OnePlusBGController$SnapshotType;
+
+.field private ym:I
+
+.field private zm:F
 
 
 # direct methods
@@ -35,7 +35,7 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p2, p0, Lcom/android/server/am/OnePlusBGController$ssp;->rm:Lcom/android/server/am/OnePlusBGController$SnapshotType;
+    iput-object p2, p0, Lcom/android/server/am/OnePlusBGController$ssp;->xm:Lcom/android/server/am/OnePlusBGController$SnapshotType;
 
     return-void
 .end method
@@ -47,11 +47,11 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p2, p0, Lcom/android/server/am/OnePlusBGController$ssp;->rm:Lcom/android/server/am/OnePlusBGController$SnapshotType;
+    iput-object p2, p0, Lcom/android/server/am/OnePlusBGController$ssp;->xm:Lcom/android/server/am/OnePlusBGController$SnapshotType;
 
-    iput p3, p0, Lcom/android/server/am/OnePlusBGController$ssp;->sm:I
+    iput p3, p0, Lcom/android/server/am/OnePlusBGController$ssp;->ym:I
 
-    iput p4, p0, Lcom/android/server/am/OnePlusBGController$ssp;->tm:F
+    iput p4, p0, Lcom/android/server/am/OnePlusBGController$ssp;->zm:F
 
     return-void
 .end method
@@ -73,9 +73,9 @@
 
     move-result-wide v0
 
-    sget-object v2, Lcom/android/server/am/veq;->om:[I
+    sget-object v2, Lcom/android/server/am/veq;->um:[I
 
-    iget-object v3, p0, Lcom/android/server/am/OnePlusBGController$ssp;->rm:Lcom/android/server/am/OnePlusBGController$SnapshotType;
+    iget-object v3, p0, Lcom/android/server/am/OnePlusBGController$ssp;->xm:Lcom/android/server/am/OnePlusBGController$SnapshotType;
 
     invoke-virtual {v3}, Ljava/lang/Enum;->ordinal()I
 
@@ -217,7 +217,7 @@
 
     invoke-direct {v7, v5}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
 
-    iput-object v7, v6, Lcom/android/server/am/OnePlusBGController;->nn:Ljava/util/List;
+    iput-object v7, v6, Lcom/android/server/am/OnePlusBGController;->un:Ljava/util/List;
 
     new-instance v5, Ljava/lang/StringBuilder;
 
@@ -229,7 +229,7 @@
 
     iget-object v6, p0, Lcom/android/server/am/OnePlusBGController$ssp;->this$0:Lcom/android/server/am/OnePlusBGController;
 
-    iget-object v6, v6, Lcom/android/server/am/OnePlusBGController;->nn:Ljava/util/List;
+    iget-object v6, v6, Lcom/android/server/am/OnePlusBGController;->un:Ljava/util/List;
 
     invoke-interface {v6}, Ljava/util/List;->size()I
 
@@ -258,25 +258,25 @@
 
     iget-object v2, p0, Lcom/android/server/am/OnePlusBGController$ssp;->this$0:Lcom/android/server/am/OnePlusBGController;
 
-    iget-object v5, v2, Lcom/android/server/am/OnePlusBGController;->nn:Ljava/util/List;
+    iget-object v5, v2, Lcom/android/server/am/OnePlusBGController;->un:Ljava/util/List;
 
-    iget-object v2, v2, Lcom/android/server/am/OnePlusBGController;->sn:Ljava/util/Comparator;
+    iget-object v2, v2, Lcom/android/server/am/OnePlusBGController;->yn:Ljava/util/Comparator;
 
     invoke-static {v5, v2}, Ljava/util/Collections;->sort(Ljava/util/List;Ljava/util/Comparator;)V
 
     iget-object v2, p0, Lcom/android/server/am/OnePlusBGController$ssp;->this$0:Lcom/android/server/am/OnePlusBGController;
 
-    iget-object v5, v2, Lcom/android/server/am/OnePlusBGController;->nn:Ljava/util/List;
+    iget-object v5, v2, Lcom/android/server/am/OnePlusBGController;->un:Ljava/util/List;
 
     invoke-static {v2, v5}, Lcom/android/server/am/OnePlusBGController;->you(Lcom/android/server/am/OnePlusBGController;Ljava/util/List;)V
 
-    sget-boolean v2, Lcom/android/server/am/OnePlusBGController;->yn:Z
+    sget-boolean v2, Lcom/android/server/am/OnePlusBGController;->En:Z
 
     if-eqz v2, :cond_5
 
     iget-object v2, p0, Lcom/android/server/am/OnePlusBGController$ssp;->this$0:Lcom/android/server/am/OnePlusBGController;
 
-    iget-object v5, v2, Lcom/android/server/am/OnePlusBGController;->nn:Ljava/util/List;
+    iget-object v5, v2, Lcom/android/server/am/OnePlusBGController;->un:Ljava/util/List;
 
     const-string v6, "ONESHOT"
 
@@ -315,7 +315,7 @@
 
     iget-object p0, p0, Lcom/android/server/am/OnePlusBGController$ssp;->this$0:Lcom/android/server/am/OnePlusBGController;
 
-    sget-object v0, Lcom/android/server/am/OnePlusBGController$SnapshotType;->hla:Lcom/android/server/am/OnePlusBGController$SnapshotType;
+    sget-object v0, Lcom/android/server/am/OnePlusBGController$SnapshotType;->sla:Lcom/android/server/am/OnePlusBGController$SnapshotType;
 
     invoke-virtual {p0, v0}, Lcom/android/server/am/OnePlusBGController;->you(Lcom/android/server/am/OnePlusBGController$SnapshotType;)V
 

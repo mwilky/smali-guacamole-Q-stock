@@ -4,6 +4,8 @@
 
 
 # static fields
+.field private static final Ida:I = 0x0
+
 .field private static final OP_DISPLAY_HALSRGB_COLOR_MODE:I = 0x12
 
 .field private static final OP_DISPLAY_P3_COLOR_MODE:I = 0x10
@@ -15,8 +17,6 @@
 .field private static final OP_NATIVE_CUSTOMER_SRGB_MODE:I = 0x14
 
 .field private static final TAG:Ljava/lang/String; = "OpColorModeManager"
-
-.field private static final xda:I
 
 
 # instance fields
@@ -45,7 +45,7 @@
 .method private static native nativeSetPanelMode(IZ)V
 .end method
 
-.method private ns()V
+.method private ps()V
     .locals 1
 
     const/4 p0, 0x0
@@ -267,7 +267,7 @@
     goto :goto_0
 
     :pswitch_1
-    invoke-direct {p0}, Lcom/oneplus/android/server/display/OpColorModeManager;->ns()V
+    invoke-direct {p0}, Lcom/oneplus/android/server/display/OpColorModeManager;->ps()V
 
     :goto_0
     invoke-static {p1, p2}, Lcom/oneplus/android/server/display/OpColorModeManager;->nativeSetPanelMode(IZ)V

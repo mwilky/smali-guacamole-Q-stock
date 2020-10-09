@@ -34,7 +34,7 @@
 
 
 # static fields
-.field private static final XEa:Ljava/util/Map;
+.field private static final hFa:Ljava/util/Map;
 
 
 # direct methods
@@ -45,9 +45,9 @@
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    sput-object v0, Lorg/bouncycastle/jcajce/you/tsu/bio;->XEa:Ljava/util/Map;
+    sput-object v0, Lorg/bouncycastle/jcajce/you/tsu/bio;->hFa:Ljava/util/Map;
 
-    sget-object v0, Lorg/bouncycastle/jcajce/you/tsu/bio;->XEa:Ljava/util/Map;
+    sget-object v0, Lorg/bouncycastle/jcajce/you/tsu/bio;->hFa:Ljava/util/Map;
 
     sget-object v1, Lorg/bouncycastle/asn1/dma/gwm;->id_hmacWithSHA1:Lorg/bouncycastle/asn1/bvj;
 
@@ -59,7 +59,7 @@
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    sget-object v0, Lorg/bouncycastle/jcajce/you/tsu/bio;->XEa:Ljava/util/Map;
+    sget-object v0, Lorg/bouncycastle/jcajce/you/tsu/bio;->hFa:Ljava/util/Map;
 
     sget-object v1, Lorg/bouncycastle/asn1/dma/gwm;->id_hmacWithSHA256:Lorg/bouncycastle/asn1/bvj;
 
@@ -71,7 +71,7 @@
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    sget-object v0, Lorg/bouncycastle/jcajce/you/tsu/bio;->XEa:Ljava/util/Map;
+    sget-object v0, Lorg/bouncycastle/jcajce/you/tsu/bio;->hFa:Ljava/util/Map;
 
     sget-object v1, Lorg/bouncycastle/asn1/dma/gwm;->id_hmacWithSHA224:Lorg/bouncycastle/asn1/bvj;
 
@@ -83,7 +83,7 @@
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    sget-object v0, Lorg/bouncycastle/jcajce/you/tsu/bio;->XEa:Ljava/util/Map;
+    sget-object v0, Lorg/bouncycastle/jcajce/you/tsu/bio;->hFa:Ljava/util/Map;
 
     sget-object v1, Lorg/bouncycastle/asn1/dma/gwm;->id_hmacWithSHA384:Lorg/bouncycastle/asn1/bvj;
 
@@ -95,7 +95,7 @@
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    sget-object v0, Lorg/bouncycastle/jcajce/you/tsu/bio;->XEa:Ljava/util/Map;
+    sget-object v0, Lorg/bouncycastle/jcajce/you/tsu/bio;->hFa:Ljava/util/Map;
 
     sget-object v1, Lorg/bouncycastle/asn1/dma/gwm;->id_hmacWithSHA512:Lorg/bouncycastle/asn1/bvj;
 
@@ -121,7 +121,7 @@
 .method static synthetic access$000()Ljava/util/Map;
     .locals 1
 
-    sget-object v0, Lorg/bouncycastle/jcajce/you/tsu/bio;->XEa:Ljava/util/Map;
+    sget-object v0, Lorg/bouncycastle/jcajce/you/tsu/bio;->hFa:Ljava/util/Map;
 
     return-object v0
 .end method

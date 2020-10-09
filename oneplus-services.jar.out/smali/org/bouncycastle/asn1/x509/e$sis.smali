@@ -18,9 +18,9 @@
 
 
 # instance fields
-.field private final jza:Ljava/util/Enumeration;
-
 .field final synthetic this$0:Lorg/bouncycastle/asn1/x509/e;
+
+.field private final uza:Ljava/util/Enumeration;
 
 
 # direct methods
@@ -31,7 +31,7 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p2, p0, Lorg/bouncycastle/asn1/x509/e$sis;->jza:Ljava/util/Enumeration;
+    iput-object p2, p0, Lorg/bouncycastle/asn1/x509/e$sis;->uza:Ljava/util/Enumeration;
 
     return-void
 .end method
@@ -41,7 +41,7 @@
 .method public hasMoreElements()Z
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/asn1/x509/e$sis;->jza:Ljava/util/Enumeration;
+    iget-object p0, p0, Lorg/bouncycastle/asn1/x509/e$sis;->uza:Ljava/util/Enumeration;
 
     invoke-interface {p0}, Ljava/util/Enumeration;->hasMoreElements()Z
 
@@ -53,7 +53,7 @@
 .method public nextElement()Ljava/lang/Object;
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/asn1/x509/e$sis;->jza:Ljava/util/Enumeration;
+    iget-object p0, p0, Lorg/bouncycastle/asn1/x509/e$sis;->uza:Ljava/util/Enumeration;
 
     invoke-interface {p0}, Ljava/util/Enumeration;->nextElement()Ljava/lang/Object;
 

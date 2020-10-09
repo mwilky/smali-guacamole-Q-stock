@@ -160,7 +160,15 @@
     return-object v0
 .end method
 
-.method public static kl()Lorg/bouncycastle/util/qbh;
+.method public static lineSeparator()Ljava/lang/String;
+    .locals 1
+
+    sget-object v0, Lorg/bouncycastle/util/Strings;->LINE_SEPARATOR:Ljava/lang/String;
+
+    return-object v0
+.end method
+
+.method public static ml()Lorg/bouncycastle/util/qbh;
     .locals 2
 
     new-instance v0, Lorg/bouncycastle/util/Strings$StringListImpl;
@@ -168,14 +176,6 @@
     const/4 v1, 0x0
 
     invoke-direct {v0, v1}, Lorg/bouncycastle/util/Strings$StringListImpl;-><init>(Lorg/bouncycastle/util/oif;)V
-
-    return-object v0
-.end method
-
-.method public static lineSeparator()Ljava/lang/String;
-    .locals 1
-
-    sget-object v0, Lorg/bouncycastle/util/Strings;->LINE_SEPARATOR:Ljava/lang/String;
 
     return-object v0
 .end method

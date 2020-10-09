@@ -113,7 +113,7 @@
 
 
 # virtual methods
-.method public ge()[I
+.method public he()[I
     .locals 0
 
     iget-object p0, p0, Lcom/android/server/wm/OnePlusPerfManager$sis;->mParam:[I

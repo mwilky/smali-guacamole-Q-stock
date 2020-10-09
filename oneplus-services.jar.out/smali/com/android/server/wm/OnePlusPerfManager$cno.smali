@@ -15,13 +15,13 @@
 
 
 # instance fields
+.field private KR:Ljava/lang/String;
+
 .field private mParam:Ljava/lang/String;
 
 .field private mPath:Ljava/lang/String;
 
 .field final synthetic this$0:Lcom/android/server/wm/OnePlusPerfManager;
-
-.field private wR:Ljava/lang/String;
 
 
 # direct methods
@@ -40,27 +40,19 @@
 
     iput-object p1, p0, Lcom/android/server/wm/OnePlusPerfManager$cno;->mParam:Ljava/lang/String;
 
-    iput-object p1, p0, Lcom/android/server/wm/OnePlusPerfManager$cno;->wR:Ljava/lang/String;
+    iput-object p1, p0, Lcom/android/server/wm/OnePlusPerfManager$cno;->KR:Ljava/lang/String;
 
     iput-object p2, p0, Lcom/android/server/wm/OnePlusPerfManager$cno;->mPath:Ljava/lang/String;
 
     iput-object p3, p0, Lcom/android/server/wm/OnePlusPerfManager$cno;->mParam:Ljava/lang/String;
 
-    iput-object p4, p0, Lcom/android/server/wm/OnePlusPerfManager$cno;->wR:Ljava/lang/String;
+    iput-object p4, p0, Lcom/android/server/wm/OnePlusPerfManager$cno;->KR:Ljava/lang/String;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public ge()Ljava/lang/String;
-    .locals 0
-
-    iget-object p0, p0, Lcom/android/server/wm/OnePlusPerfManager$cno;->mParam:Ljava/lang/String;
-
-    return-object p0
-.end method
-
 .method public getPath()Ljava/lang/String;
     .locals 0
 
@@ -69,10 +61,18 @@
     return-object p0
 .end method
 
-.method public ie()Ljava/lang/String;
+.method public he()Ljava/lang/String;
     .locals 0
 
-    iget-object p0, p0, Lcom/android/server/wm/OnePlusPerfManager$cno;->wR:Ljava/lang/String;
+    iget-object p0, p0, Lcom/android/server/wm/OnePlusPerfManager$cno;->mParam:Ljava/lang/String;
+
+    return-object p0
+.end method
+
+.method public je()Ljava/lang/String;
+    .locals 0
+
+    iget-object p0, p0, Lcom/android/server/wm/OnePlusPerfManager$cno;->KR:Ljava/lang/String;
 
     return-object p0
 .end method
@@ -100,7 +100,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
-    iget-object p0, p0, Lcom/android/server/wm/OnePlusPerfManager$cno;->wR:Ljava/lang/String;
+    iget-object p0, p0, Lcom/android/server/wm/OnePlusPerfManager$cno;->KR:Ljava/lang/String;
 
     invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 

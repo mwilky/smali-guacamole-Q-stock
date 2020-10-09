@@ -18,7 +18,7 @@
 
 
 # instance fields
-.field final synthetic Ub:Ljava/lang/String;
+.field final synthetic _b:Ljava/lang/String;
 
 .field final synthetic this$0:Lcom/android/server/rtg;
 
@@ -29,7 +29,7 @@
 
     iput-object p1, p0, Lcom/android/server/tsu;->this$0:Lcom/android/server/rtg;
 
-    iput-object p2, p0, Lcom/android/server/tsu;->Ub:Ljava/lang/String;
+    iput-object p2, p0, Lcom/android/server/tsu;->_b:Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -67,7 +67,7 @@
 
     invoke-virtual {v5, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v3, p0, Lcom/android/server/tsu;->Ub:Ljava/lang/String;
+    iget-object v3, p0, Lcom/android/server/tsu;->_b:Ljava/lang/String;
 
     invoke-virtual {v5, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 

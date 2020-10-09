@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/server/wm/wtn$zta;->sendReadModeNotification(Lcom/android/server/wm/ActivityRecord;)V
+    value = Lcom/android/server/wm/OPAppSwitchManagerService;->handleActivityResumed(Lcom/android/server/wm/ActivityRecord;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,18 +18,22 @@
 
 
 # instance fields
-.field final synthetic VQ:Landroid/app/Notification$Builder;
+.field final synthetic gR:Z
 
-.field final synthetic this$0:Lcom/android/server/wm/wtn$zta;
+.field final synthetic this$0:Lcom/android/server/wm/OPAppSwitchManagerService;
+
+.field final synthetic val$r:Lcom/android/server/wm/ActivityRecord;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/server/wm/wtn$zta;Landroid/app/Notification$Builder;)V
+.method constructor <init>(Lcom/android/server/wm/OPAppSwitchManagerService;Lcom/android/server/wm/ActivityRecord;Z)V
     .locals 0
 
-    iput-object p1, p0, Lcom/android/server/wm/ssp;->this$0:Lcom/android/server/wm/wtn$zta;
+    iput-object p1, p0, Lcom/android/server/wm/ssp;->this$0:Lcom/android/server/wm/OPAppSwitchManagerService;
 
-    iput-object p2, p0, Lcom/android/server/wm/ssp;->VQ:Landroid/app/Notification$Builder;
+    iput-object p2, p0, Lcom/android/server/wm/ssp;->val$r:Lcom/android/server/wm/ActivityRecord;
+
+    iput-boolean p3, p0, Lcom/android/server/wm/ssp;->gR:Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -39,61 +43,32 @@
 
 # virtual methods
 .method public run()V
-    .locals 4
+    .locals 2
 
-    new-instance v0, Landroid/content/IntentFilter;
+    :try_start_0
+    iget-object v0, p0, Lcom/android/server/wm/ssp;->this$0:Lcom/android/server/wm/OPAppSwitchManagerService;
 
-    invoke-direct {v0}, Landroid/content/IntentFilter;-><init>()V
+    iget-object v1, p0, Lcom/android/server/wm/ssp;->val$r:Lcom/android/server/wm/ActivityRecord;
 
-    const-string v1, "com.oem.intent.action.ENABLE_READ_MODE_NOW"
+    iget-boolean p0, p0, Lcom/android/server/wm/ssp;->gR:Z
 
-    invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
+    invoke-static {v0, v1, p0}, Lcom/android/server/wm/OPAppSwitchManagerService;->access$800(Lcom/android/server/wm/OPAppSwitchManagerService;Lcom/android/server/wm/ActivityRecord;Z)V
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    const-string v1, "com.oem.intent.action.GO_READ_MODE_SETTINGS"
+    goto :goto_0
 
-    invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
+    :catch_0
+    move-exception p0
 
-    const-string v1, "android.intent.action.CLOSE_SYSTEM_DIALOGS"
+    invoke-virtual {p0}, Ljava/lang/Exception;->printStackTrace()V
 
-    invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
+    const-string p0, "OPAppSwitchManagerService"
 
-    const-string v1, "android.intent.action.SCREEN_OFF"
+    const-string v0, " onActivityResumed error."
 
-    invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
+    invoke-static {p0, v0}, Landroid/util/Slog;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    iget-object v1, p0, Lcom/android/server/wm/ssp;->this$0:Lcom/android/server/wm/wtn$zta;
-
-    invoke-static {v1}, Lcom/android/server/wm/wtn$zta;->zta(Lcom/android/server/wm/wtn$zta;)Landroid/content/Context;
-
-    move-result-object v1
-
-    iget-object v2, p0, Lcom/android/server/wm/ssp;->this$0:Lcom/android/server/wm/wtn$zta;
-
-    iget-object v2, v2, Lcom/android/server/wm/wtn$zta;->mBroadcastReceiver:Landroid/content/BroadcastReceiver;
-
-    invoke-virtual {v1, v2, v0}, Landroid/content/Context;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
-
-    invoke-static {}, Lcom/android/server/wm/wtn$zta;->access$300()Landroid/app/NotificationManager;
-
-    move-result-object v0
-
-    iget-object v1, p0, Lcom/android/server/wm/ssp;->this$0:Lcom/android/server/wm/wtn$zta;
-
-    invoke-static {v1}, Lcom/android/server/wm/wtn$zta;->you(Lcom/android/server/wm/wtn$zta;)Ljava/lang/String;
-
-    move-result-object v1
-
-    iget-object p0, p0, Lcom/android/server/wm/ssp;->VQ:Landroid/app/Notification$Builder;
-
-    invoke-virtual {p0}, Landroid/app/Notification$Builder;->build()Landroid/app/Notification;
-
-    move-result-object p0
-
-    sget-object v2, Landroid/os/UserHandle;->CURRENT:Landroid/os/UserHandle;
-
-    const/16 v3, 0x3ff
-
-    invoke-virtual {v0, v1, v3, p0, v2}, Landroid/app/NotificationManager;->notifyAsUser(Ljava/lang/String;ILandroid/app/Notification;Landroid/os/UserHandle;)V
-
+    :goto_0
     return-void
 .end method

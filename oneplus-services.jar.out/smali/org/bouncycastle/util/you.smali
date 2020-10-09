@@ -8,11 +8,11 @@
 
 .field public static final ZERO:Ljava/math/BigInteger;
 
-.field private static final gGa:Ljava/math/BigInteger;
+.field private static final rGa:Ljava/math/BigInteger;
 
-.field private static final iIa:I = 0x3e8
+.field private static final tIa:I = 0x3e8
 
-.field private static final lra:Ljava/math/BigInteger;
+.field private static final wra:Ljava/math/BigInteger;
 
 
 # direct methods
@@ -41,7 +41,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lorg/bouncycastle/util/you;->lra:Ljava/math/BigInteger;
+    sput-object v0, Lorg/bouncycastle/util/you;->wra:Ljava/math/BigInteger;
 
     const-wide/16 v0, 0x3
 
@@ -49,7 +49,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lorg/bouncycastle/util/you;->gGa:Ljava/math/BigInteger;
+    sput-object v0, Lorg/bouncycastle/util/you;->rGa:Ljava/math/BigInteger;
 
     return-void
 .end method
@@ -183,12 +183,12 @@
 
     if-gez p0, :cond_0
 
-    sget-object p0, Lorg/bouncycastle/util/you;->lra:Ljava/math/BigInteger;
+    sget-object p0, Lorg/bouncycastle/util/you;->wra:Ljava/math/BigInteger;
 
     goto :goto_0
 
     :cond_0
-    sget-object p0, Lorg/bouncycastle/util/you;->gGa:Ljava/math/BigInteger;
+    sget-object p0, Lorg/bouncycastle/util/you;->rGa:Ljava/math/BigInteger;
 
     :goto_0
     return-object p0

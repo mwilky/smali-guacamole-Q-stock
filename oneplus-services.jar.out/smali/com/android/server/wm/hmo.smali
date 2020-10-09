@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/server/wm/cgv;->xq()V
+    value = Lcom/android/server/wm/vju;->zq()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/server/wm/cgv;
+.field final synthetic this$0:Lcom/android/server/wm/vju;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/server/wm/cgv;)V
+.method constructor <init>(Lcom/android/server/wm/vju;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/android/server/wm/hmo;->this$0:Lcom/android/server/wm/cgv;
+    iput-object p1, p0, Lcom/android/server/wm/hmo;->this$0:Lcom/android/server/wm/vju;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -35,7 +35,7 @@
 
 # virtual methods
 .method public onTouch(Landroid/view/View;Landroid/view/MotionEvent;)Z
-    .locals 3
+    .locals 1
 
     const-string p1, "OpQuickReply"
 
@@ -44,105 +44,51 @@
 
     move-result p2
 
-    if-nez p2, :cond_1
+    if-nez p2, :cond_0
 
-    new-instance p2, Ljava/lang/StringBuilder;
-
-    invoke-direct {p2}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v0, "click to go switch from "
-
-    invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    sget v0, Lcom/android/server/wm/cgv;->lW:I
-
-    invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p2
+    const-string p2, "click to go settings"
 
     invoke-static {p1, p2}, Landroid/util/Slog;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    sget p2, Lcom/android/server/wm/cgv;->lW:I
+    iget-object p2, p0, Lcom/android/server/wm/hmo;->this$0:Lcom/android/server/wm/vju;
 
-    const/4 v0, 0x0
+    invoke-virtual {p2}, Lcom/android/server/wm/vju;->exitQuickReply()V
 
-    const/4 v1, 0x2
+    new-instance p2, Landroid/content/Intent;
 
-    if-ne p2, v1, :cond_0
+    const-string v0, "com.oneplus.action.QUICK_REPLY_SETTINGS"
 
-    sput v0, Lcom/android/server/wm/cgv;->lW:I
+    invoke-direct {p2, v0}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    goto :goto_0
+    const-string v0, "com.android.settings"
 
-    :cond_0
-    sput v1, Lcom/android/server/wm/cgv;->lW:I
+    invoke-virtual {p2, v0}, Landroid/content/Intent;->setPackage(Ljava/lang/String;)Landroid/content/Intent;
 
-    :goto_0
-    iget-object p2, p0, Lcom/android/server/wm/hmo;->this$0:Lcom/android/server/wm/cgv;
+    const/high16 v0, 0x14000000
 
-    invoke-static {p2}, Lcom/android/server/wm/cgv;->bvj(Lcom/android/server/wm/cgv;)Lcom/android/server/wm/cgv$zta;
+    invoke-virtual {p2, v0}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
 
-    move-result-object p2
+    iget-object p0, p0, Lcom/android/server/wm/hmo;->this$0:Lcom/android/server/wm/vju;
 
-    const/16 v1, 0x8
+    invoke-static {p0}, Lcom/android/server/wm/vju;->zta(Lcom/android/server/wm/vju;)Landroid/content/Context;
 
-    invoke-virtual {p2, v1}, Landroid/os/Handler;->sendEmptyMessage(I)Z
+    move-result-object p0
 
-    iget-object p2, p0, Lcom/android/server/wm/hmo;->this$0:Lcom/android/server/wm/cgv;
-
-    invoke-static {p2}, Lcom/android/server/wm/cgv;->zta(Lcom/android/server/wm/cgv;)Landroid/content/Context;
-
-    move-result-object p2
-
-    invoke-virtual {p2}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
-
-    move-result-object p2
-
-    const-string v1, "quickreply_ime_position"
-
-    sget v2, Lcom/android/server/wm/cgv;->lW:I
-
-    invoke-static {p2, v1, v2}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
-
-    iget-object p2, p0, Lcom/android/server/wm/hmo;->this$0:Lcom/android/server/wm/cgv;
-
-    invoke-static {p2, v0}, Lcom/android/server/wm/cgv;->sis(Lcom/android/server/wm/cgv;I)I
-
-    iget-object p2, p0, Lcom/android/server/wm/hmo;->this$0:Lcom/android/server/wm/cgv;
-
-    invoke-static {p2}, Lcom/android/server/wm/cgv;->zta(Lcom/android/server/wm/cgv;)Landroid/content/Context;
-
-    move-result-object p2
-
-    invoke-virtual {p2}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
-
-    move-result-object p2
-
-    const-string v0, "quickreply_imbutton_x"
-
-    iget-object p0, p0, Lcom/android/server/wm/hmo;->this$0:Lcom/android/server/wm/cgv;
-
-    invoke-static {p0}, Lcom/android/server/wm/cgv;->ibl(Lcom/android/server/wm/cgv;)I
-
-    move-result p0
-
-    invoke-static {p2, v0, p0}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
+    invoke-virtual {p0, p2}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    goto :goto_1
+    goto :goto_0
 
     :catch_0
     move-exception p0
 
-    const-string p2, "click to go switch fail: "
+    const-string p2, "click to go settings fail: "
 
     invoke-static {p1, p2, p0}, Landroid/util/Slog;->w(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
-    :cond_1
-    :goto_1
+    :cond_0
+    :goto_0
     const/4 p0, 0x1
 
     return p0

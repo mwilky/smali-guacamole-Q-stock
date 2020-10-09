@@ -42,7 +42,7 @@
 
 
 # virtual methods
-.method Cg()I
+.method Eg()I
     .locals 2
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -50,7 +50,7 @@
         }
     .end annotation
 
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/ear;->Rg()Ljava/util/Enumeration;
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/ear;->Tg()Ljava/util/Enumeration;
 
     move-result-object p0
 
@@ -73,7 +73,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lorg/bouncycastle/asn1/vdb;->Cg()I
+    invoke-virtual {v1}, Lorg/bouncycastle/asn1/vdb;->Eg()I
 
     move-result v1
 
@@ -105,7 +105,7 @@
 
     invoke-virtual {p1, v0}, Lorg/bouncycastle/asn1/ugm;->write(I)V
 
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/ear;->Rg()Ljava/util/Enumeration;
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/ear;->Tg()Ljava/util/Enumeration;
 
     move-result-object p0
 

@@ -54,7 +54,7 @@
 
     iget-object p1, p0, Lcom/oneplus/android/server/scene/cgv$zta;->this$0:Lcom/oneplus/android/server/scene/cgv;
 
-    invoke-virtual {p1}, Lcom/oneplus/android/server/scene/cgv;->of()V
+    invoke-virtual {p1}, Lcom/oneplus/android/server/scene/cgv;->qf()V
 
     :cond_0
     iget-object p0, p0, Lcom/oneplus/android/server/scene/cgv$zta;->this$0:Lcom/oneplus/android/server/scene/cgv;

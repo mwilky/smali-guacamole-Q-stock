@@ -15,13 +15,13 @@
 
 
 # instance fields
+.field public Fv:Ljava/lang/String;
+
 .field private mPid:I
 
 .field public mPkgName:Ljava/lang/String;
 
 .field final synthetic this$0:Lcom/android/server/am/j;
-
-.field public wv:Ljava/lang/String;
 
 
 # direct methods
@@ -34,7 +34,7 @@
 
     iput-object p2, p0, Lcom/android/server/am/j$zta;->mPkgName:Ljava/lang/String;
 
-    iput-object p3, p0, Lcom/android/server/am/j$zta;->wv:Ljava/lang/String;
+    iput-object p3, p0, Lcom/android/server/am/j$zta;->Fv:Ljava/lang/String;
 
     iput p4, p0, Lcom/android/server/am/j$zta;->mPid:I
 
@@ -60,7 +60,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lcom/android/server/am/j$zta;->wv:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/server/am/j$zta;->Fv:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -68,7 +68,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object p0, p0, Lcom/android/server/am/j$zta;->wv:Ljava/lang/String;
+    iget-object p0, p0, Lcom/android/server/am/j$zta;->Fv:Ljava/lang/String;
 
     invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 

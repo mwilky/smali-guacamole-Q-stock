@@ -265,7 +265,7 @@
 .method public static you(Lorg/bouncycastle/jcajce/provider/config/sis;Lorg/bouncycastle/asn1/ibl/veq;)Lorg/bouncycastle/crypto/wtn/ibl;
     .locals 7
 
-    invoke-virtual {p1}, Lorg/bouncycastle/asn1/ibl/veq;->Li()Z
+    invoke-virtual {p1}, Lorg/bouncycastle/asn1/ibl/veq;->Ni()Z
 
     move-result v0
 
@@ -308,11 +308,11 @@
 
     move-result-object v3
 
-    invoke-virtual {p1}, Lorg/bouncycastle/asn1/ibl/vju;->Qi()Ljava/math/BigInteger;
+    invoke-virtual {p1}, Lorg/bouncycastle/asn1/ibl/vju;->Si()Ljava/math/BigInteger;
 
     move-result-object v4
 
-    invoke-virtual {p1}, Lorg/bouncycastle/asn1/ibl/vju;->Pi()Ljava/math/BigInteger;
+    invoke-virtual {p1}, Lorg/bouncycastle/asn1/ibl/vju;->Ri()Ljava/math/BigInteger;
 
     move-result-object v5
 
@@ -329,7 +329,7 @@
     goto :goto_0
 
     :cond_1
-    invoke-virtual {p1}, Lorg/bouncycastle/asn1/ibl/veq;->Ki()Z
+    invoke-virtual {p1}, Lorg/bouncycastle/asn1/ibl/veq;->Mi()Z
 
     move-result v0
 
@@ -349,11 +349,11 @@
 
     move-result-object v2
 
-    invoke-virtual {p0}, Lyou/zta/you/you/rtg;->Qi()Ljava/math/BigInteger;
+    invoke-virtual {p0}, Lyou/zta/you/you/rtg;->Si()Ljava/math/BigInteger;
 
     move-result-object v3
 
-    invoke-virtual {p0}, Lyou/zta/you/you/rtg;->Pi()Ljava/math/BigInteger;
+    invoke-virtual {p0}, Lyou/zta/you/you/rtg;->Ri()Ljava/math/BigInteger;
 
     move-result-object v4
 
@@ -386,11 +386,11 @@
 
     move-result-object v2
 
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/ibl/vju;->Qi()Ljava/math/BigInteger;
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/ibl/vju;->Si()Ljava/math/BigInteger;
 
     move-result-object v3
 
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/ibl/vju;->Pi()Ljava/math/BigInteger;
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/ibl/vju;->Ri()Ljava/math/BigInteger;
 
     move-result-object v4
 
@@ -471,11 +471,11 @@
 
     move-result-object v6
 
-    invoke-virtual {v0}, Lyou/zta/you/you/rtg;->Qi()Ljava/math/BigInteger;
+    invoke-virtual {v0}, Lyou/zta/you/you/rtg;->Si()Ljava/math/BigInteger;
 
     move-result-object v7
 
-    invoke-virtual {v0}, Lyou/zta/you/you/rtg;->Pi()Ljava/math/BigInteger;
+    invoke-virtual {v0}, Lyou/zta/you/you/rtg;->Ri()Ljava/math/BigInteger;
 
     move-result-object v8
 
@@ -508,11 +508,11 @@
 
     move-result-object v4
 
-    invoke-virtual {v0}, Lyou/zta/you/you/rtg;->Qi()Ljava/math/BigInteger;
+    invoke-virtual {v0}, Lyou/zta/you/you/rtg;->Si()Ljava/math/BigInteger;
 
     move-result-object v5
 
-    invoke-virtual {v0}, Lyou/zta/you/you/rtg;->Pi()Ljava/math/BigInteger;
+    invoke-virtual {v0}, Lyou/zta/you/you/rtg;->Ri()Ljava/math/BigInteger;
 
     move-result-object v6
 
@@ -561,11 +561,11 @@
 
     move-result-object v4
 
-    invoke-virtual {v0}, Lyou/zta/you/you/rtg;->Qi()Ljava/math/BigInteger;
+    invoke-virtual {v0}, Lyou/zta/you/you/rtg;->Si()Ljava/math/BigInteger;
 
     move-result-object v5
 
-    invoke-virtual {v0}, Lyou/zta/you/you/rtg;->Pi()Ljava/math/BigInteger;
+    invoke-virtual {v0}, Lyou/zta/you/you/rtg;->Ri()Ljava/math/BigInteger;
 
     move-result-object v6
 
@@ -676,7 +676,7 @@
     return p0
 
     :cond_0
-    invoke-virtual {p0}, Lyou/zta/you/you/rtg;->Qi()Ljava/math/BigInteger;
+    invoke-virtual {p0}, Lyou/zta/you/you/rtg;->Si()Ljava/math/BigInteger;
 
     move-result-object p0
 
@@ -731,7 +731,7 @@
 
     invoke-virtual {v0, p0}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
 
-    invoke-virtual {p1}, Lyou/zta/sis/zta/wtn;->ok()Lyou/zta/sis/zta/cno;
+    invoke-virtual {p1}, Lyou/zta/sis/zta/wtn;->qk()Lyou/zta/sis/zta/cno;
 
     move-result-object p0
 
@@ -753,7 +753,7 @@
 
     invoke-virtual {v0, p0}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
 
-    invoke-virtual {p1}, Lyou/zta/sis/zta/wtn;->pk()Lyou/zta/sis/zta/cno;
+    invoke-virtual {p1}, Lyou/zta/sis/zta/wtn;->rk()Lyou/zta/sis/zta/cno;
 
     move-result-object p0
 
@@ -809,7 +809,7 @@
 
     invoke-virtual {v0, p0}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
 
-    invoke-virtual {p1}, Lyou/zta/sis/zta/wtn;->ok()Lyou/zta/sis/zta/cno;
+    invoke-virtual {p1}, Lyou/zta/sis/zta/wtn;->qk()Lyou/zta/sis/zta/cno;
 
     move-result-object p0
 
@@ -831,7 +831,7 @@
 
     invoke-virtual {v0, p0}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
 
-    invoke-virtual {p1}, Lyou/zta/sis/zta/wtn;->pk()Lyou/zta/sis/zta/cno;
+    invoke-virtual {p1}, Lyou/zta/sis/zta/wtn;->rk()Lyou/zta/sis/zta/cno;
 
     move-result-object p0
 
@@ -947,11 +947,11 @@
 
     move-result-object v2
 
-    invoke-virtual {v2}, Lorg/bouncycastle/asn1/ibl/vju;->Qi()Ljava/math/BigInteger;
+    invoke-virtual {v2}, Lorg/bouncycastle/asn1/ibl/vju;->Si()Ljava/math/BigInteger;
 
     move-result-object v3
 
-    invoke-virtual {p0}, Lyou/zta/you/you/rtg;->Qi()Ljava/math/BigInteger;
+    invoke-virtual {p0}, Lyou/zta/you/you/rtg;->Si()Ljava/math/BigInteger;
 
     move-result-object v4
 
@@ -961,11 +961,11 @@
 
     if-eqz v3, :cond_0
 
-    invoke-virtual {v2}, Lorg/bouncycastle/asn1/ibl/vju;->Pi()Ljava/math/BigInteger;
+    invoke-virtual {v2}, Lorg/bouncycastle/asn1/ibl/vju;->Ri()Ljava/math/BigInteger;
 
     move-result-object v3
 
-    invoke-virtual {p0}, Lyou/zta/you/you/rtg;->Pi()Ljava/math/BigInteger;
+    invoke-virtual {p0}, Lyou/zta/you/you/rtg;->Ri()Ljava/math/BigInteger;
 
     move-result-object v4
 
@@ -1042,11 +1042,11 @@
 
     move-result-object v3
 
-    invoke-virtual {p1}, Lyou/zta/you/you/rtg;->Qi()Ljava/math/BigInteger;
+    invoke-virtual {p1}, Lyou/zta/you/you/rtg;->Si()Ljava/math/BigInteger;
 
     move-result-object v4
 
-    invoke-virtual {p1}, Lyou/zta/you/you/rtg;->Pi()Ljava/math/BigInteger;
+    invoke-virtual {p1}, Lyou/zta/you/you/rtg;->Ri()Ljava/math/BigInteger;
 
     move-result-object v5
 
@@ -1077,11 +1077,11 @@
 
     move-result-object v2
 
-    invoke-virtual {p0}, Lyou/zta/you/you/rtg;->Qi()Ljava/math/BigInteger;
+    invoke-virtual {p0}, Lyou/zta/you/you/rtg;->Si()Ljava/math/BigInteger;
 
     move-result-object v3
 
-    invoke-virtual {p0}, Lyou/zta/you/you/rtg;->Pi()Ljava/math/BigInteger;
+    invoke-virtual {p0}, Lyou/zta/you/you/rtg;->Ri()Ljava/math/BigInteger;
 
     move-result-object v4
 
@@ -1108,11 +1108,11 @@
 
     move-result-object v8
 
-    invoke-virtual {p1}, Lyou/zta/you/you/rtg;->Qi()Ljava/math/BigInteger;
+    invoke-virtual {p1}, Lyou/zta/you/you/rtg;->Si()Ljava/math/BigInteger;
 
     move-result-object v9
 
-    invoke-virtual {p1}, Lyou/zta/you/you/rtg;->Pi()Ljava/math/BigInteger;
+    invoke-virtual {p1}, Lyou/zta/you/you/rtg;->Ri()Ljava/math/BigInteger;
 
     move-result-object v10
 
@@ -1162,11 +1162,11 @@
 
     move-result-object v4
 
-    invoke-virtual {v0}, Lyou/zta/you/you/rtg;->Qi()Ljava/math/BigInteger;
+    invoke-virtual {v0}, Lyou/zta/you/you/rtg;->Si()Ljava/math/BigInteger;
 
     move-result-object v5
 
-    invoke-virtual {v0}, Lyou/zta/you/you/rtg;->Pi()Ljava/math/BigInteger;
+    invoke-virtual {v0}, Lyou/zta/you/you/rtg;->Ri()Ljava/math/BigInteger;
 
     move-result-object v6
 
@@ -1223,11 +1223,11 @@
 
     move-result-object v5
 
-    invoke-virtual {v0}, Lyou/zta/you/you/rtg;->Qi()Ljava/math/BigInteger;
+    invoke-virtual {v0}, Lyou/zta/you/you/rtg;->Si()Ljava/math/BigInteger;
 
     move-result-object v6
 
-    invoke-virtual {v0}, Lyou/zta/you/you/rtg;->Pi()Ljava/math/BigInteger;
+    invoke-virtual {v0}, Lyou/zta/you/you/rtg;->Ri()Ljava/math/BigInteger;
 
     move-result-object v7
 

@@ -15,9 +15,9 @@
 
 
 # instance fields
-.field final synthetic Eoa:J
+.field final synthetic Poa:J
 
-.field final synthetic Foa:Z
+.field final synthetic Qoa:Z
 
 .field final synthetic this$0:Lcom/android/server/l;
 
@@ -42,9 +42,9 @@
 
     iput-object p5, p0, Lcom/android/server/k;->val$reason:Ljava/lang/String;
 
-    iput-wide p6, p0, Lcom/android/server/k;->Eoa:J
+    iput-wide p6, p0, Lcom/android/server/k;->Poa:J
 
-    iput-boolean p8, p0, Lcom/android/server/k;->Foa:Z
+    iput-boolean p8, p0, Lcom/android/server/k;->Qoa:Z
 
     iput-object p9, p0, Lcom/android/server/k;->val$dbox:Landroid/os/DropBoxManager;
 
@@ -142,7 +142,7 @@
 
     move-result-object v3
 
-    iget-wide v5, p0, Lcom/android/server/k;->Eoa:J
+    iget-wide v5, p0, Lcom/android/server/k;->Poa:J
 
     invoke-virtual {v3, v5, v6}, Lcom/android/internal/os/ProcessCpuTracker;->printCurrentState(J)Ljava/lang/String;
 
@@ -241,7 +241,7 @@
     :goto_0
     iget-object v5, p0, Lcom/android/server/k;->this$0:Lcom/android/server/l;
 
-    iget-object v5, v5, Lcom/android/server/l;->Jg:Ljava/util/ArrayList;
+    iget-object v5, v5, Lcom/android/server/l;->Pg:Ljava/util/ArrayList;
 
     invoke-virtual {v5}, Ljava/util/ArrayList;->size()I
 
@@ -251,7 +251,7 @@
 
     iget-object v5, p0, Lcom/android/server/k;->this$0:Lcom/android/server/l;
 
-    iget-object v5, v5, Lcom/android/server/l;->Jg:Ljava/util/ArrayList;
+    iget-object v5, v5, Lcom/android/server/l;->Pg:Ljava/util/ArrayList;
 
     invoke-virtual {v5, v3}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -642,7 +642,7 @@
 
     :cond_4
     :goto_8
-    iget-boolean v0, p0, Lcom/android/server/k;->Foa:Z
+    iget-boolean v0, p0, Lcom/android/server/k;->Qoa:Z
 
     if-eqz v0, :cond_5
 

@@ -53,11 +53,11 @@
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lyou/zta/sis/zta/ear;->Uk()[Lyou/zta/sis/zta/wtn;
+    invoke-virtual {v1}, Lyou/zta/sis/zta/ear;->Wk()[Lyou/zta/sis/zta/wtn;
 
     move-result-object v2
 
-    invoke-virtual {v1}, Lyou/zta/sis/zta/ear;->Vk()[Lyou/zta/sis/zta/wtn;
+    invoke-virtual {v1}, Lyou/zta/sis/zta/ear;->Xk()[Lyou/zta/sis/zta/wtn;
 
     move-result-object v1
 
@@ -107,7 +107,7 @@
 
     if-ge v7, v8, :cond_1
 
-    sget-object v7, Lyou/zta/sis/zta/ibl;->hHa:[B
+    sget-object v7, Lyou/zta/sis/zta/ibl;->sHa:[B
 
     aget-byte v7, v7, v6
 

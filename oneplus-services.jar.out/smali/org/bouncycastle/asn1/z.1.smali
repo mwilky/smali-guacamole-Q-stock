@@ -6,7 +6,7 @@
 # static fields
 .field public static final INSTANCE:Lorg/bouncycastle/asn1/z;
 
-.field private static final hsa:[B
+.field private static final ssa:[B
 
 
 # direct methods
@@ -23,7 +23,7 @@
 
     new-array v0, v0, [B
 
-    sput-object v0, Lorg/bouncycastle/asn1/z;->hsa:[B
+    sput-object v0, Lorg/bouncycastle/asn1/z;->ssa:[B
 
     return-void
 .end method
@@ -38,7 +38,7 @@
 
 
 # virtual methods
-.method Cg()I
+.method Eg()I
     .locals 0
 
     const/4 p0, 0x2
@@ -62,7 +62,7 @@
         }
     .end annotation
 
-    sget-object p0, Lorg/bouncycastle/asn1/z;->hsa:[B
+    sget-object p0, Lorg/bouncycastle/asn1/z;->ssa:[B
 
     const/4 v0, 0x5
 

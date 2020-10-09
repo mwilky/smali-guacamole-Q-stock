@@ -6,11 +6,11 @@
 # static fields
 .field private static final EFFECT_TYPE_NULL:Ljava/util/UUID;
 
-.field private static final bvj:Ljava/util/UUID;
+.field private static final gwm:Ljava/util/UUID;
 
-.field public static final gwm:I = 0x1
+.field public static final ugm:I = 0x0
 
-.field public static final ibl:I
+.field public static final vdb:I = 0x1
 
 
 # direct methods
@@ -31,7 +31,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/oneplus/android/server/scene/kth;->bvj:Ljava/util/UUID;
+    sput-object v0, Lcom/oneplus/android/server/scene/kth;->gwm:Ljava/util/UUID;
 
     return-void
 .end method
@@ -49,7 +49,7 @@
 
     sget-object v0, Lcom/oneplus/android/server/scene/kth;->EFFECT_TYPE_NULL:Ljava/util/UUID;
 
-    sget-object v1, Lcom/oneplus/android/server/scene/kth;->bvj:Ljava/util/UUID;
+    sget-object v1, Lcom/oneplus/android/server/scene/kth;->gwm:Ljava/util/UUID;
 
     invoke-direct {p0, v0, v1, p1, p2}, Landroid/media/audiofx/AudioEffect;-><init>(Ljava/util/UUID;Ljava/util/UUID;II)V
 

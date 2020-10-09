@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field aua:Ljava/util/Hashtable;
+.field lua:Ljava/util/Hashtable;
 
 .field seq:Lorg/bouncycastle/asn1/obl;
 
@@ -19,7 +19,7 @@
 
     invoke-direct {v0}, Ljava/util/Hashtable;-><init>()V
 
-    iput-object v0, p0, Lorg/bouncycastle/asn1/x509/ibl;->aua:Ljava/util/Hashtable;
+    iput-object v0, p0, Lorg/bouncycastle/asn1/x509/ibl;->lua:Ljava/util/Hashtable;
 
     new-instance v0, Lorg/bouncycastle/asn1/cno;
 
@@ -46,7 +46,7 @@
 
     invoke-virtual {v0, v1}, Lorg/bouncycastle/asn1/cno;->you(Lorg/bouncycastle/asn1/ssp;)V
 
-    iget-object v2, p0, Lorg/bouncycastle/asn1/x509/ibl;->aua:Ljava/util/Hashtable;
+    iget-object v2, p0, Lorg/bouncycastle/asn1/x509/ibl;->lua:Ljava/util/Hashtable;
 
     invoke-virtual {v2, v1, v1}, Ljava/util/Hashtable;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -71,11 +71,11 @@
 
     invoke-direct {v0}, Ljava/util/Hashtable;-><init>()V
 
-    iput-object v0, p0, Lorg/bouncycastle/asn1/x509/ibl;->aua:Ljava/util/Hashtable;
+    iput-object v0, p0, Lorg/bouncycastle/asn1/x509/ibl;->lua:Ljava/util/Hashtable;
 
     iput-object p1, p0, Lorg/bouncycastle/asn1/x509/ibl;->seq:Lorg/bouncycastle/asn1/obl;
 
-    invoke-virtual {p1}, Lorg/bouncycastle/asn1/obl;->Rg()Ljava/util/Enumeration;
+    invoke-virtual {p1}, Lorg/bouncycastle/asn1/obl;->Tg()Ljava/util/Enumeration;
 
     move-result-object p1
 
@@ -100,7 +100,7 @@
 
     if-eqz v1, :cond_0
 
-    iget-object v1, p0, Lorg/bouncycastle/asn1/x509/ibl;->aua:Ljava/util/Hashtable;
+    iget-object v1, p0, Lorg/bouncycastle/asn1/x509/ibl;->lua:Ljava/util/Hashtable;
 
     invoke-virtual {v1, v0, v0}, Ljava/util/Hashtable;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -128,7 +128,7 @@
 
     invoke-direct {v0}, Ljava/util/Hashtable;-><init>()V
 
-    iput-object v0, p0, Lorg/bouncycastle/asn1/x509/ibl;->aua:Ljava/util/Hashtable;
+    iput-object v0, p0, Lorg/bouncycastle/asn1/x509/ibl;->lua:Ljava/util/Hashtable;
 
     new-instance v0, Lorg/bouncycastle/asn1/G;
 
@@ -136,7 +136,7 @@
 
     iput-object v0, p0, Lorg/bouncycastle/asn1/x509/ibl;->seq:Lorg/bouncycastle/asn1/obl;
 
-    iget-object p0, p0, Lorg/bouncycastle/asn1/x509/ibl;->aua:Ljava/util/Hashtable;
+    iget-object p0, p0, Lorg/bouncycastle/asn1/x509/ibl;->lua:Ljava/util/Hashtable;
 
     invoke-virtual {p0, p1, p1}, Ljava/util/Hashtable;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -152,7 +152,7 @@
 
     invoke-direct {v0}, Ljava/util/Hashtable;-><init>()V
 
-    iput-object v0, p0, Lorg/bouncycastle/asn1/x509/ibl;->aua:Ljava/util/Hashtable;
+    iput-object v0, p0, Lorg/bouncycastle/asn1/x509/ibl;->lua:Ljava/util/Hashtable;
 
     new-instance v0, Lorg/bouncycastle/asn1/cno;
 
@@ -169,7 +169,7 @@
 
     invoke-virtual {v0, v2}, Lorg/bouncycastle/asn1/cno;->you(Lorg/bouncycastle/asn1/ssp;)V
 
-    iget-object v2, p0, Lorg/bouncycastle/asn1/x509/ibl;->aua:Ljava/util/Hashtable;
+    iget-object v2, p0, Lorg/bouncycastle/asn1/x509/ibl;->lua:Ljava/util/Hashtable;
 
     aget-object v3, p1, v1
 
@@ -238,7 +238,7 @@
 .method public static zta(Lorg/bouncycastle/asn1/x509/ugm;)Lorg/bouncycastle/asn1/x509/ibl;
     .locals 1
 
-    sget-object v0, Lorg/bouncycastle/asn1/x509/gwm;->qua:Lorg/bouncycastle/asn1/bvj;
+    sget-object v0, Lorg/bouncycastle/asn1/x509/gwm;->Bua:Lorg/bouncycastle/asn1/bvj;
 
     invoke-virtual {p0, v0}, Lorg/bouncycastle/asn1/x509/ugm;->cno(Lorg/bouncycastle/asn1/bvj;)Lorg/bouncycastle/asn1/ssp;
 
@@ -253,7 +253,7 @@
 
 
 # virtual methods
-.method public ci()[Lorg/bouncycastle/asn1/x509/hmo;
+.method public ei()[Lorg/bouncycastle/asn1/x509/hmo;
     .locals 4
 
     iget-object v0, p0, Lorg/bouncycastle/asn1/x509/ibl;->seq:Lorg/bouncycastle/asn1/obl;
@@ -266,7 +266,7 @@
 
     iget-object p0, p0, Lorg/bouncycastle/asn1/x509/ibl;->seq:Lorg/bouncycastle/asn1/obl;
 
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/obl;->Rg()Ljava/util/Enumeration;
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/obl;->Tg()Ljava/util/Enumeration;
 
     move-result-object p0
 
@@ -302,7 +302,7 @@
 .method public size()I
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/asn1/x509/ibl;->aua:Ljava/util/Hashtable;
+    iget-object p0, p0, Lorg/bouncycastle/asn1/x509/ibl;->lua:Ljava/util/Hashtable;
 
     invoke-virtual {p0}, Ljava/util/Hashtable;->size()I
 
@@ -322,7 +322,7 @@
 .method public zta(Lorg/bouncycastle/asn1/x509/hmo;)Z
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/asn1/x509/ibl;->aua:Ljava/util/Hashtable;
+    iget-object p0, p0, Lorg/bouncycastle/asn1/x509/ibl;->lua:Ljava/util/Hashtable;
 
     invoke-virtual {p0, p1}, Ljava/util/Hashtable;->get(Ljava/lang/Object;)Ljava/lang/Object;
 

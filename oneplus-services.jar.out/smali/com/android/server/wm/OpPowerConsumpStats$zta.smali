@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field SR:Ljava/util/HashMap;
+.field fS:Ljava/util/HashMap;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/HashMap<",
@@ -26,7 +26,7 @@
     .end annotation
 .end field
 
-.field TR:Ljava/util/HashMap;
+.field gS:Ljava/util/HashMap;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/HashMap<",
@@ -37,7 +37,7 @@
     .end annotation
 .end field
 
-.field UR:Z
+.field hS:Z
 
 .field lock:Ljava/lang/Object;
 
@@ -56,13 +56,13 @@
 
     invoke-direct {p1}, Ljava/util/HashMap;-><init>()V
 
-    iput-object p1, p0, Lcom/android/server/wm/OpPowerConsumpStats$zta;->SR:Ljava/util/HashMap;
+    iput-object p1, p0, Lcom/android/server/wm/OpPowerConsumpStats$zta;->fS:Ljava/util/HashMap;
 
     new-instance p1, Ljava/util/HashMap;
 
     invoke-direct {p1}, Ljava/util/HashMap;-><init>()V
 
-    iput-object p1, p0, Lcom/android/server/wm/OpPowerConsumpStats$zta;->TR:Ljava/util/HashMap;
+    iput-object p1, p0, Lcom/android/server/wm/OpPowerConsumpStats$zta;->gS:Ljava/util/HashMap;
 
     new-instance p1, Ljava/lang/Object;
 
@@ -72,15 +72,416 @@
 
     const/4 p1, 0x0
 
-    iput-boolean p1, p0, Lcom/android/server/wm/OpPowerConsumpStats$zta;->UR:Z
+    iput-boolean p1, p0, Lcom/android/server/wm/OpPowerConsumpStats$zta;->hS:Z
 
     return-void
+.end method
+
+.method private Ap()Z
+    .locals 19
+
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/android/server/wm/OpPowerConsumpStats$zta;->lock:Ljava/lang/Object;
+
+    monitor-enter v1
+
+    :try_start_0
+    iget-boolean v2, v0, Lcom/android/server/wm/OpPowerConsumpStats$zta;->hS:Z
+
+    const/4 v3, 0x0
+
+    if-nez v2, :cond_0
+
+    monitor-exit v1
+
+    return v3
+
+    :cond_0
+    iput-boolean v3, v0, Lcom/android/server/wm/OpPowerConsumpStats$zta;->hS:Z
+
+    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
+
+    move-result-wide v2
+
+    iget-object v4, v0, Lcom/android/server/wm/OpPowerConsumpStats$zta;->this$0:Lcom/android/server/wm/OpPowerConsumpStats;
+
+    invoke-static {v4}, Lcom/android/server/wm/OpPowerConsumpStats;->vju(Lcom/android/server/wm/OpPowerConsumpStats;)Landroid/app/usage/UsageStatsManager;
+
+    move-result-object v4
+
+    const-wide/32 v5, 0x5265c00
+
+    sub-long v5, v2, v5
+
+    invoke-virtual {v4, v5, v6, v2, v3}, Landroid/app/usage/UsageStatsManager;->queryAndAggregateUsageStats(JJ)Ljava/util/Map;
+
+    move-result-object v4
+
+    iget-object v5, v0, Lcom/android/server/wm/OpPowerConsumpStats$zta;->gS:Ljava/util/HashMap;
+
+    if-nez v5, :cond_1
+
+    new-instance v5, Ljava/util/HashMap;
+
+    invoke-direct {v5}, Ljava/util/HashMap;-><init>()V
+
+    iput-object v5, v0, Lcom/android/server/wm/OpPowerConsumpStats$zta;->gS:Ljava/util/HashMap;
+
+    :cond_1
+    if-eqz v4, :cond_2
+
+    iget-object v5, v0, Lcom/android/server/wm/OpPowerConsumpStats$zta;->gS:Ljava/util/HashMap;
+
+    if-eqz v5, :cond_2
+
+    iget-object v5, v0, Lcom/android/server/wm/OpPowerConsumpStats$zta;->gS:Ljava/util/HashMap;
+
+    invoke-virtual {v5, v4}, Ljava/util/HashMap;->putAll(Ljava/util/Map;)V
+
+    :cond_2
+    iget-object v4, v0, Lcom/android/server/wm/OpPowerConsumpStats$zta;->gS:Ljava/util/HashMap;
+
+    invoke-virtual {v4}, Ljava/util/HashMap;->keySet()Ljava/util/Set;
+
+    move-result-object v4
+
+    invoke-interface {v4}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
+
+    move-result-object v4
+
+    :goto_0
+    invoke-interface {v4}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v5
+
+    if-eqz v5, :cond_7
+
+    invoke-interface {v4}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v5
+
+    check-cast v5, Ljava/lang/String;
+
+    iget-object v6, v0, Lcom/android/server/wm/OpPowerConsumpStats$zta;->gS:Ljava/util/HashMap;
+
+    invoke-virtual {v6, v5}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v6
+
+    check-cast v6, Landroid/app/usage/UsageStats;
+
+    if-eqz v6, :cond_6
+
+    invoke-virtual {v6}, Landroid/app/usage/UsageStats;->getTotalTimeInForeground()J
+
+    move-result-wide v6
+
+    iget-object v8, v0, Lcom/android/server/wm/OpPowerConsumpStats$zta;->fS:Ljava/util/HashMap;
+
+    invoke-virtual {v8, v5}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v8
+
+    check-cast v8, Landroid/app/usage/UsageStats;
+
+    const-wide/16 v9, 0x0
+
+    if-eqz v8, :cond_3
+
+    invoke-virtual {v8}, Landroid/app/usage/UsageStats;->getTotalTimeInForeground()J
+
+    move-result-wide v11
+
+    goto :goto_1
+
+    :cond_3
+    move-wide v11, v9
+
+    :goto_1
+    iget-object v8, v0, Lcom/android/server/wm/OpPowerConsumpStats$zta;->this$0:Lcom/android/server/wm/OpPowerConsumpStats;
+
+    invoke-static {v8}, Lcom/android/server/wm/OpPowerConsumpStats;->bud(Lcom/android/server/wm/OpPowerConsumpStats;)Ljava/util/HashMap;
+
+    move-result-object v8
+
+    invoke-virtual {v8, v5}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v8
+
+    if-eqz v8, :cond_4
+
+    iget-object v8, v0, Lcom/android/server/wm/OpPowerConsumpStats$zta;->this$0:Lcom/android/server/wm/OpPowerConsumpStats;
+
+    invoke-static {v8}, Lcom/android/server/wm/OpPowerConsumpStats;->bud(Lcom/android/server/wm/OpPowerConsumpStats;)Ljava/util/HashMap;
+
+    move-result-object v8
+
+    invoke-virtual {v8, v5}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v8
+
+    check-cast v8, Ljava/lang/Long;
+
+    invoke-virtual {v8}, Ljava/lang/Long;->longValue()J
+
+    move-result-wide v13
+
+    goto :goto_2
+
+    :cond_4
+    move-wide v13, v9
+
+    :goto_2
+    add-long v15, v13, v6
+
+    move-wide/from16 v17, v2
+
+    sub-long v2, v15, v11
+
+    cmp-long v8, v2, v9
+
+    if-lez v8, :cond_5
+
+    iget-object v8, v0, Lcom/android/server/wm/OpPowerConsumpStats$zta;->this$0:Lcom/android/server/wm/OpPowerConsumpStats;
+
+    invoke-static {v8}, Lcom/android/server/wm/OpPowerConsumpStats;->bud(Lcom/android/server/wm/OpPowerConsumpStats;)Ljava/util/HashMap;
+
+    move-result-object v8
+
+    invoke-static {v2, v3}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+
+    move-result-object v9
+
+    invoke-virtual {v8, v5, v9}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    :cond_5
+    new-instance v8, Ljava/lang/StringBuilder;
+
+    invoke-direct {v8}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v9, "AppInForegroundDischargeDurationTimer pauseTiming pkg:"
+
+    invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v8, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v5, " |foregroundTime:"
+
+    invoke-virtual {v8, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v8, v2, v3}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
+    const-string v2, " |foregroundTimeStart:"
+
+    invoke-virtual {v8, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v8, v11, v12}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
+    const-string v2, " |foregroundTimePause:"
+
+    invoke-virtual {v8, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v8, v6, v7}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
+    const-string v2, " |cumulativeTime:"
+
+    invoke-virtual {v8, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v8, v13, v14}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v8}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-static {v2}, Lcom/android/server/wm/OpPowerConsumpStats;->ka(Ljava/lang/String;)V
+
+    goto :goto_3
+
+    :cond_6
+    move-wide/from16 v17, v2
+
+    :goto_3
+    move-wide/from16 v2, v17
+
+    goto/16 :goto_0
+
+    :cond_7
+    move-wide/from16 v17, v2
+
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v2, "AppInForegroundDischargeDurationTimer pauseTiming currentTime:"
+
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-wide/from16 v2, v17
+
+    invoke-virtual {v0, v2, v3}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {v0}, Lcom/android/server/wm/OpPowerConsumpStats;->ka(Ljava/lang/String;)V
+
+    const/4 v0, 0x1
+
+    monitor-exit v1
+
+    return v0
+
+    :catchall_0
+    move-exception v0
+
+    monitor-exit v1
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    throw v0
+.end method
+
+.method private Bp()V
+    .locals 2
+
+    iget-object v0, p0, Lcom/android/server/wm/OpPowerConsumpStats$zta;->lock:Ljava/lang/Object;
+
+    monitor-enter v0
+
+    :try_start_0
+    new-instance v1, Ljava/util/HashMap;
+
+    invoke-direct {v1}, Ljava/util/HashMap;-><init>()V
+
+    iput-object v1, p0, Lcom/android/server/wm/OpPowerConsumpStats$zta;->fS:Ljava/util/HashMap;
+
+    new-instance v1, Ljava/util/HashMap;
+
+    invoke-direct {v1}, Ljava/util/HashMap;-><init>()V
+
+    iput-object v1, p0, Lcom/android/server/wm/OpPowerConsumpStats$zta;->gS:Ljava/util/HashMap;
+
+    const/4 v1, 0x0
+
+    iput-boolean v1, p0, Lcom/android/server/wm/OpPowerConsumpStats$zta;->hS:Z
+
+    const-string p0, "AppInForegroundDischargeDurationTimer resetTime"
+
+    invoke-static {p0}, Lcom/android/server/wm/OpPowerConsumpStats;->ka(Ljava/lang/String;)V
+
+    monitor-exit v0
+
+    return-void
+
+    :catchall_0
+    move-exception p0
+
+    monitor-exit v0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    throw p0
+.end method
+
+.method private Cp()Z
+    .locals 7
+
+    iget-object v0, p0, Lcom/android/server/wm/OpPowerConsumpStats$zta;->lock:Ljava/lang/Object;
+
+    monitor-enter v0
+
+    :try_start_0
+    iget-boolean v1, p0, Lcom/android/server/wm/OpPowerConsumpStats$zta;->hS:Z
+
+    if-eqz v1, :cond_0
+
+    const/4 p0, 0x0
+
+    monitor-exit v0
+
+    return p0
+
+    :cond_0
+    const/4 v1, 0x1
+
+    iput-boolean v1, p0, Lcom/android/server/wm/OpPowerConsumpStats$zta;->hS:Z
+
+    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
+
+    move-result-wide v2
+
+    iget-object v4, p0, Lcom/android/server/wm/OpPowerConsumpStats$zta;->this$0:Lcom/android/server/wm/OpPowerConsumpStats;
+
+    invoke-static {v4}, Lcom/android/server/wm/OpPowerConsumpStats;->vju(Lcom/android/server/wm/OpPowerConsumpStats;)Landroid/app/usage/UsageStatsManager;
+
+    move-result-object v4
+
+    const-wide/32 v5, 0x5265c00
+
+    sub-long v5, v2, v5
+
+    invoke-virtual {v4, v5, v6, v2, v3}, Landroid/app/usage/UsageStatsManager;->queryAndAggregateUsageStats(JJ)Ljava/util/Map;
+
+    move-result-object v4
+
+    iget-object v5, p0, Lcom/android/server/wm/OpPowerConsumpStats$zta;->fS:Ljava/util/HashMap;
+
+    if-nez v5, :cond_1
+
+    new-instance v5, Ljava/util/HashMap;
+
+    invoke-direct {v5}, Ljava/util/HashMap;-><init>()V
+
+    iput-object v5, p0, Lcom/android/server/wm/OpPowerConsumpStats$zta;->fS:Ljava/util/HashMap;
+
+    :cond_1
+    if-eqz v4, :cond_2
+
+    iget-object v5, p0, Lcom/android/server/wm/OpPowerConsumpStats$zta;->fS:Ljava/util/HashMap;
+
+    if-eqz v5, :cond_2
+
+    iget-object p0, p0, Lcom/android/server/wm/OpPowerConsumpStats$zta;->fS:Ljava/util/HashMap;
+
+    invoke-virtual {p0, v4}, Ljava/util/HashMap;->putAll(Ljava/util/Map;)V
+
+    :cond_2
+    new-instance p0, Ljava/lang/StringBuilder;
+
+    invoke-direct {p0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v4, "AppInForegroundDischargeDurationTimer startTiming currentTime:"
+
+    invoke-virtual {p0, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p0, v2, v3}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p0
+
+    invoke-static {p0}, Lcom/android/server/wm/OpPowerConsumpStats;->ka(Ljava/lang/String;)V
+
+    monitor-exit v0
+
+    return v1
+
+    :catchall_0
+    move-exception p0
+
+    monitor-exit v0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    throw p0
 .end method
 
 .method static synthetic sis(Lcom/android/server/wm/OpPowerConsumpStats$zta;)Z
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/wm/OpPowerConsumpStats$zta;->wp()Z
+    invoke-direct {p0}, Lcom/android/server/wm/OpPowerConsumpStats$zta;->Ap()Z
 
     move-result p0
 
@@ -90,12 +491,22 @@
 .method static synthetic tsu(Lcom/android/server/wm/OpPowerConsumpStats$zta;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/wm/OpPowerConsumpStats$zta;->xp()V
+    invoke-direct {p0}, Lcom/android/server/wm/OpPowerConsumpStats$zta;->Bp()V
 
     return-void
 .end method
 
-.method private vp()Ljava/util/HashMap;
+.method static synthetic you(Lcom/android/server/wm/OpPowerConsumpStats$zta;)Z
+    .locals 0
+
+    invoke-direct {p0}, Lcom/android/server/wm/OpPowerConsumpStats$zta;->Cp()Z
+
+    move-result p0
+
+    return p0
+.end method
+
+.method private zp()Ljava/util/HashMap;
     .locals 17
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -114,7 +525,7 @@
     monitor-enter v1
 
     :try_start_0
-    iget-boolean v2, v0, Lcom/android/server/wm/OpPowerConsumpStats$zta;->UR:Z
+    iget-boolean v2, v0, Lcom/android/server/wm/OpPowerConsumpStats$zta;->hS:Z
 
     if-eqz v2, :cond_6
 
@@ -190,7 +601,7 @@
 
     move-result-wide v6
 
-    iget-object v8, v0, Lcom/android/server/wm/OpPowerConsumpStats$zta;->SR:Ljava/util/HashMap;
+    iget-object v8, v0, Lcom/android/server/wm/OpPowerConsumpStats$zta;->fS:Ljava/util/HashMap;
 
     invoke-virtual {v8, v4}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -358,421 +769,10 @@
     goto :goto_4
 .end method
 
-.method private wp()Z
-    .locals 19
-
-    move-object/from16 v0, p0
-
-    iget-object v1, v0, Lcom/android/server/wm/OpPowerConsumpStats$zta;->lock:Ljava/lang/Object;
-
-    monitor-enter v1
-
-    :try_start_0
-    iget-boolean v2, v0, Lcom/android/server/wm/OpPowerConsumpStats$zta;->UR:Z
-
-    const/4 v3, 0x0
-
-    if-nez v2, :cond_0
-
-    monitor-exit v1
-
-    return v3
-
-    :cond_0
-    iput-boolean v3, v0, Lcom/android/server/wm/OpPowerConsumpStats$zta;->UR:Z
-
-    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
-
-    move-result-wide v2
-
-    iget-object v4, v0, Lcom/android/server/wm/OpPowerConsumpStats$zta;->this$0:Lcom/android/server/wm/OpPowerConsumpStats;
-
-    invoke-static {v4}, Lcom/android/server/wm/OpPowerConsumpStats;->vju(Lcom/android/server/wm/OpPowerConsumpStats;)Landroid/app/usage/UsageStatsManager;
-
-    move-result-object v4
-
-    const-wide/32 v5, 0x5265c00
-
-    sub-long v5, v2, v5
-
-    invoke-virtual {v4, v5, v6, v2, v3}, Landroid/app/usage/UsageStatsManager;->queryAndAggregateUsageStats(JJ)Ljava/util/Map;
-
-    move-result-object v4
-
-    iget-object v5, v0, Lcom/android/server/wm/OpPowerConsumpStats$zta;->TR:Ljava/util/HashMap;
-
-    if-nez v5, :cond_1
-
-    new-instance v5, Ljava/util/HashMap;
-
-    invoke-direct {v5}, Ljava/util/HashMap;-><init>()V
-
-    iput-object v5, v0, Lcom/android/server/wm/OpPowerConsumpStats$zta;->TR:Ljava/util/HashMap;
-
-    :cond_1
-    if-eqz v4, :cond_2
-
-    iget-object v5, v0, Lcom/android/server/wm/OpPowerConsumpStats$zta;->TR:Ljava/util/HashMap;
-
-    if-eqz v5, :cond_2
-
-    iget-object v5, v0, Lcom/android/server/wm/OpPowerConsumpStats$zta;->TR:Ljava/util/HashMap;
-
-    invoke-virtual {v5, v4}, Ljava/util/HashMap;->putAll(Ljava/util/Map;)V
-
-    :cond_2
-    iget-object v4, v0, Lcom/android/server/wm/OpPowerConsumpStats$zta;->TR:Ljava/util/HashMap;
-
-    invoke-virtual {v4}, Ljava/util/HashMap;->keySet()Ljava/util/Set;
-
-    move-result-object v4
-
-    invoke-interface {v4}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
-
-    move-result-object v4
-
-    :goto_0
-    invoke-interface {v4}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v5
-
-    if-eqz v5, :cond_7
-
-    invoke-interface {v4}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v5
-
-    check-cast v5, Ljava/lang/String;
-
-    iget-object v6, v0, Lcom/android/server/wm/OpPowerConsumpStats$zta;->TR:Ljava/util/HashMap;
-
-    invoke-virtual {v6, v5}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v6
-
-    check-cast v6, Landroid/app/usage/UsageStats;
-
-    if-eqz v6, :cond_6
-
-    invoke-virtual {v6}, Landroid/app/usage/UsageStats;->getTotalTimeInForeground()J
-
-    move-result-wide v6
-
-    iget-object v8, v0, Lcom/android/server/wm/OpPowerConsumpStats$zta;->SR:Ljava/util/HashMap;
-
-    invoke-virtual {v8, v5}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v8
-
-    check-cast v8, Landroid/app/usage/UsageStats;
-
-    const-wide/16 v9, 0x0
-
-    if-eqz v8, :cond_3
-
-    invoke-virtual {v8}, Landroid/app/usage/UsageStats;->getTotalTimeInForeground()J
-
-    move-result-wide v11
-
-    goto :goto_1
-
-    :cond_3
-    move-wide v11, v9
-
-    :goto_1
-    iget-object v8, v0, Lcom/android/server/wm/OpPowerConsumpStats$zta;->this$0:Lcom/android/server/wm/OpPowerConsumpStats;
-
-    invoke-static {v8}, Lcom/android/server/wm/OpPowerConsumpStats;->bud(Lcom/android/server/wm/OpPowerConsumpStats;)Ljava/util/HashMap;
-
-    move-result-object v8
-
-    invoke-virtual {v8, v5}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v8
-
-    if-eqz v8, :cond_4
-
-    iget-object v8, v0, Lcom/android/server/wm/OpPowerConsumpStats$zta;->this$0:Lcom/android/server/wm/OpPowerConsumpStats;
-
-    invoke-static {v8}, Lcom/android/server/wm/OpPowerConsumpStats;->bud(Lcom/android/server/wm/OpPowerConsumpStats;)Ljava/util/HashMap;
-
-    move-result-object v8
-
-    invoke-virtual {v8, v5}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v8
-
-    check-cast v8, Ljava/lang/Long;
-
-    invoke-virtual {v8}, Ljava/lang/Long;->longValue()J
-
-    move-result-wide v13
-
-    goto :goto_2
-
-    :cond_4
-    move-wide v13, v9
-
-    :goto_2
-    add-long v15, v13, v6
-
-    move-wide/from16 v17, v2
-
-    sub-long v2, v15, v11
-
-    cmp-long v8, v2, v9
-
-    if-lez v8, :cond_5
-
-    iget-object v8, v0, Lcom/android/server/wm/OpPowerConsumpStats$zta;->this$0:Lcom/android/server/wm/OpPowerConsumpStats;
-
-    invoke-static {v8}, Lcom/android/server/wm/OpPowerConsumpStats;->bud(Lcom/android/server/wm/OpPowerConsumpStats;)Ljava/util/HashMap;
-
-    move-result-object v8
-
-    invoke-static {v2, v3}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
-
-    move-result-object v9
-
-    invoke-virtual {v8, v5, v9}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    :cond_5
-    new-instance v8, Ljava/lang/StringBuilder;
-
-    invoke-direct {v8}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v9, "AppInForegroundDischargeDurationTimer pauseTiming pkg:"
-
-    invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v8, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string v5, " |foregroundTime:"
-
-    invoke-virtual {v8, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v8, v2, v3}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
-
-    const-string v2, " |foregroundTimeStart:"
-
-    invoke-virtual {v8, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v8, v11, v12}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
-
-    const-string v2, " |foregroundTimePause:"
-
-    invoke-virtual {v8, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v8, v6, v7}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
-
-    const-string v2, " |cumulativeTime:"
-
-    invoke-virtual {v8, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v8, v13, v14}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v8}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-static {v2}, Lcom/android/server/wm/OpPowerConsumpStats;->ka(Ljava/lang/String;)V
-
-    goto :goto_3
-
-    :cond_6
-    move-wide/from16 v17, v2
-
-    :goto_3
-    move-wide/from16 v2, v17
-
-    goto/16 :goto_0
-
-    :cond_7
-    move-wide/from16 v17, v2
-
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v2, "AppInForegroundDischargeDurationTimer pauseTiming currentTime:"
-
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-wide/from16 v2, v17
-
-    invoke-virtual {v0, v2, v3}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-static {v0}, Lcom/android/server/wm/OpPowerConsumpStats;->ka(Ljava/lang/String;)V
-
-    const/4 v0, 0x1
-
-    monitor-exit v1
-
-    return v0
-
-    :catchall_0
-    move-exception v0
-
-    monitor-exit v1
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    throw v0
-.end method
-
-.method private xp()V
-    .locals 2
-
-    iget-object v0, p0, Lcom/android/server/wm/OpPowerConsumpStats$zta;->lock:Ljava/lang/Object;
-
-    monitor-enter v0
-
-    :try_start_0
-    new-instance v1, Ljava/util/HashMap;
-
-    invoke-direct {v1}, Ljava/util/HashMap;-><init>()V
-
-    iput-object v1, p0, Lcom/android/server/wm/OpPowerConsumpStats$zta;->SR:Ljava/util/HashMap;
-
-    new-instance v1, Ljava/util/HashMap;
-
-    invoke-direct {v1}, Ljava/util/HashMap;-><init>()V
-
-    iput-object v1, p0, Lcom/android/server/wm/OpPowerConsumpStats$zta;->TR:Ljava/util/HashMap;
-
-    const/4 v1, 0x0
-
-    iput-boolean v1, p0, Lcom/android/server/wm/OpPowerConsumpStats$zta;->UR:Z
-
-    const-string p0, "AppInForegroundDischargeDurationTimer resetTime"
-
-    invoke-static {p0}, Lcom/android/server/wm/OpPowerConsumpStats;->ka(Ljava/lang/String;)V
-
-    monitor-exit v0
-
-    return-void
-
-    :catchall_0
-    move-exception p0
-
-    monitor-exit v0
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    throw p0
-.end method
-
-.method static synthetic you(Lcom/android/server/wm/OpPowerConsumpStats$zta;)Z
-    .locals 0
-
-    invoke-direct {p0}, Lcom/android/server/wm/OpPowerConsumpStats$zta;->yp()Z
-
-    move-result p0
-
-    return p0
-.end method
-
-.method private yp()Z
-    .locals 7
-
-    iget-object v0, p0, Lcom/android/server/wm/OpPowerConsumpStats$zta;->lock:Ljava/lang/Object;
-
-    monitor-enter v0
-
-    :try_start_0
-    iget-boolean v1, p0, Lcom/android/server/wm/OpPowerConsumpStats$zta;->UR:Z
-
-    if-eqz v1, :cond_0
-
-    const/4 p0, 0x0
-
-    monitor-exit v0
-
-    return p0
-
-    :cond_0
-    const/4 v1, 0x1
-
-    iput-boolean v1, p0, Lcom/android/server/wm/OpPowerConsumpStats$zta;->UR:Z
-
-    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
-
-    move-result-wide v2
-
-    iget-object v4, p0, Lcom/android/server/wm/OpPowerConsumpStats$zta;->this$0:Lcom/android/server/wm/OpPowerConsumpStats;
-
-    invoke-static {v4}, Lcom/android/server/wm/OpPowerConsumpStats;->vju(Lcom/android/server/wm/OpPowerConsumpStats;)Landroid/app/usage/UsageStatsManager;
-
-    move-result-object v4
-
-    const-wide/32 v5, 0x5265c00
-
-    sub-long v5, v2, v5
-
-    invoke-virtual {v4, v5, v6, v2, v3}, Landroid/app/usage/UsageStatsManager;->queryAndAggregateUsageStats(JJ)Ljava/util/Map;
-
-    move-result-object v4
-
-    iget-object v5, p0, Lcom/android/server/wm/OpPowerConsumpStats$zta;->SR:Ljava/util/HashMap;
-
-    if-nez v5, :cond_1
-
-    new-instance v5, Ljava/util/HashMap;
-
-    invoke-direct {v5}, Ljava/util/HashMap;-><init>()V
-
-    iput-object v5, p0, Lcom/android/server/wm/OpPowerConsumpStats$zta;->SR:Ljava/util/HashMap;
-
-    :cond_1
-    if-eqz v4, :cond_2
-
-    iget-object v5, p0, Lcom/android/server/wm/OpPowerConsumpStats$zta;->SR:Ljava/util/HashMap;
-
-    if-eqz v5, :cond_2
-
-    iget-object p0, p0, Lcom/android/server/wm/OpPowerConsumpStats$zta;->SR:Ljava/util/HashMap;
-
-    invoke-virtual {p0, v4}, Ljava/util/HashMap;->putAll(Ljava/util/Map;)V
-
-    :cond_2
-    new-instance p0, Ljava/lang/StringBuilder;
-
-    invoke-direct {p0}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v4, "AppInForegroundDischargeDurationTimer startTiming currentTime:"
-
-    invoke-virtual {p0, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p0, v2, v3}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p0
-
-    invoke-static {p0}, Lcom/android/server/wm/OpPowerConsumpStats;->ka(Ljava/lang/String;)V
-
-    monitor-exit v0
-
-    return v1
-
-    :catchall_0
-    move-exception p0
-
-    monitor-exit v0
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    throw p0
-.end method
-
 .method static synthetic zta(Lcom/android/server/wm/OpPowerConsumpStats$zta;)Ljava/util/HashMap;
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/wm/OpPowerConsumpStats$zta;->vp()Ljava/util/HashMap;
+    invoke-direct {p0}, Lcom/android/server/wm/OpPowerConsumpStats$zta;->zp()Ljava/util/HashMap;
 
     move-result-object p0
 

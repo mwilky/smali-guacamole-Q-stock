@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lorg/bouncycastle/asn1/ivd;->Rg()Ljava/util/Enumeration;
+    value = Lorg/bouncycastle/asn1/ivd;->Tg()Ljava/util/Enumeration;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;

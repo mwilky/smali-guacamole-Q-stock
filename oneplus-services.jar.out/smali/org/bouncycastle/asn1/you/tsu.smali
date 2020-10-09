@@ -10,11 +10,11 @@
 
 
 # instance fields
+.field private final Apa:Lorg/bouncycastle/asn1/x509/zta;
+
+.field private final Isa:Lorg/bouncycastle/asn1/x509/zta;
+
 .field private final digestAlgorithm:Lorg/bouncycastle/asn1/x509/zta;
-
-.field private final ppa:Lorg/bouncycastle/asn1/x509/zta;
-
-.field private final xsa:Lorg/bouncycastle/asn1/x509/zta;
 
 
 # direct methods
@@ -65,9 +65,9 @@
 
     move-result-object p1
 
-    iput-object p1, p0, Lorg/bouncycastle/asn1/you/tsu;->xsa:Lorg/bouncycastle/asn1/x509/zta;
+    iput-object p1, p0, Lorg/bouncycastle/asn1/you/tsu;->Isa:Lorg/bouncycastle/asn1/x509/zta;
 
-    iput-object v4, p0, Lorg/bouncycastle/asn1/you/tsu;->ppa:Lorg/bouncycastle/asn1/x509/zta;
+    iput-object v4, p0, Lorg/bouncycastle/asn1/you/tsu;->Apa:Lorg/bouncycastle/asn1/x509/zta;
 
     goto :goto_0
 
@@ -78,13 +78,13 @@
 
     if-ne v2, v1, :cond_1
 
-    iput-object v4, p0, Lorg/bouncycastle/asn1/you/tsu;->xsa:Lorg/bouncycastle/asn1/x509/zta;
+    iput-object v4, p0, Lorg/bouncycastle/asn1/you/tsu;->Isa:Lorg/bouncycastle/asn1/x509/zta;
 
     invoke-static {p1, v0}, Lorg/bouncycastle/asn1/x509/zta;->zta(Lorg/bouncycastle/asn1/lqr;Z)Lorg/bouncycastle/asn1/x509/zta;
 
     move-result-object p1
 
-    iput-object p1, p0, Lorg/bouncycastle/asn1/you/tsu;->ppa:Lorg/bouncycastle/asn1/x509/zta;
+    iput-object p1, p0, Lorg/bouncycastle/asn1/you/tsu;->Apa:Lorg/bouncycastle/asn1/x509/zta;
 
     :goto_0
     return-void
@@ -141,9 +141,9 @@
 
     if-ne p2, p1, :cond_0
 
-    iput-object p3, p0, Lorg/bouncycastle/asn1/you/tsu;->xsa:Lorg/bouncycastle/asn1/x509/zta;
+    iput-object p3, p0, Lorg/bouncycastle/asn1/you/tsu;->Isa:Lorg/bouncycastle/asn1/x509/zta;
 
-    iput-object v0, p0, Lorg/bouncycastle/asn1/you/tsu;->ppa:Lorg/bouncycastle/asn1/x509/zta;
+    iput-object v0, p0, Lorg/bouncycastle/asn1/you/tsu;->Apa:Lorg/bouncycastle/asn1/x509/zta;
 
     goto :goto_0
 
@@ -152,9 +152,9 @@
 
     if-ne p2, p1, :cond_1
 
-    iput-object v0, p0, Lorg/bouncycastle/asn1/you/tsu;->xsa:Lorg/bouncycastle/asn1/x509/zta;
+    iput-object v0, p0, Lorg/bouncycastle/asn1/you/tsu;->Isa:Lorg/bouncycastle/asn1/x509/zta;
 
-    iput-object p3, p0, Lorg/bouncycastle/asn1/you/tsu;->ppa:Lorg/bouncycastle/asn1/x509/zta;
+    iput-object p3, p0, Lorg/bouncycastle/asn1/you/tsu;->Apa:Lorg/bouncycastle/asn1/x509/zta;
 
     :goto_0
     return-void
@@ -222,18 +222,18 @@
 
 
 # virtual methods
-.method public Yg()Lorg/bouncycastle/asn1/x509/zta;
+.method public _g()Lorg/bouncycastle/asn1/x509/zta;
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/asn1/you/tsu;->ppa:Lorg/bouncycastle/asn1/x509/zta;
+    iget-object p0, p0, Lorg/bouncycastle/asn1/you/tsu;->Apa:Lorg/bouncycastle/asn1/x509/zta;
 
     return-object p0
 .end method
 
-.method public Zg()Lorg/bouncycastle/asn1/x509/zta;
+.method public ah()Lorg/bouncycastle/asn1/x509/zta;
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/asn1/you/tsu;->xsa:Lorg/bouncycastle/asn1/x509/zta;
+    iget-object p0, p0, Lorg/bouncycastle/asn1/you/tsu;->Isa:Lorg/bouncycastle/asn1/x509/zta;
 
     return-object p0
 .end method
@@ -257,7 +257,7 @@
 
     invoke-virtual {v0, v1}, Lorg/bouncycastle/asn1/cno;->you(Lorg/bouncycastle/asn1/ssp;)V
 
-    iget-object v1, p0, Lorg/bouncycastle/asn1/you/tsu;->xsa:Lorg/bouncycastle/asn1/x509/zta;
+    iget-object v1, p0, Lorg/bouncycastle/asn1/you/tsu;->Isa:Lorg/bouncycastle/asn1/x509/zta;
 
     const/4 v2, 0x0
 
@@ -272,7 +272,7 @@
     invoke-virtual {v0, v3}, Lorg/bouncycastle/asn1/cno;->you(Lorg/bouncycastle/asn1/ssp;)V
 
     :cond_0
-    iget-object p0, p0, Lorg/bouncycastle/asn1/you/tsu;->ppa:Lorg/bouncycastle/asn1/x509/zta;
+    iget-object p0, p0, Lorg/bouncycastle/asn1/you/tsu;->Apa:Lorg/bouncycastle/asn1/x509/zta;
 
     if-eqz p0, :cond_1
 

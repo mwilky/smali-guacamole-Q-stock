@@ -3,11 +3,11 @@
 .source "lambda"
 
 # interfaces
-.implements Ljava/lang/Runnable;
+.implements Ljava/util/function/Predicate;
 
 
 # instance fields
-.field private final synthetic ZE:Lcom/android/server/wm/OpScreenModeService;
+.field private final synthetic lF:Lcom/android/server/wm/OpScreenModeService;
 
 
 # direct methods
@@ -16,19 +16,23 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lcom/android/server/wm/zta;->ZE:Lcom/android/server/wm/OpScreenModeService;
+    iput-object p1, p0, Lcom/android/server/wm/zta;->lF:Lcom/android/server/wm/OpScreenModeService;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final run()V
+.method public final test(Ljava/lang/Object;)Z
     .locals 0
 
-    iget-object p0, p0, Lcom/android/server/wm/zta;->ZE:Lcom/android/server/wm/OpScreenModeService;
+    iget-object p0, p0, Lcom/android/server/wm/zta;->lF:Lcom/android/server/wm/OpScreenModeService;
 
-    invoke-virtual {p0}, Lcom/android/server/wm/OpScreenModeService;->p()V
+    check-cast p1, Landroid/media/AudioRecordingConfiguration;
 
-    return-void
+    invoke-virtual {p0, p1}, Lcom/android/server/wm/OpScreenModeService;->zta(Landroid/media/AudioRecordingConfiguration;)Z
+
+    move-result p0
+
+    return p0
 .end method

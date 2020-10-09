@@ -15,17 +15,17 @@
 
 
 # instance fields
+.field cjf:I
+
 .field degree:I
 
-.field obl:I
+.field final synthetic ear:I
 
-.field final synthetic oxb:I
+.field oxb:I
 
 .field final synthetic this$0:Lcom/oneplus/android/server/scene/OemSceneAdModeController;
 
 .field final synthetic val$enable:Z
-
-.field zgw:I
 
 
 # direct methods
@@ -34,13 +34,13 @@
 
     iput-object p1, p0, Lcom/oneplus/android/server/scene/gck;->this$0:Lcom/oneplus/android/server/scene/OemSceneAdModeController;
 
-    iput p6, p0, Lcom/oneplus/android/server/scene/gck;->oxb:I
+    iput p6, p0, Lcom/oneplus/android/server/scene/gck;->ear:I
 
     iput-boolean p7, p0, Lcom/oneplus/android/server/scene/gck;->val$enable:Z
 
     invoke-direct {p0, p2, p3, p4, p5}, Landroid/os/CountDownTimer;-><init>(JJ)V
 
-    iget p1, p0, Lcom/oneplus/android/server/scene/gck;->oxb:I
+    iget p1, p0, Lcom/oneplus/android/server/scene/gck;->ear:I
 
     iget-object p2, p0, Lcom/oneplus/android/server/scene/gck;->this$0:Lcom/oneplus/android/server/scene/OemSceneAdModeController;
 
@@ -52,13 +52,13 @@
 
     iput p1, p0, Lcom/oneplus/android/server/scene/gck;->degree:I
 
-    iget p1, p0, Lcom/oneplus/android/server/scene/gck;->oxb:I
+    iget p1, p0, Lcom/oneplus/android/server/scene/gck;->ear:I
 
-    iput p1, p0, Lcom/oneplus/android/server/scene/gck;->zgw:I
+    iput p1, p0, Lcom/oneplus/android/server/scene/gck;->oxb:I
 
     const/4 p1, 0x0
 
-    iput p1, p0, Lcom/oneplus/android/server/scene/gck;->obl:I
+    iput p1, p0, Lcom/oneplus/android/server/scene/gck;->cjf:I
 
     return-void
 .end method
@@ -93,7 +93,7 @@
 
     const/16 v1, 0xe
 
-    iget p0, p0, Lcom/oneplus/android/server/scene/gck;->oxb:I
+    iget p0, p0, Lcom/oneplus/android/server/scene/gck;->ear:I
 
     invoke-interface {v0, v1, p0}, Lsis/you/you/zta/zta/you;->setMode(II)V
 
@@ -161,13 +161,13 @@
 
     if-eqz p1, :cond_1
 
-    iget p1, p0, Lcom/oneplus/android/server/scene/gck;->obl:I
+    iget p1, p0, Lcom/oneplus/android/server/scene/gck;->cjf:I
 
     iget v0, p0, Lcom/oneplus/android/server/scene/gck;->degree:I
 
     add-int/2addr p1, v0
 
-    iput p1, p0, Lcom/oneplus/android/server/scene/gck;->obl:I
+    iput p1, p0, Lcom/oneplus/android/server/scene/gck;->cjf:I
 
     iget-object p1, p0, Lcom/oneplus/android/server/scene/gck;->this$0:Lcom/oneplus/android/server/scene/OemSceneAdModeController;
 
@@ -175,7 +175,7 @@
 
     move-result-object p1
 
-    iget v0, p0, Lcom/oneplus/android/server/scene/gck;->obl:I
+    iget v0, p0, Lcom/oneplus/android/server/scene/gck;->cjf:I
 
     const/16 v1, 0x3ff
 
@@ -184,7 +184,7 @@
     goto :goto_0
 
     :cond_0
-    iget v1, p0, Lcom/oneplus/android/server/scene/gck;->obl:I
+    iget v1, p0, Lcom/oneplus/android/server/scene/gck;->cjf:I
 
     :goto_0
     invoke-interface {p1, p2, v1}, Lsis/you/you/zta/zta/you;->setMode(II)V
@@ -192,13 +192,13 @@
     goto :goto_2
 
     :cond_1
-    iget p1, p0, Lcom/oneplus/android/server/scene/gck;->zgw:I
+    iget p1, p0, Lcom/oneplus/android/server/scene/gck;->oxb:I
 
     iget v0, p0, Lcom/oneplus/android/server/scene/gck;->degree:I
 
     sub-int/2addr p1, v0
 
-    iput p1, p0, Lcom/oneplus/android/server/scene/gck;->zgw:I
+    iput p1, p0, Lcom/oneplus/android/server/scene/gck;->oxb:I
 
     iget-object p1, p0, Lcom/oneplus/android/server/scene/gck;->this$0:Lcom/oneplus/android/server/scene/OemSceneAdModeController;
 
@@ -206,7 +206,7 @@
 
     move-result-object p1
 
-    iget v0, p0, Lcom/oneplus/android/server/scene/gck;->zgw:I
+    iget v0, p0, Lcom/oneplus/android/server/scene/gck;->oxb:I
 
     if-gez v0, :cond_2
 
@@ -215,7 +215,7 @@
     goto :goto_1
 
     :cond_2
-    iget p0, p0, Lcom/oneplus/android/server/scene/gck;->zgw:I
+    iget p0, p0, Lcom/oneplus/android/server/scene/gck;->oxb:I
 
     :goto_1
     invoke-interface {p1, p2, p0}, Lsis/you/you/zta/zta/you;->setMode(II)V

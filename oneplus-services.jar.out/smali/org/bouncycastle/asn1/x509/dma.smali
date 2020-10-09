@@ -4,15 +4,15 @@
 
 
 # instance fields
-.field Lpa:Z
+.field Wpa:Z
 
-.field Mka:Lorg/bouncycastle/asn1/n;
+.field Xka:Lorg/bouncycastle/asn1/n;
 
-.field Mpa:I
+.field Xpa:I
 
-.field Usa:Lorg/bouncycastle/asn1/x509/zta;
+.field eta:Lorg/bouncycastle/asn1/x509/zta;
 
-.field Vta:Lorg/bouncycastle/asn1/x509/e;
+.field fua:Lorg/bouncycastle/asn1/x509/e;
 
 
 # direct methods
@@ -23,7 +23,7 @@
 
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lorg/bouncycastle/asn1/x509/dma;->Lpa:Z
+    iput-boolean v0, p0, Lorg/bouncycastle/asn1/x509/dma;->Wpa:Z
 
     invoke-virtual {p1}, Lorg/bouncycastle/asn1/obl;->size()I
 
@@ -41,7 +41,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lorg/bouncycastle/asn1/x509/dma;->Vta:Lorg/bouncycastle/asn1/x509/e;
+    iput-object v0, p0, Lorg/bouncycastle/asn1/x509/dma;->fua:Lorg/bouncycastle/asn1/x509/e;
 
     const/4 v0, 0x1
 
@@ -53,7 +53,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lorg/bouncycastle/asn1/x509/dma;->Usa:Lorg/bouncycastle/asn1/x509/zta;
+    iput-object v0, p0, Lorg/bouncycastle/asn1/x509/dma;->eta:Lorg/bouncycastle/asn1/x509/zta;
 
     const/4 v0, 0x2
 
@@ -65,7 +65,7 @@
 
     move-result-object p1
 
-    iput-object p1, p0, Lorg/bouncycastle/asn1/x509/dma;->Mka:Lorg/bouncycastle/asn1/n;
+    iput-object p1, p0, Lorg/bouncycastle/asn1/x509/dma;->Xka:Lorg/bouncycastle/asn1/n;
 
     return-void
 
@@ -125,34 +125,34 @@
 
 
 # virtual methods
-.method public Xh()I
+.method public Zh()I
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/asn1/x509/dma;->Vta:Lorg/bouncycastle/asn1/x509/e;
+    iget-object p0, p0, Lorg/bouncycastle/asn1/x509/dma;->fua:Lorg/bouncycastle/asn1/x509/e;
 
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/x509/e;->Xh()I
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/x509/e;->Zh()I
 
     move-result p0
 
     return p0
 .end method
 
-.method public Yh()Ljava/util/Enumeration;
+.method public _h()Ljava/util/Enumeration;
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/asn1/x509/dma;->Vta:Lorg/bouncycastle/asn1/x509/e;
+    iget-object p0, p0, Lorg/bouncycastle/asn1/x509/dma;->fua:Lorg/bouncycastle/asn1/x509/e;
 
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/x509/e;->Yh()Ljava/util/Enumeration;
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/x509/e;->_h()Ljava/util/Enumeration;
 
     move-result-object p0
 
     return-object p0
 .end method
 
-.method public Zg()Lorg/bouncycastle/asn1/x509/zta;
+.method public ah()Lorg/bouncycastle/asn1/x509/zta;
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/asn1/x509/dma;->Usa:Lorg/bouncycastle/asn1/x509/zta;
+    iget-object p0, p0, Lorg/bouncycastle/asn1/x509/dma;->eta:Lorg/bouncycastle/asn1/x509/zta;
 
     return-object p0
 .end method
@@ -160,7 +160,7 @@
 .method public getIssuer()Lorg/bouncycastle/asn1/bvj/tsu;
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/asn1/x509/dma;->Vta:Lorg/bouncycastle/asn1/x509/e;
+    iget-object p0, p0, Lorg/bouncycastle/asn1/x509/dma;->fua:Lorg/bouncycastle/asn1/x509/e;
 
     invoke-virtual {p0}, Lorg/bouncycastle/asn1/x509/e;->getIssuer()Lorg/bouncycastle/asn1/bvj/tsu;
 
@@ -172,7 +172,7 @@
 .method public getNextUpdate()Lorg/bouncycastle/asn1/x509/h;
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/asn1/x509/dma;->Vta:Lorg/bouncycastle/asn1/x509/e;
+    iget-object p0, p0, Lorg/bouncycastle/asn1/x509/dma;->fua:Lorg/bouncycastle/asn1/x509/e;
 
     invoke-virtual {p0}, Lorg/bouncycastle/asn1/x509/e;->getNextUpdate()Lorg/bouncycastle/asn1/x509/h;
 
@@ -184,7 +184,7 @@
 .method public getRevokedCertificates()[Lorg/bouncycastle/asn1/x509/e$zta;
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/asn1/x509/dma;->Vta:Lorg/bouncycastle/asn1/x509/e;
+    iget-object p0, p0, Lorg/bouncycastle/asn1/x509/dma;->fua:Lorg/bouncycastle/asn1/x509/e;
 
     invoke-virtual {p0}, Lorg/bouncycastle/asn1/x509/e;->getRevokedCertificates()[Lorg/bouncycastle/asn1/x509/e$zta;
 
@@ -196,7 +196,7 @@
 .method public getSignature()Lorg/bouncycastle/asn1/n;
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/asn1/x509/dma;->Mka:Lorg/bouncycastle/asn1/n;
+    iget-object p0, p0, Lorg/bouncycastle/asn1/x509/dma;->Xka:Lorg/bouncycastle/asn1/n;
 
     return-object p0
 .end method
@@ -204,7 +204,7 @@
 .method public getTBSCertList()Lorg/bouncycastle/asn1/x509/e;
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/asn1/x509/dma;->Vta:Lorg/bouncycastle/asn1/x509/e;
+    iget-object p0, p0, Lorg/bouncycastle/asn1/x509/dma;->fua:Lorg/bouncycastle/asn1/x509/e;
 
     return-object p0
 .end method
@@ -212,7 +212,7 @@
 .method public getThisUpdate()Lorg/bouncycastle/asn1/x509/h;
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/asn1/x509/dma;->Vta:Lorg/bouncycastle/asn1/x509/e;
+    iget-object p0, p0, Lorg/bouncycastle/asn1/x509/dma;->fua:Lorg/bouncycastle/asn1/x509/e;
 
     invoke-virtual {p0}, Lorg/bouncycastle/asn1/x509/e;->getThisUpdate()Lorg/bouncycastle/asn1/x509/h;
 
@@ -224,7 +224,7 @@
 .method public hashCode()I
     .locals 1
 
-    iget-boolean v0, p0, Lorg/bouncycastle/asn1/x509/dma;->Lpa:Z
+    iget-boolean v0, p0, Lorg/bouncycastle/asn1/x509/dma;->Wpa:Z
 
     if-nez v0, :cond_0
 
@@ -232,14 +232,14 @@
 
     move-result v0
 
-    iput v0, p0, Lorg/bouncycastle/asn1/x509/dma;->Mpa:I
+    iput v0, p0, Lorg/bouncycastle/asn1/x509/dma;->Xpa:I
 
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lorg/bouncycastle/asn1/x509/dma;->Lpa:Z
+    iput-boolean v0, p0, Lorg/bouncycastle/asn1/x509/dma;->Wpa:Z
 
     :cond_0
-    iget p0, p0, Lorg/bouncycastle/asn1/x509/dma;->Mpa:I
+    iget p0, p0, Lorg/bouncycastle/asn1/x509/dma;->Xpa:I
 
     return p0
 .end method
@@ -251,15 +251,15 @@
 
     invoke-direct {v0}, Lorg/bouncycastle/asn1/cno;-><init>()V
 
-    iget-object v1, p0, Lorg/bouncycastle/asn1/x509/dma;->Vta:Lorg/bouncycastle/asn1/x509/e;
+    iget-object v1, p0, Lorg/bouncycastle/asn1/x509/dma;->fua:Lorg/bouncycastle/asn1/x509/e;
 
     invoke-virtual {v0, v1}, Lorg/bouncycastle/asn1/cno;->you(Lorg/bouncycastle/asn1/ssp;)V
 
-    iget-object v1, p0, Lorg/bouncycastle/asn1/x509/dma;->Usa:Lorg/bouncycastle/asn1/x509/zta;
+    iget-object v1, p0, Lorg/bouncycastle/asn1/x509/dma;->eta:Lorg/bouncycastle/asn1/x509/zta;
 
     invoke-virtual {v0, v1}, Lorg/bouncycastle/asn1/cno;->you(Lorg/bouncycastle/asn1/ssp;)V
 
-    iget-object p0, p0, Lorg/bouncycastle/asn1/x509/dma;->Mka:Lorg/bouncycastle/asn1/n;
+    iget-object p0, p0, Lorg/bouncycastle/asn1/x509/dma;->Xka:Lorg/bouncycastle/asn1/n;
 
     invoke-virtual {v0, p0}, Lorg/bouncycastle/asn1/cno;->you(Lorg/bouncycastle/asn1/ssp;)V
 

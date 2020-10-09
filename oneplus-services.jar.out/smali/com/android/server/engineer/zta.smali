@@ -4,6 +4,14 @@
 
 
 # static fields
+.field private static final BA:I = 0x4
+
+.field private static final CA:I = 0x6
+
+.field private static final DA:I = 0x7
+
+.field private static final EA:I = 0x2
+
 .field private static final HW_AUTH_PASSWORD:I = 0x1
 
 .field private static final KM_ERROR_INVALID_INPUT_LENGTH:I = -0x15
@@ -26,53 +34,45 @@
 
 .field static final TAG:Ljava/lang/String; = "KeyAttestationTest"
 
-.field public static final Xz:I = 0x0
+.field public static final fA:I = 0x0
 
-.field public static final Yz:I = 0x1
+.field public static final gA:I = 0x1
 
-.field private static final Zz:I = 0xf4240
+.field private static final hA:I = 0xf4240
 
-.field private static final _z:I = 0x1e8480
+.field private static final iA:I = 0x1e8480
 
-.field private static final aA:I = 0x9
+.field private static final jA:I = 0x9
 
-.field private static final bA:I = 0x0
+.field private static final kA:I = 0x0
 
-.field private static final cA:I = 0x2
+.field private static final lA:I = 0x2
 
-.field private static final dA:I = 0x3
+.field private static final nA:I = 0x3
 
-.field private static final eA:I = 0x1
+.field private static final oA:I = 0x1
 
-.field private static final fA:I = 0x2
-
-.field private static final gA:I = 0x3
-
-.field private static final hA:Ljava/util/regex/Pattern;
-
-.field private static final iA:I = 0x1
-
-.field private static final jA:I = 0x2
-
-.field private static final kA:Ljava/util/regex/Pattern;
-
-.field private static final lA:I = 0x6
-
-.field private static final nA:Ljava/lang/String; = "1.3.6.1.4.1.11129.2.1.17"
-
-.field private static final oA:I = 0x0
-
-.field private static final pA:I = 0x1
+.field private static final pA:I = 0x2
 
 .field private static final qA:I = 0x3
 
-.field private static final rA:I = 0x4
+.field private static final rA:Ljava/util/regex/Pattern;
 
-.field private static final sA:I = 0x6
+.field private static final sA:I = 0x1
 
-.field private static final tA:I = 0x7
+.field private static final tA:I = 0x2
 
-.field private static final uA:I = 0x2
+.field private static final uA:Ljava/util/regex/Pattern;
+
+.field private static final vA:I = 0x6
+
+.field private static final wA:Ljava/lang/String; = "1.3.6.1.4.1.11129.2.1.17"
+
+.field private static final xA:I = 0x0
+
+.field private static final yA:I = 0x1
+
+.field private static final zA:I = 0x3
 
 
 # direct methods
@@ -111,7 +111,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/android/server/engineer/zta;->hA:Ljava/util/regex/Pattern;
+    sput-object v0, Lcom/android/server/engineer/zta;->rA:Ljava/util/regex/Pattern;
 
     const-string v0, "([0-9]{4})-([0-9]{2})-[0-9]{2}"
 
@@ -119,7 +119,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/android/server/engineer/zta;->kA:Ljava/util/regex/Pattern;
+    sput-object v0, Lcom/android/server/engineer/zta;->uA:Ljava/util/regex/Pattern;
 
     return-void
 .end method
@@ -1260,7 +1260,7 @@
 
 
 # virtual methods
-.method public Ec()V
+.method public Fc()V
     .locals 21
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -1399,7 +1399,7 @@
     return-void
 .end method
 
-.method public Fc()V
+.method public Gc()V
     .locals 17
     .annotation system Ldalvik/annotation/Throws;
         value = {

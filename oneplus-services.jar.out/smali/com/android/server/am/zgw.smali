@@ -21,23 +21,37 @@
 
 .field private static final ACTION_TEST:Ljava/lang/String; = "com.haha.action.test"
 
-.field private static Ak:Ljava/lang/String; = null
+.field public static Ak:Z = false
 
-.field private static Bk:Ljava/lang/String; = null
+.field public static final Bk:J = 0x5265c00L
 
-.field private static Ck:Ljava/lang/String; = null
+.field private static Ck:I = 0x0
 
 .field private static final DEFAULT:I = -0x1
 
-.field private static Dk:Ljava/lang/String; = null
+.field public static final Dk:I = 0x1
 
-.field private static final Ek:Ljava/lang/String; = "AppBoot"
+.field private static Ek:I = 0x0
 
-.field private static Fk:Z = false
+.field private static final Fk:Ljava/lang/String; = "android.intent.action.SIM_STATE_CHANGED"
 
-.field private static final Gk:Ljava/lang/String; = "com.google.android.gms"
+.field private static Gk:Ljava/lang/String; = null
 
-.field private static Hk:Ljava/util/HashMap; = null
+.field private static Hk:Ljava/lang/String; = null
+
+.field private static Ik:Ljava/lang/String; = null
+
+.field private static Jk:Ljava/lang/String; = null
+
+.field private static final Kk:Ljava/lang/String; = "AppBoot"
+
+.field private static Lk:Z = false
+
+.field private static final MSG_GET_ONLINECONFIG:I = 0x3
+
+.field private static final Mk:Ljava/lang/String; = "com.google.android.gms"
+
+.field private static Nk:Ljava/util/HashMap; = null
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/HashMap<",
@@ -48,7 +62,7 @@
     .end annotation
 .end field
 
-.field private static Ik:Ljava/util/HashMap; = null
+.field private static Ok:Ljava/util/HashMap; = null
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/HashMap<",
@@ -60,7 +74,9 @@
     .end annotation
 .end field
 
-.field private static Jk:Ljava/util/HashMap; = null
+.field private static final PROP_DEBUG:Ljava/lang/String; = "persist.sys.appboot.debug"
+
+.field private static Pk:Ljava/util/HashMap; = null
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/HashMap<",
@@ -71,9 +87,9 @@
     .end annotation
 .end field
 
-.field private static Kk:Ljava/lang/Object; = null
+.field private static Qk:Ljava/lang/Object; = null
 
-.field private static Lk:Ljava/util/ArrayList; = null
+.field private static Rk:Ljava/util/ArrayList; = null
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/ArrayList<",
@@ -83,9 +99,7 @@
     .end annotation
 .end field
 
-.field private static final MSG_GET_ONLINECONFIG:I = 0x3
-
-.field public static Mk:Ljava/util/ArrayList; = null
+.field public static Sk:Ljava/util/ArrayList; = null
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/ArrayList<",
@@ -94,40 +108,26 @@
         }
     .end annotation
 .end field
-
-.field public static final Nk:I = 0x1
-
-.field public static final Ok:I = 0x2
-
-.field private static final PROP_DEBUG:Ljava/lang/String; = "persist.sys.appboot.debug"
-
-.field public static final Pk:I = 0x4
-
-.field private static Qk:Ljava/util/ArrayList; = null
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/ArrayList<",
-            "Ljava/lang/String;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private static final Rk:I = 0x1
-
-.field private static final Sk:I = 0x2
 
 .field public static final TAG:Ljava/lang/String; = "OnePlusAppBootManager"
 
-.field private static final Tk:I = 0x15
+.field public static final Tk:I = 0x1
 
-.field private static final Uk:I = 0x16
+.field public static final Uk:I = 0x2
 
 .field public static final VERSION:I = 0xf5d2e0
 
-.field private static final Vk:I = 0x17
+.field public static final Vk:I = 0x4
 
-.field private static final Wk:I = 0x1f
+.field private static Wk:Ljava/util/ArrayList; = null
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/ArrayList<",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+.end field
 
 .field private static final XML_ATTR_SWITCH:Ljava/lang/String; = "switch"
 
@@ -137,57 +137,45 @@
 
 .field private static final XML_TAG_PKG:Ljava/lang/String; = "pkg"
 
-.field private static final Xk:I = 0x20
+.field private static final Xk:I = 0x1
 
-.field private static final Yk:I = 0x21
+.field private static final Yk:I = 0x2
 
-.field private static final Zk:Ljava/lang/String; = "/data/system/appboot/appboot.xml"
+.field private static final Zk:I = 0x15
 
-.field private static final _k:Ljava/lang/String; = "/system/etc/presetlist.xml"
+.field private static final _k:I = 0x16
 
-.field private static final al:Ljava/lang/String; = "/system/etc/appbootspecial.xml"
+.field private static final al:I = 0x17
 
-.field private static final bl:Ljava/lang/String; = "appboot"
+.field private static final bl:I = 0x1f
 
-.field public static ck:Z = false
+.field private static final cl:I = 0x20
 
-.field private static final cl:Ljava/lang/String; = "prelist"
+.field private static final dl:I = 0x21
 
-.field public static dk:Z = false
+.field private static final el:Ljava/lang/String; = "/data/system/appboot/appboot.xml"
 
-.field private static final dl:Ljava/lang/String; = "package"
+.field private static final fl:Ljava/lang/String; = "/system/etc/presetlist.xml"
 
-.field public static ek:Z = false
+.field private static final gl:Ljava/lang/String; = "/system/etc/appbootspecial.xml"
 
-.field private static final el:Ljava/lang/String; = "flag"
+.field private static final hl:Ljava/lang/String; = "appboot"
 
-.field private static fk:Z = false
+.field public static ik:Z = false
 
-.field private static final fl:Ljava/lang/String; = "setted"
+.field private static final il:Ljava/lang/String; = "prelist"
 
-.field private static gk:Z = false
+.field public static jk:Z = false
 
-.field private static final gl:Ljava/lang/String; = "boot"
+.field private static final jl:Ljava/lang/String; = "package"
 
-.field private static final hk:Ljava/lang/String; = "persist.sys.appboot.using"
+.field public static kk:Z = false
 
-.field private static final hl:Ljava/lang/String; = "action"
+.field private static final kl:Ljava/lang/String; = "flag"
 
-.field private static final ik:Ljava/lang/String; = "persist.sys.appboot.allow"
+.field private static lk:Z = false
 
-.field private static final il:Ljava/lang/String; = "caller"
-
-.field private static final jk:Ljava/lang/String; = "persist.sys.appboot.flags"
-
-.field private static final jl:Ljava/lang/String; = "callee"
-
-.field private static final kk:Ljava/lang/String; = "persist.sys.oem.region"
-
-.field private static final kl:Ljava/lang/String; = "2"
-
-.field private static final lk:Ljava/lang/String; = "gsm.sim.operator.iso-country"
-
-.field private static final ll:Ljava/lang/String; = ""
+.field private static final ll:Ljava/lang/String; = "setted"
 
 .field private static mPkgMap:Ljava/util/HashMap; = null
     .annotation system Ldalvik/annotation/Signature;
@@ -206,27 +194,27 @@
 
 .field private static mScreenOn:Z = false
 
-.field private static final mk:Ljava/lang/String; = "persist.sys.appboot.blacklist"
+.field private static mk:Z = false
 
-.field private static final ml:J = 0xea60L
+.field private static final ml:Ljava/lang/String; = "boot"
 
-.field private static final nk:Ljava/lang/String; = "persist.sys.assert.panic"
+.field private static final nk:Ljava/lang/String; = "persist.sys.appboot.using"
 
-.field private static final nl:I = 0x8
+.field private static final nl:Ljava/lang/String; = "action"
 
-.field private static ol:J = 0x0L
+.field private static final ol:Ljava/lang/String; = "caller"
 
 .field private static opSmartPowerControl:Lcom/android/server/i; = null
 
-.field private static final pk:Ljava/lang/String; = "persist.sys.rp.debug"
+.field private static final pk:Ljava/lang/String; = "persist.sys.appboot.allow"
 
-.field private static pl:I = 0x0
+.field private static final pl:Ljava/lang/String; = "callee"
 
-.field private static final qk:Ljava/lang/String; = "persist.sys.appboot.usersetted"
+.field private static final qk:Ljava/lang/String; = "persist.sys.appboot.flags"
 
-.field private static ql:I = 0x0
+.field private static final ql:Ljava/lang/String; = "2"
 
-.field private static final rk:Ljava/lang/String; = "persist.sys.appboot.recorder"
+.field private static final rk:Ljava/lang/String; = "persist.sys.oem.region"
 
 .field public static sDebug:Z = false
 
@@ -234,33 +222,49 @@
 
 .field private static sInstance:Lcom/android/server/am/zgw; = null
 
-.field private static final sk:Ljava/lang/String; = "persist.sys.appboot.restartservice"
+.field private static final sk:Ljava/lang/String; = "gsm.sim.operator.iso-country"
 
-.field private static sl:Z = false
+.field private static final sl:Ljava/lang/String; = ""
 
-.field public static tk:Z = false
+.field private static final tk:Ljava/lang/String; = "persist.sys.appboot.blacklist"
 
-.field private static tl:Z = false
+.field private static final tl:J = 0xea60L
 
-.field public static uk:Z = false
+.field private static final uk:Ljava/lang/String; = "persist.sys.assert.panic"
 
-.field public static final vk:J = 0x5265c00L
+.field private static final ul:I = 0x8
 
-.field private static wk:I = 0x0
+.field private static final vk:Ljava/lang/String; = "persist.sys.rp.debug"
 
-.field public static final xk:I = 0x1
+.field private static vl:J = 0x0L
 
-.field private static yk:I = 0x0
+.field private static final wk:Ljava/lang/String; = "persist.sys.appboot.usersetted"
 
-.field private static final zk:Ljava/lang/String; = "android.intent.action.SIM_STATE_CHANGED"
+.field private static wl:I = 0x0
+
+.field private static final xk:Ljava/lang/String; = "persist.sys.appboot.recorder"
+
+.field private static xl:I = 0x0
+
+.field private static final yk:Ljava/lang/String; = "persist.sys.appboot.restartservice"
+
+.field private static yl:Z
+
+.field public static zk:Z
+
+.field private static zl:Z
 
 
 # instance fields
-.field private Aj:Lcom/oneplus/config/ConfigObserver;
+.field private Ej:Ljava/lang/String;
 
-.field private Bj:Z
+.field private Fj:Ljava/lang/String;
 
-.field private Cj:Ljava/util/HashSet;
+.field private Gj:Lcom/oneplus/config/ConfigObserver;
+
+.field private Hj:Z
+
+.field private Ij:Ljava/util/HashSet;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/HashSet<",
@@ -270,67 +274,7 @@
     .end annotation
 .end field
 
-.field private Dj:Z
-
-.field private Ej:Ljava/util/ArrayList;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/ArrayList<",
-            "Ljava/lang/String;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private Fj:Ljava/util/HashSet;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/HashSet<",
-            "Ljava/lang/String;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private Gj:Ljava/util/HashSet;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/HashSet<",
-            "Ljava/lang/String;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private Hj:Ljava/util/ArrayList;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/ArrayList<",
-            "Ljava/lang/String;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private Ij:Ljava/util/ArrayList;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/ArrayList<",
-            "Ljava/lang/String;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private Jj:Ljava/util/ArrayList;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/ArrayList<",
-            "Ljava/lang/String;",
-            ">;"
-        }
-    .end annotation
-.end field
+.field private Jj:Z
 
 .field private Kj:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
@@ -342,20 +286,20 @@
     .end annotation
 .end field
 
-.field private Lj:Ljava/util/ArrayList;
+.field private Lj:Ljava/util/HashSet;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Ljava/util/ArrayList<",
+            "Ljava/util/HashSet<",
             "Ljava/lang/String;",
             ">;"
         }
     .end annotation
 .end field
 
-.field private Mj:Ljava/util/ArrayList;
+.field private Mj:Ljava/util/HashSet;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Ljava/util/ArrayList<",
+            "Ljava/util/HashSet<",
             "Ljava/lang/String;",
             ">;"
         }
@@ -422,19 +366,25 @@
     .end annotation
 .end field
 
-.field private Tj:Ljava/util/HashMap;
+.field private Tj:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Ljava/util/HashMap<",
+            "Ljava/util/ArrayList<",
             "Ljava/lang/String;",
-            "Ljava/util/HashSet<",
-            "Ljava/lang/String;",
-            ">;>;"
+            ">;"
         }
     .end annotation
 .end field
 
-.field private Uj:Z
+.field private Uj:Ljava/util/ArrayList;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/ArrayList<",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+.end field
 
 .field private Vj:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
@@ -456,11 +406,7 @@
     .end annotation
 .end field
 
-.field Xj:Landroid/os/HandlerThread;
-
-.field Yj:Lcom/android/server/am/zgw$you;
-
-.field private Zj:Ljava/util/ArrayList;
+.field private Xj:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/ArrayList<",
@@ -470,7 +416,65 @@
     .end annotation
 .end field
 
-.field private _j:Lcom/android/internal/app/ProcessMap;
+.field private Yj:Ljava/util/ArrayList;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/ArrayList<",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private Zj:Ljava/util/HashMap;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/HashMap<",
+            "Ljava/lang/String;",
+            "Ljava/util/HashSet<",
+            "Ljava/lang/String;",
+            ">;>;"
+        }
+    .end annotation
+.end field
+
+.field private _j:Z
+
+.field private ak:Ljava/util/ArrayList;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/ArrayList<",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private bk:Ljava/util/ArrayList;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/ArrayList<",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field ck:Landroid/os/HandlerThread;
+
+.field dk:Lcom/android/server/am/zgw$you;
+
+.field private ek:Ljava/util/ArrayList;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/ArrayList<",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private fk:Lcom/android/internal/app/ProcessMap;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lcom/android/internal/app/ProcessMap<",
@@ -480,7 +484,7 @@
     .end annotation
 .end field
 
-.field private ak:Lcom/android/internal/app/ProcessMap;
+.field private gk:Lcom/android/internal/app/ProcessMap;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lcom/android/internal/app/ProcessMap<",
@@ -490,7 +494,7 @@
     .end annotation
 .end field
 
-.field private bk:Lcom/android/server/am/zgw$tsu;
+.field private hk:Lcom/android/server/am/zgw$tsu;
 
 .field private mAms:Lcom/android/server/am/ActivityManagerService;
 
@@ -505,10 +509,6 @@
 .field private mResolver:Landroid/content/ContentResolver;
 
 .field private mSettingsObserver:Lcom/android/server/am/zgw$ssp;
-
-.field private yj:Ljava/lang/String;
-
-.field private zj:Ljava/lang/String;
 
 
 # direct methods
@@ -531,21 +531,21 @@
 
     sput-boolean v1, Lcom/android/server/am/zgw;->sInUsing:Z
 
-    sput-boolean v0, Lcom/android/server/am/zgw;->ck:Z
+    sput-boolean v0, Lcom/android/server/am/zgw;->ik:Z
 
     sput-boolean v2, Lcom/android/server/am/zgw;->sDebug:Z
 
-    sput-boolean v0, Lcom/android/server/am/zgw;->dk:Z
+    sput-boolean v0, Lcom/android/server/am/zgw;->jk:Z
 
-    sput-boolean v2, Lcom/android/server/am/zgw;->ek:Z
+    sput-boolean v2, Lcom/android/server/am/zgw;->kk:Z
 
-    sput-boolean v2, Lcom/android/server/am/zgw;->fk:Z
+    sput-boolean v2, Lcom/android/server/am/zgw;->lk:Z
 
-    sput-boolean v2, Lcom/android/server/am/zgw;->gk:Z
+    sput-boolean v2, Lcom/android/server/am/zgw;->mk:Z
 
     sget-boolean v1, Lcom/android/server/am/zgw;->sInUsing:Z
 
-    sput-boolean v1, Lcom/android/server/am/zgw;->tk:Z
+    sput-boolean v1, Lcom/android/server/am/zgw;->zk:Z
 
     new-array v1, v0, [I
 
@@ -563,13 +563,13 @@
 
     move-result v1
 
-    sput-boolean v1, Lcom/android/server/am/zgw;->uk:Z
+    sput-boolean v1, Lcom/android/server/am/zgw;->Ak:Z
 
     const/16 v1, 0xa
 
-    sput v1, Lcom/android/server/am/zgw;->wk:I
+    sput v1, Lcom/android/server/am/zgw;->Ck:I
 
-    sput v2, Lcom/android/server/am/zgw;->yk:I
+    sput v2, Lcom/android/server/am/zgw;->Ek:I
 
     const-string v1, ""
 
@@ -577,29 +577,29 @@
 
     const/4 v1, 0x0
 
-    sput-object v1, Lcom/android/server/am/zgw;->Ak:Ljava/lang/String;
+    sput-object v1, Lcom/android/server/am/zgw;->Gk:Ljava/lang/String;
 
-    sput-object v1, Lcom/android/server/am/zgw;->Bk:Ljava/lang/String;
+    sput-object v1, Lcom/android/server/am/zgw;->Hk:Ljava/lang/String;
 
-    sput-object v1, Lcom/android/server/am/zgw;->Ck:Ljava/lang/String;
+    sput-object v1, Lcom/android/server/am/zgw;->Ik:Ljava/lang/String;
 
-    sput-object v1, Lcom/android/server/am/zgw;->Dk:Ljava/lang/String;
+    sput-object v1, Lcom/android/server/am/zgw;->Jk:Ljava/lang/String;
 
     sput-boolean v0, Lcom/android/server/am/zgw;->mScreenOn:Z
 
-    sput-boolean v0, Lcom/android/server/am/zgw;->Fk:Z
+    sput-boolean v0, Lcom/android/server/am/zgw;->Lk:Z
 
     new-instance v3, Ljava/util/HashMap;
 
     invoke-direct {v3}, Ljava/util/HashMap;-><init>()V
 
-    sput-object v3, Lcom/android/server/am/zgw;->Hk:Ljava/util/HashMap;
+    sput-object v3, Lcom/android/server/am/zgw;->Nk:Ljava/util/HashMap;
 
     new-instance v3, Ljava/util/HashMap;
 
     invoke-direct {v3}, Ljava/util/HashMap;-><init>()V
 
-    sput-object v3, Lcom/android/server/am/zgw;->Ik:Ljava/util/HashMap;
+    sput-object v3, Lcom/android/server/am/zgw;->Ok:Ljava/util/HashMap;
 
     new-instance v3, Ljava/util/HashMap;
 
@@ -611,7 +611,7 @@
 
     invoke-direct {v3}, Ljava/util/HashMap;-><init>()V
 
-    sput-object v3, Lcom/android/server/am/zgw;->Jk:Ljava/util/HashMap;
+    sput-object v3, Lcom/android/server/am/zgw;->Pk:Ljava/util/HashMap;
 
     sput-object v1, Lcom/android/server/am/zgw;->sInstance:Lcom/android/server/am/zgw;
 
@@ -619,13 +619,13 @@
 
     invoke-direct {v1}, Ljava/lang/Object;-><init>()V
 
-    sput-object v1, Lcom/android/server/am/zgw;->Kk:Ljava/lang/Object;
+    sput-object v1, Lcom/android/server/am/zgw;->Qk:Ljava/lang/Object;
 
     new-instance v1, Ljava/util/ArrayList;
 
     invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
 
-    sput-object v1, Lcom/android/server/am/zgw;->Lk:Ljava/util/ArrayList;
+    sput-object v1, Lcom/android/server/am/zgw;->Rk:Ljava/util/ArrayList;
 
     new-instance v1, Ljava/util/ArrayList;
 
@@ -643,7 +643,7 @@
 
     invoke-direct {v1, v3}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
 
-    sput-object v1, Lcom/android/server/am/zgw;->Mk:Ljava/util/ArrayList;
+    sput-object v1, Lcom/android/server/am/zgw;->Sk:Ljava/util/ArrayList;
 
     new-instance v1, Ljava/util/ArrayList;
 
@@ -665,19 +665,19 @@
 
     invoke-direct {v1, v3}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
 
-    sput-object v1, Lcom/android/server/am/zgw;->Qk:Ljava/util/ArrayList;
+    sput-object v1, Lcom/android/server/am/zgw;->Wk:Ljava/util/ArrayList;
 
     const-wide/32 v3, 0xea60
 
-    sput-wide v3, Lcom/android/server/am/zgw;->ol:J
+    sput-wide v3, Lcom/android/server/am/zgw;->vl:J
 
     const/16 v1, 0x8
 
-    sput v1, Lcom/android/server/am/zgw;->pl:I
+    sput v1, Lcom/android/server/am/zgw;->wl:I
 
     const/16 v1, 0x384
 
-    sput v1, Lcom/android/server/am/zgw;->ql:I
+    sput v1, Lcom/android/server/am/zgw;->xl:I
 
     new-array v1, v0, [I
 
@@ -687,13 +687,13 @@
 
     move-result v1
 
-    sput-boolean v1, Lcom/android/server/am/zgw;->sl:Z
+    sput-boolean v1, Lcom/android/server/am/zgw;->yl:Z
 
-    sget-boolean v1, Lcom/android/server/am/zgw;->sl:Z
+    sget-boolean v1, Lcom/android/server/am/zgw;->yl:Z
 
     xor-int/2addr v0, v1
 
-    sput-boolean v0, Lcom/android/server/am/zgw;->tl:Z
+    sput-boolean v0, Lcom/android/server/am/zgw;->zl:Z
 
     return-void
 .end method
@@ -709,59 +709,23 @@
 
     iput-object v0, p0, Lcom/android/server/am/zgw;->mSettingsObserver:Lcom/android/server/am/zgw$ssp;
 
-    iput-object v0, p0, Lcom/android/server/am/zgw;->yj:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/server/am/zgw;->Ej:Ljava/lang/String;
 
-    iput-object v0, p0, Lcom/android/server/am/zgw;->zj:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/server/am/zgw;->Fj:Ljava/lang/String;
 
     const/4 v1, 0x1
 
-    iput-boolean v1, p0, Lcom/android/server/am/zgw;->Bj:Z
+    iput-boolean v1, p0, Lcom/android/server/am/zgw;->Hj:Z
 
     new-instance v2, Ljava/util/HashSet;
 
     invoke-direct {v2}, Ljava/util/HashSet;-><init>()V
 
-    iput-object v2, p0, Lcom/android/server/am/zgw;->Cj:Ljava/util/HashSet;
+    iput-object v2, p0, Lcom/android/server/am/zgw;->Ij:Ljava/util/HashSet;
 
     const/4 v2, 0x0
 
-    iput-boolean v2, p0, Lcom/android/server/am/zgw;->Dj:Z
-
-    new-instance v3, Ljava/util/ArrayList;
-
-    invoke-direct {v3}, Ljava/util/ArrayList;-><init>()V
-
-    iput-object v3, p0, Lcom/android/server/am/zgw;->Ej:Ljava/util/ArrayList;
-
-    new-instance v3, Ljava/util/HashSet;
-
-    invoke-direct {v3}, Ljava/util/HashSet;-><init>()V
-
-    iput-object v3, p0, Lcom/android/server/am/zgw;->Fj:Ljava/util/HashSet;
-
-    new-instance v3, Ljava/util/HashSet;
-
-    invoke-direct {v3}, Ljava/util/HashSet;-><init>()V
-
-    iput-object v3, p0, Lcom/android/server/am/zgw;->Gj:Ljava/util/HashSet;
-
-    new-instance v3, Ljava/util/ArrayList;
-
-    invoke-direct {v3}, Ljava/util/ArrayList;-><init>()V
-
-    iput-object v3, p0, Lcom/android/server/am/zgw;->Hj:Ljava/util/ArrayList;
-
-    new-instance v3, Ljava/util/ArrayList;
-
-    invoke-direct {v3}, Ljava/util/ArrayList;-><init>()V
-
-    iput-object v3, p0, Lcom/android/server/am/zgw;->Ij:Ljava/util/ArrayList;
-
-    new-instance v3, Ljava/util/ArrayList;
-
-    invoke-direct {v3}, Ljava/util/ArrayList;-><init>()V
-
-    iput-object v3, p0, Lcom/android/server/am/zgw;->Jj:Ljava/util/ArrayList;
+    iput-boolean v2, p0, Lcom/android/server/am/zgw;->Jj:Z
 
     new-instance v3, Ljava/util/ArrayList;
 
@@ -769,23 +733,59 @@
 
     iput-object v3, p0, Lcom/android/server/am/zgw;->Kj:Ljava/util/ArrayList;
 
-    new-instance v3, Ljava/util/ArrayList;
+    new-instance v3, Ljava/util/HashSet;
 
-    invoke-direct {v3}, Ljava/util/ArrayList;-><init>()V
+    invoke-direct {v3}, Ljava/util/HashSet;-><init>()V
 
-    iput-object v3, p0, Lcom/android/server/am/zgw;->Lj:Ljava/util/ArrayList;
+    iput-object v3, p0, Lcom/android/server/am/zgw;->Lj:Ljava/util/HashSet;
 
-    new-instance v3, Ljava/util/ArrayList;
+    new-instance v3, Ljava/util/HashSet;
 
-    invoke-direct {v3}, Ljava/util/ArrayList;-><init>()V
+    invoke-direct {v3}, Ljava/util/HashSet;-><init>()V
 
-    iput-object v3, p0, Lcom/android/server/am/zgw;->Mj:Ljava/util/ArrayList;
+    iput-object v3, p0, Lcom/android/server/am/zgw;->Mj:Ljava/util/HashSet;
 
     new-instance v3, Ljava/util/ArrayList;
 
     invoke-direct {v3}, Ljava/util/ArrayList;-><init>()V
 
     iput-object v3, p0, Lcom/android/server/am/zgw;->Nj:Ljava/util/ArrayList;
+
+    new-instance v3, Ljava/util/ArrayList;
+
+    invoke-direct {v3}, Ljava/util/ArrayList;-><init>()V
+
+    iput-object v3, p0, Lcom/android/server/am/zgw;->Oj:Ljava/util/ArrayList;
+
+    new-instance v3, Ljava/util/ArrayList;
+
+    invoke-direct {v3}, Ljava/util/ArrayList;-><init>()V
+
+    iput-object v3, p0, Lcom/android/server/am/zgw;->Pj:Ljava/util/ArrayList;
+
+    new-instance v3, Ljava/util/ArrayList;
+
+    invoke-direct {v3}, Ljava/util/ArrayList;-><init>()V
+
+    iput-object v3, p0, Lcom/android/server/am/zgw;->Qj:Ljava/util/ArrayList;
+
+    new-instance v3, Ljava/util/ArrayList;
+
+    invoke-direct {v3}, Ljava/util/ArrayList;-><init>()V
+
+    iput-object v3, p0, Lcom/android/server/am/zgw;->Rj:Ljava/util/ArrayList;
+
+    new-instance v3, Ljava/util/ArrayList;
+
+    invoke-direct {v3}, Ljava/util/ArrayList;-><init>()V
+
+    iput-object v3, p0, Lcom/android/server/am/zgw;->Sj:Ljava/util/ArrayList;
+
+    new-instance v3, Ljava/util/ArrayList;
+
+    invoke-direct {v3}, Ljava/util/ArrayList;-><init>()V
+
+    iput-object v3, p0, Lcom/android/server/am/zgw;->Tj:Ljava/util/ArrayList;
 
     new-instance v3, Ljava/util/ArrayList;
 
@@ -801,7 +801,7 @@
 
     invoke-direct {v3, v4}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
 
-    iput-object v3, p0, Lcom/android/server/am/zgw;->Oj:Ljava/util/ArrayList;
+    iput-object v3, p0, Lcom/android/server/am/zgw;->Uj:Ljava/util/ArrayList;
 
     new-instance v3, Ljava/util/ArrayList;
 
@@ -829,39 +829,39 @@
 
     invoke-direct {v3, v4}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
 
-    iput-object v3, p0, Lcom/android/server/am/zgw;->Pj:Ljava/util/ArrayList;
+    iput-object v3, p0, Lcom/android/server/am/zgw;->Vj:Ljava/util/ArrayList;
 
     new-instance v3, Ljava/util/ArrayList;
 
     invoke-direct {v3}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v3, p0, Lcom/android/server/am/zgw;->Qj:Ljava/util/ArrayList;
+    iput-object v3, p0, Lcom/android/server/am/zgw;->Wj:Ljava/util/ArrayList;
 
     new-instance v3, Ljava/util/ArrayList;
 
     invoke-direct {v3}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v3, p0, Lcom/android/server/am/zgw;->Rj:Ljava/util/ArrayList;
+    iput-object v3, p0, Lcom/android/server/am/zgw;->Xj:Ljava/util/ArrayList;
 
     new-instance v3, Ljava/util/ArrayList;
 
     invoke-direct {v3}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v3, p0, Lcom/android/server/am/zgw;->Sj:Ljava/util/ArrayList;
+    iput-object v3, p0, Lcom/android/server/am/zgw;->Yj:Ljava/util/ArrayList;
 
     new-instance v3, Ljava/util/HashMap;
 
     invoke-direct {v3}, Ljava/util/HashMap;-><init>()V
 
-    iput-object v3, p0, Lcom/android/server/am/zgw;->Tj:Ljava/util/HashMap;
+    iput-object v3, p0, Lcom/android/server/am/zgw;->Zj:Ljava/util/HashMap;
 
-    iput-boolean v1, p0, Lcom/android/server/am/zgw;->Uj:Z
+    iput-boolean v1, p0, Lcom/android/server/am/zgw;->_j:Z
 
     new-instance v1, Ljava/util/ArrayList;
 
     invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v1, p0, Lcom/android/server/am/zgw;->Vj:Ljava/util/ArrayList;
+    iput-object v1, p0, Lcom/android/server/am/zgw;->ak:Ljava/util/ArrayList;
 
     new-instance v1, Ljava/util/ArrayList;
 
@@ -881,7 +881,7 @@
 
     invoke-direct {v1, v3}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
 
-    iput-object v1, p0, Lcom/android/server/am/zgw;->Wj:Ljava/util/ArrayList;
+    iput-object v1, p0, Lcom/android/server/am/zgw;->bk:Ljava/util/ArrayList;
 
     new-instance v1, Lcom/android/server/am/ugm;
 
@@ -899,27 +899,27 @@
 
     iput-object v1, p0, Lcom/android/server/am/zgw;->mPackageReceiver:Landroid/content/BroadcastReceiver;
 
-    iput-object v0, p0, Lcom/android/server/am/zgw;->Xj:Landroid/os/HandlerThread;
+    iput-object v0, p0, Lcom/android/server/am/zgw;->ck:Landroid/os/HandlerThread;
 
-    iput-object v0, p0, Lcom/android/server/am/zgw;->Yj:Lcom/android/server/am/zgw$you;
+    iput-object v0, p0, Lcom/android/server/am/zgw;->dk:Lcom/android/server/am/zgw$you;
 
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/android/server/am/zgw;->Zj:Ljava/util/ArrayList;
+    iput-object v0, p0, Lcom/android/server/am/zgw;->ek:Ljava/util/ArrayList;
 
     new-instance v0, Lcom/android/internal/app/ProcessMap;
 
     invoke-direct {v0}, Lcom/android/internal/app/ProcessMap;-><init>()V
 
-    iput-object v0, p0, Lcom/android/server/am/zgw;->_j:Lcom/android/internal/app/ProcessMap;
+    iput-object v0, p0, Lcom/android/server/am/zgw;->fk:Lcom/android/internal/app/ProcessMap;
 
     new-instance v0, Lcom/android/internal/app/ProcessMap;
 
     invoke-direct {v0}, Lcom/android/internal/app/ProcessMap;-><init>()V
 
-    iput-object v0, p0, Lcom/android/server/am/zgw;->ak:Lcom/android/internal/app/ProcessMap;
+    iput-object v0, p0, Lcom/android/server/am/zgw;->gk:Lcom/android/internal/app/ProcessMap;
 
     sput-object p1, Lcom/android/server/am/zgw;->mPms:Lcom/android/server/pm/PackageManagerService;
 
@@ -943,7 +943,7 @@
 
     sput-boolean p1, Lcom/android/server/am/zgw;->sDebug:Z
 
-    sget-boolean p1, Lcom/android/server/am/zgw;->ek:Z
+    sget-boolean p1, Lcom/android/server/am/zgw;->kk:Z
 
     const-string v0, "persist.sys.assert.panic"
 
@@ -951,9 +951,9 @@
 
     move-result p1
 
-    sput-boolean p1, Lcom/android/server/am/zgw;->ek:Z
+    sput-boolean p1, Lcom/android/server/am/zgw;->kk:Z
 
-    sget-boolean p1, Lcom/android/server/am/zgw;->ck:Z
+    sget-boolean p1, Lcom/android/server/am/zgw;->ik:Z
 
     const-string v0, "persist.sys.appboot.blacklist"
 
@@ -961,7 +961,7 @@
 
     move-result p1
 
-    sput-boolean p1, Lcom/android/server/am/zgw;->ck:Z
+    sput-boolean p1, Lcom/android/server/am/zgw;->ik:Z
 
     const-string p1, "persist.sys.appboot.flags"
 
@@ -969,7 +969,7 @@
 
     move-result p1
 
-    sput p1, Lcom/android/server/am/zgw;->yk:I
+    sput p1, Lcom/android/server/am/zgw;->Ek:I
 
     const-string p1, "persist.sys.oem.region"
 
@@ -987,13 +987,13 @@
 
     move-result p1
 
-    sput-boolean p1, Lcom/android/server/am/zgw;->fk:Z
+    sput-boolean p1, Lcom/android/server/am/zgw;->lk:Z
 
     sget-boolean p1, Lcom/android/server/am/zgw;->sInUsing:Z
 
     if-eqz p1, :cond_0
 
-    sput-boolean p1, Lcom/android/server/am/zgw;->tk:Z
+    sput-boolean p1, Lcom/android/server/am/zgw;->zk:Z
 
     invoke-virtual {p0}, Lcom/android/server/am/zgw;->hb()I
 
@@ -1001,7 +1001,7 @@
     return-void
 .end method
 
-.method private Xc()V
+.method private Yc()V
     .locals 2
 
     const-string p0, "OnePlusAppBootManager"
@@ -1036,7 +1036,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sget-boolean v1, Lcom/android/server/am/zgw;->tk:Z
+    sget-boolean v1, Lcom/android/server/am/zgw;->zk:Z
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -1072,7 +1072,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sget-boolean v1, Lcom/android/server/am/zgw;->ek:Z
+    sget-boolean v1, Lcom/android/server/am/zgw;->kk:Z
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -1090,7 +1090,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sget-boolean v1, Lcom/android/server/am/zgw;->ck:Z
+    sget-boolean v1, Lcom/android/server/am/zgw;->ik:Z
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -1108,7 +1108,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sget v1, Lcom/android/server/am/zgw;->yk:I
+    sget v1, Lcom/android/server/am/zgw;->Ek:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -1124,7 +1124,7 @@
 .method static synthetic access$000()Ljava/util/HashMap;
     .locals 1
 
-    sget-object v0, Lcom/android/server/am/zgw;->Jk:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/server/am/zgw;->Pk:Ljava/util/HashMap;
 
     return-object v0
 .end method
@@ -1132,7 +1132,7 @@
 .method static synthetic access$100()Ljava/util/ArrayList;
     .locals 1
 
-    sget-object v0, Lcom/android/server/am/zgw;->Lk:Ljava/util/ArrayList;
+    sget-object v0, Lcom/android/server/am/zgw;->Rk:Ljava/util/ArrayList;
 
     return-object v0
 .end method
@@ -1140,7 +1140,7 @@
 .method static synthetic access$1500()Z
     .locals 1
 
-    sget-boolean v0, Lcom/android/server/am/zgw;->fk:Z
+    sget-boolean v0, Lcom/android/server/am/zgw;->lk:Z
 
     return v0
 .end method
@@ -1158,7 +1158,7 @@
 .method static synthetic access$2100()Z
     .locals 1
 
-    sget-boolean v0, Lcom/android/server/am/zgw;->gk:Z
+    sget-boolean v0, Lcom/android/server/am/zgw;->mk:Z
 
     return v0
 .end method
@@ -1174,7 +1174,7 @@
 .method static synthetic access$400()I
     .locals 1
 
-    sget v0, Lcom/android/server/am/zgw;->wk:I
+    sget v0, Lcom/android/server/am/zgw;->Ck:I
 
     return v0
 .end method
@@ -1190,7 +1190,7 @@
 .method static synthetic bio(Lcom/android/server/am/zgw;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/am/zgw;->mm()V
+    invoke-direct {p0}, Lcom/android/server/am/zgw;->pm()V
 
     return-void
 .end method
@@ -1207,7 +1207,7 @@
     invoke-static {v0}, Lcom/android/server/am/zgw;->myLog(Ljava/lang/String;)V
 
     :cond_0
-    iget-object p0, p0, Lcom/android/server/am/zgw;->Yj:Lcom/android/server/am/zgw$you;
+    iget-object p0, p0, Lcom/android/server/am/zgw;->dk:Lcom/android/server/am/zgw$you;
 
     const/16 v0, 0x20
 
@@ -1466,7 +1466,7 @@
 .method static synthetic cno(Lcom/android/server/am/zgw;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/am/zgw;->Xc()V
+    invoke-direct {p0}, Lcom/android/server/am/zgw;->Yc()V
 
     return-void
 .end method
@@ -1575,7 +1575,7 @@
 
     iget p0, p1, Lcom/android/server/am/ProcessRecord;->curAdj:I
 
-    sget v0, Lcom/android/server/am/zgw;->ql:I
+    sget v0, Lcom/android/server/am/zgw;->xl:I
 
     const-string v1, "OnePlusAppBootManager"
 
@@ -1595,7 +1595,7 @@
 
     invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sget p1, Lcom/android/server/am/zgw;->ql:I
+    sget p1, Lcom/android/server/am/zgw;->xl:I
 
     invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -1679,12 +1679,12 @@
 .method private ha(Z)V
     .locals 5
 
-    sget-object p0, Lcom/android/server/am/zgw;->Hk:Ljava/util/HashMap;
+    sget-object p0, Lcom/android/server/am/zgw;->Nk:Ljava/util/HashMap;
 
     monitor-enter p0
 
     :try_start_0
-    sget-object v0, Lcom/android/server/am/zgw;->Hk:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/server/am/zgw;->Nk:Ljava/util/HashMap;
 
     invoke-virtual {v0}, Ljava/util/HashMap;->keySet()Ljava/util/Set;
 
@@ -1713,7 +1713,7 @@
 
     if-eqz p1, :cond_0
 
-    sget-object v3, Lcom/android/server/am/zgw;->Hk:Ljava/util/HashMap;
+    sget-object v3, Lcom/android/server/am/zgw;->Nk:Ljava/util/HashMap;
 
     invoke-virtual {v3, v1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -1730,7 +1730,7 @@
     goto :goto_0
 
     :cond_0
-    sget-object v3, Lcom/android/server/am/zgw;->Hk:Ljava/util/HashMap;
+    sget-object v3, Lcom/android/server/am/zgw;->Nk:Ljava/util/HashMap;
 
     invoke-virtual {v2}, Lcom/android/server/am/zgw$sis;->getAction()I
 
@@ -1786,342 +1786,10 @@
     return p0
 .end method
 
-.method private km()V
-    .locals 1
-
-    sget-boolean v0, Lcom/android/server/am/zgw;->sDebug:Z
-
-    if-eqz v0, :cond_0
-
-    const-string v0, "autoChangeRule"
-
-    invoke-static {v0}, Lcom/android/server/am/zgw;->myLog(Ljava/lang/String;)V
-
-    :cond_0
-    sget-boolean v0, Lcom/android/server/am/zgw;->gk:Z
-
-    if-eqz v0, :cond_1
-
-    iget-object p0, p0, Lcom/android/server/am/zgw;->mRecorder:Lcom/android/server/am/oxb;
-
-    invoke-virtual {p0}, Lcom/android/server/am/oxb;->clearRecords()V
-
-    :cond_1
-    return-void
-.end method
-
 .method static synthetic kth(Lcom/android/server/am/zgw;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/am/zgw;->nm()V
-
-    return-void
-.end method
-
-.method private lm()V
-    .locals 5
-
-    sget-object p0, Lcom/android/server/am/zgw;->Hk:Ljava/util/HashMap;
-
-    monitor-enter p0
-
-    :try_start_0
-    sget-object v0, Lcom/android/server/am/zgw;->Hk:Ljava/util/HashMap;
-
-    invoke-virtual {v0}, Ljava/util/HashMap;->keySet()Ljava/util/Set;
-
-    move-result-object v0
-
-    invoke-interface {v0}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
-
-    move-result-object v0
-
-    :goto_0
-    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v1
-
-    if-eqz v1, :cond_0
-
-    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v1
-
-    check-cast v1, Ljava/lang/String;
-
-    const-string v2, "OnePlusAppBootManager"
-
-    new-instance v3, Ljava/lang/StringBuilder;
-
-    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v4, "# dump # HugePowerPkg # "
-
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v3, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-static {v2, v1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    goto :goto_0
-
-    :cond_0
-    monitor-exit p0
-
-    return-void
-
-    :catchall_0
-    move-exception v0
-
-    monitor-exit p0
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    throw v0
-.end method
-
-.method private mm()V
-    .locals 3
-
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v1, "# dumpList mServiceActionBlackList # "
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget-object v1, p0, Lcom/android/server/am/zgw;->Kj:Ljava/util/ArrayList;
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    const-string v1, "OnePlusAppBootManager"
-
-    invoke-static {v1, v0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v2, "# dumpList mRestartServiceWhiteList # "
-
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget-object v2, p0, Lcom/android/server/am/zgw;->Lj:Ljava/util/ArrayList;
-
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-static {v1, v0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v2, "# dumpList mServiceActionWhiteList # "
-
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget-object v2, p0, Lcom/android/server/am/zgw;->Mj:Ljava/util/ArrayList;
-
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-static {v1, v0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v2, "# dumpList mServiceClassBlackList # "
-
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget-object v2, p0, Lcom/android/server/am/zgw;->Nj:Ljava/util/ArrayList;
-
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-static {v1, v0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v2, "# dumpList mBroadcastIntentClassBlackList # "
-
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget-object v2, p0, Lcom/android/server/am/zgw;->Sj:Ljava/util/ArrayList;
-
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-static {v1, v0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v2, "# dumpList mBroadcastIntentActionWhiteList # "
-
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget-object v2, p0, Lcom/android/server/am/zgw;->Qj:Ljava/util/ArrayList;
-
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-static {v1, v0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v2, "# dumpList mBroadcastIntentActionBlackList # "
-
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget-object v2, p0, Lcom/android/server/am/zgw;->Rj:Ljava/util/ArrayList;
-
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-static {v1, v0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v2, "# dumpList mActivityClassBlackList # "
-
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget-object v2, p0, Lcom/android/server/am/zgw;->Hj:Ljava/util/ArrayList;
-
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-static {v1, v0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v2, "# dumpList mProviderClassBlackList # "
-
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget-object v2, p0, Lcom/android/server/am/zgw;->Ij:Ljava/util/ArrayList;
-
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-static {v1, v0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v2, "# dumpList mProviderCallerWhiteList # "
-
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget-object v2, p0, Lcom/android/server/am/zgw;->Jj:Ljava/util/ArrayList;
-
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-static {v1, v0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v2, "# dumpList mKillPackageProcessName # "
-
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget-object v2, p0, Lcom/android/server/am/zgw;->Tj:Ljava/util/HashMap;
-
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-static {v1, v0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v2, "# dumpList mHostAppForServiceList # "
-
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget-object v2, p0, Lcom/android/server/am/zgw;->Wj:Ljava/util/ArrayList;
-
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-static {v1, v0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v2, "# dumpList mProcessAbnormalKilledWhiteList # "
-
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget-object p0, p0, Lcom/android/server/am/zgw;->Zj:Ljava/util/ArrayList;
-
-    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p0
-
-    invoke-static {v1, p0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-direct {p0}, Lcom/android/server/am/zgw;->qm()V
 
     return-void
 .end method
@@ -2133,7 +1801,7 @@
 
     if-eqz v0, :cond_1
 
-    sget-boolean v0, Lcom/android/server/am/zgw;->dk:Z
+    sget-boolean v0, Lcom/android/server/am/zgw;->jk:Z
 
     const-string v1, "OnePlusAppBootManager"
 
@@ -2191,9 +1859,620 @@
 .end method
 
 .method private nm()V
+    .locals 1
+
+    sget-boolean v0, Lcom/android/server/am/zgw;->sDebug:Z
+
+    if-eqz v0, :cond_0
+
+    const-string v0, "autoChangeRule"
+
+    invoke-static {v0}, Lcom/android/server/am/zgw;->myLog(Ljava/lang/String;)V
+
+    :cond_0
+    sget-boolean v0, Lcom/android/server/am/zgw;->mk:Z
+
+    if-eqz v0, :cond_1
+
+    iget-object p0, p0, Lcom/android/server/am/zgw;->mRecorder:Lcom/android/server/am/oxb;
+
+    invoke-virtual {p0}, Lcom/android/server/am/oxb;->clearRecords()V
+
+    :cond_1
+    return-void
+.end method
+
+.method private om()V
+    .locals 5
+
+    sget-object p0, Lcom/android/server/am/zgw;->Nk:Ljava/util/HashMap;
+
+    monitor-enter p0
+
+    :try_start_0
+    sget-object v0, Lcom/android/server/am/zgw;->Nk:Ljava/util/HashMap;
+
+    invoke-virtual {v0}, Ljava/util/HashMap;->keySet()Ljava/util/Set;
+
+    move-result-object v0
+
+    invoke-interface {v0}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
+
+    move-result-object v0
+
+    :goto_0
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_0
+
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Ljava/lang/String;
+
+    const-string v2, "OnePlusAppBootManager"
+
+    new-instance v3, Ljava/lang/StringBuilder;
+
+    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v4, "# dump # HugePowerPkg # "
+
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v3, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-static {v2, v1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    goto :goto_0
+
+    :cond_0
+    monitor-exit p0
+
+    return-void
+
+    :catchall_0
+    move-exception v0
+
+    monitor-exit p0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    throw v0
+.end method
+
+.method static synthetic oxb(Z)Z
+    .locals 0
+
+    sput-boolean p0, Lcom/android/server/am/zgw;->mScreenOn:Z
+
+    return p0
+.end method
+
+.method private pb(Ljava/lang/String;)I
+    .locals 3
+
+    sget-boolean v0, Lcom/android/server/am/zgw;->sDebug:Z
+
+    if-eqz v0, :cond_0
+
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v1, "forceStopPkg # "
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {v0}, Lcom/android/server/am/zgw;->myLog(Ljava/lang/String;)V
+
+    :cond_0
+    iget-object v0, p0, Lcom/android/server/am/zgw;->mAms:Lcom/android/server/am/ActivityManagerService;
+
+    if-eqz v0, :cond_4
+
+    if-eqz p1, :cond_4
+
+    :try_start_0
+    invoke-static {p1}, Lcom/android/server/am/zgw;->qb(Ljava/lang/String;)Lcom/android/server/am/zgw$sis;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/android/server/am/zgw$sis;->getAction()I
+
+    move-result v1
+
+    const/4 v2, 0x2
+
+    if-eq v1, v2, :cond_1
+
+    const/4 p0, 0x1
+
+    return p0
+
+    :cond_1
+    sget-object v1, Lcom/android/server/am/zgw;->Jk:Ljava/lang/String;
+
+    invoke-virtual {p1, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_2
+
+    const/4 p0, 0x3
+
+    return p0
+
+    :cond_2
+    sget-object v1, Lcom/android/server/am/zgw;->Ik:Ljava/lang/String;
+
+    invoke-virtual {p1, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_3
+
+    const/4 p0, 0x4
+
+    return p0
+
+    :cond_3
+    iget-object v1, p0, Lcom/android/server/am/zgw;->mAms:Lcom/android/server/am/ActivityManagerService;
+
+    monitor-enter v1
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    :try_start_1
+    iget-object p0, p0, Lcom/android/server/am/zgw;->mAms:Lcom/android/server/am/ActivityManagerService;
+
+    invoke-static {}, Landroid/os/UserHandle;->myUserId()I
+
+    move-result v2
+
+    invoke-virtual {p0, p1, v2}, Lcom/android/server/am/ActivityManagerService;->forceStopPackage(Ljava/lang/String;I)V
+
+    const/4 p0, 0x0
+
+    invoke-virtual {v0, p0}, Lcom/android/server/am/zgw$sis;->lqr(I)V
+
+    monitor-exit v1
+
+    return p0
+
+    :catchall_0
+    move-exception p0
+
+    monitor-exit v1
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    :try_start_2
+    throw p0
+    :try_end_2
+    .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_0
+
+    :catch_0
+    move-exception p0
+
+    new-instance p1, Ljava/lang/StringBuilder;
+
+    invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v0, "Exception# forceStopPkg: forceStopPkg error : "
+
+    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p0}, Ljava/lang/Exception;->getMessage()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    const-string v0, "OnePlusAppBootManager"
+
+    invoke-static {v0, p1}, Landroid/util/Slog;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    invoke-virtual {p0}, Ljava/lang/Exception;->printStackTrace()V
+
+    :cond_4
+    const/4 p0, -0x1
+
+    return p0
+.end method
+
+.method private pm()V
+    .locals 3
+
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v1, "# dumpList mServiceActionBlackList # "
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object v1, p0, Lcom/android/server/am/zgw;->Qj:Ljava/util/ArrayList;
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    const-string v1, "OnePlusAppBootManager"
+
+    invoke-static {v1, v0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v2, "# dumpList mRestartServiceWhiteList # "
+
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object v2, p0, Lcom/android/server/am/zgw;->Rj:Ljava/util/ArrayList;
+
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {v1, v0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v2, "# dumpList mServiceActionWhiteList # "
+
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object v2, p0, Lcom/android/server/am/zgw;->Sj:Ljava/util/ArrayList;
+
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {v1, v0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v2, "# dumpList mServiceClassBlackList # "
+
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object v2, p0, Lcom/android/server/am/zgw;->Tj:Ljava/util/ArrayList;
+
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {v1, v0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v2, "# dumpList mBroadcastIntentClassBlackList # "
+
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object v2, p0, Lcom/android/server/am/zgw;->Yj:Ljava/util/ArrayList;
+
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {v1, v0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v2, "# dumpList mBroadcastIntentActionWhiteList # "
+
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object v2, p0, Lcom/android/server/am/zgw;->Wj:Ljava/util/ArrayList;
+
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {v1, v0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v2, "# dumpList mBroadcastIntentActionBlackList # "
+
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object v2, p0, Lcom/android/server/am/zgw;->Xj:Ljava/util/ArrayList;
+
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {v1, v0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v2, "# dumpList mActivityClassBlackList # "
+
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object v2, p0, Lcom/android/server/am/zgw;->Nj:Ljava/util/ArrayList;
+
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {v1, v0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v2, "# dumpList mProviderClassBlackList # "
+
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object v2, p0, Lcom/android/server/am/zgw;->Oj:Ljava/util/ArrayList;
+
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {v1, v0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v2, "# dumpList mProviderCallerWhiteList # "
+
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object v2, p0, Lcom/android/server/am/zgw;->Pj:Ljava/util/ArrayList;
+
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {v1, v0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v2, "# dumpList mKillPackageProcessName # "
+
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object v2, p0, Lcom/android/server/am/zgw;->Zj:Ljava/util/HashMap;
+
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {v1, v0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v2, "# dumpList mHostAppForServiceList # "
+
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object v2, p0, Lcom/android/server/am/zgw;->bk:Ljava/util/ArrayList;
+
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {v1, v0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v2, "# dumpList mProcessAbnormalKilledWhiteList # "
+
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object p0, p0, Lcom/android/server/am/zgw;->ek:Ljava/util/ArrayList;
+
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p0
+
+    invoke-static {v1, p0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    return-void
+.end method
+
+.method private static qb(Ljava/lang/String;)Lcom/android/server/am/zgw$sis;
+    .locals 5
+
+    if-nez p0, :cond_0
+
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v1, " !!!!!!!Exception # getAppBootInfo # pkgName = "
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {v0}, Lcom/android/server/am/zgw;->myLog(Ljava/lang/String;)V
+
+    :cond_0
+    sget-object v0, Lcom/android/server/am/zgw;->mPkgMap:Ljava/util/HashMap;
+
+    invoke-virtual {v0, p0}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/android/server/am/zgw$sis;
+
+    if-nez v0, :cond_1
+
+    new-instance v0, Lcom/android/server/am/zgw$sis;
+
+    invoke-direct {v0, p0}, Lcom/android/server/am/zgw$sis;-><init>(Ljava/lang/String;)V
+
+    sget-object v1, Lcom/android/server/am/zgw;->mPms:Lcom/android/server/pm/PackageManagerService;
+
+    invoke-virtual {v1, p0}, Lcom/android/server/pm/PackageManagerService;->getPakcageInfo(Ljava/lang/String;)Landroid/content/pm/PackageParser$Package;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Lcom/android/server/am/zgw$sis;->zta(Landroid/content/pm/PackageParser$Package;)V
+
+    sget-object v1, Lcom/android/server/am/zgw;->Qk:Ljava/lang/Object;
+
+    monitor-enter v1
+
+    :try_start_0
+    sget-object v2, Lcom/android/server/am/zgw;->mPkgMap:Ljava/util/HashMap;
+
+    invoke-virtual {v2, p0, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    goto :goto_0
+
+    :catchall_0
+    move-exception p0
+
+    goto :goto_1
+
+    :catch_0
+    move-exception p0
+
+    :try_start_1
+    const-string v2, "OnePlusAppBootManager"
+
+    new-instance v3, Ljava/lang/StringBuilder;
+
+    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v4, "Fatal Exception # getAppBootInfo # "
+
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p0}, Ljava/lang/Exception;->getMessage()Ljava/lang/String;
+
+    move-result-object v4
+
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-static {v2, v3}, Landroid/util/Slog;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    invoke-virtual {p0}, Ljava/lang/Exception;->printStackTrace()V
+
+    :goto_0
+    monitor-exit v1
+
+    goto :goto_2
+
+    :goto_1
+    monitor-exit v1
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    throw p0
+
+    :cond_1
+    :goto_2
+    sget-boolean p0, Lcom/android/server/am/zgw;->sDebug:Z
+
+    if-eqz p0, :cond_2
+
+    new-instance p0, Ljava/lang/StringBuilder;
+
+    invoke-direct {p0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v1, "# getAppBootInfo # abi="
+
+    invoke-virtual {p0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p0
+
+    invoke-static {p0}, Lcom/android/server/am/zgw;->myLog(Ljava/lang/String;)V
+
+    :cond_2
+    return-object v0
+.end method
+
+.method private qm()V
     .locals 7
 
-    sget-object p0, Lcom/android/server/am/zgw;->Kk:Ljava/lang/Object;
+    sget-object p0, Lcom/android/server/am/zgw;->Qk:Ljava/lang/Object;
 
     monitor-enter p0
 
@@ -2291,7 +2570,194 @@
     throw v0
 .end method
 
-.method private om()V
+.method private static rb(Ljava/lang/String;)Z
+    .locals 3
+
+    const/4 v0, 0x1
+
+    if-nez p0, :cond_0
+
+    return v0
+
+    :cond_0
+    sget-object v1, Lcom/android/server/am/zgw;->Wk:Ljava/util/ArrayList;
+
+    if-eqz v1, :cond_3
+
+    invoke-virtual {v1}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
+
+    move-result-object v1
+
+    :cond_1
+    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v2
+
+    if-eqz v2, :cond_3
+
+    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Ljava/lang/String;
+
+    invoke-virtual {p0, v2}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_1
+
+    sget-boolean v1, Lcom/android/server/am/zgw;->sDebug:Z
+
+    if-eqz v1, :cond_2
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v2, "# isPackageInPresetWhitelist # whitelist-pkg # pkgName = "
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p0
+
+    invoke-static {p0}, Lcom/android/server/am/zgw;->myLog(Ljava/lang/String;)V
+
+    :cond_2
+    return v0
+
+    :cond_3
+    const/4 p0, 0x0
+
+    return p0
+.end method
+
+.method private registerGeneralReceiver()V
+    .locals 3
+
+    iget-object v0, p0, Lcom/android/server/am/zgw;->mContext:Landroid/content/Context;
+
+    if-nez v0, :cond_0
+
+    const-string p0, "OnePlusAppBootManager"
+
+    const-string v0, "Fatal Exception # registerGeneralReceiver # mContext=null"
+
+    invoke-static {p0, v0}, Landroid/util/Slog;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    return-void
+
+    :cond_0
+    new-instance v0, Landroid/content/IntentFilter;
+
+    invoke-direct {v0}, Landroid/content/IntentFilter;-><init>()V
+
+    const v1, 0x7fffffff
+
+    invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->setPriority(I)V
+
+    const-string v1, "com.haha.action.test"
+
+    invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
+
+    const-string v1, "android.intent.action.SCREEN_OFF"
+
+    invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
+
+    const-string v1, "android.intent.action.SCREEN_ON"
+
+    invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
+
+    sget-object v1, Lcom/android/server/am/zgw;->mRegion:Ljava/lang/String;
+
+    const-string v2, "CN"
+
+    invoke-virtual {v1, v2}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_1
+
+    sget v1, Lcom/android/server/am/zgw;->Ek:I
+
+    and-int/lit8 v1, v1, 0x1
+
+    if-nez v1, :cond_1
+
+    invoke-direct {p0}, Lcom/android/server/am/zgw;->sm()Z
+
+    move-result v1
+
+    if-nez v1, :cond_1
+
+    const-string v1, "android.intent.action.SIM_STATE_CHANGED"
+
+    invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
+
+    :cond_1
+    iget-object v1, p0, Lcom/android/server/am/zgw;->mContext:Landroid/content/Context;
+
+    iget-object p0, p0, Lcom/android/server/am/zgw;->mGeneralReceiver:Landroid/content/BroadcastReceiver;
+
+    invoke-virtual {v1, p0, v0}, Landroid/content/Context;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
+
+    return-void
+.end method
+
+.method private registerPackageReceiver()V
+    .locals 2
+
+    iget-object v0, p0, Lcom/android/server/am/zgw;->mContext:Landroid/content/Context;
+
+    if-nez v0, :cond_0
+
+    const-string p0, "OnePlusAppBootManager"
+
+    const-string v0, "Fatal Exception # registerPackageReceiver # mContext=null"
+
+    invoke-static {p0, v0}, Landroid/util/Slog;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    return-void
+
+    :cond_0
+    new-instance v0, Landroid/content/IntentFilter;
+
+    invoke-direct {v0}, Landroid/content/IntentFilter;-><init>()V
+
+    const-string v1, "android.intent.action.PACKAGE_ADDED"
+
+    invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
+
+    const-string v1, "android.intent.action.PACKAGE_REPLACED"
+
+    invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
+
+    const-string v1, "android.intent.action.PACKAGE_REMOVED"
+
+    invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
+
+    const-string v1, "package"
+
+    invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addDataScheme(Ljava/lang/String;)V
+
+    const/16 v1, 0x3e8
+
+    invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->setPriority(I)V
+
+    iget-object v1, p0, Lcom/android/server/am/zgw;->mContext:Landroid/content/Context;
+
+    iget-object p0, p0, Lcom/android/server/am/zgw;->mPackageReceiver:Landroid/content/BroadcastReceiver;
+
+    invoke-virtual {v1, p0, v0}, Landroid/content/Context;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
+
+    return-void
+.end method
+
+.method private rm()V
     .locals 15
 
     const-string v0, "mProviderClassBlackList size "
@@ -2410,7 +2876,7 @@
 
     if-le v13, v12, :cond_11
 
-    iget-object v13, p0, Lcom/android/server/am/zgw;->Kj:Ljava/util/ArrayList;
+    iget-object v13, p0, Lcom/android/server/am/zgw;->Qj:Ljava/util/ArrayList;
 
     :goto_0
     invoke-virtual {v13, v11}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
@@ -2459,7 +2925,7 @@
 
     if-le v13, v12, :cond_11
 
-    iget-object v13, p0, Lcom/android/server/am/zgw;->Mj:Ljava/util/ArrayList;
+    iget-object v13, p0, Lcom/android/server/am/zgw;->Sj:Ljava/util/ArrayList;
 
     goto :goto_0
 
@@ -2505,7 +2971,7 @@
 
     if-le v13, v12, :cond_11
 
-    iget-object v13, p0, Lcom/android/server/am/zgw;->Nj:Ljava/util/ArrayList;
+    iget-object v13, p0, Lcom/android/server/am/zgw;->Tj:Ljava/util/ArrayList;
 
     goto :goto_0
 
@@ -2551,7 +3017,7 @@
 
     if-le v13, v12, :cond_11
 
-    iget-object v13, p0, Lcom/android/server/am/zgw;->Sj:Ljava/util/ArrayList;
+    iget-object v13, p0, Lcom/android/server/am/zgw;->Yj:Ljava/util/ArrayList;
 
     goto/16 :goto_0
 
@@ -2597,7 +3063,7 @@
 
     if-le v13, v12, :cond_11
 
-    iget-object v13, p0, Lcom/android/server/am/zgw;->Qj:Ljava/util/ArrayList;
+    iget-object v13, p0, Lcom/android/server/am/zgw;->Wj:Ljava/util/ArrayList;
 
     goto/16 :goto_0
 
@@ -2643,7 +3109,7 @@
 
     if-le v13, v12, :cond_11
 
-    iget-object v13, p0, Lcom/android/server/am/zgw;->Rj:Ljava/util/ArrayList;
+    iget-object v13, p0, Lcom/android/server/am/zgw;->Xj:Ljava/util/ArrayList;
 
     goto/16 :goto_0
 
@@ -2689,7 +3155,7 @@
 
     if-le v13, v12, :cond_11
 
-    iget-object v13, p0, Lcom/android/server/am/zgw;->Hj:Ljava/util/ArrayList;
+    iget-object v13, p0, Lcom/android/server/am/zgw;->Nj:Ljava/util/ArrayList;
 
     goto/16 :goto_0
 
@@ -2735,7 +3201,7 @@
 
     if-le v13, v12, :cond_11
 
-    iget-object v13, p0, Lcom/android/server/am/zgw;->Ij:Ljava/util/ArrayList;
+    iget-object v13, p0, Lcom/android/server/am/zgw;->Oj:Ljava/util/ArrayList;
     :try_end_1
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
@@ -2769,7 +3235,7 @@
 
     invoke-virtual {v8, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v7, p0, Lcom/android/server/am/zgw;->Kj:Ljava/util/ArrayList;
+    iget-object v7, p0, Lcom/android/server/am/zgw;->Qj:Ljava/util/ArrayList;
 
     invoke-virtual {v7}, Ljava/util/ArrayList;->size()I
 
@@ -2789,7 +3255,7 @@
 
     invoke-virtual {v7, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v6, p0, Lcom/android/server/am/zgw;->Mj:Ljava/util/ArrayList;
+    iget-object v6, p0, Lcom/android/server/am/zgw;->Sj:Ljava/util/ArrayList;
 
     invoke-virtual {v6}, Ljava/util/ArrayList;->size()I
 
@@ -2809,7 +3275,7 @@
 
     invoke-virtual {v6, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v5, p0, Lcom/android/server/am/zgw;->Nj:Ljava/util/ArrayList;
+    iget-object v5, p0, Lcom/android/server/am/zgw;->Tj:Ljava/util/ArrayList;
 
     invoke-virtual {v5}, Ljava/util/ArrayList;->size()I
 
@@ -2829,7 +3295,7 @@
 
     invoke-virtual {v5, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v4, p0, Lcom/android/server/am/zgw;->Sj:Ljava/util/ArrayList;
+    iget-object v4, p0, Lcom/android/server/am/zgw;->Yj:Ljava/util/ArrayList;
 
     invoke-virtual {v4}, Ljava/util/ArrayList;->size()I
 
@@ -2849,7 +3315,7 @@
 
     invoke-virtual {v4, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v3, p0, Lcom/android/server/am/zgw;->Qj:Ljava/util/ArrayList;
+    iget-object v3, p0, Lcom/android/server/am/zgw;->Wj:Ljava/util/ArrayList;
 
     invoke-virtual {v3}, Ljava/util/ArrayList;->size()I
 
@@ -2869,7 +3335,7 @@
 
     invoke-virtual {v3, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v2, p0, Lcom/android/server/am/zgw;->Rj:Ljava/util/ArrayList;
+    iget-object v2, p0, Lcom/android/server/am/zgw;->Xj:Ljava/util/ArrayList;
 
     invoke-virtual {v2}, Ljava/util/ArrayList;->size()I
 
@@ -2889,7 +3355,7 @@
 
     invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lcom/android/server/am/zgw;->Hj:Ljava/util/ArrayList;
+    iget-object v1, p0, Lcom/android/server/am/zgw;->Nj:Ljava/util/ArrayList;
 
     invoke-virtual {v1}, Ljava/util/ArrayList;->size()I
 
@@ -2967,7 +3433,7 @@
 
     invoke-virtual {v8, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v7, p0, Lcom/android/server/am/zgw;->Kj:Ljava/util/ArrayList;
+    iget-object v7, p0, Lcom/android/server/am/zgw;->Qj:Ljava/util/ArrayList;
 
     invoke-virtual {v7}, Ljava/util/ArrayList;->size()I
 
@@ -2987,7 +3453,7 @@
 
     invoke-virtual {v7, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v6, p0, Lcom/android/server/am/zgw;->Mj:Ljava/util/ArrayList;
+    iget-object v6, p0, Lcom/android/server/am/zgw;->Sj:Ljava/util/ArrayList;
 
     invoke-virtual {v6}, Ljava/util/ArrayList;->size()I
 
@@ -3007,7 +3473,7 @@
 
     invoke-virtual {v6, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v5, p0, Lcom/android/server/am/zgw;->Nj:Ljava/util/ArrayList;
+    iget-object v5, p0, Lcom/android/server/am/zgw;->Tj:Ljava/util/ArrayList;
 
     invoke-virtual {v5}, Ljava/util/ArrayList;->size()I
 
@@ -3027,7 +3493,7 @@
 
     invoke-virtual {v5, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v4, p0, Lcom/android/server/am/zgw;->Sj:Ljava/util/ArrayList;
+    iget-object v4, p0, Lcom/android/server/am/zgw;->Yj:Ljava/util/ArrayList;
 
     invoke-virtual {v4}, Ljava/util/ArrayList;->size()I
 
@@ -3047,7 +3513,7 @@
 
     invoke-virtual {v4, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v3, p0, Lcom/android/server/am/zgw;->Qj:Ljava/util/ArrayList;
+    iget-object v3, p0, Lcom/android/server/am/zgw;->Wj:Ljava/util/ArrayList;
 
     invoke-virtual {v3}, Ljava/util/ArrayList;->size()I
 
@@ -3067,7 +3533,7 @@
 
     invoke-virtual {v3, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v2, p0, Lcom/android/server/am/zgw;->Rj:Ljava/util/ArrayList;
+    iget-object v2, p0, Lcom/android/server/am/zgw;->Xj:Ljava/util/ArrayList;
 
     invoke-virtual {v2}, Ljava/util/ArrayList;->size()I
 
@@ -3087,7 +3553,7 @@
 
     invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lcom/android/server/am/zgw;->Hj:Ljava/util/ArrayList;
+    iget-object v1, p0, Lcom/android/server/am/zgw;->Nj:Ljava/util/ArrayList;
 
     invoke-virtual {v1}, Ljava/util/ArrayList;->size()I
 
@@ -3108,7 +3574,7 @@
     :goto_5
     invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object p0, p0, Lcom/android/server/am/zgw;->Ij:Ljava/util/ArrayList;
+    iget-object p0, p0, Lcom/android/server/am/zgw;->Oj:Ljava/util/ArrayList;
 
     invoke-virtual {p0}, Ljava/util/ArrayList;->size()I
 
@@ -3152,7 +3618,7 @@
 
     invoke-virtual {v9, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v7, p0, Lcom/android/server/am/zgw;->Kj:Ljava/util/ArrayList;
+    iget-object v7, p0, Lcom/android/server/am/zgw;->Qj:Ljava/util/ArrayList;
 
     invoke-virtual {v7}, Ljava/util/ArrayList;->size()I
 
@@ -3172,7 +3638,7 @@
 
     invoke-virtual {v7, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v6, p0, Lcom/android/server/am/zgw;->Mj:Ljava/util/ArrayList;
+    iget-object v6, p0, Lcom/android/server/am/zgw;->Sj:Ljava/util/ArrayList;
 
     invoke-virtual {v6}, Ljava/util/ArrayList;->size()I
 
@@ -3192,7 +3658,7 @@
 
     invoke-virtual {v6, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v5, p0, Lcom/android/server/am/zgw;->Nj:Ljava/util/ArrayList;
+    iget-object v5, p0, Lcom/android/server/am/zgw;->Tj:Ljava/util/ArrayList;
 
     invoke-virtual {v5}, Ljava/util/ArrayList;->size()I
 
@@ -3212,7 +3678,7 @@
 
     invoke-virtual {v5, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v4, p0, Lcom/android/server/am/zgw;->Sj:Ljava/util/ArrayList;
+    iget-object v4, p0, Lcom/android/server/am/zgw;->Yj:Ljava/util/ArrayList;
 
     invoke-virtual {v4}, Ljava/util/ArrayList;->size()I
 
@@ -3232,7 +3698,7 @@
 
     invoke-virtual {v4, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v3, p0, Lcom/android/server/am/zgw;->Qj:Ljava/util/ArrayList;
+    iget-object v3, p0, Lcom/android/server/am/zgw;->Wj:Ljava/util/ArrayList;
 
     invoke-virtual {v3}, Ljava/util/ArrayList;->size()I
 
@@ -3252,7 +3718,7 @@
 
     invoke-virtual {v3, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v2, p0, Lcom/android/server/am/zgw;->Rj:Ljava/util/ArrayList;
+    iget-object v2, p0, Lcom/android/server/am/zgw;->Xj:Ljava/util/ArrayList;
 
     invoke-virtual {v2}, Ljava/util/ArrayList;->size()I
 
@@ -3272,7 +3738,7 @@
 
     invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lcom/android/server/am/zgw;->Hj:Ljava/util/ArrayList;
+    iget-object v1, p0, Lcom/android/server/am/zgw;->Nj:Ljava/util/ArrayList;
 
     invoke-virtual {v1}, Ljava/util/ArrayList;->size()I
 
@@ -3292,7 +3758,7 @@
 
     invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object p0, p0, Lcom/android/server/am/zgw;->Ij:Ljava/util/ArrayList;
+    iget-object p0, p0, Lcom/android/server/am/zgw;->Oj:Ljava/util/ArrayList;
 
     invoke-virtual {p0}, Ljava/util/ArrayList;->size()I
 
@@ -3308,672 +3774,6 @@
 
     :cond_15
     throw v8
-.end method
-
-.method static synthetic oxb(Z)Z
-    .locals 0
-
-    sput-boolean p0, Lcom/android/server/am/zgw;->mScreenOn:Z
-
-    return p0
-.end method
-
-.method private pb(Ljava/lang/String;)I
-    .locals 3
-
-    sget-boolean v0, Lcom/android/server/am/zgw;->sDebug:Z
-
-    if-eqz v0, :cond_0
-
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v1, "forceStopPkg # "
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-static {v0}, Lcom/android/server/am/zgw;->myLog(Ljava/lang/String;)V
-
-    :cond_0
-    iget-object v0, p0, Lcom/android/server/am/zgw;->mAms:Lcom/android/server/am/ActivityManagerService;
-
-    if-eqz v0, :cond_4
-
-    if-eqz p1, :cond_4
-
-    :try_start_0
-    invoke-static {p1}, Lcom/android/server/am/zgw;->qb(Ljava/lang/String;)Lcom/android/server/am/zgw$sis;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Lcom/android/server/am/zgw$sis;->getAction()I
-
-    move-result v1
-
-    const/4 v2, 0x2
-
-    if-eq v1, v2, :cond_1
-
-    const/4 p0, 0x1
-
-    return p0
-
-    :cond_1
-    sget-object v1, Lcom/android/server/am/zgw;->Dk:Ljava/lang/String;
-
-    invoke-virtual {p1, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-eqz v1, :cond_2
-
-    const/4 p0, 0x3
-
-    return p0
-
-    :cond_2
-    sget-object v1, Lcom/android/server/am/zgw;->Ck:Ljava/lang/String;
-
-    invoke-virtual {p1, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-eqz v1, :cond_3
-
-    const/4 p0, 0x4
-
-    return p0
-
-    :cond_3
-    iget-object v1, p0, Lcom/android/server/am/zgw;->mAms:Lcom/android/server/am/ActivityManagerService;
-
-    monitor-enter v1
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
-
-    :try_start_1
-    iget-object p0, p0, Lcom/android/server/am/zgw;->mAms:Lcom/android/server/am/ActivityManagerService;
-
-    invoke-static {}, Landroid/os/UserHandle;->myUserId()I
-
-    move-result v2
-
-    invoke-virtual {p0, p1, v2}, Lcom/android/server/am/ActivityManagerService;->forceStopPackage(Ljava/lang/String;I)V
-
-    const/4 p0, 0x0
-
-    invoke-virtual {v0, p0}, Lcom/android/server/am/zgw$sis;->lqr(I)V
-
-    monitor-exit v1
-
-    return p0
-
-    :catchall_0
-    move-exception p0
-
-    monitor-exit v1
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
-    :try_start_2
-    throw p0
-    :try_end_2
-    .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_0
-
-    :catch_0
-    move-exception p0
-
-    new-instance p1, Ljava/lang/StringBuilder;
-
-    invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v0, "Exception# forceStopPkg: forceStopPkg error : "
-
-    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p0}, Ljava/lang/Exception;->getMessage()Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p1
-
-    const-string v0, "OnePlusAppBootManager"
-
-    invoke-static {v0, p1}, Landroid/util/Slog;->e(Ljava/lang/String;Ljava/lang/String;)I
-
-    invoke-virtual {p0}, Ljava/lang/Exception;->printStackTrace()V
-
-    :cond_4
-    const/4 p0, -0x1
-
-    return p0
-.end method
-
-.method private pm()Z
-    .locals 5
-
-    sget v0, Lcom/android/server/am/zgw;->yk:I
-
-    const/4 v1, 0x1
-
-    and-int/2addr v0, v1
-
-    if-eqz v0, :cond_0
-
-    return v1
-
-    :cond_0
-    const-string v0, "gsm.sim.operator.iso-country"
-
-    const-string v2, ""
-
-    invoke-static {v0, v2}, Landroid/os/SystemProperties;->get(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Ljava/lang/String;->length()I
-
-    move-result v2
-
-    const/4 v3, 0x2
-
-    const/4 v4, 0x0
-
-    if-lt v2, v3, :cond_3
-
-    const-string v2, "cn"
-
-    invoke-virtual {v0, v2}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
-
-    move-result v2
-
-    if-eqz v2, :cond_1
-
-    iput-boolean v1, p0, Lcom/android/server/am/zgw;->Bj:Z
-
-    :goto_0
-    invoke-virtual {p0, v1}, Lcom/android/server/am/zgw;->cjf(Z)V
-
-    goto :goto_1
-
-    :cond_1
-    const-string v2, "in"
-
-    invoke-virtual {v0, v2}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
-
-    move-result v2
-
-    iput-boolean v4, p0, Lcom/android/server/am/zgw;->Bj:Z
-
-    if-eqz v2, :cond_2
-
-    goto :goto_0
-
-    :cond_2
-    invoke-virtual {p0, v4}, Lcom/android/server/am/zgw;->cjf(Z)V
-
-    goto :goto_1
-
-    :cond_3
-    move v1, v4
-
-    :goto_1
-    sget-boolean p0, Lcom/android/server/am/zgw;->sDebug:Z
-
-    if-nez p0, :cond_4
-
-    if-eqz v1, :cond_5
-
-    :cond_4
-    new-instance p0, Ljava/lang/StringBuilder;
-
-    invoke-direct {p0}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v2, "responseSIMStateChanged # mccCountry="
-
-    invoke-virtual {p0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string v0, ", ret="
-
-    invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p0
-
-    const-string v0, "OnePlusAppBootManager"
-
-    invoke-static {v0, p0}, Landroid/util/Slog;->i(Ljava/lang/String;Ljava/lang/String;)I
-
-    :cond_5
-    return v1
-.end method
-
-.method private static qb(Ljava/lang/String;)Lcom/android/server/am/zgw$sis;
-    .locals 5
-
-    if-nez p0, :cond_0
-
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v1, " !!!!!!!Exception # getAppBootInfo # pkgName = "
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-static {v0}, Lcom/android/server/am/zgw;->myLog(Ljava/lang/String;)V
-
-    :cond_0
-    sget-object v0, Lcom/android/server/am/zgw;->mPkgMap:Ljava/util/HashMap;
-
-    invoke-virtual {v0, p0}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Lcom/android/server/am/zgw$sis;
-
-    if-nez v0, :cond_1
-
-    new-instance v0, Lcom/android/server/am/zgw$sis;
-
-    invoke-direct {v0, p0}, Lcom/android/server/am/zgw$sis;-><init>(Ljava/lang/String;)V
-
-    sget-object v1, Lcom/android/server/am/zgw;->mPms:Lcom/android/server/pm/PackageManagerService;
-
-    invoke-virtual {v1, p0}, Lcom/android/server/pm/PackageManagerService;->getPakcageInfo(Ljava/lang/String;)Landroid/content/pm/PackageParser$Package;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Lcom/android/server/am/zgw$sis;->zta(Landroid/content/pm/PackageParser$Package;)V
-
-    sget-object v1, Lcom/android/server/am/zgw;->Kk:Ljava/lang/Object;
-
-    monitor-enter v1
-
-    :try_start_0
-    sget-object v2, Lcom/android/server/am/zgw;->mPkgMap:Ljava/util/HashMap;
-
-    invoke-virtual {v2, p0, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    goto :goto_0
-
-    :catchall_0
-    move-exception p0
-
-    goto :goto_1
-
-    :catch_0
-    move-exception p0
-
-    :try_start_1
-    const-string v2, "OnePlusAppBootManager"
-
-    new-instance v3, Ljava/lang/StringBuilder;
-
-    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v4, "Fatal Exception # getAppBootInfo # "
-
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p0}, Ljava/lang/Exception;->getMessage()Ljava/lang/String;
-
-    move-result-object v4
-
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v3
-
-    invoke-static {v2, v3}, Landroid/util/Slog;->e(Ljava/lang/String;Ljava/lang/String;)I
-
-    invoke-virtual {p0}, Ljava/lang/Exception;->printStackTrace()V
-
-    :goto_0
-    monitor-exit v1
-
-    goto :goto_2
-
-    :goto_1
-    monitor-exit v1
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
-    throw p0
-
-    :cond_1
-    :goto_2
-    sget-boolean p0, Lcom/android/server/am/zgw;->sDebug:Z
-
-    if-eqz p0, :cond_2
-
-    new-instance p0, Ljava/lang/StringBuilder;
-
-    invoke-direct {p0}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v1, "# getAppBootInfo # abi="
-
-    invoke-virtual {p0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p0
-
-    invoke-static {p0}, Lcom/android/server/am/zgw;->myLog(Ljava/lang/String;)V
-
-    :cond_2
-    return-object v0
-.end method
-
-.method private qm()V
-    .locals 6
-
-    sget-object p0, Lcom/android/server/am/zgw;->Jk:Ljava/util/HashMap;
-
-    monitor-enter p0
-
-    :try_start_0
-    sget-object v0, Lcom/android/server/am/zgw;->Jk:Ljava/util/HashMap;
-
-    invoke-virtual {v0}, Ljava/util/HashMap;->values()Ljava/util/Collection;
-
-    move-result-object v0
-
-    invoke-interface {v0}, Ljava/util/Collection;->iterator()Ljava/util/Iterator;
-
-    move-result-object v0
-
-    :cond_0
-    :goto_0
-    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v1
-
-    if-eqz v1, :cond_2
-
-    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v1
-
-    check-cast v1, Lcom/android/server/am/zgw$rtg;
-
-    iget v2, v1, Lcom/android/server/am/zgw$rtg;->mAction:I
-
-    const/4 v3, 0x1
-
-    if-ne v2, v3, :cond_0
-
-    iget-object v1, v1, Lcom/android/server/am/zgw$rtg;->mPkgName:Ljava/lang/String;
-
-    invoke-static {v1}, Lcom/android/server/am/zgw;->qb(Ljava/lang/String;)Lcom/android/server/am/zgw$sis;
-
-    move-result-object v1
-
-    invoke-virtual {v1}, Lcom/android/server/am/zgw$sis;->_a()I
-
-    move-result v2
-
-    if-nez v2, :cond_0
-
-    sget-boolean v2, Lcom/android/server/am/zgw;->sDebug:Z
-
-    if-eqz v2, :cond_1
-
-    const-string v2, "OnePlusAppBootManager"
-
-    new-instance v4, Ljava/lang/StringBuilder;
-
-    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v5, "resumeWhiteListFromOnlineConfig : "
-
-    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v1}, Lcom/android/server/am/zgw$sis;->Za()Ljava/lang/String;
-
-    move-result-object v5
-
-    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v4
-
-    invoke-static {v2, v4}, Landroid/util/Slog;->i(Ljava/lang/String;Ljava/lang/String;)I
-
-    :cond_1
-    invoke-virtual {v1, v3}, Lcom/android/server/am/zgw$sis;->setAction(I)V
-
-    goto :goto_0
-
-    :cond_2
-    monitor-exit p0
-
-    return-void
-
-    :catchall_0
-    move-exception v0
-
-    monitor-exit p0
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    throw v0
-.end method
-
-.method private static rb(Ljava/lang/String;)Z
-    .locals 3
-
-    const/4 v0, 0x1
-
-    if-nez p0, :cond_0
-
-    return v0
-
-    :cond_0
-    sget-object v1, Lcom/android/server/am/zgw;->Qk:Ljava/util/ArrayList;
-
-    if-eqz v1, :cond_3
-
-    invoke-virtual {v1}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
-
-    move-result-object v1
-
-    :cond_1
-    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v2
-
-    if-eqz v2, :cond_3
-
-    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v2
-
-    check-cast v2, Ljava/lang/String;
-
-    invoke-virtual {p0, v2}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
-
-    move-result v2
-
-    if-eqz v2, :cond_1
-
-    sget-boolean v1, Lcom/android/server/am/zgw;->sDebug:Z
-
-    if-eqz v1, :cond_2
-
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v2, "# isPackageInPresetWhitelist # whitelist-pkg # pkgName = "
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p0
-
-    invoke-static {p0}, Lcom/android/server/am/zgw;->myLog(Ljava/lang/String;)V
-
-    :cond_2
-    return v0
-
-    :cond_3
-    const/4 p0, 0x0
-
-    return p0
-.end method
-
-.method private registerGeneralReceiver()V
-    .locals 3
-
-    iget-object v0, p0, Lcom/android/server/am/zgw;->mContext:Landroid/content/Context;
-
-    if-nez v0, :cond_0
-
-    const-string p0, "OnePlusAppBootManager"
-
-    const-string v0, "Fatal Exception # registerGeneralReceiver # mContext=null"
-
-    invoke-static {p0, v0}, Landroid/util/Slog;->e(Ljava/lang/String;Ljava/lang/String;)I
-
-    return-void
-
-    :cond_0
-    new-instance v0, Landroid/content/IntentFilter;
-
-    invoke-direct {v0}, Landroid/content/IntentFilter;-><init>()V
-
-    const v1, 0x7fffffff
-
-    invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->setPriority(I)V
-
-    const-string v1, "com.haha.action.test"
-
-    invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
-
-    const-string v1, "android.intent.action.SCREEN_OFF"
-
-    invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
-
-    const-string v1, "android.intent.action.SCREEN_ON"
-
-    invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
-
-    sget-object v1, Lcom/android/server/am/zgw;->mRegion:Ljava/lang/String;
-
-    const-string v2, "CN"
-
-    invoke-virtual {v1, v2}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
-
-    move-result v1
-
-    if-nez v1, :cond_1
-
-    sget v1, Lcom/android/server/am/zgw;->yk:I
-
-    and-int/lit8 v1, v1, 0x1
-
-    if-nez v1, :cond_1
-
-    invoke-direct {p0}, Lcom/android/server/am/zgw;->pm()Z
-
-    move-result v1
-
-    if-nez v1, :cond_1
-
-    const-string v1, "android.intent.action.SIM_STATE_CHANGED"
-
-    invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
-
-    :cond_1
-    iget-object v1, p0, Lcom/android/server/am/zgw;->mContext:Landroid/content/Context;
-
-    iget-object p0, p0, Lcom/android/server/am/zgw;->mGeneralReceiver:Landroid/content/BroadcastReceiver;
-
-    invoke-virtual {v1, p0, v0}, Landroid/content/Context;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
-
-    return-void
-.end method
-
-.method private registerPackageReceiver()V
-    .locals 2
-
-    iget-object v0, p0, Lcom/android/server/am/zgw;->mContext:Landroid/content/Context;
-
-    if-nez v0, :cond_0
-
-    const-string p0, "OnePlusAppBootManager"
-
-    const-string v0, "Fatal Exception # registerPackageReceiver # mContext=null"
-
-    invoke-static {p0, v0}, Landroid/util/Slog;->e(Ljava/lang/String;Ljava/lang/String;)I
-
-    return-void
-
-    :cond_0
-    new-instance v0, Landroid/content/IntentFilter;
-
-    invoke-direct {v0}, Landroid/content/IntentFilter;-><init>()V
-
-    const-string v1, "android.intent.action.PACKAGE_ADDED"
-
-    invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
-
-    const-string v1, "android.intent.action.PACKAGE_REPLACED"
-
-    invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
-
-    const-string v1, "android.intent.action.PACKAGE_REMOVED"
-
-    invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
-
-    const-string v1, "package"
-
-    invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addDataScheme(Ljava/lang/String;)V
-
-    const/16 v1, 0x3e8
-
-    invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->setPriority(I)V
-
-    iget-object v1, p0, Lcom/android/server/am/zgw;->mContext:Landroid/content/Context;
-
-    iget-object p0, p0, Lcom/android/server/am/zgw;->mPackageReceiver:Landroid/content/BroadcastReceiver;
-
-    invoke-virtual {v1, p0, v0}, Landroid/content/Context;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
-
-    return-void
 .end method
 
 .method static synthetic rtg(Lcom/android/server/am/zgw;)Landroid/content/Context;
@@ -4073,7 +3873,7 @@
 
     move-result v3
 
-    sput v3, Lcom/android/server/am/zgw;->wk:I
+    sput v3, Lcom/android/server/am/zgw;->Ck:I
 
     const-string v3, "OnePlusAppBootManager"
 
@@ -4085,7 +3885,7 @@
 
     invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sget v5, Lcom/android/server/am/zgw;->wk:I
+    sget v5, Lcom/android/server/am/zgw;->Ck:I
 
     invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -4110,7 +3910,7 @@
 
     if-eqz v3, :cond_5
 
-    sget-object v3, Lcom/android/server/am/zgw;->Jk:Ljava/util/HashMap;
+    sget-object v3, Lcom/android/server/am/zgw;->Pk:Ljava/util/HashMap;
 
     monitor-enter v3
     :try_end_0
@@ -4156,7 +3956,7 @@
 
     move-result-object v6
 
-    sget-object v9, Lcom/android/server/am/zgw;->Jk:Ljava/util/HashMap;
+    sget-object v9, Lcom/android/server/am/zgw;->Pk:Ljava/util/HashMap;
 
     new-instance v10, Lcom/android/server/am/zgw$rtg;
 
@@ -4184,7 +3984,7 @@
 
     invoke-virtual {v6, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sget-object v8, Lcom/android/server/am/zgw;->Jk:Ljava/util/HashMap;
+    sget-object v8, Lcom/android/server/am/zgw;->Pk:Ljava/util/HashMap;
 
     invoke-virtual {v8, v7}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -4252,7 +4052,7 @@
 
     move-result v3
 
-    sput-boolean v3, Lcom/android/server/am/zgw;->Fk:Z
+    sput-boolean v3, Lcom/android/server/am/zgw;->Lk:Z
 
     const-string v3, "OnePlusAppBootManager"
 
@@ -4264,7 +4064,7 @@
 
     invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sget-boolean v5, Lcom/android/server/am/zgw;->Fk:Z
+    sget-boolean v5, Lcom/android/server/am/zgw;->Lk:Z
 
     invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -4303,7 +4103,7 @@
 
     move-result v3
 
-    iput-boolean v3, p0, Lcom/android/server/am/zgw;->Bj:Z
+    iput-boolean v3, p0, Lcom/android/server/am/zgw;->Hj:Z
 
     const-string v3, "OnePlusAppBootManager"
 
@@ -4315,7 +4115,7 @@
 
     invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean v5, p0, Lcom/android/server/am/zgw;->Bj:Z
+    iget-boolean v5, p0, Lcom/android/server/am/zgw;->Hj:Z
 
     invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -4346,7 +4146,7 @@
 
     move-result-object v3
 
-    iget-object v4, p0, Lcom/android/server/am/zgw;->Kj:Ljava/util/ArrayList;
+    iget-object v4, p0, Lcom/android/server/am/zgw;->Qj:Ljava/util/ArrayList;
 
     monitor-enter v4
     :try_end_2
@@ -4355,7 +4155,7 @@
     .catchall {:try_start_2 .. :try_end_2} :catchall_e
 
     :try_start_3
-    iget-object v5, p0, Lcom/android/server/am/zgw;->Kj:Ljava/util/ArrayList;
+    iget-object v5, p0, Lcom/android/server/am/zgw;->Qj:Ljava/util/ArrayList;
 
     invoke-virtual {v5}, Ljava/util/ArrayList;->clear()V
 
@@ -4372,7 +4172,7 @@
 
     move-result-object v6
 
-    iget-object v7, p0, Lcom/android/server/am/zgw;->Kj:Ljava/util/ArrayList;
+    iget-object v7, p0, Lcom/android/server/am/zgw;->Qj:Ljava/util/ArrayList;
 
     invoke-virtual {v7, v6}, Ljava/util/ArrayList;->contains(Ljava/lang/Object;)Z
 
@@ -4380,7 +4180,7 @@
 
     if-nez v7, :cond_8
 
-    iget-object v7, p0, Lcom/android/server/am/zgw;->Kj:Ljava/util/ArrayList;
+    iget-object v7, p0, Lcom/android/server/am/zgw;->Qj:Ljava/util/ArrayList;
 
     invoke-virtual {v7, v6}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
@@ -4438,7 +4238,7 @@
 
     move-result-object v3
 
-    iget-object v4, p0, Lcom/android/server/am/zgw;->Jj:Ljava/util/ArrayList;
+    iget-object v4, p0, Lcom/android/server/am/zgw;->Pj:Ljava/util/ArrayList;
 
     monitor-enter v4
     :try_end_6
@@ -4447,7 +4247,7 @@
     .catchall {:try_start_6 .. :try_end_6} :catchall_e
 
     :try_start_7
-    iget-object v5, p0, Lcom/android/server/am/zgw;->Jj:Ljava/util/ArrayList;
+    iget-object v5, p0, Lcom/android/server/am/zgw;->Pj:Ljava/util/ArrayList;
 
     invoke-virtual {v5}, Ljava/util/ArrayList;->clear()V
 
@@ -4464,7 +4264,7 @@
 
     move-result-object v6
 
-    iget-object v7, p0, Lcom/android/server/am/zgw;->Jj:Ljava/util/ArrayList;
+    iget-object v7, p0, Lcom/android/server/am/zgw;->Pj:Ljava/util/ArrayList;
 
     invoke-virtual {v7, v6}, Ljava/util/ArrayList;->contains(Ljava/lang/Object;)Z
 
@@ -4472,7 +4272,7 @@
 
     if-nez v7, :cond_b
 
-    iget-object v7, p0, Lcom/android/server/am/zgw;->Jj:Ljava/util/ArrayList;
+    iget-object v7, p0, Lcom/android/server/am/zgw;->Pj:Ljava/util/ArrayList;
 
     invoke-virtual {v7, v6}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
@@ -4530,7 +4330,7 @@
 
     move-result-object v3
 
-    iget-object v4, p0, Lcom/android/server/am/zgw;->Mj:Ljava/util/ArrayList;
+    iget-object v4, p0, Lcom/android/server/am/zgw;->Sj:Ljava/util/ArrayList;
 
     monitor-enter v4
     :try_end_a
@@ -4539,7 +4339,7 @@
     .catchall {:try_start_a .. :try_end_a} :catchall_e
 
     :try_start_b
-    iget-object v5, p0, Lcom/android/server/am/zgw;->Mj:Ljava/util/ArrayList;
+    iget-object v5, p0, Lcom/android/server/am/zgw;->Sj:Ljava/util/ArrayList;
 
     invoke-virtual {v5}, Ljava/util/ArrayList;->clear()V
 
@@ -4556,7 +4356,7 @@
 
     move-result-object v6
 
-    iget-object v7, p0, Lcom/android/server/am/zgw;->Mj:Ljava/util/ArrayList;
+    iget-object v7, p0, Lcom/android/server/am/zgw;->Sj:Ljava/util/ArrayList;
 
     invoke-virtual {v7, v6}, Ljava/util/ArrayList;->contains(Ljava/lang/Object;)Z
 
@@ -4564,7 +4364,7 @@
 
     if-nez v7, :cond_e
 
-    iget-object v7, p0, Lcom/android/server/am/zgw;->Mj:Ljava/util/ArrayList;
+    iget-object v7, p0, Lcom/android/server/am/zgw;->Sj:Ljava/util/ArrayList;
 
     invoke-virtual {v7, v6}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
@@ -4622,7 +4422,7 @@
 
     move-result-object v3
 
-    iget-object v4, p0, Lcom/android/server/am/zgw;->Ej:Ljava/util/ArrayList;
+    iget-object v4, p0, Lcom/android/server/am/zgw;->Kj:Ljava/util/ArrayList;
 
     monitor-enter v4
     :try_end_e
@@ -4631,7 +4431,7 @@
     .catchall {:try_start_e .. :try_end_e} :catchall_e
 
     :try_start_f
-    iget-object v5, p0, Lcom/android/server/am/zgw;->Ej:Ljava/util/ArrayList;
+    iget-object v5, p0, Lcom/android/server/am/zgw;->Kj:Ljava/util/ArrayList;
 
     invoke-virtual {v5}, Ljava/util/ArrayList;->clear()V
 
@@ -4648,7 +4448,7 @@
 
     move-result-object v6
 
-    iget-object v7, p0, Lcom/android/server/am/zgw;->Ej:Ljava/util/ArrayList;
+    iget-object v7, p0, Lcom/android/server/am/zgw;->Kj:Ljava/util/ArrayList;
 
     invoke-virtual {v7, v6}, Ljava/util/ArrayList;->contains(Ljava/lang/Object;)Z
 
@@ -4656,7 +4456,7 @@
 
     if-nez v7, :cond_11
 
-    iget-object v7, p0, Lcom/android/server/am/zgw;->Ej:Ljava/util/ArrayList;
+    iget-object v7, p0, Lcom/android/server/am/zgw;->Kj:Ljava/util/ArrayList;
 
     invoke-virtual {v7, v6}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
@@ -4714,7 +4514,7 @@
 
     move-result-object v3
 
-    iget-object v4, p0, Lcom/android/server/am/zgw;->Nj:Ljava/util/ArrayList;
+    iget-object v4, p0, Lcom/android/server/am/zgw;->Tj:Ljava/util/ArrayList;
 
     monitor-enter v4
     :try_end_12
@@ -4723,7 +4523,7 @@
     .catchall {:try_start_12 .. :try_end_12} :catchall_e
 
     :try_start_13
-    iget-object v5, p0, Lcom/android/server/am/zgw;->Nj:Ljava/util/ArrayList;
+    iget-object v5, p0, Lcom/android/server/am/zgw;->Tj:Ljava/util/ArrayList;
 
     invoke-virtual {v5}, Ljava/util/ArrayList;->clear()V
 
@@ -4740,7 +4540,7 @@
 
     move-result-object v6
 
-    iget-object v7, p0, Lcom/android/server/am/zgw;->Nj:Ljava/util/ArrayList;
+    iget-object v7, p0, Lcom/android/server/am/zgw;->Tj:Ljava/util/ArrayList;
 
     invoke-virtual {v7, v6}, Ljava/util/ArrayList;->contains(Ljava/lang/Object;)Z
 
@@ -4748,7 +4548,7 @@
 
     if-nez v7, :cond_14
 
-    iget-object v7, p0, Lcom/android/server/am/zgw;->Nj:Ljava/util/ArrayList;
+    iget-object v7, p0, Lcom/android/server/am/zgw;->Tj:Ljava/util/ArrayList;
 
     invoke-virtual {v7, v6}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
@@ -4806,7 +4606,7 @@
 
     move-result-object v3
 
-    iget-object v4, p0, Lcom/android/server/am/zgw;->Sj:Ljava/util/ArrayList;
+    iget-object v4, p0, Lcom/android/server/am/zgw;->Yj:Ljava/util/ArrayList;
 
     monitor-enter v4
     :try_end_16
@@ -4815,7 +4615,7 @@
     .catchall {:try_start_16 .. :try_end_16} :catchall_e
 
     :try_start_17
-    iget-object v5, p0, Lcom/android/server/am/zgw;->Sj:Ljava/util/ArrayList;
+    iget-object v5, p0, Lcom/android/server/am/zgw;->Yj:Ljava/util/ArrayList;
 
     invoke-virtual {v5}, Ljava/util/ArrayList;->clear()V
 
@@ -4832,7 +4632,7 @@
 
     move-result-object v6
 
-    iget-object v7, p0, Lcom/android/server/am/zgw;->Sj:Ljava/util/ArrayList;
+    iget-object v7, p0, Lcom/android/server/am/zgw;->Yj:Ljava/util/ArrayList;
 
     invoke-virtual {v7, v6}, Ljava/util/ArrayList;->contains(Ljava/lang/Object;)Z
 
@@ -4840,7 +4640,7 @@
 
     if-nez v7, :cond_17
 
-    iget-object v7, p0, Lcom/android/server/am/zgw;->Sj:Ljava/util/ArrayList;
+    iget-object v7, p0, Lcom/android/server/am/zgw;->Yj:Ljava/util/ArrayList;
 
     invoke-virtual {v7, v6}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
@@ -4898,7 +4698,7 @@
 
     move-result-object v3
 
-    iget-object v4, p0, Lcom/android/server/am/zgw;->Qj:Ljava/util/ArrayList;
+    iget-object v4, p0, Lcom/android/server/am/zgw;->Wj:Ljava/util/ArrayList;
 
     monitor-enter v4
     :try_end_1a
@@ -4907,7 +4707,7 @@
     .catchall {:try_start_1a .. :try_end_1a} :catchall_e
 
     :try_start_1b
-    iget-object v5, p0, Lcom/android/server/am/zgw;->Qj:Ljava/util/ArrayList;
+    iget-object v5, p0, Lcom/android/server/am/zgw;->Wj:Ljava/util/ArrayList;
 
     invoke-virtual {v5}, Ljava/util/ArrayList;->clear()V
 
@@ -4924,7 +4724,7 @@
 
     move-result-object v6
 
-    iget-object v7, p0, Lcom/android/server/am/zgw;->Qj:Ljava/util/ArrayList;
+    iget-object v7, p0, Lcom/android/server/am/zgw;->Wj:Ljava/util/ArrayList;
 
     invoke-virtual {v7, v6}, Ljava/util/ArrayList;->contains(Ljava/lang/Object;)Z
 
@@ -4932,7 +4732,7 @@
 
     if-nez v7, :cond_1a
 
-    iget-object v7, p0, Lcom/android/server/am/zgw;->Qj:Ljava/util/ArrayList;
+    iget-object v7, p0, Lcom/android/server/am/zgw;->Wj:Ljava/util/ArrayList;
 
     invoke-virtual {v7, v6}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
@@ -4998,7 +4798,7 @@
 
     move-result v3
 
-    sput-boolean v3, Lcom/android/server/am/zgw;->tl:Z
+    sput-boolean v3, Lcom/android/server/am/zgw;->zl:Z
 
     const-string v3, "OnePlusAppBootManager"
 
@@ -5010,7 +4810,7 @@
 
     invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sget-boolean v5, Lcom/android/server/am/zgw;->tl:Z
+    sget-boolean v5, Lcom/android/server/am/zgw;->zl:Z
 
     invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -5041,7 +4841,7 @@
 
     move-result-object v3
 
-    iget-object v4, p0, Lcom/android/server/am/zgw;->Zj:Ljava/util/ArrayList;
+    iget-object v4, p0, Lcom/android/server/am/zgw;->ek:Ljava/util/ArrayList;
 
     monitor-enter v4
     :try_end_1e
@@ -5050,7 +4850,7 @@
     .catchall {:try_start_1e .. :try_end_1e} :catchall_e
 
     :try_start_1f
-    iget-object v5, p0, Lcom/android/server/am/zgw;->Zj:Ljava/util/ArrayList;
+    iget-object v5, p0, Lcom/android/server/am/zgw;->ek:Ljava/util/ArrayList;
 
     invoke-virtual {v5}, Ljava/util/ArrayList;->clear()V
 
@@ -5067,7 +4867,7 @@
 
     move-result-object v6
 
-    iget-object v7, p0, Lcom/android/server/am/zgw;->Zj:Ljava/util/ArrayList;
+    iget-object v7, p0, Lcom/android/server/am/zgw;->ek:Ljava/util/ArrayList;
 
     invoke-virtual {v7, v6}, Ljava/util/ArrayList;->contains(Ljava/lang/Object;)Z
 
@@ -5075,7 +4875,7 @@
 
     if-nez v7, :cond_1e
 
-    iget-object v7, p0, Lcom/android/server/am/zgw;->Zj:Ljava/util/ArrayList;
+    iget-object v7, p0, Lcom/android/server/am/zgw;->ek:Ljava/util/ArrayList;
 
     invoke-virtual {v7, v6}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
@@ -5139,7 +4939,7 @@
 
     int-to-long v3, v3
 
-    sput-wide v3, Lcom/android/server/am/zgw;->ol:J
+    sput-wide v3, Lcom/android/server/am/zgw;->vl:J
 
     const-string v3, "OnePlusAppBootManager"
 
@@ -5151,7 +4951,7 @@
 
     invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sget-wide v5, Lcom/android/server/am/zgw;->ol:J
+    sget-wide v5, Lcom/android/server/am/zgw;->vl:J
 
     invoke-virtual {v4, v5, v6}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
@@ -5186,7 +4986,7 @@
 
     move-result v3
 
-    sput v3, Lcom/android/server/am/zgw;->pl:I
+    sput v3, Lcom/android/server/am/zgw;->wl:I
 
     const-string v3, "OnePlusAppBootManager"
 
@@ -5198,7 +4998,7 @@
 
     invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sget v5, Lcom/android/server/am/zgw;->pl:I
+    sget v5, Lcom/android/server/am/zgw;->wl:I
 
     invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -5229,7 +5029,7 @@
 
     move-result-object v3
 
-    iget-object v4, p0, Lcom/android/server/am/zgw;->Rj:Ljava/util/ArrayList;
+    iget-object v4, p0, Lcom/android/server/am/zgw;->Xj:Ljava/util/ArrayList;
 
     monitor-enter v4
     :try_end_22
@@ -5238,7 +5038,7 @@
     .catchall {:try_start_22 .. :try_end_22} :catchall_e
 
     :try_start_23
-    iget-object v5, p0, Lcom/android/server/am/zgw;->Rj:Ljava/util/ArrayList;
+    iget-object v5, p0, Lcom/android/server/am/zgw;->Xj:Ljava/util/ArrayList;
 
     invoke-virtual {v5}, Ljava/util/ArrayList;->clear()V
 
@@ -5255,7 +5055,7 @@
 
     move-result-object v6
 
-    iget-object v7, p0, Lcom/android/server/am/zgw;->Rj:Ljava/util/ArrayList;
+    iget-object v7, p0, Lcom/android/server/am/zgw;->Xj:Ljava/util/ArrayList;
 
     invoke-virtual {v7, v6}, Ljava/util/ArrayList;->contains(Ljava/lang/Object;)Z
 
@@ -5263,7 +5063,7 @@
 
     if-nez v7, :cond_23
 
-    iget-object v7, p0, Lcom/android/server/am/zgw;->Rj:Ljava/util/ArrayList;
+    iget-object v7, p0, Lcom/android/server/am/zgw;->Xj:Ljava/util/ArrayList;
 
     invoke-virtual {v7, v6}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
@@ -5321,7 +5121,7 @@
 
     move-result-object v3
 
-    iget-object v4, p0, Lcom/android/server/am/zgw;->Hj:Ljava/util/ArrayList;
+    iget-object v4, p0, Lcom/android/server/am/zgw;->Nj:Ljava/util/ArrayList;
 
     monitor-enter v4
     :try_end_26
@@ -5330,7 +5130,7 @@
     .catchall {:try_start_26 .. :try_end_26} :catchall_e
 
     :try_start_27
-    iget-object v5, p0, Lcom/android/server/am/zgw;->Hj:Ljava/util/ArrayList;
+    iget-object v5, p0, Lcom/android/server/am/zgw;->Nj:Ljava/util/ArrayList;
 
     invoke-virtual {v5}, Ljava/util/ArrayList;->clear()V
 
@@ -5347,7 +5147,7 @@
 
     move-result-object v6
 
-    iget-object v7, p0, Lcom/android/server/am/zgw;->Hj:Ljava/util/ArrayList;
+    iget-object v7, p0, Lcom/android/server/am/zgw;->Nj:Ljava/util/ArrayList;
 
     invoke-virtual {v7, v6}, Ljava/util/ArrayList;->contains(Ljava/lang/Object;)Z
 
@@ -5355,7 +5155,7 @@
 
     if-nez v7, :cond_26
 
-    iget-object v7, p0, Lcom/android/server/am/zgw;->Hj:Ljava/util/ArrayList;
+    iget-object v7, p0, Lcom/android/server/am/zgw;->Nj:Ljava/util/ArrayList;
 
     invoke-virtual {v7, v6}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
@@ -5413,7 +5213,7 @@
 
     move-result-object v3
 
-    iget-object v4, p0, Lcom/android/server/am/zgw;->Wj:Ljava/util/ArrayList;
+    iget-object v4, p0, Lcom/android/server/am/zgw;->bk:Ljava/util/ArrayList;
 
     monitor-enter v4
     :try_end_2a
@@ -5422,7 +5222,7 @@
     .catchall {:try_start_2a .. :try_end_2a} :catchall_e
 
     :try_start_2b
-    iget-object v5, p0, Lcom/android/server/am/zgw;->Wj:Ljava/util/ArrayList;
+    iget-object v5, p0, Lcom/android/server/am/zgw;->bk:Ljava/util/ArrayList;
 
     invoke-virtual {v5}, Ljava/util/ArrayList;->clear()V
 
@@ -5439,7 +5239,7 @@
 
     move-result-object v6
 
-    iget-object v7, p0, Lcom/android/server/am/zgw;->Wj:Ljava/util/ArrayList;
+    iget-object v7, p0, Lcom/android/server/am/zgw;->bk:Ljava/util/ArrayList;
 
     invoke-virtual {v7, v6}, Ljava/util/ArrayList;->contains(Ljava/lang/Object;)Z
 
@@ -5447,7 +5247,7 @@
 
     if-nez v7, :cond_29
 
-    iget-object v7, p0, Lcom/android/server/am/zgw;->Wj:Ljava/util/ArrayList;
+    iget-object v7, p0, Lcom/android/server/am/zgw;->bk:Ljava/util/ArrayList;
 
     invoke-virtual {v7, v6}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
@@ -5505,7 +5305,7 @@
 
     move-result-object v3
 
-    iget-object v4, p0, Lcom/android/server/am/zgw;->Ij:Ljava/util/ArrayList;
+    iget-object v4, p0, Lcom/android/server/am/zgw;->Oj:Ljava/util/ArrayList;
 
     monitor-enter v4
     :try_end_2e
@@ -5514,7 +5314,7 @@
     .catchall {:try_start_2e .. :try_end_2e} :catchall_e
 
     :try_start_2f
-    iget-object v5, p0, Lcom/android/server/am/zgw;->Ij:Ljava/util/ArrayList;
+    iget-object v5, p0, Lcom/android/server/am/zgw;->Oj:Ljava/util/ArrayList;
 
     invoke-virtual {v5}, Ljava/util/ArrayList;->clear()V
 
@@ -5531,7 +5331,7 @@
 
     move-result-object v6
 
-    iget-object v7, p0, Lcom/android/server/am/zgw;->Ij:Ljava/util/ArrayList;
+    iget-object v7, p0, Lcom/android/server/am/zgw;->Oj:Ljava/util/ArrayList;
 
     invoke-virtual {v7, v6}, Ljava/util/ArrayList;->contains(Ljava/lang/Object;)Z
 
@@ -5539,7 +5339,7 @@
 
     if-nez v7, :cond_2c
 
-    iget-object v7, p0, Lcom/android/server/am/zgw;->Ij:Ljava/util/ArrayList;
+    iget-object v7, p0, Lcom/android/server/am/zgw;->Oj:Ljava/util/ArrayList;
 
     invoke-virtual {v7, v6}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
@@ -5591,7 +5391,7 @@
 
     if-eqz v3, :cond_30
 
-    iget-object v3, p0, Lcom/android/server/am/zgw;->Tj:Ljava/util/HashMap;
+    iget-object v3, p0, Lcom/android/server/am/zgw;->Zj:Ljava/util/HashMap;
 
     invoke-virtual {v3}, Ljava/util/HashMap;->clear()V
 
@@ -5671,7 +5471,7 @@
 
     move-result v3
 
-    iput-boolean v3, p0, Lcom/android/server/am/zgw;->Uj:Z
+    iput-boolean v3, p0, Lcom/android/server/am/zgw;->_j:Z
 
     :cond_31
     const-string v3, "name"
@@ -5731,7 +5531,7 @@
 
     move-result v7
 
-    sput-boolean v7, Lcom/android/server/am/zgw;->gk:Z
+    sput-boolean v7, Lcom/android/server/am/zgw;->mk:Z
 
     const-string v7, "persist.sys.appboot.recorder"
 
@@ -5739,7 +5539,7 @@
 
     invoke-direct {v8}, Ljava/lang/StringBuilder;-><init>()V
 
-    sget-boolean v9, Lcom/android/server/am/zgw;->gk:Z
+    sget-boolean v9, Lcom/android/server/am/zgw;->mk:Z
 
     invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -5761,7 +5561,7 @@
 
     invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sget-boolean v8, Lcom/android/server/am/zgw;->gk:Z
+    sget-boolean v8, Lcom/android/server/am/zgw;->mk:Z
 
     invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -5977,7 +5777,7 @@
 
     move-result-object v3
 
-    sget-boolean v4, Lcom/android/server/am/zgw;->uk:Z
+    sget-boolean v4, Lcom/android/server/am/zgw;->Ak:Z
 
     invoke-virtual {v3}, Ljava/lang/Boolean;->booleanValue()Z
 
@@ -5989,7 +5789,7 @@
 
     move-result v4
 
-    sput-boolean v4, Lcom/android/server/am/zgw;->uk:Z
+    sput-boolean v4, Lcom/android/server/am/zgw;->Ak:Z
 
     const-string v4, "persist.sys.appboot.restartservice"
 
@@ -6049,7 +5849,7 @@
 
     move-result-object v2
 
-    iget-object v3, p0, Lcom/android/server/am/zgw;->Lj:Ljava/util/ArrayList;
+    iget-object v3, p0, Lcom/android/server/am/zgw;->Rj:Ljava/util/ArrayList;
 
     monitor-enter v3
     :try_end_32
@@ -6058,7 +5858,7 @@
     .catchall {:try_start_32 .. :try_end_32} :catchall_e
 
     :try_start_33
-    iget-object v4, p0, Lcom/android/server/am/zgw;->Lj:Ljava/util/ArrayList;
+    iget-object v4, p0, Lcom/android/server/am/zgw;->Rj:Ljava/util/ArrayList;
 
     invoke-virtual {v4}, Ljava/util/ArrayList;->clear()V
 
@@ -6075,7 +5875,7 @@
 
     move-result-object v5
 
-    iget-object v6, p0, Lcom/android/server/am/zgw;->Lj:Ljava/util/ArrayList;
+    iget-object v6, p0, Lcom/android/server/am/zgw;->Rj:Ljava/util/ArrayList;
 
     invoke-virtual {v6, v5}, Ljava/util/ArrayList;->contains(Ljava/lang/Object;)Z
 
@@ -6083,7 +5883,7 @@
 
     if-nez v6, :cond_3c
 
-    iget-object v6, p0, Lcom/android/server/am/zgw;->Lj:Ljava/util/ArrayList;
+    iget-object v6, p0, Lcom/android/server/am/zgw;->Rj:Ljava/util/ArrayList;
 
     invoke-virtual {v6, v5}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
@@ -6152,7 +5952,7 @@
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v0, p0, Lcom/android/server/am/zgw;->Kj:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/server/am/zgw;->Qj:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -6174,7 +5974,7 @@
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v0, p0, Lcom/android/server/am/zgw;->Mj:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/server/am/zgw;->Sj:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -6196,7 +5996,7 @@
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v0, p0, Lcom/android/server/am/zgw;->Nj:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/server/am/zgw;->Tj:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -6218,7 +6018,7 @@
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v0, p0, Lcom/android/server/am/zgw;->Sj:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/server/am/zgw;->Yj:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -6240,7 +6040,7 @@
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v0, p0, Lcom/android/server/am/zgw;->Qj:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/server/am/zgw;->Wj:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -6262,7 +6062,7 @@
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v0, p0, Lcom/android/server/am/zgw;->Rj:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/server/am/zgw;->Xj:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -6284,7 +6084,7 @@
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v0, p0, Lcom/android/server/am/zgw;->Lj:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/server/am/zgw;->Rj:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -6306,7 +6106,7 @@
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v0, p0, Lcom/android/server/am/zgw;->Hj:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/server/am/zgw;->Nj:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -6328,7 +6128,7 @@
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v0, p0, Lcom/android/server/am/zgw;->Ij:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/server/am/zgw;->Oj:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -6350,7 +6150,7 @@
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v0, p0, Lcom/android/server/am/zgw;->Jj:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/server/am/zgw;->Pj:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -6372,7 +6172,7 @@
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v0, p0, Lcom/android/server/am/zgw;->Wj:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/server/am/zgw;->bk:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -6395,7 +6195,7 @@
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object p0, p0, Lcom/android/server/am/zgw;->Zj:Ljava/util/ArrayList;
+    iget-object p0, p0, Lcom/android/server/am/zgw;->ek:Ljava/util/ArrayList;
 
     invoke-virtual {p0}, Ljava/util/ArrayList;->size()I
 
@@ -6460,7 +6260,7 @@
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v0, p0, Lcom/android/server/am/zgw;->Kj:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/server/am/zgw;->Qj:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -6482,7 +6282,7 @@
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v0, p0, Lcom/android/server/am/zgw;->Mj:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/server/am/zgw;->Sj:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -6504,7 +6304,7 @@
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v0, p0, Lcom/android/server/am/zgw;->Nj:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/server/am/zgw;->Tj:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -6526,7 +6326,7 @@
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v0, p0, Lcom/android/server/am/zgw;->Sj:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/server/am/zgw;->Yj:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -6548,7 +6348,7 @@
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v0, p0, Lcom/android/server/am/zgw;->Qj:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/server/am/zgw;->Wj:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -6570,7 +6370,7 @@
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v0, p0, Lcom/android/server/am/zgw;->Rj:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/server/am/zgw;->Xj:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -6592,7 +6392,7 @@
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v0, p0, Lcom/android/server/am/zgw;->Lj:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/server/am/zgw;->Rj:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -6614,7 +6414,7 @@
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v0, p0, Lcom/android/server/am/zgw;->Hj:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/server/am/zgw;->Nj:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -6636,7 +6436,7 @@
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v0, p0, Lcom/android/server/am/zgw;->Ij:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/server/am/zgw;->Oj:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -6658,7 +6458,7 @@
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v0, p0, Lcom/android/server/am/zgw;->Jj:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/server/am/zgw;->Pj:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -6680,7 +6480,7 @@
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v0, p0, Lcom/android/server/am/zgw;->Wj:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/server/am/zgw;->bk:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -6744,7 +6544,7 @@
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v0, p0, Lcom/android/server/am/zgw;->Kj:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/server/am/zgw;->Qj:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -6766,7 +6566,7 @@
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v0, p0, Lcom/android/server/am/zgw;->Mj:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/server/am/zgw;->Sj:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -6788,7 +6588,7 @@
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v0, p0, Lcom/android/server/am/zgw;->Nj:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/server/am/zgw;->Tj:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -6810,7 +6610,7 @@
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v0, p0, Lcom/android/server/am/zgw;->Sj:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/server/am/zgw;->Yj:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -6832,7 +6632,7 @@
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v0, p0, Lcom/android/server/am/zgw;->Qj:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/server/am/zgw;->Wj:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -6854,7 +6654,7 @@
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v0, p0, Lcom/android/server/am/zgw;->Rj:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/server/am/zgw;->Xj:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -6876,7 +6676,7 @@
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v0, p0, Lcom/android/server/am/zgw;->Lj:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/server/am/zgw;->Rj:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -6898,7 +6698,7 @@
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v0, p0, Lcom/android/server/am/zgw;->Hj:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/server/am/zgw;->Nj:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -6920,7 +6720,7 @@
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v0, p0, Lcom/android/server/am/zgw;->Ij:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/server/am/zgw;->Oj:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -6942,7 +6742,7 @@
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v0, p0, Lcom/android/server/am/zgw;->Jj:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/server/am/zgw;->Pj:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -6964,7 +6764,7 @@
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v0, p0, Lcom/android/server/am/zgw;->Wj:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/server/am/zgw;->bk:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -6986,7 +6786,7 @@
 
     :cond_40
     :goto_23
-    sget-object p0, Lcom/android/server/am/zgw;->Jk:Ljava/util/HashMap;
+    sget-object p0, Lcom/android/server/am/zgw;->Pk:Ljava/util/HashMap;
 
     const/4 p1, 0x1
 
@@ -7001,7 +6801,7 @@
     return-void
 
     :cond_41
-    sget-object v0, Lcom/android/server/am/zgw;->Kk:Ljava/lang/Object;
+    sget-object v0, Lcom/android/server/am/zgw;->Qk:Ljava/lang/Object;
 
     monitor-enter v0
 
@@ -7027,7 +6827,7 @@
     :try_end_39
     .catchall {:try_start_39 .. :try_end_39} :catchall_10
 
-    sget-object p0, Lcom/android/server/am/zgw;->Jk:Ljava/util/HashMap;
+    sget-object p0, Lcom/android/server/am/zgw;->Pk:Ljava/util/HashMap;
 
     invoke-virtual {p0}, Ljava/util/HashMap;->values()Ljava/util/Collection;
 
@@ -7057,13 +6857,13 @@
 
     if-eqz v1, :cond_43
 
-    iget v1, v0, Lcom/android/server/am/zgw$rtg;->gi:I
+    iget v1, v0, Lcom/android/server/am/zgw$rtg;->mi:I
 
     and-int/lit16 v1, v1, 0x4000
 
     if-eqz v1, :cond_43
 
-    sget-object v1, Lcom/android/server/am/zgw;->Kk:Ljava/lang/Object;
+    sget-object v1, Lcom/android/server/am/zgw;->Qk:Ljava/lang/Object;
 
     monitor-enter v1
 
@@ -7147,7 +6947,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lcom/android/server/am/zgw;->Kj:Ljava/util/ArrayList;
+    iget-object v1, p0, Lcom/android/server/am/zgw;->Qj:Ljava/util/ArrayList;
 
     invoke-virtual {v1}, Ljava/util/ArrayList;->size()I
 
@@ -7169,7 +6969,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lcom/android/server/am/zgw;->Mj:Ljava/util/ArrayList;
+    iget-object v1, p0, Lcom/android/server/am/zgw;->Sj:Ljava/util/ArrayList;
 
     invoke-virtual {v1}, Ljava/util/ArrayList;->size()I
 
@@ -7191,7 +6991,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lcom/android/server/am/zgw;->Nj:Ljava/util/ArrayList;
+    iget-object v1, p0, Lcom/android/server/am/zgw;->Tj:Ljava/util/ArrayList;
 
     invoke-virtual {v1}, Ljava/util/ArrayList;->size()I
 
@@ -7213,7 +7013,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lcom/android/server/am/zgw;->Sj:Ljava/util/ArrayList;
+    iget-object v1, p0, Lcom/android/server/am/zgw;->Yj:Ljava/util/ArrayList;
 
     invoke-virtual {v1}, Ljava/util/ArrayList;->size()I
 
@@ -7235,7 +7035,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lcom/android/server/am/zgw;->Qj:Ljava/util/ArrayList;
+    iget-object v1, p0, Lcom/android/server/am/zgw;->Wj:Ljava/util/ArrayList;
 
     invoke-virtual {v1}, Ljava/util/ArrayList;->size()I
 
@@ -7257,7 +7057,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lcom/android/server/am/zgw;->Rj:Ljava/util/ArrayList;
+    iget-object v1, p0, Lcom/android/server/am/zgw;->Xj:Ljava/util/ArrayList;
 
     invoke-virtual {v1}, Ljava/util/ArrayList;->size()I
 
@@ -7279,7 +7079,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lcom/android/server/am/zgw;->Lj:Ljava/util/ArrayList;
+    iget-object v1, p0, Lcom/android/server/am/zgw;->Rj:Ljava/util/ArrayList;
 
     invoke-virtual {v1}, Ljava/util/ArrayList;->size()I
 
@@ -7301,7 +7101,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lcom/android/server/am/zgw;->Hj:Ljava/util/ArrayList;
+    iget-object v1, p0, Lcom/android/server/am/zgw;->Nj:Ljava/util/ArrayList;
 
     invoke-virtual {v1}, Ljava/util/ArrayList;->size()I
 
@@ -7323,7 +7123,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lcom/android/server/am/zgw;->Ij:Ljava/util/ArrayList;
+    iget-object v1, p0, Lcom/android/server/am/zgw;->Oj:Ljava/util/ArrayList;
 
     invoke-virtual {v1}, Ljava/util/ArrayList;->size()I
 
@@ -7345,7 +7145,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lcom/android/server/am/zgw;->Jj:Ljava/util/ArrayList;
+    iget-object v1, p0, Lcom/android/server/am/zgw;->Pj:Ljava/util/ArrayList;
 
     invoke-virtual {v1}, Ljava/util/ArrayList;->size()I
 
@@ -7367,7 +7167,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lcom/android/server/am/zgw;->Wj:Ljava/util/ArrayList;
+    iget-object v1, p0, Lcom/android/server/am/zgw;->bk:Ljava/util/ArrayList;
 
     invoke-virtual {v1}, Ljava/util/ArrayList;->size()I
 
@@ -7389,7 +7189,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object p0, p0, Lcom/android/server/am/zgw;->Zj:Ljava/util/ArrayList;
+    iget-object p0, p0, Lcom/android/server/am/zgw;->ek:Ljava/util/ArrayList;
 
     invoke-virtual {p0}, Ljava/util/ArrayList;->size()I
 
@@ -7410,12 +7210,12 @@
 .method private sb(Ljava/lang/String;)Z
     .locals 1
 
-    iget-object v0, p0, Lcom/android/server/am/zgw;->Fj:Ljava/util/HashSet;
+    iget-object v0, p0, Lcom/android/server/am/zgw;->Lj:Ljava/util/HashSet;
 
     monitor-enter v0
 
     :try_start_0
-    iget-object p0, p0, Lcom/android/server/am/zgw;->Fj:Ljava/util/HashSet;
+    iget-object p0, p0, Lcom/android/server/am/zgw;->Lj:Ljava/util/HashSet;
 
     invoke-virtual {p0, p1}, Ljava/util/HashSet;->contains(Ljava/lang/Object;)Z
 
@@ -7500,7 +7300,7 @@
     invoke-static {v1, v0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_1
-    sget-object v0, Lcom/android/server/am/zgw;->Hk:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/server/am/zgw;->Nk:Ljava/util/HashMap;
 
     monitor-enter v0
 
@@ -7511,7 +7311,7 @@
     if-ne p3, v1, :cond_2
 
     :try_start_0
-    sget-object v2, Lcom/android/server/am/zgw;->Hk:Ljava/util/HashMap;
+    sget-object v2, Lcom/android/server/am/zgw;->Nk:Ljava/util/HashMap;
 
     invoke-virtual {v2, p1}, Ljava/util/HashMap;->containsKey(Ljava/lang/Object;)Z
 
@@ -7519,7 +7319,7 @@
 
     if-nez v2, :cond_4
 
-    sget-object v2, Lcom/android/server/am/zgw;->Hk:Ljava/util/HashMap;
+    sget-object v2, Lcom/android/server/am/zgw;->Nk:Ljava/util/HashMap;
 
     invoke-virtual {p0}, Lcom/android/server/am/zgw$sis;->getAction()I
 
@@ -7540,7 +7340,7 @@
 
     if-ne p3, v2, :cond_4
 
-    sget-object v2, Lcom/android/server/am/zgw;->Hk:Ljava/util/HashMap;
+    sget-object v2, Lcom/android/server/am/zgw;->Nk:Ljava/util/HashMap;
 
     invoke-virtual {v2, p1}, Ljava/util/HashMap;->containsKey(Ljava/lang/Object;)Z
 
@@ -7548,7 +7348,7 @@
 
     if-eqz v2, :cond_3
 
-    sget-object v2, Lcom/android/server/am/zgw;->Hk:Ljava/util/HashMap;
+    sget-object v2, Lcom/android/server/am/zgw;->Nk:Ljava/util/HashMap;
 
     invoke-virtual {v2, p1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -7563,7 +7363,7 @@
     invoke-virtual {p0, v2}, Lcom/android/server/am/zgw$sis;->setAction(I)V
 
     :cond_3
-    sget-object v2, Lcom/android/server/am/zgw;->Hk:Ljava/util/HashMap;
+    sget-object v2, Lcom/android/server/am/zgw;->Nk:Ljava/util/HashMap;
 
     invoke-virtual {v2, p1}, Ljava/util/HashMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -7605,10 +7405,114 @@
     throw p0
 .end method
 
+.method private sm()Z
+    .locals 5
+
+    sget v0, Lcom/android/server/am/zgw;->Ek:I
+
+    const/4 v1, 0x1
+
+    and-int/2addr v0, v1
+
+    if-eqz v0, :cond_0
+
+    return v1
+
+    :cond_0
+    const-string v0, "gsm.sim.operator.iso-country"
+
+    const-string v2, ""
+
+    invoke-static {v0, v2}, Landroid/os/SystemProperties;->get(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/String;->length()I
+
+    move-result v2
+
+    const/4 v3, 0x2
+
+    const/4 v4, 0x0
+
+    if-lt v2, v3, :cond_3
+
+    const-string v2, "cn"
+
+    invoke-virtual {v0, v2}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_1
+
+    iput-boolean v1, p0, Lcom/android/server/am/zgw;->Hj:Z
+
+    :goto_0
+    invoke-virtual {p0, v1}, Lcom/android/server/am/zgw;->cjf(Z)V
+
+    goto :goto_1
+
+    :cond_1
+    const-string v2, "in"
+
+    invoke-virtual {v0, v2}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+
+    move-result v2
+
+    iput-boolean v4, p0, Lcom/android/server/am/zgw;->Hj:Z
+
+    if-eqz v2, :cond_2
+
+    goto :goto_0
+
+    :cond_2
+    invoke-virtual {p0, v4}, Lcom/android/server/am/zgw;->cjf(Z)V
+
+    goto :goto_1
+
+    :cond_3
+    move v1, v4
+
+    :goto_1
+    sget-boolean p0, Lcom/android/server/am/zgw;->sDebug:Z
+
+    if-nez p0, :cond_4
+
+    if-eqz v1, :cond_5
+
+    :cond_4
+    new-instance p0, Ljava/lang/StringBuilder;
+
+    invoke-direct {p0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v2, "responseSIMStateChanged # mccCountry="
+
+    invoke-virtual {p0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v0, ", ret="
+
+    invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p0
+
+    const-string v0, "OnePlusAppBootManager"
+
+    invoke-static {v0, p0}, Landroid/util/Slog;->i(Ljava/lang/String;Ljava/lang/String;)I
+
+    :cond_5
+    return v1
+.end method
+
 .method static synthetic ssp(Lcom/android/server/am/zgw;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/am/zgw;->km()V
+    invoke-direct {p0}, Lcom/android/server/am/zgw;->nm()V
 
     return-void
 .end method
@@ -7637,7 +7541,7 @@
     invoke-static {p0}, Lcom/android/server/am/zgw;->myLog(Ljava/lang/String;)V
 
     :cond_0
-    sget-object p0, Lcom/android/server/am/zgw;->Kk:Ljava/lang/Object;
+    sget-object p0, Lcom/android/server/am/zgw;->Qk:Ljava/lang/Object;
 
     monitor-enter p0
 
@@ -7660,6 +7564,102 @@
     throw p1
 .end method
 
+.method private tm()V
+    .locals 6
+
+    sget-object p0, Lcom/android/server/am/zgw;->Pk:Ljava/util/HashMap;
+
+    monitor-enter p0
+
+    :try_start_0
+    sget-object v0, Lcom/android/server/am/zgw;->Pk:Ljava/util/HashMap;
+
+    invoke-virtual {v0}, Ljava/util/HashMap;->values()Ljava/util/Collection;
+
+    move-result-object v0
+
+    invoke-interface {v0}, Ljava/util/Collection;->iterator()Ljava/util/Iterator;
+
+    move-result-object v0
+
+    :cond_0
+    :goto_0
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_2
+
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Lcom/android/server/am/zgw$rtg;
+
+    iget v2, v1, Lcom/android/server/am/zgw$rtg;->mAction:I
+
+    const/4 v3, 0x1
+
+    if-ne v2, v3, :cond_0
+
+    iget-object v1, v1, Lcom/android/server/am/zgw$rtg;->mPkgName:Ljava/lang/String;
+
+    invoke-static {v1}, Lcom/android/server/am/zgw;->qb(Ljava/lang/String;)Lcom/android/server/am/zgw$sis;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Lcom/android/server/am/zgw$sis;->_a()I
+
+    move-result v2
+
+    if-nez v2, :cond_0
+
+    sget-boolean v2, Lcom/android/server/am/zgw;->sDebug:Z
+
+    if-eqz v2, :cond_1
+
+    const-string v2, "OnePlusAppBootManager"
+
+    new-instance v4, Ljava/lang/StringBuilder;
+
+    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v5, "resumeWhiteListFromOnlineConfig : "
+
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Lcom/android/server/am/zgw$sis;->Za()Ljava/lang/String;
+
+    move-result-object v5
+
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v4
+
+    invoke-static {v2, v4}, Landroid/util/Slog;->i(Ljava/lang/String;Ljava/lang/String;)I
+
+    :cond_1
+    invoke-virtual {v1, v3}, Lcom/android/server/am/zgw$sis;->setAction(I)V
+
+    goto :goto_0
+
+    :cond_2
+    monitor-exit p0
+
+    return-void
+
+    :catchall_0
+    move-exception v0
+
+    monitor-exit p0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    throw v0
+.end method
+
 .method static synthetic tsu(Lcom/android/server/am/zgw;Ljava/lang/String;)V
     .locals 0
 
@@ -7671,7 +7671,7 @@
 .method static synthetic tsu(Lcom/android/server/am/zgw;)Z
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/am/zgw;->pm()Z
+    invoke-direct {p0}, Lcom/android/server/am/zgw;->sm()Z
 
     move-result p0
 
@@ -7715,7 +7715,7 @@
     const/4 p0, 0x1
 
     :goto_0
-    sput-boolean p0, Lcom/android/server/am/zgw;->tk:Z
+    sput-boolean p0, Lcom/android/server/am/zgw;->zk:Z
 
     goto :goto_1
 
@@ -7879,7 +7879,7 @@
     return v1
 
     :cond_8
-    iget-object p0, p0, Lcom/android/server/am/zgw;->Zj:Ljava/util/ArrayList;
+    iget-object p0, p0, Lcom/android/server/am/zgw;->ek:Ljava/util/ArrayList;
 
     iget-object v2, p1, Lcom/android/server/am/ProcessRecord;->info:Landroid/content/pm/ApplicationInfo;
 
@@ -7905,7 +7905,7 @@
     :cond_a
     iget p0, p1, Lcom/android/server/am/ProcessRecord;->curAdj:I
 
-    sget p1, Lcom/android/server/am/zgw;->ql:I
+    sget p1, Lcom/android/server/am/zgw;->xl:I
 
     if-ge p0, p1, :cond_c
 
@@ -7921,7 +7921,7 @@
 
     invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sget p1, Lcom/android/server/am/zgw;->ql:I
+    sget p1, Lcom/android/server/am/zgw;->xl:I
 
     invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -8025,7 +8025,7 @@
 
     invoke-virtual {p0, v0}, Lcom/android/server/am/zgw$sis;->zta(Landroid/content/pm/PackageParser$Package;)V
 
-    sget-object v0, Lcom/android/server/am/zgw;->Kk:Ljava/lang/Object;
+    sget-object v0, Lcom/android/server/am/zgw;->Qk:Ljava/lang/Object;
 
     monitor-enter v0
 
@@ -8121,7 +8121,7 @@
 .method static synthetic vju(I)I
     .locals 0
 
-    sput p0, Lcom/android/server/am/zgw;->ql:I
+    sput p0, Lcom/android/server/am/zgw;->xl:I
 
     return p0
 .end method
@@ -8145,7 +8145,7 @@
     invoke-static {v0}, Lcom/android/server/am/zgw;->myLog(Ljava/lang/String;)V
 
     :cond_1
-    iget-object v0, p0, Lcom/android/server/am/zgw;->Yj:Lcom/android/server/am/zgw$you;
+    iget-object v0, p0, Lcom/android/server/am/zgw;->dk:Lcom/android/server/am/zgw$you;
 
     const/4 v1, 0x1
 
@@ -8164,12 +8164,12 @@
     invoke-static {v0}, Lcom/android/server/am/zgw;->myLog(Ljava/lang/String;)V
 
     :cond_2
-    iget-object v0, p0, Lcom/android/server/am/zgw;->Yj:Lcom/android/server/am/zgw$you;
+    iget-object v0, p0, Lcom/android/server/am/zgw;->dk:Lcom/android/server/am/zgw$you;
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->removeMessages(I)V
 
     :cond_3
-    iget-object p0, p0, Lcom/android/server/am/zgw;->Yj:Lcom/android/server/am/zgw$you;
+    iget-object p0, p0, Lcom/android/server/am/zgw;->dk:Lcom/android/server/am/zgw$you;
 
     invoke-virtual {p0, v1, p1, p2}, Landroid/os/Handler;->sendEmptyMessageDelayed(IJ)Z
 
@@ -8179,12 +8179,12 @@
 .method private wb(Ljava/lang/String;)V
     .locals 2
 
-    iget-object v0, p0, Lcom/android/server/am/zgw;->Gj:Ljava/util/HashSet;
+    iget-object v0, p0, Lcom/android/server/am/zgw;->Mj:Ljava/util/HashSet;
 
     monitor-enter v0
 
     :try_start_0
-    iget-object v1, p0, Lcom/android/server/am/zgw;->Gj:Ljava/util/HashSet;
+    iget-object v1, p0, Lcom/android/server/am/zgw;->Mj:Ljava/util/HashSet;
 
     invoke-virtual {v1, p1}, Ljava/util/HashSet;->contains(Ljava/lang/Object;)Z
 
@@ -8192,7 +8192,7 @@
 
     if-eqz v1, :cond_0
 
-    iget-object p0, p0, Lcom/android/server/am/zgw;->Gj:Ljava/util/HashSet;
+    iget-object p0, p0, Lcom/android/server/am/zgw;->Mj:Ljava/util/HashSet;
 
     invoke-virtual {p0, p1}, Ljava/util/HashSet;->remove(Ljava/lang/Object;)Z
 
@@ -8259,7 +8259,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/server/am/zgw;->yj:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/server/am/zgw;->Ej:Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/server/am/zgw;->mResolver:Landroid/content/ContentResolver;
 
@@ -8269,7 +8269,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/server/am/zgw;->zj:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/server/am/zgw;->Fj:Ljava/lang/String;
 
     sget-boolean v0, Lcom/android/server/am/zgw;->sDebug:Z
 
@@ -8289,7 +8289,7 @@
 
     invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object p1, p0, Lcom/android/server/am/zgw;->yj:Ljava/lang/String;
+    iget-object p1, p0, Lcom/android/server/am/zgw;->Ej:Ljava/lang/String;
 
     invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -8297,7 +8297,7 @@
 
     invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object p1, p0, Lcom/android/server/am/zgw;->zj:Ljava/lang/String;
+    iget-object p1, p0, Lcom/android/server/am/zgw;->Fj:Ljava/lang/String;
 
     invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -8308,7 +8308,7 @@
     invoke-static {p1}, Lcom/android/server/am/zgw;->myLog(Ljava/lang/String;)V
 
     :cond_0
-    iget-object p1, p0, Lcom/android/server/am/zgw;->yj:Ljava/lang/String;
+    iget-object p1, p0, Lcom/android/server/am/zgw;->Ej:Ljava/lang/String;
 
     const/4 v0, 0x1
 
@@ -8321,7 +8321,7 @@
     invoke-virtual {p1, v0}, Lcom/android/server/am/zgw$sis;->lqr(I)V
 
     :cond_1
-    iget-object p0, p0, Lcom/android/server/am/zgw;->zj:Ljava/lang/String;
+    iget-object p0, p0, Lcom/android/server/am/zgw;->Fj:Ljava/lang/String;
 
     if-eqz p0, :cond_2
 
@@ -8356,7 +8356,7 @@
 .method private you(Lcom/android/server/am/ProcessRecord;J)V
     .locals 10
 
-    iget-object v0, p0, Lcom/android/server/am/zgw;->_j:Lcom/android/internal/app/ProcessMap;
+    iget-object v0, p0, Lcom/android/server/am/zgw;->fk:Lcom/android/internal/app/ProcessMap;
 
     iget-object v1, p1, Lcom/android/server/am/ProcessRecord;->processName:Ljava/lang/String;
 
@@ -8368,7 +8368,7 @@
 
     check-cast v0, Ljava/lang/Long;
 
-    iget-object v1, p0, Lcom/android/server/am/zgw;->ak:Lcom/android/internal/app/ProcessMap;
+    iget-object v1, p0, Lcom/android/server/am/zgw;->gk:Lcom/android/internal/app/ProcessMap;
 
     iget-object v2, p1, Lcom/android/server/am/ProcessRecord;->processName:Ljava/lang/String;
 
@@ -8411,7 +8411,7 @@
 
     sub-long v4, p2, v4
 
-    sget-wide v8, Lcom/android/server/am/zgw;->ol:J
+    sget-wide v8, Lcom/android/server/am/zgw;->vl:J
 
     cmp-long v4, v4, v8
 
@@ -8452,11 +8452,11 @@
 
     move-result v0
 
-    sget v2, Lcom/android/server/am/zgw;->pl:I
+    sget v2, Lcom/android/server/am/zgw;->wl:I
 
     if-lt v0, v2, :cond_2
 
-    iget-object p2, p0, Lcom/android/server/am/zgw;->_j:Lcom/android/internal/app/ProcessMap;
+    iget-object p2, p0, Lcom/android/server/am/zgw;->fk:Lcom/android/internal/app/ProcessMap;
 
     iget-object p3, p1, Lcom/android/server/am/ProcessRecord;->processName:Ljava/lang/String;
 
@@ -8464,7 +8464,7 @@
 
     invoke-virtual {p2, p3, v0}, Lcom/android/internal/app/ProcessMap;->remove(Ljava/lang/String;I)Ljava/lang/Object;
 
-    iget-object p2, p0, Lcom/android/server/am/zgw;->ak:Lcom/android/internal/app/ProcessMap;
+    iget-object p2, p0, Lcom/android/server/am/zgw;->gk:Lcom/android/internal/app/ProcessMap;
 
     iget-object p3, p1, Lcom/android/server/am/ProcessRecord;->processName:Ljava/lang/String;
 
@@ -8479,7 +8479,7 @@
     goto :goto_2
 
     :cond_2
-    iget-object v0, p0, Lcom/android/server/am/zgw;->_j:Lcom/android/internal/app/ProcessMap;
+    iget-object v0, p0, Lcom/android/server/am/zgw;->fk:Lcom/android/internal/app/ProcessMap;
 
     iget-object v2, p1, Lcom/android/server/am/ProcessRecord;->processName:Ljava/lang/String;
 
@@ -8491,7 +8491,7 @@
 
     invoke-virtual {v0, v2, v3, v4}, Lcom/android/internal/app/ProcessMap;->put(Ljava/lang/String;ILjava/lang/Object;)Ljava/lang/Object;
 
-    iget-object p0, p0, Lcom/android/server/am/zgw;->ak:Lcom/android/internal/app/ProcessMap;
+    iget-object p0, p0, Lcom/android/server/am/zgw;->gk:Lcom/android/internal/app/ProcessMap;
 
     iget-object p2, p1, Lcom/android/server/am/ProcessRecord;->processName:Ljava/lang/String;
 
@@ -8518,13 +8518,13 @@
 
     sub-long v0, p2, v0
 
-    sget-wide v4, Lcom/android/server/am/zgw;->ol:J
+    sget-wide v4, Lcom/android/server/am/zgw;->vl:J
 
     cmp-long v0, v0, v4
 
     if-ltz v0, :cond_5
 
-    iget-object v0, p0, Lcom/android/server/am/zgw;->_j:Lcom/android/internal/app/ProcessMap;
+    iget-object v0, p0, Lcom/android/server/am/zgw;->fk:Lcom/android/internal/app/ProcessMap;
 
     iget-object v1, p1, Lcom/android/server/am/ProcessRecord;->processName:Ljava/lang/String;
 
@@ -8538,7 +8538,7 @@
 
     :cond_4
     :goto_0
-    iget-object v0, p0, Lcom/android/server/am/zgw;->_j:Lcom/android/internal/app/ProcessMap;
+    iget-object v0, p0, Lcom/android/server/am/zgw;->fk:Lcom/android/internal/app/ProcessMap;
 
     iget-object v1, p1, Lcom/android/server/am/ProcessRecord;->processName:Ljava/lang/String;
 
@@ -8551,7 +8551,7 @@
     :goto_1
     invoke-virtual {v0, v1, v2, v4}, Lcom/android/internal/app/ProcessMap;->put(Ljava/lang/String;ILjava/lang/Object;)Ljava/lang/Object;
 
-    iget-object p0, p0, Lcom/android/server/am/zgw;->ak:Lcom/android/internal/app/ProcessMap;
+    iget-object p0, p0, Lcom/android/server/am/zgw;->gk:Lcom/android/internal/app/ProcessMap;
 
     iget-object p2, p1, Lcom/android/server/am/ProcessRecord;->processName:Ljava/lang/String;
 
@@ -8567,7 +8567,7 @@
 .method static synthetic you(Lcom/android/server/am/zgw;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/am/zgw;->lm()V
+    invoke-direct {p0}, Lcom/android/server/am/zgw;->om()V
 
     return-void
 .end method
@@ -8694,7 +8694,7 @@
 .method static synthetic zta(Lcom/android/server/am/zgw;)Ljava/util/HashSet;
     .locals 0
 
-    iget-object p0, p0, Lcom/android/server/am/zgw;->Fj:Ljava/util/HashSet;
+    iget-object p0, p0, Lcom/android/server/am/zgw;->Lj:Ljava/util/HashSet;
 
     return-object p0
 .end method
@@ -8702,7 +8702,7 @@
 .method private zta(Lcom/android/server/am/ProcessRecord;J)V
     .locals 3
 
-    iget-object v0, p0, Lcom/android/server/am/zgw;->bk:Lcom/android/server/am/zgw$tsu;
+    iget-object v0, p0, Lcom/android/server/am/zgw;->hk:Lcom/android/server/am/zgw$tsu;
 
     if-nez v0, :cond_0
 
@@ -8712,12 +8712,12 @@
 
     invoke-direct {v0, p0, v1}, Lcom/android/server/am/zgw$tsu;-><init>(Lcom/android/server/am/zgw;Lcom/android/server/am/ugm;)V
 
-    iput-object v0, p0, Lcom/android/server/am/zgw;->bk:Lcom/android/server/am/zgw$tsu;
+    iput-object v0, p0, Lcom/android/server/am/zgw;->hk:Lcom/android/server/am/zgw$tsu;
 
     :cond_0
-    iget-object v0, p0, Lcom/android/server/am/zgw;->bk:Lcom/android/server/am/zgw$tsu;
+    iget-object v0, p0, Lcom/android/server/am/zgw;->hk:Lcom/android/server/am/zgw$tsu;
 
-    iget-object v0, v0, Lcom/android/server/am/zgw$tsu;->xj:Ljava/lang/String;
+    iget-object v0, v0, Lcom/android/server/am/zgw$tsu;->Dj:Ljava/lang/String;
 
     const-string v1, ""
 
@@ -8727,7 +8727,7 @@
 
     if-nez v0, :cond_2
 
-    iget-object v0, p0, Lcom/android/server/am/zgw;->bk:Lcom/android/server/am/zgw$tsu;
+    iget-object v0, p0, Lcom/android/server/am/zgw;->hk:Lcom/android/server/am/zgw$tsu;
 
     iget v1, v0, Lcom/android/server/am/zgw$tsu;->mUid:I
 
@@ -8748,11 +8748,11 @@
 
     if-eqz v0, :cond_2
 
-    iget-object v0, p0, Lcom/android/server/am/zgw;->bk:Lcom/android/server/am/zgw$tsu;
+    iget-object v0, p0, Lcom/android/server/am/zgw;->hk:Lcom/android/server/am/zgw$tsu;
 
     invoke-static {v0, p2, p3}, Lcom/android/server/am/zgw$tsu;->zta(Lcom/android/server/am/zgw$tsu;J)V
 
-    iget-object p2, p0, Lcom/android/server/am/zgw;->bk:Lcom/android/server/am/zgw$tsu;
+    iget-object p2, p0, Lcom/android/server/am/zgw;->hk:Lcom/android/server/am/zgw$tsu;
 
     invoke-static {p2}, Lcom/android/server/am/zgw$tsu;->zta(Lcom/android/server/am/zgw$tsu;)Z
 
@@ -8768,7 +8768,7 @@
 
     :cond_2
     :goto_0
-    iget-object p0, p0, Lcom/android/server/am/zgw;->bk:Lcom/android/server/am/zgw$tsu;
+    iget-object p0, p0, Lcom/android/server/am/zgw;->hk:Lcom/android/server/am/zgw$tsu;
 
     iget-object v0, p1, Lcom/android/server/am/ProcessRecord;->processName:Ljava/lang/String;
 
@@ -9072,12 +9072,12 @@
 
     if-eqz v0, :cond_1
 
-    iget-object v0, p0, Lcom/android/server/am/zgw;->Cj:Ljava/util/HashSet;
+    iget-object v0, p0, Lcom/android/server/am/zgw;->Ij:Ljava/util/HashSet;
 
     monitor-enter v0
 
     :try_start_0
-    iget-object p0, p0, Lcom/android/server/am/zgw;->Cj:Ljava/util/HashSet;
+    iget-object p0, p0, Lcom/android/server/am/zgw;->Ij:Ljava/util/HashSet;
 
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
@@ -9253,7 +9253,7 @@
 
     invoke-direct {p0}, Ljava/util/ArrayList;-><init>()V
 
-    sget-object v0, Lcom/android/server/am/zgw;->Kk:Ljava/lang/Object;
+    sget-object v0, Lcom/android/server/am/zgw;->Qk:Ljava/lang/Object;
 
     monitor-enter v0
 
@@ -9622,7 +9622,7 @@
 
     if-eqz v0, :cond_a
 
-    sget-boolean v0, Lcom/android/server/am/zgw;->tk:Z
+    sget-boolean v0, Lcom/android/server/am/zgw;->zk:Z
 
     if-nez v0, :cond_0
 
@@ -9647,12 +9647,12 @@
 
     if-nez v2, :cond_2
 
-    iget-object v2, p0, Lcom/android/server/am/zgw;->Ej:Ljava/util/ArrayList;
+    iget-object v2, p0, Lcom/android/server/am/zgw;->Kj:Ljava/util/ArrayList;
 
     monitor-enter v2
 
     :try_start_0
-    iget-object v3, p0, Lcom/android/server/am/zgw;->Ej:Ljava/util/ArrayList;
+    iget-object v3, p0, Lcom/android/server/am/zgw;->Kj:Ljava/util/ArrayList;
 
     invoke-virtual {v3, p2}, Ljava/util/ArrayList;->contains(Ljava/lang/Object;)Z
 
@@ -9783,7 +9783,7 @@
 
     if-eqz v3, :cond_7
 
-    sget-boolean v3, Lcom/android/server/am/zgw;->ck:Z
+    sget-boolean v3, Lcom/android/server/am/zgw;->ik:Z
 
     if-eqz v3, :cond_6
 
@@ -9793,7 +9793,7 @@
 
     if-eqz v3, :cond_6
 
-    iget-object v3, p0, Lcom/android/server/am/zgw;->Hj:Ljava/util/ArrayList;
+    iget-object v3, p0, Lcom/android/server/am/zgw;->Nj:Ljava/util/ArrayList;
 
     iget-object v4, p1, Landroid/content/pm/ActivityInfo;->name:Ljava/lang/String;
 
@@ -9807,7 +9807,7 @@
 
     if-nez p0, :cond_4
 
-    sget-boolean p0, Lcom/android/server/am/zgw;->ek:Z
+    sget-boolean p0, Lcom/android/server/am/zgw;->kk:Z
 
     if-eqz p0, :cond_5
 
@@ -9915,7 +9915,7 @@
 
     invoke-virtual {v2, v1}, Lcom/android/server/am/zgw$sis;->lqr(I)V
 
-    sget-boolean v0, Lcom/android/server/am/zgw;->gk:Z
+    sget-boolean v0, Lcom/android/server/am/zgw;->mk:Z
 
     if-eqz v0, :cond_8
 
@@ -9946,13 +9946,13 @@
 
     invoke-direct {p0, v0}, Lcom/android/server/am/zgw;->wb(Ljava/lang/String;)V
 
-    sget-object p0, Lcom/android/server/am/zgw;->Dk:Ljava/lang/String;
+    sget-object p0, Lcom/android/server/am/zgw;->Jk:Ljava/lang/String;
 
-    sput-object p0, Lcom/android/server/am/zgw;->Ck:Ljava/lang/String;
+    sput-object p0, Lcom/android/server/am/zgw;->Ik:Ljava/lang/String;
 
     iget-object p0, p1, Landroid/content/pm/ActivityInfo;->packageName:Ljava/lang/String;
 
-    sput-object p0, Lcom/android/server/am/zgw;->Dk:Ljava/lang/String;
+    sput-object p0, Lcom/android/server/am/zgw;->Jk:Ljava/lang/String;
 
     invoke-virtual {v2}, Lcom/android/server/am/zgw$sis;->Ya()I
 
@@ -10009,7 +10009,7 @@
 
     if-eqz p0, :cond_4
 
-    sget-boolean p0, Lcom/android/server/am/zgw;->tk:Z
+    sget-boolean p0, Lcom/android/server/am/zgw;->zk:Z
 
     if-nez p0, :cond_0
 
@@ -10096,7 +10096,7 @@
 
     if-eqz p0, :cond_6
 
-    sget-boolean p0, Lcom/android/server/am/zgw;->tk:Z
+    sget-boolean p0, Lcom/android/server/am/zgw;->zk:Z
 
     if-nez p0, :cond_0
 
@@ -10116,7 +10116,7 @@
     return v0
 
     :cond_1
-    sget-boolean v1, Lcom/android/server/am/zgw;->Fk:Z
+    sget-boolean v1, Lcom/android/server/am/zgw;->Lk:Z
 
     if-nez v1, :cond_2
 
@@ -10293,7 +10293,7 @@
 
     if-eqz v0, :cond_5
 
-    sget-boolean v0, Lcom/android/server/am/zgw;->tk:Z
+    sget-boolean v0, Lcom/android/server/am/zgw;->zk:Z
 
     if-nez v0, :cond_0
 
@@ -10332,12 +10332,12 @@
     :cond_2
     if-nez v1, :cond_3
 
-    iget-object v3, p0, Lcom/android/server/am/zgw;->Gj:Ljava/util/HashSet;
+    iget-object v3, p0, Lcom/android/server/am/zgw;->Mj:Ljava/util/HashSet;
 
     monitor-enter v3
 
     :try_start_0
-    iget-object p0, p0, Lcom/android/server/am/zgw;->Gj:Ljava/util/HashSet;
+    iget-object p0, p0, Lcom/android/server/am/zgw;->Mj:Ljava/util/HashSet;
 
     invoke-virtual {p0, v0}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
@@ -10391,7 +10391,7 @@
     goto :goto_1
 
     :cond_4
-    sget-boolean p0, Lcom/android/server/am/zgw;->ek:Z
+    sget-boolean p0, Lcom/android/server/am/zgw;->kk:Z
 
     if-eqz p0, :cond_5
 
@@ -10429,7 +10429,7 @@
 
     if-eqz v0, :cond_e
 
-    sget-boolean v0, Lcom/android/server/am/zgw;->tk:Z
+    sget-boolean v0, Lcom/android/server/am/zgw;->zk:Z
 
     if-nez v0, :cond_0
 
@@ -10671,14 +10671,14 @@
 
     if-eqz v0, :cond_12
 
-    sget-boolean v0, Lcom/android/server/am/zgw;->tk:Z
+    sget-boolean v0, Lcom/android/server/am/zgw;->zk:Z
 
     if-nez v0, :cond_0
 
     goto/16 :goto_4
 
     :cond_0
-    iget-boolean v0, p0, Lcom/android/server/am/zgw;->Bj:Z
+    iget-boolean v0, p0, Lcom/android/server/am/zgw;->Hj:Z
 
     const-string v2, "OnePlusAppBootManager"
 
@@ -10747,7 +10747,7 @@
 
     if-nez p2, :cond_5
 
-    sget-boolean v9, Lcom/android/server/am/zgw;->ck:Z
+    sget-boolean v9, Lcom/android/server/am/zgw;->ik:Z
 
     if-eqz v9, :cond_5
 
@@ -10775,7 +10775,7 @@
 
     if-eq v9, v1, :cond_5
 
-    iget-object v9, p0, Lcom/android/server/am/zgw;->Ij:Ljava/util/ArrayList;
+    iget-object v9, p0, Lcom/android/server/am/zgw;->Oj:Ljava/util/ArrayList;
 
     iget-object v10, p1, Lcom/android/server/am/ContentProviderRecord;->appInfo:Landroid/content/pm/ApplicationInfo;
 
@@ -10920,7 +10920,7 @@
 
     if-nez v9, :cond_a
 
-    iget-object v9, p0, Lcom/android/server/am/zgw;->Jj:Ljava/util/ArrayList;
+    iget-object v9, p0, Lcom/android/server/am/zgw;->Pj:Ljava/util/ArrayList;
 
     invoke-virtual {v9, v0}, Ljava/util/ArrayList;->contains(Ljava/lang/Object;)Z
 
@@ -11045,7 +11045,7 @@
 
     invoke-virtual {v7, v1}, Lcom/android/server/am/zgw$sis;->lqr(I)V
 
-    sget-boolean p2, Lcom/android/server/am/zgw;->gk:Z
+    sget-boolean p2, Lcom/android/server/am/zgw;->mk:Z
 
     if-eqz p2, :cond_f
 
@@ -11087,7 +11087,7 @@
 
     invoke-static {v2, v0}, Landroid/util/Slog;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    sget-boolean v0, Lcom/android/server/am/zgw;->gk:Z
+    sget-boolean v0, Lcom/android/server/am/zgw;->mk:Z
 
     if-eqz v0, :cond_11
 
@@ -11139,7 +11139,7 @@
 
     :cond_11
     :goto_3
-    sget-boolean p0, Lcom/android/server/am/zgw;->ek:Z
+    sget-boolean p0, Lcom/android/server/am/zgw;->kk:Z
 
     if-eqz p0, :cond_12
 
@@ -11175,7 +11175,7 @@
 
     if-eqz p3, :cond_1f
 
-    sget-boolean p3, Lcom/android/server/am/zgw;->tk:Z
+    sget-boolean p3, Lcom/android/server/am/zgw;->zk:Z
 
     if-nez p3, :cond_0
 
@@ -11219,7 +11219,7 @@
 
     if-eqz v5, :cond_9
 
-    iget-object v5, p0, Lcom/android/server/am/zgw;->Pj:Ljava/util/ArrayList;
+    iget-object v5, p0, Lcom/android/server/am/zgw;->Vj:Ljava/util/ArrayList;
 
     iget-object v6, p2, Lcom/android/server/am/BroadcastRecord;->intent:Landroid/content/Intent;
 
@@ -11247,7 +11247,7 @@
 
     invoke-virtual {p3, v0}, Lcom/android/server/am/zgw$sis;->lqr(I)V
 
-    sget-boolean v1, Lcom/android/server/am/zgw;->gk:Z
+    sget-boolean v1, Lcom/android/server/am/zgw;->mk:Z
 
     if-eqz v1, :cond_3
 
@@ -11335,7 +11335,7 @@
     return v0
 
     :cond_5
-    iget-object v5, p0, Lcom/android/server/am/zgw;->Qj:Ljava/util/ArrayList;
+    iget-object v5, p0, Lcom/android/server/am/zgw;->Wj:Ljava/util/ArrayList;
 
     iget-object v10, p2, Lcom/android/server/am/BroadcastRecord;->intent:Landroid/content/Intent;
 
@@ -11357,7 +11357,7 @@
 
     invoke-virtual {p3, v0}, Lcom/android/server/am/zgw$sis;->lqr(I)V
 
-    sget-boolean p3, Lcom/android/server/am/zgw;->gk:Z
+    sget-boolean p3, Lcom/android/server/am/zgw;->mk:Z
 
     if-eqz p3, :cond_7
 
@@ -11618,7 +11618,7 @@
     :cond_15
     invoke-virtual {v5, v1}, Lcom/android/server/am/oxb$zta$zta;->setLevel(I)Lcom/android/server/am/oxb$zta$zta;
 
-    sget-boolean v2, Lcom/android/server/am/zgw;->ck:Z
+    sget-boolean v2, Lcom/android/server/am/zgw;->ik:Z
 
     if-eqz v2, :cond_1c
 
@@ -11648,7 +11648,7 @@
 
     if-eqz v2, :cond_18
 
-    iget-object v8, p0, Lcom/android/server/am/zgw;->Rj:Ljava/util/ArrayList;
+    iget-object v8, p0, Lcom/android/server/am/zgw;->Xj:Ljava/util/ArrayList;
 
     invoke-virtual {v8, v2}, Ljava/util/ArrayList;->contains(Ljava/lang/Object;)Z
 
@@ -11660,7 +11660,7 @@
 
     if-nez p0, :cond_16
 
-    sget-boolean p0, Lcom/android/server/am/zgw;->ek:Z
+    sget-boolean p0, Lcom/android/server/am/zgw;->kk:Z
 
     if-eqz p0, :cond_17
 
@@ -11699,7 +11699,7 @@
 
     if-eqz p1, :cond_1b
 
-    iget-object p0, p0, Lcom/android/server/am/zgw;->Sj:Ljava/util/ArrayList;
+    iget-object p0, p0, Lcom/android/server/am/zgw;->Yj:Ljava/util/ArrayList;
 
     invoke-virtual {p0, p1}, Ljava/util/ArrayList;->contains(Ljava/lang/Object;)Z
 
@@ -11711,7 +11711,7 @@
 
     if-nez p0, :cond_19
 
-    sget-boolean p0, Lcom/android/server/am/zgw;->ek:Z
+    sget-boolean p0, Lcom/android/server/am/zgw;->kk:Z
 
     if-eqz p0, :cond_1a
 
@@ -11782,7 +11782,7 @@
     :cond_1e
     if-eqz v0, :cond_1f
 
-    sget-boolean p1, Lcom/android/server/am/zgw;->gk:Z
+    sget-boolean p1, Lcom/android/server/am/zgw;->mk:Z
 
     if-eqz p1, :cond_1f
 
@@ -11802,7 +11802,7 @@
 .method public canScheduleServiceRestart(Lcom/android/server/am/ProcessRecord;)Z
     .locals 7
 
-    sget-boolean v0, Lcom/android/server/am/zgw;->uk:Z
+    sget-boolean v0, Lcom/android/server/am/zgw;->Ak:Z
 
     const/4 v1, 0x1
 
@@ -11865,7 +11865,7 @@
     return v1
 
     :cond_2
-    iget-object v3, p0, Lcom/android/server/am/zgw;->Lj:Ljava/util/ArrayList;
+    iget-object v3, p0, Lcom/android/server/am/zgw;->Rj:Ljava/util/ArrayList;
 
     invoke-virtual {v3, v2}, Ljava/util/ArrayList;->contains(Ljava/lang/Object;)Z
 
@@ -11882,7 +11882,7 @@
 
     if-nez p0, :cond_5
 
-    sget-boolean p0, Lcom/android/server/am/zgw;->ek:Z
+    sget-boolean p0, Lcom/android/server/am/zgw;->kk:Z
 
     if-eqz p0, :cond_4
 
@@ -11936,7 +11936,7 @@
 
     if-eqz v5, :cond_45
 
-    sget-boolean v5, Lcom/android/server/am/zgw;->tk:Z
+    sget-boolean v5, Lcom/android/server/am/zgw;->zk:Z
 
     if-nez v5, :cond_0
 
@@ -12105,7 +12105,7 @@
     return v0
 
     :cond_8
-    iget-object v1, v0, Lcom/android/server/am/zgw;->Wj:Ljava/util/ArrayList;
+    iget-object v1, v0, Lcom/android/server/am/zgw;->bk:Ljava/util/ArrayList;
 
     invoke-virtual {v1, v5}, Ljava/util/ArrayList;->contains(Ljava/lang/Object;)Z
 
@@ -12129,7 +12129,7 @@
 
     if-ne v1, v4, :cond_11
 
-    sget-object v1, Lcom/android/server/am/zgw;->Lk:Ljava/util/ArrayList;
+    sget-object v1, Lcom/android/server/am/zgw;->Rk:Ljava/util/ArrayList;
 
     invoke-virtual {v11}, Landroid/content/ComponentName;->flattenToShortString()Ljava/lang/String;
 
@@ -12145,7 +12145,7 @@
 
     if-nez v0, :cond_9
 
-    sget-boolean v0, Lcom/android/server/am/zgw;->ek:Z
+    sget-boolean v0, Lcom/android/server/am/zgw;->kk:Z
 
     if-eqz v0, :cond_a
 
@@ -12174,7 +12174,7 @@
     return v0
 
     :cond_b
-    sget-boolean v1, Lcom/android/server/am/zgw;->ck:Z
+    sget-boolean v1, Lcom/android/server/am/zgw;->ik:Z
 
     if-eqz v1, :cond_11
 
@@ -12192,7 +12192,7 @@
 
     if-eqz v1, :cond_e
 
-    iget-object v4, v0, Lcom/android/server/am/zgw;->Nj:Ljava/util/ArrayList;
+    iget-object v4, v0, Lcom/android/server/am/zgw;->Tj:Ljava/util/ArrayList;
 
     invoke-virtual {v4, v1}, Ljava/util/ArrayList;->contains(Ljava/lang/Object;)Z
 
@@ -12204,7 +12204,7 @@
 
     if-nez v0, :cond_c
 
-    sget-boolean v0, Lcom/android/server/am/zgw;->ek:Z
+    sget-boolean v0, Lcom/android/server/am/zgw;->kk:Z
 
     if-eqz v0, :cond_d
 
@@ -12233,7 +12233,7 @@
     :cond_e
     if-eqz v10, :cond_11
 
-    iget-object v1, v0, Lcom/android/server/am/zgw;->Kj:Ljava/util/ArrayList;
+    iget-object v1, v0, Lcom/android/server/am/zgw;->Qj:Ljava/util/ArrayList;
 
     invoke-virtual {v1, v10}, Ljava/util/ArrayList;->contains(Ljava/lang/Object;)Z
 
@@ -12245,7 +12245,7 @@
 
     if-nez v0, :cond_f
 
-    sget-boolean v0, Lcom/android/server/am/zgw;->ek:Z
+    sget-boolean v0, Lcom/android/server/am/zgw;->kk:Z
 
     if-eqz v0, :cond_10
 
@@ -12276,7 +12276,7 @@
 
     invoke-virtual {v8, v1}, Lcom/android/server/am/zgw$sis;->lqr(I)V
 
-    sget-boolean v3, Lcom/android/server/am/zgw;->gk:Z
+    sget-boolean v3, Lcom/android/server/am/zgw;->mk:Z
 
     if-eqz v3, :cond_13
 
@@ -12311,7 +12311,7 @@
 
     if-eqz v3, :cond_14
 
-    iget-boolean v3, v0, Lcom/android/server/am/zgw;->Dj:Z
+    iget-boolean v3, v0, Lcom/android/server/am/zgw;->Jj:Z
 
     if-ne v3, v1, :cond_14
 
@@ -12418,7 +12418,7 @@
     invoke-static {v1}, Lcom/android/server/am/zgw;->myLog(Ljava/lang/String;)V
 
     :cond_18
-    sget-boolean v1, Lcom/android/server/am/zgw;->gk:Z
+    sget-boolean v1, Lcom/android/server/am/zgw;->mk:Z
 
     if-eqz v1, :cond_19
 
@@ -12452,7 +12452,7 @@
 
     if-eqz v10, :cond_1d
 
-    iget-object v15, v0, Lcom/android/server/am/zgw;->Mj:Ljava/util/ArrayList;
+    iget-object v15, v0, Lcom/android/server/am/zgw;->Sj:Ljava/util/ArrayList;
 
     invoke-virtual {v15, v10}, Ljava/util/ArrayList;->contains(Ljava/lang/Object;)Z
 
@@ -12489,7 +12489,7 @@
     invoke-static {v1}, Lcom/android/server/am/zgw;->myLog(Ljava/lang/String;)V
 
     :cond_1b
-    sget-boolean v1, Lcom/android/server/am/zgw;->gk:Z
+    sget-boolean v1, Lcom/android/server/am/zgw;->mk:Z
 
     if-eqz v1, :cond_1c
 
@@ -12817,7 +12817,7 @@
 
     invoke-virtual {v12, v2}, Lcom/android/server/am/oxb$zta$zta;->setLevel(I)Lcom/android/server/am/oxb$zta$zta;
 
-    sget-boolean v2, Lcom/android/server/am/zgw;->ck:Z
+    sget-boolean v2, Lcom/android/server/am/zgw;->ik:Z
 
     if-eqz v2, :cond_34
 
@@ -12850,7 +12850,7 @@
 
     if-eqz v1, :cond_31
 
-    iget-object v2, v0, Lcom/android/server/am/zgw;->Oj:Ljava/util/ArrayList;
+    iget-object v2, v0, Lcom/android/server/am/zgw;->Uj:Ljava/util/ArrayList;
 
     invoke-virtual {v2, v1}, Ljava/util/ArrayList;->contains(Ljava/lang/Object;)Z
 
@@ -12860,7 +12860,7 @@
 
     if-eqz v7, :cond_2e
 
-    sget-object v2, Lcom/android/server/am/zgw;->Dk:Ljava/lang/String;
+    sget-object v2, Lcom/android/server/am/zgw;->Jk:Ljava/lang/String;
 
     invoke-virtual {v7, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -12893,7 +12893,7 @@
     invoke-static {v1}, Lcom/android/server/am/zgw;->myLog(Ljava/lang/String;)V
 
     :cond_2c
-    sget-boolean v1, Lcom/android/server/am/zgw;->gk:Z
+    sget-boolean v1, Lcom/android/server/am/zgw;->mk:Z
 
     if-eqz v1, :cond_2d
 
@@ -12917,7 +12917,7 @@
     return v0
 
     :cond_2e
-    iget-object v2, v0, Lcom/android/server/am/zgw;->Nj:Ljava/util/ArrayList;
+    iget-object v2, v0, Lcom/android/server/am/zgw;->Tj:Ljava/util/ArrayList;
 
     invoke-virtual {v2, v1}, Ljava/util/ArrayList;->contains(Ljava/lang/Object;)Z
 
@@ -12929,7 +12929,7 @@
 
     if-nez v0, :cond_2f
 
-    sget-boolean v0, Lcom/android/server/am/zgw;->ek:Z
+    sget-boolean v0, Lcom/android/server/am/zgw;->kk:Z
 
     if-eqz v0, :cond_30
 
@@ -12958,7 +12958,7 @@
     :cond_31
     if-eqz v10, :cond_34
 
-    iget-object v1, v0, Lcom/android/server/am/zgw;->Kj:Ljava/util/ArrayList;
+    iget-object v1, v0, Lcom/android/server/am/zgw;->Qj:Ljava/util/ArrayList;
 
     invoke-virtual {v1, v10}, Ljava/util/ArrayList;->contains(Ljava/lang/Object;)Z
 
@@ -12970,7 +12970,7 @@
 
     if-nez v0, :cond_32
 
-    sget-boolean v0, Lcom/android/server/am/zgw;->ek:Z
+    sget-boolean v0, Lcom/android/server/am/zgw;->kk:Z
 
     if-eqz v0, :cond_33
 
@@ -13022,7 +13022,7 @@
 
     move/from16 p4, v6
 
-    sget-object v6, Lcom/android/server/am/zgw;->Dk:Ljava/lang/String;
+    sget-object v6, Lcom/android/server/am/zgw;->Jk:Ljava/lang/String;
 
     invoke-virtual {v5, v6}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -13030,7 +13030,7 @@
 
     if-nez v6, :cond_35
 
-    sget-object v6, Lcom/android/server/am/zgw;->Ck:Ljava/lang/String;
+    sget-object v6, Lcom/android/server/am/zgw;->Ik:Ljava/lang/String;
 
     invoke-virtual {v5, v6}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -13125,7 +13125,7 @@
 
     if-eqz v6, :cond_3d
 
-    sget-boolean v5, Lcom/android/server/am/zgw;->ck:Z
+    sget-boolean v5, Lcom/android/server/am/zgw;->ik:Z
 
     if-eqz v5, :cond_3d
 
@@ -13151,7 +13151,7 @@
 
     if-eqz v5, :cond_3a
 
-    iget-object v7, v0, Lcom/android/server/am/zgw;->Nj:Ljava/util/ArrayList;
+    iget-object v7, v0, Lcom/android/server/am/zgw;->Tj:Ljava/util/ArrayList;
 
     invoke-virtual {v7, v5}, Ljava/util/ArrayList;->contains(Ljava/lang/Object;)Z
 
@@ -13163,7 +13163,7 @@
 
     if-nez v0, :cond_38
 
-    sget-boolean v0, Lcom/android/server/am/zgw;->ek:Z
+    sget-boolean v0, Lcom/android/server/am/zgw;->kk:Z
 
     if-eqz v0, :cond_39
 
@@ -13192,7 +13192,7 @@
     :cond_3a
     if-eqz v10, :cond_3d
 
-    iget-object v5, v0, Lcom/android/server/am/zgw;->Kj:Ljava/util/ArrayList;
+    iget-object v5, v0, Lcom/android/server/am/zgw;->Qj:Ljava/util/ArrayList;
 
     invoke-virtual {v5, v10}, Ljava/util/ArrayList;->contains(Ljava/lang/Object;)Z
 
@@ -13204,7 +13204,7 @@
 
     if-nez v0, :cond_3b
 
-    sget-boolean v0, Lcom/android/server/am/zgw;->ek:Z
+    sget-boolean v0, Lcom/android/server/am/zgw;->kk:Z
 
     if-eqz v0, :cond_3c
 
@@ -13288,7 +13288,7 @@
     goto :goto_e
 
     :cond_41
-    sget-boolean v1, Lcom/android/server/am/zgw;->ek:Z
+    sget-boolean v1, Lcom/android/server/am/zgw;->kk:Z
 
     if-eqz v1, :cond_43
 
@@ -13334,7 +13334,7 @@
 
     invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sget-object v3, Lcom/android/server/am/zgw;->Dk:Ljava/lang/String;
+    sget-object v3, Lcom/android/server/am/zgw;->Jk:Ljava/lang/String;
 
     invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -13342,7 +13342,7 @@
 
     invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sget-object v3, Lcom/android/server/am/zgw;->Ck:Ljava/lang/String;
+    sget-object v3, Lcom/android/server/am/zgw;->Ik:Ljava/lang/String;
 
     invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -13356,7 +13356,7 @@
     :goto_f
     if-eqz v6, :cond_44
 
-    sget-boolean v1, Lcom/android/server/am/zgw;->gk:Z
+    sget-boolean v1, Lcom/android/server/am/zgw;->mk:Z
 
     if-eqz v1, :cond_44
 
@@ -13402,7 +13402,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sget-boolean v1, Lcom/android/server/am/zgw;->tk:Z
+    sget-boolean v1, Lcom/android/server/am/zgw;->zk:Z
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -13414,7 +13414,7 @@
 
     invoke-static {v1, v0}, Landroid/util/Slog;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    sget v0, Lcom/android/server/am/zgw;->yk:I
+    sget v0, Lcom/android/server/am/zgw;->Ek:I
 
     and-int/lit8 v1, v0, 0x1
 
@@ -13422,13 +13422,13 @@
 
     or-int/lit8 v0, v0, 0x1
 
-    sput v0, Lcom/android/server/am/zgw;->yk:I
+    sput v0, Lcom/android/server/am/zgw;->Ek:I
 
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    sget v1, Lcom/android/server/am/zgw;->yk:I
+    sget v1, Lcom/android/server/am/zgw;->Ek:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -13445,11 +13445,11 @@
     invoke-static {v1, v0}, Landroid/os/SystemProperties;->set(Ljava/lang/String;Ljava/lang/String;)V
 
     :cond_1
-    sget-boolean v0, Lcom/android/server/am/zgw;->tk:Z
+    sget-boolean v0, Lcom/android/server/am/zgw;->zk:Z
 
     if-eq v0, p1, :cond_2
 
-    sput-boolean p1, Lcom/android/server/am/zgw;->tk:Z
+    sput-boolean p1, Lcom/android/server/am/zgw;->zk:Z
 
     const-wide/16 v0, 0x7d0
 
@@ -13529,7 +13529,7 @@
     return p0
 
     :cond_0
-    sget-boolean p0, Lcom/android/server/am/zgw;->tk:Z
+    sget-boolean p0, Lcom/android/server/am/zgw;->zk:Z
 
     return p0
 .end method
@@ -13553,7 +13553,7 @@
 
     invoke-static {v0}, Lcom/android/server/am/zgw;->myLog(Ljava/lang/String;)V
 
-    iput-boolean p1, p0, Lcom/android/server/am/zgw;->Dj:Z
+    iput-boolean p1, p0, Lcom/android/server/am/zgw;->Jj:Z
 
     return-void
 .end method
@@ -13640,22 +13640,22 @@
 .method public fb()V
     .locals 3
 
-    iget-object v0, p0, Lcom/android/server/am/zgw;->Cj:Ljava/util/HashSet;
+    iget-object v0, p0, Lcom/android/server/am/zgw;->Ij:Ljava/util/HashSet;
 
     monitor-enter v0
 
     :try_start_0
-    iget-object v1, p0, Lcom/android/server/am/zgw;->Cj:Ljava/util/HashSet;
+    iget-object v1, p0, Lcom/android/server/am/zgw;->Ij:Ljava/util/HashSet;
 
     invoke-virtual {v1}, Ljava/util/HashSet;->clear()V
 
-    iget-object v1, p0, Lcom/android/server/am/zgw;->Cj:Ljava/util/HashSet;
+    iget-object v1, p0, Lcom/android/server/am/zgw;->Ij:Ljava/util/HashSet;
 
     const-string v2, "android.net.action.RECOMMEND_NETWORKS"
 
     invoke-virtual {v1, v2}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
-    iget-object p0, p0, Lcom/android/server/am/zgw;->Cj:Ljava/util/HashSet;
+    iget-object p0, p0, Lcom/android/server/am/zgw;->Ij:Ljava/util/HashSet;
 
     const-string v1, "android.intent.action.RESOLVE_INSTANT_APP_PACKAGE"
 
@@ -13818,7 +13818,7 @@
     move v2, v5
 
     :goto_0
-    sput-boolean v2, Lcom/android/server/am/zgw;->tk:Z
+    sput-boolean v2, Lcom/android/server/am/zgw;->zk:Z
 
     const-string v2, "pkg"
 
@@ -14067,7 +14067,7 @@
 
     if-nez v7, :cond_e
 
-    iget-object v7, p0, Lcom/android/server/am/zgw;->Vj:Ljava/util/ArrayList;
+    iget-object v7, p0, Lcom/android/server/am/zgw;->ak:Ljava/util/ArrayList;
 
     invoke-static {v8}, Lcom/android/server/am/zgw$sis;->you(Lcom/android/server/am/zgw$sis;)Ljava/lang/String;
 
@@ -14132,7 +14132,7 @@
 .method public handleAppKilledLocked(Lcom/android/server/am/ProcessRecord;)V
     .locals 4
 
-    sget-boolean v0, Lcom/android/server/am/zgw;->tl:Z
+    sget-boolean v0, Lcom/android/server/am/zgw;->zl:Z
 
     if-nez v0, :cond_0
 
@@ -14383,7 +14383,7 @@
     invoke-static {v6}, Lcom/android/server/am/zgw;->myLog(Ljava/lang/String;)V
 
     :cond_3
-    sget-object v6, Lcom/android/server/am/zgw;->Jk:Ljava/util/HashMap;
+    sget-object v6, Lcom/android/server/am/zgw;->Pk:Ljava/util/HashMap;
 
     new-instance v7, Lcom/android/server/am/zgw$rtg;
 
@@ -14464,15 +14464,15 @@
 
     invoke-direct {p1, v0}, Landroid/os/HandlerThread;-><init>(Ljava/lang/String;)V
 
-    iput-object p1, p0, Lcom/android/server/am/zgw;->Xj:Landroid/os/HandlerThread;
+    iput-object p1, p0, Lcom/android/server/am/zgw;->ck:Landroid/os/HandlerThread;
 
-    iget-object p1, p0, Lcom/android/server/am/zgw;->Xj:Landroid/os/HandlerThread;
+    iget-object p1, p0, Lcom/android/server/am/zgw;->ck:Landroid/os/HandlerThread;
 
     invoke-virtual {p1}, Landroid/os/HandlerThread;->start()V
 
     new-instance p1, Lcom/android/server/am/zgw$you;
 
-    iget-object v0, p0, Lcom/android/server/am/zgw;->Xj:Landroid/os/HandlerThread;
+    iget-object v0, p0, Lcom/android/server/am/zgw;->ck:Landroid/os/HandlerThread;
 
     invoke-virtual {v0}, Landroid/os/HandlerThread;->getLooper()Landroid/os/Looper;
 
@@ -14480,7 +14480,7 @@
 
     invoke-direct {p1, p0, v0}, Lcom/android/server/am/zgw$you;-><init>(Lcom/android/server/am/zgw;Landroid/os/Looper;)V
 
-    iput-object p1, p0, Lcom/android/server/am/zgw;->Yj:Lcom/android/server/am/zgw$you;
+    iput-object p1, p0, Lcom/android/server/am/zgw;->dk:Lcom/android/server/am/zgw$you;
 
     if-eqz p2, :cond_1
 
@@ -14495,7 +14495,7 @@
 
     new-instance p1, Lcom/android/server/am/zgw$ssp;
 
-    iget-object p2, p0, Lcom/android/server/am/zgw;->Yj:Lcom/android/server/am/zgw$you;
+    iget-object p2, p0, Lcom/android/server/am/zgw;->dk:Lcom/android/server/am/zgw$you;
 
     invoke-direct {p1, p0, p2}, Lcom/android/server/am/zgw$ssp;-><init>(Lcom/android/server/am/zgw;Landroid/os/Handler;)V
 
@@ -14527,7 +14527,7 @@
 
     move-result p2
 
-    sput-boolean p2, Lcom/android/server/am/zgw;->gk:Z
+    sput-boolean p2, Lcom/android/server/am/zgw;->mk:Z
 
     iget-object p2, p0, Lcom/android/server/am/zgw;->mResolver:Landroid/content/ContentResolver;
 
@@ -14577,17 +14577,17 @@
 
     if-nez p2, :cond_2
 
-    sget p2, Lcom/android/server/am/zgw;->yk:I
+    sget p2, Lcom/android/server/am/zgw;->Ek:I
 
     and-int/2addr p2, p1
 
     if-nez p2, :cond_2
 
-    sget-boolean p2, Lcom/android/server/am/zgw;->tk:Z
+    sget-boolean p2, Lcom/android/server/am/zgw;->zk:Z
 
-    sput-boolean v3, Lcom/android/server/am/zgw;->tk:Z
+    sput-boolean v3, Lcom/android/server/am/zgw;->zk:Z
 
-    iput-boolean v3, p0, Lcom/android/server/am/zgw;->Bj:Z
+    iput-boolean v3, p0, Lcom/android/server/am/zgw;->Hj:Z
 
     sget-boolean v0, Lcom/android/server/am/zgw;->sDebug:Z
 
@@ -14607,7 +14607,7 @@
 
     invoke-virtual {v0, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sget-boolean p2, Lcom/android/server/am/zgw;->tk:Z
+    sget-boolean p2, Lcom/android/server/am/zgw;->zk:Z
 
     invoke-virtual {v0, p2}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -14641,7 +14641,7 @@
     invoke-direct {p0, p1, p2}, Lcom/android/server/am/zgw;->bud(J)V
 
     :cond_3
-    invoke-direct {p0}, Lcom/android/server/am/zgw;->Xc()V
+    invoke-direct {p0}, Lcom/android/server/am/zgw;->Yc()V
 
     return-void
 .end method
@@ -14653,7 +14653,7 @@
 
     iget-object v1, p0, Lcom/android/server/am/zgw;->mContext:Landroid/content/Context;
 
-    iget-object v2, p0, Lcom/android/server/am/zgw;->Yj:Lcom/android/server/am/zgw$you;
+    iget-object v2, p0, Lcom/android/server/am/zgw;->dk:Lcom/android/server/am/zgw$you;
 
     new-instance v3, Lcom/android/server/am/zgw$zta;
 
@@ -14663,13 +14663,13 @@
 
     invoke-direct {v0, v1, v2, v3, v4}, Lcom/oneplus/config/ConfigObserver;-><init>(Landroid/content/Context;Landroid/os/Handler;Lcom/oneplus/config/ConfigObserver$ConfigUpdater;Ljava/lang/String;)V
 
-    iput-object v0, p0, Lcom/android/server/am/zgw;->Aj:Lcom/oneplus/config/ConfigObserver;
+    iput-object v0, p0, Lcom/android/server/am/zgw;->Gj:Lcom/oneplus/config/ConfigObserver;
 
-    iget-object v0, p0, Lcom/android/server/am/zgw;->Aj:Lcom/oneplus/config/ConfigObserver;
+    iget-object v0, p0, Lcom/android/server/am/zgw;->Gj:Lcom/oneplus/config/ConfigObserver;
 
     invoke-virtual {v0}, Lcom/oneplus/config/ConfigObserver;->register()V
 
-    iget-object p0, p0, Lcom/android/server/am/zgw;->Yj:Lcom/android/server/am/zgw$you;
+    iget-object p0, p0, Lcom/android/server/am/zgw;->dk:Lcom/android/server/am/zgw$you;
 
     const/4 v0, 0x3
 
@@ -14685,7 +14685,7 @@
 .method public isBlackJobClass(Ljava/lang/String;)Z
     .locals 0
 
-    sget-object p0, Lcom/android/server/am/zgw;->Mk:Ljava/util/ArrayList;
+    sget-object p0, Lcom/android/server/am/zgw;->Sk:Ljava/util/ArrayList;
 
     if-eqz p0, :cond_0
 
@@ -14717,11 +14717,11 @@
 .method rtg(Ljava/lang/String;Ljava/lang/String;)I
     .locals 1
 
-    iget-boolean v0, p0, Lcom/android/server/am/zgw;->Uj:Z
+    iget-boolean v0, p0, Lcom/android/server/am/zgw;->_j:Z
 
     if-eqz v0, :cond_1
 
-    iget-object v0, p0, Lcom/android/server/am/zgw;->Tj:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/android/server/am/zgw;->Zj:Ljava/util/HashMap;
 
     invoke-virtual {v0, p1}, Ljava/util/HashMap;->containsKey(Ljava/lang/Object;)Z
 
@@ -14729,7 +14729,7 @@
 
     if-eqz v0, :cond_1
 
-    iget-object p0, p0, Lcom/android/server/am/zgw;->Tj:Ljava/util/HashMap;
+    iget-object p0, p0, Lcom/android/server/am/zgw;->Zj:Ljava/util/HashMap;
 
     invoke-virtual {p0, p1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -14765,7 +14765,7 @@
 
     move-result-object p0
 
-    sput-object p0, Lcom/android/server/am/zgw;->Ak:Ljava/lang/String;
+    sput-object p0, Lcom/android/server/am/zgw;->Gk:Ljava/lang/String;
 
     sget-boolean p0, Lcom/android/server/am/zgw;->sDebug:Z
 
@@ -14779,7 +14779,7 @@
 
     invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sget-object p1, Lcom/android/server/am/zgw;->Ak:Ljava/lang/String;
+    sget-object p1, Lcom/android/server/am/zgw;->Gk:Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -14790,7 +14790,7 @@
     invoke-static {p0}, Lcom/android/server/am/zgw;->myLog(Ljava/lang/String;)V
 
     :cond_0
-    sget-object p0, Lcom/android/server/am/zgw;->Ak:Ljava/lang/String;
+    sget-object p0, Lcom/android/server/am/zgw;->Gk:Ljava/lang/String;
 
     if-eqz p0, :cond_1
 
@@ -14820,7 +14820,7 @@
 
     move-result-object p0
 
-    sput-object p0, Lcom/android/server/am/zgw;->Bk:Ljava/lang/String;
+    sput-object p0, Lcom/android/server/am/zgw;->Hk:Ljava/lang/String;
 
     sget-boolean p0, Lcom/android/server/am/zgw;->sDebug:Z
 
@@ -14843,7 +14843,7 @@
     invoke-static {p0}, Lcom/android/server/am/zgw;->myLog(Ljava/lang/String;)V
 
     :cond_1
-    sget-object p0, Lcom/android/server/am/zgw;->Bk:Ljava/lang/String;
+    sget-object p0, Lcom/android/server/am/zgw;->Hk:Ljava/lang/String;
 
     if-eqz p0, :cond_2
 
@@ -14870,12 +14870,12 @@
         }
     .end annotation
 
-    iget-object v0, p0, Lcom/android/server/am/zgw;->Cj:Ljava/util/HashSet;
+    iget-object v0, p0, Lcom/android/server/am/zgw;->Ij:Ljava/util/HashSet;
 
     monitor-enter v0
 
     :try_start_0
-    iget-object v1, p0, Lcom/android/server/am/zgw;->Cj:Ljava/util/HashSet;
+    iget-object v1, p0, Lcom/android/server/am/zgw;->Ij:Ljava/util/HashSet;
 
     invoke-virtual {v1}, Ljava/util/HashSet;->clear()V
 
@@ -14890,7 +14890,7 @@
 
     if-ge v1, v2, :cond_0
 
-    iget-object v2, p0, Lcom/android/server/am/zgw;->Cj:Ljava/util/HashSet;
+    iget-object v2, p0, Lcom/android/server/am/zgw;->Ij:Ljava/util/HashSet;
 
     invoke-interface {p1, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -14987,7 +14987,7 @@
 
     if-eqz p3, :cond_3
 
-    iget-object p4, p0, Lcom/android/server/am/zgw;->Rj:Ljava/util/ArrayList;
+    iget-object p4, p0, Lcom/android/server/am/zgw;->Xj:Ljava/util/ArrayList;
 
     invoke-virtual {p4, p3}, Ljava/util/ArrayList;->contains(Ljava/lang/Object;)Z
 
@@ -15034,7 +15034,7 @@
     return v0
 
     :cond_3
-    iget-object p0, p0, Lcom/android/server/am/zgw;->Tj:Ljava/util/HashMap;
+    iget-object p0, p0, Lcom/android/server/am/zgw;->Zj:Ljava/util/HashMap;
 
     invoke-virtual {p0, p2}, Ljava/util/HashMap;->containsKey(Ljava/lang/Object;)Z
 
@@ -15133,12 +15133,12 @@
     :cond_2
     const/4 v0, 0x0
 
-    sget-object v1, Lcom/android/server/am/zgw;->Ik:Ljava/util/HashMap;
+    sget-object v1, Lcom/android/server/am/zgw;->Ok:Ljava/util/HashMap;
 
     monitor-enter v1
 
     :try_start_0
-    sget-object v2, Lcom/android/server/am/zgw;->Ik:Ljava/util/HashMap;
+    sget-object v2, Lcom/android/server/am/zgw;->Ok:Ljava/util/HashMap;
 
     invoke-virtual {v2, p3}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -15152,7 +15152,7 @@
 
     invoke-direct {v2}, Ljava/util/HashSet;-><init>()V
 
-    sget-object v3, Lcom/android/server/am/zgw;->Ik:Ljava/util/HashMap;
+    sget-object v3, Lcom/android/server/am/zgw;->Ok:Ljava/util/HashMap;
 
     invoke-virtual {v3, p3, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -15271,7 +15271,7 @@
 .method tsu(Ljava/lang/String;Ljava/lang/String;)V
     .locals 2
 
-    iget-object v0, p0, Lcom/android/server/am/zgw;->Tj:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/android/server/am/zgw;->Zj:Ljava/util/HashMap;
 
     invoke-virtual {v0, p1}, Ljava/util/HashMap;->containsKey(Ljava/lang/Object;)Z
 
@@ -15279,7 +15279,7 @@
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/android/server/am/zgw;->Tj:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/android/server/am/zgw;->Zj:Ljava/util/HashMap;
 
     invoke-virtual {v0, p1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -15297,7 +15297,7 @@
     :goto_0
     invoke-virtual {v0, p2}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
-    iget-object p2, p0, Lcom/android/server/am/zgw;->Tj:Ljava/util/HashMap;
+    iget-object p2, p0, Lcom/android/server/am/zgw;->Zj:Ljava/util/HashMap;
 
     invoke-virtual {p2, p1, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -15305,7 +15305,7 @@
 
     if-eqz p1, :cond_2
 
-    iget-object p0, p0, Lcom/android/server/am/zgw;->Tj:Ljava/util/HashMap;
+    iget-object p0, p0, Lcom/android/server/am/zgw;->Zj:Ljava/util/HashMap;
 
     invoke-virtual {p0}, Ljava/util/HashMap;->entrySet()Ljava/util/Set;
 
@@ -15411,7 +15411,7 @@
 
     if-eqz v0, :cond_3
 
-    sget-boolean v0, Lcom/android/server/am/zgw;->tk:Z
+    sget-boolean v0, Lcom/android/server/am/zgw;->zk:Z
 
     if-nez v0, :cond_0
 
@@ -15489,7 +15489,7 @@
 
     move-result-object v0
 
-    sget-object v1, Lcom/android/server/am/zgw;->Bk:Ljava/lang/String;
+    sget-object v1, Lcom/android/server/am/zgw;->Hk:Ljava/lang/String;
 
     const-string v2, "# updateAppStopInfo # go pkgName="
 
@@ -15527,7 +15527,7 @@
     return-void
 
     :cond_2
-    iget-object v1, p0, Lcom/android/server/am/zgw;->yj:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/server/am/zgw;->Ej:Ljava/lang/String;
 
     if-eqz v1, :cond_4
 
@@ -15563,7 +15563,7 @@
     return-void
 
     :cond_4
-    iget-object v1, p0, Lcom/android/server/am/zgw;->zj:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/server/am/zgw;->Fj:Ljava/lang/String;
 
     if-eqz v1, :cond_6
 
@@ -15908,21 +15908,21 @@
     invoke-static {v1, v0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_0
-    iget-object v0, p0, Lcom/android/server/am/zgw;->Fj:Ljava/util/HashSet;
+    iget-object v0, p0, Lcom/android/server/am/zgw;->Lj:Ljava/util/HashSet;
 
     monitor-enter v0
 
     if-eqz p2, :cond_1
 
     :try_start_0
-    iget-object p0, p0, Lcom/android/server/am/zgw;->Fj:Ljava/util/HashSet;
+    iget-object p0, p0, Lcom/android/server/am/zgw;->Lj:Ljava/util/HashSet;
 
     invoke-virtual {p0, p1}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
     goto :goto_0
 
     :cond_1
-    iget-object p2, p0, Lcom/android/server/am/zgw;->Fj:Ljava/util/HashSet;
+    iget-object p2, p0, Lcom/android/server/am/zgw;->Lj:Ljava/util/HashSet;
 
     invoke-virtual {p2, p1}, Ljava/util/HashSet;->contains(Ljava/lang/Object;)Z
 
@@ -15930,7 +15930,7 @@
 
     if-eqz p2, :cond_2
 
-    iget-object p0, p0, Lcom/android/server/am/zgw;->Fj:Ljava/util/HashSet;
+    iget-object p0, p0, Lcom/android/server/am/zgw;->Lj:Ljava/util/HashSet;
 
     invoke-virtual {p0, p1}, Ljava/util/HashSet;->remove(Ljava/lang/Object;)Z
 
@@ -15961,21 +15961,21 @@
         }
     .end annotation
 
-    iget-object v0, p0, Lcom/android/server/am/zgw;->Fj:Ljava/util/HashSet;
+    iget-object v0, p0, Lcom/android/server/am/zgw;->Lj:Ljava/util/HashSet;
 
     monitor-enter v0
 
     if-nez p1, :cond_0
 
     :try_start_0
-    iget-object p0, p0, Lcom/android/server/am/zgw;->Fj:Ljava/util/HashSet;
+    iget-object p0, p0, Lcom/android/server/am/zgw;->Lj:Ljava/util/HashSet;
 
     invoke-virtual {p0}, Ljava/util/HashSet;->clear()V
 
     goto :goto_0
 
     :cond_0
-    iput-object p1, p0, Lcom/android/server/am/zgw;->Fj:Ljava/util/HashSet;
+    iput-object p1, p0, Lcom/android/server/am/zgw;->Lj:Ljava/util/HashSet;
 
     :goto_0
     monitor-exit v0
@@ -16025,7 +16025,7 @@
     :cond_1
     invoke-virtual {v0, p2}, Lcom/android/server/am/zgw$sis;->setAction(I)V
 
-    sget-object v2, Lcom/android/server/am/zgw;->Hk:Ljava/util/HashMap;
+    sget-object v2, Lcom/android/server/am/zgw;->Nk:Ljava/util/HashMap;
 
     invoke-virtual {v2, p1}, Ljava/util/HashMap;->containsKey(Ljava/lang/Object;)Z
 
@@ -16033,7 +16033,7 @@
 
     if-eqz v2, :cond_2
 
-    sget-object v2, Lcom/android/server/am/zgw;->Hk:Ljava/util/HashMap;
+    sget-object v2, Lcom/android/server/am/zgw;->Nk:Ljava/util/HashMap;
 
     invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -16154,7 +16154,7 @@
 
     const-string v2, "switch"
 
-    sget-boolean v3, Lcom/android/server/am/zgw;->tk:Z
+    sget-boolean v3, Lcom/android/server/am/zgw;->zk:Z
 
     if-eqz v3, :cond_1
 
@@ -16339,7 +16339,7 @@
 
     invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sget-object v6, Lcom/android/server/am/zgw;->Hk:Ljava/util/HashMap;
+    sget-object v6, Lcom/android/server/am/zgw;->Nk:Ljava/util/HashMap;
 
     invoke-virtual {v2}, Lcom/android/server/am/zgw$sis;->Za()Ljava/lang/String;
 
@@ -16351,7 +16351,7 @@
 
     if-eqz v6, :cond_4
 
-    sget-object v6, Lcom/android/server/am/zgw;->Hk:Ljava/util/HashMap;
+    sget-object v6, Lcom/android/server/am/zgw;->Nk:Ljava/util/HashMap;
 
     invoke-virtual {v2}, Lcom/android/server/am/zgw$sis;->Za()Ljava/lang/String;
 
@@ -16745,11 +16745,11 @@
     goto :goto_0
 
     :cond_4
-    invoke-direct {p0}, Lcom/android/server/am/zgw;->om()V
+    invoke-direct {p0}, Lcom/android/server/am/zgw;->rm()V
 
     invoke-virtual {p0}, Lcom/android/server/am/zgw;->gb()I
 
-    iget-object p1, p0, Lcom/android/server/am/zgw;->Vj:Ljava/util/ArrayList;
+    iget-object p1, p0, Lcom/android/server/am/zgw;->ak:Ljava/util/ArrayList;
 
     invoke-virtual {p1}, Ljava/util/ArrayList;->size()I
 
@@ -16757,7 +16757,7 @@
 
     if-lez p1, :cond_5
 
-    iget-object p1, p0, Lcom/android/server/am/zgw;->Vj:Ljava/util/ArrayList;
+    iget-object p1, p0, Lcom/android/server/am/zgw;->ak:Ljava/util/ArrayList;
 
     invoke-virtual {p1}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
@@ -16813,7 +16813,7 @@
     goto :goto_1
 
     :cond_5
-    invoke-direct {p0}, Lcom/android/server/am/zgw;->qm()V
+    invoke-direct {p0}, Lcom/android/server/am/zgw;->tm()V
 
     return-void
 .end method

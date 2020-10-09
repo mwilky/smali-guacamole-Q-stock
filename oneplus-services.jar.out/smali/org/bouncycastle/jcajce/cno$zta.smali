@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field private final oEa:Ljava/security/cert/CertSelector;
+.field private final zEa:Ljava/security/cert/CertSelector;
 
 
 # direct methods
@@ -30,7 +30,7 @@
 
     check-cast p1, Ljava/security/cert/CertSelector;
 
-    iput-object p1, p0, Lorg/bouncycastle/jcajce/cno$zta;->oEa:Ljava/security/cert/CertSelector;
+    iput-object p1, p0, Lorg/bouncycastle/jcajce/cno$zta;->zEa:Ljava/security/cert/CertSelector;
 
     return-void
 .end method
@@ -51,7 +51,7 @@
 
     new-instance v0, Lorg/bouncycastle/jcajce/cno;
 
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/cno$zta;->oEa:Ljava/security/cert/CertSelector;
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/cno$zta;->zEa:Ljava/security/cert/CertSelector;
 
     const/4 v1, 0x0
 

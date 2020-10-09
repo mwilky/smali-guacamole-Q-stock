@@ -6,7 +6,7 @@
 # static fields
 .field static final P:[I
 
-.field private static final PHa:I = 0x1ff
+.field private static final _Ha:I = 0x1ff
 
 
 # direct methods

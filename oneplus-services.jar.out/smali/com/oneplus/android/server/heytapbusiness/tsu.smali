@@ -9,23 +9,25 @@
 # static fields
 .field private static final TAG:Ljava/lang/String; = "OpSystemConfig"
 
-.field private static final cfa:Ljava/lang/String; = "oneplus-config"
+.field private static final nfa:Ljava/lang/String; = "oneplus-config"
 
-.field private static final dfa:Ljava/lang/String; = "locale"
+.field private static final ofa:Ljava/lang/String; = "locale"
 
-.field private static final efa:Ljava/lang/String; = "app-info-customization"
+.field private static final pfa:Ljava/lang/String; = "app-info-customization"
 
-.field private static final ffa:Ljava/lang/String; = "label"
+.field private static final qfa:Ljava/lang/String; = "label"
 
-.field private static final gfa:Ljava/lang/String; = "icon"
+.field private static final rfa:Ljava/lang/String; = "icon"
 
-.field private static final hfa:Ljava/lang/String; = "remove-launcher-category"
+.field private static sInstance:Lcom/oneplus/android/server/heytapbusiness/tsu; = null
 
-.field private static sInstance:Lcom/oneplus/android/server/heytapbusiness/tsu;
+.field private static final sfa:Ljava/lang/String; = "remove-launcher-category"
 
 
 # instance fields
-.field private bfa:Landroid/util/ArrayMap;
+.field private mLocale:Ljava/lang/String;
+
+.field private mfa:Landroid/util/ArrayMap;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Landroid/util/ArrayMap<",
@@ -36,8 +38,6 @@
         }
     .end annotation
 .end field
-
-.field private mLocale:Ljava/lang/String;
 
 
 # direct methods
@@ -50,7 +50,7 @@
 
     invoke-direct {v0}, Landroid/util/ArrayMap;-><init>()V
 
-    iput-object v0, p0, Lcom/oneplus/android/server/heytapbusiness/tsu;->bfa:Landroid/util/ArrayMap;
+    iput-object v0, p0, Lcom/oneplus/android/server/heytapbusiness/tsu;->mfa:Landroid/util/ArrayMap;
 
     iput-object p1, p0, Lcom/oneplus/android/server/heytapbusiness/tsu;->mLocale:Ljava/lang/String;
 
@@ -92,7 +92,7 @@
 
     if-eqz p1, :cond_2
 
-    iget-object p0, p0, Lcom/oneplus/android/server/heytapbusiness/tsu;->bfa:Landroid/util/ArrayMap;
+    iget-object p0, p0, Lcom/oneplus/android/server/heytapbusiness/tsu;->mfa:Landroid/util/ArrayMap;
 
     invoke-virtual {p0}, Landroid/util/ArrayMap;->entrySet()Ljava/util/Set;
 
@@ -250,12 +250,12 @@
     return-void
 
     :cond_0
-    iget-object v1, p0, Lcom/oneplus/android/server/heytapbusiness/tsu;->bfa:Landroid/util/ArrayMap;
+    iget-object v1, p0, Lcom/oneplus/android/server/heytapbusiness/tsu;->mfa:Landroid/util/ArrayMap;
 
     monitor-enter v1
 
     :try_start_0
-    iget-object v2, p0, Lcom/oneplus/android/server/heytapbusiness/tsu;->bfa:Landroid/util/ArrayMap;
+    iget-object v2, p0, Lcom/oneplus/android/server/heytapbusiness/tsu;->mfa:Landroid/util/ArrayMap;
 
     invoke-virtual {v2, v0}, Landroid/util/ArrayMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -303,12 +303,12 @@
     goto :goto_0
 
     :cond_3
-    iget-object p1, p0, Lcom/oneplus/android/server/heytapbusiness/tsu;->bfa:Landroid/util/ArrayMap;
+    iget-object p1, p0, Lcom/oneplus/android/server/heytapbusiness/tsu;->mfa:Landroid/util/ArrayMap;
 
     monitor-enter p1
 
     :try_start_1
-    iget-object p0, p0, Lcom/oneplus/android/server/heytapbusiness/tsu;->bfa:Landroid/util/ArrayMap;
+    iget-object p0, p0, Lcom/oneplus/android/server/heytapbusiness/tsu;->mfa:Landroid/util/ArrayMap;
 
     invoke-virtual {p0, v0, v2}, Landroid/util/ArrayMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -1002,7 +1002,7 @@
 .method public dump(Ljava/io/PrintWriter;)V
     .locals 5
 
-    iget-object v0, p0, Lcom/oneplus/android/server/heytapbusiness/tsu;->bfa:Landroid/util/ArrayMap;
+    iget-object v0, p0, Lcom/oneplus/android/server/heytapbusiness/tsu;->mfa:Landroid/util/ArrayMap;
 
     monitor-enter v0
 
@@ -1011,7 +1011,7 @@
 
     invoke-virtual {p1, v1}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
-    iget-object p0, p0, Lcom/oneplus/android/server/heytapbusiness/tsu;->bfa:Landroid/util/ArrayMap;
+    iget-object p0, p0, Lcom/oneplus/android/server/heytapbusiness/tsu;->mfa:Landroid/util/ArrayMap;
 
     invoke-virtual {p0}, Landroid/util/ArrayMap;->entrySet()Ljava/util/Set;
 
@@ -1150,7 +1150,7 @@
         }
     .end annotation
 
-    iget-object v0, p0, Lcom/oneplus/android/server/heytapbusiness/tsu;->bfa:Landroid/util/ArrayMap;
+    iget-object v0, p0, Lcom/oneplus/android/server/heytapbusiness/tsu;->mfa:Landroid/util/ArrayMap;
 
     iget-object v1, p0, Lcom/oneplus/android/server/heytapbusiness/tsu;->mLocale:Ljava/lang/String;
 
@@ -1191,7 +1191,7 @@
 
     move-result v0
 
-    iget-object p0, p0, Lcom/oneplus/android/server/heytapbusiness/tsu;->bfa:Landroid/util/ArrayMap;
+    iget-object p0, p0, Lcom/oneplus/android/server/heytapbusiness/tsu;->mfa:Landroid/util/ArrayMap;
 
     if-eqz v0, :cond_1
 

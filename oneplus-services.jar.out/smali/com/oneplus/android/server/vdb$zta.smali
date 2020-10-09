@@ -18,11 +18,11 @@
 
 
 # instance fields
+.field private final JY:Ljava/lang/String;
+
 .field private final mToken:Landroid/os/IBinder;
 
 .field final synthetic this$0:Lcom/oneplus/android/server/vdb;
-
-.field private final yY:Ljava/lang/String;
 
 
 # direct methods
@@ -33,7 +33,7 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p2, p0, Lcom/oneplus/android/server/vdb$zta;->yY:Ljava/lang/String;
+    iput-object p2, p0, Lcom/oneplus/android/server/vdb$zta;->JY:Ljava/lang/String;
 
     iput-object p3, p0, Lcom/oneplus/android/server/vdb$zta;->mToken:Landroid/os/IBinder;
 
@@ -65,7 +65,7 @@
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    iget-object v1, p0, Lcom/oneplus/android/server/vdb$zta;->yY:Ljava/lang/String;
+    iget-object v1, p0, Lcom/oneplus/android/server/vdb$zta;->JY:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -102,7 +102,7 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/oneplus/android/server/vdb$zta;->yY:Ljava/lang/String;
+    iget-object v2, p0, Lcom/oneplus/android/server/vdb$zta;->JY:Ljava/lang/String;
 
     invoke-interface {v1, v2}, Ljava/util/List;->contains(Ljava/lang/Object;)Z
 
@@ -116,7 +116,7 @@
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    iget-object v3, p0, Lcom/oneplus/android/server/vdb$zta;->yY:Ljava/lang/String;
+    iget-object v3, p0, Lcom/oneplus/android/server/vdb$zta;->JY:Ljava/lang/String;
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -134,7 +134,7 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/oneplus/android/server/vdb$zta;->yY:Ljava/lang/String;
+    iget-object v2, p0, Lcom/oneplus/android/server/vdb$zta;->JY:Ljava/lang/String;
 
     invoke-interface {v1, v2}, Ljava/util/List;->remove(Ljava/lang/Object;)Z
 
@@ -161,7 +161,7 @@
 
     iget-object v1, p0, Lcom/oneplus/android/server/vdb$zta;->this$0:Lcom/oneplus/android/server/vdb;
 
-    iget-object p0, p0, Lcom/oneplus/android/server/vdb$zta;->yY:Ljava/lang/String;
+    iget-object p0, p0, Lcom/oneplus/android/server/vdb$zta;->JY:Ljava/lang/String;
 
     const/4 v2, 0x0
 

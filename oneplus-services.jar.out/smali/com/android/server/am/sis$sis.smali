@@ -34,7 +34,7 @@
 .method public onChange(Z)V
     .locals 0
 
-    sget-boolean p1, Lcom/android/server/am/ire;->jm:Z
+    sget-boolean p1, Lcom/android/server/am/ire;->pm:Z
 
     if-nez p1, :cond_0
 

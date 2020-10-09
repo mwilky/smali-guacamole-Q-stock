@@ -1,4 +1,4 @@
-.class Lcom/android/server/wm/cgv$you;
+.class Lcom/android/server/pm/tsu$zta;
 .super Ljava/lang/Object;
 .source ""
 
@@ -8,24 +8,24 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/server/wm/cgv;
+    value = Lcom/android/server/pm/tsu;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
     accessFlags = 0x0
-    name = "you"
+    name = "zta"
 .end annotation
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/server/wm/cgv;
+.field final synthetic this$0:Lcom/android/server/pm/tsu;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/server/wm/cgv;)V
+.method constructor <init>(Lcom/android/server/pm/tsu;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/android/server/wm/cgv$you;->this$0:Lcom/android/server/wm/cgv;
+    iput-object p1, p0, Lcom/android/server/pm/tsu$zta;->this$0:Lcom/android/server/pm/tsu;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -37,9 +37,9 @@
 .method public updateConfig(Lorg/json/JSONArray;)V
     .locals 0
 
-    iget-object p0, p0, Lcom/android/server/wm/cgv$you;->this$0:Lcom/android/server/wm/cgv;
+    iget-object p0, p0, Lcom/android/server/pm/tsu$zta;->this$0:Lcom/android/server/pm/tsu;
 
-    invoke-static {p0, p1}, Lcom/android/server/wm/cgv;->zta(Lcom/android/server/wm/cgv;Lorg/json/JSONArray;)V
+    invoke-static {p0, p1}, Lcom/android/server/pm/tsu;->zta(Lcom/android/server/pm/tsu;Lorg/json/JSONArray;)V
 
     return-void
 .end method

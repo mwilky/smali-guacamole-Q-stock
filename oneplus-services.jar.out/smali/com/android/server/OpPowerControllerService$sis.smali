@@ -19,9 +19,9 @@
 
 .field public mUid:I
 
-.field public sf:Z
-
 .field final synthetic this$0:Lcom/android/server/OpPowerControllerService;
+
+.field public yf:Z
 
 
 # direct methods
@@ -34,7 +34,7 @@
 
     const/4 p1, 0x0
 
-    iput-boolean p1, p0, Lcom/android/server/OpPowerControllerService$sis;->sf:Z
+    iput-boolean p1, p0, Lcom/android/server/OpPowerControllerService$sis;->yf:Z
 
     iput-object p2, p0, Lcom/android/server/OpPowerControllerService$sis;->mPkg:Ljava/lang/String;
 
@@ -70,7 +70,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean p0, p0, Lcom/android/server/OpPowerControllerService$sis;->sf:Z
+    iget-boolean p0, p0, Lcom/android/server/OpPowerControllerService$sis;->yf:Z
 
     invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 

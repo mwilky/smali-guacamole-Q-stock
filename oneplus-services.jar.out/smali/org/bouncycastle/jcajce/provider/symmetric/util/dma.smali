@@ -7,6 +7,8 @@
 
 
 # instance fields
+.field private Fra:Z
+
 .field private digest:I
 
 .field private ivSize:I
@@ -15,8 +17,6 @@
 
 .field private scheme:I
 
-.field private ura:Z
-
 
 # direct methods
 .method public constructor <init>(Ljava/lang/String;Lorg/bouncycastle/asn1/bvj;ZIIII)V
@@ -24,7 +24,7 @@
 
     invoke-direct {p0, p1, p2}, Lorg/bouncycastle/jcajce/provider/symmetric/util/ssp;-><init>(Ljava/lang/String;Lorg/bouncycastle/asn1/bvj;)V
 
-    iput-boolean p3, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/dma;->ura:Z
+    iput-boolean p3, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/dma;->Fra:Z
 
     iput p4, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/dma;->scheme:I
 
@@ -63,9 +63,9 @@
 
     new-instance p1, Lorg/bouncycastle/jcajce/provider/symmetric/util/BCPBEKey;
 
-    iget-object v2, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/ssp;->ora:Ljava/lang/String;
+    iget-object v2, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/ssp;->zra:Ljava/lang/String;
 
-    iget-object v3, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/ssp;->tra:Lorg/bouncycastle/asn1/bvj;
+    iget-object v3, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/ssp;->Era:Lorg/bouncycastle/asn1/bvj;
 
     iget v4, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/dma;->scheme:I
 
@@ -84,7 +84,7 @@
     return-object p1
 
     :cond_0
-    iget-boolean p1, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/dma;->ura:Z
+    iget-boolean p1, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/dma;->Fra:Z
 
     if-eqz p1, :cond_1
 
@@ -118,9 +118,9 @@
 
     new-instance p1, Lorg/bouncycastle/jcajce/provider/symmetric/util/BCPBEKey;
 
-    iget-object v2, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/ssp;->ora:Ljava/lang/String;
+    iget-object v2, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/ssp;->zra:Ljava/lang/String;
 
-    iget-object v3, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/ssp;->tra:Lorg/bouncycastle/asn1/bvj;
+    iget-object v3, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/ssp;->Era:Lorg/bouncycastle/asn1/bvj;
 
     iget v4, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/dma;->scheme:I
 

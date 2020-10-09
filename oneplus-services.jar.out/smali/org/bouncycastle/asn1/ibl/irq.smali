@@ -4,7 +4,7 @@
 
 
 # static fields
-.field private static nra:Lorg/bouncycastle/asn1/ibl/qeg;
+.field private static yra:Lorg/bouncycastle/asn1/ibl/qeg;
 
 
 # instance fields
@@ -19,7 +19,7 @@
 
     invoke-direct {v0}, Lorg/bouncycastle/asn1/ibl/qeg;-><init>()V
 
-    sput-object v0, Lorg/bouncycastle/asn1/ibl/irq;->nra:Lorg/bouncycastle/asn1/ibl/qeg;
+    sput-object v0, Lorg/bouncycastle/asn1/ibl/irq;->yra:Lorg/bouncycastle/asn1/ibl/qeg;
 
     return-void
 .end method
@@ -101,7 +101,7 @@
 .method public toASN1Primitive()Lorg/bouncycastle/asn1/vdb;
     .locals 2
 
-    sget-object v0, Lorg/bouncycastle/asn1/ibl/irq;->nra:Lorg/bouncycastle/asn1/ibl/qeg;
+    sget-object v0, Lorg/bouncycastle/asn1/ibl/irq;->yra:Lorg/bouncycastle/asn1/ibl/qeg;
 
     iget-object v1, p0, Lorg/bouncycastle/asn1/ibl/irq;->f:Lyou/zta/sis/zta/cno;
 
@@ -109,7 +109,7 @@
 
     move-result v0
 
-    sget-object v1, Lorg/bouncycastle/asn1/ibl/irq;->nra:Lorg/bouncycastle/asn1/ibl/qeg;
+    sget-object v1, Lorg/bouncycastle/asn1/ibl/irq;->yra:Lorg/bouncycastle/asn1/ibl/qeg;
 
     iget-object p0, p0, Lorg/bouncycastle/asn1/ibl/irq;->f:Lyou/zta/sis/zta/cno;
 

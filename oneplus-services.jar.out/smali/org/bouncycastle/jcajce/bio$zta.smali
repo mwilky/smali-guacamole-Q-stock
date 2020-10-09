@@ -15,9 +15,11 @@
 
 
 # instance fields
-.field private iqa:I
+.field private final AEa:Lorg/bouncycastle/jcajce/wtn;
 
-.field private jqa:Ljava/util/Set;
+.field private tqa:I
+
+.field private uqa:Ljava/util/Set;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Set<",
@@ -26,8 +28,6 @@
         }
     .end annotation
 .end field
-
-.field private final pEa:Lorg/bouncycastle/jcajce/wtn;
 
 
 # direct methods
@@ -38,13 +38,13 @@
 
     const/4 v0, 0x5
 
-    iput v0, p0, Lorg/bouncycastle/jcajce/bio$zta;->iqa:I
+    iput v0, p0, Lorg/bouncycastle/jcajce/bio$zta;->tqa:I
 
     new-instance v0, Ljava/util/HashSet;
 
     invoke-direct {v0}, Ljava/util/HashSet;-><init>()V
 
-    iput-object v0, p0, Lorg/bouncycastle/jcajce/bio$zta;->jqa:Ljava/util/Set;
+    iput-object v0, p0, Lorg/bouncycastle/jcajce/bio$zta;->uqa:Ljava/util/Set;
 
     new-instance v0, Lorg/bouncycastle/jcajce/wtn$zta;
 
@@ -54,13 +54,13 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lorg/bouncycastle/jcajce/bio$zta;->pEa:Lorg/bouncycastle/jcajce/wtn;
+    iput-object v0, p0, Lorg/bouncycastle/jcajce/bio$zta;->AEa:Lorg/bouncycastle/jcajce/wtn;
 
     invoke-virtual {p1}, Ljava/security/cert/PKIXBuilderParameters;->getMaxPathLength()I
 
     move-result p1
 
-    iput p1, p0, Lorg/bouncycastle/jcajce/bio$zta;->iqa:I
+    iput p1, p0, Lorg/bouncycastle/jcajce/bio$zta;->tqa:I
 
     return-void
 .end method
@@ -72,15 +72,15 @@
 
     const/4 v0, 0x5
 
-    iput v0, p0, Lorg/bouncycastle/jcajce/bio$zta;->iqa:I
+    iput v0, p0, Lorg/bouncycastle/jcajce/bio$zta;->tqa:I
 
     new-instance v0, Ljava/util/HashSet;
 
     invoke-direct {v0}, Ljava/util/HashSet;-><init>()V
 
-    iput-object v0, p0, Lorg/bouncycastle/jcajce/bio$zta;->jqa:Ljava/util/Set;
+    iput-object v0, p0, Lorg/bouncycastle/jcajce/bio$zta;->uqa:Ljava/util/Set;
 
-    iput-object p1, p0, Lorg/bouncycastle/jcajce/bio$zta;->pEa:Lorg/bouncycastle/jcajce/wtn;
+    iput-object p1, p0, Lorg/bouncycastle/jcajce/bio$zta;->AEa:Lorg/bouncycastle/jcajce/wtn;
 
     return-void
 .end method
@@ -88,7 +88,7 @@
 .method static synthetic sis(Lorg/bouncycastle/jcajce/bio$zta;)I
     .locals 0
 
-    iget p0, p0, Lorg/bouncycastle/jcajce/bio$zta;->iqa:I
+    iget p0, p0, Lorg/bouncycastle/jcajce/bio$zta;->tqa:I
 
     return p0
 .end method
@@ -96,7 +96,7 @@
 .method static synthetic you(Lorg/bouncycastle/jcajce/bio$zta;)Ljava/util/Set;
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/bio$zta;->jqa:Ljava/util/Set;
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/bio$zta;->uqa:Ljava/util/Set;
 
     return-object p0
 .end method
@@ -104,7 +104,7 @@
 .method static synthetic zta(Lorg/bouncycastle/jcajce/bio$zta;)Lorg/bouncycastle/jcajce/wtn;
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/bio$zta;->pEa:Lorg/bouncycastle/jcajce/wtn;
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/bio$zta;->AEa:Lorg/bouncycastle/jcajce/wtn;
 
     return-object p0
 .end method
@@ -130,7 +130,7 @@
 
     if-lt p1, v0, :cond_0
 
-    iput p1, p0, Lorg/bouncycastle/jcajce/bio$zta;->iqa:I
+    iput p1, p0, Lorg/bouncycastle/jcajce/bio$zta;->tqa:I
 
     return-object p0
 
@@ -156,7 +156,7 @@
         }
     .end annotation
 
-    iget-object v0, p0, Lorg/bouncycastle/jcajce/bio$zta;->jqa:Ljava/util/Set;
+    iget-object v0, p0, Lorg/bouncycastle/jcajce/bio$zta;->uqa:Ljava/util/Set;
 
     invoke-interface {v0, p1}, Ljava/util/Set;->addAll(Ljava/util/Collection;)Z
 

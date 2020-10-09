@@ -15,13 +15,13 @@
 
 
 # instance fields
-.field private final gck:Landroid/net/Uri;
+.field private final dma:Landroid/net/Uri;
 
-.field private final igw:Landroid/net/Uri;
+.field private final gck:Landroid/net/Uri;
 
 .field final synthetic this$0:Lcom/android/server/wm/OpScreenCompat;
 
-.field private final wtn:Landroid/net/Uri;
+.field private final ywr:Landroid/net/Uri;
 
 
 # direct methods
@@ -42,7 +42,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/server/wm/OpScreenCompat$you;->igw:Landroid/net/Uri;
+    iput-object v0, p0, Lcom/android/server/wm/OpScreenCompat$you;->gck:Landroid/net/Uri;
 
     const-string v0, "oneplus_carmode_switch"
 
@@ -50,7 +50,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/server/wm/OpScreenCompat$you;->wtn:Landroid/net/Uri;
+    iput-object v0, p0, Lcom/android/server/wm/OpScreenCompat$you;->dma:Landroid/net/Uri;
 
     const-string v0, "oneplus_carmode_inside"
 
@@ -58,7 +58,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/server/wm/OpScreenCompat$you;->gck:Landroid/net/Uri;
+    iput-object v0, p0, Lcom/android/server/wm/OpScreenCompat$you;->ywr:Landroid/net/Uri;
 
     invoke-static {p1}, Lcom/android/server/wm/OpScreenCompat;->access$000(Lcom/android/server/wm/OpScreenCompat;)Landroid/content/Context;
 
@@ -74,7 +74,7 @@
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/android/server/wm/OpScreenCompat$you;->igw:Landroid/net/Uri;
+    iget-object v0, p0, Lcom/android/server/wm/OpScreenCompat$you;->gck:Landroid/net/Uri;
 
     const/4 v1, -0x1
 
@@ -82,11 +82,11 @@
 
     invoke-virtual {p1, v0, v2, p0, v1}, Landroid/content/ContentResolver;->registerContentObserver(Landroid/net/Uri;ZLandroid/database/ContentObserver;I)V
 
-    iget-object v0, p0, Lcom/android/server/wm/OpScreenCompat$you;->wtn:Landroid/net/Uri;
+    iget-object v0, p0, Lcom/android/server/wm/OpScreenCompat$you;->dma:Landroid/net/Uri;
 
     invoke-virtual {p1, v0, v2, p0, v1}, Landroid/content/ContentResolver;->registerContentObserver(Landroid/net/Uri;ZLandroid/database/ContentObserver;I)V
 
-    iget-object v0, p0, Lcom/android/server/wm/OpScreenCompat$you;->gck:Landroid/net/Uri;
+    iget-object v0, p0, Lcom/android/server/wm/OpScreenCompat$you;->ywr:Landroid/net/Uri;
 
     invoke-virtual {p1, v0, v2, p0, v1}, Landroid/content/ContentResolver;->registerContentObserver(Landroid/net/Uri;ZLandroid/database/ContentObserver;I)V
 
@@ -112,7 +112,7 @@
 
     if-eqz p1, :cond_2
 
-    iget-object p1, p0, Lcom/android/server/wm/OpScreenCompat$you;->igw:Landroid/net/Uri;
+    iget-object p1, p0, Lcom/android/server/wm/OpScreenCompat$you;->gck:Landroid/net/Uri;
 
     invoke-virtual {p1, p2}, Landroid/net/Uri;->equals(Ljava/lang/Object;)Z
 
@@ -196,7 +196,7 @@
 
     if-eqz p1, :cond_3
 
-    iget-object p1, p0, Lcom/android/server/wm/OpScreenCompat$you;->wtn:Landroid/net/Uri;
+    iget-object p1, p0, Lcom/android/server/wm/OpScreenCompat$you;->dma:Landroid/net/Uri;
 
     invoke-virtual {p1, p2}, Landroid/net/Uri;->equals(Ljava/lang/Object;)Z
 
@@ -229,7 +229,7 @@
 
     if-eqz p1, :cond_4
 
-    iget-object p1, p0, Lcom/android/server/wm/OpScreenCompat$you;->gck:Landroid/net/Uri;
+    iget-object p1, p0, Lcom/android/server/wm/OpScreenCompat$you;->ywr:Landroid/net/Uri;
 
     invoke-virtual {p1, p2}, Landroid/net/Uri;->equals(Ljava/lang/Object;)Z
 

@@ -907,13 +907,13 @@
 
     if-eqz p2, :cond_4
 
-    invoke-static {}, Lcom/android/server/wm/wtn;->ee()Lcom/android/server/wm/wtn$zta;
+    invoke-static {}, Lcom/android/server/wm/gck;->fe()Lcom/android/server/wm/gck$zta;
 
     move-result-object p1
 
     iget-boolean p2, p0, Lcom/oneplus/android/server/scene/ESportMode;->mEnabled:Z
 
-    invoke-virtual {p1, p2}, Lcom/android/server/wm/wtn$zta;->y(Z)V
+    invoke-virtual {p1, p2}, Lcom/android/server/wm/gck$zta;->y(Z)V
 
     :cond_4
     iget-boolean p1, p0, Lcom/oneplus/android/server/scene/ESportMode;->mEnabled:Z

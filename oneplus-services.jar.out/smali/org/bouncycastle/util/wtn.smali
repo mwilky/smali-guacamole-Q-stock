@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field final synthetic lIa:Ljava/lang/String;
+.field final synthetic wIa:Ljava/lang/String;
 
 
 # direct methods
 .method constructor <init>(Ljava/lang/String;)V
     .locals 0
 
-    iput-object p1, p0, Lorg/bouncycastle/util/wtn;->lIa:Ljava/lang/String;
+    iput-object p1, p0, Lorg/bouncycastle/util/wtn;->wIa:Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -47,7 +47,7 @@
 
     check-cast v0, Ljava/util/Map;
 
-    iget-object p0, p0, Lorg/bouncycastle/util/wtn;->lIa:Ljava/lang/String;
+    iget-object p0, p0, Lorg/bouncycastle/util/wtn;->wIa:Ljava/lang/String;
 
     if-eqz v0, :cond_0
 

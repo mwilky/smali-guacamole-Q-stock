@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field private Df:J
+.field private Jf:J
 
 .field private mStartTimeMs:J
 
@@ -113,7 +113,7 @@
 .method public isStopped()Z
     .locals 4
 
-    iget-wide v0, p0, Lcom/android/server/OpPowerControllerService$kth;->Df:J
+    iget-wide v0, p0, Lcom/android/server/OpPowerControllerService$kth;->Jf:J
 
     const-wide/16 v2, 0x0
 
@@ -139,7 +139,7 @@
 
     iput-wide v0, p0, Lcom/android/server/OpPowerControllerService$kth;->mStartTimeMs:J
 
-    iput-wide v0, p0, Lcom/android/server/OpPowerControllerService$kth;->Df:J
+    iput-wide v0, p0, Lcom/android/server/OpPowerControllerService$kth;->Jf:J
 
     return-void
 .end method
@@ -176,10 +176,10 @@
 
     move-result-wide v0
 
-    iput-wide v0, p0, Lcom/android/server/OpPowerControllerService$kth;->Df:J
+    iput-wide v0, p0, Lcom/android/server/OpPowerControllerService$kth;->Jf:J
 
     :cond_0
-    iget-wide v0, p0, Lcom/android/server/OpPowerControllerService$kth;->Df:J
+    iget-wide v0, p0, Lcom/android/server/OpPowerControllerService$kth;->Jf:J
 
     iget-wide v2, p0, Lcom/android/server/OpPowerControllerService$kth;->mStartTimeMs:J
 

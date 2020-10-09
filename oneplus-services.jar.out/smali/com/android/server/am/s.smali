@@ -30,7 +30,17 @@
 
 
 # instance fields
-.field private jg:Z
+.field private Dx:Lcom/oneplus/os/IOnePlusExService;
+
+.field private Ex:J
+
+.field private Fx:Z
+
+.field private Gx:Ljava/util/regex/Pattern;
+
+.field private Hx:Ljava/util/regex/Pattern;
+
+.field private Ix:Ljava/util/regex/Pattern;
 
 .field private mConfigObserver:Lcom/oneplus/config/ConfigObserver;
 
@@ -42,17 +52,7 @@
 
 .field mLastResetTime:J
 
-.field private ux:Lcom/oneplus/os/IOnePlusExService;
-
-.field private vx:J
-
-.field private wx:Z
-
-.field private xx:Ljava/util/regex/Pattern;
-
-.field private yx:Ljava/util/regex/Pattern;
-
-.field private zx:Ljava/util/regex/Pattern;
+.field private pg:Z
 
 
 # direct methods
@@ -99,13 +99,13 @@
 
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/android/server/am/s;->jg:Z
+    iput-boolean v0, p0, Lcom/android/server/am/s;->pg:Z
 
     const-wide/32 v1, 0x6ddd00
 
-    iput-wide v1, p0, Lcom/android/server/am/s;->vx:J
+    iput-wide v1, p0, Lcom/android/server/am/s;->Ex:J
 
-    iput-boolean v0, p0, Lcom/android/server/am/s;->wx:Z
+    iput-boolean v0, p0, Lcom/android/server/am/s;->Fx:Z
 
     const-wide/16 v1, 0x0
 
@@ -117,7 +117,7 @@
 
     move-result-object v1
 
-    iput-object v1, p0, Lcom/android/server/am/s;->xx:Ljava/util/regex/Pattern;
+    iput-object v1, p0, Lcom/android/server/am/s;->Gx:Ljava/util/regex/Pattern;
 
     const-string v1, "(.*,wl,.*/.*/.*/)(.*)(,\\d*,f,.*)"
 
@@ -125,7 +125,7 @@
 
     move-result-object v1
 
-    iput-object v1, p0, Lcom/android/server/am/s;->yx:Ljava/util/regex/Pattern;
+    iput-object v1, p0, Lcom/android/server/am/s;->Hx:Ljava/util/regex/Pattern;
 
     const-string v1, "(\\d*,\\d*,.*,(?:sy|jb|jbc),\".*/.*/)(.*)(\",.*)"
 
@@ -133,7 +133,7 @@
 
     move-result-object v1
 
-    iput-object v1, p0, Lcom/android/server/am/s;->zx:Ljava/util/regex/Pattern;
+    iput-object v1, p0, Lcom/android/server/am/s;->Ix:Ljava/util/regex/Pattern;
 
     iput-object p1, p0, Lcom/android/server/am/s;->mContext:Landroid/content/Context;
 
@@ -169,7 +169,7 @@
 .method static synthetic rtg(Lcom/android/server/am/s;)Z
     .locals 0
 
-    iget-boolean p0, p0, Lcom/android/server/am/s;->wx:Z
+    iget-boolean p0, p0, Lcom/android/server/am/s;->Fx:Z
 
     return p0
 .end method
@@ -185,7 +185,7 @@
 .method static synthetic ssp(Lcom/android/server/am/s;)J
     .locals 2
 
-    iget-wide v0, p0, Lcom/android/server/am/s;->vx:J
+    iget-wide v0, p0, Lcom/android/server/am/s;->Ex:J
 
     return-wide v0
 .end method
@@ -193,7 +193,7 @@
 .method static synthetic tsu(Lcom/android/server/am/s;)Z
     .locals 0
 
-    iget-boolean p0, p0, Lcom/android/server/am/s;->jg:Z
+    iget-boolean p0, p0, Lcom/android/server/am/s;->pg:Z
 
     return p0
 .end method
@@ -209,7 +209,7 @@
 .method static synthetic zta(Lcom/android/server/am/s;J)J
     .locals 0
 
-    iput-wide p1, p0, Lcom/android/server/am/s;->vx:J
+    iput-wide p1, p0, Lcom/android/server/am/s;->Ex:J
 
     return-wide p1
 .end method
@@ -241,7 +241,7 @@
 .method static synthetic zta(Lcom/android/server/am/s;Z)Z
     .locals 0
 
-    iput-boolean p1, p0, Lcom/android/server/am/s;->jg:Z
+    iput-boolean p1, p0, Lcom/android/server/am/s;->pg:Z
 
     return p1
 .end method
@@ -335,13 +335,13 @@
 
     sub-long/2addr p4, p2
 
-    iget-wide v0, p0, Lcom/android/server/am/s;->vx:J
+    iget-wide v0, p0, Lcom/android/server/am/s;->Ex:J
 
     cmp-long p4, p4, v0
 
     if-lez p4, :cond_2
 
-    iget-boolean p4, p0, Lcom/android/server/am/s;->jg:Z
+    iget-boolean p4, p0, Lcom/android/server/am/s;->pg:Z
 
     if-eqz p4, :cond_2
 
@@ -608,7 +608,7 @@
 
     invoke-static {v5}, Lcom/android/server/am/BatteryOutlierInjector;->getPidMap(Ljava/lang/StringBuilder;)V
 
-    iget-boolean v3, v1, Lcom/android/server/am/s;->wx:Z
+    iget-boolean v3, v1, Lcom/android/server/am/s;->Fx:Z
 
     if-eqz v3, :cond_1
 
@@ -733,7 +733,7 @@
 
     aget-object v9, v0, v6
 
-    iget-object v10, v1, Lcom/android/server/am/s;->xx:Ljava/util/regex/Pattern;
+    iget-object v10, v1, Lcom/android/server/am/s;->Gx:Ljava/util/regex/Pattern;
 
     invoke-virtual {v10, v9}, Ljava/util/regex/Pattern;->matcher(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
 
@@ -812,7 +812,7 @@
 
     if-nez v11, :cond_3
 
-    iget-object v10, v1, Lcom/android/server/am/s;->yx:Ljava/util/regex/Pattern;
+    iget-object v10, v1, Lcom/android/server/am/s;->Hx:Ljava/util/regex/Pattern;
 
     invoke-virtual {v10, v9}, Ljava/util/regex/Pattern;->matcher(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
 
@@ -887,7 +887,7 @@
 
     if-nez v10, :cond_4
 
-    iget-object v10, v1, Lcom/android/server/am/s;->zx:Ljava/util/regex/Pattern;
+    iget-object v10, v1, Lcom/android/server/am/s;->Ix:Ljava/util/regex/Pattern;
 
     invoke-virtual {v10, v9}, Ljava/util/regex/Pattern;->matcher(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
 

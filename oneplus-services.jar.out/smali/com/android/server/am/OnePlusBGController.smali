@@ -29,35 +29,47 @@
 
 
 # static fields
-.field private static An:Z = false
+.field private static final An:Ljava/lang/String; = "persist.sys.bgc_debug"
 
-.field private static Bn:Z = false
+.field private static final Bn:Ljava/lang/String; = "persist.sys.bgc.keep"
 
-.field private static Cn:I = 0x0
+.field private static final Cn:Ljava/lang/String; = "net.oneplus.bgc.budget_reset"
 
 .field private static final DEBUG_ONEPLUS:Z
 
-.field private static final Dn:I = -0x1
+.field private static final Dn:Ljava/lang/String; = "net.oneplus.powercontroller.intent.SLEEP_CHANGED"
 
-.field private static final En:J = 0x5265c00L
+.field public static En:Z = false
 
-.field private static Fn:Landroid/os/Handler; = null
+.field private static final Fn:Z
 
-.field public static final Gk:Ljava/lang/String; = "com.google.android.gms"
+.field private static Gn:Z = false
 
-.field private static final Gn:F = 999.0f
-
-.field static final Hn:J = 0x19000L
+.field private static Hn:Z = false
 
 .field private static final INVALID_TIMESTAMP:I = -0x1
 
 .field private static final INVALID_UID:I = -0x1
 
-.field static final In:J = 0xbb8L
+.field private static In:I = 0x0
 
-.field private static final Jn:Ljava/lang/String; = "com.test.bgc"
+.field private static final Jn:I = -0x1
+
+.field private static final Kn:J = 0x5265c00L
+
+.field private static Ln:Landroid/os/Handler; = null
+
+.field public static final Mk:Ljava/lang/String; = "com.google.android.gms"
+
+.field private static final Mn:F = 999.0f
+
+.field static final Nn:J = 0x19000L
 
 .field private static final ONLINECONFIG_PROJECT_NAME:Ljava/lang/String; = "BGC"
+
+.field static final Pn:J = 0xbb8L
+
+.field private static final Qn:Ljava/lang/String; = "com.test.bgc"
 
 .field private static final STATE_AWAKE:I = 0x1e6c
 
@@ -71,35 +83,23 @@
 
 .field private static mPackageManager:Landroid/content/pm/PackageManager; = null
 
-.field private static final tn:J = 0xbb8L
-
-.field private static final un:Ljava/lang/String; = "persist.sys.bgc_debug"
-
-.field private static final vn:Ljava/lang/String; = "persist.sys.bgc.keep"
-
-.field private static final wn:Ljava/lang/String; = "net.oneplus.bgc.budget_reset"
-
-.field private static final xn:Ljava/lang/String; = "net.oneplus.powercontroller.intent.SLEEP_CHANGED"
-
-.field public static yn:Z
-
-.field private static final zn:Z
+.field private static final zn:J = 0xbb8L
 
 
 # instance fields
-.field private Pm:Z
+.field private Vm:Z
 
-.field private Sm:Z
+.field private Ym:Z
 
-.field private Tm:Lcom/android/server/am/OnePlusBGController$NetType;
+.field private Zm:Lcom/android/server/am/OnePlusBGController$NetType;
 
-.field private Um:J
+.field private _m:J
 
-.field private Vm:I
+.field private an:I
 
-.field private Wm:Lcom/android/server/i;
+.field private bn:Lcom/android/server/i;
 
-.field private final Xm:Landroid/util/SparseArray;
+.field private final cn:Landroid/util/SparseArray;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Landroid/util/SparseArray<",
@@ -109,7 +109,7 @@
     .end annotation
 .end field
 
-.field private Yc:Landroid/util/ArrayMap;
+.field private dd:Landroid/util/ArrayMap;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Landroid/util/ArrayMap<",
@@ -120,7 +120,7 @@
     .end annotation
 .end field
 
-.field private final Ym:Landroid/util/SparseArray;
+.field private final dn:Landroid/util/SparseArray;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Landroid/util/SparseArray<",
@@ -130,7 +130,7 @@
     .end annotation
 .end field
 
-.field private final Zm:Ljava/util/List;
+.field private final en:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
@@ -140,55 +140,17 @@
     .end annotation
 .end field
 
-.field private _m:Lcom/android/server/am/OnePlusBGController$zta;
-
-.field private an:F
-
-.field private bn:F
-
-.field private cn:F
-
-.field private dn:F
-
-.field private en:F
-
-.field private fn:F
+.field private fn:Lcom/android/server/am/OnePlusBGController$zta;
 
 .field private gn:F
 
 .field private hn:F
 
-.field private ig:Landroid/content/IntentFilter;
+.field private jn:F
 
-.field private jn:Ljava/util/HashSet;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/HashSet<",
-            "Ljava/lang/String;",
-            ">;"
-        }
-    .end annotation
-.end field
+.field private kn:F
 
-.field private kn:Ljava/util/HashSet;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/HashSet<",
-            "Ljava/lang/Integer;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private ln:Ljava/util/HashSet;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/HashSet<",
-            "Ljava/lang/Integer;",
-            ">;"
-        }
-    .end annotation
-.end field
+.field private ln:F
 
 .field private mAms:Lcom/android/server/am/ActivityManagerService;
 
@@ -212,9 +174,47 @@
 
 .field private final mUidObserver:Lcom/android/server/am/OnePlusBGController$UidObserver;
 
-.field private mn:Lcom/android/internal/os/MyBatteryStatsHelper;
+.field private mn:F
 
-.field nn:Ljava/util/List;
+.field private nn:F
+
+.field private og:Landroid/content/IntentFilter;
+
+.field private pn:F
+
+.field private qn:Ljava/util/HashSet;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/HashSet<",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private rn:Ljava/util/HashSet;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/HashSet<",
+            "Ljava/lang/Integer;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private sn:Ljava/util/HashSet;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/HashSet<",
+            "Ljava/lang/Integer;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private tn:Lcom/android/internal/os/MyBatteryStatsHelper;
+
+.field un:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
@@ -224,7 +224,7 @@
     .end annotation
 .end field
 
-.field pn:Ljava/util/List;
+.field vn:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
@@ -234,7 +234,7 @@
     .end annotation
 .end field
 
-.field qn:Ljava/util/List;
+.field wn:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
@@ -244,7 +244,7 @@
     .end annotation
 .end field
 
-.field rn:Ljava/util/Comparator;
+.field xn:Ljava/util/Comparator;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Comparator<",
@@ -254,7 +254,7 @@
     .end annotation
 .end field
 
-.field sn:Ljava/util/Comparator;
+.field yn:Ljava/util/Comparator;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Comparator<",
@@ -281,7 +281,7 @@
 
     move-result v1
 
-    sput-boolean v1, Lcom/android/server/am/OnePlusBGController;->yn:Z
+    sput-boolean v1, Lcom/android/server/am/OnePlusBGController;->En:Z
 
     const-string v1, "persist.sys.bgc.keep"
 
@@ -289,17 +289,17 @@
 
     move-result v1
 
-    sput-boolean v1, Lcom/android/server/am/OnePlusBGController;->zn:Z
+    sput-boolean v1, Lcom/android/server/am/OnePlusBGController;->Fn:Z
 
-    sput-boolean v0, Lcom/android/server/am/OnePlusBGController;->An:Z
+    sput-boolean v0, Lcom/android/server/am/OnePlusBGController;->Gn:Z
 
-    sput-boolean v0, Lcom/android/server/am/OnePlusBGController;->Bn:Z
+    sput-boolean v0, Lcom/android/server/am/OnePlusBGController;->Hn:Z
 
     sput-boolean v0, Lcom/android/server/am/OnePlusBGController;->mInited:Z
 
     const/4 v0, -0x1
 
-    sput v0, Lcom/android/server/am/OnePlusBGController;->Cn:I
+    sput v0, Lcom/android/server/am/OnePlusBGController;->In:I
 
     const/4 v0, 0x0
 
@@ -315,25 +315,25 @@
 
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/android/server/am/OnePlusBGController;->Pm:Z
+    iput-boolean v0, p0, Lcom/android/server/am/OnePlusBGController;->Vm:Z
 
     const/4 v1, 0x0
 
     iput-boolean v1, p0, Lcom/android/server/am/OnePlusBGController;->mIsPluggedIn:Z
 
-    iput-boolean v1, p0, Lcom/android/server/am/OnePlusBGController;->Sm:Z
+    iput-boolean v1, p0, Lcom/android/server/am/OnePlusBGController;->Ym:Z
 
-    sget-object v2, Lcom/android/server/am/OnePlusBGController$NetType;->_ka:Lcom/android/server/am/OnePlusBGController$NetType;
+    sget-object v2, Lcom/android/server/am/OnePlusBGController$NetType;->lla:Lcom/android/server/am/OnePlusBGController$NetType;
 
-    iput-object v2, p0, Lcom/android/server/am/OnePlusBGController;->Tm:Lcom/android/server/am/OnePlusBGController$NetType;
+    iput-object v2, p0, Lcom/android/server/am/OnePlusBGController;->Zm:Lcom/android/server/am/OnePlusBGController$NetType;
 
     const-wide/16 v2, 0x0
 
-    iput-wide v2, p0, Lcom/android/server/am/OnePlusBGController;->Um:J
+    iput-wide v2, p0, Lcom/android/server/am/OnePlusBGController;->_m:J
 
     const/4 v2, -0x1
 
-    iput v2, p0, Lcom/android/server/am/OnePlusBGController;->Vm:I
+    iput v2, p0, Lcom/android/server/am/OnePlusBGController;->an:I
 
     new-instance v2, Lcom/android/server/am/OnePlusBGController$UidObserver;
 
@@ -345,71 +345,71 @@
 
     invoke-direct {v2}, Landroid/util/SparseArray;-><init>()V
 
-    iput-object v2, p0, Lcom/android/server/am/OnePlusBGController;->Xm:Landroid/util/SparseArray;
+    iput-object v2, p0, Lcom/android/server/am/OnePlusBGController;->cn:Landroid/util/SparseArray;
 
     new-instance v2, Landroid/util/SparseArray;
 
     invoke-direct {v2}, Landroid/util/SparseArray;-><init>()V
 
-    iput-object v2, p0, Lcom/android/server/am/OnePlusBGController;->Ym:Landroid/util/SparseArray;
+    iput-object v2, p0, Lcom/android/server/am/OnePlusBGController;->dn:Landroid/util/SparseArray;
 
     new-instance v2, Ljava/util/ArrayList;
 
     invoke-direct {v2}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v2, p0, Lcom/android/server/am/OnePlusBGController;->Zm:Ljava/util/List;
+    iput-object v2, p0, Lcom/android/server/am/OnePlusBGController;->en:Ljava/util/List;
 
     const/high16 v2, 0x41200000    # 10.0f
 
-    iput v2, p0, Lcom/android/server/am/OnePlusBGController;->an:F
+    iput v2, p0, Lcom/android/server/am/OnePlusBGController;->gn:F
 
     const/high16 v3, 0x41000000    # 8.0f
 
-    iput v3, p0, Lcom/android/server/am/OnePlusBGController;->bn:F
+    iput v3, p0, Lcom/android/server/am/OnePlusBGController;->hn:F
 
     const/high16 v3, 0x40a00000    # 5.0f
 
-    iput v3, p0, Lcom/android/server/am/OnePlusBGController;->cn:F
+    iput v3, p0, Lcom/android/server/am/OnePlusBGController;->jn:F
 
     const/high16 v3, 0x40800000    # 4.0f
 
-    iput v3, p0, Lcom/android/server/am/OnePlusBGController;->dn:F
+    iput v3, p0, Lcom/android/server/am/OnePlusBGController;->kn:F
 
     const/high16 v3, 0x40400000    # 3.0f
 
-    iput v3, p0, Lcom/android/server/am/OnePlusBGController;->en:F
+    iput v3, p0, Lcom/android/server/am/OnePlusBGController;->ln:F
 
     const/high16 v3, 0x40000000    # 2.0f
 
-    iput v3, p0, Lcom/android/server/am/OnePlusBGController;->fn:F
+    iput v3, p0, Lcom/android/server/am/OnePlusBGController;->mn:F
 
-    iput v2, p0, Lcom/android/server/am/OnePlusBGController;->gn:F
+    iput v2, p0, Lcom/android/server/am/OnePlusBGController;->nn:F
 
-    iput v3, p0, Lcom/android/server/am/OnePlusBGController;->hn:F
-
-    new-instance v2, Ljava/util/HashSet;
-
-    invoke-direct {v2}, Ljava/util/HashSet;-><init>()V
-
-    iput-object v2, p0, Lcom/android/server/am/OnePlusBGController;->jn:Ljava/util/HashSet;
+    iput v3, p0, Lcom/android/server/am/OnePlusBGController;->pn:F
 
     new-instance v2, Ljava/util/HashSet;
 
     invoke-direct {v2}, Ljava/util/HashSet;-><init>()V
 
-    iput-object v2, p0, Lcom/android/server/am/OnePlusBGController;->kn:Ljava/util/HashSet;
+    iput-object v2, p0, Lcom/android/server/am/OnePlusBGController;->qn:Ljava/util/HashSet;
+
+    new-instance v2, Ljava/util/HashSet;
+
+    invoke-direct {v2}, Ljava/util/HashSet;-><init>()V
+
+    iput-object v2, p0, Lcom/android/server/am/OnePlusBGController;->rn:Ljava/util/HashSet;
 
     new-instance v2, Landroid/util/ArrayMap;
 
     invoke-direct {v2}, Landroid/util/ArrayMap;-><init>()V
 
-    iput-object v2, p0, Lcom/android/server/am/OnePlusBGController;->Yc:Landroid/util/ArrayMap;
+    iput-object v2, p0, Lcom/android/server/am/OnePlusBGController;->dd:Landroid/util/ArrayMap;
 
     new-instance v2, Ljava/util/HashSet;
 
     invoke-direct {v2}, Ljava/util/HashSet;-><init>()V
 
-    iput-object v2, p0, Lcom/android/server/am/OnePlusBGController;->ln:Ljava/util/HashSet;
+    iput-object v2, p0, Lcom/android/server/am/OnePlusBGController;->sn:Ljava/util/HashSet;
 
     new-instance v2, Lcom/android/server/am/hmo;
 
@@ -421,15 +421,15 @@
 
     invoke-direct {v2, p0}, Lcom/android/server/am/fto;-><init>(Lcom/android/server/am/OnePlusBGController;)V
 
-    iput-object v2, p0, Lcom/android/server/am/OnePlusBGController;->rn:Ljava/util/Comparator;
+    iput-object v2, p0, Lcom/android/server/am/OnePlusBGController;->xn:Ljava/util/Comparator;
 
     new-instance v2, Lcom/android/server/am/lqr;
 
     invoke-direct {v2, p0}, Lcom/android/server/am/lqr;-><init>(Lcom/android/server/am/OnePlusBGController;)V
 
-    iput-object v2, p0, Lcom/android/server/am/OnePlusBGController;->sn:Ljava/util/Comparator;
+    iput-object v2, p0, Lcom/android/server/am/OnePlusBGController;->yn:Ljava/util/Comparator;
 
-    sput-object p2, Lcom/android/server/am/OnePlusBGController;->Fn:Landroid/os/Handler;
+    sput-object p2, Lcom/android/server/am/OnePlusBGController;->Ln:Landroid/os/Handler;
 
     iput-object p3, p0, Lcom/android/server/am/OnePlusBGController;->mAms:Lcom/android/server/am/ActivityManagerService;
 
@@ -443,7 +443,7 @@
 
     invoke-direct {p1, p2, v1, v1}, Lcom/android/internal/os/MyBatteryStatsHelper;-><init>(Landroid/content/Context;ZZ)V
 
-    iput-object p1, p0, Lcom/android/server/am/OnePlusBGController;->mn:Lcom/android/internal/os/MyBatteryStatsHelper;
+    iput-object p1, p0, Lcom/android/server/am/OnePlusBGController;->tn:Lcom/android/internal/os/MyBatteryStatsHelper;
 
     iget-object p1, p0, Lcom/android/server/am/OnePlusBGController;->mContext:Landroid/content/Context;
 
@@ -487,7 +487,7 @@
 
     invoke-direct {p1}, Lcom/android/server/am/OnePlusBGController$zta;-><init>()V
 
-    iput-object p1, p0, Lcom/android/server/am/OnePlusBGController;->_m:Lcom/android/server/am/OnePlusBGController$zta;
+    iput-object p1, p0, Lcom/android/server/am/OnePlusBGController;->fn:Lcom/android/server/am/OnePlusBGController$zta;
 
     new-array p1, v0, [I
 
@@ -503,7 +503,7 @@
 
     invoke-static {p1}, Lcom/android/server/am/OnePlusBGController;->myLog(Ljava/lang/String;)V
 
-    iput-boolean v1, p0, Lcom/android/server/am/OnePlusBGController;->Pm:Z
+    iput-boolean v1, p0, Lcom/android/server/am/OnePlusBGController;->Vm:Z
 
     :cond_0
     new-array p1, v0, [I
@@ -522,9 +522,9 @@
 
     invoke-static {p1}, Lcom/android/server/am/OnePlusBGController;->myLog(Ljava/lang/String;)V
 
-    sget-object p1, Lcom/android/server/am/OnePlusBGController$NetType;->ala:Lcom/android/server/am/OnePlusBGController$NetType;
+    sget-object p1, Lcom/android/server/am/OnePlusBGController$NetType;->mla:Lcom/android/server/am/OnePlusBGController$NetType;
 
-    iput-object p1, p0, Lcom/android/server/am/OnePlusBGController;->Tm:Lcom/android/server/am/OnePlusBGController$NetType;
+    iput-object p1, p0, Lcom/android/server/am/OnePlusBGController;->Zm:Lcom/android/server/am/OnePlusBGController$NetType;
 
     :cond_1
     new-instance p1, Landroid/content/IntentFilter;
@@ -551,13 +551,13 @@
 
     invoke-direct {p2, p1}, Landroid/content/IntentFilter;-><init>(Landroid/content/IntentFilter;)V
 
-    iput-object p2, p0, Lcom/android/server/am/OnePlusBGController;->ig:Landroid/content/IntentFilter;
+    iput-object p2, p0, Lcom/android/server/am/OnePlusBGController;->og:Landroid/content/IntentFilter;
 
     iget-object p1, p0, Lcom/android/server/am/OnePlusBGController;->mContext:Landroid/content/Context;
 
     iget-object p2, p0, Lcom/android/server/am/OnePlusBGController;->mBatteryReceiver:Lcom/android/server/am/OnePlusBGController$you;
 
-    iget-object p3, p0, Lcom/android/server/am/OnePlusBGController;->ig:Landroid/content/IntentFilter;
+    iget-object p3, p0, Lcom/android/server/am/OnePlusBGController;->og:Landroid/content/IntentFilter;
 
     invoke-virtual {p1, p2, p3}, Landroid/content/Context;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
 
@@ -603,7 +603,211 @@
     return-void
 .end method
 
-.method private Am()Ljava/util/List;
+.method private Am()V
+    .locals 3
+
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v1, "BGC Criteria : H:["
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget v1, p0, Lcom/android/server/am/OnePlusBGController;->gn:F
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
+
+    const-string v1, ", "
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget v2, p0, Lcom/android/server/am/OnePlusBGController;->hn:F
+
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
+
+    const-string v2, "] / G:["
+
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget v2, p0, Lcom/android/server/am/OnePlusBGController;->jn:F
+
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget v2, p0, Lcom/android/server/am/OnePlusBGController;->kn:F
+
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
+
+    const-string v2, "] / L:["
+
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget v2, p0, Lcom/android/server/am/OnePlusBGController;->ln:F
+
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget v1, p0, Lcom/android/server/am/OnePlusBGController;->mn:F
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
+
+    const-string v1, "] / [S: "
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget v1, p0, Lcom/android/server/am/OnePlusBGController;->nn:F
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
+
+    const-string v1, ", R: "
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget p0, p0, Lcom/android/server/am/OnePlusBGController;->pn:F
+
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
+
+    const-string p0, "]"
+
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p0
+
+    invoke-static {p0}, Lcom/android/server/am/OnePlusBGController;->myLog(Ljava/lang/String;)V
+
+    return-void
+.end method
+
+.method private Bm()V
+    .locals 3
+
+    iget-object v0, p0, Lcom/android/server/am/OnePlusBGController;->en:Ljava/util/List;
+
+    monitor-enter v0
+
+    const/4 v1, 0x0
+
+    :goto_0
+    :try_start_0
+    iget-object v2, p0, Lcom/android/server/am/OnePlusBGController;->en:Ljava/util/List;
+
+    invoke-interface {v2}, Ljava/util/List;->size()I
+
+    move-result v2
+
+    if-ge v1, v2, :cond_1
+
+    iget-object v2, p0, Lcom/android/server/am/OnePlusBGController;->en:Ljava/util/List;
+
+    invoke-interface {v2, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Lcom/android/server/am/OnePlusBGController$bio;
+
+    if-eqz v2, :cond_0
+
+    invoke-virtual {v2}, Lcom/android/server/am/OnePlusBGController$bio;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-static {v2}, Lcom/android/server/am/OnePlusBGController;->myLog(Ljava/lang/String;)V
+
+    :cond_0
+    add-int/lit8 v1, v1, 0x1
+
+    goto :goto_0
+
+    :cond_1
+    monitor-exit v0
+
+    return-void
+
+    :catchall_0
+    move-exception p0
+
+    monitor-exit v0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    throw p0
+.end method
+
+.method static synthetic Cb()Z
+    .locals 1
+
+    sget-boolean v0, Lcom/android/server/am/OnePlusBGController;->Hn:Z
+
+    return v0
+.end method
+
+.method private Cm()V
+    .locals 4
+
+    iget-object v0, p0, Lcom/android/server/am/OnePlusBGController;->dn:Landroid/util/SparseArray;
+
+    monitor-enter v0
+
+    const/4 v1, 0x0
+
+    :goto_0
+    :try_start_0
+    iget-object v2, p0, Lcom/android/server/am/OnePlusBGController;->dn:Landroid/util/SparseArray;
+
+    invoke-virtual {v2}, Landroid/util/SparseArray;->size()I
+
+    move-result v2
+
+    if-ge v1, v2, :cond_1
+
+    iget-object v2, p0, Lcom/android/server/am/OnePlusBGController;->dn:Landroid/util/SparseArray;
+
+    invoke-virtual {v2, v1}, Landroid/util/SparseArray;->keyAt(I)I
+
+    move-result v2
+
+    iget-object v3, p0, Lcom/android/server/am/OnePlusBGController;->dn:Landroid/util/SparseArray;
+
+    invoke-virtual {v3, v2}, Landroid/util/SparseArray;->get(I)Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Lcom/android/server/am/OnePlusBGController$bio;
+
+    if-eqz v2, :cond_0
+
+    invoke-virtual {v2}, Lcom/android/server/am/OnePlusBGController$bio;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-static {v2}, Lcom/android/server/am/OnePlusBGController;->myLog(Ljava/lang/String;)V
+
+    :cond_0
+    add-int/lit8 v1, v1, 0x1
+
+    goto :goto_0
+
+    :cond_1
+    monitor-exit v0
+
+    return-void
+
+    :catchall_0
+    move-exception p0
+
+    monitor-exit v0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    throw p0
+.end method
+
+.method private Dm()Ljava/util/List;
     .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -684,7 +888,7 @@
     return-object p0
 .end method
 
-.method private Bm()Ljava/util/List;
+.method private Em()Ljava/util/List;
     .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -699,7 +903,7 @@
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iget v1, p0, Lcom/android/server/am/OnePlusBGController;->Vm:I
+    iget v1, p0, Lcom/android/server/am/OnePlusBGController;->an:I
 
     const/4 v2, -0x1
 
@@ -769,15 +973,7 @@
     return-object v0
 .end method
 
-.method static synthetic Cb()Z
-    .locals 1
-
-    sget-boolean v0, Lcom/android/server/am/OnePlusBGController;->Bn:Z
-
-    return v0
-.end method
-
-.method private Cm()V
+.method private Fm()V
     .locals 3
 
     const-string v0, "BGC"
@@ -801,7 +997,7 @@
 
     iget p0, p0, Landroid/content/pm/ApplicationInfo;->uid:I
 
-    sput p0, Lcom/android/server/am/OnePlusBGController;->Cn:I
+    sput p0, Lcom/android/server/am/OnePlusBGController;->In:I
 
     new-instance p0, Ljava/lang/StringBuilder;
 
@@ -811,7 +1007,7 @@
 
     invoke-virtual {p0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sget v1, Lcom/android/server/am/OnePlusBGController;->Cn:I
+    sget v1, Lcom/android/server/am/OnePlusBGController;->In:I
 
     invoke-virtual {p0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -853,7 +1049,7 @@
     return-void
 .end method
 
-.method private Dm()V
+.method private Gm()V
     .locals 2
 
     sget-boolean v0, Lcom/android/server/am/OnePlusBGController;->mInited:Z
@@ -880,14 +1076,14 @@
     return-void
 .end method
 
-.method private Em()Z
+.method private Hm()Z
     .locals 4
 
     invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
 
     move-result-wide v0
 
-    iget-wide v2, p0, Lcom/android/server/am/OnePlusBGController;->Um:J
+    iget-wide v2, p0, Lcom/android/server/am/OnePlusBGController;->_m:J
 
     sub-long/2addr v0, v2
 
@@ -934,14 +1130,14 @@
     return p0
 .end method
 
-.method private Fm()V
+.method private Im()V
     .locals 4
 
     const-string v0, "## RESET resetAllBudget RESET ##"
 
     invoke-static {v0}, Lcom/android/server/am/OnePlusBGController;->myLog(Ljava/lang/String;)V
 
-    iget-object v0, p0, Lcom/android/server/am/OnePlusBGController;->Ym:Landroid/util/SparseArray;
+    iget-object v0, p0, Lcom/android/server/am/OnePlusBGController;->dn:Landroid/util/SparseArray;
 
     monitor-enter v0
 
@@ -949,7 +1145,7 @@
 
     :goto_0
     :try_start_0
-    iget-object v2, p0, Lcom/android/server/am/OnePlusBGController;->Ym:Landroid/util/SparseArray;
+    iget-object v2, p0, Lcom/android/server/am/OnePlusBGController;->dn:Landroid/util/SparseArray;
 
     invoke-virtual {v2}, Landroid/util/SparseArray;->size()I
 
@@ -957,7 +1153,7 @@
 
     if-ge v1, v2, :cond_0
 
-    iget-object v2, p0, Lcom/android/server/am/OnePlusBGController;->Ym:Landroid/util/SparseArray;
+    iget-object v2, p0, Lcom/android/server/am/OnePlusBGController;->dn:Landroid/util/SparseArray;
 
     invoke-virtual {v2, v1}, Landroid/util/SparseArray;->valueAt(I)Ljava/lang/Object;
 
@@ -965,7 +1161,7 @@
 
     check-cast v2, Lcom/android/server/am/OnePlusBGController$bio;
 
-    sget-object v3, Lcom/android/server/am/OnePlusBGController$CleanType;->Wka:Lcom/android/server/am/OnePlusBGController$CleanType;
+    sget-object v3, Lcom/android/server/am/OnePlusBGController$CleanType;->hla:Lcom/android/server/am/OnePlusBGController$CleanType;
 
     invoke-virtual {v2, v3}, Lcom/android/server/am/OnePlusBGController$bio;->zta(Lcom/android/server/am/OnePlusBGController$CleanType;)V
 
@@ -982,7 +1178,7 @@
 
     move-result-wide v0
 
-    iput-wide v0, p0, Lcom/android/server/am/OnePlusBGController;->Um:J
+    iput-wide v0, p0, Lcom/android/server/am/OnePlusBGController;->_m:J
 
     return-void
 
@@ -997,7 +1193,7 @@
     throw p0
 .end method
 
-.method private Gm()V
+.method private Jm()V
     .locals 2
 
     iget-object p0, p0, Lcom/android/server/am/OnePlusBGController;->mSensorManager:Landroid/hardware/SensorManager;
@@ -1083,7 +1279,7 @@
 
     move-result-wide v0
 
-    iget-object p0, p0, Lcom/android/server/am/OnePlusBGController;->Yc:Landroid/util/ArrayMap;
+    iget-object p0, p0, Lcom/android/server/am/OnePlusBGController;->dd:Landroid/util/ArrayMap;
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1127,13 +1323,13 @@
     move-wide v0, v7
 
     :cond_1
-    iget-wide v7, p0, Lcom/android/server/am/OnePlusBGController$cno;->vm:J
+    iget-wide v7, p0, Lcom/android/server/am/OnePlusBGController$cno;->Bm:J
 
     sub-long/2addr v5, v7
 
     div-long/2addr v5, v0
 
-    iget-wide v7, p0, Lcom/android/server/am/OnePlusBGController$cno;->um:J
+    iget-wide v7, p0, Lcom/android/server/am/OnePlusBGController$cno;->Am:J
 
     sub-long/2addr v3, v7
 
@@ -1200,12 +1396,12 @@
 .method private Ta(I)Z
     .locals 12
 
-    iget-object v0, p0, Lcom/android/server/am/OnePlusBGController;->Yc:Landroid/util/ArrayMap;
+    iget-object v0, p0, Lcom/android/server/am/OnePlusBGController;->dd:Landroid/util/ArrayMap;
 
     monitor-enter v0
 
     :try_start_0
-    iget-object v1, p0, Lcom/android/server/am/OnePlusBGController;->Yc:Landroid/util/ArrayMap;
+    iget-object v1, p0, Lcom/android/server/am/OnePlusBGController;->dd:Landroid/util/ArrayMap;
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1249,7 +1445,7 @@
 
     invoke-direct/range {v2 .. v10}, Lcom/android/server/am/OnePlusBGController$cno;-><init>(Lcom/android/server/am/OnePlusBGController;IJJJ)V
 
-    iget-object p0, p0, Lcom/android/server/am/OnePlusBGController;->Yc:Landroid/util/ArrayMap;
+    iget-object p0, p0, Lcom/android/server/am/OnePlusBGController;->dd:Landroid/util/ArrayMap;
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1274,12 +1470,12 @@
 .method private Ua(I)V
     .locals 1
 
-    iget-object v0, p0, Lcom/android/server/am/OnePlusBGController;->Ym:Landroid/util/SparseArray;
+    iget-object v0, p0, Lcom/android/server/am/OnePlusBGController;->dn:Landroid/util/SparseArray;
 
     monitor-enter v0
 
     :try_start_0
-    iget-object p0, p0, Lcom/android/server/am/OnePlusBGController;->Ym:Landroid/util/SparseArray;
+    iget-object p0, p0, Lcom/android/server/am/OnePlusBGController;->dn:Landroid/util/SparseArray;
 
     invoke-virtual {p0, p1}, Landroid/util/SparseArray;->get(I)Ljava/lang/Object;
 
@@ -1358,11 +1554,11 @@
     monitor-enter v0
 
     :try_start_0
-    iget-object v1, p0, Lcom/android/server/am/OnePlusBGController;->mn:Lcom/android/internal/os/MyBatteryStatsHelper;
+    iget-object v1, p0, Lcom/android/server/am/OnePlusBGController;->tn:Lcom/android/internal/os/MyBatteryStatsHelper;
 
     invoke-virtual {v1, v0}, Lcom/android/internal/os/MyBatteryStatsHelper;->create(Landroid/os/BatteryStats;)V
 
-    iget-object p0, p0, Lcom/android/server/am/OnePlusBGController;->mn:Lcom/android/internal/os/MyBatteryStatsHelper;
+    iget-object p0, p0, Lcom/android/server/am/OnePlusBGController;->tn:Lcom/android/internal/os/MyBatteryStatsHelper;
 
     const/4 v1, 0x0
 
@@ -1387,7 +1583,7 @@
 .method static synthetic access$1000()Z
     .locals 1
 
-    sget-boolean v0, Lcom/android/server/am/OnePlusBGController;->An:Z
+    sget-boolean v0, Lcom/android/server/am/OnePlusBGController;->Gn:Z
 
     return v0
 .end method
@@ -1395,7 +1591,7 @@
 .method static synthetic access$1002(Z)Z
     .locals 0
 
-    sput-boolean p0, Lcom/android/server/am/OnePlusBGController;->An:Z
+    sput-boolean p0, Lcom/android/server/am/OnePlusBGController;->Gn:Z
 
     return p0
 .end method
@@ -1403,7 +1599,7 @@
 .method static synthetic access$300()I
     .locals 1
 
-    sget v0, Lcom/android/server/am/OnePlusBGController;->Cn:I
+    sget v0, Lcom/android/server/am/OnePlusBGController;->In:I
 
     return v0
 .end method
@@ -1419,7 +1615,7 @@
 .method static synthetic access$3800()Z
     .locals 1
 
-    sget-boolean v0, Lcom/android/server/am/OnePlusBGController;->zn:Z
+    sget-boolean v0, Lcom/android/server/am/OnePlusBGController;->Fn:Z
 
     return v0
 .end method
@@ -1427,7 +1623,7 @@
 .method static synthetic bio(Lcom/android/server/am/OnePlusBGController;)F
     .locals 0
 
-    iget p0, p0, Lcom/android/server/am/OnePlusBGController;->dn:F
+    iget p0, p0, Lcom/android/server/am/OnePlusBGController;->kn:F
 
     return p0
 .end method
@@ -1467,7 +1663,7 @@
 
     if-lez v0, :cond_2
 
-    iget-object v0, p0, Lcom/android/server/am/OnePlusBGController;->Ym:Landroid/util/SparseArray;
+    iget-object v0, p0, Lcom/android/server/am/OnePlusBGController;->dn:Landroid/util/SparseArray;
 
     monitor-enter v0
 
@@ -1481,7 +1677,7 @@
 
     if-ge v1, v2, :cond_1
 
-    iget-object v2, p0, Lcom/android/server/am/OnePlusBGController;->Ym:Landroid/util/SparseArray;
+    iget-object v2, p0, Lcom/android/server/am/OnePlusBGController;->dn:Landroid/util/SparseArray;
 
     invoke-interface {p1, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -1547,7 +1743,7 @@
 
     invoke-static {v3}, Lcom/android/server/am/OnePlusBGController;->myLog(Ljava/lang/String;)V
 
-    sget-object v3, Lcom/android/server/am/OnePlusBGController$CleanType;->Xka:Lcom/android/server/am/OnePlusBGController$CleanType;
+    sget-object v3, Lcom/android/server/am/OnePlusBGController$CleanType;->ila:Lcom/android/server/am/OnePlusBGController$CleanType;
 
     invoke-virtual {v2, v3}, Lcom/android/server/am/OnePlusBGController$bio;->zta(Lcom/android/server/am/OnePlusBGController$CleanType;)V
 
@@ -1580,7 +1776,7 @@
 .method static synthetic bvj(Lcom/android/server/am/OnePlusBGController;)Landroid/util/SparseArray;
     .locals 0
 
-    iget-object p0, p0, Lcom/android/server/am/OnePlusBGController;->Xm:Landroid/util/SparseArray;
+    iget-object p0, p0, Lcom/android/server/am/OnePlusBGController;->cn:Landroid/util/SparseArray;
 
     return-object p0
 .end method
@@ -1588,7 +1784,7 @@
 .method static synthetic cjf(Lcom/android/server/am/OnePlusBGController;)Landroid/util/SparseArray;
     .locals 0
 
-    iget-object p0, p0, Lcom/android/server/am/OnePlusBGController;->Ym:Landroid/util/SparseArray;
+    iget-object p0, p0, Lcom/android/server/am/OnePlusBGController;->dn:Landroid/util/SparseArray;
 
     return-object p0
 .end method
@@ -1596,7 +1792,7 @@
 .method static synthetic cno(Lcom/android/server/am/OnePlusBGController;)F
     .locals 0
 
-    iget p0, p0, Lcom/android/server/am/OnePlusBGController;->bn:F
+    iget p0, p0, Lcom/android/server/am/OnePlusBGController;->hn:F
 
     return p0
 .end method
@@ -1604,7 +1800,7 @@
 .method static synthetic cno(Lcom/android/server/am/OnePlusBGController;F)F
     .locals 0
 
-    iput p1, p0, Lcom/android/server/am/OnePlusBGController;->hn:F
+    iput p1, p0, Lcom/android/server/am/OnePlusBGController;->pn:F
 
     return p1
 .end method
@@ -1653,7 +1849,7 @@
 .method static synthetic dma(Lcom/android/server/am/OnePlusBGController;)F
     .locals 0
 
-    iget p0, p0, Lcom/android/server/am/OnePlusBGController;->gn:F
+    iget p0, p0, Lcom/android/server/am/OnePlusBGController;->nn:F
 
     return p0
 .end method
@@ -1661,7 +1857,7 @@
 .method static synthetic ear(Lcom/android/server/am/OnePlusBGController;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/am/OnePlusBGController;->Fm()V
+    invoke-direct {p0}, Lcom/android/server/am/OnePlusBGController;->Im()V
 
     return-void
 .end method
@@ -1669,7 +1865,7 @@
 .method static synthetic gck(Lcom/android/server/am/OnePlusBGController;)F
     .locals 0
 
-    iget p0, p0, Lcom/android/server/am/OnePlusBGController;->hn:F
+    iget p0, p0, Lcom/android/server/am/OnePlusBGController;->pn:F
 
     return p0
 .end method
@@ -1677,7 +1873,7 @@
 .method static synthetic gwm(Lcom/android/server/am/OnePlusBGController;)Z
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/am/OnePlusBGController;->Em()Z
+    invoke-direct {p0}, Lcom/android/server/am/OnePlusBGController;->Hm()Z
 
     move-result p0
 
@@ -1687,7 +1883,7 @@
 .method static synthetic ibl(Lcom/android/server/am/OnePlusBGController;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/am/OnePlusBGController;->Dm()V
+    invoke-direct {p0}, Lcom/android/server/am/OnePlusBGController;->Gm()V
 
     return-void
 .end method
@@ -1695,7 +1891,7 @@
 .method static synthetic igw(Lcom/android/server/am/OnePlusBGController;)F
     .locals 0
 
-    iget p0, p0, Lcom/android/server/am/OnePlusBGController;->en:F
+    iget p0, p0, Lcom/android/server/am/OnePlusBGController;->ln:F
 
     return p0
 .end method
@@ -1717,11 +1913,11 @@
 
     if-eqz v1, :cond_c
 
-    invoke-direct/range {p0 .. p0}, Lcom/android/server/am/OnePlusBGController;->Am()Ljava/util/List;
+    invoke-direct/range {p0 .. p0}, Lcom/android/server/am/OnePlusBGController;->Dm()Ljava/util/List;
 
     move-result-object v2
 
-    invoke-direct/range {p0 .. p0}, Lcom/android/server/am/OnePlusBGController;->Bm()Ljava/util/List;
+    invoke-direct/range {p0 .. p0}, Lcom/android/server/am/OnePlusBGController;->Em()Ljava/util/List;
 
     move-result-object v3
 
@@ -1754,7 +1950,7 @@
 
     move-result v8
 
-    iget-object v9, v0, Lcom/android/server/am/OnePlusBGController;->Xm:Landroid/util/SparseArray;
+    iget-object v9, v0, Lcom/android/server/am/OnePlusBGController;->cn:Landroid/util/SparseArray;
 
     invoke-virtual {v9, v8}, Landroid/util/SparseArray;->get(I)Ljava/lang/Object;
 
@@ -1797,7 +1993,7 @@
 
     move-result-wide v12
 
-    sget-boolean v7, Lcom/android/server/am/OnePlusBGController;->yn:Z
+    sget-boolean v7, Lcom/android/server/am/OnePlusBGController;->En:Z
 
     const-string v14, " mAh"
 
@@ -1842,7 +2038,7 @@
     invoke-static {v5}, Lcom/android/server/am/OnePlusBGController;->myLog(Ljava/lang/String;)V
 
     :cond_3
-    sget-object v5, Lcom/android/server/am/veq;->mm:[I
+    sget-object v5, Lcom/android/server/am/veq;->sm:[I
 
     invoke-virtual {v10}, Ljava/lang/Enum;->ordinal()I
 
@@ -2007,7 +2203,7 @@
     :cond_8
     if-eqz v9, :cond_a
 
-    iget-boolean v1, v9, Lcom/android/server/am/OnePlusBGController$igw;->Bm:Z
+    iget-boolean v1, v9, Lcom/android/server/am/OnePlusBGController$igw;->Hm:Z
 
     const/4 v2, 0x1
 
@@ -2017,9 +2213,9 @@
 
     if-ne v10, v1, :cond_a
 
-    sget-object v1, Lcom/android/server/am/veq;->lm:[I
+    sget-object v1, Lcom/android/server/am/veq;->rm:[I
 
-    iget-object v5, v0, Lcom/android/server/am/OnePlusBGController;->Tm:Lcom/android/server/am/OnePlusBGController$NetType;
+    iget-object v5, v0, Lcom/android/server/am/OnePlusBGController;->Zm:Lcom/android/server/am/OnePlusBGController$NetType;
 
     invoke-virtual {v5}, Ljava/lang/Enum;->ordinal()I
 
@@ -2096,7 +2292,7 @@
 .method static synthetic kth(Lcom/android/server/am/OnePlusBGController;)F
     .locals 0
 
-    iget p0, p0, Lcom/android/server/am/OnePlusBGController;->cn:F
+    iget p0, p0, Lcom/android/server/am/OnePlusBGController;->jn:F
 
     return p0
 .end method
@@ -2104,7 +2300,7 @@
 .method static synthetic kth(Lcom/android/server/am/OnePlusBGController;F)F
     .locals 0
 
-    iput p1, p0, Lcom/android/server/am/OnePlusBGController;->gn:F
+    iput p1, p0, Lcom/android/server/am/OnePlusBGController;->nn:F
 
     return p1
 .end method
@@ -2127,7 +2323,7 @@
 .method static synthetic obl(Lcom/android/server/am/OnePlusBGController;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/am/OnePlusBGController;->ym()V
+    invoke-direct {p0}, Lcom/android/server/am/OnePlusBGController;->Bm()V
 
     return-void
 .end method
@@ -2135,7 +2331,7 @@
 .method static synthetic oif(Lcom/android/server/am/OnePlusBGController;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/am/OnePlusBGController;->Cm()V
+    invoke-direct {p0}, Lcom/android/server/am/OnePlusBGController;->Fm()V
 
     return-void
 .end method
@@ -2143,7 +2339,7 @@
 .method static synthetic oxb(Lcom/android/server/am/OnePlusBGController;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/am/OnePlusBGController;->xm()V
+    invoke-direct {p0}, Lcom/android/server/am/OnePlusBGController;->Am()V
 
     return-void
 .end method
@@ -2179,7 +2375,7 @@
 .method static synthetic rtg(Lcom/android/server/am/OnePlusBGController;F)F
     .locals 0
 
-    iput p1, p0, Lcom/android/server/am/OnePlusBGController;->en:F
+    iput p1, p0, Lcom/android/server/am/OnePlusBGController;->ln:F
 
     return p1
 .end method
@@ -2187,7 +2383,7 @@
 .method static synthetic rtg(Lcom/android/server/am/OnePlusBGController;)Lcom/android/server/i;
     .locals 0
 
-    iget-object p0, p0, Lcom/android/server/am/OnePlusBGController;->Wm:Lcom/android/server/i;
+    iget-object p0, p0, Lcom/android/server/am/OnePlusBGController;->bn:Lcom/android/server/i;
 
     return-object p0
 .end method
@@ -2229,7 +2425,7 @@
 .method static synthetic sis(Lcom/android/server/am/OnePlusBGController;F)F
     .locals 0
 
-    iput p1, p0, Lcom/android/server/am/OnePlusBGController;->cn:F
+    iput p1, p0, Lcom/android/server/am/OnePlusBGController;->jn:F
 
     return p1
 .end method
@@ -2245,7 +2441,7 @@
 .method static synthetic ssp(Lcom/android/server/am/OnePlusBGController;)F
     .locals 0
 
-    iget p0, p0, Lcom/android/server/am/OnePlusBGController;->an:F
+    iget p0, p0, Lcom/android/server/am/OnePlusBGController;->gn:F
 
     return p0
 .end method
@@ -2253,7 +2449,7 @@
 .method static synthetic ssp(Lcom/android/server/am/OnePlusBGController;F)F
     .locals 0
 
-    iput p1, p0, Lcom/android/server/am/OnePlusBGController;->fn:F
+    iput p1, p0, Lcom/android/server/am/OnePlusBGController;->mn:F
 
     return p1
 .end method
@@ -2261,7 +2457,7 @@
 .method static synthetic tsu(Lcom/android/server/am/OnePlusBGController;F)F
     .locals 0
 
-    iput p1, p0, Lcom/android/server/am/OnePlusBGController;->dn:F
+    iput p1, p0, Lcom/android/server/am/OnePlusBGController;->kn:F
 
     return p1
 .end method
@@ -2269,7 +2465,7 @@
 .method static synthetic tsu(Lcom/android/server/am/OnePlusBGController;)Lcom/android/internal/os/MyBatteryStatsHelper;
     .locals 0
 
-    iget-object p0, p0, Lcom/android/server/am/OnePlusBGController;->mn:Lcom/android/internal/os/MyBatteryStatsHelper;
+    iget-object p0, p0, Lcom/android/server/am/OnePlusBGController;->tn:Lcom/android/internal/os/MyBatteryStatsHelper;
 
     return-object p0
 .end method
@@ -2277,7 +2473,7 @@
 .method static synthetic ugm(Lcom/android/server/am/OnePlusBGController;)Z
     .locals 0
 
-    iget-boolean p0, p0, Lcom/android/server/am/OnePlusBGController;->Sm:Z
+    iget-boolean p0, p0, Lcom/android/server/am/OnePlusBGController;->Ym:Z
 
     return p0
 .end method
@@ -2285,12 +2481,20 @@
 .method static synthetic vdb(Lcom/android/server/am/OnePlusBGController;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/am/OnePlusBGController;->vm()V
+    invoke-direct {p0}, Lcom/android/server/am/OnePlusBGController;->ym()V
 
     return-void
 .end method
 
-.method private vm()V
+.method static synthetic wtn(Lcom/android/server/am/OnePlusBGController;)F
+    .locals 0
+
+    iget p0, p0, Lcom/android/server/am/OnePlusBGController;->mn:F
+
+    return p0
+.end method
+
+.method private ym()V
     .locals 32
 
     move-object/from16 v0, p0
@@ -2303,9 +2507,9 @@
 
     move-result-wide v1
 
-    invoke-direct/range {p0 .. p0}, Lcom/android/server/am/OnePlusBGController;->xm()V
+    invoke-direct/range {p0 .. p0}, Lcom/android/server/am/OnePlusBGController;->Am()V
 
-    iget-object v3, v0, Lcom/android/server/am/OnePlusBGController;->_m:Lcom/android/server/am/OnePlusBGController$zta;
+    iget-object v3, v0, Lcom/android/server/am/OnePlusBGController;->fn:Lcom/android/server/am/OnePlusBGController$zta;
 
     invoke-virtual {v3}, Lcom/android/server/am/OnePlusBGController$zta;->cleanUp()V
 
@@ -2353,13 +2557,13 @@
 
     move-result-wide v7
 
-    invoke-direct/range {p0 .. p0}, Lcom/android/server/am/OnePlusBGController;->wm()V
+    invoke-direct/range {p0 .. p0}, Lcom/android/server/am/OnePlusBGController;->zm()V
 
-    sget-boolean v2, Lcom/android/server/am/OnePlusBGController;->yn:Z
+    sget-boolean v2, Lcom/android/server/am/OnePlusBGController;->En:Z
 
     if-eqz v2, :cond_0
 
-    invoke-direct/range {p0 .. p0}, Lcom/android/server/am/OnePlusBGController;->ym()V
+    invoke-direct/range {p0 .. p0}, Lcom/android/server/am/OnePlusBGController;->Bm()V
 
     :cond_0
     new-instance v2, Ljava/lang/StringBuilder;
@@ -2370,7 +2574,7 @@
 
     invoke-virtual {v2, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v9, v0, Lcom/android/server/am/OnePlusBGController;->Zm:Ljava/util/List;
+    iget-object v9, v0, Lcom/android/server/am/OnePlusBGController;->en:Ljava/util/List;
 
     invoke-interface {v9}, Ljava/util/List;->size()I
 
@@ -2387,7 +2591,7 @@
     move v2, v3
 
     :goto_0
-    iget-object v9, v0, Lcom/android/server/am/OnePlusBGController;->Zm:Ljava/util/List;
+    iget-object v9, v0, Lcom/android/server/am/OnePlusBGController;->en:Ljava/util/List;
 
     invoke-interface {v9}, Ljava/util/List;->size()I
 
@@ -2395,7 +2599,7 @@
 
     if-ge v2, v9, :cond_17
 
-    iget-object v9, v0, Lcom/android/server/am/OnePlusBGController;->Zm:Ljava/util/List;
+    iget-object v9, v0, Lcom/android/server/am/OnePlusBGController;->en:Ljava/util/List;
 
     invoke-interface {v9, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -2437,7 +2641,7 @@
 
     if-eqz v13, :cond_3
 
-    iget-object v13, v0, Lcom/android/server/am/OnePlusBGController;->Wm:Lcom/android/server/i;
+    iget-object v13, v0, Lcom/android/server/am/OnePlusBGController;->bn:Lcom/android/server/i;
 
     if-nez v13, :cond_1
 
@@ -2449,10 +2653,10 @@
 
     check-cast v13, Lcom/android/server/i;
 
-    iput-object v13, v0, Lcom/android/server/am/OnePlusBGController;->Wm:Lcom/android/server/i;
+    iput-object v13, v0, Lcom/android/server/am/OnePlusBGController;->bn:Lcom/android/server/i;
 
     :cond_1
-    iget-object v13, v0, Lcom/android/server/am/OnePlusBGController;->Wm:Lcom/android/server/i;
+    iget-object v13, v0, Lcom/android/server/am/OnePlusBGController;->bn:Lcom/android/server/i;
 
     if-eqz v13, :cond_2
 
@@ -2490,14 +2694,14 @@
     if-eqz v12, :cond_5
 
     :cond_4
-    iget v3, v0, Lcom/android/server/am/OnePlusBGController;->an:F
+    iget v3, v0, Lcom/android/server/am/OnePlusBGController;->gn:F
 
     goto :goto_2
 
     :cond_5
     if-eqz v10, :cond_4
 
-    iget v3, v0, Lcom/android/server/am/OnePlusBGController;->bn:F
+    iget v3, v0, Lcom/android/server/am/OnePlusBGController;->hn:F
 
     :goto_2
     move v14, v3
@@ -2515,19 +2719,19 @@
 
     if-eqz v3, :cond_9
 
-    sget-object v3, Lcom/android/server/am/OnePlusBGController$AppBucketRanking;->Vka:Lcom/android/server/am/OnePlusBGController$AppBucketRanking;
+    sget-object v3, Lcom/android/server/am/OnePlusBGController$AppBucketRanking;->gla:Lcom/android/server/am/OnePlusBGController$AppBucketRanking;
 
     if-eqz v12, :cond_8
 
     :cond_7
-    iget v14, v0, Lcom/android/server/am/OnePlusBGController;->cn:F
+    iget v14, v0, Lcom/android/server/am/OnePlusBGController;->jn:F
 
     goto :goto_3
 
     :cond_8
     if-eqz v10, :cond_7
 
-    iget v14, v0, Lcom/android/server/am/OnePlusBGController;->dn:F
+    iget v14, v0, Lcom/android/server/am/OnePlusBGController;->kn:F
 
     goto :goto_3
 
@@ -2545,14 +2749,14 @@
     if-eqz v12, :cond_b
 
     :cond_a
-    iget v14, v0, Lcom/android/server/am/OnePlusBGController;->en:F
+    iget v14, v0, Lcom/android/server/am/OnePlusBGController;->ln:F
 
     goto :goto_3
 
     :cond_b
     if-eqz v10, :cond_a
 
-    iget v14, v0, Lcom/android/server/am/OnePlusBGController;->fn:F
+    iget v14, v0, Lcom/android/server/am/OnePlusBGController;->mn:F
 
     goto :goto_3
 
@@ -2599,7 +2803,7 @@
     if-eqz v12, :cond_e
 
     :cond_d
-    iget v4, v0, Lcom/android/server/am/OnePlusBGController;->en:F
+    iget v4, v0, Lcom/android/server/am/OnePlusBGController;->ln:F
 
     :goto_4
     move v14, v4
@@ -2609,7 +2813,7 @@
     :cond_e
     if-eqz v10, :cond_d
 
-    iget v4, v0, Lcom/android/server/am/OnePlusBGController;->fn:F
+    iget v4, v0, Lcom/android/server/am/OnePlusBGController;->mn:F
 
     goto :goto_4
 
@@ -2629,7 +2833,7 @@
 
     if-eqz v12, :cond_10
 
-    iget v5, v0, Lcom/android/server/am/OnePlusBGController;->hn:F
+    iget v5, v0, Lcom/android/server/am/OnePlusBGController;->pn:F
 
     goto :goto_6
 
@@ -2684,7 +2888,7 @@
 
     move-result-wide v6
 
-    iget v8, v0, Lcom/android/server/am/OnePlusBGController;->gn:F
+    iget v8, v0, Lcom/android/server/am/OnePlusBGController;->nn:F
 
     move-object/from16 v30, v1
 
@@ -2816,7 +3020,7 @@
 
     invoke-virtual {v12, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget v2, v0, Lcom/android/server/am/OnePlusBGController;->hn:F
+    iget v2, v0, Lcom/android/server/am/OnePlusBGController;->pn:F
 
     invoke-virtual {v12, v2}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
 
@@ -2840,7 +3044,7 @@
 
     invoke-static {v2}, Lcom/android/server/am/OnePlusBGController;->myLog(Ljava/lang/String;)V
 
-    iget-object v10, v0, Lcom/android/server/am/OnePlusBGController;->_m:Lcom/android/server/am/OnePlusBGController$zta;
+    iget-object v10, v0, Lcom/android/server/am/OnePlusBGController;->fn:Lcom/android/server/am/OnePlusBGController$zta;
 
     invoke-virtual {v9}, Lcom/android/server/am/OnePlusBGController$bio;->getUid()I
 
@@ -2887,7 +3091,7 @@
     :cond_15
     move/from16 v22, v5
 
-    sget-boolean v5, Lcom/android/server/am/OnePlusBGController;->yn:Z
+    sget-boolean v5, Lcom/android/server/am/OnePlusBGController;->En:Z
 
     if-eqz v5, :cond_16
 
@@ -2935,7 +3139,7 @@
 
     invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget v1, v0, Lcom/android/server/am/OnePlusBGController;->hn:F
+    iget v1, v0, Lcom/android/server/am/OnePlusBGController;->pn:F
 
     invoke-virtual {v5, v1}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
 
@@ -2984,16 +3188,16 @@
 
     if-eqz v1, :cond_18
 
-    iget-object v1, v0, Lcom/android/server/am/OnePlusBGController;->_m:Lcom/android/server/am/OnePlusBGController$zta;
+    iget-object v1, v0, Lcom/android/server/am/OnePlusBGController;->fn:Lcom/android/server/am/OnePlusBGController$zta;
 
     invoke-virtual {v1}, Lcom/android/server/am/OnePlusBGController$zta;->dump()V
 
     :cond_18
-    sget-object v1, Lcom/android/server/am/OnePlusBGController;->Fn:Landroid/os/Handler;
+    sget-object v1, Lcom/android/server/am/OnePlusBGController;->Ln:Landroid/os/Handler;
 
     const v2, 0x101d4
 
-    iget-object v0, v0, Lcom/android/server/am/OnePlusBGController;->_m:Lcom/android/server/am/OnePlusBGController$zta;
+    iget-object v0, v0, Lcom/android/server/am/OnePlusBGController;->fn:Lcom/android/server/am/OnePlusBGController$zta;
 
     const/4 v3, 0x0
 
@@ -3001,7 +3205,7 @@
 
     move-result-object v0
 
-    sget-object v1, Lcom/android/server/am/OnePlusBGController;->Fn:Landroid/os/Handler;
+    sget-object v1, Lcom/android/server/am/OnePlusBGController;->Ln:Landroid/os/Handler;
 
     invoke-virtual {v1, v0}, Landroid/os/Handler;->sendMessage(Landroid/os/Message;)Z
 
@@ -3034,235 +3238,10 @@
     return-void
 .end method
 
-.method private wm()V
-    .locals 7
-
-    iget-object v0, p0, Lcom/android/server/am/OnePlusBGController;->Zm:Ljava/util/List;
-
-    invoke-interface {v0}, Ljava/util/List;->clear()V
-
-    iget-object v0, p0, Lcom/android/server/am/OnePlusBGController;->Ym:Landroid/util/SparseArray;
-
-    monitor-enter v0
-
-    const/4 v1, 0x0
-
-    :goto_0
-    :try_start_0
-    iget-object v2, p0, Lcom/android/server/am/OnePlusBGController;->Ym:Landroid/util/SparseArray;
-
-    invoke-virtual {v2}, Landroid/util/SparseArray;->size()I
-
-    move-result v2
-
-    if-ge v1, v2, :cond_1
-
-    iget-object v2, p0, Lcom/android/server/am/OnePlusBGController;->Ym:Landroid/util/SparseArray;
-
-    invoke-virtual {v2, v1}, Landroid/util/SparseArray;->valueAt(I)Ljava/lang/Object;
-
-    move-result-object v2
-
-    check-cast v2, Lcom/android/server/am/OnePlusBGController$bio;
-
-    invoke-virtual {v2}, Lcom/android/server/am/OnePlusBGController$bio;->rb()D
-
-    move-result-wide v3
-
-    const-wide/16 v5, 0x0
-
-    cmpl-double v3, v3, v5
-
-    if-lez v3, :cond_0
-
-    invoke-virtual {v2}, Lcom/android/server/am/OnePlusBGController$bio;->getUid()I
-
-    move-result v3
-
-    const/16 v4, 0x2710
-
-    if-lt v3, v4, :cond_0
-
-    iget-object v3, p0, Lcom/android/server/am/OnePlusBGController;->Zm:Ljava/util/List;
-
-    invoke-interface {v3, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
-
-    :cond_0
-    add-int/lit8 v1, v1, 0x1
-
-    goto :goto_0
-
-    :cond_1
-    monitor-exit v0
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    iget-object v0, p0, Lcom/android/server/am/OnePlusBGController;->Zm:Ljava/util/List;
-
-    iget-object p0, p0, Lcom/android/server/am/OnePlusBGController;->rn:Ljava/util/Comparator;
-
-    invoke-static {v0, p0}, Ljava/util/Collections;->sort(Ljava/util/List;Ljava/util/Comparator;)V
-
-    return-void
-
-    :catchall_0
-    move-exception p0
-
-    :try_start_1
-    monitor-exit v0
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
-    throw p0
-.end method
-
-.method static synthetic wtn(Lcom/android/server/am/OnePlusBGController;)F
-    .locals 0
-
-    iget p0, p0, Lcom/android/server/am/OnePlusBGController;->fn:F
-
-    return p0
-.end method
-
-.method private xm()V
-    .locals 3
-
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v1, "BGC Criteria : H:["
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget v1, p0, Lcom/android/server/am/OnePlusBGController;->an:F
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
-
-    const-string v1, ", "
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget v2, p0, Lcom/android/server/am/OnePlusBGController;->bn:F
-
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
-
-    const-string v2, "] / G:["
-
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget v2, p0, Lcom/android/server/am/OnePlusBGController;->cn:F
-
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget v2, p0, Lcom/android/server/am/OnePlusBGController;->dn:F
-
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
-
-    const-string v2, "] / L:["
-
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget v2, p0, Lcom/android/server/am/OnePlusBGController;->en:F
-
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget v1, p0, Lcom/android/server/am/OnePlusBGController;->fn:F
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
-
-    const-string v1, "] / [S: "
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget v1, p0, Lcom/android/server/am/OnePlusBGController;->gn:F
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
-
-    const-string v1, ", R: "
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget p0, p0, Lcom/android/server/am/OnePlusBGController;->hn:F
-
-    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
-
-    const-string p0, "]"
-
-    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p0
-
-    invoke-static {p0}, Lcom/android/server/am/OnePlusBGController;->myLog(Ljava/lang/String;)V
-
-    return-void
-.end method
-
-.method private ym()V
-    .locals 3
-
-    iget-object v0, p0, Lcom/android/server/am/OnePlusBGController;->Zm:Ljava/util/List;
-
-    monitor-enter v0
-
-    const/4 v1, 0x0
-
-    :goto_0
-    :try_start_0
-    iget-object v2, p0, Lcom/android/server/am/OnePlusBGController;->Zm:Ljava/util/List;
-
-    invoke-interface {v2}, Ljava/util/List;->size()I
-
-    move-result v2
-
-    if-ge v1, v2, :cond_1
-
-    iget-object v2, p0, Lcom/android/server/am/OnePlusBGController;->Zm:Ljava/util/List;
-
-    invoke-interface {v2, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
-
-    move-result-object v2
-
-    check-cast v2, Lcom/android/server/am/OnePlusBGController$bio;
-
-    if-eqz v2, :cond_0
-
-    invoke-virtual {v2}, Lcom/android/server/am/OnePlusBGController$bio;->toString()Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-static {v2}, Lcom/android/server/am/OnePlusBGController;->myLog(Ljava/lang/String;)V
-
-    :cond_0
-    add-int/lit8 v1, v1, 0x1
-
-    goto :goto_0
-
-    :cond_1
-    monitor-exit v0
-
-    return-void
-
-    :catchall_0
-    move-exception p0
-
-    monitor-exit v0
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    throw p0
-.end method
-
 .method static synthetic you(Lcom/android/server/am/OnePlusBGController;F)F
     .locals 0
 
-    iput p1, p0, Lcom/android/server/am/OnePlusBGController;->bn:F
+    iput p1, p0, Lcom/android/server/am/OnePlusBGController;->hn:F
 
     return p1
 .end method
@@ -3270,7 +3249,7 @@
 .method private you(ILcom/android/server/am/OnePlusBGController$ProcType;D)V
     .locals 9
 
-    sget v0, Lcom/android/server/am/OnePlusBGController;->Cn:I
+    sget v0, Lcom/android/server/am/OnePlusBGController;->In:I
 
     const/4 v1, 0x1
 
@@ -3332,7 +3311,7 @@
 
     invoke-static {v3}, Lcom/android/server/am/OnePlusBGController;->myLog(Ljava/lang/String;)V
 
-    sget-object v3, Lcom/android/server/am/OnePlusBGController$ProcType;->bla:Lcom/android/server/am/OnePlusBGController$ProcType;
+    sget-object v3, Lcom/android/server/am/OnePlusBGController$ProcType;->nla:Lcom/android/server/am/OnePlusBGController$ProcType;
 
     if-ne p2, v3, :cond_5
 
@@ -3473,9 +3452,9 @@
 
     if-ne p2, v0, :cond_8
 
-    sget-object v0, Lcom/android/server/am/veq;->lm:[I
+    sget-object v0, Lcom/android/server/am/veq;->rm:[I
 
-    iget-object v2, p0, Lcom/android/server/am/OnePlusBGController;->Tm:Lcom/android/server/am/OnePlusBGController$NetType;
+    iget-object v2, p0, Lcom/android/server/am/OnePlusBGController;->Zm:Lcom/android/server/am/OnePlusBGController$NetType;
 
     invoke-virtual {v2}, Ljava/lang/Enum;->ordinal()I
 
@@ -3532,7 +3511,7 @@
 .method static synthetic you(Lcom/android/server/am/OnePlusBGController;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/am/OnePlusBGController;->Gm()V
+    invoke-direct {p0}, Lcom/android/server/am/OnePlusBGController;->Jm()V
 
     return-void
 .end method
@@ -3556,7 +3535,7 @@
 .method static synthetic you(Lcom/android/server/am/OnePlusBGController;Z)Z
     .locals 0
 
-    iput-boolean p1, p0, Lcom/android/server/am/OnePlusBGController;->Sm:Z
+    iput-boolean p1, p0, Lcom/android/server/am/OnePlusBGController;->Ym:Z
 
     return p1
 .end method
@@ -3564,7 +3543,7 @@
 .method static synthetic ywr(Lcom/android/server/am/OnePlusBGController;)Ljava/util/HashSet;
     .locals 0
 
-    iget-object p0, p0, Lcom/android/server/am/OnePlusBGController;->jn:Ljava/util/HashSet;
+    iget-object p0, p0, Lcom/android/server/am/OnePlusBGController;->qn:Ljava/util/HashSet;
 
     return-object p0
 .end method
@@ -3572,7 +3551,7 @@
 .method static synthetic zgw(Lcom/android/server/am/OnePlusBGController;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/am/OnePlusBGController;->zm()V
+    invoke-direct {p0}, Lcom/android/server/am/OnePlusBGController;->Cm()V
 
     return-void
 .end method
@@ -3580,12 +3559,12 @@
 .method private zgw(IZ)Z
     .locals 9
 
-    iget-object v0, p0, Lcom/android/server/am/OnePlusBGController;->Xm:Landroid/util/SparseArray;
+    iget-object v0, p0, Lcom/android/server/am/OnePlusBGController;->cn:Landroid/util/SparseArray;
 
     monitor-enter v0
 
     :try_start_0
-    iget-object p0, p0, Lcom/android/server/am/OnePlusBGController;->Xm:Landroid/util/SparseArray;
+    iget-object p0, p0, Lcom/android/server/am/OnePlusBGController;->cn:Landroid/util/SparseArray;
 
     invoke-virtual {p0, p1}, Landroid/util/SparseArray;->get(I)Ljava/lang/Object;
 
@@ -3701,13 +3680,13 @@
     move-wide v1, v7
 
     :cond_1
-    iget-wide v7, p0, Lcom/android/server/am/OnePlusBGController$cno;->vm:J
+    iget-wide v7, p0, Lcom/android/server/am/OnePlusBGController$cno;->Bm:J
 
     sub-long/2addr v5, v7
 
     div-long/2addr v5, v1
 
-    iget-wide v7, p0, Lcom/android/server/am/OnePlusBGController$cno;->um:J
+    iget-wide v7, p0, Lcom/android/server/am/OnePlusBGController$cno;->Am:J
 
     sub-long/2addr v3, v7
 
@@ -3841,9 +3820,13 @@
 .end method
 
 .method private zm()V
-    .locals 4
+    .locals 7
 
-    iget-object v0, p0, Lcom/android/server/am/OnePlusBGController;->Ym:Landroid/util/SparseArray;
+    iget-object v0, p0, Lcom/android/server/am/OnePlusBGController;->en:Ljava/util/List;
+
+    invoke-interface {v0}, Ljava/util/List;->clear()V
+
+    iget-object v0, p0, Lcom/android/server/am/OnePlusBGController;->dn:Landroid/util/SparseArray;
 
     monitor-enter v0
 
@@ -3851,7 +3834,7 @@
 
     :goto_0
     :try_start_0
-    iget-object v2, p0, Lcom/android/server/am/OnePlusBGController;->Ym:Landroid/util/SparseArray;
+    iget-object v2, p0, Lcom/android/server/am/OnePlusBGController;->dn:Landroid/util/SparseArray;
 
     invoke-virtual {v2}, Landroid/util/SparseArray;->size()I
 
@@ -3859,27 +3842,35 @@
 
     if-ge v1, v2, :cond_1
 
-    iget-object v2, p0, Lcom/android/server/am/OnePlusBGController;->Ym:Landroid/util/SparseArray;
+    iget-object v2, p0, Lcom/android/server/am/OnePlusBGController;->dn:Landroid/util/SparseArray;
 
-    invoke-virtual {v2, v1}, Landroid/util/SparseArray;->keyAt(I)I
-
-    move-result v2
-
-    iget-object v3, p0, Lcom/android/server/am/OnePlusBGController;->Ym:Landroid/util/SparseArray;
-
-    invoke-virtual {v3, v2}, Landroid/util/SparseArray;->get(I)Ljava/lang/Object;
+    invoke-virtual {v2, v1}, Landroid/util/SparseArray;->valueAt(I)Ljava/lang/Object;
 
     move-result-object v2
 
     check-cast v2, Lcom/android/server/am/OnePlusBGController$bio;
 
-    if-eqz v2, :cond_0
+    invoke-virtual {v2}, Lcom/android/server/am/OnePlusBGController$bio;->rb()D
 
-    invoke-virtual {v2}, Lcom/android/server/am/OnePlusBGController$bio;->toString()Ljava/lang/String;
+    move-result-wide v3
 
-    move-result-object v2
+    const-wide/16 v5, 0x0
 
-    invoke-static {v2}, Lcom/android/server/am/OnePlusBGController;->myLog(Ljava/lang/String;)V
+    cmpl-double v3, v3, v5
+
+    if-lez v3, :cond_0
+
+    invoke-virtual {v2}, Lcom/android/server/am/OnePlusBGController$bio;->getUid()I
+
+    move-result v3
+
+    const/16 v4, 0x2710
+
+    if-lt v3, v4, :cond_0
+
+    iget-object v3, p0, Lcom/android/server/am/OnePlusBGController;->en:Ljava/util/List;
+
+    invoke-interface {v3, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     :cond_0
     add-int/lit8 v1, v1, 0x1
@@ -3888,15 +3879,24 @@
 
     :cond_1
     monitor-exit v0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    iget-object v0, p0, Lcom/android/server/am/OnePlusBGController;->en:Ljava/util/List;
+
+    iget-object p0, p0, Lcom/android/server/am/OnePlusBGController;->xn:Ljava/util/Comparator;
+
+    invoke-static {v0, p0}, Ljava/util/Collections;->sort(Ljava/util/List;Ljava/util/Comparator;)V
 
     return-void
 
     :catchall_0
     move-exception p0
 
+    :try_start_1
     monitor-exit v0
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     throw p0
 .end method
@@ -3914,7 +3914,7 @@
 .method static synthetic zta(Lcom/android/server/am/OnePlusBGController;F)F
     .locals 0
 
-    iput p1, p0, Lcom/android/server/am/OnePlusBGController;->an:F
+    iput p1, p0, Lcom/android/server/am/OnePlusBGController;->gn:F
 
     return p1
 .end method
@@ -3930,7 +3930,7 @@
 .method static synthetic zta(Lcom/android/server/am/OnePlusBGController;Lcom/android/server/i;)Lcom/android/server/i;
     .locals 0
 
-    iput-object p1, p0, Lcom/android/server/am/OnePlusBGController;->Wm:Lcom/android/server/i;
+    iput-object p1, p0, Lcom/android/server/am/OnePlusBGController;->bn:Lcom/android/server/i;
 
     return-object p1
 .end method
@@ -4047,7 +4047,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lcom/android/server/am/OnePlusBGController;->mn:Lcom/android/internal/os/MyBatteryStatsHelper;
+    iget-object v1, p0, Lcom/android/server/am/OnePlusBGController;->tn:Lcom/android/internal/os/MyBatteryStatsHelper;
 
     invoke-virtual {v1}, Lcom/android/internal/os/MyBatteryStatsHelper;->getTotalPower()D
 
@@ -4061,7 +4061,7 @@
 
     iget-wide v1, p2, Lcom/android/internal/os/BatterySipper;->totalPowerMah:D
 
-    iget-object p0, p0, Lcom/android/server/am/OnePlusBGController;->mn:Lcom/android/internal/os/MyBatteryStatsHelper;
+    iget-object p0, p0, Lcom/android/server/am/OnePlusBGController;->tn:Lcom/android/internal/os/MyBatteryStatsHelper;
 
     invoke-virtual {p0}, Lcom/android/internal/os/MyBatteryStatsHelper;->getTotalPower()D
 
@@ -4124,7 +4124,7 @@
 
     invoke-static {v0}, Lcom/android/server/am/OnePlusBGController;->myLog(Ljava/lang/String;)V
 
-    iget-object v0, p0, Lcom/android/server/am/OnePlusBGController;->Xm:Landroid/util/SparseArray;
+    iget-object v0, p0, Lcom/android/server/am/OnePlusBGController;->cn:Landroid/util/SparseArray;
 
     invoke-virtual {v0, p1}, Landroid/util/SparseArray;->get(I)Ljava/lang/Object;
 
@@ -4151,7 +4151,7 @@
     sget-object v0, Lcom/android/server/am/OnePlusBGController$ProcType;->F:Lcom/android/server/am/OnePlusBGController$ProcType;
 
     :goto_0
-    sget-object v1, Lcom/android/server/am/OnePlusBGController$ProcType;->bla:Lcom/android/server/am/OnePlusBGController$ProcType;
+    sget-object v1, Lcom/android/server/am/OnePlusBGController$ProcType;->nla:Lcom/android/server/am/OnePlusBGController$ProcType;
 
     if-ne v0, v1, :cond_2
 
@@ -4210,12 +4210,12 @@
 .method private zta(ILcom/android/server/am/OnePlusBGController$ProcType;D)V
     .locals 9
 
-    iget-object v0, p0, Lcom/android/server/am/OnePlusBGController;->Ym:Landroid/util/SparseArray;
+    iget-object v0, p0, Lcom/android/server/am/OnePlusBGController;->dn:Landroid/util/SparseArray;
 
     monitor-enter v0
 
     :try_start_0
-    iget-object v1, p0, Lcom/android/server/am/OnePlusBGController;->Ym:Landroid/util/SparseArray;
+    iget-object v1, p0, Lcom/android/server/am/OnePlusBGController;->dn:Landroid/util/SparseArray;
 
     invoke-virtual {v1, p1}, Landroid/util/SparseArray;->get(I)Ljava/lang/Object;
 
@@ -4341,7 +4341,7 @@
 
     invoke-static {v1}, Lcom/android/server/am/OnePlusBGController;->myLog(Ljava/lang/String;)V
 
-    iget-object p0, p0, Lcom/android/server/am/OnePlusBGController;->Ym:Landroid/util/SparseArray;
+    iget-object p0, p0, Lcom/android/server/am/OnePlusBGController;->dn:Landroid/util/SparseArray;
 
     new-instance v8, Lcom/android/server/am/OnePlusBGController$bio;
 
@@ -4570,7 +4570,7 @@
 .method public Db()I
     .locals 0
 
-    sget p0, Lcom/android/server/am/OnePlusBGController;->Cn:I
+    sget p0, Lcom/android/server/am/OnePlusBGController;->In:I
 
     return p0
 .end method
@@ -4578,7 +4578,7 @@
 .method public Eb()Ljava/lang/String;
     .locals 2
 
-    iget v0, p0, Lcom/android/server/am/OnePlusBGController;->Vm:I
+    iget v0, p0, Lcom/android/server/am/OnePlusBGController;->an:I
 
     const/4 v1, -0x1
 
@@ -4601,7 +4601,7 @@
 .method Fb()V
     .locals 7
 
-    iget-object v0, p0, Lcom/android/server/am/OnePlusBGController;->Xm:Landroid/util/SparseArray;
+    iget-object v0, p0, Lcom/android/server/am/OnePlusBGController;->cn:Landroid/util/SparseArray;
 
     invoke-virtual {v0}, Landroid/util/SparseArray;->clear()V
 
@@ -4758,7 +4758,7 @@
 
     move-result v2
 
-    iput v2, p0, Lcom/android/server/am/OnePlusBGController;->Vm:I
+    iput v2, p0, Lcom/android/server/am/OnePlusBGController;->an:I
 
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -4768,7 +4768,7 @@
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget v3, p0, Lcom/android/server/am/OnePlusBGController;->Vm:I
+    iget v3, p0, Lcom/android/server/am/OnePlusBGController;->an:I
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -4798,19 +4798,19 @@
         }
     .end annotation
 
-    iget-object v0, p0, Lcom/android/server/am/OnePlusBGController;->Ym:Landroid/util/SparseArray;
+    iget-object v0, p0, Lcom/android/server/am/OnePlusBGController;->dn:Landroid/util/SparseArray;
 
     monitor-enter v0
 
     :try_start_0
-    iget-object v1, p0, Lcom/android/server/am/OnePlusBGController;->ln:Ljava/util/HashSet;
+    iget-object v1, p0, Lcom/android/server/am/OnePlusBGController;->sn:Ljava/util/HashSet;
 
     invoke-virtual {v1}, Ljava/util/HashSet;->clear()V
 
     const/4 v1, 0x0
 
     :goto_0
-    iget-object v2, p0, Lcom/android/server/am/OnePlusBGController;->Ym:Landroid/util/SparseArray;
+    iget-object v2, p0, Lcom/android/server/am/OnePlusBGController;->dn:Landroid/util/SparseArray;
 
     invoke-virtual {v2}, Landroid/util/SparseArray;->size()I
 
@@ -4818,7 +4818,7 @@
 
     if-ge v1, v2, :cond_1
 
-    iget-object v2, p0, Lcom/android/server/am/OnePlusBGController;->Ym:Landroid/util/SparseArray;
+    iget-object v2, p0, Lcom/android/server/am/OnePlusBGController;->dn:Landroid/util/SparseArray;
 
     invoke-virtual {v2, v1}, Landroid/util/SparseArray;->valueAt(I)Ljava/lang/Object;
 
@@ -4838,7 +4838,7 @@
 
     if-eqz v3, :cond_0
 
-    iget-object v3, p0, Lcom/android/server/am/OnePlusBGController;->ln:Ljava/util/HashSet;
+    iget-object v3, p0, Lcom/android/server/am/OnePlusBGController;->sn:Ljava/util/HashSet;
 
     invoke-virtual {v2}, Lcom/android/server/am/OnePlusBGController$bio;->getUid()I
 
@@ -4856,7 +4856,7 @@
     goto :goto_0
 
     :cond_1
-    iget-object p0, p0, Lcom/android/server/am/OnePlusBGController;->ln:Ljava/util/HashSet;
+    iget-object p0, p0, Lcom/android/server/am/OnePlusBGController;->sn:Ljava/util/HashSet;
 
     monitor-exit v0
 
@@ -4875,7 +4875,7 @@
 .method public dma(II)Z
     .locals 0
 
-    iget-boolean p1, p0, Lcom/android/server/am/OnePlusBGController;->Pm:Z
+    iget-boolean p1, p0, Lcom/android/server/am/OnePlusBGController;->Vm:Z
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/am/OnePlusBGController;->cno(ZI)Z
 
@@ -4944,7 +4944,7 @@
     return-void
 
     :cond_0
-    iget-object v0, p0, Lcom/android/server/am/OnePlusBGController;->Xm:Landroid/util/SparseArray;
+    iget-object v0, p0, Lcom/android/server/am/OnePlusBGController;->cn:Landroid/util/SparseArray;
 
     invoke-virtual {v0, p1}, Landroid/util/SparseArray;->indexOfKey(I)I
 
@@ -4954,18 +4954,18 @@
 
     new-instance v0, Lcom/android/server/am/OnePlusBGController$igw;
 
-    iget-boolean v1, p0, Lcom/android/server/am/OnePlusBGController;->Pm:Z
+    iget-boolean v1, p0, Lcom/android/server/am/OnePlusBGController;->Vm:Z
 
     invoke-direct {v0, p0, p1, v1, p2}, Lcom/android/server/am/OnePlusBGController$igw;-><init>(Lcom/android/server/am/OnePlusBGController;IZI)V
 
-    iget-object p0, p0, Lcom/android/server/am/OnePlusBGController;->Xm:Landroid/util/SparseArray;
+    iget-object p0, p0, Lcom/android/server/am/OnePlusBGController;->cn:Landroid/util/SparseArray;
 
     invoke-virtual {p0, p1, v0}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
 
     goto :goto_0
 
     :cond_1
-    iget-object v0, p0, Lcom/android/server/am/OnePlusBGController;->Xm:Landroid/util/SparseArray;
+    iget-object v0, p0, Lcom/android/server/am/OnePlusBGController;->cn:Landroid/util/SparseArray;
 
     invoke-virtual {v0, p1}, Landroid/util/SparseArray;->get(I)Ljava/lang/Object;
 
@@ -4981,12 +4981,12 @@
 
     if-ne p2, v0, :cond_3
 
-    iget-object p2, p0, Lcom/android/server/am/OnePlusBGController;->Ym:Landroid/util/SparseArray;
+    iget-object p2, p0, Lcom/android/server/am/OnePlusBGController;->dn:Landroid/util/SparseArray;
 
     monitor-enter p2
 
     :try_start_0
-    iget-object p0, p0, Lcom/android/server/am/OnePlusBGController;->Ym:Landroid/util/SparseArray;
+    iget-object p0, p0, Lcom/android/server/am/OnePlusBGController;->dn:Landroid/util/SparseArray;
 
     invoke-virtual {p0, p1}, Landroid/util/SparseArray;->get(I)Ljava/lang/Object;
 
@@ -5052,7 +5052,7 @@
 
     move-result-object p1
 
-    iget v0, p0, Lcom/android/server/am/OnePlusBGController;->Vm:I
+    iget v0, p0, Lcom/android/server/am/OnePlusBGController;->an:I
 
     const/4 v1, -0x1
 
@@ -5116,7 +5116,7 @@
 
     move-result-wide v0
 
-    iget-wide v2, p0, Lcom/android/server/am/OnePlusBGController;->Um:J
+    iget-wide v2, p0, Lcom/android/server/am/OnePlusBGController;->_m:J
 
     sub-long/2addr v0, v2
 
@@ -5136,7 +5136,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget v1, p0, Lcom/android/server/am/OnePlusBGController;->an:F
+    iget v1, p0, Lcom/android/server/am/OnePlusBGController;->gn:F
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
 
@@ -5144,7 +5144,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget v1, p0, Lcom/android/server/am/OnePlusBGController;->bn:F
+    iget v1, p0, Lcom/android/server/am/OnePlusBGController;->hn:F
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
 
@@ -5152,7 +5152,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget v1, p0, Lcom/android/server/am/OnePlusBGController;->cn:F
+    iget v1, p0, Lcom/android/server/am/OnePlusBGController;->jn:F
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
 
@@ -5160,7 +5160,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget v1, p0, Lcom/android/server/am/OnePlusBGController;->dn:F
+    iget v1, p0, Lcom/android/server/am/OnePlusBGController;->kn:F
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
 
@@ -5168,7 +5168,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget v1, p0, Lcom/android/server/am/OnePlusBGController;->en:F
+    iget v1, p0, Lcom/android/server/am/OnePlusBGController;->ln:F
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
 
@@ -5176,7 +5176,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget v1, p0, Lcom/android/server/am/OnePlusBGController;->fn:F
+    iget v1, p0, Lcom/android/server/am/OnePlusBGController;->mn:F
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
 
@@ -5184,7 +5184,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget v1, p0, Lcom/android/server/am/OnePlusBGController;->gn:F
+    iget v1, p0, Lcom/android/server/am/OnePlusBGController;->nn:F
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
 
@@ -5192,7 +5192,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget v1, p0, Lcom/android/server/am/OnePlusBGController;->hn:F
+    iget v1, p0, Lcom/android/server/am/OnePlusBGController;->pn:F
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
 
@@ -5206,7 +5206,7 @@
 
     invoke-virtual {p1, v0}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
-    iget-object v0, p0, Lcom/android/server/am/OnePlusBGController;->Ym:Landroid/util/SparseArray;
+    iget-object v0, p0, Lcom/android/server/am/OnePlusBGController;->dn:Landroid/util/SparseArray;
 
     monitor-enter v0
 
@@ -5214,7 +5214,7 @@
 
     :goto_0
     :try_start_0
-    iget-object v2, p0, Lcom/android/server/am/OnePlusBGController;->Ym:Landroid/util/SparseArray;
+    iget-object v2, p0, Lcom/android/server/am/OnePlusBGController;->dn:Landroid/util/SparseArray;
 
     invoke-virtual {v2}, Landroid/util/SparseArray;->size()I
 
@@ -5222,13 +5222,13 @@
 
     if-ge v1, v2, :cond_1
 
-    iget-object v2, p0, Lcom/android/server/am/OnePlusBGController;->Ym:Landroid/util/SparseArray;
+    iget-object v2, p0, Lcom/android/server/am/OnePlusBGController;->dn:Landroid/util/SparseArray;
 
     invoke-virtual {v2, v1}, Landroid/util/SparseArray;->keyAt(I)I
 
     move-result v2
 
-    iget-object v3, p0, Lcom/android/server/am/OnePlusBGController;->Ym:Landroid/util/SparseArray;
+    iget-object v3, p0, Lcom/android/server/am/OnePlusBGController;->dn:Landroid/util/SparseArray;
 
     invoke-virtual {v3, v2}, Landroid/util/SparseArray;->get(I)Ljava/lang/Object;
 
@@ -5267,7 +5267,7 @@
 .method public veq(Z)V
     .locals 0
 
-    sput-boolean p1, Lcom/android/server/am/OnePlusBGController;->Bn:Z
+    sput-boolean p1, Lcom/android/server/am/OnePlusBGController;->Hn:Z
 
     new-instance p0, Ljava/lang/StringBuilder;
 
@@ -5277,7 +5277,7 @@
 
     invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sget-boolean p1, Lcom/android/server/am/OnePlusBGController;->Bn:Z
+    sget-boolean p1, Lcom/android/server/am/OnePlusBGController;->Hn:Z
 
     invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -5315,12 +5315,12 @@
         }
     .end annotation
 
-    iget-object v0, p0, Lcom/android/server/am/OnePlusBGController;->kn:Ljava/util/HashSet;
+    iget-object v0, p0, Lcom/android/server/am/OnePlusBGController;->rn:Ljava/util/HashSet;
 
     monitor-enter v0
 
     :try_start_0
-    iget-object v1, p0, Lcom/android/server/am/OnePlusBGController;->kn:Ljava/util/HashSet;
+    iget-object v1, p0, Lcom/android/server/am/OnePlusBGController;->rn:Ljava/util/HashSet;
 
     invoke-virtual {v1}, Ljava/util/HashSet;->clear()V
 
@@ -5354,7 +5354,7 @@
 
     iget v2, v2, Landroid/content/pm/ApplicationInfo;->uid:I
 
-    iget-object v3, p0, Lcom/android/server/am/OnePlusBGController;->kn:Ljava/util/HashSet;
+    iget-object v3, p0, Lcom/android/server/am/OnePlusBGController;->rn:Ljava/util/HashSet;
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -5395,7 +5395,7 @@
     move p1, v2
 
     :goto_1
-    iget-object v1, p0, Lcom/android/server/am/OnePlusBGController;->Xm:Landroid/util/SparseArray;
+    iget-object v1, p0, Lcom/android/server/am/OnePlusBGController;->cn:Landroid/util/SparseArray;
 
     invoke-virtual {v1}, Landroid/util/SparseArray;->size()I
 
@@ -5403,7 +5403,7 @@
 
     if-ge p1, v1, :cond_2
 
-    iget-object v1, p0, Lcom/android/server/am/OnePlusBGController;->Xm:Landroid/util/SparseArray;
+    iget-object v1, p0, Lcom/android/server/am/OnePlusBGController;->cn:Landroid/util/SparseArray;
 
     invoke-virtual {v1, p1}, Landroid/util/SparseArray;->valueAt(I)Ljava/lang/Object;
 
@@ -5411,7 +5411,7 @@
 
     check-cast v1, Lcom/android/server/am/OnePlusBGController$igw;
 
-    iget-object v3, p0, Lcom/android/server/am/OnePlusBGController;->kn:Ljava/util/HashSet;
+    iget-object v3, p0, Lcom/android/server/am/OnePlusBGController;->rn:Ljava/util/HashSet;
 
     invoke-virtual {v1}, Lcom/android/server/am/OnePlusBGController$igw;->getUid()I
 
@@ -5485,7 +5485,7 @@
 
     invoke-static {v0}, Lcom/android/server/am/OnePlusBGController;->myLog(Ljava/lang/String;)V
 
-    iput-object p1, p0, Lcom/android/server/am/OnePlusBGController;->Tm:Lcom/android/server/am/OnePlusBGController$NetType;
+    iput-object p1, p0, Lcom/android/server/am/OnePlusBGController;->Zm:Lcom/android/server/am/OnePlusBGController$NetType;
 
     const p1, 0x101d9
 
@@ -5499,7 +5499,7 @@
 .method public zta(Lcom/android/server/am/OnePlusBGController$SnapshotType;)V
     .locals 2
 
-    sget-object v0, Lcom/android/server/am/veq;->om:[I
+    sget-object v0, Lcom/android/server/am/veq;->um:[I
 
     invoke-virtual {p1}, Ljava/lang/Enum;->ordinal()I
 
@@ -5514,7 +5514,7 @@
     goto :goto_0
 
     :cond_0
-    iget-object p1, p0, Lcom/android/server/am/OnePlusBGController;->nn:Ljava/util/List;
+    iget-object p1, p0, Lcom/android/server/am/OnePlusBGController;->un:Ljava/util/List;
 
     if-eqz p1, :cond_1
 

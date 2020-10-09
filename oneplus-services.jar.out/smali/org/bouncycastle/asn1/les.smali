@@ -4,11 +4,11 @@
 
 
 # static fields
-.field private static final psa:I = 0x3e8
+.field private static final Asa:I = 0x3e8
 
 
 # instance fields
-.field private nsa:Ljava/util/Vector;
+.field private ysa:Ljava/util/Vector;
 
 
 # direct methods
@@ -21,7 +21,7 @@
 
     invoke-direct {p0, v0}, Lorg/bouncycastle/asn1/ivd;-><init>([B)V
 
-    iput-object p1, p0, Lorg/bouncycastle/asn1/les;->nsa:Ljava/util/Vector;
+    iput-object p1, p0, Lorg/bouncycastle/asn1/les;->ysa:Ljava/util/Vector;
 
     return-void
 .end method
@@ -58,7 +58,7 @@
     return-void
 .end method
 
-.method private Ht()Ljava/util/Vector;
+.method private Jt()Ljava/util/Vector;
     .locals 7
 
     new-instance v0, Ljava/util/Vector;
@@ -143,7 +143,7 @@
 
     invoke-direct {v0}, Ljava/util/Vector;-><init>()V
 
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/obl;->Rg()Ljava/util/Enumeration;
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/obl;->Tg()Ljava/util/Enumeration;
 
     move-result-object p0
 
@@ -276,14 +276,14 @@
 
 
 # virtual methods
-.method public Rg()Ljava/util/Enumeration;
+.method public Tg()Ljava/util/Enumeration;
     .locals 1
 
-    iget-object v0, p0, Lorg/bouncycastle/asn1/les;->nsa:Ljava/util/Vector;
+    iget-object v0, p0, Lorg/bouncycastle/asn1/les;->ysa:Ljava/util/Vector;
 
     if-nez v0, :cond_0
 
-    invoke-direct {p0}, Lorg/bouncycastle/asn1/les;->Ht()Ljava/util/Vector;
+    invoke-direct {p0}, Lorg/bouncycastle/asn1/les;->Jt()Ljava/util/Vector;
 
     move-result-object p0
 

@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field private Qc:Z
+.field private Wc:Z
 
 .field private mPackageName:Ljava/lang/String;
 
@@ -40,7 +40,7 @@
 
     const/4 p1, 0x0
 
-    iput-boolean p1, p0, Lcom/android/server/zgw$you;->Qc:Z
+    iput-boolean p1, p0, Lcom/android/server/zgw$you;->Wc:Z
 
     invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
 
@@ -74,7 +74,7 @@
 .method static synthetic ssp(Lcom/android/server/zgw$you;)Z
     .locals 0
 
-    iget-boolean p0, p0, Lcom/android/server/zgw$you;->Qc:Z
+    iget-boolean p0, p0, Lcom/android/server/zgw$you;->Wc:Z
 
     return p0
 .end method
@@ -160,13 +160,13 @@
 
     if-eqz v8, :cond_1
 
-    iget-boolean v8, p0, Lcom/android/server/zgw$you;->Qc:Z
+    iget-boolean v8, p0, Lcom/android/server/zgw$you;->Wc:Z
 
     if-nez v8, :cond_0
 
     const/4 v8, 0x1
 
-    iput-boolean v8, p0, Lcom/android/server/zgw$you;->Qc:Z
+    iput-boolean v8, p0, Lcom/android/server/zgw$you;->Wc:Z
 
     invoke-static {}, Lcom/android/server/am/AppRecordManagerService;->getInstance()Lcom/android/server/am/AppRecordManagerService;
 
@@ -238,13 +238,13 @@
     goto :goto_0
 
     :cond_1
-    iget-boolean v0, p0, Lcom/android/server/zgw$you;->Qc:Z
+    iget-boolean v0, p0, Lcom/android/server/zgw$you;->Wc:Z
 
     if-eqz v0, :cond_2
 
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/android/server/zgw$you;->Qc:Z
+    iput-boolean v0, p0, Lcom/android/server/zgw$you;->Wc:Z
 
     invoke-static {}, Lcom/android/server/am/AppRecordManagerService;->getInstance()Lcom/android/server/am/AppRecordManagerService;
 
@@ -256,7 +256,7 @@
 
     :cond_2
     :goto_0
-    iget-boolean p0, p0, Lcom/android/server/zgw$you;->Qc:Z
+    iget-boolean p0, p0, Lcom/android/server/zgw$you;->Wc:Z
 
     return p0
 .end method

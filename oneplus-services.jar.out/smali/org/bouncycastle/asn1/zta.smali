@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field protected final Jra:Z
+.field protected final Ura:Z
 
 .field protected final octets:[B
 
@@ -17,7 +17,7 @@
 
     invoke-direct {p0}, Lorg/bouncycastle/asn1/vdb;-><init>()V
 
-    iput-boolean p1, p0, Lorg/bouncycastle/asn1/zta;->Jra:Z
+    iput-boolean p1, p0, Lorg/bouncycastle/asn1/zta;->Ura:Z
 
     iput p2, p0, Lorg/bouncycastle/asn1/zta;->tag:I
 
@@ -266,7 +266,7 @@
 
 
 # virtual methods
-.method Cg()I
+.method Eg()I
     .locals 2
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -299,7 +299,7 @@
     return v0
 .end method
 
-.method public Fg()I
+.method public Hg()I
     .locals 0
 
     iget p0, p0, Lorg/bouncycastle/asn1/zta;->tag:I
@@ -394,7 +394,7 @@
 .method public hashCode()I
     .locals 2
 
-    iget-boolean v0, p0, Lorg/bouncycastle/asn1/zta;->Jra:Z
+    iget-boolean v0, p0, Lorg/bouncycastle/asn1/zta;->Ura:Z
 
     iget v1, p0, Lorg/bouncycastle/asn1/zta;->tag:I
 
@@ -414,7 +414,7 @@
 .method public isConstructed()Z
     .locals 0
 
-    iget-boolean p0, p0, Lorg/bouncycastle/asn1/zta;->Jra:Z
+    iget-boolean p0, p0, Lorg/bouncycastle/asn1/zta;->Ura:Z
 
     return p0
 .end method
@@ -445,7 +445,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
 
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/zta;->Fg()I
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/zta;->Hg()I
 
     move-result v1
 
@@ -500,7 +500,7 @@
         }
     .end annotation
 
-    iget-boolean v0, p0, Lorg/bouncycastle/asn1/zta;->Jra:Z
+    iget-boolean v0, p0, Lorg/bouncycastle/asn1/zta;->Ura:Z
 
     if-eqz v0, :cond_0
 
@@ -535,9 +535,9 @@
     :cond_0
     check-cast p1, Lorg/bouncycastle/asn1/zta;
 
-    iget-boolean v0, p0, Lorg/bouncycastle/asn1/zta;->Jra:Z
+    iget-boolean v0, p0, Lorg/bouncycastle/asn1/zta;->Ura:Z
 
-    iget-boolean v2, p1, Lorg/bouncycastle/asn1/zta;->Jra:Z
+    iget-boolean v2, p1, Lorg/bouncycastle/asn1/zta;->Ura:Z
 
     if-ne v0, v2, :cond_1
 

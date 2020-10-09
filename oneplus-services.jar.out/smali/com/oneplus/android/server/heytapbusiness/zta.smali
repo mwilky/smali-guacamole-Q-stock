@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field private final synthetic ZE:Lcom/oneplus/android/server/heytapbusiness/sis;
+.field private final synthetic lF:Lcom/oneplus/android/server/heytapbusiness/sis;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lcom/oneplus/android/server/heytapbusiness/zta;->ZE:Lcom/oneplus/android/server/heytapbusiness/sis;
+    iput-object p1, p0, Lcom/oneplus/android/server/heytapbusiness/zta;->lF:Lcom/oneplus/android/server/heytapbusiness/sis;
 
     return-void
 .end method
@@ -26,9 +26,9 @@
 .method public final run()V
     .locals 0
 
-    iget-object p0, p0, Lcom/oneplus/android/server/heytapbusiness/zta;->ZE:Lcom/oneplus/android/server/heytapbusiness/sis;
+    iget-object p0, p0, Lcom/oneplus/android/server/heytapbusiness/zta;->lF:Lcom/oneplus/android/server/heytapbusiness/sis;
 
-    invoke-virtual {p0}, Lcom/oneplus/android/server/heytapbusiness/sis;->gf()V
+    invoke-virtual {p0}, Lcom/oneplus/android/server/heytapbusiness/sis;->if()V
 
     return-void
 .end method

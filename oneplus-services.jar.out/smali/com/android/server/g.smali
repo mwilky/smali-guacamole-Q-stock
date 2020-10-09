@@ -18,9 +18,9 @@
 
 
 # instance fields
-.field final synthetic this$1:Lcom/android/server/OpPowerControllerService$rtg;
+.field final synthetic Bf:Ljava/io/ByteArrayOutputStream;
 
-.field final synthetic vf:Ljava/io/ByteArrayOutputStream;
+.field final synthetic this$1:Lcom/android/server/OpPowerControllerService$rtg;
 
 
 # direct methods
@@ -29,7 +29,7 @@
 
     iput-object p1, p0, Lcom/android/server/g;->this$1:Lcom/android/server/OpPowerControllerService$rtg;
 
-    iput-object p2, p0, Lcom/android/server/g;->vf:Ljava/io/ByteArrayOutputStream;
+    iput-object p2, p0, Lcom/android/server/g;->Bf:Ljava/io/ByteArrayOutputStream;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -52,7 +52,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/server/g;->vf:Ljava/io/ByteArrayOutputStream;
+    iget-object v1, p0, Lcom/android/server/g;->Bf:Ljava/io/ByteArrayOutputStream;
 
     invoke-virtual {v1, v0}, Ljava/io/ByteArrayOutputStream;->writeTo(Ljava/io/OutputStream;)V
 

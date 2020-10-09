@@ -12,9 +12,9 @@
 
 
 # static fields
-.field private static final isa:J = 0xffffffffffff80L
+.field private static final tsa:J = 0xffffffffffff80L
 
-.field private static final jsa:Ljava/util/concurrent/ConcurrentMap;
+.field private static final usa:Ljava/util/concurrent/ConcurrentMap;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/concurrent/ConcurrentMap<",
@@ -40,7 +40,7 @@
 
     invoke-direct {v0}, Ljava/util/concurrent/ConcurrentHashMap;-><init>()V
 
-    sput-object v0, Lorg/bouncycastle/asn1/bvj;->jsa:Ljava/util/concurrent/ConcurrentMap;
+    sput-object v0, Lorg/bouncycastle/asn1/bvj;->usa:Ljava/util/concurrent/ConcurrentMap;
 
     return-void
 .end method
@@ -612,7 +612,7 @@
 
     invoke-direct {v0, p0}, Lorg/bouncycastle/asn1/bvj$zta;-><init>([B)V
 
-    sget-object v1, Lorg/bouncycastle/asn1/bvj;->jsa:Ljava/util/concurrent/ConcurrentMap;
+    sget-object v1, Lorg/bouncycastle/asn1/bvj;->usa:Ljava/util/concurrent/ConcurrentMap;
 
     invoke-interface {v1, v0}, Ljava/util/concurrent/ConcurrentMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -889,7 +889,7 @@
 
 
 # virtual methods
-.method Cg()I
+.method Eg()I
     .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -945,7 +945,7 @@
 
     invoke-direct {v0, v1}, Lorg/bouncycastle/asn1/bvj$zta;-><init>([B)V
 
-    sget-object v1, Lorg/bouncycastle/asn1/bvj;->jsa:Ljava/util/concurrent/ConcurrentMap;
+    sget-object v1, Lorg/bouncycastle/asn1/bvj;->usa:Ljava/util/concurrent/ConcurrentMap;
 
     invoke-interface {v1, v0}, Ljava/util/concurrent/ConcurrentMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -955,7 +955,7 @@
 
     if-nez v1, :cond_1
 
-    sget-object v1, Lorg/bouncycastle/asn1/bvj;->jsa:Ljava/util/concurrent/ConcurrentMap;
+    sget-object v1, Lorg/bouncycastle/asn1/bvj;->usa:Ljava/util/concurrent/ConcurrentMap;
 
     invoke-interface {v1, v0, p0}, Ljava/util/concurrent/ConcurrentMap;->putIfAbsent(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 

@@ -15,37 +15,37 @@
 
 
 # static fields
-.field static final qN:Ljava/lang/String; = "support"
+.field static final EN:Ljava/lang/String; = "support"
 
-.field static final rN:Ljava/lang/String; = "log_sw"
+.field static final FN:Ljava/lang/String; = "log_sw"
 
-.field static final sN:Ljava/lang/String; = "adb_sw"
+.field static final GN:Ljava/lang/String; = "adb_sw"
 
-.field static final tN:Ljava/lang/String; = "mac_timeout"
+.field static final HN:Ljava/lang/String; = "mac_timeout"
 
-.field static final uN:Ljava/lang/String; = "id_timeout"
+.field static final JD:Ljava/lang/String; = "activity_sw"
 
-.field static final yD:Ljava/lang/String; = "activity_sw"
+.field static final JN:Ljava/lang/String; = "id_timeout"
 
 
 # instance fields
+.field private AN:Z
+
+.field private BN:J
+
+.field private DN:J
+
 .field private final TAG_ACTIVITY:Ljava/lang/Object;
 
-.field private final jD:Lcom/android/server/secrecy/zta/rtg$zta;
-
-.field private lN:Z
-
-.field private mN:Z
-
-.field private nN:Z
-
-.field private oD:Z
-
-.field private oN:J
-
-.field private pN:J
+.field private final sD:Lcom/android/server/secrecy/zta/rtg$zta;
 
 .field final synthetic this$0:Lcom/android/server/secrecy/zta/rtg;
+
+.field private xD:Z
+
+.field private yN:Z
+
+.field private zN:Z
 
 
 # direct methods
@@ -60,21 +60,13 @@
 
     iput-object p1, p0, Lcom/android/server/secrecy/zta/rtg$you;->TAG_ACTIVITY:Ljava/lang/Object;
 
-    iput-object p2, p0, Lcom/android/server/secrecy/zta/rtg$you;->jD:Lcom/android/server/secrecy/zta/rtg$zta;
+    iput-object p2, p0, Lcom/android/server/secrecy/zta/rtg$you;->sD:Lcom/android/server/secrecy/zta/rtg$zta;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public Jd()Z
-    .locals 0
-
-    iget-boolean p0, p0, Lcom/android/server/secrecy/zta/rtg$you;->oD:Z
-
-    return p0
-.end method
-
 .method public K(Ljava/lang/String;)V
     .locals 9
 
@@ -119,7 +111,7 @@
 
     move-result-object v6
 
-    invoke-virtual {v6}, Lcom/android/server/secrecy/you/zta;->Sd()V
+    invoke-virtual {v6}, Lcom/android/server/secrecy/you/zta;->Td()V
 
     :goto_0
     const/4 v6, 0x1
@@ -164,7 +156,7 @@
 
     move-result v5
 
-    iput-boolean v5, p0, Lcom/android/server/secrecy/zta/rtg$you;->lN:Z
+    iput-boolean v5, p0, Lcom/android/server/secrecy/zta/rtg$you;->yN:Z
 
     :goto_1
     move v3, v6
@@ -190,7 +182,7 @@
 
     move-result v5
 
-    iput-boolean v5, p0, Lcom/android/server/secrecy/zta/rtg$you;->oD:Z
+    iput-boolean v5, p0, Lcom/android/server/secrecy/zta/rtg$you;->xD:Z
 
     goto :goto_1
 
@@ -213,7 +205,7 @@
 
     move-result v5
 
-    iput-boolean v5, p0, Lcom/android/server/secrecy/zta/rtg$you;->mN:Z
+    iput-boolean v5, p0, Lcom/android/server/secrecy/zta/rtg$you;->zN:Z
 
     goto :goto_1
 
@@ -236,7 +228,7 @@
 
     move-result v5
 
-    iput-boolean v5, p0, Lcom/android/server/secrecy/zta/rtg$you;->nN:Z
+    iput-boolean v5, p0, Lcom/android/server/secrecy/zta/rtg$you;->AN:Z
 
     goto :goto_1
 
@@ -259,7 +251,7 @@
 
     move-result-wide v7
 
-    iput-wide v7, p0, Lcom/android/server/secrecy/zta/rtg$you;->oN:J
+    iput-wide v7, p0, Lcom/android/server/secrecy/zta/rtg$you;->BN:J
 
     goto :goto_1
 
@@ -282,7 +274,7 @@
 
     move-result-wide v7
 
-    iput-wide v7, p0, Lcom/android/server/secrecy/zta/rtg$you;->pN:J
+    iput-wide v7, p0, Lcom/android/server/secrecy/zta/rtg$you;->DN:J
 
     goto :goto_1
 
@@ -374,7 +366,7 @@
     :goto_3
     if-eqz v3, :cond_a
 
-    iget-object p0, p0, Lcom/android/server/secrecy/zta/rtg$you;->jD:Lcom/android/server/secrecy/zta/rtg$zta;
+    iget-object p0, p0, Lcom/android/server/secrecy/zta/rtg$you;->sD:Lcom/android/server/secrecy/zta/rtg$zta;
 
     if-eqz p0, :cond_a
 
@@ -412,39 +404,47 @@
 .method public Kd()Z
     .locals 0
 
-    iget-boolean p0, p0, Lcom/android/server/secrecy/zta/rtg$you;->nN:Z
+    iget-boolean p0, p0, Lcom/android/server/secrecy/zta/rtg$you;->xD:Z
 
     return p0
 .end method
 
-.method public Ld()J
-    .locals 2
-
-    iget-wide v0, p0, Lcom/android/server/secrecy/zta/rtg$you;->pN:J
-
-    return-wide v0
-.end method
-
-.method public Md()Z
+.method public Ld()Z
     .locals 0
 
-    iget-boolean p0, p0, Lcom/android/server/secrecy/zta/rtg$you;->mN:Z
+    iget-boolean p0, p0, Lcom/android/server/secrecy/zta/rtg$you;->AN:Z
 
     return p0
 .end method
 
-.method public Nd()J
+.method public Md()J
     .locals 2
 
-    iget-wide v0, p0, Lcom/android/server/secrecy/zta/rtg$you;->oN:J
+    iget-wide v0, p0, Lcom/android/server/secrecy/zta/rtg$you;->DN:J
 
     return-wide v0
 .end method
 
-.method public Od()Z
+.method public Nd()Z
     .locals 0
 
-    iget-boolean p0, p0, Lcom/android/server/secrecy/zta/rtg$you;->lN:Z
+    iget-boolean p0, p0, Lcom/android/server/secrecy/zta/rtg$you;->zN:Z
+
+    return p0
+.end method
+
+.method public Od()J
+    .locals 2
+
+    iget-wide v0, p0, Lcom/android/server/secrecy/zta/rtg$you;->BN:J
+
+    return-wide v0
+.end method
+
+.method public Pd()Z
+    .locals 0
+
+    iget-boolean p0, p0, Lcom/android/server/secrecy/zta/rtg$you;->yN:Z
 
     return p0
 .end method
@@ -468,7 +468,7 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean v2, p0, Lcom/android/server/secrecy/zta/rtg$you;->lN:Z
+    iget-boolean v2, p0, Lcom/android/server/secrecy/zta/rtg$you;->yN:Z
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -490,7 +490,7 @@
 
     invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean v3, p0, Lcom/android/server/secrecy/zta/rtg$you;->oD:Z
+    iget-boolean v3, p0, Lcom/android/server/secrecy/zta/rtg$you;->xD:Z
 
     invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -510,7 +510,7 @@
 
     invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean v3, p0, Lcom/android/server/secrecy/zta/rtg$you;->mN:Z
+    iget-boolean v3, p0, Lcom/android/server/secrecy/zta/rtg$you;->zN:Z
 
     invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -530,7 +530,7 @@
 
     invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean v3, p0, Lcom/android/server/secrecy/zta/rtg$you;->nN:Z
+    iget-boolean v3, p0, Lcom/android/server/secrecy/zta/rtg$you;->AN:Z
 
     invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -550,7 +550,7 @@
 
     invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-wide v3, p0, Lcom/android/server/secrecy/zta/rtg$you;->oN:J
+    iget-wide v3, p0, Lcom/android/server/secrecy/zta/rtg$you;->BN:J
 
     invoke-virtual {v1, v3, v4}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
@@ -570,7 +570,7 @@
 
     invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-wide v3, p0, Lcom/android/server/secrecy/zta/rtg$you;->pN:J
+    iget-wide v3, p0, Lcom/android/server/secrecy/zta/rtg$you;->DN:J
 
     invoke-virtual {v1, v3, v4}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 

@@ -15,13 +15,13 @@
 
 
 # instance fields
-.field public Yr:Z
-
-.field private Zr:I
-
 .field public curCpuTimeBgMonitor:J
 
 .field public flags:I
+
+.field public gs:Z
+
+.field private hs:I
 
 .field public lastCpuTimeBgMonitor:[J
 
@@ -44,7 +44,7 @@
 
     iput v0, p0, Lcom/android/server/am/OnePlusHighPowerDetector$zta;->flags:I
 
-    iput-boolean v0, p0, Lcom/android/server/am/OnePlusHighPowerDetector$zta;->Yr:Z
+    iput-boolean v0, p0, Lcom/android/server/am/OnePlusHighPowerDetector$zta;->gs:Z
 
     const-wide/16 v1, 0x0
 
@@ -56,7 +56,7 @@
 
     iput-object v1, p0, Lcom/android/server/am/OnePlusHighPowerDetector$zta;->lastCpuTimeBgMonitor:[J
 
-    iput v0, p0, Lcom/android/server/am/OnePlusHighPowerDetector$zta;->Zr:I
+    iput v0, p0, Lcom/android/server/am/OnePlusHighPowerDetector$zta;->hs:I
 
     iput p1, p0, Lcom/android/server/am/OnePlusHighPowerDetector$zta;->uid:I
 
@@ -209,52 +209,42 @@
 
 
 # virtual methods
-.method public Nb()V
+.method public Ob()V
     .locals 1
 
-    iget v0, p0, Lcom/android/server/am/OnePlusHighPowerDetector$zta;->Zr:I
+    iget v0, p0, Lcom/android/server/am/OnePlusHighPowerDetector$zta;->hs:I
 
     add-int/lit8 v0, v0, 0x1
 
-    iput v0, p0, Lcom/android/server/am/OnePlusHighPowerDetector$zta;->Zr:I
+    iput v0, p0, Lcom/android/server/am/OnePlusHighPowerDetector$zta;->hs:I
 
     return-void
 .end method
 
-.method public Ob()I
+.method public Pb()I
     .locals 0
 
-    iget p0, p0, Lcom/android/server/am/OnePlusHighPowerDetector$zta;->Zr:I
+    iget p0, p0, Lcom/android/server/am/OnePlusHighPowerDetector$zta;->hs:I
 
     return p0
 .end method
 
-.method public Pb()Z
+.method public Qb()Z
     .locals 0
 
-    iget-boolean p0, p0, Lcom/android/server/am/OnePlusHighPowerDetector$zta;->Yr:Z
+    iget-boolean p0, p0, Lcom/android/server/am/OnePlusHighPowerDetector$zta;->gs:Z
 
     return p0
-.end method
-
-.method public Qb()V
-    .locals 1
-
-    iget v0, p0, Lcom/android/server/am/OnePlusHighPowerDetector$zta;->Zr:I
-
-    add-int/lit8 v0, v0, -0x1
-
-    iput v0, p0, Lcom/android/server/am/OnePlusHighPowerDetector$zta;->Zr:I
-
-    return-void
 .end method
 
 .method public Rb()V
     .locals 1
 
-    const/4 v0, 0x0
+    iget v0, p0, Lcom/android/server/am/OnePlusHighPowerDetector$zta;->hs:I
 
-    iput-boolean v0, p0, Lcom/android/server/am/OnePlusHighPowerDetector$zta;->Yr:Z
+    add-int/lit8 v0, v0, -0x1
+
+    iput v0, p0, Lcom/android/server/am/OnePlusHighPowerDetector$zta;->hs:I
 
     return-void
 .end method
@@ -264,7 +254,7 @@
 
     const/4 v0, 0x0
 
-    iput v0, p0, Lcom/android/server/am/OnePlusHighPowerDetector$zta;->Zr:I
+    iput-boolean v0, p0, Lcom/android/server/am/OnePlusHighPowerDetector$zta;->gs:Z
 
     return-void
 .end method
@@ -272,9 +262,19 @@
 .method public Tb()V
     .locals 1
 
+    const/4 v0, 0x0
+
+    iput v0, p0, Lcom/android/server/am/OnePlusHighPowerDetector$zta;->hs:I
+
+    return-void
+.end method
+
+.method public Ub()V
+    .locals 1
+
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/android/server/am/OnePlusHighPowerDetector$zta;->Yr:Z
+    iput-boolean v0, p0, Lcom/android/server/am/OnePlusHighPowerDetector$zta;->gs:Z
 
     return-void
 .end method

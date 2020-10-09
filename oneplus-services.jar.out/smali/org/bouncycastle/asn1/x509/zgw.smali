@@ -7,17 +7,17 @@
 
 
 # static fields
-.field public static final Cua:I = 0x1
+.field public static final Nua:I = 0x1
 
-.field public static final Dua:I = 0x3
+.field public static final Oua:I = 0x3
 
-.field public static final Eua:I = 0x4
+.field public static final Pua:I = 0x4
 
-.field public static final Fua:I = 0x5
+.field public static final Qua:I = 0x5
 
-.field public static final Gua:I = 0x6
+.field public static final Rua:I = 0x6
 
-.field public static final Hua:I = 0x8
+.field public static final Sua:I = 0x8
 
 .field public static final dNSName:I = 0x2
 

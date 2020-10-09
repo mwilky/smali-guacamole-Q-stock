@@ -10,6 +10,12 @@
 
 
 # instance fields
+.field private Ai:Ljava/lang/reflect/Method;
+
+.field private Bi:Ljava/lang/reflect/Method;
+
+.field private Ci:Ljava/lang/reflect/Method;
+
 .field private mAms:Lcom/android/server/am/ActivityManagerService;
 
 .field private mAtmService:Lcom/android/server/wm/ActivityTaskManagerService;
@@ -22,12 +28,6 @@
 
 .field private mProcessList:Lcom/android/server/am/ProcessList;
 
-.field private ui:Ljava/lang/reflect/Method;
-
-.field private vi:Ljava/lang/reflect/Method;
-
-.field private wi:Ljava/lang/reflect/Method;
-
 
 # direct methods
 .method constructor <init>(Lcom/android/server/am/oif;Lcom/android/server/am/ActivityManagerService;Lcom/android/server/am/ProcessList;Lcom/android/server/wm/ActivityTaskManagerService;Lcom/android/internal/os/ProcessCpuTracker;)V
@@ -37,11 +37,11 @@
 
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/android/server/am/dma;->ui:Ljava/lang/reflect/Method;
+    iput-object v0, p0, Lcom/android/server/am/dma;->Ai:Ljava/lang/reflect/Method;
 
-    iput-object v0, p0, Lcom/android/server/am/dma;->vi:Ljava/lang/reflect/Method;
+    iput-object v0, p0, Lcom/android/server/am/dma;->Bi:Ljava/lang/reflect/Method;
 
-    iput-object v0, p0, Lcom/android/server/am/dma;->wi:Ljava/lang/reflect/Method;
+    iput-object v0, p0, Lcom/android/server/am/dma;->Ci:Ljava/lang/reflect/Method;
 
     iput-object p1, p0, Lcom/android/server/am/dma;->mEmbryoManager:Lcom/android/server/am/oif;
 
@@ -110,9 +110,9 @@
 
     move-result-object v2
 
-    iput-object v2, p0, Lcom/android/server/am/dma;->ui:Ljava/lang/reflect/Method;
+    iput-object v2, p0, Lcom/android/server/am/dma;->Ai:Ljava/lang/reflect/Method;
 
-    iget-object v2, p0, Lcom/android/server/am/dma;->ui:Ljava/lang/reflect/Method;
+    iget-object v2, p0, Lcom/android/server/am/dma;->Ai:Ljava/lang/reflect/Method;
 
     if-nez v2, :cond_0
 
@@ -123,7 +123,7 @@
     return v1
 
     :cond_0
-    iget-object v2, p0, Lcom/android/server/am/dma;->ui:Ljava/lang/reflect/Method;
+    iget-object v2, p0, Lcom/android/server/am/dma;->Ai:Ljava/lang/reflect/Method;
 
     invoke-virtual {v2, v6}, Ljava/lang/reflect/Method;->setAccessible(Z)V
 
@@ -145,9 +145,9 @@
 
     move-result-object v2
 
-    iput-object v2, p0, Lcom/android/server/am/dma;->vi:Ljava/lang/reflect/Method;
+    iput-object v2, p0, Lcom/android/server/am/dma;->Bi:Ljava/lang/reflect/Method;
 
-    iget-object v2, p0, Lcom/android/server/am/dma;->vi:Ljava/lang/reflect/Method;
+    iget-object v2, p0, Lcom/android/server/am/dma;->Bi:Ljava/lang/reflect/Method;
 
     if-nez v2, :cond_1
 
@@ -158,7 +158,7 @@
     return v1
 
     :cond_1
-    iget-object v2, p0, Lcom/android/server/am/dma;->vi:Ljava/lang/reflect/Method;
+    iget-object v2, p0, Lcom/android/server/am/dma;->Bi:Ljava/lang/reflect/Method;
 
     invoke-virtual {v2, v6}, Ljava/lang/reflect/Method;->setAccessible(Z)V
 
@@ -180,9 +180,9 @@
 
     move-result-object v2
 
-    iput-object v2, p0, Lcom/android/server/am/dma;->wi:Ljava/lang/reflect/Method;
+    iput-object v2, p0, Lcom/android/server/am/dma;->Ci:Ljava/lang/reflect/Method;
 
-    iget-object v2, p0, Lcom/android/server/am/dma;->wi:Ljava/lang/reflect/Method;
+    iget-object v2, p0, Lcom/android/server/am/dma;->Ci:Ljava/lang/reflect/Method;
 
     if-nez v2, :cond_2
 
@@ -193,7 +193,7 @@
     return v1
 
     :cond_2
-    iget-object p0, p0, Lcom/android/server/am/dma;->wi:Ljava/lang/reflect/Method;
+    iget-object p0, p0, Lcom/android/server/am/dma;->Ci:Ljava/lang/reflect/Method;
 
     invoke-virtual {p0, v6}, Ljava/lang/reflect/Method;->setAccessible(Z)V
     :try_end_0
@@ -234,7 +234,7 @@
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
     :try_start_1
-    iget-object v1, p0, Lcom/android/server/am/dma;->wi:Ljava/lang/reflect/Method;
+    iget-object v1, p0, Lcom/android/server/am/dma;->Ci:Ljava/lang/reflect/Method;
 
     iget-object p0, p0, Lcom/android/server/am/dma;->mAtmService:Lcom/android/server/wm/ActivityTaskManagerService;
 
@@ -520,7 +520,7 @@
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
     :try_start_1
-    iget-object v1, p0, Lcom/android/server/am/dma;->vi:Ljava/lang/reflect/Method;
+    iget-object v1, p0, Lcom/android/server/am/dma;->Bi:Ljava/lang/reflect/Method;
 
     iget-object p0, p0, Lcom/android/server/am/dma;->mAms:Lcom/android/server/am/ActivityManagerService;
 
@@ -868,7 +868,7 @@
 
     invoke-direct {v1, p2, p3}, Lcom/android/server/am/HostingRecord;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
-    iget-object p2, p0, Lcom/android/server/am/dma;->ui:Ljava/lang/reflect/Method;
+    iget-object p2, p0, Lcom/android/server/am/dma;->Ai:Ljava/lang/reflect/Method;
 
     iget-object p0, p0, Lcom/android/server/am/dma;->mProcessList:Lcom/android/server/am/ProcessList;
 

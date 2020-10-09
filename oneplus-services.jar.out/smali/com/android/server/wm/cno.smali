@@ -3,12 +3,12 @@
 .source ""
 
 # interfaces
-.implements Landroid/content/DialogInterface$OnClickListener;
+.implements Ljava/lang/Runnable;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/server/wm/bio;->onReceive(Landroid/content/Context;Landroid/content/Intent;)V
+    value = Lcom/android/server/wm/gck$zta;->sendReadModeNotification(Lcom/android/server/wm/ActivityRecord;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,22 +18,18 @@
 
 
 # instance fields
-.field final synthetic this$1:Lcom/android/server/wm/bio;
+.field final synthetic hR:Landroid/app/Notification$Builder;
 
-.field final synthetic val$packageName:Ljava/lang/String;
-
-.field final synthetic val$uid:I
+.field final synthetic this$0:Lcom/android/server/wm/gck$zta;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/server/wm/bio;Ljava/lang/String;I)V
+.method constructor <init>(Lcom/android/server/wm/gck$zta;Landroid/app/Notification$Builder;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/android/server/wm/cno;->this$1:Lcom/android/server/wm/bio;
+    iput-object p1, p0, Lcom/android/server/wm/cno;->this$0:Lcom/android/server/wm/gck$zta;
 
-    iput-object p2, p0, Lcom/android/server/wm/cno;->val$packageName:Ljava/lang/String;
-
-    iput p3, p0, Lcom/android/server/wm/cno;->val$uid:I
+    iput-object p2, p0, Lcom/android/server/wm/cno;->hR:Landroid/app/Notification$Builder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -42,40 +38,62 @@
 
 
 # virtual methods
-.method public onClick(Landroid/content/DialogInterface;I)V
-    .locals 1
+.method public run()V
+    .locals 4
 
-    if-nez p2, :cond_0
+    new-instance v0, Landroid/content/IntentFilter;
 
-    iget-object p1, p0, Lcom/android/server/wm/cno;->this$1:Lcom/android/server/wm/bio;
+    invoke-direct {v0}, Landroid/content/IntentFilter;-><init>()V
 
-    iget-object p1, p1, Lcom/android/server/wm/bio;->this$0:Lcom/android/server/wm/wtn$zta;
+    const-string v1, "com.oem.intent.action.ENABLE_READ_MODE_NOW"
 
-    const/4 p2, 0x2
+    invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
-    :goto_0
-    iget-object v0, p0, Lcom/android/server/wm/cno;->val$packageName:Ljava/lang/String;
+    const-string v1, "com.oem.intent.action.GO_READ_MODE_SETTINGS"
 
-    iget p0, p0, Lcom/android/server/wm/cno;->val$uid:I
+    invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
-    invoke-static {p1, p2, v0, p0}, Lcom/android/server/wm/wtn$zta;->zta(Lcom/android/server/wm/wtn$zta;ILjava/lang/String;I)V
+    const-string v1, "android.intent.action.CLOSE_SYSTEM_DIALOGS"
 
-    goto :goto_1
+    invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
-    :cond_0
-    const/4 p1, 0x1
+    const-string v1, "android.intent.action.SCREEN_OFF"
 
-    if-ne p2, p1, :cond_1
+    invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
-    iget-object p1, p0, Lcom/android/server/wm/cno;->this$1:Lcom/android/server/wm/bio;
+    iget-object v1, p0, Lcom/android/server/wm/cno;->this$0:Lcom/android/server/wm/gck$zta;
 
-    iget-object p1, p1, Lcom/android/server/wm/bio;->this$0:Lcom/android/server/wm/wtn$zta;
+    invoke-static {v1}, Lcom/android/server/wm/gck$zta;->zta(Lcom/android/server/wm/gck$zta;)Landroid/content/Context;
 
-    const/4 p2, 0x0
+    move-result-object v1
 
-    goto :goto_0
+    iget-object v2, p0, Lcom/android/server/wm/cno;->this$0:Lcom/android/server/wm/gck$zta;
 
-    :cond_1
-    :goto_1
+    iget-object v2, v2, Lcom/android/server/wm/gck$zta;->mBroadcastReceiver:Landroid/content/BroadcastReceiver;
+
+    invoke-virtual {v1, v2, v0}, Landroid/content/Context;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
+
+    invoke-static {}, Lcom/android/server/wm/gck$zta;->access$300()Landroid/app/NotificationManager;
+
+    move-result-object v0
+
+    iget-object v1, p0, Lcom/android/server/wm/cno;->this$0:Lcom/android/server/wm/gck$zta;
+
+    invoke-static {v1}, Lcom/android/server/wm/gck$zta;->you(Lcom/android/server/wm/gck$zta;)Ljava/lang/String;
+
+    move-result-object v1
+
+    iget-object p0, p0, Lcom/android/server/wm/cno;->hR:Landroid/app/Notification$Builder;
+
+    invoke-virtual {p0}, Landroid/app/Notification$Builder;->build()Landroid/app/Notification;
+
+    move-result-object p0
+
+    sget-object v2, Landroid/os/UserHandle;->CURRENT:Landroid/os/UserHandle;
+
+    const/16 v3, 0x3ff
+
+    invoke-virtual {v0, v1, v3, p0, v2}, Landroid/app/NotificationManager;->notifyAsUser(Ljava/lang/String;ILandroid/app/Notification;Landroid/os/UserHandle;)V
+
     return-void
 .end method

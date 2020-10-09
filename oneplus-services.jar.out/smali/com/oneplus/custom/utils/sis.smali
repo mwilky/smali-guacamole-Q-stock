@@ -4,7 +4,7 @@
 
 
 # static fields
-.field private static final Oia:Ljava/lang/String; = "net.oneplus.wallpaperresources"
+.field private static final Zia:Ljava/lang/String; = "net.oneplus.wallpaperresources"
 
 
 # direct methods
@@ -18,7 +18,7 @@
 
 
 # virtual methods
-.method protected If()J
+.method protected Kf()J
     .locals 4
 
     :try_start_0
@@ -57,7 +57,7 @@
     return-wide v0
 .end method
 
-.method protected Jf()Lcom/oneplus/custom/utils/OpCustomizeSettings$CUSTOM_BACK_COVER_TYPE;
+.method protected Lf()Lcom/oneplus/custom/utils/OpCustomizeSettings$CUSTOM_BACK_COVER_TYPE;
     .locals 2
 
     sget-object p0, Lcom/oneplus/custom/utils/OpCustomizeSettings$CUSTOM_BACK_COVER_TYPE;->NONE:Lcom/oneplus/custom/utils/OpCustomizeSettings$CUSTOM_BACK_COVER_TYPE;
@@ -355,12 +355,12 @@
     .end packed-switch
 .end method
 
-.method protected Lf()Lcom/oneplus/custom/utils/OpCustomizeSettings$SW_TYPE;
+.method protected Nf()Lcom/oneplus/custom/utils/OpCustomizeSettings$SW_TYPE;
     .locals 2
 
     sget-object p0, Lcom/oneplus/custom/utils/OpCustomizeSettings$SW_TYPE;->DEFAULT:Lcom/oneplus/custom/utils/OpCustomizeSettings$SW_TYPE;
 
-    invoke-static {}, Lcom/oneplus/custom/utils/rtg;->Of()I
+    invoke-static {}, Lcom/oneplus/custom/utils/rtg;->Qf()I
 
     move-result v0
 
@@ -387,27 +387,27 @@
     goto :goto_0
 
     :pswitch_0
-    sget-object p0, Lcom/oneplus/custom/utils/OpCustomizeSettings$SW_TYPE;->zoa:Lcom/oneplus/custom/utils/OpCustomizeSettings$SW_TYPE;
+    sget-object p0, Lcom/oneplus/custom/utils/OpCustomizeSettings$SW_TYPE;->Koa:Lcom/oneplus/custom/utils/OpCustomizeSettings$SW_TYPE;
 
     goto :goto_0
 
     :pswitch_1
-    sget-object p0, Lcom/oneplus/custom/utils/OpCustomizeSettings$SW_TYPE;->yoa:Lcom/oneplus/custom/utils/OpCustomizeSettings$SW_TYPE;
+    sget-object p0, Lcom/oneplus/custom/utils/OpCustomizeSettings$SW_TYPE;->Joa:Lcom/oneplus/custom/utils/OpCustomizeSettings$SW_TYPE;
 
     goto :goto_0
 
     :pswitch_2
-    sget-object p0, Lcom/oneplus/custom/utils/OpCustomizeSettings$SW_TYPE;->xoa:Lcom/oneplus/custom/utils/OpCustomizeSettings$SW_TYPE;
+    sget-object p0, Lcom/oneplus/custom/utils/OpCustomizeSettings$SW_TYPE;->Ioa:Lcom/oneplus/custom/utils/OpCustomizeSettings$SW_TYPE;
 
     goto :goto_0
 
     :pswitch_3
-    sget-object p0, Lcom/oneplus/custom/utils/OpCustomizeSettings$SW_TYPE;->woa:Lcom/oneplus/custom/utils/OpCustomizeSettings$SW_TYPE;
+    sget-object p0, Lcom/oneplus/custom/utils/OpCustomizeSettings$SW_TYPE;->Hoa:Lcom/oneplus/custom/utils/OpCustomizeSettings$SW_TYPE;
 
     goto :goto_0
 
     :cond_0
-    sget-object p0, Lcom/oneplus/custom/utils/OpCustomizeSettings$SW_TYPE;->voa:Lcom/oneplus/custom/utils/OpCustomizeSettings$SW_TYPE;
+    sget-object p0, Lcom/oneplus/custom/utils/OpCustomizeSettings$SW_TYPE;->Goa:Lcom/oneplus/custom/utils/OpCustomizeSettings$SW_TYPE;
 
     goto :goto_0
 
@@ -422,7 +422,7 @@
     goto :goto_0
 
     :cond_3
-    sget-object p0, Lcom/oneplus/custom/utils/OpCustomizeSettings$SW_TYPE;->uoa:Lcom/oneplus/custom/utils/OpCustomizeSettings$SW_TYPE;
+    sget-object p0, Lcom/oneplus/custom/utils/OpCustomizeSettings$SW_TYPE;->Foa:Lcom/oneplus/custom/utils/OpCustomizeSettings$SW_TYPE;
 
     goto :goto_0
 
@@ -467,7 +467,7 @@
     goto :goto_0
 
     :cond_0
-    sget-object p0, Lcom/oneplus/custom/utils/OpCustomizeSettings$CUSTOM_TYPE;->soa:Lcom/oneplus/custom/utils/OpCustomizeSettings$CUSTOM_TYPE;
+    sget-object p0, Lcom/oneplus/custom/utils/OpCustomizeSettings$CUSTOM_TYPE;->Eoa:Lcom/oneplus/custom/utils/OpCustomizeSettings$CUSTOM_TYPE;
 
     goto :goto_0
 
@@ -541,7 +541,7 @@
     goto :goto_0
 
     :cond_1
-    invoke-static {}, Lcom/oneplus/custom/utils/rtg;->Nf()[B
+    invoke-static {}, Lcom/oneplus/custom/utils/rtg;->Pf()[B
 
     move-result-object p0
 

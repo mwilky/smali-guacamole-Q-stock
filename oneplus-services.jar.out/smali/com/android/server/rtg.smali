@@ -8,19 +8,19 @@
 
 .field private static final TAG:Ljava/lang/String; = "OnePlusExPostInstaller"
 
-.field private static final _b:Z
+.field private static final fc:Z
 
-.field private static final ac:Ljava/lang/String; = "vendor_app_installed"
+.field private static final gc:Ljava/lang/String; = "vendor_app_installed"
 
-.field private static final bc:Ljava/lang/String; = "com.oneplus.exservice.INTENT_PACKAGE_INSTALL_COMMIT"
+.field private static final hc:Ljava/lang/String; = "com.oneplus.exservice.INTENT_PACKAGE_INSTALL_COMMIT"
 
-.field private static final cc:I = -0x3e8
+.field private static final ic:I = -0x3e8
 
-.field private static final dc:[Ljava/lang/String;
+.field private static final jc:[Ljava/lang/String;
 
 
 # instance fields
-.field private Vb:Ljava/util/HashMap;
+.field private ac:Ljava/util/HashMap;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/HashMap<",
@@ -31,13 +31,13 @@
     .end annotation
 .end field
 
-.field private Wb:Landroid/content/pm/PackageInstaller;
+.field private bc:Landroid/content/pm/PackageInstaller;
 
-.field private Xb:I
+.field private cc:I
 
-.field private Yb:I
+.field private dc:I
 
-.field private Zb:Z
+.field private ec:Z
 
 .field private final mBroadcastReceiver:Landroid/content/BroadcastReceiver;
 
@@ -64,7 +64,7 @@
 
     move-result v0
 
-    sput-boolean v0, Lcom/android/server/rtg;->_b:Z
+    sput-boolean v0, Lcom/android/server/rtg;->fc:Z
 
     const-string v0, "/system/vendor/etc/apps/"
 
@@ -78,7 +78,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/android/server/rtg;->dc:[Ljava/lang/String;
+    sput-object v0, Lcom/android/server/rtg;->jc:[Ljava/lang/String;
 
     return-void
 .end method
@@ -92,15 +92,15 @@
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    iput-object v0, p0, Lcom/android/server/rtg;->Vb:Ljava/util/HashMap;
+    iput-object v0, p0, Lcom/android/server/rtg;->ac:Ljava/util/HashMap;
 
     const/4 v0, 0x0
 
-    iput v0, p0, Lcom/android/server/rtg;->Xb:I
+    iput v0, p0, Lcom/android/server/rtg;->cc:I
 
-    iput v0, p0, Lcom/android/server/rtg;->Yb:I
+    iput v0, p0, Lcom/android/server/rtg;->dc:I
 
-    iput-boolean v0, p0, Lcom/android/server/rtg;->Zb:Z
+    iput-boolean v0, p0, Lcom/android/server/rtg;->ec:Z
 
     new-instance v1, Lcom/android/server/sis;
 
@@ -108,11 +108,11 @@
 
     iput-object v1, p0, Lcom/android/server/rtg;->mBroadcastReceiver:Landroid/content/BroadcastReceiver;
 
-    iput v0, p0, Lcom/android/server/rtg;->Xb:I
+    iput v0, p0, Lcom/android/server/rtg;->cc:I
 
-    iput v0, p0, Lcom/android/server/rtg;->Yb:I
+    iput v0, p0, Lcom/android/server/rtg;->dc:I
 
-    iput-boolean v0, p0, Lcom/android/server/rtg;->Zb:Z
+    iput-boolean v0, p0, Lcom/android/server/rtg;->ec:Z
 
     return-void
 .end method
@@ -128,7 +128,7 @@
 .method static synthetic access$400()Z
     .locals 1
 
-    sget-boolean v0, Lcom/android/server/rtg;->_b:Z
+    sget-boolean v0, Lcom/android/server/rtg;->fc:Z
 
     return v0
 .end method
@@ -136,7 +136,7 @@
 .method static synthetic access$800()[Ljava/lang/String;
     .locals 1
 
-    sget-object v0, Lcom/android/server/rtg;->dc:[Ljava/lang/String;
+    sget-object v0, Lcom/android/server/rtg;->jc:[Ljava/lang/String;
 
     return-object v0
 .end method
@@ -149,7 +149,7 @@
         }
     .end annotation
 
-    sget-boolean v0, Lcom/android/server/rtg;->_b:Z
+    sget-boolean v0, Lcom/android/server/rtg;->fc:Z
 
     const-string v1, "OnePlusExPostInstaller"
 
@@ -182,7 +182,7 @@
 
     if-eqz p1, :cond_3
 
-    iget p1, p0, Lcom/android/server/rtg;->Yb:I
+    iget p1, p0, Lcom/android/server/rtg;->dc:I
 
     if-nez p1, :cond_3
 
@@ -200,7 +200,7 @@
 
     move-result-object p1
 
-    iput-object p1, p0, Lcom/android/server/rtg;->Wb:Landroid/content/pm/PackageInstaller;
+    iput-object p1, p0, Lcom/android/server/rtg;->bc:Landroid/content/pm/PackageInstaller;
 
     invoke-virtual {v0}, Ljava/io/File;->listFiles()[Ljava/io/File;
 
@@ -220,7 +220,7 @@
 
     move-result v0
 
-    iput v0, p0, Lcom/android/server/rtg;->Xb:I
+    iput v0, p0, Lcom/android/server/rtg;->cc:I
 
     array-length v0, p1
 
@@ -243,7 +243,7 @@
 
     if-eqz v4, :cond_2
 
-    sget-boolean v4, Lcom/android/server/rtg;->_b:Z
+    sget-boolean v4, Lcom/android/server/rtg;->fc:Z
 
     if-eqz v4, :cond_1
 
@@ -310,7 +310,7 @@
 .method static synthetic cno(Lcom/android/server/rtg;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/rtg;->ul()V
+    invoke-direct {p0}, Lcom/android/server/rtg;->xl()V
 
     return-void
 .end method
@@ -318,7 +318,7 @@
 .method static synthetic rtg(Lcom/android/server/rtg;)I
     .locals 0
 
-    iget p0, p0, Lcom/android/server/rtg;->Xb:I
+    iget p0, p0, Lcom/android/server/rtg;->cc:I
 
     return p0
 .end method
@@ -326,19 +326,35 @@
 .method static synthetic sis(Lcom/android/server/rtg;)I
     .locals 2
 
-    iget v0, p0, Lcom/android/server/rtg;->Yb:I
+    iget v0, p0, Lcom/android/server/rtg;->dc:I
 
     add-int/lit8 v1, v0, -0x1
 
-    iput v1, p0, Lcom/android/server/rtg;->Yb:I
+    iput v1, p0, Lcom/android/server/rtg;->dc:I
 
     return v0
 .end method
 
-.method private sl()V
+.method static synthetic ssp(Lcom/android/server/rtg;)V
+    .locals 0
+
+    invoke-direct {p0}, Lcom/android/server/rtg;->wl()V
+
+    return-void
+.end method
+
+.method static synthetic tsu(Lcom/android/server/rtg;)Ljava/util/HashMap;
+    .locals 0
+
+    iget-object p0, p0, Lcom/android/server/rtg;->ac:Ljava/util/HashMap;
+
+    return-object p0
+.end method
+
+.method private vl()V
     .locals 4
 
-    sget-boolean v0, Lcom/android/server/rtg;->_b:Z
+    sget-boolean v0, Lcom/android/server/rtg;->fc:Z
 
     const-string v1, "OnePlusExPostInstaller"
 
@@ -349,7 +365,7 @@
     invoke-static {v1, v0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_0
-    iget-boolean v0, p0, Lcom/android/server/rtg;->Zb:Z
+    iget-boolean v0, p0, Lcom/android/server/rtg;->ec:Z
 
     if-nez v0, :cond_1
 
@@ -369,9 +385,9 @@
 
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/android/server/rtg;->Zb:Z
+    iput-boolean v0, p0, Lcom/android/server/rtg;->ec:Z
 
-    sget-boolean v0, Lcom/android/server/rtg;->_b:Z
+    sget-boolean v0, Lcom/android/server/rtg;->fc:Z
 
     if-eqz v0, :cond_1
 
@@ -383,7 +399,7 @@
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean p0, p0, Lcom/android/server/rtg;->Zb:Z
+    iget-boolean p0, p0, Lcom/android/server/rtg;->ec:Z
 
     invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -397,18 +413,10 @@
     return-void
 .end method
 
-.method static synthetic ssp(Lcom/android/server/rtg;)V
-    .locals 0
-
-    invoke-direct {p0}, Lcom/android/server/rtg;->tl()V
-
-    return-void
-.end method
-
-.method private tl()V
+.method private wl()V
     .locals 4
 
-    sget-boolean v0, Lcom/android/server/rtg;->_b:Z
+    sget-boolean v0, Lcom/android/server/rtg;->fc:Z
 
     const-string v1, "OnePlusExPostInstaller"
 
@@ -419,7 +427,7 @@
     invoke-static {v1, v0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_0
-    iget-boolean v0, p0, Lcom/android/server/rtg;->Zb:Z
+    iget-boolean v0, p0, Lcom/android/server/rtg;->ec:Z
 
     if-eqz v0, :cond_2
 
@@ -463,9 +471,9 @@
     :cond_1
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/android/server/rtg;->Zb:Z
+    iput-boolean v0, p0, Lcom/android/server/rtg;->ec:Z
 
-    sget-boolean v0, Lcom/android/server/rtg;->_b:Z
+    sget-boolean v0, Lcom/android/server/rtg;->fc:Z
 
     if-eqz v0, :cond_2
 
@@ -477,7 +485,7 @@
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean p0, p0, Lcom/android/server/rtg;->Zb:Z
+    iget-boolean p0, p0, Lcom/android/server/rtg;->ec:Z
 
     invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -491,22 +499,14 @@
     return-void
 .end method
 
-.method static synthetic tsu(Lcom/android/server/rtg;)Ljava/util/HashMap;
-    .locals 0
-
-    iget-object p0, p0, Lcom/android/server/rtg;->Vb:Ljava/util/HashMap;
-
-    return-object p0
-.end method
-
-.method private ul()V
+.method private xl()V
     .locals 6
 
     const-string p0, "installAPKs: wait internalSD ready for totally "
 
     const-string v0, " s."
 
-    sget-boolean v1, Lcom/android/server/rtg;->_b:Z
+    sget-boolean v1, Lcom/android/server/rtg;->fc:Z
 
     const-string v2, "OnePlusExPostInstaller"
 
@@ -539,7 +539,7 @@
 
     add-int/lit8 v3, v3, 0x1
 
-    sget-boolean v4, Lcom/android/server/rtg;->_b:Z
+    sget-boolean v4, Lcom/android/server/rtg;->fc:Z
 
     if-eqz v4, :cond_2
 
@@ -649,7 +649,7 @@
     move-exception v1
 
     :try_start_1
-    sget-boolean v4, Lcom/android/server/rtg;->_b:Z
+    sget-boolean v4, Lcom/android/server/rtg;->fc:Z
 
     if-eqz v4, :cond_5
 
@@ -686,7 +686,7 @@
 
     :cond_6
     :goto_1
-    sget-boolean p0, Lcom/android/server/rtg;->_b:Z
+    sget-boolean p0, Lcom/android/server/rtg;->fc:Z
 
     if-eqz p0, :cond_7
 
@@ -727,7 +727,7 @@
 .method static synthetic you(Lcom/android/server/rtg;)I
     .locals 0
 
-    iget p0, p0, Lcom/android/server/rtg;->Yb:I
+    iget p0, p0, Lcom/android/server/rtg;->dc:I
 
     return p0
 .end method
@@ -839,7 +839,7 @@
     :cond_3
     iget-object v1, v2, Landroid/content/pm/PackageInfo;->packageName:Ljava/lang/String;
 
-    iget-object v2, p0, Lcom/android/server/rtg;->Vb:Ljava/util/HashMap;
+    iget-object v2, p0, Lcom/android/server/rtg;->ac:Ljava/util/HashMap;
 
     invoke-virtual {v2, v1}, Ljava/util/HashMap;->containsKey(Ljava/lang/Object;)Z
 
@@ -899,19 +899,19 @@
     const/4 v0, 0x0
 
     :try_start_0
-    invoke-direct {p0}, Lcom/android/server/rtg;->sl()V
+    invoke-direct {p0}, Lcom/android/server/rtg;->vl()V
 
-    iget v2, p0, Lcom/android/server/rtg;->Yb:I
+    iget v2, p0, Lcom/android/server/rtg;->dc:I
 
     const/4 v4, 0x1
 
     add-int/2addr v2, v4
 
-    iput v2, p0, Lcom/android/server/rtg;->Yb:I
+    iput v2, p0, Lcom/android/server/rtg;->dc:I
 
-    iget-object v2, p0, Lcom/android/server/rtg;->Vb:Ljava/util/HashMap;
+    iget-object v2, p0, Lcom/android/server/rtg;->ac:Ljava/util/HashMap;
 
-    iget v5, p0, Lcom/android/server/rtg;->Yb:I
+    iget v5, p0, Lcom/android/server/rtg;->dc:I
 
     invoke-static {v5}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -925,13 +925,13 @@
 
     invoke-virtual {v2, v1}, Landroid/content/pm/PackageInstaller$SessionParams;->setAppPackageName(Ljava/lang/String;)V
 
-    iget-object v4, p0, Lcom/android/server/rtg;->Wb:Landroid/content/pm/PackageInstaller;
+    iget-object v4, p0, Lcom/android/server/rtg;->bc:Landroid/content/pm/PackageInstaller;
 
     invoke-virtual {v4, v2}, Landroid/content/pm/PackageInstaller;->createSession(Landroid/content/pm/PackageInstaller$SessionParams;)I
 
     move-result v2
 
-    iget-object v4, p0, Lcom/android/server/rtg;->Wb:Landroid/content/pm/PackageInstaller;
+    iget-object v4, p0, Lcom/android/server/rtg;->bc:Landroid/content/pm/PackageInstaller;
 
     invoke-virtual {v4, v2}, Landroid/content/pm/PackageInstaller;->openSession(I)Landroid/content/pm/PackageInstaller$Session;
 
@@ -1084,7 +1084,7 @@
     return p0
 
     :cond_0
-    sget-boolean v3, Lcom/android/server/rtg;->_b:Z
+    sget-boolean v3, Lcom/android/server/rtg;->fc:Z
 
     if-eqz v3, :cond_1
 
@@ -1141,7 +1141,7 @@
 .method public zta(Landroid/content/Context;Ljava/lang/String;)V
     .locals 2
 
-    sget-boolean v0, Lcom/android/server/rtg;->_b:Z
+    sget-boolean v0, Lcom/android/server/rtg;->fc:Z
 
     if-eqz v0, :cond_0
 
@@ -1166,7 +1166,7 @@
     :cond_0
     iput-object p1, p0, Lcom/android/server/rtg;->mContext:Landroid/content/Context;
 
-    iget p1, p0, Lcom/android/server/rtg;->Yb:I
+    iget p1, p0, Lcom/android/server/rtg;->dc:I
 
     if-nez p1, :cond_1
 

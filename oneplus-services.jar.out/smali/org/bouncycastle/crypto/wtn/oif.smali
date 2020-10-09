@@ -6,7 +6,7 @@
 # static fields
 .field private static final ONE:Ljava/math/BigInteger;
 
-.field private static final lra:Ljava/math/BigInteger;
+.field private static final wra:Ljava/math/BigInteger;
 
 
 # instance fields
@@ -31,7 +31,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lorg/bouncycastle/crypto/wtn/oif;->lra:Ljava/math/BigInteger;
+    sput-object v0, Lorg/bouncycastle/crypto/wtn/oif;->wra:Ljava/math/BigInteger;
 
     return-void
 .end method
@@ -55,7 +55,7 @@
 
     if-eqz p2, :cond_1
 
-    sget-object p0, Lorg/bouncycastle/crypto/wtn/oif;->lra:Ljava/math/BigInteger;
+    sget-object p0, Lorg/bouncycastle/crypto/wtn/oif;->wra:Ljava/math/BigInteger;
 
     invoke-virtual {p0, p1}, Ljava/math/BigInteger;->compareTo(Ljava/math/BigInteger;)I
 
@@ -67,7 +67,7 @@
 
     move-result-object p0
 
-    sget-object v0, Lorg/bouncycastle/crypto/wtn/oif;->lra:Ljava/math/BigInteger;
+    sget-object v0, Lorg/bouncycastle/crypto/wtn/oif;->wra:Ljava/math/BigInteger;
 
     invoke-virtual {p0, v0}, Ljava/math/BigInteger;->subtract(Ljava/math/BigInteger;)Ljava/math/BigInteger;
 

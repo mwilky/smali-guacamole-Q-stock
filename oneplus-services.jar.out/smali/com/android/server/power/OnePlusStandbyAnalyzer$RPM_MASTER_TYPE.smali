@@ -25,17 +25,17 @@
 # static fields
 .field private static final synthetic $VALUES:[Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_MASTER_TYPE;
 
-.field public static final enum Bna:Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_MASTER_TYPE;
+.field public static final enum Mna:Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_MASTER_TYPE;
 
-.field public static final enum Cna:Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_MASTER_TYPE;
+.field public static final enum Nna:Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_MASTER_TYPE;
 
-.field public static final enum Dna:Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_MASTER_TYPE;
+.field public static final enum Ona:Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_MASTER_TYPE;
 
-.field public static final enum Ena:Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_MASTER_TYPE;
+.field public static final enum Pna:Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_MASTER_TYPE;
 
-.field public static final enum Fna:Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_MASTER_TYPE;
+.field public static final enum Qna:Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_MASTER_TYPE;
 
-.field public static final enum Gna:Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_MASTER_TYPE;
+.field public static final enum Rna:Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_MASTER_TYPE;
 
 .field public static final enum UNKNOWN:Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_MASTER_TYPE;
 
@@ -56,7 +56,7 @@
 
     invoke-direct {v0, v2, v1, v2}, Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_MASTER_TYPE;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_MASTER_TYPE;->Fna:Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_MASTER_TYPE;
+    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_MASTER_TYPE;->Qna:Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_MASTER_TYPE;
 
     new-instance v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_MASTER_TYPE;
 
@@ -66,7 +66,7 @@
 
     invoke-direct {v0, v3, v2, v3}, Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_MASTER_TYPE;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_MASTER_TYPE;->Dna:Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_MASTER_TYPE;
+    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_MASTER_TYPE;->Ona:Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_MASTER_TYPE;
 
     new-instance v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_MASTER_TYPE;
 
@@ -76,7 +76,7 @@
 
     invoke-direct {v0, v4, v3, v4}, Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_MASTER_TYPE;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_MASTER_TYPE;->Cna:Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_MASTER_TYPE;
+    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_MASTER_TYPE;->Nna:Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_MASTER_TYPE;
 
     new-instance v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_MASTER_TYPE;
 
@@ -86,7 +86,7 @@
 
     invoke-direct {v0, v5, v4, v5}, Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_MASTER_TYPE;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_MASTER_TYPE;->Bna:Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_MASTER_TYPE;
+    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_MASTER_TYPE;->Mna:Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_MASTER_TYPE;
 
     new-instance v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_MASTER_TYPE;
 
@@ -96,7 +96,7 @@
 
     invoke-direct {v0, v6, v5, v6}, Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_MASTER_TYPE;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_MASTER_TYPE;->Gna:Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_MASTER_TYPE;
+    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_MASTER_TYPE;->Rna:Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_MASTER_TYPE;
 
     new-instance v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_MASTER_TYPE;
 
@@ -106,7 +106,7 @@
 
     invoke-direct {v0, v7, v6, v7}, Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_MASTER_TYPE;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_MASTER_TYPE;->Ena:Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_MASTER_TYPE;
+    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_MASTER_TYPE;->Pna:Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_MASTER_TYPE;
 
     new-instance v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_MASTER_TYPE;
 
@@ -122,27 +122,27 @@
 
     new-array v0, v0, [Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_MASTER_TYPE;
 
-    sget-object v8, Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_MASTER_TYPE;->Fna:Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_MASTER_TYPE;
+    sget-object v8, Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_MASTER_TYPE;->Qna:Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_MASTER_TYPE;
 
     aput-object v8, v0, v1
 
-    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_MASTER_TYPE;->Dna:Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_MASTER_TYPE;
+    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_MASTER_TYPE;->Ona:Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_MASTER_TYPE;
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_MASTER_TYPE;->Cna:Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_MASTER_TYPE;
+    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_MASTER_TYPE;->Nna:Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_MASTER_TYPE;
 
     aput-object v1, v0, v3
 
-    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_MASTER_TYPE;->Bna:Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_MASTER_TYPE;
+    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_MASTER_TYPE;->Mna:Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_MASTER_TYPE;
 
     aput-object v1, v0, v4
 
-    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_MASTER_TYPE;->Gna:Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_MASTER_TYPE;
+    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_MASTER_TYPE;->Rna:Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_MASTER_TYPE;
 
     aput-object v1, v0, v5
 
-    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_MASTER_TYPE;->Ena:Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_MASTER_TYPE;
+    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_MASTER_TYPE;->Pna:Lcom/android/server/power/OnePlusStandbyAnalyzer$RPM_MASTER_TYPE;
 
     aput-object v1, v0, v6
 

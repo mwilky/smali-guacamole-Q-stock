@@ -4,7 +4,7 @@
 
 
 # static fields
-.field public static final iGa:Ljava/lang/String; = "bc_fixed_point"
+.field public static final tGa:Ljava/lang/String; = "bc_fixed_point"
 
 
 # direct methods

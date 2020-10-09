@@ -1,11 +1,11 @@
-.class final Lcom/android/server/wm/irq$zta;
+.class final Lcom/android/server/wm/vdw$zta;
 .super Landroid/os/Handler;
 .source ""
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/server/wm/irq;
+    value = Lcom/android/server/wm/vdw;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,14 +15,14 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/server/wm/irq;
+.field final synthetic this$0:Lcom/android/server/wm/vdw;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/server/wm/irq;)V
+.method constructor <init>(Lcom/android/server/wm/vdw;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/android/server/wm/irq$zta;->this$0:Lcom/android/server/wm/irq;
+    iput-object p1, p0, Lcom/android/server/wm/vdw$zta;->this$0:Lcom/android/server/wm/vdw;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
 
@@ -47,16 +47,16 @@
     goto :goto_0
 
     :cond_0
-    iget-object p0, p0, Lcom/android/server/wm/irq$zta;->this$0:Lcom/android/server/wm/irq;
+    iget-object p0, p0, Lcom/android/server/wm/vdw$zta;->this$0:Lcom/android/server/wm/vdw;
 
-    invoke-static {p0}, Lcom/android/server/wm/irq;->sis(Lcom/android/server/wm/irq;)V
+    invoke-static {p0}, Lcom/android/server/wm/vdw;->sis(Lcom/android/server/wm/vdw;)V
 
     goto :goto_0
 
     :cond_1
-    iget-object p0, p0, Lcom/android/server/wm/irq$zta;->this$0:Lcom/android/server/wm/irq;
+    iget-object p0, p0, Lcom/android/server/wm/vdw$zta;->this$0:Lcom/android/server/wm/vdw;
 
-    invoke-static {p0}, Lcom/android/server/wm/irq;->you(Lcom/android/server/wm/irq;)V
+    invoke-static {p0}, Lcom/android/server/wm/vdw;->you(Lcom/android/server/wm/vdw;)V
 
     :goto_0
     return-void

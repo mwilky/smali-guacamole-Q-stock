@@ -7,13 +7,13 @@
 
 
 # instance fields
+.field private CDa:Lorg/bouncycastle/crypto/wtn/bvj;
+
 .field private g:Ljava/math/BigInteger;
 
 .field private p:Ljava/math/BigInteger;
 
 .field private q:Ljava/math/BigInteger;
-
-.field private rDa:Lorg/bouncycastle/crypto/wtn/bvj;
 
 
 # direct methods
@@ -42,7 +42,7 @@
 
     iput-object p2, p0, Lorg/bouncycastle/crypto/wtn/ywr;->q:Ljava/math/BigInteger;
 
-    iput-object p4, p0, Lorg/bouncycastle/crypto/wtn/ywr;->rDa:Lorg/bouncycastle/crypto/wtn/bvj;
+    iput-object p4, p0, Lorg/bouncycastle/crypto/wtn/ywr;->CDa:Lorg/bouncycastle/crypto/wtn/bvj;
 
     return-void
 .end method
@@ -163,10 +163,10 @@
     return p0
 .end method
 
-.method public uj()Lorg/bouncycastle/crypto/wtn/bvj;
+.method public wj()Lorg/bouncycastle/crypto/wtn/bvj;
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/crypto/wtn/ywr;->rDa:Lorg/bouncycastle/crypto/wtn/bvj;
+    iget-object p0, p0, Lorg/bouncycastle/crypto/wtn/ywr;->CDa:Lorg/bouncycastle/crypto/wtn/bvj;
 
     return-object p0
 .end method

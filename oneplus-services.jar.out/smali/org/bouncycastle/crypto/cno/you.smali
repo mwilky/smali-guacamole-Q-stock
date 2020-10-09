@@ -20,7 +20,7 @@
 
 
 # virtual methods
-.method public Sf()[B
+.method public Uf()[B
     .locals 2
 
     iget-object v0, p0, Lorg/bouncycastle/crypto/cno/you;->digest:Lorg/bouncycastle/crypto/qbh;

@@ -4,11 +4,11 @@
 
 
 # static fields
-.field private static final eIa:J = 0x55555555L
+.field private static final pIa:J = 0x55555555L
 
-.field private static final fIa:J = 0x5555555555555555L
+.field private static final qIa:J = 0x5555555555555555L
 
-.field private static final gIa:J = -0x5555555555555556L
+.field private static final rIa:J = -0x5555555555555556L
 
 
 # direct methods

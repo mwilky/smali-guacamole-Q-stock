@@ -275,7 +275,7 @@
 
     invoke-static {p0}, Lcom/android/server/am/irq;->access$902(Z)Z
 
-    invoke-static {}, Lcom/android/server/am/irq;->access$1200()I
+    invoke-static {}, Lcom/android/server/am/irq;->Ib()I
 
     goto/16 :goto_2
 

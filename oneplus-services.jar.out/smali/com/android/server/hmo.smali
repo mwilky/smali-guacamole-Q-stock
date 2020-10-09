@@ -18,9 +18,9 @@
 
 
 # instance fields
-.field final synthetic oe:Ljava/lang/String;
-
 .field final synthetic this$0:Lcom/android/server/fto;
+
+.field final synthetic ue:Ljava/lang/String;
 
 .field final synthetic val$packageName:Ljava/lang/String;
 
@@ -33,7 +33,7 @@
 
     iput-object p2, p0, Lcom/android/server/hmo;->val$packageName:Ljava/lang/String;
 
-    iput-object p3, p0, Lcom/android/server/hmo;->oe:Ljava/lang/String;
+    iput-object p3, p0, Lcom/android/server/hmo;->ue:Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -57,7 +57,7 @@
 
     invoke-virtual {v0, v2, v1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    iget-object v1, p0, Lcom/android/server/hmo;->oe:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/server/hmo;->ue:Ljava/lang/String;
 
     const-string v2, "lfrontpackage"
 

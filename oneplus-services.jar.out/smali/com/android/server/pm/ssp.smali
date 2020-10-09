@@ -1,14 +1,11 @@
 .class Lcom/android/server/pm/ssp;
-.super Ljava/lang/Object;
+.super Ljava/util/TimerTask;
 .source ""
-
-# interfaces
-.implements Landroid/content/DialogInterface$OnClickListener;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/server/pm/cno;->handleMessage(Landroid/os/Message;)Z
+    value = Lcom/android/server/pm/cno;->onClick(Landroid/content/DialogInterface;I)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,102 +15,46 @@
 
 
 # instance fields
-.field final synthetic this$1:Lcom/android/server/pm/cno;
+.field final synthetic this$2:Lcom/android/server/pm/cno;
 
 
 # direct methods
 .method constructor <init>(Lcom/android/server/pm/cno;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/android/server/pm/ssp;->this$1:Lcom/android/server/pm/cno;
+    iput-object p1, p0, Lcom/android/server/pm/ssp;->this$2:Lcom/android/server/pm/cno;
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Ljava/util/TimerTask;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public onClick(Landroid/content/DialogInterface;I)V
-    .locals 2
+.method public run()V
+    .locals 1
 
-    iget-object p1, p0, Lcom/android/server/pm/ssp;->this$1:Lcom/android/server/pm/cno;
+    iget-object p0, p0, Lcom/android/server/pm/ssp;->this$2:Lcom/android/server/pm/cno;
 
-    iget-object p1, p1, Lcom/android/server/pm/cno;->this$0:Lcom/android/server/pm/OpLauncherAppsService;
+    iget-object p0, p0, Lcom/android/server/pm/cno;->this$1:Lcom/android/server/pm/kth;
 
-    invoke-static {p1}, Lcom/android/server/pm/OpLauncherAppsService;->access$100(Lcom/android/server/pm/OpLauncherAppsService;)Landroid/content/Context;
+    iget-object p0, p0, Lcom/android/server/pm/kth;->this$0:Lcom/android/server/pm/OpLauncherAppsService;
 
-    move-result-object p1
+    invoke-static {p0}, Lcom/android/server/pm/OpLauncherAppsService;->access$100(Lcom/android/server/pm/OpLauncherAppsService;)Landroid/content/Context;
 
-    const-string p2, "user"
+    move-result-object p0
 
-    invoke-virtual {p1, p2}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    const-string v0, "power"
 
-    move-result-object p1
+    invoke-virtual {p0, v0}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
-    check-cast p1, Landroid/os/UserManager;
+    move-result-object p0
 
-    iget-object p2, p0, Lcom/android/server/pm/ssp;->this$1:Lcom/android/server/pm/cno;
+    check-cast p0, Landroid/os/PowerManager;
 
-    iget-object p2, p2, Lcom/android/server/pm/cno;->this$0:Lcom/android/server/pm/OpLauncherAppsService;
+    const-string v0, "Reset parallel app feature"
 
-    invoke-virtual {p1}, Landroid/os/UserManager;->getUserProfiles()Ljava/util/List;
-
-    move-result-object v0
-
-    invoke-static {p2, v0}, Lcom/android/server/pm/OpLauncherAppsService;->access$202(Lcom/android/server/pm/OpLauncherAppsService;Ljava/util/List;)Ljava/util/List;
-
-    iget-object p2, p0, Lcom/android/server/pm/ssp;->this$1:Lcom/android/server/pm/cno;
-
-    iget-object p2, p2, Lcom/android/server/pm/cno;->this$0:Lcom/android/server/pm/OpLauncherAppsService;
-
-    invoke-static {p2}, Lcom/android/server/pm/OpLauncherAppsService;->access$300(Lcom/android/server/pm/OpLauncherAppsService;)V
-
-    const/16 p2, 0x3e7
-
-    invoke-virtual {p1, p2}, Landroid/os/UserManager;->removeUser(I)Z
-
-    iget-object p1, p0, Lcom/android/server/pm/ssp;->this$1:Lcom/android/server/pm/cno;
-
-    iget-object p1, p1, Lcom/android/server/pm/cno;->this$0:Lcom/android/server/pm/OpLauncherAppsService;
-
-    invoke-static {p1}, Lcom/android/server/pm/OpLauncherAppsService;->access$100(Lcom/android/server/pm/OpLauncherAppsService;)Landroid/content/Context;
-
-    move-result-object p1
-
-    iget-object p2, p0, Lcom/android/server/pm/ssp;->this$1:Lcom/android/server/pm/cno;
-
-    iget-object p2, p2, Lcom/android/server/pm/cno;->this$0:Lcom/android/server/pm/OpLauncherAppsService;
-
-    invoke-static {p2}, Lcom/android/server/pm/OpLauncherAppsService;->access$100(Lcom/android/server/pm/OpLauncherAppsService;)Landroid/content/Context;
-
-    move-result-object p2
-
-    const v0, 0x50d008d
-
-    invoke-virtual {p2, v0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
-
-    move-result-object p2
-
-    const/4 v0, 0x1
-
-    invoke-static {p1, p2, v0}, Landroid/widget/Toast;->makeText(Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;
-
-    move-result-object p1
-
-    invoke-virtual {p1}, Landroid/widget/Toast;->show()V
-
-    new-instance p1, Ljava/util/Timer;
-
-    invoke-direct {p1}, Ljava/util/Timer;-><init>()V
-
-    new-instance p2, Lcom/android/server/pm/rtg;
-
-    invoke-direct {p2, p0}, Lcom/android/server/pm/rtg;-><init>(Lcom/android/server/pm/ssp;)V
-
-    const-wide/16 v0, 0x1770
-
-    invoke-virtual {p1, p2, v0, v1}, Ljava/util/Timer;->schedule(Ljava/util/TimerTask;J)V
+    invoke-virtual {p0, v0}, Landroid/os/PowerManager;->reboot(Ljava/lang/String;)V
 
     return-void
 .end method

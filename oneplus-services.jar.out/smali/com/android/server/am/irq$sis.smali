@@ -124,7 +124,7 @@
 
     invoke-static {v6, p0}, Lcom/android/server/am/irq;->tsu(ILjava/lang/String;)V
 
-    invoke-static {}, Lcom/android/server/am/irq;->Ib()Landroid/os/Handler;
+    invoke-static {}, Lcom/android/server/am/irq;->Jb()Landroid/os/Handler;
 
     move-result-object p0
 
@@ -148,7 +148,7 @@
     monitor-enter p0
 
     :try_start_1
-    invoke-static {}, Lcom/android/server/am/irq;->Ib()Landroid/os/Handler;
+    invoke-static {}, Lcom/android/server/am/irq;->Jb()Landroid/os/Handler;
 
     move-result-object p1
 
@@ -256,7 +256,7 @@
     goto/16 :goto_1
 
     :pswitch_4
-    invoke-static {}, Lcom/android/server/am/irq;->Ib()Landroid/os/Handler;
+    invoke-static {}, Lcom/android/server/am/irq;->Jb()Landroid/os/Handler;
 
     move-result-object p1
 
@@ -441,7 +441,7 @@
 
     invoke-static {v6, p0}, Lcom/android/server/am/irq;->tsu(ILjava/lang/String;)V
 
-    invoke-static {}, Lcom/android/server/am/irq;->Ib()Landroid/os/Handler;
+    invoke-static {}, Lcom/android/server/am/irq;->Jb()Landroid/os/Handler;
 
     move-result-object p0
 
@@ -475,7 +475,7 @@
     monitor-enter p1
 
     :try_start_3
-    invoke-static {}, Lcom/android/server/am/irq;->Ib()Landroid/os/Handler;
+    invoke-static {}, Lcom/android/server/am/irq;->Jb()Landroid/os/Handler;
 
     move-result-object v3
 

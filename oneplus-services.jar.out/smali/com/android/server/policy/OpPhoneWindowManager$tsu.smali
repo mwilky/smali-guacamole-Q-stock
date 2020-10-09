@@ -422,7 +422,7 @@
 
     sget-object v2, Lcom/android/server/policy/OpPhoneWindowManager;->mKeyLockMode:Lcom/android/server/policy/OpPhoneWindowManager$KeyLockMode;
 
-    sget-object v3, Lcom/android/server/policy/OpPhoneWindowManager$KeyLockMode;->jla:Lcom/android/server/policy/OpPhoneWindowManager$KeyLockMode;
+    sget-object v3, Lcom/android/server/policy/OpPhoneWindowManager$KeyLockMode;->ula:Lcom/android/server/policy/OpPhoneWindowManager$KeyLockMode;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_1
 

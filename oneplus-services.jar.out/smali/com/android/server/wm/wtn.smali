@@ -1,638 +1,82 @@
-.class public final Lcom/android/server/wm/wtn;
+.class Lcom/android/server/wm/wtn;
 .super Ljava/lang/Object;
 .source ""
 
+# interfaces
+.implements Ljava/lang/Runnable;
+
 
 # annotations
-.annotation system Ldalvik/annotation/MemberClasses;
-    value = {
-        Lcom/android/server/wm/wtn$zta;
-    }
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/android/server/wm/gck$zta;->oif(IZ)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
 .end annotation
 
 
-# static fields
-.field public static final DBG:Z
+# instance fields
+.field final synthetic iR:Ljava/lang/String;
 
-.field private static final TAG:Ljava/lang/String; = "OemSceneModeAmHelper"
-
-.field private static final qR:Z
-
-.field private static rR:Lcom/oneplus/os/IOnePlusExService;
-
-.field private static sR:Ljava/util/ArrayList;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/ArrayList<",
-            "Landroid/content/ComponentName;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private static tR:Z
-
-.field static uR:Lcom/android/server/wm/wtn$zta;
+.field final synthetic this$0:Lcom/android/server/wm/gck$zta;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 3
-
-    sget-boolean v0, Landroid/os/Build;->DEBUG_ONEPLUS:Z
-
-    sput-boolean v0, Lcom/android/server/wm/wtn;->DBG:Z
-
-    const/4 v0, 0x1
-
-    new-array v0, v0, [I
-
-    const/4 v1, 0x0
-
-    const/16 v2, 0x1f
-
-    aput v2, v0, v1
-
-    invoke-static {v0}, Landroid/util/OpFeatures;->isSupport([I)Z
-
-    move-result v0
-
-    sput-boolean v0, Lcom/android/server/wm/wtn;->qR:Z
-
-    new-instance v0, Lcom/android/server/wm/wtn$zta;
-
-    invoke-direct {v0}, Lcom/android/server/wm/wtn$zta;-><init>()V
-
-    sput-object v0, Lcom/android/server/wm/wtn;->uR:Lcom/android/server/wm/wtn$zta;
-
-    return-void
-.end method
-
-.method public constructor <init>()V
+.method constructor <init>(Lcom/android/server/wm/gck$zta;Ljava/lang/String;)V
     .locals 0
+
+    iput-object p1, p0, Lcom/android/server/wm/wtn;->this$0:Lcom/android/server/wm/gck$zta;
+
+    iput-object p2, p0, Lcom/android/server/wm/wtn;->iR:Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
-.method static synthetic access$000()Z
-    .locals 1
 
-    sget-boolean v0, Lcom/android/server/wm/wtn;->qR:Z
-
-    return v0
-.end method
-
-.method public static de()V
+# virtual methods
+.method public run()V
     .locals 2
 
-    sget-boolean v0, Lcom/android/server/wm/wtn;->DBG:Z
+    iget-object v0, p0, Lcom/android/server/wm/wtn;->iR:Ljava/lang/String;
 
-    if-eqz v0, :cond_0
+    const-string v1, ""
 
-    const-string v0, "OemSceneModeAmHelper"
+    invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    const-string v1, "clearGameModeRecord"
-
-    invoke-static {v0, v1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    :cond_0
-    invoke-static {}, Lcom/android/server/wm/wtn;->ee()Lcom/android/server/wm/wtn$zta;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Lcom/android/server/wm/wtn$zta;->de()V
-
-    return-void
-.end method
-
-.method public static disableSceneButtonLockFeature(Landroid/content/Context;Z)V
-    .locals 3
-
-    sget-boolean v0, Lcom/android/server/wm/wtn;->qR:Z
-
-    if-eqz v0, :cond_1
-
-    invoke-virtual {p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
-
-    move-result-object p0
-
-    if-eqz p1, :cond_0
-
-    const-string v0, "1"
-
-    goto :goto_0
-
-    :cond_0
-    const-string v0, "0"
-
-    :goto_0
-    const/4 v1, -0x2
-
-    const-string v2, "temp_disable_scene_button_lcok_feature"
-
-    invoke-static {p0, v2, v0, v1}, Landroid/provider/Settings$System;->putStringForUser(Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;I)Z
-
-    sget-boolean p0, Lcom/android/server/wm/wtn;->DBG:Z
-
-    if-eqz p0, :cond_1
-
-    new-instance p0, Ljava/lang/StringBuilder;
-
-    invoke-direct {p0}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v0, "[scene] updateSceneButtonLockFeature toDisable: "
-
-    invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p0
-
-    const-string p1, "OemSceneModeAmHelper"
-
-    invoke-static {p1, p0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    :cond_1
-    return-void
-.end method
-
-.method public static ee()Lcom/android/server/wm/wtn$zta;
-    .locals 1
-
-    sget-object v0, Lcom/android/server/wm/wtn;->uR:Lcom/android/server/wm/wtn$zta;
-
-    return-object v0
-.end method
-
-.method public static endUserSwitching(Lcom/android/server/am/ActivityManagerService;)V
-    .locals 3
-
-    sget-boolean p0, Lcom/android/server/wm/wtn;->qR:Z
-
-    if-eqz p0, :cond_1
-
-    const-string p0, "OemSceneModeAmHelper"
-
-    const-string v0, "[scene] end switching user"
-
-    invoke-static {p0, v0}, Landroid/util/Slog;->i(Ljava/lang/String;Ljava/lang/String;)I
-
-    :try_start_0
-    sget-object v0, Lcom/android/server/wm/wtn;->rR:Lcom/oneplus/os/IOnePlusExService;
+    move-result v0
 
     if-nez v0, :cond_0
 
-    sget-object v0, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_exservice:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
+    iget-object v0, p0, Lcom/android/server/wm/wtn;->this$0:Lcom/android/server/wm/gck$zta;
 
-    invoke-static {v0}, Lcom/oneplus/android/server/context/OneplusContextStub;->queryInterface(Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;)Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Lcom/oneplus/os/IOnePlusExService;
-
-    sput-object v0, Lcom/android/server/wm/wtn;->rR:Lcom/oneplus/os/IOnePlusExService;
-
-    :cond_0
-    sget-object v0, Lcom/android/server/wm/wtn;->rR:Lcom/oneplus/os/IOnePlusExService;
-
-    const/4 v1, 0x1
-
-    invoke-interface {v0, v1}, Lcom/oneplus/os/IOnePlusExService;->monitorSceneChanging(Z)V
-    :try_end_0
-    .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
-
-    goto :goto_0
-
-    :catch_0
-    move-exception v0
-
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v2, "[scene] error while operating the scene mode controller: "
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-static {v0}, Lcom/android/server/wm/gck$zta;->zta(Lcom/android/server/wm/gck$zta;)Landroid/content/Context;
 
     move-result-object v0
 
-    invoke-static {p0, v0}, Landroid/util/Slog;->e(Ljava/lang/String;Ljava/lang/String;)I
-
-    :cond_1
-    :goto_0
-    return-void
-.end method
-
-.method public static fe()V
-    .locals 2
-
-    sget-boolean v0, Lcom/android/server/wm/wtn;->DBG:Z
-
-    if-eqz v0, :cond_0
-
-    const-string v0, "OemSceneModeAmHelper"
-
-    const-string v1, "ReadMode2: handleStopMonitorPassive"
-
-    invoke-static {v0, v1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    :cond_0
-    invoke-static {}, Lcom/android/server/wm/wtn;->ee()Lcom/android/server/wm/wtn$zta;
-
-    move-result-object v0
-
-    invoke-static {v0}, Lcom/android/server/wm/wtn$zta;->rtg(Lcom/android/server/wm/wtn$zta;)Lcom/android/server/wm/ActivityStack;
-
-    move-result-object v0
-
-    iget-object v0, v0, Lcom/android/server/wm/ActivityStack;->mHandler:Landroid/os/Handler;
-
-    const/16 v1, 0x6f
-
-    invoke-virtual {v0, v1}, Landroid/os/Handler;->removeMessages(I)V
-
-    const/4 v0, 0x0
-
-    sput-object v0, Lcom/oneplus/android/server/scene/ivd;->via:Ljava/lang/String;
-
-    return-void
-.end method
-
-.method public static handleShowOrOccludedChanged(Lcom/android/server/wm/KeyguardController;ZZLcom/android/server/wm/ActivityStackSupervisor;)V
-    .locals 4
-
-    sget-boolean p3, Lcom/android/server/wm/wtn;->qR:Z
-
-    if-eqz p3, :cond_6
-
-    new-instance p3, Ljava/lang/StringBuilder;
-
-    invoke-direct {p3}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v0, "[scene] handleShowOrOccludedChanged showing "
-
-    invoke-virtual {p3, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p3, p1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
-
-    const-string v0, ", occluded "
-
-    invoke-virtual {p3, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p3, p2}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p3
-
-    const-string v0, "OemSceneModeAmHelper"
-
-    invoke-static {v0, p3}, Landroid/util/Slog;->i(Ljava/lang/String;Ljava/lang/String;)I
-
-    const/4 p3, 0x1
+    iget-object p0, p0, Lcom/android/server/wm/wtn;->iR:Ljava/lang/String;
 
     const/4 v1, 0x0
 
-    if-eqz p1, :cond_1
-
-    if-eqz p2, :cond_0
-
-    goto :goto_0
-
-    :cond_0
-    move v2, v1
-
-    goto :goto_1
-
-    :cond_1
-    :goto_0
-    move v2, p3
-
-    :goto_1
-    sget-boolean v3, Lcom/android/server/wm/wtn;->tR:Z
-
-    if-eq v2, v3, :cond_5
-
-    :try_start_0
-    sget-object v3, Lcom/android/server/wm/wtn;->rR:Lcom/oneplus/os/IOnePlusExService;
-
-    if-nez v3, :cond_2
-
-    sget-object v3, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_exservice:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
-
-    invoke-static {v3}, Lcom/oneplus/android/server/context/OneplusContextStub;->queryInterface(Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;)Ljava/lang/Object;
-
-    move-result-object v3
-
-    check-cast v3, Lcom/oneplus/os/IOnePlusExService;
-
-    sput-object v3, Lcom/android/server/wm/wtn;->rR:Lcom/oneplus/os/IOnePlusExService;
-
-    :cond_2
-    sget-object v3, Lcom/android/server/wm/wtn;->rR:Lcom/oneplus/os/IOnePlusExService;
-
-    if-eqz p1, :cond_4
-
-    if-eqz p2, :cond_3
-
-    goto :goto_2
-
-    :cond_3
-    move p3, v1
-
-    :cond_4
-    :goto_2
-    invoke-interface {v3, p3}, Lcom/oneplus/os/IOnePlusExService;->monitorSceneChanging(Z)V
-    :try_end_0
-    .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
-
-    goto :goto_3
-
-    :catch_0
-    move-exception p1
-
-    new-instance p2, Ljava/lang/StringBuilder;
-
-    invoke-direct {p2}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string p3, "[scene] error while operating the scene mode controller: "
-
-    invoke-virtual {p2, p3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p1
-
-    invoke-static {v0, p1}, Landroid/util/Slog;->e(Ljava/lang/String;Ljava/lang/String;)I
-
-    :cond_5
-    :goto_3
-    sput-boolean v2, Lcom/android/server/wm/wtn;->tR:Z
-
-    invoke-virtual {p0, v1}, Lcom/android/server/wm/KeyguardController;->isKeyguardShowing(I)Z
-
-    move-result p0
-
-    if-eqz p0, :cond_6
-
-    invoke-static {v1}, Lcom/android/server/wm/OnePlusSceneManagerInjector;->updateSceneScreenEffectFlag(I)V
-
-    :cond_6
-    return-void
-.end method
-
-.method public static shouldIgnoreSceneEvaluation(Lcom/android/server/wm/ActivityTaskManagerService;Lcom/android/server/wm/ActivityRecord;)Z
-    .locals 4
-
-    sget-object v0, Lcom/android/server/wm/wtn;->sR:Ljava/util/ArrayList;
-
-    if-nez v0, :cond_2
-
-    new-instance v0, Ljava/util/ArrayList;
-
-    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
-
-    sput-object v0, Lcom/android/server/wm/wtn;->sR:Ljava/util/ArrayList;
-
-    new-instance v0, Landroid/content/Intent;
-
-    const-string v1, "android.content.pm.action.REQUEST_PERMISSIONS"
-
-    invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
-
-    iget-object p0, p0, Lcom/android/server/wm/ActivityTaskManagerService;->mContext:Landroid/content/Context;
-
-    invoke-virtual {p0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
+    invoke-static {v0, p0, v1}, Landroid/widget/Toast;->makeText(Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;
 
     move-result-object p0
 
-    const/high16 v1, 0x110000
-
-    invoke-virtual {p0, v0, v1}, Landroid/content/pm/PackageManager;->queryIntentActivities(Landroid/content/Intent;I)Ljava/util/List;
-
-    move-result-object p0
-
-    if-eqz p0, :cond_0
-
-    invoke-interface {p0}, Ljava/util/List;->isEmpty()Z
-
-    move-result v0
-
-    if-nez v0, :cond_0
-
-    invoke-interface {p0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
-
-    move-result-object p0
-
-    :goto_0
-    invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    invoke-virtual {p0}, Landroid/widget/Toast;->getWindowParams()Landroid/view/WindowManager$LayoutParams;
 
     move-result-object v0
 
-    check-cast v0, Landroid/content/pm/ResolveInfo;
+    iget v1, v0, Landroid/view/WindowManager$LayoutParams;->privateFlags:I
 
-    sget-object v1, Lcom/android/server/wm/wtn;->sR:Ljava/util/ArrayList;
+    or-int/lit8 v1, v1, 0x10
 
-    iget-object v0, v0, Landroid/content/pm/ResolveInfo;->activityInfo:Landroid/content/pm/ActivityInfo;
+    iput v1, v0, Landroid/view/WindowManager$LayoutParams;->privateFlags:I
 
-    invoke-virtual {v0}, Landroid/content/pm/ActivityInfo;->getComponentName()Landroid/content/ComponentName;
-
-    move-result-object v0
-
-    invoke-virtual {v1, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    goto :goto_0
+    invoke-virtual {p0}, Landroid/widget/Toast;->show()V
 
     :cond_0
-    sget-boolean p0, Landroid/os/Build;->DEBUG_ONEPLUS:Z
-
-    if-eqz p0, :cond_2
-
-    const-string p0, "OemSceneModeAmHelper"
-
-    const-string v0, "[scene] scene evaluation ignore list: "
-
-    invoke-static {p0, v0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    sget-object v0, Lcom/android/server/wm/wtn;->sR:Ljava/util/ArrayList;
-
-    invoke-virtual {v0}, Ljava/util/ArrayList;->isEmpty()Z
-
-    move-result v0
-
-    if-nez v0, :cond_1
-
-    sget-object v0, Lcom/android/server/wm/wtn;->sR:Ljava/util/ArrayList;
-
-    invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
-
-    move-result-object v0
-
-    :goto_1
-    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v1
-
-    if-eqz v1, :cond_2
-
-    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v1
-
-    check-cast v1, Landroid/content/ComponentName;
-
-    new-instance v2, Ljava/lang/StringBuilder;
-
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v3, "[scene]    "
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-static {p0, v1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    goto :goto_1
-
-    :cond_1
-    const-string v0, "[scene]     Empty"
-
-    invoke-static {p0, v0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    :cond_2
-    const/4 p0, 0x0
-
-    if-nez p1, :cond_3
-
-    return p0
-
-    :cond_3
-    invoke-virtual {p1}, Lcom/android/server/wm/ActivityRecord;->isResolverActivity()Z
-
-    move-result v0
-
-    const/4 v1, 0x1
-
-    if-eqz v0, :cond_4
-
-    return v1
-
-    :cond_4
-    sget-object v0, Lcom/android/server/wm/wtn;->sR:Ljava/util/ArrayList;
-
-    invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
-
-    move-result-object v0
-
-    :cond_5
-    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v2
-
-    if-eqz v2, :cond_6
-
-    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v2
-
-    check-cast v2, Landroid/content/ComponentName;
-
-    if-eqz v2, :cond_5
-
-    iget-object v3, p1, Lcom/android/server/wm/ActivityRecord;->mActivityComponent:Landroid/content/ComponentName;
-
-    invoke-virtual {v2, v3}, Landroid/content/ComponentName;->equals(Ljava/lang/Object;)Z
-
-    move-result v2
-
-    if-eqz v2, :cond_5
-
-    return v1
-
-    :cond_6
-    return p0
-.end method
-
-.method public static startUserSwitching()V
-    .locals 4
-
-    sget-boolean v0, Lcom/android/server/wm/wtn;->qR:Z
-
-    if-eqz v0, :cond_1
-
-    const-string v0, "OemSceneModeAmHelper"
-
-    const-string v1, "[scene] start switching user"
-
-    invoke-static {v0, v1}, Landroid/util/Slog;->i(Ljava/lang/String;Ljava/lang/String;)I
-
-    :try_start_0
-    sget-object v1, Lcom/android/server/wm/wtn;->rR:Lcom/oneplus/os/IOnePlusExService;
-
-    if-nez v1, :cond_0
-
-    sget-object v1, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_exservice:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
-
-    invoke-static {v1}, Lcom/oneplus/android/server/context/OneplusContextStub;->queryInterface(Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;)Ljava/lang/Object;
-
-    move-result-object v1
-
-    check-cast v1, Lcom/oneplus/os/IOnePlusExService;
-
-    sput-object v1, Lcom/android/server/wm/wtn;->rR:Lcom/oneplus/os/IOnePlusExService;
-
-    :cond_0
-    sget-object v1, Lcom/android/server/wm/wtn;->rR:Lcom/oneplus/os/IOnePlusExService;
-
-    const/4 v2, 0x0
-
-    invoke-interface {v1, v2}, Lcom/oneplus/os/IOnePlusExService;->monitorSceneChanging(Z)V
-    :try_end_0
-    .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
-
-    goto :goto_0
-
-    :catch_0
-    move-exception v1
-
-    new-instance v2, Ljava/lang/StringBuilder;
-
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v3, "[scene] error while operating the scene mode controller: "
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-static {v0, v1}, Landroid/util/Slog;->e(Ljava/lang/String;Ljava/lang/String;)I
-
-    :cond_1
-    :goto_0
     return-void
 .end method

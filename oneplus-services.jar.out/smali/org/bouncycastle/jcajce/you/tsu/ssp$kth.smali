@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field private rra:Z
+.field private Cra:Z
 
 
 # direct methods
@@ -34,7 +34,7 @@
 
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lorg/bouncycastle/jcajce/you/tsu/ssp$kth;->rra:Z
+    iput-boolean v0, p0, Lorg/bouncycastle/jcajce/you/tsu/ssp$kth;->Cra:Z
 
     return-void
 .end method
@@ -44,34 +44,34 @@
 .method protected engineGenerateKey()Ljavax/crypto/SecretKey;
     .locals 5
 
-    iget-boolean v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/tsu;->qra:Z
+    iget-boolean v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/tsu;->Bra:Z
 
     const/4 v1, 0x0
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/tsu;->Voa:Lorg/bouncycastle/crypto/cno;
+    iget-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/tsu;->fpa:Lorg/bouncycastle/crypto/cno;
 
     new-instance v2, Lorg/bouncycastle/crypto/bvj;
 
-    invoke-static {}, Lorg/bouncycastle/crypto/igw;->fj()Ljava/security/SecureRandom;
+    invoke-static {}, Lorg/bouncycastle/crypto/igw;->hj()Ljava/security/SecureRandom;
 
     move-result-object v3
 
-    iget v4, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/tsu;->pra:I
+    iget v4, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/tsu;->Ara:I
 
     invoke-direct {v2, v3, v4}, Lorg/bouncycastle/crypto/bvj;-><init>(Ljava/security/SecureRandom;I)V
 
     invoke-virtual {v0, v2}, Lorg/bouncycastle/crypto/cno;->zta(Lorg/bouncycastle/crypto/bvj;)V
 
-    iput-boolean v1, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/tsu;->qra:Z
+    iput-boolean v1, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/tsu;->Bra:Z
 
     :cond_0
-    iget-boolean v0, p0, Lorg/bouncycastle/jcajce/you/tsu/ssp$kth;->rra:Z
+    iget-boolean v0, p0, Lorg/bouncycastle/jcajce/you/tsu/ssp$kth;->Cra:Z
 
     if-nez v0, :cond_1
 
-    iget-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/tsu;->Voa:Lorg/bouncycastle/crypto/cno;
+    iget-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/tsu;->fpa:Lorg/bouncycastle/crypto/cno;
 
     invoke-virtual {v0}, Lorg/bouncycastle/crypto/cno;->generateKey()[B
 
@@ -85,7 +85,7 @@
 
     new-instance v1, Ljavax/crypto/spec/SecretKeySpec;
 
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/tsu;->ora:Ljava/lang/String;
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/tsu;->zra:Ljava/lang/String;
 
     invoke-direct {v1, v0, p0}, Ljavax/crypto/spec/SecretKeySpec;-><init>([BLjava/lang/String;)V
 
@@ -94,13 +94,13 @@
     :cond_1
     new-instance v0, Ljavax/crypto/spec/SecretKeySpec;
 
-    iget-object v1, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/tsu;->Voa:Lorg/bouncycastle/crypto/cno;
+    iget-object v1, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/tsu;->fpa:Lorg/bouncycastle/crypto/cno;
 
     invoke-virtual {v1}, Lorg/bouncycastle/crypto/cno;->generateKey()[B
 
     move-result-object v1
 
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/tsu;->ora:Ljava/lang/String;
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/tsu;->zra:Ljava/lang/String;
 
     invoke-direct {v0, v1, p0}, Ljavax/crypto/spec/SecretKeySpec;-><init>([BLjava/lang/String;)V
 
@@ -114,7 +114,7 @@
 
     const/4 p1, 0x1
 
-    iput-boolean p1, p0, Lorg/bouncycastle/jcajce/you/tsu/ssp$kth;->rra:Z
+    iput-boolean p1, p0, Lorg/bouncycastle/jcajce/you/tsu/ssp$kth;->Cra:Z
 
     return-void
 .end method

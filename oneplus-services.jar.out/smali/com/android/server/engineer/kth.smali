@@ -49,11 +49,11 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/android/server/engineer/you;->Oc()Z
+    invoke-virtual {v0}, Lcom/android/server/engineer/you;->Pc()Z
 
     move-result v0
 
-    invoke-static {}, Lcom/android/server/engineer/qbh;->Mc()Z
+    invoke-static {}, Lcom/android/server/engineer/qbh;->Nc()Z
 
     move-result v1
 

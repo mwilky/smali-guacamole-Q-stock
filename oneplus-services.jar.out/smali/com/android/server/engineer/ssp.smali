@@ -46,7 +46,7 @@
 
     if-eqz v0, :cond_0
 
-    invoke-static {}, Lcom/android/server/engineer/qbh;->Mc()Z
+    invoke-static {}, Lcom/android/server/engineer/qbh;->Nc()Z
 
     move-result p0
 

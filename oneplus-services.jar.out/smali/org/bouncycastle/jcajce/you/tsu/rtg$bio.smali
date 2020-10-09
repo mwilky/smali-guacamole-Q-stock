@@ -160,7 +160,7 @@
 
     invoke-interface {p1, p0, v0}, Lorg/bouncycastle/jcajce/provider/config/zta;->zta(Ljava/lang/String;Ljava/lang/String;)V
 
-    sget-object p0, Lorg/bouncycastle/asn1/gck/zta;->cQa:Lorg/bouncycastle/asn1/bvj;
+    sget-object p0, Lorg/bouncycastle/asn1/gck/zta;->nQa:Lorg/bouncycastle/asn1/bvj;
 
     const-string v0, "Alg.Alias.AlgorithmParameters"
 

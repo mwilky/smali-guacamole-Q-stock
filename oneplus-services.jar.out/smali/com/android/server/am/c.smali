@@ -973,7 +973,7 @@
 
     iget-object v0, v0, Lcom/android/server/am/c;->this$0:Lcom/android/server/am/OnePlusHighPowerDetector;
 
-    sget v1, Lcom/android/server/am/OnePlusHighPowerDetector;->Au:I
+    sget v1, Lcom/android/server/am/OnePlusHighPowerDetector;->Ju:I
 
     invoke-static {v0, v12, v1}, Lcom/android/server/am/OnePlusHighPowerDetector;->zta(Lcom/android/server/am/OnePlusHighPowerDetector;II)I
 
@@ -1008,7 +1008,7 @@
 
     move-result-object v2
 
-    sget-object v3, Lcom/android/server/am/OnePlusHighPowerDetector;->Iu:[I
+    sget-object v3, Lcom/android/server/am/OnePlusHighPowerDetector;->Ru:[I
 
     aget v3, v3, v12
 

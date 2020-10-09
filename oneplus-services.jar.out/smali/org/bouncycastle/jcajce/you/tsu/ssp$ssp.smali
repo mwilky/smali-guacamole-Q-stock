@@ -89,7 +89,7 @@
 
     move-result-object p1
 
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/ssp;->ora:Ljava/lang/String;
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/ssp;->zra:Ljava/lang/String;
 
     invoke-direct {p2, p1, p0}, Ljavax/crypto/spec/SecretKeySpec;-><init>([BLjava/lang/String;)V
 

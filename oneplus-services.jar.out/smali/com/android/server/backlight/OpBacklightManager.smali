@@ -21,13 +21,13 @@
 
 .field public static final TAG:Ljava/lang/String; = "OpBacklightManager"
 
-.field private static Tz:Z = true
+.field private static bA:Z = true
 
-.field private static Uz:Z = true
+.field private static cA:Z = true
 
-.field private static Vz:Z = false
+.field private static dA:Z = false
 
-.field public static final Wz:I = -0x63
+.field public static final eA:I = -0x63
 
 .field private static mDebug:Z
 
@@ -35,11 +35,11 @@
 
 
 # instance fields
-.field private Kz:Lcom/oneplus/config/ConfigObserver;
+.field private Tz:Lcom/oneplus/config/ConfigObserver;
 
-.field private Lz:Lcom/android/server/wm/OpScreenModeService;
+.field private Uz:Lcom/android/server/wm/OpScreenModeService;
 
-.field private final Mz:Ljava/util/ArrayList;
+.field private final Vz:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/ArrayList<",
@@ -49,7 +49,7 @@
     .end annotation
 .end field
 
-.field private final Nz:Ljava/util/HashSet;
+.field private final Wz:Ljava/util/HashSet;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/HashSet<",
@@ -59,7 +59,7 @@
     .end annotation
 .end field
 
-.field private final Oz:Ljava/util/HashMap;
+.field private final Xz:Ljava/util/HashMap;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/HashMap<",
@@ -71,13 +71,13 @@
     .end annotation
 .end field
 
-.field private Pz:I
+.field private Yz:I
 
-.field private Qz:Z
+.field private Zz:Z
 
-.field private Rz:Lcom/android/server/backlight/OpBacklightManager$DockDividerVisibilityListener;
+.field private _z:Lcom/android/server/backlight/OpBacklightManager$DockDividerVisibilityListener;
 
-.field private Sz:Ljava/lang/Runnable;
+.field private aA:Ljava/lang/Runnable;
 
 .field private mAdjustBrightnessInterval:I
 
@@ -104,7 +104,7 @@
 
     const/4 v0, 0x0
 
-    sput-boolean v0, Lcom/android/server/backlight/OpBacklightManager;->Vz:Z
+    sput-boolean v0, Lcom/android/server/backlight/OpBacklightManager;->dA:Z
 
     const/4 v0, 0x0
 
@@ -138,23 +138,23 @@
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/android/server/backlight/OpBacklightManager;->Mz:Ljava/util/ArrayList;
+    iput-object v0, p0, Lcom/android/server/backlight/OpBacklightManager;->Vz:Ljava/util/ArrayList;
 
     new-instance v0, Ljava/util/HashSet;
 
     invoke-direct {v0}, Ljava/util/HashSet;-><init>()V
 
-    iput-object v0, p0, Lcom/android/server/backlight/OpBacklightManager;->Nz:Ljava/util/HashSet;
+    iput-object v0, p0, Lcom/android/server/backlight/OpBacklightManager;->Wz:Ljava/util/HashSet;
 
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    iput-object v0, p0, Lcom/android/server/backlight/OpBacklightManager;->Oz:Ljava/util/HashMap;
+    iput-object v0, p0, Lcom/android/server/backlight/OpBacklightManager;->Xz:Ljava/util/HashMap;
 
     const/16 v0, 0x3e8
 
-    iput v0, p0, Lcom/android/server/backlight/OpBacklightManager;->Pz:I
+    iput v0, p0, Lcom/android/server/backlight/OpBacklightManager;->Yz:I
 
     const/16 v0, 0xffa
 
@@ -166,13 +166,13 @@
 
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/android/server/backlight/OpBacklightManager;->Qz:Z
+    iput-boolean v0, p0, Lcom/android/server/backlight/OpBacklightManager;->Zz:Z
 
     new-instance v0, Lcom/android/server/backlight/you;
 
     invoke-direct {v0, p0}, Lcom/android/server/backlight/you;-><init>(Lcom/android/server/backlight/OpBacklightManager;)V
 
-    iput-object v0, p0, Lcom/android/server/backlight/OpBacklightManager;->Sz:Ljava/lang/Runnable;
+    iput-object v0, p0, Lcom/android/server/backlight/OpBacklightManager;->aA:Ljava/lang/Runnable;
 
     new-instance v0, Lcom/android/server/backlight/OpBacklightManager$you;
 
@@ -192,7 +192,7 @@
 
     invoke-direct {v0, p0}, Lcom/android/server/backlight/OpBacklightManager$DockDividerVisibilityListener;-><init>(Lcom/android/server/backlight/OpBacklightManager;)V
 
-    iput-object v0, p0, Lcom/android/server/backlight/OpBacklightManager;->Rz:Lcom/android/server/backlight/OpBacklightManager$DockDividerVisibilityListener;
+    iput-object v0, p0, Lcom/android/server/backlight/OpBacklightManager;->_z:Lcom/android/server/backlight/OpBacklightManager$DockDividerVisibilityListener;
 
     new-instance v0, Lcom/android/server/backlight/zta$zta;
 
@@ -218,7 +218,7 @@
 
     invoke-virtual {v1, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    iget-object p0, p0, Lcom/android/server/backlight/OpBacklightManager;->Oz:Ljava/util/HashMap;
+    iget-object p0, p0, Lcom/android/server/backlight/OpBacklightManager;->Xz:Ljava/util/HashMap;
 
     const-string v0, "default"
 
@@ -254,7 +254,7 @@
 .method public static B(Ljava/lang/String;)V
     .locals 1
 
-    sget-boolean v0, Lcom/android/server/backlight/OpBacklightManager;->Vz:Z
+    sget-boolean v0, Lcom/android/server/backlight/OpBacklightManager;->dA:Z
 
     if-eqz v0, :cond_0
 
@@ -274,7 +274,7 @@
     monitor-enter v0
 
     :try_start_0
-    iput p1, p0, Lcom/android/server/backlight/OpBacklightManager;->Pz:I
+    iput p1, p0, Lcom/android/server/backlight/OpBacklightManager;->Yz:I
 
     monitor-exit v0
 
@@ -298,7 +298,7 @@
     monitor-enter v0
 
     :try_start_0
-    sget-boolean v1, Lcom/android/server/backlight/OpBacklightManager;->Uz:Z
+    sget-boolean v1, Lcom/android/server/backlight/OpBacklightManager;->cA:Z
 
     if-ne v1, p1, :cond_0
 
@@ -315,7 +315,7 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sget-boolean v2, Lcom/android/server/backlight/OpBacklightManager;->Uz:Z
+    sget-boolean v2, Lcom/android/server/backlight/OpBacklightManager;->cA:Z
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -331,15 +331,15 @@
 
     invoke-static {v1}, Lcom/android/server/backlight/OpBacklightManager;->myLog(Ljava/lang/String;)V
 
-    sput-boolean p1, Lcom/android/server/backlight/OpBacklightManager;->Uz:Z
+    sput-boolean p1, Lcom/android/server/backlight/OpBacklightManager;->cA:Z
 
-    sget-boolean p1, Lcom/android/server/backlight/OpBacklightManager;->Uz:Z
+    sget-boolean p1, Lcom/android/server/backlight/OpBacklightManager;->cA:Z
 
     if-nez p1, :cond_2
 
     iget-object p1, p0, Lcom/android/server/backlight/OpBacklightManager;->mHandler:Lcom/android/server/backlight/OpBacklightManager$you;
 
-    iget-object v1, p0, Lcom/android/server/backlight/OpBacklightManager;->Sz:Ljava/lang/Runnable;
+    iget-object v1, p0, Lcom/android/server/backlight/OpBacklightManager;->aA:Ljava/lang/Runnable;
 
     invoke-virtual {p1, v1}, Landroid/os/Handler;->hasCallbacks(Ljava/lang/Runnable;)Z
 
@@ -349,14 +349,14 @@
 
     iget-object p1, p0, Lcom/android/server/backlight/OpBacklightManager;->mHandler:Lcom/android/server/backlight/OpBacklightManager$you;
 
-    iget-object v1, p0, Lcom/android/server/backlight/OpBacklightManager;->Sz:Ljava/lang/Runnable;
+    iget-object v1, p0, Lcom/android/server/backlight/OpBacklightManager;->aA:Ljava/lang/Runnable;
 
     invoke-virtual {p1, v1}, Landroid/os/Handler;->removeCallbacks(Ljava/lang/Runnable;)V
 
     :cond_1
     iget-object p1, p0, Lcom/android/server/backlight/OpBacklightManager;->mCurrentConfig:Lcom/android/server/backlight/zta;
 
-    invoke-virtual {p1}, Lcom/android/server/backlight/zta;->Dc()I
+    invoke-virtual {p1}, Lcom/android/server/backlight/zta;->Ec()I
 
     move-result p1
 
@@ -364,7 +364,7 @@
 
     iget-object p1, p0, Lcom/android/server/backlight/OpBacklightManager;->mHandler:Lcom/android/server/backlight/OpBacklightManager$you;
 
-    iget-object p0, p0, Lcom/android/server/backlight/OpBacklightManager;->Sz:Ljava/lang/Runnable;
+    iget-object p0, p0, Lcom/android/server/backlight/OpBacklightManager;->aA:Ljava/lang/Runnable;
 
     const-wide/16 v1, 0x0
 
@@ -393,7 +393,7 @@
     monitor-enter v0
 
     :try_start_0
-    sget-boolean v1, Lcom/android/server/backlight/OpBacklightManager;->Tz:Z
+    sget-boolean v1, Lcom/android/server/backlight/OpBacklightManager;->bA:Z
 
     if-ne v1, p1, :cond_0
 
@@ -410,7 +410,7 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sget-boolean v2, Lcom/android/server/backlight/OpBacklightManager;->Tz:Z
+    sget-boolean v2, Lcom/android/server/backlight/OpBacklightManager;->bA:Z
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -426,15 +426,15 @@
 
     invoke-static {v1}, Lcom/android/server/backlight/OpBacklightManager;->myLog(Ljava/lang/String;)V
 
-    sput-boolean p1, Lcom/android/server/backlight/OpBacklightManager;->Tz:Z
+    sput-boolean p1, Lcom/android/server/backlight/OpBacklightManager;->bA:Z
 
-    sget-boolean p1, Lcom/android/server/backlight/OpBacklightManager;->Tz:Z
+    sget-boolean p1, Lcom/android/server/backlight/OpBacklightManager;->bA:Z
 
     if-nez p1, :cond_2
 
     iget-object p1, p0, Lcom/android/server/backlight/OpBacklightManager;->mHandler:Lcom/android/server/backlight/OpBacklightManager$you;
 
-    iget-object v1, p0, Lcom/android/server/backlight/OpBacklightManager;->Sz:Ljava/lang/Runnable;
+    iget-object v1, p0, Lcom/android/server/backlight/OpBacklightManager;->aA:Ljava/lang/Runnable;
 
     invoke-virtual {p1, v1}, Landroid/os/Handler;->hasCallbacks(Ljava/lang/Runnable;)Z
 
@@ -444,14 +444,14 @@
 
     iget-object p1, p0, Lcom/android/server/backlight/OpBacklightManager;->mHandler:Lcom/android/server/backlight/OpBacklightManager$you;
 
-    iget-object v1, p0, Lcom/android/server/backlight/OpBacklightManager;->Sz:Ljava/lang/Runnable;
+    iget-object v1, p0, Lcom/android/server/backlight/OpBacklightManager;->aA:Ljava/lang/Runnable;
 
     invoke-virtual {p1, v1}, Landroid/os/Handler;->removeCallbacks(Ljava/lang/Runnable;)V
 
     :cond_1
     iget-object p1, p0, Lcom/android/server/backlight/OpBacklightManager;->mCurrentConfig:Lcom/android/server/backlight/zta;
 
-    invoke-virtual {p1}, Lcom/android/server/backlight/zta;->Dc()I
+    invoke-virtual {p1}, Lcom/android/server/backlight/zta;->Ec()I
 
     move-result p1
 
@@ -459,7 +459,7 @@
 
     iget-object p1, p0, Lcom/android/server/backlight/OpBacklightManager;->mHandler:Lcom/android/server/backlight/OpBacklightManager$you;
 
-    iget-object p0, p0, Lcom/android/server/backlight/OpBacklightManager;->Sz:Ljava/lang/Runnable;
+    iget-object p0, p0, Lcom/android/server/backlight/OpBacklightManager;->aA:Ljava/lang/Runnable;
 
     const-wide/16 v1, 0x0
 
@@ -483,12 +483,12 @@
 .method private Wb(Ljava/lang/String;)Lcom/android/server/backlight/zta;
     .locals 4
 
-    iget-object v0, p0, Lcom/android/server/backlight/OpBacklightManager;->Nz:Ljava/util/HashSet;
+    iget-object v0, p0, Lcom/android/server/backlight/OpBacklightManager;->Wz:Ljava/util/HashSet;
 
     monitor-enter v0
 
     :try_start_0
-    iget-object v1, p0, Lcom/android/server/backlight/OpBacklightManager;->Nz:Ljava/util/HashSet;
+    iget-object v1, p0, Lcom/android/server/backlight/OpBacklightManager;->Wz:Ljava/util/HashSet;
 
     invoke-virtual {v1, p1}, Ljava/util/HashSet;->contains(Ljava/lang/Object;)Z
 
@@ -507,12 +507,12 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
-    iget-object v1, p0, Lcom/android/server/backlight/OpBacklightManager;->Mz:Ljava/util/ArrayList;
+    iget-object v1, p0, Lcom/android/server/backlight/OpBacklightManager;->Vz:Ljava/util/ArrayList;
 
     monitor-enter v1
 
     :try_start_1
-    iget-object p0, p0, Lcom/android/server/backlight/OpBacklightManager;->Mz:Ljava/util/ArrayList;
+    iget-object p0, p0, Lcom/android/server/backlight/OpBacklightManager;->Vz:Ljava/util/ArrayList;
 
     invoke-virtual {p0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
@@ -550,7 +550,7 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    sget-boolean p0, Lcom/android/server/backlight/OpBacklightManager;->Uz:Z
+    sget-boolean p0, Lcom/android/server/backlight/OpBacklightManager;->cA:Z
 
     if-eqz p0, :cond_4
 
@@ -620,7 +620,7 @@
 .method private Xb(Ljava/lang/String;)Z
     .locals 1
 
-    iget-object p0, p0, Lcom/android/server/backlight/OpBacklightManager;->Lz:Lcom/android/server/wm/OpScreenModeService;
+    iget-object p0, p0, Lcom/android/server/backlight/OpBacklightManager;->Uz:Lcom/android/server/wm/OpScreenModeService;
 
     const/4 v0, 0x0
 
@@ -646,7 +646,17 @@
     return v0
 .end method
 
-.method private Zn()I
+.method static synthetic bio(Lcom/android/server/backlight/OpBacklightManager;)I
+    .locals 0
+
+    invoke-direct {p0}, Lcom/android/server/backlight/OpBacklightManager;->eo()I
+
+    move-result p0
+
+    return p0
+.end method
+
+.method private bo()I
     .locals 2
 
     iget-object v0, p0, Lcom/android/server/backlight/OpBacklightManager;->mCurrentConfig:Lcom/android/server/backlight/zta;
@@ -680,14 +690,89 @@
     return p0
 
     :cond_0
-    invoke-virtual {v0}, Lcom/android/server/backlight/zta$zta;->zc()I
+    invoke-virtual {v0}, Lcom/android/server/backlight/zta$zta;->Ac()I
 
     move-result p0
 
     return p0
 .end method
 
-.method private _n()I
+.method private bvj(Ljava/lang/String;I)V
+    .locals 2
+
+    invoke-direct {p0, p1}, Lcom/android/server/backlight/OpBacklightManager;->Xb(Ljava/lang/String;)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_0
+
+    iget-object p1, p0, Lcom/android/server/backlight/OpBacklightManager;->mCurrentConfig:Lcom/android/server/backlight/zta;
+
+    const/4 p2, 0x3
+
+    invoke-virtual {p1, p2}, Lcom/android/server/backlight/zta;->updateStatus(I)V
+
+    iget-object p1, p0, Lcom/android/server/backlight/OpBacklightManager;->mHandler:Lcom/android/server/backlight/OpBacklightManager$you;
+
+    iget-object p2, p0, Lcom/android/server/backlight/OpBacklightManager;->aA:Ljava/lang/Runnable;
+
+    invoke-virtual {p1, p2}, Landroid/os/Handler;->hasCallbacks(Ljava/lang/Runnable;)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_1
+
+    goto :goto_0
+
+    :cond_0
+    iget-object p1, p0, Lcom/android/server/backlight/OpBacklightManager;->mCurrentConfig:Lcom/android/server/backlight/zta;
+
+    const/4 p2, 0x1
+
+    invoke-virtual {p1, p2}, Lcom/android/server/backlight/zta;->updateStatus(I)V
+
+    iget-object p1, p0, Lcom/android/server/backlight/OpBacklightManager;->mHandler:Lcom/android/server/backlight/OpBacklightManager$you;
+
+    iget-object p2, p0, Lcom/android/server/backlight/OpBacklightManager;->aA:Ljava/lang/Runnable;
+
+    invoke-virtual {p1, p2}, Landroid/os/Handler;->hasCallbacks(Ljava/lang/Runnable;)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_1
+
+    :goto_0
+    iget-object p1, p0, Lcom/android/server/backlight/OpBacklightManager;->mHandler:Lcom/android/server/backlight/OpBacklightManager$you;
+
+    iget-object p2, p0, Lcom/android/server/backlight/OpBacklightManager;->aA:Ljava/lang/Runnable;
+
+    invoke-virtual {p1, p2}, Landroid/os/Handler;->removeCallbacks(Ljava/lang/Runnable;)V
+
+    :cond_1
+    iget-object p1, p0, Lcom/android/server/backlight/OpBacklightManager;->mHandler:Lcom/android/server/backlight/OpBacklightManager$you;
+
+    iget-object p2, p0, Lcom/android/server/backlight/OpBacklightManager;->aA:Ljava/lang/Runnable;
+
+    invoke-direct {p0}, Lcom/android/server/backlight/OpBacklightManager;->co()I
+
+    move-result p0
+
+    int-to-long v0, p0
+
+    invoke-virtual {p1, p2, v0, v1}, Landroid/os/Handler;->postDelayed(Ljava/lang/Runnable;J)Z
+
+    return-void
+.end method
+
+.method static synthetic cno(Lcom/android/server/backlight/OpBacklightManager;)I
+    .locals 0
+
+    iget p0, p0, Lcom/android/server/backlight/OpBacklightManager;->mAdjustBrightnessInterval:I
+
+    return p0
+.end method
+
+.method private co()I
     .locals 2
 
     iget-object v0, p0, Lcom/android/server/backlight/OpBacklightManager;->mCurrentConfig:Lcom/android/server/backlight/zta;
@@ -721,14 +806,14 @@
     return p0
 
     :cond_0
-    invoke-virtual {v0}, Lcom/android/server/backlight/zta$zta;->yc()I
+    invoke-virtual {v0}, Lcom/android/server/backlight/zta$zta;->zc()I
 
     move-result p0
 
     return p0
 .end method
 
-.method private ao()D
+.method private do()D
     .locals 2
 
     iget-object v0, p0, Lcom/android/server/backlight/OpBacklightManager;->mCurrentConfig:Lcom/android/server/backlight/zta;
@@ -762,197 +847,11 @@
     return-wide v0
 
     :cond_0
-    invoke-virtual {v0}, Lcom/android/server/backlight/zta$zta;->xc()D
+    invoke-virtual {v0}, Lcom/android/server/backlight/zta$zta;->yc()D
 
     move-result-wide v0
 
     return-wide v0
-.end method
-
-.method static synthetic bio(Lcom/android/server/backlight/OpBacklightManager;)I
-    .locals 0
-
-    invoke-direct {p0}, Lcom/android/server/backlight/OpBacklightManager;->bo()I
-
-    move-result p0
-
-    return p0
-.end method
-
-.method private bo()I
-    .locals 3
-
-    iget-object v0, p0, Lcom/android/server/backlight/OpBacklightManager;->mCurrentConfig:Lcom/android/server/backlight/zta;
-
-    invoke-direct {p0, v0}, Lcom/android/server/backlight/OpBacklightManager;->you(Lcom/android/server/backlight/zta;)Lcom/android/server/backlight/zta$zta;
-
-    move-result-object v0
-
-    if-nez v0, :cond_0
-
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v1, "getDelayForNextAnimationLocked is null: "
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget-object p0, p0, Lcom/android/server/backlight/OpBacklightManager;->mCurrentConfig:Lcom/android/server/backlight/zta;
-
-    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p0
-
-    invoke-static {p0}, Lcom/android/server/backlight/OpBacklightManager;->myLog(Ljava/lang/String;)V
-
-    const/4 p0, 0x0
-
-    return p0
-
-    :cond_0
-    iget-object v1, p0, Lcom/android/server/backlight/OpBacklightManager;->mCurrentConfig:Lcom/android/server/backlight/zta;
-
-    invoke-virtual {v1}, Lcom/android/server/backlight/zta;->Dc()I
-
-    move-result v1
-
-    const/4 v2, 0x1
-
-    if-eq v1, v2, :cond_3
-
-    iget-object v1, p0, Lcom/android/server/backlight/OpBacklightManager;->mCurrentConfig:Lcom/android/server/backlight/zta;
-
-    invoke-virtual {v1}, Lcom/android/server/backlight/zta;->Dc()I
-
-    move-result v1
-
-    const/4 v2, 0x2
-
-    if-ne v1, v2, :cond_1
-
-    goto :goto_0
-
-    :cond_1
-    iget-object p0, p0, Lcom/android/server/backlight/OpBacklightManager;->mCurrentConfig:Lcom/android/server/backlight/zta;
-
-    invoke-virtual {p0}, Lcom/android/server/backlight/zta;->Dc()I
-
-    move-result p0
-
-    const/4 v1, 0x3
-
-    if-ne p0, v1, :cond_2
-
-    invoke-virtual {v0}, Lcom/android/server/backlight/zta$zta;->yc()I
-
-    move-result p0
-
-    invoke-virtual {v0}, Lcom/android/server/backlight/zta$zta;->Ac()I
-
-    move-result v0
-
-    add-int/2addr p0, v0
-
-    return p0
-
-    :cond_2
-    invoke-virtual {v0}, Lcom/android/server/backlight/zta$zta;->yc()I
-
-    move-result p0
-
-    return p0
-
-    :cond_3
-    :goto_0
-    invoke-virtual {v0}, Lcom/android/server/backlight/zta$zta;->yc()I
-
-    move-result p0
-
-    invoke-virtual {v0}, Lcom/android/server/backlight/zta$zta;->zc()I
-
-    move-result v0
-
-    add-int/2addr p0, v0
-
-    return p0
-.end method
-
-.method private bvj(Ljava/lang/String;I)V
-    .locals 2
-
-    invoke-direct {p0, p1}, Lcom/android/server/backlight/OpBacklightManager;->Xb(Ljava/lang/String;)Z
-
-    move-result p1
-
-    if-eqz p1, :cond_0
-
-    iget-object p1, p0, Lcom/android/server/backlight/OpBacklightManager;->mCurrentConfig:Lcom/android/server/backlight/zta;
-
-    const/4 p2, 0x3
-
-    invoke-virtual {p1, p2}, Lcom/android/server/backlight/zta;->updateStatus(I)V
-
-    iget-object p1, p0, Lcom/android/server/backlight/OpBacklightManager;->mHandler:Lcom/android/server/backlight/OpBacklightManager$you;
-
-    iget-object p2, p0, Lcom/android/server/backlight/OpBacklightManager;->Sz:Ljava/lang/Runnable;
-
-    invoke-virtual {p1, p2}, Landroid/os/Handler;->hasCallbacks(Ljava/lang/Runnable;)Z
-
-    move-result p1
-
-    if-eqz p1, :cond_1
-
-    goto :goto_0
-
-    :cond_0
-    iget-object p1, p0, Lcom/android/server/backlight/OpBacklightManager;->mCurrentConfig:Lcom/android/server/backlight/zta;
-
-    const/4 p2, 0x1
-
-    invoke-virtual {p1, p2}, Lcom/android/server/backlight/zta;->updateStatus(I)V
-
-    iget-object p1, p0, Lcom/android/server/backlight/OpBacklightManager;->mHandler:Lcom/android/server/backlight/OpBacklightManager$you;
-
-    iget-object p2, p0, Lcom/android/server/backlight/OpBacklightManager;->Sz:Ljava/lang/Runnable;
-
-    invoke-virtual {p1, p2}, Landroid/os/Handler;->hasCallbacks(Ljava/lang/Runnable;)Z
-
-    move-result p1
-
-    if-eqz p1, :cond_1
-
-    :goto_0
-    iget-object p1, p0, Lcom/android/server/backlight/OpBacklightManager;->mHandler:Lcom/android/server/backlight/OpBacklightManager$you;
-
-    iget-object p2, p0, Lcom/android/server/backlight/OpBacklightManager;->Sz:Ljava/lang/Runnable;
-
-    invoke-virtual {p1, p2}, Landroid/os/Handler;->removeCallbacks(Ljava/lang/Runnable;)V
-
-    :cond_1
-    iget-object p1, p0, Lcom/android/server/backlight/OpBacklightManager;->mHandler:Lcom/android/server/backlight/OpBacklightManager$you;
-
-    iget-object p2, p0, Lcom/android/server/backlight/OpBacklightManager;->Sz:Ljava/lang/Runnable;
-
-    invoke-direct {p0}, Lcom/android/server/backlight/OpBacklightManager;->_n()I
-
-    move-result p0
-
-    int-to-long v0, p0
-
-    invoke-virtual {p1, p2, v0, v1}, Landroid/os/Handler;->postDelayed(Ljava/lang/Runnable;J)Z
-
-    return-void
-.end method
-
-.method static synthetic cno(Lcom/android/server/backlight/OpBacklightManager;)I
-    .locals 0
-
-    iget p0, p0, Lcom/android/server/backlight/OpBacklightManager;->mAdjustBrightnessInterval:I
-
-    return p0
 .end method
 
 .method private dump(Ljava/io/PrintWriter;)V
@@ -975,7 +874,7 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sget-boolean v2, Lcom/android/server/backlight/OpBacklightManager;->Tz:Z
+    sget-boolean v2, Lcom/android/server/backlight/OpBacklightManager;->bA:Z
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -993,7 +892,7 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sget-boolean v2, Lcom/android/server/backlight/OpBacklightManager;->Uz:Z
+    sget-boolean v2, Lcom/android/server/backlight/OpBacklightManager;->cA:Z
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -1011,7 +910,7 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget v2, p0, Lcom/android/server/backlight/OpBacklightManager;->Pz:I
+    iget v2, p0, Lcom/android/server/backlight/OpBacklightManager;->Yz:I
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -1079,7 +978,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_3
 
-    iget-object v1, p0, Lcom/android/server/backlight/OpBacklightManager;->Mz:Ljava/util/ArrayList;
+    iget-object v1, p0, Lcom/android/server/backlight/OpBacklightManager;->Vz:Ljava/util/ArrayList;
 
     monitor-enter v1
 
@@ -1088,7 +987,7 @@
 
     invoke-virtual {p1, v0}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
-    iget-object v0, p0, Lcom/android/server/backlight/OpBacklightManager;->Mz:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/server/backlight/OpBacklightManager;->Vz:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
@@ -1134,7 +1033,7 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_2
 
-    iget-object v0, p0, Lcom/android/server/backlight/OpBacklightManager;->Nz:Ljava/util/HashSet;
+    iget-object v0, p0, Lcom/android/server/backlight/OpBacklightManager;->Wz:Ljava/util/HashSet;
 
     monitor-enter v0
 
@@ -1143,7 +1042,7 @@
 
     invoke-virtual {p1, v1}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
-    iget-object v1, p0, Lcom/android/server/backlight/OpBacklightManager;->Nz:Ljava/util/HashSet;
+    iget-object v1, p0, Lcom/android/server/backlight/OpBacklightManager;->Wz:Ljava/util/HashSet;
 
     invoke-virtual {v1}, Ljava/util/HashSet;->iterator()Ljava/util/Iterator;
 
@@ -1185,7 +1084,7 @@
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_1
 
-    iget-object v1, p0, Lcom/android/server/backlight/OpBacklightManager;->Oz:Ljava/util/HashMap;
+    iget-object v1, p0, Lcom/android/server/backlight/OpBacklightManager;->Xz:Ljava/util/HashMap;
 
     monitor-enter v1
 
@@ -1194,7 +1093,7 @@
 
     invoke-virtual {p1, v0}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
-    iget-object p0, p0, Lcom/android/server/backlight/OpBacklightManager;->Oz:Ljava/util/HashMap;
+    iget-object p0, p0, Lcom/android/server/backlight/OpBacklightManager;->Xz:Ljava/util/HashMap;
 
     invoke-virtual {p0}, Ljava/util/HashMap;->values()Ljava/util/Collection;
 
@@ -1301,6 +1200,107 @@
     throw p0
 .end method
 
+.method private eo()I
+    .locals 3
+
+    iget-object v0, p0, Lcom/android/server/backlight/OpBacklightManager;->mCurrentConfig:Lcom/android/server/backlight/zta;
+
+    invoke-direct {p0, v0}, Lcom/android/server/backlight/OpBacklightManager;->you(Lcom/android/server/backlight/zta;)Lcom/android/server/backlight/zta$zta;
+
+    move-result-object v0
+
+    if-nez v0, :cond_0
+
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v1, "getDelayForNextAnimationLocked is null: "
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object p0, p0, Lcom/android/server/backlight/OpBacklightManager;->mCurrentConfig:Lcom/android/server/backlight/zta;
+
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p0
+
+    invoke-static {p0}, Lcom/android/server/backlight/OpBacklightManager;->myLog(Ljava/lang/String;)V
+
+    const/4 p0, 0x0
+
+    return p0
+
+    :cond_0
+    iget-object v1, p0, Lcom/android/server/backlight/OpBacklightManager;->mCurrentConfig:Lcom/android/server/backlight/zta;
+
+    invoke-virtual {v1}, Lcom/android/server/backlight/zta;->Ec()I
+
+    move-result v1
+
+    const/4 v2, 0x1
+
+    if-eq v1, v2, :cond_3
+
+    iget-object v1, p0, Lcom/android/server/backlight/OpBacklightManager;->mCurrentConfig:Lcom/android/server/backlight/zta;
+
+    invoke-virtual {v1}, Lcom/android/server/backlight/zta;->Ec()I
+
+    move-result v1
+
+    const/4 v2, 0x2
+
+    if-ne v1, v2, :cond_1
+
+    goto :goto_0
+
+    :cond_1
+    iget-object p0, p0, Lcom/android/server/backlight/OpBacklightManager;->mCurrentConfig:Lcom/android/server/backlight/zta;
+
+    invoke-virtual {p0}, Lcom/android/server/backlight/zta;->Ec()I
+
+    move-result p0
+
+    const/4 v1, 0x3
+
+    if-ne p0, v1, :cond_2
+
+    invoke-virtual {v0}, Lcom/android/server/backlight/zta$zta;->zc()I
+
+    move-result p0
+
+    invoke-virtual {v0}, Lcom/android/server/backlight/zta$zta;->Bc()I
+
+    move-result v0
+
+    add-int/2addr p0, v0
+
+    return p0
+
+    :cond_2
+    invoke-virtual {v0}, Lcom/android/server/backlight/zta$zta;->zc()I
+
+    move-result p0
+
+    return p0
+
+    :cond_3
+    :goto_0
+    invoke-virtual {v0}, Lcom/android/server/backlight/zta$zta;->zc()I
+
+    move-result p0
+
+    invoke-virtual {v0}, Lcom/android/server/backlight/zta$zta;->Ac()I
+
+    move-result v0
+
+    add-int/2addr p0, v0
+
+    return p0
+.end method
+
 .method public static declared-synchronized getInstance()Lcom/android/server/backlight/OpBacklightManager;
     .locals 2
 
@@ -1339,7 +1339,7 @@
 .method static synthetic igw(Lcom/android/server/backlight/OpBacklightManager;)Ljava/lang/Runnable;
     .locals 0
 
-    iget-object p0, p0, Lcom/android/server/backlight/OpBacklightManager;->Sz:Ljava/lang/Runnable;
+    iget-object p0, p0, Lcom/android/server/backlight/OpBacklightManager;->aA:Ljava/lang/Runnable;
 
     return-object p0
 .end method
@@ -1485,18 +1485,18 @@
 
     if-lez v6, :cond_2
 
-    iget-object v6, v0, Lcom/android/server/backlight/OpBacklightManager;->Mz:Ljava/util/ArrayList;
+    iget-object v6, v0, Lcom/android/server/backlight/OpBacklightManager;->Vz:Ljava/util/ArrayList;
 
     monitor-enter v6
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
     :try_start_1
-    iget-object v7, v0, Lcom/android/server/backlight/OpBacklightManager;->Mz:Ljava/util/ArrayList;
+    iget-object v7, v0, Lcom/android/server/backlight/OpBacklightManager;->Vz:Ljava/util/ArrayList;
 
     invoke-virtual {v7}, Ljava/util/ArrayList;->clear()V
 
-    iget-object v7, v0, Lcom/android/server/backlight/OpBacklightManager;->Mz:Ljava/util/ArrayList;
+    iget-object v7, v0, Lcom/android/server/backlight/OpBacklightManager;->Vz:Ljava/util/ArrayList;
 
     invoke-virtual {v7, v5}, Ljava/util/ArrayList;->addAll(Ljava/util/Collection;)Z
 
@@ -1560,18 +1560,18 @@
     goto :goto_3
 
     :cond_3
-    iget-object v6, v0, Lcom/android/server/backlight/OpBacklightManager;->Nz:Ljava/util/HashSet;
+    iget-object v6, v0, Lcom/android/server/backlight/OpBacklightManager;->Wz:Ljava/util/HashSet;
 
     monitor-enter v6
     :try_end_2
     .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_0
 
     :try_start_3
-    iget-object v7, v0, Lcom/android/server/backlight/OpBacklightManager;->Nz:Ljava/util/HashSet;
+    iget-object v7, v0, Lcom/android/server/backlight/OpBacklightManager;->Wz:Ljava/util/HashSet;
 
     invoke-virtual {v7}, Ljava/util/HashSet;->clear()V
 
-    iget-object v7, v0, Lcom/android/server/backlight/OpBacklightManager;->Nz:Ljava/util/HashSet;
+    iget-object v7, v0, Lcom/android/server/backlight/OpBacklightManager;->Wz:Ljava/util/HashSet;
 
     invoke-virtual {v7, v5}, Ljava/util/HashSet;->addAll(Ljava/util/Collection;)Z
 
@@ -1756,18 +1756,18 @@
 
     if-nez v2, :cond_8
 
-    iget-object v2, v0, Lcom/android/server/backlight/OpBacklightManager;->Oz:Ljava/util/HashMap;
+    iget-object v2, v0, Lcom/android/server/backlight/OpBacklightManager;->Xz:Ljava/util/HashMap;
 
     monitor-enter v2
     :try_end_4
     .catch Ljava/lang/Exception; {:try_start_4 .. :try_end_4} :catch_0
 
     :try_start_5
-    iget-object v6, v0, Lcom/android/server/backlight/OpBacklightManager;->Oz:Ljava/util/HashMap;
+    iget-object v6, v0, Lcom/android/server/backlight/OpBacklightManager;->Xz:Ljava/util/HashMap;
 
     invoke-virtual {v6}, Ljava/util/HashMap;->clear()V
 
-    iget-object v6, v0, Lcom/android/server/backlight/OpBacklightManager;->Oz:Ljava/util/HashMap;
+    iget-object v6, v0, Lcom/android/server/backlight/OpBacklightManager;->Xz:Ljava/util/HashMap;
 
     invoke-virtual {v6, v5}, Ljava/util/HashMap;->putAll(Ljava/util/Map;)V
 
@@ -1960,7 +1960,7 @@
 .method static synthetic rtg(Lcom/android/server/backlight/OpBacklightManager;)I
     .locals 0
 
-    iget p0, p0, Lcom/android/server/backlight/OpBacklightManager;->Pz:I
+    iget p0, p0, Lcom/android/server/backlight/OpBacklightManager;->Yz:I
 
     return p0
 .end method
@@ -1990,7 +1990,7 @@
 
     iget-object p1, p0, Lcom/android/server/backlight/OpBacklightManager;->mHandler:Lcom/android/server/backlight/OpBacklightManager$you;
 
-    iget-object v3, p0, Lcom/android/server/backlight/OpBacklightManager;->Sz:Ljava/lang/Runnable;
+    iget-object v3, p0, Lcom/android/server/backlight/OpBacklightManager;->aA:Ljava/lang/Runnable;
 
     invoke-virtual {p1, v3}, Landroid/os/Handler;->hasCallbacks(Ljava/lang/Runnable;)Z
 
@@ -2000,7 +2000,7 @@
 
     iget-object p1, p0, Lcom/android/server/backlight/OpBacklightManager;->mHandler:Lcom/android/server/backlight/OpBacklightManager$you;
 
-    iget-object v3, p0, Lcom/android/server/backlight/OpBacklightManager;->Sz:Ljava/lang/Runnable;
+    iget-object v3, p0, Lcom/android/server/backlight/OpBacklightManager;->aA:Ljava/lang/Runnable;
 
     invoke-virtual {p1, v3}, Landroid/os/Handler;->removeCallbacks(Ljava/lang/Runnable;)V
 
@@ -2039,9 +2039,9 @@
     :goto_0
     iget-object p1, p0, Lcom/android/server/backlight/OpBacklightManager;->mHandler:Lcom/android/server/backlight/OpBacklightManager$you;
 
-    iget-object v0, p0, Lcom/android/server/backlight/OpBacklightManager;->Sz:Ljava/lang/Runnable;
+    iget-object v0, p0, Lcom/android/server/backlight/OpBacklightManager;->aA:Ljava/lang/Runnable;
 
-    invoke-direct {p0}, Lcom/android/server/backlight/OpBacklightManager;->_n()I
+    invoke-direct {p0}, Lcom/android/server/backlight/OpBacklightManager;->co()I
 
     move-result p0
 
@@ -2054,7 +2054,7 @@
     :cond_2
     iget-object p1, p0, Lcom/android/server/backlight/OpBacklightManager;->mCurrentConfig:Lcom/android/server/backlight/zta;
 
-    invoke-virtual {p1}, Lcom/android/server/backlight/zta;->Dc()I
+    invoke-virtual {p1}, Lcom/android/server/backlight/zta;->Ec()I
 
     move-result p1
 
@@ -2062,7 +2062,7 @@
 
     iget-object p1, p0, Lcom/android/server/backlight/OpBacklightManager;->mCurrentConfig:Lcom/android/server/backlight/zta;
 
-    invoke-virtual {p1}, Lcom/android/server/backlight/zta;->Dc()I
+    invoke-virtual {p1}, Lcom/android/server/backlight/zta;->Ec()I
 
     move-result p1
 
@@ -2071,7 +2071,7 @@
     :cond_3
     iget-object p1, p0, Lcom/android/server/backlight/OpBacklightManager;->mHandler:Lcom/android/server/backlight/OpBacklightManager$you;
 
-    iget-object v1, p0, Lcom/android/server/backlight/OpBacklightManager;->Sz:Ljava/lang/Runnable;
+    iget-object v1, p0, Lcom/android/server/backlight/OpBacklightManager;->aA:Ljava/lang/Runnable;
 
     invoke-virtual {p1, v1}, Landroid/os/Handler;->hasCallbacks(Ljava/lang/Runnable;)Z
 
@@ -2081,7 +2081,7 @@
 
     iget-object p1, p0, Lcom/android/server/backlight/OpBacklightManager;->mHandler:Lcom/android/server/backlight/OpBacklightManager$you;
 
-    iget-object v1, p0, Lcom/android/server/backlight/OpBacklightManager;->Sz:Ljava/lang/Runnable;
+    iget-object v1, p0, Lcom/android/server/backlight/OpBacklightManager;->aA:Ljava/lang/Runnable;
 
     invoke-virtual {p1, v1}, Landroid/os/Handler;->removeCallbacks(Ljava/lang/Runnable;)V
 
@@ -2092,7 +2092,7 @@
 
     iget-object p1, p0, Lcom/android/server/backlight/OpBacklightManager;->mHandler:Lcom/android/server/backlight/OpBacklightManager$you;
 
-    iget-object p0, p0, Lcom/android/server/backlight/OpBacklightManager;->Sz:Ljava/lang/Runnable;
+    iget-object p0, p0, Lcom/android/server/backlight/OpBacklightManager;->aA:Ljava/lang/Runnable;
 
     const-wide/16 v0, 0x0
 
@@ -2124,7 +2124,7 @@
 
     iget-object v0, p0, Lcom/android/server/backlight/OpBacklightManager;->mCurrentConfig:Lcom/android/server/backlight/zta;
 
-    invoke-virtual {v0}, Lcom/android/server/backlight/zta;->Dc()I
+    invoke-virtual {v0}, Lcom/android/server/backlight/zta;->Ec()I
 
     move-result v0
 
@@ -2171,7 +2171,7 @@
 .method static synthetic tsu(Lcom/android/server/backlight/OpBacklightManager;)Z
     .locals 0
 
-    iget-boolean p0, p0, Lcom/android/server/backlight/OpBacklightManager;->Qz:Z
+    iget-boolean p0, p0, Lcom/android/server/backlight/OpBacklightManager;->Zz:Z
 
     return p0
 .end method
@@ -2179,7 +2179,7 @@
 .method private tsu(Lcom/android/server/backlight/zta;)Z
     .locals 2
 
-    iget-object p0, p0, Lcom/android/server/backlight/OpBacklightManager;->Lz:Lcom/android/server/wm/OpScreenModeService;
+    iget-object p0, p0, Lcom/android/server/backlight/OpBacklightManager;->Uz:Lcom/android/server/wm/OpScreenModeService;
 
     const/4 v0, 0x0
 
@@ -2308,12 +2308,12 @@
 .method private you(Lcom/android/server/backlight/zta;)Lcom/android/server/backlight/zta$zta;
     .locals 2
 
-    iget-object v0, p0, Lcom/android/server/backlight/OpBacklightManager;->Oz:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/android/server/backlight/OpBacklightManager;->Xz:Ljava/util/HashMap;
 
     monitor-enter v0
 
     :try_start_0
-    iget-object p0, p0, Lcom/android/server/backlight/OpBacklightManager;->Oz:Ljava/util/HashMap;
+    iget-object p0, p0, Lcom/android/server/backlight/OpBacklightManager;->Xz:Ljava/util/HashMap;
 
     invoke-virtual {p1}, Lcom/android/server/backlight/zta;->getLevel()Ljava/lang/String;
 
@@ -2327,7 +2327,7 @@
 
     if-eqz p0, :cond_0
 
-    invoke-virtual {p1}, Lcom/android/server/backlight/zta;->Cc()I
+    invoke-virtual {p1}, Lcom/android/server/backlight/zta;->Dc()I
 
     move-result p1
 
@@ -2403,12 +2403,12 @@
 .method private zta(Lcom/android/server/backlight/zta;)I
     .locals 1
 
-    iget-object v0, p0, Lcom/android/server/backlight/OpBacklightManager;->Oz:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/android/server/backlight/OpBacklightManager;->Xz:Ljava/util/HashMap;
 
     monitor-enter v0
 
     :try_start_0
-    iget-object p0, p0, Lcom/android/server/backlight/OpBacklightManager;->Oz:Ljava/util/HashMap;
+    iget-object p0, p0, Lcom/android/server/backlight/OpBacklightManager;->Xz:Ljava/util/HashMap;
 
     invoke-virtual {p1}, Lcom/android/server/backlight/zta;->getLevel()Ljava/lang/String;
 
@@ -2450,12 +2450,12 @@
 .method private zta(Lcom/android/server/backlight/zta;Lcom/android/server/backlight/zta$zta;)I
     .locals 8
 
-    iget-object v0, p0, Lcom/android/server/backlight/OpBacklightManager;->Oz:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/android/server/backlight/OpBacklightManager;->Xz:Ljava/util/HashMap;
 
     monitor-enter v0
 
     :try_start_0
-    iget-object p0, p0, Lcom/android/server/backlight/OpBacklightManager;->Oz:Ljava/util/HashMap;
+    iget-object p0, p0, Lcom/android/server/backlight/OpBacklightManager;->Xz:Ljava/util/HashMap;
 
     invoke-virtual {p1}, Lcom/android/server/backlight/zta;->getLevel()Ljava/lang/String;
 
@@ -2490,11 +2490,11 @@
 
     check-cast v4, Lcom/android/server/backlight/zta$zta;
 
-    invoke-virtual {v4}, Lcom/android/server/backlight/zta$zta;->xc()D
+    invoke-virtual {v4}, Lcom/android/server/backlight/zta$zta;->yc()D
 
     move-result-wide v4
 
-    invoke-virtual {p2}, Lcom/android/server/backlight/zta$zta;->xc()D
+    invoke-virtual {p2}, Lcom/android/server/backlight/zta$zta;->yc()D
 
     move-result-wide v6
 
@@ -2572,7 +2572,7 @@
 .method static synthetic zta(Lcom/android/server/backlight/OpBacklightManager;Z)Z
     .locals 0
 
-    iput-boolean p1, p0, Lcom/android/server/backlight/OpBacklightManager;->Qz:Z
+    iput-boolean p1, p0, Lcom/android/server/backlight/OpBacklightManager;->Zz:Z
 
     return p1
 .end method
@@ -2608,9 +2608,9 @@
 
     invoke-direct {p1, v0, v1, v2, v3}, Lcom/oneplus/config/ConfigObserver;-><init>(Landroid/content/Context;Landroid/os/Handler;Lcom/oneplus/config/ConfigObserver$ConfigUpdater;Ljava/lang/String;)V
 
-    iput-object p1, p0, Lcom/android/server/backlight/OpBacklightManager;->Kz:Lcom/oneplus/config/ConfigObserver;
+    iput-object p1, p0, Lcom/android/server/backlight/OpBacklightManager;->Tz:Lcom/oneplus/config/ConfigObserver;
 
-    iget-object p1, p0, Lcom/android/server/backlight/OpBacklightManager;->Kz:Lcom/oneplus/config/ConfigObserver;
+    iget-object p1, p0, Lcom/android/server/backlight/OpBacklightManager;->Tz:Lcom/oneplus/config/ConfigObserver;
 
     invoke-virtual {p1}, Lcom/oneplus/config/ConfigObserver;->register()V
 
@@ -2619,7 +2619,7 @@
 
     move-result-object p1
 
-    iget-object p0, p0, Lcom/android/server/backlight/OpBacklightManager;->Rz:Lcom/android/server/backlight/OpBacklightManager$DockDividerVisibilityListener;
+    iget-object p0, p0, Lcom/android/server/backlight/OpBacklightManager;->_z:Lcom/android/server/backlight/OpBacklightManager$DockDividerVisibilityListener;
 
     invoke-interface {p1, p0}, Landroid/view/IWindowManager;->registerDockedStackListener(Landroid/view/IDockedStackListener;)V
     :try_end_0
@@ -2665,11 +2665,11 @@
     monitor-enter v0
 
     :try_start_0
-    sget-boolean v1, Lcom/android/server/backlight/OpBacklightManager;->Tz:Z
+    sget-boolean v1, Lcom/android/server/backlight/OpBacklightManager;->bA:Z
 
     if-eqz v1, :cond_5
 
-    iget-boolean v1, p0, Lcom/android/server/backlight/OpBacklightManager;->Qz:Z
+    iget-boolean v1, p0, Lcom/android/server/backlight/OpBacklightManager;->Zz:Z
 
     if-nez v1, :cond_5
 
@@ -2698,7 +2698,7 @@
 
     iget-object v1, p0, Lcom/android/server/backlight/OpBacklightManager;->mCurrentConfig:Lcom/android/server/backlight/zta;
 
-    invoke-virtual {v1}, Lcom/android/server/backlight/zta;->Dc()I
+    invoke-virtual {v1}, Lcom/android/server/backlight/zta;->Ec()I
 
     move-result v1
 
@@ -2767,7 +2767,7 @@
 .method public zta(Lcom/android/server/wm/OpScreenModeService;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/android/server/backlight/OpBacklightManager;->Lz:Lcom/android/server/wm/OpScreenModeService;
+    iput-object p1, p0, Lcom/android/server/backlight/OpBacklightManager;->Uz:Lcom/android/server/wm/OpScreenModeService;
 
     return-void
 .end method
@@ -2895,7 +2895,7 @@
 
     sput-boolean p0, Lcom/android/server/backlight/OpBacklightManager;->mDebug:Z
 
-    sput-boolean p0, Lcom/android/server/backlight/OpBacklightManager;->Vz:Z
+    sput-boolean p0, Lcom/android/server/backlight/OpBacklightManager;->dA:Z
 
     return v2
 
@@ -2927,14 +2927,14 @@
 
     move-result p2
 
-    iget-object v4, p0, Lcom/android/server/backlight/OpBacklightManager;->Mz:Ljava/util/ArrayList;
+    iget-object v4, p0, Lcom/android/server/backlight/OpBacklightManager;->Vz:Ljava/util/ArrayList;
 
     monitor-enter v4
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
     :try_start_1
-    iget-object v5, p0, Lcom/android/server/backlight/OpBacklightManager;->Mz:Ljava/util/ArrayList;
+    iget-object v5, p0, Lcom/android/server/backlight/OpBacklightManager;->Vz:Ljava/util/ArrayList;
 
     invoke-virtual {v5}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
@@ -2964,7 +2964,7 @@
 
     if-eqz v7, :cond_5
 
-    iget-object v7, p0, Lcom/android/server/backlight/OpBacklightManager;->Mz:Ljava/util/ArrayList;
+    iget-object v7, p0, Lcom/android/server/backlight/OpBacklightManager;->Vz:Ljava/util/ArrayList;
 
     invoke-virtual {v7, v6}, Ljava/util/ArrayList;->remove(Ljava/lang/Object;)Z
 
@@ -2973,7 +2973,7 @@
     :cond_6
     if-eqz v0, :cond_7
 
-    iget-object v0, p0, Lcom/android/server/backlight/OpBacklightManager;->Mz:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/server/backlight/OpBacklightManager;->Vz:Ljava/util/ArrayList;
 
     new-instance v5, Lcom/android/server/backlight/zta;
 
@@ -3023,14 +3023,14 @@
 
     aget-object p2, p2, v3
 
-    iget-object v0, p0, Lcom/android/server/backlight/OpBacklightManager;->Oz:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/android/server/backlight/OpBacklightManager;->Xz:Ljava/util/HashMap;
 
     monitor-enter v0
     :try_end_2
     .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_0
 
     :try_start_3
-    iget-object v1, p0, Lcom/android/server/backlight/OpBacklightManager;->Oz:Ljava/util/HashMap;
+    iget-object v1, p0, Lcom/android/server/backlight/OpBacklightManager;->Xz:Ljava/util/HashMap;
 
     invoke-virtual {v1, p2}, Ljava/util/HashMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -3069,14 +3069,14 @@
 
     if-eqz v0, :cond_a
 
-    iget-object v0, p0, Lcom/android/server/backlight/OpBacklightManager;->Nz:Ljava/util/HashSet;
+    iget-object v0, p0, Lcom/android/server/backlight/OpBacklightManager;->Wz:Ljava/util/HashSet;
 
     monitor-enter v0
     :try_end_4
     .catch Ljava/lang/Exception; {:try_start_4 .. :try_end_4} :catch_0
 
     :try_start_5
-    iget-object v6, p0, Lcom/android/server/backlight/OpBacklightManager;->Nz:Ljava/util/HashSet;
+    iget-object v6, p0, Lcom/android/server/backlight/OpBacklightManager;->Wz:Ljava/util/HashSet;
 
     aget-object v7, p2, v3
 
@@ -3107,14 +3107,14 @@
 
     if-eqz v0, :cond_b
 
-    iget-object v0, p0, Lcom/android/server/backlight/OpBacklightManager;->Nz:Ljava/util/HashSet;
+    iget-object v0, p0, Lcom/android/server/backlight/OpBacklightManager;->Wz:Ljava/util/HashSet;
 
     monitor-enter v0
     :try_end_6
     .catch Ljava/lang/Exception; {:try_start_6 .. :try_end_6} :catch_0
 
     :try_start_7
-    iget-object v6, p0, Lcom/android/server/backlight/OpBacklightManager;->Nz:Ljava/util/HashSet;
+    iget-object v6, p0, Lcom/android/server/backlight/OpBacklightManager;->Wz:Ljava/util/HashSet;
 
     aget-object v7, p2, v3
 
@@ -3217,14 +3217,14 @@
 
     invoke-direct/range {v3 .. v11}, Lcom/android/server/backlight/zta$zta;-><init>(Ljava/lang/String;DDIII)V
 
-    iget-object v1, p0, Lcom/android/server/backlight/OpBacklightManager;->Oz:Ljava/util/HashMap;
+    iget-object v1, p0, Lcom/android/server/backlight/OpBacklightManager;->Xz:Ljava/util/HashMap;
 
     monitor-enter v1
     :try_end_8
     .catch Ljava/lang/Exception; {:try_start_8 .. :try_end_8} :catch_0
 
     :try_start_9
-    iget-object v3, p0, Lcom/android/server/backlight/OpBacklightManager;->Oz:Ljava/util/HashMap;
+    iget-object v3, p0, Lcom/android/server/backlight/OpBacklightManager;->Xz:Ljava/util/HashMap;
 
     invoke-virtual {v3, v0}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -3250,7 +3250,7 @@
     :cond_d
     invoke-virtual {v3, v12}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    iget-object p2, p0, Lcom/android/server/backlight/OpBacklightManager;->Oz:Ljava/util/HashMap;
+    iget-object p2, p0, Lcom/android/server/backlight/OpBacklightManager;->Xz:Ljava/util/HashMap;
 
     invoke-virtual {p2, v0, v3}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 

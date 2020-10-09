@@ -17,73 +17,69 @@
 # static fields
 .field private static final ATTR_PACKAGE:Ljava/lang/String; = "packageName"
 
-.field private static final BD:Ljava/lang/String; = "shell_command_sw"
+.field private static final DD:Ljava/lang/String; = "className"
 
-.field private static final CD:Ljava/lang/String; = "engineer_order_sw"
+.field private static final ED:Ljava/lang/String; = "command"
 
-.field private static final DD:Ljava/lang/String; = "reset_atm_sw"
+.field private static final FD:Ljava/lang/String; = "order"
 
-.field private static final tD:Ljava/lang/String; = "className"
+.field private static final GD:Ljava/lang/String; = "switchName"
 
-.field private static final uD:Ljava/lang/String; = "command"
+.field private static final HD:Ljava/lang/String; = "switchState"
 
-.field private static final vD:Ljava/lang/String; = "order"
+.field private static final JD:Ljava/lang/String; = "activity_sw"
 
-.field private static final wD:Ljava/lang/String; = "switchName"
+.field private static final KD:Ljava/lang/String; = "service_sw"
 
-.field private static final xD:Ljava/lang/String; = "switchState"
+.field private static final LD:Ljava/lang/String; = "shell_command_sw"
 
-.field private static final yD:Ljava/lang/String; = "activity_sw"
+.field private static final MD:Ljava/lang/String; = "engineer_order_sw"
 
-.field private static final zD:Ljava/lang/String; = "service_sw"
+.field private static final ND:Ljava/lang/String; = "reset_atm_sw"
 
 
 # instance fields
+.field private BD:Z
+
+.field private CD:Z
+
 .field private final TAG_ACTIVITY:Ljava/lang/String;
 
 .field private final TAG_SERVICE:Ljava/lang/String;
 
 .field private final TAG_SWITCH:Ljava/lang/String;
 
-.field private final hD:Ljava/lang/String;
-
-.field private final iD:Ljava/lang/String;
-
-.field private final jD:Lcom/android/server/engineer/you$zta;
-
-.field private kD:Ljava/util/List;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/List<",
-            "Landroid/content/ComponentName;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private lD:Ljava/util/List;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/List<",
-            "Landroid/content/ComponentName;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private mD:Ljava/util/List;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/List<",
-            "Ljava/lang/String;",
-            ">;"
-        }
-    .end annotation
-.end field
-
 .field private final mLock:Ljava/lang/Object;
 
-.field private nD:Ljava/util/List;
+.field private final qD:Ljava/lang/String;
+
+.field private final rD:Ljava/lang/String;
+
+.field private final sD:Lcom/android/server/engineer/you$zta;
+
+.field private tD:Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/List<",
+            "Landroid/content/ComponentName;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field final synthetic this$0:Lcom/android/server/engineer/you;
+
+.field private uD:Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/List<",
+            "Landroid/content/ComponentName;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private vD:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
@@ -93,17 +89,21 @@
     .end annotation
 .end field
 
-.field private oD:Z
+.field private wD:Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/List<",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+.end field
 
-.field private pD:Z
+.field private xD:Z
 
-.field private qD:Z
+.field private yD:Z
 
-.field private rD:Z
-
-.field private sD:Z
-
-.field final synthetic this$0:Lcom/android/server/engineer/you;
+.field private zD:Z
 
 
 # direct methods
@@ -134,37 +134,37 @@
 
     const-string p1, "shell_command"
 
-    iput-object p1, p0, Lcom/android/server/engineer/you$you;->hD:Ljava/lang/String;
+    iput-object p1, p0, Lcom/android/server/engineer/you$you;->qD:Ljava/lang/String;
 
     const-string p1, "engineer_order"
 
-    iput-object p1, p0, Lcom/android/server/engineer/you$you;->iD:Ljava/lang/String;
+    iput-object p1, p0, Lcom/android/server/engineer/you$you;->rD:Ljava/lang/String;
 
     new-instance p1, Ljava/util/ArrayList;
 
     invoke-direct {p1}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object p1, p0, Lcom/android/server/engineer/you$you;->kD:Ljava/util/List;
+    iput-object p1, p0, Lcom/android/server/engineer/you$you;->tD:Ljava/util/List;
 
     new-instance p1, Ljava/util/ArrayList;
 
     invoke-direct {p1}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object p1, p0, Lcom/android/server/engineer/you$you;->lD:Ljava/util/List;
+    iput-object p1, p0, Lcom/android/server/engineer/you$you;->uD:Ljava/util/List;
 
     new-instance p1, Ljava/util/ArrayList;
 
     invoke-direct {p1}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object p1, p0, Lcom/android/server/engineer/you$you;->mD:Ljava/util/List;
+    iput-object p1, p0, Lcom/android/server/engineer/you$you;->vD:Ljava/util/List;
 
     new-instance p1, Ljava/util/ArrayList;
 
     invoke-direct {p1}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object p1, p0, Lcom/android/server/engineer/you$you;->nD:Ljava/util/List;
+    iput-object p1, p0, Lcom/android/server/engineer/you$you;->wD:Ljava/util/List;
 
-    iput-object p2, p0, Lcom/android/server/engineer/you$you;->jD:Lcom/android/server/engineer/you$zta;
+    iput-object p2, p0, Lcom/android/server/engineer/you$you;->sD:Lcom/android/server/engineer/you$zta;
 
     return-void
 .end method
@@ -418,11 +418,11 @@
     .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
     :try_start_2
-    iget-object v5, p0, Lcom/android/server/engineer/you$you;->kD:Ljava/util/List;
+    iget-object v5, p0, Lcom/android/server/engineer/you$you;->tD:Ljava/util/List;
 
     invoke-interface {v5}, Ljava/util/List;->clear()V
 
-    iget-object v5, p0, Lcom/android/server/engineer/you$you;->lD:Ljava/util/List;
+    iget-object v5, p0, Lcom/android/server/engineer/you$you;->uD:Ljava/util/List;
 
     invoke-interface {v5}, Ljava/util/List;->clear()V
 
@@ -515,7 +515,7 @@
 
     move-result p1
 
-    iput-boolean p1, p0, Lcom/android/server/engineer/you$you;->oD:Z
+    iput-boolean p1, p0, Lcom/android/server/engineer/you$you;->xD:Z
 
     goto/16 :goto_3
 
@@ -532,7 +532,7 @@
 
     move-result p1
 
-    iput-boolean p1, p0, Lcom/android/server/engineer/you$you;->pD:Z
+    iput-boolean p1, p0, Lcom/android/server/engineer/you$you;->yD:Z
 
     goto :goto_3
 
@@ -549,7 +549,7 @@
 
     move-result p1
 
-    iput-boolean p1, p0, Lcom/android/server/engineer/you$you;->qD:Z
+    iput-boolean p1, p0, Lcom/android/server/engineer/you$you;->zD:Z
 
     goto :goto_3
 
@@ -566,7 +566,7 @@
 
     move-result p1
 
-    iput-boolean p1, p0, Lcom/android/server/engineer/you$you;->rD:Z
+    iput-boolean p1, p0, Lcom/android/server/engineer/you$you;->BD:Z
 
     goto :goto_3
 
@@ -583,7 +583,7 @@
 
     move-result p1
 
-    iput-boolean p1, p0, Lcom/android/server/engineer/you$you;->sD:Z
+    iput-boolean p1, p0, Lcom/android/server/engineer/you$you;->CD:Z
 
     goto :goto_3
 
@@ -596,7 +596,7 @@
 
     if-eqz v6, :cond_7
 
-    iget-object p1, p0, Lcom/android/server/engineer/you$you;->kD:Ljava/util/List;
+    iget-object p1, p0, Lcom/android/server/engineer/you$you;->tD:Ljava/util/List;
 
     :goto_1
     invoke-direct {p0, v2, p1}, Lcom/android/server/engineer/you$you;->zta(Lorg/xmlpull/v1/XmlPullParser;Ljava/util/List;)V
@@ -615,7 +615,7 @@
 
     if-eqz v6, :cond_8
 
-    iget-object p1, p0, Lcom/android/server/engineer/you$you;->lD:Ljava/util/List;
+    iget-object p1, p0, Lcom/android/server/engineer/you$you;->uD:Ljava/util/List;
 
     goto :goto_1
 
@@ -628,7 +628,7 @@
 
     if-eqz v6, :cond_9
 
-    iget-object p1, p0, Lcom/android/server/engineer/you$you;->mD:Ljava/util/List;
+    iget-object p1, p0, Lcom/android/server/engineer/you$you;->vD:Ljava/util/List;
 
     invoke-direct {p0, v2, p1}, Lcom/android/server/engineer/you$you;->sis(Lorg/xmlpull/v1/XmlPullParser;Ljava/util/List;)V
 
@@ -643,7 +643,7 @@
 
     if-eqz p1, :cond_a
 
-    iget-object p1, p0, Lcom/android/server/engineer/you$you;->nD:Ljava/util/List;
+    iget-object p1, p0, Lcom/android/server/engineer/you$you;->wD:Ljava/util/List;
 
     invoke-direct {p0, v2, p1}, Lcom/android/server/engineer/you$you;->you(Lorg/xmlpull/v1/XmlPullParser;Ljava/util/List;)V
 
@@ -731,7 +731,7 @@
     :goto_6
     if-eqz v4, :cond_d
 
-    iget-object p0, p0, Lcom/android/server/engineer/you$you;->jD:Lcom/android/server/engineer/you$zta;
+    iget-object p0, p0, Lcom/android/server/engineer/you$you;->sD:Lcom/android/server/engineer/you$zta;
 
     if-eqz p0, :cond_d
 
@@ -752,7 +752,7 @@
 .method M(Ljava/lang/String;)Z
     .locals 2
 
-    iget-boolean v0, p0, Lcom/android/server/engineer/you$you;->rD:Z
+    iget-boolean v0, p0, Lcom/android/server/engineer/you$you;->BD:Z
 
     const/4 v1, 0x0
 
@@ -763,7 +763,7 @@
     goto :goto_0
 
     :cond_0
-    iget-object p0, p0, Lcom/android/server/engineer/you$you;->nD:Ljava/util/List;
+    iget-object p0, p0, Lcom/android/server/engineer/you$you;->wD:Ljava/util/List;
 
     invoke-interface {p0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -800,7 +800,7 @@
 .method N(Ljava/lang/String;)Z
     .locals 2
 
-    iget-boolean v0, p0, Lcom/android/server/engineer/you$you;->qD:Z
+    iget-boolean v0, p0, Lcom/android/server/engineer/you$you;->zD:Z
 
     const/4 v1, 0x0
 
@@ -811,7 +811,7 @@
     goto :goto_0
 
     :cond_0
-    iget-object p0, p0, Lcom/android/server/engineer/you$you;->mD:Ljava/util/List;
+    iget-object p0, p0, Lcom/android/server/engineer/you$you;->vD:Ljava/util/List;
 
     invoke-interface {p0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -845,10 +845,10 @@
     return v1
 .end method
 
-.method Oc()Z
+.method Pc()Z
     .locals 0
 
-    iget-boolean p0, p0, Lcom/android/server/engineer/you$you;->sD:Z
+    iget-boolean p0, p0, Lcom/android/server/engineer/you$you;->CD:Z
 
     return p0
 .end method
@@ -856,7 +856,7 @@
 .method sis(Landroid/content/ComponentName;)Z
     .locals 2
 
-    iget-boolean v0, p0, Lcom/android/server/engineer/you$you;->oD:Z
+    iget-boolean v0, p0, Lcom/android/server/engineer/you$you;->xD:Z
 
     const/4 v1, 0x0
 
@@ -867,7 +867,7 @@
     goto :goto_0
 
     :cond_0
-    iget-object p0, p0, Lcom/android/server/engineer/you$you;->kD:Ljava/util/List;
+    iget-object p0, p0, Lcom/android/server/engineer/you$you;->tD:Ljava/util/List;
 
     invoke-interface {p0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -904,7 +904,7 @@
 .method tsu(Landroid/content/ComponentName;)Z
     .locals 2
 
-    iget-boolean v0, p0, Lcom/android/server/engineer/you$you;->pD:Z
+    iget-boolean v0, p0, Lcom/android/server/engineer/you$you;->yD:Z
 
     const/4 v1, 0x0
 
@@ -915,7 +915,7 @@
     goto :goto_0
 
     :cond_0
-    iget-object p0, p0, Lcom/android/server/engineer/you$you;->lD:Ljava/util/List;
+    iget-object p0, p0, Lcom/android/server/engineer/you$you;->uD:Ljava/util/List;
 
     invoke-interface {p0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 

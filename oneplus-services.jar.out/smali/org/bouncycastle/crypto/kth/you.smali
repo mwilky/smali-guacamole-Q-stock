@@ -7,25 +7,25 @@
 
 
 # static fields
-.field private static final NCa:B = 0x36t
+.field private static final YCa:B = 0x36t
 
-.field private static final OCa:B = 0x5ct
+.field private static final ZCa:B = 0x5ct
 
-.field private static PCa:Ljava/util/Hashtable;
+.field private static _Ca:Ljava/util/Hashtable;
 
 
 # instance fields
-.field private HCa:I
+.field private SCa:I
 
-.field private ICa:I
+.field private TCa:I
 
-.field private JCa:Lorg/bouncycastle/util/bio;
+.field private UCa:Lorg/bouncycastle/util/bio;
 
-.field private KCa:Lorg/bouncycastle/util/bio;
+.field private VCa:Lorg/bouncycastle/util/bio;
 
-.field private LCa:[B
+.field private WCa:[B
 
-.field private MCa:[B
+.field private XCa:[B
 
 .field private digest:Lorg/bouncycastle/crypto/qbh;
 
@@ -38,9 +38,9 @@
 
     invoke-direct {v0}, Ljava/util/Hashtable;-><init>()V
 
-    sput-object v0, Lorg/bouncycastle/crypto/kth/you;->PCa:Ljava/util/Hashtable;
+    sput-object v0, Lorg/bouncycastle/crypto/kth/you;->_Ca:Ljava/util/Hashtable;
 
-    sget-object v0, Lorg/bouncycastle/crypto/kth/you;->PCa:Ljava/util/Hashtable;
+    sget-object v0, Lorg/bouncycastle/crypto/kth/you;->_Ca:Ljava/util/Hashtable;
 
     const/16 v1, 0x40
 
@@ -52,7 +52,7 @@
 
     invoke-virtual {v0, v3, v2}, Ljava/util/Hashtable;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    sget-object v0, Lorg/bouncycastle/crypto/kth/you;->PCa:Ljava/util/Hashtable;
+    sget-object v0, Lorg/bouncycastle/crypto/kth/you;->_Ca:Ljava/util/Hashtable;
 
     invoke-static {v1}, Lorg/bouncycastle/util/cno;->valueOf(I)Ljava/lang/Integer;
 
@@ -62,7 +62,7 @@
 
     invoke-virtual {v0, v3, v2}, Ljava/util/Hashtable;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    sget-object v0, Lorg/bouncycastle/crypto/kth/you;->PCa:Ljava/util/Hashtable;
+    sget-object v0, Lorg/bouncycastle/crypto/kth/you;->_Ca:Ljava/util/Hashtable;
 
     invoke-static {v1}, Lorg/bouncycastle/util/cno;->valueOf(I)Ljava/lang/Integer;
 
@@ -72,7 +72,7 @@
 
     invoke-virtual {v0, v3, v2}, Ljava/util/Hashtable;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    sget-object v0, Lorg/bouncycastle/crypto/kth/you;->PCa:Ljava/util/Hashtable;
+    sget-object v0, Lorg/bouncycastle/crypto/kth/you;->_Ca:Ljava/util/Hashtable;
 
     invoke-static {v1}, Lorg/bouncycastle/util/cno;->valueOf(I)Ljava/lang/Integer;
 
@@ -82,7 +82,7 @@
 
     invoke-virtual {v0, v2, v1}, Ljava/util/Hashtable;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    sget-object v0, Lorg/bouncycastle/crypto/kth/you;->PCa:Ljava/util/Hashtable;
+    sget-object v0, Lorg/bouncycastle/crypto/kth/you;->_Ca:Ljava/util/Hashtable;
 
     const/16 v1, 0x80
 
@@ -94,7 +94,7 @@
 
     invoke-virtual {v0, v3, v2}, Ljava/util/Hashtable;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    sget-object v0, Lorg/bouncycastle/crypto/kth/you;->PCa:Ljava/util/Hashtable;
+    sget-object v0, Lorg/bouncycastle/crypto/kth/you;->_Ca:Ljava/util/Hashtable;
 
     invoke-static {v1}, Lorg/bouncycastle/util/cno;->valueOf(I)Ljava/lang/Integer;
 
@@ -130,23 +130,23 @@
 
     move-result p1
 
-    iput p1, p0, Lorg/bouncycastle/crypto/kth/you;->HCa:I
+    iput p1, p0, Lorg/bouncycastle/crypto/kth/you;->SCa:I
 
-    iput p2, p0, Lorg/bouncycastle/crypto/kth/you;->ICa:I
+    iput p2, p0, Lorg/bouncycastle/crypto/kth/you;->TCa:I
 
-    iget p1, p0, Lorg/bouncycastle/crypto/kth/you;->ICa:I
+    iget p1, p0, Lorg/bouncycastle/crypto/kth/you;->TCa:I
 
     new-array p2, p1, [B
 
-    iput-object p2, p0, Lorg/bouncycastle/crypto/kth/you;->LCa:[B
+    iput-object p2, p0, Lorg/bouncycastle/crypto/kth/you;->WCa:[B
 
-    iget p2, p0, Lorg/bouncycastle/crypto/kth/you;->HCa:I
+    iget p2, p0, Lorg/bouncycastle/crypto/kth/you;->SCa:I
 
     add-int/2addr p1, p2
 
     new-array p1, p1, [B
 
-    iput-object p1, p0, Lorg/bouncycastle/crypto/kth/you;->MCa:[B
+    iput-object p1, p0, Lorg/bouncycastle/crypto/kth/you;->XCa:[B
 
     return-void
 .end method
@@ -191,7 +191,7 @@
     return p0
 
     :cond_0
-    sget-object v0, Lorg/bouncycastle/crypto/kth/you;->PCa:Ljava/util/Hashtable;
+    sget-object v0, Lorg/bouncycastle/crypto/kth/you;->_Ca:Ljava/util/Hashtable;
 
     invoke-interface {p0}, Lorg/bouncycastle/crypto/qbh;->vju()Ljava/lang/String;
 
@@ -244,13 +244,13 @@
 
     iget-object v0, p0, Lorg/bouncycastle/crypto/kth/you;->digest:Lorg/bouncycastle/crypto/qbh;
 
-    iget-object v1, p0, Lorg/bouncycastle/crypto/kth/you;->MCa:[B
+    iget-object v1, p0, Lorg/bouncycastle/crypto/kth/you;->XCa:[B
 
-    iget v2, p0, Lorg/bouncycastle/crypto/kth/you;->ICa:I
+    iget v2, p0, Lorg/bouncycastle/crypto/kth/you;->TCa:I
 
     invoke-interface {v0, v1, v2}, Lorg/bouncycastle/crypto/qbh;->doFinal([BI)I
 
-    iget-object v0, p0, Lorg/bouncycastle/crypto/kth/you;->KCa:Lorg/bouncycastle/util/bio;
+    iget-object v0, p0, Lorg/bouncycastle/crypto/kth/you;->VCa:Lorg/bouncycastle/util/bio;
 
     const/4 v1, 0x0
 
@@ -264,9 +264,9 @@
 
     iget-object v0, p0, Lorg/bouncycastle/crypto/kth/you;->digest:Lorg/bouncycastle/crypto/qbh;
 
-    iget-object v2, p0, Lorg/bouncycastle/crypto/kth/you;->MCa:[B
+    iget-object v2, p0, Lorg/bouncycastle/crypto/kth/you;->XCa:[B
 
-    iget v3, p0, Lorg/bouncycastle/crypto/kth/you;->ICa:I
+    iget v3, p0, Lorg/bouncycastle/crypto/kth/you;->TCa:I
 
     invoke-interface {v0}, Lorg/bouncycastle/crypto/qbh;->les()I
 
@@ -279,7 +279,7 @@
     :cond_0
     iget-object v0, p0, Lorg/bouncycastle/crypto/kth/you;->digest:Lorg/bouncycastle/crypto/qbh;
 
-    iget-object v2, p0, Lorg/bouncycastle/crypto/kth/you;->MCa:[B
+    iget-object v2, p0, Lorg/bouncycastle/crypto/kth/you;->XCa:[B
 
     array-length v3, v2
 
@@ -292,10 +292,10 @@
 
     move-result p1
 
-    iget p2, p0, Lorg/bouncycastle/crypto/kth/you;->ICa:I
+    iget p2, p0, Lorg/bouncycastle/crypto/kth/you;->TCa:I
 
     :goto_1
-    iget-object v0, p0, Lorg/bouncycastle/crypto/kth/you;->MCa:[B
+    iget-object v0, p0, Lorg/bouncycastle/crypto/kth/you;->XCa:[B
 
     array-length v2, v0
 
@@ -308,7 +308,7 @@
     goto :goto_1
 
     :cond_1
-    iget-object p2, p0, Lorg/bouncycastle/crypto/kth/you;->JCa:Lorg/bouncycastle/util/bio;
+    iget-object p2, p0, Lorg/bouncycastle/crypto/kth/you;->UCa:Lorg/bouncycastle/util/bio;
 
     if-eqz p2, :cond_2
 
@@ -323,7 +323,7 @@
     :cond_2
     iget-object p2, p0, Lorg/bouncycastle/crypto/kth/you;->digest:Lorg/bouncycastle/crypto/qbh;
 
-    iget-object p0, p0, Lorg/bouncycastle/crypto/kth/you;->LCa:[B
+    iget-object p0, p0, Lorg/bouncycastle/crypto/kth/you;->WCa:[B
 
     array-length v0, p0
 
@@ -333,7 +333,7 @@
     return p1
 .end method
 
-.method public lj()Lorg/bouncycastle/crypto/qbh;
+.method public nj()Lorg/bouncycastle/crypto/qbh;
     .locals 0
 
     iget-object p0, p0, Lorg/bouncycastle/crypto/kth/you;->digest:Lorg/bouncycastle/crypto/qbh;
@@ -350,7 +350,7 @@
 
     iget-object v0, p0, Lorg/bouncycastle/crypto/kth/you;->digest:Lorg/bouncycastle/crypto/qbh;
 
-    iget-object p0, p0, Lorg/bouncycastle/crypto/kth/you;->LCa:[B
+    iget-object p0, p0, Lorg/bouncycastle/crypto/kth/you;->WCa:[B
 
     array-length v1, p0
 
@@ -410,7 +410,7 @@
 .method public you()I
     .locals 0
 
-    iget p0, p0, Lorg/bouncycastle/crypto/kth/you;->HCa:I
+    iget p0, p0, Lorg/bouncycastle/crypto/kth/you;->SCa:I
 
     return p0
 .end method
@@ -430,7 +430,7 @@
 
     array-length v0, p1
 
-    iget v1, p0, Lorg/bouncycastle/crypto/kth/you;->ICa:I
+    iget v1, p0, Lorg/bouncycastle/crypto/kth/you;->TCa:I
 
     const/4 v2, 0x0
 
@@ -442,21 +442,21 @@
 
     iget-object p1, p0, Lorg/bouncycastle/crypto/kth/you;->digest:Lorg/bouncycastle/crypto/qbh;
 
-    iget-object v0, p0, Lorg/bouncycastle/crypto/kth/you;->LCa:[B
+    iget-object v0, p0, Lorg/bouncycastle/crypto/kth/you;->WCa:[B
 
     invoke-interface {p1, v0, v2}, Lorg/bouncycastle/crypto/qbh;->doFinal([BI)I
 
-    iget v0, p0, Lorg/bouncycastle/crypto/kth/you;->HCa:I
+    iget v0, p0, Lorg/bouncycastle/crypto/kth/you;->SCa:I
 
     goto :goto_0
 
     :cond_0
-    iget-object v1, p0, Lorg/bouncycastle/crypto/kth/you;->LCa:[B
+    iget-object v1, p0, Lorg/bouncycastle/crypto/kth/you;->WCa:[B
 
     invoke-static {p1, v2, v1, v2, v0}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     :goto_0
-    iget-object p1, p0, Lorg/bouncycastle/crypto/kth/you;->LCa:[B
+    iget-object p1, p0, Lorg/bouncycastle/crypto/kth/you;->WCa:[B
 
     array-length v1, p1
 
@@ -469,23 +469,23 @@
     goto :goto_0
 
     :cond_1
-    iget-object v0, p0, Lorg/bouncycastle/crypto/kth/you;->MCa:[B
+    iget-object v0, p0, Lorg/bouncycastle/crypto/kth/you;->XCa:[B
 
-    iget v1, p0, Lorg/bouncycastle/crypto/kth/you;->ICa:I
+    iget v1, p0, Lorg/bouncycastle/crypto/kth/you;->TCa:I
 
     invoke-static {p1, v2, v0, v2, v1}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    iget-object p1, p0, Lorg/bouncycastle/crypto/kth/you;->LCa:[B
+    iget-object p1, p0, Lorg/bouncycastle/crypto/kth/you;->WCa:[B
 
-    iget v0, p0, Lorg/bouncycastle/crypto/kth/you;->ICa:I
+    iget v0, p0, Lorg/bouncycastle/crypto/kth/you;->TCa:I
 
     const/16 v1, 0x36
 
     invoke-static {p1, v0, v1}, Lorg/bouncycastle/crypto/kth/you;->you([BIB)V
 
-    iget-object p1, p0, Lorg/bouncycastle/crypto/kth/you;->MCa:[B
+    iget-object p1, p0, Lorg/bouncycastle/crypto/kth/you;->XCa:[B
 
-    iget v0, p0, Lorg/bouncycastle/crypto/kth/you;->ICa:I
+    iget v0, p0, Lorg/bouncycastle/crypto/kth/you;->TCa:I
 
     const/16 v1, 0x5c
 
@@ -503,22 +503,22 @@
 
     move-result-object p1
 
-    iput-object p1, p0, Lorg/bouncycastle/crypto/kth/you;->KCa:Lorg/bouncycastle/util/bio;
+    iput-object p1, p0, Lorg/bouncycastle/crypto/kth/you;->VCa:Lorg/bouncycastle/util/bio;
 
-    iget-object p1, p0, Lorg/bouncycastle/crypto/kth/you;->KCa:Lorg/bouncycastle/util/bio;
+    iget-object p1, p0, Lorg/bouncycastle/crypto/kth/you;->VCa:Lorg/bouncycastle/util/bio;
 
     check-cast p1, Lorg/bouncycastle/crypto/qbh;
 
-    iget-object v0, p0, Lorg/bouncycastle/crypto/kth/you;->MCa:[B
+    iget-object v0, p0, Lorg/bouncycastle/crypto/kth/you;->XCa:[B
 
-    iget v1, p0, Lorg/bouncycastle/crypto/kth/you;->ICa:I
+    iget v1, p0, Lorg/bouncycastle/crypto/kth/you;->TCa:I
 
     invoke-interface {p1, v0, v2, v1}, Lorg/bouncycastle/crypto/qbh;->update([BII)V
 
     :cond_2
     iget-object p1, p0, Lorg/bouncycastle/crypto/kth/you;->digest:Lorg/bouncycastle/crypto/qbh;
 
-    iget-object v0, p0, Lorg/bouncycastle/crypto/kth/you;->LCa:[B
+    iget-object v0, p0, Lorg/bouncycastle/crypto/kth/you;->WCa:[B
 
     array-length v1, v0
 
@@ -536,7 +536,7 @@
 
     move-result-object p1
 
-    iput-object p1, p0, Lorg/bouncycastle/crypto/kth/you;->JCa:Lorg/bouncycastle/util/bio;
+    iput-object p1, p0, Lorg/bouncycastle/crypto/kth/you;->UCa:Lorg/bouncycastle/util/bio;
 
     :cond_3
     return-void

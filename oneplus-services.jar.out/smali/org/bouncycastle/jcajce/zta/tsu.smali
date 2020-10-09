@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field private Mka:Ljava/security/Signature;
+.field private Xka:Ljava/security/Signature;
 
 
 # direct methods
@@ -13,7 +13,7 @@
 
     invoke-direct {p0}, Ljava/io/OutputStream;-><init>()V
 
-    iput-object p1, p0, Lorg/bouncycastle/jcajce/zta/tsu;->Mka:Ljava/security/Signature;
+    iput-object p1, p0, Lorg/bouncycastle/jcajce/zta/tsu;->Xka:Ljava/security/Signature;
 
     return-void
 .end method
@@ -29,7 +29,7 @@
     .end annotation
 
     :try_start_0
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/zta/tsu;->Mka:Ljava/security/Signature;
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/zta/tsu;->Xka:Ljava/security/Signature;
 
     int-to-byte p1, p1
 
@@ -62,7 +62,7 @@
     .end annotation
 
     :try_start_0
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/zta/tsu;->Mka:Ljava/security/Signature;
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/zta/tsu;->Xka:Ljava/security/Signature;
 
     invoke-virtual {p0, p1}, Ljava/security/Signature;->update([B)V
     :try_end_0
@@ -93,7 +93,7 @@
     .end annotation
 
     :try_start_0
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/zta/tsu;->Mka:Ljava/security/Signature;
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/zta/tsu;->Xka:Ljava/security/Signature;
 
     invoke-virtual {p0, p1, p2, p3}, Ljava/security/Signature;->update([BII)V
     :try_end_0

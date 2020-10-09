@@ -1,6 +1,9 @@
-.class synthetic Lcom/android/server/wm/vdb;
+.class Lcom/android/server/wm/vdb;
 .super Ljava/lang/Object;
 .source ""
+
+# interfaces
+.implements Ljava/util/Comparator;
 
 
 # annotations
@@ -9,252 +12,75 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x1008
+    accessFlags = 0x0
     name = null
 .end annotation
 
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Ljava/util/Comparator<",
+        "Lcom/android/server/wm/OpPowerConsumpStats$ywr;",
+        ">;"
+    }
+.end annotation
 
-# static fields
-.field static final synthetic RR:[I
+
+# instance fields
+.field final synthetic this$0:Lcom/android/server/wm/OpPowerConsumpStats;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 3
+.method constructor <init>(Lcom/android/server/wm/OpPowerConsumpStats;)V
+    .locals 0
 
-    invoke-static {}, Lcom/android/internal/os/BatterySipper$DrainType;->values()[Lcom/android/internal/os/BatterySipper$DrainType;
+    iput-object p1, p0, Lcom/android/server/wm/vdb;->this$0:Lcom/android/server/wm/OpPowerConsumpStats;
 
-    move-result-object v0
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    array-length v0, v0
-
-    new-array v0, v0, [I
-
-    sput-object v0, Lcom/android/server/wm/vdb;->RR:[I
-
-    :try_start_0
-    sget-object v0, Lcom/android/server/wm/vdb;->RR:[I
-
-    sget-object v1, Lcom/android/internal/os/BatterySipper$DrainType;->APP:Lcom/android/internal/os/BatterySipper$DrainType;
-
-    invoke-virtual {v1}, Lcom/android/internal/os/BatterySipper$DrainType;->ordinal()I
-
-    move-result v1
-
-    const/4 v2, 0x1
-
-    aput v2, v0, v1
-    :try_end_0
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
-
-    :catch_0
-    :try_start_1
-    sget-object v0, Lcom/android/server/wm/vdb;->RR:[I
-
-    sget-object v1, Lcom/android/internal/os/BatterySipper$DrainType;->AMBIENT_DISPLAY:Lcom/android/internal/os/BatterySipper$DrainType;
-
-    invoke-virtual {v1}, Lcom/android/internal/os/BatterySipper$DrainType;->ordinal()I
-
-    move-result v1
-
-    const/4 v2, 0x2
-
-    aput v2, v0, v1
-    :try_end_1
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_1
-
-    :catch_1
-    :try_start_2
-    sget-object v0, Lcom/android/server/wm/vdb;->RR:[I
-
-    sget-object v1, Lcom/android/internal/os/BatterySipper$DrainType;->BLUETOOTH:Lcom/android/internal/os/BatterySipper$DrainType;
-
-    invoke-virtual {v1}, Lcom/android/internal/os/BatterySipper$DrainType;->ordinal()I
-
-    move-result v1
-
-    const/4 v2, 0x3
-
-    aput v2, v0, v1
-    :try_end_2
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_2 .. :try_end_2} :catch_2
-
-    :catch_2
-    :try_start_3
-    sget-object v0, Lcom/android/server/wm/vdb;->RR:[I
-
-    sget-object v1, Lcom/android/internal/os/BatterySipper$DrainType;->CAMERA:Lcom/android/internal/os/BatterySipper$DrainType;
-
-    invoke-virtual {v1}, Lcom/android/internal/os/BatterySipper$DrainType;->ordinal()I
-
-    move-result v1
-
-    const/4 v2, 0x4
-
-    aput v2, v0, v1
-    :try_end_3
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_3 .. :try_end_3} :catch_3
-
-    :catch_3
-    :try_start_4
-    sget-object v0, Lcom/android/server/wm/vdb;->RR:[I
-
-    sget-object v1, Lcom/android/internal/os/BatterySipper$DrainType;->CELL:Lcom/android/internal/os/BatterySipper$DrainType;
-
-    invoke-virtual {v1}, Lcom/android/internal/os/BatterySipper$DrainType;->ordinal()I
-
-    move-result v1
-
-    const/4 v2, 0x5
-
-    aput v2, v0, v1
-    :try_end_4
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_4 .. :try_end_4} :catch_4
-
-    :catch_4
-    :try_start_5
-    sget-object v0, Lcom/android/server/wm/vdb;->RR:[I
-
-    sget-object v1, Lcom/android/internal/os/BatterySipper$DrainType;->FLASHLIGHT:Lcom/android/internal/os/BatterySipper$DrainType;
-
-    invoke-virtual {v1}, Lcom/android/internal/os/BatterySipper$DrainType;->ordinal()I
-
-    move-result v1
-
-    const/4 v2, 0x6
-
-    aput v2, v0, v1
-    :try_end_5
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_5 .. :try_end_5} :catch_5
-
-    :catch_5
-    :try_start_6
-    sget-object v0, Lcom/android/server/wm/vdb;->RR:[I
-
-    sget-object v1, Lcom/android/internal/os/BatterySipper$DrainType;->IDLE:Lcom/android/internal/os/BatterySipper$DrainType;
-
-    invoke-virtual {v1}, Lcom/android/internal/os/BatterySipper$DrainType;->ordinal()I
-
-    move-result v1
-
-    const/4 v2, 0x7
-
-    aput v2, v0, v1
-    :try_end_6
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_6 .. :try_end_6} :catch_6
-
-    :catch_6
-    :try_start_7
-    sget-object v0, Lcom/android/server/wm/vdb;->RR:[I
-
-    sget-object v1, Lcom/android/internal/os/BatterySipper$DrainType;->MEMORY:Lcom/android/internal/os/BatterySipper$DrainType;
-
-    invoke-virtual {v1}, Lcom/android/internal/os/BatterySipper$DrainType;->ordinal()I
-
-    move-result v1
-
-    const/16 v2, 0x8
-
-    aput v2, v0, v1
-    :try_end_7
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_7 .. :try_end_7} :catch_7
-
-    :catch_7
-    :try_start_8
-    sget-object v0, Lcom/android/server/wm/vdb;->RR:[I
-
-    sget-object v1, Lcom/android/internal/os/BatterySipper$DrainType;->OVERCOUNTED:Lcom/android/internal/os/BatterySipper$DrainType;
-
-    invoke-virtual {v1}, Lcom/android/internal/os/BatterySipper$DrainType;->ordinal()I
-
-    move-result v1
-
-    const/16 v2, 0x9
-
-    aput v2, v0, v1
-    :try_end_8
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_8 .. :try_end_8} :catch_8
-
-    :catch_8
-    :try_start_9
-    sget-object v0, Lcom/android/server/wm/vdb;->RR:[I
-
-    sget-object v1, Lcom/android/internal/os/BatterySipper$DrainType;->PHONE:Lcom/android/internal/os/BatterySipper$DrainType;
-
-    invoke-virtual {v1}, Lcom/android/internal/os/BatterySipper$DrainType;->ordinal()I
-
-    move-result v1
-
-    const/16 v2, 0xa
-
-    aput v2, v0, v1
-    :try_end_9
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_9 .. :try_end_9} :catch_9
-
-    :catch_9
-    :try_start_a
-    sget-object v0, Lcom/android/server/wm/vdb;->RR:[I
-
-    sget-object v1, Lcom/android/internal/os/BatterySipper$DrainType;->SCREEN:Lcom/android/internal/os/BatterySipper$DrainType;
-
-    invoke-virtual {v1}, Lcom/android/internal/os/BatterySipper$DrainType;->ordinal()I
-
-    move-result v1
-
-    const/16 v2, 0xb
-
-    aput v2, v0, v1
-    :try_end_a
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_a .. :try_end_a} :catch_a
-
-    :catch_a
-    :try_start_b
-    sget-object v0, Lcom/android/server/wm/vdb;->RR:[I
-
-    sget-object v1, Lcom/android/internal/os/BatterySipper$DrainType;->UNACCOUNTED:Lcom/android/internal/os/BatterySipper$DrainType;
-
-    invoke-virtual {v1}, Lcom/android/internal/os/BatterySipper$DrainType;->ordinal()I
-
-    move-result v1
-
-    const/16 v2, 0xc
-
-    aput v2, v0, v1
-    :try_end_b
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_b .. :try_end_b} :catch_b
-
-    :catch_b
-    :try_start_c
-    sget-object v0, Lcom/android/server/wm/vdb;->RR:[I
-
-    sget-object v1, Lcom/android/internal/os/BatterySipper$DrainType;->USER:Lcom/android/internal/os/BatterySipper$DrainType;
-
-    invoke-virtual {v1}, Lcom/android/internal/os/BatterySipper$DrainType;->ordinal()I
-
-    move-result v1
-
-    const/16 v2, 0xd
-
-    aput v2, v0, v1
-    :try_end_c
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_c .. :try_end_c} :catch_c
-
-    :catch_c
-    :try_start_d
-    sget-object v0, Lcom/android/server/wm/vdb;->RR:[I
-
-    sget-object v1, Lcom/android/internal/os/BatterySipper$DrainType;->WIFI:Lcom/android/internal/os/BatterySipper$DrainType;
-
-    invoke-virtual {v1}, Lcom/android/internal/os/BatterySipper$DrainType;->ordinal()I
-
-    move-result v1
-
-    const/16 v2, 0xe
-
-    aput v2, v0, v1
-    :try_end_d
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_d .. :try_end_d} :catch_d
-
-    :catch_d
     return-void
+.end method
+
+
+# virtual methods
+.method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
+    .locals 0
+
+    check-cast p1, Lcom/android/server/wm/OpPowerConsumpStats$ywr;
+
+    check-cast p2, Lcom/android/server/wm/OpPowerConsumpStats$ywr;
+
+    invoke-virtual {p0, p1, p2}, Lcom/android/server/wm/vdb;->zta(Lcom/android/server/wm/OpPowerConsumpStats$ywr;Lcom/android/server/wm/OpPowerConsumpStats$ywr;)I
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public zta(Lcom/android/server/wm/OpPowerConsumpStats$ywr;Lcom/android/server/wm/OpPowerConsumpStats$ywr;)I
+    .locals 2
+
+    iget-wide p0, p1, Lcom/android/server/wm/OpPowerConsumpStats$ywr;->mTime:J
+
+    iget-wide v0, p2, Lcom/android/server/wm/OpPowerConsumpStats$ywr;->mTime:J
+
+    cmp-long p0, p0, v0
+
+    if-gez p0, :cond_0
+
+    const/4 p0, 0x1
+
+    return p0
+
+    :cond_0
+    if-lez p0, :cond_1
+
+    const/4 p0, -0x1
+
+    return p0
+
+    :cond_1
+    const/4 p0, 0x0
+
+    return p0
 .end method

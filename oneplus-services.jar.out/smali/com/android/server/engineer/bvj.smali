@@ -14,33 +14,33 @@
 # static fields
 .field private static final DEBUG:Z
 
-.field private static final FC:Ljava/lang/String; = "oem.permission.OEM_COMPONENT_SAFE"
-
-.field public static final LD:Ljava/lang/String; = "oem.intent.action.ROM_UPDATE_CONFIG_SUCCESS"
-
-.field public static final MD:Ljava/lang/String; = "ROM_UPDATE_CONFIG_LIST"
-
-.field private static final ND:Landroid/net/Uri;
-
-.field private static final OD:Ljava/lang/String; = "version"
-
-.field private static final PD:Ljava/lang/String; = "xml"
+.field private static final PC:Ljava/lang/String; = "oem.permission.OEM_COMPONENT_SAFE"
 
 .field private static final TAG:Ljava/lang/String; = "RomUpdateHelper"
 
+.field public static final UD:Ljava/lang/String; = "oem.intent.action.ROM_UPDATE_CONFIG_SUCCESS"
+
+.field public static final VD:Ljava/lang/String; = "ROM_UPDATE_CONFIG_LIST"
+
+.field private static final WD:Landroid/net/Uri;
+
+.field private static final XD:Ljava/lang/String; = "version"
+
+.field private static final YD:Ljava/lang/String; = "xml"
+
 
 # instance fields
-.field private ED:Lcom/android/server/engineer/bvj$zta;
+.field private OD:Lcom/android/server/engineer/bvj$zta;
 
-.field private FD:Lcom/android/server/engineer/bvj$zta;
+.field private PD:Lcom/android/server/engineer/bvj$zta;
 
-.field private GD:Z
+.field private QD:Z
 
-.field private HD:Ljava/lang/String;
+.field private RD:Ljava/lang/String;
 
-.field private JD:Ljava/lang/String;
+.field private SD:Ljava/lang/String;
 
-.field private KD:Ljava/lang/String;
+.field private TD:Ljava/lang/String;
 
 .field public mContext:Landroid/content/Context;
 
@@ -65,7 +65,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/android/server/engineer/bvj;->ND:Landroid/net/Uri;
+    sput-object v0, Lcom/android/server/engineer/bvj;->WD:Landroid/net/Uri;
 
     return-void
 .end method
@@ -77,23 +77,23 @@
 
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/android/server/engineer/bvj;->GD:Z
+    iput-boolean v0, p0, Lcom/android/server/engineer/bvj;->QD:Z
 
     const-string v0, ""
 
-    iput-object v0, p0, Lcom/android/server/engineer/bvj;->HD:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/server/engineer/bvj;->RD:Ljava/lang/String;
 
-    iput-object v0, p0, Lcom/android/server/engineer/bvj;->JD:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/server/engineer/bvj;->SD:Ljava/lang/String;
 
-    iput-object v0, p0, Lcom/android/server/engineer/bvj;->KD:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/server/engineer/bvj;->TD:Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/server/engineer/bvj;->mContext:Landroid/content/Context;
 
-    iput-object p2, p0, Lcom/android/server/engineer/bvj;->HD:Ljava/lang/String;
+    iput-object p2, p0, Lcom/android/server/engineer/bvj;->RD:Ljava/lang/String;
 
-    iput-object p3, p0, Lcom/android/server/engineer/bvj;->JD:Ljava/lang/String;
+    iput-object p3, p0, Lcom/android/server/engineer/bvj;->SD:Ljava/lang/String;
 
-    iput-object p4, p0, Lcom/android/server/engineer/bvj;->KD:Ljava/lang/String;
+    iput-object p4, p0, Lcom/android/server/engineer/bvj;->TD:Ljava/lang/String;
 
     return-void
 .end method
@@ -174,7 +174,7 @@
     return v0
 .end method
 
-.method private do()Ljava/lang/String;
+.method private ho()Ljava/lang/String;
     .locals 11
 
     const-string v0, "RomUpdateHelper"
@@ -203,7 +203,7 @@
 
     move-result-object v3
 
-    sget-object v4, Lcom/android/server/engineer/bvj;->ND:Landroid/net/Uri;
+    sget-object v4, Lcom/android/server/engineer/bvj;->WD:Landroid/net/Uri;
 
     new-instance v6, Ljava/lang/StringBuilder;
 
@@ -213,7 +213,7 @@
 
     invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object p0, p0, Lcom/android/server/engineer/bvj;->HD:Ljava/lang/String;
+    iget-object p0, p0, Lcom/android/server/engineer/bvj;->RD:Ljava/lang/String;
 
     invoke-virtual {v6, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -360,14 +360,14 @@
     throw v0
 .end method
 
-.method private eo()V
+.method private io()V
     .locals 1
 
-    iget-boolean v0, p0, Lcom/android/server/engineer/bvj;->GD:Z
+    iget-boolean v0, p0, Lcom/android/server/engineer/bvj;->QD:Z
 
     xor-int/lit8 v0, v0, 0x1
 
-    iput-boolean v0, p0, Lcom/android/server/engineer/bvj;->GD:Z
+    iput-boolean v0, p0, Lcom/android/server/engineer/bvj;->QD:Z
 
     return-void
 .end method
@@ -624,26 +624,26 @@
 .method static synthetic zta(Lcom/android/server/engineer/bvj;)Ljava/lang/String;
     .locals 0
 
-    iget-object p0, p0, Lcom/android/server/engineer/bvj;->HD:Ljava/lang/String;
+    iget-object p0, p0, Lcom/android/server/engineer/bvj;->RD:Ljava/lang/String;
 
     return-object p0
 .end method
 
 
 # virtual methods
-.method public Pc()Ljava/lang/String;
+.method public Qc()Ljava/lang/String;
     .locals 0
 
-    iget-object p0, p0, Lcom/android/server/engineer/bvj;->HD:Ljava/lang/String;
+    iget-object p0, p0, Lcom/android/server/engineer/bvj;->RD:Ljava/lang/String;
 
     return-object p0
 .end method
 
-.method Qc()V
+.method Rc()V
     .locals 3
 
     :try_start_0
-    invoke-direct {p0}, Lcom/android/server/engineer/bvj;->do()Ljava/lang/String;
+    invoke-direct {p0}, Lcom/android/server/engineer/bvj;->ho()Ljava/lang/String;
 
     move-result-object v0
 
@@ -661,7 +661,7 @@
     return-void
 
     :cond_1
-    iget-object v1, p0, Lcom/android/server/engineer/bvj;->KD:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/server/engineer/bvj;->TD:Ljava/lang/String;
 
     invoke-direct {p0, v0, v1}, Lcom/android/server/engineer/bvj;->obl(Ljava/lang/String;Ljava/lang/String;)Z
 
@@ -682,7 +682,7 @@
 
     invoke-virtual {v2, v0}, Lcom/android/server/engineer/bvj$zta;->K(Ljava/lang/String;)V
 
-    invoke-direct {p0}, Lcom/android/server/engineer/bvj;->eo()V
+    invoke-direct {p0}, Lcom/android/server/engineer/bvj;->io()V
 
     invoke-virtual {p0, v1}, Lcom/android/server/engineer/bvj;->d(Z)Lcom/android/server/engineer/bvj$zta;
 
@@ -703,7 +703,7 @@
     return-void
 .end method
 
-.method public Rc()V
+.method public Sc()V
     .locals 4
 
     new-instance v0, Landroid/content/IntentFilter;
@@ -734,31 +734,31 @@
 
     if-eqz p1, :cond_1
 
-    iget-boolean p1, p0, Lcom/android/server/engineer/bvj;->GD:Z
+    iget-boolean p1, p0, Lcom/android/server/engineer/bvj;->QD:Z
 
     if-eqz p1, :cond_0
 
-    iget-object p0, p0, Lcom/android/server/engineer/bvj;->ED:Lcom/android/server/engineer/bvj$zta;
+    iget-object p0, p0, Lcom/android/server/engineer/bvj;->OD:Lcom/android/server/engineer/bvj$zta;
 
     goto :goto_0
 
     :cond_0
-    iget-object p0, p0, Lcom/android/server/engineer/bvj;->FD:Lcom/android/server/engineer/bvj$zta;
+    iget-object p0, p0, Lcom/android/server/engineer/bvj;->PD:Lcom/android/server/engineer/bvj$zta;
 
     :goto_0
     return-object p0
 
     :cond_1
-    iget-boolean p1, p0, Lcom/android/server/engineer/bvj;->GD:Z
+    iget-boolean p1, p0, Lcom/android/server/engineer/bvj;->QD:Z
 
     if-eqz p1, :cond_2
 
-    iget-object p0, p0, Lcom/android/server/engineer/bvj;->FD:Lcom/android/server/engineer/bvj$zta;
+    iget-object p0, p0, Lcom/android/server/engineer/bvj;->PD:Lcom/android/server/engineer/bvj$zta;
 
     goto :goto_1
 
     :cond_2
-    iget-object p0, p0, Lcom/android/server/engineer/bvj;->ED:Lcom/android/server/engineer/bvj$zta;
+    iget-object p0, p0, Lcom/android/server/engineer/bvj;->OD:Lcom/android/server/engineer/bvj$zta;
 
     :goto_1
     return-object p0
@@ -775,7 +775,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean v1, p0, Lcom/android/server/engineer/bvj;->GD:Z
+    iget-boolean v1, p0, Lcom/android/server/engineer/bvj;->QD:Z
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -785,11 +785,11 @@
 
     invoke-virtual {p0, v0}, Lcom/android/server/engineer/bvj;->log(Ljava/lang/String;)V
 
-    iget-object v0, p0, Lcom/android/server/engineer/bvj;->ED:Lcom/android/server/engineer/bvj$zta;
+    iget-object v0, p0, Lcom/android/server/engineer/bvj;->OD:Lcom/android/server/engineer/bvj$zta;
 
     invoke-virtual {v0}, Lcom/android/server/engineer/bvj$zta;->dump()V
 
-    iget-object p0, p0, Lcom/android/server/engineer/bvj;->FD:Lcom/android/server/engineer/bvj$zta;
+    iget-object p0, p0, Lcom/android/server/engineer/bvj;->PD:Lcom/android/server/engineer/bvj$zta;
 
     invoke-virtual {p0}, Lcom/android/server/engineer/bvj$zta;->dump()V
 
@@ -799,11 +799,11 @@
 .method public init()V
     .locals 2
 
-    iget-object v0, p0, Lcom/android/server/engineer/bvj;->KD:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/server/engineer/bvj;->TD:Ljava/lang/String;
 
     if-eqz v0, :cond_2
 
-    iget-object v1, p0, Lcom/android/server/engineer/bvj;->JD:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/server/engineer/bvj;->SD:Ljava/lang/String;
 
     if-nez v1, :cond_0
 
@@ -822,7 +822,7 @@
 
     new-instance v1, Ljava/io/File;
 
-    iget-object v0, p0, Lcom/android/server/engineer/bvj;->JD:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/server/engineer/bvj;->SD:Ljava/lang/String;
 
     invoke-direct {v1, v0}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
@@ -911,7 +911,7 @@
 
     if-eqz p1, :cond_0
 
-    invoke-direct {p0}, Lcom/android/server/engineer/bvj;->eo()V
+    invoke-direct {p0}, Lcom/android/server/engineer/bvj;->io()V
 
     invoke-virtual {p0, v0}, Lcom/android/server/engineer/bvj;->d(Z)Lcom/android/server/engineer/bvj$zta;
 
@@ -932,9 +932,9 @@
 .method protected zta(Lcom/android/server/engineer/bvj$zta;Lcom/android/server/engineer/bvj$zta;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/android/server/engineer/bvj;->ED:Lcom/android/server/engineer/bvj$zta;
+    iput-object p1, p0, Lcom/android/server/engineer/bvj;->OD:Lcom/android/server/engineer/bvj$zta;
 
-    iput-object p2, p0, Lcom/android/server/engineer/bvj;->FD:Lcom/android/server/engineer/bvj$zta;
+    iput-object p2, p0, Lcom/android/server/engineer/bvj;->PD:Lcom/android/server/engineer/bvj$zta;
 
     return-void
 .end method

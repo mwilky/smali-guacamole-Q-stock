@@ -31,7 +31,7 @@
 
 .field public static final enum UNKNOWN:Lcom/android/server/am/OnePlusBGController$AppBucketRanking;
 
-.field public static final enum Vka:Lcom/android/server/am/OnePlusBGController$AppBucketRanking;
+.field public static final enum gla:Lcom/android/server/am/OnePlusBGController$AppBucketRanking;
 
 
 # instance fields
@@ -76,7 +76,7 @@
 
     invoke-direct {v0, v4, v3, v5}, Lcom/android/server/am/OnePlusBGController$AppBucketRanking;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/android/server/am/OnePlusBGController$AppBucketRanking;->Vka:Lcom/android/server/am/OnePlusBGController$AppBucketRanking;
+    sput-object v0, Lcom/android/server/am/OnePlusBGController$AppBucketRanking;->gla:Lcom/android/server/am/OnePlusBGController$AppBucketRanking;
 
     new-instance v0, Lcom/android/server/am/OnePlusBGController$AppBucketRanking;
 
@@ -102,7 +102,7 @@
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/android/server/am/OnePlusBGController$AppBucketRanking;->Vka:Lcom/android/server/am/OnePlusBGController$AppBucketRanking;
+    sget-object v1, Lcom/android/server/am/OnePlusBGController$AppBucketRanking;->gla:Lcom/android/server/am/OnePlusBGController$AppBucketRanking;
 
     aput-object v1, v0, v3
 

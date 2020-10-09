@@ -18,15 +18,15 @@
 
 
 # instance fields
+.field Am:J
+
+.field Bm:J
+
 .field mTimeStamp:J
 
 .field mUid:I
 
 .field final synthetic this$0:Lcom/android/server/am/OnePlusBGController;
-
-.field um:J
-
-.field vm:J
 
 
 # direct methods
@@ -57,9 +57,9 @@
 
     iput-wide p3, p0, Lcom/android/server/am/OnePlusBGController$cno;->mTimeStamp:J
 
-    iput-wide p5, p0, Lcom/android/server/am/OnePlusBGController$cno;->um:J
+    iput-wide p5, p0, Lcom/android/server/am/OnePlusBGController$cno;->Am:J
 
-    iput-wide p7, p0, Lcom/android/server/am/OnePlusBGController$cno;->vm:J
+    iput-wide p7, p0, Lcom/android/server/am/OnePlusBGController$cno;->Bm:J
 
     return-void
 .end method
@@ -110,13 +110,13 @@
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-wide v2, p0, Lcom/android/server/am/OnePlusBGController$cno;->vm:J
+    iget-wide v2, p0, Lcom/android/server/am/OnePlusBGController$cno;->Bm:J
 
     invoke-virtual {v0, v2, v3}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-wide v1, p0, Lcom/android/server/am/OnePlusBGController$cno;->um:J
+    iget-wide v1, p0, Lcom/android/server/am/OnePlusBGController$cno;->Am:J
 
     invoke-virtual {v0, v1, v2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 

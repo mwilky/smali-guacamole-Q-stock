@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field private final oif:Landroid/net/Uri;
+.field private final ibl:Landroid/net/Uri;
 
 .field final synthetic this$0:Lcom/oneplus/android/server/alertslider/you;
 
@@ -38,7 +38,7 @@
 
     move-result-object p1
 
-    iput-object p1, p0, Lcom/oneplus/android/server/alertslider/you$zta;->oif:Landroid/net/Uri;
+    iput-object p1, p0, Lcom/oneplus/android/server/alertslider/you$zta;->ibl:Landroid/net/Uri;
 
     return-void
 .end method
@@ -58,7 +58,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/oneplus/android/server/alertslider/you$zta;->oif:Landroid/net/Uri;
+    iget-object v1, p0, Lcom/oneplus/android/server/alertslider/you$zta;->ibl:Landroid/net/Uri;
 
     const/4 v2, 0x0
 
@@ -101,7 +101,7 @@
     invoke-static {v0, p1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_0
-    iget-object p1, p0, Lcom/oneplus/android/server/alertslider/you$zta;->oif:Landroid/net/Uri;
+    iget-object p1, p0, Lcom/oneplus/android/server/alertslider/you$zta;->ibl:Landroid/net/Uri;
 
     invoke-virtual {p2, p1}, Landroid/net/Uri;->equals(Ljava/lang/Object;)Z
 

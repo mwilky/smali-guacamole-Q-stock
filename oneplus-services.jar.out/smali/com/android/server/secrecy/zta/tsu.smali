@@ -14,20 +14,12 @@
 # static fields
 .field private static TAG:Ljava/lang/String; = "SecrecyService.ResetCountDownTimer"
 
-.field private static jN:J = 0x15180L
+.field private static wN:J = 0x15180L
 
-.field private static kN:J = 0x278d00L
+.field private static xN:J = 0x278d00L
 
 
 # instance fields
-.field private final fN:Ljava/lang/String;
-
-.field private gN:Lcom/android/server/secrecy/zta/tsu$zta;
-
-.field private hN:J
-
-.field private iN:J
-
 .field private mAlarmIntent:Landroid/content/Intent;
 
 .field private mAlarmManager:Landroid/app/AlarmManager;
@@ -37,6 +29,14 @@
 .field private mPendingIntent:Landroid/app/PendingIntent;
 
 .field private final mPolicyManager:Lcom/android/server/secrecy/zta/sis;
+
+.field private final sN:Ljava/lang/String;
+
+.field private tN:Lcom/android/server/secrecy/zta/tsu$zta;
+
+.field private uN:J
+
+.field private vN:J
 
 
 # direct methods
@@ -71,41 +71,41 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/server/secrecy/zta/tsu;->fN:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/server/secrecy/zta/tsu;->sN:Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/server/secrecy/zta/tsu;->mContext:Landroid/content/Context;
 
     iput-object p2, p0, Lcom/android/server/secrecy/zta/tsu;->mPolicyManager:Lcom/android/server/secrecy/zta/sis;
 
-    invoke-direct {p0}, Lcom/android/server/secrecy/zta/tsu;->Uo()V
+    invoke-direct {p0}, Lcom/android/server/secrecy/zta/tsu;->Yo()V
 
     return-void
 .end method
 
-.method private Uo()V
+.method private Yo()V
     .locals 4
 
     new-instance v0, Lcom/android/server/secrecy/zta/tsu$zta;
 
     invoke-direct {v0, p0, p0}, Lcom/android/server/secrecy/zta/tsu$zta;-><init>(Lcom/android/server/secrecy/zta/tsu;Lcom/android/server/secrecy/zta/tsu;)V
 
-    iput-object v0, p0, Lcom/android/server/secrecy/zta/tsu;->gN:Lcom/android/server/secrecy/zta/tsu$zta;
+    iput-object v0, p0, Lcom/android/server/secrecy/zta/tsu;->tN:Lcom/android/server/secrecy/zta/tsu$zta;
 
     new-instance v0, Landroid/content/IntentFilter;
 
-    iget-object v1, p0, Lcom/android/server/secrecy/zta/tsu;->fN:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/server/secrecy/zta/tsu;->sN:Ljava/lang/String;
 
     invoke-direct {v0, v1}, Landroid/content/IntentFilter;-><init>(Ljava/lang/String;)V
 
     iget-object v1, p0, Lcom/android/server/secrecy/zta/tsu;->mContext:Landroid/content/Context;
 
-    iget-object v2, p0, Lcom/android/server/secrecy/zta/tsu;->gN:Lcom/android/server/secrecy/zta/tsu$zta;
+    iget-object v2, p0, Lcom/android/server/secrecy/zta/tsu;->tN:Lcom/android/server/secrecy/zta/tsu$zta;
 
     invoke-virtual {v1, v2, v0}, Landroid/content/Context;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
 
     new-instance v0, Landroid/content/Intent;
 
-    iget-object v1, p0, Lcom/android/server/secrecy/zta/tsu;->fN:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/server/secrecy/zta/tsu;->sN:Ljava/lang/String;
 
     invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
@@ -135,9 +135,9 @@
 
     iput-object v0, p0, Lcom/android/server/secrecy/zta/tsu;->mAlarmManager:Landroid/app/AlarmManager;
 
-    sget-wide v0, Lcom/android/server/secrecy/zta/tsu;->jN:J
+    sget-wide v0, Lcom/android/server/secrecy/zta/tsu;->wN:J
 
-    sget-wide v2, Lcom/android/server/secrecy/zta/tsu;->kN:J
+    sget-wide v2, Lcom/android/server/secrecy/zta/tsu;->xN:J
 
     invoke-virtual {p0, v0, v1, v2, v3}, Lcom/android/server/secrecy/zta/tsu;->you(JJ)V
 
@@ -154,7 +154,7 @@
 
 
 # virtual methods
-.method public Id()Lcom/android/server/secrecy/zta/sis;
+.method public Jd()Lcom/android/server/secrecy/zta/sis;
     .locals 0
 
     iget-object p0, p0, Lcom/android/server/secrecy/zta/tsu;->mPolicyManager:Lcom/android/server/secrecy/zta/sis;
@@ -173,7 +173,7 @@
 
     if-eqz v0, :cond_0
 
-    iget-wide p0, p0, Lcom/android/server/secrecy/zta/tsu;->iN:J
+    iget-wide p0, p0, Lcom/android/server/secrecy/zta/tsu;->vN:J
 
     return-wide p0
 
@@ -186,7 +186,7 @@
 
     if-eqz p1, :cond_1
 
-    iget-wide p0, p0, Lcom/android/server/secrecy/zta/tsu;->hN:J
+    iget-wide p0, p0, Lcom/android/server/secrecy/zta/tsu;->uN:J
 
     return-wide p0
 
@@ -251,9 +251,9 @@
 .method public you(JJ)V
     .locals 0
 
-    iput-wide p1, p0, Lcom/android/server/secrecy/zta/tsu;->iN:J
+    iput-wide p1, p0, Lcom/android/server/secrecy/zta/tsu;->vN:J
 
-    iput-wide p3, p0, Lcom/android/server/secrecy/zta/tsu;->hN:J
+    iput-wide p3, p0, Lcom/android/server/secrecy/zta/tsu;->uN:J
 
     sget-object p1, Lcom/android/server/secrecy/zta/tsu;->TAG:Ljava/lang/String;
 
@@ -265,7 +265,7 @@
 
     invoke-virtual {p2, p3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-wide p3, p0, Lcom/android/server/secrecy/zta/tsu;->iN:J
+    iget-wide p3, p0, Lcom/android/server/secrecy/zta/tsu;->vN:J
 
     invoke-virtual {p2, p3, p4}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
@@ -285,7 +285,7 @@
 
     invoke-virtual {p2, p3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-wide p3, p0, Lcom/android/server/secrecy/zta/tsu;->hN:J
+    iget-wide p3, p0, Lcom/android/server/secrecy/zta/tsu;->uN:J
 
     invoke-virtual {p2, p3, p4}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
@@ -337,7 +337,7 @@
 
     invoke-virtual {p3, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-wide v0, p0, Lcom/android/server/secrecy/zta/tsu;->iN:J
+    iget-wide v0, p0, Lcom/android/server/secrecy/zta/tsu;->vN:J
 
     invoke-virtual {p3, v0, v1}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
@@ -357,7 +357,7 @@
 
     invoke-virtual {p1, p3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-wide v0, p0, Lcom/android/server/secrecy/zta/tsu;->hN:J
+    iget-wide v0, p0, Lcom/android/server/secrecy/zta/tsu;->uN:J
 
     invoke-virtual {p1, v0, v1}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 

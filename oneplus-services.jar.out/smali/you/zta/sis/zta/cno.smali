@@ -42,9 +42,6 @@
     return p0
 .end method
 
-.method public abstract fk()Lyou/zta/sis/zta/cno;
-.end method
-
 .method public getEncoded()[B
     .locals 1
 
@@ -70,30 +67,10 @@
 .method public abstract getFieldSize()I
 .end method
 
-.method public abstract gk()Ljava/lang/String;
+.method public abstract hk()Lyou/zta/sis/zta/cno;
 .end method
 
-.method public hk()Z
-    .locals 1
-
-    invoke-virtual {p0}, Lyou/zta/sis/zta/cno;->bitLength()I
-
-    move-result p0
-
-    const/4 v0, 0x1
-
-    if-ne p0, v0, :cond_0
-
-    goto :goto_0
-
-    :cond_0
-    const/4 v0, 0x0
-
-    :goto_0
-    return v0
-.end method
-
-.method public abstract ik()Lyou/zta/sis/zta/cno;
+.method public abstract ik()Ljava/lang/String;
 .end method
 
 .method public abstract invert()Lyou/zta/sis/zta/cno;
@@ -124,6 +101,29 @@
 .end method
 
 .method public jk()Z
+    .locals 1
+
+    invoke-virtual {p0}, Lyou/zta/sis/zta/cno;->bitLength()I
+
+    move-result p0
+
+    const/4 v0, 0x1
+
+    if-ne p0, v0, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    :goto_0
+    return v0
+.end method
+
+.method public abstract kk()Lyou/zta/sis/zta/cno;
+.end method
+
+.method public lk()Z
     .locals 1
 
     invoke-virtual {p0}, Lyou/zta/sis/zta/cno;->toBigInteger()Ljava/math/BigInteger;

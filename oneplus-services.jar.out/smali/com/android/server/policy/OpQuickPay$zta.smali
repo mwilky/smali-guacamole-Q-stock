@@ -15,17 +15,17 @@
 
 
 # instance fields
-.field OG:Ljava/lang/String;
-
-.field PG:Ljava/lang/String;
-
-.field QG:Z
-
-.field RG:Ljava/lang/String;
+.field aH:Ljava/lang/String;
 
 .field appIcon:Landroid/graphics/drawable/Drawable;
 
+.field bH:Ljava/lang/String;
+
+.field cH:Z
+
 .field className:Ljava/lang/String;
+
+.field dH:Ljava/lang/String;
 
 .field index:I
 
@@ -46,7 +46,7 @@
 
     const/4 p1, 0x0
 
-    iput-boolean p1, p0, Lcom/android/server/policy/OpQuickPay$zta;->QG:Z
+    iput-boolean p1, p0, Lcom/android/server/policy/OpQuickPay$zta;->cH:Z
 
     iput-boolean p1, p0, Lcom/android/server/policy/OpQuickPay$zta;->isDefault:Z
 

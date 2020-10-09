@@ -4,27 +4,27 @@
 
 
 # static fields
-.field public static final Ava:I = 0x4
+.field public static final Gva:I = 0x80
 
-.field public static final Bva:I = 0x2
+.field public static final Hva:I = 0x40
 
-.field public static final Cva:I = 0x1
+.field public static final Iva:I = 0x20
 
-.field public static final Dva:I = 0x8000
+.field public static final Jva:I = 0x10
 
-.field public static final vva:I = 0x80
+.field public static final Kva:I = 0x8
 
-.field public static final wva:I = 0x40
+.field public static final Lva:I = 0x4
 
-.field public static final xva:I = 0x20
+.field public static final Mva:I = 0x2
 
-.field public static final yva:I = 0x10
+.field public static final Nva:I = 0x1
 
-.field public static final zva:I = 0x8
+.field public static final Ova:I = 0x8000
 
 
 # instance fields
-.field private uva:Lorg/bouncycastle/asn1/n;
+.field private Fva:Lorg/bouncycastle/asn1/n;
 
 
 # direct methods
@@ -37,7 +37,7 @@
 
     invoke-direct {v0, p1}, Lorg/bouncycastle/asn1/n;-><init>(I)V
 
-    iput-object v0, p0, Lorg/bouncycastle/asn1/x509/fto;->uva:Lorg/bouncycastle/asn1/n;
+    iput-object v0, p0, Lorg/bouncycastle/asn1/x509/fto;->Fva:Lorg/bouncycastle/asn1/n;
 
     return-void
 .end method
@@ -47,7 +47,7 @@
 
     invoke-direct {p0}, Lorg/bouncycastle/asn1/oif;-><init>()V
 
-    iput-object p1, p0, Lorg/bouncycastle/asn1/x509/fto;->uva:Lorg/bouncycastle/asn1/n;
+    iput-object p1, p0, Lorg/bouncycastle/asn1/x509/fto;->Fva:Lorg/bouncycastle/asn1/n;
 
     return-void
 .end method
@@ -100,12 +100,12 @@
 
 
 # virtual methods
-.method public Gg()I
+.method public Ig()I
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/asn1/x509/fto;->uva:Lorg/bouncycastle/asn1/n;
+    iget-object p0, p0, Lorg/bouncycastle/asn1/x509/fto;->Fva:Lorg/bouncycastle/asn1/n;
 
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/sis;->Gg()I
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/sis;->Ig()I
 
     move-result p0
 
@@ -115,7 +115,7 @@
 .method public ea(I)Z
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/asn1/x509/fto;->uva:Lorg/bouncycastle/asn1/n;
+    iget-object p0, p0, Lorg/bouncycastle/asn1/x509/fto;->Fva:Lorg/bouncycastle/asn1/n;
 
     invoke-virtual {p0}, Lorg/bouncycastle/asn1/sis;->intValue()I
 
@@ -139,7 +139,7 @@
 .method public getBytes()[B
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/asn1/x509/fto;->uva:Lorg/bouncycastle/asn1/n;
+    iget-object p0, p0, Lorg/bouncycastle/asn1/x509/fto;->Fva:Lorg/bouncycastle/asn1/n;
 
     invoke-virtual {p0}, Lorg/bouncycastle/asn1/sis;->getBytes()[B
 
@@ -151,7 +151,7 @@
 .method public toASN1Primitive()Lorg/bouncycastle/asn1/vdb;
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/asn1/x509/fto;->uva:Lorg/bouncycastle/asn1/n;
+    iget-object p0, p0, Lorg/bouncycastle/asn1/x509/fto;->Fva:Lorg/bouncycastle/asn1/n;
 
     return-object p0
 .end method
@@ -159,7 +159,7 @@
 .method public toString()Ljava/lang/String;
     .locals 4
 
-    iget-object p0, p0, Lorg/bouncycastle/asn1/x509/fto;->uva:Lorg/bouncycastle/asn1/n;
+    iget-object p0, p0, Lorg/bouncycastle/asn1/x509/fto;->Fva:Lorg/bouncycastle/asn1/n;
 
     invoke-virtual {p0}, Lorg/bouncycastle/asn1/sis;->getBytes()[B
 

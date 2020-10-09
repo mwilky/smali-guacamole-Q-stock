@@ -10,15 +10,15 @@
 
 .field public static final SRGB:I = 0x7
 
-.field public static final YIa:I = 0x2
+.field public static final iJa:I = 0x2
 
-.field public static final ZIa:I = 0x3
+.field public static final jJa:I = 0x3
 
-.field public static final _Ia:I = 0x4
+.field public static final kJa:I = 0x4
 
-.field public static final aJa:I = 0x5
+.field public static final lJa:I = 0x5
 
-.field public static final bJa:I = 0x6
+.field public static final mJa:I = 0x6
 
 
 # direct methods

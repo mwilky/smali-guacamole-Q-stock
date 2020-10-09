@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field public Dx:Ljava/util/ArrayList;
+.field public Mx:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/ArrayList<",
@@ -25,9 +25,9 @@
     .end annotation
 .end field
 
-.field public Ex:Lcom/android/server/am/v$zta;
+.field public Nx:Lcom/android/server/am/v$zta;
 
-.field public Fx:D
+.field public Ox:D
 
 .field public mId:I
 
@@ -44,7 +44,7 @@
 
     invoke-direct {p1}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object p1, p0, Lcom/android/server/am/v$you;->Dx:Ljava/util/ArrayList;
+    iput-object p1, p0, Lcom/android/server/am/v$you;->Mx:Ljava/util/ArrayList;
 
     return-void
 .end method
@@ -54,7 +54,7 @@
 .method public clear()V
     .locals 0
 
-    iget-object p0, p0, Lcom/android/server/am/v$you;->Dx:Ljava/util/ArrayList;
+    iget-object p0, p0, Lcom/android/server/am/v$you;->Mx:Ljava/util/ArrayList;
 
     invoke-virtual {p0}, Ljava/util/ArrayList;->clear()V
 
@@ -88,7 +88,7 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    iget-object v2, p0, Lcom/android/server/am/v$you;->Ex:Lcom/android/server/am/v$zta;
+    iget-object v2, p0, Lcom/android/server/am/v$you;->Nx:Lcom/android/server/am/v$zta;
 
     invoke-virtual {v2}, Lcom/android/server/am/v$zta;->dump()V
 
@@ -100,7 +100,7 @@
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-wide v3, p0, Lcom/android/server/am/v$you;->Fx:D
+    iget-wide v3, p0, Lcom/android/server/am/v$you;->Ox:D
 
     invoke-virtual {v2, v3, v4}, Ljava/lang/StringBuilder;->append(D)Ljava/lang/StringBuilder;
 
@@ -114,7 +114,7 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    iget-object p0, p0, Lcom/android/server/am/v$you;->Dx:Ljava/util/ArrayList;
+    iget-object p0, p0, Lcom/android/server/am/v$you;->Mx:Ljava/util/ArrayList;
 
     invoke-virtual {p0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
@@ -151,15 +151,15 @@
     return p0
 .end method
 
-.method public lc()Lcom/android/server/am/v$zta;
+.method public mc()Lcom/android/server/am/v$zta;
     .locals 0
 
-    iget-object p0, p0, Lcom/android/server/am/v$you;->Ex:Lcom/android/server/am/v$zta;
+    iget-object p0, p0, Lcom/android/server/am/v$you;->Nx:Lcom/android/server/am/v$zta;
 
     return-object p0
 .end method
 
-.method public mc()Ljava/util/ArrayList;
+.method public nc()Ljava/util/ArrayList;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -170,7 +170,7 @@
         }
     .end annotation
 
-    iget-object p0, p0, Lcom/android/server/am/v$you;->Dx:Ljava/util/ArrayList;
+    iget-object p0, p0, Lcom/android/server/am/v$you;->Mx:Ljava/util/ArrayList;
 
     return-object p0
 .end method
@@ -186,7 +186,7 @@
         }
     .end annotation
 
-    iput-object p1, p0, Lcom/android/server/am/v$you;->Dx:Ljava/util/ArrayList;
+    iput-object p1, p0, Lcom/android/server/am/v$you;->Mx:Ljava/util/ArrayList;
 
     return-void
 .end method
@@ -194,7 +194,7 @@
 .method public zta(Lcom/android/server/am/v$bio;)V
     .locals 0
 
-    iget-object p0, p0, Lcom/android/server/am/v$you;->Dx:Ljava/util/ArrayList;
+    iget-object p0, p0, Lcom/android/server/am/v$you;->Mx:Ljava/util/ArrayList;
 
     invoke-virtual {p0, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
@@ -204,7 +204,7 @@
 .method public zta(Lcom/android/server/am/v$zta;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/android/server/am/v$you;->Ex:Lcom/android/server/am/v$zta;
+    iput-object p1, p0, Lcom/android/server/am/v$you;->Nx:Lcom/android/server/am/v$zta;
 
     return-void
 .end method

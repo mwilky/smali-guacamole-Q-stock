@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/server/sis/vdb;->ep()V
+    value = Lcom/android/server/sis/vdb;->ip()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -262,7 +262,7 @@
 
     if-nez v0, :cond_6
 
-    invoke-static {}, Lcom/android/server/sis/vdb;->sc()Ljava/util/ArrayList;
+    invoke-static {}, Lcom/android/server/sis/vdb;->tc()Ljava/util/ArrayList;
 
     move-result-object v0
 

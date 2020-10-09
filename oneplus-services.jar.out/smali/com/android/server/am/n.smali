@@ -22,8 +22,6 @@
 
 .field private static final DBG:Z
 
-.field private static final J:Ljava/lang/String; = "pkgName"
-
 .field private static final STATE_OFF:I = 0x0
 
 .field private static final STATE_ON:I = 0x1
@@ -32,39 +30,41 @@
 
 .field private static final TAG:Ljava/lang/String; = "OpAntiBurnController"
 
-.field private static final gx:Ljava/lang/String; = "projectname"
+.field private static final aa:Ljava/lang/String; = "pkgName"
 
-.field private static final hx:Ljava/lang/String; = "content"
+.field private static final px:Ljava/lang/String; = "projectname"
 
-.field private static final ix:Ljava/lang/String; = "configs"
+.field private static final qx:Ljava/lang/String; = "content"
 
-.field private static final jx:Ljava/lang/String; = "OnePlus.ForceDark.Global.Config.DEFAULT"
+.field private static final rx:Ljava/lang/String; = "configs"
 
-.field private static final kx:Ljava/lang/String; = "sysVersionCode"
+.field private static final sx:Ljava/lang/String; = "OnePlus.ForceDark.Global.Config.DEFAULT"
 
-.field private static final lx:Ljava/lang/String; = "sysVersionDesc"
+.field private static final tx:Ljava/lang/String; = "sysVersionCode"
 
-.field private static final mx:Ljava/lang/String; = "privileged"
+.field private static final ux:Ljava/lang/String; = "sysVersionDesc"
 
-.field private static final nx:Ljava/lang/String; = "fallback"
+.field private static final vx:Ljava/lang/String; = "privileged"
 
-.field private static final ox:Ljava/lang/String; = "enable"
+.field private static final wx:Ljava/lang/String; = "fallback"
 
-.field private static final px:Ljava/lang/String; = "compatVers"
+.field private static final xx:Ljava/lang/String; = "enable"
 
-.field private static final qx:Ljava/lang/String; = "specialActions"
+.field private static final yx:Ljava/lang/String; = "compatVers"
+
+.field private static final zx:Ljava/lang/String; = "specialActions"
 
 
 # instance fields
-.field private Yw:Lcom/android/server/am/ActivityManagerService;
+.field private gx:Lcom/android/server/am/ActivityManagerService;
 
-.field private Zw:Z
+.field private hx:Z
 
-.field private _w:I
+.field private ix:I
 
-.field private ax:Ljava/lang/String;
+.field private jx:Ljava/lang/String;
 
-.field private final bx:Ljava/util/HashSet;
+.field private final kx:Ljava/util/HashSet;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/HashSet<",
@@ -74,11 +74,19 @@
     .end annotation
 .end field
 
-.field private final cx:Lcom/android/server/am/n$zta;
+.field private final lx:Lcom/android/server/am/n$zta;
 
-.field private final dx:Lcom/android/server/am/n$you;
+.field private mContext:Landroid/content/Context;
 
-.field private final ex:Ljava/util/HashMap;
+.field private mHandler:Landroid/os/Handler;
+
+.field private mIsInit:Z
+
+.field private mPM:Landroid/content/pm/IPackageManager;
+
+.field private final mx:Lcom/android/server/am/n$you;
+
+.field private final nx:Ljava/util/HashMap;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/HashMap<",
@@ -89,7 +97,7 @@
     .end annotation
 .end field
 
-.field private final fx:Landroid/util/LruCache;
+.field private final ox:Landroid/util/LruCache;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Landroid/util/LruCache<",
@@ -99,14 +107,6 @@
         }
     .end annotation
 .end field
-
-.field private mContext:Landroid/content/Context;
-
-.field private mHandler:Landroid/os/Handler;
-
-.field private mIsInit:Z
-
-.field private mPM:Landroid/content/pm/IPackageManager;
 
 
 # direct methods
@@ -127,35 +127,35 @@
 
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/android/server/am/n;->Zw:Z
+    iput-boolean v0, p0, Lcom/android/server/am/n;->hx:Z
 
     iput-boolean v0, p0, Lcom/android/server/am/n;->mIsInit:Z
 
-    iput v0, p0, Lcom/android/server/am/n;->_w:I
+    iput v0, p0, Lcom/android/server/am/n;->ix:I
 
     new-instance v0, Lcom/android/server/am/OpAntiBurnController$1;
 
     invoke-direct {v0, p0}, Lcom/android/server/am/OpAntiBurnController$1;-><init>(Lcom/android/server/am/n;)V
 
-    iput-object v0, p0, Lcom/android/server/am/n;->bx:Ljava/util/HashSet;
+    iput-object v0, p0, Lcom/android/server/am/n;->kx:Ljava/util/HashSet;
 
     new-instance v0, Lcom/android/server/am/n$zta;
 
     invoke-direct {v0, p0}, Lcom/android/server/am/n$zta;-><init>(Lcom/android/server/am/n;)V
 
-    iput-object v0, p0, Lcom/android/server/am/n;->cx:Lcom/android/server/am/n$zta;
+    iput-object v0, p0, Lcom/android/server/am/n;->lx:Lcom/android/server/am/n$zta;
 
     new-instance v0, Lcom/android/server/am/n$you;
 
     invoke-direct {v0, p0}, Lcom/android/server/am/n$you;-><init>(Lcom/android/server/am/n;)V
 
-    iput-object v0, p0, Lcom/android/server/am/n;->dx:Lcom/android/server/am/n$you;
+    iput-object v0, p0, Lcom/android/server/am/n;->mx:Lcom/android/server/am/n$you;
 
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    iput-object v0, p0, Lcom/android/server/am/n;->ex:Ljava/util/HashMap;
+    iput-object v0, p0, Lcom/android/server/am/n;->nx:Ljava/util/HashMap;
 
     new-instance v0, Landroid/util/LruCache;
 
@@ -163,7 +163,7 @@
 
     invoke-direct {v0, v1}, Landroid/util/LruCache;-><init>(I)V
 
-    iput-object v0, p0, Lcom/android/server/am/n;->fx:Landroid/util/LruCache;
+    iput-object v0, p0, Lcom/android/server/am/n;->ox:Landroid/util/LruCache;
 
     return-void
 .end method
@@ -209,7 +209,7 @@
     return-void
 .end method
 
-.method private Jn()V
+.method private Mn()V
     .locals 7
 
     const-string v0, "OpAntiBurnController"
@@ -219,7 +219,7 @@
     invoke-direct {v1}, Lorg/json/JSONArray;-><init>()V
 
     :try_start_0
-    invoke-direct {p0}, Lcom/android/server/am/n;->Ln()Ljava/lang/String;
+    invoke-direct {p0}, Lcom/android/server/am/n;->On()Ljava/lang/String;
 
     move-result-object v2
 
@@ -332,13 +332,13 @@
     return-void
 .end method
 
-.method private Kn()V
+.method private Nn()V
     .locals 6
 
     const-string v0, "OpAntiBurnController"
 
     :try_start_0
-    invoke-direct {p0}, Lcom/android/server/am/n;->Ln()Ljava/lang/String;
+    invoke-direct {p0}, Lcom/android/server/am/n;->On()Ljava/lang/String;
 
     move-result-object v1
 
@@ -383,7 +383,7 @@
 
     move-result v1
 
-    iput v1, p0, Lcom/android/server/am/n;->_w:I
+    iput v1, p0, Lcom/android/server/am/n;->ix:I
 
     const-string v1, "sysVersionDesc"
 
@@ -391,7 +391,7 @@
 
     move-result-object v1
 
-    iput-object v1, p0, Lcom/android/server/am/n;->ax:Ljava/lang/String;
+    iput-object v1, p0, Lcom/android/server/am/n;->jx:Ljava/lang/String;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -401,7 +401,7 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget v2, p0, Lcom/android/server/am/n;->_w:I
+    iget v2, p0, Lcom/android/server/am/n;->ix:I
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -409,7 +409,7 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object p0, p0, Lcom/android/server/am/n;->ax:Ljava/lang/String;
+    iget-object p0, p0, Lcom/android/server/am/n;->jx:Ljava/lang/String;
 
     invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -456,7 +456,7 @@
     return-void
 .end method
 
-.method private Ln()Ljava/lang/String;
+.method private On()Ljava/lang/String;
     .locals 5
 
     const-string v0, "OpAntiBurnController"
@@ -720,7 +720,7 @@
 
     move-result-object p1
 
-    iget-boolean v0, p0, Lcom/android/server/am/n;->Zw:Z
+    iget-boolean v0, p0, Lcom/android/server/am/n;->hx:Z
 
     const/4 v1, 0x1
 
@@ -741,7 +741,7 @@
 
     invoke-static {v2, p1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    invoke-direct {p0}, Lcom/android/server/am/n;->Jn()V
+    invoke-direct {p0}, Lcom/android/server/am/n;->Mn()V
 
     return-void
 
@@ -762,7 +762,7 @@
 
     invoke-static {v2, p1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    iput-boolean v1, p0, Lcom/android/server/am/n;->Zw:Z
+    iput-boolean v1, p0, Lcom/android/server/am/n;->hx:Z
 
     :cond_3
     return-void
@@ -771,7 +771,7 @@
 .method private Sb(Ljava/lang/String;)Z
     .locals 0
 
-    iget-object p0, p0, Lcom/android/server/am/n;->ex:Ljava/util/HashMap;
+    iget-object p0, p0, Lcom/android/server/am/n;->nx:Ljava/util/HashMap;
 
     invoke-virtual {p0, p1}, Ljava/util/HashMap;->containsKey(Ljava/lang/Object;)Z
 
@@ -817,7 +817,7 @@
 
     if-eqz v3, :cond_0
 
-    iget-object p1, p0, Lcom/android/server/am/n;->cx:Lcom/android/server/am/n$zta;
+    iget-object p1, p0, Lcom/android/server/am/n;->lx:Lcom/android/server/am/n$zta;
 
     invoke-virtual {p1, v2}, Lcom/android/server/am/n$zta;->zta(Lorg/json/JSONObject;)Z
 
@@ -829,9 +829,9 @@
 
     invoke-virtual {p1, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lcom/android/server/am/n;->cx:Lcom/android/server/am/n$zta;
+    iget-object v1, p0, Lcom/android/server/am/n;->lx:Lcom/android/server/am/n$zta;
 
-    invoke-virtual {v1}, Lcom/android/server/am/n$zta;->fc()Ljava/lang/String;
+    invoke-virtual {v1}, Lcom/android/server/am/n$zta;->hc()Ljava/lang/String;
 
     move-result-object v1
 
@@ -976,7 +976,7 @@
     return-void
 
     :cond_0
-    iget-object v2, p0, Lcom/android/server/am/n;->ex:Ljava/util/HashMap;
+    iget-object v2, p0, Lcom/android/server/am/n;->nx:Ljava/util/HashMap;
 
     invoke-virtual {v2}, Ljava/util/HashMap;->clear()V
 
@@ -1004,7 +1004,7 @@
 
     if-eqz v3, :cond_1
 
-    iget-object v3, p0, Lcom/android/server/am/n;->ex:Ljava/util/HashMap;
+    iget-object v3, p0, Lcom/android/server/am/n;->nx:Ljava/util/HashMap;
 
     invoke-virtual {v4}, Lcom/android/server/am/n$zta;->Za()Ljava/lang/String;
 
@@ -1021,7 +1021,7 @@
 
     invoke-virtual {v3, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v4}, Lcom/android/server/am/n$zta;->fc()Ljava/lang/String;
+    invoke-virtual {v4}, Lcom/android/server/am/n$zta;->hc()Ljava/lang/String;
 
     move-result-object v4
 
@@ -1055,7 +1055,7 @@
     :goto_1
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object p0, p0, Lcom/android/server/am/n;->ex:Ljava/util/HashMap;
+    iget-object p0, p0, Lcom/android/server/am/n;->nx:Ljava/util/HashMap;
 
     invoke-virtual {p0}, Ljava/util/HashMap;->size()I
 
@@ -1131,7 +1131,7 @@
 
     invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object p0, p0, Lcom/android/server/am/n;->ex:Ljava/util/HashMap;
+    iget-object p0, p0, Lcom/android/server/am/n;->nx:Ljava/util/HashMap;
 
     invoke-virtual {p0}, Ljava/util/HashMap;->size()I
 
@@ -1166,7 +1166,7 @@
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iget-object v1, p0, Lcom/android/server/am/n;->Yw:Lcom/android/server/am/ActivityManagerService;
+    iget-object v1, p0, Lcom/android/server/am/n;->gx:Lcom/android/server/am/ActivityManagerService;
 
     if-eqz v1, :cond_3
 
@@ -1183,7 +1183,7 @@
 
     :goto_0
     :try_start_0
-    iget-object v2, p0, Lcom/android/server/am/n;->Yw:Lcom/android/server/am/ActivityManagerService;
+    iget-object v2, p0, Lcom/android/server/am/n;->gx:Lcom/android/server/am/ActivityManagerService;
 
     iget-object v2, v2, Lcom/android/server/am/ActivityManagerService;->mPidsSelfLocked:Lcom/android/server/am/ActivityManagerService$PidMap;
 
@@ -1193,7 +1193,7 @@
 
     if-ge v1, v2, :cond_3
 
-    iget-object v2, p0, Lcom/android/server/am/n;->Yw:Lcom/android/server/am/ActivityManagerService;
+    iget-object v2, p0, Lcom/android/server/am/n;->gx:Lcom/android/server/am/ActivityManagerService;
 
     iget-object v2, v2, Lcom/android/server/am/ActivityManagerService;->mPidsSelfLocked:Lcom/android/server/am/ActivityManagerService$PidMap;
 
@@ -1273,12 +1273,12 @@
 .method private rtg(Ljava/lang/String;Z)Lcom/android/server/am/n$zta;
     .locals 2
 
-    iget-object v0, p0, Lcom/android/server/am/n;->fx:Landroid/util/LruCache;
+    iget-object v0, p0, Lcom/android/server/am/n;->ox:Landroid/util/LruCache;
 
     monitor-enter v0
 
     :try_start_0
-    iget-object v1, p0, Lcom/android/server/am/n;->fx:Landroid/util/LruCache;
+    iget-object v1, p0, Lcom/android/server/am/n;->ox:Landroid/util/LruCache;
 
     invoke-virtual {v1, p1}, Landroid/util/LruCache;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -1290,7 +1290,7 @@
 
     if-eqz p2, :cond_0
 
-    iget-object p2, p0, Lcom/android/server/am/n;->fx:Landroid/util/LruCache;
+    iget-object p2, p0, Lcom/android/server/am/n;->ox:Landroid/util/LruCache;
 
     invoke-virtual {p2, p1}, Landroid/util/LruCache;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -1303,7 +1303,7 @@
     :cond_0
     if-nez v1, :cond_1
 
-    iget-object p2, p0, Lcom/android/server/am/n;->ex:Ljava/util/HashMap;
+    iget-object p2, p0, Lcom/android/server/am/n;->nx:Ljava/util/HashMap;
 
     invoke-virtual {p2, p1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -1316,7 +1316,7 @@
     :cond_1
     if-nez v1, :cond_2
 
-    iget-object p0, p0, Lcom/android/server/am/n;->cx:Lcom/android/server/am/n$zta;
+    iget-object p0, p0, Lcom/android/server/am/n;->lx:Lcom/android/server/am/n$zta;
 
     invoke-virtual {p0}, Lcom/android/server/am/n$zta;->clone()Lcom/android/server/am/n$zta;
 
@@ -1367,7 +1367,7 @@
 .method static synthetic you(Lcom/android/server/am/n;)Lcom/android/server/am/n$you;
     .locals 0
 
-    iget-object p0, p0, Lcom/android/server/am/n;->dx:Lcom/android/server/am/n$you;
+    iget-object p0, p0, Lcom/android/server/am/n;->mx:Lcom/android/server/am/n$you;
 
     return-object p0
 .end method
@@ -1375,7 +1375,7 @@
 .method static synthetic zta(Lcom/android/server/am/n;)Lcom/android/server/am/ActivityManagerService;
     .locals 0
 
-    iget-object p0, p0, Lcom/android/server/am/n;->Yw:Lcom/android/server/am/ActivityManagerService;
+    iget-object p0, p0, Lcom/android/server/am/n;->gx:Lcom/android/server/am/ActivityManagerService;
 
     return-object p0
 .end method
@@ -1393,7 +1393,7 @@
 .method private zta(Lcom/android/server/am/n$zta;I)V
     .locals 2
 
-    iget-object v0, p0, Lcom/android/server/am/n;->Yw:Lcom/android/server/am/ActivityManagerService;
+    iget-object v0, p0, Lcom/android/server/am/n;->gx:Lcom/android/server/am/ActivityManagerService;
 
     if-eqz v0, :cond_0
 
@@ -1419,7 +1419,7 @@
 
     invoke-static {v1, v0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    iget-object v0, p0, Lcom/android/server/am/n;->Yw:Lcom/android/server/am/ActivityManagerService;
+    iget-object v0, p0, Lcom/android/server/am/n;->gx:Lcom/android/server/am/ActivityManagerService;
 
     iget-object v0, v0, Lcom/android/server/am/ActivityManagerService;->mBgHandler:Landroid/os/Handler;
 
@@ -1680,11 +1680,11 @@
 
     iput-object p3, p0, Lcom/android/server/am/n;->mPM:Landroid/content/pm/IPackageManager;
 
-    iput-object p1, p0, Lcom/android/server/am/n;->Yw:Lcom/android/server/am/ActivityManagerService;
+    iput-object p1, p0, Lcom/android/server/am/n;->gx:Lcom/android/server/am/ActivityManagerService;
 
     new-instance p1, Lcom/android/server/am/n$tsu;
 
-    iget-object p2, p0, Lcom/android/server/am/n;->Yw:Lcom/android/server/am/ActivityManagerService;
+    iget-object p2, p0, Lcom/android/server/am/n;->gx:Lcom/android/server/am/ActivityManagerService;
 
     iget-object p2, p2, Lcom/android/server/am/ActivityManagerService;->mBgHandler:Landroid/os/Handler;
 
@@ -1696,19 +1696,19 @@
 
     iput-object p1, p0, Lcom/android/server/am/n;->mHandler:Landroid/os/Handler;
 
-    iget-object p1, p0, Lcom/android/server/am/n;->cx:Lcom/android/server/am/n$zta;
+    iget-object p1, p0, Lcom/android/server/am/n;->lx:Lcom/android/server/am/n$zta;
 
     const-string p2, "OnePlus.ForceDark.Global.Config.DEFAULT"
 
     invoke-virtual {p1, p2}, Lcom/android/server/am/n$zta;->u(Ljava/lang/String;)V
 
-    iget-object p1, p0, Lcom/android/server/am/n;->dx:Lcom/android/server/am/n$you;
+    iget-object p1, p0, Lcom/android/server/am/n;->mx:Lcom/android/server/am/n$you;
 
     const/4 p2, 0x1
 
-    iput-boolean p2, p1, Lcom/android/server/am/n$you;->Tw:Z
+    iput-boolean p2, p1, Lcom/android/server/am/n$you;->bx:Z
 
-    invoke-direct {p0}, Lcom/android/server/am/n;->Kn()V
+    invoke-direct {p0}, Lcom/android/server/am/n;->Nn()V
 
     invoke-direct {p0}, Lcom/android/server/am/n;->initOnlineConfig()V
 

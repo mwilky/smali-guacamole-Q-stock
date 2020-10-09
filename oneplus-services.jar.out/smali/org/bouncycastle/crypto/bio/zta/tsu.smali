@@ -4,9 +4,9 @@
 
 
 # static fields
-.field private static final kDa:I = -0x1f000000
+.field private static final vDa:I = -0x1f000000
 
-.field private static final lDa:J = -0x1f00000000000000L
+.field private static final wDa:J = -0x1f00000000000000L
 
 
 # direct methods
@@ -240,7 +240,21 @@
     return-void
 .end method
 
-.method public static mj()[B
+.method public static oif([B)[J
+    .locals 2
+
+    const/4 v0, 0x2
+
+    new-array v0, v0, [J
+
+    const/4 v1, 0x0
+
+    invoke-static {p0, v1, v0}, Lorg/bouncycastle/util/igw;->zta([BI[J)V
+
+    return-object v0
+.end method
+
+.method public static oj()[B
     .locals 3
 
     const/16 v0, 0x10
@@ -256,7 +270,7 @@
     return-object v0
 .end method
 
-.method public static nj()[I
+.method public static pj()[I
     .locals 3
 
     const/4 v0, 0x4
@@ -272,21 +286,21 @@
     return-object v0
 .end method
 
-.method public static oif([B)[J
+.method public static qbh([B)[I
     .locals 2
 
-    const/4 v0, 0x2
+    const/4 v0, 0x4
 
-    new-array v0, v0, [J
+    new-array v0, v0, [I
 
     const/4 v1, 0x0
 
-    invoke-static {p0, v1, v0}, Lorg/bouncycastle/util/igw;->zta([BI[J)V
+    invoke-static {p0, v1, v0}, Lorg/bouncycastle/util/igw;->zta([BI[I)V
 
     return-object v0
 .end method
 
-.method public static oj()[J
+.method public static qj()[J
     .locals 4
 
     const/4 v0, 0x2
@@ -302,7 +316,7 @@
     return-object v0
 .end method
 
-.method public static pj()[J
+.method public static rj()[J
     .locals 4
 
     const/4 v0, 0x2
@@ -314,20 +328,6 @@
     const-wide/high16 v2, 0x4000000000000000L    # 2.0
 
     aput-wide v2, v0, v1
-
-    return-object v0
-.end method
-
-.method public static qbh([B)[I
-    .locals 2
-
-    const/4 v0, 0x4
-
-    new-array v0, v0, [I
-
-    const/4 v1, 0x0
-
-    invoke-static {p0, v1, v0}, Lorg/bouncycastle/util/igw;->zta([BI[I)V
 
     return-object v0
 .end method

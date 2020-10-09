@@ -33,21 +33,21 @@
 
 .field public static final enum GPS:Lcom/android/server/am/AppRecordManager$ListenerType;
 
-.field public static final enum Rka:Lcom/android/server/am/AppRecordManager$ListenerType;
-
 .field public static final enum SENSOR:Lcom/android/server/am/AppRecordManager$ListenerType;
 
-.field public static final enum Ska:Lcom/android/server/am/AppRecordManager$ListenerType;
-
 .field public static final enum TRAFFIC:Lcom/android/server/am/AppRecordManager$ListenerType;
-
-.field public static final enum Tka:Lcom/android/server/am/AppRecordManager$ListenerType;
-
-.field public static final enum Uka:Lcom/android/server/am/AppRecordManager$ListenerType;
 
 .field public static final enum VIBRATOR:Lcom/android/server/am/AppRecordManager$ListenerType;
 
 .field public static final enum VIDEO:Lcom/android/server/am/AppRecordManager$ListenerType;
+
+.field public static final enum bla:Lcom/android/server/am/AppRecordManager$ListenerType;
+
+.field public static final enum dla:Lcom/android/server/am/AppRecordManager$ListenerType;
+
+.field public static final enum ela:Lcom/android/server/am/AppRecordManager$ListenerType;
+
+.field public static final enum fla:Lcom/android/server/am/AppRecordManager$ListenerType;
 
 
 # instance fields
@@ -66,7 +66,7 @@
 
     invoke-direct {v0, v2, v1, v1}, Lcom/android/server/am/AppRecordManager$ListenerType;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lcom/android/server/am/AppRecordManager$ListenerType;->Rka:Lcom/android/server/am/AppRecordManager$ListenerType;
+    sput-object v0, Lcom/android/server/am/AppRecordManager$ListenerType;->bla:Lcom/android/server/am/AppRecordManager$ListenerType;
 
     new-instance v0, Lcom/android/server/am/AppRecordManager$ListenerType;
 
@@ -156,7 +156,7 @@
 
     invoke-direct {v0, v11, v10, v10}, Lcom/android/server/am/AppRecordManager$ListenerType;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lcom/android/server/am/AppRecordManager$ListenerType;->Ska:Lcom/android/server/am/AppRecordManager$ListenerType;
+    sput-object v0, Lcom/android/server/am/AppRecordManager$ListenerType;->dla:Lcom/android/server/am/AppRecordManager$ListenerType;
 
     new-instance v0, Lcom/android/server/am/AppRecordManager$ListenerType;
 
@@ -166,7 +166,7 @@
 
     invoke-direct {v0, v12, v11, v11}, Lcom/android/server/am/AppRecordManager$ListenerType;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lcom/android/server/am/AppRecordManager$ListenerType;->Tka:Lcom/android/server/am/AppRecordManager$ListenerType;
+    sput-object v0, Lcom/android/server/am/AppRecordManager$ListenerType;->ela:Lcom/android/server/am/AppRecordManager$ListenerType;
 
     new-instance v0, Lcom/android/server/am/AppRecordManager$ListenerType;
 
@@ -176,13 +176,13 @@
 
     invoke-direct {v0, v13, v12, v12}, Lcom/android/server/am/AppRecordManager$ListenerType;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lcom/android/server/am/AppRecordManager$ListenerType;->Uka:Lcom/android/server/am/AppRecordManager$ListenerType;
+    sput-object v0, Lcom/android/server/am/AppRecordManager$ListenerType;->fla:Lcom/android/server/am/AppRecordManager$ListenerType;
 
     const/16 v0, 0xc
 
     new-array v0, v0, [Lcom/android/server/am/AppRecordManager$ListenerType;
 
-    sget-object v13, Lcom/android/server/am/AppRecordManager$ListenerType;->Rka:Lcom/android/server/am/AppRecordManager$ListenerType;
+    sget-object v13, Lcom/android/server/am/AppRecordManager$ListenerType;->bla:Lcom/android/server/am/AppRecordManager$ListenerType;
 
     aput-object v13, v0, v1
 
@@ -218,15 +218,15 @@
 
     aput-object v1, v0, v9
 
-    sget-object v1, Lcom/android/server/am/AppRecordManager$ListenerType;->Ska:Lcom/android/server/am/AppRecordManager$ListenerType;
+    sget-object v1, Lcom/android/server/am/AppRecordManager$ListenerType;->dla:Lcom/android/server/am/AppRecordManager$ListenerType;
 
     aput-object v1, v0, v10
 
-    sget-object v1, Lcom/android/server/am/AppRecordManager$ListenerType;->Tka:Lcom/android/server/am/AppRecordManager$ListenerType;
+    sget-object v1, Lcom/android/server/am/AppRecordManager$ListenerType;->ela:Lcom/android/server/am/AppRecordManager$ListenerType;
 
     aput-object v1, v0, v11
 
-    sget-object v1, Lcom/android/server/am/AppRecordManager$ListenerType;->Uka:Lcom/android/server/am/AppRecordManager$ListenerType;
+    sget-object v1, Lcom/android/server/am/AppRecordManager$ListenerType;->fla:Lcom/android/server/am/AppRecordManager$ListenerType;
 
     aput-object v1, v0, v12
 
@@ -255,17 +255,17 @@
 
     packed-switch p0, :pswitch_data_0
 
-    sget-object p0, Lcom/android/server/am/AppRecordManager$ListenerType;->Rka:Lcom/android/server/am/AppRecordManager$ListenerType;
+    sget-object p0, Lcom/android/server/am/AppRecordManager$ListenerType;->bla:Lcom/android/server/am/AppRecordManager$ListenerType;
 
     return-object p0
 
     :pswitch_0
-    sget-object p0, Lcom/android/server/am/AppRecordManager$ListenerType;->Tka:Lcom/android/server/am/AppRecordManager$ListenerType;
+    sget-object p0, Lcom/android/server/am/AppRecordManager$ListenerType;->ela:Lcom/android/server/am/AppRecordManager$ListenerType;
 
     return-object p0
 
     :pswitch_1
-    sget-object p0, Lcom/android/server/am/AppRecordManager$ListenerType;->Ska:Lcom/android/server/am/AppRecordManager$ListenerType;
+    sget-object p0, Lcom/android/server/am/AppRecordManager$ListenerType;->dla:Lcom/android/server/am/AppRecordManager$ListenerType;
 
     return-object p0
 

@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field protected Moa:Ljava/security/SecureRandom;
+.field protected Xoa:Ljava/security/SecureRandom;
 
 .field protected strength:I
 
@@ -27,7 +27,7 @@
 
     new-array v0, v0, [B
 
-    iget-object p0, p0, Lorg/bouncycastle/crypto/cno;->Moa:Ljava/security/SecureRandom;
+    iget-object p0, p0, Lorg/bouncycastle/crypto/cno;->Xoa:Ljava/security/SecureRandom;
 
     invoke-virtual {p0, v0}, Ljava/security/SecureRandom;->nextBytes([B)V
 
@@ -37,11 +37,11 @@
 .method public zta(Lorg/bouncycastle/crypto/bvj;)V
     .locals 1
 
-    invoke-virtual {p1}, Lorg/bouncycastle/crypto/bvj;->gj()Ljava/security/SecureRandom;
+    invoke-virtual {p1}, Lorg/bouncycastle/crypto/bvj;->ij()Ljava/security/SecureRandom;
 
     move-result-object v0
 
-    iput-object v0, p0, Lorg/bouncycastle/crypto/cno;->Moa:Ljava/security/SecureRandom;
+    iput-object v0, p0, Lorg/bouncycastle/crypto/cno;->Xoa:Ljava/security/SecureRandom;
 
     invoke-virtual {p1}, Lorg/bouncycastle/crypto/bvj;->getStrength()I
 

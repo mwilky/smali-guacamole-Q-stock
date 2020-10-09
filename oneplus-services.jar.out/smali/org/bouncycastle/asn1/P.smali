@@ -7,7 +7,7 @@
 
 
 # static fields
-.field private static final _oa:[C
+.field private static final kpa:[C
 
 
 # instance fields
@@ -24,7 +24,7 @@
 
     fill-array-data v0, :array_0
 
-    sput-object v0, Lorg/bouncycastle/asn1/P;->_oa:[C
+    sput-object v0, Lorg/bouncycastle/asn1/P;->kpa:[C
 
     return-void
 
@@ -194,7 +194,7 @@
 
 
 # virtual methods
-.method Cg()I
+.method Eg()I
     .locals 1
 
     iget-object v0, p0, Lorg/bouncycastle/asn1/P;->string:[B
@@ -261,7 +261,7 @@
 
     if-eq v1, v2, :cond_0
 
-    sget-object v2, Lorg/bouncycastle/asn1/P;->_oa:[C
+    sget-object v2, Lorg/bouncycastle/asn1/P;->kpa:[C
 
     aget-byte v3, p0, v1
 
@@ -273,7 +273,7 @@
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuffer;->append(C)Ljava/lang/StringBuffer;
 
-    sget-object v2, Lorg/bouncycastle/asn1/P;->_oa:[C
+    sget-object v2, Lorg/bouncycastle/asn1/P;->kpa:[C
 
     aget-byte v3, p0, v1
 

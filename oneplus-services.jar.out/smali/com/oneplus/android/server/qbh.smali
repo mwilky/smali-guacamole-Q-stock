@@ -59,7 +59,7 @@
 
     const/16 p1, 0x13
 
-    invoke-static {}, Lcom/oneplus/android/server/vdb;->access$1200()I
+    invoke-static {}, Lcom/oneplus/android/server/vdb;->Ib()I
 
     move-result p2
 

@@ -4,27 +4,27 @@
 
 
 # static fields
-.field static final DX:[I
+.field static final OX:[I
 
-.field static final EX:[I
+.field static final QX:[I
 
-.field static final FX:[I
+.field static final RX:[I
 
-.field static final GX:[I
+.field static final SX:[I
 
-.field static final HX:[I
+.field static final UX:[I
 
-.field static final IX:[I
+.field static final VX:[I
 
-.field static final JX:[I
+.field static final WX:[I
 
-.field static final KX:[I
+.field static final XX:[I
 
-.field static final LX:[I
+.field static final YX:[I
 
-.field static final MX:[I
+.field static final ZX:[I
 
-.field static final NX:[I
+.field static final _X:[I
 
 
 # direct methods
@@ -37,7 +37,7 @@
 
     fill-array-data v0, :array_0
 
-    sput-object v0, Lcom/oneplus/android/server/you;->DX:[I
+    sput-object v0, Lcom/oneplus/android/server/you;->OX:[I
 
     const/4 v0, 0x5
 
@@ -45,7 +45,7 @@
 
     fill-array-data v0, :array_1
 
-    sput-object v0, Lcom/oneplus/android/server/you;->EX:[I
+    sput-object v0, Lcom/oneplus/android/server/you;->QX:[I
 
     const/16 v0, 0xbd
 
@@ -53,7 +53,7 @@
 
     fill-array-data v0, :array_2
 
-    sput-object v0, Lcom/oneplus/android/server/you;->FX:[I
+    sput-object v0, Lcom/oneplus/android/server/you;->RX:[I
 
     const/4 v0, 0x1
 
@@ -65,7 +65,7 @@
 
     aput v3, v1, v2
 
-    sput-object v1, Lcom/oneplus/android/server/you;->GX:[I
+    sput-object v1, Lcom/oneplus/android/server/you;->SX:[I
 
     const/16 v1, 0x30
 
@@ -73,7 +73,7 @@
 
     fill-array-data v1, :array_3
 
-    sput-object v1, Lcom/oneplus/android/server/you;->HX:[I
+    sput-object v1, Lcom/oneplus/android/server/you;->UX:[I
 
     const/16 v1, 0x14
 
@@ -81,7 +81,7 @@
 
     fill-array-data v1, :array_4
 
-    sput-object v1, Lcom/oneplus/android/server/you;->IX:[I
+    sput-object v1, Lcom/oneplus/android/server/you;->VX:[I
 
     const/16 v1, 0x9a
 
@@ -89,7 +89,7 @@
 
     fill-array-data v1, :array_5
 
-    sput-object v1, Lcom/oneplus/android/server/you;->JX:[I
+    sput-object v1, Lcom/oneplus/android/server/you;->WX:[I
 
     const/4 v1, 0x3
 
@@ -97,7 +97,7 @@
 
     fill-array-data v1, :array_6
 
-    sput-object v1, Lcom/oneplus/android/server/you;->KX:[I
+    sput-object v1, Lcom/oneplus/android/server/you;->XX:[I
 
     new-array v0, v0, [I
 
@@ -105,7 +105,7 @@
 
     aput v1, v0, v2
 
-    sput-object v0, Lcom/oneplus/android/server/you;->LX:[I
+    sput-object v0, Lcom/oneplus/android/server/you;->YX:[I
 
     const/16 v0, 0xb
 
@@ -113,7 +113,7 @@
 
     fill-array-data v0, :array_7
 
-    sput-object v0, Lcom/oneplus/android/server/you;->MX:[I
+    sput-object v0, Lcom/oneplus/android/server/you;->ZX:[I
 
     const/4 v0, 0x4
 
@@ -121,7 +121,7 @@
 
     fill-array-data v0, :array_8
 
-    sput-object v0, Lcom/oneplus/android/server/you;->NX:[I
+    sput-object v0, Lcom/oneplus/android/server/you;->_X:[I
 
     return-void
 
@@ -864,7 +864,7 @@
     move v2, v1
 
     :goto_0
-    sget-object v3, Lcom/oneplus/android/server/you;->FX:[I
+    sget-object v3, Lcom/oneplus/android/server/you;->RX:[I
 
     array-length v4, v3
 
@@ -1079,7 +1079,7 @@
     move v1, v0
 
     :goto_0
-    sget-object v2, Lcom/oneplus/android/server/you;->NX:[I
+    sget-object v2, Lcom/oneplus/android/server/you;->_X:[I
 
     array-length v3, v2
 
@@ -1167,7 +1167,7 @@
     move v1, v0
 
     :goto_0
-    sget-object v2, Lcom/oneplus/android/server/you;->DX:[I
+    sget-object v2, Lcom/oneplus/android/server/you;->OX:[I
 
     array-length v3, v2
 
@@ -2084,7 +2084,7 @@
     move v2, v1
 
     :goto_0
-    sget-object v3, Lcom/oneplus/android/server/you;->HX:[I
+    sget-object v3, Lcom/oneplus/android/server/you;->UX:[I
 
     array-length v4, v3
 
@@ -2241,7 +2241,7 @@
     move v2, v1
 
     :goto_0
-    sget-object v3, Lcom/oneplus/android/server/you;->GX:[I
+    sget-object v3, Lcom/oneplus/android/server/you;->SX:[I
 
     array-length v4, v3
 
@@ -2301,7 +2301,7 @@
     move v2, v1
 
     :goto_0
-    sget-object v3, Lcom/oneplus/android/server/you;->LX:[I
+    sget-object v3, Lcom/oneplus/android/server/you;->YX:[I
 
     array-length v4, v3
 
@@ -2410,7 +2410,7 @@
     move v2, v1
 
     :goto_0
-    sget-object v3, Lcom/oneplus/android/server/you;->EX:[I
+    sget-object v3, Lcom/oneplus/android/server/you;->QX:[I
 
     array-length v4, v3
 
@@ -2468,7 +2468,7 @@
     move v1, v0
 
     :goto_0
-    sget-object v2, Lcom/oneplus/android/server/you;->MX:[I
+    sget-object v2, Lcom/oneplus/android/server/you;->ZX:[I
 
     array-length v3, v2
 
@@ -2654,7 +2654,7 @@
     move v2, v1
 
     :goto_0
-    sget-object v3, Lcom/oneplus/android/server/you;->IX:[I
+    sget-object v3, Lcom/oneplus/android/server/you;->VX:[I
 
     array-length v4, v3
 
@@ -2785,7 +2785,7 @@
     move v1, v0
 
     :goto_0
-    sget-object v2, Lcom/oneplus/android/server/you;->JX:[I
+    sget-object v2, Lcom/oneplus/android/server/you;->WX:[I
 
     array-length v3, v2
 
@@ -2921,7 +2921,7 @@
     move v1, v0
 
     :goto_0
-    sget-object v2, Lcom/oneplus/android/server/you;->KX:[I
+    sget-object v2, Lcom/oneplus/android/server/you;->XX:[I
 
     array-length v3, v2
 

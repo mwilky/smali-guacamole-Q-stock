@@ -18,7 +18,7 @@
 
 
 # instance fields
-.field final synthetic cz:Ljava/lang/String;
+.field final synthetic lz:Ljava/lang/String;
 
 .field final synthetic this$0:Lcom/android/server/am/B;
 
@@ -33,7 +33,7 @@
 
     iput-object p2, p0, Lcom/android/server/am/y;->val$packageName:Ljava/lang/String;
 
-    iput-object p3, p0, Lcom/android/server/am/y;->cz:Ljava/lang/String;
+    iput-object p3, p0, Lcom/android/server/am/y;->lz:Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -55,7 +55,7 @@
 
     invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    iget-object v1, p0, Lcom/android/server/am/y;->cz:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/server/am/y;->lz:Ljava/lang/String;
 
     const-string v2, "pvn"
 

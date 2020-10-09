@@ -3,12 +3,12 @@
 .source ""
 
 # interfaces
-.implements Landroid/content/DialogInterface$OnClickListener;
+.implements Landroid/os/Handler$Callback;
 
 
 # annotations
-.annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/server/pm/OpLauncherAppsService;->showDialog(IIIILandroid/content/DialogInterface$OnClickListener;)V
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/android/server/pm/OpLauncherAppsService;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -34,8 +34,58 @@
 
 
 # virtual methods
-.method public onClick(Landroid/content/DialogInterface;I)V
-    .locals 0
+.method public handleMessage(Landroid/os/Message;)Z
+    .locals 7
 
-    return-void
+    iget p1, p1, Landroid/os/Message;->arg1:I
+
+    const/4 v0, 0x2
+
+    if-ne v0, p1, :cond_0
+
+    iget-object v1, p0, Lcom/android/server/pm/kth;->this$0:Lcom/android/server/pm/OpLauncherAppsService;
+
+    const v2, 0x50d0090
+
+    const v3, 0x50d008f
+
+    const v4, 0x50d008e
+
+    const v5, 0x50d0089
+
+    new-instance v6, Lcom/android/server/pm/rtg;
+
+    invoke-direct {v6, p0}, Lcom/android/server/pm/rtg;-><init>(Lcom/android/server/pm/kth;)V
+
+    :goto_0
+    invoke-static/range {v1 .. v6}, Lcom/android/server/pm/OpLauncherAppsService;->access$000(Lcom/android/server/pm/OpLauncherAppsService;IIIILandroid/content/DialogInterface$OnClickListener;)V
+
+    goto :goto_1
+
+    :cond_0
+    const/4 v0, 0x1
+
+    if-ne v0, p1, :cond_1
+
+    iget-object v1, p0, Lcom/android/server/pm/kth;->this$0:Lcom/android/server/pm/OpLauncherAppsService;
+
+    const v2, 0x50d008c
+
+    const v3, 0x50d008a
+
+    const v4, 0x50d008b
+
+    const v5, 0x50d0089
+
+    new-instance v6, Lcom/android/server/pm/cno;
+
+    invoke-direct {v6, p0}, Lcom/android/server/pm/cno;-><init>(Lcom/android/server/pm/kth;)V
+
+    goto :goto_0
+
+    :cond_1
+    :goto_1
+    const/4 p0, 0x0
+
+    return p0
 .end method

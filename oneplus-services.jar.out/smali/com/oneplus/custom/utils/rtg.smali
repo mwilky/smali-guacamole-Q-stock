@@ -8,21 +8,21 @@
 
 .field private static final PARAM_CUST_FLAG:I = 0x4
 
-.field private static final Qia:Ljava/lang/String; = "/sys/module/param_read_write/parameters/cust_flag"
-
-.field private static final Ria:Ljava/lang/String; = "/sys/module/param_read_write/parameters/backcover_color"
-
-.field private static final Sia:Ljava/lang/String; = "com.oem.os.IParamService$Stub"
-
 .field private static final TAG:Ljava/lang/String; = "ParamReader"
 
-.field private static final Tia:Ljava/lang/String; = "com.oneplus.os.IParamService$Stub"
+.field private static final aja:Ljava/lang/String; = "/sys/module/param_read_write/parameters/cust_flag"
 
-.field private static final Uia:I = 0x18
+.field private static final bja:Ljava/lang/String; = "/sys/module/param_read_write/parameters/backcover_color"
 
-.field private static final Via:I = 0x1a
+.field private static final cja:Ljava/lang/String; = "com.oem.os.IParamService$Stub"
 
-.field private static Wia:Ljava/util/ArrayList;
+.field private static final dja:Ljava/lang/String; = "com.oneplus.os.IParamService$Stub"
+
+.field private static final eja:I = 0x18
+
+.field private static final fja:I = 0x1a
+
+.field private static gja:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/ArrayList<",
@@ -32,7 +32,7 @@
     .end annotation
 .end field
 
-.field private static Xia:Z
+.field private static hja:Z
 
 
 # direct methods
@@ -43,11 +43,11 @@
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    sput-object v0, Lcom/oneplus/custom/utils/rtg;->Wia:Ljava/util/ArrayList;
+    sput-object v0, Lcom/oneplus/custom/utils/rtg;->gja:Ljava/util/ArrayList;
 
     const/4 v0, 0x0
 
-    sput-boolean v0, Lcom/oneplus/custom/utils/rtg;->Xia:Z
+    sput-boolean v0, Lcom/oneplus/custom/utils/rtg;->hja:Z
 
     return-void
 .end method
@@ -60,7 +60,7 @@
     return-void
 .end method
 
-.method public static Nf()[B
+.method public static Pf()[B
     .locals 6
 
     const-string v0, "ParamReader"
@@ -101,7 +101,7 @@
 
     invoke-virtual {v1, v3, v4, v5}, Ljava/util/concurrent/CountDownLatch;->await(JLjava/util/concurrent/TimeUnit;)Z
 
-    sget-object v1, Lcom/oneplus/custom/utils/rtg;->Wia:Ljava/util/ArrayList;
+    sget-object v1, Lcom/oneplus/custom/utils/rtg;->gja:Ljava/util/ArrayList;
 
     invoke-virtual {v1}, Ljava/util/ArrayList;->size()I
 
@@ -112,7 +112,7 @@
     const/4 v3, 0x0
 
     :goto_0
-    sget-object v4, Lcom/oneplus/custom/utils/rtg;->Wia:Ljava/util/ArrayList;
+    sget-object v4, Lcom/oneplus/custom/utils/rtg;->gja:Ljava/util/ArrayList;
 
     invoke-virtual {v4}, Ljava/util/ArrayList;->size()I
 
@@ -120,7 +120,7 @@
 
     if-ge v3, v4, :cond_2
 
-    sget-object v4, Lcom/oneplus/custom/utils/rtg;->Wia:Ljava/util/ArrayList;
+    sget-object v4, Lcom/oneplus/custom/utils/rtg;->gja:Ljava/util/ArrayList;
 
     invoke-virtual {v4, v3}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -137,7 +137,7 @@
     goto :goto_1
 
     :cond_1
-    sget-object v4, Lcom/oneplus/custom/utils/rtg;->Wia:Ljava/util/ArrayList;
+    sget-object v4, Lcom/oneplus/custom/utils/rtg;->gja:Ljava/util/ArrayList;
 
     invoke-virtual {v4, v3}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -199,7 +199,7 @@
     return-object v2
 .end method
 
-.method public static Of()I
+.method public static Qf()I
     .locals 9
 
     const-string v0, "ParamReader"
@@ -350,7 +350,7 @@
 .method static synthetic bud(Z)Z
     .locals 0
 
-    sput-boolean p0, Lcom/oneplus/custom/utils/rtg;->Xia:Z
+    sput-boolean p0, Lcom/oneplus/custom/utils/rtg;->hja:Z
 
     return p0
 .end method
@@ -358,7 +358,7 @@
 .method static synthetic cno(Ljava/util/ArrayList;)Ljava/util/ArrayList;
     .locals 0
 
-    sput-object p0, Lcom/oneplus/custom/utils/rtg;->Wia:Ljava/util/ArrayList;
+    sput-object p0, Lcom/oneplus/custom/utils/rtg;->gja:Ljava/util/ArrayList;
 
     return-object p0
 .end method

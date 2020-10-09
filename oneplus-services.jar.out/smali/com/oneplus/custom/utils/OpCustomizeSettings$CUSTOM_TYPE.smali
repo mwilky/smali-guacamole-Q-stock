@@ -27,6 +27,8 @@
 
 .field public static final enum AVG:Lcom/oneplus/custom/utils/OpCustomizeSettings$CUSTOM_TYPE;
 
+.field public static final enum Eoa:Lcom/oneplus/custom/utils/OpCustomizeSettings$CUSTOM_TYPE;
+
 .field public static final enum JCC:Lcom/oneplus/custom/utils/OpCustomizeSettings$CUSTOM_TYPE;
 
 .field public static final enum MCL:Lcom/oneplus/custom/utils/OpCustomizeSettings$CUSTOM_TYPE;
@@ -34,8 +36,6 @@
 .field public static final enum NONE:Lcom/oneplus/custom/utils/OpCustomizeSettings$CUSTOM_TYPE;
 
 .field public static final enum SW:Lcom/oneplus/custom/utils/OpCustomizeSettings$CUSTOM_TYPE;
-
-.field public static final enum soa:Lcom/oneplus/custom/utils/OpCustomizeSettings$CUSTOM_TYPE;
 
 
 # direct methods
@@ -100,7 +100,7 @@
 
     invoke-direct {v0, v7, v6}, Lcom/oneplus/custom/utils/OpCustomizeSettings$CUSTOM_TYPE;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/oneplus/custom/utils/OpCustomizeSettings$CUSTOM_TYPE;->soa:Lcom/oneplus/custom/utils/OpCustomizeSettings$CUSTOM_TYPE;
+    sput-object v0, Lcom/oneplus/custom/utils/OpCustomizeSettings$CUSTOM_TYPE;->Eoa:Lcom/oneplus/custom/utils/OpCustomizeSettings$CUSTOM_TYPE;
 
     const/4 v0, 0x6
 
@@ -126,7 +126,7 @@
 
     aput-object v1, v0, v5
 
-    sget-object v1, Lcom/oneplus/custom/utils/OpCustomizeSettings$CUSTOM_TYPE;->soa:Lcom/oneplus/custom/utils/OpCustomizeSettings$CUSTOM_TYPE;
+    sget-object v1, Lcom/oneplus/custom/utils/OpCustomizeSettings$CUSTOM_TYPE;->Eoa:Lcom/oneplus/custom/utils/OpCustomizeSettings$CUSTOM_TYPE;
 
     aput-object v1, v0, v6
 

@@ -145,7 +145,7 @@
 
     move-result-object p1
 
-    invoke-virtual {p1}, Lcom/android/server/backlight/zta;->Dc()I
+    invoke-virtual {p1}, Lcom/android/server/backlight/zta;->Ec()I
 
     move-result p1
 
@@ -194,7 +194,7 @@
 
     if-eqz v1, :cond_3
 
-    invoke-virtual {p1}, Lcom/android/server/backlight/zta;->Dc()I
+    invoke-virtual {p1}, Lcom/android/server/backlight/zta;->Ec()I
 
     move-result v1
 

@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field protected final Bka:Ljava/io/InputStream;
+.field protected final Mka:Ljava/io/InputStream;
 
-.field private Cka:I
+.field private Nka:I
 
 
 # direct methods
@@ -15,9 +15,9 @@
 
     invoke-direct {p0}, Ljava/io/InputStream;-><init>()V
 
-    iput-object p1, p0, Lorg/bouncycastle/asn1/ga;->Bka:Ljava/io/InputStream;
+    iput-object p1, p0, Lorg/bouncycastle/asn1/ga;->Mka:Ljava/io/InputStream;
 
-    iput p2, p0, Lorg/bouncycastle/asn1/ga;->Cka:I
+    iput p2, p0, Lorg/bouncycastle/asn1/ga;->Nka:I
 
     return-void
 .end method
@@ -27,7 +27,7 @@
 .method protected T(Z)V
     .locals 1
 
-    iget-object p0, p0, Lorg/bouncycastle/asn1/ga;->Bka:Ljava/io/InputStream;
+    iget-object p0, p0, Lorg/bouncycastle/asn1/ga;->Mka:Ljava/io/InputStream;
 
     instance-of v0, p0, Lorg/bouncycastle/asn1/da;
 
@@ -44,7 +44,7 @@
 .method getRemaining()I
     .locals 0
 
-    iget p0, p0, Lorg/bouncycastle/asn1/ga;->Cka:I
+    iget p0, p0, Lorg/bouncycastle/asn1/ga;->Nka:I
 
     return p0
 .end method

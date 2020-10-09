@@ -771,7 +771,7 @@
 
     if-eqz p0, :cond_0
 
-    iget p0, p0, Lcom/oneplus/android/server/scene/OemSceneXLinearVibrationMotorController$zta;->Aia:I
+    iget p0, p0, Lcom/oneplus/android/server/scene/OemSceneXLinearVibrationMotorController$zta;->Lia:I
 
     monitor-exit v0
 

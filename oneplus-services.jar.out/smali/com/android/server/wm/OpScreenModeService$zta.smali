@@ -2,6 +2,9 @@
 .super Ljava/lang/Object;
 .source ""
 
+# interfaces
+.implements Lcom/android/server/OnePlusUtil$zta$zta;
+
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
@@ -9,143 +12,100 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x2
+    accessFlags = 0x0
     name = "zta"
 .end annotation
 
 
 # instance fields
-.field kX:I
-
-.field lX:I
-
-.field mode:Landroid/view/Display$Mode;
-
-.field nX:[I
-
 .field final synthetic this$0:Lcom/android/server/wm/OpScreenModeService;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/server/wm/OpScreenModeService;Landroid/view/Display$Mode;)V
-    .locals 7
+.method constructor <init>(Lcom/android/server/wm/OpScreenModeService;)V
+    .locals 0
 
     iput-object p1, p0, Lcom/android/server/wm/OpScreenModeService$zta;->this$0:Lcom/android/server/wm/OpScreenModeService;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    const/4 v0, -0x1
+    return-void
+.end method
 
-    iput v0, p0, Lcom/android/server/wm/OpScreenModeService$zta;->kX:I
 
-    iput v0, p0, Lcom/android/server/wm/OpScreenModeService$zta;->lX:I
+# virtual methods
+.method public sis(Ljava/lang/String;)V
+    .locals 3
 
-    const/4 v0, 0x0
+    iget-object v0, p0, Lcom/android/server/wm/OpScreenModeService$zta;->this$0:Lcom/android/server/wm/OpScreenModeService;
 
-    new-array v1, v0, [I
+    invoke-static {v0}, Lcom/android/server/wm/OpScreenModeService;->access$700(Lcom/android/server/wm/OpScreenModeService;)Ljava/lang/Object;
 
-    iput-object v1, p0, Lcom/android/server/wm/OpScreenModeService$zta;->nX:[I
+    move-result-object v0
 
-    iput-object p2, p0, Lcom/android/server/wm/OpScreenModeService$zta;->mode:Landroid/view/Display$Mode;
+    monitor-enter v0
 
-    invoke-virtual {p2}, Landroid/view/Display$Mode;->getPhysicalWidth()I
+    :try_start_0
+    iget-object v1, p0, Lcom/android/server/wm/OpScreenModeService$zta;->this$0:Lcom/android/server/wm/OpScreenModeService;
 
-    move-result v1
+    invoke-static {v1}, Lcom/android/server/wm/OpScreenModeService;->access$900(Lcom/android/server/wm/OpScreenModeService;)Ljava/util/HashMap;
 
-    const/4 v2, 0x1
+    move-result-object v1
 
-    const/16 v3, 0x5a0
+    invoke-static {}, Lcom/android/server/OnePlusUtil$zta;->getInstance()Lcom/android/server/OnePlusUtil$zta;
 
-    if-ne v1, v3, :cond_0
+    move-result-object v2
 
-    iput v0, p0, Lcom/android/server/wm/OpScreenModeService$zta;->lX:I
+    invoke-virtual {v2}, Lcom/android/server/OnePlusUtil$zta;->z()Ljava/lang/String;
 
-    iget-object p1, p1, Lcom/android/server/wm/OpScreenModeService;->mContext:Landroid/content/Context;
+    move-result-object v2
 
-    invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {v1, v2}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
-    move-result-object p1
+    move-result-object v1
 
-    const v1, 0x502001e
+    check-cast v1, Ljava/util/HashSet;
 
-    :goto_0
-    invoke-virtual {p1, v1}, Landroid/content/res/Resources;->getIntArray(I)[I
+    if-eqz v1, :cond_0
 
-    move-result-object p1
+    invoke-virtual {v1, p1}, Ljava/util/HashSet;->contains(Ljava/lang/Object;)Z
 
-    iput-object p1, p0, Lcom/android/server/wm/OpScreenModeService$zta;->nX:[I
+    move-result p1
 
-    goto :goto_1
+    if-eqz p1, :cond_0
 
-    :cond_0
-    invoke-virtual {p2}, Landroid/view/Display$Mode;->getPhysicalWidth()I
+    iget-object p0, p0, Lcom/android/server/wm/OpScreenModeService$zta;->this$0:Lcom/android/server/wm/OpScreenModeService;
 
-    move-result v1
-
-    const/16 v3, 0x438
-
-    if-ne v1, v3, :cond_1
-
-    iput v2, p0, Lcom/android/server/wm/OpScreenModeService$zta;->lX:I
-
-    iget-object p1, p1, Lcom/android/server/wm/OpScreenModeService;->mContext:Landroid/content/Context;
-
-    invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+    invoke-static {}, Lcom/android/server/OnePlusUtil$zta;->getInstance()Lcom/android/server/OnePlusUtil$zta;
 
     move-result-object p1
 
-    const v1, 0x502001f
+    invoke-virtual {p1}, Lcom/android/server/OnePlusUtil$zta;->z()Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-static {p0, p1}, Lcom/android/server/wm/OpScreenModeService;->access$1002(Lcom/android/server/wm/OpScreenModeService;Ljava/lang/String;)Ljava/lang/String;
 
     goto :goto_0
 
-    :cond_1
-    :goto_1
-    invoke-virtual {p2}, Landroid/view/Display$Mode;->getRefreshRate()F
+    :cond_0
+    iget-object p0, p0, Lcom/android/server/wm/OpScreenModeService$zta;->this$0:Lcom/android/server/wm/OpScreenModeService;
 
-    move-result p1
+    const/4 p1, 0x0
 
-    const/high16 v1, 0x42700000    # 60.0f
+    invoke-static {p0, p1}, Lcom/android/server/wm/OpScreenModeService;->access$1002(Lcom/android/server/wm/OpScreenModeService;Ljava/lang/String;)Ljava/lang/String;
 
-    sub-float/2addr p1, v1
+    :goto_0
+    monitor-exit v0
 
-    invoke-static {p1}, Ljava/lang/Math;->abs(F)F
-
-    move-result p1
-
-    float-to-double v3, p1
-
-    const-wide v5, 0x3fb999999999999aL    # 0.1
-
-    cmpg-double p1, v3, v5
-
-    if-gez p1, :cond_2
-
-    iput v2, p0, Lcom/android/server/wm/OpScreenModeService$zta;->kX:I
-
-    goto :goto_2
-
-    :cond_2
-    invoke-virtual {p2}, Landroid/view/Display$Mode;->getRefreshRate()F
-
-    move-result p1
-
-    const/high16 p2, 0x42b40000    # 90.0f
-
-    sub-float/2addr p1, p2
-
-    invoke-static {p1}, Ljava/lang/Math;->abs(F)F
-
-    move-result p1
-
-    float-to-double p1, p1
-
-    cmpg-double p1, p1, v5
-
-    if-gez p1, :cond_3
-
-    iput v0, p0, Lcom/android/server/wm/OpScreenModeService$zta;->kX:I
-
-    :cond_3
-    :goto_2
     return-void
+
+    :catchall_0
+    move-exception p0
+
+    monitor-exit v0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    throw p0
 .end method

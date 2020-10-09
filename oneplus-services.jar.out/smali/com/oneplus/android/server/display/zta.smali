@@ -7,11 +7,11 @@
 
 
 # instance fields
-.field private final synthetic ZE:Lcom/android/server/display/color/DisplayTransformManager;
+.field private final synthetic lF:Lcom/android/server/display/color/DisplayTransformManager;
 
-.field private final synthetic dca:I
+.field private final synthetic oca:I
 
-.field private final synthetic eca:Z
+.field private final synthetic pca:Z
 
 
 # direct methods
@@ -20,11 +20,11 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lcom/oneplus/android/server/display/zta;->ZE:Lcom/android/server/display/color/DisplayTransformManager;
+    iput-object p1, p0, Lcom/oneplus/android/server/display/zta;->lF:Lcom/android/server/display/color/DisplayTransformManager;
 
-    iput p2, p0, Lcom/oneplus/android/server/display/zta;->dca:I
+    iput p2, p0, Lcom/oneplus/android/server/display/zta;->oca:I
 
-    iput-boolean p3, p0, Lcom/oneplus/android/server/display/zta;->eca:Z
+    iput-boolean p3, p0, Lcom/oneplus/android/server/display/zta;->pca:Z
 
     return-void
 .end method
@@ -34,11 +34,11 @@
 .method public final onAnimationUpdate(Landroid/animation/ValueAnimator;)V
     .locals 2
 
-    iget-object v0, p0, Lcom/oneplus/android/server/display/zta;->ZE:Lcom/android/server/display/color/DisplayTransformManager;
+    iget-object v0, p0, Lcom/oneplus/android/server/display/zta;->lF:Lcom/android/server/display/color/DisplayTransformManager;
 
-    iget v1, p0, Lcom/oneplus/android/server/display/zta;->dca:I
+    iget v1, p0, Lcom/oneplus/android/server/display/zta;->oca:I
 
-    iget-boolean p0, p0, Lcom/oneplus/android/server/display/zta;->eca:Z
+    iget-boolean p0, p0, Lcom/oneplus/android/server/display/zta;->pca:Z
 
     invoke-static {v0, v1, p0, p1}, Lcom/oneplus/android/server/display/bvj;->zta(Lcom/android/server/display/color/DisplayTransformManager;IZLandroid/animation/ValueAnimator;)V
 

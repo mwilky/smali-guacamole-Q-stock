@@ -649,7 +649,7 @@
 
     invoke-virtual {p0, p1, v2, v0, v1}, Lorg/bouncycastle/jcajce/provider/util/you;->zta(Lorg/bouncycastle/jcajce/provider/config/zta;Lorg/bouncycastle/asn1/bvj;Ljava/lang/String;Lorg/bouncycastle/jcajce/provider/util/sis;)V
 
-    sget-object v2, Lorg/bouncycastle/asn1/x509/t;->lRa:Lorg/bouncycastle/asn1/bvj;
+    sget-object v2, Lorg/bouncycastle/asn1/x509/t;->wRa:Lorg/bouncycastle/asn1/bvj;
 
     invoke-virtual {p0, p1, v2, v0, v1}, Lorg/bouncycastle/jcajce/provider/util/you;->zta(Lorg/bouncycastle/jcajce/provider/config/zta;Lorg/bouncycastle/asn1/bvj;Ljava/lang/String;Lorg/bouncycastle/jcajce/provider/util/sis;)V
 
@@ -696,7 +696,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sget-object v1, Lorg/bouncycastle/asn1/gck/zta;->iQa:Lorg/bouncycastle/asn1/bvj;
+    sget-object v1, Lorg/bouncycastle/asn1/gck/zta;->tQa:Lorg/bouncycastle/asn1/bvj;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -716,7 +716,7 @@
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sget-object v2, Lorg/bouncycastle/asn1/gck/zta;->iQa:Lorg/bouncycastle/asn1/bvj;
+    sget-object v2, Lorg/bouncycastle/asn1/gck/zta;->tQa:Lorg/bouncycastle/asn1/bvj;
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 

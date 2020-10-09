@@ -160,31 +160,31 @@
 
     iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/BCRSAPrivateKey;->privateExponent:Ljava/math/BigInteger;
 
-    invoke-virtual {p1}, Lorg/bouncycastle/asn1/dma/obl;->Dh()Ljava/math/BigInteger;
+    invoke-virtual {p1}, Lorg/bouncycastle/asn1/dma/obl;->Fh()Ljava/math/BigInteger;
 
     move-result-object v0
 
     iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/BCRSAPrivateCrtKey;->primeP:Ljava/math/BigInteger;
 
-    invoke-virtual {p1}, Lorg/bouncycastle/asn1/dma/obl;->Eh()Ljava/math/BigInteger;
+    invoke-virtual {p1}, Lorg/bouncycastle/asn1/dma/obl;->Gh()Ljava/math/BigInteger;
 
     move-result-object v0
 
     iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/BCRSAPrivateCrtKey;->primeQ:Ljava/math/BigInteger;
 
-    invoke-virtual {p1}, Lorg/bouncycastle/asn1/dma/obl;->Bh()Ljava/math/BigInteger;
+    invoke-virtual {p1}, Lorg/bouncycastle/asn1/dma/obl;->Dh()Ljava/math/BigInteger;
 
     move-result-object v0
 
     iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/BCRSAPrivateCrtKey;->primeExponentP:Ljava/math/BigInteger;
 
-    invoke-virtual {p1}, Lorg/bouncycastle/asn1/dma/obl;->Ch()Ljava/math/BigInteger;
+    invoke-virtual {p1}, Lorg/bouncycastle/asn1/dma/obl;->Eh()Ljava/math/BigInteger;
 
     move-result-object v0
 
     iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/BCRSAPrivateCrtKey;->primeExponentQ:Ljava/math/BigInteger;
 
-    invoke-virtual {p1}, Lorg/bouncycastle/asn1/dma/obl;->Ah()Ljava/math/BigInteger;
+    invoke-virtual {p1}, Lorg/bouncycastle/asn1/dma/obl;->Ch()Ljava/math/BigInteger;
 
     move-result-object p1
 
@@ -237,19 +237,19 @@
 
     iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/BCRSAPrivateCrtKey;->primeQ:Ljava/math/BigInteger;
 
-    invoke-virtual {p1}, Lorg/bouncycastle/crypto/wtn/cgv;->rj()Ljava/math/BigInteger;
+    invoke-virtual {p1}, Lorg/bouncycastle/crypto/wtn/cgv;->tj()Ljava/math/BigInteger;
 
     move-result-object v0
 
     iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/BCRSAPrivateCrtKey;->primeExponentP:Ljava/math/BigInteger;
 
-    invoke-virtual {p1}, Lorg/bouncycastle/crypto/wtn/cgv;->sj()Ljava/math/BigInteger;
+    invoke-virtual {p1}, Lorg/bouncycastle/crypto/wtn/cgv;->uj()Ljava/math/BigInteger;
 
     move-result-object v0
 
     iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/BCRSAPrivateCrtKey;->primeExponentQ:Ljava/math/BigInteger;
 
-    invoke-virtual {p1}, Lorg/bouncycastle/crypto/wtn/cgv;->tj()Ljava/math/BigInteger;
+    invoke-virtual {p1}, Lorg/bouncycastle/crypto/wtn/cgv;->vj()Ljava/math/BigInteger;
 
     move-result-object p1
 

@@ -8,7 +8,7 @@
 
 
 # instance fields
-.field private final wN:Lcom/android/server/secrecy/you/zta;
+.field private final LN:Lcom/android/server/secrecy/you/zta;
 
 
 # direct methods
@@ -37,7 +37,7 @@
 
     move-result-object p1
 
-    iput-object p1, p0, Lcom/android/server/secrecy/you/you;->wN:Lcom/android/server/secrecy/you/zta;
+    iput-object p1, p0, Lcom/android/server/secrecy/you/you;->LN:Lcom/android/server/secrecy/you/zta;
 
     return-void
 .end method
@@ -47,7 +47,7 @@
 .method public sis(Landroid/content/pm/ActivityInfo;)Z
     .locals 0
 
-    iget-object p0, p0, Lcom/android/server/secrecy/you/you;->wN:Lcom/android/server/secrecy/you/zta;
+    iget-object p0, p0, Lcom/android/server/secrecy/you/you;->LN:Lcom/android/server/secrecy/you/zta;
 
     invoke-virtual {p0, p1}, Lcom/android/server/secrecy/you/zta;->zta(Landroid/content/pm/ActivityInfo;)Z
 
@@ -71,7 +71,7 @@
 
     invoke-virtual {p2, p3}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
-    iget-object p0, p0, Lcom/android/server/secrecy/you/you;->wN:Lcom/android/server/secrecy/you/zta;
+    iget-object p0, p0, Lcom/android/server/secrecy/you/you;->LN:Lcom/android/server/secrecy/you/zta;
 
     new-instance v0, Ljava/lang/StringBuilder;
 

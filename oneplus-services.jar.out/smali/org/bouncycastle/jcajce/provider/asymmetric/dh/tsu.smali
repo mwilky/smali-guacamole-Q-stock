@@ -6,17 +6,17 @@
 # static fields
 .field private static final ONE:Ljava/math/BigInteger;
 
-.field private static final lra:Ljava/math/BigInteger;
+.field private static final wra:Ljava/math/BigInteger;
 
 
 # instance fields
 .field private g:Ljava/math/BigInteger;
 
-.field private final kra:Lorg/bouncycastle/crypto/tsu;
-
 .field private p:Ljava/math/BigInteger;
 
 .field private result:[B
+
+.field private final vra:Lorg/bouncycastle/crypto/tsu;
 
 .field private x:Ljava/math/BigInteger;
 
@@ -39,7 +39,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lorg/bouncycastle/jcajce/provider/asymmetric/dh/tsu;->lra:Ljava/math/BigInteger;
+    sput-object v0, Lorg/bouncycastle/jcajce/provider/asymmetric/dh/tsu;->wra:Ljava/math/BigInteger;
 
     return-void
 .end method
@@ -63,7 +63,7 @@
 
     const/4 p1, 0x0
 
-    iput-object p1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dh/tsu;->kra:Lorg/bouncycastle/crypto/tsu;
+    iput-object p1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dh/tsu;->vra:Lorg/bouncycastle/crypto/tsu;
 
     return-void
 .end method
@@ -73,7 +73,7 @@
 
     invoke-direct {p0, p1, p3}, Lorg/bouncycastle/jcajce/provider/asymmetric/util/zta;-><init>(Ljava/lang/String;Lorg/bouncycastle/crypto/dma;)V
 
-    iput-object p2, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dh/tsu;->kra:Lorg/bouncycastle/crypto/tsu;
+    iput-object p2, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dh/tsu;->vra:Lorg/bouncycastle/crypto/tsu;
 
     return-void
 .end method
@@ -96,7 +96,7 @@
 
     check-cast p1, Lorg/bouncycastle/jcajce/provider/asymmetric/dh/BCDHPrivateKey;
 
-    invoke-virtual {p1}, Lorg/bouncycastle/jcajce/provider/asymmetric/dh/BCDHPrivateKey;->Fj()Lorg/bouncycastle/crypto/wtn/kth;
+    invoke-virtual {p1}, Lorg/bouncycastle/jcajce/provider/asymmetric/dh/BCDHPrivateKey;->Hj()Lorg/bouncycastle/crypto/wtn/kth;
 
     move-result-object p0
 
@@ -165,7 +165,7 @@
 
     check-cast p1, Lorg/bouncycastle/jcajce/provider/asymmetric/dh/BCDHPublicKey;
 
-    invoke-virtual {p1}, Lorg/bouncycastle/jcajce/provider/asymmetric/dh/BCDHPublicKey;->Fj()Lorg/bouncycastle/crypto/wtn/bio;
+    invoke-virtual {p1}, Lorg/bouncycastle/jcajce/provider/asymmetric/dh/BCDHPublicKey;->Hj()Lorg/bouncycastle/crypto/wtn/bio;
 
     move-result-object p0
 
@@ -190,7 +190,7 @@
 
     check-cast p0, Lorg/bouncycastle/jcajce/sis/you;
 
-    invoke-virtual {p0}, Lorg/bouncycastle/jcajce/sis/you;->tg()Lorg/bouncycastle/crypto/wtn/cno;
+    invoke-virtual {p0}, Lorg/bouncycastle/jcajce/sis/you;->vg()Lorg/bouncycastle/crypto/wtn/cno;
 
     move-result-object p0
 
@@ -296,7 +296,7 @@
 
     if-eqz v0, :cond_2
 
-    sget-object v1, Lorg/bouncycastle/jcajce/provider/asymmetric/dh/tsu;->lra:Ljava/math/BigInteger;
+    sget-object v1, Lorg/bouncycastle/jcajce/provider/asymmetric/dh/tsu;->wra:Ljava/math/BigInteger;
 
     invoke-virtual {v0, v1}, Ljava/math/BigInteger;->compareTo(Ljava/math/BigInteger;)I
 
@@ -607,7 +607,7 @@
     const/4 p2, 0x0
 
     :goto_0
-    iput-object p2, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/util/zta;->era:[B
+    iput-object p2, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/util/zta;->pra:[B
 
     goto :goto_1
 
@@ -616,7 +616,7 @@
 
     if-eqz p3, :cond_2
 
-    iget-object p3, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/util/zta;->Roa:Lorg/bouncycastle/crypto/dma;
+    iget-object p3, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/util/zta;->bpa:Lorg/bouncycastle/crypto/dma;
 
     if-eqz p3, :cond_1
 
@@ -642,7 +642,7 @@
 
     check-cast p2, Lorg/bouncycastle/jcajce/sis/tsu;
 
-    invoke-virtual {p2}, Lorg/bouncycastle/jcajce/sis/tsu;->Kj()[B
+    invoke-virtual {p2}, Lorg/bouncycastle/jcajce/sis/tsu;->Mj()[B
 
     move-result-object p2
 
@@ -714,14 +714,6 @@
     throw p0
 .end method
 
-.method protected sg()[B
-    .locals 0
-
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dh/tsu;->result:[B
-
-    return-object p0
-.end method
-
 .method protected tsu(Ljava/math/BigInteger;)[B
     .locals 3
 
@@ -784,6 +776,14 @@
     array-length v2, p1
 
     invoke-static {p1, v0, p0, v1, v2}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+
+    return-object p0
+.end method
+
+.method protected ug()[B
+    .locals 0
+
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dh/tsu;->result:[B
 
     return-object p0
 .end method

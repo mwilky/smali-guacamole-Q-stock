@@ -45,7 +45,7 @@
 
     const-string p0, "OPCS"
 
-    const-string v0, "# mTrackAlarmListener # sENABLE false, return"
+    const-string v0, "# mCalculateAlarmListener # sENABLE false, return"
 
     invoke-static {p0, v0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
@@ -58,7 +58,7 @@
 
     move-result-object v0
 
-    const/16 v1, 0xc
+    const/4 v1, 0x7
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->hasMessages(I)Z
 

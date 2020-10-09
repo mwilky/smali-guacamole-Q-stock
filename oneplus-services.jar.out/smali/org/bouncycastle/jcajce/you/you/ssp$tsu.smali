@@ -80,7 +80,7 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sget-object v2, Lorg/bouncycastle/asn1/bio/you;->aOa:Lorg/bouncycastle/asn1/bvj;
+    sget-object v2, Lorg/bouncycastle/asn1/bio/you;->lOa:Lorg/bouncycastle/asn1/bvj;
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -148,7 +148,7 @@
 
     invoke-virtual {p0, p1, v2, v0}, Lorg/bouncycastle/jcajce/you/you/you;->zta(Lorg/bouncycastle/jcajce/provider/config/zta;Ljava/lang/String;Lorg/bouncycastle/asn1/bvj;)V
 
-    sget-object v0, Lorg/bouncycastle/asn1/bio/you;->aOa:Lorg/bouncycastle/asn1/bvj;
+    sget-object v0, Lorg/bouncycastle/asn1/bio/you;->lOa:Lorg/bouncycastle/asn1/bvj;
 
     invoke-virtual {p0, p1, v2, v0}, Lorg/bouncycastle/jcajce/you/you/you;->zta(Lorg/bouncycastle/jcajce/provider/config/zta;Ljava/lang/String;Lorg/bouncycastle/asn1/bvj;)V
 

@@ -120,7 +120,7 @@
 
     invoke-virtual {p0, p1, v1, v0, v2}, Lorg/bouncycastle/jcajce/you/you/you;->zta(Lorg/bouncycastle/jcajce/provider/config/zta;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    sget-object v0, Lorg/bouncycastle/asn1/rtg/zta;->LMa:Lorg/bouncycastle/asn1/bvj;
+    sget-object v0, Lorg/bouncycastle/asn1/rtg/zta;->WMa:Lorg/bouncycastle/asn1/bvj;
 
     invoke-virtual {p0, p1, v1, v0}, Lorg/bouncycastle/jcajce/you/you/you;->zta(Lorg/bouncycastle/jcajce/provider/config/zta;Ljava/lang/String;Lorg/bouncycastle/asn1/bvj;)V
 

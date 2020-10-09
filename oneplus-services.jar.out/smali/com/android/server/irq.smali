@@ -22,33 +22,23 @@
 
 .field private static final TAG:Ljava/lang/String; = "FastCharge"
 
-.field private static final lf:Z = false
-
 .field private static mContext:Landroid/content/Context; = null
 
-.field private static final mf:Ljava/lang/String; = "BatteryLed"
+.field private static final rf:Z = false
 
-.field private static final nf:Ljava/lang/String; = "/sys/class/power_supply/battery/fastchg_status"
+.field private static final sf:Ljava/lang/String; = "BatteryLed"
 
-.field private static final of:Ljava/lang/String; = "/proc/enhance_dash"
+.field private static final tf:Ljava/lang/String; = "/sys/class/power_supply/battery/fastchg_status"
 
-.field private static final pf:Ljava/lang/String; = "sys/class/power_supply/usb/real_type"
+.field private static final uf:Ljava/lang/String; = "/proc/enhance_dash"
 
-.field private static qf:Lcom/android/server/irq$zta;
+.field private static final vf:Ljava/lang/String; = "sys/class/power_supply/usb/real_type"
+
+.field private static wf:Lcom/android/server/irq$zta;
 
 
 # instance fields
-.field private ff:Z
-
-.field private gf:Z
-
-.field private hf:Z
-
-.field private if:Z
-
-.field private jf:Z
-
-.field private kf:Z
+.field private lf:Z
 
 .field private mBatteryLevel:I
 
@@ -59,6 +49,16 @@
 .field private final mLock:Ljava/lang/Object;
 
 .field private mPlugType:I
+
+.field private mf:Z
+
+.field private nf:Z
+
+.field private of:Z
+
+.field private pf:Z
+
+.field private qf:Z
 
 
 # direct methods
@@ -86,7 +86,7 @@
     return-void
 .end method
 
-.method private Gl()I
+.method private Jl()I
     .locals 6
 
     const-string p0, "getFastChargeType io close exception :"
@@ -325,7 +325,7 @@
     throw v1
 .end method
 
-.method private Hl()Z
+.method private Kl()Z
     .locals 6
 
     const-string p0, "Failure in reading charger type"
@@ -389,7 +389,7 @@
     return v2
 .end method
 
-.method private Il()V
+.method private Ll()V
     .locals 4
 
     sget-object p0, Lcom/android/server/irq;->mContext:Landroid/content/Context;
@@ -452,25 +452,25 @@
 
     move-result p0
 
-    sget-object v2, Lcom/android/server/irq;->qf:Lcom/android/server/irq$zta;
+    sget-object v2, Lcom/android/server/irq;->wf:Lcom/android/server/irq$zta;
 
     invoke-virtual {v2, v0, v1, p0}, Lcom/android/server/irq$zta;->tsu(III)V
 
-    sget-object p0, Lcom/android/server/irq;->qf:Lcom/android/server/irq$zta;
+    sget-object p0, Lcom/android/server/irq;->wf:Lcom/android/server/irq$zta;
 
     invoke-virtual {p0}, Lcom/android/server/irq$zta;->updateLightsLocked()V
 
     return-void
 .end method
 
-.method private Jl()V
+.method private Ml()V
     .locals 2
 
-    iget-boolean v0, p0, Lcom/android/server/irq;->if:Z
+    iget-boolean v0, p0, Lcom/android/server/irq;->of:Z
 
     if-eqz v0, :cond_0
 
-    invoke-direct {p0}, Lcom/android/server/irq;->Hl()Z
+    invoke-direct {p0}, Lcom/android/server/irq;->Kl()Z
 
     move-result v0
 
@@ -480,7 +480,7 @@
     const/4 v0, 0x0
 
     :goto_0
-    iput-boolean v0, p0, Lcom/android/server/irq;->hf:Z
+    iput-boolean v0, p0, Lcom/android/server/irq;->nf:Z
 
     sget-boolean v0, Lcom/android/server/irq;->DEBUG:Z
 
@@ -494,7 +494,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean p0, p0, Lcom/android/server/irq;->hf:Z
+    iget-boolean p0, p0, Lcom/android/server/irq;->nf:Z
 
     invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -513,7 +513,7 @@
 .method static synthetic access$100()Lcom/android/server/irq$zta;
     .locals 1
 
-    sget-object v0, Lcom/android/server/irq;->qf:Lcom/android/server/irq$zta;
+    sget-object v0, Lcom/android/server/irq;->wf:Lcom/android/server/irq$zta;
 
     return-object v0
 .end method
@@ -537,7 +537,7 @@
 .method static synthetic cno(Lcom/android/server/irq;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/irq;->Il()V
+    invoke-direct {p0}, Lcom/android/server/irq;->Ll()V
 
     return-void
 .end method
@@ -553,7 +553,7 @@
 .method static synthetic rtg(Lcom/android/server/irq;)Z
     .locals 0
 
-    iget-boolean p0, p0, Lcom/android/server/irq;->gf:Z
+    iget-boolean p0, p0, Lcom/android/server/irq;->mf:Z
 
     return p0
 .end method
@@ -577,7 +577,7 @@
 .method static synthetic tsu(Lcom/android/server/irq;)Z
     .locals 0
 
-    iget-boolean p0, p0, Lcom/android/server/irq;->hf:Z
+    iget-boolean p0, p0, Lcom/android/server/irq;->nf:Z
 
     return p0
 .end method
@@ -593,7 +593,7 @@
 .method static synthetic you(Lcom/android/server/irq;Z)Z
     .locals 0
 
-    iput-boolean p1, p0, Lcom/android/server/irq;->gf:Z
+    iput-boolean p1, p0, Lcom/android/server/irq;->mf:Z
 
     return p1
 .end method
@@ -601,7 +601,7 @@
 .method static synthetic zta(Lcom/android/server/irq;)Z
     .locals 0
 
-    iget-boolean p0, p0, Lcom/android/server/irq;->ff:Z
+    iget-boolean p0, p0, Lcom/android/server/irq;->lf:Z
 
     return p0
 .end method
@@ -609,7 +609,7 @@
 .method static synthetic zta(Lcom/android/server/irq;Z)Z
     .locals 0
 
-    iput-boolean p1, p0, Lcom/android/server/irq;->ff:Z
+    iput-boolean p1, p0, Lcom/android/server/irq;->lf:Z
 
     return p1
 .end method
@@ -619,13 +619,13 @@
 .method public addIntentExtra(Landroid/content/Intent;)V
     .locals 5
 
-    iget-boolean v0, p0, Lcom/android/server/irq;->jf:Z
+    iget-boolean v0, p0, Lcom/android/server/irq;->pf:Z
 
     const/4 v1, 0x1
 
     if-ne v0, v1, :cond_0
 
-    invoke-direct {p0}, Lcom/android/server/irq;->Gl()I
+    invoke-direct {p0}, Lcom/android/server/irq;->Jl()I
 
     move-result v0
 
@@ -635,7 +635,7 @@
     move v0, v1
 
     :goto_0
-    iget-boolean v2, p0, Lcom/android/server/irq;->hf:Z
+    iget-boolean v2, p0, Lcom/android/server/irq;->nf:Z
 
     const/4 v3, 0x0
 
@@ -730,7 +730,7 @@
 .method public getFastChargeStatus()Z
     .locals 0
 
-    iget-boolean p0, p0, Lcom/android/server/irq;->hf:Z
+    iget-boolean p0, p0, Lcom/android/server/irq;->nf:Z
 
     return p0
 .end method
@@ -738,7 +738,7 @@
 .method public getLastFastChargeStatus()Z
     .locals 0
 
-    iget-boolean p0, p0, Lcom/android/server/irq;->kf:Z
+    iget-boolean p0, p0, Lcom/android/server/irq;->qf:Z
 
     return p0
 .end method
@@ -771,7 +771,7 @@
 
     if-eqz v0, :cond_1
 
-    iput-boolean v1, p0, Lcom/android/server/irq;->if:Z
+    iput-boolean v1, p0, Lcom/android/server/irq;->of:Z
 
     :cond_1
     new-instance v0, Ljava/io/File;
@@ -786,7 +786,7 @@
 
     if-eqz v0, :cond_2
 
-    iput-boolean v1, p0, Lcom/android/server/irq;->jf:Z
+    iput-boolean v1, p0, Lcom/android/server/irq;->pf:Z
 
     :cond_2
     if-eqz p1, :cond_3
@@ -819,7 +819,7 @@
 
     invoke-direct {v0, p0, p1, v1}, Lcom/android/server/irq$zta;-><init>(Lcom/android/server/irq;Landroid/content/Context;Lcom/android/server/lights/LightsManager;)V
 
-    sput-object v0, Lcom/android/server/irq;->qf:Lcom/android/server/irq$zta;
+    sput-object v0, Lcom/android/server/irq;->wf:Lcom/android/server/irq$zta;
 
     :cond_3
     return-void
@@ -902,7 +902,7 @@
 
     invoke-virtual {p2, v2, v0, v1, v3}, Landroid/content/ContentResolver;->registerContentObserver(Landroid/net/Uri;ZLandroid/database/ContentObserver;I)V
 
-    invoke-direct {p0}, Lcom/android/server/irq;->Il()V
+    invoke-direct {p0}, Lcom/android/server/irq;->Ll()V
 
     monitor-exit p1
 
@@ -973,7 +973,7 @@
 
     iput p1, p0, Lcom/android/server/irq;->mBatteryStatus:I
 
-    invoke-direct {p0}, Lcom/android/server/irq;->Jl()V
+    invoke-direct {p0}, Lcom/android/server/irq;->Ml()V
 
     return-void
 .end method
@@ -981,15 +981,15 @@
 .method public updateLastFastChargeStatus()Z
     .locals 2
 
-    iget-boolean v0, p0, Lcom/android/server/irq;->kf:Z
+    iget-boolean v0, p0, Lcom/android/server/irq;->qf:Z
 
-    iget-boolean v1, p0, Lcom/android/server/irq;->hf:Z
+    iget-boolean v1, p0, Lcom/android/server/irq;->nf:Z
 
     if-eq v0, v1, :cond_0
 
     const/4 v0, 0x1
 
-    iput-boolean v1, p0, Lcom/android/server/irq;->kf:Z
+    iput-boolean v1, p0, Lcom/android/server/irq;->qf:Z
 
     goto :goto_0
 
@@ -1003,7 +1003,7 @@
 .method public updateLightsLocked()Z
     .locals 0
 
-    sget-object p0, Lcom/android/server/irq;->qf:Lcom/android/server/irq$zta;
+    sget-object p0, Lcom/android/server/irq;->wf:Lcom/android/server/irq$zta;
 
     if-eqz p0, :cond_0
 

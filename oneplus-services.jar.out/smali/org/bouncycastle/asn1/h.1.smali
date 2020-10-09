@@ -38,7 +38,7 @@
 
 
 # virtual methods
-.method Cg()I
+.method Eg()I
     .locals 2
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -56,15 +56,15 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lorg/bouncycastle/asn1/vdb;->Cg()I
+    invoke-virtual {v0}, Lorg/bouncycastle/asn1/vdb;->Eg()I
 
     move-result v0
 
-    iget-boolean v1, p0, Lorg/bouncycastle/asn1/lqr;->tsa:Z
+    iget-boolean v1, p0, Lorg/bouncycastle/asn1/lqr;->Esa:Z
 
     if-eqz v1, :cond_0
 
-    iget p0, p0, Lorg/bouncycastle/asn1/lqr;->ssa:I
+    iget p0, p0, Lorg/bouncycastle/asn1/lqr;->Dsa:I
 
     invoke-static {p0}, Lorg/bouncycastle/asn1/ia;->ia(I)I
 
@@ -83,7 +83,7 @@
     :cond_0
     add-int/lit8 v0, v0, -0x1
 
-    iget p0, p0, Lorg/bouncycastle/asn1/lqr;->ssa:I
+    iget p0, p0, Lorg/bouncycastle/asn1/lqr;->Dsa:I
 
     invoke-static {p0}, Lorg/bouncycastle/asn1/ia;->ia(I)I
 
@@ -94,7 +94,7 @@
     return p0
 
     :cond_1
-    iget p0, p0, Lorg/bouncycastle/asn1/lqr;->ssa:I
+    iget p0, p0, Lorg/bouncycastle/asn1/lqr;->Dsa:I
 
     invoke-static {p0}, Lorg/bouncycastle/asn1/ia;->ia(I)I
 
@@ -114,7 +114,7 @@
 
     if-nez v0, :cond_1
 
-    iget-boolean v0, p0, Lorg/bouncycastle/asn1/lqr;->tsa:Z
+    iget-boolean v0, p0, Lorg/bouncycastle/asn1/lqr;->Esa:Z
 
     if-eqz v0, :cond_0
 
@@ -127,7 +127,7 @@
 
     move-result-object p0
 
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/vdb;->Dg()Lorg/bouncycastle/asn1/vdb;
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/vdb;->Fg()Lorg/bouncycastle/asn1/vdb;
 
     move-result-object p0
 
@@ -149,7 +149,7 @@
         }
     .end annotation
 
-    iget v0, p0, Lorg/bouncycastle/asn1/lqr;->ssa:I
+    iget v0, p0, Lorg/bouncycastle/asn1/lqr;->Dsa:I
 
     const/16 v1, 0xa0
 
@@ -163,7 +163,7 @@
 
     if-nez v0, :cond_5
 
-    iget-boolean v0, p0, Lorg/bouncycastle/asn1/lqr;->tsa:Z
+    iget-boolean v0, p0, Lorg/bouncycastle/asn1/lqr;->Esa:Z
 
     if-nez v0, :cond_4
 
@@ -179,7 +179,7 @@
 
     check-cast v0, Lorg/bouncycastle/asn1/ivd;
 
-    invoke-virtual {v0}, Lorg/bouncycastle/asn1/ivd;->Rg()Ljava/util/Enumeration;
+    invoke-virtual {v0}, Lorg/bouncycastle/asn1/ivd;->Tg()Ljava/util/Enumeration;
 
     move-result-object p0
 
@@ -196,7 +196,7 @@
 
     invoke-direct {p0, v0}, Lorg/bouncycastle/asn1/ivd;-><init>([B)V
 
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/ivd;->Rg()Ljava/util/Enumeration;
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/ivd;->Tg()Ljava/util/Enumeration;
 
     move-result-object p0
 
@@ -209,7 +209,7 @@
 
     check-cast v0, Lorg/bouncycastle/asn1/obl;
 
-    invoke-virtual {v0}, Lorg/bouncycastle/asn1/obl;->Rg()Ljava/util/Enumeration;
+    invoke-virtual {v0}, Lorg/bouncycastle/asn1/obl;->Tg()Ljava/util/Enumeration;
 
     move-result-object p0
 
@@ -222,7 +222,7 @@
 
     check-cast v0, Lorg/bouncycastle/asn1/ear;
 
-    invoke-virtual {v0}, Lorg/bouncycastle/asn1/ear;->Rg()Ljava/util/Enumeration;
+    invoke-virtual {v0}, Lorg/bouncycastle/asn1/ear;->Tg()Ljava/util/Enumeration;
 
     move-result-object p0
 

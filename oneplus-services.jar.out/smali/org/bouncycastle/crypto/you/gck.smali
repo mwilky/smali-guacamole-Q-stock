@@ -7,31 +7,31 @@
 
 
 # static fields
-.field private static final aAa:I = 0x14
+.field private static final DAa:I = 0x5a827999
 
-.field private static final sAa:I = 0x5a827999
+.field private static final EAa:I = 0x6ed9eba1
 
-.field private static final tAa:I = 0x6ed9eba1
+.field private static final FAa:I = -0x70e44324
 
-.field private static final uAa:I = -0x70e44324
+.field private static final GAa:I = -0x359d3e2a
 
-.field private static final vAa:I = -0x359d3e2a
+.field private static final lAa:I = 0x14
 
 
 # instance fields
+.field private CAa:I
+
 .field private H2:I
 
 .field private H3:I
 
 .field private X:[I
 
-.field private Yza:I
+.field private iAa:I
 
-.field private Zza:I
+.field private jAa:I
 
-.field private _za:I
-
-.field private rAa:I
+.field private kAa:I
 
 
 # direct methods
@@ -84,7 +84,7 @@
 
     move-result v0
 
-    iput v0, p0, Lorg/bouncycastle/crypto/you/gck;->Yza:I
+    iput v0, p0, Lorg/bouncycastle/crypto/you/gck;->iAa:I
 
     const/16 v0, 0x14
 
@@ -108,7 +108,7 @@
 
     move-result v0
 
-    iput v0, p0, Lorg/bouncycastle/crypto/you/gck;->Zza:I
+    iput v0, p0, Lorg/bouncycastle/crypto/you/gck;->jAa:I
 
     const/16 v0, 0x20
 
@@ -116,7 +116,7 @@
 
     move-result v0
 
-    iput v0, p0, Lorg/bouncycastle/crypto/you/gck;->rAa:I
+    iput v0, p0, Lorg/bouncycastle/crypto/you/gck;->CAa:I
 
     const/16 v0, 0x24
 
@@ -124,12 +124,12 @@
 
     move-result v0
 
-    iput v0, p0, Lorg/bouncycastle/crypto/you/gck;->_za:I
+    iput v0, p0, Lorg/bouncycastle/crypto/you/gck;->kAa:I
 
     const/4 v0, 0x0
 
     :goto_0
-    iget v1, p0, Lorg/bouncycastle/crypto/you/gck;->_za:I
+    iget v1, p0, Lorg/bouncycastle/crypto/you/gck;->kAa:I
 
     if-eq v0, v1, :cond_0
 
@@ -196,9 +196,9 @@
 .method private zta(Lorg/bouncycastle/crypto/you/gck;)V
     .locals 4
 
-    iget v0, p1, Lorg/bouncycastle/crypto/you/gck;->Yza:I
+    iget v0, p1, Lorg/bouncycastle/crypto/you/gck;->iAa:I
 
-    iput v0, p0, Lorg/bouncycastle/crypto/you/gck;->Yza:I
+    iput v0, p0, Lorg/bouncycastle/crypto/you/gck;->iAa:I
 
     iget v0, p1, Lorg/bouncycastle/crypto/you/gck;->H2:I
 
@@ -208,13 +208,13 @@
 
     iput v0, p0, Lorg/bouncycastle/crypto/you/gck;->H3:I
 
-    iget v0, p1, Lorg/bouncycastle/crypto/you/gck;->Zza:I
+    iget v0, p1, Lorg/bouncycastle/crypto/you/gck;->jAa:I
 
-    iput v0, p0, Lorg/bouncycastle/crypto/you/gck;->Zza:I
+    iput v0, p0, Lorg/bouncycastle/crypto/you/gck;->jAa:I
 
-    iget v0, p1, Lorg/bouncycastle/crypto/you/gck;->rAa:I
+    iget v0, p1, Lorg/bouncycastle/crypto/you/gck;->CAa:I
 
-    iput v0, p0, Lorg/bouncycastle/crypto/you/gck;->rAa:I
+    iput v0, p0, Lorg/bouncycastle/crypto/you/gck;->CAa:I
 
     iget-object v0, p1, Lorg/bouncycastle/crypto/you/gck;->X:[I
 
@@ -226,9 +226,9 @@
 
     invoke-static {v0, v3, v1, v3, v2}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    iget p1, p1, Lorg/bouncycastle/crypto/you/gck;->_za:I
+    iget p1, p1, Lorg/bouncycastle/crypto/you/gck;->kAa:I
 
-    iput p1, p0, Lorg/bouncycastle/crypto/you/gck;->_za:I
+    iput p1, p0, Lorg/bouncycastle/crypto/you/gck;->kAa:I
 
     return-void
 .end method
@@ -238,13 +238,13 @@
 .method protected cjf(J)V
     .locals 4
 
-    iget v0, p0, Lorg/bouncycastle/crypto/you/gck;->_za:I
+    iget v0, p0, Lorg/bouncycastle/crypto/you/gck;->kAa:I
 
     const/16 v1, 0xe
 
     if-le v0, v1, :cond_0
 
-    invoke-virtual {p0}, Lorg/bouncycastle/crypto/you/gck;->ij()V
+    invoke-virtual {p0}, Lorg/bouncycastle/crypto/you/gck;->kj()V
 
     :cond_0
     iget-object p0, p0, Lorg/bouncycastle/crypto/you/gck;->X:[I
@@ -281,7 +281,7 @@
 
     invoke-virtual {p0}, Lorg/bouncycastle/crypto/you/ssp;->finish()V
 
-    iget v0, p0, Lorg/bouncycastle/crypto/you/gck;->Yza:I
+    iget v0, p0, Lorg/bouncycastle/crypto/you/gck;->iAa:I
 
     invoke-static {v0, p1, p2}, Lorg/bouncycastle/util/igw;->you(I[BI)V
 
@@ -297,13 +297,13 @@
 
     invoke-static {v0, p1, v1}, Lorg/bouncycastle/util/igw;->you(I[BI)V
 
-    iget v0, p0, Lorg/bouncycastle/crypto/you/gck;->Zza:I
+    iget v0, p0, Lorg/bouncycastle/crypto/you/gck;->jAa:I
 
     add-int/lit8 v1, p2, 0xc
 
     invoke-static {v0, p1, v1}, Lorg/bouncycastle/util/igw;->you(I[BI)V
 
-    iget v0, p0, Lorg/bouncycastle/crypto/you/gck;->rAa:I
+    iget v0, p0, Lorg/bouncycastle/crypto/you/gck;->CAa:I
 
     add-int/lit8 p2, p2, 0x10
 
@@ -316,7 +316,81 @@
     return p0
 .end method
 
-.method protected ij()V
+.method public ire()[B
+    .locals 4
+
+    iget v0, p0, Lorg/bouncycastle/crypto/you/gck;->kAa:I
+
+    mul-int/lit8 v0, v0, 0x4
+
+    add-int/lit8 v0, v0, 0x28
+
+    new-array v0, v0, [B
+
+    invoke-super {p0, v0}, Lorg/bouncycastle/crypto/you/ssp;->dma([B)V
+
+    iget v1, p0, Lorg/bouncycastle/crypto/you/gck;->iAa:I
+
+    const/16 v2, 0x10
+
+    invoke-static {v1, v0, v2}, Lorg/bouncycastle/util/igw;->you(I[BI)V
+
+    iget v1, p0, Lorg/bouncycastle/crypto/you/gck;->H2:I
+
+    const/16 v2, 0x14
+
+    invoke-static {v1, v0, v2}, Lorg/bouncycastle/util/igw;->you(I[BI)V
+
+    iget v1, p0, Lorg/bouncycastle/crypto/you/gck;->H3:I
+
+    const/16 v2, 0x18
+
+    invoke-static {v1, v0, v2}, Lorg/bouncycastle/util/igw;->you(I[BI)V
+
+    iget v1, p0, Lorg/bouncycastle/crypto/you/gck;->jAa:I
+
+    const/16 v2, 0x1c
+
+    invoke-static {v1, v0, v2}, Lorg/bouncycastle/util/igw;->you(I[BI)V
+
+    iget v1, p0, Lorg/bouncycastle/crypto/you/gck;->CAa:I
+
+    const/16 v2, 0x20
+
+    invoke-static {v1, v0, v2}, Lorg/bouncycastle/util/igw;->you(I[BI)V
+
+    iget v1, p0, Lorg/bouncycastle/crypto/you/gck;->kAa:I
+
+    const/16 v2, 0x24
+
+    invoke-static {v1, v0, v2}, Lorg/bouncycastle/util/igw;->you(I[BI)V
+
+    const/4 v1, 0x0
+
+    :goto_0
+    iget v2, p0, Lorg/bouncycastle/crypto/you/gck;->kAa:I
+
+    if-eq v1, v2, :cond_0
+
+    iget-object v2, p0, Lorg/bouncycastle/crypto/you/gck;->X:[I
+
+    aget v2, v2, v1
+
+    mul-int/lit8 v3, v1, 0x4
+
+    add-int/lit8 v3, v3, 0x28
+
+    invoke-static {v2, v0, v3}, Lorg/bouncycastle/util/igw;->you(I[BI)V
+
+    add-int/lit8 v1, v1, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    return-object v0
+.end method
+
+.method protected kj()V
     .locals 14
 
     const/16 v0, 0x10
@@ -365,15 +439,15 @@
     goto :goto_0
 
     :cond_0
-    iget v1, p0, Lorg/bouncycastle/crypto/you/gck;->Yza:I
+    iget v1, p0, Lorg/bouncycastle/crypto/you/gck;->iAa:I
 
     iget v2, p0, Lorg/bouncycastle/crypto/you/gck;->H2:I
 
     iget v3, p0, Lorg/bouncycastle/crypto/you/gck;->H3:I
 
-    iget v4, p0, Lorg/bouncycastle/crypto/you/gck;->Zza:I
+    iget v4, p0, Lorg/bouncycastle/crypto/you/gck;->jAa:I
 
-    iget v5, p0, Lorg/bouncycastle/crypto/you/gck;->rAa:I
+    iget v5, p0, Lorg/bouncycastle/crypto/you/gck;->CAa:I
 
     const/4 v6, 0x0
 
@@ -1047,11 +1121,11 @@
     goto/16 :goto_4
 
     :cond_4
-    iget v1, p0, Lorg/bouncycastle/crypto/you/gck;->Yza:I
+    iget v1, p0, Lorg/bouncycastle/crypto/you/gck;->iAa:I
 
     add-int/2addr v1, v2
 
-    iput v1, p0, Lorg/bouncycastle/crypto/you/gck;->Yza:I
+    iput v1, p0, Lorg/bouncycastle/crypto/you/gck;->iAa:I
 
     iget v1, p0, Lorg/bouncycastle/crypto/you/gck;->H2:I
 
@@ -1065,19 +1139,19 @@
 
     iput v1, p0, Lorg/bouncycastle/crypto/you/gck;->H3:I
 
-    iget v1, p0, Lorg/bouncycastle/crypto/you/gck;->Zza:I
+    iget v1, p0, Lorg/bouncycastle/crypto/you/gck;->jAa:I
 
     add-int/2addr v1, v7
 
-    iput v1, p0, Lorg/bouncycastle/crypto/you/gck;->Zza:I
+    iput v1, p0, Lorg/bouncycastle/crypto/you/gck;->jAa:I
 
-    iget v1, p0, Lorg/bouncycastle/crypto/you/gck;->rAa:I
+    iget v1, p0, Lorg/bouncycastle/crypto/you/gck;->CAa:I
 
     add-int/2addr v1, v5
 
-    iput v1, p0, Lorg/bouncycastle/crypto/you/gck;->rAa:I
+    iput v1, p0, Lorg/bouncycastle/crypto/you/gck;->CAa:I
 
-    iput v6, p0, Lorg/bouncycastle/crypto/you/gck;->_za:I
+    iput v6, p0, Lorg/bouncycastle/crypto/you/gck;->kAa:I
 
     move v1, v6
 
@@ -1096,80 +1170,6 @@
     return-void
 .end method
 
-.method public ire()[B
-    .locals 4
-
-    iget v0, p0, Lorg/bouncycastle/crypto/you/gck;->_za:I
-
-    mul-int/lit8 v0, v0, 0x4
-
-    add-int/lit8 v0, v0, 0x28
-
-    new-array v0, v0, [B
-
-    invoke-super {p0, v0}, Lorg/bouncycastle/crypto/you/ssp;->dma([B)V
-
-    iget v1, p0, Lorg/bouncycastle/crypto/you/gck;->Yza:I
-
-    const/16 v2, 0x10
-
-    invoke-static {v1, v0, v2}, Lorg/bouncycastle/util/igw;->you(I[BI)V
-
-    iget v1, p0, Lorg/bouncycastle/crypto/you/gck;->H2:I
-
-    const/16 v2, 0x14
-
-    invoke-static {v1, v0, v2}, Lorg/bouncycastle/util/igw;->you(I[BI)V
-
-    iget v1, p0, Lorg/bouncycastle/crypto/you/gck;->H3:I
-
-    const/16 v2, 0x18
-
-    invoke-static {v1, v0, v2}, Lorg/bouncycastle/util/igw;->you(I[BI)V
-
-    iget v1, p0, Lorg/bouncycastle/crypto/you/gck;->Zza:I
-
-    const/16 v2, 0x1c
-
-    invoke-static {v1, v0, v2}, Lorg/bouncycastle/util/igw;->you(I[BI)V
-
-    iget v1, p0, Lorg/bouncycastle/crypto/you/gck;->rAa:I
-
-    const/16 v2, 0x20
-
-    invoke-static {v1, v0, v2}, Lorg/bouncycastle/util/igw;->you(I[BI)V
-
-    iget v1, p0, Lorg/bouncycastle/crypto/you/gck;->_za:I
-
-    const/16 v2, 0x24
-
-    invoke-static {v1, v0, v2}, Lorg/bouncycastle/util/igw;->you(I[BI)V
-
-    const/4 v1, 0x0
-
-    :goto_0
-    iget v2, p0, Lorg/bouncycastle/crypto/you/gck;->_za:I
-
-    if-eq v1, v2, :cond_0
-
-    iget-object v2, p0, Lorg/bouncycastle/crypto/you/gck;->X:[I
-
-    aget v2, v2, v1
-
-    mul-int/lit8 v3, v1, 0x4
-
-    add-int/lit8 v3, v3, 0x28
-
-    invoke-static {v2, v0, v3}, Lorg/bouncycastle/util/igw;->you(I[BI)V
-
-    add-int/lit8 v1, v1, 0x1
-
-    goto :goto_0
-
-    :cond_0
-    return-object v0
-.end method
-
 .method public les()I
     .locals 0
 
@@ -1185,7 +1185,7 @@
 
     const v0, 0x67452301
 
-    iput v0, p0, Lorg/bouncycastle/crypto/you/gck;->Yza:I
+    iput v0, p0, Lorg/bouncycastle/crypto/you/gck;->iAa:I
 
     const v0, -0x10325477
 
@@ -1197,15 +1197,15 @@
 
     const v0, 0x10325476
 
-    iput v0, p0, Lorg/bouncycastle/crypto/you/gck;->Zza:I
+    iput v0, p0, Lorg/bouncycastle/crypto/you/gck;->jAa:I
 
     const v0, -0x3c2d1e10
 
-    iput v0, p0, Lorg/bouncycastle/crypto/you/gck;->rAa:I
+    iput v0, p0, Lorg/bouncycastle/crypto/you/gck;->CAa:I
 
     const/4 v0, 0x0
 
-    iput v0, p0, Lorg/bouncycastle/crypto/you/gck;->_za:I
+    iput v0, p0, Lorg/bouncycastle/crypto/you/gck;->kAa:I
 
     move v1, v0
 
@@ -1265,17 +1265,17 @@
 
     iget-object p2, p0, Lorg/bouncycastle/crypto/you/gck;->X:[I
 
-    iget v0, p0, Lorg/bouncycastle/crypto/you/gck;->_za:I
+    iget v0, p0, Lorg/bouncycastle/crypto/you/gck;->kAa:I
 
     aput p1, p2, v0
 
     add-int/lit8 v0, v0, 0x1
 
-    iput v0, p0, Lorg/bouncycastle/crypto/you/gck;->_za:I
+    iput v0, p0, Lorg/bouncycastle/crypto/you/gck;->kAa:I
 
     if-ne v0, v2, :cond_0
 
-    invoke-virtual {p0}, Lorg/bouncycastle/crypto/you/gck;->ij()V
+    invoke-virtual {p0}, Lorg/bouncycastle/crypto/you/gck;->kj()V
 
     :cond_0
     return-void

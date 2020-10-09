@@ -15,15 +15,15 @@
 
 
 # static fields
-.field static final G:I = 0x3e8
-
-.field static final H:I = 0x3ea
-
-.field static final J:Ljava/lang/String; = "pkgName"
+.field static final J:I = 0x3e8
 
 .field static final KEY_UID:Ljava/lang/String; = "uid"
 
-.field static final W:Ljava/lang/String; = "pkgChangeAction"
+.field static final W:I = 0x3ea
+
+.field static final aa:Ljava/lang/String; = "pkgName"
+
+.field static final ba:Ljava/lang/String; = "pkgChangeAction"
 
 
 # instance fields

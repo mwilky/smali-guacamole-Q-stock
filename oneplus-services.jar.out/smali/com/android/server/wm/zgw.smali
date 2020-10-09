@@ -1,179 +1,260 @@
-.class public Lcom/android/server/wm/zgw;
+.class synthetic Lcom/android/server/wm/zgw;
 .super Ljava/lang/Object;
 .source ""
 
-# interfaces
-.implements Lcom/android/server/wm/IOpProcessResident;
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/android/server/wm/OpPowerConsumpStats;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1008
+    name = null
+.end annotation
 
 
 # static fields
-.field private static DEBUG_ONEPLUS:Z = false
-
-.field private static final TAG:Ljava/lang/String;
-
-.field private static final yV:I = 0x499602d2
-
-.field private static final zV:Ljava/lang/String; = "com.android.settings"
+.field static final synthetic eS:[I
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 1
+    .locals 3
 
-    sget-boolean v0, Landroid/os/Build;->DEBUG_ONEPLUS:Z
-
-    sput-boolean v0, Lcom/android/server/wm/zgw;->DEBUG_ONEPLUS:Z
-
-    const-class v0, Lcom/android/server/wm/ActivityTaskManagerServiceInjector;
-
-    invoke-virtual {v0}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
+    invoke-static {}, Lcom/android/internal/os/BatterySipper$DrainType;->values()[Lcom/android/internal/os/BatterySipper$DrainType;
 
     move-result-object v0
 
-    sput-object v0, Lcom/android/server/wm/zgw;->TAG:Ljava/lang/String;
+    array-length v0, v0
 
-    return-void
-.end method
+    new-array v0, v0, [I
 
-.method public constructor <init>()V
-    .locals 0
+    sput-object v0, Lcom/android/server/wm/zgw;->eS:[I
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    :try_start_0
+    sget-object v0, Lcom/android/server/wm/zgw;->eS:[I
 
-    return-void
-.end method
+    sget-object v1, Lcom/android/internal/os/BatterySipper$DrainType;->APP:Lcom/android/internal/os/BatterySipper$DrainType;
 
-
-# virtual methods
-.method A(I)I
-    .locals 0
-
-    const p0, 0x499602d2
-
-    sub-int/2addr p1, p0
-
-    return p1
-.end method
-
-.method public removeTaskByIdLocked(Lcom/android/server/wm/ActivityStackSupervisor;IZZLjava/lang/String;Landroid/util/SparseArray;I)Z
-    .locals 2
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lcom/android/server/wm/ActivityStackSupervisor;",
-            "IZZ",
-            "Ljava/lang/String;",
-            "Landroid/util/SparseArray<",
-            "Lcom/android/server/wm/WindowProcessController;",
-            ">;I)Z"
-        }
-    .end annotation
-
-    const/4 v0, 0x0
-
-    if-nez p1, :cond_0
-
-    return v0
-
-    :cond_0
-    invoke-virtual {p0, p2}, Lcom/android/server/wm/zgw;->A(I)I
+    invoke-virtual {v1}, Lcom/android/internal/os/BatterySipper$DrainType;->ordinal()I
 
     move-result v1
 
-    invoke-virtual {p0, p6, p7}, Lcom/android/server/wm/zgw;->zta(Landroid/util/SparseArray;I)Ljava/lang/String;
+    const/4 v2, 0x1
 
-    move-result-object p0
+    aput v2, v0, v1
+    :try_end_0
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
 
-    const-string p6, "com.android.settings"
+    :catch_0
+    :try_start_1
+    sget-object v0, Lcom/android/server/wm/zgw;->eS:[I
 
-    invoke-virtual {p6, p0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    sget-object v1, Lcom/android/internal/os/BatterySipper$DrainType;->AMBIENT_DISPLAY:Lcom/android/internal/os/BatterySipper$DrainType;
 
-    move-result p0
+    invoke-virtual {v1}, Lcom/android/internal/os/BatterySipper$DrainType;->ordinal()I
 
-    if-eqz p0, :cond_1
+    move-result v1
 
-    move p4, v0
+    const/4 v2, 0x2
 
-    :cond_1
-    if-gez v1, :cond_2
+    aput v2, v0, v1
+    :try_end_1
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_1
 
-    invoke-virtual {p1, p2, p3, p4, p5}, Lcom/android/server/wm/ActivityStackSupervisor;->removeTaskByIdLocked(IZZLjava/lang/String;)Z
+    :catch_1
+    :try_start_2
+    sget-object v0, Lcom/android/server/wm/zgw;->eS:[I
 
-    goto :goto_0
+    sget-object v1, Lcom/android/internal/os/BatterySipper$DrainType;->BLUETOOTH:Lcom/android/internal/os/BatterySipper$DrainType;
 
-    :cond_2
-    new-instance p0, Ljava/lang/StringBuilder;
+    invoke-virtual {v1}, Lcom/android/internal/os/BatterySipper$DrainType;->ordinal()I
 
-    invoke-direct {p0}, Ljava/lang/StringBuilder;-><init>()V
+    move-result v1
 
-    invoke-virtual {p0, p5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const/4 v2, 0x3
 
-    const-string p2, "-resident"
+    aput v2, v0, v1
+    :try_end_2
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_2 .. :try_end_2} :catch_2
 
-    invoke-virtual {p0, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    :catch_2
+    :try_start_3
+    sget-object v0, Lcom/android/server/wm/zgw;->eS:[I
 
-    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    sget-object v1, Lcom/android/internal/os/BatterySipper$DrainType;->CAMERA:Lcom/android/internal/os/BatterySipper$DrainType;
 
-    move-result-object p0
+    invoke-virtual {v1}, Lcom/android/internal/os/BatterySipper$DrainType;->ordinal()I
 
-    invoke-virtual {p1, v1, v0, p4, p0}, Lcom/android/server/wm/ActivityStackSupervisor;->removeTaskByIdLocked(IZZLjava/lang/String;)Z
+    move-result v1
 
-    :goto_0
-    const/4 p0, 0x1
+    const/4 v2, 0x4
 
-    return p0
-.end method
+    aput v2, v0, v1
+    :try_end_3
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_3 .. :try_end_3} :catch_3
 
-.method zta(Landroid/util/SparseArray;I)Ljava/lang/String;
-    .locals 2
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Landroid/util/SparseArray<",
-            "Lcom/android/server/wm/WindowProcessController;",
-            ">;I)",
-            "Ljava/lang/String;"
-        }
-    .end annotation
+    :catch_3
+    :try_start_4
+    sget-object v0, Lcom/android/server/wm/zgw;->eS:[I
 
-    invoke-virtual {p1, p2}, Landroid/util/SparseArray;->get(I)Ljava/lang/Object;
+    sget-object v1, Lcom/android/internal/os/BatterySipper$DrainType;->CELL:Lcom/android/internal/os/BatterySipper$DrainType;
 
-    move-result-object p0
+    invoke-virtual {v1}, Lcom/android/internal/os/BatterySipper$DrainType;->ordinal()I
 
-    check-cast p0, Lcom/android/server/wm/WindowProcessController;
+    move-result v1
 
-    iget-object p1, p0, Lcom/android/server/wm/WindowProcessController;->mPkgList:Landroid/util/ArraySet;
+    const/4 v2, 0x5
 
-    iget-object p0, p0, Lcom/android/server/wm/WindowProcessController;->mName:Ljava/lang/String;
+    aput v2, v0, v1
+    :try_end_4
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_4 .. :try_end_4} :catch_4
 
-    sget-boolean p1, Lcom/android/server/wm/zgw;->DEBUG_ONEPLUS:Z
+    :catch_4
+    :try_start_5
+    sget-object v0, Lcom/android/server/wm/zgw;->eS:[I
 
-    if-eqz p1, :cond_0
+    sget-object v1, Lcom/android/internal/os/BatterySipper$DrainType;->FLASHLIGHT:Lcom/android/internal/os/BatterySipper$DrainType;
 
-    sget-object p1, Lcom/android/server/wm/zgw;->TAG:Ljava/lang/String;
+    invoke-virtual {v1}, Lcom/android/internal/os/BatterySipper$DrainType;->ordinal()I
 
-    new-instance v0, Ljava/lang/StringBuilder;
+    move-result v1
 
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+    const/4 v2, 0x6
 
-    const-string v1, "callingPid: "
+    aput v2, v0, v1
+    :try_end_5
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_5 .. :try_end_5} :catch_5
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    :catch_5
+    :try_start_6
+    sget-object v0, Lcom/android/server/wm/zgw;->eS:[I
 
-    invoke-virtual {v0, p2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    sget-object v1, Lcom/android/internal/os/BatterySipper$DrainType;->IDLE:Lcom/android/internal/os/BatterySipper$DrainType;
 
-    const-string p2, ", callingApp: "
+    invoke-virtual {v1}, Lcom/android/internal/os/BatterySipper$DrainType;->ordinal()I
 
-    invoke-virtual {v0, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result v1
 
-    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const/4 v2, 0x7
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    aput v2, v0, v1
+    :try_end_6
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_6 .. :try_end_6} :catch_6
 
-    move-result-object p2
+    :catch_6
+    :try_start_7
+    sget-object v0, Lcom/android/server/wm/zgw;->eS:[I
 
-    invoke-static {p1, p2}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+    sget-object v1, Lcom/android/internal/os/BatterySipper$DrainType;->MEMORY:Lcom/android/internal/os/BatterySipper$DrainType;
 
-    :cond_0
-    return-object p0
+    invoke-virtual {v1}, Lcom/android/internal/os/BatterySipper$DrainType;->ordinal()I
+
+    move-result v1
+
+    const/16 v2, 0x8
+
+    aput v2, v0, v1
+    :try_end_7
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_7 .. :try_end_7} :catch_7
+
+    :catch_7
+    :try_start_8
+    sget-object v0, Lcom/android/server/wm/zgw;->eS:[I
+
+    sget-object v1, Lcom/android/internal/os/BatterySipper$DrainType;->OVERCOUNTED:Lcom/android/internal/os/BatterySipper$DrainType;
+
+    invoke-virtual {v1}, Lcom/android/internal/os/BatterySipper$DrainType;->ordinal()I
+
+    move-result v1
+
+    const/16 v2, 0x9
+
+    aput v2, v0, v1
+    :try_end_8
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_8 .. :try_end_8} :catch_8
+
+    :catch_8
+    :try_start_9
+    sget-object v0, Lcom/android/server/wm/zgw;->eS:[I
+
+    sget-object v1, Lcom/android/internal/os/BatterySipper$DrainType;->PHONE:Lcom/android/internal/os/BatterySipper$DrainType;
+
+    invoke-virtual {v1}, Lcom/android/internal/os/BatterySipper$DrainType;->ordinal()I
+
+    move-result v1
+
+    const/16 v2, 0xa
+
+    aput v2, v0, v1
+    :try_end_9
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_9 .. :try_end_9} :catch_9
+
+    :catch_9
+    :try_start_a
+    sget-object v0, Lcom/android/server/wm/zgw;->eS:[I
+
+    sget-object v1, Lcom/android/internal/os/BatterySipper$DrainType;->SCREEN:Lcom/android/internal/os/BatterySipper$DrainType;
+
+    invoke-virtual {v1}, Lcom/android/internal/os/BatterySipper$DrainType;->ordinal()I
+
+    move-result v1
+
+    const/16 v2, 0xb
+
+    aput v2, v0, v1
+    :try_end_a
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_a .. :try_end_a} :catch_a
+
+    :catch_a
+    :try_start_b
+    sget-object v0, Lcom/android/server/wm/zgw;->eS:[I
+
+    sget-object v1, Lcom/android/internal/os/BatterySipper$DrainType;->UNACCOUNTED:Lcom/android/internal/os/BatterySipper$DrainType;
+
+    invoke-virtual {v1}, Lcom/android/internal/os/BatterySipper$DrainType;->ordinal()I
+
+    move-result v1
+
+    const/16 v2, 0xc
+
+    aput v2, v0, v1
+    :try_end_b
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_b .. :try_end_b} :catch_b
+
+    :catch_b
+    :try_start_c
+    sget-object v0, Lcom/android/server/wm/zgw;->eS:[I
+
+    sget-object v1, Lcom/android/internal/os/BatterySipper$DrainType;->USER:Lcom/android/internal/os/BatterySipper$DrainType;
+
+    invoke-virtual {v1}, Lcom/android/internal/os/BatterySipper$DrainType;->ordinal()I
+
+    move-result v1
+
+    const/16 v2, 0xd
+
+    aput v2, v0, v1
+    :try_end_c
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_c .. :try_end_c} :catch_c
+
+    :catch_c
+    :try_start_d
+    sget-object v0, Lcom/android/server/wm/zgw;->eS:[I
+
+    sget-object v1, Lcom/android/internal/os/BatterySipper$DrainType;->WIFI:Lcom/android/internal/os/BatterySipper$DrainType;
+
+    invoke-virtual {v1}, Lcom/android/internal/os/BatterySipper$DrainType;->ordinal()I
+
+    move-result v1
+
+    const/16 v2, 0xe
+
+    aput v2, v0, v1
+    :try_end_d
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_d .. :try_end_d} :catch_d
+
+    :catch_d
+    return-void
 .end method

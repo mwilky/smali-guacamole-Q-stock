@@ -12,19 +12,19 @@
 
 
 # static fields
-.field public static final Dz:I = 0x1
+.field public static final Mz:I = 0x1
 
-.field public static final Ez:I = 0x3
+.field public static final Nz:I = 0x3
 
-.field public static final Fz:Ljava/lang/String; = "default"
+.field public static final Oz:Ljava/lang/String; = "default"
 
-.field public static final Gz:I = 0x0
+.field public static final Pz:I = 0x0
 
-.field public static final Hz:I = 0x1
+.field public static final Qz:I = 0x1
 
-.field public static final Iz:I = 0x2
+.field public static final Rz:I = 0x2
 
-.field public static final Jz:I = 0x3
+.field public static final Sz:I = 0x3
 
 .field public static final TYPE_DEFAULT:I = 0x0
 
@@ -32,11 +32,11 @@
 
 
 # instance fields
-.field private Bz:I
+.field private Kz:I
 
-.field private Cz:I
+.field private Lz:I
 
-.field private Zf:Ljava/lang/String;
+.field private eg:Ljava/lang/String;
 
 .field private mPkgName:Ljava/lang/String;
 
@@ -55,9 +55,9 @@
 
     iput v0, p0, Lcom/android/server/backlight/zta;->mStatus:I
 
-    iput v0, p0, Lcom/android/server/backlight/zta;->Bz:I
+    iput v0, p0, Lcom/android/server/backlight/zta;->Kz:I
 
-    iput v0, p0, Lcom/android/server/backlight/zta;->Cz:I
+    iput v0, p0, Lcom/android/server/backlight/zta;->Lz:I
 
     const-string v1, ""
 
@@ -67,7 +67,7 @@
 
     const-string v0, "default"
 
-    iput-object v0, p0, Lcom/android/server/backlight/zta;->Zf:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/server/backlight/zta;->eg:Ljava/lang/String;
 
     return-void
 .end method
@@ -81,30 +81,30 @@
 
     iput v0, p0, Lcom/android/server/backlight/zta;->mStatus:I
 
-    iput v0, p0, Lcom/android/server/backlight/zta;->Bz:I
+    iput v0, p0, Lcom/android/server/backlight/zta;->Kz:I
 
-    iput v0, p0, Lcom/android/server/backlight/zta;->Cz:I
+    iput v0, p0, Lcom/android/server/backlight/zta;->Lz:I
 
     iput-object p1, p0, Lcom/android/server/backlight/zta;->mPkgName:Ljava/lang/String;
 
     iput p2, p0, Lcom/android/server/backlight/zta;->mType:I
 
-    iput-object p3, p0, Lcom/android/server/backlight/zta;->Zf:Ljava/lang/String;
+    iput-object p3, p0, Lcom/android/server/backlight/zta;->eg:Ljava/lang/String;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public Cc()I
+.method public Dc()I
     .locals 0
 
-    iget p0, p0, Lcom/android/server/backlight/zta;->Bz:I
+    iget p0, p0, Lcom/android/server/backlight/zta;->Kz:I
 
     return p0
 .end method
 
-.method public Dc()I
+.method public Ec()I
     .locals 0
 
     iget p0, p0, Lcom/android/server/backlight/zta;->mStatus:I
@@ -123,7 +123,7 @@
 .method public getLevel()Ljava/lang/String;
     .locals 0
 
-    iget-object p0, p0, Lcom/android/server/backlight/zta;->Zf:Ljava/lang/String;
+    iget-object p0, p0, Lcom/android/server/backlight/zta;->eg:Ljava/lang/String;
 
     return-object p0
 .end method
@@ -131,7 +131,7 @@
 .method public getRefreshRate()I
     .locals 0
 
-    iget p0, p0, Lcom/android/server/backlight/zta;->Cz:I
+    iget p0, p0, Lcom/android/server/backlight/zta;->Lz:I
 
     return p0
 .end method
@@ -147,7 +147,7 @@
 .method public q(I)I
     .locals 0
 
-    iput p1, p0, Lcom/android/server/backlight/zta;->Bz:I
+    iput p1, p0, Lcom/android/server/backlight/zta;->Kz:I
 
     return p1
 .end method
@@ -155,7 +155,7 @@
 .method public r(I)V
     .locals 0
 
-    iput p1, p0, Lcom/android/server/backlight/zta;->Cz:I
+    iput p1, p0, Lcom/android/server/backlight/zta;->Lz:I
 
     return-void
 .end method
@@ -185,7 +185,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lcom/android/server/backlight/zta;->Zf:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/server/backlight/zta;->eg:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -201,7 +201,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget v1, p0, Lcom/android/server/backlight/zta;->Bz:I
+    iget v1, p0, Lcom/android/server/backlight/zta;->Kz:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -209,7 +209,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget p0, p0, Lcom/android/server/backlight/zta;->Cz:I
+    iget p0, p0, Lcom/android/server/backlight/zta;->Lz:I
 
     invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -241,19 +241,19 @@
 
     if-eqz p1, :cond_0
 
-    iget p1, p0, Lcom/android/server/backlight/zta;->Bz:I
+    iget p1, p0, Lcom/android/server/backlight/zta;->Kz:I
 
     add-int/2addr p1, v1
 
-    iput p1, p0, Lcom/android/server/backlight/zta;->Bz:I
+    iput p1, p0, Lcom/android/server/backlight/zta;->Kz:I
 
-    iget p1, p0, Lcom/android/server/backlight/zta;->Bz:I
+    iget p1, p0, Lcom/android/server/backlight/zta;->Kz:I
 
     if-lt p1, p2, :cond_1
 
     sub-int/2addr p2, v1
 
-    iput p2, p0, Lcom/android/server/backlight/zta;->Bz:I
+    iput p2, p0, Lcom/android/server/backlight/zta;->Kz:I
 
     const/4 p1, 0x2
 
@@ -262,17 +262,17 @@
     return v0
 
     :cond_0
-    iget p1, p0, Lcom/android/server/backlight/zta;->Bz:I
+    iget p1, p0, Lcom/android/server/backlight/zta;->Kz:I
 
     sub-int/2addr p1, v1
 
-    iput p1, p0, Lcom/android/server/backlight/zta;->Bz:I
+    iput p1, p0, Lcom/android/server/backlight/zta;->Kz:I
 
-    iget p1, p0, Lcom/android/server/backlight/zta;->Bz:I
+    iget p1, p0, Lcom/android/server/backlight/zta;->Kz:I
 
     if-gez p1, :cond_1
 
-    iput v0, p0, Lcom/android/server/backlight/zta;->Bz:I
+    iput v0, p0, Lcom/android/server/backlight/zta;->Kz:I
 
     iput v0, p0, Lcom/android/server/backlight/zta;->mStatus:I
 

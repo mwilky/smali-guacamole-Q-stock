@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field bta:Lorg/bouncycastle/asn1/ywr;
-
 .field iv:Lorg/bouncycastle/asn1/ibl;
+
+.field mta:Lorg/bouncycastle/asn1/ywr;
 
 
 # direct methods
@@ -35,7 +35,7 @@
 
     move-result-object p1
 
-    iput-object p1, p0, Lorg/bouncycastle/asn1/dma/ibl;->bta:Lorg/bouncycastle/asn1/ywr;
+    iput-object p1, p0, Lorg/bouncycastle/asn1/dma/ibl;->mta:Lorg/bouncycastle/asn1/ywr;
 
     return-void
 .end method
@@ -57,7 +57,7 @@
 
     invoke-direct {p1, v0, v1}, Lorg/bouncycastle/asn1/ywr;-><init>(J)V
 
-    iput-object p1, p0, Lorg/bouncycastle/asn1/dma/ibl;->bta:Lorg/bouncycastle/asn1/ywr;
+    iput-object p1, p0, Lorg/bouncycastle/asn1/dma/ibl;->mta:Lorg/bouncycastle/asn1/ywr;
 
     return-void
 .end method
@@ -106,10 +106,10 @@
     return-object p0
 .end method
 
-.method public rh()Ljava/math/BigInteger;
+.method public th()Ljava/math/BigInteger;
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/asn1/dma/ibl;->bta:Lorg/bouncycastle/asn1/ywr;
+    iget-object p0, p0, Lorg/bouncycastle/asn1/dma/ibl;->mta:Lorg/bouncycastle/asn1/ywr;
 
     invoke-virtual {p0}, Lorg/bouncycastle/asn1/ywr;->getValue()Ljava/math/BigInteger;
 
@@ -129,7 +129,7 @@
 
     invoke-virtual {v0, v1}, Lorg/bouncycastle/asn1/cno;->you(Lorg/bouncycastle/asn1/ssp;)V
 
-    iget-object p0, p0, Lorg/bouncycastle/asn1/dma/ibl;->bta:Lorg/bouncycastle/asn1/ywr;
+    iget-object p0, p0, Lorg/bouncycastle/asn1/dma/ibl;->mta:Lorg/bouncycastle/asn1/ywr;
 
     invoke-virtual {v0, p0}, Lorg/bouncycastle/asn1/cno;->you(Lorg/bouncycastle/asn1/ssp;)V
 

@@ -156,7 +156,7 @@
     throw p0
 .end method
 
-.method public hf()Ljava/lang/String;
+.method public jf()Ljava/lang/String;
     .locals 0
 
     const-string p0, "wechatpay"

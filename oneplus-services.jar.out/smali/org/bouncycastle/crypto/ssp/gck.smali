@@ -18,7 +18,7 @@
     return-void
 .end method
 
-.method private Mt()[B
+.method private Ot()[B
     .locals 5
 
     iget-object v0, p0, Lorg/bouncycastle/crypto/ssp/gck;->digest:Lorg/bouncycastle/crypto/qbh;
@@ -91,7 +91,7 @@
 
     if-gt p1, v0, :cond_0
 
-    invoke-direct {p0}, Lorg/bouncycastle/crypto/ssp/gck;->Mt()[B
+    invoke-direct {p0}, Lorg/bouncycastle/crypto/ssp/gck;->Ot()[B
 
     move-result-object p0
 
@@ -156,7 +156,7 @@
 
     if-gt v0, v1, :cond_0
 
-    invoke-direct {p0}, Lorg/bouncycastle/crypto/ssp/gck;->Mt()[B
+    invoke-direct {p0}, Lorg/bouncycastle/crypto/ssp/gck;->Ot()[B
 
     move-result-object p0
 

@@ -184,6 +184,77 @@
 
 
 # virtual methods
+.method public dumpViewInfo(Ljava/lang/String;Lcom/oneplus/longshot/IViewPropCallback;)V
+    .locals 1
+
+    iget-object v0, p0, Lcom/oneplus/server/longshot/OpLongScreenshotManagerService;->mLongshot:Lcom/oneplus/server/longshot/OpLongScreenshotManagerService$LongshotConnection;
+
+    invoke-static {v0}, Lcom/oneplus/server/longshot/OpLongScreenshotManagerService$LongshotConnection;->access$100(Lcom/oneplus/server/longshot/OpLongScreenshotManagerService$LongshotConnection;)Lcom/oneplus/longshot/ILongScreenshot;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_0
+
+    :try_start_0
+    iget-object p0, p0, Lcom/oneplus/server/longshot/OpLongScreenshotManagerService;->mLongshot:Lcom/oneplus/server/longshot/OpLongScreenshotManagerService$LongshotConnection;
+
+    invoke-static {p0}, Lcom/oneplus/server/longshot/OpLongScreenshotManagerService$LongshotConnection;->access$100(Lcom/oneplus/server/longshot/OpLongScreenshotManagerService$LongshotConnection;)Lcom/oneplus/longshot/ILongScreenshot;
+
+    move-result-object p0
+
+    invoke-interface {p0, p1, p2}, Lcom/oneplus/longshot/ILongScreenshot;->dumpViewInfo(Ljava/lang/String;Lcom/oneplus/longshot/IViewPropCallback;)V
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    goto :goto_0
+
+    :catch_0
+    move-exception p0
+
+    invoke-virtual {p0}, Ljava/lang/Exception;->printStackTrace()V
+
+    :cond_0
+    :goto_0
+    return-void
+.end method
+
+.method public getConfigValues()Ljava/lang/String;
+    .locals 1
+
+    iget-object v0, p0, Lcom/oneplus/server/longshot/OpLongScreenshotManagerService;->mLongshot:Lcom/oneplus/server/longshot/OpLongScreenshotManagerService$LongshotConnection;
+
+    invoke-static {v0}, Lcom/oneplus/server/longshot/OpLongScreenshotManagerService$LongshotConnection;->access$100(Lcom/oneplus/server/longshot/OpLongScreenshotManagerService$LongshotConnection;)Lcom/oneplus/longshot/ILongScreenshot;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_0
+
+    :try_start_0
+    iget-object p0, p0, Lcom/oneplus/server/longshot/OpLongScreenshotManagerService;->mLongshot:Lcom/oneplus/server/longshot/OpLongScreenshotManagerService$LongshotConnection;
+
+    invoke-static {p0}, Lcom/oneplus/server/longshot/OpLongScreenshotManagerService$LongshotConnection;->access$100(Lcom/oneplus/server/longshot/OpLongScreenshotManagerService$LongshotConnection;)Lcom/oneplus/longshot/ILongScreenshot;
+
+    move-result-object p0
+
+    invoke-interface {p0}, Lcom/oneplus/longshot/ILongScreenshot;->getConfigValues()Ljava/lang/String;
+
+    move-result-object p0
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    return-object p0
+
+    :catch_0
+    move-exception p0
+
+    invoke-virtual {p0}, Ljava/lang/Exception;->printStackTrace()V
+
+    :cond_0
+    const/4 p0, 0x0
+
+    return-object p0
+.end method
+
 .method public isLongshotHandleState()Z
     .locals 1
 

@@ -10,11 +10,11 @@
 
 .field public static final MHL:I = 0x3
 
-.field public static final cJa:I = 0x0
+.field public static final nJa:I = 0x0
 
-.field public static final dJa:I = 0x1
+.field public static final oJa:I = 0x1
 
-.field public static final eJa:I = 0x4
+.field public static final pJa:I = 0x4
 
 
 # direct methods

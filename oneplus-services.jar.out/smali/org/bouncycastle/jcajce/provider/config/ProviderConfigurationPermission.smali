@@ -10,27 +10,27 @@
 
 .field private static final ALL:I = 0x3f
 
-.field private static final Apa:Ljava/lang/String; = "additionalecparameters"
-
-.field private static final Bpa:Ljava/lang/String; = "all"
-
 .field private static final DH_DEFAULT_PARAMS:I = 0x8
 
 .field private static final EC_IMPLICITLY_CA:I = 0x2
 
+.field private static final Gpa:Ljava/lang/String; = "threadlocalecimplicitlyca"
+
+.field private static final Hpa:Ljava/lang/String; = "ecimplicitlyca"
+
+.field private static final Ipa:Ljava/lang/String; = "threadlocaldhdefaultparams"
+
+.field private static final Jpa:Ljava/lang/String; = "dhdefaultparams"
+
+.field private static final Kpa:Ljava/lang/String; = "acceptableeccurves"
+
+.field private static final Lpa:Ljava/lang/String; = "additionalecparameters"
+
+.field private static final Mpa:Ljava/lang/String; = "all"
+
 .field private static final THREAD_LOCAL_DH_DEFAULT_PARAMS:I = 0x4
 
 .field private static final THREAD_LOCAL_EC_IMPLICITLY_CA:I = 0x1
-
-.field private static final vpa:Ljava/lang/String; = "threadlocalecimplicitlyca"
-
-.field private static final wpa:Ljava/lang/String; = "ecimplicitlyca"
-
-.field private static final xpa:Ljava/lang/String; = "threadlocaldhdefaultparams"
-
-.field private static final ypa:Ljava/lang/String; = "dhdefaultparams"
-
-.field private static final zpa:Ljava/lang/String; = "acceptableeccurves"
 
 
 # instance fields

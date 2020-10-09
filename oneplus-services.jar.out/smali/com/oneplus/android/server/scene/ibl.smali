@@ -18,11 +18,11 @@
 
 
 # instance fields
+.field final synthetic Fga:I
+
+.field final synthetic Gga:Ljava/lang/String;
+
 .field final synthetic this$0:Lcom/oneplus/android/server/scene/OemSceneCallBlock;
-
-.field final synthetic uga:I
-
-.field final synthetic vga:Ljava/lang/String;
 
 
 # direct methods
@@ -31,9 +31,9 @@
 
     iput-object p1, p0, Lcom/oneplus/android/server/scene/ibl;->this$0:Lcom/oneplus/android/server/scene/OemSceneCallBlock;
 
-    iput p2, p0, Lcom/oneplus/android/server/scene/ibl;->uga:I
+    iput p2, p0, Lcom/oneplus/android/server/scene/ibl;->Fga:I
 
-    iput-object p3, p0, Lcom/oneplus/android/server/scene/ibl;->vga:Ljava/lang/String;
+    iput-object p3, p0, Lcom/oneplus/android/server/scene/ibl;->Gga:Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -74,9 +74,9 @@
 
     iget-object p1, p0, Lcom/oneplus/android/server/scene/ibl;->this$0:Lcom/oneplus/android/server/scene/OemSceneCallBlock;
 
-    iget p2, p0, Lcom/oneplus/android/server/scene/ibl;->uga:I
+    iget p2, p0, Lcom/oneplus/android/server/scene/ibl;->Fga:I
 
-    iget-object p0, p0, Lcom/oneplus/android/server/scene/ibl;->vga:Ljava/lang/String;
+    iget-object p0, p0, Lcom/oneplus/android/server/scene/ibl;->Gga:Ljava/lang/String;
 
     invoke-static {p1, p2, p0}, Lcom/oneplus/android/server/scene/OemSceneCallBlock;->access$400(Lcom/oneplus/android/server/scene/OemSceneCallBlock;ILjava/lang/String;)V
 

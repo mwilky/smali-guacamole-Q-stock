@@ -33,7 +33,7 @@
 
     if-gt v0, v1, :cond_1
 
-    invoke-static {}, Lyou/zta/sis/sis/sis;->hl()[J
+    invoke-static {}, Lyou/zta/sis/sis/sis;->jl()[J
 
     move-result-object v0
 
@@ -833,16 +833,6 @@
     return p0
 .end method
 
-.method public static hl()[J
-    .locals 1
-
-    const/4 v0, 0x3
-
-    new-array v0, v0, [J
-
-    return-object v0
-.end method
-
 .method public static igw([I[I[I)I
     .locals 10
 
@@ -1583,22 +1573,22 @@
     goto/16 :goto_0
 .end method
 
-.method public static il()[I
+.method public static jl()[J
+    .locals 1
+
+    const/4 v0, 0x3
+
+    new-array v0, v0, [J
+
+    return-object v0
+.end method
+
+.method public static kl()[I
     .locals 1
 
     const/16 v0, 0xc
 
     new-array v0, v0, [I
-
-    return-object v0
-.end method
-
-.method public static jl()[J
-    .locals 1
-
-    const/4 v0, 0x6
-
-    new-array v0, v0, [J
 
     return-object v0
 .end method
@@ -1644,6 +1634,16 @@
     invoke-direct {p0, v1, v0}, Ljava/math/BigInteger;-><init>(I[B)V
 
     return-object p0
+.end method
+
+.method public static ll()[J
+    .locals 1
+
+    const/4 v0, 0x6
+
+    new-array v0, v0, [J
+
+    return-object v0
 .end method
 
 .method public static oif([I[I)I

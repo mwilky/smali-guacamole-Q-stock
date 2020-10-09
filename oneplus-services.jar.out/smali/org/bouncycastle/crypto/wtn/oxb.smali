@@ -27,18 +27,18 @@
 
 
 # virtual methods
-.method public getIV()[B
+.method public Aj()[B
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/crypto/wtn/oxb;->iv:[B
+    iget-object p0, p0, Lorg/bouncycastle/crypto/wtn/oxb;->shared:[B
 
     return-object p0
 .end method
 
-.method public yj()[B
+.method public getIV()[B
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/crypto/wtn/oxb;->shared:[B
+    iget-object p0, p0, Lorg/bouncycastle/crypto/wtn/oxb;->iv:[B
 
     return-object p0
 .end method

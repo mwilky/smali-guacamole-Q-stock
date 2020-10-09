@@ -392,7 +392,7 @@
 
     move-result-object p0
 
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/dma/obl;->Ah()Ljava/math/BigInteger;
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/dma/obl;->Ch()Ljava/math/BigInteger;
 
     move-result-object v0
 

@@ -27,11 +27,11 @@
 
 .field public static final enum ALL:Lcom/oneplus/android/server/scene/OemSceneButtonController$Param;
 
-.field public static final enum poa:Lcom/oneplus/android/server/scene/OemSceneButtonController$Param;
+.field public static final enum Boa:Lcom/oneplus/android/server/scene/OemSceneButtonController$Param;
 
-.field public static final enum qoa:Lcom/oneplus/android/server/scene/OemSceneButtonController$Param;
+.field public static final enum Coa:Lcom/oneplus/android/server/scene/OemSceneButtonController$Param;
 
-.field public static final enum roa:Lcom/oneplus/android/server/scene/OemSceneButtonController$Param;
+.field public static final enum Doa:Lcom/oneplus/android/server/scene/OemSceneButtonController$Param;
 
 
 # direct methods
@@ -56,7 +56,7 @@
 
     invoke-direct {v0, v3, v2}, Lcom/oneplus/android/server/scene/OemSceneButtonController$Param;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/oneplus/android/server/scene/OemSceneButtonController$Param;->poa:Lcom/oneplus/android/server/scene/OemSceneButtonController$Param;
+    sput-object v0, Lcom/oneplus/android/server/scene/OemSceneButtonController$Param;->Boa:Lcom/oneplus/android/server/scene/OemSceneButtonController$Param;
 
     new-instance v0, Lcom/oneplus/android/server/scene/OemSceneButtonController$Param;
 
@@ -66,7 +66,7 @@
 
     invoke-direct {v0, v4, v3}, Lcom/oneplus/android/server/scene/OemSceneButtonController$Param;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/oneplus/android/server/scene/OemSceneButtonController$Param;->qoa:Lcom/oneplus/android/server/scene/OemSceneButtonController$Param;
+    sput-object v0, Lcom/oneplus/android/server/scene/OemSceneButtonController$Param;->Coa:Lcom/oneplus/android/server/scene/OemSceneButtonController$Param;
 
     new-instance v0, Lcom/oneplus/android/server/scene/OemSceneButtonController$Param;
 
@@ -76,7 +76,7 @@
 
     invoke-direct {v0, v5, v4}, Lcom/oneplus/android/server/scene/OemSceneButtonController$Param;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/oneplus/android/server/scene/OemSceneButtonController$Param;->roa:Lcom/oneplus/android/server/scene/OemSceneButtonController$Param;
+    sput-object v0, Lcom/oneplus/android/server/scene/OemSceneButtonController$Param;->Doa:Lcom/oneplus/android/server/scene/OemSceneButtonController$Param;
 
     const/4 v0, 0x4
 
@@ -86,15 +86,15 @@
 
     aput-object v5, v0, v1
 
-    sget-object v1, Lcom/oneplus/android/server/scene/OemSceneButtonController$Param;->poa:Lcom/oneplus/android/server/scene/OemSceneButtonController$Param;
+    sget-object v1, Lcom/oneplus/android/server/scene/OemSceneButtonController$Param;->Boa:Lcom/oneplus/android/server/scene/OemSceneButtonController$Param;
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/oneplus/android/server/scene/OemSceneButtonController$Param;->qoa:Lcom/oneplus/android/server/scene/OemSceneButtonController$Param;
+    sget-object v1, Lcom/oneplus/android/server/scene/OemSceneButtonController$Param;->Coa:Lcom/oneplus/android/server/scene/OemSceneButtonController$Param;
 
     aput-object v1, v0, v3
 
-    sget-object v1, Lcom/oneplus/android/server/scene/OemSceneButtonController$Param;->roa:Lcom/oneplus/android/server/scene/OemSceneButtonController$Param;
+    sget-object v1, Lcom/oneplus/android/server/scene/OemSceneButtonController$Param;->Doa:Lcom/oneplus/android/server/scene/OemSceneButtonController$Param;
 
     aput-object v1, v0, v4
 

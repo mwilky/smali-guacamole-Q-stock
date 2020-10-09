@@ -4,17 +4,17 @@
 
 
 # static fields
-.field private static GN:Ljava/lang/String; = "/sys/devices/download_info/upgrade_download_time1"
-
-.field private static HN:Ljava/lang/String; = "/sys/devices/download_info/intranet"
-
-.field private static JN:Ljava/lang/String; = "[1-9][0-9]{3}/[0-9]{2}/[0-9]{2}"
-
-.field private static KN:Ljava/lang/String; = "[0-9]{2}:[0-9]{2}:[0-9]{2}"
-
-.field private static final LN:I = 0x1
-
 .field private static final TAG:Ljava/lang/String; = "SecrecyService.Utils"
+
+.field private static VN:Ljava/lang/String; = "/sys/devices/download_info/upgrade_download_time1"
+
+.field private static WN:Ljava/lang/String; = "/sys/devices/download_info/intranet"
+
+.field private static XN:Ljava/lang/String; = "[1-9][0-9]{3}/[0-9]{2}/[0-9]{2}"
+
+.field private static YN:Ljava/lang/String; = "[0-9]{2}:[0-9]{2}:[0-9]{2}"
+
+.field private static final ZN:I = 0x1
 
 
 # direct methods
@@ -32,27 +32,27 @@
     return-void
 .end method
 
-.method public static Qd()Z
+.method public static Rd()Z
     .locals 1
 
-    invoke-static {}, Lcom/android/server/secrecy/zta/zta/sis;->Qd()Z
+    invoke-static {}, Lcom/android/server/secrecy/zta/zta/sis;->Rd()Z
 
     move-result v0
 
     return v0
 .end method
 
-.method public static Rd()Ljava/lang/String;
+.method public static Sd()Ljava/lang/String;
     .locals 1
 
-    invoke-static {}, Lcom/android/server/secrecy/zta/zta/sis;->Pd()Ljava/lang/String;
+    invoke-static {}, Lcom/android/server/secrecy/zta/zta/sis;->Qd()Ljava/lang/String;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method private static Vo()Ljava/lang/String;
+.method private static Zo()Ljava/lang/String;
     .locals 1
 
     const-string v0, "none"
@@ -60,7 +60,7 @@
     return-object v0
 .end method
 
-.method private static Wo()Z
+.method private static _o()Z
     .locals 2
 
     sget-object v0, Landroid/os/Build;->HARDWARE:Ljava/lang/String;
@@ -161,7 +161,7 @@
 .method public static ea(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
 
-    sget-object v0, Lcom/android/server/secrecy/zta/zta/tsu;->JN:Ljava/lang/String;
+    sget-object v0, Lcom/android/server/secrecy/zta/zta/tsu;->XN:Ljava/lang/String;
 
     invoke-static {v0}, Ljava/util/regex/Pattern;->compile(Ljava/lang/String;)Ljava/util/regex/Pattern;
 
@@ -211,7 +211,7 @@
 .method public static fa(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
 
-    sget-object v0, Lcom/android/server/secrecy/zta/zta/tsu;->KN:Ljava/lang/String;
+    sget-object v0, Lcom/android/server/secrecy/zta/zta/tsu;->YN:Ljava/lang/String;
 
     invoke-static {v0}, Ljava/util/regex/Pattern;->compile(Ljava/lang/String;)Ljava/util/regex/Pattern;
 

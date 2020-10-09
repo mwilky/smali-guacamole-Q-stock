@@ -22,7 +22,7 @@
     return-void
 .end method
 
-.method private Ec(I)[B
+.method private Gc(I)[B
     .locals 7
 
     iget-object v0, p0, Lorg/bouncycastle/crypto/ssp/igw;->digest:Lorg/bouncycastle/crypto/qbh;
@@ -103,7 +103,7 @@
 
     div-int/lit8 p1, p1, 0x8
 
-    invoke-direct {p0, p1}, Lorg/bouncycastle/crypto/ssp/igw;->Ec(I)[B
+    invoke-direct {p0, p1}, Lorg/bouncycastle/crypto/ssp/igw;->Gc(I)[B
 
     move-result-object p0
 
@@ -145,7 +145,7 @@
 
     add-int v0, p1, p2
 
-    invoke-direct {p0, v0}, Lorg/bouncycastle/crypto/ssp/igw;->Ec(I)[B
+    invoke-direct {p0, v0}, Lorg/bouncycastle/crypto/ssp/igw;->Gc(I)[B
 
     move-result-object p0
 

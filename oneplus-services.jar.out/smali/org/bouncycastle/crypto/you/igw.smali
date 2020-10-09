@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field private Lqa:Lorg/bouncycastle/crypto/you/igw$zta;
+.field private Wqa:Lorg/bouncycastle/crypto/you/igw$zta;
 
 
 # direct methods
@@ -30,7 +30,7 @@
 
     invoke-direct {v0, v1}, Lorg/bouncycastle/crypto/you/igw$zta;-><init>(Lorg/bouncycastle/crypto/you/bio;)V
 
-    iput-object v0, p0, Lorg/bouncycastle/crypto/you/igw;->Lqa:Lorg/bouncycastle/crypto/you/igw$zta;
+    iput-object v0, p0, Lorg/bouncycastle/crypto/you/igw;->Wqa:Lorg/bouncycastle/crypto/you/igw$zta;
 
     return-void
 .end method
@@ -40,13 +40,13 @@
 .method public doFinal([BI)I
     .locals 2
 
-    iget-object v0, p0, Lorg/bouncycastle/crypto/you/igw;->Lqa:Lorg/bouncycastle/crypto/you/igw$zta;
+    iget-object v0, p0, Lorg/bouncycastle/crypto/you/igw;->Wqa:Lorg/bouncycastle/crypto/you/igw$zta;
 
     invoke-virtual {v0}, Ljava/io/ByteArrayOutputStream;->size()I
 
     move-result v0
 
-    iget-object v1, p0, Lorg/bouncycastle/crypto/you/igw;->Lqa:Lorg/bouncycastle/crypto/you/igw$zta;
+    iget-object v1, p0, Lorg/bouncycastle/crypto/you/igw;->Wqa:Lorg/bouncycastle/crypto/you/igw$zta;
 
     invoke-virtual {v1, p1, p2}, Lorg/bouncycastle/crypto/you/igw$zta;->sis([BI)V
 
@@ -58,7 +58,7 @@
 .method public les()I
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/crypto/you/igw;->Lqa:Lorg/bouncycastle/crypto/you/igw$zta;
+    iget-object p0, p0, Lorg/bouncycastle/crypto/you/igw;->Wqa:Lorg/bouncycastle/crypto/you/igw$zta;
 
     invoke-virtual {p0}, Ljava/io/ByteArrayOutputStream;->size()I
 
@@ -70,7 +70,7 @@
 .method public reset()V
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/crypto/you/igw;->Lqa:Lorg/bouncycastle/crypto/you/igw$zta;
+    iget-object p0, p0, Lorg/bouncycastle/crypto/you/igw;->Wqa:Lorg/bouncycastle/crypto/you/igw$zta;
 
     invoke-virtual {p0}, Lorg/bouncycastle/crypto/you/igw$zta;->reset()V
 
@@ -80,7 +80,7 @@
 .method public update(B)V
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/crypto/you/igw;->Lqa:Lorg/bouncycastle/crypto/you/igw$zta;
+    iget-object p0, p0, Lorg/bouncycastle/crypto/you/igw;->Wqa:Lorg/bouncycastle/crypto/you/igw$zta;
 
     invoke-virtual {p0, p1}, Ljava/io/ByteArrayOutputStream;->write(I)V
 
@@ -90,7 +90,7 @@
 .method public update([BII)V
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/crypto/you/igw;->Lqa:Lorg/bouncycastle/crypto/you/igw$zta;
+    iget-object p0, p0, Lorg/bouncycastle/crypto/you/igw;->Wqa:Lorg/bouncycastle/crypto/you/igw$zta;
 
     invoke-virtual {p0, p1, p2, p3}, Ljava/io/ByteArrayOutputStream;->write([BII)V
 

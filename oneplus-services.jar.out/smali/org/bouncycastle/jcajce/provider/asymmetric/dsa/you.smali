@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field Noa:Ljava/security/spec/DSAParameterSpec;
+.field Yoa:Ljava/security/spec/DSAParameterSpec;
 
 
 # direct methods
@@ -23,19 +23,19 @@
 
     new-instance v0, Lorg/bouncycastle/asn1/x509/ywr;
 
-    iget-object v1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dsa/you;->Noa:Ljava/security/spec/DSAParameterSpec;
+    iget-object v1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dsa/you;->Yoa:Ljava/security/spec/DSAParameterSpec;
 
     invoke-virtual {v1}, Ljava/security/spec/DSAParameterSpec;->getP()Ljava/math/BigInteger;
 
     move-result-object v1
 
-    iget-object v2, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dsa/you;->Noa:Ljava/security/spec/DSAParameterSpec;
+    iget-object v2, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dsa/you;->Yoa:Ljava/security/spec/DSAParameterSpec;
 
     invoke-virtual {v2}, Ljava/security/spec/DSAParameterSpec;->getQ()Ljava/math/BigInteger;
 
     move-result-object v2
 
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dsa/you;->Noa:Ljava/security/spec/DSAParameterSpec;
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dsa/you;->Yoa:Ljava/security/spec/DSAParameterSpec;
 
     invoke-virtual {p0}, Ljava/security/spec/DSAParameterSpec;->getG()Ljava/math/BigInteger;
 
@@ -125,7 +125,7 @@
 
     check-cast p1, Ljava/security/spec/DSAParameterSpec;
 
-    iput-object p1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dsa/you;->Noa:Ljava/security/spec/DSAParameterSpec;
+    iput-object p1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dsa/you;->Yoa:Ljava/security/spec/DSAParameterSpec;
 
     return-void
 
@@ -174,7 +174,7 @@
 
     invoke-direct {v1, v2, v3, p1}, Ljava/security/spec/DSAParameterSpec;-><init>(Ljava/math/BigInteger;Ljava/math/BigInteger;Ljava/math/BigInteger;)V
 
-    iput-object v1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dsa/you;->Noa:Ljava/security/spec/DSAParameterSpec;
+    iput-object v1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dsa/you;->Yoa:Ljava/security/spec/DSAParameterSpec;
     :try_end_0
     .catch Ljava/lang/ClassCastException; {:try_start_0 .. :try_end_0} :catch_1
     .catch Ljava/lang/ArrayIndexOutOfBoundsException; {:try_start_0 .. :try_end_0} :catch_0
@@ -313,7 +313,7 @@
 
     :cond_1
     :goto_0
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dsa/you;->Noa:Ljava/security/spec/DSAParameterSpec;
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dsa/you;->Yoa:Ljava/security/spec/DSAParameterSpec;
 
     return-object p0
 .end method

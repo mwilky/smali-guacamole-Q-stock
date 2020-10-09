@@ -199,7 +199,7 @@
     throw p0
 .end method
 
-.method private static md(I)I
+.method private static od(I)I
     .locals 2
 
     const/4 v0, 0x0
@@ -328,7 +328,7 @@
     :cond_0
     aget v3, p1, v1
 
-    invoke-static {v3}, Lyou/zta/sis/sis/you;->md(I)I
+    invoke-static {v3}, Lyou/zta/sis/sis/you;->od(I)I
 
     move-result v3
 

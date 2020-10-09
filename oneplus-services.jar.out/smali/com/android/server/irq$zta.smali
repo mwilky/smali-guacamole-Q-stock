@@ -15,15 +15,15 @@
 
 
 # static fields
-.field private static final df:I = 0x1
+.field private static final jf:I = 0x1
 
-.field private static final ef:I = 0x1f4
+.field private static final kf:I = 0x1f4
 
 
 # instance fields
-.field private bf:I
+.field private hf:I
 
-.field private cf:Landroid/os/Handler;
+.field private if:Landroid/os/Handler;
 
 .field private mBatteryFullARGB:I
 
@@ -58,7 +58,7 @@
 
     invoke-direct {p1, p0}, Lcom/android/server/bud;-><init>(Lcom/android/server/irq$zta;)V
 
-    iput-object p1, p0, Lcom/android/server/irq$zta;->cf:Landroid/os/Handler;
+    iput-object p1, p0, Lcom/android/server/irq$zta;->if:Landroid/os/Handler;
 
     new-instance p1, Lcom/android/server/les;
 
@@ -152,7 +152,7 @@
 
     move-result p1
 
-    iput p1, p0, Lcom/android/server/irq$zta;->bf:I
+    iput p1, p0, Lcom/android/server/irq$zta;->hf:I
 
     new-instance p1, Landroid/content/IntentFilter;
 
@@ -180,7 +180,7 @@
 .method static synthetic zta(Lcom/android/server/irq$zta;)Landroid/os/Handler;
     .locals 0
 
-    iget-object p0, p0, Lcom/android/server/irq$zta;->cf:Landroid/os/Handler;
+    iget-object p0, p0, Lcom/android/server/irq$zta;->if:Landroid/os/Handler;
 
     return-object p0
 .end method
@@ -300,7 +300,7 @@
     if-eqz v1, :cond_1
 
     :goto_0
-    iget p0, p0, Lcom/android/server/irq$zta;->bf:I
+    iget p0, p0, Lcom/android/server/irq$zta;->hf:I
 
     goto :goto_4
 

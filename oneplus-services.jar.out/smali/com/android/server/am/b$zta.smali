@@ -18,11 +18,11 @@
 
 
 # instance fields
-.field private dz:Lcom/android/server/am/bvj;
-
-.field private ez:Z
-
 .field private final info:Landroid/content/pm/ApplicationInfo;
+
+.field private mz:Lcom/android/server/am/bvj;
+
+.field private nz:Z
 
 .field final synthetic this$0:Lcom/android/server/am/B;
 
@@ -37,9 +37,9 @@
 
     const/4 p1, 0x0
 
-    iput-boolean p1, p0, Lcom/android/server/am/B$zta;->ez:Z
+    iput-boolean p1, p0, Lcom/android/server/am/B$zta;->nz:Z
 
-    iput-object p2, p0, Lcom/android/server/am/B$zta;->dz:Lcom/android/server/am/bvj;
+    iput-object p2, p0, Lcom/android/server/am/B$zta;->mz:Lcom/android/server/am/bvj;
 
     iput-object p3, p0, Lcom/android/server/am/B$zta;->info:Landroid/content/pm/ApplicationInfo;
 
@@ -59,7 +59,7 @@
 .method b(Z)V
     .locals 0
 
-    iput-boolean p1, p0, Lcom/android/server/am/B$zta;->ez:Z
+    iput-boolean p1, p0, Lcom/android/server/am/B$zta;->nz:Z
 
     return-void
 .end method
@@ -67,7 +67,7 @@
 .method public run()V
     .locals 6
 
-    iget-boolean v0, p0, Lcom/android/server/am/B$zta;->ez:Z
+    iget-boolean v0, p0, Lcom/android/server/am/B$zta;->nz:Z
 
     const/4 v1, 0x0
 
@@ -87,12 +87,12 @@
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/android/server/am/B$zta;->dz:Lcom/android/server/am/bvj;
+    iget-object v0, p0, Lcom/android/server/am/B$zta;->mz:Lcom/android/server/am/bvj;
 
     monitor-enter v0
 
     :try_start_0
-    iget-object v2, p0, Lcom/android/server/am/B$zta;->dz:Lcom/android/server/am/bvj;
+    iget-object v2, p0, Lcom/android/server/am/B$zta;->mz:Lcom/android/server/am/bvj;
 
     invoke-virtual {v2, v1}, Lcom/android/server/am/bvj;->zgw(Z)V
 
@@ -146,12 +146,12 @@
 
     if-nez v0, :cond_1
 
-    iget-object v0, p0, Lcom/android/server/am/B$zta;->dz:Lcom/android/server/am/bvj;
+    iget-object v0, p0, Lcom/android/server/am/B$zta;->mz:Lcom/android/server/am/bvj;
 
     monitor-enter v0
 
     :try_start_1
-    iget-object v2, p0, Lcom/android/server/am/B$zta;->dz:Lcom/android/server/am/bvj;
+    iget-object v2, p0, Lcom/android/server/am/B$zta;->mz:Lcom/android/server/am/bvj;
 
     invoke-virtual {v2, v1}, Lcom/android/server/am/bvj;->zgw(Z)V
 
@@ -254,7 +254,7 @@
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v3, p0, Lcom/android/server/am/B$zta;->dz:Lcom/android/server/am/bvj;
+    iget-object v3, p0, Lcom/android/server/am/B$zta;->mz:Lcom/android/server/am/bvj;
 
     invoke-virtual {v3}, Lcom/android/server/am/bvj;->getPackageName()Ljava/lang/String;
 
@@ -272,14 +272,14 @@
 
     invoke-static {v0, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    iget-object v0, p0, Lcom/android/server/am/B$zta;->dz:Lcom/android/server/am/bvj;
+    iget-object v0, p0, Lcom/android/server/am/B$zta;->mz:Lcom/android/server/am/bvj;
 
     monitor-enter v0
     :try_end_2
     .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_0
 
     :try_start_3
-    iget-object v2, p0, Lcom/android/server/am/B$zta;->dz:Lcom/android/server/am/bvj;
+    iget-object v2, p0, Lcom/android/server/am/B$zta;->mz:Lcom/android/server/am/bvj;
 
     invoke-virtual {v2, v1}, Lcom/android/server/am/bvj;->zgw(Z)V
 
@@ -396,12 +396,12 @@
     :catch_0
     move-exception v0
 
-    iget-object v2, p0, Lcom/android/server/am/B$zta;->dz:Lcom/android/server/am/bvj;
+    iget-object v2, p0, Lcom/android/server/am/B$zta;->mz:Lcom/android/server/am/bvj;
 
     monitor-enter v2
 
     :try_start_9
-    iget-object v3, p0, Lcom/android/server/am/B$zta;->dz:Lcom/android/server/am/bvj;
+    iget-object v3, p0, Lcom/android/server/am/B$zta;->mz:Lcom/android/server/am/bvj;
 
     invoke-virtual {v3, v1}, Lcom/android/server/am/bvj;->zgw(Z)V
 
@@ -417,7 +417,7 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object p0, p0, Lcom/android/server/am/B$zta;->dz:Lcom/android/server/am/bvj;
+    iget-object p0, p0, Lcom/android/server/am/B$zta;->mz:Lcom/android/server/am/bvj;
 
     invoke-virtual {p0}, Lcom/android/server/am/bvj;->getPackageName()Ljava/lang/String;
 

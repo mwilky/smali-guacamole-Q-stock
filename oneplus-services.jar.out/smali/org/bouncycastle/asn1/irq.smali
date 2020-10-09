@@ -6,7 +6,7 @@
 # static fields
 .field static final EMPTY_SET:Lorg/bouncycastle/asn1/f;
 
-.field static final vxa:Lorg/bouncycastle/asn1/d;
+.field static final Gxa:Lorg/bouncycastle/asn1/d;
 
 
 # direct methods
@@ -17,7 +17,7 @@
 
     invoke-direct {v0}, Lorg/bouncycastle/asn1/d;-><init>()V
 
-    sput-object v0, Lorg/bouncycastle/asn1/irq;->vxa:Lorg/bouncycastle/asn1/d;
+    sput-object v0, Lorg/bouncycastle/asn1/irq;->Gxa:Lorg/bouncycastle/asn1/d;
 
     new-instance v0, Lorg/bouncycastle/asn1/f;
 
@@ -73,7 +73,7 @@
 
     if-ge v0, v1, :cond_0
 
-    sget-object p0, Lorg/bouncycastle/asn1/irq;->vxa:Lorg/bouncycastle/asn1/d;
+    sget-object p0, Lorg/bouncycastle/asn1/irq;->Gxa:Lorg/bouncycastle/asn1/d;
 
     goto :goto_0
 

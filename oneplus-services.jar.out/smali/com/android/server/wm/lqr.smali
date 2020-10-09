@@ -3,12 +3,12 @@
 .source ""
 
 # interfaces
-.implements Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;
+.implements Landroid/view/View$OnTouchListener;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/server/wm/cgv;->Xb(I)V
+    value = Lcom/android/server/wm/vju;->Xb(I)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,14 +18,18 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/server/wm/cgv;
+.field private WG:I
+
+.field private YG:F
+
+.field final synthetic this$0:Lcom/android/server/wm/vju;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/server/wm/cgv;)V
+.method constructor <init>(Lcom/android/server/wm/vju;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/android/server/wm/lqr;->this$0:Lcom/android/server/wm/cgv;
+    iput-object p1, p0, Lcom/android/server/wm/lqr;->this$0:Lcom/android/server/wm/vju;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -34,55 +38,201 @@
 
 
 # virtual methods
-.method public onGlobalLayout()V
-    .locals 1
+.method public onTouch(Landroid/view/View;Landroid/view/MotionEvent;)Z
+    .locals 3
 
-    iget-object v0, p0, Lcom/android/server/wm/lqr;->this$0:Lcom/android/server/wm/cgv;
+    invoke-virtual {p2}, Landroid/view/MotionEvent;->getAction()I
 
-    iget-object v0, v0, Lcom/android/server/wm/cgv;->bW:Landroid/view/View;
+    move-result p1
 
-    if-eqz v0, :cond_0
+    const/4 v0, 0x5
 
-    invoke-virtual {v0}, Landroid/view/View;->getViewTreeObserver()Landroid/view/ViewTreeObserver;
+    const/4 v1, 0x1
 
-    move-result-object v0
+    if-eqz p1, :cond_4
 
-    invoke-virtual {v0, p0}, Landroid/view/ViewTreeObserver;->removeOnGlobalLayoutListener(Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;)V
+    if-eq p1, v1, :cond_3
 
-    iget-object p0, p0, Lcom/android/server/wm/lqr;->this$0:Lcom/android/server/wm/cgv;
+    const/4 v2, 0x2
 
-    iget-object p0, p0, Lcom/android/server/wm/cgv;->bW:Landroid/view/View;
+    if-eq p1, v2, :cond_0
 
-    invoke-virtual {p0}, Landroid/view/View;->getMeasuredWidth()I
+    const/4 p2, 0x3
 
-    move-result p0
+    if-eq p1, p2, :cond_3
 
-    sput p0, Lcom/android/server/wm/cgv;->xW:I
+    const-string p0, "OpQuickReply"
 
-    sget-boolean p0, Landroid/os/Build;->DEBUG_ONEPLUS:Z
+    const-string p1, "Unsupported Touch event "
 
-    if-eqz p0, :cond_0
+    invoke-static {p0, p1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    new-instance p0, Ljava/lang/StringBuilder;
+    const/4 p0, 0x0
 
-    invoke-direct {p0}, Ljava/lang/StringBuilder;-><init>()V
+    return p0
 
-    const-string v0, "sIMEButtonSize = "
+    :cond_0
+    iget-object p1, p0, Lcom/android/server/wm/lqr;->this$0:Lcom/android/server/wm/vju;
 
-    invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    iget v0, p0, Lcom/android/server/wm/lqr;->WG:I
 
-    sget v0, Lcom/android/server/wm/cgv;->xW:I
+    invoke-virtual {p2}, Landroid/view/MotionEvent;->getRawX()F
 
-    invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    move-result p2
 
-    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    iget v2, p0, Lcom/android/server/wm/lqr;->YG:F
+
+    sub-float/2addr p2, v2
+
+    float-to-int p2, p2
+
+    add-int/2addr v0, p2
+
+    invoke-static {p1, v0}, Lcom/android/server/wm/vju;->sis(Lcom/android/server/wm/vju;I)I
+
+    iget-object p1, p0, Lcom/android/server/wm/lqr;->this$0:Lcom/android/server/wm/vju;
+
+    invoke-static {p1}, Lcom/android/server/wm/vju;->ibl(Lcom/android/server/wm/vju;)I
+
+    move-result p1
+
+    iget-object p2, p0, Lcom/android/server/wm/lqr;->this$0:Lcom/android/server/wm/vju;
+
+    invoke-static {p2}, Lcom/android/server/wm/vju;->ugm(Lcom/android/server/wm/vju;)I
+
+    move-result p2
+
+    if-le p1, p2, :cond_1
+
+    iget-object p1, p0, Lcom/android/server/wm/lqr;->this$0:Lcom/android/server/wm/vju;
+
+    invoke-static {p1}, Lcom/android/server/wm/vju;->ugm(Lcom/android/server/wm/vju;)I
+
+    move-result p2
+
+    :goto_0
+    invoke-static {p1, p2}, Lcom/android/server/wm/vju;->sis(Lcom/android/server/wm/vju;I)I
+
+    goto :goto_1
+
+    :cond_1
+    iget-object p1, p0, Lcom/android/server/wm/lqr;->this$0:Lcom/android/server/wm/vju;
+
+    invoke-static {p1}, Lcom/android/server/wm/vju;->ibl(Lcom/android/server/wm/vju;)I
+
+    move-result p1
+
+    iget-object p2, p0, Lcom/android/server/wm/lqr;->this$0:Lcom/android/server/wm/vju;
+
+    invoke-static {p2}, Lcom/android/server/wm/vju;->vdb(Lcom/android/server/wm/vju;)I
+
+    move-result p2
+
+    if-ge p1, p2, :cond_2
+
+    iget-object p1, p0, Lcom/android/server/wm/lqr;->this$0:Lcom/android/server/wm/vju;
+
+    invoke-static {p1}, Lcom/android/server/wm/vju;->vdb(Lcom/android/server/wm/vju;)I
+
+    move-result p2
+
+    goto :goto_0
+
+    :cond_2
+    :goto_1
+    iget-object p0, p0, Lcom/android/server/wm/lqr;->this$0:Lcom/android/server/wm/vju;
+
+    invoke-static {p0}, Lcom/android/server/wm/vju;->sis(Lcom/android/server/wm/vju;)V
+
+    return v1
+
+    :cond_3
+    iget-object p1, p0, Lcom/android/server/wm/lqr;->this$0:Lcom/android/server/wm/vju;
+
+    invoke-static {p1}, Lcom/android/server/wm/vju;->gwm(Lcom/android/server/wm/vju;)Landroid/view/WindowManager$LayoutParams;
+
+    move-result-object p2
+
+    iget p2, p2, Landroid/view/WindowManager$LayoutParams;->x:I
+
+    invoke-static {p1, p2}, Lcom/android/server/wm/vju;->sis(Lcom/android/server/wm/vju;I)I
+
+    iget-object p1, p0, Lcom/android/server/wm/lqr;->this$0:Lcom/android/server/wm/vju;
+
+    invoke-static {p1}, Lcom/android/server/wm/vju;->zta(Lcom/android/server/wm/vju;)Landroid/content/Context;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object p1
+
+    iget-object p2, p0, Lcom/android/server/wm/lqr;->this$0:Lcom/android/server/wm/vju;
+
+    invoke-static {p2}, Lcom/android/server/wm/vju;->ibl(Lcom/android/server/wm/vju;)I
+
+    move-result p2
+
+    const-string v2, "quickreply_imbutton_x"
+
+    invoke-static {p1, v2, p2}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
+
+    iget-object p1, p0, Lcom/android/server/wm/lqr;->this$0:Lcom/android/server/wm/vju;
+
+    invoke-static {p1}, Lcom/android/server/wm/vju;->bvj(Lcom/android/server/wm/vju;)Lcom/android/server/wm/vju$zta;
+
+    move-result-object p1
+
+    invoke-virtual {p1, v0}, Landroid/os/Handler;->removeMessages(I)V
+
+    iget-object p0, p0, Lcom/android/server/wm/lqr;->this$0:Lcom/android/server/wm/vju;
+
+    invoke-static {p0}, Lcom/android/server/wm/vju;->bvj(Lcom/android/server/wm/vju;)Lcom/android/server/wm/vju$zta;
 
     move-result-object p0
 
-    const-string v0, "OpQuickReply"
+    const-wide/16 p1, 0x1388
 
-    invoke-static {v0, p0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-virtual {p0, v0, p1, p2}, Landroid/os/Handler;->sendEmptyMessageDelayed(IJ)Z
 
-    :cond_0
-    return-void
+    return v1
+
+    :cond_4
+    iget-object p1, p0, Lcom/android/server/wm/lqr;->this$0:Lcom/android/server/wm/vju;
+
+    invoke-static {p1}, Lcom/android/server/wm/vju;->gwm(Lcom/android/server/wm/vju;)Landroid/view/WindowManager$LayoutParams;
+
+    move-result-object p1
+
+    const/high16 v2, 0x3f800000    # 1.0f
+
+    iput v2, p1, Landroid/view/WindowManager$LayoutParams;->alpha:F
+
+    iget-object p1, p0, Lcom/android/server/wm/lqr;->this$0:Lcom/android/server/wm/vju;
+
+    invoke-static {p1}, Lcom/android/server/wm/vju;->bvj(Lcom/android/server/wm/vju;)Lcom/android/server/wm/vju$zta;
+
+    move-result-object p1
+
+    invoke-virtual {p1, v0}, Landroid/os/Handler;->removeMessages(I)V
+
+    iget-object p1, p0, Lcom/android/server/wm/lqr;->this$0:Lcom/android/server/wm/vju;
+
+    invoke-static {p1}, Lcom/android/server/wm/vju;->gwm(Lcom/android/server/wm/vju;)Landroid/view/WindowManager$LayoutParams;
+
+    move-result-object v0
+
+    iget v0, v0, Landroid/view/WindowManager$LayoutParams;->x:I
+
+    invoke-static {p1, v0}, Lcom/android/server/wm/vju;->sis(Lcom/android/server/wm/vju;I)I
+
+    iput v0, p0, Lcom/android/server/wm/lqr;->WG:I
+
+    invoke-virtual {p2}, Landroid/view/MotionEvent;->getRawX()F
+
+    move-result p1
+
+    iput p1, p0, Lcom/android/server/wm/lqr;->YG:F
+
+    return v1
 .end method

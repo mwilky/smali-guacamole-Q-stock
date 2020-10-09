@@ -4,7 +4,7 @@
 
 
 # static fields
-.field private static final Aza:Ljava/lang/ThreadLocal;
+.field private static final Lza:Ljava/lang/ThreadLocal;
 
 
 # direct methods
@@ -15,7 +15,7 @@
 
     invoke-direct {v0}, Ljava/lang/ThreadLocal;-><init>()V
 
-    sput-object v0, Lorg/bouncycastle/util/gck;->Aza:Ljava/lang/ThreadLocal;
+    sput-object v0, Lorg/bouncycastle/util/gck;->Lza:Ljava/lang/ThreadLocal;
 
     return-void
 .end method
@@ -147,7 +147,7 @@
 
     move-result v0
 
-    sget-object v1, Lorg/bouncycastle/util/gck;->Aza:Ljava/lang/ThreadLocal;
+    sget-object v1, Lorg/bouncycastle/util/gck;->Lza:Ljava/lang/ThreadLocal;
 
     invoke-virtual {v1}, Ljava/lang/ThreadLocal;->get()Ljava/lang/Object;
 
@@ -170,14 +170,14 @@
 
     if-eqz p0, :cond_1
 
-    sget-object p0, Lorg/bouncycastle/util/gck;->Aza:Ljava/lang/ThreadLocal;
+    sget-object p0, Lorg/bouncycastle/util/gck;->Lza:Ljava/lang/ThreadLocal;
 
     invoke-virtual {p0}, Ljava/lang/ThreadLocal;->remove()V
 
     goto :goto_0
 
     :cond_1
-    sget-object p0, Lorg/bouncycastle/util/gck;->Aza:Ljava/lang/ThreadLocal;
+    sget-object p0, Lorg/bouncycastle/util/gck;->Lza:Ljava/lang/ThreadLocal;
 
     invoke-virtual {p0, v1}, Ljava/lang/ThreadLocal;->set(Ljava/lang/Object;)V
 
@@ -188,7 +188,7 @@
 .method static synthetic access$000()Ljava/lang/ThreadLocal;
     .locals 1
 
-    sget-object v0, Lorg/bouncycastle/util/gck;->Aza:Ljava/lang/ThreadLocal;
+    sget-object v0, Lorg/bouncycastle/util/gck;->Lza:Ljava/lang/ThreadLocal;
 
     return-object v0
 .end method
@@ -216,7 +216,7 @@
 
     move-result v0
 
-    sget-object v1, Lorg/bouncycastle/util/gck;->Aza:Ljava/lang/ThreadLocal;
+    sget-object v1, Lorg/bouncycastle/util/gck;->Lza:Ljava/lang/ThreadLocal;
 
     invoke-virtual {v1}, Ljava/lang/ThreadLocal;->get()Ljava/lang/Object;
 
@@ -243,7 +243,7 @@
     :goto_0
     invoke-interface {v1, p0, p1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    sget-object p0, Lorg/bouncycastle/util/gck;->Aza:Ljava/lang/ThreadLocal;
+    sget-object p0, Lorg/bouncycastle/util/gck;->Lza:Ljava/lang/ThreadLocal;
 
     invoke-virtual {p0, v1}, Ljava/lang/ThreadLocal;->set(Ljava/lang/Object;)V
 

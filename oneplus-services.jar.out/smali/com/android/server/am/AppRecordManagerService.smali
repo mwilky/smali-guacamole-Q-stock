@@ -1763,7 +1763,7 @@
 
     if-eqz p0, :cond_3
 
-    sget-boolean p0, Lcom/android/server/am/ire;->jm:Z
+    sget-boolean p0, Lcom/android/server/am/ire;->pm:Z
 
     if-eqz p0, :cond_3
 

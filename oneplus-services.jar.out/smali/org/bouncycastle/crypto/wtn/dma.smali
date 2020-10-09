@@ -4,17 +4,17 @@
 
 
 # static fields
-.field public static final tDa:I = 0x1
+.field public static final EDa:I = 0x1
 
-.field public static final uDa:I = 0x2
+.field public static final FDa:I = 0x2
 
 
 # instance fields
-.field private final Eza:I
+.field private final Pza:I
 
-.field private final FCa:I
+.field private final QCa:I
 
-.field private final Moa:Ljava/security/SecureRandom;
+.field private final Xoa:Ljava/security/SecureRandom;
 
 .field private final l:I
 
@@ -51,18 +51,18 @@
 
     iput p2, p0, Lorg/bouncycastle/crypto/wtn/dma;->n:I
 
-    iput p3, p0, Lorg/bouncycastle/crypto/wtn/dma;->Eza:I
+    iput p3, p0, Lorg/bouncycastle/crypto/wtn/dma;->Pza:I
 
-    iput p5, p0, Lorg/bouncycastle/crypto/wtn/dma;->FCa:I
+    iput p5, p0, Lorg/bouncycastle/crypto/wtn/dma;->QCa:I
 
-    iput-object p4, p0, Lorg/bouncycastle/crypto/wtn/dma;->Moa:Ljava/security/SecureRandom;
+    iput-object p4, p0, Lorg/bouncycastle/crypto/wtn/dma;->Xoa:Ljava/security/SecureRandom;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public Qi()I
+.method public Si()I
     .locals 0
 
     iget p0, p0, Lorg/bouncycastle/crypto/wtn/dma;->n:I
@@ -73,7 +73,7 @@
 .method public getCertainty()I
     .locals 0
 
-    iget p0, p0, Lorg/bouncycastle/crypto/wtn/dma;->Eza:I
+    iget p0, p0, Lorg/bouncycastle/crypto/wtn/dma;->Pza:I
 
     return p0
 .end method
@@ -86,18 +86,18 @@
     return p0
 .end method
 
-.method public gj()Ljava/security/SecureRandom;
+.method public ij()Ljava/security/SecureRandom;
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/crypto/wtn/dma;->Moa:Ljava/security/SecureRandom;
+    iget-object p0, p0, Lorg/bouncycastle/crypto/wtn/dma;->Xoa:Ljava/security/SecureRandom;
 
     return-object p0
 .end method
 
-.method public wj()I
+.method public yj()I
     .locals 0
 
-    iget p0, p0, Lorg/bouncycastle/crypto/wtn/dma;->FCa:I
+    iget p0, p0, Lorg/bouncycastle/crypto/wtn/dma;->QCa:I
 
     return p0
 .end method

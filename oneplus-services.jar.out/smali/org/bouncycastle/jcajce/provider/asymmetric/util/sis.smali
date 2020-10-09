@@ -12,11 +12,11 @@
 
 
 # instance fields
-.field private Fqa:[Ljava/lang/Class;
+.field private Qqa:[Ljava/lang/Class;
 
-.field protected Gqa:Ljava/security/AlgorithmParameters;
+.field protected Rqa:Ljava/security/AlgorithmParameters;
 
-.field protected Hqa:Lorg/bouncycastle/crypto/ire;
+.field protected Sqa:Lorg/bouncycastle/crypto/ire;
 
 .field private final helper:Lorg/bouncycastle/jcajce/tsu/tsu;
 
@@ -47,7 +47,7 @@
 
     aput-object v1, v0, v2
 
-    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/util/sis;->Fqa:[Ljava/lang/Class;
+    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/util/sis;->Qqa:[Ljava/lang/Class;
 
     new-instance v0, Lorg/bouncycastle/jcajce/tsu/you;
 
@@ -57,9 +57,9 @@
 
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/util/sis;->Gqa:Ljava/security/AlgorithmParameters;
+    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/util/sis;->Rqa:Ljava/security/AlgorithmParameters;
 
-    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/util/sis;->Hqa:Lorg/bouncycastle/crypto/ire;
+    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/util/sis;->Sqa:Lorg/bouncycastle/crypto/ire;
 
     return-void
 .end method
@@ -183,7 +183,7 @@
     const-string v0, "Unknown key type "
 
     :try_start_0
-    iget-object v1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/util/sis;->Hqa:Lorg/bouncycastle/crypto/ire;
+    iget-object v1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/util/sis;->Sqa:Lorg/bouncycastle/crypto/ire;
 
     const/4 v2, 0x0
 
@@ -198,7 +198,7 @@
     goto :goto_0
 
     :cond_0
-    iget-object v1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/util/sis;->Hqa:Lorg/bouncycastle/crypto/ire;
+    iget-object v1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/util/sis;->Sqa:Lorg/bouncycastle/crypto/ire;
 
     array-length v3, p1
 
@@ -478,7 +478,7 @@
     if-eqz p1, :cond_1
 
     :try_start_0
-    iget-object v0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/util/sis;->Hqa:Lorg/bouncycastle/crypto/ire;
+    iget-object v0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/util/sis;->Sqa:Lorg/bouncycastle/crypto/ire;
 
     const/4 v1, 0x0
 
@@ -493,7 +493,7 @@
     return-object p0
 
     :cond_0
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/util/sis;->Hqa:Lorg/bouncycastle/crypto/ire;
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/util/sis;->Sqa:Lorg/bouncycastle/crypto/ire;
 
     array-length v0, p1
 

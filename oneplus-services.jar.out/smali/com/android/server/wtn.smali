@@ -18,11 +18,11 @@
 
 
 # instance fields
-.field final synthetic fc:I
+.field final synthetic lc:I
 
-.field final synthetic gc:I
+.field final synthetic mc:I
 
-.field final synthetic hc:I
+.field final synthetic nc:I
 
 .field final synthetic this$0:Lcom/android/server/OnePlusExService;
 
@@ -41,11 +41,11 @@
 
     iput-object p3, p0, Lcom/android/server/wtn;->val$context:Landroid/content/Context;
 
-    iput p4, p0, Lcom/android/server/wtn;->fc:I
+    iput p4, p0, Lcom/android/server/wtn;->lc:I
 
-    iput p5, p0, Lcom/android/server/wtn;->gc:I
+    iput p5, p0, Lcom/android/server/wtn;->mc:I
 
-    iput p6, p0, Lcom/android/server/wtn;->hc:I
+    iput p6, p0, Lcom/android/server/wtn;->nc:I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -71,7 +71,7 @@
 
     move-result-object v2
 
-    iget v3, p0, Lcom/android/server/wtn;->fc:I
+    iget v3, p0, Lcom/android/server/wtn;->lc:I
 
     aget v2, v2, v3
 
@@ -101,13 +101,13 @@
 
     move-result-object v1
 
-    iget v2, p0, Lcom/android/server/wtn;->gc:I
+    iget v2, p0, Lcom/android/server/wtn;->mc:I
 
     invoke-virtual {v1, v2, v0}, Landroid/app/NotificationManager;->notify(ILandroid/app/Notification;)V
 
-    iget v0, p0, Lcom/android/server/wtn;->fc:I
+    iget v0, p0, Lcom/android/server/wtn;->lc:I
 
-    iget v5, p0, Lcom/android/server/wtn;->hc:I
+    iget v5, p0, Lcom/android/server/wtn;->nc:I
 
     add-int/lit8 v1, v5, -0x1
 
@@ -119,7 +119,7 @@
 
     iget-object v3, p0, Lcom/android/server/wtn;->val$context:Landroid/content/Context;
 
-    iget v4, p0, Lcom/android/server/wtn;->gc:I
+    iget v4, p0, Lcom/android/server/wtn;->mc:I
 
     :goto_0
     invoke-static {v1}, Lcom/android/server/OnePlusExService;->access$1300(Lcom/android/server/OnePlusExService;)Landroid/app/Notification$Builder;
@@ -162,9 +162,9 @@
 
     iget-object v3, p0, Lcom/android/server/wtn;->val$context:Landroid/content/Context;
 
-    iget v4, p0, Lcom/android/server/wtn;->gc:I
+    iget v4, p0, Lcom/android/server/wtn;->mc:I
 
-    iget v5, p0, Lcom/android/server/wtn;->hc:I
+    iget v5, p0, Lcom/android/server/wtn;->nc:I
 
     goto :goto_0
 

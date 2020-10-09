@@ -170,9 +170,9 @@
 
     iput-object v0, p0, Lcom/android/server/wm/OPAppSwitchManagerService;->dangerousPerms:Ljava/util/ArrayList;
 
-    new-instance v0, Lcom/android/server/wm/sis;
+    new-instance v0, Lcom/android/server/wm/tsu;
 
-    invoke-direct {v0, p0}, Lcom/android/server/wm/sis;-><init>(Lcom/android/server/wm/OPAppSwitchManagerService;)V
+    invoke-direct {v0, p0}, Lcom/android/server/wm/tsu;-><init>(Lcom/android/server/wm/OPAppSwitchManagerService;)V
 
     iput-object v0, p0, Lcom/android/server/wm/OPAppSwitchManagerService;->mCleanUpReceiver:Landroid/content/BroadcastReceiver;
 
@@ -1937,9 +1937,9 @@
 
     iget-object v1, p0, Lcom/android/server/wm/OPAppSwitchManagerService;->mNotifyHandler:Landroid/os/Handler;
 
-    new-instance v2, Lcom/android/server/wm/tsu;
+    new-instance v2, Lcom/android/server/wm/rtg;
 
-    invoke-direct {v2, p0, p1, p2, v3}, Lcom/android/server/wm/tsu;-><init>(Lcom/android/server/wm/OPAppSwitchManagerService;Lcom/android/server/wm/ActivityRecord;Lcom/android/server/wm/ActivityRecord;Z)V
+    invoke-direct {v2, p0, p1, p2, v3}, Lcom/android/server/wm/rtg;-><init>(Lcom/android/server/wm/OPAppSwitchManagerService;Lcom/android/server/wm/ActivityRecord;Lcom/android/server/wm/ActivityRecord;Z)V
 
     invoke-virtual {v1, v2}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
     :try_end_0
@@ -2022,9 +2022,9 @@
 
     iget-object v1, p0, Lcom/android/server/wm/OPAppSwitchManagerService;->mNotifyHandler:Landroid/os/Handler;
 
-    new-instance v2, Lcom/android/server/wm/rtg;
+    new-instance v2, Lcom/android/server/wm/ssp;
 
-    invoke-direct {v2, p0, p1, v4}, Lcom/android/server/wm/rtg;-><init>(Lcom/android/server/wm/OPAppSwitchManagerService;Lcom/android/server/wm/ActivityRecord;Z)V
+    invoke-direct {v2, p0, p1, v4}, Lcom/android/server/wm/ssp;-><init>(Lcom/android/server/wm/OPAppSwitchManagerService;Lcom/android/server/wm/ActivityRecord;Z)V
 
     invoke-virtual {v1, v2}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
     :try_end_0
@@ -2114,9 +2114,9 @@
 
     iget-object v1, p0, Lcom/android/server/wm/OPAppSwitchManagerService;->mNotifyHandler:Landroid/os/Handler;
 
-    new-instance v2, Lcom/android/server/wm/you;
+    new-instance v2, Lcom/android/server/wm/sis;
 
-    invoke-direct {v2, p0, p2}, Lcom/android/server/wm/you;-><init>(Lcom/android/server/wm/OPAppSwitchManagerService;Lcom/android/server/wm/OPAppSwitchSettings;)V
+    invoke-direct {v2, p0, p2}, Lcom/android/server/wm/sis;-><init>(Lcom/android/server/wm/OPAppSwitchManagerService;Lcom/android/server/wm/OPAppSwitchSettings;)V
 
     invoke-virtual {v1, v2}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 

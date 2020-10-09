@@ -17,9 +17,9 @@
 # instance fields
 .field private mSize:I
 
-.field private rf:[[D
-
 .field final synthetic this$0:Lcom/android/server/OpPowerControllerService;
+
+.field private xf:[[D
 
 
 # direct methods
@@ -42,7 +42,7 @@
 
     check-cast p1, [[D
 
-    iput-object p1, p0, Lcom/android/server/OpPowerControllerService$zta;->rf:[[D
+    iput-object p1, p0, Lcom/android/server/OpPowerControllerService$zta;->xf:[[D
 
     const/4 p1, 0x0
 
@@ -56,7 +56,7 @@
 .method public H()[[D
     .locals 0
 
-    iget-object p0, p0, Lcom/android/server/OpPowerControllerService$zta;->rf:[[D
+    iget-object p0, p0, Lcom/android/server/OpPowerControllerService$zta;->xf:[[D
 
     return-object p0
 .end method
@@ -80,7 +80,7 @@
 .method public zta([[D)V
     .locals 0
 
-    iput-object p1, p0, Lcom/android/server/OpPowerControllerService$zta;->rf:[[D
+    iput-object p1, p0, Lcom/android/server/OpPowerControllerService$zta;->xf:[[D
 
     return-void
 .end method

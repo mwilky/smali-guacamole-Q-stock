@@ -6,7 +6,7 @@
 # static fields
 .field public static final Q:Ljava/math/BigInteger;
 
-.field private static final TGa:[I
+.field private static final dHa:[I
 
 
 # instance fields
@@ -27,7 +27,7 @@
 
     fill-array-data v0, :array_0
 
-    sput-object v0, Lyou/zta/sis/zta/zta/zta/ywr;->TGa:[I
+    sput-object v0, Lyou/zta/sis/zta/zta/zta/ywr;->dHa:[I
 
     return-void
 
@@ -142,24 +142,6 @@
     return p0
 .end method
 
-.method public fk()Lyou/zta/sis/zta/cno;
-    .locals 1
-
-    invoke-static {}, Lyou/zta/sis/sis/tsu;->create()[I
-
-    move-result-object v0
-
-    iget-object p0, p0, Lyou/zta/sis/zta/zta/zta/ywr;->x:[I
-
-    invoke-static {p0, v0}, Lyou/zta/sis/zta/zta/zta/dma;->ssp([I[I)V
-
-    new-instance p0, Lyou/zta/sis/zta/zta/zta/ywr;
-
-    invoke-direct {p0, v0}, Lyou/zta/sis/zta/zta/zta/ywr;-><init>([I)V
-
-    return-object p0
-.end method
-
 .method public getFieldSize()I
     .locals 0
 
@@ -170,14 +152,6 @@
     move-result p0
 
     return p0
-.end method
-
-.method public gk()Ljava/lang/String;
-    .locals 0
-
-    const-string p0, "SecP224K1Field"
-
-    return-object p0
 .end method
 
 .method public hashCode()I
@@ -204,7 +178,65 @@
     return p0
 .end method
 
-.method public hk()Z
+.method public hk()Lyou/zta/sis/zta/cno;
+    .locals 1
+
+    invoke-static {}, Lyou/zta/sis/sis/tsu;->create()[I
+
+    move-result-object v0
+
+    iget-object p0, p0, Lyou/zta/sis/zta/zta/zta/ywr;->x:[I
+
+    invoke-static {p0, v0}, Lyou/zta/sis/zta/zta/zta/dma;->ssp([I[I)V
+
+    new-instance p0, Lyou/zta/sis/zta/zta/zta/ywr;
+
+    invoke-direct {p0, v0}, Lyou/zta/sis/zta/zta/zta/ywr;-><init>([I)V
+
+    return-object p0
+.end method
+
+.method public ik()Ljava/lang/String;
+    .locals 0
+
+    const-string p0, "SecP224K1Field"
+
+    return-object p0
+.end method
+
+.method public invert()Lyou/zta/sis/zta/cno;
+    .locals 2
+
+    invoke-static {}, Lyou/zta/sis/sis/tsu;->create()[I
+
+    move-result-object v0
+
+    sget-object v1, Lyou/zta/sis/zta/zta/zta/dma;->P:[I
+
+    iget-object p0, p0, Lyou/zta/sis/zta/zta/zta/ywr;->x:[I
+
+    invoke-static {v1, p0, v0}, Lyou/zta/sis/sis/you;->bio([I[I[I)V
+
+    new-instance p0, Lyou/zta/sis/zta/zta/zta/ywr;
+
+    invoke-direct {p0, v0}, Lyou/zta/sis/zta/zta/zta/ywr;-><init>([I)V
+
+    return-object p0
+.end method
+
+.method public isZero()Z
+    .locals 0
+
+    iget-object p0, p0, Lyou/zta/sis/zta/zta/zta/ywr;->x:[I
+
+    invoke-static {p0}, Lyou/zta/sis/sis/tsu;->dma([I)Z
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public jk()Z
     .locals 0
 
     iget-object p0, p0, Lyou/zta/sis/zta/zta/zta/ywr;->x:[I
@@ -216,7 +248,7 @@
     return p0
 .end method
 
-.method public ik()Lyou/zta/sis/zta/cno;
+.method public kk()Lyou/zta/sis/zta/cno;
     .locals 8
 
     iget-object v0, p0, Lyou/zta/sis/zta/zta/zta/ywr;->x:[I
@@ -351,7 +383,7 @@
     return-object p0
 
     :cond_1
-    sget-object p0, Lyou/zta/sis/zta/zta/zta/ywr;->TGa:[I
+    sget-object p0, Lyou/zta/sis/zta/zta/zta/ywr;->dHa:[I
 
     invoke-static {v2, p0, v2}, Lyou/zta/sis/zta/zta/zta/dma;->tsu([I[I[I)V
 
@@ -377,39 +409,7 @@
     return-object p0
 .end method
 
-.method public invert()Lyou/zta/sis/zta/cno;
-    .locals 2
-
-    invoke-static {}, Lyou/zta/sis/sis/tsu;->create()[I
-
-    move-result-object v0
-
-    sget-object v1, Lyou/zta/sis/zta/zta/zta/dma;->P:[I
-
-    iget-object p0, p0, Lyou/zta/sis/zta/zta/zta/ywr;->x:[I
-
-    invoke-static {v1, p0, v0}, Lyou/zta/sis/sis/you;->bio([I[I[I)V
-
-    new-instance p0, Lyou/zta/sis/zta/zta/zta/ywr;
-
-    invoke-direct {p0, v0}, Lyou/zta/sis/zta/zta/zta/ywr;-><init>([I)V
-
-    return-object p0
-.end method
-
-.method public isZero()Z
-    .locals 0
-
-    iget-object p0, p0, Lyou/zta/sis/zta/zta/zta/ywr;->x:[I
-
-    invoke-static {p0}, Lyou/zta/sis/sis/tsu;->dma([I)Z
-
-    move-result p0
-
-    return p0
-.end method
-
-.method public jk()Z
+.method public lk()Z
     .locals 2
 
     iget-object p0, p0, Lyou/zta/sis/zta/zta/zta/ywr;->x:[I

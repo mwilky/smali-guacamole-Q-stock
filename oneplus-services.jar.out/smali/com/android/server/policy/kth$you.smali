@@ -15,7 +15,7 @@
 
 
 # static fields
-.field static final aa:I = 0x1
+.field static final ca:I = 0x1
 
 
 # instance fields

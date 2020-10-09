@@ -16,11 +16,11 @@
 
 
 # static fields
-.field private static final Jw:Ljava/lang/String; = "DoFrameInBG"
-
 .field private static final MSG_GET_ONLINECONFIG:I = 0x1
 
 .field private static final SYSTEM_PROPERTIES:Ljava/lang/String; = "persist.sys.skipBGDoFrame"
+
+.field private static final Sw:Ljava/lang/String; = "DoFrameInBG"
 
 .field private static final TAG:Ljava/lang/String; = "OneplusPerfController"
 
@@ -28,7 +28,7 @@
 
 
 # instance fields
-.field private Iw:Landroid/os/HandlerThread;
+.field private Rw:Landroid/os/HandlerThread;
 
 .field private mConfigObserver:Lcom/oneplus/config/ConfigObserver;
 
@@ -53,7 +53,7 @@
 
     iput-object v0, p0, Lcom/android/server/am/l;->mHandler:Landroid/os/Handler;
 
-    iput-object v0, p0, Lcom/android/server/am/l;->Iw:Landroid/os/HandlerThread;
+    iput-object v0, p0, Lcom/android/server/am/l;->Rw:Landroid/os/HandlerThread;
 
     new-instance v0, Lcom/android/server/am/l$you;
 

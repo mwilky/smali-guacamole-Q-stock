@@ -15,17 +15,17 @@
 
 
 # instance fields
-.field public cg:Z
+.field public ig:Z
 
-.field public dg:Z
+.field public jg:Z
 
-.field public eg:Z
+.field public kg:Z
 
-.field public fg:I
+.field public lg:I
 
-.field public gg:I
+.field public mg:I
 
-.field public hg:Ljava/lang/String;
+.field public ng:Ljava/lang/String;
 
 .field final synthetic this$0:Lcom/android/server/l;
 
@@ -38,17 +38,17 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-boolean p2, p0, Lcom/android/server/l$cno;->cg:Z
+    iput-boolean p2, p0, Lcom/android/server/l$cno;->ig:Z
 
-    iput-boolean p3, p0, Lcom/android/server/l$cno;->dg:Z
+    iput-boolean p3, p0, Lcom/android/server/l$cno;->jg:Z
 
-    iput-boolean p4, p0, Lcom/android/server/l$cno;->eg:Z
+    iput-boolean p4, p0, Lcom/android/server/l$cno;->kg:Z
 
-    iput p5, p0, Lcom/android/server/l$cno;->fg:I
+    iput p5, p0, Lcom/android/server/l$cno;->lg:I
 
-    iput p6, p0, Lcom/android/server/l$cno;->gg:I
+    iput p6, p0, Lcom/android/server/l$cno;->mg:I
 
-    iput-object p7, p0, Lcom/android/server/l$cno;->hg:Ljava/lang/String;
+    iput-object p7, p0, Lcom/android/server/l$cno;->ng:Ljava/lang/String;
 
     return-void
 .end method
@@ -66,7 +66,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean v1, p0, Lcom/android/server/l$cno;->cg:Z
+    iget-boolean v1, p0, Lcom/android/server/l$cno;->ig:Z
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -74,7 +74,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean v1, p0, Lcom/android/server/l$cno;->dg:Z
+    iget-boolean v1, p0, Lcom/android/server/l$cno;->jg:Z
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -82,7 +82,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean v1, p0, Lcom/android/server/l$cno;->eg:Z
+    iget-boolean v1, p0, Lcom/android/server/l$cno;->kg:Z
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -90,7 +90,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget v1, p0, Lcom/android/server/l$cno;->fg:I
+    iget v1, p0, Lcom/android/server/l$cno;->lg:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -98,7 +98,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget v1, p0, Lcom/android/server/l$cno;->gg:I
+    iget v1, p0, Lcom/android/server/l$cno;->mg:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -106,7 +106,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object p0, p0, Lcom/android/server/l$cno;->hg:Ljava/lang/String;
+    iget-object p0, p0, Lcom/android/server/l$cno;->ng:Ljava/lang/String;
 
     invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -120,17 +120,17 @@
 .method public zta(ZZZIILjava/lang/String;)V
     .locals 0
 
-    iput-boolean p1, p0, Lcom/android/server/l$cno;->cg:Z
+    iput-boolean p1, p0, Lcom/android/server/l$cno;->ig:Z
 
-    iput-boolean p2, p0, Lcom/android/server/l$cno;->dg:Z
+    iput-boolean p2, p0, Lcom/android/server/l$cno;->jg:Z
 
-    iput-boolean p3, p0, Lcom/android/server/l$cno;->eg:Z
+    iput-boolean p3, p0, Lcom/android/server/l$cno;->kg:Z
 
-    iput p4, p0, Lcom/android/server/l$cno;->fg:I
+    iput p4, p0, Lcom/android/server/l$cno;->lg:I
 
-    iput p5, p0, Lcom/android/server/l$cno;->gg:I
+    iput p5, p0, Lcom/android/server/l$cno;->mg:I
 
-    iput-object p6, p0, Lcom/android/server/l$cno;->hg:Ljava/lang/String;
+    iput-object p6, p0, Lcom/android/server/l$cno;->ng:Ljava/lang/String;
 
     return-void
 .end method

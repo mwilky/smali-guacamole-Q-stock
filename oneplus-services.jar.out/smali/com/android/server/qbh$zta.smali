@@ -42,7 +42,7 @@
 
     iget-object v0, p0, Lcom/android/server/qbh$zta;->this$0:Lcom/android/server/qbh;
 
-    iget-object v0, v0, Lcom/android/server/qbh;->Ac:Ljava/util/ArrayList;
+    iget-object v0, v0, Lcom/android/server/qbh;->Gc:Ljava/util/ArrayList;
 
     monitor-enter v0
 
@@ -61,7 +61,7 @@
 
     iget-object v3, p0, Lcom/android/server/qbh$zta;->this$0:Lcom/android/server/qbh;
 
-    iget-object v3, v3, Lcom/android/server/qbh;->Ac:Ljava/util/ArrayList;
+    iget-object v3, v3, Lcom/android/server/qbh;->Gc:Ljava/util/ArrayList;
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -103,14 +103,14 @@
     :pswitch_0
     iget-object p1, p0, Lcom/android/server/qbh$zta;->this$0:Lcom/android/server/qbh;
 
-    iget-object p1, p1, Lcom/android/server/qbh;->Ac:Ljava/util/ArrayList;
+    iget-object p1, p1, Lcom/android/server/qbh;->Gc:Ljava/util/ArrayList;
 
     monitor-enter p1
 
     :try_start_1
     iget-object v0, p0, Lcom/android/server/qbh$zta;->this$0:Lcom/android/server/qbh;
 
-    iget-object v0, v0, Lcom/android/server/qbh;->Ac:Ljava/util/ArrayList;
+    iget-object v0, v0, Lcom/android/server/qbh;->Gc:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -120,7 +120,7 @@
 
     iget-object v0, p0, Lcom/android/server/qbh$zta;->this$0:Lcom/android/server/qbh;
 
-    iget-object v0, v0, Lcom/android/server/qbh;->Bc:Ljava/util/ArrayList;
+    iget-object v0, v0, Lcom/android/server/qbh;->Hc:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->clear()V
 

@@ -4,11 +4,11 @@
 
 
 # static fields
-.field private static final DCa:Ljava/util/logging/Logger;
+.field private static final OCa:Ljava/util/logging/Logger;
 
 
 # instance fields
-.field public final vFa:Ljava/util/Set;
+.field public final GFa:Ljava/util/Set;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Set<",
@@ -18,7 +18,7 @@
     .end annotation
 .end field
 
-.field public final wFa:Ljava/util/Set;
+.field public final HFa:Ljava/util/Set;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Set<",
@@ -42,7 +42,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lorg/bouncycastle/jce/provider/sis;->DCa:Ljava/util/logging/Logger;
+    sput-object v0, Lorg/bouncycastle/jce/provider/sis;->OCa:Ljava/util/logging/Logger;
 
     return-void
 .end method
@@ -104,13 +104,13 @@
 
     move-result-object v1
 
-    iput-object v1, p0, Lorg/bouncycastle/jce/provider/sis;->wFa:Ljava/util/Set;
+    iput-object v1, p0, Lorg/bouncycastle/jce/provider/sis;->HFa:Ljava/util/Set;
 
     invoke-static {v0}, Lorg/bouncycastle/jce/provider/sis;->kd(Ljava/lang/String;)Ljava/util/Set;
 
     move-result-object v0
 
-    iput-object v0, p0, Lorg/bouncycastle/jce/provider/sis;->vFa:Ljava/util/Set;
+    iput-object v0, p0, Lorg/bouncycastle/jce/provider/sis;->GFa:Ljava/util/Set;
 
     return-void
 .end method
@@ -124,13 +124,13 @@
 
     move-result-object p1
 
-    iput-object p1, p0, Lorg/bouncycastle/jce/provider/sis;->wFa:Ljava/util/Set;
+    iput-object p1, p0, Lorg/bouncycastle/jce/provider/sis;->HFa:Ljava/util/Set;
 
     invoke-static {p2}, Lorg/bouncycastle/jce/provider/sis;->kd(Ljava/lang/String;)Ljava/util/Set;
 
     move-result-object p1
 
-    iput-object p1, p0, Lorg/bouncycastle/jce/provider/sis;->vFa:Ljava/util/Set;
+    iput-object p1, p0, Lorg/bouncycastle/jce/provider/sis;->GFa:Ljava/util/Set;
 
     return-void
 .end method
@@ -154,7 +154,7 @@
     :catch_0
     move-exception v0
 
-    sget-object v1, Lorg/bouncycastle/jce/provider/sis;->DCa:Ljava/util/logging/Logger;
+    sget-object v1, Lorg/bouncycastle/jce/provider/sis;->OCa:Ljava/util/logging/Logger;
 
     sget-object v2, Ljava/util/logging/Level;->WARNING:Ljava/util/logging/Level;
 
@@ -190,7 +190,7 @@
 
     if-eq v0, v1, :cond_0
 
-    sget-object v0, Lorg/bouncycastle/jce/provider/sis;->DCa:Ljava/util/logging/Logger;
+    sget-object v0, Lorg/bouncycastle/jce/provider/sis;->OCa:Ljava/util/logging/Logger;
 
     sget-object v1, Ljava/util/logging/Level;->WARNING:Ljava/util/logging/Level;
 
@@ -242,7 +242,7 @@
     :catch_0
     move-exception p0
 
-    sget-object v0, Lorg/bouncycastle/jce/provider/sis;->DCa:Ljava/util/logging/Logger;
+    sget-object v0, Lorg/bouncycastle/jce/provider/sis;->OCa:Ljava/util/logging/Logger;
 
     sget-object v1, Ljava/util/logging/Level;->WARNING:Ljava/util/logging/Level;
 
@@ -489,7 +489,7 @@
     goto :goto_1
 
     :cond_0
-    sget-object v4, Lorg/bouncycastle/jce/provider/sis;->DCa:Ljava/util/logging/Logger;
+    sget-object v4, Lorg/bouncycastle/jce/provider/sis;->OCa:Ljava/util/logging/Logger;
 
     sget-object v5, Ljava/util/logging/Level;->WARNING:Ljava/util/logging/Level;
 
@@ -684,7 +684,7 @@
     :catch_0
     move-exception v5
 
-    sget-object v6, Lorg/bouncycastle/jce/provider/sis;->DCa:Ljava/util/logging/Logger;
+    sget-object v6, Lorg/bouncycastle/jce/provider/sis;->OCa:Ljava/util/logging/Logger;
 
     sget-object v7, Ljava/util/logging/Level;->WARNING:Ljava/util/logging/Level;
 
@@ -767,7 +767,7 @@
 .method public igw(Ljava/math/BigInteger;)Z
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/jce/provider/sis;->vFa:Ljava/util/Set;
+    iget-object p0, p0, Lorg/bouncycastle/jce/provider/sis;->GFa:Ljava/util/Set;
 
     invoke-interface {p0, p1}, Ljava/util/Set;->contains(Ljava/lang/Object;)Z
 
@@ -801,7 +801,7 @@
 
     invoke-interface {v0, p1, v2}, Lorg/bouncycastle/crypto/qbh;->doFinal([BI)I
 
-    iget-object p0, p0, Lorg/bouncycastle/jce/provider/sis;->wFa:Ljava/util/Set;
+    iget-object p0, p0, Lorg/bouncycastle/jce/provider/sis;->HFa:Ljava/util/Set;
 
     invoke-interface {p0}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
 

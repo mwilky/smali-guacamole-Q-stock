@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field protected xka:Lorg/bouncycastle/crypto/ibl;
+.field protected Ika:Lorg/bouncycastle/crypto/ibl;
 
 
 # direct methods
@@ -13,7 +13,7 @@
 
     invoke-direct {p0}, Ljava/io/OutputStream;-><init>()V
 
-    iput-object p1, p0, Lorg/bouncycastle/crypto/cno/tsu;->xka:Lorg/bouncycastle/crypto/ibl;
+    iput-object p1, p0, Lorg/bouncycastle/crypto/cno/tsu;->Ika:Lorg/bouncycastle/crypto/ibl;
 
     return-void
 .end method
@@ -23,7 +23,7 @@
 .method public getMac()[B
     .locals 2
 
-    iget-object v0, p0, Lorg/bouncycastle/crypto/cno/tsu;->xka:Lorg/bouncycastle/crypto/ibl;
+    iget-object v0, p0, Lorg/bouncycastle/crypto/cno/tsu;->Ika:Lorg/bouncycastle/crypto/ibl;
 
     invoke-interface {v0}, Lorg/bouncycastle/crypto/ibl;->you()I
 
@@ -31,7 +31,7 @@
 
     new-array v0, v0, [B
 
-    iget-object p0, p0, Lorg/bouncycastle/crypto/cno/tsu;->xka:Lorg/bouncycastle/crypto/ibl;
+    iget-object p0, p0, Lorg/bouncycastle/crypto/cno/tsu;->Ika:Lorg/bouncycastle/crypto/ibl;
 
     const/4 v1, 0x0
 
@@ -48,7 +48,7 @@
         }
     .end annotation
 
-    iget-object p0, p0, Lorg/bouncycastle/crypto/cno/tsu;->xka:Lorg/bouncycastle/crypto/ibl;
+    iget-object p0, p0, Lorg/bouncycastle/crypto/cno/tsu;->Ika:Lorg/bouncycastle/crypto/ibl;
 
     int-to-byte p1, p1
 
@@ -65,7 +65,7 @@
         }
     .end annotation
 
-    iget-object p0, p0, Lorg/bouncycastle/crypto/cno/tsu;->xka:Lorg/bouncycastle/crypto/ibl;
+    iget-object p0, p0, Lorg/bouncycastle/crypto/cno/tsu;->Ika:Lorg/bouncycastle/crypto/ibl;
 
     invoke-interface {p0, p1, p2, p3}, Lorg/bouncycastle/crypto/ibl;->update([BII)V
 

@@ -18,43 +18,43 @@
 
 .field public static LOCAL:Z = false
 
-.field public static Nl:Z = false
-
-.field public static final Ol:Ljava/lang/String; = "persist.sys.opabr.local"
-
 .field public static final PROP_MDM:Ljava/lang/String; = "persist.sys.opabr.mdm"
-
-.field private static Pl:Ljava/lang/String; = null
-
-.field private static Ql:I = 0x0
-
-.field public static final Rl:Ljava/lang/String; = "OPABR"
-
-.field private static final Sl:Ljava/lang/String; = "recorder"
 
 .field public static final TAG:Ljava/lang/String; = "OnePlusAppBootRecorder"
 
-.field private static final Tl:Ljava/lang/String; = "record"
+.field public static Tl:Z = false
 
-.field private static final Ul:Ljava/lang/String; = "reason"
+.field public static final Ul:Ljava/lang/String; = "persist.sys.opabr.local"
 
-.field private static final Vl:Ljava/lang/String; = "background"
+.field private static Vl:Ljava/lang/String; = null
 
-.field private static final Wl:Ljava/lang/String; = "canal"
+.field private static Wl:I = 0x0
 
 .field private static final XML_ATTR_LEVEL:Ljava/lang/String; = "level"
 
 .field private static final XML_TAG_NAMESPACE:Ljava/lang/String; = ""
 
-.field private static final Xl:Ljava/lang/String; = "detail"
+.field public static final Xl:Ljava/lang/String; = "OPABR"
 
-.field private static final il:Ljava/lang/String; = "caller"
+.field private static final Yl:Ljava/lang/String; = "recorder"
 
-.field private static final jl:Ljava/lang/String; = "callee"
+.field private static final Zl:Ljava/lang/String; = "record"
+
+.field private static final _l:Ljava/lang/String; = "reason"
+
+.field private static final am:Ljava/lang/String; = "background"
+
+.field private static final bm:Ljava/lang/String; = "canal"
+
+.field private static final cm:Ljava/lang/String; = "detail"
+
+.field private static final ol:Ljava/lang/String; = "caller"
+
+.field private static final pl:Ljava/lang/String; = "callee"
 
 
 # instance fields
-.field private Ml:Ljava/util/ArrayList;
+.field private Sl:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/ArrayList<",
@@ -104,17 +104,17 @@
 
     const/4 v0, 0x0
 
-    sput-boolean v0, Lcom/android/server/am/oxb;->Nl:Z
+    sput-boolean v0, Lcom/android/server/am/oxb;->Tl:Z
 
     sput-boolean v0, Lcom/android/server/am/oxb;->LOCAL:Z
 
     const-string v0, "/data/system/appboot/record.xml"
 
-    sput-object v0, Lcom/android/server/am/oxb;->Pl:Ljava/lang/String;
+    sput-object v0, Lcom/android/server/am/oxb;->Vl:Ljava/lang/String;
 
     const/4 v0, 0x5
 
-    sput v0, Lcom/android/server/am/oxb;->Ql:I
+    sput v0, Lcom/android/server/am/oxb;->Wl:I
 
     return-void
 .end method
@@ -134,7 +134,7 @@
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/android/server/am/oxb;->Ml:Ljava/util/ArrayList;
+    iput-object v0, p0, Lcom/android/server/am/oxb;->Sl:Ljava/util/ArrayList;
 
     invoke-static {}, Ljava/util/concurrent/Executors;->newCachedThreadPool()Ljava/util/concurrent/ExecutorService;
 
@@ -158,7 +158,7 @@
 
     iput-object p2, p0, Lcom/android/server/am/oxb;->mContentResolver:Landroid/content/ContentResolver;
 
-    sget-boolean p1, Lcom/android/server/am/oxb;->Nl:Z
+    sget-boolean p1, Lcom/android/server/am/oxb;->Tl:Z
 
     const-string p2, "persist.sys.opabr.mdm"
 
@@ -166,7 +166,7 @@
 
     move-result p1
 
-    sput-boolean p1, Lcom/android/server/am/oxb;->Nl:Z
+    sput-boolean p1, Lcom/android/server/am/oxb;->Tl:Z
 
     sget-boolean p1, Lcom/android/server/am/oxb;->LOCAL:Z
 
@@ -501,7 +501,7 @@
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sget v4, Lcom/android/server/am/oxb;->Ql:I
+    sget v4, Lcom/android/server/am/oxb;->Wl:I
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -776,7 +776,7 @@
 
     invoke-interface {p0}, Lorg/xmlpull/v1/XmlSerializer;->endDocument()V
 
-    sget-object p0, Lcom/android/server/am/oxb;->Pl:Ljava/lang/String;
+    sget-object p0, Lcom/android/server/am/oxb;->Vl:Ljava/lang/String;
 
     invoke-virtual {v0}, Ljava/io/StringWriter;->toString()Ljava/lang/String;
 
@@ -865,7 +865,7 @@
     return p0
 .end method
 
-.method private rm()Ljava/lang/String;
+.method private um()Ljava/lang/String;
     .locals 2
 
     new-instance v0, Ljava/util/ArrayList;
@@ -918,7 +918,7 @@
 .method private zta(Ljava/lang/String;Lcom/android/server/am/oxb$zta;)V
     .locals 5
 
-    sget-boolean v0, Lcom/android/server/am/oxb;->Nl:Z
+    sget-boolean v0, Lcom/android/server/am/oxb;->Tl:Z
 
     if-eqz v0, :cond_2
 
@@ -1103,7 +1103,7 @@
     invoke-static {v0, p0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_0
-    sput-boolean p1, Lcom/android/server/am/oxb;->Nl:Z
+    sput-boolean p1, Lcom/android/server/am/oxb;->Tl:Z
 
     new-instance p0, Ljava/lang/StringBuilder;
 
@@ -1201,7 +1201,7 @@
     invoke-static {v0, p0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_0
-    sput p1, Lcom/android/server/am/oxb;->Ql:I
+    sput p1, Lcom/android/server/am/oxb;->Wl:I
 
     return-void
 .end method
@@ -1380,7 +1380,7 @@
 
     move-result v0
 
-    sget v1, Lcom/android/server/am/oxb;->Ql:I
+    sget v1, Lcom/android/server/am/oxb;->Wl:I
 
     if-ge v0, v1, :cond_0
 
@@ -1409,7 +1409,7 @@
 
     move-result-object v0
 
-    invoke-direct {p0}, Lcom/android/server/am/oxb;->rm()Ljava/lang/String;
+    invoke-direct {p0}, Lcom/android/server/am/oxb;->um()Ljava/lang/String;
 
     move-result-object v1
 
@@ -1422,12 +1422,12 @@
     goto :goto_0
 
     :cond_1
-    iget-object v0, p0, Lcom/android/server/am/oxb;->Ml:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/server/am/oxb;->Sl:Ljava/util/ArrayList;
 
     monitor-enter v0
 
     :try_start_0
-    iget-object v1, p0, Lcom/android/server/am/oxb;->Ml:Ljava/util/ArrayList;
+    iget-object v1, p0, Lcom/android/server/am/oxb;->Sl:Ljava/util/ArrayList;
 
     invoke-virtual {p1}, Lcom/android/server/am/oxb$zta;->jb()Ljava/lang/String;
 
@@ -1544,7 +1544,7 @@
     invoke-static {v1, v0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_7
-    sget-boolean v0, Lcom/android/server/am/oxb;->Nl:Z
+    sget-boolean v0, Lcom/android/server/am/oxb;->Tl:Z
 
     if-eqz v0, :cond_8
 
@@ -1595,7 +1595,7 @@
         }
     .end annotation
 
-    iget-object v0, p0, Lcom/android/server/am/oxb;->Ml:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/server/am/oxb;->Sl:Ljava/util/ArrayList;
 
     monitor-enter v0
 
@@ -1610,7 +1610,7 @@
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v3, p0, Lcom/android/server/am/oxb;->Ml:Ljava/util/ArrayList;
+    iget-object v3, p0, Lcom/android/server/am/oxb;->Sl:Ljava/util/ArrayList;
 
     invoke-virtual {v3}, Ljava/util/ArrayList;->size()I
 
@@ -1624,11 +1624,11 @@
 
     invoke-static {v1, v2}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    iget-object v1, p0, Lcom/android/server/am/oxb;->Ml:Ljava/util/ArrayList;
+    iget-object v1, p0, Lcom/android/server/am/oxb;->Sl:Ljava/util/ArrayList;
 
     invoke-virtual {v1}, Ljava/util/ArrayList;->clear()V
 
-    iget-object v1, p0, Lcom/android/server/am/oxb;->Ml:Ljava/util/ArrayList;
+    iget-object v1, p0, Lcom/android/server/am/oxb;->Sl:Ljava/util/ArrayList;
 
     invoke-virtual {p1}, Ljava/util/ArrayList;->clone()Ljava/lang/Object;
 
@@ -1650,7 +1650,7 @@
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object p0, p0, Lcom/android/server/am/oxb;->Ml:Ljava/util/ArrayList;
+    iget-object p0, p0, Lcom/android/server/am/oxb;->Sl:Ljava/util/ArrayList;
 
     invoke-virtual {p0}, Ljava/util/ArrayList;->size()I
 

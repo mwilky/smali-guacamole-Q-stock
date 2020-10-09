@@ -40,9 +40,9 @@
 
     new-instance v0, Landroid/os/Handler;
 
-    new-instance v1, Lcom/android/server/pm/cno;
+    new-instance v1, Lcom/android/server/pm/kth;
 
-    invoke-direct {v1, p0}, Lcom/android/server/pm/cno;-><init>(Lcom/android/server/pm/OpLauncherAppsService;)V
+    invoke-direct {v1, p0}, Lcom/android/server/pm/kth;-><init>(Lcom/android/server/pm/OpLauncherAppsService;)V
 
     invoke-direct {v0, v1}, Landroid/os/Handler;-><init>(Landroid/os/Handler$Callback;)V
 
@@ -285,9 +285,9 @@
 
     move-result-object p2
 
-    new-instance p3, Lcom/android/server/pm/kth;
+    new-instance p3, Lcom/android/server/pm/bio;
 
-    invoke-direct {p3, p0}, Lcom/android/server/pm/kth;-><init>(Lcom/android/server/pm/OpLauncherAppsService;)V
+    invoke-direct {p3, p0}, Lcom/android/server/pm/bio;-><init>(Lcom/android/server/pm/OpLauncherAppsService;)V
 
     invoke-virtual {p1, p2, p3}, Landroid/app/AlertDialog$Builder;->setNegativeButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -309,9 +309,9 @@
 
     invoke-virtual {p1, p2}, Landroid/app/AlertDialog;->setCanceledOnTouchOutside(Z)V
 
-    new-instance p2, Lcom/android/server/pm/bio;
+    new-instance p2, Lcom/android/server/pm/igw;
 
-    invoke-direct {p2, p0, p1}, Lcom/android/server/pm/bio;-><init>(Lcom/android/server/pm/OpLauncherAppsService;Landroid/app/AlertDialog;)V
+    invoke-direct {p2, p0, p1}, Lcom/android/server/pm/igw;-><init>(Lcom/android/server/pm/OpLauncherAppsService;Landroid/app/AlertDialog;)V
 
     invoke-virtual {p1, p2}, Landroid/app/AlertDialog;->setOnShowListener(Landroid/content/DialogInterface$OnShowListener;)V
 

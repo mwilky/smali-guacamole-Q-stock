@@ -42,7 +42,7 @@
 .method public noteProcessStateChanged(IILjava/lang/String;Ljava/lang/String;Z)V
     .locals 4
 
-    sget-boolean v0, Lcom/android/server/am/ire;->jm:Z
+    sget-boolean v0, Lcom/android/server/am/ire;->pm:Z
 
     if-nez v0, :cond_0
 

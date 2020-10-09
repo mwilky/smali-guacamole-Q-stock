@@ -18,11 +18,11 @@
 
 .field private static final TAG:Ljava/lang/String; = "OnePlusLoggingService"
 
-.field private static bio:Landroid/content/ComponentName; = null
-
-.field private static final cno:Z
+.field private static final igw:Z
 
 .field private static final kth:I = 0x594088bb
+
+.field private static wtn:Landroid/content/ComponentName;
 
 
 # direct methods
@@ -41,9 +41,9 @@
 
     move-result v0
 
-    sput-boolean v0, Lcom/android/server/power/OnePlusLoggingService;->cno:Z
+    sput-boolean v0, Lcom/android/server/power/OnePlusLoggingService;->igw:Z
 
-    sget-boolean v0, Lcom/android/server/power/OnePlusLoggingService;->cno:Z
+    sget-boolean v0, Lcom/android/server/power/OnePlusLoggingService;->igw:Z
 
     if-eqz v0, :cond_0
 
@@ -77,7 +77,7 @@
 
     invoke-direct {v0, v2, v1}, Landroid/content/ComponentName;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
-    sput-object v0, Lcom/android/server/power/OnePlusLoggingService;->bio:Landroid/content/ComponentName;
+    sput-object v0, Lcom/android/server/power/OnePlusLoggingService;->wtn:Landroid/content/ComponentName;
 
     return-void
 .end method
@@ -146,7 +146,7 @@
 
     const v1, 0x594088bb
 
-    sget-object v2, Lcom/android/server/power/OnePlusLoggingService;->bio:Landroid/content/ComponentName;
+    sget-object v2, Lcom/android/server/power/OnePlusLoggingService;->wtn:Landroid/content/ComponentName;
 
     invoke-direct {v0, v1, v2}, Landroid/app/job/JobInfo$Builder;-><init>(ILandroid/content/ComponentName;)V
 

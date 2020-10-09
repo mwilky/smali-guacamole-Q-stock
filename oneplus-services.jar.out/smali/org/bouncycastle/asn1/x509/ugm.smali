@@ -27,7 +27,7 @@
 
     iput-object v0, p0, Lorg/bouncycastle/asn1/x509/ugm;->ordering:Ljava/util/Vector;
 
-    invoke-virtual {p1}, Lorg/bouncycastle/asn1/obl;->Rg()Ljava/util/Enumeration;
+    invoke-virtual {p1}, Lorg/bouncycastle/asn1/obl;->Tg()Ljava/util/Enumeration;
 
     move-result-object p1
 
@@ -48,7 +48,7 @@
 
     iget-object v1, p0, Lorg/bouncycastle/asn1/x509/ugm;->extensions:Ljava/util/Hashtable;
 
-    invoke-virtual {v0}, Lorg/bouncycastle/asn1/x509/gwm;->di()Lorg/bouncycastle/asn1/bvj;
+    invoke-virtual {v0}, Lorg/bouncycastle/asn1/x509/gwm;->fi()Lorg/bouncycastle/asn1/bvj;
 
     move-result-object v2
 
@@ -60,7 +60,7 @@
 
     iget-object v1, p0, Lorg/bouncycastle/asn1/x509/ugm;->extensions:Ljava/util/Hashtable;
 
-    invoke-virtual {v0}, Lorg/bouncycastle/asn1/x509/gwm;->di()Lorg/bouncycastle/asn1/bvj;
+    invoke-virtual {v0}, Lorg/bouncycastle/asn1/x509/gwm;->fi()Lorg/bouncycastle/asn1/bvj;
 
     move-result-object v2
 
@@ -68,7 +68,7 @@
 
     iget-object v1, p0, Lorg/bouncycastle/asn1/x509/ugm;->ordering:Ljava/util/Vector;
 
-    invoke-virtual {v0}, Lorg/bouncycastle/asn1/x509/gwm;->di()Lorg/bouncycastle/asn1/bvj;
+    invoke-virtual {v0}, Lorg/bouncycastle/asn1/x509/gwm;->fi()Lorg/bouncycastle/asn1/bvj;
 
     move-result-object v0
 
@@ -87,7 +87,7 @@
 
     invoke-virtual {p1, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0}, Lorg/bouncycastle/asn1/x509/gwm;->di()Lorg/bouncycastle/asn1/bvj;
+    invoke-virtual {v0}, Lorg/bouncycastle/asn1/x509/gwm;->fi()Lorg/bouncycastle/asn1/bvj;
 
     move-result-object v0
 
@@ -124,7 +124,7 @@
 
     iget-object v0, p0, Lorg/bouncycastle/asn1/x509/ugm;->ordering:Ljava/util/Vector;
 
-    invoke-virtual {p1}, Lorg/bouncycastle/asn1/x509/gwm;->di()Lorg/bouncycastle/asn1/bvj;
+    invoke-virtual {p1}, Lorg/bouncycastle/asn1/x509/gwm;->fi()Lorg/bouncycastle/asn1/bvj;
 
     move-result-object v1
 
@@ -132,7 +132,7 @@
 
     iget-object p0, p0, Lorg/bouncycastle/asn1/x509/ugm;->extensions:Ljava/util/Hashtable;
 
-    invoke-virtual {p1}, Lorg/bouncycastle/asn1/x509/gwm;->di()Lorg/bouncycastle/asn1/bvj;
+    invoke-virtual {p1}, Lorg/bouncycastle/asn1/x509/gwm;->fi()Lorg/bouncycastle/asn1/bvj;
 
     move-result-object v0
 
@@ -169,7 +169,7 @@
 
     iget-object v2, p0, Lorg/bouncycastle/asn1/x509/ugm;->ordering:Ljava/util/Vector;
 
-    invoke-virtual {v1}, Lorg/bouncycastle/asn1/x509/gwm;->di()Lorg/bouncycastle/asn1/bvj;
+    invoke-virtual {v1}, Lorg/bouncycastle/asn1/x509/gwm;->fi()Lorg/bouncycastle/asn1/bvj;
 
     move-result-object v3
 
@@ -177,7 +177,7 @@
 
     iget-object v2, p0, Lorg/bouncycastle/asn1/x509/ugm;->extensions:Ljava/util/Hashtable;
 
-    invoke-virtual {v1}, Lorg/bouncycastle/asn1/x509/gwm;->di()Lorg/bouncycastle/asn1/bvj;
+    invoke-virtual {v1}, Lorg/bouncycastle/asn1/x509/gwm;->fi()Lorg/bouncycastle/asn1/bvj;
 
     move-result-object v3
 
@@ -191,7 +191,7 @@
     return-void
 .end method
 
-.method private eb(Z)[Lorg/bouncycastle/asn1/bvj;
+.method private fb(Z)[Lorg/bouncycastle/asn1/bvj;
     .locals 4
 
     new-instance v0, Ljava/util/Vector;
@@ -331,7 +331,7 @@
 
     if-eqz p0, :cond_0
 
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/x509/gwm;->fi()Lorg/bouncycastle/asn1/ssp;
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/x509/gwm;->hi()Lorg/bouncycastle/asn1/ssp;
 
     move-result-object p0
 
@@ -348,7 +348,7 @@
 
     const/4 v0, 0x1
 
-    invoke-direct {p0, v0}, Lorg/bouncycastle/asn1/x509/ugm;->eb(Z)[Lorg/bouncycastle/asn1/bvj;
+    invoke-direct {p0, v0}, Lorg/bouncycastle/asn1/x509/ugm;->fb(Z)[Lorg/bouncycastle/asn1/bvj;
 
     move-result-object p0
 
@@ -360,14 +360,14 @@
 
     const/4 v0, 0x0
 
-    invoke-direct {p0, v0}, Lorg/bouncycastle/asn1/x509/ugm;->eb(Z)[Lorg/bouncycastle/asn1/bvj;
+    invoke-direct {p0, v0}, Lorg/bouncycastle/asn1/x509/ugm;->fb(Z)[Lorg/bouncycastle/asn1/bvj;
 
     move-result-object p0
 
     return-object p0
 .end method
 
-.method public gi()[Lorg/bouncycastle/asn1/bvj;
+.method public ii()[Lorg/bouncycastle/asn1/bvj;
     .locals 1
 
     iget-object v0, p0, Lorg/bouncycastle/asn1/x509/ugm;->ordering:Ljava/util/Vector;
@@ -379,7 +379,7 @@
     return-object p0
 .end method
 
-.method public hi()Ljava/util/Enumeration;
+.method public ji()Ljava/util/Enumeration;
     .locals 0
 
     iget-object p0, p0, Lorg/bouncycastle/asn1/x509/ugm;->ordering:Ljava/util/Vector;

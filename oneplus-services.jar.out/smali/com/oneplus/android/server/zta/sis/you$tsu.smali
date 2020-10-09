@@ -15,13 +15,13 @@
 
 
 # instance fields
-.field public iba:Ljava/lang/String;
-
-.field public jba:Ljava/lang/String;
-
-.field public kba:Ljava/lang/String;
-
 .field public packageName:Ljava/lang/String;
+
+.field public tba:Ljava/lang/String;
+
+.field public uba:Ljava/lang/String;
+
+.field public vba:Ljava/lang/String;
 
 
 # direct methods

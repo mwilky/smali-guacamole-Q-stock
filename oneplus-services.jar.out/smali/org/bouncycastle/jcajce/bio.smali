@@ -15,9 +15,11 @@
 
 
 # instance fields
-.field private final iqa:I
+.field private final AEa:Lorg/bouncycastle/jcajce/wtn;
 
-.field private final jqa:Ljava/util/Set;
+.field private final tqa:I
+
+.field private final uqa:Ljava/util/Set;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Set<",
@@ -26,8 +28,6 @@
         }
     .end annotation
 .end field
-
-.field private final pEa:Lorg/bouncycastle/jcajce/wtn;
 
 
 # direct methods
@@ -40,7 +40,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lorg/bouncycastle/jcajce/bio;->pEa:Lorg/bouncycastle/jcajce/wtn;
+    iput-object v0, p0, Lorg/bouncycastle/jcajce/bio;->AEa:Lorg/bouncycastle/jcajce/wtn;
 
     invoke-static {p1}, Lorg/bouncycastle/jcajce/bio$zta;->you(Lorg/bouncycastle/jcajce/bio$zta;)Ljava/util/Set;
 
@@ -50,13 +50,13 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lorg/bouncycastle/jcajce/bio;->jqa:Ljava/util/Set;
+    iput-object v0, p0, Lorg/bouncycastle/jcajce/bio;->uqa:Ljava/util/Set;
 
     invoke-static {p1}, Lorg/bouncycastle/jcajce/bio$zta;->sis(Lorg/bouncycastle/jcajce/bio$zta;)I
 
     move-result p1
 
-    iput p1, p0, Lorg/bouncycastle/jcajce/bio;->iqa:I
+    iput p1, p0, Lorg/bouncycastle/jcajce/bio;->tqa:I
 
     return-void
 .end method
@@ -71,10 +71,10 @@
 
 
 # virtual methods
-.method public Aj()Lorg/bouncycastle/jcajce/wtn;
+.method public Cj()Lorg/bouncycastle/jcajce/wtn;
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/bio;->pEa:Lorg/bouncycastle/jcajce/wtn;
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/bio;->AEa:Lorg/bouncycastle/jcajce/wtn;
 
     return-object p0
 .end method
@@ -88,15 +88,15 @@
 .method public getMaxPathLength()I
     .locals 0
 
-    iget p0, p0, Lorg/bouncycastle/jcajce/bio;->iqa:I
+    iget p0, p0, Lorg/bouncycastle/jcajce/bio;->tqa:I
 
     return p0
 .end method
 
-.method public lg()Ljava/util/Set;
+.method public ng()Ljava/util/Set;
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/bio;->jqa:Ljava/util/Set;
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/bio;->uqa:Ljava/util/Set;
 
     return-object p0
 .end method

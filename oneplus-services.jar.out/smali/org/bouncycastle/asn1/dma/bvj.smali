@@ -4,17 +4,17 @@
 
 
 # static fields
-.field private static final eta:Lorg/bouncycastle/asn1/x509/zta;
+.field private static final pta:Lorg/bouncycastle/asn1/x509/zta;
 
 
 # instance fields
-.field private final Cra:Lorg/bouncycastle/asn1/x509/zta;
-
-.field private final cta:Lorg/bouncycastle/asn1/ibl;
-
-.field private final dta:Lorg/bouncycastle/asn1/ywr;
+.field private final Nra:Lorg/bouncycastle/asn1/x509/zta;
 
 .field private final iterationCount:Lorg/bouncycastle/asn1/ywr;
+
+.field private final nta:Lorg/bouncycastle/asn1/ibl;
+
+.field private final ota:Lorg/bouncycastle/asn1/ywr;
 
 
 # direct methods
@@ -29,7 +29,7 @@
 
     invoke-direct {v0, v1, v2}, Lorg/bouncycastle/asn1/x509/zta;-><init>(Lorg/bouncycastle/asn1/bvj;Lorg/bouncycastle/asn1/ssp;)V
 
-    sput-object v0, Lorg/bouncycastle/asn1/dma/bvj;->eta:Lorg/bouncycastle/asn1/x509/zta;
+    sput-object v0, Lorg/bouncycastle/asn1/dma/bvj;->pta:Lorg/bouncycastle/asn1/x509/zta;
 
     return-void
 .end method
@@ -39,7 +39,7 @@
 
     invoke-direct {p0}, Lorg/bouncycastle/asn1/oif;-><init>()V
 
-    invoke-virtual {p1}, Lorg/bouncycastle/asn1/obl;->Rg()Ljava/util/Enumeration;
+    invoke-virtual {p1}, Lorg/bouncycastle/asn1/obl;->Tg()Ljava/util/Enumeration;
 
     move-result-object p1
 
@@ -49,7 +49,7 @@
 
     check-cast v0, Lorg/bouncycastle/asn1/ibl;
 
-    iput-object v0, p0, Lorg/bouncycastle/asn1/dma/bvj;->cta:Lorg/bouncycastle/asn1/ibl;
+    iput-object v0, p0, Lorg/bouncycastle/asn1/dma/bvj;->nta:Lorg/bouncycastle/asn1/ibl;
 
     invoke-interface {p1}, Ljava/util/Enumeration;->nextElement()Ljava/lang/Object;
 
@@ -79,7 +79,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lorg/bouncycastle/asn1/dma/bvj;->dta:Lorg/bouncycastle/asn1/ywr;
+    iput-object v0, p0, Lorg/bouncycastle/asn1/dma/bvj;->ota:Lorg/bouncycastle/asn1/ywr;
 
     invoke-interface {p1}, Ljava/util/Enumeration;->hasMoreElements()Z
 
@@ -99,7 +99,7 @@
     goto :goto_0
 
     :cond_1
-    iput-object v1, p0, Lorg/bouncycastle/asn1/dma/bvj;->dta:Lorg/bouncycastle/asn1/ywr;
+    iput-object v1, p0, Lorg/bouncycastle/asn1/dma/bvj;->ota:Lorg/bouncycastle/asn1/ywr;
 
     move-object p1, v0
 
@@ -110,15 +110,15 @@
 
     move-result-object p1
 
-    iput-object p1, p0, Lorg/bouncycastle/asn1/dma/bvj;->Cra:Lorg/bouncycastle/asn1/x509/zta;
+    iput-object p1, p0, Lorg/bouncycastle/asn1/dma/bvj;->Nra:Lorg/bouncycastle/asn1/x509/zta;
 
     goto :goto_1
 
     :cond_2
-    iput-object v1, p0, Lorg/bouncycastle/asn1/dma/bvj;->dta:Lorg/bouncycastle/asn1/ywr;
+    iput-object v1, p0, Lorg/bouncycastle/asn1/dma/bvj;->ota:Lorg/bouncycastle/asn1/ywr;
 
     :cond_3
-    iput-object v1, p0, Lorg/bouncycastle/asn1/dma/bvj;->Cra:Lorg/bouncycastle/asn1/x509/zta;
+    iput-object v1, p0, Lorg/bouncycastle/asn1/dma/bvj;->Nra:Lorg/bouncycastle/asn1/x509/zta;
 
     :goto_1
     return-void
@@ -157,7 +157,7 @@
 
     invoke-direct {v0, p1}, Lorg/bouncycastle/asn1/C;-><init>([B)V
 
-    iput-object v0, p0, Lorg/bouncycastle/asn1/dma/bvj;->cta:Lorg/bouncycastle/asn1/ibl;
+    iput-object v0, p0, Lorg/bouncycastle/asn1/dma/bvj;->nta:Lorg/bouncycastle/asn1/ibl;
 
     new-instance p1, Lorg/bouncycastle/asn1/ywr;
 
@@ -181,9 +181,9 @@
     const/4 p1, 0x0
 
     :goto_0
-    iput-object p1, p0, Lorg/bouncycastle/asn1/dma/bvj;->dta:Lorg/bouncycastle/asn1/ywr;
+    iput-object p1, p0, Lorg/bouncycastle/asn1/dma/bvj;->ota:Lorg/bouncycastle/asn1/ywr;
 
-    iput-object p4, p0, Lorg/bouncycastle/asn1/dma/bvj;->Cra:Lorg/bouncycastle/asn1/x509/zta;
+    iput-object p4, p0, Lorg/bouncycastle/asn1/dma/bvj;->Nra:Lorg/bouncycastle/asn1/x509/zta;
 
     return-void
 .end method
@@ -230,118 +230,14 @@
 
 
 # virtual methods
-.method public getIterationCount()Ljava/math/BigInteger;
-    .locals 0
-
-    iget-object p0, p0, Lorg/bouncycastle/asn1/dma/bvj;->iterationCount:Lorg/bouncycastle/asn1/ywr;
-
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/ywr;->getValue()Ljava/math/BigInteger;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public getKeyLength()Ljava/math/BigInteger;
-    .locals 0
-
-    iget-object p0, p0, Lorg/bouncycastle/asn1/dma/bvj;->dta:Lorg/bouncycastle/asn1/ywr;
-
-    if-eqz p0, :cond_0
-
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/ywr;->getValue()Ljava/math/BigInteger;
-
-    move-result-object p0
-
-    return-object p0
-
-    :cond_0
-    const/4 p0, 0x0
-
-    return-object p0
-.end method
-
-.method public getSalt()[B
-    .locals 0
-
-    iget-object p0, p0, Lorg/bouncycastle/asn1/dma/bvj;->cta:Lorg/bouncycastle/asn1/ibl;
-
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/ibl;->getOctets()[B
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public toASN1Primitive()Lorg/bouncycastle/asn1/vdb;
-    .locals 3
-
-    new-instance v0, Lorg/bouncycastle/asn1/cno;
-
-    invoke-direct {v0}, Lorg/bouncycastle/asn1/cno;-><init>()V
-
-    iget-object v1, p0, Lorg/bouncycastle/asn1/dma/bvj;->cta:Lorg/bouncycastle/asn1/ibl;
-
-    invoke-virtual {v0, v1}, Lorg/bouncycastle/asn1/cno;->you(Lorg/bouncycastle/asn1/ssp;)V
-
-    iget-object v1, p0, Lorg/bouncycastle/asn1/dma/bvj;->iterationCount:Lorg/bouncycastle/asn1/ywr;
-
-    invoke-virtual {v0, v1}, Lorg/bouncycastle/asn1/cno;->you(Lorg/bouncycastle/asn1/ssp;)V
-
-    iget-object v1, p0, Lorg/bouncycastle/asn1/dma/bvj;->dta:Lorg/bouncycastle/asn1/ywr;
-
-    if-eqz v1, :cond_0
-
-    invoke-virtual {v0, v1}, Lorg/bouncycastle/asn1/cno;->you(Lorg/bouncycastle/asn1/ssp;)V
-
-    :cond_0
-    iget-object v1, p0, Lorg/bouncycastle/asn1/dma/bvj;->Cra:Lorg/bouncycastle/asn1/x509/zta;
-
-    if-eqz v1, :cond_1
-
-    sget-object v2, Lorg/bouncycastle/asn1/dma/bvj;->eta:Lorg/bouncycastle/asn1/x509/zta;
-
-    invoke-virtual {v1, v2}, Lorg/bouncycastle/asn1/oif;->equals(Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-nez v1, :cond_1
-
-    iget-object p0, p0, Lorg/bouncycastle/asn1/dma/bvj;->Cra:Lorg/bouncycastle/asn1/x509/zta;
-
-    invoke-virtual {v0, p0}, Lorg/bouncycastle/asn1/cno;->you(Lorg/bouncycastle/asn1/ssp;)V
-
-    :cond_1
-    new-instance p0, Lorg/bouncycastle/asn1/G;
-
-    invoke-direct {p0, v0}, Lorg/bouncycastle/asn1/G;-><init>(Lorg/bouncycastle/asn1/cno;)V
-
-    return-object p0
-.end method
-
-.method public xg()Lorg/bouncycastle/asn1/x509/zta;
-    .locals 0
-
-    iget-object p0, p0, Lorg/bouncycastle/asn1/dma/bvj;->Cra:Lorg/bouncycastle/asn1/x509/zta;
-
-    if-eqz p0, :cond_0
-
-    return-object p0
-
-    :cond_0
-    sget-object p0, Lorg/bouncycastle/asn1/dma/bvj;->eta:Lorg/bouncycastle/asn1/x509/zta;
-
-    return-object p0
-.end method
-
-.method public yg()Z
+.method public Ag()Z
     .locals 1
 
-    iget-object p0, p0, Lorg/bouncycastle/asn1/dma/bvj;->Cra:Lorg/bouncycastle/asn1/x509/zta;
+    iget-object p0, p0, Lorg/bouncycastle/asn1/dma/bvj;->Nra:Lorg/bouncycastle/asn1/x509/zta;
 
     if-eqz p0, :cond_1
 
-    sget-object v0, Lorg/bouncycastle/asn1/dma/bvj;->eta:Lorg/bouncycastle/asn1/x509/zta;
+    sget-object v0, Lorg/bouncycastle/asn1/dma/bvj;->pta:Lorg/bouncycastle/asn1/x509/zta;
 
     invoke-virtual {p0, v0}, Lorg/bouncycastle/asn1/oif;->equals(Ljava/lang/Object;)Z
 
@@ -362,4 +258,108 @@
 
     :goto_1
     return p0
+.end method
+
+.method public getIterationCount()Ljava/math/BigInteger;
+    .locals 0
+
+    iget-object p0, p0, Lorg/bouncycastle/asn1/dma/bvj;->iterationCount:Lorg/bouncycastle/asn1/ywr;
+
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/ywr;->getValue()Ljava/math/BigInteger;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public getKeyLength()Ljava/math/BigInteger;
+    .locals 0
+
+    iget-object p0, p0, Lorg/bouncycastle/asn1/dma/bvj;->ota:Lorg/bouncycastle/asn1/ywr;
+
+    if-eqz p0, :cond_0
+
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/ywr;->getValue()Ljava/math/BigInteger;
+
+    move-result-object p0
+
+    return-object p0
+
+    :cond_0
+    const/4 p0, 0x0
+
+    return-object p0
+.end method
+
+.method public getSalt()[B
+    .locals 0
+
+    iget-object p0, p0, Lorg/bouncycastle/asn1/dma/bvj;->nta:Lorg/bouncycastle/asn1/ibl;
+
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/ibl;->getOctets()[B
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public toASN1Primitive()Lorg/bouncycastle/asn1/vdb;
+    .locals 3
+
+    new-instance v0, Lorg/bouncycastle/asn1/cno;
+
+    invoke-direct {v0}, Lorg/bouncycastle/asn1/cno;-><init>()V
+
+    iget-object v1, p0, Lorg/bouncycastle/asn1/dma/bvj;->nta:Lorg/bouncycastle/asn1/ibl;
+
+    invoke-virtual {v0, v1}, Lorg/bouncycastle/asn1/cno;->you(Lorg/bouncycastle/asn1/ssp;)V
+
+    iget-object v1, p0, Lorg/bouncycastle/asn1/dma/bvj;->iterationCount:Lorg/bouncycastle/asn1/ywr;
+
+    invoke-virtual {v0, v1}, Lorg/bouncycastle/asn1/cno;->you(Lorg/bouncycastle/asn1/ssp;)V
+
+    iget-object v1, p0, Lorg/bouncycastle/asn1/dma/bvj;->ota:Lorg/bouncycastle/asn1/ywr;
+
+    if-eqz v1, :cond_0
+
+    invoke-virtual {v0, v1}, Lorg/bouncycastle/asn1/cno;->you(Lorg/bouncycastle/asn1/ssp;)V
+
+    :cond_0
+    iget-object v1, p0, Lorg/bouncycastle/asn1/dma/bvj;->Nra:Lorg/bouncycastle/asn1/x509/zta;
+
+    if-eqz v1, :cond_1
+
+    sget-object v2, Lorg/bouncycastle/asn1/dma/bvj;->pta:Lorg/bouncycastle/asn1/x509/zta;
+
+    invoke-virtual {v1, v2}, Lorg/bouncycastle/asn1/oif;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_1
+
+    iget-object p0, p0, Lorg/bouncycastle/asn1/dma/bvj;->Nra:Lorg/bouncycastle/asn1/x509/zta;
+
+    invoke-virtual {v0, p0}, Lorg/bouncycastle/asn1/cno;->you(Lorg/bouncycastle/asn1/ssp;)V
+
+    :cond_1
+    new-instance p0, Lorg/bouncycastle/asn1/G;
+
+    invoke-direct {p0, v0}, Lorg/bouncycastle/asn1/G;-><init>(Lorg/bouncycastle/asn1/cno;)V
+
+    return-object p0
+.end method
+
+.method public zg()Lorg/bouncycastle/asn1/x509/zta;
+    .locals 0
+
+    iget-object p0, p0, Lorg/bouncycastle/asn1/dma/bvj;->Nra:Lorg/bouncycastle/asn1/x509/zta;
+
+    if-eqz p0, :cond_0
+
+    return-object p0
+
+    :cond_0
+    sget-object p0, Lorg/bouncycastle/asn1/dma/bvj;->pta:Lorg/bouncycastle/asn1/x509/zta;
+
+    return-object p0
 .end method

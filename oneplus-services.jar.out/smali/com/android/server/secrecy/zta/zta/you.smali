@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/server/secrecy/zta/zta/sis;->Pd()Ljava/lang/String;
+    value = Lcom/android/server/secrecy/zta/zta/sis;->Qd()Ljava/lang/String;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;

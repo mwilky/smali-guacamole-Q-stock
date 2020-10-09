@@ -8,7 +8,7 @@
 
 
 # instance fields
-.field final KIa:Lorg/bouncycastle/asn1/ssp;
+.field final VIa:Lorg/bouncycastle/asn1/ssp;
 
 
 # direct methods
@@ -42,7 +42,7 @@
 
     move-result-object p1
 
-    iput-object p1, p0, Lorg/bouncycastle/x509/you;->KIa:Lorg/bouncycastle/asn1/ssp;
+    iput-object p1, p0, Lorg/bouncycastle/x509/you;->VIa:Lorg/bouncycastle/asn1/ssp;
 
     return-void
 .end method
@@ -68,7 +68,7 @@
 
     invoke-direct {v0, p1}, Lorg/bouncycastle/asn1/x509/j;-><init>(Lorg/bouncycastle/asn1/x509/obl;)V
 
-    iput-object v0, p0, Lorg/bouncycastle/x509/you;->KIa:Lorg/bouncycastle/asn1/ssp;
+    iput-object v0, p0, Lorg/bouncycastle/x509/you;->VIa:Lorg/bouncycastle/asn1/ssp;
 
     return-void
 .end method
@@ -76,7 +76,7 @@
 .method private getNames()[Ljava/lang/Object;
     .locals 4
 
-    iget-object p0, p0, Lorg/bouncycastle/x509/you;->KIa:Lorg/bouncycastle/asn1/ssp;
+    iget-object p0, p0, Lorg/bouncycastle/x509/you;->VIa:Lorg/bouncycastle/asn1/ssp;
 
     instance-of v0, p0, Lorg/bouncycastle/asn1/x509/j;
 
@@ -84,7 +84,7 @@
 
     check-cast p0, Lorg/bouncycastle/asn1/x509/j;
 
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/x509/j;->Gi()Lorg/bouncycastle/asn1/x509/obl;
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/x509/j;->Ii()Lorg/bouncycastle/asn1/x509/obl;
 
     move-result-object p0
 
@@ -247,7 +247,7 @@
 
     new-instance v0, Lorg/bouncycastle/x509/you;
 
-    iget-object p0, p0, Lorg/bouncycastle/x509/you;->KIa:Lorg/bouncycastle/asn1/ssp;
+    iget-object p0, p0, Lorg/bouncycastle/x509/you;->VIa:Lorg/bouncycastle/asn1/ssp;
 
     invoke-static {p0}, Lorg/bouncycastle/asn1/x509/you;->getInstance(Ljava/lang/Object;)Lorg/bouncycastle/asn1/x509/you;
 
@@ -279,9 +279,9 @@
     :cond_1
     check-cast p1, Lorg/bouncycastle/x509/you;
 
-    iget-object p0, p0, Lorg/bouncycastle/x509/you;->KIa:Lorg/bouncycastle/asn1/ssp;
+    iget-object p0, p0, Lorg/bouncycastle/x509/you;->VIa:Lorg/bouncycastle/asn1/ssp;
 
-    iget-object p1, p1, Lorg/bouncycastle/x509/you;->KIa:Lorg/bouncycastle/asn1/ssp;
+    iget-object p1, p1, Lorg/bouncycastle/x509/you;->VIa:Lorg/bouncycastle/asn1/ssp;
 
     invoke-virtual {p0, p1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
@@ -342,7 +342,7 @@
 .method public hashCode()I
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/x509/you;->KIa:Lorg/bouncycastle/asn1/ssp;
+    iget-object p0, p0, Lorg/bouncycastle/x509/you;->VIa:Lorg/bouncycastle/asn1/ssp;
 
     invoke-virtual {p0}, Ljava/lang/Object;->hashCode()I
 
@@ -386,7 +386,7 @@
     :cond_0
     check-cast p1, Ljava/security/cert/X509Certificate;
 
-    iget-object v0, p0, Lorg/bouncycastle/x509/you;->KIa:Lorg/bouncycastle/asn1/ssp;
+    iget-object v0, p0, Lorg/bouncycastle/x509/you;->VIa:Lorg/bouncycastle/asn1/ssp;
 
     instance-of v2, v0, Lorg/bouncycastle/asn1/x509/j;
 
@@ -396,13 +396,13 @@
 
     check-cast v0, Lorg/bouncycastle/asn1/x509/j;
 
-    invoke-virtual {v0}, Lorg/bouncycastle/asn1/x509/j;->ii()Lorg/bouncycastle/asn1/x509/ear;
+    invoke-virtual {v0}, Lorg/bouncycastle/asn1/x509/j;->ki()Lorg/bouncycastle/asn1/x509/ear;
 
     move-result-object v2
 
     if-eqz v2, :cond_2
 
-    invoke-virtual {v0}, Lorg/bouncycastle/asn1/x509/j;->ii()Lorg/bouncycastle/asn1/x509/ear;
+    invoke-virtual {v0}, Lorg/bouncycastle/asn1/x509/j;->ki()Lorg/bouncycastle/asn1/x509/ear;
 
     move-result-object v2
 
@@ -428,7 +428,7 @@
 
     move-result-object p1
 
-    invoke-virtual {v0}, Lorg/bouncycastle/asn1/x509/j;->ii()Lorg/bouncycastle/asn1/x509/ear;
+    invoke-virtual {v0}, Lorg/bouncycastle/asn1/x509/j;->ki()Lorg/bouncycastle/asn1/x509/ear;
 
     move-result-object v0
 
@@ -448,7 +448,7 @@
     return v1
 
     :cond_2
-    invoke-virtual {v0}, Lorg/bouncycastle/asn1/x509/j;->Gi()Lorg/bouncycastle/asn1/x509/obl;
+    invoke-virtual {v0}, Lorg/bouncycastle/asn1/x509/j;->Ii()Lorg/bouncycastle/asn1/x509/obl;
 
     move-result-object v0
 

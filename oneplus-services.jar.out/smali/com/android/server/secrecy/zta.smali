@@ -16,6 +16,103 @@
     return-void
 .end method
 
+.method static Ad()V
+    .locals 5
+
+    const-string v0, "RSA"
+
+    :try_start_0
+    invoke-static {v0}, Ljava/security/KeyPairGenerator;->getInstance(Ljava/lang/String;)Ljava/security/KeyPairGenerator;
+
+    move-result-object v1
+    :try_end_0
+    .catch Ljava/security/NoSuchAlgorithmException; {:try_start_0 .. :try_end_0} :catch_0
+
+    goto :goto_0
+
+    :catch_0
+    move-exception v1
+
+    invoke-virtual {v1}, Ljava/security/NoSuchAlgorithmException;->printStackTrace()V
+
+    const/4 v1, 0x0
+
+    :goto_0
+    const/16 v2, 0x800
+
+    invoke-virtual {v1, v2}, Ljava/security/KeyPairGenerator;->initialize(I)V
+
+    invoke-virtual {v1}, Ljava/security/KeyPairGenerator;->generateKeyPair()Ljava/security/KeyPair;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/security/KeyPair;->getPublic()Ljava/security/PublicKey;
+
+    move-result-object v2
+
+    invoke-virtual {v1}, Ljava/security/KeyPair;->getPrivate()Ljava/security/PrivateKey;
+
+    move-result-object v1
+
+    :try_start_1
+    invoke-static {v0}, Ljava/security/KeyFactory;->getInstance(Ljava/lang/String;)Ljava/security/KeyFactory;
+
+    move-result-object v3
+
+    const-class v4, Ljava/security/spec/RSAPublicKeySpec;
+
+    invoke-virtual {v3, v2, v4}, Ljava/security/KeyFactory;->getKeySpec(Ljava/security/Key;Ljava/lang/Class;)Ljava/security/spec/KeySpec;
+
+    move-result-object v2
+
+    check-cast v2, Ljava/security/spec/RSAPublicKeySpec;
+
+    invoke-virtual {v2}, Ljava/security/spec/RSAPublicKeySpec;->getModulus()Ljava/math/BigInteger;
+
+    invoke-virtual {v2}, Ljava/security/spec/RSAPublicKeySpec;->getPublicExponent()Ljava/math/BigInteger;
+    :try_end_1
+    .catch Ljava/security/NoSuchAlgorithmException; {:try_start_1 .. :try_end_1} :catch_1
+    .catch Ljava/security/spec/InvalidKeySpecException; {:try_start_1 .. :try_end_1} :catch_1
+
+    goto :goto_1
+
+    :catch_1
+    move-exception v2
+
+    invoke-virtual {v2}, Ljava/security/GeneralSecurityException;->printStackTrace()V
+
+    :goto_1
+    :try_start_2
+    invoke-static {v0}, Ljava/security/KeyFactory;->getInstance(Ljava/lang/String;)Ljava/security/KeyFactory;
+
+    move-result-object v0
+
+    const-class v2, Ljava/security/spec/RSAPrivateKeySpec;
+
+    invoke-virtual {v0, v1, v2}, Ljava/security/KeyFactory;->getKeySpec(Ljava/security/Key;Ljava/lang/Class;)Ljava/security/spec/KeySpec;
+
+    move-result-object v0
+
+    check-cast v0, Ljava/security/spec/RSAPrivateKeySpec;
+
+    invoke-virtual {v0}, Ljava/security/spec/RSAPrivateKeySpec;->getModulus()Ljava/math/BigInteger;
+
+    invoke-virtual {v0}, Ljava/security/spec/RSAPrivateKeySpec;->getPrivateExponent()Ljava/math/BigInteger;
+    :try_end_2
+    .catch Ljava/security/NoSuchAlgorithmException; {:try_start_2 .. :try_end_2} :catch_2
+    .catch Ljava/security/spec/InvalidKeySpecException; {:try_start_2 .. :try_end_2} :catch_2
+
+    goto :goto_2
+
+    :catch_2
+    move-exception v0
+
+    invoke-virtual {v0}, Ljava/security/GeneralSecurityException;->printStackTrace()V
+
+    :goto_2
+    return-void
+.end method
+
 .method public static X(Ljava/lang/String;)[B
     .locals 2
 
@@ -170,103 +267,6 @@
 
     :cond_1
     return-object v1
-.end method
-
-.method static zd()V
-    .locals 5
-
-    const-string v0, "RSA"
-
-    :try_start_0
-    invoke-static {v0}, Ljava/security/KeyPairGenerator;->getInstance(Ljava/lang/String;)Ljava/security/KeyPairGenerator;
-
-    move-result-object v1
-    :try_end_0
-    .catch Ljava/security/NoSuchAlgorithmException; {:try_start_0 .. :try_end_0} :catch_0
-
-    goto :goto_0
-
-    :catch_0
-    move-exception v1
-
-    invoke-virtual {v1}, Ljava/security/NoSuchAlgorithmException;->printStackTrace()V
-
-    const/4 v1, 0x0
-
-    :goto_0
-    const/16 v2, 0x800
-
-    invoke-virtual {v1, v2}, Ljava/security/KeyPairGenerator;->initialize(I)V
-
-    invoke-virtual {v1}, Ljava/security/KeyPairGenerator;->generateKeyPair()Ljava/security/KeyPair;
-
-    move-result-object v1
-
-    invoke-virtual {v1}, Ljava/security/KeyPair;->getPublic()Ljava/security/PublicKey;
-
-    move-result-object v2
-
-    invoke-virtual {v1}, Ljava/security/KeyPair;->getPrivate()Ljava/security/PrivateKey;
-
-    move-result-object v1
-
-    :try_start_1
-    invoke-static {v0}, Ljava/security/KeyFactory;->getInstance(Ljava/lang/String;)Ljava/security/KeyFactory;
-
-    move-result-object v3
-
-    const-class v4, Ljava/security/spec/RSAPublicKeySpec;
-
-    invoke-virtual {v3, v2, v4}, Ljava/security/KeyFactory;->getKeySpec(Ljava/security/Key;Ljava/lang/Class;)Ljava/security/spec/KeySpec;
-
-    move-result-object v2
-
-    check-cast v2, Ljava/security/spec/RSAPublicKeySpec;
-
-    invoke-virtual {v2}, Ljava/security/spec/RSAPublicKeySpec;->getModulus()Ljava/math/BigInteger;
-
-    invoke-virtual {v2}, Ljava/security/spec/RSAPublicKeySpec;->getPublicExponent()Ljava/math/BigInteger;
-    :try_end_1
-    .catch Ljava/security/NoSuchAlgorithmException; {:try_start_1 .. :try_end_1} :catch_1
-    .catch Ljava/security/spec/InvalidKeySpecException; {:try_start_1 .. :try_end_1} :catch_1
-
-    goto :goto_1
-
-    :catch_1
-    move-exception v2
-
-    invoke-virtual {v2}, Ljava/security/GeneralSecurityException;->printStackTrace()V
-
-    :goto_1
-    :try_start_2
-    invoke-static {v0}, Ljava/security/KeyFactory;->getInstance(Ljava/lang/String;)Ljava/security/KeyFactory;
-
-    move-result-object v0
-
-    const-class v2, Ljava/security/spec/RSAPrivateKeySpec;
-
-    invoke-virtual {v0, v1, v2}, Ljava/security/KeyFactory;->getKeySpec(Ljava/security/Key;Ljava/lang/Class;)Ljava/security/spec/KeySpec;
-
-    move-result-object v0
-
-    check-cast v0, Ljava/security/spec/RSAPrivateKeySpec;
-
-    invoke-virtual {v0}, Ljava/security/spec/RSAPrivateKeySpec;->getModulus()Ljava/math/BigInteger;
-
-    invoke-virtual {v0}, Ljava/security/spec/RSAPrivateKeySpec;->getPrivateExponent()Ljava/math/BigInteger;
-    :try_end_2
-    .catch Ljava/security/NoSuchAlgorithmException; {:try_start_2 .. :try_end_2} :catch_2
-    .catch Ljava/security/spec/InvalidKeySpecException; {:try_start_2 .. :try_end_2} :catch_2
-
-    goto :goto_2
-
-    :catch_2
-    move-exception v0
-
-    invoke-virtual {v0}, Ljava/security/GeneralSecurityException;->printStackTrace()V
-
-    :goto_2
-    return-void
 .end method
 
 .method static zta(Ljava/security/PrivateKey;[B)[B

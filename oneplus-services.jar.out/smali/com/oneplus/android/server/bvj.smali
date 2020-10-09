@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/oneplus/android/server/vdb;->Mr()V
+    value = Lcom/oneplus/android/server/vdb;->Or()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,11 +15,11 @@
 
 
 # instance fields
+.field final synthetic obl:I
+
 .field final synthetic this$0:Lcom/oneplus/android/server/vdb;
 
-.field final synthetic ugm:Landroid/widget/Button;
-
-.field final synthetic vdb:I
+.field final synthetic zgw:Landroid/widget/Button;
 
 
 # direct methods
@@ -28,9 +28,9 @@
 
     iput-object p1, p0, Lcom/oneplus/android/server/bvj;->this$0:Lcom/oneplus/android/server/vdb;
 
-    iput-object p6, p0, Lcom/oneplus/android/server/bvj;->ugm:Landroid/widget/Button;
+    iput-object p6, p0, Lcom/oneplus/android/server/bvj;->zgw:Landroid/widget/Button;
 
-    iput p7, p0, Lcom/oneplus/android/server/bvj;->vdb:I
+    iput p7, p0, Lcom/oneplus/android/server/bvj;->obl:I
 
     invoke-direct {p0, p2, p3, p4, p5}, Landroid/os/CountDownTimer;-><init>(JJ)V
 
@@ -42,13 +42,13 @@
 .method public onFinish()V
     .locals 3
 
-    iget-object v0, p0, Lcom/oneplus/android/server/bvj;->ugm:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/oneplus/android/server/bvj;->zgw:Landroid/widget/Button;
 
-    iget v1, p0, Lcom/oneplus/android/server/bvj;->vdb:I
+    iget v1, p0, Lcom/oneplus/android/server/bvj;->obl:I
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setTextColor(I)V
 
-    iget-object v0, p0, Lcom/oneplus/android/server/bvj;->ugm:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/oneplus/android/server/bvj;->zgw:Landroid/widget/Button;
 
     iget-object v1, p0, Lcom/oneplus/android/server/bvj;->this$0:Lcom/oneplus/android/server/vdb;
 
@@ -64,7 +64,7 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setText(Ljava/lang/CharSequence;)V
 
-    iget-object p0, p0, Lcom/oneplus/android/server/bvj;->ugm:Landroid/widget/Button;
+    iget-object p0, p0, Lcom/oneplus/android/server/bvj;->zgw:Landroid/widget/Button;
 
     const/4 v0, 0x1
 
@@ -76,7 +76,7 @@
 .method public onTick(J)V
     .locals 4
 
-    iget-object v0, p0, Lcom/oneplus/android/server/bvj;->ugm:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/oneplus/android/server/bvj;->zgw:Landroid/widget/Button;
 
     new-instance v1, Ljava/lang/StringBuilder;
 

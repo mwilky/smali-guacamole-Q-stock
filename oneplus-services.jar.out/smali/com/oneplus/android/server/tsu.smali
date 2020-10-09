@@ -19,11 +19,11 @@
 
 .field private static final DBG:Z
 
-.field private static final OX:Ljava/lang/String; = "bt_of_off_package_name"
-
-.field private static final QX:I = 0x1
-
 .field private static final TAG:Ljava/lang/String; = "tsu"
+
+.field private static final aY:Ljava/lang/String; = "bt_of_off_package_name"
+
+.field private static final bY:I = 0x1
 
 
 # instance fields
