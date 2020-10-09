@@ -63,14 +63,14 @@
 
     const/4 v4, 0x1
 
-    invoke-static {v3, v4}, Lcom/android/server/display/AutomaticBrightnessController;->access$1502(Lcom/android/server/display/AutomaticBrightnessController;Z)Z
+    invoke-static {v3, v4}, Lcom/android/server/display/AutomaticBrightnessController;->access$1202(Lcom/android/server/display/AutomaticBrightnessController;Z)Z
 
     goto :goto_0
 
     :cond_0
     iget-object v4, p0, Lcom/android/server/display/AutomaticBrightnessController$3;->this$0:Lcom/android/server/display/AutomaticBrightnessController;
 
-    invoke-static {v4, v3}, Lcom/android/server/display/AutomaticBrightnessController;->access$1502(Lcom/android/server/display/AutomaticBrightnessController;Z)Z
+    invoke-static {v4, v3}, Lcom/android/server/display/AutomaticBrightnessController;->access$1202(Lcom/android/server/display/AutomaticBrightnessController;Z)Z
 
     :goto_0
     new-instance v3, Ljava/lang/StringBuilder;
@@ -83,7 +83,7 @@
 
     iget-object v4, p0, Lcom/android/server/display/AutomaticBrightnessController$3;->this$0:Lcom/android/server/display/AutomaticBrightnessController;
 
-    invoke-static {v4}, Lcom/android/server/display/AutomaticBrightnessController;->access$1500(Lcom/android/server/display/AutomaticBrightnessController;)Z
+    invoke-static {v4}, Lcom/android/server/display/AutomaticBrightnessController;->access$1200(Lcom/android/server/display/AutomaticBrightnessController;)Z
 
     move-result v4
 

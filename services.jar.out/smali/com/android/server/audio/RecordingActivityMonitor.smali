@@ -293,6 +293,8 @@
     return-void
 
     :cond_0
+    invoke-static {p1}, Lcom/android/server/wm/OpScreenModeServiceInjector;->onRecordingConfigChanged(Ljava/util/List;)V
+
     iget-object v0, p0, Lcom/android/server/audio/RecordingActivityMonitor;->mClients:Ljava/util/ArrayList;
 
     monitor-enter v0

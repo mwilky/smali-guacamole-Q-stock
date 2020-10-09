@@ -5109,7 +5109,7 @@
 
     if-eq v0, v3, :cond_1
 
-    goto :goto_0
+    goto/16 :goto_0
 
     :cond_1
     invoke-virtual {p0}, Lcom/android/server/audio/AudioService;->isInCommunication()Z
@@ -5134,7 +5134,7 @@
 
     const-string v3, "getActiveStreamType: Forcing STREAM_NOTIFICATION stream active"
 
-    if-ne p1, v1, :cond_7
+    if-ne p1, v1, :cond_9
 
     sget v1, Lcom/android/server/audio/AudioService;->sStreamOverrideDelayMs:I
 
@@ -5179,49 +5179,79 @@
     return v1
 
     :cond_6
+    sget v0, Lcom/android/server/audio/AudioService;->sStreamOverrideDelayMs:I
+
+    invoke-direct {p0, v5, v0}, Lcom/android/server/audio/AudioService;->wasStreamActiveRecently(II)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_7
+
+    const-string v0, "getActiveStreamType: Forcing STREAM_BLUETOOTH_SCO stream active"
+
+    invoke-static {v9, v0}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
+
+    return v5
+
+    :cond_7
+    sget v0, Lcom/android/server/audio/AudioService;->sStreamOverrideDelayMs:I
+
+    invoke-direct {p0, v6, v0}, Lcom/android/server/audio/AudioService;->wasStreamActiveRecently(II)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_8
+
+    const-string v0, "getActiveStreamType: Forcing STREAM_VOICE_CALL stream active"
+
+    invoke-static {v9, v0}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
+
+    return v6
+
+    :cond_8
     invoke-static {v9, v4}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
     return v2
 
-    :cond_7
+    :cond_9
     sget v10, Lcom/android/server/audio/AudioService;->sStreamOverrideDelayMs:I
 
     invoke-direct {p0, v8, v10}, Lcom/android/server/audio/AudioService;->wasStreamActiveRecently(II)Z
 
     move-result v10
 
-    if-eqz v10, :cond_8
+    if-eqz v10, :cond_a
 
     invoke-static {v9, v3}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
     return v8
 
-    :cond_8
+    :cond_a
     sget v3, Lcom/android/server/audio/AudioService;->sStreamOverrideDelayMs:I
 
     invoke-direct {p0, v7, v3}, Lcom/android/server/audio/AudioService;->wasStreamActiveRecently(II)Z
 
     move-result v3
 
-    if-eqz v3, :cond_9
+    if-eqz v3, :cond_b
 
     invoke-static {v9, v0}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
     return v7
 
-    :cond_9
+    :cond_b
     :goto_0
     invoke-virtual {p0}, Lcom/android/server/audio/AudioService;->isInCommunication()Z
 
     move-result v0
 
-    if-eqz v0, :cond_b
+    if-eqz v0, :cond_d
 
     invoke-static {v6}, Landroid/media/AudioSystem;->getForceUse(I)I
 
     move-result v0
 
-    if-ne v0, v2, :cond_a
+    if-ne v0, v2, :cond_c
 
     const-string v0, "getActiveStreamType: Forcing STREAM_BLUETOOTH_SCO"
 
@@ -5229,14 +5259,14 @@
 
     return v5
 
-    :cond_a
+    :cond_c
     const-string v0, "getActiveStreamType: Forcing STREAM_VOICE_CALL"
 
     invoke-static {v9, v0}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
     return v6
 
-    :cond_b
+    :cond_d
     sget v0, Lcom/android/server/audio/AudioService;->sStreamOverrideDelayMs:I
 
     invoke-static {v8, v0}, Landroid/media/AudioSystem;->isStreamActive(II)Z
@@ -5244,36 +5274,6 @@
     move-result v0
 
     const-string v3, "getActiveStreamType: Forcing STREAM_NOTIFICATION"
-
-    if-eqz v0, :cond_c
-
-    invoke-static {v9, v3}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
-
-    return v8
-
-    :cond_c
-    sget v0, Lcom/android/server/audio/AudioService;->sStreamOverrideDelayMs:I
-
-    invoke-static {v7, v0}, Landroid/media/AudioSystem;->isStreamActive(II)Z
-
-    move-result v0
-
-    const-string v5, "getActiveStreamType: Forcing STREAM_RING"
-
-    if-eqz v0, :cond_d
-
-    invoke-static {v9, v5}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
-
-    return v7
-
-    :cond_d
-    if-ne p1, v1, :cond_10
-
-    sget v0, Lcom/android/server/audio/AudioService;->sStreamOverrideDelayMs:I
-
-    invoke-static {v8, v0}, Landroid/media/AudioSystem;->isStreamActive(II)Z
-
-    move-result v0
 
     if-eqz v0, :cond_e
 
@@ -5288,6 +5288,8 @@
 
     move-result v0
 
+    const-string v5, "getActiveStreamType: Forcing STREAM_RING"
+
     if-eqz v0, :cond_f
 
     invoke-static {v9, v5}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
@@ -5295,11 +5297,39 @@
     return v7
 
     :cond_f
+    if-ne p1, v1, :cond_12
+
+    sget v0, Lcom/android/server/audio/AudioService;->sStreamOverrideDelayMs:I
+
+    invoke-static {v8, v0}, Landroid/media/AudioSystem;->isStreamActive(II)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_10
+
+    invoke-static {v9, v3}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
+
+    return v8
+
+    :cond_10
+    sget v0, Lcom/android/server/audio/AudioService;->sStreamOverrideDelayMs:I
+
+    invoke-static {v7, v0}, Landroid/media/AudioSystem;->isStreamActive(II)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_11
+
+    invoke-static {v9, v5}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
+
+    return v7
+
+    :cond_11
     invoke-static {v9, v4}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
     return v2
 
-    :cond_10
+    :cond_12
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -7639,7 +7669,7 @@
 .end method
 
 .method private onCheckActiveUpDownPath()Z
-    .locals 9
+    .locals 12
 
     iget v0, p0, Lcom/android/server/audio/AudioService;->mMode:I
 
@@ -7686,40 +7716,67 @@
 
     move-result-object v5
 
+    invoke-static {}, Landroid/os/Binder;->clearCallingIdentity()J
+
+    move-result-wide v6
+
     :try_start_0
     invoke-virtual {v5, v4, v3}, Landroid/content/pm/PackageManager;->getPackageUid(Ljava/lang/String;I)I
 
-    move-result v6
+    move-result v8
     :try_end_0
     .catch Landroid/content/pm/PackageManager$NameNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    move v0, v6
+    move v0, v8
+
+    nop
+
+    :goto_0
+    invoke-static {v6, v7}, Landroid/os/Binder;->restoreCallingIdentity(J)V
+
+    goto :goto_2
+
+    :catchall_0
+    move-exception v1
+
+    goto :goto_1
+
+    :catch_0
+    move-exception v8
+
+    :try_start_1
+    const-string v9, "AS.AudioService"
+
+    new-instance v10, Ljava/lang/StringBuilder;
+
+    invoke-direct {v10}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v11, "onCheckActiveUpDownPath() could not find UID for package: "
+
+    invoke-virtual {v10, v11}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v10, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v10}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v10
+
+    invoke-static {v9, v10}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    nop
 
     goto :goto_0
 
-    :catch_0
-    move-exception v6
+    :goto_1
+    invoke-static {v6, v7}, Landroid/os/Binder;->restoreCallingIdentity(J)V
 
-    new-instance v7, Ljava/lang/StringBuilder;
-
-    invoke-direct {v7}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string/jumbo v8, "onCheckActiveUpDownPath() could not find UID for package: "
-
-    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v7, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v7}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v7
-
-    const-string v8, "AS.AudioService"
-
-    invoke-static {v8, v7}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+    throw v1
 
     :cond_1
-    :goto_0
+    :goto_2
     invoke-static {v0}, Ljava/lang/Integer;->toString(I)Ljava/lang/String;
 
     move-result-object v2

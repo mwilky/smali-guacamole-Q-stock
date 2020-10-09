@@ -21981,7 +21981,7 @@
     return-void
 .end method
 
-.method removeIntentFilterVerificationLPw(Ljava/lang/String;I)Z
+.method removeIntentFilterVerificationLPw(Ljava/lang/String;IZ)Z
     .locals 3
 
     iget-object v0, p0, Lcom/android/server/pm/Settings;->mPackages:Landroid/util/ArrayMap;
@@ -22022,8 +22022,11 @@
     return v1
 
     :cond_1
+    if-eqz p3, :cond_2
+
     invoke-virtual {v0, p2}, Lcom/android/server/pm/PackageSetting;->clearDomainVerificationStatusForUser(I)V
 
+    :cond_2
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Lcom/android/server/pm/PackageSetting;->setIntentFilterVerificationInfo(Landroid/content/pm/IntentFilterVerificationInfo;)V
@@ -22047,7 +22050,9 @@
 
     aget v3, p2, v2
 
-    invoke-virtual {p0, p1, v3}, Lcom/android/server/pm/Settings;->removeIntentFilterVerificationLPw(Ljava/lang/String;I)Z
+    const/4 v4, 0x1
+
+    invoke-virtual {p0, p1, v3, v4}, Lcom/android/server/pm/Settings;->removeIntentFilterVerificationLPw(Ljava/lang/String;IZ)Z
 
     move-result v4
 

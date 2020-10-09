@@ -271,7 +271,7 @@
     return-object v1
 
     :cond_6
-    const-string v1, "isNull"
+    const-string/jumbo v1, "isNull"
 
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 

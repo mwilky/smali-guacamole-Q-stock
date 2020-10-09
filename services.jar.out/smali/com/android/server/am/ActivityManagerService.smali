@@ -39974,8 +39974,8 @@
     return-object v0
 .end method
 
-.method public crashApplication(IILjava/lang/String;ILjava/lang/String;)V
-    .locals 7
+.method public crashApplication(IILjava/lang/String;ILjava/lang/String;Z)V
+    .locals 8
 
     const-string v0, "android.permission.FORCE_STOP_PACKAGES"
 
@@ -40002,7 +40002,9 @@
 
     move-object v6, p5
 
-    invoke-virtual/range {v1 .. v6}, Lcom/android/server/am/AppErrors;->scheduleAppCrashLocked(IILjava/lang/String;ILjava/lang/String;)V
+    move v7, p6
+
+    invoke-virtual/range {v1 .. v7}, Lcom/android/server/am/AppErrors;->scheduleAppCrashLocked(IILjava/lang/String;ILjava/lang/String;Z)V
 
     monitor-exit p0
     :try_end_0

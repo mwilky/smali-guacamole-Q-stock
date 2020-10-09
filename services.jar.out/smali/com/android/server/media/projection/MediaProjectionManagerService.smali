@@ -434,7 +434,7 @@
 .end method
 
 .method private handleForegroundServicesChanged(III)V
-    .locals 2
+    .locals 4
 
     iget-object v0, p0, Lcom/android/server/media/projection/MediaProjectionManagerService;->mLock:Ljava/lang/Object;
 
@@ -449,7 +449,31 @@
 
     iget v1, v1, Lcom/android/server/media/projection/MediaProjectionManagerService$MediaProjection;->uid:I
 
-    if-eq v1, p2, :cond_0
+    if-ne v1, p2, :cond_3
+
+    iget-object v1, p0, Lcom/android/server/media/projection/MediaProjectionManagerService;->mProjectionGrant:Lcom/android/server/media/projection/MediaProjectionManagerService$MediaProjection;
+
+    invoke-virtual {v1}, Lcom/android/server/media/projection/MediaProjectionManagerService$MediaProjection;->getMediaProjectPid()I
+
+    move-result v1
+
+    if-eq v1, p1, :cond_0
+
+    iget-object v1, p0, Lcom/android/server/media/projection/MediaProjectionManagerService;->mProjectionGrant:Lcom/android/server/media/projection/MediaProjectionManagerService$MediaProjection;
+
+    iget-object v1, v1, Lcom/android/server/media/projection/MediaProjectionManagerService$MediaProjection;->packageName:Ljava/lang/String;
+
+    new-instance v2, Ljava/lang/String;
+
+    const-string v3, "com.oneplus.screenrecord"
+
+    invoke-direct {v2, v3}, Ljava/lang/String;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_0
 
     goto :goto_0
 

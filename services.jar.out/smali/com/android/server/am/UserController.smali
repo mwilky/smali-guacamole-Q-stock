@@ -20,6 +20,10 @@
 
 .field static final FOREGROUND_PROFILE_CHANGED_MSG:I = 0x46
 
+.field private static final MDM_ACTION_BOOT_COMPLETED:Ljava/lang/String; = "oneplus.intent.mdm_ready"
+
+.field private static final MDM_SERVICE_NAME:Ljava/lang/String; = "net.oneplus.odm"
+
 .field private static final OEM_ACTION_BOOT_COMPLETED:Ljava/lang/String; = "com.oem.intent.action.BOOT_COMPLETED"
 
 .field static final REPORT_LOCKED_BOOT_COMPLETE_MSG:I = 0x6e
@@ -4049,7 +4053,7 @@
 .end method
 
 .method finishUserUnlocked(Lcom/android/server/am/UserState;)V
-    .locals 37
+    .locals 38
 
     move-object/from16 v1, p0
 
@@ -4103,7 +4107,7 @@
 
     move v4, v15
 
-    goto/16 :goto_4
+    goto/16 :goto_6
 
     :cond_1
     const/4 v0, 0x2
@@ -4167,15 +4171,17 @@
 
     invoke-direct {v0, v3}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    move-object v4, v0
+    move-object v14, v0
 
-    const-string v3, "android.intent.extra.user_handle"
+    move-object v4, v14
 
-    invoke-virtual {v0, v3, v15}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
+    const-string v0, "android.intent.extra.user_handle"
 
-    const/high16 v14, 0x50000000
+    invoke-virtual {v14, v0, v15}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
-    invoke-virtual {v0, v14}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
+    const/high16 v0, 0x50000000
+
+    invoke-virtual {v14, v0}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
 
     iget-object v3, v1, Lcom/android/server/am/UserController;->mInjector:Lcom/android/server/am/UserController$Injector;
 
@@ -4199,11 +4205,13 @@
 
     const/16 v16, 0x0
 
+    move-object/from16 v20, v14
+
     move/from16 v14, v16
 
     sget v16, Lcom/android/server/am/ActivityManagerService;->MY_PID:I
 
-    move/from16 v20, v15
+    move/from16 v21, v15
 
     move/from16 v15, v16
 
@@ -4217,11 +4225,11 @@
 
     move-result v18
 
-    move/from16 v19, v20
+    move/from16 v19, v21
 
     invoke-virtual/range {v3 .. v19}, Lcom/android/server/am/UserController$Injector;->broadcastIntent(Landroid/content/Intent;Ljava/lang/String;Landroid/content/IIntentReceiver;ILjava/lang/String;Landroid/os/Bundle;[Ljava/lang/String;ILandroid/os/Bundle;ZZIIIII)I
 
-    move/from16 v4, v20
+    move/from16 v4, v21
 
     invoke-direct {v1, v4}, Lcom/android/server/am/UserController;->getUserInfo(I)Landroid/content/pm/UserInfo;
 
@@ -4251,7 +4259,7 @@
 
     invoke-direct {v5, v6}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    move-object/from16 v21, v5
+    move-object/from16 v22, v5
 
     invoke-static {v4}, Landroid/os/UserHandle;->of(I)Landroid/os/UserHandle;
 
@@ -4261,15 +4269,11 @@
 
     invoke-virtual {v5, v7, v6}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Landroid/os/Parcelable;)Landroid/content/Intent;
 
-    const/high16 v6, 0x50000000
+    invoke-virtual {v5, v0}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
 
-    invoke-virtual {v5, v6}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
+    iget-object v0, v1, Lcom/android/server/am/UserController;->mInjector:Lcom/android/server/am/UserController$Injector;
 
-    iget-object v6, v1, Lcom/android/server/am/UserController;->mInjector:Lcom/android/server/am/UserController$Injector;
-
-    move-object/from16 v20, v6
-
-    const/16 v22, 0x0
+    move-object/from16 v21, v0
 
     const/16 v23, 0x0
 
@@ -4281,97 +4285,286 @@
 
     const/16 v27, 0x0
 
-    const/16 v28, -0x1
+    const/16 v28, 0x0
 
-    const/16 v29, 0x0
+    const/16 v29, -0x1
 
     const/16 v30, 0x0
 
     const/16 v31, 0x0
 
-    sget v32, Lcom/android/server/am/ActivityManagerService;->MY_PID:I
+    const/16 v32, 0x0
 
-    const/16 v33, 0x3e8
+    sget v33, Lcom/android/server/am/ActivityManagerService;->MY_PID:I
+
+    const/16 v34, 0x3e8
 
     invoke-static {}, Landroid/os/Binder;->getCallingUid()I
 
-    move-result v34
+    move-result v35
 
     invoke-static {}, Landroid/os/Binder;->getCallingPid()I
 
-    move-result v35
+    move-result v36
 
-    iget v6, v3, Landroid/content/pm/UserInfo;->id:I
+    iget v0, v3, Landroid/content/pm/UserInfo;->id:I
 
-    move/from16 v36, v6
+    move/from16 v37, v0
 
-    invoke-virtual/range {v20 .. v36}, Lcom/android/server/am/UserController$Injector;->broadcastIntent(Landroid/content/Intent;Ljava/lang/String;Landroid/content/IIntentReceiver;ILjava/lang/String;Landroid/os/Bundle;[Ljava/lang/String;ILandroid/os/Bundle;ZZIIIII)I
+    invoke-virtual/range {v21 .. v37}, Lcom/android/server/am/UserController$Injector;->broadcastIntent(Landroid/content/Intent;Ljava/lang/String;Landroid/content/IIntentReceiver;ILjava/lang/String;Landroid/os/Bundle;[Ljava/lang/String;ILandroid/os/Bundle;ZZIIIII)I
 
     :cond_4
-    invoke-direct {v1, v4}, Lcom/android/server/am/UserController;->getUserInfo(I)Landroid/content/pm/UserInfo;
+    const-string/jumbo v0, "persist.vendor.op.last.slot_suffix"
+
+    const-string v3, "ERROR"
+
+    invoke-static {v0, v3}, Landroid/os/SystemProperties;->get(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v3
 
-    iget-object v5, v3, Landroid/content/pm/UserInfo;->lastLoggedInFingerprint:Ljava/lang/String;
+    const-string/jumbo v0, "ro.boot.slot_suffix"
 
-    sget-object v6, Landroid/os/Build;->FINGERPRINT:Ljava/lang/String;
+    const-string v5, "ERROR"
 
-    invoke-static {v5, v6}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v5}, Landroid/os/SystemProperties;->get(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
-    move-result v5
+    move-result-object v5
 
-    if-nez v5, :cond_8
+    invoke-virtual {v3, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    invoke-virtual {v3}, Landroid/content/pm/UserInfo;->isManagedProfile()Z
+    move-result v0
 
-    move-result v5
+    if-nez v0, :cond_7
 
-    if-eqz v5, :cond_7
+    invoke-static {}, Landroid/app/AppGlobals;->getPackageManager()Landroid/content/pm/IPackageManager;
 
-    iget-boolean v5, v2, Lcom/android/server/am/UserState;->tokenProvided:Z
+    move-result-object v6
 
-    if-eqz v5, :cond_6
+    :try_start_5
+    invoke-interface {v6}, Landroid/content/pm/IPackageManager;->isFirstBoot()Z
 
-    iget-object v5, v1, Lcom/android/server/am/UserController;->mLockPatternUtils:Lcom/android/internal/widget/LockPatternUtils;
+    move-result v0
 
-    invoke-virtual {v5, v4}, Lcom/android/internal/widget/LockPatternUtils;->isSeparateProfileChallengeEnabled(I)Z
+    if-nez v0, :cond_6
 
-    move-result v5
+    const-string v0, "ActivityManager"
 
-    if-nez v5, :cond_5
+    const-string/jumbo v7, "ota info: boot from ota"
+
+    invoke-static {v0, v7}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    invoke-virtual/range {p0 .. p0}, Lcom/android/server/am/UserController;->hasMdmReady()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_5
+
+    const-string v0, "ActivityManager"
+
+    const-string/jumbo v7, "mdm service has been ready !!"
+
+    invoke-static {v0, v7}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    const-string/jumbo v0, "persist.op.last.version.ota"
+
+    const-string v7, "ERROR"
+
+    invoke-static {v0, v7}, Landroid/os/SystemProperties;->get(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
+
+    const-string/jumbo v7, "ro.build.version.ota"
+
+    const-string v8, "ERROR"
+
+    invoke-static {v7, v8}, Landroid/os/SystemProperties;->get(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v7
+
+    const-string v8, "ActivityManager"
+
+    new-instance v9, Ljava/lang/StringBuilder;
+
+    invoke-direct {v9}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v10, "lastBootVersion="
+
+    invoke-virtual {v9, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v9, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v10, ",currentBootVersion="
+
+    invoke-virtual {v9, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v9, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v9}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v9
+
+    invoke-static {v8, v9}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    invoke-static {}, Lnet/oneplus/odm/OpDeviceManagerInjector;->getInstance()Lnet/oneplus/odm/OpDeviceManagerInjector;
+
+    move-result-object v8
+
+    new-instance v9, Ljava/util/HashMap;
+
+    invoke-direct {v9}, Ljava/util/HashMap;-><init>()V
+
+    const-string v10, "appid"
+
+    const-string v11, "1IM6KRES9P"
+
+    invoke-virtual {v9, v10, v11}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    new-instance v10, Ljava/util/HashMap;
+
+    invoke-direct {v10}, Ljava/util/HashMap;-><init>()V
+
+    const-string v11, "currentBootVersion"
+
+    invoke-virtual {v10, v11, v7}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    const-string/jumbo v11, "lastBootVersion"
+
+    invoke-virtual {v10, v11, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    iget-object v11, v1, Lcom/android/server/am/UserController;->mInjector:Lcom/android/server/am/UserController$Injector;
+
+    invoke-virtual {v11}, Lcom/android/server/am/UserController$Injector;->getContext()Landroid/content/Context;
+
+    move-result-object v11
+
+    const-string v12, "bootFromOta"
+
+    invoke-virtual {v8, v11, v12, v10, v9}, Lnet/oneplus/odm/OpDeviceManagerInjector;->preserveUrgentOsData(Landroid/content/Context;Ljava/lang/String;Ljava/util/Map;Ljava/util/Map;)V
 
     goto :goto_0
 
     :cond_5
-    const/4 v5, 0x0
+    new-instance v0, Landroid/content/IntentFilter;
 
-    goto :goto_1
+    invoke-direct {v0}, Landroid/content/IntentFilter;-><init>()V
+
+    const-string/jumbo v7, "oneplus.intent.mdm_ready"
+
+    invoke-virtual {v0, v7}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
+
+    new-instance v7, Landroid/mdmBootCompletedReceiver/mdmBootCompletedReceiver;
+
+    invoke-direct {v7}, Landroid/mdmBootCompletedReceiver/mdmBootCompletedReceiver;-><init>()V
+
+    iget-object v8, v1, Lcom/android/server/am/UserController;->mInjector:Lcom/android/server/am/UserController$Injector;
+
+    invoke-virtual {v8}, Lcom/android/server/am/UserController$Injector;->getContext()Landroid/content/Context;
+
+    move-result-object v8
+
+    invoke-virtual {v8, v7, v0}, Landroid/content/Context;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
+
+    nop
+
+    goto :goto_0
 
     :cond_6
-    :goto_0
-    const/4 v5, 0x1
+    const-string/jumbo v0, "persist.vendor.op.last.slot_suffix"
 
-    :goto_1
-    goto :goto_2
+    invoke-static {v0, v5}, Landroid/os/SystemProperties;->set(Ljava/lang/String;Ljava/lang/String;)V
+
+    const-string/jumbo v0, "persist.vendor.op.last.version.ota"
+
+    const-string/jumbo v7, "ro.build.version.ota"
+
+    const-string v8, "ERROR"
+
+    invoke-static {v7, v8}, Landroid/os/SystemProperties;->get(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v7
+
+    invoke-static {v0, v7}, Landroid/os/SystemProperties;->set(Ljava/lang/String;Ljava/lang/String;)V
+    :try_end_5
+    .catch Landroid/os/RemoteException; {:try_start_5 .. :try_end_5} :catch_0
+
+    :goto_0
+    goto :goto_1
+
+    :catch_0
+    move-exception v0
+
+    invoke-virtual {v0}, Landroid/os/RemoteException;->rethrowFromSystemServer()Ljava/lang/RuntimeException;
+
+    move-result-object v7
+
+    throw v7
 
     :cond_7
-    const/4 v5, 0x0
+    :goto_1
+    invoke-direct {v1, v4}, Lcom/android/server/am/UserController;->getUserInfo(I)Landroid/content/pm/UserInfo;
 
-    :goto_2
-    iget-object v6, v1, Lcom/android/server/am/UserController;->mInjector:Lcom/android/server/am/UserController$Injector;
+    move-result-object v0
 
-    new-instance v7, Lcom/android/server/am/-$$Lambda$UserController$K71HFCIuD0iCwrDTKYnIUDyAeWg;
+    iget-object v6, v0, Landroid/content/pm/UserInfo;->lastLoggedInFingerprint:Ljava/lang/String;
 
-    invoke-direct {v7, v1, v2}, Lcom/android/server/am/-$$Lambda$UserController$K71HFCIuD0iCwrDTKYnIUDyAeWg;-><init>(Lcom/android/server/am/UserController;Lcom/android/server/am/UserState;)V
+    sget-object v7, Landroid/os/Build;->FINGERPRINT:Ljava/lang/String;
 
-    invoke-virtual {v6, v4, v5, v7}, Lcom/android/server/am/UserController$Injector;->sendPreBootBroadcast(IZLjava/lang/Runnable;)V
+    invoke-static {v6, v7}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v6
+
+    if-nez v6, :cond_b
+
+    invoke-virtual {v0}, Landroid/content/pm/UserInfo;->isManagedProfile()Z
+
+    move-result v6
+
+    if-eqz v6, :cond_a
+
+    iget-boolean v6, v2, Lcom/android/server/am/UserState;->tokenProvided:Z
+
+    if-eqz v6, :cond_9
+
+    iget-object v6, v1, Lcom/android/server/am/UserController;->mLockPatternUtils:Lcom/android/internal/widget/LockPatternUtils;
+
+    invoke-virtual {v6, v4}, Lcom/android/internal/widget/LockPatternUtils;->isSeparateProfileChallengeEnabled(I)Z
+
+    move-result v6
+
+    if-nez v6, :cond_8
+
+    goto :goto_2
+
+    :cond_8
+    const/4 v6, 0x0
 
     goto :goto_3
 
-    :cond_8
-    invoke-direct/range {p0 .. p1}, Lcom/android/server/am/UserController;->finishUserUnlockedCompleted(Lcom/android/server/am/UserState;)V
+    :cond_9
+    :goto_2
+    const/4 v6, 0x1
 
     :goto_3
+    goto :goto_4
+
+    :cond_a
+    const/4 v6, 0x0
+
+    :goto_4
+    iget-object v7, v1, Lcom/android/server/am/UserController;->mInjector:Lcom/android/server/am/UserController$Injector;
+
+    new-instance v8, Lcom/android/server/am/-$$Lambda$UserController$K71HFCIuD0iCwrDTKYnIUDyAeWg;
+
+    invoke-direct {v8, v1, v2}, Lcom/android/server/am/-$$Lambda$UserController$K71HFCIuD0iCwrDTKYnIUDyAeWg;-><init>(Lcom/android/server/am/UserController;Lcom/android/server/am/UserState;)V
+
+    invoke-virtual {v7, v4, v6, v8}, Lcom/android/server/am/UserController$Injector;->sendPreBootBroadcast(IZLjava/lang/Runnable;)V
+
+    goto :goto_5
+
+    :cond_b
+    invoke-direct/range {p0 .. p1}, Lcom/android/server/am/UserController;->finishUserUnlockedCompleted(Lcom/android/server/am/UserState;)V
+
+    :goto_5
     return-void
 
     :catchall_1
@@ -4379,18 +4572,18 @@
 
     move v4, v15
 
-    :goto_4
-    :try_start_5
+    :goto_6
+    :try_start_6
     monitor-exit v3
-    :try_end_5
-    .catchall {:try_start_5 .. :try_end_5} :catchall_2
+    :try_end_6
+    .catchall {:try_start_6 .. :try_end_6} :catchall_2
 
     throw v0
 
     :catchall_2
     move-exception v0
 
-    goto :goto_4
+    goto :goto_6
 .end method
 
 .method getCurrentOrTargetUserId()I
@@ -5375,6 +5568,67 @@
         0x78 -> :sswitch_1
         0x3e8 -> :sswitch_0
     .end sparse-switch
+.end method
+
+.method hasMdmReady()Z
+    .locals 6
+
+    iget-object v0, p0, Lcom/android/server/am/UserController;->mInjector:Lcom/android/server/am/UserController$Injector;
+
+    invoke-virtual {v0}, Lcom/android/server/am/UserController$Injector;->getContext()Landroid/content/Context;
+
+    move-result-object v0
+
+    const-string v1, "activity"
+
+    invoke-virtual {v0, v1}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/app/ActivityManager;
+
+    invoke-virtual {v0}, Landroid/app/ActivityManager;->getRunningAppProcesses()Ljava/util/List;
+
+    move-result-object v1
+
+    invoke-interface {v1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+
+    move-result-object v2
+
+    :goto_0
+    invoke-interface {v2}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v3
+
+    if-eqz v3, :cond_1
+
+    invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v3
+
+    check-cast v3, Landroid/app/ActivityManager$RunningAppProcessInfo;
+
+    iget-object v4, v3, Landroid/app/ActivityManager$RunningAppProcessInfo;->processName:Ljava/lang/String;
+
+    const-string/jumbo v5, "net.oneplus.odm"
+
+    invoke-virtual {v5, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v4
+
+    if-eqz v4, :cond_0
+
+    const/4 v2, 0x1
+
+    return v2
+
+    :cond_0
+    goto :goto_0
+
+    :cond_1
+    const/4 v2, 0x0
+
+    return v2
 .end method
 
 .method hasStartedUserState(I)Z

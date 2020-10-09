@@ -12891,6 +12891,55 @@
     return v1
 .end method
 
+.method killMisbehavingService(Lcom/android/server/am/ServiceRecord;IILjava/lang/String;)V
+    .locals 8
+
+    iget-object v0, p0, Lcom/android/server/am/ActiveServices;->mAm:Lcom/android/server/am/ActivityManagerService;
+
+    monitor-enter v0
+
+    :try_start_0
+    invoke-static {}, Lcom/android/server/am/ActivityManagerService;->boostPriorityForLockedSection()V
+
+    invoke-direct {p0, p1}, Lcom/android/server/am/ActiveServices;->stopServiceLocked(Lcom/android/server/am/ServiceRecord;)V
+
+    iget-object v1, p0, Lcom/android/server/am/ActiveServices;->mAm:Lcom/android/server/am/ActivityManagerService;
+
+    const/4 v5, -0x1
+
+    const-string v6, "Bad notification for startForeground"
+
+    const/4 v7, 0x1
+
+    move v2, p2
+
+    move v3, p3
+
+    move-object v4, p4
+
+    invoke-virtual/range {v1 .. v7}, Lcom/android/server/am/ActivityManagerService;->crashApplication(IILjava/lang/String;ILjava/lang/String;Z)V
+
+    monitor-exit v0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    invoke-static {}, Lcom/android/server/am/ActivityManagerService;->resetPriorityAfterLockedSection()V
+
+    return-void
+
+    :catchall_0
+    move-exception v1
+
+    :try_start_1
+    monitor-exit v0
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    invoke-static {}, Lcom/android/server/am/ActivityManagerService;->resetPriorityAfterLockedSection()V
+
+    throw v1
+.end method
+
 .method final killServicesLocked(Lcom/android/server/am/ProcessRecord;Z)V
     .locals 16
 
@@ -15705,7 +15754,9 @@
 
     move-result-object v5
 
-    invoke-virtual/range {v0 .. v5}, Lcom/android/server/am/ActivityManagerService;->crashApplication(IILjava/lang/String;ILjava/lang/String;)V
+    const/4 v6, 0x0
+
+    invoke-virtual/range {v0 .. v6}, Lcom/android/server/am/ActivityManagerService;->crashApplication(IILjava/lang/String;ILjava/lang/String;Z)V
 
     return-void
 .end method

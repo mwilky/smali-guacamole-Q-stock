@@ -21,6 +21,8 @@
 
 .field private final mIsPrivileged:Z
 
+.field private mPid:I
+
 .field private final mTargetSdkVersion:I
 
 .field private mToken:Landroid/os/IBinder;
@@ -43,6 +45,10 @@
     iput-object p1, p0, Lcom/android/server/media/projection/MediaProjectionManagerService$MediaProjection;->this$0:Lcom/android/server/media/projection/MediaProjectionManagerService;
 
     invoke-direct {p0}, Landroid/media/projection/IMediaProjection$Stub;-><init>()V
+
+    const/4 p1, 0x0
+
+    iput p1, p0, Lcom/android/server/media/projection/MediaProjectionManagerService$MediaProjection;->mPid:I
 
     iput p2, p0, Lcom/android/server/media/projection/MediaProjectionManagerService$MediaProjection;->mType:I
 
@@ -212,6 +218,14 @@
     return-void
 .end method
 
+.method getMediaProjectPid()I
+    .locals 1
+
+    iget v0, p0, Lcom/android/server/media/projection/MediaProjectionManagerService$MediaProjection;->mPid:I
+
+    return v0
+.end method
+
 .method public getProjectionInfo()Landroid/media/projection/MediaProjectionInfo;
     .locals 3
 
@@ -273,6 +287,14 @@
 
     :goto_0
     return v0
+.end method
+
+.method setMediaProjectPid(I)V
+    .locals 0
+
+    iput p1, p0, Lcom/android/server/media/projection/MediaProjectionManagerService$MediaProjection;->mPid:I
+
+    return-void
 .end method
 
 .method public start(Landroid/media/projection/IMediaProjectionCallback;)V

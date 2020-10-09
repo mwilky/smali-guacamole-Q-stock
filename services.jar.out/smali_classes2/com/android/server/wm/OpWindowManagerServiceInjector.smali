@@ -20,6 +20,16 @@
     .end annotation
 .end field
 
+.field public static sNavGestureFullscreenList:Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/List<",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+.end field
+
 .field public static sOpSnapshotScaleFraction:F
 
 .field private static sOpWindowManagerService:Lcom/android/server/wm/IOpWindowManagerService;
@@ -27,7 +37,7 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 3
+    .locals 40
 
     sget-boolean v0, Landroid/os/Build;->DEBUG_ONEPLUS:Z
 
@@ -80,6 +90,94 @@
     move-result-object v0
 
     sput-object v0, Lcom/android/server/wm/OpWindowManagerServiceInjector;->sForceNotSizeCompatList:Ljava/util/List;
+
+    const-string v1, "com.eg.android.AlipayGphone"
+
+    const-string v2, "com.bilibili.app"
+
+    const-string v3, "tv.danmaku.bili"
+
+    const-string v4, "com.bilibili.app.in"
+
+    const-string v5, "com.tencent.qqmusic"
+
+    const-string v6, "com.netease.cloudmusic"
+
+    const-string v7, "com.netease.yanxuan"
+
+    const-string v8, "com.autonavi.minimap"
+
+    const-string v9, "com.xunmeng.pinduoduo"
+
+    const-string v10, "air.tv.douyu.android"
+
+    const-string v11, "com.youku.phone"
+
+    const-string v12, "com.baidu.searchbox"
+
+    const-string v13, "com.baidu.tieba"
+
+    const-string v14, "com.kugou.android"
+
+    const-string v15, "com.tencent.android.qqdownloader"
+
+    const-string v16, "com.xingin.xhs"
+
+    const-string v17, "com.tencent.qqpimsecure"
+
+    const-string v18, "sogou.mobile.explorer"
+
+    const-string v19, "com.xiaomi.smarthome"
+
+    const-string v20, "com.unionpay"
+
+    const-string v21, "com.tencent.weread"
+
+    const-string v22, "com.cmbchina.ccd.pluto.cmbActivity"
+
+    const-string v23, "com.hupu.games"
+
+    const-string v24, "com.tencent.tim"
+
+    const-string v25, "com.google.earth"
+
+    const-string v26, "jp.naver.line.android"
+
+    const-string v27, "com.tencent.mobileqq"
+
+    const-string v28, "com.qq.reader"
+
+    const-string v29, "com.nintendo.znca"
+
+    const-string v30, "com.icbc"
+
+    const-string v31, "com.baidu.netdisk"
+
+    const-string v32, "cn.kuwo.player"
+
+    const-string v33, "ctrip.android.view"
+
+    const-string v34, "com.baidu.homework"
+
+    const-string v35, "com.alibaba.aliyun"
+
+    const-string v36, "com.eastmoney.android.berlin"
+
+    const-string v37, "com.netease.mail"
+
+    const-string v38, "com.cainiao.wireless"
+
+    const-string v39, "com.google.android.apps.translate"
+
+    filled-new-array/range {v1 .. v39}, [Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {v0}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
+
+    move-result-object v0
+
+    sput-object v0, Lcom/android/server/wm/OpWindowManagerServiceInjector;->sNavGestureFullscreenList:Ljava/util/List;
 
     return-void
 .end method
@@ -456,6 +554,95 @@
     sput-object v0, Lcom/android/server/wm/OpWindowManagerServiceInjector;->sOpWindowManagerService:Lcom/android/server/wm/IOpWindowManagerService;
 
     :cond_0
+    return-void
+.end method
+
+.method public static reserFrameForNavGesture(Landroid/graphics/Rect;Landroid/graphics/Rect;Landroid/graphics/Rect;Landroid/graphics/Rect;Landroid/graphics/Rect;Landroid/graphics/Rect;Lcom/android/server/wm/WindowState;I)V
+    .locals 2
+
+    invoke-static {}, Lcom/android/server/policy/OpPhoneWindowManagerInjector;->isGestureButtonWithoutHideBarEnabled()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_4
+
+    sget-object v0, Lcom/android/server/wm/OpWindowManagerServiceInjector;->sNavGestureFullscreenList:Ljava/util/List;
+
+    invoke-virtual {p6}, Lcom/android/server/wm/WindowState;->getOwningPackage()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-interface {v0, v1}, Ljava/util/List;->contains(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_4
+
+    iget v0, p0, Landroid/graphics/Rect;->bottom:I
+
+    iget v1, p1, Landroid/graphics/Rect;->bottom:I
+
+    add-int/2addr v1, p7
+
+    if-ne v0, v1, :cond_0
+
+    iget v0, p0, Landroid/graphics/Rect;->bottom:I
+
+    iput v0, p1, Landroid/graphics/Rect;->bottom:I
+
+    :cond_0
+    iget v0, p0, Landroid/graphics/Rect;->bottom:I
+
+    iget v1, p2, Landroid/graphics/Rect;->bottom:I
+
+    add-int/2addr v1, p7
+
+    if-ne v0, v1, :cond_1
+
+    iget v0, p0, Landroid/graphics/Rect;->bottom:I
+
+    iput v0, p2, Landroid/graphics/Rect;->bottom:I
+
+    :cond_1
+    iget v0, p0, Landroid/graphics/Rect;->bottom:I
+
+    iget v1, p3, Landroid/graphics/Rect;->bottom:I
+
+    add-int/2addr v1, p7
+
+    if-ne v0, v1, :cond_2
+
+    iget v0, p0, Landroid/graphics/Rect;->bottom:I
+
+    iput v0, p3, Landroid/graphics/Rect;->bottom:I
+
+    :cond_2
+    iget v0, p0, Landroid/graphics/Rect;->bottom:I
+
+    iget v1, p4, Landroid/graphics/Rect;->bottom:I
+
+    add-int/2addr v1, p7
+
+    if-ne v0, v1, :cond_3
+
+    iget v0, p0, Landroid/graphics/Rect;->bottom:I
+
+    iput v0, p4, Landroid/graphics/Rect;->bottom:I
+
+    :cond_3
+    iget v0, p0, Landroid/graphics/Rect;->bottom:I
+
+    iget v1, p5, Landroid/graphics/Rect;->bottom:I
+
+    add-int/2addr v1, p7
+
+    if-ne v0, v1, :cond_4
+
+    iget v0, p0, Landroid/graphics/Rect;->bottom:I
+
+    iput v0, p5, Landroid/graphics/Rect;->bottom:I
+
+    :cond_4
     return-void
 .end method
 

@@ -292,7 +292,7 @@
 
     iget-object v14, v15, Landroid/app/ApplicationErrorReport$CrashInfo;->stackTrace:Ljava/lang/String;
 
-    new-instance v20, Lcom/android/server/am/-$$Lambda$AppErrors$s1CeKlTYP9O4xRqISFOqsuWxcno;
+    new-instance v20, Lcom/android/server/am/-$$Lambda$AppErrors$Ziph9zXnTzhEV6frMYJe_IEvvfY;
 
     move-object/from16 v0, v20
 
@@ -308,7 +308,7 @@
 
     move-object/from16 v8, p5
 
-    invoke-direct/range {v0 .. v9}, Lcom/android/server/am/-$$Lambda$AppErrors$s1CeKlTYP9O4xRqISFOqsuWxcno;-><init>(Lcom/android/server/am/AppErrors;Landroid/app/ApplicationErrorReport$CrashInfo;Ljava/lang/String;ILcom/android/server/am/ProcessRecord;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;I)V
+    invoke-direct/range {v0 .. v9}, Lcom/android/server/am/-$$Lambda$AppErrors$Ziph9zXnTzhEV6frMYJe_IEvvfY;-><init>(Lcom/android/server/am/AppErrors;Landroid/app/ApplicationErrorReport$CrashInfo;Ljava/lang/String;ILcom/android/server/am/ProcessRecord;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;I)V
 
     move-object v13, v3
 
@@ -329,6 +329,55 @@
     move-result v0
 
     return v0
+.end method
+
+.method private killAppImmediateLocked(Lcom/android/server/am/ProcessRecord;Ljava/lang/String;Ljava/lang/String;)V
+    .locals 9
+
+    const/4 v0, 0x0
+
+    invoke-virtual {p1, v0}, Lcom/android/server/am/ProcessRecord;->setCrashing(Z)V
+
+    const/4 v1, 0x0
+
+    iput-object v1, p1, Lcom/android/server/am/ProcessRecord;->crashingReport:Landroid/app/ActivityManager$ProcessErrorStateInfo;
+
+    invoke-virtual {p1, v0}, Lcom/android/server/am/ProcessRecord;->setNotResponding(Z)V
+
+    iput-object v1, p1, Lcom/android/server/am/ProcessRecord;->notRespondingReport:Landroid/app/ActivityManager$ProcessErrorStateInfo;
+
+    iget v0, p1, Lcom/android/server/am/ProcessRecord;->pid:I
+
+    if-lez v0, :cond_0
+
+    iget v0, p1, Lcom/android/server/am/ProcessRecord;->pid:I
+
+    sget v1, Lcom/android/server/am/ActivityManagerService;->MY_PID:I
+
+    if-eq v0, v1, :cond_0
+
+    const/4 v5, 0x0
+
+    const/4 v6, 0x0
+
+    const/4 v7, 0x0
+
+    const/4 v8, 0x0
+
+    move-object v2, p0
+
+    move-object v3, p1
+
+    move-object v4, p2
+
+    invoke-virtual/range {v2 .. v8}, Lcom/android/server/am/AppErrors;->handleAppCrashLocked(Lcom/android/server/am/ProcessRecord;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/android/server/am/AppErrorDialog$Data;)Z
+
+    const/4 v0, 0x1
+
+    invoke-virtual {p1, p3, v0}, Lcom/android/server/am/ProcessRecord;->kill(Ljava/lang/String;Z)V
+
+    :cond_0
+    return-void
 .end method
 
 .method private makeAppCrashingLocked(Lcom/android/server/am/ProcessRecord;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/android/server/am/AppErrorDialog$Data;)Z
@@ -3007,21 +3056,11 @@
 .end method
 
 .method killAppAtUserRequestLocked(Lcom/android/server/am/ProcessRecord;Landroid/app/Dialog;)V
-    .locals 9
-
-    const/4 v0, 0x0
-
-    invoke-virtual {p1, v0}, Lcom/android/server/am/ProcessRecord;->setCrashing(Z)V
-
-    const/4 v1, 0x0
-
-    iput-object v1, p1, Lcom/android/server/am/ProcessRecord;->crashingReport:Landroid/app/ActivityManager$ProcessErrorStateInfo;
-
-    invoke-virtual {p1, v0}, Lcom/android/server/am/ProcessRecord;->setNotResponding(Z)V
-
-    iput-object v1, p1, Lcom/android/server/am/ProcessRecord;->notRespondingReport:Landroid/app/ActivityManager$ProcessErrorStateInfo;
+    .locals 2
 
     iget-object v0, p1, Lcom/android/server/am/ProcessRecord;->anrDialog:Landroid/app/Dialog;
+
+    const/4 v1, 0x0
 
     if-ne v0, p2, :cond_0
 
@@ -3035,43 +3074,16 @@
     iput-object v1, p1, Lcom/android/server/am/ProcessRecord;->waitDialog:Landroid/app/Dialog;
 
     :cond_1
-    iget v0, p1, Lcom/android/server/am/ProcessRecord;->pid:I
-
-    if-lez v0, :cond_2
-
-    iget v0, p1, Lcom/android/server/am/ProcessRecord;->pid:I
-
-    sget v1, Lcom/android/server/am/ActivityManagerService;->MY_PID:I
-
-    if-eq v0, v1, :cond_2
-
-    const/4 v5, 0x0
-
-    const/4 v6, 0x0
-
-    const/4 v7, 0x0
-
-    const/4 v8, 0x0
-
-    const-string/jumbo v4, "user-terminated"
-
-    move-object v2, p0
-
-    move-object v3, p1
-
-    invoke-virtual/range {v2 .. v8}, Lcom/android/server/am/AppErrors;->handleAppCrashLocked(Lcom/android/server/am/ProcessRecord;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/android/server/am/AppErrorDialog$Data;)Z
-
-    const/4 v0, 0x1
+    const-string/jumbo v0, "user-terminated"
 
     const-string/jumbo v1, "user request after error"
 
-    invoke-virtual {p1, v1, v0}, Lcom/android/server/am/ProcessRecord;->kill(Ljava/lang/String;Z)V
+    invoke-direct {p0, p1, v0, v1}, Lcom/android/server/am/AppErrors;->killAppImmediateLocked(Lcom/android/server/am/ProcessRecord;Ljava/lang/String;Ljava/lang/String;)V
 
-    :cond_2
     return-void
 .end method
 
-.method public synthetic lambda$handleAppCrashInActivityController$0$AppErrors(Landroid/app/ApplicationErrorReport$CrashInfo;Ljava/lang/String;ILcom/android/server/am/ProcessRecord;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;I)V
+.method public synthetic lambda$handleAppCrashInActivityController$1$AppErrors(Landroid/app/ApplicationErrorReport$CrashInfo;Ljava/lang/String;ILcom/android/server/am/ProcessRecord;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;I)V
     .locals 10
 
     move-object v0, p2
@@ -3208,6 +3220,43 @@
 
     :goto_0
     return-void
+.end method
+
+.method public synthetic lambda$scheduleAppCrashLocked$0$AppErrors(Lcom/android/server/am/ProcessRecord;)V
+    .locals 3
+
+    iget-object v0, p0, Lcom/android/server/am/AppErrors;->mService:Lcom/android/server/am/ActivityManagerService;
+
+    monitor-enter v0
+
+    :try_start_0
+    invoke-static {}, Lcom/android/server/am/ActivityManagerService;->boostPriorityForLockedSection()V
+
+    const-string v1, "forced"
+
+    const-string/jumbo v2, "killed for invalid state"
+
+    invoke-direct {p0, p1, v1, v2}, Lcom/android/server/am/AppErrors;->killAppImmediateLocked(Lcom/android/server/am/ProcessRecord;Ljava/lang/String;Ljava/lang/String;)V
+
+    monitor-exit v0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    invoke-static {}, Lcom/android/server/am/ActivityManagerService;->resetPriorityAfterLockedSection()V
+
+    return-void
+
+    :catchall_0
+    move-exception v1
+
+    :try_start_1
+    monitor-exit v0
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    invoke-static {}, Lcom/android/server/am/ActivityManagerService;->resetPriorityAfterLockedSection()V
+
+    throw v1
 .end method
 
 .method loadAppsNotReportingCrashesFromConfigLocked(Ljava/lang/String;)V
@@ -3357,8 +3406,8 @@
     return-void
 .end method
 
-.method scheduleAppCrashLocked(IILjava/lang/String;ILjava/lang/String;)V
-    .locals 5
+.method scheduleAppCrashLocked(IILjava/lang/String;ILjava/lang/String;Z)V
+    .locals 6
 
     const/4 v0, 0x0
 
@@ -3480,6 +3529,23 @@
     :cond_5
     invoke-virtual {v0, p5}, Lcom/android/server/am/ProcessRecord;->scheduleCrash(Ljava/lang/String;)V
 
+    if-eqz p6, :cond_6
+
+    move-object v1, v0
+
+    iget-object v2, p0, Lcom/android/server/am/AppErrors;->mService:Lcom/android/server/am/ActivityManagerService;
+
+    iget-object v2, v2, Lcom/android/server/am/ActivityManagerService;->mHandler:Lcom/android/server/am/ActivityManagerService$MainHandler;
+
+    new-instance v3, Lcom/android/server/am/-$$Lambda$AppErrors$1aFX_-j-MSc0clpKk9XdlBZz9lU;
+
+    invoke-direct {v3, p0, v1}, Lcom/android/server/am/-$$Lambda$AppErrors$1aFX_-j-MSc0clpKk9XdlBZz9lU;-><init>(Lcom/android/server/am/AppErrors;Lcom/android/server/am/ProcessRecord;)V
+
+    const-wide/16 v4, 0x1388
+
+    invoke-virtual {v2, v3, v4, v5}, Lcom/android/server/am/ActivityManagerService$MainHandler;->postDelayed(Ljava/lang/Runnable;J)Z
+
+    :cond_6
     return-void
 
     :catchall_0

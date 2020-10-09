@@ -1842,7 +1842,7 @@
     return-void
 .end method
 
-.method public notifyNavBarColorChanged(ILjava/lang/String;)V
+.method public notifyNavBarColorChanged(ILjava/lang/String;Ljava/lang/String;)V
     .locals 1
 
     iget-object v0, p0, Lcom/android/server/statusbar/StatusBarManagerService;->mBar:Lcom/android/internal/statusbar/IStatusBar;
@@ -1852,7 +1852,7 @@
     :try_start_0
     iget-object v0, p0, Lcom/android/server/statusbar/StatusBarManagerService;->mBar:Lcom/android/internal/statusbar/IStatusBar;
 
-    invoke-interface {v0, p1, p2}, Lcom/android/internal/statusbar/IStatusBar;->notifyNavBarColorChanged(ILjava/lang/String;)V
+    invoke-interface {v0, p1, p2, p3}, Lcom/android/internal/statusbar/IStatusBar;->notifyNavBarColorChanged(ILjava/lang/String;Ljava/lang/String;)V
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 

@@ -15,6 +15,12 @@
 
 
 # static fields
+.field private static final CHARGING_PILLAR_PACKAGE_NAME:Ljava/lang/String; = "com.oneplus.chargingpilar"
+
+.field private static final CHARGING_PILLAR_SCREEN_OFF_EVENT:Ljava/lang/String; = "com.oneplus.chargingpilar.SCREEN_OFF"
+
+.field private static final CHARGING_PILLAR_SCREEN_ON_EVENT:Ljava/lang/String; = "com.oneplus.chargingpilar.SCREEN_ON"
+
 .field static DEBUG:Z = false
 
 .field private static final INTERACTIVE_STATE_ASLEEP:I = 0x2
@@ -971,6 +977,20 @@
 
     invoke-virtual/range {v2 .. v10}, Landroid/content/Context;->sendOrderedBroadcastAsUser(Landroid/content/Intent;Landroid/os/UserHandle;Ljava/lang/String;Landroid/content/BroadcastReceiver;Landroid/os/Handler;ILjava/lang/String;Landroid/os/Bundle;)V
 
+    new-instance v0, Landroid/content/Intent;
+
+    const-string v1, "com.oneplus.chargingpilar.SCREEN_OFF"
+
+    invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
+
+    const-string v1, "com.oneplus.chargingpilar"
+
+    invoke-virtual {v0, v1}, Landroid/content/Intent;->setPackage(Ljava/lang/String;)Landroid/content/Intent;
+
+    iget-object v1, p0, Lcom/android/server/power/Notifier;->mContext:Landroid/content/Context;
+
+    invoke-virtual {v1, v0}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V
+
     goto :goto_0
 
     :cond_1
@@ -1228,6 +1248,20 @@
     const/4 v10, 0x0
 
     invoke-virtual/range {v2 .. v10}, Landroid/content/Context;->sendOrderedBroadcastAsUser(Landroid/content/Intent;Landroid/os/UserHandle;Ljava/lang/String;Landroid/content/BroadcastReceiver;Landroid/os/Handler;ILjava/lang/String;Landroid/os/Bundle;)V
+
+    new-instance v0, Landroid/content/Intent;
+
+    const-string v1, "com.oneplus.chargingpilar.SCREEN_ON"
+
+    invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
+
+    const-string v1, "com.oneplus.chargingpilar"
+
+    invoke-virtual {v0, v1}, Landroid/content/Intent;->setPackage(Ljava/lang/String;)Landroid/content/Intent;
+
+    iget-object v1, p0, Lcom/android/server/power/Notifier;->mContext:Landroid/content/Context;
+
+    invoke-virtual {v1, v0}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V
 
     goto :goto_0
 

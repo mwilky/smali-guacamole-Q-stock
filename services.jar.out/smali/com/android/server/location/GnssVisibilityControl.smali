@@ -303,18 +303,6 @@
 
     move-result-object v3
 
-    new-instance v5, Landroid/content/Intent;
-
-    invoke-direct {v5}, Landroid/content/Intent;-><init>()V
-
-    invoke-static {p0, v4, v5, v4}, Landroid/app/PendingIntent;->getBroadcast(Landroid/content/Context;ILandroid/content/Intent;I)Landroid/app/PendingIntent;
-
-    move-result-object v4
-
-    invoke-virtual {v3, v4}, Landroid/app/Notification$Builder;->setContentIntent(Landroid/app/PendingIntent;)Landroid/app/Notification$Builder;
-
-    move-result-object v3
-
     invoke-virtual {v3}, Landroid/app/Notification$Builder;->build()Landroid/app/Notification;
 
     move-result-object v3

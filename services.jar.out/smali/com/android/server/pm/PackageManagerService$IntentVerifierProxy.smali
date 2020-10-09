@@ -545,7 +545,7 @@
 
     const/4 v12, -0x1
 
-    if-eq v11, v12, :cond_f
+    if-eq v11, v12, :cond_e
 
     iget-object v12, v1, Lcom/android/server/pm/PackageManagerService$IntentVerifierProxy;->this$0:Lcom/android/server/pm/PackageManagerService;
 
@@ -559,55 +559,16 @@
 
     const/4 v14, 0x0
 
-    sget-boolean v15, Lcom/android/server/pm/PackageManagerService;->DEBUG_DOMAIN_VERIFICATION:Z
+    if-eqz v12, :cond_a
 
-    if-eqz v15, :cond_5
+    if-eq v12, v8, :cond_9
 
-    const-string v15, "PackageManager"
-
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v8, "Updating IntentFilterVerificationInfo for package "
-
-    invoke-virtual {v0, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string v8, " verificationId:"
-
-    invoke-virtual {v0, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    const-string v8, " verified="
-
-    invoke-virtual {v0, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0, v4}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-static {v15, v0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    :cond_5
-    if-eqz v12, :cond_b
-
-    const/4 v0, 0x1
-
-    if-eq v12, v0, :cond_a
-
-    const/4 v0, 0x2
-
-    if-eq v12, v0, :cond_6
+    if-eq v12, v0, :cond_5
 
     goto/16 :goto_3
 
-    :cond_6
-    if-nez v4, :cond_d
+    :cond_5
+    if-nez v4, :cond_c
 
     invoke-static {}, Lcom/android/server/SystemConfig;->getInstance()Lcom/android/server/SystemConfig;
 
@@ -621,13 +582,13 @@
 
     move-result v15
 
-    if-nez v15, :cond_8
+    if-nez v15, :cond_7
 
     const/4 v14, 0x1
 
     sget-boolean v15, Lcom/android/server/pm/PackageManagerService;->DEBUG_DOMAIN_VERIFICATION:Z
 
-    if-eqz v15, :cond_7
+    if-eqz v15, :cond_6
 
     const-string v15, "PackageManager"
 
@@ -639,17 +600,17 @@
 
     goto :goto_2
 
-    :cond_7
+    :cond_6
     move-object/from16 v16, v0
 
     goto :goto_2
 
-    :cond_8
+    :cond_7
     move-object/from16 v16, v0
 
     sget-boolean v0, Lcom/android/server/pm/PackageManagerService;->DEBUG_DOMAIN_VERIFICATION:Z
 
-    if-eqz v0, :cond_9
+    if-eqz v0, :cond_8
 
     const-string v0, "PackageManager"
 
@@ -673,30 +634,30 @@
 
     invoke-static {v0, v2}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    :cond_9
+    :cond_8
     :goto_2
     goto :goto_3
 
-    :cond_a
-    if-eqz v4, :cond_d
-
-    const/4 v13, 0x2
-
-    const/4 v14, 0x1
-
-    goto :goto_3
-
-    :cond_b
+    :cond_9
     if-eqz v4, :cond_c
 
     const/4 v13, 0x2
 
-    :cond_c
+    const/4 v14, 0x1
+
+    goto :goto_3
+
+    :cond_a
+    if-eqz v4, :cond_b
+
+    const/4 v13, 0x2
+
+    :cond_b
     const/4 v14, 0x1
 
     sget-boolean v0, Lcom/android/server/pm/PackageManagerService;->DEBUG_DOMAIN_VERIFICATION:Z
 
-    if-eqz v0, :cond_d
+    if-eqz v0, :cond_c
 
     const-string v0, "PackageManager"
 
@@ -722,9 +683,9 @@
 
     invoke-static {v0, v2}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    :cond_d
+    :cond_c
     :goto_3
-    if-eqz v14, :cond_e
+    if-eqz v14, :cond_d
 
     iget-object v0, v1, Lcom/android/server/pm/PackageManagerService$IntentVerifierProxy;->this$0:Lcom/android/server/pm/PackageManagerService;
 
@@ -736,10 +697,10 @@
 
     invoke-virtual {v0, v11}, Lcom/android/server/pm/PackageManagerService;->scheduleWritePackageRestrictionsLocked(I)V
 
-    :cond_e
+    :cond_d
     goto :goto_4
 
-    :cond_f
+    :cond_e
     const-string v0, "PackageManager"
 
     const-string v2, "autoVerify ignored when installing for all users"

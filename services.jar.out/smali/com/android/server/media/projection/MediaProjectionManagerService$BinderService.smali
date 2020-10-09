@@ -198,6 +198,12 @@
 
     move-object v2, v14
 
+    invoke-static {}, Landroid/os/Binder;->getCallingPid()I
+
+    move-result v3
+
+    invoke-virtual {v2, v3}, Lcom/android/server/media/projection/MediaProjectionManagerService$MediaProjection;->setMediaProjectPid(I)V
+
     if-eqz p4, :cond_0
 
     iget-object v3, v1, Lcom/android/server/media/projection/MediaProjectionManagerService$BinderService;->this$0:Lcom/android/server/media/projection/MediaProjectionManagerService;

@@ -16,6 +16,17 @@
 .method public abstract init(Lcom/android/server/wm/WindowManagerService;Landroid/content/Context;)V
 .end method
 
+.method public abstract onRecordingConfigChanged(Ljava/util/List;)V
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/List<",
+            "Landroid/media/AudioRecordingConfiguration;",
+            ">;)V"
+        }
+    .end annotation
+.end method
+
 .method public abstract onSetDensityForUser(II)V
 .end method
 
@@ -26,4 +37,7 @@
 .end method
 
 .method public abstract updateGlobalModeId(I)I
+.end method
+
+.method public abstract updateInputMethod(Z)V
 .end method

@@ -1690,7 +1690,7 @@
 .end method
 
 .method public postNotification()V
-    .locals 14
+    .locals 15
 
     iget-object v0, p0, Lcom/android/server/am/ServiceRecord;->appInfo:Landroid/content/pm/ApplicationInfo;
 
@@ -1698,7 +1698,7 @@
 
     iget-object v1, p0, Lcom/android/server/am/ServiceRecord;->app:Lcom/android/server/am/ProcessRecord;
 
-    iget v8, v1, Lcom/android/server/am/ProcessRecord;->pid:I
+    iget v9, v1, Lcom/android/server/am/ProcessRecord;->pid:I
 
     iget v1, p0, Lcom/android/server/am/ServiceRecord;->foregroundId:I
 
@@ -1708,35 +1708,37 @@
 
     if-eqz v1, :cond_0
 
-    iget-object v9, p0, Lcom/android/server/am/ServiceRecord;->packageName:Ljava/lang/String;
+    iget-object v10, p0, Lcom/android/server/am/ServiceRecord;->packageName:Ljava/lang/String;
 
-    iget v10, p0, Lcom/android/server/am/ServiceRecord;->foregroundId:I
+    iget v11, p0, Lcom/android/server/am/ServiceRecord;->foregroundId:I
 
-    iget-object v11, p0, Lcom/android/server/am/ServiceRecord;->foregroundNoti:Landroid/app/Notification;
+    iget-object v12, p0, Lcom/android/server/am/ServiceRecord;->foregroundNoti:Landroid/app/Notification;
+
+    move-object v8, p0
 
     iget-object v1, p0, Lcom/android/server/am/ServiceRecord;->ams:Lcom/android/server/am/ActivityManagerService;
 
-    iget-object v12, v1, Lcom/android/server/am/ActivityManagerService;->mHandler:Lcom/android/server/am/ActivityManagerService$MainHandler;
+    iget-object v13, v1, Lcom/android/server/am/ActivityManagerService;->mHandler:Lcom/android/server/am/ActivityManagerService$MainHandler;
 
-    new-instance v13, Lcom/android/server/am/ServiceRecord$1;
+    new-instance v14, Lcom/android/server/am/ServiceRecord$1;
 
-    move-object v1, v13
+    move-object v1, v14
 
     move-object v2, p0
 
-    move-object v3, v11
+    move-object v3, v12
 
-    move-object v4, v9
+    move-object v4, v10
 
     move v5, v0
 
-    move v6, v8
+    move v6, v9
 
-    move v7, v10
+    move v7, v11
 
-    invoke-direct/range {v1 .. v7}, Lcom/android/server/am/ServiceRecord$1;-><init>(Lcom/android/server/am/ServiceRecord;Landroid/app/Notification;Ljava/lang/String;III)V
+    invoke-direct/range {v1 .. v8}, Lcom/android/server/am/ServiceRecord$1;-><init>(Lcom/android/server/am/ServiceRecord;Landroid/app/Notification;Ljava/lang/String;IIILcom/android/server/am/ServiceRecord;)V
 
-    invoke-virtual {v12, v13}, Lcom/android/server/am/ActivityManagerService$MainHandler;->post(Ljava/lang/Runnable;)Z
+    invoke-virtual {v13, v14}, Lcom/android/server/am/ActivityManagerService$MainHandler;->post(Ljava/lang/Runnable;)Z
 
     :cond_0
     return-void

@@ -1428,6 +1428,10 @@
 
     invoke-virtual {v3, v4, v0}, Landroid/os/Handler;->obtainMessage(ILjava/lang/Object;)Landroid/os/Message;
 
+    move-result-object v3
+
+    invoke-virtual {v3}, Landroid/os/Message;->sendToTarget()V
+
     return-void
 .end method
 
