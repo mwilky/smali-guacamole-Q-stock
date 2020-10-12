@@ -4,8 +4,6 @@
 
 
 # static fields
-.field public static final aod_config_showAmpm:I = 0x7f050004
-
 .field public static final config_alwaysExpandNonGroupedNotifications:I = 0x7f050005
 
 .field public static final config_alwaysShowTypeIcon:I = 0x7f050006

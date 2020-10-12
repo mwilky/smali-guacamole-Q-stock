@@ -1411,7 +1411,7 @@
     :goto_0
     iput-boolean v0, p0, Lcom/android/systemui/statusbar/policy/BatteryControllerImpl;->mPluggedIn:Z
 
-    const-string v0, "status"
+    const-string/jumbo v0, "status"
 
     invoke-virtual {p2, v0, v2}, Landroid/content/Intent;->getIntExtra(Ljava/lang/String;I)I
 

@@ -399,21 +399,44 @@
 
     if-eqz v4, :cond_b
 
+    const/4 v1, 0x0
+
     if-ne v0, v8, :cond_8
 
-    iget-object v0, p0, Lcom/oneplus/aod/OpAodNotificationIconAreaController;->mContext:Landroid/content/Context;
+    :try_start_0
+    new-instance v0, Landroid/graphics/fonts/Font$Builder;
 
-    sget v1, Lcom/android/systemui/R$font;->oneplus_aod_font:I
+    iget-object v3, p0, Lcom/oneplus/aod/OpAodNotificationIconAreaController;->mContext:Landroid/content/Context;
 
-    invoke-static {v0, v1}, Landroid/support/v4/content/res/ResourcesCompat;->getFont(Landroid/content/Context;I)Landroid/graphics/Typeface;
+    invoke-virtual {v3}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v3
+
+    sget v7, Lcom/android/systemui/R$font;->neuehaasgrotdispround35thin:I
+
+    invoke-direct {v0, v3, v7}, Landroid/graphics/fonts/Font$Builder;-><init>(Landroid/content/res/Resources;I)V
+
+    invoke-virtual {v0}, Landroid/graphics/fonts/Font$Builder;->build()Landroid/graphics/fonts/Font;
 
     move-result-object v0
 
-    const/16 v1, 0x190
+    new-instance v3, Landroid/graphics/fonts/FontFamily$Builder;
 
-    invoke-static {v0, v1, v2}, Landroid/graphics/Typeface;->create(Landroid/graphics/Typeface;IZ)Landroid/graphics/Typeface;
+    invoke-direct {v3, v0}, Landroid/graphics/fonts/FontFamily$Builder;-><init>(Landroid/graphics/fonts/Font;)V
+
+    invoke-virtual {v3}, Landroid/graphics/fonts/FontFamily$Builder;->build()Landroid/graphics/fonts/FontFamily;
 
     move-result-object v0
+
+    new-instance v3, Landroid/graphics/Typeface$CustomFallbackBuilder;
+
+    invoke-direct {v3, v0}, Landroid/graphics/Typeface$CustomFallbackBuilder;-><init>(Landroid/graphics/fonts/FontFamily;)V
+
+    invoke-virtual {v3}, Landroid/graphics/Typeface$CustomFallbackBuilder;->build()Landroid/graphics/Typeface;
+
+    move-result-object v1
+    :try_end_0
+    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
 
     goto :goto_3
 
@@ -426,19 +449,20 @@
 
     invoke-static {v5}, Lcom/oneplus/util/OpUtils;->getMclTypeface(I)Landroid/graphics/Typeface;
 
-    move-result-object v0
+    move-result-object v1
 
     goto :goto_3
 
     :cond_9
-    sget-object v0, Landroid/graphics/Typeface;->DEFAULT:Landroid/graphics/Typeface;
+    sget-object v1, Landroid/graphics/Typeface;->DEFAULT:Landroid/graphics/Typeface;
 
+    :catch_0
     :goto_3
-    if-eqz v0, :cond_a
+    if-eqz v1, :cond_a
 
-    iget-object v1, p0, Lcom/oneplus/aod/OpAodNotificationIconAreaController;->mMoreIcon:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/oneplus/aod/OpAodNotificationIconAreaController;->mMoreIcon:Landroid/widget/TextView;
 
-    invoke-virtual {v1, v0}, Landroid/widget/TextView;->setTypeface(Landroid/graphics/Typeface;)V
+    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setTypeface(Landroid/graphics/Typeface;)V
 
     :cond_a
     iget-object v0, p0, Lcom/oneplus/aod/OpAodNotificationIconAreaController;->mMoreIcon:Landroid/widget/TextView;

@@ -440,41 +440,47 @@
 
     goto :goto_9
 
-    :goto_a
     :sswitch_a
-    iget-object v0, p0, Lcom/android/systemui/statusbar/CommandQueue$H;->this$0:Lcom/android/systemui/statusbar/CommandQueue;
+    iget-object v0, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
 
-    invoke-static {v0}, Lcom/android/systemui/statusbar/CommandQueue;->access$100(Lcom/android/systemui/statusbar/CommandQueue;)Ljava/util/ArrayList;
+    check-cast v0, [Ljava/lang/String;
 
-    move-result-object v0
+    move v3, v1
 
-    invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
+    :goto_a
+    iget-object v4, p0, Lcom/android/systemui/statusbar/CommandQueue$H;->this$0:Lcom/android/systemui/statusbar/CommandQueue;
 
-    move-result v0
+    invoke-static {v4}, Lcom/android/systemui/statusbar/CommandQueue;->access$100(Lcom/android/systemui/statusbar/CommandQueue;)Ljava/util/ArrayList;
 
-    if-ge v1, v0, :cond_14
+    move-result-object v4
 
-    iget-object v0, p0, Lcom/android/systemui/statusbar/CommandQueue$H;->this$0:Lcom/android/systemui/statusbar/CommandQueue;
+    invoke-virtual {v4}, Ljava/util/ArrayList;->size()I
 
-    invoke-static {v0}, Lcom/android/systemui/statusbar/CommandQueue;->access$100(Lcom/android/systemui/statusbar/CommandQueue;)Ljava/util/ArrayList;
+    move-result v4
 
-    move-result-object v0
+    if-ge v3, v4, :cond_14
 
-    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+    iget-object v4, p0, Lcom/android/systemui/statusbar/CommandQueue$H;->this$0:Lcom/android/systemui/statusbar/CommandQueue;
 
-    move-result-object v0
+    invoke-static {v4}, Lcom/android/systemui/statusbar/CommandQueue;->access$100(Lcom/android/systemui/statusbar/CommandQueue;)Ljava/util/ArrayList;
 
-    check-cast v0, Lcom/android/systemui/statusbar/CommandQueue$Callbacks;
+    move-result-object v4
 
-    iget v2, p1, Landroid/os/Message;->arg1:I
+    invoke-virtual {v4, v3}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
-    iget-object v3, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
+    move-result-object v4
 
-    check-cast v3, Ljava/lang/String;
+    check-cast v4, Lcom/android/systemui/statusbar/CommandQueue$Callbacks;
 
-    invoke-interface {v0, v2, v3}, Lcom/android/systemui/statusbar/CommandQueue$Callbacks;->notifyNavBarColorChanged(ILjava/lang/String;)V
+    iget v5, p1, Landroid/os/Message;->arg1:I
 
-    add-int/lit8 v1, v1, 0x1
+    aget-object v6, v0, v1
+
+    aget-object v7, v0, v2
+
+    invoke-interface {v4, v5, v6, v7}, Lcom/android/systemui/statusbar/CommandQueue$Callbacks;->notifyNavBarColorChanged(ILjava/lang/String;Ljava/lang/String;)V
+
+    add-int/lit8 v3, v3, 0x1
 
     goto :goto_a
 
@@ -2344,6 +2350,8 @@
     :cond_14
     :goto_44
     return-void
+
+    nop
 
     :sswitch_data_0
     .sparse-switch

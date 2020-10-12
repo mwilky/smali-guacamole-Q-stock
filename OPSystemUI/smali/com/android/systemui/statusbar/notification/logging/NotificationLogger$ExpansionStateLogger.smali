@@ -71,7 +71,7 @@
 
     iput-object p1, p0, Lcom/android/systemui/statusbar/notification/logging/NotificationLogger$ExpansionStateLogger;->mUiOffloadThread:Lcom/android/systemui/UiOffloadThread;
 
-    const-string p1, "statusbar"
+    const-string/jumbo p1, "statusbar"
 
     invoke-static {p1}, Landroid/os/ServiceManager;->getService(Ljava/lang/String;)Landroid/os/IBinder;
 

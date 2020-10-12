@@ -254,7 +254,7 @@
 
     move-result-object v4
 
-    const-string v5, "status_bar_height"
+    const-string/jumbo v5, "status_bar_height"
 
     const-string v6, "dimen"
 

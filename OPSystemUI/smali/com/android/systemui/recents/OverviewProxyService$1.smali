@@ -109,6 +109,64 @@
 
 
 # virtual methods
+.method public getFullScreenNavBarInset(Ljava/lang/String;)I
+    .locals 4
+
+    const-string v0, "getFullScreenNavBarInset"
+
+    invoke-direct {p0, v0}, Lcom/android/systemui/recents/OverviewProxyService$1;->verifyCaller(Ljava/lang/String;)Z
+
+    move-result v0
+
+    const/4 v1, 0x0
+
+    if-nez v0, :cond_0
+
+    return v1
+
+    :cond_0
+    invoke-static {}, Landroid/os/Binder;->clearCallingIdentity()J
+
+    move-result-wide v2
+
+    :try_start_0
+    invoke-static {p1}, Lcom/oneplus/systemui/OpSystemUIInjector;->isInNavGestureFullscreenList(Ljava/lang/String;)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_1
+
+    iget-object p0, p0, Lcom/android/systemui/recents/OverviewProxyService$1;->this$0:Lcom/android/systemui/recents/OverviewProxyService;
+
+    invoke-static {p0}, Lcom/android/systemui/recents/OverviewProxyService;->access$200(Lcom/android/systemui/recents/OverviewProxyService;)Landroid/content/Context;
+
+    move-result-object p0
+
+    invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object p0
+
+    const p1, 0x1050188
+
+    invoke-virtual {p0, p1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+
+    move-result v1
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    :cond_1
+    invoke-static {v2, v3}, Landroid/os/Binder;->restoreCallingIdentity(J)V
+
+    return v1
+
+    :catchall_0
+    move-exception p0
+
+    invoke-static {v2, v3}, Landroid/os/Binder;->restoreCallingIdentity(J)V
+
+    throw p0
+.end method
+
 .method public getNonMinimizedSplitScreenSecondaryBounds()Landroid/graphics/Rect;
     .locals 4
 

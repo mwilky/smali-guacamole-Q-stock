@@ -598,7 +598,7 @@
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/StatusIconContainer;->mOpTag:Ljava/lang/String;
 
-    const-string v1, "status_icon_container"
+    const-string/jumbo v1, "status_icon_container"
 
     invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 

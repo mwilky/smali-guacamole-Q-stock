@@ -1011,7 +1011,7 @@
 
     const-string v0, "OpPreventModeCtrl"
 
-    const-string v1, "stopPreventMode"
+    const-string/jumbo v1, "stopPreventMode"
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 

@@ -640,6 +640,7 @@ If you resume, charges may apply for data usage."</string>
     <string name="drag_to_rearrange_tiles">Hold and drag to rearrange tiles</string>
     <string name="drag_to_remove_disabled">You need at least %1$d tiles</string>
     <string name="drag_to_remove_tiles">Drag here to remove</string>
+    <string name="earphone_support_battery_info">"L: %1$s  R: %2$s"</string>
     <string name="edit_mode_hint">Drag tiles to rearrange. Tap to show or hide.</string>
     <string name="ellipsis">…</string>
     <string name="empty_shade_text">No notifications</string>

@@ -176,7 +176,7 @@
 .end method
 
 .method public onTimeChanged()V
-    .locals 8
+    .locals 7
 
     iget-object v0, p0, Lcom/oneplus/aod/OpOneRedStyleClock;->mTime:Ljava/util/Calendar;
 
@@ -218,52 +218,64 @@
 
     invoke-direct {v1, v0}, Landroid/text/SpannableString;-><init>(Ljava/lang/CharSequence;)V
 
-    const-string v2, ":"
+    const/4 v2, 0x0
 
-    invoke-virtual {v0, v2}, Ljava/lang/String;->indexOf(Ljava/lang/String;)I
-
-    move-result v2
-
-    const/4 v3, 0x0
-
-    move v4, v3
+    move v3, v2
 
     :goto_1
-    if-ge v4, v2, :cond_2
+    const/4 v4, 0x2
 
-    const/16 v5, 0x31
+    if-ge v3, v4, :cond_2
 
-    invoke-virtual {v0, v4}, Ljava/lang/String;->charAt(I)C
+    const/16 v4, 0x31
 
-    move-result v6
+    invoke-virtual {v0, v3}, Ljava/lang/String;->charAt(I)C
 
-    if-ne v5, v6, :cond_1
+    move-result v5
 
-    new-instance v5, Landroid/text/style/ForegroundColorSpan;
+    if-ne v4, v5, :cond_1
 
-    iget v6, p0, Lcom/oneplus/aod/OpOneRedStyleClock;->mSpecialColor:I
+    new-instance v4, Landroid/text/style/ForegroundColorSpan;
 
-    invoke-direct {v5, v6}, Landroid/text/style/ForegroundColorSpan;-><init>(I)V
+    iget v5, p0, Lcom/oneplus/aod/OpOneRedStyleClock;->mSpecialColor:I
 
-    add-int/lit8 v6, v4, 0x1
+    invoke-direct {v4, v5}, Landroid/text/style/ForegroundColorSpan;-><init>(I)V
 
-    const/16 v7, 0x21
+    add-int/lit8 v5, v3, 0x1
 
-    invoke-virtual {v1, v5, v4, v6, v7}, Landroid/text/SpannableString;->setSpan(Ljava/lang/Object;III)V
+    const/16 v6, 0x21
+
+    invoke-virtual {v1, v4, v3, v5, v6}, Landroid/text/SpannableString;->setSpan(Ljava/lang/Object;III)V
 
     :cond_1
-    add-int/lit8 v4, v4, 0x1
+    add-int/lit8 v3, v3, 0x1
 
     goto :goto_1
 
     :cond_2
-    new-array v0, v3, [Ljava/lang/CharSequence;
+    new-array v0, v2, [Ljava/lang/CharSequence;
 
     invoke-static {v1, v0}, Landroid/text/TextUtils;->expandTemplate(Ljava/lang/CharSequence;[Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
 
     move-result-object v0
 
     invoke-virtual {p0, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    return-void
+.end method
+
+.method public setFormat12Hour(Ljava/lang/CharSequence;)V
+    .locals 0
+
+    iput-object p1, p0, Lcom/oneplus/aod/OpOneRedStyleClock;->mFormat12:Ljava/lang/CharSequence;
+
+    return-void
+.end method
+
+.method public setFormat24Hour(Ljava/lang/CharSequence;)V
+    .locals 0
+
+    iput-object p1, p0, Lcom/oneplus/aod/OpOneRedStyleClock;->mFormat24:Ljava/lang/CharSequence;
 
     return-void
 .end method

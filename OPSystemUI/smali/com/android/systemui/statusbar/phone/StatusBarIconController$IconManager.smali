@@ -49,7 +49,7 @@
 
     iput-boolean v1, p0, Lcom/android/systemui/statusbar/phone/StatusBarIconController$IconManager;->mDemoable:Z
 
-    const-string v1, "statusbar"
+    const-string/jumbo v1, "statusbar"
 
     iput-object v1, p0, Lcom/android/systemui/statusbar/phone/StatusBarIconController$IconManager;->mTag:Ljava/lang/String;
 

@@ -15,6 +15,14 @@
 
 
 # virtual methods
+.method public abstract getFullScreenNavBarInset(Ljava/lang/String;)I
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Landroid/os/RemoteException;
+        }
+    .end annotation
+.end method
+
 .method public abstract getNonMinimizedSplitScreenSecondaryBounds()Landroid/graphics/Rect;
     .annotation system Ldalvik/annotation/Throws;
         value = {

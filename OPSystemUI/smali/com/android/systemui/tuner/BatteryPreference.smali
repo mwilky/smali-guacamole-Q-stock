@@ -84,7 +84,7 @@
 
     const/4 v1, 0x0
 
-    const-string v2, "status_bar_show_battery_percent"
+    const-string/jumbo v2, "status_bar_show_battery_percent"
 
     invoke-static {v0, v2, v1}, Landroid/provider/Settings$System;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
 
@@ -232,7 +232,7 @@
 
     move-result-object v1
 
-    const-string v2, "status_bar_show_battery_percent"
+    const-string/jumbo v2, "status_bar_show_battery_percent"
 
     invoke-static {v1, v2, v0}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 

@@ -81,6 +81,18 @@
     goto :goto_0
 
     :pswitch_1
+    iget-object v0, p0, Lcom/oneplus/aod/OpClockViewCtrl;->mRedClockView:Lcom/oneplus/aod/OpOneRedStyleClock;
+
+    sget-object v1, Lcom/oneplus/aod/OpDateTimeView$Patterns;->clockView12:Ljava/lang/String;
+
+    invoke-virtual {v0, v1}, Lcom/oneplus/aod/OpOneRedStyleClock;->setFormat12Hour(Ljava/lang/CharSequence;)V
+
+    iget-object v0, p0, Lcom/oneplus/aod/OpClockViewCtrl;->mRedClockView:Lcom/oneplus/aod/OpOneRedStyleClock;
+
+    sget-object v1, Lcom/oneplus/aod/OpDateTimeView$Patterns;->clockView24:Ljava/lang/String;
+
+    invoke-virtual {v0, v1}, Lcom/oneplus/aod/OpOneRedStyleClock;->setFormat24Hour(Ljava/lang/CharSequence;)V
+
     iget-object p0, p0, Lcom/oneplus/aod/OpClockViewCtrl;->mRedClockView:Lcom/oneplus/aod/OpOneRedStyleClock;
 
     invoke-virtual {p0}, Lcom/oneplus/aod/OpOneRedStyleClock;->onTimeChanged()V
@@ -172,7 +184,7 @@
 
     iget-object v0, p0, Lcom/oneplus/aod/OpClockViewCtrl;->mDateView:Lcom/oneplus/aod/OpTextDate;
 
-    invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setVisibility(I)V
 
     iget-object v0, p0, Lcom/oneplus/aod/OpClockViewCtrl;->mRedClockView:Lcom/oneplus/aod/OpOneRedStyleClock;
 
@@ -224,7 +236,7 @@
 
     iget-object v0, p0, Lcom/oneplus/aod/OpClockViewCtrl;->mDateView:Lcom/oneplus/aod/OpTextDate;
 
-    invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setVisibility(I)V
 
     iget-object v0, p0, Lcom/oneplus/aod/OpClockViewCtrl;->mRedClockView:Lcom/oneplus/aod/OpOneRedStyleClock;
 
@@ -251,7 +263,7 @@
 
     iget-object v0, p0, Lcom/oneplus/aod/OpClockViewCtrl;->mDateView:Lcom/oneplus/aod/OpTextDate;
 
-    invoke-virtual {v0, v2}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v0, v2}, Landroid/widget/TextView;->setVisibility(I)V
 
     iget-object v0, p0, Lcom/oneplus/aod/OpClockViewCtrl;->mRedClockView:Lcom/oneplus/aod/OpOneRedStyleClock;
 
@@ -289,7 +301,7 @@
 
     iget-object v0, p0, Lcom/oneplus/aod/OpClockViewCtrl;->mDateView:Lcom/oneplus/aod/OpTextDate;
 
-    invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setVisibility(I)V
 
     iget-object v0, p0, Lcom/oneplus/aod/OpClockViewCtrl;->mRedClockView:Lcom/oneplus/aod/OpOneRedStyleClock;
 
@@ -313,7 +325,7 @@
 
     iget-object v0, p0, Lcom/oneplus/aod/OpClockViewCtrl;->mDateView:Lcom/oneplus/aod/OpTextDate;
 
-    invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setVisibility(I)V
 
     iget-object v0, p0, Lcom/oneplus/aod/OpClockViewCtrl;->mRedClockView:Lcom/oneplus/aod/OpOneRedStyleClock;
 
@@ -337,7 +349,7 @@
 
     iget-object v0, p0, Lcom/oneplus/aod/OpClockViewCtrl;->mDateView:Lcom/oneplus/aod/OpTextDate;
 
-    invoke-virtual {v0, v2}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v0, v2}, Landroid/widget/TextView;->setVisibility(I)V
 
     iget-object v0, p0, Lcom/oneplus/aod/OpClockViewCtrl;->mRedClockView:Lcom/oneplus/aod/OpOneRedStyleClock;
 
@@ -381,21 +393,45 @@
 
     if-ne v0, v1, :cond_0
 
-    iget-object v0, p0, Lcom/oneplus/aod/OpClockViewCtrl;->mContext:Landroid/content/Context;
+    :try_start_0
+    new-instance v0, Landroid/graphics/fonts/Font$Builder;
 
-    sget v1, Lcom/android/systemui/R$font;->oneplus_aod_font:I
+    iget-object v1, p0, Lcom/oneplus/aod/OpClockViewCtrl;->mContext:Landroid/content/Context;
 
-    invoke-static {v0, v1}, Landroid/support/v4/content/res/ResourcesCompat;->getFont(Landroid/content/Context;I)Landroid/graphics/Typeface;
+    invoke-virtual {v1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v1
+
+    sget v2, Lcom/android/systemui/R$font;->neuehaasgrotdispround35thin:I
+
+    invoke-direct {v0, v1, v2}, Landroid/graphics/fonts/Font$Builder;-><init>(Landroid/content/res/Resources;I)V
+
+    invoke-virtual {v0}, Landroid/graphics/fonts/Font$Builder;->build()Landroid/graphics/fonts/Font;
 
     move-result-object v0
 
-    const/16 v1, 0x190
+    new-instance v1, Landroid/graphics/fonts/FontFamily$Builder;
 
-    const/4 v2, 0x0
+    invoke-direct {v1, v0}, Landroid/graphics/fonts/FontFamily$Builder;-><init>(Landroid/graphics/fonts/Font;)V
 
-    invoke-static {v0, v1, v2}, Landroid/graphics/Typeface;->create(Landroid/graphics/Typeface;IZ)Landroid/graphics/Typeface;
+    invoke-virtual {v1}, Landroid/graphics/fonts/FontFamily$Builder;->build()Landroid/graphics/fonts/FontFamily;
 
     move-result-object v0
+
+    new-instance v1, Landroid/graphics/Typeface$CustomFallbackBuilder;
+
+    invoke-direct {v1, v0}, Landroid/graphics/Typeface$CustomFallbackBuilder;-><init>(Landroid/graphics/fonts/FontFamily;)V
+
+    invoke-virtual {v1}, Landroid/graphics/Typeface$CustomFallbackBuilder;->build()Landroid/graphics/Typeface;
+
+    move-result-object v0
+    :try_end_0
+    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
+
+    goto :goto_0
+
+    :catch_0
+    const/4 v0, 0x0
 
     goto :goto_0
 

@@ -46,7 +46,7 @@
 
     iput p1, p0, Lcom/android/systemui/statusbar/policy/BatteryControllerImpl$SettingObserver;->BATTERY_PERCENT_STYLE:I
 
-    const-string p1, "status_bar_show_battery_percent"
+    const-string/jumbo p1, "status_bar_show_battery_percent"
 
     invoke-static {p1}, Landroid/provider/Settings$System;->getUriFor(Ljava/lang/String;)Landroid/net/Uri;
 
@@ -54,7 +54,7 @@
 
     iput-object p1, p0, Lcom/android/systemui/statusbar/policy/BatteryControllerImpl$SettingObserver;->SHOW_BATTERY_PERCENT:Landroid/net/Uri;
 
-    const-string p1, "status_bar_battery_style"
+    const-string/jumbo p1, "status_bar_battery_style"
 
     invoke-static {p1}, Landroid/provider/Settings$System;->getUriFor(Ljava/lang/String;)Landroid/net/Uri;
 
@@ -120,7 +120,7 @@
 
     move-result-object v0
 
-    const-string v1, "status_bar_show_battery_percent"
+    const-string/jumbo v1, "status_bar_show_battery_percent"
 
     const/4 v2, 0x1
 
@@ -179,7 +179,7 @@
 
     move-result v6
 
-    const-string v7, "status_bar_battery_style"
+    const-string/jumbo v7, "status_bar_battery_style"
 
     invoke-static {v0, v7, v3, v6}, Landroid/provider/Settings$System;->getIntForUser(Landroid/content/ContentResolver;Ljava/lang/String;II)I
 

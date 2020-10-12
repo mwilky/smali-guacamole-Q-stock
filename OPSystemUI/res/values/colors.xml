@@ -767,6 +767,8 @@
     <color name="op_error_color_material_light">#ffd50000</color>
     <color name="op_fingerprint_dim_color_default">#66000000</color>
     <color name="op_home_handle_dark_color">#b3858585</color>
+    <color name="op_home_handle_fullscreen_dark_color">#4d858585</color>
+    <color name="op_home_handle_fullscreen_light_color">#4dffffff</color>
     <color name="op_home_handle_light_color">#99ffffff</color>
     <color name="op_menu_background_dark">@color/oneplus_contorl_bg_color_menu_dark</color>
     <color name="op_menu_background_light">@color/oneplus_contorl_bg_color_menu_light</color>

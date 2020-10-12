@@ -195,7 +195,7 @@
     :goto_0
     iput-object p4, p0, Lcom/android/systemui/bubbles/BubbleController;->mSurfaceSynchronizer:Lcom/android/systemui/bubbles/BubbleStackView$SurfaceSynchronizer;
 
-    const-string p1, "statusbar"
+    const-string/jumbo p1, "statusbar"
 
     invoke-static {p1}, Landroid/os/ServiceManager;->getService(Ljava/lang/String;)Landroid/os/IBinder;
 

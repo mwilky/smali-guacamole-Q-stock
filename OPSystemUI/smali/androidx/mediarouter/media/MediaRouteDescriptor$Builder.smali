@@ -274,7 +274,7 @@
 
     iget-object v0, p0, Landroidx/mediarouter/media/MediaRouteDescriptor$Builder;->mBundle:Landroid/os/Bundle;
 
-    const-string v1, "status"
+    const-string/jumbo v1, "status"
 
     invoke-virtual {v0, v1, p1}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 

@@ -1418,6 +1418,15 @@
 
     invoke-interface {v0, p2, p1}, Ljava/util/List;->add(ILjava/lang/Object;)V
 
+    invoke-virtual {p1}, Landroid/widget/FrameLayout;->isAttachedToWindow()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    invoke-virtual {p0, p1}, Landroid/view/ViewGroup;->removeView(Landroid/view/View;)V
+
+    :cond_1
     invoke-virtual {p0, p1}, Landroid/view/ViewGroup;->addView(Landroid/view/View;)V
 
     iget-boolean v0, p0, Lcom/android/systemui/statusbar/notification/stack/NotificationChildrenContainer;->mUserLocked:Z
@@ -1428,6 +1437,15 @@
 
     move-result-object v0
 
+    invoke-virtual {v0}, Landroid/view/View;->isAttachedToWindow()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_2
+
+    invoke-virtual {p0, v0}, Landroid/view/ViewGroup;->removeView(Landroid/view/View;)V
+
+    :cond_2
     invoke-virtual {p0, v0}, Landroid/view/ViewGroup;->addView(Landroid/view/View;)V
 
     iget-object v1, p0, Lcom/android/systemui/statusbar/notification/stack/NotificationChildrenContainer;->mDividers:Ljava/util/List;
@@ -1446,13 +1464,13 @@
 
     move-result-object p0
 
-    if-eqz p0, :cond_1
+    if-eqz p0, :cond_3
 
     invoke-virtual {p0, p1}, Lcom/android/systemui/statusbar/notification/stack/ExpandableViewState;->cancelAnimations(Landroid/view/View;)V
 
     invoke-virtual {p1}, Lcom/android/systemui/statusbar/notification/row/ActivatableNotificationView;->cancelAppearDrawing()V
 
-    :cond_1
+    :cond_3
     return-void
 .end method
 

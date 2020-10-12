@@ -40,7 +40,14 @@
 
 .field private mNotificationScrollLayout:Landroid/view/ViewGroup;
 
+.field final mSettingsListener:Lcom/android/systemui/statusbar/NotificationListener$NotificationSettingsListener;
+    .annotation build Lcom/android/internal/annotations/VisibleForTesting;
+    .end annotation
+.end field
+
 .field private mShelfIcons:Lcom/android/systemui/statusbar/phone/NotificationIconContainer;
+
+.field private mShowLowPriority:Z
 
 .field private mStatusBar:Lcom/android/systemui/statusbar/phone/StatusBar;
 
@@ -75,6 +82,16 @@
 
     iput-object v0, p0, Lcom/android/systemui/statusbar/phone/NotificationIconAreaController;->mTintArea:Landroid/graphics/Rect;
 
+    const/4 v0, 0x1
+
+    iput-boolean v0, p0, Lcom/android/systemui/statusbar/phone/NotificationIconAreaController;->mShowLowPriority:Z
+
+    new-instance v0, Lcom/android/systemui/statusbar/phone/NotificationIconAreaController$1;
+
+    invoke-direct {v0, p0}, Lcom/android/systemui/statusbar/phone/NotificationIconAreaController$1;-><init>(Lcom/android/systemui/statusbar/phone/NotificationIconAreaController;)V
+
+    iput-object v0, p0, Lcom/android/systemui/statusbar/phone/NotificationIconAreaController;->mSettingsListener:Lcom/android/systemui/statusbar/NotificationListener$NotificationSettingsListener;
+
     iput-object p2, p0, Lcom/android/systemui/statusbar/phone/NotificationIconAreaController;->mStatusBar:Lcom/android/systemui/statusbar/phone/StatusBar;
 
     invoke-static {p1}, Lcom/android/internal/util/ContrastColorUtil;->getInstance(Landroid/content/Context;)Lcom/android/internal/util/ContrastColorUtil;
@@ -103,9 +120,37 @@
 
     iput-object p4, p0, Lcom/android/systemui/statusbar/phone/NotificationIconAreaController;->mMediaManager:Lcom/android/systemui/statusbar/NotificationMediaManager;
 
+    const-class p2, Lcom/android/systemui/statusbar/NotificationListener;
+
+    invoke-static {p2}, Lcom/android/systemui/Dependency;->get(Ljava/lang/Class;)Ljava/lang/Object;
+
+    move-result-object p2
+
+    check-cast p2, Lcom/android/systemui/statusbar/NotificationListener;
+
+    iget-object p3, p0, Lcom/android/systemui/statusbar/phone/NotificationIconAreaController;->mSettingsListener:Lcom/android/systemui/statusbar/NotificationListener$NotificationSettingsListener;
+
+    invoke-virtual {p2, p3}, Lcom/android/systemui/statusbar/NotificationListener;->addNotificationSettingsListener(Lcom/android/systemui/statusbar/NotificationListener$NotificationSettingsListener;)V
+
     invoke-virtual {p0, p1}, Lcom/android/systemui/statusbar/phone/NotificationIconAreaController;->initializeNotificationAreaViews(Landroid/content/Context;)V
 
     return-void
+.end method
+
+.method static synthetic access$002(Lcom/android/systemui/statusbar/phone/NotificationIconAreaController;Z)Z
+    .locals 0
+
+    iput-boolean p1, p0, Lcom/android/systemui/statusbar/phone/NotificationIconAreaController;->mShowLowPriority:Z
+
+    return p1
+.end method
+
+.method static synthetic access$100(Lcom/android/systemui/statusbar/phone/NotificationIconAreaController;)Landroid/view/ViewGroup;
+    .locals 0
+
+    iget-object p0, p0, Lcom/android/systemui/statusbar/phone/NotificationIconAreaController;->mNotificationScrollLayout:Landroid/view/ViewGroup;
+
+    return-object p0
 .end method
 
 .method private applyNotificationIconsTint()V
@@ -1235,7 +1280,7 @@
 
     iget-object v2, p0, Lcom/android/systemui/statusbar/phone/NotificationIconAreaController;->mNotificationIcons:Lcom/android/systemui/statusbar/phone/NotificationIconContainer;
 
-    const/4 v4, 0x0
+    iget-boolean v4, p0, Lcom/android/systemui/statusbar/phone/NotificationIconAreaController;->mShowLowPriority:Z
 
     const/4 v3, 0x0
 

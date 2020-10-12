@@ -171,7 +171,7 @@
 
     iput-object p6, p0, Lcom/android/systemui/statusbar/NotificationRemoteInputManager;->mMainHandler:Landroid/os/Handler;
 
-    const-string p2, "statusbar"
+    const-string/jumbo p2, "statusbar"
 
     invoke-static {p2}, Landroid/os/ServiceManager;->getService(Ljava/lang/String;)Landroid/os/IBinder;
 

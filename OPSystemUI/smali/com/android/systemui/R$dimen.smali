@@ -200,8 +200,6 @@
 
 .field public static final date_view_default_marginTop:I = 0x7f070153
 
-.field public static final date_view_font_base_line_y:I = 0x7f070155
-
 .field public static final date_view_font_size:I = 0x7f070156
 
 .field public static final date_view_marginTop:I = 0x7f070157

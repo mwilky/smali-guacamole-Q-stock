@@ -54,7 +54,7 @@
 
     move-result-object p0
 
-    const-string v0, "status_bar_height"
+    const-string/jumbo v0, "status_bar_height"
 
     const-string v1, "dimen"
 

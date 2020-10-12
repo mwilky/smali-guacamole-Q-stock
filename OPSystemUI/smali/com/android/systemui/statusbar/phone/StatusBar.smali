@@ -4871,7 +4871,7 @@
     :cond_d
     if-nez v0, :cond_e
 
-    const-string v3, "status"
+    const-string/jumbo v3, "status"
 
     invoke-virtual {p1, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -9845,7 +9845,7 @@
     return-void
 .end method
 
-.method public notifyNavBarColorChanged(ILjava/lang/String;)V
+.method public notifyNavBarColorChanged(ILjava/lang/String;Ljava/lang/String;)V
     .locals 1
 
     invoke-static {}, Lcom/oneplus/util/OpNavBarUtils;->isSupportCustomNavBar()Z
@@ -9856,7 +9856,7 @@
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/StatusBar;->mNavigationBarController:Lcom/android/systemui/statusbar/NavigationBarController;
 
-    invoke-virtual {v0, p1, p2}, Lcom/android/systemui/statusbar/NavigationBarController;->notifyNavBarColorChanged(ILjava/lang/String;)V
+    invoke-virtual {v0, p1, p2, p3}, Lcom/android/systemui/statusbar/NavigationBarController;->notifyNavBarColorChanged(ILjava/lang/String;Ljava/lang/String;)V
 
     iget-object p0, p0, Lcom/android/systemui/statusbar/phone/StatusBar;->mStatusBarView:Lcom/android/systemui/statusbar/phone/PhoneStatusBarView;
 
@@ -13866,7 +13866,7 @@
 
     iput-object v0, p0, Lcom/android/systemui/statusbar/phone/StatusBar;->mKeyguardUpdateMonitor:Lcom/android/keyguard/KeyguardUpdateMonitor;
 
-    const-string v0, "statusbar"
+    const-string/jumbo v0, "statusbar"
 
     invoke-static {v0}, Landroid/os/ServiceManager;->getService(Ljava/lang/String;)Landroid/os/IBinder;
 

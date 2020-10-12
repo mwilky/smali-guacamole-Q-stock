@@ -289,7 +289,7 @@
 
     move-result-object v3
 
-    const/4 v4, 0x1
+    const/high16 v4, 0x4000000
 
     invoke-static {p0, v6, v0, v4}, Landroid/app/PendingIntent;->getActivity(Landroid/content/Context;ILandroid/content/Intent;I)Landroid/app/PendingIntent;
 
@@ -307,7 +307,9 @@
 
     move-result-object p0
 
-    invoke-virtual {p0, v4}, Landroid/app/Notification$Builder;->setAutoCancel(Z)Landroid/app/Notification$Builder;
+    const/4 v0, 0x1
+
+    invoke-virtual {p0, v0}, Landroid/app/Notification$Builder;->setAutoCancel(Z)Landroid/app/Notification$Builder;
 
     move-result-object p0
 
@@ -315,7 +317,7 @@
 
     move-result-object p1
 
-    invoke-static {p1, v4}, Landroid/media/ThumbnailUtils;->createVideoThumbnail(Ljava/lang/String;I)Landroid/graphics/Bitmap;
+    invoke-static {p1, v0}, Landroid/media/ThumbnailUtils;->createVideoThumbnail(Ljava/lang/String;I)Landroid/graphics/Bitmap;
 
     move-result-object p1
 

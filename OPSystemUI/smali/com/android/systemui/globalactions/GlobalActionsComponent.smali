@@ -174,7 +174,7 @@
 .method public start()V
     .locals 2
 
-    const-string v0, "statusbar"
+    const-string/jumbo v0, "statusbar"
 
     invoke-static {v0}, Landroid/os/ServiceManager;->getService(Ljava/lang/String;)Landroid/os/IBinder;
 

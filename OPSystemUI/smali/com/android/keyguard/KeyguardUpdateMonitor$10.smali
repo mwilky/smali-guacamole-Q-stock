@@ -70,7 +70,7 @@
 
     const-string p1, "KeyguardUpdateMonitor"
 
-    const-string p2, "state stopped when interrupted"
+    const-string/jumbo p2, "state stopped when interrupted"
 
     invoke-static {p1, p2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 

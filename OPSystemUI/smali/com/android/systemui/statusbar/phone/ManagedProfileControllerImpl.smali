@@ -514,7 +514,7 @@
 
     iget-object v2, p0, Lcom/android/systemui/statusbar/phone/ManagedProfileControllerImpl;->mContext:Landroid/content/Context;
 
-    const-string v3, "statusbar"
+    const-string/jumbo v3, "statusbar"
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 

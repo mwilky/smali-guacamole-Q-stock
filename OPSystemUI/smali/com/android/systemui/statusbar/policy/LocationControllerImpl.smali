@@ -116,7 +116,7 @@
 
     iput-object p2, p0, Lcom/android/systemui/statusbar/policy/LocationControllerImpl;->mAppOpsManager:Landroid/app/AppOpsManager;
 
-    const-string p2, "statusbar"
+    const-string/jumbo p2, "statusbar"
 
     invoke-virtual {p1, p2}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 

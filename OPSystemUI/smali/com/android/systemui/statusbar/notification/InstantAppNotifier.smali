@@ -391,7 +391,7 @@
 
     move-result-object v11
 
-    const/4 v12, 0x0
+    const/high16 v12, 0x4000000
 
     const/4 v13, 0x0
 
@@ -439,7 +439,7 @@
 
     move-result-object v11
 
-    const/4 v12, 0x0
+    const/high16 v12, 0x4000000
 
     const/4 v0, 0x0
 
@@ -511,7 +511,7 @@
 
     const/4 v10, 0x0
 
-    const/4 v12, 0x0
+    const/high16 v12, 0x4000000
 
     const/4 v0, 0x0
 
@@ -626,7 +626,7 @@
 
     const/4 v10, 0x0
 
-    const/4 v12, 0x0
+    const/high16 v12, 0x4000000
 
     const/4 v13, 0x0
 

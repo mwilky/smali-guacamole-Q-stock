@@ -758,7 +758,7 @@
 
     iget-object v0, p0, Lcom/android/systemui/SystemUI;->mContext:Landroid/content/Context;
 
-    const-string v1, "statusbar"
+    const-string/jumbo v1, "statusbar"
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 

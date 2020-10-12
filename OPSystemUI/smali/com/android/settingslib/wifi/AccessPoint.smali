@@ -2251,7 +2251,7 @@
 
     const-string p0, "SettingsLib.AccessPoint"
 
-    const-string p1, "state is null, returning empty summary"
+    const-string/jumbo p1, "state is null, returning empty summary"
 
     invoke-static {p0, p1}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 

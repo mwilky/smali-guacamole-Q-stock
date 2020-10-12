@@ -4,4 +4,8 @@
 
 
 # static fields
-.field public static final oneplus_aod_font:I = 0x7f090003
+.field public static final neuehaasgrotdispround15xxthin:I = 0x7f090000
+
+.field public static final neuehaasgrotdispround25xthin:I = 0x7f090001
+
+.field public static final neuehaasgrotdispround35thin:I = 0x7f090002

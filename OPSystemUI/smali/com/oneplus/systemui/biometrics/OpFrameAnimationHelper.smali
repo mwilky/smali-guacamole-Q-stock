@@ -469,7 +469,7 @@
     :cond_0
     const-string v0, "FrameAnimationHelper"
 
-    const-string v1, "stop"
+    const-string/jumbo v1, "stop"
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 

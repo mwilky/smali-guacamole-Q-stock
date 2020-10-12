@@ -74,7 +74,7 @@
 
     iput-object p1, p0, Lcom/android/systemui/statusbar/phone/NavigationBarTransitions;->mView:Lcom/android/systemui/statusbar/phone/NavigationBarView;
 
-    const-string v1, "statusbar"
+    const-string/jumbo v1, "statusbar"
 
     invoke-static {v1}, Landroid/os/ServiceManager;->getService(Ljava/lang/String;)Landroid/os/IBinder;
 

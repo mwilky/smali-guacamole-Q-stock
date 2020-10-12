@@ -52,6 +52,10 @@
 
     const-string v2, "com.android.systemui.shared.recents.ISystemUiProxy"
 
+    if-eq p1, v0, :cond_b
+
+    const/16 v0, 0x69
+
     if-eq p1, v0, :cond_a
 
     const v0, 0x5f4e5446
@@ -342,6 +346,23 @@
     return v1
 
     :cond_a
+    invoke-virtual {p2, v2}, Landroid/os/Parcel;->enforceInterface(Ljava/lang/String;)V
+
+    invoke-virtual {p2}, Landroid/os/Parcel;->readString()Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-interface {p0, p1}, Lcom/android/systemui/shared/recents/ISystemUiProxy;->getFullScreenNavBarInset(Ljava/lang/String;)I
+
+    move-result p0
+
+    invoke-virtual {p3}, Landroid/os/Parcel;->writeNoException()V
+
+    invoke-virtual {p3, p0}, Landroid/os/Parcel;->writeInt(I)V
+
+    return v1
+
+    :cond_b
     invoke-virtual {p2, v2}, Landroid/os/Parcel;->enforceInterface(Ljava/lang/String;)V
 
     invoke-virtual {p2}, Landroid/os/Parcel;->readInt()I

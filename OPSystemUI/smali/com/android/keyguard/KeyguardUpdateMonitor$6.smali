@@ -114,7 +114,7 @@
 
     if-eqz v0, :cond_8
 
-    const-string p1, "status"
+    const-string/jumbo p1, "status"
 
     invoke-virtual {p2, p1, v3}, Landroid/content/Intent;->getIntExtra(Ljava/lang/String;I)I
 

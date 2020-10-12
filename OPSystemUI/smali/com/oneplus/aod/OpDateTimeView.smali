@@ -298,7 +298,7 @@
 
     iget-object v1, p0, Lcom/oneplus/aod/OpDateTimeView;->mDateView:Lcom/oneplus/aod/OpTextDate;
 
-    invoke-virtual {v1}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
+    invoke-virtual {v1}, Landroid/widget/TextView;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     move-result-object v1
 
@@ -332,7 +332,7 @@
     :goto_6
     iget-object p0, p0, Lcom/oneplus/aod/OpDateTimeView;->mDateView:Lcom/oneplus/aod/OpTextDate;
 
-    invoke-virtual {p0, v1}, Landroid/view/View;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
+    invoke-virtual {p0, v1}, Landroid/widget/TextView;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
     return-void
 .end method
@@ -380,12 +380,6 @@
 
     iput-object v0, p0, Lcom/oneplus/aod/OpDateTimeView;->mDateView:Lcom/oneplus/aod/OpTextDate;
 
-    iget-object p0, p0, Lcom/oneplus/aod/OpDateTimeView;->mDateView:Lcom/oneplus/aod/OpTextDate;
-
-    const/4 v0, 0x1
-
-    invoke-virtual {p0, v0}, Lcom/oneplus/aod/OpTextDate;->setShowCurrentUserTime(Z)V
-
     return-void
 .end method
 
@@ -402,29 +396,21 @@
 
     invoke-virtual {p0}, Lcom/oneplus/aod/OpDateTimeView;->refreshTime()V
 
+    iget-object p0, p0, Lcom/oneplus/aod/OpDateTimeView;->mDateView:Lcom/oneplus/aod/OpTextDate;
+
+    invoke-virtual {p0}, Lcom/oneplus/aod/OpTextDate;->onTimeChanged()V
+
     return-void
 .end method
 
 .method public refreshTime()V
-    .locals 2
+    .locals 1
 
-    const-string v0, "DateTimeView"
+    const-string p0, "DateTimeView"
 
-    const-string v1, "refreshTime"
+    const-string v0, "refreshTime"
 
-    invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    iget-object v0, p0, Lcom/oneplus/aod/OpDateTimeView;->mDateView:Lcom/oneplus/aod/OpTextDate;
-
-    sget-object v1, Lcom/oneplus/aod/OpDateTimeView$Patterns;->dateView:Ljava/lang/String;
-
-    invoke-virtual {v0, v1}, Lcom/oneplus/aod/OpTextDate;->setFormat24Hour(Ljava/lang/CharSequence;)V
-
-    iget-object p0, p0, Lcom/oneplus/aod/OpDateTimeView;->mDateView:Lcom/oneplus/aod/OpTextDate;
-
-    sget-object v0, Lcom/oneplus/aod/OpDateTimeView$Patterns;->dateView:Ljava/lang/String;
-
-    invoke-virtual {p0, v0}, Lcom/oneplus/aod/OpTextDate;->setFormat12Hour(Ljava/lang/CharSequence;)V
+    invoke-static {p0, v0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     return-void
 .end method

@@ -1228,8 +1228,8 @@
     throw p0
 .end method
 
-.method public notifyNavBarColorChanged(ILjava/lang/String;)V
-    .locals 3
+.method public notifyNavBarColorChanged(ILjava/lang/String;Ljava/lang/String;)V
+    .locals 4
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/CommandQueue;->mLock:Ljava/lang/Object;
 
@@ -1242,11 +1242,21 @@
 
     invoke-virtual {v1, v2}, Landroid/os/Handler;->removeMessages(I)V
 
+    const/4 v1, 0x2
+
+    new-array v1, v1, [Ljava/lang/String;
+
+    const/4 v3, 0x0
+
+    aput-object p2, v1, v3
+
+    const/4 p2, 0x1
+
+    aput-object p3, v1, p2
+
     iget-object p0, p0, Lcom/android/systemui/statusbar/CommandQueue;->mHandler:Landroid/os/Handler;
 
-    const/4 v1, 0x0
-
-    invoke-virtual {p0, v2, p1, v1, p2}, Landroid/os/Handler;->obtainMessage(IIILjava/lang/Object;)Landroid/os/Message;
+    invoke-virtual {p0, v2, p1, v3, v1}, Landroid/os/Handler;->obtainMessage(IIILjava/lang/Object;)Landroid/os/Message;
 
     move-result-object p0
 

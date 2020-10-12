@@ -630,7 +630,7 @@
 
     if-nez v0, :cond_0
 
-    const-string p0, "stop startAnimation window desn\'t attached"
+    const-string/jumbo p0, "stop startAnimation window desn\'t attached"
 
     invoke-static {v1, p0}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
@@ -641,7 +641,7 @@
 
     if-eqz v0, :cond_1
 
-    const-string p0, "stop startAnimation since it\'s started"
+    const-string/jumbo p0, "stop startAnimation since it\'s started"
 
     invoke-static {v1, p0}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 

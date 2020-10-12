@@ -241,15 +241,15 @@
 
     new-array v1, v0, [I
 
-    if-nez p1, :cond_0
+    if-eqz p1, :cond_2
 
-    sget-object p0, Lcom/android/systemui/glwallpaper/ImageGLWallpaper;->TAG:Ljava/lang/String;
+    invoke-virtual {p1}, Landroid/graphics/Bitmap;->isRecycled()Z
 
-    const-string p1, "setupTexture: invalid bitmap"
+    move-result v2
 
-    invoke-static {p0, p1}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
+    if-eqz v2, :cond_0
 
-    return-void
+    goto :goto_1
 
     :cond_0
     const/4 v2, 0x0
@@ -269,6 +269,7 @@
     return-void
 
     :cond_1
+    :try_start_0
     aget v0, v1, v2
 
     const/16 v3, 0xde1
@@ -290,6 +291,46 @@
     aget p1, v1, v2
 
     iput p1, p0, Lcom/android/systemui/glwallpaper/ImageGLWallpaper;->mTextureId:I
+    :try_end_0
+    .catch Ljava/lang/IllegalArgumentException; {:try_start_0 .. :try_end_0} :catch_0
+
+    goto :goto_0
+
+    :catch_0
+    move-exception p0
+
+    sget-object p1, Lcom/android/systemui/glwallpaper/ImageGLWallpaper;->TAG:Ljava/lang/String;
+
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v1, "Failed uploading texture: "
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p0}, Ljava/lang/IllegalArgumentException;->getLocalizedMessage()Ljava/lang/String;
+
+    move-result-object p0
+
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p0
+
+    invoke-static {p1, p0}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
+
+    :goto_0
+    return-void
+
+    :cond_2
+    :goto_1
+    sget-object p0, Lcom/android/systemui/glwallpaper/ImageGLWallpaper;->TAG:Ljava/lang/String;
+
+    const-string p1, "setupTexture: invalid bitmap"
+
+    invoke-static {p0, p1}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
     return-void
 .end method

@@ -28,6 +28,8 @@
 
 .field public static mIsCutoutEmulationEnabled:Z
 
+.field public static mIsFullScreenListApp:Z
+
 .field private static mIsHomeApp:Z
 
 .field private static mIsNeedDarkNavBar:Z
@@ -45,6 +47,8 @@
 .field public static mScreenResolution:I
 
 .field private static mSettingsObserver:Lcom/oneplus/util/OpUtils$SettingsObserver;
+
+.field private static mTopClassName:Ljava/lang/String;
 
 .field private static mTypefaceCache:Ljava/util/concurrent/ConcurrentHashMap;
     .annotation system Ldalvik/annotation/Signature;
@@ -95,6 +99,12 @@
     sput-boolean v0, Lcom/oneplus/util/OpUtils;->mIsSupportResolutionSwitch:Z
 
     sput-boolean v0, Lcom/oneplus/util/OpUtils;->mIsOnePlusHomeApp:Z
+
+    sput-boolean v0, Lcom/oneplus/util/OpUtils;->mIsFullScreenListApp:Z
+
+    const-string v1, ""
+
+    sput-object v1, Lcom/oneplus/util/OpUtils;->mTopClassName:Ljava/lang/String;
 
     const-string v1, "310120"
 
@@ -740,6 +750,14 @@
     return p0
 .end method
 
+.method public static getTopClassName()Ljava/lang/String;
+    .locals 1
+
+    sget-object v0, Lcom/oneplus/util/OpUtils;->mTopClassName:Ljava/lang/String;
+
+    return-object v0
+.end method
+
 .method private static getTypefaceByPath(Ljava/lang/String;)Landroid/graphics/Typeface;
     .locals 2
 
@@ -1118,6 +1136,14 @@
     .locals 1
 
     sget-boolean v0, Lcom/oneplus/util/OpUtils;->mIsHomeApp:Z
+
+    return v0
+.end method
+
+.method public static isInFullScreenListApp()Z
+    .locals 1
+
+    sget-boolean v0, Lcom/oneplus/util/OpUtils;->mIsFullScreenListApp:Z
 
     return v0
 .end method
@@ -2162,18 +2188,20 @@
     return-void
 .end method
 
-.method public static updateTopPackage(Landroid/content/Context;Ljava/lang/String;)V
-    .locals 6
+.method public static updateTopPackage(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)V
+    .locals 5
 
-    new-instance v0, Landroid/content/Intent;
+    sput-object p2, Lcom/oneplus/util/OpUtils;->mTopClassName:Ljava/lang/String;
 
-    const-string v1, "android.intent.action.MAIN"
+    new-instance p2, Landroid/content/Intent;
 
-    invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
+    const-string v0, "android.intent.action.MAIN"
 
-    const-string v1, "android.intent.category.HOME"
+    invoke-direct {p2, v0}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    invoke-virtual {v0, v1}, Landroid/content/Intent;->addCategory(Ljava/lang/String;)Landroid/content/Intent;
+    const-string v0, "android.intent.category.HOME"
+
+    invoke-virtual {p2, v0}, Landroid/content/Intent;->addCategory(Ljava/lang/String;)Landroid/content/Intent;
 
     if-nez p0, :cond_0
 
@@ -2182,224 +2210,238 @@
     :cond_0
     invoke-virtual {p0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
-    move-result-object v1
-
-    const/high16 v2, 0x10000
-
-    invoke-virtual {v1, v0, v2}, Landroid/content/pm/PackageManager;->resolveActivity(Landroid/content/Intent;I)Landroid/content/pm/ResolveInfo;
-
     move-result-object v0
+
+    const/high16 v1, 0x10000
+
+    invoke-virtual {v0, p2, v1}, Landroid/content/pm/PackageManager;->resolveActivity(Landroid/content/Intent;I)Landroid/content/pm/ResolveInfo;
+
+    move-result-object p2
+
+    const/4 v0, 0x0
+
+    if-eqz p2, :cond_1
+
+    iget-object p2, p2, Landroid/content/pm/ResolveInfo;->activityInfo:Landroid/content/pm/ActivityInfo;
+
+    iget-object v0, p2, Landroid/content/pm/ActivityInfo;->packageName:Ljava/lang/String;
+
+    :cond_1
+    const/4 p2, 0x1
 
     const/4 v1, 0x0
 
-    if-eqz v0, :cond_1
-
-    iget-object v0, v0, Landroid/content/pm/ResolveInfo;->activityInfo:Landroid/content/pm/ActivityInfo;
-
-    iget-object v1, v0, Landroid/content/pm/ActivityInfo;->packageName:Ljava/lang/String;
-
-    :cond_1
-    const/4 v0, 0x1
-
-    const/4 v2, 0x0
-
-    if-eqz v1, :cond_6
+    if-eqz v0, :cond_6
 
     if-eqz p1, :cond_6
 
-    const-string v3, "net.oneplus.launcher"
+    const-string v2, "net.oneplus.launcher"
 
-    invoke-virtual {p1, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {p1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    move-result v4
+    move-result v3
 
-    const-string v5, "net.oneplus.h2launcher"
+    const-string v4, "net.oneplus.h2launcher"
 
-    if-nez v4, :cond_3
+    if-nez v3, :cond_3
 
-    invoke-virtual {p1, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {p1, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    move-result v4
+    move-result v3
 
-    if-nez v4, :cond_3
+    if-nez v3, :cond_3
 
-    invoke-virtual {p1, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    move-result v1
+    move-result v0
 
-    if-eqz v1, :cond_2
+    if-eqz v0, :cond_2
 
     goto :goto_0
 
     :cond_2
-    move v1, v2
+    move v0, v1
 
     goto :goto_1
 
     :cond_3
     :goto_0
-    move v1, v0
+    move v0, p2
 
     :goto_1
-    sput-boolean v1, Lcom/oneplus/util/OpUtils;->mIsHomeApp:Z
+    sput-boolean v0, Lcom/oneplus/util/OpUtils;->mIsHomeApp:Z
 
-    invoke-virtual {p1, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {p1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    move-result v1
+    move-result v0
 
-    if-nez v1, :cond_5
+    if-nez v0, :cond_5
 
-    invoke-virtual {p1, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {p1, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    move-result v1
+    move-result v0
 
-    if-eqz v1, :cond_4
+    if-eqz v0, :cond_4
 
     goto :goto_2
 
     :cond_4
-    move v1, v2
+    move v0, v1
 
     goto :goto_3
 
     :cond_5
     :goto_2
-    move v1, v0
+    move v0, p2
 
     :goto_3
-    sput-boolean v1, Lcom/oneplus/util/OpUtils;->mIsOnePlusHomeApp:Z
+    sput-boolean v0, Lcom/oneplus/util/OpUtils;->mIsOnePlusHomeApp:Z
 
     goto :goto_4
 
     :cond_6
-    sput-boolean v2, Lcom/oneplus/util/OpUtils;->mIsHomeApp:Z
+    sput-boolean v1, Lcom/oneplus/util/OpUtils;->mIsHomeApp:Z
 
-    sput-boolean v2, Lcom/oneplus/util/OpUtils;->mIsOnePlusHomeApp:Z
+    sput-boolean v1, Lcom/oneplus/util/OpUtils;->mIsOnePlusHomeApp:Z
 
     :goto_4
     if-eqz p1, :cond_7
 
-    const-string v1, "com.android.systemui"
+    const-string v0, "com.android.systemui"
 
-    invoke-virtual {p1, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    move-result v1
+    move-result v0
 
-    sput-boolean v1, Lcom/oneplus/util/OpUtils;->mIsSystemUI:Z
+    sput-boolean v0, Lcom/oneplus/util/OpUtils;->mIsSystemUI:Z
 
     goto :goto_5
 
     :cond_7
-    sput-boolean v2, Lcom/oneplus/util/OpUtils;->mIsSystemUI:Z
+    sput-boolean v1, Lcom/oneplus/util/OpUtils;->mIsSystemUI:Z
 
     :goto_5
     if-eqz p1, :cond_8
 
-    const-string v1, "android.systemui.cts"
+    const-string v0, "android.systemui.cts"
 
-    invoke-virtual {p1, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    move-result v1
+    move-result v0
 
-    sput-boolean v1, Lcom/oneplus/util/OpUtils;->mIsCTS:Z
+    sput-boolean v0, Lcom/oneplus/util/OpUtils;->mIsCTS:Z
 
     goto :goto_6
 
     :cond_8
-    sput-boolean v2, Lcom/oneplus/util/OpUtils;->mIsCTS:Z
+    sput-boolean v1, Lcom/oneplus/util/OpUtils;->mIsCTS:Z
 
     :goto_6
     if-eqz p1, :cond_b
 
-    const-string v1, "com.mobile.legends"
+    const-string v0, "com.mobile.legends"
 
-    invoke-virtual {p1, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    move-result v1
+    move-result v0
 
-    if-nez v1, :cond_a
+    if-nez v0, :cond_a
 
-    const-string v1, "com.tencent.tmgp.sgame"
+    const-string v0, "com.tencent.tmgp.sgame"
 
-    invoke-virtual {p1, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    move-result v1
+    move-result v0
 
-    if-eqz v1, :cond_9
+    if-eqz v0, :cond_9
 
     goto :goto_7
 
     :cond_9
-    move v1, v2
+    move v0, v1
 
     goto :goto_8
 
     :cond_a
     :goto_7
-    move v1, v0
+    move v0, p2
 
     :goto_8
-    sput-boolean v1, Lcom/oneplus/util/OpUtils;->mIsNeedDarkNavBar:Z
+    sput-boolean v0, Lcom/oneplus/util/OpUtils;->mIsNeedDarkNavBar:Z
 
     goto :goto_9
 
     :cond_b
-    sput-boolean v2, Lcom/oneplus/util/OpUtils;->mIsNeedDarkNavBar:Z
+    sput-boolean v1, Lcom/oneplus/util/OpUtils;->mIsNeedDarkNavBar:Z
 
     :goto_9
-    const-string v1, "appops"
+    if-eqz p1, :cond_c
 
-    invoke-virtual {p0, v1}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-static {p1}, Lcom/oneplus/systemui/OpSystemUIInjector;->isInNavGestureFullscreenList(Ljava/lang/String;)Z
 
-    move-result-object v1
+    move-result v0
 
-    check-cast v1, Landroid/app/AppOpsManager;
+    sput-boolean v0, Lcom/oneplus/util/OpUtils;->mIsFullScreenListApp:Z
 
-    if-eqz p1, :cond_d
+    goto :goto_a
+
+    :cond_c
+    sput-boolean v1, Lcom/oneplus/util/OpUtils;->mIsFullScreenListApp:Z
+
+    :goto_a
+    const-string v0, "appops"
+
+    invoke-virtual {p0, v0}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/app/AppOpsManager;
+
+    if-eqz p1, :cond_e
 
     :try_start_0
     invoke-virtual {p0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object p0
 
-    invoke-virtual {p0, p1, v0}, Landroid/content/pm/PackageManager;->getApplicationInfo(Ljava/lang/String;I)Landroid/content/pm/ApplicationInfo;
+    invoke-virtual {p0, p1, p2}, Landroid/content/pm/PackageManager;->getApplicationInfo(Ljava/lang/String;I)Landroid/content/pm/ApplicationInfo;
 
     move-result-object p0
 
-    const/16 v3, 0x3ee
+    const/16 v2, 0x3ee
 
     iget p0, p0, Landroid/content/pm/ApplicationInfo;->uid:I
 
-    invoke-virtual {v1, v3, p0, p1}, Landroid/app/AppOpsManager;->checkOpNoThrow(IILjava/lang/String;)I
+    invoke-virtual {v0, v2, p0, p1}, Landroid/app/AppOpsManager;->checkOpNoThrow(IILjava/lang/String;)I
 
     move-result p0
 
-    if-nez p0, :cond_c
-
-    goto :goto_a
-
-    :cond_c
-    move v0, v2
-
-    :goto_a
-    sput-boolean v0, Lcom/oneplus/util/OpUtils;->mIsScreenCompat:Z
+    if-nez p0, :cond_d
 
     goto :goto_b
 
     :cond_d
-    sput-boolean v2, Lcom/oneplus/util/OpUtils;->mIsScreenCompat:Z
+    move p2, v1
+
+    :goto_b
+    sput-boolean p2, Lcom/oneplus/util/OpUtils;->mIsScreenCompat:Z
+
+    goto :goto_c
+
+    :cond_e
+    sput-boolean v1, Lcom/oneplus/util/OpUtils;->mIsScreenCompat:Z
     :try_end_0
     .catch Landroid/content/pm/PackageManager$NameNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 
-    goto :goto_b
+    goto :goto_c
 
     :catch_0
     move-exception p0
 
     invoke-virtual {p0}, Landroid/content/pm/PackageManager$NameNotFoundException;->printStackTrace()V
 
-    sput-boolean v2, Lcom/oneplus/util/OpUtils;->mIsScreenCompat:Z
+    sput-boolean v1, Lcom/oneplus/util/OpUtils;->mIsScreenCompat:Z
 
-    :goto_b
+    :goto_c
     return-void
 .end method

@@ -617,7 +617,7 @@
     move p1, p3
 
     :cond_b
-    if-eqz p1, :cond_14
+    if-eqz p1, :cond_13
 
     iget-object p1, p0, Lcom/android/systemui/statusbar/NotificationMediaManager;->mBackdropBack:Landroid/widget/ImageView;
 
@@ -683,7 +683,7 @@
 
     move-result p1
 
-    if-nez p1, :cond_14
+    if-nez p1, :cond_13
 
     iget-object p1, p0, Lcom/android/systemui/statusbar/NotificationMediaManager;->mBackdropFront:Landroid/widget/ImageView;
 
@@ -717,7 +717,7 @@
 
     const/16 p2, 0x8
 
-    if-eq p1, p2, :cond_14
+    if-eq p1, p2, :cond_13
 
     if-eqz v5, :cond_e
 
@@ -749,14 +749,14 @@
 
     move-result p1
 
-    if-eq p1, v3, :cond_13
+    if-eq p1, v3, :cond_12
 
     :cond_f
-    if-nez v7, :cond_13
+    if-nez v7, :cond_12
 
     if-eqz p3, :cond_10
 
-    goto/16 :goto_a
+    goto :goto_a
 
     :cond_10
     if-eqz v6, :cond_11
@@ -804,39 +804,7 @@
 
     move-result p1
 
-    if-eqz p1, :cond_14
-
-    iget-object p1, p0, Lcom/android/systemui/statusbar/NotificationMediaManager;->mKeyguardMonitor:Lcom/android/systemui/statusbar/policy/KeyguardMonitor;
-
-    invoke-interface {p1}, Lcom/android/systemui/statusbar/policy/KeyguardMonitor;->isSecure()Z
-
-    move-result p1
-
-    if-nez p1, :cond_12
-
-    iget-object p1, p0, Lcom/android/systemui/statusbar/NotificationMediaManager;->mContext:Landroid/content/Context;
-
-    invoke-static {p1}, Lcom/android/keyguard/KeyguardUpdateMonitor;->getInstance(Landroid/content/Context;)Lcom/android/keyguard/KeyguardUpdateMonitor;
-
-    move-result-object p1
-
-    invoke-virtual {p1}, Lcom/android/keyguard/KeyguardUpdateMonitor;->isDeviceInteractive()Z
-
-    move-result p1
-
-    if-eqz p1, :cond_12
-
-    iget-object p1, p0, Lcom/android/systemui/statusbar/NotificationMediaManager;->mContext:Landroid/content/Context;
-
-    invoke-static {p1}, Lcom/android/keyguard/KeyguardUpdateMonitor;->getInstance(Landroid/content/Context;)Lcom/android/keyguard/KeyguardUpdateMonitor;
-
-    move-result-object p1
-
-    invoke-virtual {p1}, Lcom/android/keyguard/KeyguardUpdateMonitor;->needsSlowUnlockTransition()Z
-
-    move-result p1
-
-    if-nez p1, :cond_12
+    if-eqz p1, :cond_13
 
     iget-object p0, p0, Lcom/android/systemui/statusbar/NotificationMediaManager;->mBackdrop:Lcom/android/systemui/statusbar/BackDropView;
 
@@ -859,47 +827,6 @@
     goto :goto_b
 
     :cond_12
-    iget-object p1, p0, Lcom/android/systemui/statusbar/NotificationMediaManager;->mBackdrop:Lcom/android/systemui/statusbar/BackDropView;
-
-    invoke-virtual {p1}, Landroid/widget/FrameLayout;->animate()Landroid/view/ViewPropertyAnimator;
-
-    move-result-object p1
-
-    iget-object p2, p0, Lcom/android/systemui/statusbar/NotificationMediaManager;->mKeyguardMonitor:Lcom/android/systemui/statusbar/policy/KeyguardMonitor;
-
-    invoke-interface {p2}, Lcom/android/systemui/statusbar/policy/KeyguardMonitor;->getKeyguardFadingAwayDuration()J
-
-    move-result-wide p2
-
-    const-wide/16 v0, 0x2
-
-    div-long/2addr p2, v0
-
-    invoke-virtual {p1, p2, p3}, Landroid/view/ViewPropertyAnimator;->setDuration(J)Landroid/view/ViewPropertyAnimator;
-
-    move-result-object p1
-
-    iget-object p0, p0, Lcom/android/systemui/statusbar/NotificationMediaManager;->mKeyguardMonitor:Lcom/android/systemui/statusbar/policy/KeyguardMonitor;
-
-    invoke-interface {p0}, Lcom/android/systemui/statusbar/policy/KeyguardMonitor;->getKeyguardFadingAwayDelay()J
-
-    move-result-wide p2
-
-    invoke-virtual {p1, p2, p3}, Landroid/view/ViewPropertyAnimator;->setStartDelay(J)Landroid/view/ViewPropertyAnimator;
-
-    move-result-object p0
-
-    sget-object p1, Lcom/android/systemui/Interpolators;->LINEAR:Landroid/view/animation/Interpolator;
-
-    invoke-virtual {p0, p1}, Landroid/view/ViewPropertyAnimator;->setInterpolator(Landroid/animation/TimeInterpolator;)Landroid/view/ViewPropertyAnimator;
-
-    move-result-object p0
-
-    invoke-virtual {p0}, Landroid/view/ViewPropertyAnimator;->start()V
-
-    goto :goto_b
-
-    :cond_13
     :goto_a
     iget-object p1, p0, Lcom/android/systemui/statusbar/NotificationMediaManager;->mBackdrop:Lcom/android/systemui/statusbar/BackDropView;
 
@@ -909,11 +836,11 @@
 
     invoke-virtual {p0, v0}, Landroid/widget/ImageView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
 
-    if-eqz v6, :cond_14
+    if-eqz v6, :cond_13
 
     invoke-virtual {v6, v2}, Lcom/android/systemui/statusbar/phone/StatusBarWindowController;->setBackdropShowing(Z)V
 
-    :cond_14
+    :cond_13
     :goto_b
     return-void
 .end method

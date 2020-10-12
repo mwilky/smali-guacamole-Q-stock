@@ -571,7 +571,7 @@
 
     if-eqz v0, :cond_15
 
-    const-string v0, "status"
+    const-string/jumbo v0, "status"
 
     invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 

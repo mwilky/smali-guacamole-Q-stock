@@ -119,68 +119,139 @@
 .end method
 
 .method private loadDimensions()V
-    .locals 4
+    .locals 5
 
-    invoke-virtual {p0}, Landroid/widget/TextView;->getContext()Landroid/content/Context;
+    iget v0, p0, Lcom/oneplus/aod/OpCustomTextClock;->mTextClockStyle:I
 
-    move-result-object v0
+    const/4 v1, 0x0
 
-    sget v1, Lcom/android/systemui/R$font;->oneplus_aod_font:I
+    const/4 v2, 0x1
 
-    invoke-static {v0, v1}, Landroid/support/v4/content/res/ResourcesCompat;->getFont(Landroid/content/Context;I)Landroid/graphics/Typeface;
+    if-ne v0, v2, :cond_0
 
-    move-result-object v0
+    sget v0, Lcom/android/systemui/R$dimen;->aod_clock_typographic_font_size:I
 
-    iget v1, p0, Lcom/oneplus/aod/OpCustomTextClock;->mTextClockStyle:I
+    :try_start_0
+    new-instance v2, Landroid/graphics/fonts/Font$Builder;
 
-    const/4 v2, 0x0
+    iget-object v3, p0, Landroid/widget/TextView;->mContext:Landroid/content/Context;
 
-    const/4 v3, 0x1
+    invoke-virtual {v3}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
-    if-ne v1, v3, :cond_0
+    move-result-object v3
 
-    sget v1, Lcom/android/systemui/R$dimen;->aod_clock_typographic_font_size:I
+    sget v4, Lcom/android/systemui/R$font;->neuehaasgrotdispround25xthin:I
 
-    const/16 v3, 0x64
+    invoke-direct {v2, v3, v4}, Landroid/graphics/fonts/Font$Builder;-><init>(Landroid/content/res/Resources;I)V
 
-    invoke-static {v0, v3, v2}, Landroid/graphics/Typeface;->create(Landroid/graphics/Typeface;IZ)Landroid/graphics/Typeface;
+    invoke-virtual {v2}, Landroid/graphics/fonts/Font$Builder;->build()Landroid/graphics/fonts/Font;
 
-    move-result-object v0
+    move-result-object v2
+
+    new-instance v3, Landroid/graphics/fonts/FontFamily$Builder;
+
+    invoke-direct {v3, v2}, Landroid/graphics/fonts/FontFamily$Builder;-><init>(Landroid/graphics/fonts/Font;)V
+
+    invoke-virtual {v3}, Landroid/graphics/fonts/FontFamily$Builder;->build()Landroid/graphics/fonts/FontFamily;
+
+    move-result-object v2
+
+    new-instance v3, Landroid/graphics/Typeface$CustomFallbackBuilder;
+
+    invoke-direct {v3, v2}, Landroid/graphics/Typeface$CustomFallbackBuilder;-><init>(Landroid/graphics/fonts/FontFamily;)V
+
+    invoke-virtual {v3}, Landroid/graphics/Typeface$CustomFallbackBuilder;->build()Landroid/graphics/Typeface;
+
+    move-result-object v1
+    :try_end_0
+    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
 
     goto :goto_0
 
     :cond_0
-    if-nez v1, :cond_1
+    if-nez v0, :cond_1
 
-    sget v1, Lcom/android/systemui/R$dimen;->aod_clock_digital_font_size:I
+    sget v0, Lcom/android/systemui/R$dimen;->aod_clock_digital_font_size:I
 
-    const/16 v3, 0xc8
+    :try_start_1
+    new-instance v2, Landroid/graphics/fonts/Font$Builder;
 
-    invoke-static {v0, v3, v2}, Landroid/graphics/Typeface;->create(Landroid/graphics/Typeface;IZ)Landroid/graphics/Typeface;
+    iget-object v3, p0, Landroid/widget/TextView;->mContext:Landroid/content/Context;
 
-    move-result-object v0
+    invoke-virtual {v3}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v3
+
+    sget v4, Lcom/android/systemui/R$font;->neuehaasgrotdispround15xxthin:I
+
+    invoke-direct {v2, v3, v4}, Landroid/graphics/fonts/Font$Builder;-><init>(Landroid/content/res/Resources;I)V
+
+    invoke-virtual {v2}, Landroid/graphics/fonts/Font$Builder;->build()Landroid/graphics/fonts/Font;
+
+    move-result-object v2
+
+    new-instance v3, Landroid/graphics/fonts/FontFamily$Builder;
+
+    invoke-direct {v3, v2}, Landroid/graphics/fonts/FontFamily$Builder;-><init>(Landroid/graphics/fonts/Font;)V
+
+    invoke-virtual {v3}, Landroid/graphics/fonts/FontFamily$Builder;->build()Landroid/graphics/fonts/FontFamily;
+
+    move-result-object v2
+
+    new-instance v3, Landroid/graphics/Typeface$CustomFallbackBuilder;
+
+    invoke-direct {v3, v2}, Landroid/graphics/Typeface$CustomFallbackBuilder;-><init>(Landroid/graphics/fonts/FontFamily;)V
+
+    invoke-virtual {v3}, Landroid/graphics/Typeface$CustomFallbackBuilder;->build()Landroid/graphics/Typeface;
+
+    move-result-object v1
+    :try_end_1
+    .catch Ljava/io/IOException; {:try_start_1 .. :try_end_1} :catch_0
 
     goto :goto_0
 
     :cond_1
-    const/4 v0, 0x0
+    const/4 v0, -0x1
 
-    const/4 v1, -0x1
-
+    :catch_0
     :goto_0
-    invoke-virtual {p0, v0}, Landroid/widget/TextView;->setTypeface(Landroid/graphics/Typeface;)V
+    invoke-virtual {p0, v1}, Landroid/widget/TextView;->setTypeface(Landroid/graphics/Typeface;)V
 
     invoke-virtual {p0}, Landroid/widget/TextView;->getContext()Landroid/content/Context;
 
-    move-result-object v0
+    move-result-object v1
 
-    invoke-virtual {v0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {v1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
-    move-result-object v0
+    move-result-object v1
 
-    sget v3, Lcom/android/systemui/R$dimen;->aod_clock_typographic_font_line_space:I
+    sget v2, Lcom/android/systemui/R$dimen;->aod_clock_typographic_font_line_space:I
 
-    invoke-virtual {v0, v3}, Landroid/content/res/Resources;->getDimension(I)F
+    invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getDimension(I)F
+
+    move-result v1
+
+    invoke-static {v1}, Lcom/oneplus/util/OpUtils;->convertDpToFixedPx(F)I
+
+    move-result v1
+
+    int-to-float v1, v1
+
+    const/high16 v2, 0x3f800000    # 1.0f
+
+    invoke-virtual {p0, v1, v2}, Landroid/widget/TextView;->setLineSpacing(FF)V
+
+    const/4 v1, 0x0
+
+    invoke-virtual {p0}, Landroid/widget/TextView;->getContext()Landroid/content/Context;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v2
+
+    invoke-virtual {v2, v0}, Landroid/content/res/Resources;->getDimension(I)F
 
     move-result v0
 
@@ -190,29 +261,7 @@
 
     int-to-float v0, v0
 
-    const/high16 v3, 0x3f800000    # 1.0f
-
-    invoke-virtual {p0, v0, v3}, Landroid/widget/TextView;->setLineSpacing(FF)V
-
-    invoke-virtual {p0}, Landroid/widget/TextView;->getContext()Landroid/content/Context;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
-
-    move-result-object v0
-
-    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimension(I)F
-
-    move-result v0
-
-    invoke-static {v0}, Lcom/oneplus/util/OpUtils;->convertDpToFixedPx(F)I
-
-    move-result v0
-
-    int-to-float v0, v0
-
-    invoke-virtual {p0, v2, v0}, Landroid/widget/TextView;->setTextSize(IF)V
+    invoke-virtual {p0, v1, v0}, Landroid/widget/TextView;->setTextSize(IF)V
 
     return-void
 .end method
@@ -616,17 +665,36 @@
 
     if-eqz v10, :cond_1
 
-    invoke-virtual {p0}, Landroid/widget/TextView;->getPaint()Landroid/text/TextPaint;
+    :try_start_0
+    new-instance v9, Landroid/graphics/fonts/Font$Builder;
+
+    iget-object v10, p0, Landroid/widget/TextView;->mContext:Landroid/content/Context;
+
+    invoke-virtual {v10}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v10
+
+    sget v12, Lcom/android/systemui/R$font;->neuehaasgrotdispround35thin:I
+
+    invoke-direct {v9, v10, v12}, Landroid/graphics/fonts/Font$Builder;-><init>(Landroid/content/res/Resources;I)V
+
+    invoke-virtual {v9}, Landroid/graphics/fonts/Font$Builder;->build()Landroid/graphics/fonts/Font;
 
     move-result-object v9
 
-    invoke-virtual {v9}, Landroid/text/TextPaint;->getTypeface()Landroid/graphics/Typeface;
+    new-instance v10, Landroid/graphics/fonts/FontFamily$Builder;
+
+    invoke-direct {v10, v9}, Landroid/graphics/fonts/FontFamily$Builder;-><init>(Landroid/graphics/fonts/Font;)V
+
+    invoke-virtual {v10}, Landroid/graphics/fonts/FontFamily$Builder;->build()Landroid/graphics/fonts/FontFamily;
 
     move-result-object v9
 
-    const/16 v10, 0x190
+    new-instance v10, Landroid/graphics/Typeface$CustomFallbackBuilder;
 
-    invoke-static {v9, v10, v6}, Landroid/graphics/Typeface;->create(Landroid/graphics/Typeface;IZ)Landroid/graphics/Typeface;
+    invoke-direct {v10, v9}, Landroid/graphics/Typeface$CustomFallbackBuilder;-><init>(Landroid/graphics/fonts/FontFamily;)V
+
+    invoke-virtual {v10}, Landroid/graphics/Typeface$CustomFallbackBuilder;->build()Landroid/graphics/Typeface;
 
     move-result-object v9
 
@@ -643,7 +711,10 @@
     move-result v12
 
     invoke-virtual {v3, v10, v9, v12, v11}, Landroid/text/SpannableString;->setSpan(Ljava/lang/Object;III)V
+    :try_end_0
+    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
 
+    :catch_0
     new-instance v9, Landroid/text/style/ForegroundColorSpan;
 
     iget v10, p0, Lcom/oneplus/aod/OpCustomTextClock;->mColorBottom:I

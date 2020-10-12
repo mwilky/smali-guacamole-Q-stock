@@ -180,7 +180,7 @@
 
     iget-object v0, p0, Lcom/android/systemui/qs/QSHeaderInfoLayout;->statusSeparator:Landroid/view/View;
 
-    const-string v1, "statusSeparator"
+    const-string/jumbo v1, "statusSeparator"
 
     const/4 v2, 0x0
 
@@ -306,7 +306,7 @@
 
     iget-object v0, p0, Lcom/android/systemui/qs/QSHeaderInfoLayout;->statusSeparator:Landroid/view/View;
 
-    const-string v2, "statusSeparator"
+    const-string/jumbo v2, "statusSeparator"
 
     const/4 v3, 0x0
 

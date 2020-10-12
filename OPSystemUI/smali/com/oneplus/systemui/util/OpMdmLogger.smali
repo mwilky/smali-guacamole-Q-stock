@@ -656,7 +656,7 @@
 
     const-string v0, "landscape_full_screen"
 
-    const-string v1, "status_bar"
+    const-string/jumbo v1, "status_bar"
 
     const-string v2, "1"
 
@@ -758,7 +758,7 @@
 
     const-string v0, "landscape_full_screen"
 
-    const-string v1, "status_bar"
+    const-string/jumbo v1, "status_bar"
 
     const-string v2, "0"
 

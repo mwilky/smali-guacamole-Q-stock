@@ -49,6 +49,8 @@
 
 .field private mFullScreenGestureObserver:Landroid/database/ContentObserver;
 
+.field private mGestureOnlineConfig:Lcom/oneplus/onlineconfig/OpSystemUIGestureOnlineConfig;
+
 .field private mGoogleDarkTheme:Z
 
 .field protected mHighlightColor:I
@@ -1942,6 +1944,14 @@
     return-object p0
 .end method
 
+.method public getGestureOnlineConfig()Lcom/oneplus/onlineconfig/OpSystemUIGestureOnlineConfig;
+    .locals 0
+
+    iget-object p0, p0, Lcom/oneplus/systemui/statusbar/phone/OpStatusBar;->mGestureOnlineConfig:Lcom/oneplus/onlineconfig/OpSystemUIGestureOnlineConfig;
+
+    return-object p0
+.end method
+
 .method public getNavigationBarHiddenMode()I
     .locals 0
 
@@ -2376,9 +2386,9 @@
     :cond_2
     invoke-static {v0}, Lcom/android/systemui/shared/system/QuickStepContract;->isGesturalMode(I)Z
 
-    move-result v0
+    move-result v7
 
-    if-eqz v0, :cond_8
+    if-eqz v7, :cond_8
 
     iget-boolean v0, p0, Lcom/oneplus/systemui/statusbar/phone/OpStatusBar;->mImeShow:Z
 
@@ -2415,7 +2425,7 @@
     :cond_3
     invoke-direct {p0}, Lcom/oneplus/systemui/statusbar/phone/OpStatusBar;->disableGestureHandler()V
 
-    goto :goto_3
+    goto/16 :goto_4
 
     :cond_4
     if-eqz v4, :cond_5
@@ -2439,7 +2449,7 @@
 
     invoke-virtual {p0}, Lcom/oneplus/systemui/statusbar/phone/OpStatusBar;->updateImeWindowStatus()V
 
-    goto :goto_3
+    goto :goto_4
 
     :cond_6
     if-eqz v4, :cond_7
@@ -2463,56 +2473,92 @@
 
     invoke-virtual {p0}, Lcom/oneplus/systemui/statusbar/phone/OpStatusBar;->updateImeWindowStatus()V
 
-    goto :goto_3
+    goto :goto_4
 
     :cond_8
-    if-eqz v1, :cond_a
+    if-eqz v1, :cond_b
 
     invoke-virtual {v1}, Landroid/view/View;->isAttachedToWindow()Z
 
-    move-result v0
+    move-result v2
 
-    if-nez v0, :cond_a
+    if-nez v2, :cond_b
 
-    iget-boolean v0, p0, Lcom/oneplus/systemui/statusbar/phone/OpStatusBar;->mNavShowing:Z
+    iget-boolean v2, p0, Lcom/oneplus/systemui/statusbar/phone/OpStatusBar;->mNavShowing:Z
 
-    if-nez v0, :cond_a
+    if-nez v2, :cond_b
 
-    const-string v0, "NavBar add it"
+    const-string v2, "NavBar add it"
 
-    invoke-static {v6, v0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {v6, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    iget-object v0, p0, Lcom/oneplus/systemui/statusbar/phone/OpStatusBar;->mNavLp:Landroid/view/WindowManager$LayoutParams;
+    iget-object v2, p0, Lcom/oneplus/systemui/statusbar/phone/OpStatusBar;->mNavLp:Landroid/view/WindowManager$LayoutParams;
 
-    if-eqz v0, :cond_9
+    if-eqz v2, :cond_9
 
     goto :goto_2
 
     :cond_9
     invoke-virtual {v1}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
-    move-result-object v0
+    move-result-object v2
+
+    check-cast v2, Landroid/view/WindowManager$LayoutParams;
 
     :goto_2
-    iget-object v2, p0, Lcom/oneplus/systemui/statusbar/phone/OpStatusBar;->mWindowManager:Landroid/view/WindowManager;
+    invoke-static {v0}, Lcom/android/systemui/shared/system/QuickStepContract;->isGesturalMode(I)Z
 
-    invoke-interface {v2, v1, v0}, Landroid/view/WindowManager;->addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
+    move-result v0
+
+    if-eqz v0, :cond_a
+
+    iget v0, v2, Landroid/view/WindowManager$LayoutParams;->flags:I
+
+    and-int/lit8 v0, v0, -0x41
+
+    iput v0, v2, Landroid/view/WindowManager$LayoutParams;->flags:I
+
+    iget v0, v2, Landroid/view/WindowManager$LayoutParams;->flags:I
+
+    or-int/lit8 v0, v0, 0x10
+
+    iput v0, v2, Landroid/view/WindowManager$LayoutParams;->flags:I
+
+    goto :goto_3
+
+    :cond_a
+    iget v0, v2, Landroid/view/WindowManager$LayoutParams;->flags:I
+
+    and-int/lit8 v0, v0, -0x11
+
+    iput v0, v2, Landroid/view/WindowManager$LayoutParams;->flags:I
+
+    iget v0, v2, Landroid/view/WindowManager$LayoutParams;->flags:I
+
+    or-int/lit8 v0, v0, 0x40
+
+    iput v0, v2, Landroid/view/WindowManager$LayoutParams;->flags:I
+
+    :goto_3
+    iget-object v0, p0, Lcom/oneplus/systemui/statusbar/phone/OpStatusBar;->mWindowManager:Landroid/view/WindowManager;
+
+    invoke-interface {v0, v1, v2}, Landroid/view/WindowManager;->addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
 
     iput-boolean v3, p0, Lcom/oneplus/systemui/statusbar/phone/OpStatusBar;->mNavShowing:Z
 
-    :cond_a
+    :cond_b
     invoke-direct {p0}, Lcom/oneplus/systemui/statusbar/phone/OpStatusBar;->disableGestureHandler()V
 
-    :goto_3
+    :goto_4
     iget-boolean v0, p0, Lcom/oneplus/systemui/statusbar/phone/OpStatusBar;->mNavShowing:Z
 
-    if-eq v5, v0, :cond_b
+    if-eq v5, v0, :cond_c
 
     invoke-direct {p0}, Lcom/oneplus/systemui/statusbar/phone/OpStatusBar;->getStatusBarKeyguardViewManager()Lcom/android/systemui/statusbar/phone/StatusBarKeyguardViewManager;
 
     move-result-object v0
 
-    if-eqz v0, :cond_b
+    if-eqz v0, :cond_c
 
     invoke-direct {p0}, Lcom/oneplus/systemui/statusbar/phone/OpStatusBar;->getStatusBarKeyguardViewManager()Lcom/android/systemui/statusbar/phone/StatusBarKeyguardViewManager;
 
@@ -2524,7 +2570,7 @@
 
     invoke-virtual {v0, v1}, Lcom/android/systemui/statusbar/phone/StatusBarKeyguardViewManager;->onHideNavBar(Z)V
 
-    :cond_b
+    :cond_c
     invoke-static {}, Landroid/os/SystemClock;->uptimeMillis()J
 
     move-result-wide v0
@@ -4491,21 +4537,29 @@
 
     iput-object v3, v0, Landroid/view/WindowManager$LayoutParams;->accessibilityTitle:Ljava/lang/CharSequence;
 
-    iget-object p0, p0, Lcom/oneplus/systemui/statusbar/phone/OpStatusBar;->mImeNavLp:Landroid/view/WindowManager$LayoutParams;
+    iget-object v0, p0, Lcom/oneplus/systemui/statusbar/phone/OpStatusBar;->mImeNavLp:Landroid/view/WindowManager$LayoutParams;
 
-    iput v2, p0, Landroid/view/WindowManager$LayoutParams;->windowAnimations:I
+    iput v2, v0, Landroid/view/WindowManager$LayoutParams;->windowAnimations:I
 
-    const/16 v0, 0x50
+    const/16 v2, 0x50
 
-    iput v0, p0, Landroid/view/WindowManager$LayoutParams;->gravity:I
+    iput v2, v0, Landroid/view/WindowManager$LayoutParams;->gravity:I
 
-    iget v0, p0, Landroid/view/WindowManager$LayoutParams;->privateFlags:I
+    iget v2, v0, Landroid/view/WindowManager$LayoutParams;->privateFlags:I
 
-    or-int/2addr v0, v1
+    or-int/2addr v1, v2
 
-    iput v0, p0, Landroid/view/WindowManager$LayoutParams;->privateFlags:I
+    iput v1, v0, Landroid/view/WindowManager$LayoutParams;->privateFlags:I
 
     :cond_3
+    new-instance v0, Lcom/oneplus/onlineconfig/OpSystemUIGestureOnlineConfig;
+
+    iget-object v1, p0, Lcom/android/systemui/SystemUI;->mContext:Landroid/content/Context;
+
+    invoke-direct {v0, v1}, Lcom/oneplus/onlineconfig/OpSystemUIGestureOnlineConfig;-><init>(Landroid/content/Context;)V
+
+    iput-object v0, p0, Lcom/oneplus/systemui/statusbar/phone/OpStatusBar;->mGestureOnlineConfig:Lcom/oneplus/onlineconfig/OpSystemUIGestureOnlineConfig;
+
     return-void
 .end method
 
@@ -4804,7 +4858,7 @@
 
     invoke-virtual {v2}, Lcom/oneplus/aod/OpAodDisplayViewManager;->resetStatus()V
 
-    const-string v2, "stopDozing"
+    const-string/jumbo v2, "stopDozing"
 
     invoke-static {v1, v2}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 

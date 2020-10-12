@@ -10,12 +10,15 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
+        Lcom/android/systemui/assist/AssistManager$AssistManagerLaunchMode;,
         Lcom/android/systemui/assist/AssistManager$UiController;
     }
 .end annotation
 
 
 # instance fields
+.field EXTRA_ASSIST_MANAGER_LAUNCH_MODE:Ljava/lang/String;
+
 .field private final mAssistDisclosure:Lcom/android/systemui/assist/AssistDisclosure;
 
 .field protected final mAssistUtils:Lcom/android/internal/app/AssistUtils;
@@ -58,6 +61,10 @@
     iput-boolean v0, p0, Lcom/android/systemui/assist/AssistManager;->mIsPowerLongPressWithAssistant:Z
 
     iput-boolean v0, p0, Lcom/android/systemui/assist/AssistManager;->mIsPowerLongPressWithGoogleAssistant:Z
+
+    const-string v1, "assistant_launch_mode"
+
+    iput-object v1, p0, Lcom/android/systemui/assist/AssistManager;->EXTRA_ASSIST_MANAGER_LAUNCH_MODE:Ljava/lang/String;
 
     new-instance v1, Lcom/android/systemui/assist/AssistManager$1;
 
@@ -1129,6 +1136,16 @@
     goto :goto_1
 
     :cond_8
+    iget-object v1, p0, Lcom/android/systemui/assist/AssistManager;->EXTRA_ASSIST_MANAGER_LAUNCH_MODE:Ljava/lang/String;
+
+    sget-object v3, Lcom/android/systemui/assist/AssistManager$AssistManagerLaunchMode;->DEFAULT:Lcom/android/systemui/assist/AssistManager$AssistManagerLaunchMode;
+
+    invoke-virtual {v3}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v3
+
+    invoke-virtual {p1, v1, v3}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
+
     invoke-direct {p0, p1, v0, v2}, Lcom/android/systemui/assist/AssistManager;->startAssistInternal(Landroid/os/Bundle;Landroid/content/ComponentName;Z)V
 
     :goto_1

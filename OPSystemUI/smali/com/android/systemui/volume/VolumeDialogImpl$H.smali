@@ -47,6 +47,13 @@
     :pswitch_0
     iget-object p0, p0, Lcom/android/systemui/volume/VolumeDialogImpl$H;->this$0:Lcom/android/systemui/volume/VolumeDialogImpl;
 
+    invoke-static {p0}, Lcom/android/systemui/volume/VolumeDialogImpl;->access$4300(Lcom/android/systemui/volume/VolumeDialogImpl;)V
+
+    goto :goto_1
+
+    :pswitch_1
+    iget-object p0, p0, Lcom/android/systemui/volume/VolumeDialogImpl$H;->this$0:Lcom/android/systemui/volume/VolumeDialogImpl;
+
     invoke-static {p0}, Lcom/android/systemui/volume/VolumeDialogImpl;->access$4200(Lcom/android/systemui/volume/VolumeDialogImpl;)Lcom/android/systemui/plugins/VolumeDialogController$State;
 
     move-result-object p1
@@ -55,14 +62,14 @@
 
     goto :goto_1
 
-    :pswitch_1
+    :pswitch_2
     iget-object p0, p0, Lcom/android/systemui/volume/VolumeDialogImpl$H;->this$0:Lcom/android/systemui/volume/VolumeDialogImpl;
 
     invoke-virtual {p0}, Lcom/android/systemui/volume/VolumeDialogImpl;->rescheduleTimeoutH()V
 
     goto :goto_1
 
-    :pswitch_2
+    :pswitch_3
     iget-object p0, p0, Lcom/android/systemui/volume/VolumeDialogImpl$H;->this$0:Lcom/android/systemui/volume/VolumeDialogImpl;
 
     iget v0, p1, Landroid/os/Message;->arg1:I
@@ -83,7 +90,7 @@
 
     goto :goto_1
 
-    :pswitch_3
+    :pswitch_4
     iget-object p0, p0, Lcom/android/systemui/volume/VolumeDialogImpl$H;->this$0:Lcom/android/systemui/volume/VolumeDialogImpl;
 
     const/4 p1, 0x0
@@ -92,7 +99,7 @@
 
     goto :goto_1
 
-    :pswitch_4
+    :pswitch_5
     iget-object p0, p0, Lcom/android/systemui/volume/VolumeDialogImpl$H;->this$0:Lcom/android/systemui/volume/VolumeDialogImpl;
 
     iget-object p1, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
@@ -103,7 +110,7 @@
 
     goto :goto_1
 
-    :pswitch_5
+    :pswitch_6
     iget-object p0, p0, Lcom/android/systemui/volume/VolumeDialogImpl$H;->this$0:Lcom/android/systemui/volume/VolumeDialogImpl;
 
     iget p1, p1, Landroid/os/Message;->arg1:I
@@ -112,7 +119,7 @@
 
     goto :goto_1
 
-    :pswitch_6
+    :pswitch_7
     iget-object p0, p0, Lcom/android/systemui/volume/VolumeDialogImpl$H;->this$0:Lcom/android/systemui/volume/VolumeDialogImpl;
 
     iget p1, p1, Landroid/os/Message;->arg1:I
@@ -124,6 +131,7 @@
 
     :pswitch_data_0
     .packed-switch 0x1
+        :pswitch_7
         :pswitch_6
         :pswitch_5
         :pswitch_4

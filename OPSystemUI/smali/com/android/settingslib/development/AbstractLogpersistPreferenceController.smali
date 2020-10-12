@@ -86,7 +86,7 @@
     goto :goto_0
 
     :cond_0
-    const-string v1, "stop"
+    const-string/jumbo v1, "stop"
 
     :goto_0
     const-string v2, "logd.logpersistd"

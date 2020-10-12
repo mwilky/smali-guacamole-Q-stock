@@ -81,7 +81,7 @@
 
     const-string v23, "odi_captions_tooltip_click"
 
-    const-string v24, "status_bar_icon_changed"
+    const-string/jumbo v24, "status_bar_icon_changed"
 
     filled-new-array/range {v1 .. v24}, [Ljava/lang/String;
 
@@ -109,7 +109,7 @@
 
     const-string/jumbo v10, "usb_temperature_below_threshold"
 
-    const-string v11, "still_showing_after_dismissed"
+    const-string/jumbo v11, "still_showing_after_dismissed"
 
     filled-new-array/range {v1 .. v11}, [Ljava/lang/String;
 

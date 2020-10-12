@@ -1060,7 +1060,7 @@
 
     const-string v0, "OpWarpChargingView"
 
-    const-string v1, "stopAnimation"
+    const-string/jumbo v1, "stopAnimation"
 
     invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 

@@ -1369,7 +1369,7 @@
 
     move-result-object v0
 
-    const-string v1, "status_bar_show_battery_percent"
+    const-string/jumbo v1, "status_bar_show_battery_percent"
 
     invoke-static {v1}, Landroid/provider/Settings$System;->getUriFor(Ljava/lang/String;)Landroid/net/Uri;
 

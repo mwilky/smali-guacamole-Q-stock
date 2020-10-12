@@ -1301,7 +1301,7 @@
 
     if-eqz v0, :cond_4
 
-    const-string v0, "stop anim"
+    const-string/jumbo v0, "stop anim"
 
     invoke-static {v1, v0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 

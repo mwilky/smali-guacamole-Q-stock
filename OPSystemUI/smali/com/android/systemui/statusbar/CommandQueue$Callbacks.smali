@@ -129,7 +129,7 @@
     return-void
 .end method
 
-.method public notifyNavBarColorChanged(ILjava/lang/String;)V
+.method public notifyNavBarColorChanged(ILjava/lang/String;Ljava/lang/String;)V
     .locals 0
 
     return-void

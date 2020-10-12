@@ -563,6 +563,7 @@
     <string name="drag_to_rearrange_tiles">按住并拖动即可重新排列图块</string>
     <string name="drag_to_remove_disabled">您至少需要 %1$d 个卡片</string>
     <string name="drag_to_remove_tiles">拖动到此处即可移除</string>
+    <string name="earphone_support_battery_info">"左: %1$s  右: %2$s"</string>
     <string name="empty_shade_text">没有通知</string>
     <string name="enable_adb">USB 调试</string>
     <string name="enable_adb_summary">连接 USB 后启用调试模式</string>

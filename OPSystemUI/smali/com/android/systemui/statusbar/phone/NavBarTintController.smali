@@ -8,6 +8,8 @@
 
 
 # instance fields
+.field private mByPassThreshold:Z
+
 .field private mCurrentMedianLuma:F
 
 .field private final mHandler:Landroid/os/Handler;
@@ -74,6 +76,8 @@
     iput-boolean v0, p0, Lcom/android/systemui/statusbar/phone/NavBarTintController;->mSamplingEnabled:Z
 
     iput-boolean v0, p0, Lcom/android/systemui/statusbar/phone/NavBarTintController;->mSamplingListenerRegistered:Z
+
+    iput-boolean v0, p0, Lcom/android/systemui/statusbar/phone/NavBarTintController;->mByPassThreshold:Z
 
     new-instance v0, Lcom/android/systemui/statusbar/phone/NavBarTintController$1;
 
@@ -308,7 +312,7 @@
 
     cmpl-float v0, v0, v1
 
-    if-gtz v0, :cond_0
+    if-gtz v0, :cond_1
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/NavBarTintController;->mNavigationBarView:Lcom/android/systemui/statusbar/phone/NavigationBarView;
 
@@ -316,24 +320,29 @@
 
     move-result v0
 
-    if-eqz v0, :cond_2
+    if-nez v0, :cond_0
 
+    iget-boolean v0, p0, Lcom/android/systemui/statusbar/phone/NavBarTintController;->mByPassThreshold:Z
+
+    if-eqz v0, :cond_3
+
+    :cond_0
     iget v0, p0, Lcom/android/systemui/statusbar/phone/NavBarTintController;->mNavBarMode:I
 
     invoke-static {v0}, Lcom/android/systemui/shared/system/QuickStepContract;->isGesturalMode(I)Z
 
     move-result v0
 
-    if-eqz v0, :cond_2
+    if-eqz v0, :cond_3
 
-    :cond_0
+    :cond_1
     iget v0, p0, Lcom/android/systemui/statusbar/phone/NavBarTintController;->mLuminanceThreshold:F
 
     cmpl-float v0, p1, v0
 
     const/4 v1, 0x1
 
-    if-lez v0, :cond_1
+    if-lez v0, :cond_2
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/NavBarTintController;->mLightBarController:Lcom/android/systemui/statusbar/phone/LightBarTransitionsController;
 
@@ -341,7 +350,7 @@
 
     goto :goto_0
 
-    :cond_1
+    :cond_2
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/NavBarTintController;->mLightBarController:Lcom/android/systemui/statusbar/phone/LightBarTransitionsController;
 
     const/4 v2, 0x0
@@ -351,7 +360,7 @@
     :goto_0
     iput p1, p0, Lcom/android/systemui/statusbar/phone/NavBarTintController;->mCurrentMedianLuma:F
 
-    :cond_2
+    :cond_3
     return-void
 .end method
 
@@ -653,6 +662,14 @@
     .locals 0
 
     invoke-direct {p0}, Lcom/android/systemui/statusbar/phone/NavBarTintController;->requestUpdateSamplingListener()V
+
+    return-void
+.end method
+
+.method public setByPassThreshold(Z)V
+    .locals 0
+
+    iput-boolean p1, p0, Lcom/android/systemui/statusbar/phone/NavBarTintController;->mByPassThreshold:Z
 
     return-void
 .end method

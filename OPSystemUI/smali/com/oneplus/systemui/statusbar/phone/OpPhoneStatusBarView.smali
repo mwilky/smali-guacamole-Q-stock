@@ -123,7 +123,7 @@
 
     iget-object v0, p0, Lcom/oneplus/systemui/statusbar/phone/OpPhoneStatusBarView;->mStatusIconContainer:Lcom/android/systemui/statusbar/phone/StatusIconContainer;
 
-    const-string v1, "status_icon_container"
+    const-string/jumbo v1, "status_icon_container"
 
     invoke-virtual {v0, v1}, Lcom/android/systemui/statusbar/phone/StatusIconContainer;->setOpTag(Ljava/lang/String;)V
 

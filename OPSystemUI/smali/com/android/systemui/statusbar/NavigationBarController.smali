@@ -11,6 +11,8 @@
 
 
 # instance fields
+.field private mClassName:Ljava/lang/String;
+
 .field private final mContext:Landroid/content/Context;
 
 .field private final mDisplayManager:Landroid/hardware/display/DisplayManager;
@@ -449,7 +451,9 @@
 
     iget-object p2, p0, Lcom/android/systemui/statusbar/NavigationBarController;->mPackageName:Ljava/lang/String;
 
-    invoke-virtual {p6, p1, p2}, Lcom/android/systemui/statusbar/phone/NavigationBarFragment;->notifyNavBarColorChanged(ILjava/lang/String;)V
+    iget-object p7, p0, Lcom/android/systemui/statusbar/NavigationBarController;->mClassName:Ljava/lang/String;
+
+    invoke-virtual {p6, p1, p2, p7}, Lcom/android/systemui/statusbar/phone/NavigationBarFragment;->notifyNavBarColorChanged(ILjava/lang/String;Ljava/lang/String;)V
 
     :cond_2
     iget-object p1, p0, Lcom/android/systemui/statusbar/NavigationBarController;->mNavigationBars:Landroid/util/SparseArray;
@@ -510,12 +514,14 @@
     return-void
 .end method
 
-.method public notifyNavBarColorChanged(ILjava/lang/String;)V
+.method public notifyNavBarColorChanged(ILjava/lang/String;Ljava/lang/String;)V
     .locals 1
 
     iput p1, p0, Lcom/android/systemui/statusbar/NavigationBarController;->mNavigationBarColor:I
 
     iput-object p2, p0, Lcom/android/systemui/statusbar/NavigationBarController;->mPackageName:Ljava/lang/String;
+
+    iput-object p3, p0, Lcom/android/systemui/statusbar/NavigationBarController;->mClassName:Ljava/lang/String;
 
     iget-object p0, p0, Lcom/android/systemui/statusbar/NavigationBarController;->mNavigationBars:Landroid/util/SparseArray;
 
@@ -529,7 +535,7 @@
 
     if-eqz p0, :cond_0
 
-    invoke-virtual {p0, p1, p2}, Lcom/android/systemui/statusbar/phone/NavigationBarFragment;->notifyNavBarColorChanged(ILjava/lang/String;)V
+    invoke-virtual {p0, p1, p2, p3}, Lcom/android/systemui/statusbar/phone/NavigationBarFragment;->notifyNavBarColorChanged(ILjava/lang/String;Ljava/lang/String;)V
 
     :cond_0
     return-void

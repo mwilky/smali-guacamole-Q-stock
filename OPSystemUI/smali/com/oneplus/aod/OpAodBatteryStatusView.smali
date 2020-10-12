@@ -446,23 +446,45 @@
 
     if-ne p1, v0, :cond_0
 
-    invoke-virtual {p0}, Landroid/widget/LinearLayout;->getContext()Landroid/content/Context;
+    :try_start_0
+    new-instance p1, Landroid/graphics/fonts/Font$Builder;
+
+    iget-object v0, p0, Landroid/widget/LinearLayout;->mContext:Landroid/content/Context;
+
+    invoke-virtual {v0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v0
+
+    sget v1, Lcom/android/systemui/R$font;->neuehaasgrotdispround35thin:I
+
+    invoke-direct {p1, v0, v1}, Landroid/graphics/fonts/Font$Builder;-><init>(Landroid/content/res/Resources;I)V
+
+    invoke-virtual {p1}, Landroid/graphics/fonts/Font$Builder;->build()Landroid/graphics/fonts/Font;
 
     move-result-object p1
 
-    sget v0, Lcom/android/systemui/R$font;->oneplus_aod_font:I
+    new-instance v0, Landroid/graphics/fonts/FontFamily$Builder;
 
-    invoke-static {p1, v0}, Landroid/support/v4/content/res/ResourcesCompat;->getFont(Landroid/content/Context;I)Landroid/graphics/Typeface;
+    invoke-direct {v0, p1}, Landroid/graphics/fonts/FontFamily$Builder;-><init>(Landroid/graphics/fonts/Font;)V
 
-    move-result-object p1
-
-    const/16 v0, 0x190
-
-    const/4 v1, 0x0
-
-    invoke-static {p1, v0, v1}, Landroid/graphics/Typeface;->create(Landroid/graphics/Typeface;IZ)Landroid/graphics/Typeface;
+    invoke-virtual {v0}, Landroid/graphics/fonts/FontFamily$Builder;->build()Landroid/graphics/fonts/FontFamily;
 
     move-result-object p1
+
+    new-instance v0, Landroid/graphics/Typeface$CustomFallbackBuilder;
+
+    invoke-direct {v0, p1}, Landroid/graphics/Typeface$CustomFallbackBuilder;-><init>(Landroid/graphics/fonts/FontFamily;)V
+
+    invoke-virtual {v0}, Landroid/graphics/Typeface$CustomFallbackBuilder;->build()Landroid/graphics/Typeface;
+
+    move-result-object p1
+    :try_end_0
+    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
+
+    goto :goto_0
+
+    :catch_0
+    const/4 p1, 0x0
 
     goto :goto_0
 

@@ -141,7 +141,7 @@
 
     if-ne p2, p0, :cond_1
 
-    const-string p0, "statusbar"
+    const-string/jumbo p0, "statusbar"
 
     invoke-static {p0}, Landroid/os/ServiceManager;->getService(Ljava/lang/String;)Landroid/os/IBinder;
 

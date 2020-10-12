@@ -364,7 +364,7 @@
 
     :cond_5
     :goto_1
-    const-string p0, "statusBarNotification.getNotification().actions is null or invalid"
+    const-string/jumbo p0, "statusBarNotification.getNotification().actions is null or invalid"
 
     invoke-static {v3, p0}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 

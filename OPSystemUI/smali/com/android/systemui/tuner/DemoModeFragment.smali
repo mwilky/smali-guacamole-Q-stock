@@ -263,7 +263,7 @@
 
     invoke-virtual {v5, v0}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V
 
-    const-string v5, "status"
+    const-string/jumbo v5, "status"
 
     invoke-virtual {v0, v1, v5}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 

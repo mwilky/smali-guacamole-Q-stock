@@ -563,6 +563,7 @@
     <string name="drag_to_rearrange_tiles">按住並拖曳即可重新排列圖塊</string>
     <string name="drag_to_remove_disabled">你至少必須要有 %1$d 個資訊方塊</string>
     <string name="drag_to_remove_tiles">拖曳到這裡即可移除</string>
+    <string name="earphone_support_battery_info">"左: %1$s  右: %2$s"</string>
     <string name="empty_shade_text">沒有通知</string>
     <string name="enable_adb">USB 偵錯</string>
     <string name="enable_adb_summary">連接 USB 時進入偵錯模式</string>

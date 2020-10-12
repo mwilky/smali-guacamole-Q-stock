@@ -145,7 +145,7 @@
 .method public provideIStatusBarService()Lcom/android/internal/statusbar/IStatusBarService;
     .locals 0
 
-    const-string p0, "statusbar"
+    const-string/jumbo p0, "statusbar"
 
     invoke-static {p0}, Landroid/os/ServiceManager;->getService(Ljava/lang/String;)Landroid/os/IBinder;
 

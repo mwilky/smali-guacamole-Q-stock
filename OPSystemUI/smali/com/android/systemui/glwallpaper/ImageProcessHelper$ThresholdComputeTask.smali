@@ -42,46 +42,78 @@
 
 # virtual methods
 .method protected varargs doInBackground([Landroid/graphics/Bitmap;)Ljava/lang/Float;
-    .locals 1
+    .locals 4
 
     const/4 p0, 0x0
 
     aget-object p0, p1, p0
 
+    const p1, 0x3f4ccccd    # 0.8f
+
+    invoke-static {p1}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
+
+    move-result-object p1
+
     if-eqz p0, :cond_0
 
-    new-instance p1, Lcom/android/systemui/glwallpaper/ImageProcessHelper$Threshold;
+    :try_start_0
+    new-instance v0, Lcom/android/systemui/glwallpaper/ImageProcessHelper$Threshold;
 
-    const/4 v0, 0x0
+    const/4 v1, 0x0
 
-    invoke-direct {p1, v0}, Lcom/android/systemui/glwallpaper/ImageProcessHelper$Threshold;-><init>(Lcom/android/systemui/glwallpaper/ImageProcessHelper$1;)V
+    invoke-direct {v0, v1}, Lcom/android/systemui/glwallpaper/ImageProcessHelper$Threshold;-><init>(Lcom/android/systemui/glwallpaper/ImageProcessHelper$1;)V
 
-    invoke-virtual {p1, p0}, Lcom/android/systemui/glwallpaper/ImageProcessHelper$Threshold;->compute(Landroid/graphics/Bitmap;)F
+    invoke-virtual {v0, p0}, Lcom/android/systemui/glwallpaper/ImageProcessHelper$Threshold;->compute(Landroid/graphics/Bitmap;)F
 
-    move-result p0
+    move-result v0
 
-    invoke-static {p0}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
+    invoke-static {v0}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
+
+    move-result-object p0
+    :try_end_0
+    .catch Ljava/lang/RuntimeException; {:try_start_0 .. :try_end_0} :catch_0
+
+    return-object p0
+
+    :catch_0
+    move-exception v0
+
+    invoke-static {}, Lcom/android/systemui/glwallpaper/ImageProcessHelper;->access$200()Ljava/lang/String;
+
+    move-result-object v1
+
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v3, "Failed at computing threshold, color space="
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p0}, Landroid/graphics/Bitmap;->getColorSpace()Landroid/graphics/ColorSpace;
 
     move-result-object p0
 
-    return-object p0
+    invoke-virtual {v2, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p0
+
+    invoke-static {v1, p0, v0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
+
+    return-object p1
 
     :cond_0
     invoke-static {}, Lcom/android/systemui/glwallpaper/ImageProcessHelper;->access$200()Ljava/lang/String;
 
     move-result-object p0
 
-    const-string p1, "ThresholdComputeTask: Can\'t get bitmap"
+    const-string v0, "ThresholdComputeTask: Can\'t get bitmap"
 
-    invoke-static {p0, p1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {p0, v0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    const p0, 0x3f4ccccd    # 0.8f
-
-    invoke-static {p0}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
-
-    move-result-object p0
-
-    return-object p0
+    return-object p1
 .end method
 
 .method protected bridge synthetic doInBackground([Ljava/lang/Object;)Ljava/lang/Object;

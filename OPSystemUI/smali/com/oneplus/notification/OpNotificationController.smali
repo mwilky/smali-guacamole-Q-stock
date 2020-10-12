@@ -20,6 +20,16 @@
 
 .field private static final ESPORTS_MODE_ENABLED:Landroid/net/Uri;
 
+.field private static final FORCE_INVERTION_LIST:Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/List<",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+.end field
+
 .field private static final GAME_MODE_3RD_PARTY_CALLS_UID_URI:Landroid/net/Uri;
 
 .field private static final GAME_MODE_BLOCK_HEADS_UP_URI:Landroid/net/Uri;
@@ -236,6 +246,18 @@
     move-result-object v0
 
     sput-object v0, Lcom/oneplus/notification/OpNotificationController;->LIFETIME_EXTENSION_LIST:Ljava/util/List;
+
+    const-string v0, "com.nearme.gamecenter"
+
+    filled-new-array {v0}, [Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {v0}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
+
+    move-result-object v0
+
+    sput-object v0, Lcom/oneplus/notification/OpNotificationController;->FORCE_INVERTION_LIST:Ljava/util/List;
 
     const-string v0, "com.oneplus.soundrecorder"
 
@@ -2708,6 +2730,18 @@
     const/4 p0, 0x0
 
     :goto_0
+    return p0
+.end method
+
+.method public forceInversion(Ljava/lang/String;)Z
+    .locals 0
+
+    sget-object p0, Lcom/oneplus/notification/OpNotificationController;->FORCE_INVERTION_LIST:Ljava/util/List;
+
+    invoke-interface {p0, p1}, Ljava/util/List;->contains(Ljava/lang/Object;)Z
+
+    move-result p0
+
     return p0
 .end method
 
