@@ -195,6 +195,20 @@
 
     move-result v0
 
+    if-nez v0, :cond_3
+
+    invoke-static {}, Lcom/oneplus/screenshot/StitchViewService;->getInstance()Lcom/oneplus/screenshot/StitchViewService;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_1
+
+    invoke-static {}, Lcom/oneplus/screenshot/StitchViewService;->getInstance()Lcom/oneplus/screenshot/StitchViewService;
+
+    move-result-object v0
+
+    iget-boolean v0, v0, Lcom/oneplus/screenshot/StitchViewService;->mScrollEndReached:Z
+
     if-eqz v0, :cond_1
 
     goto :goto_0

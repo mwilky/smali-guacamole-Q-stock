@@ -398,7 +398,7 @@
 .end method
 
 .method private disableKeys(Z)V
-    .locals 2
+    .locals 4
 
     iget-object v0, p0, Lcom/oneplus/screenshot/longshot/state/LongshotMode;->mContext:Landroid/content/Context;
 
@@ -410,25 +410,69 @@
 
     check-cast v0, Landroid/app/StatusBarManager;
 
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v2, "disablekeys() fun called ,StatusBarManager is null?"
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const/4 v2, 0x0
+
     if-nez v0, :cond_0
+
+    const/4 v3, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    move v3, v2
+
+    :goto_0
+    invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    const-string v3, "Longshot.LongshotMode"
+
+    invoke-static {v3, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    if-nez v0, :cond_1
 
     return-void
 
-    :cond_0
-    if-eqz p1, :cond_1
+    :cond_1
+    if-eqz p1, :cond_2
 
     const/high16 v1, 0x1600000
 
     invoke-virtual {v0, v1}, Landroid/app/StatusBarManager;->disable(I)V
 
-    goto :goto_0
+    goto :goto_1
 
-    :cond_1
-    const/4 v1, 0x0
+    :cond_2
+    invoke-virtual {v0, v2}, Landroid/app/StatusBarManager;->disable(I)V
 
-    invoke-virtual {v0, v1}, Landroid/app/StatusBarManager;->disable(I)V
+    :goto_1
+    new-instance v1, Ljava/lang/StringBuilder;
 
-    :goto_0
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v2, "disablekeys() fun called, keys disbaled ="
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-static {v3, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
     return-void
 .end method
 
@@ -506,6 +550,12 @@
     sget-boolean v0, Lcom/oneplus/screenshot/longshot/util/Configs;->sIsHigherList:Z
 
     if-eqz v0, :cond_2
+
+    invoke-static {}, Lcom/oneplus/screenshot/longshot/util/Configs;->shouldStitchByView()Z
+
+    move-result v0
+
+    if-nez v0, :cond_2
 
     sget-object v0, Lcom/oneplus/screenshot/longshot/util/Configs;->PERCENT_MOVE_HIGHER_BOTTOM:Lcom/oneplus/screenshot/longshot/util/Configs;
 
@@ -1493,7 +1543,7 @@
 .end method
 
 .method private onDestroy()V
-    .locals 2
+    .locals 3
 
     const-string v0, "Longshot.LongshotMode"
 
@@ -1501,78 +1551,82 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    invoke-virtual {p0}, Lcom/oneplus/screenshot/longshot/state/LongshotMode;->getContext()Landroid/content/Context;
+    const-string v1, "disablekeys() at onDestroy"
 
-    move-result-object v0
+    invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    invoke-virtual {v0, p0}, Landroid/content/Context;->unregisterComponentCallbacks(Landroid/content/ComponentCallbacks;)V
-
-    iget-object v0, p0, Lcom/oneplus/screenshot/longshot/state/LongshotMode;->mRunnableCache:Lcom/oneplus/screenshot/longshot/cache/RunnableCache;
-
-    invoke-virtual {v0}, Lcom/oneplus/screenshot/longshot/cache/RunnableCache;->clear()V
-
-    iget-object v0, p0, Lcom/oneplus/screenshot/longshot/state/LongshotMode;->mFirstCache:Lcom/oneplus/screenshot/longshot/cache/ImageCache;
-
-    invoke-virtual {v0}, Lcom/oneplus/screenshot/longshot/cache/ImageCache;->clear()V
-
-    iget-object v0, p0, Lcom/oneplus/screenshot/longshot/state/LongshotMode;->mImageCache:Lcom/oneplus/screenshot/longshot/cache/ImageCache;
-
-    invoke-virtual {v0}, Lcom/oneplus/screenshot/longshot/cache/ImageCache;->clear()V
-
-    iget-object v0, p0, Lcom/oneplus/screenshot/longshot/state/LongshotMode;->mCompareCache:Lcom/oneplus/screenshot/longshot/cache/CompareCache;
-
-    invoke-virtual {v0}, Lcom/oneplus/screenshot/longshot/cache/CompareCache;->clear()V
-
-    iget-object v0, p0, Lcom/oneplus/screenshot/longshot/state/LongshotMode;->mJoinCache:Lcom/oneplus/screenshot/longshot/cache/JoinCache;
-
-    invoke-virtual {v0}, Lcom/oneplus/screenshot/longshot/cache/JoinCache;->clear()V
-
-    iget-object v0, p0, Lcom/oneplus/screenshot/longshot/state/LongshotMode;->mBarCache:Lcom/oneplus/screenshot/longshot/cache/ImageCache;
-
-    invoke-virtual {v0}, Lcom/oneplus/screenshot/longshot/cache/ImageCache;->clear()V
-
-    iget-object v0, p0, Lcom/oneplus/screenshot/longshot/state/LongshotMode;->mCheckThread:Lcom/oneplus/screenshot/longshot/task/BaseThread;
-
-    const/4 v1, 0x0
-
-    if-eqz v0, :cond_0
-
-    invoke-virtual {v0}, Lcom/oneplus/screenshot/longshot/task/BaseThread;->stop()V
-
-    iput-object v1, p0, Lcom/oneplus/screenshot/longshot/state/LongshotMode;->mCheckThread:Lcom/oneplus/screenshot/longshot/task/BaseThread;
-
-    :cond_0
-    iget-object v0, p0, Lcom/oneplus/screenshot/longshot/state/LongshotMode;->mGcThread:Lcom/oneplus/screenshot/longshot/task/BaseThread;
-
-    if-eqz v0, :cond_1
-
-    invoke-virtual {v0}, Lcom/oneplus/screenshot/longshot/task/BaseThread;->stop()V
-
-    iput-object v1, p0, Lcom/oneplus/screenshot/longshot/state/LongshotMode;->mGcThread:Lcom/oneplus/screenshot/longshot/task/BaseThread;
-
-    :cond_1
-    iget-object v0, p0, Lcom/oneplus/screenshot/longshot/state/LongshotMode;->mFinisher:Ljava/lang/Runnable;
-
-    if-eqz v0, :cond_2
-
-    invoke-interface {v0}, Ljava/lang/Runnable;->run()V
-
-    iput-object v1, p0, Lcom/oneplus/screenshot/longshot/state/LongshotMode;->mFinisher:Ljava/lang/Runnable;
-
-    :cond_2
-    iget-object v0, p0, Lcom/oneplus/screenshot/longshot/state/LongshotMode;->mPreviewController:Lcom/oneplus/screenshot/longshot/preview/PreviewController;
-
-    if-eqz v0, :cond_3
-
-    invoke-virtual {v0}, Lcom/oneplus/screenshot/longshot/preview/PreviewController;->onStop()V
-
-    :cond_3
     const/4 v0, 0x0
-
-    invoke-direct {p0, v0}, Lcom/oneplus/screenshot/longshot/state/LongshotMode;->blockWindowTouch(Z)V
 
     invoke-direct {p0, v0}, Lcom/oneplus/screenshot/longshot/state/LongshotMode;->disableKeys(Z)V
 
+    invoke-direct {p0, v0}, Lcom/oneplus/screenshot/longshot/state/LongshotMode;->blockWindowTouch(Z)V
+
+    invoke-virtual {p0}, Lcom/oneplus/screenshot/longshot/state/LongshotMode;->getContext()Landroid/content/Context;
+
+    move-result-object v1
+
+    invoke-virtual {v1, p0}, Landroid/content/Context;->unregisterComponentCallbacks(Landroid/content/ComponentCallbacks;)V
+
+    iget-object v1, p0, Lcom/oneplus/screenshot/longshot/state/LongshotMode;->mRunnableCache:Lcom/oneplus/screenshot/longshot/cache/RunnableCache;
+
+    invoke-virtual {v1}, Lcom/oneplus/screenshot/longshot/cache/RunnableCache;->clear()V
+
+    iget-object v1, p0, Lcom/oneplus/screenshot/longshot/state/LongshotMode;->mFirstCache:Lcom/oneplus/screenshot/longshot/cache/ImageCache;
+
+    invoke-virtual {v1}, Lcom/oneplus/screenshot/longshot/cache/ImageCache;->clear()V
+
+    iget-object v1, p0, Lcom/oneplus/screenshot/longshot/state/LongshotMode;->mImageCache:Lcom/oneplus/screenshot/longshot/cache/ImageCache;
+
+    invoke-virtual {v1}, Lcom/oneplus/screenshot/longshot/cache/ImageCache;->clear()V
+
+    iget-object v1, p0, Lcom/oneplus/screenshot/longshot/state/LongshotMode;->mCompareCache:Lcom/oneplus/screenshot/longshot/cache/CompareCache;
+
+    invoke-virtual {v1}, Lcom/oneplus/screenshot/longshot/cache/CompareCache;->clear()V
+
+    iget-object v1, p0, Lcom/oneplus/screenshot/longshot/state/LongshotMode;->mJoinCache:Lcom/oneplus/screenshot/longshot/cache/JoinCache;
+
+    invoke-virtual {v1}, Lcom/oneplus/screenshot/longshot/cache/JoinCache;->clear()V
+
+    iget-object v1, p0, Lcom/oneplus/screenshot/longshot/state/LongshotMode;->mBarCache:Lcom/oneplus/screenshot/longshot/cache/ImageCache;
+
+    invoke-virtual {v1}, Lcom/oneplus/screenshot/longshot/cache/ImageCache;->clear()V
+
+    iget-object v1, p0, Lcom/oneplus/screenshot/longshot/state/LongshotMode;->mCheckThread:Lcom/oneplus/screenshot/longshot/task/BaseThread;
+
+    const/4 v2, 0x0
+
+    if-eqz v1, :cond_0
+
+    invoke-virtual {v1}, Lcom/oneplus/screenshot/longshot/task/BaseThread;->stop()V
+
+    iput-object v2, p0, Lcom/oneplus/screenshot/longshot/state/LongshotMode;->mCheckThread:Lcom/oneplus/screenshot/longshot/task/BaseThread;
+
+    :cond_0
+    iget-object v1, p0, Lcom/oneplus/screenshot/longshot/state/LongshotMode;->mGcThread:Lcom/oneplus/screenshot/longshot/task/BaseThread;
+
+    if-eqz v1, :cond_1
+
+    invoke-virtual {v1}, Lcom/oneplus/screenshot/longshot/task/BaseThread;->stop()V
+
+    iput-object v2, p0, Lcom/oneplus/screenshot/longshot/state/LongshotMode;->mGcThread:Lcom/oneplus/screenshot/longshot/task/BaseThread;
+
+    :cond_1
+    iget-object v1, p0, Lcom/oneplus/screenshot/longshot/state/LongshotMode;->mFinisher:Ljava/lang/Runnable;
+
+    if-eqz v1, :cond_2
+
+    invoke-interface {v1}, Ljava/lang/Runnable;->run()V
+
+    iput-object v2, p0, Lcom/oneplus/screenshot/longshot/state/LongshotMode;->mFinisher:Ljava/lang/Runnable;
+
+    :cond_2
+    iget-object v1, p0, Lcom/oneplus/screenshot/longshot/state/LongshotMode;->mPreviewController:Lcom/oneplus/screenshot/longshot/preview/PreviewController;
+
+    if-eqz v1, :cond_3
+
+    invoke-virtual {v1}, Lcom/oneplus/screenshot/longshot/preview/PreviewController;->onStop()V
+
+    :cond_3
     sput-boolean v0, Lcom/oneplus/screenshot/longshot/util/Configs;->isLongshotRunning:Z
 
     iget-object v0, p0, Lcom/oneplus/screenshot/longshot/state/LongshotMode;->mCurrentState:Lcom/oneplus/screenshot/longshot/state/LongshotState;
@@ -2834,6 +2888,10 @@
     if-ne p1, v1, :cond_4
 
     invoke-direct {p0, v3}, Lcom/oneplus/screenshot/longshot/state/LongshotMode;->blockWindowTouch(Z)V
+
+    const-string v1, "disablekeys() at LongshotState.SAVE"
+
+    invoke-static {v2, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     invoke-direct {p0, v3}, Lcom/oneplus/screenshot/longshot/state/LongshotMode;->disableKeys(Z)V
 

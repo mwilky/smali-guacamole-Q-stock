@@ -6,6 +6,7 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
+        Landroid/support/localbroadcastmanager/R$xml;,
         Landroid/support/localbroadcastmanager/R$transition;,
         Landroid/support/localbroadcastmanager/R$styleable;,
         Landroid/support/localbroadcastmanager/R$style;,

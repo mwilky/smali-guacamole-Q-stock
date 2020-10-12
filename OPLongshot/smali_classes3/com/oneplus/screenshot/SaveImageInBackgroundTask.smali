@@ -127,19 +127,157 @@
 
     move-result-object v12
 
-    const/4 v13, 0x1
+    invoke-virtual/range {p1 .. p1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
-    new-array v1, v13, [Ljava/lang/Object;
+    move-result-object v1
 
-    aput-object v12, v1, v0
+    const-string v2, "game_mode_status"
 
-    const-string v0, "Screenshot_%s.jpg"
+    invoke-static {v1, v2}, Landroid/provider/Settings$System;->getString(Landroid/content/ContentResolver;Ljava/lang/String;)Ljava/lang/String;
 
-    invoke-static {v0, v1}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+    move-result-object v13
+
+    invoke-static {}, Lcom/oneplus/screenshot/longshot/util/Configs;->peekTopActivity()Landroid/content/ComponentName;
+
+    move-result-object v1
+
+    if-eqz v1, :cond_0
+
+    invoke-static {}, Lcom/oneplus/screenshot/longshot/util/Configs;->peekTopActivity()Landroid/content/ComponentName;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Landroid/content/ComponentName;->getPackageName()Ljava/lang/String;
+
+    move-result-object v1
+
+    goto :goto_0
+
+    :cond_0
+    move-object v1, v10
+
+    :goto_0
+    move-object v14, v1
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v2, "top Activity component info isNull :"
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const/4 v15, 0x1
+
+    if-nez v14, :cond_1
+
+    move v2, v15
+
+    goto :goto_1
+
+    :cond_1
+    move v2, v0
+
+    :goto_1
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    const-string v2, "Longshot.SaveImageInBackgroundTask"
+
+    invoke-static {v2, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    const-string v1, "1"
+
+    invoke-virtual {v13, v1}, Ljava/lang/String;->contentEquals(Ljava/lang/CharSequence;)Z
+
+    move-result v1
+
+    const-string v3, "Screenshot_%s.jpg"
+
+    if-eqz v1, :cond_2
+
+    if-eqz v14, :cond_2
+
+    invoke-static {v14}, Lcom/oneplus/screenshot/util/Utils;->getMD5(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v1
+
+    new-instance v4, Ljava/lang/StringBuilder;
+
+    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v5, "package name = "
+
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v4, v14}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v4
+
+    invoke-static {v2, v4}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    new-array v4, v15, [Ljava/lang/Object;
+
+    new-instance v5, Ljava/lang/StringBuilder;
+
+    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
+
+    invoke-virtual {v5, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v6, "_"
+
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v5, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v5
+
+    aput-object v5, v4, v0
+
+    invoke-static {v3, v4}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v0
 
     iput-object v0, v7, Lcom/oneplus/screenshot/SaveImageInBackgroundTask;->mImageFileName:Ljava/lang/String;
+
+    goto :goto_2
+
+    :cond_2
+    new-array v1, v15, [Ljava/lang/Object;
+
+    aput-object v12, v1, v0
+
+    invoke-static {v3, v1}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v0
+
+    iput-object v0, v7, Lcom/oneplus/screenshot/SaveImageInBackgroundTask;->mImageFileName:Ljava/lang/String;
+
+    :goto_2
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v1, "screenshot name = "
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object v1, v7, Lcom/oneplus/screenshot/SaveImageInBackgroundTask;->mImageFileName:Ljava/lang/String;
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {v2, v0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     new-instance v0, Ljava/io/File;
 
@@ -185,77 +323,85 @@
 
     iput v0, v7, Lcom/oneplus/screenshot/SaveImageInBackgroundTask;->mImageHeight:I
 
-    iget v14, v9, Lcom/oneplus/screenshot/SaveImageInBackgroundData;->iconSize:I
+    iget v6, v9, Lcom/oneplus/screenshot/SaveImageInBackgroundData;->iconSize:I
 
-    iget v15, v9, Lcom/oneplus/screenshot/SaveImageInBackgroundData;->previewWidth:I
+    iget v5, v9, Lcom/oneplus/screenshot/SaveImageInBackgroundData;->previewWidth:I
 
-    iget v6, v9, Lcom/oneplus/screenshot/SaveImageInBackgroundData;->previewheight:I
+    iget v4, v9, Lcom/oneplus/screenshot/SaveImageInBackgroundData;->previewheight:I
 
     new-instance v0, Landroid/graphics/Paint;
 
     invoke-direct {v0}, Landroid/graphics/Paint;-><init>()V
 
-    move-object v5, v0
+    move-object v3, v0
 
     new-instance v0, Landroid/graphics/ColorMatrix;
 
     invoke-direct {v0}, Landroid/graphics/ColorMatrix;-><init>()V
 
-    move-object v4, v0
+    move-object v2, v0
 
     const/high16 v0, 0x3e800000    # 0.25f
 
-    invoke-virtual {v4, v0}, Landroid/graphics/ColorMatrix;->setSaturation(F)V
+    invoke-virtual {v2, v0}, Landroid/graphics/ColorMatrix;->setSaturation(F)V
 
     new-instance v0, Landroid/graphics/ColorMatrixColorFilter;
 
-    invoke-direct {v0, v4}, Landroid/graphics/ColorMatrixColorFilter;-><init>(Landroid/graphics/ColorMatrix;)V
+    invoke-direct {v0, v2}, Landroid/graphics/ColorMatrixColorFilter;-><init>(Landroid/graphics/ColorMatrix;)V
 
-    invoke-virtual {v5, v0}, Landroid/graphics/Paint;->setColorFilter(Landroid/graphics/ColorFilter;)Landroid/graphics/ColorFilter;
+    invoke-virtual {v3, v0}, Landroid/graphics/Paint;->setColorFilter(Landroid/graphics/ColorFilter;)Landroid/graphics/ColorFilter;
 
     new-instance v0, Landroid/graphics/Matrix;
 
     invoke-direct {v0}, Landroid/graphics/Matrix;-><init>()V
 
-    move-object v3, v0
+    move-object v1, v0
 
     const v16, 0x40ffffff    # 7.9999995f
 
     iget v0, v7, Lcom/oneplus/screenshot/SaveImageInBackgroundTask;->mImageWidth:I
 
-    sub-int v0, v15, v0
+    sub-int v0, v5, v0
 
     div-int/lit8 v0, v0, 0x2
 
     int-to-float v0, v0
 
-    iget v1, v7, Lcom/oneplus/screenshot/SaveImageInBackgroundTask;->mImageHeight:I
+    iget v10, v7, Lcom/oneplus/screenshot/SaveImageInBackgroundTask;->mImageHeight:I
 
-    sub-int v1, v6, v1
+    sub-int v10, v4, v10
 
-    div-int/lit8 v1, v1, 0x2
+    div-int/lit8 v10, v10, 0x2
 
-    int-to-float v1, v1
+    int-to-float v10, v10
 
-    invoke-virtual {v3, v0, v1}, Landroid/graphics/Matrix;->setTranslate(FF)V
+    invoke-virtual {v1, v0, v10}, Landroid/graphics/Matrix;->setTranslate(FF)V
 
-    iget-object v1, v9, Lcom/oneplus/screenshot/SaveImageInBackgroundData;->image:Landroid/graphics/Bitmap;
+    iget-object v10, v9, Lcom/oneplus/screenshot/SaveImageInBackgroundData;->image:Landroid/graphics/Bitmap;
 
     move-object/from16 v0, p0
 
-    move v2, v15
+    move-object/from16 v17, v1
 
-    move-object/from16 v17, v3
+    move-object v1, v10
 
-    move v3, v6
+    move-object v10, v2
 
-    move-object/from16 v18, v4
+    move v2, v5
+
+    move-object/from16 v18, v3
+
+    move v3, v4
+
+    move/from16 v19, v4
 
     move-object/from16 v4, v17
 
-    move-object/from16 v19, v5
+    move/from16 v20, v5
 
-    move/from16 v20, v6
+    move-object/from16 v5, v18
+
+    move v15, v6
 
     move/from16 v6, v16
 
@@ -263,7 +409,7 @@
 
     move-result-object v21
 
-    int-to-float v0, v14
+    int-to-float v0, v15
 
     iget v1, v7, Lcom/oneplus/screenshot/SaveImageInBackgroundTask;->mImageWidth:I
 
@@ -281,7 +427,7 @@
 
     invoke-virtual {v5, v6, v6}, Landroid/graphics/Matrix;->setScale(FF)V
 
-    int-to-float v0, v14
+    int-to-float v0, v15
 
     iget v1, v7, Lcom/oneplus/screenshot/SaveImageInBackgroundTask;->mImageWidth:I
 
@@ -295,7 +441,7 @@
 
     div-float/2addr v0, v1
 
-    int-to-float v2, v14
+    int-to-float v2, v15
 
     iget v3, v7, Lcom/oneplus/screenshot/SaveImageInBackgroundTask;->mImageHeight:I
 
@@ -313,13 +459,13 @@
 
     move-object/from16 v0, p0
 
-    move v2, v14
+    move v2, v15
 
-    move v3, v14
+    move v3, v15
 
     move-object v4, v5
 
-    move-object/from16 v5, v19
+    move-object/from16 v5, v18
 
     move/from16 v22, v6
 
@@ -331,7 +477,9 @@
 
     sget-boolean v1, Lcom/oneplus/screenshot/SaveImageInBackgroundTask;->mTickerAddSpace:Z
 
-    xor-int/2addr v1, v13
+    const/4 v2, 0x1
+
+    xor-int/2addr v1, v2
 
     sput-boolean v1, Lcom/oneplus/screenshot/SaveImageInBackgroundTask;->mTickerAddSpace:Z
 
@@ -367,191 +515,193 @@
 
     invoke-virtual {v11, v6}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
-    move-result-object v10
+    move-result-object v1
 
-    invoke-virtual {v4, v10}, Landroid/app/Notification$Builder;->setContentTitle(Ljava/lang/CharSequence;)Landroid/app/Notification$Builder;
+    invoke-virtual {v4, v1}, Landroid/app/Notification$Builder;->setContentTitle(Ljava/lang/CharSequence;)Landroid/app/Notification$Builder;
 
-    move-result-object v4
+    move-result-object v1
 
-    const v10, 0x7f0d003a
+    const v4, 0x7f0d003a
 
-    invoke-virtual {v11, v10}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+    invoke-virtual {v11, v4}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
     move-result-object v6
 
-    invoke-virtual {v4, v6}, Landroid/app/Notification$Builder;->setContentText(Ljava/lang/CharSequence;)Landroid/app/Notification$Builder;
+    invoke-virtual {v1, v6}, Landroid/app/Notification$Builder;->setContentText(Ljava/lang/CharSequence;)Landroid/app/Notification$Builder;
 
-    move-result-object v4
+    move-result-object v1
 
     const v6, 0x7f0801e1
 
-    invoke-virtual {v4, v6}, Landroid/app/Notification$Builder;->setSmallIcon(I)Landroid/app/Notification$Builder;
+    invoke-virtual {v1, v6}, Landroid/app/Notification$Builder;->setSmallIcon(I)Landroid/app/Notification$Builder;
 
-    move-result-object v4
+    move-result-object v1
 
     const-string v6, "progress"
 
-    invoke-virtual {v4, v6}, Landroid/app/Notification$Builder;->setCategory(Ljava/lang/String;)Landroid/app/Notification$Builder;
+    invoke-virtual {v1, v6}, Landroid/app/Notification$Builder;->setCategory(Ljava/lang/String;)Landroid/app/Notification$Builder;
 
-    move-result-object v4
+    move-result-object v1
 
-    invoke-virtual {v4, v2, v3}, Landroid/app/Notification$Builder;->setWhen(J)Landroid/app/Notification$Builder;
+    invoke-virtual {v1, v2, v3}, Landroid/app/Notification$Builder;->setWhen(J)Landroid/app/Notification$Builder;
 
-    move-result-object v4
+    move-result-object v1
 
-    invoke-virtual {v4, v13}, Landroid/app/Notification$Builder;->setShowWhen(Z)Landroid/app/Notification$Builder;
+    const/4 v6, 0x1
 
-    move-result-object v4
+    invoke-virtual {v1, v6}, Landroid/app/Notification$Builder;->setShowWhen(Z)Landroid/app/Notification$Builder;
+
+    move-result-object v1
 
     const v6, 0x106001c
 
     invoke-virtual {v11, v6}, Landroid/content/res/Resources;->getColor(I)I
 
-    move-result v13
+    move-result v4
 
-    invoke-virtual {v4, v13}, Landroid/app/Notification$Builder;->setColor(I)Landroid/app/Notification$Builder;
+    invoke-virtual {v1, v4}, Landroid/app/Notification$Builder;->setColor(I)Landroid/app/Notification$Builder;
 
-    move-result-object v4
+    move-result-object v1
 
-    iput-object v4, v7, Lcom/oneplus/screenshot/SaveImageInBackgroundTask;->mPublicNotificationBuilder:Landroid/app/Notification$Builder;
+    iput-object v1, v7, Lcom/oneplus/screenshot/SaveImageInBackgroundTask;->mPublicNotificationBuilder:Landroid/app/Notification$Builder;
 
-    new-instance v4, Landroid/app/Notification$Builder;
+    new-instance v1, Landroid/app/Notification$Builder;
 
-    invoke-direct {v4, v8, v5}, Landroid/app/Notification$Builder;-><init>(Landroid/content/Context;Ljava/lang/String;)V
+    invoke-direct {v1, v8, v5}, Landroid/app/Notification$Builder;-><init>(Landroid/content/Context;Ljava/lang/String;)V
 
-    new-instance v5, Ljava/lang/StringBuilder;
+    new-instance v4, Ljava/lang/StringBuilder;
 
-    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
 
-    const v13, 0x7f0d003b
-
-    invoke-virtual {v11, v13}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
-
-    move-result-object v13
-
-    invoke-virtual {v5, v13}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    sget-boolean v13, Lcom/oneplus/screenshot/SaveImageInBackgroundTask;->mTickerAddSpace:Z
-
-    if-eqz v13, :cond_0
-
-    const-string v13, " "
-
-    goto :goto_0
-
-    :cond_0
-    const-string v13, ""
-
-    :goto_0
-    invoke-virtual {v5, v13}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v5
-
-    invoke-virtual {v4, v5}, Landroid/app/Notification$Builder;->setTicker(Ljava/lang/CharSequence;)Landroid/app/Notification$Builder;
-
-    move-result-object v4
-
-    const v5, 0x7f0d003c
+    const v5, 0x7f0d003b
 
     invoke-virtual {v11, v5}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
     move-result-object v5
 
-    invoke-virtual {v4, v5}, Landroid/app/Notification$Builder;->setContentTitle(Ljava/lang/CharSequence;)Landroid/app/Notification$Builder;
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    sget-boolean v5, Lcom/oneplus/screenshot/SaveImageInBackgroundTask;->mTickerAddSpace:Z
+
+    if-eqz v5, :cond_3
+
+    const-string v5, " "
+
+    goto :goto_3
+
+    :cond_3
+    const-string v5, ""
+
+    :goto_3
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v4
 
-    invoke-virtual {v11, v10}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+    invoke-virtual {v1, v4}, Landroid/app/Notification$Builder;->setTicker(Ljava/lang/CharSequence;)Landroid/app/Notification$Builder;
 
-    move-result-object v5
+    move-result-object v1
 
-    invoke-virtual {v4, v5}, Landroid/app/Notification$Builder;->setContentText(Ljava/lang/CharSequence;)Landroid/app/Notification$Builder;
+    const v4, 0x7f0d003c
 
-    move-result-object v4
-
-    const v5, 0x7f0801e1
-
-    invoke-virtual {v4, v5}, Landroid/app/Notification$Builder;->setSmallIcon(I)Landroid/app/Notification$Builder;
+    invoke-virtual {v11, v4}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
     move-result-object v4
 
-    invoke-virtual {v4, v2, v3}, Landroid/app/Notification$Builder;->setWhen(J)Landroid/app/Notification$Builder;
+    invoke-virtual {v1, v4}, Landroid/app/Notification$Builder;->setContentTitle(Ljava/lang/CharSequence;)Landroid/app/Notification$Builder;
+
+    move-result-object v1
+
+    const v4, 0x7f0d003a
+
+    invoke-virtual {v11, v4}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
     move-result-object v4
 
-    const/4 v5, 0x1
+    invoke-virtual {v1, v4}, Landroid/app/Notification$Builder;->setContentText(Ljava/lang/CharSequence;)Landroid/app/Notification$Builder;
 
-    invoke-virtual {v4, v5}, Landroid/app/Notification$Builder;->setShowWhen(Z)Landroid/app/Notification$Builder;
+    move-result-object v1
 
-    move-result-object v4
+    const v4, 0x7f0801e1
+
+    invoke-virtual {v1, v4}, Landroid/app/Notification$Builder;->setSmallIcon(I)Landroid/app/Notification$Builder;
+
+    move-result-object v1
+
+    invoke-virtual {v1, v2, v3}, Landroid/app/Notification$Builder;->setWhen(J)Landroid/app/Notification$Builder;
+
+    move-result-object v1
+
+    const/4 v4, 0x1
+
+    invoke-virtual {v1, v4}, Landroid/app/Notification$Builder;->setShowWhen(Z)Landroid/app/Notification$Builder;
+
+    move-result-object v1
 
     invoke-virtual {v11, v6}, Landroid/content/res/Resources;->getColor(I)I
 
-    move-result v5
+    move-result v4
 
-    invoke-virtual {v4, v5}, Landroid/app/Notification$Builder;->setColor(I)Landroid/app/Notification$Builder;
+    invoke-virtual {v1, v4}, Landroid/app/Notification$Builder;->setColor(I)Landroid/app/Notification$Builder;
 
-    move-result-object v4
-
-    iget-object v5, v7, Lcom/oneplus/screenshot/SaveImageInBackgroundTask;->mNotificationStyle:Landroid/app/Notification$BigPictureStyle;
-
-    invoke-virtual {v4, v5}, Landroid/app/Notification$Builder;->setStyle(Landroid/app/Notification$Style;)Landroid/app/Notification$Builder;
-
-    move-result-object v4
-
-    iget-object v5, v7, Lcom/oneplus/screenshot/SaveImageInBackgroundTask;->mPublicNotificationBuilder:Landroid/app/Notification$Builder;
-
-    invoke-virtual {v5}, Landroid/app/Notification$Builder;->build()Landroid/app/Notification;
-
-    move-result-object v5
-
-    invoke-virtual {v4, v5}, Landroid/app/Notification$Builder;->setPublicVersion(Landroid/app/Notification;)Landroid/app/Notification$Builder;
-
-    move-result-object v4
-
-    iput-object v4, v7, Lcom/oneplus/screenshot/SaveImageInBackgroundTask;->mNotificationBuilder:Landroid/app/Notification$Builder;
-
-    iget-object v4, v7, Lcom/oneplus/screenshot/SaveImageInBackgroundTask;->mNotificationBuilder:Landroid/app/Notification$Builder;
-
-    const/16 v5, 0x20
-
-    const/4 v6, 0x1
-
-    invoke-virtual {v4, v5, v6}, Landroid/app/Notification$Builder;->setFlag(IZ)Landroid/app/Notification$Builder;
-
-    iget-object v4, v7, Lcom/oneplus/screenshot/SaveImageInBackgroundTask;->mNotificationManager:Landroid/app/NotificationManager;
-
-    iget-object v5, v7, Lcom/oneplus/screenshot/SaveImageInBackgroundTask;->mNotificationBuilder:Landroid/app/Notification$Builder;
-
-    invoke-virtual {v5}, Landroid/app/Notification$Builder;->build()Landroid/app/Notification;
-
-    move-result-object v5
-
-    invoke-virtual {v4, v6, v5}, Landroid/app/NotificationManager;->notify(ILandroid/app/Notification;)V
-
-    iget-object v4, v7, Lcom/oneplus/screenshot/SaveImageInBackgroundTask;->mNotificationBuilder:Landroid/app/Notification$Builder;
-
-    invoke-virtual {v0}, Landroid/graphics/Bitmap;->createAshmemBitmap()Landroid/graphics/Bitmap;
-
-    move-result-object v5
-
-    invoke-virtual {v4, v5}, Landroid/app/Notification$Builder;->setLargeIcon(Landroid/graphics/Bitmap;)Landroid/app/Notification$Builder;
+    move-result-object v1
 
     iget-object v4, v7, Lcom/oneplus/screenshot/SaveImageInBackgroundTask;->mNotificationStyle:Landroid/app/Notification$BigPictureStyle;
 
-    const/4 v5, 0x0
+    invoke-virtual {v1, v4}, Landroid/app/Notification$Builder;->setStyle(Landroid/app/Notification$Style;)Landroid/app/Notification$Builder;
 
-    move-object v10, v5
+    move-result-object v1
 
-    check-cast v10, Landroid/graphics/Bitmap;
+    iget-object v4, v7, Lcom/oneplus/screenshot/SaveImageInBackgroundTask;->mPublicNotificationBuilder:Landroid/app/Notification$Builder;
 
-    invoke-virtual {v4, v10}, Landroid/app/Notification$BigPictureStyle;->bigLargeIcon(Landroid/graphics/Bitmap;)Landroid/app/Notification$BigPictureStyle;
+    invoke-virtual {v4}, Landroid/app/Notification$Builder;->build()Landroid/app/Notification;
 
-    move/from16 v4, p4
+    move-result-object v4
 
-    iput-boolean v4, v7, Lcom/oneplus/screenshot/SaveImageInBackgroundTask;->mRecycleBitmap:Z
+    invoke-virtual {v1, v4}, Landroid/app/Notification$Builder;->setPublicVersion(Landroid/app/Notification;)Landroid/app/Notification$Builder;
+
+    move-result-object v1
+
+    iput-object v1, v7, Lcom/oneplus/screenshot/SaveImageInBackgroundTask;->mNotificationBuilder:Landroid/app/Notification$Builder;
+
+    iget-object v1, v7, Lcom/oneplus/screenshot/SaveImageInBackgroundTask;->mNotificationBuilder:Landroid/app/Notification$Builder;
+
+    const/16 v4, 0x20
+
+    const/4 v5, 0x1
+
+    invoke-virtual {v1, v4, v5}, Landroid/app/Notification$Builder;->setFlag(IZ)Landroid/app/Notification$Builder;
+
+    iget-object v1, v7, Lcom/oneplus/screenshot/SaveImageInBackgroundTask;->mNotificationManager:Landroid/app/NotificationManager;
+
+    iget-object v4, v7, Lcom/oneplus/screenshot/SaveImageInBackgroundTask;->mNotificationBuilder:Landroid/app/Notification$Builder;
+
+    invoke-virtual {v4}, Landroid/app/Notification$Builder;->build()Landroid/app/Notification;
+
+    move-result-object v4
+
+    invoke-virtual {v1, v5, v4}, Landroid/app/NotificationManager;->notify(ILandroid/app/Notification;)V
+
+    iget-object v1, v7, Lcom/oneplus/screenshot/SaveImageInBackgroundTask;->mNotificationBuilder:Landroid/app/Notification$Builder;
+
+    invoke-virtual {v0}, Landroid/graphics/Bitmap;->createAshmemBitmap()Landroid/graphics/Bitmap;
+
+    move-result-object v4
+
+    invoke-virtual {v1, v4}, Landroid/app/Notification$Builder;->setLargeIcon(Landroid/graphics/Bitmap;)Landroid/app/Notification$Builder;
+
+    iget-object v1, v7, Lcom/oneplus/screenshot/SaveImageInBackgroundTask;->mNotificationStyle:Landroid/app/Notification$BigPictureStyle;
+
+    const/4 v4, 0x0
+
+    check-cast v4, Landroid/graphics/Bitmap;
+
+    invoke-virtual {v1, v4}, Landroid/app/Notification$BigPictureStyle;->bigLargeIcon(Landroid/graphics/Bitmap;)Landroid/app/Notification$BigPictureStyle;
+
+    move/from16 v1, p4
+
+    iput-boolean v1, v7, Lcom/oneplus/screenshot/SaveImageInBackgroundTask;->mRecycleBitmap:Z
 
     return-void
 .end method
@@ -976,6 +1126,24 @@
 
     move-result-object v6
 
+    new-instance v14, Ljava/lang/StringBuilder;
+
+    invoke-direct {v14}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v15, "screenshot name = "
+
+    invoke-virtual {v14, v15}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object v15, v1, Lcom/oneplus/screenshot/SaveImageInBackgroundTask;->mImageFileName:Ljava/lang/String;
+
+    invoke-virtual {v14, v15}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v14}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v14
+
+    invoke-static {v5, v14}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
     invoke-static {}, Ljava/text/DateFormat;->getDateTimeInstance()Ljava/text/DateFormat;
 
     move-result-object v14
@@ -1084,7 +1252,7 @@
 
     move-object/from16 v20, v0
 
-    const v0, 0x104067f
+    const v0, 0x7f0d0028
 
     invoke-virtual {v9, v0}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -1206,6 +1374,8 @@
     const-string v2, "save img error"
 
     invoke-static {v5, v2, v0}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
+
+    invoke-virtual {v0}, Ljava/lang/Exception;->printStackTrace()V
 
     :goto_3
     iget-object v0, v1, Lcom/oneplus/screenshot/SaveImageInBackgroundTask;->mParams:Lcom/oneplus/screenshot/SaveImageInBackgroundData;

@@ -6,6 +6,7 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
+        Landroidx/versionedparcelable/R$xml;,
         Landroidx/versionedparcelable/R$transition;,
         Landroidx/versionedparcelable/R$styleable;,
         Landroidx/versionedparcelable/R$style;,

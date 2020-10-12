@@ -8,6 +8,8 @@
 
 .field private static final TEMPLATE_FILE_NAME:Ljava/lang/String; = "_%s"
 
+.field private static final TEMPLATE_FILE_NAME_2:Ljava/lang/String; = "_%s_%s"
+
 .field private static final TEMPLATE_FILE_PATH:Ljava/lang/String; = "%s/%s/%s"
 
 
@@ -138,6 +140,124 @@
     const/4 v4, 0x2
 
     aput-object v3, v2, v4
+
+    const-string v3, "%s/%s/%s"
+
+    invoke-static {v3, v2}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v2
+
+    iput-object v2, p0, Lcom/oneplus/screenshot/util/FileInfo;->mPath:Ljava/lang/String;
+
+    return-void
+.end method
+
+.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    .locals 8
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    new-instance v0, Ljava/text/SimpleDateFormat;
+
+    const-string v1, "yyyyMMdd-HHmmss"
+
+    invoke-direct {v0, v1}, Ljava/text/SimpleDateFormat;-><init>(Ljava/lang/String;)V
+
+    iput-object v0, p0, Lcom/oneplus/screenshot/util/FileInfo;->mFormatter:Ljava/text/DateFormat;
+
+    const/4 v0, 0x0
+
+    iput-object v0, p0, Lcom/oneplus/screenshot/util/FileInfo;->mUri:Landroid/net/Uri;
+
+    iput-object v0, p0, Lcom/oneplus/screenshot/util/FileInfo;->mName:Ljava/lang/String;
+
+    iput-object v0, p0, Lcom/oneplus/screenshot/util/FileInfo;->mPath:Ljava/lang/String;
+
+    const-wide/16 v0, 0x0
+
+    iput-wide v0, p0, Lcom/oneplus/screenshot/util/FileInfo;->mTime:J
+
+    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
+
+    move-result-wide v0
+
+    iput-wide v0, p0, Lcom/oneplus/screenshot/util/FileInfo;->mTime:J
+
+    iget-object v0, p0, Lcom/oneplus/screenshot/util/FileInfo;->mFormatter:Ljava/text/DateFormat;
+
+    new-instance v1, Ljava/util/Date;
+
+    iget-wide v2, p0, Lcom/oneplus/screenshot/util/FileInfo;->mTime:J
+
+    invoke-direct {v1, v2, v3}, Ljava/util/Date;-><init>(J)V
+
+    invoke-virtual {v0, v1}, Ljava/text/DateFormat;->format(Ljava/util/Date;)Ljava/lang/String;
+
+    move-result-object v0
+
+    sget-object v1, Landroid/os/Environment;->DIRECTORY_PICTURES:Ljava/lang/String;
+
+    invoke-static {v1}, Landroid/os/Environment;->getExternalStoragePublicDirectory(Ljava/lang/String;)Ljava/io/File;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
+
+    move-result-object v1
+
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    invoke-virtual {v2, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v3, "_%s_%s"
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p0}, Lcom/oneplus/screenshot/util/FileInfo;->getSuffix()Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    const/4 v3, 0x2
+
+    new-array v4, v3, [Ljava/lang/Object;
+
+    const/4 v5, 0x0
+
+    aput-object v0, v4, v5
+
+    invoke-static {p3}, Lcom/oneplus/screenshot/util/Utils;->getMD5(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v6
+
+    const/4 v7, 0x1
+
+    aput-object v6, v4, v7
+
+    invoke-static {v2, v4}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v2
+
+    iput-object v2, p0, Lcom/oneplus/screenshot/util/FileInfo;->mName:Ljava/lang/String;
+
+    const/4 v2, 0x3
+
+    new-array v2, v2, [Ljava/lang/Object;
+
+    aput-object v1, v2, v5
+
+    aput-object p1, v2, v7
+
+    iget-object v4, p0, Lcom/oneplus/screenshot/util/FileInfo;->mName:Ljava/lang/String;
+
+    aput-object v4, v2, v3
 
     const-string v3, "%s/%s/%s"
 

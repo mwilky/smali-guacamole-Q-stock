@@ -213,48 +213,59 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
-    if-eqz v0, :cond_3
+    if-eqz v0, :cond_4
 
-    iget-object v1, p0, Lcom/oneplus/screenshot/longshot/state/AbsShotState;->mMovePoint:Lcom/oneplus/screenshot/longshot/util/MovePoint;
+    const/4 v1, -0x1
 
-    invoke-virtual {v1}, Lcom/oneplus/screenshot/longshot/util/MovePoint;->getEnd()Landroid/graphics/Point;
+    const/4 v2, -0x1
 
-    move-result-object v1
+    invoke-static {}, Lcom/oneplus/screenshot/longshot/util/Configs;->shouldStitchByView()Z
 
-    iget v1, v1, Landroid/graphics/Point;->y:I
+    move-result v3
 
-    iget v2, p0, Lcom/oneplus/screenshot/longshot/state/AbsShotState;->mOffset:I
-
-    sub-int/2addr v1, v2
-
-    invoke-virtual {v0}, Landroid/graphics/Bitmap;->getHeight()I
-
-    move-result v2
+    if-nez v3, :cond_1
 
     iget-object v3, p0, Lcom/oneplus/screenshot/longshot/state/AbsShotState;->mMovePoint:Lcom/oneplus/screenshot/longshot/util/MovePoint;
 
-    invoke-virtual {v3}, Lcom/oneplus/screenshot/longshot/util/MovePoint;->getStart()Landroid/graphics/Point;
+    invoke-virtual {v3}, Lcom/oneplus/screenshot/longshot/util/MovePoint;->getEnd()Landroid/graphics/Point;
 
     move-result-object v3
 
     iget v3, v3, Landroid/graphics/Point;->y:I
 
-    sub-int/2addr v2, v3
+    iget v4, p0, Lcom/oneplus/screenshot/longshot/state/AbsShotState;->mOffset:I
 
-    iget v3, p0, Lcom/oneplus/screenshot/longshot/state/AbsShotState;->mOffset:I
+    sub-int v1, v3, v4
 
-    sub-int/2addr v2, v3
+    invoke-virtual {v0}, Landroid/graphics/Bitmap;->getHeight()I
 
-    if-gez v1, :cond_1
+    move-result v3
+
+    iget-object v4, p0, Lcom/oneplus/screenshot/longshot/state/AbsShotState;->mMovePoint:Lcom/oneplus/screenshot/longshot/util/MovePoint;
+
+    invoke-virtual {v4}, Lcom/oneplus/screenshot/longshot/util/MovePoint;->getStart()Landroid/graphics/Point;
+
+    move-result-object v4
+
+    iget v4, v4, Landroid/graphics/Point;->y:I
+
+    sub-int/2addr v3, v4
+
+    iget v4, p0, Lcom/oneplus/screenshot/longshot/state/AbsShotState;->mOffset:I
+
+    sub-int v2, v3, v4
+
+    :cond_1
+    if-gez v1, :cond_2
 
     const/4 v1, 0x0
 
-    :cond_1
-    if-gez v2, :cond_2
+    :cond_2
+    if-gez v2, :cond_3
 
     const/4 v2, 0x0
 
-    :cond_2
+    :cond_3
     new-instance v3, Lcom/oneplus/screenshot/longshot/cache/BitmapCache;
 
     invoke-direct {v3, v0, v1, v2}, Lcom/oneplus/screenshot/longshot/cache/BitmapCache;-><init>(Landroid/graphics/Bitmap;II)V
@@ -281,7 +292,7 @@
 
     throw v5
 
-    :cond_3
+    :cond_4
     :goto_0
     return-void
 

@@ -137,6 +137,12 @@
 
     move-result-object v8
 
+    if-eqz v8, :cond_0
+
+    invoke-virtual {v6}, Lcom/oneplus/screenshot/longshot/cache/BitmapCache;->getTop()Landroid/graphics/Bitmap;
+
+    move-result-object v8
+
     invoke-virtual {v8}, Landroid/graphics/Bitmap;->getHeight()I
 
     move-result v8

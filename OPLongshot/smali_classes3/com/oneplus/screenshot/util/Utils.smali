@@ -8,6 +8,8 @@
 
 .field public static final DEBUG:Z = true
 
+.field private static final KEY_SECRET:Ljava/lang/String; = "o3eavE9mRvE6NvwEhZb+PTbDx0MnvwMTVKCxwM0ccpo="
+
 .field private static final TAG:Ljava/lang/String; = "Longshot.Utils"
 
 .field private static sWATERMARK:Landroid/graphics/Bitmap;
@@ -1065,6 +1067,136 @@
     return-object v1
 .end method
 
+.method public static getDecryptedString(Ljava/lang/String;)Ljava/lang/String;
+    .locals 6
+
+    const-string v0, "AES"
+
+    :try_start_0
+    invoke-static {v0}, Ljavax/crypto/Cipher;->getInstance(Ljava/lang/String;)Ljavax/crypto/Cipher;
+
+    move-result-object v1
+
+    const/4 v2, 0x2
+
+    new-instance v3, Ljavax/crypto/spec/SecretKeySpec;
+
+    const-string v4, "o3eavE9mRvE6NvwEhZb+PTbDx0MnvwMTVKCxwM0ccpo="
+
+    const/4 v5, 0x0
+
+    invoke-static {v4, v5}, Landroid/util/Base64;->decode(Ljava/lang/String;I)[B
+
+    move-result-object v4
+
+    invoke-direct {v3, v4, v0}, Ljavax/crypto/spec/SecretKeySpec;-><init>([BLjava/lang/String;)V
+
+    invoke-virtual {v1, v2, v3}, Ljavax/crypto/Cipher;->init(ILjava/security/Key;)V
+
+    new-instance v0, Ljava/lang/String;
+
+    invoke-static {p0, v5}, Landroid/util/Base64;->decode(Ljava/lang/String;I)[B
+
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, Ljavax/crypto/Cipher;->doFinal([B)[B
+
+    move-result-object v2
+
+    invoke-direct {v0, v2}, Ljava/lang/String;-><init>([B)V
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    return-object v0
+
+    :catch_0
+    move-exception v0
+
+    invoke-virtual {v0}, Ljava/lang/Exception;->printStackTrace()V
+
+    return-object p0
+.end method
+
+.method public static getEncryptedIMEI(Landroid/content/Context;)Ljava/lang/String;
+    .locals 3
+
+    invoke-static {p0}, Lcom/oneplus/screenshot/util/Utils;->getIMEI(Landroid/content/Context;)Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {v0}, Lcom/oneplus/screenshot/util/Utils;->getEncryptedString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v2, " "
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    return-object v1
+.end method
+
+.method public static getEncryptedString(Ljava/lang/String;)Ljava/lang/String;
+    .locals 6
+
+    const-string v0, "AES"
+
+    :try_start_0
+    invoke-static {v0}, Ljavax/crypto/Cipher;->getInstance(Ljava/lang/String;)Ljavax/crypto/Cipher;
+
+    move-result-object v1
+
+    const/4 v2, 0x1
+
+    new-instance v3, Ljavax/crypto/spec/SecretKeySpec;
+
+    const-string v4, "o3eavE9mRvE6NvwEhZb+PTbDx0MnvwMTVKCxwM0ccpo="
+
+    const/4 v5, 0x0
+
+    invoke-static {v4, v5}, Landroid/util/Base64;->decode(Ljava/lang/String;I)[B
+
+    move-result-object v4
+
+    invoke-direct {v3, v4, v0}, Ljavax/crypto/spec/SecretKeySpec;-><init>([BLjava/lang/String;)V
+
+    invoke-virtual {v1, v2, v3}, Ljavax/crypto/Cipher;->init(ILjava/security/Key;)V
+
+    const-string v0, "UTF-8"
+
+    invoke-virtual {p0, v0}, Ljava/lang/String;->getBytes(Ljava/lang/String;)[B
+
+    move-result-object v0
+
+    invoke-virtual {v1, v0}, Ljavax/crypto/Cipher;->doFinal([B)[B
+
+    move-result-object v0
+
+    invoke-static {v0, v5}, Landroid/util/Base64;->encodeToString([BI)Ljava/lang/String;
+
+    move-result-object v0
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    return-object v0
+
+    :catch_0
+    move-exception v0
+
+    invoke-virtual {v0}, Ljava/lang/Exception;->printStackTrace()V
+
+    return-object p0
+.end method
+
 .method public static getFileOutputStream(Ljava/lang/String;)Ljava/io/FileOutputStream;
     .locals 2
     .annotation system Ldalvik/annotation/Throws;
@@ -1093,7 +1225,7 @@
     return-object v1
 .end method
 
-.method public static getIMEI(Landroid/content/Context;)Ljava/lang/String;
+.method private static getIMEI(Landroid/content/Context;)Ljava/lang/String;
     .locals 4
 
     const-string v0, ""
@@ -1135,6 +1267,100 @@
 
     :goto_0
     return-object v0
+.end method
+
+.method public static getMD5(Ljava/lang/String;)Ljava/lang/String;
+    .locals 10
+
+    const-string v0, "MD5"
+
+    :try_start_0
+    const-string v1, "MD5"
+
+    invoke-static {v1}, Ljava/security/MessageDigest;->getInstance(Ljava/lang/String;)Ljava/security/MessageDigest;
+
+    move-result-object v1
+
+    invoke-virtual {p0}, Ljava/lang/String;->getBytes()[B
+
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, Ljava/security/MessageDigest;->update([B)V
+
+    invoke-virtual {v1}, Ljava/security/MessageDigest;->digest()[B
+
+    move-result-object v2
+
+    new-instance v3, Ljava/lang/StringBuilder;
+
+    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
+
+    array-length v4, v2
+
+    const/4 v5, 0x0
+
+    :goto_0
+    if-ge v5, v4, :cond_1
+
+    aget-byte v6, v2, v5
+
+    and-int/lit16 v7, v6, 0xff
+
+    invoke-static {v7}, Ljava/lang/Integer;->toHexString(I)Ljava/lang/String;
+
+    move-result-object v7
+
+    :goto_1
+    invoke-virtual {v7}, Ljava/lang/String;->length()I
+
+    move-result v8
+
+    const/4 v9, 0x2
+
+    if-ge v8, v9, :cond_0
+
+    new-instance v8, Ljava/lang/StringBuilder;
+
+    invoke-direct {v8}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v9, "0"
+
+    invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v8, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v8}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v8
+
+    move-object v7, v8
+
+    goto :goto_1
+
+    :cond_0
+    invoke-virtual {v3, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    nop
+
+    add-int/lit8 v5, v5, 0x1
+
+    goto :goto_0
+
+    :cond_1
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v4
+    :try_end_0
+    .catch Ljava/security/NoSuchAlgorithmException; {:try_start_0 .. :try_end_0} :catch_0
+
+    return-object v4
+
+    :catch_0
+    move-exception v1
+
+    invoke-virtual {v1}, Ljava/security/NoSuchAlgorithmException;->printStackTrace()V
+
+    return-object p0
 .end method
 
 .method public static getMoveTraceBitmap()Ljava/lang/String;
@@ -2053,6 +2279,22 @@
     move-object/from16 v1, v18
 
     :goto_2
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v2, " screenshot name = "
+
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0, v13}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {v5, v0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
     const-string v0, "_data"
 
     invoke-virtual {v12, v0, v14}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V

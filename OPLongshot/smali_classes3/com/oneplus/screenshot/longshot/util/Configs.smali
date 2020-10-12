@@ -86,6 +86,8 @@
 
 .field public static final enum FORBID_STITCH_BY_DISTANCE_LIST_ACTIVITY:Lcom/oneplus/screenshot/longshot/util/Configs;
 
+.field private static final FOURTH_LAST_INDEX:I = 0x4
+
 .field public static final enum HEIGHT_LOWER_LIST:Lcom/oneplus/screenshot/longshot/util/Configs;
 
 .field public static final enum HEIGHT_SMALL_LIST:Lcom/oneplus/screenshot/longshot/util/Configs;
@@ -96,11 +98,25 @@
 
 .field public static final enum IGNORE_OVERSCROLL_ACTIVITY:Lcom/oneplus/screenshot/longshot/util/Configs;
 
+.field public static final enum INJECT_ADDITIONAL_SWIPE:Lcom/oneplus/screenshot/longshot/util/Configs;
+
 .field public static final enum INJECT_X_POSITION_ACTIVITY:Lcom/oneplus/screenshot/longshot/util/Configs;
+
+.field public static final enum IS_COMPATIBLE_SCROLL_VIEW:Lcom/oneplus/screenshot/longshot/util/Configs;
+
+.field public static final enum IS_FOURTH_LAST_INDEX:Lcom/oneplus/screenshot/longshot/util/Configs;
+
+.field public static final enum IS_MARGIN_BOTTOM:Lcom/oneplus/screenshot/longshot/util/Configs;
+
+.field public static final enum IS_MARGIN_TOP:Lcom/oneplus/screenshot/longshot/util/Configs;
+
+.field public static final enum IS_SECOND_LAST_INDEX:Lcom/oneplus/screenshot/longshot/util/Configs;
 
 .field public static final enum KEEP_LIST_ACTIVITY:Lcom/oneplus/screenshot/longshot/util/Configs;
 
 .field public static final enum LARGETOP_LIST_ACTIVITY:Lcom/oneplus/screenshot/longshot/util/Configs;
+
+.field private static final LAST_INDEX:I = 0x1
 
 .field public static final enum LEFT_SIDE_OFFSET_LEVEL_1:Lcom/oneplus/screenshot/longshot/util/Configs;
 
@@ -215,6 +231,18 @@
 .field public static final enum Level3_SCROLLBAR_ACTIVITY:Lcom/oneplus/screenshot/longshot/util/Configs;
 
 .field public static final enum Level4_SCROLLBAR_ACTIVITY:Lcom/oneplus/screenshot/longshot/util/Configs;
+
+.field private static final MARGIN_FIFTY:I = 0x32
+
+.field private static final MARGIN_FIVE:I = 0x5
+
+.field private static final MARGIN_FIVE_HUNDRED:I = 0x1f4
+
+.field private static final MARGIN_TEN:I = 0xa
+
+.field private static final MARGIN_TOP:I = 0x12c
+
+.field private static final MARGIN_ZERO:I = 0x0
 
 .field public static final enum MAX_PAGES:Lcom/oneplus/screenshot/longshot/util/Configs;
 
@@ -362,6 +390,10 @@
 
 .field public static final enum RIGHT_SIDE_OFFSET_LEVEL_2:Lcom/oneplus/screenshot/longshot/util/Configs;
 
+.field public static final enum SCREENSHOT_BLACK_LIST_ACTIVITY:Lcom/oneplus/screenshot/longshot/util/Configs;
+
+.field private static final SECOND_LAST_INDEX:I = 0x2
+
 .field public static final enum SMALL_LIST_ACTIVITY:Lcom/oneplus/screenshot/longshot/util/Configs;
 
 .field public static final enum SPECIAL_SCROLL_ACTIVITY:Lcom/oneplus/screenshot/longshot/util/Configs;
@@ -408,11 +440,19 @@
 
 .field public static final enum STEP_UNDO:Lcom/oneplus/screenshot/longshot/util/Configs;
 
+.field public static final enum STITCH_BY_SCROLL_DISTANCE:Lcom/oneplus/screenshot/longshot/util/Configs;
+
+.field public static final enum STITCH_BY_VIEW_ACTIVITY:Lcom/oneplus/screenshot/longshot/util/Configs;
+
 .field public static final enum STITCH_NEXT_MATCH_LEVEL_1:Lcom/oneplus/screenshot/longshot/util/Configs;
 
 .field public static final enum STITCH_NEXT_MATCH_LEVEL_2:Lcom/oneplus/screenshot/longshot/util/Configs;
 
 .field public static final enum STRICT_LIST_ACTIVITY:Lcom/oneplus/screenshot/longshot/util/Configs;
+
+.field public static final enum SWIPE_PRESSURE_LEVEL_1:Lcom/oneplus/screenshot/longshot/util/Configs;
+
+.field public static final enum SWIPE_PRESSURE_LEVEL_2:Lcom/oneplus/screenshot/longshot/util/Configs;
 
 .field private static final TAG:Ljava/lang/String; = "Longshot.Configs"
 
@@ -521,6 +561,8 @@
 
 .field public static sIsIgnoreOverScroll:Z
 
+.field public static sIsInjectAdditionalSwipe:Z
+
 .field public static sIsKeepList:Z
 
 .field public static sIsLimitList:Z
@@ -538,6 +580,8 @@
 .field public static sIsUnSupported:Z
 
 .field public static sIsVoiceLongshot:Z
+
+.field public static sSwipePressure:F
 
 .field public static sTouchXPosition:I
 
@@ -2184,9 +2228,21 @@
 
     new-instance v0, Lcom/oneplus/screenshot/longshot/util/Configs;
 
-    const-string v13, "LEVEL2_DELAY_ACTIVITY"
+    const-string v13, "SCREENSHOT_BLACK_LIST_ACTIVITY"
 
     const/16 v14, 0x86
+
+    const v15, 0x7f030035
+
+    invoke-direct {v0, v13, v14, v12, v15}, Lcom/oneplus/screenshot/longshot/util/Configs;-><init>(Ljava/lang/String;ILjava/lang/String;I)V
+
+    sput-object v0, Lcom/oneplus/screenshot/longshot/util/Configs;->SCREENSHOT_BLACK_LIST_ACTIVITY:Lcom/oneplus/screenshot/longshot/util/Configs;
+
+    new-instance v0, Lcom/oneplus/screenshot/longshot/util/Configs;
+
+    const-string v13, "LEVEL2_DELAY_ACTIVITY"
+
+    const/16 v14, 0x87
 
     const v15, 0x7f030008
 
@@ -2198,7 +2254,7 @@
 
     const-string v13, "LEVEL3_DELAY_ACTIVITY"
 
-    const/16 v14, 0x87
+    const/16 v14, 0x88
 
     const v15, 0x7f030009
 
@@ -2210,9 +2266,9 @@
 
     const-string v13, "LEVEL0_LIST_ACTIVITY"
 
-    const/16 v14, 0x88
+    const/16 v14, 0x89
 
-    const v15, 0x7f030017
+    const v15, 0x7f03001e
 
     invoke-direct {v0, v13, v14, v12, v15}, Lcom/oneplus/screenshot/longshot/util/Configs;-><init>(Ljava/lang/String;ILjava/lang/String;I)V
 
@@ -2222,9 +2278,9 @@
 
     const-string v13, "LEVEL1_LIST_ACTIVITY"
 
-    const/16 v14, 0x89
+    const/16 v14, 0x8a
 
-    const v15, 0x7f030018
+    const v15, 0x7f03001f
 
     invoke-direct {v0, v13, v14, v12, v15}, Lcom/oneplus/screenshot/longshot/util/Configs;-><init>(Ljava/lang/String;ILjava/lang/String;I)V
 
@@ -2234,9 +2290,9 @@
 
     const-string v13, "LEVEL2_LIST_ACTIVITY"
 
-    const/16 v14, 0x8a
+    const/16 v14, 0x8b
 
-    const v15, 0x7f030019
+    const v15, 0x7f030020
 
     invoke-direct {v0, v13, v14, v12, v15}, Lcom/oneplus/screenshot/longshot/util/Configs;-><init>(Ljava/lang/String;ILjava/lang/String;I)V
 
@@ -2246,9 +2302,9 @@
 
     const-string v13, "LEVEL3_LIST_ACTIVITY"
 
-    const/16 v14, 0x8b
+    const/16 v14, 0x8c
 
-    const v15, 0x7f03001a
+    const v15, 0x7f030021
 
     invoke-direct {v0, v13, v14, v12, v15}, Lcom/oneplus/screenshot/longshot/util/Configs;-><init>(Ljava/lang/String;ILjava/lang/String;I)V
 
@@ -2258,9 +2314,9 @@
 
     const-string v13, "LEVEL4_LIST_ACTIVITY"
 
-    const/16 v14, 0x8c
+    const/16 v14, 0x8d
 
-    const v15, 0x7f03001b
+    const v15, 0x7f030022
 
     invoke-direct {v0, v13, v14, v12, v15}, Lcom/oneplus/screenshot/longshot/util/Configs;-><init>(Ljava/lang/String;ILjava/lang/String;I)V
 
@@ -2270,9 +2326,9 @@
 
     const-string v13, "LEVEL5_LIST_ACTIVITY"
 
-    const/16 v14, 0x8d
+    const/16 v14, 0x8e
 
-    const v15, 0x7f03001c
+    const v15, 0x7f030023
 
     invoke-direct {v0, v13, v14, v12, v15}, Lcom/oneplus/screenshot/longshot/util/Configs;-><init>(Ljava/lang/String;ILjava/lang/String;I)V
 
@@ -2282,9 +2338,9 @@
 
     const-string v13, "LEVEL2_STITCH_NEXT_LIST_ACTIVITY"
 
-    const/16 v14, 0x8e
+    const/16 v14, 0x8f
 
-    const v15, 0x7f030034
+    const v15, 0x7f03003d
 
     invoke-direct {v0, v13, v14, v12, v15}, Lcom/oneplus/screenshot/longshot/util/Configs;-><init>(Ljava/lang/String;ILjava/lang/String;I)V
 
@@ -2294,9 +2350,9 @@
 
     const-string v13, "LEVEL3_STITCH_NEXT_LIST_ACTIVITY"
 
-    const/16 v14, 0x8f
+    const/16 v14, 0x90
 
-    const v15, 0x7f030035
+    const v15, 0x7f03003e
 
     invoke-direct {v0, v13, v14, v12, v15}, Lcom/oneplus/screenshot/longshot/util/Configs;-><init>(Ljava/lang/String;ILjava/lang/String;I)V
 
@@ -2306,9 +2362,9 @@
 
     const-string v13, "LEVEL4_STITCH_NEXT_LIST_ACTIVITY"
 
-    const/16 v14, 0x90
+    const/16 v14, 0x91
 
-    const v15, 0x7f030036
+    const v15, 0x7f03003f
 
     invoke-direct {v0, v13, v14, v12, v15}, Lcom/oneplus/screenshot/longshot/util/Configs;-><init>(Ljava/lang/String;ILjava/lang/String;I)V
 
@@ -2318,9 +2374,9 @@
 
     const-string v13, "LEVEL5_STITCH_NEXT_LIST_ACTIVITY"
 
-    const/16 v14, 0x91
+    const/16 v14, 0x92
 
-    const v15, 0x7f030037
+    const v15, 0x7f030040
 
     invoke-direct {v0, v13, v14, v12, v15}, Lcom/oneplus/screenshot/longshot/util/Configs;-><init>(Ljava/lang/String;ILjava/lang/String;I)V
 
@@ -2330,9 +2386,9 @@
 
     const-string v13, "LEVEL2_SHOT_NEXT_LIST_ACTIVITY"
 
-    const/16 v14, 0x92
+    const/16 v14, 0x93
 
-    const v15, 0x7f03002e
+    const v15, 0x7f030036
 
     invoke-direct {v0, v13, v14, v12, v15}, Lcom/oneplus/screenshot/longshot/util/Configs;-><init>(Ljava/lang/String;ILjava/lang/String;I)V
 
@@ -2342,9 +2398,9 @@
 
     const-string v13, "LEVEL3_SHOT_NEXT_LIST_ACTIVITY"
 
-    const/16 v14, 0x93
+    const/16 v14, 0x94
 
-    const v15, 0x7f03002f
+    const v15, 0x7f030037
 
     invoke-direct {v0, v13, v14, v12, v15}, Lcom/oneplus/screenshot/longshot/util/Configs;-><init>(Ljava/lang/String;ILjava/lang/String;I)V
 
@@ -2354,9 +2410,9 @@
 
     const-string v13, "LEVEL4_SHOT_NEXT_LIST_ACTIVITY"
 
-    const/16 v14, 0x94
+    const/16 v14, 0x95
 
-    const v15, 0x7f030030
+    const v15, 0x7f030038
 
     invoke-direct {v0, v13, v14, v12, v15}, Lcom/oneplus/screenshot/longshot/util/Configs;-><init>(Ljava/lang/String;ILjava/lang/String;I)V
 
@@ -2366,9 +2422,9 @@
 
     const-string v13, "LEVEL5_SHOT_NEXT_LIST_ACTIVITY"
 
-    const/16 v14, 0x95
+    const/16 v14, 0x96
 
-    const v15, 0x7f030031
+    const v15, 0x7f030039
 
     invoke-direct {v0, v13, v14, v12, v15}, Lcom/oneplus/screenshot/longshot/util/Configs;-><init>(Ljava/lang/String;ILjava/lang/String;I)V
 
@@ -2378,9 +2434,9 @@
 
     const-string v13, "LEVEL2_STITCH_MATCH_LIST_ACTIVITY"
 
-    const/16 v14, 0x96
+    const/16 v14, 0x97
 
-    const v15, 0x7f030020
+    const v15, 0x7f030027
 
     invoke-direct {v0, v13, v14, v12, v15}, Lcom/oneplus/screenshot/longshot/util/Configs;-><init>(Ljava/lang/String;ILjava/lang/String;I)V
 
@@ -2390,9 +2446,9 @@
 
     const-string v13, "LEVEL3_STITCH_MATCH_LIST_ACTIVITY"
 
-    const/16 v14, 0x97
+    const/16 v14, 0x98
 
-    const v15, 0x7f030021
+    const v15, 0x7f030028
 
     invoke-direct {v0, v13, v14, v12, v15}, Lcom/oneplus/screenshot/longshot/util/Configs;-><init>(Ljava/lang/String;ILjava/lang/String;I)V
 
@@ -2402,9 +2458,9 @@
 
     const-string v13, "LEVEL4_STITCH_MATCH_LIST_ACTIVITY"
 
-    const/16 v14, 0x98
+    const/16 v14, 0x99
 
-    const v15, 0x7f030022
+    const v15, 0x7f030029
 
     invoke-direct {v0, v13, v14, v12, v15}, Lcom/oneplus/screenshot/longshot/util/Configs;-><init>(Ljava/lang/String;ILjava/lang/String;I)V
 
@@ -2414,9 +2470,9 @@
 
     const-string v13, "LEVEL5_STITCH_MATCH_LIST_ACTIVITY"
 
-    const/16 v14, 0x99
+    const/16 v14, 0x9a
 
-    const v15, 0x7f030023
+    const v15, 0x7f03002a
 
     invoke-direct {v0, v13, v14, v12, v15}, Lcom/oneplus/screenshot/longshot/util/Configs;-><init>(Ljava/lang/String;ILjava/lang/String;I)V
 
@@ -2426,9 +2482,9 @@
 
     const-string v13, "STRICT_LIST_ACTIVITY"
 
-    const/16 v14, 0x9a
+    const/16 v14, 0x9b
 
-    const v15, 0x7f030038
+    const v15, 0x7f030041
 
     invoke-direct {v0, v13, v14, v12, v15}, Lcom/oneplus/screenshot/longshot/util/Configs;-><init>(Ljava/lang/String;ILjava/lang/String;I)V
 
@@ -2438,9 +2494,9 @@
 
     const-string v13, "SMALL_LIST_ACTIVITY"
 
-    const/16 v14, 0x9b
+    const/16 v14, 0x9c
 
-    const v15, 0x7f030032
+    const v15, 0x7f03003a
 
     invoke-direct {v0, v13, v14, v12, v15}, Lcom/oneplus/screenshot/longshot/util/Configs;-><init>(Ljava/lang/String;ILjava/lang/String;I)V
 
@@ -2450,9 +2506,9 @@
 
     const-string v13, "LOWER_LIST_ACTIVITY"
 
-    const/16 v14, 0x9c
+    const/16 v14, 0x9d
 
-    const v15, 0x7f03001f
+    const v15, 0x7f030026
 
     invoke-direct {v0, v13, v14, v12, v15}, Lcom/oneplus/screenshot/longshot/util/Configs;-><init>(Ljava/lang/String;ILjava/lang/String;I)V
 
@@ -2462,7 +2518,7 @@
 
     const-string v13, "HIGHER_LIST_ACTIVITY"
 
-    const/16 v14, 0x9d
+    const/16 v14, 0x9e
 
     const v15, 0x7f03000e
 
@@ -2474,9 +2530,9 @@
 
     const-string v13, "PAGE_LIST_ACTIVITY"
 
-    const/16 v14, 0x9e
+    const/16 v14, 0x9f
 
-    const v15, 0x7f03002d
+    const v15, 0x7f030034
 
     invoke-direct {v0, v13, v14, v12, v15}, Lcom/oneplus/screenshot/longshot/util/Configs;-><init>(Ljava/lang/String;ILjava/lang/String;I)V
 
@@ -2486,9 +2542,9 @@
 
     const-string v13, "KEEP_LIST_ACTIVITY"
 
-    const/16 v14, 0x9f
+    const/16 v14, 0xa0
 
-    const v15, 0x7f030012
+    const v15, 0x7f030019
 
     invoke-direct {v0, v13, v14, v12, v15}, Lcom/oneplus/screenshot/longshot/util/Configs;-><init>(Ljava/lang/String;ILjava/lang/String;I)V
 
@@ -2498,9 +2554,9 @@
 
     const-string v13, "NON_LIST_ACTIVITY"
 
-    const/16 v14, 0xa0
+    const/16 v14, 0xa1
 
-    const v15, 0x7f030028
+    const v15, 0x7f03002f
 
     invoke-direct {v0, v13, v14, v12, v15}, Lcom/oneplus/screenshot/longshot/util/Configs;-><init>(Ljava/lang/String;ILjava/lang/String;I)V
 
@@ -2510,7 +2566,7 @@
 
     const-string v13, "BG_LIST_ACTIVITY"
 
-    const/16 v14, 0xa1
+    const/16 v14, 0xa2
 
     const/high16 v15, 0x7f030000
 
@@ -2522,7 +2578,7 @@
 
     const-string v13, "BIGTOP_LIST_ACTIVITY"
 
-    const/16 v14, 0xa2
+    const/16 v14, 0xa3
 
     const v15, 0x7f030001
 
@@ -2534,7 +2590,7 @@
 
     const-string v13, "CUSTOMIZE_MOVE_LIST_ACTIVITY"
 
-    const/16 v14, 0xa3
+    const/16 v14, 0xa4
 
     const v15, 0x7f030007
 
@@ -2546,9 +2602,9 @@
 
     const-string v13, "LARGETOP_LIST_ACTIVITY"
 
-    const/16 v14, 0xa4
+    const/16 v14, 0xa5
 
-    const v15, 0x7f030013
+    const v15, 0x7f03001a
 
     invoke-direct {v0, v13, v14, v12, v15}, Lcom/oneplus/screenshot/longshot/util/Configs;-><init>(Ljava/lang/String;ILjava/lang/String;I)V
 
@@ -2558,7 +2614,7 @@
 
     const-string v13, "FORBID_STITCH_BY_DISTANCE_LIST_ACTIVITY"
 
-    const/16 v14, 0xa5
+    const/16 v14, 0xa6
 
     const v15, 0x7f03000d
 
@@ -2570,7 +2626,7 @@
 
     const-string v13, "IGNORE_FULL_MATCH_ACTIVITY"
 
-    const/16 v14, 0xa6
+    const/16 v14, 0xa7
 
     const v15, 0x7f03000f
 
@@ -2582,7 +2638,7 @@
 
     const-string v13, "ERROR_2_ACTIVITY"
 
-    const/16 v14, 0xa7
+    const/16 v14, 0xa8
 
     const v15, 0x7f03000c
 
@@ -2594,9 +2650,9 @@
 
     const-string v13, "LIMIT_LEFT_ACTIVITY"
 
-    const/16 v14, 0xa8
+    const/16 v14, 0xa9
 
-    const v15, 0x7f03001d
+    const v15, 0x7f030024
 
     invoke-direct {v0, v13, v14, v12, v15}, Lcom/oneplus/screenshot/longshot/util/Configs;-><init>(Ljava/lang/String;ILjava/lang/String;I)V
 
@@ -2606,9 +2662,9 @@
 
     const-string v13, "LIMIT_RIGHT_ACTIVITY"
 
-    const/16 v14, 0xa9
+    const/16 v14, 0xaa
 
-    const v15, 0x7f03001e
+    const v15, 0x7f030025
 
     invoke-direct {v0, v13, v14, v12, v15}, Lcom/oneplus/screenshot/longshot/util/Configs;-><init>(Ljava/lang/String;ILjava/lang/String;I)V
 
@@ -2618,9 +2674,9 @@
 
     const-string v13, "Level2_SCROLLBAR_ACTIVITY"
 
-    const/16 v14, 0xaa
+    const/16 v14, 0xab
 
-    const v15, 0x7f030014
+    const v15, 0x7f03001b
 
     invoke-direct {v0, v13, v14, v12, v15}, Lcom/oneplus/screenshot/longshot/util/Configs;-><init>(Ljava/lang/String;ILjava/lang/String;I)V
 
@@ -2630,9 +2686,9 @@
 
     const-string v13, "Level3_SCROLLBAR_ACTIVITY"
 
-    const/16 v14, 0xab
+    const/16 v14, 0xac
 
-    const v15, 0x7f030015
+    const v15, 0x7f03001c
 
     invoke-direct {v0, v13, v14, v12, v15}, Lcom/oneplus/screenshot/longshot/util/Configs;-><init>(Ljava/lang/String;ILjava/lang/String;I)V
 
@@ -2642,9 +2698,9 @@
 
     const-string v13, "Level4_SCROLLBAR_ACTIVITY"
 
-    const/16 v14, 0xac
+    const/16 v14, 0xad
 
-    const v15, 0x7f030016
+    const v15, 0x7f03001d
 
     invoke-direct {v0, v13, v14, v12, v15}, Lcom/oneplus/screenshot/longshot/util/Configs;-><init>(Ljava/lang/String;ILjava/lang/String;I)V
 
@@ -2654,9 +2710,9 @@
 
     const-string v13, "NOT_IGNORE_FAIL_ACTIVITY"
 
-    const/16 v14, 0xad
+    const/16 v14, 0xae
 
-    const v15, 0x7f030029
+    const v15, 0x7f030030
 
     invoke-direct {v0, v13, v14, v12, v15}, Lcom/oneplus/screenshot/longshot/util/Configs;-><init>(Ljava/lang/String;ILjava/lang/String;I)V
 
@@ -2666,9 +2722,9 @@
 
     const-string v13, "SPECIAL_SCROLL_ACTIVITY"
 
-    const/16 v14, 0xae
+    const/16 v14, 0xaf
 
-    const v15, 0x7f030033
+    const v15, 0x7f03003b
 
     invoke-direct {v0, v13, v14, v12, v15}, Lcom/oneplus/screenshot/longshot/util/Configs;-><init>(Ljava/lang/String;ILjava/lang/String;I)V
 
@@ -2678,7 +2734,7 @@
 
     const-string v13, "DISPLAY_COMPAT_LEVEL_2_MATCH_ACTIVITY"
 
-    const/16 v14, 0xaf
+    const/16 v14, 0xb0
 
     const v15, 0x7f03000a
 
@@ -2690,7 +2746,7 @@
 
     const-string v13, "DISPLAY_COMPAT_LEVEL_3_MATCH_ACTIVITY"
 
-    const/16 v14, 0xb0
+    const/16 v14, 0xb1
 
     const v15, 0x7f03000b
 
@@ -2702,9 +2758,9 @@
 
     const-string v13, "OVERRIDE_MATCH_THRESHOLD_LIST_2"
 
-    const/16 v14, 0xb1
+    const/16 v14, 0xb2
 
-    const v15, 0x7f03002a
+    const v15, 0x7f030031
 
     invoke-direct {v0, v13, v14, v12, v15}, Lcom/oneplus/screenshot/longshot/util/Configs;-><init>(Ljava/lang/String;ILjava/lang/String;I)V
 
@@ -2714,9 +2770,9 @@
 
     const-string v13, "OVERRIDE_MATCH_THRESHOLD_LIST_3"
 
-    const/16 v14, 0xb2
+    const/16 v14, 0xb3
 
-    const v15, 0x7f03002b
+    const v15, 0x7f030032
 
     invoke-direct {v0, v13, v14, v12, v15}, Lcom/oneplus/screenshot/longshot/util/Configs;-><init>(Ljava/lang/String;ILjava/lang/String;I)V
 
@@ -2726,9 +2782,9 @@
 
     const-string v13, "OVERRIDE_MATCH_THRESHOLD_LIST_4"
 
-    const/16 v14, 0xb3
+    const/16 v14, 0xb4
 
-    const v15, 0x7f03002c
+    const v15, 0x7f030033
 
     invoke-direct {v0, v13, v14, v12, v15}, Lcom/oneplus/screenshot/longshot/util/Configs;-><init>(Ljava/lang/String;ILjava/lang/String;I)V
 
@@ -2738,7 +2794,7 @@
 
     const-string v13, "OVERRIDE_PIXEL_MATCH_THRESHOLD_LEVEL_1"
 
-    const/16 v14, 0xb4
+    const/16 v14, 0xb5
 
     const v15, 0x7f0a0022
 
@@ -2750,7 +2806,7 @@
 
     const-string v13, "OVERRIDE_PIXEL_MATCH_THRESHOLD_LEVEL_2"
 
-    const/16 v14, 0xb5
+    const/16 v14, 0xb6
 
     const v15, 0x7f0a0023
 
@@ -2762,7 +2818,7 @@
 
     const-string v13, "OVERRIDE_PIXEL_MATCH_THRESHOLD_LEVEL_3"
 
-    const/16 v14, 0xb6
+    const/16 v14, 0xb7
 
     const v15, 0x7f0a0024
 
@@ -2774,7 +2830,7 @@
 
     const-string v13, "OVERRIDE_PIXEL_MATCH_THRESHOLD_LEVEL_4"
 
-    const/16 v14, 0xb7
+    const/16 v14, 0xb8
 
     const v15, 0x7f0a0025
 
@@ -2786,9 +2842,9 @@
 
     const-string v2, "INJECT_X_POSITION_ACTIVITY"
 
-    const/16 v13, 0xb8
+    const/16 v13, 0xb9
 
-    const v14, 0x7f030011
+    const v14, 0x7f030012
 
     invoke-direct {v0, v2, v13, v12, v14}, Lcom/oneplus/screenshot/longshot/util/Configs;-><init>(Ljava/lang/String;ILjava/lang/String;I)V
 
@@ -2798,7 +2854,7 @@
 
     const-string v2, "IGNORE_OVERSCROLL_ACTIVITY"
 
-    const/16 v13, 0xb9
+    const/16 v13, 0xba
 
     const v14, 0x7f030010
 
@@ -2808,11 +2864,129 @@
 
     new-instance v0, Lcom/oneplus/screenshot/longshot/util/Configs;
 
+    const-string v2, "INJECT_ADDITIONAL_SWIPE"
+
+    const/16 v13, 0xbb
+
+    const v14, 0x7f030011
+
+    invoke-direct {v0, v2, v13, v12, v14}, Lcom/oneplus/screenshot/longshot/util/Configs;-><init>(Ljava/lang/String;ILjava/lang/String;I)V
+
+    sput-object v0, Lcom/oneplus/screenshot/longshot/util/Configs;->INJECT_ADDITIONAL_SWIPE:Lcom/oneplus/screenshot/longshot/util/Configs;
+
+    new-instance v0, Lcom/oneplus/screenshot/longshot/util/Configs;
+
+    const-string v2, "SWIPE_PRESSURE_LEVEL_1"
+
+    const/16 v13, 0xbc
+
+    const v14, 0x7f030042
+
+    invoke-direct {v0, v2, v13, v12, v14}, Lcom/oneplus/screenshot/longshot/util/Configs;-><init>(Ljava/lang/String;ILjava/lang/String;I)V
+
+    sput-object v0, Lcom/oneplus/screenshot/longshot/util/Configs;->SWIPE_PRESSURE_LEVEL_1:Lcom/oneplus/screenshot/longshot/util/Configs;
+
+    new-instance v0, Lcom/oneplus/screenshot/longshot/util/Configs;
+
+    const-string v2, "SWIPE_PRESSURE_LEVEL_2"
+
+    const/16 v13, 0xbd
+
+    const v14, 0x7f030043
+
+    invoke-direct {v0, v2, v13, v12, v14}, Lcom/oneplus/screenshot/longshot/util/Configs;-><init>(Ljava/lang/String;ILjava/lang/String;I)V
+
+    sput-object v0, Lcom/oneplus/screenshot/longshot/util/Configs;->SWIPE_PRESSURE_LEVEL_2:Lcom/oneplus/screenshot/longshot/util/Configs;
+
+    new-instance v0, Lcom/oneplus/screenshot/longshot/util/Configs;
+
+    const-string v2, "STITCH_BY_VIEW_ACTIVITY"
+
+    const/16 v13, 0xbe
+
+    const v14, 0x7f03003c
+
+    invoke-direct {v0, v2, v13, v12, v14}, Lcom/oneplus/screenshot/longshot/util/Configs;-><init>(Ljava/lang/String;ILjava/lang/String;I)V
+
+    sput-object v0, Lcom/oneplus/screenshot/longshot/util/Configs;->STITCH_BY_VIEW_ACTIVITY:Lcom/oneplus/screenshot/longshot/util/Configs;
+
+    new-instance v0, Lcom/oneplus/screenshot/longshot/util/Configs;
+
+    const-string v2, "STITCH_BY_SCROLL_DISTANCE"
+
+    const/16 v13, 0xbf
+
+    const v14, 0x7f030018
+
+    invoke-direct {v0, v2, v13, v12, v14}, Lcom/oneplus/screenshot/longshot/util/Configs;-><init>(Ljava/lang/String;ILjava/lang/String;I)V
+
+    sput-object v0, Lcom/oneplus/screenshot/longshot/util/Configs;->STITCH_BY_SCROLL_DISTANCE:Lcom/oneplus/screenshot/longshot/util/Configs;
+
+    new-instance v0, Lcom/oneplus/screenshot/longshot/util/Configs;
+
+    const-string v2, "IS_COMPATIBLE_SCROLL_VIEW"
+
+    const/16 v13, 0xc0
+
+    const v14, 0x7f030013
+
+    invoke-direct {v0, v2, v13, v12, v14}, Lcom/oneplus/screenshot/longshot/util/Configs;-><init>(Ljava/lang/String;ILjava/lang/String;I)V
+
+    sput-object v0, Lcom/oneplus/screenshot/longshot/util/Configs;->IS_COMPATIBLE_SCROLL_VIEW:Lcom/oneplus/screenshot/longshot/util/Configs;
+
+    new-instance v0, Lcom/oneplus/screenshot/longshot/util/Configs;
+
+    const-string v2, "IS_FOURTH_LAST_INDEX"
+
+    const/16 v13, 0xc1
+
+    const v14, 0x7f030014
+
+    invoke-direct {v0, v2, v13, v12, v14}, Lcom/oneplus/screenshot/longshot/util/Configs;-><init>(Ljava/lang/String;ILjava/lang/String;I)V
+
+    sput-object v0, Lcom/oneplus/screenshot/longshot/util/Configs;->IS_FOURTH_LAST_INDEX:Lcom/oneplus/screenshot/longshot/util/Configs;
+
+    new-instance v0, Lcom/oneplus/screenshot/longshot/util/Configs;
+
+    const-string v2, "IS_SECOND_LAST_INDEX"
+
+    const/16 v13, 0xc2
+
+    invoke-direct {v0, v2, v13, v12, v14}, Lcom/oneplus/screenshot/longshot/util/Configs;-><init>(Ljava/lang/String;ILjava/lang/String;I)V
+
+    sput-object v0, Lcom/oneplus/screenshot/longshot/util/Configs;->IS_SECOND_LAST_INDEX:Lcom/oneplus/screenshot/longshot/util/Configs;
+
+    new-instance v0, Lcom/oneplus/screenshot/longshot/util/Configs;
+
+    const-string v2, "IS_MARGIN_TOP"
+
+    const/16 v13, 0xc3
+
+    const v14, 0x7f030016
+
+    invoke-direct {v0, v2, v13, v12, v14}, Lcom/oneplus/screenshot/longshot/util/Configs;-><init>(Ljava/lang/String;ILjava/lang/String;I)V
+
+    sput-object v0, Lcom/oneplus/screenshot/longshot/util/Configs;->IS_MARGIN_TOP:Lcom/oneplus/screenshot/longshot/util/Configs;
+
+    new-instance v0, Lcom/oneplus/screenshot/longshot/util/Configs;
+
+    const-string v2, "IS_MARGIN_BOTTOM"
+
+    const/16 v13, 0xc4
+
+    const v14, 0x7f030015
+
+    invoke-direct {v0, v2, v13, v12, v14}, Lcom/oneplus/screenshot/longshot/util/Configs;-><init>(Ljava/lang/String;ILjava/lang/String;I)V
+
+    sput-object v0, Lcom/oneplus/screenshot/longshot/util/Configs;->IS_MARGIN_BOTTOM:Lcom/oneplus/screenshot/longshot/util/Configs;
+
+    new-instance v0, Lcom/oneplus/screenshot/longshot/util/Configs;
+
     const-string v2, "MOVE_DURATION_LEVEL_2_ACTIVITY"
 
-    const/16 v13, 0xba
+    const/16 v13, 0xc5
 
-    const v14, 0x7f030024
+    const v14, 0x7f03002b
 
     invoke-direct {v0, v2, v13, v12, v14}, Lcom/oneplus/screenshot/longshot/util/Configs;-><init>(Ljava/lang/String;ILjava/lang/String;I)V
 
@@ -2822,9 +2996,9 @@
 
     const-string v2, "MOVE_DURATION_LEVEL_3_ACTIVITY"
 
-    const/16 v13, 0xbb
+    const/16 v13, 0xc6
 
-    const v14, 0x7f030025
+    const v14, 0x7f03002c
 
     invoke-direct {v0, v2, v13, v12, v14}, Lcom/oneplus/screenshot/longshot/util/Configs;-><init>(Ljava/lang/String;ILjava/lang/String;I)V
 
@@ -2834,9 +3008,9 @@
 
     const-string v2, "MOVE_DURATION_LEVEL_4_ACTIVITY"
 
-    const/16 v13, 0xbc
+    const/16 v13, 0xc7
 
-    const v14, 0x7f030026
+    const v14, 0x7f03002d
 
     invoke-direct {v0, v2, v13, v12, v14}, Lcom/oneplus/screenshot/longshot/util/Configs;-><init>(Ljava/lang/String;ILjava/lang/String;I)V
 
@@ -2846,15 +3020,15 @@
 
     const-string v2, "MOVE_DURATION_LEVEL_5_ACTIVITY"
 
-    const/16 v13, 0xbd
+    const/16 v13, 0xc8
 
-    const v14, 0x7f030027
+    const v14, 0x7f03002e
 
     invoke-direct {v0, v2, v13, v12, v14}, Lcom/oneplus/screenshot/longshot/util/Configs;-><init>(Ljava/lang/String;ILjava/lang/String;I)V
 
     sput-object v0, Lcom/oneplus/screenshot/longshot/util/Configs;->MOVE_DURATION_LEVEL_5_ACTIVITY:Lcom/oneplus/screenshot/longshot/util/Configs;
 
-    const/16 v0, 0xbe
+    const/16 v0, 0xc9
 
     new-array v0, v0, [Lcom/oneplus/screenshot/longshot/util/Configs;
 
@@ -3642,339 +3816,405 @@
 
     aput-object v2, v0, v6
 
-    sget-object v2, Lcom/oneplus/screenshot/longshot/util/Configs;->LEVEL2_DELAY_ACTIVITY:Lcom/oneplus/screenshot/longshot/util/Configs;
+    sget-object v2, Lcom/oneplus/screenshot/longshot/util/Configs;->SCREENSHOT_BLACK_LIST_ACTIVITY:Lcom/oneplus/screenshot/longshot/util/Configs;
 
     const/16 v6, 0x86
 
     aput-object v2, v0, v6
 
-    sget-object v2, Lcom/oneplus/screenshot/longshot/util/Configs;->LEVEL3_DELAY_ACTIVITY:Lcom/oneplus/screenshot/longshot/util/Configs;
+    sget-object v2, Lcom/oneplus/screenshot/longshot/util/Configs;->LEVEL2_DELAY_ACTIVITY:Lcom/oneplus/screenshot/longshot/util/Configs;
 
     const/16 v6, 0x87
 
     aput-object v2, v0, v6
 
-    sget-object v2, Lcom/oneplus/screenshot/longshot/util/Configs;->LEVEL0_LIST_ACTIVITY:Lcom/oneplus/screenshot/longshot/util/Configs;
+    sget-object v2, Lcom/oneplus/screenshot/longshot/util/Configs;->LEVEL3_DELAY_ACTIVITY:Lcom/oneplus/screenshot/longshot/util/Configs;
 
     const/16 v6, 0x88
 
     aput-object v2, v0, v6
 
-    sget-object v2, Lcom/oneplus/screenshot/longshot/util/Configs;->LEVEL1_LIST_ACTIVITY:Lcom/oneplus/screenshot/longshot/util/Configs;
+    sget-object v2, Lcom/oneplus/screenshot/longshot/util/Configs;->LEVEL0_LIST_ACTIVITY:Lcom/oneplus/screenshot/longshot/util/Configs;
 
     const/16 v6, 0x89
 
     aput-object v2, v0, v6
 
-    sget-object v2, Lcom/oneplus/screenshot/longshot/util/Configs;->LEVEL2_LIST_ACTIVITY:Lcom/oneplus/screenshot/longshot/util/Configs;
+    sget-object v2, Lcom/oneplus/screenshot/longshot/util/Configs;->LEVEL1_LIST_ACTIVITY:Lcom/oneplus/screenshot/longshot/util/Configs;
 
     const/16 v6, 0x8a
 
     aput-object v2, v0, v6
 
-    sget-object v2, Lcom/oneplus/screenshot/longshot/util/Configs;->LEVEL3_LIST_ACTIVITY:Lcom/oneplus/screenshot/longshot/util/Configs;
+    sget-object v2, Lcom/oneplus/screenshot/longshot/util/Configs;->LEVEL2_LIST_ACTIVITY:Lcom/oneplus/screenshot/longshot/util/Configs;
 
     const/16 v6, 0x8b
 
     aput-object v2, v0, v6
 
-    sget-object v2, Lcom/oneplus/screenshot/longshot/util/Configs;->LEVEL4_LIST_ACTIVITY:Lcom/oneplus/screenshot/longshot/util/Configs;
+    sget-object v2, Lcom/oneplus/screenshot/longshot/util/Configs;->LEVEL3_LIST_ACTIVITY:Lcom/oneplus/screenshot/longshot/util/Configs;
 
     const/16 v6, 0x8c
 
     aput-object v2, v0, v6
 
-    sget-object v2, Lcom/oneplus/screenshot/longshot/util/Configs;->LEVEL5_LIST_ACTIVITY:Lcom/oneplus/screenshot/longshot/util/Configs;
+    sget-object v2, Lcom/oneplus/screenshot/longshot/util/Configs;->LEVEL4_LIST_ACTIVITY:Lcom/oneplus/screenshot/longshot/util/Configs;
 
     const/16 v6, 0x8d
 
     aput-object v2, v0, v6
 
-    sget-object v2, Lcom/oneplus/screenshot/longshot/util/Configs;->LEVEL2_STITCH_NEXT_LIST_ACTIVITY:Lcom/oneplus/screenshot/longshot/util/Configs;
+    sget-object v2, Lcom/oneplus/screenshot/longshot/util/Configs;->LEVEL5_LIST_ACTIVITY:Lcom/oneplus/screenshot/longshot/util/Configs;
 
     const/16 v6, 0x8e
 
     aput-object v2, v0, v6
 
-    sget-object v2, Lcom/oneplus/screenshot/longshot/util/Configs;->LEVEL3_STITCH_NEXT_LIST_ACTIVITY:Lcom/oneplus/screenshot/longshot/util/Configs;
+    sget-object v2, Lcom/oneplus/screenshot/longshot/util/Configs;->LEVEL2_STITCH_NEXT_LIST_ACTIVITY:Lcom/oneplus/screenshot/longshot/util/Configs;
 
     const/16 v6, 0x8f
 
     aput-object v2, v0, v6
 
-    sget-object v2, Lcom/oneplus/screenshot/longshot/util/Configs;->LEVEL4_STITCH_NEXT_LIST_ACTIVITY:Lcom/oneplus/screenshot/longshot/util/Configs;
+    sget-object v2, Lcom/oneplus/screenshot/longshot/util/Configs;->LEVEL3_STITCH_NEXT_LIST_ACTIVITY:Lcom/oneplus/screenshot/longshot/util/Configs;
 
     const/16 v6, 0x90
 
     aput-object v2, v0, v6
 
-    sget-object v2, Lcom/oneplus/screenshot/longshot/util/Configs;->LEVEL5_STITCH_NEXT_LIST_ACTIVITY:Lcom/oneplus/screenshot/longshot/util/Configs;
+    sget-object v2, Lcom/oneplus/screenshot/longshot/util/Configs;->LEVEL4_STITCH_NEXT_LIST_ACTIVITY:Lcom/oneplus/screenshot/longshot/util/Configs;
 
     const/16 v6, 0x91
 
     aput-object v2, v0, v6
 
-    sget-object v2, Lcom/oneplus/screenshot/longshot/util/Configs;->LEVEL2_SHOT_NEXT_LIST_ACTIVITY:Lcom/oneplus/screenshot/longshot/util/Configs;
+    sget-object v2, Lcom/oneplus/screenshot/longshot/util/Configs;->LEVEL5_STITCH_NEXT_LIST_ACTIVITY:Lcom/oneplus/screenshot/longshot/util/Configs;
 
     const/16 v6, 0x92
 
     aput-object v2, v0, v6
 
-    sget-object v2, Lcom/oneplus/screenshot/longshot/util/Configs;->LEVEL3_SHOT_NEXT_LIST_ACTIVITY:Lcom/oneplus/screenshot/longshot/util/Configs;
+    sget-object v2, Lcom/oneplus/screenshot/longshot/util/Configs;->LEVEL2_SHOT_NEXT_LIST_ACTIVITY:Lcom/oneplus/screenshot/longshot/util/Configs;
 
     const/16 v6, 0x93
 
     aput-object v2, v0, v6
 
-    sget-object v2, Lcom/oneplus/screenshot/longshot/util/Configs;->LEVEL4_SHOT_NEXT_LIST_ACTIVITY:Lcom/oneplus/screenshot/longshot/util/Configs;
+    sget-object v2, Lcom/oneplus/screenshot/longshot/util/Configs;->LEVEL3_SHOT_NEXT_LIST_ACTIVITY:Lcom/oneplus/screenshot/longshot/util/Configs;
 
     const/16 v6, 0x94
 
     aput-object v2, v0, v6
 
-    sget-object v2, Lcom/oneplus/screenshot/longshot/util/Configs;->LEVEL5_SHOT_NEXT_LIST_ACTIVITY:Lcom/oneplus/screenshot/longshot/util/Configs;
+    sget-object v2, Lcom/oneplus/screenshot/longshot/util/Configs;->LEVEL4_SHOT_NEXT_LIST_ACTIVITY:Lcom/oneplus/screenshot/longshot/util/Configs;
 
     const/16 v6, 0x95
 
     aput-object v2, v0, v6
 
-    sget-object v2, Lcom/oneplus/screenshot/longshot/util/Configs;->LEVEL2_STITCH_MATCH_LIST_ACTIVITY:Lcom/oneplus/screenshot/longshot/util/Configs;
+    sget-object v2, Lcom/oneplus/screenshot/longshot/util/Configs;->LEVEL5_SHOT_NEXT_LIST_ACTIVITY:Lcom/oneplus/screenshot/longshot/util/Configs;
 
     const/16 v6, 0x96
 
     aput-object v2, v0, v6
 
-    sget-object v2, Lcom/oneplus/screenshot/longshot/util/Configs;->LEVEL3_STITCH_MATCH_LIST_ACTIVITY:Lcom/oneplus/screenshot/longshot/util/Configs;
+    sget-object v2, Lcom/oneplus/screenshot/longshot/util/Configs;->LEVEL2_STITCH_MATCH_LIST_ACTIVITY:Lcom/oneplus/screenshot/longshot/util/Configs;
 
     const/16 v6, 0x97
 
     aput-object v2, v0, v6
 
-    sget-object v2, Lcom/oneplus/screenshot/longshot/util/Configs;->LEVEL4_STITCH_MATCH_LIST_ACTIVITY:Lcom/oneplus/screenshot/longshot/util/Configs;
+    sget-object v2, Lcom/oneplus/screenshot/longshot/util/Configs;->LEVEL3_STITCH_MATCH_LIST_ACTIVITY:Lcom/oneplus/screenshot/longshot/util/Configs;
 
     const/16 v6, 0x98
 
     aput-object v2, v0, v6
 
-    sget-object v2, Lcom/oneplus/screenshot/longshot/util/Configs;->LEVEL5_STITCH_MATCH_LIST_ACTIVITY:Lcom/oneplus/screenshot/longshot/util/Configs;
+    sget-object v2, Lcom/oneplus/screenshot/longshot/util/Configs;->LEVEL4_STITCH_MATCH_LIST_ACTIVITY:Lcom/oneplus/screenshot/longshot/util/Configs;
 
     const/16 v6, 0x99
 
     aput-object v2, v0, v6
 
-    sget-object v2, Lcom/oneplus/screenshot/longshot/util/Configs;->STRICT_LIST_ACTIVITY:Lcom/oneplus/screenshot/longshot/util/Configs;
+    sget-object v2, Lcom/oneplus/screenshot/longshot/util/Configs;->LEVEL5_STITCH_MATCH_LIST_ACTIVITY:Lcom/oneplus/screenshot/longshot/util/Configs;
 
     const/16 v6, 0x9a
 
     aput-object v2, v0, v6
 
-    sget-object v2, Lcom/oneplus/screenshot/longshot/util/Configs;->SMALL_LIST_ACTIVITY:Lcom/oneplus/screenshot/longshot/util/Configs;
+    sget-object v2, Lcom/oneplus/screenshot/longshot/util/Configs;->STRICT_LIST_ACTIVITY:Lcom/oneplus/screenshot/longshot/util/Configs;
 
     const/16 v6, 0x9b
 
     aput-object v2, v0, v6
 
-    sget-object v2, Lcom/oneplus/screenshot/longshot/util/Configs;->LOWER_LIST_ACTIVITY:Lcom/oneplus/screenshot/longshot/util/Configs;
+    sget-object v2, Lcom/oneplus/screenshot/longshot/util/Configs;->SMALL_LIST_ACTIVITY:Lcom/oneplus/screenshot/longshot/util/Configs;
 
     const/16 v6, 0x9c
 
     aput-object v2, v0, v6
 
-    sget-object v2, Lcom/oneplus/screenshot/longshot/util/Configs;->HIGHER_LIST_ACTIVITY:Lcom/oneplus/screenshot/longshot/util/Configs;
+    sget-object v2, Lcom/oneplus/screenshot/longshot/util/Configs;->LOWER_LIST_ACTIVITY:Lcom/oneplus/screenshot/longshot/util/Configs;
 
     const/16 v6, 0x9d
 
     aput-object v2, v0, v6
 
-    sget-object v2, Lcom/oneplus/screenshot/longshot/util/Configs;->PAGE_LIST_ACTIVITY:Lcom/oneplus/screenshot/longshot/util/Configs;
+    sget-object v2, Lcom/oneplus/screenshot/longshot/util/Configs;->HIGHER_LIST_ACTIVITY:Lcom/oneplus/screenshot/longshot/util/Configs;
 
     const/16 v6, 0x9e
 
     aput-object v2, v0, v6
 
-    sget-object v2, Lcom/oneplus/screenshot/longshot/util/Configs;->KEEP_LIST_ACTIVITY:Lcom/oneplus/screenshot/longshot/util/Configs;
+    sget-object v2, Lcom/oneplus/screenshot/longshot/util/Configs;->PAGE_LIST_ACTIVITY:Lcom/oneplus/screenshot/longshot/util/Configs;
 
     const/16 v6, 0x9f
 
     aput-object v2, v0, v6
 
-    sget-object v2, Lcom/oneplus/screenshot/longshot/util/Configs;->NON_LIST_ACTIVITY:Lcom/oneplus/screenshot/longshot/util/Configs;
+    sget-object v2, Lcom/oneplus/screenshot/longshot/util/Configs;->KEEP_LIST_ACTIVITY:Lcom/oneplus/screenshot/longshot/util/Configs;
 
     const/16 v6, 0xa0
 
     aput-object v2, v0, v6
 
-    sget-object v2, Lcom/oneplus/screenshot/longshot/util/Configs;->BG_LIST_ACTIVITY:Lcom/oneplus/screenshot/longshot/util/Configs;
+    sget-object v2, Lcom/oneplus/screenshot/longshot/util/Configs;->NON_LIST_ACTIVITY:Lcom/oneplus/screenshot/longshot/util/Configs;
 
     const/16 v6, 0xa1
 
     aput-object v2, v0, v6
 
-    sget-object v2, Lcom/oneplus/screenshot/longshot/util/Configs;->BIGTOP_LIST_ACTIVITY:Lcom/oneplus/screenshot/longshot/util/Configs;
+    sget-object v2, Lcom/oneplus/screenshot/longshot/util/Configs;->BG_LIST_ACTIVITY:Lcom/oneplus/screenshot/longshot/util/Configs;
 
     const/16 v6, 0xa2
 
     aput-object v2, v0, v6
 
-    sget-object v2, Lcom/oneplus/screenshot/longshot/util/Configs;->CUSTOMIZE_MOVE_LIST_ACTIVITY:Lcom/oneplus/screenshot/longshot/util/Configs;
+    sget-object v2, Lcom/oneplus/screenshot/longshot/util/Configs;->BIGTOP_LIST_ACTIVITY:Lcom/oneplus/screenshot/longshot/util/Configs;
 
     const/16 v6, 0xa3
 
     aput-object v2, v0, v6
 
-    sget-object v2, Lcom/oneplus/screenshot/longshot/util/Configs;->LARGETOP_LIST_ACTIVITY:Lcom/oneplus/screenshot/longshot/util/Configs;
+    sget-object v2, Lcom/oneplus/screenshot/longshot/util/Configs;->CUSTOMIZE_MOVE_LIST_ACTIVITY:Lcom/oneplus/screenshot/longshot/util/Configs;
 
     const/16 v6, 0xa4
 
     aput-object v2, v0, v6
 
-    sget-object v2, Lcom/oneplus/screenshot/longshot/util/Configs;->FORBID_STITCH_BY_DISTANCE_LIST_ACTIVITY:Lcom/oneplus/screenshot/longshot/util/Configs;
+    sget-object v2, Lcom/oneplus/screenshot/longshot/util/Configs;->LARGETOP_LIST_ACTIVITY:Lcom/oneplus/screenshot/longshot/util/Configs;
 
     const/16 v6, 0xa5
 
     aput-object v2, v0, v6
 
-    sget-object v2, Lcom/oneplus/screenshot/longshot/util/Configs;->IGNORE_FULL_MATCH_ACTIVITY:Lcom/oneplus/screenshot/longshot/util/Configs;
+    sget-object v2, Lcom/oneplus/screenshot/longshot/util/Configs;->FORBID_STITCH_BY_DISTANCE_LIST_ACTIVITY:Lcom/oneplus/screenshot/longshot/util/Configs;
 
     const/16 v6, 0xa6
 
     aput-object v2, v0, v6
 
-    sget-object v2, Lcom/oneplus/screenshot/longshot/util/Configs;->ERROR_2_ACTIVITY:Lcom/oneplus/screenshot/longshot/util/Configs;
+    sget-object v2, Lcom/oneplus/screenshot/longshot/util/Configs;->IGNORE_FULL_MATCH_ACTIVITY:Lcom/oneplus/screenshot/longshot/util/Configs;
 
     const/16 v6, 0xa7
 
     aput-object v2, v0, v6
 
-    sget-object v2, Lcom/oneplus/screenshot/longshot/util/Configs;->LIMIT_LEFT_ACTIVITY:Lcom/oneplus/screenshot/longshot/util/Configs;
+    sget-object v2, Lcom/oneplus/screenshot/longshot/util/Configs;->ERROR_2_ACTIVITY:Lcom/oneplus/screenshot/longshot/util/Configs;
 
     const/16 v6, 0xa8
 
     aput-object v2, v0, v6
 
-    sget-object v2, Lcom/oneplus/screenshot/longshot/util/Configs;->LIMIT_RIGHT_ACTIVITY:Lcom/oneplus/screenshot/longshot/util/Configs;
+    sget-object v2, Lcom/oneplus/screenshot/longshot/util/Configs;->LIMIT_LEFT_ACTIVITY:Lcom/oneplus/screenshot/longshot/util/Configs;
 
     const/16 v6, 0xa9
 
     aput-object v2, v0, v6
 
-    sget-object v2, Lcom/oneplus/screenshot/longshot/util/Configs;->Level2_SCROLLBAR_ACTIVITY:Lcom/oneplus/screenshot/longshot/util/Configs;
+    sget-object v2, Lcom/oneplus/screenshot/longshot/util/Configs;->LIMIT_RIGHT_ACTIVITY:Lcom/oneplus/screenshot/longshot/util/Configs;
 
     const/16 v6, 0xaa
 
     aput-object v2, v0, v6
 
-    sget-object v2, Lcom/oneplus/screenshot/longshot/util/Configs;->Level3_SCROLLBAR_ACTIVITY:Lcom/oneplus/screenshot/longshot/util/Configs;
+    sget-object v2, Lcom/oneplus/screenshot/longshot/util/Configs;->Level2_SCROLLBAR_ACTIVITY:Lcom/oneplus/screenshot/longshot/util/Configs;
 
     const/16 v6, 0xab
 
     aput-object v2, v0, v6
 
-    sget-object v2, Lcom/oneplus/screenshot/longshot/util/Configs;->Level4_SCROLLBAR_ACTIVITY:Lcom/oneplus/screenshot/longshot/util/Configs;
+    sget-object v2, Lcom/oneplus/screenshot/longshot/util/Configs;->Level3_SCROLLBAR_ACTIVITY:Lcom/oneplus/screenshot/longshot/util/Configs;
 
     const/16 v6, 0xac
 
     aput-object v2, v0, v6
 
-    sget-object v2, Lcom/oneplus/screenshot/longshot/util/Configs;->NOT_IGNORE_FAIL_ACTIVITY:Lcom/oneplus/screenshot/longshot/util/Configs;
+    sget-object v2, Lcom/oneplus/screenshot/longshot/util/Configs;->Level4_SCROLLBAR_ACTIVITY:Lcom/oneplus/screenshot/longshot/util/Configs;
 
     const/16 v6, 0xad
 
     aput-object v2, v0, v6
 
-    sget-object v2, Lcom/oneplus/screenshot/longshot/util/Configs;->SPECIAL_SCROLL_ACTIVITY:Lcom/oneplus/screenshot/longshot/util/Configs;
+    sget-object v2, Lcom/oneplus/screenshot/longshot/util/Configs;->NOT_IGNORE_FAIL_ACTIVITY:Lcom/oneplus/screenshot/longshot/util/Configs;
 
     const/16 v6, 0xae
 
     aput-object v2, v0, v6
 
-    sget-object v2, Lcom/oneplus/screenshot/longshot/util/Configs;->DISPLAY_COMPAT_LEVEL_2_MATCH_ACTIVITY:Lcom/oneplus/screenshot/longshot/util/Configs;
+    sget-object v2, Lcom/oneplus/screenshot/longshot/util/Configs;->SPECIAL_SCROLL_ACTIVITY:Lcom/oneplus/screenshot/longshot/util/Configs;
 
     const/16 v6, 0xaf
 
     aput-object v2, v0, v6
 
-    sget-object v2, Lcom/oneplus/screenshot/longshot/util/Configs;->DISPLAY_COMPAT_LEVEL_3_MATCH_ACTIVITY:Lcom/oneplus/screenshot/longshot/util/Configs;
+    sget-object v2, Lcom/oneplus/screenshot/longshot/util/Configs;->DISPLAY_COMPAT_LEVEL_2_MATCH_ACTIVITY:Lcom/oneplus/screenshot/longshot/util/Configs;
 
     const/16 v6, 0xb0
 
     aput-object v2, v0, v6
 
-    sget-object v2, Lcom/oneplus/screenshot/longshot/util/Configs;->OVERRIDE_MATCH_THRESHOLD_LIST_2:Lcom/oneplus/screenshot/longshot/util/Configs;
+    sget-object v2, Lcom/oneplus/screenshot/longshot/util/Configs;->DISPLAY_COMPAT_LEVEL_3_MATCH_ACTIVITY:Lcom/oneplus/screenshot/longshot/util/Configs;
 
     const/16 v6, 0xb1
 
     aput-object v2, v0, v6
 
-    sget-object v2, Lcom/oneplus/screenshot/longshot/util/Configs;->OVERRIDE_MATCH_THRESHOLD_LIST_3:Lcom/oneplus/screenshot/longshot/util/Configs;
+    sget-object v2, Lcom/oneplus/screenshot/longshot/util/Configs;->OVERRIDE_MATCH_THRESHOLD_LIST_2:Lcom/oneplus/screenshot/longshot/util/Configs;
 
     const/16 v6, 0xb2
 
     aput-object v2, v0, v6
 
-    sget-object v2, Lcom/oneplus/screenshot/longshot/util/Configs;->OVERRIDE_MATCH_THRESHOLD_LIST_4:Lcom/oneplus/screenshot/longshot/util/Configs;
+    sget-object v2, Lcom/oneplus/screenshot/longshot/util/Configs;->OVERRIDE_MATCH_THRESHOLD_LIST_3:Lcom/oneplus/screenshot/longshot/util/Configs;
 
     const/16 v6, 0xb3
 
     aput-object v2, v0, v6
 
-    sget-object v2, Lcom/oneplus/screenshot/longshot/util/Configs;->OVERRIDE_PIXEL_MATCH_THRESHOLD_LEVEL_1:Lcom/oneplus/screenshot/longshot/util/Configs;
+    sget-object v2, Lcom/oneplus/screenshot/longshot/util/Configs;->OVERRIDE_MATCH_THRESHOLD_LIST_4:Lcom/oneplus/screenshot/longshot/util/Configs;
 
     const/16 v6, 0xb4
 
     aput-object v2, v0, v6
 
-    sget-object v2, Lcom/oneplus/screenshot/longshot/util/Configs;->OVERRIDE_PIXEL_MATCH_THRESHOLD_LEVEL_2:Lcom/oneplus/screenshot/longshot/util/Configs;
+    sget-object v2, Lcom/oneplus/screenshot/longshot/util/Configs;->OVERRIDE_PIXEL_MATCH_THRESHOLD_LEVEL_1:Lcom/oneplus/screenshot/longshot/util/Configs;
 
     const/16 v6, 0xb5
 
     aput-object v2, v0, v6
 
-    sget-object v2, Lcom/oneplus/screenshot/longshot/util/Configs;->OVERRIDE_PIXEL_MATCH_THRESHOLD_LEVEL_3:Lcom/oneplus/screenshot/longshot/util/Configs;
+    sget-object v2, Lcom/oneplus/screenshot/longshot/util/Configs;->OVERRIDE_PIXEL_MATCH_THRESHOLD_LEVEL_2:Lcom/oneplus/screenshot/longshot/util/Configs;
 
     const/16 v6, 0xb6
 
     aput-object v2, v0, v6
 
-    sget-object v2, Lcom/oneplus/screenshot/longshot/util/Configs;->OVERRIDE_PIXEL_MATCH_THRESHOLD_LEVEL_4:Lcom/oneplus/screenshot/longshot/util/Configs;
+    sget-object v2, Lcom/oneplus/screenshot/longshot/util/Configs;->OVERRIDE_PIXEL_MATCH_THRESHOLD_LEVEL_3:Lcom/oneplus/screenshot/longshot/util/Configs;
 
     const/16 v6, 0xb7
 
     aput-object v2, v0, v6
 
-    sget-object v2, Lcom/oneplus/screenshot/longshot/util/Configs;->INJECT_X_POSITION_ACTIVITY:Lcom/oneplus/screenshot/longshot/util/Configs;
+    sget-object v2, Lcom/oneplus/screenshot/longshot/util/Configs;->OVERRIDE_PIXEL_MATCH_THRESHOLD_LEVEL_4:Lcom/oneplus/screenshot/longshot/util/Configs;
 
     const/16 v6, 0xb8
 
     aput-object v2, v0, v6
 
-    sget-object v2, Lcom/oneplus/screenshot/longshot/util/Configs;->IGNORE_OVERSCROLL_ACTIVITY:Lcom/oneplus/screenshot/longshot/util/Configs;
+    sget-object v2, Lcom/oneplus/screenshot/longshot/util/Configs;->INJECT_X_POSITION_ACTIVITY:Lcom/oneplus/screenshot/longshot/util/Configs;
 
     const/16 v6, 0xb9
 
     aput-object v2, v0, v6
 
-    sget-object v2, Lcom/oneplus/screenshot/longshot/util/Configs;->MOVE_DURATION_LEVEL_2_ACTIVITY:Lcom/oneplus/screenshot/longshot/util/Configs;
+    sget-object v2, Lcom/oneplus/screenshot/longshot/util/Configs;->IGNORE_OVERSCROLL_ACTIVITY:Lcom/oneplus/screenshot/longshot/util/Configs;
 
     const/16 v6, 0xba
 
     aput-object v2, v0, v6
 
-    sget-object v2, Lcom/oneplus/screenshot/longshot/util/Configs;->MOVE_DURATION_LEVEL_3_ACTIVITY:Lcom/oneplus/screenshot/longshot/util/Configs;
+    sget-object v2, Lcom/oneplus/screenshot/longshot/util/Configs;->INJECT_ADDITIONAL_SWIPE:Lcom/oneplus/screenshot/longshot/util/Configs;
 
     const/16 v6, 0xbb
 
     aput-object v2, v0, v6
 
-    sget-object v2, Lcom/oneplus/screenshot/longshot/util/Configs;->MOVE_DURATION_LEVEL_4_ACTIVITY:Lcom/oneplus/screenshot/longshot/util/Configs;
+    sget-object v2, Lcom/oneplus/screenshot/longshot/util/Configs;->SWIPE_PRESSURE_LEVEL_1:Lcom/oneplus/screenshot/longshot/util/Configs;
 
     const/16 v6, 0xbc
 
     aput-object v2, v0, v6
 
-    sget-object v2, Lcom/oneplus/screenshot/longshot/util/Configs;->MOVE_DURATION_LEVEL_5_ACTIVITY:Lcom/oneplus/screenshot/longshot/util/Configs;
+    sget-object v2, Lcom/oneplus/screenshot/longshot/util/Configs;->SWIPE_PRESSURE_LEVEL_2:Lcom/oneplus/screenshot/longshot/util/Configs;
 
     const/16 v6, 0xbd
+
+    aput-object v2, v0, v6
+
+    sget-object v2, Lcom/oneplus/screenshot/longshot/util/Configs;->STITCH_BY_VIEW_ACTIVITY:Lcom/oneplus/screenshot/longshot/util/Configs;
+
+    const/16 v6, 0xbe
+
+    aput-object v2, v0, v6
+
+    sget-object v2, Lcom/oneplus/screenshot/longshot/util/Configs;->STITCH_BY_SCROLL_DISTANCE:Lcom/oneplus/screenshot/longshot/util/Configs;
+
+    const/16 v6, 0xbf
+
+    aput-object v2, v0, v6
+
+    sget-object v2, Lcom/oneplus/screenshot/longshot/util/Configs;->IS_COMPATIBLE_SCROLL_VIEW:Lcom/oneplus/screenshot/longshot/util/Configs;
+
+    const/16 v6, 0xc0
+
+    aput-object v2, v0, v6
+
+    sget-object v2, Lcom/oneplus/screenshot/longshot/util/Configs;->IS_FOURTH_LAST_INDEX:Lcom/oneplus/screenshot/longshot/util/Configs;
+
+    const/16 v6, 0xc1
+
+    aput-object v2, v0, v6
+
+    sget-object v2, Lcom/oneplus/screenshot/longshot/util/Configs;->IS_SECOND_LAST_INDEX:Lcom/oneplus/screenshot/longshot/util/Configs;
+
+    const/16 v6, 0xc2
+
+    aput-object v2, v0, v6
+
+    sget-object v2, Lcom/oneplus/screenshot/longshot/util/Configs;->IS_MARGIN_TOP:Lcom/oneplus/screenshot/longshot/util/Configs;
+
+    const/16 v6, 0xc3
+
+    aput-object v2, v0, v6
+
+    sget-object v2, Lcom/oneplus/screenshot/longshot/util/Configs;->IS_MARGIN_BOTTOM:Lcom/oneplus/screenshot/longshot/util/Configs;
+
+    const/16 v6, 0xc4
+
+    aput-object v2, v0, v6
+
+    sget-object v2, Lcom/oneplus/screenshot/longshot/util/Configs;->MOVE_DURATION_LEVEL_2_ACTIVITY:Lcom/oneplus/screenshot/longshot/util/Configs;
+
+    const/16 v6, 0xc5
+
+    aput-object v2, v0, v6
+
+    sget-object v2, Lcom/oneplus/screenshot/longshot/util/Configs;->MOVE_DURATION_LEVEL_3_ACTIVITY:Lcom/oneplus/screenshot/longshot/util/Configs;
+
+    const/16 v6, 0xc6
+
+    aput-object v2, v0, v6
+
+    sget-object v2, Lcom/oneplus/screenshot/longshot/util/Configs;->MOVE_DURATION_LEVEL_4_ACTIVITY:Lcom/oneplus/screenshot/longshot/util/Configs;
+
+    const/16 v6, 0xc7
+
+    aput-object v2, v0, v6
+
+    sget-object v2, Lcom/oneplus/screenshot/longshot/util/Configs;->MOVE_DURATION_LEVEL_5_ACTIVITY:Lcom/oneplus/screenshot/longshot/util/Configs;
+
+    const/16 v6, 0xc8
 
     aput-object v2, v0, v6
 
@@ -4065,6 +4305,12 @@
     sput v0, Lcom/oneplus/screenshot/longshot/util/Configs;->sTouchXPosition:I
 
     sput-boolean v1, Lcom/oneplus/screenshot/longshot/util/Configs;->sIsIgnoreOverScroll:Z
+
+    sput-boolean v1, Lcom/oneplus/screenshot/longshot/util/Configs;->sIsInjectAdditionalSwipe:Z
+
+    const/high16 v0, 0x3f800000    # 1.0f
+
+    sput v0, Lcom/oneplus/screenshot/longshot/util/Configs;->sSwipePressure:F
 
     const/4 v0, 0x0
 
@@ -4260,6 +4506,22 @@
     invoke-virtual {v1}, Landroid/content/pm/PackageManager$NameNotFoundException;->printStackTrace()V
 
     :goto_0
+    return-object v0
+.end method
+
+.method public static getConfigValuesForServer()Ljava/lang/String;
+    .locals 2
+
+    new-instance v0, Lcom/oneplus/screenshot/longshot/util/ServerConfigs;
+
+    invoke-direct {v0}, Lcom/oneplus/screenshot/longshot/util/ServerConfigs;-><init>()V
+
+    sget-object v1, Lcom/oneplus/screenshot/longshot/util/Configs;->mTopActivity:Landroid/content/ComponentName;
+
+    invoke-virtual {v0, v1}, Lcom/oneplus/screenshot/longshot/util/ServerConfigs;->getConfigJsonForActivityName(Landroid/content/ComponentName;)Ljava/lang/String;
+
+    move-result-object v0
+
     return-object v0
 .end method
 
@@ -4464,6 +4726,48 @@
     const-string v2, "Longshot.Configs"
 
     invoke-static {v2, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    return v0
+.end method
+
+.method public static getLastChildIndex()I
+    .locals 2
+
+    sget-object v0, Lcom/oneplus/screenshot/longshot/util/Configs;->mTopActivity:Landroid/content/ComponentName;
+
+    sget-object v1, Lcom/oneplus/screenshot/longshot/util/Configs;->IS_SECOND_LAST_INDEX:Lcom/oneplus/screenshot/longshot/util/Configs;
+
+    iget-object v1, v1, Lcom/oneplus/screenshot/longshot/util/Configs;->mArray:[Ljava/lang/String;
+
+    invoke-static {v0, v1}, Lcom/oneplus/screenshot/longshot/util/Configs;->isActivity(Landroid/content/ComponentName;[Ljava/lang/String;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    const/4 v0, 0x2
+
+    return v0
+
+    :cond_0
+    sget-object v0, Lcom/oneplus/screenshot/longshot/util/Configs;->mTopActivity:Landroid/content/ComponentName;
+
+    sget-object v1, Lcom/oneplus/screenshot/longshot/util/Configs;->IS_FOURTH_LAST_INDEX:Lcom/oneplus/screenshot/longshot/util/Configs;
+
+    iget-object v1, v1, Lcom/oneplus/screenshot/longshot/util/Configs;->mArray:[Ljava/lang/String;
+
+    invoke-static {v0, v1}, Lcom/oneplus/screenshot/longshot/util/Configs;->isActivity(Landroid/content/ComponentName;[Ljava/lang/String;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    const/4 v0, 0x4
+
+    return v0
+
+    :cond_1
+    const/4 v0, 0x1
 
     return v0
 .end method
@@ -5019,6 +5323,182 @@
 
     :cond_0
     sget v0, Lcom/oneplus/screenshot/longshot/util/Configs;->limitRight:I
+
+    return v0
+.end method
+
+.method public static getMarginBottom()I
+    .locals 8
+
+    sget-object v0, Lcom/oneplus/screenshot/longshot/util/Configs;->mTopActivity:Landroid/content/ComponentName;
+
+    sget-object v1, Lcom/oneplus/screenshot/longshot/util/Configs;->IS_MARGIN_BOTTOM:Lcom/oneplus/screenshot/longshot/util/Configs;
+
+    iget-object v1, v1, Lcom/oneplus/screenshot/longshot/util/Configs;->mArray:[Ljava/lang/String;
+
+    invoke-static {v0, v1}, Lcom/oneplus/screenshot/longshot/util/Configs;->isActivity(Landroid/content/ComponentName;[Ljava/lang/String;)Z
+
+    move-result v0
+
+    const/4 v1, 0x0
+
+    if-eqz v0, :cond_4
+
+    sget-object v0, Lcom/oneplus/screenshot/longshot/util/Configs;->mTopActivity:Landroid/content/ComponentName;
+
+    invoke-virtual {v0}, Landroid/content/ComponentName;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    const/4 v2, -0x1
+
+    invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
+
+    move-result v3
+
+    const/4 v4, 0x4
+
+    const/4 v5, 0x3
+
+    const/4 v6, 0x2
+
+    const/4 v7, 0x1
+
+    sparse-switch v3, :sswitch_data_0
+
+    :cond_0
+    goto :goto_0
+
+    :sswitch_0
+    const-string v1, "ComponentInfo{com.taobao.taobao/com.taobao.tao.TBMainActivity}"
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    move v1, v4
+
+    goto :goto_1
+
+    :sswitch_1
+    const-string v1, "ComponentInfo{com.sina.weibo/com.sina.weibo.VisitorMainTabActivity}"
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    move v1, v5
+
+    goto :goto_1
+
+    :sswitch_2
+    const-string v1, "ComponentInfo{com.sina.weibo/com.sina.weibo.MainTabActivity}"
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    move v1, v6
+
+    goto :goto_1
+
+    :sswitch_3
+    const-string v3, "ComponentInfo{com.google.android.play.games/com.google.android.gms.games.ui.v2.MainActivity}"
+
+    invoke-virtual {v0, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    goto :goto_1
+
+    :sswitch_4
+    const-string v1, "ComponentInfo{com.oneplus.note/com.oneplus.note.ui.EditActivity}"
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    move v1, v7
+
+    goto :goto_1
+
+    :goto_0
+    move v1, v2
+
+    :goto_1
+    if-eqz v1, :cond_3
+
+    if-eq v1, v7, :cond_2
+
+    if-eq v1, v6, :cond_1
+
+    if-eq v1, v5, :cond_1
+
+    if-eq v1, v4, :cond_1
+
+    const/4 v0, 0x5
+
+    return v0
+
+    :cond_1
+    const/16 v0, 0x1f4
+
+    return v0
+
+    :cond_2
+    const/16 v0, 0x32
+
+    return v0
+
+    :cond_3
+    const/16 v0, 0xa
+
+    return v0
+
+    :cond_4
+    return v1
+
+    :sswitch_data_0
+    .sparse-switch
+        -0x432e60a7 -> :sswitch_4
+        -0x382d50c7 -> :sswitch_3
+        0x3ca2a281 -> :sswitch_2
+        0x77348651 -> :sswitch_1
+        0x7b0f8d86 -> :sswitch_0
+    .end sparse-switch
+.end method
+
+.method public static getMarginTop()I
+    .locals 2
+
+    sget-object v0, Lcom/oneplus/screenshot/longshot/util/Configs;->mTopActivity:Landroid/content/ComponentName;
+
+    sget-object v1, Lcom/oneplus/screenshot/longshot/util/Configs;->IS_MARGIN_TOP:Lcom/oneplus/screenshot/longshot/util/Configs;
+
+    iget-object v1, v1, Lcom/oneplus/screenshot/longshot/util/Configs;->mArray:[Ljava/lang/String;
+
+    invoke-static {v0, v1}, Lcom/oneplus/screenshot/longshot/util/Configs;->isActivity(Landroid/content/ComponentName;[Ljava/lang/String;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    const/16 v0, 0x12c
+
+    return v0
+
+    :cond_0
+    const/4 v0, 0x0
 
     return v0
 .end method
@@ -5671,6 +6151,61 @@
     return v0
 .end method
 
+.method public static getSwipePressure(Landroid/content/ComponentName;)F
+    .locals 3
+
+    const/high16 v0, 0x3f800000    # 1.0f
+
+    sget-object v1, Lcom/oneplus/screenshot/longshot/util/Configs;->SWIPE_PRESSURE_LEVEL_1:Lcom/oneplus/screenshot/longshot/util/Configs;
+
+    iget-object v1, v1, Lcom/oneplus/screenshot/longshot/util/Configs;->mArray:[Ljava/lang/String;
+
+    invoke-static {p0, v1}, Lcom/oneplus/screenshot/longshot/util/Configs;->isActivity(Landroid/content/ComponentName;[Ljava/lang/String;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_0
+
+    const v0, 0x3e4ccccd    # 0.2f
+
+    goto :goto_0
+
+    :cond_0
+    sget-object v1, Lcom/oneplus/screenshot/longshot/util/Configs;->SWIPE_PRESSURE_LEVEL_2:Lcom/oneplus/screenshot/longshot/util/Configs;
+
+    iget-object v1, v1, Lcom/oneplus/screenshot/longshot/util/Configs;->mArray:[Ljava/lang/String;
+
+    invoke-static {p0, v1}, Lcom/oneplus/screenshot/longshot/util/Configs;->isActivity(Landroid/content/ComponentName;[Ljava/lang/String;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_1
+
+    const/high16 v0, 0x3f000000    # 0.5f
+
+    :cond_1
+    :goto_0
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v2, "getSwipePressure = "
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    const-string v2, "Longshot.Configs"
+
+    invoke-static {v2, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    return v0
+.end method
+
 .method public static getTopActivity(Landroid/content/Context;)Landroid/content/ComponentName;
     .locals 4
 
@@ -5756,6 +6291,25 @@
     invoke-static {v3, v2}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
     return v1
+.end method
+
+.method public static isAccessibilityServiceRunning()Z
+    .locals 1
+
+    invoke-static {}, Lcom/oneplus/screenshot/StitchViewService;->getInstance()Lcom/oneplus/screenshot/StitchViewService;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_0
+
+    const/4 v0, 0x1
+
+    return v0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    return v0
 .end method
 
 .method private static isActivity(Landroid/content/ComponentName;[Ljava/lang/String;)Z
@@ -5860,6 +6414,44 @@
     return v0
 .end method
 
+.method public static isCompatibleScrollView(Ljava/lang/String;)Z
+    .locals 1
+
+    :try_start_0
+    sget-object v0, Lcom/oneplus/screenshot/longshot/util/Configs;->IS_COMPATIBLE_SCROLL_VIEW:Lcom/oneplus/screenshot/longshot/util/Configs;
+
+    iget-object v0, v0, Lcom/oneplus/screenshot/longshot/util/Configs;->mArray:[Ljava/lang/String;
+
+    invoke-static {v0}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
+
+    move-result-object v0
+
+    invoke-interface {v0, p0}, Ljava/util/List;->contains(Ljava/lang/Object;)Z
+
+    move-result v0
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    if-eqz v0, :cond_0
+
+    const/4 v0, 0x1
+
+    return v0
+
+    :cond_0
+    goto :goto_0
+
+    :catch_0
+    move-exception v0
+
+    invoke-virtual {v0}, Ljava/lang/Exception;->printStackTrace()V
+
+    :goto_0
+    const/4 v0, 0x0
+
+    return v0
+.end method
+
 .method public static isCustomizeMoveApp(Landroid/content/Context;)Z
     .locals 3
 
@@ -5924,6 +6516,56 @@
     const/4 v3, 0x0
 
     return v3
+.end method
+
+.method public static isScreenshotBlocked()Z
+    .locals 2
+
+    sget-object v0, Lcom/oneplus/screenshot/longshot/util/Configs;->mTopActivity:Landroid/content/ComponentName;
+
+    sget-object v1, Lcom/oneplus/screenshot/longshot/util/Configs;->SCREENSHOT_BLACK_LIST_ACTIVITY:Lcom/oneplus/screenshot/longshot/util/Configs;
+
+    iget-object v1, v1, Lcom/oneplus/screenshot/longshot/util/Configs;->mArray:[Ljava/lang/String;
+
+    invoke-static {v0, v1}, Lcom/oneplus/screenshot/longshot/util/Configs;->isActivity(Landroid/content/ComponentName;[Ljava/lang/String;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    const/4 v0, 0x1
+
+    return v0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    return v0
+.end method
+
+.method public static isStitchByScrollDistance()Z
+    .locals 2
+
+    sget-object v0, Lcom/oneplus/screenshot/longshot/util/Configs;->mTopActivity:Landroid/content/ComponentName;
+
+    sget-object v1, Lcom/oneplus/screenshot/longshot/util/Configs;->STITCH_BY_SCROLL_DISTANCE:Lcom/oneplus/screenshot/longshot/util/Configs;
+
+    iget-object v1, v1, Lcom/oneplus/screenshot/longshot/util/Configs;->mArray:[Ljava/lang/String;
+
+    invoke-static {v0, v1}, Lcom/oneplus/screenshot/longshot/util/Configs;->isActivity(Landroid/content/ComponentName;[Ljava/lang/String;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    const/4 v0, 0x1
+
+    return v0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    return v0
 .end method
 
 .method public static isUnsupported(Landroid/content/Context;Landroid/content/ComponentName;)Z
@@ -6141,6 +6783,26 @@
     move-result-object v1
 
     sput-object v1, Lcom/oneplus/screenshot/longshot/util/Configs;->mTopActivity:Landroid/content/ComponentName;
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v2, "load, topActivity = "
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    sget-object v2, Lcom/oneplus/screenshot/longshot/util/Configs;->mTopActivity:Landroid/content/ComponentName;
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    const-string v2, "Longshot.Configs"
+
+    invoke-static {v2, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     sput-boolean v3, Lcom/oneplus/screenshot/longshot/util/Configs;->stopByUser:Z
 
@@ -6374,7 +7036,7 @@
 
     sput v1, Lcom/oneplus/screenshot/longshot/util/Configs;->limitRight:I
 
-    invoke-static {p0}, Lcom/oneplus/screenshot/util/Utils;->getIMEI(Landroid/content/Context;)Ljava/lang/String;
+    invoke-static {p0}, Lcom/oneplus/screenshot/util/Utils;->getEncryptedIMEI(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -6460,11 +7122,31 @@
 
     sget-object v1, Lcom/oneplus/screenshot/longshot/util/Configs;->mTopActivity:Landroid/content/ComponentName;
 
+    sget-object v2, Lcom/oneplus/screenshot/longshot/util/Configs;->INJECT_ADDITIONAL_SWIPE:Lcom/oneplus/screenshot/longshot/util/Configs;
+
+    iget-object v2, v2, Lcom/oneplus/screenshot/longshot/util/Configs;->mArray:[Ljava/lang/String;
+
+    invoke-static {v1, v2}, Lcom/oneplus/screenshot/longshot/util/Configs;->isActivity(Landroid/content/ComponentName;[Ljava/lang/String;)Z
+
+    move-result v1
+
+    sput-boolean v1, Lcom/oneplus/screenshot/longshot/util/Configs;->sIsInjectAdditionalSwipe:Z
+
+    sget-object v1, Lcom/oneplus/screenshot/longshot/util/Configs;->mTopActivity:Landroid/content/ComponentName;
+
     invoke-static {v1}, Lcom/oneplus/screenshot/longshot/util/Configs;->getDisplayInjectXPosition(Landroid/content/ComponentName;)I
 
     move-result v1
 
     sput v1, Lcom/oneplus/screenshot/longshot/util/Configs;->sTouchXPosition:I
+
+    sget-object v1, Lcom/oneplus/screenshot/longshot/util/Configs;->mTopActivity:Landroid/content/ComponentName;
+
+    invoke-static {v1}, Lcom/oneplus/screenshot/longshot/util/Configs;->getSwipePressure(Landroid/content/ComponentName;)F
+
+    move-result v1
+
+    sput v1, Lcom/oneplus/screenshot/longshot/util/Configs;->sSwipePressure:F
 
     invoke-static {p0}, Lcom/oneplus/screenshot/longshot/util/Configs;->loadLineParams(Landroid/content/Context;)V
 
@@ -6679,6 +7361,120 @@
     return-object v0
 .end method
 
+.method public static processBitmapIfStitchByView(Landroid/graphics/Bitmap;Lcom/oneplus/screenshot/longshot/state/LongshotContext;)Landroid/graphics/Bitmap;
+    .locals 7
+
+    invoke-static {}, Lcom/oneplus/screenshot/longshot/util/Configs;->shouldStitchByView()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_4
+
+    invoke-static {}, Lcom/oneplus/screenshot/StitchViewService;->getInstance()Lcom/oneplus/screenshot/StitchViewService;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_4
+
+    invoke-virtual {v0}, Lcom/oneplus/screenshot/StitchViewService;->startLongShot()Landroid/graphics/Rect;
+
+    move-result-object v1
+
+    if-eqz v1, :cond_3
+
+    iget v2, v1, Landroid/graphics/Rect;->top:I
+
+    if-nez v2, :cond_0
+
+    iget v2, v1, Landroid/graphics/Rect;->bottom:I
+
+    if-nez v2, :cond_0
+
+    iget v2, v1, Landroid/graphics/Rect;->left:I
+
+    if-nez v2, :cond_0
+
+    iget v2, v1, Landroid/graphics/Rect;->right:I
+
+    if-nez v2, :cond_0
+
+    goto :goto_1
+
+    :cond_0
+    iget v2, v1, Landroid/graphics/Rect;->top:I
+
+    iget v3, v1, Landroid/graphics/Rect;->bottom:I
+
+    const/4 v4, 0x0
+
+    if-eq v2, v3, :cond_2
+
+    invoke-interface {p1}, Lcom/oneplus/screenshot/longshot/state/LongshotContext;->isOverScroll()Z
+
+    move-result v2
+
+    if-eqz v2, :cond_1
+
+    goto :goto_0
+
+    :cond_1
+    iget v2, v1, Landroid/graphics/Rect;->top:I
+
+    invoke-virtual {p0}, Landroid/graphics/Bitmap;->getWidth()I
+
+    move-result v3
+
+    iget v5, v1, Landroid/graphics/Rect;->bottom:I
+
+    iget v6, v1, Landroid/graphics/Rect;->top:I
+
+    sub-int/2addr v5, v6
+
+    invoke-static {p0, v4, v2, v3, v5}, Landroid/graphics/Bitmap;->createBitmap(Landroid/graphics/Bitmap;IIII)Landroid/graphics/Bitmap;
+
+    move-result-object p0
+
+    goto :goto_2
+
+    :cond_2
+    :goto_0
+    const/4 v2, 0x1
+
+    iput-boolean v2, v0, Lcom/oneplus/screenshot/StitchViewService;->mScrollEndReached:Z
+
+    iget v2, v1, Landroid/graphics/Rect;->top:I
+
+    invoke-virtual {p0}, Landroid/graphics/Bitmap;->getWidth()I
+
+    move-result v3
+
+    invoke-virtual {p0}, Landroid/graphics/Bitmap;->getHeight()I
+
+    move-result v5
+
+    iget v6, v1, Landroid/graphics/Rect;->top:I
+
+    sub-int/2addr v5, v6
+
+    invoke-static {p0, v4, v2, v3, v5}, Landroid/graphics/Bitmap;->createBitmap(Landroid/graphics/Bitmap;IIII)Landroid/graphics/Bitmap;
+
+    move-result-object p0
+
+    goto :goto_2
+
+    :cond_3
+    :goto_1
+    sget-object v2, Lcom/oneplus/screenshot/longshot/state/LongshotState;->UNSUPPORTED:Lcom/oneplus/screenshot/longshot/state/LongshotState;
+
+    const/4 v3, 0x0
+
+    invoke-interface {p1, v2, v3}, Lcom/oneplus/screenshot/longshot/state/LongshotContext;->updateState(Lcom/oneplus/screenshot/longshot/state/LongshotState;Lcom/oneplus/screenshot/longshot/state/LongshotAction$OnStateListener;)V
+
+    :cond_4
+    :goto_2
+    return-object p0
+.end method
+
 .method public static reachMaxPages(I)Z
     .locals 2
 
@@ -6799,6 +7595,77 @@
     invoke-static {v2, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
     return v0
+.end method
+
+.method public static shouldStitchByView()Z
+    .locals 5
+
+    invoke-static {}, Lcom/oneplus/screenshot/longshot/util/Configs;->isAccessibilityServiceRunning()Z
+
+    move-result v0
+
+    const/4 v1, 0x0
+
+    if-eqz v0, :cond_2
+
+    invoke-static {}, Lcom/oneplus/screenshot/StitchViewService;->getInstance()Lcom/oneplus/screenshot/StitchViewService;
+
+    move-result-object v0
+
+    iget-boolean v0, v0, Lcom/oneplus/screenshot/StitchViewService;->providesScrollInfo:Z
+
+    const/4 v2, 0x1
+
+    const-string v3, "Longshot.Configs"
+
+    if-eqz v0, :cond_0
+
+    invoke-static {}, Lcom/oneplus/screenshot/longshot/util/Configs;->isStitchByScrollDistance()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    const-string v0, "can provide scroll info so is stitch by view"
+
+    invoke-static {v3, v0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    return v2
+
+    :cond_0
+    sget-object v0, Lcom/oneplus/screenshot/longshot/util/Configs;->mTopActivity:Landroid/content/ComponentName;
+
+    sget-object v4, Lcom/oneplus/screenshot/longshot/util/Configs;->STITCH_BY_VIEW_ACTIVITY:Lcom/oneplus/screenshot/longshot/util/Configs;
+
+    iget-object v4, v4, Lcom/oneplus/screenshot/longshot/util/Configs;->mArray:[Ljava/lang/String;
+
+    invoke-static {v0, v4}, Lcom/oneplus/screenshot/longshot/util/Configs;->isActivity(Landroid/content/ComponentName;[Ljava/lang/String;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_2
+
+    invoke-static {}, Lcom/oneplus/screenshot/StitchViewService;->getInstance()Lcom/oneplus/screenshot/StitchViewService;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/oneplus/screenshot/StitchViewService;->canFindScrollView()Z
+
+    move-result v0
+
+    if-nez v0, :cond_1
+
+    const-string v0, "should stitch by view but could not find scroll view"
+
+    invoke-static {v3, v0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    return v1
+
+    :cond_1
+    return v2
+
+    :cond_2
+    return v1
 .end method
 
 .method public static showNotifyWindow(Landroid/content/Context;ZLjava/lang/String;Ljava/lang/String;)V
@@ -6969,7 +7836,7 @@
 
     const/4 v4, 0x2
 
-    if-lt v3, v4, :cond_1
+    if-lt v3, v4, :cond_3
 
     const/4 v3, 0x0
 
@@ -6983,7 +7850,7 @@
 
     const/4 v6, 0x1
 
-    if-lt v4, v5, :cond_0
+    if-ne v4, v5, :cond_0
 
     aget-object v4, v2, v6
 
@@ -6991,13 +7858,23 @@
 
     move-result v4
 
-    if-lt v4, v6, :cond_0
+    if-ge v4, v6, :cond_1
 
+    :cond_0
+    aget-object v4, v2, v3
+
+    invoke-static {v4}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
+
+    move-result v4
+
+    if-le v4, v5, :cond_2
+
+    :cond_1
     move v4, v6
 
     goto :goto_0
 
-    :cond_0
+    :cond_2
     move v4, v3
 
     :goto_0
@@ -7037,7 +7914,7 @@
 
     invoke-static {v4, v3}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    :cond_1
+    :cond_3
     return v0
 .end method
 

@@ -67,7 +67,7 @@
 
     move-result v1
 
-    if-eqz v1, :cond_4
+    if-eqz v1, :cond_5
 
     const-string v1, "stitch timeout, stop stitch last"
 
@@ -164,8 +164,29 @@
 
     const/4 v4, 0x3
 
-    if-lt v3, v4, :cond_3
+    const/4 v5, 0x2
 
+    if-ge v3, v4, :cond_3
+
+    invoke-static {}, Lcom/oneplus/screenshot/longshot/util/Configs;->shouldStitchByView()Z
+
+    move-result v3
+
+    if-eqz v3, :cond_4
+
+    iget-object v3, p0, Lcom/oneplus/screenshot/longshot/preview/PreviewWindowController$1;->this$0:Lcom/oneplus/screenshot/longshot/preview/PreviewWindowController;
+
+    invoke-static {v3}, Lcom/oneplus/screenshot/longshot/preview/PreviewWindowController;->access$100(Lcom/oneplus/screenshot/longshot/preview/PreviewWindowController;)Lcom/oneplus/screenshot/longshot/preview/PictureDrawable;
+
+    move-result-object v3
+
+    invoke-virtual {v3}, Lcom/oneplus/screenshot/longshot/preview/PictureDrawable;->getBitmapSize()I
+
+    move-result v3
+
+    if-lt v3, v5, :cond_4
+
+    :cond_3
     iget-object v3, p0, Lcom/oneplus/screenshot/longshot/preview/PreviewWindowController$1;->this$0:Lcom/oneplus/screenshot/longshot/preview/PreviewWindowController;
 
     invoke-static {v3}, Lcom/oneplus/screenshot/longshot/preview/PreviewWindowController;->access$100(Lcom/oneplus/screenshot/longshot/preview/PreviewWindowController;)Lcom/oneplus/screenshot/longshot/preview/PictureDrawable;
@@ -176,17 +197,17 @@
 
     move-result v3
 
-    iget-object v5, p0, Lcom/oneplus/screenshot/longshot/preview/PreviewWindowController$1;->this$0:Lcom/oneplus/screenshot/longshot/preview/PreviewWindowController;
+    iget-object v6, p0, Lcom/oneplus/screenshot/longshot/preview/PreviewWindowController$1;->this$0:Lcom/oneplus/screenshot/longshot/preview/PreviewWindowController;
 
-    invoke-static {v5}, Lcom/oneplus/screenshot/longshot/preview/PreviewWindowController;->access$200(Lcom/oneplus/screenshot/longshot/preview/PreviewWindowController;)Landroid/widget/ScrollView;
+    invoke-static {v6}, Lcom/oneplus/screenshot/longshot/preview/PreviewWindowController;->access$200(Lcom/oneplus/screenshot/longshot/preview/PreviewWindowController;)Landroid/widget/ScrollView;
 
-    move-result-object v5
+    move-result-object v6
 
-    invoke-virtual {v5}, Landroid/widget/ScrollView;->getHeight()I
+    invoke-virtual {v6}, Landroid/widget/ScrollView;->getHeight()I
 
-    move-result v5
+    move-result v6
 
-    if-lt v3, v5, :cond_3
+    if-lt v3, v6, :cond_4
 
     iget-object v3, p0, Lcom/oneplus/screenshot/longshot/preview/PreviewWindowController$1;->this$0:Lcom/oneplus/screenshot/longshot/preview/PreviewWindowController;
 
@@ -194,9 +215,7 @@
 
     move-result v3
 
-    const/4 v5, 0x2
-
-    if-eq v3, v5, :cond_3
+    if-eq v3, v5, :cond_4
 
     iget-object v3, p0, Lcom/oneplus/screenshot/longshot/preview/PreviewWindowController$1;->this$0:Lcom/oneplus/screenshot/longshot/preview/PreviewWindowController;
 
@@ -254,8 +273,8 @@
 
     goto :goto_1
 
-    :cond_3
-    if-eqz v1, :cond_4
+    :cond_4
+    if-eqz v1, :cond_5
 
     iget-object v2, p0, Lcom/oneplus/screenshot/longshot/preview/PreviewWindowController$1;->this$0:Lcom/oneplus/screenshot/longshot/preview/PreviewWindowController;
 
@@ -277,13 +296,13 @@
 
     move-result v3
 
-    if-ge v2, v3, :cond_4
+    if-ge v2, v3, :cond_5
 
     iget-object v2, p0, Lcom/oneplus/screenshot/longshot/preview/PreviewWindowController$1;->this$0:Lcom/oneplus/screenshot/longshot/preview/PreviewWindowController;
 
     invoke-virtual {v2, v4}, Lcom/oneplus/screenshot/longshot/preview/PreviewWindowController;->onScrollStop(I)V
 
-    :cond_4
+    :cond_5
     :goto_1
     return-void
 .end method

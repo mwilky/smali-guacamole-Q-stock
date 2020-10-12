@@ -6,6 +6,7 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
+        Lcom/oneplus/screenshot/R$xml;,
         Lcom/oneplus/screenshot/R$transition;,
         Lcom/oneplus/screenshot/R$styleable;,
         Lcom/oneplus/screenshot/R$style;,

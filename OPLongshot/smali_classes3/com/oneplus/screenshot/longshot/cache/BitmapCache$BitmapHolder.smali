@@ -46,21 +46,27 @@
 
     iput-object p1, p0, Lcom/oneplus/screenshot/longshot/cache/BitmapCache$BitmapHolder;->mBitmap:Landroid/graphics/Bitmap;
 
+    const/4 p1, 0x0
+
     if-nez p3, :cond_0
 
     invoke-virtual {p2}, Landroid/graphics/Bitmap;->getHeight()I
 
-    move-result p1
+    move-result v0
 
-    if-ne p4, p1, :cond_0
+    if-ne p4, v0, :cond_0
 
-    iput-object p2, p0, Lcom/oneplus/screenshot/longshot/cache/BitmapCache$BitmapHolder;->mBitmap:Landroid/graphics/Bitmap;
+    sget-object v0, Landroid/graphics/Bitmap$Config;->ARGB_8888:Landroid/graphics/Bitmap$Config;
+
+    invoke-virtual {p2, v0, p1}, Landroid/graphics/Bitmap;->copy(Landroid/graphics/Bitmap$Config;Z)Landroid/graphics/Bitmap;
+
+    move-result-object p1
+
+    iput-object p1, p0, Lcom/oneplus/screenshot/longshot/cache/BitmapCache$BitmapHolder;->mBitmap:Landroid/graphics/Bitmap;
 
     goto :goto_0
 
     :cond_0
-    const/4 p1, 0x0
-
     invoke-virtual {p2}, Landroid/graphics/Bitmap;->getWidth()I
 
     move-result v0

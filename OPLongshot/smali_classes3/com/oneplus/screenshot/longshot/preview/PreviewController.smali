@@ -203,7 +203,7 @@
 
     move-result-object v5
 
-    if-eqz v5, :cond_1
+    if-eqz v5, :cond_2
 
     invoke-virtual {p1}, Lcom/oneplus/screenshot/longshot/cache/BitmapCache;->getBitmap()Landroid/graphics/Bitmap;
 
@@ -215,12 +215,28 @@
 
     move-result-object v5
 
+    invoke-static {}, Lcom/oneplus/screenshot/longshot/util/Configs;->shouldStitchByView()Z
+
+    move-result v8
+
+    if-eqz v8, :cond_1
+
+    invoke-virtual {p1}, Lcom/oneplus/screenshot/longshot/cache/BitmapCache;->getIndex()I
+
+    move-result v2
+
+    goto :goto_0
+
+    :cond_1
     invoke-virtual {p1}, Lcom/oneplus/screenshot/longshot/cache/BitmapCache;->getIndex()I
 
     move-result v8
 
-    add-int/lit8 v2, v8, 0x1
+    add-int/2addr v8, v7
 
+    move v2, v8
+
+    :goto_0
     iget-object v8, p0, Lcom/oneplus/screenshot/longshot/preview/PreviewController;->mPreviewWindow:Lcom/oneplus/screenshot/longshot/preview/PreviewWindowController;
 
     invoke-virtual {v8, v5, v2}, Lcom/oneplus/screenshot/longshot/preview/PreviewWindowController;->updateDrawable(Landroid/graphics/Bitmap;I)V
@@ -243,14 +259,14 @@
 
     invoke-virtual {v0, v8}, Ljava/lang/StringBuffer;->append(I)Ljava/lang/StringBuffer;
 
-    :cond_1
+    :cond_2
     invoke-virtual {p1}, Lcom/oneplus/screenshot/longshot/cache/BitmapCache;->getBottom()Landroid/graphics/Bitmap;
 
     move-result-object v5
 
-    if-eqz v5, :cond_2
+    if-eqz v5, :cond_3
 
-    if-eqz p3, :cond_2
+    if-eqz p3, :cond_3
 
     invoke-virtual {p1}, Lcom/oneplus/screenshot/longshot/cache/BitmapCache;->getBottom()Landroid/graphics/Bitmap;
 
@@ -290,7 +306,7 @@
 
     invoke-virtual {v0, v6}, Ljava/lang/StringBuffer;->append(I)Ljava/lang/StringBuffer;
 
-    :cond_2
+    :cond_3
     invoke-virtual {v0}, Ljava/lang/StringBuffer;->toString()Ljava/lang/String;
 
     move-result-object v5
@@ -612,7 +628,7 @@
 
     iget-boolean v0, p0, Lcom/oneplus/screenshot/longshot/preview/PreviewController;->isStarted:Z
 
-    if-nez v0, :cond_0
+    if-nez v0, :cond_1
 
     iget-object v0, p0, Lcom/oneplus/screenshot/longshot/preview/PreviewController;->mLongshotContext:Lcom/oneplus/screenshot/longshot/state/LongshotContext;
 
@@ -624,7 +640,7 @@
 
     move-result v0
 
-    if-lez v0, :cond_0
+    if-lez v0, :cond_1
 
     const-string v0, " onStart:"
 
@@ -638,6 +654,25 @@
 
     invoke-virtual {v0}, Lcom/oneplus/screenshot/longshot/preview/PreviewWindowController;->onStart()V
 
+    invoke-static {}, Lcom/oneplus/screenshot/longshot/util/Configs;->shouldStitchByView()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    iget-object v0, p0, Lcom/oneplus/screenshot/longshot/preview/PreviewController;->mPreviewWindow:Lcom/oneplus/screenshot/longshot/preview/PreviewWindowController;
+
+    invoke-static {}, Lcom/oneplus/screenshot/StitchViewService;->getInstance()Lcom/oneplus/screenshot/StitchViewService;
+
+    move-result-object v1
+
+    iget-object v1, v1, Lcom/oneplus/screenshot/StitchViewService;->mFirstPreview:Landroid/graphics/Bitmap;
+
+    invoke-virtual {v0, v1}, Lcom/oneplus/screenshot/longshot/preview/PreviewWindowController;->setFirstBitmap(Landroid/graphics/Bitmap;)V
+
+    goto :goto_0
+
+    :cond_0
     iget-object v0, p0, Lcom/oneplus/screenshot/longshot/preview/PreviewController;->mPreviewWindow:Lcom/oneplus/screenshot/longshot/preview/PreviewWindowController;
 
     iget-object v1, p0, Lcom/oneplus/screenshot/longshot/preview/PreviewController;->mLongshotContext:Lcom/oneplus/screenshot/longshot/state/LongshotContext;
@@ -656,7 +691,8 @@
 
     invoke-virtual {v0, v1}, Lcom/oneplus/screenshot/longshot/preview/PreviewWindowController;->setFirstBitmap(Landroid/graphics/Bitmap;)V
 
-    :cond_0
+    :cond_1
+    :goto_0
     return-void
 .end method
 

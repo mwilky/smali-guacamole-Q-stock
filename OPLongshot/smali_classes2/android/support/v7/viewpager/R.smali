@@ -6,6 +6,7 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
+        Landroid/support/v7/viewpager/R$xml;,
         Landroid/support/v7/viewpager/R$transition;,
         Landroid/support/v7/viewpager/R$styleable;,
         Landroid/support/v7/viewpager/R$style;,

@@ -110,7 +110,7 @@
 .end method
 
 .method public onCreate()V
-    .locals 2
+    .locals 4
 
     invoke-super {p0}, Landroid/app/Service;->onCreate()V
 
@@ -126,6 +126,66 @@
 
     iput-object v0, p0, Lcom/oneplus/screenshot/LongshotService;->mLongshotMode:Lcom/oneplus/screenshot/longshot/state/LongshotMode;
 
+    invoke-static {}, Lcom/oneplus/screenshot/StitchViewService;->getInstance()Lcom/oneplus/screenshot/StitchViewService;
+
+    move-result-object v0
+
+    if-nez v0, :cond_0
+
+    :try_start_0
+    sget-object v1, Lcom/oneplus/screenshot/LongshotService;->TAG:Ljava/lang/String;
+
+    const-string v2, "getting accessibility permission automatically"
+
+    invoke-static {v1, v2}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
+
+    invoke-virtual {p0}, Lcom/oneplus/screenshot/LongshotService;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object v1
+
+    const-string v2, "enabled_accessibility_services"
+
+    const-string v3, "com.oneplus.screenshot/com.oneplus.screenshot.StitchViewService"
+
+    invoke-static {v1, v2, v3}, Landroid/provider/Settings$Secure;->putString(Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;)Z
+
+    invoke-virtual {p0}, Lcom/oneplus/screenshot/LongshotService;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object v1
+
+    const-string v2, "accessibility_enabled"
+
+    const-string v3, "1"
+
+    invoke-static {v1, v2, v3}, Landroid/provider/Settings$Secure;->putString(Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;)Z
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    goto :goto_0
+
+    :catch_0
+    move-exception v1
+
+    sget-object v2, Lcom/oneplus/screenshot/LongshotService;->TAG:Ljava/lang/String;
+
+    const-string v3, "could not get permission automatically"
+
+    invoke-static {v2, v3}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    invoke-virtual {v1}, Ljava/lang/Exception;->printStackTrace()V
+
+    goto :goto_1
+
+    :cond_0
+    :goto_0
+    nop
+
+    :goto_1
+    if-eqz v0, :cond_1
+
+    invoke-virtual {v0}, Lcom/oneplus/screenshot/StitchViewService;->init()V
+
+    :cond_1
     return-void
 .end method
 

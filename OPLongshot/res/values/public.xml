@@ -71,47 +71,58 @@
     <public type="array" name="higher_list_activity" id="0x7f03000e" />
     <public type="array" name="ignore_full_match_list_activity" id="0x7f03000f" />
     <public type="array" name="ignore_overscroll" id="0x7f030010" />
-    <public type="array" name="inject_touch_point_x" id="0x7f030011" />
-    <public type="array" name="keep_list_activity" id="0x7f030012" />
-    <public type="array" name="largetop_list_activity" id="0x7f030013" />
-    <public type="array" name="level2_scrollbar_activity" id="0x7f030014" />
-    <public type="array" name="level3_scrollbar_activity" id="0x7f030015" />
-    <public type="array" name="level4_scrollbar_activity" id="0x7f030016" />
-    <public type="array" name="level_0_list_activity" id="0x7f030017" />
-    <public type="array" name="level_1_list_activity" id="0x7f030018" />
-    <public type="array" name="level_2_list_activity" id="0x7f030019" />
-    <public type="array" name="level_3_list_activity" id="0x7f03001a" />
-    <public type="array" name="level_4_list_activity" id="0x7f03001b" />
-    <public type="array" name="level_5_list_activity" id="0x7f03001c" />
-    <public type="array" name="limit_left_activity" id="0x7f03001d" />
-    <public type="array" name="limit_right_activity" id="0x7f03001e" />
-    <public type="array" name="lower_list_activity" id="0x7f03001f" />
-    <public type="array" name="match_2_list_activity" id="0x7f030020" />
-    <public type="array" name="match_3_list_activity" id="0x7f030021" />
-    <public type="array" name="match_4_list_activity" id="0x7f030022" />
-    <public type="array" name="match_5_list_activity" id="0x7f030023" />
-    <public type="array" name="move_duration_level_2" id="0x7f030024" />
-    <public type="array" name="move_duration_level_3" id="0x7f030025" />
-    <public type="array" name="move_duration_level_4" id="0x7f030026" />
-    <public type="array" name="move_duration_level_5" id="0x7f030027" />
-    <public type="array" name="non_list_activity" id="0x7f030028" />
-    <public type="array" name="not_ignore_fail_list_activity" id="0x7f030029" />
-    <public type="array" name="override_match_threshold_list_2" id="0x7f03002a" />
-    <public type="array" name="override_match_threshold_list_3" id="0x7f03002b" />
-    <public type="array" name="override_match_threshold_list_4" id="0x7f03002c" />
-    <public type="array" name="page_list_activity" id="0x7f03002d" />
-    <public type="array" name="shot_next_level_2_list_activity" id="0x7f03002e" />
-    <public type="array" name="shot_next_level_3_list_activity" id="0x7f03002f" />
-    <public type="array" name="shot_next_level_4_list_activity" id="0x7f030030" />
-    <public type="array" name="shot_next_level_5_list_activity" id="0x7f030031" />
-    <public type="array" name="small_list_activity" id="0x7f030032" />
-    <public type="array" name="special_scroll_activity" id="0x7f030033" />
-    <public type="array" name="stitch_next_level_2_list_activity" id="0x7f030034" />
-    <public type="array" name="stitch_next_level_3_list_activity" id="0x7f030035" />
-    <public type="array" name="stitch_next_level_4_list_activity" id="0x7f030036" />
-    <public type="array" name="stitch_next_level_5_list_activity" id="0x7f030037" />
-    <public type="array" name="strict_list_activity" id="0x7f030038" />
-    <public type="array" name="with_issue_report_activity" id="0x7f030039" />
+    <public type="array" name="inject_additional_swipe" id="0x7f030011" />
+    <public type="array" name="inject_touch_point_x" id="0x7f030012" />
+    <public type="array" name="is_compatible_scroll_view" id="0x7f030013" />
+    <public type="array" name="is_fourth_last_index" id="0x7f030014" />
+    <public type="array" name="is_margin_bottom" id="0x7f030015" />
+    <public type="array" name="is_margin_top" id="0x7f030016" />
+    <public type="array" name="is_second_last_index" id="0x7f030017" />
+    <public type="array" name="is_stitch_by_scroll_distance" id="0x7f030018" />
+    <public type="array" name="keep_list_activity" id="0x7f030019" />
+    <public type="array" name="largetop_list_activity" id="0x7f03001a" />
+    <public type="array" name="level2_scrollbar_activity" id="0x7f03001b" />
+    <public type="array" name="level3_scrollbar_activity" id="0x7f03001c" />
+    <public type="array" name="level4_scrollbar_activity" id="0x7f03001d" />
+    <public type="array" name="level_0_list_activity" id="0x7f03001e" />
+    <public type="array" name="level_1_list_activity" id="0x7f03001f" />
+    <public type="array" name="level_2_list_activity" id="0x7f030020" />
+    <public type="array" name="level_3_list_activity" id="0x7f030021" />
+    <public type="array" name="level_4_list_activity" id="0x7f030022" />
+    <public type="array" name="level_5_list_activity" id="0x7f030023" />
+    <public type="array" name="limit_left_activity" id="0x7f030024" />
+    <public type="array" name="limit_right_activity" id="0x7f030025" />
+    <public type="array" name="lower_list_activity" id="0x7f030026" />
+    <public type="array" name="match_2_list_activity" id="0x7f030027" />
+    <public type="array" name="match_3_list_activity" id="0x7f030028" />
+    <public type="array" name="match_4_list_activity" id="0x7f030029" />
+    <public type="array" name="match_5_list_activity" id="0x7f03002a" />
+    <public type="array" name="move_duration_level_2" id="0x7f03002b" />
+    <public type="array" name="move_duration_level_3" id="0x7f03002c" />
+    <public type="array" name="move_duration_level_4" id="0x7f03002d" />
+    <public type="array" name="move_duration_level_5" id="0x7f03002e" />
+    <public type="array" name="non_list_activity" id="0x7f03002f" />
+    <public type="array" name="not_ignore_fail_list_activity" id="0x7f030030" />
+    <public type="array" name="override_match_threshold_list_2" id="0x7f030031" />
+    <public type="array" name="override_match_threshold_list_3" id="0x7f030032" />
+    <public type="array" name="override_match_threshold_list_4" id="0x7f030033" />
+    <public type="array" name="page_list_activity" id="0x7f030034" />
+    <public type="array" name="screenshot_black_list_activity" id="0x7f030035" />
+    <public type="array" name="shot_next_level_2_list_activity" id="0x7f030036" />
+    <public type="array" name="shot_next_level_3_list_activity" id="0x7f030037" />
+    <public type="array" name="shot_next_level_4_list_activity" id="0x7f030038" />
+    <public type="array" name="shot_next_level_5_list_activity" id="0x7f030039" />
+    <public type="array" name="small_list_activity" id="0x7f03003a" />
+    <public type="array" name="special_scroll_activity" id="0x7f03003b" />
+    <public type="array" name="stitch_by_view" id="0x7f03003c" />
+    <public type="array" name="stitch_next_level_2_list_activity" id="0x7f03003d" />
+    <public type="array" name="stitch_next_level_3_list_activity" id="0x7f03003e" />
+    <public type="array" name="stitch_next_level_4_list_activity" id="0x7f03003f" />
+    <public type="array" name="stitch_next_level_5_list_activity" id="0x7f030040" />
+    <public type="array" name="strict_list_activity" id="0x7f030041" />
+    <public type="array" name="swipe_pressure_level_1" id="0x7f030042" />
+    <public type="array" name="swipe_pressure_level_2" id="0x7f030043" />
+    <public type="array" name="with_issue_report_activity" id="0x7f030044" />
     <public type="attr" name="OPAlertDialogStyle" id="0x7f040000" />
     <public type="attr" name="OPEditTextStyle" id="0x7f040001" />
     <public type="attr" name="OPFloatingActionButtonStyle" id="0x7f040002" />
@@ -3765,4 +3776,5 @@
     <public type="style" name="oneplus_contorl_text_style_title_extended" id="0x7f0e0242" />
     <public type="transition" name="menu_enter" id="0x7f100000" />
     <public type="transition" name="menu_exit" id="0x7f100001" />
+    <public type="xml" name="accessibility" id="0x7f110000" />
 </resources>

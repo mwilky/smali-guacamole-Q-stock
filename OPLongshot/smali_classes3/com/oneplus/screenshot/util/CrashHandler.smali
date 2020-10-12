@@ -583,6 +583,8 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
+    invoke-virtual {p2}, Ljava/lang/Throwable;->printStackTrace()V
+
     iget-object v1, p0, Lcom/oneplus/screenshot/util/CrashHandler;->mContext:Landroid/content/Context;
 
     invoke-static {v1}, Lcom/oneplus/screenshot/longshot/state/LongshotMode;->getInstance(Landroid/content/Context;)Lcom/oneplus/screenshot/longshot/state/LongshotMode;

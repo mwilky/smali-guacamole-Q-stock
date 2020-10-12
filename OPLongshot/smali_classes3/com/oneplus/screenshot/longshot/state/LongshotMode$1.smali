@@ -37,6 +37,12 @@
 .method public run()V
     .locals 2
 
+    const-string v0, "Longshot.LongshotMode"
+
+    const-string v1, "disablekeys() at LongshotState.SHOT_FIRST"
+
+    invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
     iget-object v0, p0, Lcom/oneplus/screenshot/longshot/state/LongshotMode$1;->this$0:Lcom/oneplus/screenshot/longshot/state/LongshotMode;
 
     const/4 v1, 0x1

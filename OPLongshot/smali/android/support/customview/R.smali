@@ -6,6 +6,7 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
+        Landroid/support/customview/R$xml;,
         Landroid/support/customview/R$transition;,
         Landroid/support/customview/R$styleable;,
         Landroid/support/customview/R$style;,

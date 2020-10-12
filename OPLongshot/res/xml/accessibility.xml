@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<accessibility-service android:accessibilityEventTypes="typeAllMask" android:packageNames="@null" android:accessibilityFeedbackType="feedbackAllMask" android:notificationTimeout="100" android:accessibilityFlags="flagDefault|flagIncludeNotImportantViews|flagReportViewIds|flagRequestEnhancedWebAccessibility|flagRetrieveInteractiveWindows" android:canRetrieveWindowContent="true" android:canRequestTouchExplorationMode="true" android:canRequestEnhancedWebAccessibility="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

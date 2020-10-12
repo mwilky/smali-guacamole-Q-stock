@@ -9,6 +9,11 @@
         <item>com.oneplus.filemanager</item>
         <item>com.oneplus.gallery</item>
         <item>com.android.settings/com.android.settings.SubSettings</item>
+        <item>com.oneplus.mms/com.android.mms.ui.appsettings.ApplicationSettingsActivity</item>
+        <item>com.taobao.taobao/com.taobao.tao.TBMainActivity</item>
+        <item>com.tencent.mobileqq/com.tencent.mobileqq.activity.SplashActivity</item>
+        <item>com.oneplus.card/com.oneplus.card.activity.OldMainActivity</item>
+        <item>com.oneplus.bbs/com.oneplus.bbs.ui.activity.CommunityActivity</item>
     </string-array>
     <string-array name="black_list_activity">
         <item>cmb.pb/cmb.pb.ui.WhatsNewVerticalActivity</item>
@@ -38,6 +43,10 @@
         <item>com.ss.android.ugc.aweme</item>
         <item>com.oneplus.gallery/com.oneplus.gallery2.VideoPlayerActivity</item>
         <item>com.google.android.apps.maps/com.google.android.maps.MapsActivity</item>
+        <item>com.oneplus.backuprestore/com.google.zxing.client.android.CaptureActivity</item>
+        <item>com.android.settings/com.android.settings.wifi.dpp.WifiDppEnrolleeActivity</item>
+        <item>com.google.android.apps.messaging/com.google.android.apps.messaging.ui.ditto.DittoActivity</item>
+        <item>com.instagram.android/com.instagram.modal.TransparentModalActivity</item>
     </string-array>
     <string-array name="black_list_app">
         <item>com.oneplus.calculator</item>
@@ -81,6 +90,12 @@
         <item>com.android.browser</item>
         <item>com.ss.android.article.news/com.ss.android.article.news.activity.MainActivity</item>
         <item>com.google.android.youtube</item>
+        <item>com.google.android.apps.youtube.music/com.google.android.apps.youtube.music.activities.MusicActivity</item>
+        <item>in.amazon.mShop.android.shopping/com.amazon.mShop.home.web.MShopWebGatewayActivity</item>
+        <item>in.amazon.mShop.android.shopping/com.amazon.mShop.search.MShopWebSearchActivity</item>
+        <item>com.amazon.mShop.android.shopping/com.amazon.mShop.home.web.MShopWebGatewayActivity</item>
+        <item>com.amazon.mShop.android.shopping/com.amazon.mShop.search.MShopWebSearchActivity</item>
+        <item>com.oneplus.dialer</item>
     </string-array>
     <string-array name="delay_2_activity">
         <item>com.tencent.mm/com.tencent.mm.plugin.sns.ui.SnsTimeLineUI</item>
@@ -102,6 +117,7 @@
     </string-array>
     <string-array name="forbid_stitch_by_distance_list">
         <item>com.facebook.katana</item>
+        <item>com.heytap.market/a.a.a.uq</item>
         <item>com.ss.android.article.news</item>
         <item>com.snapchat.android/com.snap.mushroom.MainActivity</item>
         <item>com.microsoft.teams/com.microsoft.skype.teams.views.activities.ChatsActivity</item>
@@ -112,18 +128,38 @@
         <item>in.amazon.mShop.android.shopping/com.amazon.mShop.search.MShopWebSearchActivity</item>
         <item>com.amazon.mShop.android.shopping/com.amazon.mShop.search.MShopWebSearchActivity</item>
         <item>com.amazon.mShop.android.shopping/com.amazon.mShop.search.SearchSsnapActivity</item>
+        <item>in.amazon.mShop.android.shopping/com.amazon.mShop.home.HomeActivity</item>
         <item>com.oneplus.contacts/com.oneplus.contacts.ted.OneplusTedQuickContactActivity</item>
         <item>com.oneplus.contacts/com.oneplus.contacts.quickcontact.OneplusQuickContactActivity</item>
+        <item>com.google.android.apps.docs/com.google.android.apps.docs.drive.app.navigation.NavigationActivity</item>
+        <item>com.taobao.taobao/com.taobao.tao.TBMainActivity</item>
+        <item>com.google.android.apps.fitness/com.google.android.apps.fitness.shared.container.impl.DetailActivity</item>
     </string-array>
     <string-array name="higher_list_activity">
         <item>com.google.android.talk/com.google.android.apps.hangouts.phone.ConversationActivity</item>
         <item>com.android.dialer/com.oneplus.contacts.activities.OPDialtactsActivity</item>
         <item>com.qq.reader/com.qq.reader.activity.MainActivity</item>
+        <item>com.heytap.market/a.a.a.uq</item>
         <item>com.microsoft.teams/com.microsoft.skype.teams.views.activities.MainActivity</item>
         <item>com.jingdong.app.mall/com.jd.lib.productdetail.ProductDetailActivity</item>
         <item>com.oneplus.contacts/com.oneplus.contacts.activities.OPPeopleActivity</item>
         <item>com.sankuai.meituan/com.sankuai.waimai.business.page.homepage.TakeoutActivity</item>
         <item>com.sankuai.meituan/com.sankuai.waimai.business.page.kingkong.KingKongActivity</item>
+        <item>com.android.dialer/com.android.dialer.oneplus.activity.OPDialerSettingsActivity</item>
+        <item>com.oneplus.wifiapsettings/com.oneplus.wifiapsettings.assistance.OPUserAssistance</item>
+        <item>com.heytap.browser/com.android.browser.BrowserActivity</item>
+        <item>com.google.android.music/com.google.android.music.ui.HomeActivity</item>
+        <item>com.oneplus.note/com.oneplus.note.ui.MainActivity</item>
+        <item>com.google.android.dialer/com.google.android.dialer.extensions.GoogleDialtactsActivity</item>
+        <item>com.google.android.apps.docs/com.google.android.apps.docs.drive.app.navigation.NavigationActivity</item>
+        <item>com.oneplus.card/com.oneplus.card.activity.OldMainActivity</item>
+        <item>com.oneplus.card/com.oneplus.card.activity.MainActivity</item>
+        <item>net.oneplus.forums/net.oneplus.forums.ui.activity.MainActivity</item>
+        <item>com.oneplus.contacts/com.oneplus.contacts.personal.OnePlusPersonalInfoActivity</item>
+        <item>com.oneplus.bbs/com.oneplus.bbs.ui.activity.CommunityActivity</item>
+        <item>com.spotify.music/com.spotify.music.MainActivity</item>
+        <item>com.oneplus.contacts/com.android.contacts.activities.PeopleActivity</item>
+        <item>com.oneplus.dialer/com.android.dialer.oneplus.activity.OPDialtactsActivity</item>
     </string-array>
     <array name="ignore_full_match_list_activity" />
     <string-array name="ignore_overscroll">
@@ -138,10 +174,60 @@
         <item>net.oneplus.forums/net.oneplus.forums.ui.activity.MainActivity</item>
         <item>com.android.chrome/org.chromium.chrome.browser.ChromeTabbedActivity</item>
         <item>com.sina.weibo/com.sina.weibo.weiyou.DMSingleChatActivity</item>
+        <item>com.oneplus.note</item>
+        <item>com.oneplus.gamespace/com.oneplus.gamespace.ui.settings.SettingsActivity</item>
+        <item>com.android.dialer/com.android.dialer.oneplus.activity.OPDialerSettingsActivity</item>
+        <item>com.google.android.googlequicksearchbox/com.google.android.apps.gsa.velvet.ui.settings.SettingsActivity</item>
+        <item>com.oneplus.wifiapsettings/com.oneplus.wifiapsettings.assistance.OPUserAssistance</item>
+        <item>com.google.android.music/com.google.android.music.ui.HomeActivity</item>
+        <item>com.oneplus.gamespace/com.oneplus.gamespace.ui.AppPickActivity</item>
+        <item>com.google.android.youtube/com.google.android.apps.youtube.app.WatchWhileActivity</item>
+        <item>com.google.android.apps.youtube.music/com.google.android.apps.youtube.music.activities.MusicActivity</item>
+        <item>com.heytap.cloud/com.heytap.cloud.activity.OPCloudSettingsActivity</item>
+        <item>com.oneplus.card</item>
+        <item>com.oneplus.gallery/com.oneplus.gallery2.OPGalleryActivity</item>
+        <item>com.oneplus.gallery/com.oneplus.gallery.OPGalleryActivity</item>
+        <item>com.tencent.mobileqq/com.tencent.mobileqq.activity.SplashActivity</item>
+        <item>com.oneplus.contacts/com.oneplus.contacts.personal.OnePlusPersonalInfoActivity</item>
+        <item>com.google.android.apps.fitness/com.google.android.apps.fitness.shared.container.impl.DetailActivity</item>
+        <item>com.oneplus.backuprestore/com.oneplus.changeover.QuestionAndAnswer</item>
+        <item>com.ss.android.article.news/com.ss.android.article.news.activity.MainActivity</item>
+        <item>com.oneplus.dialer/com.android.dialer.oneplus.activity.OPDialtactsActivity</item>
+        <item>com.microsoft.office.outlook/com.acompli.acompli.CentralActivity</item>
     </string-array>
+    <array name="inject_additional_swipe" />
     <string-array name="inject_touch_point_x">
         <item>com.pinterest/com.pinterest.activity.task.activity.MainActivity</item>
         <item>com.kugou.android/com.kugou.android.app.MediaActivity</item>
+        <item>com.oneplus.gamespace/com.oneplus.gamespace.ui.data.DataReportActivity</item>
+        <item>com.oneplus.gallery/com.oneplus.gallery2.OPGalleryActivity</item>
+        <item>com.oneplus.gallery/com.oneplus.gallery.OPGalleryActivity</item>
+    </string-array>
+    <string-array name="is_compatible_scroll_view">
+        <item>android.widget.ListView</item>
+        <item>androidx.recyclerview.widget.RecyclerView</item>
+        <item>android.support.v7.widget.RecyclerView</item>
+    </string-array>
+    <array name="is_fourth_last_index" />
+    <string-array name="is_margin_bottom">
+        <item>com.instagram.android/com.instagram.mainactivity.MainActivity</item>
+        <item>com.google.android.play.games/com.google.android.gms.games.ui.v2.MainActivity</item>
+        <item>com.oneplus.note/com.oneplus.note.ui.EditActivity</item>
+        <item>com.sina.weibo/com.sina.weibo.MainTabActivity</item>
+        <item>com.sina.weibo/com.sina.weibo.VisitorMainTabActivity</item>
+        <item>com.taobao.taobao/com.taobao.tao.TBMainActivity</item>
+    </string-array>
+    <string-array name="is_margin_top">
+        <item>com.instagram.android/com.instagram.mainactivity.MainActivity</item>
+    </string-array>
+    <string-array name="is_second_last_index">
+        <item>com.google.android.apps.photos/com.google.android.apps.photos.home.HomeActivity</item>
+    </string-array>
+    <string-array name="is_stitch_by_scroll_distance">
+        <item>com.sina.weibo/com.sina.weibo.MainTabActivity</item>
+        <item>com.sina.weibo/com.sina.weibo.VisitorMainTabActivity</item>
+        <item>com.taobao.taobao/com.taobao.tao.TBMainActivity</item>
+        <item>com.ebay.mobile/com.ebay.mobile.activities.MainActivity</item>
     </string-array>
     <string-array name="keep_list_activity">
         <item>com.android.chrome</item>
@@ -152,23 +238,48 @@
         <item>com.oneplus.filemanager/com.oneplus.filemanager.classification.ClassificationActivity</item>
         <item>com.google.android.youtube/com.google.android.apps.youtube.app.WatchWhileActivity</item>
         <item>com.viber.voip/com.viber.voip.market.StickerMarketActivity</item>
+        <item>com.google.android.apps.youtube.music/com.google.android.apps.youtube.music.activities.MusicActivity</item>
+        <item>in.amazon.mShop.android.shopping/com.amazon.mShop.home.web.MShopWebGatewayActivity</item>
+        <item>com.amazon.mShop.android.shopping/com.amazon.mShop.home.web.MShopWebGatewayActivity</item>
+        <item>in.amazon.mShop.android.shopping/com.amazon.mShop.search.MShopWebSearchActivity</item>
+        <item>com.amazon.mShop.android.shopping/com.amazon.mShop.search.MShopWebSearchActivity</item>
+        <item>in.amazon.mShop.android.shopping/com.amazon.mShop.home.HomeActivity</item>
+        <item>com.android.dialer/com.android.dialer.oneplus.activity.OPDialerSettingsActivity</item>
+        <item>com.oneplus.note/com.oneplus.note.ui.EditActivity</item>
+        <item>com.oneplus.contacts/com.oneplus.contacts.personal.OnePlusPersonalInfoActivity</item>
+        <item>com.spotify.music/com.spotify.music.MainActivity</item>
     </string-array>
     <string-array name="level2_scrollbar_activity">
         <item>com.google.android.apps.photos</item>
         <item>com.baidu.netdisk</item>
         <item>com.oneplus.contacts/com.oneplus.contacts.activities.ContactsMultiSelectionActivity</item>
+        <item>com.microsoft.teams</item>
+        <item>com.oneplus.backuprestore/com.oneplus.changeover.QuestionAndAnswer</item>
     </string-array>
     <string-array name="level3_scrollbar_activity">
         <item>com.android.dialer</item>
+        <item>com.google.android.dialer</item>
         <item>com.youdao.dict</item>
         <item>com.husor.beibei</item>
         <item>com.viber.voip</item>
         <item>com.oneplus.contacts</item>
+        <item>com.google.android.music/com.google.android.music.ui.HomeActivity</item>
+        <item>com.android.settings/com.android.settings.SubSettings</item>
+        <item>com.oneplus.mms/com.android.mms.ui.conversation.ConversationActivity</item>
+        <item>com.android.dialer/com.android.dialer.oneplus.activity.OPDialerSettingsActivity</item>
+        <item>com.tencent.mobileqq/com.tencent.mobileqq.activity.SplashActivity</item>
+        <item>com.spotify.music/com.spotify.music.MainActivity</item>
+        <item>com.oneplus.gallery/com.oneplus.gallery2.OPGalleryActivity</item>
+        <item>com.oneplus.gallery/com.oneplus.gallery.OPGalleryActivity</item>
+        <item>com.oneplus.dialer</item>
+        <item>com.whatsapp/com.whatsapp.ContactPicker</item>
     </string-array>
     <string-array name="level4_scrollbar_activity">
         <item>com.bbm/com.bbm.ui.activities.MainActivity</item>
         <item>com.xunmeng.pinduoduo</item>
         <item>net.oneplus.forums</item>
+        <item>com.google.android.apps.docs.editors.docs/com.google.android.apps.docs.editors.kix.KixEditorActivity</item>
+        <item>com.oneplus.gamespace/com.oneplus.gamespace.ui.AppPickActivity</item>
     </string-array>
     <string-array name="level_0_list_activity">
         <item>com.tencent.mm/com.tencent.mm.ui.LauncherUI</item>
@@ -179,6 +290,7 @@
         <item>com.tencent.mm/com.tencent.mm.ui.chatting.ChattingUI</item>
         <item>com.android.settings/com.android.settings.Settings</item>
         <item>com.oneplus.gallery/com.oneplus.gallery.OPGalleryActivity</item>
+        <item>com.oneplus.gallery/com.oneplus.gallery2.OPGalleryActivity</item>
         <item>com.android.settings/com.android.settings.Settings$ManageApplicationsActivity</item>
         <item>com.android.settings/com.android.settings.SubSettings</item>
         <item>com.android.settings</item>
@@ -192,7 +304,9 @@
     <string-array name="limit_left_activity">
         <item>com.tencent.mm/com.tencent.mm.plugin.webview.ui.tools.WebViewUI</item>
     </string-array>
-    <array name="limit_right_activity" />
+    <string-array name="limit_right_activity">
+        <item>com.android.settings/com.android.settings.SubSettings</item>
+    </string-array>
     <array name="lower_list_activity" />
     <string-array name="match_2_list_activity">
         <item>com.android.mms/com.android.mms.ui.ComposeMessageActivity</item>
@@ -201,6 +315,7 @@
         <item>com.tencent.mm/com.tencent.mm.plugin.sns.ui.SnsTimeLineUI</item>
         <item>com.tencent.mobileqq/cooperation.qzone.QzoneGPUPluginProxyActivity</item>
         <item>com.oneplus.gallery/com.oneplus.gallery.OPGalleryActivity</item>
+        <item>com.oneplus.gallery/com.oneplus.gallery2.OPGalleryActivity</item>
         <item>com.android.settings/com.android.settings.Settings$ManageApplicationsActivity</item>
         <item>com.android.settings/com.android.settings.SubSettings</item>
         <item>com.android.settings</item>
@@ -215,6 +330,9 @@
     <array name="move_duration_level_3" />
     <string-array name="move_duration_level_4">
         <item>com.google.android.apps.photos/com.google.android.apps.photos.home.HomeActivity</item>
+        <item>com.android.dialer/com.android.dialer.oneplus.activity.OPDialerSettingsActivity</item>
+        <item>com.tencent.mobileqq/com.tencent.mobileqq.activity.SplashActivity</item>
+        <item>com.microsoft.office.outlook/com.acompli.acompli.CentralActivity</item>
     </string-array>
     <array name="move_duration_level_5" />
     <string-array name="non_list_activity">
@@ -226,14 +344,40 @@
     </string-array>
     <string-array name="override_match_threshold_list_2">
         <item>com.oneplus.mms/com.android.mms.ui.conversation.ConversationActivity</item>
+        <item>com.sina.weibo/com.sina.weibo.MainTabActivity</item>
         <item>com.microsoft.teams/com.microsoft.skype.teams.views.activities.ConversationThreadActivity</item>
         <item>com.oneplus.contacts/com.oneplus.contacts.activities.ContactsMultiSelectionActivity</item>
+        <item>com.oneplus.bbs/com.oneplus.bbs.ui.activity.LocalWebBrowserActivity</item>
+        <item>com.oneplus.wifiapsettings/com.oneplus.wifiapsettings.assistance.OPUserAssistance</item>
+        <item>com.heytap.browser/com.android.browser.BrowserActivity</item>
+        <item>com.heytap.market/a.a.a.uq</item>
+        <item>com.oneplus.note/com.oneplus.note.ui.MainActivity</item>
+        <item>com.oneplus.gamespace/com.oneplus.gamespace.ui.AppPickActivity</item>
+        <item>com.android.dialer/com.oneplus.contacts.activities.OPDialtactsActivity</item>
+        <item>com.oneplus.note/com.oneplus.note.ui.EditActivity</item>
+        <item>net.oneplus.forums/net.oneplus.forums.ui.activity.MainActivity</item>
+        <item>com.spotify.music/com.spotify.music.MainActivity</item>
+        <item>com.oneplus.bbs/com.oneplus.bbs.ui.activity.CommunityActivity</item>
+        <item>com.autonavi.minimap/com.autonavi.map.activity.NewMapActivity</item>
+        <item>com.whatsapp/com.whatsapp.ContactPicker</item>
+        <item>com.oneplus.backuprestore/com.oneplus.changeover.QuestionAndAnswer</item>
+        <item>com.oneplus.dialer/com.android.dialer.oneplus.activity.OPDialtactsActivity</item>
     </string-array>
-    <array name="override_match_threshold_list_3" />
+    <string-array name="override_match_threshold_list_3">
+        <item>com.google.android.music/com.google.android.music.ui.HomeActivity</item>
+        <item>com.microsoft.teams/com.microsoft.skype.teams.views.activities.MainActivity</item>
+        <item>com.taobao.taobao/com.taobao.tao.TBMainActivity</item>
+        <item>com.google.android.apps.docs.editors.docs/com.google.android.apps.docs.editors.kix.KixEditorActivity</item>
+    </string-array>
     <array name="override_match_threshold_list_4" />
     <string-array name="page_list_activity">
         <item>com.android.contacts/com.android.contacts.activities.PeopleActivity</item>
         <item>com.android.mms/com.android.mms.ui.ConversationList</item>
+        <item>com.oneplus.contacts/com.android.contacts.activities.PeopleActivity</item>
+    </string-array>
+    <string-array name="screenshot_black_list_activity">
+        <item>com.oneplus.filemanager/com.oneplus.filemanager.safebox.SafeBoxActivity</item>
+        <item>com.android.settings/com.android.settings.password.ConfirmLockPattern$InternalActivity</item>
     </string-array>
     <array name="shot_next_level_2_list_activity" />
     <array name="shot_next_level_3_list_activity" />
@@ -245,19 +389,43 @@
     <array name="small_list_activity" />
     <string-array name="special_scroll_activity">
         <item>com.android.chrome</item>
+        <item>com.android.dialer/com.android.dialer.oneplus.activity.OPDialerSettingsActivity</item>
     </string-array>
-    <array name="stitch_next_level_2_list_activity" />
+    <string-array name="stitch_by_view">
+        <item>com.whatsapp/com.whatsapp.Conversation</item>
+        <item>com.tencent.mm/com.tencent.mm.ui.chatting.ChattingUI</item>
+        <item>com.tencent.mm/com.tencent.mm.ui.LauncherUI</item>
+        <item>com.mxtech.videoplayer.ad/com.mxtech.videoplayer.ad.OnlineActivityMediaList</item>
+        <item>com.instagram.android/com.instagram.mainactivity.MainActivity</item>
+        <item>com.instagram.android/com.instagram.modal.ModalActivity</item>
+        <item>com.google.android.play.games/com.google.android.gms.games.ui.v2.MainActivity</item>
+        <item>com.google.android.apps.photos/com.google.android.apps.photos.home.HomeActivity</item>
+        <item>com.google.android.youtube/com.google.android.apps.youtube.app.WatchWhileActivity</item>
+        <item>com.android.settings/com.android.settings.Settings$OPPreInstalledAppListActivity</item>
+        <item>com.tencent.mm/com.tencent.mm.plugin.appbrand.ui.AppBrandUI</item>
+        <item>com.tencent.mm/com.tencent.mm.plugin.sns.ui.SnsTimeLineUI</item>
+        <item>com.tencent.mm/com.tencent.mm.plugin.readerapp.ui.ReaderAppUI</item>
+        <item>com.tencent.mobileqq/com.tencent.mobileqq.activity.contact.addcontact.AddContactsActivity</item>
+        <item>net.oneplus.forums/net.oneplus.forums.ui.activity.MedalActivity</item>
+        <item>com.oneplus.bbs/com.oneplus.bbs.ui.activity.MedalActivity</item>
+        <item>com.google.android.apps.photos/com.google.android.apps.photos.search.SearchActivity</item>
+        <item>com.whatsapp/com.whatsapp.ContactPicker</item>
+    </string-array>
+    <string-array name="stitch_next_level_2_list_activity">
+        <item>com.android.dialer/com.android.dialer.oneplus.activity.OPDialerSettingsActivity</item>
+    </string-array>
     <array name="stitch_next_level_3_list_activity" />
     <string-array name="stitch_next_level_4_list_activity">
         <item>com.android.settings/com.android.settings.Settings</item>
-        <item>com.oneplus.filemanager</item>
         <item>com.oneplus.bbs</item>
         <item>com.facebook.katana</item>
         <item>com.android.chrome</item>
+        <item>com.heytap.browser/com.android.browser.BrowserActivity</item>
+        <item>com.google.android.apps.docs/com.google.android.apps.docs.drive.app.navigation.NavigationActivity</item>
     </string-array>
     <string-array name="stitch_next_level_5_list_activity">
         <item>com.android.dialer/com.oneplus.contacts.activities.OPDialtactsActivity</item>
-        <item>com.oneplus.contacts/.personal.OnePlusPersonalInfoActivity</item>
+        <item>com.oneplus.contacts/com.oneplus.contacts.personal.OnePlusPersonalInfoActivity</item>
         <item>com.android.emergency/.edit.EditInfoActivity</item>
         <item>com.oneplus.card/com.oneplus.card.activity.OldMainActivity</item>
         <item>com.oneplus.contacts/com.oneplus.contacts.activities.OPPeopleActivity</item>
@@ -266,11 +434,26 @@
         <item>jp.naver.line.android/jp.naver.line.android.activity.main.MainActivity</item>
         <item>com.oneplus.contacts/com.oneplus.contacts.ted.OneplusTedQuickContactActivity</item>
         <item>com.oneplus.contacts/com.oneplus.contacts.quickcontact.OneplusQuickContactActivity</item>
+        <item>com.oneplus.mms/com.android.mms.ui.appsettings.ApplicationSettingsActivity</item>
+        <item>com.oneplus.wifiapsettings/com.oneplus.wifiapsettings.assistance.OPUserAssistance</item>
+        <item>com.oneplus.note/com.oneplus.note.ui.MainActivity</item>
+        <item>com.oneplus.note/com.oneplus.note.ui.EditActivity</item>
+        <item>com.tencent.mobileqq/com.tencent.mobileqq.activity.SplashActivity</item>
+        <item>com.google.android.apps.fitness/com.google.android.apps.fitness.shared.container.impl.DetailActivity</item>
+        <item>com.spotify.music/com.spotify.music.MainActivity</item>
+        <item>com.oneplus.contacts/com.android.contacts.activities.PeopleActivity</item>
+        <item>com.oneplus.dialer/com.android.dialer.oneplus.activity.OPDialtactsActivity</item>
+        <item>com.microsoft.teams/com.microsoft.skype.teams.views.activities.MainActivity</item>
     </string-array>
     <string-array name="strict_list_activity">
         <item>com.tencent.mm/com.tencent.mm.plugin.sns.ui.SnsTimeLineUI</item>
         <item>com.tencent.mobileqq/cooperation.qzone.QzoneGPUPluginProxyActivity</item>
     </string-array>
+    <string-array name="swipe_pressure_level_1">
+        <item>com.oneplus.gallery/com.oneplus.gallery2.OPGalleryActivity</item>
+        <item>com.oneplus.gallery/com.oneplus.gallery.OPGalleryActivity</item>
+    </string-array>
+    <array name="swipe_pressure_level_2" />
     <string-array name="with_issue_report_activity">
         <item>com.taobao.taobao</item>
     </string-array>

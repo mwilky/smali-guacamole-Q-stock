@@ -37,46 +37,67 @@
 .method public run()V
     .locals 7
 
-    iget-object v0, p0, Lcom/oneplus/screenshot/longshot/state/ShotNextState$1;->this$0:Lcom/oneplus/screenshot/longshot/state/ShotNextState;
+    const/4 v0, -0x1
 
-    invoke-virtual {v0}, Lcom/oneplus/screenshot/longshot/state/ShotNextState;->getTopBase()I
+    const/4 v1, -0x1
 
-    move-result v0
+    invoke-static {}, Lcom/oneplus/screenshot/longshot/util/Configs;->shouldStitchByView()Z
 
-    iget-object v1, p0, Lcom/oneplus/screenshot/longshot/state/ShotNextState$1;->this$0:Lcom/oneplus/screenshot/longshot/state/ShotNextState;
+    move-result v2
 
-    iget v1, v1, Lcom/oneplus/screenshot/longshot/state/ShotNextState;->mOffset:I
-
-    sub-int/2addr v0, v1
-
-    iget-object v1, p0, Lcom/oneplus/screenshot/longshot/state/ShotNextState$1;->this$0:Lcom/oneplus/screenshot/longshot/state/ShotNextState;
-
-    invoke-static {v1}, Lcom/oneplus/screenshot/longshot/state/ShotNextState;->access$000(Lcom/oneplus/screenshot/longshot/state/ShotNextState;)Landroid/graphics/Bitmap;
-
-    move-result-object v1
-
-    invoke-virtual {v1}, Landroid/graphics/Bitmap;->getHeight()I
-
-    move-result v1
+    if-nez v2, :cond_0
 
     iget-object v2, p0, Lcom/oneplus/screenshot/longshot/state/ShotNextState$1;->this$0:Lcom/oneplus/screenshot/longshot/state/ShotNextState;
 
-    iget-object v2, v2, Lcom/oneplus/screenshot/longshot/state/ShotNextState;->mMovePoint:Lcom/oneplus/screenshot/longshot/util/MovePoint;
+    invoke-virtual {v2}, Lcom/oneplus/screenshot/longshot/state/ShotNextState;->getTopBase()I
 
-    invoke-virtual {v2}, Lcom/oneplus/screenshot/longshot/util/MovePoint;->getStart()Landroid/graphics/Point;
+    move-result v2
+
+    iget-object v3, p0, Lcom/oneplus/screenshot/longshot/state/ShotNextState$1;->this$0:Lcom/oneplus/screenshot/longshot/state/ShotNextState;
+
+    iget v3, v3, Lcom/oneplus/screenshot/longshot/state/ShotNextState;->mOffset:I
+
+    sub-int v0, v2, v3
+
+    iget-object v2, p0, Lcom/oneplus/screenshot/longshot/state/ShotNextState$1;->this$0:Lcom/oneplus/screenshot/longshot/state/ShotNextState;
+
+    invoke-static {v2}, Lcom/oneplus/screenshot/longshot/state/ShotNextState;->access$000(Lcom/oneplus/screenshot/longshot/state/ShotNextState;)Landroid/graphics/Bitmap;
 
     move-result-object v2
 
-    iget v2, v2, Landroid/graphics/Point;->y:I
+    invoke-virtual {v2}, Landroid/graphics/Bitmap;->getHeight()I
 
-    sub-int/2addr v1, v2
+    move-result v2
 
-    iget-object v2, p0, Lcom/oneplus/screenshot/longshot/state/ShotNextState$1;->this$0:Lcom/oneplus/screenshot/longshot/state/ShotNextState;
+    iget-object v3, p0, Lcom/oneplus/screenshot/longshot/state/ShotNextState$1;->this$0:Lcom/oneplus/screenshot/longshot/state/ShotNextState;
 
-    iget v2, v2, Lcom/oneplus/screenshot/longshot/state/ShotNextState;->mOffset:I
+    iget-object v3, v3, Lcom/oneplus/screenshot/longshot/state/ShotNextState;->mMovePoint:Lcom/oneplus/screenshot/longshot/util/MovePoint;
 
-    sub-int/2addr v1, v2
+    invoke-virtual {v3}, Lcom/oneplus/screenshot/longshot/util/MovePoint;->getStart()Landroid/graphics/Point;
 
+    move-result-object v3
+
+    iget v3, v3, Landroid/graphics/Point;->y:I
+
+    sub-int/2addr v2, v3
+
+    iget-object v3, p0, Lcom/oneplus/screenshot/longshot/state/ShotNextState$1;->this$0:Lcom/oneplus/screenshot/longshot/state/ShotNextState;
+
+    iget v3, v3, Lcom/oneplus/screenshot/longshot/state/ShotNextState;->mOffset:I
+
+    sub-int v1, v2, v3
+
+    :cond_0
+    if-gez v0, :cond_1
+
+    const/4 v0, 0x0
+
+    :cond_1
+    if-gez v1, :cond_2
+
+    const/4 v1, 0x0
+
+    :cond_2
     new-instance v2, Lcom/oneplus/screenshot/longshot/cache/BitmapCache;
 
     iget-object v3, p0, Lcom/oneplus/screenshot/longshot/state/ShotNextState$1;->this$0:Lcom/oneplus/screenshot/longshot/state/ShotNextState;

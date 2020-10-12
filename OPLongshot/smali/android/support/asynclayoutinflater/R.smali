@@ -6,6 +6,7 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
+        Landroid/support/asynclayoutinflater/R$xml;,
         Landroid/support/asynclayoutinflater/R$transition;,
         Landroid/support/asynclayoutinflater/R$styleable;,
         Landroid/support/asynclayoutinflater/R$style;,

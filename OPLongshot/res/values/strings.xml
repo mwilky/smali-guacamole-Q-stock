@@ -40,7 +40,7 @@
     <string name="oneplus_contorl_font_family_title">sans-serif-medium</string>
     <string name="oneplus_contorl_font_family_title_extended">sans-serif-medium</string>
     <string name="oneplus_delete">Delete</string>
-    <string name="oneplus_share">Send</string>
+    <string name="oneplus_share">Share</string>
     <string name="op_accessibility_quick_settings_page">Page %1$d of %2$d</string>
     <string name="op_appbar_scrolling_view_behavior">com.oneplus.lib.design.widget.AppBarLayout$ScrollingViewBehavior</string>
     <string name="op_character_counter_pattern">%1$d / %2$d</string>

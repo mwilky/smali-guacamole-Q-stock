@@ -6,6 +6,7 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
+        Landroid/support/swiperefreshlayout/R$xml;,
         Landroid/support/swiperefreshlayout/R$transition;,
         Landroid/support/swiperefreshlayout/R$styleable;,
         Landroid/support/swiperefreshlayout/R$style;,

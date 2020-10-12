@@ -1467,16 +1467,74 @@
 
     div-float/2addr v6, v7
 
-    int-to-float v7, v1
+    new-instance v7, Ljava/lang/StringBuilder;
 
-    mul-float/2addr v7, v6
+    invoke-direct {v7}, Ljava/lang/StringBuilder;-><init>()V
 
-    float-to-int v7, v7
+    const-string v8, "drawableToBitmap() width="
 
-    invoke-static {v0, v7, p2, v5}, Landroid/graphics/Bitmap;->createScaledBitmap(Landroid/graphics/Bitmap;IIZ)Landroid/graphics/Bitmap;
+    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v7, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    const-string v8, ", displayHeight= "
+
+    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v7, p2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v7}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v7
+
+    const-string v8, "Longshot.PreviewWindow"
+
+    invoke-static {v8, v7}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    const/4 v7, 0x0
+
+    if-lez v1, :cond_4
+
+    if-gtz p2, :cond_3
+
+    goto :goto_2
+
+    :cond_3
+    int-to-float v8, v1
+
+    mul-float/2addr v8, v6
+
+    float-to-int v8, v8
+
+    invoke-static {v0, v8, p2, v5}, Landroid/graphics/Bitmap;->createScaledBitmap(Landroid/graphics/Bitmap;IIZ)Landroid/graphics/Bitmap;
 
     move-result-object v5
 
+    goto :goto_4
+
+    :cond_4
+    :goto_2
+    iget-object v8, p0, Lcom/oneplus/screenshot/longshot/preview/PreviewWindowController;->mDisplayMetrics:Landroid/util/DisplayMetrics;
+
+    iget v8, v8, Landroid/util/DisplayMetrics;->widthPixels:I
+
+    if-gtz p2, :cond_5
+
+    iget-object v9, p0, Lcom/oneplus/screenshot/longshot/preview/PreviewWindowController;->mDisplayMetrics:Landroid/util/DisplayMetrics;
+
+    iget v9, v9, Landroid/util/DisplayMetrics;->heightPixels:I
+
+    goto :goto_3
+
+    :cond_5
+    move v9, p2
+
+    :goto_3
+    invoke-static {v0, v8, v9, v5}, Landroid/graphics/Bitmap;->createScaledBitmap(Landroid/graphics/Bitmap;IIZ)Landroid/graphics/Bitmap;
+
+    move-result-object v5
+
+    :goto_4
     invoke-virtual {v0}, Landroid/graphics/Bitmap;->recycle()V
 
     return-object v5
