@@ -534,7 +534,7 @@
 
     if-eqz v0, :cond_3
 
-    const v0, 0x7f1600b3
+    const v0, 0x7f1600b4
 
     invoke-virtual {p0, v0}, Lcom/oneplus/settings/ringtone/OPRingtonePickerActivity;->addPreferencesFromResource(I)V
 
@@ -657,7 +657,7 @@
     goto/16 :goto_1
 
     :cond_3
-    const v0, 0x7f1600b4
+    const v0, 0x7f1600b5
 
     invoke-virtual {p0, v0}, Lcom/oneplus/settings/ringtone/OPRingtonePickerActivity;->addPreferencesFromResource(I)V
 
@@ -901,7 +901,7 @@
 
     iget-object v3, p0, Lcom/oneplus/settings/ringtone/OPRingtonePickerActivity;->mSim1Layout:Landroid/preference/Preference;
 
-    const v4, 0x7f120e61
+    const v4, 0x7f120e64
 
     if-eqz v3, :cond_4
 
@@ -1240,7 +1240,7 @@
 
     const-string v6, "-1"
 
-    const v7, 0x7f120e5e
+    const v7, 0x7f120e61
 
     const/4 v8, 0x0
 
@@ -1727,7 +1727,7 @@
 
     const-string v3, "-1"
 
-    const v4, 0x7f120e5e
+    const v4, 0x7f120e61
 
     const/4 v5, 0x0
 

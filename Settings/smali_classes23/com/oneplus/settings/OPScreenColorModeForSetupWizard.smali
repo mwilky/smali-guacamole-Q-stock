@@ -19,7 +19,7 @@
 
     invoke-super {p0, p1}, Lcom/android/settings/core/SettingsBaseActivity;->onCreate(Landroid/os/Bundle;)V
 
-    const v0, 0x7f0d020e
+    const v0, 0x7f0d0212
 
     invoke-virtual {p0, v0}, Lcom/oneplus/settings/OPScreenColorModeForSetupWizard;->setContentView(I)V
 
@@ -35,7 +35,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0a03bb
+    const v2, 0x7f0a03ba
 
     invoke-virtual {v1, v2, v0}, Landroidx/fragment/app/FragmentTransaction;->replace(ILandroidx/fragment/app/Fragment;)Landroidx/fragment/app/FragmentTransaction;
 
@@ -45,7 +45,7 @@
 
     invoke-direct {v2}, Landroid/content/Intent;-><init>()V
 
-    const v3, 0x7f0a0437
+    const v3, 0x7f0a0436
 
     invoke-virtual {p0, v3}, Lcom/oneplus/settings/OPScreenColorModeForSetupWizard;->findViewById(I)Landroid/view/View;
 

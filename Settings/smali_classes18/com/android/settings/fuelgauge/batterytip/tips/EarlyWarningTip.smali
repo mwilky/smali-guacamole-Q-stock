@@ -63,12 +63,12 @@
 
     if-ne v0, v1, :cond_0
 
-    const v0, 0x7f0801b4
+    const v0, 0x7f0801b6
 
     goto :goto_0
 
     :cond_0
-    const v0, 0x7f0801b2
+    const v0, 0x7f0801b4
 
     :goto_0
     return v0

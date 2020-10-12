@@ -142,7 +142,7 @@
 
     iget-object v2, p0, Lcom/oneplus/settings/gestures/OPGestureShortcutsAdapter;->mInflater:Landroid/view/LayoutInflater;
 
-    const v3, 0x7f0d01ca
+    const v3, 0x7f0d01ce
 
     const/4 v4, 0x0
 
@@ -156,7 +156,7 @@
 
     move-object v0, v2
 
-    const v2, 0x7f0a050c
+    const v2, 0x7f0a0519
 
     invoke-virtual {p2, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -166,7 +166,7 @@
 
     iput-object v2, v0, Lcom/oneplus/settings/gestures/OPGestureShortcutsAdapter$ItemViewHolder;->parent:Landroid/widget/RelativeLayout;
 
-    const v2, 0x7f0a0721
+    const v2, 0x7f0a072e
 
     invoke-virtual {p2, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -186,7 +186,7 @@
 
     iput-object v2, v0, Lcom/oneplus/settings/gestures/OPGestureShortcutsAdapter$ItemViewHolder;->appIconIv:Landroid/widget/ImageView;
 
-    const v2, 0x7f0a0426
+    const v2, 0x7f0a0425
 
     invoke-virtual {p2, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -212,7 +212,7 @@
 
     iput-object v2, v0, Lcom/oneplus/settings/gestures/OPGestureShortcutsAdapter$ItemViewHolder;->groupDivider:Landroid/view/View;
 
-    const v2, 0x7f0a058d
+    const v2, 0x7f0a059a
 
     invoke-virtual {p2, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -250,7 +250,7 @@
 
     iget-object v5, v0, Lcom/oneplus/settings/gestures/OPGestureShortcutsAdapter$ItemViewHolder;->titleTv:Landroid/widget/TextView;
 
-    const v6, 0x7f120d9d
+    const v6, 0x7f120d9f
 
     invoke-virtual {v5, v6}, Landroid/widget/TextView;->setText(I)V
 

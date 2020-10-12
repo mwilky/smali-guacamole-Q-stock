@@ -34,7 +34,7 @@
 
     invoke-direct {p0, p1}, Landroidx/preference/PreferenceCategory;-><init>(Landroid/content/Context;)V
 
-    const v0, 0x7f0d01d8
+    const v0, 0x7f0d01dc
 
     iput v0, p0, Lcom/oneplus/settings/ui/OPFactoryResetConfirmCategory;->mLayoutResId:I
 
@@ -48,7 +48,7 @@
 
     invoke-direct {p0, p1, p2}, Landroidx/preference/PreferenceCategory;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
-    const v0, 0x7f0d01d8
+    const v0, 0x7f0d01dc
 
     iput v0, p0, Lcom/oneplus/settings/ui/OPFactoryResetConfirmCategory;->mLayoutResId:I
 
@@ -62,7 +62,7 @@
 
     invoke-direct {p0, p1, p2, p3}, Landroidx/preference/PreferenceCategory;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
-    const v0, 0x7f0d01d8
+    const v0, 0x7f0d01dc
 
     iput v0, p0, Lcom/oneplus/settings/ui/OPFactoryResetConfirmCategory;->mLayoutResId:I
 

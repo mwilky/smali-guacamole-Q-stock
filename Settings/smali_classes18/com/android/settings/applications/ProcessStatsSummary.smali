@@ -88,7 +88,7 @@
 
     invoke-super {p0, p1}, Lcom/android/settings/applications/ProcessStatsBase;->onCreate(Landroid/os/Bundle;)V
 
-    const v0, 0x7f1600d8
+    const v0, 0x7f1600d9
 
     invoke-virtual {p0, v0}, Lcom/android/settings/applications/ProcessStatsSummary;->addPreferencesFromResource(I)V
 
@@ -194,7 +194,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f120a69
+    const v3, 0x7f120a6a
 
     invoke-virtual {v2, v3}, Lcom/android/settings/core/SubSettingLauncher;->setTitleRes(I)Lcom/android/settings/core/SubSettingLauncher;
 
@@ -271,7 +271,7 @@
 
     move-result-object v13
 
-    const v14, 0x7f0300ec
+    const v14, 0x7f0300ed
 
     invoke-virtual {v13, v14}, Landroid/content/res/Resources;->getTextArray(I)[Ljava/lang/CharSequence;
 

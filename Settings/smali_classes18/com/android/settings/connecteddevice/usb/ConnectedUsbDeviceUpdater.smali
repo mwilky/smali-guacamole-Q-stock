@@ -98,7 +98,7 @@
 
     const/4 v0, 0x2
 
-    const v9, 0x7f121728
+    const v9, 0x7f12173d
 
     if-eq p2, v0, :cond_0
 
@@ -109,7 +109,7 @@
 
     if-nez v0, :cond_1
 
-    const v0, 0x7f121729
+    const v0, 0x7f12173e
 
     return v0
 
@@ -118,7 +118,7 @@
 
     if-nez v0, :cond_2
 
-    const v0, 0x7f12172e
+    const v0, 0x7f121743
 
     return v0
 
@@ -127,7 +127,7 @@
 
     if-nez v0, :cond_3
 
-    const v0, 0x7f12172b
+    const v0, 0x7f121740
 
     return v0
 
@@ -136,7 +136,7 @@
 
     if-nez v0, :cond_4
 
-    const v0, 0x7f121726
+    const v0, 0x7f12173b
 
     return v0
 
@@ -148,7 +148,7 @@
 
     if-nez v0, :cond_6
 
-    const v0, 0x7f12172a
+    const v0, 0x7f12173f
 
     return v0
 
@@ -157,7 +157,7 @@
 
     if-nez v0, :cond_7
 
-    const v0, 0x7f12172f
+    const v0, 0x7f121744
 
     return v0
 
@@ -166,7 +166,7 @@
 
     if-nez v0, :cond_8
 
-    const v0, 0x7f12172c
+    const v0, 0x7f121741
 
     return v0
 
@@ -175,12 +175,12 @@
 
     if-nez v0, :cond_9
 
-    const v0, 0x7f121727
+    const v0, 0x7f12173c
 
     return v0
 
     :cond_9
-    const v0, 0x7f12172d
+    const v0, 0x7f121742
 
     return v0
 .end method
@@ -200,13 +200,13 @@
 
     iget-object v0, p0, Lcom/android/settings/connecteddevice/usb/ConnectedUsbDeviceUpdater;->mUsbPreference:Landroidx/preference/Preference;
 
-    const v1, 0x7f121722
+    const v1, 0x7f121737
 
     invoke-virtual {v0, v1}, Landroidx/preference/Preference;->setTitle(I)V
 
     iget-object v0, p0, Lcom/android/settings/connecteddevice/usb/ConnectedUsbDeviceUpdater;->mUsbPreference:Landroidx/preference/Preference;
 
-    const v1, 0x7f08038b
+    const v1, 0x7f0803be
 
     invoke-virtual {v0, v1}, Landroidx/preference/Preference;->setIcon(I)V
 

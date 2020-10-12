@@ -144,7 +144,7 @@
 
     if-nez v8, :cond_0
 
-    const v8, 0x7f121695    # 1.9418454E38f
+    const v8, 0x7f1216aa
 
     new-array v9, v6, [Ljava/lang/Object;
 
@@ -199,7 +199,7 @@
 
     if-eqz v6, :cond_2
 
-    const v6, 0x7f1216a9
+    const v6, 0x7f1216be
 
     invoke-virtual {p0, v6}, Lcom/oneplus/settings/packageuninstaller/UninstallAlertDialogFragment;->getString(I)Ljava/lang/String;
 
@@ -210,7 +210,7 @@
     goto/16 :goto_2
 
     :cond_2
-    const v6, 0x7f1216aa
+    const v6, 0x7f1216bf
 
     invoke-virtual {p0, v6}, Lcom/oneplus/settings/packageuninstaller/UninstallAlertDialogFragment;->getString(I)Ljava/lang/String;
 
@@ -223,7 +223,7 @@
     :cond_3
     iget-boolean v9, v1, Lcom/oneplus/settings/packageuninstaller/UninstallerActivity$DialogInfo;->allUsers:Z
 
-    const v10, 0x7f121048
+    const v10, 0x7f12104c
 
     if-eqz v9, :cond_4
 
@@ -252,7 +252,7 @@
 
     move-result v9
 
-    const v11, 0x7f121049
+    const v11, 0x7f12104d
 
     const/16 v12, 0x3e7
 
@@ -299,7 +299,7 @@
     goto :goto_1
 
     :cond_5
-    const v10, 0x7f12169a
+    const v10, 0x7f1216af
 
     new-array v6, v6, [Ljava/lang/Object;
 
@@ -348,7 +348,7 @@
     goto :goto_2
 
     :cond_7
-    const v6, 0x7f12104a
+    const v6, 0x7f12104e
 
     invoke-virtual {p0, v6}, Lcom/oneplus/settings/packageuninstaller/UninstallAlertDialogFragment;->getString(I)Ljava/lang/String;
 

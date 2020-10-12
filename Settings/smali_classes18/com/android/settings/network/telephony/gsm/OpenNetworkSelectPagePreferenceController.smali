@@ -105,7 +105,7 @@
     :cond_0
     iget-object v1, p0, Lcom/android/settings/network/telephony/gsm/OpenNetworkSelectPagePreferenceController;->mContext:Landroid/content/Context;
 
-    const v2, 0x7f120aff
+    const v2, 0x7f120b01
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

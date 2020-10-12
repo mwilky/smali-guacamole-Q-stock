@@ -224,7 +224,7 @@
 
     if-nez v3, :cond_1
 
-    const v1, 0x7f121844
+    const v1, 0x7f121859
 
     new-array v3, v5, [Ljava/lang/Object;
 
@@ -249,7 +249,7 @@
 
     if-nez v3, :cond_2
 
-    const v1, 0x7f121842
+    const v1, 0x7f121857
 
     new-array v3, v5, [Ljava/lang/Object;
 
@@ -287,7 +287,7 @@
 .method protected getPreferenceScreenResId()I
     .locals 1
 
-    const v0, 0x7f16010b
+    const v0, 0x7f16010c
 
     return v0
 .end method

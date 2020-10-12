@@ -285,7 +285,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f120ab0
+    const v2, 0x7f120ab1
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -335,7 +335,7 @@
 
     iget-object v5, p0, Lcom/android/settings/network/MobileNetworkSummaryController;->mContext:Landroid/content/Context;
 
-    const v6, 0x7f120ab1
+    const v6, 0x7f120ab2
 
     new-array v2, v2, [Ljava/lang/Object;
 

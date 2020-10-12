@@ -193,7 +193,7 @@
 
     iget-object v0, p0, Lcom/android/settings/MasterClearConfirm;->mContentView:Landroid/view/View;
 
-    const v1, 0x7f0a0616
+    const v1, 0x7f0a0623
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -207,12 +207,12 @@
 
     if-eqz v1, :cond_0
 
-    const v1, 0x7f120a2f
+    const v1, 0x7f120a30
 
     goto :goto_0
 
     :cond_0
-    const v1, 0x7f120d02
+    const v1, 0x7f120d04
 
     :goto_0
     invoke-virtual {v0, v1}, Lcom/google/android/setupdesign/GlifLayout;->setHeaderText(I)V
@@ -238,12 +238,12 @@
 
     if-eqz v3, :cond_2
 
-    const v3, 0x7f120a2d
+    const v3, 0x7f120a2e
 
     goto :goto_1
 
     :cond_2
-    const v3, 0x7f120d00
+    const v3, 0x7f120d02
 
     :goto_1
     invoke-virtual {v2, v3}, Lcom/google/android/setupcompat/template/FooterButton$Builder;->setText(I)Lcom/google/android/setupcompat/template/FooterButton$Builder;
@@ -290,7 +290,7 @@
 
     iget-object v1, p0, Lcom/android/settings/MasterClearConfirm;->mContentView:Landroid/view/View;
 
-    const v2, 0x7f0a068c
+    const v2, 0x7f0a0699
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -308,12 +308,12 @@
 
     if-eqz v2, :cond_0
 
-    const v2, 0x7f120a37
+    const v2, 0x7f120a38
 
     goto :goto_0
 
     :cond_0
-    const v2, 0x7f120d01
+    const v2, 0x7f120d03
 
     :goto_0
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(I)V
@@ -621,7 +621,7 @@
 
     iget-object v0, p0, Lcom/android/settings/MasterClearConfirm;->mContentView:Landroid/view/View;
 
-    const v1, 0x7f0a068c
+    const v1, 0x7f0a0699
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -629,7 +629,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    const v1, 0x7f120a38
+    const v1, 0x7f120a39
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
 

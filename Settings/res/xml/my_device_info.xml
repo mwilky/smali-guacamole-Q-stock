@@ -6,6 +6,7 @@
     <Preference android:title="@string/my_device_info_account_preference_title" android:key="branded_account" android:summary="@string/summary_placeholder" android:order="2" settings:controller="com.android.settings.deviceinfo.BrandedAccountPreferenceController" />
     <Preference android:title="@string/status_number" android:selectable="false" android:key="phone_number" android:summary="@string/summary_placeholder" android:order="3" settings:controller="com.android.settings.deviceinfo.PhoneNumberPreferenceController" settings:enableCopying="true" />
     <Preference android:title="@string/emergency_info_title" android:key="emergency_info" android:summary="@string/summary_placeholder" android:order="14" settings:controller="com.android.settings.accounts.EmergencyInfoPreferenceController" />
+    <Preference android:title="@string/legal_information" android:key="legal_container" android:order="15" android:fragment="com.android.settings.LegalSettings" settings:allowDividerAbove="true" settings:searchable="false" />
     <Preference android:title="@string/regulatory_labels" android:key="regulatory_info" android:order="16">
         <intent android:action="android.settings.SHOW_REGULATORY_INFO" />
     </Preference>

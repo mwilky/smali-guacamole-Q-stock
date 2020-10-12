@@ -46,6 +46,8 @@
 
 .field private static final ONEPLUS_19863:Ljava/lang/String; = "19863"
 
+.field public static final ONEPLUS_ACCOUNT_PACKAGE:Ljava/lang/String; = "com.oneplus.account"
+
 .field public static final ONEPLUS_CLOUD_HEYTAP_PACKAGE:Ljava/lang/String; = "com.heytap.cloud"
 
 .field public static final ONEPLUS_CLOUD_PACKAGE:Ljava/lang/String; = "com.oneplus.cloud"
@@ -61,6 +63,12 @@
 .field public static final PIN_PASSWORD_LENGTH:Ljava/lang/String; = "lockscreen.pin_password_length"
 
 .field private static final PRODUCTNOTNEEDTCPTIMESTAMPSCONTROL:[Ljava/lang/String;
+
+.field private static final RELEASE_TYPE_CBT:Ljava/lang/String; = "cbt"
+
+.field private static final RELEASE_TYPE_OBT:Ljava/lang/String; = "obt"
+
+.field private static final RELEASE_TYPE_STABLE:Ljava/lang/String; = "stable"
 
 .field public static final TAG:Ljava/lang/String; = "OPUtils"
 
@@ -1973,14 +1981,14 @@
 .method public static getQuickMiniProgrameconByType(Landroid/content/Context;I)Landroid/graphics/drawable/Drawable;
     .locals 2
 
-    const v0, 0x7f08062f
+    const v0, 0x7f080663
 
     if-eqz p1, :cond_0
 
     goto :goto_0
 
     :cond_0
-    const v0, 0x7f08062f
+    const v0, 0x7f080663
 
     nop
 
@@ -2040,7 +2048,7 @@
 .method public static getQuickPayIconByType(Landroid/content/Context;I)Landroid/graphics/drawable/Drawable;
     .locals 2
 
-    const v0, 0x7f08062e
+    const v0, 0x7f080662
 
     if-eqz p1, :cond_3
 
@@ -2059,22 +2067,22 @@
     goto :goto_0
 
     :cond_0
-    const v0, 0x7f08043d
+    const v0, 0x7f080470
 
     goto :goto_0
 
     :cond_1
-    const v0, 0x7f08043c
+    const v0, 0x7f08046f
 
     goto :goto_0
 
     :cond_2
-    const v0, 0x7f080630
+    const v0, 0x7f080664
 
     goto :goto_0
 
     :cond_3
-    const v0, 0x7f08062e
+    const v0, 0x7f080662
 
     nop
 
@@ -2241,6 +2249,63 @@
     move-result v0
 
     return v0
+.end method
+
+.method public static getRomVersionType()Ljava/lang/String;
+    .locals 4
+
+    const-string v0, ""
+
+    const-string v1, "ro.build.alpha"
+
+    invoke-static {v1, v0}, Landroid/os/SystemProperties;->get(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v1
+
+    const-string v2, "1"
+
+    invoke-virtual {v2, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    const-string v3, "ro.build.beta"
+
+    invoke-static {v3, v0}, Landroid/os/SystemProperties;->get(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-virtual {v2, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v2
+
+    if-eqz v1, :cond_0
+
+    if-eqz v2, :cond_0
+
+    const-string v0, "cbt"
+
+    return-object v0
+
+    :cond_0
+    if-nez v1, :cond_1
+
+    if-eqz v2, :cond_1
+
+    const-string v0, "obt"
+
+    return-object v0
+
+    :cond_1
+    if-nez v1, :cond_2
+
+    if-nez v2, :cond_2
+
+    const-string v0, "stable"
+
+    return-object v0
+
+    :cond_2
+    return-object v0
 .end method
 
 .method private static getThemeMode()I
@@ -2890,67 +2955,67 @@
 
     move-result-object v1
 
-    const v2, 0x7f120e95
-
-    invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
-
-    move-result v0
-
-    if-nez v0, :cond_1
-
-    sget-object v0, Landroid/os/Build;->MODEL:Ljava/lang/String;
-
-    sget-object v1, Lcom/oneplus/settings/SettingsBaseApplication;->mApplication:Landroid/app/Application;
-
-    invoke-virtual {v1}, Landroid/app/Application;->getResources()Landroid/content/res/Resources;
-
-    move-result-object v1
-
-    const v2, 0x7f120e97
-
-    invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
-
-    move-result v0
-
-    if-nez v0, :cond_1
-
-    sget-object v0, Landroid/os/Build;->MODEL:Ljava/lang/String;
-
-    sget-object v1, Lcom/oneplus/settings/SettingsBaseApplication;->mApplication:Landroid/app/Application;
-
-    invoke-virtual {v1}, Landroid/app/Application;->getResources()Landroid/content/res/Resources;
-
-    move-result-object v1
-
-    const v2, 0x7f120e96
-
-    invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
-
-    move-result v0
-
-    if-nez v0, :cond_1
-
-    sget-object v0, Landroid/os/Build;->MODEL:Ljava/lang/String;
-
-    sget-object v1, Lcom/oneplus/settings/SettingsBaseApplication;->mApplication:Landroid/app/Application;
-
-    invoke-virtual {v1}, Landroid/app/Application;->getResources()Landroid/content/res/Resources;
-
-    move-result-object v1
-
     const v2, 0x7f120e98
+
+    invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_1
+
+    sget-object v0, Landroid/os/Build;->MODEL:Ljava/lang/String;
+
+    sget-object v1, Lcom/oneplus/settings/SettingsBaseApplication;->mApplication:Landroid/app/Application;
+
+    invoke-virtual {v1}, Landroid/app/Application;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v1
+
+    const v2, 0x7f120e9a
+
+    invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_1
+
+    sget-object v0, Landroid/os/Build;->MODEL:Ljava/lang/String;
+
+    sget-object v1, Lcom/oneplus/settings/SettingsBaseApplication;->mApplication:Landroid/app/Application;
+
+    invoke-virtual {v1}, Landroid/app/Application;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v1
+
+    const v2, 0x7f120e99
+
+    invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_1
+
+    sget-object v0, Landroid/os/Build;->MODEL:Ljava/lang/String;
+
+    sget-object v1, Lcom/oneplus/settings/SettingsBaseApplication;->mApplication:Landroid/app/Application;
+
+    invoke-virtual {v1}, Landroid/app/Application;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v1
+
+    const v2, 0x7f120e9b
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -3827,6 +3892,24 @@
     return v0
 .end method
 
+.method public static isH2()Z
+    .locals 2
+
+    const/4 v0, 0x1
+
+    new-array v0, v0, [I
+
+    const/4 v1, 0x0
+
+    aput v1, v0, v1
+
+    invoke-static {v0}, Landroid/util/OpFeatures;->isSupport([I)Z
+
+    move-result v0
+
+    return v0
+.end method
+
 .method public static isHDProject()Z
     .locals 4
 
@@ -4029,6 +4112,28 @@
     const/4 v1, 0x0
 
     return v1
+.end method
+
+.method public static isIndia()Z
+    .locals 2
+
+    invoke-static {}, Lcom/oneplus/custom/utils/OpCustomizeSettings;->getSwType()Lcom/oneplus/custom/utils/OpCustomizeSettings$SW_TYPE;
+
+    move-result-object v0
+
+    sget-object v1, Lcom/oneplus/custom/utils/OpCustomizeSettings$SW_TYPE;->IN:Lcom/oneplus/custom/utils/OpCustomizeSettings$SW_TYPE;
+
+    if-ne v0, v1, :cond_0
+
+    const/4 v0, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    :goto_0
+    return v0
 .end method
 
 .method public static isLTRLayout(Landroid/content/Context;)Z
@@ -4991,6 +5096,44 @@
     move-result v0
 
     return v0
+.end method
+
+.method public static isSM8X50Products()Z
+    .locals 3
+
+    sget-object v0, Landroid/os/Build;->BOARD:Ljava/lang/String;
+
+    const-string v1, "msmnile"
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    sget-object v1, Landroid/os/Build;->BOARD:Ljava/lang/String;
+
+    const-string v2, "kona"
+
+    invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v0, :cond_1
+
+    if-eqz v1, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v2, 0x0
+
+    goto :goto_1
+
+    :cond_1
+    :goto_0
+    const/4 v2, 0x1
+
+    :goto_1
+    return v2
 .end method
 
 .method public static isStarWarModeOn(Landroid/content/ContentResolver;)Z
@@ -7291,7 +7434,7 @@
 
     new-instance v11, Lcom/oneplus/settings/better/OPAppModel;
 
-    const v12, 0x7f120efa
+    const v12, 0x7f120efd
 
     invoke-virtual {v0, v12}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

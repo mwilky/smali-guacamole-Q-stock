@@ -87,12 +87,12 @@
 
     if-eqz v0, :cond_0
 
-    const v2, 0x7f1215db
+    const v2, 0x7f1215ef
 
     goto :goto_0
 
     :cond_0
-    const v2, 0x7f1215da
+    const v2, 0x7f1215ee
 
     :goto_0
     invoke-virtual {v1, v2}, Lcom/android/settingslib/RestrictedSwitchPreference;->setSummary(I)V
@@ -198,7 +198,7 @@
 
     invoke-virtual {v4, v3}, Lcom/android/settingslib/RestrictedSwitchPreference;->setEnabled(Z)V
 
-    const v4, 0x7f1215da
+    const v4, 0x7f1215ee
 
     if-nez v3, :cond_2
 
@@ -217,12 +217,12 @@
 
     if-eqz v1, :cond_3
 
-    const v2, 0x7f1215da
+    const v2, 0x7f1215ee
 
     goto :goto_0
 
     :cond_3
-    const v2, 0x7f1215db
+    const v2, 0x7f1215ef
 
     :goto_0
     move v4, v2

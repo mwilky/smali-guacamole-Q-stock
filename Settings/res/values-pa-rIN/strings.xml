@@ -219,10 +219,10 @@
     <string name="header_category_custom">ਵਿਸ਼ੇਸ਼-ਵਿਉਂਤਬੱਧ ਕਰਨਾ</string>
     <string name="high_power_app_text_nomal">%1$s ਤੁਹਾਡੀ ਬੈਟਰੀ ਦੀ ਖਪਤ ਕਰ ਰਿਹਾ ਹੈ</string>
     <string name="high_power_app_text_red">%1$s ਬਹੁਤ ਵੱਡੀ ਮਾਤਰਾ ਵਿੱਚ ਤੁਹਾਡੀ ਬੈਟਰੀ ਦੀ ਖਪਤ ਕਰ ਰਿਹਾ ਹੈ</string>
-    <string name="hotspot_tip_message" formatted="false">"ਮੋਬਾਇਲ ਹੋਟਸਪੋਟ ਤੁਹਾਡੇ ਮੋਬਾਇਲ ਡਾਟਾ ਨੂੰ ਹੋਰ ਵਾਈ-ਫਾਈ ਯੋਗ ਯੰਤਰਾਂ ਨਾਲ ਸਾਂਝਾ ਕਰਦਾ ਹੈ। ਆਪਣੇ ਮੋਬਾਇਲ ਹੋਟਸਪੋਟ ਨਾਲ ਜੋੜਣ ਲਈ: \u0009 
- 1: ਦੂਸਰੇ ਯੰਤਰਾਂ ਉੱਤੇ ਵਾਈ-ਫਾਈ ਚਾਲੂ ਕਰੋ।
- 2: ਉਪਲਬਧ ਵਾਈ-ਫਾਈ ਨੈੱਟਵਰਕਾਂ ਵਿੱਚੋਂ %s ਚੁਣੋ। 
- 3: ਜੇਕਰ ਪਾਸਵਰਡ ਦੀ ਲੋੜ ਹੈ, %s ਭਰੋ ਬੈਟਰੀ ਬਚਾਉਣ ਲਈ, ਜਦੋਂ ਮੋਬਾਇਲ ਹੋਟਸਪਾਟ ਵਰਤ ਰਹੇ ਹੋਵੋ ਆਪਣੇ ਫੋਨ ਨੂੰ ਪਲੱਗ ਨਾਲ ਲਗਾਓ। "</string>
+    <string name="hotspot_tip_message" formatted="false">"ਮੋਬਾਈਲ ਹੌਟਸਪੌਟ ਤੁਹਾਡੇ ਮੋਬਾਈਲ ਡੇਟਾ ਨੂੰ ਦੂਜੇ Wi-Fi ਸਮਰੱਥ ਡਿਵਾਈਸਾਂ ਨਾਲ ਸਾਂਝਾ ਕਰਦਾ ਹੈ। ਆਪਣੇ ਮੋਬਾਈਲ ਹੌਟਸਪੌਟ ਨੂੰ ਕਨੈਕਟ ਕਰਨ ਲਈ: \u0009
+ 1: ਦੂਜੇ ਡਿਵਾਈਸ 'ਤੇ Wi-Fi ਚਾਲੂ ਕਰੋ।
+ 2: ਉਪਲਬਧ Wi-Fi ਨੈੱਟਵਰਕਾਂ ਦੀ ਸੂਚੀ 'ਚ %s ਨੂੰ ਚੁਣੋ।
+ 3: ਜੇਕਰ ਪਾਸਵਰਡ ਲੋੜੀਂਦਾ ਹੈ, ਤਾਂ ਬੈਟਰੀ ਨੂੰ ਸੁਰੱਖਿਅਤ ਰੱਖਣ ਲਈ %s ਦਾਖਲ ਕਰੋ, ਮੋਬਾਈਲ ਹੌਟਸਪੌਟ ਦੀ ਵਰਤੋਂ ਕਰਦੇ ਸਮੇਂ ਆਪਣੇ ਫ਼ੋਨ ਨੂੰ ਚਾਰਜ 'ਤੇ ਲਗਾਕੇ ਰੱਖੋ। "</string>
     <string name="hotspot_tip_title">ਮੋਬਾਈਲ ਹੌਟਸਪੌਟ</string>
     <string name="icon_attributions">ਆਈਕਨ ਪੈਕ</string>
     <string name="keyguard_wallpaper_settings_title">ਲੌਕ ਸਕ੍ਰੀਨ ਵਾਲਪੇਪਰ</string>
@@ -249,6 +249,7 @@
     <string name="led_settings_title">LED ਸੂਚਨਾਵਾਂ</string>
     <string name="list_saved_fingerprints">ਸਹੇਜੇ ਫਿੰਗਰਪ੍ਰਿੰਟ</string>
     <string name="list_saved_fingerprints_footer">"ਪੰਜ ਤੱਕ ਫਿੰਗਰਪ੍ਰਿੰਟ ਸਹੇਜੇ ਜਾ ਸਕਦੇ ਹਨ। ਨਾਂ ਬਦਲਣ ਜਾਂ ਮਿਟਾਉਣ ਲਈ ਸਹੇਜੇ ਗਏ ਉਪਰੋਕਤ ਫਿੰਗਰਪ੍ਰਿੰਟਾਂ ਵਿੱਚੋਂ ਕਿਸੇ 'ਤੇ ਵੀ ਟੈਪ ਕਰੋ।"</string>
+    <string name="location_text">ਸਥਾਨ</string>
     <string name="lockpassword_choose_your_fingerprint_header">ਫਿੰਗਰਪ੍ਰਿੰਟ</string>
     <string name="long_press_power_button">ਪਾਵਰ ਬਟਨ ਨੂੰ ਦਬਾਈ ਰੱਖੋ</string>
     <string name="mail_application_title">ਮੇਲ ਐਪ</string>
@@ -267,6 +268,7 @@
     <string name="mobile_hotspot_data_off_error">ਹੌਟਸਪੌਟ ਚਾਲੂ ਕਰਨ ਲਈ, ਕਿਰਪਾ ਕਰਕੇ ਮੋਬਾਈਲ ਡੇਟਾ ਬੰਦ ਕਰੋ</string>
     <string name="multi_app_label_badge">ਸਮਾਨਾਂਤਰ %1$s</string>
     <string name="music_application_title">ਸੰਗੀਤ ਐਪ</string>
+    <string name="nearest_station">ਸੱਭ ਤੋਂ ਨੇੜੇ ਸਟੇਸ਼ਨ</string>
     <string name="nfc_uicc_sim1">SIM 1</string>
     <string name="nfc_uicc_sim2">SIM 2</string>
     <string name="no_network">ਕੋਈ ਨੈੱਟਵਰਕ ਸੇਵਾ ਨਹੀਂ</string>
@@ -1076,6 +1078,7 @@
     <string name="oneplus_silent_mode_on">ਸਾਇਲੈਂਟ ਮੋਡ ਚਾਲੂ ਹੈ</string>
     <string name="oneplus_silent_mode_soc_tri_state_summary">ਅਲਾਰਮਾਂ ਨੂੰ ਛੱਡ ਕੇ, ਕਾਲਾਂ ਅਤੇ ਸੂਚਨਾਵਾਂ ਨੂੰ ਸਾਇਲੈਂਟ ਕੀਤਾ ਜਾਵੇਗਾ</string>
     <string name="oneplus_silent_mode_summary">ਅਲਾਰਮਾਂ ਨੂੰ ਛੱਡ ਕੇ, ਕਾਲਾਂ ਅਤੇ ਸੂਚਨਾਵਾਂ ਨੂੰ ਸਾਇਲੈਂਟ ਕੀਤਾ ਜਾਵੇਗਾ</string>
+    <string name="oneplus_silent_notifications_status_bar">ਸਾਈਲੈਂਟ ਅਧਿਸੂਚਨਾਵਾਂ ਨੂੰ ਸਟੇਟਸ ਬਾਰ ਵਿਚ ਛੁਪਾ ਦਿਓ</string>
     <string name="oneplus_sim1_ringtone_switch">SIM ਕਾਰਡ 1</string>
     <string name="oneplus_sim2_ringtone_switch">SIM ਕਾਰਡ 2</string>
     <string name="oneplus_simcard_title">SIM</string>
@@ -1166,7 +1169,7 @@
     <string name="oneplus_tools_summary_U30">ਗੇਮਿੰਗ ਮੋਡ, ਪੌਕੇਟ ਮੋਡ, ਨਿਯਤ ਪਾਵਰ ਚਾਲੂ/ਬੰਦ</string>
     <string name="oneplus_tools_summary_no_gamingmode">ਐਪ ਲਾੱਕਰ, ਸਮਾਂਤਰ ਐਪ</string>
     <string name="oneplus_tools_title">ਸੁਵਿਧਾਵਾਂ</string>
-    <string name="oneplus_top_level_accounts_summary">OnePlus account, other accounts</string>
+    <string name="oneplus_top_level_accounts_summary">OnePlus ਖਾਤਾ, ਹੋਰ ਖਾਤੇ</string>
     <string name="oneplus_top_level_apps_and_notifs_summary">ਡਿਫੌਲਟ ਐਪਾਂ, ਇਜਾਜ਼ਤਾਂ</string>
     <string name="oneplus_top_level_buttons_and_gestures_summary">ਚਿਤਾਵਨੀ ਸਲਾਈਡਰ, ਨੈਵੀਗੇਸ਼ਨ ਬਾਰ &amp; ਜੈਸਚਰ</string>
     <string name="oneplus_top_level_cloud_h2_summary">ਡੇਟਾ ਨੂੰ ਕਲਾਊਡ ਨਾਲ ਸਿੰਕ ਕਰੋ, ਮੇਰਾ ਫ਼ੋਨ ਲੱਭੋ</string>
@@ -1255,8 +1258,18 @@
     <string name="op_audio_settings">ਔਡੀਓ ਟਿਊਨਰ</string>
     <string name="op_auto_power_saving">ਆਟੋ ਪਾਵਰ ਸੇਵਿੰਗ</string>
     <string name="op_auto_power_saving_summary">"ਬੈਟਰੀ ਖਪਤ ਦੇ ਬਿਨਾਂ ਢੁੱਕਵੇਂ ਰੈਜ਼ੋਲਿਊਸ਼ਨ 'ਚ ਸਵੈਚਲਿਤ ਤਰੀਕੇ ਨਾਲ ਸਵਿੱਚ ਕਰੋ"</string>
+    <string name="op_charging_Station_mute_notifications">ਸੁਚਨਾਵਾਂ ਬੰਦ ਕਰੋ</string>
+    <string name="op_charging_footer_text">"ਤੁਹਾਨੂੰ ਨੇੜੇ ਦੇ ਕਿਸੇ ਵੀ ਚਾਰਜਿੰਗ ਸਟੇਸ਼ਨਾਂ ਬਾਰੇ Pop-ups ਵਾਂਗ ਦੱਸਿਆ ਜਾਵੇਗਾ ਜਦੋਂ ਤੁਸੀਂ ਭਾਈਵਾਲ ਜਗਾਹਾਂ ਜਿਵੇਂ ਹਵਾਈ ਅੱਡੇ ਜਾਂ Oneplus ਸਮਾਗਮਾਂ 'ਤੇ ਜਾਂਦੇ ਹੋ।"</string>
     <string name="op_charging_optimization">ਅਨੁਕੂਲਿਤ ਚਾਰਜਿੰਗ</string>
     <string name="op_charging_optimization_summary">ਆਪਣੀਆਂ ਵਰਤੋਂ ਦੀਆਂ ਆਦਤਾਂ ਦੇ ਮੁਤਾਬਿਕ ਚਾਰਜ ਕਰਨ ਦੇ ਪੈਟਰਨ ਨੂੰ ਅਨੁਕੂਲ ਕਰੋ</string>
+    <string name="op_charging_station">ਨੇੜਲੇ ਚਾਰਜਿੰਗ ਸਟੇਸ਼ਨ</string>
+    <string name="op_charging_station_no_station">ਨੇੜੇ ਕੋਈ ਚਾਰਜਿੰਗ ਸਟੇਸ਼ਨ ਨਹੀਂ</string>
+    <string name="op_charging_station_summary">ਦੱਸੋ ਜਦੋਂ ਕੋਈ ਚਾਰਜਿੰਗ ਸਟੇਸ਼ਨ ਨਜ਼ਦੀਕ ਹੋਵੇ</string>
+    <string name="op_charging_stations">ਚਾਰਜਿੰਗ ਸਟੇਸ਼ਨ</string>
+    <string name="op_charging_stations_off_description">ਚਾਰਜਿੰਗ ਸਟੇਸ਼ਨ ਲੱਭਣ ਲਈ, ਸਥਾਨ ਆਗਿਆ ਦੀ ਲੋੜ ਹੈ ਤਾਂ ਕਿ ਬੀਐਲਈ ਬੀਕਨ ਪਹਿਚਾਣੇ ਜਾਣ। ਇਸ ਫੀਚਰ ਨੂੰ ਵਰਤਣ ਲਈ ਕਿਰਪਾ ਸਥਾਨ ਦੀ ਆਗਿਆ ਦਿਓ।</string>
+    <string name="op_charging_stations_off_header">ਚਾਰਜਿੰਗ ਸਟੇਸ਼ਨ ਲੱਭਣ ਲਈ, ਸਥਾਨ ਆਗਿਆ ਦੀ ਲੋੜ ਹੈ ਤਾਂ ਕਿ ਬੀਐਲਈ ਬੀਕਨ ਪਹਿਚਾਣੇ ਜਾਣ। ਇਸ ਫੀਚਰ ਨੂੰ ਵਰਤਣ ਲਈ ਕਿਰਪਾ ਸਥਾਨ ਦੀ ਆਗਿਆ ਦਿਓ।</string>
+    <string name="op_charing_station_mute_notifications_description">ਸੁਚਨਾਵਾਂ 6 ਘੰਟਿਆਂ ਲਈ ਬੰਦ ਹੋ ਜਾਣਗੀਆਂ।</string>
+    <string name="op_charing_stations_mute_dynamic_time" formatted="false">%1d ਘੰਟੇ %2d ਮਿੰਟਾਂ ਲਈ ਨੋਟੀਫਿਕੇਸ਼ਨ ਬੰਦ ਕਰ ਦਿੱਤੀ ਗਈ ਹੈ</string>
     <string name="op_china_mobile">CMCC</string>
     <string name="op_china_telecom">CTCC</string>
     <string name="op_china_unicom">CUCC</string>
@@ -1272,15 +1285,19 @@
     <string name="op_default_apps_summary">ਹੋਮ, ਬ੍ਰਾਊਜ਼ਰ</string>
     <string name="op_default_luncher_title">ਹੋਮ ਐਪ</string>
     <string name="op_dnd_summary">ਪਰੇਸ਼ਾਨ ਨਾ ਕਰੋ</string>
+    <string name="op_enable_location_services">ਨੇੜਲੇ ਚਾਰਜਿੰਗ ਸਟੇਸ਼ਨਾਂ ਨੂੰ ਲੱਭਣ ਅਤੇ ਟਰੈਕ ਕਰਨ ਲਈ‚ ਕਿਰਪਾ ਕਰ ਕੇ ਸਥਾਨ ਲੱਭਣ ਵਾਲੀਆਂ ਸੇਵਾਵਾਂ ਨੂੰ ਸਮਰੱਥ ਬਣਾਓ</string>
+    <string name="op_enable_text">ਸਮਰੱਥ ਕਰੋ</string>
     <string name="op_face_unlock_set_unlock_password">ਚਿਹਰਾ ਅਨਲੌਕ + ਪਾਸਵਰਡ</string>
     <string name="op_face_unlock_set_unlock_pattern">ਚਿਹਰਾ ਅਨਲੌਕ + ਪੈਟਰਨ</string>
     <string name="op_face_unlock_set_unlock_pin">ਚਿਹਰਾ ਅਨਲੌਕ + PIN</string>
     <string name="op_face_unlock_skip_face">ਚਿਹਰਾ ਅਨਲੌਕ ਬਿਨਾਂ ਹੀ ਜਾਰੀ ਰੱਖੋ</string>
     <string name="op_failed_to_get_data">ਡੇਟਾ ਮੁੜ-ਪ੍ਰਾਪਤ ਕਰਨ ਵਿੱਚ ਅਸਫਲ ਹੋਇਆ</string>
     <string name="op_fetch_data_in_process">ਲੋਡ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ</string>
+    <string name="op_find_charging_stations">ਸਟੇਸ਼ਨ ਲੱਭੋ</string>
     <string name="op_fragment">ਸੰਖੇਪ</string>
     <string name="op_gamespace">ਗੇਮ ਸਪੇਸ</string>
     <string name="op_high_power_app_manager">ਉੱਚ ਪਾਵਰ ਵਰਤੋਂ ਵਾਲੀਆਂ ਐਪਾਂ</string>
+    <string name="op_keep_location_services">ਨੇੜਲੇ ਚਾਰਜਿੰਗ ਸਟੇਸ਼ਨਾਂ ਨੂੰ ਲੱਭਣ ਅਤੇ ਟਰੈਕ ਕਰਨ ਲਈ‚ ਸਥਾਨ ਲੱਭਣ ਵਾਲੀਆਂ ਸੇਵਾਵਾਂ ਨੂੰ ਸਮਰੱਥ ਬਣਾਈ ਰੱਖੋ</string>
     <string name="op_light_mode_title">ਹਲਕਾ</string>
     <string name="op_linked_launch_summary">ਉਨ੍ਹਾਂ ਐਪਾਂ ਨੂੰ ਪ੍ਰਬੰਧਿਤ ਕਰੋ ਜਿਨ੍ਹਾਂ ਨੂੰ ਬੈਕਗ੍ਰਾਊਂਡ ਵਿੱਚ ਲਾਂਚ ਕੀਤਾ ਜਾ ਸਕਦਾ ਹੈ</string>
     <string name="op_linked_launch_title">ਐਪ ਸਵੈ-ਲਾਂਚ</string>
@@ -1498,6 +1515,7 @@
     <string name="uicc_lock_summary">ਤੁਹਾਡੀ ਡਿਵਾਈਸ ਨੂੰ ਸਿਰਫ਼ Sprint SIM ਦੁਆਰਾ ਲੌਕ ਕੀਤਾ ਜਾਂਦਾ ਹੈ</string>
     <string name="uicc_unlock">UICC ਅਨਲੌਕ</string>
     <string name="uicc_unlock_summary">ਤੁਹਾਡੀ ਡਿਵਾਈਸ ਅਨਲੌਕ ਹੈ</string>
+    <string name="under_meters">%1d ਮੀਟਰ ਅਧੀਨ</string>
     <string name="uninstall_activity_text">%1$s ਹੇਠਲੀ ਐਪ ਦਾ ਹਿੱਸਾ ਹੈ:</string>
     <string name="uninstall_all_blocked_profile_owner">ਇਹ ਐਪ ਕੁਝ ਉਪਯੋਗਕਰਤਾਵਾਂ ਜਾਂ ਪ੍ਰੋਫਾਈਲਾਂ ਲਈ ਲੋੜੀਂਦੀ ਹੈ ਅਤੇ ਹੋਰਾਂ ਲਈ ਅਸਥਾਪਤ ਕਰ ਦਿੱਤੀ ਗਈ ਸੀ</string>
     <string name="uninstall_application_text">ਕੀ ਤੁਸੀਂ ਇਸ ਐਪ ਨੂੰ ਅਸਥਾਪਤ ਕਰਨਾ ਚਾਹੁੰਦੇ ਹੋ?</string>

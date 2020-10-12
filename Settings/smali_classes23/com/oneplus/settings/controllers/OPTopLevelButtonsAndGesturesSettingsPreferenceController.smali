@@ -49,7 +49,7 @@
 
     iget-object v1, p0, Lcom/oneplus/settings/controllers/OPTopLevelButtonsAndGesturesSettingsPreferenceController;->mContext:Landroid/content/Context;
 
-    const v2, 0x7f121034
+    const v2, 0x7f121038    # 1.941515E38f
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -80,7 +80,7 @@
 
     iget-object v3, p0, Lcom/oneplus/settings/controllers/OPTopLevelButtonsAndGesturesSettingsPreferenceController;->mContext:Landroid/content/Context;
 
-    const v4, 0x7f120eda
+    const v4, 0x7f120edd
 
     invoke-virtual {v3, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

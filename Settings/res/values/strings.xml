@@ -2520,6 +2520,7 @@ You can change this later from Settings > Apps &amp; notifications."</string>
     <string name="location_settings_title">Location</string>
     <string name="location_sources_heading">Location sources</string>
     <string name="location_street_level">Let apps use GPS on your phone to pinpoint your location</string>
+    <string name="location_text">Location</string>
     <string name="location_title">My Location</string>
     <string name="lock_after_timeout">Automatically lock</string>
     <string name="lock_after_timeout_summary">%1$s after sleep</string>
@@ -2929,6 +2930,7 @@ Switching to %1$s won't cancel your %2$s service."</string>
     <string name="my_device_info_account_preference_title">Account</string>
     <string name="my_device_info_device_name_preference_title">Device name</string>
     <string name="n_cacrts">%d CA certificates</string>
+    <string name="nearest_station">Nearest Station</string>
     <string name="network_1x">1x</string>
     <string name="network_2G">2G</string>
     <string name="network_3G">3G</string>
@@ -3715,6 +3717,7 @@ Note: Your fingerprint may be less secure than a strong pattern or PIN"</string>
     <string name="oneplus_max_shortcuts_tips">You can add up to 6 shortcuts</string>
     <string name="oneplus_media_ring">@string/zen_mode_media_sound</string>
     <string name="oneplus_media_ring_summary">Mute media volume</string>
+    <string name="oneplus_member_tag_new">NEW</string>
     <string name="oneplus_memc_close">Off</string>
     <string name="oneplus_memc_game">Game motion compensation</string>
     <string name="oneplus_memc_game_summary">Turn on the game motion compensation requires switching resolution to FHD+</string>
@@ -4166,6 +4169,7 @@ Note:
     <string name="oneplus_silent_mode_on">Silent mode is on</string>
     <string name="oneplus_silent_mode_soc_tri_state_summary">Calls and notifications will be silenced, except for alarms</string>
     <string name="oneplus_silent_mode_summary">Calls and notifications will be silenced, except for alarms</string>
+    <string name="oneplus_silent_notifications_status_bar">Hide silent notifications in status bar</string>
     <string name="oneplus_sim1_ringtone_switch">SIM card 1</string>
     <string name="oneplus_sim2_ringtone_switch">SIM card 2</string>
     <string name="oneplus_simcard_title">SIM</string>
@@ -4312,7 +4316,7 @@ Note: Face Unlock may be less secure than fingerprint, PIN or other screen lock 
     <string name="oneplus_vibration_settings_soc_tri_state">Vibration</string>
     <string name="oneplus_vibration_settings_soc_tri_state_summary">Calls and notifications will be silenced and set to vibrate only, except for alarms</string>
     <string name="oneplus_vibration_summary">The alarm will always ring</string>
-    <string name="oneplus_video_enhancer">Video enhancer</string>
+    <string name="oneplus_video_enhancer">Vibrant color effect</string>
     <string name="oneplus_video_enhancer_footer">Enhance the color while playing videos</string>
     <string name="oneplus_video_enhancer_summary">Enhance the color while playing videos</string>
     <string name="oneplus_voice_assistant">Voice assistant</string>
@@ -4437,8 +4441,20 @@ OnePlus does not collect your personal data during use, we only need to call you
     <string name="op_battery_info_voltage_units">mV</string>
     <string name="op_buttons_settings">@string/buttons_settings</string>
     <string name="op_character_counter_pattern">%1$d / %2$d</string>
+    <string name="op_charging_Station_mute_notifications">Mute Notifications</string>
+    <string name="op_charging_footer_text">"You'll be notified about any charging stations nearby when you visit partner locations like airports or OnePlus events like Pop-ups."</string>
     <string name="op_charging_optimization">Optimized charging</string>
     <string name="op_charging_optimization_summary">Optimize the charging pattern according to your usage habits</string>
+    <string name="op_charging_station">Nearby Charging Stations</string>
+    <string name="op_charging_station_no_station">No charging stations nearby</string>
+    <string name="op_charging_station_summary">Notify when there is a charging station nearby</string>
+    <string name="op_charging_stations">Charging stations</string>
+    <string name="op_charging_stations_off_description">To find the charging stations, location permission is required to detect BLE beacons. Please provide access to location to start using this feature.</string>
+    <string name="op_charging_stations_off_header">To find the charging stations,location permission is required to detect BLE beacons. Please provide access to location to start using this feature.</string>
+    <string name="op_charing_station_mute_notifications_description">Notification will be muted for 6 hours.</string>
+    <string name="op_charing_stations_mute_dynamic_time" formatted="false">Notification muted for %1d hours %2d minutes</string>
+    <string name="op_china_member_description">Use cloud service, wallet and other services</string>
+    <string name="op_china_member_title">Log in Account</string>
     <string name="op_china_mobile">CMCC</string>
     <string name="op_china_telecom">CTCC</string>
     <string name="op_china_unicom">CUCC</string>
@@ -4455,16 +4471,20 @@ OnePlus does not collect your personal data during use, we only need to call you
     <string name="op_default_luncher_title">Home app</string>
     <string name="op_dnd_summary">Do Not Disturb</string>
     <string name="op_do_not_disturb">@string/notification_volume_title</string>
+    <string name="op_enable_location_services">To find and track charging stations nearby, please enable the location services</string>
+    <string name="op_enable_text">Enable</string>
     <string name="op_face_unlock_set_unlock_password">Face unlock + Password</string>
     <string name="op_face_unlock_set_unlock_pattern">Face unlock + Pattern</string>
     <string name="op_face_unlock_set_unlock_pin">Face unlock + PIN</string>
     <string name="op_face_unlock_skip_face">Continue without face unlock</string>
     <string name="op_failed_to_get_data">Failed to retrieve data</string>
     <string name="op_fetch_data_in_process">Loading</string>
+    <string name="op_find_charging_stations">Find Stations</string>
     <string name="op_first_time_add_fingerprint_tips">You need to set a password to unlock when the fingerprint is not available</string>
     <string name="op_fragment">Short</string>
     <string name="op_gamespace">Game Space</string>
     <string name="op_high_power_app_manager">High power usage apps</string>
+    <string name="op_keep_location_services">To find and track charging stations nearby, keep the location services enabled</string>
     <string name="op_light_mode_title">Light</string>
     <string name="op_linked_launch_summary">Manage apps can be linked launch in the background</string>
     <string name="op_linked_launch_title">Apps auto-launch</string>
@@ -6012,6 +6032,7 @@ A Google approach to syncing data to allow access to your contacts, appointments
     <string name="uicc_lock_summary">Your device is locked by Sprint SIMs only</string>
     <string name="uicc_unlock">UICC Unlock</string>
     <string name="uicc_unlock_summary">Your device is unlocked</string>
+    <string name="under_meters">Under %1d meters</string>
     <string name="uninstall_activity_text">%1$s is part of the following app:</string>
     <string name="uninstall_all_blocked_profile_owner">This app is required for some users or profiles and was uninstalled for others</string>
     <string name="uninstall_all_users_text">Uninstall for all users</string>
@@ -7194,73 +7215,73 @@ Update settings to:
     <item type="string" name="APKTOOL_DUMMY_7b1">false</item>
     <item type="string" name="APKTOOL_DUMMY_7b2">false</item>
     <item type="string" name="APKTOOL_DUMMY_7b3">false</item>
-    <item type="string" name="APKTOOL_DUMMY_b53">false</item>
-    <item type="string" name="APKTOOL_DUMMY_be8">false</item>
-    <item type="string" name="APKTOOL_DUMMY_be9">false</item>
+    <item type="string" name="APKTOOL_DUMMY_b55">false</item>
     <item type="string" name="APKTOOL_DUMMY_bea">false</item>
-    <item type="string" name="APKTOOL_DUMMY_bf5">false</item>
-    <item type="string" name="APKTOOL_DUMMY_bf6">false</item>
+    <item type="string" name="APKTOOL_DUMMY_beb">false</item>
+    <item type="string" name="APKTOOL_DUMMY_bec">false</item>
     <item type="string" name="APKTOOL_DUMMY_bf7">false</item>
     <item type="string" name="APKTOOL_DUMMY_bf8">false</item>
-    <item type="string" name="APKTOOL_DUMMY_c26">false</item>
-    <item type="string" name="APKTOOL_DUMMY_c27">false</item>
-    <item type="string" name="APKTOOL_DUMMY_c49">false</item>
-    <item type="string" name="APKTOOL_DUMMY_c4a">false</item>
-    <item type="string" name="APKTOOL_DUMMY_cb2">false</item>
+    <item type="string" name="APKTOOL_DUMMY_bf9">false</item>
+    <item type="string" name="APKTOOL_DUMMY_bfa">false</item>
+    <item type="string" name="APKTOOL_DUMMY_c28">false</item>
+    <item type="string" name="APKTOOL_DUMMY_c29">false</item>
+    <item type="string" name="APKTOOL_DUMMY_c4b">false</item>
+    <item type="string" name="APKTOOL_DUMMY_c4c">false</item>
     <item type="string" name="APKTOOL_DUMMY_cb4">false</item>
-    <item type="string" name="APKTOOL_DUMMY_cc1">false</item>
-    <item type="string" name="APKTOOL_DUMMY_cea">false</item>
-    <item type="string" name="APKTOOL_DUMMY_ceb">false</item>
+    <item type="string" name="APKTOOL_DUMMY_cb6">false</item>
+    <item type="string" name="APKTOOL_DUMMY_cc3">false</item>
     <item type="string" name="APKTOOL_DUMMY_cec">false</item>
     <item type="string" name="APKTOOL_DUMMY_ced">false</item>
-    <item type="string" name="APKTOOL_DUMMY_db1">false</item>
-    <item type="string" name="APKTOOL_DUMMY_dc6">false</item>
-    <item type="string" name="APKTOOL_DUMMY_dc7">false</item>
-    <item type="string" name="APKTOOL_DUMMY_dcc">false</item>
-    <item type="string" name="APKTOOL_DUMMY_de0">false</item>
-    <item type="string" name="APKTOOL_DUMMY_df5">false</item>
+    <item type="string" name="APKTOOL_DUMMY_cee">false</item>
+    <item type="string" name="APKTOOL_DUMMY_cef">false</item>
+    <item type="string" name="APKTOOL_DUMMY_db3">false</item>
+    <item type="string" name="APKTOOL_DUMMY_dc8">false</item>
+    <item type="string" name="APKTOOL_DUMMY_dc9">false</item>
+    <item type="string" name="APKTOOL_DUMMY_dce">false</item>
+    <item type="string" name="APKTOOL_DUMMY_de2">false</item>
     <item type="string" name="APKTOOL_DUMMY_df7">false</item>
     <item type="string" name="APKTOOL_DUMMY_df9">false</item>
-    <item type="string" name="APKTOOL_DUMMY_e05">false</item>
-    <item type="string" name="APKTOOL_DUMMY_e3a">false</item>
-    <item type="string" name="APKTOOL_DUMMY_e3b">false</item>
-    <item type="string" name="APKTOOL_DUMMY_e62">false</item>
-    <item type="string" name="APKTOOL_DUMMY_e8b">false</item>
-    <item type="string" name="APKTOOL_DUMMY_e8c">false</item>
-    <item type="string" name="APKTOOL_DUMMY_f51">false</item>
-    <item type="string" name="APKTOOL_DUMMY_f56">false</item>
-    <item type="string" name="APKTOOL_DUMMY_fb4">false</item>
-    <item type="string" name="APKTOOL_DUMMY_fb5">false</item>
-    <item type="string" name="APKTOOL_DUMMY_fe0">false</item>
-    <item type="string" name="APKTOOL_DUMMY_1024">false</item>
-    <item type="string" name="APKTOOL_DUMMY_1025">false</item>
-    <item type="string" name="APKTOOL_DUMMY_1042">false</item>
-    <item type="string" name="APKTOOL_DUMMY_1043">false</item>
-    <item type="string" name="APKTOOL_DUMMY_1055">false</item>
-    <item type="string" name="APKTOOL_DUMMY_1060">false</item>
-    <item type="string" name="APKTOOL_DUMMY_1062">false</item>
+    <item type="string" name="APKTOOL_DUMMY_dfb">false</item>
+    <item type="string" name="APKTOOL_DUMMY_e07">false</item>
+    <item type="string" name="APKTOOL_DUMMY_e3d">false</item>
+    <item type="string" name="APKTOOL_DUMMY_e3e">false</item>
+    <item type="string" name="APKTOOL_DUMMY_e65">false</item>
+    <item type="string" name="APKTOOL_DUMMY_e8e">false</item>
+    <item type="string" name="APKTOOL_DUMMY_e8f">false</item>
+    <item type="string" name="APKTOOL_DUMMY_f54">false</item>
+    <item type="string" name="APKTOOL_DUMMY_f59">false</item>
+    <item type="string" name="APKTOOL_DUMMY_fb7">false</item>
+    <item type="string" name="APKTOOL_DUMMY_fb8">false</item>
+    <item type="string" name="APKTOOL_DUMMY_fe4">false</item>
+    <item type="string" name="APKTOOL_DUMMY_1028">false</item>
+    <item type="string" name="APKTOOL_DUMMY_1029">false</item>
+    <item type="string" name="APKTOOL_DUMMY_1046">false</item>
+    <item type="string" name="APKTOOL_DUMMY_1047">false</item>
+    <item type="string" name="APKTOOL_DUMMY_1059">false</item>
     <item type="string" name="APKTOOL_DUMMY_1064">false</item>
-    <item type="string" name="APKTOOL_DUMMY_1065">false</item>
-    <item type="string" name="APKTOOL_DUMMY_10d4">false</item>
-    <item type="string" name="APKTOOL_DUMMY_10d5">false</item>
-    <item type="string" name="APKTOOL_DUMMY_10d6">false</item>
-    <item type="string" name="APKTOOL_DUMMY_10d7">false</item>
+    <item type="string" name="APKTOOL_DUMMY_1066">false</item>
+    <item type="string" name="APKTOOL_DUMMY_1068">false</item>
+    <item type="string" name="APKTOOL_DUMMY_1069">false</item>
     <item type="string" name="APKTOOL_DUMMY_10d8">false</item>
-    <item type="string" name="APKTOOL_DUMMY_10ea">false</item>
-    <item type="string" name="APKTOOL_DUMMY_10eb">false</item>
-    <item type="string" name="APKTOOL_DUMMY_10ec">false</item>
-    <item type="string" name="APKTOOL_DUMMY_10ed">false</item>
-    <item type="string" name="APKTOOL_DUMMY_10ee">false</item>
-    <item type="string" name="APKTOOL_DUMMY_10ef">false</item>
-    <item type="string" name="APKTOOL_DUMMY_10f0">false</item>
-    <item type="string" name="APKTOOL_DUMMY_10f1">false</item>
-    <item type="string" name="APKTOOL_DUMMY_10f2">false</item>
-    <item type="string" name="APKTOOL_DUMMY_10f3">false</item>
-    <item type="string" name="APKTOOL_DUMMY_10f4">false</item>
-    <item type="string" name="APKTOOL_DUMMY_114f">false</item>
-    <item type="string" name="APKTOOL_DUMMY_1301">false</item>
-    <item type="string" name="APKTOOL_DUMMY_1303">false</item>
-    <item type="string" name="APKTOOL_DUMMY_1304">false</item>
-    <item type="string" name="APKTOOL_DUMMY_1305">false</item>
-    <item type="string" name="APKTOOL_DUMMY_16a5">false</item>
+    <item type="string" name="APKTOOL_DUMMY_10d9">false</item>
+    <item type="string" name="APKTOOL_DUMMY_10da">false</item>
+    <item type="string" name="APKTOOL_DUMMY_10db">false</item>
+    <item type="string" name="APKTOOL_DUMMY_10dc">false</item>
+    <item type="string" name="APKTOOL_DUMMY_10fa">false</item>
+    <item type="string" name="APKTOOL_DUMMY_10fb">false</item>
+    <item type="string" name="APKTOOL_DUMMY_10fc">false</item>
+    <item type="string" name="APKTOOL_DUMMY_10fd">false</item>
+    <item type="string" name="APKTOOL_DUMMY_10fe">false</item>
+    <item type="string" name="APKTOOL_DUMMY_10ff">false</item>
+    <item type="string" name="APKTOOL_DUMMY_1100">false</item>
+    <item type="string" name="APKTOOL_DUMMY_1101">false</item>
+    <item type="string" name="APKTOOL_DUMMY_1102">false</item>
+    <item type="string" name="APKTOOL_DUMMY_1103">false</item>
+    <item type="string" name="APKTOOL_DUMMY_1104">false</item>
+    <item type="string" name="APKTOOL_DUMMY_1163">false</item>
+    <item type="string" name="APKTOOL_DUMMY_1315">false</item>
+    <item type="string" name="APKTOOL_DUMMY_1317">false</item>
+    <item type="string" name="APKTOOL_DUMMY_1318">false</item>
+    <item type="string" name="APKTOOL_DUMMY_1319">false</item>
+    <item type="string" name="APKTOOL_DUMMY_16ba">false</item>
 </resources>

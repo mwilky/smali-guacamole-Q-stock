@@ -104,7 +104,7 @@
 
     iput-object v0, p0, Lcom/android/settings/SetFullBackupPassword;->mBackupManager:Landroid/app/backup/IBackupManager;
 
-    const v0, 0x7f0d02b6
+    const v0, 0x7f0d02ba
 
     invoke-virtual {p0, v0}, Lcom/android/settings/SetFullBackupPassword;->setContentView(I)V
 
@@ -118,7 +118,7 @@
 
     iput-object v0, p0, Lcom/android/settings/SetFullBackupPassword;->mCurrentPw:Landroid/widget/TextView;
 
-    const v0, 0x7f0a0434
+    const v0, 0x7f0a0433
 
     invoke-virtual {p0, v0}, Lcom/android/settings/SetFullBackupPassword;->findViewById(I)Landroid/view/View;
 

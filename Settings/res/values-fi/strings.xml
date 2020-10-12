@@ -1638,7 +1638,7 @@ Jos tämä tapahtuu toistuvasti, akun optimointi voi edellyttää sovelluksen po
     <string name="doze_always_on_summary">Näytä aika, ilmoituskuvakkeet ja muut tiedot. Tämä asetus kuluttaa akkua nopeammin.</string>
     <string name="doze_always_on_title">Aina käytössä</string>
     <string name="doze_summary">Näytön sisältö, kun saat ilmoituksia.</string>
-    <string name="doze_title">Ympäristönäyttö</string>
+    <string name="doze_title">Tyyni näyttö</string>
     <string name="draw_overlay">Näkyminen muiden päällä</string>
     <string name="dsds_dialog_cancel">Peruuta</string>
     <string name="dsds_dialog_confirm">Käynnistä uudelleen</string>
@@ -2313,6 +2313,7 @@ Voit muuttaa tätä asetusta myöhemmin kohdassa Asetukset > Sovellukset ja ilmo
     <string name="location_settings_title">Sijainti</string>
     <string name="location_sources_heading">Sijainnin lähteet</string>
     <string name="location_street_level">Anna sovellusten määrittää sijaintisi puhelimen GPS:n avulla</string>
+    <string name="location_text">Sijainti</string>
     <string name="location_title">Oma sijainti</string>
     <string name="lock_after_timeout">Lukitse automaattisesti</string>
     <string name="lock_after_timeout_summary">%1$s virransäästötilan jälkeen</string>
@@ -2710,6 +2711,7 @@ Vanhaa palvelua (%2$s) ei peruuteta, jos %1$s otetaan käyttöön."</string>
     <string name="my_device_info_account_preference_title">Tili</string>
     <string name="my_device_info_device_name_preference_title">Laitteen nimi</string>
     <string name="n_cacrts">%d CA-varmennetta</string>
+    <string name="nearest_station">Lähin asema</string>
     <string name="network_4G">4G (suositus)</string>
     <string name="network_connected">Yhdistetty</string>
     <string name="network_connecting">Yhdistetään…</string>
@@ -2982,7 +2984,7 @@ Tämä myöntää sovellukselle lisäksi oikeuden ottaa Älä häiritse ‑tilan
     <string name="oneplus_app_locker_summary">Valitse salattavat sovellukset</string>
     <string name="oneplus_app_locker_switch">Piilota ilmoitussisältö</string>
     <string name="oneplus_app_locker_switch_summary">Ilmoitusten sisältö piilotetaan sovelluksista, joissa sovelluslukitus on käytössä</string>
-    <string name="oneplus_app_locker_title">App locker</string>
+    <string name="oneplus_app_locker_title">Sovelluksen lukitsin</string>
     <string name="oneplus_app_network_settings">Datakäytön hallinta</string>
     <string name="oneplus_app_notification_allow_led">LED päällä</string>
     <string name="oneplus_app_notification_not_allow_led">LED pois päältä</string>
@@ -3134,7 +3136,7 @@ Akunsäästäjä poistuu automaattisesti käytössä, kun laitetta ladataan."</s
     <string name="oneplus_double_tap_power_none">Ei mitään</string>
     <string name="oneplus_doze_summary_801">Näytä kello ja muut tiedot valmiusnäytössä</string>
     <string name="oneplus_doze_summary_new">Näytä kellonaika, päivämäärä ja ilmoitukset näytössä</string>
-    <string name="oneplus_doze_title">Ympäristönäyttö</string>
+    <string name="oneplus_doze_title">Tyyni näyttö</string>
     <string name="oneplus_doze_title_801">Ympäristönäyttö</string>
     <string name="oneplus_draw_gesture_start_none">Ei mitään</string>
     <string name="oneplus_draw_m_start_app">Piirrä M</string>
@@ -3332,7 +3334,7 @@ Voit siirtyä aloitusnäyttöön milloin vain pyyhkäisemällä näytön alareun
     <string name="oneplus_h2_contributors">HydrogenOS:n tukijat</string>
     <string name="oneplus_hand_up_proximity_summary">Herätä näyttö, kun puhelin nostetaan</string>
     <string name="oneplus_hand_up_proximity_title">Nosta näyttö</string>
-    <string name="oneplus_hand_up_to_show">Ota puhelin näyttääksesi</string>
+    <string name="oneplus_hand_up_to_show">Näytä nostamalla puhelin</string>
     <string name="oneplus_haptic_feedback_no_app">Tuettuja pelejä ei ole asennettu</string>
     <string name="oneplus_haptic_feedback_no_app_tip">Voit asentaa PUBG Mobilen ja Asphalt 9:n</string>
     <string name="oneplus_haptic_feedback_summary">Tarjoaa parempaa haptista palautetta tuetuissa peleissä</string>
@@ -3541,7 +3543,7 @@ Huomautus: Sormenjälki saattaa olla vähemmän turvallinen kuin vahva kuvio tai
     <string name="oneplus_preference_settings_manual_open">Tila</string>
     <string name="oneplus_preference_settings_turn_off_time">Saakka</string>
     <string name="oneplus_preference_settings_turn_on">Kytke Ei saa häiritä -tila päälle</string>
-    <string name="oneplus_preference_settings_turn_on_time">Mistä</string>
+    <string name="oneplus_preference_settings_turn_on_time">Alkaen</string>
     <string name="oneplus_prior_to_use_you_need_to">Ennen käyttöä sinun täytyy:</string>
     <string name="oneplus_privacy_policy">Yksityisyyden suoja</string>
     <string name="oneplus_privacy_protection_title">Salattu tila</string>
@@ -3750,6 +3752,7 @@ Huomautus:
     <string name="oneplus_silent_mode_on">Äänetön tila on käytössä</string>
     <string name="oneplus_silent_mode_soc_tri_state_summary">Puhelut ja ilmoitukset mykistyvät lukuun ottamatta hälytyksiä</string>
     <string name="oneplus_silent_mode_summary">Puhelut ja ilmoitukset mykistyvät lukuun ottamatta hälytyksiä</string>
+    <string name="oneplus_silent_notifications_status_bar">Piilota hiljainen ilmoitus tilariviltä</string>
     <string name="oneplus_sim1_ringtone_switch">SIM-kortti 1</string>
     <string name="oneplus_sim2_ringtone_switch">SIM-kortti 2</string>
     <string name="oneplus_simcard_title">SIM</string>
@@ -3840,7 +3843,7 @@ Huomautus:
     <string name="oneplus_tools_summary_U30">Pelitila, taskutila, ajastettu käynnistys/sammutus</string>
     <string name="oneplus_tools_summary_no_gamingmode">Sovelluslukitus, rinnakkaissovellukset</string>
     <string name="oneplus_tools_title">Apuohjelmat</string>
-    <string name="oneplus_top_level_accounts_summary">OnePlus account, other accounts</string>
+    <string name="oneplus_top_level_accounts_summary">OnePlus-tili, muut tilit</string>
     <string name="oneplus_top_level_apps_and_notifs_summary">Oletussovellukset, käyttöoikeudet</string>
     <string name="oneplus_top_level_buttons_and_gestures_summary">Alert Slider, navigointipalkki ja eleet</string>
     <string name="oneplus_top_level_cloud_h2_summary">Synkronoi data pilvipalvelun kanssa, paikanna puhelin</string>
@@ -3858,7 +3861,7 @@ Huomautus:
     <string name="oneplus_turn_off_time">Saakka</string>
     <string name="oneplus_turn_on_feature_cancel">PERUUTA</string>
     <string name="oneplus_turn_on_feature_ok">OTA KÄYTTÖÖN</string>
-    <string name="oneplus_turn_on_time">Mistä</string>
+    <string name="oneplus_turn_on_time">Alkaen</string>
     <string name="oneplus_uninstatll_multi_app_msg">Kaikki rinnakkaisen sovelluksen tiedot pyyhitään asennuksen poistamisen yhteydessä. Haluatko varmasti poistaa asennuksen?</string>
     <string name="oneplus_uninstatll_multi_app_title">Rinnakkainen %1$s</string>
     <string name="oneplus_uninstatll_multi_main_app_msg">Kaikki tämän sovelluksen ja siihen liitetyn rinnakkaisen sovelluksen tiedot pyyhitään asennuksen poistamisen yhteydessä. Haluatko varmasti poistaa asennuksen?</string>
@@ -3930,8 +3933,18 @@ Verkon asettaminen piilotetuksi ei muuta reitittimen asetuksia."</string>
     <string name="op_audio_settings">Ääniviritin</string>
     <string name="op_auto_power_saving">Automaattinen virransäästö</string>
     <string name="op_auto_power_saving_summary">Vaihda automaattisesti asianmukaiseen tarkkuuteen akkua kuluttamatta</string>
+    <string name="op_charging_Station_mute_notifications">Mykistä ilmoitukset</string>
+    <string name="op_charging_footer_text">Saat ilmoituksen lähellä olevista latausasemista kumppaneilta lentoasemilla tai OnePlus-tapahtumissa (esim. Pop-up).</string>
     <string name="op_charging_optimization">Optimoitu lataus</string>
     <string name="op_charging_optimization_summary">Optimoi latausmalli käyttötottumustesi mukaan</string>
+    <string name="op_charging_station">Lähistöllä olevat latausasemat</string>
+    <string name="op_charging_station_no_station">Lähistöllä ei ole latausasemia</string>
+    <string name="op_charging_station_summary">Näytä ilmoitus, kun lähistöllä havaitaan latausasema</string>
+    <string name="op_charging_stations">Latausasemat</string>
+    <string name="op_charging_stations_off_description">Latausasemien etsiminen edellyttää sijainnin sallimista BLE-majakoiden havaitsemiseksi. Aloita toiminnon käyttö sallimalla sijainti.</string>
+    <string name="op_charging_stations_off_header">Latausasemien etsiminen edellyttää sijainnin sallimista BLE-majakoiden havaitsemiseksi. Aloita toiminnon käyttö sallimalla sijainti.</string>
+    <string name="op_charing_station_mute_notifications_description">Ilmoitus estetään 6 tunnin ajaksi.</string>
+    <string name="op_charing_stations_mute_dynamic_time" formatted="false">Ilmoitus estetään %1d tunnin %2d minuutin ajaksi</string>
     <string name="op_china_mobile">CMCC</string>
     <string name="op_china_telecom">CTCC</string>
     <string name="op_china_unicom">CUCC</string>
@@ -3947,15 +3960,19 @@ Verkon asettaminen piilotetuksi ei muuta reitittimen asetuksia."</string>
     <string name="op_default_apps_summary">Koti, selain</string>
     <string name="op_default_luncher_title">Kotisovellus</string>
     <string name="op_dnd_summary">Ei saa häiritä</string>
+    <string name="op_enable_location_services">Ota sijaintiasetus käyttöön, kun haluat etsiä lähellä olevia latausasemia ja pitää niistä kirjaa</string>
+    <string name="op_enable_text">Ota käyttöön</string>
     <string name="op_face_unlock_set_unlock_password">Kasvo-avaus + salasana</string>
     <string name="op_face_unlock_set_unlock_pattern">Kasvo-avaus + kuvio</string>
     <string name="op_face_unlock_set_unlock_pin">Kasvo-avaus + PIN</string>
     <string name="op_face_unlock_skip_face">Jatka ilman kasvo-avausta</string>
     <string name="op_failed_to_get_data">Tietojen haku epäonnistui</string>
     <string name="op_fetch_data_in_process">Ladataan</string>
+    <string name="op_find_charging_stations">Etsi latausasemia</string>
     <string name="op_fragment">Lyhyt</string>
     <string name="op_gamespace">Pelitila</string>
     <string name="op_high_power_app_manager">Akkua kuluttavien sovellusten hallinta</string>
+    <string name="op_keep_location_services">Etsi lähellä olevia latausasemia ja pidä niistä kirjaa ottamalla sijaintiasetus käyttöön</string>
     <string name="op_light_mode_title">Valoisa</string>
     <string name="op_linked_launch_summary">Sovellusten hallinnan voi käynnistää taustalla</string>
     <string name="op_linked_launch_title">Sovellusten automaattinen käynnistys</string>
@@ -5262,7 +5279,7 @@ Se on Googlen tapa synkronoida tietoja, ja sen avulla voit käyttää yhteystiet
     <string name="tether_error_item_default">Internet-yhteyden jakaminen</string>
     <string name="tether_error_message">Et ole tilannut palvelua %1$s.</string>
     <string name="tether_error_title">%1$s-virhe</string>
-    <string name="tether_no_sim_message">Asenna SIM-kortti käyttääksesi mobiili-hotspotia ja muita Internet-yhteyden jakamisvaihtoehtoja</string>
+    <string name="tether_no_sim_message">Asenna SIM-kortti käyttääksesi mobiilihotspotia ja muita Internet-yhteyden jakamisvaihtoehtoja</string>
     <string name="tether_no_sim_title">Ei SIM-korttia</string>
     <string name="tether_settings_disabled_on_data_saver">Kun Data Saver on käytössä, puhelinta ei voi käyttää modeemina eikä kannettavien hotspotien käyttäminen onnistu.</string>
     <string name="tether_settings_summary_hotspot_off_tether_on">Jaettu yhteys</string>
@@ -5384,6 +5401,7 @@ Se on Googlen tapa synkronoida tietoja, ja sen avulla voit käyttää yhteystiet
     <string name="uicc_lock_summary">Laitteesi on lukittu vain Sprintin SIM-korteille</string>
     <string name="uicc_unlock">UICC lukituksen avaus</string>
     <string name="uicc_unlock_summary">Laitteesi lukitus on avattu</string>
+    <string name="under_meters">Alle %1d metriä</string>
     <string name="uninstall_activity_text">%1$s on osa seuraavaa sovellusta:</string>
     <string name="uninstall_all_blocked_profile_owner">Tätä sovellusta tarvitaan joillekin käyttäjille tai profiileille, ja se poistettiin toisilta</string>
     <string name="uninstall_all_users_text">Poista kaikilta käyttäjiltä</string>

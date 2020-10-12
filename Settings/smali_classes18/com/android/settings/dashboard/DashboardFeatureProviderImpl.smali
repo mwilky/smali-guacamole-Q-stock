@@ -93,7 +93,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f1215ca
+    const v2, 0x7f1215de
 
     if-eqz v1, :cond_1
 
@@ -369,7 +369,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f1215f4
+    const v2, 0x7f121608
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -379,7 +379,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f12139e
+    const v1, 0x7f1213b2
 
     const/4 v2, 0x1
 
@@ -481,7 +481,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0804e1
+    const v3, 0x7f080515
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -504,7 +504,7 @@
 
     iget-object v2, p0, Lcom/android/settings/dashboard/DashboardFeatureProviderImpl;->mContext:Landroid/content/Context;
 
-    const v3, 0x7f0804ed
+    const v3, 0x7f080522
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -535,7 +535,7 @@
 
     iget-object v2, p0, Lcom/android/settings/dashboard/DashboardFeatureProviderImpl;->mContext:Landroid/content/Context;
 
-    const v3, 0x7f08046e
+    const v3, 0x7f0804a1
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -558,7 +558,7 @@
 
     iget-object v2, p0, Lcom/android/settings/dashboard/DashboardFeatureProviderImpl;->mContext:Landroid/content/Context;
 
-    const v3, 0x7f08058b
+    const v3, 0x7f0805bf
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -581,7 +581,7 @@
 
     iget-object v2, p0, Lcom/android/settings/dashboard/DashboardFeatureProviderImpl;->mContext:Landroid/content/Context;
 
-    const v3, 0x7f080588
+    const v3, 0x7f0805bc
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -604,7 +604,7 @@
 
     iget-object v2, p0, Lcom/android/settings/dashboard/DashboardFeatureProviderImpl;->mContext:Landroid/content/Context;
 
-    const v3, 0x7f08058a
+    const v3, 0x7f0805be
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -627,7 +627,7 @@
 
     iget-object v2, p0, Lcom/android/settings/dashboard/DashboardFeatureProviderImpl;->mContext:Landroid/content/Context;
 
-    const v3, 0x7f08043a
+    const v3, 0x7f08046d
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 

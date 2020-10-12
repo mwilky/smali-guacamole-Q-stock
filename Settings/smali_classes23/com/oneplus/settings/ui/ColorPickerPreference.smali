@@ -94,7 +94,7 @@
 
     iput-boolean v0, p0, Lcom/oneplus/settings/ui/ColorPickerPreference;->mVisibility:Z
 
-    const v1, 0x7f0d017e
+    const v1, 0x7f0d0182
 
     invoke-virtual {p0, v1}, Lcom/oneplus/settings/ui/ColorPickerPreference;->setLayoutResource(I)V
 
@@ -192,7 +192,7 @@
 
     invoke-virtual {p0, v2}, Lcom/oneplus/settings/ui/ColorPickerPreference;->setPositiveButtonText(I)V
 
-    const v2, 0x7f0d01e7
+    const v2, 0x7f0d01eb
 
     invoke-virtual {p0, v2}, Lcom/oneplus/settings/ui/ColorPickerPreference;->setDialogLayoutResource(I)V
 
@@ -481,7 +481,7 @@
 
     move-result-object v1
 
-    const v3, 0x7f120c81
+    const v3, 0x7f120c83
 
     invoke-virtual {v1, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -526,7 +526,7 @@
 
     move-result-object v1
 
-    const v3, 0x7f121141
+    const v3, 0x7f121155
 
     invoke-virtual {v1, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -571,7 +571,7 @@
 
     move-result-object v1
 
-    const v3, 0x7f12114a
+    const v3, 0x7f12115e
 
     invoke-virtual {v1, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -616,7 +616,7 @@
 
     move-result-object v1
 
-    const v3, 0x7f12114c
+    const v3, 0x7f121160
 
     invoke-virtual {v1, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -637,7 +637,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f12111c
+    const v2, 0x7f121130
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -923,7 +923,7 @@
 
     aget-object v4, v4, v2
 
-    const v5, 0x7f080472
+    const v5, 0x7f0804a5
 
     invoke-virtual {v4, v5}, Landroid/view/View;->setBackgroundResource(I)V
 
@@ -979,7 +979,7 @@
     goto/16 :goto_0
 
     :cond_6
-    const v2, 0x7f0a03d4
+    const v2, 0x7f0a03d3
 
     invoke-virtual {p1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1037,7 +1037,7 @@
 
     nop
 
-    const v1, 0x7f0a05f0
+    const v1, 0x7f0a05fd
 
     invoke-virtual {p1, v1}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 

@@ -747,7 +747,7 @@
 .method private initPreference()V
     .locals 3
 
-    const v0, 0x7f1600ab
+    const v0, 0x7f1600ac
 
     invoke-virtual {p0, v0}, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchSettings;->addPreferencesFromResource(I)V
 
@@ -844,14 +844,14 @@
 
     :array_0
     .array-data 4
-        0x7f120edf
-        0x7f120edd
+        0x7f120ee2
+        0x7f120ee0
     .end array-data
 
     :array_1
     .array-data 4
-        0x7f120ede
-        0x7f120edc
+        0x7f120ee1
+        0x7f120edf
     .end array-data
 .end method
 

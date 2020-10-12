@@ -108,15 +108,15 @@
 .method private initialize()V
     .locals 1
 
-    const v0, 0x7f0d01fe
+    const v0, 0x7f0d0202
 
     invoke-virtual {p0, v0}, Lcom/android/settings/wifi/tether/WifiTetherSsidPreference;->setLayoutResource(I)V
 
-    const v0, 0x7f0d034e
+    const v0, 0x7f0d0352
 
     invoke-virtual {p0, v0}, Lcom/android/settings/wifi/tether/WifiTetherSsidPreference;->setWidgetLayoutResource(I)V
 
-    const v0, 0x7f080325
+    const v0, 0x7f080358
 
     invoke-direct {p0, v0}, Lcom/android/settings/wifi/tether/WifiTetherSsidPreference;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -166,7 +166,7 @@
 
     check-cast v0, Landroid/widget/ImageButton;
 
-    const v1, 0x7f0a072f
+    const v1, 0x7f0a073c
 
     invoke-virtual {p1, v1}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 
@@ -190,7 +190,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f1218da
+    const v4, 0x7f1218ef    # 1.9419675E38f
 
     invoke-virtual {v3, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

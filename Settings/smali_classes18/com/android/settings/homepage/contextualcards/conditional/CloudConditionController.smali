@@ -366,7 +366,7 @@
 
     iget-object v1, p0, Lcom/android/settings/homepage/contextualcards/conditional/CloudConditionController;->mAppContext:Landroid/content/Context;
 
-    const v2, 0x7f080340
+    const v2, 0x7f080373
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 

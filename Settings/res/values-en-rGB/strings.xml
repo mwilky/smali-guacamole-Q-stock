@@ -336,7 +336,7 @@ Just bring the devices together (typically back to back) and then tap your scree
     <string name="aod_clock_minimalism">Minimalism 1</string>
     <string name="aod_clock_minimalism_1">Minimalism 2</string>
     <string name="aod_clock_none">None</string>
-    <string name="aod_clock_select_style_text">Select the clock style</string>
+    <string name="aod_clock_select_style_text">Select clock style</string>
     <string name="aod_clock_text_clock">Text clock</string>
     <string name="aod_horizon_light_effect_1">Blue</string>
     <string name="aod_horizon_light_effect_2">Red</string>
@@ -2313,6 +2313,7 @@ You can change this later from Settings > Apps &amp; notifications."</string>
     <string name="location_settings_title">Location</string>
     <string name="location_sources_heading">Location sources</string>
     <string name="location_street_level">Let apps use GPS on your phone to pinpoint your location</string>
+    <string name="location_text">Location</string>
     <string name="location_title">My Location</string>
     <string name="lock_after_timeout">Automatically lock</string>
     <string name="lock_after_timeout_summary">%1$s after sleep</string>
@@ -2710,6 +2711,7 @@ Switching to %1$s won't cancel your %2$s service."</string>
     <string name="my_device_info_account_preference_title">Account</string>
     <string name="my_device_info_device_name_preference_title">Device name</string>
     <string name="n_cacrts">%d CA certificates</string>
+    <string name="nearest_station">Nearest Station</string>
     <string name="network_4G">4G (recommended)</string>
     <string name="network_connected">Connected</string>
     <string name="network_connecting">Connecting…</string>
@@ -3064,7 +3066,7 @@ Battery saver turns off automatically when your device is charging."</string>
     <string name="oneplus_clean_storage">Clean</string>
     <string name="oneplus_clear_intenal_storage_data_summary">Including music, photos, videos and other personal data</string>
     <string name="oneplus_clear_intenal_storage_data_title">Erase internal storage</string>
-    <string name="oneplus_colorful_mode_cannot_change_color_accent">Colorful tone can only use the system color</string>
+    <string name="oneplus_colorful_mode_cannot_change_color_accent">Coluorful tone can only use the system colour</string>
     <string name="oneplus_colorful_mode_title">Colourful</string>
     <string name="oneplus_compatibility_mode_summary">Fullscreen apps cannot use the notch area</string>
     <string name="oneplus_compatibility_mode_title">Compatibility mode</string>
@@ -3108,7 +3110,7 @@ Battery saver turns off automatically when your device is charging."</string>
     <string name="oneplus_device_name">When using Wi-Fi Direct or Bluetooth, the phone name will be visible.</string>
     <string name="oneplus_device_start_date">Start date</string>
     <string name="oneplus_device_warranty_expried_date">Warranty expiry date</string>
-    <string name="oneplus_disable_aosp_face_lock_message">Enabling OnePlus Face Unlock will disable the trusted face for Smart Lock. Do you want to continue?</string>
+    <string name="oneplus_disable_aosp_face_lock_message">Enabling OnePlus Face Unlock will disable Smart Lock trusted face. Do you want to continue?</string>
     <string name="oneplus_disconnected">Disconnect</string>
     <string name="oneplus_display_dashboard_no_theme_summary">Status bar, ambient display, wallpapers</string>
     <string name="oneplus_display_dashboard_no_theme_summary_801">Status bar, ambient display, night mode, reading mode</string>
@@ -3579,11 +3581,11 @@ Note: Your fingerprint may be less secure than a strong pattern or PIN"</string>
     <string name="oneplus_quickpay_unlock_swtch_summary">Long press Home button to launch quick pay when the phone is unlocked</string>
     <string name="oneplus_quickpay_unlock_swtch_title">Screen on quick pay</string>
     <string name="oneplus_quickpay_way_alipay_qrcode">Alipay QR code</string>
-    <string name="oneplus_quickpay_way_alipay_scanning">Alipay scanning</string>
+    <string name="oneplus_quickpay_way_alipay_scanning">Alipay scan</string>
     <string name="oneplus_quickpay_way_paytm">Paytm</string>
     <string name="oneplus_quickpay_way_wecaht_qrcode">WeChat QR code</string>
     <string name="oneplus_quickpay_way_wecaht_ridecode">WeChat transit QR code</string>
-    <string name="oneplus_quickpay_way_wecaht_scanning">WeChat scanning</string>
+    <string name="oneplus_quickpay_way_wecaht_scanning">WeChat scan</string>
     <string name="oneplus_ramboost_description">By learning how you use your phone, RAM Boost can predict apps you want to launch and data to load, taking full advantage of the RAM capacity to speed up the performance of your daily usage.</string>
     <string name="oneplus_ramboost_switch_summary">Increase RAM utilization according to your usage</string>
     <string name="oneplus_ramboost_switch_title">Enable RAM Boost</string>
@@ -3725,7 +3727,7 @@ Note:
     <string name="oneplus_select_fingerprint_animation_effect_mcl">McLaren</string>
     <string name="oneplus_select_fingerprint_animation_effect_none">None</string>
     <string name="oneplus_select_fingerprint_animation_effect_title">Select fingerprint animation effect</string>
-    <string name="oneplus_service_messaging_summary">Allow OnePlus to deliver prompt cloud messaging services to you to ensure an optimised product experience</string>
+    <string name="oneplus_service_messaging_summary">Allow OnePlus to deliver prompt cloud messaging services to you to ensure optimised product experience</string>
     <string name="oneplus_service_messaging_title">OnePlus Service Messaging</string>
     <string name="oneplus_set_time">Scheduled Night Mode</string>
     <string name="oneplus_setting_ringtone">Set ringtone</string>
@@ -3750,6 +3752,7 @@ Note:
     <string name="oneplus_silent_mode_on">Silent mode is on</string>
     <string name="oneplus_silent_mode_soc_tri_state_summary">Calls and notifications will be silenced, except for alarms</string>
     <string name="oneplus_silent_mode_summary">Calls and notifications will be silenced, except for alarms</string>
+    <string name="oneplus_silent_notifications_status_bar">Hide silent notification in status bar</string>
     <string name="oneplus_sim1_ringtone_switch">SIM card 1</string>
     <string name="oneplus_sim2_ringtone_switch">SIM card 2</string>
     <string name="oneplus_simcard_title">SIM</string>
@@ -3771,7 +3774,7 @@ Note:
     <string name="oneplus_support_summary">Tips and FAQ on device usage</string>
     <string name="oneplus_support_title">Tips &amp; support</string>
     <string name="oneplus_supported_apps">Supported apps</string>
-    <string name="oneplus_suspension_notice">Heads-up</string>
+    <string name="oneplus_suspension_notice">Heads up</string>
     <string name="oneplus_suspension_notice_summary">Allow apps to show heads-up notification</string>
     <string name="oneplus_switch">OnePlus Switch</string>
     <string name="oneplus_switch_resolution_kill_process_confirm">Switch</string>
@@ -3798,7 +3801,7 @@ Note:
     <string name="oneplus_theme_colorpicker_colorvalue">COLOUR CODE</string>
     <string name="oneplus_theme_drop_summary">Discard modifications?</string>
     <string name="oneplus_theme_drop_title">Exit edit mode</string>
-    <string name="oneplus_theme_entrance_summary">Wallpapers, accent color, font, tone</string>
+    <string name="oneplus_theme_entrance_summary">Wallpapers, accent colour, font, tone</string>
     <string name="oneplus_theme_entrance_title">Customisation</string>
     <string name="oneplus_theme_fingerprint">Fingerprint animation</string>
     <string name="oneplus_theme_fingerprint_snake_action">TURN ON FINGERPRINT</string>
@@ -3868,7 +3871,7 @@ Note:
 Note: Face Unlock may be less secure than fingerprint, PIN or other screen lock options."</string>
     <string name="oneplus_use_faceunlock_and_fingerprint_settings_title">Use your face &amp; fingerprint to unlock</string>
     <string name="oneplus_use_fingerprint_to_unlock">Use fingerprint to unlock</string>
-    <string name="oneplus_user_agreement">End User Licence Agreement</string>
+    <string name="oneplus_user_agreement">End User License Agreement</string>
     <string name="oneplus_user_enjoy_plan_title">Join user experience programme</string>
     <string name="oneplus_vibrate">Vibration</string>
     <string name="oneplus_vibrate_dynamic_mode">Dynamic</string>
@@ -3880,8 +3883,8 @@ Note: Face Unlock may be less secure than fingerprint, PIN or other screen lock 
     <string name="oneplus_vibration_settings_soc_tri_state_summary">Calls and notifications will be silenced and set to vibrate only, except for alarms</string>
     <string name="oneplus_vibration_summary">The alarm will always ring</string>
     <string name="oneplus_video_enhancer">Vibrant colour effect</string>
-    <string name="oneplus_video_enhancer_footer">Enhance the colour while playing videos</string>
-    <string name="oneplus_video_enhancer_summary">Enhance the colour while playing videos</string>
+    <string name="oneplus_video_enhancer_footer">Enhance the color while playing videos</string>
+    <string name="oneplus_video_enhancer_summary">Enhance the color while playing videos</string>
     <string name="oneplus_voice_assistant">Voice assistant</string>
     <string name="oneplus_volume_keys_adjust">Use volume buttons to adjust</string>
     <string name="oneplus_volume_keys_adjust_media">Media volume</string>
@@ -3930,8 +3933,18 @@ Setting the network as hidden will not change your router settings."</string>
     <string name="op_audio_settings">Audio Tuner</string>
     <string name="op_auto_power_saving">Auto power saving</string>
     <string name="op_auto_power_saving_summary">Automatically switch to the appropriate resolution without battery drain</string>
+    <string name="op_charging_Station_mute_notifications">Mute Notifications</string>
+    <string name="op_charging_footer_text">"You'll be notified about any charging stations nearby when you visit partner locations like airports or OnePlus events like Pop-ups."</string>
     <string name="op_charging_optimization">Optimised charging</string>
     <string name="op_charging_optimization_summary">Optimise the charging pattern according to your usage habits</string>
+    <string name="op_charging_station">Nearby Charging Stations</string>
+    <string name="op_charging_station_no_station">No charging stations nearby</string>
+    <string name="op_charging_station_summary">Notify when there is a charging station nearby</string>
+    <string name="op_charging_stations">Charging stations</string>
+    <string name="op_charging_stations_off_description">To find the charging stations, the location permission is required to detect BLE beacons. Please provide access to location to start using this feature.</string>
+    <string name="op_charging_stations_off_header">To find the charging stations, the location permission is required to detect BLE beacons. Please provide access to location to start using this feature.</string>
+    <string name="op_charing_station_mute_notifications_description">Notifications will be muted for 6 hours.</string>
+    <string name="op_charing_stations_mute_dynamic_time" formatted="false">Notification muted for %1d hours %2d minutes</string>
     <string name="op_china_mobile">CMCC</string>
     <string name="op_china_telecom">CTCC</string>
     <string name="op_china_unicom">CUCC</string>
@@ -3947,15 +3960,19 @@ Setting the network as hidden will not change your router settings."</string>
     <string name="op_default_apps_summary">Home, browser</string>
     <string name="op_default_luncher_title">Home app</string>
     <string name="op_dnd_summary">Do Not Disturb</string>
+    <string name="op_enable_location_services">To find and track charging stations nearby, please enable location services</string>
+    <string name="op_enable_text">Enable</string>
     <string name="op_face_unlock_set_unlock_password">Face Unlock + Password</string>
     <string name="op_face_unlock_set_unlock_pattern">Face Unlock + Pattern</string>
     <string name="op_face_unlock_set_unlock_pin">Face Unlock + PIN</string>
     <string name="op_face_unlock_skip_face">Continue without face unlock</string>
     <string name="op_failed_to_get_data">Failed to retrieve data</string>
     <string name="op_fetch_data_in_process">Loading</string>
+    <string name="op_find_charging_stations">Find Stations</string>
     <string name="op_fragment">Short</string>
     <string name="op_gamespace">Game Space</string>
     <string name="op_high_power_app_manager">Manage power-hungry apps</string>
+    <string name="op_keep_location_services">To find and track charging stations nearby, keep location services enabled</string>
     <string name="op_light_mode_title">Light</string>
     <string name="op_linked_launch_summary">Manage background app launch</string>
     <string name="op_linked_launch_title">App auto-launch</string>
@@ -5180,7 +5197,7 @@ Try using a faster ^3, or use this ^4 for portable storage instead."</string>
     <string name="sub_activate_success">Successfully Activated.</string>
     <string name="sub_deactivate_failed">Deactivation failed.</string>
     <string name="sub_deactivate_not_supported">Deactivation not supported</string>
-    <string name="sub_deactivate_success">Successfully deactivated.</string>
+    <string name="sub_deactivate_success">Successfully Deactivated.</string>
     <string name="subs_settings">SIMs status</string>
     <string name="subscription_available">Available</string>
     <string name="suggested_fingerprint_lock_settings_summary" />
@@ -5316,7 +5333,7 @@ A Google approach to syncing data to allow access to your contacts, appointments
     <string name="touchscreen_double_tap_to_wake_gesture_title">Double tap to wake</string>
     <string name="touchscreen_flashlight_gesture_summary">Draw a V to toggle the flashlight</string>
     <string name="touchscreen_flashlight_gesture_title">Toggle flashlight</string>
-    <string name="touchscreen_music_gesture_summary">Draw || with two fingers to play or pause music. Draw &lt; or > for previous or next track</string>
+    <string name="touchscreen_music_gesture_summary">Draw || with two fingers to play or pause music. Draw &lt; or > for previous or next track.</string>
     <string name="touchscreen_music_gesture_title">Music control</string>
     <string name="track_frame_time">Profile HWUI rendering</string>
     <string name="transition_animation_scale_title">Transition animation scale</string>
@@ -5382,6 +5399,7 @@ A Google approach to syncing data to allow access to your contacts, appointments
     <string name="uicc_lock_summary">Your device is locked to use Sprint SIMs only</string>
     <string name="uicc_unlock">UICC Unlock</string>
     <string name="uicc_unlock_summary">Your device is unlocked</string>
+    <string name="under_meters">Under %1d metres</string>
     <string name="uninstall_activity_text">%1$s is part of the following app:</string>
     <string name="uninstall_all_blocked_profile_owner">This app is required for some users or profiles and was uninstalled for others</string>
     <string name="uninstall_all_users_text">Uninstall for all users</string>
@@ -5639,7 +5657,7 @@ Any user can update apps for all other users."</string>
     <string name="user_exit_guest_confirm_title">Remove guest?</string>
     <string name="user_exit_guest_dialog_remove">Remove</string>
     <string name="user_exit_guest_title">Remove guest</string>
-    <string name="user_experience">User Experience Program</string>
+    <string name="user_experience">User Experience Programme</string>
     <string name="user_experience_description">Allow OnePlus to anonymously analyse general statistical data about how you use your phone, in order to help us improve product design and user experience</string>
     <string name="user_guest">Guest</string>
     <string name="user_image_choose_photo">Choose an image</string>

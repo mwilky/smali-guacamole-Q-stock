@@ -6,6 +6,7 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
+        Lcom/android/settings/Settings$OPChargingStationSettings;,
         Lcom/android/settings/Settings$OPAboutPhoneActivity;,
         Lcom/android/settings/Settings$ReadingModeAppListActivity;,
         Lcom/android/settings/Settings$OPToggleFontSizeActivity;,

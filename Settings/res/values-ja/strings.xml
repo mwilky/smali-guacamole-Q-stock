@@ -336,7 +336,7 @@
     <string name="aod_clock_minimalism">ミニマリズム 1</string>
     <string name="aod_clock_minimalism_1">ミニマリズム 2</string>
     <string name="aod_clock_none">なし</string>
-    <string name="aod_clock_select_style_text">時計のスタイルを選択してください</string>
+    <string name="aod_clock_select_style_text">クロックスタイルを選択</string>
     <string name="aod_clock_text_clock">テキスト時計</string>
     <string name="aod_horizon_light_effect_1">青</string>
     <string name="aod_horizon_light_effect_2">赤</string>
@@ -2313,6 +2313,7 @@ Googleアカウントなど、アカウントによっては、スマートフ�
     <string name="location_settings_title">位置情報</string>
     <string name="location_sources_heading">位置情報源</string>
     <string name="location_street_level">モバイル デバイスでGPSを使用して現在地を特定することをアプリに許可する</string>
+    <string name="location_text">位置情報</string>
     <string name="location_title">現在地</string>
     <string name="lock_after_timeout">自動ロック</string>
     <string name="lock_after_timeout_summary">スリープ開始後 %1$s</string>
@@ -2608,7 +2609,7 @@ Googleアカウントなど、アカウントによっては、スマートフ�
     <string name="menu_uninstallapps">アンインストール</string>
     <string name="menu_use_uss">Ussを使用</string>
     <string name="mhs_app">My Verizon を開く</string>
-    <string name="mhs_call_back_error">データ接続は使用できません.</string>
+    <string name="mhs_call_back_error">データ接続は使用できません。</string>
     <string name="misc_files">その他のファイル</string>
     <string name="misc_files_selected_count">選択済み: %1$d/%2$d件</string>
     <string name="misc_files_selected_count_bytes">%1$s/%2$s</string>
@@ -2710,6 +2711,7 @@ Googleアカウントなど、アカウントによっては、スマートフ�
     <string name="my_device_info_account_preference_title">アカウント</string>
     <string name="my_device_info_device_name_preference_title">デバイス名</string>
     <string name="n_cacrts">CA証明書%d件</string>
+    <string name="nearest_station">最寄りのステーション</string>
     <string name="network_4G">4G（推奨）</string>
     <string name="network_connected">接続済み</string>
     <string name="network_connecting">接続しています…</string>
@@ -2982,7 +2984,7 @@ Googleアカウントなど、アカウントによっては、スマートフ�
     <string name="oneplus_app_locker_summary">暗号化用のアプリを選択します。</string>
     <string name="oneplus_app_locker_switch">通知内容を非表示</string>
     <string name="oneplus_app_locker_switch_summary">通知内容は、アプリロッカーが有効になったアプリでは表示されません</string>
-    <string name="oneplus_app_locker_title">アプリロッカー</string>
+    <string name="oneplus_app_locker_title">アプリ ロッカー</string>
     <string name="oneplus_app_network_settings">データ使用量の制御</string>
     <string name="oneplus_app_notification_allow_led">LED オン</string>
     <string name="oneplus_app_notification_not_allow_led">LED オフ</string>
@@ -3332,7 +3334,7 @@ Googleアカウントなど、アカウントによっては、スマートフ�
     <string name="oneplus_h2_contributors">HydrogenOS貢献者</string>
     <string name="oneplus_hand_up_proximity_summary">携帯電話を持ち上げたときにスリープを解除します。</string>
     <string name="oneplus_hand_up_proximity_title">ディスプレイの持ち上げ</string>
-    <string name="oneplus_hand_up_to_show">スマートフォンを持ち上げて表示</string>
+    <string name="oneplus_hand_up_to_show">受話器を取って表示</string>
     <string name="oneplus_haptic_feedback_no_app">サポート対象のゲームはインストールされていません</string>
     <string name="oneplus_haptic_feedback_no_app_tip">PUBG Mobile と Asphalt 9 をインストールできます</string>
     <string name="oneplus_haptic_feedback_summary">サポート対象のゲームで触覚フィードバックを向上します</string>
@@ -3466,7 +3468,7 @@ Googleアカウントなど、アカウントによっては、スマートフ�
     <string name="oneplus_none_default_gallery">既定のギャラリーがありません</string>
     <string name="oneplus_none_default_music">既定の音楽プレーヤーがありません</string>
     <string name="oneplus_normal_clear_way">通常クリア</string>
-    <string name="oneplus_normal_clear_way_summary">バックグランドプロセスを終了することなく、タスクリストとキャッシュを消去します。</string>
+    <string name="oneplus_normal_clear_way_summary">バックグラウンド処理を消去しないでタスクリストとキャッシュを消去します。</string>
     <string name="oneplus_not_disturb_on">おやすみモードはオンです</string>
     <string name="oneplus_not_show">今後表示しない</string>
     <string name="oneplus_notch_display_area">ノッチ</string>
@@ -3750,6 +3752,7 @@ Googleアカウントなど、アカウントによっては、スマートフ�
     <string name="oneplus_silent_mode_on">サイレントモードがオンになっています</string>
     <string name="oneplus_silent_mode_soc_tri_state_summary">アラーム以外の着信音や通知音が鳴らなくなります。</string>
     <string name="oneplus_silent_mode_summary">アラーム以外の着信音や通知音が鳴らなくなります。</string>
+    <string name="oneplus_silent_notifications_status_bar">ステータスバーでサイレント通知を非表示にする</string>
     <string name="oneplus_sim1_ringtone_switch">SIM カード 1</string>
     <string name="oneplus_sim2_ringtone_switch">SIM カード 2</string>
     <string name="oneplus_simcard_title">SIM</string>
@@ -3792,7 +3795,7 @@ Googleアカウントなど、アカウントによっては、スマートフ�
     <string name="oneplus_theme_accent_color_select">アクセントカラーを選択</string>
     <string name="oneplus_theme_apply_summary">このテーマを適用した後、カスタマイゼーションオプションは上書きされます</string>
     <string name="oneplus_theme_apply_title">このテーマを適用しますか？</string>
-    <string name="oneplus_theme_clock">時計のスタイル</string>
+    <string name="oneplus_theme_clock">クロックスタイル</string>
     <string name="oneplus_theme_clock_snake_action">アンビエントディスプレイをオンにする</string>
     <string name="oneplus_theme_clock_snake_tip">この機能はアンビエントディスプレイがオンのときに使用できます</string>
     <string name="oneplus_theme_colorpicker_colorvalue">色コード</string>
@@ -3840,7 +3843,7 @@ Googleアカウントなど、アカウントによっては、スマートフ�
     <string name="oneplus_tools_summary_U30">ゲームモード、ポケットモード、スケジュール設定された電源オン/オフ</string>
     <string name="oneplus_tools_summary_no_gamingmode">アプリロッカー、パラレルアプリ</string>
     <string name="oneplus_tools_title">ユーティリティ</string>
-    <string name="oneplus_top_level_accounts_summary">OnePlus account, other accounts</string>
+    <string name="oneplus_top_level_accounts_summary">OnePlus アカウント、その他のアカウント</string>
     <string name="oneplus_top_level_apps_and_notifs_summary">デフォルトのアプリ、アクセス権限</string>
     <string name="oneplus_top_level_buttons_and_gestures_summary">Alert Slider、ナビゲーション、ジェスチャー</string>
     <string name="oneplus_top_level_cloud_h2_summary">クラウドとデータを同期、携帯電話を見つける</string>
@@ -3930,8 +3933,18 @@ Googleアカウントなど、アカウントによっては、スマートフ�
     <string name="op_audio_settings">オーディオ チューナー</string>
     <string name="op_auto_power_saving">自動節電</string>
     <string name="op_auto_power_saving_summary">バッテリーを消耗しない、適切な解像度に自動的に切り替わります</string>
+    <string name="op_charging_Station_mute_notifications">通知をミュート</string>
+    <string name="op_charging_footer_text">空港などのパートナー施設にいる場合や、Pop-ups などの OnePlus イベントに参加する場合に 付近の充電ステーションについて通知が表示されます。</string>
     <string name="op_charging_optimization">充電の最適化</string>
     <string name="op_charging_optimization_summary">ご利用習慣に応じて、充電パターンを最適化します</string>
+    <string name="op_charging_station">付近の充電ステーション</string>
+    <string name="op_charging_station_no_station">付近に充電ステーションはありません</string>
+    <string name="op_charging_station_summary">付近に充電ステーションがある場合に通知する</string>
+    <string name="op_charging_stations">充電ステーション</string>
+    <string name="op_charging_stations_off_description">充電ステーションを見つけるには、BLE ビーコンを検出 するため、位置情報へのアクセス権が必要になります。この機能を使用するには、位置情報へのアクセスを付与してください。</string>
+    <string name="op_charging_stations_off_header">充電ステーションを見つけるには、BLE ビーコンを検出するため、 位置情報へのアクセス権が必要になります。この機能を使用するには、位置情報へのアクセスを付与してください。</string>
+    <string name="op_charing_station_mute_notifications_description">6 時間、通知がミュートされます。</string>
+    <string name="op_charing_stations_mute_dynamic_time" formatted="false">%1d 時間 %2d 分間、通知がミュートされます</string>
     <string name="op_china_mobile">CMCC</string>
     <string name="op_china_telecom">CTCC</string>
     <string name="op_china_unicom">CUCC</string>
@@ -3947,15 +3960,19 @@ Googleアカウントなど、アカウントによっては、スマートフ�
     <string name="op_default_apps_summary">ホーム、ブラウザ</string>
     <string name="op_default_luncher_title">ホームアプリ</string>
     <string name="op_dnd_summary">おやすみモード</string>
+    <string name="op_enable_location_services">付近の充電ステーションを検索し、トラッキングするには、位置情報サービスを有効にしてください</string>
+    <string name="op_enable_text">有効化</string>
     <string name="op_face_unlock_set_unlock_password">顔認証 + パスワード</string>
     <string name="op_face_unlock_set_unlock_pattern">顔認証 + パターン</string>
     <string name="op_face_unlock_set_unlock_pin">顔認証 + PIN</string>
     <string name="op_face_unlock_skip_face">顔認証を使用せずに続行</string>
     <string name="op_failed_to_get_data">データを取得できませんでした。</string>
     <string name="op_fetch_data_in_process">読み込み中</string>
+    <string name="op_find_charging_stations">ステーションを検索</string>
     <string name="op_fragment">短い</string>
     <string name="op_gamespace">ゲームスペース</string>
     <string name="op_high_power_app_manager">電力消費の激しいアプリの管理</string>
+    <string name="op_keep_location_services">付近の充電ステーションを検索し、トラッキングするには、位置情報サービスを有効にした状態で維持してください</string>
     <string name="op_light_mode_title">明るい</string>
     <string name="op_linked_launch_summary">管理アプリケーションはバックグラウンドで起動することができます</string>
     <string name="op_linked_launch_title">アプリの自動起動</string>
@@ -4876,7 +4893,7 @@ PINが正しくない可能性があります。"</string>
     <string name="sim_slot_empty">SIMが空です</string>
     <string name="sim_status_title">SIMのステータス</string>
     <string name="sim_status_title_sim_slot">SIM ステータス（SIM スロット %1$d）</string>
-    <string name="sim_status_uss_network_roam">ローム</string>
+    <string name="sim_status_uss_network_roam">ローミング</string>
     <string name="simulate_color_space">色空間シミュレート</string>
     <string name="skip_anyway_button_label">スキップ</string>
     <string name="skip_label">スキップ</string>
@@ -5262,7 +5279,7 @@ PINが正しくない可能性があります。"</string>
     <string name="tether_error_item_default">テザリング</string>
     <string name="tether_error_message">%1$s をサブスクライブしていません。</string>
     <string name="tether_error_title">%1$s エラー</string>
-    <string name="tether_no_sim_message">SIM カードを挿入して、モバイルホットスポットと他のテザリングオプションを使用</string>
+    <string name="tether_no_sim_message">モバイルホットスポットや他のテザリングオプションを使用するには、SIM カードを挿入してください</string>
     <string name="tether_no_sim_title">SIM カードはありません</string>
     <string name="tether_settings_disabled_on_data_saver">データセーバーが ON のときは、テザリングやポータブル アクセス ポイントを使用できません</string>
     <string name="tether_settings_summary_hotspot_off_tether_on">テザリング</string>
@@ -5384,6 +5401,7 @@ PINが正しくない可能性があります。"</string>
     <string name="uicc_lock_summary">デバイスは Sprint SIM のみでロックされています</string>
     <string name="uicc_unlock">UICC ロック解除</string>
     <string name="uicc_unlock_summary">デバイスのロックが解除されています</string>
+    <string name="under_meters">%1dm 未満</string>
     <string name="uninstall_activity_text">%1$s は次のアプリケーションの一部を構成しています：</string>
     <string name="uninstall_all_blocked_profile_owner">このアプリは複数のユーザーまたはプロファイルに必要ですが 他のユーザーからはアンインストールされました</string>
     <string name="uninstall_all_users_text">すべてのユーザーからアンインストール</string>

@@ -105,7 +105,7 @@
 
     iget-object v4, p0, Lcom/android/settings/applications/appinfo/AppDataUsagePreferenceController;->mContext:Landroid/content/Context;
 
-    const v5, 0x7f120b54
+    const v5, 0x7f120b56
 
     invoke-virtual {v4, v5}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

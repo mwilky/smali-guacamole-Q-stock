@@ -126,7 +126,7 @@
 
     invoke-virtual {p0, v3}, Lcom/oneplus/settings/widget/OPVideoPreference;->setVisible(Z)V
 
-    const v4, 0x7f0d0244
+    const v4, 0x7f0d0248
 
     invoke-virtual {p0, v4}, Lcom/oneplus/settings/widget/OPVideoPreference;->setLayoutResource(I)V
 
@@ -271,7 +271,7 @@
     return-void
 
     :cond_0
-    const v0, 0x7f0a0761
+    const v0, 0x7f0a076e
 
     invoke-virtual {p1, v0}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 
@@ -279,7 +279,7 @@
 
     check-cast v0, Landroid/view/TextureView;
 
-    const v1, 0x7f0a075e
+    const v1, 0x7f0a076b
 
     invoke-virtual {p1, v1}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 
@@ -289,7 +289,7 @@
 
     iput-object v1, p0, Lcom/oneplus/settings/widget/OPVideoPreference;->imageView:Landroid/widget/ImageView;
 
-    const v1, 0x7f0a075a
+    const v1, 0x7f0a0767
 
     invoke-virtual {p1, v1}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 

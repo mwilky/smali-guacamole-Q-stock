@@ -33,19 +33,29 @@
 .method public getAvailabilityStatus()I
     .locals 1
 
-    iget-object v0, p0, Lcom/android/settings/support/SupportPreferenceController;->mSupportFeatureProvider:Lcom/android/settings/overlay/SupportFeatureProvider;
+    invoke-static {}, Lcom/oneplus/settings/OPOnlineConfigManager;->isSupportEnable()Z
 
-    if-nez v0, :cond_0
+    move-result v0
 
-    const/4 v0, 0x3
+    if-eqz v0, :cond_0
+
+    const/4 v0, 0x0
 
     goto :goto_0
 
     :cond_0
-    const/4 v0, 0x0
+    const/4 v0, 0x3
 
     :goto_0
     return v0
+.end method
+
+.method public getPreferenceKey()Ljava/lang/String;
+    .locals 1
+
+    const-string v0, "top_level_support"
+
+    return-object v0
 .end method
 
 .method public handlePreferenceTreeClick(Landroidx/preference/Preference;)Z

@@ -60,7 +60,7 @@
 .method public getMuteIcon()I
     .locals 1
 
-    const v0, 0x7f080236
+    const v0, 0x7f080269
 
     return v0
 .end method

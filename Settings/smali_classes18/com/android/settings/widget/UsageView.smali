@@ -21,11 +21,11 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d033a
+    const v1, 0x7f0d033e
 
     invoke-virtual {v0, v1, p0}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;)Landroid/view/View;
 
-    const v0, 0x7f0a0742
+    const v0, 0x7f0a074f
 
     invoke-virtual {p0, v0}, Lcom/android/settings/widget/UsageView;->findViewById(I)Landroid/view/View;
 
@@ -39,7 +39,7 @@
 
     new-array v1, v0, [Landroid/widget/TextView;
 
-    const v2, 0x7f0a035b
+    const v2, 0x7f0a035a
 
     invoke-virtual {p0, v2}, Lcom/android/settings/widget/UsageView;->findViewById(I)Landroid/view/View;
 
@@ -51,7 +51,7 @@
 
     aput-object v2, v1, v3
 
-    const v2, 0x7f0a0360
+    const v2, 0x7f0a035f
 
     invoke-virtual {p0, v2}, Lcom/android/settings/widget/UsageView;->findViewById(I)Landroid/view/View;
 
@@ -63,7 +63,7 @@
 
     aput-object v2, v1, v4
 
-    const v2, 0x7f0a0363
+    const v2, 0x7f0a0362
 
     invoke-virtual {p0, v2}, Lcom/android/settings/widget/UsageView;->findViewById(I)Landroid/view/View;
 
@@ -79,7 +79,7 @@
 
     new-array v1, v5, [Landroid/widget/TextView;
 
-    const v2, 0x7f0a0362
+    const v2, 0x7f0a0361
 
     invoke-virtual {p0, v2}, Lcom/android/settings/widget/UsageView;->findViewById(I)Landroid/view/View;
 
@@ -89,7 +89,7 @@
 
     aput-object v2, v1, v3
 
-    const v2, 0x7f0a035c
+    const v2, 0x7f0a035b
 
     invoke-virtual {p0, v2}, Lcom/android/settings/widget/UsageView;->findViewById(I)Landroid/view/View;
 
@@ -203,7 +203,7 @@
 
     check-cast v5, Landroid/widget/LinearLayout;
 
-    const v6, 0x7f0a035e
+    const v6, 0x7f0a035d
 
     invoke-virtual {p0, v6}, Lcom/android/settings/widget/UsageView;->findViewById(I)Landroid/view/View;
 
@@ -419,11 +419,11 @@
 .method public setSideLabelWeights(FF)V
     .locals 1
 
-    const v0, 0x7f0a064b
+    const v0, 0x7f0a0658
 
     invoke-direct {p0, v0, p1}, Lcom/android/settings/widget/UsageView;->setWeight(IF)V
 
-    const v0, 0x7f0a064c
+    const v0, 0x7f0a0659
 
     invoke-direct {p0, v0, p2}, Lcom/android/settings/widget/UsageView;->setWeight(IF)V
 

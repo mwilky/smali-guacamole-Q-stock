@@ -838,7 +838,7 @@
     :goto_5
     if-nez v12, :cond_9
 
-    const v4, 0x7f1215e2
+    const v4, 0x7f1215f6
 
     invoke-virtual {v8, v4}, Lcom/android/settings/accounts/SyncStateSwitchPreference;->setSummary(I)V
 
@@ -855,7 +855,7 @@
     :cond_9
     if-eqz v13, :cond_a
 
-    const v4, 0x7f1215e7
+    const v4, 0x7f1215fb
 
     invoke-virtual {v8, v4}, Lcom/android/settings/accounts/SyncStateSwitchPreference;->setSummary(I)V
 
@@ -1017,7 +1017,7 @@
 
     move-result-object v1
 
-    const v3, 0x7f1215e8
+    const v3, 0x7f1215fc
 
     invoke-virtual {v1, v3}, Lcom/oneplus/settings/widget/OPFooterPreference;->setTitle(I)V
 
@@ -1674,7 +1674,7 @@
 
     nop
 
-    const v0, 0x7f1215ea
+    const v0, 0x7f1215fe
 
     invoke-virtual {p0, v0}, Lcom/android/settings/accounts/AccountSyncSettings;->getString(I)Ljava/lang/String;
 
@@ -1688,7 +1688,7 @@
 
     move-result-object v0
 
-    const v2, 0x7f080248
+    const v2, 0x7f08027b
 
     invoke-interface {v0, v2}, Landroid/view/MenuItem;->setIcon(I)Landroid/view/MenuItem;
 
@@ -1696,7 +1696,7 @@
 
     nop
 
-    const v2, 0x7f1215e9
+    const v2, 0x7f1215fd
 
     invoke-virtual {p0, v2}, Lcom/android/settings/accounts/AccountSyncSettings;->getString(I)Ljava/lang/String;
 

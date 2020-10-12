@@ -28,7 +28,7 @@
 
     const/4 v1, 0x3
 
-    const v2, 0x7f1214a7
+    const v2, 0x7f1214bb
 
     invoke-static {v1, v2}, Lcom/android/settings/sim/PreferredSimDialogFragment;->initArguments(II)Landroid/os/Bundle;
 
@@ -59,7 +59,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f1214a6
+    const v2, 0x7f1214ba
 
     const/4 v3, 0x1
 
@@ -203,13 +203,13 @@
 
     move-result-object v0
 
-    const v1, 0x7f121a07
+    const v1, 0x7f121a1c
 
     invoke-virtual {v0, v1, p0}, Landroidx/appcompat/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroidx/appcompat/app/AlertDialog$Builder;
 
     move-result-object v0
 
-    const v1, 0x7f120b4b
+    const v1, 0x7f120b4d
 
     const/4 v2, 0x0
 

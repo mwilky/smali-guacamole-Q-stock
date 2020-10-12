@@ -2572,6 +2572,7 @@
         <item name="android:windowAnimationStyle">@style/Oneplus.Animation.Material.Dialog</item>
         <item name="android:windowFullscreen">false</item>
     </style>
+    <style name="OnePlusAuthAppTheme" parent="@android:style/Theme.Holo.NoActionBar" />
     <style name="OnePlusBottomNavigationViewStyle" parent="@style/Widget.Design.BottomNavigationView">
         <item name="android:background">@drawable/op_bottom_navigation_background</item>
         <item name="android:maxHeight">@dimen/op_bottom_navigation_max_height</item>
@@ -2739,6 +2740,7 @@
     <style name="OnePlusToastLight">
         <item name="android:layout">@layout/op_transient_notification_light</item>
     </style>
+    <style name="OnePlusTranslucentStyle" parent="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
     <style name="Oneplus.Animation.Material.Dialog" parent="@style/Animation.Material">
         <item name="android:windowEnterAnimation">@anim/popup_enter_material</item>
         <item name="android:windowExitAnimation">@anim/popup_exit_material</item>

@@ -106,7 +106,7 @@
 .method protected getLayout()Lcom/google/android/setupdesign/GlifLayout;
     .locals 1
 
-    const v0, 0x7f0a0616
+    const v0, 0x7f0a0623
 
     invoke-virtual {p0, v0}, Lcom/android/settings/biometrics/BiometricEnrollBase;->findViewById(I)Landroid/view/View;
 
@@ -194,7 +194,7 @@
 .method protected onApplyThemeResource(Landroid/content/res/Resources$Theme;IZ)V
     .locals 2
 
-    const v0, 0x7f1303ad
+    const v0, 0x7f1303af
 
     const/4 v1, 0x1
 
@@ -394,7 +394,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f1301d0
+    const v1, 0x7f1301d1
 
     invoke-virtual {v0, p0, v1}, Landroid/widget/TextView;->setTextAppearance(Landroid/content/Context;I)V
 

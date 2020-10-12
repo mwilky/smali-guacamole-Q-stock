@@ -124,13 +124,13 @@
 
     if-eqz v0, :cond_0
 
-    const v0, 0x7f121000
+    const v0, 0x7f121004
 
-    const v1, 0x7f120fff
+    const v1, 0x7f121003
 
-    const v2, 0x7f121335
+    const v2, 0x7f121349
 
-    const v3, 0x7f120a6c
+    const v3, 0x7f120a6d
 
     invoke-virtual {p0, v0, v1, v2, v3}, Lcom/oneplus/settings/BaseActivity;->showWarningDialog(IIII)V
 

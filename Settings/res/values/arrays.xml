@@ -2445,6 +2445,21 @@
         <item>com.tencent.tmgp.pubgm</item>
         <item>com.gameloft.android.ANMP.GloftA9HM</item>
     </string-array>
+    <string-array name="op_local_sla_down_load_white_list_app">
+        <item>com.android.vending</item>
+        <item>com.google.android.apps.docs</item>
+        <item>com.google.android.apps.translate</item>
+        <item>com.google.android.apps.docs.editors.docs</item>
+        <item>com.google.android.apps.docs.editors.sheets</item>
+        <item>com.google.android.apps.docs.editors.slides</item>
+        <item>com.google.android.gm</item>
+        <item>com.microsoft.skydrive</item>
+        <item>com.microsoft.teams</item>
+        <item>com.microsoft.translator</item>
+        <item>mark.via.gp</item>
+        <item>com.oneplus.opbackup</item>
+        <item>com.heytap.market</item>
+    </string-array>
     <string-array name="op_locale_carrier_names">
         <item>China_Mobile</item>
         <item>China_Mobile</item>

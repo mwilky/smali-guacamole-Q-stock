@@ -1638,7 +1638,7 @@ Jeśli to nie pomoże, wydłużenie czasu działania na baterii może wymagać o
     <string name="doze_always_on_summary">Pokazuj godzinę, ikony powiadomień i inne informacje. Zwiększone zużycie baterii.</string>
     <string name="doze_always_on_title">Zawsze włączony</string>
     <string name="doze_summary">Wybudzaj ekran po otrzymaniu powiadomień</string>
-    <string name="doze_title">Wyświetlacz Ambient</string>
+    <string name="doze_title">Ambient display</string>
     <string name="draw_overlay">Wyświetlanie nad innymi</string>
     <string name="dsds_dialog_cancel">Anuluj</string>
     <string name="dsds_dialog_confirm">Uruchom ponownie</string>
@@ -2313,6 +2313,7 @@ Możesz zmienić to ustawienie później, wybierając Ustawienia > Aplikacje i 
     <string name="location_settings_title">Lokalizacja</string>
     <string name="location_sources_heading">Źródła lokalizacji</string>
     <string name="location_street_level">Zezwalaj aplikacjom na określanie mojej lokalizacji przez GPS telefonu</string>
+    <string name="location_text">Lokalizacja</string>
     <string name="location_title">Moja lokalizacja</string>
     <string name="lock_after_timeout">Blokuj automatycznie</string>
     <string name="lock_after_timeout_summary">%1$s po uśpieniu</string>
@@ -2710,6 +2711,7 @@ Przełączenie na operatora%1$s nie spowoduje rezygnacji z usług operatora %2$s
     <string name="my_device_info_account_preference_title">Konto</string>
     <string name="my_device_info_device_name_preference_title">Nazwa urządzenia</string>
     <string name="n_cacrts">Certyfikaty CA %d</string>
+    <string name="nearest_station">Najbliższa stacja</string>
     <string name="network_4G">4G (zalecana)</string>
     <string name="network_connected">Połączono</string>
     <string name="network_connecting">Łączę…</string>
@@ -3134,7 +3136,7 @@ Tryb Oszczędzanie baterii jest automatycznie wyłączany na czas ładowania tel
     <string name="oneplus_double_tap_power_none">Brak</string>
     <string name="oneplus_doze_summary_801">Wyświetlaj zegar i inne informacje na ekranie czuwania</string>
     <string name="oneplus_doze_summary_new">Pokaż godzinę, datę i powiadomienia na ekranie</string>
-    <string name="oneplus_doze_title">Wyświetlacz Ambient</string>
+    <string name="oneplus_doze_title">Ambient display</string>
     <string name="oneplus_doze_title_801">Ambient display</string>
     <string name="oneplus_draw_gesture_start_none">Brak</string>
     <string name="oneplus_draw_m_start_app">Narysuj M</string>
@@ -3466,7 +3468,7 @@ Uwaga: Odblokowywanie za pomocą odcisku palca jest mniej bezpieczne niż silne 
     <string name="oneplus_none_default_gallery">Nie wybrano galerii domyślnej</string>
     <string name="oneplus_none_default_music">Nie wybrano domyślnego odtwarzacza muzycznego</string>
     <string name="oneplus_normal_clear_way">Zwykłe oczyszczenie</string>
-    <string name="oneplus_normal_clear_way_summary">Wyczyść listę zadań i pamięć podręczną bez czyszczenia procesów w tle.</string>
+    <string name="oneplus_normal_clear_way_summary">Czyszczenie listy zadań i pamięci podręcznej bez czyszczenia procesów w tle.</string>
     <string name="oneplus_not_disturb_on">Tryb Nie przeszkadzać włączony</string>
     <string name="oneplus_not_show">Nie pokazuj tego ponownie</string>
     <string name="oneplus_notch_display_area">Wycięcie</string>
@@ -3750,6 +3752,7 @@ Uwaga:
     <string name="oneplus_silent_mode_on">Tryb cichy jest włączony</string>
     <string name="oneplus_silent_mode_soc_tri_state_summary">Połączenia i powiadomienia, z wyjątkiem alarmów, zostaną wyciszone</string>
     <string name="oneplus_silent_mode_summary">Połączenia i powiadomienia, z wyjątkiem alarmów, zostaną wyciszone</string>
+    <string name="oneplus_silent_notifications_status_bar">Ukryj ciche powiadomienie na pasku stanu</string>
     <string name="oneplus_sim1_ringtone_switch">Karta SIM 1</string>
     <string name="oneplus_sim2_ringtone_switch">Karta SIM 2</string>
     <string name="oneplus_simcard_title">SIM</string>
@@ -3840,7 +3843,7 @@ Uwaga:
     <string name="oneplus_tools_summary_U30">Tryb gry, tryb „w kieszeni”, planowe włączanie/wyłączanie</string>
     <string name="oneplus_tools_summary_no_gamingmode">Blokada aplikacji, aplikacje równoległe</string>
     <string name="oneplus_tools_title">Narzędzia</string>
-    <string name="oneplus_top_level_accounts_summary">OnePlus account, other accounts</string>
+    <string name="oneplus_top_level_accounts_summary">Konto OnePlus, inne konta</string>
     <string name="oneplus_top_level_apps_and_notifs_summary">Aplikacje domyślne, uprawnienia</string>
     <string name="oneplus_top_level_buttons_and_gestures_summary">Alert slider, pasek nawigacyjny i gesty</string>
     <string name="oneplus_top_level_cloud_h2_summary">Synchronizacja danych z chmurą, Znajdź mój telefon</string>
@@ -3930,8 +3933,18 @@ Ustawienie sieci jako ukrytej nie ma wpływa na ustawienia routera."</string>
     <string name="op_audio_settings">Tuner audio</string>
     <string name="op_auto_power_saving">Automatyczne oszczędzanie energii</string>
     <string name="op_auto_power_saving_summary">Automatycznie przełączaj na właściwą rozdzielczość bez wyczerpywania baterii</string>
+    <string name="op_charging_Station_mute_notifications">Wycisz powiadomienia</string>
+    <string name="op_charging_footer_text">Podczas wizyt w partnerskich lokalizacjach, np. na lotniskach czy na wydarzeniach OnePlus takich jak Pop-up, będziesz otrzymywać powiadomienia o wszystkich stacjach ładujących w pobliżu.</string>
     <string name="op_charging_optimization">Zoptymalizowane ładowanie</string>
     <string name="op_charging_optimization_summary">Zoptymalizuj wzorzec ładowania według nawyków użytkowania</string>
+    <string name="op_charging_station">Stacje ładujące w pobliżu</string>
+    <string name="op_charging_station_no_station">Brak stacji ładujących w pobliżu</string>
+    <string name="op_charging_station_summary">Powiadom, kiedy w pobliżu będzie stacja ładująca</string>
+    <string name="op_charging_stations">Stacje ładujące</string>
+    <string name="op_charging_stations_off_description">Do znajdowania stacji ładujących wymagane są uprawnienia do lokalizacji w celu wykrywania przekaźników BLE. Zezwól na dostęp do lokalizacji, aby rozpocząć używanie tej funkcji.</string>
+    <string name="op_charging_stations_off_header">Do znajdowania stacji ładujących wymagane są uprawnienia do lokalizacji w celu wykrywania przekaźników BLE. Zezwól na dostęp do lokalizacji, aby rozpocząć używanie tej funkcji.</string>
+    <string name="op_charing_station_mute_notifications_description">Powiadomienia zostaną wyciszone na 6 godzin.</string>
+    <string name="op_charing_stations_mute_dynamic_time" formatted="false">Powiadomienia wyciszone na %1d godz. %2d min</string>
     <string name="op_china_mobile">CMCC</string>
     <string name="op_china_telecom">CTCC</string>
     <string name="op_china_unicom">CUCC</string>
@@ -3947,15 +3960,19 @@ Ustawienie sieci jako ukrytej nie ma wpływa na ustawienia routera."</string>
     <string name="op_default_apps_summary">Ekran główny, przeglądarka</string>
     <string name="op_default_luncher_title">Aplikacja główna</string>
     <string name="op_dnd_summary">Nie przeszkadzać</string>
+    <string name="op_enable_location_services">Aby znajdować i śledzić stacje ładujące w pobliżu, włącz usługi lokalizacji</string>
+    <string name="op_enable_text">Włącz</string>
     <string name="op_face_unlock_set_unlock_password">Odblokowywanie twarzą + hasło</string>
     <string name="op_face_unlock_set_unlock_pattern">Odblokowywanie twarzą + wzór</string>
     <string name="op_face_unlock_set_unlock_pin">Odblokowywanie twarzą + PIN</string>
     <string name="op_face_unlock_skip_face">Kontynuuj bez odblokowywania twarzą</string>
     <string name="op_failed_to_get_data">Nie można pobrać danych</string>
     <string name="op_fetch_data_in_process">Ładowanie</string>
+    <string name="op_find_charging_stations">Znajdź stacje</string>
     <string name="op_fragment">Krótki</string>
     <string name="op_gamespace">Centrum gier</string>
     <string name="op_high_power_app_manager">Aplikacje o wysokim zużyciu energii</string>
+    <string name="op_keep_location_services">Aby znajdować i śledzić stacje ładujące w pobliżu, usługi lokalizacji powinny pozostać włączone</string>
     <string name="op_light_mode_title">Jasny</string>
     <string name="op_linked_launch_summary">Zarządzaj aplikacjami uruchamianymi w tle</string>
     <string name="op_linked_launch_title">Automatyczne uruchamianie aplikacji</string>
@@ -5384,6 +5401,7 @@ Synchronizacja danych daje Ci dostęp do kontaktów, wydarzeń i innych ważnych
     <string name="uicc_lock_summary">Urządzenie może korzystać wyłącznie z kart SIM Sprint</string>
     <string name="uicc_unlock">Zniesienie blokady UICC</string>
     <string name="uicc_unlock_summary">Urządzenie zostało odblokowane</string>
+    <string name="under_meters">Poniżej następującej liczby metrów: %1d</string>
     <string name="uninstall_activity_text">%1$s jest częścią następującej aplikacji:</string>
     <string name="uninstall_all_blocked_profile_owner">Ta aplikacja jest wymagana dla niektórych użytkowników lub profilów i była odinstalowana dla innych</string>
     <string name="uninstall_all_users_text">Odinstaluj dla wszystkich użytkowników</string>

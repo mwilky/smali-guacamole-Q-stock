@@ -547,7 +547,7 @@
 .method protected getPreferenceScreenResId()I
     .locals 1
 
-    const v0, 0x7f160117
+    const v0, 0x7f160118
 
     return v0
 .end method
@@ -711,7 +711,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f12161a
+    const v1, 0x7f12162e
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
 

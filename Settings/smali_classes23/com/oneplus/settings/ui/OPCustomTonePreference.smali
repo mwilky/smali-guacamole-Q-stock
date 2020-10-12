@@ -122,7 +122,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d018f
+    const v1, 0x7f0d0193
 
     invoke-virtual {p0, v1}, Lcom/oneplus/settings/ui/OPCustomTonePreference;->setLayoutResource(I)V
 
@@ -226,7 +226,7 @@
 
     invoke-super {p0, p1}, Landroidx/preference/Preference;->onBindViewHolder(Landroidx/preference/PreferenceViewHolder;)V
 
-    const v0, 0x7f0a0706
+    const v0, 0x7f0a0713
 
     invoke-virtual {p1, v0}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 
@@ -250,7 +250,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f12101a
+    const v4, 0x7f12101e
 
     invoke-virtual {v3, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -258,7 +258,7 @@
 
     const/4 v4, 0x1
 
-    const v5, 0x7f080542
+    const v5, 0x7f080577
 
     invoke-direct {v2, p0, v3, v5, v4}, Lcom/oneplus/settings/ui/OPCustomTonePreference$ItemEntity;-><init>(Lcom/oneplus/settings/ui/OPCustomTonePreference;Ljava/lang/String;II)V
 
@@ -268,7 +268,7 @@
 
     move-result-object v5
 
-    const v6, 0x7f12101c
+    const v6, 0x7f121020
 
     invoke-virtual {v5, v6}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -276,7 +276,7 @@
 
     const/4 v6, 0x2
 
-    const v7, 0x7f080548
+    const v7, 0x7f08057d
 
     invoke-direct {v3, p0, v5, v7, v6}, Lcom/oneplus/settings/ui/OPCustomTonePreference$ItemEntity;-><init>(Lcom/oneplus/settings/ui/OPCustomTonePreference;Ljava/lang/String;II)V
 
@@ -286,13 +286,13 @@
 
     move-result-object v7
 
-    const v8, 0x7f12101b
+    const v8, 0x7f12101f
 
     invoke-virtual {v7, v8}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
     move-result-object v7
 
-    const v8, 0x7f080545
+    const v8, 0x7f08057a
 
     invoke-direct {v5, p0, v7, v8, v1}, Lcom/oneplus/settings/ui/OPCustomTonePreference$ItemEntity;-><init>(Lcom/oneplus/settings/ui/OPCustomTonePreference;Ljava/lang/String;II)V
 
@@ -318,7 +318,7 @@
 
     iget-object v6, p0, Lcom/oneplus/settings/ui/OPCustomTonePreference;->mPreviewList:Ljava/util/List;
 
-    const v7, 0x7f080543
+    const v7, 0x7f080578
 
     invoke-static {v7}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -328,7 +328,7 @@
 
     iget-object v6, p0, Lcom/oneplus/settings/ui/OPCustomTonePreference;->mPreviewList:Ljava/util/List;
 
-    const v7, 0x7f080544
+    const v7, 0x7f080579
 
     invoke-static {v7}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -349,7 +349,7 @@
 
     iget-object v6, p0, Lcom/oneplus/settings/ui/OPCustomTonePreference;->mPreviewList:Ljava/util/List;
 
-    const v7, 0x7f080549
+    const v7, 0x7f08057e
 
     invoke-static {v7}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -359,7 +359,7 @@
 
     iget-object v6, p0, Lcom/oneplus/settings/ui/OPCustomTonePreference;->mPreviewList:Ljava/util/List;
 
-    const v7, 0x7f08054a
+    const v7, 0x7f08057f
 
     invoke-static {v7}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -380,7 +380,7 @@
 
     iget-object v7, p0, Lcom/oneplus/settings/ui/OPCustomTonePreference;->mPreviewList:Ljava/util/List;
 
-    const v8, 0x7f080546
+    const v8, 0x7f08057b
 
     invoke-static {v8}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -390,7 +390,7 @@
 
     iget-object v7, p0, Lcom/oneplus/settings/ui/OPCustomTonePreference;->mPreviewList:Ljava/util/List;
 
-    const v8, 0x7f080547
+    const v8, 0x7f08057c
 
     invoke-static {v8}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 

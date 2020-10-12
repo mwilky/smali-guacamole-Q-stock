@@ -395,7 +395,7 @@
 
     iget-object v4, p1, Lcom/android/settings/print/PrintServiceSettingsFragment$ViewHolder;->itemView:Landroid/view/View;
 
-    const v5, 0x7f0a06fa
+    const v5, 0x7f0a0707
 
     invoke-virtual {v4, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -407,7 +407,7 @@
 
     iget-object v5, p1, Lcom/android/settings/print/PrintServiceSettingsFragment$ViewHolder;->itemView:Landroid/view/View;
 
-    const v6, 0x7f0a067a
+    const v6, 0x7f0a0687
 
     invoke-virtual {v5, v6}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -441,7 +441,7 @@
     :goto_0
     iget-object v6, p1, Lcom/android/settings/print/PrintServiceSettingsFragment$ViewHolder;->itemView:Landroid/view/View;
 
-    const v9, 0x7f0a03eb
+    const v9, 0x7f0a03ea
 
     invoke-virtual {v6, v9}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -612,7 +612,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d028b
+    const v1, 0x7f0d028f
 
     const/4 v2, 0x0
 

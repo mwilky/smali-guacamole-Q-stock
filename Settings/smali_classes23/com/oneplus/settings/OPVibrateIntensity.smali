@@ -445,7 +445,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f030110
+    const v2, 0x7f030111
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getStringArray(I)[Ljava/lang/String;
 
@@ -847,7 +847,7 @@
 
     invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
-    const v0, 0x7f1600c4
+    const v0, 0x7f1600c5
 
     invoke-virtual {p0, v0}, Lcom/oneplus/settings/OPVibrateIntensity;->addPreferencesFromResource(I)V
 
@@ -991,7 +991,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f030111
+    const v2, 0x7f030112
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getStringArray(I)[Ljava/lang/String;
 
@@ -1003,7 +1003,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f030110
+    const v3, 0x7f030111
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getStringArray(I)[Ljava/lang/String;
 

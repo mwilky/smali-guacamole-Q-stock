@@ -264,7 +264,7 @@ Seu administrador pode monitorar e gerenciar configurações, acesso, apps e dad
     <string name="advanced_security_title">Avançado</string>
     <string name="advanced_settings">Configurações avançadas</string>
     <string name="advanced_settings_summary">Ativa mais opções de configuração</string>
-    <string name="advanced_wificall_summary">Utilizar o Wi-Fi quando a rede móvel não estiver disponível</string>
+    <string name="advanced_wificall_summary">Utilizar a rede Wi-Fi quando a rede móvel não estiver disponível</string>
     <string name="airplane_mode">Modo avião</string>
     <string name="airplane_mode_description">O modo de avião desliga todas as ligações de rede, incluindo chamadas, mensagens de texto, acesso à Internet, o Wi-Fi e o Bluetooth.</string>
     <string name="airplane_mode_enable_dialog_message">"Quando o modo de avião está ativado, não poderá utilizar a Internet, o E-mail ou outras aplicações que precisem de uma ligação de dados, a não ser que utilize o Wi-Fi.
@@ -344,7 +344,7 @@ Basta aproximar os dispositivos (normalmente de costas um para o outro) e tocar 
     <string name="aod_horizon_light_effect_4">Dourado</string>
     <string name="aod_horizon_light_effect_5">McLaren</string>
     <string name="aod_horizon_light_select">SELECIONAR COR</string>
-    <string name="aod_horizon_light_snake_action">ATIVAR</string>
+    <string name="aod_horizon_light_snake_action">LIGAR</string>
     <string name="aod_horizon_light_snake_tip">Esta funcionalidade estará disponível quando \"Novas notificações\" estiver ligada</string>
     <string name="apn_apn">APN</string>
     <string name="apn_auth_type">Tipo de autenticação</string>
@@ -1638,7 +1638,7 @@ Se isso continuar acontecendo, talvez seja necessário desinstalá-lo para melho
     <string name="doze_always_on_summary">Mostrar horário, ícones de notificação e outras informações. Aumento do uso da bateria.</string>
     <string name="doze_always_on_title">Sempre ativado</string>
     <string name="doze_summary">Ativar o ecrã quando receber notificações.</string>
-    <string name="doze_title">Visualização ambiente</string>
+    <string name="doze_title">Vista ambiental</string>
     <string name="draw_overlay">Sobrepor a outros apps</string>
     <string name="dsds_dialog_cancel">Cancelar</string>
     <string name="dsds_dialog_confirm">Reiniciar</string>
@@ -2023,10 +2023,10 @@ Você poderá alterar essa opção mais tarde em \"Configurar\" > \"Apps e notif
     <string name="homepage_all_settings">Todas as configurações</string>
     <string name="homepage_condition_footer_content_description">Recolher</string>
     <string name="homepage_personal_settings">Sugestões</string>
-    <string name="hotspot_tip_message" formatted="false">"O Hotspot Móvel partilha os seus dados móveis com outros dispositivos compatíveis com Wi-Fi. Para ligar ao seu Hotspot Móvel: \u0009 
- 1: Ative o Wi-Fi no outro dispositivo.
+    <string name="hotspot_tip_message" formatted="false">"O Ponto de acesso móvel partilha os seus dados móveis com outros dispositivos Wi-Fi. Para estabelecer ligação ao seu Ponto de acesso móvel:\u0009
+ 1: Ligue o Wi-Fi no outro dispositivo.
  2: Selecione %s na lista de redes Wi-Fi disponíveis. 
- 3: Se for necessária uma palavra-passe, introduza %s. Para poupar a bateria, mantenha o telefone ligado à tomada quando utiliza o Hotspot Móvel. "</string>
+ 3: Se for necessária uma palavra-passe, introduza %s. Para poupar bateria, mantenha o seu telefone ligado à alimentação durante a utilização do Ponto de acesso móvel. "</string>
     <string name="hotspot_tip_title">Ponto de acesso móvel</string>
     <string name="hwui_force_dark_summary">Modificar o recurso de forçar modo escuro para que fique sempre ativado</string>
     <string name="hwui_force_dark_title">Modificar o recurso forçar modo escuro</string>
@@ -2313,6 +2313,7 @@ Você poderá alterar essa opção mais tarde em \"Configurar\" > \"Apps e notif
     <string name="location_settings_title">Localização</string>
     <string name="location_sources_heading">Fontes de localização</string>
     <string name="location_street_level">Permitir que os apps usem o GPS do telefone para determinar sua posição</string>
+    <string name="location_text">Localização</string>
     <string name="location_title">Meu Local</string>
     <string name="lock_after_timeout">Bloquear automaticamente</string>
     <string name="lock_after_timeout_summary">%1$s após suspensão</string>
@@ -2710,6 +2711,7 @@ Alternar para %1$s não cancelará o serviço da operadora %2$s."</string>
     <string name="my_device_info_account_preference_title">Conta</string>
     <string name="my_device_info_device_name_preference_title">Nome do dispositivo</string>
     <string name="n_cacrts">%d certificados CA</string>
+    <string name="nearest_station">Estação mais próxima</string>
     <string name="network_4G">4G (recomendado)</string>
     <string name="network_connected">Conectada</string>
     <string name="network_connecting">Conectando…</string>
@@ -3136,7 +3138,7 @@ bateria desliga-se automaticamente quando o dispositivo está a carregar."</stri
     <string name="oneplus_double_tap_power_none">Nenhum</string>
     <string name="oneplus_doze_summary_801">Apresente o relógio e outras informações no ecrã de espera</string>
     <string name="oneplus_doze_summary_new">Mostrar a hora, a data e as notificações no ecrã</string>
-    <string name="oneplus_doze_title">Visualização ambiente</string>
+    <string name="oneplus_doze_title">Vista ambiental</string>
     <string name="oneplus_doze_title_801">Vista ambiental</string>
     <string name="oneplus_draw_gesture_start_none">Nenhum</string>
     <string name="oneplus_draw_m_start_app">Desenhar M</string>
@@ -3257,7 +3259,7 @@ Aviso: o Desbloqueio facial é menos seguro que utilizar a impressão digital ou
 Deslize para cima a partir do lado esquerdo ou direito da parte inferior do ecrã."</string>
     <string name="oneplus_fullscreen_gesture_guide_done">"Agora conhece os novos gestos de navegação.
 Pode desligá-los reativando a barra de navegação nas definições."</string>
-    <string name="oneplus_fullscreen_gesture_guide_gotit">OK</string>
+    <string name="oneplus_fullscreen_gesture_guide_gotit">Compreendi</string>
     <string name="oneplus_fullscreen_gesture_guide_home">"Vamos tentar utilizar os gestos de navegação.
 Para ir para o ecrã inicial a qualquer momento, deslize para cima a partir do centro da parte inferior do ecrã."</string>
     <string name="oneplus_fullscreen_gesture_guide_multitask">Para aplicações mais recentes, deslize para cima a partir da parte inferior do ecrã e pause.</string>
@@ -3334,7 +3336,7 @@ Para ir para o ecrã inicial a qualquer momento, deslize para cima a partir do c
     <string name="oneplus_h2_contributors">Contribuidores HydrogenOS</string>
     <string name="oneplus_hand_up_proximity_summary">Ativar o ecrã quando pega no telemóvel</string>
     <string name="oneplus_hand_up_proximity_title">Elevar o ecrã</string>
-    <string name="oneplus_hand_up_to_show">Levante o telefone para mostrar</string>
+    <string name="oneplus_hand_up_to_show">Pegue no seu telefone para mostrar</string>
     <string name="oneplus_haptic_feedback_no_app">Nenhum jogo suportado instalado</string>
     <string name="oneplus_haptic_feedback_no_app_tip">Pode instalar o PUBG Mobile e o Asphalt 9</string>
     <string name="oneplus_haptic_feedback_summary">Oferece uma melhor resposta tátil nos jogos suportados</string>
@@ -3541,9 +3543,9 @@ Nota: a sua impressão digital poderá ser menos segura que um padrão forte ou 
     <string name="oneplus_preference_settings_behavior">Preferências</string>
     <string name="oneplus_preference_settings_custom_time">Comutação automática</string>
     <string name="oneplus_preference_settings_manual_open">Estado</string>
-    <string name="oneplus_preference_settings_turn_off_time">Às</string>
+    <string name="oneplus_preference_settings_turn_off_time">Até</string>
     <string name="oneplus_preference_settings_turn_on">Ativar Não incomodar</string>
-    <string name="oneplus_preference_settings_turn_on_time">Das</string>
+    <string name="oneplus_preference_settings_turn_on_time">Desde</string>
     <string name="oneplus_prior_to_use_you_need_to">Antes da utilização, terá de:</string>
     <string name="oneplus_privacy_policy">Política de Privacidade</string>
     <string name="oneplus_privacy_protection_title">Espaço encriptado</string>
@@ -3752,6 +3754,7 @@ Nota:
     <string name="oneplus_silent_mode_on">Modo silencioso ativado</string>
     <string name="oneplus_silent_mode_soc_tri_state_summary">As chamadas e notificações serão silenciadas, exceto os alarmes</string>
     <string name="oneplus_silent_mode_summary">As chamadas e notificações serão silenciadas, exceto os alarmes</string>
+    <string name="oneplus_silent_notifications_status_bar">Ocultar a notificação de silêncio na barra de estado</string>
     <string name="oneplus_sim1_ringtone_switch">Cartão SIM 1</string>
     <string name="oneplus_sim2_ringtone_switch">Cartão SIM 2</string>
     <string name="oneplus_simcard_title">SIM</string>
@@ -3842,7 +3845,7 @@ Nota:
     <string name="oneplus_tools_summary_U30">Modo de jogo, modo de bolso, ativação/desativação agendadas</string>
     <string name="oneplus_tools_summary_no_gamingmode">Aplicações protegidas, aplicações paralelas</string>
     <string name="oneplus_tools_title">Utilitários</string>
-    <string name="oneplus_top_level_accounts_summary">OnePlus account, other accounts</string>
+    <string name="oneplus_top_level_accounts_summary">Conta OnePlus, outras contas</string>
     <string name="oneplus_top_level_apps_and_notifs_summary">Aplicações predefinidas, permissões</string>
     <string name="oneplus_top_level_buttons_and_gestures_summary">Alert Slider, barra de navegação e gestos</string>
     <string name="oneplus_top_level_cloud_h2_summary">Sincronizar dados com a nuvem, Localizar Telemóvel</string>
@@ -3857,10 +3860,10 @@ Nota:
     <string name="oneplus_top_level_system_summary">Idioma e teclado, data e hora, reposição, atualizações do sistema</string>
     <string name="oneplus_top_level_system_summary_verizon">Idioma e teclado, hora, repor</string>
     <string name="oneplus_touch_vibrate">Vibração ao toque</string>
-    <string name="oneplus_turn_off_time">Às</string>
+    <string name="oneplus_turn_off_time">Até</string>
     <string name="oneplus_turn_on_feature_cancel">CANCELAR</string>
-    <string name="oneplus_turn_on_feature_ok">ATIVAR</string>
-    <string name="oneplus_turn_on_time">Das</string>
+    <string name="oneplus_turn_on_feature_ok">LIGAR</string>
+    <string name="oneplus_turn_on_time">Desde</string>
     <string name="oneplus_uninstatll_multi_app_msg">Após a desinstalação, todos os dados da aplicação paralela serão eliminados. Pretende continuar?</string>
     <string name="oneplus_uninstatll_multi_app_title">Paralelo %1$s</string>
     <string name="oneplus_uninstatll_multi_main_app_msg">Após a desinstalação, todos os dados desta aplicação e a aplicação paralela associada serão eliminados. Tem a certeza de que pretende desinstalar?</string>
@@ -3932,8 +3935,18 @@ Definir a rede como ocultada não irá alterar as definições do router."</stri
     <string name="op_audio_settings">Sintonizador de áudio</string>
     <string name="op_auto_power_saving">Poupança de energia automática</string>
     <string name="op_auto_power_saving_summary">Trocar automaticamente para a resolução apropriada sem esgotar a bateria</string>
+    <string name="op_charging_Station_mute_notifications">Silenciar notificações</string>
+    <string name="op_charging_footer_text">Será notificado sobre quaisquer estações de carregamento nas proximidades quando visita as localizações dos parceiros, tais como aeroportos ou eventos da OnePlus, como Pop-ups.</string>
     <string name="op_charging_optimization">Carregamento otimizado</string>
     <string name="op_charging_optimization_summary">Otimize o padrão de carregamento de acordo com os seus hábitos de utilização</string>
+    <string name="op_charging_station">Estações de carregamento nas proximidades</string>
+    <string name="op_charging_station_no_station">Não existem estações de carregamento nas proximidades</string>
+    <string name="op_charging_station_summary">Notificar-me quando existir uma estação de carregamento nas proximidades</string>
+    <string name="op_charging_stations">Estações de carregamento</string>
+    <string name="op_charging_stations_off_description">Para encontrar as estações de carregamento, é necessária a permissão de localização para detetar beacons BLE. Dê acesso à localização para começar a utilizar esta funcionalidade.</string>
+    <string name="op_charging_stations_off_header">Para encontrar as estações de carregamento, é necessária a permissão de localização para detetar beacons BLE. Dê acesso à localização para começar a utilizar esta funcionalidade.</string>
+    <string name="op_charing_station_mute_notifications_description">A notificação será licenciada durante 6 horas.</string>
+    <string name="op_charing_stations_mute_dynamic_time" formatted="false">Notificação silenciada durante %1d horas %2d minutos</string>
     <string name="op_china_mobile">CMCC</string>
     <string name="op_china_telecom">CTCC</string>
     <string name="op_china_unicom">CUCC</string>
@@ -3949,15 +3962,19 @@ Definir a rede como ocultada não irá alterar as definições do router."</stri
     <string name="op_default_apps_summary">Início, browser</string>
     <string name="op_default_luncher_title">Aplicação do Início</string>
     <string name="op_dnd_summary">Não incomodar</string>
+    <string name="op_enable_location_services">Para localizar e seguir as estações de carregamento nas proximidades, ative os serviços de localização</string>
+    <string name="op_enable_text">Ativar</string>
     <string name="op_face_unlock_set_unlock_password">Desbloqueio facial + Palavra-passe</string>
     <string name="op_face_unlock_set_unlock_pattern">Desbloqueio facial + Padrão</string>
     <string name="op_face_unlock_set_unlock_pin">Desbloqueio facial + PIN</string>
     <string name="op_face_unlock_skip_face">Continuar sem o Desbloqueio facial</string>
     <string name="op_failed_to_get_data">Não foi possível recuperar os dados</string>
     <string name="op_fetch_data_in_process">A carregar</string>
+    <string name="op_find_charging_stations">Encontrar estações</string>
     <string name="op_fragment">Curto</string>
     <string name="op_gamespace">Game Space</string>
     <string name="op_high_power_app_manager">Aplicações que consomem muita energia</string>
+    <string name="op_keep_location_services">Para localizar e seguir as estações de carregamento nas proximidades, mantenha os serviços de localização ativados</string>
     <string name="op_light_mode_title">Claro</string>
     <string name="op_linked_launch_summary">Gerir aplicações que podem ser iniciadas em segundo plano</string>
     <string name="op_linked_launch_title">Início automático de aplicações</string>
@@ -4747,7 +4764,7 @@ Nota: não é possível usar sua impressão digital para desbloquear este dispos
     <string name="settings_safetylegal_activity_unreachable">Você não tem uma conexão de dados. Para ver essas informações agora, acesse %s em qualquer computador conectado à Internet.</string>
     <string name="settings_safetylegal_title">Informações de segurança</string>
     <string name="settings_shortcut">Atalho para as configurações</string>
-    <string name="settings_switch_user_storage_insufficient">Armazenamento cheio, não é possível mudar de utilizador</string>
+    <string name="settings_switch_user_storage_insufficient">Armazenamento cheio, não é posível mudar de utilizador</string>
     <string name="setup_fingerprint_enroll_enrolling_skip_message">Você optou por usar a impressão digital como uma maneira de desbloquear seu smartphone. Se você pular agora, precisará fazer essa configuração mais tarde. A configuração demora apenas um minuto aproximadamente.</string>
     <string name="setup_fingerprint_enroll_enrolling_skip_title">Pular configuração da impressão digital?</string>
     <string name="setup_fingerprint_enroll_skip_after_adding_lock_text">A configuração da impressão digital leva apenas um ou dois minutos. Se você pular essa etapa, poderá adicionar sua impressão digital mais tarde nas configurações.</string>
@@ -5386,6 +5403,7 @@ Um método do Google para sincronizar dados a fim de permitir acesso aos seus co
     <string name="uicc_lock_summary">O seu dispositivo está bloqueado para utilizar apenas SIMs Sprint</string>
     <string name="uicc_unlock">Desbloqueio UICC</string>
     <string name="uicc_unlock_summary">O seu dispositivo é desbloqueado</string>
+    <string name="under_meters">Menos de %1d metros</string>
     <string name="uninstall_activity_text">%1$s faz parte da seguinte aplicação:</string>
     <string name="uninstall_all_blocked_profile_owner">Esta aplicação é obrigatória para alguns utilizadores ou perfis e foi desinstalada para outros</string>
     <string name="uninstall_all_users_text">Desinstalar para todos os usuários</string>
@@ -5411,7 +5429,7 @@ Um método do Google para sincronizar dados a fim de permitir acesso aos seus co
     <string name="uninstallapps_confirm">Confirmar</string>
     <string name="uninstallapps_confirm_dialog_body">Todas as aplicações selecionadas e todos os ficheiros associados ao pacote de aplicação serão removidos.</string>
     <string name="uninstallapps_confirm_dialog_title">Remover as aplicações selecionadas?</string>
-    <string name="uninstallapps_selected">selecionado</string>
+    <string name="uninstallapps_selected">selecionadas</string>
     <string name="uninstallapps_toast_message">foram removidas aplicações</string>
     <string name="uninstalling">A desinstalar…</string>
     <string name="uninstalling_notification_channel">A desinstalar</string>

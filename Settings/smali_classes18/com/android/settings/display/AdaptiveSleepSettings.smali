@@ -75,7 +75,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f080324
+    const v1, 0x7f080357
 
     invoke-virtual {v0, v1}, Lcom/oneplus/settings/widget/OPFooterPreference;->setIcon(I)V
 

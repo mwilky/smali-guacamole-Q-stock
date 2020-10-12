@@ -58,7 +58,7 @@
 
     iget-object v0, p0, Lcom/android/settings/bluetooth/BluetoothPairingPreferenceController;->mPreference:Landroidx/preference/Preference;
 
-    const v1, 0x7f08019e
+    const v1, 0x7f0801a0
 
     invoke-virtual {v0, v1}, Landroidx/preference/Preference;->setIcon(I)V
 

@@ -14,6 +14,7 @@
         <SwitchPreference android:title="@string/lock_screen_notifs_redact_work" android:key="lock_screen_work_redact" android:summary="@string/lock_screen_notifs_redact_work_summary" settings:controller="com.android.settings.notification.RedactNotificationPreferenceController" />
     </PreferenceCategory>
     <PreferenceCategory android:key="configure_notifications_advanced" android:order="15" settings:initialExpandedChildrenCount="0">
+        <SwitchPreference android:title="@string/oneplus_silent_notifications_status_bar" android:key="silent_icons" settings:controller="com.android.settings.notification.SilentStatusBarPreferenceController" />
         <SwitchPreference android:title="@string/oneplus_snooze_options_title" android:key="show_snooze_options" settings:controller="com.android.settings.notification.SnoozeNotificationPreferenceController" />
         <SwitchPreference android:title="@string/asst_capabilities_actions_replies_title" android:key="asst_capabilities_actions_replies" android:summary="@string/asst_capabilities_actions_replies_summary" settings:controller="com.android.settings.notification.AssistantCapabilityPreferenceController" />
         <SwitchPreference android:title="@string/notification_badging_title" android:key="notification_badging" settings:controller="com.android.settings.notification.BadgingNotificationPreferenceController" />

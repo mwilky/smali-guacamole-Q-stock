@@ -95,7 +95,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0801d1
+    const v1, 0x7f080204
 
     invoke-interface {v0, v1}, Landroid/view/MenuItem;->setIcon(I)Landroid/view/MenuItem;
 
@@ -111,7 +111,7 @@
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 3
 
-    const v0, 0x7f0d033f
+    const v0, 0x7f0d0343
 
     const/4 v1, 0x0
 

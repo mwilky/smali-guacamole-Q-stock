@@ -2313,6 +2313,7 @@
     <string name="location_settings_title">מיקום</string>
     <string name="location_sources_heading">מקורות מיקום</string>
     <string name="location_street_level">‏אפשר לאפליקציות להשתמש ב-GPS בטלפון שלך כדי לאתר את מיקומך</string>
+    <string name="location_text">מיקום</string>
     <string name="location_title">המיקום שלי</string>
     <string name="lock_after_timeout">נעילה אוטומטית</string>
     <string name="lock_after_timeout_summary">%1$s לאחר שינה</string>
@@ -2625,9 +2626,9 @@
     <string name="mobile_data_settings_title">חבילת גלישה</string>
     <string name="mobile_data_usage_title">שימוש בחבילת גלישה באפליקציה</string>
     <string name="mobile_hotspot_airplane_off_error">כדי להפעיל את נקודת הגישה, נא לכבות מצב טיסה</string>
-    <string name="mobile_hotspot_authoration_error">"כדי להשתמש בנקודת גישה, יש צורך להירשם כמנוי לשירותי נקודת גישה.
+    <string name="mobile_hotspot_authoration_error">"כדי להשתמש בנקודת גישה, יש צורך להירשם כמנוי לשירותי נקודת הגישה.
 
-כדי להירשם לנקודת גישה יש לבקר ב- My Verizon או להתקשר לשירות לקוחות בטלפון ‏0204‏-922 ‏(800)."</string>
+כדי להירשם לנקודת גישה יש לבקר ב-My Verizon או להתקשר לשירות לקוחות בטלפון ‏0204‏-922 ‏(800)."</string>
     <string name="mobile_hotspot_data_off_error">כדי להפעיל את נקודת הגישה, נא להפעיל נתוני נייד</string>
     <string name="mobile_insert_sim_card">‏הכנס כרטיס SIM ואתחל</string>
     <string name="mobile_network_active_esim">‏פעיל / SIM שהורדת</string>
@@ -2709,6 +2710,7 @@
     <string name="mvno_type">‏סוג MVNO</string>
     <string name="my_device_info_account_preference_title">חשבון</string>
     <string name="my_device_info_device_name_preference_title">שם המכשיר</string>
+    <string name="nearest_station">התחנה הקרובה ביותר</string>
     <string name="network_4G">‏4G (מומלץ)</string>
     <string name="network_connected">מחובר</string>
     <string name="network_connecting">מתחבר…</string>
@@ -2992,8 +2994,8 @@
     <string name="oneplus_applock_at_least_four_points">צייר כדי לכלול לפחות 4 נקודות</string>
     <string name="oneplus_applock_lockpassword_confirm_your_pin_header">הזן את מספר הזיהוי האישי שלך</string>
     <string name="oneplus_applock_need_to_unlock_wrong">סיסמה שגויה</string>
-    <string name="oneplus_applock_pattern_header">צייר את התבנית שלך</string>
-    <string name="oneplus_applock_wrong_pattern_header">התבנית שגויה</string>
+    <string name="oneplus_applock_pattern_header">צייר את הדפוס שלך</string>
+    <string name="oneplus_applock_wrong_pattern_header">תבנית שגויה</string>
     <string name="oneplus_apps_notifications">יישומים והודעות</string>
     <string name="oneplus_apps_title">יישומים</string>
     <string name="oneplus_aptx_hd_support">תמיכת aptX / aptX HD</string>
@@ -3089,7 +3091,7 @@ Battery נכבה אוטומטית כאשר המכשיר במצב טעינה."</s
     <string name="oneplus_data_usage_control_title">בקרת שימוש בנתונים</string>
     <string name="oneplus_dc_dimming_summary">עמעום DC יתאים את עוצמת הבהירות של המסך על ידי שינוי עצמת המתח של המסך. בזמן ההפעלה, הבהוב המסך יפחת בבהירות נמוכה. אולם תופעה זו עשויה לגרום להצגת צבעים לא רגילים במקרים מסוימים.</string>
     <string name="oneplus_dc_dimming_title">עמעום DC</string>
-    <string name="oneplus_deep_clear_way">סריקה עמוקה</string>
+    <string name="oneplus_deep_clear_way">ניקוי עמוק</string>
     <string name="oneplus_deep_clear_way_summary">מנקה תהליכי רקע, ולכן ייתכן שיישומים מסוימים יפסיקו לפעול ושלא תקבל התראות</string>
     <string name="oneplus_deep_optimization">מיטוב לעומק</string>
     <string name="oneplus_deep_optimization_summary">כאשר תבטל את האפשרות אופטימיזציה עמוקה, צריכת החשמל תגדל באופן ניכר, תופעה היכולה להשפיע על השימוש הרגיל בטלפון.</string>
@@ -3539,7 +3541,7 @@ Battery נכבה אוטומטית כאשר המכשיר במצב טעינה."</s
     <string name="oneplus_preference_settings_manual_open">מצב</string>
     <string name="oneplus_preference_settings_turn_off_time">עד</string>
     <string name="oneplus_preference_settings_turn_on">"הפעל את 'אל תפריע'"</string>
-    <string name="oneplus_preference_settings_turn_on_time">החל מ-</string>
+    <string name="oneplus_preference_settings_turn_on_time">מ-</string>
     <string name="oneplus_prior_to_use_you_need_to">לפני השימוש, עליך</string>
     <string name="oneplus_privacy_policy">מדיניות פרטיות</string>
     <string name="oneplus_privacy_protection_title">חלל מוצפן</string>
@@ -3747,6 +3749,7 @@ Battery נכבה אוטומטית כאשר המכשיר במצב טעינה."</s
     <string name="oneplus_silent_mode_on">מצב שקט פועל</string>
     <string name="oneplus_silent_mode_soc_tri_state_summary">שיחות והודעות יושתקו, מלבד התראות</string>
     <string name="oneplus_silent_mode_summary">שיחות והודעות יושתקו, מלבד התראות</string>
+    <string name="oneplus_silent_notifications_status_bar">הסתר התראה שקטה בשורת המצב</string>
     <string name="oneplus_sim1_ringtone_switch">כרטיס SIM 1</string>
     <string name="oneplus_sim2_ringtone_switch">כרטיס SIM 2</string>
     <string name="oneplus_simcard_title">כרטיס SIM</string>
@@ -3837,7 +3840,7 @@ Battery נכבה אוטומטית כאשר המכשיר במצב טעינה."</s
     <string name="oneplus_tools_summary_U30">מצב משחקים, מצב כיס, הפעלה מתוזמנת/כיבוי מתוזמן</string>
     <string name="oneplus_tools_summary_no_gamingmode">נועל האפליקציות, אפליקציות מקבילות</string>
     <string name="oneplus_tools_title">שירותים</string>
-    <string name="oneplus_top_level_accounts_summary">OnePlus account, other accounts</string>
+    <string name="oneplus_top_level_accounts_summary">חשבון OnePlus, חשבונות אחרים</string>
     <string name="oneplus_top_level_apps_and_notifs_summary">יישומי ברירת מחדל, הרשאות</string>
     <string name="oneplus_top_level_buttons_and_gestures_summary">מחוון התראה, סרגל ניווט ומחוות</string>
     <string name="oneplus_top_level_cloud_h2_summary">סנכרון נתונים עם ענן, מצא את הטלפון שלי</string>
@@ -3855,7 +3858,7 @@ Battery נכבה אוטומטית כאשר המכשיר במצב טעינה."</s
     <string name="oneplus_turn_off_time">עד</string>
     <string name="oneplus_turn_on_feature_cancel">ביטול</string>
     <string name="oneplus_turn_on_feature_ok">הפעל</string>
-    <string name="oneplus_turn_on_time">החל מ-</string>
+    <string name="oneplus_turn_on_time">מ-</string>
     <string name="oneplus_uninstatll_multi_app_msg">כל הנתונים בתוך היישום המקביל יימחקו בעת הסרת ההתקנה. האם אתה בטוח שברצונך להסיר את ההתקנה?</string>
     <string name="oneplus_uninstatll_multi_app_title">%1$s מקביל</string>
     <string name="oneplus_uninstatll_multi_main_app_msg">כל הנתונים בתוך היישום הזה והיישום המקביל הקשור אליו יימחקו בעת הסרת ההתקנה. האם אתה בטוח שברצונך להסיר את ההתקנה?</string>
@@ -3927,8 +3930,18 @@ Battery נכבה אוטומטית כאשר המכשיר במצב טעינה."</s
     <string name="op_audio_settings">כוונן שמע</string>
     <string name="op_auto_power_saving">חיסכון חשמל אוטומטי</string>
     <string name="op_auto_power_saving_summary">החלפה אוטומטית לרזולוציה המתאימה בלי לרוקן את הסוללה</string>
+    <string name="op_charging_Station_mute_notifications">השתק הודעות</string>
+    <string name="op_charging_footer_text">תקבל הודעה על תחנות טעינה קרובות כאשר תבקר במיקומי שותפים כגון נמלי תעופה או באירועי OnePlus כמו אירועי Pop-Up.</string>
     <string name="op_charging_optimization">טעינה ממוטבת</string>
     <string name="op_charging_optimization_summary">מטב את דפוס הטעינה בהתאם להרגלי השימוש שלך</string>
+    <string name="op_charging_station">תחנות טעינה קרובות</string>
+    <string name="op_charging_station_no_station">אין תחנות טעינה ליד</string>
+    <string name="op_charging_station_summary">הודע כאשר יש תחנת טעינה קרובה</string>
+    <string name="op_charging_stations">תחנות טעינה</string>
+    <string name="op_charging_stations_off_description">כדי למצוא תחנות טעינה, נדרשת הרשאת מיקום כדי לאתר משואות BLE. ספק גישה למיקום כדי להתחיל להשתמש בתכונה זו.</string>
+    <string name="op_charging_stations_off_header">כדי למצוא תחנות טעינה, נדרשות הרשאות מיקום לזיהוי משואות BLE. ספק גישה למיקום כדי להתחיל להשתמש בתכונה.</string>
+    <string name="op_charing_station_mute_notifications_description">הודעות יושתקו למשך 6 שעות.</string>
+    <string name="op_charing_stations_mute_dynamic_time" formatted="false">התראות הושתקו למשך %1d שעות %2d דקות</string>
     <string name="op_china_mobile">CMCC</string>
     <string name="op_china_telecom">CTCC</string>
     <string name="op_china_unicom">CUCC</string>
@@ -3944,15 +3957,19 @@ Battery נכבה אוטומטית כאשר המכשיר במצב טעינה."</s
     <string name="op_default_apps_summary">בית, דפדפן</string>
     <string name="op_default_luncher_title">אפליקציית בית</string>
     <string name="op_dnd_summary">נא לא להפריע</string>
+    <string name="op_enable_location_services">כדי למצוא תחנות טעינה בקרבת מקום ולעקוב אחריהן, יש להפעיל שירותי מיקום</string>
+    <string name="op_enable_text">הפעל</string>
     <string name="op_face_unlock_set_unlock_password">שחרור נעילה באמצעות פנים + סיסמה</string>
     <string name="op_face_unlock_set_unlock_pattern">שחרור נעילה באמצעות פנים + תבנית</string>
     <string name="op_face_unlock_set_unlock_pin">שחרור נעילה באמצעות פנים + קוד PIN</string>
     <string name="op_face_unlock_skip_face">המשך ללא שחרור נעילה באמצעות פנים</string>
     <string name="op_failed_to_get_data">אחזור נתונים נכשל</string>
     <string name="op_fetch_data_in_process">טוען</string>
+    <string name="op_find_charging_stations">מצא תחנות</string>
     <string name="op_fragment">קצר</string>
     <string name="op_gamespace">מקום למשחקים</string>
     <string name="op_high_power_app_manager">אפליקציות המשתמשות במתח חשמלי גבוה</string>
+    <string name="op_keep_location_services">כדי למצוא תחנות טעינה בקרבת מקום ולעקוב אחריהן, יש להשאיר שירותי מיקום פועלים</string>
     <string name="op_light_mode_title">בהיר</string>
     <string name="op_linked_launch_summary">נהל יישומים מקושרים שרשאים לפעול ברקע</string>
     <string name="op_linked_launch_title">הפעלה אוטומטית של יישומים</string>
@@ -5379,6 +5396,7 @@ Voice over Wi-Fi:‏ %3$s
     <string name="uicc_lock_summary">המכשיר שלך נעול על-ידי Sprint SIMs בלבד</string>
     <string name="uicc_unlock">פתיחת UICC</string>
     <string name="uicc_unlock_summary">המכשיר שלך לא נעול</string>
+    <string name="under_meters">מתחת ל-%1d מטרים</string>
     <string name="uninstall_activity_text">%1$sהוא חלק מהיישום הבא:</string>
     <string name="uninstall_all_blocked_profile_owner">יישום זה נדרש עבור משתמשים או פרופילים מסויימים, והתקנתו הוסרה עבור אחרים</string>
     <string name="uninstall_all_users_text">להסרת התקנה עבור כל המשתמשים</string>

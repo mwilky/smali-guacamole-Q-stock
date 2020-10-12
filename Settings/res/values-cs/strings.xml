@@ -267,7 +267,7 @@ Administrátor může sledovat a spravovat nastavení, přístup, aplikace a d
     <string name="advanced_wificall_summary">Používat síť Wi-Fi, když není mobilní síť k dispozici</string>
     <string name="airplane_mode">Režim Letadlo</string>
     <string name="airplane_mode_description">Režim Letadlo vypne všechna síťová připojení, včetně hovorů, zpráv, přístupu na internet, Wi-Fi a Bluetooth.</string>
-    <string name="airplane_mode_enable_dialog_message">"Pokud je zapnutý režim Letadlo a nepoužijete Wi-Fi, nebudete moct používat internet, e-mail, volání Wi-Fi ani jiné aplikace, které potřebují datové připojení.
+    <string name="airplane_mode_enable_dialog_message">"Pokud je zapnutý režim Letadlo a nepoužijete Wi-Fi, nebudete moct používat internet, e-mail ani jiné aplikace, které potřebují datové připojení.
 
 Zapnout režim Letadlo?"</string>
     <string name="airplane_mode_enable_dialog_message_wifi_volte">"Pokud je zapnutý režim Letadlo a nepoužijete Wi-Fi, nebudete moct používat internet, e-mail, volání Wi-Fi ani jiné aplikace, které potřebují datové připojení.
@@ -442,7 +442,7 @@ Přiložte zařízení k sobě (zpravidla zadní stranou) a klepněte na obraz
     <string name="app_permissions">Správce oprávnění</string>
     <string name="app_permissions_summary">Aplikace, které používají oprávnění %1$s</string>
     <string name="app_permissions_warning_message">Zakázání oprávnění může způsobit, že aplikace přestane pracovat správně. Prosím postupujte opatrně.</string>
-    <string name="app_permissions_warning_title">Upozornění</string>
+    <string name="app_permissions_warning_title">Varování</string>
     <string name="app_process_limit_title">Omezení procesů na pozadí</string>
     <string name="app_restrictions_custom_label">Nastavit omezení aplikací</string>
     <string name="app_sees_restricted_accounts">Tato aplikace má přístup k vašim účtům</string>
@@ -1528,7 +1528,7 @@ Chcete-li problém odstranit, vypněte aplikaci %1$s a zabraňte jejímu spušt
 Tento problém můžete vyřešit tím, že aplikaci zakážete přístup k poloze."</string>
     <string name="dialog_location_ok">Vypnout</string>
     <string name="dialog_location_title">Vypnout přístup k poloze?</string>
-    <string name="dialog_mhs_error">Počkejte, probíhá ověřování...</string>
+    <string name="dialog_mhs_error">Počkejte, probíhá ověřování…</string>
     <string name="dialog_open_network_cancel">zrušit</string>
     <string name="dialog_open_network_connect">Připojit</string>
     <string name="dialog_open_network_title">Připojujete se k nezabezpečené (otevřené) síti Wi-Fi</string>
@@ -2317,6 +2317,7 @@ Toto nastavení můžete později změnit v sekci Nastavení > Aplikace a ozn�
     <string name="location_settings_title">Poloha</string>
     <string name="location_sources_heading">Zdroje polohy</string>
     <string name="location_street_level">Povolit aplikacím ve vašem telefonu určovat polohu pomocí GPS</string>
+    <string name="location_text">Poloha</string>
     <string name="location_title">Moje poloha</string>
     <string name="lock_after_timeout">Automaticky zamknout za</string>
     <string name="lock_after_timeout_summary">%1$s po přechodu do spánku</string>
@@ -2714,6 +2715,7 @@ Přepnutím na operátora %1$s nezrušíte službu %2$s."</string>
     <string name="my_device_info_account_preference_title">Účet</string>
     <string name="my_device_info_device_name_preference_title">Název zařízení</string>
     <string name="n_cacrts">certifikáty CA (%d)</string>
+    <string name="nearest_station">Nejbližší stanice</string>
     <string name="network_4G">4G (doporučeno)</string>
     <string name="network_connected">Připojeno</string>
     <string name="network_connecting">Připojování…</string>
@@ -2986,7 +2988,7 @@ Tímto také aplikaci umožníte zapínat nebo vypínat režim Nerušit a měni
     <string name="oneplus_app_locker_summary">Vybrat aplikace pro šifrování</string>
     <string name="oneplus_app_locker_switch">Skrýt obsah oznámení</string>
     <string name="oneplus_app_locker_switch_summary">Obsah oznámení bude pro aplikace se zapnutým zámkem aplikací skrytý</string>
-    <string name="oneplus_app_locker_title">Zámek aplikací</string>
+    <string name="oneplus_app_locker_title">Zámek aplikace</string>
     <string name="oneplus_app_network_settings">Řízení využití dat</string>
     <string name="oneplus_app_notification_allow_led">LED zapnuto</string>
     <string name="oneplus_app_notification_not_allow_led">LED vypnuto</string>
@@ -3762,6 +3764,7 @@ Poznámka:
     <string name="oneplus_silent_mode_on">Je zapnut tichý režim</string>
     <string name="oneplus_silent_mode_soc_tri_state_summary">Hovory a oznámení budou, s výjimkou alarmů, ztišeny</string>
     <string name="oneplus_silent_mode_summary">Hovory a oznámení budou, s výjimkou alarmů, ztišeny</string>
+    <string name="oneplus_silent_notifications_status_bar">Skrýt tichá oznámení na stavovém řádku</string>
     <string name="oneplus_sim1_ringtone_switch">SIM Karta 1</string>
     <string name="oneplus_sim2_ringtone_switch">SIM Karta 2</string>
     <string name="oneplus_simcard_title">SIM</string>
@@ -3852,7 +3855,7 @@ Poznámka:
     <string name="oneplus_tools_summary_U30">Herní režim, kapesní režim, naplánované zapnutí/vypnutí</string>
     <string name="oneplus_tools_summary_no_gamingmode">Zámek aplikací, paralelní aplikace</string>
     <string name="oneplus_tools_title">Nástroje</string>
-    <string name="oneplus_top_level_accounts_summary">OnePlus account, other accounts</string>
+    <string name="oneplus_top_level_accounts_summary">Účet OnePlus, jiné účty</string>
     <string name="oneplus_top_level_apps_and_notifs_summary">Výchozí aplikace, oprávnění</string>
     <string name="oneplus_top_level_buttons_and_gestures_summary">Alert Slider, navigační panel a gesta</string>
     <string name="oneplus_top_level_cloud_h2_summary">Synchronizace dat s cloudem, funkce Najdi můj telefon</string>
@@ -3942,8 +3945,18 @@ Nastavení sítě jako skryté nezmění nastavení směrovače."</string>
     <string name="op_audio_settings">Ladění audia</string>
     <string name="op_auto_power_saving">Automatická úspora energie</string>
     <string name="op_auto_power_saving_summary">Automaticky přepínat na příslušné rozlišení bez spotřebovávání baterie</string>
+    <string name="op_charging_Station_mute_notifications">Ztlumit oznámení</string>
+    <string name="op_charging_footer_text">Budete upozorněni na nabíjecí stanice v okolí, když budete na letišti nebo navštívíte akce společnosti Oneplus, jako např. Pop-ups.</string>
     <string name="op_charging_optimization">Optimalizované nabíjení</string>
     <string name="op_charging_optimization_summary">Optimalizujte způsob nabíjení podle svých zvyků používání</string>
+    <string name="op_charging_station">Nabíjecí stanice v blízkosti</string>
+    <string name="op_charging_station_no_station">Žádné nabíjecí stanice v okolí</string>
+    <string name="op_charging_station_summary">Upozornit na nabíjecí stanici v okolí</string>
+    <string name="op_charging_stations">Nabíjecí stanice</string>
+    <string name="op_charging_stations_off_description">K nalezení nabíjecích stanic je nutné oprávnění pro přístup k poloze, aby bylo možné detekovat signály BLE. Chcete-li používat tuto funkci, povolte nejprve přístup k poloze.</string>
+    <string name="op_charging_stations_off_header">K nalezení nabíjecích stanic je nutné oprávnění pro přístup k poloze, aby bylo možné detekovat signály BLE. Chcete-li používat tuto funkci, povolte nejprve přístup k poloze.</string>
+    <string name="op_charing_station_mute_notifications_description">Oznámení budou ztlumena po dobu 6 hodin.</string>
+    <string name="op_charing_stations_mute_dynamic_time" formatted="false">Oznámení je ztlumeno na dobu %1d hod. a %2d min.</string>
     <string name="op_china_mobile">CMCC</string>
     <string name="op_china_telecom">CTCC</string>
     <string name="op_china_unicom">CUCC</string>
@@ -3963,15 +3976,19 @@ Nastavení sítě jako skryté nezmění nastavení směrovače."</string>
     "</string>
     <string name="op_default_luncher_title">Domovská aplikace</string>
     <string name="op_dnd_summary">Nerušit</string>
+    <string name="op_enable_location_services">Povolte služby zjišťování polohy, aby bylo možné vyhledat a sledovat nabíjecí stanice v okolí</string>
+    <string name="op_enable_text">Povolit</string>
     <string name="op_face_unlock_set_unlock_password">Odemčení pomocí rozpoznání tváře + heslo</string>
     <string name="op_face_unlock_set_unlock_pattern">Odemčení pomocí rozpoznání tváře + vzor</string>
     <string name="op_face_unlock_set_unlock_pin">Odemčení pomocí rozpoznání tváře + PIN</string>
     <string name="op_face_unlock_skip_face">Pokračovat bez odemčení pomocí rozpoznání tváře</string>
     <string name="op_failed_to_get_data">Nepodařilo se načíst data</string>
     <string name="op_fetch_data_in_process">Načítání</string>
+    <string name="op_find_charging_stations">Najít stanice</string>
     <string name="op_fragment">Krátký</string>
     <string name="op_gamespace">Game Space</string>
     <string name="op_high_power_app_manager">Aplikace s vysokým využitím energie</string>
+    <string name="op_keep_location_services">Nechte povolené služby zjišťování polohy, aby bylo možné vyhledat a sledovat nabíjecí stanice v okolí</string>
     <string name="op_light_mode_title">Světlé</string>
     <string name="op_linked_launch_summary">Správa aplikací může být spuštěna na pozadí</string>
     <string name="op_linked_launch_title">Automatické spuštění aplikace</string>
@@ -4420,7 +4437,7 @@ Nebude to mít vliv na žádné vámi stažené aplikace, vaše osobní údaje a
 "<li>Nastavení účtu</li></string>
     <string name="reset_system_settings_dialog_message">"Resetování nastavení systému změní některá vámi nastavená přizpůsobení, jako např. vyzvánění, jas obrazovky a chování klávesnice.
 Opravdu chcete resetovat nastavení systému? Tuto akci nelze vrátit zpět."</string>
-    <string name="reset_system_settings_dialog_title">Upozornění</string>
+    <string name="reset_system_settings_dialog_title">Varování</string>
     <string name="reset_system_settings_title">Resetovat nastavení</string>
     <string name="restore_default_apn">Obnovování výchozích nastavení přístupového bodu</string>
     <string name="restore_default_apn_completed">Výchozí nastavení přístupového bodu bylo obnoveno.</string>
@@ -5286,7 +5303,7 @@ Nový pohled společnosti Google na synchronizaci dat vám poskytuje přístup k
     <string name="tether_error_item_default">Sdílení internetového připojení</string>
     <string name="tether_error_message">Nejste přihlášeni k %1$s.</string>
     <string name="tether_error_title">Chyba %1$s</string>
-    <string name="tether_no_sim_message">Vložte kartu SIM, abyste mohli používat mobilní hotspot a další možnosti sdílení internetového připojení</string>
+    <string name="tether_no_sim_message">Vložte kartu SIM, abyste mohli používat Mobilní hotspot a další možnosti sdílení internetového připojení</string>
     <string name="tether_no_sim_title">Žádná karta SIM</string>
     <string name="tether_settings_disabled_on_data_saver">Když je zapnutý Spořič obrazovky, nelze sdílet datové připojení ani používat přenosné hotspoty</string>
     <string name="tether_settings_summary_hotspot_off_tether_on">Sdílení datového připojení</string>
@@ -5410,6 +5427,7 @@ Nový pohled společnosti Google na synchronizaci dat vám poskytuje přístup k
     <string name="uicc_lock_summary">Vaše zařízení je uzamčené pouze pro Sprint SIM</string>
     <string name="uicc_unlock">Odblokovat UICC</string>
     <string name="uicc_unlock_summary">Vaše zařízení je odemčené</string>
+    <string name="under_meters">Méně než %1d m</string>
     <string name="uninstall_activity_text">%1$s je součástí následující aplikace:</string>
     <string name="uninstall_all_blocked_profile_owner">Tato aplikace je vyžadována pro některé uživatele nebo profily a byla odinstalována pro ostatní</string>
     <string name="uninstall_all_users_text">Odinstalovat pro všechny uživatele</string>
@@ -5435,7 +5453,7 @@ Nový pohled společnosti Google na synchronizaci dat vám poskytuje přístup k
     <string name="uninstallapps_confirm">Potvrdit</string>
     <string name="uninstallapps_confirm_dialog_body">Odeberou se všechny vybrané aplikace a soubory související s balíčkem aplikace.</string>
     <string name="uninstallapps_confirm_dialog_title">Odebrat vybrané aplikace?</string>
-    <string name="uninstallapps_selected">vybráno</string>
+    <string name="uninstallapps_selected">vybrané</string>
     <string name="uninstallapps_toast_message">aplikace byly odebrány</string>
     <string name="uninstalling">Probíhá odinstalace…</string>
     <string name="uninstalling_notification_channel">Spuštěné odinstalace</string>

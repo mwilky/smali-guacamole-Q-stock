@@ -211,7 +211,7 @@
 
     invoke-virtual {v2, v1}, Landroidx/preference/Preference;->setKey(Ljava/lang/String;)V
 
-    const v1, 0x7f1211cb
+    const v1, 0x7f1211df
 
     invoke-virtual {v2, v1}, Landroidx/preference/Preference;->setTitle(I)V
 
@@ -1658,7 +1658,7 @@
 
     iget-object v2, v0, Lcom/android/settings/fuelgauge/BatteryAppListPreferenceController;->mAppListGroup:Landroidx/preference/PreferenceGroup;
 
-    const v3, 0x7f1211ca
+    const v3, 0x7f1211de
 
     invoke-virtual {v2, v3}, Landroidx/preference/PreferenceGroup;->setTitle(I)V
 
@@ -1774,7 +1774,7 @@
     :cond_3
     iget-object v11, v0, Lcom/android/settings/fuelgauge/BatteryAppListPreferenceController;->mPrefContext:Landroid/content/Context;
 
-    const v12, 0x7f12109d
+    const v12, 0x7f1210a1
 
     invoke-virtual {v11, v12}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

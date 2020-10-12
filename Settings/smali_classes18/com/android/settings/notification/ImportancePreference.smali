@@ -123,7 +123,7 @@
 
     iget-object v0, p0, Lcom/android/settings/notification/ImportancePreference;->mContext:Landroid/content/Context;
 
-    const v1, 0x7f080157
+    const v1, 0x7f080158
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -133,7 +133,7 @@
 
     iget-object v0, p0, Lcom/android/settings/notification/ImportancePreference;->mContext:Landroid/content/Context;
 
-    const v1, 0x7f080158
+    const v1, 0x7f080159
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -281,7 +281,7 @@
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setClickable(Z)V
 
-    const v0, 0x7f0a0628
+    const v0, 0x7f0a0635
 
     invoke-virtual {p1, v0}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 
@@ -445,11 +445,11 @@
 
     const/4 v3, 0x0
 
-    const v4, 0x7f0a062b
+    const v4, 0x7f0a0638
 
-    const v5, 0x7f0a062a
+    const v5, 0x7f0a0637
 
-    const v6, 0x7f0a0629
+    const v6, 0x7f0a0636
 
     const v7, 0x7f0a007d
 

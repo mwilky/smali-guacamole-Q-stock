@@ -126,7 +126,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0a03bb
+    const v1, 0x7f0a03ba
 
     invoke-virtual {v0, v1}, Landroidx/fragment/app/FragmentManager;->findFragmentById(I)Landroidx/fragment/app/Fragment;
 
@@ -218,7 +218,7 @@
 
     if-eqz v1, :cond_0
 
-    const v1, 0x7f1304d6
+    const v1, 0x7f1304d8
 
     invoke-virtual {p0, v1}, Lcom/android/settings/password/ConfirmDeviceCredentialBaseActivity;->setTheme(I)V
 
@@ -241,7 +241,7 @@
 
     if-eqz v1, :cond_1
 
-    const v1, 0x7f1304d5
+    const v1, 0x7f1304d7
 
     invoke-virtual {p0, v1}, Lcom/android/settings/password/ConfirmDeviceCredentialBaseActivity;->setTheme(I)V
 
@@ -252,7 +252,7 @@
     goto :goto_0
 
     :cond_1
-    const v1, 0x7f1301cd
+    const v1, 0x7f1301ce
 
     invoke-virtual {p0, v1}, Lcom/android/settings/password/ConfirmDeviceCredentialBaseActivity;->setTheme(I)V
 
@@ -630,7 +630,7 @@
 
     if-eqz v0, :cond_0
 
-    const v0, 0x7f1301cb
+    const v0, 0x7f1301cc
 
     invoke-virtual {p0, v0}, Lcom/android/settings/password/ConfirmDeviceCredentialBaseActivity;->setTheme(I)V
 

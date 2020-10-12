@@ -35,7 +35,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f030119
+    const v1, 0x7f03011a
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getStringArray(I)[Ljava/lang/String;
 
@@ -51,7 +51,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f03011a
+    const v1, 0x7f03011b
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getStringArray(I)[Ljava/lang/String;
 
@@ -170,7 +170,7 @@
 .method protected getPreferenceScreenResId()I
     .locals 1
 
-    const v0, 0x7f16010c
+    const v0, 0x7f16010d
 
     return v0
 .end method

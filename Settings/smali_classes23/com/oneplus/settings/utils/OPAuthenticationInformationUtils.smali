@@ -37,7 +37,7 @@
 
     sget-object v0, Landroid/os/Build;->MODEL:Ljava/lang/String;
 
-    const v1, 0x7f120e8f
+    const v1, 0x7f120e92
 
     invoke-virtual {p0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -51,7 +51,7 @@
 
     if-nez v1, :cond_0
 
-    const v1, 0x7f120e1e
+    const v1, 0x7f120e21
 
     invoke-virtual {p0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -63,7 +63,7 @@
 
     if-nez v1, :cond_0
 
-    const v1, 0x7f120e24
+    const v1, 0x7f120e27
 
     invoke-virtual {p0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -75,7 +75,7 @@
 
     if-nez v1, :cond_0
 
-    const v1, 0x7f120e96
+    const v1, 0x7f120e99
 
     invoke-virtual {p0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -95,30 +95,6 @@
     if-nez v1, :cond_9
 
     :cond_1
-    const v1, 0x7f120e90
-
-    invoke-virtual {p0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-nez v1, :cond_9
-
-    const v1, 0x7f120e97
-
-    invoke-virtual {p0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-nez v1, :cond_9
-
     const v1, 0x7f120e93
 
     invoke-virtual {p0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
@@ -131,7 +107,31 @@
 
     if-nez v1, :cond_9
 
-    const v1, 0x7f120e98
+    const v1, 0x7f120e9a
+
+    invoke-virtual {p0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_9
+
+    const v1, 0x7f120e96
+
+    invoke-virtual {p0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_9
+
+    const v1, 0x7f120e9b
 
     invoke-virtual {p0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -173,7 +173,7 @@
     goto :goto_0
 
     :cond_3
-    const v1, 0x7f120e25
+    const v1, 0x7f120e28
 
     invoke-virtual {p0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -185,7 +185,7 @@
 
     if-nez v1, :cond_4
 
-    const v1, 0x7f120e1f
+    const v1, 0x7f120e22
 
     invoke-virtual {p0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -248,7 +248,21 @@
 
     sget-object v0, Landroid/os/Build;->MODEL:Ljava/lang/String;
 
-    const v1, 0x7f120e8e
+    const v1, 0x7f120e91
+
+    invoke-virtual {p0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_3
+
+    sget-object v0, Landroid/os/Build;->MODEL:Ljava/lang/String;
+
+    const v1, 0x7f120e98
 
     invoke-virtual {p0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -272,20 +286,6 @@
 
     move-result v0
 
-    if-nez v0, :cond_3
-
-    sget-object v0, Landroid/os/Build;->MODEL:Ljava/lang/String;
-
-    const v1, 0x7f120e92
-
-    invoke-virtual {p0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v0
-
     if-eqz v0, :cond_0
 
     invoke-static {}, Lcom/oneplus/settings/utils/OPUtils;->isO2()Z
@@ -297,7 +297,7 @@
     :cond_0
     sget-object v0, Landroid/os/Build;->MODEL:Ljava/lang/String;
 
-    const v1, 0x7f120e22
+    const v1, 0x7f120e25
 
     invoke-virtual {p0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -318,7 +318,7 @@
     :cond_1
     sget-object v0, Landroid/os/Build;->MODEL:Ljava/lang/String;
 
-    const v1, 0x7f120e1c
+    const v1, 0x7f120e1f
 
     invoke-virtual {p0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

@@ -143,7 +143,7 @@
 
     iput-object p0, v0, Lcom/android/internal/app/AlertController$AlertParams;->mPositiveButtonListener:Landroid/content/DialogInterface$OnClickListener;
 
-    const v1, 0x7f1214b7
+    const v1, 0x7f1214cb
 
     invoke-virtual {p0, v1}, Lcom/android/settings/homepage/contextualcards/ContextualCardFeedbackDialog;->getText(I)Ljava/lang/CharSequence;
 

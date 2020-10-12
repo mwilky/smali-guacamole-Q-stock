@@ -264,7 +264,7 @@
     <string name="advanced_security_title">అధునాతనం</string>
     <string name="advanced_settings">అధునాతన సెట్టింగ్‌లు</string>
     <string name="advanced_settings_summary">మరిన్ని సెట్టింగ్‌ల ఎంపికలను ప్రారంభించు</string>
-    <string name="advanced_wificall_summary">మొబైల్ నెట్‌వర్క్ అందుబాటులో లేనప్పుడు Wi-Fiని ఉపయోగించండి</string>
+    <string name="advanced_wificall_summary">మొబైల్ నెట్‌వర్క్ అందుబాటులో లేనప్పుడు Wi-Fiని ఉపయోగించు</string>
     <string name="airplane_mode">ఎయిర్‌ప్లేన్ మోడ్</string>
     <string name="airplane_mode_description">కాల్ చేయడం, వచన సందేశాలు పంపడం, ఇంటర్నెట్ యాక్సెస్, Wi-Fi మరియు బ్లూటూత్‌తో సహా నెట్‌వర్క్ కనెక్షన్‌లన్నింటినీ విమాన మోడ్ ఆఫ్ చేస్తుంది.</string>
     <string name="airplane_mode_enable_dialog_message">"విమాన మోడ్ ఆన్‌లో ఉన్నప్పుడు, మీరు Wi-Fiని ఉపయోగిస్తే తప్ప ఇంటర్నెట్, ఇమెయిల్ లేదా డేటా కనెక్షన్ అవసరమైన ఇతర అప్లికేషన్‌లను ఉపయోగించలేరు.
@@ -336,7 +336,7 @@
     <string name="aod_clock_minimalism">మినిమలిజం 1</string>
     <string name="aod_clock_minimalism_1">మినిమలిజం 2</string>
     <string name="aod_clock_none">ఏదీ కాదు</string>
-    <string name="aod_clock_select_style_text">క్లాక్ స్టైల్ ఎంచుకోండి</string>
+    <string name="aod_clock_select_style_text">గడియారం శైలిని ఎంచుకోండి</string>
     <string name="aod_clock_text_clock">వచనం గడియారం</string>
     <string name="aod_horizon_light_effect_1">నీలం</string>
     <string name="aod_horizon_light_effect_2">ఎరుపు</string>
@@ -1877,7 +1877,7 @@
     <string name="fingerprint_manage">వేలిముద్రలను నిర్వహించండి</string>
     <string name="fingerprint_manage_category_title">వేలిముద్రలు నిర్వహిం.</string>
     <string name="fingerprint_next">తరువాత</string>
-    <string name="fingerprint_not_recognized">గుర్తించలేదు</string>
+    <string name="fingerprint_not_recognized">గుర్తించబడలేదు</string>
     <string name="fingerprint_password_hint">మీ బ్యాకప్ పాస్‌వర్డ్ ఎంటర్ చేయండి</string>
     <string name="fingerprint_password_manage_title">వేలిముద్ర</string>
     <string name="fingerprint_pin_hint">మీ బ్యాకప్ PIN నమోదు చేయండి</string>
@@ -2023,10 +2023,10 @@
     <string name="homepage_all_settings">అన్ని సెట్టింగ్‌లు</string>
     <string name="homepage_condition_footer_content_description">కుదించు</string>
     <string name="homepage_personal_settings">సూచనలు</string>
-    <string name="hotspot_tip_message" formatted="false">"మొబైల్ హాట్‌స్పాట్ మీ మొబైల్ డేటాను Wi-Fi సామర్థ్యం గల ఇతర పరికరాలకు భాగస్వామ్యం చేస్తుంది. మీ మొబైల్ హాట్‌స్పాట్‌ను కనెక్ట్ చేయడానికి: \u0009 
- 1: ఇతర పరికరంలో Wi-Fiని ఆన్ చేయండి.
- 2: అందుబాటులో ఉన్న Wi-Fi నెట్‌వర్క్‌లలో %sని ఎంచుకోండి. 
- 3: పాస్‌వర్డ్ అవసరమైతే, %s నమోదు చేయండి బ్యాటరీ ఆదా చేయడానికి, మొబైల్ హాట్‌స్పాట్‌ను ఉపయోగిస్తున్నప్పుడు మీ ఫోన్‌ను ప్లగిన్ చేయండి. "</string>
+    <string name="hotspot_tip_message" formatted="false">"మొబైల్ హాట్‌స్పాట్ మీ మొబైల్ డేటాను Wi-Fi సామర్థ్యం గల ఇతర పరికరాలకు భాగస్వామ్యం చేస్తుంది. మీ మొబైల్ హాట్‌స్పాట్‌కు కనెక్ట్ చేయడానికి: \u0009 
+ 1: అవతలి పరికరంలో Wi-Fiని ఆన్ చేయండి.
+ 2: అందుబాటులో ఉన్న Wi-Fi నెట్‌వర్క్‌ల జాబితాలో %sని ఎంచుకోండి. 
+ 3: పాస్‌వర్డ్ అవసరమైతే, %s నమోదు చేయండి బ్యాటరీని ఆదా చేయడానికి, మొబైల్ హాట్‌స్పాట్‌ను ఉపయోగిస్తున్నప్పుడు మీ ఫోన్‌ను ప్లగిన్ చేసి ఉంచండి. "</string>
     <string name="hotspot_tip_title">మొబైల్ హాట్‌స్పాట్</string>
     <string name="hwui_force_dark_summary">ఫోర్స్‌-డార్క్ ఫీచ‌ర్‌ను అధిగ‌మించ‌డం ఎల్ల‌ప్పుడూ ఆన్‌లో ఉండాలి</string>
     <string name="hwui_force_dark_title">ఫోర్స్‌-డార్క్‌ను అధిగ‌మించ‌డం</string>
@@ -2313,6 +2313,7 @@
     <string name="location_settings_title">స్థానం</string>
     <string name="location_sources_heading">స్థానం మూలాలు</string>
     <string name="location_street_level">మీ స్థానాన్ని ఖచ్చితంగా గుర్తించడం కోసం మీ ఫోన్‌లో GPSను ఉపయోగించడానికి అనువర్తనాలను అనుమతించు</string>
+    <string name="location_text">స్థానం</string>
     <string name="location_title">నా స్థానం</string>
     <string name="lock_after_timeout">ఆటోమేటిక్‌గా లాక్ చేయి</string>
     <string name="lock_after_timeout_summary">%1$s తర్వాత స్లీప్</string>
@@ -2710,6 +2711,7 @@
     <string name="my_device_info_account_preference_title">ఖాతా</string>
     <string name="my_device_info_device_name_preference_title">పరికరం పేరు</string>
     <string name="n_cacrts">%d CA ప్రమాణపత్రాలు</string>
+    <string name="nearest_station">అత్యంత సమీపంలోని స్టేషన్</string>
     <string name="network_4G">4G (సిఫార్సు చేయబడింది)</string>
     <string name="network_connected">కనెక్ట్ అయింది</string>
     <string name="network_connecting">కనెక్ట్ అవుతోంది</string>
@@ -3255,7 +3257,7 @@
  స్క్రీన్ యొక్క దిగువ ఎడమ లేదా కుడివైపు నుంచి పైకి స్వైప్ చేయండి."</string>
     <string name="oneplus_fullscreen_gesture_guide_done">"ఇప్పుడు మీకు కొత్త నావిగేషన్ హావభావాలు తెలుసు.
  సెట్టింగ్‌ల్లో నావిగేషన్ బార్‌ని తిరిగి ప్రారంభించడం ద్వారా వీటిని మీరు ఆఫ్ చేయవచ్చు."</string>
-    <string name="oneplus_fullscreen_gesture_guide_gotit">అర్థమైంది</string>
+    <string name="oneplus_fullscreen_gesture_guide_gotit">తెలుసు కొన్నాను</string>
     <string name="oneplus_fullscreen_gesture_guide_home">"మనం ఇప్పుడు నావిగేషన్ హావభావాలు ప్రారంభిద్దాం.
  ఏ సమయంలోనైనా హోమ్ స్క్రీన్‌కు వెళ్లడం కొరకు, స్క్రీన్ యొక్క కింద సెంటర్ అంచు నుంచి పైకి స్వైప్ చేయండి."</string>
     <string name="oneplus_fullscreen_gesture_guide_multitask">అత్యంత ఇటీవల యాప్‌ల కొరకు, స్క్రీన్ యొక్క దిగువ నుంచి పైకి స్వైప్ చేయండి మరియు నిలిపివేయండి.</string>
@@ -3332,7 +3334,7 @@
     <string name="oneplus_h2_contributors">HydrogenOS సహకారులు</string>
     <string name="oneplus_hand_up_proximity_summary">మీరు ఫోన్‌ని పికప్ చేసినప్పుడు వేకప్ స్క్రీన్</string>
     <string name="oneplus_hand_up_proximity_title">డిస్‌ప్లేని పైకి ఎత్తండి</string>
-    <string name="oneplus_hand_up_to_show">చూపడానికి మీ ఫోన్ ఎత్తండి</string>
+    <string name="oneplus_hand_up_to_show">చూపడానికి మీ ఫోన్‌ను చేతిలోకి తీసుకోండి</string>
     <string name="oneplus_haptic_feedback_no_app">సపోర్ట్ చేయబడే గేమ్స్ ఇన్‌స్టాల్ చేయబడలేదు</string>
     <string name="oneplus_haptic_feedback_no_app_tip">మీరు PUBG మొబైల్ మరియు అస్ఫాల్ట్ 9ని ఇన్‌స్టాల్ చేసి ఉండవచ్చు</string>
     <string name="oneplus_haptic_feedback_summary">మద్దతు ఉన్న గేమ్‌ల కోసం మెరుగైన హాప్టిక్ అభిప్రాయాన్ని అందిస్తుంది</string>
@@ -3539,9 +3541,9 @@
     <string name="oneplus_preference_settings_behavior">ప్రాధాన్యతలు</string>
     <string name="oneplus_preference_settings_custom_time">స్వీయ-టోగుల్</string>
     <string name="oneplus_preference_settings_manual_open">స్థితి</string>
-    <string name="oneplus_preference_settings_turn_off_time">వరకు</string>
+    <string name="oneplus_preference_settings_turn_off_time">కు</string>
     <string name="oneplus_preference_settings_turn_on">అంతరాయం కలిగించవద్దు ఆన్ చేయి</string>
-    <string name="oneplus_preference_settings_turn_on_time">నుండి</string>
+    <string name="oneplus_preference_settings_turn_on_time">నుంచి</string>
     <string name="oneplus_prior_to_use_you_need_to">ఉపయోగించడానికి ముందు, మీరు</string>
     <string name="oneplus_privacy_policy">గోప్యతా విధానం</string>
     <string name="oneplus_privacy_protection_title">ఎన్‌క్రిప్ట్ చేయబడిన స్థలం</string>
@@ -3750,6 +3752,7 @@
     <string name="oneplus_silent_mode_on">సైలెంట్ మోడ్ ఆన్ అయింది</string>
     <string name="oneplus_silent_mode_soc_tri_state_summary">అలారమ్‌లు మినహా, కాల్‌లు మరియు నోటిఫికేషన్‌లు నిశ్శబ్ధం చేయబడతాయి</string>
     <string name="oneplus_silent_mode_summary">అలారమ్‌లు మినహా, కాల్‌లు మరియు నోటిఫికేషన్‌లు నిశ్శబ్ధం చేయబడతాయి</string>
+    <string name="oneplus_silent_notifications_status_bar">సైలెంట్ నోటిఫికేషన్‌ను స్టేటస్ బార్ లో దాచండి</string>
     <string name="oneplus_sim1_ringtone_switch">SIM కార్డు 1</string>
     <string name="oneplus_sim2_ringtone_switch">SIM కార్డు 2</string>
     <string name="oneplus_simcard_title">SIM</string>
@@ -3792,7 +3795,7 @@
     <string name="oneplus_theme_accent_color_select">యాక్సెంట్ రంగు ఎంచుకోండి</string>
     <string name="oneplus_theme_apply_summary">ఈ థీమ్ వర్తింపజేసిన తర్వాత, మీ అనుకూలీకరణ ఎంపికలు భర్తీ చేయబడతాయి</string>
     <string name="oneplus_theme_apply_title">మీరు ఈ థీమ్‌ను వర్తింపచేయాలనుకుంటున్నారా?</string>
-    <string name="oneplus_theme_clock">క్లాక్ స్టైల్</string>
+    <string name="oneplus_theme_clock">గడియారం శైలి</string>
     <string name="oneplus_theme_clock_snake_action">పరిసర డిస్‌ప్లే ఆన్ చేయి</string>
     <string name="oneplus_theme_clock_snake_tip">పరిసర డిస్‌ప్లే ఆన్‌లో ఉన్నప్పుడు ఈ ఫీచర్ అందుబాటులో ఉంటుంది</string>
     <string name="oneplus_theme_colorpicker_colorvalue">రంగు కోడ్</string>
@@ -3840,7 +3843,7 @@
     <string name="oneplus_tools_summary_U30">గేమింగ్ మోడ్, జేబు మోడ్, షెడ్యూల్ చేసిన పవర్ ఆన్/ఆఫ్</string>
     <string name="oneplus_tools_summary_no_gamingmode">అప్లికేషన్ లాకర్, సమాంతర అప్లికేషన్‌లు</string>
     <string name="oneplus_tools_title">యుటిలిటీలు</string>
-    <string name="oneplus_top_level_accounts_summary">OnePlus account, other accounts</string>
+    <string name="oneplus_top_level_accounts_summary">OnePlus ఖాతా, ఇతర ఖాతాలు</string>
     <string name="oneplus_top_level_apps_and_notifs_summary">డిఫాల్ట్ యాప్‌లు, అనుమతులు</string>
     <string name="oneplus_top_level_buttons_and_gestures_summary">హెచ్చరిక స్లయిడర్, నావిగేషన్ బార్ &amp; సంజ్ఞలు</string>
     <string name="oneplus_top_level_cloud_h2_summary">క్లౌడ్‌తో డేటాను సమకాలీకరించండి, నా ఫోన్‌ని కనుగొను</string>
@@ -3855,10 +3858,10 @@
     <string name="oneplus_top_level_system_summary">భాష &amp; కీబోర్డ్, సమయం, రీసెట్ చేయి, సిస్టమ్ అప్‌డేట్‌లు</string>
     <string name="oneplus_top_level_system_summary_verizon">భాష &amp; కీబోర్డ్, సమయం, రీసెట్</string>
     <string name="oneplus_touch_vibrate">టచ్ వైబ్రేషన్</string>
-    <string name="oneplus_turn_off_time">వరకు</string>
+    <string name="oneplus_turn_off_time">కు</string>
     <string name="oneplus_turn_on_feature_cancel">రద్దు చేయి</string>
     <string name="oneplus_turn_on_feature_ok">ఆన్ చేయి</string>
-    <string name="oneplus_turn_on_time">నుండి</string>
+    <string name="oneplus_turn_on_time">నుంచి</string>
     <string name="oneplus_uninstatll_multi_app_msg">అన్ఇన్‌స్టాల్ చేసిన తర్వాత సమాంతర యాప్‌లోపల మొత్తం డేటా తుడిచివేయబడుతుంది. మీరు అన్‌ఇన్‌స్టాల్ చేయాలనుకుంటున్నారా?</string>
     <string name="oneplus_uninstatll_multi_app_title">సమాంతర %1$s</string>
     <string name="oneplus_uninstatll_multi_main_app_msg">అన్ఇన్‌స్టాల్ చేసిన తర్వాత యాప్ లోపలి మరియు అనుబంధిత సమాంతర యాప్ లోపలి మొత్తం డేటా తుడిచివేయబడుతుంది. మీరు అన్‌ఇన్‌స్టాల్ చేయాలనుకుంటున్నారా?</string>
@@ -3930,8 +3933,18 @@
     <string name="op_audio_settings">ఆడియో ట్యూనర్</string>
     <string name="op_auto_power_saving">ఆటోమేటిక్ పవర్ ఆదా</string>
     <string name="op_auto_power_saving_summary">బ్యాటరీని ఉపయోగించకుండానే తగిన రిజల్యూషన్‌కు ఆటోమేటిక్‌గా మారుస్తుంది</string>
+    <string name="op_charging_Station_mute_notifications">నోటిఫికేషన్‌లను మ్యూట్ చేయి</string>
+    <string name="op_charging_footer_text">మీరు విమానాశ్రయాలు వంటి పార్ట్‌నర్ స్థానాలను లేదా Pop-ups వంటి Oneplus ఈవెంట్‌లను సందర్శించినప్పుడు సమీపంలోని ఏవైనా ఛార్జింగ్ స్టేషన్‌ల గురించి మీకు నోటిఫికేషన్ పంపబడుతుంది.</string>
     <string name="op_charging_optimization">ఆప్టిమైజ్ చేయబడిన ఛార్జింగ్</string>
     <string name="op_charging_optimization_summary">మీ వాడకపు అలవాట్ల ప్రకారం ఛార్జింగ్ విధానాన్ని ఆప్టిమైజ్ చేయండి</string>
+    <string name="op_charging_station">సమీపంలోని ఛార్జింగ్ స్టేషన్‌లు</string>
+    <string name="op_charging_station_no_station">సమీపంలో ఛార్జింగ్ స్టేషన్‌లు లేవు</string>
+    <string name="op_charging_station_summary">సమీపంలో ఛార్జింగ్ స్టేషన్ ఉంటే నోటిఫికేషన్ పంపు</string>
+    <string name="op_charging_stations">ఛార్జింగ్ స్టేషన్‌లు</string>
+    <string name="op_charging_stations_off_description">ఛార్జింగ్ స్టేషన్‌లను వెతికేందుకు, BLE బీకాన్‌లను గుర్తించడం కోసం స్థాన అనుమతి అవసరం. దయచేసి ఈ ఫీచర్‌ను ఉపయోగించడం ప్రారంభించడానికి స్థానానికి యాక్సెస్ అందించండి.</string>
+    <string name="op_charging_stations_off_header">ఛార్జింగ్ స్టేషన్‌లను వెతికేందుకు, BLE బీకాన్‌లను గుర్తించడం కోసం స్థాన అనుమతి అవసరం. దయచేసి ఈ ఫీచర్‌ను ఉపయోగించడం ప్రారంభించడానికి స్థానానికి యాక్సెస్ అందించండి.</string>
+    <string name="op_charing_station_mute_notifications_description">నోటిఫికేషన్‌లు 6 గంటలపాటు మ్యూట్ చేయబడతాయి.</string>
+    <string name="op_charing_stations_mute_dynamic_time" formatted="false">%1d గంటల %2d నిమిషాల పాటు నోటిఫికేషన్‌ మ్యూట్ చేయబడింది</string>
     <string name="op_china_mobile">CMCC</string>
     <string name="op_china_telecom">CTCC</string>
     <string name="op_china_unicom">CUCC</string>
@@ -3947,15 +3960,19 @@
     <string name="op_default_apps_summary">హోమ్, బ్రౌజర్</string>
     <string name="op_default_luncher_title">హోమ్ అప్లికేషన్</string>
     <string name="op_dnd_summary">అంతరాయం కలిగించవద్దు</string>
+    <string name="op_enable_location_services">దగ్గరలోని ఛార్జింగ్ స్టేషన్లను కనుగొనటానికి మరియు ట్రాక్ చేయడానికి, దయచేసి లొకేషన్ సేవలను ప్రారంభించండి</string>
+    <string name="op_enable_text">ప్రారంభించు</string>
     <string name="op_face_unlock_set_unlock_password">ఫేస్ అన్‌లాక్ + పాస్‌వర్డ్</string>
     <string name="op_face_unlock_set_unlock_pattern">ఫేస్ అన్‌లాక్ + నమూనా</string>
     <string name="op_face_unlock_set_unlock_pin">ఫేస్ అన్‌లాక్ + PIN</string>
     <string name="op_face_unlock_skip_face">ఫేస్ అన్‌లాక్ లేకుండానే కొనసాగించు</string>
     <string name="op_failed_to_get_data">డేటాను తిరిగి పొందడంలో విఫలమైంది</string>
     <string name="op_fetch_data_in_process">లోడ్ చేస్తోంది</string>
+    <string name="op_find_charging_stations">స్టేషన్‌లను వెతకండి</string>
     <string name="op_fragment">తక్కువ</string>
     <string name="op_gamespace">గేమ్ స్పేస్</string>
     <string name="op_high_power_app_manager">పవర్ ఎక్కువగా వినియోగించే యాప్‌లను నిర్వహించు</string>
+    <string name="op_keep_location_services">దగ్గరలోని ఛార్జింగ్ స్టేషన్లను కనుగొనటానికి మరియు ట్రాక్ చేయడానికి, లొకేషన్ సేవలను ప్రారంభించి ఉంచండి</string>
     <string name="op_light_mode_title">లైట్</string>
     <string name="op_linked_launch_summary">మ్యానేజ్ యాప్‌లు బ్యాక్‌గ్రౌండ్‌లో లాంఛ్‌కి లింక్ చేయబడవచ్చు</string>
     <string name="op_linked_launch_title">యాప్స్ ఆటో- లాంఛ్</string>
@@ -4833,7 +4850,7 @@ UT ఇంటర్‌ఫేస్: %5$s"</string>
     <string name="sim_enabler_summary">SIM అనేది %1$s</string>
     <string name="sim_enabler_summary_new_marshmallow">" %1$s అనేది"</string>
     <string name="sim_enabler_title">SIM ఎనేబర్‌లు</string>
-    <string name="sim_enabler_will_disable_sim_title">గమనిక</string>
+    <string name="sim_enabler_will_disable_sim_title">గమనించండి</string>
     <string name="sim_enter_cancel">రద్దు చేయి</string>
     <string name="sim_enter_new">కొత్త సిమ్ పిన్</string>
     <string name="sim_enter_ok">సరే</string>
@@ -5384,6 +5401,7 @@ UT ఇంటర్‌ఫేస్: %5$s"</string>
     <string name="uicc_lock_summary">మీ పరికరం స్ప్రింట్ SIMలచే మాత్రమే లాక్ చేయబడుతుంది</string>
     <string name="uicc_unlock">UICC అన్‌లాక్</string>
     <string name="uicc_unlock_summary">మీ పరికరం అన్‌లాక్ అయ్యింది</string>
+    <string name="under_meters">%1d మీటర్ల కంటే తక్కువ</string>
     <string name="uninstall_activity_text">%1$s దిగువ యాప్‌లో భాగం:</string>
     <string name="uninstall_all_blocked_profile_owner">కొంతమంది యూజర్‌లు లేదా ప్రొఫైల్స్ కొరకు ఈ యాప్ అవసరం అవుతుంది మరియు ఇతరుల కొరకు అన్‌ఇన్‌స్టాల్ చేయబడింది</string>
     <string name="uninstall_all_users_text">వినియోగదారులందరికీ అన్‌ఇన్‌స్టాల్ చేయి</string>

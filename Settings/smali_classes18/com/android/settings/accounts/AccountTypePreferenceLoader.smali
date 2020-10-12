@@ -69,7 +69,7 @@
 .end method
 
 .method private isSafeIntent(Landroid/content/pm/PackageManager;Landroid/content/Intent;Ljava/lang/String;)Z
-    .locals 9
+    .locals 8
 
     iget-object v0, p0, Lcom/android/settings/accounts/AccountTypePreferenceLoader;->mAuthenticatorHelper:Lcom/android/settingslib/accounts/AuthenticatorHelper;
 
@@ -99,49 +99,23 @@
     iget-object v4, v3, Landroid/content/pm/ActivityInfo;->applicationInfo:Landroid/content/pm/ApplicationInfo;
 
     :try_start_0
-    iget-boolean v5, v3, Landroid/content/pm/ActivityInfo;->exported:Z
-
-    const/4 v6, 0x1
-
-    if-eqz v5, :cond_2
-
-    iget-object v5, v3, Landroid/content/pm/ActivityInfo;->permission:Ljava/lang/String;
-
-    if-nez v5, :cond_1
-
-    return v6
-
-    :cond_1
-    iget-object v5, v3, Landroid/content/pm/ActivityInfo;->permission:Ljava/lang/String;
-
-    iget-object v7, v0, Landroid/accounts/AuthenticatorDescription;->packageName:Ljava/lang/String;
-
-    invoke-virtual {p1, v5, v7}, Landroid/content/pm/PackageManager;->checkPermission(Ljava/lang/String;Ljava/lang/String;)I
-
-    move-result v5
-
-    if-nez v5, :cond_2
-
-    return v6
-
-    :cond_2
     iget-object v5, v0, Landroid/accounts/AuthenticatorDescription;->packageName:Ljava/lang/String;
 
     invoke-virtual {p1, v5, v2}, Landroid/content/pm/PackageManager;->getApplicationInfo(Ljava/lang/String;I)Landroid/content/pm/ApplicationInfo;
 
     move-result-object v5
 
-    iget v7, v4, Landroid/content/pm/ApplicationInfo;->uid:I
+    iget v6, v4, Landroid/content/pm/ApplicationInfo;->uid:I
 
-    iget v8, v5, Landroid/content/pm/ApplicationInfo;->uid:I
+    iget v7, v5, Landroid/content/pm/ApplicationInfo;->uid:I
     :try_end_0
     .catch Landroid/content/pm/PackageManager$NameNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 
-    if-ne v7, v8, :cond_3
+    if-ne v6, v7, :cond_1
 
-    move v2, v6
+    const/4 v2, 0x1
 
-    :cond_3
+    :cond_1
     return v2
 
     :catch_0
@@ -218,7 +192,7 @@
 
     move-result-object v5
 
-    const v6, 0x7f130528
+    const v6, 0x7f13052a
 
     const/4 v8, 0x1
 

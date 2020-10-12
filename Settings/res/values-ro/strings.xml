@@ -1876,7 +1876,7 @@ Pentru mai multe detalii, contactați administratorul organizației."</string>
     <string name="fingerprint_lock_screen_setup_skip_dialog_text">Protejați-vă telefonul cu o opțiune de blocare a ecranului, astfel încât nimeni să nu îl poată folosi dacă îl pierdeți sau este furat. Aveți nevoie și de o opțiune de blocare a ecranului pentru a configura amprenta. Atingeți Anulați, apoi setați un PIN, un model sau o parolă.</string>
     <string name="fingerprint_manage">Gestionare amprente</string>
     <string name="fingerprint_manage_category_title">Gestionați amprentele</string>
-    <string name="fingerprint_next">Următoarea</string>
+    <string name="fingerprint_next">Următorul</string>
     <string name="fingerprint_not_recognized">Nerecunoscută</string>
     <string name="fingerprint_password_hint">Introduceți parola de rezervă</string>
     <string name="fingerprint_password_manage_title">Amprentă</string>
@@ -1898,7 +1898,7 @@ Pentru mai multe detalii, contactați administratorul organizației."</string>
     <string name="fingerprint_wizard_add_button_label">Adăugare alta</string>
     <string name="fingerprint_wizard_cancel_button_label">Anulare</string>
     <string name="fingerprint_wizard_finish_button_label">Terminare</string>
-    <string name="fingerprint_wizard_next_button_label">Următoarea</string>
+    <string name="fingerprint_wizard_next_button_label">Următorul</string>
     <string name="firmware_version">Versiune Android</string>
     <string name="font_size_make_larger_desc">Măriți</string>
     <string name="font_size_make_smaller_desc">Micșorați</string>
@@ -2313,6 +2313,7 @@ Puteți modifica opțiunea ulterior din Setări > Aplicații și notificări."</
     <string name="location_settings_title">Locație</string>
     <string name="location_sources_heading">Surse de locații</string>
     <string name="location_street_level">Permiteți aplicațiilor să utilizeze GPS de pe telefon pentru a indica locația dvs.</string>
+    <string name="location_text">Locație</string>
     <string name="location_title">Locația mea</string>
     <string name="lock_after_timeout">Blocare automată</string>
     <string name="lock_after_timeout_summary">La %1$s după inactivitate</string>
@@ -2710,6 +2711,7 @@ Când comutați la %1$s nu anulați serviciul %2$s."</string>
     <string name="my_device_info_account_preference_title">Cont</string>
     <string name="my_device_info_device_name_preference_title">Numele dispozitivului</string>
     <string name="n_cacrts">"%d   certificate CA"</string>
+    <string name="nearest_station">Cea mai apropiată stație</string>
     <string name="network_4G">4G (recomandat)</string>
     <string name="network_connected">Conectată</string>
     <string name="network_connecting">Se conectează…</string>
@@ -2982,7 +2984,7 @@ Astfel, aplicația va putea să activeze sau să dezactiveze starea Nu deranja �
     <string name="oneplus_app_locker_summary">Selectare aplicații pentru criptare</string>
     <string name="oneplus_app_locker_switch">Ascundere conținut notificare</string>
     <string name="oneplus_app_locker_switch_summary">Conținutul notificării va fi ascuns pentru aplicațiile activate de App locker</string>
-    <string name="oneplus_app_locker_title">Dulap de aplicații</string>
+    <string name="oneplus_app_locker_title">App locker</string>
     <string name="oneplus_app_network_settings">Control utilizare date</string>
     <string name="oneplus_app_notification_allow_led">LED aprins</string>
     <string name="oneplus_app_notification_not_allow_led">LED stins</string>
@@ -3750,6 +3752,7 @@ Notă:
     <string name="oneplus_silent_mode_on">Modul silențios este pornit</string>
     <string name="oneplus_silent_mode_soc_tri_state_summary">Apelurile și notificările vor fi în modul silențios, cu excepția alarmelor</string>
     <string name="oneplus_silent_mode_summary">Apelurile și notificările vor fi în modul silențios, cu excepția alarmelor</string>
+    <string name="oneplus_silent_notifications_status_bar">Ascundere notificări silențioase în bara de stare</string>
     <string name="oneplus_sim1_ringtone_switch">Cartelă SIM 1</string>
     <string name="oneplus_sim2_ringtone_switch">Cartelă SIM 2</string>
     <string name="oneplus_simcard_title">SIM</string>
@@ -3840,7 +3843,7 @@ Notă:
     <string name="oneplus_tools_summary_U30">Mod jocuri, mod buzunar, pornire/oprire programată</string>
     <string name="oneplus_tools_summary_no_gamingmode">App locker, aplicații paralele</string>
     <string name="oneplus_tools_title">Utilități</string>
-    <string name="oneplus_top_level_accounts_summary">OnePlus account, other accounts</string>
+    <string name="oneplus_top_level_accounts_summary">Cont OnePlus, alte conturi</string>
     <string name="oneplus_top_level_apps_and_notifs_summary">Aplicații implicite, permisiuni</string>
     <string name="oneplus_top_level_buttons_and_gestures_summary">Alert slider, bară de navigare și gesturi</string>
     <string name="oneplus_top_level_cloud_h2_summary">Sincronizare date cu cloud, găsirea telefonului</string>
@@ -3930,8 +3933,18 @@ Setarea rețelei drept ascunsă nu modifică setările routerului."</string>
     <string name="op_audio_settings">Tuner audio</string>
     <string name="op_auto_power_saving">Economisirea automată a energiei</string>
     <string name="op_auto_power_saving_summary">Trecere automată la rezoluția corespunzătoare, fără a epuiza bateria</string>
+    <string name="op_charging_Station_mute_notifications">Suspendare notificări</string>
+    <string name="op_charging_footer_text">Veți primi notificări despre stațiile de încărcare din apropiere atunci când sunteți în locații partenere, cum ar fi un aeroport sau un eveniment Oneplus, ca Pop-up.</string>
     <string name="op_charging_optimization">Încărcare optimizată</string>
     <string name="op_charging_optimization_summary">Optimizați modelul de încărcare în funcție de obiceiurile dvs.</string>
+    <string name="op_charging_station">Stații de încărcare în apropiere</string>
+    <string name="op_charging_station_no_station">Nu sunt stații de încărcare în apropiere</string>
+    <string name="op_charging_station_summary">Notificări despre stațiile de încărcare din apropiere</string>
+    <string name="op_charging_stations">Stații de încărcare</string>
+    <string name="op_charging_stations_off_description">Funcția de găsire a stațiilor de încărcare necesită permisiuni de locație pentru a detecta semnalele BLE. Pentru a începe să folosiți funcția, dați permisiuni de locație.</string>
+    <string name="op_charging_stations_off_header">Funcția de găsire a stațiilor de încărcare necesită permisiunea de locație pentru a detecta semnalele BLE. Pentru a începe să folosiți funcția, dați acces la locație.</string>
+    <string name="op_charing_station_mute_notifications_description">Funcția de notificare va fi suspendată pentru următoarele 6 ore.</string>
+    <string name="op_charing_stations_mute_dynamic_time" formatted="false">Notificări suspendate timp de %1d ore și %2d minute</string>
     <string name="op_china_mobile">CMCC</string>
     <string name="op_china_telecom">CTCC</string>
     <string name="op_china_unicom">CUCC</string>
@@ -3947,15 +3960,19 @@ Setarea rețelei drept ascunsă nu modifică setările routerului."</string>
     <string name="op_default_apps_summary">Pagina principală, browser</string>
     <string name="op_default_luncher_title">Aplicație Pagină principală</string>
     <string name="op_dnd_summary">Nu deranjați</string>
+    <string name="op_enable_location_services">Pentru a putea găsi și urmări stațiile de încărcare din apropiere, activați serviciile de locație</string>
+    <string name="op_enable_text">Activare</string>
     <string name="op_face_unlock_set_unlock_password">Deblocare facială + Parolă</string>
     <string name="op_face_unlock_set_unlock_pattern">Deblocare facială + Model</string>
     <string name="op_face_unlock_set_unlock_pin">Deblocare facială + PIN</string>
     <string name="op_face_unlock_skip_face">Continuare fără deblocare facială</string>
     <string name="op_failed_to_get_data">Nu s-a reușit recuperarea datelor</string>
     <string name="op_fetch_data_in_process">Se încarcă</string>
+    <string name="op_find_charging_stations">Găsire stații</string>
     <string name="op_fragment">Scurt</string>
     <string name="op_gamespace">Game Space</string>
     <string name="op_high_power_app_manager">Aplicații mari consumatoare de energie</string>
+    <string name="op_keep_location_services">Pentru a putea găsi și urmări stațiile de încărcare din apropiere, păstrați serviciile de locație activate</string>
     <string name="op_light_mode_title">Luminos</string>
     <string name="op_linked_launch_summary">Gestionarea aplicațiilor poate fi legată de lansarea din fundal</string>
     <string name="op_linked_launch_title">Lansare automată aplicații</string>
@@ -5384,6 +5401,7 @@ O abordare Google asupra sincronizării datelor, care vă permite accesul la age
     <string name="uicc_lock_summary">Dispozitivul dvs. este blocat numai pentru cartele SIM Sprint</string>
     <string name="uicc_unlock">Deblocare UICC</string>
     <string name="uicc_unlock_summary">Dispozitivul dvs. este deblocat</string>
+    <string name="under_meters">Sub %1d metri</string>
     <string name="uninstall_activity_text">%1$s face parte din următoarea aplicație:</string>
     <string name="uninstall_all_blocked_profile_owner">Această aplicație este necesară pentru unii utilizatori sau profiluri și a fost dezinstalată pentru alții</string>
     <string name="uninstall_all_users_text">Dezinstalați pentru toți utilizatorii</string>
@@ -5409,7 +5427,7 @@ O abordare Google asupra sincronizării datelor, care vă permite accesul la age
     <string name="uninstallapps_confirm">Confirmare</string>
     <string name="uninstallapps_confirm_dialog_body">Se vor șterge toate aplicațiile selectate și toate fișierele asociate cu pachetul de aplicație.</string>
     <string name="uninstallapps_confirm_dialog_title">Eliminați aplicațiile selectate?</string>
-    <string name="uninstallapps_selected">selectat</string>
+    <string name="uninstallapps_selected">selectate</string>
     <string name="uninstallapps_toast_message">aplicații au fost eliminate</string>
     <string name="uninstalling">Dezinstalare…</string>
     <string name="uninstalling_notification_channel">Se efectuează dezinstalările</string>

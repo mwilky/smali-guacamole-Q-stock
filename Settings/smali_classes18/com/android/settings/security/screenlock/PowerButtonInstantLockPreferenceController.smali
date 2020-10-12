@@ -175,7 +175,7 @@
 
     iget-object v1, p0, Lcom/android/settings/security/screenlock/PowerButtonInstantLockPreferenceController;->mContext:Landroid/content/Context;
 
-    const v2, 0x7f1209fb
+    const v2, 0x7f1209fc
 
     const/4 v3, 0x1
 

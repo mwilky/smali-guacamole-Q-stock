@@ -1345,7 +1345,7 @@
 .method private switchToFragment(Ljava/lang/String;Landroid/os/Bundle;ZILjava/lang/CharSequence;)Landroidx/fragment/app/Fragment;
     .locals 4
 
-    const v0, 0x7f121267
+    const v0, 0x7f12127b
 
     invoke-virtual {p0, v0}, Lcom/android/settings/SettingsActivity;->getString(I)Ljava/lang/String;
 
@@ -1486,7 +1486,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0a03bb
+    const v3, 0x7f0a03ba
 
     invoke-virtual {v2, v3, v0}, Landroidx/fragment/app/FragmentTransaction;->replace(ILandroidx/fragment/app/Fragment;)Landroidx/fragment/app/FragmentTransaction;
 
@@ -1917,7 +1917,7 @@
 .method protected onApplyThemeResource(Landroid/content/res/Resources$Theme;IZ)V
     .locals 2
 
-    const v0, 0x7f1303ad
+    const v0, 0x7f1303af
 
     const/4 v1, 0x1
 
@@ -2060,12 +2060,12 @@
 
     if-nez v10, :cond_3
 
-    const v10, 0x7f130529
+    const v10, 0x7f13052b
 
     invoke-virtual {v0, v10}, Lcom/android/settings/SettingsActivity;->setTheme(I)V
 
     :cond_3
-    const v10, 0x7f0d02c0
+    const v10, 0x7f0d02c4
 
     invoke-virtual {v0, v10}, Lcom/android/settings/SettingsActivity;->setContentView(I)V
 
@@ -2123,7 +2123,7 @@
     invoke-virtual {v11, v9}, Landroid/app/ActionBar;->setDisplayShowTitleEnabled(Z)V
 
     :cond_6
-    const v9, 0x7f0a06a4
+    const v9, 0x7f0a06b1
 
     invoke-virtual {v0, v9}, Lcom/android/settings/SettingsActivity;->findViewById(I)Landroid/view/View;
 
@@ -2176,7 +2176,7 @@
 
     invoke-virtual {v12, v13}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const v13, 0x7f0a0633
+    const v13, 0x7f0a0640
 
     invoke-virtual {v0, v13}, Lcom/android/settings/SettingsActivity;->findViewById(I)Landroid/view/View;
 
@@ -2190,7 +2190,7 @@
 
     invoke-virtual {v13, v14}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const v14, 0x7f0a0437
+    const v14, 0x7f0a0436
 
     invoke-virtual {v0, v14}, Lcom/android/settings/SettingsActivity;->findViewById(I)Landroid/view/View;
 
@@ -2302,7 +2302,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0a03bb
+    const v1, 0x7f0a03ba
 
     invoke-virtual {v0, v1}, Landroidx/fragment/app/FragmentManager;->findFragmentById(I)Landroidx/fragment/app/Fragment;
 
@@ -2526,7 +2526,7 @@
 .method public setTaskDescription(Landroid/app/ActivityManager$TaskDescription;)V
     .locals 1
 
-    const v0, 0x7f080231
+    const v0, 0x7f080264
 
     invoke-virtual {p1, v0}, Landroid/app/ActivityManager$TaskDescription;->setIcon(I)V
 

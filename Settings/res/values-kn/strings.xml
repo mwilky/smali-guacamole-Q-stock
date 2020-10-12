@@ -264,7 +264,7 @@
     <string name="advanced_security_title">ಸುಧಾರಿತ</string>
     <string name="advanced_settings">ಸುಧಾರಿತ ಸೆಟ್ಟಿಂಗ್‌ಗಳು</string>
     <string name="advanced_settings_summary">ಇನ್ನಷ್ಟು ಸೆಟ್ಟಿಂಗ್‌ಗಳ ಆಯ್ಕೆಗಳನ್ನು ಸಕ್ರಿಯಗೊಳಿಸು</string>
-    <string name="advanced_wificall_summary">ಮೊಬೈಲ್ ನೆಟ್‌ವರ್ಕ್ ಲಭ್ಯವಿಲ್ಲದಿದ್ದಾಗ ವೈ-ಫೈ ಬಳಸಿ</string>
+    <string name="advanced_wificall_summary">ಮೊಬೈಲ್ ನೆಟ್‌ವರ್ಕ್ ಲಭ್ಯವಿಲ್ಲದಿದ್ದಾಗ Wi-Fi ಬಳಸಿ</string>
     <string name="airplane_mode">ಏರ್‌ಪ್ಲೇನ್ ಮೋಡ್</string>
     <string name="airplane_mode_description">ಕರೆ ಮಾಡುವಿಕೆ, ಪಠ್ಯ ಕಳುಹಿಸುವಿಕೆ, ಇಂಟರ್ನೆಟ್ ಪ್ರವೇಶ, ವೈ-ಫೈ ಮತ್ತು ಬ್ಲೂಟೂತ್ ಒಳಗೊಂಡಂತೆ ಏರ್‌ಪ್ಲೇನ್ ಮೋಡ್ ಎಲ್ಲಾ ನೆಟ್‌ವರ್ಕ್ ಸಂಪರ್ಕಗಳನ್ನು ಆಫ್ ಮಾಡುತ್ತದೆ.</string>
     <string name="airplane_mode_enable_dialog_message">"ಏರ್‌ಪ್ಲೇನ್ ಮೋಡ್ ಆನ್ ಆಗಿರುವಾಗ, ನೀವು ವೈ-ಫೈ ಅನ್ನು ಬಳಸದ ಹೊರತು ಡೇಟಾ ಸಂಪರ್ಕ ಅಗತ್ಯವಿರುವಂತಹ ಇಂಟರ್ನೆಟ್, ಇಮೇಲ್ ಅಥವಾ ಇತರ ಆ್ಯಪ್‌ಗಳನ್ನು ನಿಮಗೆ ಬಳಸಲು ಸಾಧ್ಯವಾಗುವುದಿಲ್ಲ.
@@ -1638,7 +1638,7 @@
     <string name="doze_always_on_summary">ಸಮಯ, ಅಧಿಸೂಚನೆ ಐಕಾನ್‌ಗಳು ಮತ್ತು ಇತರ ಮಾಹಿತಿಯನ್ನು ತೋರಿಸಿ. ಅಧಿಕ ಬ್ಯಾಟರಿ ಬಳಕೆ.</string>
     <string name="doze_always_on_title">ಯಾವಾಗಲೂ ಆನ್</string>
     <string name="doze_summary">ನೀವು ನೋಟಿಫಿಕೇಶನ್‌ಗಳನ್ನು ಸ್ವೀಕರಿಸಿದಾಗ ಸ್ಕ್ರೀನ್ ಎಚ್ಚರಿಸಿ.</string>
-    <string name="doze_title">ಅನುಕೂಲಕರ ಪ್ರದರ್ಶಕ</string>
+    <string name="doze_title">ಪರಿವೇಷ್ಟಕ ಪ್ರದರ್ಶನ</string>
     <string name="draw_overlay">ಇತರ ಅಪ್ಲಿಕೇಶನ್ ಮೇಲೆ ಡಿಸ್‌ಪ್ಲೇ</string>
     <string name="dsds_dialog_cancel">ರದ್ದುಮಾಡಿ</string>
     <string name="dsds_dialog_confirm">ಮರುಪ್ರಾರಂಭಿಸಿ</string>
@@ -1876,7 +1876,7 @@
     <string name="fingerprint_lock_screen_setup_skip_dialog_text">ನಿಮ್ಮ ಫೋನ್ ಕಳೆದುಹೋದರೆ ಅಥವಾ ಕಳವಾದರೆ, ಯಾರೂ ಅದನ್ನು ಬಳಸಲು ಸಾಧ್ಯವಾಗದಂತೆ, ಸ್ಕ್ರೀನ್ ಲಾಕ್ ಆಯ್ಕೆಯನ್ನು ಬಳಸಿಕೊಂಡು ಅದನ್ನು ರಕ್ಷಿಸಿ. ಫಿಂಗರ್‌ಪ್ರಿಂಟ್ ಸೆಟಪ್ ಮಾಡಲು ಕೂಡಾ ನಿಮಗೆ ಸ್ಕ್ರೀನ್ ಲಾಕ್ ಆಯ್ಕೆಯ ಅಗತ್ಯವಿದೆ. ರದ್ದುಗೊಳಿಸಿ ಎಂಬುದನ್ನು ಟ್ಯಾಪ್ ಮಾಡಿ, ನಂತರ ಪಿನ್, ವಿನ್ಯಾಸ ಅಥವಾ ಪಾಸ್‌ವರ್ಡ್ ಅನ್ನು ಹೊಂದಿಸಿ.</string>
     <string name="fingerprint_manage">ಬೆರಳಮುದ್ರೆಗಳ ನಿರ್ವಹಣೆ ಮಾಡಿ</string>
     <string name="fingerprint_manage_category_title">ಬೆರಳಚ್ಚು ನಿರ್ವ.</string>
-    <string name="fingerprint_next">ಮುಂದಿನದು</string>
+    <string name="fingerprint_next">ಮುಂದೆ</string>
     <string name="fingerprint_not_recognized">ಗುರುತಿಸಲ್ಪಟ್ಟಿಲ್ಲ</string>
     <string name="fingerprint_password_hint">ನಿಮ್ಮ ಬ್ಯಾಕಪ್ ಪಾಸ್ವರ್ಡ್ ನಮೂದಿಸಿ</string>
     <string name="fingerprint_password_manage_title">ಬೆರಳಮುದ್ರೆ</string>
@@ -1898,7 +1898,7 @@
     <string name="fingerprint_wizard_add_button_label">ಬೇರೊಂದು ಸೇರಿಸಿ</string>
     <string name="fingerprint_wizard_cancel_button_label">ರದ್ದುಮಾಡಿ</string>
     <string name="fingerprint_wizard_finish_button_label">ಮುಗಿಸಿ</string>
-    <string name="fingerprint_wizard_next_button_label">ಮುಂದಿನದು</string>
+    <string name="fingerprint_wizard_next_button_label">ಮುಂದೆ</string>
     <string name="firmware_version">Android ಆವೃತ್ತಿ</string>
     <string name="font_size_make_larger_desc">ದೊಡ್ಡದಾಗಿಸು</string>
     <string name="font_size_make_smaller_desc">ಚಿಕ್ಕದಾಗಿಸು</string>
@@ -2023,10 +2023,10 @@
     <string name="homepage_all_settings">ಎಲ್ಲಾ ಸೆಟ್ಟಿಂಗ್‌ಗಳು</string>
     <string name="homepage_condition_footer_content_description">ಕುಗ್ಗಿಸಿ</string>
     <string name="homepage_personal_settings">ಸಲಹೆಗಳು</string>
-    <string name="hotspot_tip_message" formatted="false">"ನಿಮ್ಮ ಮೊಬೈಲ್ ಡೇಟಾವನ್ನು ಮೊಬೈಲ್ ಹಾಟ್‌ಸ್ಪಾಟ್ ಇತರ Wi-Fi ಸಾಮರ್ಥ್ಯದ ಸಾಧನಗಳೊಂದಿಗೆ ಹಂಚಿಕೊಳ್ಳುತ್ತದೆ. ನಿಮ್ಮ ಮೊಬೈಲ್ ಹಾಟ್‌ಸ್ಪಾಟ್‌ಗೆ ಸಂಪರ್ಕಿಸಲು\u0009
- ಇತರ ಸಾಧನದಲ್ಲಿ Wi-Fi ಅನ್ನು ಆನ್ ಮಾಡಿ.
- 2: ಲಭ್ಯವಿರುವ Wi-Fi ನೆಟ್‌ವರ್ಕ್‌ಗಳ ಪಟ್ಟಿಯಲ್ಲಿ%s ಆಯ್ಕೆ ಮಾಡಿ.
- 3: ಪಾಸ್ವರ್ಡ್ ಅಗತ್ಯವಿದ್ದರೆ,%s ಬ್ಯಾಟರಿ ಉಳಿಸಲು ನಮೂದಿಸಿ, ಮೊಬೈಲ್ ಹಾಟ್ಸ್ಪಾಟ್ ಬಳಸುವಾಗ ನಿಮ್ಮ ಫೋನ್ ಅನ್ನು ಪ್ಲಗ್ ಇನ್ ಮಾಡಿ. "</string>
+    <string name="hotspot_tip_message" formatted="false">"ಮೊಬೈಲ್ ಹಾಟ್‌ಸ್ಪಾಟ್ ನಿಮ್ಮ ಮೊಬೈಲ್ ಡೇಟಾವನ್ನು ಇತರ Wi-Fi ಸಾಮರ್ಥ್ಯದ ಸಾಧನಗಳೊಂದಿಗೆ ಹಂಚಿಕೊಳ್ಳುತ್ತದೆ. ನಿಮ್ಮ ಮೊಬೈಲ್ ಹಾಟ್‌ಸ್ಪಾಟ್ ಅನ್ನು ಸಂಪರ್ಕಪಡಿಸಲು: \u0009 
+ 1: ಇತರ ಸಾಧನದಲ್ಲಿ Wi-Fi ಆನ್ ಮಾಡಿ.
+ 2: ಲಭ್ಯವಿರುವ Wi-Fi ನೆಟ್‌ವರ್ಕ್‌ಗಳ ಪಟ್ಟಿಯಿಂದ %s ಆಯ್ಕೆಮಾಡಿ. 
+ 3: ಪಾಸ್‌ವರ್ಡ್ ಅಗತ್ಯವಿದ್ದರೆ, ಬ್ಯಾಟರಿ ಉಳಿಸಲು %s ನಮೂದಿಸಿ, ಮೊಬೈಲ್ ಹಾಟ್‌ಸ್ಪಾಟ್ ಬಳಸುವಾಗ ನಿಮ್ಮ ಫೋನ್ ಅನ್ನು ಪ್ಲಗ್ ಇನ್ ಮಾಡಿ ಇರಿಸಿ. "</string>
     <string name="hotspot_tip_title">ಮೊಬೈಲ್ ಹಾಟ್‌ಸ್ಪಾಟ್</string>
     <string name="hwui_force_dark_summary">ಫೋರ್ಸ್-ಡಾರ್ಕ್ ವೈಶಿಷ್ಟ್ಯವು ಆನ್ ಆಗಿರುವಂತೆ ಒತ್ತಾಯಿಸುತ್ತದೆ</string>
     <string name="hwui_force_dark_title">ಫೋರ್ಸ್-ಡಾರ್ಕ್ ವೈಶಿಷ್ಟ್ಯ ಬಲಗೊಳಿಸಲು ಸೆಟ್ಟಿಂಗ್ ಅತಿಕ್ರಮಿಸಿ</string>
@@ -2313,6 +2313,7 @@
     <string name="location_settings_title">ಸ್ಥಳ</string>
     <string name="location_sources_heading">ಸ್ಥಳ ಮೂಲಗಳು</string>
     <string name="location_street_level">ನಿಮ್ಮ ಸ್ಥಳವನ್ನು ಗುರುತಿಸುವ ಸಲುವಾಗಿ ನಿಮ್ಮ ಫೋನ್‌ನಲ್ಲಿ ಅಪ್ಲಿಕೇಶನ್‌ಗಳು GPS ಬಳಸಲು ಅನುಮತಿಸಿ</string>
+    <string name="location_text">ಲೊಕೇಶನ್</string>
     <string name="location_title">ನನ್ನ ಸ್ಥಳ</string>
     <string name="lock_after_timeout">ಸ್ವಯಂಚಾಲಿತವಾಗಿ ಲಾಕ್ ಮಾಡು</string>
     <string name="lock_after_timeout_summary">%1$s ನಿದ್ರಾವಸ್ಥೆ ಬಳಿಕ</string>
@@ -2624,9 +2625,9 @@
     <string name="mobile_data_settings_summary_auto_switch">ಫೋನ್ ಈ ವಾಹಕದ ವ್ಯಾಪ್ತಿಯಲ್ಲಿದ್ದಾಗ, ಸ್ವಯಂಚಾಲಿತವಾಗಿ ಈ ವಾಹಕಕ್ಕೆ ಬದಲಾಗುತ್ತದೆ</string>
     <string name="mobile_data_settings_title">ಮೊಬೈಲ್ ಡೇಟಾ</string>
     <string name="mobile_data_usage_title">ಆ್ಯಪ್ ಡೇಟಾ ಬಳಕೆ</string>
-    <string name="mobile_hotspot_airplane_off_error">ಹಾಟ್‌ಸ್ಪಾಟ್ ಅನ್ನು ಆನ್ ಮಾಡಲು, ದಯವಿಟ್ಟು ಏರೋಪ್ಲೇನ್ ಸ್ಥಿತಿಯನ್ನು ಆಫ್ ಮಾಡಿ</string>
+    <string name="mobile_hotspot_airplane_off_error">ಹಾಟ್‌ಸ್ಪಾಟ್ ಅನ್ನು ಆನ್ ಮಾಡಲು, ದಯವಿಟ್ಟು ಏರೋಪ್ಲೇನ್ ಸ್ಥಿತಿಯನ್ನು ಅನ್ನು ಆಫ್ ಮಾಡಿ</string>
     <string name="mobile_hotspot_authoration_error">ಮೊಬೈಲ್ ಹಾಟ್ ಸ್ಪಾಟ್ ಬಳಸಲು, ನೀವು ಮೊಬೈಲ್ ಹಾಟ್ ಸ್ಪಾಟ್ ಸೇವೆಗಳಿಗೆ ಚಂದಾದಾರರಾಗಬೇಕಾಗುತ್ತದೆ. /n/n ಮೊಬೈಲ್ ಹಾಟ್ ಸ್ಪಾಟ್ ಚಂದಾದಾರರಾಗಲು my verizonಗೆ ಭೇಟಿ ನೀಡಿ ಅಥವಾ ಗ್ರಾಹಕ ರಕ್ಷಣೆ (800) 922-0204ಗೆ ಕರೆ ಮಾಡಿ.</string>
-    <string name="mobile_hotspot_data_off_error">ಹಾಟ್‌ಸ್ಪಾಟ್ ಅನ್ನು ಆನ್ ಮಾಡಲು, ದಯವಿಟ್ಟು ಮೊಬೈಲ್ ಡೇಟಾವನ್ನು ಆನ್ ಮಾಡಿ</string>
+    <string name="mobile_hotspot_data_off_error">ಹಾಟ್‌ಸ್ಪಾಟ್ ಆನ್ ಮಾಡಲು, ದಯವಿಟ್ಟು ಮೊಬೈಲ್ ಡೇಟಾವನ್ನು ಆನ್ ಮಾಡಿ</string>
     <string name="mobile_insert_sim_card">ದಯವಿಟ್ಟು ಸಿಮ್‌ ಕಾರ್ಡ್‌ ಅನ್ನು ಸೇರಿಸಿ ಮತ್ತು ಮರುಪ್ರಾರಂಭಿಸಿ</string>
     <string name="mobile_network_active_esim">ಸಕ್ರಿಯ / ಡೌನ್‌ಲೋಡ್ ಮಾಡಿದ SIM</string>
     <string name="mobile_network_active_sim">ಸಕ್ರಿಯ / SIM</string>
@@ -2708,6 +2709,7 @@
     <string name="my_device_info_account_preference_title">ಖಾತೆ</string>
     <string name="my_device_info_device_name_preference_title">ಸಾಧನದ ಹೆಸರು</string>
     <string name="n_cacrts">%d CA ಪ್ರಮಾಣಪತ್ರಗಳು</string>
+    <string name="nearest_station">ಹತ್ತಿರದ ಕೇಂದ್ರ</string>
     <string name="network_4G">4G (ಶಿಫಾರಸು ಮಾಡಲಾಗಿದೆ)</string>
     <string name="network_connected">ಸಂಪರ್ಕಗೊಂಡಿದೆ</string>
     <string name="network_connecting">ಸಂಪರ್ಕಿಸುತ್ತಿದೆ…</string>
@@ -3132,7 +3134,7 @@
     <string name="oneplus_double_tap_power_none">ಯಾವುದೂ ಇಲ್ಲ</string>
     <string name="oneplus_doze_summary_801">ಸ್ಟಾಂಡ್‌ಬೈ ಸ್ಕ್ರೀನ್‌ನಲ್ಲಿ ಗಡಿಯಾರ ಮತ್ತು ಇತರೆ ಮಾಹಿತಿಯನ್ನು ತೋರಿಸಿ</string>
     <string name="oneplus_doze_summary_new">ಪರದೆಯ ಮೇಲೆ ಕಾರ್ಯಕ್ರಮದ ಸಮಯ, ದಿನಾಂಕ ಮತ್ತು ಅಧಿಸೂಚನೆಗಳು</string>
-    <string name="oneplus_doze_title">ಅನುಕೂಲಕರ ಪ್ರದರ್ಶಕ</string>
+    <string name="oneplus_doze_title">ಪರಿವೇಷ್ಟಕ ಪ್ರದರ್ಶನ</string>
     <string name="oneplus_doze_title_801">ಪರಿವೇಷ್ಟಕ ಪ್ರದರ್ಶನ</string>
     <string name="oneplus_draw_gesture_start_none">ಯಾವುದೂ ಇಲ್ಲ</string>
     <string name="oneplus_draw_m_start_app">M ಬರೆಯುವುದು</string>
@@ -3279,7 +3281,7 @@
     <string name="oneplus_game_mode_ad_summary">ಗೇಮಿಂಗ್ ಡಿಸ್‌ಪ್ಲೇಯ ಗಾಢ ಬೆಳಕು ಮತ್ತು ಕತ್ತಲಿರುವ ಭಾಗವನ್ನು ವರ್ಧಿಸುತ್ತದೆ</string>
     <string name="oneplus_game_mode_ad_title">ಗೇಮಿಂಗ್ ಡಿಸ್‌ಪ್ಲೇ ವರ್ಧಿಸುವಿಕೆ</string>
     <string name="oneplus_game_mode_app_list">ಗೇಮಿಂಗ್ ಮೋಡ್ ಅಪ್ಲಿಕೇಶನ್ ಪಟ್ಟಿ</string>
-    <string name="oneplus_gaming_mode">ಗೇಮಿಂಗ್ ಮೋಡ್</string>
+    <string name="oneplus_gaming_mode">ಗೇಮಿಂಗ್‌ ಮೋಡ್‌</string>
     <string name="oneplus_gaming_mode_add_apps">ಗೇಮಿಂಗ್ ಮೋಡ್‌ಗಾಗಿ ಆಪ್‌ಗಳನ್ನು ಸೇರಿಸಿ</string>
     <string name="oneplus_gaming_mode_close_automatic_brightness">ಸ್ವಯಂಚಾಲಿತ ಬ್ರೈಟ್‍ನೆಸ್ ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಿ</string>
     <string name="oneplus_gaming_mode_close_automatic_brightness_summary">ಗೇಮಿಂಗ್ ಮೋಡ್ ಆನ್ ಆಗಿರುವಾಗ ಸ್ಕ್ರೀನ್ ಬ್ರೈಟ್‌ನೆಸ್ ಲಾಕ್ ಮಾಡಿ</string>
@@ -3464,7 +3466,7 @@
     <string name="oneplus_none_default_gallery">ಡಿಫಾಲ್ಟ್ ಗ್ಯಾಲರಿ ಇಲ್ಲ</string>
     <string name="oneplus_none_default_music">ಡೀಫಾಲ್ಟ್ ಮ್ಯೂಸಿಕ್ ಪ್ಲೇಯರ್ ಇಲ್ಲ</string>
     <string name="oneplus_normal_clear_way">ಸಾಮಾನ್ಯ ತೆರವು</string>
-    <string name="oneplus_normal_clear_way_summary">ಹಿನ್ನೆಲೆ ಪ್ರಕ್ರಿಯೆಗಳನ್ನು ತೆರವುಗೊಳಿಸದೆ, ಕಾರ್ಯ ಪಟ್ಟಿ ಮತ್ತು ಕ್ಯಾಶ್‌ ತೆರವುಗೊಳಿಸಿ.</string>
+    <string name="oneplus_normal_clear_way_summary">ಹಿನ್ನೆಲೆ ಪ್ರಕ್ರಿಯೆಗಳನ್ನು ತೆರವುಗೊಳಿಸದೆಯೇ, ಕಾರ್ಯ ಪಟ್ಟಿ ಮತ್ತು ಕ್ಯಾಶ್‌ ತೆರವುಗೊಳಿಸಿ.</string>
     <string name="oneplus_not_disturb_on">ಅಡ್ಡಿ ಮಾಡಬೇಡಿ ಆನ್ ಆಗಿದೆ</string>
     <string name="oneplus_not_show">ಇದನ್ನು ಮತ್ತೊಮ್ಮೆ ತೋರಿಸಬೇಡ</string>
     <string name="oneplus_notch_display_area">ನಾಚ್</string>
@@ -3748,6 +3750,7 @@
     <string name="oneplus_silent_mode_on">ಸೈಲೆಂಟ್ ಮೋಡ್ ಆನ್ ಆಗಿದೆ</string>
     <string name="oneplus_silent_mode_soc_tri_state_summary">ಅಲಾರಂಗಳನ್ನು ಹೊರತುಪಡಿಸಿ, ಕರೆಗಳು ಮತ್ತು ಅಧಿಸೂಚನೆಗಳನ್ನು ನಿಶ್ಯಬ್ಧಗೊಳಿಸಲಾಗುತ್ತದೆ</string>
     <string name="oneplus_silent_mode_summary">ಅಲಾರಂಗಳನ್ನು ಹೊರತುಪಡಿಸಿ, ಕರೆಗಳು ಮತ್ತು ಅಧಿಸೂಚನೆಗಳನ್ನು ನಿಶ್ಯಬ್ಧಗೊಳಿಸಲಾಗುತ್ತದೆ</string>
+    <string name="oneplus_silent_notifications_status_bar">ಸ್ಟೇಟಸ್‌ ಬಾರ್‌ನಲ್ಲಿ ಸೈಲೆಂಟ್‌ ಅಧಿಸೂಚನೆಯನ್ನು ಮರೆಮಾಡಿ</string>
     <string name="oneplus_sim1_ringtone_switch">SIM ಕಾರ್ಡ್ 1</string>
     <string name="oneplus_sim2_ringtone_switch">SIM ಕಾರ್ಡ್ 2</string>
     <string name="oneplus_simcard_title">SIM</string>
@@ -3790,7 +3793,7 @@
     <string name="oneplus_theme_accent_color_select">ಅಕ್ಸೆಂಟ್ ಬಣ್ಣವನ್ನು ಆಯ್ಕೆಮಾಡಿ</string>
     <string name="oneplus_theme_apply_summary">ಈ ಥೀಮ್ ಅನ್ವಯಿಸಿದ ನಂತರ, ನಿಮ್ಮ ಕಸ್ಟಮೈಸೇಶನ್ ಆಯ್ಕೆಗಳನ್ನು ಅತಿಕ್ರಮಿಸಲಾಗುತ್ತದೆ</string>
     <string name="oneplus_theme_apply_title">ನೀವು ಈ ಥೀಮ್ ಅನ್ವಯಿಸಲು ಬಯಸುತ್ತೀರಾ?</string>
-    <string name="oneplus_theme_clock">ಗಡಿಯಾರದ ಶೈಲಿ</string>
+    <string name="oneplus_theme_clock">ಗಡಿಯಾರ ಶೈಲಿ</string>
     <string name="oneplus_theme_clock_snake_action">ಆ್ಯಂಬಿಯೆಂಟ್ ಡಿಸ್‌ಪ್ಲೇ ಆನ್ ಮಾಡಿ</string>
     <string name="oneplus_theme_clock_snake_tip">ಆ್ಯಂಬಿಯೆಂಟ್ ಡಿಸ್‌ಪ್ಲೇ ಆನ್ ಆಗಿರುವಾಗ ಈ ವೈಶಿಷ್ಟ್ಯವು ಲಭ್ಯವಿರುತ್ತದೆ</string>
     <string name="oneplus_theme_colorpicker_colorvalue">ಬಣ್ಣ ಕೋಡ್</string>
@@ -3838,7 +3841,7 @@
     <string name="oneplus_tools_summary_U30">ಗೇಮಿಂಗ್ ಮೋಡ್, ಪಾಕೆಟ್ ಮೋಡ್, ಶೆಡ್ಯೂಲ್ಡ್ ಪವರ್ ಆನ್/ಆಫ್‌</string>
     <string name="oneplus_tools_summary_no_gamingmode">ಆ್ಯಪ್ ಲಾಕರ್, ಸಮಾನಾಂತರ ಆ್ಯಪ್‌ಗಳು</string>
     <string name="oneplus_tools_title">ಅನುಸಾಧನಗಳು</string>
-    <string name="oneplus_top_level_accounts_summary">OnePlus account, other accounts</string>
+    <string name="oneplus_top_level_accounts_summary">OnePlus ಖಾತೆ, ಇತರೆ ಖಾತೆಗಳು</string>
     <string name="oneplus_top_level_apps_and_notifs_summary">ಡೀಫಾಲ್ಟ್ ಆ್ಯಪ್‌ಗಳು, ಅನುಮತಿಗಳು</string>
     <string name="oneplus_top_level_buttons_and_gestures_summary">ಎಚ್ಚರಿಕೆ ಸ್ಲೈಡರ್, ನ್ಯಾವಿಗೇಶನ್ ಬಾರ್ &amp; ಗೆಶ್ಚರ್‌ಗಳು</string>
     <string name="oneplus_top_level_cloud_h2_summary">ಕ್ಲೌಡ್ ಬಳಸಿಕೊಂಡು ಡೇಟಾ ಸಿಂಕ್ ಮಾಡಿ, ನನ್ನ ಫೋನ್ ಹುಡುಕು</string>
@@ -3928,8 +3931,18 @@
     <string name="op_audio_settings">ಆಡಿಯೊ ಟ್ಯೂನರ್</string>
     <string name="op_auto_power_saving">ಸ್ವಯಂಚಾಲಿತ ಪವರ್ ಉಳಿತಾಯ</string>
     <string name="op_auto_power_saving_summary">ಬ್ಯಾಟರಿ ಡ್ರೈನ್ ಇಲ್ಲದೆಯೇ ಸ್ವಯಂಚಾಲಿತವಾಗಿ ಸೂಕ್ತ ರೆಸಲ್ಯೂಶನ್‌ಗೆ ಬದಲಾಯಿಸಿ</string>
+    <string name="op_charging_Station_mute_notifications">ಅಧಿಸೂಚನೆಗಳನ್ನು ಮ್ಯೂಟ್ ಮಾಡಿ</string>
+    <string name="op_charging_footer_text">ನೀವು ವಿಮಾನ ನಿಲ್ದಾಣಗಳಂತಹ ಪಾಲುದಾರ ಸ್ಥಳಗಳಿಗೆ ಅಥವಾ pop-upಗಳಂತಹ OnePlus ಈವೆಂಟ್‌ಗಳಿಗೆ ಭೇಟಿ ನೀಡಿದಾಗ ಹತ್ತಿರದ ಯಾವುದೇ ಚಾರ್ಜಿಂಗ್ ಕೇಂದ್ರಗಳ ಬಗ್ಗೆ ನಿಮಗೆ ತಿಳಿಸಲಾಗುತ್ತದೆ.</string>
     <string name="op_charging_optimization">ಆಪ್ಟಿಮೈಜ್ ಮಾಡಲಾದ ಚಾರ್ಜಿಂಗ್</string>
     <string name="op_charging_optimization_summary">ನಿಮ್ಮ ಬಳಕೆಯ ಹವ್ಯಾಸಕ್ಕೆ ಅನುಗುಣವಾಗಿ ಚಾರ್ಜಿಂಗ್ ಮಾದರಿಯನ್ನು ಉತ್ತಮಗೊಳಿಸಿ</string>
+    <string name="op_charging_station">ಹತ್ತಿರದ ಚಾರ್ಜಿಂಗ್ ಕೇಂದ್ರಗಳು</string>
+    <string name="op_charging_station_no_station">ಸಮೀಪದಲ್ಲಿ ಚಾರ್ಜಿಂಗ್ ಕೇಂದ್ರಗಳಿಲ್ಲ</string>
+    <string name="op_charging_station_summary">ಸಮೀಪದಲ್ಲಿ ಚಾರ್ಜಿಂಗ್ ಕೇಂದ್ರವಿದ್ದಾಗ ತಿಳಿಸಿ</string>
+    <string name="op_charging_stations">ಚಾರ್ಜಿಂಗ್ ಕೇಂದ್ರಗಳು</string>
+    <string name="op_charging_stations_off_description">ಚಾರ್ಜಿಂಗ್ ಕೇಂದ್ರಗಳನ್ನು, BLE ಬೀಕನ್‌ಗಳನ್ನು ಕಂಡುಹಿಡಿಯಲು ಲೋಕೇಶನ್‌ ಅನುಮತಿ ಅಗತ್ಯವಿದೆ. ಈ ವೈಶಿಷ್ಟ್ಯದ ಬಳಕೆಯನ್ನು ಆರಂಭಿಸಲು ದಯವಿಟ್ಟು ಲೊಕೇಶನ್‌ಗೆ ಪ್ರವೇಶ ಒದಗಿಸಿ.</string>
+    <string name="op_charging_stations_off_header">ಚಾರ್ಜಿಂಗ್ ಕೇಂದ್ರಗಳನ್ನು ಕಂಡುಹಿಡಿಯಲು, ಸ್ಥಳದ ಅನುಮತಿ ಅಗತ್ಯವಿದೆ BLE ಬೀಕನ್‌ಗಳನ್ನು ಕಂಡುಹಿಡಿಯಲು. ಈ ವೈಶಿಷ್ಟ್ಯದ ಬಳಕೆಯನ್ನು ಪ್ರಾರಂಭಿಸಲು ದಯವಿಟ್ಟು ಲೊಕೇಶನ್ ಗೆ ಪ್ರವೇಶವನ್ನು ಒದಗಿಸಿ.</string>
+    <string name="op_charing_station_mute_notifications_description">ಅಧಿಸೂಚನೆಯನ್ನು 6 ಗಂಟೆಗಳ ಕಾಲ ಮ್ಯೂಟ್ ಮಾಡಲಾಗುತ್ತದೆ.</string>
+    <string name="op_charing_stations_mute_dynamic_time" formatted="false">ಅಧಿಸೂಚನೆಯನ್ನು %1d ಗಂಟೆಗಳ %2d ನಿಮಿಷಗಳವರೆಗೆ ಮ್ಯೂಟ್ ಮಾಡಲಾಗಿದೆ</string>
     <string name="op_china_mobile">CMCC</string>
     <string name="op_china_telecom">CTCC</string>
     <string name="op_china_unicom">CUCC</string>
@@ -3945,15 +3958,19 @@
     <string name="op_default_apps_summary">ಹೋಮ್, ಬ್ರೌಸರ್</string>
     <string name="op_default_luncher_title">ಹೋಮ್ ಅಪ್ಲಿಕೇಶನ್</string>
     <string name="op_dnd_summary">ಅಡಚಣೆ ಮಾಡಬೇಡಿ</string>
+    <string name="op_enable_location_services">ಹತ್ತಿರದ ಚಾರ್ಜಿಂಗ್ ಕೇಂದ್ರಗಳನ್ನು ಹುಡುಕಲು ಮತ್ತು ಟ್ರ್ಯಾಕ್ ಮಾಡಲು, ದಯವಿಟ್ಟು ಲೊಕೇಶನ್‌ ಸೇವೆಗಳನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಿ</string>
+    <string name="op_enable_text">ಸಕ್ರಿಯಗೊಳಿಸು</string>
     <string name="op_face_unlock_set_unlock_password">ಫೇಸ್ ಅನ್‌ಲಾಕ್ + ಪಾಸ್‌ವರ್ಡ್</string>
     <string name="op_face_unlock_set_unlock_pattern">ಫೇಸ್ ಅನ್‌ಲಾಕ್ + ಪ್ಯಾಟರ್ನ್</string>
     <string name="op_face_unlock_set_unlock_pin">ಫೇಸ್ ಅನ್‌ಲಾಕ್ + ಪಿನ್</string>
     <string name="op_face_unlock_skip_face">ಫೇಸ್ ಅನ್‌ಲಾಕ್ ಇಲ್ಲದೆಯೇ ಮುಂದುವರೆಸಿ</string>
     <string name="op_failed_to_get_data">ಡೇಟಾ ಪತ್ತೆಹಚ್ಚಲು ವಿಫಲವಾಗಿದೆ</string>
     <string name="op_fetch_data_in_process">ಲೋಡ್ ಆಗುತ್ತಿದೆ</string>
+    <string name="op_find_charging_stations">ಕೇಂದ್ರಗಳನ್ನು ಹುಡುಕಿ</string>
     <string name="op_fragment">ಚಿಕ್ಕದು</string>
     <string name="op_gamespace">ಗೇಮ್ ಸ್ಪೇಸ್</string>
     <string name="op_high_power_app_manager">ಪವರ್-ಹಂಗ್ರಿ ಆಪ್ಸ್ ನಿರ್ವಹಣೆ</string>
+    <string name="op_keep_location_services">ಹತ್ತಿರದ ಚಾರ್ಜಿಂಗ್ ಕೇಂದ್ರಗಳನ್ನು ಹುಡುಕಲು ಮತ್ತು ಟ್ರ್ಯಾಕ್ ಮಾಡಲು, ಲೊಕೇಶನ್‌ ಸೇವೆಗಳನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಿ</string>
     <string name="op_light_mode_title">ತೆಳು</string>
     <string name="op_linked_launch_summary">ಮ್ಯಾನೇಜ್ ಆಪ್ಸ್ ಅನ್ನು ಹಿನ್ನೆಲೆಯಲ್ಲಿ ಲಾಂಚ್‌ಗೆ ಲಿಂಕ್ ಮಾಡಬಹುದು</string>
     <string name="op_linked_launch_title">ಆಪ್ಸ್ ಆಟೊ-ಲಾಂಚ್</string>
@@ -4831,7 +4848,7 @@ UT ಇಂಟರ್ಫೇಸ್: %5$s"</string>
     <string name="sim_enabler_summary">SIM %1$s</string>
     <string name="sim_enabler_summary_new_marshmallow">" %1$s"</string>
     <string name="sim_enabler_title">SIM ಎನೇಬ್ಲರ್‌ಗಳು</string>
-    <string name="sim_enabler_will_disable_sim_title">ಸೂಚನೆ</string>
+    <string name="sim_enabler_will_disable_sim_title">ಗಮನಹರಿಸಿ</string>
     <string name="sim_enter_cancel">ರದ್ದುಮಾಡಿ</string>
     <string name="sim_enter_new">ಹೊಸ ಸಿಮ್‌ ಪಿನ್‌</string>
     <string name="sim_enter_ok">ಸರಿ</string>
@@ -5382,6 +5399,7 @@ UT ಇಂಟರ್ಫೇಸ್: %5$s"</string>
     <string name="uicc_lock_summary">ನಿಮ್ಮ ಸಾಧನವನ್ನು ಸ್ಪ್ರಿಂಟ್ SIM ಗಳು ಮಾತ್ರ ಕಾರ್ಯವಿಧಾನದ ಮೂಲಕ ಲಾಕ್ ಮಾಡಲಾಗಿದೆ</string>
     <string name="uicc_unlock">UICC ಅನ್‌ಲಾಕ್</string>
     <string name="uicc_unlock_summary">ನಿಮ್ಮ ಸಾಧನ ಅನ್‌ಲಾಕ್ ಆಗಿದೆ</string>
+    <string name="under_meters">%1d ಮೀಟರ್ ಕೆಳಗೆ</string>
     <string name="uninstall_activity_text">%1$s ಈ ಕೆಳಗಿನ ಆಪ್‌ನ ಭಾಗವಾಗಿದೆ:</string>
     <string name="uninstall_all_blocked_profile_owner">ಈ ಆಪ್ ಕೆಲವು ಬಳಕೆದಾರರು ಅಥವಾ ಪ್ರೊಫೈಲ್‌ಗಳಿಗಾಗಿ ಅಗತ್ಯವಿದೆ ಮತ್ತು ಬೇರೆಯವರಿಗಾಗಿ ಅನ್‌ಇನ್‌ಸ್ಟಾಲ್ ಮಾಡಿದೆ</string>
     <string name="uninstall_all_users_text">ಎಲ್ಲ ಬಳಕೆದಾರರಿಗಾಗಿ ಅನ್‌ಇನ್‌ಸ್ಟಾಲ್ ಮಾಡಿ</string>

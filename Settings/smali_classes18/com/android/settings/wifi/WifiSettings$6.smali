@@ -58,7 +58,7 @@
 
     invoke-direct {v2, p1}, Lcom/android/settings/search/SearchIndexableRaw;-><init>(Landroid/content/Context;)V
 
-    const v3, 0x7f12197e
+    const v3, 0x7f121993    # 1.9420008E38f
 
     invoke-virtual {v1, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 

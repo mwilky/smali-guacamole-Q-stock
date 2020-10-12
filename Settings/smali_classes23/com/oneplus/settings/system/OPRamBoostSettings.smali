@@ -148,7 +148,7 @@
 .method public onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
     .locals 4
 
-    const v0, 0x7f1600ae
+    const v0, 0x7f1600af
 
     invoke-virtual {p0, v0}, Lcom/oneplus/settings/system/OPRamBoostSettings;->addPreferencesFromResource(I)V
 

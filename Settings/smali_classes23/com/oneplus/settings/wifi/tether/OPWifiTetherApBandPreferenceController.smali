@@ -61,7 +61,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f03011c
+    const v1, 0x7f03011d
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getStringArray(I)[Ljava/lang/String;
 
@@ -69,7 +69,7 @@
 
     iput-object v1, p0, Lcom/oneplus/settings/wifi/tether/OPWifiTetherApBandPreferenceController;->mBandEntries:[Ljava/lang/String;
 
-    const v1, 0x7f03011f
+    const v1, 0x7f030120
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getStringArray(I)[Ljava/lang/String;
 
@@ -340,7 +340,7 @@
 
     invoke-virtual {v2, v3}, Lcom/oneplus/settings/widget/OPHotspotApBandSelectionPreference;->setEnabled(Z)V
 
-    const v3, 0x7f12185d
+    const v3, 0x7f121872
 
     invoke-virtual {v2, v3}, Lcom/oneplus/settings/widget/OPHotspotApBandSelectionPreference;->setSummary(I)V
 

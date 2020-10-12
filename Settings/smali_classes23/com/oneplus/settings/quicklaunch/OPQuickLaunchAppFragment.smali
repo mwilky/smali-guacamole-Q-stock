@@ -121,7 +121,7 @@
 .method private initViews(Landroid/view/View;)V
     .locals 3
 
-    const v0, 0x7f0a0482
+    const v0, 0x7f0a0481
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -151,7 +151,7 @@
 
     invoke-virtual {v0, p0}, Landroid/widget/ListView;->setOnItemClickListener(Landroid/widget/AdapterView$OnItemClickListener;)V
 
-    const v0, 0x7f0a03ab
+    const v0, 0x7f0a03aa
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -159,7 +159,7 @@
 
     iput-object v0, p0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchAppFragment;->mLoadingContainer:Landroid/view/View;
 
-    const v0, 0x7f0a048c
+    const v0, 0x7f0a0497
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -295,7 +295,7 @@
 
     iget-object v1, p0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchAppFragment;->mContext:Landroid/content/Context;
 
-    const v2, 0x7f120e06
+    const v2, 0x7f120e08
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

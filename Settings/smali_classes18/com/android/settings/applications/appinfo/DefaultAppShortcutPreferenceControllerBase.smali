@@ -189,12 +189,12 @@
 
     if-eqz v0, :cond_0
 
-    const v0, 0x7f121a07
+    const v0, 0x7f121a1c
 
     goto :goto_0
 
     :cond_0
-    const v0, 0x7f120b4b
+    const v0, 0x7f120b4d
 
     :goto_0
     iget-object v1, p0, Lcom/android/settings/applications/appinfo/DefaultAppShortcutPreferenceControllerBase;->mContext:Landroid/content/Context;

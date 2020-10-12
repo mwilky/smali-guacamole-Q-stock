@@ -279,22 +279,22 @@
 
     if-eq v0, v1, :cond_0
 
-    const v0, 0x7f1216d1
+    const v0, 0x7f1216e6
 
     goto :goto_0
 
     :cond_0
-    const v0, 0x7f1216ce
+    const v0, 0x7f1216e3
 
     goto :goto_0
 
     :cond_1
-    const v0, 0x7f1216d0
+    const v0, 0x7f1216e5
 
     goto :goto_0
 
     :cond_2
-    const v0, 0x7f1216cf
+    const v0, 0x7f1216e4
 
     nop
 
@@ -498,7 +498,7 @@
 
     if-eqz v1, :cond_1
 
-    const v2, 0x7f1216c7
+    const v2, 0x7f1216dc
 
     return v2
 
@@ -507,19 +507,19 @@
 
     if-nez v1, :cond_2
 
-    const v2, 0x7f1216c6
+    const v2, 0x7f1216db
 
     return v2
 
     :cond_2
     if-eqz v1, :cond_3
 
-    const v2, 0x7f1216c8
+    const v2, 0x7f1216dd    # 1.94186E38f
 
     return v2
 
     :cond_3
-    const v2, 0x7f1216c5
+    const v2, 0x7f1216da
 
     return v2
 
@@ -528,7 +528,7 @@
 
     if-eqz v1, :cond_5
 
-    const v2, 0x7f1216bb
+    const v2, 0x7f1216d0
 
     return v2
 
@@ -537,19 +537,19 @@
 
     if-nez v1, :cond_6
 
-    const v2, 0x7f1216ba
+    const v2, 0x7f1216cf
 
     return v2
 
     :cond_6
     if-eqz v1, :cond_7
 
-    const v2, 0x7f1216bc
+    const v2, 0x7f1216d1
 
     return v2
 
     :cond_7
-    const v2, 0x7f1216b9
+    const v2, 0x7f1216ce
 
     return v2
 
@@ -558,7 +558,7 @@
 
     if-eqz v1, :cond_9
 
-    const v2, 0x7f1216c3
+    const v2, 0x7f1216d8
 
     return v2
 
@@ -567,19 +567,19 @@
 
     if-nez v1, :cond_a
 
-    const v2, 0x7f1216c2
+    const v2, 0x7f1216d7
 
     return v2
 
     :cond_a
     if-eqz v1, :cond_b
 
-    const v2, 0x7f1216c4
+    const v2, 0x7f1216d9
 
     return v2
 
     :cond_b
-    const v2, 0x7f1216c1
+    const v2, 0x7f1216d6
 
     return v2
 
@@ -588,7 +588,7 @@
 
     if-eqz v1, :cond_d
 
-    const v2, 0x7f1216bf
+    const v2, 0x7f1216d4
 
     return v2
 
@@ -597,19 +597,19 @@
 
     if-nez v1, :cond_e
 
-    const v2, 0x7f1216be
+    const v2, 0x7f1216d3
 
     return v2
 
     :cond_e
     if-eqz v1, :cond_f
 
-    const v2, 0x7f1216c0
+    const v2, 0x7f1216d5
 
     return v2
 
     :cond_f
-    const v2, 0x7f1216bd
+    const v2, 0x7f1216d2
 
     return v2
 .end method
@@ -633,12 +633,12 @@
 
     if-eqz v0, :cond_0
 
-    const v1, 0x7f1216cb
+    const v1, 0x7f1216e0
 
     goto :goto_0
 
     :cond_0
-    const v1, 0x7f1216ca
+    const v1, 0x7f1216df
 
     :goto_0
     return v1
@@ -1428,7 +1428,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f120fea
+    const v3, 0x7f120fee
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -1570,7 +1570,7 @@
     :cond_2
     sget-object v0, Lcom/android/settings/password/ScreenLockType;->PATTERN:Lcom/android/settings/password/ScreenLockType;
 
-    const v1, 0x7f121396
+    const v1, 0x7f1213aa
 
     invoke-direct {p0, v0, v1}, Lcom/android/settings/password/ChooseLockGeneric$ChooseLockGenericFragment;->setPreferenceSummary(Lcom/android/settings/password/ScreenLockType;I)V
 
@@ -1623,19 +1623,19 @@
 
     sget-object v0, Lcom/android/settings/password/ScreenLockType;->PATTERN:Lcom/android/settings/password/ScreenLockType;
 
-    const v1, 0x7f1210f8
+    const v1, 0x7f12110a
 
     invoke-direct {p0, v0, v1}, Lcom/android/settings/password/ChooseLockGeneric$ChooseLockGenericFragment;->setPreferenceTitle(Lcom/android/settings/password/ScreenLockType;I)V
 
     sget-object v0, Lcom/android/settings/password/ScreenLockType;->PIN:Lcom/android/settings/password/ScreenLockType;
 
-    const v1, 0x7f1210f9
+    const v1, 0x7f12110b
 
     invoke-direct {p0, v0, v1}, Lcom/android/settings/password/ChooseLockGeneric$ChooseLockGenericFragment;->setPreferenceTitle(Lcom/android/settings/password/ScreenLockType;I)V
 
     sget-object v0, Lcom/android/settings/password/ScreenLockType;->PASSWORD:Lcom/android/settings/password/ScreenLockType;
 
-    const v1, 0x7f1210f7
+    const v1, 0x7f121109
 
     invoke-direct {p0, v0, v1}, Lcom/android/settings/password/ChooseLockGeneric$ChooseLockGenericFragment;->setPreferenceTitle(Lcom/android/settings/password/ScreenLockType;I)V
 
@@ -1709,7 +1709,7 @@
 
     iget-boolean v0, p0, Lcom/android/settings/password/ChooseLockGeneric$ChooseLockGenericFragment;->mForFingerprint:Z
 
-    const v1, 0x7f1210df
+    const v1, 0x7f1210ef
 
     if-eqz v0, :cond_0
 
@@ -1767,7 +1767,7 @@
     goto :goto_0
 
     :cond_1
-    const v0, 0x7f0d017a
+    const v0, 0x7f0d017e
 
     invoke-virtual {p0, v0}, Lcom/android/settings/password/ChooseLockGeneric$ChooseLockGenericFragment;->setHeaderView(I)V
 
@@ -1827,7 +1827,7 @@
 
     check-cast v1, Landroid/widget/TextView;
 
-    const v2, 0x7f12099b
+    const v2, 0x7f12099c
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(I)V
 
@@ -1855,7 +1855,7 @@
 .method protected addPreferences()V
     .locals 3
 
-    const v0, 0x7f1600e3
+    const v0, 0x7f1600e4
 
     invoke-virtual {p0, v0}, Lcom/android/settings/password/ChooseLockGeneric$ChooseLockGenericFragment;->addPreferencesFromResource(I)V
 
@@ -1898,7 +1898,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0a03b0
+    const v1, 0x7f0a03af
 
     invoke-virtual {v0, v1}, Landroidx/preference/Preference;->setViewId(I)V
 
@@ -1926,7 +1926,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0a03b2
+    const v1, 0x7f0a03b1
 
     invoke-virtual {v0, v1}, Landroidx/preference/Preference;->setViewId(I)V
 
@@ -1938,7 +1938,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0a03b1
+    const v1, 0x7f0a03b0
 
     invoke-virtual {v0, v1}, Landroidx/preference/Preference;->setViewId(I)V
 
@@ -2095,7 +2095,7 @@
 
     invoke-virtual {v7, v4}, Lcom/android/settingslib/OPRestrictedPreference;->setDisabledByAdmin(Lcom/android/settingslib/RestrictedLockUtils$EnforcedAdmin;)V
 
-    const v7, 0x7f1216d3
+    const v7, 0x7f1216e8
 
     invoke-virtual {v11, v7}, Landroidx/preference/Preference;->setSummary(I)V
 
@@ -3164,7 +3164,7 @@
 
     const/16 v8, 0x64
 
-    const v9, 0x7f1216d9
+    const v9, 0x7f1216ee
 
     invoke-virtual {p0, v9}, Lcom/android/settings/password/ChooseLockGeneric$ChooseLockGenericFragment;->getString(I)Ljava/lang/String;
 

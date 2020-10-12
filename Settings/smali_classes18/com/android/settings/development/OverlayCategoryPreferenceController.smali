@@ -412,7 +412,7 @@
 
     iget-object v3, p0, Lcom/android/settings/development/OverlayCategoryPreferenceController;->mContext:Landroid/content/Context;
 
-    const v4, 0x7f121172
+    const v4, 0x7f121186
 
     invoke-virtual {v3, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

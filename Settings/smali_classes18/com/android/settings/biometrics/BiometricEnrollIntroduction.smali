@@ -134,7 +134,7 @@
 
     invoke-super {p0}, Lcom/android/settings/biometrics/BiometricEnrollBase;->initViews()V
 
-    const v0, 0x7f0a068c
+    const v0, 0x7f0a0699
 
     invoke-virtual {p0, v0}, Lcom/android/settings/biometrics/BiometricEnrollIntroduction;->findViewById(I)Landroid/view/View;
 

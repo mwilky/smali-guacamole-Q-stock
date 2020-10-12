@@ -180,7 +180,7 @@
     <string name="fingerprint_duplicated">તમે પહેલાથી જ તે ફિંગરપ્રિન્ટ નોંધાવેલ છે. બીજી આંગળીનો ઉપયોગ કરો.</string>
     <string name="fingerprint_go_to_security_sumary">તમારા ઉપકરણને અનલૉક કરવા ફિંગરપ્રિન્ટનો ઉપયોગ કરવા માટે, તમારે કોઈ સુરક્ષિત અનલોક સિસ્ટમ સુયોજિત કરવી પડશે. તમે તે અત્યારે કરવા માંગો છો?</string>
     <string name="fingerprint_manage">ફિંગરપ્રિન્ટ ગોઠવો</string>
-    <string name="fingerprint_next">આગળ</string>
+    <string name="fingerprint_next">આગળનું</string>
     <string name="fingerprint_not_recognized">ઓળખવામાં આવ્યુંં નથી</string>
     <string name="fingerprint_password_hint">તમારો બેકઅપ પાસવર્ડ દાખલ કરો</string>
     <string name="fingerprint_password_manage_title">ફિંગરપ્રિંટ</string>
@@ -193,7 +193,7 @@
     <string name="fingerprint_wizard_add_button_label">અન્ય એક ઉમેરો</string>
     <string name="fingerprint_wizard_cancel_button_label">રદ કરો</string>
     <string name="fingerprint_wizard_finish_button_label">સમાપ્ત</string>
-    <string name="fingerprint_wizard_next_button_label">આગળ</string>
+    <string name="fingerprint_wizard_next_button_label">આગળનું</string>
     <string name="gallery_application_title">ગેલેરી એપ</string>
     <string name="generic_error_dlg_text">એપ્લિકેશન અનઇન્સ્ટોલ કરી શકાઈ નથી.</string>
     <string name="generic_error_dlg_title">ભૂલ</string>
@@ -218,7 +218,7 @@
     <string name="header_category_custom">વૈવિધ્યપણું</string>
     <string name="high_power_app_text_nomal">%1$s તમારી બેટરી ખાલી કરી રહ્યું છે</string>
     <string name="high_power_app_text_red">%1$s તમારી બેટરી ખુબજ ખાલી કરી રહ્યું છે</string>
-    <string name="hotspot_tip_message" formatted="false">"મોબાઇલ હૉટસ્પોટ તમારા મોબાઇલ ડેટાને અન્ય Wi-Fi સક્ષમ ઉપકરણો સાથે શેર કરે છે. તમારા મોબાઇલ હૉટસ્પોટથી કનેક્ટ થવા માટે: \u0009 
+    <string name="hotspot_tip_message" formatted="false">"મોબાઇલ હૉટસ્પોટ તમારા મોબાઇલ ડેટાને અન્ય Wi-Fi સક્ષમ ઉપકરણ સાથે શેર કરે છે. તમારા મોબાઇલ હૉટસ્પોટથી કનેક્ટ થવા માટે: \u0009 
  1: અન્ય ઉપકરણ પર Wi-Fi ચાલુ કરો. 
  2: ઉપલબ્ધ Wi-Fi નેટવર્કની સૂચિમાં %s પસંદ કરો. 
  3: જો પાસવર્ડ આવશ્યક છે, બૅટરી સાચવવા માટે %s દાખલ કરો, મોબાઇલ હૉટસ્પોટનો ઉપયોગ કરતી વખતે તમારા ફોનમાં પ્લગ ભરાવી રાખો. "</string>
@@ -248,6 +248,7 @@
     <string name="led_settings_title">LED સૂચનાઓ</string>
     <string name="list_saved_fingerprints">સાચવેલ ફિંગરપ્રિન્ટ</string>
     <string name="list_saved_fingerprints_footer">પાંચ ફિંગરપ્રિન્ટ સુધી સાચવી શકાય છે. સાચવેલ કોઈપણ ફિંગરપ્રિન્ટ પર નામ બદલવા અથવા ડિલીટ કરવા ટેપ કરો.</string>
+    <string name="location_text">સ્થાન</string>
     <string name="lockpassword_choose_your_fingerprint_header">ફિંગરપ્રિંટ</string>
     <string name="long_press_power_button">પાવર બટનને દબાવો અને હોલ્ડ કરો</string>
     <string name="mail_application_title">મેઈલ એપ</string>
@@ -266,6 +267,7 @@
     <string name="mobile_hotspot_data_off_error">હૉટસ્પૉટને ચાલુ કરવા માટે, કૃપા કરીને મોબાઈલ ડેટાને ચાલુ કરી દો</string>
     <string name="multi_app_label_badge">સમાંતર %1$s</string>
     <string name="music_application_title">મ્યુઝીક એપ</string>
+    <string name="nearest_station">સૌથી નજીકનું સ્ટેશન</string>
     <string name="nfc_uicc_sim1">સિમ 1</string>
     <string name="nfc_uicc_sim2">સિમ 2</string>
     <string name="no_network">કોઈ નેટવર્ક સેવા નથી</string>
@@ -1074,6 +1076,7 @@
     <string name="oneplus_silent_mode_on">સાયલન્ટ મોડ ચાલુ છે</string>
     <string name="oneplus_silent_mode_soc_tri_state_summary">એલાર્મ સિવાય, કોલ્સ અને સૂચનાઓને સાયલન્ટ કરવામાં આવશે</string>
     <string name="oneplus_silent_mode_summary">એલાર્મ સિવાય, કોલ્સ અને સૂચનાઓને સાયલન્ટ કરવામાં આવશે</string>
+    <string name="oneplus_silent_notifications_status_bar">સ્થિતિ પટ્ટીમાં મૌન સૂચના છુપાવો</string>
     <string name="oneplus_sim1_ringtone_switch">સિમ કાર્ડ 1</string>
     <string name="oneplus_sim2_ringtone_switch">સિમ કાર્ડ 2</string>
     <string name="oneplus_simcard_title">SIM</string>
@@ -1164,7 +1167,7 @@
     <string name="oneplus_tools_summary_U30">રમત મોડ, પૉકેટ મોડ, શેડ્યૂલ કરેલ પાવર ચાલુ/બંધ</string>
     <string name="oneplus_tools_summary_no_gamingmode">એપ્લિકેશન લોકર, સમાંતર એપ્લિકેશનો</string>
     <string name="oneplus_tools_title">ઉપયોગિતાઓ</string>
-    <string name="oneplus_top_level_accounts_summary">OnePlus account, other accounts</string>
+    <string name="oneplus_top_level_accounts_summary">OnePlus એકાઉન્ટ, અન્ય એકાઉન્ટ</string>
     <string name="oneplus_top_level_apps_and_notifs_summary">ડિફૉલ્ટ એપ્લિકેશન, પરવાનગીઓ</string>
     <string name="oneplus_top_level_buttons_and_gestures_summary">ચેતવણી સ્લાઇડર, નેવિગેશન બાર &amp; સંકેતો</string>
     <string name="oneplus_top_level_cloud_h2_summary">ક્લાઉડ સાથે ડેટા સિંક કરો, મારો ફોન શોધો</string>
@@ -1253,8 +1256,18 @@
     <string name="op_audio_settings">ઓડિયૉ ટ્યુનર</string>
     <string name="op_auto_power_saving">ઑટો પાવર સેવિંગ</string>
     <string name="op_auto_power_saving_summary">બૅટરી ડ્રેન વિના યોગ્ય રિઝોલ્યૂશન પર આપમેળે સ્વિચ કરો</string>
+    <string name="op_charging_Station_mute_notifications">મ્યૂટ સૂચનાઓ</string>
+    <string name="op_charging_footer_text">તમને નજીકના કોઈપણ ચાર્જિંગ સ્ટેશન અંગે સૂચના આપવામાં આવશેજ્યારે તમે એરપોર્ટ્સ જેવા ભાગીદાર સ્થાનો અથવા Pop-ups જેવી OnePlus ઇવેન્ટ્સની મુલાકાત લેશો.</string>
     <string name="op_charging_optimization">અનુકુળ ચાર્જિંગ</string>
     <string name="op_charging_optimization_summary">તમારા વપરાશની આદતો અનુસાર ચાર્જિંગ પેટર્નને ઑપ્ટિમાઇઝ કરો</string>
+    <string name="op_charging_station">નજીકના ચાર્જિંગ સ્ટેશનો</string>
+    <string name="op_charging_station_no_station">નજીકમાં કોઈ ચર્જિંગ સ્ટેશન્સ નથી</string>
+    <string name="op_charging_station_summary">જ્યારે ચાર્જિંગ સ્ટેશન નજીકમાં હોય ત્યારે સૂચિત કરો</string>
+    <string name="op_charging_stations">ચાર્જિંગ સ્ટેશન્સ</string>
+    <string name="op_charging_stations_off_description">ચાર્જિંગ સ્ટેશન્સ ષોડવા માટે, BLE કિરણો શોધવા માટે સ્થાનની પરવાનગી જરૂરી છે. કૃપયા આ સુવિધાનો ઉપયોગ શરૂ કરવા માટે સ્થાનમાં એક્સેસ પ્રદાન કરો.</string>
+    <string name="op_charging_stations_off_header">ચાર્જિંગ સ્ટેશન્સ શોધવા માટે, BLE કિરણો શોધવા માટે સ્થાનની મંજૂરી જરૂરી છે. કૃપયા આ સુવિધાનો ઉપયોગ શરૂ કરવા માટે સ્થાનમાં એક્સેસ પ્રદાન કરો.</string>
+    <string name="op_charing_station_mute_notifications_description">સૂચનાઓને 6 કલાક માટે મ્યુટ કરવામાં આવશે.</string>
+    <string name="op_charing_stations_mute_dynamic_time" formatted="false">%1d કલાકો %2d મિનિટ્સ માટે સૂચના બંધ કરવામાં આવી</string>
     <string name="op_china_mobile">CMCC</string>
     <string name="op_china_telecom">CTCC</string>
     <string name="op_china_unicom">CUCC</string>
@@ -1270,15 +1283,19 @@
     <string name="op_default_apps_summary">હોમ, બ્રાઉઝર</string>
     <string name="op_default_luncher_title">હોમ એપ્લિકેશન</string>
     <string name="op_dnd_summary">ખલેલ પહોચાડશો નહીં</string>
+    <string name="op_enable_location_services">નજીકના ચાર્જિંગ સ્ટેશન શોધવા અને ટ્રૅક કરવાં માટે, કૃપા કરીને સ્થાન સેવાઓ સક્ષમ કરો</string>
+    <string name="op_enable_text">સક્ષમ કરો</string>
     <string name="op_face_unlock_set_unlock_password">ફેસ અનલૉક + પાસવર્ડ</string>
     <string name="op_face_unlock_set_unlock_pattern">ફેસ અનલૉક + પેટર્ન</string>
     <string name="op_face_unlock_set_unlock_pin">ફેસ અનલૉક + PIN</string>
     <string name="op_face_unlock_skip_face">ફેસ અનલૉક વિના ચાલુ રાખો</string>
     <string name="op_failed_to_get_data">ડેટા પુનઃપ્રાપ્ત કરવામાં નિષ્ફળ</string>
     <string name="op_fetch_data_in_process">લોડ કરી રહ્યું છે</string>
+    <string name="op_find_charging_stations">સ્ટેશન્સ શોધો</string>
     <string name="op_fragment">નાની</string>
     <string name="op_gamespace">Game Space</string>
     <string name="op_high_power_app_manager">વધુ પાવર વાપરતી એપ્લિકેશન</string>
+    <string name="op_keep_location_services">નજીકના ચાર્જિંગ સ્ટેશન શોધવા અને ટ્રૅક કરવાં માટે, સ્થાન સેવાઓ સક્ષમ રાખો</string>
     <string name="op_light_mode_title">લાઈટ</string>
     <string name="op_linked_launch_summary">એપ્લિકેશન વ્યવસ્થિત કરવાથી બેકગ્રાઉન્ડમાં લીંક લોન્ચ થઇ શકે</string>
     <string name="op_linked_launch_title">એપ્સ ઓટો-લોન્ચ</string>
@@ -1496,6 +1513,7 @@
     <string name="uicc_lock_summary">તમારું ઉપકરણ ફક્ત Sprint SIM દ્વારા લૉક કરેલ છે</string>
     <string name="uicc_unlock">UICC અનલૉક</string>
     <string name="uicc_unlock_summary">તમારું ઉપકરણ અનલૉક કરેલ છે</string>
+    <string name="under_meters">%1d મીટર હેઠળ</string>
     <string name="uninstall_activity_text">%1$sનીચેની એપનો એક ભાગ છે:</string>
     <string name="uninstall_all_blocked_profile_owner">આ એપ કેટલાક વપરાશકર્તાઓ અથવા પ્રોફાઇલ્સ માટે જરૂરી છે          અને અન્યો માટે અનઇન્સ્ટોલ કરવામાં આવી છે</string>
     <string name="uninstall_application_text">શું તમે આ એપ્લિકેશનને અનઇન્સ્ટોલ કરવા માંગો છો?</string>
@@ -1518,7 +1536,7 @@
     <string name="uninstallapps_confirm">પુષ્ટિ કરો</string>
     <string name="uninstallapps_confirm_dialog_body">પસંદ કરેલી બધી એપ્લિકેશન્સ અને જે-તે એપ્લિકેશન પૅકેજ સાથે સંકળાયેલી બધી જ ફાઇલો દૂર કરવામાં આવશે.</string>
     <string name="uninstallapps_confirm_dialog_title">પસંદ કરેલી એપ્સ દૂર કરીએ?</string>
-    <string name="uninstallapps_selected">પસંદ કરી લીધું</string>
+    <string name="uninstallapps_selected">પસંદ કરેલી</string>
     <string name="uninstallapps_toast_message">એપ્સ દૂર કરવામાં આવી છે</string>
     <string name="uninstalling">અનઇન્સ્ટોલ થઈ રહ્યું છે…</string>
     <string name="uninstalling_notification_channel">અનઇન્સ્ટોલ ચાલુ છે</string>

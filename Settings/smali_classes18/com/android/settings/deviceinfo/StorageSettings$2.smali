@@ -46,7 +46,7 @@
 
     invoke-direct {v1, p1}, Lcom/android/settings/search/SearchIndexableRaw;-><init>(Landroid/content/Context;)V
 
-    const v2, 0x7f121556
+    const v2, 0x7f12156a
 
     invoke-virtual {p1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -183,7 +183,7 @@
 
     move-object v1, v5
 
-    const v5, 0x7f120a66
+    const v5, 0x7f120a67
 
     invoke-virtual {p1, v5}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -209,7 +209,7 @@
 
     move-object v1, v5
 
-    const v5, 0x7f120a51
+    const v5, 0x7f120a52
 
     invoke-virtual {p1, v5}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -235,7 +235,7 @@
 
     move-object v1, v5
 
-    const v5, 0x7f120a50
+    const v5, 0x7f120a51
 
     invoke-virtual {p1, v5}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -261,7 +261,7 @@
 
     move-object v1, v5
 
-    const v5, 0x7f120a59
+    const v5, 0x7f120a5a
 
     invoke-virtual {p1, v5}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -287,7 +287,7 @@
 
     move-object v1, v5
 
-    const v5, 0x7f120a63
+    const v5, 0x7f120a64
 
     invoke-virtual {p1, v5}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -313,7 +313,7 @@
 
     move-object v1, v5
 
-    const v5, 0x7f120a61
+    const v5, 0x7f120a62
 
     invoke-virtual {p1, v5}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -339,7 +339,7 @@
 
     move-object v1, v2
 
-    const v2, 0x7f121546
+    const v2, 0x7f12155a
 
     invoke-virtual {p1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

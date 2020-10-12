@@ -221,7 +221,7 @@
 
     iget-object v0, p0, Lcom/android/settings/deviceinfo/imei/ImeiInfoPreferenceController;->mContext:Landroid/content/Context;
 
-    const v1, 0x7f120a4c
+    const v1, 0x7f120a4d
 
     const/4 v2, 0x1
 
@@ -246,7 +246,7 @@
     :cond_0
     iget-object v0, p0, Lcom/android/settings/deviceinfo/imei/ImeiInfoPreferenceController;->mContext:Landroid/content/Context;
 
-    const v1, 0x7f12150f
+    const v1, 0x7f121523
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -290,7 +290,7 @@
     :cond_0
     iget-object v0, p0, Lcom/android/settings/deviceinfo/imei/ImeiInfoPreferenceController;->mContext:Landroid/content/Context;
 
-    const v1, 0x7f12150c
+    const v1, 0x7f121520
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

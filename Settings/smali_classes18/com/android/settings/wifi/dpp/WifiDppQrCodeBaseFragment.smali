@@ -73,7 +73,7 @@
 
     iput-object v0, p0, Lcom/android/settings/wifi/dpp/WifiDppQrCodeBaseFragment;->mSummary:Landroid/widget/TextView;
 
-    const v0, 0x7f0a0700
+    const v0, 0x7f0a070d
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -91,7 +91,7 @@
 
     const/16 v1, 0x8
 
-    const v2, 0x7f0801d3
+    const v2, 0x7f080206
 
     if-ne p1, v2, :cond_0
 

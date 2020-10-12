@@ -28,7 +28,7 @@
 
     const v0, 0x7f1205a5
 
-    const v1, 0x7f121391
+    const v1, 0x7f1213a5
 
     const/4 v2, 0x1
 

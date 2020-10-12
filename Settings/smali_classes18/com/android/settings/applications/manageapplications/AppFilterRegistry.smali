@@ -183,7 +183,7 @@
 
     const/4 v3, 0x6
 
-    const v5, 0x7f1214d3
+    const v5, 0x7f1214e7
 
     invoke-direct {v1, v2, v3, v5}, Lcom/android/settings/applications/manageapplications/AppFilterItem;-><init>(Lcom/android/settingslib/applications/ApplicationsState$AppFilter;II)V
 
@@ -197,7 +197,7 @@
 
     const/4 v3, 0x7
 
-    const v5, 0x7f1214d2
+    const v5, 0x7f1214e6
 
     invoke-direct {v1, v2, v3, v5}, Lcom/android/settings/applications/manageapplications/AppFilterItem;-><init>(Lcom/android/settingslib/applications/ApplicationsState$AppFilter;II)V
 
@@ -351,7 +351,7 @@
     :goto_0
     const/16 v3, 0x12
 
-    const v5, 0x7f120c0c
+    const v5, 0x7f120c0e
 
     invoke-direct {v1, v2, v3, v5}, Lcom/android/settings/applications/manageapplications/AppFilterItem;-><init>(Lcom/android/settingslib/applications/ApplicationsState$AppFilter;II)V
 
@@ -387,7 +387,7 @@
 
     if-nez v6, :cond_2
 
-    const v6, 0x7f120c0b
+    const v6, 0x7f120c0d
 
     goto :goto_2
 
@@ -423,7 +423,7 @@
 
     const/16 v5, 0x15
 
-    const v6, 0x7f120b6a
+    const v6, 0x7f120b6c
 
     invoke-direct {v2, v3, v5, v6}, Lcom/android/settings/applications/manageapplications/AppFilterItem;-><init>(Lcom/android/settingslib/applications/ApplicationsState$AppFilter;II)V
 
@@ -453,7 +453,7 @@
 
     const/16 v4, 0x17
 
-    const v5, 0x7f120f08
+    const v5, 0x7f120f0b
 
     invoke-direct {v2, v3, v4, v5}, Lcom/android/settings/applications/manageapplications/AppFilterItem;-><init>(Lcom/android/settingslib/applications/ApplicationsState$AppFilter;II)V
 
@@ -469,7 +469,7 @@
 
     const/16 v4, 0x18
 
-    const v5, 0x7f120f0c
+    const v5, 0x7f120f0f
 
     invoke-direct {v2, v3, v4, v5}, Lcom/android/settings/applications/manageapplications/AppFilterItem;-><init>(Lcom/android/settingslib/applications/ApplicationsState$AppFilter;II)V
 
@@ -485,7 +485,7 @@
 
     const/16 v4, 0x19
 
-    const v5, 0x7f120f06
+    const v5, 0x7f120f09
 
     invoke-direct {v2, v3, v4, v5}, Lcom/android/settings/applications/manageapplications/AppFilterItem;-><init>(Lcom/android/settingslib/applications/ApplicationsState$AppFilter;II)V
 

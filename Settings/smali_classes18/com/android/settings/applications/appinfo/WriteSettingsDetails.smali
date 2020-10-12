@@ -285,7 +285,7 @@
 
     iput-object v1, p0, Lcom/android/settings/applications/appinfo/WriteSettingsDetails;->mAppOpsManager:Landroid/app/AppOpsManager;
 
-    const v1, 0x7f160118
+    const v1, 0x7f160119
 
     invoke-virtual {p0, v1}, Lcom/android/settings/applications/appinfo/WriteSettingsDetails;->addPreferencesFromResource(I)V
 

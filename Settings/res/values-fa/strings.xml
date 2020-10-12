@@ -1636,7 +1636,7 @@
     <string name="doze_always_on_summary">نمایش زمان، نمادهای اعلان و سایر اطلاعات. استفاده باتری افزایش‌یافته.</string>
     <string name="doze_always_on_title">همیشه روشن</string>
     <string name="doze_summary">وقتی اعلامیه دریافت می‌کنید صفحه نمایش روشن شود.</string>
-    <string name="doze_title">نمایشگر محیط</string>
+    <string name="doze_title">صفحه نمایش محدود</string>
     <string name="draw_overlay">نمایش روی سایر برنامه‌ها</string>
     <string name="dsds_dialog_cancel">لغو</string>
     <string name="dsds_dialog_confirm">بازراه‌اندازی</string>
@@ -1875,7 +1875,7 @@
     <string name="fingerprint_manage">مدیریت اثر انگشت ها</string>
     <string name="fingerprint_manage_category_title">مدیریت اثر انگشت</string>
     <string name="fingerprint_next">بعدی</string>
-    <string name="fingerprint_not_recognized">شناخته نشده</string>
+    <string name="fingerprint_not_recognized">تشخیص داده نشد</string>
     <string name="fingerprint_password_hint">رمز پشتیبان خود را وارد کنید</string>
     <string name="fingerprint_password_manage_title">اثر انگشت</string>
     <string name="fingerprint_pin_hint">پین پشتیبان خود را وارد کنید</string>
@@ -2021,10 +2021,10 @@
     <string name="homepage_all_settings">همه تنظیمات</string>
     <string name="homepage_condition_footer_content_description">کوچک کردن</string>
     <string name="homepage_personal_settings">پیشنهادها</string>
-    <string name="hotspot_tip_message" formatted="false">"نقطه اتصال دادۀ تلفن همراه شما را با سایر دستگاه‌های مجهز به Wi-Fi به اشتراک می‌گذارد. برای اتصال به نقطه اتصال همراه: \u0009 
+    <string name="hotspot_tip_message" formatted="false">"«نقطۀ اتصال همراه» دادۀ تلفن همراه شما را با سایر دستگاه‌های مجهز به Wi-Fi به اشتراک می‌گذارد. برای اتصال به «نقطۀ اتصال همراه»: \u0009 
  1: Wi-Fi را در دستگاه دیگر روشن کنید.
  2: %s را در لیست شبکه‌های Wi-Fi موجود انتخاب کنید. 
- 3: در صورت نیاز به رمز عبور، %s را وارد کنید؛ برای ذخیره باتری، هنگام استفاده از نقطه اتصال همراه، تلفن را از شارژر جدا نکنید. "</string>
+ 3: در صورت نیاز به رمز عبور، %s را وارد کنید؛ برای ذخیرۀ نیروی باتری، هنگام استفاده از «نقطۀ اتصال همراه»، تلفن را از شارژر جدا نکنید. "</string>
     <string name="hotspot_tip_title">نقطۀ اتصال همراه</string>
     <string name="hwui_force_dark_summary">ویژگی اجبار حالت تاریک را برای همیشه روشن بودن لغو می‌کند</string>
     <string name="hwui_force_dark_title">لغو اجبار حالت تاریک</string>
@@ -2311,6 +2311,7 @@
     <string name="location_settings_title">مکان</string>
     <string name="location_sources_heading">منابع موقعیت مکانی</string>
     <string name="location_street_level">‏به برنامه‌های کاربردی اجازه داده شود برای مشخص کردن دقیق مکان شما از GPS تلفن همراه شما استفاده کنند</string>
+    <string name="location_text">موقعیت مکانی</string>
     <string name="location_title">موقعیت مکانی شما</string>
     <string name="lock_after_timeout">به‌صورت خودکار قفل شود</string>
     <string name="lock_after_timeout_summary">%1$s پس از خواب</string>
@@ -2708,6 +2709,7 @@
     <string name="my_device_info_account_preference_title">حساب</string>
     <string name="my_device_info_device_name_preference_title">نام دستگاه</string>
     <string name="n_cacrts">‏%d گواهی CA</string>
+    <string name="nearest_station">نزدیکترین ایستگاه</string>
     <string name="network_4G">‏4G (توصیه شده)</string>
     <string name="network_connected">متصل</string>
     <string name="network_connecting">درحال اتصال…</string>
@@ -2980,7 +2982,7 @@
     <string name="oneplus_app_locker_summary">نرم افزارها را برای رمزگذاری انتخاب کنید</string>
     <string name="oneplus_app_locker_switch">پنهان کردن محتوای اعلان</string>
     <string name="oneplus_app_locker_switch_summary">محتوای اعلان برای برنامه‌های دارای «قفل‌کنندۀ برنامه» پنهان خواهد شد</string>
-    <string name="oneplus_app_locker_title">قفل‌کنندۀ برنامه</string>
+    <string name="oneplus_app_locker_title">App Locker</string>
     <string name="oneplus_app_network_settings">کنترل مصرف داده</string>
     <string name="oneplus_app_notification_allow_led">ال ای دی روشن</string>
     <string name="oneplus_app_notification_not_allow_led">ال ای دی خاموش</string>
@@ -3099,7 +3101,7 @@
     <string name="oneplus_deleted_fingerprint_list">اثر انگشت حذف شد</string>
     <string name="oneplus_deleted_fingerprint_list_failed">حذف اثر انگشت ناموفق بود</string>
     <string name="oneplus_deleteing_fingerprint_list">در حال حذف اثر انگشت</string>
-    <string name="oneplus_denoise_notification">اعلان با اولویت پایین</string>
+    <string name="oneplus_denoise_notification">اخطار کم اولویت</string>
     <string name="oneplus_denoise_notification_summary">هرگز صدا یا لرزش ایجاد نکنید. هرگز نگاه نکنید و صفحه را روشن نکنید. از صفحه قفل و نوار وضعیت پنهان کنید. اعلان‌ها در پایین مرکز اعلان نمایش داده خواهند شد</string>
     <string name="oneplus_device_connected_time">زمان شروع اتصال: %1$s</string>
     <string name="oneplus_device_electronic_card">کارت ضمانت نامه الکترونیکی</string>
@@ -3132,7 +3134,7 @@
     <string name="oneplus_double_tap_power_none">هیچ کدام</string>
     <string name="oneplus_doze_summary_801">نمایش ساعت و اطلاعات دیگر در صفحۀ آماده به کار</string>
     <string name="oneplus_doze_summary_new">نشان دادن ساعت، تاریخ و اعلان‌ها در صفحۀ نمایش</string>
-    <string name="oneplus_doze_title">نمایشگر محیط</string>
+    <string name="oneplus_doze_title">صفحه نمایش محدود</string>
     <string name="oneplus_doze_title_801">نمایشگر محیطی</string>
     <string name="oneplus_draw_gesture_start_none">هیچ کدام</string>
     <string name="oneplus_draw_m_start_app">بیرون کشیدن حرف M</string>
@@ -3279,7 +3281,7 @@
     <string name="oneplus_game_mode_ad_summary">بهبود جزئیات قسمت‌های روشن و تیره در صفحۀ نمایش بازی</string>
     <string name="oneplus_game_mode_ad_title">بهبود صفحۀ نمایش بازی</string>
     <string name="oneplus_game_mode_app_list">لیست برنامه‌های حالت بازی</string>
-    <string name="oneplus_gaming_mode">«حالت بازی»</string>
+    <string name="oneplus_gaming_mode">حالت بازی</string>
     <string name="oneplus_gaming_mode_add_apps">اضافه کردن برنامه برای حالت بازی</string>
     <string name="oneplus_gaming_mode_close_automatic_brightness">غیر فعال کردن روشنایی خودکار</string>
     <string name="oneplus_gaming_mode_close_automatic_brightness_summary">قفل روشنایی صفحه نمایش هنگام فعال بودن حالت بازی</string>
@@ -3330,7 +3332,7 @@
     <string name="oneplus_h2_contributors">مشارکت‌کنندگان HydrogenOS</string>
     <string name="oneplus_hand_up_proximity_summary">وقتی گوشی همراه را بلند می‌کنید صفحه نمایش روشن شود</string>
     <string name="oneplus_hand_up_proximity_title">صفحه نمایش بلندشدن</string>
-    <string name="oneplus_hand_up_to_show">برای نمایش، گوشی خود را بردارید</string>
+    <string name="oneplus_hand_up_to_show">بلند کردن تلفن برای بیدار شدن</string>
     <string name="oneplus_haptic_feedback_no_app">هیچ برنامۀ پشتیبانی‌شده‌ای نصب نشده است</string>
     <string name="oneplus_haptic_feedback_no_app_tip">می‌توانید PUBG Mobile و Asphalt 9 را نصب کنید</string>
     <string name="oneplus_haptic_feedback_summary">بازخورد لمسی بهتری برای بازی‌های پشتیبانی‌شده ارائه می‌شود</string>
@@ -3464,7 +3466,7 @@
     <string name="oneplus_none_default_gallery">بدون گالری پیش فرض</string>
     <string name="oneplus_none_default_music">بدون پخش موسیقی پیش فرض</string>
     <string name="oneplus_normal_clear_way">حذف عادی</string>
-    <string name="oneplus_normal_clear_way_summary">بدون پاک کردن فرآیندهای پس‌زمینه، فهرست کارها و حافظه پنهان را پاک کنید.</string>
+    <string name="oneplus_normal_clear_way_summary">بدون پاک کردن فرآیندهای پس‌زمینه، فهرست وظایف و حافظۀ پنهان پاک می‌شود.</string>
     <string name="oneplus_not_disturb_on">مزاحم نشوید روشن است</string>
     <string name="oneplus_not_show">دیگر این مورد نمایش داده نشود</string>
     <string name="oneplus_notch_display_area">قسمت برآمده</string>
@@ -3537,7 +3539,7 @@
     <string name="oneplus_preference_settings_behavior">ترجیحات</string>
     <string name="oneplus_preference_settings_custom_time">تغییر خودکار وضعیت</string>
     <string name="oneplus_preference_settings_manual_open">وضعیت</string>
-    <string name="oneplus_preference_settings_turn_off_time">تا</string>
+    <string name="oneplus_preference_settings_turn_off_time">به</string>
     <string name="oneplus_preference_settings_turn_on">روشن کردن حالت «بدون مزاحمت»</string>
     <string name="oneplus_preference_settings_turn_on_time">از</string>
     <string name="oneplus_prior_to_use_you_need_to">قبل از استفاده، باید :</string>
@@ -3641,7 +3643,7 @@
     <string name="oneplus_screen_color_mode_soft">نرم</string>
     <string name="oneplus_screen_color_mode_title">تنظیم صفحه نمایش</string>
     <string name="oneplus_screen_color_mode_title_summary">چون حالت شب روشن است، در دسترس نیست</string>
-    <string name="oneplus_screen_features_not_available_toast">در صورت روشن بودن، قابلیت‌هایی مانند کالیبراسیون صفحۀ نمایش در دسترس نخواهد بود</string>
+    <string name="oneplus_screen_features_not_available_toast">وقتی روشن باشد، ویژگی‌هایی مانند تنظیم صفحه‌نمایش دردسترس نخواهد بود</string>
     <string name="oneplus_screen_refresh_rate">نرخ تازه‌سازی صفحۀ نمایش</string>
     <string name="oneplus_screen_refresh_rate_60hz_summary">کمتر روان با عمر باتری بیشتر</string>
     <string name="oneplus_screen_refresh_rate_auto_summary">بسیار روان با نرخ تازه‌سازی بالاتر</string>
@@ -3748,6 +3750,7 @@
     <string name="oneplus_silent_mode_on">حالت بی صدا روشن است</string>
     <string name="oneplus_silent_mode_soc_tri_state_summary">تماس‌ها و اعلان‌ها به‌جز زنگ‌های ساعت، بی‌صدا می‌شوند</string>
     <string name="oneplus_silent_mode_summary">تماس‌ها و اعلان‌ها به‌جز زنگ‌های ساعت، بی‌صدا می‌شوند</string>
+    <string name="oneplus_silent_notifications_status_bar">اعلان بی‌صدا در نوار وضعیت پنهان شود</string>
     <string name="oneplus_sim1_ringtone_switch">سیم کارت 1</string>
     <string name="oneplus_sim2_ringtone_switch">سیم کارت 2</string>
     <string name="oneplus_simcard_title">سیم‌کارت</string>
@@ -3838,7 +3841,7 @@
     <string name="oneplus_tools_summary_U30">حالت بازی، حالت جیب، روشن/خاموش شدن زمان‌بندی‌شده</string>
     <string name="oneplus_tools_summary_no_gamingmode">قفل‌کنندۀ برنامه، برنامه‌های موازی</string>
     <string name="oneplus_tools_title">ابزارها</string>
-    <string name="oneplus_top_level_accounts_summary">OnePlus account, other accounts</string>
+    <string name="oneplus_top_level_accounts_summary">حساب OnePlus، سایر حساب‌ها</string>
     <string name="oneplus_top_level_apps_and_notifs_summary">برنامه‌های پیش‌فرض، مجوزها</string>
     <string name="oneplus_top_level_buttons_and_gestures_summary">نشانگر کشویی هشدار، نوار پیمایش و فرمان‌های حرکتی</string>
     <string name="oneplus_top_level_cloud_h2_summary">همگام‌سازی داده‌ها با فضای ابری، «تلفن‌یاب»</string>
@@ -3853,7 +3856,7 @@
     <string name="oneplus_top_level_system_summary">زبان و صفحه‌کلید، زمان، بازنشانی، به‌روزرسانی‌های سیستم</string>
     <string name="oneplus_top_level_system_summary_verizon">زبان و صفحه‌کلید، زمان، بازنشانی</string>
     <string name="oneplus_touch_vibrate">لرزش با لمس</string>
-    <string name="oneplus_turn_off_time">تا</string>
+    <string name="oneplus_turn_off_time">به</string>
     <string name="oneplus_turn_on_feature_cancel">لغو</string>
     <string name="oneplus_turn_on_feature_ok">روشن کردن</string>
     <string name="oneplus_turn_on_time">از</string>
@@ -3928,8 +3931,18 @@
     <string name="op_audio_settings">تنظیم‌کنندۀ صدا</string>
     <string name="op_auto_power_saving">ذخیرۀ نیروی خودکار</string>
     <string name="op_auto_power_saving_summary">بدون تخلیۀ شارژ باتری، تغییر وضعیت به وضوح مناسب به صورت خودکار انجام شود</string>
+    <string name="op_charging_Station_mute_notifications">بی‌صدا کردن اعلان‌ها</string>
+    <string name="op_charging_footer_text">هنگام بازدید از مکان‌های اشتراکی همچون فرودگاه‌ها یا رویدادهای Oneplus مانند Pop-ups، در مورد هر ایستگاه شارژ در این نزدیکی به شما اطلاع داده خواهد شد.</string>
     <string name="op_charging_optimization">شارژ بهینه</string>
     <string name="op_charging_optimization_summary">الگوی شارژ شدن دستگاه را با توجه به عادات استفادۀ خود بهینه کنید</string>
+    <string name="op_charging_station">ایستگاه‌های شارژ نزدیک</string>
+    <string name="op_charging_station_no_station">هیچ ایستگاه شارژی در نزدیکی وجود ندارد</string>
+    <string name="op_charging_station_summary">در صورت نبود ایستگاه شارژ در یک مکان نزدیک اطلاع دهید</string>
+    <string name="op_charging_stations">ایستگاه‌های شارژ کردن</string>
+    <string name="op_charging_stations_off_description">برای پیدا کردن ایستگاه‌های شارژ، مجوز موقعیت مکانی برای شناسایی برج‌های دیدبانی BLE لازم است. لطفا برای شروع استفاده از این ویژگی، دسترسی به موقعیت مکانی دسترسی را فراهم کنید.</string>
+    <string name="op_charging_stations_off_header">برای پیدا کردن ایستگاه‌های شارژ، مجوز موقعیت مکانی برای شناسایی برج‌های دیدبانی BLE لازم است. لطفا برای شروع استفاده از این ویژگی، دسترسی به موقعیت مکانی دسترسی را فراهم کنید.</string>
+    <string name="op_charing_station_mute_notifications_description">اعلان‌ها برای 6 ساعت بی صدا خواهند بود.</string>
+    <string name="op_charing_stations_mute_dynamic_time" formatted="false">اعلان‌ها برای %1d ساعت و %2d دقیقه بی‌صدا خواهدبود</string>
     <string name="op_china_mobile">CMCC</string>
     <string name="op_china_telecom">CTCC</string>
     <string name="op_china_unicom">CUCC</string>
@@ -3945,15 +3958,19 @@
     <string name="op_default_apps_summary">صفحه اصلی، مرورگر</string>
     <string name="op_default_luncher_title">برنامه صفحه اصلی</string>
     <string name="op_dnd_summary">بدون مزاحمت</string>
+    <string name="op_enable_location_services">برای یافتن و ردگیری ایستگاه‌های شارژ نزدیک، لطفاً خدمات موقعیت مکانی را فعال کنید</string>
+    <string name="op_enable_text">فعال‌سازی</string>
     <string name="op_face_unlock_set_unlock_password">قفل‌گشایی با چهره + رمز عبور</string>
     <string name="op_face_unlock_set_unlock_pattern">قفل‌گشایی با چهره + الگو</string>
     <string name="op_face_unlock_set_unlock_pin">قفل‌گشایی با چهره + پین</string>
     <string name="op_face_unlock_skip_face">ادامه بدون «قفل‌گشایی با چهره»</string>
     <string name="op_failed_to_get_data">بازیابی داده ها ناتمام ماند</string>
     <string name="op_fetch_data_in_process">در حال بارگذاری</string>
+    <string name="op_find_charging_stations">پیدا کردن ایستگاه‌ها</string>
     <string name="op_fragment">کوتاه</string>
     <string name="op_gamespace">فضای بازی</string>
     <string name="op_high_power_app_manager">مدیریت برنامه های تشنه قدرت</string>
+    <string name="op_keep_location_services">برای یافتن و ردگیری ایستگاه‌های شارژ نزدیک، لطفاً خدمات موقعیت مکانی را فعال نگه دارید</string>
     <string name="op_light_mode_title">نور</string>
     <string name="op_linked_launch_summary">مدیریت برنامه‌ها در پس زمینه قابل لینک دهی و راه اندازی هستند</string>
     <string name="op_linked_launch_title">راه اندازی خودکار برنامه ها</string>
@@ -4743,7 +4760,7 @@
     <string name="settings_safetylegal_activity_unreachable">‏شما اتصال داده ندارید. برای اینکه هم‌اکنون این اطلاعات را مشاهده کنید، از هر رایانه متصل به اینترنت به %s بروید.</string>
     <string name="settings_safetylegal_title">اطلاعات ایمنی</string>
     <string name="settings_shortcut">میان‌بر تنظیمات</string>
-    <string name="settings_switch_user_storage_insufficient">حافظه پر شده است؛ تغییر کاربر امکان‌پذیر نیست</string>
+    <string name="settings_switch_user_storage_insufficient">حافظه پر است، نمی تواند کاربر را تغییر دهد</string>
     <string name="setup_fingerprint_enroll_enrolling_skip_message">انتخاب کرده‌اید که از اثر انگشتتان به‌عنوان روشی برای باز کردن قفل تلفن استفاده کنید. اگر اکنون این مرحله را رد کنید، باید بعداً آن را تنظیم کنید. تنظیم فقط یک دقیقه یا همین حدود طول می‌کشد.</string>
     <string name="setup_fingerprint_enroll_enrolling_skip_title">از تنظیم اثر انگشت رد می‌شوید؟</string>
     <string name="setup_fingerprint_enroll_skip_after_adding_lock_text">تنظیم اثر انگشت تنها یک یا دو دقیقه طول می‌کشد. اکر از این تنظیم رد شوید، می‌توانید اثر انگشتتان را بعداً در تنظیمات اضافه کنید.</string>
@@ -5260,7 +5277,7 @@
     <string name="tether_error_item_default">به اشتراک گذاشتن اتصال اینترنت</string>
     <string name="tether_error_message">شما مشترک %1$s نشده‌اید.</string>
     <string name="tether_error_title">خطای %1$s</string>
-    <string name="tether_no_sim_message">برای استفاده از «نقطۀ اتصال همراه» و دیگر گزینه‌های اشتراک‌گذاری اینترنت، یک سیم‌کارت وارد کنید</string>
+    <string name="tether_no_sim_message">برای استفاده از نقطۀ دسترسی تلفن همراه و دیگر گزینه‌های به اشتراک گذاشتن اتصال اینترنت، یک سیم‌کارت وارد کنید</string>
     <string name="tether_no_sim_title">بدون سیم‌کارت</string>
     <string name="tether_settings_disabled_on_data_saver">هنگامی که محافظ صفحه روشن است نمی‌توانید از نقاط اتصال قابل حمل یا اتصال به اینترنت با تلفن همراه استفاده کنید</string>
     <string name="tether_settings_summary_hotspot_off_tether_on">اشتراک‌گذاری اینترنت</string>
@@ -5382,6 +5399,7 @@
     <string name="uicc_lock_summary">دستگاه شما فقط روی سیم‌کارت‌های Sprint قفل شده است</string>
     <string name="uicc_unlock">قفل‌گشایی UICC</string>
     <string name="uicc_unlock_summary">دستگاه شما قفل‌گشایی شده است</string>
+    <string name="under_meters">کمتر از %1d متر</string>
     <string name="uninstall_activity_text">%1$s بخشی از برنامه های زیر است:</string>
     <string name="uninstall_all_blocked_profile_owner">این برنامه برای برخی کاربران یا پروفایل ها مورد نیاز است و برای سایرین حذف نصب شده است</string>
     <string name="uninstall_all_users_text">حذف نصب برای همه کاربران</string>

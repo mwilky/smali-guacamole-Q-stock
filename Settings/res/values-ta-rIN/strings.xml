@@ -12,7 +12,7 @@
     <string name="advanced_calling_title">மேம்பட்ட அழைப்புகள்</string>
     <string name="advanced_reboot_summary">பூட்டுநீக்கப்பட்டிருக்கும் போது, மறுதொடக்கமானது சாதாரண மறுதொடக்கம், மீட்டெடுத்தல், அல்லது ஃபாஸ்ட்பூட்டுக்கானத் தெரிவை வழங்கும்</string>
     <string name="advanced_reboot_title">மேம்பட்ட மறுஇயக்கம்</string>
-    <string name="advanced_wificall_summary">மொபைல் நெட்வொர்க் இல்லாதபோது Wi-Fi ஐப் பயன்படுத்தவும்</string>
+    <string name="advanced_wificall_summary">மொபைல் பிணையம் இல்லாதபோது வைஃபியைப் பயன்படுத்தவும்</string>
     <string name="airplane_mode_description">அழைப்பு, உரையனுப்புதல், இணைய அணுகல், Wi-Fi மற்றும் ப்ளூடூத் உட்பட அனைத்து நெட்வொர்க் இணைப்புகளையும் விமானப் பயன்முறை முடக்கும்.</string>
     <string name="airplane_mode_enable_dialog_message">"விமானப் பயன்முறை இயக்கத்தில் இருக்கும்போது, நீங்கள் Wi-Fi ஐப் பயன்படுத்தாவிட்டாலும், டேட்டா இணைப்பு தேவைப்படும் இணையம், மின்னஞ்சல் அல்லது பிற பயன்பாடுகள் ஆகியவற்றைப் பயன்படுத்த முடியாது.
 
@@ -246,6 +246,7 @@
     <string name="led_settings_title">LED அறிவிப்புகள்</string>
     <string name="list_saved_fingerprints">கைரேகைகள் சேமிக்கப்பட்டன</string>
     <string name="list_saved_fingerprints_footer">ஐந்து கைரேகைகள் வரை சேமிக்கப்படலாம். மறுபெயரிட அல்லது நீக்க சேமிக்கப்பட்ட ஏதேனும் கைரேகைகளை டேப் செய்யவும்.</string>
+    <string name="location_text">இருப்பிடம்</string>
     <string name="lockpassword_choose_your_fingerprint_header">கைரேகை</string>
     <string name="long_press_power_button">பவர் பொத்தானை அழுத்திப் பிடிக்கவும்</string>
     <string name="mail_application_title">மின்னஞ்சல் பயன்பாடு</string>
@@ -264,6 +265,7 @@
     <string name="mobile_hotspot_data_off_error">ஹாட்ஸ்பாட்டை இயக்குவதற்கு, மொபைல் டேட்டாவை இயக்கவும்</string>
     <string name="multi_app_label_badge">இணையான %1$s</string>
     <string name="music_application_title">இசை பயன்பாடு</string>
+    <string name="nearest_station">அருகிலுள்ள நிலையம்</string>
     <string name="nfc_uicc_sim1">SIM 1</string>
     <string name="nfc_uicc_sim2">SIM 2</string>
     <string name="no_network">நெட்வொர்க் சேவை இல்லை</string>
@@ -1073,6 +1075,7 @@
     <string name="oneplus_silent_mode_on">சைலன்ட் பயன்முறை ஆன் ஆக உள்ளது</string>
     <string name="oneplus_silent_mode_soc_tri_state_summary">அலாரங்களைத் தவிர்த்து, அழைப்புகள் மற்றும் அறிவிப்புகள் அமைதியாக்கப்படும்</string>
     <string name="oneplus_silent_mode_summary">அலாரங்களைத் தவிர்த்து, அழைப்புகள் மற்றும் அறிவிப்புகள் அமைதியாக்கப்படும்</string>
+    <string name="oneplus_silent_notifications_status_bar">நிலைப் பட்டியில் ஒலிமுடக்கப்பட்ட அறிவிப்புகளை மறைக்கவும்</string>
     <string name="oneplus_sim1_ringtone_switch">SIM அட்டை 1</string>
     <string name="oneplus_sim2_ringtone_switch">SIM அட்டை 2</string>
     <string name="oneplus_simcard_title">SIM</string>
@@ -1163,7 +1166,7 @@
     <string name="oneplus_tools_summary_U30">கேமிங் பயன்முறை, பாக்கெட் பயன்முறை, திட்டமிடப்பட்ட பவர் ஆன்/ஆஃப்</string>
     <string name="oneplus_tools_summary_no_gamingmode">ஆப் லாக்கர், இணையான பயன்பாடுகள்</string>
     <string name="oneplus_tools_title">பயன்பாடுகள்</string>
-    <string name="oneplus_top_level_accounts_summary">OnePlus account, other accounts</string>
+    <string name="oneplus_top_level_accounts_summary">OnePlus கணக்கு, மற்ற கணக்குகள்</string>
     <string name="oneplus_top_level_apps_and_notifs_summary">இயல்புநிலைப் பயன்பாடுகள், அனுமதிகள்</string>
     <string name="oneplus_top_level_buttons_and_gestures_summary">எச்சரிக்கை ஸ்லைடர், நேவிகேஷன் பட்டி &amp; சைகைகள்</string>
     <string name="oneplus_top_level_cloud_h2_summary">கிளவுடுடன் தரவை ஒத்திசை, எனது ஃபோனைக் கண்டறி</string>
@@ -1252,8 +1255,18 @@
     <string name="op_audio_settings">ஆடியோ டியூனர்</string>
     <string name="op_auto_power_saving">தானியங்கு ஆற்றல் சேமிப்பு</string>
     <string name="op_auto_power_saving_summary">பேட்டரி சக்தியை வீணடிக்காமல் சரியான தெளிவுத்திறனுக்கு தானாகவே மாறும்</string>
+    <string name="op_charging_Station_mute_notifications">அறிவிக்கைகளை ஒலிமுடக்கு</string>
+    <string name="op_charging_footer_text">நீங்கள் விமான நிலையங்கள் போன்ற இடங்கள் அல்லது Pop-ups போன்ற Oneplus நிகழ்வுகளுக்கு செல்லும்போது அருகில் ஏதாவது சார்ஜிங் நிலையங்கள் இருந்தால் உங்களுக்கு அறிவிக்கபப்டும்.</string>
     <string name="op_charging_optimization">உகந்ததாக்கப்பட்ட சார்ஜிங்</string>
     <string name="op_charging_optimization_summary">நீங்கள் உபயோகிக்கும் பழக்கங்களுக்கு ஏற்ப சார்ஜிங் பேட்டரனை உகந்ததாக்குங்கள்</string>
+    <string name="op_charging_station">அருகில் உள்ள சார்ஜிங் நிலையங்கள்</string>
+    <string name="op_charging_station_no_station">அருகில் சார்ஜிங் நிலையம் எதுவுமில்லை</string>
+    <string name="op_charging_station_summary">ஒரு சார்ஜிங் நிலையம் அருகில் இருக்கும்போது அறிவிக்கவும்</string>
+    <string name="op_charging_stations">சார்ஜிங் நிலையங்கள்</string>
+    <string name="op_charging_stations_off_description">சார்ஜிங் நிலையங்களை கண்டறிவதற்கு BLE பீகான்களை கண்டறிய இட அனுமதி தேவை. இந்த அம்சத்தைப் பயன்படுத்தத் தொடங்க தயவுசெய்துஇட அணுகல் அனுமதி வழங்கவும்.</string>
+    <string name="op_charging_stations_off_header">சார்ஜிங் நிலையங்களைக் கண்டறிவதற்கு, BLE பீக்கன்களைக் கண்டறிய இட அனுமதி தேவை. இந்த அம்சத்தைப் பயன்படுத்தத் தொடங்க தயவுசெய்து இட அணுகல் அனுமதி வழங்கவும்.</string>
+    <string name="op_charing_station_mute_notifications_description">அடுத்த 6 மணி நேரத்துக்கு அறிவிப்பு ஒலிமுடக்கப்படும்.</string>
+    <string name="op_charing_stations_mute_dynamic_time" formatted="false">%1d மணி %2d நிமிடங்களுக்கு அறிவிக்கை முடக்கப்பட்டுள்ளது</string>
     <string name="op_china_mobile">CMCC</string>
     <string name="op_china_telecom">CTCC</string>
     <string name="op_china_unicom">CUCC</string>
@@ -1269,15 +1282,19 @@
     <string name="op_default_apps_summary">முகப்பு, உலாவி</string>
     <string name="op_default_luncher_title">முகப்பு பயன்பாடு</string>
     <string name="op_dnd_summary">தொந்தரவு செய்யாதீர்</string>
+    <string name="op_enable_location_services">அருகிலுள்ள சார்ஜிங் நிலையங்களைக் கண்டுபிடித்து கண்காணிக்க, தயவுசெய்து இருப்பிட சேவைகளை இயக்கவும்</string>
+    <string name="op_enable_text">செயல்படுத்தவும்</string>
     <string name="op_face_unlock_set_unlock_password">முகப் பூட்டுநீக்கல் + கடவுச்சொல்</string>
     <string name="op_face_unlock_set_unlock_pattern">முகப் பூட்டுநீக்கல் + பேட்டர்ன்</string>
     <string name="op_face_unlock_set_unlock_pin">முகப் பூட்டுநீக்கல் + பின்</string>
     <string name="op_face_unlock_skip_face">முகப் பூட்டு நீக்கல் இல்லாமல் தொடரவும்</string>
     <string name="op_failed_to_get_data">தரவை மீட்டமைப்பது தோல்வியுற்றது</string>
     <string name="op_fetch_data_in_process">ஏற்றுகிறது</string>
+    <string name="op_find_charging_stations">நிலையங்களை கண்டறி</string>
     <string name="op_fragment">சுருக்கமானது</string>
     <string name="op_gamespace">கேம் ஸ்பேஸ்</string>
     <string name="op_high_power_app_manager">அதிக ஆற்றலை உபயோகிக்கும் பயன்பாடுகளை நிர்வகிக்கவும்</string>
+    <string name="op_keep_location_services">அருகிலுள்ள சார்ஜிங் நிலையங்களைக் கண்டுபிடித்து கண்காணிக்க, இருப்பிட சேவைகளை இயக்கத்தில் வைக்கவும்</string>
     <string name="op_light_mode_title">ஒளி</string>
     <string name="op_linked_launch_summary">பயன்பாடுகளை நிறுவுதலை பின்னணியில் இணைத்து துவக்கலாம்</string>
     <string name="op_linked_launch_title">பயன்பாடுகளை தானாகத் துவக்கவும்</string>
@@ -1495,6 +1512,7 @@
     <string name="uicc_lock_summary">உங்கள் சாதனம் ஸ்பிரிண்ட் SIM-களால் மட்டுமே பூட்டப்பட்டுள்ளது</string>
     <string name="uicc_unlock">UICC பூட்டுநீக்கல்</string>
     <string name="uicc_unlock_summary">உங்கள் சாதனம் பூட்டுநீக்கப்பட்டுள்ளது</string>
+    <string name="under_meters">%1d மீட்டர்களுக்குள்</string>
     <string name="uninstall_activity_text">%1$s பின்வரும் செயலியின் ஒரு அங்கமாகும்:</string>
     <string name="uninstall_all_blocked_profile_owner">சில பயனர்கள் அல்லது ப்ரொஃபைல்களுக்கு இச்செயலி தேவை மற்றும் பிறருக்கு அது நிறுவல் நீக்கப்பட்டது</string>
     <string name="uninstall_application_text">இந்தச் செயலியை நீங்கள் நிறுவல் நீக்க விரும்புகிறீர்களா?</string>

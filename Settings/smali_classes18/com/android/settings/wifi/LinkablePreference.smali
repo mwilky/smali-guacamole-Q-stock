@@ -43,7 +43,7 @@
 
     invoke-direct {p0, p1, p2, p3}, Landroidx/preference/Preference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
-    const v0, 0x7f08022f
+    const v0, 0x7f080262
 
     invoke-virtual {p0, v0}, Lcom/android/settings/wifi/LinkablePreference;->setIcon(I)V
 

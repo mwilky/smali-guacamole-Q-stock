@@ -929,7 +929,7 @@
 
     invoke-virtual {p0, v0}, Lcom/android/settings/vpn2/VpnSettings;->setHasOptionsMenu(Z)V
 
-    const v0, 0x7f160107
+    const v0, 0x7f160108
 
     invoke-virtual {p0, v0}, Lcom/android/settings/vpn2/VpnSettings;->addPreferencesFromResource(I)V
 
@@ -955,7 +955,7 @@
 
     move-result v0
 
-    const v1, 0x7f0a076c
+    const v1, 0x7f0a0779
 
     if-eq v0, v1, :cond_0
 
@@ -1328,7 +1328,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f12180d
+    const v1, 0x7f121822
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
 
@@ -1352,7 +1352,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f1217fd
+    const v1, 0x7f121812
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
 

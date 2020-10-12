@@ -110,7 +110,7 @@
 
     iget-object v0, p0, Lcom/oneplus/settings/better/OPGameAndReadPickActivity$1;->this$0:Lcom/oneplus/settings/better/OPGameAndReadPickActivity;
 
-    const v1, 0x7f0a048c
+    const v1, 0x7f0a0497
 
     invoke-virtual {v0, v1}, Lcom/oneplus/settings/better/OPGameAndReadPickActivity;->findViewById(I)Landroid/view/View;
 

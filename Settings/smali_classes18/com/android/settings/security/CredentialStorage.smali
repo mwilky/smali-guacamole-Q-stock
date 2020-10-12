@@ -218,7 +218,7 @@
 
     if-eqz v0, :cond_0
 
-    const v1, 0x7f1217e3
+    const v1, 0x7f1217f8
 
     const/4 v2, 0x0
 

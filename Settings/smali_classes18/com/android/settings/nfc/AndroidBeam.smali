@@ -273,7 +273,7 @@
     return-object v2
 
     :cond_0
-    const v2, 0x7f0d0264
+    const v2, 0x7f0d0268
 
     const/4 v3, 0x0
 
@@ -293,7 +293,7 @@
 
     check-cast v2, Landroid/widget/ImageView;
 
-    const v3, 0x7f08022f
+    const v3, 0x7f080262
 
     invoke-virtual {v2, v3}, Landroid/widget/ImageView;->setImageResource(I)V
 

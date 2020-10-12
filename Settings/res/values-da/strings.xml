@@ -336,7 +336,7 @@ Du skal blot placere enhederne tæt på hinanden (normalt bagside mod bagside) o
     <string name="aod_clock_minimalism">Minimalisme 1</string>
     <string name="aod_clock_minimalism_1">Minimalisme 2</string>
     <string name="aod_clock_none">Ingen</string>
-    <string name="aod_clock_select_style_text">Vælg urtype</string>
+    <string name="aod_clock_select_style_text">Vælg urtypen</string>
     <string name="aod_clock_text_clock">Tekst-ur</string>
     <string name="aod_horizon_light_effect_1">Blå</string>
     <string name="aod_horizon_light_effect_2">Rød</string>
@@ -344,7 +344,7 @@ Du skal blot placere enhederne tæt på hinanden (normalt bagside mod bagside) o
     <string name="aod_horizon_light_effect_4">Guld</string>
     <string name="aod_horizon_light_effect_5">McLaren</string>
     <string name="aod_horizon_light_select">VÆLG FARVE</string>
-    <string name="aod_horizon_light_snake_action">TÆNDE</string>
+    <string name="aod_horizon_light_snake_action">SLÅ TIL</string>
     <string name="aod_horizon_light_snake_tip">Denne funktion er tilgængelig, når \"Nye meddelelser\" er slået til</string>
     <string name="apn_apn">Adgangspunkt</string>
     <string name="apn_auth_type">Godkendelsestype</string>
@@ -1638,7 +1638,7 @@ Hvis problemet fortsætter, er du muligvis nødt til at afinstallere appen for a
     <string name="doze_always_on_summary">Vis klokkeslæt, notifikationsikoner og anden info. Øget batteriforbrug.</string>
     <string name="doze_always_on_title">Altid aktiveret</string>
     <string name="doze_summary">Væk skærmen når du modtager meddelelser.</string>
-    <string name="doze_title">Aktiv låseskærm</string>
+    <string name="doze_title">Inaktivitetsvisning</string>
     <string name="draw_overlay">Vis oven på andre apps</string>
     <string name="dsds_dialog_cancel">Annuller</string>
     <string name="dsds_dialog_confirm">Genstart</string>
@@ -2313,6 +2313,7 @@ Du kan ændre dette senere under Indstillinger > Apps og notifikationer."</strin
     <string name="location_settings_title">Placering</string>
     <string name="location_sources_heading">Placeringskilder</string>
     <string name="location_street_level">Tillad, at apps bruger GPS på din telefon til at udpege din placering</string>
+    <string name="location_text">Placering</string>
     <string name="location_title">Min placering</string>
     <string name="lock_after_timeout">Lås automatisk</string>
     <string name="lock_after_timeout_summary">%1$s efter dvale</string>
@@ -2710,6 +2711,7 @@ Selvom du skifter til %1$s, opsiger det ikke din tjeneste fra %2$s."</string>
     <string name="my_device_info_account_preference_title">Konto</string>
     <string name="my_device_info_device_name_preference_title">Enhedens navn</string>
     <string name="n_cacrts">%d CA-certifikater</string>
+    <string name="nearest_station">Nærmeste station</string>
     <string name="network_4G">4G (anbefalet)</string>
     <string name="network_connected">Tilsluttet</string>
     <string name="network_connecting">Opretter forbindelse…</string>
@@ -3091,7 +3093,7 @@ Batterisparetilstanden deaktiveres automatisk, når din enhed oplader."</string>
     <string name="oneplus_data_usage_control_title">Dataforbrugskontrol</string>
     <string name="oneplus_dc_dimming_summary">Med DC-dæmpning justeres skærmens lysstyrke ved at ændre skærmens kredsløbseffekt. Når det er aktiveret, reducerer det skærmflimmer ved lav lysstyrke. I nogle tilfælde vil det dog medføre unormal farvevisning.</string>
     <string name="oneplus_dc_dimming_title">DC-dæmpning</string>
-    <string name="oneplus_deep_clear_way">Dybdegående rengøring</string>
+    <string name="oneplus_deep_clear_way">Dybdegående sletning</string>
     <string name="oneplus_deep_clear_way_summary">Rydder baggrundsprocesser, hvilket kan betyde, at nogle apps muligvis vil holde op med at fungere, og du ikke vil modtage meddelelser</string>
     <string name="oneplus_deep_optimization">Dyb optimering</string>
     <string name="oneplus_deep_optimization_summary">Når du slukker for dyb optimering, stiger strømforbruget betydeligt, og dette kan påvirke normal brug af telefonen.</string>
@@ -3134,7 +3136,7 @@ Batterisparetilstanden deaktiveres automatisk, når din enhed oplader."</string>
     <string name="oneplus_double_tap_power_none">Ingen</string>
     <string name="oneplus_doze_summary_801">Vis klokkeslæt og andre oplysninger på standbyskærmen</string>
     <string name="oneplus_doze_summary_new">Vis klokkeslæt, dato og meddelelser på skærmen</string>
-    <string name="oneplus_doze_title">Aktiv låseskærm</string>
+    <string name="oneplus_doze_title">Inaktivitetsvisning</string>
     <string name="oneplus_doze_title_801">Inaktivitetsvisning</string>
     <string name="oneplus_draw_gesture_start_none">Ingen</string>
     <string name="oneplus_draw_m_start_app">Tegn M</string>
@@ -3332,7 +3334,7 @@ For at gå til startskærmbilledet, kan du stryge op fra skærmenkantens nederst
     <string name="oneplus_h2_contributors">HydrogenOS-bidragydere</string>
     <string name="oneplus_hand_up_proximity_summary">Tænd for skærmen når du samler telefonen op</string>
     <string name="oneplus_hand_up_proximity_title">Løft skærm</string>
-    <string name="oneplus_hand_up_to_show">Tag din telefon op for at vise</string>
+    <string name="oneplus_hand_up_to_show">Saml telefonen op for at vise</string>
     <string name="oneplus_haptic_feedback_no_app">Der er ikke installeret nogen understøttede spil</string>
     <string name="oneplus_haptic_feedback_no_app_tip">Du kan installere PUBG Mobile og Asphalt 9</string>
     <string name="oneplus_haptic_feedback_summary">Få bedre haptisk feedback til understøttede spil</string>
@@ -3643,7 +3645,7 @@ Bemærk: Dit fingeraftryk er muligvis mindre sikkert end et stærkt mønster ell
     <string name="oneplus_screen_color_mode_soft">Blød</string>
     <string name="oneplus_screen_color_mode_title">Skærmkalibrering</string>
     <string name="oneplus_screen_color_mode_title_summary">Ikke tilgængelig, fordi nat-tilstand er slået til</string>
-    <string name="oneplus_screen_features_not_available_toast">Når de er slået til, vil funktioner som skærmkalibrering ikke være tilgængelige</string>
+    <string name="oneplus_screen_features_not_available_toast">Når slået til vil funktioner som skærmkalibrering ikke være tilgængelig</string>
     <string name="oneplus_screen_refresh_rate">Skærmopdateringshastighed</string>
     <string name="oneplus_screen_refresh_rate_60hz_summary">Mindre flydende med højere batterilevetid</string>
     <string name="oneplus_screen_refresh_rate_auto_summary">Fantastisk flydende med en højere opdateringshastighed</string>
@@ -3750,6 +3752,7 @@ Bemærk:
     <string name="oneplus_silent_mode_on">Lydløs tilstand slået til</string>
     <string name="oneplus_silent_mode_soc_tri_state_summary">Opkald og meddelelser, undtagen alarmer, vil blive indstillet til lydløs</string>
     <string name="oneplus_silent_mode_summary">Opkald og meddelelser, undtagen alarmer, vil blive indstillet til lydløs</string>
+    <string name="oneplus_silent_notifications_status_bar">Skjul lydløs meddelelse i statuslinjen</string>
     <string name="oneplus_sim1_ringtone_switch">SIM-kort 1</string>
     <string name="oneplus_sim2_ringtone_switch">SIM-kort 2</string>
     <string name="oneplus_simcard_title">SIM</string>
@@ -3792,7 +3795,7 @@ Bemærk:
     <string name="oneplus_theme_accent_color_select">VÆLG ACCENTFARVE</string>
     <string name="oneplus_theme_apply_summary">Når du har anvendt dette tema, tilsidesættes dine tilpasningsindstillinger</string>
     <string name="oneplus_theme_apply_title">Vil du anvende dette tema?</string>
-    <string name="oneplus_theme_clock">Ur-type</string>
+    <string name="oneplus_theme_clock">Urtype</string>
     <string name="oneplus_theme_clock_snake_action">SLÅ INAKTIVITETSVISNING TIL</string>
     <string name="oneplus_theme_clock_snake_tip">Denne funktion er tilgængelig, når inaktivitetsvisning er slået til</string>
     <string name="oneplus_theme_colorpicker_colorvalue">FARVEKODE</string>
@@ -3840,7 +3843,7 @@ Bemærk:
     <string name="oneplus_tools_summary_U30">Spiltilstand, lommetilstand, planlagt tænd/sluk</string>
     <string name="oneplus_tools_summary_no_gamingmode">AppLocker, parallelle apps</string>
     <string name="oneplus_tools_title">Hjælpeprogrammer</string>
-    <string name="oneplus_top_level_accounts_summary">OnePlus account, other accounts</string>
+    <string name="oneplus_top_level_accounts_summary">OnePlus-konto, andre konti</string>
     <string name="oneplus_top_level_apps_and_notifs_summary">Standardapps, tilladelser</string>
     <string name="oneplus_top_level_buttons_and_gestures_summary">Alert slider, navigationslinje og gestus</string>
     <string name="oneplus_top_level_cloud_h2_summary">Synkroniser data med skyen, Find min telefon</string>
@@ -3857,7 +3860,7 @@ Bemærk:
     <string name="oneplus_touch_vibrate">Vibration ved berøring</string>
     <string name="oneplus_turn_off_time">Til</string>
     <string name="oneplus_turn_on_feature_cancel">ANNULLER</string>
-    <string name="oneplus_turn_on_feature_ok">TÆNDE</string>
+    <string name="oneplus_turn_on_feature_ok">SLÅ TIL</string>
     <string name="oneplus_turn_on_time">Fra</string>
     <string name="oneplus_uninstatll_multi_app_msg">Alle data i den parallelle app bliver slettet efter afinstallation. Vil du afinstallere den?</string>
     <string name="oneplus_uninstatll_multi_app_title">Parallel %1$s</string>
@@ -3930,8 +3933,18 @@ Det ændrer ikke ved dine routerindstillinger, hvis netværket indstilles til at
     <string name="op_audio_settings">Lydtuner</string>
     <string name="op_auto_power_saving">Automatisk strømbesparelse</string>
     <string name="op_auto_power_saving_summary">Skift automatisk til den rette opløsning uden at tappe batteriet</string>
+    <string name="op_charging_Station_mute_notifications">Slå lyden fra på meddelelser</string>
+    <string name="op_charging_footer_text">Du får besked om, at der er ladestationer i nærheden, når du besøger partnerlokationer som lufthavne eller Oneplus-events som pop-ups.</string>
     <string name="op_charging_optimization">Optimeret opladning</string>
     <string name="op_charging_optimization_summary">Optimer opladningsmønsteret i henhold til dine forbrugsvaner</string>
+    <string name="op_charging_station">Ladestationer i nærheden</string>
+    <string name="op_charging_station_no_station">Ingen ladestationer i nærheden</string>
+    <string name="op_charging_station_summary">Advar mig, når der er en ladestation i nærheden</string>
+    <string name="op_charging_stations">Ladestationer</string>
+    <string name="op_charging_stations_off_description">Lokalisering af ladestationerne kræver placeringstilladelse for at registrere BLE-beacons. Du skal give adgang til din placering for at kunne bruge denne funktion.</string>
+    <string name="op_charging_stations_off_header">Lokalisering af ladestationer kræver placeringstilladelse til at registrere BLE-beacons. Du skal give adgang til din placering for at kunne bruge denne funktion.</string>
+    <string name="op_charing_station_mute_notifications_description">Meddelelser vil være lydløse i 6 timer.</string>
+    <string name="op_charing_stations_mute_dynamic_time" formatted="false">Notifikationer sat på lydløs i %1d timer og %2d minutter</string>
     <string name="op_china_mobile">CMCC</string>
     <string name="op_china_telecom">CTCC</string>
     <string name="op_china_unicom">CUCC</string>
@@ -3947,15 +3960,19 @@ Det ændrer ikke ved dine routerindstillinger, hvis netværket indstilles til at
     <string name="op_default_apps_summary">Start, browser</string>
     <string name="op_default_luncher_title">Startapp</string>
     <string name="op_dnd_summary">Vil ikke forstyrres</string>
+    <string name="op_enable_location_services">For at finde og spore ladestationer i nærheden skal du slå lokationstjenester til</string>
+    <string name="op_enable_text">Aktiver</string>
     <string name="op_face_unlock_set_unlock_password">Ansigtsgenkendelse + adgangskode</string>
     <string name="op_face_unlock_set_unlock_pattern">Ansigtsgenkendelse + mønster</string>
     <string name="op_face_unlock_set_unlock_pin">Ansigtsgenkendelse + pinkode</string>
     <string name="op_face_unlock_skip_face">Fortsæt uden ansigtsgenkendelse</string>
     <string name="op_failed_to_get_data">Kunne ikke hente data</string>
     <string name="op_fetch_data_in_process">Indlæser</string>
+    <string name="op_find_charging_stations">Find stationer</string>
     <string name="op_fragment">Kort</string>
     <string name="op_gamespace">Spilleområde</string>
     <string name="op_high_power_app_manager">Strømslugende programstyring</string>
+    <string name="op_keep_location_services">For at finde og spore ladestationer i nærheden skal du holde lokationstjenester slået til</string>
     <string name="op_light_mode_title">Lys</string>
     <string name="op_linked_launch_summary">Programstyring kan være kædet sammen med opstart i baggrunden</string>
     <string name="op_linked_launch_title">Automatisk start af apps</string>
@@ -5384,6 +5401,7 @@ Googles tilgang til synkronisering af data giver dig adgang til dine kontakter, 
     <string name="uicc_lock_summary">Din enhed er udelukkende låst af Sprint SIM-kort</string>
     <string name="uicc_unlock">UICC-oplåsning</string>
     <string name="uicc_unlock_summary">Din enhed er oplåst</string>
+    <string name="under_meters">Under %1d meter</string>
     <string name="uninstall_activity_text">%1$s er en del af følgende app:</string>
     <string name="uninstall_all_blocked_profile_owner">Denne app er påkrævet for nogle brugere eller profiler og blev afinstalleret for andre</string>
     <string name="uninstall_all_users_text">Afinstaller for alle brugere</string>

@@ -109,7 +109,7 @@
 
     iget-object v1, p0, Lcom/android/settings/bluetooth/BluetoothPermissionActivity;->mView:Landroid/view/View;
 
-    const v2, 0x7f0a03d4
+    const v2, 0x7f0a03d3
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -167,7 +167,7 @@
 
     iget-object v1, p0, Lcom/android/settings/bluetooth/BluetoothPermissionActivity;->mView:Landroid/view/View;
 
-    const v2, 0x7f0a03d4
+    const v2, 0x7f0a03d3
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -229,7 +229,7 @@
 
     iget-object v1, p0, Lcom/android/settings/bluetooth/BluetoothPermissionActivity;->mView:Landroid/view/View;
 
-    const v2, 0x7f0a03d4
+    const v2, 0x7f0a03d3
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -291,7 +291,7 @@
 
     iget-object v1, p0, Lcom/android/settings/bluetooth/BluetoothPermissionActivity;->mView:Landroid/view/View;
 
-    const v2, 0x7f0a03d4
+    const v2, 0x7f0a03d3
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -555,7 +555,7 @@
     nop
 
     :goto_0
-    const v1, 0x7f121a07
+    const v1, 0x7f121a1c
 
     invoke-virtual {p0, v1}, Lcom/android/settings/bluetooth/BluetoothPermissionActivity;->getString(I)Ljava/lang/String;
 
@@ -565,7 +565,7 @@
 
     iput-object p0, v0, Lcom/android/internal/app/AlertController$AlertParams;->mPositiveButtonListener:Landroid/content/DialogInterface$OnClickListener;
 
-    const v1, 0x7f120b4b
+    const v1, 0x7f120b4d
 
     invoke-virtual {p0, v1}, Lcom/android/settings/bluetooth/BluetoothPermissionActivity;->getString(I)Ljava/lang/String;
 

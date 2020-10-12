@@ -1876,7 +1876,7 @@
     <string name="fingerprint_lock_screen_setup_skip_dialog_text">ปกป้องโทรศัพท์ด้วยตัวเลือกล็อกหน้าจอเพื่อไม่ให้ผู้อื่นใช้ได้หากโทรศัพท์สูญหายหรือถูกขโมย คุณยังต้องใช้ตัวเลือกล็อกหน้าจอเพื่อตั้งค่าลายนิ้วมือด้วย แตะ \"ยกเลิก\" แล้วตั้ง PIN รูปแบบ หรือรหัสผ่าน</string>
     <string name="fingerprint_manage">จัดการลายนิ้วมือ</string>
     <string name="fingerprint_manage_category_title">จัดการลายนิ้วมือ</string>
-    <string name="fingerprint_next">ถัด​ไป</string>
+    <string name="fingerprint_next">ถัดไป</string>
     <string name="fingerprint_not_recognized">ไม่รู้จัก</string>
     <string name="fingerprint_password_hint">ป้อนรหัสผ่านสำรองของคุณ</string>
     <string name="fingerprint_password_manage_title">ลายนิ้วมือ</string>
@@ -1898,7 +1898,7 @@
     <string name="fingerprint_wizard_add_button_label">เพิ่มอีก</string>
     <string name="fingerprint_wizard_cancel_button_label">ยกเลิก</string>
     <string name="fingerprint_wizard_finish_button_label">เสร็จสิ้น</string>
-    <string name="fingerprint_wizard_next_button_label">ถัด​ไป</string>
+    <string name="fingerprint_wizard_next_button_label">ถัดไป</string>
     <string name="firmware_version">เวอร์ชันของ Android</string>
     <string name="font_size_make_larger_desc">ทำให้ใหญ่ขึ้น</string>
     <string name="font_size_make_smaller_desc">ทำให้เล็กลง</string>
@@ -2313,6 +2313,7 @@
     <string name="location_settings_title">ตำแหน่ง</string>
     <string name="location_sources_heading">ที่มาของตำแหน่ง</string>
     <string name="location_street_level">ให้แอปพลิเคชันใช้ GPS ของโทรศัพท์เพื่อระบุตำแหน่งของคุณ</string>
+    <string name="location_text">ตำแหน่งที่ตั้ง</string>
     <string name="location_title">ตำแหน่งของฉัน</string>
     <string name="lock_after_timeout">ล็อกอัตโนมัติ</string>
     <string name="lock_after_timeout_summary">หลังจากอยู่ในโหมดสลีป %1$s</string>
@@ -2710,6 +2711,7 @@
     <string name="my_device_info_account_preference_title">บัญชี</string>
     <string name="my_device_info_device_name_preference_title">ชื่ออุปกรณ์</string>
     <string name="n_cacrts">%d ใบรับรอง CA</string>
+    <string name="nearest_station">สถานีที่ใกล้ที่สุด</string>
     <string name="network_4G">4G (แนะนำ)</string>
     <string name="network_connected">เชื่อมต่อแล้ว</string>
     <string name="network_connecting">เชื่อมต่อ…</string>
@@ -2982,7 +2984,7 @@
     <string name="oneplus_app_locker_summary">เลือกแอปที่จะเข้ารหัส</string>
     <string name="oneplus_app_locker_switch">ซ่อนเนื้อหาการแจ้งเตือน</string>
     <string name="oneplus_app_locker_switch_summary">เนื้อหาการแจ้งเตือนจะถูกซ่อนจากแอปที่เปิดใช้งานตัวล็อคแอป</string>
-    <string name="oneplus_app_locker_title">ล็อกเกอร์แอป</string>
+    <string name="oneplus_app_locker_title">ตัวล็อคแอป</string>
     <string name="oneplus_app_network_settings">ควบคุมการใช้ดาต้า</string>
     <string name="oneplus_app_notification_allow_led">เปิดไฟ LED</string>
     <string name="oneplus_app_notification_not_allow_led">ปิดไฟ LED</string>
@@ -3466,7 +3468,7 @@
     <string name="oneplus_none_default_gallery">ไม่มีแกลเลอรี่เริ่มต้น</string>
     <string name="oneplus_none_default_music">ไม่มีตัวเล่นเพลงเริ่มต้น</string>
     <string name="oneplus_normal_clear_way">ล้างธรรมดา</string>
-    <string name="oneplus_normal_clear_way_summary">ล้างรายการงานและแคชโดยไม่ต้องล้างการประมวลผลเบื้องหลัง</string>
+    <string name="oneplus_normal_clear_way_summary">ล้างรายการงานและแคชโดยไม่ล้างการประมวลผลในเบื้องหลัง</string>
     <string name="oneplus_not_disturb_on">ห้ามรบกวน เปิดอยู่</string>
     <string name="oneplus_not_show">ไม่ต้องแสดงอีก</string>
     <string name="oneplus_notch_display_area">บาก</string>
@@ -3750,6 +3752,7 @@
     <string name="oneplus_silent_mode_on">โหมดเงียบ เปิดอยู่</string>
     <string name="oneplus_silent_mode_soc_tri_state_summary">การโทรและการแจ้งเตือนจะเงียบเสียง ยกเว้นการปลุก</string>
     <string name="oneplus_silent_mode_summary">การโทรและการแจ้งเตือนจะเงียบเสียง ยกเว้นการปลุก</string>
+    <string name="oneplus_silent_notifications_status_bar">ซ่อนการแจ้งเตือนแบบไม่มีเสียงในแถบสถานะ</string>
     <string name="oneplus_sim1_ringtone_switch">ซิมการ์ด 1</string>
     <string name="oneplus_sim2_ringtone_switch">ซิมการ์ด 2</string>
     <string name="oneplus_simcard_title">ซิม</string>
@@ -3840,7 +3843,7 @@
     <string name="oneplus_tools_summary_U30">โหมดเกม, โหมดกระเป๋า, กำหนดเวลาเปิด/ปิดเครื่อง</string>
     <string name="oneplus_tools_summary_no_gamingmode">ตัวล็อคแอป, แอปคู่ขนาน</string>
     <string name="oneplus_tools_title">อรรถประโยชน์</string>
-    <string name="oneplus_top_level_accounts_summary">OnePlus account, other accounts</string>
+    <string name="oneplus_top_level_accounts_summary">บัญชี OnePlus, บัญชีอื่นๆ</string>
     <string name="oneplus_top_level_apps_and_notifs_summary">แอปเริ่มต้น, สิทธิ์</string>
     <string name="oneplus_top_level_buttons_and_gestures_summary">Alert Slider, แถบการนำทางและท่าทาง</string>
     <string name="oneplus_top_level_cloud_h2_summary">ซิงค์ข้อมูลกับคลาวด์, ค้นหาโทรศัพท์ของฉัน</string>
@@ -3930,8 +3933,18 @@
     <string name="op_audio_settings">เครื่องรับสัญญาณเสียง</string>
     <string name="op_auto_power_saving">การประหยัดพลังงานอัตโนมัติ</string>
     <string name="op_auto_power_saving_summary">สลับไปเป็นความละเอียดที่เหมาะสมอัตโนมัติโดยไม่ต้องสิ้นเปลืองแบตเตอรี่</string>
+    <string name="op_charging_Station_mute_notifications">ปิดการแจ้งเตือน</string>
+    <string name="op_charging_footer_text">คุณจะได้รับแจ้งเตือนเกี่ยวกับสถานีชาร์จที่อยู่ใกล้เคียง เมื่อคุณไปที่สนามบินหรืออีเวนต์ของ OnePlus เช่น Pop-ups</string>
     <string name="op_charging_optimization">การชาร์จที่ปรับให้เหมาะสม</string>
     <string name="op_charging_optimization_summary">ปรับรูปแบบการชาร์จให้เหมาะสมตามพฤติกรรมการใช้งานของคุณ</string>
+    <string name="op_charging_station">สถานีชาร์จใกล้เคียง</string>
+    <string name="op_charging_station_no_station">ไม่มีสถานีชาร์จที่อยู่ใกล้เคียง</string>
+    <string name="op_charging_station_summary">แจ้งเตือนเมื่อมีสถานีชาร์จใกล้เคียง</string>
+    <string name="op_charging_stations">สถานีชาร์จ</string>
+    <string name="op_charging_stations_off_description">เพื่อค้นหาสถานีชาร์จ จำเป็นต้องได้รับการอนุญาตตำแหน่ง เพื่อตรวจสอบบีคอน BLE กรุณายอมให้เข้าถึงตำแหน่งเพื่อเริ่มใช้คุณสมบัตินี้</string>
+    <string name="op_charging_stations_off_header">เพื่อค้นหาสถานีชาร์จ จำเป็นต้องได้รับการอนุญาต เพื่อตรวจสอบบีคอน BLE กรุณายอมให้เข้าถึงตำแหน่งเพื่อเริ่ม ใช้คุณสมบัตินี้</string>
+    <string name="op_charing_station_mute_notifications_description">การแจ้งเตือนจะถูกปิดเป็นเวลา 6 ชั่วโมงต่อจากนี้</string>
+    <string name="op_charing_stations_mute_dynamic_time" formatted="false">ปิดเสียงแจ้งเตือน %1d ชั่วโมง %2d นาที</string>
     <string name="op_china_mobile">CMCC</string>
     <string name="op_china_telecom">CTCC</string>
     <string name="op_china_unicom">CUCC</string>
@@ -3947,15 +3960,19 @@
     <string name="op_default_apps_summary">หน้าหลัก, เบราว์เวอร์</string>
     <string name="op_default_luncher_title">แอปหลัก</string>
     <string name="op_dnd_summary">ห้ามรบกวน</string>
+    <string name="op_enable_location_services">ในการค้นหาและติดตามสถานีชาร์จใกล้เคียง กรุณาเปิดใช้งานการระบุตำแหน่ง</string>
+    <string name="op_enable_text">เปิดใช้งาน</string>
     <string name="op_face_unlock_set_unlock_password">การปลดล็อคด้วยใบหน้า + รหัสผ่าน</string>
     <string name="op_face_unlock_set_unlock_pattern">การปลดล็อคด้วยใบหน้า + รูปแบบ</string>
     <string name="op_face_unlock_set_unlock_pin">การปลดล็อคด้วยใบหน้า + PIN</string>
     <string name="op_face_unlock_skip_face">ดำเนินการต่อโดยไม่ใช้การปลดล็อคด้วยใบหน้า</string>
     <string name="op_failed_to_get_data">ไม่สามารถดึงข้อมูลมาได้</string>
     <string name="op_fetch_data_in_process">กำลังโหลด</string>
+    <string name="op_find_charging_stations">ค้นหาสถานี</string>
     <string name="op_fragment">สั้น</string>
     <string name="op_gamespace">Game Space</string>
     <string name="op_high_power_app_manager">แอปที่ใช้พลังงานสูง</string>
+    <string name="op_keep_location_services">ในการค้นหาและติดตามสถานีชาร์จใกล้เคียง ให้เปิดใช้งานการระบุตำแหน่งไว้</string>
     <string name="op_light_mode_title">เบา</string>
     <string name="op_linked_launch_summary">แอปสามารถจัดการเชื่อมโยงให้เปิดทำงานอยู่ในการทำงานเบื้องหลังได้</string>
     <string name="op_linked_launch_title">เปิดแอปอัตโนมัติ</string>
@@ -5384,6 +5401,7 @@ PIN อาจไม่ถูกต้อง"</string>
     <string name="uicc_lock_summary">อุปกรณ์ของคูณถูกล็อคจากการใช้ซิม Sprint เท่านั้น</string>
     <string name="uicc_unlock">การปลดล็อค UICC</string>
     <string name="uicc_unlock_summary">อุปกรณ์ของคุณได้รับการปลดล็อคแล้ว</string>
+    <string name="under_meters">ภายใน %1d เมตร</string>
     <string name="uninstall_activity_text">%1$s เป็นส่วนหนึ่งของแอปดังต่อไปนี้:</string>
     <string name="uninstall_all_blocked_profile_owner">จำเป็นต้องใช้แอปนี้สำหรับผู้ใช้งานบางคนหรือ บางโปรไฟล์และจะถูกถอนการติดตั้งสำหรับผู้ใช้งานคนอื่น ๆ</string>
     <string name="uninstall_all_users_text">ถอนการติดตั้งสำหรับผู้ใช้ทั้งหมด</string>
@@ -5409,7 +5427,7 @@ PIN อาจไม่ถูกต้อง"</string>
     <string name="uninstallapps_confirm">ยืนยัน</string>
     <string name="uninstallapps_confirm_dialog_body">แอปพลิเคชันทั้งหมดที่เลือกและไฟล์ทั้งหมดที่เกี่ยวข้องกับแพคเกจแอปพลิเคชันจะถูกลบ</string>
     <string name="uninstallapps_confirm_dialog_title">ลบแอปที่เลือกหรือไม่</string>
-    <string name="uninstallapps_selected">เลือกแล้ว</string>
+    <string name="uninstallapps_selected">ที่เลือก</string>
     <string name="uninstallapps_toast_message">แอปถูกลบแล้ว</string>
     <string name="uninstalling">กำลังถอนการติดตั้ง…</string>
     <string name="uninstalling_notification_channel">กำลังใช้งานการถอนการติดตั้ง</string>

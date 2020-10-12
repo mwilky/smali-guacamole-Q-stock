@@ -47,11 +47,11 @@
 .method private init()V
     .locals 1
 
-    const v0, 0x7f0d026f
+    const v0, 0x7f0d0273
 
     invoke-virtual {p0, v0}, Lcom/android/settings/widget/SingleTargetGearPreference;->setLayoutResource(I)V
 
-    const v0, 0x7f0d027b
+    const v0, 0x7f0d027f
 
     invoke-virtual {p0, v0}, Lcom/android/settings/widget/SingleTargetGearPreference;->setWidgetLayoutResource(I)V
 
@@ -65,7 +65,7 @@
 
     invoke-super {p0, p1}, Landroidx/preference/Preference;->onBindViewHolder(Landroidx/preference/PreferenceViewHolder;)V
 
-    const v0, 0x7f0a072f
+    const v0, 0x7f0a073c
 
     invoke-virtual {p1, v0}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 

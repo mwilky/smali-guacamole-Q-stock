@@ -185,7 +185,7 @@
 
     invoke-direct {v5, v6}, Landroidx/preference/Preference;-><init>(Landroid/content/Context;)V
 
-    const v6, 0x7f0d01f8
+    const v6, 0x7f0d01fc
 
     invoke-virtual {v5, v6}, Landroidx/preference/Preference;->setLayoutResource(I)V
 
@@ -349,7 +349,7 @@
 .method public onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
     .locals 3
 
-    const v0, 0x7f1600a0
+    const v0, 0x7f1600a1
 
     invoke-virtual {p0, v0}, Lcom/oneplus/settings/better/OPHapticFeedback;->addPreferencesFromResource(I)V
 

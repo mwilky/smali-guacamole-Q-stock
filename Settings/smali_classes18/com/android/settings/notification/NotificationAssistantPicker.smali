@@ -110,7 +110,7 @@
     :cond_0
     iget-object v0, p0, Lcom/android/settings/notification/NotificationAssistantPicker;->mContext:Landroid/content/Context;
 
-    const v1, 0x7f120b6f
+    const v1, 0x7f120b71
 
     const/4 v2, 0x1
 

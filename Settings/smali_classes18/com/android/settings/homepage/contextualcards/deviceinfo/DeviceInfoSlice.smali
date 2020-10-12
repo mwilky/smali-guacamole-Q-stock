@@ -228,7 +228,7 @@
 
     iget-object v0, p0, Lcom/android/settings/homepage/contextualcards/deviceinfo/DeviceInfoSlice;->mContext:Landroid/content/Context;
 
-    const v1, 0x7f08022f
+    const v1, 0x7f080262
 
     invoke-static {v0, v1}, Landroidx/core/graphics/drawable/IconCompat;->createWithResource(Landroid/content/Context;I)Landroidx/core/graphics/drawable/IconCompat;
 

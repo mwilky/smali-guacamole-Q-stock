@@ -14,7 +14,7 @@
     <string name="advanced_calling_title">উন্নত কলিং</string>
     <string name="advanced_reboot_summary">যখন আনলক করা, রিবুট স্বাভাবিকভাবে পুনরুদ্ধারে, রিবুট করার জন্য বিকল্পসমূহ প্রদান করবে, বা দ্রুত রিবুট করুন</string>
     <string name="advanced_reboot_title">উন্নত রিবুট</string>
-    <string name="advanced_wificall_summary">মোবাইল নেটওয়ার্ক পাওয়া না গেলে Wi-Fi ব্যবহার করুন</string>
+    <string name="advanced_wificall_summary">মোবাইল নেটওয়ার্ক পাওয়া না গেলে ওয়াই-ফাই ব্যবহার করুন</string>
     <string name="airplane_mode_description">বিমান মোড সমস্ত নেটওয়ার্ক কানেকশন বন্ধ করে কলিং, টেক্সটিং, ইন্টারনেট অ্যাক্সেস, Wi-Fi এবং ব্লুটুথ সহ</string>
     <string name="airplane_mode_enable_dialog_message">"বিমান মোড চালু হলে, আপনি Wi-Fi ব্যবহার না করলে ইন্টারনেট, ইমেল বা একটি ডেটা সংযোগ প্রয়োজন এমন কোনো অ্যাপ ব্যবহার করতে পারবেন না৷
 
@@ -180,7 +180,7 @@
     <string name="fingerprint_duplicated">আপনি ইতিমধ্যে ঐ আঙ্গুলের ছাপ নিবন্ধন করেছেন। আরেকটি আঙ্গুল ব্যবহার করুন।</string>
     <string name="fingerprint_go_to_security_sumary">ফিঙ্গারপ্রিন্ট আপনার ডিভাইস আনলক করতে ব্যবহারের জন্য আপনার একটি আনলকের পদ্ধতি থাকতে হবে। আপনি কি এখন তা করতে চান?</string>
     <string name="fingerprint_manage">আঙ্গুলের ছাপ পরিচালনা করুন</string>
-    <string name="fingerprint_next">এর পরে</string>
+    <string name="fingerprint_next">পরবর্তী</string>
     <string name="fingerprint_not_recognized">শনাক্তকৃত নয়</string>
     <string name="fingerprint_password_hint">আপনার ব্যাকআপ পাসওয়ার্ড দিন</string>
     <string name="fingerprint_password_manage_title">আঙ্গুলের ছাপ</string>
@@ -193,7 +193,7 @@
     <string name="fingerprint_wizard_add_button_label">আরেকটি যুক্ত করুন</string>
     <string name="fingerprint_wizard_cancel_button_label">বাতিল করুন</string>
     <string name="fingerprint_wizard_finish_button_label">শেষ করুন</string>
-    <string name="fingerprint_wizard_next_button_label">এর পরে</string>
+    <string name="fingerprint_wizard_next_button_label">পরবর্তী</string>
     <string name="gallery_application_title">গ্যালারি অ্যাপ</string>
     <string name="generic_error_dlg_text">অ্যাপটি আনইনস্টল করা গেল না।</string>
     <string name="generic_error_dlg_title">ত্রুটি</string>
@@ -248,6 +248,7 @@
     <string name="led_settings_title">LED বিজ্ঞপ্তি</string>
     <string name="list_saved_fingerprints">সংরক্ষিত আঙ্গুলের ছাপগুলি</string>
     <string name="list_saved_fingerprints_footer">পাঁচটি আঙ্গুলের ছাপ পর্যন্ত সংরক্ষণ করা যায়। পুনঃনামকরণ ও মুছে দিতে উপরের কোনো সংরক্ষিত আঙ্গুলের ছাপে আলতো চাপুন।</string>
+    <string name="location_text">লোকেশন</string>
     <string name="lockpassword_choose_your_fingerprint_header">আঙ্গুলের ছাপ</string>
     <string name="long_press_power_button">পাওয়ার বোতাম টিপে ধরে থাকুন</string>
     <string name="mail_application_title">মেল অ্যাপ</string>
@@ -266,6 +267,7 @@
     <string name="mobile_hotspot_data_off_error">হটস্পট চালু করতে, অনুগ্রহ করে মোবাইল ডাটা চালু করুন</string>
     <string name="multi_app_label_badge">সমান্তরাল %1$s</string>
     <string name="music_application_title">মিউজিক অ্যাপ</string>
+    <string name="nearest_station">নিকটতম স্টেশন</string>
     <string name="nfc_uicc_sim1">SIM 1</string>
     <string name="nfc_uicc_sim2">SIM 2</string>
     <string name="no_network">কোন নেটওয়ার্ক সেবা নেই</string>
@@ -1075,6 +1077,7 @@
     <string name="oneplus_silent_mode_on">নীরব মোড চালু রয়েছে।</string>
     <string name="oneplus_silent_mode_soc_tri_state_summary">অ্যালার্ম ছাড়া কল এবং বিজ্ঞপ্তি নিঃশব্দ হয়ে যাবে</string>
     <string name="oneplus_silent_mode_summary">অ্যালার্ম ছাড়া কল এবং বিজ্ঞপ্তি নিঃশব্দ হয়ে যাবে</string>
+    <string name="oneplus_silent_notifications_status_bar">স্ট্যাটাস বারে নীরব বিজ্ঞপ্তি লুকান</string>
     <string name="oneplus_sim1_ringtone_switch">SIM কার্ড 1</string>
     <string name="oneplus_sim2_ringtone_switch">SIM কার্ড 2</string>
     <string name="oneplus_simcard_title">SIM</string>
@@ -1165,7 +1168,7 @@
     <string name="oneplus_tools_summary_U30">গেমিং মোড, পকেট মোড, পূর্বনির্ধারিত পাওয়ার অন/অফ</string>
     <string name="oneplus_tools_summary_no_gamingmode">অ্যাপ লকার, সমান্তরাল অ্যাপগুলি</string>
     <string name="oneplus_tools_title">ইউটিলিটি</string>
-    <string name="oneplus_top_level_accounts_summary">OnePlus account, other accounts</string>
+    <string name="oneplus_top_level_accounts_summary">OnePlus অ্যাকাউন্ট, অন্যান্য অ্যাকাউন্টগুলি</string>
     <string name="oneplus_top_level_apps_and_notifs_summary">ডিফল্ট অ্যাপগুলি, অনুমতিসমূহ</string>
     <string name="oneplus_top_level_buttons_and_gestures_summary">অ্যালার্ট স্লাইডার, নেভিগেশন বার ও জেশ্চারগুলি</string>
     <string name="oneplus_top_level_cloud_h2_summary">ক্লাউড দ্বারা ডাটা সিঙ্ক করুন, আমার ফোনের সন্ধান করুন</string>
@@ -1254,8 +1257,18 @@
     <string name="op_audio_settings">অডিও টিউনার</string>
     <string name="op_auto_power_saving">স্বয়ংক্রিয় পাওয়ার সাশ্রয়</string>
     <string name="op_auto_power_saving_summary">ব্যাটারি ড্রেন ছাড়াই স্বয়ংক্রিয়ভাবে উপযুক্ত রেজোলিউশনে বদলে যায়</string>
+    <string name="op_charging_Station_mute_notifications">বিজ্ঞপ্তি মিউট করুন</string>
+    <string name="op_charging_footer_text">আপনি বিমানবন্দরগুলি অথবা OnePlus ইভেন্ট যেমন Pop-ups পরিদর্শন করার সময় কাছাকাছি কোনো চার্জিং স্টেশন সম্পর্কে আপনাকে অবহিত করা হবে।</string>
     <string name="op_charging_optimization">অপ্টিমাইজড চার্জিং</string>
     <string name="op_charging_optimization_summary">আপনার ব্যবহারের অভ্যাস অনুসারে চার্জিংয়ের ধরণটি অপ্টিমাইজ করুন</string>
+    <string name="op_charging_station">নিকটবর্তী চার্জিং স্টেশনগুলি</string>
+    <string name="op_charging_station_no_station">কাছাকাছি কোনো চার্জিং স্টেশন নাই</string>
+    <string name="op_charging_station_summary">কাছাকাছি কোনো চার্জিং স্টেশন পাওয়া গেলে অবহিত করুন</string>
+    <string name="op_charging_stations">চার্জিং স্টেশনগুলি</string>
+    <string name="op_charging_stations_off_description">চার্জিং স্টেশনগুলি অনুসন্ধানের জন্য, বিএলই সংকেত সনাক্ত করতে অবস্থানের অনুমতি প্রয়োজন। এই বৈশিষ্ট্যটির ব্যবহার শুরু করার জন্য অনুগ্রহ করে অবস্থানের অনুমতি দিন।</string>
+    <string name="op_charging_stations_off_header">চার্জিং স্টেশনগুলি অনুসন্ধানের জন্য, বিএলই সংকেত সনাক্ত করতে অবস্থানের অনুমতি প্রয়োজন। এই বৈশিষ্ট্যটির ব্যবহার শুরু করার জন্য অনুগ্রহ করে অবস্থানের অনুমতি দিন।</string>
+    <string name="op_charing_station_mute_notifications_description">পরবর্তী ৬ ঘণ্টার জন্য বিজ্ঞপ্তি মিউট থাকবে।</string>
+    <string name="op_charing_stations_mute_dynamic_time" formatted="false">নোটিফিকেশনটি %1d ঘন্টা %2d ডি মিনিটের জন্য মিউট করা হয়েছে</string>
     <string name="op_china_mobile">CMCC</string>
     <string name="op_china_telecom">CTCC</string>
     <string name="op_china_unicom">CUCC</string>
@@ -1271,15 +1284,19 @@
     <string name="op_default_apps_summary">হোম, ব্রাউজার</string>
     <string name="op_default_luncher_title">হোম অ্যাপ</string>
     <string name="op_dnd_summary">বিরক্ত করবেন না</string>
+    <string name="op_enable_location_services">কাছাকাছি চার্জিং স্টেশনগুলি সন্ধান করতে এবং ট্র্যাক করতে দয়া করে অবস্থান পরিষেবাগুলি সক্ষম করুন</string>
+    <string name="op_enable_text">সক্ষম করুন</string>
     <string name="op_face_unlock_set_unlock_password">ফেস আনলক + পাসওয়ার্ড</string>
     <string name="op_face_unlock_set_unlock_pattern">ফেস আনলক + প্যাটার্ন</string>
     <string name="op_face_unlock_set_unlock_pin">ফেস আনলক + পিন</string>
     <string name="op_face_unlock_skip_face">ফেস আনলক না করেই চালিয়ে যান</string>
     <string name="op_failed_to_get_data">ডেটা পুনরুদ্ধার করতে ব্যর্থ হয়েছে</string>
     <string name="op_fetch_data_in_process">লোড হচ্ছে</string>
+    <string name="op_find_charging_stations">স্টেশন খুঁজুন</string>
     <string name="op_fragment">বাছাই করুন</string>
     <string name="op_gamespace">গেম স্পেস</string>
     <string name="op_high_power_app_manager">শক্তি ব্যয়কারী অ্যাপ পরিচালনা করুন</string>
+    <string name="op_keep_location_services">কাছাকাছি চার্জিং স্টেশনগুলি সন্ধান করতে এবং ট্র্যাক করতে দয়া করে অবস্থান পরিষেবাগুলি সক্ষম করুন</string>
     <string name="op_light_mode_title">হালকা</string>
     <string name="op_linked_launch_summary">ব্যাকগ্রাউন্ডে লিঙ্ক করা যেতে পারে এমন অ্যাপগুলো পরিচালনা করুন</string>
     <string name="op_linked_launch_title">অ্যাপ স্বতঃ লঞ্চ</string>
@@ -1497,6 +1514,7 @@
     <string name="uicc_lock_summary">আপনার ডিভাইস শুধুমাত্র স্প্রিন্ট SIM দিয়ে লক হয়</string>
     <string name="uicc_unlock">UICC আনলক</string>
     <string name="uicc_unlock_summary">আপনার ডিভাইস খোলা আছে</string>
+    <string name="under_meters">%1d মিটারের নিচে</string>
     <string name="uninstall_activity_text">%1$sনিম্নলিখিত অ্যাপের অংশ:</string>
     <string name="uninstall_all_blocked_profile_owner">এই অ্যাপের কারণে কিছু ব্যবহারকারী বা প্রোফাইল প্রয়োজন এবং অন্যান্যের জন্য আনইনস্টল করা হয়েছে</string>
     <string name="uninstall_application_text">আপনি কি এই অ্যাপটি আনইনস্টল করতে চান?</string>
@@ -1519,7 +1537,7 @@
     <string name="uninstallapps_confirm">নিশ্চিত করুন</string>
     <string name="uninstallapps_confirm_dialog_body">সমস্ত নির্বাচিত অ্যাপ্লিকেশন এবং অ্যাপ্লিকেশন প্যাকেজের সাথে যুক্ত সমস্ত ফাইল সরানো হবে।</string>
     <string name="uninstallapps_confirm_dialog_title">নির্বাচিত অ্যাপকে সরাবেন?</string>
-    <string name="uninstallapps_selected">নির্বাচিত হয়েছে</string>
+    <string name="uninstallapps_selected">নির্বাচিত</string>
     <string name="uninstallapps_toast_message">অ্যাপগুলো সরানো হয়েছে</string>
     <string name="uninstalling">আনইনস্টল করা হচ্ছে…</string>
     <string name="uninstalling_notification_channel">আনইনস্টল করা হচ্ছে</string>

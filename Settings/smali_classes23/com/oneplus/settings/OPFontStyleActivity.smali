@@ -258,13 +258,13 @@
 
     const/4 v0, 0x0
 
-    const v1, 0x7f121917
+    const v1, 0x7f12192c
 
     invoke-interface {p1, v0, v0, v0, v1}, Landroid/view/Menu;->add(IIII)Landroid/view/MenuItem;
 
     move-result-object v0
 
-    const v1, 0x7f0804b7
+    const v1, 0x7f0804ea
 
     invoke-interface {v0, v1}, Landroid/view/MenuItem;->setIcon(I)Landroid/view/MenuItem;
 
@@ -358,17 +358,17 @@
 
     invoke-static {v3, v0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    const v0, 0x7f120d53
+    const v0, 0x7f120d55
 
     invoke-virtual {p0, v0}, Lcom/oneplus/settings/OPFontStyleActivity;->setTitle(I)V
 
-    const v0, 0x7f0d01c0
+    const v0, 0x7f0d01c4
 
     invoke-virtual {p0, v0}, Lcom/oneplus/settings/OPFontStyleActivity;->setContentView(I)V
 
     invoke-virtual {p0, p0}, Lcom/oneplus/settings/OPFontStyleActivity;->setOnBackPressListener(Lcom/oneplus/settings/OnBackPressListener;)V
 
-    const v0, 0x7f0a054b
+    const v0, 0x7f0a0558
 
     invoke-virtual {p0, v0}, Lcom/oneplus/settings/OPFontStyleActivity;->findViewById(I)Landroid/view/View;
 
@@ -573,7 +573,7 @@
 
     iput v1, p0, Lcom/oneplus/settings/OPFontStyleActivity;->mFontValue:I
 
-    const v1, 0x7f0a0553
+    const v1, 0x7f0a0560
 
     invoke-virtual {p0, v1}, Lcom/oneplus/settings/OPFontStyleActivity;->findViewById(I)Landroid/view/View;
 
@@ -583,7 +583,7 @@
 
     iput-object v1, p0, Lcom/oneplus/settings/OPFontStyleActivity;->mPreviewText1:Landroid/widget/TextView;
 
-    const v1, 0x7f0a0554
+    const v1, 0x7f0a0561
 
     invoke-virtual {p0, v1}, Lcom/oneplus/settings/OPFontStyleActivity;->findViewById(I)Landroid/view/View;
 
@@ -593,7 +593,7 @@
 
     iput-object v1, p0, Lcom/oneplus/settings/OPFontStyleActivity;->mPreviewText2:Landroid/widget/TextView;
 
-    const v1, 0x7f0a0555
+    const v1, 0x7f0a0562
 
     invoke-virtual {p0, v1}, Lcom/oneplus/settings/OPFontStyleActivity;->findViewById(I)Landroid/view/View;
 
@@ -603,7 +603,7 @@
 
     iput-object v1, p0, Lcom/oneplus/settings/OPFontStyleActivity;->mPreviewText3:Landroid/widget/TextView;
 
-    const v1, 0x7f0a0556
+    const v1, 0x7f0a0563
 
     invoke-virtual {p0, v1}, Lcom/oneplus/settings/OPFontStyleActivity;->findViewById(I)Landroid/view/View;
 

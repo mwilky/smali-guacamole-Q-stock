@@ -73,7 +73,7 @@
 
     iget-object v0, p0, Lcom/oneplus/settings/opfinger/OPFingerPrintRecognitionLottieView;->mLayoutInflater:Landroid/view/LayoutInflater;
 
-    const v1, 0x7f0d01b9
+    const v1, 0x7f0d01bd
 
     const/4 v2, 0x0
 
@@ -121,7 +121,7 @@
 
     iget-object v0, p0, Lcom/oneplus/settings/opfinger/OPFingerPrintRecognitionLottieView;->mLayoutInflater:Landroid/view/LayoutInflater;
 
-    const v1, 0x7f0d01b9
+    const v1, 0x7f0d01bd
 
     const/4 v2, 0x0
 
@@ -135,11 +135,11 @@
 
     iget-object v0, p0, Lcom/oneplus/settings/opfinger/OPFingerPrintRecognitionLottieView;->mBgView:Lcom/oneplus/settings/opfinger/OPLottieAnimationView;
 
-    const v1, 0x7f11002d
+    const v1, 0x7f110031
 
     invoke-virtual {v0, v1}, Lcom/oneplus/settings/opfinger/OPLottieAnimationView;->setAnimation(I)V
 
-    const v0, 0x7f11002a
+    const v0, 0x7f11002e
 
     invoke-direct {p0, v0, p2}, Lcom/oneplus/settings/opfinger/OPFingerPrintRecognitionLottieView;->getLottieAnimationView(ILandroid/widget/FrameLayout;)Lcom/oneplus/settings/opfinger/OPLottieAnimationView;
 
@@ -153,7 +153,7 @@
 
     invoke-virtual {v0, v1}, Lcom/oneplus/settings/opfinger/OPLottieAnimationView;->setSplitSteps(I)V
 
-    const v0, 0x7f11002b
+    const v0, 0x7f11002f
 
     invoke-direct {p0, v0, p2}, Lcom/oneplus/settings/opfinger/OPFingerPrintRecognitionLottieView;->getLottieAnimationView(ILandroid/widget/FrameLayout;)Lcom/oneplus/settings/opfinger/OPLottieAnimationView;
 
@@ -167,7 +167,7 @@
 
     invoke-virtual {v0, v1}, Lcom/oneplus/settings/opfinger/OPLottieAnimationView;->setSplitSteps(I)V
 
-    const v0, 0x7f11002c
+    const v0, 0x7f110030
 
     invoke-direct {p0, v0, p2}, Lcom/oneplus/settings/opfinger/OPFingerPrintRecognitionLottieView;->getLottieAnimationView(ILandroid/widget/FrameLayout;)Lcom/oneplus/settings/opfinger/OPLottieAnimationView;
 
@@ -211,7 +211,7 @@
 
     iget-object v0, p0, Lcom/oneplus/settings/opfinger/OPFingerPrintRecognitionLottieView;->mLayoutInflater:Landroid/view/LayoutInflater;
 
-    const v1, 0x7f0d01a6
+    const v1, 0x7f0d01aa
 
     invoke-virtual {v0, v1, p0}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;)Landroid/view/View;
 
@@ -351,7 +351,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f080636
+    const v1, 0x7f08066a
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -366,7 +366,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f080634
+    const v1, 0x7f080668
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 

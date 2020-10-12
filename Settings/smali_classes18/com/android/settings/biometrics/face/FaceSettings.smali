@@ -331,7 +331,7 @@
 .method protected getPreferenceScreenResId()I
     .locals 1
 
-    const v0, 0x7f1600e1
+    const v0, 0x7f1600e2
 
     return v0
 .end method
@@ -675,7 +675,7 @@
 
     const/4 v7, 0x4
 
-    const v8, 0x7f1213bb
+    const v8, 0x7f1213cf
 
     invoke-virtual {p0, v8}, Lcom/android/settings/biometrics/face/FaceSettings;->getString(I)Ljava/lang/String;
 

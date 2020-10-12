@@ -2225,6 +2225,7 @@
     <string name="location_settings_title">定位</string>
     <string name="location_sources_heading">位置資訊來源</string>
     <string name="location_street_level">允許應用程式使用手機的 GPS 找出你的精確位置</string>
+    <string name="location_text">定位</string>
     <string name="location_title">我的位置</string>
     <string name="lock_after_timeout">自動鎖定</string>
     <string name="lock_after_timeout_summary">休眠 %1$s後</string>
@@ -2617,6 +2618,7 @@
     <string name="my_device_info_account_preference_title">帳戶</string>
     <string name="my_device_info_device_name_preference_title">裝置名稱</string>
     <string name="n_cacrts">%d 個 CA 憑證</string>
+    <string name="nearest_station">最近的充電站</string>
     <string name="network_4G">4G (建議)</string>
     <string name="network_connected">已連線</string>
     <string name="network_connecting">連線中…</string>
@@ -3742,6 +3744,7 @@
     <string name="oneplus_silent_mode_on">靜音模式已開啟</string>
     <string name="oneplus_silent_mode_soc_tri_state_summary">將會禁止來電、通知的聲音和震動（鬧鐘除外）</string>
     <string name="oneplus_silent_mode_summary">禁止來電和通知發出聲音，且不允許震動（鬧鐘除外）</string>
+    <string name="oneplus_silent_notifications_status_bar">隱藏狀態欄中的次要通知</string>
     <string name="oneplus_sim1_ringtone_switch">SIM卡1來電鈴聲</string>
     <string name="oneplus_sim2_ringtone_switch">SIM卡2來電鈴聲</string>
     <string name="oneplus_simcard_title">SIM 卡</string>
@@ -3996,8 +3999,18 @@
     <string name="op_battery_info_voltage_label">電池電壓：</string>
     <string name="op_battery_info_voltage_units">mV</string>
     <string name="op_buttons_settings">按鍵</string>
+    <string name="op_charging_Station_mute_notifications">提示免打擾</string>
+    <string name="op_charging_footer_text">在機場及更多一加活動場地，例如，Pop-up 現場，接收附近手機充電站的相關訊息提示</string>
     <string name="op_charging_optimization">充電優化</string>
     <string name="op_charging_optimization_summary">根據你的使用習慣優化充電方式，降低電池的負載，以延長電池壽命</string>
+    <string name="op_charging_station">附近的充電站</string>
+    <string name="op_charging_station_no_station">附近無充電站</string>
+    <string name="op_charging_station_summary">發現附近的手機充電站，立即提醒</string>
+    <string name="op_charging_stations">發現附近的充電站</string>
+    <string name="op_charging_stations_off_description">若要發現附近的手機充電站，需要手機的位置權限以探測低功耗藍牙訊號。請先開啟手機的位置權限以使用該功能。</string>
+    <string name="op_charging_stations_off_header">若要發現附近的手機充電站，需要手機的位置權限以探測低功耗藍牙訊號。請先開啟手機的位置權限以使用該功能。</string>
+    <string name="op_charing_station_mute_notifications_description">接下來 6 小時內都不會收到訊息提示</string>
+    <string name="op_charing_stations_mute_dynamic_time" formatted="false">訊息通知/提示音 靜音 %1d 小時 %2d 分鐘</string>
     <string name="op_choose_lock_generic_title">請先選擇備用解鎖方式</string>
     <string name="op_cloud_service_summary">同步你的聯絡人，便籤，照片等</string>
     <string name="op_cloud_service_title">雲端服務</string>
@@ -4011,15 +4024,19 @@
     <string name="op_default_luncher_title">桌面應用程式</string>
     <string name="op_dnd_summary">勿擾</string>
     <string name="op_do_not_disturb">通知</string>
+    <string name="op_enable_location_services">若要搜尋和定位附近的充電站，請開啟位置資訊</string>
+    <string name="op_enable_text">啟用</string>
     <string name="op_face_unlock_set_unlock_password">人臉識別 + 密碼</string>
     <string name="op_face_unlock_set_unlock_pattern">人臉識別 + 圖案</string>
     <string name="op_face_unlock_set_unlock_pin">人臉識別 + PIN 碼</string>
     <string name="op_face_unlock_skip_face">不設定人臉識別並繼續</string>
     <string name="op_failed_to_get_data">獲取數據失敗</string>
     <string name="op_fetch_data_in_process">加載中</string>
+    <string name="op_find_charging_stations">發現充電站</string>
     <string name="op_first_time_add_fingerprint_tips">你需要先設定一個密碼，以便在指紋解鎖不可用時使用</string>
     <string name="op_gamespace">遊戲空間</string>
     <string name="op_high_power_app_manager">高耗電應用管理</string>
+    <string name="op_keep_location_services">若要搜尋和定位附近的充電站，請勿關閉位置資訊</string>
     <string name="op_light_mode_title">白色主題</string>
     <string name="op_linked_launch_summary">管理應用在背景相互啟動</string>
     <string name="op_linked_launch_title">相互啟動</string>
@@ -5403,6 +5420,7 @@ PIN 碼可能不正確。"</string>
     <string name="uicc_lock_summary">您的設備已鎖定為只能使用 Sprint SIMs 卡</string>
     <string name="uicc_unlock">UICC 解鎖</string>
     <string name="uicc_unlock_summary">您的設備已經解鎖</string>
+    <string name="under_meters">在 %1d 米以內</string>
     <string name="uninstall_activity_text">「%1$s」屬於下列應用程式：</string>
     <string name="uninstall_all_blocked_profile_owner">部分使用者或設定檔需要使用這個應用程式；已為其他使用者解除安裝</string>
     <string name="uninstall_all_users_text">為所有使用者解除安裝</string>

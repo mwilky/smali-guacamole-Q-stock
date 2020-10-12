@@ -80,7 +80,7 @@
 
     iget-object v0, v0, Lcom/oneplus/settings/OPFontStyleActivity$FontViewHolder;->squarelLinearLayout:Lcom/oneplus/settings/ui/OPSquarelLinearLayout;
 
-    const v1, 0x7f080688
+    const v1, 0x7f0806bc
 
     invoke-virtual {v0, v1}, Lcom/oneplus/settings/ui/OPSquarelLinearLayout;->setBackgroundResource(I)V
 
@@ -93,7 +93,7 @@
 
     iget-object v0, p2, Lcom/oneplus/settings/OPFontStyleActivity$FontViewHolder;->squarelLinearLayout:Lcom/oneplus/settings/ui/OPSquarelLinearLayout;
 
-    const v1, 0x7f08068b
+    const v1, 0x7f0806bf
 
     invoke-virtual {v0, v1}, Lcom/oneplus/settings/ui/OPSquarelLinearLayout;->setBackgroundResource(I)V
 
@@ -234,7 +234,7 @@
 
     iget-object v1, p1, Lcom/oneplus/settings/OPFontStyleActivity$FontViewHolder;->squarelLinearLayout:Lcom/oneplus/settings/ui/OPSquarelLinearLayout;
 
-    const v2, 0x7f08068b
+    const v2, 0x7f0806bf
 
     invoke-virtual {v1, v2}, Lcom/oneplus/settings/ui/OPSquarelLinearLayout;->setBackgroundResource(I)V
 
@@ -247,7 +247,7 @@
     :cond_0
     iget-object v1, p1, Lcom/oneplus/settings/OPFontStyleActivity$FontViewHolder;->squarelLinearLayout:Lcom/oneplus/settings/ui/OPSquarelLinearLayout;
 
-    const v2, 0x7f080688
+    const v2, 0x7f0806bc
 
     invoke-virtual {v1, v2}, Lcom/oneplus/settings/ui/OPSquarelLinearLayout;->setBackgroundResource(I)V
 
@@ -282,7 +282,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d01bf
+    const v1, 0x7f0d01c3
 
     const/4 v2, 0x0
 

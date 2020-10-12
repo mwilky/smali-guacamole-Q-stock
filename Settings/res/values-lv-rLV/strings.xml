@@ -14,7 +14,7 @@ Vai tiešām vēlaties iespējot šo funkciju?"</string>
     <string name="advanced_calling_title">Papildu zvanīšana</string>
     <string name="advanced_reboot_summary">Kad ierīce tiks atbloķēta, atsāknēšanas vienums novirzīs jūs uz dialoglodziņu, kur jums tiks lūgts izvēlēties atsāknēšanas veidu: parastu, ar palaišanu atkopšanas režīmā vai ātro atkopšanu</string>
     <string name="advanced_reboot_title">Papildu atsāknēšanas iespējas</string>
-    <string name="advanced_wificall_summary">Izmantot Wi-Fi, kad mobilais tīkls nav pieejams</string>
+    <string name="advanced_wificall_summary">Izmantot Wi-Fi, ja mobilais tīkls nav pieejams</string>
     <string name="airplane_mode_description">Lidojuma režīms izslēdz visus savienojumus ar tīklu, tai skaitā zvanīšanu, īsziņu sūtīšanu, piekļuvi internetam, Wi-Fi un Bluetooth.</string>
     <string name="airplane_mode_enable_dialog_message">"Ar ieslēgtu Lidojuma režīmu jūs nevarēsiet izmantot internetu, e-pastu vai citas lietotnes, kurām nepieciešams datu savienojums, ja vien neizmantojat Wi-Fi.
 
@@ -219,9 +219,9 @@ Ieslēgt Lidojuma režīmu?"</string>
     <string name="high_power_app_text_nomal">%1$s Tērē akumulatora enerģiju</string>
     <string name="high_power_app_text_red">%1$s Ievērojami tērē akumulatora enerģiju</string>
     <string name="hotspot_tip_message" formatted="false">"Mobilais tīklājs kopīgo jūsu mobilos datus ar citām Wi-Fi iespējotām ierīcēm. Lai izveidotu savienojumu ar jūsu mobilo tīklāju: \u0009
- 1: ieslēdziet Wi-Fi otrā ierīcē;
- 2: atlasiet %s pieejamo Wi-Fi tīklu sarakstā. 
- 3: ja tiek prasīta parole, ievadiet %s. Lai taupītu akumulatora enerģiju, izmantojot mobilo tīklāju, raugieties, lai tālrunis būtu pievienots elektrotīklam. "</string>
+ 1. ieslēdziet Wi-Fi otrā ierīcē;
+ 2. atlasiet %s pieejamo Wi-Fi tīklu sarakstā. 
+ 3. ja tiek prasīta parole, ievadiet %s. Lai taupītu akumulatora enerģiju, izmantojot mobilo tīklāju, raugieties, lai tālrunis būtu pievienots elektrotīklam. "</string>
     <string name="hotspot_tip_title">Mobilais tīklājs</string>
     <string name="icon_attributions">Ikonu pakotnes</string>
     <string name="keyguard_wallpaper_settings_title">Bloķēšanas ekrāna fona tapete</string>
@@ -248,6 +248,7 @@ Ieslēgt Lidojuma režīmu?"</string>
     <string name="led_settings_title">LED indikatora paziņojumi</string>
     <string name="list_saved_fingerprints">Saglabātie pirkstu nospiedumi</string>
     <string name="list_saved_fingerprints_footer">Iespējams saglabāt līdz pat pieciem pirkstu nospiedumiem. Pieskarieties jebkuram no saglabātajiem pirkstu nospiedumiem augstāk, lai to pārdēvētu vai dzēstu.</string>
+    <string name="location_text">Atrašanās vieta</string>
     <string name="lockpassword_choose_your_fingerprint_header">Pirksta nospiedums</string>
     <string name="long_press_power_button">Nospiediet un turiet ieslēgšanas/izslēgšanas pogu</string>
     <string name="mail_application_title">Lietotne E-pasts</string>
@@ -266,6 +267,7 @@ Lai abonētu mobilo tīklāju, apmeklējiet My Verizon vai zvaniet klientu apkal
     <string name="mobile_hotspot_data_off_error">Lai ieslēgtu tīklāju, lūdzu, ieslēdziet mobilos datus</string>
     <string name="multi_app_label_badge">Paralēlā %1$s</string>
     <string name="music_application_title">Lietotne Mūzika</string>
+    <string name="nearest_station">Tuvākā stacija</string>
     <string name="nfc_uicc_sim1">1. SIM karte</string>
     <string name="nfc_uicc_sim2">2. SIM karte</string>
     <string name="no_network">Nav tīkla pakalpojuma</string>
@@ -1075,6 +1077,7 @@ Piezīme.
     <string name="oneplus_silent_mode_on">Aktivizēts režīms Klusums</string>
     <string name="oneplus_silent_mode_soc_tri_state_summary">Zvaniem un paziņojumiem tiks izslēgta skaņa, taču modinātāji vēl aizvien tiks atskaņoti</string>
     <string name="oneplus_silent_mode_summary">Zvaniem un paziņojumiem tiks izslēgta skaņa, taču modinātāji vēl aizvien tiks atskaņoti</string>
+    <string name="oneplus_silent_notifications_status_bar">Paslēpt kluso paziņojumu statusa joslā</string>
     <string name="oneplus_sim1_ringtone_switch">1. SIM karte </string>
     <string name="oneplus_sim2_ringtone_switch">2. SIM karte </string>
     <string name="oneplus_simcard_title">SIM karte</string>
@@ -1165,7 +1168,7 @@ Piezīme.
     <string name="oneplus_tools_summary_U30">Spēļu režīms, kabatas režīms, ieslēgšanas/izslēgšanas grafiks</string>
     <string name="oneplus_tools_summary_no_gamingmode">Lietotņu bloķētājs, paralēlās lietotnes</string>
     <string name="oneplus_tools_title">Utilītas</string>
-    <string name="oneplus_top_level_accounts_summary">OnePlus account, other accounts</string>
+    <string name="oneplus_top_level_accounts_summary">OnePlus konts, citi konti</string>
     <string name="oneplus_top_level_apps_and_notifs_summary">Noklusējuma lietotnes, atļaujas</string>
     <string name="oneplus_top_level_buttons_and_gestures_summary">Alert Slider, navigācijas josla un žesti</string>
     <string name="oneplus_top_level_cloud_h2_summary">Sinhronizēt datus ar mākoni, atrast manu tālruni</string>
@@ -1254,8 +1257,18 @@ Iestatot tīkla paslēpšanu, netiks mainīti jūsu maršrutētāja iestatījumi
     <string name="op_audio_settings">Audio regulētājs</string>
     <string name="op_auto_power_saving">Automātiska enerģijas taupīšana</string>
     <string name="op_auto_power_saving_summary">Automātiski pārslēdz atbilstošo izšķirtspēju, neizlādējot akumulatoru</string>
+    <string name="op_charging_Station_mute_notifications">Izslēgt paziņojumiem skaņu</string>
+    <string name="op_charging_footer_text">Jūs tiksiet informēts par tuvumā esošām uzlādes stacijām, apmeklējot tādas partneru atrašanās vietas kā lidostas vai OnePlus pasākumi, piemēram, Pop-ups.</string>
     <string name="op_charging_optimization">Optimizēta uzlāde</string>
     <string name="op_charging_optimization_summary">Optimizējiet uzlādes grafiku atbilstoši saviem lietošanas paradumiem</string>
+    <string name="op_charging_station">Tuvumā esošās uzlādes stacijas</string>
+    <string name="op_charging_station_no_station">Tuvumā nav uzlādes staciju</string>
+    <string name="op_charging_station_summary">Paziņot, kad tuvumā ir uzlādes stacija</string>
+    <string name="op_charging_stations">Uzlādes stacijas</string>
+    <string name="op_charging_stations_off_description">Lai atrastu uzlādes stacijas, ir nepieciešama atrašanās vietas atļauja, lai noteiktu BLE bāksignālu. Lai sāktu izmantot šo funkciju, lūdzu, nodrošiniet piekļuvi atrašanās vietai.</string>
+    <string name="op_charging_stations_off_header">Lai atrastu uzlādes stacijas, ir nepieciešama atrašanās vietas atļauja BLE bāksignālu noteikšanai. Lai sāktu izmantot šo funkciju, lūdzu, nodrošiniet piekļuvi atrašanās vietai.</string>
+    <string name="op_charing_station_mute_notifications_description">Paziņojuma skaņa būs izslēgta 6 stundas.</string>
+    <string name="op_charing_stations_mute_dynamic_time" formatted="false">Paziņojumam izslēgta skaņa uz %1d stundām %2d minūtēm</string>
     <string name="op_china_mobile">CMCC</string>
     <string name="op_china_telecom">CTCC</string>
     <string name="op_china_unicom">CUCC</string>
@@ -1271,15 +1284,19 @@ Iestatot tīkla paslēpšanu, netiks mainīti jūsu maršrutētāja iestatījumi
     <string name="op_default_apps_summary">Sākuma ekrāns, pārlūkprogramma</string>
     <string name="op_default_luncher_title">Sākuma ekrāna lietotne</string>
     <string name="op_dnd_summary">Netraucēt</string>
+    <string name="op_enable_location_services">Lai atrastu un izsekotu tuvumā esošas uzlādes stacijas, lūdzu, iespējojiet atrašanās vietas pakalpojumus</string>
+    <string name="op_enable_text">Iespējot</string>
     <string name="op_face_unlock_set_unlock_password">Atbloķēšana ar seju + parole</string>
     <string name="op_face_unlock_set_unlock_pattern">Atbloķēšana ar seju + raksts</string>
     <string name="op_face_unlock_set_unlock_pin">Atbloķēšana ar seju + PIN kods</string>
     <string name="op_face_unlock_skip_face">Turpināt, neizmantojot atbloķēšanu ar seju</string>
     <string name="op_failed_to_get_data">Neizdevās iegūt failus</string>
     <string name="op_fetch_data_in_process">Notiek ielāde</string>
+    <string name="op_find_charging_stations">Atrast stacijas</string>
     <string name="op_fragment">Īss</string>
     <string name="op_gamespace">Spēļu zona</string>
     <string name="op_high_power_app_manager">Lietotnes ar augstu enerģijas patēriņu</string>
+    <string name="op_keep_location_services">Lai atrastu un izsekotu tuvumā esošas uzlādes stacijas, saglabājiet atrašanās vietas pakalpojumus iespējotus</string>
     <string name="op_light_mode_title">Gaiša</string>
     <string name="op_linked_launch_summary">Lietotņu pārvaldnieku ir iespējams sasaistīti palaist fonā</string>
     <string name="op_linked_launch_title">Automātiska lietotņu palaišana</string>
@@ -1497,6 +1514,7 @@ Vai vēlaties atiestatīt sistēmas iestatījumus? Šo darbību nevar atsaukt."<
     <string name="uicc_lock_summary">Jūsu ierīci bloķējis Sprint. Drīkstat izmantot tikai tā SIM kartes</string>
     <string name="uicc_unlock">UICC atbloķēšana</string>
     <string name="uicc_unlock_summary">Jūsu ierīce ir atbloķēta</string>
+    <string name="under_meters">Mazāk nekā %1d metri</string>
     <string name="uninstall_activity_text">%1$s ir šīs lietotnes daļa:</string>
     <string name="uninstall_all_blocked_profile_owner">Šī lietotne dažiem lietotājiem vai profiliem ir nepieciešama, savukārt citiem tā tika atinstalēta</string>
     <string name="uninstall_application_text">Vai vēlaties atinstalēt šo lietotni?</string>

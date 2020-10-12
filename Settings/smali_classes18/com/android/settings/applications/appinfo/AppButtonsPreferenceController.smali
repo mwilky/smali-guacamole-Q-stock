@@ -786,7 +786,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f080356
+    const v1, 0x7f080389
 
     invoke-virtual {v0, v1}, Lcom/android/settingslib/widget/ActionButtonsPreference;->setButton1Icon(I)Lcom/android/settingslib/widget/ActionButtonsPreference;
 
@@ -800,13 +800,13 @@
 
     move-result-object v0
 
-    const v1, 0x7f1216a8
+    const v1, 0x7f1216bd
 
     invoke-virtual {v0, v1}, Lcom/android/settingslib/widget/ActionButtonsPreference;->setButton2Text(I)Lcom/android/settingslib/widget/ActionButtonsPreference;
 
     move-result-object v0
 
-    const v1, 0x7f080344
+    const v1, 0x7f080377
 
     invoke-virtual {v0, v1}, Lcom/android/settingslib/widget/ActionButtonsPreference;->setButton2Icon(I)Lcom/android/settingslib/widget/ActionButtonsPreference;
 
@@ -828,7 +828,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f08034b
+    const v1, 0x7f08037e
 
     invoke-virtual {v0, v1}, Lcom/android/settingslib/widget/ActionButtonsPreference;->setButton3Icon(I)Lcom/android/settingslib/widget/ActionButtonsPreference;
 
@@ -1126,7 +1126,7 @@
 
     move-result v1
 
-    const v2, 0x7f080347
+    const v2, 0x7f08037a
 
     const v3, 0x7f120612
 
@@ -1246,7 +1246,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f08034a
+    const v2, 0x7f08037d
 
     invoke-virtual {v1, v2}, Lcom/android/settingslib/widget/ActionButtonsPreference;->setButton2Icon(I)Lcom/android/settingslib/widget/ActionButtonsPreference;
 
@@ -2235,7 +2235,7 @@
     :goto_4
     iget-object v1, p0, Lcom/android/settings/applications/appinfo/AppButtonsPreferenceController;->mContext:Landroid/content/Context;
 
-    const v4, 0x7f120c74
+    const v4, 0x7f120c76
 
     invoke-virtual {v1, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -2255,7 +2255,7 @@
 
     iget-object v1, p0, Lcom/android/settings/applications/appinfo/AppButtonsPreferenceController;->mContext:Landroid/content/Context;
 
-    const v4, 0x7f120c75
+    const v4, 0x7f120c77
 
     invoke-virtual {v1, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

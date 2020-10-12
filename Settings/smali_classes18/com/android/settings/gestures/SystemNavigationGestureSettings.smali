@@ -554,27 +554,27 @@
     goto :goto_2
 
     :cond_4
-    const v0, 0x7f110092
+    const v0, 0x7f110096
 
-    const v1, 0x7f0806a9
+    const v1, 0x7f0806dd
 
     invoke-virtual {p0, v0, v1}, Lcom/android/settings/widget/VideoPreference;->setVideo(II)V
 
     goto :goto_2
 
     :cond_5
-    const v0, 0x7f110091
+    const v0, 0x7f110095
 
-    const v1, 0x7f0806a8
+    const v1, 0x7f0806dc
 
     invoke-virtual {p0, v0, v1}, Lcom/android/settings/widget/VideoPreference;->setVideo(II)V
 
     goto :goto_2
 
     :cond_6
-    const v0, 0x7f110093
+    const v0, 0x7f110097
 
-    const v1, 0x7f0806aa
+    const v1, 0x7f0806de
 
     invoke-virtual {p0, v0, v1}, Lcom/android/settings/widget/VideoPreference;->setVideo(II)V
 
@@ -759,13 +759,13 @@
 
     new-instance v2, Lcom/android/settings/gestures/SystemNavigationGestureSettings$NavModeCandidateInfo;
 
-    const v4, 0x7f1215d9
+    const v4, 0x7f1215ed
 
     invoke-virtual {v0, v4}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
     move-result-object v4
 
-    const v5, 0x7f1215d8
+    const v5, 0x7f1215ec
 
     invoke-virtual {v0, v5}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
@@ -835,7 +835,7 @@
 .method protected getPreferenceScreenResId()I
     .locals 1
 
-    const v0, 0x7f1600f2
+    const v0, 0x7f1600f3
 
     return v0
 .end method

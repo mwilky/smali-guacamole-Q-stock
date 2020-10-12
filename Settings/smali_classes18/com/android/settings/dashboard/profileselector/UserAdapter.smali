@@ -75,7 +75,7 @@
 
     iget-object v0, p0, Lcom/android/settings/dashboard/profileselector/UserAdapter;->mInflater:Landroid/view/LayoutInflater;
 
-    const v1, 0x7f0d0343
+    const v1, 0x7f0d0347
 
     const/4 v2, 0x0
 

@@ -180,7 +180,7 @@
 
     iget-object v2, p0, Lcom/oneplus/settings/better/OPGameAndReadPickAdapter;->mInflater:Landroid/view/LayoutInflater;
 
-    const v3, 0x7f0d01c7
+    const v3, 0x7f0d01cb
 
     const/4 v4, 0x0
 
@@ -194,7 +194,7 @@
 
     move-object v0, v2
 
-    const v2, 0x7f0a050c
+    const v2, 0x7f0a0519
 
     invoke-virtual {p2, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -204,7 +204,7 @@
 
     iput-object v2, v0, Lcom/oneplus/settings/better/OPGameAndReadPickAdapter$ItemViewHolder;->parent:Landroid/widget/RelativeLayout;
 
-    const v2, 0x7f0a0721
+    const v2, 0x7f0a072e
 
     invoke-virtual {p2, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -224,7 +224,7 @@
 
     iput-object v2, v0, Lcom/oneplus/settings/better/OPGameAndReadPickAdapter$ItemViewHolder;->appIconIv:Landroid/widget/ImageView;
 
-    const v2, 0x7f0a0426
+    const v2, 0x7f0a0425
 
     invoke-virtual {p2, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -234,7 +234,7 @@
 
     iput-object v2, v0, Lcom/oneplus/settings/better/OPGameAndReadPickAdapter$ItemViewHolder;->appNameTv:Landroid/widget/TextView;
 
-    const v2, 0x7f0a0699
+    const v2, 0x7f0a06a6
 
     invoke-virtual {p2, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -284,7 +284,7 @@
     check-cast v0, Lcom/oneplus/settings/better/OPGameAndReadPickAdapter$ItemViewHolder;
 
     :goto_0
-    const v2, 0x7f120eb6
+    const v2, 0x7f120eb9
 
     const/16 v3, 0x3ec
 
@@ -312,7 +312,7 @@
 
     iget-object v2, v0, Lcom/oneplus/settings/better/OPGameAndReadPickAdapter$ItemViewHolder;->titleTv:Landroid/widget/TextView;
 
-    const v3, 0x7f120f1b
+    const v3, 0x7f120f1e
 
     invoke-virtual {v2, v3}, Landroid/widget/TextView;->setText(I)V
 
@@ -328,7 +328,7 @@
     :cond_2
     iget-object v2, v0, Lcom/oneplus/settings/better/OPGameAndReadPickAdapter$ItemViewHolder;->titleTv:Landroid/widget/TextView;
 
-    const v3, 0x7f120c0f
+    const v3, 0x7f120c11
 
     invoke-virtual {v2, v3}, Landroid/widget/TextView;->setText(I)V
 

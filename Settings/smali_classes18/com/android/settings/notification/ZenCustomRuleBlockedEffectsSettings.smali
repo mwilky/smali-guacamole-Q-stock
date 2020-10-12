@@ -225,7 +225,7 @@
 .method protected getPreferenceScreenResId()I
     .locals 1
 
-    const v0, 0x7f16011c
+    const v0, 0x7f16011d
 
     return v0
 .end method
@@ -249,7 +249,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f121a46
+    const v1, 0x7f121a5b
 
     invoke-virtual {v0, v1}, Lcom/oneplus/settings/widget/OPFooterPreference;->setTitle(I)V
 

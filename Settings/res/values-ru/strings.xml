@@ -1638,7 +1638,7 @@
     <string name="doze_always_on_summary">Показывать время, значки уведомлений и другую информацию (батарея разряжается быстрее)</string>
     <string name="doze_always_on_title">Экран всегда включен</string>
     <string name="doze_summary">Будить экран при получении оповещений.</string>
-    <string name="doze_title">Активация экрана</string>
+    <string name="doze_title">Черно-белый экран</string>
     <string name="draw_overlay">Поверх других приложений</string>
     <string name="dsds_dialog_cancel">Отмена</string>
     <string name="dsds_dialog_confirm">Перезапустить</string>
@@ -2024,9 +2024,9 @@
     <string name="homepage_condition_footer_content_description">Свернуть</string>
     <string name="homepage_personal_settings">Подсказки</string>
     <string name="hotspot_tip_message" formatted="false">"Мобильная точка доступа позволяет другим устройствам с поддержкой Wi-Fi использовать вашу сеть мобильных данных. Для подключения к мобильной точке доступа выполните следующие действия: \u0009 
- 1. Включите Wi-Fi на другом устройстве.
- 2. Выберите %s в списке доступных сетей Wi-Fi. 
- 3. Если требуется пароль, введите %s. Для экономии заряда аккумулятора подключите телефон к зарядке при использовании мобильной точки доступа. "</string>
+ 1: Включите Wi-Fi на другом устройстве.
+ 2: Выберите %s в списке доступных сетей Wi-Fi. 
+ 3: Если требуется пароль, введите %s Для экономии заряда аккумулятора подключите телефон к зарядке при использовании мобильной точки доступа. "</string>
     <string name="hotspot_tip_title">Мобильная точка доступа</string>
     <string name="hwui_force_dark_summary">Изменение настройки принудительного включения тёмной темы на \"Всегда включено\"</string>
     <string name="hwui_force_dark_title">Переопределение включения тёмной темы</string>
@@ -2313,6 +2313,7 @@
     <string name="location_settings_title">Местоположение</string>
     <string name="location_sources_heading">Определение местоположения</string>
     <string name="location_street_level">Разрешить приложениям использовать GPS для точного определения вашего местоположения</string>
+    <string name="location_text">Местоположение</string>
     <string name="location_title">Мое местоположение</string>
     <string name="lock_after_timeout">Автоблокировка</string>
     <string name="lock_after_timeout_summary">%1$s после перехода в спящий режим</string>
@@ -2710,6 +2711,7 @@
     <string name="my_device_info_account_preference_title">Аккаунт</string>
     <string name="my_device_info_device_name_preference_title">Название устройства</string>
     <string name="n_cacrts">Сертификатов ЦС: %d</string>
+    <string name="nearest_station">Ближайшая станция</string>
     <string name="network_4G">4G (рекомендуется)</string>
     <string name="network_connected">Подключено</string>
     <string name="network_connecting">Подключение…</string>
@@ -2982,7 +2984,7 @@
     <string name="oneplus_app_locker_summary">Выберите приложения для шифрования</string>
     <string name="oneplus_app_locker_switch">Скрыть содержимое уведомления</string>
     <string name="oneplus_app_locker_switch_summary">Содержимое уведомлений будет скрыто от приложений, для которых включен блокировщик приложений</string>
-    <string name="oneplus_app_locker_title">Блокировщик приложений</string>
+    <string name="oneplus_app_locker_title">Блокировщик приложения</string>
     <string name="oneplus_app_network_settings">Контроль использования данных</string>
     <string name="oneplus_app_notification_allow_led">LED-оповещение включено</string>
     <string name="oneplus_app_notification_not_allow_led">LED-оповещение выключено</string>
@@ -3134,7 +3136,7 @@
     <string name="oneplus_double_tap_power_none">Нет</string>
     <string name="oneplus_doze_summary_801">Отображать часы и другую информацию на экране в режиме сна</string>
     <string name="oneplus_doze_summary_new">Показывать время, дату и уведомления на экране</string>
-    <string name="oneplus_doze_title">Активация экрана</string>
+    <string name="oneplus_doze_title">Черно-белый экран</string>
     <string name="oneplus_doze_title_801">Черно-белый экран</string>
     <string name="oneplus_draw_gesture_start_none">Нет</string>
     <string name="oneplus_draw_m_start_app">Нарисуйте M</string>
@@ -3332,7 +3334,7 @@
     <string name="oneplus_h2_contributors">Соавторы HydrogenOS</string>
     <string name="oneplus_hand_up_proximity_summary">Включать экран, когда телефон берут в руку</string>
     <string name="oneplus_hand_up_proximity_title">Подсветка при взятии</string>
-    <string name="oneplus_hand_up_to_show">Поднимите телефон для отображения</string>
+    <string name="oneplus_hand_up_to_show">Поднимите телефон, чтобы показать</string>
     <string name="oneplus_haptic_feedback_no_app">Поддерживаемые игры не установлены</string>
     <string name="oneplus_haptic_feedback_no_app_tip">Вы можете установить PUBG Mobile и Asphalt 9</string>
     <string name="oneplus_haptic_feedback_summary">Предоставление улучшенной тактильной обратной связи в поддерживаемых играх</string>
@@ -3539,7 +3541,7 @@
     <string name="oneplus_preference_settings_behavior">Предпочтения</string>
     <string name="oneplus_preference_settings_custom_time">Автопереключение</string>
     <string name="oneplus_preference_settings_manual_open">Статус</string>
-    <string name="oneplus_preference_settings_turn_off_time">Кому</string>
+    <string name="oneplus_preference_settings_turn_off_time">До</string>
     <string name="oneplus_preference_settings_turn_on">Включить функцию \"Не беспокоить\"</string>
     <string name="oneplus_preference_settings_turn_on_time">С</string>
     <string name="oneplus_prior_to_use_you_need_to">Перед использованием вам необходимо:</string>
@@ -3750,6 +3752,7 @@
     <string name="oneplus_silent_mode_on">Бесшумный режим включен</string>
     <string name="oneplus_silent_mode_soc_tri_state_summary">Вызовы и уведомления, кроме сигналов будильника, будут без звука</string>
     <string name="oneplus_silent_mode_summary">Вызовы и уведомления, кроме сигналов будильника, будут без звука</string>
+    <string name="oneplus_silent_notifications_status_bar">Скрывать уведомления без звукового сигнала в строке состояния</string>
     <string name="oneplus_sim1_ringtone_switch">SIM-карта 1</string>
     <string name="oneplus_sim2_ringtone_switch">SIM-карта 2</string>
     <string name="oneplus_simcard_title">SIM</string>
@@ -3840,7 +3843,7 @@
     <string name="oneplus_tools_summary_U30">Игровой режим, карманный режим, запланированное включение/выключение питания</string>
     <string name="oneplus_tools_summary_no_gamingmode">Блокировка приложений, параллельные приложения</string>
     <string name="oneplus_tools_title">Утилиты</string>
-    <string name="oneplus_top_level_accounts_summary">OnePlus account, other accounts</string>
+    <string name="oneplus_top_level_accounts_summary">Учетная запись OnePlus, другие учетные записи</string>
     <string name="oneplus_top_level_apps_and_notifs_summary">Приложения по умолчанию, разрешения</string>
     <string name="oneplus_top_level_buttons_and_gestures_summary">Alert Slider, панель навигации, жесты</string>
     <string name="oneplus_top_level_cloud_h2_summary">Синхронизация данных с облаком, поиск телефона</string>
@@ -3855,7 +3858,7 @@
     <string name="oneplus_top_level_system_summary">Язык и клавиатура, время, сброс, обновления системы</string>
     <string name="oneplus_top_level_system_summary_verizon">Язык и клавиатура, время, сброс</string>
     <string name="oneplus_touch_vibrate">Вибрация при касании</string>
-    <string name="oneplus_turn_off_time">Кому</string>
+    <string name="oneplus_turn_off_time">До</string>
     <string name="oneplus_turn_on_feature_cancel">ОТМЕНА</string>
     <string name="oneplus_turn_on_feature_ok">ВКЛЮЧИТЬ</string>
     <string name="oneplus_turn_on_time">С</string>
@@ -3930,8 +3933,18 @@
     <string name="op_audio_settings">Настройка аудио</string>
     <string name="op_auto_power_saving">Автоматическое энергосбережение</string>
     <string name="op_auto_power_saving_summary">Автоматическое переключение на подходящее разрешение без расхода заряда</string>
+    <string name="op_charging_Station_mute_notifications">Отключить звук уведомлений</string>
+    <string name="op_charging_footer_text">Вы будете получать уведомления о расположенных поблизости станциях зарядки в аэропортах или на мероприятиях OnePlus, таких как Pop-ups.</string>
     <string name="op_charging_optimization">Оптимизированная зарядка</string>
     <string name="op_charging_optimization_summary">Оптимизация процесса зарядки в соответствии с вашими привычками использования</string>
+    <string name="op_charging_station">Станции зарядки поблизости</string>
+    <string name="op_charging_station_no_station">Поблизости нет станций зарядки</string>
+    <string name="op_charging_station_summary">Уведомлять, когда поблизости есть станция зарядки</string>
+    <string name="op_charging_stations">Станции зарядки</string>
+    <string name="op_charging_stations_off_description">Функции поиска станций зарядки требуется доступ к информации о местоположении для определения маяков BLE. Чтобы начать пользоваться этой функцией, предоставьте ей доступ к информации о местоположении.</string>
+    <string name="op_charging_stations_off_header">Функции поиска станций зарядки требуется доступ к информации о местоположении для определения маяков BLE. Чтобы начать пользоваться этой функцией, предоставьте ей доступ к информации о местоположении.</string>
+    <string name="op_charing_station_mute_notifications_description">Звук уведомлений будет отключен в течение следующих 6 часов.</string>
+    <string name="op_charing_stations_mute_dynamic_time" formatted="false">Звук уведомлений отключен на %1d ч %2d мин</string>
     <string name="op_china_mobile">CMCC</string>
     <string name="op_china_telecom">CTCC</string>
     <string name="op_china_unicom">CUCC</string>
@@ -3947,15 +3960,19 @@
     <string name="op_default_apps_summary">Домашний экран, браузер</string>
     <string name="op_default_luncher_title">Приложение домашнего экрана</string>
     <string name="op_dnd_summary">Не беспокоить</string>
+    <string name="op_enable_location_services">Для поиска и отслеживания станций зарядки поблизости включите службу определения местоположения</string>
+    <string name="op_enable_text">Включить</string>
     <string name="op_face_unlock_set_unlock_password">Разблокировка распознаванием лица + пароль</string>
     <string name="op_face_unlock_set_unlock_pattern">Разблокировка распознаванием лица + графический ключ</string>
     <string name="op_face_unlock_set_unlock_pin">Разблокировка распознаванием лица + PIN-код</string>
     <string name="op_face_unlock_skip_face">Продолжить без разблокировки распознаванием лица</string>
     <string name="op_failed_to_get_data">Не удалось получить данные</string>
     <string name="op_fetch_data_in_process">Загрузка</string>
+    <string name="op_find_charging_stations">Найти станции</string>
     <string name="op_fragment">Короткий</string>
     <string name="op_gamespace">Игровое пространство</string>
     <string name="op_high_power_app_manager">Диспетчер энергоемких приложений</string>
+    <string name="op_keep_location_services">Для поиска и отслеживания станций зарядки поблизости не выключайте службу определения местоположения</string>
     <string name="op_light_mode_title">Светлая</string>
     <string name="op_linked_launch_summary">Приложениями можно управлять в фоновом режиме</string>
     <string name="op_linked_launch_title">Автоматический запуск приложений</string>
@@ -5262,7 +5279,7 @@ UT-интерфейс: %5$s"</string>
     <string name="tether_error_item_default">Режим модема</string>
     <string name="tether_error_message">Вы не подписаны на %1$s.</string>
     <string name="tether_error_title">Ошибка %1$s</string>
-    <string name="tether_no_sim_message">Вставьте SIM-карту, чтобы использовать мобильную точку доступа и другие функции модема</string>
+    <string name="tether_no_sim_message">Вставьте SIM-карту, чтобы использовать мобильную точку доступа и другие варианты режима модема</string>
     <string name="tether_no_sim_title">Нет SIM-карты</string>
     <string name="tether_settings_disabled_on_data_saver">В режиме экономии трафика нельзя подключаться к точкам доступа</string>
     <string name="tether_settings_summary_hotspot_off_tether_on">Режим модема</string>
@@ -5384,6 +5401,7 @@ UT-интерфейс: %5$s"</string>
     <string name="uicc_lock_summary">На вашем устройстве можно использовать только SIM-карты Sprint</string>
     <string name="uicc_unlock">Разблокировать UICC</string>
     <string name="uicc_unlock_summary">Ваше устройство разблокировано</string>
+    <string name="under_meters">Менее %1d м</string>
     <string name="uninstall_activity_text">%1$s входит в состав следующего приложения:</string>
     <string name="uninstall_all_blocked_profile_owner">Приложение удалено для всех пользователей и профилей, для которых не является обязательным</string>
     <string name="uninstall_all_users_text">Удалить для всех пользователей</string>

@@ -162,7 +162,7 @@
 
     iget-object v0, p0, Lcom/android/settings/nfc/AndroidBeamEnabler;->mPreference:Lcom/android/settingslib/RestrictedPreference;
 
-    const v1, 0x7f120b16
+    const v1, 0x7f120b18
 
     invoke-virtual {v0, v1}, Lcom/android/settingslib/RestrictedPreference;->setSummary(I)V
 

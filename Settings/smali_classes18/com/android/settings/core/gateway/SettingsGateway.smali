@@ -13,7 +13,7 @@
 .method static constructor <clinit>()V
     .locals 18
 
-    const/16 v0, 0xa4
+    const/16 v0, 0xa5
 
     new-array v0, v0, [Ljava/lang/String;
 
@@ -1654,6 +1654,16 @@
     move-result-object v1
 
     const/16 v17, 0xa3
+
+    aput-object v1, v0, v17
+
+    const-class v1, Lcom/oneplus/settings/chargingstations/OPChargingStationSettings;
+
+    invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
+
+    move-result-object v1
+
+    const/16 v17, 0xa4
 
     aput-object v1, v0, v17
 

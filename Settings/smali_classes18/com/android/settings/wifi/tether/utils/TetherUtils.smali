@@ -433,7 +433,7 @@
 
     invoke-direct {v1}, Lcom/android/settings/wifi/tether/utils/TetherUtils$1;-><init>()V
 
-    const v2, 0x7f120be6
+    const v2, 0x7f120be8
 
     invoke-virtual {v0, v2, v1}, Lcom/oneplus/lib/app/OPAlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Lcom/oneplus/lib/app/OPAlertDialog$Builder;
 

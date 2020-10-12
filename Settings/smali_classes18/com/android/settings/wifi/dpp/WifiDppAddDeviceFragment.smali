@@ -160,7 +160,7 @@
 .method private showErrorUi(IZ)V
     .locals 5
 
-    const v0, 0x7f1218ce
+    const v0, 0x7f1218e3
 
     const/4 v1, 0x0
 
@@ -177,7 +177,7 @@
     :pswitch_0
     iget-object v0, p0, Lcom/android/settings/wifi/dpp/WifiDppAddDeviceFragment;->mSummary:Landroid/widget/TextView;
 
-    const v2, 0x7f1218cc
+    const v2, 0x7f1218e1
 
     invoke-virtual {v0, v2}, Landroid/widget/TextView;->setText(I)V
 
@@ -193,7 +193,7 @@
     :pswitch_2
     iget-object v0, p0, Lcom/android/settings/wifi/dpp/WifiDppAddDeviceFragment;->mSummary:Landroid/widget/TextView;
 
-    const v2, 0x7f1218d0
+    const v2, 0x7f1218e5
 
     invoke-virtual {v0, v2}, Landroid/widget/TextView;->setText(I)V
 
@@ -250,7 +250,7 @@
     :pswitch_5
     iget-object v0, p0, Lcom/android/settings/wifi/dpp/WifiDppAddDeviceFragment;->mSummary:Landroid/widget/TextView;
 
-    const v2, 0x7f1218d2
+    const v2, 0x7f1218e7
 
     invoke-virtual {v0, v2}, Landroid/widget/TextView;->setText(I)V
 
@@ -259,7 +259,7 @@
     :pswitch_6
     iget-object v0, p0, Lcom/android/settings/wifi/dpp/WifiDppAddDeviceFragment;->mSummary:Landroid/widget/TextView;
 
-    const v2, 0x7f1218cf
+    const v2, 0x7f1218e4
 
     invoke-virtual {v0, v2}, Landroid/widget/TextView;->setText(I)V
 
@@ -268,7 +268,7 @@
     :pswitch_7
     iget-object v0, p0, Lcom/android/settings/wifi/dpp/WifiDppAddDeviceFragment;->mSummary:Landroid/widget/TextView;
 
-    const v2, 0x7f1218d1
+    const v2, 0x7f1218e6
 
     const/4 v3, 0x1
 
@@ -291,13 +291,13 @@
     :goto_0
     iget-object v0, p0, Lcom/android/settings/wifi/dpp/WifiDppAddDeviceFragment;->mTitle:Landroid/widget/TextView;
 
-    const v2, 0x7f1218cb
+    const v2, 0x7f1218e0
 
     invoke-virtual {v0, v2}, Landroid/widget/TextView;->setText(I)V
 
     iget-object v0, p0, Lcom/android/settings/wifi/dpp/WifiDppAddDeviceFragment;->mWifiApPictureView:Landroid/widget/ImageView;
 
-    const v2, 0x7f0806c2
+    const v2, 0x7f0806f6
 
     invoke-virtual {v0, v2}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -315,7 +315,7 @@
 
     iget-object v0, p0, Lcom/android/settings/wifi/dpp/WifiDppAddDeviceFragment;->mButtonRight:Landroid/widget/Button;
 
-    const v3, 0x7f121300
+    const v3, 0x7f121314
 
     invoke-virtual {v0, v3}, Landroid/widget/Button;->setText(I)V
 
@@ -349,7 +349,7 @@
 
     iget-object v0, p0, Lcom/android/settings/wifi/dpp/WifiDppAddDeviceFragment;->mSummary:Landroid/widget/TextView;
 
-    const v3, 0x7f1218dc
+    const v3, 0x7f1218f1
 
     invoke-virtual {v0, v3}, Landroid/widget/TextView;->setText(I)V
 
@@ -424,13 +424,13 @@
 .method private showSuccessUi(Z)V
     .locals 3
 
-    const v0, 0x7f0801d3
+    const v0, 0x7f080206
 
     invoke-virtual {p0, v0}, Lcom/android/settings/wifi/dpp/WifiDppAddDeviceFragment;->setHeaderIconImageResource(I)V
 
     iget-object v0, p0, Lcom/android/settings/wifi/dpp/WifiDppAddDeviceFragment;->mTitle:Landroid/widget/TextView;
 
-    const v1, 0x7f1218de
+    const v1, 0x7f1218f3
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
 
@@ -460,7 +460,7 @@
 
     iget-object v0, p0, Lcom/android/settings/wifi/dpp/WifiDppAddDeviceFragment;->mWifiApPictureView:Landroid/widget/ImageView;
 
-    const v1, 0x7f0806c3
+    const v1, 0x7f0806f7
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -470,7 +470,7 @@
 
     iget-object v0, p0, Lcom/android/settings/wifi/dpp/WifiDppAddDeviceFragment;->mButtonLeft:Landroid/widget/Button;
 
-    const v1, 0x7f1218c0
+    const v1, 0x7f1218d5
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setText(I)V
 
@@ -575,7 +575,7 @@
 
     iget-object v0, p0, Lcom/android/settings/wifi/dpp/WifiDppAddDeviceFragment;->mSummary:Landroid/widget/TextView;
 
-    const v1, 0x7f1218dc
+    const v1, 0x7f1218f1
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
 
@@ -584,7 +584,7 @@
     :cond_0
     iget-object v0, p0, Lcom/android/settings/wifi/dpp/WifiDppAddDeviceFragment;->mSummary:Landroid/widget/TextView;
 
-    const v1, 0x7f1218c3
+    const v1, 0x7f1218d8
 
     const/4 v2, 0x1
 
@@ -830,7 +830,7 @@
 .method public final onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 2
 
-    const v0, 0x7f0d0357
+    const v0, 0x7f0d035b
 
     const/4 v1, 0x0
 
@@ -872,7 +872,7 @@
 
     invoke-super {p0, p1, p2}, Lcom/android/settings/wifi/dpp/WifiDppQrCodeBaseFragment;->onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
 
-    const v0, 0x7f0801d6
+    const v0, 0x7f080209
 
     invoke-virtual {p0, v0}, Lcom/android/settings/wifi/dpp/WifiDppAddDeviceFragment;->setHeaderIconImageResource(I)V
 
@@ -908,7 +908,7 @@
 
     iget-object v2, p0, Lcom/android/settings/wifi/dpp/WifiDppAddDeviceFragment;->mTitle:Landroid/widget/TextView;
 
-    const v3, 0x7f1218cd
+    const v3, 0x7f1218e2
 
     invoke-virtual {v2, v3}, Landroid/widget/TextView;->setText(I)V
 
@@ -922,7 +922,7 @@
     :goto_0
     invoke-direct {p0}, Lcom/android/settings/wifi/dpp/WifiDppAddDeviceFragment;->updateSummary()V
 
-    const v2, 0x7f0a0783
+    const v2, 0x7f0a0790
 
     invoke-virtual {p1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -986,7 +986,7 @@
 
     iget-object v2, p0, Lcom/android/settings/wifi/dpp/WifiDppAddDeviceFragment;->mButtonRight:Landroid/widget/Button;
 
-    const v3, 0x7f1218db
+    const v3, 0x7f1218f0
 
     invoke-virtual {v2, v3}, Landroid/widget/Button;->setText(I)V
 

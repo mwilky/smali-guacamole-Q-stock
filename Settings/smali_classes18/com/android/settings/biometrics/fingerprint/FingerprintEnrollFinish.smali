@@ -302,7 +302,7 @@
 
     if-eqz v0, :cond_0
 
-    const v0, 0x7f0a03d4
+    const v0, 0x7f0a03d3
 
     invoke-virtual {p0, v0}, Lcom/android/settings/biometrics/fingerprint/FingerprintEnrollFinish;->findViewById(I)Landroid/view/View;
 
@@ -312,7 +312,7 @@
 
     invoke-virtual {v0, v2}, Landroid/widget/TextView;->setTextSize(F)V
 
-    const v2, 0x7f0a03d7
+    const v2, 0x7f0a03d6
 
     invoke-virtual {p0, v2}, Lcom/android/settings/biometrics/fingerprint/FingerprintEnrollFinish;->findViewById(I)Landroid/view/View;
 
@@ -339,7 +339,7 @@
     goto :goto_0
 
     :cond_0
-    const v0, 0x7f0a0680
+    const v0, 0x7f0a068d
 
     invoke-virtual {p0, v0}, Lcom/android/settings/biometrics/fingerprint/FingerprintEnrollFinish;->findViewById(I)Landroid/view/View;
 
@@ -347,7 +347,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    const v3, 0x7f0a068c
+    const v3, 0x7f0a0699
 
     invoke-virtual {p0, v3}, Lcom/android/settings/biometrics/fingerprint/FingerprintEnrollFinish;->findViewById(I)Landroid/view/View;
 
@@ -423,7 +423,7 @@
 
     if-eqz v0, :cond_0
 
-    const v0, 0x7f1301c9
+    const v0, 0x7f1301ca
 
     invoke-virtual {p0, v0}, Lcom/android/settings/biometrics/fingerprint/FingerprintEnrollFinish;->setTheme(I)V
 
@@ -459,14 +459,14 @@
 
     if-eqz v0, :cond_2
 
-    const v0, 0x7f0d01bb
+    const v0, 0x7f0d01bf
 
     invoke-virtual {p0, v0}, Lcom/android/settings/biometrics/fingerprint/FingerprintEnrollFinish;->setContentView(I)V
 
     goto :goto_0
 
     :cond_2
-    const v0, 0x7f0d01b6
+    const v0, 0x7f0d01ba
 
     invoke-virtual {p0, v0}, Lcom/android/settings/biometrics/fingerprint/FingerprintEnrollFinish;->setContentView(I)V
 
@@ -483,14 +483,14 @@
 
     if-eqz v0, :cond_4
 
-    const v0, 0x7f0d01bd
+    const v0, 0x7f0d01c1
 
     invoke-virtual {p0, v0}, Lcom/android/settings/biometrics/fingerprint/FingerprintEnrollFinish;->setContentView(I)V
 
     goto :goto_0
 
     :cond_4
-    const v0, 0x7f0d01b8
+    const v0, 0x7f0d01bc
 
     invoke-virtual {p0, v0}, Lcom/android/settings/biometrics/fingerprint/FingerprintEnrollFinish;->setContentView(I)V
 
@@ -506,11 +506,11 @@
 
     move-result v0
 
-    const v2, 0x7f1213d7
+    const v2, 0x7f1213eb
 
     if-eqz v0, :cond_6
 
-    const v0, 0x7f0a03d4
+    const v0, 0x7f0a03d3
 
     invoke-virtual {p0, v0}, Lcom/android/settings/biometrics/fingerprint/FingerprintEnrollFinish;->findViewById(I)Landroid/view/View;
 
@@ -528,7 +528,7 @@
 
     invoke-virtual {v0, v3}, Landroid/widget/TextView;->setTextColor(I)V
 
-    const v3, 0x7f0a03d7
+    const v3, 0x7f0a03d6
 
     invoke-virtual {p0, v3}, Lcom/android/settings/biometrics/fingerprint/FingerprintEnrollFinish;->findViewById(I)Landroid/view/View;
 
@@ -536,7 +536,7 @@
 
     check-cast v3, Landroid/widget/TextView;
 
-    const v4, 0x7f120f1c
+    const v4, 0x7f120f1f
 
     invoke-virtual {v3, v4}, Landroid/widget/TextView;->setText(I)V
 
@@ -601,7 +601,7 @@
     invoke-virtual {v0, v1}, Landroid/app/ActionBar;->setElevation(F)V
 
     :cond_7
-    const v0, 0x7f0a0437
+    const v0, 0x7f0a0436
 
     invoke-virtual {p0, v0}, Lcom/android/settings/biometrics/fingerprint/FingerprintEnrollFinish;->findViewById(I)Landroid/view/View;
 
@@ -861,7 +861,7 @@
 .method protected setHeaderText(I)V
     .locals 1
 
-    const v0, 0x7f0a0680
+    const v0, 0x7f0a068d
 
     invoke-virtual {p0, v0}, Lcom/android/settings/biometrics/fingerprint/FingerprintEnrollFinish;->findViewById(I)Landroid/view/View;
 

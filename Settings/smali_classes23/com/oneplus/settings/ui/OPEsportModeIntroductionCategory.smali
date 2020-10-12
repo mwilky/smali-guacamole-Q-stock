@@ -21,7 +21,7 @@
 
     invoke-direct {p0, p1}, Landroidx/preference/Preference;-><init>(Landroid/content/Context;)V
 
-    const v0, 0x7f0d01a2
+    const v0, 0x7f0d01a6
 
     iput v0, p0, Lcom/oneplus/settings/ui/OPEsportModeIntroductionCategory;->mLayoutResId:I
 
@@ -35,7 +35,7 @@
 
     invoke-direct {p0, p1, p2}, Landroidx/preference/Preference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
-    const v0, 0x7f0d01a2
+    const v0, 0x7f0d01a6
 
     iput v0, p0, Lcom/oneplus/settings/ui/OPEsportModeIntroductionCategory;->mLayoutResId:I
 
@@ -49,7 +49,7 @@
 
     invoke-direct {p0, p1, p2, p3}, Landroidx/preference/Preference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
-    const v0, 0x7f0d01a2
+    const v0, 0x7f0d01a6
 
     iput v0, p0, Lcom/oneplus/settings/ui/OPEsportModeIntroductionCategory;->mLayoutResId:I
 
@@ -127,7 +127,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f080493
+    const v3, 0x7f0804c6
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -146,7 +146,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f080494
+    const v3, 0x7f0804c7
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 

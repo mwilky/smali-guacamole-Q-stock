@@ -91,7 +91,7 @@
     return-void
 
     :cond_0
-    const v0, 0x7f121204
+    const v0, 0x7f121218
 
     invoke-virtual {p0, v0}, Lcom/android/settings/applications/specialaccess/premiumsms/PremiumSmsAccess;->setEmptyText(I)V
 
@@ -155,7 +155,7 @@
 
     invoke-direct {v1, v2}, Lcom/oneplus/settings/widget/OPFooterPreference;-><init>(Landroid/content/Context;)V
 
-    const v2, 0x7f121205
+    const v2, 0x7f121219
 
     invoke-virtual {v1, v2}, Lcom/oneplus/settings/widget/OPFooterPreference;->setTitle(I)V
 
@@ -178,7 +178,7 @@
 .method protected getPreferenceScreenResId()I
     .locals 1
 
-    const v0, 0x7f1600d1
+    const v0, 0x7f1600d2
 
     return v0
 .end method

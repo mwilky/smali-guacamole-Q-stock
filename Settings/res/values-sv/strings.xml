@@ -264,7 +264,7 @@ Administratören kan övervaka och hantera inställningar, åtkomst, appar och d
     <string name="advanced_security_title">Avancerat</string>
     <string name="advanced_settings">Avancerade inställningar</string>
     <string name="advanced_settings_summary">Aktivera fler inställningsalternativ</string>
-    <string name="advanced_wificall_summary">Använd Wi-Fi när mobilnätverket inte är tillgängligt</string>
+    <string name="advanced_wificall_summary">Använd Wi-Fi när mobilnätet inte är tillgängligt</string>
     <string name="airplane_mode">Flygplansläge</string>
     <string name="airplane_mode_description">Flygplansläge stänger av alla nätverksanslutningar, inklusive, samtal, textmeddelanden, internetåtkomst, Wi-Fi och Bluetooth.</string>
     <string name="airplane_mode_enable_dialog_message">"När flygplansläget är aktiverat kan du inte använda internet, e-post eller andra appar som kräver en dataanslutning såvida du inte använder Wi-Fi.
@@ -336,7 +336,7 @@ Håll bara enheterna mot varandra (oftast baksida mot baksida) och tryck sedan p
     <string name="aod_clock_minimalism">Minimalism 1</string>
     <string name="aod_clock_minimalism_1">Minimalism 2</string>
     <string name="aod_clock_none">Ingen</string>
-    <string name="aod_clock_select_style_text">Välj klockstilen</string>
+    <string name="aod_clock_select_style_text">Välj klockstil</string>
     <string name="aod_clock_text_clock">Text clock</string>
     <string name="aod_horizon_light_effect_1">Blå</string>
     <string name="aod_horizon_light_effect_2">Röd</string>
@@ -2023,10 +2023,10 @@ Du kan ändra detta senare under Inställningar > Appar och aviseringar."</strin
     <string name="homepage_all_settings">Alla inställningar</string>
     <string name="homepage_condition_footer_content_description">Komprimera</string>
     <string name="homepage_personal_settings">Förslag</string>
-    <string name="hotspot_tip_message" formatted="false">"Trådlös surfzon delar dina mobildata med andra Wi-Fi-aktiverade enheter. Så här ansluter du till din trådlösa surfzon: \u0009
-1: Alå på Wi-Fi på den andra enheten.
-2: Välj %s i listan över tillgängliga Wi-Fi-nätverk. 
-3: Om ett lösenord krävs, ange %s För att spara batteritid kan du ha telefonen inkopplad när du använder trådlös surfzon. "</string>
+    <string name="hotspot_tip_message" formatted="false">"Trådlös surfzon delar dina mobildata med andra Wi-Fi-aktiverade enheter. Så här ansluter du till trådlös surfzon: \u0009 
+ 1: Slå på Wi-Fi på den andra enheten.
+ 2: Välj %s i listan över tillgängliga Wi-Fi-nätverk. 
+ 3: Om ett lösenord krävs, ange %s För att spara batteritid kan du ha telefonen ansluten när du använder trådlös surfzon."</string>
     <string name="hotspot_tip_title">Trådlös surfzon</string>
     <string name="hwui_force_dark_summary">Åsidosätter funktionen som tvingar mörkt läge att alltid vara aktiverat</string>
     <string name="hwui_force_dark_title">Åsidosätter tvingat mörkt läge</string>
@@ -2313,6 +2313,7 @@ Du kan ändra detta senare under Inställningar > Appar och aviseringar."</strin
     <string name="location_settings_title">Plats</string>
     <string name="location_sources_heading">Platskällor</string>
     <string name="location_street_level">Ge appar möjlighet att använda mobilens GPS för att fastställa mer exakt var du befinner dig</string>
+    <string name="location_text">Plats</string>
     <string name="location_title">Min plats</string>
     <string name="lock_after_timeout">Lås automatiskt</string>
     <string name="lock_after_timeout_summary">%1$s efter viloläge</string>
@@ -2710,6 +2711,7 @@ Om du byter till %1$s avslutas inte tjänsten hos %2$s."</string>
     <string name="my_device_info_account_preference_title">Konto</string>
     <string name="my_device_info_device_name_preference_title">Enhetens namn</string>
     <string name="n_cacrts">%d CA-certifikat</string>
+    <string name="nearest_station">Närmaste station</string>
     <string name="network_4G">4G (rekommenderas)</string>
     <string name="network_connected">Ansluten</string>
     <string name="network_connecting">Ansluter …</string>
@@ -3125,7 +3127,7 @@ Batteribesparing stängs av automatiskt när enheten laddar."</string>
     <string name="oneplus_do_not_disturb_answer_call_by_speaker_summary">Dirigera inkommande samtal till högtalaren när spelläget är aktiverat</string>
     <string name="oneplus_do_not_disturb_answer_call_by_speaker_title">Svara på samtal i högtalaren</string>
     <string name="oneplus_do_not_disturb_settings">Inställningar</string>
-    <string name="oneplus_donot_silence_or_block">Tillåt aviseringar</string>
+    <string name="oneplus_donot_silence_or_block">Tillåt meddelanden</string>
     <string name="oneplus_donot_silence_or_block_summary">Tillåt alla typer av aviseringar</string>
     <string name="oneplus_double_tap_power_gesture">Dubbelklicka på strömknappen för</string>
     <string name="oneplus_double_tap_power_gesture_app">VÄLJ FUNKTION</string>
@@ -3255,7 +3257,7 @@ Var försiktig: Ansiktsupplåsning är mindre säkert än fingeravtryck och lös
 Svep uppåt från vänster eller höger sida längst ned på skärmen."</string>
     <string name="oneplus_fullscreen_gesture_guide_done">"Nu vet du de nya navigeringsgesterna.
 Du kan stänga av dem genom att återaktivera navigeringsfältet i inställningarna."</string>
-    <string name="oneplus_fullscreen_gesture_guide_gotit">Jag fattar</string>
+    <string name="oneplus_fullscreen_gesture_guide_gotit">Jag förstår</string>
     <string name="oneplus_fullscreen_gesture_guide_home">"Prova att använda navigeringsgester.
 Svep uppåt från botten av skärmen för att gå till startsidan."</string>
     <string name="oneplus_fullscreen_gesture_guide_multitask">Svep uppåt från botten av skärmen och pausa för de senaste apparna.</string>
@@ -3750,6 +3752,7 @@ Obs!
     <string name="oneplus_silent_mode_on">Tyst läge är aktiverat</string>
     <string name="oneplus_silent_mode_soc_tri_state_summary">Samtal och meddelanden är ljudlösa, förutom för larm</string>
     <string name="oneplus_silent_mode_summary">Samtal och meddelanden är ljudlösa, förutom för larm</string>
+    <string name="oneplus_silent_notifications_status_bar">Dölj tysta aviseringar i statusfältet</string>
     <string name="oneplus_sim1_ringtone_switch">SIM-kort 1</string>
     <string name="oneplus_sim2_ringtone_switch">SIM-kort 2</string>
     <string name="oneplus_simcard_title">SIM</string>
@@ -3840,7 +3843,7 @@ Obs!
     <string name="oneplus_tools_summary_U30">Spelläge, fickläge, schemalagd påslagning/avstängning</string>
     <string name="oneplus_tools_summary_no_gamingmode">Applås, parallella appar</string>
     <string name="oneplus_tools_title">Verktyg</string>
-    <string name="oneplus_top_level_accounts_summary">OnePlus account, other accounts</string>
+    <string name="oneplus_top_level_accounts_summary">OnePlus-konto, andra konton</string>
     <string name="oneplus_top_level_apps_and_notifs_summary">Standardappar, behörigheter</string>
     <string name="oneplus_top_level_buttons_and_gestures_summary">Växlingsknapp, navigeringsfält och gester</string>
     <string name="oneplus_top_level_cloud_h2_summary">Synkronisera data med molnet, Hitta min telefon</string>
@@ -3930,8 +3933,18 @@ Att ställa in nätverket som dolt ändrar inte routerns inställningar."</strin
     <string name="op_audio_settings">Stämmare</string>
     <string name="op_auto_power_saving">Automatiskt energisparläge</string>
     <string name="op_auto_power_saving_summary">Växla automatiskt till rätt upplösning utan batteriurladdning</string>
+    <string name="op_charging_Station_mute_notifications">Stäng av ljudet på aviseringar</string>
+    <string name="op_charging_footer_text">Du meddelas om laddningsstationer i närheten när du besöker partnerplatser som flygplatser eller OnePlus-event genom popup-meddelanden.</string>
     <string name="op_charging_optimization">Optimerad laddning</string>
     <string name="op_charging_optimization_summary">Optimera laddningsmönstret enligt dina användarvanor</string>
+    <string name="op_charging_station">Laddningsstationer i närheten</string>
+    <string name="op_charging_station_no_station">Inga laddningsstationer i närheten</string>
+    <string name="op_charging_station_summary">Meddela mig när det finns en laddningsstation i närheten</string>
+    <string name="op_charging_stations">Laddningsstationer</string>
+    <string name="op_charging_stations_off_description">För att kunna hitta laddningsstationer krävs platsbehörighet så att BLE-sändare kan identifieras. Bevilja platsbehörighet för att börja använda den här funktionen.</string>
+    <string name="op_charging_stations_off_header">För att kunna hitta laddningsstationer krävs platsbehörighet så att BLE-sändare kan identifieras. Bevilja platsbehörighet för att börja använda den här funktionen.</string>
+    <string name="op_charing_station_mute_notifications_description">Ljudet stängs av på aviseringar under 6 timmar.</string>
+    <string name="op_charing_stations_mute_dynamic_time" formatted="false">Ljudet har stängts av på aviseringar i %1d timmar och %2d minuter</string>
     <string name="op_china_mobile">CMCC</string>
     <string name="op_china_telecom">CTCC</string>
     <string name="op_china_unicom">CUCC</string>
@@ -3947,15 +3960,19 @@ Att ställa in nätverket som dolt ändrar inte routerns inställningar."</strin
     <string name="op_default_apps_summary">Hem, webbläsare</string>
     <string name="op_default_luncher_title">Hemapp</string>
     <string name="op_dnd_summary">Stör inte</string>
+    <string name="op_enable_location_services">Aktivera lokaliseringstjänsterna för att hitta laddningsstationer i närheten</string>
+    <string name="op_enable_text">Aktivera</string>
     <string name="op_face_unlock_set_unlock_password">Ansiktsupplåsning + Lösenord</string>
     <string name="op_face_unlock_set_unlock_pattern">Ansiktsupplåsning + Mönster</string>
     <string name="op_face_unlock_set_unlock_pin">Ansiktsupplåsning + PIN</string>
     <string name="op_face_unlock_skip_face">Fortsätt utan ansiktsupplåsning</string>
     <string name="op_failed_to_get_data">Det gick inte att hämta data</string>
     <string name="op_fetch_data_in_process">Läser in</string>
+    <string name="op_find_charging_stations">Hitta stationer</string>
     <string name="op_fragment">Kort</string>
     <string name="op_gamespace">Game Space</string>
     <string name="op_high_power_app_manager">Hanterare för energikrävande appar</string>
+    <string name="op_keep_location_services">Håll lokaliseringstjänsterna aktiva för att hitta laddningsstationer i närheten</string>
     <string name="op_light_mode_title">Ljus</string>
     <string name="op_linked_launch_summary">Apphantering kan vara länkade till start i bakgrunden</string>
     <string name="op_linked_launch_title">Starta appar automatiskt</string>
@@ -4833,7 +4850,7 @@ Obs! Du kan inte använda fingeravtrycket för att låsa upp den här enheten. K
     <string name="sim_enabler_summary">SIM-kortet är %1$s</string>
     <string name="sim_enabler_summary_new_marshmallow">" är %1$s"</string>
     <string name="sim_enabler_title">SIM-verktyg</string>
-    <string name="sim_enabler_will_disable_sim_title">Obs!</string>
+    <string name="sim_enabler_will_disable_sim_title">Obs</string>
     <string name="sim_enter_cancel">Avbryt</string>
     <string name="sim_enter_new">Ny PIN-kod för SIM-kort</string>
     <string name="sim_enter_ok">OK</string>
@@ -5384,6 +5401,7 @@ En funktion i Google som du kan använda om du vill synkronisera så att du komm
     <string name="uicc_lock_summary">Din enhet är spärrad för endast SIM-kort från Sprint</string>
     <string name="uicc_unlock">UICC-upplåsning</string>
     <string name="uicc_unlock_summary">Enheten är upplåst</string>
+    <string name="under_meters">Under %1d meter</string>
     <string name="uninstall_activity_text">%1$s är del av följande app:</string>
     <string name="uninstall_all_blocked_profile_owner">Den här appen krävs för vissa användare eller profiler och avinstallerades för andra</string>
     <string name="uninstall_all_users_text">Avinstallera för alla användare</string>
@@ -5409,7 +5427,7 @@ En funktion i Google som du kan använda om du vill synkronisera så att du komm
     <string name="uninstallapps_confirm">Bekräfta</string>
     <string name="uninstallapps_confirm_dialog_body">Alla valda applikationer och alla filer som är associerade med applikationspaketet kommer att tas bort.</string>
     <string name="uninstallapps_confirm_dialog_title">Ta bort valda appar?</string>
-    <string name="uninstallapps_selected">valda</string>
+    <string name="uninstallapps_selected">har valts</string>
     <string name="uninstallapps_toast_message">appar har tagits bort</string>
     <string name="uninstalling">Avinstallerar…</string>
     <string name="uninstalling_notification_channel">Kör avinstallationer</string>

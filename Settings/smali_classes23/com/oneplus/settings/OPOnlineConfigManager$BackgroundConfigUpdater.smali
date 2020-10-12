@@ -39,7 +39,7 @@
 
     iget-object v0, p0, Lcom/oneplus/settings/OPOnlineConfigManager$BackgroundConfigUpdater;->this$0:Lcom/oneplus/settings/OPOnlineConfigManager;
 
-    invoke-static {v0, p1}, Lcom/oneplus/settings/OPOnlineConfigManager;->access$300(Lcom/oneplus/settings/OPOnlineConfigManager;Lorg/json/JSONArray;)V
+    invoke-static {v0, p1}, Lcom/oneplus/settings/OPOnlineConfigManager;->access$100(Lcom/oneplus/settings/OPOnlineConfigManager;Lorg/json/JSONArray;)V
 
     return-void
 .end method

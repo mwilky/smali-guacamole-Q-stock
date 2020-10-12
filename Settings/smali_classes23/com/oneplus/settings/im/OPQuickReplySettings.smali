@@ -183,7 +183,7 @@
 .method private initPreference()V
     .locals 5
 
-    const v0, 0x7f1600ad
+    const v0, 0x7f1600ae
 
     invoke-virtual {p0, v0}, Lcom/oneplus/settings/im/OPQuickReplySettings;->addPreferencesFromResource(I)V
 
@@ -263,7 +263,7 @@
 
     const/4 v3, 0x0
 
-    const v4, 0x7f120ee4
+    const v4, 0x7f120ee7
 
     aput v4, v2, v3
 
@@ -279,7 +279,7 @@
 
     new-array v1, v1, [I
 
-    const v2, 0x7f120ee6
+    const v2, 0x7f120ee9
 
     aput v2, v1, v3
 
@@ -292,7 +292,7 @@
 
     new-array v1, v1, [I
 
-    const v2, 0x7f120ee5
+    const v2, 0x7f120ee8
 
     aput v2, v1, v3
 

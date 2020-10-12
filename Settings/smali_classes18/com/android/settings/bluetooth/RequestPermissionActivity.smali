@@ -724,6 +724,14 @@
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 
+    invoke-virtual {p0}, Lcom/android/settings/bluetooth/RequestPermissionActivity;->getWindow()Landroid/view/Window;
+
+    move-result-object v0
+
+    const/high16 v1, 0x80000
+
+    invoke-virtual {v0, v1}, Landroid/view/Window;->addSystemFlags(I)V
+
     const/4 v0, 0x0
 
     invoke-virtual {p0, v0}, Lcom/android/settings/bluetooth/RequestPermissionActivity;->setResult(I)V
@@ -870,6 +878,8 @@
 
     :goto_0
     return-void
+
+    nop
 
     :pswitch_data_0
     .packed-switch 0xa

@@ -2668,7 +2668,7 @@
 
     if-eqz v0, :cond_1
 
-    const v0, 0x7f1600cc
+    const v0, 0x7f1600cd
 
     invoke-virtual {p0, v0}, Lcom/android/settings/network/ApnSettings;->addPreferencesFromResource(I)V
 
@@ -2923,7 +2923,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f1212e4
+    const v2, 0x7f1212f8
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -2966,7 +2966,7 @@
 
     move-result-object v0
 
-    const v2, 0x7f120a73
+    const v2, 0x7f120a74
 
     invoke-virtual {v0, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -2978,7 +2978,7 @@
 
     move-result-object v0
 
-    const v3, 0x7f08019f
+    const v3, 0x7f0801a1
 
     invoke-interface {v0, v3}, Landroid/view/MenuItem;->setIcon(I)Landroid/view/MenuItem;
 
@@ -2993,7 +2993,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f120a79
+    const v3, 0x7f120a7a
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 

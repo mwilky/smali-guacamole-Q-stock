@@ -2313,6 +2313,7 @@ Puedes cambiar esta opción en cualquier momento en Ajustes > Aplicaciones y not
     <string name="location_settings_title">Ubicación</string>
     <string name="location_sources_heading">Fuentes de ubicación</string>
     <string name="location_street_level">Permitir que las aplicaciones usen el GPS del teléfono para determinar tu ubicación exacta</string>
+    <string name="location_text">Ubicación</string>
     <string name="location_title">Mi ubicación</string>
     <string name="lock_after_timeout">Bloquear automáticamente</string>
     <string name="lock_after_timeout_summary">%1$s después de suspender</string>
@@ -2710,6 +2711,7 @@ Cambiar a %1$s no cancelará tu servicio de %2$s."</string>
     <string name="my_device_info_account_preference_title">Cuenta</string>
     <string name="my_device_info_device_name_preference_title">Nombre del dispositivo</string>
     <string name="n_cacrts">%d certificados de CA</string>
+    <string name="nearest_station">Estación más cercana</string>
     <string name="network_4G">4G (recomendado)</string>
     <string name="network_connected">Conectado</string>
     <string name="network_connecting">Conectando…</string>
@@ -3125,7 +3127,7 @@ El modo Ahorro de batería se desactiva automáticamente cuando cargas tu dispos
     <string name="oneplus_do_not_disturb_answer_call_by_speaker_summary">Direccionar las llamadas entrantes hacia el altavoz cuando el modo juego esté activado</string>
     <string name="oneplus_do_not_disturb_answer_call_by_speaker_title">Responder llamadas a través del altavoz</string>
     <string name="oneplus_do_not_disturb_settings">Ajustes</string>
-    <string name="oneplus_donot_silence_or_block">Permitir notificaciones</string>
+    <string name="oneplus_donot_silence_or_block">Permite las notificaciones</string>
     <string name="oneplus_donot_silence_or_block_summary">Permitir todo tipo de notificaciones</string>
     <string name="oneplus_double_tap_power_gesture">Haz doble clic en el botón de encendido para</string>
     <string name="oneplus_double_tap_power_gesture_app">SELECCIONAR FUNCIÓN</string>
@@ -3750,6 +3752,7 @@ Nota:
     <string name="oneplus_silent_mode_on">El modo silencio está activado</string>
     <string name="oneplus_silent_mode_soc_tri_state_summary">Las llamadas y notificaciones se silenciarán, salvo las alarmas</string>
     <string name="oneplus_silent_mode_summary">Las llamadas y notificaciones se silenciarán, excepto las alarmas</string>
+    <string name="oneplus_silent_notifications_status_bar">Oculta las notificaciones silenciosas en la barra de estado</string>
     <string name="oneplus_sim1_ringtone_switch">Tarjeta SIM 1</string>
     <string name="oneplus_sim2_ringtone_switch">Tarjeta SIM 2</string>
     <string name="oneplus_simcard_title">SIM</string>
@@ -3792,7 +3795,7 @@ Nota:
     <string name="oneplus_theme_accent_color_select">SELECCIONAR COLOR DE ACENTO</string>
     <string name="oneplus_theme_apply_summary">Si aplicas este tema, se anularán tus opciones de personalización</string>
     <string name="oneplus_theme_apply_title">¿Quieres aplicar este tema?</string>
-    <string name="oneplus_theme_clock">Estilo de reloj</string>
+    <string name="oneplus_theme_clock">Estilo del reloj</string>
     <string name="oneplus_theme_clock_snake_action">ACTIVAR PANTALLA AMBIENTE</string>
     <string name="oneplus_theme_clock_snake_tip">Esta función estará disponible cuando la pantalla ambiente esté activada</string>
     <string name="oneplus_theme_colorpicker_colorvalue">CÓDIGO DE COLOR</string>
@@ -3840,7 +3843,7 @@ Nota:
     <string name="oneplus_tools_summary_U30">Modo de juego, modo de bolsillo, encendido/apagado programado</string>
     <string name="oneplus_tools_summary_no_gamingmode">Bloqueador de aplicaciones, aplicaciones paralelas</string>
     <string name="oneplus_tools_title">Utilidades</string>
-    <string name="oneplus_top_level_accounts_summary">OnePlus account, other accounts</string>
+    <string name="oneplus_top_level_accounts_summary">Cuenta OnePlus, otras cuentas</string>
     <string name="oneplus_top_level_apps_and_notifs_summary">Aplicaciones predeterminadas, permisos</string>
     <string name="oneplus_top_level_buttons_and_gestures_summary">Alert Slider, barra de navegación y gestos</string>
     <string name="oneplus_top_level_cloud_h2_summary">Sincronizar datos con la nube, Encontrar mi teléfono</string>
@@ -3930,8 +3933,18 @@ Configurar la red como oculta no cambiará la configuración del router."</strin
     <string name="op_audio_settings">Sintonizador de audio</string>
     <string name="op_auto_power_saving">Ahorro de energía automático</string>
     <string name="op_auto_power_saving_summary">Cambiar automáticamente a la resolución adecuada sin agotar la batería</string>
+    <string name="op_charging_Station_mute_notifications">Silenciar notificaciones</string>
+    <string name="op_charging_footer_text">Recibirás una notificación sobre estaciones de carga cercanas cuando visites ubicaciones de asociados como aeropuertos o eventos de Oneplus como Pop-ups.</string>
     <string name="op_charging_optimization">Carga optimizada</string>
     <string name="op_charging_optimization_summary">Optimizar el patrón de carga según tus hábitos de uso</string>
+    <string name="op_charging_station">Estaciones de carga cercanas</string>
+    <string name="op_charging_station_no_station">No hay estaciones de carga cercanas</string>
+    <string name="op_charging_station_summary">Notificarme cuando haya una estación de carga cercana</string>
+    <string name="op_charging_stations">Estaciones de carga</string>
+    <string name="op_charging_stations_off_description">Para encontrar estaciones de carga, se necesita permiso de ubicación para detectar balizas BLE. Proporciona acceso a la ubicación para empezar a usar esta función.</string>
+    <string name="op_charging_stations_off_header">Para encontrar estaciones de carga, se necesita un permiso de ubicación para detectar balizas BLE. Proporciona acceso a la ubicación para empezar a usar esta función.</string>
+    <string name="op_charing_station_mute_notifications_description">La notificación se silenciará durante 6 horas.</string>
+    <string name="op_charing_stations_mute_dynamic_time" formatted="false">Notificaciones silenciadas durante %1d horas y %2d minutos</string>
     <string name="op_china_mobile">CMCC</string>
     <string name="op_china_telecom">CTCC</string>
     <string name="op_china_unicom">CUCC</string>
@@ -3947,15 +3960,19 @@ Configurar la red como oculta no cambiará la configuración del router."</strin
     <string name="op_default_apps_summary">Iniciador, navegador</string>
     <string name="op_default_luncher_title">Iniciador</string>
     <string name="op_dnd_summary">No molestar</string>
+    <string name="op_enable_location_services">Activa los servicios de ubicación para encontrar y hacer un seguimiento de las estaciones de carga cercanas</string>
+    <string name="op_enable_text">Activar</string>
     <string name="op_face_unlock_set_unlock_password">Desbloqueo facial y contraseña</string>
     <string name="op_face_unlock_set_unlock_pattern">Desbloqueo facial y patrón</string>
     <string name="op_face_unlock_set_unlock_pin">Desbloqueo facial y PIN</string>
     <string name="op_face_unlock_skip_face">Continuar sin Desbloqueo facial</string>
     <string name="op_failed_to_get_data">Error al recuperar los datos</string>
     <string name="op_fetch_data_in_process">Cargando</string>
+    <string name="op_find_charging_stations">Encontrar estaciones</string>
     <string name="op_fragment">Corto</string>
     <string name="op_gamespace">Espacio de juego</string>
     <string name="op_high_power_app_manager">Aplicaciones de alto consumo de batería</string>
+    <string name="op_keep_location_services">Mantén activados los servicios de ubicación para encontrar y hacer un seguimiento de las estaciones de carga cercanas</string>
     <string name="op_light_mode_title">Luz</string>
     <string name="op_linked_launch_summary">La gestión de aplicaciones puede ejecutarse en segundo plano</string>
     <string name="op_linked_launch_title">Ejecución automática de aplicaciones</string>
@@ -4745,7 +4762,7 @@ Nota: No puedes utilizar tu huella digital para desbloquear este dispositivo. Si
     <string name="settings_safetylegal_activity_unreachable">No tienes conexión de datos. Para ver esta información, accede a %s desde cualquier ordenador conectado a Internet.</string>
     <string name="settings_safetylegal_title">Información de seguridad</string>
     <string name="settings_shortcut">Acceso a Ajustes</string>
-    <string name="settings_switch_user_storage_insufficient">El almacenamiento está lleno, no se puede cambiar el usuario</string>
+    <string name="settings_switch_user_storage_insufficient">El almacenamiento está lleno, no se puede cambiar de usuario</string>
     <string name="setup_fingerprint_enroll_enrolling_skip_message">Has decidido utilizar tu huella digital para desbloquear el teléfono. Si te saltas este paso ahora, tendrás que configurarlo más tarde (este proceso tarda aproximadamente un minuto).</string>
     <string name="setup_fingerprint_enroll_enrolling_skip_title">¿Saltar la configuración de huella digital?</string>
     <string name="setup_fingerprint_enroll_skip_after_adding_lock_text">Solo tardarás un par de minutos en configurar la huella digital. Si te saltas este paso, puedes añadir tu huella digital en otro momento desde los ajustes.</string>
@@ -5384,6 +5401,7 @@ un servicio de Google que te permite sincronizar datos para que puedas acceder a
     <string name="uicc_lock_summary">El dispositivo está bloqueado para utilizar solo tarjetas SIM de Sprint</string>
     <string name="uicc_unlock">Desbloqueo UICC</string>
     <string name="uicc_unlock_summary">El dispositivo está desbloqueado</string>
+    <string name="under_meters">Menoss de %1d metros</string>
     <string name="uninstall_activity_text">%1$s forma parte de la siguiente aplicación:</string>
     <string name="uninstall_all_blocked_profile_owner">Esta aplicación es necesaria para algunos usuarios o perfiles y la han desinstalado otros</string>
     <string name="uninstall_all_users_text">Desinstalar para todos los usuarios</string>

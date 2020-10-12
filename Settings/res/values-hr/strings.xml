@@ -1524,7 +1524,7 @@ Da biste pokušali riješiti taj problem, možete zaustaviti aplikaciju %1$s i s
 Da biste riješili taj problem, možete isključiti lokaciju za tu aplikaciju."</string>
     <string name="dialog_location_ok">Isključi</string>
     <string name="dialog_location_title">Isključiti lokaciju?</string>
-    <string name="dialog_mhs_error">Pričekajte na završetak provjere..</string>
+    <string name="dialog_mhs_error">Pričekajte na završetak provjere.</string>
     <string name="dialog_open_network_cancel">odustani</string>
     <string name="dialog_open_network_connect">Poveži</string>
     <string name="dialog_open_network_title">Povezujete uređaj na nesigurnu (otvorenu) Wi-Fi mrežu</string>
@@ -2024,7 +2024,7 @@ To možete kasnije promijeniti u izborniku Postavke > Aplikacije i obavijesti."<
     <string name="homepage_condition_footer_content_description">Sažmi</string>
     <string name="homepage_personal_settings">Prijedlozi</string>
     <string name="hotspot_tip_message" formatted="false">"Mobilna pristupna točka dijeli vaše mobilne podatke s drugim uređajima koji se mogu povezati na Wi-Fi. Za povezivanje na vašu mobilnu pristupnu točku: \u0009 
- 1: Uključite Wi-Fi na drugom uređaju.
+ 1: Uključite Wi-Fi na drugim uređajima.
  2: Na popisu dostupnih Wi-Fi mreža odaberite %s. 
  3: Ako se zahtijeva unos lozinke, unesite %s. Da biste štedjeli bateriju dok upotrebljavate mobilnu pristupnu točku, telefon mora biti priključen na napajanje. "</string>
     <string name="hotspot_tip_title">Mobilna pristupna točka</string>
@@ -2313,6 +2313,7 @@ To možete kasnije promijeniti u izborniku Postavke > Aplikacije i obavijesti."<
     <string name="location_settings_title">Lokacija</string>
     <string name="location_sources_heading">Izvori lokacije</string>
     <string name="location_street_level">Omogućite aplikacijama da upotrebljavaju GPS na vašem telefonu za označavanje vaše lokacije</string>
+    <string name="location_text">Lokacija</string>
     <string name="location_title">Moja lokacija</string>
     <string name="lock_after_timeout">Automatsko zaključavanje</string>
     <string name="lock_after_timeout_summary">%1$s nakon mirovanja</string>
@@ -2627,7 +2628,7 @@ Na ovom uređaju postoje i drugi korisnici.
     <string name="mobile_hotspot_airplane_off_error">Da biste uključili pristupnu točku, isključite zrakoplovni način rada</string>
     <string name="mobile_hotspot_authoration_error">"Da biste upotrebljavali mobilnu pristupnu točku, morate se pretplatiti na usluge Mobilne pristupne točke.
 
-Da biste se pretplatili na mobilnu pristupnu točku, posjetite Moj verizon ili nazovite službu za korisnike na (800) 922–0204."</string>
+Da biste se pretplatili na mobilnu pristupnu točku, posjetite Moj Verizon ili nazovite službu za korisnike na (800) 922–0204."</string>
     <string name="mobile_hotspot_data_off_error">Da biste uključili pristupnu točku, uključite mobilne podatke</string>
     <string name="mobile_insert_sim_card">Umetnite SIM karticu i pokrenite ponovo</string>
     <string name="mobile_network_active_esim">Aktivno/preuzeti SIM</string>
@@ -2710,6 +2711,7 @@ Prelaskom na mobilnog operatera %1$s neće se otkazati vaša usluga kod mobilnog
     <string name="my_device_info_account_preference_title">Račun</string>
     <string name="my_device_info_device_name_preference_title">Naziv uređaja</string>
     <string name="n_cacrts">%d CA certifikati</string>
+    <string name="nearest_station">Najbliža postaja za punjenje</string>
     <string name="network_4G">4G (preporučeno)</string>
     <string name="network_connected">Povezano</string>
     <string name="network_connecting">Povezivanje…</string>
@@ -3255,7 +3257,7 @@ Pozor: otključavanje licem manje je sigurno od otiska prsta ili lozinke"</strin
 Prijeđite prstom s lijeve ili desne strane dna zaslona nagore."</string>
     <string name="oneplus_fullscreen_gesture_guide_done">"Sada znate nove navigacijske geste.
 Možete ih isključiti ponovnim omogućavanjem navigacijske trake u postavkama."</string>
-    <string name="oneplus_fullscreen_gesture_guide_gotit">U redu</string>
+    <string name="oneplus_fullscreen_gesture_guide_gotit">Razumijem</string>
     <string name="oneplus_fullscreen_gesture_guide_home">"Pokušajmo koristiti navigacijske geste.
 Za prijelaz na početni zaslon u bilo kojem trenutku, prijeđite prstom od središta donjeg ruba zaslona nagore."</string>
     <string name="oneplus_fullscreen_gesture_guide_multitask">Za nedavne aplikacije, prijeđite prstom od dna zaslona nagore i zadržite ga.</string>
@@ -3750,6 +3752,7 @@ Napomena:
     <string name="oneplus_silent_mode_on">Tihi način je uključen</string>
     <string name="oneplus_silent_mode_soc_tri_state_summary">Pozivi i obavijesti bit će utišani, osim alarma</string>
     <string name="oneplus_silent_mode_summary">Pozivi i obavijesti bit će utišani, osim alarma</string>
+    <string name="oneplus_silent_notifications_status_bar">Sakrij tihe obavijesti u statusnoj traci</string>
     <string name="oneplus_sim1_ringtone_switch">SIM kartica 1</string>
     <string name="oneplus_sim2_ringtone_switch">SIM kartica 2</string>
     <string name="oneplus_simcard_title">SIM</string>
@@ -3840,7 +3843,7 @@ Napomena:
     <string name="oneplus_tools_summary_U30">Način igranja, džepni način, planirano isključivanje/uključivanje</string>
     <string name="oneplus_tools_summary_no_gamingmode">Blokiranje aplikacije, paralelne aplikacije</string>
     <string name="oneplus_tools_title">Uslužni programi</string>
-    <string name="oneplus_top_level_accounts_summary">OnePlus account, other accounts</string>
+    <string name="oneplus_top_level_accounts_summary">OnePlus račun, drugi račun</string>
     <string name="oneplus_top_level_apps_and_notifs_summary">Zadane aplikacije, dozvole</string>
     <string name="oneplus_top_level_buttons_and_gestures_summary">Klizač upozorenja, navigacijska traka i geste</string>
     <string name="oneplus_top_level_cloud_h2_summary">Sinkronizacija podataka na oblak, Pronađi moj telefon</string>
@@ -3930,8 +3933,18 @@ Postavljanje mreže kao skrivene neće promijeniti postavke usmjerivača."</stri
     <string name="op_audio_settings">Audio Tuner</string>
     <string name="op_auto_power_saving">Automatska štednja energije</string>
     <string name="op_auto_power_saving_summary">Automatski mijenja na odgovarajuću rezoluciju kako bi se smanjilo pražnjenje baterije</string>
+    <string name="op_charging_Station_mute_notifications">Utišaj obavijesti</string>
+    <string name="op_charging_footer_text">Bit ćete obaviješteni o postajama za punjenje u blizini kada posjetite partnerske lokacije, npr. zračne luke ili OnePlus događaje kao što je Pop-ups.</string>
     <string name="op_charging_optimization">Optimizirano punjenje</string>
     <string name="op_charging_optimization_summary">Optimizira način punjenja u skladu s vašim navikama upotrebe</string>
+    <string name="op_charging_station">Postaje za punjenje u blizini</string>
+    <string name="op_charging_station_no_station">U blizini nema postaja za punjenje</string>
+    <string name="op_charging_station_summary">Obavještava kada se u blizini nalazi postaja za punjenje</string>
+    <string name="op_charging_stations">Postaje za punjenje</string>
+    <string name="op_charging_stations_off_description">Da biste potražili postaje za punjenje, potrebna je dozvola za lokaciju kojom se otkrivaju BLE web-pratilice. Omogućite pristup lokaciji da biste počeli upotrebljavati ovu značajku.</string>
+    <string name="op_charging_stations_off_header">Da biste potražili postaje za punjenje, potrebna je dozvola za lokaciju za otkrivanje BLE web-pratilica. Omogućite pristup lokaciji da biste počeli upotrebljavati ovu značajku.</string>
+    <string name="op_charing_station_mute_notifications_description">Obavijest će biti utišana 6 sati.</string>
+    <string name="op_charing_stations_mute_dynamic_time" formatted="false">Obavijest je utišana na %1d h %2d min</string>
     <string name="op_china_mobile">CMCC</string>
     <string name="op_china_telecom">CTCC</string>
     <string name="op_china_unicom">CUCC</string>
@@ -3947,15 +3960,19 @@ Postavljanje mreže kao skrivene neće promijeniti postavke usmjerivača."</stri
     <string name="op_default_apps_summary">Početak, preglednik</string>
     <string name="op_default_luncher_title">Početna aplikacija</string>
     <string name="op_dnd_summary">Ne ometaj</string>
+    <string name="op_enable_location_services">Da biste pronašli i pratili postaje za punjenje u blizini, omogućite lokacijske usluge</string>
+    <string name="op_enable_text">Omogući</string>
     <string name="op_face_unlock_set_unlock_password">Otključavanje licem + lozinka</string>
     <string name="op_face_unlock_set_unlock_pattern">Otključavanje licem + uzorak</string>
     <string name="op_face_unlock_set_unlock_pin">Otključavanje licem + PIN</string>
     <string name="op_face_unlock_skip_face">Nastavi bez otključavanja licem</string>
     <string name="op_failed_to_get_data">Nije uspjelo pribavljanje podataka</string>
     <string name="op_fetch_data_in_process">Učitavanje</string>
+    <string name="op_find_charging_stations">Pronađi postaje za punjenje</string>
     <string name="op_fragment">Kratko</string>
     <string name="op_gamespace">Prostor za igru</string>
     <string name="op_high_power_app_manager">Aplikacije s visokom potrošnjom energije</string>
+    <string name="op_keep_location_services">Da biste pronašli i pratili postaje za punjenje u blizini, zadržite lokacijske usluge omogućenim</string>
     <string name="op_light_mode_title">Svijetlo</string>
     <string name="op_linked_launch_summary">Upravljanje aplikacijama može se pokrenuti u pozadini</string>
     <string name="op_linked_launch_title">Automatsko pokretanje aplikacije</string>
@@ -5384,6 +5401,7 @@ Googleov pristup sinkronizaciji podataka za mogućnost pristupa kontaktima, sast
     <string name="uicc_lock_summary">Uređaj je ograničen samo na Sprint SIM kartice</string>
     <string name="uicc_unlock">UICC otključavanje</string>
     <string name="uicc_unlock_summary">Uređaj je neograničen</string>
+    <string name="under_meters">Unutar %1d m</string>
     <string name="uninstall_activity_text">%1$s je dio sljedeće aplikacije:</string>
     <string name="uninstall_all_blocked_profile_owner">Ova je aplikacija potrebna za neke korisnike ili profile te je deinstalirana za druge korisnike</string>
     <string name="uninstall_all_users_text">Deinstaliraj za sve korisnike</string>

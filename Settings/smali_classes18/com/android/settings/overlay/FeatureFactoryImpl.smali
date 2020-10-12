@@ -43,6 +43,8 @@
 
 .field private mSuggestionFeatureProvider:Lcom/android/settings/dashboard/suggestions/SuggestionFeatureProvider;
 
+.field private mSupportFeatureProvider:Lcom/android/settings/overlay/SupportFeatureProvider;
+
 .field private mUserFeatureProvider:Lcom/android/settings/users/UserFeatureProvider;
 
 
@@ -463,7 +465,18 @@
 .method public getSupportFeatureProvider(Landroid/content/Context;)Lcom/android/settings/overlay/SupportFeatureProvider;
     .locals 1
 
-    const/4 v0, 0x0
+    iget-object v0, p0, Lcom/android/settings/overlay/FeatureFactoryImpl;->mSupportFeatureProvider:Lcom/android/settings/overlay/SupportFeatureProvider;
+
+    if-nez v0, :cond_0
+
+    new-instance v0, Lcom/oneplus/settings/support/SupportFeatureProviderImpl;
+
+    invoke-direct {v0}, Lcom/oneplus/settings/support/SupportFeatureProviderImpl;-><init>()V
+
+    iput-object v0, p0, Lcom/android/settings/overlay/FeatureFactoryImpl;->mSupportFeatureProvider:Lcom/android/settings/overlay/SupportFeatureProvider;
+
+    :cond_0
+    iget-object v0, p0, Lcom/android/settings/overlay/FeatureFactoryImpl;->mSupportFeatureProvider:Lcom/android/settings/overlay/SupportFeatureProvider;
 
     return-object v0
 .end method

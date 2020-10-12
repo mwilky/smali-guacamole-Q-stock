@@ -231,7 +231,7 @@
 
     iput-object v0, p0, Lcom/oneplus/settings/notification/OPSMSNotificationVibrateIntensitySettings;->mContext:Landroid/content/Context;
 
-    const v0, 0x7f1600ba
+    const v0, 0x7f1600bb
 
     invoke-virtual {p0, v0}, Lcom/oneplus/settings/notification/OPSMSNotificationVibrateIntensitySettings;->addPreferencesFromResource(I)V
 

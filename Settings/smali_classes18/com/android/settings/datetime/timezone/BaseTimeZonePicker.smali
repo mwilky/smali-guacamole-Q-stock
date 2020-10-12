@@ -121,7 +121,7 @@
 
     invoke-virtual {p2, v0, p1}, Landroid/view/MenuInflater;->inflate(ILandroid/view/Menu;)V
 
-    const v0, 0x7f0a06f7
+    const v0, 0x7f0a0704
 
     invoke-interface {p1, v0}, Landroid/view/Menu;->findItem(I)Landroid/view/MenuItem;
 
@@ -176,7 +176,7 @@
     :cond_0
     iget-object v1, p0, Lcom/android/settings/datetime/timezone/BaseTimeZonePicker;->mSearchView:Lcom/oneplus/lib/widget/SearchView;
 
-    const v3, 0x7f0a05ed
+    const v3, 0x7f0a05fa
 
     invoke-virtual {v1, v3}, Lcom/oneplus/lib/widget/SearchView;->findViewById(I)Landroid/view/View;
 
@@ -256,7 +256,7 @@
 
     iget-object v4, p0, Lcom/android/settings/datetime/timezone/BaseTimeZonePicker;->mSearchView:Lcom/oneplus/lib/widget/SearchView;
 
-    const v5, 0x7f0a05e7
+    const v5, 0x7f0a05f4
 
     invoke-virtual {v4, v5}, Lcom/oneplus/lib/widget/SearchView;->findViewById(I)Landroid/view/View;
 
@@ -285,13 +285,13 @@
 
     const/4 v0, 0x0
 
-    const v1, 0x7f0d0326
+    const v1, 0x7f0d032a
 
     invoke-virtual {p1, v1, p2, v0}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
 
     move-result-object v1
 
-    const v2, 0x7f0a0593
+    const v2, 0x7f0a05a0
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

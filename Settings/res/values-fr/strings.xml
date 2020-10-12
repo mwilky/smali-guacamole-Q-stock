@@ -336,7 +336,7 @@ Il vous suffit de rapprocher les appareil (en les plaçant dos à dos), puis d'a
     <string name="aod_clock_minimalism">Minimalisme 1</string>
     <string name="aod_clock_minimalism_1">Minimalisme 2</string>
     <string name="aod_clock_none">Aucune</string>
-    <string name="aod_clock_select_style_text">"Sélectionnez le style de l'horloge"</string>
+    <string name="aod_clock_select_style_text">"Sélectionner le style de l'horloge"</string>
     <string name="aod_clock_text_clock">Texte horloge</string>
     <string name="aod_horizon_light_effect_1">Bleu</string>
     <string name="aod_horizon_light_effect_2">Rouge</string>
@@ -1638,7 +1638,7 @@ Si le problème persiste, vous devrez peut-être désinstaller l'application pou
     <string name="doze_always_on_summary">"Afficher l'heure, les icônes de notification et d'autres informations. Batterie davantage sollicitée."</string>
     <string name="doze_always_on_title">Toujours activé</string>
     <string name="doze_summary">"Sort l'écran de veille quand vous recevez des notifications"</string>
-    <string name="doze_title">Affichage ambiant</string>
+    <string name="doze_title">Affichage en mode Veille</string>
     <string name="draw_overlay">"Superposition sur d'autres applis"</string>
     <string name="dsds_dialog_cancel">Annuler</string>
     <string name="dsds_dialog_confirm">Redémarrer</string>
@@ -2025,8 +2025,8 @@ Vous pouvez modifier cette option ultérieurement dans Paramètres > Applicatio
     <string name="homepage_personal_settings">Suggestions</string>
     <string name="hotspot_tip_message" formatted="false">"Le point d'accès mobile partage vos données mobiles avec d'autres appareils Wi-Fi. Pour vous connecter au point d'accès mobile :\u0009 
  1 : Activez la fonction Wi-Fi sur l'autre appareil.
- 2 : Sélectionnez %s dans la liste des réseaux Wi-Fi disponibles.
- 3 : Si un mot de passe est requis, saisissez %s. Pour économiser la batterie, maintenez votre téléphone branché lorsque vous utilisez un point d'accès mobile. "</string>
+ 2 : Sélectionnez  %s dans la liste des réseaux Wi-Fi disponibles.
+ 3 : Si un mot de passe est requis, saisissez %s Pour économiser la batterie, gardez votre téléphone branché lorsque vous utilisez un point d'accès mobile. "</string>
     <string name="hotspot_tip_title">"Point d'accès mobile"</string>
     <string name="hwui_force_dark_summary">Force la fonctionnalité Smart Dark à être toujours activée</string>
     <string name="hwui_force_dark_title">"Forcer l'activation de Smart Dark"</string>
@@ -2313,6 +2313,7 @@ Vous pouvez modifier cette option ultérieurement dans Paramètres > Applicatio
     <string name="location_settings_title">Localisation</string>
     <string name="location_sources_heading">Sources de localisation</string>
     <string name="location_street_level">Autoriser les applications à utiliser le GPS sur votre téléphone pour vous localiser</string>
+    <string name="location_text">Emplacement</string>
     <string name="location_title">Ma position</string>
     <string name="lock_after_timeout">Verrouiller automatiquement</string>
     <string name="lock_after_timeout_summary">Après %1$s de veille</string>
@@ -2625,9 +2626,9 @@ D'autres personnes utilisent cet appareil.
     <string name="mobile_data_settings_title">Données mobiles</string>
     <string name="mobile_data_usage_title">Consommation de données des applications</string>
     <string name="mobile_hotspot_airplane_off_error">"Pour activer le point d'accès, désactivez le mode Avion"</string>
-    <string name="mobile_hotspot_authoration_error">"Pour utiliser le point d'accès mobile, vous devez souscrire aux Services du point d'accès mobile.
+    <string name="mobile_hotspot_authoration_error">"Pour utiliser le point d'accès mobile, vous devez souscrire aux services du point d'accès mobile.
 
-Pour souscrire au Point d'accès mobile, visitez le site Mon Verizon ou contactez le service client au (800) 922–0204."</string>
+Pour souscrire au point d'accès mobile, visitez le site Mon Verizon ou contactez le service client au (800) 922–0204."</string>
     <string name="mobile_hotspot_data_off_error">"Pour activer le point d'accès, activez les données mobiles"</string>
     <string name="mobile_insert_sim_card">Insérez la carte SIM, puis redémarrez.</string>
     <string name="mobile_network_active_esim">Actif/Carte SIM téléchargée</string>
@@ -2710,6 +2711,7 @@ Basculer sur l'opérateur %1$s n'annulera pas votre service %2$s."</string>
     <string name="my_device_info_account_preference_title">Compte</string>
     <string name="my_device_info_device_name_preference_title">"Nom de l'appareil"</string>
     <string name="n_cacrts">%d certificats CA</string>
+    <string name="nearest_station">Station la plus proche</string>
     <string name="network_4G">4G (recommandé)</string>
     <string name="network_connected">Connecté</string>
     <string name="network_connecting">Connexion…</string>
@@ -2982,7 +2984,7 @@ L'application pourra aussi activer ou désactiver le mode Ne pas déranger, et m
     <string name="oneplus_app_locker_summary">Sélectionner des applications pour le cryptage</string>
     <string name="oneplus_app_locker_switch">Masquer les contenus des notifications</string>
     <string name="oneplus_app_locker_switch_summary">"Les contenus des notifications seront masqués pour les applications activées à l'aide du verrouilleur d'applications."</string>
-    <string name="oneplus_app_locker_title">"Verrouilleur d'applis"</string>
+    <string name="oneplus_app_locker_title">Chiffrer les applications</string>
     <string name="oneplus_app_network_settings">"Contrôle d'utilisation des données"</string>
     <string name="oneplus_app_notification_allow_led">LED activée</string>
     <string name="oneplus_app_notification_not_allow_led">LED désactivée</string>
@@ -3134,7 +3136,7 @@ L'économiseur de batterie se désactive automatiquement quand votre téléphone
     <string name="oneplus_double_tap_power_none">Aucune</string>
     <string name="oneplus_doze_summary_801">"Afficher l'heure et d'autres informations sur l'écran de veille"</string>
     <string name="oneplus_doze_summary_new">"Afficher l'heure, la date et les notifications à l'écran"</string>
-    <string name="oneplus_doze_title">Affichage ambiant</string>
+    <string name="oneplus_doze_title">Affichage en mode Veille</string>
     <string name="oneplus_doze_title_801">Affichage ambiant</string>
     <string name="oneplus_draw_gesture_start_none">Aucun</string>
     <string name="oneplus_draw_m_start_app">Dessiner M</string>
@@ -3255,7 +3257,7 @@ Attention : la reconnaissance faciale est moins sécurisée qu'une empreinte dig
 Balayez vers la gauche ou la droite du bas de l'écran."</string>
     <string name="oneplus_fullscreen_gesture_guide_done">"Vous savez maintenant utiliser les nouveaux gestes de navigation.
 Vous pouvez les désactiver en réactivant la barre de navigation dans les paramètres."</string>
-    <string name="oneplus_fullscreen_gesture_guide_gotit">Ok</string>
+    <string name="oneplus_fullscreen_gesture_guide_gotit">Compris</string>
     <string name="oneplus_fullscreen_gesture_guide_home">"Essayons d'utiliser les gestes de navigation.
 Pour vous rendre à tout moment sur l'écran d'accueil, balayez vers le haut depuis le centre du bas de l'écran."</string>
     <string name="oneplus_fullscreen_gesture_guide_multitask">"Pour les applications récentes, balayez vers le haut depuis le bas de l'écran et marquez une pause."</string>
@@ -3332,7 +3334,7 @@ Pour vous rendre à tout moment sur l'écran d'accueil, balayez vers le haut dep
     <string name="oneplus_h2_contributors">Contributeurs HydrogenOS</string>
     <string name="oneplus_hand_up_proximity_summary">"Active l'écran si vous ramassez le téléphone"</string>
     <string name="oneplus_hand_up_proximity_title">Lever pour activer</string>
-    <string name="oneplus_hand_up_to_show">Éveillez votre téléphone en le prenant en main</string>
+    <string name="oneplus_hand_up_to_show">Réveillez votre téléphone en le prenant en main</string>
     <string name="oneplus_haptic_feedback_no_app">Aucun jeu pris en charge n’est installé</string>
     <string name="oneplus_haptic_feedback_no_app_tip">Vous pouvez installer PUBG Mobile et Asphalt 9</string>
     <string name="oneplus_haptic_feedback_summary">Fournir un meilleur retour tactile pour les jeux pris en charge</string>
@@ -3393,7 +3395,7 @@ Remarque : votre empreinte digitale risque d'être moins sécurisée qu'un moti
     <string name="oneplus_lock_screen_notifs_show_alerting">Afficher uniquement les notifications importantes</string>
     <string name="oneplus_lock_screen_notifs_show_all">Afficher les notifications normales et importantes</string>
     <string name="oneplus_lock_screen_notifs_title">"Notifications sur l'écran de verrouillage"</string>
-    <string name="oneplus_lockdown_settings_summary">"Afficher l'option bouton d'alimentation qui peut désactiver le Verrouillage intelligente, la déverrouillage par empreintes digitales et les notifications sur l'écran de verrouillage"</string>
+    <string name="oneplus_lockdown_settings_summary">"Afficher l'option bouton d'alimentation qui peut désactiver le Verrouillage intelligent, le déverrouillage par empreintes digitales et les notifications sur l'écran de verrouillage"</string>
     <string name="oneplus_lockpassword_choose_your_password_header_for_fingerprint">"Pour utiliser l'option de déverrouillage par reconnaissance faciale ou l'empreinte digitale, veuillez définir un mot de passe"</string>
     <string name="oneplus_lockpassword_choose_your_pattern_header_for_fingerprint">"Pour utiliser l'option de déverrouillage par reconnaissance faciale ou l'empreinte digitale, veuillez définir un motif"</string>
     <string name="oneplus_lockpassword_choose_your_pin_header_for_fingerprint">"Pour utiliser l'option de déverrouillage par reconnaissance faciale ou l'empreinte digitale, veuillez définir un code PIN"</string>
@@ -3466,7 +3468,7 @@ Remarque : votre empreinte digitale risque d'être moins sécurisée qu'un moti
     <string name="oneplus_none_default_gallery">Pas de galerie par défaut</string>
     <string name="oneplus_none_default_music">Pas de lecteur de musique par défaut</string>
     <string name="oneplus_normal_clear_way">Effacement normal</string>
-    <string name="oneplus_normal_clear_way_summary">Effacer la liste des tâches et le cache sans fermer les processus en arrière-plan.</string>
+    <string name="oneplus_normal_clear_way_summary">Effacer la liste des tâches et vider le cache sans supprimer les processus en arrière-plan.</string>
     <string name="oneplus_not_disturb_on">Ne pas déranger est activé</string>
     <string name="oneplus_not_show">Ne plus afficher</string>
     <string name="oneplus_notch_display_area">Encoche</string>
@@ -3587,7 +3589,7 @@ Remarque : votre empreinte digitale risque d'être moins sécurisée qu'un moti
     <string name="oneplus_ramboost_description">En apprenant comment vous utilisez votre téléphone, RAM Boost peut prédire les applications que vous voulez lancer et les données à charger, en profitant pleinement de la capacité de la RAM pour accélérer les performances de votre utilisation quotidienne.</string>
     <string name="oneplus_ramboost_switch_summary">Augmentez l’utilisation de la RAM en fonction de votre utilisation de l’appareil</string>
     <string name="oneplus_ramboost_switch_title">Activez la simulation de la RAM</string>
-    <string name="oneplus_ramboost_title">Stimulation de la RAM</string>
+    <string name="oneplus_ramboost_title">Simulation de la RAM</string>
     <string name="oneplus_read_mode_app_list">Liste des applications du mode Lecture</string>
     <string name="oneplus_reading_mode">Mode Lecture</string>
     <string name="oneplus_reading_mode_activate_manual">Activer manuellement</string>
@@ -3643,7 +3645,7 @@ Remarque : votre empreinte digitale risque d'être moins sécurisée qu'un moti
     <string name="oneplus_screen_color_mode_soft">Léger</string>
     <string name="oneplus_screen_color_mode_title">"Calibrage de l'écran"</string>
     <string name="oneplus_screen_color_mode_title_summary">Indisponible, car le mode Nuit est activé</string>
-    <string name="oneplus_screen_features_not_available_toast">"Lorsqu'elles sont activées, les fonctionnalités telles que le calibrage de l'écran ne seront pas disponibles"</string>
+    <string name="oneplus_screen_features_not_available_toast">"Lorsque cette fonction est activée, les fonctionnalités telles que le calibrage de l'écran ne seront pas disponibles."</string>
     <string name="oneplus_screen_refresh_rate">Fréquence d’actualisation de l’écran</string>
     <string name="oneplus_screen_refresh_rate_60hz_summary">Fluidité inférieure avec une meilleure autonomie de batterie</string>
     <string name="oneplus_screen_refresh_rate_auto_summary">Ultra-fluide à une fréquence d’actualisation plus élevée</string>
@@ -3750,6 +3752,7 @@ Remarque :
     <string name="oneplus_silent_mode_on">Le mode Silencieux est activé</string>
     <string name="oneplus_silent_mode_soc_tri_state_summary">Désactiver les sons pour les appels et les notifications, sauf pour les alarmes</string>
     <string name="oneplus_silent_mode_summary">Désactiver les sons pour les appels et les notifications, sauf pour les alarmes</string>
+    <string name="oneplus_silent_notifications_status_bar">"Masquer la notification silencieuse dans la barre d'état"</string>
     <string name="oneplus_sim1_ringtone_switch">Carte SIM 1</string>
     <string name="oneplus_sim2_ringtone_switch">Carte SIM 2</string>
     <string name="oneplus_simcard_title">Carte SIM</string>
@@ -3840,7 +3843,7 @@ Remarque :
     <string name="oneplus_tools_summary_U30">Mode Jeu, mode Poche, marche/arrêt programmés</string>
     <string name="oneplus_tools_summary_no_gamingmode">"Verrouilleur d'applis, applications parallèles"</string>
     <string name="oneplus_tools_title">Utilitaires</string>
-    <string name="oneplus_top_level_accounts_summary">OnePlus account, other accounts</string>
+    <string name="oneplus_top_level_accounts_summary">Compte OnePlus, autres comptes</string>
     <string name="oneplus_top_level_apps_and_notifs_summary">Applications par défaut, permissions</string>
     <string name="oneplus_top_level_buttons_and_gestures_summary">"Curseur d'alerte, barre de navigation et gestes"</string>
     <string name="oneplus_top_level_cloud_h2_summary">Synchroniser les données dans le Cloud, Rechercher mon téléphone</string>
@@ -3930,8 +3933,18 @@ La configuration du réseau comme étant masqué ne change pas les paramètres d
     <string name="op_audio_settings">Tuner audio</string>
     <string name="op_auto_power_saving">"Économie d'énergie auto"</string>
     <string name="op_auto_power_saving_summary">Passer automatiquement à la résolution appropriée sans décharger la batterie</string>
+    <string name="op_charging_Station_mute_notifications">Mettre en sourdine les notifications</string>
+    <string name="op_charging_footer_text">Vous serez notifié de la présence de stations de recharge à proximité quand vous fréquenterez des lieux partenaires, comme des aéroports ou des événements Oneplus, ces notifications seront affichées sous forme de fenêtre contextuelles.</string>
     <string name="op_charging_optimization">Chargement optimisé</string>
     <string name="op_charging_optimization_summary">"Optimiser la séquence de chargement selon vos habitudes d'utilisation"</string>
+    <string name="op_charging_station">Stations de recharge à proximité</string>
+    <string name="op_charging_station_no_station">Aucune station de recharge à proximité</string>
+    <string name="op_charging_station_summary">"Prévenir de la présence d'une station de recharge à proximité"</string>
+    <string name="op_charging_stations">Stations de recharge</string>
+    <string name="op_charging_stations_off_description">"Pour trouver les stations de recharge, une permission d'emplacement est nécessaire pour détecter les balises BLE. Veuillez accorder l'accès à l'emplacement pour démarrer l'utilisation de cette fonction."</string>
+    <string name="op_charging_stations_off_header">"Pour trouver les stations de recharge, la permission d'emplacement est nécessaire pour détecter les balises BLE. Veuillez accorder l'accès à l'emplacement pour démarrer l'utilisation de cette fonction."</string>
+    <string name="op_charing_station_mute_notifications_description">Les notifications seront en sourdine pendant 6 heures.</string>
+    <string name="op_charing_stations_mute_dynamic_time" formatted="false">Notification en sourdine pendant %1d heures %2d minutes</string>
     <string name="op_china_mobile">CMCC</string>
     <string name="op_china_telecom">CTCC</string>
     <string name="op_china_unicom">CUCC</string>
@@ -3947,15 +3960,19 @@ La configuration du réseau comme étant masqué ne change pas les paramètres d
     <string name="op_default_apps_summary">Accueil, navigateur</string>
     <string name="op_default_luncher_title">Application Accueil</string>
     <string name="op_dnd_summary">Ne pas déranger</string>
+    <string name="op_enable_location_services">Pour trouver et suivre les stations de recharge à proximité, veuillez activer les services de localisation</string>
+    <string name="op_enable_text">Activer</string>
     <string name="op_face_unlock_set_unlock_password">Déverouillage facial + mot de passe</string>
     <string name="op_face_unlock_set_unlock_pattern">Déverouillage facial + motif</string>
     <string name="op_face_unlock_set_unlock_pin">Déverouillage facial + code PIN</string>
     <string name="op_face_unlock_skip_face">Continuer sans Déverrouillage facial</string>
     <string name="op_failed_to_get_data">Échec de la récupération des données</string>
     <string name="op_fetch_data_in_process">Chargement</string>
+    <string name="op_find_charging_stations">Trouver des stations</string>
     <string name="op_fragment">Court</string>
     <string name="op_gamespace">Game Space</string>
     <string name="op_high_power_app_manager">Applications très énergivores</string>
+    <string name="op_keep_location_services">Pour trouver et suivre les stations de recharge à proximité, veuillez garder les services de localisation activés</string>
     <string name="op_light_mode_title">Clair</string>
     <string name="op_linked_launch_summary">Gérer les applications qui peuvent être lancées en arrière-plan</string>
     <string name="op_linked_launch_title">"Auto-lancement d'applications"</string>
@@ -5262,7 +5279,7 @@ Une solution Google pour synchroniser vos données et vous permettre d'accéder 
     <string name="tether_error_item_default">Partage de connexion</string>
     <string name="tether_error_message">Vous n’êtes pas abonné à %1$s.</string>
     <string name="tether_error_title">%1$s erreur(s)</string>
-    <string name="tether_no_sim_message">"Insérer une carte SIM pour utiliser le point d'accès mobile et d'autres options de partage de connexion"</string>
+    <string name="tether_no_sim_message">"Insérer une carte SIM pour utiliser le point d'accès mobile et d'autres options de partage de connexion USB"</string>
     <string name="tether_no_sim_title">Aucune carte SIM</string>
     <string name="tether_settings_disabled_on_data_saver">"Impossible de partager la connexion ou d'utiliser des points d'accès mobiles lorsque la sauvegarde des données est activée"</string>
     <string name="tether_settings_summary_hotspot_off_tether_on">Partage de connexion</string>
@@ -5384,6 +5401,7 @@ Une solution Google pour synchroniser vos données et vous permettre d'accéder 
     <string name="uicc_lock_summary">Votre appareil est uniquement verrouillé pour les cartes SIM Sprint</string>
     <string name="uicc_unlock">Déverrouillage UICC</string>
     <string name="uicc_unlock_summary">Votre appareil est déverrouillé</string>
+    <string name="under_meters">À moins de %1d mètres</string>
     <string name="uninstall_activity_text">"%1$s fait partie de l'application suivante :"</string>
     <string name="uninstall_all_blocked_profile_owner">"Cette application est requise pour certains utilisateurs ou profils et a été désinstallée par d'autres"</string>
     <string name="uninstall_all_users_text">Désinstaller pour tous les utilisateurs</string>

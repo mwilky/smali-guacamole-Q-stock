@@ -2313,6 +2313,7 @@ Je kunt dit later wijzigen via Instellingen > Apps en meldingen."</string>
     <string name="location_settings_title">Locatie</string>
     <string name="location_sources_heading">Locatiebronnen</string>
     <string name="location_street_level">Apps toestaan gps op je telefoon te gebruiken om je locatie te bepalen</string>
+    <string name="location_text">Locatie</string>
     <string name="location_title">Mijn locatie</string>
     <string name="lock_after_timeout">Automatisch vergrendelen</string>
     <string name="lock_after_timeout_summary">%1$s na slaapstand</string>
@@ -2710,6 +2711,7 @@ Als je overschakelt naar %1$s, wordt de service van %2$s niet geannuleerd."</str
     <string name="my_device_info_account_preference_title">Account</string>
     <string name="my_device_info_device_name_preference_title">Apparaatnaam</string>
     <string name="n_cacrts">%d CA-certificaten</string>
+    <string name="nearest_station">Dichtstbijzijnde station</string>
     <string name="network_4G">4G (aanbevolen)</string>
     <string name="network_connected">Verbonden</string>
     <string name="network_connecting">Verbinding maken…</string>
@@ -2982,7 +2984,7 @@ Hierdoor kan de app ook 'Niet storen' in- of uitschakelen en gerelateerde instel
     <string name="oneplus_app_locker_summary">Apps selecteren voor codering</string>
     <string name="oneplus_app_locker_switch">Inhoud meldingen verbergen</string>
     <string name="oneplus_app_locker_switch_summary">Inhoud van meldingen wordt verborgen voor App vergrendeling-apps</string>
-    <string name="oneplus_app_locker_title">App-vergrendeling</string>
+    <string name="oneplus_app_locker_title">App vergrendeling</string>
     <string name="oneplus_app_network_settings">Controle dataverbruik</string>
     <string name="oneplus_app_notification_allow_led">LED Aan</string>
     <string name="oneplus_app_notification_not_allow_led">LED Uit</string>
@@ -3125,7 +3127,7 @@ Batterij sparen schakelt automatisch uit wanneer het toestel oplaadt."</string>
     <string name="oneplus_do_not_disturb_answer_call_by_speaker_summary">Leid inkomende oproepen om naar luidspreker wanneer Spelmodus ingeschakeld is</string>
     <string name="oneplus_do_not_disturb_answer_call_by_speaker_title">Oproepen beantwoorden via luidspreker</string>
     <string name="oneplus_do_not_disturb_settings">Instellingen</string>
-    <string name="oneplus_donot_silence_or_block">Meldingen toestaan</string>
+    <string name="oneplus_donot_silence_or_block">Notificaties toestaan</string>
     <string name="oneplus_donot_silence_or_block_summary">Alle soorten meldingen toelaten</string>
     <string name="oneplus_double_tap_power_gesture">Dubbelklik op de aan-uitknop voor</string>
     <string name="oneplus_double_tap_power_gesture_app">DE FUNCTIE SELECTEREN</string>
@@ -3750,6 +3752,7 @@ Opmerking:
     <string name="oneplus_silent_mode_on">Stille modus is ingeschakeld</string>
     <string name="oneplus_silent_mode_soc_tri_state_summary">Oproepen en notificaties worden gedempt, behalve alarmen</string>
     <string name="oneplus_silent_mode_summary">Oproepen en notificaties worden gedempt, behalve alarmen</string>
+    <string name="oneplus_silent_notifications_status_bar">Verberg stille melding in de statusbalk</string>
     <string name="oneplus_sim1_ringtone_switch">Simkaart 1</string>
     <string name="oneplus_sim2_ringtone_switch">Simkaart 2</string>
     <string name="oneplus_simcard_title">Sim</string>
@@ -3792,7 +3795,7 @@ Opmerking:
     <string name="oneplus_theme_accent_color_select">ACCENTKLEUR SELECTEREN</string>
     <string name="oneplus_theme_apply_summary">Nadat u dit thema hebt toegepast, worden uw aanpassingsopties overschreven</string>
     <string name="oneplus_theme_apply_title">Wilt u dit thema toepassen?</string>
-    <string name="oneplus_theme_clock">Klok stijl</string>
+    <string name="oneplus_theme_clock">Klokstijl</string>
     <string name="oneplus_theme_clock_snake_action">AMBIENT DISPLAY INSCHAKELEN</string>
     <string name="oneplus_theme_clock_snake_tip">Deze functie is beschikbaar wanneer ambient display is ingeschakeld</string>
     <string name="oneplus_theme_colorpicker_colorvalue">KLEURCODE</string>
@@ -3840,7 +3843,7 @@ Opmerking:
     <string name="oneplus_tools_summary_U30">Game-modus, pocket mode, gepland in-/uitschakelen</string>
     <string name="oneplus_tools_summary_no_gamingmode">App-vergrendeling, parallelle apps</string>
     <string name="oneplus_tools_title">"Hulpprogramma 's"</string>
-    <string name="oneplus_top_level_accounts_summary">OnePlus account, other accounts</string>
+    <string name="oneplus_top_level_accounts_summary">OnePlus-account, andere accounts</string>
     <string name="oneplus_top_level_apps_and_notifs_summary">Standaard-apps, toestemmingen</string>
     <string name="oneplus_top_level_buttons_and_gestures_summary">Alert slider, navigatie en gebaren</string>
     <string name="oneplus_top_level_cloud_h2_summary">Gegevens synchroniseren met de cloud, Zoek mijn telefoon</string>
@@ -3930,8 +3933,18 @@ De instellingen van uw router worden niet gewijzigd als u het netwerk als verbor
     <string name="op_audio_settings">Audio Tuner</string>
     <string name="op_auto_power_saving">Automatische energiebesparing</string>
     <string name="op_auto_power_saving_summary">Schakel automatisch over naar de geschikte resolutie zonder dat dit ten koste van het batterijverbruik gaat</string>
+    <string name="op_charging_Station_mute_notifications">Meldingen dempen</string>
+    <string name="op_charging_footer_text">U wordt op de hoogte gebracht van eventuele laadstations in de buurt wanneer u partnerlocaties zoals luchthavens of OnePlus-evenementen zoals pop-ups bezoekt.</string>
     <string name="op_charging_optimization">Geoptimaliseerd opladen</string>
     <string name="op_charging_optimization_summary">Optimaliseer het oplaadpatroon op basis van uw gebruiksgewoonten</string>
+    <string name="op_charging_station">Laadstations in de buurt</string>
+    <string name="op_charging_station_no_station">Geen laadstations in de buurt</string>
+    <string name="op_charging_station_summary">Informeer wanneer er een laadstation in de buurt is</string>
+    <string name="op_charging_stations">Laadstations</string>
+    <string name="op_charging_stations_off_description">Om de laadstations te zoeken, is locatietoestemming vereist om BLE-bakens te detecteren. Geef toegang tot de locatie om deze functie te gebruiken.</string>
+    <string name="op_charging_stations_off_header">Om de laadstations te zoeken, zijn locatietoestemmingen vereist naar BLE-bakens. Geef toegang tot de locatie om deze functie te gebruiken.</string>
+    <string name="op_charing_station_mute_notifications_description">Melding wordt de komende zes uur gedempt.</string>
+    <string name="op_charing_stations_mute_dynamic_time" formatted="false">Melding gedempt gedurende %1d uur %2d minuten</string>
     <string name="op_china_mobile">CMCC</string>
     <string name="op_china_telecom">CTCC</string>
     <string name="op_china_unicom">CUCC</string>
@@ -3947,15 +3960,19 @@ De instellingen van uw router worden niet gewijzigd als u het netwerk als verbor
     <string name="op_default_apps_summary">Start, browser</string>
     <string name="op_default_luncher_title">Launcher</string>
     <string name="op_dnd_summary">Niet storen</string>
+    <string name="op_enable_location_services">Schakel de locatieservices in om laadstations in de buurt te vinden en te volgen</string>
+    <string name="op_enable_text">Inschakelen</string>
     <string name="op_face_unlock_set_unlock_password">Gezichtsontgrendeling + wachtwoord</string>
     <string name="op_face_unlock_set_unlock_pattern">Gezichtsontgrendeling + patroon</string>
     <string name="op_face_unlock_set_unlock_pin">Gezichtsontgrendeling + pincode</string>
     <string name="op_face_unlock_skip_face">Doorgaan zonder gezichtsontgrendeling</string>
     <string name="op_failed_to_get_data">Gegevens ophalen mislukt</string>
     <string name="op_fetch_data_in_process">Laden</string>
+    <string name="op_find_charging_stations">Stations zoeken</string>
     <string name="op_fragment">Kort</string>
     <string name="op_gamespace">Game Space</string>
     <string name="op_high_power_app_manager">Apps met groot energieverbruik beheren</string>
+    <string name="op_keep_location_services">Houd de locatieservices ingeschakeld om laadstations in de buurt te vinden en te volgen</string>
     <string name="op_light_mode_title">Licht</string>
     <string name="op_linked_launch_summary">Apps beheren die in de achtergrond gestart worden</string>
     <string name="op_linked_launch_title">Automatisch starten apps</string>
@@ -5384,6 +5401,7 @@ Een benadering van Google voor de synchronisatie van gegevens, zodat je altijd e
     <string name="uicc_lock_summary">Uw apparaat wordt alleen vergrendeld door simkaarten van Sprint</string>
     <string name="uicc_unlock">UICC ontgrendelen</string>
     <string name="uicc_unlock_summary">Uw apparaat is ontgrendeld</string>
+    <string name="under_meters">Minder dan %1d meter</string>
     <string name="uninstall_activity_text">%1$s maakt deel uit van de volgende app:</string>
     <string name="uninstall_all_blocked_profile_owner">Deze app is vereist voor bepaalde gebruikers of profielen en werd verwijderd voor andere</string>
     <string name="uninstall_all_users_text">Verwijderen voor alle gebruikers</string>

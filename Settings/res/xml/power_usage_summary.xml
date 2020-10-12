@@ -10,4 +10,5 @@
     <SwitchPreference android:icon="@drawable/op_optimization_summary" android:title="@string/op_charging_optimization" android:key="charging_optimization_summary" android:summary="@string/op_charging_optimization_summary" settings:controller="com.oneplus.settings.controllers.OPChargeOptimizePreferenceController" settings:platform_slice="true" />
     <Preference android:icon="@drawable/op_last_full_charge" android:title="@string/battery_last_full_charge" android:selectable="false" android:key="last_full_charge" settings:allowDividerAbove="true" />
     <Preference android:icon="@drawable/op_screen_usage" android:title="@string/device_screen_usage" android:selectable="false" android:key="screen_usage" />
+    <com.android.settings.widget.MasterSwitchPreference android:icon="@drawable/ic_charging_station_battery" android:title="@string/op_charging_station" android:key="op_charging_station_setting" android:summary="@string/op_charging_station_summary" android:fragment="com.oneplus.settings.chargingstations.OPChargingStationSettings" settings:controller="com.oneplus.settings.chargingstations.OPChargingStationPrefController" />
 </PreferenceScreen>

@@ -107,9 +107,9 @@
 
     aget v0, v0, v1
 
-    const v1, 0x7f0801a2
+    const v1, 0x7f0801a4
 
-    const v2, 0x7f080348
+    const v2, 0x7f08037b
 
     packed-switch v0, :pswitch_data_0
 
@@ -128,7 +128,7 @@
 
     iput-object v0, p0, Lcom/android/settings/fuelgauge/BatteryEntry;->name:Ljava/lang/String;
 
-    const v0, 0x7f080336
+    const v0, 0x7f080369
 
     iput v0, p0, Lcom/android/settings/fuelgauge/BatteryEntry;->iconId:I
 
@@ -139,7 +139,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f1211a5
+    const v1, 0x7f1211b9
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -147,7 +147,7 @@
 
     iput-object v0, p0, Lcom/android/settings/fuelgauge/BatteryEntry;->name:Ljava/lang/String;
 
-    const v0, 0x7f08033d
+    const v0, 0x7f080370
 
     iput v0, p0, Lcom/android/settings/fuelgauge/BatteryEntry;->iconId:I
 
@@ -158,7 +158,7 @@
 
     move-result-object v0
 
-    const v2, 0x7f1211b7
+    const v2, 0x7f1211cb
 
     invoke-virtual {v0, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -175,7 +175,7 @@
 
     move-result-object v0
 
-    const v2, 0x7f1211c7
+    const v2, 0x7f1211db    # 1.9416E38f
 
     invoke-virtual {v0, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -219,7 +219,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f121319
+    const v2, 0x7f12132d
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -341,7 +341,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f1211b2
+    const v1, 0x7f1211c6
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -358,7 +358,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f1211c4
+    const v1, 0x7f1211d8
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -375,7 +375,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f1211a4
+    const v1, 0x7f1211b8
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -394,7 +394,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f1211cf
+    const v1, 0x7f1211e3
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -402,7 +402,7 @@
 
     iput-object v0, p0, Lcom/android/settings/fuelgauge/BatteryEntry;->name:Ljava/lang/String;
 
-    const v0, 0x7f080367
+    const v0, 0x7f08039a
 
     iput v0, p0, Lcom/android/settings/fuelgauge/BatteryEntry;->iconId:I
 
@@ -413,7 +413,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f1211b8
+    const v1, 0x7f1211cc
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -421,7 +421,7 @@
 
     iput-object v0, p0, Lcom/android/settings/fuelgauge/BatteryEntry;->name:Ljava/lang/String;
 
-    const v0, 0x7f080365
+    const v0, 0x7f080398
 
     iput v0, p0, Lcom/android/settings/fuelgauge/BatteryEntry;->iconId:I
 
@@ -432,7 +432,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f1211a6
+    const v1, 0x7f1211ba
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -440,7 +440,7 @@
 
     iput-object v0, p0, Lcom/android/settings/fuelgauge/BatteryEntry;->name:Ljava/lang/String;
 
-    const v0, 0x7f0801c3
+    const v0, 0x7f0801c5
 
     iput v0, p0, Lcom/android/settings/fuelgauge/BatteryEntry;->iconId:I
 
@@ -451,7 +451,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f1211b3
+    const v1, 0x7f1211c7
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -459,7 +459,7 @@
 
     iput-object v0, p0, Lcom/android/settings/fuelgauge/BatteryEntry;->name:Ljava/lang/String;
 
-    const v0, 0x7f08051c
+    const v0, 0x7f080551
 
     iput v0, p0, Lcom/android/settings/fuelgauge/BatteryEntry;->iconId:I
 
@@ -782,7 +782,7 @@
 
     move-result-object v3
 
-    const v5, 0x7f121236
+    const v5, 0x7f12124a
 
     invoke-virtual {v3, v5}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -809,7 +809,7 @@
 
     move-result-object v3
 
-    const v5, 0x7f121237
+    const v5, 0x7f12124b
 
     invoke-virtual {v3, v5}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -836,7 +836,7 @@
 
     move-result-object v3
 
-    const v5, 0x7f121234
+    const v5, 0x7f121248
 
     invoke-virtual {v3, v5}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -846,7 +846,7 @@
 
     :cond_5
     :goto_0
-    const v3, 0x7f080322
+    const v3, 0x7f080355
 
     iput v3, p0, Lcom/android/settings/fuelgauge/BatteryEntry;->iconId:I
 

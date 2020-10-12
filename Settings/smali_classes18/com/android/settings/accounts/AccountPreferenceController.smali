@@ -613,7 +613,7 @@
 
     iget-object v3, p0, Lcom/android/settings/accounts/AccountPreferenceController;->mContext:Landroid/content/Context;
 
-    const v4, 0x7f120a29
+    const v4, 0x7f120a2a
 
     const/4 v5, 0x1
 
@@ -775,7 +775,7 @@
 
     invoke-virtual {v0, v1}, Lcom/android/settingslib/RestrictedPreference;->setTitle(I)V
 
-    const v1, 0x7f08019e
+    const v1, 0x7f0801a0
 
     invoke-virtual {v0, v1}, Lcom/android/settingslib/RestrictedPreference;->setIcon(I)V
 
@@ -803,7 +803,7 @@
 
     invoke-virtual {v0, v1}, Lcom/android/settingslib/RestrictedPreference;->setTitle(I)V
 
-    const v1, 0x7f0804f4
+    const v1, 0x7f080529
 
     invoke-virtual {v0, v1}, Lcom/android/settingslib/RestrictedPreference;->setIcon(I)V
 
@@ -837,11 +837,11 @@
 
     invoke-direct {v0, v1}, Landroidx/preference/Preference;-><init>(Landroid/content/Context;)V
 
-    const v1, 0x7f120a27
+    const v1, 0x7f120a28
 
     invoke-virtual {v0, v1}, Landroidx/preference/Preference;->setTitle(I)V
 
-    const v1, 0x7f080330
+    const v1, 0x7f080363
 
     invoke-virtual {v0, v1}, Landroidx/preference/Preference;->setIcon(I)V
 
@@ -871,11 +871,11 @@
 
     invoke-direct {v0, v1}, Lcom/android/settingslib/RestrictedPreference;-><init>(Landroid/content/Context;)V
 
-    const v1, 0x7f1212c5
+    const v1, 0x7f1212d9
 
     invoke-virtual {v0, v1}, Lcom/android/settingslib/RestrictedPreference;->setTitle(I)V
 
-    const v1, 0x7f0801d1
+    const v1, 0x7f080204
 
     invoke-virtual {v0, v1}, Lcom/android/settingslib/RestrictedPreference;->setIcon(I)V
 
@@ -1140,7 +1140,7 @@
 
     iget-object v0, p0, Lcom/android/settings/accounts/AccountPreferenceController;->mProfileNotAvailablePreference:Landroidx/preference/Preference;
 
-    const v1, 0x7f080174
+    const v1, 0x7f080176
 
     invoke-virtual {v0, v1}, Landroidx/preference/Preference;->setIcon(I)V
 
@@ -1152,7 +1152,7 @@
 
     iget-object v0, p0, Lcom/android/settings/accounts/AccountPreferenceController;->mProfileNotAvailablePreference:Landroidx/preference/Preference;
 
-    const v1, 0x7f120a26
+    const v1, 0x7f120a27
 
     invoke-virtual {v0, v1}, Landroidx/preference/Preference;->setSummary(I)V
 
@@ -1915,7 +1915,7 @@
 
     move-result-object v4
 
-    const v6, 0x7f120a27
+    const v6, 0x7f120a28
 
     invoke-virtual {v4, v6}, Lcom/android/settings/core/SubSettingLauncher;->setTitleRes(I)Lcom/android/settings/core/SubSettingLauncher;
 
@@ -2086,7 +2086,7 @@
 
     invoke-direct {v6, v7}, Lcom/android/settings/search/SearchIndexableRaw;-><init>(Landroid/content/Context;)V
 
-    const v7, 0x7f1212c5
+    const v7, 0x7f1212d9
 
     invoke-virtual {v0, v7}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -2109,7 +2109,7 @@
 
     invoke-direct {v6, v7}, Lcom/android/settings/search/SearchIndexableRaw;-><init>(Landroid/content/Context;)V
 
-    const v7, 0x7f120a27
+    const v7, 0x7f120a28
 
     invoke-virtual {v0, v7}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 

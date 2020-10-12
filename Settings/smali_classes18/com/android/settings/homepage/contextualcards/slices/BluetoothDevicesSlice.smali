@@ -218,7 +218,7 @@
 
     iget-object v1, p0, Lcom/android/settings/homepage/contextualcards/slices/BluetoothDevicesSlice;->mContext:Landroid/content/Context;
 
-    const v2, 0x7f080332
+    const v2, 0x7f080365
 
     invoke-static {v1, v2}, Landroidx/core/graphics/drawable/IconCompat;->createWithResource(Landroid/content/Context;I)Landroidx/core/graphics/drawable/IconCompat;
 
@@ -574,7 +574,7 @@
 
     const/4 v1, 0x1
 
-    const v2, 0x7f130520
+    const v2, 0x7f130522
 
     invoke-virtual {v0, v2, v1}, Landroid/content/res/Resources$Theme;->applyStyle(IZ)V
 
@@ -596,7 +596,7 @@
 
     iget-object v3, p0, Lcom/android/settings/homepage/contextualcards/slices/BluetoothDevicesSlice;->mContext:Landroid/content/Context;
 
-    const v4, 0x7f120b4f
+    const v4, 0x7f120b51
 
     invoke-virtual {v3, v4}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 

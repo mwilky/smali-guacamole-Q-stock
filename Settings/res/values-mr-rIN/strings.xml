@@ -218,10 +218,10 @@
     <string name="header_category_custom">सानुकूलन</string>
     <string name="high_power_app_text_nomal">%1$s आपली बॅटरी कमी करीत आहे</string>
     <string name="high_power_app_text_red">%1$s आपली बॅटरी तीव्रतेने कमी करीत आहे</string>
-    <string name="hotspot_tip_message" formatted="false">"मोबाइल हॉटस्पॉट आपला मोबाइल डेटा अन्य वायफाय सक्षम डिव्हाइससह सामायिक करतो. आपल्या मोबाइल हॉटस्पॉटशी कनेक्ट करण्यासाठी: \u0009 
- 1: अन्य डिव्हाइसवरील वाय-फाय चालू करा.
- 2: उपलब्ध वाय-फाय नेटवर्कच्या सूचीमध्ये %s निवडा.
- 3: संकेतशब्द आवश्यक असल्यास, %s प्रविष्ट करा, बॅटरी जतन करण्यासाठी, मोबाईल हॉटस्पॉट वापरताना आपला फोन प्लग इन ठेवा. "</string>
+    <string name="hotspot_tip_message" formatted="false">"मोबाइल हॉटस्पॉट आपला मोबाइल डेटा अन्य वायफाय सक्षम डिव्हाइससह सामायिक करतो. आपल्या मोबाइल हॉटस्पॉटशी कनेक्ट करण्यासाठी: \u0009
+ 1: डिव्‍हाइसडिव्‍हाइसअन्य डिव्हाइसवरील वाय-फाय चालू करा. 
+ 2: उपलब्ध वाय-फाय नेटवर्कच्या सूचीमध्ये%s निवडा. 
+ 3: संकेतशब्द आवश्यक असल्यास, %s प्रविष्ट करा बॅटरी जतन करण्यासाठी, मोबाईल हॉटस्पॉट वापरताना आपला फोन प्लग इन ठेवा. "</string>
     <string name="hotspot_tip_title">मोबाईल हॉटस्पॉट</string>
     <string name="icon_attributions">आयकॉन पॅक</string>
     <string name="keyguard_wallpaper_settings_title">लॉकस्क्रीन वॉलपेपर</string>
@@ -248,6 +248,7 @@
     <string name="led_settings_title">एलईडी सूचना</string>
     <string name="list_saved_fingerprints">बोटाचे ठसे जतन करा</string>
     <string name="list_saved_fingerprints_footer">पाच बोटांच्या ठस्यांपर्यंत तुम्ही जतन करू शकता. जतन केलेल्या कोणत्याही बोटांच्या ठस्यांचे नाव बदलण्यासाठी किंवा हटविण्यासाठी कोणावरही टॅप करा.</string>
+    <string name="location_text">स्थान</string>
     <string name="lockpassword_choose_your_fingerprint_header">बोटाचा ठसा</string>
     <string name="long_press_power_button">पॉवर बटण दाबा आणि धरून ठेवा</string>
     <string name="mail_application_title">मेल अॅप</string>
@@ -266,6 +267,7 @@
     <string name="mobile_hotspot_data_off_error">हॉटस्पॉट चालू करण्यासाठी, कृपया मोबाइल डेटा चालू करा</string>
     <string name="multi_app_label_badge">समांतर %1$s</string>
     <string name="music_application_title">संगीत अॅप</string>
+    <string name="nearest_station">जवळचे स्टेशन</string>
     <string name="nfc_uicc_sim1">सिम 1</string>
     <string name="nfc_uicc_sim2">सिम 2</string>
     <string name="no_network">नेटवर्क सेवा नाही</string>
@@ -1070,6 +1072,7 @@
     <string name="oneplus_silent_mode_on">सायलंट मोड चालू आहे</string>
     <string name="oneplus_silent_mode_soc_tri_state_summary">अलार्म्स सोडल्यास कॉल्स आणि सूचना शांत केल्या जातील</string>
     <string name="oneplus_silent_mode_summary">अलार्म्स सोडल्यास कॉल्स आणि सूचना शांत केल्या जातील</string>
+    <string name="oneplus_silent_notifications_status_bar">स्टेटस बारमध्ये मूक सूचना लपवा</string>
     <string name="oneplus_sim1_ringtone_switch">सिम कार्ड 1</string>
     <string name="oneplus_sim2_ringtone_switch">सिम कार्ड 2</string>
     <string name="oneplus_simcard_title">SIM</string>
@@ -1160,7 +1163,7 @@
     <string name="oneplus_tools_summary_U30">गेमिंग मोड, पॉकेट मोड, नियोजित चालू/बंद</string>
     <string name="oneplus_tools_summary_no_gamingmode">अॅप लॉकर, समांतर अॅप्‍स</string>
     <string name="oneplus_tools_title">उपयुक्त गोष्टी</string>
-    <string name="oneplus_top_level_accounts_summary">OnePlus account, other accounts</string>
+    <string name="oneplus_top_level_accounts_summary">OnePlus खाते, इतर खाती</string>
     <string name="oneplus_top_level_apps_and_notifs_summary">डिफॉल्‍ट अॅप्‍स, परवानग्‍या</string>
     <string name="oneplus_top_level_buttons_and_gestures_summary">अलर्ट स्‍लायडर, नेव्हिगेशन बार &amp; हावभाव</string>
     <string name="oneplus_top_level_cloud_h2_summary">क्‍लाउडसह डेटा सिंक करा, माझा फोन शोधा</string>
@@ -1249,8 +1252,18 @@
     <string name="op_audio_settings">ऑडिओ ट्यूनर</string>
     <string name="op_auto_power_saving">स्वयं पॉवर बचत</string>
     <string name="op_auto_power_saving_summary">बॅटरी ड्रेनशिवाय योग्य रिझोल्यूशनवर स्वयंचलितपणे स्विच करा</string>
+    <string name="op_charging_Station_mute_notifications">सूचना म्‍यूट करा</string>
+    <string name="op_charging_footer_text">तुम्हाला जवळपासच्या कोणत्याही चार्जिंग स्टेशनविषयी सूचित केले जाईल जेव्हा तुम्ही विमानतळ किंवा Pop-ups सारख्या Oneplus इव्हेंटला भेट द्याल.</string>
     <string name="op_charging_optimization">चार्जिंग ऑप्टीमाइझ करा</string>
     <string name="op_charging_optimization_summary">आपल्या वापर करण्याच्या सवयींंनुसार चार्जिंग पॅटर्न ऑप्टिमाइझ करा</string>
+    <string name="op_charging_station">जवळपासचे चार्जिंग स्टेशन</string>
+    <string name="op_charging_station_no_station">जवळपास कोणतेही चार्जिंग स्टेशन नाहीत</string>
+    <string name="op_charging_station_summary">जवळपास चार्जिंग स्टेशन असल्यास सूचित करा</string>
+    <string name="op_charging_stations">चार्जिंग स्टेशन</string>
+    <string name="op_charging_stations_off_description">चार्जिंग स्टेशन शोधण्यासाठी, स्थान परवानगी बीएलई बीकन शोधण्यासाठी आवश्यक आहे. कृपया हे वैशिष्ट्य वापरण्यास प्रारंभ करण्यासाठी स्थानाला प्रवेश प्रदान करा.</string>
+    <string name="op_charging_stations_off_header">चार्जिंग स्टेशन शोधण्यासाठी, स्थान परवानगी बीएलई बीकन शोधण्यासाठी आवश्यक आहे. कृपया हे वैशिष्ट्य वापरण्यास प्रारंभ करण्यासाठी स्थानाला अ‍ॅक्सेस द्या.</string>
+    <string name="op_charing_station_mute_notifications_description">पुढील 6 तास सूचना म्युट केल्या जातील.</string>
+    <string name="op_charing_stations_mute_dynamic_time" formatted="false">%1d तास %2d मिनिटांसाठी सूचना मूक केल्या</string>
     <string name="op_china_mobile">CMCC</string>
     <string name="op_china_telecom">CTCC</string>
     <string name="op_china_unicom">CUCC</string>
@@ -1266,15 +1279,19 @@
     <string name="op_default_apps_summary">होम, ब्राउझर</string>
     <string name="op_default_luncher_title">होम अॅप</string>
     <string name="op_dnd_summary">व्यत्यय आणू नका</string>
+    <string name="op_enable_location_services">जवळपास चार्जिंग स्टेशन शोधण्यासाठी आणि त्याचा मागोवा घेण्यासाठी कृपया स्थान सेवा सक्षम करा</string>
+    <string name="op_enable_text">सक्षम करा</string>
     <string name="op_face_unlock_set_unlock_password">फेस अनलॉक + पासवर्ड</string>
     <string name="op_face_unlock_set_unlock_pattern">फेस अनलॉक + पॅटर्न</string>
     <string name="op_face_unlock_set_unlock_pin">फेस अनलॉक + PIN</string>
     <string name="op_face_unlock_skip_face">फेस अनलॉकशिवाय सुरू ठेवा</string>
     <string name="op_failed_to_get_data">डेटा पुनर्प्राप्त करण्यात अपयशी</string>
     <string name="op_fetch_data_in_process">लोड करीत आहे</string>
+    <string name="op_find_charging_stations">स्टेशन शोधा</string>
     <string name="op_fragment">संक्षिप्‍त</string>
     <string name="op_gamespace">गेम स्‍पेस</string>
     <string name="op_high_power_app_manager">वीजेसाठी भुकेलेल्या अॅप्सची व्यवस्था करा</string>
+    <string name="op_keep_location_services">जवळपास चार्जिंग स्टेशन शोधण्यासाठी आणि त्याचा मागोवा घेण्यासाठी कृपया स्थान सेवा सक्षम करा</string>
     <string name="op_light_mode_title">हलका</string>
     <string name="op_linked_launch_summary">अॅप्स व्यवस्थापित करून पार्श्वभूमीवर सुरू करून जोडता येऊ शकतात</string>
     <string name="op_linked_launch_title">अॅप्स आपोआप सुरू</string>
@@ -1490,6 +1507,7 @@
     <string name="uicc_lock_summary">आपले साधन केवळ स्प्रिंट SIM द्वारे लॉक केले आहे</string>
     <string name="uicc_unlock">UICC अनलॉक</string>
     <string name="uicc_unlock_summary">आपले साधन अनलॉक केले आहे</string>
+    <string name="under_meters">%1d मीटर अंतर्गत</string>
     <string name="uninstall_activity_text">%1$s हा खालील अॅपचा भाग आहे:</string>
     <string name="uninstall_all_blocked_profile_owner">हे अॅप काही वापरकर्त्यांसाठी किंवा प्रोफाइल्ससाठीआवश्यक आहे आणि इतरांसाठी त्याची स्थापना रद्द केली आहे</string>
     <string name="uninstall_application_text">आपल्याला या अॅपची स्थापना रद्द करायची आहे का?</string>
@@ -1512,7 +1530,7 @@
     <string name="uninstallapps_confirm">पुष्टी</string>
     <string name="uninstallapps_confirm_dialog_body">सर्व निवडलेले अॅप्लिकेशन आणि अनुप्रयोग पॅकेजशी संबंधित असलेल्या सर्व फाइल काढून टाकल्या जातील.</string>
     <string name="uninstallapps_confirm_dialog_title">निवडलेले अॅप्स काढून टाका?</string>
-    <string name="uninstallapps_selected">निवडा</string>
+    <string name="uninstallapps_selected">निवडलेले</string>
     <string name="uninstallapps_toast_message">अॅप्स काढून टाकले आहेत</string>
     <string name="uninstalling">स्थापना रद्द करीत आहे…</string>
     <string name="uninstalling_notification_channel">विस्थापित करणे चालू आहे</string>

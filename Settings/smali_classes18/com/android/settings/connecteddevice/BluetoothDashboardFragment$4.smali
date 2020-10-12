@@ -46,7 +46,7 @@
 
     move-result v2
 
-    if-eqz v2, :cond_4
+    if-eqz v2, :cond_3
 
     :try_start_0
     iget-object v2, p0, Lcom/android/settings/connecteddevice/BluetoothDashboardFragment$4;->this$0:Lcom/android/settings/connecteddevice/BluetoothDashboardFragment;
@@ -55,7 +55,7 @@
 
     move-result-object v2
 
-    if-eqz v2, :cond_3
+    if-eqz v2, :cond_2
 
     const-string v2, "android.bluetooth.device.extra.DEVICE"
 
@@ -79,7 +79,7 @@
 
     move-result v4
 
-    if-eqz v4, :cond_3
+    if-eqz v4, :cond_2
 
     const-string v4, "android.bluetooth.headset.extra.VENDOR_SPECIFIC_HEADSET_EVENT_CMD"
 
@@ -99,72 +99,46 @@
 
     check-cast v5, [Ljava/lang/Object;
 
-    if-eqz v4, :cond_3
+    if-eqz v4, :cond_2
 
-    if-eqz v5, :cond_3
+    if-eqz v5, :cond_2
 
     array-length v6, v5
 
     const/4 v7, 0x7
 
-    if-ne v6, v7, :cond_3
+    if-ne v6, v7, :cond_2
 
-    const/4 v6, 0x2
+    iget-object v6, p0, Lcom/android/settings/connecteddevice/BluetoothDashboardFragment$4;->this$0:Lcom/android/settings/connecteddevice/BluetoothDashboardFragment;
 
-    aget-object v6, v5, v6
-
-    check-cast v6, Ljava/lang/Integer;
-
-    invoke-virtual {v6}, Ljava/lang/Integer;->intValue()I
-
-    move-result v6
-
-    add-int/lit8 v6, v6, 0x1
-
-    mul-int/lit8 v6, v6, 0xa
-
-    const/4 v7, 0x4
+    const/4 v7, 0x2
 
     aget-object v7, v5, v7
 
-    check-cast v7, Ljava/lang/Integer;
+    invoke-static {v6, v7}, Lcom/android/settings/connecteddevice/BluetoothDashboardFragment;->access$500(Lcom/android/settings/connecteddevice/BluetoothDashboardFragment;Ljava/lang/Object;)I
 
-    invoke-virtual {v7}, Ljava/lang/Integer;->intValue()I
+    move-result v6
+
+    iget-object v7, p0, Lcom/android/settings/connecteddevice/BluetoothDashboardFragment$4;->this$0:Lcom/android/settings/connecteddevice/BluetoothDashboardFragment;
+
+    const/4 v8, 0x4
+
+    aget-object v8, v5, v8
+
+    invoke-static {v7, v8}, Lcom/android/settings/connecteddevice/BluetoothDashboardFragment;->access$500(Lcom/android/settings/connecteddevice/BluetoothDashboardFragment;Ljava/lang/Object;)I
 
     move-result v7
 
-    add-int/lit8 v7, v7, 0x1
-
-    mul-int/lit8 v7, v7, 0xa
-
-    const/4 v8, 0x0
+    iget-object v8, p0, Lcom/android/settings/connecteddevice/BluetoothDashboardFragment$4;->this$0:Lcom/android/settings/connecteddevice/BluetoothDashboardFragment;
 
     const/4 v9, 0x6
 
-    aget-object v10, v5, v9
-
-    instance-of v10, v10, Ljava/lang/String;
-
-    if-eqz v10, :cond_0
-
-    const/4 v8, 0x1
-
-    goto :goto_0
-
-    :cond_0
     aget-object v9, v5, v9
 
-    check-cast v9, Ljava/lang/Integer;
+    invoke-static {v8, v9}, Lcom/android/settings/connecteddevice/BluetoothDashboardFragment;->access$500(Lcom/android/settings/connecteddevice/BluetoothDashboardFragment;Ljava/lang/Object;)I
 
-    invoke-virtual {v9}, Ljava/lang/Integer;->intValue()I
+    move-result v8
 
-    move-result v9
-
-    add-int/lit8 v9, v9, 0x1
-
-    mul-int/lit8 v8, v9, 0xa
-
-    :goto_0
     new-instance v9, Ljava/lang/StringBuilder;
 
     invoke-direct {v9}, Ljava/lang/StringBuilder;-><init>()V
@@ -201,7 +175,7 @@
 
     iget-object v9, p0, Lcom/android/settings/connecteddevice/BluetoothDashboardFragment$4;->this$0:Lcom/android/settings/connecteddevice/BluetoothDashboardFragment;
 
-    invoke-static {v9, v6, v7, v8}, Lcom/android/settings/connecteddevice/BluetoothDashboardFragment;->access$500(Lcom/android/settings/connecteddevice/BluetoothDashboardFragment;III)Ljava/lang/String;
+    invoke-static {v9, v6, v7, v8}, Lcom/android/settings/connecteddevice/BluetoothDashboardFragment;->access$600(Lcom/android/settings/connecteddevice/BluetoothDashboardFragment;III)Ljava/lang/String;
 
     move-result-object v9
 
@@ -217,33 +191,33 @@
 
     check-cast v10, Lcom/android/settings/bluetooth/BluetoothDevicePreference;
 
-    if-nez v10, :cond_1
+    if-nez v10, :cond_0
 
     iget-object v11, p0, Lcom/android/settings/connecteddevice/BluetoothDashboardFragment$4;->this$0:Lcom/android/settings/connecteddevice/BluetoothDashboardFragment;
 
     const-string v12, "available_device_list"
 
-    invoke-static {v11, v3, v12}, Lcom/android/settings/connecteddevice/BluetoothDashboardFragment;->access$600(Lcom/android/settings/connecteddevice/BluetoothDashboardFragment;Ljava/lang/String;Ljava/lang/String;)Lcom/android/settings/bluetooth/BluetoothDevicePreference;
+    invoke-static {v11, v3, v12}, Lcom/android/settings/connecteddevice/BluetoothDashboardFragment;->access$700(Lcom/android/settings/connecteddevice/BluetoothDashboardFragment;Ljava/lang/String;Ljava/lang/String;)Lcom/android/settings/bluetooth/BluetoothDevicePreference;
+
+    move-result-object v11
+
+    move-object v10, v11
+
+    :cond_0
+    if-nez v10, :cond_1
+
+    iget-object v11, p0, Lcom/android/settings/connecteddevice/BluetoothDashboardFragment$4;->this$0:Lcom/android/settings/connecteddevice/BluetoothDashboardFragment;
+
+    const-string v12, "connected_device_list"
+
+    invoke-static {v11, v3, v12}, Lcom/android/settings/connecteddevice/BluetoothDashboardFragment;->access$700(Lcom/android/settings/connecteddevice/BluetoothDashboardFragment;Ljava/lang/String;Ljava/lang/String;)Lcom/android/settings/bluetooth/BluetoothDevicePreference;
 
     move-result-object v11
 
     move-object v10, v11
 
     :cond_1
-    if-nez v10, :cond_2
-
-    iget-object v11, p0, Lcom/android/settings/connecteddevice/BluetoothDashboardFragment$4;->this$0:Lcom/android/settings/connecteddevice/BluetoothDashboardFragment;
-
-    const-string v12, "connected_device_list"
-
-    invoke-static {v11, v3, v12}, Lcom/android/settings/connecteddevice/BluetoothDashboardFragment;->access$600(Lcom/android/settings/connecteddevice/BluetoothDashboardFragment;Ljava/lang/String;Ljava/lang/String;)Lcom/android/settings/bluetooth/BluetoothDevicePreference;
-
-    move-result-object v11
-
-    move-object v10, v11
-
-    :cond_2
-    if-eqz v10, :cond_3
+    if-eqz v10, :cond_2
 
     invoke-virtual {v10, v9}, Lcom/android/settings/bluetooth/BluetoothDevicePreference;->setSummary(Ljava/lang/CharSequence;)V
 
@@ -251,8 +225,8 @@
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    :cond_3
-    goto :goto_1
+    :cond_2
+    goto :goto_0
 
     :catch_0
     move-exception v2
@@ -273,7 +247,7 @@
 
     invoke-static {v0, v3}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    :cond_4
-    :goto_1
+    :cond_3
+    :goto_0
     return-void
 .end method

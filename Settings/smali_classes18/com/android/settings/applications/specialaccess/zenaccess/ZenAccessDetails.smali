@@ -98,7 +98,7 @@
 
     invoke-super {p0, p1}, Lcom/android/settings/applications/AppInfoWithHeader;->onCreate(Landroid/os/Bundle;)V
 
-    const v0, 0x7f160119
+    const v0, 0x7f16011a
 
     invoke-virtual {p0, v0}, Lcom/android/settings/applications/specialaccess/zenaccess/ZenAccessDetails;->addPreferencesFromResource(I)V
 
@@ -212,7 +212,7 @@
 
     invoke-virtual {p2, v2}, Landroidx/preference/SwitchPreference;->setEnabled(Z)V
 
-    const v2, 0x7f121a09
+    const v2, 0x7f121a1e
 
     invoke-virtual {p0, v2}, Lcom/android/settings/applications/specialaccess/zenaccess/ZenAccessDetails;->getString(I)Ljava/lang/String;
 

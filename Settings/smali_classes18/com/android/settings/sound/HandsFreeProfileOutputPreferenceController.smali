@@ -125,7 +125,7 @@
     :cond_0
     iget-object v1, p0, Lcom/android/settings/sound/HandsFreeProfileOutputPreferenceController;->mContext:Landroid/content/Context;
 
-    const v3, 0x7f120a42
+    const v3, 0x7f120a43
 
     invoke-virtual {v1, v3}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
@@ -297,7 +297,7 @@
 
     iget-object v0, p0, Lcom/android/settings/sound/HandsFreeProfileOutputPreferenceController;->mContext:Landroid/content/Context;
 
-    const v1, 0x7f120a42
+    const v1, 0x7f120a43
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
@@ -373,7 +373,7 @@
 
     move-result v0
 
-    const v1, 0x7f120a42
+    const v1, 0x7f120a43
 
     const/4 v2, 0x0
 

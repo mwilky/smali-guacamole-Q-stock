@@ -52,7 +52,7 @@
     <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/>
     <uses-permission android:name="com.android.launcher.permission.WRITE_SETTINGS"/>
     <uses-permission android:name="android.permission.MOVE_PACKAGE"/>
-    <uses-permission android:name="android.permission.USE_CREDENTIALS"/>
+    <uses-permission android:maxSdkVersion="22" android:name="android.permission.USE_CREDENTIALS"/>
     <uses-permission android:name="android.permission.BACKUP"/>
     <uses-permission android:name="android.permission.READ_SYNC_STATS"/>
     <uses-permission android:name="android.permission.READ_SYNC_SETTINGS"/>
@@ -109,6 +109,8 @@
     <uses-permission android:name="com.oneplus.account.READ_ACCOUNT_INFO"/>
     <permission android:name="com.android.settings.RECEIVE_PERMISSION"/>
     <uses-permission android:name="com.android.settings.SEND_PERMISSION"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:maxSdkVersion="22" android:name="android.permission.MANAGE_ACCOUNTS"/>
     <application android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:backupAgent="com.android.settings.backup.SettingsBackupHelper" android:defaultToDeviceProtectedStorage="true" android:directBootAware="true" android:extractNativeLibs="false" android:hardwareAccelerated="true" android:icon="@drawable/ic_launcher_settings" android:label="@string/settings_label" android:name="com.oneplus.settings.SettingsBaseApplication" android:requiredForAllUsers="true" android:screenOrientation="portrait" android:supportsRtl="true" android:theme="@style/Theme.Settings" android:usesCleartextTraffic="true" android:usesNonSdkApi="true">
         <uses-library android:name="ims-ext-common"/>
         <uses-library android:name="org.apache.http.legacy"/>
@@ -629,6 +631,7 @@
         </activity>
         <activity android:icon="@drawable/op_status_settings" android:label="@string/device_status" android:name="com.android.settings.Settings$MyDeviceInfoActivity">
             <intent-filter android:priority="1">
+                <action android:name="android.settings.DEVICE_INFO_SETTINGS"/>
                 <action android:name="android.settings.DEVICE_NAME"/>
                 <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
@@ -1331,6 +1334,13 @@
             </intent-filter>
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS" android:value="com.android.settings.fuelgauge.batterysaver.BatterySaverSettings"/>
             <meta-data android:name="com.android.settings.PRIMARY_PROFILE_CONTROLLED" android:value="true"/>
+        </activity>
+        <activity android:label="@string/op_charging_station" android:name="com.android.settings.Settings$OPChargingStationSettings" android:parentActivityName="com.android.settings.Settings" android:screenOrientation="portrait">
+            <intent-filter android:priority="1">
+                <action android:name="com.oneplus.intent.ACTION_OPCHARINGSTATION_SETTINGS"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS" android:value="com.oneplus.settings.chargingstations.OPChargingStationSettings"/>
         </activity>
         <activity android:exported="true" android:label="@string/power_usage_summary_title" android:name="com.android.settings.fuelgauge.BatterySaverModeVoiceActivity" android:theme="@android:style/Theme.DeviceDefault.Light.Voice">
             <intent-filter>
@@ -2486,7 +2496,6 @@
         </activity>
         <activity android:icon="@drawable/op_ic_homepage_about_device" android:label="@string/about_settings" android:name="com.android.settings.Settings$OPAboutPhoneActivity" android:parentActivityName="com.android.settings.Settings" android:screenOrientation="portrait" android:taskAffinity="com.android.settings">
             <intent-filter android:priority="1">
-                <action android:name="android.settings.DEVICE_INFO_SETTINGS"/>
                 <action android:name="android.settings.DEVICE_NAME"/>
                 <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
@@ -2557,6 +2566,17 @@
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS" android:value="com.oneplus.settings.better.ReadingModeEffectSelect"/>
         </activity>
         <service android:exported="false" android:name="com.oneplus.settings.OPThemeService"/>
+        <activity android:name="com.oneplus.accountsdk.auth.OPAuthorizeActivity" android:theme="@style/OnePlusTranslucentStyle"/>
+        <receiver android:name="com.oneplus.accountsdk.auth.OPAuthReceiver">
+            <intent-filter>
+                <action android:name="com.onplus.account.login.broadcast"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.oneplus.accountsdk.auth.OPAuthOperateReceiver">
+            <intent-filter>
+                <action android:name="com.oneplus.account.bind.info"/>
+            </intent-filter>
+        </receiver>
         <provider android:authorities="androidx.lifecycle.process.lifecycle-process" android:exported="false" android:multiprocess="true" android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"/>
         <receiver android:name="androidx.remotecallback.ProviderRelayReceiver"/>
         <activity android:excludeFromRecents="true" android:name="androidx.slice.compat.SlicePermissionActivity"/>

@@ -97,7 +97,7 @@
 
     iget-object v1, p0, Lcom/android/settings/homepage/contextualcards/conditional/NightDisplayConditionController;->mAppContext:Landroid/content/Context;
 
-    const v2, 0x7f120c8c
+    const v2, 0x7f120c8e
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
@@ -173,7 +173,7 @@
 
     iget-object v1, p0, Lcom/android/settings/homepage/contextualcards/conditional/NightDisplayConditionController;->mAppContext:Landroid/content/Context;
 
-    const v2, 0x7f080355
+    const v2, 0x7f080388
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -322,7 +322,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f120b4a
+    const v1, 0x7f120b4c
 
     invoke-virtual {v0, v1}, Lcom/android/settings/core/SubSettingLauncher;->setTitleRes(I)Lcom/android/settings/core/SubSettingLauncher;
 

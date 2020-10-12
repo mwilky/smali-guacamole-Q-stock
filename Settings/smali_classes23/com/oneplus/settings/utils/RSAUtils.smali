@@ -1218,8 +1218,20 @@
 
     move-result-object v2
 
+    invoke-static {}, Lcom/oneplus/settings/utils/OPUtils;->isH2()Z
+
+    move-result v3
+
+    if-eqz v3, :cond_1
+
+    const-string v3, "rsa_private_key_cn.pem"
+
+    goto :goto_0
+
+    :cond_1
     const-string v3, "rsa_private_key.pem"
 
+    :goto_0
     invoke-virtual {v2, v3}, Landroid/content/res/AssetManager;->open(Ljava/lang/String;)Ljava/io/InputStream;
 
     move-result-object v2

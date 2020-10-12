@@ -55,7 +55,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f120c33
+    const v1, 0x7f120c35
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -181,7 +181,7 @@
 
     move-result v1
 
-    const v4, 0x7f080444
+    const v4, 0x7f080477
 
     if-eqz v1, :cond_4
 
@@ -208,7 +208,7 @@
     :cond_4
     sget-object v1, Landroid/os/Build;->MODEL:Ljava/lang/String;
 
-    const v5, 0x7f120e29
+    const v5, 0x7f120e2c
 
     invoke-virtual {p0, v5}, Lcom/oneplus/settings/OPAuthenticationInformationSettings;->getString(I)Ljava/lang/String;
 
@@ -222,7 +222,7 @@
 
     sget-object v1, Landroid/os/Build;->MODEL:Ljava/lang/String;
 
-    const v5, 0x7f120e2a
+    const v5, 0x7f120e2d
 
     invoke-virtual {p0, v5}, Lcom/oneplus/settings/OPAuthenticationInformationSettings;->getString(I)Ljava/lang/String;
 
@@ -239,7 +239,7 @@
     :cond_5
     sget-object v1, Landroid/os/Build;->MODEL:Ljava/lang/String;
 
-    const v5, 0x7f120e8e
+    const v5, 0x7f120e91
 
     invoke-virtual {p0, v5}, Lcom/oneplus/settings/OPAuthenticationInformationSettings;->getString(I)Ljava/lang/String;
 
@@ -274,7 +274,7 @@
     :cond_6
     sget-object v1, Landroid/os/Build;->MODEL:Ljava/lang/String;
 
-    const v5, 0x7f120e95
+    const v5, 0x7f120e98
 
     invoke-virtual {p0, v5}, Lcom/oneplus/settings/OPAuthenticationInformationSettings;->getString(I)Ljava/lang/String;
 
@@ -309,7 +309,7 @@
     :cond_7
     sget-object v1, Landroid/os/Build;->MODEL:Ljava/lang/String;
 
-    const v5, 0x7f120e22
+    const v5, 0x7f120e25
 
     invoke-virtual {p0, v5}, Lcom/oneplus/settings/OPAuthenticationInformationSettings;->getString(I)Ljava/lang/String;
 
@@ -325,7 +325,7 @@
 
     new-array v3, v3, [Ljava/lang/Object;
 
-    const v5, 0x7f120e23
+    const v5, 0x7f120e26
 
     invoke-virtual {p0, v5}, Lcom/oneplus/settings/OPAuthenticationInformationSettings;->getString(I)Ljava/lang/String;
 
@@ -348,7 +348,7 @@
     :cond_8
     sget-object v1, Landroid/os/Build;->MODEL:Ljava/lang/String;
 
-    const v5, 0x7f120e1c
+    const v5, 0x7f120e1f
 
     invoke-virtual {p0, v5}, Lcom/oneplus/settings/OPAuthenticationInformationSettings;->getString(I)Ljava/lang/String;
 
@@ -364,7 +364,7 @@
 
     new-array v3, v3, [Ljava/lang/Object;
 
-    const v5, 0x7f120e1d
+    const v5, 0x7f120e20
 
     invoke-virtual {p0, v5}, Lcom/oneplus/settings/OPAuthenticationInformationSettings;->getString(I)Ljava/lang/String;
 
@@ -411,7 +411,7 @@
 
     new-array v3, v3, [Ljava/lang/Object;
 
-    const v5, 0x7f120c80
+    const v5, 0x7f120c82
 
     invoke-virtual {p0, v5}, Lcom/oneplus/settings/OPAuthenticationInformationSettings;->getString(I)Ljava/lang/String;
 
@@ -440,7 +440,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f120c36
+    const v1, 0x7f120c38
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -486,7 +486,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f120c31
+    const v1, 0x7f120c33
 
     invoke-virtual {v0, v1}, Landroid/app/ActionBar;->setTitle(I)V
 

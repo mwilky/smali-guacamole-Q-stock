@@ -291,7 +291,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f12166d
+    const v3, 0x7f121681
 
     invoke-virtual {v2, v3}, Landroidx/fragment/app/FragmentActivity;->getString(I)Ljava/lang/String;
 
@@ -535,7 +535,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f030108
+    const v2, 0x7f030109
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getStringArray(I)[Ljava/lang/String;
 
@@ -549,7 +549,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f030107
+    const v3, 0x7f030108
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getStringArray(I)[Ljava/lang/String;
 
@@ -589,7 +589,7 @@
 
     :cond_2
     :goto_1
-    const v0, 0x7f12166c
+    const v0, 0x7f121680
 
     invoke-virtual {p0, v0}, Lcom/android/settings/tts/TextToSpeechSettings;->getString(I)Ljava/lang/String;
 
@@ -1180,7 +1180,7 @@
 
     iget-object v0, p0, Lcom/android/settings/tts/TextToSpeechSettings;->mLocalePreference:Landroidx/preference/ListPreference;
 
-    const v1, 0x7f12167c
+    const v1, 0x7f121690
 
     invoke-virtual {v0, v1}, Landroidx/preference/ListPreference;->setSummary(I)V
 
@@ -1420,7 +1420,7 @@
 
     move-result-object v8
 
-    const v9, 0x7f12167d
+    const v9, 0x7f121691
 
     invoke-virtual {v8, v9}, Landroidx/fragment/app/FragmentActivity;->getString(I)Ljava/lang/String;
 
@@ -1843,7 +1843,7 @@
 
     invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
-    const v0, 0x7f1600fc
+    const v0, 0x7f1600fd
 
     invoke-virtual {p0, v0}, Lcom/android/settings/tts/TextToSpeechSettings;->addPreferencesFromResource(I)V
 
@@ -1911,7 +1911,7 @@
 
     check-cast v0, Lcom/android/settingslib/widget/ActionButtonsPreference;
 
-    const v1, 0x7f12167e
+    const v1, 0x7f121692
 
     invoke-virtual {v0, v1}, Lcom/android/settingslib/widget/ActionButtonsPreference;->setButton1Text(I)Lcom/android/settingslib/widget/ActionButtonsPreference;
 
@@ -1931,7 +1931,7 @@
 
     move-result-object v0
 
-    const v2, 0x7f121681
+    const v2, 0x7f121695    # 1.9418454E38f
 
     invoke-virtual {v0, v2}, Lcom/android/settingslib/widget/ActionButtonsPreference;->setButton2Text(I)Lcom/android/settingslib/widget/ActionButtonsPreference;
 

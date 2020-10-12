@@ -55,7 +55,7 @@
     return-void
 
     :cond_0
-    const v0, 0x7f0d02dc
+    const v0, 0x7f0d02e0
 
     invoke-virtual {p0, v0}, Lcom/android/settings/deviceinfo/StorageWizardFormatProgress;->setContentView(I)V
 
@@ -77,7 +77,7 @@
 
     iput-boolean v1, p0, Lcom/android/settings/deviceinfo/StorageWizardFormatProgress;->mFormatPrivate:Z
 
-    const v1, 0x7f121573
+    const v1, 0x7f121587
 
     new-array v3, v0, [Ljava/lang/CharSequence;
 
@@ -89,7 +89,7 @@
 
     invoke-virtual {p0, v1, v3}, Lcom/android/settings/deviceinfo/StorageWizardFormatProgress;->setHeaderText(I[Ljava/lang/CharSequence;)V
 
-    const v1, 0x7f121572
+    const v1, 0x7f121586
 
     new-array v0, v0, [Ljava/lang/CharSequence;
 

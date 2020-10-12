@@ -1638,7 +1638,7 @@ Ha a probléma továbbra is fennáll, akkor az akkumulátor teljesítményének 
     <string name="doze_always_on_summary">Az idő, az értesítési ikonok és egyéb információk megjelenítése. Megnövekedett akkumulátorhasználat.</string>
     <string name="doze_always_on_title">Mindig bekapcsolva</string>
     <string name="doze_summary">Képernyő ébresztése értesítések fogadásakor.</string>
-    <string name="doze_title">Környezeti kijelző</string>
+    <string name="doze_title">Ambient display</string>
     <string name="draw_overlay">A többi alkalmazás fölött</string>
     <string name="dsds_dialog_cancel">Mégse</string>
     <string name="dsds_dialog_confirm">Újraindítás</string>
@@ -2313,6 +2313,7 @@ Ezt később bármikor módosíthatja a Beállítások > Alkalmazások és érte
     <string name="location_settings_title">Tartózkodási hely</string>
     <string name="location_sources_heading">Forráshelyek</string>
     <string name="location_street_level">Engedélyezze az alkalmazások számára a GPS használatát a telefonján a tartózkodási helyének meghatározásához</string>
+    <string name="location_text">Hely</string>
     <string name="location_title">Saját pozíció</string>
     <string name="lock_after_timeout">Automatikus zárolás</string>
     <string name="lock_after_timeout_summary">%1$s alvó mód után</string>
@@ -2710,6 +2711,7 @@ Ha átvált a(z) %1$s szolgáltatóra, nem mondja le a(z) %2$s szolgáltatását
     <string name="my_device_info_account_preference_title">Fiók</string>
     <string name="my_device_info_device_name_preference_title">Eszköznév</string>
     <string name="n_cacrts">%d CA tanúsítvány</string>
+    <string name="nearest_station">Legközelebbi állomás</string>
     <string name="network_4G">4G (javasolt)</string>
     <string name="network_connected">Csatlakozva</string>
     <string name="network_connecting">Csatlakozás…</string>
@@ -3134,7 +3136,7 @@ akkumulátor takarékállapota automatikusan kikapcsol a készülék töltéseko
     <string name="oneplus_double_tap_power_none">Nincs</string>
     <string name="oneplus_doze_summary_801">Az óra és egyéb információk megjelentése a készenléti képernyőn</string>
     <string name="oneplus_doze_summary_new">Az idő, a dátum és az értesítések megjelenítése a képernyőn</string>
-    <string name="oneplus_doze_title">Környezeti kijelző</string>
+    <string name="oneplus_doze_title">Ambient display</string>
     <string name="oneplus_doze_title_801">Ambient kijelző</string>
     <string name="oneplus_draw_gesture_start_none">Nincs</string>
     <string name="oneplus_draw_m_start_app">Rajzoljon M betűt</string>
@@ -3332,7 +3334,7 @@ Ha bármikor a kezdőképernyőre kíván lépni, legyintsen felfelé a képerny
     <string name="oneplus_h2_contributors">A HydrogenOS közreműködői</string>
     <string name="oneplus_hand_up_proximity_summary">Ébressze fel a képernyőt, amikor felveszi a telefont</string>
     <string name="oneplus_hand_up_proximity_title">Emelje fel a kijelzőt</string>
-    <string name="oneplus_hand_up_to_show">Vegye fel a telefont a megjelenítéshez</string>
+    <string name="oneplus_hand_up_to_show">Vegye fel telefonját a megjelenítéshez</string>
     <string name="oneplus_haptic_feedback_no_app">Nincs telepítve támogatott játék</string>
     <string name="oneplus_haptic_feedback_no_app_tip">Telepítheti a PUBG Mobile és Asphalt 9 alkalmazásokat</string>
     <string name="oneplus_haptic_feedback_summary">Javítja a támogatott haptikus visszajelzéseit</string>
@@ -3643,7 +3645,7 @@ Megjegyzés: Előfordulhat, hogy az ujjlenyomata kevésbé biztonságos, mint eg
     <string name="oneplus_screen_color_mode_soft">Puha</string>
     <string name="oneplus_screen_color_mode_title">Képernyő kalibrálása</string>
     <string name="oneplus_screen_color_mode_title_summary">Nem érhető el, mert az éjszakai üzemmód aktív</string>
-    <string name="oneplus_screen_features_not_available_toast">Bekapcsolt állapotban olyan funkciók, mint a képernyő-kalibrálás, nem lesznek elérhetők</string>
+    <string name="oneplus_screen_features_not_available_toast">Ha be van kapcsolva, bizonyos funkciók, mint például a képernyő kalibrálása, nem lesznek elérhetők</string>
     <string name="oneplus_screen_refresh_rate">Képernyő frissítési sebesség</string>
     <string name="oneplus_screen_refresh_rate_60hz_summary">Kevésbé akadásmentes, de hosszabb akkumulátor-üzemidő</string>
     <string name="oneplus_screen_refresh_rate_auto_summary">Kifejezetten akadásmentes megjelenítés magasabb frissítési sebességnél</string>
@@ -3750,6 +3752,7 @@ Megjegyzés:
     <string name="oneplus_silent_mode_on">Néma üzemmód be van kapcsolva</string>
     <string name="oneplus_silent_mode_soc_tri_state_summary">A hívások és értesítések elnémítása a riasztásokon kívül</string>
     <string name="oneplus_silent_mode_summary">A hívások és értesítések elnémítása a riasztásokon kívül</string>
+    <string name="oneplus_silent_notifications_status_bar">Csendes értesítés elrejtése az állapotsávban</string>
     <string name="oneplus_sim1_ringtone_switch">1. SIM-kártya</string>
     <string name="oneplus_sim2_ringtone_switch">2. SIM-kártya</string>
     <string name="oneplus_simcard_title">SIM</string>
@@ -3840,7 +3843,7 @@ Megjegyzés:
     <string name="oneplus_tools_summary_U30">Játék mód, zseb mód, ütemezett be/kikapcsolás</string>
     <string name="oneplus_tools_summary_no_gamingmode">Alkalmazászár, párhuzamos alkalmazások</string>
     <string name="oneplus_tools_title">Segédeszközök</string>
-    <string name="oneplus_top_level_accounts_summary">OnePlus account, other accounts</string>
+    <string name="oneplus_top_level_accounts_summary">OnePlus fiók, egyéb fiókok</string>
     <string name="oneplus_top_level_apps_and_notifs_summary">Alapértelmezett alkalmazások, engedélyek</string>
     <string name="oneplus_top_level_buttons_and_gestures_summary">Riasztási csúszka, navigációs sáv és gesztusok</string>
     <string name="oneplus_top_level_cloud_h2_summary">Szinkronizálás a felhővel, Telefon megkeresése</string>
@@ -3930,8 +3933,18 @@ Ha a hálózatot rejtett állapotra állítja be, az nem fogja megváltoztatni a
     <string name="op_audio_settings">Audio Tuner</string>
     <string name="op_auto_power_saving">Automatikus energiamegtakarítás</string>
     <string name="op_auto_power_saving_summary">Automatikusan váltson a megfelelő felbontásra az akkumulátor merítése nélkül</string>
+    <string name="op_charging_Station_mute_notifications">Értesítések némítása</string>
+    <string name="op_charging_footer_text">Értesíteni fogjuk, ha van töltőállomás a közelben, amikor repülőtéren, vagy OnePlus-eseményen, például Pop-up rendezvényen tartózkodik.</string>
     <string name="op_charging_optimization">Optimalizált töltés</string>
     <string name="op_charging_optimization_summary">Optimalizálja a töltési módot a használati szokásainak megfelelően</string>
+    <string name="op_charging_station">Közelben lévő töltőállomások</string>
+    <string name="op_charging_station_no_station">A közelben nincs töltőállomás</string>
+    <string name="op_charging_station_summary">Értesítsen, ha van töltőállomás a közelben</string>
+    <string name="op_charging_stations">Töltőállomások</string>
+    <string name="op_charging_stations_off_description">A töltőállomások kereséséhez helyjogosultság szükséges a BLE adók érzékelése érdekében. Kérjük, a funkció használatának megkezdéséhez adja meg a helyjogosultságot.</string>
+    <string name="op_charging_stations_off_header">A töltőállomások kereséséhez helyjogosultság szükséges a BLE adók érzékelése érdekében. Kérjük, a funkció használatának megkezdéséhez adja meg a helyjogosultságot.</string>
+    <string name="op_charing_station_mute_notifications_description">Az értesítés a következő 6 órában le lesz némítva.</string>
+    <string name="op_charing_stations_mute_dynamic_time" formatted="false">Értesítés lenémítva %1d óra %2d percig</string>
     <string name="op_china_mobile">CMCC</string>
     <string name="op_china_telecom">CTCC</string>
     <string name="op_china_unicom">CUCC</string>
@@ -3947,15 +3960,19 @@ Ha a hálózatot rejtett állapotra állítja be, az nem fogja megváltoztatni a
     <string name="op_default_apps_summary">Kezdőlap, böngésző</string>
     <string name="op_default_luncher_title">Kezdőalkalmazás</string>
     <string name="op_dnd_summary">Ne zavarj</string>
+    <string name="op_enable_location_services">Kérjük, engedélyezze a helymeghatározást a közelben lévő töltőállomások kereséséhez</string>
+    <string name="op_enable_text">Engedélyez</string>
     <string name="op_face_unlock_set_unlock_password">Zár feloldása arcfelismeréssel + Jelszó</string>
     <string name="op_face_unlock_set_unlock_pattern">Zár feloldása arcfelismeréssel + Minta</string>
     <string name="op_face_unlock_set_unlock_pin">Zár feloldása arcfelismeréssel + PIN</string>
     <string name="op_face_unlock_skip_face">Folytatás arcfelismerés nélkül</string>
     <string name="op_failed_to_get_data">Nem sikerült beolvasni az adatokat</string>
     <string name="op_fetch_data_in_process">Betöltés</string>
+    <string name="op_find_charging_stations">Állomások keresése</string>
     <string name="op_fragment">Rövid</string>
     <string name="op_gamespace">Game Space</string>
     <string name="op_high_power_app_manager">Energiaigényes alkalmazások kezelése</string>
+    <string name="op_keep_location_services">Kérjük, engedélyezze a helymeghatározást a közelben lévő töltőállomások kereséséhez és nyomon követéséhez</string>
     <string name="op_light_mode_title">Fény</string>
     <string name="op_linked_launch_summary">Az alkalmazások kezelése összekapcsolható háttérben indítással</string>
     <string name="op_linked_launch_title">Alkalmazások automatikus indítása</string>
@@ -5384,6 +5401,7 @@ Az adatok Google-féle szinkronizálása lehetővé teszi, hogy bárhonnan hozz�
     <string name="uicc_lock_summary">Az Ön készüléke zárolva van, Sprint SIM-kártyák kizárólagos használatára</string>
     <string name="uicc_unlock">UICC feloldása</string>
     <string name="uicc_unlock_summary">A készüléke nem zárolt</string>
+    <string name="under_meters">%1d méteren belül</string>
     <string name="uninstall_activity_text">%1$s a következő alkalmazás része:</string>
     <string name="uninstall_all_blocked_profile_owner">Ez az app egyes felhasználók vagy profilok számára szükséges, másoknál pedig már eltávolították</string>
     <string name="uninstall_all_users_text">Eltávolítás minden felhasználónál</string>

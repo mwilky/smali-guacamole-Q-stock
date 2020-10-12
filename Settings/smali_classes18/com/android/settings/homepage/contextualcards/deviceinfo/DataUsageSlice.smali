@@ -271,7 +271,7 @@
 
     iget-object v0, p0, Lcom/android/settings/homepage/contextualcards/deviceinfo/DataUsageSlice;->mContext:Landroid/content/Context;
 
-    const v1, 0x7f080342
+    const v1, 0x7f080375
 
     invoke-static {v0, v1}, Landroidx/core/graphics/drawable/IconCompat;->createWithResource(Landroid/content/Context;I)Landroidx/core/graphics/drawable/IconCompat;
 
@@ -380,7 +380,7 @@
 
     iget-object v7, p0, Lcom/android/settings/homepage/contextualcards/deviceinfo/DataUsageSlice;->mContext:Landroid/content/Context;
 
-    const v8, 0x7f120b61
+    const v8, 0x7f120b63
 
     invoke-virtual {v7, v8}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 

@@ -177,7 +177,7 @@
 
     iget-object v0, p0, Lcom/oneplus/settings/controllers/OPTopLevelCloudPreferenceController;->mContext:Landroid/content/Context;
 
-    const v1, 0x7f121036
+    const v1, 0x7f12103a
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -188,7 +188,7 @@
     :cond_0
     iget-object v0, p0, Lcom/oneplus/settings/controllers/OPTopLevelCloudPreferenceController;->mContext:Landroid/content/Context;
 
-    const v1, 0x7f121035
+    const v1, 0x7f121039
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

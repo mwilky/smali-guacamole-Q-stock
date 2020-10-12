@@ -86,7 +86,7 @@
     :cond_0
     iget-object v0, p0, Lcom/android/settings/deviceinfo/BuildNumberPreferenceController;->mContext:Landroid/content/Context;
 
-    const v2, 0x7f121449
+    const v2, 0x7f12145d
 
     invoke-static {v0, v2, v1}, Landroid/widget/Toast;->makeText(Landroid/content/Context;II)Landroid/widget/Toast;
 
@@ -351,7 +351,7 @@
 
     iget-object v3, p0, Lcom/android/settings/deviceinfo/BuildNumberPreferenceController;->mContext:Landroid/content/Context;
 
-    const v4, 0x7f1216d9
+    const v4, 0x7f1216ee
 
     invoke-virtual {v3, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -489,7 +489,7 @@
     :cond_c
     iget-object v0, p0, Lcom/android/settings/deviceinfo/BuildNumberPreferenceController;->mContext:Landroid/content/Context;
 
-    const v1, 0x7f121448
+    const v1, 0x7f12145c    # 1.94173E38f
 
     invoke-static {v0, v1, v2}, Landroid/widget/Toast;->makeText(Landroid/content/Context;II)Landroid/widget/Toast;
 

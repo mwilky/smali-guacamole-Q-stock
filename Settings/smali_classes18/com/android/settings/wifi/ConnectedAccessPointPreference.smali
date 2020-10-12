@@ -52,7 +52,7 @@
 .method protected getWidgetLayoutResourceId()I
     .locals 1
 
-    const v0, 0x7f0d027b
+    const v0, 0x7f0d027f
 
     return v0
 .end method
@@ -62,7 +62,7 @@
 
     invoke-super {p0, p1}, Lcom/android/settings/wifi/LongPressAccessPointPreference;->onBindViewHolder(Landroidx/preference/PreferenceViewHolder;)V
 
-    const v0, 0x7f0a060b
+    const v0, 0x7f0a0618
 
     invoke-virtual {p1, v0}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 
@@ -70,7 +70,7 @@
 
     invoke-virtual {v0, p0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const v1, 0x7f0a060c
+    const v1, 0x7f0a0619
 
     invoke-virtual {p1, v1}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 
@@ -113,7 +113,7 @@
 
     move-result v0
 
-    const v1, 0x7f0a060b
+    const v1, 0x7f0a0618
 
     if-ne v0, v1, :cond_0
 
@@ -140,7 +140,7 @@
 
     if-eqz v0, :cond_0
 
-    const v0, 0x7f1219a6
+    const v0, 0x7f1219bb
 
     invoke-virtual {p0, v0}, Lcom/android/settings/wifi/ConnectedAccessPointPreference;->setSummary(I)V
 

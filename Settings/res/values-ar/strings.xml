@@ -264,7 +264,7 @@
     <string name="advanced_security_title">إعدادات متقدمة</string>
     <string name="advanced_settings">الإعدادات المتقدمة</string>
     <string name="advanced_settings_summary">تفعيل المزيد من خيارات الإعدادات.</string>
-    <string name="advanced_wificall_summary">استخدم Wi-Fi عندما تكون شبكة الجوال غير متوفرة</string>
+    <string name="advanced_wificall_summary">استخدم Wi-Fi عندما تكون شبكة الجوال غير متاحة</string>
     <string name="airplane_mode">وضع الطائرة</string>
     <string name="airplane_mode_description">يعمل وضع الطائرة على إيقاف تشغيل جميع اتصالات الشبكة ، بما في ذلك الاتصال والرسائل النصية والوصول إلى الإنترنت وWi-Fi والبلوتوث.</string>
     <string name="airplane_mode_enable_dialog_message">"عندما يكون وضع الطائرة قيد التشغيل، فلن تتمكن من استخدام الإنترنت، أو البريد الإلكتروني، أو التطبيقات الأخرى التي تتطلب اتصالاً بالبيانات ما لم تستخدم شبكة Wi-Fi.
@@ -336,7 +336,7 @@
     <string name="aod_clock_minimalism">الحجم الصغير 1</string>
     <string name="aod_clock_minimalism_1">الحجم الصغير 2</string>
     <string name="aod_clock_none">لا شيء</string>
-    <string name="aod_clock_select_style_text">حدد نمط الساعة</string>
+    <string name="aod_clock_select_style_text">تحديد نمط الساعة</string>
     <string name="aod_clock_text_clock">ساعة نصية</string>
     <string name="aod_horizon_light_effect_1">أزرق</string>
     <string name="aod_horizon_light_effect_2">أحمر</string>
@@ -1524,7 +1524,7 @@
 لحلّ هذه المشكلة، يمكنك إيقاف خدمة الموقع لهذا التطبيق."</string>
     <string name="dialog_location_ok">إيقاف</string>
     <string name="dialog_location_title">هل تريد إيقاف تحديد الموقع؟</string>
-    <string name="dialog_mhs_error">يُرجى الانتظار بينما يتم التحقق..</string>
+    <string name="dialog_mhs_error">يُرجى الانتظار أثناء التحقق..</string>
     <string name="dialog_open_network_cancel">إلغاء</string>
     <string name="dialog_open_network_connect">اتصال</string>
     <string name="dialog_open_network_title">أنت متصل بشبكة Wi-Fi غير آمنة (مفتوحة)</string>
@@ -1638,7 +1638,7 @@
     <string name="doze_always_on_summary">عرض الوقت ورموز الإشعارات وغيرها من المعلومات (يؤدي هذا إلى زيادة استهلاك البطارية)</string>
     <string name="doze_always_on_title">التشغيل دائمًا</string>
     <string name="doze_summary">إيقاظ الشاشة عند تلقي إخطارات.</string>
-    <string name="doze_title">الشاشة الخارجية</string>
+    <string name="doze_title">الشاشة المكتنفة</string>
     <string name="draw_overlay">إظهار فوق التطبيقات الأخرى</string>
     <string name="dsds_dialog_cancel">إلغاء</string>
     <string name="dsds_dialog_confirm">إعادة تشغيل</string>
@@ -2023,7 +2023,7 @@
     <string name="homepage_all_settings">جميع الإعدادات</string>
     <string name="homepage_condition_footer_content_description">تصغير</string>
     <string name="homepage_personal_settings">اقتراحات</string>
-    <string name="hotspot_tip_message" formatted="false">"تقوم نقطة اتصال الجوال بمشاركة بيانات هاتفك المحمول مع الأجهزة الأخرى التي تدعم Wi-Fi: للاتصال بنقطة اتصال الجوال: \u0009 
+    <string name="hotspot_tip_message" formatted="false">"تقوم نقطة اتصال الجوال بمشاركة بيانات هاتفك المحمول مع الأجهزة الأخرى التي تدعم Wi-Fi.: \u0009 
  1: قم بتشغيل Wi-Fi على الجهاز الآخر.
  2: حدد %s في قائمة شبكات Wi-Fi المتاحة. 
  3: في حالة طلب كلمة المرور، أدخل %s لتوفير طاقة البطارية، حافظ على توصيل هاتفك عند استخدام نقطة اتصال الجوال. "</string>
@@ -2313,6 +2313,7 @@
     <string name="location_settings_title">الموقع الجغرافي</string>
     <string name="location_sources_heading">مصادر الموقع</string>
     <string name="location_street_level">‏السماح للتطبيقات باستخدام GPS على هاتفك لتحديد موقعك</string>
+    <string name="location_text">الموقع</string>
     <string name="location_title">موقعي</string>
     <string name="lock_after_timeout">القفل التلقائي</string>
     <string name="lock_after_timeout_summary">%1$s بعد السكون</string>
@@ -2710,6 +2711,7 @@
     <string name="my_device_info_account_preference_title">الحساب</string>
     <string name="my_device_info_device_name_preference_title">اسم الجهاز</string>
     <string name="n_cacrts">‏%d شهادات CA</string>
+    <string name="nearest_station">أقرب محطة</string>
     <string name="network_4G">الجيل الرابع (مُستحسَن)</string>
     <string name="network_connected">متّصلة</string>
     <string name="network_connecting">جارٍ الاتصال…</string>
@@ -2990,7 +2992,7 @@
     <string name="oneplus_app_uninstall_remark">الرجاء تثبيت تطبيقات الدفع السابقة لاستخدام \"الدفع السريع\"</string>
     <string name="oneplus_app_wechat">WeChat</string>
     <string name="oneplus_applications_settings_summary">إشعارات التطبيق، التطبيقات الموازية، والأذونات</string>
-    <string name="oneplus_applock_at_least_four_points">ارسم لتضمين 4 على الأقل</string>
+    <string name="oneplus_applock_at_least_four_points">ارسم لتضمين 4 نقاط على الأقل</string>
     <string name="oneplus_applock_lockpassword_confirm_your_pin_header">أدخل رقم PIN</string>
     <string name="oneplus_applock_need_to_unlock_wrong">رقم PIN خاطئ</string>
     <string name="oneplus_applock_pattern_header">ارسم النمط الخاص بك</string>
@@ -3125,7 +3127,7 @@
     <string name="oneplus_do_not_disturb_answer_call_by_speaker_summary">توجيه المكالمات الواردة إلى السماعة عند تشغيل وضع الألعاب</string>
     <string name="oneplus_do_not_disturb_answer_call_by_speaker_title">الرد على المكالمات من خلال السماعة</string>
     <string name="oneplus_do_not_disturb_settings">الإعدادات</string>
-    <string name="oneplus_donot_silence_or_block">السماح بالإشعارات</string>
+    <string name="oneplus_donot_silence_or_block">سماح بالإخطارات</string>
     <string name="oneplus_donot_silence_or_block_summary">السماح بجميع أنواع الإخطارات</string>
     <string name="oneplus_double_tap_power_gesture">انقر مرتين على زر التشغيل لـ</string>
     <string name="oneplus_double_tap_power_gesture_app">تحديد الوظيفة</string>
@@ -3134,7 +3136,7 @@
     <string name="oneplus_double_tap_power_none">لا شيء</string>
     <string name="oneplus_doze_summary_801">اعرض الساعة وغيرها من المعلومات على شاشة الاستعداد</string>
     <string name="oneplus_doze_summary_new">إظهار الوقت، والتاريخ، والإشعارات على الشاشة</string>
-    <string name="oneplus_doze_title">الشاشة الخارجية</string>
+    <string name="oneplus_doze_title">الشاشة المكتنفة</string>
     <string name="oneplus_doze_title_801">الشاشة المكتنفة</string>
     <string name="oneplus_draw_gesture_start_none">لا شيء</string>
     <string name="oneplus_draw_m_start_app">ارسم حرف M</string>
@@ -3255,7 +3257,7 @@
 امسح لأعلى من الجانب الأيسر إلى الأيمن أسفل الشاشة."</string>
     <string name="oneplus_fullscreen_gesture_guide_done">"أنت الآن تعرف إيماءات التنقل.
 يمكنك إيقاف تشغيل هذه الإيماءات من خلال إعادة تمكين شريط التنقل في الإعدادات."</string>
-    <string name="oneplus_fullscreen_gesture_guide_gotit">فهمت ذلك</string>
+    <string name="oneplus_fullscreen_gesture_guide_gotit">حسنًا</string>
     <string name="oneplus_fullscreen_gesture_guide_home">"هيا نجرب إيماءات التنقل.
 للذهاب إلى الشاشة الرئيسية في أي وقت، مرر لأعلى من الحافة الوسطى السفلية للشاشة."</string>
     <string name="oneplus_fullscreen_gesture_guide_multitask">للوصول إلى التطبيقات الأخيرة، مرر لأعلى من أسفل الشاشة وتوقف مؤقتًا.</string>
@@ -3332,7 +3334,7 @@
     <string name="oneplus_h2_contributors">مساهمو HydrogenOS</string>
     <string name="oneplus_hand_up_proximity_summary">إيقاظ الشاشة عند التقاط الهاتف</string>
     <string name="oneplus_hand_up_proximity_title">شاشة الرفع</string>
-    <string name="oneplus_hand_up_to_show">التقط هاتفك لعرض</string>
+    <string name="oneplus_hand_up_to_show">التقط هاتفك للإظهار</string>
     <string name="oneplus_haptic_feedback_no_app">لا توجد ألعاب مدعومة مثبتة</string>
     <string name="oneplus_haptic_feedback_no_app_tip">يمكنك تثبيت PUBG Mobile وAsphalt 9</string>
     <string name="oneplus_haptic_feedback_summary">تقديم إفادة لمسية أفضل للألعاب المدعومة</string>
@@ -3466,7 +3468,7 @@
     <string name="oneplus_none_default_gallery">بدون معرض صور افتراضي</string>
     <string name="oneplus_none_default_music">بدون مشغل موسيقى افتراضي</string>
     <string name="oneplus_normal_clear_way">المسح العادي</string>
-    <string name="oneplus_normal_clear_way_summary">مسح قائمة المهام وذاكرة التخزين المؤقت دون مسح عمليات الخلفية.</string>
+    <string name="oneplus_normal_clear_way_summary">مسح قائمة المهام والذاكرة الخاصة بها دون مسح العمليات التي تتم في الخلفية.</string>
     <string name="oneplus_not_disturb_on">تم تشغيل \"عدم الإزعاج\"</string>
     <string name="oneplus_not_show">لا تعرض هذا مجددًا</string>
     <string name="oneplus_notch_display_area">الحز</string>
@@ -3750,6 +3752,7 @@
     <string name="oneplus_silent_mode_on">الوضع الصامت قيد التشغيل</string>
     <string name="oneplus_silent_mode_soc_tri_state_summary">سيتم كتم صوت المكالمات والإخطارات، باستثناء التنبيهات</string>
     <string name="oneplus_silent_mode_summary">سيتم كتم صوت المكالمات والإخطارات، باستثناء التنبيهات</string>
+    <string name="oneplus_silent_notifications_status_bar">إخفاء الإشعار الصامت في شريط الحالة</string>
     <string name="oneplus_sim1_ringtone_switch">بطاقات SIM 1</string>
     <string name="oneplus_sim2_ringtone_switch">بطاقات SIM 2</string>
     <string name="oneplus_simcard_title">SIM</string>
@@ -3840,7 +3843,7 @@
     <string name="oneplus_tools_summary_U30">وضع الألعاب، ووضع الجيب، وتشغيل/إيقاف الطاقة المجدول</string>
     <string name="oneplus_tools_summary_no_gamingmode">وحدة قفل التطبيق، التطبيقات الموازية</string>
     <string name="oneplus_tools_title">الأدوات المساعدة</string>
-    <string name="oneplus_top_level_accounts_summary">OnePlus account, other accounts</string>
+    <string name="oneplus_top_level_accounts_summary">حساب OnePlus، حسابات أخرى</string>
     <string name="oneplus_top_level_apps_and_notifs_summary">التطبيقات الافتراضية، الأذونات</string>
     <string name="oneplus_top_level_buttons_and_gestures_summary">Alert Slider، شريط التنقل &amp; الإيماءات</string>
     <string name="oneplus_top_level_cloud_h2_summary">مزامنة البيانات مع السحابة، العثور على هاتفي</string>
@@ -3930,8 +3933,18 @@
     <string name="op_audio_settings">موالف الصوت</string>
     <string name="op_auto_power_saving">توفير الطاقة التلقائي</string>
     <string name="op_auto_power_saving_summary">التبديل تلقائيًا إلى الدقة المناسبة دون استنزاف البطارية</string>
+    <string name="op_charging_Station_mute_notifications">كتم صوت الإشعارات</string>
+    <string name="op_charging_footer_text">سيتم إعلامك بمحطات الشحن القريبة، عندما تزور مواقع الشركاء مثل المطارات أو فعاليات OnePlus مثل Pop-ups.</string>
     <string name="op_charging_optimization">شحن محسن</string>
     <string name="op_charging_optimization_summary">قم بتحسين نمط الشحن وفقًا لعادات استخدامك</string>
+    <string name="op_charging_station">محطات الشحن القريبة</string>
+    <string name="op_charging_station_no_station">لا توجد محطة شحن قريبة</string>
+    <string name="op_charging_station_summary">الإشعار عند وجود محطة شحن قريبة</string>
+    <string name="op_charging_stations">محطات الشحن</string>
+    <string name="op_charging_stations_off_description">للعثور على محطات الشحن، إذن الموقع مطلوب لاكتشاف إشارات BLE. يُرجى إتاحة الوصول إلى الموقع لبدء استخدام هذه الميزة.</string>
+    <string name="op_charging_stations_off_header">للعثور على محطات الشحن، إذن الموقع مطلوب لاكتشاف إشارات BLE. يُرجى إتاحة الوصول إلى الموقع لبدء استخدام هذه الميزة.</string>
+    <string name="op_charing_station_mute_notifications_description">سيتم كتم صوت الإشعارات لمدة 6 ساعات قادمة.</string>
+    <string name="op_charing_stations_mute_dynamic_time" formatted="false">تم كتم صوت الإشعارات لمدة %1d من الساعات و%2d من الدقائق</string>
     <string name="op_china_mobile">CMCC</string>
     <string name="op_china_telecom">CTCC</string>
     <string name="op_china_unicom">CUCC</string>
@@ -3947,15 +3960,19 @@
     <string name="op_default_apps_summary">الصفحة الرئيسية، المتصفح</string>
     <string name="op_default_luncher_title">التطبيق الرئيسي</string>
     <string name="op_dnd_summary">عدم الإزعاج</string>
+    <string name="op_enable_location_services">للعثور على محطات الشحن القريبة وتتبعها، يرجى تمكين خدمات الموقع</string>
+    <string name="op_enable_text">تمكين</string>
     <string name="op_face_unlock_set_unlock_password">إلغاء القفل باسخدام الوجه + كلمة المرور</string>
     <string name="op_face_unlock_set_unlock_pattern">إلغاء القفل باستخدام الوجه + النمط</string>
     <string name="op_face_unlock_set_unlock_pin">إلغاء القفل باستخدام الوجه + رقم الدخول</string>
     <string name="op_face_unlock_skip_face">متابعة دون فتح القفل باستخدام الوجه</string>
     <string name="op_failed_to_get_data">فشل استرداد البيانات</string>
     <string name="op_fetch_data_in_process">تحميل</string>
+    <string name="op_find_charging_stations">العثور على المحطات</string>
     <string name="op_fragment">قصيرة</string>
     <string name="op_gamespace">منطقة الألعاب</string>
     <string name="op_high_power_app_manager">إدارة التطبيقات كثيفة استهلاك الطاقة</string>
+    <string name="op_keep_location_services">للعثور على محطات الشحن القريبة وتتبعها، ابقِ خدمات الموقع ممكنة</string>
     <string name="op_light_mode_title">مضيء</string>
     <string name="op_linked_launch_summary">تشغيل تطبيقات الإدارة التي يمكن ربطها في الخلفية</string>
     <string name="op_linked_launch_title">تشغيل تلقائي للتطبيقات</string>
@@ -5384,6 +5401,7 @@
     <string name="uicc_lock_summary">تم قفل جهازك عن طريق بطاقات Sprint SIM فقط</string>
     <string name="uicc_unlock">إلغاء قفل UICC</string>
     <string name="uicc_unlock_summary">جهازك غير مقفل</string>
+    <string name="under_meters">أقل من %1d من الأمتار</string>
     <string name="uninstall_activity_text">%1$s هو جزء من التطبيق التالي:</string>
     <string name="uninstall_all_blocked_profile_owner">هذه التطبيق مطلوب لبعض المستخدمين أو ملفات التعريف وتم إلغاء تثبيته للآخرين</string>
     <string name="uninstall_all_users_text">إزالة لجميع المستخدمين</string>

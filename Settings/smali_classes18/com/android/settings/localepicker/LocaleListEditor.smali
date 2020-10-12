@@ -510,7 +510,7 @@
 
     invoke-interface {v0, v1}, Landroid/view/MenuItem;->setShowAsAction(I)V
 
-    const v1, 0x7f0801d1
+    const v1, 0x7f080204
 
     invoke-interface {v0, v1}, Landroid/view/MenuItem;->setIcon(I)Landroid/view/MenuItem;
 

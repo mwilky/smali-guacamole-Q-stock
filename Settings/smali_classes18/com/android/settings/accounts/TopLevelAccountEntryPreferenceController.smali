@@ -27,7 +27,7 @@
 
     iget-object v0, p0, Lcom/android/settings/accounts/TopLevelAccountEntryPreferenceController;->mContext:Landroid/content/Context;
 
-    const v1, 0x7f121032
+    const v1, 0x7f121036
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

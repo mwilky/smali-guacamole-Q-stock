@@ -9,7 +9,7 @@
 
     invoke-direct {p0, p1}, Landroid/widget/Spinner;-><init>(Landroid/content/Context;)V
 
-    const v0, 0x7f0805cf
+    const v0, 0x7f080603
 
     invoke-virtual {p0, v0}, Lcom/oneplus/settings/widget/OPSettingsSpinner;->setBackgroundResource(I)V
 
@@ -21,7 +21,7 @@
 
     invoke-direct {p0, p1, p2}, Landroid/widget/Spinner;-><init>(Landroid/content/Context;I)V
 
-    const v0, 0x7f0805cf
+    const v0, 0x7f080603
 
     invoke-virtual {p0, v0}, Lcom/oneplus/settings/widget/OPSettingsSpinner;->setBackgroundResource(I)V
 
@@ -33,7 +33,7 @@
 
     invoke-direct {p0, p1, p2}, Landroid/widget/Spinner;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
-    const v0, 0x7f0805cf
+    const v0, 0x7f080603
 
     invoke-virtual {p0, v0}, Lcom/oneplus/settings/widget/OPSettingsSpinner;->setBackgroundResource(I)V
 
@@ -45,7 +45,7 @@
 
     invoke-direct {p0, p1, p2, p3}, Landroid/widget/Spinner;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
-    const v0, 0x7f0805cf
+    const v0, 0x7f080603
 
     invoke-virtual {p0, v0}, Lcom/oneplus/settings/widget/OPSettingsSpinner;->setBackgroundResource(I)V
 

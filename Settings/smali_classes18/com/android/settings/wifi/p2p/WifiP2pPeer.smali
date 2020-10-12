@@ -43,7 +43,7 @@
 
     iput-object p2, p0, Lcom/android/settings/wifi/p2p/WifiP2pPeer;->device:Landroid/net/wifi/p2p/WifiP2pDevice;
 
-    const v0, 0x7f0d0286
+    const v0, 0x7f0d028a
 
     invoke-virtual {p0, v0}, Lcom/android/settings/wifi/p2p/WifiP2pPeer;->setWidgetLayoutResource(I)V
 
@@ -81,7 +81,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f030132
+    const v1, 0x7f030133
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getStringArray(I)[Ljava/lang/String;
 
@@ -218,7 +218,7 @@
 
     invoke-super {p0, p1}, Landroidx/preference/Preference;->onBindViewHolder(Landroidx/preference/PreferenceViewHolder;)V
 
-    const v0, 0x7f0a0624
+    const v0, 0x7f0a0631
 
     invoke-virtual {p1, v0}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 
@@ -245,7 +245,7 @@
     :cond_0
     iget-object v0, p0, Lcom/android/settings/wifi/p2p/WifiP2pPeer;->mSignal:Landroid/widget/ImageView;
 
-    const v1, 0x7f0806c6
+    const v1, 0x7f0806fa
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageResource(I)V
 

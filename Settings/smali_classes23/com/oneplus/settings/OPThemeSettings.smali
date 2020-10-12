@@ -200,7 +200,7 @@
 .method private updateThemeSummary(I)V
     .locals 2
 
-    const v0, 0x7f12100e
+    const v0, 0x7f121012
 
     if-eqz p1, :cond_3
 
@@ -225,7 +225,7 @@
     :cond_0
     iget-object v0, p0, Lcom/oneplus/settings/OPThemeSettings;->mThemeModePreference:Lcom/oneplus/settings/widget/OPThemePresetDialogPreference;
 
-    const v1, 0x7f12100f
+    const v1, 0x7f121013
 
     invoke-virtual {v0, v1}, Lcom/oneplus/settings/widget/OPThemePresetDialogPreference;->setSummary(I)V
 
@@ -234,7 +234,7 @@
     :cond_1
     iget-object v0, p0, Lcom/oneplus/settings/OPThemeSettings;->mThemeModePreference:Lcom/oneplus/settings/widget/OPThemePresetDialogPreference;
 
-    const v1, 0x7f12100c
+    const v1, 0x7f121010
 
     invoke-virtual {v0, v1}, Lcom/oneplus/settings/widget/OPThemePresetDialogPreference;->setSummary(I)V
 
@@ -243,7 +243,7 @@
     :cond_2
     iget-object v0, p0, Lcom/oneplus/settings/OPThemeSettings;->mThemeModePreference:Lcom/oneplus/settings/widget/OPThemePresetDialogPreference;
 
-    const v1, 0x7f12100d
+    const v1, 0x7f121011
 
     invoke-virtual {v0, v1}, Lcom/oneplus/settings/widget/OPThemePresetDialogPreference;->setSummary(I)V
 
@@ -287,12 +287,12 @@
 
     if-eqz v0, :cond_0
 
-    const v0, 0x7f1600c1
+    const v0, 0x7f1600c2
 
     return v0
 
     :cond_0
-    const v0, 0x7f1600c0
+    const v0, 0x7f1600c1
 
     return v0
 .end method
@@ -501,13 +501,13 @@
 
     invoke-direct {v0, v1}, Lcom/oneplus/lib/app/OPAlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v1, 0x7f120ffa
+    const v1, 0x7f120ffe
 
     invoke-virtual {v0, v1}, Lcom/oneplus/lib/app/OPAlertDialog$Builder;->setTitle(I)Lcom/oneplus/lib/app/OPAlertDialog$Builder;
 
     move-result-object v0
 
-    const v1, 0x7f120ff9
+    const v1, 0x7f120ffd
 
     invoke-virtual {v0, v1}, Lcom/oneplus/lib/app/OPAlertDialog$Builder;->setMessage(I)Lcom/oneplus/lib/app/OPAlertDialog$Builder;
 

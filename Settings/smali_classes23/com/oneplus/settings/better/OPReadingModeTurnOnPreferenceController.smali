@@ -150,7 +150,7 @@
 
     invoke-direct {v0, v1}, Lcom/oneplus/lib/app/OPAlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v1, 0x7f120f0d
+    const v1, 0x7f120f10
 
     invoke-virtual {v0, v1}, Lcom/oneplus/lib/app/OPAlertDialog$Builder;->setTitle(I)Lcom/oneplus/lib/app/OPAlertDialog$Builder;
 
@@ -345,7 +345,7 @@
 
     iget-object v3, p0, Lcom/oneplus/settings/better/OPReadingModeTurnOnPreferenceController;->mSwitch:Lcom/android/settings/widget/MasterSwitchPreference;
 
-    const v4, 0x7f120f04
+    const v4, 0x7f120f07
 
     invoke-virtual {v3, v4}, Lcom/android/settings/widget/MasterSwitchPreference;->setSummary(I)V
 
@@ -356,7 +356,7 @@
 
     iget-object v3, p0, Lcom/oneplus/settings/better/OPReadingModeTurnOnPreferenceController;->mSwitch:Lcom/android/settings/widget/MasterSwitchPreference;
 
-    const v4, 0x7f120f14
+    const v4, 0x7f120f17
 
     invoke-virtual {v3, v4}, Lcom/android/settings/widget/MasterSwitchPreference;->setSummary(I)V
 
@@ -369,7 +369,7 @@
 
     iget-object v3, p0, Lcom/oneplus/settings/better/OPReadingModeTurnOnPreferenceController;->mSwitch:Lcom/android/settings/widget/MasterSwitchPreference;
 
-    const v4, 0x7f120f13
+    const v4, 0x7f120f16
 
     invoke-virtual {v3, v4}, Lcom/android/settings/widget/MasterSwitchPreference;->setSummary(I)V
 

@@ -46,7 +46,7 @@
 
     invoke-super {p0, p1, p2}, Lcom/android/settings/SettingsPreferenceFragment;->onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
 
-    const v0, 0x7f1600a9
+    const v0, 0x7f1600aa
 
     invoke-virtual {p0, v0}, Lcom/oneplus/settings/product/OPProductInfoSettings;->addPreferencesFromResource(I)V
 

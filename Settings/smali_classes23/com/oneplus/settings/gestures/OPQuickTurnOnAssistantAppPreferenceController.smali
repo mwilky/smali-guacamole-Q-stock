@@ -114,7 +114,7 @@
 
     iget-object v1, p0, Lcom/oneplus/settings/gestures/OPQuickTurnOnAssistantAppPreferenceController;->mSwitch:Lcom/android/settings/widget/MasterSwitchPreference;
 
-    const v2, 0x7f120cfc
+    const v2, 0x7f120cfe
 
     invoke-virtual {v1, v2}, Lcom/android/settings/widget/MasterSwitchPreference;->setSummary(I)V
 
@@ -145,7 +145,7 @@
 
     iget-object v2, p0, Lcom/oneplus/settings/gestures/OPQuickTurnOnAssistantAppPreferenceController;->mSwitch:Lcom/android/settings/widget/MasterSwitchPreference;
 
-    const v4, 0x7f120cda
+    const v4, 0x7f120cdc
 
     invoke-virtual {v2, v4}, Lcom/android/settings/widget/MasterSwitchPreference;->setSummary(I)V
 
@@ -156,7 +156,7 @@
 
     iget-object v2, p0, Lcom/oneplus/settings/gestures/OPQuickTurnOnAssistantAppPreferenceController;->mSwitch:Lcom/android/settings/widget/MasterSwitchPreference;
 
-    const v4, 0x7f120cdb
+    const v4, 0x7f120cdd
 
     invoke-virtual {v2, v4}, Lcom/android/settings/widget/MasterSwitchPreference;->setSummary(I)V
 

@@ -325,15 +325,15 @@
         <item quantity="many">%d активних додатків</item>
     </plurals>
     <plurals name="oneplus_applock_wrong_pattern_warning">
-        <item quantity="other">У вас залишилось %1$d спроб</item>
-        <item quantity="one">У вас залишилася %1$d спроба</item>
+        <item quantity="other">У вас залишилася %1$d спроб</item>
+        <item quantity="one">У вас залишилася %1$d спроба У вас залишилось %1$d спроб</item>
     </plurals>
     <plurals name="oneplus_lockpattern_too_many_failed_confirmation_attempts_footer">
-        <item quantity="other">Повторіть спробу через %d сек.</item>
+        <item quantity="other">Повторіть спробу через %d с.</item>
         <item quantity="one">Повторіть спробу через %d сек.</item>
     </plurals>
     <plurals name="oneplus_zen_mode_duration_summary_time_hours">
-        <item quantity="other">%d годин (якщо не ввімкнуто автоматично)</item>
+        <item quantity="other">%d годин (якщо не ввімкнено автоматично)</item>
         <item quantity="one">%d година (якщо не ввімкнуто автоматично)</item>
     </plurals>
     <plurals name="permission_bar_chart_label">

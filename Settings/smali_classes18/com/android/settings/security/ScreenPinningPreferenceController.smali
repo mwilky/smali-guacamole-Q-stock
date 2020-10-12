@@ -97,7 +97,7 @@
 
     iget-object v0, p0, Lcom/android/settings/security/ScreenPinningPreferenceController;->mContext:Landroid/content/Context;
 
-    const v1, 0x7f1215db
+    const v1, 0x7f1215ef
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
@@ -108,7 +108,7 @@
     :cond_0
     iget-object v0, p0, Lcom/android/settings/security/ScreenPinningPreferenceController;->mContext:Landroid/content/Context;
 
-    const v1, 0x7f1215da
+    const v1, 0x7f1215ee
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
@@ -141,7 +141,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f120d5f
+    const v1, 0x7f120d61
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 

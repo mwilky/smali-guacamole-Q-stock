@@ -130,7 +130,7 @@
 .method protected getPreferenceScreenResId()I
     .locals 1
 
-    const v0, 0x7f1600b0
+    const v0, 0x7f1600b1
 
     return v0
 .end method
@@ -198,7 +198,7 @@
 
     iget-object v0, p0, Lcom/oneplus/settings/better/OPReadingModeTurnOnSettings;->mFooterPreference:Lcom/oneplus/settings/widget/OPFooterPreference;
 
-    const v1, 0x7f120f15
+    const v1, 0x7f120f18
 
     invoke-virtual {v0, v1}, Lcom/oneplus/settings/widget/OPFooterPreference;->setTitle(I)V
 

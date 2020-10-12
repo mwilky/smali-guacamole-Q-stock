@@ -160,7 +160,7 @@
 
     iput v1, p0, Lcom/oneplus/settings/ui/OPCustomClockPreference;->mLastIndex:I
 
-    const v1, 0x7f0d0182
+    const v1, 0x7f0d0186
 
     invoke-virtual {p0, v1}, Lcom/oneplus/settings/ui/OPCustomClockPreference;->setLayoutResource(I)V
 
@@ -329,7 +329,7 @@
 
     iput-object v2, v0, Lcom/oneplus/settings/ui/OPCustomClockPreference;->mOPRecyclerView:Lcom/oneplus/lib/widget/recyclerview/OPRecyclerView;
 
-    const v2, 0x7f0a054f
+    const v2, 0x7f0a055c
 
     invoke-virtual {v1, v2}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 
@@ -363,7 +363,7 @@
 
     invoke-virtual {v4, v5}, Lcom/oneplus/lib/widget/recyclerview/OPRecyclerView;->addOPItemDecoration(Lcom/oneplus/lib/widget/recyclerview/OPItemDecoration;)V
 
-    const v4, 0x7f0a0550
+    const v4, 0x7f0a055d
 
     invoke-virtual {v1, v4}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 
@@ -415,7 +415,7 @@
 
     move-result-object v6
 
-    const v7, 0x7f08009c
+    const v7, 0x7f08009d
 
     invoke-direct {v5, v0, v6, v7, v3}, Lcom/oneplus/settings/ui/OPCustomClockPreference$ItemEntity;-><init>(Lcom/oneplus/settings/ui/OPCustomClockPreference;Ljava/lang/String;II)V
 
@@ -431,7 +431,7 @@
 
     move-result-object v7
 
-    const v8, 0x7f0800a3
+    const v8, 0x7f0800a4
 
     const/4 v9, 0x1
 
@@ -449,7 +449,7 @@
 
     move-result-object v8
 
-    const v10, 0x7f08009d
+    const v10, 0x7f08009e
 
     const/4 v11, 0x2
 
@@ -467,7 +467,7 @@
 
     move-result-object v10
 
-    const v12, 0x7f08009e
+    const v12, 0x7f08009f
 
     const/4 v13, 0x3
 
@@ -485,7 +485,7 @@
 
     move-result-object v12
 
-    const v14, 0x7f0800a8
+    const v14, 0x7f0800a9
 
     const/4 v15, 0x4
 
@@ -503,7 +503,7 @@
 
     move-result-object v14
 
-    const v15, 0x7f08009b
+    const v15, 0x7f08009c
 
     const/4 v13, 0x5
 
@@ -521,7 +521,7 @@
 
     move-result-object v13
 
-    const v15, 0x7f080098
+    const v15, 0x7f080099
 
     const/4 v11, 0x6
 
@@ -541,7 +541,7 @@
 
     move-result-object v11
 
-    const v15, 0x7f080099
+    const v15, 0x7f08009a
 
     const/4 v9, 0x7
 
@@ -561,7 +561,7 @@
 
     move-result-object v9
 
-    const v15, 0x7f08009a
+    const v15, 0x7f08009b
 
     const/16 v3, 0x8
 
@@ -581,7 +581,7 @@
 
     move-result-object v3
 
-    const v15, 0x7f0800a1
+    const v15, 0x7f0800a2
 
     const/16 v1, 0x9
 
@@ -601,7 +601,7 @@
 
     move-result-object v1
 
-    const v15, 0x7f0800a2
+    const v15, 0x7f0800a3
 
     move-object/from16 v17, v4
 
@@ -623,7 +623,7 @@
 
     move-result-object v4
 
-    const v15, 0x7f08009f
+    const v15, 0x7f0800a0
 
     move-object/from16 v18, v2
 
@@ -786,7 +786,7 @@
 
     iget-object v2, v0, Lcom/oneplus/settings/ui/OPCustomClockPreference;->mPreView:Landroid/widget/ImageView;
 
-    const v6, 0x7f0805fd
+    const v6, 0x7f080631
 
     invoke-virtual {v2, v6}, Landroid/widget/ImageView;->setBackgroundResource(I)V
 
@@ -815,7 +815,7 @@
 
     iget-object v2, v0, Lcom/oneplus/settings/ui/OPCustomClockPreference;->mPreView:Landroid/widget/ImageView;
 
-    const v6, 0x7f0805fe
+    const v6, 0x7f080632
 
     invoke-virtual {v2, v6}, Landroid/widget/ImageView;->setBackgroundResource(I)V
 
@@ -844,7 +844,7 @@
 
     iget-object v2, v0, Lcom/oneplus/settings/ui/OPCustomClockPreference;->mPreView:Landroid/widget/ImageView;
 
-    const v6, 0x7f0805ff
+    const v6, 0x7f080633
 
     invoke-virtual {v2, v6}, Landroid/widget/ImageView;->setBackgroundResource(I)V
 
@@ -873,7 +873,7 @@
 
     iget-object v2, v0, Lcom/oneplus/settings/ui/OPCustomClockPreference;->mPreView:Landroid/widget/ImageView;
 
-    const v6, 0x7f080605
+    const v6, 0x7f080639
 
     invoke-virtual {v2, v6}, Landroid/widget/ImageView;->setBackgroundResource(I)V
 
@@ -902,7 +902,7 @@
 
     iget-object v2, v0, Lcom/oneplus/settings/ui/OPCustomClockPreference;->mPreView:Landroid/widget/ImageView;
 
-    const v6, 0x7f0805fc
+    const v6, 0x7f080630
 
     invoke-virtual {v2, v6}, Landroid/widget/ImageView;->setBackgroundResource(I)V
 
@@ -931,7 +931,7 @@
 
     iget-object v2, v0, Lcom/oneplus/settings/ui/OPCustomClockPreference;->mPreView:Landroid/widget/ImageView;
 
-    const v6, 0x7f0805f9
+    const v6, 0x7f08062d
 
     invoke-virtual {v2, v6}, Landroid/widget/ImageView;->setBackgroundResource(I)V
 
@@ -960,7 +960,7 @@
 
     iget-object v2, v0, Lcom/oneplus/settings/ui/OPCustomClockPreference;->mPreView:Landroid/widget/ImageView;
 
-    const v6, 0x7f0805fa
+    const v6, 0x7f08062e
 
     invoke-virtual {v2, v6}, Landroid/widget/ImageView;->setBackgroundResource(I)V
 
@@ -989,7 +989,7 @@
 
     iget-object v2, v0, Lcom/oneplus/settings/ui/OPCustomClockPreference;->mPreView:Landroid/widget/ImageView;
 
-    const v6, 0x7f0805fb
+    const v6, 0x7f08062f
 
     invoke-virtual {v2, v6}, Landroid/widget/ImageView;->setBackgroundResource(I)V
 
@@ -1018,7 +1018,7 @@
 
     iget-object v2, v0, Lcom/oneplus/settings/ui/OPCustomClockPreference;->mPreView:Landroid/widget/ImageView;
 
-    const v6, 0x7f080602
+    const v6, 0x7f080636
 
     invoke-virtual {v2, v6}, Landroid/widget/ImageView;->setBackgroundResource(I)V
 
@@ -1049,7 +1049,7 @@
 
     iget-object v6, v0, Lcom/oneplus/settings/ui/OPCustomClockPreference;->mPreView:Landroid/widget/ImageView;
 
-    const v14, 0x7f080603
+    const v14, 0x7f080637
 
     invoke-virtual {v6, v14}, Landroid/widget/ImageView;->setBackgroundResource(I)V
 
@@ -1078,7 +1078,7 @@
 
     iget-object v6, v0, Lcom/oneplus/settings/ui/OPCustomClockPreference;->mPreView:Landroid/widget/ImageView;
 
-    const v15, 0x7f080604
+    const v15, 0x7f080638
 
     invoke-virtual {v6, v15}, Landroid/widget/ImageView;->setBackgroundResource(I)V
 
@@ -1109,7 +1109,7 @@
 
     move/from16 v16, v1
 
-    const v1, 0x7f080600
+    const v1, 0x7f080634
 
     invoke-virtual {v15, v1}, Landroid/widget/ImageView;->setBackgroundResource(I)V
 

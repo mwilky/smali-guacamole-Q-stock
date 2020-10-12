@@ -296,7 +296,7 @@
 
     iget-object v2, p0, Lcom/android/settings/display/WallpaperPreferenceController;->mContext:Landroid/content/Context;
 
-    const v3, 0x7f12161d
+    const v3, 0x7f121631
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -335,12 +335,12 @@
 
     if-eqz v1, :cond_0
 
-    const v1, 0x7f1215a9
+    const v1, 0x7f1215bd
 
     goto :goto_0
 
     :cond_0
-    const v1, 0x7f121820
+    const v1, 0x7f121835
 
     :goto_0
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;

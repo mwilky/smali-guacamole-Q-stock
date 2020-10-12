@@ -25,7 +25,7 @@
 
     invoke-direct {p0, p1, p2}, Landroidx/preference/Preference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
-    const v0, 0x7f0d0236
+    const v0, 0x7f0d023a
 
     invoke-virtual {p0, v0}, Lcom/oneplus/settings/ui/OPThemePreference;->setLayoutResource(I)V
 
@@ -111,22 +111,22 @@
 
     if-eq v0, v1, :cond_0
 
-    const v1, 0x7f080548
+    const v1, 0x7f08057d
 
     goto :goto_0
 
     :cond_0
-    const v1, 0x7f080542
+    const v1, 0x7f080577
 
     goto :goto_0
 
     :cond_1
-    const v1, 0x7f080545
+    const v1, 0x7f08057a
 
     goto :goto_0
 
     :cond_2
-    const v1, 0x7f080548
+    const v1, 0x7f08057d
 
     nop
 
@@ -137,7 +137,7 @@
 .method private initAppIconView(Landroidx/preference/PreferenceViewHolder;)V
     .locals 6
 
-    const v0, 0x7f0a06e5
+    const v0, 0x7f0a06f2
 
     invoke-virtual {p1, v0}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 
@@ -145,7 +145,7 @@
 
     invoke-virtual {v0, p0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const v1, 0x7f0a06e1
+    const v1, 0x7f0a06ee
 
     invoke-virtual {p1, v1}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 
@@ -155,7 +155,7 @@
 
     iput-object v1, p0, Lcom/oneplus/settings/ui/OPThemePreference;->mThemeIcon1:Landroid/widget/ImageView;
 
-    const v1, 0x7f0a06e2
+    const v1, 0x7f0a06ef
 
     invoke-virtual {p1, v1}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 
@@ -165,7 +165,7 @@
 
     iput-object v1, p0, Lcom/oneplus/settings/ui/OPThemePreference;->mThemeIcon2:Landroid/widget/ImageView;
 
-    const v1, 0x7f0a06e3
+    const v1, 0x7f0a06f0
 
     invoke-virtual {p1, v1}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 
@@ -175,7 +175,7 @@
 
     iput-object v1, p0, Lcom/oneplus/settings/ui/OPThemePreference;->mThemeIcon3:Landroid/widget/ImageView;
 
-    const v1, 0x7f0a06e4
+    const v1, 0x7f0a06f1
 
     invoke-virtual {p1, v1}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 
@@ -245,7 +245,7 @@
 .method public initViewStatus(Landroidx/preference/PreferenceViewHolder;)V
     .locals 6
 
-    const v0, 0x7f0a06d5
+    const v0, 0x7f0a06e2
 
     invoke-virtual {p1, v0}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 
@@ -257,7 +257,7 @@
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setFocusable(Z)V
 
-    const v2, 0x7f0a06d6
+    const v2, 0x7f0a06e3
 
     invoke-virtual {p1, v2}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 
@@ -267,7 +267,7 @@
 
     invoke-virtual {v2, v1}, Landroid/view/View;->setFocusable(Z)V
 
-    const v3, 0x7f0a06d8
+    const v3, 0x7f0a06e5
 
     invoke-virtual {p1, v3}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 
@@ -277,7 +277,7 @@
 
     invoke-virtual {v3, v1}, Landroid/view/View;->setFocusable(Z)V
 
-    const v4, 0x7f0a06d7
+    const v4, 0x7f0a06e4
 
     invoke-virtual {p1, v4}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 
@@ -287,7 +287,7 @@
 
     invoke-virtual {v4, v1}, Landroid/view/View;->setFocusable(Z)V
 
-    const v5, 0x7f0a06d4
+    const v5, 0x7f0a06e1
 
     invoke-virtual {p1, v5}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 
@@ -307,7 +307,7 @@
 
     nop
 
-    const v0, 0x7f0a06d3
+    const v0, 0x7f0a06e0
 
     invoke-virtual {p1, v0}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 
@@ -321,7 +321,7 @@
 
     invoke-virtual {v0, v1}, Landroid/view/ViewGroup;->requestDisallowInterceptTouchEvent(Z)V
 
-    const v1, 0x7f0a06ec
+    const v1, 0x7f0a06f9
 
     invoke-virtual {p1, v1}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 
@@ -337,7 +337,7 @@
 
     invoke-virtual {v1, p0}, Lcom/oneplus/settings/ui/RadiusImageView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const v2, 0x7f0a06e7
+    const v2, 0x7f0a06f4
 
     invoke-virtual {p1, v2}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 
@@ -345,7 +345,7 @@
 
     invoke-virtual {v2, p0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const v3, 0x7f0a06df
+    const v3, 0x7f0a06ec
 
     invoke-virtual {p1, v3}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 
@@ -371,7 +371,7 @@
 
     invoke-virtual {v5, v4}, Landroid/view/View;->setVisibility(I)V
 
-    const v5, 0x7f0a06de
+    const v5, 0x7f0a06eb
 
     invoke-virtual {p1, v5}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 
@@ -379,7 +379,7 @@
 
     invoke-virtual {v5, v4}, Landroid/view/View;->setVisibility(I)V
 
-    const v6, 0x7f0a06e0
+    const v6, 0x7f0a06ed
 
     invoke-virtual {p1, v6}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 
@@ -402,7 +402,7 @@
 
     move-result v0
 
-    const v1, 0x7f0a06d3
+    const v1, 0x7f0a06e0
 
     if-ne v0, v1, :cond_0
 
@@ -423,7 +423,7 @@
     goto :goto_1
 
     :cond_0
-    const v1, 0x7f0a06e5
+    const v1, 0x7f0a06f2
 
     if-ne v0, v1, :cond_1
 
@@ -444,7 +444,7 @@
     goto :goto_1
 
     :cond_1
-    const v1, 0x7f0a06ec
+    const v1, 0x7f0a06f9
 
     const/high16 v2, 0x10000000
 
@@ -469,7 +469,7 @@
     goto :goto_1
 
     :cond_2
-    const v1, 0x7f0a06e7
+    const v1, 0x7f0a06f4
 
     if-ne v0, v1, :cond_3
 
@@ -490,7 +490,7 @@
     goto :goto_0
 
     :cond_3
-    const v1, 0x7f0a06df
+    const v1, 0x7f0a06ec
 
     if-ne v0, v1, :cond_4
 

@@ -1638,7 +1638,7 @@ Bu durum sürekli meydana geliyorsa pil performansını iyileştirmek için uygu
     <string name="doze_always_on_summary">Saati, bildirim simgelerini ve diğer bilgileri göster. Pil kullanımı artar.</string>
     <string name="doze_always_on_title">Her zaman açık</string>
     <string name="doze_summary">Yeni bir bildirim aldığınızda ekranı uyandırır.</string>
-    <string name="doze_title">Ortam ekranı</string>
+    <string name="doze_title">Bildirim ekranı</string>
     <string name="draw_overlay">Diğer uyg. üzerinde göster</string>
     <string name="dsds_dialog_cancel">İptal</string>
     <string name="dsds_dialog_confirm">Yeniden başlat</string>
@@ -2313,6 +2313,7 @@ Bunu daha sonra Ayarlar > Uygulamalar ve bildirimler seçeneğinden değiştireb
     <string name="location_settings_title">Konum</string>
     <string name="location_sources_heading">Konum kaynakları</string>
     <string name="location_street_level">"Uygulamalar konumunuzu tam olarak belirlemek üzere telefonunuzun GPS'sini kullanabilsin"</string>
+    <string name="location_text">Konum</string>
     <string name="location_title">Konumum</string>
     <string name="lock_after_timeout">Otomatik olarak kilitle</string>
     <string name="lock_after_timeout_summary">Uyku moduna geçtikten %1$s sonra</string>
@@ -2710,6 +2711,7 @@ Cihazınızı yeniden başlatın ve tekrar deneyin."</string>
     <string name="my_device_info_account_preference_title">Hesap</string>
     <string name="my_device_info_device_name_preference_title">Cihaz adı</string>
     <string name="n_cacrts">%d CA sertifikası</string>
+    <string name="nearest_station">En Yakın İstasyon</string>
     <string name="network_4G">4G (önerilir)</string>
     <string name="network_connected">Bağlı</string>
     <string name="network_connecting">Bağlanıyor…</string>
@@ -2982,7 +2984,7 @@ Bu izin, uygulamaya, Rahatsız Etmeyin ayarını açma veya kapatma ve ilgili ay
     <string name="oneplus_app_locker_summary">Şifrelenecek uygulamaları seçin</string>
     <string name="oneplus_app_locker_switch">Bildirim içeriğini gizle</string>
     <string name="oneplus_app_locker_switch_summary">Uygulama kilidi etkin olan uygulamalar için bildirim içeriği gizlenecek</string>
-    <string name="oneplus_app_locker_title">Uygulama dolabı</string>
+    <string name="oneplus_app_locker_title">Uygulama Kilidi</string>
     <string name="oneplus_app_network_settings">Veri kullanım denetimi</string>
     <string name="oneplus_app_notification_allow_led">LED Açık</string>
     <string name="oneplus_app_notification_not_allow_led">LED Kapalı</string>
@@ -3134,7 +3136,7 @@ Pil tasarrufu, cihazınız şarj olduğunda otomatik olarak kapanır."</string>
     <string name="oneplus_double_tap_power_none">Hiçbiri</string>
     <string name="oneplus_doze_summary_801">Bekleme ekranında saati ve diğer bilgileri görüntüleyin</string>
     <string name="oneplus_doze_summary_new">Saat, tarih ve bildirimleri ekranda gösterin</string>
-    <string name="oneplus_doze_title">Ortam ekranı</string>
+    <string name="oneplus_doze_title">Bildirim ekranı</string>
     <string name="oneplus_doze_title_801">Ortam ekranı</string>
     <string name="oneplus_draw_gesture_start_none">Hiçbiri</string>
     <string name="oneplus_draw_m_start_app">M Çizin</string>
@@ -3465,7 +3467,7 @@ Not: Parmak iziniz güçlü bir desen veya PIN'den daha az güvenli olabilir"</s
     <string name="oneplus_none_default_gallery">Varsayılan galeri yok</string>
     <string name="oneplus_none_default_music">Varsayılan müzik çalar yok</string>
     <string name="oneplus_normal_clear_way">Normal temizlik</string>
-    <string name="oneplus_normal_clear_way_summary">Arka plan işlemlerini temizlemeden görev listesini ve önbelleği temizleyin.</string>
+    <string name="oneplus_normal_clear_way_summary">Arka plan işlemlerini silmeden görev listesini ve önbelleği temizleyin.</string>
     <string name="oneplus_not_disturb_on">\"Rahatsız Etmeyin\" özelliği açık</string>
     <string name="oneplus_not_show">Bunu bir daha gösterme</string>
     <string name="oneplus_notch_display_area">Tam ekran</string>
@@ -3540,7 +3542,7 @@ Not: Parmak iziniz güçlü bir desen veya PIN'den daha az güvenli olabilir"</s
     <string name="oneplus_preference_settings_manual_open">Durum</string>
     <string name="oneplus_preference_settings_turn_off_time">Bitiş</string>
     <string name="oneplus_preference_settings_turn_on">Rahatsız Etmeyin özelliğini açın</string>
-    <string name="oneplus_preference_settings_turn_on_time">Başlangıç</string>
+    <string name="oneplus_preference_settings_turn_on_time">Başlama</string>
     <string name="oneplus_prior_to_use_you_need_to">Kullanmadan önce yapmanız gerekenler:</string>
     <string name="oneplus_privacy_policy">Gizlilik Politikası</string>
     <string name="oneplus_privacy_protection_title">Şifreli alan</string>
@@ -3749,6 +3751,7 @@ Not:
     <string name="oneplus_silent_mode_on">Sessiz mod etkin</string>
     <string name="oneplus_silent_mode_soc_tri_state_summary">Alarmlar dışındaki tüm aramalar ve bildirimler sessize alınır</string>
     <string name="oneplus_silent_mode_summary">Alarmlar dışındaki tüm aramalar ve bildirimler sessize alınır</string>
+    <string name="oneplus_silent_notifications_status_bar">Durum çubuğunda sessiz bildirimi gizle</string>
     <string name="oneplus_sim1_ringtone_switch">SIM kart 1</string>
     <string name="oneplus_sim2_ringtone_switch">SIM kart 2</string>
     <string name="oneplus_simcard_title">SIM</string>
@@ -3839,7 +3842,7 @@ Not:
     <string name="oneplus_tools_summary_U30">Oyun modu, cep modu, programlı güç açma/kapama</string>
     <string name="oneplus_tools_summary_no_gamingmode">Uygulama kilidi, paralel uygulamalar</string>
     <string name="oneplus_tools_title">Yardımcı programlar</string>
-    <string name="oneplus_top_level_accounts_summary">OnePlus account, other accounts</string>
+    <string name="oneplus_top_level_accounts_summary">OnePlus hesabı, diğer hesaplar</string>
     <string name="oneplus_top_level_apps_and_notifs_summary">Varsayılan uygulamalar, izinler</string>
     <string name="oneplus_top_level_buttons_and_gestures_summary">Alert Slider, gezinti çubuğu ve hareketler</string>
     <string name="oneplus_top_level_cloud_h2_summary">Verileri Bulut ile senkronize etme, Telefonumu Bul</string>
@@ -3857,7 +3860,7 @@ Not:
     <string name="oneplus_turn_off_time">Bitiş</string>
     <string name="oneplus_turn_on_feature_cancel">İPTAL</string>
     <string name="oneplus_turn_on_feature_ok">AÇ</string>
-    <string name="oneplus_turn_on_time">Başlangıç</string>
+    <string name="oneplus_turn_on_time">Başlama</string>
     <string name="oneplus_uninstatll_multi_app_msg">Kaldırma işleminden sonra paralel uygulamadaki tüm veriler silinecektir. Uygulamayı kaldırmak istediğinizden emin misiniz?</string>
     <string name="oneplus_uninstatll_multi_app_title">Paralel %1$s uygulaması</string>
     <string name="oneplus_uninstatll_multi_main_app_msg">Kaldırma işleminden sonra bu uygulamadaki ve ilişkili paralel uygulamadaki tüm veriler silinecektir. Uygulamayı kaldırmak istediğinizden emin misiniz?</string>
@@ -3929,8 +3932,18 @@ Ağın gizli olarak ayarlanması yönlendiricinizin ayarlarını değiştirmeyec
     <string name="op_audio_settings">Ses Ayarlayıcı</string>
     <string name="op_auto_power_saving">Otomatik güç tasarrufu</string>
     <string name="op_auto_power_saving_summary">Piliniz tükenmeden otomatik olarak uygun bir çözünürlüğe geçin</string>
+    <string name="op_charging_Station_mute_notifications">Bildirimleri Sessize Al</string>
+    <string name="op_charging_footer_text">Havalimanları gibi iş ortağı konumlarını veya Pop-ups gibi OnePlus etkinliklerini ziyaret ettiğinizde, yakındaki şarj istasyonları hakkında bildirim alırsınız.</string>
     <string name="op_charging_optimization">İyileştirilmiş şarj</string>
     <string name="op_charging_optimization_summary">Şarj düzenini kullanım alışkanlıklarınıza göre iyileştirin</string>
+    <string name="op_charging_station">Yakındaki Şarj İstasyonları</string>
+    <string name="op_charging_station_no_station">Yakında şarj istasyonu yok</string>
+    <string name="op_charging_station_summary">Yakında bir şarj istasyonu varsa bildir</string>
+    <string name="op_charging_stations">Şarj istasyonları</string>
+    <string name="op_charging_stations_off_description">Şarj istasyonlarını bulmak için, BLE işaretçilerini algılamak amacıyla konum izni gereklidir. Bu özelliği kullanmaya başlamak için lütfen konuma erişim sağlayın.</string>
+    <string name="op_charging_stations_off_header">Şarj istasyonlarını bulmak için, BLE işaretçilerini algılamak amacıyla konum izni gereklidir. Bu özelliği kullanmaya başlamak için lütfen konuma erişim sağlayın.</string>
+    <string name="op_charing_station_mute_notifications_description">Bildirim 6 saat süreyle sessize alınacak.</string>
+    <string name="op_charing_stations_mute_dynamic_time" formatted="false">Bildirim %1d saat %2d dakika sessize alındı</string>
     <string name="op_china_mobile">CMCC</string>
     <string name="op_china_telecom">CTCC</string>
     <string name="op_china_unicom">CUCC</string>
@@ -3946,15 +3959,19 @@ Ağın gizli olarak ayarlanması yönlendiricinizin ayarlarını değiştirmeyec
     <string name="op_default_apps_summary">Başlangıç, tarayıcı</string>
     <string name="op_default_luncher_title">Başlangıç uygulaması</string>
     <string name="op_dnd_summary">Rahatsız Etmeyin</string>
+    <string name="op_enable_location_services">Yakındaki şarj istasyonlarını bulmak ve izlemek için lütfen konum servislerini etkinleştirin</string>
+    <string name="op_enable_text">Etkinleştir</string>
     <string name="op_face_unlock_set_unlock_password">Yüz ile Kilit Açma + Şifre</string>
     <string name="op_face_unlock_set_unlock_pattern">Yüz ile Kilit Açma + Desen</string>
     <string name="op_face_unlock_set_unlock_pin">Yüz ile Kilit Açma + PIN</string>
     <string name="op_face_unlock_skip_face">Yüz tanıma kilidi olmadan devam et</string>
     <string name="op_failed_to_get_data">Veri alınamadı</string>
     <string name="op_fetch_data_in_process">Yükleniyor</string>
+    <string name="op_find_charging_stations">İstasyon Bul</string>
     <string name="op_fragment">Kısa</string>
     <string name="op_gamespace">Oyun Alanı</string>
     <string name="op_high_power_app_manager">Fazla enerji tüketen uygulamalar yöneticisi</string>
+    <string name="op_keep_location_services">Yakındaki şarj istasyonlarını bulmak ve izlemek için konum servislerini etkin durumda bırakın</string>
     <string name="op_light_mode_title">Açık</string>
     <string name="op_linked_launch_summary">Arka planda çalışacak uygulamaları yönetebilirsiniz</string>
     <string name="op_linked_launch_title">Uygulamaları otomatik çalıştır</string>
@@ -5383,6 +5400,7 @@ Google'ın, kişilerinize, randevularınıza ve diğer bilgilerinize istediğini
     <string name="uicc_lock_summary">"Cihazınız yalnızca Sprint SIM'ler ile kilitlenir"</string>
     <string name="uicc_unlock">UICC Kilit Açma</string>
     <string name="uicc_unlock_summary">Cihazınızın kilidi açıldı</string>
+    <string name="under_meters">%1d metreden az</string>
     <string name="uninstall_activity_text">%1$s aşağıdaki uygulamanın bir parçasıdır:</string>
     <string name="uninstall_all_blocked_profile_owner">Bu uygulama bazı kullanıcılar veya profiller için gereklidir ve kaldırılamaz</string>
     <string name="uninstall_all_users_text">Yüklemeyi tüm kullanıcılar için kaldır</string>

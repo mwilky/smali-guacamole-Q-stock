@@ -682,7 +682,7 @@
 
     invoke-super {p0, p1}, Lcom/android/settings/core/InstrumentedActivity;->onCreate(Landroid/os/Bundle;)V
 
-    const v0, 0x7f0d0356
+    const v0, 0x7f0d035a
 
     invoke-virtual {p0, v0}, Lcom/android/settings/wifi/dpp/WifiDppConfiguratorActivity;->setContentView(I)V
 

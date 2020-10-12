@@ -139,7 +139,7 @@
 
     iget-object v2, p0, Lcom/android/settings/wifi/dpp/WifiDppQrCodeScannerFragment$EasyConnectEnrolleeStatusCallback;->this$0:Lcom/android/settings/wifi/dpp/WifiDppQrCodeScannerFragment;
 
-    const v3, 0x7f1218c5
+    const v3, 0x7f1218da
 
     invoke-static {v2, v3}, Lcom/android/settings/wifi/dpp/WifiDppQrCodeScannerFragment;->access$1000(Lcom/android/settings/wifi/dpp/WifiDppQrCodeScannerFragment;I)V
 
@@ -180,22 +180,22 @@
     throw v1
 
     :pswitch_0
-    const v0, 0x7f1218cc
+    const v0, 0x7f1218e1
 
     goto :goto_0
 
     :pswitch_1
-    const v0, 0x7f1218ce
+    const v0, 0x7f1218e3
 
     goto :goto_0
 
     :pswitch_2
-    const v0, 0x7f1218d0
+    const v0, 0x7f1218e5
 
     goto :goto_0
 
     :pswitch_3
-    const v0, 0x7f1218ce
+    const v0, 0x7f1218e3
 
     goto :goto_0
 
@@ -248,12 +248,12 @@
     throw v1
 
     :pswitch_5
-    const v0, 0x7f1218d2
+    const v0, 0x7f1218e7
 
     goto :goto_0
 
     :pswitch_6
-    const v0, 0x7f1218cf
+    const v0, 0x7f1218e4
 
     nop
 

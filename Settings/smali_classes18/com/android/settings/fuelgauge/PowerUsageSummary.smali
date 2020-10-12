@@ -187,6 +187,71 @@
     return-void
 .end method
 
+.method private updateChargingStationPref()V
+    .locals 6
+
+    const-string v0, "op_charging_station_setting"
+
+    invoke-virtual {p0, v0}, Lcom/android/settings/fuelgauge/PowerUsageSummary;->findPreference(Ljava/lang/CharSequence;)Landroidx/preference/Preference;
+
+    move-result-object v1
+
+    check-cast v1, Lcom/android/settings/widget/MasterSwitchPreference;
+
+    invoke-virtual {p0}, Lcom/android/settings/fuelgauge/PowerUsageSummary;->getContext()Landroid/content/Context;
+
+    move-result-object v2
+
+    const-string v3, "com.oneplus.chargingpilar"
+
+    invoke-static {v2, v3}, Lcom/oneplus/settings/utils/OPUtils;->isAppExist(Landroid/content/Context;Ljava/lang/String;)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_1
+
+    invoke-virtual {p0}, Lcom/android/settings/fuelgauge/PowerUsageSummary;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object v3
+
+    const/4 v4, 0x0
+
+    const-string v5, "op_stations_installation"
+
+    invoke-static {v3, v5, v4}, Landroid/provider/Settings$Global;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
+
+    move-result v3
+
+    const/4 v5, 0x1
+
+    if-ne v3, v5, :cond_1
+
+    invoke-virtual {p0}, Lcom/android/settings/fuelgauge/PowerUsageSummary;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object v0
+
+    const-string v3, "op_charging_stations_feature_on"
+
+    invoke-static {v0, v3, v4}, Landroid/provider/Settings$System;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
+
+    move-result v0
+
+    if-ne v0, v5, :cond_0
+
+    move v4, v5
+
+    :cond_0
+    invoke-virtual {v1, v4}, Lcom/android/settings/widget/MasterSwitchPreference;->setChecked(Z)V
+
+    goto :goto_0
+
+    :cond_1
+    invoke-virtual {p0, v0}, Lcom/android/settings/fuelgauge/PowerUsageSummary;->removePreference(Ljava/lang/String;)Z
+
+    :goto_0
+    return-void
+.end method
+
 
 # virtual methods
 .method public getHelpResource()I
@@ -216,7 +281,7 @@
 .method protected getPreferenceScreenResId()I
     .locals 1
 
-    const v0, 0x7f1600d0
+    const v0, 0x7f1600d1
 
     return v0
 .end method
@@ -351,6 +416,20 @@
     invoke-direct {v2, p0}, Lcom/android/settings/fuelgauge/-$$Lambda$aTvFIqGCrsza8hdemOuQH3mcbRg;-><init>(Lcom/android/settings/fuelgauge/PowerUsageSummary;)V
 
     invoke-virtual {v1, v2}, Lcom/android/settings/fuelgauge/batterytip/BatteryTipPreferenceController;->setBatteryTipListener(Lcom/android/settings/fuelgauge/batterytip/BatteryTipPreferenceController$BatteryTipListener;)V
+
+    const-class v1, Lcom/oneplus/settings/chargingstations/OPChargingStationPrefController;
+
+    invoke-virtual {p0, v1}, Lcom/android/settings/fuelgauge/PowerUsageSummary;->use(Ljava/lang/Class;)Lcom/android/settingslib/core/AbstractPreferenceController;
+
+    move-result-object v1
+
+    check-cast v1, Lcom/oneplus/settings/chargingstations/OPChargingStationPrefController;
+
+    invoke-virtual {p0}, Lcom/android/settings/fuelgauge/PowerUsageSummary;->getSettingsLifecycle()Lcom/android/settingslib/core/lifecycle/Lifecycle;
+
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, Lcom/oneplus/settings/chargingstations/OPChargingStationPrefController;->setLifeCycle(Lcom/android/settingslib/core/lifecycle/Lifecycle;)V
 
     return-void
 .end method
@@ -592,6 +671,8 @@
 
     invoke-virtual {v0, v1, v3, v2}, Landroid/content/ContentResolver;->registerContentObserver(Landroid/net/Uri;ZLandroid/database/ContentObserver;)V
 
+    invoke-direct {p0}, Lcom/android/settings/fuelgauge/PowerUsageSummary;->updateChargingStationPref()V
+
     return-void
 .end method
 
@@ -702,7 +783,7 @@
 
     iget-object v0, p0, Lcom/android/settings/fuelgauge/PowerUsageSummary;->mBatteryLayoutPref:Lcom/android/settingslib/widget/LayoutPreference;
 
-    const v1, 0x7f0a069a
+    const v1, 0x7f0a06a7
 
     invoke-virtual {v0, v1}, Lcom/android/settingslib/widget/LayoutPreference;->findViewById(I)Landroid/view/View;
 
@@ -944,7 +1025,7 @@
 
     iget-object v2, p0, Lcom/android/settings/fuelgauge/PowerUsageSummary;->mBatteryLayoutPref:Lcom/android/settingslib/widget/LayoutPreference;
 
-    const v3, 0x7f0a069a
+    const v3, 0x7f0a06a7
 
     invoke-virtual {v2, v3}, Lcom/android/settingslib/widget/LayoutPreference;->findViewById(I)Landroid/view/View;
 

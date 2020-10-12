@@ -110,7 +110,7 @@
 
     invoke-direct {v2, v3}, Lcom/android/settings/core/SubSettingLauncher;-><init>(Landroid/content/Context;)V
 
-    const v3, 0x7f1211d1
+    const v3, 0x7f1211e5
 
     invoke-virtual {v2, v3}, Lcom/android/settings/core/SubSettingLauncher;->setTitleRes(I)Lcom/android/settings/core/SubSettingLauncher;
 
@@ -391,7 +391,7 @@
 
     iget-object v0, p0, Lcom/android/settings/wifi/slice/WifiSlice;->mContext:Landroid/content/Context;
 
-    const v1, 0x7f1219a6
+    const v1, 0x7f1219bb
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
@@ -474,7 +474,7 @@
 
     iget-object v0, p0, Lcom/android/settings/wifi/slice/WifiSlice;->mContext:Landroid/content/Context;
 
-    const v1, 0x7f080332
+    const v1, 0x7f080365
 
     invoke-static {v0, v1}, Landroidx/core/graphics/drawable/IconCompat;->createWithResource(Landroid/content/Context;I)Landroidx/core/graphics/drawable/IconCompat;
 
@@ -511,7 +511,7 @@
 
     iget-object v0, p0, Lcom/android/settings/wifi/slice/WifiSlice;->mContext:Landroid/content/Context;
 
-    const v1, 0x7f0801f4
+    const v1, 0x7f080227
 
     invoke-static {v0, v1}, Landroidx/core/graphics/drawable/IconCompat;->createWithResource(Landroid/content/Context;I)Landroidx/core/graphics/drawable/IconCompat;
 
@@ -528,7 +528,7 @@
 
     iget-object v0, p0, Lcom/android/settings/wifi/slice/WifiSlice;->mContext:Landroid/content/Context;
 
-    const v1, 0x7f0801f6
+    const v1, 0x7f080229
 
     invoke-static {v0, v1}, Landroidx/core/graphics/drawable/IconCompat;->createWithResource(Landroid/content/Context;I)Landroidx/core/graphics/drawable/IconCompat;
 
@@ -545,7 +545,7 @@
 
     iget-object v0, p0, Lcom/android/settings/wifi/slice/WifiSlice;->mContext:Landroid/content/Context;
 
-    const v1, 0x7f080367
+    const v1, 0x7f08039a
 
     invoke-static {v0, v1}, Landroidx/core/graphics/drawable/IconCompat;->createWithResource(Landroid/content/Context;I)Landroidx/core/graphics/drawable/IconCompat;
 
@@ -553,7 +553,7 @@
 
     iget-object v1, p0, Lcom/android/settings/wifi/slice/WifiSlice;->mContext:Landroid/content/Context;
 
-    const v2, 0x7f12197e
+    const v2, 0x7f121993    # 1.9420008E38f
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -687,7 +687,7 @@
 
     iget-object v0, p0, Lcom/android/settings/wifi/slice/WifiSlice;->mContext:Landroid/content/Context;
 
-    const v1, 0x7f1218e7
+    const v1, 0x7f1218fc
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
@@ -831,7 +831,7 @@
 
     iget-object v0, p0, Lcom/android/settings/wifi/slice/WifiSlice;->mContext:Landroid/content/Context;
 
-    const v1, 0x7f12197e
+    const v1, 0x7f121993    # 1.9420008E38f
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
@@ -903,7 +903,7 @@
 
     const/4 v1, 0x1
 
-    const v2, 0x7f130520
+    const v2, 0x7f130522
 
     invoke-virtual {v0, v2, v1}, Landroid/content/res/Resources$Theme;->applyStyle(IZ)V
 
@@ -1023,7 +1023,7 @@
     :goto_4
     iget-object v5, p0, Lcom/android/settings/wifi/slice/WifiSlice;->mContext:Landroid/content/Context;
 
-    const v9, 0x7f1215ca
+    const v9, 0x7f1215de
 
     invoke-virtual {v5, v9}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 

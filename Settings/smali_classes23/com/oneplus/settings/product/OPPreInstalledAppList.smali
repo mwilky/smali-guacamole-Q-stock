@@ -165,7 +165,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f120e29
+    const v2, 0x7f120e2c
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -185,7 +185,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f120e2a
+    const v2, 0x7f120e2d
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -466,7 +466,7 @@
 .method public onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
     .locals 6
 
-    const v0, 0x7f1600a8
+    const v0, 0x7f1600a9
 
     invoke-virtual {p0, v0}, Lcom/oneplus/settings/product/OPPreInstalledAppList;->addPreferencesFromResource(I)V
 
@@ -499,7 +499,7 @@
 
     invoke-direct {v3, v4}, Lcom/oneplus/settings/ui/OPNoSelectablePreference;-><init>(Landroid/content/Context;)V
 
-    const v4, 0x7f0d01f8
+    const v4, 0x7f0d01fc
 
     invoke-virtual {v3, v4}, Lcom/oneplus/settings/ui/OPNoSelectablePreference;->setLayoutResource(I)V
 

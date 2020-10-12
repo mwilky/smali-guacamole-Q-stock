@@ -610,7 +610,7 @@
 
     if-ne p1, v0, :cond_0
 
-    const v0, 0x7f121a74
+    const v0, 0x7f121a89
 
     return v0
 
@@ -619,7 +619,7 @@
 
     if-ne p1, v0, :cond_1
 
-    const v0, 0x7f121a73
+    const v0, 0x7f121a88
 
     return v0
 
@@ -725,22 +725,22 @@
 
     if-eq v0, v1, :cond_0
 
-    const v1, 0x7f121a73
+    const v1, 0x7f121a88
 
     return v1
 
     :cond_0
-    const v1, 0x7f121a75
+    const v1, 0x7f121a8a
 
     return v1
 
     :cond_1
-    const v1, 0x7f121a71
+    const v1, 0x7f121a86
 
     return v1
 
     :cond_2
-    const v1, 0x7f121a70
+    const v1, 0x7f121a85
 
     return v1
 .end method
@@ -764,22 +764,22 @@
 
     if-eq v0, v1, :cond_0
 
-    const v1, 0x7f121a74
+    const v1, 0x7f121a89
 
     return v1
 
     :cond_0
-    const v1, 0x7f121a75
+    const v1, 0x7f121a8a
 
     return v1
 
     :cond_1
-    const v1, 0x7f121a71
+    const v1, 0x7f121a86
 
     return v1
 
     :cond_2
-    const v1, 0x7f121a70
+    const v1, 0x7f121a85
 
     return v1
 .end method
@@ -834,27 +834,27 @@
 
     if-ne p1, v1, :cond_2
 
-    const v1, 0x7f121a74
+    const v1, 0x7f121a89
 
     return v1
 
     :cond_2
-    const v1, 0x7f121a73
+    const v1, 0x7f121a88
 
     return v1
 
     :cond_3
-    const v1, 0x7f121a75
+    const v1, 0x7f121a8a
 
     return v1
 
     :cond_4
-    const v1, 0x7f121a71
+    const v1, 0x7f121a86
 
     return v1
 
     :cond_5
-    const v1, 0x7f121a70
+    const v1, 0x7f121a85
 
     return v1
 .end method
@@ -1045,7 +1045,7 @@
 
     iget-object v3, p0, Lcom/android/settings/notification/ZenModeBackend;->mContext:Landroid/content/Context;
 
-    const v4, 0x7f121a72
+    const v4, 0x7f121a87
 
     invoke-virtual {v3, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

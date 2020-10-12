@@ -770,7 +770,6 @@
     <item type="id" name="item_6" />
     <item type="id" name="item_touch_helper_previous_elevation" />
     <item type="id" name="iv_avatar_bg" />
-    <item type="id" name="iv_avatar_def" />
     <item type="id" name="iv_avatar_tag" />
     <item type="id" name="keep" />
     <item type="id" name="key_faceunlock_swipe_up_mode" />
@@ -1059,12 +1058,26 @@
     <item type="id" name="op_app_entities_header" />
     <item type="id" name="op_app_list" />
     <item type="id" name="op_car_charger_open_app_list" />
+    <item type="id" name="op_charging_station_animation" />
+    <item type="id" name="op_charging_station_header1" />
+    <item type="id" name="op_charging_station_header2" />
+    <item type="id" name="op_charging_station_header3" />
+    <item type="id" name="op_charging_station_header_details1" />
+    <item type="id" name="op_charging_station_header_details2" />
+    <item type="id" name="op_charging_station_header_icon1" />
+    <item type="id" name="op_charging_station_header_icon2" />
+    <item type="id" name="op_charging_station_header_name1" />
+    <item type="id" name="op_charging_station_header_name2" />
+    <item type="id" name="op_charging_station_header_off_text" />
+    <item type="id" name="op_charging_station_off_icon" />
     <item type="id" name="op_custom_horizon_light" />
     <item type="id" name="op_empty_list_tips_icon" />
     <item type="id" name="op_empty_list_tips_view" />
+    <item type="id" name="op_enable_button" />
     <item type="id" name="op_enhance_process_regulator_container" />
     <item type="id" name="op_faceunlock_mode_content" />
     <item type="id" name="op_faceunlock_mode_title" />
+    <item type="id" name="op_feature_text" />
     <item type="id" name="op_finger_edge_enroll_view" />
     <item type="id" name="op_finger_enroll_view" />
     <item type="id" name="op_finger_fod_bg_view" />

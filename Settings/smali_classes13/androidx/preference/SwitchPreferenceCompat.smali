@@ -201,7 +201,7 @@
     return-void
 
     :cond_0
-    const v1, 0x7f0a06a3
+    const v1, 0x7f0a06b0
 
     invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -243,7 +243,7 @@
 
     invoke-super {p0, p1}, Landroidx/preference/TwoStatePreference;->onBindViewHolder(Landroidx/preference/PreferenceViewHolder;)V
 
-    const v0, 0x7f0a06a3
+    const v0, 0x7f0a06b0
 
     invoke-virtual {p1, v0}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 

@@ -159,7 +159,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f1214b5
+    const v4, 0x7f1214c9
 
     invoke-virtual {v3, v4, p0}, Lcom/oneplus/lib/app/OPAlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Lcom/oneplus/lib/app/OPAlertDialog$Builder;
 
@@ -171,7 +171,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f120981
+    const v4, 0x7f120982
 
     invoke-virtual {v3, v4}, Lcom/oneplus/lib/app/OPAlertDialog$Builder;->setTitle(I)Lcom/oneplus/lib/app/OPAlertDialog$Builder;
 
@@ -185,12 +185,12 @@
 
     if-eqz v4, :cond_1
 
-    const v4, 0x7f120980
+    const v4, 0x7f120981
 
     goto :goto_0
 
     :cond_1
-    const v4, 0x7f12097f
+    const v4, 0x7f120980
 
     :goto_0
     invoke-virtual {v3, v4}, Lcom/oneplus/lib/app/OPAlertDialog$Builder;->setMessage(I)Lcom/oneplus/lib/app/OPAlertDialog$Builder;
@@ -209,7 +209,7 @@
 
     if-eqz v4, :cond_3
 
-    const v4, 0x7f120995
+    const v4, 0x7f120996
 
     goto :goto_2
 
@@ -222,12 +222,12 @@
 
     if-eqz v4, :cond_4
 
-    const v4, 0x7f120994
+    const v4, 0x7f120995
 
     goto :goto_2
 
     :cond_4
-    const v4, 0x7f120996
+    const v4, 0x7f120997
 
     :goto_2
     new-instance v5, Lcom/oneplus/lib/app/OPAlertDialog$Builder;
@@ -242,7 +242,7 @@
 
     move-result-object v3
 
-    const v5, 0x7f1214b8
+    const v5, 0x7f1214cc
 
     invoke-virtual {v3, v5, p0}, Lcom/oneplus/lib/app/OPAlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Lcom/oneplus/lib/app/OPAlertDialog$Builder;
 

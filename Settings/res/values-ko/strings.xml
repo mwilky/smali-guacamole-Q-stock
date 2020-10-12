@@ -2313,6 +2313,7 @@
     <string name="location_settings_title">위치</string>
     <string name="location_sources_heading">위치 소스</string>
     <string name="location_street_level">앱이 사용자 휴대전화의 GPS를 사용하여 사용자 위치를 파악하도록 함</string>
+    <string name="location_text">위치</string>
     <string name="location_title">사용자 위치</string>
     <string name="lock_after_timeout">자동 잠금</string>
     <string name="lock_after_timeout_summary">절전 모드 후 %1$s</string>
@@ -2710,6 +2711,7 @@
     <string name="my_device_info_account_preference_title">계정</string>
     <string name="my_device_info_device_name_preference_title">기기 이름</string>
     <string name="n_cacrts">CA 인증서 %d개</string>
+    <string name="nearest_station">가장 가까운 스테이션</string>
     <string name="network_4G">4G(권장)</string>
     <string name="network_connected">연결됨</string>
     <string name="network_connecting">연결 중…</string>
@@ -3255,7 +3257,7 @@
 화면 하단의 왼쪽 또는 오른쪽에서 위로 살짝 미세요."</string>
     <string name="oneplus_fullscreen_gesture_guide_done">"이제 새로운 탐색 제스처를 알게 되었습니다.
 설정의 탐색 모음을 다시 활성화하여 이러한 제스처를 해제할 수 있습니다."</string>
-    <string name="oneplus_fullscreen_gesture_guide_gotit">알겠습니다.</string>
+    <string name="oneplus_fullscreen_gesture_guide_gotit">확인</string>
     <string name="oneplus_fullscreen_gesture_guide_home">"탐색 제스처를 사용해 보세요.
 언제든지 홈 화면으로 이동하려면 화면의 하단 가운데 가장자리에서 위로 살짝 미세요."</string>
     <string name="oneplus_fullscreen_gesture_guide_multitask">최신 앱의 경우 화면 하단에서 위로 살짝 밀었다가 멈추세요.</string>
@@ -3539,7 +3541,7 @@
     <string name="oneplus_preference_settings_behavior">기본 설정</string>
     <string name="oneplus_preference_settings_custom_time">자동 전환</string>
     <string name="oneplus_preference_settings_manual_open">상태</string>
-    <string name="oneplus_preference_settings_turn_off_time">종료</string>
+    <string name="oneplus_preference_settings_turn_off_time">끝</string>
     <string name="oneplus_preference_settings_turn_on">방해 금지 켜기</string>
     <string name="oneplus_preference_settings_turn_on_time">시작</string>
     <string name="oneplus_prior_to_use_you_need_to">사용 전에 다음을 수행해야 합니다.</string>
@@ -3749,6 +3751,7 @@
     <string name="oneplus_silent_mode_on">자동 모드가 켜졌습니다.</string>
     <string name="oneplus_silent_mode_soc_tri_state_summary">알람을 제외하고 통화 및 알림은 무음으로 설정됩니다.</string>
     <string name="oneplus_silent_mode_summary">알람을 제외하고 통화 및 알림은 무음으로 설정됩니다.</string>
+    <string name="oneplus_silent_notifications_status_bar">상태 표시줄에서 무음 알림 숨기기</string>
     <string name="oneplus_sim1_ringtone_switch">SIM 카드 1</string>
     <string name="oneplus_sim2_ringtone_switch">SIM 카드 2</string>
     <string name="oneplus_simcard_title">SIM</string>
@@ -3839,11 +3842,11 @@
     <string name="oneplus_tools_summary_U30">게임 모드, 포켓 모드, 예약된 전원 켜기/끄기</string>
     <string name="oneplus_tools_summary_no_gamingmode">앱 락커, 병렬 앱</string>
     <string name="oneplus_tools_title">유틸리티</string>
-    <string name="oneplus_top_level_accounts_summary">OnePlus account, other accounts</string>
+    <string name="oneplus_top_level_accounts_summary">OnePlus 계정, 기타 계정</string>
     <string name="oneplus_top_level_apps_and_notifs_summary">기본 앱, 권한</string>
     <string name="oneplus_top_level_buttons_and_gestures_summary">알림 슬라이더, 탐색 표시줄 및 제스처</string>
-    <string name="oneplus_top_level_cloud_h2_summary">클라우드로 데이터 동기화, 휴대폰 찾기</string>
-    <string name="oneplus_top_level_cloud_o2_summary">클라우드로 데이터 동기화</string>
+    <string name="oneplus_top_level_cloud_h2_summary">클라우드와 데이터 동기화, 휴대폰 찾기</string>
+    <string name="oneplus_top_level_cloud_o2_summary">클라우드와 데이터 동기화</string>
     <string name="oneplus_top_level_connected_summary">NFC, 캐스트, 탭 및 결제</string>
     <string name="oneplus_top_level_display_summary">상태 표시줄, 앰비언트 디스플레이, 야간 모드, 읽기 모드</string>
     <string name="oneplus_top_level_network_summary">SIM, 모바일 네트워크, 데이터 사용량, 핫스팟</string>
@@ -3854,7 +3857,7 @@
     <string name="oneplus_top_level_system_summary">언어 및 키보드, 시간, 재설정, 시스템 업데이트</string>
     <string name="oneplus_top_level_system_summary_verizon">언어 및 키보드, 시간, 재설정</string>
     <string name="oneplus_touch_vibrate">터치 진동</string>
-    <string name="oneplus_turn_off_time">종료</string>
+    <string name="oneplus_turn_off_time">끝</string>
     <string name="oneplus_turn_on_feature_cancel">취소</string>
     <string name="oneplus_turn_on_feature_ok">켜기</string>
     <string name="oneplus_turn_on_time">시작</string>
@@ -3929,8 +3932,18 @@
     <string name="op_audio_settings">오디오 튜너</string>
     <string name="op_auto_power_saving">자동 절전</string>
     <string name="op_auto_power_saving_summary">배터리 소모 없이 적절한 해상도로 자동 전환</string>
+    <string name="op_charging_Station_mute_notifications">알림 음소거</string>
+    <string name="op_charging_footer_text">공항 등의 파트너 시설 또는 Pop-ups와 같은 OnePlus 이벤트 방문 시 근처의 충전 스테이션에 대한 알림을 받습니다.</string>
     <string name="op_charging_optimization">충전 최적화</string>
     <string name="op_charging_optimization_summary">사용 습관에 따라 충전 패턴 최적화</string>
+    <string name="op_charging_station">근처 충전 스테이션</string>
+    <string name="op_charging_station_no_station">근처에 충전 스테이션 없음</string>
+    <string name="op_charging_station_summary">근처에 충전 스테이션이 있을 때 알림</string>
+    <string name="op_charging_stations">충전 스테이션</string>
+    <string name="op_charging_stations_off_description">충전 스테이션을 찾으려면 BLE 비콘을 감지하기 위해 위치 권한이 필요합니다. 이 기능을 사용하려면 위치에 대한 액세스 권한을 제공하세요.</string>
+    <string name="op_charging_stations_off_header">충전 스테이션을 찾으려면 BLE 비콘을 감지하기 위해 위치 권한이 필요합니다. 이 기능을 사용하려면 위치에 대한 액세스 권한을 제공하세요.</string>
+    <string name="op_charing_station_mute_notifications_description">6시간 동안 알림이 음소거됩니다.</string>
+    <string name="op_charing_stations_mute_dynamic_time" formatted="false">%1d시간 %2d분 동안 알림이 음소거됨</string>
     <string name="op_china_mobile">CMCC</string>
     <string name="op_china_telecom">CTCC</string>
     <string name="op_china_unicom">CUCC</string>
@@ -3946,15 +3959,19 @@
     <string name="op_default_apps_summary">홈, 브라우저</string>
     <string name="op_default_luncher_title">홈 앱</string>
     <string name="op_dnd_summary">방해 금지</string>
+    <string name="op_enable_location_services">근처의 충전 스테이션을 찾고 추적하려면 위치 서비스를 사용 설정하세요.</string>
+    <string name="op_enable_text">사용</string>
     <string name="op_face_unlock_set_unlock_password">얼굴 잠금 해제 + 비밀번호</string>
     <string name="op_face_unlock_set_unlock_pattern">얼굴 잠금 해제 + 패턴</string>
     <string name="op_face_unlock_set_unlock_pin">얼굴 잠금 해제 + PIN</string>
     <string name="op_face_unlock_skip_face">얼굴 잠금 해제 없이 계속</string>
     <string name="op_failed_to_get_data">데이터를 검색하지 못함</string>
     <string name="op_fetch_data_in_process">로드 중</string>
+    <string name="op_find_charging_stations">스테이션 찾기</string>
     <string name="op_fragment">짧음</string>
     <string name="op_gamespace">게임 공간</string>
     <string name="op_high_power_app_manager">전원-부족 앱 관리자</string>
+    <string name="op_keep_location_services">근처의 충전 스테이션을 찾고 추적하려면 위치 서비스를 사용 설정 상태로 유지하세요.</string>
     <string name="op_light_mode_title">밝게</string>
     <string name="op_linked_launch_summary">연결될 수 있는 앱 관리가 백그라운드에서 실행됩니다.</string>
     <string name="op_linked_launch_title">앱 자동 실행</string>
@@ -5261,7 +5278,7 @@ Google 동기화는 사용자가 어디에서든지 연락처, 일정 등에 액
     <string name="tether_error_item_default">테더링</string>
     <string name="tether_error_message">%1$s에 가입하지 않았습니다.</string>
     <string name="tether_error_title">%1$s 오류</string>
-    <string name="tether_no_sim_message">모바일 핫스팟 및 기타 테더링 옵션을 사용하려면 SIM 카드를 삽입하세요.</string>
+    <string name="tether_no_sim_message">모바일 핫스팟 및 기타 테더링 옵션을 사용하려면 SIM 카드를 삽입하세요</string>
     <string name="tether_no_sim_title">SIM 카드 없음</string>
     <string name="tether_settings_disabled_on_data_saver">데이터 절약 모드가 켜져 있으면 테더링하거나 휴대용 핫스팟을 사용할 수 없습니다.</string>
     <string name="tether_settings_summary_hotspot_off_tether_on">테더링</string>
@@ -5383,6 +5400,7 @@ Google 동기화는 사용자가 어디에서든지 연락처, 일정 등에 액
     <string name="uicc_lock_summary">장치가 Sprint SIM에 의해서만 잠겨 있습니다</string>
     <string name="uicc_unlock">UICC 잠금 해제</string>
     <string name="uicc_unlock_summary">장치의 잠금이 해제되어 있습니다</string>
+    <string name="under_meters">%1dm 미만</string>
     <string name="uninstall_activity_text">%1$s은(는) 다음 앱의 일부입니다:</string>
     <string name="uninstall_all_blocked_profile_owner">이 앱은 일부 사용자나 프로필에 필요하며 다른 사용자를 위해 제거되었습니다.</string>
     <string name="uninstall_all_users_text">모든 사용자에 대해 제거</string>

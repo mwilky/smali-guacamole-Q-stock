@@ -4,6 +4,7 @@
 
 # interfaces
 .implements Landroidx/preference/PreferenceFragmentCompat$OnPreferenceStartFragmentCallback;
+.implements Lcom/oneplus/settings/OPOnlineConfigManager$OnSupportConfigCompleteParseListener;
 
 
 # static fields
@@ -47,6 +48,59 @@
 
 
 # virtual methods
+.method public OnSupportConfigParseCompleted()V
+    .locals 3
+
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v1, "OnSupportConfigParseCompleted-isSupportEnable:"
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-static {}, Lcom/oneplus/settings/OPOnlineConfigManager;->isSupportEnable()Z
+
+    move-result v1
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    const-string v1, "TopLevelSettings"
+
+    invoke-static {v1, v0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    const-class v0, Lcom/android/settings/support/SupportPreferenceController;
+
+    invoke-virtual {p0, v0}, Lcom/android/settings/homepage/TopLevelSettings;->use(Ljava/lang/Class;)Lcom/android/settingslib/core/AbstractPreferenceController;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/android/settings/support/SupportPreferenceController;
+
+    invoke-virtual {v0}, Lcom/android/settings/support/SupportPreferenceController;->getPreferenceKey()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-virtual {p0, v0}, Lcom/android/settings/homepage/TopLevelSettings;->findPreference(Ljava/lang/CharSequence;)Landroidx/preference/Preference;
+
+    move-result-object v1
+
+    if-eqz v1, :cond_0
+
+    invoke-static {}, Lcom/oneplus/settings/OPOnlineConfigManager;->isSupportEnable()Z
+
+    move-result v2
+
+    invoke-virtual {v1, v2}, Landroidx/preference/Preference;->setVisible(Z)V
+
+    :cond_0
+    return-void
+.end method
+
 .method public getCallbackFragment()Landroidx/fragment/app/Fragment;
     .locals 0
 
@@ -80,15 +134,29 @@
 .method protected getPreferenceScreenResId()I
     .locals 1
 
-    const v0, 0x7f1600f9
+    const v0, 0x7f1600fa
 
     return v0
 .end method
 
 .method public onAttach(Landroid/content/Context;)V
-    .locals 0
+    .locals 2
 
     invoke-super {p0, p1}, Lcom/android/settings/dashboard/DashboardFragment;->onAttach(Landroid/content/Context;)V
+
+    const-class v0, Lcom/android/settings/support/SupportPreferenceController;
+
+    invoke-virtual {p0, v0}, Lcom/android/settings/homepage/TopLevelSettings;->use(Ljava/lang/Class;)Lcom/android/settingslib/core/AbstractPreferenceController;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/android/settings/support/SupportPreferenceController;
+
+    invoke-virtual {p0}, Lcom/android/settings/homepage/TopLevelSettings;->getActivity()Landroidx/fragment/app/FragmentActivity;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Lcom/android/settings/support/SupportPreferenceController;->setActivity(Landroid/app/Activity;)V
 
     return-void
 .end method
@@ -116,6 +184,24 @@
 
     :cond_0
     return-object v0
+.end method
+
+.method public onPause()V
+    .locals 2
+
+    invoke-super {p0}, Lcom/android/settings/dashboard/DashboardFragment;->onPause()V
+
+    sget-object v0, Lcom/oneplus/settings/SettingsBaseApplication;->mApplication:Landroid/app/Application;
+
+    invoke-static {v0}, Lcom/oneplus/settings/OPOnlineConfigManager;->getInstence(Landroid/content/Context;)Lcom/oneplus/settings/OPOnlineConfigManager;
+
+    move-result-object v0
+
+    const/4 v1, 0x0
+
+    invoke-virtual {v0, v1}, Lcom/oneplus/settings/OPOnlineConfigManager;->setOnConfigCompleteParseListener(Lcom/oneplus/settings/OPOnlineConfigManager$OnSupportConfigCompleteParseListener;)V
+
+    return-void
 .end method
 
 .method public onPreferenceStartFragment(Landroidx/preference/PreferenceFragmentCompat;Landroidx/preference/Preference;)Z
@@ -180,8 +266,30 @@
     return v0
 .end method
 
+.method public onResume()V
+    .locals 1
+
+    invoke-super {p0}, Lcom/android/settings/dashboard/DashboardFragment;->onResume()V
+
+    sget-object v0, Lcom/oneplus/settings/SettingsBaseApplication;->mApplication:Landroid/app/Application;
+
+    invoke-static {v0}, Lcom/oneplus/settings/OPOnlineConfigManager;->getInstence(Landroid/content/Context;)Lcom/oneplus/settings/OPOnlineConfigManager;
+
+    move-result-object v0
+
+    invoke-virtual {v0, p0}, Lcom/oneplus/settings/OPOnlineConfigManager;->setOnConfigCompleteParseListener(Lcom/oneplus/settings/OPOnlineConfigManager$OnSupportConfigCompleteParseListener;)V
+
+    return-void
+.end method
+
 .method protected shouldForceRoundedIcon()Z
     .locals 2
+
+    invoke-virtual {p0}, Lcom/android/settings/homepage/TopLevelSettings;->getContext()Landroid/content/Context;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_0
 
     invoke-virtual {p0}, Lcom/android/settings/homepage/TopLevelSettings;->getContext()Landroid/content/Context;
 
@@ -196,6 +304,11 @@
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getBoolean(I)Z
 
     move-result v0
+
+    return v0
+
+    :cond_0
+    const/4 v0, 0x1
 
     return v0
 .end method

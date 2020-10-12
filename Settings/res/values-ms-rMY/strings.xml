@@ -3,9 +3,9 @@
     <string name="access_permissions">Aplikasi kebenaran</string>
     <string name="adb_over_network">ADB melalui rangkaian</string>
     <string name="adb_over_network_summary">Bolehkan penyahpepijatan TCP/IP melalui antara muka rangkaian (Wi‑Fi, rangkaian USB). Seting ini diset semula apabila dibut semula</string>
-    <string name="adb_over_network_warning">"AMARAN: Apabila ADB melalui rangkaian dibolehkan, telefon anda terbuka kepada pencerobohan pada semua rangkaian bersambung, termasuk rangkaian data GSM! 
+    <string name="adb_over_network_warning">"AMARAN: Apabila ADB melalui rangkaian dibolehkankan, telefon anda terbuka kepada pencerobohan pada semua rangkaian yang bersambung, termasuk rangkaian data GSM! 
 
-Hanya gunakan ciri ini apabila anda menyambung kepada rangkaian yang boleh dipercayai.
+Hanya gunakan ciri ini apabila anda bersambung kepada rangkaian dipercaya.
 
 Adakah anda benar-benar mahu membolehkan fungsi ini?"</string>
     <string name="add_fingerprints_dialog">Anda tidak mempunyai sebarang cap jari yang sediakan. Adakah anda ingin mendaftarkan cap jari anda?</string>
@@ -26,7 +26,7 @@ Hidupkan Mod Pesawat?"</string>
     <string name="alert_dialog_cancel">Batal</string>
     <string name="alert_slider_settings_title">Tetapan keutamaan</string>
     <string name="alert_slider_silent_title">Tetapan senyap</string>
-    <string name="alertslider_settings">Alert Slider</string>
+    <string name="alertslider_settings">Slaid amaran</string>
     <string name="alertslider_settings_soc_tri_state">Alert Slider</string>
     <string name="alertslider_settings_soc_tri_state_summary">Senyap, getaran, deringan</string>
     <string name="android_am">"PG "</string>
@@ -100,7 +100,7 @@ Hidupkan Mod Pesawat?"</string>
     <string name="color_picker_accent_color_message">Pilih warna serlah</string>
     <string name="color_picker_default">Lalai</string>
     <string name="color_picker_led_color_message">Pilih warna LED</string>
-    <string name="color_picker_message_default">Pilih warna pilihan anda.</string>
+    <string name="color_picker_message_default">Pilih warna keutamaan anda.</string>
     <string name="color_picker_unknown_label">Tidak diketahui</string>
     <string name="condition_cloud_summary">Klik untuk gunakan Perkhidmatan Awan untuk memastikan data anda tidak akan hilang</string>
     <string name="condition_cloud_title">Mula menggunakan Perkhidmatan Awan</string>
@@ -211,9 +211,9 @@ Hidupkan Mod Pesawat?"</string>
     <string name="hardware_keys_action_turn_off_screen">Padamkan skrin</string>
     <string name="hardware_keys_action_voice_search">Carian suara</string>
     <string name="hardware_keys_back_key_title">Butang kembali</string>
-    <string name="hardware_keys_double_tap_title">Tindakan ketik dua kali</string>
+    <string name="hardware_keys_double_tap_title">Tindakan ketuk dua kali</string>
     <string name="hardware_keys_home_key_title">Butang rumah</string>
-    <string name="hardware_keys_long_press_title">Tindakan tekan lama</string>
+    <string name="hardware_keys_long_press_title">Tindakan tekan panjang</string>
     <string name="hardware_keys_menu_key_title">Butang Terakhir</string>
     <string name="header_category_custom">Penyesuaian</string>
     <string name="high_power_app_text_nomal">%1$s Menghabiskan bateri anda</string>
@@ -248,6 +248,7 @@ Hidupkan Mod Pesawat?"</string>
     <string name="led_settings_title">Pemberitahuan LED</string>
     <string name="list_saved_fingerprints">Cap jari yang disimpan</string>
     <string name="list_saved_fingerprints_footer">Sehingga lima cap jari boleh disimpan. Ketik pada mana-mana cap jari disimpan di atas untuk menamakan semula atau memadam.</string>
+    <string name="location_text">Lokasi</string>
     <string name="lockpassword_choose_your_fingerprint_header">Cap jari</string>
     <string name="long_press_power_button">Tekan dan tahan butang kuasa</string>
     <string name="mail_application_title">Aplikasi mel</string>
@@ -262,10 +263,11 @@ Hidupkan Mod Pesawat?"</string>
     <string name="mobile_hotspot_airplane_off_error">Untuk menghidupkan Hotspot, sila matikan mod pesawat</string>
     <string name="mobile_hotspot_authoration_error">"Untuk menggunakan Hotspot Mudah Alih, anda perlu melanggan Perkhidmatan Hotspot Mudah Alih.
 
-Untuk melanggan Hotspot Mudah Alih, kunjungi Verizon saya atau hubungi khidmat pelanggan di (800) 922-0204."</string>
+Untuk melanggan Hotspot Mudah Alih, kunjungi Verizon Saya atau hubungi khidmat pelanggan di (800) 922-0204."</string>
     <string name="mobile_hotspot_data_off_error">Untuk menghidupkan Hotspot, sila hidupkan Data mudah alih</string>
     <string name="multi_app_label_badge">Selari %1$s</string>
     <string name="music_application_title">Aplikasi muzik</string>
+    <string name="nearest_station">Stesen terdekat</string>
     <string name="nfc_uicc_sim1">SIM 1</string>
     <string name="nfc_uicc_sim2">SIM 2</string>
     <string name="no_network">Tiada perkhidmatan rangkaian</string>
@@ -315,9 +317,9 @@ Untuk melanggan Hotspot Mudah Alih, kunjungi Verizon saya atau hubungi khidmat p
     <string name="oneplus_app_uninstall_remark">Sila pasang aplikasi pembayaran untuk menggunakan bayar cepat</string>
     <string name="oneplus_app_wechat">WeChat</string>
     <string name="oneplus_applications_settings_summary">Pemberitahuan aplikasi, Aplikasi Selari, kebenaran</string>
-    <string name="oneplus_applock_at_least_four_points">Melukis untuk termasuk sekurang-kurangnya 4 titik</string>
-    <string name="oneplus_applock_lockpassword_confirm_your_pin_header">Masukkan PIN</string>
-    <string name="oneplus_applock_need_to_unlock_wrong">PIN yang salah</string>
+    <string name="oneplus_applock_at_least_four_points">Lukis untuk termasuk sekurang-kurangnya 4 titik</string>
+    <string name="oneplus_applock_lockpassword_confirm_your_pin_header">Masuk PIN</string>
+    <string name="oneplus_applock_need_to_unlock_wrong">PIN salah</string>
     <string name="oneplus_applock_pattern_header">Lukis corak anda</string>
     <string name="oneplus_applock_wrong_pattern_header">Corak Salah</string>
     <string name="oneplus_apps_notifications">Aplikasi &amp; pemberitahuan</string>
@@ -497,10 +499,10 @@ Penjimat bateri dipadamkan secara automatik apabila peranti anda sedang mengecas
     <string name="oneplus_face_setup_unlock_settings_summary">"Buka Kunci Muka ialah cara yang cepat untuk membuka kunci telefon anda. Apa yang anda perlu lakukan hanyalah bangunkan telefon anda dan pandang ke arahnya, anda akan terus dapat menggunakannya.
 
 Amaran: Buka Kunci Muka adalah kurang selamat berbanding Cap Jari dan kata laluan"</string>
-    <string name="oneplus_face_setup_unlock_settings_title">Mari kita cuba Buka Kunci Muka</string>
+    <string name="oneplus_face_setup_unlock_settings_title">Mari kita cuba buka muka</string>
     <string name="oneplus_face_unlock_add_title">Tambah data muka</string>
-    <string name="oneplus_face_unlock_assistive_lighting_summary">Dalam situasi di mana kamera tidak dapat mengecam muka anda, skrin akan menyala untuk membantu kamera mengecam anda.</string>
-    <string name="oneplus_face_unlock_assistive_lighting_title">Pencahayaan bantuan Buka Kunci Muka</string>
+    <string name="oneplus_face_unlock_assistive_lighting_summary">Dalam situasi di mana kamera tidak dapat mengecam muka anda, skrin akan menyala untuk membantu kamera megecam anda.</string>
+    <string name="oneplus_face_unlock_assistive_lighting_title">Pencahayaan bantuan buka kunci muka</string>
     <string name="oneplus_face_unlock_choose_default_method">Kaedah Buka Kunci Muka Lalai</string>
     <string name="oneplus_face_unlock_choose_default_mode">Cara lalai untuk menggunakan Buka Kunci Muka</string>
     <string name="oneplus_face_unlock_choose_swipe_up_mode">Leret ke atas untuk buka kunci</string>
@@ -513,8 +515,8 @@ Amaran: Buka Kunci Muka adalah kurang selamat berbanding Cap Jari dan kata lalua
     <string name="oneplus_face_unlock_remove_dialog_title">Keluarkan muka?</string>
     <string name="oneplus_face_unlock_remove_title">Keluarkan data muka</string>
     <string name="oneplus_face_unlock_settings_summary">Gunakan muka untuk membuka kunci telefon anda</string>
-    <string name="oneplus_face_unlock_settings_title">Buka Kunci Muka</string>
-    <string name="oneplus_face_unlock_title">Buka Kunci Muka</string>
+    <string name="oneplus_face_unlock_settings_title">Buka kunci muka</string>
+    <string name="oneplus_face_unlock_title">Buka kunci muka</string>
     <string name="oneplus_faceunlock_introduction_risk_warning">Perhatian: Buka Kunci Muka adalah kurang selamat berbanding kaedah kunci skrin lain seperti PIN dan cap jari.</string>
     <string name="oneplus_faceunlock_introduction_title">Apabila kamera depan muncul, data muka anda akan dimasukkan</string>
     <string name="oneplus_favourite_contacts">Uruskan kenalan kegemaran</string>
@@ -533,9 +535,9 @@ Amaran: Buka Kunci Muka adalah kurang selamat berbanding Cap Jari dan kata lalua
     <string name="oneplus_fingerprint_gesture_camera_summary">Daripada skrin pemidang tilik, tekan lama pengesan cap jari untuk mengambil gambar</string>
     <string name="oneplus_fingerprint_gesture_camera_title">Tekan lama untuk mengambil gambar</string>
     <string name="oneplus_fingerprint_gesture_settings_title">Gerak isyarat cap jari</string>
-    <string name="oneplus_fingerprint_longpress_for_quickpay_summary">Tekan lama pengesan cap jari untuk melancarkan quick pay</string>
-    <string name="oneplus_fingerprint_quickpay_lock_swtch_summary">Tekan lama pengesan cap jari untuk melancarkan quick pay semasa telefon dikunci</string>
-    <string name="oneplus_fingerprint_sensor_longpress_for_quickpay_summary">Tekan lama pengesan cap jari untuk melancarkan quick pay semasa telefon dibuka</string>
+    <string name="oneplus_fingerprint_longpress_for_quickpay_summary">Tekan lama pengesan cap jari untuk melancarkan bayar cepat</string>
+    <string name="oneplus_fingerprint_quickpay_lock_swtch_summary">Tekan lama pengesan cap jari untuk melancarkan bayar cepat semasa telefon dikunci.</string>
+    <string name="oneplus_fingerprint_sensor_longpress_for_quickpay_summary">Tekan lama pengesan cap jari untuk melancarkan bayar cepat semasa telefon dibuka</string>
     <string name="oneplus_fingerprint_settings_list_title">Senarai cap jari</string>
     <string name="oneplus_fingerprint_swipe_for_notifications_summary">Gesel ke bawah pada pengesan cap jari untuk menyemak pemberitahuan anda, dan gesel ke atas untuk menutup panel pemberitahuan</string>
     <string name="oneplus_fingerprint_swipe_for_notifications_title">Gesel cap jari untuk pemberitahuan</string>
@@ -740,7 +742,7 @@ Perhatian: Cap jari anda mungkin kurang selamat berbanding corak atau PIN yang k
     <string name="oneplus_memc_video_theacme_title">Memperlancarkan gerakan hiper</string>
     <string name="oneplus_mobile_device_name_title">Nama telefon</string>
     <string name="oneplus_mode_choose">Pemilihan mod</string>
-    <string name="oneplus_mode_settings">Tetapan Alert Slider</string>
+    <string name="oneplus_mode_settings">Seting gelongsor amaran</string>
     <string name="oneplus_moderate">Sederhana</string>
     <string name="oneplus_more">Lagi</string>
     <string name="oneplus_motion_sensor_settings_title">Gerak isyarat sistem</string>
@@ -771,7 +773,7 @@ Perhatian: Cap jari anda mungkin kurang selamat berbanding corak atau PIN yang k
     <string name="oneplus_night_mode_open_tip">Sila hidupkan Mod Malam terlebih dahulu</string>
     <string name="oneplus_night_mode_sensor_summary">Bergantung pada keadaan cahaya ambien, mod malam akan menentukur suhu warna skrin secara automatik supaya sepadan dengan persekitaran. Ini boleh mengurangkan keletihan dan tekanan pada mata dan boleh membantu anda tidur lebih lena.</string>
     <string name="oneplus_night_mode_strong">Paling Cerah</string>
-    <string name="oneplus_night_mode_summary">Mod malam akan menentukur skrin kepada warna yang lebih hangat untuk mengurangkan keletihan dan tekanan pada mata. Ini boleh membantu anda tidur dengan lebih lena. Disyorkan untuk diaktifkan berasaskan jadual.</string>
+    <string name="oneplus_night_mode_summary">Mod malam akan menentukur skrin kepada warna yang lebih hangat untuk mengurangkan keletihan dan tekanan pada mata. Ini boleh membantu anda tidur dengan lebih lena. Disyorkan untuk diaktifkan berdasarkan jadual.</string>
     <string name="oneplus_night_mode_summary_no_sensor">Paparan skrin dalam mod malam akan menjadi lebih selesa dan membantu mengurangkan keletihan penglihatan.</string>
     <string name="oneplus_night_mode_weak">Lemah</string>
     <string name="oneplus_no_applications">Tiada aplikasi</string>
@@ -889,21 +891,21 @@ Perhatian: Cap jari anda mungkin kurang selamat berbanding corak atau PIN yang k
     <string name="oneplus_quick_turn_on_assistant_app">Aktifkan dengan pantas aplikasi pembantu</string>
     <string name="oneplus_quick_turn_on_assistant_app_summary">Tekan dan tahan butang kuasa selama 0.5s untuk mengaktifkan aplikasi pembantu dan 3s untuk mematikan telefon</string>
     <string name="oneplus_quick_turn_on_camera">Hidupkan kamera dengan cepat</string>
-    <string name="oneplus_quickpay">Quick pay</string>
+    <string name="oneplus_quickpay">Bayar cepat</string>
     <string name="oneplus_quickpay_confirm_changehomebutton">Adakah anda pasti anda hendak mengubah tindakan tekan lama butang Utama daripada \"%1$s\" ke \"Bayar Cepat\"?</string>
-    <string name="oneplus_quickpay_entry_summary">Tekan butang Laman Utama dengan lama untuk melancarkan quick pay</string>
+    <string name="oneplus_quickpay_entry_summary">Tekan butang Laman Utama dengan lama untuk melancarkan bayar cepat</string>
     <string name="oneplus_quickpay_instructions">Arahan</string>
     <string name="oneplus_quickpay_lock_swtch_summary">Butang Laman Utama tekan lama dengan jari berdaftar untuk melancarkan bayar cepat semasa telefon dikunci.</string>
-    <string name="oneplus_quickpay_lock_swtch_title">Screen off quick pay</string>
+    <string name="oneplus_quickpay_lock_swtch_title">Skrin padam bayar cepat</string>
     <string name="oneplus_quickpay_select_default_way">Pilih opsyen pembayaran lalai</string>
     <string name="oneplus_quickpay_unlock_swtch_summary">Butang Laman Utama tekan lama untuk melancarkan bayar cepat semasa telefon dibuka</string>
-    <string name="oneplus_quickpay_unlock_swtch_title">Screen on quick pay</string>
-    <string name="oneplus_quickpay_way_alipay_qrcode">Alipay QR code</string>
-    <string name="oneplus_quickpay_way_alipay_scanning">Alipay scanning</string>
+    <string name="oneplus_quickpay_unlock_swtch_title">Skrin hidup bayar cepat</string>
+    <string name="oneplus_quickpay_way_alipay_qrcode">Kod Alipay QR</string>
+    <string name="oneplus_quickpay_way_alipay_scanning">Imbasan Alipay</string>
     <string name="oneplus_quickpay_way_paytm">Paytm</string>
     <string name="oneplus_quickpay_way_wecaht_qrcode">Kod WeChat QR</string>
     <string name="oneplus_quickpay_way_wecaht_ridecode">Kod QR WeChat transit</string>
-    <string name="oneplus_quickpay_way_wecaht_scanning">Mengimbas WeChat</string>
+    <string name="oneplus_quickpay_way_wecaht_scanning">Imbasan WeChat</string>
     <string name="oneplus_ramboost_description">Dengan mengetahui cara anda menggunakan telefon anda, Penggalak RAM boleh meramalkan aplikasi yang anda ingin lancarkan dan data untuk dimuatkan, memanfaatkan sepenuhnya kapasiti RAM untuk mempercepatkan prestasi kegunaan harian anda.</string>
     <string name="oneplus_ramboost_switch_summary">Meningkatkan penggunaan RAM mengikut penggunaan anda</string>
     <string name="oneplus_ramboost_switch_title">Dayakan Penggalak RAM</string>
@@ -1070,6 +1072,7 @@ Perhatian:
     <string name="oneplus_silent_mode_on">Mod senyap dihidupkan</string>
     <string name="oneplus_silent_mode_soc_tri_state_summary">Panggilan dan pemberitahuan akan disenyapkan, kecuali penggera</string>
     <string name="oneplus_silent_mode_summary">Panggilan dan pemberitahuan akan disenyapkan, kecuali penggera</string>
+    <string name="oneplus_silent_notifications_status_bar">Sembunyikan pemberitahuan senyap dalam bar status</string>
     <string name="oneplus_sim1_ringtone_switch">Kad SIM 1</string>
     <string name="oneplus_sim2_ringtone_switch">Kad SIM 2</string>
     <string name="oneplus_simcard_title">SIM</string>
@@ -1160,7 +1163,7 @@ Perhatian:
     <string name="oneplus_tools_summary_U30">Mod permainan, mod poket, penjadualan kuasa dihidupkan/dimatikan</string>
     <string name="oneplus_tools_summary_no_gamingmode">Loker aplikasi, aplikasi selari</string>
     <string name="oneplus_tools_title">Utiliti</string>
-    <string name="oneplus_top_level_accounts_summary">OnePlus account, other accounts</string>
+    <string name="oneplus_top_level_accounts_summary">Akaun OnePlus, akaun lain</string>
     <string name="oneplus_top_level_apps_and_notifs_summary">Aplikasi lalai, kebenaran</string>
     <string name="oneplus_top_level_buttons_and_gestures_summary">Alert Slider, bar navigasi &amp; gerak isyarat</string>
     <string name="oneplus_top_level_cloud_h2_summary">Segerakkan data dengan awan, Cari Telefon saya</string>
@@ -1249,8 +1252,18 @@ Menetapkan rangkaian sebagai tersembunyi tidak akan mengubah tetapan penghala an
     <string name="op_audio_settings">Penala Audio</string>
     <string name="op_auto_power_saving">Penjimatan kuasa automatik</string>
     <string name="op_auto_power_saving_summary">Bertukar kepada resolusi yang sesuai secara automatik tanpa menghabiskan bateri</string>
+    <string name="op_charging_Station_mute_notifications">Bisukan Pemberitahuan</string>
+    <string name="op_charging_footer_text">Anda akan dimaklumkan mengenai mana-mana stesen pengecasan yang berdekatan apabila anda melawati lokasi rakan kongsi seperti lapangan terbang atau acara seperti OnePlus Pop-up.</string>
     <string name="op_charging_optimization">Mengoptimumkan pengecasan</string>
     <string name="op_charging_optimization_summary">Mengoptimumkan pola pengecasan mengikut tabiat penggunaan anda</string>
+    <string name="op_charging_station">Stesen Pengecasan Berdekatan</string>
+    <string name="op_charging_station_no_station">Tiada stesen berdekatan</string>
+    <string name="op_charging_station_summary">Maklumkan apabila terdapat stesen pengecasan yang berdekatan</string>
+    <string name="op_charging_stations">Stesen pengecasan</string>
+    <string name="op_charging_stations_off_description">Untuk mencari stesen pengecasan, kebenaran lokasi diperlukan untuk mengesan isyarat BLE. Sila berikan akses kepada lokasi untuk mula menggunakan ciri ini.</string>
+    <string name="op_charging_stations_off_header">Untuk mencari stesen pengecasan, kebenaran lokasi diperlukan untuk mengesan isyarat BLE. Sila berikan akses kepada lokasi untuk mula menggunakan ciri ini.</string>
+    <string name="op_charing_station_mute_notifications_description">Pemberitahuan akan dibisukan selama 6 jam.</string>
+    <string name="op_charing_stations_mute_dynamic_time" formatted="false">Pemberitahuan dibisukan selama %1d jam %2d minit</string>
     <string name="op_china_mobile">CMCC</string>
     <string name="op_china_telecom">CTCC</string>
     <string name="op_china_unicom">CUCC</string>
@@ -1266,17 +1279,21 @@ Menetapkan rangkaian sebagai tersembunyi tidak akan mengubah tetapan penghala an
     <string name="op_default_apps_summary">Home, pelayar</string>
     <string name="op_default_luncher_title">Aplikasi Home</string>
     <string name="op_dnd_summary">Jangan Ganggu</string>
+    <string name="op_enable_location_services">Untuk mencari dan menjejaki stesen pengecasan yang berdekatan, sila dayakan perkhidmatan lokasi</string>
+    <string name="op_enable_text">Bolehkan</string>
     <string name="op_face_unlock_set_unlock_password">Buka Kunci Muka + Kata Laluan</string>
     <string name="op_face_unlock_set_unlock_pattern">Buka Kunci Muka + Corak</string>
     <string name="op_face_unlock_set_unlock_pin">Buka Kunci Muka + PIN</string>
     <string name="op_face_unlock_skip_face">Teruskan tanpa buka kunci muka</string>
     <string name="op_failed_to_get_data">Gagal untuk mendapatkan semula data</string>
     <string name="op_fetch_data_in_process">Sedang memuat</string>
+    <string name="op_find_charging_stations">Cari Stesen</string>
     <string name="op_fragment">Pendek</string>
     <string name="op_gamespace">Ruang Permainan</string>
     <string name="op_high_power_app_manager">Pengurusan aplikasi tamak kuasa</string>
-    <string name="op_light_mode_title">Cerah</string>
-    <string name="op_linked_launch_summary">Uruskan aplikasi boleh dipautkan pelancaran di latar belakang</string>
+    <string name="op_keep_location_services">Untuk mencari dan menjejaki stesen pengecasan yang berdekatan, terus mendayakan perkhidmatan lokasi</string>
+    <string name="op_light_mode_title">Ringan</string>
+    <string name="op_linked_launch_summary">Uruskan aplikasi berpaut pelancaran di latar belakang</string>
     <string name="op_linked_launch_title">Pelancaran secara automatik aplikasi</string>
     <string name="op_lockpassword_choose_your_password_header_for_face">Untuk menggunakan Buka Kunci Muka, tetapkan kata laluan</string>
     <string name="op_lockpassword_choose_your_pattern_header_for_face">Untuk menggunakan Buka Kunci Muka, tetapkan corak</string>
@@ -1485,13 +1502,14 @@ Adakah anda mahu menetapkan semula tetapan sistem? Anda tidak boleh membuat asal
     <string name="touchscreen_double_tap_to_wake_gesture_title">Ketik dua kali untuk bangunkan</string>
     <string name="touchscreen_flashlight_gesture_summary">"Lukis 'V' untuk togol lampu suluh"</string>
     <string name="touchscreen_flashlight_gesture_title">Togol lampu suluh</string>
-    <string name="touchscreen_music_gesture_summary">Lukis|| dengan kedua-dua jari untuk memainkan atau menjeda muzik. Lukis &lt; atau> untuk runut seterusnya</string>
+    <string name="touchscreen_music_gesture_summary">Lukis|| dengan kedua-dua jari untuk memainkan atau menjeda muzik. Lukis &lt; atau > untuk runut seterusnya</string>
     <string name="touchscreen_music_gesture_title">Kawalan muzik</string>
     <string name="uicc_alert_message">UICC diperlukan untuk log masuk ke rangkaian WiFi dengan SSID VerizonWiFiAccess</string>
     <string name="uicc_all_lock_summary">Peranti anda dikunci oleh Sprint atau SIM Antarabangsa</string>
     <string name="uicc_lock_summary">Peranti anda dikuncikan hanya untuk kad SIM Sprint</string>
     <string name="uicc_unlock">Buka kunci UICC</string>
     <string name="uicc_unlock_summary">Peranti anda telah dibuka kunci</string>
+    <string name="under_meters">Kurang %1d meter</string>
     <string name="uninstall_activity_text">%1$s adalah sebahagian daripada aplikasi berikut:</string>
     <string name="uninstall_all_blocked_profile_owner">Aplikasi ini diperlukan untuk sesetengah pengguna atau profil dan dinyahpasang untuk orang lain</string>
     <string name="uninstall_application_text">Adakah anda mahu nyahpasang aplikasi ini?</string>

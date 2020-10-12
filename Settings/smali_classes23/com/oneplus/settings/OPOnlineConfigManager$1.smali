@@ -34,9 +34,7 @@
 .method public handleMessage(Landroid/os/Message;)V
     .locals 3
 
-    invoke-static {}, Lcom/oneplus/settings/OPOnlineConfigManager;->access$000()Ljava/lang/String;
-
-    move-result-object v0
+    const-string v0, "OPOnlineConfigManager"
 
     const-string v1, "settings handleMessage...."
 
@@ -45,6 +43,10 @@
     iget v0, p1, Landroid/os/Message;->what:I
 
     const/4 v1, 0x1
+
+    if-eq v0, v1, :cond_1
+
+    const/4 v1, 0x2
 
     if-eq v0, v1, :cond_0
 
@@ -55,15 +57,11 @@
 
     iget-object v1, p0, Lcom/oneplus/settings/OPOnlineConfigManager$1;->this$0:Lcom/oneplus/settings/OPOnlineConfigManager;
 
-    invoke-static {v1}, Lcom/oneplus/settings/OPOnlineConfigManager;->access$100(Lcom/oneplus/settings/OPOnlineConfigManager;)Landroid/content/Context;
+    invoke-static {v1}, Lcom/oneplus/settings/OPOnlineConfigManager;->access$000(Lcom/oneplus/settings/OPOnlineConfigManager;)Landroid/content/Context;
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/oneplus/settings/OPOnlineConfigManager$1;->this$0:Lcom/oneplus/settings/OPOnlineConfigManager;
-
-    invoke-static {v2}, Lcom/oneplus/settings/OPOnlineConfigManager;->access$200(Lcom/oneplus/settings/OPOnlineConfigManager;)Ljava/lang/String;
-
-    move-result-object v2
+    const-string v2, "SlaOnlineConfig"
 
     invoke-direct {v0, v1, v2}, Lcom/oneplus/config/ConfigGrabber;-><init>(Landroid/content/Context;Ljava/lang/String;)V
 
@@ -73,7 +71,30 @@
 
     iget-object v2, p0, Lcom/oneplus/settings/OPOnlineConfigManager$1;->this$0:Lcom/oneplus/settings/OPOnlineConfigManager;
 
-    invoke-static {v2, v1}, Lcom/oneplus/settings/OPOnlineConfigManager;->access$300(Lcom/oneplus/settings/OPOnlineConfigManager;Lorg/json/JSONArray;)V
+    invoke-static {v2, v1}, Lcom/oneplus/settings/OPOnlineConfigManager;->access$200(Lcom/oneplus/settings/OPOnlineConfigManager;Lorg/json/JSONArray;)V
+
+    goto :goto_0
+
+    :cond_1
+    new-instance v0, Lcom/oneplus/config/ConfigGrabber;
+
+    iget-object v1, p0, Lcom/oneplus/settings/OPOnlineConfigManager$1;->this$0:Lcom/oneplus/settings/OPOnlineConfigManager;
+
+    invoke-static {v1}, Lcom/oneplus/settings/OPOnlineConfigManager;->access$000(Lcom/oneplus/settings/OPOnlineConfigManager;)Landroid/content/Context;
+
+    move-result-object v1
+
+    const-string v2, "ROM_APP_OPSettings"
+
+    invoke-direct {v0, v1, v2}, Lcom/oneplus/config/ConfigGrabber;-><init>(Landroid/content/Context;Ljava/lang/String;)V
+
+    invoke-virtual {v0}, Lcom/oneplus/config/ConfigGrabber;->grabConfig()Lorg/json/JSONArray;
+
+    move-result-object v1
+
+    iget-object v2, p0, Lcom/oneplus/settings/OPOnlineConfigManager$1;->this$0:Lcom/oneplus/settings/OPOnlineConfigManager;
+
+    invoke-static {v2, v1}, Lcom/oneplus/settings/OPOnlineConfigManager;->access$100(Lcom/oneplus/settings/OPOnlineConfigManager;Lorg/json/JSONArray;)V
 
     nop
 

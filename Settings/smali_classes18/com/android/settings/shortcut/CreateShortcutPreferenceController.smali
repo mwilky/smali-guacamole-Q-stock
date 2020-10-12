@@ -254,7 +254,7 @@
 
     invoke-static {v8, v7}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
-    const v7, 0x7f080231
+    const v7, 0x7f080264
 
     invoke-static {p0, v7}, Landroid/graphics/drawable/Icon;->createWithResource(Landroid/content/Context;I)Landroid/graphics/drawable/Icon;
 
@@ -303,7 +303,7 @@
 
     iget v2, v0, Landroid/content/pm/ActivityInfo;->icon:I
 
-    const v3, 0x7f0d02ca
+    const v3, 0x7f0d02ce
 
     invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -326,7 +326,7 @@
     goto :goto_0
 
     :cond_0
-    const v1, 0x7f080231
+    const v1, 0x7f080264
 
     invoke-static {p0, v1}, Landroid/graphics/drawable/Icon;->createWithResource(Landroid/content/Context;I)Landroid/graphics/drawable/Icon;
 
@@ -579,7 +579,7 @@
 
     iget v5, v2, Landroid/content/pm/ActivityInfo;->icon:I
 
-    const v6, 0x7f0d02c9
+    const v6, 0x7f0d02cd
 
     iget-object v7, p0, Lcom/android/settings/shortcut/CreateShortcutPreferenceController;->mContext:Landroid/content/Context;
 

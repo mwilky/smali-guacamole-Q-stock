@@ -54,7 +54,7 @@
 
     iget-object v0, p0, Lcom/android/settings/notification/NotificationAssistantPicker$CandidateNone;->mContext:Landroid/content/Context;
 
-    const v1, 0x7f120b5d
+    const v1, 0x7f120b5f
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

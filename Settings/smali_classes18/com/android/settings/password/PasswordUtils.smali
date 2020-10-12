@@ -17,14 +17,14 @@
 .end method
 
 .method public static crashCallingApplication(Landroid/os/IBinder;Ljava/lang/String;)V
-    .locals 7
+    .locals 8
 
     invoke-static {}, Landroid/app/ActivityManager;->getService()Landroid/app/IActivityManager;
 
-    move-result-object v6
+    move-result-object v7
 
     :try_start_0
-    invoke-interface {v6, p0}, Landroid/app/IActivityManager;->getLaunchedFromUid(Landroid/os/IBinder;)I
+    invoke-interface {v7, p0}, Landroid/app/IActivityManager;->getLaunchedFromUid(Landroid/os/IBinder;)I
 
     move-result v1
 
@@ -38,11 +38,13 @@
 
     move-result-object v3
 
-    move-object v0, v6
+    const/4 v6, 0x0
+
+    move-object v0, v7
 
     move-object v5, p1
 
-    invoke-interface/range {v0 .. v5}, Landroid/app/IActivityManager;->crashApplication(IILjava/lang/String;ILjava/lang/String;)V
+    invoke-interface/range {v0 .. v6}, Landroid/app/IActivityManager;->crashApplication(IILjava/lang/String;ILjava/lang/String;Z)V
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 

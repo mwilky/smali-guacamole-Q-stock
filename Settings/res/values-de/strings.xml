@@ -438,7 +438,7 @@ Halte die Geräte einfach aneinander, am besten Rückseite an Rückseite, und be
     <string name="app_permissions">Berechtigungsmanager</string>
     <string name="app_permissions_summary">Apps, die %1$s verwenden</string>
     <string name="app_permissions_warning_message">Durch die Deaktivierung von Berechtigungen wird die Anwendung möglicherweise nicht mehr ordnungsgemäß ausgeführt. Bitte vorsichtig vorgehen.</string>
-    <string name="app_permissions_warning_title">Warnung</string>
+    <string name="app_permissions_warning_title">Achtung</string>
     <string name="app_process_limit_title">Limit für Hintergrundprozesse</string>
     <string name="app_restrictions_custom_label">App-Beschränkungen festlegen</string>
     <string name="app_sees_restricted_accounts">Diese App darf auf deine Konten zugreifen.</string>
@@ -2023,10 +2023,10 @@ Du kannst diese Einstellung jederzeit unter \"Einstellungen\" > \"Apps &amp; Ben
     <string name="homepage_all_settings">Alle Einstellungen</string>
     <string name="homepage_condition_footer_content_description">Minimieren</string>
     <string name="homepage_personal_settings">Vorschläge</string>
-    <string name="hotspot_tip_message" formatted="false">"Der mobile Hotspot teilt deine mobilen Daten mit anderen WLAN-fähigen Geräten. So verbindest du dich mit deinem mobilen Hotspot: \u0009 
- 1: Aktiviere Wi-Fi auf dem anderen Gerät.
- 2: Wähle %s in der Liste der verfügbaren Wi-Fi-Netzwerke aus. 
- 3: Wenn ein Passwort benötigt wird, gib %s ein. Um den Akku zu schonen, lasse dein Telefon angeschlossen, wenn du den mobilen Hotspot verwendest. "</string>
+    <string name="hotspot_tip_message" formatted="false">"Der mobile Hotspot teilt Ihre mobilen Daten mit anderen WLAN-fähigen Geräten. So verbinden Sie sich mit Ihrem mobilen Hotspot: \u0009 
+ 1: Aktivieren Sie Wi-Fi auf dem anderen Gerät.
+ 2: Wählen Sie %s in der Liste der verfügbaren Wi-Fi-Netzwerke aus. 
+ 3: Wenn ein Passwort benötigt wird, geben Sie %s. Um den Akku zu schonen, lassen Sie Ihr Telefon angeschlossen, wenn Sie den mobilen Hotspot verwenden. "</string>
     <string name="hotspot_tip_title">Mobiler Hotspot</string>
     <string name="hwui_force_dark_summary">Apps werden nicht gezwungen, den dunklen Modus zu verwenden</string>
     <string name="hwui_force_dark_title">Erzwingen des dunklen Modus außer Kraft setzen</string>
@@ -2313,6 +2313,7 @@ Du kannst diese Einstellung jederzeit unter \"Einstellungen\" > \"Apps &amp; Ben
     <string name="location_settings_title">Standort</string>
     <string name="location_sources_heading">Standortquellen</string>
     <string name="location_street_level">Apps dürfen meinen Standort mithilfe von GPS auf meinem Telefon bestimmen.</string>
+    <string name="location_text">Standort</string>
     <string name="location_title">Mein Standort</string>
     <string name="lock_after_timeout">Automatisch sperren</string>
     <string name="lock_after_timeout_summary">%1$s nach Aktivierung des Ruhemodus</string>
@@ -2710,6 +2711,7 @@ Durch Umschalten zu %1$s wird dein %2$s-Dienst nicht beendet."</string>
     <string name="my_device_info_account_preference_title">Konto</string>
     <string name="my_device_info_device_name_preference_title">Gerätename</string>
     <string name="n_cacrts">%d CA-Zertifikate</string>
+    <string name="nearest_station">Nächstgelegene Station</string>
     <string name="network_4G">4G (empfohlen)</string>
     <string name="network_connected">Verbunden</string>
     <string name="network_connecting">Verbindung wird hergestellt…</string>
@@ -3466,7 +3468,7 @@ Hinweis: Ihr Fingerabdruck ist möglicherweise weniger sicher als ein starkes Mu
     <string name="oneplus_none_default_gallery">Keine Standard-Galerie</string>
     <string name="oneplus_none_default_music">Kein Standard-Musikplayer</string>
     <string name="oneplus_normal_clear_way">Normal bereinigen</string>
-    <string name="oneplus_normal_clear_way_summary">Aufgabenliste und Cache bereinigen, ohne Hintergrundprozesse zu bereinigen.</string>
+    <string name="oneplus_normal_clear_way_summary">Aufgabenliste und Cache löschen, ohne Hintergrundprozesse zu löschen.</string>
     <string name="oneplus_not_disturb_on">Bitte nicht stören aktiviert</string>
     <string name="oneplus_not_show">Dies nicht erneut anzeigen</string>
     <string name="oneplus_notch_display_area">Notch</string>
@@ -3539,7 +3541,7 @@ Hinweis: Ihr Fingerabdruck ist möglicherweise weniger sicher als ein starkes Mu
     <string name="oneplus_preference_settings_behavior">Einstellungen</string>
     <string name="oneplus_preference_settings_custom_time">Automatisch ein- und ausschalten</string>
     <string name="oneplus_preference_settings_manual_open">Status</string>
-    <string name="oneplus_preference_settings_turn_off_time">Bis</string>
+    <string name="oneplus_preference_settings_turn_off_time">An</string>
     <string name="oneplus_preference_settings_turn_on">\"Bitte nicht stören\" aktivieren</string>
     <string name="oneplus_preference_settings_turn_on_time">Von</string>
     <string name="oneplus_prior_to_use_you_need_to">Vor der Verwendung müssen Sie:</string>
@@ -3750,6 +3752,7 @@ Hinweis:
     <string name="oneplus_silent_mode_on">Stummschalten-Modus aktiviert</string>
     <string name="oneplus_silent_mode_soc_tri_state_summary">Anrufe und Benachrichtigungen werden mit Ausnahme von Alarmen stummgeschaltet</string>
     <string name="oneplus_silent_mode_summary">Anrufe und Benachrichtigungen werden mit Ausnahme von Alarmen stummgeschaltet</string>
+    <string name="oneplus_silent_notifications_status_bar">Stille Benachrichtigung in der Statusleiste ausblenden</string>
     <string name="oneplus_sim1_ringtone_switch">SIM-Karte 1</string>
     <string name="oneplus_sim2_ringtone_switch">SIM-Karte 2</string>
     <string name="oneplus_simcard_title">SIM</string>
@@ -3840,7 +3843,7 @@ Hinweis:
     <string name="oneplus_tools_summary_U30">Spielmodus, Pocket-Modus, geplantes Ein-/Ausschalten</string>
     <string name="oneplus_tools_summary_no_gamingmode">App Locker, parallele Apps</string>
     <string name="oneplus_tools_title">Dienstprogramme</string>
-    <string name="oneplus_top_level_accounts_summary">OnePlus account, other accounts</string>
+    <string name="oneplus_top_level_accounts_summary">OnePlus Konto, andere Konten</string>
     <string name="oneplus_top_level_apps_and_notifs_summary">Standard-Apps, Berechtigungen</string>
     <string name="oneplus_top_level_buttons_and_gestures_summary">Alert Slider, Navigationsleiste &amp; -gesten</string>
     <string name="oneplus_top_level_cloud_h2_summary">Daten mit Cloud synchronisieren, Mein Telefon finden</string>
@@ -3855,7 +3858,7 @@ Hinweis:
     <string name="oneplus_top_level_system_summary">Sprache &amp; Tastatur, Uhrzeit, Reset, System-Updates</string>
     <string name="oneplus_top_level_system_summary_verizon">Sprache &amp; Tastatur, Uhrzeit, Reset</string>
     <string name="oneplus_touch_vibrate">Vibration bei Berührung</string>
-    <string name="oneplus_turn_off_time">Bis</string>
+    <string name="oneplus_turn_off_time">An</string>
     <string name="oneplus_turn_on_feature_cancel">ABBRECHEN</string>
     <string name="oneplus_turn_on_feature_ok">EINSCHALTEN</string>
     <string name="oneplus_turn_on_time">Von</string>
@@ -3930,8 +3933,18 @@ Wird das Netzwerk als verborgen eingestellt, ändern sich die Einstellungen Ihre
     <string name="op_audio_settings">Audio Tuner</string>
     <string name="op_auto_power_saving">Automatisches Stromsparen</string>
     <string name="op_auto_power_saving_summary">Automatisch zur geeigneten Auflösung ohne Akkuverbrauch wechseln</string>
+    <string name="op_charging_Station_mute_notifications">Benachrichtigungen stummschalten</string>
+    <string name="op_charging_footer_text">Du wirst über Ladestationen in der Nähe benachrichtigt, wenn du Partnerstandorte wie Flughäfen oder OnePlus Ereignisse wie Pop-ups besuchst.</string>
     <string name="op_charging_optimization">Optimiertes Aufladen</string>
     <string name="op_charging_optimization_summary">Das Aufladeverhalten entsprechend Ihrer Nutzungsgewohnheiten optimieren</string>
+    <string name="op_charging_station">Ladestationen in der Nähe</string>
+    <string name="op_charging_station_no_station">Keine Ladestationen in der Nähe</string>
+    <string name="op_charging_station_summary">Bei Ladestation in der Nähe benachrichtigen</string>
+    <string name="op_charging_stations">Ladestationen</string>
+    <string name="op_charging_stations_off_description">Bei der Suche nach Ladestationen ist die Berechtigung für Standorterkennung zum Erkennen von BLE-Baken erforderlich. Bitte stelle den Zugang zum Standort bereit, um diese Funktion zu verwenden.</string>
+    <string name="op_charging_stations_off_header">Bei der Suche nach Ladestationen ist die Berechtigung für Standorterkennung erforderlich, um BLE-Baken zu erkennen. Bitte stelle den Zugang zum Standort bereit, um diese Funktion zu verwenden.</string>
+    <string name="op_charing_station_mute_notifications_description">Benachrichtigung wird für 6 Stunden stummgeschaltet.</string>
+    <string name="op_charing_stations_mute_dynamic_time" formatted="false">Benachrichtigung für %1d Stunden %2d Minuten stummgeschaltet</string>
     <string name="op_china_mobile">CMCC</string>
     <string name="op_china_telecom">CTCC</string>
     <string name="op_china_unicom">CUCC</string>
@@ -3947,15 +3960,19 @@ Wird das Netzwerk als verborgen eingestellt, ändern sich die Einstellungen Ihre
     <string name="op_default_apps_summary">Start(programm), Browser</string>
     <string name="op_default_luncher_title">Launcher (Start-App)</string>
     <string name="op_dnd_summary">Bitte nicht stören</string>
+    <string name="op_enable_location_services">Zum Finden von Ladestationen in der Nähe aktiviere bitte die Standortdienste.</string>
+    <string name="op_enable_text">Aktivieren</string>
     <string name="op_face_unlock_set_unlock_password">Gesichtsentsperrung (Face Unlock) + Passwort</string>
     <string name="op_face_unlock_set_unlock_pattern">Gesichtsentsperrung (Face Unlock) + Muster</string>
     <string name="op_face_unlock_set_unlock_pin">Gesichtsentsperrung (Face Unlock) + PIN</string>
     <string name="op_face_unlock_skip_face">Ohne Gesichtsentsperrung fortfahren</string>
     <string name="op_failed_to_get_data">Fehler beim Abrufen der Daten</string>
     <string name="op_fetch_data_in_process">Laden</string>
+    <string name="op_find_charging_stations">Stationen suchen</string>
     <string name="op_fragment">Kurz</string>
     <string name="op_gamespace">Game Space</string>
     <string name="op_high_power_app_manager">Apps mit hohem Leistungsverbrauch verwaltet</string>
+    <string name="op_keep_location_services">Lasse die Standortdienste aktiviert, um Ladestationen in der Nähe zu finden.</string>
     <string name="op_light_mode_title">Hell</string>
     <string name="op_linked_launch_summary">Die Verwaltung der Apps kann im Hintergrund ausgeführt werden</string>
     <string name="op_linked_launch_title">Auto-Start der Apps</string>
@@ -4400,7 +4417,7 @@ Dies hat keinen Einfluss auf Ihre heruntergeladenen Apps, Ihre persönlichen Dat
 "<li>Kontoeinstellungen</li></string>
     <string name="reset_system_settings_dialog_message">"Durch das Zurücksetzen von Systemeinstellungen werden einige der von Ihnen vorgenommenen Anpassungen geändert, z. B. Ihr Klingelton, die Bildschirmhelligkeit und das Ansprechverhalten der Tastatur.
 Möchten Sie Systemeinstellungen zurücksetzen? Sie können diese Aktion nicht rückgängig machen"</string>
-    <string name="reset_system_settings_dialog_title">Warnung</string>
+    <string name="reset_system_settings_dialog_title">Achtung</string>
     <string name="reset_system_settings_title">Einstellungen zurücksetzen</string>
     <string name="restore_default_apn">Standard-APN-Einstellungen werden wiederhergestellt</string>
     <string name="restore_default_apn_completed">Zurücksetzen auf Standard-APN-Einstellungen abgeschlossen</string>
@@ -5384,6 +5401,7 @@ Mit dieser Funktion von Google kannst du deine Daten synchronisieren, um auf dei
     <string name="uicc_lock_summary">Ihr Gerät wird nur von Sprint-SIMs gesperrt</string>
     <string name="uicc_unlock">UICC-Entsperrung</string>
     <string name="uicc_unlock_summary">Ihr Gerät ist entsperrt</string>
+    <string name="under_meters">Unter %1d Meter</string>
     <string name="uninstall_activity_text">%1$s ist Teil der folgenden app:</string>
     <string name="uninstall_all_blocked_profile_owner">Diese App ist für einige Benutzer oder Profile erforderlich, wurde aber bei anderen deinstalliert</string>
     <string name="uninstall_all_users_text">Für alle Nutzer deinstallieren</string>

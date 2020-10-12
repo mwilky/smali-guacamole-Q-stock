@@ -91,7 +91,7 @@
 
     iget-object v5, p0, Lcom/android/settings/RadioInfo$11;->this$0:Lcom/android/settings/RadioInfo;
 
-    const v6, 0x7f12129a
+    const v6, 0x7f1212ae
 
     invoke-virtual {v5, v6}, Lcom/android/settings/RadioInfo;->getString(I)Ljava/lang/String;
 
@@ -102,7 +102,7 @@
     :cond_0
     iget-object v5, p0, Lcom/android/settings/RadioInfo$11;->this$0:Lcom/android/settings/RadioInfo;
 
-    const v6, 0x7f121299
+    const v6, 0x7f1212ad
 
     invoke-virtual {v5, v6}, Lcom/android/settings/RadioInfo;->getString(I)Ljava/lang/String;
 
@@ -113,7 +113,7 @@
 
     iget-object v6, p0, Lcom/android/settings/RadioInfo$11;->this$0:Lcom/android/settings/RadioInfo;
 
-    const v7, 0x7f121296
+    const v7, 0x7f1212aa
 
     invoke-virtual {v6, v7}, Lcom/android/settings/RadioInfo;->getString(I)Ljava/lang/String;
 
@@ -121,7 +121,7 @@
 
     iget-object v7, p0, Lcom/android/settings/RadioInfo$11;->this$0:Lcom/android/settings/RadioInfo;
 
-    const v8, 0x7f121297
+    const v8, 0x7f1212ab
 
     invoke-virtual {v7, v8}, Lcom/android/settings/RadioInfo;->getString(I)Ljava/lang/String;
 
@@ -129,7 +129,7 @@
 
     iget-object v8, p0, Lcom/android/settings/RadioInfo$11;->this$0:Lcom/android/settings/RadioInfo;
 
-    const v9, 0x7f121298
+    const v9, 0x7f1212ac
 
     const/4 v10, 0x5
 
@@ -211,7 +211,7 @@
 
     iget-object v10, p0, Lcom/android/settings/RadioInfo$11;->this$0:Lcom/android/settings/RadioInfo;
 
-    const v11, 0x7f12129b
+    const v11, 0x7f1212af
 
     invoke-virtual {v10, v11}, Lcom/android/settings/RadioInfo;->getString(I)Ljava/lang/String;
 

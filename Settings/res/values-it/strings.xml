@@ -1638,7 +1638,7 @@ Se il problema persiste, potresti dover disinstallare l'app per migliorare le pr
     <string name="doze_always_on_summary">Mostra ora, icone di notifica e altre informazioni. Utilizzo elevato della batteria.</string>
     <string name="doze_always_on_title">Sempre attivo</string>
     <string name="doze_summary">Schermo di attivazione alla ricezione di notifiche.</string>
-    <string name="doze_title">Display ambient</string>
+    <string name="doze_title">Schermo Ambient</string>
     <string name="draw_overlay">Mostra sopra altre app</string>
     <string name="dsds_dialog_cancel">Annulla</string>
     <string name="dsds_dialog_confirm">Riavvia</string>
@@ -1877,7 +1877,7 @@ Per ulteriori informazioni, rivolgiti all'amministratore dell'organizzazione."</
     <string name="fingerprint_manage">Gestione impronte digitali</string>
     <string name="fingerprint_manage_category_title">Gestisci impronte digitali</string>
     <string name="fingerprint_next">Avanti</string>
-    <string name="fingerprint_not_recognized">Non riconosciuto</string>
+    <string name="fingerprint_not_recognized">Non riconosciuta</string>
     <string name="fingerprint_password_hint">Inserisci la password di backup</string>
     <string name="fingerprint_password_manage_title">Impronta digitale</string>
     <string name="fingerprint_pin_hint">Inserisci il PIN di backup</string>
@@ -1934,7 +1934,7 @@ Sembrava che non esistessero cavalli o altri animali; gli uomini portavano le me
 Quando attivi il backup automatico, i dati del dispositivo e delle app vengono salvati periodicamente da remoto. I dati delle app possono essere tutti i dati salvati da un'app (in base alle impostazioni dello sviluppatore), inclusi i dati potenzialmente sensibili come contatti, messaggi e foto."</string>
     <string name="fullbackup_erase_dialog_message">Interrompere il backup dei dati del dispositivo (come password Wi‑Fi e cronologia chiamate) e dei dati delle app (quali impostazioni e file memorizzati nelle app), oltre a cancellare tutte le copie sui server remoti?</string>
     <string name="gadget_picker_title">Scegli gadget</string>
-    <string name="gallery_application_title">App Gallery</string>
+    <string name="gallery_application_title">App Galleria</string>
     <string name="game_controller_settings_category">Controller di gioco</string>
     <string name="game_driver_all_apps_preference_title">Attiva per tutte le app</string>
     <string name="game_driver_app_preference_default">Predefinito</string>
@@ -2313,6 +2313,7 @@ Puoi cambiare la tua scelta più tardi da Impostazioni > App e notifiche."</stri
     <string name="location_settings_title">Geolocalizzazione</string>
     <string name="location_sources_heading">Fonti di geolocalizzazione</string>
     <string name="location_street_level">Consenti alle applicazioni di utilizzare il GPS del telefono per individuare la tua posizione</string>
+    <string name="location_text">Posizione</string>
     <string name="location_title">La mia posizione</string>
     <string name="lock_after_timeout">Blocca automaticamente</string>
     <string name="lock_after_timeout_summary">%1$s dopo sospensione</string>
@@ -2710,6 +2711,7 @@ Il passaggio a %1$s non annullerà il servizio di %2$s."</string>
     <string name="my_device_info_account_preference_title">Account</string>
     <string name="my_device_info_device_name_preference_title">Nome dispositivo</string>
     <string name="n_cacrts">Certificati CA %d</string>
+    <string name="nearest_station">Stazione più vicina</string>
     <string name="network_4G">4G (opzione consigliata)</string>
     <string name="network_connected">Connessa</string>
     <string name="network_connecting">Connessione…</string>
@@ -2993,8 +2995,8 @@ L'app potrà anche attivare o disattivare la funzione Non disturbare e modificar
     <string name="oneplus_applock_at_least_four_points">Traccia il disegno in modo da includere almeno 4 punti</string>
     <string name="oneplus_applock_lockpassword_confirm_your_pin_header">Inserisci PIN</string>
     <string name="oneplus_applock_need_to_unlock_wrong">PIN errato</string>
-    <string name="oneplus_applock_pattern_header">Inserisci la sequenza</string>
-    <string name="oneplus_applock_wrong_pattern_header">Sequenza errata</string>
+    <string name="oneplus_applock_pattern_header">Disegna il tuo motivo</string>
+    <string name="oneplus_applock_wrong_pattern_header">Motivo errato</string>
     <string name="oneplus_apps_notifications">App e notifiche</string>
     <string name="oneplus_apps_title">App</string>
     <string name="oneplus_aptx_hd_support">Supporto aptX/aptX HD</string>
@@ -3134,7 +3136,7 @@ La funzione di risparmio batteria è disattivata automaticamente quando il dispo
     <string name="oneplus_double_tap_power_none">Nessuno</string>
     <string name="oneplus_doze_summary_801">"Visualizza l'orologio e altre informazioni sulla schermata di standby"</string>
     <string name="oneplus_doze_summary_new">"Mostra l'ora, la data e le notifiche sullo schermo"</string>
-    <string name="oneplus_doze_title">Display ambient</string>
+    <string name="oneplus_doze_title">Schermo Ambient</string>
     <string name="oneplus_doze_title_801">Display Ambiente</string>
     <string name="oneplus_draw_gesture_start_none">Nessuno</string>
     <string name="oneplus_draw_m_start_app">Disegna M</string>
@@ -3255,7 +3257,7 @@ Attenzione: lo sblocco tramite Face Unlock è meno sicuro dell'impronta digitale
 Scorri verso l'alto dal lato sinistro o destro della parte inferiore dello schermo."</string>
     <string name="oneplus_fullscreen_gesture_guide_done">"Ora conosci i nuovi gesti per la navigazione.
 Puoi disattivarli riattivando la barra di navigazione nelle impostazioni."</string>
-    <string name="oneplus_fullscreen_gesture_guide_gotit">OK</string>
+    <string name="oneplus_fullscreen_gesture_guide_gotit">Ok</string>
     <string name="oneplus_fullscreen_gesture_guide_home">"Proviamo a utilizzare i gesti per la navigazione.
 Per andare alla schermata home in qualsiasi momento, scorri verso l'alto dal bordo centrale inferiore dello schermo."</string>
     <string name="oneplus_fullscreen_gesture_guide_multitask">"Per le app recenti, scorri verso l'alto dal basso dello schermo e sospendi."</string>
@@ -3463,7 +3465,7 @@ Nota: l'impronta digitale potrebbe risultare meno sicura di un pattern o del PIN
     <string name="oneplus_noise_tips">Attiva vibrazione</string>
     <string name="oneplus_none_default_camera">Nessuna fotocamera predefinita</string>
     <string name="oneplus_none_default_email">Nessuna applicazione di posta predefinita</string>
-    <string name="oneplus_none_default_gallery">Nessuna gallery predefinita</string>
+    <string name="oneplus_none_default_gallery">Nessuna galleria predefinita</string>
     <string name="oneplus_none_default_music">Nessun lettore musicale predefinito</string>
     <string name="oneplus_normal_clear_way">Cancellazione normale</string>
     <string name="oneplus_normal_clear_way_summary">Cancella elenco attività e cache senza cancellare i processi in background.</string>
@@ -3749,6 +3751,7 @@ Nota:
     <string name="oneplus_silent_mode_on">Modalità silenziosa attivata</string>
     <string name="oneplus_silent_mode_soc_tri_state_summary">Le suonerie di chiamate e notifiche saranno disattivate tranne che per gli allarmi</string>
     <string name="oneplus_silent_mode_summary">Le suonerie di chiamate e notifiche saranno disattivate tranne che per gli allarmi</string>
+    <string name="oneplus_silent_notifications_status_bar">Nascondi le notifiche silenziose nella barra di stato</string>
     <string name="oneplus_sim1_ringtone_switch">Scheda SIM 1</string>
     <string name="oneplus_sim2_ringtone_switch">Scheda SIM 2</string>
     <string name="oneplus_simcard_title">SIM</string>
@@ -3839,7 +3842,7 @@ Nota:
     <string name="oneplus_tools_summary_U30">Modalità di gioco, pagamento rapido, accensione/spegnimento programmati</string>
     <string name="oneplus_tools_summary_no_gamingmode">App Locker, app parallele</string>
     <string name="oneplus_tools_title">Utilità</string>
-    <string name="oneplus_top_level_accounts_summary">OnePlus account, other accounts</string>
+    <string name="oneplus_top_level_accounts_summary">Account OnePlus, altri account</string>
     <string name="oneplus_top_level_apps_and_notifs_summary">App predefinite, autorizzazioni</string>
     <string name="oneplus_top_level_buttons_and_gestures_summary">Alert slider, barra di navigazione &amp; gesti</string>
     <string name="oneplus_top_level_cloud_h2_summary">Sincronizzazione dati con cloud, Trova il mio telefono</string>
@@ -3929,8 +3932,18 @@ Impostare la rete come nascosta non cambierà le impostazioni del router."</stri
     <string name="op_audio_settings">Sintonizzatore audio</string>
     <string name="op_auto_power_saving">Risparmio energetico automatico</string>
     <string name="op_auto_power_saving_summary">Consente di passare automaticamente alla risoluzione più adeguata senza scaricare la batteria</string>
+    <string name="op_charging_Station_mute_notifications">Disattiva notifiche</string>
+    <string name="op_charging_footer_text">Sarai avvisato di eventuali stazioni di ricarica nelle vicinanze quando accedi a località partner come aeroporti o eventi Oneplus come Pop-up.</string>
     <string name="op_charging_optimization">Ricarica ottimizzata</string>
     <string name="op_charging_optimization_summary">Ottimizza la sequenza di ricarica in base alle tue abitudini di utilizzo</string>
+    <string name="op_charging_station">Stazioni di ricarica nelle vicinanze</string>
+    <string name="op_charging_station_no_station">Nessuna stazione di ricarica nelle vicinanze</string>
+    <string name="op_charging_station_summary">"Avvisami quando c'è una stazione di ricarica nelle vicinanze"</string>
+    <string name="op_charging_stations">Stazioni di ricarica</string>
+    <string name="op_charging_stations_off_description">"Per trovare le stazioni di ricarica, è richiesta l'autorizzazione di accesso alla posizione che rileva i beacon BLE. Consenti l'accesso alla posizione per usare questa funzione."</string>
+    <string name="op_charging_stations_off_header">"Per trovare le stazioni di ricarica, è richiesta l'autorizzazione di accesso alla posizione che rileva i beacon BLE. Consenti l'accesso alla posizione per usare questa funzione."</string>
+    <string name="op_charing_station_mute_notifications_description">La notifica verrà silenziata per 6 ore.</string>
+    <string name="op_charing_stations_mute_dynamic_time" formatted="false">Notifica silenziata per %1d ore %2d minuti</string>
     <string name="op_china_mobile">CMCC</string>
     <string name="op_china_telecom">CTCC</string>
     <string name="op_china_unicom">CUCC</string>
@@ -3946,15 +3959,19 @@ Impostare la rete come nascosta non cambierà le impostazioni del router."</stri
     <string name="op_default_apps_summary">Launcher, browser</string>
     <string name="op_default_luncher_title">Launcher</string>
     <string name="op_dnd_summary">Non disturbare</string>
+    <string name="op_enable_location_services">Per trovare e seguire le stazioni di ricarica nelle vicinanze, attiva i servizi di localizzazione</string>
+    <string name="op_enable_text">Abilita</string>
     <string name="op_face_unlock_set_unlock_password">Face Unlock + Password</string>
     <string name="op_face_unlock_set_unlock_pattern">Face Unlock + Motivo</string>
     <string name="op_face_unlock_set_unlock_pin">Face Unlock + PIN</string>
     <string name="op_face_unlock_skip_face">Prosegui senza Face Unlock</string>
     <string name="op_failed_to_get_data">Impossibile recuperare i dati</string>
     <string name="op_fetch_data_in_process">Caricamento</string>
+    <string name="op_find_charging_stations">Trova stazioni</string>
     <string name="op_fragment">Breve</string>
     <string name="op_gamespace">Game Space</string>
     <string name="op_high_power_app_manager">Gestore di applicazioni ad alto consumo di batteria</string>
+    <string name="op_keep_location_services">Per trovare e seguire le stazioni di ricarica nelle vicinanze, tieni attivati i servizi di localizzazione</string>
     <string name="op_light_mode_title">Chiaro</string>
     <string name="op_linked_launch_summary">Il gestore di applicazioni può essere lanciato sullo sfondo</string>
     <string name="op_linked_launch_title">Lancio automatico applicazioni</string>
@@ -5261,7 +5278,7 @@ L'approccio di Google alla sincronizzazione di dati per consentirti l'accesso ai
     <string name="tether_error_item_default">Tethering</string>
     <string name="tether_error_message">Non sei abbonato a %1$s.</string>
     <string name="tether_error_title">Errore %1$s</string>
-    <string name="tether_no_sim_message">Inserisci una scheda SIM per utilizzare Hotspot mobile e altre opzioni di tethering</string>
+    <string name="tether_no_sim_message">Inserisci una scheda SIM per utilizzare Mobile Hotspot e altre opzioni di tethering</string>
     <string name="tether_no_sim_title">Nessuna scheda SIM</string>
     <string name="tether_settings_disabled_on_data_saver">Impossibile eseguire il tethering o utilizzare hotspot portatili con Risparmio dati attivo</string>
     <string name="tether_settings_summary_hotspot_off_tether_on">Tethering</string>
@@ -5383,6 +5400,7 @@ L'approccio di Google alla sincronizzazione di dati per consentirti l'accesso ai
     <string name="uicc_lock_summary">Il tuo dispositivo è bloccato solo da schede SIM Sprint</string>
     <string name="uicc_unlock">Sblocco UICC</string>
     <string name="uicc_unlock_summary">Il tuo dispositivo è sbloccato</string>
+    <string name="under_meters">Entro %1d metri</string>
     <string name="uninstall_activity_text">%1$s è parte della app seguente:</string>
     <string name="uninstall_all_blocked_profile_owner">Questa app è obbligatoria per alcuni utenti o profili ed è stata disinstallata per altri</string>
     <string name="uninstall_all_users_text">Disinstalla per tutti gli utenti</string>

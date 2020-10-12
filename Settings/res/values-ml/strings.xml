@@ -267,7 +267,7 @@
     <string name="advanced_wificall_summary">മൊബൈല്‍ നെറ്റ്‍വര്‍ക്ക് ലഭ്യമല്ലാത്തപ്പോൾ Wi-Fi ഉപയോഗിക്കുക</string>
     <string name="airplane_mode">ഫ്ലൈറ്റ് മോഡ്</string>
     <string name="airplane_mode_description">കോളിംഗ്, സന്ദേശമയയ്‌ക്കൽ, ഇന്റർനെറ്റ് ലഭ്യത, Wi-Fi, ബ്ലൂടൂത്ത് എന്നിവ ഉൾപ്പെടെയുള്ള എല്ലാ നെറ്റ്‌വർക്ക് കണക്ഷനുകളും വിമാന മോഡ് ഓഫാക്കും.</string>
-    <string name="airplane_mode_enable_dialog_message">"വിമാന മോഡ് ഓണായിരിക്കുമ്പോൾ, Wi-Fi ഉപയോഗിച്ചില്ലെങ്കിൽ നിങ്ങൾക്ക് ഇന്റർനെറ്റ്, ഇമെയിൽ അല്ലെങ്കിൽ ഡാറ്റ കണക്‌ഷൻ ആവശ്യമായ മറ്റ് ആപ്ലിക്കേഷനുകൾ ഉപയോഗിക്കാനാകില്ല.
+    <string name="airplane_mode_enable_dialog_message">"വിമാന മോഡ് ഓണായിരിക്കുമ്പോൾ, Wi-Fi ഉപയോഗിച്ചില്ലെങ്കിൽ നിങ്ങൾക്ക് ഇന്റെർനെറ്റ്, ഇമെയിൽ അല്ലെങ്കിൽ ഡാറ്റ കണക്‌ഷൻ ആവശ്യമായ മറ്റ് ആപ്ലിക്കേഷനുകൾ ഉപയോഗിക്കാനാകില്ല.
 
  വിമാന മോഡ് ഓണാക്കണോ?"</string>
     <string name="airplane_mode_enable_dialog_message_wifi_volte">"വിമാന മോഡ് ഓണായിരിക്കുമ്പോൾ, Wi-Fi ഉപയോഗിച്ചില്ലെങ്കിൽ നിങ്ങൾക്ക് ഇന്റർനെറ്റ്, ഇമെയിൽ, Wi-Fi കോളിംഗ് അല്ലെങ്കിൽ ഡാറ്റ കണക്‌ഷൻ ആവശ്യമായ മറ്റ് ആപ്ലിക്കേഷനുകൾ ഉപയോഗിക്കാനാകില്ല.
@@ -344,7 +344,7 @@
     <string name="aod_horizon_light_effect_4">ഗോൾഡ്</string>
     <string name="aod_horizon_light_effect_5">McLaren</string>
     <string name="aod_horizon_light_select">കളർ തിരഞ്ഞെടുക്കുക</string>
-    <string name="aod_horizon_light_snake_action">ഓണ്‍ ചെയ്യുക</string>
+    <string name="aod_horizon_light_snake_action">ഓണാക്കുക</string>
     <string name="aod_horizon_light_snake_tip">\"പുതിയ അറിയിപ്പുകൾ ഓണായിരിക്കുമ്പോൾ\" ഈ ഫീച്ചർ ലഭ്യമായിരിക്കും</string>
     <string name="apn_apn">APN</string>
     <string name="apn_auth_type">പ്രാമാണീകരണ തരം</string>
@@ -2023,10 +2023,10 @@ Selection ട്രിഗ്ഗര്‍ ചെയ്യുക"</string>
     <string name="homepage_all_settings">എല്ലാ ക്രമീകരണവും</string>
     <string name="homepage_condition_footer_content_description">ചുരുക്കുക</string>
     <string name="homepage_personal_settings">നിർദ്ദേശങ്ങൾ</string>
-    <string name="hotspot_tip_message" formatted="false">"മൊബൈൽ ഹോട്ട്സ്പോട്ട് നിങ്ങളുടെ മൊബൈൽ ഡാറ്റ മറ്റ് Wi-Fi പ്രാപ്തമായ ഉപകരണങ്ങളുമായി പങ്കു വയ്ക്കുന്നു. നിങ്ങളുടെ മൊബൈൽ ഹോട്ട്സ്പോട്ട് ബന്ധിപ്പിക്കുന്നതിനായി: \u0009 
- 1: മറ്റ് ഉപകരണത്തിലെ Wi-Fi ഓൺ ചെയ്യുക.
- 2: ലഭ്യമായ Wi-Fi നെറ്റ്‌വർക്കുകളുടെ ലിസ്റ്റിൽ നിന്നും %s തെരഞ്ഞെടുക്കുക. 
- 3: ഒരു പാസ്സ്‌വേഡ് ആവശ്യമാണെങ്കിൽ,%s ചേർക്കുക ബാറ്ററി സംരക്ഷിക്കുന്നതിനായി, മൊബൈൽ ഹോട്ട്സ്പോട്ട് ഉപയോഗിക്കുമ്പോൾ, നിങ്ങളുടെ ഫോൺ പ്ലഗ്ഗ് ഇൻ ചെയ്തു വയ്ക്കണം. "</string>
+    <string name="hotspot_tip_message" formatted="false">"മൊബൈൽ ഹോട്ട്‌സ്പോട്ട് നിങ്ങളുടെ മൊബൈൽ ഡാറ്റ വൈഫൈ ഉപയോഗിക്കാനാകുന്ന മറ്റ് ഉപകരണങ്ങളുമായി പങ്കിടുന്നു. നിങ്ങളുടെ മൊബൈൽ ഹോട്ട്‍സ്‌പോട്ടിലേക്ക് കണക്‌റ്റ് ചെയ്യുന്നതിന്:\u0009
+1: മറ്റൊരു ഉപകരണത്തിലെ Wi-Fi ഓണാക്കുക.
+ 2: ലഭ്യമായ Wi-Fi നെറ്റ്‍വര്‍ക്കുകളുടെ ലിസ്‌റ്റിൽ നിന്നും %s തിരഞ്ഞെടുക്കുക.
+ 3: പാസ്‍വേഡ് ആവശ്യമാണെങ്കിൽ %s നൽകുക. മൊബൈൽ ഹോട്ട്‍സ്‌പോട്ട് ഉപയോഗിക്കുമ്പോൾ ബാറ്ററി സംരക്ഷിക്കുന്നതിന് നിങ്ങളുടെ ഫോൺ പ്ലഗ്ഗിന്‍ ചെയ്യുക. "</string>
     <string name="hotspot_tip_title">മൊബൈൽ ഹോട്ട്‍സ്‌പോട്ട്</string>
     <string name="hwui_force_dark_summary">എപ്പോഴും ഓണാക്കിയിരിക്കുന്ന നിർബന്ധിത ഇരുണ്ട മോഡ് ഫീച്ചർ അസാധുവാക്കുക</string>
     <string name="hwui_force_dark_title">നിർബന്ധിത ഇരുണ്ട മോഡ് അസാധുവാക്കുക</string>
@@ -2313,6 +2313,7 @@ Selection ട്രിഗ്ഗര്‍ ചെയ്യുക"</string>
     <string name="location_settings_title">ലൊക്കേഷൻ</string>
     <string name="location_sources_heading">ലൊക്കേഷൻ ഉറവിടങ്ങൾ</string>
     <string name="location_street_level">നിങ്ങളുടെ ലൊക്കേഷൻ കൃത്യമായി കണ്ടെത്തുന്നതിന് ഫോണിൽ GPS ഉപയോഗിക്കാൻ അപ്ലിക്കേഷനുകളെ അനുവദിക്കുക</string>
+    <string name="location_text">സ്ഥാനം</string>
     <string name="location_title">എന്റെ ലൊക്കേഷൻ</string>
     <string name="lock_after_timeout">സ്വയമേവ ലോക്ക് ചെയ്യുക</string>
     <string name="lock_after_timeout_summary">സുഷു‌പ്തിയ്ക്ക് %1$s കഴിഞ്ഞ്</string>
@@ -2710,6 +2711,7 @@ Selection ട്രിഗ്ഗര്‍ ചെയ്യുക"</string>
     <string name="my_device_info_account_preference_title">അക്കൗണ്ട്</string>
     <string name="my_device_info_device_name_preference_title">ഉപകരണത്തിന്‍റെ പേര്</string>
     <string name="n_cacrts">%d CA സർട്ടിഫിക്കറ്റുകൾ</string>
+    <string name="nearest_station">ഏറ്റവും അടുത്തുള്ള സ്റ്റേഷൻ</string>
     <string name="network_4G">4G (ശുപാർശചെയ്‌തത്)</string>
     <string name="network_connected">കണക്‌റ്റ് ചെയ്‌തു</string>
     <string name="network_connecting">കണക്റ്റ് ചെയ്യുന്നു…</string>
@@ -3541,7 +3543,7 @@ Selection ട്രിഗ്ഗര്‍ ചെയ്യുക"</string>
     <string name="oneplus_preference_settings_manual_open">സ്റ്റാറ്റസ്</string>
     <string name="oneplus_preference_settings_turn_off_time">വരെ</string>
     <string name="oneplus_preference_settings_turn_on">ശല്യപ്പെടുത്തരുത് ഓണാക്കുക</string>
-    <string name="oneplus_preference_settings_turn_on_time">ആരംഭം</string>
+    <string name="oneplus_preference_settings_turn_on_time">മുതല്‍</string>
     <string name="oneplus_prior_to_use_you_need_to">ഉപയോഗിക്കുന്നതിന് മുമ്പ്, നിങ്ങള്‍ ഇത് ചെയ്യേണ്ടതുണ്ട്：</string>
     <string name="oneplus_privacy_policy">സ്വകാര്യതാ നയം</string>
     <string name="oneplus_privacy_protection_title">എന്‍ക്രിപ്റ്റ് ചെയ്‌ത സ്ഥലം</string>
@@ -3643,7 +3645,7 @@ Selection ട്രിഗ്ഗര്‍ ചെയ്യുക"</string>
     <string name="oneplus_screen_color_mode_soft">സോഫ്റ്റ്</string>
     <string name="oneplus_screen_color_mode_title">സ്ക്രീന്‍ താരതമ്യം</string>
     <string name="oneplus_screen_color_mode_title_summary">നൈറ്റ് മോഡ് ഓണ്‍ ആയതിനാല്‍ ലഭ്യമല്ല</string>
-    <string name="oneplus_screen_features_not_available_toast">ഓണായിരിക്കുമ്പോൾ, സ്‌ക്രീൻ കാലിബ്രേഷൻ പോലുള്ള ഫീച്ചറുകൾ ലഭ്യമായിരിക്കില്ല</string>
+    <string name="oneplus_screen_features_not_available_toast">ഓണായിരിക്കുമ്പോൾ, സ്‌ക്രീൻ കാലിബറേഷൻ പോലുള്ള ഫീച്ചറുകൾ ലഭ്യമായിരിക്കില്ല</string>
     <string name="oneplus_screen_refresh_rate">സ്ക്രീൻ പുതുക്കൽ നിരക്ക്</string>
     <string name="oneplus_screen_refresh_rate_60hz_summary">നല്ല ബാറ്ററി ലൈഫ്, പക്ഷെ കുറഞ്ഞ അനായാസത</string>
     <string name="oneplus_screen_refresh_rate_auto_summary">ഉയർന്ന റിഫ്രഷ് റേറ്റിൽ നല്ല അനായാസത</string>
@@ -3750,6 +3752,7 @@ Selection ട്രിഗ്ഗര്‍ ചെയ്യുക"</string>
     <string name="oneplus_silent_mode_on">നിശബ്ദത മോഡ് ഓണ്‍ ആണ്</string>
     <string name="oneplus_silent_mode_soc_tri_state_summary">അലാമുകള്‍ ഒഴികെ കോളുകളും അറിയിപ്പുകളും നിശബ്ദമാക്കും</string>
     <string name="oneplus_silent_mode_summary">അലാമുകള്‍ ഒഴികെ കോളുകളും അറിയിപ്പുകളും നിശബ്ദമാക്കപ്പെടും</string>
+    <string name="oneplus_silent_notifications_status_bar">സ്റ്റാറ്റസ് ബാറിൽ നിശബ്‌ദ അറിയിപ്പ് മറയ്‌ക്കുക</string>
     <string name="oneplus_sim1_ringtone_switch">SIM കാര്‍ഡ് 1</string>
     <string name="oneplus_sim2_ringtone_switch">SIM കാര്‍ഡ് 2</string>
     <string name="oneplus_simcard_title">SIM</string>
@@ -3840,7 +3843,7 @@ Selection ട്രിഗ്ഗര്‍ ചെയ്യുക"</string>
     <string name="oneplus_tools_summary_U30">ഗെയിമിംഗ് മോഡ്, പോക്കറ്റ് മോഡ്, പവർ ഓൺ/ഓഫ് ഷെഡ്യൂൾ ചെയ്യൽ</string>
     <string name="oneplus_tools_summary_no_gamingmode">ആപ്പ് ലോക്കർ, സമാന്തര ആപ്പുകൾ</string>
     <string name="oneplus_tools_title">യൂട്ടിലിറ്റികൾ</string>
-    <string name="oneplus_top_level_accounts_summary">OnePlus account, other accounts</string>
+    <string name="oneplus_top_level_accounts_summary">OnePlus അക്കൌണ്ട്, മറ്റ് അക്കൌണ്ടുകൾ</string>
     <string name="oneplus_top_level_apps_and_notifs_summary">ഡിഫോൾട്ട് ആപ്പുകൾ, അനുമതികൾ</string>
     <string name="oneplus_top_level_buttons_and_gestures_summary">മുന്നറിയിപ്പ് സ്ലൈഡർ, നാവിഗേഷൻ ബാർ, ആംഗ്യങ്ങൾ</string>
     <string name="oneplus_top_level_cloud_h2_summary">ക്ലൌഡുമായി ഡാറ്റ സമന്വയിപ്പിക്കുക, എന്റെ ഫോൺ കണ്ടെത്തുക</string>
@@ -3857,8 +3860,8 @@ Selection ട്രിഗ്ഗര്‍ ചെയ്യുക"</string>
     <string name="oneplus_touch_vibrate">ടച്ച് വൈബ്രേഷൻ</string>
     <string name="oneplus_turn_off_time">വരെ</string>
     <string name="oneplus_turn_on_feature_cancel">റദ്ദാക്കുക</string>
-    <string name="oneplus_turn_on_feature_ok">ഓണ്‍ ചെയ്യുക</string>
-    <string name="oneplus_turn_on_time">ആരംഭം</string>
+    <string name="oneplus_turn_on_feature_ok">ഓണാക്കുക</string>
+    <string name="oneplus_turn_on_time">മുതല്‍</string>
     <string name="oneplus_uninstatll_multi_app_msg">സമാന്തര ആപ്പിലുള്ള എല്ലാ ഡാറ്റയും അൺഇൻസ്റ്റാൾ ചെയ്യുമ്പോൾ മായ്ക്കും. അൺഇൻസ്റ്റാൾ ചെയ്യണമെന്ന് നിങ്ങൾക്ക് തീർച്ചയാണോ?</string>
     <string name="oneplus_uninstatll_multi_app_title">സമാന്തരം %1$s</string>
     <string name="oneplus_uninstatll_multi_main_app_msg">ഈ ആപ്പിലുള്ളതും ബന്ധപ്പെട്ടുള്ള സമാന്തര ആപ്പിലുള്ളതുമായ എല്ലാ ഡാറ്റയും അൺഇൻസ്റ്റാൾ ചെയ്യുമ്പോൾ മായ്ക്കും. അൺഇൻസ്റ്റാൾ ചെയ്യണമെന്ന് നിങ്ങൾക്ക് തീർച്ചയാണോ?</string>
@@ -3930,8 +3933,18 @@ Selection ട്രിഗ്ഗര്‍ ചെയ്യുക"</string>
     <string name="op_audio_settings">ഓഡിയോ ട്യൂണര്‍</string>
     <string name="op_auto_power_saving">സ്വയമേയുള്ള പവർ സംരക്ഷണം</string>
     <string name="op_auto_power_saving_summary">ബാറ്ററി ചാർജ് അധികം ചോർത്താതെ തന്നെ അനുയോജ്യമായ റെസലൂഷനിലേക്ക് സ്വയമേവ മാറുക</string>
+    <string name="op_charging_Station_mute_notifications">അറിയിപ്പുകൾ മ്യൂട്ട് ചെയ്യുക</string>
+    <string name="op_charging_footer_text">നിങ്ങൾ വിമാനത്താവളങ്ങൾ അല്ലെങ്കിൽ Pop-ups പോലുള്ള Oneplus ഇവന്റുകൾ സന്ദർശിക്കുമ്പോൾ സമീപത്തുള്ള ചാർജിംഗ് സ്റ്റേഷനുകളെക്കുറിച്ച് നിങ്ങളെ അറിയിക്കുന്നതാണ്.</string>
     <string name="op_charging_optimization">ഒപ്‌റ്റിമൈസുചെയ്ത ചാർജ്ജിംഗ്</string>
     <string name="op_charging_optimization_summary">നിങ്ങളുടെ ഉപയോഗ രീതികൾ അനുസരിച്ച് ചാർജിംഗ് പാറ്റേൺ ഒപ്‌റ്റിമൈസ് ചെയ്യുക</string>
+    <string name="op_charging_station">അടുത്തുള്ള ചാർജിങ്ങ് സ്റ്റേഷനുകൾ</string>
+    <string name="op_charging_station_no_station">അടുത്ത് ചാർജിംഗ് സ്റ്റേഷനുകൾ ഒന്നുമില്ല</string>
+    <string name="op_charging_station_summary">അടുത്ത് ഒരു ചാർജിങ്ങ് സ്റ്റേഷൻ ഉള്ളപ്പോൾ എന്നെ വിവരം അറിയിക്കുക</string>
+    <string name="op_charging_stations">ചാർജിംഗ് സ്റ്റേഷനുകൾ</string>
+    <string name="op_charging_stations_off_description">ചാർജിംഗ് സ്റ്റേഷനുകൾ കണ്ടെത്താൻ, ലൊക്കേഷൻ അനുമതി BLE ബീക്കണുകൾ കണ്ടെത്തുന്നതിന് ആവശ്യമാണ്. ഈ സവിശേഷത ഉപയോഗിച്ച് തുടങ്ങുന്നതിന് ദയവായി ലൊക്കേഷനിലേക്ക് ആക്സസ് നൽകുക.</string>
+    <string name="op_charging_stations_off_header">ചാർജിംഗ് സ്റ്റേഷനുകൾ കണ്ടെത്തുന്നതിന്, BLE ബീക്കണുകളിൽ സ്ഥലത്തെഅറിയുന്നതിനുള്ള അനുമതികൾ ആവശ്യമാണ്. ദയവായി ഈ സവിശേഷത ഉപയോഗിച്ച് തുടങ്ങുന്നതിന് ലൊക്കേഷനിലേക്ക് പ്രവേശനം നൽകുക.</string>
+    <string name="op_charing_station_mute_notifications_description">6 മണിക്കൂർ നേരത്തേക്ക് അറിയിപ്പുകൾ നിശ്ശബ്ദമാക്കുന്നതാണ്.</string>
+    <string name="op_charing_stations_mute_dynamic_time" formatted="false">നെട്ടിഫിക്കേഷനുകൾ %1d മണിക്കൂറുകൾ %2d മിനിറ്റുകളിലേക്ക് നിശ്ശബ്ദമാക്കിയിരിക്കുന്നു</string>
     <string name="op_china_mobile">CMCC</string>
     <string name="op_china_telecom">CTCC</string>
     <string name="op_china_unicom">CUCC</string>
@@ -3947,15 +3960,19 @@ Selection ട്രിഗ്ഗര്‍ ചെയ്യുക"</string>
     <string name="op_default_apps_summary">ഹോം, ബ്രൗസർ</string>
     <string name="op_default_luncher_title">ഹോം ആപ്പ്</string>
     <string name="op_dnd_summary">ശല്യപ്പെടുത്തരുത്</string>
+    <string name="op_enable_location_services">അടുത്തുള്ള ചാർജ്ജിംഗ് സ്റ്റേഷനുകൾ കണ്ടുപിടിക്കുന്നതിനും ട്രാക്ക് ചെയ്യുന്നതിനും, ദയവായി ലൊക്കേഷൻ സേവനങ്ങൾ എനേബിൾ ചെയ്യുക</string>
+    <string name="op_enable_text">Habilita</string>
     <string name="op_face_unlock_set_unlock_password">ഫേസ് അണ്‍ലോക്ക് + പാസ്‍വേഡ്</string>
     <string name="op_face_unlock_set_unlock_pattern">ഫേസ് അണ്‍ലോക്ക് + പാറ്റേണ്‍</string>
     <string name="op_face_unlock_set_unlock_pin">ഫേസ് അണ്‍ലോക്ക് + PIN</string>
     <string name="op_face_unlock_skip_face">ഫേസ് അൺലോക്ക് ഇല്ലാതെ തുടരുക</string>
     <string name="op_failed_to_get_data">ഡാറ്റ വീണ്ടെടുക്കുന്നതില്‍ പരാജയപ്പെട്ടു</string>
     <string name="op_fetch_data_in_process">ലോഡ് ചെയ്യുന്നു</string>
+    <string name="op_find_charging_stations">സ്റ്റേഷനുകൾ കണ്ടെത്തുക</string>
     <string name="op_fragment">ഹ്രസ്വമായത്</string>
     <string name="op_gamespace">ഗെയിം സ്പെയ്സ്</string>
     <string name="op_high_power_app_manager">ഉയര്‍ന്ന പവര്‍ ഉപയോഗിക്കുന്ന ആപ്പുകള്‍</string>
+    <string name="op_keep_location_services">അടുത്തുള്ള ചാർജ്ജിംഗ് സ്റ്റേഷനുകൾ കണ്ടുപിടിക്കുന്നതിനും ട്രാക്ക് ചെയ്യുന്നതിനും, ദയവായി ലൊക്കേഷൻ സേവനങ്ങൾ എനേബിൾ ചെയ്യുക</string>
     <string name="op_light_mode_title">ലൈറ്റ്</string>
     <string name="op_linked_launch_summary">ആപ്പുകള്‍ കൈകാര്യം ചെയ്യുന്നത് വഴി പശ്ചാത്തലത്തില്‍ ലിങ്ക് തുറക്കാനാകും</string>
     <string name="op_linked_launch_title">ആപ്പ്സ് ഓട്ടോ-ലോഞ്ച്</string>
@@ -5262,7 +5279,7 @@ UT ഇന്റര്‍ഫേസ്: %5$s"</string>
     <string name="tether_error_item_default">ടെതറിംഗ്</string>
     <string name="tether_error_message">നിങ്ങൾ %1$s-ലേക്ക് സബ്‌സ്ക്രൈബ് ചെയ്തിട്ടില്ല.</string>
     <string name="tether_error_title">%1$s പിശക്</string>
-    <string name="tether_no_sim_message">മൊബൈൽ ഹോട്ട്‌സ്പോട്ടും മറ്റ് ടെതറിംഗ് ഓപ്ഷനുകളും ഉപയോഗിക്കുന്നതിന് ഒരു SIM കാർഡ് ഇടുക</string>
+    <string name="tether_no_sim_message">മൊബൈൽ ഹോട്ട്‌സ്പോട്ടും മറ്റ് ടെതറിംഗ് ഓപ്ഷനുകളും ഉപയോഗിക്കുന്നതിനായി ഒരു SIM കാർഡ് ചേർക്കുക</string>
     <string name="tether_no_sim_title">SIM കാര്‍ഡൊന്നും ഇല്ല</string>
     <string name="tether_settings_disabled_on_data_saver">ഡാറ്റ സേവർ ഓണായിരിക്കുന്ന സമയത്ത് പോർട്ടബിൾ ഹോട്ട്സ്പോട്ടുകൾ ടെതർ ചെയ്യാനോ ഉപയോഗിക്കാനോ കഴിയില്ല</string>
     <string name="tether_settings_summary_hotspot_off_tether_on">ടെതറിംഗ്</string>
@@ -5384,6 +5401,7 @@ UT ഇന്റര്‍ഫേസ്: %5$s"</string>
     <string name="uicc_lock_summary">Sprint SIM-കൾ മാത്രം ഉപയോഗിച്ച് നിങ്ങളുടെ ഉപകരണം ലോക്കുചെയ്തിരിക്കുന്നു</string>
     <string name="uicc_unlock">UICC അൺലോക്ക്</string>
     <string name="uicc_unlock_summary">നിങ്ങളുടെ ഉപകരണം അൺലോക്ക് ചെയ്തു</string>
+    <string name="under_meters">%1d മീറ്ററുകള്‍ക്ക് താഴെ</string>
     <string name="uninstall_activity_text">%1$s താഴെയുള്ള ആപ്പിന്‍റെ ഭാഗമാണ്:</string>
     <string name="uninstall_all_blocked_profile_owner">ഈ ആപ്പ് ചില ഉപയോക്താക്കള്‍ക്ക് അല്ലെങ്കില്‍ പ്രൊഫൈലുകള്‍ക്ക് ആവശ്യമാണ് കൂടാതെ മറ്റുള്ളവര്‍ക്ക് വേണ്ടി അണ്‍ഇന്‍സ്റ്റാള്‍ ചെയ്യുകയും ചെയ്തു</string>
     <string name="uninstall_all_users_text">എല്ലാ ഉപയോക്താക്കൾക്കായും അൺഇൻസ്റ്റാളുചെയ്യുക</string>
@@ -5409,7 +5427,7 @@ UT ഇന്റര്‍ഫേസ്: %5$s"</string>
     <string name="uninstallapps_confirm">സ്ഥിരീകരിക്കുക</string>
     <string name="uninstallapps_confirm_dialog_body">തിരഞ്ഞെടുത്ത എല്ലാ ആപ്പുകളും ആപ്ലിക്കേഷൻ പാക്കേജുമായി ബന്ധപ്പെട്ട എല്ലാ ഫയലുകളും നീക്കം ചെയ്യും.</string>
     <string name="uninstallapps_confirm_dialog_title">തിരഞ്ഞെടുത്ത ആപ്പുകൾ നീക്കംചെയ്യണോ?</string>
-    <string name="uninstallapps_selected">തിരഞ്ഞെടുത്തവ</string>
+    <string name="uninstallapps_selected">തിരഞ്ഞെടുത്തു</string>
     <string name="uninstallapps_toast_message">ആപ്പുകൾ നീക്കംചെയ്‌തു</string>
     <string name="uninstalling">അണ്‍ഇന്‍സ്റ്റാള്‍ ചെയ്യുന്നു…</string>
     <string name="uninstalling_notification_channel">റൺ ചെയ്യുന്ന അൺഇൻസ്റ്റാളുകൾ</string>

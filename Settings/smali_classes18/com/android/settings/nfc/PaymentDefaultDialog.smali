@@ -256,7 +256,7 @@
     :cond_9
     iget-object v0, p0, Lcom/android/settings/nfc/PaymentDefaultDialog;->mAlertParams:Lcom/android/internal/app/AlertController$AlertParams;
 
-    const v5, 0x7f120b27
+    const v5, 0x7f120b29
 
     invoke-virtual {p0, v5}, Lcom/android/settings/nfc/PaymentDefaultDialog;->getString(I)Ljava/lang/String;
 
@@ -268,7 +268,7 @@
 
     if-nez v3, :cond_a
 
-    const v7, 0x7f120b25
+    const v7, 0x7f120b27
 
     invoke-virtual {p0, v7}, Lcom/android/settings/nfc/PaymentDefaultDialog;->getString(I)Ljava/lang/String;
 
@@ -297,7 +297,7 @@
     goto :goto_2
 
     :cond_a
-    const v7, 0x7f120b26
+    const v7, 0x7f120b28
 
     invoke-virtual {p0, v7}, Lcom/android/settings/nfc/PaymentDefaultDialog;->getString(I)Ljava/lang/String;
 
@@ -338,7 +338,7 @@
     iput-object v1, v0, Lcom/android/internal/app/AlertController$AlertParams;->mMessage:Ljava/lang/CharSequence;
 
     :goto_2
-    const v1, 0x7f121a07
+    const v1, 0x7f121a1c
 
     invoke-virtual {p0, v1}, Lcom/android/settings/nfc/PaymentDefaultDialog;->getString(I)Ljava/lang/String;
 
@@ -346,7 +346,7 @@
 
     iput-object v1, v0, Lcom/android/internal/app/AlertController$AlertParams;->mPositiveButtonText:Ljava/lang/CharSequence;
 
-    const v1, 0x7f120b4b
+    const v1, 0x7f120b4d
 
     invoke-virtual {p0, v1}, Lcom/android/settings/nfc/PaymentDefaultDialog;->getString(I)Ljava/lang/String;
 

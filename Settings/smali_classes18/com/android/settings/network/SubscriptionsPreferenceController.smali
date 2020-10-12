@@ -518,7 +518,7 @@
 
     iget-object v6, p0, Lcom/android/settings/network/SubscriptionsPreferenceController;->mContext:Landroid/content/Context;
 
-    const v7, 0x7f120a8b
+    const v7, 0x7f120a8c
 
     invoke-virtual {v6, v7}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -531,7 +531,7 @@
 
     iget-object v6, p0, Lcom/android/settings/network/SubscriptionsPreferenceController;->mContext:Landroid/content/Context;
 
-    const v7, 0x7f120a8f
+    const v7, 0x7f120a90
 
     invoke-virtual {v6, v7}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -589,7 +589,7 @@
     :cond_8
     iget-object v4, p0, Lcom/android/settings/network/SubscriptionsPreferenceController;->mContext:Landroid/content/Context;
 
-    const v5, 0x7f1215b3
+    const v5, 0x7f1215c7
 
     invoke-virtual {v4, v5}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

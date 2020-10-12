@@ -325,7 +325,7 @@
         <item quantity="many">%d aktívnej aplikácie</item>
     </plurals>
     <plurals name="oneplus_applock_wrong_pattern_warning">
-        <item quantity="other">Zostáva %1$d pokusov</item>
+        <item quantity="other">Máte ešte %1$d pokusov</item>
         <item quantity="one">Zostáva %1$d pokus</item>
     </plurals>
     <plurals name="oneplus_lockpattern_too_many_failed_confirmation_attempts_footer">

@@ -56,7 +56,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f120cf3
+    const v2, 0x7f120cf5
 
     invoke-virtual {v1, v2}, Landroidx/fragment/app/FragmentActivity;->getString(I)Ljava/lang/String;
 
@@ -73,7 +73,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f120cf4
+    const v2, 0x7f120cf6
 
     invoke-virtual {v1, v2}, Landroidx/fragment/app/FragmentActivity;->getString(I)Ljava/lang/String;
 
@@ -151,7 +151,7 @@
 
     invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
-    const v0, 0x7f160096
+    const v0, 0x7f160097
 
     invoke-virtual {p0, v0}, Lcom/oneplus/settings/better/OPESportsModeIntroduction;->addPreferencesFromResource(I)V
 

@@ -25,7 +25,7 @@
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 
-    const v0, 0x7f0d0238
+    const v0, 0x7f0d023c
 
     invoke-virtual {p0, v0}, Lcom/oneplus/settings/OPThemeSettingsActivity;->setContentView(I)V
 

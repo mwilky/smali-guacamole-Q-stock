@@ -264,7 +264,7 @@ Skrbnik lahko nadzira in upravlja nastavitve, dostop, aplikacije ter podatke, po
     <string name="advanced_security_title">Dodatno</string>
     <string name="advanced_settings">Dodatne nastavitve</string>
     <string name="advanced_settings_summary">Omogoči več možnosti nastavitev.</string>
-    <string name="advanced_wificall_summary">Uporabi Wi-Fi, ko mobilno omrežje ni na voljo</string>
+    <string name="advanced_wificall_summary">Uporabi Wi-Fi, če mobilno omrežje ni na voljo</string>
     <string name="airplane_mode">Način za letalo</string>
     <string name="airplane_mode_description">Letalski način izklopi vse omrežne povezave, vključno s klici, besedilnimi sporočili, dostopom do interneta ter povezavama Wi-Fi in Bluetooth.</string>
     <string name="airplane_mode_enable_dialog_message">"Ko je vključen letalski način, ne morete uporabljati interneta, e-pošte ali drugih aplikacij, ki potrebujejo podatkovno povezavo, razen če uporabljate Wi-Fi.
@@ -344,7 +344,7 @@ Preprosto približajte napravi (običajno s hrbtno stranjo) in se dotaknite zasl
     <string name="aod_horizon_light_effect_4">Zlata</string>
     <string name="aod_horizon_light_effect_5">McLaren</string>
     <string name="aod_horizon_light_select">IZBERI BARVO</string>
-    <string name="aod_horizon_light_snake_action">VKLOPI</string>
+    <string name="aod_horizon_light_snake_action">VKLOP</string>
     <string name="aod_horizon_light_snake_tip">Ta funkcija je na voljo, ko je vključena funkcija »Nova obvestila«</string>
     <string name="apn_apn">APN</string>
     <string name="apn_auth_type">Vrsta preverjanja pristnosti</string>
@@ -1310,7 +1310,7 @@ Izbor"</string>
     <string name="data_summary_format">Preneseno %1$s od %2$s</string>
     <string name="data_switch_started">Preklop podatkovne kartice SIM. Lahko traja kakšno minuto …</string>
     <string name="data_switch_warning_text">Sprememba dostopa do podatkov bo prekinila vse storitve LTE. Želite nadaljevati?</string>
-    <string name="data_switch_warning_title">Izberite podatke v kartici SIM%1$s</string>
+    <string name="data_switch_warning_title">Izberite podatkovno povezavo za kartico SIM%1$s</string>
     <string name="data_usage_accounting">Operaterjeve meritve porabe podatkov so morda drugačne kot v napravi.</string>
     <string name="data_usage_app">Uporaba aplikacije</string>
     <string name="data_usage_app_info_label">PODATKI O APLIKACIJI</string>
@@ -2313,6 +2313,7 @@ Nastavitev lahko pozneje spremenite v »Nastavitve > Aplikacije in obvestila«."
     <string name="location_settings_title">Lokacija</string>
     <string name="location_sources_heading">Viri lokacije</string>
     <string name="location_street_level">Za določanje lokacije omogočite aplikacijam uporabo GPS-a v telefonu</string>
+    <string name="location_text">Lokacija</string>
     <string name="location_title">Moja lokacija</string>
     <string name="lock_after_timeout">Samodejno zaklepanje</string>
     <string name="lock_after_timeout_summary">%1$s po stanju pripravljenosti</string>
@@ -2710,6 +2711,7 @@ Znova zaženite napravo in poskusite znova."</string>
     <string name="my_device_info_account_preference_title">Račun</string>
     <string name="my_device_info_device_name_preference_title">Ime naprave</string>
     <string name="n_cacrts">Potrdila overitelja potrdil: %d</string>
+    <string name="nearest_station">Najbližja postaja</string>
     <string name="network_4G">4G (priporočeno)</string>
     <string name="network_connected">Povezano</string>
     <string name="network_connecting">Povezovanje …</string>
@@ -3123,7 +3125,7 @@ Varčevanje akumulatorja je samodejno onemogočeno med polnjenjem naprave."</str
     <string name="oneplus_dnd_condition_turn_off">IZKLOPI \"NE MOTI\"</string>
     <string name="oneplus_do_not_disturb">Ne moti</string>
     <string name="oneplus_do_not_disturb_answer_call_by_speaker_summary">Preusmeri dohodne klice v zvočnik, ko je aktiviran igralni način</string>
-    <string name="oneplus_do_not_disturb_answer_call_by_speaker_title">Sprejmi klice prek zvočnika</string>
+    <string name="oneplus_do_not_disturb_answer_call_by_speaker_title">Odgovori na klic prek zvočnika</string>
     <string name="oneplus_do_not_disturb_settings">Nastavitve</string>
     <string name="oneplus_donot_silence_or_block">Dovoli obvestila</string>
     <string name="oneplus_donot_silence_or_block_summary">Dovoli vsa obvestila</string>
@@ -3592,7 +3594,7 @@ Opomba: Vaš prstni odtis je morda manj varen od zapletenega vzorca ali kode PIN
     <string name="oneplus_reading_mode">Bralni način</string>
     <string name="oneplus_reading_mode_activate_manual">Ročno aktiviranje</string>
     <string name="oneplus_reading_mode_add_apps">Dodaj aplikacije za vklop bralnega načina</string>
-    <string name="oneplus_reading_mode_ask">Vprašaj vsakič</string>
+    <string name="oneplus_reading_mode_ask">Vedno vprašaj</string>
     <string name="oneplus_reading_mode_auto_summary">Bralni način bo samodejno aktiviran ali deaktiviran ob zagonu ali zaprtju teh aplikacij</string>
     <string name="oneplus_reading_mode_available">Brez učinka</string>
     <string name="oneplus_reading_mode_block_peek_notifications">Blokiraj obvestila s povzetkom</string>
@@ -3725,8 +3727,8 @@ Opomba:
     <string name="oneplus_select_fingerprint_animation_effect_mcl">McLaren</string>
     <string name="oneplus_select_fingerprint_animation_effect_none">Brez</string>
     <string name="oneplus_select_fingerprint_animation_effect_title">Izberite animacijski učinek prstnega odtisa</string>
-    <string name="oneplus_service_messaging_summary">Podelite OnePlusu dovoljenje za storitve hitrega pošiljanja sporočil v oblaku in si tako zagotovite optimizirano izkušnjo z izdelkom</string>
-    <string name="oneplus_service_messaging_title">OnePlusova storitev pošiljanja sporočil</string>
+    <string name="oneplus_service_messaging_summary">OnePlusu dovolite zagotavljanje storitve hitrega pošiljanja sporočil v oblaku in si tako zagotovite optimizirano izkušnjo z izdelkom</string>
+    <string name="oneplus_service_messaging_title">Storitev sporočanja OnePlus</string>
     <string name="oneplus_set_time">Načrtovani nočni način</string>
     <string name="oneplus_setting_ringtone">Nastavi zvonjenje</string>
     <string name="oneplus_setting_sim_ringtone_switch">Nastavi zvonjenje za kartici SIM</string>
@@ -3750,6 +3752,7 @@ Opomba:
     <string name="oneplus_silent_mode_on">Tihi način je aktiviran</string>
     <string name="oneplus_silent_mode_soc_tri_state_summary">Za klice in obvestila bo izbran tihi način, razen za alarme</string>
     <string name="oneplus_silent_mode_summary">Za klice in obvestila bo izbran tihi način, razen za alarme</string>
+    <string name="oneplus_silent_notifications_status_bar">Skrij tiha obvestila v vrstici stanja</string>
     <string name="oneplus_sim1_ringtone_switch">Kartica SIM 1</string>
     <string name="oneplus_sim2_ringtone_switch">Kartica SIM 2</string>
     <string name="oneplus_simcard_title">Kartica SIM</string>
@@ -3840,7 +3843,7 @@ Opomba:
     <string name="oneplus_tools_summary_U30">Igralni način, žepni način, načrtovani vklop/izklop</string>
     <string name="oneplus_tools_summary_no_gamingmode">Zaklep aplikacij, vzporedne aplikacije</string>
     <string name="oneplus_tools_title">Pripomočki</string>
-    <string name="oneplus_top_level_accounts_summary">OnePlus account, other accounts</string>
+    <string name="oneplus_top_level_accounts_summary">Račun OnePlus, drugi računi</string>
     <string name="oneplus_top_level_apps_and_notifs_summary">Privzete aplikacije, dovoljenja</string>
     <string name="oneplus_top_level_buttons_and_gestures_summary">Drsnik za opozorila, navigacija &amp; poteze</string>
     <string name="oneplus_top_level_cloud_h2_summary">Sinhronizacija podatkov z oblakom, poišči moj telefon</string>
@@ -3857,7 +3860,7 @@ Opomba:
     <string name="oneplus_touch_vibrate">Vibriranje ob dotiku</string>
     <string name="oneplus_turn_off_time">Do</string>
     <string name="oneplus_turn_on_feature_cancel">PREKLIČI</string>
-    <string name="oneplus_turn_on_feature_ok">VKLOPI</string>
+    <string name="oneplus_turn_on_feature_ok">VKLOP</string>
     <string name="oneplus_turn_on_time">Od</string>
     <string name="oneplus_uninstatll_multi_app_msg">Vsi podatki v vzporedni aplikaciji bodo izbrisani, ko odstranite aplikacijo. Želite odstraniti aplikacijo?</string>
     <string name="oneplus_uninstatll_multi_app_title">Vzporedne %1$s</string>
@@ -3930,8 +3933,18 @@ Nastavljanje skritega omrežja ne bo spremenilo nastavitev usmerjevalnika."</str
     <string name="op_audio_settings">Uglaševalnik zvoka</string>
     <string name="op_auto_power_saving">Samodejno varčevanje z energijo</string>
     <string name="op_auto_power_saving_summary">Samodejno preklopi na ustrezno ločljivost za manjšo porabo baterije</string>
+    <string name="op_charging_Station_mute_notifications">Izklop zvoka obvestil</string>
+    <string name="op_charging_footer_text">Obveščeni boste o polnilnih postajah v bližini, ko boste obiskali partnerske lokacije, kot so letališča, ali dogodke OnePlus, npr. Pop-ups.</string>
     <string name="op_charging_optimization">Optimizirano polnjenje</string>
     <string name="op_charging_optimization_summary">Optimizirajte vzorec polnjenja v skladu s svojimi uporabniškimi navadami</string>
+    <string name="op_charging_station">Polnilne postaje v bližini</string>
+    <string name="op_charging_station_no_station">V bližini ni polnilnih postaj</string>
+    <string name="op_charging_station_summary">Obvesti, ko je v bližini polnilna postaja</string>
+    <string name="op_charging_stations">Polnilne postaje</string>
+    <string name="op_charging_stations_off_description">Za iskanje polnilnih postaj so potrebna dovoljenja za lokacijo, da se lahko zaznava snope BLE. Dovolite dostop do lokacije, da začnete uporabljati to funkcijo.</string>
+    <string name="op_charging_stations_off_header">Za iskanje polnilnih postaj je potrebno dovoljenje za lokacijo, da se lahko zaznava snope BLE. Dovolite dostop do lokacije, da začnete uporabljati to funkcijo.</string>
+    <string name="op_charing_station_mute_notifications_description">Zvok obvestil bo izklopljen 6 ur.</string>
+    <string name="op_charing_stations_mute_dynamic_time" formatted="false">Obvestila izklopljena za %1d ur %2d minut</string>
     <string name="op_china_mobile">CMCC</string>
     <string name="op_china_telecom">CTCC</string>
     <string name="op_china_unicom">CUCC</string>
@@ -3947,16 +3960,20 @@ Nastavljanje skritega omrežja ne bo spremenilo nastavitev usmerjevalnika."</str
     <string name="op_default_apps_summary">Začetna stran, brskalnik</string>
     <string name="op_default_luncher_title">Aplikacija za začetno stran</string>
     <string name="op_dnd_summary">Ne moti</string>
+    <string name="op_enable_location_services">Za iskanje polnilnih postaj v bližini omogočite lokacijo</string>
+    <string name="op_enable_text">Omogoči</string>
     <string name="op_face_unlock_set_unlock_password">Odklepanje z obrazom + geslo</string>
     <string name="op_face_unlock_set_unlock_pattern">Odklepanje z obrazom + vzorec</string>
     <string name="op_face_unlock_set_unlock_pin">Odklepanje z obrazom + PIN</string>
     <string name="op_face_unlock_skip_face">Nadaljuj brez odklepanja z obrazom</string>
     <string name="op_failed_to_get_data">Podatkov ni bilo mogoče pridobiti</string>
     <string name="op_fetch_data_in_process">Nalaganje</string>
+    <string name="op_find_charging_stations">Poišči postaje</string>
     <string name="op_fragment">Kratko</string>
     <string name="op_gamespace">Game Space</string>
     <string name="op_high_power_app_manager">Upravljanje zahtevnih aplikacij</string>
-    <string name="op_light_mode_title">Svetla</string>
+    <string name="op_keep_location_services">Za iskanje polnilnih postaj v bližini naj ostane lokacija omogočena</string>
+    <string name="op_light_mode_title">Šibko</string>
     <string name="op_linked_launch_summary">Upravljanje aplikacij, ki se lahko zaženejo v ozadju</string>
     <string name="op_linked_launch_title">Samodejni zagon aplikacij</string>
     <string name="op_lockpassword_choose_your_password_header_for_face">Če želite uporabiti odklepanje z obrazom, nastavite geslo</string>
@@ -3967,7 +3984,7 @@ Nastavljanje skritega omrežja ne bo spremenilo nastavitev usmerjevalnika."</str
     <string name="op_not_disturb">Nastavitve funkcije Ne moti</string>
     <string name="op_not_disturb_summary">Utišaj klice in obvestila ter izklopi vibriranjem razen za alarme</string>
     <string name="op_oneplus_roaming_summary">Zagotavljanje storitve globalnega internetnega dostopa</string>
-    <string name="op_oneplus_roaming_title">OnePlus Roaming</string>
+    <string name="op_oneplus_roaming_title">Gostovanje OnePlus</string>
     <string name="op_primary_charm_purple_label">Temno vijolična</string>
     <string name="op_primary_dark_green_label">Temno zelena</string>
     <string name="op_primary_default_label">Modra</string>
@@ -3986,7 +4003,7 @@ Nastavljanje skritega omrežja ne bo spremenilo nastavitev usmerjevalnika."</str
     <string name="op_security_settings_back_fingerprint_enroll_find_sensor_message">Bralnik prstnih odtisov je na zadnji strani telefona</string>
     <string name="op_security_settings_fingerprint_enroll_find_sensor_message">Poiščite senzor za prstne odtise na gumbu Domov</string>
     <string name="op_security_settings_title">Varnost in prstni odtis</string>
-    <string name="op_sim_card_with_slotid">Reža SIM  %1$s</string>
+    <string name="op_sim_card_with_slotid">SIM  %1$s</string>
     <string name="op_sim_cord">Kartica SIM in omrežje</string>
     <string name="op_sim_cord_summary">Privzeta kartica SIM, uporaba pasovne širine</string>
     <string name="op_sim_name_with_prefix">  (%1$s)</string>
@@ -5384,6 +5401,7 @@ Googlov pristop k sinhroniziranju podatkov, s katerim lahko dostopate do stikov,
     <string name="uicc_lock_summary">Vaša naprava je zaklenjena s Sprint SIMs</string>
     <string name="uicc_unlock">Odklepanje UICC</string>
     <string name="uicc_unlock_summary">Vaša naprava je odklenjena</string>
+    <string name="under_meters">Manj kot %1d m</string>
     <string name="uninstall_activity_text">%1$s je del te aplikacije:</string>
     <string name="uninstall_all_blocked_profile_owner">Ta aplikacija je potrebna za nekatere uporabnike ali profile in je bila odstranjena za druge uporabnike</string>
     <string name="uninstall_all_users_text">Odstrani za vse uporabnike</string>

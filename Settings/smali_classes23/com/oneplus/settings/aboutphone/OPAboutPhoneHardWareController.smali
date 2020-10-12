@@ -69,7 +69,7 @@
 
     iget-object v0, p0, Lcom/oneplus/settings/aboutphone/OPAboutPhoneHardWareController;->mHardWareInfoView:Landroid/view/View;
 
-    const v1, 0x7f0a052c
+    const v1, 0x7f0a0539
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -89,7 +89,7 @@
 
     iget-object v2, p0, Lcom/oneplus/settings/aboutphone/OPAboutPhoneHardWareController;->mHardWareInfoView:Landroid/view/View;
 
-    const v3, 0x7f0a0668
+    const v3, 0x7f0a0675
 
     invoke-virtual {v2, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -109,7 +109,7 @@
 
     iget-object v4, p0, Lcom/oneplus/settings/aboutphone/OPAboutPhoneHardWareController;->mHardWareInfoView:Landroid/view/View;
 
-    const v5, 0x7f0a05d5
+    const v5, 0x7f0a05e2
 
     invoke-virtual {v4, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

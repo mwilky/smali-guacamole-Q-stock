@@ -187,7 +187,7 @@
     return-void
 
     :cond_3
-    const v3, 0x7f12138d
+    const v3, 0x7f1213a1
 
     const/4 v4, 0x0
 
@@ -195,7 +195,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f08024a
+    const v4, 0x7f08027d
 
     invoke-interface {v3, v4}, Landroid/view/MenuItem;->setIcon(I)Landroid/view/MenuItem;
 

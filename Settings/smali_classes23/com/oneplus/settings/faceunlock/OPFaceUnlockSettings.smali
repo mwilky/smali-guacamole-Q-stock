@@ -655,7 +655,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f121136
+    const v3, 0x7f12114a
 
     invoke-virtual {v2, v3}, Landroidx/fragment/app/FragmentActivity;->getString(I)Ljava/lang/String;
 
@@ -858,7 +858,7 @@
 
     move-result-object v1
 
-    const v3, 0x7f120d06
+    const v3, 0x7f120d08
 
     invoke-virtual {v1, v3}, Landroidx/fragment/app/FragmentActivity;->getString(I)Ljava/lang/String;
 
@@ -871,7 +871,7 @@
 
     move-result-object v1
 
-    const v3, 0x7f120d0e
+    const v3, 0x7f120d10
 
     invoke-virtual {v1, v3}, Landroidx/fragment/app/FragmentActivity;->getString(I)Ljava/lang/String;
 
@@ -1135,7 +1135,7 @@
     return-void
 
     :cond_0
-    const v0, 0x7f160099
+    const v0, 0x7f16009a
 
     invoke-virtual {p0, v0}, Lcom/oneplus/settings/faceunlock/OPFaceUnlockSettings;->addPreferencesFromResource(I)V
 
@@ -1306,7 +1306,7 @@
 
     invoke-direct {v0, v1}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v1, 0x7f120cc2
+    const v1, 0x7f120cc4
 
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
 
@@ -1316,7 +1316,7 @@
 
     invoke-direct {v1, p0}, Lcom/oneplus/settings/faceunlock/OPFaceUnlockSettings$4;-><init>(Lcom/oneplus/settings/faceunlock/OPFaceUnlockSettings;)V
 
-    const v2, 0x7f1213da
+    const v2, 0x7f1213ee
 
     invoke-virtual {v0, v2, v1}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -1352,13 +1352,13 @@
 
     invoke-direct {v0, v1}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v1, 0x7f120d15
+    const v1, 0x7f120d17
 
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
     move-result-object v0
 
-    const v1, 0x7f120d14
+    const v1, 0x7f120d16
 
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
 
@@ -1368,7 +1368,7 @@
 
     invoke-direct {v1, p0}, Lcom/oneplus/settings/faceunlock/OPFaceUnlockSettings$6;-><init>(Lcom/oneplus/settings/faceunlock/OPFaceUnlockSettings;)V
 
-    const v2, 0x7f120be6
+    const v2, 0x7f120be8
 
     invoke-virtual {v0, v2, v1}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 

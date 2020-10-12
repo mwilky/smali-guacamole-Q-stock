@@ -74,7 +74,7 @@
 
     if-nez v1, :cond_0
 
-    const v1, 0x7f1600b8
+    const v1, 0x7f1600b9
 
     iput v1, v0, Landroid/provider/SearchIndexableResource;->xmlResId:I
 

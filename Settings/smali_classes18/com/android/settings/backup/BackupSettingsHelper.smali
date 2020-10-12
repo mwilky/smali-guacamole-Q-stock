@@ -257,7 +257,7 @@
 
     iget-object v1, p0, Lcom/android/settings/backup/BackupSettingsHelper;->mContext:Landroid/content/Context;
 
-    const v2, 0x7f12122d
+    const v2, 0x7f121241
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

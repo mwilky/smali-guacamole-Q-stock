@@ -83,7 +83,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f120ff6
+    const v1, 0x7f120ffa
 
     invoke-virtual {v0, v1}, Lcom/oneplus/lib/widget/button/OPButton;->setText(I)V
 
@@ -126,7 +126,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f120ff7
+    const v1, 0x7f120ffb
 
     invoke-virtual {v0, v1}, Lcom/oneplus/lib/widget/button/OPButton;->setText(I)V
 

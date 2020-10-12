@@ -180,7 +180,7 @@ Kas lennurežiim on sisse lülitada?"</string>
     <string name="fingerprint_duplicated">Oled selle sõrmejälje juba registreerinud. Kasutage teist sõrme.</string>
     <string name="fingerprint_go_to_security_sumary">Sõrmejäljega seadme avamiseks peate esmalt määrama turvalise avamismeetodi. Kas soovite seda kohe teha?</string>
     <string name="fingerprint_manage">Halda sõrmejälgi</string>
-    <string name="fingerprint_next">Edasi</string>
+    <string name="fingerprint_next">Järgmine</string>
     <string name="fingerprint_not_recognized">Ei tuvastatud</string>
     <string name="fingerprint_password_hint">Sisestage varuparool</string>
     <string name="fingerprint_password_manage_title">Sõrmejälg</string>
@@ -193,7 +193,7 @@ Kas lennurežiim on sisse lülitada?"</string>
     <string name="fingerprint_wizard_add_button_label">Lisa teine</string>
     <string name="fingerprint_wizard_cancel_button_label">Tühista</string>
     <string name="fingerprint_wizard_finish_button_label">Lõpeta</string>
-    <string name="fingerprint_wizard_next_button_label">Edasi</string>
+    <string name="fingerprint_wizard_next_button_label">Järgmine</string>
     <string name="gallery_application_title">Galeriirakendus</string>
     <string name="generic_error_dlg_text">Rakendust ei saanud maha installida.</string>
     <string name="generic_error_dlg_title">Viga</string>
@@ -248,6 +248,7 @@ Kas lennurežiim on sisse lülitada?"</string>
     <string name="led_settings_title">LED-teavitused</string>
     <string name="list_saved_fingerprints">Salvestatud sõrmejäljed</string>
     <string name="list_saved_fingerprints_footer">Salvestada saab kuni viis sõrmejälge. Sõrmejälgede ümbernimetamiseks või kustutamiseks toksake nendel.</string>
+    <string name="location_text">Asukoht</string>
     <string name="lockpassword_choose_your_fingerprint_header">Sõrmejälg</string>
     <string name="long_press_power_button">Hoidke toitenuppu all</string>
     <string name="mail_application_title">Postirakendus</string>
@@ -266,6 +267,7 @@ Mobiilse kuupunkti tellimuse tühistamiseks külastage veebisaiti My Verizon võ
     <string name="mobile_hotspot_data_off_error">Kuumpunkti sisselülitamiseks lülitage mobiilne andmeside välja</string>
     <string name="multi_app_label_badge">Paralleelne %1$s</string>
     <string name="music_application_title">Muusikarakendus</string>
+    <string name="nearest_station">Lähim jaam</string>
     <string name="nfc_uicc_sim1">SIM 1</string>
     <string name="nfc_uicc_sim2">SIM 2</string>
     <string name="no_network">Võrguteenus puudub</string>
@@ -580,7 +582,7 @@ Tähelepanu: näotuvastusfunktsioon on ebaturvalisem kui sõrmejälg või parool
 Nipsake ekraani allservas vasakult või paremalt."</string>
     <string name="oneplus_fullscreen_gesture_guide_done">"Nüüd olete navigeerimisviibetega tutvunud.
 Saate need uuesti välja lülitada, kui aktiveerite sätetes navigatsiooniriba."</string>
-    <string name="oneplus_fullscreen_gesture_guide_gotit">Sain aru</string>
+    <string name="oneplus_fullscreen_gesture_guide_gotit">Selge</string>
     <string name="oneplus_fullscreen_gesture_guide_home">"Õpime navigeerimisviipeid kasutama.
 Suvalisel hetkel avakuva avamiseks nipsake ekraani alumisest servast keskelt üles."</string>
     <string name="oneplus_fullscreen_gesture_guide_multitask">Viimati kasutatud rakenduste avamiseks nipsake ekraani altservast üles ja peatuge.</string>
@@ -1051,7 +1053,7 @@ Märkus.
     <string name="oneplus_select_fingerprint_animation_effect_none">Puudub</string>
     <string name="oneplus_select_fingerprint_animation_effect_title">Vali sõrmejälje animatsioon</string>
     <string name="oneplus_service_messaging_summary">Võimaldab OnePlus teenusel pakkuda pilveteadete teenuseid, et toote kasutuskogemust optimeerida</string>
-    <string name="oneplus_service_messaging_title">OnePlus teenuse sõnum</string>
+    <string name="oneplus_service_messaging_title">OnePlus teenussõnumid</string>
     <string name="oneplus_set_time">Kellaajaline öörežiim</string>
     <string name="oneplus_setting_ringtone">Määra helin</string>
     <string name="oneplus_setting_sim_ringtone_switch">Määra iga SIM-kaardi jaoks helin</string>
@@ -1075,6 +1077,7 @@ Märkus.
     <string name="oneplus_silent_mode_on">Hääletu režiim on sees</string>
     <string name="oneplus_silent_mode_soc_tri_state_summary">Kõned ja teavitused vaigistatakse, v.a alarmid</string>
     <string name="oneplus_silent_mode_summary">Kõned ja teavitused vaigistatakse, v.a alarmid</string>
+    <string name="oneplus_silent_notifications_status_bar">Peida vaikne teavitus olekuribalt</string>
     <string name="oneplus_sim1_ringtone_switch">SIM-kaart 1</string>
     <string name="oneplus_sim2_ringtone_switch">SIM-kaart 2</string>
     <string name="oneplus_simcard_title">SIM</string>
@@ -1165,7 +1168,7 @@ Märkus.
     <string name="oneplus_tools_summary_U30">Mängurežiim, taskurežiim, ajakavastatud sisse-/väljalülitus</string>
     <string name="oneplus_tools_summary_no_gamingmode">Rakenduste sahtel, paralleelrakendused</string>
     <string name="oneplus_tools_title">Utiliidid</string>
-    <string name="oneplus_top_level_accounts_summary">OnePlus account, other accounts</string>
+    <string name="oneplus_top_level_accounts_summary">OnePlusi konto, muud kontod</string>
     <string name="oneplus_top_level_apps_and_notifs_summary">Vaikerakendused, õigused</string>
     <string name="oneplus_top_level_buttons_and_gestures_summary">Alert Slider, navigatsiooniriba ja viiped</string>
     <string name="oneplus_top_level_cloud_h2_summary">Andmete sünkroonimine pilvega, funktsioon Leia mu telefon</string>
@@ -1254,8 +1257,18 @@ Kui võrgu peidate, ei muuda see ruuteri sätteid."</string>
     <string name="op_audio_settings">Helituuner</string>
     <string name="op_auto_power_saving">Automaatne energiasääst</string>
     <string name="op_auto_power_saving_summary">Sobiva eraldusvõime automaatne valimine, ilma et aku tühjeneks</string>
+    <string name="op_charging_Station_mute_notifications">Vaigista teavitused</string>
+    <string name="op_charging_footer_text">Teid teavitatakse, kui külastate partnerasukohti, nt lennujaamad või OnePlus sündmuseid, nagu Pop-ups ja läheduses on mõni laadimisjaam.</string>
     <string name="op_charging_optimization">Optimeeritud laadimine</string>
     <string name="op_charging_optimization_summary">Optimeerige laadimismustrit kasutusharjumuste järgi</string>
+    <string name="op_charging_station">Läheduses olevad laadimisjaamad</string>
+    <string name="op_charging_station_no_station">Läheduses ei ole laadimisjaamu</string>
+    <string name="op_charging_station_summary">Teavita, kui läheduses on laadimisjaam</string>
+    <string name="op_charging_stations">Laadimisjaamad</string>
+    <string name="op_charging_stations_off_description">Laadimisjaamade leidmiseks peab asukohaluba tuvastama BLE-majakad. Selle funktsiooni kasutamiseks lubage asukohajuurdepääs.</string>
+    <string name="op_charging_stations_off_header">Laadimisjaamade leidmiseks peavad asukohaload tuvastama BLE-majakaid. Funktsiooni kasutamiseks lubage asukohajuurdepääs.</string>
+    <string name="op_charing_station_mute_notifications_description">Teavitused vaigistatakse järgmiseks kuueks tunniks.</string>
+    <string name="op_charing_stations_mute_dynamic_time" formatted="false">Teavitused on vaigistatud %1d tunniks %2d minutiks</string>
     <string name="op_china_mobile">CMCC</string>
     <string name="op_china_telecom">CTCC</string>
     <string name="op_china_unicom">CUCC</string>
@@ -1271,15 +1284,19 @@ Kui võrgu peidate, ei muuda see ruuteri sätteid."</string>
     <string name="op_default_apps_summary">Avakuva, brauser</string>
     <string name="op_default_luncher_title">Avakuva rakendus</string>
     <string name="op_dnd_summary">Ära sega</string>
+    <string name="op_enable_location_services">Läheduses asuvate laadimisjaamada leidmiseks lubage asukohateenused</string>
+    <string name="op_enable_text">Luba</string>
     <string name="op_face_unlock_set_unlock_password">Näotuvastusega avamine + parool</string>
     <string name="op_face_unlock_set_unlock_pattern">Näotuvastusega avamine + muster</string>
     <string name="op_face_unlock_set_unlock_pin">Näotuvastusega avamine + PIN-kood</string>
     <string name="op_face_unlock_skip_face">Jätka ilma näotuvastusega avamiseta</string>
     <string name="op_failed_to_get_data">Andmete hankimine nurjus</string>
     <string name="op_fetch_data_in_process">Laadin</string>
+    <string name="op_find_charging_stations">Leia jaamu</string>
     <string name="op_fragment">Lühike</string>
     <string name="op_gamespace">Game Space</string>
     <string name="op_high_power_app_manager">Suure energiatarbega rakendused</string>
+    <string name="op_keep_location_services">Läheduses asuvate laadimisjaamada leidmiseks jätke asukohateenused lubatuks</string>
     <string name="op_light_mode_title">Hele</string>
     <string name="op_linked_launch_summary">Hallatavaid rakendusi saab taustal käivitada</string>
     <string name="op_linked_launch_title">Rakenduste automaatkäivitus</string>
@@ -1310,7 +1327,7 @@ Kui võrgu peidate, ei muuda see ruuteri sätteid."</string>
     <string name="op_security_settings_back_fingerprint_enroll_find_sensor_message">Telefoni tagaküljelt seda ei leia</string>
     <string name="op_security_settings_fingerprint_enroll_find_sensor_message">Leia sõrmejälje andur avakuva nupul</string>
     <string name="op_security_settings_title">Turvalisus &amp; sõrmejälg</string>
-    <string name="op_sim_card_with_slotid">SIM  %1$s</string>
+    <string name="op_sim_card_with_slotid">SIM-kaart  %1$s</string>
     <string name="op_sim_cord">SIM- kaart ja võrk</string>
     <string name="op_sim_cord_summary">Vaike SIM-kaart, sagedusriba kasutus</string>
     <string name="op_sim_name_with_prefix">  (%1$s)</string>
@@ -1448,14 +1465,14 @@ Kas soovite süsteemi sätted lähtestada? Seda toimingut ei saa tagasi võtta"<
     <string name="sub_activate_failed">Aktiveerimine nurjus.</string>
     <string name="sub_activate_not_supported">Aktiveerimist ei toetata</string>
     <string name="sub_activate_success">Aktiveerimine õnnestus.</string>
-    <string name="sub_deactivate_failed">Deaktiveerimine nurjus.</string>
+    <string name="sub_deactivate_failed">Desaktiveerimine nurjus.</string>
     <string name="sub_deactivate_not_supported">Deaktiveerimist ei toetata</string>
     <string name="sub_deactivate_success">Desaktiveerimine õnnestus.</string>
     <string name="subs_settings">SIM-kaartide olekud</string>
     <string name="summary_voice_network">VoLTE, Wi-Fi kõned</string>
     <string name="summary_voice_volte_only">VoLTE</string>
     <string name="summary_voice_wfc_only">Wi-Fi kõned</string>
-    <string name="switch_skin_doing">Teema muutmine...</string>
+    <string name="switch_skin_doing">Teema muutmine ...</string>
     <string name="switch_theme_has_success">Valmis</string>
     <string name="system_is_up_to_date">Teie süsteem on ajakohane</string>
     <string name="system_update">Süsteemiuuendus</string>
@@ -1497,6 +1514,7 @@ Kas soovite süsteemi sätted lähtestada? Seda toimingut ei saa tagasi võtta"<
     <string name="uicc_lock_summary">Seadme saab lukustada ainult SIM-kaartidega Sprint</string>
     <string name="uicc_unlock">UICC-avamine</string>
     <string name="uicc_unlock_summary">Seade on lukust avatud</string>
+    <string name="under_meters">Alla %1d meetri</string>
     <string name="uninstall_activity_text">%1$s on osa järgmisest rakendusest:</string>
     <string name="uninstall_all_blocked_profile_owner">See rakendus on vajalik teatud kasutajatele või profiilidele ja see installiti teiste jaoks maha</string>
     <string name="uninstall_application_text">Kas soovite selle rakenduse maha installida?</string>

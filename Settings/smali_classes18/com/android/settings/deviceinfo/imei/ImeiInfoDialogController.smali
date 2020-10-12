@@ -24,19 +24,19 @@
     .end annotation
 .end field
 
-.field static final ID_MEID_NUMBER_VALUE:I = 0x7f0a03d2
+.field static final ID_MEID_NUMBER_VALUE:I = 0x7f0a03d1
     .annotation build Landroidx/annotation/VisibleForTesting;
     .end annotation
 .end field
 
-.field private static final ID_MIN_NUMBER_LABEL:I = 0x7f0a03e1
+.field private static final ID_MIN_NUMBER_LABEL:I = 0x7f0a03e0
 
-.field static final ID_MIN_NUMBER_VALUE:I = 0x7f0a03e2
+.field static final ID_MIN_NUMBER_VALUE:I = 0x7f0a03e1
     .annotation build Landroidx/annotation/VisibleForTesting;
     .end annotation
 .end field
 
-.field static final ID_PRL_VERSION_VALUE:I = 0x7f0a0569
+.field static final ID_PRL_VERSION_VALUE:I = 0x7f0a0576
     .annotation build Landroidx/annotation/VisibleForTesting;
     .end annotation
 .end field
@@ -247,13 +247,13 @@
     move-object v2, v3
 
     :goto_0
-    const v4, 0x7f0a03d2
+    const v4, 0x7f0a03d1
 
     invoke-virtual {v1, v4, v2}, Lcom/android/settings/deviceinfo/imei/ImeiInfoDialogFragment;->setText(ILjava/lang/CharSequence;)V
 
     iget-object v1, p0, Lcom/android/settings/deviceinfo/imei/ImeiInfoDialogController;->mDialog:Lcom/android/settings/deviceinfo/imei/ImeiInfoDialogFragment;
 
-    const v2, 0x7f0a03e2
+    const v2, 0x7f0a03e1
 
     iget-object v4, p0, Lcom/android/settings/deviceinfo/imei/ImeiInfoDialogController;->mSubscriptionInfo:Landroid/telephony/SubscriptionInfo;
 
@@ -287,9 +287,9 @@
 
     iget-object v1, p0, Lcom/android/settings/deviceinfo/imei/ImeiInfoDialogController;->mDialog:Lcom/android/settings/deviceinfo/imei/ImeiInfoDialogFragment;
 
-    const v2, 0x7f0a03e1
+    const v2, 0x7f0a03e0
 
-    const v3, 0x7f121511
+    const v3, 0x7f121525
 
     invoke-virtual {v0, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -300,7 +300,7 @@
     :cond_2
     iget-object v1, p0, Lcom/android/settings/deviceinfo/imei/ImeiInfoDialogController;->mDialog:Lcom/android/settings/deviceinfo/imei/ImeiInfoDialogFragment;
 
-    const v2, 0x7f0a0569
+    const v2, 0x7f0a0576
 
     invoke-virtual {p0}, Lcom/android/settings/deviceinfo/imei/ImeiInfoDialogController;->getCdmaPrlVersion()Ljava/lang/String;
 

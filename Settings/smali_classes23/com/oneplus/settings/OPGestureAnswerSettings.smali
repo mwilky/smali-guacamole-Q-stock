@@ -163,7 +163,7 @@
 
     invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
-    const v0, 0x7f16009e
+    const v0, 0x7f16009f
 
     invoke-virtual {p0, v0}, Lcom/oneplus/settings/OPGestureAnswerSettings;->addPreferencesFromResource(I)V
 
@@ -224,7 +224,7 @@
 
     move-result-object v0
 
-    const v2, 0x7f120d94
+    const v2, 0x7f120d96
 
     invoke-virtual {v0, v2}, Landroidx/fragment/app/FragmentActivity;->setTitle(I)V
 

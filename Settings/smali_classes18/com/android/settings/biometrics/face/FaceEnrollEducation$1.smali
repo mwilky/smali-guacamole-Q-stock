@@ -39,12 +39,12 @@
 
     if-eqz p2, :cond_0
 
-    const v0, 0x7f1213a4
+    const v0, 0x7f1213b8
 
     goto :goto_0
 
     :cond_0
-    const v0, 0x7f1213a3
+    const v0, 0x7f1213b7
 
     :goto_0
     nop

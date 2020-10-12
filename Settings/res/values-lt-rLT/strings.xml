@@ -248,6 +248,7 @@ Ar tikrai norite įjungti šią funkciją?"</string>
     <string name="led_settings_title">LED pranešimai</string>
     <string name="list_saved_fingerprints">Išsaugoti pirštų antspaudai</string>
     <string name="list_saved_fingerprints_footer">Išsaugoti galima iki penkių pirštų antspaudų. Bakstelėkite ant bet kurio aukščiau esančio išsaugoto piršto antspaudo, kad pervadintumėte arba pašalintumėte.</string>
+    <string name="location_text">Vieta</string>
     <string name="lockpassword_choose_your_fingerprint_header">Piršto antspaudas</string>
     <string name="long_press_power_button">Paspauskite ir palaikykite maitinimo mygtuką</string>
     <string name="mail_application_title">Pašto programėlė</string>
@@ -266,6 +267,7 @@ Jei norite užsisakyti mobiliojo interneto prieigos taško paslaugą, apsilankyk
     <string name="mobile_hotspot_data_off_error">Jei norite įjungti mobilųjį interneto prieigos tašką, įjunkite mobiliuosius duomenis</string>
     <string name="multi_app_label_badge">Lygiagrečioji %1$s</string>
     <string name="music_application_title">Muzikos programėlė</string>
+    <string name="nearest_station">Artimiausia stotelė</string>
     <string name="nfc_uicc_sim1">SIM 1</string>
     <string name="nfc_uicc_sim2">SIM 2</string>
     <string name="no_network">Nėra tinklo paslaugos</string>
@@ -1075,6 +1077,7 @@ Pastaba.
     <string name="oneplus_silent_mode_on">Įjungtas tylus režimas</string>
     <string name="oneplus_silent_mode_soc_tri_state_summary">Skambučiai ir pranešimai bus nutildyti, išskyrus aliarmus</string>
     <string name="oneplus_silent_mode_summary">Skambučiai ir pranešimai bus nutildyti, išskyrus aliarmus</string>
+    <string name="oneplus_silent_notifications_status_bar">Slėpti tyliuosius pranešimus iš būsenos juostos</string>
     <string name="oneplus_sim1_ringtone_switch">SIM kortelė 1</string>
     <string name="oneplus_sim2_ringtone_switch">SIM kortelė 2</string>
     <string name="oneplus_simcard_title">SIM</string>
@@ -1165,7 +1168,7 @@ Pastaba.
     <string name="oneplus_tools_summary_U30">Žaidimo režimas, kišeninis režimas, suplanuotas įjungimas / išjungimas</string>
     <string name="oneplus_tools_summary_no_gamingmode">„App locker“, lygiagrečiosios programos</string>
     <string name="oneplus_tools_title">Paslaugos</string>
-    <string name="oneplus_top_level_accounts_summary">OnePlus account, other accounts</string>
+    <string name="oneplus_top_level_accounts_summary">„OnePlus“ paskyra, kitos paskyros</string>
     <string name="oneplus_top_level_apps_and_notifs_summary">Numatytosios programos, leidimai</string>
     <string name="oneplus_top_level_buttons_and_gestures_summary">„Alert Slider“, naršymo juosta ir gestai</string>
     <string name="oneplus_top_level_cloud_h2_summary">Duomenų sinchronizavimas su debesimi, ieškoti mano telefono</string>
@@ -1254,8 +1257,18 @@ Nustačius tinklą kaip paslėptą, jūsų nustatyti maršrutizatoriaus parametr
     <string name="op_audio_settings">Garso imtuvas</string>
     <string name="op_auto_power_saving">Automatinis energijos taupymas</string>
     <string name="op_auto_power_saving_summary">Automatiškai įjungti tinkamą raišką neeikvojant akumuliatoriaus energijos</string>
+    <string name="op_charging_Station_mute_notifications">Nutildyti pranešimus</string>
+    <string name="op_charging_footer_text">Gausite pranešimus apie netoliese esančias įkrovimo stoteles, kai lankysitės partnerių vietose, pvz., oro uostuose arba „OnePlus“ reginiuose, pvz., „Pop-ups“.</string>
     <string name="op_charging_optimization">Optimizuotas įkrovimas</string>
     <string name="op_charging_optimization_summary">Optimizuoti įkrovimo būdą pagal jūsų naudojimo įpročius</string>
+    <string name="op_charging_station">Įkrovimo stotelės netoliese</string>
+    <string name="op_charging_station_no_station">Įkrovimo stotelių netoliese nėra</string>
+    <string name="op_charging_station_summary">Pranešti, kai netoliese yra įkrovimo stotelė</string>
+    <string name="op_charging_stations">Įkrovimo stotelės</string>
+    <string name="op_charging_stations_off_description">Jei norite ieškoti įkrovimo stotelių, reikia suteikti leidimą nustatyti vietą, kad būtų galima aptikti BLE signalus. Jei norite pradėti naudotis šia funkcija, suteikite prieigą prie vietos.</string>
+    <string name="op_charging_stations_off_header">Jei norite ieškoti įkrovimo stotelių, BLE signalams aptikti reikalingas leidimas nustatyti vietą. Jei norite pradėti naudotis šia funkcija, suteikite prieigą prie vietos.</string>
+    <string name="op_charing_station_mute_notifications_description">Pranešimai bus nutildyti 6 val.</string>
+    <string name="op_charing_stations_mute_dynamic_time" formatted="false">Pranešimai nutildyti %1d val. %2d min.</string>
     <string name="op_china_mobile">CMCC</string>
     <string name="op_china_telecom">CTCC</string>
     <string name="op_china_unicom">CUCC</string>
@@ -1271,15 +1284,19 @@ Nustačius tinklą kaip paslėptą, jūsų nustatyti maršrutizatoriaus parametr
     <string name="op_default_apps_summary">Pradžia, naršyklė</string>
     <string name="op_default_luncher_title">Pagrindinė programėlė</string>
     <string name="op_dnd_summary">Netrukdyti</string>
+    <string name="op_enable_location_services">Kad būtų galima surasti netoliese esančias įkrovimo stoteles ir jas stebėti, įjunkite vietos nustatymo paslaugas</string>
+    <string name="op_enable_text">Įjungti</string>
     <string name="op_face_unlock_set_unlock_password">Atrakinimas veidu ir slaptažodis</string>
     <string name="op_face_unlock_set_unlock_pattern">Atrakinimas veidu ir taškų derinys</string>
     <string name="op_face_unlock_set_unlock_pin">Atrakinimas veidu ir PIN</string>
     <string name="op_face_unlock_skip_face">Tęsti be atrakinimo veidu</string>
     <string name="op_failed_to_get_data">Gauti duomenų nepavyko</string>
     <string name="op_fetch_data_in_process">Įkeliama</string>
+    <string name="op_find_charging_stations">Ieškoti stotelių</string>
     <string name="op_fragment">Trumpas</string>
     <string name="op_gamespace">Žaidimų erdvė</string>
     <string name="op_high_power_app_manager">Daug energijos vartojančios programėlės</string>
+    <string name="op_keep_location_services">Kad būtų galima surasti netoliese esančias įkrovimo stoteles ir jas stebėti, palikite vietos nustatymo paslaugas įjungtas</string>
     <string name="op_light_mode_title">Šviesi</string>
     <string name="op_linked_launch_summary">Tvarkomos programėlės gali būti paleistos fone</string>
     <string name="op_linked_launch_title">Automatinis programėlių paleidimas</string>
@@ -1497,6 +1514,7 @@ Ar norite iš naujo nustatyti sistemos nustatymus? Šio veiksmo negalima anuliuo
     <string name="uicc_lock_summary">Jūsų įrenginys užrakintas ir gali būti naudojamas tik su „Sprint“ SIM</string>
     <string name="uicc_unlock">UICC atrakinimas</string>
     <string name="uicc_unlock_summary">Jūsų įrenginys atrakintas</string>
+    <string name="under_meters">Iki %1d m</string>
     <string name="uninstall_activity_text">%1$s yra šios programėlės dalis:</string>
     <string name="uninstall_all_blocked_profile_owner">Ši programėlė reikalinga kai kuriems naudotojams arba profiliams ir kitiems buvo išdiegta</string>
     <string name="uninstall_application_text">Norite išdiegti šią programėlę?</string>

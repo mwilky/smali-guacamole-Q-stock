@@ -255,7 +255,7 @@
     :goto_1
     iget-object v2, p0, Lcom/android/settings/print/PrintSettingPreferenceController;->mContext:Landroid/content/Context;
 
-    const v3, 0x7f121228
+    const v3, 0x7f12123c
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 

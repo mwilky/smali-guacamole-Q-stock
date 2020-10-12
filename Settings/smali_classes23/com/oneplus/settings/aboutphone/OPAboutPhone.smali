@@ -109,13 +109,13 @@
 
     check-cast v0, Lcom/oneplus/settings/ui/OPLayoutPreference;
 
-    const v1, 0x7f0a052d
+    const v1, 0x7f0a053a
 
     invoke-virtual {v0, v1}, Lcom/oneplus/settings/ui/OPLayoutPreference;->findViewById(I)Landroid/view/View;
 
     move-result-object v1
 
-    const v2, 0x7f0a0594
+    const v2, 0x7f0a05a1
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -194,7 +194,7 @@
 
     check-cast v0, Lcom/oneplus/settings/ui/OPLayoutPreference;
 
-    const v1, 0x7f0a052b
+    const v1, 0x7f0a0538
 
     invoke-virtual {v0, v1}, Lcom/oneplus/settings/ui/OPLayoutPreference;->findViewById(I)Landroid/view/View;
 

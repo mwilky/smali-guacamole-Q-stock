@@ -88,7 +88,7 @@
 
     iget-object v0, p2, Lcom/oneplus/settings/ui/OPCustomTonePreference$ToneViewHolder;->imageViewMask:Lcom/oneplus/settings/ui/RadiusImageView;
 
-    const v2, 0x7f08060c
+    const v2, 0x7f080640
 
     invoke-virtual {v0, v2}, Lcom/oneplus/settings/ui/RadiusImageView;->setImageResource(I)V
 
@@ -101,7 +101,7 @@
 
     iget-object v0, p2, Lcom/oneplus/settings/ui/OPCustomTonePreference$ToneViewHolder;->imageViewMask:Lcom/oneplus/settings/ui/RadiusImageView;
 
-    const v2, 0x7f08060d
+    const v2, 0x7f080641
 
     invoke-virtual {v0, v2}, Lcom/oneplus/settings/ui/RadiusImageView;->setImageResource(I)V
 
@@ -188,7 +188,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f080543
+    const v1, 0x7f080578
 
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -202,7 +202,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f080544
+    const v1, 0x7f080579
 
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -225,7 +225,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f080549
+    const v1, 0x7f08057e
 
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -239,7 +239,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f08054a
+    const v1, 0x7f08057f
 
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -256,7 +256,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f080546
+    const v1, 0x7f08057b
 
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -270,7 +270,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f080547
+    const v1, 0x7f08057c
 
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -412,7 +412,7 @@
 
     iget-object v2, p1, Lcom/oneplus/settings/ui/OPCustomTonePreference$ToneViewHolder;->imageViewMask:Lcom/oneplus/settings/ui/RadiusImageView;
 
-    const v3, 0x7f08060c
+    const v3, 0x7f080640
 
     invoke-virtual {v2, v3}, Lcom/oneplus/settings/ui/RadiusImageView;->setImageResource(I)V
 
@@ -463,7 +463,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d018e
+    const v1, 0x7f0d0192
 
     const/4 v2, 0x0
 

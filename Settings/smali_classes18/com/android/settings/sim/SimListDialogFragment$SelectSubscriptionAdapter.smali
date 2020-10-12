@@ -139,7 +139,7 @@
     :cond_0
     iget-object v0, p0, Lcom/android/settings/sim/SimListDialogFragment$SelectSubscriptionAdapter;->mInflater:Landroid/view/LayoutInflater;
 
-    const v1, 0x7f0d02b1
+    const v1, 0x7f0d02b5
 
     const/4 v2, 0x0
 
@@ -152,7 +152,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0a06fa
+    const v1, 0x7f0a0707
 
     invoke-virtual {p2, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -160,7 +160,7 @@
 
     check-cast v1, Landroid/widget/TextView;
 
-    const v2, 0x7f0a0699
+    const v2, 0x7f0a06a6
 
     invoke-virtual {p2, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -178,7 +178,7 @@
 
     if-nez v0, :cond_2
 
-    const v4, 0x7f121466
+    const v4, 0x7f12147a
 
     invoke-virtual {v1, v4}, Landroid/widget/TextView;->setText(I)V
 
@@ -188,7 +188,7 @@
 
     iget-object v4, p0, Lcom/android/settings/sim/SimListDialogFragment$SelectSubscriptionAdapter;->mContext:Landroid/content/Context;
 
-    const v5, 0x7f0801e6
+    const v5, 0x7f080219
 
     invoke-virtual {v4, v5}, Landroid/content/Context;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 

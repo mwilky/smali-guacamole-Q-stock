@@ -81,7 +81,7 @@
 
     const/4 v1, 0x0
 
-    const v2, 0x7f0d02be
+    const v2, 0x7f0d02c2
 
     invoke-virtual {p1, v2, p2, v1}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
 

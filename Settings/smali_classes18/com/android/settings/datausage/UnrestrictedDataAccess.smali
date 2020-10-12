@@ -69,7 +69,7 @@
 .method protected getPreferenceScreenResId()I
     .locals 1
 
-    const v0, 0x7f1600fd
+    const v0, 0x7f1600fe
 
     return v0
 .end method
@@ -169,12 +169,12 @@
 
     if-eqz v0, :cond_0
 
-    const v0, 0x7f120a72
+    const v0, 0x7f120a73
 
     goto :goto_0
 
     :cond_0
-    const v0, 0x7f120a7c
+    const v0, 0x7f120a7d
 
     :goto_0
     const/4 v1, 0x0
@@ -212,12 +212,12 @@
 
     if-eqz v0, :cond_1
 
-    const v0, 0x7f120a72
+    const v0, 0x7f120a73
 
     goto :goto_0
 
     :cond_1
-    const v0, 0x7f120a7c
+    const v0, 0x7f120a7d
 
     :goto_0
     invoke-interface {p1, v0}, Landroid/view/MenuItem;->setTitle(I)Landroid/view/MenuItem;

@@ -89,7 +89,7 @@
 
     const/4 v5, 0x0
 
-    const v6, 0x7f1214b4
+    const v6, 0x7f1214c8
 
     invoke-virtual {p0, v6}, Lcom/android/settings/accessibility/ToggleDaltonizerPreferenceFragment;->getString(I)Ljava/lang/String;
 

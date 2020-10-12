@@ -53,7 +53,7 @@
     invoke-virtual {p0, p1}, Lcom/android/settings/applications/specialaccess/premiumsms/PremiumSmsAccess$PremiumSmsPreference;->setIcon(Landroid/graphics/drawable/Drawable;)V
 
     :cond_0
-    const p1, 0x7f0300f1
+    const p1, 0x7f0300f2
 
     invoke-virtual {p0, p1}, Lcom/android/settings/applications/specialaccess/premiumsms/PremiumSmsAccess$PremiumSmsPreference;->setEntries(I)V
 

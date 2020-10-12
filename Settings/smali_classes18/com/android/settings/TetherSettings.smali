@@ -585,7 +585,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f121732
+    const v1, 0x7f121747
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -715,7 +715,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f121608
+    const v3, 0x7f12161c
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -732,7 +732,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f12160a
+    const v4, 0x7f12161e
 
     new-array v5, v0, [Ljava/lang/Object;
 
@@ -748,7 +748,7 @@
 
     move-result-object v4
 
-    const v5, 0x7f121609
+    const v5, 0x7f12161d
 
     new-array v0, v0, [Ljava/lang/Object;
 
@@ -779,7 +779,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f12160c
+    const v3, 0x7f121620
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -789,7 +789,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f12160b
+    const v4, 0x7f12161f
 
     invoke-virtual {v3, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1318,7 +1318,7 @@
 
     invoke-super {p0, p1}, Lcom/android/settings/RestrictedSettingsFragment;->onCreate(Landroid/os/Bundle;)V
 
-    const v0, 0x7f1600f6
+    const v0, 0x7f1600f7
 
     invoke-virtual {p0, v0}, Lcom/android/settings/TetherSettings;->addPreferencesFromResource(I)V
 
@@ -1328,7 +1328,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f121616
+    const v1, 0x7f12162a
 
     invoke-virtual {v0, v1}, Lcom/oneplus/settings/widget/OPFooterPreference;->setTitle(I)V
 
@@ -1733,7 +1733,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f12161a
+    const v1, 0x7f12162e
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
 

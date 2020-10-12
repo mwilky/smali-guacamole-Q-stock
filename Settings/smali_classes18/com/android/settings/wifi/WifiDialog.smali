@@ -205,7 +205,7 @@
 
     if-nez v1, :cond_1
 
-    const v1, 0x7f0a0656
+    const v1, 0x7f0a0663
 
     invoke-virtual {p0, v1}, Lcom/android/settings/wifi/WifiDialog;->findViewById(I)Landroid/view/View;
 
@@ -308,7 +308,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d0352
+    const v1, 0x7f0d0356
 
     const/4 v2, 0x0
 
@@ -391,7 +391,7 @@
 
     invoke-direct {v0, p0}, Lcom/android/settings/wifi/-$$Lambda$WifiDialog$A0XFUDDETwsfRxrVaOXME4wrgzI;-><init>(Lcom/android/settings/wifi/WifiDialog;)V
 
-    const v1, 0x7f0a0657
+    const v1, 0x7f0a0664
 
     invoke-virtual {p0, v1}, Lcom/android/settings/wifi/WifiDialog;->findViewById(I)Landroid/view/View;
 
@@ -401,7 +401,7 @@
 
     invoke-virtual {v1, v0}, Landroid/widget/ImageButton;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const v2, 0x7f0a0516
+    const v2, 0x7f0a0523
 
     invoke-virtual {p0, v2}, Lcom/android/settings/wifi/WifiDialog;->findViewById(I)Landroid/view/View;
 

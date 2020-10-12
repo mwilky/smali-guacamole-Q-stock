@@ -146,7 +146,7 @@
 
     if-eqz v0, :cond_1
 
-    const v1, 0x7f0804d1
+    const v1, 0x7f080504
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -287,7 +287,7 @@
 
     if-eqz v0, :cond_0
 
-    const v1, 0x7f0801ee
+    const v1, 0x7f080221
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -368,7 +368,7 @@
 
     if-eqz v0, :cond_0
 
-    const v1, 0x7f0801ea
+    const v1, 0x7f08021d
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageResource(I)V
 

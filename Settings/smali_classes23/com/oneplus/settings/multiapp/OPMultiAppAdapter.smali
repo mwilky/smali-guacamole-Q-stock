@@ -162,7 +162,7 @@
 
     iget-object v3, p0, Lcom/oneplus/settings/multiapp/OPMultiAppAdapter;->mInflater:Landroid/view/LayoutInflater;
 
-    const v4, 0x7f0d01d9
+    const v4, 0x7f0d01dd
 
     invoke-virtual {v3, v4, v2}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;)Landroid/view/View;
 
@@ -174,7 +174,7 @@
 
     move-object v0, v3
 
-    const v3, 0x7f0a050c
+    const v3, 0x7f0a0519
 
     invoke-virtual {p2, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -184,7 +184,7 @@
 
     iput-object v3, v0, Lcom/oneplus/settings/multiapp/OPMultiAppAdapter$ItemViewHolder;->parent:Landroid/widget/RelativeLayout;
 
-    const v3, 0x7f0a0721
+    const v3, 0x7f0a072e
 
     invoke-virtual {p2, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -204,7 +204,7 @@
 
     iput-object v3, v0, Lcom/oneplus/settings/multiapp/OPMultiAppAdapter$ItemViewHolder;->appIconIv:Landroid/widget/ImageView;
 
-    const v3, 0x7f0a0426
+    const v3, 0x7f0a0425
 
     invoke-virtual {p2, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -214,7 +214,7 @@
 
     iput-object v3, v0, Lcom/oneplus/settings/multiapp/OPMultiAppAdapter$ItemViewHolder;->appNameTv:Landroid/widget/TextView;
 
-    const v3, 0x7f0a0699
+    const v3, 0x7f0a06a6
 
     invoke-virtual {p2, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -240,7 +240,7 @@
 
     iput-object v3, v0, Lcom/oneplus/settings/multiapp/OPMultiAppAdapter$ItemViewHolder;->groupDivider:Landroid/view/View;
 
-    const v3, 0x7f0a06a5
+    const v3, 0x7f0a06b2
 
     invoke-virtual {p2, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -276,7 +276,7 @@
 
     invoke-virtual {v3, v5}, Landroid/view/View;->setVisibility(I)V
 
-    const v3, 0x7f120e30
+    const v3, 0x7f120e33
 
     const/4 v6, 0x1
 
@@ -294,7 +294,7 @@
 
     iget-object v3, v0, Lcom/oneplus/settings/multiapp/OPMultiAppAdapter$ItemViewHolder;->titleTv:Landroid/widget/TextView;
 
-    const v7, 0x7f120e32
+    const v7, 0x7f120e35
 
     invoke-virtual {v3, v7}, Landroid/widget/TextView;->setText(I)V
 

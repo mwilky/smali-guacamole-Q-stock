@@ -1202,7 +1202,7 @@
 
     if-nez v0, :cond_0
 
-    const v0, 0x7f120b68
+    const v0, 0x7f120b6a
 
     return v0
 

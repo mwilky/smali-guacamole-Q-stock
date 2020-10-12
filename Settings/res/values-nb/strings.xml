@@ -267,10 +267,10 @@ Administratoren din kan overvåke og administrere innstillinger, tilgang, apper 
     <string name="advanced_wificall_summary">Bruk Wi-Fi når mobilnettet ikke er tilgjengelig</string>
     <string name="airplane_mode">Flymodus</string>
     <string name="airplane_mode_description">Flymodus slår av alle nettverkstilkoblinger, inkludert samtale, teksting, Internett-tilgang, Wi-Fi og Bluetooth.</string>
-    <string name="airplane_mode_enable_dialog_message">"Når flymodus er på, kan du ikke bruke Internett, e-post eller andre apper som trenger en datatilkobling, med mindre du bruker Wi-Fi.
+    <string name="airplane_mode_enable_dialog_message">"Når flymodus er på, kan du ikke bruke Internett, e-post eller andre apper som trenger datatilkobling, med mindre du bruker Wi-Fi.
 
 Skru på flymodus?"</string>
-    <string name="airplane_mode_enable_dialog_message_wifi_volte">"Når flymodus er på, kan du ikke bruke Internett, e-post, Wi-Fi-anrop eller andre apper som trenger en datatilkobling, med mindre du bruker Wi-Fi.
+    <string name="airplane_mode_enable_dialog_message_wifi_volte">"Når flymodus er på, kan du ikke bruke Internett, e-post, Wi-Fi-anrop eller andre apper som trenger datatilkobling, med mindre du bruker Wi-Fi.
 
 Skru på flymodus?"</string>
     <string name="alarm_ringtone_title">Standard alarmlyd</string>
@@ -1638,7 +1638,7 @@ Hvis problemet vedvarer, må du kanskje avinstallere appen for å få bedre batt
     <string name="doze_always_on_summary">Vis klokkeslett, varselikoner og annen informasjon. Økt batteribruk.</string>
     <string name="doze_always_on_title">Alltid på</string>
     <string name="doze_summary">Vekk skjermen når du mottar varslinger.</string>
-    <string name="doze_title">Omgivelsesvisning</string>
+    <string name="doze_title">Ambient display</string>
     <string name="draw_overlay">Vis over andre apper</string>
     <string name="dsds_dialog_cancel">Avbryt</string>
     <string name="dsds_dialog_confirm">Start på nytt</string>
@@ -2025,8 +2025,8 @@ Du kan endre dette senere fra Innstillinger > Apper og varsler."</string>
     <string name="homepage_personal_settings">Forslag</string>
     <string name="hotspot_tip_message" formatted="false">"Hotspot deler dine mobildata med andre Wi-Fi-kapable enheter. For å koble til ditt hotspot: \u0009 
  1: Skru på Wi-Fi på den andre enheten. 
- 2: Velg %s fra listen over tilgjengelige Wi-Fi nettverk. 
- 3: Hvis passord kreves, tast inn %s For å spare batteri, ha telefonen plugget i når du bruker hotspot. "</string>
+ 2: Velg %s fra listen over tilgjengelige Wi-Fi -nettverk. 
+ 3: Hvis det kreves passord%s, tast inn %s For å spare batteri, ha telefonen din plugget i når du bruker hotspot. "</string>
     <string name="hotspot_tip_title">Hotspot</string>
     <string name="hwui_force_dark_summary">Overstyrer tving mørk-funksjonen til å være alltid på</string>
     <string name="hwui_force_dark_title">Overstyr tving mørk</string>
@@ -2313,6 +2313,7 @@ Du kan endre dette senere fra Innstillinger > Apper og varsler."</string>
     <string name="location_settings_title">Posisjon</string>
     <string name="location_sources_heading">Posisjonskilder</string>
     <string name="location_street_level">Tillat at apper bruker GPS på telefonen til å finne den eksakte posisjonen din</string>
+    <string name="location_text">Posisjon</string>
     <string name="location_title">Min posisjon</string>
     <string name="lock_after_timeout">Låses automatisk</string>
     <string name="lock_after_timeout_summary">%1$s etter hvilemodus</string>
@@ -2624,11 +2625,11 @@ Det er andre brukere tilstede på denne enheten.
     <string name="mobile_data_settings_summary_auto_switch">Telefonen bytter automatisk til denne operatøren når den er innen rekkevidde</string>
     <string name="mobile_data_settings_title">Mobildata</string>
     <string name="mobile_data_usage_title">Databruk av apper</string>
-    <string name="mobile_hotspot_airplane_off_error">Skru av flymodus for å slå på hotspot</string>
-    <string name="mobile_hotspot_authoration_error">"For å bruke hotspot må du abonnere på hotspot-tjenester.
+    <string name="mobile_hotspot_airplane_off_error">Slå av flymodus for å slå på hotspot</string>
+    <string name="mobile_hotspot_authoration_error">"For å bruke Hotspot, må du abonnere på Hotspot tjenester.
 
-For å abonnere på hotspot besøk My Verizon eller ring kundeservice på +1 (800) 922–0204."</string>
-    <string name="mobile_hotspot_data_off_error">Skru på mobildata for å slå på hotspot</string>
+For å abonnere på Hotspot besøk My Verizon eller ring kundeservice på (800) 922–0204."</string>
+    <string name="mobile_hotspot_data_off_error">Slå på mobildata for å slå på hotspot</string>
     <string name="mobile_insert_sim_card">Sett inn SIM-kortet og start enheten på nytt</string>
     <string name="mobile_network_active_esim">Aktiv / nedlastet SIM-kort</string>
     <string name="mobile_network_active_sim">Aktiv / SIM-kort</string>
@@ -2710,6 +2711,7 @@ Hvis du bytter til %1$s, kanselleres ikke %2$s-tjenesten din."</string>
     <string name="my_device_info_account_preference_title">Konto</string>
     <string name="my_device_info_device_name_preference_title">Enhetsnavn</string>
     <string name="n_cacrts">%d CA-sertifikater</string>
+    <string name="nearest_station">Nærmeste stasjon</string>
     <string name="network_4G">4G (anbefalt)</string>
     <string name="network_connected">Tilkoblet</string>
     <string name="network_connecting">Kobler til …</string>
@@ -2993,7 +2995,7 @@ Dette gir også appen muligheten til å slå Ikke forstyrr av eller på samt end
     <string name="oneplus_applock_at_least_four_points">Tegn og inkluder minst 4 punkter</string>
     <string name="oneplus_applock_lockpassword_confirm_your_pin_header">Angi PIN-koden</string>
     <string name="oneplus_applock_need_to_unlock_wrong">Feil PIN-kode</string>
-    <string name="oneplus_applock_pattern_header">Tegn mønster</string>
+    <string name="oneplus_applock_pattern_header">Tegn mønsteret</string>
     <string name="oneplus_applock_wrong_pattern_header">Feil mønster</string>
     <string name="oneplus_apps_notifications">Apps &amp; varsler</string>
     <string name="oneplus_apps_title">Apper</string>
@@ -3125,7 +3127,7 @@ Batterisparing slås automatisk av når enheten lader."</string>
     <string name="oneplus_do_not_disturb_answer_call_by_speaker_summary">Send innkommende anrop til høyttaler når spillmodus er aktivert</string>
     <string name="oneplus_do_not_disturb_answer_call_by_speaker_title">Svar anrop gjennom høyttaler</string>
     <string name="oneplus_do_not_disturb_settings">Innstillinger</string>
-    <string name="oneplus_donot_silence_or_block">Tillat varslinger</string>
+    <string name="oneplus_donot_silence_or_block">Tillatt varsler</string>
     <string name="oneplus_donot_silence_or_block_summary">Tillat alle typer varsler</string>
     <string name="oneplus_double_tap_power_gesture">Klikk to ganger på strømknappen for å</string>
     <string name="oneplus_double_tap_power_gesture_app">VELG FUNKSJONEN</string>
@@ -3134,7 +3136,7 @@ Batterisparing slås automatisk av når enheten lader."</string>
     <string name="oneplus_double_tap_power_none">Ingen</string>
     <string name="oneplus_doze_summary_801">Vis klokken og annen informasjon på standby-skjermen</string>
     <string name="oneplus_doze_summary_new">Vis tid, dato og varslinger på skjermen</string>
-    <string name="oneplus_doze_title">Omgivelsesvisning</string>
+    <string name="oneplus_doze_title">Ambient display</string>
     <string name="oneplus_doze_title_801">Ambient display</string>
     <string name="oneplus_draw_gesture_start_none">Ingen</string>
     <string name="oneplus_draw_m_start_app">Tegn en M</string>
@@ -3750,6 +3752,7 @@ Merk:
     <string name="oneplus_silent_mode_on">Stillemodus er på</string>
     <string name="oneplus_silent_mode_soc_tri_state_summary">Anrop og varslinger er stille, unntatt alarmer</string>
     <string name="oneplus_silent_mode_summary">Anrop og varslinger er stille, unntatt alarmer</string>
+    <string name="oneplus_silent_notifications_status_bar">Skjul stille varsling i statuslinjen</string>
     <string name="oneplus_sim1_ringtone_switch">SIM-kort 1</string>
     <string name="oneplus_sim2_ringtone_switch">SIM-kort 2</string>
     <string name="oneplus_simcard_title">SIM</string>
@@ -3840,7 +3843,7 @@ Merk:
     <string name="oneplus_tools_summary_U30">Spillmodus, lommemodus, tidsbestemt strøm på/av</string>
     <string name="oneplus_tools_summary_no_gamingmode">App-skap, parallelle apper</string>
     <string name="oneplus_tools_title">Verktøy</string>
-    <string name="oneplus_top_level_accounts_summary">OnePlus account, other accounts</string>
+    <string name="oneplus_top_level_accounts_summary">OnePlus-konto, andre kontoer</string>
     <string name="oneplus_top_level_apps_and_notifs_summary">Standard apper, tillatelser</string>
     <string name="oneplus_top_level_buttons_and_gestures_summary">Varselsglidebryter &amp; bevegelser</string>
     <string name="oneplus_top_level_cloud_h2_summary">Synkroniser data med nettsky, Finn telefonen</string>
@@ -3930,8 +3933,18 @@ Skjuling av nettverket vil ikke endre ruterinnstillingene dine."</string>
     <string name="op_audio_settings">Lydtuner</string>
     <string name="op_auto_power_saving">Automatisk strømsparing</string>
     <string name="op_auto_power_saving_summary">Bytt automatisk til egnet oppløsning uten å lade ut batteriet</string>
+    <string name="op_charging_Station_mute_notifications">Demp varsler</string>
+    <string name="op_charging_footer_text">Du vil motta et varsel om ladestasjoner i nærheten når du besøker partnerposisjoner som flyplasser eller OnePlus-events som Pop-ups.</string>
     <string name="op_charging_optimization">Optimalisert lading</string>
     <string name="op_charging_optimization_summary">Optimaliser lademønsteret i samsvar med bruksvanene dine</string>
+    <string name="op_charging_station">Ladestasjoner i nærheten</string>
+    <string name="op_charging_station_no_station">Ingen ladestasjoner i nærheten</string>
+    <string name="op_charging_station_summary">Send et varsel når det er en ladestasjon i nærheten</string>
+    <string name="op_charging_stations">Ladestasjoner</string>
+    <string name="op_charging_stations_off_description">\"For å finne ladestasjonene, er det nødvendig med posisjonstillatelse for å registrere BLE-beacons. Gi tilgang til posisjon for å starte denne funksjonen. \".</string>
+    <string name="op_charging_stations_off_header">\"For å finne ladestasjonene, er en posisjonstillatelse nødvendig for å registrere BLE beacons. Gi posisjonstilgang for å begynne å bruke denne funksjonen.\".</string>
+    <string name="op_charing_station_mute_notifications_description">Varsler vil være dempet i 6 timer.</string>
+    <string name="op_charing_stations_mute_dynamic_time" formatted="false">Varsel dempet i %1d time %2d minutter</string>
     <string name="op_china_mobile">CMCC</string>
     <string name="op_china_telecom">CTCC</string>
     <string name="op_china_unicom">CUCC</string>
@@ -3947,15 +3960,19 @@ Skjuling av nettverket vil ikke endre ruterinnstillingene dine."</string>
     <string name="op_default_apps_summary">Hjem, nettleser</string>
     <string name="op_default_luncher_title">Hjem-app</string>
     <string name="op_dnd_summary">Ikke forstyrr</string>
+    <string name="op_enable_location_services">Aktiver posisjonstjenestene for å finne og spore ladestasjoner i nærheten</string>
+    <string name="op_enable_text">Aktiver</string>
     <string name="op_face_unlock_set_unlock_password">Ansiktsgjenkjenning + passord</string>
     <string name="op_face_unlock_set_unlock_pattern">Ansiktsgjenkjenning + mønster</string>
     <string name="op_face_unlock_set_unlock_pin">Ansiktsgjenkjenning + PIN-kode</string>
     <string name="op_face_unlock_skip_face">Fortsett uten ansiktsgjenkjenning</string>
     <string name="op_failed_to_get_data">Kunne ikke hente data</string>
     <string name="op_fetch_data_in_process">Laster inn</string>
+    <string name="op_find_charging_stations">Finn stasjoner</string>
     <string name="op_fragment">Kort</string>
     <string name="op_gamespace">Game Space</string>
     <string name="op_high_power_app_manager">Håndtering av strømhungrige apper</string>
+    <string name="op_keep_location_services">Hold posisjonstjenestene aktiverte for å finne og spore ladestasjoner i nærheten</string>
     <string name="op_light_mode_title">Lys</string>
     <string name="op_linked_launch_summary">Apphåndtering kan tilkobles oppstart i bakgrunnen</string>
     <string name="op_linked_launch_title">Autostart av apper</string>
@@ -5382,6 +5399,7 @@ Synkroniser på Google-måten, slik at du har tilgang til kontaktene dine, avtal
     <string name="uicc_lock_summary">Enheten er låst med kun Sprint SIM-er</string>
     <string name="uicc_unlock">UICC-opplåsing</string>
     <string name="uicc_unlock_summary">Enheten er ulåst</string>
+    <string name="under_meters">Under %1d meter</string>
     <string name="uninstall_activity_text">%1$s er en del av følgende app:</string>
     <string name="uninstall_all_blocked_profile_owner">Appen er påkrevd av noen brukere eller profiler og ble avinstallert for andre</string>
     <string name="uninstall_all_users_text">Avinstaller for alle brukere</string>

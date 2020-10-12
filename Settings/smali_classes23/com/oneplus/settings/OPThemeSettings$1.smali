@@ -48,14 +48,14 @@
 
     if-eqz v1, :cond_0
 
-    const v1, 0x7f1600c1
+    const v1, 0x7f1600c2
 
     iput v1, v0, Landroid/provider/SearchIndexableResource;->xmlResId:I
 
     goto :goto_0
 
     :cond_0
-    const v1, 0x7f1600c0
+    const v1, 0x7f1600c1
 
     iput v1, v0, Landroid/provider/SearchIndexableResource;->xmlResId:I
 

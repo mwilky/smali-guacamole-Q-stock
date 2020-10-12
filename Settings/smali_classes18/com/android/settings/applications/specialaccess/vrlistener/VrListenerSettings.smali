@@ -57,19 +57,19 @@
 
     move-result-object v0
 
-    const v1, 0x7f121816
+    const v1, 0x7f12182b
 
     invoke-virtual {v0, v1}, Lcom/android/settings/utils/ManagedServiceSettings$Config$Builder;->setWarningDialogTitle(I)Lcom/android/settings/utils/ManagedServiceSettings$Config$Builder;
 
     move-result-object v0
 
-    const v1, 0x7f121815
+    const v1, 0x7f12182a
 
     invoke-virtual {v0, v1}, Lcom/android/settings/utils/ManagedServiceSettings$Config$Builder;->setWarningDialogSummary(I)Lcom/android/settings/utils/ManagedServiceSettings$Config$Builder;
 
     move-result-object v0
 
-    const v1, 0x7f120b64
+    const v1, 0x7f120b66
 
     invoke-virtual {v0, v1}, Lcom/android/settings/utils/ManagedServiceSettings$Config$Builder;->setEmptyText(I)Lcom/android/settings/utils/ManagedServiceSettings$Config$Builder;
 
@@ -119,7 +119,7 @@
 .method protected getPreferenceScreenResId()I
     .locals 1
 
-    const v0, 0x7f160109
+    const v0, 0x7f16010a
 
     return v0
 .end method

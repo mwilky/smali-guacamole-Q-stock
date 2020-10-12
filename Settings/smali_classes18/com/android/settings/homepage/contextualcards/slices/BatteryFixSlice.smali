@@ -136,7 +136,7 @@
 
     iget-object v0, p0, Lcom/android/settings/homepage/contextualcards/slices/BatteryFixSlice;->mContext:Landroid/content/Context;
 
-    const v1, 0x7f0801b3
+    const v1, 0x7f0801b5
 
     invoke-static {v0, v1}, Landroidx/core/graphics/drawable/IconCompat;->createWithResource(Landroid/content/Context;I)Landroidx/core/graphics/drawable/IconCompat;
 
@@ -144,7 +144,7 @@
 
     iget-object v1, p0, Lcom/android/settings/homepage/contextualcards/slices/BatteryFixSlice;->mContext:Landroid/content/Context;
 
-    const v2, 0x7f1211ce
+    const v2, 0x7f1211e2
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -429,7 +429,7 @@
 
     iget-object v0, p0, Lcom/android/settings/homepage/contextualcards/slices/BatteryFixSlice;->mContext:Landroid/content/Context;
 
-    const v1, 0x7f1211ce
+    const v1, 0x7f1211e2
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 

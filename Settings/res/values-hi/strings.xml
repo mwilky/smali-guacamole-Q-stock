@@ -264,10 +264,10 @@
     <string name="advanced_security_title">बेहतर सेटिंग</string>
     <string name="advanced_settings">बेहतर सेटिंग</string>
     <string name="advanced_settings_summary">और सेटिंग विकल्‍प चालू करें</string>
-    <string name="advanced_wificall_summary">जब मोबाइल नेटवर्क उपलब्ध न हो तो वाई-फाई का उपयोग करें</string>
+    <string name="advanced_wificall_summary">मोबाइल नेटवर्क उपलब्ध न होने पर Wi-Fi का उपयोग करें</string>
     <string name="airplane_mode">हवाई जहाज़ मोड</string>
     <string name="airplane_mode_description">हवाई जहाज मोड सभी नेटवर्क कनेक्शन बंद कर देता है, जिसमें कॉलिंग, टेक्स्टिंग, इंटरनेट एक्सेस, वाई-फ़ाई और ब्लूटूथ शामिल हैं.</string>
-    <string name="airplane_mode_enable_dialog_message">"जब हवाई जहाज मोड चालू होता है, तो आप इंटरनेट, ईमेल या अन्य ऐप जिन्हें डेटा कनेक्शन की आवश्यकता होती है उनका उपयोग नहीं कर पाएंगे, जब तक कि आप वाई-फ़ाई का उपयोग न करें।
+    <string name="airplane_mode_enable_dialog_message">"जब हवाई जहाज मोड चालू होता है, तो आप इंटरनेट, ईमेल या अन्य ऐप जिन्हें डेटा कनेक्शन की आवश्यकता होती है उनका उपयोग नहीं कर पाएंगे, जब तक कि आप वाई-फ़ाई का उपयोग नहीं करते।
 
 हवाई जहाज मोड चालू करें?"</string>
     <string name="airplane_mode_enable_dialog_message_wifi_volte">"जब हवाई जहाज मोड चालू होता है, तो आप इंटरनेट, ईमेल, वाई-फ़ाई कॉलिंग या अन्य ऐप जिन्हें डेटा कनेक्शन की आवश्यकता होती है उनका उपयोग तब तक नहीं कर पाएंगे, जब तक कि आप वाई-फ़ाई का उपयोग न करें।
@@ -344,7 +344,7 @@
     <string name="aod_horizon_light_effect_4">सोना</string>
     <string name="aod_horizon_light_effect_5">McLaren</string>
     <string name="aod_horizon_light_select">रंग का चयन करें</string>
-    <string name="aod_horizon_light_snake_action">टर्न ऑन</string>
+    <string name="aod_horizon_light_snake_action">चालू करें</string>
     <string name="aod_horizon_light_snake_tip">\"नए नोटिफिकेशंस\" चालू होने पर यह सुविधा उपलब्ध होगी</string>
     <string name="apn_apn">APN</string>
     <string name="apn_auth_type">प्रमाणीकरण प्रकार</string>
@@ -2023,10 +2023,10 @@
     <string name="homepage_all_settings">सभी सेटिंग</string>
     <string name="homepage_condition_footer_content_description">छोटा करें</string>
     <string name="homepage_personal_settings">सुझाव</string>
-    <string name="hotspot_tip_message" formatted="false">"मोबाइल हॉटस्पॉट अन्य वाई-फाई सक्षम उपकरणों के साथ आपके मोबाइल डेटा को साझा करता है। अपने मोबाइल हॉटस्पॉट से कनेक्ट करने के लिए: \u0009 
- 1: अन्य डिवाइस पर वाई-फाई चालू करें। 
- 2: उपलब्ध वाई-फाई नेटवर्क की सूची में %s का चयन करें। 
- 3: यदि पासवर्ड की आवश्यकता है, तो बैटरी सेव करने के लिए %s दर्ज करें, मोबाइल हॉटस्पॉट का उपयोग करते समय अपना फोन प्लग रखें। "</string>
+    <string name="hotspot_tip_message" formatted="false">"मोबाइस हॉटस्पॉट अन्य वाई-फाई वाले डिवाइस के साथ आपके मोबाइल डेटा को साझा करता है। अपने मोबाइल हॉटस्पॉट से कनेक्ट करने के लिए: \u0009 
+1: दूसरे डिवाइस पर वाई-फाई चालू करें।
+ 2: उपलब्ध वाई-फाई नेटवर्क में से %s को चुनें। 
+ 3: यदि पासवर्ड की आवश्यकता हो, तो %s दर्ज करें। बैटरी चार्ज रखने के लिए, मोबाइल हॉटस्पॉट का उपयोग करते समय अपने फ़ोन को चार्ज में लगाकर रखें। "</string>
     <string name="hotspot_tip_title">मोबाइल हॉटस्पॉट</string>
     <string name="hwui_force_dark_summary">फ़ोर्स-डार्क सुविधा को हमेशा चालू रहने के लिए ओवरराइड करती है</string>
     <string name="hwui_force_dark_title">फ़ोर्स-डार्क सुविधा को ओवरराइड करें</string>
@@ -2313,6 +2313,7 @@
     <string name="location_settings_title">जगह</string>
     <string name="location_sources_heading">स्‍थानीय स्रोत</string>
     <string name="location_street_level">आपकी जगह का पता लगाने के लिए, ऐप को आपके फ़ोन पर जीपीएस का इस्तेमाल करने दें</string>
+    <string name="location_text">स्थान</string>
     <string name="location_title">मेरी जगह</string>
     <string name="lock_after_timeout">अपने आप लॉक करें</string>
     <string name="lock_after_timeout_summary">%1$s तक इस्तेमाल न होने के बाद</string>
@@ -2625,7 +2626,7 @@
     <string name="mobile_data_settings_title">मोबाइल डेटा</string>
     <string name="mobile_data_usage_title">ऐप्लिकेशन का डेटा इस्तेमाल</string>
     <string name="mobile_hotspot_airplane_off_error">हॉटस्पॉट चालू करने के लिए, कृपया हवाई जहाज मोड बंद करें</string>
-    <string name="mobile_hotspot_authoration_error">"मोबाइल हॉटस्पॉट का उपयोग करने के लिए, आपको मोबाइल हॉटस्पॉट सेवाओं की सदस्यता लेनी होगी।
+    <string name="mobile_hotspot_authoration_error">"मोबाइल हॉटस्पॉट का उपयोग करने के लिए, आपको मोबाइल हॉटस्पॉट सेवाओं की सदस्यता लेनी होगी। 
 
  मोबाइल सदस्यता के लिए my verizon पर जाएँ या (800) 922–0204 पर ग्राहक सेवा पर कॉल करें।"</string>
     <string name="mobile_hotspot_data_off_error">हॉटस्पॉट चालू करने के लिए, कृपया मोबाइल डेटा चालू करें</string>
@@ -2710,6 +2711,7 @@
     <string name="my_device_info_account_preference_title">खाता</string>
     <string name="my_device_info_device_name_preference_title">डिवाइस का नाम</string>
     <string name="n_cacrts">%d CA प्रमाणपत्र</string>
+    <string name="nearest_station">निकटतम स्टेशन</string>
     <string name="network_4G">4G (सुझाया गया)</string>
     <string name="network_connected">कनेक्ट किया गया</string>
     <string name="network_connecting">कनेक्ट हो रहा है...</string>
@@ -3541,7 +3543,7 @@
     <string name="oneplus_preference_settings_manual_open">स्थिति</string>
     <string name="oneplus_preference_settings_turn_off_time">तक</string>
     <string name="oneplus_preference_settings_turn_on">"'परेशान ना करें' को ऑन करें"</string>
-    <string name="oneplus_preference_settings_turn_on_time">आरंभ</string>
+    <string name="oneplus_preference_settings_turn_on_time">यहाँ से</string>
     <string name="oneplus_prior_to_use_you_need_to">उपयोग करने से पहले, आपको यह करने की आवश्यकता है:</string>
     <string name="oneplus_privacy_policy">गोपनीयता नीति</string>
     <string name="oneplus_privacy_protection_title">एन्क्रिप्ट किया गया स्पेस</string>
@@ -3750,6 +3752,7 @@
     <string name="oneplus_silent_mode_on">साइलेंट मोड ऑन है</string>
     <string name="oneplus_silent_mode_soc_tri_state_summary">अलार्म को छोड़कर कॉल और नोटिफिकेशन साइलेंट हो जाएँगे</string>
     <string name="oneplus_silent_mode_summary">अलार्म को छोड़कर बाकी कॉल और नोटिफिकेशन सभी साइलेंट हो जाएँगे</string>
+    <string name="oneplus_silent_notifications_status_bar">स्टेटस बार में साइलेंट नोटिफिकेशन छिपाएँ</string>
     <string name="oneplus_sim1_ringtone_switch">सिम कार्ड 1</string>
     <string name="oneplus_sim2_ringtone_switch">सिम कार्ड 2</string>
     <string name="oneplus_simcard_title">सिम</string>
@@ -3792,7 +3795,7 @@
     <string name="oneplus_theme_accent_color_select">एक्सेंट रंग चुनें</string>
     <string name="oneplus_theme_apply_summary">इस थीम को लागू करने के बाद, आपके अनुकूलन विकल्प ओवरराइड कर दिए जाएँगें</string>
     <string name="oneplus_theme_apply_title">क्या आप इस थीम को लागू करना चाहते हैं?</string>
-    <string name="oneplus_theme_clock">घड़ी का स्टाइल</string>
+    <string name="oneplus_theme_clock">घड़ी की शैली</string>
     <string name="oneplus_theme_clock_snake_action">एम्बीएंट डिस्प्ले चालू करें</string>
     <string name="oneplus_theme_clock_snake_tip">एम्बीएंट डिस्प्ले चालू होने पर यह सुविधा उपलब्ध होगी</string>
     <string name="oneplus_theme_colorpicker_colorvalue">रंग कोड</string>
@@ -3840,7 +3843,7 @@
     <string name="oneplus_tools_summary_U30">गेमिंग मोड, पॉकेट मोड, निर्धारित पावर ऑन/ऑफ़</string>
     <string name="oneplus_tools_summary_no_gamingmode">ऐप लॉकर, समानांतर ऐप्स</string>
     <string name="oneplus_tools_title">उपयोगिताएं</string>
-    <string name="oneplus_top_level_accounts_summary">OnePlus account, other accounts</string>
+    <string name="oneplus_top_level_accounts_summary">OnePlus खाता, अन्य खाते</string>
     <string name="oneplus_top_level_apps_and_notifs_summary">डिफ़ॉल्ट ऐप्स, अनुमतियाँ</string>
     <string name="oneplus_top_level_buttons_and_gestures_summary">चेतावनी स्लाइडर, नेविगेशन बार &amp; जेस्चर्स</string>
     <string name="oneplus_top_level_cloud_h2_summary">क्लाउड से डेटा सिंक करें, मेरा फ़ोन ढूँढें</string>
@@ -3857,8 +3860,8 @@
     <string name="oneplus_touch_vibrate">टच करने पर कंपन करे</string>
     <string name="oneplus_turn_off_time">तक</string>
     <string name="oneplus_turn_on_feature_cancel">रद्द करें</string>
-    <string name="oneplus_turn_on_feature_ok">टर्न ऑन</string>
-    <string name="oneplus_turn_on_time">आरंभ</string>
+    <string name="oneplus_turn_on_feature_ok">चालू करें</string>
+    <string name="oneplus_turn_on_time">यहाँ से</string>
     <string name="oneplus_uninstatll_multi_app_msg">अनइंस्टॉल करने पर समानांतर ऐप के भीतर सभी डेटा मिट जाएगा। क्या आप वाकई अनइंस्टॉल करना चाहते हैं?</string>
     <string name="oneplus_uninstatll_multi_app_title">समानांतर %1$s</string>
     <string name="oneplus_uninstatll_multi_main_app_msg">अनइंस्टॉल करने पर इस ऐप और संबंधित समानांतर ऐप के भीतर का सभी डेटा मिटा दिया जाएगा। क्या आप वाकई अनइंस्टॉल करना चाहते हैं?</string>
@@ -3930,8 +3933,18 @@
     <string name="op_audio_settings">ऑडियो ट्यूनर</string>
     <string name="op_auto_power_saving">ऑटो पावर सहेजना</string>
     <string name="op_auto_power_saving_summary">बैटरी ख़र्च के बिना उपयुक्त रिज़ॉल्यूशन पर स्वचालित रूप से स्विच करें</string>
+    <string name="op_charging_Station_mute_notifications">नोटिफिकेशंस को म्यूट करें</string>
+    <string name="op_charging_footer_text">जब आप हवाई अड्डों या Pop-ups जैसे OnePlus इवेंट्स जैसे पार्टनर स्थानों पर जाते हैं, तो आपको आसपास के किसी भी चार्जिंग स्टेशन के बारे में सूचित किया जाएगा।</string>
     <string name="op_charging_optimization">अनुकूलित चार्जिंग</string>
     <string name="op_charging_optimization_summary">अपने उपयोग की आदतों के अनुसार चार्जिंग पैटर्न का अनुकूलन करें</string>
+    <string name="op_charging_station">आसपास के चार्जिंग स्टेशन्स</string>
+    <string name="op_charging_station_no_station">कोई निकटतम चार्जिंग स्टेशन नहीं</string>
+    <string name="op_charging_station_summary">पास में चार्जिंग स्टेशन होने पर सूचित करें</string>
+    <string name="op_charging_stations">चार्जिंग स्टेशन्स</string>
+    <string name="op_charging_stations_off_description">चार्जिंग स्टेशनों को खोजने के लिए, BLE बीकन्स का पता लगाने के लिए लोकेशन परमिशन आवश्यक है। कृपया इस फीचर का उपयोग शुरू करने के लिए लोकेशन तक पहुँच प्रदान करें।</string>
+    <string name="op_charging_stations_off_header">चार्जिंग स्टेशनों को खोजने के लिए, BLE बीकन्स का पता लगाने के लिए लोकेशन परमिशन आवश्यक है। कृपया इस सुविधा का उपयोग शुरू करने के लिए लोकेशन तक पहुँच प्रदान करें।</string>
+    <string name="op_charing_station_mute_notifications_description">अधिसूचना 6 घंटे के लिए म्यूट की जाएगी।</string>
+    <string name="op_charing_stations_mute_dynamic_time" formatted="false">%1d घंटे %2d मिनट के लिए नोटिफिकेशन को म्यूट करें</string>
     <string name="op_china_mobile">CMCC</string>
     <string name="op_china_telecom">CTCC</string>
     <string name="op_china_unicom">CUCC</string>
@@ -3947,15 +3960,19 @@
     <string name="op_default_apps_summary">होम, ब्राउज़र</string>
     <string name="op_default_luncher_title">होम ऐप</string>
     <string name="op_dnd_summary">परेशान न करें</string>
+    <string name="op_enable_location_services">आस-पास के चार्जिंग स्टेशनों को खोजने और ट्रैक करने के लिए, कृपया लोकेशन सेवाओं को सक्षम करें</string>
+    <string name="op_enable_text">सक्षम करें</string>
     <string name="op_face_unlock_set_unlock_password">फ़ेस अनलॉक + पासवर्ड</string>
     <string name="op_face_unlock_set_unlock_pattern">फ़ेस अनलॉक + पैटर्न</string>
     <string name="op_face_unlock_set_unlock_pin">फ़ेस अनलॉक + पिन</string>
     <string name="op_face_unlock_skip_face">फ़ेस अनलॉक के बिना जारी रखें</string>
     <string name="op_failed_to_get_data">डेटा प्राप्त करने में विफल</string>
     <string name="op_fetch_data_in_process">लोड हो रहा है</string>
+    <string name="op_find_charging_stations">स्टेशन्स का पता लगाएँ</string>
     <string name="op_fragment">लघु</string>
     <string name="op_gamespace">गेम स्पेस</string>
     <string name="op_high_power_app_manager">अधिक पावर खपत वाले ऐप्स का प्रबंधन</string>
+    <string name="op_keep_location_services">आस-पास के चार्जिंग स्टेशनों को खोजने और ट्रैक करने के लिए, कृपया लोकेशन सेवाओं को सक्षम करें</string>
     <string name="op_light_mode_title">लाइट</string>
     <string name="op_linked_launch_summary">ऐप्स प्रबंधित करें से बैकग्राउंड में लॉन्च लिंक हो सकता है</string>
     <string name="op_linked_launch_title">ऐप्स ऑटो-लॉन्च</string>
@@ -5384,6 +5401,7 @@ UT इंटरफ़ेस: %5$s"</string>
     <string name="uicc_lock_summary">आपका डिवाइस स्प्रिंट सिम द्वारा ही लॉक है</string>
     <string name="uicc_unlock">UICC अनलॉक</string>
     <string name="uicc_unlock_summary">आपके डिवाइस को अनलॉक किया गया है</string>
+    <string name="under_meters">%1d मीटर के अंदर</string>
     <string name="uninstall_activity_text">%1$s निम्न ऐप का एक भाग है:</string>
     <string name="uninstall_all_blocked_profile_owner">यह ऐप कुछ उपयोगकर्ताओं या प्रोफ़ाइलों के लिए आवश्यक है और अन्य के लिए अनइंस्टॉल किया गया</string>
     <string name="uninstall_all_users_text">सभी उपयोगकर्ताओं के लिए अनइंस्टॉल करें</string>
@@ -5409,7 +5427,7 @@ UT इंटरफ़ेस: %5$s"</string>
     <string name="uninstallapps_confirm">पुष्टि करें</string>
     <string name="uninstallapps_confirm_dialog_body">सभी चयनित ऐप्लिकेशन और ऐप्लिकेशन पैकेज से जुड़ी सभी फाइल निकाल दी जाएँगी।</string>
     <string name="uninstallapps_confirm_dialog_title">चयनित ऐप्स को निकालें?</string>
-    <string name="uninstallapps_selected">चुना गया</string>
+    <string name="uninstallapps_selected">चयनित।</string>
     <string name="uninstallapps_toast_message">ऐप्स निकाल दिए गए हैं</string>
     <string name="uninstalling">अनइंस्टॉल कर रहा…</string>
     <string name="uninstalling_notification_channel">चल रही स्थापना रद्द गतिविधियां</string>

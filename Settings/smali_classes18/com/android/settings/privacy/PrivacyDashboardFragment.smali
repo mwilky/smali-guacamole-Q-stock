@@ -153,7 +153,7 @@
 .method protected getPreferenceScreenResId()I
     .locals 1
 
-    const v0, 0x7f1600d6
+    const v0, 0x7f1600d7
 
     return v0
 .end method
@@ -163,7 +163,7 @@
     .annotation build Landroidx/annotation/VisibleForTesting;
     .end annotation
 
-    const v0, 0x7f0d028e
+    const v0, 0x7f0d0292
 
     invoke-virtual {p0, v0}, Lcom/android/settings/privacy/PrivacyDashboardFragment;->setPinnedHeaderView(I)Landroid/view/View;
 
@@ -173,7 +173,7 @@
 
     iget-object v0, p0, Lcom/android/settings/privacy/PrivacyDashboardFragment;->mProgressHeader:Landroid/view/View;
 
-    const v1, 0x7f0a056d
+    const v1, 0x7f0a057a
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

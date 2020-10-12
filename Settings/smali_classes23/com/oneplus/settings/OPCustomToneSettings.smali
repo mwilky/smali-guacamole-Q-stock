@@ -53,7 +53,7 @@
 .method protected getPreferenceScreenResId()I
     .locals 1
 
-    const v0, 0x7f160090
+    const v0, 0x7f160091
 
     return v0
 .end method
@@ -179,7 +179,7 @@
     return-void
 
     :cond_0
-    const v0, 0x7f120d20
+    const v0, 0x7f120d22
 
     const/4 v1, 0x0
 
@@ -187,7 +187,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0804b7
+    const v1, 0x7f0804ea
 
     invoke-interface {v0, v1}, Landroid/view/MenuItem;->setIcon(I)Landroid/view/MenuItem;
 

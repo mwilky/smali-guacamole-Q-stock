@@ -79,7 +79,7 @@
 
     iget-object v2, p0, Lcom/android/settings/notification/ZenAutomaticRuleHeaderPreferenceController;->mContext:Landroid/content/Context;
 
-    const v3, 0x7f080387
+    const v3, 0x7f0803ba
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -102,7 +102,7 @@
 
     iget-object v2, p0, Lcom/android/settings/notification/ZenAutomaticRuleHeaderPreferenceController;->mContext:Landroid/content/Context;
 
-    const v3, 0x7f0801db
+    const v3, 0x7f08020e
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
